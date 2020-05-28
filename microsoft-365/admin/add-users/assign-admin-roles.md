@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 瞭解如何將系統管理員角色指派給您公司中的使用者或多位使用者，以便他們可以在系統管理中心執行特定工作。
-ms.openlocfilehash: 7842714d7a57c7db9c3f0afe7e4b2e353137b66f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43618785"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387234"
 ---
 # <a name="assign-admin-roles"></a>指派系統管理員角色
 
@@ -67,14 +68,14 @@ ms.locfileid: "43618785"
 
 1. 在系統管理中心中，移至**角色** > **角色**，以查看組織可使用的所有系統管理員角色。
 2. 選取您要指派給使用者的系統管理員角色。
-3. 選取 [指派的系統**管理員** > ] [**新增**]。
+3. 選取 [指派的系統**管理員**] [ > **新增**]。
 4. 輸入使用者的**顯示名稱**或使用者名稱，然後從建議**清單中選取**使用者。
 5. 在您完成之前，新增多個使用者。
 6. 選取 [**儲存**]，然後將使用者新增至指派的系統管理員清單。
 
 ### <a name="assign-a-user-to-an-admin-role-from-active-users"></a>指派使用者至使用中使用者的系統管理員角色
 
-1. 在系統管理中心中，移至 [**使用者** >作用中[使用者](https://go.microsoft.com/fwlink/p/?linkid=834822)] 頁面。
+1. 在系統管理中心中，移至 [**使用者**作用中 > [使用者](https://go.microsoft.com/fwlink/p/?linkid=834822)] 頁面。
 
 2. 在 [作用中**使用者**] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [**角色**] 旁邊的 [**管理角色**]。
 

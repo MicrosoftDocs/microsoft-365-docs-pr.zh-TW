@@ -16,20 +16,21 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: 瞭解如何在電腦、電話和平板電腦上設定及使用 Microsoft 365。
-ms.openlocfilehash: 6db85e57757d627c22767289761b4cb3120b3716
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 5510f93a0e282b73405fa066669cdc1b63ea8a28
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049420"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386886"
 ---
-# <a name="get-started"></a>入門
+# <a name="get-started"></a>開始使用
 
 您的組織最近取得 Microsoft 365，現在您需要使用它，所以您可以開始閱讀電子郵件、共用檔等等。 瞭解如何在電腦、電話和平板電腦上設定及使用 Microsoft 365。
   

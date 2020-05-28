@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MST160
@@ -20,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: 瞭解如何為 Microsoft 365 群組建立命名原則。
-ms.openlocfilehash: 2d8b016e0830f0d20ea6fb6227dd7789878bfc94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630440"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388002"
 ---
 # <a name="groups-naming-policy"></a>群組命名原則
 
@@ -38,7 +39,7 @@ ms.locfileid: "43630440"
 
 群組命名原則包含下列功能：
 
-- **前置詞尾碼命名原則**：您可以使用首碼或尾碼來定義群組的命名慣例（例如：「US\_My Group\_工程」）。 首碼/尾碼可以是固定字串或像是 [部門] 的使用者屬性，會根據建立群組的使用者進行取代。
+- **前置詞尾碼命名原則**：您可以使用首碼或尾碼來定義群組的命名慣例（例如：「US \_ My Group 工程」 \_ ）。 首碼/尾碼可以是固定字串或像是 [部門] 的使用者屬性，會根據建立群組的使用者進行取代。
 
 - **自訂封鎖的字**：您可以上傳組織中特定的封鎖文字集合，這些文字會在使用者建立的群組中封鎖。 （例如： "CEO，工資表，HR"）。
 
@@ -54,7 +55,7 @@ ms.locfileid: "43630440"
 
 ### <a name="fixed-strings"></a>固定字串
 
-您可以使用簡短字串，協助您區分 GAL 中的群組和群組工作負載的左側導覽。 部分常見的首碼尾碼為 "Grp\_Name"、"\#name"、"\_name" 等關鍵字
+您可以使用簡短字串，協助您區分 GAL 中的群組和群組工作負載的左側導覽。 部分常見的首碼尾碼為 "Grp \_ Name"、" \# name"、" \_ name" 等關鍵字
 
 ### <a name="attributes"></a>屬性
 
@@ -80,7 +81,7 @@ ms.locfileid: "43630440"
 
 - 首碼和尾碼可以包含組名和群組別名中支援的特殊字元。 當前綴和尾碼包含不允許在群組別名中使用的特殊字元時，它們只適用于組名。 因此，在此情況下，套用至群組名稱的首碼和尾碼會與套用至群組別名的首碼和尾碼不同。
 
-- 如果您使用 Yammer Microsoft 365 連線群組，請避免在您的命名原則中使用下列字元： @ \#、 \[ \] \<、、、、 \>和。 如果這些字元是在命名原則中，一般 Yammer 使用者將無法建立群組。
+- 如果您使用 Yammer Microsoft 365 連線群組，請避免在您的命名原則中使用下列字元： @，，，， \# \[ \] \<, and \> 。 如果這些字元是在命名原則中，一般 Yammer 使用者將無法建立群組。
 
 ## <a name="custom-blocked-words"></a>自訂封鎖的字詞
 

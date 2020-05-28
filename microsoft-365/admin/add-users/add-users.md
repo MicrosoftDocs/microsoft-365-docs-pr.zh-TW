@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: 瞭解如何在 CSV 檔案中，一次將使用者新增至 Microsoft 365，一次一或多個使用者。
-ms.openlocfilehash: 6d7a9d97d4cca25bac6579ea4427136351110658
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 1b63f09bf34f5ca54be83eedfac9188251578a05
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049468"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387258"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>個別或大量新增使用者
 
@@ -42,7 +43,7 @@ ms.locfileid: "44049468"
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
 
-2. 移至 [**使用者** > ] [作用中**使用者**]，然後選取 [**新增使用者**]。
+2. 移至 [**使用者**] [作用 > 中**使用者**]，然後選取 [**新增使用者**]。
    
 3. 在 [**設定基礎**] 窗格中填入下列資訊，然後選取 **[下一步]**。 
   
@@ -69,7 +70,7 @@ ms.locfileid: "44049468"
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> 的系統管理中心。
 
-2. 移至 [**使用者** > ] [作用中**使用者**]，然後選取 [**新增使用者**]。
+2. 移至 [**使用者**] [作用 > 中**使用者**]，然後選取 [**新增使用者**]。
    
   
    在 [**新增使用者**] 窗格中填入下列資訊。 完成後，請選取 [**新增**]。 
@@ -94,7 +95,7 @@ ms.locfileid: "44049468"
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 的系統管理中心。
 
-2. 移至 [**使用者** > ] [作用中**使用者**]，然後選取 [**新增使用者**]。
+2. 移至 [**使用者**] [作用 > 中**使用者**]，然後選取 [**新增使用者**]。
    
   
    在 [**新增使用者**] 窗格中填入下列資訊。 完成後，請選取 [**新增**]。 

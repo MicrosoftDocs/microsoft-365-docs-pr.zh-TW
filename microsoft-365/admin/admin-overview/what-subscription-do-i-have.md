@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,13 +24,12 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: 透過前往 [訂閱] 頁面，瞭解您的組織有哪些訂閱可供驗證。
-ms.custom: okr_SMB
-ms.openlocfilehash: b855c533627aadf6117e6830d7484276003ea665
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 438d9932b2e0dcce0e75e0d979908cdab5979f13
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045209"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386742"
 ---
 # <a name="what-subscription-do-i-have"></a>我有何種訂閱？
 
@@ -40,7 +42,7 @@ ms.locfileid: "44045209"
 > [!NOTE]
 > 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 
 2. 您的訂閱會顯示在 [**產品**] 頁面上，以及訂閱名稱、訂閱的相關資訊及其狀態。 若要查看簡潔的視圖，請選取 [**表格視圖**]。
 
@@ -48,7 +50,7 @@ ms.locfileid: "44045209"
   
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 [**帳單** \><a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。  
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。  
 
 2. 如果您只有一個訂閱，它會顯示在 [**訂閱**] 頁面上，以及訂閱名稱、訂閱資訊及其狀態。 在下列螢幕擷取畫面中，您可以看到我有 Microsoft 365 應用程式商務版訂閱。
 
@@ -67,7 +69,7 @@ ms.locfileid: "44045209"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 [**帳單** \><a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。  
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。  
 
 2. 如果您只有一個訂閱，它會顯示在 [**訂閱**] 頁面上，以及訂閱名稱、訂閱資訊及其狀態。 在下列螢幕擷取畫面中，您可以看到我有 Microsoft 365 應用程式商務版訂閱。
 

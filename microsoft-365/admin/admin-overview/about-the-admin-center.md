@@ -17,18 +17,19 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用系統管理中心在雲端設定您的組織並管理使用者和訂閱。 請以系統管理員權限登入帳戶以開始使用。
-ms.openlocfilehash: 4b5db6afd7ef8428fea9fc0b57a090b22d027216
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: c5f061e8ffd8f545965483d8d318debea708bf2c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049432"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386958"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>關於 Microsoft 365 系統管理中心
 

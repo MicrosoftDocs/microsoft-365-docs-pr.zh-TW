@@ -15,24 +15,25 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 瞭解如何使用 Windows PowerShell 將部分個人的使用者密碼設為永不過期。
-ms.openlocfilehash: 3d5d65f687a5ed02e0e20ff77482f7bef5b6b695
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.openlocfilehash: 6562a4092c47d9c4bf7bf294767e6050a3e0577a
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173493"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386997"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>設定個別使用者的密碼永不過期
 
 ## <a name="set-the-password-expiration-policy-for-your-organization"></a>設定組織的密碼到期原則
 
-1. 在系統管理中心中，移至 [**設定** \> ] <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">[設定] 頁面。</a>
+1. 在系統管理中心中，移至 [**設定**] [設定] \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a>頁面。
 2. 在 [設定] 頁面的頂端，選取 [**安全性 & 隱私權**]。
 3. 選取 [密碼到期原則]****。 
 4. 如果密碼設為永不過期，請按一下 [**將使用者密碼設為在數天后到期**] 旁邊的核取方塊。 您可以選擇指定密碼到期前的天數。
@@ -127,4 +128,4 @@ Microsoft cloud service 的全域系統管理員可以使用 [ [Azure Active Dir
     ```
 
 > [!WARNING]
-> 根據屬性設定`-PasswordPolicies DisablePasswordExpiration`為 [仍然存在的`pwdLastSet`密碼] 的密碼。 如果您將使用者密碼設為永不過期，而 90 + 天則為 [已移至]，密碼會到期。 根據`pwdLastSet`屬性，如果您變更到期時間`-PasswordPolicies None`，則超過90天的所有密碼`pwdLastSet`都需要使用者在下次登入時變更。 這項變更可能會影響大量的使用者。
+> 根據屬性設定為 [仍然存在的密碼] `-PasswordPolicies DisablePasswordExpiration` 的密碼 `pwdLastSet` 。 如果您將使用者密碼設為永不過期，而 90 + 天則為 [已移至]，密碼會到期。 根據 `pwdLastSet` 屬性，如果您變更到期 `-PasswordPolicies None` 時間，則超過90天的所有密碼都 `pwdLastSet` 需要使用者在下次登入時變更。 這項變更可能會影響大量的使用者。

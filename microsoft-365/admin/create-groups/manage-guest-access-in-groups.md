@@ -13,24 +13,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 瞭解如何將來賓新增至 Microsoft 365 群組、查看來賓使用者，以及使用 PowerShell 來控制來賓存取。
-ms.openlocfilehash: 48f3339968040eeb82a93d6540c70f0bbea0754a
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 99288521f29d67f3146cafe1f194662750cc8a5d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140540"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386778"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 群組中管理來賓存取
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -55,7 +56,7 @@ ms.locfileid: "44140540"
 
 如果您想要啟用或停用群組中的「來賓存取」，您可以在 Microsoft 365 系統管理中心進行。
 
-1. 在系統管理中心中，移至 [**設定** \> ]**設定**，然後選取 [ **Microsoft 365 群組**]。
+1. 在系統管理中心中，移至 [**設定**] \> **設定**，然後選取 [ **Microsoft 365 群組**]。
   
 2. 在 [ **Microsoft 365 群組**] 頁面上，選擇您是否要讓組織外部人員存取群組資源，或讓群組擁有者將組織外部人員新增至群組。
 
@@ -63,7 +64,7 @@ ms.locfileid: "44140540"
 
 如果您的目錄中已存在來賓，您可以從 Microsoft 365 系統管理中心將其新增至您的群組。
   
-1. 在系統管理中心中，移至 [**群組** > **群組**] 頁面。
+1. 在系統管理中心中，移至 [**群組**  >  **群組**] 頁面。
   
 2. 按一下您要新增來賓的群組，然後選取 [**成員**] 索引標籤上的 [**全部查看] 和 [管理成員**]。 
   
@@ -90,7 +91,7 @@ ms.locfileid: "44140540"
 > [!NOTE]
 > 您必須具有全域系統管理員許可權，才可執行這些命令。 
 
-執行下列腳本，將其* / *變更為您要封鎖來賓存取的群組名稱。
+執行下列腳本，將 */<GroupName/>* 其變更為您要封鎖來賓存取的群組名稱。
 
 ```PowerShell
 $GroupName = "<GroupName>"

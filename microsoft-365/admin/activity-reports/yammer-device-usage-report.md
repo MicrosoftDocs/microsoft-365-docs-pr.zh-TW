@@ -11,18 +11,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b793ffdd-effa-43d0-849a-b1ca2e899f38
 description: '取得 Yammer 裝置使用方式報告，以瞭解您的使用者在使用 Yammer 的裝置。 '
-ms.openlocfilehash: 1dfd72c8974aa10b3774d2cdb17ac1bf82b9501b
-ms.sourcegitcommit: 2b626a7924b4be08f6eb21181453b778e6fde418
+ms.openlocfilehash: 17fcf6c7d46988f0783b5097d3381b9bc08cbbe7
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43047008"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387450"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Admin center 中的 Microsoft 365 報告-Yammer 裝置使用方式報告
 

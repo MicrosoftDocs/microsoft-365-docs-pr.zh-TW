@@ -15,17 +15,18 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 針對電子郵件、Skype 和 Office 應用程式，將新員工新增至 Microsoft 365 for business。
-ms.openlocfilehash: f25f9445cba31942a58c656d8d7f212dc093024d
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: 0df9ed292cd4d8010c779cb822b84f9916cf1928
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049494"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387306"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>將新員工新增至 Microsoft 365
 
@@ -63,7 +64,7 @@ ms.locfileid: "44049494"
 
 就像 Facebook、Amazon 或 Gmail，您的員工會登入使用 Microsoft 365。 請提供下列登錄資訊：
   
-- 登入[https://www.office.com](https://www.office.com)。
+- 登入 [https://www.office.com](https://www.office.com) 。
     
 - 選取 [登**入**]，然後輸入使用者識別碼和密碼。
     
@@ -76,7 +77,7 @@ ms.locfileid: "44049494"
   
 |**工作**|**尋找詳細資料**|
 |:-----|:-----|
-|登入 Office  <br/> |移至[https://www.office.com](https://www.office.com)，選取 [登**入**]，然後輸入您的使用者識別碼和密碼。  <br/> |
+|登入 Office  <br/> |移至 [https://www.office.com](https://www.office.com) ，選取 [登**入**]，然後輸入您的使用者識別碼和密碼。  <br/> |
 |在您的電腦上安裝 Office 應用程式。  <br/><br/> |當您登入時，首頁會有下載和安裝應用程式（如 Word 和 Outlook）的連結。  選取 [**安裝 Office**]。         如需相關指示，請參閱 how [to Install Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。  <br/> |
 |在 Outlook 2016 中設定您的電子郵件。  <br/> |在您的電腦上安裝 Office 應用程式之後，請設定您的電子郵件。 如需相關指示，請參閱 how [to Setup Outlook](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)。  <br/> |
 |設定商務用 Skype，讓您可以在公司內或世界各地與同事或業務夥伴連線。 您可以從 IM、語音或視頻通話開始交談。  <br/> |[在您的電腦上安裝商務用 Skype](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb.aspx)。  <br/> <br/>若要瞭解如何使用商務用 Skype，請[觀賞影片。](https://support.office.com/article/3a21eca4-434d-41f1-ab06-3d4a268573b7.aspx) <br/> <br/>您是否已設定商務用 Skype，讓您的員工可以與您的商務用免費 Skype app 的外部人員聯繫？ 如果不是，請告訴您的新員工，讓他們知道使用商務用 Skype 時所期望的專案。  <br/> |

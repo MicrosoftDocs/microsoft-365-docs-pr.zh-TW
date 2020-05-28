@@ -15,23 +15,24 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 description: 您可以建立並使用範本，以在您新增多個使用者時節省時間和標準化設定。
-ms.openlocfilehash: a39ad3df7928e45f7cb93a13c6ffc40111f2ee48
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140649"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387222"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>建立並使用範本來新增使用者
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -39,7 +40,7 @@ ms.locfileid: "44140649"
 
 ## <a name="create-a-template"></a>建立範本
 
-可輕鬆建立&mdash;範本您可以選取 [**使用者** > 作用中**使用者** > ]**使用者範本**，然後從下拉式清單中選取 [**新增範本**]，或者您可以新增使用者，並在完成時，您可以選擇將專案儲存為範本。
+可輕鬆建立範本 &mdash; 您可以選取 [**使用者**作用中  >  **使用者**]  >  **使用者範本**，然後從下拉式清單中選取 [**新增範本**]，或者您可以新增使用者，並在完成時，您可以選擇將專案儲存為範本。
 
 在新增使用者之後建立範本後，您針對下列設定所選擇的值會儲存在範本中：
 
@@ -68,12 +69,12 @@ ms.locfileid: "44140649"
 
 若要使用現有的範本來新增使用者：
 
-1. 在系統管理中心中，選取 [**使用者** > 作用中**使用者**]。
+1. 在系統管理中心中，選取 [**使用者**作用中  >  **使用者**]。
 
 2. 選取 [**使用者範本**]，然後從下拉式清單中選取範本。 （清單只會包含您建立的範本，而不會包含其他系統管理員所建立的範本）。
 
  > [!NOTE]
- > 您也可以使用範本，選取 [**使用者範本** > ] [**管理範本**]，選取範本，然後選取 [**使用範本**]，以新增使用者。
+ > 您也可以使用範本，選取 [**使用者範本**] [  >  **管理範本**]，選取範本，然後選取 [**使用範本**]，以新增使用者。
 
 3. 依照步驟從您選取的範本建立使用者。
 
@@ -84,7 +85,7 @@ ms.locfileid: "44140649"
 
 您可以輕鬆刪除不再需要的範本，並新增新範本。 若要刪除範本：
 
-1. 在系統管理中心中，選取 [**使用者** > 作用中**使用者**]。
+1. 在系統管理中心中，選取 [**使用者**作用中  >  **使用者**]。
 
 2. 選取 [**範本**]，然後從下拉式清單中選取 [**管理範本**]。
 

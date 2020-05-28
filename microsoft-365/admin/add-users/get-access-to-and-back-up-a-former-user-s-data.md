@@ -16,25 +16,26 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 瞭解如何在人員離開組織時保留員工的檔案和電子郵件。
-ms.openlocfilehash: f7132b927c05b8339f20b268b48847291e9c710e
-ms.sourcegitcommit: 7ff75a0f45371b247d975fc61cfa286f5b6f42f6
+ms.openlocfilehash: 2bf32aa9e7a3dcc76ae2114240bff07d697ce29d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44140630"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387198"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>存取及備份離職使用者的資料
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心變更。 [！附注] 如果您的經驗不符合這裡所述的詳細資料，請參閱[關於新的 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
 
 ::: moniker-end
 
@@ -129,7 +130,7 @@ ms.locfileid: "44140630"
 
 ::: moniker-end
 
-2. 在左窗格中，選取 [系統**管理中心** \> ] **SharePoint**。 (您可能需要選取 [全部顯示]**** 才能查看系統管理中心的清單。)
+2. 在左窗格中，選取 [系統**管理中心**] \> **SharePoint**。 (您可能需要選取 [全部顯示]**** 才能查看系統管理中心的清單。)
 
 3. 如果顯示的是傳統 SharePoint 系統管理中心，請選取頁面上方的 [立即開啟]****，以開啟新的 SharePoint 系統管理中心。
 
@@ -156,7 +157,7 @@ ms.locfileid: "44140630"
     
     ![這是功能區在 Outlook 2016 中的外觀。](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
   
-3. 選取 **[ &amp;開啟匯出** \>匯**入/匯出**]。
+3. 選取 [**開啟 &amp; 匯出**匯 \> **入/匯出**]。
     
     ![Backstage 檢視中的匯入/匯出命令](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
@@ -204,7 +205,7 @@ Outlook 會立即開始匯出，除非已建立新的 Outlook 資料檔（.pst�
 > 您也可以[將先前使用者的信箱轉換成共用信箱，或將](https://docs.microsoft.com/office365/admin/email/convert-user-mailbox-to-shared-mailbox)[離職員工的電子郵件轉寄給另一個員工](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox)。
 
   
-1. 在 Outlook 中，移**至** \> [檔案] [**開啟&amp;匯出** \> ] [匯**入/匯出**]。
+1. 在 Outlook 中，移**至 [** 檔案] [ \> **開啟 &amp; 匯出**] [匯 \> **入/匯出**]。
     
     這會啟動 [匯入及匯出] 嚮導。
     

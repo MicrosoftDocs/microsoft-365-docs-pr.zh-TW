@@ -1,5 +1,5 @@
 ---
-title: 系統管理中心概述
+title: 系統管理中心概觀
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,20 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 深入瞭解 Microsoft 365 系統管理中心：如何登入、您的系統管理員是誰，以及觀看影片的相關簡介。
-ms.openlocfilehash: 79c43c0f918c8d4793b02bea08aa092e3a5ef421
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 84c8ef52c4cd3bf687a0849e1e3b1a25f9b31f4d
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43623961"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44386934"
 ---
-# <a name="admin-center-overview"></a>系統管理中心概述 
+# <a name="admin-center-overview"></a>系統管理中心概觀 
 
   
 當您購買[商務用 microsoft 365 應用程式方案](https://go.microsoft.com/fwlink/?linkid=856886)或[microsoft 365 for business plan](https://www.microsoft.com/microsoft-365/business)時，我們提供了具有系統管理員許可權的特殊帳戶。 這個帳戶稱為系統管理員帳戶。
@@ -35,19 +36,19 @@ ms.locfileid: "43623961"
   
 ::: moniker range="o365-worldwide"
 
- **使用您的系統管理員帳戶登<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>入。**
+ **使用您的系統管理員帳戶登入 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-**使用您的系統管理員帳戶登入 Office 365 德國<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>at。**
+**使用您的系統管理員帳戶登入 Office 365 德國 at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a> 。**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-**使用您的系統管理員帳戶登入由世紀運作的 Office <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>365。**
+**使用您的系統管理員帳戶登入由世紀運作的 Office 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 。**
 
 ::: moniker-end
 

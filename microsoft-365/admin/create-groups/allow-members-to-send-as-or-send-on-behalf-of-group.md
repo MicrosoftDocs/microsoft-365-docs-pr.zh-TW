@@ -13,18 +13,19 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: 瞭解如何允許成員以 Microsoft 365 群組形式傳送電子郵件，或代表 Microsoft 365 群組傳送電子郵件。
-ms.openlocfilehash: ce4527321468ee01864177fc1a607fab6a474481
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a4d8cb65feab3fca69824adc8f7b4ef10e705d8c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049384"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44388134"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允許成員傳送為或代表群組傳送
 
@@ -44,13 +45,13 @@ ms.locfileid: "44049384"
 
 本節說明如何允許使用者在 exchange Online 中以[exchange 系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=2059104)（EAC）中的群組形式傳送電子郵件。
   
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>中，**移至** \> [收件者**群組**]。
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>中，**移至 [** 收件者 \> **群組**]。
     
-2. 在您要允許使用者](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)傳送的群組上，選取 [**編輯**![編輯群組圖示]。   
+2. **Edit** ![ ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 在您要允許使用者傳送的群組上，選取 [編輯編輯群組圖示]。   
     
 3. 選取 [**群組委派**]。
     
-4. 在 [**傳送方式**] 區段中， **+** 選取要新增為群組傳送之使用者的符號。 
+4. 在 [**傳送方式**] 區段中，選取要 **+** 新增為群組傳送之使用者的符號。 
     
     ![選取加號，以新增您要以 Microsoft 365 群組形式傳送的使用者。](../../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
@@ -62,13 +63,13 @@ ms.locfileid: "44049384"
 
 本節說明如何允許使用者代表 exchange 系統管理中心（EAC）中的群組傳送電子郵件，在 Exchange Online 中。
   
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>中，**移至** \> [收件者**群組**]。
+1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>中，**移至 [** 收件者 \> **群組**]。
     
-2. 在您要允許使用者](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png)傳送的群組上，選取 [**編輯** ![編輯群組圖示]。 
+2. 在**Edit** ![ ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 您要允許使用者傳送的群組上，選取 [編輯編輯群組圖示]。 
     
 3. 選取 [**群組委派**]。
     
-4. 在 [代理傳送者] 區段中， **+** 選取要新增為群組傳送之使用者的符號。 
+4. 在 [代理傳送者] 區段中，選取要 **+** 新增為群組傳送之使用者的符號。 
     
     ![選取加號，以新增您要以 Microsoft 365 群組形式傳送的使用者。](../../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
