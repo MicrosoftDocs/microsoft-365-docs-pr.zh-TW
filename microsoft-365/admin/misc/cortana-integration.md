@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: '瞭解如何在整合 Office 365 時使用 Cortana。 您可以在系統管理中心關閉 Cortana，以限制其存取您組織的資料。 '
-ms.openlocfilehash: 80c4425814e6015d5a8116a1e8df7f7b528dbd66
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 當您使用有效的工作或學校帳戶登入時，使用者可在 Microsoft 365 體驗中取得使用 Cortana 的雲端協助服務，以符合 Office 365 的企業級隱私權、安全性和合規性承諾。
+ms.openlocfilehash: 6c1eb42ad54c0cfb25f84b9f584171eb7d198bb9
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399407"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44410998"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -141,6 +141,6 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 2. 取消選取 [**允許這些 Cortana 選用的 Cortana 選用的連線經驗] 核取方塊，以使用您組織的 Microsoft 主控資料**來停用 Cortana 連線體驗。
 
-3. 選取 [儲存變更]****。
+3. 選取 **[儲存變更]**。
 
 針對[Microsoft 服務合約](https://go.microsoft.com/fwlink/p/?LinkId=2109174)和 [microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)所控制的服務，microsoft 是資料控制器。 就像資料控制者一樣，Microsoft 會使用資料，依照[Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)來改進產品和服務。

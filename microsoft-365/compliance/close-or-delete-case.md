@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解當已關閉或刪除高級 eDiscovery 案例所支援的調查或法律案例時，會發生什麼事。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e64f5cc0483129396a28cbf657778001e5d372a7
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292409"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412782"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>關閉或刪除高級 eDiscovery 案例
 
@@ -32,7 +32,7 @@ ms.locfileid: "44292409"
 
 以下是當您關閉高級 eDiscovery 案例時會發生的情況：
 
-- 如果案例包含保留的任何內容位置，將會關閉那些保留。 這可能會導致內容被使用者或自動化程式（如刪除原則）永久刪除或清除。
+- 如果案例包含保留的任何內容位置，將會關閉那些保留。 關閉關閉後，30天的寬限期（稱為*延遲保留*）會套用到保留中的內容位置。 這有助於防止內容立即刪除，並可讓系統管理員在延遲保留期間到期時，搜尋或復原將會永久刪除的內容。 如需詳細資訊，請參閱[移除 eDiscovery 保留中的內容位置](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)。
 
 - 關閉案例只會關閉與該案例相關聯的保留。 如果有其他保留內容位置（例如訴訟暫止、核心 eDiscovery 保留，或來自不同高級 eDiscovery 案例的保留），則仍會保留這些保留。
 

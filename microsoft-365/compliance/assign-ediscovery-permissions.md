@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全性 & 合規性中心，指派執行 eDiscovery 相關工作所需的許可權。
-ms.openlocfilehash: 4c39dc3cd0d3c5d13d33330eca930e07227c38d3
-ms.sourcegitcommit: 17a45261926dde1a7cd24e0ac516cfc49e453806
+ms.openlocfilehash: 76ec07909fab35dfbead806befe2565f4e2054ae
+ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374402"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44411030"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全性 & 規範中心指派 eDiscovery 許可權
 
@@ -43,7 +43,7 @@ ms.locfileid: "44374402"
   請參閱[詳細資訊](#more-information)一節，瞭解您可能想要組織中的 EDiscovery 系統管理員的原因。
 
 > [!NOTE]
-> 若要使用高級電子檔探索來分析使用者的資料，則必須將 Office 365 E5 或 Microsoft E5 授權指派給使用者（資料的保管人）。 或者，具有 E1 或 E3 授權的使用者可以獲指派 E5 附加元件授權。 指派給案例的系統管理員、規範監察官或法務人員，以及使用高級 eDiscovery 收集、查看和分析資料不需要 E5 授權。 如需授權的相關資訊，請參閱[Microsoft 365 授權指南以取得安全性 & 符合性](https://aka.ms/complianceSD)。
+> 若要使用高級 eDiscovery 來分析使用者的資料，使用者（資料的保管人）必須被指派 Office 365 E5 或 Microsoft 365 E5 授權。 或者，您可以為使用 Office 365 E1 或 Office 365 或 Microsoft 365 E3 授權的使用者，獲指派 Microsoft 365 E5 相容性或 Microsoft 365 eDiscovery 和審核附加元件授權。 指派給案例的系統管理員、規範監察官或法務人員，以及使用高級 eDiscovery 收集、查看和分析資料不需要 E5 授權。 如需有關高級 eDiscovery 授權的詳細資訊，請參閱[Advanced Ediscovery 快速入門](get-started-with-advanced-ediscovery.md)。
   
 ## <a name="before-you-begin"></a>開始之前
 

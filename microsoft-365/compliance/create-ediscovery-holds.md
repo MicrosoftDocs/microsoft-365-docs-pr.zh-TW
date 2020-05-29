@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以建立與核心 eDiscovery 案例相關聯的保留，以保留可能與調查相關的內容。
-ms.openlocfilehash: c4f3b258fecde8b5a49a77585fe8f1d6cdfe2c11
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 41e5f21d36456eb39999afa71852b169de864356
+ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352250"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412852"
 ---
 # <a name="create-an-ediscovery-hold"></a>建立電子文件探索保留
 
@@ -113,7 +113,7 @@ ms.locfileid: "44352250"
 
 - 如果搜尋將其設定為保留搜尋位置，然後在案例中變更 eDiscovery 保留（透過新增或移除位置或變更保留查詢），則搜尋設定會以這些變更進行更新。 不過，您必須在變更保留以更新搜尋結果之後重新執行搜尋。
 
-- 如果在 eDiscovery 案例中將多個 eDiscovery 保留置於單一位置，且您選擇搜尋保留的位置，則該搜尋查詢的關鍵字數目上限為500。 這是因為搜尋會結合使用**OR**運算子的所有查詢型保留。 如果合併保留查詢和搜尋查詢中的關鍵字超過500個，則會搜尋信箱中的所有內容，而不只是符合查詢架構案例的內容。 
+- 如果在 eDiscovery 案例中將多個 eDiscovery 保留置於單一位置，且您選擇搜尋保留的位置，則該搜尋查詢的關鍵字數目上限為500。 這是因為搜尋會結合使用**OR**運算子的所有查詢型保留。 如果合併保留查詢和搜尋查詢中的關鍵字超過500個，則會搜尋信箱中的所有內容，而不只是符合查詢架構案例的內容。
     
 - 如果 eDiscovery 保留狀態為 [**開啟**]，則您仍然可以在保持開啟狀態時，搜尋保留的位置。
 
@@ -174,6 +174,26 @@ ms.locfileid: "44352250"
 
 > [!IMPORTANT]
 > 使用者 OneDrive 帳戶的 URL 包含使用者主體名稱（UPN）（例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ）。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是 eDiscovery 保留的一部分，舊的，且其 UPN 已變更，您必須更新保留，而且必須更新保留，並新增使用者的新 OneDrive URL，並移除舊的。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
+
+## <a name="removing-content-locations-from-an-ediscovery-hold"></a>移除 eDiscovery 保留中的內容位置
+
+將信箱、SharePoint 網站或 OneDrive 帳戶從 eDiscovery 保留中移除之後，會套用*延遲保留*。 這表示實際刪除保留的時間延遲30天，以防止資料被永久刪除（清除）從內容位置。 這可讓系統管理員搜尋或復原在移除 eDiscovery 保留後將會清除的內容。 信箱和網站的延遲保留運作方式的詳細資料會有所不同。
+
+- **信箱：**[延遲保留] 會在下次受管理的資料夾助理處理信箱及偵測移除 eDiscovery 暫止時，放在信箱上。 具體說來，當受管理的資料夾助理將下列其中一個信箱屬性設定為**True**時，會將延遲保留套用至信箱： 
+
+   - **DelayHoldApplied：** 此屬性適用于儲存在使用者信箱中的電子郵件相關內容（由使用 Outlook 和 Outlook 網頁版的人員所產生）。
+
+   - **DelayReleaseHoldApplied：** 此屬性適用于以雲端為基礎的內容（由非 Outlook 應用程式（如 Microsoft 團隊、Microsoft Forms 及 Microsoft Yammer）所產生，該內容儲存在使用者的信箱中。 Microsoft app 所產生的雲端資料通常會儲存在使用者信箱中的隱藏資料夾中。
+
+   將延遲保留放在信箱上時（如果上述任一屬性設定為**True**），信箱仍會被視為無限期保留期間（如同信箱處於訴訟暫止狀態時）。 30天后，延遲保留會到期，而且 Microsoft 365 會自動嘗試移除延遲保留（透過將 DelayHoldApplied 或 DelayReleaseHoldApplied 屬性設為**False**），以移除 [保留]。 在上述任一屬性設定為**False**之後，在下一次受管理的資料夾助理處理信箱時，會清除標示為待移除的對應專案。
+
+   如需詳細資訊，請參閱[管理延遲保留信箱](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)。
+
+- **SharePoint 和 OneDrive 網站：** 從 eDiscovery 保留中移除網站後的30天延遲保留期間內，將不會刪除保留在保留文件庫中的任何 SharePoint 或 OneDrive 內容。 這與從保留原則發行網站時會發生什麼情況。 此外，您無法在30天的延遲保留期間內，以手動方式刪除保留文件庫中的內容。 
+
+   如需詳細資訊，請參閱[發行保留原則](retention-policies.md#releasing-a-retention-policy)。
+
+當您關閉核心 eDiscovery 案例時，延遲保留也會套用至保留狀態，因為關閉案例時會關閉保留。 如需關閉案例的詳細資訊，請參閱[關閉、重新開啟和刪除核心 eDiscovery 案例](close-reopen-delete-core-ediscovery-cases.md)。
 
 ## <a name="ediscovery-hold-limits"></a>eDiscovery 保留限制
 
