@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解當已關閉或刪除高級 eDiscovery 案例所支援的調查或法律案例時，會發生什麼事。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: be8d133a8215fc40c6d33025f9f4d1dee0f3b609
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412782"
+ms.locfileid: "44419059"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>關閉或刪除高級 eDiscovery 案例
 
@@ -56,7 +56,7 @@ ms.locfileid: "44412782"
 
 若要重新開啟已關閉的案例：
 
-1. 在 [**高級電子**檔探索] 頁面上，選取您要刪除的案例。
+1. 在 [**高級電子**檔探索] 頁面上，選取您要重新開啟的案例。
 
 2. 在 [**設定**] 索引標籤的 [**案例資訊**] 下，按一下 [**選取**]。
 

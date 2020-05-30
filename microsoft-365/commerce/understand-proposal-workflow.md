@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解方案，以協助您購買 Microsoft 產品和服務。
 ROBOTS: NOINDEX
-ms.openlocfilehash: ded29a4eab3dd19d7ce3a1f60dff968e34b434a0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6de3f116b9266ad8f2d4d245cc0ac4b7422bbf4d
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403123"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419109"
 ---
 # <a name="understand-the-proposal-workflow"></a>瞭解提案工作流程
 
@@ -31,7 +31,7 @@ Microsoft 代表草稿包含您和您的代表所討論之專案的提案。 代
 
 收到通知電子郵件之後，請遵循提案網站的連結。 登入網站後，您就可以開始策劃書考核程式。
 
-## <a name="what-are-the-organization-prerequisites-to-buy-items-with-a-proposal"></a>使用提案購買專案的組織必要條件為何？
+## <a name="prerequisites-for-buying-items-with-a-proposal"></a>使用提案購買專案的必要條件
 
 在您購買提案的專案之前，您必須擁有帳單帳戶和 Microsoft 的合約。
 
@@ -49,7 +49,7 @@ Microsoft 代表草稿包含您和您的代表所討論之專案的提案。 代
 
 Microsoft 客戶合約（MCA）可讓組織購買 Microsoft 產品和服務。 如需詳細資訊，請參閱[Microsoft 客戶合約](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement)。
 
-## <a name="what-permissions-do-i-need-to-sign-an-agreement-or-pay-for-items"></a>我需要哪些許可權才能簽署對專案的合約或付款？
+## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>簽署合同或支付專案所需的許可權
 
 如果您在帳單帳戶中沒有指派的角色，當您查看提案時，系統會指派基本讀者角色。 此角色可讓您查看，但不能對提案採取任何動作。 在簽署合約或購買產品及服務之前，您必須獲指派計費帳戶擁有者角色或計費帳戶參與者角色。 您的帳單帳戶擁有者可以指派此角色給您。
 
@@ -59,7 +59,7 @@ Microsoft 客戶合約（MCA）可讓組織購買 Microsoft 產品和服務。 �
 
 - 是提案中指定的人員 \
     OR
-- 已是您組織的 Azure Active Directory 全域系統管理員
+- 已是您組織的[Azure Active Directory 全域系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
 
 ## <a name="what-is-the-overall-workflow"></a>整體工作流程為何？
 
@@ -86,7 +86,6 @@ Microsoft 客戶合約（MCA）可讓組織購買 Microsoft 產品和服務。 �
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 計費帳戶 | 用來管理帳戶設定、發票、支付方式及產品的帳戶。 |
 | 計費設定檔 | 您的組織的相關資訊，可讓您自訂發票上包含哪些專案，以及您為發票付款的方式。 計費設定檔包括計費帳戶名稱、用於特定計費設定檔的付款條件、連絡人資訊、發票設定，以及可讓您變更帳單設定檔、支付票據和購買產品及服務的許可權。 |
-| 客戶關聯購買條款（CAPT） | 一組額外的條款，可讓組織的關聯購買產品和服務，而不會簽署個別的 MCA。 |
 | 現有的協定 | 您的組織已與 Microsoft 搭配使用的任何合約。 這可能包括（但不限於）企業合約、Microsoft 產品 & 服務合約或 Microsoft 客戶合約。 |
 | Microsoft 客戶合約（MCA） | 概述您的組織與 Microsoft 所持有之帳戶的條款及條件的合約。 |
 | Microsoft 代表 | 為您和您的組織準備提案的授權 Microsoft 代表。 |
@@ -129,7 +128,7 @@ Microsoft 客戶合約（MCA）可讓組織購買 Microsoft 產品和服務。 �
 | 準備者 | 準備提案之 Microsoft 代表的電子郵件地址。 |
 | 摘要 | 顯示與提案相關聯的小計。 如有必要，它也會顯示用來計算成本的外部 exchange （FX）率。 |
 | 提案行專案 | 此區段包含提案中包含的所有專案的數量、單價及小計。 |
-| 後續步驟 | 本節指出您必須採取的必要動作。 |
+| 下一步 | 本節指出您必須採取的必要動作。 |
 
 若要簽署 MCA，請選取 **[下一步]** 下的按鈕。 如果您必須簽署補充字詞，您可以使用連結的 DocuSign 網站，您可以在其中依照步驟簽署檔。
 

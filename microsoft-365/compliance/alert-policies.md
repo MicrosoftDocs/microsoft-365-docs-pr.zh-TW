@@ -19,21 +19,21 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全性與合規性中心建立警示原則，以監視潛在威脅、資料遺失和許可權問題。
-ms.openlocfilehash: 8720d4811377365ad00ced4d950d89cf459f653e
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 92f7146c40bbcbd93eb36e43a4dff9c8a807c403
+ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165164"
+ms.lasthandoff: 05/30/2020
+ms.locfileid: "44429211"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全性與合規性中心的警示原則
 
-您可以使用 [安全性與合規性中心] 中的 [新增警示原則] 和 [警示儀表板] 工具來建立警示原則，然後查看使用者執行符合警示原則條件的活動時所產生的警示。
+您可以使用 Microsoft 365 安全性與合規性中心中的警示原則和警示儀表板工具，來建立警示原則，然後查看使用者執行符合警示原則條件的活動時所產生的警示。
 
 警示原則建立于中，並可讓您分類報警原則、將原則套用至組織中的所有使用者、設定觸發警示的閾值等級，以及決定是否要接收電子郵件通知，以展開活動警示的功能。 在 [安全性與合規性中心] 中也有一個「**查看提醒**」頁面，您可以在其中查看和篩選提醒、設定警示狀態，以協助您管理提醒，然後在您解決或解決基礎事件後關閉提醒。 我們也已展開您可以為其建立提醒的事件種類。 例如，您可以建立警示原則，以追蹤惡意程式碼和資料遺失事件。 我們也包含數個預設的警示原則，可協助您監視活動，例如指派 Exchange Online 中的系統管理員許可權、惡意程式碼攻擊、網路釣魚活動，以及檔案刪除及外部共用的不尋常層級。
 
 > [!NOTE]
-> 使用 Microsoft 365、Office 365 企業版或 Office 365 US 政府 E1/F1/G1、E3/G3 或 E5/G5 訂閱的組織可使用警示原則。 只有具有 E5/G5 訂閱的組織，或是具有 E1/F1/G1 或 E3/G3 訂閱的組織，以及 Office 365 Advanced 威脅防護（ATP） P2 或 Microsoft 365 E5 相容性或 Microsoft 365 E5 eDiscovery 及 Audit 附加元件訂閱，才可使用高級功能。 本主題中已反白顯示需要 E5/G5 或附加元件訂閱的功能。 另外請注意，Office 365 GCC、GCC High 及 DoD 美國政府環境中提供警示原則。
+> 使用 Microsoft 365 Enterprise、Office 365 企業版或 Office 365 US 政府 E1/F1/G1、E3/G3 或 E5/G5 訂閱的組織可取得警示原則。 只有具有 E5/G5 訂閱的組織，或是具有 E1/F1/G1 或 E3/G3 訂閱的組織，以及 Office 365 Advanced 威脅防護（ATP） P2 或 Microsoft 365 E5 相容性或 Microsoft 365 E5 eDiscovery 及 Audit 附加元件訂閱，才可使用高級功能。 本主題中已反白顯示需要 E5/G5 或附加元件訂閱的功能。 另外請注意，Office 365 GCC、GCC High 及 DoD 美國政府環境中提供警示原則。
 
 ## <a name="how-alert-policies-work"></a>警示原則的運作方式
 
@@ -53,7 +53,7 @@ ms.locfileid: "44165164"
 
 警示原則包含一組規則和條件，可定義產生警示的使用者或系統管理員活動，以及在執行活動時觸發警示的使用者清單，以及定義觸發警示之前必須進行的活動次數的臨界值。 您也對原則進行分類，並指派嚴重性層級。 這兩項設定可協助您管理警示原則（以及原則條件符合時所觸發的警示），因為您可以在管理原則及在安全性與規範中心中查看警示時，篩選這些設定。 例如，您可以查看符合相同類別之條件的警示，或查看具有相同嚴重性層級的警示。
 
-若要查看及建立警示原則，請[https://protection.office.com](https://protection.office.com)移至，然後選取 [**警示** \> **警示原則**]。
+若要查看及建立警示原則，請移至， [https://protection.office.com](https://protection.office.com) 然後選取 [**警示** \> **警示原則**]。
 
 ![在 [安全性與合規性中心] 中，選取 [警示]，然後選取 [警示原則] 以查看和建立警示原則。](../media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
 
@@ -141,7 +141,7 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 
 當組織中的使用者執行的活動符合警示原則的設定時，系統會在安全性與合規性中心的「**查看提醒**」頁面上產生並顯示警示。 根據報警原則的設定，當觸發警示時，也會傳送電子郵件通知給指定的使用者清單。 針對每個警示，「**查看提醒**」頁面上的儀表板會顯示對應之警示原則的名稱、警示的嚴重性和類別（在警示原則中定義），以及發生產生警示的活動次數。 這個值是以警示原則的閾值設定為基礎。 儀表板也會顯示每個警示的狀態。 如需使用 status 屬性來管理提醒的詳細資訊，請參閱[管理提醒](#managing-alerts)一節。
 
-若要查看提醒，請[https://protection.office.com](https://protection.office.com)移至，然後選取 [**提醒** \> ] [**查看提醒**]。
+若要查看提醒，請移至 [https://protection.office.com](https://protection.office.com) ，然後選取 [**提醒**] [ \> **查看提醒**]。
 
 ![在 [安全性與合規性] 中，選取 [警示]，然後選取 [View 警示] 以查看警示。](../media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
 
@@ -158,6 +158,27 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 - **類別。** 使用此篩選器顯示一或多個警示類別中的警示。
 
 - **源。** 使用此篩選器顯示由 Office 365 雲端 App 安全性原則或兩者所觸發的安全性與合規性中心或警示中的警示原則所觸發的警示。 如需有關 Office 365 雲端 App 安全性警示的詳細資訊，請參閱[查看 Cloud App security alerts](#viewing-cloud-app-security-alerts)一節。
+
+## <a name="alert-aggregation"></a>警示匯總
+
+當多個符合警示原則條件的事件在一小段時間內發生時，系統會將其新增至現有的警示中（稱為*警示匯總*）。 當事件觸發警示時，警示會產生並顯示在 [**查看提醒**] 頁面上，而且會傳送通知。 如果相同的事件發生在匯總間隔內，則 Microsoft 365 會將新事件的詳細資料新增至現有的警示，而不是觸發新的警示。 警示匯總的目的是為了協助減少警示 "fatigue"，並讓您在相同事件的較少警示上進行焦點和採取動作。
+
+匯總間隔的長度取決於您的 Office 365 或 Microsoft 365 訂閱。
+
+|訂閱|匯總間隔|
+|:---------|:---------:|
+|Office 365 或 Microsoft 365 E5/G5|1 分鐘|
+|Office 365 ATP 方案 2 |1 分鐘|
+|E5 合規性附加元件或 E5 探索與審核附加元件|1 分鐘|
+|Office 365 或 Microsoft 365 E1/F1/G1 或 E3/F3/G3|15 分鐘|
+|Office 365 ATP 方案1或 Exchange Online Protection|15 分鐘|
+|||
+
+當符合相同警示原則的事件出現在匯總間隔內時，後續事件的詳細資料會新增至原始警示。 針對所有事件，有關匯總事件的資訊會顯示在 [詳細資料] 欄位，以及事件發生的事件數與匯總間隔會顯示在 [活動/命中計數] 欄位中。 您可以透過查看 [活動] 清單，查看所有匯總事件實例的詳細資訊。
+
+下列螢幕擷取畫面顯示具有四個匯總事件的警示。 [活動] 清單包含與提醒相關之四封電子郵件的相關資訊。
+
+![警示匯總的範例](../media/AggregatedAlertExample.png)
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>查看提醒所需的 RBAC 許可權
 

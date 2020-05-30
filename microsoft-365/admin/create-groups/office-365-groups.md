@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 群組。
-ms.openlocfilehash: 5260d811f23dd07e096e02214eafcf7f0a757ffd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400710"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419133"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>系統管理員的 Microsoft 365 群組概觀 (部分機器翻譯)
 
@@ -84,12 +84,27 @@ Microsoft 365 群組是一種基礎成員資格服務，可促進整個 Microsof
 
 當您具有群組使用量的可操作資訊時，管理 Microsoft 365 群組會更有效。 Microsoft 365 系統管理中心有一個報告工具，可讓您查看儲存空間使用方式、您擁有的使用中群組數目，甚至是使用者使用群組的方式。 如需詳細資訊，請參閱： [admin center 中的 Microsoft 365 報告](../activity-reports/office-365-groups.md)。
 
+## <a name="sensitivity-labels"></a>敏感度標籤
+
+您可以建立您組織中的使用者在建立 Microsoft 365 群組時所能設定的靈敏度標籤。 您可以使用敏感度標籤設定下列專案： 
+
+- 隱私權（公開或私人）
+- 外部使用者存取
+- 未受管理的裝置存取
+
+例如，您可以建立一個名為「*高度機密*」的標籤，並指定使用此標籤建立的任何群組都是私人的，而不允許外部使用者。 當您組織中的使用者在建立群組時選取此標籤時，會將群組設定為 [私人]，而且不允許群組成員將外部使用者新增至群組。
+
+> [!IMPORTANT]
+> 如果您目前使用的是分類標籤，當啟用敏感度標籤之後，建立群組的使用者將無法再使用這些標籤。 
+
+如需建立、管理及使用敏感度標籤的詳細資訊，請參閱[使用敏感度標籤來保護 Microsoft 團隊、microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+
 ## <a name="which-microsoft-365-plans-include-groups"></a>哪些 Microsoft 365 方案包含群組？
 
 任何有 Exchange Online 和 SharePoint 線上的 Microsoft 365 訂閱都會支援群組。 包括商務基本版和商務用的方案，以及 Enterprise E1、E3 和 E5 計畫。 群組會接受建立群組的人員授權（也稱為群組的「召集人」）。 只要召集人具有您想要群組擁有的任何功能的適當授權，該授權就會傳遞給群組。
 
 > [!NOTE]
-> 如需 Microsoft 365 服務系列與方案的詳細資訊，請參閱[microsoft 365 方案選項](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> 如需 Microsoft 365 服務系列與方案的詳細資訊，請參閱[microsoft 365 方案選項](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)。
 
 如果您有僅限 Exchange 的計畫，您仍然可以在 Outlook 中取得群組的共用收件匣和共用行事曆功能，但不會取得文件庫、Planner 或任何其他功能。
 
