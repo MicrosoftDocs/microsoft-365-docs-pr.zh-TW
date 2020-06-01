@@ -21,21 +21,17 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: 瞭解如何將發票要求提交給世紀發票管理系統，然後再將其付款于中國由世紀運作的 Office 365。
 monikerRange: o365-21vianet
-ms.openlocfilehash: c920f7497c50e7f961028624f9e3ca954a6108f3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4503226d50a719e169e9112538e7d0dcd172197e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399095"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432400"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>適用于由世紀運作的 Office 365 發票
 
-::: moniker range="o365-21vianet"
-
 > [!NOTE]
 > 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
-
-::: moniker-end
 
 您可以將您的發票要求提交至世紀發票管理系統，大約在您支付後三天。 在您提交發票要求之後，它會在兩天內處理。
   
@@ -46,39 +42,39 @@ ms.locfileid: "44399095"
 有兩種方法適用于發票：
   
 1. 在由世紀運作的 Office 365 中支付款項後，您將會收到訂單確認電子郵件，其中包含您的訂單號碼和發票管理系統的連結。 您可以使用電子郵件中的連結，在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世紀發票資訊管理系統</a>] 中建立帳戶。
-    
+
     或者
-    
+
 2. 您可以從系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>申請發票。
-    
+
     ![Microsoft 365 系統管理中心中的 [帳單] 頁面。](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>步驟2：向世紀發票管理系統註冊
 
 > [!NOTE]
-> 您可以使用與 Office 365 帳戶相同的電子郵件名稱和密碼，也可以使用不同的電子郵件名稱和密碼。 
+> 您可以使用與 Office 365 帳戶相同的電子郵件名稱和密碼，也可以使用不同的電子郵件名稱和密碼。
   
 1. 移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">世紀發票資訊管理系統</a>]。
-    
+
 2. 在 [註冊] 表單中，輸入您的訂單號碼、電子郵件地址和密碼，然後選取 [**註冊**]。
-    
+
     ![[世紀 Fapioa management system registration] 頁面。](../../media/60d39184-95b2-4ea4-a8a2-3e11763bec87.png)
   
 3. 完成註冊後，系統會將啟用電子郵件訊息傳送至您的電子郵件地址。 開啟電子郵件訊息，然後選取要啟用帳戶的連結。
-    
+
 ## <a name="step-3-submit-your-bill-for-a-fapiao"></a>步驟3：提交您的帳單以供發票
 
 1. 登入<a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">發票管理系統</a>。
-    
+
 2. 選取帳單記錄，然後選取 [套用**帳單**]。
-    
+
     > [!NOTE]
-    > 付款系統位於協力廠商平臺上，並且需要三天來同步處理訂單和付款記錄。 
+    > 付款系統位於協力廠商平臺上，並且需要三天來同步處理訂單和付款記錄。
   
     ![顯示最近訂單的 [發票管理系統] 頁面。](../../media/b319767d-1d10-4cb4-b270-c5fbcee1368e.png)
   
 3. 選取發票類型，輸入必要的資訊，然後選取 **[下一步]**。
-    
+
     ![發票要求表單，您可以在其中選取發票類型。](../../media/56fe3db1-c20f-4082-a39d-02d7ac41fec8.png)
   
     > [!NOTE]
@@ -86,9 +82,9 @@ ms.locfileid: "44399095"
     > - 如有必要，您可以套用至具有不同標題的發票。 不過，您只能對系統中的一個帳單套用一個發票職稱。 如果您想要將發票分割成不同的金額或頭銜，請<a href="https://portal.partner.microsoftonline.cn/Support/SupportOverview.aspx" target="_blank">在系統管理中心提交您的要求</a>。
     > - 當您下一次套用發票時，系統會自動顯示先前的發票資訊。
     > - 如果您需要購買憑證或退款，付款人名稱和發票職稱必須相符。
-    
+
 4. 選取發貨方式，然後輸入郵寄資訊。 您可以選擇 Yunda 或 SF （貨運收集）。 您也可以前往世紀上海分公司，以取得發票。 選取 **[下一步]**。
-    
+
     ![顯示郵寄資訊的發票要求表單。](../../media/bba500b4-a51d-477b-81a7-9113b08d39f1.png)
   
     **世紀上海分公司公司位址：**
@@ -98,9 +94,9 @@ ms.locfileid: "44399095"
     **連絡人資訊：**
 
     Zhu qin qin 021-28986102
-   
+
 5. 請確認資訊正確無誤，然後選取 [**確認**]。
-    
+
     ![發票要求表單的 [確認] 頁面。](../../media/18706d9d-defc-4285-8fd3-990448b44a18.png)
   
 ## <a name="step-4-check-application-progress"></a>步驟4：檢查應用程式進度
@@ -128,25 +124,24 @@ ms.locfileid: "44399095"
 ### <a name="how-do-i-change-my-login-email-address-and-password"></a>如何變更登入電子郵件地址和密碼？
 
 1. 登入<a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">發票管理系統</a>，然後選取 [**變更電子郵件地址**]。
-    
+
     ![使用者登入世紀發票管理系統之後的下拉式功能表。](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
   
 2. 如果您忘記登入密碼，您可以使用您的登入電子郵件地址來重設密碼。 發票管理系統會將新密碼傳送至您的電子郵件地址。 您可以使用新密碼登入。
-    
+
     ![顯示如何在世紀發票管理系統中重設密碼的連續影像。](../../media/2edb0a47-1286-4792-804d-7e84534c8370.png)
   
 3. 如果您忘記登入電子郵件地址，請聯繫我們的客戶服務中心客戶服務，網址為（86）400-089-0365。
-    
+
 ### <a name="how-do-i-find-my-order-id"></a>如何尋找我的訂單識別碼？
 
 1. 在系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)中，移至 [**帳單** \> **票據 & 付款**] 頁面。
-    
+
 2. 找到您想要的發票，選取以查看或選擇下載 PDF。
 
-  
 ### <a name="what-if-i-enter-the-wrong-email-address-when-i-register"></a>當我註冊時輸入錯誤的電子郵件地址，該怎麼辦？
 
-如果您在註冊時輸入錯誤的電子郵件地址，您就不會收到啟用電子郵件。 電子郵件中的註冊連結會在24小時後自動到期。 您可以回到<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">註冊頁面</a>，並使用正確的電子郵件地址再次註冊。 
+如果您在註冊時輸入錯誤的電子郵件地址，您就不會收到啟用電子郵件。 電子郵件中的註冊連結會在24小時後自動到期。 您可以回到<a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">註冊頁面</a>，並使用正確的電子郵件地址再次註冊。
   
 ### <a name="what-if-i-dont-receive-an-activation-email"></a>如果我沒有收到啟用電子郵件，該怎麼辦？
 

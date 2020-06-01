@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 瞭解如何將系統管理員角色指派給您公司中的使用者或多位使用者，以便他們可以在系統管理中心執行特定工作。
-ms.openlocfilehash: 86759a07221e93e211107dcbd41a6bee5e6ca9a4
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3dce88f8ea2aecc094eda7e88f2f6c03537e1fa5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387234"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432096"
 ---
 # <a name="assign-admin-roles"></a>指派系統管理員角色
 
@@ -47,13 +47,6 @@ ms.locfileid: "44387234"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
 如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
-
-::: moniker-end
 
 ## <a name="assign-admin-roles"></a>指派系統管理員角色 
 
@@ -99,7 +92,7 @@ ms.locfileid: "44387234"
 
 1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
-2. 在 [作用中**使用者**] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [**角色**] 旁的 [**編輯**]。 
+2. 在 [作用中**使用者**] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [**角色**] 旁的 [**編輯**]。
 
     如果您看不到 [**編輯**] 選項，則表示您沒有編輯權，也無法將系統管理員角色指派給其他人。 在您的企業中要求全域系統管理員為您指派角色。 在小型企業中，企業擁有者（購買訂閱的人員）是全域系統管理員。在大型企業中，IT 部門的主要人員是全域系統管理員。
 
@@ -125,9 +118,10 @@ ms.locfileid: "44387234"
 
 ## <a name="related-articles"></a>相關文章
 
+[關於 Microsoft 365 系統管理員角色](about-admin-roles.md)
+
 [使用 PowerShell 將角色指派給使用者帳戶](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [授權或移除夥伴關係](../misc/add-partner.md)
 
 [使用 Exchange 系統管理中心新增備選電子郵件地址](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
-

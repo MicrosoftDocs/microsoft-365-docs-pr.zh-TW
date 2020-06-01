@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解使用者如何使用 Office 應用程式中的敏感度標籤、適用于行動裝置的 Office 應用程式，以及適用于 web 的 Office 應用程式。 瞭解哪些應用程式支援靈敏度標籤。
-ms.openlocfilehash: 2cff14f2de60136b35399225da7cb04bbf9e880c
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.openlocfilehash: e8cb869e6883df99babfb8d20bf8130678e0f9da
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222502"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432592"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -168,6 +168,34 @@ Office 內建的標籤用戶端會從下列系統管理中心下載敏感度標�
 ## <a name="support-for-sharepoint-and-onedrive-files-protected-by-sensitivity-labels"></a>支援以敏感度標籤保護 SharePoint 和 OneDrive 檔案
 
 若要在 SharePoint 或 OneDrive 中的檔上使用 office 內建的 Office 內建標籤用戶端，請確定您已[在 SharePoint 及 OneDrive 中啟用 office 檔案的靈敏度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
+
+## <a name="support-for-external-users-and-labeled-content"></a>支援外部使用者和標示的內容
+
+當您標示檔或電子郵件時，標籤會儲存為包含您租使用者和標籤 GUID 的中繼資料。 當支援敏感度標籤的 Office 應用程式開啟已標示的檔或電子郵件時，此中繼資料是唯讀的，而且只有在使用者屬於相同租使用者時，標籤會顯示在其應用程式中。 例如，針對 Word、PowerPoint 及 Excel 內建的標籤，標籤名稱會顯示在狀態列上。 
+
+這表示，如果您與另一個使用不同標籤名稱的組織共用檔，則每個組織都可以套用並查看其自己的標籤套用至檔。 不過，組織外部的使用者看不見已套用標籤的下列元素：
+
+- 內容標記。 當標籤套用頁首、頁尾或浮水印時，這些內容會直接新增至內容並保持可見，直到有人修改或刪除。
+
+- 來自套用加密之標籤的基礎保護範本名稱和描述。 這項資訊會顯示在檔頂端的訊息列中，以提供授權誰開啟檔的相關資訊，以及該檔的使用許可權。
+
+### <a name="sharing-encrypted-documents-with-external-users"></a>與外部使用者共用加密檔
+
+除了限制存取您自己組織中的使用者之外，您還可以將存取權擴充至在 Azure Active Directory 中具有帳戶的任何其他使用者。 在使用者成功驗證之後，所有 Office 應用程式和其他[RMS enlightened 應用程式](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)都可以開啟加密檔。 
+
+如果外部使用者在 Azure Active Directory 中沒有帳戶，您可以在租使用者中為這些使用者建立來賓帳戶。 若為其電子郵件地址，您可以指定任何已使用的電子郵件地址。 例如，其 Gmail 位址。 您也可以使用此來賓帳戶，存取 SharePoint 或 OneDrive 中的共用檔，以[SharePoint 和 OneDrive 中的 Office 檔案已啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
+
+當外部使用者在 Windows 上使用 Microsoft 365 應用程式時，也可以使用和建立用於加密檔的 Microsoft 帳戶。 MacOS、Android 或 iOS 尚不支援這項功能。 例如，某人與他們共用加密檔，加密設定會指定其 Gmail 電子郵件地址。 此使用者可建立其自己的 Microsoft 帳戶，其使用 Gmail 電子郵件地址。 然後，使用此帳戶登入後，他們就可以開啟檔，並根據為該使用者指定的使用限制來進行編輯。 如需此案例的逐步範例，請參閱[開啟和編輯受保護的檔](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
+
+> [!NOTE]
+> Microsoft 帳戶的電子郵件地址必須符合所指定的電子郵件地址，以限制加密設定的存取權。
+
+當使用 Microsoft 帳戶的使用者以這種方式開啟加密檔時，如果不存在具有相同名稱的來賓帳戶，它會自動為租使用者建立來賓帳戶。 當來賓帳戶存在時，除了使用 Windows 桌面應用程式開啟加密檔之外，還可以使用瀏覽器（網頁上的 Office）來開啟 SharePoint 和 OneDrive 中的檔。 
+
+不過，因為複寫延遲，所以不會立即建立自動來賓帳戶。 如果您指定個人電子郵件地址做為標籤加密設定的一部分，我們建議您在 Azure Active Directory 中建立對應的來賓帳戶。 然後，讓這些使用者知道他們必須使用此帳戶來開啟組織中的加密檔。
+
+> [!TIP]
+> 因為您無法確定外部使用者將使用受支援的 Office 用戶端應用程式，所以在建立來賓帳戶後，從 SharePoint 和 OneDrive 共用連結是比較可靠的方法，可支援與外部使用者的安全共同作業。
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Office 應用程式何時套用內容標示和加密
 

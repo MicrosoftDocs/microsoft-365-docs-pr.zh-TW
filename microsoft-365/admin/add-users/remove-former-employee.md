@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '遵循此檢查清單，從 Microsoft 365 中移除員工，並保護資料安全。 '
-ms.openlocfilehash: 293ad26645aa3b190c25271273b29ac6c4ec8ed0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1b691d948576a3949d637d2de05b6f931844037c
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387042"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431650"
 ---
 # <a name="remove-a-former-employee"></a>移除離職員工
 
@@ -44,9 +44,6 @@ ms.locfileid: "44387042"
 ## <a name="sign-out-now"></a>立即登出！
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 觀賞有關移除員工的簡短影片。 <br><br>
 
@@ -156,9 +153,6 @@ ms.locfileid: "44387042"
 
 ::: moniker range="o365-worldwide"  
 
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
-
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要封鎖的員工名稱，然後選取 [**郵件**] 索引標籤。
@@ -167,7 +161,7 @@ ms.locfileid: "44387042"
 
 4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入即將取得電子郵件的目前員工（或共用信箱）的電子郵件地址。 
   
-5. 選取 [儲存]****。 
+5. 選取 **[儲存]**。 
     
 6. 請記住，不要刪除離職員工的帳戶。
  
@@ -183,7 +177,7 @@ ms.locfileid: "44387042"
 
 4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入即將取得電子郵件的目前員工（或共用信箱）的電子郵件地址。 
   
-5. 選取 [儲存]****。 
+5. 選取 **[儲存]**。 
     
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -199,7 +193,7 @@ ms.locfileid: "44387042"
 
 4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入即將取得電子郵件的目前員工（或共用信箱）的電子郵件地址。 
   
-5. 選取 [儲存]****。 
+5. 選取 **[儲存]**。 
     
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -221,7 +215,7 @@ ms.locfileid: "44387042"
     
 5. 在 [行動**裝置詳細資料**] 頁面的 [行動**裝置**] 下，選取行動裝置，選取 [**清除資料** ![ 清除裝置] ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) ，然後選取 [**封鎖**]。 
     
-6. 選取 [儲存]****。 
+6. 選取 **[儲存]**。 
     
     **秘訣**：請確定您已移除或停用內部部署 Blackberry Enterprise Service 中的使用者。 您也應停用使用者的任何 Blackberry 裝置。 如需有關如何停用使用者的特定步驟，請參閱 Blackberry Business Cloud Services Administration Guide。 
     
@@ -233,9 +227,6 @@ ms.locfileid: "44387042"
  
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
@@ -287,9 +278,6 @@ ms.locfileid: "44387042"
 在移除授權之後，該使用者的所有資料會保留 30 天。 您可以[存取](get-access-to-and-back-up-a-former-user-s-data.md)資料，或者如果該使用者復職，也可以[還原](restore-user.md)帳戶。 30天后，會從 Microsoft 365 永久刪除使用者的所有資料（儲存在 SharePoint Online 上的檔除外），且無法復原。 
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
@@ -364,9 +352,6 @@ ms.locfileid: "44387042"
 如果您已經設定電子郵件轉寄功能或將它轉換為共用信箱的話，請不要刪除該帳戶。這兩者都需要該帳戶做為轉寄或共用信箱功能的錨點。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 

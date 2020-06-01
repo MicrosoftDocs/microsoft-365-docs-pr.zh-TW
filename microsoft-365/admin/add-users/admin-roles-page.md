@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
-ms.openlocfilehash: 1dde487ef9dc99b45263a21ce62d556249ada927
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f557d00e21659880a96e4cd1936ab40d4b5a2dec
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387270"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432108"
 ---
 # <a name="get-started-with-the-roles-page"></a>「角色」頁面快速入門
 
@@ -99,3 +99,9 @@ ms.locfileid: "44387270"
 :::image type="content" source="../../media/compare-roles-list.png" alt-text="顯示系統管理員角色比較的圖形":::
 
 ::: moniker-end
+
+## <a name="related-topics"></a>相關主題
+
+[關於 Microsoft 365 系統管理員角色](about-admin-roles.md)
+
+[指派系統管理員角色](assign-admin-roles.md)

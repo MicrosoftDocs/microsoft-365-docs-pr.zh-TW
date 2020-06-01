@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 系統管理員會管理您組織的電子郵件和信箱。 例如，他們會在使用者的信箱中復原已刪除的郵件。 '
-ms.openlocfilehash: cf7bd2a7856017ccf4f17f71ad1845b56b004a10
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6d5596bd572d6fa5d43c79c34f174528fbfb3f1d
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387417"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432132"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>關於 Exchange Online 系統管理員角色
 
@@ -56,9 +56,10 @@ ms.locfileid: "44387417"
   
  例如，Exchange 系統管理員可能會將某個人員指派給「探索管理」角色群組，讓他們可以針對符合特定準則的資料執行信箱搜尋。 若要深入瞭解，請參閱[Exchange Online 中的許可權](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)和[管理角色群組](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help)。
   
-## <a name="learn-about-other-admin-roles"></a>深入瞭解其他系統管理員角色
-    
+## <a name="learn-about-other-admin-role"></a>深入瞭解其他系統管理員角色
+
+- [關於 Microsoft 365 系統管理員角色](about-admin-roles.md)
+
 - [關於 SharePoint 線上系統管理員角色](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
-    
+
 - [關於商務用 Skype 系統管理員角色](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
-    

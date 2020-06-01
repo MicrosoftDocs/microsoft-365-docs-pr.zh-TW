@@ -25,21 +25,18 @@ search.appverid:
 - GEA150
 ms.assetid: 1970f7d6-03b5-442f-b385-5880b9c256ec
 description: 瞭解如何在 CSV 檔案中，一次將使用者新增至 Microsoft 365，一次一或多個使用者。
-ms.openlocfilehash: 1b63f09bf34f5ca54be83eedfac9188251578a05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: af4fead3112a678b1ee7eacb087dddc40ed43d36
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387258"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432120"
 ---
 # <a name="add-users-individually-or-in-bulk"></a>個別或大量新增使用者
 
 在您的小組中，每個人都需要一個使用者帳戶，才能登入並存取[Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395)。 新增使用者帳戶的最簡單方法是在 Microsoft 365 系統管理中心一次加入一個使用者帳戶。 完成此步驟後，您的使用者將會有 Microsoft 365 授權、登入認證，以及 Microsoft 365 信箱。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 [試用新的系統管理中心] **** 開關將它開啟。
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
 

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 9b497c85-d0a4-4735-80fa-d3565bc05bd1
 description: 瞭解如何移除使用者帳戶中的授權。
-ms.openlocfilehash: 7207509c8e20710abae53cb095f7cbedfdc3bd6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18fd23ab2eeb471f29be28cd03daae808c9eccf1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399677"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432228"
 ---
 # <a name="unassign-licenses-from-users"></a>取消指派給使用者的授權
 
@@ -45,9 +45,6 @@ ms.locfileid: "44399677"
 
 當您使用 [**授權**] 頁面取消指派授權時，您會取消指派最多20個使用者之特定產品的授權。 
 
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
-
 1. 在系統管理中心中，前往 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">[授權]</a> 頁面。
 2. 選取您要指派授權的產品。
 3. 選取您要指派授權的使用者。
@@ -59,9 +56,6 @@ ms.locfileid: "44399677"
 ## <a name="unassign-licenses-from-one-user-on-the-active-users-page"></a>在 [作用中使用者] 頁面上，取消指派授權給一位使用者
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
   
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
@@ -104,9 +98,6 @@ ms.locfileid: "44399677"
 ## <a name="unassign-licenses-from-multiple-users-on-the-active-users-page"></a>在 [作用中使用者] 頁面上取消指派多個使用者的授權
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 

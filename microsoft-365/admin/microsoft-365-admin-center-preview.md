@@ -1,5 +1,5 @@
 ---
-title: 關於新的 Microsoft 365 系統管理中心
+title: 關於 Microsoft 365 系統管理中心
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: 深入瞭解新的 Microsoft 365 系統管理中心。
-ms.openlocfilehash: 0eeebcd0c96b5f3741c01a2776391ceaa698a40e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 深入瞭解 Microsoft 365 系統管理中心。
+ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399479"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432204"
 ---
-# <a name="about-the-new-microsoft-365-admin-center"></a>關於新的 Microsoft 365 系統管理中心
+# <a name="about-the-microsoft-365-admin-center"></a>關於 Microsoft 365 系統管理中心
 
 ::: moniker range="o365-worldwide"
 
-新的 Microsoft 365 系統管理中心是專為 IT 小組建立，以簡化 Microsoft 365 服務的管理方式。 系統管理中心會根據您角色或組織的獨特需求，提供量身定制的經驗，提高日常工作的效率，並提供可行動的觀點，以協助您進行資料導向，以提供更佳的使用者體驗。
+Microsoft 365 系統管理中心專為 IT 小組建立，以簡化您的 Microsoft 365 服務的管理方法。 系統管理中心會根據您角色或組織的獨特需求，提供量身定制的經驗，提高日常工作的效率，並提供可行動的觀點，以協助您進行資料導向，以提供更佳的使用者體驗。
 
 Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般進入點，可供存取 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。 專業工作區（如安全性或裝置管理），允許更細微的控制。 如需系統管理中心如何一起運作的詳細資訊，請參閱本文稍後[的特定類型的 IT 角色及其他工作區（如安全性、裝置管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。
 
@@ -37,7 +37,7 @@ Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般
 
 ::: moniker range="o365-21vianet"
 
-新的 Microsoft 365 系統管理中心（目前是預覽）是為 IT 小組建立，以簡化 Microsoft 365 服務的簡化方式。 系統管理中心會根據您角色或組織的獨特需求，提供量身定制的經驗，提高日常工作的效率，並提供可行動的觀點，以協助您進行資料導向，以提供更佳的使用者體驗。
+Microsoft 365 系統管理中心專為 IT 小組建立，以簡化您的 Microsoft 365 服務的管理方法。 系統管理中心會根據您角色或組織的獨特需求，提供量身定制的經驗，提高日常工作的效率，並提供可行動的觀點，以協助您進行資料導向，以提供更佳的使用者體驗。
 
 Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般進入點，可透過登入來存取 [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627) 。 此外，專業工作區，如 Azure Active Directory 和 Exchange，允許更精細的控制。 您可以從 Microsoft 365 系統管理中心的功能窗格中存取專家工作區。
 
@@ -45,14 +45,11 @@ Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般
 
 ::: moniker range="o365-worldwide"
 
-當 Microsoft 365 系統管理中心提供新功能時，您就可以加入宣告新的系統管理中心，並與 Microsoft 共用您的意見反應，讓我們能夠繼續改進系統管理體驗。 如果您加入宣告，對您的使用者將不會有任何影響，您也可以隨時切換回舊版系統管理中心。
-[新 Microsoft 365 系統管理中心的新功能](whats-new-in-preview.md)。
+當 Microsoft 365 系統管理中心提供新功能時，您就可以加入宣告系統管理中心，並與 Microsoft 共用您的意見反應，讓我們能夠繼續改進系統管理體驗。 如果您加入宣告，對您的使用者將不會有任何影響，您也可以隨時切換回舊版系統管理中心。
+[Microsoft 365 系統管理中心的新功能](whats-new-in-preview.md)。
   
 > [!NOTE]
-> 目標版本系統管理員會先存取新功能。 新功能將會向所有系統管理員推出。 這表示您可能看不到新的系統管理中心，也可能與說明文章中所述的有所不同。 若要在第一個查看新功能的情況下，請參閱下面的 [加入新的系統管理中心]。 
-    
-## <a name="participate-in-the-new-admin-center"></a>加入新的系統管理中心
-我們十分樂意參加新的 Microsoft 365 系統管理中心，讓您準備變更，並提供意見反應給我們。
+> 目標版本系統管理員會先存取新功能。 新功能將會向所有系統管理員推出。 這表示您可能看不到系統管理中心，也可能與說明文章中所述的有所不同。 若要在第一個查看新功能的情況下，請參閱下列的系統管理中心。 
 
 ### <a name="turn-on-targeted-release"></a>開啟目標版本
 
@@ -64,18 +61,9 @@ Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般
     
 3. **為所選使用者**選取 [所有人] 或 [目標版本]**的 [目標版本**]。 如果您為選取的使用者選擇 [目標版本]，請確定您將系統管理員帳戶（以及您組織中要加入的任何其他系統管理員）新增至選取的使用者清單。
     
-### <a name="switch-to-the-new-admin-center-and-back-again"></a>切換至新的系統管理中心，然後再切換回來
+### <a name="admin-center-feedback"></a>系統管理員中心意見反應
 
-- 當您可以使用新的 Microsoft 365 系統管理中心時，您可以選取 [**嘗試新**的系統管理中心] 切換（位於首頁頂端）。 如果您登出系統管理中心，我們會記下您的選取範圍，並將您登入新的系統管理中心。 <br/><br/>![新的系統管理中心切換自舊系統管理中心](../media/admin-center-toggle-off.png) 
-  
-- 開啟切換為 [**關閉**]，從首頁切換回舊的系統管理中心。 <br/><br/>![開啟新的系統管理中心切換](../media/admin-center-toggle-on.png)
-
-在新的系統管理中心，您可以在每一頁底部的 [**需要協助 ...** ] 按鈕旁，選擇 [**提供意見**反應]，以提供 Microsoft 對您經驗的意見反應。 請告訴我們您喜歡的專案，以及我們能夠做什麼。 此外，您還可以從向下取得整體印象或新發佈之特定經驗的時間，取得彈出的調查。 您也可以在本文結束時提供意見反應，請選取 [**此資訊是否有説明？**
-  
-如果您想要成為新系統管理中心的早期採用者，您必須開啟目標版本，然後在新的系統管理中心可供使用時，您可以切換到該中心以進行查看，並提供意見反應。
-  
-> [!NOTE]
-> 存取新的系統管理中心將會向所有 Microsoft 365 系統管理員推出。 組織中目標版本群組的系統管理員會先取得新的系統管理中心。 在目標發行時，並不保證您會立即看到切換，但您會比標準版的版本更快。 
+[！附注] 在系統管理中心中，您可以在每一頁底部的 [**需要協助 ...** ] 按鈕上，選取 [**提供意見**反應]，以提供有關您的體驗的 Microsoft 意見反應。 請告訴我們您喜歡的專案，以及我們能夠做什麼。 此外，您還可以從向下取得整體印象或新發佈之特定經驗的時間，取得彈出的調查。 您也可以在本文結束時提供意見反應，請選取 [**此資訊是否有説明？**
   
 ::: moniker-end
 

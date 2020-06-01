@@ -23,21 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 瞭解如何在人員離開組織時保留員工的檔案和電子郵件。
-ms.openlocfilehash: 2bf32aa9e7a3dcc76ae2114240bff07d697ce29d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 13cc1117c52a45f4ec1389d2e8b9f0189f4730e1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387198"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431710"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>存取及備份離職使用者的資料
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
-
-::: moniker-end
 
 
 當員工離開您的組織時，您可能會想要存取其資料（檔和電子郵件），並對其進行備份，或是將它備份或提供給新員工。
@@ -50,9 +43,6 @@ ms.locfileid: "44387198"
 若要保留先前使用者的 OneDrive 檔案，請先讓您自行存取 OneDrive，然後移動您想要保留的檔案。 
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。  
     
@@ -132,7 +122,7 @@ ms.locfileid: "44387198"
 
 2. 在左窗格中，選取 [系統**管理中心**] \> **SharePoint**。 (您可能需要選取 [全部顯示]**** 才能查看系統管理中心的清單。)
 
-3. 如果顯示的是傳統 SharePoint 系統管理中心，請選取頁面上方的 [立即開啟]****，以開啟新的 SharePoint 系統管理中心。
+3. 如果出現 [傳統 SharePoint 系統管理中心]，請選取 [立即在頁面頂端開啟]，以開啟 SharePoint**系統**管理中心。
 
 4. 在左窗格中，選取 [**其他功能**]。
 

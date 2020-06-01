@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: 瞭解如何管理郵件中心訊息，以協助變更管理。
-ms.openlocfilehash: 63c46b10913b3388c833470041da3695f0988327
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 95d1e4eb7bdf411ea1fed7ccfb58224860f889e5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399713"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432262"
 ---
 # <a name="manage-messages-in-message-center"></a>在訊息中心管理郵件
 
@@ -36,13 +36,6 @@ ms.locfileid: "44399713"
 若要移至消息中心，請移至系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)，然後選取 [**狀況**  >  **訊息中心**]。 
 
 選取郵件標題，以在讀取窗格中開啟它。 每封郵件都包含變更摘要、變更對您有何影響的說明、您如何準備組織以進行變更的相關資訊，以及（在大多數情況下）您可以在其中深入瞭解的其他資訊連結。 即使郵件到期，其他資訊仍可繼續使用。
-
-::: moniker range="o365-worldwide"
- 
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
-
-::: moniker-end
 
 ## <a name="filter-and-sort"></a>篩選和排序
 

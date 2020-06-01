@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 深入瞭解 Power BI，以及組織中的使用者可以如何使用此商務 analytics 服務。
-ms.openlocfilehash: cabe489915061a773c0faeb8687695f2672fe478
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5a5e7516800b2010f79296d758aeaeef80194bfd
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399299"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432168"
 ---
 # <a name="power-bi-in-your-organization"></a>貴組織中的 Power BI
 
@@ -171,9 +171,6 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 有的使用者雖已註冊 Power BI，但是您不希望他們再繼續擁有 Power BI 的存取權，這時候您可以移除該使用者的 Power BI 授權。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
   
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
     
@@ -181,14 +178,14 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
     
 3. 在 [**授權與應用程式**] 索引標籤上，清除 [ **Microsoft Power BI** ] 核取方塊。
     
-4. 選取 [儲存變更]****。
+4. 選取 **[儲存變更]**。
 
 ::: moniker-end
 
   
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 [使用者]**** \> [作用中使用者]<a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank"></a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 尋找您要移除授權的使用者，然後選取其名稱。
     
@@ -210,7 +207,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
     
 4. 開啟 [ **Microsoft POWER BI** ] 選項。
     
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
 
 ::: moniker-end 
 

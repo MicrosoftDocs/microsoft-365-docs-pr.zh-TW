@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 瞭解如何使用自助密碼重設工具來重設密碼。
-ms.openlocfilehash: 5c30d1da20998fb7e9681431173070ba57e1b090
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 21bcbbbd5ef2167b04b8da6db437c528b5fab0c5
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387030"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431698"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
@@ -37,19 +37,19 @@ ms.locfileid: "44387030"
   
 以下是一些您需要知道的事項：
   
-- 您可以使用任何 Microsoft 365 商務版、教育版或非**盈利性的收費**方案，為雲端使用者取得自助密碼重設。 它不會與 Microsoft 365 試用版搭配使用。 
-    
-- 該工具會使用 Azure。 當您執行這些步驟時，您將會在 Azure 中自動**免費**取得此項功能。 如果您不使用其他的 Azure 功能，開啟自助密碼重設不會花費您任何費用。 
-    
-- **如果您使用的是內部部署 Active Directory**，則不會套用上述兩個點。 相反地，您可以設定此設定，但**需要使用 AZURE AD Premium 付費訂閱**。 
+- 您可以使用任何 Microsoft 365 商務版、教育版或非**盈利性的收費**方案，為雲端使用者取得自助密碼重設。 它不會與 Microsoft 365 試用版搭配使用。
+
+- 該工具會使用 Azure。 當您執行這些步驟時，您將會在 Azure 中自動**免費**取得此項功能。 如果您不使用其他的 Azure 功能，開啟自助密碼重設不會花費您任何費用。
+
+- **如果您使用的是內部部署 Active Directory**，則不會套用上述兩個點。 相反地，您可以設定此設定，但**需要使用 AZURE AD Premium 付費訂閱**。
 
 觀賞有關讓使用者重設其自己密碼的簡短影片。 <br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
 如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-## <a name="let-people-reset-their-own-passwords"></a>讓使用者重設自己的密碼 
+## <a name="let-people-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
 下列步驟會針對公司中的所有人員開啟自助密碼重設。
   
@@ -70,7 +70,6 @@ ms.locfileid: "44387030"
 
 ::: moniker-end
 
-   
 2. 在 [設定] 頁面的頂端，選取 [**安全性 & 隱私權**]。
   
 3. 選取 [**自助密碼重設**]。

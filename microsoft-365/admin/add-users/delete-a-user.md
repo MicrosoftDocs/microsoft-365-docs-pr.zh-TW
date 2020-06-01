@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 瞭解如何刪除使用者帳戶。 決定要如何處理使用者的電子郵件、OneDrive 內容，以及是否要保留產品授權或停止付款。
-ms.openlocfilehash: 4102fe4ac297a1f426b3bf575e748a72b323ebb6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 81243286b70985082f8b671d7e021735a76cffc4
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387186"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431674"
 ---
 # <a name="delete-a-user-from-your-organization"></a>刪除貴組織中的使用者
   
@@ -67,13 +67,6 @@ ms.locfileid: "44387186"
 |Active Directory  <br/> |如果您的公司使用與 Azure AD 同步處理的 **Active Directory** ，您必須從 Active Directory 中刪除使用者帳戶。 您無法透過 Office 365 執行這個動作。 如需相關指示，請參閱[刪除使用者帳戶](https://go.microsoft.com/fwlink/p/?linkid=841808)。  <br/> |
    
 ### <a name="get-started"></a>開始使用
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
-
-::: moniker-end
 
 由於引導體驗逐步逐步完成刪除使用者的步驟，以下是如何開始的方式。
 

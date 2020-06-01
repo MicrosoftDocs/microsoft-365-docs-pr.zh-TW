@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 178359ae993e0db3ec5fd09cae0a13de351a3b94
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: c364c55888165b10de603fd4709e4f82b06f83cc
+ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44411010"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432602"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -39,6 +39,8 @@ ms.locfileid: "44411010"
 - 若要 SharePoint 在上傳時從檔案中移除加密，上傳已標記及已加密檔案的使用者，必須至少要有查看檔案的使用許可權。 如果使用者無法在 SharePoint 外開啟檔案，SharePoint 不會從檔案中移除加密。
 
 - 使用網頁上的 Office （Word、Excel、PowerPoint）開啟及編輯具有敏感度標籤的 Office 檔案，以套用加密。 會強制執行以加密指派的許可權。 透過網頁上的 Word，您也可以在編輯這些檔時使用自動標籤。
+
+- 外部使用者可以使用 guest 帳戶存取以加密標記的檔。 如需詳細資訊，請參閱[對外部使用者的支援和標示的內容](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。 
 
 - Office 365 eDiscovery 支援這些檔案的全文搜尋。 資料遺失防護（DLP）原則涵蓋這些檔案中的內容。
 

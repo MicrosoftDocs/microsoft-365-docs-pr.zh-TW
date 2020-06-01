@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 瞭解如何建立、編輯或刪除安全性群組。
-ms.openlocfilehash: 283f1eca7500bfb1d8172657639bbc7cff76906f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 49fe9b941564f26268045f6e57af329900476b90
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400085"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432274"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 admin center 中建立、編輯或刪除安全性群組
 
@@ -58,9 +58,6 @@ ms.locfileid: "44400085"
 ### <a name="add-members-to-a-security-group"></a>新增成員至安全性群組
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
     
 1. 在 [**群組**] 頁面上選取安全性群組名稱，然後在 [**成員**] 索引標籤上，選取 [**全部查看] 和 [管理成員**]。 
     
@@ -95,9 +92,6 @@ ms.locfileid: "44400085"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
-
 1. 在系統管理中心中，移至 [**群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
   
 2. 在 [**群組**] 頁面上，選取群組的名稱。 
@@ -108,7 +102,7 @@ ms.locfileid: "44400085"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 [**群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
+1. 在系統<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [**群組** \> **群組**] 頁面。  
   
 2. 在 [**群組**] 頁面上，選取群組的名稱。 
     
@@ -120,7 +114,7 @@ ms.locfileid: "44400085"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 [**群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
+1. 在系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [**群組** \> **群組**] 頁面。
   
 2. 在 [**群組**] 頁面上，選取群組的名稱。 
     

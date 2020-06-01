@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 8652f539-3123-4a8f-b9bd-6aa2f0e0372d
 description: 瞭解如何變更商務用訂閱的付款條件。
-ms.openlocfilehash: 7350546da14ebd68182e158c0d15cdfb727f5718
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: 41cf16397c4b3d2341721e741c6b293005971909
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407965"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432412"
 ---
 # <a name="change-your-payment-method"></a>變更您的付款方式
 
@@ -202,12 +202,6 @@ ms.locfileid: "44407965"
 1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 
 2. 找到您要驗證的訂閱。 為訂閱設定的支付方式會顯示在 [**帳單**] 區段中。
-
-### <a name="use-the-old-admin-center-to-verify-which-payment-method-is-configured"></a>使用舊的系統管理中心，確認設定了哪種付款條件
-
-1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">訂閱</a>] 頁面。
-
-2. 找到您要驗證的訂閱。 為訂閱設定的支付方式會顯示在 [**付款條件**] 底下。
 
 ::: moniker-end
 

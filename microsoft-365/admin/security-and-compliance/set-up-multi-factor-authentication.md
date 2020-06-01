@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 瞭解如何為您的組織設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 2b4ac2b5950d2641254742e03f054f3e4c886833
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c84c66cc051363fbc582abfb5521f922440b6801
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399119"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432376"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
   
@@ -42,7 +42,8 @@ ms.locfileid: "44399119"
 
 ## <a name="step-1-decide-on-the-method-of-requiring-your-users-to-use-mfa"></a>步驟1：決定要求使用者使用 MFA 的方法
 
-有三種方式可要求使用者使用 MFA 進行登入。如需詳細資訊，請參閱[Microsoft 365 中的 MFA 支援](multi-factor-authentication-microsoft-365.md)。
+> [!NOTE]
+> 您必須是全域系統管理員，才能設定或修改 MFA。 有三種方式可要求使用者使用 MFA 進行登入。如需詳細資訊，請參閱[Microsoft 365 中的 MFA 支援](multi-factor-authentication-microsoft-365.md)。
 
 - 安全性預設值（適用于小型企業的建議）
 

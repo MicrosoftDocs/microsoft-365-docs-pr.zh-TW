@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以建立並使用範本，以在您新增多個使用者時節省時間和標準化設定。
-ms.openlocfilehash: 3173d28f27acdf1a084137d36cd71894e94e9547
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cbe61c87bec40196ffd7a8e9868ea4611e4c259e
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387222"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431806"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>建立並使用範本來新增使用者
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
-
-::: moniker-end
 
 您可以建立並使用範本，以在您新增多個使用者時節省時間和標準化設定。 如果您有共用許多通用屬性的使用者，例如具有相同角色的使用者，以及需要相同軟體的使用者，則範本特別有用。 例如，您可能有一個支援工程師小組，可在相同的 office 中工作。  
 

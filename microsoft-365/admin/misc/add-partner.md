@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 瞭解如何在 Microsoft 365 購買時，新增訂閱顧問合作夥伴作為記錄的合作夥伴，變更合作夥伴或從訂閱刪除合作夥伴。
-ms.openlocfilehash: fa9cd549c0af616776722f6d2be4ecb9ecac1bc7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4ab02e95c2a2330e95f8a54f717e38025d04714c
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399467"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432192"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>新增、變更或刪除訂閱顧問合作夥伴
 
@@ -70,9 +70,6 @@ ms.locfileid: "44399467"
 
 ## <a name="add-a-partner-at-the-time-of-purchase"></a>在購買時新增合作夥伴
 
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
-
 1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a>] 頁面。
     
 2. 選取您要購買的產品，然後選取 [**購買**]。
@@ -111,9 +108,6 @@ ms.locfileid: "44399467"
 ## <a name="add-a-partner-to-an-existing-subscription"></a>將合作夥伴新增至現有訂閱
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
     
@@ -159,9 +153,6 @@ ms.locfileid: "44399467"
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
-
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
     
 2. 如果您有多個訂閱，請選取您要編輯的訂閱名稱。
@@ -206,9 +197,6 @@ ms.locfileid: "44399467"
 ## <a name="delete-a-partner-from-a-subscription"></a>從訂閱刪除合作夥伴
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1.  在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
     

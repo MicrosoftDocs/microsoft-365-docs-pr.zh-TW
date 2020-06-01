@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 瞭解如何從 Microsoft 365 移除舊的網域，以及將使用者和群組移至另一個網域。
-ms.openlocfilehash: c5e629f0d683c6dc3e18b1278027ac3a88cc834b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fdf0b9db2c23632a213e860bd54097c1d453cf55
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399893"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432388"
 ---
 # <a name="remove-a-domain"></a>移除網域
 
@@ -47,9 +47,6 @@ ms.locfileid: "44399893"
 #### <a name="move-users"></a>移動使用者
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1. 移至系統<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。
 
@@ -100,9 +97,6 @@ ms.locfileid: "44399893"
 #### <a name="move-yourself"></a>自行移動
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1. 移至系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。
 
@@ -160,7 +154,7 @@ ms.locfileid: "44399893"
 
 3. 使用下拉式清單選擇另一個網域。
 
-4. 選取 [儲存]****，再選取 [關閉]****。 針對與您要移除之網域關聯的任何群組或通訊群組清單，重複這個程序。
+4. 選取 **[儲存]**，再選取 **[關閉]**。 針對與您要移除之網域關聯的任何群組或通訊群組清單，重複這個程序。
 
 ::: moniker-end
 
@@ -172,7 +166,7 @@ ms.locfileid: "44399893"
 
 3. 使用下拉式清單選擇另一個網域。
 
-4. 選取 [儲存]****，再選取 [關閉]****。 針對與您要移除之網域關聯的任何群組或通訊群組清單，重複這個程序。
+4. 選取 **[儲存]**，再選取 **[關閉]**。 針對與您要移除之網域關聯的任何群組或通訊群組清單，重複這個程序。
 
 ::: moniker-end
 
@@ -184,7 +178,7 @@ ms.locfileid: "44399893"
 
 3. 使用下拉式清單選擇另一個網域。
 
-4. 選取 [儲存]****，再選取 [關閉]****。 針對與您要移除之網域關聯的任何群組或通訊群組清單，重複這個程序。
+4. 選取 **[儲存]**，再選取 **[關閉]**。 針對與您要移除之網域關聯的任何群組或通訊群組清單，重複這個程序。
 
 ::: moniker-end
 
