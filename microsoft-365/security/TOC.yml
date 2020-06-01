@@ -283,7 +283,7 @@
                   items:
                     - name: 設定輸出垃圾郵件篩選
                       href: ./office-365-security/configure-the-outbound-spam-policy.md
-                    - name: 輸出郵件的高風險傳遞集區
+                    - name: 輸出傳遞集區
                       href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                     - name: '從 [受限使用者] 入口網站中移除封鎖的使用者'
                       href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
