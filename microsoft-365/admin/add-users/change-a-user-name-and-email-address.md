@@ -23,23 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全域系統管理員如何變更使用者的電子郵件地址和顯示名稱。 '
-ms.openlocfilehash: 4325892a51c9d7a562b628a2bb89e6e1ff966e29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b672476048354a8b086781d6d9c89a7aa42ccdd3
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387246"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432084"
 ---
 # <a name="change-a-user-name-and-email-address"></a>變更使用名稱和電子郵件地址
 
 您可能需要變更某個使用者的電子郵件地址和顯示名稱，例如當使用者結婚或使用者的姓氏變更時。
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
-
-::: moniker-end
 
 觀看有關變更使用者電子郵件地址的短片。 <br><br>
 

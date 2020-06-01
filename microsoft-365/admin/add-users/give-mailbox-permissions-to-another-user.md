@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: '瞭解如何授予使用者存取另一個使用者信箱的權限。 這可讓使用者從其他使用者的信箱讀取郵件及傳送郵件。 '
-ms.openlocfilehash: 51de5f4e2b134a503ec935b1f1d0ec6519d2c229
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3fb920fb6f15a2ca48c5676e9b25afd1aa5263f1
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387174"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44431662"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>將信箱權限授予另一位其他使用者 - 系統管理員說明
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
-
-::: moniker-end
 
 身為系統管理員，公司可能會要求您授權部分使用者存取另一個使用者的信箱。 例如，您可能會想要授權助理來傳送或讀取直屬主管信箱的電子郵件，或是授權其中一個使用者代理另一個使用者傳送電子郵件。 本主題將向您說明如何完成這項作業。
   

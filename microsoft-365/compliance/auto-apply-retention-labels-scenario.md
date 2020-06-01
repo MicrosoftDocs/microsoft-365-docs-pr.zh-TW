@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本解決方案案例說明如何使用保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期。 方法是使用文件中繼資料來分類內容，具體做法是並自動套用保留標籤及設定以事件為基礎的保留。
-ms.openlocfilehash: 214384fcdf5099f71c36425102bb62866859f910
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 9c8a7044dccdb60f8e579d6dcad64310d1dda0d5
+ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636391"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44419099"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留標籤管理 SharePoint 文件的生命週期
 
@@ -285,25 +285,25 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 若要建立此流程，請從 SharePoint 連接器開始，並選取 [建立或修改項目時]**** 觸發程序。 指定網站位址和清單名稱，然後根據 **[生產中]** 清單欄值是否設定為 **[否]** (或在條件卡片中等於 false) 來新增條件。 然後根據內建的 HTTP 範本新增動作。 使用下一節中的值來設定 HTTP 動作。 您可以從下一節複製 URI 和 Body 屬性的值，然後將值貼到範本中。
 
 - **方法**：POST
-- **URI**：https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **URI**：`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **標頭**：Key = Content-Type, Value = application/atom+xml
 - **本文**：
-
-```HTML
-<?xml version='1.0' encoding='utf-8' standalone='yes'>
-<entry xmlns:d='https://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='https://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
-<category scheme='https://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent'>
-<updated>9/9/2017 10:50:00 PM</updated>
-<content type='application/xml'>
-<m:properties>
-<d:Name>Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}</d:Name>
-<d:EventType>Product Cessation&lt;</d:EventType>
-<d:SharePointAssetIdQuery>ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}<d:SharePointAssetIdQuery>
-<d:EventDateTime>@{formatDateTime(utcNow(),'yyyy-MM-dd')}</d:EventDateTime>
-</m:properties>
-</content&gt>
-</entry>
-```
+    
+    ```HTML
+    <?xml version='1.0' encoding='utf-8' standalone='yes'>
+    <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
+    <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent'>
+    <updated>9/9/2017 10:50:00 PM</updated>
+    <content type='application/xml'>
+    <m:properties>
+    <d:Name>Cessation Production @{triggerBody()?['Product_x0020_Name']?['Value']}</d:Name>
+    <d:EventType>Product Cessation&lt;</d:EventType>
+    <d:SharePointAssetIdQuery>ProductName:&quot;@{triggerBody()?['Product_x0020_Name']?['Value']}<d:SharePointAssetIdQuery>
+    <d:EventDateTime>@{formatDateTime(utcNow(),'yyyy-MM-dd')}</d:EventDateTime>
+    </m:properties>
+    </content&gt>
+    </entry>
+    ```
 
 下一節說明必須針對此案例在動作的 *Body* 屬性內加以設定的參數。
 
