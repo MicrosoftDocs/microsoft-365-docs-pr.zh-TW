@@ -27,16 +27,18 @@ search.appverid:
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
 description: 深入瞭解保護原則，可讓您管理使用者從行動裝置存取 Office 應用程式和工作檔的方式。
-ms.openlocfilehash: f613e518c3607010cae55443456be9d3ddc3d689
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b2b828cf2e201360f12b8fadcb395e72958230f6
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403071"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471060"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>管理使用者如何在行動裝置上存取 Office 文件
 
- 控制使用者從行動裝置存取 Office 檔案的原則設定預設為**關閉**。 建議您在設定時接受預設值，以建立適用于所有使用者的 Android、iOS 和 Windows 10 應用程式原則。 設定完成後，您可以建立更多原則。 
+本文適用于 Microsoft 365 商務版 Premium。
+
+控制使用者從行動裝置存取 Office 檔案的原則設定預設為**關閉**。 建議您在設定時接受預設值，以建立適用于所有使用者的 Android、iOS 和 Windows 10 應用程式原則。 設定完成後，您可以建立更多原則。 
   
 ## <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>控制使用者如何透過行動裝置存取 Office 檔案的設定
 

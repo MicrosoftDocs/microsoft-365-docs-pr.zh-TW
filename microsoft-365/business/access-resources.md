@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 ms.assetid: b0f4d010-9fd1-44d0-9d20-fabad2cdbab5
 description: 瞭解如何從已加入 Azure Active Directory 的 Windows 10 裝置，存取內部部署資源（如商務線應用程式、檔案共用及印表機）。
-ms.openlocfilehash: da5fab99cf00a65986fb5e555cc19e432fe0fe8d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9615ecc9469992d3e5a7479f4799c610db11fb41
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401107"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471244"
 ---
 # <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>從 Microsoft 365 商務版 Premium 中已加入 Azure AD 的裝置存取內部部署資源
+
+本文適用于 Microsoft 365 商務版 Premium。
 
 任何已加入 Azure Active Directory 的 Windows 10 裝置都能存取所有雲端架構資源（如您的 Microsoft 365 應用程式），並可由 Microsoft 365 商務版 Premium 進行保護。 您也可以允許存取內部部署資源（如商務線（LOB）應用程式、檔案共用及印表機）。 若要允許存取，請使用[AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) ，將您的內部部署 Active Directory 與 Azure active directory 同步。 
 

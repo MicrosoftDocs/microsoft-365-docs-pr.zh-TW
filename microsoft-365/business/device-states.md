@@ -26,14 +26,16 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: 深入瞭解 Microsoft 365 for business 中的 [系統管理] 主裝置的 [裝置動作] 清單中的各種裝置狀態。
-ms.openlocfilehash: 90c11caa03249408ba2916d303bcb4a59fbcca8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 64138e2b6ae73c067709cde1912a96615d08ebf1
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400947"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471172"
 ---
 # <a name="device-states"></a>裝置狀態
+
+本文適用于 Microsoft 365 商務版 Premium。
 
 Devices in the **Device actions** list (Admin home \> **Device actions**) can have the following states.
   

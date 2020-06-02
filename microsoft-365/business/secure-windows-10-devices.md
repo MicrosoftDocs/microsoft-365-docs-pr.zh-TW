@@ -27,14 +27,16 @@ search.appverid:
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: 瞭解設定 Windows 10 裝置在登入其工作或學校帳戶時，可接收之預設裝置原則的設定。
-ms.openlocfilehash: 7714a6e47de8a254d836ca2e158b92907b87f8c3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 03ae86861ddb0cb83cd39b7834f19e01bf3e99e2
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402727"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470620"
 ---
 # <a name="secure-windows-10-devices"></a>保護 Windows 10 裝置
+
+本文適用于 Microsoft 365 商務版 Premium。
 
 您在此進行的設定為預設 Windows 10 裝置原則的一部分。 透過其工作帳戶登入，所有連接 Windows 10 裝置的使用者（包括行動裝置和電腦）都會自動接收這些設定。 建議您在設定時先接受預設原則，並於稍後新增以特定使用者群組為目標的原則。
   

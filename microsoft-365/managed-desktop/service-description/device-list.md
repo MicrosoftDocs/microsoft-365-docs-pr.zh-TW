@@ -5,12 +5,12 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Micr
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 034305eec75bd369752915084b2857ebea455aa0
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: ccaa0a99dbfe8ce775f078093b9bf6b34e503fa7
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327921"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477181"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的桌面裝置 
 
@@ -42,6 +42,7 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本主題
 | [Dell Latitude 7300](https://www.dell.com/en-us/work/shop/laptops/13-7300/spd/latitude-13-7300-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 5月1日2021  | 5月1日2024  |
 | [Dell Latitude 7400](https://www.dell.com/en-us/work/shop/laptops/new-14/spd/latitude-14-7400-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 5月1日2021  | 5月1日2024  |
 | **\*[Dell Latitude 7400 2-1](https://www.dell.com/en-us/work/shop/laptops/14-2-in-1/spd/latitude-14-7400-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 5月1日2021  | 5月1日2024  |
+| **\*[Dell Optiplex 3070](https://www.dell.com/en-us/work/shop/desktops-n-workstations/3070/spd/optiplex-3070-desktop)** | 128 GB/Intel i3/8 GB RAM | 無 | 5月1日2022  | 5月1日2025  |
 | [HP EliteBook 830/840/850 G6 筆記本電腦](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB/Intel i5/8 GB RAM | 需要5VS01AV、紅外線相機或指紋感應器的 SKU | 2020年11月30日 | 2023年11月30日 |
 | [HP EliteBook x360 830 G6 筆記本電腦](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB/Intel i5/8 GB RAM | 需要5VS01AV、紅外線相機或指紋感應器的 SKU | 2020年11月30日 | 2023年11月30日 |
 | **\*[HP 精英 x2 G4 平板電腦](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB/Intel i5/8 GB RAM | 具有5VS03AV 的 SKU | 2021年7月31日 | 2024年7月31日 |
@@ -54,11 +55,11 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本主題
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB/Intel i3/8 GB RAM | 需要5VS04AV、紅外線相機或指紋辨識器的 SKU | 2020年6月6日 | 2023年6月6日 |
 | [HP Z2 微型 G4 工作站](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB/Intel i5/8 GB RAM | 具有8QR48AV 的 SKU| 2021年1月31日 | 2024年1月31日 |
 |[HP ZBook 14u/15u G6 移動工作站](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB/Intel i5/8 GB RAM | SKU 與5VS02AV，需要 IR 相機 | 2020年11月30日 | 2023年11月30日 |
-| [移至表面](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel 4415Y/8GB RAM | 無 | 2020年8月2日 | 2023年8月2日 |
+| [曲面走向2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB/Intel 核心 M3/8GB RAM | 無 | 2022年5月21日 | 2027年5月21日 |
 | [Surface 膝上型電腦2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 16，2020 | Oct 16，2023 |
-| **\*[Surface 膝上型電腦3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |
+| **\*[Surface 膝上型電腦3](https://www.microsoft.com/surface/business/surface-laptop-3)** | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 16，2020 | Oct 16，2023 |
-| **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |
+| **\*[Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7)** | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |
 
 此外，裝置也必須符合下列準則：     
 

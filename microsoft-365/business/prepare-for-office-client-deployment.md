@@ -22,18 +22,20 @@ search.appverid:
 - MET150
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 瞭解如何在 Windows 10 電腦上自動安裝32位 Office 應用程式，並將其保持更新。
-ms.openlocfilehash: 6f3a80be9729a3818607c0f42e2cc7ece66a07ee
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2de492914edbde2afe593aac290c4a634b801443
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401315"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470940"
 ---
 # <a name="prepare-for-office-client-deployment-by-microsoft-365-for-business"></a>Microsoft 365 for business 準備 Office 用戶端部署
 
+本文適用于 Microsoft 365 商務版 Premium。
+
 ## <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>準備將 Office App 自動安裝到用戶端電腦
 
-您可以使用 Microsoft 365 for business，在 Windows 10 電腦上自動安裝32位 Office 應用程式，並將更新維持在最新狀態。
+您可以使用 Microsoft 365 商務版 Premium，在 Windows 10 電腦上自動安裝32位 Office 應用程式，並將更新維持在最新狀態。
   
 如果使用者的電腦在 Windows 10 商務版上，則自動安裝效果最好，而且：
   

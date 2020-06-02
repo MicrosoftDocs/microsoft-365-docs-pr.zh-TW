@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 瞭解 Microsoft 365 商務版 Premium 的設定步驟，從訂閱、新增網域和使用者、設定安全性原則等等。
-ms.openlocfilehash: 80243fac6ca2efcfca030b6ee1c1113c026a80ce
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4670344263ceb64a32962dfa6eb9c1644e61541d
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402971"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470518"
 ---
 # <a name="overview-of-setup"></a>步驟概觀
 
@@ -48,7 +48,7 @@ ms.locfileid: "44402971"
 
    - **[新增您的網域](set-up.md#add-your-domain-to-personalize-sign-in)**（如果您已在[註冊](sign-up.md)時購買網域，此步驟已經完成。）
 
-    - **新增使用者**。 您可以以三種方式來新增使用者：
+   - **新增使用者**。 您可以以三種方式來新增使用者：
         - 在[嚮導](set-up.md#add-users-in-the-wizard)中。
         - 如果您有內部部署 Active directory，請使用目錄同步處理以[使用 AZURE AD Connect 新增使用者](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)。
         - 您也可以稍後在系統管理中心[新增使用者](add-users-m365b.md)。

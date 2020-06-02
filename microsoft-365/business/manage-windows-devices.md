@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: 瞭解如何啟用 Microsoft 365，以在幾個步驟中保護本機作用中已加入目錄的 Windows 10 裝置。
-ms.openlocfilehash: e7f83e620fbb43a478dba98f78d5f471a541aea7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7bfe5da8701a17712fa249eac99a22b8d5a1b2d1
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403051"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44471040"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-for-business"></a>啟用已加入網域的 Windows 10 裝置以供商務用 Microsoft 365 管理
+# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>啟用已加入網域的 Windows 10 裝置以由 Microsoft 365 商務版 Premium 管理
 
-如果您的組織使用 Windows Server Active Directory 內部部署，您可以設定 Microsoft 365 for business 來保護您的 Windows 10 裝置，同時仍保持存取需要本機驗證的內部部署資源。
+如果您的組織使用 Windows Server Active Directory 內部部署，您可以設定 Microsoft 365 商務版 Premium 來保護您的 Windows 10 裝置，同時仍維持對需要本機驗證的內部部署資源的存取。
 若要設定此保護，您可以執行**混合式 AZURE AD 聯結裝置**。 這些裝置會同時加入您的內部部署 Active Directory 和您的 Azure Active Directory。
 
 這段影片說明如何針對最常見的案例設定此功能的步驟，在後續步驟中也會詳細說明。

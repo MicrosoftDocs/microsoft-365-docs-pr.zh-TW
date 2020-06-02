@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.date: 09/24/2018
-ms.openlocfilehash: 1f86c904d3168eef84b4d48d8d578dd7a935267c
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 8bfd71c4a143dee54ae006c8c54d711a8785480f
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327723"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470486"
 ---
 # <a name="security-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的安全性
 
@@ -27,7 +27,6 @@ Microsoft 受管理的桌面使用數種 Microsoft 技術來協助保護受管�
 
 如需 Microsoft 管理的桌面所使用之資料儲存、使用方式及安全性作法的詳細資訊，請下載我們的白皮書 [https://aka.ms/mmd-data](https://aka.ms/mmd-data) 。
 
-如需 Microsoft 受管理電腦上的安全性作業小組及其如何運作以提供裝置安全性的詳細資訊，請參閱[Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP)影片。 
 
 ## <a name="device-security"></a>裝置安全性
 

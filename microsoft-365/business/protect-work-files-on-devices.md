@@ -28,14 +28,16 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: '瞭解預設設定及新增應用程式管理原則，以保護使用者個人行動裝置上的公司資料。 '
-ms.openlocfilehash: 1d76b8fde6db4cf99d29fcfff000c20f0e7c18fe
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6dd6bc5c16ffbbd6ed62f16ad11e1eeb8e06a193
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401275"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470900"
 ---
 # <a name="protect-work-files-on-devices"></a>保護裝置上的工作檔案
+
+本文適用于 Microsoft 365 商務版 Premium。
 
 在當今的世界中，使用者會與其裝置相關，隨著個人和工作週期的碰撞，您公司的資料可能會在員工的個人裝置上結束。 您在這裡設定的設定可協助您取回控制權，並提供工作檔的保護，而不會影響使用者的任何個人設定或資料。
   

@@ -25,14 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何設定 Microsoft 365 活動的條件式存取原則，以增加大量額外的安全性。
-ms.openlocfilehash: d7c9cfee2ef00e4ebe231a28ccca185c10f53c6b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 58ee760877ee2fd7e53ef9463242657ab66a2b6e
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403011"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470640"
 ---
 # <a name="set-up-conditional-access-policies"></a>設定條件式存取原則
+
+本文適用于 Microsoft 365 商務版 Premium。
 
 [條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)原則會增加大量額外的安全性。 Microsoft 提供一組為所有客戶建議的基準條件式存取原則。 基準原則是一組預先定義的原則，可協助保護組織不受許多常見的攻擊。 這些常見的攻擊可能包括密碼噴塗、重新顯示和網路釣魚。
 

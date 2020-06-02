@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在保管人及其資料來源中放置保留，以保留您的高級 eDiscovery 案例中的相關內容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8789889a243bad15f1c29c0bd392d7273574b62c
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9f540877626d01652912038d69a83598af55ba1d
+ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034121"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44477159"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高級 eDiscovery 中管理保留
 
@@ -40,7 +40,7 @@ ms.locfileid: "44034121"
    
 2. 移至 [**保管人**] 索引標籤，以在您的案例中新增保管人。 若要瞭解如何在高級 eDiscovery 案例中新增及放置保管人，請參閱[Add 保管人 to An Advanced Ediscovery case](add-custodians-to-case.md)。 如果您已新增保管人並將其置於保留狀態，請移至步驟3。
    
-3. 移至 [**保留**] 索引標籤，然後按一下 [ **CustodianHold\<HoldId>**。
+3. 移至 [**保留**] 索引標籤，然後按一下 [ **CustodianHold \<HoldId> **]。
    
 4. 在飛入頁面中，您可以看到原則的 [保留統計資料]。 您也可以執行將查詢套用至保管人型保留等動作。 如需建立保留查詢及使用條件的詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
  
@@ -80,7 +80,7 @@ ms.locfileid: "44034121"
      請參閱**FAQ**一節，以取得放置 Microsoft 365 群組和 microsoft 團隊保留的秘訣。
 
     > [!NOTE]
-    > 使用者 OneDrive 帳戶的 URL 包含使用者主體名稱（UPN）（例如`https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com`）。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是非 custodial 保留的一部分，且其 UPN 已變更，您必須更新 [保留] 並指向新的 OneDrive URL。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
+    > 使用者 OneDrive 帳戶的 URL 包含使用者主要名稱（UPN）（例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ）。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是非 custodial 保留的一部分，且其 UPN 已變更，您必須更新 [保留] 並指向新的 OneDrive URL。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
 
      c. **Exchange 公用資料夾**-將切換開關移至 [全部] 位置，將 Exchange Online 組織中的所有公用資料夾保留。 請注意，您無法選擇要保留的特定公用資料夾。 如果您不想要保留公用資料夾，請將切換參數設為 [**無**]。
 
