@@ -281,7 +281,7 @@
           href: retention-policies-teams.md
         - name: 適用於 Exchange 的保留
           href: retention-policies-exchange.md
-        - name: 檔案計劃管理員
+        - name: 檔案計畫
           href: file-plan-manager.md
         - name: 了解保留標籤
           href: labels.md
@@ -333,7 +333,7 @@
           href: records.md
         - name: 檔案計畫
           items:
-            - name: 檔案計劃管理員
+            - name: 管理保留標籤
               href: file-plan-manager.md
             - name: 了解保留標籤
               href: labels.md
