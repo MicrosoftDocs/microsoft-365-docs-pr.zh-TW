@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以利用 Microsoft 365 中的記錄管理，將組織的特定保留排程套用到檔案計畫，以便管理保留、記錄宣告和處置，以支援完整的內容生命週期。
-ms.openlocfilehash: 261ae3286792dde540d9bf648c15e529863091ed
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: b7c2febafdfe0b234bedf439236a6a7bd2aec549
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231866"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432344"
 ---
 # <a name="records-management-in-microsoft-365"></a>Microsoft 365 中的記錄管理
 
@@ -28,13 +28,13 @@ ms.locfileid: "44231866"
 
 所有類型的組織都需要記錄管理解決方案，用來管理其公司資料間的法規、法務及業務關鍵記錄。 Microsoft 365 中的記錄管理可幫助組織管理其法律義務，提供展現法規遵循的能力，並提高不再需要保留、不再具有價值或商業用途不再需要的項目一般處置的效率。
 
-記錄管理解決方案支援下列元素：
+Microsoft 365 中的記錄管理提供下列功能：
 
-- **標籤內容做為記錄**。 建立並發佈將內容宣告為[記錄](records.md)的保留標籤，使用者可識別敏感性資訊、關鍵字或內容類型而套用或 [自動套用](labels.md#applying-a-retention-label-automatically-based-on-conditions)標籤。
+- **標籤內容做為記錄**。 建立並發佈將內容標記為[記錄](records.md)的保留標籤，使用者可識別敏感性資訊、關鍵字或內容類型而套用或[自動套用](labels.md#applying-a-retention-label-automatically-based-on-conditions)標籤。
 
-- **使用檔案計畫移轉和管理您的保留計畫**，並使用[檔案計畫管理員](file-plan-manager.md)來帶出您的現有保留計畫，或使用檔案描述項建立新檔案並擴充階層。
+- **使用檔案計劃來移轉和管理您的保留需求**。 透過使用[檔案計劃](file-plan-manager.md)，您可以將現有的保留計劃帶入 Microsoft 365，或是建立新的保留方案以增強管理功能。
 
-- **在記錄標籤中建立保留和刪除原則**。 根據各種因素，包括上次修改或建立日期，來定義[保留](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)與[處置](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age)期間。
+- **在記錄標籤中建立保留和刪除原則**。 根據包括上次修改或建立日期的各種因素，來定義[保留](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)與[處置](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age)期間。
 
 - 使用[以事件為基礎的保留](event-driven-retention.md)來**觸發以事件為基礎的保留**。
 
@@ -45,3 +45,7 @@ ms.locfileid: "44231866"
 - 為組織中的記錄管理員功能**設定特定權限**，以讓其[具有適當權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
 您可以使用 Microsoft 365 中的記錄管理解決方案，將組織的保留排程套納入檔案計畫，以便管理保留、記錄宣告和處置，以支援完整的內容生命週期。
+
+## <a name="next-steps"></a>後續步驟
+
+如果您準備好要開始使用 Microsoft 365 中的記錄管理，請參閱[了解記錄](records.md)。

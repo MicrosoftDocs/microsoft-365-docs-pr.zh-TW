@@ -11,7 +11,15 @@
         - name: 規劃您的設定
           href: setup/plan-your-setup.md
         - name: 使用引導式設定來設定您的組織
-          href: setup/setup.md
+          items:
+            - name: Microsoft 365 商務基本版
+              href: setup/setup-business-basic.md
+            - name: Microsoft 365 商務標準版
+              href: setup/setup-business-standard.md
+            - name: Microsoft 365 商務進階版
+              href: ../business/set-up.md
+            - name: Microsoft 365 Apps 商務版
+              href: setup/setup-apps-for-business.md
         - name: 探索設定頁面和精靈
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: 移轉資料
@@ -21,7 +29,7 @@
         - name: 推出 Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: 適合所有人的 App 訓練
-          href: 'https://support.office.com/en-us/office-training-center'
+          href: 'https://support.office.com/office-training-center'
         - name: 我有何種訂閱？
           href: admin-overview/what-subscription-do-i-have.md
         - name: 自訂登入頁面
@@ -240,10 +248,42 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: 啟用適用於 Office 2013 的新式驗證
           href: security-and-compliance/enable-modern-authentication.md
+        - name: 保護 Microsoft 商務進階版的安全
+          items:
+            - name: 資料保護的先決條件
+              href: ../business/pre-requisites-for-data-protection.md
+            - name: 安全性功能
+              href: ../business/security-features.md
+            - name: 加強威脅防護
+              href: ../business/increase-threat-protection.md
+            - name: 設定合規性功能
+              href: ../business/set-up-compliance.md
         - name: 安全分數
           href: 'https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new'
         - name: GDPR 合規性指南
           href: security-and-compliance/gdpr-compliance.md
+    - name: 管理裝置
+      items:
+        - name: 檢視和編輯原則和裝置
+          href: ../business/view-policies-and-devices.md
+        - name: 移除公司資料
+          href: ../business/remove-company-data.md
+        - name: 將裝置重設回原廠設定
+          href: ../business/reset-devices-to-factory-settings.md
+        - name: 將保護功能對應到 Intune 設定
+          href: ../business/map-protection-features-to-intune-settings.md
+        - name: 適用於 Android 和 iOS 的應用程式防護設定
+          href: ../business/app-protection-settings-for-android-and-ios.md
+          items:
+            - name: 驗證 Android 或 iOS 上的設定
+              href: ../business/validate-settings-on-android-or-ios.md
+        - name: 適用於 Windows 10 電腦的裝置保護設定
+          href: ../business/protection-settings-for-windows-10-pcs.md
+          items:
+            - name: 驗證 Windows 10 電腦上的設定
+              href: ../business/validate-settings-on-windows-10-pcs.md
+        - name: 適用於 Windows 10 電腦的應用程式防護設定
+          href: ../business/protection-settings-for-windows-10-devices.md
     - name: 與客戶合作
       href: work-with-customers/index.yml
       items:

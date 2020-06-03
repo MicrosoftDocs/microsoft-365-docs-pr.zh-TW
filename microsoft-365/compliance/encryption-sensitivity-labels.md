@@ -14,14 +14,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 當建立敏感度標籤時，您可以限制標籤將套用至其中之內容的存取。敏感度標籤可以使用加密來保護內容。
+description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 551223196e5870034cf7c3f69145a7b622932a99
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
+ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166034"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44470670"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -38,7 +38,7 @@ ms.locfileid: "44166034"
 
 - 只有標籤加密設定授權的使用者才能將其解密。
 - 即使檔案重新命名，無論其位於您組織內部或外部，仍會保持加密狀態。
-- 同時進行靜態加密 (例如，在 OneDrive 帳戶中) 及傳輸中加密 (例如，已傳送的電子郵件)。
+- 同時進行靜態加密 (例如，在 OneDrive 帳戶中) 及傳輸中加密 (例如，周遊網際網路的電子郵件)。
 
 最後，身為系統管理員的您，在設定一個敏感度標籤來套用加密時，可以選擇以下兩者之一：
 
@@ -359,7 +359,7 @@ ms.locfileid: "44166034"
 
 加密您最機密的文件和電子郵件，可協助確保只有獲授權的人員可以存取此資料。 不過，有一些事項需要納入考量：
 
-- 如果您的組織尚未[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤 (公開預覽)](sensitivity-labels-sharepoint-onedrive-files.md)：
+- 如果您的組織尚未[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)：
     
     - 搜尋、電子文件探索和 Delve 對加密的檔案將不適用。 
     - DLP 原則對這些加密檔案的中繼資料 (包括保留標籤資訊) 有效，但對這些檔案的內容 (例如檔案中的信用卡號碼) 沒有效用。
