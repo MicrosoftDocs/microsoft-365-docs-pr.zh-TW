@@ -50,40 +50,40 @@ ms.locfileid: "44371437"
 <span data-ttu-id="9326a-116">此組態包含：</span><span class="sxs-lookup"><span data-stu-id="9326a-116">This configuration consists of:</span></span> 
   
 - <span data-ttu-id="9326a-117">Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。</span><span class="sxs-lookup"><span data-stu-id="9326a-117">Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.</span></span>
-- <span data-ttu-id="9326a-118">簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路中的 DC1、APP1 及 CLIENT1 虛擬機器組成。</span><span class="sxs-lookup"><span data-stu-id="9326a-118">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network.</span></span> <span data-ttu-id="9326a-119">DC1 是 testlab 的網域控制站。\<您的公開網域名稱> AD DS 網域。</span><span class="sxs-lookup"><span data-stu-id="9326a-119">DC1 is a domain controller for the testlab.\<your public domain name> AD DS domain.</span></span>
+- <span data-ttu-id="9326a-118">簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路中的 DC1、APP1 及 CLIENT1 虛擬機器組成。</span><span class="sxs-lookup"><span data-stu-id="9326a-118">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network.</span></span> <span data-ttu-id="9326a-119">DC1 是 testlab 的網域控制站。\<您的公開網域名稱> AD DS 網域。</span><span class="sxs-lookup"><span data-stu-id="9326a-119">DC1 is a domain controller for the testlab.\<your public domain name> AD DS domain.</span></span> <span data-ttu-id="9326a-120">階段 2：建立及註冊 testlab 網域</span><span class="sxs-lookup"><span data-stu-id="9326a-120">Phase 2: Create and register the testlab domain</span></span>
 
-## <a name="phase-2-create-and-register-the-testlab-domain"></a><span data-ttu-id="9326a-120">階段 2：建立及註冊 testlab 網域</span><span class="sxs-lookup"><span data-stu-id="9326a-120">Phase 2: Create and register the testlab domain</span></span>
+## <a name="phase-2-create-and-register-the-testlab-domain"></a><span data-ttu-id="9326a-121">在這個階段，您會新增公用 DNS 網域並將它新增至您的訂閱。</span><span class="sxs-lookup"><span data-stu-id="9326a-121">In this phase you add a public DNS domain and add it to your subscription.</span></span>
 
-<span data-ttu-id="9326a-121">在這個階段，您會新增公用 DNS 網域並將它新增至您的訂閱。</span><span class="sxs-lookup"><span data-stu-id="9326a-121">In this phase you add a public DNS domain and add it to your subscription.</span></span>
+<span data-ttu-id="9326a-122">First, work with your public DNS registration provider to create a new public DNS domain name based on your current domain name and add it to your subscription.</span><span class="sxs-lookup"><span data-stu-id="9326a-122">First, work with your public DNS registration provider to create a new public DNS domain name based on your current domain name and add it to your subscription.</span></span>
 
 <span data-ttu-id="9326a-p104">首先，與您的公用 DNS 註冊提供者合作，以根據目前的網域名稱建立新的公用 DNS 網域名稱，並新增到您的訂閱中。建議名稱使用 **testlab.**\<您的公用網域>。比方說，如果您的公用網域名稱為 **<span>contoso</span>.com**，請新增公用網域名稱 **<span>testlab</span>.contoso.com**。</span><span class="sxs-lookup"><span data-stu-id="9326a-p104">First, work with your public DNS registration provider to create a new public DNS domain name based on your current domain name and add it to your subscription. We recommend using the name **testlab.**\<your public domain>. For example, if your public domain name is **<span>contoso</span>.com**, add the public domain name **<span>testlab</span>.contoso.com**.</span></span>
   
-<span data-ttu-id="9326a-125">接下來，您會進行網域註冊程序，以將 **testlab.**\<您的公用網域名稱> 網域新增至 Microsoft 365 或 Office 365 試用版或付費訂閱。</span><span class="sxs-lookup"><span data-stu-id="9326a-125">Next, you add the **testlab.**\<your public domain> domain to your Microsoft 365 or Office 365 trial or paid subscription by going through the domain registration process.</span></span> <span data-ttu-id="9326a-126">這包括將其他 DNS 記錄新增至 **testlab.**\<您的公用網域名稱> 網域。</span><span class="sxs-lookup"><span data-stu-id="9326a-126">This consists of adding additional DNS records to the **testlab.**\<your public domain> domain.</span></span> <span data-ttu-id="9326a-127">如需詳細資訊，請參閱[新增網域至 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)。</span><span class="sxs-lookup"><span data-stu-id="9326a-127">For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain).</span></span> 
+<span data-ttu-id="9326a-126">這包括將其他 DNS 記錄新增至 **testlab.**\<您的公用網域名稱> 網域。</span><span class="sxs-lookup"><span data-stu-id="9326a-126">This consists of adding additional DNS records to the **testlab.**\<your public domain> domain.</span></span> <span data-ttu-id="9326a-127">如需詳細資訊，請參閱[新增網域至 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)。</span><span class="sxs-lookup"><span data-stu-id="9326a-127">For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain).</span></span> <span data-ttu-id="9326a-128">以下是產生的組態。</span><span class="sxs-lookup"><span data-stu-id="9326a-128">Here is your resulting configuration.</span></span> <span data-ttu-id="9326a-129">testlab 網域名稱註冊</span><span class="sxs-lookup"><span data-stu-id="9326a-129">The registration of your testlab domain name</span></span> <span data-ttu-id="9326a-130">此組態包含：</span><span class="sxs-lookup"><span data-stu-id="9326a-130">This configuration consists of:</span></span> 
 
-<span data-ttu-id="9326a-128">以下是產生的組態。</span><span class="sxs-lookup"><span data-stu-id="9326a-128">Here is your resulting configuration.</span></span>
+<span data-ttu-id="9326a-131">已註冊 DNS 網域 testlab.\<您的公用網域名稱> 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。</span><span class="sxs-lookup"><span data-stu-id="9326a-131">Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain testlab.\<your public domain name> registered.</span></span>
   
-![testlab 網域名稱註冊](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
+![簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成](../media/password-hash-sync-m365-ent-test-environment/Phase2.png)
   
-<span data-ttu-id="9326a-130">此組態包含：</span><span class="sxs-lookup"><span data-stu-id="9326a-130">This configuration consists of:</span></span>
-
-- <span data-ttu-id="9326a-131">已註冊 DNS 網域 testlab.\<您的公用網域名稱> 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。</span><span class="sxs-lookup"><span data-stu-id="9326a-131">Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain testlab.\<your public domain name> registered.</span></span>
-- <span data-ttu-id="9326a-132">簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成</span><span class="sxs-lookup"><span data-stu-id="9326a-132">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span>
-
 <span data-ttu-id="9326a-133">請注意 testlab.\<您的公用網域名稱> 目前的狀況：</span><span class="sxs-lookup"><span data-stu-id="9326a-133">Notice how the testlab.\<your public domain name> is now:</span></span>
 
-- <span data-ttu-id="9326a-134">由公用 DNS 記錄支援。</span><span class="sxs-lookup"><span data-stu-id="9326a-134">Supported by public DNS records.</span></span>
-- <span data-ttu-id="9326a-135">已在您的 Microsoft 365 訂閱中註冊。</span><span class="sxs-lookup"><span data-stu-id="9326a-135">Registered in your Microsoft 365 subscriptions.</span></span>
+- <span data-ttu-id="9326a-134">由公用 DNS 記錄支援。</span><span class="sxs-lookup"><span data-stu-id="9326a-134">Supported by public DNS records.</span></span> <span data-ttu-id="9326a-135">已在您的 Microsoft 365 訂閱中註冊。</span><span class="sxs-lookup"><span data-stu-id="9326a-135">Registered in your Microsoft 365 subscriptions.</span></span>
 - <span data-ttu-id="9326a-136">模擬內部網路上的 AD DS 網域。</span><span class="sxs-lookup"><span data-stu-id="9326a-136">The AD DS domain on your simulated intranet.</span></span>
+
+<span data-ttu-id="9326a-p107">當系統提示您輸入使用者名稱和密碼時，指定 <strong>user1@testlab.</strong>\<您的網域名稱> 與 User1 密碼。您應該可以成功以 User1 身分登入。</span><span class="sxs-lookup"><span data-stu-id="9326a-p107">When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your domain name> and the User1 password. You should successfully sign in as User1.</span></span>
+
+- <span data-ttu-id="9326a-139">首先，在 APP1 上安裝及設定 Azure AD Connect。</span><span class="sxs-lookup"><span data-stu-id="9326a-139">First, you install and configure Azure AD Connect on APP1.</span></span>
+- <span data-ttu-id="9326a-140">從 [Azure 入口網站](https://portal.azure.com)，以您的全域管理員帳戶登入，然後以 TESTLAB\\User1 帳戶連線到 APP1。</span><span class="sxs-lookup"><span data-stu-id="9326a-140">From the [Azure portal](https://portal.azure.com), sign in with your global administrator account, and then connect to APP1 with the TESTLAB\\User1 account.</span></span>
+- <span data-ttu-id="9326a-141">從 APP1 的桌面，開啟系統管理員層級 Windows PowerShell 命令提示字元，然後執行下列命令以停用 Internet Explorer 增強的安全性：</span><span class="sxs-lookup"><span data-stu-id="9326a-141">From the desktop of APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands to disable Internet Explorer Enhanced Security:</span></span>
      
-## <a name="phase-3-install-azure-ad-connect-on-app1"></a><span data-ttu-id="9326a-137">階段 3：在 APP1 上安裝 Azure AD Connect</span><span class="sxs-lookup"><span data-stu-id="9326a-137">Phase 3: Install Azure AD Connect on APP1</span></span>
+## <a name="phase-3-install-azure-ad-connect-on-app1"></a><span data-ttu-id="9326a-142">從工作列按一下 [Internet Explorer]\*\*\*\*，然後移至 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)。</span><span class="sxs-lookup"><span data-stu-id="9326a-142">From the task bar, click **Internet Explorer** and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).</span></span>
 
-<span data-ttu-id="9326a-138">在這個階段，您會在 APP1 上安裝及設定 Azure AD Connect 工具，然後確認它可運作。</span><span class="sxs-lookup"><span data-stu-id="9326a-138">In this phase, you install and configure the Azure AD Connect tool on APP1, and then verify that it works.</span></span>
+<span data-ttu-id="9326a-143">在 [Microsoft Azure Active Directory Connect] 頁面上，按一下 [下載]\*\*\*\*，然後按一下 [執行]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-143">On the Microsoft Azure Active Directory Connect page, click **Download**, and then click **Run**.</span></span>
   
-<span data-ttu-id="9326a-139">首先，在 APP1 上安裝及設定 Azure AD Connect。</span><span class="sxs-lookup"><span data-stu-id="9326a-139">First, you install and configure Azure AD Connect on APP1.</span></span>
+<span data-ttu-id="9326a-144">在 [歡迎使用 Azure AD Connect]\*\*\*\* 頁面上，按一下 [我同意]\*\*\*\*，然後按一下 [繼續]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-144">On the **Welcome to Azure AD Connect** page, click **I agree**, and then click **Continue**.</span></span>
 
-1. <span data-ttu-id="9326a-140">從 [Azure 入口網站](https://portal.azure.com)，以您的全域管理員帳戶登入，然後以 TESTLAB\\User1 帳戶連線到 APP1。</span><span class="sxs-lookup"><span data-stu-id="9326a-140">From the [Azure portal](https://portal.azure.com), sign in with your global administrator account, and then connect to APP1 with the TESTLAB\\User1 account.</span></span>
+1. <span data-ttu-id="9326a-145">在 [快速設定]\*\*\*\* 頁面上，按一下 [使用快速設定]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-145">On the **Express Settings** page, click **Use express settings**.</span></span>
     
-2. <span data-ttu-id="9326a-141">從 APP1 的桌面，開啟系統管理員層級 Windows PowerShell 命令提示字元，然後執行下列命令以停用 Internet Explorer 增強的安全性：</span><span class="sxs-lookup"><span data-stu-id="9326a-141">From the desktop of APP1, open an administrator-level Windows PowerShell command prompt, and then run these commands to disable Internet Explorer Enhanced Security:</span></span>
+2. <span data-ttu-id="9326a-146">在 [連線到 Azure AD]\*\*\*\* 頁面上，在 [使用者名稱]\*\*\*\* 中輸入您的全域系統管理員帳戶名稱，在 [密碼]\*\*\*\* 中輸入其密碼，然後按 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-146">On the **Connect to Azure AD** page, type your global administrator account name in **Username,** type its password in **Password**, and then click **Next**.</span></span>
     
    ```powershell
    Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Active Setup\Installed Components\{A509B1A7-37EF-4b3f-8CFC-4F3A74704073}" -Name "IsInstalled" -Value 0
@@ -91,62 +91,62 @@ ms.locfileid: "44371437"
    Stop-Process -Name Explorer -Force
    ```
 
-3. <span data-ttu-id="9326a-142">從工作列按一下 [Internet Explorer]\*\*\*\*，然後移至 [https://aka.ms/aadconnect](https://aka.ms/aadconnect)。</span><span class="sxs-lookup"><span data-stu-id="9326a-142">From the task bar, click **Internet Explorer** and go to [https://aka.ms/aadconnect](https://aka.ms/aadconnect).</span></span>
+3. <span data-ttu-id="9326a-147">在 [連線到 AD DS]\*\*\*\* 頁面上，在 [使用者名稱]\*\*\*\* 中輸入 **TESTLAB\\User1**，在 [密碼]\*\*\*\* 中輸入其密碼，然後按 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-147">On the **Connect to AD DS** page, type **TESTLAB\\User1** in **Username,** type its password in **Password**, and then click **Next**.</span></span>
     
-4. <span data-ttu-id="9326a-143">在 [Microsoft Azure Active Directory Connect] 頁面上，按一下 [下載]\*\*\*\*，然後按一下 [執行]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-143">On the Microsoft Azure Active Directory Connect page, click **Download**, and then click **Run**.</span></span>
+4. <span data-ttu-id="9326a-148">在 [準備設定]\*\*\*\* 頁面上，按一下 [安裝]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-148">On the **Ready to configure** page, click **Install**.</span></span>
     
-5. <span data-ttu-id="9326a-144">在 [歡迎使用 Azure AD Connect]\*\*\*\* 頁面上，按一下 [我同意]\*\*\*\*，然後按一下 [繼續]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-144">On the **Welcome to Azure AD Connect** page, click **I agree**, and then click **Continue**.</span></span>
+5. <span data-ttu-id="9326a-149">在 [組態完成]\*\*\*\* 頁面上，按一下 [結束]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-149">On the **Configuration complete** page, click **Exit**.</span></span>
     
-6. <span data-ttu-id="9326a-145">在 [快速設定]\*\*\*\* 頁面上，按一下 [使用快速設定]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-145">On the **Express Settings** page, click **Use express settings**.</span></span>
+6. <span data-ttu-id="9326a-150">在 Internet Explorer 中，移至 Microsoft 365 系統管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com))。</span><span class="sxs-lookup"><span data-stu-id="9326a-150">In Internet Explorer, go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)).</span></span>
     
-7. <span data-ttu-id="9326a-146">在 [連線到 Azure AD]\*\*\*\* 頁面上，在 [使用者名稱]\*\*\*\* 中輸入您的全域系統管理員帳戶名稱，在 [密碼]\*\*\*\* 中輸入其密碼，然後按 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-146">On the **Connect to Azure AD** page, type your global administrator account name in **Username,** type its password in **Password**, and then click **Next**.</span></span>
+7. <span data-ttu-id="9326a-151">在左方的瀏覽區域中，按一下 [使用者] > [作用中的使用者]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-151">In the left navigation, click **Users > Active users**.</span></span>
     
-8. <span data-ttu-id="9326a-147">在 [連線到 AD DS]\*\*\*\* 頁面上，在 [使用者名稱]\*\*\*\* 中輸入 **TESTLAB\\User1**，在 [密碼]\*\*\*\* 中輸入其密碼，然後按 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-147">On the **Connect to AD DS** page, type **TESTLAB\\User1** in **Username,** type its password in **Password**, and then click **Next**.</span></span>
+8. <span data-ttu-id="9326a-152">請注意名為 **User1** 的帳戶。</span><span class="sxs-lookup"><span data-stu-id="9326a-152">Note the account named **User1**.</span></span>
     
-9. <span data-ttu-id="9326a-148">在 [準備設定]\*\*\*\* 頁面上，按一下 [安裝]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-148">On the **Ready to configure** page, click **Install**.</span></span>
+9. <span data-ttu-id="9326a-153">此帳戶是來自 TESTLAB AD DS 網域，且經過證明目錄同步作業可以運作。</span><span class="sxs-lookup"><span data-stu-id="9326a-153">This account is from the TESTLAB AD DS domain and is proof that directory synchronization has worked.</span></span>
     
-10. <span data-ttu-id="9326a-149">在 [組態完成]\*\*\*\* 頁面上，按一下 [結束]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-149">On the **Configuration complete** page, click **Exit**.</span></span>
+10. <span data-ttu-id="9326a-154">按一下 **User1** 帳戶，然後按一下 [授權與 App]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-154">Click the **User1** account, and then click **Licenses and apps**.</span></span>
     
-11. <span data-ttu-id="9326a-150">在 Internet Explorer 中，移至 Microsoft 365 系統管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com))。</span><span class="sxs-lookup"><span data-stu-id="9326a-150">In Internet Explorer, go to the Microsoft 365 admin center ([https://portal.microsoft.com](https://portal.microsoft.com)).</span></span>
+11. <span data-ttu-id="9326a-155">在 [產品授權]\*\*\*\* 中，選取您的位置 (如有需要)，停用 **Office 365 E5** 授權，並啟用 **Microsoft 365 E5** 授權。</span><span class="sxs-lookup"><span data-stu-id="9326a-155">In **Product licenses**, select your location (if needed), disable the **Office 365 E5** license and enable the **Microsoft 365 E5** license.</span></span>
     
-12. <span data-ttu-id="9326a-151">在左方的瀏覽區域中，按一下 [使用者] > [作用中的使用者]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-151">In the left navigation, click **Users > Active users**.</span></span>
+12. <span data-ttu-id="9326a-156">按一下頁面底部的 [儲存]\*\*\*\*，然後按一下 [關閉]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-156">Click **Save** at the bottom of the page, and then click **Close**.</span></span>
     
-    <span data-ttu-id="9326a-152">請注意名為 **User1** 的帳戶。</span><span class="sxs-lookup"><span data-stu-id="9326a-152">Note the account named **User1**.</span></span> <span data-ttu-id="9326a-153">此帳戶是來自 TESTLAB AD DS 網域，且經過證明目錄同步作業可以運作。</span><span class="sxs-lookup"><span data-stu-id="9326a-153">This account is from the TESTLAB AD DS domain and is proof that directory synchronization has worked.</span></span>
+    <span data-ttu-id="9326a-157">接下來，測試使用 <strong>user1@testlab.</strong>\<您的網域名稱> User1 帳戶的使用者名稱來登入訂閱的能力。</span><span class="sxs-lookup"><span data-stu-id="9326a-157">Next, you test the ability to sign in to your subscription with the <strong>user1@testlab.</strong>\<your domain name> user name of the User1 account.</span></span> <span data-ttu-id="9326a-158">從 APP1 登出，然後再次登入，這次指定不同的帳戶。</span><span class="sxs-lookup"><span data-stu-id="9326a-158">From APP1, sign out, and then sign in again, this time specifying a different account.</span></span>
     
-13. <span data-ttu-id="9326a-154">按一下 **User1** 帳戶，然後按一下 [授權與 App]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-154">Click the **User1** account, and then click **Licenses and apps**.</span></span>
+13. <span data-ttu-id="9326a-159">When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your domain name> and the User1 password.</span><span class="sxs-lookup"><span data-stu-id="9326a-159">When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your domain name> and the User1 password.</span></span>
     
-14. <span data-ttu-id="9326a-155">在 [產品授權]\*\*\*\* 中，選取您的位置 (如有需要)，停用 **Office 365 E5** 授權，並啟用 **Microsoft 365 E5** 授權。</span><span class="sxs-lookup"><span data-stu-id="9326a-155">In **Product licenses**, select your location (if needed), disable the **Office 365 E5** license and enable the **Microsoft 365 E5** license.</span></span> 
+14. <span data-ttu-id="9326a-160">You should successfully sign in as User1.</span><span class="sxs-lookup"><span data-stu-id="9326a-160">You should successfully sign in as User1.</span></span> 
 
-15. <span data-ttu-id="9326a-156">按一下頁面底部的 [儲存]\*\*\*\*，然後按一下 [關閉]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9326a-156">Click **Save** at the bottom of the page, and then click **Close**.</span></span>
+15. <span data-ttu-id="9326a-161">請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是全域管理員。</span><span class="sxs-lookup"><span data-stu-id="9326a-161">Notice that although User1 has domain administrator permissions for the TESTLAB AD DS domain, it is not a global administrator.</span></span>
     
-<span data-ttu-id="9326a-157">接下來，測試使用 <strong>user1@testlab.</strong>\<您的網域名稱> User1 帳戶的使用者名稱來登入訂閱的能力。</span><span class="sxs-lookup"><span data-stu-id="9326a-157">Next, you test the ability to sign in to your subscription with the <strong>user1@testlab.</strong>\<your domain name> user name of the User1 account.</span></span>
+<span data-ttu-id="9326a-162">因此，您不會看到 [管理員]\*\*\*\* 圖示選項。</span><span class="sxs-lookup"><span data-stu-id="9326a-162">Therefore, you will not see the **Admin** icon as an option.</span></span> <span data-ttu-id="9326a-163">以下是產生的組態。</span><span class="sxs-lookup"><span data-stu-id="9326a-163">Here is your resulting configuration.</span></span>
 
-1. <span data-ttu-id="9326a-158">從 APP1 登出，然後再次登入，這次指定不同的帳戶。</span><span class="sxs-lookup"><span data-stu-id="9326a-158">From APP1, sign out, and then sign in again, this time specifying a different account.</span></span>
+1. <span data-ttu-id="9326a-164">使用密碼雜湊同步處理測試環境的模擬企業</span><span class="sxs-lookup"><span data-stu-id="9326a-164">The simulated enterprise with password hash synchronization test environment</span></span>
 
-2. <span data-ttu-id="9326a-p107">當系統提示您輸入使用者名稱和密碼時，指定 <strong>user1@testlab.</strong>\<您的網域名稱> 與 User1 密碼。您應該可以成功以 User1 身分登入。</span><span class="sxs-lookup"><span data-stu-id="9326a-p107">When prompted for a user name and password, specify <strong>user1@testlab.</strong>\<your domain name> and the User1 password. You should successfully sign in as User1.</span></span> 
+2. <span data-ttu-id="9326a-165">此組態包含：</span><span class="sxs-lookup"><span data-stu-id="9326a-165">This configuration consists of:</span></span> <span data-ttu-id="9326a-166">已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。</span><span class="sxs-lookup"><span data-stu-id="9326a-166">Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain TESTLAB.\<your domain name> registered.</span></span> <span data-ttu-id="9326a-167">簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成</span><span class="sxs-lookup"><span data-stu-id="9326a-167">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span> 
  
-<span data-ttu-id="9326a-161">請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是全域管理員。</span><span class="sxs-lookup"><span data-stu-id="9326a-161">Notice that although User1 has domain administrator permissions for the TESTLAB AD DS domain, it is not a global administrator.</span></span> <span data-ttu-id="9326a-162">因此，您不會看到 [管理員]\*\*\*\* 圖示選項。</span><span class="sxs-lookup"><span data-stu-id="9326a-162">Therefore, you will not see the **Admin** icon as an option.</span></span> 
+<span data-ttu-id="9326a-168">Azure AD Connect 在 APP1 上執行，以定期將 TESTLAB AD DS 網域同步至 Microsoft 365 訂閱的 Azure AD 租用戶。</span><span class="sxs-lookup"><span data-stu-id="9326a-168">Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscription periodically.</span></span> <span data-ttu-id="9326a-169">TESTLAB AD DS 網域中的 User1 帳戶已經與 Azure AD 租用戶同步處理。</span><span class="sxs-lookup"><span data-stu-id="9326a-169">The User1 account in the TESTLAB  AD DS domain has been synchronized with the Azure AD tenant.</span></span> 
 
-<span data-ttu-id="9326a-163">以下是產生的組態。</span><span class="sxs-lookup"><span data-stu-id="9326a-163">Here is your resulting configuration.</span></span>
+<span data-ttu-id="9326a-170">下一步</span><span class="sxs-lookup"><span data-stu-id="9326a-170">Next step</span></span>
 
-![使用密碼雜湊同步處理測試環境的模擬企業](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
+![瀏覽測試環境中的其他[身分識別](m365-enterprise-test-lab-guides.md#identity)功能。](../media/password-hash-sync-m365-ent-test-environment/Phase3.png)
 
-<span data-ttu-id="9326a-165">此組態包含：</span><span class="sxs-lookup"><span data-stu-id="9326a-165">This configuration consists of:</span></span> 
+<span data-ttu-id="9326a-172">另請參閱</span><span class="sxs-lookup"><span data-stu-id="9326a-172">See also</span></span> 
   
-- <span data-ttu-id="9326a-166">已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。</span><span class="sxs-lookup"><span data-stu-id="9326a-166">Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain TESTLAB.\<your domain name> registered.</span></span>
-- <span data-ttu-id="9326a-167">簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成</span><span class="sxs-lookup"><span data-stu-id="9326a-167">A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.</span></span> <span data-ttu-id="9326a-168">Azure AD Connect 在 APP1 上執行，以定期將 TESTLAB AD DS 網域同步至 Microsoft 365 訂閱的 Azure AD 租用戶。</span><span class="sxs-lookup"><span data-stu-id="9326a-168">Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscription periodically.</span></span>
-- <span data-ttu-id="9326a-169">TESTLAB AD DS 網域中的 User1 帳戶已經與 Azure AD 租用戶同步處理。</span><span class="sxs-lookup"><span data-stu-id="9326a-169">The User1 account in the TESTLAB  AD DS domain has been synchronized with the Azure AD tenant.</span></span>
+- [<span data-ttu-id="9326a-173">Microsoft 365 企業版測試實驗室指南</span><span class="sxs-lookup"><span data-stu-id="9326a-173">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md) [<span data-ttu-id="9326a-174">部署 Microsoft 365 企業版</span><span class="sxs-lookup"><span data-stu-id="9326a-174">Deploy Microsoft 365 Enterprise</span></span>](deploy-microsoft-365-enterprise.md)
+- [<span data-ttu-id="9326a-175">Microsoft 365 企業版文件</span><span class="sxs-lookup"><span data-stu-id="9326a-175">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/) Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscription periodically.
+- The User1 account in the TESTLAB  AD DS domain has been synchronized with the Azure AD tenant.
 
-## <a name="next-step"></a><span data-ttu-id="9326a-170">下一步</span><span class="sxs-lookup"><span data-stu-id="9326a-170">Next step</span></span>
+## <a name="next-step"></a>Next step
 
-<span data-ttu-id="9326a-171">瀏覽測試環境中的其他[身分識別](m365-enterprise-test-lab-guides.md#identity)功能。</span><span class="sxs-lookup"><span data-stu-id="9326a-171">Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.</span></span>
+Explore additional <bpt id="p1">[</bpt>identity<ept id="p1">](m365-enterprise-test-lab-guides.md#identity)</ept> features and capabilities in your test environment.
 
-## <a name="see-also"></a><span data-ttu-id="9326a-172">另請參閱</span><span class="sxs-lookup"><span data-stu-id="9326a-172">See also</span></span>
+## <a name="see-also"></a>See also
 
-[<span data-ttu-id="9326a-173">Microsoft 365 企業版測試實驗室指南</span><span class="sxs-lookup"><span data-stu-id="9326a-173">Microsoft 365 Enterprise Test Lab Guides</span></span>](m365-enterprise-test-lab-guides.md)
+<bpt id="p1">[</bpt>Microsoft 365 Enterprise Test Lab Guides<ept id="p1">](m365-enterprise-test-lab-guides.md)</ept>
 
-[<span data-ttu-id="9326a-174">部署 Microsoft 365 企業版</span><span class="sxs-lookup"><span data-stu-id="9326a-174">Deploy Microsoft 365 Enterprise</span></span>](deploy-microsoft-365-enterprise.md)
+<bpt id="p1">[</bpt>Deploy Microsoft 365 Enterprise<ept id="p1">](deploy-microsoft-365-enterprise.md)</ept>
 
-[<span data-ttu-id="9326a-175">Microsoft 365 企業版文件</span><span class="sxs-lookup"><span data-stu-id="9326a-175">Microsoft 365 Enterprise documentation</span></span>](https://docs.microsoft.com/microsoft-365-enterprise/)
+<bpt id="p1">[</bpt>Microsoft 365 Enterprise documentation<ept id="p1">](https://docs.microsoft.com/microsoft-365-enterprise/)</ept>
 
 

@@ -19,44 +19,46 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c4facaac82ff8486c0c3a846e4f577c7888a3161
-ms.sourcegitcommit: dbbdeca5a6cd048e1bde9e820a8b8a0d6022c7a2
+ms.openlocfilehash: b0703aa14bee3d14d1c3ff4fe46ea9d72de73ce2
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43503980"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515864"
 ---
-# <a name="microsoft-threat-protection-preview-features"></a><span data-ttu-id="705a7-104">Microsoft 威脅防護預覽功能</span><span class="sxs-lookup"><span data-stu-id="705a7-104">Microsoft Threat Protection preview features</span></span>
+# <a name="microsoft-threat-protection-preview-features"></a><span data-ttu-id="e4029-104">Microsoft 威脅防護預覽功能</span><span class="sxs-lookup"><span data-stu-id="e4029-104">Microsoft Threat Protection preview features</span></span>
 
-<span data-ttu-id="705a7-105">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="705a7-105">**Applies to:**</span></span>
-- <span data-ttu-id="705a7-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="705a7-106">Microsoft Threat Protection</span></span>
-
-
-<span data-ttu-id="705a7-107">Microsoft 威脅防護服務會不斷更新，以包含新功能增強功能及功能。</span><span class="sxs-lookup"><span data-stu-id="705a7-107">The Microsoft Threat Protection service is constantly being updated to include new feature enhancements and capabilities.</span></span>
-
-<span data-ttu-id="705a7-108">深入瞭解 Microsoft 威脅防護預覽版本中的新功能，並透過開啟預覽體驗，以嘗試即將推出的功能。</span><span class="sxs-lookup"><span data-stu-id="705a7-108">Learn about new features in the Microsoft Threat Protection preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
-
-<span data-ttu-id="705a7-109">如需更多公開推出的全新功能資訊，請查看 [Microsoft 威脅防護新增功能](whats-new.md)。</span><span class="sxs-lookup"><span data-stu-id="705a7-109">For more information on new capabilities that are generally available, see [What's new in Microsoft Threat Protection](whats-new.md).</span></span>
-
-## <a name="turn-on-preview-features"></a><span data-ttu-id="705a7-110">開啟預覽功能</span><span class="sxs-lookup"><span data-stu-id="705a7-110">Turn on preview features</span></span>
-<span data-ttu-id="705a7-111">您將可以存取即將推出的功能，您可以在其中提供意見反應，以協助改善整體體驗，使其成為一般可用功能。</span><span class="sxs-lookup"><span data-stu-id="705a7-111">You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.</span></span>
-
-<span data-ttu-id="705a7-112">開啟預覽體驗設定，以進行第一次嘗試後續功能。</span><span class="sxs-lookup"><span data-stu-id="705a7-112">Turn on the preview experience setting to be among the first to try upcoming features.</span></span>
-
-1. <span data-ttu-id="705a7-113">在功能窗格中，選取 [**設定**]。</span><span class="sxs-lookup"><span data-stu-id="705a7-113">In the navigation pane, select **Settings**.</span></span>
-
-2. <span data-ttu-id="705a7-114">選取 [ **Microsoft 威脅防護**]。</span><span class="sxs-lookup"><span data-stu-id="705a7-114">Select **Microsoft Threat Protection**.</span></span>
+<span data-ttu-id="e4029-105">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="e4029-105">**Applies to:**</span></span>
+- <span data-ttu-id="e4029-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="e4029-106">Microsoft Threat Protection</span></span>
 
 
-3. <span data-ttu-id="705a7-115">選取 [**預覽功能** > ]**開啟預覽功能**。</span><span class="sxs-lookup"><span data-stu-id="705a7-115">Select **Preview features** > **Turn on preview features**.</span></span> 
+<span data-ttu-id="e4029-107">Microsoft 威脅防護服務會不斷更新，以包含新功能增強功能及功能。</span><span class="sxs-lookup"><span data-stu-id="e4029-107">The Microsoft Threat Protection service is constantly being updated to include new feature enhancements and capabilities.</span></span>
 
-3. <span data-ttu-id="705a7-116">選取 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="705a7-116">Select **Save**.</span></span>
+<span data-ttu-id="e4029-108">深入瞭解 Microsoft 威脅防護預覽版本中的新功能，並透過開啟預覽體驗，以嘗試即將推出的功能。</span><span class="sxs-lookup"><span data-stu-id="e4029-108">Learn about new features in the Microsoft Threat Protection preview release and be among the first to try upcoming features by turning on the preview experience.</span></span>
 
-<span data-ttu-id="705a7-117">當您看到已選取 [**開啟預覽功能**] 核取方塊時，您會知道已開啟預覽功能。</span><span class="sxs-lookup"><span data-stu-id="705a7-117">You'll know you have preview features turned on when you see that the **Turn on preview features** check box is selected.</span></span> 
+<span data-ttu-id="e4029-109">如需更多公開推出的全新功能資訊，請查看 [Microsoft 威脅防護新增功能](whats-new.md)。</span><span class="sxs-lookup"><span data-stu-id="e4029-109">For more information on new capabilities that are generally available, see [What's new in Microsoft Threat Protection](whats-new.md).</span></span>
 
-## <a name="preview-features"></a><span data-ttu-id="705a7-118">預覽功能</span><span class="sxs-lookup"><span data-stu-id="705a7-118">Preview features</span></span>
-<span data-ttu-id="705a7-119">下列是目前可供預覽的功能和增強功能：</span><span class="sxs-lookup"><span data-stu-id="705a7-119">The following features and enhancements are currently available on preview:</span></span>
+## <a name="turn-on-preview-features"></a><span data-ttu-id="e4029-110">開啟預覽功能</span><span class="sxs-lookup"><span data-stu-id="e4029-110">Turn on preview features</span></span>
+<span data-ttu-id="e4029-111">您將可以存取即將推出的功能，您可以在其中提供意見反應，以協助改善整體體驗，使其成為一般可用功能。</span><span class="sxs-lookup"><span data-stu-id="e4029-111">You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.</span></span>
 
-- <span data-ttu-id="705a7-120">**[自訂](custom-detections-overview.md)** 偵測-使用高級搜尋查詢來建立規則，以定期搜尋侵犯行為和其他感興趣的專案。</span><span class="sxs-lookup"><span data-stu-id="705a7-120">**[Custom detections](custom-detections-overview.md)** — use advanced hunting queries to create rules that automatically search for breach activity and other items of interest at regular intervals.</span></span> <span data-ttu-id="705a7-121">符合查詢觸發警示和您指定的回應動作。</span><span class="sxs-lookup"><span data-stu-id="705a7-121">Matches to the queries trigger alerts and your specified response actions.</span></span>
+<span data-ttu-id="e4029-112">開啟預覽體驗設定，以進行第一次嘗試後續功能。</span><span class="sxs-lookup"><span data-stu-id="e4029-112">Turn on the preview experience setting to be among the first to try upcoming features.</span></span>
 
-- <span data-ttu-id="705a7-122">身分**[識別和應用程式表格](advanced-hunting-schema-tables.md)**--在高級搜尋架構中深入瞭解驗證事件、Active Directory 查詢和應用程式相關的活動與[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表格。</span><span class="sxs-lookup"><span data-stu-id="705a7-122">**[Identity and app tables](advanced-hunting-schema-tables.md)** — get visibility into authentication events, Active Directory queries, and app-related activity with the [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md), and [AppFileEvents](advanced-hunting-appfileevents-table.md) tables in the advanced hunting schema.</span></span>
+1. <span data-ttu-id="e4029-113">在功能窗格中，選取 [**設定**]。</span><span class="sxs-lookup"><span data-stu-id="e4029-113">In the navigation pane, select **Settings**.</span></span>
+
+2. <span data-ttu-id="e4029-114">選取 [ **Microsoft 威脅防護**]。</span><span class="sxs-lookup"><span data-stu-id="e4029-114">Select **Microsoft Threat Protection**.</span></span>
+
+
+3. <span data-ttu-id="e4029-115">選取 [**預覽功能**]  >  **開啟預覽功能**。</span><span class="sxs-lookup"><span data-stu-id="e4029-115">Select **Preview features** > **Turn on preview features**.</span></span> 
+
+3. <span data-ttu-id="e4029-116">選取 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="e4029-116">Select **Save**.</span></span>
+
+<span data-ttu-id="e4029-117">當您看到已選取 [**開啟預覽功能**] 核取方塊時，您會知道已開啟預覽功能。</span><span class="sxs-lookup"><span data-stu-id="e4029-117">You'll know you have preview features turned on when you see that the **Turn on preview features** check box is selected.</span></span> 
+
+## <a name="preview-features"></a><span data-ttu-id="e4029-118">預覽功能</span><span class="sxs-lookup"><span data-stu-id="e4029-118">Preview features</span></span>
+<span data-ttu-id="e4029-119">下列是目前可供預覽的功能和增強功能：</span><span class="sxs-lookup"><span data-stu-id="e4029-119">The following features and enhancements are currently available on preview:</span></span>
+
+- <span data-ttu-id="e4029-120">身分**[識別和應用程式表格](advanced-hunting-schema-tables.md)**--在高級搜尋架構中深入瞭解驗證事件、Active Directory 查詢和應用程式相關的活動與[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表格。</span><span class="sxs-lookup"><span data-stu-id="e4029-120">**[Identity and app tables](advanced-hunting-schema-tables.md)** — get visibility into authentication events, Active Directory queries, and app-related activity with the [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md), and [AppFileEvents](advanced-hunting-appfileevents-table.md) tables in the advanced hunting schema.</span></span>
+
+- <span data-ttu-id="e4029-121">**[EmailPostDeliveryEvents 表格](advanced-hunting-emailpostdeliveryevents-table.md)**—使用此表格來建立[高級搜尋](advanced-hunting-overview.md)查詢，以檢查電子郵件傳送至收件者信箱之後所採取的動作。</span><span class="sxs-lookup"><span data-stu-id="e4029-121">**[EmailPostDeliveryEvents table](advanced-hunting-emailpostdeliveryevents-table.md)** — use this table to create [advanced hunting](advanced-hunting-overview.md) queries that check for actions taken on emails after they have been delivered to recipient mailboxes.</span></span>
+
+- <span data-ttu-id="e4029-122">**[FileProfile （）函數](advanced-hunting-fileprofile-function.md)**—在您的[高級搜尋](advanced-hunting-overview.md)查詢中使用，以合併完整的檔案資訊。</span><span class="sxs-lookup"><span data-stu-id="e4029-122">**[FileProfile() function](advanced-hunting-fileprofile-function.md)** — use in your [advanced hunting](advanced-hunting-overview.md) queries to incorporate comprehensive file information.</span></span>
