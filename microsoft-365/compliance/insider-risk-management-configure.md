@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 68e8f432008a6322921ef440878a1cca1354e196
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: e8c8783a570fe1b747ba8d2cf07f7d7f6f2fe39f
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292471"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515760"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -95,14 +95,17 @@ ms.locfileid: "44292471"
 
 ### <a name="configure-data-loss-prevention-dlp-policies"></a>設定資料遺失防護（DLP）原則
 
-測試人員風險管理支援使用 DLP 原則，以協助您識別蓄意或意外將敏感性資訊暴露給不適當的對象。 使用*資料外洩*範本設定測試人員風險管理原則時，您必須將特定 DLP 原則指派給原則。
+「內幕風險管理」支援使用 DLP 原則，以協助識別敏感資訊到有害的各方，以取得高嚴重性層級 DLP 警示。 使用**資料洩漏**範本設定有問必答風險管理原則時，您必須將特定的 DLP 原則指派給原則。
 
-這個原則可協助為敏感資訊的高嚴重性 DLP 警示產生「內幕人員風險管理」指示器，這是在組織中設定完整風險管理範圍的重要部分。 如果您為貴組織設定多個 DLP 原則，您必須為每個 DLP 原則指派測試人員風險管理原則。
-
-如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。 設定 DLP 原則後，請返回這些設定步驟。
+這個原則可協助為敏感資訊的高嚴重性 DLP 警示產生「內幕人員風險管理」指示器，這是在組織中設定完整風險管理範圍的重要部分。 如需有關有問必答風險管理和 DLP 原則整合及規劃考慮的詳細資訊，請參閱「[有問必答風險管理原則](insider-risk-management-policies.md#data-leaks)」。
 
 >[!IMPORTANT]
->請確定與此範本搭配使用的內幕人士原則管理之 DLP 原則中的 [**附隨報告**] 設定會設定*高*嚴重性等級警示。 不會從 DLP 原則產生「內幕風險管理」提醒，其**附隨報告**欄位設定為 [*低*] 或「*中*」。
+>請確認您已完成下列作業：
+>
+>- 您瞭解及正確地設定 DLP 和有問必答風險管理原則中的範圍內使用者，以產生您預期的原則覆蓋範圍。
+>- 請確定與此範本搭配使用的內幕人士原則管理之 DLP 原則中的 [**附隨報告**] 設定會設定*高*嚴重性等級警示。 不會從 DLP 原則產生「內幕風險管理」提醒，其**附隨報告**欄位設定為 [*低*] 或「*中*」。
+
+如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。 設定 DLP 原則後，請返回這些設定步驟。
 
 ## <a name="step-4-required-configure-insider-risk-settings"></a>步驟4（必要）：設定有問必答風險設定
 

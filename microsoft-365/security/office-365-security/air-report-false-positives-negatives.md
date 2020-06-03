@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 2dd67af62a400f3e217f146e6d0ee213d74ad99a
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262405"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520155"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自動化調查和回應功能中報告誤報/負片
 
@@ -34,7 +34,7 @@ ms.locfileid: "44262405"
 [Office 365 中的自動化調查和回應（AIR）功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)是否未命中或錯誤地偵測到某項功能？ 您可以採取一些步驟加以修正。 您可以：
 - [向 Microsoft 報告誤報/負數](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring)（如有需要）;和 
-- [復原對裝置採取的修正動作](#undo-a-remediation-action)。 
+- [復原採取的修復動作](#undo-a-remediation-action)。 
 
 使用本文做為指南。 
 
@@ -71,7 +71,7 @@ ms.locfileid: "44262405"
 
 在「行動中心」中，您可以看到已採取的修復動作，並可能復原動作。
 
-1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這樣會帶您前往安全性與合規性中心。
+1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這會帶您前往安全性 & 規範中心。
 
 2. 移至 [威脅管理]****  >  [調查]****。
 

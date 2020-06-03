@@ -23,12 +23,12 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: '瞭解如何尋找新的 Microsoft 365 合作夥伴，或取得您已在過去使用之合作夥伴的連絡人資訊。 '
-ms.openlocfilehash: 749f1a12ffbd1512b15a83e7979aea3b0cb3be48
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b116fc77f41efa2e73bfa50bb187897d167d9998
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399761"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515792"
 ---
 # <a name="find-your-partner-or-reseller"></a>尋找您的合作夥伴或轉銷商
 
@@ -47,7 +47,7 @@ ms.locfileid: "44399761"
 ## <a name="find-contact-information-for-a-partner-youve-worked-with-in-the-past"></a>尋找您曾經合作過的合作夥伴的連絡資訊
 
 > [!NOTE]
-> 在某些情況下，您可以在 Microsoft 365 系統管理中心 findinformation，以供您在過去使用的協力廠商合作。 提醒您，這項資訊不一定是最新資訊。 因此我們建議您最好能與您組織中負責採購的人員或部門連絡，以找出適合您的合作夥伴。 
+> 在某些情況下，您可以在 Microsoft 365 系統管理中心找到您過去已使用的合作夥伴的資訊。 提醒您，這項資訊不一定是最新資訊。 因此我們建議您最好能與您組織中負責採購的人員或部門連絡，以找出適合您的合作夥伴。 
   
 ## <a name="get-partner-info-in-the-admin-center"></a>在系統管理中心取得夥伴資訊
 

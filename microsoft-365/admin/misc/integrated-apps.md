@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 瞭解使用者對應用程式的同意，以及如何將其開啟以允許協力廠商應用程式存取使用者的 Microsoft 365 資訊。
-ms.openlocfilehash: df81d2cf3e1d796e462d2b9240b8288273ed5372
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: 955ae9e58c14dbb8012a440ef6c336f44b0760a4
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477169"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498314"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>管理使用者對 Microsoft 365 應用程式的同意
 
@@ -42,7 +42,7 @@ ms.locfileid: "44477169"
 
 1. 在系統管理中心中，移至 [**設定** \> **組織設定**  >  [服務](https://go.microsoft.com/fwlink/p/?linkid=2053743)] 頁面，然後選取 [**使用者同意應用程式**]。
 
-2. 在 [**使用者同意應用程式**] 頁面上，選取開啟或關閉整合式應用程式的選項。
+2. 在 [**使用者同意應用程式**] 頁面上，選取開啟或關閉使用者同意的選項。
 
 ## <a name="more-info"></a>詳細資訊
 <a name="__toc379982114"> </a>

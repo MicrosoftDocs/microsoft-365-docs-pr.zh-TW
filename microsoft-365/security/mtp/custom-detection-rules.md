@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cdfc23f34d90c9d725ec6fb314728553a987c025
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1a84c568d1411cf21c23e59cabad955c40c18ac6
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034861"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498360"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>建立及管理自訂的偵測規則
 
 適用於：****
 - Microsoft 威脅防護
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 透過[高級搜尋](advanced-hunting-overview.md)查詢所建立的自訂偵測規則，可讓您主動監視各種事件和系統狀態，包括可疑的破壞活動和設定不當的端點。 您可以將其設定為定期執行，並在每個專案相符時產生提醒並採取回應動作。
 
@@ -43,8 +41,8 @@ ms.locfileid: "44034861"
 
 若要管理必要的許可權，**全域管理員**可以執行下列作業：
 
--  > 在 [ **role****security admin**] 底下的[Microsoft 365 系統管理中心](https://admin.microsoft.com/)中指派**安全性管理員**或**安全性操作員**角色。
-- 在 [**設定** > **許可權** > **角色**] 底下的[microsoft defender Security Center](https://securitycenter.windows.com/)中檢查 microsoft defender ATP 的 RBAC 設定。 選取對應的角色以指派「**管理安全性設定**」許可權。
+- 在 [ **role**security admin] 底下的[Microsoft 365 系統管理中心](https://admin.microsoft.com/)中指派**安全性管理員**或**安全性操作員**角色  >  ** **。
+- 在 [**設定**許可權角色] 底下的[microsoft defender Security Center](https://securitycenter.windows.com/)中檢查 microsoft defender ATP 的 RBAC 設定  >  **Permissions**  >  ** **。 選取對應的角色以指派「**管理安全性設定**」許可權。
 
 > [!NOTE]
 > 若要管理自訂的偵測，當已開啟 RBAC 時，**安全性操作員**會需要 MICROSOFT Defender ATP 中的「**管理安全性設定**」許可權。
@@ -66,24 +64,25 @@ ms.locfileid: "44034861"
     - `SenderFromAddress`（信封寄件者或回信路徑位址）
     - `SenderMailFromAddress`（由電子郵件客戶程式顯示的寄件者位址）
     - `RecipientObjectId`
+    - `AccountObjectId`
     - `AccountSid`
+    - `AccountUpn`
     - `InitiatingProcessAccountSid`
     - `InitiatingProcessAccountUpn`
     - `InitiatingProcessAccountObjectId`
 >[!NOTE]
 >當新的資料表新增至[高級搜尋架構](advanced-hunting-schema-tables.md)時，將新增額外實體的支援。
 
-簡單的查詢（如未使用`project` or `summarize`運算子自訂或匯總結果的查詢）通常會傳回這些通用欄。
+簡單的查詢（如未使用 `project` or `summarize` 運算子自訂或匯總結果的查詢）通常會傳回這些通用欄。
 
-有多種方式可確保更複雜的查詢傳回這些欄位。 例如，如果您想要依實體（如所示`DeviceId`）匯總和計數，您仍然`Timestamp`可以從每個唯一`DeviceId`相關的最近事件中取得。
+有多種方式可確保更複雜的查詢傳回這些欄位。 例如，如果您想要依實體（如所示）匯總和計數 `DeviceId` ，您仍然可以 `Timestamp` 從每個唯一相關的最近事件中取得 `DeviceId` 。
 
-下列範例查詢會計算具有防病毒偵測的唯一`DeviceId`電腦（）數目，並使用此計數來找出具有超過五個偵測的電腦。 若要傳回最`Timestamp`新的，它`summarize`會搭配`arg_max`函數使用運算子。
+下列範例查詢會計算具有防病毒偵測的獨特裝置數目（ `DeviceId` ），並使用此計數來找出具有超過五個偵測的裝置。 若要傳回最新的 `Timestamp` ，它會搭配 `summarize` 函數使用運算子 `arg_max` 。
 
 ```kusto
 DeviceEvents
-| where Timestamp > ago(7d)
 | where ActionType == "AntivirusDetection"
-| summarize Timestamp = max(Timestamp), count() by DeviceId
+| summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. 建立新的規則，並提供警示詳細資料。
@@ -95,7 +94,7 @@ DeviceEvents
 - **警示標題**—顯示規則所觸發警示的標題
 - **嚴重性**（由規則所識別之元件或活動的潛在風險）
 - **類別**：由規則識別的威脅元件或活動
-- **MITRE ATT&CK 技術**-由規則識別的一或多個攻擊技術（如 MITRE ATT 中所述） [&CK framework](https://attack.mitre.org/)
+- **MITRE ATT&CK 技術**-由規則識別的一或多個攻擊技術（如 MITRE ATT 中所述） [&CK framework](https://attack.mitre.org/)。 本節不適用於特定警示類別，包括惡意程式碼、勒索軟體、可疑活動和不需要的軟體
 - **描述**-規則所識別之元件或活動的詳細資訊 
 - **建議動作**-回應者可能會採取以回應警示的其他動作
 
@@ -110,22 +109,26 @@ DeviceEvents
 選取您要監視偵測的頻率，並考慮組織的容量以回應提醒。
 
 ### <a name="3-choose-the-impacted-entities"></a>3. 選擇受影響的實體。
-在查詢結果中識別欄，以找出主要受影響或受影響的實體。 例如，查詢可能會傳回寄件者`SenderFromAddress` （ `SenderMailFromAddress`或）和收`RecipientEmailAddress`件者（）位址。 識別哪些欄位代表主要受影響的實體，可協助服務匯總相關的警示、關聯事件，以及目標回應動作。
+在查詢結果中識別欄，以找出主要受影響或受影響的實體。 例如，查詢可能會傳回寄件者（ `SenderFromAddress` 或 `SenderMailFromAddress` ）和收件者（ `RecipientEmailAddress` ）位址。 識別哪些欄位代表主要受影響的實體，可協助服務匯總相關的警示、關聯事件，以及目標回應動作。
 
 您可以為每個實體類型（信箱、使用者或裝置）只選取一個資料行。 無法選取查詢未傳回的資料行。
 
-### <a name="4-specify-actions-on-files-or-machines"></a>4. 指定檔或機器的動作。
-您的自訂偵測規則可對查詢所傳回的檔案或機器自動採取動作。
+### <a name="4-specify-actions"></a>4. 指定動作。
+您的自訂偵測規則可在查詢所傳回的裝置、檔案或使用者上自動採取動作。
 
-#### <a name="actions-on-machines"></a>對機器的動作
-這些動作會套用至查詢結果`DeviceId`欄中的機器：
-- **隔離電腦**—使用 MICROSOFT Defender ATP 來套用完整網路隔離，以防止機器連接至任何應用程式或服務。 [深入瞭解 Microsoft Defender ATP 電腦隔離](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
-- **收集調查套件**—收集 ZIP 檔案中的電腦資訊。 [深入瞭解 Microsoft Defender ATP 調查套件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
-- **執行防病毒掃描**-在電腦上執行完整的 Windows Defender 防病毒掃描
-- **開始調查**-在機器上開始[自動調查](mtp-autoir.md)
+#### <a name="actions-on-devices"></a>裝置上的動作
+這些動作會套用至 `DeviceId` 查詢結果欄中的裝置：
+- **隔離裝置**—使用 MICROSOFT Defender ATP 來套用完整網路隔離，以防止裝置連接至任何應用程式或服務。 [深入瞭解 Microsoft Defender ATP 電腦隔離](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
+- **收集調查套件**—收集 ZIP 檔案中的裝置資訊。 [深入瞭解 Microsoft Defender ATP 調查套件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
+- **執行防病毒掃描**-在裝置上執行完整的 Windows Defender 防病毒掃描
+- **開始調查**--在裝置上開始[自動調查](mtp-autoir.md)
+- **限制應用程式執行**—設定裝置上的限制，只允許以 Microsoft 發行的憑證簽署的檔案執行。 [深入瞭解 Microsoft Defender ATP 的應用程式限制](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>檔上的動作
-選取此選項時**Quarantine file** ，會對查詢結果的`SHA1`、 `InitiatingProcessSHA1` `SHA256`、或`InitiatingProcessSHA256`欄中的檔採取隔離檔案動作。 此巨集指令會從目前的位置刪除檔案，並將複本放入隔離區。
+選取此選項時，您可以選擇對查詢結果的、、或欄中的檔案套用**隔離檔**動作 `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` 。 此巨集指令會從目前的位置刪除檔案，並將複本放入隔離區。
+
+#### <a name="actions-on-users"></a>使用者的動作
+選取此選項時，會對使用者于、或欄中的查詢結果，對使用者採取「將**使用者標示為受損**」動作 `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` 。 此動作會在 Azure Active Directory 中將使用者風險層級設為「高」，以觸發對應的身分[識別保護原則](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
 > Microsoft 威脅防護目前不支援自訂偵測規則的 allow 或 block 動作。
@@ -148,7 +151,7 @@ DeviceEvents
 
 ### <a name="view-existing-rules"></a>查看現有規則
 
-若要查看所有現有的自訂偵測規則，請流覽至**搜尋** > **自訂**偵測。 頁面會列出具有下列執行資訊的所有規則：
+若要查看所有現有的自訂偵測規則，請流覽至**搜尋**  >  **自訂**偵測。 頁面會列出具有下列執行資訊的所有規則：
 
 - **上次執行**時間-最後一次執行規則以檢查查詢符合專案並產生警示
 - **上次執行狀態**—是否已成功執行規則
@@ -157,7 +160,7 @@ DeviceEvents
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>View rule details、modify rule 及 run rule
 
-若要查看有關自訂偵測規則的完整資訊，請從**搜尋** > **自訂**偵測中的規則清單中，選取規則的名稱。 這會開啟有關該規則之一般資訊的自訂偵測規則頁面，包括警示、執行狀態和範圍的詳細資料。 它也會提供觸發警示及觸發動作的清單。
+若要查看有關自訂偵測規則的完整資訊，請從**搜尋**  >  **自訂**偵測中的規則清單中，選取規則的名稱。 這會開啟有關該規則之一般資訊的自訂偵測規則頁面，包括警示、執行狀態和範圍的詳細資料。 它也會提供觸發警示及觸發動作的清單。
 
 ![自訂偵測規則詳細資料頁面](../../media/custom-detection-details.png)<br>
 *自訂偵測規則詳細資料*
@@ -167,19 +170,19 @@ DeviceEvents
 - **Run** -立即執行規則。 這也會重設下一個執行的間隔。
 - **編輯**—修改規則但不變更查詢
 - **修改查詢**-在高級搜尋中編輯查詢
-- **開啟**關閉—啟用規則或停止執行**Turn off**  / 
+- **開啟**  / **關閉**—啟用規則或停止執行
 - **刪除**—關閉規則並加以移除
 
 ### <a name="view-and-manage-triggered-alerts"></a>查看及管理觸發的警示
 
-在 [規則詳細資料] 畫面（**搜尋** > **自訂** > 偵測 **[規則名稱]**）中，移至 [**觸發警示**]，以查看與規則相符所產生的警示清單。 選取警示以查看該警示的詳細資訊，並對該警示採取下列動作：
+在 [規則詳細資料] 畫面（**搜尋**  >  **自訂**偵測  >  **[規則名稱]**）中，移至 [**觸發警示**]，以查看與規則相符所產生的警示清單。 選取警示以查看該警示的詳細資訊，並對該警示採取下列動作：
 
 - 透過設定其狀態和分類（true 或 false 警示）來管理提醒
 - 將警示連結到事件
 - 在高級搜尋中執行觸發警示的查詢
 
 ### <a name="review-actions"></a>審閱動作
-在 [規則詳細資料] 畫面（**搜尋** > **自訂** > 偵測 **[規則名稱]**）中，移至 [**觸發動作**]，以查看根據與規則相符所執行的動作清單。
+在 [規則詳細資料] 畫面（**搜尋**  >  **自訂**偵測  >  **[規則名稱]**）中，移至 [**觸發動作**]，以查看根據與規則相符所執行的動作清單。
 
 >[!TIP]
 >若要快速查看資訊，並對表格中的專案採取動作，請使用表格左邊的選取範圍欄 [&#10003;]。

@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全性與合規性中心建立警示原則，以監視潛在威脅、資料遺失和許可權問題。
-ms.openlocfilehash: 92f7146c40bbcbd93eb36e43a4dff9c8a807c403
-ms.sourcegitcommit: 436841236dc41390a3be9f8936d19d3d017fa35c
+ms.openlocfilehash: 48c187d7456f4b0a8e1da7558b7813fc2a8dc9f7
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44429211"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520167"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全性與合規性中心的警示原則
 
@@ -42,6 +42,9 @@ ms.locfileid: "44429211"
 ![警示原則的運作方式概述](../media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
 
 1. 您組織中的系統管理員會使用 [安全性與合規性中心] 中的 [**警示原則**] 頁面，來建立、設定及開啟警示原則。 您也可以在安全性 & 規範中心 PowerShell 中使用**set-protectionalert 指令程式**來建立警示原則。 若要建立警示原則，您必須在 [安全性與合規性中心] 中指派「管理警示」角色或「組織設定」角色。
+
+   > [!NOTE]
+   > 在建立或更新警示原則之後，需要長達24小時後，才能由原則觸發警示。 這是因為原則必須同步處理至警示偵測引擎。
 
 2. 使用者執行符合警示原則條件的活動。 在惡意程式碼攻擊的情況下，傳送給組織中使用者的受感染電子郵件會觸發警示。
 
@@ -179,6 +182,12 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 下列螢幕擷取畫面顯示具有四個匯總事件的警示。 [活動] 清單包含與提醒相關之四封電子郵件的相關資訊。
 
 ![警示匯總的範例](../media/AggregatedAlertExample.png)
+
+請牢記下列有關警示匯總的事項：
+
+- **已偵測到可能惡意 URL 按一下**所觸發的警示[預設警示原則](#default-alert-policies)不會匯總。 這是因為此原則所觸發的警示對每個使用者和電子郵件都是唯一的。
+
+- 此時，[**點擊計數**警示] 屬性不會指出所有警示原則的匯總事件數目。 針對這些警示原則所觸發的警示，您可以按一下 [ **view message list** ] 或 [在提醒上**查看活動**]，以查看匯總的事件。 我們正在努力讓 [**點擊計數**警示] 屬性中所列的匯總事件數目可用於所有的警示原則。
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>查看提醒所需的 RBAC 許可權
 

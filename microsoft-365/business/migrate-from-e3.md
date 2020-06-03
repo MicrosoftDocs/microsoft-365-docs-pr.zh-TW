@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何將您的業務移至 Microsoft 365 商務版，從 Office 365 E3。
-ms.openlocfilehash: 23d024ed7f18fe6a5f5dc9b59e3ad20069dc3e6a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402235"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515896"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>從 Office 365 E3 遷移至 Microsoft 365 商務版 Premium 
 
@@ -78,6 +78,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 - 訂閱設定，例如 DNS 記錄和功能變數名稱。
 - 使用者和群群組帳戶及驗證設定，例如多重因素驗證或條件式存取原則。
 - 生產力服務設定及其資料，例如小組、Exchange Online 信箱、SharePoint 線上網站、商務 OneDrive 商務資料夾，以及 OneNote 筆記本。
+- Office 應用程式會自動縮放。 Office 365 新式授權將每72小時檢查一次使用者的授權指派，並且會將 Office 應用程式轉換成符合使用者訂閱的版本。
 
 ### <a name="windows-10"></a>Windows 10
 

@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a41510deb8bad39e2f871babfbcb91a2e43f6dd8
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: be92bfe8fc4f544f0554f99d147bfc90bf569d57
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330834"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498456"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>設定試用實驗室環境的 Microsoft 威脅防護支柱
 
@@ -68,7 +68,7 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 -   Office 365 進階威脅防護
 -   Azure 進階威脅防護 
 -   Microsoft Cloud App Security
--   Windows Defender 進階威脅防護
+-   Microsoft Defender 進階威脅防護
 
 
 ## <a name="configure-office-365-advanced-threat-protection"></a>設定 Office 365 的高級威脅防護
@@ -238,6 +238,9 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 <br>![您需要按一下的影像 of_Save 偏好設定按鈕](../../media/mtp-eval-72.png) <br>
 
 ## <a name="turn-on-microsoft-threat-protection"></a>開啟 Microsoft 威脅防護
+>[!NOTE]
+>從2020年6月1日開始，Microsoft 會自動為所有合格的承租人啟用 Microsoft 威脅防護功能。 如需詳細資訊，請參閱此[Microsoft 技術小組文章](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426)。 
+<br>
 1. 移至[Microsoft 365 Security Center](https://security.microsoft.com/homepage)。 流覽至 [**設定**]，然後選取 [ **Microsoft 威脅防護**]。
 <br>![Microsoft 365 安全性中心設定頁面中的影像 of_Microsoft 威脅防護選項螢幕擷取畫面](../../media/mtp-eval-72b.png) <br>
 

@@ -17,19 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a9ba61650b69e3c42506735c90ae05b917a53209
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: cdbaf9cfd2172656ed75cb3c0a1a9e361070f25b
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42931723"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498348"
 ---
 # <a name="custom-detections-overview"></a>自訂偵測概觀
 
 適用於：****
 - Microsoft 威脅防護
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 透過自訂偵測，您可以主動監視和回應各種事件和系統狀態，包括可疑的破壞活動和設定不當的端點。 這種方式是可自訂的偵測規則，自動觸發警示和回應動作。
 

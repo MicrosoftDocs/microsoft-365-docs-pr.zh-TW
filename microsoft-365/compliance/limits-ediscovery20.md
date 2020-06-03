@@ -14,26 +14,26 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解 Microsoft 365 中的高級 eDiscovery 解決方案的作用限制。 這包括使用搜尋工具收集案例資料時的大小寫限制、索引限制和搜尋限制。
-ms.openlocfilehash: 5fe14aec3be9de2ec614ecf3737387f08d2e7b88
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: babc05cc5c74f435f0be6fbc8eafd80f09a77b75
+ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224660"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44520145"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>進階電子文件探索的限制
 
 本文說明 Microsoft 365 中的高級 eDiscovery 解決方案的限制。
 
-## <a name="case-limits"></a>大小寫限制
+## <a name="case-and-review-set-limits"></a>案例與複查集限制
 
-下表列出高級 eDiscovery 中案例的限制。
+下表列出高級 eDiscovery 中案例和審閱集的限制。
 
 |**限制的描述**|**限制**|
 |:-----|:-----|
 |可以新增至案例的檔總數（案例中的所有審閱集）。  <br/> |1 百萬  <br/> |
-|每個負載集的檔案大小總計。  <br/> |100 GB  <br/> |
-|每日案例中載入的資料總量。<br/> |2 TB <br/> |
+|每個負載集的檔案大小總計。 這包括將非 Office 365 載入至審閱集。  <br/> |100 GB  <br/> |
+|每天組織中的所有審閱集合中載入的資料總量。<br/> |2 TB <br/> |
 |每個案例的載入集數目上限。  <br/> |15  <br/> |
 |每個案例的審閱集數目上限。  <br/> |共 <br/> |
 |||
@@ -60,7 +60,7 @@ ms.locfileid: "44224660"
 |可以同時執行的搜尋數目上限。  <br/> |無限制  <br/> | 
 |單一使用者可以同時開始的搜尋數目上限。  <br/> |10   <br/> | 
 |搜尋查詢的最大字元數（包括運算子和條件）。  <br/> |**信箱**：10000<br/>**網站**：4000搜尋所有網站或2000時搜尋最多20個網站時<sup>2</sup> <br/> |
-|首碼萬用字元的最小字母字元數目;例如**一個 \* **或**設定 \* **。 <br/> |3   <br/> |  
+|首碼萬用字元的最小字母字元數目;例如**一個 \* **或**設定 \* **。 <br/> |個  <br/> |  
 |使用首碼萬用字元來搜尋確切的字詞，或是使用前置詞萬用字元及**接近**的布林運算子時，所傳回的最大變種。  <br/> |10000 <sup>3</sup> <br/> |
 |搜尋的預覽頁面上顯示的每個使用者信箱的專案數上限。 隨即顯示最新的專案。   <br/> |100  <br/> |
 |搜尋時，預覽頁面上顯示的所有信箱中的專案數上限。  <br/> |1,000  <br/> |

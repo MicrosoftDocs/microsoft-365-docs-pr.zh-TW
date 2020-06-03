@@ -1,6 +1,6 @@
 ---
 title: 進階搜捕結構描述中的 EmailEvents 表格
-description: 深入瞭解在高級搜尋架構的 EmailEvents 資料表中與 Microsoft 電子郵件相關的事件
+description: 深入瞭解在高級搜尋架構的 EmailEvents 表格中與 Microsoft 365 電子郵件相關的事件
 keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、表格、欄、資料類型、描述、EmailEvents、網路郵件 id、寄件者、收件者、附件識別碼、附件計數、url 計數、url 計數
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3146c428edcf276d0a4d5e7797ed913be48dd2ae
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: be86f446e05952f7e88dc32e12a6a0d05e380afd
+ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633528"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44515852"
 ---
 # <a name="emailevents"></a>EmailEvents
 

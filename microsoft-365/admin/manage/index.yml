@@ -11,12 +11,12 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: b1a5bd2f50542a9c76c32da7465e80e371238560
-  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+  ms.openlocfilehash: 99441695ad069ffe15f5347991d9dd65976eb23e
+  ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/27/2020
-  ms.locfileid: "44399749"
+  ms.lasthandoff: 06/02/2020
+  ms.locfileid: "44498266"
 landingContent:
 - title: 監視服務的狀態
   linkLists:
@@ -34,6 +34,8 @@ landingContent:
       url: update-phone-number-and-email-address.md
     - text: 設定發行選項
       url: release-options-in-office-365.md
+    - text: 顯示或隱藏新功能
+      url: show-hide-new-features.md
 - title: 封鎖使用者存取和備份資料
   linkLists:
   - linkListType: how-to-guide

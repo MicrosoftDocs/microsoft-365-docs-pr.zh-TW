@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Exchange Online 信箱中設定垃圾郵件設定。 在 Outlook 或 web 上的 Outlook 中，使用者可以使用許多這些設定。
-ms.openlocfilehash: 72b2680cb16e9d8d0f33ee3ec8a080206c68bf97
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352507"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498660"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>設定 Exchange Online 信箱上的垃圾郵件設定
 
@@ -42,7 +42,7 @@ ms.locfileid: "44352507"
 系統管理員可以使用 Exchange Online PowerShell 來停用、啟用和查看信箱上垃圾郵件規則的狀態。 系統管理員也可以使用 Exchange Online PowerShell 來設定信箱上的安全清單集合中的專案（[安全寄件者] 清單、[安全的收件者] 清單和 [封鎖寄件者] 清單）。
 
 > [!NOTE]
-> 來自使用者已新增至自己安全寄件者清單中寄件者的郵件將會略過 EOP 篩選（SCL 為-1）。 若要防止使用者將專案新增至 Outlook 的安全寄件者清單，請使用本主題稍後的 [[關於 Outlook 中的垃圾郵件設定](#about-junk-email-settings-in-outlook)] 區段中所述的群組原則。
+> 來自使用者已新增至自己安全寄件者清單中寄件者的郵件，將會略過連線篩選做為 EOP 的一部分（SCL 為-1）。 若要防止使用者將專案新增至 Outlook 的安全寄件者清單，請使用本主題稍後的 [[關於 Outlook 中的垃圾郵件設定](#about-junk-email-settings-in-outlook)] 區段中所述的群組原則。 原則篩選、內容篩選和高級威脅防護（ATP）檢查仍會套用到郵件。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -89,7 +89,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 若要確認您已成功啟用或停用信箱上的垃圾郵件規則，請使用下列程序：
 
-- 以信箱的名稱、別名或電子郵件地址取代_ \< \> MailboxIdentity_ ，並執行下列命令來驗證**Enabled**屬性值：
+- _\<MailboxIdentity\>_ 以信箱的名稱、別名或電子郵件地址取代，並執行下列命令來驗證**Enabled**屬性值：
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List Enabled
@@ -154,7 +154,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 若要驗證您是否已成功設定信箱上的安全清單集合，請使用任何下列程序：
 
-- 以信箱的名稱、別名或電子郵件地址取代_ \< MailboxIdentity \> _ ，並執行下列命令來驗證屬性值：
+- 取代 _\<MailboxIdentity\>_ 信箱的名稱、別名或電子郵件地址，並執行下列命令來驗證屬性值：
 
   ```PowerShell
   Get-MailboxJunkEmailConfiguration -Identity "<MailboxIdentity>" | Format-List trusted*,contacts*,blocked*

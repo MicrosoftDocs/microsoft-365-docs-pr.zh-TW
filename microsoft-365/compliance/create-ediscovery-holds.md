@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以建立與核心 eDiscovery 案例相關聯的保留，以保留可能與調查相關的內容。
-ms.openlocfilehash: 8993a3e88ab7513713086499a316c92fdb7509cb
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: 4ec9ff37a49f783afc25835ca91208608ab4733a
+ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477193"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44498326"
 ---
 # <a name="create-an-ediscovery-hold"></a>建立電子文件探索保留
 
@@ -32,12 +32,9 @@ ms.locfileid: "44477193"
 
 當您建立保留時，您可以使用下列選項來限定保留在指定內容位置的內容：
   
-- 您可以在保留所有內容的位置建立無限保留。 或者，您可以建立以查詢為基礎的保留，其中只有符合搜尋查詢的內容處於暫止狀態。
+- 您可以建立無限保留，其中指定位置的所有內容都會處於暫止狀態。 或者，您可以建立以查詢為基礎的保留，其中只有符合搜尋查詢之指定位置的內容處於暫止狀態。
 
-- 您可以指定日期範圍，只保留在該日期範圍內傳送、接收或建立的內容。 或者，您可以保留所有內容，不論它是在何時傳送、接收或建立。
-
-> [!NOTE]
-> 您的組織中的所有核心 eDiscovery 案例中，最多可包含10000個 eDiscovery。
+- 您可以指定日期範圍，只保留在該日期範圍內傳送、接收或建立的內容。 或者，您也可以保留指定位置的所有內容，不論它是在何時傳送、接收或建立。
   
 ## <a name="how-to-create-an-ediscovery-hold"></a>如何建立電子檔保留
 
@@ -64,6 +61,9 @@ ms.locfileid: "44477193"
    b. **網站位置**-按一下 **[選擇網站**]，然後按一下 **[選擇網站**]，以指定要保留的 SharePoint 和 OneDrive 帳戶。 輸入您要保留之每個網站的 URL。 您也可以為 Microsoft 團隊、Office 365 群組或 Yammer 群組新增 SharePoint 網站的 URL。 按一下 **[選擇**]，然後按一下 [**完成**]。
   
    c. **Exchange 公用資料夾。** 將切換切換切換 ![ 控制項移 ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 至 [**全部**] 位置，將 Exchange Online 組織中的所有公用資料夾保留。 您無法選擇要保留的特定公用資料夾。 如果您不想要保留公用資料夾，請將切換參數設為 [**無**]。
+
+   > [!NOTE]
+   > 您必須將至少一個內容位置新增至保留。 否則，eDiscovery 保留靜態會顯示沒有任何專案處於保留狀態。
 
 8. 當您完成將內容位置新增至保留狀態時，按 **[下一步]**。
 
