@@ -12,8 +12,9 @@
     - name: 概觀
       href: foundation-solutions-overview.md
     - name: 使用 Microsoft 365 強化遠端工作者
-      href: empower-people-to-work-remotely.md
       items:
+        - name: 概觀
+          href: empower-people-to-work-remotely.md
         - name: 步驟 1： 增加登入安全性
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: 步驟 2： 提供遠端存取
