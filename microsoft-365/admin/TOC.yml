@@ -218,6 +218,8 @@
           href: manage/manage-messages.md
         - name: 設定發行選項
           href: manage/release-options-in-office-365.md
+        - name: 顯示或隱藏新功能
+          href: manage/show-hide-new-features.md
         - name: Power BI 流量分析
           items:
             - name: 關於流量分析
