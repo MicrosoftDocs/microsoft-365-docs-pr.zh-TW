@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: 系統管理員可以深入瞭解可用及慣用的選項，以在 Exchange Online Protection （EOP）中封鎖輸入郵件。
-ms.openlocfilehash: d9db3d4ac123998e6ab4f108199b3aee852f95d6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2862fa4a33a31eac9c61f94aa929133d2dc69fc8
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209544"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545897"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>在 EOP 中建立封鎖的寄件者清單
 
@@ -38,6 +38,18 @@ ms.locfileid: "44209544"
 > 雖然您可以使用全組織的封鎖設定來處理虛假的否定（未接的垃圾郵件），您也應該將這些郵件提交給 Microsoft 進行分析。 使用封鎖清單來管理 false 負片會大幅增加您的管理額外負荷。 如果您使用封鎖清單來轉移未接的垃圾郵件，您必須在準備時讓主題向[Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。
 
 相比之下，您也可以使用_安全寄件者清單_，讓您有數個選項永遠允許來自特定來源的電子郵件。 如需詳細資訊，請參閱[建立安全寄件者清單](create-safe-sender-lists-in-office-365.md)。
+
+## <a name="email-message-basics"></a>電子郵件訊息基礎
+
+標準 SMTP 電子郵件由「郵件信封」**(Message Envelope) 和郵件內容組成。 郵件信封包含在 SMTP 伺服器之間傳輸及傳遞郵件所需的資訊。 郵件內容包含統稱為 (「郵件標頭」**) 的郵件標頭欄位和郵件內容。 RFC 5321 會說明郵件信封，而 RFC 5322 中說明郵件頭。 收件者永遠不會看到實際的郵件信封，因為它是由郵件傳輸程式所產生，而且實際上不是郵件的一部分。
+
+- `5321.MailFrom`位址（也稱為「**郵件發**件人位址」、「P1 寄件者」或「信封寄件者」）是郵件 SMTP 傳輸中所用的電子郵件地址。 這個電子郵件地址通常會記錄在郵件頭的 [傳回**路徑**標頭] 欄位中（不過，寄件者可以指定不同的**回郵路徑**電子郵件地址）。 如果無法傳遞郵件，則表示收件者未傳遞回報（也稱為 NDR 或退回的郵件）。
+
+- `5322.From`（也稱為**from** address 或 P2 寄件者）是 [**發**件人] 標頭欄位中的電子郵件地址，也就是顯示在電子郵件客戶程式中的寄件者電子郵件地址。
+
+通常 `5321.MailFrom` 和 `5322.From` 位址相同（人員對人員的通訊）。 不過，當您代表其他人傳送電子郵件時，位址可能會不同。
+
+EOP 中，封鎖的寄件者清單和封鎖的網域清單會檢查 `5321.MailFrom` 和 `5322.From` 位址。 Outlook 封鎖的寄件者只會使用該 `5322.From` 位址。
 
 ## <a name="use-outlook-blocked-senders"></a>使用 Outlook 封鎖的寄件者
 

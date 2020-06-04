@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: eff935eb39884d9003b64b5be952c8e8e73b286a
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 827cffde0ff719d133830e10e958f04fe70fc9d6
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515878"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534925"
 ---
 # <a name="insider-risk-management-policies"></a>有問必答風險管理原則
 
@@ -67,7 +67,7 @@ ms.locfileid: "44515878"
      >[!NOTE]
      >使用內建範本建立新的 DLP 原則時，您需要選取 [**建立或自訂 ADVANCED DLP 規則**] 選項，才能設定*高*嚴重性層級的「**附隨報告**」設定。
 
-從**資料洩漏**範本所建立的每個內幕人士風險管理原則，只能有一個指派的 DLP 原則。 如果您有多個 DLP 原則，而您想要具有「內幕風險管理」原則所處理的高嚴重性警示，您必須為每個 DLP 原則建立個別的「內幕人員風險管理」原則。
+從**資料洩漏**範本所建立的每個內幕人士風險管理原則，只能有一個指派的 DLP 原則。 請考慮建立專用的 DLP 原則，將您想要偵測的不同活動和作用中，當作使用**資料洩漏**範本之內部使用者風險原則的觸發標記。
 
 如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。
 

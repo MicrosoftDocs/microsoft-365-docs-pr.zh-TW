@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解使用者如何使用 Office 應用程式中的敏感度標籤、適用于行動裝置的 Office 應用程式，以及適用于 web 的 Office 應用程式。 瞭解哪些應用程式支援靈敏度標籤。
-ms.openlocfilehash: e8cb869e6883df99babfb8d20bf8130678e0f9da
-ms.sourcegitcommit: 1b560ee45f3b0253fa5c410a4499373c1f92da9c
+ms.openlocfilehash: 9fca3af2c53c57bbc010c5e95976cbde9ddcbbdc
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432592"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545909"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -185,7 +185,7 @@ Office 內建的標籤用戶端會從下列系統管理中心下載敏感度標�
 
 如果外部使用者在 Azure Active Directory 中沒有帳戶，您可以在租使用者中為這些使用者建立來賓帳戶。 若為其電子郵件地址，您可以指定任何已使用的電子郵件地址。 例如，其 Gmail 位址。 您也可以使用此來賓帳戶，存取 SharePoint 或 OneDrive 中的共用檔，以[SharePoint 和 OneDrive 中的 Office 檔案已啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
 
-當外部使用者在 Windows 上使用 Microsoft 365 應用程式時，也可以使用和建立用於加密檔的 Microsoft 帳戶。 MacOS、Android 或 iOS 尚不支援這項功能。 例如，某人與他們共用加密檔，加密設定會指定其 Gmail 電子郵件地址。 此使用者可建立其自己的 Microsoft 帳戶，其使用 Gmail 電子郵件地址。 然後，使用此帳戶登入後，他們就可以開啟檔，並根據為該使用者指定的使用限制來進行編輯。 如需此案例的逐步範例，請參閱[開啟和編輯受保護的檔](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
+當外部使用者在 Windows 上使用 Microsoft 365 應用程式（[正式的 Office 365 應用程式](https://docs.microsoft.com/deployoffice/name-change)）時，也可以使用和建立用於加密檔的 microsoft 帳戶。 MacOS、Android 或 iOS 尚不支援這項功能。 例如，某人與他們共用加密檔，加密設定會指定其 Gmail 電子郵件地址。 此使用者可建立其自己的 Microsoft 帳戶，其使用 Gmail 電子郵件地址。 然後，使用此帳戶登入後，他們就可以開啟檔，並根據為該使用者指定的使用限制來進行編輯。 如需此案例的逐步範例，請參閱[開啟和編輯受保護的檔](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
 
 > [!NOTE]
 > Microsoft 帳戶的電子郵件地址必須符合所指定的電子郵件地址，以限制加密設定的存取權。

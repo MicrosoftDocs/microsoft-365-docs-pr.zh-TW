@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 深入瞭解自動擴充封存，為 Exchange Online 信箱提供無限制的封存儲存。
-ms.openlocfilehash: 584502092e04822a91bf6d04c77daa277ed70547
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: f2d9e645badd98ea9a1d14dec22e291c8ad7de63
+ms.sourcegitcommit: 416a4b87bfd7e5aff80194b59b2776f054aa8eb5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633398"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44534915"
 ---
 # <a name="overview-of-unlimited-archiving"></a>無限制封存概觀
 
@@ -57,7 +57,7 @@ Microsoft 365 中的無限制封存功能（稱為*自動展開*封存）在封�
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>哪些專案會移至其他封存儲存空間？
 
-若要有效使用自動展開的封存儲存區，資料夾可能會移動。 Microsoft 365 會決定當其他儲存區新增至封存時，哪些資料夾會移動。 有時移動資料夾時，會自動建立一個或多個子資料夾，而且原始檔案夾中的專案會發佈到這些資料夾，以協助移動程式。 當您在 Outlook 中查看資料夾清單的封存部分時，這些子資料夾會顯示在原始檔案夾底下。  Microsoft 365 用來命名這些子資料夾的命名慣例為** \<資料夾名稱\>_yyyy （在 mmm dd，yyyy h_mm 上建立）**，其中：
+若要有效使用自動展開的封存儲存區，資料夾可能會移動。 Microsoft 365 會決定當其他儲存區新增至封存時，哪些資料夾會移動。 有時移動資料夾時，會自動建立一個或多個子資料夾，而且原始檔案夾中的專案會發佈到這些資料夾，以協助移動程式。 當您在 Outlook 中查看資料夾清單的封存部分時，這些子資料夾會顯示在原始檔案夾底下。  Microsoft 365 用來命名這些子資料夾的命名慣例是** \<folder name\> _yyyy （在 mmm dd，yyyy H_mm 上建立）**，其中：
 
 - **yyyy**是一年接收資料夾中的郵件。
 
@@ -90,7 +90,7 @@ Microsoft 365 中的無限制封存功能（稱為*自動展開*封存）在封�
 
 - 您可以存取封存信箱中的任何資料夾，包括已移至自動擴充儲存區域的資料夾。
 
-- 您可以搜尋資料夾本身，只搜尋移至其他儲存體區域的專案。 這表示您必須選取 [資料夾清單] 中的 [封存] 資料夾，以選取**目前的資料夾**選項作為搜尋範圍。 同樣地，如果自動擴充的儲存體區域中的資料夾包含子資料夾，您必須分別搜尋每個子資料夾。
+- 僅限預覽人員組建16.0.12716.10000 時，才可在 Outlook Desktop 中搜尋自動擴充的封存。 網頁版 Outlook 中提供搜尋。 類似于線上封存，您只需搜尋資料夾本身，即可搜尋移至其他儲存體區域的專案。 這表示您必須選取 [資料夾清單] 中的 [封存] 資料夾，以選取**目前的資料夾**選項作為搜尋範圍。 同樣地，如果自動擴充的儲存體區域中的資料夾包含子資料夾，您必須分別搜尋每個子資料夾。
 
 - 在自動展開的封存中，Outlook 中的專案計數和已讀取/未讀取的計數（在 Outlook 和網頁型 outlook 中）可能不准確。
 

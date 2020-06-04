@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解可用及慣用的選項，允許在 Exchange Online Protection （EOP）中輸入郵件。
-ms.openlocfilehash: 3ef05c919a86bc3458cceb2a2bc73522e16e4bb1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209532"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545943"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中建立安全的寄件者清單
 
@@ -66,13 +66,13 @@ Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來�
 
    - **寄件者** \>**內部/外部** \>**組織外部**：此為隱含條件，但可使用它來考慮可能未正確設定的內部部署電子郵件伺服器。
 
-   - **主語或** \> 本文主旨**或本文包含任何這些字詞** \>\<關鍵字 \> ：如果您可以透過主旨行或郵件內文中的關鍵字或片語來進一步限制郵件，您可以使用這些字做為條件。
+   - **主語或** \> 本文主旨**或本文包含任何這些字詞** \>\<keywords\>：如果您可以透過主旨行或郵件內文中的關鍵字或片語來進一步限制郵件，您可以使用這些字做為條件。
 
 4. **動作**：在規則中設定這兩項動作：
 
    a. **修改郵件屬性** \>**設定垃圾郵件信賴等級（SCL）** \>**略過垃圾郵件篩選**。
 
-   b. **郵件頭** \>**包含這些字** \> 中的任何**標頭名稱**： \< CustomHeaderName \> **標頭值**： \< CustomHeaderValue \> 。
+   b. **郵件頭** \>**包含這些字** \> 中的任何**標頭名稱**： \<CustomHeaderName\> **標頭值**： \<CustomHeaderValue\> 。
 
       例如，`X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`。 如果規則中有多個網域，您可以視需要自訂標頭文字。
 
@@ -103,7 +103,7 @@ Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來�
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>使用允許的寄件者清單或允許的網域清單
 
-最不可取的選項是使用反垃圾郵件原則中的允許寄件者清單或允許的網域清單。 您應該*盡可能*避免此選項，因為寄件者略過所有垃圾郵件、欺騙和網路釣魚防護，以及寄件者驗證（SPF、DKIM、DMARC）。 這種方法最適合用於暫時測試。 您可以在 EOP 主題中的[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)中找到詳細步驟。
+最不可取的選項是使用反垃圾郵件原則中的允許寄件者清單或允許的網域清單。 您應該*盡可能*避免此選項，因為寄件者略過所有垃圾郵件、欺騙和網路釣魚防護，以及寄件者驗證（SPF、DKIM、DMARC）。 這個方法最適合用來進行暫時測試。 您可以在 EOP 主題中的[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)中找到詳細步驟。
 
 這兩個清單的上限大約是1000個專案;不過，您只可以將30個專案輸入入口網站。 您必須使用 PowerShell 來新增超過30個專案。
 
@@ -118,7 +118,7 @@ Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來�
 
 - `5322.From`（也稱為**from** address 或 P2 寄件者）是 [**發**件人] 標頭欄位中的電子郵件地址，也就是顯示在電子郵件客戶程式中的寄件者電子郵件地址。
 
-通常 `5321.MailFrom` 和 `5322.From` 位址相同（人員對人員的通訊）。 不過，當您代表其他人傳送電子郵件時，這些位址通常會不同。 這通常是大量電子郵件的常見情況。
+通常 `5321.MailFrom` 和 `5322.From` 位址相同（人員對人員的通訊）。 不過，當您代表其他人傳送電子郵件時，位址可能會不同。 這通常是大量電子郵件訊息的情形。
 
 例如，假設「藍色 Yonder 航空公司」已雇用瑪姬旅行社傳送電子郵件廣告。 您在 [收件匣] 中收到的訊息具有下列屬性：
 
