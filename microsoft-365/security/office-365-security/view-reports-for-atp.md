@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 在安全性與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 857b98c02895f187d8639d991b74ed1fe12622ae
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0d8a5c0231d1ac63573619470be3b786cae9c37a
+ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351870"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44566725"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 
@@ -173,8 +173,4 @@ ATP 報告包含下列專案：
 
 [安全性與 &amp; 合規性中心內的報告與深入瞭解](reports-and-insights-in-security-and-compliance.md)
   
-[在安全性與 &amp; 合規性中心建立報表的排程](create-a-schedule-for-a-report.md)
-
-[在安全性與 &amp; 合規性中心內設定及下載自訂報告](set-up-and-download-a-custom-report.md)
-
 [角色許可權（Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
