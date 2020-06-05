@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留標籤如何分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤為 Microsoft 365 實作記錄管理解決方案。
-ms.openlocfilehash: 54691f996f1b2e0759c4d8758df0044a32b9ffa9
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: ab2e1baf553a386009d55e43efdf75b796cc1ffd
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327901"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545965"
 ---
 # <a name="learn-about-retention-labels"></a>了解保留標籤
 
@@ -107,10 +107,6 @@ ms.locfileid: "44327901"
 
 明確指派的保留標籤會優先於隱式指派的保留標籤。 如需詳細資訊，請參閱此頁面上的[原則保留或何者優先？](#the-principles-of-retention-or-what-takes-precedence)一節。
 
-結果：`ELCLastSuccessTimeStamp` (UTC) 屬性會顯示系統上次處理您信箱的時間。 如果系統在您建立原則後都還未處理信箱，標籤就無法顯示。 若要強制處理信箱，請執行 `Start-ManagedFolderAssistant -Identity <user>`。
-    
-如果標籤沒有出現在 Outlook 網頁版中，而您認為應該要出現，請務必清除瀏覽器中的快取 (CTRL + F5)。
-    
 ## <a name="retention-label-policies-and-locations"></a>保留標籤原則與位置
 
 可以將不同類型的保留標籤發佈到不同的位置，視保留標籤的功能而定。
@@ -123,19 +119,23 @@ ms.locfileid: "44327901"
    
 在 Exchange 中，您只能在新傳送的郵件 (傳輸中的資料) 上自動套用保留標籤功能 (適用於查詢和敏感性資訊類型)，而非目前在信箱中的所有郵件 (待用資料)。 此外，您只能在所有信箱中為敏感性資訊類型自動套用保留標籤功能，但無法選取特定信箱。
   
-Exchange 公用資料夾和 Skype 不支援保留標籤。
+Exchange 公用資料夾、Skype 和 Teams 頻道訊息和聊天不支援保留標籤。
 
 ## <a name="how-retention-labels-enforce-retention"></a>保留標籤如何強制保留
 
-保留標籤可強制執行與保留原則可執行的相同動作，即保留然後刪除、僅保留或僅刪除。 您可以使用保留標籤來實作複雜的內容計劃 (或檔案計劃)。 如需保留運作方式的詳細資訊，請參閱[了解保留原則](retention-policies.md)。
-  
+保留標籤可強制執行與保留原則可執行的相同動作，即保留然後刪除、僅保留或僅刪除。 您可以使用保留標籤來執行複雜的檔案規劃，以識別具有不同保留設定的特定檔案。 如需保留運作方式的詳細資訊，請參閱[了解保留原則](retention-policies.md)。
+
 除此之外，保留標籤有兩個只能用於保留標籤，但不能用於保留原則的保留選項。使用保留標籤，您可以：
   
 - 在保留期間結束時觸發處置檢閱，如此一來，必須先檢閱 SharePoint 和 OneDrive 文件，才能將它們刪除。 如需詳細資訊，請參閱[處置檢閱](disposition.md#disposition-reviews)。
     
-- 保留期間是從內容套用標籤時開始計算，而不是內容的壽命或上次修改時間。 此選項僅適用 SharePoint 網站和 OneDrive 帳戶中的內容。 針對 Exchange 電子郵件，保留期間一律會取決於傳送或接收郵件的日期，無論在這裡選擇的選項為何。
+- 保留期間是從內容套用標籤時開始計算，而不是內容的壽命或上次修改時間。 當您使用這個選項時：
+    - 它僅會套用到 SharePoint 網站和 OneDrive 帳戶中的內容。 針對 Exchange 電子郵件，保留期間一律會取決於傳送或接收郵件的日期。
+    - 儲存標籤後，無法變更保留期間。
     
 ![保留設定與標籤專用的選項](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
+
+另一個重要的差異是，當您在 SharePoint 中將保留標籤而非保留原則套用至檔案，且標籤設定為保留內容時，使用者將無法在強制執行保留期間時刪除檔案。 當您將相同標籤套用至 OneDrive 中的檔案和電子郵件時，使用者可以刪除內容，除非標籤將內容標示為記錄。
 
 ## <a name="where-published-retention-labels-can-appear-to-end-users"></a>可以向使用者顯示已發佈保留標籤的位置
 
@@ -197,7 +197,7 @@ Exchange 公用資料夾和 Skype 不支援保留標籤。
 ![詳細資料窗格中顯示已套用的標籤](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
 針對 SharePoint (而不是 OneDrive)，您可以建立包含 [標籤]**** 欄或 [項目為記錄]**** 欄的文件庫檢視。 此檢視可讓您快速查看指派給所有項目的保留標籤，以及記錄的項目。 不過，請注意，您無法依 [項目為記錄]**** 欄來篩選檢視。 如需如何新增欄的相關指示，請參閱[顯示或隱藏清單或文件庫中的欄](https://support.microsoft.com/zh-TW/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2)。
-  
+
 
 ### <a name="microsoft-365-groups"></a>Microsoft 365 群組
 
@@ -276,11 +276,12 @@ Exchange 公用資料夾和 Skype 不支援保留標籤。
   
 例如，您可以建立不帶任何動作、名為「稍後檢閱」的保留標籤，然後將此保留標籤自動套用到包含敏感資訊類型或查詢內容的內容。
   
-![標籤設定頁面中關閉保留](../media/17ce863b-a823-426e-aaad-83718465f762.png)
+![標籤設定頁面中關閉保留](../media/retention-label-retentionoff.png)
+
   
 ## <a name="using-retention-labels-for-records-management"></a>將保留標籤用於記錄管理
     
-您可以使用保留標籤將內容宣告為記錄。 這可以讓您在 Microsoft 365 中實作單一、一致的記錄管理策略。 如需相關資訊，請參閱[記錄概觀](records.md)。
+您可以使用保留標籤將內容宣告為記錄。 這可以讓您在 Microsoft 365 中實作單一、一致的記錄管理策略。 如需詳細資訊，請參閱[了解記錄](records.md)。
   
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>使用保留標籤作為 DLP 原則的條件
 
@@ -353,7 +354,7 @@ Exchange 公用資料夾和 Skype 不支援保留標籤。
   
 ### <a name="exchange-online"></a>Exchange Online
 
-- [保留標記和保留原則](https://go.microsoft.com/fwlink/?linkid=846125)，又稱為[郵件記錄管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (僅限刪除) 
+- [保留標記和保留原則](https://go.microsoft.com/fwlink/?linkid=846125)，又稱為[通訊記錄管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (僅刪除) 
     
 ### <a name="sharepoint-and-onedrive"></a>SharePoint 和 OneDrive
 
@@ -363,4 +364,6 @@ Exchange 公用資料夾和 Skype 不支援保留標籤。
     
 - [資訊管理原則](intro-to-info-mgmt-policies.md) (僅刪除) 
     
+## <a name="next-steps"></a>後續步驟
 
+如果您已準備好建立及發佈保留標籤，請參閱[建立、發佈和自動套用保留標籤](create-retention-labels.md)。

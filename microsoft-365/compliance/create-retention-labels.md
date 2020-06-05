@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立、發佈及自動套用保留標籤，以在您的 Office 365 環境中保留您需要的內容、刪除您不想要的項目，以及將項目宣告為記錄的相關指示。
-ms.openlocfilehash: 4a9343ddfe07bbc4bf535759a39268915fd83ca1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: a3ba321c9eae91bf701646a45271d3edcbc8dccc
+ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352240"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44545955"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>建立、發佈和自動套用保留標籤
 
@@ -56,13 +56,13 @@ ms.locfileid: "44352240"
 
 2. 遵循精靈中的提示進行。 如果您使用記錄管理：
     
-    - 如需有關檔案計劃描述元的資訊，請參閱[檔案計劃管理員的概觀](file-plan-manager.md)
+    - 如需檔案計劃描述元的詳細資訊，請參閱[使用檔案計劃管理保留標籤](file-plan-manager.md)
     
     - 若要使用保留標籤將內容宣告為記錄，請啟用 [使用標籤以將內容分類為「記錄」]**** 核取方塊。
 
 3. 重複這些步驟以建立更多標籤。
 
-若要編輯現有的標籤，請將其選取，然後選取 [編輯標籤]****。 這會啟動相同的精靈，讓您變更步驟 2 中的標籤描述和設定。
+若要編輯現有的標籤，請選取它，然後選取 [編輯標籤]**** 以啟動相同的精靈讓您變更標籤描述和步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)。 或者，選取任何一個可用的 [編輯]**** 選項，直接移至相關頁面以進行更新。
 
 ## <a name="publish-retention-labels-by-creating-a-retention-label-policy"></a>建立保留標籤原則來發佈保留標籤
 
@@ -80,7 +80,9 @@ ms.locfileid: "44352240"
 
 2. 遵循精靈中的提示進行。
     
-    如需設定位置的相關資訊，請參閱此頁面上的[保留標籤和位置](#retention-labels-and-locations)一節。 
+    如需保留標籤支援的位置詳細資訊，請參閱[保留標籤和位置](labels.md#retention-label-policies-and-locations)一節。 
+
+若要編輯現有的保留標籤原則，請選取它，然後選取 [編輯原則]****，即可啟動相同的精靈讓您變更原則描述和步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)。 或者，選取任何一個可用的 [編輯]**** 選項，直接移至相關頁面以進行更新。
 
 ## <a name="auto-apply-a-retention-label"></a>自動套用保留標籤
 
@@ -100,21 +102,9 @@ ms.locfileid: "44352240"
     
     如需有關設定會自動套用保留標籤之條件的詳細資訊，請參閱此頁面上的[設定自動套用保留標籤的條件](#configuring-conditions-for-auto-apply-retention-labels)一節。
     
-    如需設定位置的相關資訊，請參閱此頁面上的下一節，[保留標籤和位置](#retention-labels-and-locations)。
+    如需保留標籤支援的位置詳細資訊，請參閱[保留標籤和位置](labels.md#retention-label-policies-and-locations)一節。
 
-## <a name="retention-labels-and-locations"></a>保留標籤和位置
-
-可以將不同類型的保留標籤發佈到不同的位置，視保留標籤的功能而定。
-  
-|**如果保留標籤是...**|**則標籤原則可套用至...**|
-|:-----|:-----|
-|發佈給使用者  <br/> |Exchange、SharePoint、OneDrive、Office 365 群組  <br/> |
-|根據敏感資訊類型而自動套用  <br/> |Exchange (僅限所有信箱)、SharePoint、OneDrive  <br/> |
-|根據查詢而自動套用  <br/> |Exchange、SharePoint、OneDrive、Office 365 群組  <br/> |
-   
-在 Exchange 中，您只能在新傳送的郵件 (傳輸中的資料) 上自動套用保留標籤功能 (適用於查詢和敏感性資訊類型)，而非目前在信箱中的所有郵件 (待用資料)。 此外，您只能在所有信箱中為敏感性資訊類型自動套用保留標籤功能，但無法選取特定信箱。
-  
-Exchange 公用資料夾和 Skype 不支援保留標籤。
+若要編輯現有的自動套用標籤原則，請選取它，然後選取 [編輯原則]**** 以啟動相同的精靈讓您變更標籤描述和步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)。 或者，選取任何一個可用的 [編輯]**** 選項，直接移至相關頁面以進行更新。
 
 
 ## <a name="configuring-conditions-for-auto-apply-retention-labels"></a>設定自動套用保留標籤的條件
@@ -206,7 +196,7 @@ Exchange 公用資料夾和 Skype 不支援保留標籤。
   
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>如何檢查發佈至 Exchange 之保留標籤的狀態
 
-在 Exchange Online 中，是透過每 7 天執行一次的程序，將保留標籤提供給使用者。您可以使用 Powershell 查看此程序上次執行的時間，依此判斷下一次執行時間。
+在 Exchange Online 中，使用者可透過每 7 天執行一次的程序取得保留標籤。 您可以使用 PowerShell 查看這項程序上次執行的時間，藉此判斷下次的執行時間。
   
 1. [連線至 Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773)。
     
@@ -231,7 +221,11 @@ Exchange 公用資料夾和 Skype 不支援保留標籤。
 
 ## <a name="updating-retention-labels-and-their-policies"></a>更新保留標籤及其原則
 
-如果您編輯保留標籤、保留標籤原則或自動套用原則，且保留標籤已套用至內容，除了新標示的內容以外，您更新的設定會自動套用到此內容。
+當您編輯保留標籤、保留標籤原則或自動套用原則，且保留標籤或原則已套用至內容時，除了新識別的內容以外，您更新的設定會自動套用到此內容。
+
+在建立及儲存標籤或原則之後，部分設定無法變更，其中包括：
+- 保留期間以外的保留設定，除非您已將標籤設定為根據建立時間來保留或刪除內容。
+- 分類為記錄的選項。
 
 ## <a name="find-the-powershell-cmdlets-for-retention-labels"></a>尋找保留標籤的 PowerShell Cmdlet
 
