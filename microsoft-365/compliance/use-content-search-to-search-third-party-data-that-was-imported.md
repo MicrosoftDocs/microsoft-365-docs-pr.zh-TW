@@ -16,22 +16,25 @@ search.appverid:
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用內容搜尋 eDiscovery 工具，從協力廠商資料來源搜尋從 Microsoft 365 匯入信箱的專案。 您可以建立查詢來搜尋所有匯入的專案，或建立查詢以搜尋特定的協力廠商資料類型。 本文列出您可以在關鍵字查詢中使用的值，以搜尋您可以匯入至 Microsoft 365 的協力廠商資料類型。
-ms.openlocfilehash: e7e48f5231bccc988ad853202603defd17fd58f4
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: ab693ff8e2283e201b9d573e68f4bdfb9f859749
+ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942966"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44564966"
 ---
-# <a name="use-content-search-to-search-third-party-imported-data"></a>使用內容搜尋來搜尋協力廠商匯入的資料
+# <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>使用內容搜尋來搜尋自訂夥伴連接器匯入的協力廠商資料
 
-您可以使用安全性 & 合規性中心的[內容搜尋 eDiscovery 工具](content-search.md)，在協力廠商資料來源中搜尋從 Microsoft 365 匯入信箱的專案。 您可以建立查詢來搜尋所有匯入的協力廠商資料項目，也可以建立查詢來搜尋特定的協力廠商資料項目。 此外，您也可以建立查詢型保留原則或以查詢為基礎的 eDiscovery 保留，以保留協力廠商資料。 
+您可以使用安全性 & 合規性中心的[內容搜尋 eDiscovery 工具](content-search.md)，在協力廠商資料來源中搜尋從 Microsoft 365 匯入信箱的專案。 您可以建立查詢來搜尋所有匯入的協力廠商資料項目，也可以建立查詢來搜尋特定的協力廠商資料項目。 此外，您也可以建立查詢型保留原則或以查詢為基礎的 eDiscovery 保留，以保留協力廠商資料。
   
-如需有關匯入協力廠商資料的詳細資訊，以及您可以匯入至 Microsoft 365 的協力廠商資料類型清單，請參閱在[Office 365 中使用協力廠商資料的合作](work-with-partner-to-archive-third-party-data.md)。 
+如需使用協力廠商資料匯入協力廠商資料的詳細資訊，以及您可以匯入至 Microsoft 365 的協力廠商資料類型清單，請參閱在[Office 365 中使用協力廠商資料的合作](work-with-partner-to-archive-third-party-data.md)。
+
+> [!IMPORTANT]
+> 本文中的指導方針只適用于自訂夥伴連接器匯入的協力廠商資料。 本文不適用於使用 Microsoft 規範中心內[協力廠商資料連線器](archiving-third-party-data.md#third-party-data-connectors)匯入的協力廠商資料。
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>建立查詢以搜尋所有協力廠商資料
 
-若要搜尋（或保留）您已匯入至 Office 365 的協力廠商資料類型，您可以在內容搜尋的`kind:externaldata` [關鍵字] 方塊中，或在建立查詢型保留時，使用 [關鍵字] 屬性-值對。 例如，若要搜尋從任何協力廠商資料來源匯入的專案，並在匯入專案的 Subject 屬性中包含 "contoso" 一詞，您可以使用下列查詢： 
+若要搜尋（或保留）您已匯入至 Office 365 的協力廠商資料類型，您可以 `kind:externaldata` 在內容搜尋的 [關鍵字] 方塊中，或在建立查詢型保留時，使用 [關鍵字] 屬性-值對。 例如，若要搜尋從任何協力廠商資料來源匯入的專案，並在匯入專案的 Subject 屬性中包含 "contoso" 一詞，您可以使用下列查詢： 
   
 ```powershell
 kind:externaldata AND subject:contoso
@@ -55,9 +58,9 @@ itemclass:ipm.externaldata.<third-party data type>*
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-下表列出您可以搜尋的協力廠商資料類型，以及用於`itemclass:`郵件屬性的值，以特別搜尋該類型的協力廠商資料。 查詢語法不區分大小寫。 
+下表列出您可以搜尋的協力廠商資料類型，以及用於郵件屬性的值， `itemclass:` 以特別搜尋該類型的協力廠商資料。 查詢語法不區分大小寫。 
   
-|**協力廠商資料類型**|**`itemclass:`屬性值**|
+|**協力廠商資料類型**|**屬性值 `itemclass:`**|
 |:-----|:-----|
 |目的  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
@@ -81,7 +84,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |Bloomberg 郵件  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
 |Bloomberg 訊息  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
-|Cisco IM &amp;顯示伺服器  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
+|Cisco IM &amp; 顯示伺服器  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud for Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |
 |Direct Connect  <br/> | `ipm.externaldata.DirectConnect*` <br/> |

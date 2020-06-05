@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: 深入瞭解 Microsoft 365 系統管理中心。
-ms.openlocfilehash: 267a7fe56cbd71734664f085846c8b5a1356cccd
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 720130f01000e1f8845d2fa28dbc2d278a258ebf
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432204"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560420"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>關於 Microsoft 365 系統管理中心
 
@@ -54,8 +54,6 @@ Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般
 ### <a name="turn-on-targeted-release"></a>開啟目標版本
 
 1. 在[admin.microsoft.com](https://admin.microsoft.com)中登入，移至功能窗格，然後選取 [**設定** \> **組織設定檔**]。
-
-1. 在[portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813)中登入，移至功能窗格，然後選取 [**設定** \> **組織設定檔**]。
 
 2. 移至 [**發行偏好**設定卡]，然後選取 [**編輯**]。 
     
