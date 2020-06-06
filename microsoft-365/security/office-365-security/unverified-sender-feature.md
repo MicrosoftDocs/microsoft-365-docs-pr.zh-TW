@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文將引導您開啟，如何防止網路釣魚郵件到達您的信箱、Outlook.com 和網頁型 Outlook。
-ms.openlocfilehash: 9583161c9e64d6a24312565d68ae516a2be8606e
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b49cc27685f62f5fb5d123a8a7aa4e51e0065e64
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352451"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588333"
 ---
 # <a name="unverified-sender"></a>未驗證寄件者
 
@@ -86,8 +86,8 @@ ms.locfileid: "44352451"
 
 ## <a name="related-topics"></a>相關主題
 
-[協助保護您的 Outlook.com 電子郵件帳戶](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+[協助保護您的 Outlook.com 電子郵件帳戶](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
 [在 Outlook.com 中處理網路釣魚或欺騙](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
 
-[在網頁上的 Outlook 中篩選垃圾郵件和垃圾郵件](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)
+[在網頁上的 Outlook 中篩選垃圾郵件和垃圾郵件](https://support.microsoft.com/office/db786e79-54e2-40cc-904f-d89d57b7f41d)

@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: 管理員可以瞭解如何在獨立 Exchange Online Protection （EOP）中執行系統管理員角色群組報告。 當系統管理員在系統管理員角色群組中新增或移除成員時，此報告會登入，EOP 記錄每次出現一次。
-ms.openlocfilehash: 39022892075b295a26645157941195b97897c690
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 0c504460657a153aad7d3dd065c81007a68ba916
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350936"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587361"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在獨立版 EOP 中執行系統管理員角色群組報告
 
@@ -74,7 +74,7 @@ ms.locfileid: "44350936"
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>使用獨立 Exchange Online PowerShell 來搜尋審計記錄專案
 
-您可以使用 Exchange Online PowerShell 來搜尋符合您指定之準則的審計記錄專案。 如需搜尋準則的清單，請參閱[系統管理員稽核記錄](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)。 此程式會使用**Search-AdminAuditLog** Cmdlet，並以 Exchange Online PowerShell 顯示搜尋結果。 當您需要傳回的一組結果超過 **New-AdminAuditLogSearch** Cmdlet 或 EAC「稽核報告」報告中所定義的限制時，就可以使用這個 Cmdlet。
+您可以使用 Exchange Online PowerShell 來搜尋符合您指定之準則的審計記錄專案。 如需搜尋準則的清單，請參閱[Search-AdminAuditLog 搜尋準則](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)。 此程式會使用**Search-AdminAuditLog** Cmdlet，並以 Exchange Online PowerShell 顯示搜尋結果。 當您需要傳回的一組結果超過 **New-AdminAuditLogSearch** Cmdlet 或 EAC「稽核報告」報告中所定義的限制時，就可以使用這個 Cmdlet。
 
 若要搜尋指定準則的稽核記錄，請使用下列語法。
 
@@ -119,7 +119,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 ### <a name="view-details-of-audit-log-entries"></a>檢視稽核記錄項目的詳細資料
 
-**Search-AdminAuditLog** Cmdlet 會傳回 [系統管理員稽核記錄](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx)的「稽核記錄內容」一節所描述的欄位。在此指令程式傳回的欄位中， **CmdletParameters** 和 **ModifiedProperties** 兩個欄位包含依預設無法檢視的其他資訊。
+**Search-AdminAuditLog** Cmdlet 會傳回[審核記錄內容](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)中所述的欄位。 在此指令程式傳回的欄位中， **CmdletParameters** 和 **ModifiedProperties** 兩個欄位包含依預設無法檢視的其他資訊。
 
 若要檢視 **CmdletParameters** 和 **ModifiedProperties** 欄位的內容，請使用下列步驟。 或者，您可以使用**Exchange Online PowerShell 中的程式來搜尋審計記錄專案，並將結果傳送到**本主題稍後的收件者，以建立 XML 檔案。
 

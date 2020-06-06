@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 系統管理員可以深入瞭解安全性 & 規範中心（包括深入資訊、報告和小元件）中的郵件流程儀表板。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6bd3638f9f7cc2c6c8a7c1abe31b2e7655d110af
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 61a3df3016541b170f736d23b9e4b4854964046e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034143"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588013"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
 
@@ -57,19 +57,19 @@ ms.locfileid: "44034143"
 
 - 安全性 & 合規性中心內的**郵件流程系統管理員角色**的成員。 如果此角色明確指派給非全域管理員或 Exchange 系統管理員角色成員的使用者：
 
-  - 使用者必須直接登入安全性 & 合規性中心[https://protection.office.com](https://protection.office.com)。
+  - 使用者必須直接登入安全性 & 合規性中心 [https://protection.office.com](https://protection.office.com) 。
 
   - 使用者只具有郵件流程儀表板的唯讀許可權。
 
   - 使用者將無法存取 Microsoft 365 系統管理中心。
 
-如需全域系統管理員角色的詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
+如需全域系統管理員角色的詳細資訊，請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 如需將安全性 & 規範中心角色指派給使用者的詳細資訊，請參閱[授與使用者存取安全性 & 規範中心](grant-access-to-the-security-and-compliance-center.md)。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>哪裡可以找到郵件流程儀表板
 
-1. 移至安全性 & 合規性中心， [https://protection.office.com](https://protection.office.com)網址為。
+1. 移至安全性 & 合規性中心，網址為 [https://protection.office.com](https://protection.office.com) 。
 
 2. 展開 [**郵件流程**]，然後選取 [**儀表板**]。
 

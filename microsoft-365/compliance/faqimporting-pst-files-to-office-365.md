@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 description: '有關使用 Office 365 Import Service 將組織的 PST 檔案匯入至 Microsoft 365 信箱之系統管理員的常見問題。 '
-ms.openlocfilehash: e2ddd464f2cfd421766fb9c4d1043533f5561b25
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0d3245c962c2d22f0d500aafe22703bd3e57d504
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208127"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579198"
 ---
 # <a name="faq-about-importing-pst-files"></a>匯入 PST 檔案的常見問題集
 
@@ -50,7 +50,7 @@ ms.locfileid: "44208127"
   
  **哪些地區提供網路上傳服務？**
   
-下列地區目前提供網路上傳：美國、加拿大、巴西、英國、法國、歐洲、印度、東亞洲、東南亞、日本、韓國和澳大利亞。 Network upload will be available in more regions soon.
+下列地區目前提供網路上傳：美國、加拿大、巴西、英國、法國、歐洲、印度、東亞洲、東南亞、日本、韓國、韓國、澳大利亞及阿拉伯聯合大公國（UAE）。 Network upload will be available in more regions soon.
 
 > [!NOTE]
 > 目前無法在德國和瑞士使用網路上傳 PST 檔案。 當這些國家/地區開放使用網路上傳時，將會更新此常見問題。

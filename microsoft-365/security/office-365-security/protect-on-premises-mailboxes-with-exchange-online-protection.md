@@ -1,5 +1,5 @@
 ---
-title: 使用獨立 EOP 保護中國內部部署信箱
+title: 使用獨立版 EOP 保護中國的內部部署信箱
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在中國使用 Office 365 的系統管理員可以瞭解如何使用獨立的 Exchange Online Protection （EOP）來保護其內部部署信箱。
-ms.openlocfilehash: 6ce85e626f9bf4c960de57ad5cd15ac3148954cb
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 3e9ba8400ce9c545dd26f2dadce70595f5c5695e
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208291"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587977"
 ---
-# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>使用獨立 EOP 保護中國內部部署信箱
+# <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>使用獨立版 EOP 保護中國的內部部署信箱
 
 > [!NOTE]
 > 本文僅適用於中國 21Vianet 所營運的 Office 365。
 
-即使您打算將部分或所有信箱裝載在內部部署，您仍然可以使用 Exchange Online Protection (EOP) 保護信箱。 若要設定連接器，您的帳戶必須是全域管理員或 Exchange 公司管理員（組織管理角色群組）。 如需 Office 365 權限與 Exchange 權限之關係的相關資訊，請參閱[由 21Vianet 營運的 Office 365 中指派系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles?&view=o365-21vianet)。 如果您的 Exchange 信箱均為內部部署，請遵循以下步驟以設定 EOP 服務。
+即使您打算將部分或所有信箱裝載在內部部署，您仍然可以使用 Exchange Online Protection (EOP) 保護信箱。 若要設定連接器，您的帳戶必須是全域管理員或 Exchange 公司管理員（組織管理角色群組）。 如需 Office 365 權限與 Exchange 權限之關係的相關資訊，請參閱[由 21Vianet 營運的 Office 365 中指派系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet)。 如果您的 Exchange 信箱均為內部部署，請遵循以下步驟以設定 EOP 服務。
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步驟 1：使用 Microsoft 365 系統管理中心新增及確認您的網域
 
@@ -42,7 +42,7 @@ ms.locfileid: "44208291"
 2. 請遵循入口網站的步驟，將適用的 DNS 記錄新增到 DNS 主機提供者，以便驗證網域擁有權。
 
 > [!TIP]
-> 當您新增網域至此服務並設定 DNS 時，[新增網域和使用者至 21Vianet 營運的 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?&view=o365-21vianet) (部分機器翻譯) 和 [管理您的 DNS 記錄時建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/office365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?&view=o365-21vianet) (部分機器翻譯)，是有用的參考資源。
+> 當您新增網域至此服務並設定 DNS 時，[新增網域和使用者至 21Vianet 營運的 Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) (部分機器翻譯) 和 [管理您的 DNS 記錄時建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) (部分機器翻譯)，是有用的參考資源。
 
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>步驟 2：新增收件者和設定網域類型
 
@@ -69,7 +69,7 @@ ms.locfileid: "44208291"
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>步驟 6：使用 Microsoft 365 系統管理中心將您的 MX 記錄指向 EOP
 
-請遵循 Office 365 網域設定步驟來更新網域的 MX 記錄，以讓輸入電子郵件經過 EOP。 如需詳細資訊，您可以再次參考[管理 DNS 記錄時為 Office 365 建立 DNS 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) (部分機器翻譯)。
+請遵循 Office 365 網域設定步驟來更新網域的 MX 記錄，以讓輸入電子郵件經過 EOP。 如需詳細資訊，您可以再次參考[管理 DNS 記錄時為 Office 365 建立 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) (部分機器翻譯)。
 
 如何才能了解此工作是否正常運作？
 

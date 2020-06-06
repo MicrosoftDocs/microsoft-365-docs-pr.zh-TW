@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 網頁版的 [報告訊息] 增益集。
-ms.openlocfilehash: 67fe2112e5d507ac1f0dc78ffa3534ebc9874916
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0b900fe00dc590b69755b54f8103688042026df0
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209484"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588225"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -38,7 +38,7 @@ Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息�
 
 如果您是個人使用者，您可以[自行啟用 [報告訊息] 增益集](#get-the-report-message-add-in-for-yourself)。
 
-如果您是全域系統管理員或 Exchange Online 系統管理員，且 Exchange 設定成使用 OAuth 驗證，您可以[為組織啟用報告訊息增益集](#get-and-enable-the-report-message-add-in-for-your-organization)。 [報告訊息] 增益集現可透過[集中式部署](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins)提供。
+如果您是全域系統管理員或 Exchange Online 系統管理員，且 Exchange 設定成使用 OAuth 驗證，您可以[為組織啟用報告訊息增益集](#get-and-enable-the-report-message-add-in-for-your-organization)。 [報告訊息] 增益集現可透過[集中式部署](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)提供。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -84,7 +84,7 @@ Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息�
 
   ![Outlook 的網頁報告訊息增益集圖示](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-若要瞭解如何使用增益集，請參閱[use The Report Message 增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
+若要瞭解如何使用增益集，請參閱[use The Report Message 增益集](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)。
 
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>為貴組織取得和啟用報告訊息增益集
 
@@ -145,7 +145,7 @@ Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息�
 
   ![Outlook 的網頁報告訊息增益集圖示](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
-當您通知使用者關於 [報告訊息] 增益集時，請包含[使用報告訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的連結。
+當您通知使用者關於 [報告訊息] 增益集時，請包含[使用報告訊息增益集](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)的連結。
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>檢閱或編輯報告訊息增益集的設定
 

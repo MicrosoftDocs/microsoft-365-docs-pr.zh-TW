@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要：設定與 Microsoft 365 開發/測試環境中組織的其他部分隔離的 SharePoint 線上小組網站。
-ms.openlocfilehash: 2a1c728f5cbc1d622bb46ffd7532f1103a7995d3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 07f3ae349f20fd4498e7809955cf0407d8c31d8c
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634119"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588025"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>獨立的 SharePoint Online 小組網站開發/測試環境
 
@@ -56,9 +56,9 @@ SharePoint 線上小組網站的存取權，以及使用者可以執行的工作
 
 ## <a name="phase-1-build-out-your-lightweight-or-simulated-enterprise-microsoft-365-devtest-environment"></a>階段1：組建小型或模擬的企業 Microsoft 365 開發/測試環境
 
-如果您只想以輕量的方式建立隔離的 SharePoint Online 小組網站，請依照[Microsoft 365 開發/測試環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)的階段2和3中的指示進行。
+如果您只想以輕量的方式建立隔離的 SharePoint Online 小組網站，請遵循[輕量基本](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)設定的階段2和3中的指示。
 
-如果您想要在模擬的企業設定中建立隔離的 SharePoint Online 小組網站，請遵循[您的 Microsoft 365 開發/測試環境 DirSync](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment)中的指示。
+如果您想要在模擬的企業設定中建立隔離的 SharePoint Online 小組網站，請遵循[Microsoft 365 測試環境的密碼雜湊同步](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment)處理指示。
 
 > [!NOTE]
 > 建立隔離的 SharePoint 線上網站不需要模擬的企業開發/測試環境，其中包括連線到網際網路的模擬內部網路和 Active Directory 網域服務（AD DS）樹系的目錄同步處理。 這裡是以選項形式提供，可讓您測試隔離的 SharePoint Online 網站，並在代表一般組織的環境中進行嘗試。
@@ -148,7 +148,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 若要建立 ProjectX 的 SharePoint Online 小組網站，請執行下列操作：
 
-1. 使用您的本機電腦（輕量設定）或在 CLIENT1 （模擬的企業設定）上的瀏覽器，並使用您的全域系統[https://admin.microsoft.com](https://admin.microsoft.com)管理員帳戶登入 Microsoft 365 admin center （）。
+1. 使用您的本機電腦（輕量設定）或在 CLIENT1 （模擬的企業設定）上的瀏覽器，並 [https://admin.microsoft.com](https://admin.microsoft.com) 使用您的全域系統管理員帳戶登入 Microsoft 365 admin center （）。
 
 2. 在磚清單中，按一下 [SharePoint]****。
 
@@ -216,7 +216,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 2. 按一下您全域系統管理員的名稱，然後按一下 [**登出**]。
 
-3. 使用 Lead Designer 帳戶名稱及其密碼登入[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 系統管理中心（）。
+3. [https://admin.microsoft.com](https://admin.microsoft.com)使用 Lead Designer 帳戶名稱及其密碼登入 Microsoft 365 系統管理中心（）。
 
 4. 在磚清單中，按一下 [SharePoint]****。
 
@@ -246,7 +246,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 現在讓我們示範使用開發 VP 使用者帳戶來存取 access：
 
-1. 使用開發 VP 帳戶名稱及其密碼登入[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 系統管理中心（）。
+1. [https://admin.microsoft.com](https://admin.microsoft.com)使用開發 VP 帳戶名稱及其密碼登入 Microsoft 365 系統管理中心（）。
 
 2. 在磚清單中，按一下 [SharePoint]****。
 
@@ -262,7 +262,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 現在讓我們示範沒有許可權的使用者帳戶的 access：
 
-1. 使用使用者3帳戶名稱及其密碼登入[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft 365 系統管理中心（）。
+1. [https://admin.microsoft.com](https://admin.microsoft.com)使用使用者3帳戶名稱及其密碼登入 Microsoft 365 系統管理中心（）。
 
 2. 在磚清單中，按一下 [SharePoint]****。
 
@@ -288,12 +288,8 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 [雲端採用測試實驗室指南 (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[基底組態開發/測試環境](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
+[模擬企業基本設定](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 
-[Microsoft 365 開發/測試環境](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[輕量型基本組態](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
 
 [雲端採用和混合式解決方案](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

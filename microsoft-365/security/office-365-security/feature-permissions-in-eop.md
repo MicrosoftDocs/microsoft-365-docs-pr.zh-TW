@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 深入瞭解獨立 Exchange Online Protection 中的工作所需的許可權
-ms.openlocfilehash: 0138bd4716d831a33fa4b5a0fbdce0f154d62776
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0c3074789e439c3923667d37446733665fa79d88
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208868"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588249"
 ---
-# <a name="permissions-in-standalone-eop"></a>獨立 EOP 中的許可權
+# <a name="permissions-in-standalone-eop"></a>獨立版 EOP 中的權限
 
 不含 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）會使用角色型存取控制（RBAC）許可權模型，以輕鬆授與許可權給您的系統管理員。 您可以使用獨立 EOP 中的許可權功能，快速地讓新組織正常運作。
 
@@ -134,7 +134,7 @@ ms.locfileid: "44208868"
 |安全性讀取者|SecurityReader|
 |
 
-其他 Microsoft 365 角色沒有對應的 EOP 角色群組，也不會授與 EOP 中的管理許可權。 如需將 Microsoft 365 角色指派給使用者的詳細資訊，請參閱[指派系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles)。
+其他 Microsoft 365 角色沒有對應的 EOP 角色群組，也不會授與 EOP 中的管理許可權。 如需將 Microsoft 365 角色指派給使用者的詳細資訊，請參閱[指派系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)。
 
 使用者可以在 EOP 中授與系統管理許可權，而不需將其新增至 Microsoft 365 角色。 您可以將使用者新增為 EOP 角色群組的成員來執行此動作。 使用者將在 EOP 中取得許可權，但不會取得其他 Microsoft 365 工作負載中的許可權。
 
@@ -144,7 +144,7 @@ ms.locfileid: "44208868"
 
 - 在 EAC 中，移至 [**許可權**] [系統 \> **管理員角色**]，然後確認角色群組已列出（或未列出）。 選取角色群組，並確認詳細資料窗格中的設定，或按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 以驗證設定。
 
-- 在 Exchange Online PowerShell 中，以 \< 角色群組的名稱取代角色群組名稱 \> ，並執行下列命令，以確認角色群組存在（或不存在），並確認設定：
+- 在 Exchange Online PowerShell 中， \<Role Group Name\> 以角色群組的名稱取代，並執行下列命令，以確認角色群組存在（或不存在），並確認設定：
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Exchange Online 信箱中設定垃圾郵件設定。 在 Outlook 或 web 上的 Outlook 中，使用者可以使用許多這些設定。
-ms.openlocfilehash: 40364db9d4af9e093d8f2f74ee3c0f0373b1671a
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: a0b2bce985c642a2069d51cbd3103b6fd044ff17
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498660"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588449"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>設定 Exchange Online 信箱上的垃圾郵件設定
 
@@ -32,7 +32,7 @@ ms.locfileid: "44498660"
 - **啟用或停用垃圾郵件規則**：「垃圾郵件規則」是一種隱藏的收件匣規則，名稱為「垃圾郵件規則」預設會在每個信箱中啟用。 垃圾郵件規則會控制下列功能：
 
   - **根據反垃圾郵件原則將郵件移至 [垃圾郵件] 資料夾**：當反垃圾郵件原則使用 [**將郵件移至垃圾郵件] 資料夾**設定為垃圾郵件篩選判定時，垃圾郵件篩選規則會在郵件傳遞至信箱之後，將郵件移至 [垃圾郵件] 資料夾。 如需反垃圾郵件原則中垃圾郵件篩選 verdicts 的詳細資訊，請參閱[設定 EOP 中的反垃圾郵件原則](configure-your-spam-filter-policies.md)。 同樣地，如果零小時自動清除（ZAP）決定傳遞的郵件為垃圾郵件或網路釣魚，垃圾郵件篩選規則會將郵件移至 [垃圾郵件] 資料夾，將**郵件移至**[垃圾郵件] 資料夾。垃圾郵件篩選判定的動作。 如需有關 ZAP 的詳細資訊，請參閱[在 Exchange Online 中以零小時自動清除（ZAP）](zero-hour-auto-purge.md)。
-  
+
   - **使用者在 outlook 或網頁型 outlook 中為自己自行設定的垃圾郵件設定**：安全_組集合_為安全寄件者清單、安全收件者清單，以及每個信箱上的封鎖寄件者清單。 這些清單中的專案會決定垃圾郵件規則是否會將郵件移至 [收件匣] 或 [垃圾郵件] 資料夾。 使用者可以在 Outlook 或網頁型 outlook （先前稱為 Outlook Web App）中為自己的信箱設定安全清單集合。 系統管理員可以在任何使用者的信箱上設定安全清單集合。
 
 當信箱上已啟用垃圾郵件規則時，EOP 可以根據垃圾郵件篩選判定動作將郵件移至 [垃圾郵件] 資料夾，並將郵件移至 [垃圾郵件]**資料夾**或信箱上的 [封鎖寄件者] 清單，並防止郵件傳遞至 [垃圾郵件] 資料夾（根據信箱上的 [安全的寄件者] 清單）。
@@ -148,7 +148,7 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 > 
 > - 即使停用信箱上的垃圾郵件規則，仍然可以設定安全清單集合，而 Outlook 垃圾郵件篩選器可以將郵件移至收件匣或 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱本主題中的＜[關於 Outlook 中的垃圾郵件設定](#about-junk-email-settings-in-outlook)＞章節。
 > 
-> - Outlook 垃圾郵件篩選器有其他安全清單集合設定（例如，**自動將我的電子郵件新增至安全寄件者清單**）。 如需詳細資訊，請參閱＜[使用垃圾郵件篩選器來控制要查看的訊息](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077)＞。
+> - Outlook 垃圾郵件篩選器有其他安全清單集合設定（例如，**自動將我的電子郵件新增至安全寄件者清單**）。 如需詳細資訊，請參閱＜[使用垃圾郵件篩選器來控制要查看的訊息](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077)＞。
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
@@ -197,7 +197,7 @@ Outlook 和 網頁型 Outlook 兩者都支援安全清單集合。 安全清單�
   - 500封鎖的寄件者清單與封鎖的網域清單中的專案總數。
 
   達到1024專案限制時，會發生下列情況：
-  
+
   - 清單會停止接受 PowerShell 和 Outlook 網頁版中的專案，但不會顯示錯誤。
 
     Outlook 使用者可以繼續加入超過1024個專案，直到達到 Outlook 限制 510 KB 為止。 EOP 篩選傳遞至信箱（郵件流程規則、反欺騙等等）之後，Outlook 可以使用這些額外的專案。
@@ -208,7 +208,7 @@ Outlook 和 網頁型 Outlook 兩者都支援安全清單集合。 安全清單�
   2. 每當為第一個1024專案進行變更時，安全寄件者清單及安全收件者清單都會加上重複記錄，並依字母順序排序。
 
   使用第一個1024專案，並在郵件頭中戳相關的資訊。
-  
+
   超過1024的專案（未同步至 Azure AD）是由 Outlook 處理（而不是網頁上的 Outlook），而且不會在郵件頭中標記任何資訊。
 
 如您所見，啟用 [**來自我的連絡人的信任電子郵件**] 設定會減少安全寄件者的數目，以及可同步處理的安全收件者數目。 如果有問題，我們建議使用「群組原則」關閉此功能：

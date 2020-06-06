@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解 Microsoft Exchange Online Protection （EOP）系統管理員可以使用的報告和疑難排解工具。
-ms.openlocfilehash: af41f1d3b6ccc7632b392f58c36344239200f915
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: b33d343d9b7f02e32619031d3ecf72ad12f891fd
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206439"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588165"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的報告和郵件追蹤
 
@@ -37,13 +37,13 @@ ms.locfileid: "44206439"
 
 如需詳細資訊，請參閱下列資源：
 
-- [Admin center 中的 microsoft 365 報告-Microsoft 365 群組](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Admin center 中的 microsoft 365 報告-Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 
-- [系統管理中心的 Microsoft 365 報告-電子郵件活動](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [系統管理中心的 Microsoft 365 報告-電子郵件活動](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
 
-- [系統管理中心的 Microsoft 365 報告-電子郵件應用程式使用方式](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [系統管理中心的 Microsoft 365 報告-電子郵件應用程式使用方式](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
 
-- [系統管理中心的 Microsoft 365 報告-信箱使用量](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [系統管理中心的 Microsoft 365 報告-信箱使用量](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心中的安全性 & 符合性報告
 

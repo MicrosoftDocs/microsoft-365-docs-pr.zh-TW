@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 的攻擊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7ba6c521c814e4ea44c2dc29ccdad8143d166d4
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034825"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587493"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
@@ -158,7 +158,7 @@ ms.locfileid: "44034825"
 
 - 您也可以完全停用受影響帳戶的登入，這將會進一步停用該帳戶中應用程式對資料的存取權。 當然，這對使用者的生產力並不理想，但是如果您正努力快速限制影響，這會是可行的短期補救。
 
-- 您可以關閉租用戶的整合式應用程式。 這是一項重大步驟，會在整個租用戶範圍中停用使用者授權同意的能力。 這可防止您的使用者不小心授權存取惡意應用程式。 我們不建議您這麼做，因為這會嚴重影響使用者使用使用協力廠商應用程式的生產力。 若要這麼做，可以依照[開啟或關閉整合式應用程式](https://docs.microsoft.com/office365/admin/misc/integrated-apps)中的步驟進行。
+- 您可以關閉租用戶的整合式應用程式。 這是一項重大步驟，會在整個租用戶範圍中停用使用者授權同意的能力。 這可防止您的使用者不小心授權存取惡意應用程式。 我們不建議您這麼做，因為這會嚴重影響使用者使用使用協力廠商應用程式的生產力。 若要這麼做，可以依照[開啟或關閉整合式應用程式](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)中的步驟進行。
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Microsoft 365
 

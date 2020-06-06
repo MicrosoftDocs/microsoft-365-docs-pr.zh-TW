@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解 Microsoft 365 如何在 DNS 中使用寄件者原則架構（SPF） TXT 記錄，以確保目的地電子郵件系統信任從您的自訂網域傳送的郵件。
-ms.openlocfilehash: 5d09047b51f191947c13a3e6ca64b5cb30d3f6a0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a86087f510dca328bb5b56af6fd4802f1f42a454
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036386"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587481"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 如何使用寄件者原則架構 (SPF) 來防止詐騙
 
@@ -51,11 +51,11 @@ SPF 決定是否允許寄件者代表網域傳送。 如果不允許收件者這
 
 查看 SPF 規則的基本語法：
 
-v=spf1 \<IP\> \<強制規則\>
+v = spf1 \<IP\>\<enforcement rule\>
 
 例如，假設 contoso.com 有下列 SPF 規則：
 
-v=spf1 \<IP 位址 #1\> \<IP 位址 #2\> \<IP 位址 #3\> \<強制規則\>
+v = spf1 \<IP address #1\> \<IP address #2\> \<IP address #3\>\<enforcement rule\>
 
 在此範例中，SPF 規則會指示接收電子郵件伺服器僅接受來自 contoso.com 網域的下列 IP 位址的郵件：
 
@@ -131,7 +131,7 @@ v=spf1 include:spf.protection.outlook.com -all
 
 使用本文中的語法資訊，構成自訂網域的 SPF TXT 記錄。 雖然還有其他此處未提及的語法選項，以下是最常使用的選項。 一旦您已形成記錄，您需要在網域註冊機構中更新記錄。
 
-如需您需要在 Microsoft 365 中包含的網域相關資訊，請參閱[SPF 所需的外部 DNS 記錄](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)。 使用[逐步指示](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam)來更新您網域註冊機構的 SPF (TXT) 記錄。
+如需您需要在 Microsoft 365 中包含的網域相關資訊，請參閱[SPF 所需的外部 DNS 記錄](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)。 使用[逐步指示](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam)來更新您網域註冊機構的 SPF (TXT) 記錄。
 
 ### <a name="spf-txt-record-syntax-for-microsoft-365"></a>Microsoft 365 的 SPF TXT 記錄語法
 <a name="SPFSyntaxO365"> </a>
@@ -248,6 +248,6 @@ cust-spf.exacttarget.com
 ## <a name="for-more-information"></a>如需詳細資訊
 <a name="SPFTroubleshoot"> </a>
 
-需要新增 SPF TXT 記錄的說明嗎？ 閱讀此文章[：在任何 dns 主機服務提供者（適用于 microsoft 365）上建立 dns 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam)，以取得與 microsoft 365 中的自訂網域使用的寄件者原則架構的詳細資訊。 [反垃圾郵件訊息標頭](anti-spam-message-headers.md)包含 Microsoft 365 用於 SPF 檢查的語法及標頭欄位。
+需要新增 SPF TXT 記錄的說明嗎？ 閱讀此文章[：在任何 dns 主機服務提供者（適用于 microsoft 365）上建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider#add-a-txt-record-for-spf-to-help-prevent-email-spam)，以取得與 microsoft 365 中的自訂網域使用的寄件者原則架構的詳細資訊。 [反垃圾郵件訊息標頭](anti-spam-message-headers.md)包含 Microsoft 365 用於 SPF 檢查的語法及標頭欄位。
 
 

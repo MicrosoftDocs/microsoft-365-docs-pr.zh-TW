@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護，並設定如何將它用於您的組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3ed243d36866e9ebadf00a0247dd4545113788e8
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4176aabb88d177c7cff0f32f32543a251b558170
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206601"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587989"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -41,13 +41,13 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 |||
 |---|---|
 |**保護類型**|**訂閱需求**|
-|反惡意程式碼保護|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) （EOP）|
+|反惡意程式碼保護|[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) （EOP）|
 |保護電子郵件和 Office 檔中的惡意 URLs 和檔案|[Office 365 高級威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)（ATP）|
-|防網路釣魚保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
+|防網路釣魚保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |高級反網路釣魚保護|[Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|反垃圾郵件保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
-|自動清除零小時（電子郵件）|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)|
-|審核記錄（用於報告目的）|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)|
+|反垃圾郵件保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
+|自動清除零小時（電子郵件）|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
+|審核記錄（用於報告目的）|[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)|
 |
 
 ### <a name="roles-and-permissions"></a>角色及權限
@@ -56,7 +56,7 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 |角色或角色群組|深入瞭解|
 |---------|---------|
-|全域管理員|[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
+|全域管理員|[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |安全性系統管理員|[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Exchange Online 組織管理|[Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>和<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)|
 |
@@ -65,7 +65,7 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 ## <a name="part-1---anti-malware-protection"></a>第1部分-反惡意程式碼保護
 
-在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的訂閱中提供[反惡意程式碼保護](anti-malware-protection.md)。
+在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)的訂閱中提供[反惡意程式碼保護](anti-malware-protection.md)。
 
 1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **反惡意**代碼]。
 
@@ -147,7 +147,7 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 [防網路釣魚]
 
-您可以在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的訂閱中取得[反網路釣魚防護](anti-phishing-protection.md)。 您可以使用[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)中的高級反網路釣魚防護。
+您可以在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)的訂閱中取得[反網路釣魚防護](anti-phishing-protection.md)。 您可以使用[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)中的高級反網路釣魚防護。
 
 下列程式說明如何設定 ATP 反網路釣魚原則。 步驟類似于設定反網路釣魚原則（沒有 ATP）。
 
@@ -183,7 +183,7 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 ## <a name="part-4---anti-spam-protection"></a>第4部分-反垃圾郵件保護
 
-您可以在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的訂閱中取得[反垃圾郵件保護](anti-spam-protection.md)。
+您可以在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)的訂閱中取得[反垃圾郵件保護](anti-spam-protection.md)。
 
 1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**]  >  **反垃圾郵件**。
 
@@ -205,7 +205,7 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 ### <a name="zero-hour-auto-purge-for-email"></a>電子郵件自動清除零小時
 
-在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)的訂閱中，可以使用[零小時自動清除](zero-hour-auto-purge.md)（ZAP）。 此保護功能預設為開啟狀態;不過，保護生效的情況必須符合下列條件：
+在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)的訂閱中，可以使用[零小時自動清除](zero-hour-auto-purge.md)（ZAP）。 此保護功能預設為開啟狀態;不過，保護生效的情況必須符合下列條件：
 
 - 垃圾[訊息原則](anti-spam-protection.md)中的垃圾郵件動作會設定為**將郵件移至 [垃圾郵件] 資料夾**。
 
@@ -215,7 +215,7 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 ### <a name="audit-logging-for-reporting-and-investigation"></a>報告和調查的審計記錄
 
-在包含[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)的訂閱中可使用審核記錄。 為了在威脅防護報告中查看資料（如[安全性儀表板](security-dashboard.md)、[電子郵件安全性報告](view-email-security-reports.md)和[Explorer](threat-explorer.md)），必須為您的組織開啟審核記錄。 若要深入瞭解，請參閱[開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
+在包含[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)的訂閱中可使用審核記錄。 為了在威脅防護報告中查看資料（如[安全性儀表板](security-dashboard.md)、[電子郵件安全性報告](view-email-security-reports.md)和[Explorer](threat-explorer.md)），必須為您的組織開啟審核記錄。 若要深入瞭解，請參閱[開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 ## <a name="post-setup-tasks"></a>安裝後的工作
 
@@ -223,8 +223,8 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 |||
 |---|---|
-|**處理方式**|**可深入了解的資源**|
+|**該如何做**|**可深入了解的資源**|
 |查看您的組織如何使用威脅防護功能，以查看報告|[安全性儀表板](security-dashboard.md)<br/>[電子郵件安全性報告](view-email-security-reports.md)<br/>[Office 365 ATP 報告](view-reports-for-atp.md)<br/>[威脅總管](threat-explorer.md)|
 |視需要定期複查和修正威脅防護原則|[安全分數](../mtp/microsoft-secure-score.md)<br/>[智慧報告和洞察力](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 威脅調查和回應功能](keep-users-safe-with-office-365-ti.md)|
-|監視新功能和服務更新|[標準及目標發行選項](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[訊息中心](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|監視新功能和服務更新|[標準及目標發行選項](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[訊息中心](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |

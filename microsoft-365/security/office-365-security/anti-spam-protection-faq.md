@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在 Exchange Online Protection （EOP）中查看有關反垃圾郵件保護的常見問題與解答。
-ms.openlocfilehash: 69d9e72e3be53f0ddd5bc5771493564f364bef54
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 11c80a4cb93cf0c37ffbdf917e238960dd8fea80
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209640"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588037"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾郵件保護常見問題集
 
@@ -137,7 +137,7 @@ Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件�
 
   [設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [網域常見問題集](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) (部分機器翻譯)
+  [網域常見問題集](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) (部分機器翻譯)
 
 - **使用 DKIM 簽署電子郵件時，應以寬鬆的規範簽署。**
 

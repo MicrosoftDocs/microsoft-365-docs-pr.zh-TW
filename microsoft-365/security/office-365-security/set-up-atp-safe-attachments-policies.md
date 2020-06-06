@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何定義安全附件原則，以利用電子郵件中的惡意檔來保護組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab67b66b8773f45e819abef34e1d77ce5de4cc62
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d826cb6e0dd4370a1e02722901d083d4f021e2b4
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035317"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588117"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
 > [!IMPORTANT]
-> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是家用版使用者且正在尋找 Outlook 中安全附件的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是家用版使用者且正在尋找 Outlook 中安全附件的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 人們經常傳送、接收及共用附件，例如文件、簡報和試算表等等。 只查看電子郵件訊息，不一定可輕易知道附件是否安全或有危害。 最糟糕的就是打開惡意附件，讓您的組織遭受重大災害。 幸好，[Office 365 進階威脅防護](office-365-atp.md) (ATP) 幫得上忙。 您可以設定 [ATP 安全附件](atp-safe-attachments.md)原則，協助確保您組織不會因為不安全的電子郵件附件而遭到攻擊。
 
@@ -48,12 +48,12 @@ ms.locfileid: "44035317"
 
   |角色|指派位置/條件|
   |---------|---------|
-  |全域管理員 |簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以深入瞭解。）|
+  |全域管理員 |簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。）|
   |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online 組織管理，Exchange Online 的清理管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  若要深入瞭解角色和許可權，請參閱[安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+  若要深入瞭解角色和許可權，請參閱[安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 - [了解 ATP 安全附件原則選項](#step-3-learn-about-atp-safe-attachments-policy-options) (在本文中)。 某些選項 (例如監視或取代選項) 可能會造成電子郵件延遲，因為要掃描附件。 若要避免郵件延遲，請考慮使用[動態傳遞和預覽](dynamic-delivery-and-previewing.md)。
 
@@ -63,7 +63,7 @@ ms.locfileid: "44035317"
 
 1. 移至 [https://protection.office.com](https://protection.office.com) 然後以您的公司或學校帳戶當入。
 
-2. 在&amp;安全性與合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則** \> **安全附件**]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則** \> **安全附件**]。
 
 3. 如果您看到 [開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的 ATP]****，我們建議您選取此選項。 這將為您的 Microsoft 365 環境啟用[SharePoint、OneDrive 和 Microsoft 小組的 Office 365 高級威脅防護](atp-for-spo-odb-and-teams.md)。
 

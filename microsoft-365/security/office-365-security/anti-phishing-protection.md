@@ -19,12 +19,12 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection （EOP）和 Office 365 Advanced 威脅防護（Office 365 ATP）中的反網路釣魚保護功能。
-ms.openlocfilehash: 2b5d5786e363b0d74e29b1f0c27ab110d2e60b0d
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+ms.openlocfilehash: 657224d3a18d7cae1581eaf6c603d1c04c3b41f3
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262280"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588309"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚保護
 
@@ -62,6 +62,6 @@ Office 365 ATP 包含更多和更高級的反網路釣魚功能：
 
 ## <a name="other-anti-phishing-resources"></a>其他反網路釣魚資源
 
-- 針對使用者：[保護您自己免受網路釣魚騙術和其他形式的線上欺詐](https://support.office.com/article/protect-yourself-from-phishing-schemes-and-other-forms-of-online-fraud-be0de46a-29cd-4c59-aaaf-136cf177d593)。
+- 針對使用者：[保護您自己免受網路釣魚騙術和其他形式的線上欺詐](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593)。
 
 - [Microsoft 365 如何驗證寄件者位址，以防止網路釣魚](how-office-365-validates-the-from-address.md)。

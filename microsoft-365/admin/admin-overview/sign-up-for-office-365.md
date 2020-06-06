@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: '深入瞭解 Office 365 的註冊程式之前，您需要瞭解的知識。 '
-ms.openlocfilehash: 2778dda03c517e176fbab044243306fb51355396
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386754"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579166"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何註冊系統管理員協助
 
@@ -40,21 +40,11 @@ ms.locfileid: "44386754"
 
 註冊 Microsoft 365 for business，讓您的小組開始使用最新版的 Word、Excel、PowerPoint 和您公司中的其他 Office 程式。
   
-觀賞三部 Microsoft 365 的商務方案，或向下流覽以取得詳細資訊。
-<br><br>
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 註冊 Microsoft 365 for business，讓您的小組開始使用最新版的 Word、Excel、PowerPoint 和您公司中的其他 Office 程式。
-  
-觀賞最適合您公司的三種方案的快速綜述。 或向下捲動以取得更多資訊。
-<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
   
 ::: moniker-end
 

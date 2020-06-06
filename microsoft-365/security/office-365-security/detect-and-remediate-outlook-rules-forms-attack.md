@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 瞭解如何在 Office 365 中識別及修復 Outlook 規則和自訂表單注入攻擊
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b892a72c2016222d34df8c58fcda20d2d2b9ba74
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bc71a358170cdda86d16096c56b9d9660bf6a5be
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351972"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588261"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>偵測並修復 Outlook 規則和自訂表單注入攻擊
 
@@ -165,7 +165,7 @@ ms.locfileid: "44351972"
 
 4. 安裝最新版本的 Outlook。 請記住，目前的 Outlook 版本會封鎖這兩種攻擊類型的預設值。
 
-5. 移除信箱的所有離線副本之後，請重設使用者的密碼（使用高品質的密碼），並依照[設定多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)中的步驟進行，如果尚未啟用 MFA。 這可確保使用者的認證不會透過其他方式公開（例如網路釣魚或密碼重複使用）。
+5. 移除信箱的所有離線副本之後，請重設使用者的密碼（使用高品質的密碼），並依照[設定多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)中的步驟進行，如果尚未啟用 MFA。 這可確保使用者的認證不會透過其他方式公開（例如網路釣魚或密碼重複使用）。
 
 ### <a name="using-powershell"></a>使用 PowerShell
 
@@ -193,7 +193,7 @@ ms.locfileid: "44351972"
 
 只有在竊取或破壞使用者的帳戶之後，攻擊者才會使用這些規則和表單攻擊。 因此，避免對您的組織使用這些入侵的第一步，是要積極保護您的使用者帳戶。 一些最常見的帳戶破壞方式是透過網路釣魚或[密碼 spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)攻擊。
 
-保護使用者帳戶的最佳方法（特別是管理員帳戶）是為[使用者設定多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)。 您也應該：
+保護使用者帳戶的最佳方法（特別是管理員帳戶）是為[使用者設定多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。 您也應該：
 
 - 監視如何[存取及使用](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports)您的使用者帳戶。 您可能不會防止初始遭到破壞，但是您會儘早偵測，以縮短破壞的持續時間和破壞影響。 您可以使用這些[Office 365 雲端 App 安全性原則](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)，監控不尋常活動的帳戶和警示：
 

@@ -2,8 +2,8 @@
 title: Microsoft 365 系統管理中心的新功能為何？
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: anfowler
+author: adefowler
 manager: shohara
 audience: Admin
 ms.topic: overview
@@ -21,12 +21,12 @@ description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 460eba757d9fa35e6031ca3382630a6bcd38c392
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401139"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44587577"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -43,18 +43,62 @@ ms.locfileid: "44401139"
 > **「傳統」系統管理員中心于三月份開始退休**<br><br>
 當您登入 Microsoft 365 系統管理中心時，您將在每次進入新的系統管理中心。 在三月份，我們已開始停用切換回傳統系統管理中心的功能。 現在，您仍然可以切換回來，但在新的系統管理中心有同位（而且超過它），我們會關閉所有組織的參數。 <br><br> *上次更新：2020年5月11日*
 
-此外，如果您對其他 Microsoft 雲端服務的新功能感興趣：
+如果您想要瞭解其他 Microsoft 雲端服務的新功能：
 
-- [Exchange Online 的新功能](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [Microsoft Intune 的新功能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Microsoft 365 規範中心的新功能](https://docs.microsoft.com/microsoft-365/compliance/whats-new)
-- [SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [Azure Active Directory 的新功能](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
 - [Exchange 系統管理中心的新功能](https://docs.microsoft.com/Exchange/whats-new)
+- [Microsoft Intune 的新功能](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
+- [Microsoft 365 規範中心的新功能](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [Microsoft 威脅防護的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="may-2020"></a>2020 年 5 月
+
+### <a name="new-update-channel-for-office"></a>適用于 Office 的新更新通道
+
+在5月12日，我們宣佈推出新更新通道 for Office：月度 Enterprise 通道。 此更新通道會在每月的第二個星期二，于每月提供一次新 Office 功能的使用者。
+
+如果您允許使用者從入口網站自行安裝 Office，您可以為其選取每月的 Enterprise 通道。 若要這麼做，請登入 Microsoft 365 系統管理中心，然後移至 [**顯示所有**  > **設定**的所有設定] [  >  **組織**  >  **Services**  >  **Office 軟體下載設定**]。 如果您每**月選取一次（每月的 Enterprise 通道）**，則會將 Office 的任何新的自我安裝設定為使用每月的 enterprise 通道。
+
+與每月的 Enterprise 通道版本一起，我們也會修訂現有更新通道的名稱。 例如，每月通道都會重新命名為目前通道。 新的名稱會在2020年6月9日生效。
+
+如需詳細資訊，請參閱[Microsoft 365 應用程式的更新通道變更](https://docs.microsoft.com/DeployOffice/update-channels-changes)。
+
+### <a name="new-admin-roles"></a>新系統管理員角色
+
+我們已在 Microsoft 365 系統管理中心中新增一些新的 Azure Active Directory 系統管理員角色。
+
+- 混合式身分識別系統管理員角色可讓使用者管理雲端布建和驗證服務的許可權。
+- 網路管理員角色可讓使用者管理網路位置，並查看 Microsoft 365 軟體的網路洞察力，以作為服務應用程式。
+- 印表機系統管理員角色會授與管理印表機及印表機連線所有層面的許可權。
+- 印表機技術人員是印表機系統管理員角色的子集，使用者可以在其中註冊及取消註冊印表機，以及更新印表機狀態。
+若要瞭解更多有關這些角色的資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+
+### <a name="export-groups-list"></a>匯出群組清單
+
+我們從許多系統管理員那裡聽說過，他們需要分享群組的相關資訊，以及他們對不具備系統管理員中心存取權的使用方式。 您現在可以將 [群組] 清單匯出至 CSV 檔案，以進行審計，這表示您可以扔掉舊的 PowerShell 腳本。 若要嘗試，請移至 [**群組**]  >  **群組**，然後選取 [從命令列**匯出群組**]。
+
+### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 解決方案和架構中心
+
+只是在這個月發行新的網站， [https://docs.microsoft.com](https://docs.microsoft.com) 稱為[Microsoft 365 解決方案和架構中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)，其結合了您需要的技術指導方針，以瞭解、規劃及實施整合的 Microsoft 365 解決方案，以進行安全且相容的共同作業。 在此中心，您會發現：
+
+- 基礎解決方案指導方針
+- 工作負載解決方案與案例指南
+- 方案和架構圖例（海報!!!）
+- 行業特定指引
+- 企業架構設計主體
+
+### <a name="docs-training-and-videos"></a>檔、訓練和影片
+
+- **Microsoft 365 vcd 系列的新功能**：本月，我們涵蓋小組系統管理員和安全性與合規性中心的新支援體驗，與郵件中心整合 Planner，以及 Microsoft 小組中新的3x3 影片版面配置。 [Microsoft 365 的新功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- [Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/)的「協助中心」頁面已更新，可協助您更快速地找到您需要的專案。 而且，如果您現在查看此頁面，我們已新增了一張卡片，通知您重要的更新和變更。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
 ### <a name="intune-roles-management"></a>Intune 角色管理
+
+[2020 年 4 月](#april-2020)
 
 好吧，我們這麼！ 我們已將第二個步驟轉向統一角色的體驗，您現在可以在 Microsoft 365 系統管理中心管理 Intune 角色。 您也可以利用諸如搜尋角色及查看角色許可權等功能。 這表示您不需要兩個不同的工具來管理 Microsoft 365 和 Intune 的角色。 當您登入 Microsoft 365 系統管理中心時，您會看到 [角色] 頁面上有兩個樞軸，一個用於 Azure AD，一個用於 Intune。
 
@@ -103,7 +147,7 @@ ms.locfileid: "44401139"
 - 您現在可以編輯 Office 365 群組的電子郵件地址（也稱為「Outlook」中的群組，不久也稱為「Microsoft 365 群組」）。
 - 我們已聽說您的意見反應，我們新增了更清晰的錯誤訊息，讓您無法將群組轉換為 Microsoft 團隊。
 
-### <a name="docs-videos-and-training"></a>檔、影片及訓練
+### <a name="docs-videos-and-training-april"></a>檔、影片及訓練（四月）
 
 **Microsoft 365 vcd 系列的新功能**：本月，我們涵蓋秘訣和資源，協助小型企業轉變為遠端工作，包括如何推廣 Microsoft 團隊、遠端工作訓練資源，以與用戶端和合作夥伴保持連線，以及新的 Microsoft 365 商務語音方案。 [Microsoft 365 的新功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
@@ -118,7 +162,7 @@ ms.locfileid: "44401139"
 
 #### <a name="for-admins-and-business-owners"></a>針對系統管理員和企業擁有者
 
-- [利用遠端工作為您的小型企業提供強大功能](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6) 
+- [利用遠端工作為您的小型企業提供強大功能](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [執行遠端小型企業](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [註冊 Microsoft 商業基本版](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [設定兩個要素登入](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
@@ -143,8 +187,6 @@ ms.locfileid: "44401139"
 
 :::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="圖表將系統管理中心設定對應至行動應用程式。":::
 
-:::image-end:::
-
 ### <a name="improvements-to-the-add-a-group-wizard"></a>「新增群組」嚮導的增強功能
 
 當系統管理員建立新的群組，並將其指派給一個小組時，他們就可以指派沒有包含小組之授權的擁有者。 而且這會產生一些麻煩。 我們已更新嚮導流程，以驗證擁有者是否擁有小組授權，以及是否未停用將群組轉換為小組的選項。
@@ -162,7 +204,7 @@ ms.locfileid: "44401139"
 |Office 365 商務基本版     |   Microsoft 365 商務基本版      |
 |Office 365 商務進階版     |    Microsoft 365 商務標準版     |
 |Microsoft 365 商務版     |    Microsoft 365 商務進階版     |
-|Office 365 商務版     |    Microsoft 365 Apps 商務版       | 
+|Office 365 商務版     |    Microsoft 365 Apps 商務版       |
 |Office 365 專業增強版    |   適用于企業的 Microsoft 365 應用程式      |
 
 ### <a name="videos-training-and-docs"></a>影片、訓練及檔
@@ -192,7 +234,7 @@ ms.locfileid: "44401139"
 - **依群組名稱排序**：您可以選取 [**組名**] 欄，依字母順序排序群組清單。
 - **還原已刪除的 microsoft 365 群組**：您不需要移至 Exchange 系統管理中心，即可還原已刪除的 microsoft 365 群組。 移至**Microsoft 365 系統管理中心** \> **群組** \> **已刪除的群組** \> （從清單中選取群組） \> **還原群組**。 它會將群組還原回**群組**清單，並還原群組的電子郵件、交談、筆記本、檔案和行事曆。
 
-### <a name="videos-training-and-docs"></a>影片、訓練及檔
+### <a name="videos-training-and-docs-february"></a>影片、訓練及檔（二月份）
 
 - **Microsoft 365 vcd 系列的新**功能：本月，我們著重于 SharePoint 線上的自訂搜尋功能，這是 Office 「全新」的管理功能，可讓您透過應用程式的 [說明] 窗格中的使用者顯示或隱藏特定功能、Yammer 中的最新安全性和相容性更新等等。 以下是最新的劇集： [Microsoft 365 的新功能](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 

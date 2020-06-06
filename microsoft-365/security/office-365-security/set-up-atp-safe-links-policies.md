@@ -17,19 +17,19 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 設定安全連結原則來保護貴組織，以防範 Word、Excel、PowerPoint 和 Visio 檔案，以及電子郵件中的惡意連結。
-ms.openlocfilehash: 946b4bd9eee9b19b2b88eaca8f0ff80e173bb139
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 928f13ec8f04506540d02177acd82b2403a74683
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045233"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588085"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
 > [!IMPORTANT]
-> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是家用版使用者且正在尋找 Outlook 中安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是家用版使用者且正在尋找 Outlook 中安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-[ATP 安全連結](atp-safe-links.md)([Office 365 進階威脅防護](office-365-atp.md) (ATP) 的功能) 可協助貴組織防範網路釣魚和其他攻擊中使用的惡意連結。 如果您具有[安全性&amp;與合規性中心](permissions-in-the-security-and-compliance-center.md)的必要許可權，您可以設定 ATP 安全連結原則，以協助確保當使用者按一下網址（URLs）時，您的組織受到保護。 您可以將 ATP 安全連結原則設定為掃描電子郵件中的 URL 和 Office 文件中的 URL。
+[ATP 安全連結](atp-safe-links.md)([Office 365 進階威脅防護](office-365-atp.md) (ATP) 的功能) 可協助貴組織防範網路釣魚和其他攻擊中使用的惡意連結。 如果您具有[安全性與 &amp; 合規性中心](permissions-in-the-security-and-compliance-center.md)的必要許可權，您可以設定 ATP 安全連結原則，以協助確保當使用者按一下網址（URLs）時，您的組織受到保護。 您可以將 ATP 安全連結原則設定為掃描電子郵件中的 URL 和 Office 文件中的 URL。
 
 啟用 ATP 安全連結後，如果使用者按一下電子郵件中的連結，且該 URL 已被組織的自訂封鎖 URL 清單封鎖，或是該 URL 已確定為惡意的，就會開啟警告頁面。
   
@@ -53,11 +53,11 @@ ms.locfileid: "44045233"
 
     |角色  |指派位置/條件  |
     |---------|---------|
-    |全域管理員 |簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)以深入瞭解。）         |
+    |全域管理員 |簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。）         |
     |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
-    若要深入瞭解角色和許可權，請參閱[安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+    若要深入瞭解角色和許可權，請參閱[安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 - 確定 Office 用戶端已設定為使用[新式驗證](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (這會用於 Office 文件中的 ATP 安全連結保護)。
     
