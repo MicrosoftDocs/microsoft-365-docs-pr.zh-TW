@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用可用工具辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
-ms.openlocfilehash: f53d38c6e34e555542e0c655d7e7d24ca3c9c978
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf1ded6fb88cc26e96840dc2a8bfe20300205dc
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033827"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588213"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>回應遭入侵的電子郵件帳戶
 
@@ -87,7 +87,7 @@ ms.locfileid: "44033827"
 > [!WARNING]
 > 請勿透過電子郵件傳送新密碼給預期的使用者，因為攻擊者此時仍可能對信箱具有存取權。
 
-1. 遵循[重設 Microsoft 365 Apps 企業版密碼](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)中為其他人重設 Microsoft 365 Apps 企業版密碼的程序
+1. 遵循[重設 Microsoft 365 Apps 企業版密碼](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)中為其他人重設 Microsoft 365 Apps 企業版密碼的程序
 
 **附註**：
 
@@ -98,7 +98,7 @@ ms.locfileid: "44033827"
 - 如果您的內部部署身分識別與 Microsoft 365 同盟，則必須變更您的內部部署密碼，然後必須通知您的系統管理員相關入侵。
 
 > [!TIP]
-> 我們強烈建議您啟用多重要素驗證 (MFA)，以防止入侵，特別是具有系統管理權限的帳戶。  您可以在[這裡](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)深入了解 MFA。
+> 我們強烈建議您啟用多重要素驗證 (MFA)，以防止入侵，特別是具有系統管理權限的帳戶。  您可以在[這裡](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)深入了解 MFA。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>步驟 2 移除可疑的電子郵件轉寄地址
 
@@ -202,4 +202,4 @@ ms.locfileid: "44033827"
 
 - [美國證券交易委員會 -「網路釣魚」詐騙](https://www.sec.gov/investor/pubs/phishing.htm)
 
-- 若要直接向 Microsoft 和您的系統管理員檢舉垃圾郵件，[請使用檢舉訊息增益集](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+- 若要直接向 Microsoft 和您的系統管理員檢舉垃圾郵件，[請使用檢舉訊息增益集](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規性中心，您可以集中管理與安全性或合規性相關的所有工作權限。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74139dfef3e0adfccbf16451d3577a8a916a0f97
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 633473206ebe95c14e351607175405988a933540
+ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033899"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44588001"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
 
@@ -58,8 +58,8 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |**在此服務中...**|**合規性系統管理員可以...**|
 |:-----|:-----|
 |[**Microsoft 365 合規性中心**](https://compliance.microsoft.com/)|保護和管理組織在所有 Microsoft 365 服務中的資料。 <br/><br/> 管理合規性警示。|
-|[**合規性分數**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|追蹤、指派和確認組織的法規合規性活動。|
-|[**安全性與合規性中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理資料控管。 <br/><br/> 執行法律和資料調查。 <br/><br/> 管理資料主體要求。|
+|[**合規性分數**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|追蹤、指派和確認組織的法規合規性活動。|
+|[**安全性與合規性中心**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|管理資料控管。 <br/><br/> 執行法律和資料調查。 <br/><br/> 管理資料主體要求。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視所有 Intune 稽核資料。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|具有唯讀權限，並可管理警示。 <br/><br/> 可建立和修改檔案原則，並允許檔案控管動作。 <br/><br/> 可檢視 [資料管理] 下的所有內建報告。|
 
@@ -70,8 +70,8 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |**在此服務中...**|**合規性資料系統管理員可以...**|
 |:-----|:-----|
 |[**Microsoft 365 合規性中心**](https://compliance.microsoft.com/)|保護和管理組織在所有 Microsoft 365 服務中的資料。 <br/><br/> 管理合規性警示。 <br/><br/> 管理敏感度標籤|
-|[**合規性分數**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|追蹤、指派和確認組織的法規合規性活動。|
-|[**安全性與合規性中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理資料控管。 <br/><br/> 執行法律和資料調查。 <br/><br/> 管理資料主體要求。 <br/><br/> 管理敏感度標籤|
+|[**合規性分數**](https://docs.microsoft.com/microsoft-365/compliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|追蹤、指派和確認組織的法規合規性活動。|
+|[**安全性與合規性中心**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|管理資料控管。 <br/><br/> 執行法律和資料調查。 <br/><br/> 管理資料主體要求。 <br/><br/> 管理敏感度標籤|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control) (即將推出)|檢視所有 Intune 稽核資料。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|使用唯讀權限來檢視資訊。 <br/>管理警示。 <br/><br/> 建立和修改檔案原則，並允許檔案控管動作。 <br/><br/> 檢視 [資料管理] 下的所有內建報告。|
 
@@ -84,7 +84,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |[**Microsoft 365 安全性中心**](https://security.microsoft.com/)|監視所有 Microsoft 365 服務的安全性相關原則。 <br/><br/>  管理安全性威脅和警示。 <br/><br/> 檢視報告。 <br/><br/> 管理敏感度標籤。|
 |**身分識別保護中心**|執行安全性讀取者角色可執行的所有動作，並執行所有身分識別保護中心的作業，除了重設密碼之外。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 「無法」**** 管理 Azure AD 角色指派或設定。|
-|[**安全性與合規性中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|管理安全性原則。 <br/><br/> 檢視、調查及回應安全性威脅 <br/><br/> 檢視報告。 <br/><br/> 管理敏感度標籤。|
+|[**安全性與合規性中心**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|管理安全性原則。 <br/><br/> 檢視、調查及回應安全性威脅 <br/><br/> 檢視報告。 <br/><br/> 管理敏感度標籤。|
 |**Azure 進階威脅防護**|監視與回應可疑的安全性活動。|
 |**Windows Defender ATP 和 EDR**|指派角色。 <br/><br/> 管理電腦群組。 <br/><br/> 設定端點威脅偵測和自動補救。 <br/><br/> 檢視、調查及回應警示。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune****。|
@@ -101,7 +101,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |[**Microsoft 365 安全性中心**](https://security.microsoft.com/)|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 檢視、調查及回應安全性警示。|
 |**身分識別保護中心** (即將推出)|執行安全性讀取者角色可執行的所有動作。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|執行安全性讀取者角色可執行的所有動作。|
-|[**安全性與合規性中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 檢視、調查及回應安全性威脅|
+|[**安全性與合規性中心**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 檢視、調查及回應安全性威脅|
 |**Windows Defender ATP 和 EDR**|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 檢視、調查及回應警示。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune****。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|執行安全性讀取者角色可執行的所有動作，以及檢視核取消警示。|
@@ -116,7 +116,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |[**Microsoft 365 安全性中心**](https://security.microsoft.com/)|檢視所有 Microsoft 365 服務的安全性相關原則。 <br/><br/> 檢視安全性威脅和警示。 <br/><br/> 檢視報告。|
 |**身分識別保護中心**|讀取有關安全性功能的所有安全性報告和設定資訊：反垃圾郵件、加密、資料遺失防護 (DLP)、反惡意程式碼、進階威脅防護 (ATP)、反網路釣魚和郵件流程規則 (也稱為傳輸規則)。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|以唯讀方式存取 Azure AD PIM 中所顯示的一切資訊︰Azure AD 角色指派的原則和報告、安全性檢閱，以及在未來還可透過讀取來存取 Azure AD 角色指派以外案例的原則資料和報告。 <br/><br/> 「無法」**** 註冊 Azure AD PIM 或對它進行任何變更。 擔任此角色的人員可以在 PIM 的入口網站中或是透過 PowerShell，來啟用其他角色 (例如「全域管理員」或「特殊權限角色管理員」)，前提是該使用者必須有資格擔任該角色。|
-|[**安全性與合規性中心**](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|檢視安全性原則。 <br/><br/> 檢視及調查安全性威脅。 <br/><br/> 檢視報告。|
+|[**安全性與合規性中心**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|檢視安全性原則。 <br/><br/> 檢視及調查安全性威脅。 <br/><br/> 檢視報告。|
 |**Windows Defender ATP 和 EDR**|檢視和調查警示。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune****。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|使用唯讀權限來檢視資訊。 <br/><br/> 管理警示。|
@@ -149,7 +149,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 
 |**Microsoft 365 服務**|**角色資訊**|
 |:-----|:-----|
-|Office 365 與 Microsoft 365 商務方案中的系統管理員角色|[Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)|
+|Office 365 與 Microsoft 365 商務方案中的系統管理員角色|[Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)|
 |Azure Active Directory (Azure AD) 與 Azure AD Identity Protection|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Azure 進階威脅防護|[Azure ATP 角色群組](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure 資訊保護|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
@@ -158,7 +158,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |Intune|[Intune 角色型存取控制](https://docs.microsoft.com/intune/role-based-access-control)|
 |受管理的電腦|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Microsoft Cloud App Security|[角色型存取控制](https://docs.microsoft.com/cloud-app-security/manage-admins)|
-|安全性與合規性中心|[Microsoft 365 系統管理員角色](https://docs.microsoft.com/office365/SecurityCompliance/permissions-in-the-security-and-compliance-center)|
+|安全性與合規性中心|[Microsoft 365 系統管理員角色](permissions-in-the-security-and-compliance-center.md)|
 |Privileged Identity Management|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |安全分數|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |SharePoint Online|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <br/><br/> [關於 Office 365 中的 SharePoint 系統管理員角色](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)|
