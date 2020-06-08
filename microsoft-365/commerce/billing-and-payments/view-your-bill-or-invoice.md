@@ -25,14 +25,15 @@ ms.custom:
 - BEA160
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: 在 Microsoft 365 系統管理中心尋找您的發票或帳單。 您也可以儲存及列印帳單複本。
-ms.openlocfilehash: 7425c0b49ff65fa0d5c777e3c7fdb7af99488a9d
-ms.sourcegitcommit: cf7c410268175e2633e9f0d65dc859c5034658e5
+ms.openlocfilehash: d034e59e80af6396867282f3e7c23179c332c251
+ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232778"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44407941"
 ---
 # <a name="view-your-bill-or-invoice"></a>檢視帳單
 
@@ -89,6 +90,6 @@ ms.locfileid: "44232778"
 
 [使用發票、信用卡或銀行帳戶支付費用](pay-for-your-subscription.md)
   
-[新增、更新或移除信用卡或銀行帳戶](add-update-or-remove-credit-card-or-bank-account.md)
+[管理付款方式](manage-payment-methods.md)
 
 [Minecraft: Education Edition 付款選項](https://go.microsoft.com/fwlink/p/?linkid=838761)

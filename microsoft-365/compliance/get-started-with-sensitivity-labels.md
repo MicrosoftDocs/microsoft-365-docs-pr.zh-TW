@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: c696c7b8b19b5c19ff3fcaf30029001604f791bf
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 47122e4ec6f902e0c84bd223ff771dc5db6fdfa5
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327131"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560480"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -62,10 +62,7 @@ ms.locfileid: "44327131"
 
 除了使用角色以外，您可以建立新的角色群組，並將 [敏感度標籤系統管理員]**** 或 [組織組態]**** 角色新增至此群組。 唯讀角色請使用 [敏感度標籤讀取器]****。 如需相關指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
-只有建立及設定敏感度標籤及其標籤原則時，才需要這些權限。 您不需要在應用程式或服務中套用這些標籤。
-
-> [!NOTE]
-> **[敏感度標籤讀取器]** 是一種新的角色，最初僅支援 PowerShell 標記的指令程式。 目前正在向租使用戶推出系統管理標籤中心的支援。
+只有建立及設定敏感度標籤及其標籤原則時，才需要這些權限。 您不需要在應用程式或服務中套用這些標籤。 如果與敏感度標籤相關的特定設定需要其他權限，則這些權限會列在個別的文件指示中。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>敏感度標籤的常見案例
 
@@ -81,9 +78,8 @@ ms.locfileid: "44327131"
 |使用敏感度標籤來保護 Teams 和 SharePoint 中的內容 |[對 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)](sensitivity-labels-teams-groups-sites.md)|
 |探索、標記和保護儲存在內部部署資料存放區中的檔案 |[部署 Azure 資訊保護掃描器以自動分類和保護檔案](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |探索、標記和保護儲存在雲端的資料存放區中的檔案|[探索、分類、標記和保護儲存在雲端中的控管和敏感性資料](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|套用並檢視 Power BI 中的敏感度標籤，以及保護已下載的報告|[Power BI 中的資料保護 (預覽)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
+|在 Power BI 中套用和檢視靈敏度標籤，並在匯出資料時加以保護|[Power BI 中的資料保護](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
 |監視並了解組織中使用敏感度標籤的方法|[了解您的資料 - 資料分類概觀](data-classification-overview.md) <br /><br /> [利用標籤分析檢視標籤使用量](label-analytics.md)|
-
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度標籤的使用者文件
 

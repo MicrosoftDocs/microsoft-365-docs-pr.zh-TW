@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,16 +17,16 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 使用 Microsoft 端點管理員來管理受管理的裝置、電腦及其他端點。
-ms.openlocfilehash: 388ac2b7f9f4a31d33c1f4551e215b2b32c8f85f
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: c7149295c24e5339e87db55998ec48fe9f0e9a93
+ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160795"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44560490"
 ---
 # <a name="step-3-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步驟 3： 為您的裝置、電腦和其他端點部署端點管理
 
-若雇用遠端工作者，您必須支援日益增加的個人裝置。 端點管理是原則型的安全性方法，要求裝置必須符合特定準則，才能獲得存取資源的授權。 Microsoft 端點管理員提供新式的工作場所和新式管理功能，讓您的資料在雲端和內部部署中保持安全。 
+若雇用遠端工作者，您必須支援日益增加的個人裝置。 端點管理是原則型的安全性方法，要求裝置必須符合特定準則，才能獲得存取資源的授權。 [Microsoft 端點管理員] 提供現代化管理功能，保護您的雲端資料及內部檔案的安全。 
 
 端點管理員提供可管理行動裝置、電腦、虛擬機器、嵌入式裝置及伺服器的服務和工具，並結合您可能已經知道且正在使用的服務。
 
@@ -34,7 +34,7 @@ ms.locfileid: "44160795"
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
-當您不管理用來存取組織資料的裝置時，Intune 的設計在於協助您保護資料。 與 Azure AD 條件式存取結合的 Intune 應用程式防護原則，可讓您在行動裝置上精細控制資料。 Intune 還能讓您定義全面的原則，只允許適當的人員在正確的條件下存取您的公司資料，並在 Office、Outlook 和其他行動裝置應用程式中控制資料的使用方式，確保資料的安全無虞。
+當您不管理用來存取組織資料的裝置時，Intune 的設計在於協助您保護資料。 結合 Azure Active Directory （Azure AD）條件式存取的 Intune 應用程式保護原則，可讓您更細微地的管控行動裝置上的資料。 Intune 還能讓您定義全面的原則，只允許適當的人員在正確的條件下存取您的公司資料，並在 Office、Outlook 和其他行動裝置應用程式中控制資料的使用方式，確保資料的安全無虞。
 
 如需詳細資訊，請參閱 [Microsoft Intune 概觀](https://docs.microsoft.com/intune/fundamentals/what-is-intune)。
 
@@ -66,8 +66,10 @@ Windows Autopilot 是一種零觸控、自助式 Windows 部署平台。 其中�
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>適用於端點管理的系統管理技術資源
 
-- [註冊受管理裝置以取得安全性，利用非受管理裝置的應用程式設定，以及使用裝置和應用程式原則](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure) (部分機器翻譯)
-- [如何註冊不同類型的裝置，以進行行動裝置管理 (MDM) ](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
+- [第 3 部分影片，為遠端工作者適用的 Windows 10 裝置管理](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [第5部分影片，為遠端工作者適用的使用者桌面和瀏覽器管理](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
+- [為 Microsoft 365 部署移動性基礎結構](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [如何註冊不同的裝置類型以管理行動裝置](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [如何向使用者說明 Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-3"></a>步驟 3 的結果
