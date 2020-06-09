@@ -249,17 +249,19 @@
           href: archiving-third-party-data.md
         - name: 封存 Facebook 資料 (預覽)
           href: archive-facebook-data-with-sample-connector.md
-        - name: 封存 Twitter 資料 (預覽)
-          href: archive-twitter-data-with-sample-connector.md
-        - name: 封存 LinkedIn 資料
-          href: archive-linkedin-data.md
+        - name: 匯入人力資源資料（預覽）
+          href: import-hr-data.md
         - name: 封存 Instant Bloomberg 資料
           href: archive-instant-bloomberg-data.md
-        - name: 匯入人力資源資料 (預覽)
-          href: import-hr-data.md
-        - name: 與合作夥伴配合來封存第三方資料
+        - name: 封存 LinkedIn 資料
+          href: archive-linkedin-data.md
+        - name: 封存 Twitter 資料（預覽）
+          href: archive-twitter-data-with-sample-connector.md
+        - name: 與合作夥伴配合以封存第三方資料
           href: work-with-partner-to-archive-third-party-data.md
-    - name: 儲存資料
+        - name: 搜尋第三方資料
+          href: use-content-search-to-search-third-party-data-that-was-imported.md
+    - name: 儲存信箱資料
       items:
         - name: 啟用封存信箱
           href: enable-archive-mailboxes.md
@@ -388,8 +390,6 @@
               href: bulk-edit-content-searches.md
             - name: 準備識別碼清單搜尋的 CSV 檔案
               href: csv-file-for-an-id-list-content-search.md
-            - name: 搜尋協力廠商資料
-              href: use-content-search-to-search-third-party-data-that-was-imported.md
             - name: 檢查您的搜尋查詢是否有錯誤
               href: check-your-content-search-query-for-errors.md
             - name: 疑難排解常見的電子文件探索問題
@@ -885,8 +885,6 @@
               href: gdpr-arc-prof-services.md
             - name: Office 365
               href: gdpr-arc-office365.md
-        - name: 資訊保護
-          href: gdpr-information-protection.md
         - name: 資料主體要求
           items:
             - name: 資料主體要求
@@ -927,8 +925,12 @@
               href: gdpr-dpia-prof-services.md
             - name: Office 365
               href: gdpr-dpia-office365.md
+        - name: 資訊保護
+          href: gdpr-information-protection.md
         - name: Microsoft 的資料保護長
           href: gdpr-data-protection-officer.md
+        - name: 匯出系統所產生記錄資料的其他步驟
+          href: gdpr-system-generated-log-data.md
 - name: 混合式合規性功能
   items:
     - name: 使用 AD RMS 的 Exchange Online 郵件加密
