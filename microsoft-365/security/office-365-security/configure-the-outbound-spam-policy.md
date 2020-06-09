@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection （EOP）中查看、建立、修改和刪除輸出垃圾郵件原則。
-ms.openlocfilehash: e035fe26cea0fcd1f3051f7464722ae1c7a3b56f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 6a15e33033643f99fc8aeb51036ddac7beba7b71
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351996"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616575"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -77,7 +77,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [反垃圾郵件設定]**** 頁面，請使用 <https://protection.office.com/antispam>。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連線至獨立 EOP PowerShell，請參閱[connect To Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲指派權限，才能執行這些程序。 若要新增、修改和刪除輸出垃圾郵件原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要唯讀的輸出垃圾郵件原則的存取權，您必須是**Security Reader**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -120,7 +120,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
         您新增的收件者會出現在飛入的 [**收件者清單**] 區段中。 若要刪除收件者，請按一下 [ ![ 移除] 按鈕 ](../../media/scc-remove-icon.png) 。
 
-     e. 完成後，請按一下 **[儲存]**。
+     e. 完成後，按一下 [儲存]****。
 
      若要停用此設定，請清除核取方塊。
 
@@ -143,7 +143,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
         您新增的收件者會出現在飛入的 [**收件者清單**] 區段中。 若要刪除收件者，請按一下 [ ![ 移除] 按鈕 ](../../media/scc-remove-icon.png) 。
 
-     e. 完成後，請按一下 **[儲存]**。
+     e. 完成後，按一下 [儲存]****。
 
      若要停用此設定，請清除核取方塊。
 
@@ -178,7 +178,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 6. 必備展開 [套用**至**] 區段，識別套用原則的內部寄件者。
 
-    您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同狀況或例外狀況或邏輯的多個值（例如， _ \< sender1 \> _或_ \< sender2 \> _）。 不同的條件或例外情況使用和邏輯（例如_ \< ， \> _ _ \< group 1 \> 的成員_）。
+    您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同狀況或例外狀況或邏輯的多個值（例如 _\<sender1\>_ or _\<sender2\>_ ）。 使用和邏輯不同的條件或例外狀況（例如 _\<sender1\>_ 和 _\<member of group 1\>_ ）。
 
     最簡單的方法是按一下 [新增條件]**** 三次，查看所有可用的條件。 您可以按一下 ![移除按鈕](../../media/scc-remove-icon.png)移除您不想要設定的條件。
 
@@ -286,7 +286,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
   - 建立新原則為停用（_ _ `$false` 在**HostedOutboundSpamFilterRule** Cmdlet 上啟用）。
 
-  - 設定在**HostedOutboundSpamFilterRule 指令程式**建立時的原則優先順序（_優先權_ _ \< \> 編號_）。
+  - _Priority_ _\<Number\>_ 在**HostedOutboundSpamFilterRule** Cmdlet 上建立（優先順序）時設定原則的優先順序。
 
 - 在您將原則指派給垃圾郵件篩選規則之前，您在 PowerShell 中所建立的新輸出垃圾郵件篩選原則不會顯示在安全性 & 規範中心。
 

@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 DeviceNetworkEvents 表格
 description: 深入瞭解您可以從高級搜尋架構的 DeviceNetworkEvents 表查詢的網路線上活動
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、表格、欄、資料類型、devicenetworkevents、NetworkCommunicationEvents、網路connection、remote ip、local ip
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，table，column，data type，devicenetworkevents，NetworkCommunicationEvents，network connection，remote ip，local ip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d5e3327f4b4e066b3e4c14f646ad8db78ff3804a
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 3be6523372edcda520e05545c87385c0e1a42044
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929037"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617115"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "42929037"
 
 
 
-[ `DeviceNetworkEvents` ！附注][高級搜尋](advanced-hunting-overview.md)架構中的表格包含有關網路連線和相關事件的資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `DeviceNetworkEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含有關網路連線和相關事件的資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -44,13 +44,14 @@ ms.locfileid: "42929037"
 | `RemoteIP` | 字串 | 連線到的 IP 位址 |
 | `RemotePort` | int | 連線的遠端裝置上的 TCP 埠 |
 | `RemoteUrl` | string | 已連線到的 URL 或完整網域名稱 (FQDN) |
-| `LocalIP` | 字串 | 指派給通訊期間使用之本機電腦的 IP 位址 |
+| `LocalIP` | string | 指派給通訊期間使用之本機電腦的 IP 位址 |
 | `LocalPort` | int | 通訊期間使用的本機電腦上的 TCP 埠 |
 | `Protocol` | string | 通訊期間使用的通訊協定 |
 | `LocalIPType` | string | IP 位址的類型，例如 Public、Private、Reserved、環回、Teredo、FourToSixMapping 及廣播 |
 | `RemoteIPType` | string | IP 位址的類型，例如 Public、Private、Reserved、環回、Teredo、FourToSixMapping 及廣播 |
 | `InitiatingProcessSHA1` | string | 啟動事件之處理常式（映射檔）的 SHA-1 |
-| `InitiatingProcessMD5` | string | 啟動事件之處理常式（映射檔）的 MD5 雜湊 |
+| `InitiatingProcessSHA256` | string | 啟動事件之處理常式（映射檔）的 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
+| `InitiatingProcessMD5` | 字串 | 啟動事件之處理常式（映射檔）的 MD5 雜湊 |
 | `InitiatingProcessFileName` | string | 啟動事件的進程名稱 |
 | `InitiatingProcessId` | int | 啟動事件之處理常式的進程識別碼（PID） |
 | `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |

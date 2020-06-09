@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
 description: 系統管理員可了解如何設定 Exchange Online 中用來驗證 S/MIME 憑證的虛擬憑證集合。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bd453383a263fdb2c0c7e2ce0014ad205e5fdc2
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: c8833cb50150eefea6bb786f8694fad42b52a752
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352166"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617183"
 ---
 # <a name="set-up-virtual-certificate-collection-in-exchange-online-to-validate-smime"></a>設定 Exchange Online 中的虛擬憑證集合以驗證 S/MIME
 
@@ -30,7 +30,7 @@ ms.locfileid: "44352166"
 
 您可以使用 Windows PowerShell 中的 **Export-Certificate** 指令程式並將 _[類型]_ 值指定為 SST，從信任的機器匯出憑證，以建立此 SST 憑證存放區。 如需相關指示，請參閱 [Export-Certificate](https://docs.microsoft.com/powershell/module/pkiclient/export-certificate) (英文版)。
 
-一旦您擁有 SST 憑證存放區檔案之後，請在 Exchange Online PowerShell 中使用以下語法，將 SST 檔案內容儲存在 Exchange Online 虛擬憑證存放區中。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+一旦您擁有 SST 憑證存放區檔案之後，請在 Exchange Online PowerShell 中使用以下語法，將 SST 檔案內容儲存在 Exchange Online 虛擬憑證存放區中。 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ```PowerShell
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)

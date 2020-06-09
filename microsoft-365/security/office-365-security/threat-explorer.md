@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: 瞭解如何在安全性&amp;與合規性中心使用 Explorer 和即時偵測，以有效且有效地調查威脅並加以回應。
+description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d540b52a403e43be06fc731590d183d5edfa7f9
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036749"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613441"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -103,13 +103,13 @@ ms.locfileid: "44036749"
 
 此外，您現在可以將 URL 點選的報告匯出到 Microsoft Excel 中，以便檢視其 [網路郵件識別碼] 以及 [按一下結果]，從而更容易了解 URL 點擊流量的來源。 以下說明運作方式。 在 Office 365 的威脅管理快速啟動中開啟，按一下此鏈結：
 
-**Explorer** \> **View 釣魚詐騙** \> \> **按一下** **top URLs 或 URL 上方** \>按一下**按一下以開啟 URL 快顯視窗的任何記錄**
+**瀏覽器** \>**查看網路釣魚** \>**按一下** \>Top **URLs 或 URL 上擊** \>**按一下任一筆記錄開啟 URL 彈出**視窗
 
 當您按一下清單中的 URL 時，將會在飛出面版上看到新的 [匯出] 按鈕。 使用此按鈕將資料移至 Excel 試算表，以便更輕鬆地進行報告。
 
 您可以在即時偵測報告中取得相同的位置，如下所示：
 
-**瀏覽器** \> **即時**\>**查看網路釣魚** \> **URLs** \> **Top URLs 或按一下上方** \> **，按一下以開啟 URL 飛出** \>的任何記錄**流覽至 [按一下]** 索引標籤。
+**瀏覽器** \>**即時偵測** \>**查看網路釣魚** \>**URLs** \>**上 URLs 或上按一下** \>**按一下任一筆記錄開啟 URL 彈出** \> 視窗**流覽至 [點擊]** 索引標籤。
 
 > [!TIP]
 > 當您透過網路郵件識別碼在總管或關聯的協力廠商工具中進行搜尋時，網路郵件識別碼會將點擊返回對應到特定的郵件。 搜尋網路郵件識別碼時，系統會提供系統管理員與點擊結果相關聯的特定電子郵件。 匯出時，網路郵件識別碼的關聯識別可提供更快且更強大的分析。
@@ -222,7 +222,7 @@ ms.locfileid: "44036749"
   - 安全性系統管理員 (這可以在 Azure Active Directory 系統管理中心指派 ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
   - 安全性讀取者
 
-- 針對 Exchange Online，您必須在 Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或 PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) 受指派下列其中一個角色：
+- 針對 Exchange Online，您必須在 Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或 PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) 受指派下列其中一個角色：
 
   - 組織管理
   - 僅檢視組織管理
@@ -231,7 +231,7 @@ ms.locfileid: "44036749"
 
 若要深入了解角色和權限，請參閱下列資源：
 
-- [安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)
+- [安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>威脅瀏覽器與即時偵測的某些差異

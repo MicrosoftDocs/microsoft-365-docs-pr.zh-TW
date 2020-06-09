@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 系統管理員可以瞭解如何在 exchange Online Protection 中指派或移除 Exchange 系統管理中心（EAC）中的許可權。
-ms.openlocfilehash: ba2d053e1e75bd8867ebb9eb7f426cde92abd3e8
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3555d3bd7fa4c53802eb214747735223cccc21e5
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352332"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616511"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>在獨立版 EOP 中管理角色群組
 
@@ -29,7 +29,7 @@ ms.locfileid: "44352332"
 
 - 若要開啟 Exchange 系統管理中心（EAC），請參閱[獨立 EOP 中的 Exchange 系統管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要開啟獨立 EOP PowerShell，請參閱[Connect To Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要開啟獨立 EOP PowerShell，請參閱[Connect To Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲指派權限，才能執行這些程序。 具體說來，您需要角色管理角色，預設會指派給 OrganizationManagement （全域系統管理員）角色群組。 如需詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)和[使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
@@ -92,7 +92,7 @@ ms.locfileid: "44352332"
 
    - 選取您要移除的使用者，然後按一下 [**移除** ![ 移除圖示] ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
-3. 完成後，請按一下 **[儲存]**。
+3. 完成後，按一下 [儲存]****。
 
    > [!NOTE]
    > 使用者可能必須先登出再登入，才能在您於角色群組中新增或移除成員後，看到其系統管理權限的變更。
@@ -240,7 +240,7 @@ Remove-RoleGroup -Identity "Training Administrators"
 
 - 在 EAC 中，移至 [**許可權**] [系統 \> **管理員角色**]，然後確認角色群組已列出（或未列出）。 選取角色群組，並確認詳細資料窗格中的設定，或按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 以驗證設定。
 
-- 在 Exchange Online PowerShell 中，以 \< 角色群組的名稱取代角色群組名稱 \> ，並執行下列命令，以確認角色群組存在（或不存在），並確認設定：
+- 在 Exchange Online PowerShell 中， \<Role Group Name\> 以角色群組的名稱取代，並執行下列命令，以確認角色群組存在（或不存在），並確認設定：
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

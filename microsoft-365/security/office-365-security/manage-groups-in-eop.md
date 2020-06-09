@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Admins in 獨立 Exchange Online Protection （EOP）組織可以瞭解如何在 Exchange 系統管理中心（EAC）和獨立 Exchange Online Protection （EOP） PowerShell 中建立、修改和移除通訊群組和擁有郵件功能的安全性群組。
-ms.openlocfilehash: 4f1dbdb503f8baf02b7dd763dbf7fc6acdf5771a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352188"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616499"
 ---
 # <a name="manage-groups-in-eop"></a>管理 EOP 中的群組
 
@@ -38,7 +38,7 @@ ms.locfileid: "44352188"
 
 - 若要開啟 Exchange 系統管理中心，請參閱[exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要連線至獨立 EOP PowerShell，請參閱[connect To Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 當您在獨立 EOP PowerShell 中管理群組時，可能會遇到節流。 本主題中的 PowerShell 程式使用批次處理方法，可導致幾分鐘的傳播延遲，然後才會顯示命令的結果。
 
@@ -93,7 +93,7 @@ ms.locfileid: "44352188"
 
 3. 在開啟的 [通訊群組內容] 頁面上，按一下下列其中一個索引標籤，以查看或變更屬性。
 
-   完成後，請按一下 **[儲存]**。
+   完成後，按一下 [儲存]****。
 
 #### <a name="general"></a>一般
 
@@ -141,7 +141,7 @@ ms.locfileid: "44352188"
 Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
 ```
 
-若要傳回群組成員的清單，請 \< \> 使用群組的名稱、別名或電子郵件地址取代 GroupIdentity，並執行下列命令：
+若要傳回群組成員的清單，請 \<GroupIdentity\> 使用群組的名稱、別名或電子郵件地址加以取代，並執行下列命令：
 
 ```powershell
 Get-DistributionGroupMember -Identity <GroupIdentity>
@@ -231,13 +231,13 @@ Remove-EOPDistributionGroup -Identity "IT Administrators"
   Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited
   ```
 
-- \< \> 以群組的名稱、別名或電子郵件地址取代 GroupIdentity，並執行下列命令來確認設定：
+- 更換 \<GroupIdentity\> 為群組的名稱、別名或電子郵件地址，並執行下列命令來確認設定：
 
   ```PowerShell
   Get-Recipient -Identity <GroupIdentity> | Format-List
   ```
 
-- 若要查看群組成員，請將 \< GroupIdentity 取代 \> 為群組的名稱、別名或電子郵件地址，並執行下列命令：
+- 若要查看群組成員，請 \<GroupIdentity\> 使用群組的名稱、別名或電子郵件地址加以取代，並執行下列命令：
 
   ```PowerShell
   Get-DistributionGroupMember -Identity "<GroupIdentity>"

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 瞭解如何在 Office 365 中識別及修復 Outlook 規則和自訂表單注入攻擊
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bc71a358170cdda86d16096c56b9d9660bf6a5be
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 5d8c4495715ef29e1d9b70b993d1216e80461cf7
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588261"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44613381"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>偵測並修復 Outlook 規則和自訂表單注入攻擊
 
@@ -173,7 +173,7 @@ ms.locfileid: "44588261"
 
 #### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Exchange 伺服器上的信箱步驟
 
-1. 使用遠端 PowerShell 連接至 Exchange 伺服器。 依照[[使用遠端 PowerShell 連線到 Exchange 伺服器]](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell)中的步驟進行。
+1. 使用遠端 PowerShell 連接至 Exchange 伺服器。 依照[[使用遠端 PowerShell 連線到 Exchange 伺服器]](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell)中的步驟進行。
 
 2. 如果您想要完全移除單一規則、多個規則或所有來自信箱的規則，請使用[Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) Cmdlet。
 
@@ -181,7 +181,7 @@ ms.locfileid: "44588261"
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Online 中的信箱步驟
 
-1. 依照[[使用 PowerShell 連線到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中的步驟進行。
+1. 依照[[使用 PowerShell 連線到 Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中的步驟進行。
 
 2. 如果您想要完全移除單一規則、多個規則或所有來自信箱的規則，請使用 [[移除收件匣規則](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)] Cmdlet。
 

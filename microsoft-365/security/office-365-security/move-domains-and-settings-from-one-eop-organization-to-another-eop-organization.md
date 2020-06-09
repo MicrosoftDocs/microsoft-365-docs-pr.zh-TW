@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何將網域和設定從一個 Microsoft Exchange Online Protection （EOP）組織（租使用者）移至另一個。
-ms.openlocfilehash: 1144f193fd56587e8ea38fdd659af4bbaa05311c
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 32a1721a70df88e7e0d558322988e3e64b3f3397
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588189"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617447"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>將網域及設定從某個 EOP 組織移到另一個
 
@@ -59,7 +59,7 @@ ms.locfileid: "44588189"
   > [!NOTE]
   > 目前只有 EOP 進階訂閱計劃支援匯出和匯入郵件流程規則集合的指令程式。
 
-收集所有設定最簡單的方法是使用 PowerShell。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+收集所有設定最簡單的方法是使用 PowerShell。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 接下來，您可以收集您的所有設定，並將它們匯出到要匯入目標租用戶的 .xml 檔案。在一般情況下，您可以將每項設定的 **Get** 指令程式輸出輸送到 **Export-Clixml** 指令程式，以將設定儲存在 .xml 檔案中，如下列程式碼範例所示。
 

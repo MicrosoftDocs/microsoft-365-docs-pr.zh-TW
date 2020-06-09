@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 exchange Online Protection （EOP）組織中建立、修改和刪除可用的反網路釣魚原則，但不含 Exchange Online 信箱。
-ms.openlocfilehash: b5ec72365c9b7446f4b6a4c32d96a89ca57efbe4
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd7686c55e05d4197d43799008596db82375222e
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352054"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616695"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中設定反網路釣魚原則
 
@@ -69,7 +69,7 @@ ms.locfileid: "44352054"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [**反網路釣魚**] 頁面，請使用 <https://protection.office.com/antiphishing> 。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
   您無法管理獨立 EOP PowerShell 中的反網路釣魚原則。
 
@@ -103,7 +103,7 @@ ms.locfileid: "44352054"
 
 4. 在出現的 [套用**至**] 頁面上，識別套用原則的內部收件者。
 
-   您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<群組 1 的成員\>_)。
+   您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同狀況或例外狀況或邏輯的多個值（例如 _\<recipient1\>_ or _\<recipient2\>_ ）。 使用和邏輯不同的條件或例外狀況（例如 _\<recipient1\>_ 和 _\<member of group 1\>_ ）。
 
    按一下 [**新增條件**]。 在出現的下拉式清單中，選取 [**適用于**下列條件的條件：
 
@@ -141,11 +141,11 @@ ms.locfileid: "44352054"
 
 2. 選取您要修改的自訂反網路釣魚原則。 如果已選取它，請取消選取它，然後再次選取。
 
-3. 隨即會顯示 [**編輯您的原則 \< \> 名稱**] 快顯視窗。 按一下任何區段中的 [**編輯**]，即可存取該區段中的設定。
+3. 隨即會顯示 [**編輯您的原則 \<name\> ** ] 快顯視窗。 按一下任何區段中的 [**編輯**]，即可存取該區段中的設定。
 
    - 下列步驟會以區段出現的順序顯示，但不是連續的（您可以選取及修改所有順序的區段）。
 
-   - 在區段中按一下 [**編輯**] 之後，可用設定會以嚮導格式呈現，但是您可以在頁面中以任何順序跳離，也可以按一下任何頁面上的 [**儲存**] （或 [**取消**] 或 [**關閉** ![ ] 關閉圖示可 ](../../media/scc-remove-icon.png) 返回 [**編輯您的原則 \< 名稱 \> ** ] 頁面（您不需要流覽該嚮導的最後一頁以儲存或離開）。
+   - 按一下區段中的 [**編輯**] 之後，可用的設定會以一種方式呈現出來，但是您可以在頁面中以任何順序跳離，也可以按一下任何頁面上的 [**儲存**] （或 [**取消**] 或 [**關閉** ![ ] 關閉圖示，以 ](../../media/scc-remove-icon.png) 回到 [**編輯您的原則 \<name\> ** ] 頁面）。
 
 4. **原則設定**：按一下 [**編輯**]，修改當您在上一節中[建立原則](#use-the-security--compliance-center-to-create-anti-phishing-policies)時可用的相同設定：
 
@@ -184,7 +184,7 @@ ms.locfileid: "44352054"
 
    完成後，按一下 [**儲存**] 任何頁面。
 
-6. 回到 [**編輯您的原則 \< 名稱 \> ** ] 頁面上，複查您的設定，然後按一下 [**關閉**]。
+6. 回到 [**編輯您的原則 \<Name\> ** ] 頁面上，複查您的設定，然後按一下 [**關閉**]。
 
 ### <a name="use-the-security--compliance-center-to-modify-the-default-anti-phishing-policy"></a>使用安全性 & 合規性中心來修改預設的反網路釣魚原則
 
@@ -234,7 +234,7 @@ ms.locfileid: "44352054"
 
 2. 選取您要修改的原則。 如果已選取它，請取消選取它，然後再次選取。
 
-3. 隨即會顯示 [**編輯您的原則 \< \> 名稱**] 快顯視窗。
+3. 隨即會顯示 [**編輯您的原則 \<name\> ** ] 快顯視窗。
 
    - **優先順序**值為**0**的自訂反網路釣魚原則只有「**降低優先順序**」按鈕可用。
 
@@ -256,7 +256,7 @@ ms.locfileid: "44352054"
 
    - 按一下 [**預設原則**] 以查看預設的反網路釣魚原則。
 
-3. 隨即會顯示 [**編輯您的原則 \< \> 名稱**] 快顯視窗，您可以在其中查看設定和值。
+3. 此時會出現 [**編輯您的原則 \<name\> ** ] 快顯視窗，您可以在其中查看設定和值。
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies"></a>使用安全性 & 規範中心移除反網路釣魚原則
 
@@ -264,7 +264,7 @@ ms.locfileid: "44352054"
 
 2. 選取您要移除的原則。 如果已選取它，請取消選取它，然後再次選取。
 
-3. 在出現的 [**編輯您的原則 \< \> 名稱**] 浮出視窗中，按一下 [**刪除原則**]，然後在顯示的警告對話方塊中按一下 [**是]** 。
+3. 在出現的 [**編輯 \<name\> 您的原則**] 浮出視窗中，按一下 [**刪除原則**]，然後在出現的警告對話方塊中按一下 [**是]** 。
 
 您無法移除預設原則。
 
@@ -288,7 +288,7 @@ ms.locfileid: "44352054"
 
   - 建立新原則為停用（_ _ `$false` 在**AntiPhishRule** Cmdlet 上啟用）。
 
-  - 設定在**AntiPhishRule 指令程式**建立時的原則優先順序（_優先權_ _ \< \> 編號_）。
+  - _Priority_ _\<Number\>_ 在**AntiPhishRule** Cmdlet 上建立（優先順序）時設定原則的優先順序。
 
 - 在您指派原則至反網路釣魚規則之前，您在 PowerShell 中所建立的新反網路釣魚原則不會顯示在安全性 & 規範中心。
 
@@ -507,7 +507,7 @@ Remove-AntiPhishRule -Identity "Marketing Department"
   - 從清單中選取原則，然後在飛入的視窗中查看詳細資料。
   - 按一下 [**預設原則**]，然後在飛入的視窗中查看詳細資料。
 
-- 在 Exchange Online PowerShell 中， \< \> 以原則或規則名稱取代名稱，並執行下列命令並確認設定：
+- 在 Exchange Online PowerShell 中， \<Name\> 以原則或規則的名稱取代，並執行下列命令並確認設定：
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

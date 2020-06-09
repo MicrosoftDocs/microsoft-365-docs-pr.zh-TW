@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 瞭解如何在 Exchange Online Protection （EOP）中管理郵件使用者，包括使用目錄同步作業、EAC 和 PowerShell 來管理使用者。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e8a4585a16b579c28de719181eed65b65ec6f4f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: d82170499bcfa6465164ca2644eea43c2558ad18
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352429"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616831"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>在獨立版 EOP 中管理郵件使用者
 
@@ -35,7 +35,7 @@ ms.locfileid: "44352429"
 
 - 若要開啟 Exchange 系統管理中心（EAC），請參閱[獨立 EOP 中的 Exchange 系統管理中心](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 若要連線至獨立 EOP PowerShell，請參閱[connect To Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 當您在 EOP PowerShell 中建立郵件使用者時，可能會遇到節流。 此外，EOP PowerShell Cmdlet 使用的批次處理方法，可導致幾分鐘的傳播延遲，使命令的結果看得見。
 
@@ -80,7 +80,7 @@ ms.locfileid: "44352429"
 
 3. 在開啟的 [郵件使用者屬性] 頁面上，按一下下列其中一個索引標籤以查看或變更屬性。
 
-   完成後，請按一下 **[儲存]**。
+   完成後，按一下 [儲存]****。
 
 #### <a name="general"></a>一般
 
@@ -139,7 +139,7 @@ ms.locfileid: "44352429"
 Get-Recipient -RecipientType MailUser -ResultSize unlimited
 ```
 
-若要查看特定郵件使用者的詳細資訊，請將 \< MailUserIdentity 取代 \> 為郵件使用者的名稱、別名或帳戶名稱，並執行下列命令：
+若要查看特定郵件使用者的詳細資訊，請 \<MailUserIdentity\> 以郵件使用者的名稱、別名或帳戶名稱取代，並執行下列命令：
 
 ```powershell
 Get-Recipient -Identity <MailUserIdentity> | Format-List
@@ -209,7 +209,7 @@ $Recip | foreach {Set-EOPUser -Identity $_.Alias -Company Contoso}
 
 ### <a name="use-standalone-eop-powershell-to-remove-mail-users"></a>使用獨立 EOP PowerShell 移除郵件使用者
 
-若要在獨立 EOP PowerShell 中移除郵件使用者，請以 \< \> 郵件使用者的名稱、別名或帳戶名稱取代 MailUserIdentity，並執行下列命令：
+若要在獨立 EOP PowerShell 中移除郵件使用者，請以 \<MailUserIdentity\> 郵件使用者的名稱、別名或帳戶名稱取代，並執行下列命令：
 
 ```PowerShell
 Remove-EOPMailUser -Identity <MailUserIdentity\>
@@ -235,7 +235,7 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
   Get-Recipient -RecipientType MailUser -ResultSize unlimited
   ```
 
-- \< \> 以郵件使用者的名稱、別名或帳戶名稱取代 MailUserIdentity，並執行下列命令來確認設定：
+- \<MailUserIdentity\>以郵件使用者的名稱、別名或帳戶名稱取代，並執行下列命令來確認設定：
 
   ```powershell
   Get-Recipient -Identity <MailUserIdentity> | Format-List

@@ -1,7 +1,7 @@
 ---
-title: DeviceImageLoadEvents 資料表中的進階的狩獵結構描述
-description: 了解 loading 事件的進階的狩獵結構描述的 DeviceImageLoadEvents 資料表中的 DLL
-keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 imageloadevents，DeviceImageLoadEvents、 載入 DLL文件庫，檔案影像
+title: Advanced 搜尋架構中的 DeviceImageLoadEvents 表格
+description: 瞭解在高級搜尋架構的 DeviceImageLoadEvents 資料表中載入 DLL 的事件
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，資料表，欄，資料類型，描述，imageloadevents，DeviceImageLoadEvents，DLL 載入，文件庫，檔案影像
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e3f51cfbe19a7b487f7382f0d2534b4a5efaab95
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 98aac3d231e2c8630cb4721ee8012054ab90feef
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235052"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617137"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
@@ -31,7 +31,7 @@ ms.locfileid: "42235052"
 
 
 
-`DeviceImageLoadEvents` [進階的狩獵](advanced-hunting-overview.md)結構描述中的表格包含 DLL loading 事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `DeviceImageLoadEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含 DLL 載入事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -42,26 +42,28 @@ ms.locfileid: "42235052"
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
 | `ActionType` | string | 觸發事件的活動類型 |
 | `FileName` | string | 記錄動作已套用的檔案名稱 |
-| `FolderPath` | string | 包含已錄製的巨集指令所套用之檔案的資料夾 |
-| `SHA1` | 字串 | 記錄動作已套用的檔案 SHA-1 |
-| `MD5` | 字串 | 錄製巨集指令所套用之檔案的 MD5 雜湊 |
-| `InitiatingProcessAccountDomain` | string | 執行負責事件程序的帳戶網域 |
-| `InitiatingProcessAccountName` | string | 執行負責事件程序的帳戶使用者名稱 |
-| `InitiatingProcessAccountSid` | string | 安全性識別碼 (SID) 執行負責事件程序的帳戶 |
-| `InitiatingProcessIntegrityLevel` | string | 初始化事件程序的完整性層級。 Windows 會指派完整性層級根據若干特質程序，例如如果他們已啟動從網際網路下載。 這些完整性層級影響資源的權限 |
-| `InitiatingProcessTokenElevation` | string | 指出使用者存取控制 (UAC) 提高權限套用至初始化事件程序存在的 token 型別 |
-| `InitiatingProcessSHA1` | string | SHA-1 起始之事件程序 （影像檔案） |
-| `InitiatingProcessMD5` | string | 初始化事件程序 （影像檔案） 的 MD5 雜湊 |
-| `InitiatingProcessFileName` | string | 初始化事件的處理序名稱 |
-| `InitiatingProcessId` | int | 處理程序識別碼 (PID) 的起始事件程序 |
-| `InitiatingProcessCommandLine` | string | 用來執行初始化事件程序的命令列 |
-| `InitiatingProcessCreationTime` | datetime | 初始化事件程序時已開始日期和時間 |
-| `InitiatingProcessFolderPath` | string | 包含起始事件程序 （影像檔案） 的資料夾 |
-| `InitiatingProcessParentId` | int | 處理程序識別碼 (PID) 的產生處理程序負責事件父處理序 |
-| `InitiatingProcessParentFileName` | string | 產生負責事件程序的父處理序名稱 |
-| `InitiatingProcessParentCreationTime` | datetime | 日期和時間的父代負責事件程序已啟動時 |
-| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，必須使用此資料行搭配 DeviceName 和時間戳記欄 |
-| `AppGuardContainerId` | string | 虛擬化的容器應用程式防護用於隔離瀏覽器活動識別碼 |
+| `FolderPath` | string | 包含錄製的動作所套用之檔案的資料夾 |
+| `SHA1` | string | 記錄動作已套用的檔案 SHA-1 |
+| `SHA256` | 字串 | 記錄動作已套用的檔案 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
+| `MD5` | 字串 | 錄製的動作所套用的檔案 MD5 雜湊 |
+| `InitiatingProcessAccountDomain` | string | 執行負責事件之處理常式之帳戶的網域 |
+| `InitiatingProcessAccountName` | string | 負責事件之處理常式的帳戶使用者名稱 |
+| `InitiatingProcessAccountSid` | string | 執行事件處理常式之帳戶的安全性識別碼（SID） |
+| `InitiatingProcessIntegrityLevel` | string | 啟動事件之處理常式的完整性層級。 Windows 會根據特定的特性，例如從網際網路下載啟動，將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
+| `InitiatingProcessTokenElevation` | string | 指出是否要將使用者存取控制（UAC）許可權提升套用至啟動事件之處理常式的 Token 類型 |
+| `InitiatingProcessSHA1` | string | 啟動事件之處理常式（映射檔）的 SHA-1 |
+| `InitiatingProcessSHA256` | string | 啟動事件之處理常式（映射檔）的 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
+| `InitiatingProcessMD5` | 字串 | 啟動事件之處理常式（映射檔）的 MD5 雜湊 |
+| `InitiatingProcessFileName` | string | 啟動事件的進程名稱 |
+| `InitiatingProcessId` | int | 啟動事件之處理常式的進程識別碼（PID） |
+| `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |
+| `InitiatingProcessCreationTime` | datetime | 啟動事件處理常式的日期和時間 |
+| `InitiatingProcessFolderPath` | string | 包含初始化事件之處理常式（映射檔）的資料夾 |
+| `InitiatingProcessParentId` | int | 產生負責事件之處理常式之父進程的進程識別碼（PID） |
+| `InitiatingProcessParentFileName` | string | 產生負責事件之處理常式的父進程名稱 |
+| `InitiatingProcessParentCreationTime` | datetime | 啟動事件之處理常式的父項時的日期和時間 |
+| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
+| `AppGuardContainerId` | string | Application Guard 用來隔離瀏覽器活動的虛擬容器識別碼 |
 
 ## <a name="related-topics"></a>相關主題
 - [主動威脅搜捕](advanced-hunting-overview.md)

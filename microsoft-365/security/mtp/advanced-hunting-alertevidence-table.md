@@ -1,7 +1,7 @@
 ---
 title: Advanced 搜尋架構中的 AlertEvidence 表格
 description: 深入瞭解在高級搜尋架構的 AlertEvidence 資料表中，與產生之警示相關聯的檔案、網路位址、使用者或裝置資訊
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，資料表，欄，資料類型，描述，AlertInfo，警示，實體，證據，檔案，IP 位址裝置、電腦、使用者、帳戶
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，資料表，欄，資料類型，描述，AlertInfo，alert，實體，證據，檔案，IP 位址，裝置，機器，使用者，帳戶
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1a58d1e5db2ea8689d4909e6e9c47b08a6e94d34
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: da6e84725aa391e4cb6056fadd327fdba2436214
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929098"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617083"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
 適用於：****
 - Microsoft 威脅防護
 
-[ `AlertEvidence` ！附注][高級搜尋](advanced-hunting-overview.md)架構中的表格包含各種實體（檔案、IP 位址、URLs、使用者或裝置）相關資訊，這些資訊與 Microsoft Defender ATP、Office 365 ATP、Microsoft Cloud APP Security 和 Azure atp 相關聯的警示相關聯。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `AlertEvidence` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含各種實體（檔案、IP 位址、URLs、使用者或裝置）相關資訊，這些資訊與 Microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App SECURITY 和 Azure atp 相關聯的警示相關聯。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -40,10 +40,10 @@ ms.locfileid: "42929098"
 | `EntityType` | string | 物件的類型，例如檔案、進程、裝置或使用者 |
 | `EvidenceRole` | string | 如何將實體包含在警示中，指出它會受到影響或僅僅是相關的 |
 | `SHA1` | string | 記錄動作已套用的檔案 SHA-1 |
-| `SHA256` | 字串 | 記錄動作已套用的檔案 SHA-256。 通常不會填入此欄位，可用時使用 SHA1] 欄位。 |
-| `RemoteIP` | string | 連線到的 IP 位址 |
+| `SHA256` | 字串 | 記錄動作已套用的檔案 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
+| `RemoteIP` | 字串 | 連線到的 IP 位址 |
 | `RemoteUrl` | string | 已連線到的 URL 或完整網域名稱 (FQDN) |
-| `AccountName` | 字串 | 帳戶的使用者名稱 |
+| `AccountName` | string | 帳戶的使用者名稱 |
 | `AccountDomain` | string | 帳戶的網域 |
 | `AccountSid` | string | 帳戶的安全性識別碼（SID） |
 | `AccountObjectId` | string | Azure AD 中帳戶的唯一識別碼 |

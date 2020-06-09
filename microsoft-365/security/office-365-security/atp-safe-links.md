@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，您將瞭解如何使用安全連結來保護您的組織免受網路釣魚和其他攻擊。
-ms.openlocfilehash: f71ff8d625c6c365f39fd581f3483c8a0384d817
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 5cd5e1331bb16b27cd036d20458355448ee32ae2
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587541"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616763"
 ---
 # <a name="atp-safe-links"></a>ATP 安全連結
 
@@ -69,7 +69,7 @@ Office 365 ATP 安全連結（Office 365 的部分「[高級威脅防護](office
 |---------|---------|
 |全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。）|
 |安全性系統管理員|Azure Active Directory 系統管理中心 (<https://aad.portal.azure.com>)|
-|Exchange Online 組織管理|Exchange 系統管理中心 (<https://outlook.office365.com/ecp>) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|Exchange Online 組織管理|Exchange 系統管理中心 (<https://outlook.office365.com/ecp>) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>如何確認是否已設定 ATP 安全連結保護
 

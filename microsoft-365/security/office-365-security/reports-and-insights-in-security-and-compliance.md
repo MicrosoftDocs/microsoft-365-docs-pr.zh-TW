@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 深入瞭解安全性與合規性中心中可用的智慧報告和洞察力，以及如何使用它們來查看及流覽資料，並快速採取動作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3646c38f56852d18fe7f2a79c82c059f6d0bca21
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: fc969dd9bbcbe049f4fcd065ef9caed51c52fac6
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588153"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617305"
 ---
 # <a name="smart-reports-and-insights-in-the-security-amp-compliance-center"></a>安全性與 &amp; 合規性中心的智慧報告和洞察力
 
@@ -54,11 +54,6 @@ ms.locfileid: "44588153"
 |**審核記錄** <br/> Microsoft 365 活動、使用者、檔案或資料夾等等相關資訊  <br/> |在安全性與 &amp; 合規性中心，移至**搜尋 &amp; 調查** \> **審計記錄搜尋** <br/> |[在安全性與 &amp; 合規性中心搜尋審核記錄檔](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**規範報告** <br/> FedRAMP 報告、控管、風險和合規性報告、ISO 資訊安全性管理報告及服務組織控制稽核與評定報告  <br/> |在安全性與 &amp; 合規性中心，移至**服務品質保證** \> **報告** <br/> |[&amp;在 Office 365 中規劃安全性合規性](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
-## <a name="next-steps"></a>後續步驟
-
-現在，您已掌握報表與深入瞭解，下一步是瞭解如何自訂、管理及下載報表。 請參閱下列文章：
-  
-
     
 ## <a name="related-topics"></a>相關主題
 
