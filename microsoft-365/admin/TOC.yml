@@ -42,6 +42,14 @@
           href: setup/customize-your-organization-theme.md
         - name: 深入了解 Office 365 Germany
           href: admin-overview/learn-about-office-365-germany.md
+        - name: 存取非內部部署使用者和資源
+          items:
+            - name: 將網域使用者同步處理至 Microsoft 365
+              href: ../business/manage-domain-users.md
+            - name: 啟用已加入網域的 Windows 10 裝置以進行管理
+              href: ../business/manage-windows-devices.md
+            - name: 存取已加入 Azure AD 裝置的資源
+              href: ../business/access-resources.md
     - name: Microsoft 365 系統管理中心概觀
       items:
         - name: 系統管理中心概觀
@@ -278,6 +286,10 @@
           href: ../business/reset-devices-to-factory-settings.md
         - name: 將保護功能對應到 Intune 設定
           href: ../business/map-protection-features-to-intune-settings.md
+        - name: 裝置狀態
+          href: ../business/device-states.md
+        - name: 適用於 Windows 10 電腦的應用程式防護設定
+          href: ../business/protection-settings-for-windows-10-devices.md
         - name: 適用於 Android 和 iOS 的應用程式防護設定
           href: ../business/app-protection-settings-for-android-and-ios.md
           items:
@@ -288,8 +300,16 @@
           items:
             - name: 驗證 Windows 10 電腦上的設定
               href: ../business/validate-settings-on-windows-10-pcs.md
-        - name: 適用於 Windows 10 電腦的應用程式防護設定
-          href: ../business/protection-settings-for-windows-10-devices.md
+        - name: Autopilot
+          items:
+            - name: 新增 AutoPilot 裝置和設定檔
+              href: ../business/add-autopilot-devices-and-profile.md
+            - name: 建立及編輯 AutoPilot 設定檔
+              href: ../business/create-and-edit-autopilot-profiles.md
+            - name: 建立及編輯 AutoPilot 裝置
+              href: ../business/create-and-edit-autopilot-devices.md
+            - name: AutoPilot 設定檔設定
+              href: ../business/autopilot-profile-settings.md
     - name: 與客戶合作
       href: work-with-customers/index.yml
       items:
