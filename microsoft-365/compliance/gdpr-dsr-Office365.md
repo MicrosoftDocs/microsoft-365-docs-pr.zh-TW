@@ -1,5 +1,5 @@
 ---
-title: 依據 GDPR 和 CCPA 的資料主體要求
+title: 依據 GDPR 和 CCPA 的 Office 365 資料主體要求
 description: 了解 GDPR 和 CCPA 下的使用者權利，以及 Office 365 如何協助企業找出並處理資料，以回應 DSR。
 keywords: Office 365、DSR、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR、CCPA
 localization_priority: Priority
@@ -15,14 +15,14 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e6f821cdc8712b11638cbb905b01b82af68e5ad
-ms.sourcegitcommit: ad789f1e7bf9c9dc0d45c731373e667a26ed30b1
+ms.openlocfilehash: bedce9c71e18749d6a394af17788e07ce79c2820
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221427"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579268"
 ---
-# <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的資料主體要求
+# <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Office 365 資料主體要求
 
 ## <a name="introduction-to-dsrs"></a>DSR 簡介
 
@@ -1130,7 +1130,7 @@ PowerApps 服務也包含了 Common Data Service For Apps，可讓使用者可�
 您可以使用「內容搜尋」來搜尋與 Project 相關聯的 SharePoint Online 網站 (第一次建立 Project 時，會有一個選項用來建立相關聯的 SharePoint Online 網站)；內容搜尋不會搜尋 Project Online 中實際專案內的資料，只會搜尋相關聯的網站。 雖然「內容搜尋」會搜尋專案的中繼資料，例如主體中提及的人員，不過，這可能有助於您尋找 (和存取) 包含與 DSR 相關資料的專案。
 
 >[!TIP]
->貴組織中網站集合的 URL，其中與專案相關聯的網站為 **https://\<貴組織網址\>.sharepoint.com/sites/pwa**；例如，**https://contoso.sharepoint.com/pwa**。您可以使用這個特定的網站集合，作為內容搜尋的位置，然後作為搜尋查詢中專案的名稱。此外，IT 系統管理員也可以使用 SharePoint 系統管理中心的網站集合頁面，取得組織中 PWA 網站集合的清單。
+>貴組織中網站集合的 URL，其中與專案相關聯的網站為 **https://\<your org\>.sharepoint.com/sites/pwa**；例如，**https://contoso.sharepoint.com/pwa**。您可以使用這個特定的網站集合，作為內容搜尋的位置，然後作為搜尋查詢中專案的名稱。此外，IT 系統管理員也可以使用 SharePoint 系統管理中心的網站集合頁面，取得組織中 PWA 網站集合的清單。
 
 #### <a name="delete"></a>刪除
 
@@ -1382,7 +1382,7 @@ Power BI 依賴用於其儀表板和報告的基礎來源資料，才能完整�
 
 針對訊息，使用者可以編輯特定訊息，來修正任何不精確之處。他們可以從 Yammer 驗證管理員要求其所有訊息的清單，然後按一下檔案中的連結，檢閱每一個訊息。
 
-針對檔案，使用者可以編輯特定檔案，來修正任何不精確之處。他們可以從 Yammer 驗證管理員要求他們所張貼之所有檔案的清單，然後存取 Yammer 中的檔案。您可以依編號搜尋檔案，來檢視匯出至 [檔案] 資料夾的檔案。例如，對於匯出中名為 12345678.ppx 的檔案，使用 Yammer 中的 [搜尋] 方塊搜尋 1235678.ppx。或者，移至 <strong> https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\> </strong>；例如，<strong> https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678 </strong>。
+針對檔案，使用者可以編輯特定檔案，來修正任何不精確之處。他們可以從 Yammer 驗證管理員要求他們所張貼之所有檔案的清單，然後存取 Yammer 中的檔案。您可以依編號搜尋檔案，來檢視匯出至 [檔案] 資料夾的檔案。例如，對於匯出中名為 12345678.ppx 的檔案，使用 Yammer 中的 [搜尋] 方塊搜尋 1235678.ppx。或者，移至 <strong>https://www.yammer.com/\<network\_name\>/\#/files/\<file\_number\></strong>；例如，<strong>https://www.yammer.com/contosomkt.onmicrosoft.com/\#/files/12345678</strong>。
 
 對於使用者可以透過其設定檔和設定存取的資料，使用者可以進行任何需要的變更。
 
@@ -1581,24 +1581,62 @@ Microsoft 也讓您能夠存取、匯出及刪除系統所產生的記錄，根�
 
 ### <a name="accessing-and-exporting-system-generated-logs"></a>存取和匯出系統所產生的記錄
 
-「資料可攜性權利」允許資料主體以電子格式 (即「結構化、常用、機器可讀取格式」)，要求其個人資料的複本，並可傳輸給其他資料控制者。 Azure 可支援這點；我們讓貴組織能以原生 JSON 格式，將資料匯出到您指定的 Azure 儲存體容器。
+租用戶系統管理員是組織中唯一可以存取系統產生之記錄的人，該記錄與特定使用者對 Office 365 服務和應用程式的使用有關。 針對匯出要求所擷取的資料會以機器可讀取的格式提供；且會以檔案的形式提供，讓使用者知道與資料相關聯的是哪些服務。 如上所述，所擷取的資料不會包含可能造成服務安全性或穩定性受損的資料。
+
+若要存取和匯出系統產生的記錄：
+
+1. 登入 Azure 入口網站，然後選取 [所有服務]****。
+2. 在篩選中輸入原則，然後選取 [原則]****。
+3. 請在 [原則]**** 刀鋒視窗上，依序選取 [使用者隱私權]****、[管理使用者要求]****、[新增匯出要求]****。
+4. 完成 [匯出資料要求]****：
+
+    - [使用者]****。 輸入要求匯出之 Azure Active Directory 使用者的電子郵件地址。
+    - [訂閱]****。 選取您用來報告資源使用狀況以及支付服務費用的帳戶。 這也是您的 Azure 儲存體帳戶的位置。
+    - [儲存體帳戶]****。 選取您 Azure 儲存體 (Blob) 的位置。 如需詳細資訊，請參閱「Microsoft Azure 儲存體 - Blob 儲存體簡介」文章。
+    - [容器]****。 請建立新的 (或選取現有的) 容器，作為使用者所匯出隱私權資料的儲存位置。
+
+5. 選取 [建立]****。
+
+匯出要求會進入**擱置**狀態。 您可以在 [使用者隱私權]****  >  [概觀]**** 刀鋒視窗上，檢視報告狀態。
 
 >[!IMPORTANT]
->您必須是租用戶系統管理員，才能從租用戶中匯出使用者資料。
+>因為個人資料可能來自多個系統，有可能匯出程序需要長達 1 個月才能完成。
 
-#### <a name="azure-active-directory"></a>Azure Active Directory
+### <a name="notify-about-exporting-or-deleting-issues"></a>匯出或刪除問題的通知
 
-至於客戶資料，Microsoft 同時提供入口網站與產品內體驗，讓企業客戶的租用戶系統管理員能夠管理使用者識別資訊的匯出要求。
+如果您從 Azure 入口網站匯出或刪除資料時遇到問題，請前往 Azure 入口網站 [協助 + 支援]**** 刀鋒視窗，並在 [訂閱管理]****  >  [其他安全性和法規遵循要求] ****  >  [隱私權刀鋒視窗和 GDPR 要求]**** 下提交新票證。
 
-#### <a name="service-specific-interfaces"></a>服務特定介面
+>[!NOTE]
+ >當您從 Azure 入口網站匯出資料時，少數應用程式的系統產生資料不會匯出。 若要匯出這些應用程式的資料，請參閱[匯出系統所產生記錄資料的其他步驟](https://docs.microsoft.com/microsoft-365/compliance/gdpr-system-generated-log-data)。
 
-Microsoft 提供直接透過既有的應用程式開發介面 (API) 或特定服務的使用者介面 (UI)，來探索客戶資料的能力。在上述服務各自的參考文件中有詳細資料，說明了適用的 CRUD (建立、讀取、更新、刪除) 作業。
+下列內容摘要說明系統所產生記錄檔的存取和匯出：
+
+- **使用 Azure 入口網站進行匯出要求需要多久時間才能完成要求？：** 視各種因素而定。 通常應該會在一到兩天內完成，但最多可能需要 30 天。
+- **輸出的格式是什麼？：** 輸出是電腦可讀取的結構化檔案，例如 XML、CSV 或 JSON。
+- **誰有權存取 Azure 入口網站，以提交對系統所產生記錄檔的存取要求？**：Office 365 全域系統管理員將有權存取 Azure 入口網站。
+- **匯出結果會傳回哪些資料？**：結果包含 Microsoft 儲存之系統產生的記錄。 匯出的資料會跨越不同的 Microsoft 服務，包括 Office 365、Azure 和 Dynamics。 結果不會包含可能造成服務安全性或穩定性受損的資料。
+- **資料傳回給使用者的方式為何？**：系統會將資料匯出至貴組織的 Azure 儲存體位置；貴組織的系統管理員將決定是否向使用者顯示此資料，或將此資料傳回給使用者。
+- **系統產生的記錄資料看起來是什麼樣子？**：以下是 JSON 格式資料的範例：
+
+    ```JSON
+    [{
+    "DateTime": "2017-04-28T12:09:29-07:00",
+    "AppName": "SharePoint",
+    "Action": "OpenFile",
+    "IP": "154.192.13.131",
+    "DevicePlatform": "Windows 1.0.1607"
+    }]
+    ```
+
+您也可以透過搜尋安全性與合規性中心內的 Office 365 稽核記錄，來擷取部分 Microsoft 最多人使用的服務 (例如 Exchange Online、SharePoint Online、商務用 Skype、Yammer 和 Office 365 群組) 的產品和服務使用情況資料。 如需詳細資訊，請參閱附錄 A 中的[在 DSR 調查時使用 Office 365 稽核記錄搜尋工具](#use-the-audit-log-search-tool-in-dsr-investigations)。您可能有興趣使用稽核記錄，因為可將權限指派給貴組織中的其他人 (例如您的法務人員) 來搜尋稽核記錄，以存取此資料。
 
 ### <a name="deleting-system-generated-logs"></a>刪除系統產生的記錄
 
 若要透過存取要求來刪除系統產生的記錄，您必須將使用者從該服務中移除，並永久刪除其 Azure Active Directory 帳戶。如需永久刪除使用者的相關指示，請參閱本指南中[刪除使用者](#deleting-a-user)一節。請務必注意，一旦開始永久刪除使用者帳戶即無法復原。
 
-永久刪除使用者帳戶會在 30 天內將使用者資料，從幾乎所有 Office 365 服務產生的系統記錄中移除 (可能危及服務安全性或穩定性的資料除外)。 有一個例外，就是 Exchange Online，其永久刪除使用者帳戶所需的時間超過 30 天。 有鑑於 Exchange Online 內容的重要本質，並防止資料意外流失， 此系統已經過設計，在永久刪除了使用者帳戶之後，故意將處於保留狀態的資料最多保留 60 天。 若要在 30 天時間範圍內永久刪除使用者的 Exchange Online 資料，請永久刪除 Azure Active Directory 中的使用者帳戶，然後連絡 [Microsoft 支援](https://support.microsoft.com/)，並要求在排定的刪除程序外手動移除使用者的 Exchange Online 資料。 如需詳細資訊，請參閱本指南先前所述的[移除 Exchange Online 資料](#removing-exchange-online-data)。
+永久刪除使用者帳戶會在 30 天內將使用者資料，從幾乎所有 Office 365 服務產生的系統記錄中移除 (可能危及服務安全性或穩定性的資料除外)。 
+
+此 30 天期限的一個例外是，在 Exchange Online 中永久刪除使用者帳戶所花費的時間超過 30 天。 這是因為 Exchange Online 內容的重要本質，並且為了防止資料意外外洩。 Exchange Online已經過設計，在永久刪除了使用者帳戶之後，會故意將資料置於保留狀態最多 60 天。 若要在 30 天時間範圍內永久刪除使用者的 Exchange Online 資料，請永久刪除 Azure Active Directory 中的使用者帳戶，然後連絡 [Microsoft 支援](https://support.microsoft.com/)，並要求在排定的刪除程序外手動移除使用者的 Exchange Online 資料。 如需詳細資訊，請參閱本指南先前所述的[移除 Exchange Online 資料](#removing-exchange-online-data)。
 
 刪除使用者帳戶不會移除系統為 Yammer 和 Kaizala 所產生的記錄。若要從這些應用程式中移除資料，請參閱以下其中一項：
 
@@ -1607,11 +1645,11 @@ Microsoft 提供直接透過既有的應用程式開發介面 (API) 或特定服
 
 #### <a name="national-clouds"></a>國家雲
 
-全域 IT 系統管理員必須執行下列動作來刪除下列國家雲中系統所產生的記錄：
+全域 IT 系統管理員必須執行下列動作來匯出下列國家雲中系統所產生的記錄資料：
 
-- Office 365 Germany - 永久刪除使用者帳戶時，系統產生的記錄也會一併刪除。 
-- Office 365 US Government - 透過 [Office 365 系統管理入口網站](https://portal.office365.us)將要求提交給 Microsoft 支援服務。
-- 由 21Vianet (中國) 運作的 Office 365 - 透過位於此 [URL](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage) 的 Office 365 系統管理入口網站，將要求提交給 Microsoft 支援服務。移至 [商務]****，然後選取 [訂用帳戶]****  ->  [隱私權]****  ->  [GDPR]****，然後輸入必要的資訊。
+- **Office 365 Germany**：請依照上述步驟進行。
+- **Office 365 US Government**：[移至 Office 365 系統管理入口網站](https://portal.office365.us)，將要求提交給 Microsoft 支援服務。
+- **由 21Vianet (中國) 營運的 Office 365**：[移至由 21Vianet 營運的 Office 365 系統管理入口網站](https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage)、移至 [商務] ****  >  [訂用帳戶]****  >  [隱私權]****  >  [GDPR]****，然後輸入必要的資訊。
 
 ## <a name="part-4-additional-resources-to-assist-you-with-dsrs"></a>第 4 部分：其他協助您使用 DSR 的資源
 

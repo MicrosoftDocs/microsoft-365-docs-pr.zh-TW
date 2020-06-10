@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
-ms.openlocfilehash: 2db8af2c0651388998967db239ceed92a8be1018
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9a2cda171de2b81acdabc2180fe53d8ed4e0f900
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036605"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616475"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -33,7 +33,7 @@ ms.locfileid: "44036605"
 
 基本上，您可以使用私密金鑰為網域的外寄電子郵件中的標頭加密。 您可以將公開金鑰發佈至網域的 DNS 記錄，讓接收端伺服器用來解碼簽章。 他們可以使用公開金鑰來確認郵件確實來自於您，而不是他人*冒充*您的網域寄來的。
 
-Microsoft 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這表示您不需要執行任何操作，即可為任何初始網域名稱設定 DKIM (例如：litware.onmicrosoft.com)。 如需網域的詳細資訊，請參閱[網域常見問題集](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
+Microsoft 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這表示您不需要執行任何操作，即可為任何初始網域名稱設定 DKIM (例如：litware.onmicrosoft.com)。 如需網域的詳細資訊，請參閱[網域常見問題集](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
 
 您也可以選擇不為自訂網域進行任何 DKIM 設定。 如果您未替自訂網域設定 DKIM，Microsoft 365 將會為您的自訂網域建立私密和公開金鑰組、啟用 DKIM 簽章，並設定 Microsoft 365 預設原則。 雖然這對大部分的客戶而言已足夠使用，但在下列情況下，您仍應手動為自訂網域設定 DKIM：
 
@@ -133,7 +133,7 @@ New-DkimSigningConfig -DomainName <domain> -Enabled $false
 Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2CNAME
 ```
 
-Microsoft 365 會自動使用您建立的兩個記錄執行自動金鑰輪換。 如果您在 Microsoft 365 中除了初始網域以外也佈建了自訂網域，則必須為每個額外的網域發佈兩個 CNAME 記錄。 因此，如果您有兩個網域，您必須發佈兩個額外的 CNAME 記錄，依此類推。
+如果您在 Microsoft 365 中除了初始網域以外也佈建了自訂網域，則必須為每個額外的網域發佈兩個 CNAME 記錄。 因此，如果您有兩個網域，您必須發佈兩個額外的 CNAME 記錄，依此類推。
 
 CNAME 記錄應使用下列格式。
 
@@ -158,7 +158,7 @@ TTL:                3600
 
   > contoso.com。  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
 
-- _initialDomain_ 是您註冊 Microsoft 365 時所使用的網域。 初始網域的結尾一律為 onmicrosoft.com。 如需如何判斷初始網域的相關資訊，請參閱[網域的常見問題集](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
+- _initialDomain_ 是您註冊 Microsoft 365 時所使用的網域。 初始網域的結尾一律為 onmicrosoft.com。 如需如何判斷初始網域的相關資訊，請參閱[網域的常見問題集](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
 
 例如，如果您的初始網域為 cohovineyardandwinery.onmicrosoft.com，並且有兩個自訂網域 cohovineyard.com 和 cohowinery.com，則必須為每個額外的網域各設定兩個 CNAME 記錄，因此共計四個 CNAME 記錄。
 
@@ -181,7 +181,10 @@ TTL:                3600
 ```
 
 > [!NOTE]
-> 建立第二筆記錄很重要，但建立時只能使用其中一個選取器。 基本上，第二個選取器可能會指向尚未建立的位址。 我們還是建議您建立第二筆 CNAME 記錄，因為您的金鑰輪換會較流暢，且您不需要自行執行任何手動步驟。
+> 建立第二筆記錄很重要，但建立時只能使用其中一個選取器。 基本上，第二個選取器可能會指向尚未建立的位址。 我們還是建議您建立第二筆 CNAME 記錄，因為您的金鑰輪換會較流暢。
+
+> [!CAUTION]
+> 由於我們針對建立金鑰的方式實作一些設計變更，因此已暫時停用自動金鑰輪替。 建議您擁有多個金鑰，以便您定期輪替。 雖然難以破解，但它仍然是防範模擬之類項目的實用緩解策略。 您可以遵循 [DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) 文件，協助您的組織執行此動作。 我們預期在 2020 年 8 月再次啟用自動變換。
 
 ### <a name="enable-dkim-signing-for-your-custom-domain"></a>為自訂網域啟用 DKIM 簽署
 <a name="EnableDKIMinO365"> </a>
@@ -202,7 +205,7 @@ TTL:                3600
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>使用 PowerShell 為自訂網域啟用 DKIM 簽署
 
-1. [連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+1. [連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 執行下列命令：
 
@@ -253,7 +256,7 @@ TTL:                3600
 
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>使用 Windows PowerShell 停用 DKIM 簽署原則
 
-1. [連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+1. [連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 為您要停用 DKIM 簽署的每個網域執行下列命令。
 
@@ -299,7 +302,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     b=<signed field>;
 ```
 
-在此範例中，主機名稱和網域會包含 CNAME 在網域系統管理員已為 fabrikam.com 啟用 DKIM 簽署時所將指向的值。 最後，每一則從 Microsoft 365 傳送的郵件都會由 DKIM 簽署。 如果您自行啟用 DKIM，網域將會與「寄件者:」位址中的網域相同；在此案例中為 fabrikam.com。 若未自行啟用，則網域會不同，且會改用組織的初始網域。 如需如何判斷初始網域的相關資訊，請參閱[網域的常見問題集](https://docs.microsoft.com/office365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
+在此範例中，主機名稱和網域會包含 CNAME 在網域系統管理員已為 fabrikam.com 啟用 DKIM 簽署時所將指向的值。 最後，每一則從 Microsoft 365 傳送的郵件都會由 DKIM 簽署。 如果您自行啟用 DKIM，網域將會與「寄件者:」位址中的網域相同；在此案例中為 fabrikam.com。 若未自行啟用，則網域會不同，且會改用組織的初始網域。 如需如何判斷初始網域的相關資訊，請參閱[網域的常見問題集](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
 
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>設定 DKIM，讓第三方服務可代表您的自訂網域傳送 (或偽造) 電子郵件
 <a name="SetUp3rdPartyspoof"> </a>

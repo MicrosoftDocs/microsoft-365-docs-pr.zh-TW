@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 從 Microsoft 資訊保護架構使用敏感度標籤來分類及保護組織的資料，而不會阻礙使用者的生產效率和共同作業。
-ms.openlocfilehash: 76d6a57c02f2623b65287b5429c41728a07724bd
-ms.sourcegitcommit: 261d51b90a9ad53a6a42348c414b1b1e1230c37f
+ms.openlocfilehash: 26b916f2a6aa86131da6f0bf9250291bad85dd74
+ms.sourcegitcommit: 57afde60f81499f58a9dce13649361c62f2b5a01
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44292541"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "44590924"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -163,7 +163,7 @@ ms.locfileid: "44292541"
 
 建立可將敏感度標籤指派給使用者和群組的標籤原則之後，需要允許最多 24 小時的時間，這些使用者才會在他們的 Office 應用程式中看到該標籤。
 
-您可以建立並發佈的敏感度標籤數量沒有任何限制，但有一個例外：如果標籤套用加密，則上限為 500 個標籤。 不過，為了降低系統管理負擔並為使用者減少複雜度，最佳做法是試著保持最少的標籤數量。 實際情況的部署已證明，當使用者擁有五個以上的主要標籤，或每個主要標籤有超過五個子標籤時，效果會明顯地降低。
+您可以建立並發佈的敏感度標籤數量沒有任何限制，但有一個例外：如果標籤套用加密，則您可建立的標籤數上限為 500。 不過，為了降低系統管理負擔並為使用者減少複雜度，最佳做法是試著保持最少的標籤數量。 實際情況的部署已證明，當使用者擁有五個以上的主要標籤，或每個主要標籤有超過五個子標籤時，效果會明顯地降低。
 
 ### <a name="label-policy-priority-order-matters"></a>標籤原則優先順序 (順序很重要)
 
