@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
-ms.openlocfilehash: 9ce3ad0bfa7b50dfd5dfa5b5e2a35e6d70600e46
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 74e33fe394802050ced64c5c3d9e41dcbd2550f0
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351984"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44616523"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -71,7 +71,7 @@ EOP 中反垃圾郵件原則的基本元素有：
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [反垃圾郵件設定]**** 頁面，請使用 <https://protection.office.com/antispam>。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲指派權限，才能執行這些程序。 若要新增、修改、刪除反垃圾郵件原則，您必須是**組織管理**或**安全性系統管理員**角色群組的成員。 若要唯讀存取反垃圾郵件原則，您必須是**安全性讀取者**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -242,7 +242,7 @@ EOP 中反垃圾郵件原則的基本元素有：
 
 9. (必要) 展開 [套用至]**** 區段，找出原則所套用的內部收件者。
 
-    您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<群組 1 的成員\>_)。
+    您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<member of group 1\>_)。
 
     最簡單的方法是按一下 [新增條件]**** 三次，查看所有可用的條件。 您可以按一下 ![移除按鈕](../../media/scc-remove-icon.png)移除您不想要設定的條件。
 
@@ -336,7 +336,7 @@ EOP 中反垃圾郵件原則的基本元素有：
 
 3. 在隨即出現的展開的原則詳細資料中，按一下 [設定使用者垃圾郵件通知]****。
 
-4. 在隨即開啟的 **[\<原則名稱\>]** 視窗中，進行設定下列設定：
+4. 在隨即開啟的 **\<Policy Name\>** 對話方塊中，進行下列設定：
 
    - **啟用使用者垃圾郵件通知**：選取核取方塊以啟用通知。 清除核取方塊以停用通知。
 

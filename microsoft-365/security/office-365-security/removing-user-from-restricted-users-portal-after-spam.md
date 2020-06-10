@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以從 Office 365 中的 [受限使用者] 入口網站瞭解如何移除使用者。 傳送輸出垃圾郵件 (通常是因為「帳戶洩露」) 的使用者會被新增至 [受限使用者] 入口網站。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9865b409be6bce14b84a9175e8f17cdad58befe
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b9e28550c67e20466b18b17d8b49fb1b68997cc4
+ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351004"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44617359"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>從 Office 365 中的 [受限使用者] 入口網站移除封鎖的使用者
 
@@ -40,7 +40,7 @@ ms.locfileid: "44351004"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [受限使用者]**** 頁面，請使用 <https://protection.office.com/restrictedusers>。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 - 您必須已獲指派權限，才能執行這些程序。 若要移除 [受限使用者] 入口網站中的使用者，您必須是**組織管理**或**安全性系統管理員**角色群組的成員。 若要以唯讀方式存取 [受限使用者] 入口網站，您必須是**安全性讀取者**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -96,7 +96,7 @@ ms.locfileid: "44351004"
 Get-BlockedSenderAddress
 ```
 
-若要檢視特定使用者的詳細資料，請執行下列命令並以其電子郵件地址取代 \<emailaddress\>：
+若要檢視特定使用者的詳細資料，請以其電子郵件地址取代 \<emailaddress\> 並執行下列命令：
 
 ```powershell
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
@@ -104,7 +104,7 @@ Get-BlockedSenderAddress -SenderAddress <emailaddress>
 
 如需詳細的語法及參數資訊，請參閱 [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress)。
 
-若要從 [受限使用者] 清單中移除使用者，請執行下列命令並以其電子郵件地址取代 \<emailaddress\>：
+若要從 [受限使用者] 清單中移除使用者，請以其電子郵件地址取代 \<emailaddress\> 並執行下列命令：
 
 ```powershell
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>

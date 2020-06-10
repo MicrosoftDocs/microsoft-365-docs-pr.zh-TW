@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: ff99489d933ee932c79fee8c655a46268eb8a6a4
-ms.sourcegitcommit: 44e685a0b193e89de5befb1e1a3740eb31931799
+ms.openlocfilehash: ead28675a24b0364b89948fe582277862eaab3b8
+ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44022141"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44649402"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容 (公開預覽)
 
@@ -40,7 +40,7 @@ ms.locfileid: "44022141"
 
 ## <a name="about-the-public-preview-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>關於 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的公開預覽
 
-Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤會逐漸向租用戶推出，且可能在最終發行之前變更。 此公開預覽不適用 Office 365 內容傳遞網路 (CDN)。
+Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤目前為預覽階段，可能在最終發行之前變更。 此公開預覽不適用 Office 365 內容傳遞網路 (CDN)。
 
 啟用此預覽並設定新設定的敏感度標籤前，使用者可在其應用程式中查看並套用敏感度標籤。 例如，在 Word 中：
 
@@ -79,17 +79,19 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤會
 
 在這個新的**網站和群組設定**頁面上，設定以下設定：
 
-- **Office 365 群組連線小組網站**：[無 - 讓使用者選擇誰可以存取網站]**** 的預設設定目前正在向租用戶推出。 如果您想要使用敏感度標籤來保護容器中的內容，但仍讓使用者自行設定隱私權設定，則請保留此預設設定。
+- **Office 365 群組連線團隊網站的隱私權**：如果您希望組織中所有人都能存取套用此標籤的團隊網站或群組，請保留預設值 [公用 - 組織中的任何人都可以存取網站]****。
     
-    將此標籤套用至容器時，請選取 **[公用]** 或 **[私人]** 來設定和鎖定隱私權設定。 如果您希望組織中的任何人都能存取已套用此標籤的小組網站或群組，請選擇 [公用]****，如果您想要限制只有組織中已通過核准的成員才能存取，請選擇 [私人]****。 
+    如果您希望僅限組織中經核准的成員能存取，請選取 [私人]****。
     
-    [公用]**** 或 [私人]**** 設定會取代先前為小組或群組設定的任何隱私權設定，並鎖定隱私權值，以便只有先移除容器的敏感度標籤才能變更隱私權設定。 移除敏感度標籤後，標籤的隱私權設定會保留，使用者現在便可再次變更隱私權設定。
+    如果您想要使用敏感度標籤來保護容器中的內容，但仍讓使用者自行設定隱私權設定，則選取 [無 - 讓使用者選擇可以存取網站的人員]****。
+    
+    將此標籤套用至容器時，請選取 [公用]**** 或 [私人]**** 設定來設定和鎖定隱私權設定。 您選擇的設定會取代先前為團隊或群組設定的任何隱私權設定，並鎖定隱私權值，因此必須先移除容器的敏感度標籤才能變更隱私權設定。 移除敏感度標籤後，標籤的隱私權設定會保留，使用者現在便可再次變更隱私權設定。
 
 - **外部使用者存取**：控制群組擁有者是否可以[將來賓新增至群組](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
-- **未受管理的裝置**：針對[未受管理的裝置](/sharepoint/control-access-from-unmanaged-devices)，允許完全存取、僅限 Web 存取，或完全封鎖存取權。 
+- **未受管理的裝置**：針對[未受管理的裝置](/sharepoint/control-access-from-unmanaged-devices)，允許完全存取、僅限 Web 存取，或完全封鎖存取權。 如果您已在租用戶層級或特定網站上設定此設定，則僅在限制性更強的情況下才會套用此處指定的設定。
 
-![網站和群組設定索引標籤](../media/edit-sensitivity-label-site-group.png)
+![網站和群組設定索引標籤](../media/edit-sensitivity-label-site-group2.png)
 
 > [!IMPORTANT]
 > 將標籤套用至小組、群組或網站時，只有這些網站和群組設定會生效。 其他標籤設定，例如加密和內容標記，均不會套用至小組、群組或網站內的內容。
@@ -103,7 +105,7 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤會
 ## <a name="sensitivity-label-management"></a>敏感度標籤管理
 
 > [!WARNING]
-> 建立、修改和刪除您用於 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤時，需要謹慎地就發佈標籤原則給使用者進行協調。 
+> 建立、修改和刪除您用於 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤時，需要謹慎地就發佈給使用者的標籤原則進行協調。 
 
 使用下列指南來避免可能影響所有使用者的網站和群組建立錯誤。
 
@@ -196,7 +198,7 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤會
     Import-PSSession $Session -DisableNameChecking
     ```
 
-2. 透過使用 [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) Cmdlet，取得敏感度標籤和其 GUID 的清單：
+2. 透過使用 [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) Cmdlet，取得敏感度標籤和其 GUID 的清單：
     
     ```powershell
     Get-Label |ft Name, Guid
@@ -214,7 +216,7 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤會
     Import-PSSession $Session
     ```
     
-5. 執行 [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps) Cmdlet，指定您的標籤 GUID 來取代範例 GUID "e48058ea-98e8-4940-8db0-ba1310fd955e"： 
+5. 執行 [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/get-unifiedgroup?view=exchange-ps) Cmdlet，指定您的標籤 GUID 來取代範例 GUID "e48058ea-98e8-4940-8db0-ba1310fd955e"： 
     
     ```powershell
     $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
@@ -293,7 +295,7 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤會
     Import-PSSession $Session -DisableNameChecking
     ```
 
-2. 透過使用 [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) Cmdlet，取得敏感度標籤和其 GUID 的清單：
+2. 透過使用 [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) Cmdlet，取得敏感度標籤和其 GUID 的清單：
     
     ```powershell
     Get-Label |ft Name, Guid

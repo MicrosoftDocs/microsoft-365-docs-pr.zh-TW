@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 47122e4ec6f902e0c84bd223ff771dc5db6fdfa5
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: db937347dd397628e0cfaae67b8c923f9433ca13
+ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560480"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44649392"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -71,6 +71,7 @@ ms.locfileid: "44560480"
 |我想要...|文件|
 |----------------|---------------|
 |建立及發佈將協助保護我的組織資料的敏感度標籤|[建立及設定敏感度標籤及其原則](create-sensitivity-labels.md)|
+|讓使用者能夠使用 Office 應用程式、檔案總管和 PowerShell，從 Windows 電腦標籤及保護檔案|[適用於 Windows 的 Azure 資訊保護整合標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |使用敏感度標籤加密文件和電子郵件，並限制能夠存取該內容的人員以及使用方式 |[使用敏感度標籤來套用加密以限制存取內容](encryption-sensitivity-labels.md)|
 |在網頁上啟用 Office 的敏感度標籤，並提供共同撰寫、電子文件探索、資料遺失防護、搜尋支援，即使文件已加密。 | [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)
 |管理 Office 應用程式的敏感度標籤，讓內容標示為已建立 |[在 Office 應用程式中使用敏感度標籤](sensitivity-labels-office-apps.md)|
