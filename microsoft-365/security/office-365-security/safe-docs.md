@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解 Office 365 ATP 中的安全檔。
-ms.openlocfilehash: 40554365cf41ac37b9f9b8399b10dc8f6ab81f42
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e9b1fadd3e9e6dab337a0c3ded380c5c49f53bab
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617283"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678667"
 ---
 # <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 進階威脅防護中的安全文件
 
@@ -30,7 +30,7 @@ ms.locfileid: "44617283"
 
 - 只有使用 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權的使用者才能使用此功能。
 
-- 安全檔目前可用於公開預覽，可供屬於 office 版本為2002（12527.20092）或更高版本的[Office 預覽人員計畫](https://insider.office.com/en-us/join)中的使用者。 此功能預設為關閉，必須由安全性管理員啟用。
+- 安全檔目前可用於公開預覽，可供使用者在目前通道（預覽）上的[Office 預覽人員計畫](https://insider.office.com/en-us/join)中使用，其為 office 版本2002（12527.20092）或更高版本。 此功能預設為關閉，必須由安全性管理員啟用。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 

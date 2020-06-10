@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 決定使用者在 office 的新管理 Office 桌面應用程式中，向使用者顯示或隱藏的功能及其新內容。
-ms.openlocfilehash: 0723823e76be2baf15273d23ad343d91bcec8d60
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d4d4ff24896555a4af0ae4a936840c9935d73813
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399539"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678599"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>使用 [新功能管理] 顯示或隱藏新功能
 
-Office Win 32 的新管理可讓您的組織決定在 Office 桌面應用程式中，使用者對使用者顯示或隱藏的功能。 每個 Office 版本都包含新功能和改進功能，而內容預覽可讓您針對每個發行版本本和頻道查看新的內容，並選擇是否要隱藏或顯示每項功能對使用者的新內容。 
+Office 的新 Windows 管理可讓您的組織決定在 Office 桌面應用程式中對使用者顯示或隱藏的功能。 每個 Office 版本都包含新功能和改進功能，而內容預覽可讓您針對每個發行版本本和頻道查看新的內容，並選擇是否要隱藏或顯示每項功能對使用者的新內容。 
 
 Office 桌面應用程式中的 [新增功能] 內容可強調為該應用程式發行的新功能策劃清單，並提供簡短的描述，而且通常是由小組所建立的圖片或影片發佈，以協助客戶瞭解如何使用該功能。 
 
@@ -41,7 +41,7 @@ Office Microsoft 365 系統管理中心及[用戶端設定服務](https://config
 
 系統管理員可以預覽通道的新增功能內容，並使用 Office 的新管理來管理內容的發行。
 
-1. 在 Microsoft 365 系統管理中心的 [**設定**] 底下，選擇 [**設定**]。
+1. 在 Microsoft 365 系統管理中心的 [**設定**] 底下，選擇 [**組織設定**]。
 
 2. 在 [**服務**] 索引標籤上，選擇 [ **Office 什麼是新的管理**]。
 
@@ -59,11 +59,11 @@ Office Microsoft 365 系統管理中心及[用戶端設定服務](https://config
 ||||
 |:-----|:-----|:-----|
 |**通道** <br/> |**在管理預覽** <br/> |**採取動作** <br/> |
-|**每月** <br/> |每月15日  <br/> |每月發行前的 1-3 周 <br/> |
-|**半年（已設定目標）** <br/> |9月1日和3月1日 <br/> | 主要版本之前2周的新功能
-|**半年** <br/> |1月1日和7月1日 <br/> | 主要版本之前2周的新功能<br/> |
+|**目前** <br/> |每月15日  <br/> |每月發行前的 1-3 周 <br/> |
+|**半年 Enterprise （預覽）** <br/> |9月1日和3月1日 <br/> | 主要版本之前2周的新功能
+|**半年 Enterprise** <br/> |1月1日和7月1日 <br/> | 主要版本之前2周的新功能<br/> |
 
-如需有關通道更新排程的詳細資訊，請參閱[Microsoft 365 app 的更新歷程記錄（依日期列出）](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)。
+如需有關通道更新排程的詳細資訊，請參閱[Microsoft 365 app 的更新歷程記錄（依日期列出）](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。
 
 ## <a name="related-articles"></a>相關文章
 

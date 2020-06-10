@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監視和管理內容處置，不論您使用的是處置檢查，還是會根據您設定的設定自動刪除內容。
-ms.openlocfilehash: 07790175d56db9b82610b4882070a54ddce3d0c2
-ms.sourcegitcommit: 8a15038a6ac16f41f6b90af52e367f888104cec9
+ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44156888"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678989"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -35,7 +35,7 @@ ms.locfileid: "44156888"
 
 ### <a name="permissions-for-disposition"></a>進行處置的許可權
 
-若要在 Microsoft 365 規範中心中成功存取「**處置**」索引標籤，您必須是「**處置管理**」角色和「 **View-Only 審核記錄**」角色的成員。 我們建議您建立新的角色群組，稱為「**處置檢閱者**」，並將這兩個角色新增至該角色群組。 
+若要在 Microsoft 365 規範中心中成功存取「**處置**」索引標籤，您必須是「**處置管理**」角色和「 **View-Only 審核記錄**」角色的成員。 我們建議您建立新的角色群組，稱為「**處置檢閱者**」，並將這兩個角色新增至該角色群組。 即使您是全域系統**管理員**使用者，您還是必須成為**處置管理**角色的一部分，才能存取「部署」索引標籤。
 
 特定于**View-Only 的審計記錄**角色：
 
@@ -43,11 +43,11 @@ ms.locfileid: "44156888"
 
 - 此角色不支援 Microsoft 365 群組（[先前稱為 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 請改為指派使用者信箱、郵件使用者或擁有郵件功能的安全性群組。
 
-如需授與使用者**處置管理**角色及建立新的處理**檢閱者**角色的指示，請參閱[授與使用者存取 Office &amp; 365 安全性與合規性中心的許可權](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需授與使用者**處置管理**角色及建立新的處理**檢閱者**角色的指示，請參閱[授與使用者存取 Office 365 安全性與 &amp; 合規性中心的許可權](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 ### <a name="enable-auditing"></a>啟用審核
 
-請確定已在第一次處理動作之前，至少啟用一天的審計。 如需詳細資訊，請參閱在[Office 365 安全性&amp;與合規性中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。 
+請確定已在第一次處理動作之前，至少啟用一天的審計。 如需詳細資訊，請參閱在[Office 365 安全性與 &amp; 合規性中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。 
 
 ## <a name="disposition-reviews"></a>處置檢閱
 

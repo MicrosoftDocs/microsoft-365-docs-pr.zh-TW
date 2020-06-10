@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南，將 Intune 裝置相容性原則新增至您的 Microsoft 365 企業版測試環境。
-ms.openlocfilehash: 4324ccca761e504812edc210ee6b6abdc484b670
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5ef39310ff74e5d5a38e8a5dd8c7ca24a126af58
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631582"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679023"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的裝置相容性原則
 
@@ -30,7 +30,7 @@ ms.locfileid: "43631582"
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
 
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
@@ -46,9 +46,9 @@ ms.locfileid: "43631582"
 
 在此階段中，您會為 Windows 10 裝置建立裝置符合性原則。
   
-1. 使用您的全域系統管理員帳戶，[https://portal.office.com](https://portal.office.com)移至 office 365 入口網站（），並以您的全域系統管理員帳戶登入您的 office 365 測試實驗室訂閱。
+1. 使用您的全域系統管理員帳戶，移至 Office 365 入口網站（ [https://portal.office.com](https://portal.office.com) ），並以您的全域系統管理員帳戶登入您的 office 365 測試實驗室訂閱。
     
-2. 在您的瀏覽器的新索引標籤上，開啟[https://portal.azure.com](https://portal.azure.com)Azure 入口網站，網址為。
+2. 在您的瀏覽器的新索引標籤上，開啟 Azure 入口網站，網址為 [https://portal.azure.com](https://portal.azure.com) 。
 
 3. 從瀏覽器的 [Azure 入口網站] 索引標籤中，于搜尋方塊中輸入**Intune** ，然後按一下 [ **intune**]。
     
@@ -87,7 +87,7 @@ ms.locfileid: "43631582"
 
 20. 在 [**新增應用程式**] 窗格中，選取 [**應用程式套件設定**]。
 
-21. 針對 [**更新通道**]，選取 [**半年**]，然後按一下 **[確定]**。
+21. 在 [**更新通道**] 中，選取 [**半年 Enterprise**]，然後按一下 **[確定]**。
 
 22. 在 [**新增應用程式**] 窗格中，按一下 [**新增**]。
 
@@ -97,7 +97,7 @@ ms.locfileid: "43631582"
 
 在您的測試環境中探索其他行動[裝置管理](m365-enterprise-test-lab-guides.md#mobile-device-management)功能和功能。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)。
   

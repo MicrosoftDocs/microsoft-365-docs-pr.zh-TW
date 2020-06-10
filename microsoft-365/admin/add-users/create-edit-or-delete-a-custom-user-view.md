@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
 description: 瞭解如何使用篩選器，在 Microsoft 365 中建立、編輯或刪除自訂使用者視圖。
-ms.openlocfilehash: 265aa1a7c22475710a12a93c2bfee0b7749f438b
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 598a167b9845f763ddab57d3c5ba36e431aa751c
+ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431638"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44664571"
 ---
-# <a name="create-edit-or-delete-a-custom-user-view-in-office-365"></a>在 Office 365 中建立、編輯或刪除自訂使用者視圖
+# <a name="create-edit-or-delete-a-custom-user-view"></a>建立、編輯或刪除自訂使用者檢視
 
-如果您是 Office 365 的全域或使用者管理系統管理員，您可以建立自訂使用者視圖，以查看特定的使用者子集。 這些視圖是除了 Office 365 隨附的標準一組視圖之外。 您可以建立、編輯或刪除自訂使用者視圖，而且您建立的自訂視圖可供所有系統管理員使用。
+如果您是 Microsoft 365 for business 訂閱的全域或使用者管理管理員，您可以建立自訂使用者視圖，以查看特定的使用者子集。 這些視圖是除了標準的一組視圖之外。 您可以建立、編輯或刪除自訂使用者視圖，而且您建立的自訂視圖可供所有系統管理員使用。
   
 ## <a name="custom-user-views-in-the-admin-center"></a>Admin center 中的自訂使用者視圖
 
@@ -98,7 +98,7 @@ ms.locfileid: "44431638"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 [**使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>]。
     
 2. 在 [作用中**使用者**] 頁面上，選取 [**篩選**]，然後選取 [**新增篩選**]。
   
@@ -108,7 +108,7 @@ ms.locfileid: "44431638"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。  
+1. 在系統管理中心中，移至 [**使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">使用者</a>]。  
 
 2. 在 [作用中**使用者**] 頁面上選取 [**視圖**]，然後選取 [**新增自訂視圖**]。
   
@@ -119,7 +119,7 @@ ms.locfileid: "44431638"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。 
+1. 在系統管理中心中，移至 [**使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">使用者</a>]。 
 
 2. 在 [作用中**使用者**] 頁面上選取 [**視圖**]，然後選取 [**新增自訂視圖**]。
   
@@ -132,7 +132,7 @@ ms.locfileid: "44431638"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 [**使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>]。
     
 2. 在 [作用中**使用者**] 頁面上，選取 [**篩選**]，選取您要變更的篩選，然後選取 [**編輯篩選**]。 
     
@@ -145,7 +145,7 @@ ms.locfileid: "44431638"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。  
+1. 在系統管理中心中，移至 [**使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">使用者</a>]。  
 
 2. 在 [作用中**使用者**] 頁面上，選取 [**視圖**]，選取您要變更的篩選，然後選取 [**編輯此視圖**]。 
     
@@ -158,7 +158,7 @@ ms.locfileid: "44431638"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。 
+1. 在系統管理中心中，移至 [**使用者**] [作用中 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">使用者</a>]。 
 
 2. 在 [作用中**使用者**] 頁面上，選取 [**視圖**]，選取您要變更的篩選，然後選取 [**編輯此視圖**]。 
     

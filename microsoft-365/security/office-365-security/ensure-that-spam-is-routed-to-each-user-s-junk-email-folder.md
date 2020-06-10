@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何將垃圾郵件路由傳送至 Exchange Online Protection 混合式環境中的使用者垃圾郵件資料夾。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcfee309e532256a71511c3f6de019b22f5db093
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 5d8ba6aae599ee4dd327bd1ec82b46e8f3ee3ca8
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617051"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679117"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>設定獨立 EOP，將垃圾郵件傳遞至混合式環境中的 [垃圾郵件] 資料夾
 
@@ -60,7 +60,7 @@ ms.locfileid: "44617051"
 
   - 信箱上是否啟用垃圾郵件規則（ _enabled_參數值是在 Exchange 管理命令介面的[Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-mailboxjunkemailconfiguration)指令程式中 $true）。 這是垃圾郵件規則，它會在傳送後實際將郵件移至 [垃圾郵件] 資料夾。 依預設，會在信箱上啟用垃圾郵件規則。 如需詳細資訊，請參閱[設定信箱上的 Exchange 反垃圾郵件設定](https://docs.microsoft.com/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings)。
   
-- 若要在 Exchange 伺服器上開啟 EAC，請參閱 exchange [server 中的 exchange 系統管理中心](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)。 若要開啟 Exchange 管理命令介面，請參閱 [https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell) 。
+- 若要在 Exchange 伺服器上開啟 EAC，請參閱 exchange [server 中的 exchange 系統管理中心](https://docs.microsoft.com/Exchange/architecture/client-access/exchange-admin-center)。 若要開啟 Exchange 管理命令介面，請參閱[open The Exchange Management shell](https://docs.microsoft.com/powershell/exchange/open-the-exchange-management-shell)。
 
 - 如需內部部署 Exchange 中郵件流程規則的相關資訊，請參閱下列主題：
 

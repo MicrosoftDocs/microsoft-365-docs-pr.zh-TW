@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: 您可以將保留原則套用至信箱，然後刪除對應的使用者帳戶，以在 Microsoft 365 中建立非使用中的信箱。 非使用中信箱中的專案會保留在保留或保留原則為非使用中之前所套用的持續時間。 若要永久刪除非使用中的信箱，只要移除保留原則或保留原則即可。
-ms.openlocfilehash: bf8539ad8cfdd0170d17b490e7cfeaee8e0bd789
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 76205e0f0504d647f4968afcf9ae2f75b2664a01
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166084"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679097"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>建立和管理非使用中信箱
 
@@ -75,9 +75,9 @@ Microsoft 365 使您可以保留已刪除信箱的內容。 這項功能稱為[�
   
 1. 前往 [https://protection.office.com](https://protection.office.com)，然後使用您組織中系統管理員帳戶的認證來登入。 
     
-2. 按一下 [**資訊管理** > **保留**]。
+2. 按一下 [**資訊管理**  >  **保留**]。
     
-3. 在 [**保留**] 頁面上，按一下 [**更多**![導覽列省略號](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)]，然後按一下 [非使用中**信箱**]。
+3. 在 [**保留**] 頁面上，按一下 [**更多** ![ 導覽列省略號] ](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) ，然後按一下 [非使用中**信箱**]。
     
     ![在 [保留] 頁面上，按一下 [其他]，然後按一下 [非使用中信箱] 以顯示非使用中信箱的清單](../media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
   
@@ -91,7 +91,7 @@ Microsoft 365 使您可以保留已刪除信箱的內容。 這項功能稱為[�
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
-您可以按一下![[匯出搜尋結果](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png)圖示] [**匯出**]，以查看或下載包含有關組織中非使用中信箱之其他資訊的 CSV 檔案。 
+您可以按一下 [ ![ 匯出搜尋結果圖示] [ ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **匯出**]，以查看或下載包含有關組織中非使用中信箱之其他資訊的 CSV 檔案。 
   
 您也可以執行下列命令，將非使用中信箱和其他資訊的清單匯出至 CSV 檔案。 在此範例中，會在目前目錄中建立 CSV 檔案。
 
@@ -112,7 +112,7 @@ Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,Disting
     
 搜尋非作用中信箱時，請注意以下幾點。
   
-- 如果內容搜尋包含使用者信箱，且該信箱已變為非使用中，則內容搜尋會繼續搜尋非使用中的信箱，當您重新執行該搜尋後，該搜尋會停用。
+- 如果內容搜尋包含使用者信箱，且該信箱已變為非使用中，當您在未使用的情況下執行搜尋時，內容搜尋會繼續搜尋非使用中的信箱。
     
 - 在某些情況下，使用者可能會有一個使用中信箱和非使用中的信箱，且該信箱具有相同的 SMTP 位址。 在此情況下，只會搜尋您所選做為內容搜尋位置的特定信箱。 換句話說，如果您將使用者的信箱新增至搜尋中，則不能假設會搜尋其作用中和非使用中的信箱;只會搜尋您明確新增到搜尋中的信箱。
     

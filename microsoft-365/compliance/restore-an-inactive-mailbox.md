@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 8/28/2017
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 如果新的員工或其他使用者需要存取 Office 365 中非使用中信箱的內容，您可以將非使用中信箱的內容還原（或合併）到現有的信箱。
-ms.openlocfilehash: 3352dfa582fb09a5f0a6c7ecbd807ed80593351f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b3cc574b96f616debec38a2b69406bf20dabf7b9
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43621315"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678959"
 ---
 # <a name="restore-an-inactive-mailbox"></a>還原非作用中的信箱
 

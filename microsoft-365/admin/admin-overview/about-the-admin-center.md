@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: 使用系統管理中心在雲端設定您的組織並管理使用者和訂閱。 請以系統管理員權限登入帳戶以開始使用。
-ms.openlocfilehash: c5f061e8ffd8f545965483d8d318debea708bf2c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 77799599dfd93525efe101f7dea02c5fc8408bbf
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386958"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678645"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>關於 Microsoft 365 系統管理中心
 
@@ -75,7 +75,7 @@ ms.locfileid: "44386958"
   
 |**功能表**|**功能**|
 |-----|-----|
-|**首頁** <br/> |這是新版系統管理中心的登陸頁面。 您會看到管理使用者、帳單、服務健康狀況以及報告的位置。  <br/> |
+|**首頁** <br/> |這是系統管理中心的登陸頁面。 您會看到管理使用者、帳單、服務健康狀況以及報告的位置。  <br/> |
 |**使用者** <br/> |建立及管理在您的組織中的使用者，例如員工或學生。 您也可以設定其權限層級，或重設其密碼。  <br/> |
 |**群組** <br/> |建立及管理組織中的群組，例如 Microsoft 365 群組、通訊群組、安全性群組或共用信箱。 了解如何[建立](../create-groups/create-groups.md)及[管理](../create-groups/manage-groups.md)群組。  <br/> |
 |**資源** <br/> |建立及管理資源，例如 SharePoint 網站集合。 了解如何[建立網站集合](https://docs.microsoft.com/sharepoint/create-site-collection)。  <br/> |

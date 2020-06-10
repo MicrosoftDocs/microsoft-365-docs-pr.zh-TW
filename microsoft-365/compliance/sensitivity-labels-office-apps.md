@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解使用者如何使用 Office 應用程式中的敏感度標籤、適用于行動裝置的 Office 應用程式，以及適用于 web 的 Office 應用程式。 瞭解哪些應用程式支援靈敏度標籤。
-ms.openlocfilehash: 7d37eae65775a79ef49db6c7d13d2ce0d2965acb
-ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
+ms.openlocfilehash: 8feb8fc70277e502c5bbb321c864e4cd022ad725
+ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/09/2020
-ms.locfileid: "44649382"
+ms.locfileid: "44658340"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -42,6 +42,9 @@ ms.locfileid: "44649382"
 
 新版本的應用程式可在不同的時間用於不同的更新通道。 如需詳細資訊，包括如何設定您的更新通道，以測試您所感興趣的新標記功能，請參閱[Microsoft 365 應用程式的更新通道概述](https://docs.microsoft.com/DeployOffice/overview-update-channels)。 在 [私人預覽] 中的新功能不會包含在表格中，但您可以 nominating [Microsoft 資訊保護私人預覽程式](https://aka.ms/mip-preview)的組織，以加入這些預覽。
 
+> [!NOTE]
+> 最近變更了 Office 應用程式的更新通道名稱。 例如，每月通道現在是目前通道，而 Office 有問必答現在是 Beta 通道。 如需詳細資訊，請參閱[Microsoft 365 應用程式的更新通道變更](https://docs.microsoft.com/deployoffice/update-channels-changes)。
+
 當您安裝 Azure 資訊保護統一標籤用戶端（只在 Windows 電腦上執行）時，即可使用其他功能。 如需詳細資料，請參閱[比較 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Word、Excel 及 PowerPoint 中的靈敏度標籤功能
@@ -56,10 +59,10 @@ ms.locfileid: "44649382"
 |[提供自訂 [説明] 頁面的 [說明] 連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [每月通道](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps)（2003 +） | [每月通道](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps)（16.35 +）   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
+|[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [目前通道](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview)（2003 +） | 16.35 +   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
-|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽：在[Office 有問必答](https://office.com/insider)                                  | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽：在[Beta 通道](https://office.com/insider)中                                  | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |支援標籤和受保護檔上的[AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)和[合著](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -76,7 +79,7 @@ ms.locfileid: "44649382"
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 在 [複查] 下               |
 |[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 在 [複查] 下                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 在 [複查] 下               |
-|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽：向[Office 有問必答](https://office.com/insider)推出                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
+|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 預覽：推出[Beta 通道](https://office.com/insider)                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
 |
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 內建標籤用戶端和其他標記解決方案
@@ -185,7 +188,7 @@ Office 內建的標籤用戶端會從下列系統管理中心下載敏感度標�
 
 如果外部使用者在 Azure Active Directory 中沒有帳戶，您可以在租使用者中為這些使用者建立來賓帳戶。 若為其電子郵件地址，您可以指定任何已使用的電子郵件地址。 例如，其 Gmail 位址。 您也可以使用此來賓帳戶，存取 SharePoint 或 OneDrive 中的共用檔，以[SharePoint 和 OneDrive 中的 Office 檔案已啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
 
-當外部使用者在 Windows 上使用 Microsoft 365 應用程式（[正式的 Office 365 應用程式](https://docs.microsoft.com/deployoffice/name-change)）時，也可以使用和建立用於加密檔的 microsoft 帳戶。 MacOS、Android 或 iOS 尚不支援這項功能。 例如，某人與他們共用加密檔，加密設定會指定其 Gmail 電子郵件地址。 此使用者可建立其自己的 Microsoft 帳戶，其使用 Gmail 電子郵件地址。 然後，使用此帳戶登入後，他們就可以開啟檔，並根據為該使用者指定的使用限制來進行編輯。 如需此案例的逐步範例，請參閱[開啟和編輯受保護的檔](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
+當外部使用者在 Windows 上使用 Microsoft 365 應用程式（[以前稱為 Office 365 應用程式](https://docs.microsoft.com/deployoffice/name-change)）時，也可以使用和建立用於加密檔的 Microsoft 帳戶。 MacOS、Android 或 iOS 尚不支援這項功能。 例如，某人與他們共用加密檔，加密設定會指定其 Gmail 電子郵件地址。 此使用者可建立其自己的 Microsoft 帳戶，其使用 Gmail 電子郵件地址。 然後，使用此帳戶登入後，他們就可以開啟檔，並根據為該使用者指定的使用限制來進行編輯。 如需此案例的逐步範例，請參閱[開啟和編輯受保護的檔](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
 
 > [!NOTE]
 > Microsoft 帳戶的電子郵件地址必須符合所指定的電子郵件地址，以限制加密設定的存取權。
