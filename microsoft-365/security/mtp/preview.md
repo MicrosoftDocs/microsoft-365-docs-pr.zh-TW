@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b0703aa14bee3d14d1c3ff4fe46ea9d72de73ce2
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 8a3e4b8979a346266336e2729d18465d391c28f9
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515864"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689263"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威脅防護預覽功能
 
@@ -58,6 +58,8 @@ Microsoft 威脅防護服務會不斷更新，以包含新功能增強功能及�
 下列是目前可供預覽的功能和增強功能：
 
 - 身分**[識別和應用程式表格](advanced-hunting-schema-tables.md)**--在高級搜尋架構中深入瞭解驗證事件、Active Directory 查詢和應用程式相關的活動與[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表格。
+
+- **[流覽搜尋](advanced-hunting-go-hunt.md)**--快速從調查事件，以使用查詢式的[高級搜尋](advanced-hunting-overview.md)功能，檢查特定事件、使用者、裝置或其他實體類型。
 
 - **[EmailPostDeliveryEvents 表格](advanced-hunting-emailpostdeliveryevents-table.md)**—使用此表格來建立[高級搜尋](advanced-hunting-overview.md)查詢，以檢查電子郵件傳送至收件者信箱之後所採取的動作。
 

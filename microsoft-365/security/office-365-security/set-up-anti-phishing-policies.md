@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection （EOP）和 Office 365 Advanced 威脅防護（Office 365 ATP）中可用的反網路釣魚原則。
-ms.openlocfilehash: 0b1342d61ab4ab1fedde63271082c577211f6595
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209808"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689275"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -114,7 +114,7 @@ ATP 反網路釣魚原則僅可用於具有 Office 365 ATP 的組織。 例如�
 
 - **適用于**：識別 ATP 反網路釣魚原則適用的內部收件者。 此值在自訂原則中是必要的，在預設原則中不可用（預設原則會套用至所有收件者）。
 
-    您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<群組 1 的成員\>_)。
+    您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<member of group 1\>_)。
 
   - **收件**者：一或多個信箱、郵件使用者或您組織中的郵件連絡人。
   - **收件者隸屬**于組織中的一或多個群組。
@@ -128,7 +128,7 @@ ATP 反網路釣魚原則僅可用於具有 Office 365 ATP 的組織。 例如�
 
 ### <a name="impersonation-settings-in-atp-anti-phishing-policies"></a>ATP 反網路釣魚原則中的類比設定
 
-模仿是寄件者或寄件者的電子郵件網域與實際寄件者或網域非常類似的地方：
+模仿是指寄件者或寄件者的電子郵件網域與實際寄件者或網域類似的位置：
 
 - 網域 contoso.com 的模仿範例是ćóntoso.com。
 
@@ -140,11 +140,11 @@ ATP 反網路釣魚原則僅可用於具有 Office 365 ATP 的組織。 例如�
 
 - **要保護的使用者**：防止指定的內部或外部使用者進行類比。 例如，主管（內部）和董事會成員（外部）。 您最多可以新增60的內部和外部地址。 此受保護的使用者清單與套用**至**設定之原則的收件者清單不同。
 
-  例如，您在套用至名為「主管」群組的原則中，將 Felipe Apodaca （felipea@contoso.com）指定為受保護的使用者。 傳送給主管群組成員的輸入郵件，其中 Felipe Apodaca 的位置會由原則處理（您為模擬使用者設定的動作）。
+  例如，您在套用至名為「主管」群組的原則中，將 Felipe Apodaca （felipea@contoso.com）指定為受保護的使用者。 傳送給主管群組成員的輸入郵件，其中 Felipe Apodaca 是類比的，會由原則處理（為模擬使用者設定的動作）。
 
 - **要保護的網域**：防止類比指定的網域。 例如，您擁有的所有網域（[公認的網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)）或特定網域（擁有或夥伴網域的網域）。 受保護網域的清單與套用**至**設定之原則所套用的網域清單不同。
 
-  例如，您在套用至群組成員的群組成員的原則中，將 tailspintoys.com 指定為受保護的網域。 傳送給主管群組成員的輸入郵件，該原則中的 tailspintoys.com 是類比的，將由原則處理（您為類比網域所設定的動作）。
+  例如，您在套用至群組成員的群組成員的原則中，將 tailspintoys.com 指定為受保護的網域。 傳送給主管群組成員的輸入郵件會由原則處理（為模擬的網域所設定的動作）的 tailspintoys.com。
 
 - **受保護的使用者或網域的動作**：選擇要針對輸入郵件採取的動作，該郵件包含對原則中受保護的使用者與受保護的網域的模仿嘗試。 您可以指定不同的使用者模擬，以類比受保護的使用者與模擬受保護的網域：
 
