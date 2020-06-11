@@ -1,0 +1,87 @@
+---
+title: 使用資料隱私權規定的身分識別、裝置和威脅防護
+ms.author: bcarter
+author: brendacarter
+f1.keywords:
+- NOCSH
+manager: laurawi
+ms.date: 06/09/2020
+audience: ITPro
+ms.topic: article
+ms.prod: microsoft-365-enterprise
+localization_priority: Normal
+ms.collection:
+- M365-security-compliance
+- Strat_O365_Enterprise
+- M365solutions
+ms.custom: ''
+description: 使用 Microsoft 365 的身分識別、裝置和威脅防護服務，避免個人資料遭到破壞。
+ms.openlocfilehash: 74894037ef2fe56aeb5bc44340cd8a946863baff
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695076"
+---
+# <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a><span data-ttu-id="f8aec-103">使用資料隱私權規定的身分識別、裝置和威脅防護</span><span class="sxs-lookup"><span data-stu-id="f8aec-103">Use identity, device, and threat protection for data privacy regulation</span></span>
+
+<span data-ttu-id="f8aec-104">Microsoft 365 提供許多身分識別、裝置和威脅防護功能，組織可以採取這些功能來協助遵守資料隱私權相關的相容性法規。</span><span class="sxs-lookup"><span data-stu-id="f8aec-104">Microsoft 365 provides a number of identity, device, and threat protection capabilities that organizations can employ to help comply with data privacy-related compliance regulations.</span></span> <span data-ttu-id="f8aec-105">本文說明這些方面的資料隱私權法規所需的內容，並提供相關 Microsoft 365 功能和服務的清單，其中包含可協助您處理實施需求的詳細資訊連結。</span><span class="sxs-lookup"><span data-stu-id="f8aec-105">This article describes what the data privacy regulations require in these areas and provides a listing of related Microsoft 365 features and services with links to more information to help you address implementation requirements.</span></span>
+
+## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a><span data-ttu-id="f8aec-106">身分識別、裝置和威脅防護與資料隱私權規定的關聯方式</span><span class="sxs-lookup"><span data-stu-id="f8aec-106">How identity, device, and threat protection relate to data privacy regulation</span></span>
+
+<span data-ttu-id="f8aec-107">資料隱私權規定在其明確程度上有所不同時，其所呼叫的實質會包含在 GDPR 的第5（1）（f）專案中，這表明：</span><span class="sxs-lookup"><span data-stu-id="f8aec-107">While the data privacy regulations vary in their specificity, the essence of what they call for is embodied in the GDPR’s Article 5(1)(f), which states that:</span></span> 
+
+- <span data-ttu-id="f8aec-108">個人資料的處理方式是為了確保個人資料的適當安全性，包括防止未經授權或非法處理的保護，以及使用適當的技術或組織量值（「誠信」和「機密性」）以避免意外遺失、損毀或損毀。</span><span class="sxs-lookup"><span data-stu-id="f8aec-108">Personal data shall be processed in a manner that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organizational measures ('integrity and confidentiality').</span></span>
+
+<span data-ttu-id="f8aec-109">由於個人資料損損通常是由系統管理或使用者帳戶損損和惡意的系統存取而造成。</span><span class="sxs-lookup"><span data-stu-id="f8aec-109">Because personal data breaches are often caused by administrative or end-user account compromise and malicious system access.</span></span> <span data-ttu-id="f8aec-110">例如，系統管理員帳戶的駭客攻擊可能會導致客戶信用卡號碼或其他個人資訊的 exfiltration。</span><span class="sxs-lookup"><span data-stu-id="f8aec-110">For example, an admin account hack can result in exfiltration of customer credit card numbers or other personal information.</span></span> <span data-ttu-id="f8aec-111">可能應該實施 Microsoft 365 的所有一般建議身分識別、裝置和威脅防護，這會反映您的合規性分數。</span><span class="sxs-lookup"><span data-stu-id="f8aec-111">All the generally advisable identity, device, and threat protection available with Microsoft 365 potentially should be implemented, which will be reflected in your Compliance Score.</span></span>
+
+## <a name="using-the-results-of-your-assessment-work-and-compliance-score"></a><span data-ttu-id="f8aec-112">使用評估工作和合規性分數的結果</span><span class="sxs-lookup"><span data-stu-id="f8aec-112">Using the results of your assessment work and Compliance Score</span></span>
+
+<span data-ttu-id="f8aec-113">合規性分數包括使用下列類別的身分識別、裝置和威脅防護：</span><span class="sxs-lookup"><span data-stu-id="f8aec-113">Compliance Score includes identity, device, and threat protection using these categories:</span></span>
+
+- <span data-ttu-id="f8aec-114">Identity 會對應至**控制項存取**類別</span><span class="sxs-lookup"><span data-stu-id="f8aec-114">Identity corresponds to the **Control Access** category</span></span>
+- <span data-ttu-id="f8aec-115">裝置對應于 [**管理裝置**] 類別</span><span class="sxs-lookup"><span data-stu-id="f8aec-115">Device corresponds to the **Manage Devices** category</span></span>
+- <span data-ttu-id="f8aec-116">威脅防護會對應至 [**防護威脅**] 類別</span><span class="sxs-lookup"><span data-stu-id="f8aec-116">Threat protection corresponds to the **Protect Against Threats** category</span></span>
+ 
+<span data-ttu-id="f8aec-117">如果已在我們四個主要資料隱私權規定的範例集中選取這些選項，則符合性分數會指定90改進動作，大部分的分數為 "27"。</span><span class="sxs-lookup"><span data-stu-id="f8aec-117">If these are selected across our sample set of four major data privacy regulations, Compliance Score specifies 90 improvement actions, most of which are scored a "27".</span></span> <span data-ttu-id="f8aec-118">由於這類大量的數位是由這些類別的合規性分數所呼叫，因此這裡會列出一些較為常見的數位，供您參考。</span><span class="sxs-lookup"><span data-stu-id="f8aec-118">Since such a large number are called out by Compliance Score for these categories, some of the more common ones are listed here, for reference.</span></span>
+
+<span data-ttu-id="f8aec-119">使用[Azure Active Directory （AZURE AD）](https://azure.microsoft.com/services/active-directory/)做為身分識別和**控制存取**類別，您可以：</span><span class="sxs-lookup"><span data-stu-id="f8aec-119">Use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) for identity and the **Control Access** category, with which you can:</span></span>
+
+- <span data-ttu-id="f8aec-120">實施重新顯示抵抗驗證（以防止「中間人」攻擊）</span><span class="sxs-lookup"><span data-stu-id="f8aec-120">Implement replay-resistant authentication (to prevent “Man in the middle” attacks)</span></span>
+- <span data-ttu-id="f8aec-121">封鎖舊版驗證。</span><span class="sxs-lookup"><span data-stu-id="f8aec-121">Block legacy authentication.</span></span>
+- <span data-ttu-id="f8aec-122">設定使用者風險和使用者登入風險原則。</span><span class="sxs-lookup"><span data-stu-id="f8aec-122">Configure user risk and user sign-in risk policies.</span></span>
+- <span data-ttu-id="f8aec-123">啟用系統管理員和非系統管理員的條件式存取和多重要素驗證（MFA）。</span><span class="sxs-lookup"><span data-stu-id="f8aec-123">Enable Conditional Access and multi-factor authentication (MFA) for admins and non-admins.</span></span>
+- <span data-ttu-id="f8aec-124">設定並強制執行密碼原則。</span><span class="sxs-lookup"><span data-stu-id="f8aec-124">Configure and enforce password policies.</span></span>
+- <span data-ttu-id="f8aec-125">使用 Azure AD 特權身分識別管理限制存取特權帳戶。</span><span class="sxs-lookup"><span data-stu-id="f8aec-125">Restrict access to privileged accounts with Azure AD Privileged Identity Management.</span></span>
+- <span data-ttu-id="f8aec-126">在終止時停用存取。</span><span class="sxs-lookup"><span data-stu-id="f8aec-126">Disable access upon termination.</span></span>
+- <span data-ttu-id="f8aec-127">審核使用者帳戶和狀態變更。</span><span class="sxs-lookup"><span data-stu-id="f8aec-127">Audit user accounts and status changes.</span></span>
+- <span data-ttu-id="f8aec-128">審閱角色群組和系統管理變更。</span><span class="sxs-lookup"><span data-stu-id="f8aec-128">Review role group and administrative changes.</span></span>
+
+<span data-ttu-id="f8aec-129">使用適用于裝置的[Microsoft 端點管理員](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)和**管理裝置**類別，您可以：</span><span class="sxs-lookup"><span data-stu-id="f8aec-129">Use [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) for devices and the **Manage Devices** category, with which you can:</span></span>
+
+- <span data-ttu-id="f8aec-130">封鎖越獄中斷及根行動裝置。</span><span class="sxs-lookup"><span data-stu-id="f8aec-130">Block jail broken and rooted mobile devices.</span></span>
+- <span data-ttu-id="f8aec-131">設定 Intune 以進行行動裝置管理。</span><span class="sxs-lookup"><span data-stu-id="f8aec-131">Configure Intune for mobile device management.</span></span>
+- <span data-ttu-id="f8aec-132">建立 Android、iOS、macOS 和 Windows 裝置的相容性原則。</span><span class="sxs-lookup"><span data-stu-id="f8aec-132">Create compliance policies for Android, iOS, macOS and Windows devices.</span></span>
+- <span data-ttu-id="f8aec-133">建立適用于 Android、iOS、macOS 和 Windows 裝置的裝置設定檔。</span><span class="sxs-lookup"><span data-stu-id="f8aec-133">Create a device configuration profile for Android, iOS, macOS and Windows devices.</span></span>
+- <span data-ttu-id="f8aec-134">建立 iOS 和 Windows 的應用程式保護原則。</span><span class="sxs-lookup"><span data-stu-id="f8aec-134">Create app protection policies for iOS and Windows.</span></span>
+- <span data-ttu-id="f8aec-135">以鎖定畫面隱藏資訊。</span><span class="sxs-lookup"><span data-stu-id="f8aec-135">Conceal information with lock screen.</span></span>
+- <span data-ttu-id="f8aec-136">為行動裝置實施密碼原則。</span><span class="sxs-lookup"><span data-stu-id="f8aec-136">Implement password policies for mobile devices.</span></span>
+- <span data-ttu-id="f8aec-137">要求行動裝置在非活動狀態時鎖定。</span><span class="sxs-lookup"><span data-stu-id="f8aec-137">Require mobile devices to lock upon inactivity.</span></span>
+- <span data-ttu-id="f8aec-138">要求行動裝置會在多個登入失敗時擦章。</span><span class="sxs-lookup"><span data-stu-id="f8aec-138">Require mobile devices to wipe on multiple sign-in failures.</span></span>
+
+<span data-ttu-id="f8aec-139">針對 [**防護威脅**] 類別使用[Exchange Online Protection 和 Office 365 的高級威脅防護（ATP）](../security/office-365-security/office-365-atp.md) ，您可以：</span><span class="sxs-lookup"><span data-stu-id="f8aec-139">Use [Exchange Online Protection and Office 365 Advanced Threat Protection (ATP)](../security/office-365-security/office-365-atp.md) for the **Protect Against Threats** category, with which you can:</span></span>
+
+- <span data-ttu-id="f8aec-140">啟用寄件者驗證（SPF、DMARC 及 DKIM）。</span><span class="sxs-lookup"><span data-stu-id="f8aec-140">Enable sender authentication (SPF, DMARC and DKIM).</span></span>
+- <span data-ttu-id="f8aec-141">設定 Office 365 高級威脅防護（ATP）反網路釣魚原則。</span><span class="sxs-lookup"><span data-stu-id="f8aec-141">Set up Office 365 Advanced Threat Protection (ATP) anti-phishing policies.</span></span>
+- <span data-ttu-id="f8aec-142">實施 ATP 安全附件。</span><span class="sxs-lookup"><span data-stu-id="f8aec-142">Implement ATP Safe Attachments.</span></span>
+- <span data-ttu-id="f8aec-143">實施 ATP 安全連結。</span><span class="sxs-lookup"><span data-stu-id="f8aec-143">Implement ATP Safe Links.</span></span>
+- <span data-ttu-id="f8aec-144">實施惡意程式碼偵測和回應原則。</span><span class="sxs-lookup"><span data-stu-id="f8aec-144">Implement malware detection and response policies.</span></span>
+- <span data-ttu-id="f8aec-145">實施輸出和輸入的垃圾郵件原則。</span><span class="sxs-lookup"><span data-stu-id="f8aec-145">Implement outbound and inbound spam policies.</span></span>
+
+### <a name="references"></a><span data-ttu-id="f8aec-146">引用：</span><span class="sxs-lookup"><span data-stu-id="f8aec-146">References:</span></span>
+
+- [<span data-ttu-id="f8aec-147">一般身分識別與裝置存取原則</span><span class="sxs-lookup"><span data-stu-id="f8aec-147">Common identity and device access policies</span></span>](../enterprise/identity-access-policies.md)
+- [<span data-ttu-id="f8aec-148">保護 Office 365 中的威脅</span><span class="sxs-lookup"><span data-stu-id="f8aec-148">Protect against threats in Office 365</span></span>](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
+- [<span data-ttu-id="f8aec-149">ATP 安全附件</span><span class="sxs-lookup"><span data-stu-id="f8aec-149">ATP Safe Attachments</span></span>](../security/office-365-security/atp-safe-attachments.md)
+- [<span data-ttu-id="f8aec-150">ATP 安全連結</span><span class="sxs-lookup"><span data-stu-id="f8aec-150">ATP Safe Links</span></span>](../security/office-365-security/atp-safe-links.md)
+- [<span data-ttu-id="f8aec-151">ATP 安全文件</span><span class="sxs-lookup"><span data-stu-id="f8aec-151">ATP Safe Documents</span></span>](../security/office-365-security/safe-docs.md)
