@@ -18,12 +18,12 @@ hideEdit: true
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: ec598816158068445f3f662bbdd6ea7c7edafd82
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.openlocfilehash: e8a13821aaec16f66546f78be69394222ad5d41c
+ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043324"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44579188"
 ---
 # <a name="dynamics-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Dynamics 365 資料主體要求
 
@@ -242,12 +242,9 @@ Azure 可支援這點；我們讓貴組織能以原生 JSON 格式，將資料�
 |**資料傳回給使用者的方式為何？**| 系統會將資料匯出至貴組織的 Azure 儲存體位置；貴組織的系統管理員將決定是否向使用者顯示此資料，或將此資料傳回給使用者。 |
 |**資料在系統產生的記錄檔中看起來會是麼樣子？**| 以 JSON 格式記錄的系統所產生記錄檔範例： <br><br> "DateTime": "2017-04-28T12:09:29-07:00", <br> "AppName": "SharePoint", <br> "Action": "OpenFile", <br> "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" |
 
-> [!NOTE]
-> 基於安全性和稽核理由，部分功能不允許匯出或刪除含個人資訊的系統所產生記錄，以維持這些資訊的完整性。
-
 ### <a name="deleting-system-generated-logs"></a>刪除系統產生的記錄
 
-若要刪除透過存取要求擷取的系統產生記錄，您必須從服務中移除使用者，然後永久刪除其 Azure Active Directory 帳戶。 請注意，永久刪除使用者帳戶一旦啟動就無法復原。 永久刪除使用者帳戶會在 30 天內將使用者資料，從幾乎所有 Dynamics 365 服務的系統產生的記錄中移除。
+若要刪除透過存取要求擷取的系統產生記錄，您必須從服務中移除使用者，然後永久刪除其 Azure Active Directory 帳戶。 如需如何永久刪除使用者的相關指示，請參閱「Azure 資料主體要求」主題中的[步驟 5：刪除](gdpr-dsr-azure.md#step-5-delete)一節。 請注意，一旦永久刪除使用者帳戶就無法復原。 永久刪除使用者帳戶會在 30 天內將使用者資料，從幾乎所有 Dynamics 365 服務產生的系統記錄中移除 (可能危及服務安全性或穩定性的資料除外)。
 
 ## <a name="learn-more"></a>深入了解
 
