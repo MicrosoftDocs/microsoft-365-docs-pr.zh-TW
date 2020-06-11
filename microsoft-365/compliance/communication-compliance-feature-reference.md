@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b524001f848a106ec2832c698b474cfce8ceb24b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd9162316bd5c180210040f0820eb8d1cc46dc6c
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352080"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689241"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -62,7 +62,9 @@ ms.locfileid: "44352080"
 
 若要簡化您的設定，請為需要查看其通訊的使用者建立群組，並為查看那些通訊的使用者群組。 如果您正在使用群組，可能需要數個。 例如，如果您想要掃描兩個不同的使用者群組之間的通訊，或是想要指定未監督的群組。
 
-當您為監督的使用者選取 Microsoft 365 群組時，該原則會掃描共用信箱的內容，以及與該群組相關聯的 Microsoft 小組通道。 當您選取通訊群組清單時，該原則會掃描個別的使用者信箱。 將群組和通訊群組清單新增至通訊相容性原則是整體條件和規則集的一部分，因此原則所支援的群組和通訊群組清單數目上限會因也新增至原則的條件數目而異。 每個原則都應該支援大約20個群組或通訊群組清單，視原則中所出現的其他條件數目而定。
+當您指派原則中的通訊群組時，該原則會監控通訊群組中每個使用者的所有電子郵件。 當您在原則中指派 Microsoft 365 群組時，該原則會監控傳送給該群組的所有電子郵件，而不是每個群組成員所收到的個別電子郵件。
+
+將群組和通訊群組清單新增至通訊相容性原則是整體條件和規則集的一部分，因此原則所支援的群組和通訊群組清單數目上限會因也新增至原則的條件數目而異。 每個原則都應該支援大約20個群組或通訊群組清單，視原則中所出現的其他條件數目而定。
 
 ## <a name="supported-communication-types"></a>支援的通訊類型
 
@@ -232,7 +234,7 @@ ms.locfileid: "44352080"
 | **Date** | 組織中的使用者傳送或接收郵件的日期。 |
 | **檔類別** | 以郵件類型為基礎的郵件類別（*郵件*或*附件*）。 |
 | **具有附件** | 附件存在於郵件中。 |
-| **專案類別** | 根據郵件類型、電子郵件、Microsoft 小組聊天、Bloonmberg 等的郵件來源。 |
+| **專案類別** | 根據郵件類型、電子郵件、Microsoft 小組聊天、Bloonmberg 等的郵件來源。如需一般專案類型和郵件類別的詳細資訊，請參閱[專案類型和郵件類別](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes)。 |
 | **收件者網域** | 郵件已傳送至的網域。 根據預設，此網域通常是您的 Microsoft 365 訂閱網域。 |
 | **收件者** | 郵件已傳送至的使用者。 |
 | **Sender** | 傳送郵件的人員。 |

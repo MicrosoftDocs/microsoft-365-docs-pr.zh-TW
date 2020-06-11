@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b1ce2de627e7068124a1dfd15b84d40a2063d3a2
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: aa4ff0d41a61be0bf75c7943082a6ed75e3ded37
+ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210559"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689287"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
@@ -45,7 +45,7 @@ ms.locfileid: "44210559"
 - Office 365 企業版 E5 訂閱（付費或試用版）
 - Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件（已無法再供新訂閱使用，請參閱記事）
 
-通訊符合性原則中所含的使用者必須指派上述其中一個授權。
+必須將上述其中一個授權指派給通訊符合性原則中所含的使用者。
 
 >[!IMPORTANT]
 >Office 365 Advanced 合規性不再銷售為獨立訂閱。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
@@ -96,7 +96,7 @@ ms.locfileid: "44210559"
 |監督的使用者 <br> 非監督的使用者 | 通訊群組 <br> Microsoft 365 群組 | 動態通訊群組 |
 | 檢閱者 | 無 | 通訊群組 <br> 動態通訊群組 <br> 擁有郵件功能的安全性群組 |
   
-當您為監督的使用者選取 Microsoft 365 群組時，該原則會監控共用信箱的內容，以及與群組相關聯的 Microsoft 小組通道。 當您選取通訊群組清單時，該原則會監控個別的使用者信箱。
+當您指派原則中的通訊群組時，該原則會監控通訊群組中每個使用者的所有電子郵件。 當您在原則中指派 Microsoft 365 群組時，該原則會監控傳送給該群組的所有電子郵件，而不是每個群組成員所收到的個別電子郵件。
 
 如需設定群組的詳細資訊，請參閱：
 
