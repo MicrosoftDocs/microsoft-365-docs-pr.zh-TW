@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: 4328855a4a7332c452d7e2832e1b924c16652f8b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 3f4cabab120f418e4c410a1e1f052868ad453f67
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351848"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679067"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -116,8 +116,8 @@ DLP 原則包含一些基本事項：
     
 - 內容是否與組織外部或內部人員共用。
 
-> [!NOTE]
-> 在主持組織 Active Directory 或 Azure Active Directory 租用戶中擁有非來賓帳戶的使用者，將視為組織內部人員。
+  > [!NOTE]
+  > 在主持組織 Active Directory 或 Azure Active Directory 租用戶中擁有非來賓帳戶的使用者，將視為組織內部人員。
     
 #### <a name="types-of-sensitive-information"></a>敏感性資訊類型
 
@@ -127,13 +127,13 @@ DLP 原則有助於保護敏感性資訊 (已定義為**敏感性資訊類型**)
   
 DLP 原則在尋找信用卡號碼等敏感性資訊類型時，並不只是尋找 16 位數的數字。 使用下列各項的組合可定義和偵測每種敏感資訊類型：
   
-- 關鍵字
+- 關鍵字。
     
-- 驗證總和檢查碼或結構的內部函數
+- 驗證總和檢查碼或結構的內部函數。
     
-- 用以尋找模式相符項目的規則運算式評估
+- 用以尋找模式相符項目的規則運算式評估。
     
-- 其他內容檢查
+- 其他內容檢查。
     
 這有助於 DLP 偵測達到高度準確性，同時減少可能造成工作中斷的誤判數。
   
@@ -145,13 +145,19 @@ DLP 原則在尋找信用卡號碼等敏感性資訊類型時，並不只是尋�
   
 您現在可以採取的動作如下：
   
-- **限制對內容的存取** 針對網站內容，這表示文件的權限除了主要網站集合系統管理員、文件擁有者以及最後修改文件的人員以外，所有人都受到限制。 這些人員可以移除文件中的敏感性資訊或採取改善動作。 當文件符合合規性時，將會自動還原原始權限。 當文件的存取權遭到封鎖時，文件會在網站的文件庫中顯示，帶有特殊原則提示圖示。 
+- **限制內容存取權**：根據您的需求，您可以透過三種方式限制內容存取權：
+
+  1. 限制所有人存取內容。
+  2. 限制組織外部人員存取內容。
+  3. 限制「有連結的任何人」存取。
+
+  針對網站內容，這表示文件的權限除了主要網站集合系統管理員、文件擁有者以及最後修改文件的人員以外，所有人都受到限制。 這些人員可以移除文件中的敏感性資訊或採取改善動作。 當文件符合合規性時，將會自動還原原始權限。 當文件的存取權遭到封鎖時，文件會在網站的文件庫中顯示，帶有特殊原則提示圖示。 
     
-    ![顯示文件存取的原則提示被封鎖](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
+  ![顯示文件存取的原則提示被封鎖](../media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
-    若是電子郵件內容，這個動作會禁止郵件傳送。 取決於 DLP 規則的設定，寄件者會看到 NDR 或 (若規則使用通知) 原則提示及/或電子郵件通知。
+  若是電子郵件內容，這個動作會禁止郵件傳送。 取決於 DLP 規則的設定，寄件者會看到 NDR 或 (若規則使用通知) 原則提示及/或電子郵件通知。
     
-    ![未授權收件者必須從郵件中移除的警告](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
+  ![未授權收件者必須從郵件中移除的警告](../media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
 #### <a name="user-notifications-and-user-overrides"></a>使用者通知和使用者覆寫
 
@@ -335,15 +341,14 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
 - 建立並發佈保留標籤之後，最多需要一天的時間來進行同步，以及最多需要七天的時間來自動套用。 如需詳細資訊，請參閱[保留標籤要多久才會生效](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect)。
 - ***僅 SharePoint Online 和商務用 OneDrive 中的項目***才支援在原則中使用保留標籤。
 
+  ![做為條件的標籤](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-![做為條件的標籤](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+  如果您的項目受保留與處置的限制，且您也想要對這些項目套用其他控制，則可以在 DLP 原則中使用保留標籤，例如：
 
-如果您的項目受保留與處置的限制，且您也想要對這些項目套用其他控制，則可以在 DLP 原則中使用保留標籤，例如：
+  - 您發佈了一個名為 **2018 年稅務**的保留標籤，該保留標籤會套用至儲存在 SharePoint 中 2018 年的稅務文件，保留 10 年，然後加以處置。 您也不想要在組織外共用這些項目，則可以使用 DLP 原則執行此動作。
 
-- 您發佈了一個名為 **2018 年稅務**的保留標籤，該保留標籤會套用至儲存在 SharePoint 中 2018 年的稅務文件，保留 10 年，然後加以處置。 您也不想要在組織外共用這些項目，則可以使用 DLP 原則執行此動作。
-
-> [!IMPORTANT]
-> 如果您指定保留標籤做為 DLP 原則的條件，且也將 Exchange 和/或 Teams 包含為位置，您會遇到此錯誤：**「不支援保護電子郵件與小組訊息內套用標籤的內容。請移除下列標籤或關閉 Exchange 與 Teams 做為位置。」** 這是因為 Exchange 傳輸不會在提交與傳遞郵件期間評估標籤中繼資料。 
+  > [!IMPORTANT]
+  > 如果您指定保留標籤做為 DLP 原則的條件，且也將 Exchange 和/或 Teams 包含為位置，您會遇到此錯誤：**「不支援保護電子郵件與小組訊息內套用標籤的內容。請移除下列標籤或關閉 Exchange 與 Teams 做為位置。」** 這是因為 Exchange 傳輸不會在提交與傳遞郵件期間評估標籤中繼資料。 
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>敏感度標籤的支援即將推出
 
@@ -449,15 +454,15 @@ DLP 會使用深度內容分析 (不只是簡單的文字掃描) 來偵測敏感
 
 在安全性與合規性中心中建立 DLP 原則之後，原則會儲存在中央原則存放區中，然後再同步處理至各種內容來源，包括：
   
-- Exchange Online，再從這裡到 Outlook 網頁版和 Outlook
+- Exchange Online，再從這裡到 Outlook 網頁版和 Outlook。
     
-- 商務用 OneDrive 網站
+- 商務用 OneDrive 網站。
     
-- SharePoint Online 網站
+- SharePoint Online 網站。
     
-- Office 桌上型電腦程式 (Excel、PowerPoint 及 Word)
+- Office 桌上型電腦程式 (Excel、PowerPoint 及 Word)。
 
-- Microsoft Teams 頻道和聊天訊息
+- Microsoft Teams 頻道和聊天訊息。
     
 原則同步處理至正確的位置之後，會開始評估內容並強制執行動作。
 <!-- what is the time delay for first deployment of a policy and what is the sync schedule? -->
@@ -519,13 +524,13 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
 
 若要對安全性與合規性中心使用大部分 Cmdlet，您必須：
   
-1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
     
-2. 使用任何 [policy-and-compliance-dlp cmdlets](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)
+2. 使用任何 [policy-and-compliance-dlp Cmdlet](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)。
     
 不過，DLP 報告需要從整個 Microsoft 365 擷取資料，包含 Exchange Online。 有鑑於此，**DLP 報告的 Cmdlet 可在 Exchange Online PowerShell 中使用，但安全性與合規性中心 PowerShell 則不行**。 因此，若要為 DLP 報告使用 Cmdlet，您需要︰
   
-1. [使用遠端 PowerShell 連線到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [使用遠端 PowerShell 連線到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
     
 2. 為 DLP 報告使用下列任何 Cmdlet：
     

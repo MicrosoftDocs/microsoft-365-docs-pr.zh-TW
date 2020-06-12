@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則來主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 6f518ac1ba615ca81f8e45f803d26c54b43d775b
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
+ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231876"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44695136"
 ---
 # <a name="learn-about-retention-policies"></a>了解保留原則
 
@@ -125,9 +125,9 @@ ms.locfileid: "44231876"
 
 如果您的保留原則沒有保留鎖定，則可以隨時關閉或刪除保留原則。 
 
-當您這麼做時，保留在文件保留庫中的任何 SharePoint 或 OneDrive 的內容不會立即永久被刪除。 相反地，為了防止意外的資料遺失，我們有 30 天的寬限期，在這期間，保留文件庫中不會發生該原則的內容到期，因此，如有需要，您可以在這裡還原任何內容。 
+當您這麼做時，保留在文件保留庫中的任何 SharePoint 或 OneDrive 的內容不會立即永久被刪除。 相反地，為了防止意外的資料遺失，我們有 30 天的寬限期，在這期間，保留文件庫中不會發生該原則的內容到期，因此，如有需要，您可以在這裡還原任何內容。 此外，您無法在寬限期期間手動刪除此內容。
 
-您也可以在寬限期期間再次開啟保留原則，這麼一來，將不會刪除該原則的內容。
+您可以在寬限期期間再次開啟保留原則，這麼一來，將不會刪除該原則的內容。
 
 SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延遲保留對應。 如需詳細資訊，請參閱[管理延遲保留信箱](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)。
 
@@ -141,21 +141,20 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
   
 **來自 Exchange Online 的舊版功能：**
 
-- [管理 Office 365 安全性與合規性中心的電子文件探索案例](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (電子文件探索保留) 
-    
 - [就地保留與訴訟暫止](https://go.microsoft.com/fwlink/?linkid=846124) (電子文件探索保留) 
 
 - [如何找出位於 Exchange Online 信箱的保留類型](identify-a-hold-on-an-exchange-online-mailbox.md)
     
-- [保留標記和保留原則](https://go.microsoft.com/fwlink/?linkid=846125)，又稱為[郵件記錄管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (僅刪除)
+- [保留標記和保留原則](https://go.microsoft.com/fwlink/?linkid=846125)，又稱為[通訊記錄管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (僅刪除)
     
+另請參閱[舊版電子文件探索工具淘汰](legacy-ediscovery-retirement.md)。
+
+
 **來自 SharePoint 和 OneDrive 的舊版功能：**
 
-- [管理 Office 365 安全性與合規性中心的電子文件探索案例](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (電子文件探索保留) 
-    
 - [在電子文件探索中心將內容新增至案例及保留來源](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (電子文件探索保留) 
     
-- [文件刪除原則的概觀](https://docs.microsoft.com/microsoft-365/compliance/document-deletion-policies) (僅刪除) 
+- [文件刪除原則](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (僅刪除)
     
 - [設定就地記錄管理](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (僅保留) 
     
@@ -178,8 +177,12 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
 
 ## <a name="related-information"></a>相關資訊
 
-- [建立及設定保留原則](create-retention-policies.md)
 - [了解保留標籤](labels.md)
 - [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Microsoft Teams 的限制和規格](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [符合美國證券交易委員會 (SEC) 規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+
+## <a name="next-steps"></a>後續步驟
+
+如果您已準備好建立保留原則，請參閱[建立及設定保留原則](create-retention-policies.md)。
+
