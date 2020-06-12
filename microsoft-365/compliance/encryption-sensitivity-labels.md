@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78e3fcecd1253229ea9b5ab88147bafe16b85727
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35dfc642aee2e4d602aeb4bc1ea689dbc2589735
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470670"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44678979"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -349,7 +349,7 @@ ms.locfileid: "44470670"
 
 5. 選取 [從現有或自訂權限中選擇權限]****。
 
-6. 在 **[從現有或自訂權限中選擇權限]** 窗格中，選取下拉式方塊，選取您要的 **[檢視器]** 權限，然後選取 **[儲存]**。
+6. 在 [從現有或自訂權限中選擇權限]**** 窗格中，選取下拉式方塊，選取您要的權限，然後選取 [儲存]****。
 
 7. 回到 **[指派權限]** 窗格，選取 **[儲存]**。
 

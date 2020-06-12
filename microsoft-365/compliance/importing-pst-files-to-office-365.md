@@ -18,17 +18,17 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 適用於系統管理員：了解在安全性與合規性中心使用「匯入」服務來將電子郵件資料 (PST 檔案) 大量匯入至 Exchange Online 的使用者信箱。 本主題提供常見問題集，並說明 PST 匯入程序的運作方式。
-ms.openlocfilehash: baf8fc0dbfb464dcf6b8054a9d91aacda00e3da6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 71125a087925e369dd7bb7d61096964bc1abdc63
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636626"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679057"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>將組織的 PST 檔案匯入的概觀
 
 > [!NOTE]
-> 本文適用於系統管理員。 您是否正嘗試匯入 PST 檔案到自己的信箱？ 請參閱[從 Outlook .pst 檔案匯入電子郵件、連絡人和行事曆](https://go.microsoft.com/fwlink/p/?LinkID=785075)
+> 本文適用於系統管理員。 您是否正嘗試匯入 PST 檔案到自己的信箱？ 請參閱[從 Outlook .pst 檔案匯入電子郵件、連絡人和行事曆](https://go.microsoft.com/fwlink/p/?LinkID=785075)。
 
 您可以使用安全性與合規性中心的「匯入」服務將 PST 檔案快速大量匯入至組織中的 Exchange Online 信箱。 有兩種方法可將 PST 檔案匯入到 Office 365：
 
@@ -145,7 +145,7 @@ ms.locfileid: "43636626"
   
  **哪些地區提供網路上傳服務？**
   
-網路上傳的服務範圍目前包括這些地區：美國、加拿大、巴西、英國、歐洲、印度、東亞、東南亞、日本、大韓民國和澳洲。我們會盡快在更多地區提供網路上傳服務。
+網路上傳的服務範圍目前包括這些地區：美國、加拿大、巴西、英國、歐洲、印度、東亞、東南亞、日本、南韓、澳洲和阿拉伯聯合大公國 (UAE)。我們會盡快在更多地區提供網路上傳服務。
 
 > [!NOTE]
 > 目前無法在德國和瑞士使用網路上傳 PST 檔案。 當這些國家/地區開放使用網路上傳時，將會更新此常見問題。
