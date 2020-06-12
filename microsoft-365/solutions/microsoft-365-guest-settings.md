@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 瞭解 Microsoft 365 中提供的來賓共用設定，這可能會影響與組織外部人員共用。
-ms.openlocfilehash: a1c734adfe72d5eff5f18e67116544fd63eb854a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 35a1a20e65eccddcb1117f9def09bd4fdfc7f161
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160132"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679141"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 來賓共用設定參考
 
@@ -195,7 +195,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]****，必須
 |只讓所選安全性群組中的使用者與已驗證的外部使用者共用|關閉|[開啟]**** 時，只有在特定安全性群組中的人員可以與外部使用者共用。 只有*特定人員*連結可供使用。 除非 [只有所選安全性群組中的使用者可以與已驗證之外部使用者和使用匿名連結的使用者進行共用]**** 也為 [開啟]****，否則會停用 [任何人]** 共用|
 |只有所選安全性群組中的使用者可以與已驗證之外部使用者和使用匿名連結的使用者進行共用|關閉|[開啟]**** 時，只有在特定安全性群組中的人員可以與來賓共用。 [任何人]** 和 [特定人員]** 連結都可供使用。|
 
-可同時使用這兩個設定。 如果使用者位於為這兩項設定指定的安全性群組中，則較大的權限層級優先 ([任何人]** 加上 [特定使用者]**)。
+可同時使用這兩個設定。 如果使用者位於為這兩項設定指定的安全性群組中，則較大的權限層級優先 ([任何人]** 加上 [特定使用者]**)。 支援巢狀安全性群組。
 
 ## <a name="sharepoint-site-level"></a>SharePoint (網站層級)
 
