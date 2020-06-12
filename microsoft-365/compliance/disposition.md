@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監視和管理內容處置，不論您使用的是處置檢查，還是會根據您設定的設定自動刪除內容。
-ms.openlocfilehash: 8936289ccf42fa50b78b611c46742710cd035727
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 56eed956e4488932b7bf0f29eb3810964b8cb425
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678989"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702557"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -35,7 +35,10 @@ ms.locfileid: "44678989"
 
 ### <a name="permissions-for-disposition"></a>進行處置的許可權
 
-若要在 Microsoft 365 規範中心中成功存取「**處置**」索引標籤，您必須是「**處置管理**」角色和「 **View-Only 審核記錄**」角色的成員。 我們建議您建立新的角色群組，稱為「**處置檢閱者**」，並將這兩個角色新增至該角色群組。 即使您是全域系統**管理員**使用者，您還是必須成為**處置管理**角色的一部分，才能存取「部署」索引標籤。
+若要成功存取 Microsoft 365 規範中心的「**處置**」索引標籤，使用者必須具有「**處置管理**」角色和「 **View-Only 審核記錄**」角色。 雖然標準建議是將使用者新增至預設角色群組，在此情況下，建議您建立一個名為「**處置檢閱者**」的新角色群組，其具有這兩個角色，並視需要將使用者新增至此群組。 用於進行處理的單一角色群組可減少管理開銷，並可讓使用者更輕鬆地取得所需的組合許可權。
+
+> [!NOTE]
+> 即使全域管理員也必須授與**處置管理**角色。 因此，如果全域管理員需要存取「處置」索引標籤，則其為「**處置檢閱者**」角色群組的成員。 
 
 特定于**View-Only 的審計記錄**角色：
 
