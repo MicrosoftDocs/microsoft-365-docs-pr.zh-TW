@@ -70,6 +70,22 @@
               href: microsoft-365-guest-settings.md
     - name: 在 Microsoft 365 部署威脅防護
       href: deploy-threat-protection.md
+    - name: 為資料隱私權規定部署資訊保護
+      items:
+        - name: 概觀
+          href: information-protection-deploy.md
+        - name: 規劃
+          href: information-protection-deploy-assess.md
+        - name: 追蹤
+          href: information-protection-deploy-compliance.md
+        - name: 防止
+          href: information-protection-deploy-identity-device-threat.md
+        - name: 保護
+          href: information-protection-deploy-protect-information.md
+        - name: 幻燈片
+          href: information-protection-deploy-govern.md
+        - name: 調查
+          href: information-protection-deploy-monitor-respond.md
 - name: 工作負載解決方案和案例
   items:
     - name: 概觀

@@ -130,6 +130,8 @@
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: 查尋裝置和電子郵件
                   href: mtp/advanced-hunting-query-emails-devices.md
+                - name: 去搜尋
+                  href: mtp/advanced-hunting-go-hunt.md
                 - name: 資料結構描述
                   items:
                     - name: 了解結構描述
