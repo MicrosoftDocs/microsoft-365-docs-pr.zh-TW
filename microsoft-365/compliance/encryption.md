@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 使用 Office 365，您的內容會在靜止時以最強的加密、通訊協定和技術進行加密。 深入瞭解 Office 365 中的加密。
-ms.openlocfilehash: 16b7786097690af6a2dbb558582a7cf88e605bec
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 2b1f2927b5d6daeb5e83aae2521d96e329e77c43
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166004"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717226"
 ---
 # <a name="encryption"></a>加密
 
@@ -54,6 +54,7 @@ ms.locfileid: "44166004"
 |裝置上的檔案。 這些檔案可包含儲存于資料夾中的電子郵件、儲存在電腦上的 Office 檔、平板電腦或電話，或儲存至 Microsoft 雲端的資料。  <br/> |在 Microsoft 資料中心中 BitLocker。 您也可以在用戶端電腦上使用 BitLocker，例如 Windows 電腦和平板電腦  <br/> Microsoft 資料中心的分散式金鑰管理員（DKM）  <br/> Microsoft 365 的客戶金鑰  <br/> |[Windows IT 中心： BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Microsoft 信任中心：加密](https://www.microsoft.com/TrustCenter/Security/Encryption) <br/> [雲端安全性控制數列：加密靜態資料](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Exchange Online 如何保護您的電子郵件機密資料](exchange-online-secures-email-secrets.md) <br/> [使用客戶金鑰的服務加密](customer-key-overview.md) <br/> |
 |使用者間傳輸的檔案。 這些檔案可包含使用者共用的 Office 檔或 SharePoint 清單專案。  <br/> |傳輸中的檔 TLS  <br/> |[商務用 OneDrive 和 SharePoint Online 中的資料加密](data-encryption-in-odb-and-spo.md) (英文) <br/> [商務用 Skype Online：安全性和封存](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
 |在收件者之間傳輸電子郵件。 這封電子郵件包含 Exchange Online 所主控的電子郵件。  <br/> |Office 365 郵件加密，包含 Azure Rights Management、S/MIME 和 TLS，以供傳輸電子郵件  <br/> |[Office 365 郵件加密 (OME)](ome.md) <br/> [Office 365 中的電子郵件加密](email-encryption.md) <br/> [Exchange Online 如何使用 TLS 來保護 Office 365 中的電子郵件連線](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
+|使用 Microsoft 團隊在收件者之間傳輸的研討、郵件和檔案。 <br/> |小組使用 TLS 和 MTLS 來加密立即訊息。 媒體流量使用安全的 RTP （SRTP）加密。 小組使用 FIPS （聯邦資訊處理標準）相容性的加密金鑰交換演算法。 <br/> |[小組的加密](https://docs.microsoft.com/microsoftteams/teams-security-guide#encryption-for-teams) <br/> |
 
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>若要達到安全性和合規性需求，需要更多控制加密，該怎麼辦？
 
@@ -78,6 +79,7 @@ Microsoft 365 針對 Office 365 中的大量加密、檔加密和信箱加密，
 |在行動裝置上使用加密的郵件  <br/> |[在您的 Android 裝置上查看加密郵件](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [在 iPhone 或 iPad 上查看加密郵件](https://support.microsoft.com/en-us/office/view-protected-messages-on-your-iphone-or-ipad-4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
 |使用密碼保護加密檔  <br/><br/>  瀏覽器不支援密碼保護。 使用桌上出版的 Word、Excel 及 PowerPoint 以進行密碼保護。 |[新增或移除檔、活頁簿或簡報中的保護](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> 選擇 [**新增保護**] 區段，然後查看 [**使用密碼加密**]。  |
 |移除檔的加密  <br/> |[新增或移除檔、活頁簿或簡報中的保護](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) <br/> 選擇 [**移除保護**] 區段，然後參閱 [**移除密碼加密**]。  |
+
 
 ## <a name="related-topics"></a>相關主題
 

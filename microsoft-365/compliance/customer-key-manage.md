@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 在您設定客戶金鑰之後，請瞭解如何透過還原 AKV 機碼來管理它，以及管理許可權和您的資料加密原則。
-ms.openlocfilehash: dbdbd61b4d06e183d8cc5461122e316b2b6b1797
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 21c1fedce1ebc09e6c33b74a1b2c035c90988e12
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352200"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717304"
 ---
 # <a name="manage-customer-key"></a>管理客戶金鑰
 
@@ -142,13 +142,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 如果信箱已加密，IsEncrypted 屬性會傳回**true**值，如果信箱未加密，則傳回**false**的值。
 
-完成信箱移動的時間取決於信箱的大小。 如果在您指派新的 DEP 後，客戶金鑰尚未從72小時內完全加密，請啟動信箱移動。 若要這麼做，請使用 New-MoveRequest Cmdlet，並提供信箱的別名。 例如：
-  
-```powershell
-New-MoveRequest <alias>
-```
-
-如需此 Cmdlet 的詳細資訊，請參閱[Get-MailboxStatistics](https://docs.microsoft.com/powershell/module/exchange/new-moverequest?view=exchange-ps)。
+完成信箱移動的時間取決於信箱的大小。 若在您指派新的 DEP 後，客戶機碼尚未從72小時內完全加密，請與 Microsoft 支援部門聯繫以尋求協助。 無法再使用 New-MoveRequest Cmdlet 進行本機信箱移動。 如需詳細資訊，請參閱本次[宣告](https://techcommunity.microsoft.com/t5/exchange-team-blog/disabling-new-moverequest-for-local-mailbox-moves/bc-p/1332141)。
 
 ### <a name="verify-encryption-completes-for-sharepointonlineonedriveforbusinessandteamsfiles"></a>驗證 SharePoint 線上、商務 OneDrive 及小組檔案的加密是否已完成
 

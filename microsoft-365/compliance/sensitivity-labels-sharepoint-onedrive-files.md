@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 0ad4381d4a4004d89dd35aa59098f26d8f12dd56
-ms.sourcegitcommit: bc17d4b2197dd60cdff7c9349bbe19eeaac85ac2
+ms.openlocfilehash: d12cb6d83ef343b0dc192d2515da7670cd159be2
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44604308"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724790"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -32,22 +32,22 @@ ms.locfileid: "44604308"
 
 當您在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤時，會啟用所有這些功能。 除了為使用者顯示敏感度標籤之外，針對已套用敏感度標籤（包含以雲端為基礎的金鑰進行加密）的新檔和變更的檔案：
 
-- SharePoint 會辨識套用至 Word、Excel 及 PowerPoint 檔案中 SharePoint 及 OneDrive 的敏感度標籤：當檔案儲存在 SharePoint 中時，會移除來自 Azure 資訊保護的加密，以便處理檔案內容。 如需如何在 SharePoint 儲存檔時保護檔的相關資訊，請參閱[OneDrive For Business and SharePoint Online 中的資料加密](data-encryption-in-odb-and-spo.md)。
+- 若為 Word、Excel 及 PowerPoint 檔案，SharePoint 會辨識標籤，現在可以處理加密檔的內容。
 
-- 當您從 SharePoint 或 OneDrive 中下載或存取此檔案時，標籤的靈敏度標籤及標籤的任何加密設定會重新與檔案一起使用，而且在儲存檔的任何地方都會保留這些設定的強制執行。 由於這種行為，請確定您提供的使用者指引只使用標籤來保護檔。 如需詳細資訊，請參閱[資訊版權管理（IRM）選項和敏感度標籤](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)。
+- 當您從 SharePoint 或 OneDrive 下載或存取這些檔案時，標籤的靈敏度標籤和所有的加密設定都會強制執行，並保留在儲存的位置。 確定您提供使用者指引，只使用標籤來保護檔。 如需詳細資訊，請參閱[資訊版權管理（IRM）選項和敏感度標籤](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)。
 
-- 若要 SharePoint 在上傳時從檔案中移除加密，上傳已標記及已加密檔案的使用者，必須至少要有查看檔案的使用許可權。 如果使用者無法在 SharePoint 外開啟檔案，SharePoint 不會從檔案中移除加密。
+- 當使用者將已標記和加密的檔案上傳至 SharePoint 時，他們至少必須具有這些檔案的「查看」許可權。 例如，他們可以在 SharePoint 外開啟檔案。 如果使用者未使用此最小值，請上載成功，但 SharePoint 無法辨識標籤，也無法處理檔內容。
 
 - 使用網頁上的 Office （Word、Excel、PowerPoint）開啟及編輯具有敏感度標籤的 Office 檔案，以套用加密。 會強制執行以加密指派的許可權。 透過網頁上的 Word，您也可以在編輯這些檔時使用自動標籤。
 
 - 外部使用者可以使用 guest 帳戶存取以加密標記的檔。 如需詳細資訊，請參閱[對外部使用者的支援和標示的內容](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。 
 
-- Office 365 eDiscovery 支援這些檔案的全文搜尋。 資料遺失防護（DLP）原則涵蓋這些檔案中的內容。
+- Office 365 eDiscovery 支援這些檔案的全文搜尋。 資料遺失防護（DLP）原則支援這些檔案中的內容。
 
 > [!NOTE]
 > 若尚未使用雲端型金鑰（內部部署金鑰）套用加密，通常稱為「保留您自己的金鑰」（HYOK）的金鑰管理拓撲，處理檔內容的 SharePoint 行為不會改變。
 >
-> SharePoint 行為也不會變更 SharePoint 中的現有標籤和加密檔。 為了讓這些檔案受益于新功能，在您執行此命令以啟用 SharePoint 和 OneDrive 的靈敏度標籤之後，必須下載並上傳或編輯這些檔案。 例如，他們會在搜尋和 eDiscovery 結果中傳回。
+> SharePoint 行為也不會變更 SharePoint 中的現有標籤和加密檔。 為了讓這些檔案受益于新功能，在您執行此命令以啟用 SharePoint 和 OneDrive 的靈敏度標籤之後，必須下載並上傳或編輯這些檔案。 SharePoint 可以處理這些檔案。 例如，他們會在搜尋和 eDiscovery 結果中傳回。
 
 在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，會有三個新的[審計事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)可用於監視 SharePoint 和 OneDrive 中的檔之敏感度標籤：
 - **已將敏感度標籤套用到檔案**

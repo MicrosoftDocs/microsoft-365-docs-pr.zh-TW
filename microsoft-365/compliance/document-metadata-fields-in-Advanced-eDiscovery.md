@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文針對 Microsoft 365 的「高級 eDiscovery」中的案例，定義了審查集內檔的元資料欄位。
-ms.openlocfilehash: f53a754fce482ddc0944d84059b1e346e93f5067
-ms.sourcegitcommit: 053d42480d8aa3792ecb0027ddd53d383a029474
+ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "42941235"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726456"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>在高級 eDiscovery 中記錄元資料欄位
 
@@ -44,8 +44,8 @@ ms.locfileid: "42941235"
 |附件名稱|AttachmentNames|Attachment_Names|附件的名稱清單。|
 |律師用戶端許可權分數|AttorneyClientPrivilegeScore||律師-用戶端許可權模型內容分數。|
 |作者|作者|Doc_authors|從檔中繼資料製作作者。|
-|密件副本|密件副本|Email_bcc|郵件類型的 [密件副本] 欄位。 Format 是**DisplayName \<SMTPAddress>**。|
-|副本|副本|Email_cc|郵件類型的 [副本] 欄位。 Format 是**DisplayName \<SMTPAddress>**。|
+|密件副本|密件副本|Email_bcc|郵件類型的 [密件副本] 欄位。 Format 為**DisplayName \<SMTPAddress> **。|
+|副本|副本|Email_cc|郵件類型的 [副本] 欄位。 Format 為**DisplayName \<SMTPAddress> **。|
 |符合性標籤|ComplianceLabels|Compliance_labels|套用至 Office 365 內容的[保留標籤](labels.md)。|
 |複合路徑|CompoundPath|Compound_path|描述專案來源的人可讀取路徑。|
 |內容|內容||專案的解壓縮文字。|
@@ -110,10 +110,11 @@ ms.locfileid: "42941235"
 |標示為植入案例問題 1 *||Marked_as_seed_Case_issue_1|標示為來源相關的種子案例問題1。|
 |會議結束日期|MeetingEndDate|Meeting_end_date|會議的會議結束日期。|
 |會議開始日期|MeetingStartDate|Meeting_start_date|會議的會議開始日期。|
-|郵件類型|MessageKind|Message_kind|要搜尋的郵件類型。 可能的值** <br /> <br />： <br />連絡人<br />檔<br />： <br />電子<br />郵件<br />externaldata <br />傳真<br />im 記錄會議 microsoftteams** （傳回來自交談、會議和 Microsoft 小組通話的專案） ** <br /> <br />附注<br />文章<br /> <br />rssfeeds 工作語音信箱**| 
+|郵件類型|MessageKind|Message_kind|要搜尋的郵件類型。 可能的值：連絡人檔： ** <br /> <br /> <br /> <br /> 電子郵件 <br /> externaldata <br /> 傳真 <br /> im 記錄 <br /> <br /> 會議 <br /> microsoftteams** （傳回來自交談、會議和 Microsoft 小組通話的專案） ** <br /> 附注 <br /> 文章 <br /> rssfeeds 工作 <br /> <br /> 語音信箱**| 
 |原生分機|NativeExtension|Native_extension|專案的原生分機。|
 |原生檔案名|NativeFileName|Native_file_name|專案的原生檔案名。|
-|NativeMD5||Native_MD5|檔資料流程的 MD5 雜湊。|
+|NativeMD5||Native_MD5|檔資料流程的 MD5 雜湊（128位雜湊值）。|
+|NativeSHA256||Native_SHA_256|檔資料流程的 SHA256 雜湊（256位雜湊值）。|
 |ND/ET 排序：排除附件|NdEtSortExclAttach|ND_ET_sort_excl_attach|電子郵件執行緒（ET）集和臨近重複（ND）集的串連。 此欄位可用於審閱時間的有效排序。 A **D**的首碼為 ND 集，而**E**的首碼為 ET 集。|
 |ND/ET 排序：包括附件|NdEtSortInclAttach|ND_ET_sort_incl_attach|電子郵件執行緒（ET）集和臨近重複（ND）集的串連。 此欄位可用於審閱時間的有效排序。 A **D**的首碼為 ND 集，而**E**的首碼為 ET 集。 ET 集內的每一個電子郵件專案後面都會加上其適當的附件。|
 |標準化相關性分數案例問題1||Normalized_relevance_score_case_issue_1|從相關性的標準化相關性分數案例問題1。|
@@ -142,7 +143,7 @@ ms.locfileid: "42941235"
 |相關性分數|RelevanceScore||以相關性為基礎的檔相關性分數。|
 |相關性標記|RelevanceTag||以相關性為基礎的檔相關性分數。|
 |代表識別碼|RepresentativeId||每一組確切重複專案的數值識別碼。|
-|寄件者|寄件者|Email_sender|郵件類型的 [寄件者（寄件者）] 欄位。 Format ** \<DisplayName SmtpAddress>**。|
+|寄件者|寄件者|Email_sender|郵件類型的 [寄件者（寄件者）] 欄位。 Format 為**DisplayName \<SmtpAddress> **。|
 |寄件者/作者|SenderAuthor||由專案的寄件者或作者所組成的計算欄位。|
 |寄件者網域|SenderDomain|Email_sender_domain|寄件者的網域。|
 |寄件日期|寄件日期|Email_date_sent|郵件的傳送日期。|
@@ -154,8 +155,8 @@ ms.locfileid: "42941235"
 |標記案例問題1||Tagged_by_Case_issue_1|為相關問題1標記此檔的使用者。|
 |標記|標記|標記|套用於審閱集中的標記。|
 |主題清單|ThemesList|Themes_list|針對分析所計算的主題清單。|
-|職稱|職稱|Doc_title|檔中繼資料中的標題。|
-|收件者|收件者|Email_to|郵件類型的 [至] 欄位。 Format ** \<DisplayName SmtpAddress>**|
+|標題|標題|Doc_title|檔中繼資料中的標題。|
+|收件者|收件者|Email_to|郵件類型的 [至] 欄位。 Format 為**DisplayName \<SmtpAddress> **|
 |電子郵件集中的唯一|UniqueInEmailSet||**False**表示電子郵件組中的附件重複。|
 |已修正|WasRemediated|Was_Remediated|**True**是表示如果專案已修正，否則**為 False**。|
 |字數統計|WordCount|Word_count|專案中的字數。|

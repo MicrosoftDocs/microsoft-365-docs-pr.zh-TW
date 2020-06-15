@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: 透過 Office 365 郵件加密，您的組織可以在組織內部和外部的人員之間傳送和接收加密的電子郵件。 電子郵件加密可協助確保只有預定的收件者可以查看郵件內容。
-ms.openlocfilehash: e4210feb2f510507a1d930ffed6ac784566951b5
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: f5ce3103a6fc8c9f025d657408814a954cf0a13e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214229"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717324"
 ---
 # <a name="message-encryption"></a>郵件加密
 
@@ -33,9 +33,6 @@ ms.locfileid: "44214229"
 ## <a name="how-office-365-message-encryption-works"></a>Office 365 郵件加密的運作方式
 
 本文的其餘部分適用于新的 OME 功能。
-
-> [!NOTE]
-> 對信箱具有「完整存取」許可權的代理人可以讀取傳送至信箱的加密郵件。
 
 Office 365 郵件加密是以 Microsoft Azure 版權管理（Azure RMS）為基礎的線上服務，這是 Azure 資訊保護的一部分。 這包括加密、身分識別和授權原則，以協助保護您的電子郵件。 您可以使用 rights management 範本、[[不要轉寄] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)及 [[僅限加密] 選項](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)來加密郵件。
 

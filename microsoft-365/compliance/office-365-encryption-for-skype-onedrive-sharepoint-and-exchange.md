@@ -16,16 +16,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - SPO_Content
-description: 在本文中，將針對 Skype、OneDrive、SharePoint 和 Exchange Online，尋找 Office 365 加密的描述。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9e250f3fe63875f2f1d65f2765e114f212e72f35
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 摘要： Skype、OneDrive、SharePoint、Microsoft 小組和 Exchange Online 加密的描述。
+ms.openlocfilehash: fc369d167d5aa35507f9509fc1b92294e16f75d9
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031393"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717334"
 ---
-# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-and-exchange-online"></a>商務用 Skype、商務用 OneDrive、SharePoint Online 與 Exchange Online 的加密
+# <a name="encryption-for-skype-for-business-onedrive-for-business-sharepoint-online-microsoft-teams-and-exchange-online"></a>商務用 Skype、商務用 OneDrive SharePoint 線上、Microsoft 團隊和 Exchange Online 的加密
 
 Microsoft 365 是高度安全的環境，可提供多層的廣泛保護：實體資料中心安全性、網路安全性、存取安全性、應用程式安全性和資料安全性。
 
@@ -87,3 +86,32 @@ Exchange Online 會使用 BitLocker 用於所有信箱資料，而 BitLocker 設
 除了服務加密之外，Microsoft 365 還支援客戶金鑰，這是以服務加密為基礎。 客戶金鑰是 Microsoft 管理的金鑰選項，用於 Exchange Online 服務加密，也就是在 Microsoft 藍圖上。 這種加密方法可提供 BitLocker 所提供的增強保護，因為它提供伺服器管理員的隔離和解密資料所需的加密金鑰，而且因為加密是直接套用至資料（與 BitLocker （這會在邏輯磁片磁片區上套用加密），所以從 Exchange 伺服器複製的任何客戶資料仍保持加密。
 
 Exchange Online 服務加密的範圍是在 Exchange Online 中儲存在 rest 上的客戶資料。 （商務用 Skype 存放區幾乎是使用者在 Exchange Online 信箱中所產生的所有內容，因此會繼承 Exchange Online 的服務加密功能。）
+
+
+## <a name="microsoft-teams"></a>Microsoft Teams
+
+小組使用 TLS 和 MTLS 來加密立即訊息。 不論流量是限制在內部網路或越過內部網路周邊，所有伺服器對伺服器的流量都需要 MTLS。
+
+此表摘要說明小組使用的通訊協定。
+
+***流量加密***
+
+|||
+|:-----|:-----|
+|**流量類型**|**加密者**|
+|伺服器對伺服器|MTLS|
+|用戶端對伺服器（ex） 立即訊息和目前狀態）|TLS|
+|媒體流程（ex）。 媒體的音訊和影片共用）|TLS|
+|媒體的音訊和影片共用|SRTP/TLS|
+|信號|TLS|
+|||
+
+#### <a name="media-encryption"></a>媒體加密
+
+媒體流量都是使用安全 RTP (SRTP) 加密，它是即時傳輸通訊協定 (RTP) 的設定檔，為 RTP 流量提供機密性、驗證功能和重播攻擊防護。 SRTP 使用以安全亂數產生器所產生，並使用信號 TLS 通道進行交換的工作階段金鑰。 用戶端對用戶端媒體流量是透過用戶端對伺服器的連線信號進行協商，但是會在用戶端對用戶端直接前往用戶端時以 SRTP 加密。
+
+小組會使用認證型權杖，以透過輪流安全地存取媒體繼電器。 媒體轉送透過 TLS 安全通道交換權杖。
+
+#### <a name="fips"></a>Fips
+
+小組使用 FIPS （聯邦資訊處理標準）相容性的加密金鑰交換演算法。 如需實施 FIPS 的詳細資訊，請參閱[聯邦資訊處理標準（FIPS）出版物 140-2](https://docs.microsoft.com/microsoft-365/compliance/offering-fips-140-2?view=o365-worldwide)。

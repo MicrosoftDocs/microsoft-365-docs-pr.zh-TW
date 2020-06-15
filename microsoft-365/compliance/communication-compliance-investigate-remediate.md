@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3cef513d6b89634e16e0a0b4516f403cf1a794af
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 5bda1556b5726c6e94a6860c7c57f3f7082f2f5e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208395"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717314"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>調查和修復通訊合規性警示
 
@@ -70,7 +70,7 @@ ms.locfileid: "44208395"
 
 ### <a name="using-near-and-exact-duplicate-analysis"></a>使用接近和完全重複的重複分析
 
-通訊相容性原則會自動掃描和預先組旁和確切的郵件副本，而不需要任何其他設定步驟。 此視圖可讓您快速地逐個修復類似的郵件或群組，以減少檢閱者的郵件調查負擔。 當偵測到重複專案時，**鄰近的重複**和/或**完全重複**的控制項會顯示在 [修正動作] 工具列中。
+通訊相容性原則會自動掃描和預先組旁和確切的郵件副本，而不需要任何其他設定步驟。 此視圖可讓您快速地逐個修復類似的郵件或群組，以減少檢閱者的郵件調查負擔。 當偵測到重複專案時，**鄰近的重複**和/或**完全重複**的控制項會顯示在 [修正動作] 工具列中。 如果找不到接近或完全重複的專案，則無法使用此視圖。
 
 #### <a name="to-remediate-duplicates"></a>修正重複專案
 

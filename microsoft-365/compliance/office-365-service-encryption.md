@@ -14,20 +14,22 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要：瞭解 Microsoft Office 365 中的資料恢復能力。
-ms.openlocfilehash: 1c31c0d5524370fd417460fbacf3695df4fa0102
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: e69d35f08070e1fe092ca8a9b4aef6d179711121
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632238"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717344"
 ---
 # <a name="service-encryption"></a>服務加密
 
 除了使用大量的加密、Exchange Online、商務用 Skype、SharePoint 線上和 OneDrive 商務用，也會使用服務加密來加密客戶資料。 服務加密允許兩個主要的管理選項：
 
-- Microsoft 管理所有的加密金鑰。 （目前 SharePoint 線上 OneDrive、商務用 Skype 和商務用 Skype 等此選項。）
+## <a name="microsoft-managed-keys"></a>Microsoft managed 金鑰： 
+Microsoft 管理所有的加密金鑰，包括服務加密的根機碼。 此選項目前可用於 SharePoint 線上和商務 OneDrive。 此選項目前正為 Exchange Online 進行推出。 除非您決定使用客戶金鑰進行板載，否則 Microsoft 受管理的金鑰會提供預設的服務加密。 如果您在稍後的日期決定停止使用客戶金鑰而不遵循資料清除路徑，則您的資料會以 Microsoft 受管理的金鑰保持加密。 您的資料通常會在此預設層級加密，至少一次。 
 
-- 您的組織提供根機碼。 您可以使用 Azure Key Vault 管理這些金鑰。 此選項稱為「客戶金鑰」。 客戶金鑰目前適用于 Exchange Online、SharePoint 線上 OneDrive、商務用 Skype、商務用 Skype 及小組檔案。 如果您使用客戶金鑰，這些金鑰會取代 Microsoft 受管理的金鑰來加密您的資料。
+## <a name="customer-key"></a>客戶金鑰： 
+您可以提供與服務加密搭配使用的根機碼，並使用 Azure Key Vault 管理這些金鑰。 Microsoft 管理所有其他機碼。 此選項叫用客戶機碼，目前可用於 Exchange Online、SharePoint 線上和商務 OneDrive。 （先前稱為 BYOK 的高級加密。 請參閱增強針對原始宣告的[Office 365 客戶的透明性和控制權](https://blogs.office.com/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)。
 
 服務加密可提供多項優點。 例如，客戶金鑰：
 
@@ -38,8 +40,6 @@ ms.locfileid: "43632238"
 - 讓 Windows 作業系統管理員分開存取作業系統所儲存或處理的客戶資料。
 
 - 增強 Microsoft 365 的功能，以滿足具有加密之相容性需求的客戶的需求。
-
-## <a name="customer-key"></a>客戶金鑰
 
 使用客戶金鑰，您可以使用內部部署硬體服務模組（HSM）或 Azure Key Vault （AKV）來產生您自己的加密金鑰。 不論您產生金鑰的方式為何，您可以使用 AKV 來控制和管理 Office 365 所使用的加密金鑰。 當您的金鑰儲存在 AKV 中之後，即可將其當作用來加密您的信箱資料或檔案之其中一個 keychains 的根。
 
@@ -56,4 +56,4 @@ ms.locfileid: "43632238"
 - [滾動或輪替客戶金鑰或可用性金鑰](customer-key-availability-key-roll.md)
 
 - [瞭解可用性金鑰](customer-key-availability-key-understand.md)
- 
+

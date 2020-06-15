@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、OneDrive 商務及小組檔案的 Microsoft 365 的客戶金鑰。
-ms.openlocfilehash: d9438b1578b5708e9b7740f001da3870c3616c39
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 4d9a6292482a06a4629d394c5ff422ba02bec55e
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352270"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717260"
 ---
 # <a name="set-up-customer-key"></a>設定客戶金鑰
 
@@ -108,15 +108,15 @@ SharePoint 線上和商務 OneDrive：
 
 2. 登入之後，請流覽至**儀表板**。
 
-3. 選擇 [**提供**]，並查看目前的提供方案清單。
+3. 從導覽列中選擇 [**部署**]，**或**選取 [在**部署**資訊卡片上**查看所有部署資源**]，然後查看目前的提供方案清單。
 
-4. 選擇 [**深入瞭解**]，以瞭解適用于您的產品：
+4. 選擇適用于您的優惠資訊卡片：
 
-   - **Exchange Online 和商務用 Skype：** 選擇 [**深入瞭解**Exchange 提供的**客戶金鑰**]。
+   - **Exchange Online 和商務用 Skype：** 選擇**Exchange online 提供的要求加密金鑰**說明。
 
-   - **SharePoint 線上、商務 OneDrive 及小組檔案：** 選擇 [**深入瞭解** **SharePoint 的客戶金鑰和商務用 OneDrive** ] 提供。
+   - **SharePoint 線上、OneDrive 及小組檔案：** 選擇**Sharepoint 的要求加密金鑰說明，並 OneDrive**提供。
 
-5. 在 [**提供詳細資料**] 頁面上，選擇 [**建立要求**]。
+5. 當您複習提供詳細資料之後，請選擇 [**繼續] 步驟 2**。
 
 6. 在 [服務] 表單上填寫所有適用的詳細資料和要求的資訊。 請特別注意您的組織中您要授權的監察官員，以核准加密金鑰和資料的永久和不可恢復的毀壞專案。 當您完成表單之後，請選擇 [**提交**]。
 
@@ -137,7 +137,7 @@ SharePoint 線上和商務 OneDrive：
 
 3. 請與 Microsoft 聯繫以完成流程。 如需商務小組的 SharePoint 和 OneDrive，請與[spock@microsoft.com](mailto:spock@microsoft.com)聯繫。 若為 Exchange Online 和商務用 Skype，請與[exock@microsoft.com](mailto:exock@microsoft.com)聯繫。 在您的電子郵件中包含下列專案：
 
-   **Subject**： \< *您租使用者的完整功能變數名稱*的客戶金鑰\>
+   主旨 **：客戶**金鑰\<*Your tenant's fully-qualified domain name*\>
 
    **Body**：訂閱 IDs，您想要完成其強制保留期間。
    每個訂閱的 AzProviderFeature 輸出。

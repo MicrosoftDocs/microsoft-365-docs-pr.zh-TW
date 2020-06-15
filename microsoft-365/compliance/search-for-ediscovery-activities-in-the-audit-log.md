@@ -16,22 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: 瞭解當合規性管理員在安全性 & 合規性中心執行內容搜尋和 eDiscovery 案例工作時，如何搜尋審核記錄檔中所記錄的事件。
-ms.openlocfilehash: f575953fb2d48ac996e443589ff312743d93d424
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: e7ed3ddf16d22750449d3211d96800334676e519
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943652"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726518"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>在稽核記錄中搜尋電子文件探索活動
 
-在安全性 & 規範中心或執行對應的 PowerShell Cmdlet 時，所執行的內容搜尋和 eDiscovery 相關活動都會記錄在審核記錄中。 當系統管理員或 eDiscovery 管理員（或任何已指派 eDiscovery 許可權的使用者）在安全性 & 合規性中心執行下列內容搜尋和核心 eDiscovery 工作時，會記錄事件：
+在安全性 & 合規性中心或執行對應的 PowerShell Cmdlet 時，所執行的內容搜尋和 eDiscovery 相關活動（適用于核心 eDiscovery 和高級 eDiscovery）會記錄在審核記錄檔中。 當系統管理員或 eDiscovery 管理員（或任何已指派 eDiscovery 許可權的使用者）在安全性 & 合規性中心執行下列內容搜尋和核心 eDiscovery 工作時，會記錄事件：
   
-- 建立及管理電子文件探索案件
+- 建立及管理核心和高級 eDiscovery 案例
 
 - 建立、開啟及編輯 [內容搜尋]
 
 - 執行 [內容搜尋] 動作，例如預覽、匯出及刪除搜尋結果
+
+- 在高級電子檔探索中管理保管人和審查集
 
 - 設定 [內容搜尋] 的權限篩選
 
@@ -47,31 +49,33 @@ ms.locfileid: "43943652"
 目前，您必須在審計記錄中執行一些特定工作以查看 eDiscovery 活動。 方法如下。
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。
-    
+
 2. 使用您的公司或學校帳戶登入。
-    
+
 3. 在左窗格中，按一下 [**搜尋**]，然後按一下 [**審核記錄搜尋**]。
-    
-4. 在 [**活動**] 下拉式清單中，按一下 [ **eDiscovery 活動**] 底下的一或多個要搜尋的活動。 您也可以按一下 [ **ediscovery 活動**]，以搜尋所有與 eDiscovery 相關的活動。 
-    
+
+4. 在 [**活動**] 下拉式清單中，于 [ **eDiscovery 活動**] 或 [**高級 eDiscovery 活動**] 底下，按一下一或多個要搜尋的活動。
+
     > [!NOTE]
-    > [活動] 下拉式清單中也包含一組名為「 **eDiscovery Cmdlet** 」的活動，會傳回 Cmdlet 審核記錄檔中的記錄。 
+    > [**活動**] 下拉式清單中也包含一組名為「 **eDiscovery Cmdlet** 」的活動，會傳回 Cmdlet 審核記錄檔中的記錄。
   
-5.  選取 [日期和時間範圍]，以顯示在該期間內發生的 eDiscovery 事件。 
-    
-6. 在 [**使用者**] 方塊中，選取一或多個要顯示搜尋結果的使用者。 將此方塊保留空白，可傳回所有使用者的專案。 
-    
-7. 按一下 [搜尋]**** 以使用您的搜尋準則執行搜尋。 
-    
+5. 選取 [日期和時間範圍]，以顯示在該期間內發生的 eDiscovery 事件。 
+
+6. 在 [**使用者**] 方塊中，選取一或多個要顯示搜尋結果的使用者。 將此方塊保留空白，可傳回所有使用者的專案。
+
+7. 按一下 [搜尋]**** 以使用您的搜尋準則執行搜尋。
+
 8. 搜尋結果顯示後，您可以按一下 [**篩選結果**] 以篩選或排序所產生的活動記錄。 不幸的是，您無法使用篩選來明確排除某些活動。 
-    
+
 9. 若要查看活動的詳細資料，請按一下搜尋結果清單中的活動記錄。 
-    
-    隨即會顯示 [飛出] 頁面，其中包含事件記錄中的詳細**內容**。 若要顯示其他詳細資料，請按一下 [**詳細資訊**]。 如需這些屬性的說明，請參閱[eDiscovery 活動的詳細](#detailed-properties-for-ediscovery-activities)內容一節。 
+
+    隨即會顯示 [飛出] 頁面，其中包含事件記錄中的詳細**內容**。 若要顯示其他詳細資料，請按一下 [**詳細資訊**]。 如需這些屬性的說明，請參閱[eDiscovery 活動的詳細](#detailed-properties-for-ediscovery-activities)內容一節。
+
+10. 如有需要，您可以將審核記錄搜尋結果匯出至 CSV 檔案，然後使用 Excel Power Query 功能格式化及篩選這些記錄。 如需詳細資訊，請參閱[匯出、設定及檢視稽核記錄檔的記錄](export-view-audit-log-records.md)。
 
 ## <a name="ediscovery-activities"></a>電子文件探索活動
 
-下表說明當系統管理員或 eDiscovery 管理員使用安全性 & 合規性中心執行 eDiscovery 相關的活動時，或在安全性 & 規範中心 PowerShell 中執行對應指令程式時所記錄的內容搜尋和核心 eDiscovery 活動。 
+下表說明當系統管理員或 eDiscovery 管理員使用安全性 & 合規性中心執行 eDiscovery 相關的活動時，或在安全性 & 規範中心 PowerShell 中執行對應指令程式時所記錄的內容搜尋和核心 eDiscovery 活動。 另外請注意，當您搜尋此清單中的活動時，會傳回在 [高級] 中執行的一些活動。
   
 > [!NOTE]
 > 本節所述的 eDiscovery 活動提供與下一節所述 eDiscovery Cmdlet 活動類似的資訊。 我們建議您使用本節所述的 eDiscovery 活動，因為它們會出現在審計記錄搜尋結果的30分鐘內。 在審計記錄搜尋結果中顯示 eDiscovery Cmdlet 活動最多需要24小時。 
@@ -118,9 +122,40 @@ ms.locfileid: "43943652"
 |(無)|ViewedSearchPreviewed|Get-ComplianceSearchAction 預覽|使用者在安全性與合規性中心或執行 Cmdlet 預覽內容搜尋的結果。|
 |||||
   
+## <a name="advanced-ediscovery-activities"></a>進階電子文件探索活動
+
+下表說明記錄在審核記錄中的高級 eDiscovery 活動。 這些活動（除了相關的 eDiscovery 活動之外，還可用於協助您追蹤高級 eDiscovery 案例中的活動進展。
+
+|**易記名稱**|**作業**|**描述**|
+|:-----|:-----|:-----|
+|已將資料新增至另一個檢閱集|AddWorkingSetQueryToWorkingSet|使用者已將一個檢閱集中的文件新增至不同檢閱集。|
+|已將資料新增至檢閱集|AddQueryToWorkingSet|使用者已將搜尋結果從與進階電子文件探索案例相關的內容搜尋新增至檢閱集。|
+|已將非 Microsoft 365 的資料新增至檢閱集|AddNonOffice365DataToWorkingSet|使用者已將非 Microsoft 365 的資料新增至檢閱集。|
+|已將修復的文件新增至檢閱集|AddRemediatedData|使用者將已修正索引錯誤的文件上傳至檢閱集。|
+|已分析檢閱集中的資料|RunAlgo|使用者已對檢閱集中的文件執行分析。|
+|已標註檢閱集中的文件|AnnotateDocument|使用者已標註檢閱集中的文件。 標註包含校訂文件中的內容。|
+|比較載入集合|LoadComparisonJob|使用者比較了檢閱集中的兩個不同載入集合。 載入集合會在案例相關內容搜尋中的資料新增至檢閱集後建立。|
+|已將校訂後的文件轉換為 PDF|BurnJob|使用者已將檢閱集中所有已校訂的文件轉換為 PDF 檔案。|
+|已建立檢閱集|CreateWorkingSet|使用者已建立檢閱集。|
+|已建立檢閱集搜尋|CreateWorkingSetSearch|使用者已建立搜尋查詢來搜尋檢閱集中的文件。|
+|已建立標籤|CreateTag|使用者已在檢閱集中建立標籤群組。 標籤群組可以包含一個或多個子標籤。 這些標籤可用來標記檢閱集中的文件。|
+|已刪除檢閱集搜尋|DeleteWorkingSetSearch|使用者已刪除檢閱集中的搜尋查詢。|
+|已刪除標籤|DeleteTag|使用者已在檢閱集中刪除標籤或標籤群組。|
+|已下載文件|DownloadDocument|使用者已從檢閱集下載文件。|
+|已編輯標籤|UpdateTag|使用者已變更檢閱集中的標籤。|
+|已從檢閱集匯出文件|ExportJob|使用者已從檢閱集匯出文件。|
+|已修改案例設定|UpdateCaseSettings|使用者已修改案例的設定。 案例設定包括案例資訊、存取權限及控制搜尋和分析行為的設定。|
+|已修改檢閱集搜尋|UpdateWorkingSetSearch|使用者已編輯檢閱集中的搜尋查詢。|
+|已預覽檢閱集搜尋|PreviewWorkingSetSearch|使用者已預覽檢閱集中的搜尋查詢結果。|
+|已修復錯誤的文件|ErrorRemediationJob|使用者已修正包含索引錯誤的檔案。|
+|已標記文件|TagFiles|使用者已標記檢閱集中的文件。|
+|已標記查詢結果|TagJob|使用者已標記檢閱集中所有符合搜尋查詢準則的文件。|
+|已檢視檢閱集中的文件|ViewDocument|使用者已檢視檢閱集中的文件。|
+|||
+
 ## <a name="ediscovery-cmdlet-activities"></a>eDiscovery Cmdlet 活動
 
-下表列出當系統管理員或使用者利用安全性 & 合規性中心，或是在已連線到組織之安全性 & 合規性中心的遠端 PowerShell 中執行對應的指令程式時，所記錄的 Cmdlet 審核記錄記錄。 「審計記錄」記錄中的詳細資訊與此表中所列的指令程式活動和上一節所述 eDiscovery 活動的不同。 
+下表列出當系統管理員或使用者利用安全性 & 合規性中心，或是在已連線到組織之安全性 & 合規性中心的遠端 PowerShell 中執行對應的指令程式時，所記錄的 Cmdlet 審核記錄記錄。 「審計記錄」記錄中的詳細資訊與此表中所列的指令程式活動和上一節所述 eDiscovery 活動的不同。
   
 如先前所述，在審計記錄搜尋結果中顯示 eDiscovery Cmdlet 活動時，最多需要24小時的時間。
   
