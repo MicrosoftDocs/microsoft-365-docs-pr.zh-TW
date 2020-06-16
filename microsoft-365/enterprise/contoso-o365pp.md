@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Microsoft 365 Apps 企業版。
-ms.openlocfilehash: 2ff05a079d83389ed94445fc011b9f7902c6de56
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 4a36e33a6f2ef6df880864dd852f0f63056946e6
+ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011884"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44679035"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>適用於 Contoso 的 Microsoft 365 Apps 企業版部署
 
-Contoso 將其電腦升級至 Windows 10 企業版和 Microsoft 365 Apps 企業版，讓協同合作更有效率、更佳的安全性，以及更現代化的桌面體驗。Contoso 在評估基礎架構和業務需求後，識別這些部署的關鍵需求：
+Contoso upgraded their PCs to Windows 10 Enterprise and Microsoft 365 Apps for enterprise to enable more effective collaboration, better security, and a more modern desktop experience. After assessing their infrastructure and business needs, Contoso identified these key requirements for the deployment:
 
 - 所有電腦都應該執行 Microsoft 365 Apps 企業版
 - 部署應盡可能使用現有管理工具和基礎架構
@@ -33,7 +33,7 @@ Contoso 將其電腦升級至 Windows 10 企業版和 Microsoft 365 Apps 企業�
 
 ## <a name="deployment-tools"></a>部署工具
 
-Contoso 根據自身需求，選擇以 Configuration Manager (最新分支) 部署 Windows 10 企業版和 Microsoft 365 Apps 企業版。Configuration Manager 可針對大型環境進行調整並提供安裝、更新及設定的全面控制，其內建功能更讓您可輕鬆且有效率地部署及管理 Office，包括：
+Based on their requirements, Contoso chose to deploy Windows 10 Enterprise and Microsoft 365 Apps for enterprise with Configuration Manager (Current Branch). Configuration Manager scales for large environments and provides extensive control over installation, updates, and settings. It also has built-in features to make it easier and more efficient to deploy and manage Office, including:
 
 - 對等快取，可協助在部署至遠端位置裝置時限制網路流量
 - Office 用戶端管理儀表板，讓您更輕鬆地部署 Office 和監控更新，並可讓系統管理員存取最新的部署和管理功能
@@ -44,19 +44,19 @@ Contoso 根據自身需求，選擇以 Configuration Manager (最新分支) 部�
 
 ## <a name="managing-the-deployment-and-updates"></a>管理部署及更新
 
-Microsoft 365 Apps 企業版有新的發行模式：Office 即服務。此服務模式能讓您輕鬆掌握最新功能，但通常需要 IT 部門變更新版本的部署和測試方式。為了將相容性問題降至最低並確保電腦為最新狀態，Contoso 以兩個階段部署 Windows 和 Office： 
+Microsoft 365 Apps for enterprise has a new release model: Office as a service. The service model makes it easy to stay up to date with new features, but often requires a change in approach for IT departments in how new releases are deployed and tested. To minimize any compatibility issues and to ensure their computers stayed up to date, Contoso deployed Windows and Office in two stages: 
 
-- 第一階段，他們將 Microsoft 365 Apps 企業版部署到組織中具代表性的一小群裝置。此試驗群組用於測試應用程式、增益集和 Microsoft 365 Apps 企業版的硬體
+- For the first stage, they deployed Microsoft 365 Apps for enterprise to a small set of representative devices across the organization. This pilot group was used to test apps, add-ins, and hardware with Microsoft 365 Apps for enterprise
 - Contoso 在四個月後解決應用程式、增益集與硬體試驗群組中的所有重大問題， 並將 Microsoft 365 Apps 企業版部署至整個組織的裝置 (大型群組)。 
 
-Contoso 不使用 Configuration Manager 來管理 Office 的更新，而是啟用雲端自動更新。雲端式更新可在降低管理成本的同時，確保裝置維持最新版本。 
+Instead of managing updates to Office with Configuration Manager, Contoso enabled automatic updates from the cloud. Cloud-based updates reduced their administrative overhead while ensuring the devices stayed up to date. 
 
-Contoso 遵循相同的兩階段方式進行功能更新和部署 Office：在試驗群組中的裝置會比其他組織中的裝置 (大型群組) 早四個月收到功能更新。為了在 Office 中啟用此功能，Contoso 使用兩個建議的[更新通道](https://docs.microsoft.com/DeployOffice/overview-update-channels)： 
+Contoso followed the same two-stage approach for feature updates that they used for deploying Office: devices in the pilot group received feature updates four months earlier than devices in the rest of the organization (the broad group). To enable this for Office, Contoso used two recommended [update channels](https://docs.microsoft.com/DeployOffice/overview-update-channels): 
 
-- 對試驗群組更新的半年通道 (已設定目標) 
-- 對大型群組更新的半年通道。 
+- 對試驗群組更新的半年通道(預覽) 
+- 對大型群組更新的半年企業通道。 
 
-半年 (已設定目標) 通道比半年通道早四個月發行 Microsoft 365 Apps 企業版，因此 Contoso 有時間驗證更新並無需管理。 
+由於半年企業通道 (預覽) 比半年企業通道早四個月發行 Microsoft 365 Apps 企業版，因此 Contoso 有時間在無需管理更新下，進型驗證更新。 
 
 ## <a name="deployment-process"></a>部署程序
 
@@ -64,9 +64,9 @@ Contoso 遵循相同的兩階段方式進行功能更新和部署 Office：在�
 
 1. 在部署之前，他們會使用「整備工具組」測試的應用程式和 Office 增益集，評估其與 Microsoft 365 Apps 企業版的相容性。
 2. Contoso 啟用 Configuration Manager 的用戶端對等快取，協助在部署至遠端位置的用戶端裝置時限制網路流量。 
-3. 他們在 Configuration Manager 中將兩個部署群組定義為裝置集合：試驗群組和大型群組。試驗群組包含整個組織中具代表性的一小群裝置，用來對 Windows 10 企業版和 Microsoft 365 Apps 企業版的應用程式、增益集及硬體執行額外測試。 
-4. 他們使用 Office 用戶端管理儀表板和 Office 365 安裝精靈建立 Ofiiice 部署套件，這兩種皆為 Configuration Manager 控制台的一部分。建立的 Microsoft 365 Apps 企業版套件有兩個，一個用於試驗群組半年通道 (已設定目標)，另一個用於大型群組的半年通道。 
-5. 每個 Office 套件皆包含英文、法文及德文語言套件。如果裝置需要的語言不在 Office 套件中，則會從 Office 內容傳遞網路 (CDN) 自動下載。
+3. They defined two deployment groups as device collections in Configuration Manager: a pilot group and a broad group. The pilot group, which included a small set of representative devices across the organization, was used to do additional testing of apps, add-ins, and hardware with Windows 10 Enterprise and Microsoft 365 Apps for enterprise. 
+4. They created deployment packages for Office using the Office Client Management dashboard and the Office 365 Installer wizard, both of which are part of the Configuration Manager console. They built two Microsoft 365 Apps for enterprise packages, one for the pilot group on the Semi-Annual Enterprise Channel (Preview) and one for the broad group on the Semi-Annual Enterprise Channel. 
+5. As part of each Office package, they included English, French, and German Language packs. If a device required a language not included in the Office package, it was automatically downloaded from the Office Content Delivery Network (CDN).
 6. 他們先使用 Office 套件中的內建功能自動移除所有現有的 MSI 版本 Office，再安裝 Microsoft 365 Apps 企業版。
 7. 他們在 Configuration Manager 中將 Windows 和 Office 套件部署到內部網路中發佈點，然後執行 Configuration Manager 部署工作順序將試驗 Microsoft 365 Apps 企業版套件部署到試驗群組。
 8. Contoso 在試驗群組解決任何相容性問題後，即會執行工作順序將各種 Microsoft 365 Apps 企業版套件部署到大型群組。

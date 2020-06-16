@@ -28,9 +28,10 @@
         - name: 步驟 6： 訓練遠端工作者
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: 使用 Microsoft 365 設定安全的共同作業
-      href: setup-secure-collaboration-with-teams.md
       items:
-        - name: 使用 Microsoft Teams 的三層保護
+        - name: 概觀
+          href: setup-secure-collaboration-with-teams.md
+        - name: 步驟 1： 使用 Microsoft Teams 的三層保護
           items:
             - name: 三層防護概觀
               href: configure-teams-three-tiers-protection.md
@@ -42,7 +43,7 @@
               href: configure-teams-highly-sensitive-protection.md
             - name: 為團隊設定安全性隔離
               href: secure-teams-security-isolation.md
-        - name: 設定外部共用
+        - name: 步驟 2： 設定外部共用
           items:
             - name: 外部共用概觀
               href: collaborate-with-people-outside-your-organization.md
@@ -69,7 +70,11 @@
             - name: 外部共用參考
               href: microsoft-365-guest-settings.md
     - name: 在 Microsoft 365 部署威脅防護
-      href: deploy-threat-protection.md
+      items:
+        - name: 概觀
+          href: deploy-threat-protection.md
+        - name: 部署威脅防護的步驟
+          href: deploy-threat-protection-configure.md
     - name: 為資料隱私權規定部署資訊保護
       items:
         - name: 概觀

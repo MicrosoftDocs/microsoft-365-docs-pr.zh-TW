@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: 3f4cabab120f418e4c410a1e1f052868ad453f67
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: c6a099924852927a319990d3886a10479e96999b
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679067"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726556"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -416,7 +416,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
   
 1. **以測試模式啟動但不顯示原則提示**，然後使用 DLP 報告和任何事件報告來評估影響。 您可以使用 DLP 報告來檢視原則相符項目的號碼、位置、類型和嚴重性。 根據結果，您可以視需要微調規則。 在測試模式中，DLP 原則不會影響您的組織中工作人員的生產力。 
     
-2. **移至測試模式並顯示通知和原則提示**，以便您開始教導使用者相關規範原則及熟悉即將套用的規則。在這個階段，您也可以要求使用者回報誤判，以便您進一步調整規則。 
+2. **Move to Test mode with notifications and Policy Tips** so that you can begin to teach users about your compliance policies and prepare them for the rules that are going to be applied. At this stage, you can also ask users to report false positives so that you can further refine the rules. 
     
 3. **開始完整強制執行原則**，以便套用規則中的動作，並保護內容。 繼續監視 DLP 報告以及任何事件報告或通知，確保得到您想要的結果。 
 
@@ -448,7 +448,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
   
 ## <a name="how-dlp-policies-work"></a>DLP 原則的運作方式
 
-DLP 會使用深度內容分析 (不只是簡單的文字掃描) 來偵測敏感資訊。此深度內容分析會使用關鍵字比對、字典比對、規則運算式評估、內部函數和其他方法來偵測符合 DLP 原則的內容。可能只有一小部分的資料會被視為敏感資訊。DLP 原則可識別、監視和自動保護該項資料，而不會妨礙或影響到使用其餘內容的人員。
+DLP detects sensitive information by using deep content analysis (not just a simple text scan). This deep content analysis uses keyword matches, dictionary matches, the evaluation of regular expressions, internal functions, and other methods to detect content that matches your DLP policies. Potentially only a small percentage of your data is considered sensitive. A DLP policy can identify, monitor, and automatically protect just that data, without impeding or affecting people who work with the rest of your content.
   
 ### <a name="policies-are-synced"></a>原則會同步處理
 
@@ -480,9 +480,13 @@ DLP 會使用深度內容分析 (不只是簡單的文字掃描) 來偵測敏感
   
 ![顯示 DLP 原則如何以非同步的方式評估內容的圖表](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
-<!-- conflict with a DLP policy is bad wording --> 最後，文件可能會違反 DLP 原則，但也可能會符合 DLP 原則。例如，如果人員在文件中加入信用卡號碼，有可能會導致 DLP 原則自動封鎖文件的存取。但如果人員稍後移除敏感資訊，則會在下次依據原則進行評估時自動復原動作 (在此案例中為封鎖)。
+<!-- conflict with a DLP policy is bad wording -->
+Finally, documents can conflict with a DLP policy, but they can also become compliant with a DLP policy. For example, if a person adds credit card numbers to a document, it might cause a DLP policy to block access to the document automatically. But if the person later removes the sensitive information, the action (in this case, blocking) is automatically undone the next time the document is evaluated against the policy.
   
 DLP 會評估可編製索引的任何內容。 若要進一步了解依預設會對哪些檔案類型進行編目，請參閱 [SharePoint Server 中的預設編目副檔名和剖析檔案類型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
+
+> [!NOTE]
+> 預設會封鎖 SharePoint中新檔案的外部共用，除非至少有一個DLP原則對新項目進行掃描。 如需詳細資訊，請參閱 [透過預設，將新檔案標示為敏感檔案](https://docs.microsoft.com/sharepoint/sensitive-by-default)。 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、Outlook 和 Outlook 網頁版中的原則評估
 
