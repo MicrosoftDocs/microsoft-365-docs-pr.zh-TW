@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: d743a397d16e107b43c07ac1556b0a6b01c7181a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 7602042c0bd8fb46b497bdf0fc16bb6b02809074
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352126"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726527"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
 ## <a name="introduction"></a>簡介
 
-需要了解是否有使用者已檢視特定文件或清除信箱中的項目嗎？ 如果是，您可以使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 為什麼使用整合的稽核記錄？ 因為您可以在 Office 365 中搜尋下列類型的使用者和系統管理員活動：
+需要了解是否有使用者已檢視特定文件或清除信箱中的項目嗎？ 如果是，您可以使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 為什麼使用整合的稽核記錄？ 因為您可以在 Office 365 中搜尋下列類型的[使用者和系統管理員活動](#audited-activities)：
 
 - SharePoint Online 和商務用 OneDrive 中的使用者活動
 
@@ -310,10 +310,10 @@ ms.locfileid: "44352126"
 |[使用者管理活動](#user-administration-activities)|[Azure AD 群組管理活動](#azure-ad-group-administration-activities)|[應用程式管理活動](#application-administration-activities)|
 |[角色管理活動](#role-administration-activities)|[目錄管理活動](#directory-administration-activities)|[電子文件探索活動](#ediscovery-activities)|
 |[進階電子文件探索活動](#advanced-ediscovery-activities)|[Power BI 活動](#power-bi-activities)|[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams 活動](#microsoft-teams-activities)|[Microsoft Teams 醫療保健活動](#microsoft-teams-healthcare-activities)|[Yammer 活動](#yammer-activities)|
-|[Microsoft Power Automate 活動](#microsoft-power-automate-activities)|[Microsoft Power Apps 活動](#microsoft-power-apps-activities)|[Microsoft Stream 活動](#microsoft-stream-activities)|
-|[內容總管活動](#content-explorer-activities)|[隔離活動](#quarantine-activities)|[Microsoft Teams 活動](#microsoft-forms-activities)
-|[敏感度標籤活動](#sensitivity-label-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)|||
+|[Microsoft Teams 活動](#microsoft-teams-activities)|[Microsoft Teams 醫療保健活動](#microsoft-teams-healthcare-activities)|[Microsoft Teams 班次活動](#microsoft-teams-shifts-activities)|
+|[Yammer 活動](#yammer-activities)|[Microsoft Power Automate 活動](#microsoft-power-automate-activities)|[Microsoft Power Apps 活動](#microsoft-power-apps-activities)|
+|[Microsoft Stream 活動](#microsoft-stream-activities)|[內容總管活動](#content-explorer-activities)|[隔離活動](#quarantine-activities)|
+|[Microsoft Teams 活動](#microsoft-forms-activities)|[敏感度標籤活動](#sensitivity-label-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)|
 ||||
 
 ### <a name="file-and-page-activities"></a>檔案和頁面活動
@@ -336,7 +336,7 @@ ms.locfileid: "44352126"
 |已刪除記錄合規性原則標籤|ComplianceRecordDelete|已歸類為記錄的文件已刪除。 將內容歸類為記錄的保留標籤套用至文件時，文件就會視為記錄。|
 |偵測到的文件敏感度不相符|DocumentSensitivityMismatchDetected|使用者將文件上傳到受敏感度標籤保護的網站，且文件的敏感度標籤優先於網站的敏感度標籤。 例如，套用「機密」標籤的文件上傳到套用「一般」標籤的網站。 <br/><br/> 如果文件套用的敏感度標籤，其優先順序低於網站所套用的敏感度標籤，則不會觸發此事件。 例如，套用「一般」標籤的文件上傳到標記為「機密」的網站。 如需敏感度標籤優先順序的詳細資訊，請參閱[標籤優先順序 (順序很重要)](sensitivity-labels.md#label-priority-order-matters)。|
 |在檔案中偵測到惡意程式碼|FileMalwareDetected|SharePoint 防毒引擎在檔案中偵測到惡意程式碼。|
-|已捨棄檔案簽出|FileCheckOutDiscarded|使用者捨棄 (或復原) 已簽出的檔案。這表示會捨棄使用者在簽出時對檔案所做的任何變更，而且不會儲存至文件庫中的文件版本。|
+|已捨棄檔案簽出|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |下載的檔案|FileDownloaded|使用者從網站下載文件。|
 |已修改檔案|FileModified|使用者或系統帳戶修改網站上的文件內容或屬性。|
 |(無)|FileModifiedExtended|這與「已修改檔案」(FileModified) 活動相關聯。 當相同人員持續修改某個檔案一段時間 (最多 3 小時)，便會記錄 FileModifiedExtended 事件。 <br/><br/> 記錄 FileModifiedExtended 事件的目的在於減少持續修改某個檔案時，記錄 FileModified 事件的數目。 這有助於減少多個 FileModified 記錄的干擾，以了解哪些基本上是同樣的使用者活動，並讓您專注在初始 (且更重要的) FileModified 事件。|
@@ -673,38 +673,11 @@ ms.locfileid: "44352126"
 如需已記錄電子文件探索活動的清單和詳細描述，請參閱[搜尋稽核記錄中的電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md)。
 
 > [!NOTE]
-> [活動]**** 下拉式清單中的 [電子文件探索活動]**** 下方所列活動的結果事件，最久需要 30 分鐘才會顯示在搜尋結果中。 相反地，系統需要 24 小時才能在搜尋結果中顯示電子文件探索 Cmdlet 活動的對應事件。
+> **活動**下拉式清單的**電子文件探索活動**和**進階電子文件探索活動** 下方所列的活動結果事件，最多需要 30 分鐘才會顯示在搜尋結果中。 相反地，系統需要 24 小時才能在搜尋結果中顯示電子文件探索 Cmdlet 活動的對應事件。
 
 ### <a name="advanced-ediscovery-activities"></a>進階電子文件探索活動
 
-下表列出 IT 和法律專業人員在 Microsoft 365 的進階電子文件探索中執行工作時產生的活動。 如需詳細資訊，請參閱 [Microsoft 365 中的進階電子文件探索解決方案概觀](overview-ediscovery-20.md)。
-
-|**易記名稱**|**作業**|**描述**|
-|:-----|:-----|:-----|
-|已將資料新增至另一個檢閱集|AddWorkingSetQueryToWorkingSet|使用者已將一個檢閱集中的文件新增至不同檢閱集。|
-|已將資料新增至檢閱集|AddQueryToWorkingSet|使用者已將搜尋結果從與進階電子文件探索案例相關的內容搜尋新增至檢閱集。|
-|已將非 Microsoft 365 的資料新增至檢閱集|AddNonOffice365DataToWorkingSet|使用者已將非 Microsoft 365 的資料新增至檢閱集。|
-|已將修復的文件新增至檢閱集|AddRemediatedData|使用者將已修正索引錯誤的文件上傳至檢閱集。|
-|已分析檢閱集中的資料|RunAlgo|使用者已對檢閱集中的文件執行分析。|
-|已標註檢閱集中的文件|AnnotateDocument|使用者已標註檢閱集中的文件。 標註包含校訂文件中的內容。|
-|比較載入集合|LoadComparisonJob|使用者比較了檢閱集中的兩個不同載入集合。 載入集合會在案例相關內容搜尋中的資料新增至檢閱集後建立。|
-|已將校訂後的文件轉換為 PDF|BurnJob|使用者已將檢閱集中所有已校訂的文件轉換為 PDF 檔案。|
-|已建立檢閱集|CreateWorkingSet|使用者已建立檢閱集。|
-|已建立檢閱集搜尋|CreateWorkingSetSearch|使用者已建立搜尋查詢來搜尋檢閱集中的文件。|
-|已建立標籤|CreateTag|使用者已在檢閱集中建立標籤群組。 標籤群組可以包含一個或多個子標籤。 這些標籤可用來標記檢閱集中的文件。|
-|已刪除檢閱集搜尋|DeleteWorkingSetSearch|使用者已刪除檢閱集中的搜尋查詢。|
-|已刪除標籤|DeleteTag|使用者已在檢閱集中刪除標籤或標籤群組。|
-|已下載文件|DownloadDocument|使用者已從檢閱集下載文件。|
-|已編輯標籤|UpdateTag|使用者已變更檢閱集中的標籤。|
-|已從檢閱集匯出文件|ExportJob|使用者已從檢閱集匯出文件。|
-|已修改案例設定|UpdateCaseSettings|使用者已修改案例的設定。 案例設定包括案例資訊、存取權限及控制搜尋和分析行為的設定。|
-|已修改檢閱集搜尋|UpdateWorkingSetSearch|使用者已編輯檢閱集中的搜尋查詢。|
-|已預覽檢閱集搜尋|PreviewWorkingSetSearch|使用者已預覽檢閱集中的搜尋查詢結果。|
-|已修復錯誤的文件|ErrorRemediationJob|使用者已修正包含索引錯誤的檔案。|
-|已標記文件|TagFiles|使用者已標記檢閱集中的文件。|
-|已標記查詢結果|TagJob|使用者已標記檢閱集中所有符合搜尋查詢準則的文件。|
-|已檢視檢閱集中的文件|ViewDocument|使用者已檢視檢閱集中的文件。|
-|||
+您也可以在進階電子文件探索活動中搜尋活動的稽核記錄。 如需這些活動的描述，請參閱[在稽核記錄中搜尋電子文件探索活動](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities)中的”進階電子文件探索活動”一節。
 
 ### <a name="power-bi-activities"></a>Power BI 活動
 
@@ -745,10 +718,10 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 |已新增連接器|ConnectorAdded|使用者在頻道中新增連接器。|
 |已新增成員|MemberAdded|小組擁有者將成員新增至小組、頻道或群組聊天。|
 |已新增索引標籤|TabAdded|使用者在頻道中新增索引標籤。|
-|已變更的頻道設定|ChannelSettingChanged|小組成員執行下列活動時會記錄 ChannelSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>* 變更小組頻道名稱 (**頻道名稱**)。 <br/><br/>* 變更小組頻道描述 (**頻道描述**)。|
-|已變更的組織設定|TeamsTenantSettingChanged|當全域系統管理員 (使用 Microsoft 365 系統管理員中心) 執行下列活動時，系統會將 TeamsTenantSettingChanged 作業記錄下來；請注意，這些活動會影響整個組織的 Microsoft Teams 設定。 如需詳細資訊，請參閱 [Microsoft Teams 的系統管理員設定](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)。 <br/> 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>* 啟用或停用組織的 Microsoft Teams (**Microsoft Teams**)。 <br/><br/>* 啟用或停用組織中 Microsoft Teams 與商務用 Skype 之間的互通性 (**商務用 Skype 互通性**)。 <br/><br/>* 啟用或停用 Microsoft Teams 用戶端的組織圖檢視 (組織圖檢視**)。<br/><br/>* 啟用或停用小組成員排程私人會議的功能 (**私人會議排程**)。<br/><br/>* 啟用或停用小組成員排程頻道會議的功能 (頻道會議排程**)。<br/><br/>* 啟用或停用 Teams 會議中的視訊通話 (Skype 視訊會議**)。<br/><br/>* 啟用或停用組織中 Microsoft Teams 會議中的螢幕共用 (**Skype 會議的螢幕共用**)。 <br/><br/>* 啟用或停用將動畫影像 (稱為 Giphy) 新增至 Teams 交談的功能 (動畫影像**)。<br/><br/>* 變更組織的內容分級設定 (**內容分級**)。內容分級會限制交談中可以顯示的動畫影像類型。<br/><br/>* 啟用或停用小組成員將自訂影像 (稱為自訂 Meme) 從網際網路新增至小組交談的功能 (來自網際網路的自訂影像**)。<br/><br/>* 啟用或停用小組成員將可編輯影像 (稱為 Sticker) 新增至小組交談的功能 (**可編輯的影像**)。<br/><br/>* 啟用或停用小組成員可在 Microsoft Teams 聊天和頻道中使用 Bot 的功能 (整個組織中的 Bot**)。<br/><br/>* 啟用 Microsoft Teams 的特定 Bot。這不包括 T-Bot，也就是當組織啟用 Bot 功能時可用的 Teams 說明 Bot (**個人 Bot**)。<br/><br/>* 啟用或停用小組成員新增擴充功能或分頁的能 (**擴充功能或分頁**)。 <br/><br/>* 啟用或停用 Microsoft Teams 專屬 Bot 的側載功能 (**Bot 側載**)。 <br/><br/>* 啟用或停用使用者傳送電子郵件至 Microsoft Teams 頻道的功能 (**頻道電子郵件**)。|
+|已變更的頻道設定|ChannelSettingChanged|小組成員執行下列活動時會記錄 ChannelSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 變更小組頻道名稱 (**頻道名稱**)。 <br/><br/>• 變更小組頻道描述 (**頻道描述**)。|
+|已變更的組織設定|TeamsTenantSettingChanged|當全域系統管理員 (使用 Microsoft 365 系統管理員中心) 執行下列活動時，系統會將 TeamsTenantSettingChanged 作業記錄下來；請注意，這些活動會影響整個組織的 Microsoft Teams 設定。 如需詳細資訊，請參閱 [Microsoft Teams 的系統管理員設定](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)。 <br/> 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 啟用或停用組織的 Microsoft Teams (**Microsoft Teams**)。 <br/><br/>• 啟用或停用組織中 Microsoft Teams 與商務用 Skype 之間的互通性 (**商務用 Skype 互通性**)。 <br/><br/>• 啟用或停用 Microsoft Teams 用戶端的組織圖檢視 (組織圖檢視 **)。<br/><br/>• 啟用或停用小組成員排程私人會議的能力 (** 私人會議排程 **)。<br/><br/>• 啟用或停用小組成員排程頻道會議的能力 (頻道會議排程**)。 <br/><br/>• 啟用或停用小組會議中的視訊通話 (Skype 視訊會議 **)。<br/><br/>• 啟用或停用組織中 Microsoft Teams 會議中的螢幕共用 (** Skype 會議的螢幕共用 **)。<br/><br/>• 啟用或停用將動畫影像 (稱為 Giphy) 新增至小組交談的能力 (動畫影像**)。 <br/><br/>• 變更組織的內容評等設定 (**評等設定**)。 內容分級會限制交談中可以顯示的動畫影像類型。 <br/><br/>•啟用或停用小組成員將來自網際網路的可自訂影像（稱為自訂紀錄新增）新增至小組對話（源自網際網路的**可自訂圖像)之功能。<br/><br/>•啟用或停用小組成員新增可編輯的影像（稱為貼紙）至小組對話（** 可編輯的影像 **）之功能。<br/><br/>•啟用或停用小組成員在 Microsoft Teams 交談和通道(Org-wide bots)中使用 bots之功能。<br/><br/>•為 Microsoft Teams 啟用特定 bot。這不包括 T-Bot，即一種在組織啟用 bot （** 個別bot **）時可使用的Teams協助。<br/><br/>•啟用或停用小組成員新增副檔名或索引標籤之功能（** 副檔名或索引標籤 **）。<br/><br/>•啟用或停用 Microsoft Teams 專有 Bot 的載入方式(** Bot的側載入 **）。<br/><br/>•啟用或停用使用者將電子郵件訊息傳送到 Microsoft Teams 通道（** 通道電子郵件 * *）之功能。|
 |小組中已變更的成員角色|MemberRoleChanged|小組擁有者在小組中變更成員角色。 下列值指出已指派使用者的角色類型。 <br/><br/> **1** - 代表「擁有者」角色。<br/>**2** - 代表「成員」角色。 <br/>**3** - 代表「來賓」角色。 <br/><br/> 成員屬性也會包含貴組織名稱與成員的電子郵件。|
-|已變更的小組設定|TeamSettingChanged|小組擁有者執行下列活動時會記錄 TeamSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>* 變更小組存取類型。 您可以將小組設定為 [私人] 或 [公開] (**小組存取類型**)。 當小組設為私人時 (此為預設設定)，使用者僅能透過受邀的方式存取該小組。 當小組設為公開時，任何人都可以找到該小組。 <br/><br/>* 變更小組的資訊分類 (**小組分類**)。 <br/> 例如，小組資料可以分類為高業務衝擊、中業務衝擊或低業務衝擊。<br/><br/>* 變更小組名稱 (**小組名稱**)。 <br/><br/>* 變更小組描述 (小組描述**)。<br/><br/>* 對小組設定所做的任何變更。 小組擁有者只要以滑鼠右鍵按一下按一下所需小組，然後依序按一下 [管理小組]**** 和 [設定]**** 索引標籤，就能在 Teams 用戶端中存取這些設定。稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動顯示所變更設定的名稱。|
+|已變更的小組設定|TeamSettingChanged|小組擁有者執行下列活動時會記錄 TeamSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 變更小組存取類型。 您可以將小組設定為 [私人] 或 [公開] (**小組存取類型**)。 當小組設為私人時 (此為預設設定)，使用者僅能透過受邀的方式存取該小組。 當小組設為公開時，任何人都可以找到該小組。 <br/><br/>• 變更小組的資訊分類 (**小組分類**)。 <br/> 例如，小組資料可以分類為高業務衝擊、中業務衝擊或低業務衝擊。<br/><br/>• 變更小組名稱 (**小組名稱**)。 <br/><br/>• 變更小組描述 (小組描述**)。 <br/><br/>• 對小組設定所做的任何變更。 小組擁有者只要以滑鼠右鍵按一下按一下所需小組，然後依序按一下 [管理小組]**** 和 [設定]**** 索引標籤，就能在 Teams 用戶端中存取這些設定。稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動顯示所變更設定的名稱。|
 |已建立小組|TeamCreated|使用者建立小組。|
 |已刪除頻道|ChannelDeleted|使用者從小組中刪除頻道。|
 |已刪除小組|TeamDeleted|小組擁有者刪除小組。|
@@ -768,6 +741,12 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 ![活動選擇器清單中的 Microsoft Teams 醫療保健活動](../media/TeamsHealthcareAuditActivities.png)
 
 如需有關病患應用程式活動的說明，請參閱[病患應用程式的稽核記錄](https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/patients-audit)。
+
+### <a name="microsoft-teams-shifts-activities"></a>Microsoft Teams 班次活動
+
+如果貴組織正在 Microsoft Teams 中使用班次應用程式，則您可以在稽核記錄中搜尋與使用班次應用程式相關的活動。 如果您的環境設定為支援班次應用程式，則**活動**選擇器清單中提供了這些活動的額外活動群組。
+
+如需班次應用程式活動的描述，請參閱 [在 Microsoft Teams 的稽核紀錄中搜尋事件](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities)。
 
 ### <a name="yammer-activities"></a>Yammer 活動
 
