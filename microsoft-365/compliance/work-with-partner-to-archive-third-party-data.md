@@ -1,5 +1,5 @@
 ---
-title: 與合作夥伴配合來封存第三方資料
+title: 與合作夥伴配合以封存第三方資料
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 您的組織可以與 Microsoft 合作夥伴合作，設定自訂連接器，以從資料來源（例如 Salesforce 交談、Yahoo Messenger 或 Yammer）匯入協力廠商資料。 這可讓您封存協力廠商資料來源中的資料，如此您就可以使用 Microsoft 365 規範功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料的管理。
-ms.openlocfilehash: 0892e0c02e72516b6abc4502eb9777bd824f9073
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: fa9efa62f4e2791c5d77cf01de6849b581cdebae
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943152"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739062"
 ---
-# <a name="work-with-a-partner-to-archive-third-party-data"></a>與合作夥伴配合來封存第三方資料
+# <a name="work-with-a-partner-to-archive-third-party-data"></a>與合作夥伴配合以封存第三方資料
 
 您可以與 Microsoft 合作夥伴合作，匯入協力廠商資料來源中的資料，並將其封存至 Microsoft 365。 協力廠商可為您提供自訂連接器，以設定為從協力廠商資料來源提取專案（定期），然後匯入這些專案。 夥伴連接器會將專案的內容從資料來源轉換成電子郵件訊息格式，然後將專案儲存在信箱中。 匯入協力廠商資料後，您可以將 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋、In-Place 封存、審核和 Microsoft 365 保留原則）套用至此資料。
   
@@ -49,11 +49,11 @@ ms.locfileid: "43943152"
     
 3. 夥伴連接器會透過已知端點透過 Exchange Web 服務（EWS），連接至 Microsoft 365 中的 Azure 服務。
     
-4. 項目是匯入至特定使用者的信箱或「全部擷取」協力廠商資料信箱。項目匯入至特定使用者信箱還是協力廠商資料信箱，是根據下列準則：
+4. Items are imported into the mailbox of a specific user or into a "catch-all" third-party data mailbox. Whether an item is imported into a specific user mailbox or to the third-party data mailbox is based on the following criteria:
     
-    a. **具有對應至使用者帳戶之使用者識別碼的專案：** 如果夥伴連接器可將協力廠商資料來源中專案的使用者識別碼對應至 Office 365 中的特定使用者識別碼，該專案會複製到使用者的 [可復原的專案] 資料夾中的 [**清除**] 資料夾。 使用者無法存取 [清除] 資料夾中的項目。 不過，您可以使用 eDiscovery 工具來搜尋 [清除] 資料夾中的專案。
+   1. **具有對應至使用者帳戶之使用者識別碼的專案：** 如果夥伴連接器可將協力廠商資料來源中專案的使用者識別碼對應至 Office 365 中的特定使用者識別碼，該專案會複製到使用者的 [可復原的專案] 資料夾中的 [**清除**] 資料夾。 使用者無法存取 [清除] 資料夾中的項目。 不過，您可以使用 eDiscovery 工具來搜尋 [清除] 資料夾中的專案。
     
-    b. **沒有對應至使用者帳戶的使用者識別碼的專案：** 如果 partner connector 無法將專案的使用者識別碼對應至特定的使用者識別碼，該專案會複製到協力廠商資料信箱的 [**收件**匣] 資料夾。 將項目匯入至收件匣可讓您或組織中的某個人登入協力廠商信箱來檢視和管理這些項目，並查看是否需要在協力廠商連接器組態中進行任何調整。
+   1. **沒有對應至使用者帳戶的使用者識別碼的專案：** 如果 partner connector 無法將專案的使用者識別碼對應至特定的使用者識別碼，該專案會複製到協力廠商資料信箱的 [**收件**匣] 資料夾。 將項目匯入至收件匣可讓您或組織中的某個人登入協力廠商信箱來檢視和管理這些項目，並查看是否需要在協力廠商連接器組態中進行任何調整。
  
 ## <a name="step-1-find-a-third-party-data-partner"></a>步驟 1：尋找協力廠商資料合作夥伴
 
@@ -159,11 +159,11 @@ ms.locfileid: "43943152"
     
 - CipherCloud for Salesforce Chatter
     
-- Cisco IM &amp;顯示伺服器（v10，v v10.5.1 SU1，v 11.0，v 11.5 SU2）
+- Cisco IM &amp; 顯示伺服器（v10，v v10.5.1 SU1，v 11.0，v 11.5 SU2）
 
 - Cisco Webex 小組
 
-- Citrix 工作&amp;區 ShareFile
+- Citrix 工作區 &amp; ShareFile
 
 - CrowdCompass
 
@@ -273,7 +273,7 @@ ms.locfileid: "43943152"
     
 - 顫 振
     
-- Cisco IM &amp;顯示伺服器（v 9.0.1、v 9.1、v 9.1.1 SU1、v10、v v10.5.1 SU1）
+- Cisco IM &amp; 顯示伺服器（v 9.0.1、v 9.1、v 9.1.1 SU1、v10、v v10.5.1 SU1）
     
 - Cisco Unified Presence Server (v8.6.3、v8.6.4、v8.6.5)
     
@@ -521,7 +521,7 @@ ms.locfileid: "43943152"
   
 - 用來連線至 Office 365 中之 Azure 服務的端點：
 
-    ```text
+    ```http
     https://office365ingestionsvc.gble1.protection.outlook.com/service/ThirdPartyIngestionService.svc
     ```
 
@@ -529,7 +529,7 @@ ms.locfileid: "43943152"
  
 ## <a name="step-5-register-the-third-party-data-connector-in-azure-active-directory"></a>步驟5：在 Azure Active Directory 中註冊協力廠商資料連線器
 
-從2018年9月30日起，Office 365 中的 Azure 服務會開始使用 Exchange Online 中的新式驗證，以驗證嘗試連線至組織以匯入資料的協力廠商資料連線器。 這種變更的原因是，新式驗證提供的安全性高於目前的方法，這是以使用先前所述的端點來連接至 Azure 服務的 whitelisting 協力廠商連接器為基礎。
+從2018年9月30日起，Office 365 中的 Azure 服務會開始使用 Exchange Online 中的新式驗證，以驗證嘗試連線至組織以匯入資料的協力廠商資料連線器。 這種變更的原因是，新式驗證提供的安全性高於目前的方法，這是根據使用先前所述端點連線至 Azure 服務之協力廠商連接器的允許清單。
 
 若要讓協力廠商資料連線器使用全新的新式驗證方法來連線至 Office 365，您組織中的系統管理員必須同意在 Azure Active Directory 中將連接器註冊為受信任的服務應用程式。 若要允許連接器在 Azure Active Directory 中存取組織的資料，請接受許可權要求，以進行這項操作。 在您接受此要求之後，協力廠商資料連線器會新增為 Azure Active Directory 中的企業應用程式，並表示為服務主體。 如需同意程式的詳細資訊，請參閱[租使用者管理員同意](https://docs.microsoft.com/skype-sdk/trusted-application-api/docs/tenantadminconsent)。
 
@@ -543,7 +543,7 @@ ms.locfileid: "43943152"
 
 2. 按一下 [接受]****。
 
-在您接受要求之後，就會顯示[Azure 入口網站](https://portal.azure.com)。 若要查看組織的應用程式清單，請按一下 [ **Azure Active Directory** > **企業應用程式**]。 Office 365 協力廠商資料連線器會列在**企業應用程式**blade 上。
+在您接受要求之後，就會顯示[Azure 入口網站](https://portal.azure.com)。 若要查看組織的應用程式清單，請按一下 [ **Azure Active Directory**  >  **企業應用程式**]。 Office 365 協力廠商資料連線器會列在**企業應用程式**blade 上。
 
 > [!IMPORTANT]
 > 在2018年9月30日之後，如果您未在 Azure Active Directory 中註冊協力廠商資料連線器，協力廠商資料將無法再匯入您組織中的信箱。 請注意，在 Azure Active Directory 中建立的協力廠商資料連線器（在2018年9月30日之前所建立），必須先在 Azure Active Directory 中註冊，請遵循步驟5中的程式。
@@ -556,7 +556,7 @@ ms.locfileid: "43943152"
   
 ## <a name="more-information"></a>詳細資訊
 
-- 如先前所述，協力廠商資料來源的項目是匯入至 Exchange 信箱做為電子郵件訊息。 夥伴連接器會使用 Office 365 API 所需的架構，匯入專案。 下表說明協力廠商資料來源的項目在匯入至 Exchange 信箱當做為電子郵件之後的郵件屬性。 表格也會指出郵件屬性是否為必要的。 必須填入必要屬性。 如果專案缺少強制的屬性，則不會將它匯入至 Office 365。 匯入程式會傳回一則錯誤訊息，說明未匯入專案的原因，以及遺漏的屬性。
+- 如先前所述，協力廠商資料來源的項目是匯入至 Exchange 信箱做為電子郵件訊息。 夥伴連接器會使用 Office 365 API 所需的架構，匯入專案。 下表說明協力廠商資料來源的項目在匯入至 Exchange 信箱當做為電子郵件之後的郵件屬性。 表格也會指出郵件屬性是否為必要的。 必須填入必要屬性。 如果專案缺少強制的屬性，則不會將它匯入至 Office 365。 匯入程式會傳回一則錯誤訊息，說明未匯入專案的原因，以及遺漏的屬性。<br/><br/>
     
     |**郵件屬性**|**強制性？**|**描述**|**範例值**|
     |:-----|:-----|:-----|:-----|
@@ -566,11 +566,11 @@ ms.locfileid: "43943152"
     |**日期** <br/> |是  <br/> |在客戶資料來源中，最初建立或張貼專案的日期。 例如，Twitter 郵件的日期日期。  <br/> | `01 NOV 2015` <br/> |
     |**身體** <br/> |否  <br/> |訊息或文章的內容。 對於某些資料來源，這個屬性的內容可能與 **SUBJECT** 屬性的內容相同。 在匯入程式期間，協力廠商連接器會嘗試盡可能從內容來源保持完全保真。 如果可能的話，來源項目的內文中的檔案、圖形或其他內容會包含在此屬性中。 否則，來源項目的內容會包含在 **ATTACHMENT** 屬性。 此屬性的內容取決於夥伴連接器和來源平臺的功能。  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**附件** <br/> |否  <br/> |如果資料來源中的專案（例如 Twitter 或立即訊息交談中的 tweet）具有附加的檔案或包括影像，則協力廠商連線會先嘗試在**BODY**屬性中包含附件。 如果無法這樣做，它會新增至 * * 附件 * * 屬性。 其他附件範例包括 Facebook 的「讚」、內容來源的中繼資料和訊息或文章的回應。  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |是  <br/> | 這是多重值屬性，由合作夥伴連接器建立並填入。 此屬性的格式為`IPM.NOTE.Source.Event`。 （此屬性必須以開頭`IPM.NOTE`。 這種格式與`IPM.NOTE.X`郵件類別的格式類似。）此屬性包含下列資訊：  <br/><br/>`Source`：指出協力廠商資料來源;例如，Twitter、Facebook 或 BlackBerry。  <br/> <br/>  `Event`：指出在產生專案的協力廠商資料來源中所執行的活動類型。例如，在 Twitter 中的 tweet 或在 Facebook 中的文章。 事件是資料來源特有的。  <br/> <br/>  此屬性的其中一個用途是要根據項目產生來源位置的資料來源或根據事件類型，篩選特定項目。 例如，在 eDiscovery 搜尋中，您可以建立搜尋查詢來尋找特定使用者所張貼的所有推文。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |是  <br/> | 這是多重值屬性，由合作夥伴連接器建立並填入。 此屬性的格式為 `IPM.NOTE.Source.Event` 。 （此屬性必須以開頭 `IPM.NOTE` 。 這種格式與郵件類別的格式類似 `IPM.NOTE.X` 。）此屬性包含下列資訊：  <br/><br/>`Source`：指出協力廠商資料來源;例如，Twitter、Facebook 或 BlackBerry。  <br/> <br/>  `Event`：指出在產生專案的協力廠商資料來源中所執行的活動類型。例如，在 Twitter 中的 tweet 或在 Facebook 中的文章。 事件是資料來源特有的。  <br/> <br/>  此屬性的其中一個用途是要根據項目產生來源位置的資料來源或根據事件類型，篩選特定項目。 例如，在 eDiscovery 搜尋中，您可以建立搜尋查詢來尋找特定使用者所張貼的所有推文。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
-- 當專案順利匯入至 Office 365 中的信箱時，會將唯一識別碼傳回回來電者做為 HTTP 回應的一部分。 這個識別碼（稱為`x-IngestionCorrelationID`）可以用於後續疑難排解，供合作夥伴進行專案的端對端追蹤。 建議夥伴擷取這項資訊並加以記錄。 以下是顯示此識別碼之 HTTP 回應的範例：
+- 當專案順利匯入至 Office 365 中的信箱時，會將唯一識別碼傳回回來電者做為 HTTP 回應的一部分。 這個識別碼（稱為 `x-IngestionCorrelationID` ）可以用於後續疑難排解，供合作夥伴進行專案的端對端追蹤。 建議夥伴擷取這項資訊並加以記錄。 以下是顯示此識別碼之 HTTP 回應的範例：
 
-    ```text
+    ```http
     HTTP/1.1 200 OK
     Content-Type: text/xml; charset=utf-8
     Server: Microsoft-IIS/8.5
@@ -582,11 +582,11 @@ ms.locfileid: "43943152"
 
 - 您可以使用安全性與合規性中心的內容搜尋工具，搜尋從協力廠商資料來源匯入信箱的專案。 若要特別針對這些匯入的專案進行搜尋，您可以在內容搜尋的關鍵字方塊中使用下列郵件屬性-值對。
     
-  - **`kind:externaldata`**：使用此屬性-值對可搜尋所有協力廠商資料類型。 例如，若要搜尋從協力廠商資料來源匯入的專案，並在匯入專案的 Subject 屬性中包含 "contoso" 一詞，您可以使用關鍵字查詢`kind:externaldata AND subject:contoso`。
+  - **`kind:externaldata`**：使用此屬性-值對可搜尋所有協力廠商資料類型。 例如，若要搜尋從協力廠商資料來源匯入的專案，並在匯入專案的 Subject 屬性中包含 "contoso" 一詞，您可以使用關鍵字查詢 `kind:externaldata AND subject:contoso` 。
     
-  - **`itemclass:ipm.externaldata.<third-party data type>`**：使用此屬性-值對只搜尋協力廠商資料的指定類型。 例如，若要在 Subject 屬性中只搜尋包含 "contoso" 一詞的 Facebook 資料，您可以使用關鍵字查詢`itemclass:ipm.externaldata.Facebook* AND subject:contoso`。 
+  - **`itemclass:ipm.externaldata.<third-party data type>`**：使用此屬性-值對只搜尋協力廠商資料的指定類型。 例如，若要在 Subject 屬性中只搜尋包含 "contoso" 一詞的 Facebook 資料，您可以使用關鍵字查詢 `itemclass:ipm.externaldata.Facebook* AND subject:contoso` 。 
 
-  如需用於`itemclass`屬性的協力廠商資料類型的完整值清單，請參閱[使用內容搜尋來搜尋匯入至 Office 365 的協力廠商資料](use-content-search-to-search-third-party-data-that-was-imported.md)
+  如需用於屬性的協力廠商資料類型的完整值清單 `itemclass` ，請參閱[使用內容搜尋搜尋協力廠商資料已匯入至 Office 365](use-content-search-to-search-third-party-data-that-was-imported.md)。
     
    如需有關使用內容搜尋和建立關鍵字搜尋查詢的詳細資訊，請參閱︰
     

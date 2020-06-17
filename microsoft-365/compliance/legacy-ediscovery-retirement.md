@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Exchange Online 中的 In-Place eDiscovery 和 In-Place 保留（以及對應的 PowerShell Cmdlet）會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 及 Advanced eDiscovery 1.0 1.0 也會在相同的時段內淘汰。
-ms.openlocfilehash: 547b58bebf4ade04bc9c1992ed7f0f518924341f
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 8b428b0d90442c937e08d4dc9ca23fb345553178
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351914"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761683"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>舊版電子文件探索工具淘汰
 
@@ -289,14 +289,6 @@ Exchange Online PowerShell 中的**Search-Mailbox** Cmdlet 會在 [正在撤銷]
 </td>
 </tr>
 <tr class="even">
-<td>清除信箱中的郵件</td>
-<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
-<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-New-compliancesearchaction</span></a></p>
-<p></p></td>
-<td><p>New-compliancesearch 和 New-compliancesearchaction 指令程式可以搭配使用，以協助您搜尋及清除內容。 您可以使用<strong>New-ComplianceSearch</strong>和<strong>New-ComplianceSearch</strong> Cmdlet 來建立和執行搜尋，然後您可以使用<strong>New-ComplianceSearchAction-Purge PurgeType</strong>命令來清除內容。 如需詳細資訊，請參閱<a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">搜尋並刪除郵件</span></a>。</p>
-</td>
-</tr>
-<tr class="odd">
 <td>從信箱刪除大量電子郵件</td>
 <td><p><a href="https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes?view=o365-worldwide"><span class="underline">設定信箱的封存與刪除原則</span></a></p>
 <p></p></td>
@@ -307,6 +299,24 @@ Exchange Online PowerShell 中的**Search-Mailbox** Cmdlet 會在 [正在撤銷]
 <td>將搜尋結果複製到探索信箱</td>
 <td> </td>
 <td>這種功能沒有直接取代，因為它沒有提供所有 Microsoft 365 服務的存取權。 如需其他解決方案，請參閱<strong>*-MailboxSearch Cmdlet</strong>區段中的 FAQs。 </td>
+</tr>
+<tr class=odd>
+  <td>將郵件從一個信箱複製到不同的信箱</td>
+  <td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">指派許可權給信箱</a></td>
+  <td>若要讓人員能夠存取另一個使用者的電子郵件（例如，當員工離開您的組織，而您需要讓其他人存取先前員工的電子郵件），建議您指派該人員存取先前員工的信箱。 因此，不要將信箱專案複製到另一個使用者信箱或共用信箱，只需指派使用者的許可權即可存取來源信箱。</td>
+</tr>
+<tr class=even>
+  <td>清除信箱中的郵件</td>
+<td><p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch?view=exchange-ps"><span class="underline">*-ComplianceSearch</span></a></p>
+<p><a href="https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction?view=exchange-ps"><span class="underline">*-New-compliancesearchaction</span></a></p>
+<p></p></td>
+<td><p>New-compliancesearch 和 New-compliancesearchaction 指令程式可以搭配使用，以協助您搜尋及清除內容。 您可以使用<strong>New-ComplianceSearch</strong>和<strong>New-ComplianceSearch</strong> Cmdlet 來建立和執行搜尋，然後您可以使用<strong>New-ComplianceSearchAction-Purge PurgeType</strong>命令來清除內容。 如需詳細資訊，請參閱<a href="https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization"><span class="underline">搜尋並刪除郵件</span></a>。</p>
+</td>
+</tr>
+<tr class="odd"> 
+<td>清除信箱中的郵件</td>
+<td><a href="https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients">指派許可權給信箱</a></td>
+<td>若要清除信箱中的郵件，請指派管理員許可權來存取該員工的信箱。 您可以在必要時刪除郵件並進行回收，以利用 Outlook 中內建的搜尋和觀賞功能。</td>
 </tr>
 </tbody>
 </table>

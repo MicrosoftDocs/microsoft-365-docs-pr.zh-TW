@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 建立共用信箱讓組織中的多位使用者共同負責讀取及回覆傳送到某個地址的電子郵件。
-ms.openlocfilehash: aac4966efca3dabc0edac1ceada96d2238cb266f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 331f5f320f9b57ee503734f57ed8d804e9ad04e3
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400097"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432286"
 ---
 # <a name="create-a-shared-mailbox"></a>建立共用信箱 
 
@@ -35,7 +35,7 @@ ms.locfileid: "44400097"
 > 如果您的組織使用混合式 Exchange 環境，您應使用內部部署 Exchange 系統管理中心 (EAC) 來建立及管理共用信箱。 請參閱[在 Exchange 系統管理中心建立共用信箱](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
 > 如果您不確定應該建立共用信箱或者 Outlook​​ 的 Microsoft 365 群組，請參閱[比較群組](../create-groups/compare-groups.md)以取得指導。 請注意，目前無法將共用信箱移轉至 Microsoft 365 群組。 如果您想要這麼做，請[在這裡投票](https://go.microsoft.com/fwlink/?linkid=871518)讓我們知道。
 
-建立共用信箱能讓一群人輕易監視某個共用電子郵件地址 (例如 info@contoso.com) 的電子郵件，並從該電子郵件地址傳送電子郵件。當群組中的某人回覆一則傳送到共用信箱的郵件時，該封電子郵件會顯示為從共用信箱發出，而非從個別使用者發出。
+It's easy to create shared mailboxes so a group of people can monitor and send email from a common email addresses, like info@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email appears to be from the shared mailbox, not from the individual user.
 
 共用信箱中也包含了共用行事曆。 許多小型企業喜歡將共用行事曆當做一個可以讓所有人輸入各自約會的地方。 舉例來說，如果您有 3 個人負責客戶拜訪，他們就都可以使用共用行事曆來輸入約會。 這是能讓每個人都能掌握各自事務的簡便方法。
 
@@ -88,9 +88,6 @@ ms.locfileid: "44400097"
 但是如果系統管理員重設共用信箱使用者帳戶的密碼，該怎麼辦？ 或者如果攻擊者能夠存取共用信箱帳號憑證，該怎麼辦？ 這可讓使用者帳戶登入共用信箱，並傳送電子郵件。 若要避免發生此情況，您需要封鎖與共用信箱相關聯的帳戶登入。
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> 如果您使用的不是新的 Microsoft 365 系統管理中心，您可以選取位於首頁頂端的 **[試用新的系統管理中心] **開關將它開啟。
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 

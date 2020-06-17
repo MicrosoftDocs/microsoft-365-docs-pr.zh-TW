@@ -15,15 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: ''
-ms.openlocfilehash: 9331e45619f549ea31adcfdd9316eea20e43efef
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: 使用大量新增工具，將多個保管人及其相關聯的資料來源快速新增至高級 eDiscovery 中的案例。
+ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432436"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741639"
 ---
-# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case-preview"></a>將保管人大量新增至高級 eDiscovery 案例（預覽）
+# <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>將保管人大量新增至高級 eDiscovery 案例
 
 針對涉及許多保管人的高級 eDiscovery 案例，您可以一次匯入多個保管人，其中包含將其新增至案例的所有必要資訊。
 
@@ -46,7 +46,7 @@ ms.locfileid: "44432436"
 
 下載 CSV 範本之後，您可以在每個資料列中新增保管人及其資料來源。 請確定不要變更標頭列中的欄名稱。
 
-| 欄名稱|說明|
+| 欄名稱|描述|
 |:------- |:------------------------------------------------------------|
 |**保管人 ContactEmail**     | 保管人的 UPN 電子郵件。 範例： sarad@onmicrosoft.contoso.com           |
 |**已啟用 Exchange** | TRUE/FALSE 值是否要新增保管人的信箱。      |
