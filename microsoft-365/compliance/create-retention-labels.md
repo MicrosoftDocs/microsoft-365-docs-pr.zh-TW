@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立、發佈及自動套用保留標籤，以在您的 Office 365 環境中保留您需要的內容、刪除您不想要的項目，以及將項目宣告為記錄的相關指示。
-ms.openlocfilehash: a3ba321c9eae91bf701646a45271d3edcbc8dccc
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 035038c90179354e0497813326b1fdad01693bec
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545955"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761649"
 ---
 # <a name="create-publish-and-auto-apply-retention-labels"></a>建立、發佈和自動套用保留標籤
 
@@ -40,7 +40,7 @@ ms.locfileid: "44545955"
   
 如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   
-需要這些權限才能建立及套用保留標籤和標籤原則。原則強制執行不需要內容的存取權。
+These permissions are required only to create and apply retention labels and a label policy. Policy enforcement does not require access to the content.
 
 ## <a name="create-and-configure-retention-labels"></a>建立及設定保留標籤
 
@@ -127,11 +127,11 @@ ms.locfileid: "44545955"
   
 ![敏感資訊類型的原則範本](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
   
-選取原則範本後，可以新增或移除任何類型的敏感資訊，且可以變更例項計數和比對精確度。此處所示的範例中，只有符合以下條件時，才會自動套用保留標籤：
+After you select a policy template, you can add or remove any types of sensitive information, and you can change the instance count and match accuracy. In the example shown here, a retention label will be auto-applied only when:
   
-- 內容包含 1 到 9 個下列三種敏感資訊類型。您可以刪除 **max ** (上限) 值，條件就會變成 **any** (任何)。
+- The content contains between 1 and 9 instances of any of these three sensitive information types. You can delete the **max** value so that it changes to **any**.
     
-- 偵測到的敏感資訊類型的比對精確度 (或信賴等級) 下限為 75。許多敏感資訊類型會定義多個模式，模式的比對精確度愈高，便需要尋找愈多證據 (例如關鍵字、日期、地址)，而較低比對精確度的模式則需要較少的證據。簡單來說，比對精確度的 **min** (下限) 愈低，就越容易找到與條件相符的內容。 
+- The type of sensitive information that's detected has a match accuracy (or confidence level) of at least 75. Many sensitive information types are defined with multiple patterns, where a pattern with a higher match accuracy requires more evidence to be found (such as keywords, dates, or addresses), while a pattern with a lower match accuracy requires less evidence. Simply put, the lower the **min** match accuracy, the easier it is for content to match the condition. 
     
 如需這些選項的詳細資訊，請參閱[調整規則，讓規則更容易或更難相符](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
     
@@ -139,13 +139,13 @@ ms.locfileid: "44545955"
   
 ### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>自動將標籤套用至包含關鍵字或可搜尋屬性的內容
 
-您可以自動將標籤套用至符合特定條件的內容。現在可用的條件支援將標籤套用至包含特定字詞、片語或可搜尋屬性的值。您可以使用 AND、OR、NOT 等搜尋運算子來精簡查詢。
+You can auto-apply labels to content that satisfies certain conditions. The conditions now available support applying a label to content that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators like AND, OR, and NOT.
 
 如需查詢語法的詳細資訊，請參閱：
 
 - [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-查詢式標籤使用搜尋索引來識別內容。如需有效可搜尋屬性的詳細資訊，請參閱：
+Query-based labels use the search index to identify content. For more information on valid searchable properties, see:
 
 - [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
 - [SharePoint 伺服器中的編目及受控屬性概觀](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
@@ -184,13 +184,15 @@ ms.locfileid: "44545955"
     
 ### <a name="published-retention-labels"></a>已發佈的保留標籤
 
-如果您將保留標籤發佈到 SharePoint 或 OneDrive，需要一天的時間讓這些保留標籤向使用者顯示。此外，如果您將保留標籤發佈到 Exchange，可能需要 7 天來向使用者顯示這些保留標籤，且信箱至少必須包含 10 MB 的資料。
+If you publish retention labels to SharePoint or OneDrive, those labels  typically appear for end users to select within one day. However, allow up to seven days. If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for end users, and the mailbox must contain at least 10 MB of data.
+
+例如：
   
 ![手動標籤生效的圖](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 ### <a name="auto-apply-retention-labels"></a>自動套用保留標籤
 
-如果您將保留標籤自動套用至符合特定條件的內容，保留標籤套用至符合條件的所有現有內容可能需要 7 天。
+如果您將保留標籤自動套用至符合特定條件的內容，可能需要最多 7 天，保留標籤才會套用至符合條件的所有現有內容。
   
 ![自動標籤生效時的圖表](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
@@ -211,29 +213,28 @@ ms.locfileid: "44545955"
    ```
 
    ```powershell
-   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}
-   ```
+   $xmlprops.Properties.MailboxTable.Property | ? {$_.Name -like "ELC*"}   ```
 
-結果：`ELCLastSuccessTimeStamp` (UTC) 屬性會顯示系統上次處理您信箱的時間。 如果系統在您建立原則後都還未處理信箱，標籤就無法顯示。 若要強制處理信箱，請執行 `Start-ManagedFolderAssistant -Identity <user>`。
+In the results, the `ELCLastSuccessTimeStamp` (UTC) property shows when the system last processed your mailbox. If it has not happened since the time you created the policy, the labels are not going to appear. To force processing, run  `Start-ManagedFolderAssistant -Identity <user>`.
     
-如果標籤沒有出現在 Outlook 網頁版中，而您認為應該要出現，請務必清除瀏覽器中的快取 (CTRL + F5)。
+If labels aren't appearing in Outlook on the web and you think they should be, make sure to clear the cache in your browser (CTRL+F5).
     
 
-## <a name="updating-retention-labels-and-their-policies"></a>更新保留標籤及其原則
+## Updating retention labels and their policies
 
-當您編輯保留標籤、保留標籤原則或自動套用原則，且保留標籤或原則已套用至內容時，除了新識別的內容以外，您更新的設定會自動套用到此內容。
+When you edit a retention label, retention label policy, or auto-apply policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
-在建立及儲存標籤或原則之後，部分設定無法變更，其中包括：
-- 保留期間以外的保留設定，除非您已將標籤設定為根據建立時間來保留或刪除內容。
-- 分類為記錄的選項。
+Some settings can't be changed after the label or policy is created and saved, which include:
+- The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
+- The option to classify as a record.
 
-## <a name="find-the-powershell-cmdlets-for-retention-labels"></a>尋找保留標籤的 PowerShell Cmdlet
+## Find the PowerShell cmdlets for retention labels
 
-若要使用保留標籤 Cmdlet：
+To use the retention label cmdlets:
   
-1. [連接到 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. 使用這些 Office 365 安全性與合規性中心 Cmdlet：
+2. Use these Office 365 Security & Compliance Center cmdlets:
     
     - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
     

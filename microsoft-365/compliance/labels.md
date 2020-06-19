@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解保留標籤如何分類整個組織中的資料以利控管，並根據該分類強制執行保留規則。您也可以使用保留標籤為 Microsoft 365 實作記錄管理解決方案。
-ms.openlocfilehash: ab2e1baf553a386009d55e43efdf75b796cc1ffd
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+description: Learn how retention labels classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365.
+ms.openlocfilehash: 90039930d94de238a784cc4f8cea6463ff4e49b3
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545965"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761693"
 ---
 # <a name="learn-about-retention-labels"></a>了解保留標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-您的整個組織可能擁有不同類型的內容，需要採取不同的動作才能符合產業規範和內部原則。例如，您可能有：
+Across your organization, you probably have different types of content that require different actions taken on them in order to comply with industry regulations and internal policies. For example, you might have:
   
 - 至少必須**保留**一小段時間的稅務表單。 
     
@@ -38,11 +38,11 @@ ms.locfileid: "44545965"
     
 - 必須**標示為記錄**使之無法編輯或刪除的工作簽證。 
     
-在所有這些案例中，保留標籤可以幫助您對正確的內容採取正確的動作。使用保留標籤，您可以分類整個組織中的資料以利管理，並根據該分類強制執行保留規則。
+In all of these cases, retention labels can help you take the right actions on the right content. With retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification.
   
 使用保留標籤，您可以：
   
-- **讓組織的人員可以手動套用保留標籤**至 Outlook 網頁版、Outlook 2010 及更新版本、OneDrive、SharePoint 和 Microsoft 365 群組中的內容。使用者通常最清楚自己使用的內容類型，因此可以對其分類並套用適當的原則。 
+- **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Microsoft 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
     
 - 在當內容符合特定條件時**自動將保留標籤套用到內容**，例如內容包含： 
     
@@ -62,7 +62,9 @@ ms.locfileid: "44545965"
 
 - **將預設保留標籤套用至 SharePoint 中的文件庫、資料夾或文件集**，以便儲存在該位置中的所有文件都繼承預設保留標籤。
 
-此外，保留標籤支援跨 Microsoft 365 應用程式和服務的電子郵件和文件[記錄管理](records-management.md)。 您可以使用保留標籤將內容分類為記錄。 如果您這麼做，任何人都無法變更或移除標籤，相關內容也無法編輯或刪除。 
+此外，保留標籤支援跨 Microsoft 365 應用程式和服務的電子郵件和文件[記錄管理](records-management.md)。 您可以使用保留標籤將內容分類為記錄。 如果您這麼做，且內容仍然在 Microsoft 365 中時，將無法變更或移除標籤，也無法編輯或刪除相關內容。 
+
+與[敏感度標籤](sensitivity-labels.md)不同，如果內容是移至 Microsoft 365 以外的位置，保留標籤不會保留。
 
 針對租用戶支援的保留標籤數量沒有任何限制。 不過，10,000 個是針對租用戶支援的原則數目上限，其中包括會套用標籤 (保留標籤原則和自動套用保留原則) 的原則，以及保留原則。
 
@@ -125,7 +127,7 @@ Exchange 公用資料夾、Skype 和 Teams 頻道訊息和聊天不支援保留�
 
 保留標籤可強制執行與保留原則可執行的相同動作，即保留然後刪除、僅保留或僅刪除。 您可以使用保留標籤來執行複雜的檔案規劃，以識別具有不同保留設定的特定檔案。 如需保留運作方式的詳細資訊，請參閱[了解保留原則](retention-policies.md)。
 
-除此之外，保留標籤有兩個只能用於保留標籤，但不能用於保留原則的保留選項。使用保留標籤，您可以：
+In addition, a retention label has two retention options that are available only in a retention label and not in a retention policy. With a retention label, you can:
   
 - 在保留期間結束時觸發處置檢閱，如此一來，必須先檢閱 SharePoint 和 OneDrive 文件，才能將它們刪除。 如需詳細資訊，請參閱[處置檢閱](disposition.md#disposition-reviews)。
     
@@ -178,7 +180,7 @@ Exchange 公用資料夾、Skype 和 Teams 頻道訊息和聊天不支援保留�
   
 ![Outlook 網頁版中的指派原則功能表](../media/146a23cf-e478-4595-b2e8-f707fc4e6ea3.png)
   
-套用保留標籤後，您可以在項目頂端檢視該保留標籤以及它採取的動作。如果電子郵件已分類，且有相關聯的保留期間，您可以一目了然電子郵件的到期日。
+After the retention label is applied, you can view that retention label and what action it takes at the top of the item. If an email is classified and has an associated retention period, you can know at a glance when the email will expire.
   
 ![指派給 Outlook 網頁版電子郵件的標籤](../media/16f6c91b-5eab-4574-9d13-6d12be00a783.png)
   
@@ -285,30 +287,30 @@ Exchange 公用資料夾、Skype 和 Teams 頻道訊息和聊天不支援保留�
   
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>使用保留標籤作為 DLP 原則的條件
 
-保留標籤可強制執行保留內容的動作。此外，您也可以使用保留標籤作為資料外洩防護 (DLP) 原則的條件。DLP 原則可以對包含特定標籤的內容強制執行其他動作，例如限制存取。 
+A retention label can enforce retention actions on content. In addition, you can use a retention label as a condition in a data loss prevention (DLP) policy, and the DLP policy can enforce other actions, such as restricting access, on content that contains a specific label. 
   
 如需詳細資訊，請參閱[使用保留標籤做為 DLP 原則中的條件](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)。
   
 
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>原則保留或何者優先
 
-很有可能內容會套用多個保留原則，這些原則各有不同的動作 (保留、刪除或兩者) 和保留期間。哪一個優先？請放心，最低限度，由一個原則保留的內容不會被另一個原則永久刪除。
+It's possible or even likely that content might have several retention policies applied to it, each with a different action (retain, delete, or both) and retention period. What takes precedence? At the highest level, rest assured that content being retained by one policy can't be permanently deleted by another policy.
   
 ![原則保留圖](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
 若要了解不同標籤的保留動作如何套用至內容，請記住以下保留原則：
   
-1. **保留優先於刪除。** 假設一個保留原則要在 3 年後刪除 Exchange 電子郵件，但另一個保留原則要保留 Exchange 電子郵件 5 年再刪除。任何達到 3 年的內容會遭到刪除，在使用者檢視中看不到它們，但仍會保留在 [可復原的項目] 資料夾，直到內容達到 5 年，便會永久刪除。 
+1. **Retention wins over deletion.** Suppose that one retention policy says to delete Exchange email after three years, but another retention policy says to retain Exchange email for five years and then delete it. Any content that reaches three years old will be deleted and hidden from the users' view, but still retained in the Recoverable Items folder until the content reaches five years old, when it will be permanently deleted. 
     
-2. **最長保留期間優先。** 如果內容套用多個保留內容的原則，則會一直保留到最長保留期間結束為止。 
+2. **The longest retention period wins.** If content's subject to multiple policies that retain content, it will be retained until the end of the longest retention period. 
     
-3. **明確包含優先於隱含包含。** 意思是： 
+3. **Explicit inclusion wins over implicit inclusion.** This means: 
     
     1. 如果包含保留設定的保留標籤是由使用者手動指派至項目 (例如 Exchange 電子郵件或 OneDrive 文件)，則該保留標籤會優先於在網站或信箱層級指派的原則，以及文件庫指派的預設保留標籤。 例如，如果明確保留標籤會保留 10 年，但網站指派的保留原則只會保留 5 年，則保留標籤會優先於原則。 自動套用保留標籤會被視為隱含，而不是明確，因為這類標籤是由 Microsoft 365 自動套用。
     
     2. 如果保留原則包含特定位置 (例如特定使用者的信箱或 OneDrive 帳戶)，則該原則會優先於其他套用至所有使用者信箱或 OneDrive 帳戶但未特地包含該使用者信箱的保留原則。
     
-4. **最短刪除期間優先。** 同樣地，如果內容套用多個刪除內容的原則 (無保留)，則會在最短保留期間結束時刪除。 
+4. **The shortest deletion period wins.** Similarly, if content's subject to multiple policies that delete content (with no retention), it will be deleted at the end of the shortest retention period. 
     
 了解保留原則從上到下的仲裁流程：如果所有原則或標籤套用的規則都在同一個層級，則流程會移到下一個層級來決定套用規則的優先順序。
   

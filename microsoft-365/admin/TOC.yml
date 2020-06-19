@@ -22,14 +22,14 @@
               href: setup/setup-apps-for-business.md
         - name: 探索設定頁面和精靈
           href: setup/o365-setup-wizard-and-setup-page.md
-        - name: 移轉資料
-          href: setup/migrate-email-and-contacts-admin.md
         - name: 安裝 Office App
           href: setup/install-applications.md
         - name: 設定 Windows 裝置
           href: ../business/set-up-windows-devices.md
         - name: 設定行動裝置
           href: ../business/set-up-mobile-devices.md
+        - name: 將資料移轉至 Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
         - name: 推出 Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: 適合所有人的 App 訓練
@@ -117,6 +117,8 @@
               href: add-users/resend-user-password.md
             - name: 建立範本以新增使用者
               href: add-users/create-and-use-a-template-to-add-users.md
+            - name: 將使用者升級到最新的應用程式
+              href: setup/upgrade-users-to-latest-office-client.md
         - name: 群組
           items:
             - name: 群組概觀
@@ -154,6 +156,8 @@
           href: email/add-another-email-alias-for-a-user.md
         - name: 使用您的自訂網域
           href: email/change-email-address.md
+        - name: 將電子郵件和連絡人移轉到 Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
         - name: 建立簽章及免責聲明
           href: setup/create-signatures-and-disclaimers.md
         - name: 建立、編輯或刪除安全性群組
@@ -204,8 +208,6 @@
     - name: 管理您的資料和服務
       href: manage/index.yml
       items:
-        - name: 將貴組織升級至使用最新的 App
-          href: setup/upgrade-users-to-latest-office-client.md
         - name: 使用報告來監視使用者活動
           href: activity-reports/activity-reports.md
         - name: 變更您的組織連絡人資訊
@@ -313,15 +315,15 @@
     - name: 與客戶合作
       href: work-with-customers/index.yml
       items:
-        - name: 外部共用網站和檔案
+        - name: 與來賓使用者共用網站和檔案
           href: manage/share-sites-with-external-users.md
         - name: 與來賓使用者共用行事曆
           href: manage/share-calendars-with-external-users.md
-        - name: 建立具有來賓的小組
+        - name: 建立具有來賓使用者的團隊
           href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
         - name: 與來賓排程 Teams 會議
           href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
-        - name: 加入含有來賓的 Teams 會議
+        - name: 加入包含來賓使用者的 Teams 會議
           href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
     - name: 疑難排解
       href: 'https://docs.microsoft.com/office/troubleshoot/'

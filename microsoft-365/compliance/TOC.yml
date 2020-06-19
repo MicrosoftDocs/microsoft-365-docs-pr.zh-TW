@@ -2,6 +2,8 @@
   href: index.yml
 - name: 入門
   items:
+    - name: 快速執行合規性的工作
+      href: compliance-quick-tasks.md
     - name: 合規性中心的新功能
       href: whats-new.md
     - name: 合規性內容的最新更新
@@ -155,6 +157,8 @@
       href: encryption.md
     - name: Office 365 服務加密
       href: office-365-service-encryption.md
+    - name: 關於 Office 365 中加密的技術參考詳細資料
+      href: technical-reference-details-about-encryption.md
     - name: 客戶金鑰
       items:
         - name: Office 365 中的客戶金鑰服務加密
@@ -198,8 +202,6 @@
           href: exchange-online-secures-email-secrets.md
         - name: Exchange Online 如何使用 TLS 來保護 Office 365 中的電子郵件連線
           href: exchange-online-uses-tls-to-secure-email-connections.md
-        - name: 關於 Office 365 中加密的技術參考細節
-          href: technical-reference-details-about-encryption.md
         - name: BitLocker 與 Distributed Key Manager (DKM) 的加密
           href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
         - name: 舊版 OME
@@ -533,7 +535,7 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: 檢閱案例資料
           items:
-            - name: 使用檢閱集儀表板 (預覽)
+            - name: 使用檢閱集儀表板
               href: advanced-ediscovery-dashboard.md
             - name: 檢視檢閱集中的文件
               href: view-documents-in-review-set.md
