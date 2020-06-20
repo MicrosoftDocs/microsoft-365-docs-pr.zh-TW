@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d0656286ecdac0471715c5dbb0feaa0bbaffaf6a
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: c30f92bbbe3458fe4751f829b02203f622414cda
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066356"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800094"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>聯邦金融機構檢查委員會（FFIEC）
 
@@ -33,7 +33,7 @@ ms.locfileid: "44066356"
 
 Microsoft Azure、Microsoft Power BI 和 Microsoft Office 365 是針對金融服務中心提供雲端服務的嚴格需求而建立的。 在我們的支援中，我們提供指導方針，協助您遵循資訊技術的 FFIEC 審核需求，以及在尋求您的 FFIEC 合規性義務時使用 Azure SOC attestations 的能力。
 
-加速金融服務部署：[下載 Azure 安全性和合規性 FFIEC 金融服務藍圖](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
+加速金融服務部署：[下載 Azure 安全性和合規性 FFIEC 金融服務藍圖](https://servicetrust.officeppe.com/ViewPage/FFIECBlueprint)
 
 為了協助金融機構用戶端符合 Azure 的 FFIEC 合規性需求，Microsoft 已開發：
 

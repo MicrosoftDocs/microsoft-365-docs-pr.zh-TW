@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在高級電子檔探索中使用內建的保管人管理工具，以協調您的工作流程，並在案例中識別相關的資料來源。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0c85fb080faeeafd5909c033bc95ef14efc2c45
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: adf5df3bba1956ab1bb658590c1fcf9d4f5a814d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034687"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818610"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>將保管人新增至高級 eDiscovery 案例
 
@@ -32,7 +32,7 @@ ms.locfileid: "44034687"
 
 ![[管理員管理] 索引標籤](../media/CustodianMgtPage.png)
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="make-sure-you-have-the-necessary-permissions"></a>確定您具備必要的許可權
 
 若要將保管人新增至案例，您必須是 eDiscovery 管理員角色群組的成員。 這會為您提供必要的許可權，以將保管人新增至案例，並在 custodial 資料來源上進行保留。
 

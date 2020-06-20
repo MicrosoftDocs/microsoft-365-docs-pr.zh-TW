@@ -12,19 +12,19 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
-search.appverid:
-- MET150
-description: 此深入瞭解導向的建議可協助您的組織在您的 DLP 原則覆蓋範圍內有可能的缺口時，通知您，以保護機密內容365的安全。 您會在安全性&amp;與合規性中心的首頁上看到此建議功能（如果您的檔包含任何最常見類型的敏感資訊，但不會受到 DLP 原則保護）。
-ms.openlocfilehash: 504a85b07f348c45c9925cc2e6ee24b1d8a48656
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何為您的組織建立和編輯建議的資料遺失防護（DLP）原則。
+ms.openlocfilehash: 9588eabe5dbe2b1e60eaeb6a45eb95cc327383aa
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943372"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817632"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>開始使用 DLP 原則建議
 
-此深入瞭解導向的建議可協助您的組織在您的 DLP 原則覆蓋範圍內有可能的缺口時，通知您，以保護機密內容365的安全。 您將會在安全性&amp;與合規性中心的首頁上看到此建議，如果您的檔包含任何最常見類型的敏感資訊，但未受到資料遺失防護（DLP）原則的保護。 **Home** 
+此深入瞭解導向的建議可協助您的組織在您的 DLP 原則覆蓋範圍內有可能的缺口時，通知您，以保護機密內容365的安全。 您將會在安全性與合規性中心**的首頁上**看到此建議 &amp; ，如果您的檔包含任何最常見類型的敏感資訊，但未受到資料遺失防護（DLP）原則的保護。 
   
 您可以使用此小工具，只要按一下一次或兩次，即可快速建立自訂的 DLP 原則，而且在您建立此 DLP 原則之後，即可完全自訂。 請注意，如果您第一次沒有看到建議，請嘗試按一下 [**建議**] 區段底部的 [**其他**]。 
   
@@ -38,7 +38,7 @@ ms.locfileid: "43943372"
   
 - 在 Exchange、SharePoint 及包含其中一種未受保護的敏感資訊類型的 OneDrive 中，偵測到組織外部人員共用的內容。
     
-- 產生詳細的活動報告，使您可以追蹤與組織外部的人員共用內容的人員，以及他們的情況。 您可以使用[DLP 報告](view-the-dlp-reports.md)和[審核記錄資料](search-the-audit-log-in-security-and-compliance.md)（其中**活動** = **DLP**）來查看此資訊。
+- 產生詳細的活動報告，使您可以追蹤與組織外部的人員共用內容的人員，以及他們的情況。 您可以使用[DLP 報告](view-the-dlp-reports.md)和[審核記錄資料](search-the-audit-log-in-security-and-compliance.md)（其中**活動**  =  **DLP**）來查看此資訊。
     
 您也可以選擇讓 DLP 原則執行下列作業：
   
@@ -54,7 +54,7 @@ ms.locfileid: "43943372"
   
 ## <a name="edit-the-recommended-dlp-policy"></a>編輯建議的 DLP 原則
 
-使用小工具建立 DLP 原則之後，原則會出現在安全性&amp;與規範中心的 [**原則**] 頁面的 [**資料遺失防護**] 底下。 
+使用小工具建立 DLP 原則之後，原則會出現在安全性與規範中心的 [**原則**] 頁面的 [**資料遺失防護**] 底下 &amp; 。 
   
 根據預設，此原則稱為「**系統建議」原則，用來共用機密資訊**。 這個原則可以完全自訂，與您從頭建立的任何 DLP 原則相同。 例如，如果您決定在使用小工具時未開啟附隨報告和原則提示，您可以隨時編輯原則並開啟這些選項。
   
@@ -62,7 +62,7 @@ ms.locfileid: "43943372"
   
 ## <a name="when-the-widget-does-and-does-not-appear"></a>構件的功能及未出現時
 
-名為「未**受保護的敏感資訊**」的小工具會出現在安全性&amp;與規範**中心首頁的**[**建議供您使用**] 區段中。 
+名為「未**受保護的敏感資訊**」的小工具會出現在安全性與規範中心**首頁的**[**建議供您使用**] 區段中 &amp; 。 
   
 只有在下列情況時才會顯示此小工具：
   

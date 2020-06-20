@@ -14,15 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-ms.custom:
-- seo-marvel-apr2020
-description: 瞭解如何檢查關鍵字查詢的內容搜尋中是否有錯誤和輸入錯誤，例如不支援的字元及小寫 Boolean 運算子。
-ms.openlocfilehash: 489afd8b2fe19742b63232d323197afecc257ccc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: 瞭解如何在執行搜尋之前，偵測關鍵字搜尋中的錯誤與打字錯誤。
+ms.openlocfilehash: 250db272014d5801bfb3927d14072eea94bd635f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035625"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818092"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>檢查您的內容搜尋查詢是否有錯誤
 
@@ -38,7 +37,7 @@ ms.locfileid: "44035625"
     
 - **從左至右和從右至左的標記**是指用來表示從左至右語言（例如英文和西班牙文）和從右至左語言（例如阿拉伯和希伯來文）的文字方向的控制項字元。
     
-- **小寫 boolean 運算子**-如果您使用 Boolean 運算子（例如**AND**、 **OR**、 **NOT** in 搜尋查詢），則該運算子必須為大寫。 當我們檢查輸入錯誤的查詢時，查詢語法通常會指出即使可以使用小寫運算子，還是要使用布林運算子;例如， `(WordA or WordB) and (WordC or WordD)`。
+- **小寫 boolean 運算子**-如果您使用 Boolean 運算子（例如**AND**、 **OR**、 **NOT** in 搜尋查詢），則該運算子必須為大寫。 當我們檢查輸入錯誤的查詢時，查詢語法通常會指出即使可以使用小寫運算子，還是要使用布林運算子;例如， `(WordA or WordB) and (WordC or WordD)` 。
     
 ## <a name="what-happens-if-a-query-has-an-unsupported-character"></a>如果查詢有不支援的字元，會發生什麼事？
 

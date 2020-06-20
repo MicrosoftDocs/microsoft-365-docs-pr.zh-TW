@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bcffe85011bad55a458f2359051fe659f5720c8b
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: af2e5986530ae6b1eb558ed3389f0927d5f912e9
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066336"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773754"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>金融服務行業規章機關（FINRA） Rule 4511 （c）美國
 
@@ -47,7 +47,7 @@ Cohasset 使用原則鎖定選項驗證[Azure 不可變化的 Blob 儲存](https
 
 ## <a name="microsoft-office-365"></a>Microsoft Office 365
 
-為了評估 Office 365 與 FINRA 規則4511（c）的相容性，Microsoft 保留了專門從事法規問題的主要獨立法律事務所，Covington & Burling，LLP。 在產生的報告中，在 Microsoft Office 365、資料保留和規則17a-4 規範中進行封存，Covington 會驗證[具有保留鎖定的 Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy)包含封存功能，可讓受管制客戶（包括經紀人代理商）以協助其符合記錄保留的 FINRA 需求的方式來儲存資料。
+為了評估 Office 365 與 FINRA 規則4511（c）的相容性，Microsoft 保留了專門從事法規問題的主要獨立法律事務所，Covington & Burling，LLP。 在產生的報告中，在 Microsoft Office 365、資料保留和規則17a-4 規範中進行封存，Covington 會驗證[具有保留鎖定的 Office 365](retention-policies.md)包含封存功能，可讓受管制客戶（包括經紀人代理商）以協助其符合記錄保留的 FINRA 需求的方式來儲存資料。
 
 Office 365 中的封存可協助保留大量的資料，包括電子郵件、語音信箱、共用檔、立即訊息和協力廠商資料。 具體而言，Office 365 中的封存可讓客戶設定全域或細微的郵件保留原則，以儲存定義期間的資料，而不是以不可重寫、不可讀寫的格式使用。
 
@@ -56,7 +56,7 @@ Office 365 中的封存可協助保留大量的資料，包括電子郵件、語
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 ### <a name="azure--finra-rule-4511c"></a>Azure & FINRA 規則4511（c）
 

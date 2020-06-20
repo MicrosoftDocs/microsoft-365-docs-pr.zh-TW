@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
-description: '如果離職員工回到您的組織，或雇用新的員工來承擔已離開員工的工作責任，您可以在 Office 365 中復原非使用中信箱的內容。 當您復原非使用中的信箱時，它會轉換成包含非使用中信箱內容的新信箱。 '
-ms.openlocfilehash: 63d71d2f6e23af55d94f006e772f35747c83d59c
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom: seo-marvel-apr2020
+description: 瞭解如何將 Office 365 中非使用中信箱的內容轉換成包含非使用中信箱內容的新信箱。
+ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678969"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818943"
 ---
 # <a name="recover-an-inactive-mailbox"></a>復原非作用中的信箱
 
@@ -33,7 +34,7 @@ ms.locfileid: "44678969"
 
 請參閱[詳細資訊](#more-information)一節，以取得復原和還原非使用中信箱之差異的詳細資訊，以及復原非使用中信箱時所發生狀況的描述。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="requirements-to-recover-an-inactive-mailbox"></a>復原非使用中信箱的需求
 
 - 您必須使用 Exchange Online PowerShell 復原非使用中的信箱。 您無法使用 Exchange 系統管理中心（EAC）。 如需逐步指示，請參閱[Connect To Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
     

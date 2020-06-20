@@ -15,20 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-ms.custom: seo-marvel-mar2020
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 description: 您可以在調查中存取和搜尋活動，以在調查中使用「資料調查」（預覽）重要管理工具的人員。
-ms.openlocfilehash: 552d7727761052a28c2a58b51bf9b937bf953ad5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 37a8d6bae02f1e18bdd5599d7c5472b8d42e145f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034275"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819013"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>查看相關人員的「審計」活動
 
 需要了解是否有使用者已檢視特定文件或清除信箱中的項目嗎？ 資料調查（預覽）現在已與安全性 & 規範中心內的現有「審核記錄」搜尋工具整合。 使用此內嵌經驗，您可以使用「資料調查」（預覽）感興趣的管理工具人員，輕鬆存取和搜尋活動以取得調查中的利益人員，以協助您進行調查。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="get-permissions"></a>取得許可權
 
 您必須在 Exchange Online 中獲派為 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，才能搜尋稽核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 [權限] 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 若要讓使用者能夠使用最低的許可權層級搜尋資料調查（預覽）審核記錄，您可以在 Exchange Online 中建立自訂角色群組、新增 View-Only 的「審計記錄檔」或「審核記錄」角色，然後將該使用者新增為新角色群組的成員。 如需詳細資訊，請參閱管理 Exchange Online 中的角色群組。
 

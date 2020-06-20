@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: 設定連接器，將 LinkedIn 的資料匯入 Microsoft 365，這樣您就可以使用規範工具（例如法律封存、內容搜尋和保留原則）。
-ms.openlocfilehash: 7d88d366ea19be7d158a04edc7d7fb11dca7bab9
-ms.sourcegitcommit: e55e4747d3b838baacab8985aefc24aac245c431
+ms.custom: seo-marvel-apr2020
+description: 瞭解系統管理員如何設定 & 使用原生連接器將資料從 LinkedIn 公司] 頁面匯入至 Microsoft 365。
+ms.openlocfilehash: c7801dc7ab00f1193b05a50ae10ee67d78e11065
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44043344"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818442"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>設定連接器來封存 LinkedIn 資料
 
@@ -29,7 +28,7 @@ ms.locfileid: "44043344"
 
 LinkedIn 公司頁面資料儲存在信箱中之後，您可以將 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋、In-Place 封存、審核和 Microsoft 365 保留原則）套用至 LinkedIn 資料。 例如，您可以使用內容搜尋來搜尋這些專案，或在高級 eDiscovery 案例中將儲存信箱與保管人建立關聯。 建立連接器，以在 Microsoft 365 中匯入和封存 LinkedIn 資料，可協助您的組織遵守政府和法規原則。
 
-## <a name="before-you--begin"></a>開始之前
+## <a name="give-consent-assign-roles-and-verify-credentials"></a>授與同意、指派角色和驗證認證
 
 - 您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要同意此要求，請移至[此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全域管理員的認證登入，然後接受要求。
 
@@ -39,7 +38,7 @@ LinkedIn 公司頁面資料儲存在信箱中之後，您可以將 Microsoft 365
 
 ## <a name="create-a-linkedin-connector"></a>建立 LinkedIn 連接器
 
-1. 移至<https://compliance.microsoft.com> ，然後按一下 [**資料連線器** > ]**LinkedIn 公司頁面**。
+1. 移至 <https://compliance.microsoft.com> ，然後按一下 [**資料連線器**]  >  **LinkedIn 公司頁面**。
 
 2. 在 [ **LinkedIn 公司頁面**產品] 頁面上，按一下 [**新增連接器**]。
 

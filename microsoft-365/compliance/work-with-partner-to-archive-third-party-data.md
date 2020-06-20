@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 您的組織可以與 Microsoft 合作夥伴合作，設定自訂連接器，以從資料來源（例如 Salesforce 交談、Yahoo Messenger 或 Yammer）匯入協力廠商資料。 這可讓您封存協力廠商資料來源中的資料，如此您就可以使用 Microsoft 365 規範功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料的管理。
-ms.openlocfilehash: fa9efa62f4e2791c5d77cf01de6849b581cdebae
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何設定自訂連接器，以從資料來源（例如 Salesforce 交談、Yahoo Messenger 或 Yammer）匯入協力廠商資料。
+ms.openlocfilehash: f76ceda12bf48d26454a47e4b0b5d6ad42fbe55d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739062"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817038"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>與合作夥伴配合以封存第三方資料
 

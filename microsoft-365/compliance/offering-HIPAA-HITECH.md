@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4a774613283c9639e36aa868538b338f60286246
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254206"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773714"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保險流通與責任（HIPAA） & 高科技的運作
 
@@ -59,7 +59,7 @@ Microsoft enterprise 雲端服務也涵蓋 FedRAMP 評估。 Microsoft Azure 和
 - Microsoft Stream
 - Microsoft 專業服務：Azure、Dynamics 365、Intune 及商務用 Microsoft 365 中型企業和企業客戶的頂級與內部部署
 - [Dynamics 365 和 Dynamics 365 美國政府](https://aka.ms/d365-compliance-list)
-- 以獨立服務的功耗自動化（先前為 Microsoft 流程）雲端服務，或加入 Office 365 或 Dynamics 365 品牌計畫或套件。
+- Power Automate (先前為 Microsoft Flow) 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Intune
 - [Office 365、Office 365 美國政府和 Office 365 美國政府國防版](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
@@ -113,5 +113,5 @@ Microsoft 為合格的公司或其供應商提供涵蓋在 Microsoft 服務範�
 - [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 政府雲端](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [瞭解對 Azure 的 HIPAA 合規性](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)（2016年5月19日）（含）
-- [Azure HIPAA 實現指導方針](https://aka.ms/azure-hipaa-guide)
+- [Azure HIPAA HITRUST 藍圖範例](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

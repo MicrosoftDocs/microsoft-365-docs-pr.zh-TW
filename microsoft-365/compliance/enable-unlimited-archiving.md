@@ -18,18 +18,19 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 針對系統管理員：瞭解如何啟用自動擴充封存，可為使用者提供 Exchange Online 信箱的無限存放區。 您可以為整個組織啟用自動展開的封存，也可以只為特定使用者啟用此功能。
-ms.openlocfilehash: cb63aa79365d17692dbedf1829f76fb91e965d8d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8d550e562e8226d586a9538f9f366e3283ad0437
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631708"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817822"
 ---
 # <a name="enable-unlimited-archiving--admin-help"></a>啟用無限封存-系統管理說明
 
 您可以使用 Exchange Online 自動展開的封存功能來啟用封存信箱的無限存放空間。 當自動展開的封存開啟時，會自動將額外的儲存空間新增至使用者的封存信箱，當其接近儲存量限制時。 結果為無限制的信箱儲存容量。 您可以為組織中的每個人或僅針對特定使用者開啟自動擴充封存。 如需有關自動展開封存的詳細資訊，請參閱[Office 365 中的無限封存概述](unlimited-archiving.md)。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-enable-auto-expanding-archiving"></a>啟用自動擴充封存之前
 
 - 您必須是組織中的全域系統管理員，或 Exchange Online 組織中組織管理角色群組的成員，才能啟用整個組織或特定使用者的自動擴充封存。 或者，您必須是指派「郵件收件者」角色的角色群組成員，才能為特定使用者啟用自動擴充封存。
     
@@ -86,7 +87,7 @@ ms.locfileid: "43631708"
 Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 ```
 
-值`True`表示為組織啟用自動展開封存。 
+值表示為 `True` 組織啟用自動展開封存。 
   
 若要確認特定使用者的自動展開封存是 enabledd 的，請在 Exchange Online PowerShell 中執行下列命令。
   
@@ -94,13 +95,13 @@ Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 ```
 
-值`True`表示已為使用者啟用自動展開封存。 
+值 `True` 表示已為使用者啟用自動展開封存。 
   
 啟用自動擴充封存後，請記住下列事項：
   
-- 如果您執行**Set-OrganizationConfig AutoExpandingArchive**命令來啟用組織的自動擴充封存，您不需要在個別的信箱上執行**Enable-Mailbox AutoExpandingArchive** 。 執行**Set-OrganizationConfig** Cmdlet 以啟用組織的自動展開封存時，不會將使用者信箱上的*AutoExpandingArchiveEnabled*屬性變更`True`為。
+- 如果您執行**Set-OrganizationConfig AutoExpandingArchive**命令來啟用組織的自動擴充封存，您不需要在個別的信箱上執行**Enable-Mailbox AutoExpandingArchive** 。 執行**Set-OrganizationConfig** Cmdlet 以啟用組織的自動展開封存時，不會將使用者信箱上的*AutoExpandingArchiveEnabled*屬性變更為 `True` 。
     
-- 同樣地，當您啟用自動擴充封存功能時， *ArchiveQuota*和*ArchiveWarningQuota*信箱屬性的值不會變更。 實際上，當您啟用使用者信箱的自動擴充封存，且*AutoExpandingArchiveEnabled*屬性設定為`True`時，會忽略*ArchiveQuota*和*ArchiveWarningQuota*屬性。 以下是針對使用者信箱啟用自動擴充封存後，這些信箱屬性的範例。 
+- 同樣地，當您啟用自動擴充封存功能時， *ArchiveQuota*和*ArchiveWarningQuota*信箱屬性的值不會變更。 實際上，當您啟用使用者信箱的自動擴充封存，且*AutoExpandingArchiveEnabled*屬性設定為時 `True` ，會忽略*ArchiveQuota*和*ArchiveWarningQuota*屬性。 以下是針對使用者信箱啟用自動擴充封存後，這些信箱屬性的範例。 
     
     ![啟用自動擴充封存後，就會忽略 ArchiveQuota 和 ArchiveWarningQuota 屬性](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 

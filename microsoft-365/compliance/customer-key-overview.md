@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 使用客戶金鑰，您可以控制組織的加密金鑰，然後設定 Microsoft 365，以使用這些金鑰在 Microsoft 資料中心內加密您的資料。
-ms.openlocfilehash: 701dc306a81e12db7dd1062d2a840621b710abd3
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+description: 在本文中，您將瞭解如何使用 Microsoft 365 中的客戶金鑰來處理服務加密。
+ms.openlocfilehash: 217e23eff89427e5bd30a1da4dd36729110ed563
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635589"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817952"
 ---
 # <a name="service-encryption-with-customer-key"></a>使用客戶金鑰的服務加密
 

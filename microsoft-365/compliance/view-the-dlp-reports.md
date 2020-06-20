@@ -15,17 +15,18 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: 透過 Office 365 的 DLP 報告，您可以快速查看 DLP 原則相符性、覆寫或誤報的數目。查看它們是隨時間向上或向後移動，還是以不同方式篩選報表;然後在圖形上選取線條上的點，以查看其他詳細資料。
-ms.openlocfilehash: 6ff8237b1471f10aff3abc40715af7fe538a211c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+description: 使用 Office 365 中的 DLP 報告，以查看 DLP 原則相符、覆寫或誤報的數目，以及它們是隨時間向上或向下移動。
+ms.openlocfilehash: 1ddcd60dc9314779ade2f7ceae02d336f902e483
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626289"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818993"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>檢視資料外洩防護報告
 
-在您建立資料遺失防護（DLP）原則之後，您可能會想要驗證他們的運作是否正常，並協助您保持相容。 透過安全性&amp;與合規性中心的 DLP 報告，您可以快速查看：
+在您建立資料遺失防護（DLP）原則之後，您可能會想要驗證他們的運作是否正常，並協助您保持相容。 透過安全性與 &amp; 合規性中心的 DLP 報告，您可以快速查看：
   
 - **DLP 原則相符**專案此報告顯示一段時間的 DLP 原則相符計數。 您可以依日期、位置、原則或動作來篩選報告。 您可以使用此報告來： 
     
@@ -57,7 +58,7 @@ ms.locfileid: "43626289"
     
 所有 DLP 報告都可顯示最近四個月的時間範圍內的資料。 最新的資料可能需要長達24小時才會顯示在報告中。
   
-您&amp;可以在安全性與合規性中心\> **報告** \> **儀表板**中找到這些報告。
+您可以在安全性與 &amp; 合規性中心 \> **報告** \> **儀表板**中找到這些報告。
   
 ![DLP 原則符合報告](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
@@ -87,11 +88,11 @@ ms.locfileid: "43626289"
 
 若要對安全性與合規性中心使用大部分 Cmdlet，您必須：
   
-1. [使用遠端 PowerShell 連接&amp;至安全規範中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [&amp;使用遠端 PowerShell 連接至安全規範中心](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. 使用這些[安全性&amp;與合規性中心 Cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)中的任何一個
+2. 使用這些安全性與[ &amp; 合規性中心 Cmdlet](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)中的任何一個
     
-不過，DLP 報告需要從整個 Office 365 擷取資料，包含 Exchange Online。 基於這個理由，在 Exchange Online Powershell 中可以使用 DLP 報告的 Cmdlet，而不是在&amp;安全性與合規性中心 powershell 中。 因此，若要為 DLP 報告使用 Cmdlet，您需要︰
+不過，DLP 報告需要從整個 Office 365 擷取資料，包含 Exchange Online。 基於這個理由，在 Exchange Online Powershell 中可以使用 DLP 報告的 Cmdlet，而不是在安全性與 &amp; 合規性中心 powershell 中。 因此，若要為 DLP 報告使用 Cmdlet，您需要︰
   
 1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     

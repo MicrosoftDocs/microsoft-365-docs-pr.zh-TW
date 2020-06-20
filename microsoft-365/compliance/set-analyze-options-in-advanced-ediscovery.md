@@ -16,23 +16,24 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: '請參閱在高級 eDiscovery 中設定分析程式選項的步驟，包括近乎重複的電子郵件線索和主題。  '
-ms.openlocfilehash: 5f50e2863398679d1381c66009ff1daec40623f9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 091eb75bea0312e5a06cc60ca915612efc820e6e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631260"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819223"
 ---
 # <a name="set-analyze-options-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中設定分析選項
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在 [Advanced eDiscovery] 中，設定 [分析] 選項，再執行 [分析]。
   
 ## <a name="set-analyze-options"></a>設定分析選項
 
-開啟**準備\>分析** \> **設定**。 隨即會顯示下列視窗。
+開啟**準備 \> 分析** \> **設定**。 隨即會顯示下列視窗。
   
 ![設定分析選項](../media/c3ec7a92-8484-4812-b98c-aa3eb740e5b7.png)
   
@@ -55,7 +56,7 @@ ms.locfileid: "43631260"
   
 1. 若要查看、新增或編輯建議的主題，請按一下 [**修改**]。
     
-2. 在 [**建議的主題**] 面板中，按一下 [](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) **新增** ![加入圖示] 圖示以新增主題。 在 [**新增建議的主題**] 面板中，加入以逗號分隔的字。 
+2. 在 [**建議的主題**] 面板中，按一下 [**新增** ![ 加入圖示] ](../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 圖示以新增主題。 在 [**新增建議的主題**] 面板中，加入以逗號分隔的字。 
     
 3. 在 [**主題數目**] 中，選取一個值，以決定「主題」高級 eDiscovery 將嘗試為這些字詞產生的數目（預設為1個主題）。
     
@@ -76,7 +77,7 @@ ms.locfileid: "43631260"
   
 在您設定這些選項之後，請按一下 [**分析**] 以執行。 顯示 [ [View 分析結果](view-analyze-results-in-advanced-ediscovery.md)]。 
   
-## <a name="see-also"></a>請參閱
+## <a name="related-topics"></a>相關主題
 
 [進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
   

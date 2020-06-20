@@ -15,12 +15,13 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: '瞭解如何設定使用者角色、建立案例，以及在高級 eDiscovery 中將使用者指派給案例。  '
-ms.openlocfilehash: 386be1201b30e6b0e7a46c9de47dd6cf2fc4b53c
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6cfc8e313816c0c01512dd0d4b71f1dbbd6e6505
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412802"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819173"
 ---
 # <a name="set-up-users-and-cases-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中設定使用者和案例
 
@@ -29,7 +30,7 @@ ms.locfileid: "44412802"
 > [!IMPORTANT]
 > 隨著我們繼續投資於更新版本的進階電子文件探索，我們即將宣布停用進階文件探索 (也稱為*進階電子文件探索 (傳統版)* 或*進階文件探索 1.0 版*)。 如果您仍在使用進階電子文件探索 1.0 版，請盡快轉換為[進階電子文件探索 2.0 版](overview-ediscovery-20.md) (*在Microsoft 365 中也稱為進階電子文件探索解決方案*)。 進階電子文件探索 2.0 中包含可在進階電子文件探索 1.0 版中找到的類似功能，但同時也提供許多新的功能，例如監管人管理、通訊管理和檢閱集。 若要深入了解進階電子文件探索 1.0 版的停用，請參閱[舊版電子文件探索工具的停用](legacy-ediscovery-retirement.md#advanced-ediscovery-v10) (部分機器翻譯)。 
   
-## <a name="prerequisites"></a>必要條件
+## <a name="requirements-to-set-up-users-and-cases"></a>設定使用者和案例的需求
 
 在 [Advanced eDiscovery] 中設定案例和使用者之前，需要下列專案：
   

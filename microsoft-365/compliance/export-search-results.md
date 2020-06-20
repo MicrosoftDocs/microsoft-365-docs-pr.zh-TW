@@ -21,12 +21,13 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '將安全性 & 合規性中心的內容搜尋中的搜尋結果匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 從 SharePoint 和 OneDrive 商務網站的內容會匯出為原生 Office 檔。 '
-ms.openlocfilehash: 3b9997b11763d91357e53d12ef70ffb025a04d74
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 6fda7c103b90664fc6c31c3f0436b6d360468537
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615987"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817752"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -36,7 +37,7 @@ ms.locfileid: "43615987"
   
 匯出內容搜尋的結果包含準備結果，然後將其下載到本機電腦。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-export-content-search-results"></a>匯出內容搜尋結果之前
 
 - 若要匯出搜尋結果，您必須在安全性 & 規範中心內指派「匯出管理」角色。 此角色會指派給內建的 eDiscovery 管理員角色群組。 組織管理角色群組預設不會指派給它。 如需詳細資訊，請參閱[指派電子文件探索權限](assign-ediscovery-permissions.md)。
     
@@ -60,15 +61,15 @@ ms.locfileid: "43615987"
     
 - 當您下載搜尋結果時（如步驟2所述），您可以在用來匯出搜尋結果的電腦上設定 Windows 登錄設定，以提升下載速度。 如需詳細資訊，請參閱[在從 Office 365 匯出 eDiscovery 搜尋結果時，提高下載速度](increase-download-speeds-when-exporting-ediscovery-results.md)。
     
-- 當您匯出搜尋結果時，資料會暫時儲存在 microsoft 雲端中的 Microsoft 所提供 Azure 存放區位置，然後再將其下載到本機電腦。 請確定您的組織可以連線到 Azure 中的端點，也就是** \*blob.core.windows.net** （萬用字元代表匯出的唯一識別碼）。 搜尋結果資料會從建立後的兩周從 Azure 存放區位置刪除。 
+- 當您匯出搜尋結果時，資料會暫時儲存在 microsoft 雲端中的 Microsoft 所提供 Azure 存放區位置，然後再將其下載到本機電腦。 請確定您的組織可以連線到 Azure 中的端點，也就是** \* blob.core.windows.net** （萬用字元代表匯出的唯一識別碼）。 搜尋結果資料會從建立後的兩周從 Azure 存放區位置刪除。 
     
-- 如果您的組織使用 proxy 伺服器與網際網路通訊，您必須在您用來匯出搜尋結果的電腦上，定義 proxy 伺服器設定（這樣可讓 proxy 伺服器驗證匯出工具）。 若要這麼做，請在符合您 Windows 版本的位置*開啟 machine.config 檔案*。 
+- 如果您的組織使用 proxy 伺服器與網際網路通訊，您必須在您用來匯出搜尋結果的電腦上，定義 proxy 伺服器設定（這樣可讓 proxy 伺服器驗證匯出工具）。 若要這麼做，請在符合您 Windows 版本的位置開啟*machine.config*檔案。 
     
   - **32 位：**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
     
   - **64 位：**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
     
-    將下列行新增至位於*machine.config* `<configuration>`及`</configuration>`標記之間的 machine.config 檔案中。 請務必以您`ProxyServer`的`Port`組織來取代和正確的值;例如， `proxy01.contoso.com:80` 。 
+    在 [和] 標記之間的*machine.config*檔案中新增下列行 `<configuration>` `</configuration>` 。 請務必以您的組織來取代 `ProxyServer` 和 `Port` 正確的值; 例如， `proxy01.contoso.com:80` 。 
     
     ```text
     <system.net>
@@ -123,7 +124,7 @@ ms.locfileid: "43615987"
   
 8. 按一下 [**啟用重復資料**刪除] 核取方塊，排除重複的郵件。 只有在搜尋的內容來源包含 Exchange 信箱或公用資料夾時，才會出現此選項。 
     
-    如果您選取此選項，則即使在搜尋的信箱中找到多個相同郵件複本，也只會匯出郵件的一個副本。 匯出結果報告（結果 .csv）將會包含重複郵件之每個副本的列，以便您識別包含重複郵件複本的信箱（或公用資料夾）。 如需有關重復資料刪除以及如何識別重複專案的詳細資訊，請參閱[eDiscovery 搜尋結果中的重復資料](de-duplication-in-ediscovery-search-results.md)刪除。
+    如果您選取此選項，則即使在搜尋的信箱中找到多個相同郵件複本，也只會匯出郵件的一個副本。 匯出結果報告（Results.csv）將會包含重複郵件之每個副本的列，以便您識別包含重複郵件複本的信箱（或公用資料夾）。 如需有關重復資料刪除以及如何識別重複專案的詳細資訊，請參閱[eDiscovery 搜尋結果中的重復資料](de-duplication-in-ediscovery-search-results.md)刪除。
     
 9. 按一下 [**包含版本的 SharePoint 檔**] 核取方塊，以匯出 SharePoint 檔的所有版本。 只有在搜尋的內容來源包含 SharePoint 或 OneDrive 商務網站時，才會顯示此選項。 
     
@@ -248,7 +249,7 @@ ms.locfileid: "43615987"
     
   - **錯誤和警告**包含匯出期間所發生之檔案的錯誤和警告。 請參閱 [錯誤詳細資料] 欄，以取得每個個別錯誤或警告的特定資訊。 
     
-  - **略過的專案**當您從 SharePoint 和商務網站 OneDrive 匯出搜尋結果時，匯出通常會包括略過的專案報告（SkippedItems .csv）。 在此報告中提及的專案通常是不會下載的專案，例如資料夾或檔組。 不是依照設計方式匯出這些專案類型。 對於略過的其他專案，[略過的專案] 報告中的「錯誤類型」和「錯誤詳細資料」欄位會顯示略過專案的原因，而且不會與其他搜尋結果一起下載。 
+  - **略過的專案**當您從 SharePoint 和商務用 OneDrive 匯出搜尋結果時，匯出通常會包括略過的專案報告（SkippedItems.csv）。 在此報告中提及的專案通常是不會下載的專案，例如資料夾或檔組。 不是依照設計方式匯出這些專案類型。 對於略過的其他專案，[略過的專案] 報告中的「錯誤類型」和「錯誤詳細資料」欄位會顯示略過專案的原因，而且不會與其他搜尋結果一起下載。 
     
   - **追蹤記錄**檔包含匯出程式的詳細記錄資訊，並可協助在匯出期間發現問題。 
     
@@ -282,13 +283,13 @@ ms.locfileid: "43615987"
     
     如果您選擇匯出部分編制索引的專案，則會在個別的 PST 檔案中匯出部分索引的信箱專案，而不管您在 [將**Exchange 內容匯出為**] 下選擇的選項。
 
-- 如果在搜尋結果中傳回部分索引項目目（因為部分索引項目目的其他屬性符合搜尋準則），則會以一般搜尋結果匯出部分編制索引的專案。 因此，如果您選擇匯出已編制索引的專案和部分索引項目目（透過選取**所有專案（包括具有未辨識格式的專案，也就是已加密的專案，或是未以其他原因為匯出選項編制索引**），則會在結果 .csv 報告中列出已匯出的部分已編制索引項目目。 它們不會列在未編制索引的 items csv 報告中。
+- 如果在搜尋結果中傳回部分索引項目目（因為部分索引項目目的其他屬性符合搜尋準則），則會以一般搜尋結果匯出部分編制索引的專案。 因此，如果您選擇匯出已編制索引的專案和部分索引項目目（只要選取 [**所有專案] （包括具有無法辨識格式的專案）、[已加密] 或 [其他原因還沒有編制索引**] 選項，則會在 Results.csv 報告中列出匯出的部分已編制索引項目目。 它們不會列在未編制索引的 items.csv 報告中。
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>匯出個別郵件或 PST 檔案
   
 - 如果郵件的檔案路徑名稱超過 Windows 的最大字元限制，則會截斷檔路徑名稱。 但原始的檔案路徑名稱會列在資訊清單和 ResultsLog 中。
     
-- 如先前所述，電子郵件搜尋結果會匯出至檔案系統中的資料夾。 個別郵件的資料夾路徑會複製使用者信箱中的資料夾路徑。 例如，在使用者的 [收件匣] 中，名為 "ContosoCase101" 郵件的搜尋會位於資料夾`~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox`路徑中。 
+- 如先前所述，電子郵件搜尋結果會匯出至檔案系統中的資料夾。 個別郵件的資料夾路徑會複製使用者信箱中的資料夾路徑。 例如，在使用者的 [收件匣] 中，名為 "ContosoCase101" 郵件的搜尋會位於資料夾路徑中 `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` 。 
     
 - 如果您選擇在包含單一資料夾中的所有郵件的一個 PST 檔案中匯出電子郵件，則 [**刪除的郵件**] 資料夾及 [**搜尋資料夾**] 資料夾都會包含在 pst 資料夾的最上層。 這些資料夾是空白的。 
   
@@ -310,7 +311,7 @@ ms.locfileid: "43615987"
   
  ### <a name="filenames-of-exported-items"></a>匯出專案的檔案名
   
-- 電子郵件訊息和匯出至本機電腦的網站檔的完整路徑名稱，都有260個字元的限制（由作業系統強加）。 匯出專案的完整路徑名稱包含專案的原始位置，以及將搜尋結果下載到本機電腦上的資料夾位置。 例如，如果您指定將搜尋結果下載至`C:\Users\Admin\Desktop\SearchResults` eDiscovery 匯出工具，則下載的電子郵件專案的完整路徑名。 `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg`
+- 電子郵件訊息和匯出至本機電腦的網站檔的完整路徑名稱，都有260個字元的限制（由作業系統強加）。 匯出專案的完整路徑名稱包含專案的原始位置，以及將搜尋結果下載到本機電腦上的資料夾位置。 例如，如果您指定將搜尋結果下載至 `C:\Users\Admin\Desktop\SearchResults` EDiscovery 匯出工具，則下載的電子郵件專案的完整路徑名 `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` 。
     
     如果超過260個字元的限制，將會截斷專案的完整路徑名稱。
     
@@ -318,11 +319,11 @@ ms.locfileid: "43615987"
     
   - 如果在縮短檔案名後，完整路徑名稱仍過長，該專案就會從目前的位置移至上層資料夾。 如果路徑名仍過長，則會重複此程式：縮短檔案名，必要時再移至上層資料夾。 此程式會重複，直到完整路徑名低於260字元限制為止。
     
-  - 如果已存在截斷的完整路徑名稱，則會將版本號碼加入檔案名的結尾;例如， `statusmessage(2).msg`。
+  - 如果已存在截斷的完整路徑名稱，則會將版本號碼加入檔案名的結尾;例如， `statusmessage(2).msg` 。
     
-    若要協助緩解此問題，請考慮將搜尋結果下載至具有短路徑名稱的位置;例如，將搜尋結果下載至名為`C:\Results`的資料夾時，會將匯出之專案的路徑名稱增加一些，而不是將`C:\Users\Admin\Desktop\Results`其下載至名為的資料夾。
+    若要協助緩解此問題，請考慮將搜尋結果下載至具有短路徑名稱的位置;例如，將搜尋結果下載至名為的資料夾時， `C:\Results` 會將匯出之專案的路徑名稱增加一些，而不是將其下載至名為的資料夾 `C:\Users\Admin\Desktop\Results` 。
     
-- 當您匯出網站檔時，也可能會修改檔的原始檔案名。 這會特別針對已從處於保留狀態之商務網站的 SharePoint 或 OneDrive 中刪除的檔。 刪除位於保留之網站上的檔之後，刪除的檔就會自動移至網站的 [保留] 存放庫（此網站是在網站保留時建立）。 當刪除的檔移至 [保留] 保留庫時，會在檔的原始檔案名上附加隨機產生及唯一的識別碼。 例如，如果檔的檔案名是`FY2017Budget.xlsx` ，後來刪除該檔並移至 [保留] 存放庫，則移至 [保留] 文件庫的檔檔案名會修改成類似`FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`的內容。 如果保留的保留文件庫中的檔符合內容搜尋的查詢，而且您匯出該搜尋的結果，則匯出的檔案會有修改後的檔案名;在此範例中，匯出之檔的檔案名將是`FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx`。
+- 當您匯出網站檔時，也可能會修改檔的原始檔案名。 這會特別針對已從處於保留狀態之商務網站的 SharePoint 或 OneDrive 中刪除的檔。 刪除位於保留之網站上的檔之後，刪除的檔就會自動移至網站的 [保留] 存放庫（此網站是在網站保留時建立）。 當刪除的檔移至 [保留] 保留庫時，會在檔的原始檔案名上附加隨機產生及唯一的識別碼。 例如，如果檔的檔案名是 `FY2017Budget.xlsx` ，後來刪除該檔並移至 [保留] 存放庫，則移至 [保留] 文件庫的檔檔案名會修改成類似的內容 `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` 。 如果保留的保留文件庫中的檔符合內容搜尋的查詢，而且您匯出該搜尋的結果，則匯出的檔案會有修改後的檔案名;在此範例中，匯出之檔的檔案名將是 `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` 。
     
     修改保留網站上的檔時（網站中文件庫的版本設定已啟用），會自動在保留的保留文件庫中建立檔案複本。 在此情況下，隨機產生及唯一的識別碼也會附加到複製至 [保留] 存放庫的檔檔案名。
     

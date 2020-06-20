@@ -14,17 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: 在您的本機電腦上編輯 Windows 登錄，當您從 Office 365 的安全性 & 合規性中心匯出內容搜尋結果時，停用報告。 停用這些報告可加快下載時間，並節約磁碟空間。
-ms.openlocfilehash: 89ea5e073a2c33d5f04fe3eef74b5b26510eef2f
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 在您的本機電腦上編輯 Windows 登錄，以停用從安全性 & 規範中心匯出內容搜尋結果的報告。
+ms.openlocfilehash: 0eaf9c9d1f70e03481b00d38d2e487709329c4cd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943006"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817852"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>當您匯出內容搜尋結果時停用報告
 
-當您使用 eDiscovery 匯出工具在安全性 & 合規性中心匯出內容搜尋的結果時，此工具會自動建立及匯出包含匯出內容之其他資訊的兩個報告。 這些報告是結果 .csv 檔案和資訊清單 .xml 檔案（請參閱本主題中[關於如何停用「匯出報告](#frequently-asked-questions-about-disabling-export-reports)」一節的常見問題，以取得這些報告的詳細描述）。 因為這些檔案可能非常大，所以您可以透過防止匯出這些檔案，加快下載時間，並節省磁碟空間。 若要這麼做，您可以在用來匯出搜尋結果的電腦上變更 Windows 登錄。 如果您想要稍後加入報告，您可以編輯登錄設定。 
+當您使用 eDiscovery 匯出工具在安全性 & 合規性中心匯出內容搜尋的結果時，此工具會自動建立及匯出包含匯出內容之其他資訊的兩個報告。 這些報告為 Results.csv 檔及 Manifest.xml 檔案（請參閱本主題中[關於停用「匯出報告](#frequently-asked-questions-about-disabling-export-reports)」一節的常見問題，以取得這些報告的詳細描述）。 因為這些檔案可能非常大，所以您可以透過防止匯出這些檔案，加快下載時間，並節省磁碟空間。 若要這麼做，您可以在用來匯出搜尋結果的電腦上變更 Windows 登錄。 如果您想要稍後加入報告，您可以編輯登錄設定。 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>建立登錄設定以停用匯出報告
 
@@ -34,7 +36,7 @@ ms.locfileid: "43943006"
     
 2. 根據您要停用的匯出報表，執行下列其中一項或兩項步驟。
     
-    - **結果 .csv**
+    - **Results.csv**
     
       使用檔案名尾碼註冊，將下列文字儲存至 Windows 登錄檔案。例如，DisableResultsCsv。
     
@@ -43,7 +45,7 @@ ms.locfileid: "43943006"
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d False 
       ```
 
-    - **Manifest .xml**
+    - **Manifest.xml**
     
       使用檔案名尾碼註冊，將下列文字儲存至 Windows 登錄檔案。例如，DisableManifestXml。
     
@@ -62,24 +64,24 @@ ms.locfileid: "43943006"
   
 ## <a name="edit-registry-settings-to-re-enable-the-export-reports"></a>編輯登錄設定以重新啟用匯出報告
 
-如果您已停用結果. csv 和資訊清單 .xml 報告在上述程式中建立 .reg 檔案，您可以編輯這些檔案，以重新啟用報表，使其與搜尋結果一起匯出。 此外，在您要用來匯出結果內容搜尋的電腦上執行下列程式。
+如果您停用 Results.csv，並在先前程式中建立 .reg 檔案以 Manifest.xml 報告，您可以編輯這些檔案，以重新啟用報告，使其與搜尋結果一起匯出。 此外，在您要用來匯出結果內容搜尋的電腦上執行下列程式。
   
 1. 關閉 eDiscovery 匯出工具（若已開啟）。
     
 2. 編輯您在先前程式中建立的其中一個或兩個 .reg 編輯檔案。
     
-    - **結果 .csv**
+    - **Results.csv**
     
-        在 [記事本] 中開啟 DisableResultsCsv 檔案，將值`False`變更為`True`，然後儲存檔案。 例如，編輯檔案之後，它看起來像這樣：
+        在 [記事本] 中開啟 DisableResultsCsv 檔案，將值變更 `False` 為 `True` ，然後儲存檔案。 例如，編輯檔案之後，它看起來像這樣：
     
         ```text
         Windows Registry Editor Version 5.00
       reg add HKLM\SOFTWARE\Microsoft\Exchange\Client\eDiscovery\ExportTool /v ResultCsvEnabled /t REG_SZ /d True
         ```
 
-    - **Manifest .xml**
+    - **Manifest.xml**
     
-        在 [記事本] 中開啟 DisableManifestXml 檔案，將值`False`變更為`True`，然後儲存檔案。 例如，編輯檔案之後，它看起來像這樣：
+        在 [記事本] 中開啟 DisableManifestXml 檔案，將值變更 `False` 為 `True` ，然後儲存檔案。 例如，編輯檔案之後，它看起來像這樣：
     
       ```text
       Windows Registry Editor Version 5.00
@@ -96,11 +98,11 @@ ms.locfileid: "43943006"
   
 ## <a name="frequently-asked-questions-about-disabling-export-reports"></a>停用匯出報告的常見問題
 
- **其結果是 csv 及資訊清單 .xml 報告？**
+ **Results.csv 和 Manifest.xml 報表為何？**
   
-結果 .csv 和資訊清單 .xml 檔案包含匯出內容的其他相關資訊。
+Results.csv 和 Manifest.xml 檔案包含匯出內容的其他資訊。
   
-- **結果 .csv**包含每個下載為搜尋結果之專案相關資訊的 Excel 檔。 針對電子郵件，結果記錄檔包含每封郵件的相關資訊，包括： 
+- **Results.csv**包含每個下載專案（搜尋結果）相關資訊的 Excel 檔。 針對電子郵件，結果記錄檔包含每封郵件的相關資訊，包括： 
     
   - 來源信箱中郵件的位置（包括郵件是在主要或封存信箱中）。
     
@@ -122,7 +124,7 @@ ms.locfileid: "43943006"
     
   - 檔的名稱（位於結果記錄檔的 [主旨] 欄中）。
     
-- **Manifest .xml**包含搜尋結果中所包含之每個專案之相關資訊的資訊清單檔案（xml 格式）。 此報告中的資訊與結果 csv 報告相同，但其格式為「電子 Discovery 參考模型」（EDRM）所指定的格式。 如需 EDRM 的詳細資訊，請[https://www.edrm.net](https://www.edrm.net)前往。
+- **Manifest.xml**包含在搜尋結果中的每個專案相關資訊的資訊清單檔案（XML 格式）。 此報告中的資訊與 Results.csv 報告相同，但其格式為「電子 Discovery 參考模型」（EDRM）所指定的格式。 如需 EDRM 的詳細資訊，請前往 [https://www.edrm.net](https://www.edrm.net) 。
     
  **何時應該停用匯出這些報告？**
   

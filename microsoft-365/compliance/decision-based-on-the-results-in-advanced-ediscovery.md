@@ -14,18 +14,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: '瞭解 [Advanced eDiscovery] 中的 [決定] 索引標籤可如何提供資料，以協助您決定正確的查看案例檔案集大小。 '
-ms.openlocfilehash: 279b689e830089c683b8cd575a231635ca32de76
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: '瞭解 Microsoft 365 Advanced eDiscovery 中的 [決定] 索引標籤可如何提供資料，以協助您決定正確的查看案例檔案集大小。 '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0139bc0505150a4d27aaca97b9b253f2043d649f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630570"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817902"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>以 Advanced eDiscovery （古典）結果為基礎的決策
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
  在 [Advanced eDiscovery] 中，[判斷] 索引標籤提供其他資訊，供您用來判斷查看案例檔案集大小的決策支援統計資料。 
   
@@ -53,7 +54,7 @@ ms.locfileid: "43630570"
     
 展開的詳細資料窗格會顯示其他詳細資料。 集合中的檔案不包括空白或 nebulous 檔案。 「家族檔案」是指未載入相關性的檔案，但仍會計入為該系列的一部分。
   
-## <a name="see-also"></a>請參閱
+## <a name="related-topics"></a>相關主題
 
 [進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
   

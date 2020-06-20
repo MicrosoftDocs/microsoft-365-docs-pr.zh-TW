@@ -19,14 +19,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: 在 Microsoft 365 中建立封存和刪除原則，以自動將專案移至使用者的封存信箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bc48b8192af3ca4edd591307e5945b9171cf665
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+description: 瞭解如何在 Microsoft 365 中建立封存和刪除原則，以自動將專案移至使用者的封存信箱。
+ms.openlocfilehash: e5f35938241608a247c625e8411821572d75b18e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222524"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819213"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>設定組織中的信箱封存和刪除原則
 
@@ -48,7 +48,7 @@ ms.locfileid: "44222524"
     
 您可以遵循本文中的部分或所有步驟，為您自己組織中的信箱設定封存和刪除原則。 建議您先在一些信箱上測試此程式，然後再對組織中的所有信箱執行這項程式。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-set-up-an-archive-and-deletion-policy"></a>在您設定封存與刪除原則之前
 
 - 您必須是組織中的全域系統管理員，才可執行本主題中的步驟。 
     

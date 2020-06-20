@@ -14,18 +14,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: '深入瞭解分析程式，可讓您在 [高級 eDiscovery] 中設定參數、執行選項及查看結果。 '
-ms.openlocfilehash: 5acd9071477856aa81774efe48d3290c92eb4599
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: '深入瞭解分析程式，可讓您在 Microsoft 365 Advanced eDiscovery 中設定參數、執行選項及查看結果。 '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a5a3dc8d9bb6568545bbe0868a673fd0090f12e8
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637057"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818482"
 ---
 # <a name="analyze-case-data-with-advanced-ediscovery-classic"></a>使用高級 eDiscovery （經典）分析案例資料
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 「高級 eDiscovery」中的**準備** \> **分析**處理常式會對包含的檔案套用下列功能： 
   
@@ -43,7 +44,7 @@ ms.locfileid: "43637057"
     
 在執行分析之前，請定義用來選取及處理檔案的準則，包括將會分析哪些已載入檔案，以及每種檔案類型所要提交的分析類型。 
   
-## <a name="see-also"></a>請參閱
+## <a name="additional-resources-for-advanced-ediscovery-classic-analysis"></a>適用于高級 eDiscovery （經典）分析的其他資源
 
 [進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
   

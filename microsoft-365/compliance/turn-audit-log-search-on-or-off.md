@@ -18,13 +18,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
-description: 您可以在安全性 & 規範中心開啟「審核記錄搜尋」功能。 如果您變更了主意，您可以在任何時候關閉此功能。 當「審核記錄搜尋」關閉時，系統管理員無法在您的組織中搜尋使用者和系統管理員活動的 Microsoft 365 審核記錄。
-ms.openlocfilehash: f3d88f62f466d9c868dfc6addb5865e144f5223b
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.custom: seo-marvel-apr2020
+description: 如何在安全性 & 規範中心開啟或關閉「審核記錄搜尋」功能，以啟用或停用系統管理員搜尋審核記錄的能力。
+ms.openlocfilehash: 4571c90c4fa680acd8925e83e32ffcf07de7d626
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330787"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819133"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>開啟或關閉稽核記錄搜尋
 
@@ -33,7 +34,7 @@ ms.locfileid: "44330787"
 > [!IMPORTANT]
 > 如果您在 Microsoft 365 中關閉「審計記錄搜尋」，您就無法使用 Office 365 管理活動 API 或 Azure Sentinel 來存取您組織的審計資料。 依照本文中的步驟關閉審核記錄搜尋，表示當您使用安全性 & 合規性中心或在 Exchange Online PowerShell 中執行**Search-UnifiedAuditLog** Cmdlet 來搜尋審核記錄時，不會傳回任何結果。 這也表示無法透過 Office 365 管理活動 API 或 Azure Sentinel 使用審核記錄。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-turn-audit-log-search-on-or-off"></a>開啟或關閉「審核記錄搜尋」之前
 
 - 您必須在 Exchange Online 中指派「審核記錄」角色，以在 Microsoft 365 組織中開啟或關閉審核記錄搜尋。 根據預設，此角色會指派給 Exchange 系統管理中心的 [**許可權**] 頁面上的 [規範管理] 和 [組織管理] 角色群組。 Microsoft 365 中的全域系統管理員是 Exchange Online 中「組織管理」角色群組的成員。 
     

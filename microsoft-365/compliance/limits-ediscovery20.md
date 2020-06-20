@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 深入瞭解 Microsoft 365 中的高級 eDiscovery 解決方案的作用限制。 這包括使用搜尋工具收集案例資料時的大小寫限制、索引限制和搜尋限制。
-ms.openlocfilehash: babc05cc5c74f435f0be6fbc8eafd80f09a77b75
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.custom:
+- seo-marvel-apr2020
+description: 深入瞭解 Microsoft 365 中的高級 eDiscovery 解決方案的大小寫限制、索引限制和搜尋限制。
+ms.openlocfilehash: 67e53a484878b0ea4ddde29d77297a3d9b2fd7cd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520145"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817090"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>進階電子文件探索的限制
 

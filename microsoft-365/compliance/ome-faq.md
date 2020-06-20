@@ -14,12 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
-ms.openlocfilehash: d3dcc91f1e1e93293218e18109cebae2190d337b
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5368133877921d8f5fdfa2e3de2e610c545f57ff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717152"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818676"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -103,7 +104,7 @@ Microsoft 365 使用者可以從 Outlook for Windows 和 Mac （2013和2016）�
   
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>受保護電子郵件中的附件支援何種檔案類型？ 附件是否繼承與受保護的電子郵件相關聯的保護原則？
 
-您可以將任何檔案類型附加到受保護的郵件，但是只會對[這裡](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)提及的檔案格式套用保護原則。
+您可以將任何檔案類型附加到受保護的郵件，但是保護原則只會套用至[Azure 資訊保護用戶端支援的檔案類型](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types)中所述的檔案格式。
   
 如果支援檔案格式（例如 Word、Excel 或 PowerPoint 檔案），檔案會永遠受到保護，即使收件者已下載附件也是一樣。 例如，如果附件是以不轉寄的方式保護，且原始收件者下載並將附件轉寄給新的收件者，則新的收件者將無法開啟受保護的檔案。
   

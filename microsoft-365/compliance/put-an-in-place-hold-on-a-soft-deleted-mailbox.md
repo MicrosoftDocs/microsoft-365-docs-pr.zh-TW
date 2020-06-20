@@ -11,13 +11,15 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
-description: 瞭解如何為虛刪除的信箱建立 In-Place 保留，使其成為非使用中的信箱，並保留其內容。 然後，您可以使用 Microsoft eDiscovery 工具來搜尋非使用中的信箱。
-ms.openlocfilehash: 1986a4bfca72c192b268984b7d2f49eb2e88134a
-ms.sourcegitcommit: 7646e2d742d1b2fad085a00200a2a10461dd4bac
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何為虛刪除的信箱建立 In-Place 保留，使其成為非使用中的信箱，並保留其內容。
+ms.openlocfilehash: 4dcd6539519675094da9a05c7701b9f8511ce9a1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978153"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818862"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>在 Exchange Online 中的虛刪除信箱上放置 In-Place
 
@@ -31,7 +33,7 @@ ms.locfileid: "42978153"
 > [!NOTE]
 > 在 Exchange Online 中，虛刪除的信箱是已刪除但可在特定保留期間內復原的信箱。 Exchange Online 中的虛刪除信箱保留期間是30天。 這表示信箱可在刪除之前的30天內復原（或進行非使用中的信箱）。 30天后，虛刪除的信箱會標示為永久刪除，且無法復原或設為非使用中。 
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="requirements-for-in-place-holds"></a>In-Place 保留的需求
 
 - 您必須在 Windows PowerShell 中使用**New-MailboxSearch**指令程式，以便在虛刪除的信箱上進行 In-Place 保留。 您無法在線上 SharePoint 中使用 Exchange 系統管理中心（EAC）或 eDiscovery 中心。 
 

@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
-description: 當您不再需要保留 Microsoft 365 非使用中信箱的內容時，您可以移除 [保留]，以永久刪除非使用中的信箱。 移除保留後，非作用中的信箱會標示為待刪除，並且會在處理完後永久刪除。
-ms.openlocfilehash: fafedd1ccf78c3e763c9e02dc37c594d8f2c9785
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 當您不再需要保留 Microsoft 365 非使用中信箱的內容時，您可以永久刪除非使用中的信箱。
+ms.openlocfilehash: 05357ce1b3e10394854844f15ec6a18c1c427d5b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630530"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817892"
 ---
 # <a name="delete-an-inactive-mailbox"></a>刪除非作用中的信箱
 
@@ -32,7 +34,7 @@ ms.locfileid: "43630530"
   
 請參閱[詳細資訊](#more-information)一節，以取得從非使用中的信箱移除保留專案之後所發生狀況的描述。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-delete-an-inactive-mailbox"></a>刪除非使用中的信箱之前
 
 - 您必須使用 Exchange Online PowerShell 移除非使用中信箱的訴訟暫止狀態。 您無法使用 Exchange 系統管理中心（EAC）。 如需逐步指示，請參閱[Connect To Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。 您可以使用 Exchange Online PowerShell 或 EAC 從非使用中的信箱移除 In-Place 保留。 
     
@@ -105,13 +107,13 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
    Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
    ```
 
-2. 在 EAC 中，移至 [**規範管理** \> **] &amp; In-Place eDiscovery 保留**]。
+2. 在 EAC 中，移至 [**規範管理**] \> **In-Place eDiscovery &amp; 保留**]。
     
-3. 選取您要刪除的 In-Place 保留，然後按一下 [**編輯** ![編輯圖示](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)]。
+3. 選取您要刪除的 In-Place 保留，然後按一下 [**編輯** ![ 編輯圖示] ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
     
-4. 在 [ **In-Place eDiscovery &amp;暫**止屬性] 頁面上，按一下 [ **In-Place 保留**]，取消選取 [**將符合搜尋查詢的內容放入保留的所選信箱**] 方塊，然後按一下 [**儲存**]。
+4. 在 [ **In-Place eDiscovery &amp; 暫**止屬性] 頁面上，按一下 [ **In-Place 保留**]，取消選取 [**將符合搜尋查詢的內容放入保留的所選信箱**] 方塊，然後按一下 [**儲存**]。
     
-5. 在 [ **In-Place eDiscovery &amp;保留**] 頁面上，再次選取 In-Place [保留]，然後按一下 [](../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)**刪除**![刪除圖示]。
+5. 在 [ **In-Place eDiscovery &amp; 保留**] 頁面上，再次選取 In-Place [保留]，然後按一下 [**刪除** ![ 刪除圖示] ](../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) 。
     
 6. 在警告中，按一下 **[是]** 以刪除 In-Place 保留。 
     
@@ -143,13 +145,13 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
    Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
    ```
 
-2. 在 EAC 中，移至 [**規範管理** \> **] &amp; In-Place eDiscovery 保留**]。
+2. 在 EAC 中，移至 [**規範管理**] \> **In-Place eDiscovery &amp; 保留**]。
     
-3. 選取非使用中信箱上的 In-Place 保留，然後按一下 [**編輯** ![編輯圖示](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)]。
+3. 選取非使用中信箱上的 In-Place 保留，然後按一下 [**編輯** ![ 編輯圖示] ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
     
-4. 在 [ **In-Place eDiscovery &amp;暫**止屬性] 頁面上，按一下 [**來源**]。
+4. 在 [ **In-Place eDiscovery &amp; 暫**止屬性] 頁面上，按一下 [**來源**]。
     
-5. 在來源信箱清單中，按一下您要移除之非使用中信箱的名稱，然後按一下 [**移除**![移除圖示](../media/adf01106-cc79-475c-8673-065371c1897b.gif)]。
+5. 在來源信箱清單中，按一下您要移除之非使用中信箱的名稱，然後按一下 [**移除** ![ 移除圖示] ](../media/adf01106-cc79-475c-8673-065371c1897b.gif) 。
     
 6. 按一下 [**儲存**] 以儲存變更。 隨即顯示一則訊息，指出作業已成功完成。 
     

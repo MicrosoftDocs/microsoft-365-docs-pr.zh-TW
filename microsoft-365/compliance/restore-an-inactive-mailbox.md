@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
-description: 如果新的員工或其他使用者需要存取 Office 365 中非使用中信箱的內容，您可以將非使用中信箱的內容還原（或合併）到現有的信箱。
-ms.openlocfilehash: b3cc574b96f616debec38a2b69406bf20dabf7b9
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+description: 瞭解如何將非使用中信箱的內容還原（或合併）至 Office 365 中的現有信箱。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8ae3927aaaba64711cdcc3362399b109f228cb12
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678959"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818933"
 ---
 # <a name="restore-an-inactive-mailbox"></a>還原非作用中的信箱
 
@@ -33,7 +34,7 @@ ms.locfileid: "44678959"
 
 如需還原和復原非使用中信箱之差異的詳細資訊，請參閱本文中的**詳細資訊**一節。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="requirements-to-restore-an-inactive-mailbox"></a>還原非使用中信箱的需求
 
 - 您必須使用 Exchange Online PowerShell 還原非使用中的信箱。 您無法使用 Exchange 系統管理中心（EAC）。 如需逐步指示，請參閱[Connect To Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554)。
 

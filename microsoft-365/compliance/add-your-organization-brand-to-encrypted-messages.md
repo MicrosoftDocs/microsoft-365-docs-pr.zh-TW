@@ -19,13 +19,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 將組織的署名套用至組織的加密電子郵件和加密入口網站的內容。
-ms.openlocfilehash: 86636b319151a96e9ec827f85cc943282c30f63c
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+- seo-marvel-jun2020
+description: 瞭解 Office 365 全域管理員如何將組織的署名套用至加密的電子郵件，& 加密入口網站的內容。
+ms.openlocfilehash: 6ec13a9d986019e6eb91d1b7a395f1c6199fe12a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679107"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818656"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>將貴組織的品牌新增至您的加密郵件
 

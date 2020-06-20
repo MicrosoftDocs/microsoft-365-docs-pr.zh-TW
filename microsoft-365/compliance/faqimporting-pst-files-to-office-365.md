@@ -15,13 +15,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: '有關使用 Office 365 Import Service 將組織的 PST 檔案匯入至 Microsoft 365 信箱之系統管理員的常見問題。 '
-ms.openlocfilehash: 0d3245c962c2d22f0d500aafe22703bd3e57d504
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.custom: seo-marvel-apr2020
+description: 本文包含一些常見問題的解答，系統管理員會使用 Office 365 匯入服務，將 PST 檔案匯入 PST 檔案至 Microsoft 365。
+ms.openlocfilehash: 0f490b7bae3f462bb07725bf14453a6b9a4d7b9e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579198"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817732"
 ---
 # <a name="faq-about-importing-pst-files"></a>匯入 PST 檔案的常見問題集
 
@@ -93,7 +94,7 @@ PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標�
   
  **針對我要匯入至信箱的 PST 檔案，其資料夾階層數是否有上限？**
   
-是。您無法匯入具有 300 或更多巢狀資料夾階層的 PST 檔案。
+Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **我是否可以使用網路上傳將 PST 檔案匯入 Office 365 中的非作用中的信箱？**
   
@@ -154,7 +155,7 @@ Office 365 匯入服務只支援使用 2.5 吋固態硬碟 (SSD)，或是 2.5 �
   
  **寄送硬碟之後，需要多久的時間才會送達 Microsoft 資料中心？**
   
-這取決於幾個要素，例如您與 Microsoft 資料中心之間的距離，以及您使用什麼類型的運送選項來寄送硬碟 (例如，隔天送達、兩日送達或陸地運送)。大多數貨運公司提供追蹤號碼，讓您可以追蹤運送狀態。
+That depends on a few things, such as your proximity to the Microsoft data center and what kind of shipping option you used to ship your hard drive (such as, next-day delivery, two-day delivery, or ground-delivery). With most shippers, you can use the tracking number to track the status of your delivery.
   
  **硬碟送達 Microsoft 資料中心後，需要多久的時間才能將我的 PST 檔案上傳到 Azure？**
   
@@ -192,7 +193,7 @@ PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標�
   
  **針對我要匯入至信箱的 PST 檔案，其資料夾階層數是否有上限？**
   
-是。您無法匯入具有 300 或更多巢狀資料夾階層的 PST 檔案。
+Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **我是否可以使用磁碟機寄送將 PST 檔案匯入至 Microsoft 365 中的非作用中的信箱？**
   
@@ -208,19 +209,19 @@ PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標�
   
  **Microsoft 是否可以先將硬碟清空再寄回給我？**
   
-否，Microsoft 無法先將硬碟清空再寄回給客戶。硬碟會以 Microsoft 當初收到的狀態寄回給您。
+No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
   
  **Microsoft 是否可以先將硬碟銷毀再寄回給我？**
   
-否，Microsoft 不能破壞您的硬碟。硬碟會以 Microsoft 當初收到的狀態寄回給您。
+No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
   
  **哪些快遞服務支援將硬碟寄回客戶？**
   
-如果您是位於美國或歐洲地區的客戶，Microsoft 會使用 FedEx 將硬碟寄回給您。針對所有其他區域，Microsoft 則會使用 DHL。
+If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
   
  **將硬碟寄回需要多少費用？**
   
-實際的寄回費用取決於您將硬碟寄出的所在地區與 Microsoft 資料中心之間的距離。Microsoft 會從您的 FedEx 或 DHL 帳戶收取硬碟寄回費用。寄回費用需由您自行承擔。
+Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
   
  **我是否能使用自訂運送服務 (例如 FedEx 自訂運送) 將我的硬碟寄給 Microsoft？**
   
@@ -228,4 +229,4 @@ PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標�
   
  **如果我需要將硬碟寄到其他國家/地區，我需要採取什麼動作嗎？**
   
-您寄給 Microsoft 的硬碟可能會跨國際邊界。在這種情況下，您必須負責確保硬碟和當中的資料可依據相關法律進口和/或出口。寄送硬碟之前，請與您的顧問確認磁碟機和當中的資料可以合法地寄到指定的 Microsoft 資料中心，以確保 Microsoft 能夠及時收到您的硬碟。
+The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.

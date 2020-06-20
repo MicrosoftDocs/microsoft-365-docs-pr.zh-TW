@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 瞭解如何使用錯誤修正功能，修正可能會妨礙內容處理的資料調查（預覽）中的資料問題。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c833ce9ae93f5395e06ee3dbde54ff4a8d5d4a00
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: fe77f918a7471bf36df7727f890ea043976e44db
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035115"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817812"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>處理調查的資料時的錯誤修正
 
@@ -57,7 +59,7 @@ ms.locfileid: "44035115"
     >建議您使用本機檔路徑取代遠端網路路徑，以取得最佳效能。
 
     > [!NOTE]
-    > 若尚未安裝 AzCopy，您可以從下列位置進行安裝：https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+    > 若尚未安裝 AzCopy，請移至[開始使用 AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)進行安裝。
 
 6. 按一下 [**複製到剪貼**簿]，複製預先定義的命令。 啟動 windows 命令提示字元，貼上命令，然後按**enter**鍵。  
 
@@ -71,7 +73,7 @@ ms.locfileid: "44035115"
 7. 下載檔案之後，您可以使用適當的工具加以修復。 針對受密碼保護的檔案，您可以使用數種密碼破譯工具。 如果您知道檔案的密碼，您可以開啟檔案並移除密碼保護。
     
    > [!NOTE]
-    > 您必須保留已修正檔案的目錄結構及檔案名，這一點很重要。 已下載的檔案和資料夾的路徑名稱，可讓修正的檔案與原始檔案產生關聯。  如果目錄結構或檔案名已變更，您會收到下列錯誤： `Cannot apply Error Remediation to the current Evidenceset`。
+    > 您必須保留已修正檔案的目錄結構及檔案名，這一點很重要。 已下載的檔案和資料夾的路徑名稱，可讓修正的檔案與原始檔案產生關聯。  如果目錄結構或檔案名已變更，您會收到下列錯誤： `Cannot apply Error Remediation to the current Evidenceset` 。
 
 8. 現在，回到 [資料調查（預覽）]，然後按 **[下一步：上傳檔案]**。  這會移至下一個您現在可以上傳檔案的步驟。
 
@@ -81,7 +83,7 @@ ms.locfileid: "44035115"
 
 10. 將命令貼到 Windows 命令提示字元，然後按**enter**上傳檔案。
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6 .png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
 11. 最後，回到 [資料調查（預覽）]，然後按 **[下一步：處理檔案]**。
 

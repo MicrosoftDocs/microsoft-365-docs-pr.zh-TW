@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
-description: 深入瞭解如何將信箱變成非使用中的信箱，針對先前的員工保留信箱內容。 若要這麼做，您可以將信箱設為訴訟暫止，或將 Microsoft 365 保留原則套用至信箱，然後再移除對應的 Microsoft 365 帳戶。
-ms.openlocfilehash: ab89f8a7262dcd4197c52275558d95f8053d2c9b
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何將信箱變成非使用中的信箱，保留先前員工的信箱內容。
+ms.openlocfilehash: d7805ad24adcad61841866e11cd25942aef6e70b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679047"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817572"
 ---
 # <a name="overview-of-inactive-mailboxes"></a>非作用中信箱概觀
 

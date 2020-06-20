@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 「高級 eDiscovery」中的保管人管理工具可讓您管理工作流程，以識別、保留及收集與法律案例中的利益人員相關聯的資料。
-ms.openlocfilehash: fbd348c842cb3c4bb7284c14ae2504b83fd0b117
-ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何使用高級 eDiscovery 中的保管人管理工具來管理法律案例的資料。
+ms.openlocfilehash: 400793a6779cef5b1e823f40fa08cc1e05f93f15
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43551237"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815490"
 ---
 # <a name="work-with-custodians-in-advanced-ediscovery"></a>在高級電子檔探索中搭配保管人
 

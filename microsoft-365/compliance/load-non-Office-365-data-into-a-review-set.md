@@ -17,18 +17,18 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在高級 eDiscovery 案例中將非 Microsoft 365 資料匯入至審查集，以進行分析。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ed4a26ea1dd68b9198cce67ce0f97580ed4b2a99
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f9b506edc55da1916ae908eaa7ca619ba7300f87
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034421"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815460"
 ---
 # <a name="load-non-microsoft-365-data-into-a-review-set"></a>將非 Microsoft 365 資料載入到審閱集
 
 並非所有需要在高級 eDiscovery 中進行分析的檔都位於 Microsoft 365。 使用高級 eDiscovery 的非 Microsoft 365 資料匯入功能，您可以將不在 Microsoft 365 中的檔上傳至審閱集。 本文說明如何將您的非 Microsoft 365 檔放入高級 eDiscovery 以進行分析。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="requirements-to-upload-non-office-365-content"></a>上傳非 Office 365 內容的需求
 
 使用本文所述的上傳非 Microsoft 365 功能時，需要具備下列各項：
 

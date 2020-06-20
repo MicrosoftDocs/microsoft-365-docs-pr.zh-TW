@@ -14,13 +14,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-description: 瞭解如何識別可放在 Microsoft 365 信箱上的不同保留類型。 這些保留類型包括訴訟暫止、eDiscovery 保留及 Microsoft 365 保留原則。 您也可以判斷使用者是否已從整個組織的保留原則中排除。
-ms.openlocfilehash: 331fd37f48e42666ceb33a2a751b7d7a7a945e4b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何識別可放在 Microsoft 365 的 Exchange Online 信箱上的不同保留類型。
+ms.openlocfilehash: a1629e96352a8b98d1122e9b31b968cdce9efa33
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352312"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817602"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
@@ -201,7 +203,7 @@ Get-Mailbox <username> | FL *HoldApplied*
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-或
+或者
  
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
@@ -215,7 +217,7 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
-或
+或者
 
 ```powershell
 Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplied
@@ -236,9 +238,9 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayReleaseHoldApplie
 
 在您識別套用至信箱的保留後，您可以執行工作，例如變更保留期間、暫時或永久移除保留，或排除 Microsoft 365 保留原則中非使用中的信箱。 如需執行與保留相關之工作的詳細資訊，請參閱下列其中一個主題：
 
-- 在 [安全性 & 規範中心] 中執行[Set-RetentionCompliancePolicy AddExchangeLocationException \< 使用者信箱>](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps)命令 PowerShell，以從整個組織的 Microsoft 365 保留原則中排除信箱。 這個命令僅可用於*ExchangeLocation*屬性值等於的保留原則 `All` 。
+- 在安全性 & 規範中心」中執行[Set-RetentionCompliancePolicy AddExchangeLocationException \<user mailbox> ](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy?view=exchange-ps)命令，PowerShell 從整個組織的 Microsoft 365 保留原則中排除信箱。 這個命令僅可用於*ExchangeLocation*屬性值等於的保留原則 `All` 。
 
-- 在 Exchange Online PowerShell 中執行[Set-Mailbox ExcludeFromOrgHolds \< 保留 GUID （不含首碼或尾碼>](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps)命令），以從整個組織的 Microsoft 365 保留原則中排除非作用中的信箱。
+- 在 Exchange Online PowerShell 中執行[Set-Mailbox ExcludeFromOrgHolds \<hold GUID without prefix or suffix> ](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps)命令，以從整個組織的 Microsoft 365 保留原則中排除非作用中的信箱。
 
 - [變更非使用中信箱的保留期間](change-the-hold-duration-for-an-inactive-mailbox.md)
 

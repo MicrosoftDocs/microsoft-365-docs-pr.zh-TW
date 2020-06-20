@@ -17,17 +17,17 @@ search.appverid:
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
 description: 瞭解如何對選取的程式執行報告，然後在 Advanced eDiscovery 中下載其 .csv 檔案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8761277dae8898cfe4c1674beb3f89eeddb48ba
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 9672f8567cdebba357649833187664c2fa8402ab
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034587"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818913"
 ---
 # <a name="run-reports-in-advanced-ediscovery-classic"></a>在高級 eDiscovery 中執行報告（經典）
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 本主題說明如何在高級 eDiscovery 中執行報告。
   
@@ -43,6 +43,6 @@ ms.locfileid: "44034587"
     
 3. 按一下 [**下載 CSV**]。 所要求的報表會產生並下載。
     
-## <a name="see-also"></a>請參閱
+## <a name="related-topics"></a>相關主題
 
 [進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)

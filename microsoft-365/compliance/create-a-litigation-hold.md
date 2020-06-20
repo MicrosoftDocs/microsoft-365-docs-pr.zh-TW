@@ -13,13 +13,15 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: 瞭解如何將信箱設為訴訟暫止，並在調查期間保留所有信箱內容。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8f4d95e1174c9070dd51f27ae9ab90c64bfeaafd
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 9c62dfcd9e4cf1e3cc75e029b250c7abe80de6df
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351048"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818042"
 ---
 # <a name="create-a-litigation-hold"></a>建立訴訟資料暫留
 
@@ -35,7 +37,7 @@ ms.locfileid: "44351048"
     
 - 保留使用者主要和封存信箱中的專案
     
-## <a name="before-you-begin"></a>開始之前
+## <a name="assign-an-exchange-online-plan-2-license"></a>指派 Exchange Online Plan 2 授權
 
 - 若要將 Exchange Online 信箱設為訴訟暫止狀態，必須將其指派為 Exchange Online Plan 2 授權。 如果信箱已獲指派 Exchange Online Plan 1 授權，則必須將其指派給其另一個 Exchange Online 封存授權，以便進行暫止。
     
@@ -84,7 +86,7 @@ Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <num
 
 在正常刪除項目工作流程中，當使用者永久刪除 (Shift+Delete) 或從 [刪除的項目] 資料夾中刪除項目時，信箱項目會移至 [可復原的項目] 資料夾中的 [刪除] 子資料夾。 當保留期間到期時，刪除原則 (也就是以刪除保留動作設定的保留標記) 也會將項目移至 [刪除] 子資料夾。 當使用者清除 [可復原的項目] 資料夾中的項目，或已刪除項目的保留期間到期時，項目會移至 [可復原的項目] 資料夾中的 [清除] 子資料夾並標示為永久刪除。 系統會在下一次受管理的資料夾助理員 (MFA) 處理信箱時，從 Exchange 清除項目。
 
-當信箱處於訴訟暫止狀態時，[清除] 子資料夾中的項目會依訴訟暫止所指定的保留期間予以保留。保留期間是由接收或建立項目的原始日期開始計算，並定義 [清除] 子資料夾中的項目會保留多久。[清除] 子資料夾中的項目保留期間到期時，項目將標示為永久刪除，並在下一次 MFA 處理信箱時，從 Exchange清除。若信箱設為無限期保留，項目將不會從 [清除] 子資料夾中清除。
+When a mailbox is placed on Litigation Hold, items in the Purges subfolder are preserved for the hold duration specified by the Litigation Hold. The hold duration is calculated from the original date an item was received or created, and defines how long items in the Purges subfolder are held. When the hold duration expires for an item in the Purges subfolder, the item is marked for permanent deletion and will be purged from Exchange the next time the mailbox is processed by the MFA. If an indefinite hold is placed on a mailbox, items will never be purged from the Purges subfolder.
 
 下圖顯示在 [可復原的項目] 資料夾中的子資料夾以及並保留工作流程程序。
 

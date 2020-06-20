@@ -19,18 +19,18 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 使用內容搜尋和本文中的腳本，針對使用者群組搜尋商務網站的信箱和 OneDrive。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9269fca59d13dfb715153c4211339e0d9cfb7e0
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 714574739256f98353f01478fb9216432f3dcb47
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035825"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818973"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
 
-安全性 & 合規性中心提供許多 Windows PowerShell Cmdlet，可讓您自動執行耗時的 eDiscovery 相關工作。 目前，在安全性 & 合規性中心內建立內容搜尋，以搜尋大量的保管人內容位置，需要一些時間與準備工作。 在您建立搜尋之前，您必須收集 OneDrive 每個商務用網站的 URL，然後將每個信箱和 OneDrive 的商務網站新增至搜尋。 在未來的版本中，這會在安全性 & 合規性中心較容易進行。 在此之前，您可以使用本文中的腳本來自動化此程式。 此腳本會提示您組織的 MySite 網域的名稱（例如， **contoso** in URL https://contoso-my.sharepoint.com)、使用者電子郵件地址的清單、新內容搜尋的名稱，以及要使用的搜尋查詢）。 腳本會針對清單中的每個使用者，取得商務 URL 的 OneDrive，然後使用您提供的搜尋查詢，來建立及啟動搜尋內容，以針對清單中的每一位使用者，搜尋信箱及 OneDrive for Business site。 
+安全性 & 合規性中心提供許多 Windows PowerShell Cmdlet，可讓您自動執行耗時的 eDiscovery 相關工作。 目前，在安全性 & 合規性中心內建立內容搜尋，以搜尋大量的保管人內容位置，需要一些時間與準備工作。 在您建立搜尋之前，您必須收集 OneDrive 每個商務用網站的 URL，然後將每個信箱和 OneDrive 的商務網站新增至搜尋。 在未來的版本中，這會在安全性 & 合規性中心較容易進行。 在此之前，您可以使用本文中的腳本來自動化此程式。 此腳本會提示您組織的 MySite 網域的名稱（例如， **contoso** in URL https://contoso-my.sharepoint.com) 、使用者電子郵件地址的清單、新內容搜尋的名稱，以及要使用的搜尋查詢）。 腳本會針對清單中的每個使用者，取得商務 URL 的 OneDrive，然後使用您提供的搜尋查詢，來建立及啟動搜尋內容，以針對清單中的每一位使用者，搜尋信箱及 OneDrive for Business site。 
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="permissions-and-script-information"></a>許可權及腳本資訊
 
 - 您必須是 Security & 合規性中心內的 eDiscovery Manager 角色群組成員，以及 SharePoint Online 全域系統管理員，才能執行步驟3中的腳本。
     
@@ -38,7 +38,7 @@ ms.locfileid: "44035825"
     
 - 腳本包含最低的錯誤處理。 其主要用途是快速且輕鬆地搜尋每個使用者之商務網站的信箱和 OneDrive。
     
-- 任何 Microsoft standard support program 或 service 都不支援本主題中提供的範例腳本。 範例腳本是以不含任何類型擔保的方式提供。 Microsoft 進一步否認所有我[https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283)的 mplied 擔保，包括但不限於任何適售性或特定用途適用性的暗示擔保。 因使用或效能範例腳本及檔的整體風險，仍然保留給您。 在任何事件中，Microsoft、其作者、（包括但不限於使用或無法使用範例腳本或檔的任何損害（包括（但不限於）因使用或無法使用範例腳本或檔而造成的任何損害（包括但不限於公司中斷、商務中斷、商務資訊遺失或其他 pecuniary 遺失）以外的任何損害（包括但不限於）使用或無法使用範例腳本或檔時所產生的任何其他
+- 任何 Microsoft standard support program 或 service 都不支援本主題中提供的範例腳本。 範例腳本是以不含任何類型擔保的方式提供。 Microsoft 進一步否認所有我 [https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283) 的 mplied 擔保，包括但不限於任何適售性或特定用途適用性的暗示擔保。 因使用或效能範例腳本及檔的整體風險，仍然保留給您。 在任何事件中，Microsoft、其作者、（包括但不限於使用或無法使用範例腳本或檔的任何損害（包括（但不限於）因使用或無法使用範例腳本或檔而造成的任何損害（包括但不限於公司中斷、商務中斷、商務資訊遺失或其他 pecuniary 遺失）以外的任何損害（包括但不限於）使用或無法使用範例腳本或檔時所產生的任何其他
     
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>步驟 1：安裝 SharePoint Online 管理命令介面
 
@@ -50,13 +50,13 @@ ms.locfileid: "44035825"
 
 步驟3中的腳本會建立內容搜尋，以搜尋信箱及 OneDrive 帳戶清單中的使用者。 您可以只輸入文字檔中的電子郵件地址，也可以在 Windows PowerShell 中執行命令，以取得電子郵件地址清單，並將其儲存至檔案（位於您將在步驟3中儲存腳本的相同資料夾中）。
   
-以下是[Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)命令，您可以 runt 以取得組織中所有使用者的電子郵件地址清單，並將其儲存至名為`Users.txt`的文字檔。 
+以下是[Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)命令，您可以 runt 以取得組織中所有使用者的電子郵件地址清單，並將其儲存至名為的文字檔 `Users.txt` 。 
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
-在您執行此命令之後，請務必開啟檔案，並移除包含屬性名稱的標頭`PrimarySmtpAddress`。 文字檔應該只包含電子郵件地址的清單，而不包含其他任何內容。 請確定電子郵件地址清單前面或後面沒有任何空白列。
+在您執行此命令之後，請務必開啟檔案，並移除包含屬性名稱的標頭 `PrimarySmtpAddress` 。 文字檔應該只包含電子郵件地址的清單，而不包含其他任何內容。 請確定電子郵件地址清單前面或後面沒有任何空白列。
   
 ## <a name="step-3-run-the-script-to-create-and-start-the-search"></a>步驟3：執行腳本以建立及啟動搜尋
 
@@ -64,7 +64,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   
 - **您的使用者認證**-腳本會使用您的認證來存取 SharePoint 線上，以取得商務 OneDrive URLs，以及透過遠端 PowerShell 連接至安全性 & 規範中心。 
     
-- **MySite 網域的名稱**-MySite 網域是包含組織中商務網站所有 OneDrive 的網域。 例如，如果 MySite 網域的 URL 是**https://contoso-my.sharepoint.com**，當腳本提示您輸入 MySite 網域`contoso`的名稱時，就會輸入。 
+- **MySite 網域的名稱**-MySite 網域是包含組織中商務網站所有 OneDrive 的網域。 例如，如果 MySite 網域的 URL 是 **https://contoso-my.sharepoint.com** ， `contoso` 當腳本提示您輸入 MySite 網域的名稱時，就會輸入。 
     
 - **步驟2中的文字檔路徑名**-您在步驟2中建立的文字檔路徑名。 如果文字檔和腳本位於相同的資料夾中，請輸入文字檔的名稱。 否則，請輸入文字檔的完整路徑名。 
     
@@ -75,7 +75,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 **若要執行腳本：**
     
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `SearchEXOOD4B.ps1`。 將檔案儲存到您在步驟2中儲存的使用者清單所在的相同資料夾。
+1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `SearchEXOOD4B.ps1` 。 將檔案儲存到您在步驟2中儲存的使用者清單所在的相同資料夾。
     
   ```powershell
   # This PowerShell script will prompt you for the following information:

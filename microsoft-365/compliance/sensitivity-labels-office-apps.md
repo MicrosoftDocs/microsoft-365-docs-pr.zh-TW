@@ -14,13 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 深入瞭解使用者如何使用 Office 應用程式中的敏感度標籤、適用于行動裝置的 Office 應用程式，以及適用于 web 的 Office 應用程式。 瞭解哪些應用程式支援靈敏度標籤。
-ms.openlocfilehash: 8feb8fc70277e502c5bbb321c864e4cd022ad725
-ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
+description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d2d1486aaed7ee3be308a847d9fd3ae19585f52d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44658340"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819253"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 

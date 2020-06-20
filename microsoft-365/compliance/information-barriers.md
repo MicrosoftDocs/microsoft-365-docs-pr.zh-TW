@@ -13,16 +13,15 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 使用資訊障礙，以確保您的組織內的 Microsoft 小組能夠進行通訊法規遵從性。
-ms.openlocfilehash: 341c4f54ac48cbebd17b8d9ded267091f098dcbd
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5bd922bee0808262b297245340a2dd641f44018f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232006"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817532"
 ---
 # <a name="information-barriers"></a>資訊屏障
-
-## <a name="overview"></a>概觀
 
 Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假設您想要限制兩個群組之間的通訊，以避免組織中發生利益衝突。 或者，您可能想要限制組織內特定人員之間的通訊，以保護內部資訊。 Microsoft 365 可跨群組和組織進行通訊及共同作業，所以有沒有方法可以限制特定使用者群組之間的通訊（必要時）？ 透過資訊障礙，您可以！ 
 

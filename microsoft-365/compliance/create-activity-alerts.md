@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: 新增及管理安全性 & 規範中心的活動警示，讓 Microsoft 365 會在使用者執行特定活動時傳送電子郵件通知。
-ms.openlocfilehash: 16c40ebeb44ecb1c54a1715a936436b3427a7d54
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ac78c57d368e27c43cc5f25733d49fad5fe4374a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035805"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818022"
 ---
 # <a name="create-activity-alerts"></a>建立活動警示
 
@@ -34,7 +34,7 @@ ms.locfileid: "44035805"
 > [!NOTE]
 > 活動警示會被取代。 建議您在安全性與合規性中心中開始使用警示原則，而不是建立新的活動提醒。 警示原則提供額外的功能，例如建立在任何使用者執行指定活動時觸發警示的報警原則，以及在安全性與合規性中心的「**查看警示**」頁面上顯示警示。 如需詳細資訊，請參閱[警示原則](alert-policies.md)。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="confirm-roles-and-configure-audit-logging"></a>確認角色及設定審核記錄
 
 - 您必須在安全性 & 合規性中心內指派組織設定角色，以管理活動警示。 根據預設，此角色會指派給合規性管理員和組織管理角色群組。 如需新增成員至角色群組的詳細資訊，請參閱[授與使用者存取安全性 & 規範中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
     
@@ -50,7 +50,7 @@ ms.locfileid: "44035805"
     
 2. 使用您的公司或學校帳戶登入。
     
-3. 在 [**活動提醒**] 頁面上![，按一下](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) [新增圖示] [**新增**]。
+3. 在 [**活動提醒**] 頁面上，按一下 [ ![ 新增圖示] [ ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **新增**]。
 
    隨即會顯示建立活動提醒的飛出頁面。
 
@@ -85,7 +85,7 @@ ms.locfileid: "44035805"
 
 您可以關閉活動警示，以避免傳送電子郵件通知。 當您關閉活動通知之後，它仍會顯示在您組織的活動警示清單中，您仍然可以查看其屬性。
   
-1. 移至 [移[https://protection.office.com/managealerts](https://protection.office.com/managealerts)至]。
+1. 移至 [移至] [https://protection.office.com/managealerts](https://protection.office.com/managealerts) 。
     
 2. 使用您的公司或學校帳戶登入。
     

@@ -14,16 +14,14 @@ ms.collection:
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41d56927f3f9c22782b10640330ca9d0167402d2
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.openlocfilehash: 88ff728f00709707233b97586d1220ead76eca8c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232049"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817542"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
-
-## <a name="overview"></a>概觀
 
 透過資訊障礙，您可以定義原則，以防止某些使用者區段進行通訊，或允許特定的區段只與特定其他的區段進行通訊。 資訊屏障原則可協助您的組織維持相關的行業標準與法規的遵從性，並避免潛在的利益衝突。 若要深入瞭解，請參閱[資訊障礙](information-barriers.md)。 
 

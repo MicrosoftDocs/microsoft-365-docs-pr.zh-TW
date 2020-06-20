@@ -16,13 +16,13 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-description: 透過資料遺失防護（DLP）的 SharePoint 線上，您可以發現整個租使用者中包含敏感性資料的檔。 探索文件之後，您可以與文件擁有者協力保護資料。 本主題可以協助您進行查詢，以搜尋敏感資料。
-ms.openlocfilehash: 78f7f07bf6b2fbb0781f4bda8716b84399eef561
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+description: 在 SharePoint Online 中使用資料遺失防護（DLP）來探索包含整個租使用者的敏感性資料的檔。
+ms.openlocfilehash: b6a0943aa4e71b61c5f430034d9e445462eebde7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327911"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817702"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>形成查詢以搜尋儲存在網站上的敏感資料
 
@@ -33,7 +33,7 @@ ms.locfileid: "44327911"
   
 ## <a name="forming-a-basic-dlp-query"></a>形成基本 DLP 查詢
 
-基本 DLP 查詢是由三個部分組成：SensitiveType、計數範圍及信賴範圍。 如下圖所示， **SensitiveType: " \< type \> "** 是必要的，且** | \< 計數範圍 \> **和** | \< 信賴範圍 \> **都是選用的。 
+基本 DLP 查詢是由三個部分組成：SensitiveType、計數範圍及信賴範圍。 如下圖所示， **SensitiveType: " \<type\> "** 是必要的，且都 **|\<count range\>** **|\<confidence range\>** 是選擇性的。 
   
 ![查詢範例分為必要和選用](../media/DLP-query-example-text.png)
   

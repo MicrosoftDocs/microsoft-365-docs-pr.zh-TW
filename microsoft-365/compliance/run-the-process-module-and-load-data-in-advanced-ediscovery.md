@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: '瞭解如何使用安全性&amp;與合規性中心存取高級 eDiscovery，並執行案例的處理模組。  '
-ms.openlocfilehash: efab765a7ed17b1118efe7296fbabe08d51dd1ba
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: '瞭解如何使用安全性與 &amp; 合規性中心存取高級 eDiscovery，並執行案例的處理模組。  '
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 47614e8bc25a376f9b51068c151a71e025e2f264
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626469"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818902"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中執行進程模組和載入資料
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 本節說明高級 eDiscovery 處理模組的功能。 
   
@@ -41,9 +42,9 @@ Advanced eDiscovery 提供系統中繼資料值，例如接近重複的群組或
   
 執行下列步驟以執行程式。
   
-1. [開啟安全性&amp;與合規性中心](go-to-the-securitycompliance-center.md)。 
+1. [開啟安全性 &amp;規範中心](go-to-the-securitycompliance-center.md)。 
     
-2. 移至 **[ &amp;搜尋調查** \> **eDiscovery** ]，然後按一下 [**移至高級 eDiscovery**]。
+2. 移至 [**搜尋 &amp; 調查** \> **eDiscovery** ]，然後按一下 [**移至高級 eDiscovery**]。
     
 3. 在 [Advanced eDiscovery] 的 [顯示**案例**] 頁面中，選取適當的大小寫，然後按一下 [**移至任何情況**]。
     
@@ -77,11 +78,11 @@ Advanced eDiscovery 提供系統中繼資料值，例如接近重複的群組或
     
 6. 若要開始，請按一下 [**處理**]。 完成時，會顯示流程結果。
     
-7. 選如果您需要將資料來源指派給特定的保管人，您可以在**保管人** \>中新增及**編輯保管人名稱，並在****保管人** \> **指派**中指派保管人。 
+7. 選如果您需要將資料來源指派給特定的保管人，您可以在**保管人**中新增及編輯保管人名稱， \> **Manage**並在**保管人** \> **指派**中指派保管人。 
     
 如果您新增至案例，您可以再次處理。
   
-## <a name="see-also"></a>請參閱
+## <a name="related-topics"></a>相關主題
 
 [進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
   

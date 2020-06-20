@@ -14,13 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: 使用 Microsoft 365 規範中心的 eDiscovery 案例來管理組織的法律調查。 如果您有 E5 訂閱，您可以使用「高級 eDiscovery」的文字分析、機器學習和預測編碼功能，進一步分析案例資料。
-ms.openlocfilehash: 1e7279fed51e108886ff0b4a6d64788d6424720e
-ms.sourcegitcommit: 72e43b9bf85dbf8f5cf2040ea6a4750d6dc867c9
+ms.custom:
+- seo-marvel-apr2020
+description: 在 Office 365 的安全性 & 規範中心使用 eDiscovery 案例，以管理組織的法律調查。
+ms.openlocfilehash: 0e39c2cfb865e6cf649bf1ff7702d97bd29352b9
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43799904"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815500"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>管理 Microsoft 365 的法律調查
 

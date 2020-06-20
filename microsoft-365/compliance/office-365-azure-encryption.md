@@ -17,18 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 瞭解 Azure 中可用的加密，例如 Azure 磁片加密
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5d334c56228a372d7e389bd5d0eff9859184d5b
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 57581f7ca1f4cb605aa2617f73dd1e4b04bd129c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033631"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818852"
 ---
 # <a name="encryption-in-azure"></a>Azure 中的加密
 
 Azure 中的技術保護措施，例如加密通訊和工作處理程式，協助保護您的資料安全。 您也可以靈活地執行額外的加密功能和管理您自己的加密金鑰。 不論客戶設定為何，Microsoft 會套用加密，以保護 Azure 中的客戶資料。 Microsoft 也可讓您透過一系列的高級技術來控制 Azure 中的資料，以加密、控制和管理加密金鑰，以及控制及審核資料的存取。 此外，Azure Storage 提供一組完整的安全性功能，可搭配使用，讓開發人員建立安全的應用程式。
-
-## <a name="introduction"></a>簡介
 
 Azure 提供許多機制，可在資料從一個位置移動到另一個位置時加以保護。 當您的雲端服務與客戶之間的旅行時，Microsoft 會使用 TLS 來保護資料。 Microsoft 的資料中心會與連接至 Azure 服務的用戶端系統協商 TLS 連線。 「完全轉寄保密（PFS）」會以唯一金鑰保護客戶之用戶端系統與 Microsoft 雲端服務之間的連線。 連接也會使用以 RSA 為基礎的2048位加密金鑰長度。 這種組合使得別人很難截獲和存取傳輸中的資料。
 

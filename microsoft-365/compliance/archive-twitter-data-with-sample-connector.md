@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: 設定連接器，將 Twitter 資料匯入 Microsoft 365，讓您可以使用合規性功能，例如法律封存、內容搜尋和保留原則。
-ms.openlocfilehash: efc02dcf7b9c40fafedf230e4786f6f6494c27d6
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.custom: seo-marvel-apr2020
+description: 瞭解系統管理員如何設定和使用原生連接器，將 Twitter 資料匯入 Microsoft 365。
+ms.openlocfilehash: ba6c0786c0861776bad00dc1ed8f859da378a355
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210579"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818422"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>設定連接器以封存 Twitter 資料（預覽）
 

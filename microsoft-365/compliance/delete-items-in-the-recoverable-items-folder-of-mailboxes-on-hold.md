@@ -1,5 +1,5 @@
 ---
-title: 刪除雲端信箱中的專案保留 [可復原的專案] 資料夾-系統管理說明
+title: 刪除雲端信箱中 [保留可復原的專案] 資料夾中的專案
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: 針對系統管理員：刪除使用者的 [可復原的專案] 資料夾中的專案，即使該信箱位於法律封存中也是一樣。 這是一種有效的方式，可刪除意外濺入 Microsoft 365 的資料。
+description: 瞭解如何刪除 Exchange Online 信箱之使用者的 [可復原的專案] 資料夾中的專案，即使該信箱位於法律封存中也一樣。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce363d558e5ce1de600ccf34863cc6524841e78b
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 2d7babf231efba31a6f4cb1638d98669a9b938f9
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352178"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817872"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>刪除雲端式信箱的 [可復原的專案] 資料夾中的專案，保留系統管理員協助
 
@@ -46,7 +46,7 @@ Exchange Online 信箱的 [可復原的專案] 資料夾存在，可防止意外
 > [!CAUTION]
 > 本文所述的程式會導致從 Exchange Online 信箱永久刪除（清除）的資料。 這表示您從 [可復原的專案] 資料夾中刪除的郵件無法復原，也不會供法律查詢或其他法規遵從性之用。 如果您想要從保留的信箱刪除郵件，做為訴訟暫止的一部分、In-Place 保留、eDiscovery 保留或在安全性與規範中心建立的保留原則，請在移除保留之前，先與您的記錄管理或法律部門核實。 您的組織可能具有定義信箱保留或資料外泄事件是否優先的原則。 
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-delete-items"></a>刪除專案之前
 
 - 若要建立和執行內容搜尋，您必須是「eDiscovery 管理員」角色群組的成員，或者獲指派「符合性搜尋」管理角色。 若要刪除郵件，您必須是「組織管理」角色群組的成員，或者獲指派「搜尋及清除」管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心中指派電子文件探索權限](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)。
 
@@ -262,7 +262,7 @@ Get-Mailbox <username> | FL DelayHoldApplied,DelayReleaseHoldApplied
 Set-Mailbox <username> -RemoveDelayHoldApplied
 ```
 
-或
+或者
 
 ```powershell
 Set-Mailbox <username> -RemoveDelayReleaseHoldApplied

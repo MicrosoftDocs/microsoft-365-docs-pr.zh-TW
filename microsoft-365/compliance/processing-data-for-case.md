@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 在「高級 eDiscovery」中處理包含對保管人資料的重新編制索引、內嵌檔和附件的擴充，以及 OCR。 處理也包含索引錯誤的修復。
-ms.openlocfilehash: ab0b9d3a92590812531be04f193ef51afa70a1cf
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 閱讀在 Office 365 的「高級 eDiscovery 工具」中處理各種形式之資料的概述。
+ms.openlocfilehash: ec39df5ba8f8ad4ce979b2cd110e14f29f7838b4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632218"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818782"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>在高級 eDiscovery 中使用處理錯誤
 

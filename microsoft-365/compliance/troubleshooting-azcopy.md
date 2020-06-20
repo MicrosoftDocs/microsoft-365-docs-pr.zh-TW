@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 疑難排解 Azure AzCopy 的錯誤。在 Advanced eDiscovery 中載入非 Office 365 資料以進行錯誤修正時。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: afb89517f6c34495820bec424c72833324e00125
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 0185c179039b7aec72bc400709225ef42489f620
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034495"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819143"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>在高級 eDiscovery 中 AzCopy 疑難排解
 
@@ -38,13 +40,13 @@ ms.locfileid: "44034495"
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>本機電腦上未安裝 AzCopy，或其未安裝在預設位置
 
-如果 AzCopy 未安裝或安裝在預設安裝位置（亦即`%ProgramFiles(x86)%`）以外的位置，當您執行 AzCopy 命令時，可能會收到下列錯誤：
+如果 AzCopy 未安裝或安裝在預設安裝位置（亦即）以外的位置 `%ProgramFiles(x86)%` ，當您執行 AzCopy 命令時，可能會收到下列錯誤：
 
     The system cannot find the path specified.
 
-如果本機電腦上未安裝 AzCopy，您可以從[這裡](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)安裝。 請務必將其安裝在預設位置。
+如果本機電腦上未安裝 AzCopy，您可以在[使用 AzCopy 中的「傳送機 8.1](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)」，在 Windows 上尋找傳送資料的安裝資訊。 請務必將其安裝在預設位置。
 
-如果安裝了 AzCopy，但是安裝的位置與預設位置不同，您可以複製命令、將其貼到文字檔，然後將路徑變更至已安裝 AzCopy 的位置。 例如，如果 Azcopy 位於`%ProgramFiles%`，您可以將命令的第一個部分變更`%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe`為。 `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` 進行此變更後，請從文本檔案複製並執行命令提示字元。
+如果安裝了 AzCopy，但是安裝的位置與預設位置不同，您可以複製命令、將其貼到文字檔，然後將路徑變更至已安裝 AzCopy 的位置。 例如，如果 Azcopy 位於 `%ProgramFiles%` ，您可以將命令的第一個部分變更 `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` 為 `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` 。 進行此變更後，請從文本檔案複製並執行命令提示字元。
 
 > [!TIP]
 > 如果 AzCopy 安裝在預設安裝位置的另一個位置，請考慮將其卸載，然後在預設位置重新安裝。 這可協助您避免未來發生此問題。

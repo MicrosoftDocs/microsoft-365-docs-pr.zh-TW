@@ -11,15 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 mscollection: M365-security-compliance
-ms.custom: Adm_O365
+ms.custom:
+- Adm_O365
+- seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
-description: 若要查看協力廠商的審計，請參閱 Microsoft 365、Azure 及 Dynamics 365 線上法規合規性報告，瞭解 Microsoft 如何讓客戶資料安全，以及您在使用這些線上服務時，如何相容使用 ISO、HIPAA、NIST、FINRA、GDPR 及 FedRAMP。
-ms.openlocfilehash: 837ab06a0b4cf058586cff31c462884833da5871
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解如何存取及使用 Microsoft 服務信任入口網站，以協助安全性、隱私權和規範作法。
+ms.openlocfilehash: 0866a32087e61bb8af3ea9d7d4c61ea463864067
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632444"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817622"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>開始使用 Microsoft 服務信任入口網站
 
@@ -29,7 +31,7 @@ Microsoft 服務信任入口網站提供各種內容、工具及其他有關 Mic
 
 服務信任入口網站包含 Microsoft 實施之控制和程式的詳細資料，以保護我們的雲端服務和其中的客戶資料。 若要存取服務信任入口網站上的某些資源，您必須使用 Microsoft 雲端服務帳戶（Azure Active Directory 組織帳戶或 Microsoft 帳戶）登入已驗證的使用者，並查看並接受 Microsoft 保密協定的相容性材料。
   
-現有客戶可以[https://aka.ms/STP](https://aka.ms/STP)使用下列其中一項線上訂閱**來存取服務信任入口網站**（試用版或付費版）： 
+現有客戶可以使用下列其中一項線上訂閱**來存取服務信任入口網站** [https://aka.ms/STP](https://aka.ms/STP) （試用版或付費版）： 
   
 - Microsoft 365
 

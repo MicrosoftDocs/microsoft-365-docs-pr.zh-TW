@@ -18,12 +18,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明如何使用安全性 & 規範中心中的「新增資料調查（預覽）」工具，從原始位置刪除專案。
-ms.openlocfilehash: 4ad450fbbfac838ba536b19ec54eb83a4fb5d597
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 0787944791fea65dfc940b1067abe1bad8097dcd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630520"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817882"
 ---
 # <a name="delete-items-from-their-original-location-preview"></a>從原始位置刪除專案（預覽）
 
@@ -31,7 +32,7 @@ ms.locfileid: "43630520"
 
 您可以使用資料調查，從原始位置刪除專案。 這表示您可以在組織內刪除 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶中的專案。 因為您收集的專案是證據，所以您有保留在證據集內的專案複本，可進一步調查或保留為參考。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-delete-items"></a>刪除專案之前
 
 - 若要刪除專案，您必須在安全性 & 合規性中心內指派「**搜尋」和「清除**」角色。 此角色預設會指派給內建的資料調查者角色群組。
 

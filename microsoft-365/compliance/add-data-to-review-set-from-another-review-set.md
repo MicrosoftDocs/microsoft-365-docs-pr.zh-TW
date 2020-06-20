@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 瞭解如何從一項審閱集選取檔，並在高級 eDiscovery 案例中個別使用另一組檔。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 636e76b1740cfa07254e4c56165cfafa8f1fad5a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 433e59629ec40dbdf66b8daf6437ce84e41a3a33
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034677"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818600"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>從另一個複查集將資料新增至審閱集
 
@@ -30,9 +32,9 @@ ms.locfileid: "44034677"
 
 請遵循本文中的工作流程，將其中一個複查集的內容新增至另一個。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="create-a-review-set"></a>建立審閱集
 
-開始之前，您必須建立新的審閱集，以將資料新增至。  您可以在案例的 [**複查集**] 索引標籤上新增新的審閱集。 如需詳細資訊，請參閱[建立審閱集](managing-review-sets.md#create-a-review-set)。
+開始之前，您必須建立要將資料新增至其中的審閱集。  您可以在案例的 [**複查集**] 索引標籤上新增新的審閱集。 如需詳細資訊，請參閱[建立審閱集](managing-review-sets.md#create-a-review-set)。
 
 ## <a name="step-1-identify-content-to-add-to-another-review-set"></a>步驟1：識別要新增至其他審閱集的內容
 

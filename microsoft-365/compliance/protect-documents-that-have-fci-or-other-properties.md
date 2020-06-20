@@ -16,13 +16,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 許多組織已使用 Windows Server 檔分類基礎結構（FCI）中的分類屬性、SharePoint 中的檔案屬性或協力廠商系統所套用的檔案屬性，來識別及分類敏感資訊的程式。 如果這會描述您的組織，您可以建立 DLP 原則，以辨識 Windows Server FCI 或其他系統已套用至檔的屬性，如此便能在具有特定 FCI 或其他屬性值的 Office 檔上強制執行 DLP 原則。
-ms.openlocfilehash: 3fa28492ef4d19903797741795091561de3fa257
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何使用資料遺失防護（DLP）原則保護具有協力廠商系統之屬性的檔。
+ms.openlocfilehash: 4db6844c6f00856de5893631058c774210344454
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327099"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818718"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>建立 DLP 原則來保護具有 FCI 或其他屬性的文件
 
@@ -149,4 +151,4 @@ New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy
     
 - [DLP 原則範本包含哪些內容](what-the-dlp-policy-templates-include.md)
     
-- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)

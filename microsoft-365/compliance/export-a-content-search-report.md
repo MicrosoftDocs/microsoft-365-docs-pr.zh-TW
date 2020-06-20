@@ -21,12 +21,13 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: 您可以匯出搜尋結果報告，而不是在 Office 365 的安全性 & 規範中心中匯出內容搜尋的實際結果。 報告包含搜尋結果摘要及檔，其中包含每個要匯出之專案的詳細資訊。
-ms.openlocfilehash: 63acc8701973519f959ced9822333e893e6fd863
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 25525a0670f31a7e962fb72f6d1559381e8b33cd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43615927"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817772"
 ---
 # <a name="export-a-content-search-report"></a>匯出內容搜尋報告
 
@@ -34,11 +35,11 @@ ms.locfileid: "43615927"
   
 當您匯出報表時，它會下載到與內容搜尋同名的資料夾，但附加 *_ReportsOnly*。 例如，如果內容搜尋命名為*ContosoCase0815*，則會將報告下載至名為*ContosoCase0815_ReportsOnly*的資料夾。 如需報告中所包含檔的清單，請參閱[報告的內容](#whats-included-in-the-report)。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="assign-roles-and-check-system-requirements"></a>指派角色及檢查系統需求
 
-- 若要匯出內容搜尋報告，您必須在安全性 & 規範中心內指派符合性搜尋管理角色。 此角色會指派給內建的 eDiscovery 管理員和組織管理角色群組。 組織管理角色群組預設不會指派給它。 如需詳細資訊，請參閱[指派電子文件探索權限](assign-ediscovery-permissions.md)。
-    
-- 當您匯出報告時，資料會暫時儲存在 Microsoft 雲端的唯一 Azure 存放區中，然後再下載到本機電腦。 請確定您的組織可以連線到 Azure 中的端點，也就是** \*blob.core.windows.net** （萬用字元代表匯出的唯一識別碼）。 搜尋結果資料會在建立後的兩周從 Azure 存放區刪除。 
+- 若要匯出內容搜尋報告，您必須在安全性 & 規範中心內指派符合性搜尋管理角色。 此角色預設會指派給內建的 eDiscovery 管理員和組織管理角色群組。 如需詳細資訊，請參閱[指派電子文件探索權限](assign-ediscovery-permissions.md)。
+
+- 當您匯出報告時，資料會暫時儲存在 Microsoft 雲端的唯一 Azure 存放區中，然後再下載到本機電腦。 請確定您的組織可以連線到 Azure 中的端點，也就是** \* blob.core.windows.net** （萬用字元代表匯出的唯一識別碼）。 搜尋結果資料會在建立後的兩周從 Azure 存放區刪除。 
     
 - 您用來匯出搜尋結果的電腦必須符合下列系統需求：
     
@@ -100,7 +101,7 @@ ms.locfileid: "43615927"
     搜尋結果報告已準備好下載，這表示會將報告檔上傳至 Microsoft 雲端中的 Azure 儲存體區域。 當報告可供下載時，[**下載報告**] 連結會顯示在 [詳細資料] 窗格中的 [**匯出報告至電腦**] 底下。 
     
 > [!NOTE]
-> 您也可以匯出與 eDiscovery 案例相關聯之內容搜尋的報告。 若要執行此動作，請移至**ediscovery** \> **ediscovery**，選取案例， **Edit** ![然後按一下 [](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)編輯編輯圖示]。 在 [**搜尋**] 頁面上，選取搜尋，然後按一下 [**匯出** ![匯出搜尋結果](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \>圖示] [**匯出報告**]。 
+> 您也可以匯出與 eDiscovery 案例相關聯之內容搜尋的報告。 若要執行此動作，請移至**ediscovery** \> **ediscovery**，選取案例，然後按一下 [**編輯** ![ 編輯圖示] ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。 在 [**搜尋**] 頁面上，選取搜尋，然後按一下 [**匯出** ![ 匯出搜尋結果圖示] [ ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> **匯出報告**]。 
   
 ## <a name="step-2-download-the-report"></a>步驟2：下載報表
 
@@ -138,7 +139,7 @@ ms.locfileid: "43615927"
     **EDiscovery 匯出工具**會顯示匯出程式的狀態資訊，包括要下載之其餘專案的數位（和大小）的預估。 匯出程式完成後，您可以在下載檔案的位置存取檔案。 
     
 > [!NOTE]
-> 您可以下載與 eDiscovery 案例相關聯的內容搜尋報告。 若要執行此動作，請移至**ediscovery** \> **ediscovery**，選取案例， **Edit** ![然後按一下 [](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)編輯編輯圖示]。 在 [**匯出**] 頁面上，選取報告匯出，然後按一下 [詳細資料] 窗格中的 [**下載報告**]。 
+> 您可以下載與 eDiscovery 案例相關聯的內容搜尋報告。 若要執行此動作，請移至**ediscovery** \> **ediscovery**，選取案例，然後按一下 [**編輯** ![ 編輯圖示] ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。 在 [**匯出**] 頁面上，選取報告匯出，然後按一下 [詳細資料] 窗格中的 [**下載報告**]。 
   
 ## <a name="whats-included-in-the-report"></a>報告中包含的內容
 

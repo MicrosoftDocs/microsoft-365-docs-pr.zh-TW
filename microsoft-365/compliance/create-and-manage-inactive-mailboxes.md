@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
-description: 您可以將保留原則套用至信箱，然後刪除對應的使用者帳戶，以在 Microsoft 365 中建立非使用中的信箱。 非使用中信箱中的專案會保留在保留或保留原則為非使用中之前所套用的持續時間。 若要永久刪除非使用中的信箱，只要移除保留原則或保留原則即可。
-ms.openlocfilehash: 76205e0f0504d647f4968afcf9ae2f75b2664a01
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何使用 Office 365 中的非使用中信箱功能，保留已刪除信箱的內容。
+ms.openlocfilehash: d479f6661c4d6e87263488ac75682683b4779380
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679097"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818012"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>建立和管理非使用中信箱
 
@@ -32,7 +34,7 @@ Microsoft 365 使您可以保留已刪除信箱的內容。 這項功能稱為[�
 > [!IMPORTANT]
 > 當我們繼續以保留信箱內容的不同方式投資時，我們宣佈在 Exchange 系統管理中心中封存 In-Place 的退休。 這表示您應該使用訴訟保留和保留原則來建立非使用中的信箱。 從2020年7月1日起，您將無法在 Exchange Online 中建立新的 In-Place 保留。 不過，您仍然可以變更置於非使用中信箱的 In-Place 保留期間。 不過，從2020年10月1日開始，您將無法變更保留期間。 您只能移除 In-Place 保留才能刪除非使用中的信箱。 在移除保留之前，仍會保留位於 In-Place 暫止的現有非作用中信箱。 如需停用 In-Place 保留的詳細資訊，請參閱[舊版 eDiscovery tools 的退休](legacy-ediscovery-retirement.md)。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="preparations-before-creating-an-inactive-mailbox"></a>在建立非使用中的信箱之前準備
 
 - 若要讓信箱成為非使用中的信箱，必須將其指派為 Exchange Online Plan 2 授權，以便在信箱刪除之前，封存保留或保留原則可以套用至信箱。 Exchange Online Plan 2 授權是 Office 365 企業版 E3 和 E5 訂閱的一部分。 如果信箱已被指派 Exchange Online Plan 1 或 Exchange Online Kiosk 授權（分別是 Office 365 E1 及 F1 訂閱的一部分），您必須將其指派給個別的 Exchange Online 封存授權，以便在信箱刪除之前可對其套用保留。 如需詳細資訊，請參閱[Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153)封存。
 

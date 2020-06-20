@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
-description: '使用 Office 365 Import service 中的新智慧匯入功能，篩選實際匯入至目標信箱的專案。 智慧匯入可讓您主動決定要匯入哪些資料和留下的內容。 智慧匯入也提供您要匯入至 Office 365 之資料的洞察力。 '
-ms.openlocfilehash: 5ab276af0ee0859657074657f7b21d202947b98a
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom: seo-marvel-apr2020
+description: 若要瞭解如何在將 PST 檔案匯入至 Office 365 時，使用 Office 365 匯入服務中的智慧匯入功能來篩選資料。
+ms.openlocfilehash: d511c1277104a27076116fafcb4b71bc851baaca
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942206"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817722"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>匯入 PST 檔案時篩選資料
 
@@ -47,7 +48,7 @@ ms.locfileid: "43942206"
   
 ![Office 365 中的智慧匯入程式](../media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="create-a-pst-import-job"></a>建立 PST 匯入工作
 
 - 本主題中的步驟假設您已使用「網路上傳」或「磁片磁碟機運送」，在 Office 365 匯入服務中建立 PST 匯入工作。 如需逐步指示，請參閱下列其中一個主題：
     
@@ -55,7 +56,7 @@ ms.locfileid: "43942206"
     
   - [使用磁碟機寄送將 PST 檔案匯入 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)
     
-- 使用 [網路上傳] 建立匯入工作之後，安全性 & 合規性中心的 [匯入] 頁面上的匯入工作狀態會設為 [**正在進行分析**]，這表示 Microsoft 365 正在分析您所上傳的 PST 檔案中的資料。 按一下 [重新](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)整理重新整理] 以更新匯入工作的狀態。 **Refresh** ![ 
+- 使用 [網路上傳] 建立匯入工作之後，安全性 & 合規性中心的 [匯入] 頁面上的匯入工作狀態會設為 [**正在進行分析**]，這表示 Microsoft 365 正在分析您所上傳的 PST 檔案中的資料。 按一下**Refresh**[重新整理重新整理] ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) 以更新匯入工作的狀態。 
     
 - 針對磁片磁碟機運送的匯入工作，microsoft 365 會在 Microsoft 資料中心人員收到您的硬碟並上傳 PST 檔案至您組織的 Azure 儲存體區域之後，進行資料分析。
   
@@ -65,7 +66,7 @@ ms.locfileid: "43942206"
   
 1. 前往 [https://protection.office.com/](https://protection.office.com/)，然後使用您組織中系統管理員帳戶的認證來登入。 
     
-2. 按一下 [**資訊管理** \>匯**入** \> **PST**檔案]。
+2. 按一下 [**資訊管理**匯 \> **入** \> **PST**檔案]。
     
     您的組織的匯入工作會列于 [匯**入 PST**檔案] 頁面上。 請注意，[**狀態**] 欄中的 [**分析已完成**] 值會指出已由 Microsoft 365 進行分析且已準備好要匯入的匯入工作。 
     
@@ -101,7 +102,7 @@ ms.locfileid: "43942206"
     
       - **類型**-此區段會顯示在匯入工作的 PST 檔案中找到的所有郵件類型。 您可以在要排除的郵件類型旁取消勾選方塊。 請注意，您無法排除其他郵件類型。 請參閱[More information](#more-information)一節以取得其他類別中包含的信箱專案清單。 
     
-      - **使用者**-您可以排除特定人員所傳送或接收的郵件。 若要排除出現在 [寄件者：] 欄位、[收件者：] 欄位或郵件 [副本：] 欄位中的人員，請按一下該收件者類型旁的 [**排除使用者**]。 輸入人員的電子郵件地址（SMTP 位址） **，按一下 [**![新增圖示](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) ]，將其新增至該收件者類型的排除使用者清單，然後按一下 [**儲存**] 以儲存排除的使用者清單。 
+      - **使用者**-您可以排除特定人員所傳送或接收的郵件。 若要排除出現在 [寄件者：] 欄位、[收件者：] 欄位或郵件 [副本：] 欄位中的人員，請按一下該收件者類型旁的 [**排除使用者**]。 輸入人員的電子郵件地址（SMTP 位址） **，按一下 [** ![ 新增圖示]， ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) 將其新增至該收件者類型的排除使用者清單，然後按一下 [**儲存**] 以儲存排除的使用者清單。 
     
         > [!NOTE]
         > Microsoft 365 不會顯示設定**人員**篩選所產生的資料洞察力。 不過，如果您將此篩選器設定為排除特定人員所傳送或接收的郵件，則會在實際的匯入程式期間排除這些郵件。 
@@ -124,7 +125,7 @@ ms.locfileid: "43942206"
     
     b. 在 [匯**入資料到 Office 365** ] 頁面上，按一下 [匯**入資料**] 以開始匯入。 請注意，會顯示要匯入的總數據量。 
     
-6. 在 [匯**入 PST**檔案] 頁面上 **，按一下** ![[重新整理重新整理]](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png)。 [**狀態**] 欄中會顯示匯入工作的狀態。 
+6. 在 [匯**入 PST**檔案] 頁面上 **，按一下 [** 重新整理重新整理] ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) 。 [**狀態**] 欄中會顯示匯入工作的狀態。 
     
 7. 按一下 [匯入工作]，以顯示更詳細的資訊，例如每個 PST 檔案的狀態，以及您設定的篩選設定。
 
@@ -138,8 +139,8 @@ ms.locfileid: "43942206"
     |**郵件類別識別項**|**使用此郵件類別的信箱專案**|
     |:-----|:-----|
     |Ipm。活動  <br/> |日誌項目  <br/> |
-    |Ipm。文檔  <br/> |檔和檔案（未附加至電子郵件訊息）  <br/> |
-    |Ipm。檔  <br/> |（與 IPM 相同。Document  <br/> |
+    |IPM.Document  <br/> |檔和檔案（未附加至電子郵件訊息）  <br/> |
+    |Ipm。檔  <br/> |（與 IPM.Document 相同）  <br/> |
     |Ipm。記事。 IMC 通知  <br/> |Internet Mail Connect 所傳送的報告，也就是網際網路的 Exchange Server 閘道  <br/> |
     |Ipm。記事： Microsoft。 Fax  <br/> |傳真訊息  <br/> |
     |Ipm。記事： Oof 範本。 Microsoft  <br/> |外出自動回復郵件  <br/> |

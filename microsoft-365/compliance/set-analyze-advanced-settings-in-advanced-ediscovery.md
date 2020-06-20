@@ -16,21 +16,22 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: '瞭解如何在高級 eDiscovery 中設定高級的設定，包括近期重複的電子郵件執行緒和主題等分析處理常式。 '
-ms.openlocfilehash: 91faf9e39fe7b8a7fada7b05ccd88351d813b148
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b596ffa4061909ccb5c149553ac8fac169b7fd77
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631270"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819233"
 ---
 # <a name="set-analyze-advanced-settings-in-advanced-ediscovery"></a>設定高級 eDiscovery 中的 [分析高級設定]
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 Advanced eDiscovery 提供用於分析模組設定的預設高級參數。 下列程式說明可指定的設定。
   
-1. 在 [**準備\>分析\>設定**] 索引標籤中，按一下 [**高級設定**] （位於頁面底部）。 隨即顯示下列面板。 
+1. 在 [**準備 \> 分析 \> 設定**] 索引標籤中，按一下 [**高級設定**] （位於頁面底部）。 隨即顯示下列面板。 
     
     ![設定分析進階設定](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
@@ -44,9 +45,9 @@ Advanced eDiscovery 提供用於分析模組設定的預設高級參數。 下�
     
 3. 在 [**主題參數**] 中，選取 [**包含在主題分析中的數位**] 核取方塊，以在分析期間包含主題處理過程中的數位。 
     
-4. 按一下 [儲存]****。 
+4. 按一下 **[儲存]**。 
     
-## <a name="see-also"></a>請參閱
+## <a name="related-topics"></a>相關主題
 
 [進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
   

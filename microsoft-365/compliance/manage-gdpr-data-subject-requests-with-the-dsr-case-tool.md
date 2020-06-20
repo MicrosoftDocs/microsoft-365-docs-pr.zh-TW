@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: GDPR 給歐盟公民（稱為「資料主體」）其個人資料的特定權力;這些權利包括取得其複本、要求變更、限制處理、刪除或以電子格式接收。 由資料主體對其個人資料採取動作的正式要求稱為「資料主體要求」或「DSR」。 您可以在 Office 365 和 Microsoft 365 的「規範中心」中使用 DSR 案例，以管理組織的 DSR 調查。
+description: 瞭解如何使用 DSR 案例工具來管理歐盟一般資料保護規定（GDPR）資料主體要求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3be609ae1245b20b39d26fe60444e6e54f171d3
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035867"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815450"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>使用 Security & 合規性中心的 DSR 案例工具管理 GDPR 資料主體要求
 
@@ -88,9 +88,9 @@ ms.locfileid: "44035867"
 
 下一步是建立 DSR 案例。 當您建立案例時，您可以選擇啟動內建搜尋，也可以建立大小寫，而不啟動搜尋。 下列程式會指示您建立 case，但不啟動搜尋，然後示範如何將成員新增至案例。
   
-1. 移至[https://protection.office.com](https://protection.office.com)並使用您的公司或學校帳戶登入。 
+1. 移至 [https://protection.office.com](https://protection.office.com) 並使用您的公司或學校帳戶登入。 
     
-2. 在 [安全性 & 規範中心] 中，按一下 [**資料隱私權** \> **資料主體要求**] ![，然後](../media/ITPro-EAC-AddIcon.gif)按一下 [新增圖示] [**新增 DSR 案例**]。
+2. 在 [安全性 & 規範中心] 中，按一下 [**資料隱私權** \> **資料主體要求**]，然後按一下 [ ![ 新增圖示] [ ](../media/ITPro-EAC-AddIcon.gif) **新增 DSR 案例**]。
     
 3. 在 [**新的 DSR 案例**飛入] 頁面上，為案例輸入名稱，輸入選用的描述，然後按 **[下一步]**。 案例名稱在您的組織中必須是唯一的。
     
@@ -196,7 +196,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 2. 按一下頁面頂端的 [**搜尋] 索引**標籤，然後按一下您建立 DSR 案例時所建立的內建搜尋旁邊的核取方塊。 或是按一下其他搜尋，從該搜尋中匯出資料。 
     
-3. 在 [搜尋飛出] 頁面![上，按一下 [](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **更多**匯出搜尋結果圖示]，然後從下拉式清單中選取 [**匯出結果**]。 
+3. 在 [搜尋飛出] 頁面上，按一下 [ ![ 更多匯出搜尋結果圖示] ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) ** **，然後從下拉式清單中選取 [**匯出結果**]。 
     
 4. 在 [**匯出結果**] 頁面上，選取下列 DSR 匯出要求的建議選項。 
     
@@ -206,7 +206,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
     b. 在 [將**Exchange 內容匯出為**] 底下，選取第三個選項（**一個 PST 檔案包含單一資料夾中的所有郵件**）。 因為部分結果可能是針對來自其他使用者信箱的專案，所以此選項只會列出單一資料夾中的專案，而不會指出實際的信箱，而且在您將結果重新複製為下一個專案時，是使用的最佳選項。 此選項也可讓資料主體逐項審閱專案（專案是依照傳送日期排序），而不需流覽每個專案的原始信箱資料夾結構。
     
-    c. 選取 [**啟用重復資料**刪除] 選項，以排除重複的電子郵件訊息。 由於內建搜尋會搜尋組織中的所有信箱，因此建議您選擇此選項。 因此，如果在搜尋的信箱中找到相同郵件的多個副本，此選項表示只會匯出郵件的一個副本。 此選項一起將郵件以單一資料夾的一個 PST 檔案匯出，以取得 DSR 匯出要求的最佳使用者體驗。 結果。 csv 匯出報告會列出找到重複郵件的所有位置。
+    c. 選取 [**啟用重復資料**刪除] 選項，以排除重複的電子郵件訊息。 由於內建搜尋會搜尋組織中的所有信箱，因此建議您選擇此選項。 因此，如果在搜尋的信箱中找到相同郵件的多個副本，此選項表示只會匯出郵件的一個副本。 此選項一起將郵件以單一資料夾的一個 PST 檔案匯出，以取得 DSR 匯出要求的最佳使用者體驗。 Results.csv 匯出報告會列出找到重複郵件的所有位置。
     
     您也可以選取 [**包括 SharePoint 檔的版本**] 選項，以匯出 SharePoint 和 OneDrive 檔的所有版本。 這需要啟用文件庫的版本設定。 這個選項可協助確定所有相關資料都已匯出。
     
@@ -220,7 +220,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 8. 在 [**匯出金鑰**] 底下，按一下 [**複製到剪貼**簿]。 您可以在步驟11中使用此機碼下載搜尋結果。
     
-9. 按一下![[匯出飛出](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) ] 頁面頂端的 [匯出搜尋結果圖示**下載結果**]。 
+9. 按一下 ![ [匯出飛出] 頁面頂端的 [匯出搜尋結果圖示 ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **下載結果**]。 
     
 10. 在頁面底部的快顯視窗中，按一下 [**開啟**] 以開啟 [ **eDiscovery 匯出工具**]。 第一次下載搜尋結果時會安裝**EDiscovery 匯出工具**。 
     
@@ -243,11 +243,11 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 以下是一些您可以新增至 DSR 案例內建搜尋查詢的條件範例。 搜尋查詢中所用的實際屬性名稱會顯示在括弧中。
   
-- **檔案類型（ `filetype`）** –指定檔或檔案的副檔名。 使用此條件可搜尋特定 Office 應用程式（例如 Word、Excel 及 OneNote）所建立的檔和檔案。 
+- **檔案類型（ `filetype` ）** –指定檔或檔案的副檔名。 使用此條件可搜尋特定 Office 應用程式（例如 Word、Excel 及 OneNote）所建立的檔和檔案。 
     
-- **郵件類型（ `kind`）** –指定要搜尋的電子郵件專案類型。 例如，您可以使用此語法`kind:email OR kind:im` ，只傳回電子郵件、商務用 Skype 交談或 Microsoft 小組中的一對一聊天。 
+- **郵件類型（ `kind` ）** –指定要搜尋的電子郵件專案類型。 例如，您可以使用此語法， `kind:email OR kind:im` 只傳回電子郵件、商務用 Skype 交談或 Microsoft 小組中的一對一聊天。 
     
-- **合規性標記`compliancetag`（）** –指定指派給電子郵件或檔的標籤。 此條件會傳回以特定標籤分類的專案。 標籤可用來分類電子郵件和檔，以進行資料控管，並根據標籤定義的分類強制執行保留規則。 這是 DSR 調查的有用條件，因為您的組織可能會使用標籤來分類與資料隱私權相關的內容，或包含個人資料或機密資訊的內容。 針對此狀況的值，請使用完整的標籤名稱或標籤名稱的第一個部分搭配萬用字元。 如需詳細資訊，請參閱[Office 365 中的標籤綜述](labels.md)。
+- **合規性標記（ `compliancetag` ）** –指定指派給電子郵件或檔的標籤。 此條件會傳回以特定標籤分類的專案。 標籤可用來分類電子郵件和檔，以進行資料控管，並根據標籤定義的分類強制執行保留規則。 這是 DSR 調查的有用條件，因為您的組織可能會使用標籤來分類與資料隱私權相關的內容，或包含個人資料或機密資訊的內容。 針對此狀況的值，請使用完整的標籤名稱或標籤名稱的第一個部分搭配萬用字元。 如需詳細資訊，請參閱[Office 365 中的標籤綜述](labels.md)。
     
 如需 DSR 案例工具中所有可用條件的清單和描述，請參閱「內容搜尋的關鍵字查詢和搜尋條件」文章中的[搜尋條件](keyword-queries-and-search-conditions.md#search-conditions)。 
   
@@ -273,7 +273,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
     c. 已選取 [Exchange 公用資料夾] 區段中的 [切換]，這表示會搜尋所有 Exchange 公用資料夾。 您只能搜尋所有 Exchange 公用資料夾或不進行任何搜尋。 您無法選擇要搜尋的特定專案。
     
-3. 如果您修改內建搜尋中的內容位置，請按一下 [**儲存&amp;執行**] 以重新開機搜尋。 
+3. 如果您修改內建搜尋中的內容位置，請按一下 [**儲存 &amp; 執行**] 以重新開機搜尋。 
 
 > [!NOTE]
 > 當您搜尋所有信箱位置或僅限特定信箱時，當您匯出搜尋結果時，會包含儲存至使用者信箱之其他 Office 365 應用程式中的資料。 此資料不會包含在估計的搜尋結果中，並且無法提供預覽。 但會包含在您匯出及下載搜尋結果時。 如需將資料儲存在使用者信箱中的應用程式的詳細資訊，請參閱[儲存在 Exchange Online 信箱中的內容](what-is-stored-in-exo-mailbox.md)。
@@ -305,7 +305,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
   
 1. 在 [安全性 & 規範中心] 中，按一下 [**資料隱私權** \> **資料主體要求**]，然後針對您想要匯出使用方式資料的資料主體，按一下 DSR 案例旁邊的 [**開啟**]。 
     
-2. 按一下頁面頂端的 [**搜尋] 索引**標籤，然後![按一下 [加入圖示](../media/ITPro-EAC-AddIcon.gif) **導向搜尋**]。
+2. 按一下頁面頂端的 [**搜尋] 索引**標籤，然後按一下 [ ![ 加入圖示 ](../media/ITPro-EAC-AddIcon.gif) **導向搜尋**]。
     
 3. 在 [**命名您的搜尋**] 頁面上，按一下 [**取消**]。 
     
@@ -327,9 +327,9 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
  **若要匯出 Office 漫遊服務資料：**
   
-1. 當您在上一個步驟中建立的搜尋完成時，請按一下頁面頂端的 [**搜尋**] 索引標籤，然後按一下搜尋旁邊的核取方塊。 您可能需要按一下![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) [重新整理] 重新整理，以顯示搜尋。 **Refresh** 
+1. 當您在上一個步驟中建立的搜尋完成時，請按一下頁面頂端的 [**搜尋**] 索引標籤，然後按一下搜尋旁邊的核取方塊。 您可能需要按一下 [重新整理] 重新整理 ![ ](../media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **Refresh** ，以顯示搜尋。 
     
-2. 在 [搜尋飛出] 頁面![上，按一下 [](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **更多**匯出搜尋結果圖示]，然後從下拉式清單中選取 [**匯出結果**]。 
+2. 在 [搜尋飛出] 頁面上，按一下 [ ![ 更多匯出搜尋結果圖示] ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) ** **，然後從下拉式清單中選取 [**匯出結果**]。 
     
 3. 在 [**匯出結果**] 頁面上，選取匯出使用狀況資料的建議選項。 
     
@@ -351,7 +351,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 7. 在 [**匯出金鑰**] 底下，按一下 [**複製到剪貼**簿]。 您可以在步驟10中使用此機碼下載搜尋結果。
     
-8. 按一下![[匯出飛出](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) ] 頁面頂端的 [匯出搜尋結果圖示**下載結果**]。 
+8. 按一下 ![ [匯出飛出] 頁面頂端的 [匯出搜尋結果圖示 ](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **下載結果**]。 
     
 9. 在頁面底部的快顯視窗中，按一下 [**開啟**] 以開啟 [ **eDiscovery 匯出工具**]。 第一次下載搜尋結果時會安裝**EDiscovery 匯出工具**。 
     

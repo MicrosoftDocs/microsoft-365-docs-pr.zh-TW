@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: 您可以使用本文中的腳本，產生一個報告，其中包含與 Office 365 或 Microsoft 365 中的「規範中心」有關之所有保留的相關資訊。
-ms.openlocfilehash: 4a4d9c4195a201482228226ddd781260bb19499c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何產生包含與 eDiscovery 案例相關聯之所有保留資訊的報告。
+ms.openlocfilehash: b4387434d57373f9569b6472786e8ad40de85b21
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208375"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818032"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>在電子文件探索案例中的保留建立報表
   
@@ -31,13 +33,13 @@ ms.locfileid: "44208375"
 
 請參閱[詳細資訊](#more-information)一節，以取得報告中所含資訊的詳細描述。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="admin-requirements-and-script-information"></a>管理員需求和腳本資訊
 
 - 若要在您的組織中產生所有 eDiscovery 案例的報告，您必須是組織中的 eDiscovery 系統管理員。 如果您是 eDiscovery 管理員，該報告將只會包含您可以存取之案例的相關資訊。 如需有關 eDiscovery 許可權的詳細資訊，請參閱[指派 eDiscovery 許可權](assign-ediscovery-permissions.md)。
     
 - 本文中的腳本具有最低的錯誤處理方式。 主要用途是快速建立與您組織中的 eDiscovery 案例相關聯之保留的報告。
     
-- 在任何 Microsoft 標準支援程式或服務下，不支援本主題提供的指令碼。範例指令碼係依「現狀」提供，不附帶任何明示或默示的擔保。Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。使用或操作範例指令碼和文件發生的所有風險皆屬於您的責任。Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>步驟1：連線至安全性 & 規範中心 PowerShell
 
@@ -49,7 +51,7 @@ ms.locfileid: "44208375"
 
 在您連接至安全性 & 規範中心 PowerShell 之後，下一步是建立並執行腳本，以收集組織中 eDiscovery 案例的相關資訊。 
   
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如，CaseHoldsReport. ps1。 
+1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如，CaseHoldsReport.ps1。 
     
   ```powershell
 #script begin
@@ -158,9 +160,9 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 
     Addtionally，腳本也會建立報表，其中包含沒有任何保留的案例清單。 此報告的檔案名為 `CaseswithNoHolds<DateTimeStamp>.csv` 。
     
-    以下是執行 CaseHoldsReport 腳本的範例。 
+    以下是執行 CaseHoldsReport.ps1 腳本的範例。 
     
-    ![執行 CaseHoldsReport 的腳本後的輸出](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![執行 CaseHoldsReport.ps1 腳本後的輸出](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>詳細資訊
 

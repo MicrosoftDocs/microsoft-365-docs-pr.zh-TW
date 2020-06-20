@@ -16,13 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
-description: 預設會開啟信箱審核記錄（也稱為預設信箱審計或預設的信箱審核）。 這表示信箱擁有者、代理人和系統管理員所執行的某些動作會自動記錄在信箱審核記錄檔中，您可以在此搜尋在信箱上執行的活動。
-ms.openlocfilehash: 03e32a11176530d26f33076331f8f6a2093e7200
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.custom: seo-marvel-apr2020
+description: 在 Microsoft 365 中預設會開啟信箱審核記錄（也稱為預設信箱審核或預設的信箱審核）。 這表示信箱擁有者、代理人和系統管理員所執行的某些動作會自動記錄在信箱審核記錄檔中，您可以在此搜尋在信箱上執行的活動。
+ms.openlocfilehash: 5b1aaab6db56d989c36cd977122d4e5843587aac
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371427"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817832"
 ---
 # <a name="manage-mailbox-auditing"></a>管理信箱稽核
 
@@ -109,7 +110,7 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**ApplyRecord**|專案標示為記錄。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**Copy**|郵件已複製到另一個資料夾。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |**Create**|在信箱的 [行事曆]、[連絡人]、[記事] 或 [任務] 資料夾中建立專案（例如，建立新的會議要求）。 建立、傳送或接收郵件的動作並不會受到稽核。 此外，建立信箱資料夾的動作也不會受到稽核。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Default**||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**預設值**||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |**FolderBind**|已存取信箱資料夾。 當系統管理員或代理人開啟信箱時，也會記錄此動作。 <br/><br/> **附注**：合併委派所執行之資料夾系結動作的審計記錄。 在24小時內，會為個別資料夾存取產生一個審計記錄。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |**HardDelete**|已從 [可復原的專案] 資料夾中清除郵件。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 |**MailItemsAccessed**|郵件資料是由郵件通訊協定和用戶端存取。 這個值只適用于 E5 或 E5 相容性附加元件訂閱使用者。 如需詳細資訊，請參閱[存取重要事件以進行調查](advanced-audit.md#access-to-crucial-events-for-investigations)。|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
@@ -154,13 +155,13 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 信箱審核的預設值會將新的*DefaultAuditSet*屬性加入至所有信箱。 此屬性的值會指出是否要在信箱上審核預設的信箱動作（由 Microsoft 管理）。
 
-若要在使用者信箱或共用信箱上顯示值，請以 \< \> 信箱的名稱、別名、電子郵件地址或使用者主要名稱（username）取代 MailboxIdentity，並在 Exchange Online 中執行下列命令 PowerShell:
+若要在使用者信箱或共用信箱上顯示值，請以 \<MailboxIdentity\> 信箱的名稱、別名、電子郵件地址或使用者主要名稱（username）加以取代，然後在 Exchange Online 中執行下列命令 PowerShell:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-若要在 Microsoft 365 群組信箱上顯示值，請以 \< \> 共用信箱的名稱、別名或電子郵件地址取代 MailboxIdentity，並在 Exchange Online 中執行下列命令 PowerShell:
+若要在 Microsoft 365 群組信箱上顯示值，請以 \<MailboxIdentity\> 共用信箱的名稱、別名或電子郵件地址取代，並在 Exchange Online 中執行下列命令 PowerShell:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -186,7 +187,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>顯示正在登入信箱的信箱動作
 
-若要查看目前正在登入使用者信箱或共用信箱的信箱動作，請以 \< \> 信箱的名稱、別名、電子郵件地址或使用者主要名稱（username）取代 MailboxIdentity，並在 Exchange Online PowerShell 中執行下列一或多個命令。
+若要查看目前登入使用者信箱或共用信箱的信箱動作，請以 \<MailboxIdentity\> 信箱的名稱、別名、電子郵件地址或使用者主要名稱（username）加以取代，並在 Exchange Online PowerShell 中執行下列一或多個命令。
 
 > [!NOTE]
 > 雖然您可以將此 `-GroupMailbox` 開關新增至 Microsoft 365 群組信箱的下列**Get-Mailbox**命令，但不要相信傳回的值。 在本主題稍早的 [ [microsoft 365 群組信箱的信箱動作](#mailbox-actions-for-microsoft-365-group-mailboxes)] 區段中，會說明針對 Microsoft 365 群組信箱所審核的預設和靜態信箱動作。
@@ -324,7 +325,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 - 不會記錄略過使用者執行的系統管理員動作。
 
-若要略過特定使用者的信箱審核記錄， \< 請 \> 使用使用者的名稱、電子郵件地址、別名或使用者主要名稱（username）取代 MailboxIdentity，並執行下列命令：
+若要略過特定使用者的信箱審核記錄，請將其取代為 \<MailboxIdentity\> 使用者的名稱、電子郵件地址、別名或使用者主要名稱（username），並執行下列命令：
 
 ```PowerShell
 Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true

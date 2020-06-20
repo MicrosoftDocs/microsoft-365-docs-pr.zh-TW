@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、OneDrive 商務及小組檔案的 Microsoft 365 的客戶金鑰。
-ms.openlocfilehash: 4d9a6292482a06a4629d394c5ff422ba02bec55e
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 158096216974691bf0caff93a1c95db54b92f6b1
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717260"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44810989"
 ---
 # <a name="set-up-customer-key"></a>設定客戶金鑰
 
@@ -448,7 +448,15 @@ DEP 與儲存在 Azure Key Vault 中的一組機碼相關聯。 您為 Microsoft
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-其中*MailboxIdParameter*會指定信箱。 如需 Set-Mailbox Cmdlet 的詳細資訊，請參閱[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps)。
+其中*MailboxIdParameter*會指定信箱。 如需 Set-Mailbox Cmdlet 的詳細資訊，請參閱[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)。
+
+針對[使用 Outlook for iOS 和 Android 搭配混合式新式驗證的內部部署](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)信箱，已同步處理至您的 Exchange Online 租使用者的內部部署信箱資料，可使用 Set-MailUser Cmdlet 來指派 DEP。 
+
+```powershell
+Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
+```
+
+其中*MailUserIdParameter*指定郵件使用者（也稱為啟用郵件功能的使用者）。 如需 Set-MailUser Cmdlet 的詳細資訊，請參閱[Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser)。
   
 ### <a name="validate-mailbox-encryption"></a>驗證信箱加密
 

@@ -16,19 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 瞭解如何使用非 Office 365 內容匯入功能，將非 Office 365 檔上傳至資料調查中的證據。
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 499b1074b9a1e2026804eab2ac958fe7392e98ea
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+ms.openlocfilehash: 9bfebc6aad9bc37d7d78ec4a0d50e6de967ac7d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034411"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815480"
 ---
 # <a name="load-non-microsoft-365-data-into-evidence"></a>將非 Microsoft 365 資料載入至證據
 
 在資料調查中，您可能需要分析的所有檔都不會位於 Microsoft 365。 使用非 Microsoft 365 內容匯入功能，您可以將不在 Microsoft 365 中的檔上傳至證據，以便在資料調查中進行分析。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="requirements-to-upload-non-office-365-content"></a>上傳非 Office 365 內容的需求
 
 使用此程式中所述的 [上傳非 Microsoft 365] 功能，您必須具備下列要求：
 
@@ -42,7 +44,7 @@ ms.locfileid: "44034411"
 
 - 一種帳戶，既可以是 eDiscovery 管理員，也可以是在具有非 Microsoft 365 內容資料夾結構存取權的電腦上安裝的 eDiscovery 管理員 Microsoft Azure Storage Tools。
 
-- 安裝 AzCopy，您可以從這裡執行：https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+- 安裝 AzCopy，您可以從[AzCopy 開始使用](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy)。
 
 ## <a name="upload-non-microsoft-365-content-in-to-a-data-investigation"></a>將非 Microsoft 365 內容上傳至資料調查
 

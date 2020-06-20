@@ -15,17 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
-description: 使用來自現有內容搜尋的結果： csv 或未編制索引的專案 .csv 檔案，以建立會傳回特定電子郵件的 ID 清單搜尋。 識別碼清單搜尋通常是用來傳回部分索引的信箱專案。
-ms.openlocfilehash: f3b815f2268121e9adc47de2c24a4e23b44adce5
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 使用來自現有內容搜尋的 CSV 檔案，以建立會傳回特定電子郵件訊息的 ID 清單搜尋。
+ms.openlocfilehash: 7b63a78d34306cf3afcef49276e584bc816c107f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942886"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817972"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search"></a>準備識別碼清單內容搜尋的 CSV 檔案
 
-您可以使用 Exchange IDs 的清單來搜尋特定的信箱電子郵件訊息和其他信箱專案。 若要建立識別碼清單搜尋（正式稱為目標搜尋），請提交逗號分隔值（CSV）檔案，以識別要搜尋的特定信箱專案。 針對此 CSV 檔案，您可以使用當您匯出內容搜尋結果或從現有的內容搜尋中匯出內容搜尋結果時所包含的**結果 .csv**檔案或未**編制索引的 Items**檔案名。 然後，編輯這些檔案中的其中一個以指出要搜尋的特定專案，然後建立新的 ID 清單搜尋並提交 CSV 檔案。
+您可以使用 Exchange IDs 的清單來搜尋特定的信箱電子郵件訊息和其他信箱專案。 若要建立識別碼清單搜尋（正式稱為目標搜尋），請提交逗號分隔值（CSV）檔案，以識別要搜尋的特定信箱專案。 針對此 CSV 檔案，您可以使用匯出內容搜尋結果時所包含的**Results.csv**檔或未**編制索引的 Items.csv**檔案，也可以從現有的內容搜尋中匯出內容搜尋報告。 然後，編輯這些檔案中的其中一個以指出要搜尋的特定專案，然後建立新的 ID 清單搜尋並提交 CSV 檔案。
 
 以下是建立識別碼清單搜尋之程式的快速概覽。
 
@@ -37,14 +39,14 @@ ms.locfileid: "43942886"
 
     - [匯出內容搜尋報告](export-a-content-search-report.md)
 
-3. 編輯**結果 .csv**檔案或未**編制索引的專案 .csv** ，識別您想要包含在識別碼清單搜尋中的特定信箱專案。 請參閱針對識別碼清單搜尋準備 CSV 檔案的[指示](#prepare-the-csv-file-for-an-id-list-search)。
+3. 編輯**Results.csv**檔或未**編制索引的 Items.csv** ，並識別您想要包含在識別碼清單搜尋中的特定信箱專案。 請參閱針對識別碼清單搜尋準備 CSV 檔案的[指示](#prepare-the-csv-file-for-an-id-list-search)。
 
 4. 建立新的識別碼清單搜尋（請參閱[指示](#create-an-id-list-search)），並提交您準備的 CSV 檔案。 所建立的搜尋查詢只會搜尋 CSV 檔案中選取的專案。
 
 > [!NOTE]
 > 僅支援信箱專案的 ID 清單搜尋。 您無法在識別碼清單搜尋中搜尋 SharePoint 和 OneDrive 檔。
 
- **為何要建立識別碼清單搜尋？** 如果您無法根據**結果**中的中繼資料，判斷專案是否回應 eDiscovery 要求 **。 csv 檔案**，您可以使用識別碼清單搜尋來尋找、預覽及匯出該專案，以判斷是否對您正在調查的案例做出回應。 識別碼清單搜尋通常是用來搜尋並傳回一組特定的未編制索引的專案。
+ **為何要建立識別碼清單搜尋？** 如果您無法根據**Results.csv**或非**索引的 Items.csv**檔案中的中繼資料來判斷某個專案是否回應 eDiscovery 要求，您可以使用識別碼清單搜尋來尋找、預覽及匯出該專案，以判斷其是否回應您正在調查的案例。 識別碼清單搜尋通常是用來搜尋並傳回一組特定的未編制索引的專案。
 
 ## <a name="prepare-the-csv-file-for-an-id-list-search"></a>準備用於識別碼清單搜尋的 CSV 檔案
 
@@ -52,7 +54,7 @@ ms.locfileid: "43942886"
 
 請注意，您可以從包含 SharePoint 網站和 OneDrive 帳戶的搜尋中使用 CSV 檔案，但*只能選取識別碼*清單搜尋的信箱專案。 如果您選取 SharePoint 或 OneDrive 中的檔，當您建立識別碼清單搜尋時，CSV 檔案會失敗驗證。
 
-1. 在 Excel 中開啟**結果 .csv**或未**編制索引的專案 .csv**檔案。
+1. 在 Excel 中開啟**Results.csv**或未**編制索引的 Items.csv**檔案。
 
 2. 在 [**選取**] 欄的儲存格中輸入 **[是]** ，對應至您要搜尋的專案。 針對您要搜尋的每個專案重複此步驟。
 
@@ -80,7 +82,7 @@ ms.locfileid: "43942886"
 
 1. 在安全性 & 規範中心內，移至 [**搜尋** \> **內容搜尋**]。
 
-2. 在 [**搜尋**] 頁面上，按一下 [新增![圖示](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) ] [**新增搜尋**] 旁的箭號，然後按一下 [**依識別碼搜尋] 清單**。
+2. 在 [**搜尋**] 頁面上，按一下 [新增圖示] [新增搜尋] 旁的箭 ![ ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**號，然後按一下 [**依識別碼搜尋] 清單**。
 
     ![從 [新增搜尋] 下拉式清單中，按一下 [依識別碼搜尋] 清單](../media/e65f9942-09b2-4127-865e-e64029a590df.png)
 

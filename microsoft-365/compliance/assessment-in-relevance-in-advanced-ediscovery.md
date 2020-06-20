@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: 取得評等評估階段及其角色，以判斷在高級 eDiscovery 中的相關性訓練時，是否有豐富的問題。
-ms.openlocfilehash: e1e090a9b3aceecad8451657d7a8e5d26e92ed6f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 深入瞭解 Microsoft 365 Advanced eDiscovery 中的相關訓練期間，判斷問題的豐富程度，以及其角色。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: afd4f1f549d52652ac02cfa410efc507ece58910
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636151"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818412"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （經典）中瞭解相關評估
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 「高級 eDiscovery」可讓您及早評估，例如，針對某一案例定義的問題和匯入的資料。 「高級 eDiscovery」可讓專家決定採用的方法，並將這些決策套用至檔審閱專案。
   
@@ -51,9 +52,9 @@ ms.locfileid: "43636151"
 您可以接受相關性建議，或根據您的需求調整目前的錯誤邊界。 在等於或高於75% 的情況下，會判斷目前的錯誤目前邊界是否可重新叫用。
   
 > [!NOTE]
-> 您可以在問題展開的 [ ** \>相關性追蹤**] 索引標籤中，清除 [每個問題的**評估**] 核取方塊，然後針對「所有問題」，以略過評估階段。 不過，如此一來，就不會發生此問題的統計資料。 > 清除**評估**核取方塊只會在執行評估之前完成。 如果有多個問題存在於案例中，只有在此核取方塊針對每個問題清除時，才會略過評估。 
+> 您可以在問題展開的 [**相關性 \> 追蹤**] 索引標籤中，清除 [每個問題的**評估**] 核取方塊，然後針對「所有問題」，以略過評估階段。 不過，如此一來，就不會發生此問題的統計資料。 > 清除**評估**核取方塊只會在執行評估之前完成。 如果有多個問題存在於案例中，只有在此核取方塊針對每個問題清除時，才會略過評估。 
   
-## <a name="see-also"></a>請參閱
+## <a name="related-topics"></a>相關主題
 
 [進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
   

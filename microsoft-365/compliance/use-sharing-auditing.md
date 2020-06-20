@@ -19,13 +19,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: '「共用」是 SharePoint 線上和商務 OneDrive 的主要活動。 管理員現在可以使用「審核記錄」中的共用審核，來識別與組織外的使用者共用的資源。 '
-ms.openlocfilehash: 63b56831dc5409cc92a0c4a2f4bf002cd268a878
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 系統管理員可以瞭解如何在 Microsoft 365 審核記錄中使用共用審核，以找出與組織外部使用者共用的資源。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d26a8022f8d59aeb56a03c50ae546777c882ef7a
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626379"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819293"
 ---
 # <a name="use-sharing-auditing-in-the-audit-log"></a>使用稽核記錄中的共用稽核
 
@@ -111,11 +112,11 @@ ms.locfileid: "43626379"
     
 6. 按一下 [**搜尋**] 以執行搜尋。 
     
-7. 當搜尋執行完畢並顯示結果之後，按一下 [**匯出結果** \> ]**下載所有結果**。
+7. 當搜尋執行完畢並顯示結果之後，按一下 [**匯出結果**] \> **下載所有結果**。
     
     選取 [匯出] 選項之後，視窗底部的訊息會提示您開啟或儲存 CSV 檔案。
     
-8. 按一下 [**另** \> **存新檔]，將**CSV 檔案儲存至本機電腦上的資料夾。 
+8. 按一下 [**另**存新檔] \> **Save as** ，將 CSV 檔案儲存至本機電腦上的資料夾。 
 
 ### <a name="step-2-use-the-powerquery-editor-to-format-the-exported-audit-log"></a>步驟2：使用 PowerQuery 編輯器格式化匯出的審計記錄檔
 
@@ -152,4 +153,4 @@ ms.locfileid: "43626379"
     現在，Excel 會顯示共用事件所在的列，以及目標使用者在您組織外部的位置，因為**TargetUserOrGroupType：來賓**的值會識別外部使用者。 
   
 > [!TIP]
-> 對於顯示的審計記錄，[ **ObjectId** ] 欄位會識別與目標使用者共用的資源;例如`ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`。
+> 對於顯示的審計記錄，[ **ObjectId** ] 欄位會識別與目標使用者共用的資源;例如 `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx` 。

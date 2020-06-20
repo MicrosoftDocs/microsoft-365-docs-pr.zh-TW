@@ -19,12 +19,13 @@ search.appverid:
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: 使用內容搜尋許可權篩選，讓 eDiscovery 管理員只搜尋您組織中信箱和網站的子集。
-ms.openlocfilehash: 9628548b3cb2f6af5bedf7895a8714822731361f
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 06fabfd1132166e2439c9790b50b0dbcb5bdca2c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347782"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818772"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>設定內容搜尋的權限篩選
 
@@ -42,7 +43,7 @@ ms.locfileid: "44347782"
 
 [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="requirements-to-configure-permissions-filtering"></a>設定許可權篩選的需求
 
 - 若要執行相容性安全性篩選 Cmdlet，您必須是 Security & 合規性中心中「組織管理」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
     
@@ -58,7 +59,7 @@ ms.locfileid: "44347782"
     
 ## <a name="connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>在單一遠端 PowerShell 會話中連接至安全性 & 規範中心和 Exchange Online
 
-1. 使用檔案名尾碼 **. ps1**，將下列文字儲存至 Windows PowerShell script 檔案。 例如，您可以將它儲存到名為**ConnectEXO-CC**的檔案。
+1. 使用檔案名尾碼 **. ps1**，將下列文字儲存至 Windows PowerShell script 檔案。 例如，您可以將它儲存到名為**ConnectEXO-CC.ps1**的檔案。
     
     ```powershell
     $UserCredential = Get-Credential
@@ -79,11 +80,11 @@ ms.locfileid: "44347782"
   
 如果您收到錯誤，請檢查下列需求：
   
-- 密碼錯誤是常見的問題。再次執行這兩個步驟，並密切注意您在步驟 1 中輸入的使用者名稱和密碼。
+- A common problem is an incorrect password. Run the two steps again and pay close attention to the user name and password you enter in Step 1.
     
-- 確認您的帳戶可以具有安全規範中心的存取權限。 如需詳細資訊，請參閱[授與使用者存取安全性 & 規範中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+- 確認您的帳戶可以具有安全規範中心的存取權限。 如需詳細資訊，請參閱 [讓使用者能夠存取安全性與合規性中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
     
-- 為防止拒絕服務 (DoS) 攻擊，您最多只能對您的安全規範中心建立三個遠端 PowerShell 連線。
+- 為防止拒絕服務 (DoS) 攻擊，您最多只能為安全性與合規性中心建立三個遠端 PowerShell 連線。
     
 - 必須設定 Windows PowerShell 以執行腳本。 這只必須執行一次，而不是每次連線時執行。 若要讓 Windows PowerShell 執行經過簽署的指令碼，請在提高權限的 Windows PowerShell 視窗 (藉由選取 **[以管理員身分執行]** 開啟的 Windows PowerShell 視窗) 中執行下列命令。
 
@@ -149,7 +150,7 @@ New-ComplianceSecurityFilter -FilterName CountryFilter  -Users annb@contoso.com 
 New-ComplianceSecurityFilter -FilterName MarketingFilter  -Users donh,suzanf -Filters "Mailbox_CustomAttribute1  -eq 'Marketing'" -Action Search
 ```
 
-此範例允許「美國探索管理員」角色群組的成員僅針對美國的信箱執行所有內容搜尋動作。此篩選器包含根據 ISO 3166-1 的三位數數字美國國碼。
+This example allows members of the "US Discovery Managers" role group to perform all Content Search actions only on mailboxes in the United States. This filter contains the three-digit numeric country code for the United States from ISO 3166-1.
   
 ```powershell
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All

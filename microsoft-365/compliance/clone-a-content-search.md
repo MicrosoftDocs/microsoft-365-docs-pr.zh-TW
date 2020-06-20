@@ -18,12 +18,12 @@ ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
 description: 使用本文中的 Windows PowerShell 腳本，可在 Office 365 或 Microsoft 365 中的規範中心內快速複製現有的內容搜尋。
-ms.openlocfilehash: 013a3cd04b665e1da800638a2335adb034878a4a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 28f1264736f158fd686174813b9cefdd087c274c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035645"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818082"
 ---
 # <a name="clone-a-content-search"></a>複製內容搜尋
 
@@ -37,7 +37,7 @@ ms.locfileid: "44035645"
     
 - 可減少搜尋結果的大小。 例如，如果您有一個搜尋會傳回太多結果以進行匯出，您可以複製搜尋，然後根據日期範圍新增搜尋條件，以減少搜尋結果的數目。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="script-information"></a>腳本資訊
 
 - 您必須是 Security & 合規性中心內 eDiscovery 管理員角色群組的成員，才可執行本主題中所述的腳本。
     
@@ -61,7 +61,7 @@ ms.locfileid: "44035645"
     
 若要複製搜尋：
   
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `CloneSearch.ps1`。
+1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `CloneSearch.ps1` 。
     
   ```powershell
   # This PowerShell script clones an existing content search in the Security &amp; Compliance Center.

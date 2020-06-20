@@ -17,13 +17,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
-description: 您可以選擇匯出的重複 eDiscovery 搜尋結果，這樣一來，即使在不同的信箱中找到多個相同郵件實例，也只會匯出一份電子郵件。
-ms.openlocfilehash: 6a63783efd76d6e598d3f00dd8a683317c261d2d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何消除重複的 eDiscovery 搜尋結果，只會匯出電子郵件的一個副本。
+ms.openlocfilehash: 046ef1e40e293e511672d5a95c6f5248b49d13a2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166044"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817912"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>電子文件探索搜尋結果中的重複資料刪除
 
@@ -41,17 +43,17 @@ eDiscovery 工具使用下列電子郵件屬性的組合，判斷郵件是否重
 
 - **BodyTagInfo** -這是內部 Exchange 存放區屬性。 此屬性的值是透過檢查郵件本文中的各種屬性來計算。 此屬性可用來識別郵件本文中的差異。 
 
-在 eDiscovery 匯出過程中，會針對符合搜尋準則的每封郵件，比較這三個屬性。 如果兩個（或多個）郵件的這些屬性相同，則會決定那些郵件是重複的，而結果是在啟用重復資料刪除時，只會匯出一份郵件。 匯出的郵件稱為「來源專案」。 有關重複郵件的資訊會包含在匯出的搜尋結果隨附的**結果 .csv**和**資訊清單 .xml**報告中。 在**結果 .csv**檔案中，會以 [**副本至專案**] 欄中的值來識別重複的郵件。 此欄中的值會與匯出之郵件的 [**專案識別**] 欄中的值相符。 
+在 eDiscovery 匯出過程中，會針對符合搜尋準則的每封郵件，比較這三個屬性。 如果兩個（或多個）郵件的這些屬性相同，則會決定那些郵件是重複的，而結果是在啟用重復資料刪除時，只會匯出一份郵件。 匯出的郵件稱為「來源專案」。 有關重複郵件的資訊會包含在**Results.csv** ，並**Manifest.xml**包含在匯出的搜尋結果中的報告。 在**Results.csv**檔案中，會以 [**副本至專案**] 欄中的值來識別重複的郵件。 此欄中的值會與匯出之郵件的 [**專案識別**] 欄中的值相符。 
   
-下列圖形顯示使用搜尋結果匯出的**結果 .csv**和**資訊清單 .xml**報告中所顯示的重複郵件的方式。 這些報告不包括先前所述的電子郵件內容，這些內容是用於重復資料消除演算法。 相反地，報表會包含指派給 Exchange 存放區之專案的**專案身分識別**屬性。 
+下列圖形顯示重複的郵件在**Results.csv**中的顯示方式，以及與搜尋結果一起匯出的**Manifest.xml**報告。 這些報告不包括先前所述的電子郵件內容，這些內容是用於重復資料消除演算法。 相反地，報表會包含指派給 Exchange 存放區之專案的**專案身分識別**屬性。 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>結果 .csv 報告（在 Excel 中查看）
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv 報告（在 Excel 中查看）
   
-![查看結果中重複專案的相關資訊。 csv 報告](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
+![在 Results.csv 報告中查看重複專案的相關資訊](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>資訊清單 .xml 報告（在 Excel 中查看）
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml 報告（在 Excel 中查看）
   
-![查看資訊清單 .xml 報告中重複專案的相關資訊](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
+![在 Manifest.xml 報告中查看重複專案的相關資訊](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   
 此外，其他來自重複郵件的屬性會包含在匯出報告中。 這包括重複郵件所在的信箱、郵件是否已傳送至通訊群組，以及郵件是否為「抄送」或「密送給其他使用者」。
   

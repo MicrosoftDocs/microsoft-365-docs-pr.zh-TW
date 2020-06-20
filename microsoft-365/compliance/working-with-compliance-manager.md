@@ -13,13 +13,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 合規性管理員是免費的工作流程型風險評估工具。 使用它來追蹤、指派及驗證 Microsoft 產品相關的規章遵循活動。
-ms.openlocfilehash: 2e67114c4b59fbb676c45995c08b9e4faa05e55b
-ms.sourcegitcommit: f70f75b9dd163c00a3c6bc4b9f9b055e90c50367
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何使用合規性管理員來追蹤、指派及驗證 Microsoft 產品相關的法規遵從性活動。
+ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43790660"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817080"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合規性管理員（預覽）
 

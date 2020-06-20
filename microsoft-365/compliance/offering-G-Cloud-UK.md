@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5a8d0b95a0abb93eef352a442ff6c8203eda6e0e
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254176"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773764"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英國政府-雲端（G-Cloud）
 
@@ -37,8 +37,6 @@ Microsoft 每年都會準備檔並送出證據，證明其內部範圍的 enterp
 
 Microsoft 服務對「數位市場」的預約表示，UK 政府的代理商和合作夥伴可以使用「範圍內的服務」來儲存及處理 UK 官方政府資料（大多數政府資料）。 此外，在 G-雲端中，有超過450的 Microsoft 合作夥伴是 Microsoft 雲端服務的轉銷商。 它們可以直接斷言範圍內服務與自身應用程式中的14個原則的符合性。 不過，客戶和協力廠商必須針對未包含在 Microsoft 雲端服務規範中的任何元件，自行達成其法規遵從性。
 
-深入瞭解 Microsoft 雲端上的英國 G-Cloud v6 的優點：[下載英國 g-cloud v6 背景檔](https://aka.ms/uk-g-cloud_backgrounder)
-
 瞭解如何使用 Azure 安全性和合規性藍圖加速您的英國 G-Cloud v6 部署：[下載 Azure 藍圖 UK G-Cloud 原則實施指導](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)方針
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
@@ -47,7 +45,7 @@ Microsoft 服務對「數位市場」的預約表示，UK 政府的代理商和�
 - Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- 以獨立服務的功耗自動化（先前為 Microsoft 流程）雲端服務，或加入 Office 365 或 Dynamics 365 品牌計畫或套件。
+- Power Automate (先前為 Microsoft Flow) 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Office 365： Exchange Online、SharePoint 線上和商務用 Skype Online
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Power BI 雲端服務，以獨立服務形式提供或包含在 Office 365 品牌方案或套件中

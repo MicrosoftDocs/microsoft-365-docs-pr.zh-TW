@@ -18,18 +18,19 @@ search.appverid:
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 瞭解如何透過 Office 365 的安全性 & 規範中心內的 PowerShell 腳本，以自動化內容搜尋工作，例如建立搜尋及執行報告。
-ms.openlocfilehash: 2832b533c6350cdc2ab2852b6dd0d592603af46e
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 389cc9e15bc661e967f7af769ac48c4ae6e27228
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208137"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817982"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、報告及刪除多個內容搜尋
 
  當您嘗試深入瞭解基礎資料時，以及搜尋的豐富程度和品質，在 eDiscovery 和調查中，快速建立及報告探索搜尋通常是很重要的步驟。 為了協助您執行這項作業，安全性 & 規範中心 PowerShell 提供一組 Cmdlet，以自動化耗時的內容搜尋任務。 這兩個腳本提供一種快速快捷的方式來建立許多搜尋，然後執行估計的搜尋結果報告，可協助您判斷問題的資料量。 您也可以使用腳本來建立不同的搜尋版本，以比較每個搜尋產生的結果。 這些腳本可協助您快速且有效地識別及挑選您的資料。 
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-create-a-content-search"></a>在您建立內容搜尋之前
 
 - 您必須是 Security & 合規性中心內 eDiscovery 管理員角色群組的成員，才可執行本主題中所述的腳本。 
     
@@ -39,7 +40,7 @@ ms.locfileid: "44208137"
     
 - 腳本包含最低的錯誤處理。 其主要用途是快速建立、報告和刪除多個內容搜尋。
     
-- 在任何 Microsoft 標準支援程式或服務下，不支援本主題提供的指令碼。範例指令碼係依「現狀」提供，不附帶任何明示或默示的擔保。Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。使用或操作範例指令碼和文件發生的所有風險皆屬於您的責任。Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
+- The sample scripts provided in this topic aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
     
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-searches-you-want-to-run"></a>步驟1：建立包含您要執行之搜尋資訊的 CSV 檔案
 

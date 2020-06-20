@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: 設定連接器，將資料從立即 Bloomberg 匯入至 Microsoft 365，讓您可以使用各種相容性工具。
-ms.openlocfilehash: 49fdef36e6ae2b425878641c1a368e982e391eeb
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.custom: seo-marvel-apr2020
+description: 瞭解系統管理員如何設定 & 使用原生連接器將資料從立即 Bloomberg 聊天室工具匯入 Microsoft 365。
+ms.openlocfilehash: 02f197ba61f422852db6d4bc4c045ced0bf3d13e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035145"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818452"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>設定連接器來封存 Instant Bloomberg 資料
 
@@ -75,7 +74,7 @@ ms.locfileid: "44035145"
 
 第一步是取得安全命令介面（SSH）和非常好的隱私權（PGP）的公開金鑰複本。 您可以在步驟2中使用這些機碼來設定 Bloomberg SFTP 網站，以允許連接器（您在步驟3中建立）連線到 SFTP 網站，並將立即 Bloomberg 聊天室資料傳送至 Microsoft 365 信箱。 您也可以在此步驟中取得 IP 位址，當您設定 Bloomberg SFTP 網站時，您可以使用此位址。
 
-1. 移至<https://compliance.microsoft.com> ，然後按一下 [**資料連線器** > **立即 Bloomberg**]。
+1. 移至 <https://compliance.microsoft.com> ，然後按一下 [**資料連線器**  >  **立即 Bloomberg**]。
 
 2. 在 [**立即 Bloomberg**產品描述] 頁面上，按一下 [**新增連接器**]
 
@@ -102,7 +101,7 @@ ms.locfileid: "44035145"
 
 最後一個步驟是在 Microsoft 365 規範中心建立立即 Bloomberg 連接器。 連接器會使用您提供的資訊來連線至 Bloomberg SFTP 網站，並將聊天訊息傳送至 Microsoft 365 中對應的使用者信箱方塊。 
 
-1. 移至<https://compliance.microsoft.com> ，然後按一下 [**資料連線器** > **立即 Bloomberg**]。
+1. 移至 <https://compliance.microsoft.com> ，然後按一下 [**資料連線器**  >  **立即 Bloomberg**]。
 
 2. 在 [**立即 Bloomberg**產品描述] 頁面上，按一下 [**新增連接器**]
 

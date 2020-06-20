@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
-description: 瞭解如何設定 Windows 登錄，以在從安全性 & 規範中心和高級電子檔探索中下載搜尋結果和搜尋資料時，增加資料輸送量。
-ms.openlocfilehash: a5e08f2fe7d8840cfe8f176080c90b8b40d16af6
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何設定 Windows 登錄，以在下載搜尋結果和資料時增加資料輸送量。
+ms.openlocfilehash: a68a616d2dced4a3dd70580e1b258c95a0b5e39e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943352"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817672"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results"></a>提高匯出 eDiscovery 搜尋結果時的下載速度
 
@@ -53,20 +55,20 @@ ms.locfileid: "43943352"
     
     登錄編輯器會顯示一則訊息，指出已成功將設定新增至註冊表。
     
-6. 您可以重複步驟 2-5，以變更 [登錄] `DownloadConcurrency`設定的值。 
+6. 您可以重複步驟 2-5，以變更 [登錄] `DownloadConcurrency` 設定的值。 
     
     > [!IMPORTANT]
-    > 在您建立或變更`DownloadConcurrency`登錄設定之後，請務必建立新的匯出工作或重新開機您要下載之搜尋結果或資料的現有匯出工作。 如需詳細資訊，請參閱[詳細資訊](#more-information)一節。 
+    > 在您建立或變更登錄 `DownloadConcurrency` 設定之後，請務必建立新的匯出工作或重新開機您要下載之搜尋結果或資料的現有匯出工作。 如需詳細資訊，請參閱[詳細資訊](#more-information)一節。 
   
 ## <a name="more-information"></a>詳細資訊
 
-- 當您第一次執行您在此程式中建立的 .reg 檔案時，就會建立新的登錄機碼。 `DownloadConcurrency`然後，每當您變更並重新執行 .reg 編輯檔案時，就會編輯登錄設定。 
+- 當您第一次執行您在此程式中建立的 .reg 檔案時，就會建立新的登錄機碼。 然後， `DownloadConcurrency` 每當您變更並重新執行 .reg 編輯檔案時，就會編輯登錄設定。 
     
-- EDiscovery 匯出工具使用[Azure AzCopy 公用程式](https://go.microsoft.com/fwlink/?linkid=849949)，從安全性 & 規範中心或從高級 eDiscovery 下載搜尋資料。 設定登錄設定與執行 AzCopy 公用程式時使用/NC 參數類似。 **/NC** `DownloadConcurrency` 所以登錄設定的`"DownloadConcurrency=24"`效果與使用 AzCopy 公用程式的參數值`/NC:24`相同。 
+- EDiscovery 匯出工具使用[Azure AzCopy 公用程式](https://go.microsoft.com/fwlink/?linkid=849949)，從安全性 & 規範中心或從高級 eDiscovery 下載搜尋資料。 設定登錄 `DownloadConcurrency` 設定與執行 AzCopy 公用程式時使用 **/NC**參數類似。 所以登錄設定的 `"DownloadConcurrency=24"` 效果與使用 AzCopy 公用程式的參數值相同 `/NC:24` 。 
     
-- 如果您停止目前正在進行的匯出下載，然後重新開機它（嘗試再次下載搜尋結果），eDiscovery 匯出工具會嘗試繼續相同的下載。 因此，如果您開始下載，請停止它，然後變更`DownloadConcurrency`登錄設定，當您重新開機時（按一下 [**下載匯出的結果**]），下載可能會失敗。 這是因為匯出工具會嘗試使用不正確設定來繼續先前的下載，因為您已變更登錄設定。
+- 如果您停止目前正在進行的匯出下載，然後重新開機它（嘗試再次下載搜尋結果），eDiscovery 匯出工具會嘗試繼續相同的下載。 因此，如果您開始下載，請停止它，然後變更登錄 `DownloadConcurrency` 設定，當您重新開機時（按一下 [**下載匯出的結果**]），下載可能會失敗。 這是因為匯出工具會嘗試使用不正確設定來繼續先前的下載，因為您已變更登錄設定。
     
-    因此，變更`DownloadConcurrency`登錄設定之後，請務必在安全性 & 規範中心內重新開機匯出工作（按一下 [**重新開機匯出**]）。 然後您可以下載匯出的結果。 如需匯出搜尋結果和資料的詳細資訊，請參閱：
+    因此，變更登錄設定之後 `DownloadConcurrency` ，請務必在安全性 & 規範中心內重新開機匯出工作（按一下 [**重新開機匯出**]）。 然後您可以下載匯出的結果。 如需匯出搜尋結果和資料的詳細資訊，請參閱：
     
   - [匯出內容搜尋結果](export-search-results.md)
     

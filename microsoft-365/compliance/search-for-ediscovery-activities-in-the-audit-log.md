@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: 瞭解當合規性管理員在安全性 & 合規性中心執行內容搜尋和 eDiscovery 案例工作時，如何搜尋審核記錄檔中所記錄的事件。
-ms.openlocfilehash: e7ed3ddf16d22750449d3211d96800334676e519
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+description: 瞭解當指派電子檔探索許可權的使用者在安全性 & 合規性中心執行內容搜尋和核心 eDiscovery 工作時所記錄的事件。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 671fdebd75dfdaaf09deebf320b9fe4cfab0ca1c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726518"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818872"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>在稽核記錄中搜尋電子文件探索活動
 

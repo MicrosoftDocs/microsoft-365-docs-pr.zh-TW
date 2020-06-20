@@ -15,13 +15,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
-description: 部分編制索引的專案（也稱為未編制索引的專案）是 Exchange 信箱專案和檔在 SharePoint 和 OneDrive 網站上，因為某些原因並未完全編制內容搜尋的索引。 在本文中，您可以瞭解為何專案無法編制索引以進行搜尋，並傳回成部分索引項目目、識別部分索引項目目的搜尋錯誤，以及使用 PowerShell 腳本判斷您的組織對部分索引電子郵件專案的公開程度。
-ms.openlocfilehash: 0053ec5b03f5d32af1a39be94474c05f74ec3234
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何從組織內的 Exchange、SharePoint 和 OneDrive 管理部分索引（或未編制索引）專案。
+ms.openlocfilehash: ed85a9351aad340c5840b6b9b9ea6e55833ed527
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43942126"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817522"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>調查 eDiscovery 中已部分索引的專案
 
@@ -80,9 +82,9 @@ ms.locfileid: "43942126"
   
 ![選擇第二個或第三個選項，匯出已部分索引的專案](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
-當您使用其中一個選項來匯出內容搜尋結果或內容搜尋報告時，匯出會包含一個名為「未編制索引的專案 .csv」的報表。 這個報告包含的大部分資訊都與 ResultsLog 檔案相同;不過，未編制索引的專案 .csv 檔案也包含兩個與部分索引項目目相關的欄位：**錯誤標記**和**錯誤屬性**。 這些欄位包含每個部分索引項目目之索引錯誤的相關資訊。 使用這兩個欄位中的資訊可協助您判斷是否有特定影響調查的索引錯誤。 如果是的話，您可以執行目標內容搜尋，並取回和匯出特定的電子郵件訊息，並 SharePoint 或 OneDrive 檔，以便進行檢查，以判斷是否與您的調查相關。 如需逐步指示，請參閱[在 Office 365 中準備用來進行目標內容搜尋的 CSV](csv-file-for-an-id-list-content-search.md)檔案。
+當您使用其中一個選項匯出內容搜尋結果或內容搜尋報告時，匯出會包含一個名為「未編制索引」 Items.csv 的報表。 這個報告包含的資訊大部分與 ResultsLog.csv 檔案相同;不過，未編制索引的 Items.csv 檔案中也包含與部分索引項目目相關的兩個欄位：**錯誤標記**和**錯誤屬性**。 這些欄位包含每個部分索引項目目之索引錯誤的相關資訊。 使用這兩個欄位中的資訊可協助您判斷是否有特定影響調查的索引錯誤。 如果是的話，您可以執行目標內容搜尋，並取回和匯出特定的電子郵件訊息，並 SharePoint 或 OneDrive 檔，以便進行檢查，以判斷是否與您的調查相關。 如需逐步指示，請參閱[在 Office 365 中準備用來進行目標內容搜尋的 CSV](csv-file-for-an-id-list-content-search.md)檔案。
   
- **附注：** 未編制索引的專案 .csv 檔案也包含名為「**錯誤類型**」和「**錯誤訊息**」的欄位。 這些是舊版欄位，包含類似于 [**錯誤標記**] 和 [**錯誤屬性**] 欄位中的資訊，但詳細資訊更少的資訊。 您可以放心忽略這些舊版欄位。 
+ **附注：** 未編制索引的 Items.csv 檔案也包含名為「**錯誤類型**」和「**錯誤訊息**」的欄位。 這些是舊版欄位，包含類似于 [**錯誤標記**] 和 [**錯誤屬性**] 欄位中的資訊，但詳細資訊更少的資訊。 您可以放心忽略這些舊版欄位。 
   
 ## <a name="errors-related-to-partially-indexed-items"></a>與部分索引項目目相關的錯誤
 
@@ -93,7 +95,7 @@ ms.locfileid: "43942126"
 ```
 
    
- `parseroutputsize`為錯誤， `xls`是發生錯誤之檔案的檔案類型。 在此情況下，無法辨識檔案類型或檔案類型未套用至錯誤，您將會看到 [！注意事項`noformat` ] 此值取代檔案類型。 
+ `parseroutputsize`為錯誤， `xls` 是發生錯誤之檔案的檔案類型。 在此情況下，無法辨識檔案類型或檔案類型未套用至錯誤，您將會看到 [！注意事項] 此值 `noformat` 取代檔案類型。 
   
 下列是索引錯誤的清單，以及錯誤可能原因的描述。
   
@@ -116,13 +118,13 @@ ms.locfileid: "43942126"
 | `retrieverrms` <br/> |內容檢索程式無法解碼受 RMS 保護的郵件。  <br/> |
 | `wordbreakertruncated` <br/> |在編制索引期間檔中識別過多的字。 當達到此限制時，處理屬性已停止，而且會截斷屬性。  <br/> |
    
-[錯誤] 欄位描述 [錯誤標記] 欄位中所列的處理錯誤所影響的欄位。 如果您正在搜尋諸如`subject`或`participants`的屬性，則郵件本文中的錯誤不會影響搜尋的結果。 這對判斷可能需要進一步調查的部分索引項目目是很有用的。
+[錯誤] 欄位描述 [錯誤標記] 欄位中所列的處理錯誤所影響的欄位。 如果您正在搜尋諸如或的屬性 `subject` `participants` ，則郵件本文中的錯誤不會影響搜尋的結果。 這對判斷可能需要進一步調查的部分索引項目目是很有用的。
   
 ## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>使用 PowerShell 腳本，判斷組織的部分索引電子郵件專案的危險性
 
 下列步驟說明如何執行 PowerShell 腳本，搜尋所有 Exchange 信箱中的所有專案，然後產生有關組織的部分索引電子郵件專案（按計數和大小）的比例的報告，並顯示每個索引錯誤的專案數（及其檔案類型）。 使用上一節中的錯誤標記描述來識別索引錯誤。
   
-1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `PartiallyIndexedItems.ps1`。
+1. 使用檔案名尾碼（ps1）將下列文字儲存至 Windows PowerShell 腳本檔案中;例如， `PartiallyIndexedItems.ps1` 。
 
 ```powershell
   write-host "**************************************************"
@@ -186,6 +188,6 @@ ms.locfileid: "43942126"
     
 2. 清單錯誤標記，以及發生錯誤的對應檔案類型。
   
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [位於 Office 365 中內容搜尋的已局部編製索引項目](partially-indexed-items-in-content-search.md)

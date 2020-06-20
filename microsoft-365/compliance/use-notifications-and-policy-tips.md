@@ -18,13 +18,14 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: '原則提示是指當有人使用與 DLP 原則衝突的內容時所顯示的通知或警告。 您可以使用電子郵件通知和原則提示來增加知名度，協助教育組織的原則。 您也可以讓使用者選擇覆寫原則，以便在有有效的業務需求或原則偵測到誤報時，不會封鎖這些原則。 '
-ms.openlocfilehash: 6c9175045f7a93cab03acff891454536c8b5b7a0
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom: seo-marvel-apr2020
+description: 瞭解如何將原則提示新增至資料遺失防護（DLP）原則，以通知使用者他們使用與 DLP 原則衝突的內容。
+ms.openlocfilehash: a36d1de9a24136943b41f12fe7f12a44d9df59f1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327261"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819303"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>針對 DLP 原則傳送電子郵件通知並顯示原則提示
 
@@ -287,4 +288,4 @@ Office 桌面程式會直接從 Office 365 自動同步處理 DLP 原則，然�
     
 - [DLP 原則範本包含哪些內容](what-the-dlp-policy-templates-include.md)
     
-- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)

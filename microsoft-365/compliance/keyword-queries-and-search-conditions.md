@@ -19,13 +19,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
-description: '深入瞭解您可以使用安全性 & 合規性中心的內容搜尋工具，在 Exchange Online 信箱中，以及使用 SharePoint 或 OneDrive 進行商務網站的或中搜尋的電子郵件和檔案屬性。  '
-ms.openlocfilehash: eb733d17b4d14d56bec3fc475735921d72e8ce27
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.custom:
+- seo-marvel-apr2020
+description: 深入瞭解您可以在 Office 365 安全性 & 規範中心搜尋的電子郵件和檔案屬性。
+ms.openlocfilehash: 9fa68257519860311ffe330eed23bd95468856c4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224494"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817512"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
@@ -52,7 +54,7 @@ ms.locfileid: "44224494"
   
 |**屬性**|**屬性描述**|**範例**|**範例所傳回的搜尋結果**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|附加至電子郵件的檔案名稱。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames： .pptx|具有名為 annualreport 的附加檔案的郵件。 在第二個範例中，使用萬用字元會傳回附件的檔案名中包含 "年曆" 一詞的郵件。 第三個範例會傳回所有包含 .pptx 副檔名的附件。|
+|AttachmentNames|附加至電子郵件的檔案名稱。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:.pptx|具有名為 annualreport.ppt 的附加檔案的郵件。 在第二個範例中，使用萬用字元會傳回附件的檔案名中包含 "年曆" 一詞的郵件。 第三個範例會傳回所有包含 .pptx 副檔名的附件。|
 |密件副本|電子郵件訊息的 [密件副本] 欄位。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有範例都傳回具有 Pilar Pinilla 的郵件，包含在 [密件副本] 欄位中。|
 |類別| 要搜尋的類別。 使用者可以使用 Outlook 或 Outlook 網頁版（以前稱為 Outlook Web App）定義類別。 可能的值如下：  <br/><br/>  藍色  <br/>  綠色  <br/>  橙  <br/>  紫色  <br/>  紅  <br/>  黃色|`category:"Red Category"`|來源信箱中已指派紅色類別的郵件。|
 |副本|電子郵件訊息的 [副本] 欄位。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在這兩個範例中，在 [副本] 欄位中指定 Pilar Pinilla 的郵件。|

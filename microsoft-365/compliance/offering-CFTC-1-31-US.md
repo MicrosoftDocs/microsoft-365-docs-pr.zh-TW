@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 08f912492d1874b940156e3a6165f9476add7711
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 4615b20fbd90af6e2ee7acad31f87d0021edb485
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065848"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773744"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>商品先期交易委員會（CFTC）規則1.31 （iso-c）美國
 
@@ -41,7 +41,7 @@ ms.locfileid: "44065848"
 
 ### <a name="microsoft-office-365"></a>Microsoft Office 365
 
-若要評估 Office 365 與 CFTC 規則1.31 （3-d）的相容性，Microsoft 涉嫌從事主要獨立法律事務所，專門從事法規問題、Covington & Burling、LLP。 在產生的報告中，[在 Microsoft Office 365、資料保留和規則17A-4 規範](https://go.microsoft.com/fwlink/?linkid=830440)中進行封存，Covington 會驗證[具有保留鎖定的 Office 365](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy)包含封存功能，讓受管制的客戶能夠以一種方式來儲存資料，以協助滿足記錄保留的 CFTC 需求。
+若要評估 Office 365 與 CFTC 規則1.31 （3-d）的相容性，Microsoft 涉嫌從事主要獨立法律事務所，專門從事法規問題、Covington & Burling、LLP。 在產生的報告中，[在 Microsoft Office 365、資料保留和規則17A-4 規範](https://go.microsoft.com/fwlink/?linkid=830440)中進行封存，Covington 會驗證[具有保留鎖定的 Office 365](retention-policies.md)包含封存功能，讓受管制的客戶能夠以一種方式來儲存資料，以協助滿足記錄保留的 CFTC 需求。
 
 Office 365 中的封存可協助保留大量的資料，包括電子郵件、語音信箱、共用檔、立即訊息和協力廠商資料。 具體而言，Office 365 中的封存可讓客戶設定全域或細微的郵件保留原則，以儲存定義期間的資料，而不是以不可重寫、不可讀寫的格式使用。
 
@@ -50,7 +50,7 @@ Office 365 中的封存可協助保留大量的資料，包括電子郵件、語
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 [Azure & CFTC 規則 1.31-SEC 17a-4 （f） & CFTC 1.31 （c-d） Azure Storage 的合規性評估
 

@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: 我們不斷將新功能新增至 Microsoft 365 規範中心，以修正我們所學的問題，並根據您的意見反應進行變更。 請找出我們所學的月份。
+description: 我們不斷將新功能新增至 Microsoft 365 規範中心。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 314c118673375abcf1e774a8d96d8a17edb505ff
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 5dc55fe38b588cd2a9b6c67d3f651e7c52df0664
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44418897"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817058"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 規範中心的新功能
 
@@ -192,13 +192,13 @@ ms.locfileid: "44418897"
 - 將標籤套用至**Outlook 電子郵件**時，使用者可強制執行與 [不要轉寄] 選項同等的限制。 收件者將可以讀取郵件，但不能轉寄、列印或複製內容。
 - 將標籤套用至**Word、PowerPoint 及 Excel**檔案時，系統會提示使用者將存取權限指派給特定的使用者和群組。
 
-[深入了解](encryption-sensitivity-labels.md#let-users-assign-permissions)
+移至 [[使用敏感度標籤來限制存取內容](encryption-sensitivity-labels.md#let-users-assign-permissions)] 以深入瞭解內容。
 
 ## <a name="august-2019"></a>2019 年 8 月
 
 ### <a name="update-to-data-investigations"></a>更新資料調查
 
-在執行資料調查時，您現在可以從原始位置刪除專案。 這表示您可以在組織內刪除 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶中的專案。 因為您已將專案收集為證據，所以您可以在證據集中保留這些專案的副本，以進行進一步調查或只保留為參考。 [深入了解](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
+在執行資料調查時，您現在可以從原始位置刪除專案。 這表示您可以在組織內刪除 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶中的專案。 因為您已將專案收集為證據，所以您可以在證據集中保留這些專案的副本，以進行進一步調查或只保留為參考。 移至 [[管理 Microsoft 365 中的資料外泄事件](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data)] 以深入瞭解。 
 
 ## <a name="july-2019"></a>2019 年 7 月
 
