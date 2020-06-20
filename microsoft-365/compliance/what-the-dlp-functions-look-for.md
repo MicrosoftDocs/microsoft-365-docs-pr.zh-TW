@@ -15,218 +15,220 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 敏感資訊類型會尋找特定的模式，並透過確認正確的格式設定、強制執行校驗和尋找相關的關鍵字或其他資訊來 corroborate。 此功能的部分功能是由內建函式執行。 本主題說明這些功能的含義，以協助您瞭解預先定義的機密資訊類型的運作方式。
-ms.openlocfilehash: 710cd371cbf67a03d75a928baab4b63587cdcfc1
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解資料遺失防護（DLP）功能的尋找方式，以協助您瞭解預先定義的機密資訊類型的運作方式。
+ms.openlocfilehash: 838277b2e30696cd00cfc30df49c1d5a29149d92
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327745"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819273"
 ---
-# <a name="what-the-dlp-functions-look-for"></a><span data-ttu-id="bc553-105">DLP 功能所尋找的項目</span><span class="sxs-lookup"><span data-stu-id="bc553-105">What the DLP functions look for</span></span>
+# <a name="what-the-dlp-functions-look-for"></a><span data-ttu-id="7db23-103">DLP 功能所尋找的項目</span><span class="sxs-lookup"><span data-stu-id="7db23-103">What the DLP functions look for</span></span>
 
-<span data-ttu-id="bc553-106">資料遺失防護（DLP）包含機密資訊類型，例如信用卡號碼和歐盟卡號，可供您在 DLP 原則中使用。</span><span class="sxs-lookup"><span data-stu-id="bc553-106">Data loss prevention (DLP) includes sensitive information types, such as Credit Card Number and EU Debit Card Number, which are ready for you to use in your DLP policies.</span></span> <span data-ttu-id="bc553-107">這些敏感資訊類型會尋找特定的模式，並加以 corroborate，方法是確認正確的格式設定、強制執行校驗和尋找相關的關鍵字或其他資訊。</span><span class="sxs-lookup"><span data-stu-id="bc553-107">These sensitive information types look for a specific pattern and corroborate it by ensuring proper formatting, enforcing checksums, and looking for relevant keywords or other information.</span></span> <span data-ttu-id="bc553-108">此功能的部分功能是由內建函式執行。</span><span class="sxs-lookup"><span data-stu-id="bc553-108">Some of this functionality is performed by internal functions.</span></span> <span data-ttu-id="bc553-109">例如，「信用卡號碼敏感資訊類型」會使用函數來尋找類似到期日的日期，以協助 corroborate 號碼是信用卡號碼。</span><span class="sxs-lookup"><span data-stu-id="bc553-109">For example, the Credit Card Number sensitive information type uses a function to look for dates formatted like an expiration date, to help corroborate that a number is a credit card number.</span></span>
+<span data-ttu-id="7db23-104">資料遺失防護（DLP）包含機密資訊類型，例如信用卡號碼和歐盟卡號，可供您在 DLP 原則中使用。</span><span class="sxs-lookup"><span data-stu-id="7db23-104">Data loss prevention (DLP) includes sensitive information types, such as Credit Card Number and EU Debit Card Number, which are ready for you to use in your DLP policies.</span></span> <span data-ttu-id="7db23-105">這些敏感資訊類型會尋找特定的模式，並加以 corroborate，方法是確認正確的格式設定、強制執行校驗和尋找相關的關鍵字或其他資訊。</span><span class="sxs-lookup"><span data-stu-id="7db23-105">These sensitive information types look for a specific pattern and corroborate it by ensuring proper formatting, enforcing checksums, and looking for relevant keywords or other information.</span></span> <span data-ttu-id="7db23-106">此功能的部分功能是由內建函式執行。</span><span class="sxs-lookup"><span data-stu-id="7db23-106">Some of this functionality is performed by internal functions.</span></span> <span data-ttu-id="7db23-107">例如，「信用卡號碼敏感資訊類型」會使用函數來尋找類似到期日的日期，以協助 corroborate 號碼是信用卡號碼。</span><span class="sxs-lookup"><span data-stu-id="7db23-107">For example, the Credit Card Number sensitive information type uses a function to look for dates formatted like an expiration date, to help corroborate that a number is a credit card number.</span></span>
   
-<span data-ttu-id="bc553-110">本主題說明這些功能的含義，以協助您瞭解預先定義的機密資訊類型的運作方式。</span><span class="sxs-lookup"><span data-stu-id="bc553-110">This topic explains what these functions look for, to help you understand how the predefined sensitive information types work.</span></span> <span data-ttu-id="bc553-111">如需詳細資訊，請參閱[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)</span><span class="sxs-lookup"><span data-stu-id="bc553-111">For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)</span></span>
+<span data-ttu-id="7db23-108">本主題說明這些功能的含義，以協助您瞭解預先定義的機密資訊類型的運作方式。</span><span class="sxs-lookup"><span data-stu-id="7db23-108">This topic explains what these functions look for, to help you understand how the predefined sensitive information types work.</span></span> <span data-ttu-id="7db23-109">如需詳細資訊，請參閱[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)</span><span class="sxs-lookup"><span data-stu-id="7db23-109">For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)</span></span>
   
-## <a name="func_us_date"></a><span data-ttu-id="bc553-112">Func_us_date</span><span class="sxs-lookup"><span data-stu-id="bc553-112">Func_us_date</span></span>
+## <a name="func_us_date"></a><span data-ttu-id="7db23-110">Func_us_date</span><span class="sxs-lookup"><span data-stu-id="7db23-110">Func_us_date</span></span>
 
-<span data-ttu-id="bc553-113">此函數會以美國常用的格式來尋找日期。這包括「月/日/年」、「月-日-年」和「年月日」的格式。</span><span class="sxs-lookup"><span data-stu-id="bc553-113">This function looks for a date in the format commonly used in the U.S. This includes the formats "month/day/year", "month-day-year", and "month day year ".</span></span> <span data-ttu-id="bc553-114">月份的名稱或縮寫不區分大小寫。</span><span class="sxs-lookup"><span data-stu-id="bc553-114">The names or abbreviations of months are not case sensitive.</span></span> 
+<span data-ttu-id="7db23-111">此函數會以美國常用的格式來尋找日期。這包括「月/日/年」、「月-日-年」和「年月日」的格式。</span><span class="sxs-lookup"><span data-stu-id="7db23-111">This function looks for a date in the format commonly used in the U.S. This includes the formats "month/day/year", "month-day-year", and "month day year ".</span></span> <span data-ttu-id="7db23-112">月份的名稱或縮寫不區分大小寫。</span><span class="sxs-lookup"><span data-stu-id="7db23-112">The names or abbreviations of months are not case sensitive.</span></span> 
   
-<span data-ttu-id="bc553-115">範例:</span><span class="sxs-lookup"><span data-stu-id="bc553-115">Examples:</span></span>
+<span data-ttu-id="7db23-113">範例：</span><span class="sxs-lookup"><span data-stu-id="7db23-113">Examples:</span></span>
   
-- <span data-ttu-id="bc553-116">2016年12月2日</span><span class="sxs-lookup"><span data-stu-id="bc553-116">December 2, 2016</span></span>
+- <span data-ttu-id="7db23-114">2016年12月2日</span><span class="sxs-lookup"><span data-stu-id="7db23-114">December 2, 2016</span></span>
     
-- <span data-ttu-id="bc553-117">2016年12月2日</span><span class="sxs-lookup"><span data-stu-id="bc553-117">Dec 2, 2016</span></span>
+- <span data-ttu-id="7db23-115">2016年12月2日</span><span class="sxs-lookup"><span data-stu-id="7db23-115">Dec 2, 2016</span></span>
     
-- <span data-ttu-id="bc553-118">dec 02 2016</span><span class="sxs-lookup"><span data-stu-id="bc553-118">dec 02 2016</span></span>
+- <span data-ttu-id="7db23-116">dec 02 2016</span><span class="sxs-lookup"><span data-stu-id="7db23-116">dec 02 2016</span></span>
     
-- <span data-ttu-id="bc553-119">12/2/2016</span><span class="sxs-lookup"><span data-stu-id="bc553-119">12/2/2016</span></span>
+- <span data-ttu-id="7db23-117">12/2/2016</span><span class="sxs-lookup"><span data-stu-id="7db23-117">12/2/2016</span></span>
     
-- <span data-ttu-id="bc553-120">12/02/16</span><span class="sxs-lookup"><span data-stu-id="bc553-120">12/02/16</span></span>
+- <span data-ttu-id="7db23-118">12/02/16</span><span class="sxs-lookup"><span data-stu-id="7db23-118">12/02/16</span></span>
     
-- <span data-ttu-id="bc553-121">Dec-2-2016</span><span class="sxs-lookup"><span data-stu-id="bc553-121">Dec-2-2016</span></span>
+- <span data-ttu-id="7db23-119">Dec-2-2016</span><span class="sxs-lookup"><span data-stu-id="7db23-119">Dec-2-2016</span></span>
     
-- <span data-ttu-id="bc553-122">12-2-16</span><span class="sxs-lookup"><span data-stu-id="bc553-122">12-2-16</span></span>
+- <span data-ttu-id="7db23-120">12-2-16</span><span class="sxs-lookup"><span data-stu-id="7db23-120">12-2-16</span></span>
     
-<span data-ttu-id="bc553-123">公認的月份名稱：</span><span class="sxs-lookup"><span data-stu-id="bc553-123">Accepted month names:</span></span>
+<span data-ttu-id="7db23-121">公認的月份名稱：</span><span class="sxs-lookup"><span data-stu-id="7db23-121">Accepted month names:</span></span>
   
-- <span data-ttu-id="bc553-124">英文</span><span class="sxs-lookup"><span data-stu-id="bc553-124">English</span></span>
+- <span data-ttu-id="7db23-122">English</span><span class="sxs-lookup"><span data-stu-id="7db23-122">English</span></span>
     
-  - <span data-ttu-id="bc553-125">一月份、二月份、三月份、四月、六月、六月、十二月、十二月、十二月、十月、十二月、十二月</span><span class="sxs-lookup"><span data-stu-id="bc553-125">January, February, march, April, may, June, July, August, September, October, November, December</span></span>
+  - <span data-ttu-id="7db23-123">一月份、二月份、三月份、四月、六月、六月、十二月、十二月、十二月、十月、十二月、十二月</span><span class="sxs-lookup"><span data-stu-id="7db23-123">January, February, march, April, may, June, July, August, September, October, November, December</span></span>
     
-  - <span data-ttu-id="bc553-126">Mar 年4月4月8日（11月11日）。</span><span class="sxs-lookup"><span data-stu-id="bc553-126">Jan. Feb. Mar. Apr. May June July Aug. Sept. Oct. Nov. Dec.</span></span>
+  - <span data-ttu-id="7db23-124">Mar 年4月4月8日（11月11日）。</span><span class="sxs-lookup"><span data-stu-id="7db23-124">Jan. Feb. Mar. Apr. May June July Aug. Sept. Oct. Nov. Dec.</span></span>
     
-## <a name="func_eu_date"></a><span data-ttu-id="bc553-127">Func_eu_date</span><span class="sxs-lookup"><span data-stu-id="bc553-127">Func_eu_date</span></span>
+## <a name="func_eu_date"></a><span data-ttu-id="7db23-125">Func_eu_date</span><span class="sxs-lookup"><span data-stu-id="7db23-125">Func_eu_date</span></span>
 
-<span data-ttu-id="bc553-128">此函數會以歐盟常用的格式來尋找日期</span><span class="sxs-lookup"><span data-stu-id="bc553-128">This function looks for a date in the format commonly used in the E.U.</span></span> <span data-ttu-id="bc553-129">（和美國以外的大部分地點）。</span><span class="sxs-lookup"><span data-stu-id="bc553-129">(and most places outside the U.S.).</span></span> <span data-ttu-id="bc553-130">這包括格式「日/月/年」、「日-月-年」和「日月年」。</span><span class="sxs-lookup"><span data-stu-id="bc553-130">This includes the formats "day/month/year", "day-month-year", and "day month year".</span></span> <span data-ttu-id="bc553-131">月份的名稱或縮寫不區分大小寫。</span><span class="sxs-lookup"><span data-stu-id="bc553-131">The names or abbreviations of months are not case sensitive.</span></span>
+<span data-ttu-id="7db23-126">此函數會以歐盟常用的格式來尋找日期</span><span class="sxs-lookup"><span data-stu-id="7db23-126">This function looks for a date in the format commonly used in the E.U.</span></span> <span data-ttu-id="7db23-127">（和美國以外的大部分地點）。</span><span class="sxs-lookup"><span data-stu-id="7db23-127">(and most places outside the U.S.).</span></span> <span data-ttu-id="7db23-128">這包括格式「日/月/年」、「日-月-年」和「日月年」。</span><span class="sxs-lookup"><span data-stu-id="7db23-128">This includes the formats "day/month/year", "day-month-year", and "day month year".</span></span> <span data-ttu-id="7db23-129">月份的名稱或縮寫不區分大小寫。</span><span class="sxs-lookup"><span data-stu-id="7db23-129">The names or abbreviations of months are not case sensitive.</span></span>
   
-<span data-ttu-id="bc553-132">範例:</span><span class="sxs-lookup"><span data-stu-id="bc553-132">Examples:</span></span>
+<span data-ttu-id="7db23-130">範例：</span><span class="sxs-lookup"><span data-stu-id="7db23-130">Examples:</span></span>
   
-- <span data-ttu-id="bc553-133">2 Dec 2016</span><span class="sxs-lookup"><span data-stu-id="bc553-133">2 Dec 2016</span></span>
+- <span data-ttu-id="7db23-131">2 Dec 2016</span><span class="sxs-lookup"><span data-stu-id="7db23-131">2 Dec 2016</span></span>
     
-- <span data-ttu-id="bc553-134">02 dec 2016</span><span class="sxs-lookup"><span data-stu-id="bc553-134">02 dec 2016</span></span>
+- <span data-ttu-id="7db23-132">02 dec 2016</span><span class="sxs-lookup"><span data-stu-id="7db23-132">02 dec 2016</span></span>
     
-- <span data-ttu-id="bc553-135">2 Dec 16</span><span class="sxs-lookup"><span data-stu-id="bc553-135">2 Dec 16</span></span>
+- <span data-ttu-id="7db23-133">2 Dec 16</span><span class="sxs-lookup"><span data-stu-id="7db23-133">2 Dec 16</span></span>
     
-- <span data-ttu-id="bc553-136">2/12/2016</span><span class="sxs-lookup"><span data-stu-id="bc553-136">2/12/2016</span></span>
+- <span data-ttu-id="7db23-134">2/12/2016</span><span class="sxs-lookup"><span data-stu-id="7db23-134">2/12/2016</span></span>
     
-- <span data-ttu-id="bc553-137">02/12/16</span><span class="sxs-lookup"><span data-stu-id="bc553-137">02/12/16</span></span>
+- <span data-ttu-id="7db23-135">02/12/16</span><span class="sxs-lookup"><span data-stu-id="7db23-135">02/12/16</span></span>
     
-- <span data-ttu-id="bc553-138">2月2日-2016</span><span class="sxs-lookup"><span data-stu-id="bc553-138">2-Dec-2016</span></span>
+- <span data-ttu-id="7db23-136">2月2日-2016</span><span class="sxs-lookup"><span data-stu-id="7db23-136">2-Dec-2016</span></span>
     
-- <span data-ttu-id="bc553-139">2-12-16</span><span class="sxs-lookup"><span data-stu-id="bc553-139">2-12-16</span></span>
+- <span data-ttu-id="7db23-137">2-12-16</span><span class="sxs-lookup"><span data-stu-id="7db23-137">2-12-16</span></span>
     
-<span data-ttu-id="bc553-140">公認的月份名稱：</span><span class="sxs-lookup"><span data-stu-id="bc553-140">Accepted month names:</span></span>
+<span data-ttu-id="7db23-138">公認的月份名稱：</span><span class="sxs-lookup"><span data-stu-id="7db23-138">Accepted month names:</span></span>
   
-- <span data-ttu-id="bc553-141">英文</span><span class="sxs-lookup"><span data-stu-id="bc553-141">English</span></span>
+- <span data-ttu-id="7db23-139">English</span><span class="sxs-lookup"><span data-stu-id="7db23-139">English</span></span>
     
-  - <span data-ttu-id="bc553-142">一月份、二月份、三月份、四月、六月、六月、十二月、十二月、十二月、十月、十二月、十二月</span><span class="sxs-lookup"><span data-stu-id="bc553-142">January, February, march, April, may, June, July, August, September, October, November, December</span></span>
+  - <span data-ttu-id="7db23-140">一月份、二月份、三月份、四月、六月、六月、十二月、十二月、十二月、十月、十二月、十二月</span><span class="sxs-lookup"><span data-stu-id="7db23-140">January, February, march, April, may, June, July, August, September, October, November, December</span></span>
     
-  - <span data-ttu-id="bc553-143">Mar 年4月4月8日（11月11日）。</span><span class="sxs-lookup"><span data-stu-id="bc553-143">Jan. Feb. Mar. Apr. May June July Aug. Sept. Oct. Nov. Dec.</span></span>
+  - <span data-ttu-id="7db23-141">Mar 年4月4月8日（11月11日）。</span><span class="sxs-lookup"><span data-stu-id="7db23-141">Jan. Feb. Mar. Apr. May June July Aug. Sept. Oct. Nov. Dec.</span></span>
     
-- <span data-ttu-id="bc553-144">荷蘭文</span><span class="sxs-lookup"><span data-stu-id="bc553-144">Dutch</span></span>
+- <span data-ttu-id="7db23-142">荷蘭文</span><span class="sxs-lookup"><span data-stu-id="7db23-142">Dutch</span></span>
     
-  - <span data-ttu-id="bc553-145">januari，februari，maart，四月，mei，juni，juli，augustus，九月份，ocktober，十月，11月，十二月</span><span class="sxs-lookup"><span data-stu-id="bc553-145">januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December</span></span>
+  - <span data-ttu-id="7db23-143">januari，februari，maart，四月，mei，juni，juli，augustus，九月份，ocktober，十月，11月，十二月</span><span class="sxs-lookup"><span data-stu-id="7db23-143">januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December</span></span>
     
-  - <span data-ttu-id="bc553-146">jan jan maart apr mei 年9月8日9月 okt 年11月</span><span class="sxs-lookup"><span data-stu-id="bc553-146">jan feb maart apr mei jun jul aug sep sept oct okt nov dec</span></span>
+  - <span data-ttu-id="7db23-144">jan jan maart apr mei 年9月8日9月 okt 年11月</span><span class="sxs-lookup"><span data-stu-id="7db23-144">jan feb maart apr mei jun jul aug sep sept oct okt nov dec</span></span>
     
-- <span data-ttu-id="bc553-147">法文</span><span class="sxs-lookup"><span data-stu-id="bc553-147">French</span></span>
+- <span data-ttu-id="7db23-145">法文</span><span class="sxs-lookup"><span data-stu-id="7db23-145">French</span></span>
     
-  - <span data-ttu-id="bc553-148">janvier，février，mars，avril，mai，juin juillet，août，septembre，octobre，novembre，décembre</span><span class="sxs-lookup"><span data-stu-id="bc553-148">janvier, février, mars, avril, mai, juin juillet, août, septembre, octobre, novembre, décembre</span></span>
+  - <span data-ttu-id="7db23-146">janvier，février，mars，avril，mai，juin juillet，août，septembre，octobre，novembre，décembre</span><span class="sxs-lookup"><span data-stu-id="7db23-146">janvier, février, mars, avril, mai, juin juillet, août, septembre, octobre, novembre, décembre</span></span>
     
-  - <span data-ttu-id="bc553-149">janv.</span><span class="sxs-lookup"><span data-stu-id="bc553-149">janv.</span></span> <span data-ttu-id="bc553-150">févr.</span><span class="sxs-lookup"><span data-stu-id="bc553-150">févr.</span></span> <span data-ttu-id="bc553-151">mars avril mai juin juil。</span><span class="sxs-lookup"><span data-stu-id="bc553-151">mars avril mai juin juil.</span></span> <span data-ttu-id="bc553-152">août 年9月。</span><span class="sxs-lookup"><span data-stu-id="bc553-152">août sept.</span></span> <span data-ttu-id="bc553-153">2008.</span><span class="sxs-lookup"><span data-stu-id="bc553-153">oct.</span></span> <span data-ttu-id="bc553-154">11 月。</span><span class="sxs-lookup"><span data-stu-id="bc553-154">nov.</span></span> <span data-ttu-id="bc553-155">déc.</span><span class="sxs-lookup"><span data-stu-id="bc553-155">déc.</span></span>
+  - <span data-ttu-id="7db23-147">janv.</span><span class="sxs-lookup"><span data-stu-id="7db23-147">janv.</span></span> <span data-ttu-id="7db23-148">févr.</span><span class="sxs-lookup"><span data-stu-id="7db23-148">févr.</span></span> <span data-ttu-id="7db23-149">mars avril mai juin juil。</span><span class="sxs-lookup"><span data-stu-id="7db23-149">mars avril mai juin juil.</span></span> <span data-ttu-id="7db23-150">août 年9月。</span><span class="sxs-lookup"><span data-stu-id="7db23-150">août sept.</span></span> <span data-ttu-id="7db23-151">2008.</span><span class="sxs-lookup"><span data-stu-id="7db23-151">oct.</span></span> <span data-ttu-id="7db23-152">11 月。</span><span class="sxs-lookup"><span data-stu-id="7db23-152">nov.</span></span> <span data-ttu-id="7db23-153">déc.</span><span class="sxs-lookup"><span data-stu-id="7db23-153">déc.</span></span>
     
-- <span data-ttu-id="bc553-156">德文</span><span class="sxs-lookup"><span data-stu-id="bc553-156">German</span></span>
+- <span data-ttu-id="7db23-154">德文</span><span class="sxs-lookup"><span data-stu-id="7db23-154">German</span></span>
     
-  - <span data-ttu-id="bc553-157">jänuar，februar，märz，四月，mai，juni juli，八月，九月份，oktober，11月，dezember</span><span class="sxs-lookup"><span data-stu-id="bc553-157">jänuar, februar, märz, April, mai, juni juli, August, September, oktober, November, dezember</span></span>
+  - <span data-ttu-id="7db23-155">jänuar，februar，märz，四月，mai，juni juli，八月，九月份，oktober，11月，dezember</span><span class="sxs-lookup"><span data-stu-id="7db23-155">jänuar, februar, märz, April, mai, juni juli, August, September, oktober, November, dezember</span></span>
     
-  - <span data-ttu-id="bc553-158">Jan./Jän。</span><span class="sxs-lookup"><span data-stu-id="bc553-158">Jan./Jän.</span></span> <span data-ttu-id="bc553-159">März Apr Juni Juli 08 月 Okt。</span><span class="sxs-lookup"><span data-stu-id="bc553-159">Feb. März Apr. Mai Juni Juli Aug. Sept. Okt.</span></span> <span data-ttu-id="bc553-160">Dez 年11月。</span><span class="sxs-lookup"><span data-stu-id="bc553-160">Nov. Dez.</span></span>
+  - <span data-ttu-id="7db23-156">Jan./Jän。</span><span class="sxs-lookup"><span data-stu-id="7db23-156">Jan./Jän.</span></span> <span data-ttu-id="7db23-157">März Apr Juni Juli 08 月 Okt。</span><span class="sxs-lookup"><span data-stu-id="7db23-157">Feb. März Apr. Mai Juni Juli Aug. Sept. Okt.</span></span> <span data-ttu-id="7db23-158">Dez 年11月。</span><span class="sxs-lookup"><span data-stu-id="7db23-158">Nov. Dez.</span></span>
     
-- <span data-ttu-id="bc553-161">義大利文</span><span class="sxs-lookup"><span data-stu-id="bc553-161">Italian</span></span>
+- <span data-ttu-id="7db23-159">義大利文</span><span class="sxs-lookup"><span data-stu-id="7db23-159">Italian</span></span>
     
-  - <span data-ttu-id="bc553-162">gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre</span><span class="sxs-lookup"><span data-stu-id="bc553-162">gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre</span></span>
+  - <span data-ttu-id="7db23-160">gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre</span><span class="sxs-lookup"><span data-stu-id="7db23-160">gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre</span></span>
     
-  - <span data-ttu-id="bc553-163">genn.</span><span class="sxs-lookup"><span data-stu-id="bc553-163">genn.</span></span> <span data-ttu-id="bc553-164">febbr.</span><span class="sxs-lookup"><span data-stu-id="bc553-164">febbr.</span></span> <span data-ttu-id="bc553-165">三月。</span><span class="sxs-lookup"><span data-stu-id="bc553-165">mar.</span></span> <span data-ttu-id="bc553-166">四月。</span><span class="sxs-lookup"><span data-stu-id="bc553-166">apr.</span></span> <span data-ttu-id="bc553-167">magg.</span><span class="sxs-lookup"><span data-stu-id="bc553-167">magg.</span></span> <span data-ttu-id="bc553-168">giugno luglio ag。</span><span class="sxs-lookup"><span data-stu-id="bc553-168">giugno luglio ag.</span></span> <span data-ttu-id="bc553-169">sett.</span><span class="sxs-lookup"><span data-stu-id="bc553-169">sett.</span></span> <span data-ttu-id="bc553-170">奧特。</span><span class="sxs-lookup"><span data-stu-id="bc553-170">ott.</span></span> <span data-ttu-id="bc553-171">11 月。</span><span class="sxs-lookup"><span data-stu-id="bc553-171">nov.</span></span> <span data-ttu-id="bc553-172">Dic。</span><span class="sxs-lookup"><span data-stu-id="bc553-172">dic.</span></span>
+  - <span data-ttu-id="7db23-161">genn.</span><span class="sxs-lookup"><span data-stu-id="7db23-161">genn.</span></span> <span data-ttu-id="7db23-162">febbr.</span><span class="sxs-lookup"><span data-stu-id="7db23-162">febbr.</span></span> <span data-ttu-id="7db23-163">三月。</span><span class="sxs-lookup"><span data-stu-id="7db23-163">mar.</span></span> <span data-ttu-id="7db23-164">四月。</span><span class="sxs-lookup"><span data-stu-id="7db23-164">apr.</span></span> <span data-ttu-id="7db23-165">magg.</span><span class="sxs-lookup"><span data-stu-id="7db23-165">magg.</span></span> <span data-ttu-id="7db23-166">giugno luglio ag。</span><span class="sxs-lookup"><span data-stu-id="7db23-166">giugno luglio ag.</span></span> <span data-ttu-id="7db23-167">sett.</span><span class="sxs-lookup"><span data-stu-id="7db23-167">sett.</span></span> <span data-ttu-id="7db23-168">奧特。</span><span class="sxs-lookup"><span data-stu-id="7db23-168">ott.</span></span> <span data-ttu-id="7db23-169">11 月。</span><span class="sxs-lookup"><span data-stu-id="7db23-169">nov.</span></span> <span data-ttu-id="7db23-170">Dic。</span><span class="sxs-lookup"><span data-stu-id="7db23-170">dic.</span></span>
     
-- <span data-ttu-id="bc553-173">葡萄牙文</span><span class="sxs-lookup"><span data-stu-id="bc553-173">Portuguese</span></span>
+- <span data-ttu-id="7db23-171">葡萄牙文</span><span class="sxs-lookup"><span data-stu-id="7db23-171">Portuguese</span></span>
     
-  - <span data-ttu-id="bc553-174">janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro</span><span class="sxs-lookup"><span data-stu-id="bc553-174">janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro</span></span>
+  - <span data-ttu-id="7db23-172">janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro</span><span class="sxs-lookup"><span data-stu-id="7db23-172">janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro</span></span>
     
-  - <span data-ttu-id="bc553-175">jan fev mar abr mai 06 年6月1日，設定為11月 dez</span><span class="sxs-lookup"><span data-stu-id="bc553-175">jan fev mar abr mai jun jul ago set out nov dez</span></span>
+  - <span data-ttu-id="7db23-173">jan fev mar abr mai 06 年6月1日，設定為11月 dez</span><span class="sxs-lookup"><span data-stu-id="7db23-173">jan fev mar abr mai jun jul ago set out nov dez</span></span>
     
-- <span data-ttu-id="bc553-176">西班牙文</span><span class="sxs-lookup"><span data-stu-id="bc553-176">Spanish</span></span>
+- <span data-ttu-id="7db23-174">西班牙文</span><span class="sxs-lookup"><span data-stu-id="7db23-174">Spanish</span></span>
     
-  - <span data-ttu-id="bc553-177">enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre</span><span class="sxs-lookup"><span data-stu-id="bc553-177">enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre</span></span>
+  - <span data-ttu-id="7db23-175">enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre</span><span class="sxs-lookup"><span data-stu-id="7db23-175">enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre</span></span>
     
-  - <span data-ttu-id="bc553-178">enero 年2月。</span><span class="sxs-lookup"><span data-stu-id="bc553-178">enero feb.</span></span> <span data-ttu-id="bc553-179">marzo abr。</span><span class="sxs-lookup"><span data-stu-id="bc553-179">marzo abr.</span></span> <span data-ttu-id="bc553-180">mayo 年6月。</span><span class="sxs-lookup"><span data-stu-id="bc553-180">mayo jun.</span></span> <span data-ttu-id="bc553-181">七月。</span><span class="sxs-lookup"><span data-stu-id="bc553-181">jul.</span></span> <span data-ttu-id="bc553-182">agosto/set。</span><span class="sxs-lookup"><span data-stu-id="bc553-182">agosto sept./set.</span></span> <span data-ttu-id="bc553-183">2008.</span><span class="sxs-lookup"><span data-stu-id="bc553-183">oct.</span></span> <span data-ttu-id="bc553-184">11 月。</span><span class="sxs-lookup"><span data-stu-id="bc553-184">nov.</span></span> <span data-ttu-id="bc553-185">Dic。</span><span class="sxs-lookup"><span data-stu-id="bc553-185">dic.</span></span>
+  - <span data-ttu-id="7db23-176">enero 年2月。</span><span class="sxs-lookup"><span data-stu-id="7db23-176">enero feb.</span></span> <span data-ttu-id="7db23-177">marzo abr。</span><span class="sxs-lookup"><span data-stu-id="7db23-177">marzo abr.</span></span> <span data-ttu-id="7db23-178">mayo 年6月。</span><span class="sxs-lookup"><span data-stu-id="7db23-178">mayo jun.</span></span> <span data-ttu-id="7db23-179">七月。</span><span class="sxs-lookup"><span data-stu-id="7db23-179">jul.</span></span> <span data-ttu-id="7db23-180">agosto/set。</span><span class="sxs-lookup"><span data-stu-id="7db23-180">agosto sept./set.</span></span> <span data-ttu-id="7db23-181">2008.</span><span class="sxs-lookup"><span data-stu-id="7db23-181">oct.</span></span> <span data-ttu-id="7db23-182">11 月。</span><span class="sxs-lookup"><span data-stu-id="7db23-182">nov.</span></span> <span data-ttu-id="7db23-183">Dic。</span><span class="sxs-lookup"><span data-stu-id="7db23-183">dic.</span></span>
     
-## <a name="func_eu_date1-deprecated"></a><span data-ttu-id="bc553-186">Func_eu_date1 （已過時）</span><span class="sxs-lookup"><span data-stu-id="bc553-186">Func_eu_date1 (deprecated)</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="bc553-187">此函數已過時，因為它只支援葡萄牙文月份名稱，而這些名稱現在已包含在 `Func_eu_date` 上述函數中。</span><span class="sxs-lookup"><span data-stu-id="bc553-187">This function is deprecated because it supports only Portuguese month names, which are now included in the  `Func_eu_date` function above.</span></span> 
-  
-<span data-ttu-id="bc553-188">此函數會以葡萄牙文中常用的格式來尋找日期。</span><span class="sxs-lookup"><span data-stu-id="bc553-188">This function looks for a date in the format commonly used in Portuguese.</span></span> <span data-ttu-id="bc553-189">此函數的格式與 `Func_eu_date` 使用的語言不同。</span><span class="sxs-lookup"><span data-stu-id="bc553-189">The format for this function is the same as  `Func_eu_date`, differing only in the language used.</span></span>
-  
-<span data-ttu-id="bc553-190">範例:</span><span class="sxs-lookup"><span data-stu-id="bc553-190">Examples:</span></span>
-  
-- <span data-ttu-id="bc553-191">2 Dez 2016</span><span class="sxs-lookup"><span data-stu-id="bc553-191">2 Dez 2016</span></span>
-    
-- <span data-ttu-id="bc553-192">02 dez 2016</span><span class="sxs-lookup"><span data-stu-id="bc553-192">02 dez 2016</span></span>
-    
-- <span data-ttu-id="bc553-193">2 Dez 16</span><span class="sxs-lookup"><span data-stu-id="bc553-193">2 Dez 16</span></span>
-    
-- <span data-ttu-id="bc553-194">2/12/2016</span><span class="sxs-lookup"><span data-stu-id="bc553-194">2/12/2016</span></span>
-    
-- <span data-ttu-id="bc553-195">02/12/16</span><span class="sxs-lookup"><span data-stu-id="bc553-195">02/12/16</span></span>
-    
-- <span data-ttu-id="bc553-196">2-Dez-2016</span><span class="sxs-lookup"><span data-stu-id="bc553-196">2-Dez-2016</span></span>
-    
-- <span data-ttu-id="bc553-197">2-12-16</span><span class="sxs-lookup"><span data-stu-id="bc553-197">2-12-16</span></span>
-    
-<span data-ttu-id="bc553-198">公認的月份名稱：</span><span class="sxs-lookup"><span data-stu-id="bc553-198">Accepted month names:</span></span>
-  
-- <span data-ttu-id="bc553-199">葡萄牙文</span><span class="sxs-lookup"><span data-stu-id="bc553-199">Portuguese</span></span>
-    
-  - <span data-ttu-id="bc553-200">janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro</span><span class="sxs-lookup"><span data-stu-id="bc553-200">janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro</span></span>
-    
-  - <span data-ttu-id="bc553-201">jan fev mar abr mai 06 年6月1日，設定為11月 dez</span><span class="sxs-lookup"><span data-stu-id="bc553-201">jan fev mar abr mai jun jul ago set out nov dez</span></span>
-    
-## <a name="func_eu_date2-deprecated"></a><span data-ttu-id="bc553-202">Func_eu_date2 （已過時）</span><span class="sxs-lookup"><span data-stu-id="bc553-202">Func_eu_date2 (deprecated)</span></span>
+## <a name="func_eu_date1-deprecated"></a><span data-ttu-id="7db23-184">Func_eu_date1 （已過時）</span><span class="sxs-lookup"><span data-stu-id="7db23-184">Func_eu_date1 (deprecated)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="bc553-203">此函數已過時，因為它只支援荷蘭月份名稱，而這些名稱現在已包含在 `Func_eu_date` 上述函數中。</span><span class="sxs-lookup"><span data-stu-id="bc553-203">This function is deprecated because it supports only Dutch month names, which are now included in the  `Func_eu_date` function above.</span></span> 
+> <span data-ttu-id="7db23-185">此函數已過時，因為它只支援葡萄牙文月份名稱，而這些名稱現在已包含在 `Func_eu_date` 上述函數中。</span><span class="sxs-lookup"><span data-stu-id="7db23-185">This function is deprecated because it supports only Portuguese month names, which are now included in the  `Func_eu_date` function above.</span></span> 
   
-<span data-ttu-id="bc553-204">此函數會以荷蘭文中常用的格式來尋找日期。</span><span class="sxs-lookup"><span data-stu-id="bc553-204">This function looks for a date in the format commonly used in Dutch.</span></span> <span data-ttu-id="bc553-205">此函數的格式與 `Func_eu_date` 使用的語言不同。</span><span class="sxs-lookup"><span data-stu-id="bc553-205">The format for this function is the same as  `Func_eu_date`, differing only in the language used.</span></span>
+<span data-ttu-id="7db23-186">此函數會以葡萄牙文中常用的格式來尋找日期。</span><span class="sxs-lookup"><span data-stu-id="7db23-186">This function looks for a date in the format commonly used in Portuguese.</span></span> <span data-ttu-id="7db23-187">此函數的格式與 `Func_eu_date` 使用的語言不同。</span><span class="sxs-lookup"><span data-stu-id="7db23-187">The format for this function is the same as  `Func_eu_date`, differing only in the language used.</span></span>
   
-<span data-ttu-id="bc553-206">範例:</span><span class="sxs-lookup"><span data-stu-id="bc553-206">Examples:</span></span>
+<span data-ttu-id="7db23-188">範例：</span><span class="sxs-lookup"><span data-stu-id="7db23-188">Examples:</span></span>
   
-- <span data-ttu-id="bc553-207">2 Mei 2016</span><span class="sxs-lookup"><span data-stu-id="bc553-207">2 Mei 2016</span></span>
+- <span data-ttu-id="7db23-189">2 Dez 2016</span><span class="sxs-lookup"><span data-stu-id="7db23-189">2 Dez 2016</span></span>
     
-- <span data-ttu-id="bc553-208">02 mei 2016</span><span class="sxs-lookup"><span data-stu-id="bc553-208">02 mei 2016</span></span>
+- <span data-ttu-id="7db23-190">02 dez 2016</span><span class="sxs-lookup"><span data-stu-id="7db23-190">02 dez 2016</span></span>
     
-- <span data-ttu-id="bc553-209">2 Mei 16</span><span class="sxs-lookup"><span data-stu-id="bc553-209">2 Mei 16</span></span>
+- <span data-ttu-id="7db23-191">2 Dez 16</span><span class="sxs-lookup"><span data-stu-id="7db23-191">2 Dez 16</span></span>
     
-- <span data-ttu-id="bc553-210">2/12/2016</span><span class="sxs-lookup"><span data-stu-id="bc553-210">2/12/2016</span></span>
+- <span data-ttu-id="7db23-192">2/12/2016</span><span class="sxs-lookup"><span data-stu-id="7db23-192">2/12/2016</span></span>
     
-- <span data-ttu-id="bc553-211">02/12/16</span><span class="sxs-lookup"><span data-stu-id="bc553-211">02/12/16</span></span>
+- <span data-ttu-id="7db23-193">02/12/16</span><span class="sxs-lookup"><span data-stu-id="7db23-193">02/12/16</span></span>
     
-- <span data-ttu-id="bc553-212">2-Mei-2016</span><span class="sxs-lookup"><span data-stu-id="bc553-212">2-Mei-2016</span></span>
+- <span data-ttu-id="7db23-194">2-Dez-2016</span><span class="sxs-lookup"><span data-stu-id="7db23-194">2-Dez-2016</span></span>
     
-- <span data-ttu-id="bc553-213">2-12-16</span><span class="sxs-lookup"><span data-stu-id="bc553-213">2-12-16</span></span>
+- <span data-ttu-id="7db23-195">2-12-16</span><span class="sxs-lookup"><span data-stu-id="7db23-195">2-12-16</span></span>
     
-<span data-ttu-id="bc553-214">公認的月份名稱：</span><span class="sxs-lookup"><span data-stu-id="bc553-214">Accepted month names:</span></span>
+<span data-ttu-id="7db23-196">公認的月份名稱：</span><span class="sxs-lookup"><span data-stu-id="7db23-196">Accepted month names:</span></span>
   
-- <span data-ttu-id="bc553-215">荷蘭文</span><span class="sxs-lookup"><span data-stu-id="bc553-215">Dutch</span></span>
+- <span data-ttu-id="7db23-197">葡萄牙文</span><span class="sxs-lookup"><span data-stu-id="7db23-197">Portuguese</span></span>
     
-  - <span data-ttu-id="bc553-216">januari，februari，maart，四月，mei，juni，juli，augustus，九月份，ocktober，十月，11月，十二月</span><span class="sxs-lookup"><span data-stu-id="bc553-216">januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December</span></span>
+  - <span data-ttu-id="7db23-198">janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro</span><span class="sxs-lookup"><span data-stu-id="7db23-198">janeiro, fevereiro, março, marco, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro</span></span>
     
-  - <span data-ttu-id="bc553-217">jan jan maart apr mei 年9月8日9月 okt 年11月</span><span class="sxs-lookup"><span data-stu-id="bc553-217">jan feb maart apr mei jun jul aug sep sept oct okt nov dec</span></span>
+  - <span data-ttu-id="7db23-199">jan fev mar abr mai 06 年6月1日，設定為11月 dez</span><span class="sxs-lookup"><span data-stu-id="7db23-199">jan fev mar abr mai jun jul ago set out nov dez</span></span>
     
-## <a name="func_expiration_date"></a><span data-ttu-id="bc553-218">Func_expiration_date</span><span class="sxs-lookup"><span data-stu-id="bc553-218">Func_expiration_date</span></span>
+## <a name="func_eu_date2-deprecated"></a><span data-ttu-id="7db23-200">Func_eu_date2 （已過時）</span><span class="sxs-lookup"><span data-stu-id="7db23-200">Func_eu_date2 (deprecated)</span></span>
 
-<span data-ttu-id="bc553-219">此函數會以信用卡和轉帳卡所使用的格式來尋找日期，而不是以月為單位來扣除天數。</span><span class="sxs-lookup"><span data-stu-id="bc553-219">This function looks for a date in the formats commonly used by credit and debit cards, which exclude days in favor of months.</span></span> <span data-ttu-id="bc553-220">此函數會比對「月/年」、「月-年」、「[month name] 年] 和「[month 簡寫] 年 "格式的日期。</span><span class="sxs-lookup"><span data-stu-id="bc553-220">This function will match dates in format of "month/year", "month-year", "[month name] year", and "[month abbreviation] year".</span></span> <span data-ttu-id="bc553-221">月份的名稱或縮寫不區分大小寫。</span><span class="sxs-lookup"><span data-stu-id="bc553-221">The names or abbreviations of months are not case sensitive.</span></span>
+> [!NOTE]
+> <span data-ttu-id="7db23-201">此函數已過時，因為它只支援荷蘭月份名稱，而這些名稱現在已包含在 `Func_eu_date` 上述函數中。</span><span class="sxs-lookup"><span data-stu-id="7db23-201">This function is deprecated because it supports only Dutch month names, which are now included in the  `Func_eu_date` function above.</span></span> 
   
-<span data-ttu-id="bc553-222">範例:</span><span class="sxs-lookup"><span data-stu-id="bc553-222">Examples:</span></span>
+<span data-ttu-id="7db23-202">此函數會以荷蘭文中常用的格式來尋找日期。</span><span class="sxs-lookup"><span data-stu-id="7db23-202">This function looks for a date in the format commonly used in Dutch.</span></span> <span data-ttu-id="7db23-203">此函數的格式與 `Func_eu_date` 使用的語言不同。</span><span class="sxs-lookup"><span data-stu-id="7db23-203">The format for this function is the same as  `Func_eu_date`, differing only in the language used.</span></span>
   
-- <span data-ttu-id="bc553-223">MM/YY--例如01/11 或1/11</span><span class="sxs-lookup"><span data-stu-id="bc553-223">MM/YY -- for example, 01/11 or 1/11</span></span>
-    
-- <span data-ttu-id="bc553-224">MM/YYYY--例如01/2011 或1/2011</span><span class="sxs-lookup"><span data-stu-id="bc553-224">MM/YYYY -- for example, 01/2011 or 1/2011</span></span>
-    
-- <span data-ttu-id="bc553-225">MM-YY--例如01-22 或1-11</span><span class="sxs-lookup"><span data-stu-id="bc553-225">MM-YY -- for example, 01-22 or 1-11</span></span>
-    
-- <span data-ttu-id="bc553-226">MM-YYYY--例如01-2000 或1-2000</span><span class="sxs-lookup"><span data-stu-id="bc553-226">MM-YYYY -- for example, 01-2000 or 1-2000</span></span>
-    
-<span data-ttu-id="bc553-227">下列格式支援 YY 或 YYYY：</span><span class="sxs-lookup"><span data-stu-id="bc553-227">The following formats support YY or YYYY:</span></span>
+<span data-ttu-id="7db23-204">範例：</span><span class="sxs-lookup"><span data-stu-id="7db23-204">Examples:</span></span>
   
-- <span data-ttu-id="bc553-228">例如，Month-YYYY--。Jan-2010 或一月-2010 或 Jan-10 或年1月</span><span class="sxs-lookup"><span data-stu-id="bc553-228">Month-YYYY -- for example, .Jan-2010 or january-2010 or Jan-10 or january-10</span></span>
+- <span data-ttu-id="7db23-205">2 Mei 2016</span><span class="sxs-lookup"><span data-stu-id="7db23-205">2 Mei 2016</span></span>
     
-- <span data-ttu-id="bc553-229">Month YYYY--例如，"一月 2010" 或 "Jan 2010" 或 "Jan 10" 或 "Jan 10"</span><span class="sxs-lookup"><span data-stu-id="bc553-229">Month YYYY -- for example, 'january 2010' or 'Jan 2010' or 'january 10' or 'Jan 10'</span></span>
+- <span data-ttu-id="7db23-206">02 mei 2016</span><span class="sxs-lookup"><span data-stu-id="7db23-206">02 mei 2016</span></span>
     
-- <span data-ttu-id="bc553-230">MonthYYYY--例如 "january2010" 或 "Jan2010" 或 "january10" 或 "Jan10"</span><span class="sxs-lookup"><span data-stu-id="bc553-230">MonthYYYY -- for example, 'january2010' or 'Jan2010' or 'january10' or 'Jan10'</span></span>
+- <span data-ttu-id="7db23-207">2 Mei 16</span><span class="sxs-lookup"><span data-stu-id="7db23-207">2 Mei 16</span></span>
     
-- <span data-ttu-id="bc553-231">Month/YYYY--例如，' 一月份/2010 ' 或 ' Jan/2010 ' or "Jan/10" 或 "Jan/10"</span><span class="sxs-lookup"><span data-stu-id="bc553-231">Month/YYYY -- for example, 'january/2010' or 'Jan/2010' or 'january/10' or 'Jan/10'</span></span>
+- <span data-ttu-id="7db23-208">2/12/2016</span><span class="sxs-lookup"><span data-stu-id="7db23-208">2/12/2016</span></span>
     
-<span data-ttu-id="bc553-232">公認的月份名稱：</span><span class="sxs-lookup"><span data-stu-id="bc553-232">Accepted month names:</span></span>
+- <span data-ttu-id="7db23-209">02/12/16</span><span class="sxs-lookup"><span data-stu-id="7db23-209">02/12/16</span></span>
+    
+- <span data-ttu-id="7db23-210">2-Mei-2016</span><span class="sxs-lookup"><span data-stu-id="7db23-210">2-Mei-2016</span></span>
+    
+- <span data-ttu-id="7db23-211">2-12-16</span><span class="sxs-lookup"><span data-stu-id="7db23-211">2-12-16</span></span>
+    
+<span data-ttu-id="7db23-212">公認的月份名稱：</span><span class="sxs-lookup"><span data-stu-id="7db23-212">Accepted month names:</span></span>
   
-- <span data-ttu-id="bc553-233">英文</span><span class="sxs-lookup"><span data-stu-id="bc553-233">English</span></span>
+- <span data-ttu-id="7db23-213">荷蘭文</span><span class="sxs-lookup"><span data-stu-id="7db23-213">Dutch</span></span>
     
-  - <span data-ttu-id="bc553-234">一月份、二月份、三月份、四月、六月、六月、十二月、十二月、十二月、十月、十二月、十二月</span><span class="sxs-lookup"><span data-stu-id="bc553-234">January, February, march, April, may, June, July, August, September, October, November, December</span></span>
+  - <span data-ttu-id="7db23-214">januari，februari，maart，四月，mei，juni，juli，augustus，九月份，ocktober，十月，11月，十二月</span><span class="sxs-lookup"><span data-stu-id="7db23-214">januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December</span></span>
     
-  - <span data-ttu-id="bc553-235">Jan 02 月4月8日在十二月</span><span class="sxs-lookup"><span data-stu-id="bc553-235">Jan Feb Mar Apr May June July Aug Sept Oct Nov Dec</span></span>
+  - <span data-ttu-id="7db23-215">jan jan maart apr mei 年9月8日9月 okt 年11月</span><span class="sxs-lookup"><span data-stu-id="7db23-215">jan feb maart apr mei jun jul aug sep sept oct okt nov dec</span></span>
     
-## <a name="func_us_address"></a><span data-ttu-id="bc553-236">Func_us_address</span><span class="sxs-lookup"><span data-stu-id="bc553-236">Func_us_address</span></span>
+## <a name="func_expiration_date"></a><span data-ttu-id="7db23-216">Func_expiration_date</span><span class="sxs-lookup"><span data-stu-id="7db23-216">Func_expiration_date</span></span>
 
-<span data-ttu-id="bc553-237">此函數會尋找美國的狀態名稱或郵政縮寫後接有效的郵遞區號，就像在通信地址中使用。</span><span class="sxs-lookup"><span data-stu-id="bc553-237">This function looks for a U.S. state name or postal abbreviation followed by a valid zip code, just as they are used in postal addresses.</span></span> <span data-ttu-id="bc553-238">郵遞區號必須是與美國州名稱或縮略語相關聯的正確郵遞區號之一。</span><span class="sxs-lookup"><span data-stu-id="bc553-238">The zip code must be one of the correct zip codes associated with the U.S. state name or abbreviation.</span></span> <span data-ttu-id="bc553-239">美國的狀態名稱及郵遞區號不能以標點符號或字母分隔。</span><span class="sxs-lookup"><span data-stu-id="bc553-239">The U.S. state name and zip code cannot be separated by punctuation or letters.</span></span>
+<span data-ttu-id="7db23-217">此函數會以信用卡和轉帳卡所使用的格式來尋找日期，而不是以月為單位來扣除天數。</span><span class="sxs-lookup"><span data-stu-id="7db23-217">This function looks for a date in the formats commonly used by credit and debit cards, which exclude days in favor of months.</span></span> <span data-ttu-id="7db23-218">此函數會比對「月/年」、「月-年」、「[month name] 年] 和「[month 簡寫] 年 "格式的日期。</span><span class="sxs-lookup"><span data-stu-id="7db23-218">This function will match dates in format of "month/year", "month-year", "[month name] year", and "[month abbreviation] year".</span></span> <span data-ttu-id="7db23-219">月份的名稱或縮寫不區分大小寫。</span><span class="sxs-lookup"><span data-stu-id="7db23-219">The names or abbreviations of months are not case sensitive.</span></span>
   
-<span data-ttu-id="bc553-240">範例:</span><span class="sxs-lookup"><span data-stu-id="bc553-240">Examples:</span></span>
+<span data-ttu-id="7db23-220">範例：</span><span class="sxs-lookup"><span data-stu-id="7db23-220">Examples:</span></span>
   
-- <span data-ttu-id="bc553-241">華盛頓98052</span><span class="sxs-lookup"><span data-stu-id="bc553-241">Washington 98052</span></span>
+- <span data-ttu-id="7db23-221">MM/YY--例如01/11 或1/11</span><span class="sxs-lookup"><span data-stu-id="7db23-221">MM/YY -- for example, 01/11 or 1/11</span></span>
     
-- <span data-ttu-id="bc553-242">華盛頓98052-9998</span><span class="sxs-lookup"><span data-stu-id="bc553-242">Washington 98052-9998</span></span>
+- <span data-ttu-id="7db23-222">MM/YYYY--例如01/2011 或1/2011</span><span class="sxs-lookup"><span data-stu-id="7db23-222">MM/YYYY -- for example, 01/2011 or 1/2011</span></span>
     
-- <span data-ttu-id="bc553-243">WA 98052</span><span class="sxs-lookup"><span data-stu-id="bc553-243">WA 98052</span></span>
+- <span data-ttu-id="7db23-223">MM-YY--例如01-22 或1-11</span><span class="sxs-lookup"><span data-stu-id="7db23-223">MM-YY -- for example, 01-22 or 1-11</span></span>
     
-- <span data-ttu-id="bc553-244">WA 98052-9998</span><span class="sxs-lookup"><span data-stu-id="bc553-244">WA 98052-9998</span></span>
+- <span data-ttu-id="7db23-224">MM-YYYY--例如01-2000 或1-2000</span><span class="sxs-lookup"><span data-stu-id="7db23-224">MM-YYYY -- for example, 01-2000 or 1-2000</span></span>
+    
+<span data-ttu-id="7db23-225">下列格式支援 YY 或 YYYY：</span><span class="sxs-lookup"><span data-stu-id="7db23-225">The following formats support YY or YYYY:</span></span>
+  
+- <span data-ttu-id="7db23-226">例如，Month-YYYY--。Jan-2010 或一月-2010 或 Jan-10 或年1月</span><span class="sxs-lookup"><span data-stu-id="7db23-226">Month-YYYY -- for example, .Jan-2010 or january-2010 or Jan-10 or january-10</span></span>
+    
+- <span data-ttu-id="7db23-227">Month YYYY--例如，"一月 2010" 或 "Jan 2010" 或 "Jan 10" 或 "Jan 10"</span><span class="sxs-lookup"><span data-stu-id="7db23-227">Month YYYY -- for example, 'january 2010' or 'Jan 2010' or 'january 10' or 'Jan 10'</span></span>
+    
+- <span data-ttu-id="7db23-228">MonthYYYY--例如 "january2010" 或 "Jan2010" 或 "january10" 或 "Jan10"</span><span class="sxs-lookup"><span data-stu-id="7db23-228">MonthYYYY -- for example, 'january2010' or 'Jan2010' or 'january10' or 'Jan10'</span></span>
+    
+- <span data-ttu-id="7db23-229">Month/YYYY--例如，' 一月份/2010 ' 或 ' Jan/2010 ' or "Jan/10" 或 "Jan/10"</span><span class="sxs-lookup"><span data-stu-id="7db23-229">Month/YYYY -- for example, 'january/2010' or 'Jan/2010' or 'january/10' or 'Jan/10'</span></span>
+    
+<span data-ttu-id="7db23-230">公認的月份名稱：</span><span class="sxs-lookup"><span data-stu-id="7db23-230">Accepted month names:</span></span>
+  
+- <span data-ttu-id="7db23-231">English</span><span class="sxs-lookup"><span data-stu-id="7db23-231">English</span></span>
+    
+  - <span data-ttu-id="7db23-232">一月份、二月份、三月份、四月、六月、六月、十二月、十二月、十二月、十月、十二月、十二月</span><span class="sxs-lookup"><span data-stu-id="7db23-232">January, February, march, April, may, June, July, August, September, October, November, December</span></span>
+    
+  - <span data-ttu-id="7db23-233">Jan 02 月4月8日在十二月</span><span class="sxs-lookup"><span data-stu-id="7db23-233">Jan Feb Mar Apr May June July Aug Sept Oct Nov Dec</span></span>
+    
+## <a name="func_us_address"></a><span data-ttu-id="7db23-234">Func_us_address</span><span class="sxs-lookup"><span data-stu-id="7db23-234">Func_us_address</span></span>
+
+<span data-ttu-id="7db23-235">此函數會尋找美國的狀態名稱或郵政縮寫後接有效的郵遞區號，就像在通信地址中使用。</span><span class="sxs-lookup"><span data-stu-id="7db23-235">This function looks for a U.S. state name or postal abbreviation followed by a valid zip code, just as they are used in postal addresses.</span></span> <span data-ttu-id="7db23-236">郵遞區號必須是與美國州名稱或縮略語相關聯的正確郵遞區號之一。</span><span class="sxs-lookup"><span data-stu-id="7db23-236">The zip code must be one of the correct zip codes associated with the U.S. state name or abbreviation.</span></span> <span data-ttu-id="7db23-237">美國的狀態名稱及郵遞區號不能以標點符號或字母分隔。</span><span class="sxs-lookup"><span data-stu-id="7db23-237">The U.S. state name and zip code cannot be separated by punctuation or letters.</span></span>
+  
+<span data-ttu-id="7db23-238">範例：</span><span class="sxs-lookup"><span data-stu-id="7db23-238">Examples:</span></span>
+  
+- <span data-ttu-id="7db23-239">華盛頓98052</span><span class="sxs-lookup"><span data-stu-id="7db23-239">Washington 98052</span></span>
+    
+- <span data-ttu-id="7db23-240">華盛頓98052-9998</span><span class="sxs-lookup"><span data-stu-id="7db23-240">Washington 98052-9998</span></span>
+    
+- <span data-ttu-id="7db23-241">WA 98052</span><span class="sxs-lookup"><span data-stu-id="7db23-241">WA 98052</span></span>
+    
+- <span data-ttu-id="7db23-242">WA 98052-9998</span><span class="sxs-lookup"><span data-stu-id="7db23-242">WA 98052-9998</span></span>
     
 
