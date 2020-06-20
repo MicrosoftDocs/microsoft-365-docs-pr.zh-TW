@@ -13,15 +13,14 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: 設定連接器，將 Facebook 資料匯入 Microsoft 365，讓您可以使用合規性功能，例如法律封存、內容搜尋和保留原則。
-ms.openlocfilehash: e35e4cb8e0f16d3cc95b3f21ce6648bbe087733d
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.custom: seo-marvel-apr2020
+description: 瞭解如何設定 & 使用 Microsoft 365 規範中心內的連接器，將 & 封存資料從 Facebook 商務版頁面匯入至 Microsoft 365。
+ms.openlocfilehash: 79f3c3914476a20c07a1c3ab4418b918c8f22c3e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210525"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818462"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>設定連接器以封存 Facebook 資料（預覽）
 

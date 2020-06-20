@@ -17,13 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: 使用規範界限在組織內建立邏輯界限，以控制 eDiscovery 管理員可搜尋的使用者內容位置。 規範界限使用「搜尋許可權篩選」（也稱為「合規性安全性篩選」）控制特定使用者可搜尋的信箱、SharePoint 網站及 OneDrive 帳戶。
-ms.openlocfilehash: da03f60be55b0ac6438adcc1648231e5b9798e56
-ms.sourcegitcommit: 22e9f54d0d3ead2be91a38d49325308c70f43f90
+description: 瞭解如何使用規範界限來建立邏輯界限，以控制 eDiscovery 管理員可在 Microsoft 365 中搜尋的使用者內容位置。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5d0c1741d46882c3ad623aa1d0529939ede3687f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44262566"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819203"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
@@ -264,11 +265,11 @@ EDiscovery 管理員可以將參數新增至其搜尋查詢，將搜尋限制在
   
  **若在搜尋許可權篩選中做為符合性屬性的屬性值已變更，會發生什麼事？**
   
-搜尋許可權篩選會花三天的時間，以在篩選中所使用之屬性的值變更時，強制執行規范界限。 例如，在 Contoso 案例中，第四個咖啡機關中的使用者會轉接至 Coho Winery agency。 因此，使用者物件上的**部門**屬性值會從*FourthCoffee*變更為*CohoWinery*。 在此情況下，第四個咖啡 eDiscovery 和投資者會在屬性變更後的三天內，取得該使用者的搜尋結果。 同樣地，在 Coho Winery eDiscovery 管理員和調查人員取得使用者的搜尋結果之前，最多需要花三天。 
+搜尋許可權篩選會花三天的時間，以在篩選中所使用之屬性的值變更時，強制執行規范界限。 例如，在 Contoso 案例中，第四個咖啡機關中的使用者會轉接至 Coho Winery agency。 因此，使用者物件上的**部門**屬性值會從*FourthCoffee*變更為*CohoWinery*。 在此情況下，第四個咖啡 eDiscovery 和投資者會在屬性變更後的三天內，取得該使用者的搜尋結果。 同樣地，在 Coho Winery eDiscovery 管理員和調查人員取得使用者的搜尋結果之前，最多需要花三天。
   
  **EDiscovery 管理員可以從兩個不同的規範界限查看內容嗎？**
   
-是。 若要這樣做，可以將使用者新增至雙方都可以看見的角色群組。
+是的，您可以在搜尋 Exchange 信箱時，將 eDiscovery 管理員新增至雙方可看到這兩個機構的角色群組進行。 不過，當搜尋 SharePoint 網站和 OneDrive 帳戶時，只有當機構位於相同地區或地理位置時，eDiscovery 管理員才能搜尋不同規範界限中的內容。 **附注：** 這種網站限制不適用於「高級 eDiscovery」，因為搜尋 SharePoint 中的內容，而且 OneDrive 並未依地理位置系結。
   
  **搜尋許可權篩選器適用于 eDiscovery 案例保留、Microsoft 365 保留原則或 DLP？**
   

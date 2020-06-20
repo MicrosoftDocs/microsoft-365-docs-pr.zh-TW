@@ -15,23 +15,25 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 識別敏感資訊有時會需要尋找關鍵字，尤其在識別泛用內容 (例如醫療保健相關的通訊) 或不適當或明確的語言時更是需要。儘管您可以建立敏感資訊類型的關鍵字清單，但關鍵字清單的大小會受到限制，而且需要修改 XML 才能建立或編輯它們。關鍵字字典可提供更簡單的關鍵字管理以及更為龐大的關鍵字規模，每部字典最多可支援 100,000 個字詞。
-ms.openlocfilehash: 67263c854f764be42d97061632567ec1b25214b4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解在 Office 365 安全性 & 規範中心建立關鍵字字典的基本步驟。
+ms.openlocfilehash: 38a92aaf7e72ab79243c547ff48fa156e26b6ee6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636461"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818052"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
-資料遺失防護（DLP）可以識別、監視和保護您的敏感資訊。識別敏感資訊有時需要尋找關鍵字，尤其是在識別一般內容時（例如醫療保健相關的通訊）或不適當或明確的語言。雖然您可以在機密資訊類型中建立關鍵字清單，但關鍵字清單大小有限，需要修改 XML 以建立或編輯。關鍵字字典可提供更簡單的關鍵字管理，並以更大的比例來支援每個字典的100000字詞。
+資料遺失防護（DLP）可以識別、監視和保護您的敏感資訊。 識別敏感資訊有時需要尋找關鍵字，尤其是在識別一般內容時（例如醫療保健相關的通訊）或不適當或明確的語言。 雖然您可以在機密資訊類型中建立關鍵字清單，但關鍵字清單大小有限，需要修改 XML 以建立或編輯。 關鍵字字典可提供更簡單的關鍵字管理，並以更大的比例來支援每個字典的100000字詞。
   
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>建立關鍵字字典的基本步驟
 
-字典的關鍵字可以來自各種來源，最常來自在服務中或是透過 PowerShell Cmdlet 匯入的檔案 (例如 .csv 或 .txt 清單)、來自您直接在 PowerShell Cmdlet 中輸入的清單，或來自現有的字典。當建立關鍵字字典時，您會依照相同的核心步驟：
+The keywords for your dictionary could come from a variety of sources, most commonly from a file (such as a .csv or .txt list) imported in the service or by PowerShell cmdlet, from a list you enter directly in the PowerShell cmdlet, or from an existing dictionary. When you create a keyword dictionary, you follow the same core steps:
   
-1. 使用 [**安全性 & 規範中心**][https://protection.office.com](https://protection.office.com)（）或 [連線至**安全性&amp;與合規性中心] PowerShell**。
+1. 使用 [**安全性 & 規範中心** [https://protection.office.com](https://protection.office.com) ] （）或 [連線至**安全性與 &amp; 合規性中心] PowerShell**。
     
 2. **定義或載入預定來源中的關鍵字**。 嚮導和指令程式都接受以逗號分隔的關鍵字清單，以建立自訂的關鍵字字典，所以此步驟會稍有不同，具體取決於關鍵字的來源位置。 一旦載入，就會將它們編碼並轉換為位元組陣列，然後再匯入它們。
     
@@ -41,7 +43,7 @@ ms.locfileid: "43636461"
 
 請使用下列步驟來建立和匯入自訂字典的關鍵字：
 
-1. 連接至安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）。
+1. 連接至安全性 & 規範中心（ [https://protection.office.com](https://protection.office.com) ）。
 
 2. 瀏覽至 [分類] > [敏感性資訊類型]****。
 
@@ -67,11 +69,11 @@ ms.locfileid: "43636461"
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 從檔案建立關鍵字字典
 
-通常當您需要建立大型詞典時，會使用來自檔案或從其他來源匯出的清單中的關鍵字。 在此情況下，您會在外部電子郵件中建立包含不適當語言的關鍵字字典。 您必須先連線[至 [ &amp;安全性與合規性中心] PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+Often when you need to create a large dictionary, it's to use keywords from a file or a list exported from some other source. In this case, you'll create a keyword dictionary containing a list of inappropriate language to screen in external email. You must first [connect to Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 1. 將關鍵字複製到文字檔案，並確定每個關鍵字位於個別行。
     
-2. 使用 Unicode 編碼來儲存檔案。在 [記事本] \> [另存新檔]**** \> [編碼]**** \> [Unicode]**** 中。
+2. Save the text file with Unicode encoding. In Notepad \> **Save As** \> **Encoding** \> **Unicode**.
     
 3. 執行下列 Cmdlet 將檔案讀成變數：
     
@@ -97,19 +99,19 @@ ms.locfileid: "43636461"
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-列印`$dict`會顯示不同的變數。 關鍵字本身會儲存在後端的物件中，但`$dict.KeywordDictionary`會包含它們的字串標記法，以供您用來修改字典。 
+列印 `$dict` 會顯示不同的變數。 關鍵字本身會儲存在後端的物件中，但 `$dict.KeywordDictionary` 會包含它們的字串標記法，以供您用來修改字典。 
 
-修改字典之前，您必須使用`.split(',')`方法，將字詞的字串轉換回陣列。 然後，您會使用`.trim()`方法清除關鍵字之間不想要的空格，只保留要使用的關鍵字。 
+修改字典之前，您必須使用方法，將字詞的字串轉換回陣列 `.split(',')` 。 然後，您會使用方法清除關鍵字之間不想要的空格 `.trim()` ，只保留要使用的關鍵字。 
   
 ```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
 ```
 
-現在您將從字典中移除一些字詞。因為範例字典只有幾個關鍵字，所以您可以輕鬆地略過移除，直接匯出字典，並在 [記事本] 中編輯該字典，但字典通常包含大量文字，因此您首先將學習此方法，以在 PowerShell 中輕鬆地編輯它們。
+Now you'll remove some terms from the dictionary. Because the example dictionary has only a few keywords, you could just as easily skip to exporting the dictionary and editing it in Notepad, but dictionaries generally contain a large amount of text, so you'll first learn this way to edit them easily in PowerShell.
   
-在最後一個步驟中，您已將關鍵字儲存到陣列。有幾種方法可[從陣列中移除字詞](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)) (英文)，但直接方法為建立您要從字典中移除之字詞的陣列，然後只將不在要移除之字詞清單中的字典字詞複製到其中。
+In the last step, you saved the keywords to an array. There are several ways to [remove items from an array](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)), but as a straightforward approach, you'll create an array of the terms you want to remove from the dictionary, and then copy only the dictionary terms to it that aren't in the list of terms to remove.
   
-執行命令 `$terms` 來顯示目前的字詞清單。命令的輸出看起來像這樣： 
+Run the command  `$terms` to show the current list of terms. The output of the command looks like this: 
   
 `aarskog's syndrome`
 `abandonment`
@@ -142,7 +144,7 @@ $termsToRemove = @('abandonment', 'ablatio')
 $updatedTerms = $terms | Where-Object{ $_ -notin $termsToRemove }
 ```
 
-執行命令 `$updatedTerms` 來顯示已更新的字詞清單。命令的輸出看起來像這樣 (已移除指定的字詞)： 
+Run the command  `$updatedTerms` to show the updated list of terms. The output of the command looks like this (the specified terms have been removed): 
   
 `aarskog's syndrome`
 `abasia`
@@ -170,13 +172,13 @@ Save the dictionary locally by running the following:
 Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 ```
 
-現在只需開啟檔案、新增其他字詞，並以 Unicode 編碼 (UTF-16) 儲存。現在，您將上傳更新的字詞並適當地更新字典。
+Now simply open the file, add your additional terms, and save with Unicode encoding (UTF-16). Now you'll upload the updated terms and update the dictionary in place.
   
 ```powershell
 PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "C:myPath\terms.txt" -Encoding Byte -ReadCount 0)
 ```
 
-現在您已適當地更新字典。請注意，`Identity` 欄位會採用字典的名稱。如果您也想要使用 `set-` Cmdlet 來變更字典的名稱，只需將 `-Name` 參數與新的字典名稱新增至上述的命令即可。 
+Now the dictionary has been updated in place. Note that the  `Identity` field takes the name of the dictionary. If you wanted to also change the name of your dictionary using the  `set-` cmdlet, you would just need to add the  `-Name` parameter to what's above with your new dictionary name. 
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>使用自訂敏感資訊類型和 DLP 原則中的關鍵字字典
 
@@ -208,7 +210,7 @@ Get-DlpKeywordDictionary -Name "Diseases"
 `ObjectState       : Unchanged`
 
 
-將身分識別貼入您的自訂敏感資訊類型的 XML 並上傳它。現在字典將出現在敏感資訊類型的清單中，而且您可以在原則中直接使用它，同時指定需要比對多少個關鍵字。
+Paste the identity into your custom sensitive information type's XML and upload it. Now your dictionary will appear in your list of sensitive information types and you can use it right in your policy, specifying how many keywords are required to match.
   
 ```xml
 <Entity id="d333c6c2-5f4c-4131-9433-db3ef72a89e8" patternsProximity="300" recommendedConfidence="85">

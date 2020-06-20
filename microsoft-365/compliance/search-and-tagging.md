@@ -1,5 +1,5 @@
 ---
-title: 搜尋與標記
+title: 搜尋及標記
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -13,71 +13,72 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
-description: 進階 eDiscovery 中搜尋和標記模組可讓您搜尋、 預覽，及組織您的案例中的文件。 目前，此模組處於 beta 版。
-ms.openlocfilehash: 012154e117e0d2b800f0e1077d43f2e1c1d10b0e
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+description: 在 [Advanced eDiscovery] 中，[搜尋] 和 [標記] 模組可讓您在案例中搜尋、預覽及組織檔。 此模組目前已在 Beta 中。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: eba95f4832e674bae0a26d3fa8466b0118a9715d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42557803"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818892"
 ---
-# <a name="search-and-tagging"></a>搜尋與標記
+# <a name="search-and-tagging"></a>搜尋及標記
 
-進階 eDiscovery 中搜尋和標記模組可讓您搜尋、 預覽，及組織您的案例中的文件。 目前，此模組處於 beta 版。 搜尋及標記的簡短示範，請參閱[管理您的資料與進階電子文件](https://www.youtube.com/watch?v=VaPYL3DHP6I)影片。
+在 [Advanced eDiscovery] 中，[搜尋] 和 [標記] 模組可讓您在案例中搜尋、預覽及組織檔。 此模組目前已在 Beta 中。 如需搜尋及標記的簡短示範，請參閱[使用高級 eDiscovery 影片管理您的資料](https://www.youtube.com/watch?v=VaPYL3DHP6I)。
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-## <a name="search-the-documents-in-your-case"></a>搜尋您的案例中的文件
+## <a name="search-the-documents-in-your-case"></a>搜尋您案例中的檔
 
-在處理進階電子文件探索案例中的文件 （並選擇性地執行分析或相關性模組後），您可以使用標記與搜尋來搜尋文件並再將它們組織藉由套用特定案例的標記 （也稱為標籤）。 您可以定義搜尋查詢中使用提供的條件卡或利用 KQL 類似的查詢語言中的關鍵字條件卡片。 常見的 KQL 語法，例如 AND、 OR、 NOT、 NEAR(n) 且支援，以及行尾的多重字元萬用字元 （*）。 
+在高級 eDiscovery 案例中處理檔（並選擇性地執行 [分析] 或 [相關性] 模組）之後，您可以使用搜尋及加上標記來搜尋檔，然後套用案例特有的標記（也稱為標籤）加以組織。 您可以使用所提供的條件卡，或是使用關鍵字條件卡中的類似 KQL 的查詢語言來定義搜尋查詢。 常見的 KQL 語法，例如 AND、OR、NOT 和 NEAR （n）都支援，以及尾隨多字元萬用字元（*）。 
 
-下表列出您可以搜尋使用 KQL 關鍵字查詢的屬性。 或者，您可以使用進階 eDiscovery 搜尋工具中的條件卡片，若要新增至搜尋查詢的條件 （選取的內容）。
+下表列出您可以使用 KQL 關鍵字查詢進行搜尋的屬性。 或者，您也可以在高級 eDiscovery 搜尋工具中使用條件卡，將條件（選取的屬性）新增至搜尋查詢。
 
 |**屬性**|**描述**|
 |:-----|:-----|
-|**caselabel** <br/> | 標記的名稱建立/時套用標記的文件。 <br/> |
-|**custodian** <br/> | 相關聯的文件; custodian受到限制。 <br/> |
-|**date** <br/> | 傳送電子郵件; 日期網站文件的修改的日期。 <br/> |
-|**fileid** <br/> | 在 case 檔案識別碼。 <br/> |
-|**filetype** <br/> | 原生檔案的副檔名。 <br/> |
-|**fileclass** <br/> | 電子郵件、 文件或附件。 <br/> |
-|**senderauthor** <br/> | 寄件者的電子郵件;網站文件的作者。 <br/> |
-|**size** <br/> | Kb 的檔案大小。 <br/> |
-|**subjecttitle** <br/> | 電子郵件; 主旨網站文件的標題。 <br/> |
-|**bcc** <br/> | 電子郵件的密件副本] 欄位。 <br/> |
-|**cc** <br/> | 電子郵件 [副本] 欄位。 <br/> |
-|**參與者** <br/> | 電子郵件執行緒，包括缺少連結中的所有參與者的電子郵件地址。 <br/> |
-|**接收** <br/> | 已收到一封電子郵件的日期。 <br/> |
-|**收件者** <br/> | 收件者的電子郵件，包含在收件者]、 [副本] 或 [密件副本] 欄位。 <br/> |
+|**caselabel** <br/> | 標記檔時所建立/套用的標記名稱。 <br/> |
+|**託管** <br/> | 與檔相關聯的保管人;受到限制。 <br/> |
+|**date** <br/> | 電子郵件的傳送日期;網站檔的修改日期。 <br/> |
+|**fileid** <br/> | 案例中的檔案識別碼。 <br/> |
+|**類型** <br/> | 本機副檔名。 <br/> |
+|**fileclass** <br/> | 電子郵件、檔或附件。 <br/> |
+|**senderauthor** <br/> | 電子郵件的寄件者;網站檔的作者。 <br/> |
+|**size** <br/> | 檔案的大小（以 KB 為單位）。 <br/> |
+|**subjecttitle** <br/> | 電子郵件的主旨;網站檔的標題。 <br/> |
+|**bcc** <br/> | 電子郵件的 [密件副本] 欄位。 <br/> |
+|**cc** <br/> | 電子郵件的 [副本] 欄位。 <br/> |
+|**參與者** <br/> | 電子郵件線索中所有參與者的電子郵件地址，包含缺失的連結。 <br/> |
+|**收到** <br/> | 接收電子郵件的日期。 <br/> |
+|**收件者** <br/> | 電子郵件的收件者，包含在 [收件者]、[抄送] 或 [密件副本] 欄位。 <br/> |
 |**sender** <br/> | 電子郵件的寄件者。 <br/> |
-|**lastmodifieddate** <br/> | 上次修改日期的網站文件。 <br/> |
-|**傳送** <br/> | 電子郵件傳送的日期。 <br/> |
-|**to** <br/> | 電子郵件] 欄位中所列的收件者。 <br/> |
-|**作者** <br/> | 網站文件的作者。 <br/> |
-|**title** <br/> | 網站文件的標題。 <br/> |
-|**dominanttheme**\* <br/> | 項目與基準佈景主題。 <br/> |
-|**themeslist**\* <br/> | 項目相關聯的佈景主題。 <br/> |
-|**readpercentile_ [issuenum]**\*\* <br/> | 讀取百分位數的項目，如 [issuenum] 所定義的問題。 <br/> |
-|**relevancescore_ [issuenum]**\*\* <br/> | 項目，由 [issuenum] 定義問題相關性分數。 <br/> |
-|**relevancetag_ [tagname]**\*\* <br/> | 如果項目有已手動標示相關性，[tagname] 所定義的標籤。 <br/> |
+|**lastmodifieddate** <br/> | 網站檔的上次修改日期。 <br/> |
+|**送** <br/> | 電子郵件的傳送日期。 <br/> |
+|**to** <br/> | 電子郵件的 [收件者] 欄位中所列的收件者。 <br/> |
+|**作者** <br/> | 網站檔的作者。 <br/> |
+|**title** <br/> | 網站檔的標題。 <br/> |
+|**dominanttheme**\* <br/> | 專案的主要主題。 <br/> |
+|**themeslist**\* <br/> | 與專案相關聯的主題。 <br/> |
+|**readpercentile_ [issuenum]**\*\* <br/> | 針對 [issuenum] 所定義之問題的專案讀取百分比。 <br/> |
+|**relevancescore_ [issuenum]**\*\* <br/> | 專案的相關性分數，針對 [issuenum] 所定義的問題。 <br/> |
+|**relevancetag_ [tagname]**\*\* <br/> | 如果已手動標示相關專案的相關專案，則 [標記] 所定義的標籤。 <br/> |
 |||
 
-\*如果已經執行 [佈景主題模組才可用。
+\*只有在已執行 Themes 模組時才可用。
 
-\*\*如果已經執行 [相關性模組才可用。
+\*\*只有在已執行相關性模組時才可用。
 
-或者，您可以使用進階 eDiscovery 搜尋工具中的條件卡片，新增至搜尋查詢的條件 （選取的內容）。 下列螢幕擷取畫面顯示可以新增至查詢的條件。 [**群組**] 欄會指出屬性是否適用於電子郵件、 網站文件，或兩者 （由*常見*的值來表示）。 此資料行也會識別之後執行相關性模組都是可用的可搜尋屬性。
+或者，您可以使用高級 eDiscovery 搜尋工具中的條件卡，將條件（選取的屬性）新增至搜尋查詢。 下列螢幕擷取畫面顯示可以新增至查詢的條件。 **Group**欄會指出屬性是套用至電子郵件、網站檔或兩者（以*共同*的值來表示）。 此欄位也會識別在您執行相關性模組後，可用的可搜尋屬性。
 
-![在 [進階電子文件探索搜尋工具中的搜尋條件](../media/AeDSearchConditions.png)
+![高級 eDiscovery 搜尋工具中的搜尋條件](../media/AeDSearchConditions.png)
 
 如需可搜尋屬性的詳細資訊，請參閱[關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
   
-## <a name="see-also"></a>請參閱
+## <a name="related-topics"></a>相關主題
 
-[進階電子文件 （傳統）](office-365-advanced-ediscovery.md)
+[進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
   
-[了解相關性評估](assessment-in-relevance-in-advanced-ediscovery.md)
+[瞭解相關評估](assessment-in-relevance-in-advanced-ediscovery.md)
   
 [標記與評估](tagging-and-assessment-in-advanced-ediscovery.md)
   
@@ -85,7 +86,7 @@ ms.locfileid: "42557803"
   
 [追蹤相關性分析](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[決定根據結果](decision-based-on-the-results-in-advanced-ediscovery.md)
+[根據結果決定](decision-based-on-the-results-in-advanced-ediscovery.md)
   
 [測試相關性分析](test-relevance-analysis-in-advanced-ediscovery.md)
 
