@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何為 Office 365 ATP 安全連結原則中的使用者群組，為使用者設定自訂封鎖 URLs，並不重新寫入 URLs 清單。
-ms.openlocfilehash: f4e7067c9edc9bbe2965311a7c203cb16f242f49
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 183291ef5b43248c5ff3d4e63b03a170416119bf
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617239"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702533"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>使用 ATP 安全連結設定自訂的 [不改寫 URLs] 清單
 
@@ -73,13 +73,15 @@ ATP 安全連結保護使用數個清單，包括貴組織的封鎖 URL 清單�
 
 - 您在「不要重寫」清單中指定的任何 URL，都會針對您指定的收件者，從 ATP 安全連結掃描中排除。
 
+- 考慮將常用的內部 URLs 新增至「不要重新寫入」清單，以提升使用者體驗。 例如，如果您有內部部署服務（例如商務用 Skype 或 Sharepoint），您可以將其 URLs 新增到清單中，以將其排除在掃描之外。
+
 - 如果您在「不要重寫」清單中已經有 URL 清單，請務必檢閱該清單，並視需要新增萬用字元。 例如，如果您的現有清單包含像是 `https://contoso.com/a` 的項目，而您想要在原則中包含類似 `https://contoso.com/a/b` 的子路徑，請在您的項目中新增萬用字元，使它看起來像是 `https://contoso.com/a/*`。
 
-- 當您為 ATP 安全連結原則指定「不要重寫」清單時，最多可以包含三個萬用字元星號 (\*)。 使用萬用字元（ \* ）以明確包含首碼或子域。 專案與不同之處在于 `contoso.com` `*.contoso.com/*` ，允許人員 `*.contoso.com/*` 造訪指定網域中的子域和路徑。
+- 當您為 ATP 安全連結原則指定「不要重新寫入」清單時，最多可以包含三個萬用字元（ \* ）。 萬用字元會明確包含首碼或子域。 例如，該專案與 `contoso.com` 不同的專案不同 `*.contoso.com/*` ，因為 `*.contoso.com/*` 允許人員造訪指定網域中的子域和路徑。
 
 下表列出您可以輸入的內容範例，以及這些項目的影響。
 
-|**範例項目**|**功能**|
+|範例項目|功能|
 |:-----|:-----|
 |`contoso.com`|讓收件者可以造訪 `https://contoso.com`，而不是子網域或路徑。|
 |`*.contoso.com/*`|可讓收件者造訪網域、子域及路徑，例如、 `https://www.contoso.com` 、 `https://www.contoso.com` `https://maps.contoso.com` 或 `https://www.contoso.com/a` 。 <br/><br/> 此專案原本很好 `*contoso.com*` ，因為它不包含可能的詐騙網站，例如 `https://www.falsecontoso.com` 或`https://www.false.contoso.completelyfalse.com`|

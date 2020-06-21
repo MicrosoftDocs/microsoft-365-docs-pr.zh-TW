@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 請遵循這些最佳做法，以進行獨立 Exchange Online Protection （EOP），以便自行設定以取得成功，並避免常見的設定錯誤。
-ms.openlocfilehash: a2ef5d20a79a15e4b1965d352ed0603ac0783121
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e5e87883e9c8aad21552ebf306a9716f14532884
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616719"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739082"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>設定獨立 EOP 的最佳作法
 
@@ -54,7 +54,7 @@ ms.locfileid: "44616719"
 |已驗證的 SMTP 提交|停用|停用|POP3 和 IMAP4 用戶端傳送電子郵件時，需要已驗證的用戶端 SMTP 提交（也稱為「用戶端 SMTP 提交」或「SMTP 驗證」）。|
 |EWS 至信箱的連接|停用|停用||
 |[PowerShell 連線能力](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|停用|停用|可用於信箱使用者或郵件使用者（ [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) Cmdlet 所傳回的使用者物件）。|
-|盡可能使用[哄騙智慧](learn-about-spoof-intelligence.md)白名單寄件者|是|是||
+|使用[哄騙情報](learn-about-spoof-intelligence.md)將寄件者新增至您的允許清單|是|是||
 |[以目錄為基礎的邊緣封鎖（DBEB）](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已啟用|已啟用|網欄位型別 = 權威性|
 |[設定所有系統管理員帳戶的多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|已啟用|已啟用||
 |

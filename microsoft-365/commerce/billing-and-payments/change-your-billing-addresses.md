@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 瞭解如何更新 Microsoft 365 for business 的帳單位址。 您也可以更新用來接收帳單通知的電子郵件地址。
-ms.openlocfilehash: 1985299d1ed4388ea8ffa0255935f1ee7c8ac3b7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6b2da1e947362db432bf036d9799ddef89526030
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401795"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817026"
 ---
 # <a name="change-your-billing-addresses"></a>變更帳單地址
 
@@ -49,7 +49,7 @@ ms.locfileid: "44401795"
 
 - **服務使用位址**使用服務的位址，通常與購買**人位址相同**。 如果貴組織擁有遠端使用者或多個辦公室，請使用您大多數使用者所在位置的地址。
 
-在大多數的情況下，這些地址完全相同。如果您需要變更一或多個地址，您可以這麼做。您也可以提供備用電子郵件地址接收帳單的通知，並變更其他系統管理員的備用電子郵件地址。
+In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
   
 ::: moniker range="o365-worldwide"
 
@@ -166,7 +166,7 @@ ms.locfileid: "44401795"
 
 根據預設，您組織的帳單通知會傳送至 Microsoft 電子郵件地址，以及組織中每個全域和計費系統管理員的備用電子郵件地址。 每個管理員可以更新設定檔資訊以變更他們的備用電子郵件地址。
   
-1. 使用您的公司或學校帳戶，以全域系統管理員身分登入 Microsoft 365。[瞭解如何登入](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用您的公司或學校帳戶，以全域系統管理員身分登入 Microsoft 365。[瞭解如何登入](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 選取**使用者圖示**，然後選取 [**我的帳戶**]。
   
