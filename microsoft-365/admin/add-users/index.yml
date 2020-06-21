@@ -12,12 +12,12 @@ metadata:
   ms.date: 01/27/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: ef25bfee5bd6d7a1ea498fd026e520859414bcf7
-  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+  ms.openlocfilehash: 25b100e8f685c94d3dccc290e8f80b25e24a6d9b
+  ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/27/2020
-  ms.locfileid: "44387102"
+  ms.lasthandoff: 06/18/2020
+  ms.locfileid: "44785469"
 landingContent:
 - title: 管理使用者
   linkLists:
@@ -37,8 +37,12 @@ landingContent:
       url: ../manage/assign-licenses-to-users.md
     - text: 移除使用者的授權
       url: ../manage/remove-licenses-from-users.md
+    - text: 來賓使用者
+      url: about-guest-users.md
     - text: 使用您的自訂網域
       url: ../email/change-email-address.md
+    - text: 將使用者升級到最新的應用程式
+      url: ../setup/upgrade-users-to-latest-office-client.md
 - title: 管理群組
   linkLists:
   - linkListType: how-to-guide
