@@ -19,73 +19,60 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 71e7b532e046015dd64e51fd422d276433d65b3a
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: f63c59403e84e79d1a4a5cf2b8a5544f5646781c
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280531"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773848"
 ---
-# <a name="microsoft-threat-protection-prerequisites"></a><span data-ttu-id="10119-104">Microsoft 威脅防護先決條件</span><span class="sxs-lookup"><span data-stu-id="10119-104">Microsoft Threat Protection prerequisites</span></span>
+# <a name="microsoft-threat-protection-prerequisites"></a><span data-ttu-id="ffc9f-104">Microsoft 威脅防護先決條件</span><span class="sxs-lookup"><span data-stu-id="ffc9f-104">Microsoft Threat Protection prerequisites</span></span>
 
-<span data-ttu-id="10119-105">**適用範圍：**</span><span class="sxs-lookup"><span data-stu-id="10119-105">**Applies to:**</span></span>
-- <span data-ttu-id="10119-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="10119-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="ffc9f-105">**適用範圍：**</span><span class="sxs-lookup"><span data-stu-id="ffc9f-105">**Applies to:**</span></span>
+- <span data-ttu-id="ffc9f-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="ffc9f-106">Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="10119-107">瞭解授權、硬體和軟體需求，以及其他設定，以提供和使用 Microsoft 威脅防護。</span><span class="sxs-lookup"><span data-stu-id="10119-107">Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft Threat Protection.</span></span>
+<span data-ttu-id="ffc9f-107">深入瞭解布建和使用[Microsoft 威脅防護](microsoft-threat-protection.md)的其他需求。</span><span class="sxs-lookup"><span data-stu-id="ffc9f-107">Learn about licensing and other requirements for provisioning and using [Microsoft Threat Protection](microsoft-threat-protection.md).</span></span>
 
-## <a name="licensing-requirements"></a><span data-ttu-id="10119-108">授權需求</span><span class="sxs-lookup"><span data-stu-id="10119-108">Licensing requirements</span></span>
+## <a name="licensing-requirements"></a><span data-ttu-id="ffc9f-108">授權需求</span><span class="sxs-lookup"><span data-stu-id="ffc9f-108">Licensing requirements</span></span>
+<span data-ttu-id="ffc9f-109">這些授權中的任何一種可讓您存取 microsoft 365 安全中心的 Microsoft 威脅防護功能，而不需要額外成本：</span><span class="sxs-lookup"><span data-stu-id="ffc9f-109">Any of these licenses gives you access to Microsoft Threat Protection features in Microsoft 365 security center without additional cost:</span></span>
 
->[!IMPORTANT]
-><span data-ttu-id="10119-109">從2020年5月12日開始，Microsoft 將逐步推出有關授權需求的新的優化體驗，並[開啟 Microsoft 威脅防護](mtp-enable.md)。</span><span class="sxs-lookup"><span data-stu-id="10119-109">Starting May 12, 2020, Microsoft will gradually roll out new, optimized experiences around licensing requirements and [turning on Microsoft Threat Protection](mtp-enable.md).</span></span> <span data-ttu-id="10119-110">在這段期間內，有些客戶會開始查看其門戶體驗的變更。</span><span class="sxs-lookup"><span data-stu-id="10119-110">For several weeks during this period, some customers will start to see changes to their portal experiences.</span></span> <span data-ttu-id="10119-111">有關全新經驗的資訊已在本文中標示**新經驗**。</span><span class="sxs-lookup"><span data-stu-id="10119-111">Information about the new experiences are marked **New experience** in this article.</span></span>
+- <span data-ttu-id="ffc9f-110">Microsoft 365 E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="ffc9f-110">Microsoft 365 E5 or A5</span></span>
+- <span data-ttu-id="ffc9f-111">Microsoft 365 E5 Security 或 A5 Security</span><span class="sxs-lookup"><span data-stu-id="ffc9f-111">Microsoft 365 E5 Security or A5 Security</span></span>
+- <span data-ttu-id="ffc9f-112">Windows 10 企業版 E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="ffc9f-112">Windows 10 Enterprise E5 or A5</span></span>
+- <span data-ttu-id="ffc9f-113">Enterprise 可移動性 + Security （EMS） E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="ffc9f-113">Enterprise Mobility + Security (EMS) E5 or A5</span></span> 
+- <span data-ttu-id="ffc9f-114">Office 365 E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="ffc9f-114">Office 365 E5 or A5</span></span>
+- <span data-ttu-id="ffc9f-115">Microsoft Defender 進階威脅防護</span><span class="sxs-lookup"><span data-stu-id="ffc9f-115">Microsoft Defender Advanced Threat Protection</span></span>
+- <span data-ttu-id="ffc9f-116">Azure 進階威脅防護</span><span class="sxs-lookup"><span data-stu-id="ffc9f-116">Azure Advanced Threat Protection</span></span> 
+- <span data-ttu-id="ffc9f-117">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="ffc9f-117">Microsoft Cloud App Security</span></span>
+- <span data-ttu-id="ffc9f-118">Office 365 高級威脅防護（方案2）</span><span class="sxs-lookup"><span data-stu-id="ffc9f-118">Office 365 Advanced Threat Protection (Plan 2)</span></span>
 
-<span data-ttu-id="10119-112">若要使用 Microsoft 威脅防護，您必須是單一授權或授權組合。</span><span class="sxs-lookup"><span data-stu-id="10119-112">To use Microsoft Threat Protection, you need either a single license or a combination of licenses.</span></span> <span data-ttu-id="10119-113">這些授權或授權組合可讓您存取 Microsoft 威脅防護功能，而不需要額外成本。</span><span class="sxs-lookup"><span data-stu-id="10119-113">These licenses or license combinations give you access to Microsoft Threat Protection features without additional cost.</span></span>
+> [!NOTE]
+> <span data-ttu-id="ffc9f-119">Office 365 的試用版授權目前不提供 Microsoft 威脅防護的存取權。</span><span class="sxs-lookup"><span data-stu-id="ffc9f-119">Trial licenses for Office 365 currently do not provide access to Microsoft Threat Protection.</span></span>
 
-### <a name="single-license"></a><span data-ttu-id="10119-114">單一授權</span><span class="sxs-lookup"><span data-stu-id="10119-114">Single license</span></span>
-<span data-ttu-id="10119-115">您可以使用下列*其中一個*授權：</span><span class="sxs-lookup"><span data-stu-id="10119-115">You can use *one* of the following licenses:</span></span>
+<span data-ttu-id="ffc9f-120">如需詳細資訊，請[查看 Microsoft 365 企業版服務方案](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。</span><span class="sxs-lookup"><span data-stu-id="ffc9f-120">For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).</span></span>
 
-- <span data-ttu-id="10119-116">Microsoft 365 E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="10119-116">Microsoft 365 E5 or A5</span></span>
-- <span data-ttu-id="10119-117">Microsoft 365 E5 Security 或 A5 Security</span><span class="sxs-lookup"><span data-stu-id="10119-117">Microsoft 365 E5 Security or A5 Security</span></span>
+> <span data-ttu-id="ffc9f-121">還沒有授權？</span><span class="sxs-lookup"><span data-stu-id="ffc9f-121">Don't have license yet?</span></span> [<span data-ttu-id="ffc9f-122">試用或購買 Microsoft 365 訂閱</span><span class="sxs-lookup"><span data-stu-id="ffc9f-122">Try or buy a Microsoft 365 subscription</span></span>](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
-### <a name="combination-of-licenses"></a><span data-ttu-id="10119-118">授權組合</span><span class="sxs-lookup"><span data-stu-id="10119-118">Combination of licenses</span></span>
-<span data-ttu-id="10119-119">您也可以在 Office 365、 *Enterprise 可移動性 + Security （EMS）* 和 Windows 中使用代表 E5 或 A5 訂閱的授權組合。</span><span class="sxs-lookup"><span data-stu-id="10119-119">You can also use a combination of licenses for E5 or A5 subscriptions to Office 365, *Enterprise Mobility + Security (EMS)*, and Windows.</span></span> <span data-ttu-id="10119-120">授權組合必須包含下列*所有*授權：</span><span class="sxs-lookup"><span data-stu-id="10119-120">The license combination must include *all* of these licenses:</span></span>
-
-- <span data-ttu-id="10119-121">Office 365 E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="10119-121">Office 365 E5 or A5</span></span>
-- <span data-ttu-id="10119-122">*企業行動 + 安全性（EMS）* E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="10119-122">*Enterprise Mobility + Security (EMS)* E5 or A5</span></span>
-- <span data-ttu-id="10119-123">Windows 10 企業版 E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="10119-123">Windows 10 Enterprise E5 or A5</span></span>
-
-<span data-ttu-id="10119-124">如需詳細資訊，請[查看 Microsoft 365 企業版服務方案](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。</span><span class="sxs-lookup"><span data-stu-id="10119-124">For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).</span></span>
-
-> <span data-ttu-id="10119-125">還沒有授權？</span><span class="sxs-lookup"><span data-stu-id="10119-125">Don't have license yet?</span></span> [<span data-ttu-id="10119-126">試用或購買 Microsoft 365 訂閱</span><span class="sxs-lookup"><span data-stu-id="10119-126">Try or buy a Microsoft 365 subscription</span></span>](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
-
-
-<span data-ttu-id="10119-127">**新經驗：** 從2020年5月12日起，客戶會逐漸收到這種經驗的變更。</span><span class="sxs-lookup"><span data-stu-id="10119-127">**New experience:** Starting May 12, 2020, customers will gradually receive changes to this experience.</span></span> <span data-ttu-id="10119-128">針對具有全新經驗的使用者，使用下列任何一種授權的*客戶都可*使用開啟 Microsoft 威脅防護的選項：</span><span class="sxs-lookup"><span data-stu-id="10119-128">For those with the new experience, the option to turn on Microsoft Threat Protection will be available to *all* customers with any of the following licenses:</span></span>
-
-- <span data-ttu-id="10119-129">Microsoft 365 E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="10119-129">Microsoft 365 E5 or A5</span></span>
-- <span data-ttu-id="10119-130">Microsoft 365 E5 Security 或 A5 Security</span><span class="sxs-lookup"><span data-stu-id="10119-130">Microsoft 365 E5 Security or A5 Security</span></span>
-- <span data-ttu-id="10119-131">Windows 10 企業版 E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="10119-131">Windows 10 Enterprise E5 or A5</span></span>
-- <span data-ttu-id="10119-132">Enterprise 可移動性 + Security （EMS） E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="10119-132">Enterprise Mobility + Security (EMS) E5 or A5</span></span> 
-- <span data-ttu-id="10119-133">Office 365 E5 或 A5</span><span class="sxs-lookup"><span data-stu-id="10119-133">Office 365 E5 or A5</span></span>
-- <span data-ttu-id="10119-134">Windows Defender 進階威脅防護</span><span class="sxs-lookup"><span data-stu-id="10119-134">Microsoft Defender Advanced Threat Protection</span></span> 
-- <span data-ttu-id="10119-135">Azure 進階威脅防護</span><span class="sxs-lookup"><span data-stu-id="10119-135">Azure Advanced Threat Protection</span></span> 
-- <span data-ttu-id="10119-136">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="10119-136">Microsoft Cloud App Security</span></span> 
-- <span data-ttu-id="10119-137">Office 365 高級威脅防護（方案2）</span><span class="sxs-lookup"><span data-stu-id="10119-137">Office 365 Advanced Threat Protection (Plan 2)</span></span> 
-
-### <a name="check-your-existing--licenses"></a><span data-ttu-id="10119-138">檢查您現有的授權</span><span class="sxs-lookup"><span data-stu-id="10119-138">Check your existing  licenses</span></span>
-<span data-ttu-id="10119-139">移至 Microsoft 365 系統管理中心（[admin.microsoft.com](https://admin.microsoft.com/)）以查看您現有的授權。</span><span class="sxs-lookup"><span data-stu-id="10119-139">Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses.</span></span> <span data-ttu-id="10119-140">在系統管理中心中，移至 **[帳單]** >  **[授權]**。</span><span class="sxs-lookup"><span data-stu-id="10119-140">In the admin center, go to **Billing** > **Licenses**.</span></span>
+### <a name="check-your-existing--licenses"></a><span data-ttu-id="ffc9f-123">檢查您現有的授權</span><span class="sxs-lookup"><span data-stu-id="ffc9f-123">Check your existing  licenses</span></span>
+<span data-ttu-id="ffc9f-124">移至 Microsoft 365 系統管理中心（[admin.microsoft.com](https://admin.microsoft.com/)）以查看您現有的授權。</span><span class="sxs-lookup"><span data-stu-id="ffc9f-124">Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses.</span></span> <span data-ttu-id="ffc9f-125">在系統管理中心中，移至 **[帳單]** >  **[授權]**。</span><span class="sxs-lookup"><span data-stu-id="ffc9f-125">In the admin center, go to **Billing** > **Licenses**.</span></span>
 
 >[!NOTE]
-> <span data-ttu-id="10119-141">您必須被指派至[AZURE AD 中](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)的**帳務系統管理員**或**全域讀取**者角色，才能看到授權資訊。</span><span class="sxs-lookup"><span data-stu-id="10119-141">You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to be able to see license information.</span></span> <span data-ttu-id="10119-142">如果您遭遇存取的問題，請與全域管理員聯繫。</span><span class="sxs-lookup"><span data-stu-id="10119-142">If you encounter access problems, contact a global admin.</span></span>
+> <span data-ttu-id="ffc9f-126">您必須被指派至[AZURE AD 中](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)的**帳務系統管理員**或**全域讀取**者角色，才能看到授權資訊。</span><span class="sxs-lookup"><span data-stu-id="ffc9f-126">You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to be able to see license information.</span></span> <span data-ttu-id="ffc9f-127">如果您遭遇存取的問題，請與全域管理員聯繫。</span><span class="sxs-lookup"><span data-stu-id="ffc9f-127">If you encounter access problems, contact a global admin.</span></span>
 
-## <a name="browser-requirements"></a><span data-ttu-id="10119-143">瀏覽器需求</span><span class="sxs-lookup"><span data-stu-id="10119-143">Browser requirements</span></span>
-<span data-ttu-id="10119-144">使用 Microsoft Edge、Internet Explorer 11 或任何符合 HTML 5 標準的網頁瀏覽器，存取 microsoft 365 security center 中的 Microsoft 威脅防護。</span><span class="sxs-lookup"><span data-stu-id="10119-144">Access Microsoft Threat Protection in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.</span></span>
+## <a name="required-permissions"></a><span data-ttu-id="ffc9f-128">必要的權限</span><span class="sxs-lookup"><span data-stu-id="ffc9f-128">Required permissions</span></span>
+<span data-ttu-id="ffc9f-129">如需必要角色的清單，以及如何管制資料的存取，請參閱[管理 Microsoft 威脅防護的存取](mtp-permissions.md)。</span><span class="sxs-lookup"><span data-stu-id="ffc9f-129">For the list of required roles and how access to data is regulated, read about [managing access to Microsoft Threat Protection](mtp-permissions.md).</span></span>
 
-## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a><span data-ttu-id="10119-145">可供美國 GCC、GCC 高及其他美國政府機構供貨</span><span class="sxs-lookup"><span data-stu-id="10119-145">Availability to US GCC, GCC High, and other US government institutions</span></span>
-<span data-ttu-id="10119-146">目前，Microsoft 威脅防護*無法*用於：</span><span class="sxs-lookup"><span data-stu-id="10119-146">Currently, Microsoft Threat Protection is *not* available to:</span></span>
-- <span data-ttu-id="10119-147">美國政府社區雲端（GCC）</span><span class="sxs-lookup"><span data-stu-id="10119-147">US Government Community Cloud (GCC)</span></span>
-- <span data-ttu-id="10119-148">美國政府社區雲端高（GCC 高）</span><span class="sxs-lookup"><span data-stu-id="10119-148">US Government Community Cloud High (GCC High)</span></span>
-- <span data-ttu-id="10119-149">美國國防部</span><span class="sxs-lookup"><span data-stu-id="10119-149">US Department of Defense</span></span>
-- <span data-ttu-id="10119-150">具有商業授權的所有美國政府機構</span><span class="sxs-lookup"><span data-stu-id="10119-150">All US government institutions with commercial licenses</span></span>
+## <a name="browser-requirements"></a><span data-ttu-id="ffc9f-130">瀏覽器需求</span><span class="sxs-lookup"><span data-stu-id="ffc9f-130">Browser requirements</span></span>
+<span data-ttu-id="ffc9f-131">使用 Microsoft Edge、Internet Explorer 11 或任何符合 HTML 5 標準的網頁瀏覽器，存取 microsoft 365 security center 中的 Microsoft 威脅防護。</span><span class="sxs-lookup"><span data-stu-id="ffc9f-131">Access Microsoft Threat Protection in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="10119-151">相關主題</span><span class="sxs-lookup"><span data-stu-id="10119-151">Related topics</span></span>
-- [<span data-ttu-id="10119-152">Microsoft 威脅防護概觀</span><span class="sxs-lookup"><span data-stu-id="10119-152">Microsoft Threat Protection overview</span></span>](microsoft-threat-protection.md)
-- [<span data-ttu-id="10119-153">開啟 Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="10119-153">Turn on Microsoft Threat Protection</span></span>](mtp-enable.md)
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a><span data-ttu-id="ffc9f-132">可供美國 GCC、GCC 高及其他美國政府機構供貨</span><span class="sxs-lookup"><span data-stu-id="ffc9f-132">Availability to US GCC, GCC High, and other US government institutions</span></span>
+<span data-ttu-id="ffc9f-133">目前，Microsoft 威脅防護*無法*用於：</span><span class="sxs-lookup"><span data-stu-id="ffc9f-133">Currently, Microsoft Threat Protection is *not* available to:</span></span>
+- <span data-ttu-id="ffc9f-134">美國政府社區雲端（GCC）</span><span class="sxs-lookup"><span data-stu-id="ffc9f-134">US Government Community Cloud (GCC)</span></span>
+- <span data-ttu-id="ffc9f-135">美國政府社區雲端高（GCC 高）</span><span class="sxs-lookup"><span data-stu-id="ffc9f-135">US Government Community Cloud High (GCC High)</span></span>
+- <span data-ttu-id="ffc9f-136">美國國防部</span><span class="sxs-lookup"><span data-stu-id="ffc9f-136">US Department of Defense</span></span>
+- <span data-ttu-id="ffc9f-137">具有商業授權的所有美國政府機構</span><span class="sxs-lookup"><span data-stu-id="ffc9f-137">All US government institutions with commercial licenses</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="ffc9f-138">相關主題</span><span class="sxs-lookup"><span data-stu-id="ffc9f-138">Related topics</span></span>
+- [<span data-ttu-id="ffc9f-139">Microsoft 威脅防護概觀</span><span class="sxs-lookup"><span data-stu-id="ffc9f-139">Microsoft Threat Protection overview</span></span>](microsoft-threat-protection.md)
+- [<span data-ttu-id="ffc9f-140">開啟 Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="ffc9f-140">Turn on Microsoft Threat Protection</span></span>](mtp-enable.md)
+- [<span data-ttu-id="ffc9f-141">管理存取權和許可權</span><span class="sxs-lookup"><span data-stu-id="ffc9f-141">Manage access and permissions</span></span>](mtp-permissions.md)
