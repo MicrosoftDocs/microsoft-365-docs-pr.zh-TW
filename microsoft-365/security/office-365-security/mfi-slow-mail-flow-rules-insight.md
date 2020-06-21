@@ -11,32 +11,34 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: 系統管理員可以了解安全性 & 合規性中心中的郵件流程儀表板中緩慢的郵件流程規則深入解析。
-ms.openlocfilehash: d5317f2d45aacb91e51131bc5b8aa6e67d3ae4c7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.custom:
+- seo-marvel-apr2020
+description: 系統管理員可以深入瞭解安全性 & 規範中心的郵件流程儀表板中的慢速郵件流程規則。
+ms.openlocfilehash: 52ddb6bf5ab6998309fd3122c59636c14b3da1dd
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42088348"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819361"
 ---
-# <a name="slow-mail-flow-rules-insight"></a><span data-ttu-id="bb9de-103">緩慢的郵件流程規則深入解析</span><span class="sxs-lookup"><span data-stu-id="bb9de-103">Slow mail flow rules insight</span></span>
+# <a name="slow-mail-flow-rules-insight"></a><span data-ttu-id="1e10b-103">緩慢的郵件流程規則深入解析</span><span class="sxs-lookup"><span data-stu-id="1e10b-103">Slow mail flow rules insight</span></span>
 
-<span data-ttu-id="bb9de-104">無效率的郵件流程規則 （也稱為傳輸規則） 可能會導致為您的組織的郵件流程延遲。</span><span class="sxs-lookup"><span data-stu-id="bb9de-104">Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization.</span></span> <span data-ttu-id="bb9de-105">此深入了解報告貴組織的郵件流程造成影響的郵件流程規則。</span><span class="sxs-lookup"><span data-stu-id="bb9de-105">This insight reports mail flow rules that have an impact on your organization's mail flow.</span></span> <span data-ttu-id="bb9de-106">以下是這些類型的規則的範例：</span><span class="sxs-lookup"><span data-stu-id="bb9de-106">Examples of these types of rules are:</span></span>
+<span data-ttu-id="1e10b-104">低效的郵件流程規則（也稱為傳輸規則）可能會導致組織的郵件流程延遲。</span><span class="sxs-lookup"><span data-stu-id="1e10b-104">Inefficient mail flow rules (also known as transport rules) can lead to mail flow delays for your organization.</span></span> <span data-ttu-id="1e10b-105">這種洞察力可報告影響組織郵件流程的郵件流程規則。</span><span class="sxs-lookup"><span data-stu-id="1e10b-105">This insight reports mail flow rules that have an impact on your organization's mail flow.</span></span> <span data-ttu-id="1e10b-106">這些規則類型的範例包括：</span><span class="sxs-lookup"><span data-stu-id="1e10b-106">Examples of these types of rules are:</span></span>
 
-- <span data-ttu-id="bb9de-107">使用大型群組**成員**的條件。</span><span class="sxs-lookup"><span data-stu-id="bb9de-107">Conditions that use **Is member of** for large groups.</span></span>
+- <span data-ttu-id="1e10b-107">使用的條件**是**大型群組的成員。</span><span class="sxs-lookup"><span data-stu-id="1e10b-107">Conditions that use **Is member of** for large groups.</span></span>
 
-- <span data-ttu-id="bb9de-108">使用複雜的規則運算式 (regex) 模式比對的條件。</span><span class="sxs-lookup"><span data-stu-id="bb9de-108">Conditions that use complex regular expression (regex) pattern matching.</span></span>
+- <span data-ttu-id="1e10b-108">使用複雜正則運算式（RegEx）模式對應的條件。</span><span class="sxs-lookup"><span data-stu-id="1e10b-108">Conditions that use complex regular expression (regex) pattern matching.</span></span>
 
-- <span data-ttu-id="bb9de-109">使用內容檢查附件中的條件。</span><span class="sxs-lookup"><span data-stu-id="bb9de-109">Conditions that use content checking in attachments.</span></span>
+- <span data-ttu-id="1e10b-109">在附件中使用內容檢查的條件。</span><span class="sxs-lookup"><span data-stu-id="1e10b-109">Conditions that use content checking in attachments.</span></span>
 
-<span data-ttu-id="bb9de-110">深入了解可協助您識別並微調郵件流程規則來協助減少郵件流程延遲。</span><span class="sxs-lookup"><span data-stu-id="bb9de-110">The insight will help you to identify and fine-tune mail flow rules to help reduce mail flow delays.</span></span>
+<span data-ttu-id="1e10b-110">這種洞察力可協助您識別及微調郵件流程規則，以協助減少郵件流程延遲。</span><span class="sxs-lookup"><span data-stu-id="1e10b-110">The insight will help you to identify and fine-tune mail flow rules to help reduce mail flow delays.</span></span>
 
-![在郵件流程儀表板中安全性 & 合規性中心緩慢的郵件流程規則深入解析](../../media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![慢速郵件流程會在安全性 & 規範中心的郵件流程儀表板中進行洞察](../../media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
-<span data-ttu-id="bb9de-112">當您按一下 [**檢視詳細資料**時，彈出式視窗窗格會顯示您可以在此檢閱規則。</span><span class="sxs-lookup"><span data-stu-id="bb9de-112">When you click **View details**, a flyout pane appears where you can review the rule.</span></span> <span data-ttu-id="bb9de-113">在彈出式視窗窗格中，也可以按一下 [**檢視範例郵件**若要查看何種郵件受影響的規則。</span><span class="sxs-lookup"><span data-stu-id="bb9de-113">In the flyout pane, can also click **view sample messages** to see what kind of messages are impacted by the rule.</span></span>
+<span data-ttu-id="1e10b-112">當您按一下 [**查看詳細資料**] 時，會顯示一個彈出窗格，您可以在其中查看規則。</span><span class="sxs-lookup"><span data-stu-id="1e10b-112">When you click **View details**, a flyout pane appears where you can review the rule.</span></span> <span data-ttu-id="1e10b-113">在飛入窗格中，也可以按一下 [ **view sample messages** ]，以查看規則會影響的郵件類型。</span><span class="sxs-lookup"><span data-stu-id="1e10b-113">In the flyout pane, can also click **view sample messages** to see what kind of messages are impacted by the rule.</span></span>
 
-![彈出式視窗窗格中按一下 [檢視詳細資料]，在 [郵件流程儀表板中緩慢的郵件流程規則深入解析後](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
+![按一下慢速郵件流程中的 [查看詳細資料] 之後的浮出窗格郵件流程儀表板中的洞察力](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
-## <a name="see-also"></a><span data-ttu-id="bb9de-115">另請參閱</span><span class="sxs-lookup"><span data-stu-id="bb9de-115">See also</span></span>
+## <a name="related-topics"></a><span data-ttu-id="1e10b-115">相關主題</span><span class="sxs-lookup"><span data-stu-id="1e10b-115">Related topics</span></span>
 
-<span data-ttu-id="bb9de-116">如需郵件流量儀表板中其他郵件流程深入解析之詳細資訊，請參閱[安全性與合規性中心中郵件流程深入解析](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="bb9de-116">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="1e10b-116">如需郵件流量儀表板中其他郵件流程深入解析之詳細資訊，請參閱[安全性與合規性中心中郵件流程深入解析](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="1e10b-116">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
