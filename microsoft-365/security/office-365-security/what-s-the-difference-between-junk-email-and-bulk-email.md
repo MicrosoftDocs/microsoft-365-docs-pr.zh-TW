@@ -1,5 +1,5 @@
 ---
-title: 垃圾郵件和大量電子郵件有什麼不同?
+title: '&apos;垃圾郵件和大量電子郵件有什麼不同？'
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Exchange Online Protection （EOP）中的垃圾郵件（垃圾郵件）和大量電子郵件（灰色郵件）之間的差異。
-ms.openlocfilehash: 6936028aa7bda538f0e49429d22f28c7a78cdb36
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: c1f5ca724f7a41d9fc11ed0c93f52a79a6ecc8e5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208449"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819433"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>EOP 中垃圾郵件和大量電子郵件有什麼不同？
 

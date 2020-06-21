@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: 系統管理員可以深入瞭解安全性 & 規範中心的郵件流程儀表板中的郵件流程對應報告。
-ms.openlocfilehash: f5441a5c775cb9cadb6e9c631adc988f807d8592
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: b0850ee50573583f1a971d1a5dfd69f47fb70b99
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635289"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818840"
 ---
 # <a name="mail-flow-map-report"></a>郵件流程圖報告
 
@@ -30,7 +32,7 @@ ms.locfileid: "43635289"
 
 ![郵件流程地圖小工具中的左右箭號](../../media/mail-flow-map-widget.png)
 
-## <a name="overview"></a>概觀
+## <a name="mail-flow-map-basics"></a>郵件流程對應基礎
 
 按一下 [**郵件流程地圖**] 小工具，將會帶您前往**郵件流程地圖**報告。 您可以在這裡看到更細微的報表層級，您可以按一下 [查看詳細資料] 表格以查看詳細資料。 您也可以按一下 [要求報告]，下載詳細報告。
 

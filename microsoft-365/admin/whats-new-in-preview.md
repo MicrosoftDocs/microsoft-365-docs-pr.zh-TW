@@ -21,12 +21,12 @@ description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 4e4d47b054b5c6371bb62a3fe0f52c08b0997498
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: d0c32c7f7ac3b2824cd48c0e10085e3d59a16c69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587577"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780704"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -79,7 +79,7 @@ ms.locfileid: "44587577"
 
 我們從許多系統管理員那裡聽說過，他們需要分享群組的相關資訊，以及他們對不具備系統管理員中心存取權的使用方式。 您現在可以將 [群組] 清單匯出至 CSV 檔案，以進行審計，這表示您可以扔掉舊的 PowerShell 腳本。 若要嘗試，請移至 [**群組**]  >  **群組**，然後選取 [從命令列**匯出群組**]。
 
-### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 解決方案和架構中心
+### <a name="microsoft-365-solution-and-architecture-center"></a>Microsoft 365 解決方案與架構中心
 
 只是在這個月發行新的網站， [https://docs.microsoft.com](https://docs.microsoft.com) 稱為[Microsoft 365 解決方案和架構中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center)，其結合了您需要的技術指導方針，以瞭解、規劃及實施整合的 Microsoft 365 解決方案，以進行安全且相容的共同作業。 在此中心，您會發現：
 
@@ -153,19 +153,19 @@ ms.locfileid: "44587577"
 
 #### <a name="for-your-users"></a>為您的使用者
 
-- [排程會議](https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
-- [加入小組會議](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [建立全組織小組](https://support.office.com/article/create-a-company-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [建立具有來賓的小組](https://support.office.com/article/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [將小組加入為來賓](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [建立群組電子郵件地址](https://support.office.com/article/create-a-company-email-address-ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [排程會議](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [加入小組會議](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [建立全組織小組](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
+- [建立具有來賓的小組](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
+- [將小組加入為來賓](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
+- [建立群組電子郵件地址](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
 
 #### <a name="for-admins-and-business-owners"></a>針對系統管理員和企業擁有者
 
-- [利用遠端工作為您的小型企業提供強大功能](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [執行遠端小型企業](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [註冊 Microsoft 商業基本版](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [設定兩個要素登入](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [利用遠端工作為您的小型企業提供強大功能](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [執行遠端小型企業](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [註冊 Microsoft 商業基本版](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [設定兩個要素登入](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 
 ## <a name="march-2020"></a>2020 年 3 月
 
@@ -276,12 +276,12 @@ Howdy，合作夥伴！ （無法幫您自己。）我們也為您提供這一�
 
 查看我們于1月發行的小型企業系統管理員訓練。
 
-- [建立您的商務網站](https://support.office.com/article/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [尋找答案及說明](https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [取得協助或支援](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [刪除使用者](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [選擇 Microsoft 訂閱](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Microsoft 365 商務版安全性概述](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [建立您的商務網站](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
+- [尋找答案及說明](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
+- [取得協助或支援](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
+- [刪除使用者](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
+- [選擇 Microsoft 訂閱](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
+- [Microsoft 365 商務版安全性概述](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## <a name="november-and-december-2019"></a>11月和12月2019
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 瞭解如何在 Office 365 中識別及修復 Outlook 規則和自訂表單注入攻擊
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d8c4495715ef29e1d9b70b993d1216e80461cf7
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: f9b5551b8cbda85ac3940bc8f43ec2d7b7eccdb1
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613381"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811047"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>偵測並修復 Outlook 規則和自訂表單注入攻擊
 
@@ -95,13 +95,13 @@ ms.locfileid: "44613381"
 
 - 使用 Outlook 用戶端，手動檢查每個信箱的規則和表單。 這種方法是完整的，但是您一次只能檢查信箱使用者，如果您有許多使用者可供檢查，就會非常耗費時間。 也可能會造成您正在執行檢查的電腦遭到破壞。
 
-- 使用 PowerShell [Get-AllTenantRulesAndForms](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1)腳本可自動為您租使用者中的所有使用者轉儲所有的郵件轉寄規則和自訂表單。 這是最快且最安全的方法，最少量的開銷。
+- 使用[Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell 腳本自動為您租使用者中的所有使用者轉儲所有的郵件轉寄規則和自訂表單。 這是最快且最安全的方法，最少量的開銷。
 
 ### <a name="confirm-the-rules-attack-using-the-outlook-client"></a>使用 Outlook 用戶端確認規則攻擊
 
 1. 以使用者身分開啟使用者 Outlook 用戶端。 使用者可能需要協助您檢查其信箱上的規則。
 
-2. 如需如何在 Outlook 中開啟規則介面的程式，請參閱[使用規則文章管理電子郵件訊息](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59)。
+2. 如需如何在 Outlook 中開啟規則介面的程式，請參閱[使用規則文章管理電子郵件訊息](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59)。
 
 3. 尋找使用者未建立的規則，或任何未預期的規則或具有可疑名稱的規則。
 
@@ -113,7 +113,7 @@ ms.locfileid: "44613381"
 
 1. 以使用者身分開啟使用者 Outlook 用戶端。
 
-2. 遵循中的步驟，顯示 Outlook 使用者版本的[[開發人員]](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45)索引標籤。
+2. 遵循中的步驟，顯示 Outlook 使用者版本的[[開發人員]](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45)索引標籤。
 
 3. 開啟 Outlook 中的 [now visible developer] 索引標籤，然後按一下 [**設計表單**]。
 
@@ -125,7 +125,7 @@ ms.locfileid: "44613381"
 
 ### <a name="steps-to-confirm-the-rules-and-forms-attack-using-powershell"></a>使用 PowerShell 確認規則和表單攻擊的步驟
 
-驗證規則或自訂表單攻擊的最簡單方法，就是執行[Get-AllTenantRulesAndForms](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell script。 此腳本會連線至您租使用者中的每個信箱，並將所有規則和表單轉儲成兩個 .csv 檔案。
+驗證規則或自訂表單攻擊的最簡單方法，就是執行[Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell script。 此腳本會連線至您租使用者中的每個信箱，並將所有規則和表單轉儲成兩個 .csv 檔案。
 
 #### <a name="pre-requisites"></a>先決條件
 
@@ -133,11 +133,11 @@ ms.locfileid: "44613381"
 
 1. 以本機系統管理員許可權登入您將執行腳本的電腦。
 
-2. 將 Get-AllTenantRulesAndForms 腳本從 GitHub 下載或複製到要從中執行它的資料夾。 腳本會建立兩個日期戳檔案至此資料夾、MailboxFormsExport-yyyy-mm-dd 及 MailboxRulesExport-yyyy-mm-dd。
+2. 將 Get-AllTenantRulesAndForms.ps1 腳本從 GitHub 下載或複製到要從中執行它的資料夾。 腳本會為此資料夾建立兩個日期戳檔案，MailboxFormsExport-yyyy-mm-dd.csv 和 MailboxRulesExport-yyyy-mm-dd.csv。
 
 3. 以系統管理員身分開啟 PowerShell 實例，然後開啟您用來儲存腳本的資料夾。
 
-4. 以 .\Get-AllTenantRulesAndForms.ps1 的方式執行此 PowerShell 命令列 `.\Get-AllTenantRulesAndForms.ps1`
+4. 依下列方式執行此 PowerShell 命令列 `.\Get-AllTenantRulesAndForms.ps1`.\Get-AllTenantRulesAndForms.ps1
 
 #### <a name="interpreting-the-output"></a>解讀輸出
 
@@ -159,7 +159,7 @@ ms.locfileid: "44613381"
 
 1. 識別使用者已用於 Outlook 的所有裝置。 所有的潛在惡意程式碼都必須清除。 不允許使用者登入並使用電子郵件，直到所有裝置都已清除為止。
 
-2. 依照刪除每個裝置的[規則](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f)中的步驟進行。
+2. 依照刪除每個裝置的[規則](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f)中的步驟進行。
 
 3. 如果您不確定是否存在其他惡意程式碼，您可以格式化及重新安裝裝置上的所有軟體。 針對行動裝置，您可以遵循製造商的步驟，將裝置重設為出廠影像。
 
@@ -177,7 +177,7 @@ ms.locfileid: "44613381"
 
 2. 如果您想要完全移除單一規則、多個規則或所有來自信箱的規則，請使用[Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) Cmdlet。
 
-3. 如果您想要保留規則及其內容以進行進一步調查，請使用[Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) Cmdlet。
+3. 如果您想要保留規則及其內容以進行進一步調查，請使用[Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) Cmdlet。
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Online 中的信箱步驟
 
@@ -185,7 +185,7 @@ ms.locfileid: "44613381"
 
 2. 如果您想要完全移除單一規則、多個規則或所有來自信箱的規則，請使用 [[移除收件匣規則](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule)] Cmdlet。
 
-3. 如果您想要保留規則及其內容以進行進一步調查，請使用[Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) Cmdlet。
+3. 如果您想要保留規則及其內容以進行進一步調查，請使用[Disable-InboxRule](https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule) Cmdlet。
 
 ## <a name="how-to-minimize-future-attacks"></a>如何最小化未來的攻擊
 
@@ -207,7 +207,7 @@ ms.locfileid: "44613381"
 
 ### <a name="second-keep-your-outlook-clients-current"></a>第二：讓 Outlook 用戶端保持最新
 
-完全更新及修補的 Outlook 2013 版本，而2016預設會停用「啟動應用程式」規則/表單動作。 這可確保即使攻擊者破壞帳戶，規則和表單動作也會遭到封鎖。 您可以遵循[安裝 Office 更新](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5)中的步驟，安裝最新的更新及安全性修補程式。
+完全更新及修補的 Outlook 2013 版本，而2016預設會停用「啟動應用程式」規則/表單動作。 這可確保即使攻擊者破壞帳戶，規則和表單動作也會遭到封鎖。 您可以遵循[安裝 Office 更新](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5)中的步驟，安裝最新的更新及安全性修補程式。
 
 以下是 Outlook 2013 和2016用戶端的修補程式版本：
 
@@ -225,7 +225,7 @@ ms.locfileid: "44613381"
 
 請注意，即使已安裝修補程式和更新，攻擊者還是可以變更本機電腦設定，以重新啟用「啟動應用程式」行為。 您可以使用[高級群組原則管理](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/)，在用戶端上監視及強制執行本機電腦原則。
 
-您可以使用[Windows 的64位版本](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows)資訊，查看是否已透過登錄中的覆寫方式重新啟用 [啟動應用程式]。 請檢查下列子項：
+您可以使用[Windows 的64位版本](https://support.microsoft.com/help/305097)資訊，查看是否已透過登錄中的覆寫方式重新啟用 [啟動應用程式]。 請檢查下列子項：
 
 - **Outlook 2016**：`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 

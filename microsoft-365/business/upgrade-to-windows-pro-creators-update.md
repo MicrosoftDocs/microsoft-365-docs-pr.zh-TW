@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: ffc4d886-9e1d-453d-a0d0-2f62f18635e2
 description: 探索將 Windows 裝置升級到 Windows 10 專業版的方式，以利用更高級的安全性和商務網路功能。
-ms.openlocfilehash: c982f59ded0b0d2e1cd321f5856b38bd792eebed
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 24ef1f1547ed8873ed1fa18120eef6275f53c7dc
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403523"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785523"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>將 Windows 裝置升級到 Windows 10 專業版
 
@@ -39,7 +39,7 @@ ms.locfileid: "44403523"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3t58j] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="upgrade-to-windows-10-pro"></a>升級至 Windows 10 專業版
   
@@ -62,4 +62,4 @@ ms.locfileid: "44403523"
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>如需設定及使用 Microsoft 365 for business
 
-[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

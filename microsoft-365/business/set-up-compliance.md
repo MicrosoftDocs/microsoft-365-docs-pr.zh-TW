@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 設定規范功能以避免資料遺失，並協助保護您的和客戶的敏感資訊。
-ms.openlocfilehash: 9b900367c22ec5bb5c2719af63049045ecd5e466
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 18886ff3a0ba5e99e63c70ef083d7a69c75bac91
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402687"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785825"
 ---
 # <a name="set-up-compliance-features"></a>設定合規性功能
 
@@ -61,7 +61,7 @@ DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如
 
 敏感度標籤隨附 Azure 資訊保護（AIP）方案1，並可套用標籤，協助您分類，並選擇性地保護您的檔和電子郵件。 系統管理員可以自動套用標籤，以定義規則和條件、手動由使用者手動套用，或是使用使用者提供建議的組合來套用。
 
-若要設定敏感度標籤，請 view[建立及管理敏感度標籤](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)影片。
+若要設定敏感度標籤，請 view[建立及管理敏感度標籤](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)影片。
 
 
 
@@ -69,7 +69,7 @@ DLP 隨附許多可用於許多不同地區設定的現成原則範本。 例如
 
 若要手動安裝 AIP 用戶端：
 
-1. 從[Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=53018)下載**AzinfoProtection_UL** 。
+1. 從[Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=53018)下載**AzinfoProtection_UL.exe** 。
  
 2. 您可以透過查看 Word 檔來驗證安裝是否正常運作，並確定 [**首頁**] 索引標籤上有 [**敏感度**] 選項。
 <br/>![在 Word 檔中下拉式清單中的 [保護] 索引標籤。](../media/word-sensitivity.png)

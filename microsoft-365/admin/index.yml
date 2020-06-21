@@ -13,22 +13,28 @@ metadata:
   ms.date: 11/08/2019
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 56353a336c3f8383b93ab63898e4879276b0108d
-  ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+  ms.openlocfilehash: 9d8104660c4686b2240c292509a499a25308d9f6
+  ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/27/2020
-  ms.locfileid: "44399845"
+  ms.lasthandoff: 06/18/2020
+  ms.locfileid: "44799956"
 highlightedContent:
   items:
   - title: Office 365 現在是 Microsoft 365！
     itemType: whats-new
     url: new-subscription-names.md
+  - title: Microsoft 365 系統管理中心的新增功能！
+    itemType: whats-new
+    url: whats-new-in-preview.md
+  - title: 保持最新的 Microsoft 365 變更
+    itemType: how-to-guide
+    url: manage/stay-on-top-of-updates.md
 productDirectory:
-  title: 開始使用
+  title: 入門
   summary: 設定您的訂閱和電子郵件、新增使用者和安裝應用程式。
   items:
-  - title: 開始使用
+  - title: 入門
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
     summary: 註冊並設定 Microsoft 365。
     url: setup/index.yml
@@ -43,7 +49,7 @@ productDirectory:
   - title: 訓練使用者
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
     summary: 協助貴組織中的使用者瞭解如何儲存及共用檔案，以及如何使用 Office 應用程式。
-    url: https://support.office.com/office-training-center
+    url: https://support.microsoft.com/training
 additionalContent:
   sections:
   - title: 管理

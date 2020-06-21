@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 瞭解如何取消商務用 Microsoft 365 試用版或付費訂閱。
-ms.openlocfilehash: 863bb9c5cd6a6c9468715f02df6b40e91859ca27
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403291"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818516"
 ---
 # <a name="cancel-your-subscription"></a>取消訂閱
 
@@ -101,7 +101,7 @@ ms.locfileid: "44403291"
   
 - 系統**管理存取**管理員仍可登入並存取系統管理中心，並視需要購買其他訂閱。 若您是全球或計費系統管理員，您可以在90天內重新啟用所有資料都完好無損[的訂閱](reactivate-your-subscription.md)。
 
-- **使用者存取**您的使用者將無法使用 OneDrive 商務版服務，或存取客戶資料（例如，小組網站上的電子郵件或檔）。 Word 和 Excel 等 Office 應用程式最後都會進入唯讀、精簡功能模式，並顯示[未授權產品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
+- **使用者存取**您的使用者將無法使用 OneDrive 商務版服務，或存取客戶資料（例如，小組網站上的電子郵件或檔）。 Word 和 Excel 等 Office 應用程式最後都會進入唯讀、精簡功能模式，並顯示[未授權產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
 
 若要深入瞭解，請參閱我的[訂閱結束時，我的資料和存取會發生什麼事？](what-if-my-subscription-expires.md)
 
@@ -138,13 +138,13 @@ ms.locfileid: "44403291"
 
 當取消操作生效時，您的使用者就會失去存取其資料的許可權。 在您取消訂閱之前，請先將其 OneDrive 的商務或 SharePoint 線上檔案儲存至另一個位置。 您留下的任何客戶資料在30天后可能會遭到刪除，而且在取消後的180天內，不會被刪除。
 
-- 若要將電子郵件、連絡人、工作及行事曆資訊移到另一個帳戶，請參閱[將電子郵件、連絡人及行事曆匯出或備份為 Outlook .pst 檔案](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)。
+- 若要將電子郵件、連絡人、工作及行事曆資訊移到另一個帳戶，請參閱[將電子郵件、連絡人及行事曆匯出或備份為 Outlook .pst 檔案](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)。
 
 - 若要從 SharePoint Online 環境 (商務用 OneDrive 或小組網站) 將文件庫或清單內容 (例如連絡人) 儲存至檔案共用或本機電腦上，請參閱[手動移轉 SharePoint Online 內容](https://support.microsoft.com/kb/2783484)。
 
 ### <a name="uninstall-office-optional"></a>卸載 Office （選用）
 
-如果您取消訂閱，但沒有將使用者移至包含 Microsoft 365 的不同訂閱，則 Microsoft 365 會以精簡功能模式執行。 發生這種情況時，使用者只能讀取和列印檔案，而 Microsoft 365 應用程式會顯示未[授權產品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 為了避免產生任何混淆，請要求您的使用者從其電腦[解除安裝 Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)。
+如果您取消訂閱，但沒有將使用者移至包含 Microsoft 365 的不同訂閱，則 Microsoft 365 會以精簡功能模式執行。 發生這種情況時，使用者只能讀取和列印檔案，而 Microsoft 365 應用程式會顯示未[授權產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 為了避免產生任何混淆，請要求您的使用者從其電腦[解除安裝 Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)。
 
 ## <a name="related-articles"></a>相關文章
 

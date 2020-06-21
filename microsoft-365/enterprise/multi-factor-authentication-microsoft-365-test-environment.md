@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 企業版測試環境的多重要素驗證
+title: Microsoft 365 企業版測試環境多重要素驗證
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,13 +14,14 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
+- seo-marvel-apr2020
 description: 使用在 Microsoft 365 企業版測試環境中傳送至 smart phone 的文字訊息，設定多重要素驗證。
-ms.openlocfilehash: ae8cab25a20cc75992eecc600219d9f1dd869b63
-ms.sourcegitcommit: 8e655c6cbb91bfb97efda9a99c39fac33eaa974a
+ms.openlocfilehash: e26fb7470e01397266f5f424ee45941a79a2940c
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44213137"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819373"
 ---
 # <a name="multi-factor-authentication-for-your-microsoft-365-enterprise-test-environment"></a>Microsoft 365 企業版測試環境的多重要素驗證
 
@@ -43,7 +44,7 @@ ms.locfileid: "44213137"
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 請移至[測試實驗室指南堆疊](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，以取得 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
@@ -82,7 +83,7 @@ ms.locfileid: "44213137"
     
 2. 移至 Office 365 入口網站（ [https://portal.office.com](https://portal.office.com) ），並使用使用者2帳戶名稱和密碼登入。
     
-3. 登入後，系統會提示您設定帳戶以取得詳細資訊。 按一下 **[下一步]**。
+3. 登入後，系統會提示您設定帳戶以取得詳細資訊。 按 [下一步]****。
     
 4. 在 [**其他安全性驗證**] 頁面上：
     
@@ -92,7 +93,7 @@ ms.locfileid: "44213137"
     
    - 在**方法**中，按一下 [以**文字訊息傳送程式碼**]。
     
-5. 按一下 **[下一步]**。
+5. 按 [下一步]****。
     
 6. 從 smart phone 上收到的文字訊息中輸入驗證碼，然後按一下 [**驗證**]。
     

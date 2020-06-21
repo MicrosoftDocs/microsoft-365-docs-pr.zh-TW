@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體的攻擊復原。
-ms.openlocfilehash: 29afb66dd90be3917d576a7533900e21a91966c0
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 1471b7b0cacbabaf086e0759e21a46b9cb9929ab
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224706"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811023"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>從 Microsoft 365 復原勒索軟體攻擊
 
@@ -42,7 +42,7 @@ ms.locfileid: "44224706"
 
 如果您懷疑電子郵件是目標，您應該暫時停用使用者對信箱的存取權。 Exchange ActiveSync 是由行動裝置用於同步裝置與 Exchange Online 信箱之間的資料。
 
-若要停用信箱的 ActiveSync，請參閱[如何為 Exchange Online 中的使用者停用 exchange ActiveSync](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365)。
+若要停用信箱的 ActiveSync，請參閱[如何為 Exchange Online 中的使用者停用 exchange ActiveSync](https://support.microsoft.com/help/2795303)。
 
 若要停用信箱的其他類型的存取，請參閱：
 
@@ -50,7 +50,7 @@ ms.locfileid: "44224706"
 
 - [啟用或停用使用者 POP3 或 IMAP4 存取權](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-暫停 OneDrive 同步處理會協助保護您的雲端資料，使其不會受到可能受感染的裝置更新。 如需詳細資訊，請參閱 how [To Pause And Resume sync in OneDrive](https://support.office.com/article/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)。
+暫停 OneDrive 同步處理會協助保護您的雲端資料，使其不會受到可能受感染的裝置更新。 如需詳細資訊，請參閱 how [To Pause And Resume sync in OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)。
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步驟3：從受影響的裝置移除惡意程式碼
 
@@ -60,11 +60,11 @@ ms.locfileid: "44224706"
 
 另一種方式也可協助您移除勒索軟體或惡意[軟體是惡意軟體移除工具（MSRT）](https://www.microsoft.com/download/details.aspx?id=9905)。
 
-如果這些選項不起作用，您可以嘗試使用[Windows Defender 離線](https://support.microsoft.com/help/17466/windows-defender-offline-help-protect-my-pc)或[疑難排解偵測和移除惡意程式碼的問題](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware)。
+如果這些選項不起作用，您可以嘗試使用[Windows Defender 離線](https://support.microsoft.com/help/17466)或[疑難排解偵測和移除惡意程式碼的問題](https://support.microsoft.com/help/4466982)。
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>步驟4：在已清除的電腦或裝置上復原檔案
 
-在您完成上述步驟以從環境中移除勒索軟體負載（以避免勒索軟體加密或移除檔案）之後，您可以使用 windows 10 和 Windows 8.1 中的檔案歷程[記錄](https://support.microsoft.com/help/17128/windows-8-file-history)，或 windows 7 中的系統保護，以嘗試復原您的本機檔案和資料夾。
+在您完成上述步驟以從環境中移除勒索軟體負載（以避免勒索軟體加密或移除檔案）之後，您可以使用 windows 10 和 Windows 8.1 中的檔案歷程[記錄](https://support.microsoft.com/help/17128)，或 windows 7 中的系統保護，以嘗試復原您的本機檔案和資料夾。
 
 **附註**：
 
@@ -74,7 +74,7 @@ ms.locfileid: "44224706"
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步驟5：在您的 OneDrive 商務中復原檔案
 
-在 OneDrive for Business 中還原檔案，可讓您在過去的30天內，將整個 OneDrive 還原至上一個時間點。 如需詳細資訊，請參閱[還原您的 OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
+在 OneDrive for Business 中還原檔案，可讓您在過去的30天內，將整個 OneDrive 還原至上一個時間點。 如需詳細資訊，請參閱[還原您的 OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
 
 ## <a name="step-6-recover-deleted-email"></a>步驟6：復原已刪除的電子郵件
 
@@ -82,7 +82,7 @@ ms.locfileid: "44224706"
 
 - [復原刪除的郵件使用者的信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [在 Windows 版 Outlook 復原已刪除的項目](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
+- [在 Windows 版 Outlook 復原已刪除的項目](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步驟7：重新啟用 Exchange ActiveSync 和 OneDrive 同步處理
 
@@ -124,7 +124,7 @@ ms.locfileid: "44224706"
 
 您可以使用下列其中一種方法，報告包含勒索軟體的網路釣魚郵件。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 
@@ -132,11 +132,11 @@ ms.locfileid: "44224706"
 
 - [Norsk Hydro 會以透明度回應勒索軟體攻擊](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [勒索軟體偵測和復原 OneDrive 中的檔案](https://support.microsoft.com/en-us/office/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [勒索軟體偵測和復原 OneDrive 中的檔案](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
 - [Microsoft Security 情報報告](https://www.microsoft.com/securityinsights/)
 
-- [啟用或停用 Office 檔案中的宏](https://support.office.com/article/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
+- [啟用或停用 Office 檔案中的宏](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
 - [EOP 和 Office 365 ATP 安全性的建議設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
 

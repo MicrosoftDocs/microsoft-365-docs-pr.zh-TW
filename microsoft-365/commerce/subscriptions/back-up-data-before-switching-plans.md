@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: 在變更 Microsoft 365 方案之前，請先備份 Outlook、OneDrive、Yammer 及 SharePoint 內容。
-ms.openlocfilehash: b7a29912416bd659f2e0dd40c7aa6b9f6309676e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9acc97f65bb5b471cb992d7f01cd299192b74a52
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403615"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818528"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>切換 Microsoft 365 for business 方案之前備份資料
 
@@ -35,13 +35,13 @@ ms.locfileid: "44403615"
   
 ## <a name="save-a-copy-of-outlook-information"></a>儲存 Outlook 資訊複本
 
-如果使用者有 Outlook，他們可以在切換其計畫之前，[將電子郵件、連絡人及行事曆匯出或備份至 outlook .pst](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)檔案。
+如果使用者有 Outlook，他們可以在切換其計畫之前，[將電子郵件、連絡人及行事曆匯出或備份至 outlook .pst](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)檔案。
   
-當切換到新的計畫完成之後，使用者可以[從 Outlook .pst 檔案匯入電子郵件、連絡人及行事曆](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)。
+當切換到新的計畫完成之後，使用者可以[從 Outlook .pst 檔案匯入電子郵件、連絡人及行事曆](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)。
   
 ## <a name="save-files-stored-in-onedrive-for-business"></a>儲存在商務 OneDrive 中儲存的檔案
 
-在切換至不同的訂閱之前，使用者可以[從 OneDrive 或 SharePoint 中將檔案和資料夾下載](https://support.office.com/article/5c7397b7-19c7-4893-84fe-d02e8fa5df05)至不同的位置，例如電腦硬碟上的資料夾，或組織網路上的檔案共用。
+在切換至不同的訂閱之前，使用者可以[從 OneDrive 或 SharePoint 中將檔案和資料夾下載](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05)至不同的位置，例如電腦硬碟上的資料夾，或組織網路上的檔案共用。
   
 ## <a name="save-yammer-information"></a>儲存 Yammer 資訊
 

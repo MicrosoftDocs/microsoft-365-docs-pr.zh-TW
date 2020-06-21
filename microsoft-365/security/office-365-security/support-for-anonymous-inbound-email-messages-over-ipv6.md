@@ -14,13 +14,15 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online 和 Exchange Online Protection 的 IPv6 來源中設定匿名輸入電子郵件的支援。
-ms.openlocfilehash: 86de431f8f46af1c5ddae8ecc91f326c6e3280e6
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: fbbcba3631c7b2a7060f07011c119ee973fdf4af
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631214"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818706"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>在 Microsoft 365 中新增對 IPv6 匿名輸入電子郵件的支援
 
@@ -48,6 +50,6 @@ Microsoft 365 組織若有 Exchange Online 信箱和獨立 Exchange Online Prote
 
   > 550 5.2.1 服務無法使用，[contoso.com] 不接受透過 IPv6 的電子郵件。
 
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="related-topics"></a>相關主題
 
 [支援 DKIM 簽署郵件的驗證](support-for-validation-of-dkim-signed-messages.md)

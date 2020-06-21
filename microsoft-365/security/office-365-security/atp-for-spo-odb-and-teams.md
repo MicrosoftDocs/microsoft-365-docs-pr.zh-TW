@@ -19,13 +19,14 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 description: 瞭解 Office 365 的高級威脅防護，以瞭解 SharePoint Online 中的檔案、商務 OneDrive 商務和 Microsoft 團隊。
-ms.openlocfilehash: 90e84f0a4393e5097fb59b93693862a21d6d9f2f
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4a711d6554ffcb8e291d5b2154120d078995e94
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44031445"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815406"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP
 
@@ -33,7 +34,7 @@ ms.locfileid: "44031445"
 
 人們經常使用 SharePoint、OneDrive 和 Microsoft Teams 來共用檔案及共同作業。 有了 [Office 365 進階威脅防護](office-365-atp.md) (ATP)，您的組織可以更安全地進行共同作業。 ATP 可協助偵測及封鎖小組網站和文件庫中被視為惡意的檔案。
 
-## <a name="how-it-works"></a>運作方式
+## <a name="how-office-365-atp-operates"></a>Office 365 ATP 的運作方式
 
 當 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的檔案被認定為「惡意」時，ATP 會直接與檔案存放區整合來鎖定該檔案。 下列影像顯示文件庫中偵測到的惡意檔案範例。
 
@@ -65,9 +66,9 @@ ms.locfileid: "44031445"
 
  自 2018 年的 5 月底起，安全性 &amp; 合規性中心的[隔離](quarantine-email-messages.md)功能已延伸至適用於 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 的 ATP。
 
-當 SharePoint Online、商務用 OneDrive 或 Microsoft Teams 中的檔案被識別為惡意時，ATP 除了會防止檔案開啟或共用之外，該檔案也會包含在隔離項目清單中。 （在&amp;安全性與合規性中心，移至「**威脅管理** \> 」**查看** \> **隔離**及篩選檔案。） **Files**
+當 SharePoint Online、商務用 OneDrive 或 Microsoft Teams 中的檔案被識別為惡意時，ATP 除了會防止檔案開啟或共用之外，該檔案也會包含在隔離項目清單中。 （安全性 &amp;規範中心，移至「**威脅管理**」 \> **查看** \> **隔離**及**Files**篩選檔案。）
 
-如果您屬於組織的 Microsoft 365 商務安全小組，而且在[安全性&amp;與合規性中心內指派](permissions-in-the-security-and-compliance-center.md)必要的許可權，您可以從隔離區下載、發行、報告和刪除因 ATP 所偵測為惡意的檔案。
+如果您屬於組織的 Microsoft 365 商務安全小組，而且在[安全性與 &amp; 合規性中心內指派](permissions-in-the-security-and-compliance-center.md)必要的許可權，您可以從隔離區下載、發行、報告和刪除因 ATP 所偵測為惡意的檔案。
 
 - 針對 SharePoint、OneDrive 或 Microsoft Teams，**釋放和報告**檔案會移除各別小組網站或文件庫中檔案上的 ATP 封鎖。 然後使用者就能開啟、共用和下載該檔案。 此外，當您選取 [將報告傳送到 Microsoft]**** 選項時，該檔案就會以誤判的形式來報告給 Microsoft。
 

@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 瞭解當您的 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
-ms.openlocfilehash: e1953f439577b9339b035968a63e8d1a6eddcd29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c50c8ca2e9f6342cc127c7a1b42575515fd36329
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403159"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818620"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>365 Microsoft 商務版訂閱結束時，我的資料與存取權會發生什麼情況？
 
@@ -57,13 +57,13 @@ ms.locfileid: "44403159"
 
 當訂閱處於使用中狀態時，您和您的使用者可以一般存取您的資料，例如電子郵件和 OneDrive 商務和 Office 應用程式等服務。 作為系統管理員，當訂閱接近其到期日時，您會透過電子郵件和系統管理中心接收一系列的通知。
   
-在訂閱實際達到其到期日之前，您有幾個選項：
+在訂閱實際到達到期日之前，您可以選擇下列做法：
 
 ::: moniker range="o365-worldwide"
   
 - **啟用定期計費訂閱。**
 
-  - 如果**定期計費**已開啟，您不需要採取任何動作。 您的訂閱將會自動計費，您會根據您目前的付款頻率，向您收取額外一年或一個月的費用。 如果您因任何原因而關閉了**週期性的帳單**，您可以永遠[開啟定期計費](renew-your-subscription.md)。
+  - 如果**定期計費**已開啟，您不需要採取任何動作。 您的訂閱將會自動計費，而您將會根據目前的付款頻率，支付一年或一個月的費用。 如果您因任何原因而關閉了**週期性的帳單**，您可以永遠[開啟定期計費](renew-your-subscription.md)。
 
   - 如果您購買的是含預付卡的 Microsoft 365 應用程式，您可以為訂閱[開啟定期計費](renew-your-subscription.md)。
 
@@ -87,7 +87,7 @@ ms.locfileid: "44403159"
   
 - **管理訂閱的週期性帳單。**
 
-  - 如果**定期計費**已開啟，您不需要採取任何動作。 您的訂閱將會自動計費，您會根據您目前的付款頻率，向您收取額外一年或一個月的費用。 如果您因任何原因而關閉了**週期性的帳單**，您可以永遠[開啟定期計費](renew-your-subscription.md)。
+  - 如果**定期計費**已開啟，您不需要採取任何動作。 您的訂閱將會自動計費，而您將會根據目前的付款頻率，支付一年或一個月的費用。 如果您因任何原因而關閉了**週期性的帳單**，您可以永遠[開啟定期計費](renew-your-subscription.md)。
 
   - 如果您購買的是含預付卡的 Microsoft 365 應用程式，您可以為訂閱[開啟定期計費](renew-your-subscription.md)。
 
@@ -109,7 +109,7 @@ ms.locfileid: "44403159"
 
 ::: moniker range="o365-21vianet"
   
-- **更新訂閱。** 如果**定期計費**已開啟，您不需要採取任何動作。 您的訂閱將會自動計費，您會根據您目前的付款頻率，向您收取額外一年或一個月的費用。 如果您因任何原因而關閉了**週期性的帳單**，您可以永遠[開啟定期計費](renew-your-subscription.md)。
+- **更新訂閱。** 如果**定期計費**已開啟，您不需要採取任何動作。 您的訂閱將會自動計費，而您將會根據目前的付款頻率，支付一年或一個月的費用。 如果您因任何原因而關閉了**週期性的帳單**，您可以永遠[開啟定期計費](renew-your-subscription.md)。
 
 - **讓訂閱到期。** 如果您是以信用卡或發票付款，而您不想繼續訂閱，請關閉[定期帳單](renew-your-subscription.md)。 您的訂閱會在到期日到期，而且您可以略過所有相關的電子郵件通知。
 
@@ -168,7 +168,7 @@ ms.locfileid: "44403159"
 
 ::: moniker range="o365-worldwide"
 
-在此狀態下，您的存取會大幅減少。 您的使用者無法登入，或存取諸如電子郵件或 SharePoint 線上的服務。 Office 應用程式最終會移到唯讀、精簡功能的模式，並顯示未[授權的產品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 您仍可登入並進入系統管理中心，但無法將授權指派給使用者。 您的客戶資料（包括所有使用者資料、電子郵件及小組網站上的檔案）只供您和其他系統管理員使用。
+在此狀態下，您的存取會大幅減少。 您的使用者無法登入，或存取諸如電子郵件或 SharePoint 線上的服務。 Office 應用程式最終會移到唯讀、精簡功能的模式，並顯示未[授權的產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 您仍可登入並進入系統管理中心，但無法將授權指派給使用者。 您的客戶資料（包括所有使用者資料、電子郵件及小組網站上的檔案）只供您和其他系統管理員使用。
 
 ::: moniker-end
 
@@ -204,7 +204,7 @@ ms.locfileid: "44403159"
 
 ::: moniker-end
 
-- **請擴充您的試用版。** 需要更多時間來評估 Microsoft 365？ 在某些情況下，您可能可以[擴充試用版](../extend-your-trial.md)。
+- **請擴充您的試用版。** 需要更多時間來評估 Microsoft 365 嗎？ 在某些情況下，您可能可以[擴充試用版](../extend-your-trial.md)。
 
 - **取消試用期或讓其到期。** 如果您決定不購買 Microsoft 365，您可以讓您的試用版到期或[取消](cancel-your-subscription.md)。 請務必備份您要保留的任何資料。 30天的寬限期之後不久，您的試用帳戶資訊和資料就會永久清除。
 
@@ -216,7 +216,7 @@ ms.locfileid: "44403159"
   
 - 系統**管理存取**管理員仍可登入並存取系統管理中心，並視需要購買其他訂閱。 若您是全球或計費系統管理員，您可以在90天內重新啟用所有資料都完好無損[的訂閱](reactivate-your-subscription.md)。
 
-- **使用者存取**您的使用者將無法使用 OneDrive 商務版服務，或存取客戶資料（例如，小組網站上的電子郵件或檔）。 Word 和 Excel 等 Office 應用程式最後都會進入唯讀、精簡功能模式，並顯示[未授權產品通知](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
+- **使用者存取**您的使用者將無法使用 OneDrive 商務版服務，或存取客戶資料（例如，小組網站上的電子郵件或檔）。 Word 和 Excel 等 Office 應用程式最後都會進入唯讀、精簡功能模式，並顯示[未授權產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
 
 若要瞭解如何取消，請參閱[取消您的訂閱](cancel-your-subscription.md)。
   

@@ -1,5 +1,5 @@
 ---
-title: View the Security & 管制 Center 中的電子郵件安全性報告、遭到破壞的使用者、加密、威脅防護狀態、惡意程式碼偵測、主要惡意程式碼、垃圾郵件偵測、傳送和接收的電子郵件、使用者報告的訊息、讀取報表、偵測、安全性資料、安全性資訊
+title: 檢視安全性與合規性中心內的電子郵件安全性報告
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,12 +17,13 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
-ms.openlocfilehash: 6fc77696625fb11d4ebfc6f339939c751c7a45f2
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dfee1fa2c6e515bfc10ed7a633584c54763fdec4
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613453"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819458"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 

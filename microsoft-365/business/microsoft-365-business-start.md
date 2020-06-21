@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 深入瞭解 Microsoft 365 for business，如何加以設定，以及如何準備使用者的裝置和電腦，以確保 Microsoft 365 for business 所保護。
-ms.openlocfilehash: a09b7c676f0e095d2a9db16daa56e19fb7a3baae
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401999"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786147"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>開始使用 Microsoft 365 for business
 
@@ -65,7 +65,7 @@ Microsoft 365 for business 是一組完整的商務生產力和共同作業工�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1：設定 Microsoft 365 for business （系統管理員）
@@ -107,10 +107,10 @@ Microsoft 365 for business 是一組完整的商務生產力和共同作業工�
     
 - 做為 Microsoft 365 for business admin，您可以存取我們的客戶支援小組： **[請洽詢商務產品的支援人員-系統管理](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)說明**
     
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [商務用 Microsoft 365 檔和資源](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
 [管理 microsoft 365 for](manage.md)business[遷移至 microsoft 365 for business](migrate-to-microsoft-365-business.md)
 
-[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 
+[商務用 Microsoft 365 訓練影片](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) 

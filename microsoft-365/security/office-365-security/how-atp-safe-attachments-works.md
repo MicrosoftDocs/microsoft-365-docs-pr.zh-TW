@@ -17,16 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何使用 Office 365 的 ATP 安全附件，讓組織安全地抵禦惡意檔。
-ms.openlocfilehash: a0d5923ccac525b23aa2ef6b45936524f0a7b483
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: f4f355d4def1f108a72854c3796e0e9373cb5ef1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036653"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819397"
 ---
 # <a name="how-atp-safe-attachments-works"></a>ATP 安全附件的運作方式
-
-## <a name="how-it-works"></a>運作方式
 
 ATP 安全附件功能會檢查電子郵件附件中組織的人員。 當 ATP 安全附件原則已到位，且該原則所涵蓋的人員會在 Office 365 中查看其電子郵件時，會根據您的 ATP 安全附件原則，檢查其電子郵件附件並採取適當的動作。 根據您的原則定義方式，使用者可以繼續運作，而不會知道他們已傳送惡意檔案。
   

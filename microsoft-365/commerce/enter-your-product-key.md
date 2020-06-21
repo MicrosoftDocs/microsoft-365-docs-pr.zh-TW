@@ -25,19 +25,19 @@ description: 瞭解如何兌換在零售店購買的 Microsoft 365 商務標準�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: de0a45fe35a53d166eb8d587a6410f91b69e3288
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 30c10efdadae1828438ea9cba01cda93adaa4f0f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402163"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818576"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>輸入 Microsoft 365 商務標準的產品金鑰
 
 如果您是從零售商店購買 Microsoft 365 商務標準，本文可協助您啟動訂閱。 
   
  **需要其他內容嗎？**
- **如需 microsoft 365 系列或 microsoft 365 個人的協助**，請參閱搭配[Office 使用產品金鑰](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
+ **如需 microsoft 365 系列或 microsoft 365 個人的協助**，請參閱搭配[Office 使用產品金鑰](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
  **大量授權客戶？** 如果您是透過[Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298)購買 microsoft 365 for business，請參閱文章，[輸入從 Microsoft 開放購買的產品金鑰](purchases-from-microsoft-open.md)。
   
 ## <a name="activate-a-new-subscription"></a>啟動新的訂閱

@@ -16,18 +16,20 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 此解決方案會告訴您，在 Microsoft 365 中最常見的 cybersecurity 攻擊可能如您所述，以及如何回應它們
-ms.openlocfilehash: 4c5713a0689dae07fe5300c04754d77912f53976
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom:
+- seo-marvel-apr2020
+ms.openlocfilehash: c6f5087799a0e3a06d0849f99e9911cf77260e1b
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43634505"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818792"
 ---
 # <a name="security-incident-response"></a>安全性事件回應
 
  **摘要：** 此解決方案會告訴您 Office 365 中最常見的 cybersecurity 攻擊的指示器為何，如何正確確認任何指定的攻擊，以及如何對其作出回應。
 
-## <a name="overview"></a>概觀
+## <a name="learn-how-to-respond-to-cyberattacks"></a>瞭解如何回應 cyberattacks
 
 並非所有 cyberattacks 都可以 thwarted。 攻擊者不斷尋找防禦策略中的新弱點，或利用舊弱點。 瞭解如何辨識攻擊可讓您更快速地回應，進而縮短安全性事件的持續時間。
 
@@ -55,9 +57,9 @@ ms.locfileid: "43634505"
 
 - [對於 Office 365 遭入侵電子郵件帳戶的回覆](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>保護 Microsoft 365 （如 cybersecurity pro）
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Microsoft 365
 
-您的 Microsoft 365 訂閱隨附一組強大的安全性功能，可讓您用來保護您的資料和使用者。  使用[microsoft 365 安全性藍圖-前30天、90天和之後的最高優先順序](security-roadmap.md)，以執行 microsoft 建議的最佳作法，以保護您的 microsoft 365 組織。
+您的 Microsoft 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用[microsoft 365 安全性藍圖-前30天、90天和之後的最高優先順序](security-roadmap.md)，以執行 microsoft 建議的最佳作法，以保護您的 microsoft 365 組織。
 
 - 要在前 30 天內完成的工作。  這些工作會有立即的影響，而且對您的使用者影響較低。
 

@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
 description: 瞭解如何為商務用 Microsoft 365 訂閱啟用、更新或新增授權。
-ms.openlocfilehash: 83b4ba3338db4351ef50af687d3632da83f45648
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0e8de1546c5efdde907209e98f9ee5d710ab2c2
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404679"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818552"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>輸入您從 Microsoft 開放購買的產品金鑰
 
@@ -38,7 +38,7 @@ ms.locfileid: "44404679"
   
  **需要其他內容嗎？**
  
- **如需 Microsoft 365 首頁或個人的協助**，請參閱搭配[Office 使用產品金鑰](https://support.office.com/article/12a5763a-d45c-4685-8c95-a44500213759.aspx)。
+ **如需 Microsoft 365 首頁或個人的協助**，請參閱搭配[Office 使用產品金鑰](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。
   
  **如需從零售商店購買的 Microsoft 365 商務標準的**說明，請參閱[輸入您從零售商店購買的產品金鑰](enter-your-product-key.md)。 
   
@@ -64,7 +64,7 @@ ms.locfileid: "44404679"
 
 查看此常見錯誤和解決方案清單：[您的產品金鑰有問題嗎？](product-key-errors-and-solutions.md)
   
-合作夥伴請參閱[合作夥伴：使用產品金鑰設定客戶訂閱](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40)。
+合作夥伴請參閱[合作夥伴：使用產品金鑰設定客戶訂閱](https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40)。
   
 大量授權客戶可造訪 [Microsoft 大量授權服務中心訓練與資源](https://go.microsoft.com/fwlink/p/?LinkId=618103)進一步瞭解。
   

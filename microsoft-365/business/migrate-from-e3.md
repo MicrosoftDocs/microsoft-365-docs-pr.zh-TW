@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何將您的業務移至 Microsoft 365 商務版，從 Office 365 E3。
-ms.openlocfilehash: 6571fb3ba53620fbb8b97d8f5fd76832f95b82c3
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: d72f0c52a745ff973868b6fdaa95efa1a37a3dbd
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515896"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785925"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>從 Office 365 E3 遷移至 Microsoft 365 商務版 Premium 
 
@@ -117,8 +117,8 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 
 ### <a name="threat-protection"></a>威脅防護
 
-在遷移至 Microsoft 365 商務版 Premium 後，您有 Office 365 ATP。 如需概要，請參閱[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要設定，請參閱[設定 atp 安全連結](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)、[設定 atp 安全附件](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，以及[設定 atp 反網路釣魚](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)。
+在遷移至 Microsoft 365 商務版 Premium 後，您有 Office 365 ATP。 如需概要，請參閱[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要設定，請參閱[設定 atp 安全連結](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)、[設定 atp 安全附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，以及[設定 atp 反網路釣魚](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
-若要開始使用敏感度標籤，請參閱[敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)和[建立及管理敏感度標籤](https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)影片。
+若要開始使用敏感度標籤，請參閱[敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)和[建立及管理敏感度標籤](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9)影片。

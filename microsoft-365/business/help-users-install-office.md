@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 協助您的使用者在 Windows 10 裝置上安裝 Office 應用程式，並在 Microsoft 365 系統管理中心輕鬆安裝 Windows 10 電腦上的 Office。
-ms.openlocfilehash: 617942c08b1fb27e8e864906774b4120486e0bb3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9c670ba6727d47276291b1d1ba35b6431a293200
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400903"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786231"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>協助您的使用者在 Windows 10 裝置上安裝 Office
 
@@ -46,7 +46,7 @@ ms.locfileid: "44400903"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/acce002c-0756-4b64-ac5d-2198ee96a9b1] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="manage-office-deployments"></a>管理 Office 部署
 
@@ -65,4 +65,4 @@ ms.locfileid: "44400903"
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>如需設定及使用 Microsoft 365 商務版 Premium 的詳細資訊
 
-[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

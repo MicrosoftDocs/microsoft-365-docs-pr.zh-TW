@@ -19,17 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解反垃圾郵件設定和篩選器，有助於防止 Exchange Online Protection （EOP）中的垃圾郵件。
-ms.openlocfilehash: d7c58fd4751bc7d92d5dfa3cadcfb7b24a3fc465
-ms.sourcegitcommit: 4cfb8a9c3675d0aefcabd690273e2af85f2e38b0
+ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44211413"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800104"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP 中的反垃圾郵件保護
 
 > [!NOTE]
-> 本主題適用于系統管理員。 如需使用者的主題，請參閱[垃圾郵件篩選程式的 [概述](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)]，並[瞭解垃圾郵件和網路釣魚](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31)。
+> 本主題適用于系統管理員。 如需使用者的主題，請參閱[垃圾郵件篩選程式的 [概述](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)]，並[瞭解垃圾郵件和網路釣魚](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31)。
 
 在未使用 Exchange online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織，電子郵件訊息會透過 EOP 自動抵禦垃圾郵件（垃圾郵件）。
 
@@ -83,7 +83,7 @@ EOP 中的反垃圾郵件設定是由下列技術所組成：
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>避免將垃圾郵件傳遞至收件匣
 
-- **驗證您的組織設定：請**留意允許郵件略過垃圾郵件篩選的設定（例如，如果您將自己的網域新增至反垃圾郵件原則中的允許網域清單）。 如需建議的設定，請參閱[EOP 和 Microsoft 365 ATP 安全性建議的設定](recommended-settings-for-eop-and-office365-atp.md)，並[建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
+- **驗證您的組織設定：請**留意允許郵件略過垃圾郵件篩選的設定（例如，如果您將自己的網域新增至反垃圾郵件原則中的允許網域清單）。 如需建議的設定，請參閱[EOP 和 Office 365 ATP security 的建議設定](recommended-settings-for-eop-and-office365-atp.md)，並[建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
 
 - **確認使用者信箱中已啟用垃圾郵件規則**：此規則預設為啟用，但如果停用，則標記為垃圾郵件的郵件就無法移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[在 Microsoft 365 中的 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 

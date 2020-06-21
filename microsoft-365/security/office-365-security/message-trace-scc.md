@@ -10,17 +10,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
+ms.custom:
+- seo-marvel-apr2020
 description: 系統管理員可以在安全性與合規性中心使用郵件追蹤，以了解郵件發生什麼情況。
-ms.openlocfilehash: 816f81b2339c8edb1317dcf517c10d5b8325941d
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352495"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819337"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件追蹤
 
-## <a name="overview"></a>概觀
+## <a name="message-trace-features"></a>郵件追蹤功能
 
 安全性與合規性中心內的郵件追蹤可追蹤透過 Exchange Online 組織收發的電子郵件。 您可以判斷服務是否已經收到、拒絕、延遲或傳遞郵件。 它也會顯示在郵件到達其最終狀態前，已對郵件執行哪些動作。
 
@@ -230,7 +232,7 @@ ms.locfileid: "44352495"
 
 - **sender_address**：寄件者的電子郵件地址 (*別名*@*網域*)。
 
-- **Recipient_status**：將郵件傳遞至收件者的狀態。 如果郵件已傳送至多個收件者，則會顯示所有收件者和其對應狀態，格式為：\<*電子郵件地址*\>##\<*狀態*\>。 例如：
+- **Recipient_status**：將郵件傳遞至收件者的狀態。 如果郵件傳送給多個收件者，它會顯示每個收件者的所有收件者和對應狀態，格式為： \<*email address*\> ## \<*status*\> 。 例如：
 
   - **##接收、傳送**表示郵件已由服務接收，而且已傳送到預定的目的地。
 

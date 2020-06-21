@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 系統管理員可以瞭解如何在 Exchange Online 中使用 S/MIME （安全/多用途網際網路郵件擴充）來加密電子郵件，並以數位方式簽署郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf9859240914e078eb62b0e914f8de79cf647f2d
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+ms.openlocfilehash: 95bbab5161f9e4133223a247f8937c68f29c0590
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224670"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811011"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>可用於 Exchange Online 中訊息簽署和加密的 S/MIME
 
@@ -40,18 +40,18 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
 
 對每個端點設定 S/MIME 時所採取的步驟會稍有不同。 通常需要執行下列步驟：
 
-1. 安裝以 Windows 為基礎的憑證授權單位，並且設定公開金鑰基礎結構，來核發 S/MIME 憑證。也支援協力廠商憑證提供者所發出的憑證。如需詳細資訊，請參閱 [Active Directory 憑證服務概觀](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
+1. Install a Windows-based Certification Authority and set up a public key infrastructure to issue S/MIME certificates. Certificates issued by third-party certificate providers are also supported. For details, see [Active Directory Certificate Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
 
 2. 在內部部署 AD DS 帳戶的 **UserSMIMECertificate** 和/或 **UserCertificate** 屬性中發佈使用者憑證。
 
-3. 針對 Exchange Online 組織，使用適當版本的 Azure AD Connect，將使用者憑證從 AD DS 同步處理至 Azure Active Directory。然後，這些憑證會從 Azure Active Directory 同步至 Exchange Online 目錄，並會在將郵件加密給收件者時使用。
+3. For Exchange Online organizations, synchronize the user certificates from AD DS to Azure Active Directory by using an appropriate version of Azure AD Connect. These certificates will then get synchronized from Azure Active Directory to Exchange Online directory and will be used when encrypting a message to a recipient.
 
 4. 設定虛擬憑證集合以驗證 S/MIME。 Outlook 網頁版會使用此資訊來驗證電子郵件的簽章，以確保電子郵件是以信任的憑證所簽署。
 
 5. 設定 Outlook 或 EAS 端點來使用 S/MIME。
 
 > [!NOTE]
-> 您無法在 Mac、iOS、Android 或其他非 Windows 裝置上的 Outlook 網頁版中安裝 S/MIME 控制。 如需詳細資訊，請參閱[在 Outlook 網頁版中使用 S/MIME 將郵件加密](https://support.microsoft.com/en-us/office/encrypt-messages-by-using-s-mime-in-outlook-on-the-web-878c79fc-7088-4b39-966f-14512658f480)。
+> 您無法在 Mac、iOS、Android 或其他非 Windows 裝置上的 Outlook 網頁版中安裝 S/MIME 控制。 如需詳細資訊，請參閱[在 Outlook 網頁版中使用 S/MIME 將郵件加密](https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480)。
 
 ## <a name="setup-smime-with-outlook-on-the-web"></a>使用 Outlook 網頁版設定 S/MIME
 

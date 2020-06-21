@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 設定 Office 365 的高級威脅防護，並保護機密資料，避免網路釣魚、惡意程式碼和其他威脅。
-ms.openlocfilehash: 6fa4d1595c379aaccf3a0cbfca020fbd32376fb9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d5510cdc082781fd9a1776e86b1bab1d8a2723d6
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400863"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44786199"
 ---
 # <a name="increase-threat-protection"></a>加強威脅防護
 
@@ -78,7 +78,7 @@ ms.locfileid: "44400863"
     
 5. 針對規則套用下表中的設定。 除非您想要變更預設值，否則請對其他設定使用預設值。
     
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
 |**設定**|**開啟 Office 檔案的附件之前警告使用者**||
 |:-----|:-----|:-----|
@@ -92,13 +92,13 @@ ms.locfileid: "44400863"
   
 - [如何處理勒索軟體](https://go.microsoft.com/fwlink/?linkid=2016501)
     
-- [還原您的 OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [還原您的 OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
 ## <a name="stop-auto-forwarding-for-email"></a>停止電子郵件的自動轉寄功能
 
 取得使用者信箱存取權的駭客可以透過將信箱設定為自動轉寄電子郵件，來竊取郵件。 即使沒有使用者的認知，也可能會發生這種情況。 若要避免發生這種情況，請設定郵件流程規則。 
   
-若要建立郵件傳輸規則，請觀看[這段簡短的影片](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7)，或遵循下列步驟：
+若要建立郵件傳輸規則，請觀看[這段簡短的影片](https://support.microsoft.com/office/f9d693ba-5c78-47c0-b156-8e461e062aa7)，或遵循下列步驟：
   
 1. 在 Microsoft 365 系統管理中心中，選取 [系統**管理中心**] [ \> **Exchange**]。
     
@@ -110,7 +110,7 @@ ms.locfileid: "44400863"
     
 5. 套用下表中的設定。 除非您想要變更預設值，否則請對其他設定使用預設值。
     
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
 |**設定**|**開啟 Office 檔案的附件之前警告使用者**|
 |:-----|:-----|
@@ -127,7 +127,7 @@ ms.locfileid: "44400863"
   
 建議您建立原則來保護您最重要的使用者和自訂網域，以開始使用這項保護。 
 
-若要建立 ATP 反網路釣魚原則，請觀看[這段簡短的訓練影片](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成下列步驟：
+若要建立 ATP 反網路釣魚原則，請觀看[這段簡短的訓練影片](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成下列步驟：
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。 
     
@@ -145,7 +145,7 @@ ms.locfileid: "44400863"
 |**設定或選項**<br/>|**建議的設定** <br/>|
 |:-----|:-----|
 |名稱  <br/> |網域和最有價值的活動人員  <br/> |
-|說明  <br/> |確定最重要的人員和我們的網域未進行類比。  <br/> |
+|描述  <br/> |確定最重要的人員和我們的網域未進行類比。  <br/> |
 |新增要保護的使用者  <br/> |選取 **[+ 新增條件]，收件者是**。 輸入使用者名稱，或輸入候選人、活動管理員及其他重要員工成員的電子郵件地址。 您最多可以新增20個要從類比中保護的內部和外部地址。  <br/> |
 |新增要保護的網域  <br/> |選取 **[+ 新增條件]，收件者網域是**。 輸入您的 Microsoft 365 訂閱相關聯的自訂網域（如果您已定義的話）。 您可以輸入一個以上的網域。  <br/> |
 |選擇動作  <br/> |如果模仿的使用者傳送電子郵件：選擇 [重新**導向郵件至其他電子郵件地址**]，然後輸入安全性管理員的電子郵件地址。例如，*劉愛琳 <span> <span> @contoso .com*。 如果電子郵件來自冒充的網域：請選擇 **[隔離郵件]**。  <br/> |
@@ -157,7 +157,7 @@ ms.locfileid: "44400863"
 
 人們經常傳送、接收及共用附件，例如文件、簡報和試算表等等。 只查看電子郵件訊息，不一定可輕易知道附件是否安全或有危害。 Office 365 的高級威脅防護包括 ATP 安全附件保護，但預設不會開啟此保護。 建議您建立新的規則，以開始使用這種保護。 這項保護會延伸至 SharePoint、OneDrive 和 Microsoft 小組中的檔案。
   
-若要建立 ATP 安全附件原則，請觀看[這段簡短的影片](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成下列步驟：
+若要建立 ATP 安全附件原則，請觀看[這段簡短的影片](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成下列步驟：
   
 1. 移至 [https://protection.office.com](https://protection.office.com) ，然後使用您的系統管理員帳戶登入。 
     
@@ -177,7 +177,7 @@ ms.locfileid: "44400863"
 |**設定或選項**|**建議的設定** <br/>|
 |:-----|:-----|
 |名稱  <br/> |使用偵測到的惡意程式碼封鎖目前和未來的電子郵件。  <br/> |
-|說明  <br/> |使用偵測到的惡意程式碼封鎖目前和未來的電子郵件和附件。  <br/> |
+|描述  <br/> |使用偵測到的惡意程式碼封鎖目前和未來的電子郵件和附件。  <br/> |
 |儲存附件未知的惡意程式碼回應  <br/> |Select **Block-封鎖目前和未來的電子郵件和附件偵測到的惡意**代碼。  <br/> |
 |在偵測時重新導向附件  <br/> |啟用重新導向（選取此方塊）輸入系統管理員帳戶或隔離的信箱設定。          若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍（選取此方塊）。  <br/> |
 |套用對象  <br/> |收件者網域是。 . . 選取您的網域。  <br/> |
@@ -194,7 +194,7 @@ ms.locfileid: "44400863"
     
 - 新增針對您網域中所有收件者的新原則。
     
-若要設定 ATP 安全連結，請觀看[這段簡短的訓練影片](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成下列步驟：
+若要設定 ATP 安全連結，請觀看[這段簡短的訓練影片](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成下列步驟：
   
 1. 移至 [https://protection.office.com](https://protection.office.com) ，然後使用您的系統管理員帳戶登入。 
     
@@ -208,7 +208,7 @@ ms.locfileid: "44400863"
     
 2. 在 [**電子郵件除外，套用至內容**] 底下，選取 [適用于**企業的 Microsoft 365 應用程式、Office iOS 和 Android**]。
     
-3. 選取 [儲存]****。 
+3. 選取 **[儲存]**。 
     
 若要建立新的原則針對您網域中的所有收件者：
   
@@ -216,7 +216,7 @@ ms.locfileid: "44400863"
     
 2. 套用下表所列的設定。
     
-3. 選取 [儲存]****。 
+3. 選取 **[儲存]**。 
 
 |**設定或選項**|**建議的設定** <br/>|
 |:-----|:-----|

@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '遵循此檢查清單，從 Microsoft 365 中移除員工，並保護資料安全。 '
-ms.openlocfilehash: 1b691d948576a3949d637d2de05b6f931844037c
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: adf5c683828b30a978199145fa2c54f17d1b6b37
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431650"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780574"
 ---
 # <a name="remove-a-former-employee"></a>移除離職員工
 
@@ -49,7 +49,7 @@ ms.locfileid: "44431650"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 若要移除員工：
 
@@ -110,12 +110,12 @@ ms.locfileid: "44431650"
 |:-----|:-----|
 |**步驟** <br/> |**這樣做的原因** <br/> |
 |1. [儲存離職員工信箱的內容](#save-the-contents-of-a-former-employees-mailbox) <br/> |對於即將接掌員工工作或萬一發生訴訟這些情況來說，這樣做非常有效。  <br/> |
-|2.[將離職員工的電子郵件轉寄給另一個員工，或轉換為共用信箱](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |這讓離職員工的電子郵件地址也能繼續保持有效。如果客戶或合作夥伴仍將電子郵件傳送到離職員工的地址，這樣做可讓他們與接掌工作的人員取得聯繫。  <br/> |
+|2.[將離職員工的電子郵件轉寄給另一個員工，或轉換為共用信箱](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |This lets you keep the former employee's email address active. If you have customers or partners still sending email to the former employee's address, this gets them to the person taking over the work.  <br/> |
 |3. [抹除及封鎖離職員工的行動裝置](#wipe-and-block-a-former-employees-mobile-device) <br/> |從手機或平板電腦中移除您的業務資料。  <br/> |
 |4.[封鎖離職員工對 Microsoft 365 資料的存取權](#block-a-former-employees-access-to-microsoft-365-data)<br/> |它可防止人員存取其舊的 Microsoft 365 信箱和資料。  <br/><br/> **提示**：當您封鎖使用者的存取權時，您仍需支付其授權。 您必須從您的訂閱中刪除該授權才能停止付費 (步驟 5)。           |
 |5.[移動員工的 OneDrive 內容](get-access-to-and-back-up-a-former-user-s-data.md) (機器翻譯) <br/> |如果您只移除使用者的授權，但不刪除帳戶，則使用者 OneDrive 中的內容將會保留，即使超過 30 天後仍可存取。  <br/><br/> 在您刪除帳戶之前，您應該將其 OneDrive 內容移動至另一個可讓您輕鬆存取的位置。 在您刪除員工的帳戶之後，其 OneDrive 中的內容會保留**30**天。 不過，在這 30 天內，您可以還原使用者的帳戶，並取得其 OneDrive 內容的存取權。 如果您還原該使用者的帳戶，其 OneDrive 內容將會保留，即使超過 30 天後仍可存取。  <br/> |
-|5a. 如果該人員使用個人電腦存取 OneDrive 和 SharePoint，會怎麼樣？  <br/> |如果他們使用個人電腦 (而不是公司核發的電腦) 從 OneDrive 和 SharePoint 下載檔案，您就無法抹除他們儲存的檔案。  <br/><br/> 他們將可繼續存取已同步處理到電腦的任何檔案。  <br/> |
-|6.[從離職員工移除並刪除 Microsoft 365 授權](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |當您移除授權時，您可將授權指派給其他人員。或者，您也可以刪除授權，這樣就不必在雇用另一位人員之前繼續付費。<br/><br/> 當您移除或刪除授權時，使用者的舊電子郵件、連絡人及行事曆會保留**30 天**，然後永久刪除。 如果您移除或刪除使用者的授權，但不刪除帳戶，則使用者 OneDrive 中的將會保留，即使超過 30 天後仍可存取。  <br/> |
+|5a. What if the person used their personal computer to access OneDrive and SharePoint?  <br/> |如果他們使用個人電腦 (而不是公司核發的電腦) 從 OneDrive 和 SharePoint 下載檔案，您就無法抹除他們儲存的檔案。  <br/><br/> 他們將可繼續存取已同步處理到電腦的任何檔案。  <br/> |
+|6.[從離職員工移除並刪除 Microsoft 365 授權](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |When you remove a license, you can assign it to someone else. Or, you can delete the license so you don't pay for it until you hire another person.  <br/><br/> 當您移除或刪除授權時，使用者的舊電子郵件、連絡人及行事曆會保留**30 天**，然後永久刪除。 如果您移除或刪除使用者的授權，但不刪除帳戶，則使用者 OneDrive 中的將會保留，即使超過 30 天後仍可存取。  <br/> |
 |7. [刪除離職員工的使用者帳戶](#delete-a-former-employees-user-account)<br/> |這會從您的系統管理中心移除帳戶。 保持有條不紊。  <br/> |
    
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>儲存離職員工信箱的內容
@@ -123,11 +123,11 @@ ms.locfileid: "44431650"
 
 有兩種方法可儲存離職員工信箱的內容：
   
-1. 將離職員工的電子郵件地址新增到您的 Outlook 2013 或 2016 版本，然後將資料匯出到 .pst 檔案。您可以視需要將資料匯入到其他電子郵件帳戶。若要了解做法，請參閱[存取及備份離職使用者的資料](get-access-to-and-back-up-a-former-user-s-data.md)。
+1. Add the former employee's email address to your version of Outlook 2013 or 2016, and then export the data to a .pst file. You can import the data to another email account as needed. To learn how to do this, see [Get access to and back up a former user's data](get-access-to-and-back-up-a-former-user-s-data.md).
     
     或
     
-2. 在刪除使用者帳戶之前，將其信箱設為訴訟資料暫留或就地保留。雖然這個方法比第一個選項複雜，但如果發生下列情況，就適合採用這個方法︰您的企業方案包含封存和法務保存措施、企業可能要進行訴訟，以及企業擁有技術強大的 IT 部門。
+2. Place a Litigation Hold or In-Place Hold on the mailbox before the deleting the user account. This is much more complicated than the first option but worth doing if: your Enterprise plan includes archiving and legal hold, litigation is a possibility, and you have a technically strong IT department.
     
     一旦您將信箱轉換成「非作用中的信箱」，系統管理員、法務人員或記錄管理員就能使用 Exchange Online 中的就地電子文件探索工具存取及搜尋當中的內容。
     
@@ -142,7 +142,7 @@ ms.locfileid: "44431650"
   
 - 建立共用信箱是不太昂貴的方式，因為您不需要支付授權，只要信箱小於**50GB**。 若超過 50GB，您將需要指派授權。 
     
-- 假如您將信箱轉換成共用信箱，也能取得所有舊的電子郵件。這可能佔用大量空間。
+- If you convert the mailbox to a shared mailbox, all the old email will be available, too. This can take up a lot of space.
     
 - If you set up email forwarding, only  *new*  emails sent to the former employee will now be sent to the current employee. 
     
@@ -340,16 +340,16 @@ ms.locfileid: "44431650"
 ## <a name="how-the-deleted-employee-account-affects-skype-for-business"></a>已刪除的員工的帳戶會如何影響商務用 Skype
 <a name="bkmk_remove"> </a>
 
-當您在 Office 365 中移除使用者的授權後，系統會釋出與該使用者相關的 PSTN 通話號碼，方便您將該號碼指派給其他使用者。
+When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
   
-如果授權被移除的使用者屬於某個佇列群組，通話佇列代理程式將無法再指定這些使用者。因此，我們建議您一併從與該通話佇列相關的群組中移除該使用者。 
+If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue. 
   
 ## <a name="delete-a-former-employees-user-account"></a>刪除離職員工的使用者帳戶
 <a name="bkmk_delete"> </a>
 
 儲存並存取離職員工的所有使用者資料後，您可以刪除離職員工的帳戶。
   
-如果您已經設定電子郵件轉寄功能或將它轉換為共用信箱的話，請不要刪除該帳戶。這兩者都需要該帳戶做為轉寄或共用信箱功能的錨點。
+Don't delete the account if you've set up email forwarding or converted it to a shared mailbox. Both need the account to anchor the forwarding or shared mailbox.
 
 ::: moniker range="o365-worldwide"
 
@@ -381,7 +381,7 @@ ms.locfileid: "44431650"
 
 ::: moniker-end
 
-當您刪除使用者時，帳戶會變成非作用中的狀態並持續大約 30 天。在這段期間內，您可以還原該帳戶，但 30 天一過，就會永久刪除。
+When you delete a user, the account becomes inactive for approximately 30 days. You have until then to restore the account before it is permanently deleted.
   
 ### <a name="does-your-organization-use-active-directory"></a>貴組織是否使用 Active Directory？
 
@@ -400,8 +400,8 @@ ms.locfileid: "44431650"
 |:-----|:-----|
 |**您可以執行的作業** <br/> |**做法** <br/> |
 |終止工作階段 (例如 Outlook 網頁版、Outlook、Exchange Active Sync 等等)，並強制開啟新工作階段  <br/> |重設密碼  <br/> |
-|終止工作階段並封鎖對日後工作階段的存取 (針對所有通訊協定)  <br/> |停用帳戶。例如 (在 Exchange 系統管理中心或使用 PowerShell)：  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
-|終止特定通訊協定的工作階段 (例如 ActiveSync)  <br/> |停用通訊協定。例如 (在 Exchange 系統管理中心或使用 PowerShell)：  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
+|終止工作階段並封鎖對日後工作階段的存取 (針對所有通訊協定)  <br/> |Disable the account. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-Mailbox user@contoso.com -AccountDisabled:$true` <br/> |
+|終止特定通訊協定的工作階段 (例如 ActiveSync)  <br/> |Disable the protocol. For example (in the Exchange admin center or using PowerShell):  <br/>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false` <br/> |
    
 上述作業可在 3 個位置完成：
   

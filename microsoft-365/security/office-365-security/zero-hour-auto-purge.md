@@ -21,16 +21,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解零小時自動清除（ZAP）如何 retroactively 將 Exchange Online 信箱中已傳遞的郵件移至垃圾郵件資料夾或已 retroactively 發現為垃圾郵件或網路釣魚的隔離區。
-ms.openlocfilehash: 643063139f5d65b0271fd14ee5a2d1ca1f42ad1a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 612ef45194fbf70ef89eee0f455b2d4d8781247f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208437"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819421"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Exchange Online 中的零小時自動清除（ZAP）
 
-## <a name="overview"></a>概觀
+## <a name="basic-features-of-zap"></a>ZAP 的基本功能
 
 在 Exchange Online 中具有信箱的 Microsoft 365 組織中，零小時自動清除（ZAP）是一種電子郵件保護功能，retroactively 偵測並 neutralizes 已傳遞至 Exchange Online 信箱的惡意網路釣魚、垃圾郵件或惡意程式碼郵件。
 
@@ -80,7 +80,7 @@ ms.locfileid: "44208437"
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Office 365 高級威脅防護的 ZAP 考慮（Office 365 ATP）
 
-在[動態傳遞](dynamic-delivery-and-previewing.md)掃描的處理常式中，或惡意程式碼篩選已使用**惡意程式碼警示文字 .txt**檔取代附件的情況下，ZAP 將不會隔離任何郵件。 如果針對這些類型的郵件接收網路釣魚或垃圾郵件信號，而且反垃圾郵件原則中的篩選判定會設定為對郵件採取某些動作（移至 [垃圾郵件]、[重新導向]、[刪除] 隔離），則 ZAP 會預設為「移至垃圾郵件」動作。
+ZAP 不會隔離[動態傳遞](dynamic-delivery-and-previewing.md)掃描之程式中的任何郵件，或者惡意程式碼篩選已使用**惡意軟體警示**取代附件 Text.txt檔案。 如果針對這些類型的郵件接收網路釣魚或垃圾郵件信號，而且反垃圾郵件原則中的篩選判定會設定為對郵件採取某些動作（移至 [垃圾郵件]、[重新導向]、[刪除] 隔離），則 ZAP 會預設為「移至垃圾郵件」動作。
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>如何查看 ZAP 是否已移動您的郵件
 
@@ -103,10 +103,6 @@ ms.locfileid: "44208437"
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>如果郵件移至另一個資料夾（例如收件匣規則），該怎麼辦？
 
 只要郵件尚未刪除，或是尚未套用相同或更強的動作，ZAP 仍可運作。 例如，如果網路釣魚原則設定為 [隔離]，而且使用者或系統管理員已經 junked 電子郵件，則隔離會採取動作隔離檔案。
-
-### <a name="does-zap-change-the-message-header"></a>ZAP 是否會變更郵件頭？
-
-ZAP 動作不會對郵件頭進行任何變更。
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>ZAP 如何影響信箱的保留狀態？
 

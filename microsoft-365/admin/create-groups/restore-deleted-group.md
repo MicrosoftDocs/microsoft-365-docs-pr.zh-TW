@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 瞭解如何還原已刪除的 Microsoft 365 群組。
-ms.openlocfilehash: 24e5159dd85ab6ede324b3981e3e592f1c2ead70
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d7cf548816af1661298458f27c704d654845075d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400686"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818504"
 ---
 # <a name="restore-a-deleted-group"></a>還原已刪除的群組
 
@@ -56,9 +56,9 @@ ms.locfileid: "44400686"
 
 - Yammer 群組和群組內容（如果 Microsoft 365 群組是由 Yammer 建立）
 
-## <a name="restore-a-group-that-you-own-by-using-outlook"></a>使用 Outlook 還原您擁有的群組
+## <a name="restore-a-group-that-you-own-by-using-outlook-on-the-web"></a>使用 Outlook 網頁版還原您擁有的群組
 
-如果您是 Microsoft 365 群組的擁有者，您可以遵循下列步驟，自行在 Outlook 中還原群組：
+如果您是 Microsoft 365 群組的擁有者，您可以遵循下列步驟，在網頁版 Outlook 中還原群組：
 
 1. 在 [[刪除的群組] 頁面](https://outlook.office.com/people/group/deleted)上，選取 [**群組**] 節點底下的 [**管理群組**] 選項，然後選擇 [**刪除**]。
 
@@ -96,7 +96,7 @@ Get-AzureADMSDeletedGroup
 Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 ```
 
-若要確認群組已成功清除，請再次執行  *Get-AzureADMSDeletedGroup*  Cmdlet 來確認該群組已不再顯示在虛刪除群組清單中。某些情況下，最多可能需要 24 小時才能永久刪除群組及其所有資料。 
+To confirm that the group has been successfully purged, run the  *Get-AzureADMSDeletedGroup*  cmdlet again to confirm that the group no longer appears on the list of soft-deleted groups. In some cases it may take as long as 24 hours for the group and all of its data to be permanently deleted. 
   
 ## <a name="got-questions-about-microsoft-365-groups"></a>有關于 Microsoft 365 群組的問題嗎？
 
@@ -108,6 +108,6 @@ Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
   
 [使用 Remove-UnifiedGroup Cmdlet 來刪除群組](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   
-[管理連接群組的小組網站設定](https://support.office.com/article/8376034d-d0c7-446e-9178-6ab51c58df42.aspx) (機器翻譯)
+[管理連接群組的小組網站設定](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (機器翻譯)
   
-[在 Outlook 中刪除群組](https://support.office.com/article/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f.aspx) (機器翻譯)
+[在 Outlook 中刪除群組](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f) (機器翻譯)

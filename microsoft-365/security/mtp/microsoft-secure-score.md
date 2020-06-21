@@ -17,12 +17,15 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 383ef5a0ff61b861bd72dc08d7b974ef98592fcc
-ms.sourcegitcommit: 614666afb104fc97acb4a2ee5577ef63c0de153a
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+ms.openlocfilehash: a7097bfc9fb4c15408672171b27d577ddfaa9bd5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/09/2020
-ms.locfileid: "44173389"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818564"
 ---
 # <a name="microsoft-secure-score-previous-iteration"></a>Microsoft Secure 得分（先前的反覆運算）
 
@@ -43,7 +46,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 此外，您可以透過[Microsoft GRAPH API](https://www.microsoft.com/security/partnerships/graph-security-api)來存取您的建議和評分。 深入瞭解[安全分數資源類型](https://go.microsoft.com/fwlink/?linkid=2092996)。
 
-## <a name="how-it-works"></a>運作方式
+## <a name="how-your-secure-score-is-calculated"></a>如何計算您的安全分數
 
 您可以在設定建議的安全性功能、執行安全性相關工作（如查看報告），或使用協力廠商應用程式或軟體解決改進動作的情況下，取得點數。 有些改進動作只會在完全完成時給予點，有些的動作會在某些裝置或使用者完成時提供部分分數。
 
@@ -102,8 +105,8 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 在 [Microsoft Secure 得分一覽] 頁面中，您可以看到各群組之間的點數如何分割，以及哪些點可供使用。 [一覽表] 頁面也是取得整體總分、您的安全分數與基準比較之歷史趨勢的完整視圖，以及可以採取以改善評分的優先改進動作的位置。
 
-![安全分數主頁](../../media/secure-score/homepage-original.png)
-*圖1： Microsoft Secure 得分一覽頁面*
+![安全分數主頁 ](../../media/secure-score/homepage-original.png)
+ *圖1： Microsoft Secure 得分一覽頁面*
 
 ## <a name="take-action-to-improve-your-score"></a>採取動作以提升您的分數
 

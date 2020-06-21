@@ -10,13 +10,15 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
+ms.custom:
+- seo-marvel-apr2020
 description: 系統管理員可以在安全性 & 合規性中心的郵件流程儀表板中深入瞭解未接受的網域報告。
-ms.openlocfilehash: 64bf572db90b44512ca72aec5733a99373d8f53f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a630d5b9674dbb136ecc54b23acd4408534d6fbc
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635277"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819518"
 ---
 # <a name="non-accepted-domain-report"></a>非公認的網域報告
 
@@ -34,6 +36,6 @@ ms.locfileid: "43635277"
 
 ![在 [不接受的網域報告] 的 [詳細資料] 表格中選取一列](../../media/non-accepted-domain-report-select-row-in-table.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="related-topics"></a>相關主題
 
 如需郵件流量儀表板中其他郵件流程深入解析之詳細資訊，請參閱[安全性與合規性中心中郵件流程深入解析](mail-flow-insights-v2.md)。

@@ -14,23 +14,23 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: 深入瞭解 Office 365 ATP 中的安全檔。
-ms.openlocfilehash: e9b1fadd3e9e6dab337a0c3ded380c5c49f53bab
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+description: 深入瞭解 Microsoft 365 E5 或 Microsoft 365 E5 Security 中的安全檔。
+ms.openlocfilehash: 1861671df5cfa9dab4b57d5fb53af8712a2a64ce
+ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678667"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44811059"
 ---
-# <a name="safe-documents-in-office-365-advanced-threat-protection"></a>Office 365 進階威脅防護中的安全文件
+# <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全檔
 
-安全檔是 Office 365 高級威脅防護（Office 365 ATP）中的一項功能，可使用[Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)來掃描在[受保護的檢視](https://support.office.com/article/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)中開啟的檔和檔案。
+安全檔是 Microsoft 365 E5 或 Microsoft 365 E5 安全性中的一項功能，可使用[Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)來掃描在[受保護的檢視](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)中開啟的檔和檔案。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 只有使用 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權的使用者才能使用此功能。
 
-- 安全檔目前可用於公開預覽，可供使用者在目前通道（預覽）上的[Office 預覽人員計畫](https://insider.office.com/en-us/join)中使用，其為 office 版本2002（12527.20092）或更高版本。 此功能預設為關閉，必須由安全性管理員啟用。
+- 安全檔目前可用於公開預覽，可供使用者在目前通道（預覽）上的[Office 預覽人員計畫](https://insider.office.com/join)中使用，其為 office 版本2002（12527.20092）或更高版本。 此功能預設為關閉，必須由安全性管理員啟用。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 

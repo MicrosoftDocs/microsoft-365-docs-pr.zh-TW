@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: '深入瞭解 Office 365 的註冊程式之前，您需要瞭解的知識。 '
-ms.openlocfilehash: 3b3212eeb5e95d4be24029a78f9af4d1b02931ce
-ms.sourcegitcommit: a418195dc11e6251ae37e788c102bbaa7087e44e
+ms.openlocfilehash: dd374cd12f4e3a041869d17157e7198445f99e69
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44579166"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780514"
 ---
 # <a name="how-to-sign-up---admin-help"></a>如何註冊系統管理員協助
 
@@ -70,7 +70,7 @@ ms.locfileid: "44579166"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 您在選擇時需要協助嗎？ 銷售顧問可隨時為您提供解答。 請移至 [[比較所有產品](https://products.office.com/compare-all-microsoft-office-products?tab=2)]，然後選擇頁面左側所列的其中一個連絡人支援選項。
   
@@ -117,7 +117,7 @@ ms.locfileid: "44579166"
 
   - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
 
-  - **電子郵件** 與 **電話號碼** ，萬一需要就訂閱問題連絡您時，就能派上用場。比方說，如果您忘記密碼，我們就會利用這項資訊，傳送暫時密碼給您。我們也會把帳單資訊傳送到您所指定的電子郵件地址。
+  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
 
     > [!NOTE]
     > 您在這裡輸入的電子郵件地址與您的 Microsoft 365 電子郵件地址（您的登入名稱，如下所示）不同。 由於我們也會使用這個電子郵件地址傳送帳單資訊給您，建議您使用適合接收商務電子郵件的電子郵件地址。
@@ -137,4 +137,4 @@ ms.locfileid: "44579166"
 
 ## <a name="see-also"></a>請參閱
 
-[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

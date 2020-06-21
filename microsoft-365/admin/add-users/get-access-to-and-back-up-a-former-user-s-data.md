@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: 瞭解如何在人員離開組織時保留員工的檔案和電子郵件。
-ms.openlocfilehash: 13cc1117c52a45f4ec1389d2e8b9f0189f4730e1
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 32f64efb30acb5438e5add8bcb897200951e6362
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431710"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780610"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>存取及備份離職使用者的資料
 
@@ -141,7 +141,7 @@ ms.locfileid: "44431710"
 
 若要儲存先前員工的電子郵件、行事曆、工作和連絡人，請將資訊匯出至 Outlook 資料檔案（.pst）。
   
-1. [將離職員工的電子郵件新增](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)至您的 Outlook （如果您[重設使用者的密碼](reset-passwords.md)，您可以將它設定為您知道的內容）。
+1. [將離職員工的電子郵件新增](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)至您的 Outlook （如果您[重設使用者的密碼](reset-passwords.md)，您可以將它設定為您知道的內容）。
     
 2. 在 Outlook 中，**選取 [** 檔案]。
     
@@ -181,7 +181,7 @@ Outlook 會立即開始匯出，除非已建立新的 Outlook 資料檔（.pst�
     
   - 如果您要匯出的現有 Outlook 資料檔案（.pst）是受密碼保護，請在 [ **Outlook 資料檔案密碼**] 對話方塊中，輸入*密碼*，然後選取 **[確定]**。
     
-請參閱如何[將電子郵件、連絡人及行事曆匯出或備份至 outlook 2010 中的 outlook .pst](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx)檔案。 
+請參閱如何[將電子郵件、連絡人及行事曆匯出或備份至 outlook 2010 中的 outlook .pst](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)檔案。 
   
   
   > [!NOTE]

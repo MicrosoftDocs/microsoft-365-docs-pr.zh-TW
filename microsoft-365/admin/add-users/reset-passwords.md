@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: '瞭解如何在 Microsoft 365 for business 訂閱中重設使用者的密碼。 '
-ms.openlocfilehash: 44052ee0c795143d67d832f9528e3eea7232f1cb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d1c17448a1f9993b056fa2dc428980acf8ef82b4
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386970"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780562"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
@@ -40,11 +40,11 @@ ms.locfileid: "44386970"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
   
 ## <a name="let-users-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
-我們強烈建議您設定自助密碼重設，這樣您就不必手動重設使用者的密碼。若要深入了解，請參閱[讓使用者在 Office 365 中自行重設密碼](let-users-reset-passwords.md)。
+We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
   
 ## <a name="reset-a-business-password-for-someone-else"></a>重設其他人的商務密碼
 
@@ -118,11 +118,11 @@ ms.locfileid: "44386970"
 ## <a name="reset-business-passwords-in-bulk"></a>大量重設商務密碼
 <a name="bkmk_forgot"> </a>
 
-使用 PowerShell！請參閱由 Eyal Doron 撰寫的這篇文章：[使用 PowerShell 管理密碼](https://go.microsoft.com/fwlink/?linkid=853696)。
+Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
 相關文章︰[設定多個使用者帳戶的密碼](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。
   
-如需概要資訊，請參閱[PowerShell For Microsoft 365 administrators](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1)。
+如需概要資訊，請參閱[PowerShell For Microsoft 365 administrators](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>針對企業中的所有使用者強制執行密碼變更
 <a name="bkmk_forgot"> </a>
@@ -132,7 +132,7 @@ ms.locfileid: "44386970"
 ## <a name="im-lost"></a>我不知道該怎麼辦！
 <a name="bkmk_forgot"> </a>
 
-請嘗試這篇文章中的方法：[我忘記了與 Office 搭配使用之帳戶的使用者名稱或密碼](https://support.office.com/article/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)。
+請嘗試這篇文章中的方法：[我忘記了與 Office 搭配使用之帳戶的使用者名稱或密碼](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)。
   
 ## <a name="related-articles"></a>相關文章
 <a name="bkmk_forgot"> </a>
@@ -147,4 +147,4 @@ ms.locfileid: "44386970"
 
 [移除離職員工](remove-former-employee.md)
 
-[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

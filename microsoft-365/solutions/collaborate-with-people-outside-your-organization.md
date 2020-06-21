@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何設定 Microsoft 365，以與組織外部的人員共同作業。
-ms.openlocfilehash: 5d85b164133d235dce410cd6cbda778588fd093a
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 4d5be2d560017978d08bf9f5b06c9e2011606c6d
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160012"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819409"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>與組織外部人員合作
 
@@ -57,7 +57,7 @@ Microsoft 365 中的外部共用功能可讓您組織中的人員與合作夥伴
 
 如果 Microsoft 365 中的某些共用功能與您的控管原則衝突，請參閱[限制共用在 microsoft 365 中](microsoft-365-limit-sharing.md)以瞭解限制共用的選項。
 
-## <a name="see-also"></a>另請參閱
+## <a name="related-topics"></a>相關主題
 
 [在 Microsoft 365 中簡介檔共同作業](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 

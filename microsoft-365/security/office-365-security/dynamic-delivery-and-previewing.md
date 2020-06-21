@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: 當您設定 ATP 安全附件原則時，您選擇 [動態傳遞] 來避免郵件延遲，並讓人員預覽正在掃描的附件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c30803efd2dafedd6d988de5374f08bd61f7d2a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034789"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819349"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>使用 ATP 安全附件的動態傳送和預覽
 
-## <a name="overview"></a>概觀
+## <a name="basic-features-of-dynamic-delivery"></a>動態傳遞的基本功能
 
 [動態傳遞] 是一個選項，可以針對 [ATP 安全附件](atp-safe-attachments.md)進行選取。 請參閱這篇文章，了解 [Office 365 中的 ATP 安全附件](atp-safe-attachments.md)中的動態傳遞和附件預覽功能。
 
@@ -80,7 +80,7 @@ ATP 安全附件掃描會在 Microsoft 365 資料所在的相同區域中進行�
 
 - 處於錯誤狀態的使用者信箱搜尋資料夾
 
-- Exchange Online 系統管理員已啟用 Exclaimer 的環境。 若要解決此問題，請參閱[使用 ATP 動態傳遞和 Exclaimer 時，不會傳遞含有附件的郵件](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
+- Exchange Online 系統管理員已啟用 Exclaimer 的環境。 若要解決此問題，請參閱[使用 ATP 動態傳遞和 Exclaimer 時，不會傳遞含有附件的郵件](https://support.microsoft.com/help/4014438)
 
 - 使用 [安全多用途網際網路郵件延伸 (S/MIME)](s-mime-for-message-signing-and-encryption.md)) 加密的郵件
 

@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 8b991fb6cf8f03f2ff686c89251f53f53f87a5e1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 99112b70715770b24c1454fbd9442d2b5b6f08ea
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352543"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800128"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>至身分識別和超過-一種架構師的視點
 
@@ -134,7 +134,7 @@ Azure AD 的原則引擎是使用條件式[存取原則](https://docs.microsoft.
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
 - [Azure 高級威脅防護](https://docs.microsoft.com/azure-advanced-threat-protection/)（azure ATP）
 - [Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)（MICROSOFT defender ATP）
-- [Microsoft 365 高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)（MICROSOFT 365 ATP）
+- [Office 365 高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)（OFFICE 365 ATP）
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) （MCAS）
 - [Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide)（MTP）
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
@@ -310,7 +310,7 @@ Azure Role-Based 存取控制（RBAC）可啟用 Azure 的微調存取管理。 
 
 :::image type="content" source="../media/solutions-architecture-center/identity-beyond-illustration-5.png" alt-text="委派管理之 Azure 元件的高層級視圖":::
 
-如您在上圖看到的，許多其他服務應視為設計的一部分（例如， [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)、 [Asure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview)、[管理群組](https://docs.microsoft.com/azure/governance/management-groups/)等）。
+如您在上圖看到的，許多其他服務應視為設計的一部分（例如， [Azure 原則](https://docs.microsoft.com/azure/governance/policy/overview)、 [azure 藍圖](https://docs.microsoft.com/azure/governance/blueprints/overview)、[管理群組](https://docs.microsoft.com/azure/governance/management-groups/)等）。
 
 ## <a name="conclusion"></a>總結
 以簡短摘要開始，結束時間超過預期。  我希望您現在可以深入瞭解如何為您的組織建立委派模型。  這種交談對客戶而言非常常見。 沒有任何一種可供每個人運作的模型。 在記錄我們跨客戶看到的常見模式之前，請先等待 Microsoft 工程的一些計畫改進專案。 同時，您可以與您的 Microsoft 帳戶小組合作，安排訪問最接近的[Microsoft 技術中心](https://www.microsoft.com/mtc)。  請參閱！

@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解 Microsoft 365 商務版 Premium 包含的專案，並取得註冊 Microsoft 365 商務版 Premium 的逐步指引。
-ms.openlocfilehash: 50662149ae2faa99c567080d5e914c3300ac3494
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5cee380998b188e7d5845becacfa46383905737f
+ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401551"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785665"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium"></a>註冊 Microsoft 365 商務版 Premium
 
@@ -54,7 +54,7 @@ ms.locfileid: "44401551"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 若要為您的企業註冊和購買 Microsoft 365，請完成下列步驟：
 
@@ -97,4 +97,4 @@ ms.locfileid: "44401551"
 
 ## <a name="see-also"></a>請參閱
 
-[商務用 Microsoft 365 訓練影片](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[商務用 Microsoft 365 訓練影片](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
