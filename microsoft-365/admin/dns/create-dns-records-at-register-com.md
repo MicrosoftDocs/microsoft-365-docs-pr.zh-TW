@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Register.com。
-ms.openlocfilehash: 7b2353b4b6832c9316e302ace4db948e2550a28f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7a11fa248f2602eb02fe1242234d26584bd33fd2
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400325"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780322"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>在 Register.com 建立 Microsoft 的 DNS 記錄
 
@@ -34,7 +34,7 @@ ms.locfileid: "44400325"
   
 如果 Register.com 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
   
-以下是要新增的主要記錄。 請依照下列步驟操作或[觀看影片](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+以下是要新增的主要記錄。 請依照下列步驟操作或[觀看影片](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
 - [在 Register.com 新增 TXT 記錄以驗證您擁有該網域](#add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain)
     
@@ -56,12 +56,12 @@ ms.locfileid: "44400325"
 ## <a name="add-a-txt-record-at-registercom-to-verify-that-you-own-the-domain"></a>在 Register.com 新增 TXT 記錄以驗證您擁有該網域
 <a name="BKMK_verify"> </a>
 
-在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
-> 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-請依照下列步驟操作或[觀看影片 (從 0:44 處開始)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片 (從 0:44 處開始)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
 1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。 系統會提示您先登入。
     
@@ -104,7 +104,7 @@ ms.locfileid: "44400325"
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft
 <a name="BKMK_add_MX"> </a>
 
-請依照下列步驟操作或[觀看影片 (從 3:32 處開始)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片 (從 3:32 處開始)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
 1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。 系統會提示您先登入。
     
@@ -143,7 +143,7 @@ ms.locfileid: "44400325"
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
 
-請依照下列步驟操作或[觀看影片 (從 4:23 處開始)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片 (從 4:23 處開始)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
 1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。 系統會提示您先登入。
     
@@ -189,7 +189,7 @@ ms.locfileid: "44400325"
 > [!IMPORTANT]
 > 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 而是，請將必要的 Microsoft 值新增到目前的記錄，以便擁有包含這兩組值的單一 SPF 記錄。  
   
-請依照下列步驟操作或[觀看影片 (從 5:12 處開始)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片 (從 5:12 處開始)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
 1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。 系統會提示您先登入。
     
@@ -222,9 +222,9 @@ ms.locfileid: "44400325"
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
 
-請依照下列步驟操作或[觀看影片 (從 5:55 處開始)](https://support.office.com/article/Video-Create-DNS-records-at-Register-com-for-Office-365-7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片 (從 5:55 處開始)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
-1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。系統會提示您先登入。
+1. To get started, go to your domains page at Register.com by using [this link](https://www.register.com/myaccount/). You'll be prompted to sign in.
     
 2. Select **Domains**.
     

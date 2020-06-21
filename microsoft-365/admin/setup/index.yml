@@ -2,7 +2,7 @@
 title: 開始使用
 summary: 請參閱這些資源，以協助系統管理員進行常見的工作，或參閱左側的功能窗格以取得完整清單。
 metadata:
-  title: 開始使用
+  title: 入門
   description: 設定您的訂閱和電子郵件。 新增使用者和安裝應用程式
   ms.service: O365-administration
   ms.topic: landing-page
@@ -11,12 +11,12 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 78178db0f24cb9e1420de2010bf1e15c88f38d9e
-  ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+  ms.openlocfilehash: 0af560ae2a7f8aa028e0cb493c9070f78f93e0a4
+  ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "44545916"
+  ms.lasthandoff: 06/17/2020
+  ms.locfileid: "44779842"
 landingContent:
 - title: 註冊
   linkLists:
@@ -27,11 +27,11 @@ landingContent:
   - linkListType: video
     links:
     - text: 註冊並設定 Microsoft 商業基本版
-      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
     - text: 註冊 Microsoft 商務標準版
-      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
     - text: 註冊 Microsoft 商務版 Premium
-      url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+      url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
 - title: 引導設定
   linkLists:
   - linkListType: overview
@@ -61,10 +61,10 @@ landingContent:
   - linkListType: video
     links:
     - text: 在 Android 上安裝應用程式
-      url: https://support.office.com/article/647909af-560f-4977-ae45-3b45ad9e8236
+      url: https://support.microsoft.com/office/647909af-560f-4977-ae45-3b45ad9e8236
     - text: 在 iOS 上安裝應用程式
-      url: https://support.office.com/article/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
+      url: https://support.microsoft.com/office/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
     - text: 訓練使用者
-      url: https://support.office.com/office-training-center
+      url: https://support.microsoft.com/training
     - text: 將電腦連線至 Microsoft 365 商務版 Premium
-      url: https://support.office.com/article/cd5716f6-05de-430b-ac94-662d5ee71d07
+      url: https://support.microsoft.com/office/cd5716f6-05de-430b-ac94-662d5ee71d07

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 在 FAQ 中尋找問題的答案以深入瞭解網域。
-ms.openlocfilehash: c82d5d01d64ad01f68d0c1ba73860511aa1718aa
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a52513130f9bbbf7c4cd25d4c4827e833700d992
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398903"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739161"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
@@ -435,11 +435,11 @@ ms.locfileid: "44398903"
         
     4. 在開啟的視窗中，選取 [**內部轉送**]。 
         
-    5. 選取 [儲存]****。 此設定可能需要幾分鐘才會生效。 
+    5. 選取 **[儲存]**。 此設定可能需要幾分鐘才會生效。 
     
 4. （選用）解除封鎖現有的電子郵件伺服器
     
-    1. Office 365 使用 Exchange Online Protection （EOP）進行垃圾郵件保護。 如果 EOP 偵測到您目前的郵件伺服器轉寄大量的垃圾郵件，可能會封鎖垃圾郵件，這樣會使轉接無法運作。 如果您確信其他電子郵件提供者所用的垃圾郵件保護，您可以在 Office 365 中白名單其伺服器。 不過，這也會讓透過您原始伺服器到達的任何垃圾郵件都進入 Office 365 信箱，而且您將無法評估 Office 365 如何防止垃圾郵件。
+    1. Office 365 使用 Exchange Online Protection （EOP）進行垃圾郵件保護。 如果 EOP 偵測到您目前的郵件伺服器轉寄大量的垃圾郵件，可能會封鎖垃圾郵件，這樣會使轉接無法運作。 如果您確信其他電子郵件提供者所用的垃圾郵件保護，您可以將其伺服器新增至 Office 365 中的允許清單。 不過，這也會讓透過您原始伺服器到達的任何垃圾郵件都進入 Office 365 信箱，而且您將無法評估 Office 365 如何防止垃圾郵件。
     
     2. 移至 Exchange 系統管理中心（EAC）。
         

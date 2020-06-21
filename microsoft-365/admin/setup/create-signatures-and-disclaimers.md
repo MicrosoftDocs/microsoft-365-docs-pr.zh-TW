@@ -23,22 +23,22 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 瞭解如何將電子郵件簽章、法律免責聲明或披露聲明新增至所有進入或離開組織的電子郵件。
-ms.openlocfilehash: 5149f6f4a0276cc1384f15a8134d1ede0b673b8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d7e19c6e3f425f95429aefd769d2b8992fde141e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398951"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779878"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>建立整個組織的簽名和免責聲明
 
- 您可以在進入或離開貴組織的電子郵件中新增電子郵件簽名、法律免責聲明或保密聲明。您可以如下所示，設定將它套用至所有內送或外寄郵件。或者您也可以將它套用至特定郵件，例如包含特定字詞或文字模式的郵件。
+ You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
 
  觀賞有關如何建立全公司的電子郵件簽名的簡短影片。 <br><br>
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="create-a-signature-that-applies-to-all-messages"></a>建立套用至所有郵件的簽名
 

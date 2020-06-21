@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 48b26596-9e5b-4e5a-a64f-7430eb2a1e45
 description: '瞭解如何成為系統管理員，並為您的組織取得 Microsoft 365 訂閱。 '
-ms.openlocfilehash: 7d1e5673e6c995d007603d364b22ad81638d1782
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5ecfde457cc04e28ef544701fe623a53a8e610b1
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399455"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780034"
 ---
 # <a name="become-the-admin-and-purchase-microsoft-365-for-your-organization"></a>成為系統管理員，並為您的組織購買 Microsoft 365
 
 Microsoft 提供生產力工具與服務的方式相當便捷，貴組織內部使用者無須等待 IT 部門正式部署完畢，也能自行註冊並立即使用！
   
-貴組織可選擇讓使用者以這種方式繼續使用這些服務。但要是使用者註冊了 Skype 會議服務，您也可以指派系統管理員進行升級作業，取得更多完整的會議解決方案，以便搭配商務用 Skype 與 Office 應用程式、檔案儲存空間與共用等功能使用。
+Your organization can let people continue to use these services "as is." But if people signed up for Skype Meetings as one of those services, you can assign an admin to upgrade and get a more complete meeting solution with Skype for Business and Office applications, file storage and sharing, and more.
   
 ## <a name="why-become-the-admin-and-buy-microsoft-365-for-your-organization"></a>為什麼成為系統管理員，並為您的組織購買 Microsoft 365？
 
-員工使用公司帳戶註冊 Skype 會議後，並無法管理這項服務。他們只能取得最基本的功能：會議數量無上限，但只能開放 10 位以下與會者參與 (使用 60 天後，與會者上限會改為 3 人)。 
+When an employee signs up for Skype Meetings with their work account, they can't manage the service. And they get only the most basic features: they can have unlimited meetings but only with 10 or fewer participants (after 60 days, the maximum participants is three people). 
   
 當您設定服務的管理員並為您的使用者購買 Microsoft 365 時，他們就能獲得更多的高級功能。 此外，您也會取得服務的管理權限，以便強制執行政策及新增使用者。
   
@@ -87,9 +87,9 @@ Microsoft 提供生產力工具與服務的方式相當便捷，貴組織內部�
 |:-----|:-----|
 |新增或移除授權  <br/> |您可以為未使用 Microsoft 365 的使用者[新增更多授權](../../commerce/licenses/buy-licenses.md)，或從不想使用組織之 microsoft 365 進行商務版訂閱的[使用者中移除授權](../manage/remove-licenses-from-users.md)。  <br/> |
 |連絡已註冊的使用者  <br/> |與其他使用者聯繫，讓他們知道您正在管理其 Microsoft 365 訂閱，且已升級。 [Follow these steps](../add-users/add-users.md) to see a list of **Active Users** and their email addresses.  <br/> |
-|開始使用 Microsoft 365  <br/> |請造訪 [Office 365 學習中心](https://support.office.com/learn/office365-for-business) 並了解如何登入、檢查電子郵件、共用文件等。 您和您的使用者可以使用此網站開始使用 Microsoft 365。  <br/> |
+|開始使用 Microsoft 365  <br/> |請造訪 [Office 365 學習中心](https://support.microsoft.com/training) 並了解如何登入、檢查電子郵件、共用文件等。 您和您的使用者可以使用此網站開始使用 Microsoft 365。  <br/> |
 |管理 Microsoft 365 訂閱  <br/> |請造訪[Microsoft 365 系統管理中心協助中心](../admin-home.md)，瞭解常見的系統管理工作，例如新增及移除使用者、重設密碼及設定行動裝置。  <br/> |
 
-## <a name="still-need-help"></a>仍需要協助嗎？
+## <a name="still-need-help"></a>是否仍需要協助？
 
 [撥打 Microsoft 支援服務](../contact-support-for-business-products.md)

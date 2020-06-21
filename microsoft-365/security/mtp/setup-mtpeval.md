@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 117681bd4722615e870594e46d6896e9128d0d0c
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 6cba773d0c4bea259db151d5a8f1d8e03954a045
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209220"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717292"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>設定您的 Microsoft 威脅防護試用實驗室環境 
 
@@ -94,7 +94,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 7. 按一下 [**移至設定**] 以完成 Office 365 E5 試用租使用者布建。
 <br>![Office 365 E5 試用註冊設定頁面的影像提示按一下 [前往設定] 按鈕](../../media/mtp-eval-15.png) <br>
 
-8. 將公司網域連線到 Office 365 租使用者。 選選擇 **[連線您已擁有的網域]** ，然後輸入您的功能變數名稱。 按一下 **[下一步]**。
+8. 將公司網域連線到 Office 365 租使用者。 選選擇 **[連線您已擁有的網域]** ，然後輸入您的功能變數名稱。 按 [下一步]****。
 <br>![影像 of_Office 365 E5 安裝頁面，您應該在其中個人化登入和電子郵件](../../media/mtp-eval-16.png) <br>
  
 9. 您將需要新增 TXT 或 MX 記錄以驗證網域擁有權。 將 TXT 或 MX 記錄新增至您的網域後，請選取 [**驗證**]。
@@ -110,7 +110,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 <br>![影像 of_Office 365 E5，您可以在其中設定是否要遷移電子郵件訊息](../../media/mtp-eval-20.png) <br>
  
 13. 選擇 [線上服務]。 選取 [ **Exchange** ] 並按 **[下一步]**。 
-<br>![影像 of_Office 365 E5，您可以在其中選擇線上服務，例如 Exchangem Skype for Business 或 Mibile Device Management for Office 365](../../media/mtp-eval-21.png) <br>
+<br>![影像 of_Office 365 E5，您可以在這裡選擇您的線上服務](../../media/mtp-eval-21.png) <br>
 
 14. 將 MX、CNAME 和 TXT 記錄新增至您的網域。 完成時，選取 [**驗證**]。
 <br>![影像 of_Office 365 E5 您可以在這裡加入您的 DNS 記錄](../../media/mtp-eval-22.png) <br>
@@ -148,5 +148,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 
 
 
-## <a name="next-step"></a>後續步驟
-||||：-------|：-----| config-onboard （.png） <br>[階段3：設定 & 板載](config-mtpeval.md)|針對您的 Microsoft 威脅防護試用實驗室環境設定每個 Microsoft 威脅防護 pillar，並在您的端點上架。
+## <a name="next-step"></a>下一步
+|||
+|:-------|:-----|
+|![階段3：設定板載 &](../../media/config-onboard.png) <br>[階段3：設定板載 &](config-mtpeval.md) | 針對您的 Microsoft 威脅防護評估實驗室設定每個 Microsoft 威脅防護 pillar，並在您的端點上架。

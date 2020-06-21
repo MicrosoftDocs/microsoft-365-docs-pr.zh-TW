@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: d0653266-31db-4f6a-a804-d34b667c16bf
 description: '瞭解如何在 Mac、PC 或行動裝置上設定 Office 應用程式。 '
-ms.openlocfilehash: 2f273c868d5641807c0c81135d18769ea47b6a33
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e48725a6e4997d6891cb3876d1b0ba07966d416b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398879"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779018"
 ---
 # <a name="install-office-applications"></a>安裝 Office 應用程式
 
@@ -32,11 +32,13 @@ ms.locfileid: "44398879"
   
 請遵循下列連結，以取得有關如何：
   
-- 安裝 Office 應用程式：[在您的 PC 或 Mac 上安裝 office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)
+- 安裝 Office 應用程式：[在您的 PC 或 Mac 上安裝 office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
 
-- 設定行動裝置： [Microsoft 365 mobile setup-Help](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)
+- 設定行動裝置： [Microsoft 365 mobile setup-Help](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f)
 
-- 在 Outlook 中設定電子郵件： [Windows](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)或[Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac)
+- 在 Outlook 中設定電子郵件： [Windows](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)或[Mac](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac)
+ 
+- [將使用者升級到最新的應用程式](upgrade-users-to-latest-office-client.md) 
 
 ::: moniker range="o365-21vianet"
 
@@ -46,4 +48,4 @@ ms.locfileid: "44398879"
 
 有問題嗎？ 這些疑難排解資源可提供協助︰
   
-- [疑難排解安裝 Office 和 Microsoft 365](https://support.office.com/article/35ff2def-e0b2-4dac-9784-4cf212c1f6c2.aspx)
+- [疑難排解安裝 Office 和 Microsoft 365](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)

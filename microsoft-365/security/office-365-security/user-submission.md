@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: 0f3c7f160e26b8befcbbe8096c07e9eb6fecb533
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e9550ce6357ddf19041e752c17e8bd844cba1a11
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613429"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726502"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>在 Exchange Online 中指定使用者提交垃圾郵件和網路釣魚郵件的信箱
 
@@ -43,7 +43,17 @@ ms.locfileid: "44613429"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要設定使用者提交的信箱，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派許可權，才能執行本主題中的程式：
+
+  - 若要修改使用者提交的設定，您必須是下列其中一個角色群組的成員：
+
+    - 在[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)的**組織管理**或**安全性管理員**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**或**衛生管理**。
+
+  - 若要讓唯讀存取使用者提交，您必須是下列其中一個角色群組的成員：
+
+    - 安全性[& 規範中心](permissions-in-the-security-and-compliance-center.md)的**安全性讀取器**。
+    - 在[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**View-Only 的組織管理**。
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全性 & 規範中心設定使用者提交信箱
 

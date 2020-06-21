@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。 '
-ms.openlocfilehash: 9a9b6c01d979f4a5bb055f907dc0292a33f40993
-ms.sourcegitcommit: 1f3101326e8a54b9bda4ba0324eae00fafcf5e7b
+ms.openlocfilehash: 79ff8642170a5e45f67d95d7993632fd66252208
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44405176"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779950"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保護商務用 Microsoft 365 方案的十大方式
 
@@ -64,7 +64,7 @@ Microsoft 建議您完成下清單格中所列的工作，以套用至您的服�
 使用多重要素驗證是增加組織安全性的最簡單且最有效的方式之一。 它會比您登入時更輕鬆-當您登入時，多重要素驗證表示您會輸入您的電話中的程式碼，以取得 Microsoft 365 的存取權。 這可防止駭客在知道密碼的情況時採取行動。 多重要素驗證也稱為雙步驟驗證。 個人可以輕鬆地將兩步驟驗證新增至大多數帳戶，例如，加入其 Google 或 Microsoft 帳戶。 以下說明如何[將兩步驟驗證新增至您的個人 Microsoft 帳戶](https://go.microsoft.com/fwlink/?linkid=2016403&amp;clcid=0x409)。
   
 針對使用 Microsoft 365 的企業，新增設定，以要求使用者使用多重要素驗證來登入。 當您進行此項變更時，系統會提示使用者在下一次登入時設定其電話進行兩個要素驗證。
-若要查看如何設定 MFA 的訓練影片和使用者完成設定的方式，請參閱[設定 mfa](https://support.office.com/article/e12187b8-216a-4490-9e3b-df34a06fb787)和[使用者設定](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)。
+若要查看如何設定 MFA 的訓練影片和使用者完成設定的方式，請參閱[設定 mfa](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787)和[使用者設定](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225)。
   
 若要設定多重要素驗證：
 
@@ -79,7 +79,7 @@ Microsoft 建議您完成下清單格中所列的工作，以套用至您的服�
 5. 在快顯視窗中，選擇 [**啟用 Multi-Factor 驗證**]。
 
 
-為組織設定多重要素驗證之後，您的使用者必須在其裝置上設定雙步驟驗證。 如需詳細資訊，請參閱[設定 Microsoft 365 的2步驟驗證](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14)。
+為組織設定多重要素驗證之後，您的使用者必須在其裝置上設定雙步驟驗證。 如需詳細資訊，請參閱[設定 Microsoft 365 的2步驟驗證](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)。
   
 如需完整詳細資料和完整建議，請參閱[設定使用者的多重要素驗證](set-up-multi-factor-authentication.md)。
   
@@ -88,7 +88,7 @@ Microsoft 建議您完成下清單格中所列的工作，以套用至您的服�
 
 Harvard 甘迺迪 School [Cybersecurity 活動手冊](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409)提供好的指導方針，可為組織內的安全性感知建立強大的文化，包括訓練使用者來識別網路釣魚攻擊。 
   
-除了這項指導之外，Microsoft 也建議您的使用者採取本文所述的動作：[保護您的帳戶和裝置免受駭客和惡意](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx)代碼的攻擊。 這些動作包括：
+除了這項指導之外，Microsoft 也建議您的使用者採取本文所述的動作：[保護您的帳戶和裝置免受駭客和惡意](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)代碼的攻擊。 這些動作包括：
   
 - 使用強式密碼
     
@@ -98,7 +98,7 @@ Harvard 甘迺迪 School [Cybersecurity 活動手冊](https://go.microsoft.com/f
     
 Microsoft 也建議您採取下列文章中建議的動作來保護其個人電子郵件帳戶：
   
-- [協助保護您的 Outlook.com 電子郵件帳戶](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [協助保護您的 Outlook.com 電子郵件帳戶](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [使用2步驟驗證保護您的 Gmail 帳戶](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
     
@@ -116,7 +116,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
 ## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4：提升郵件中惡意程式碼的保護層級
 <a name="malware"> </a>
 
-您的 Microsoft 365 環境包括防範惡意程式碼，但是您可以使用常見於惡意程式碼的檔案類型來封鎖附件，以提升這種保護。 若要在電子郵件中增加惡意程式碼保護，請觀看[簡短的訓練影片](https://support.office.com/article/02b5783a-eea0-42e8-8856-62440718c3f0)，或完成下列步驟：
+您的 Microsoft 365 環境包括防範惡意程式碼，但是您可以使用常見於惡意程式碼的檔案類型來封鎖附件，以提升這種保護。 若要在電子郵件中增加惡意程式碼保護，請觀看[簡短的訓練影片](https://support.microsoft.com/office/02b5783a-eea0-42e8-8856-62440718c3f0)，或完成下列步驟：
   
 1. 移至 [https://protection.office.com](https://protection.office.com) 並以您的系統管理員帳號憑證登入。 
     
@@ -143,7 +143,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
     
 - 封鎖可能包含勒索代碼或其他惡意程式碼的檔案類型。 我們會從常見的可執行檔案清單開始（列在下表中）。 如果您的組織使用任何這些可執行類型，而您想要以電子郵件傳送它們，請將它們新增至上一個規則（警告使用者）。
     
-若要建立郵件傳輸規則、查看[簡短的訓練影片](https://support.office.com/article/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)，或完成下列步驟：
+若要建立郵件傳輸規則、查看[簡短的訓練影片](https://support.microsoft.com/office/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad)，或完成下列步驟：
   
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
 
@@ -155,7 +155,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
     
 5. 針對每個規則套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
     
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
 |**設定**|**開啟 Office 檔案的附件之前警告使用者**|**封鎖可能包含勒索代碼或其他惡意程式碼的檔案類型**|
 |:-----|:-----|:-----|
@@ -172,7 +172,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
   
 - [如何處理勒索軟體](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
-- [還原您的 OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [還原您的 OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
     
 ## <a name="6-stop-auto-forwarding-for-email"></a>6：停止自動轉送電子郵件
 <a name="forwarding"> </a>
@@ -191,7 +191,7 @@ Microsoft 也建議您採取下列文章中建議的動作來保護其個人電�
     
 5. 套用下表中的設定。 除非您想要變更這些設定，否則請保留預設值。
     
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
 |**設定**|**拒絕自動轉寄電子郵件至外部網域**|
 |:-----|:-----|
@@ -231,7 +231,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
   
 如果收件者使用另一個電子郵件用戶端或電子郵件帳戶，例如 Gmail 或 Yahoo，他們會看到可讓他們登入電子郵件訊息或要求單一時間密碼以在網頁瀏覽器中查看郵件的連結。 如果使用者未收到電子郵件，請他們檢查其 [垃圾郵件] 或 [垃圾郵件] 資料夾。 
   
-如需詳細資訊，請參閱[在 Outlook 中傳送、查看和回復加密郵件的電腦](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)。
+如需詳細資訊，請參閱[在 Outlook 中傳送、查看和回復加密郵件的電腦](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980)。
   
 ## <a name="8-protect-your-email-from-phishing-attacks"></a>8. 保護您的電子郵件免受網路釣魚攻擊
 <a name="phishing"> </a>
@@ -242,7 +242,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
   
 ![建立 ATP 反網路釣魚原則](../../media/security-and-compliance-center.png)
   
-若要建立 ATP 反網路釣魚原則，請觀看[簡短的訓練影片](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成下列步驟：
+若要建立 ATP 反網路釣魚原則，請觀看[簡短的訓練影片](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)，或完成下列步驟：
   
 1. 請移至 [https://protection.office.com](https://protection.office.com)。 
     
@@ -260,7 +260,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 |**設定或選項**|**建議的設定** <br/>|
 |:-----|:-----|
 |名稱  <br/> |網域和最有價值的活動人員  <br/> |
-|說明  <br/> |確定最重要的人員和我們的網域未進行類比。  <br/> |
+|描述  <br/> |確定最重要的人員和我們的網域未進行類比。  <br/> |
 |新增要保護的使用者  <br/> |選取 **[+ 新增條件]，收件者是**。 輸入使用者名稱，或輸入候選人、活動管理員及其他重要員工成員的電子郵件地址。 您最多可以新增20個要從類比中保護的內部和外部地址。  <br/> |
 |新增要保護的網域  <br/> |選取 **[+ 新增條件]，收件者網域是**。 輸入您的 Microsoft 365 訂閱相關聯的自訂網域（如果您已定義的話）。 您可以輸入一個以上的網域。  <br/> |
 |選擇動作  <br/> |如果模仿的使用者傳送電子郵件：選取 [重新**導向郵件至另一個電子郵件地址**]，然後輸入安全性管理員的電子郵件地址。例如，securityadmin@contoso.com。          如果模仿的網域傳送電子郵件： [選取**隔離郵件**]。  <br/> |
@@ -276,7 +276,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 
 人們經常傳送、接收及共用附件，例如文件、簡報和試算表等等。 只查看電子郵件訊息，不一定可輕易知道附件是否安全或有危害。 Office 365 的高級威脅防護包括 ATP 安全附件保護，但預設不會開啟此保護。 建議您建立新的規則，以開始使用這種保護。 這項保護會延伸至 SharePoint、OneDrive 和 Microsoft 小組中的檔案。
   
-若要建立 ATP 安全附件原則，請觀看[簡短的訓練影片](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成下列步驟：
+若要建立 ATP 安全附件原則，請觀看[簡短的訓練影片](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，或完成下列步驟：
   
 1. 移至 [https://protection.office.com](https://protection.office.com) 並以您的系統管理員帳戶登入。 
     
@@ -296,7 +296,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 |**設定或選項**|**建議的設定** <br/>|
 |:-----|:-----|
 |名稱  <br/> |使用偵測到的惡意程式碼封鎖目前和未來的電子郵件。  <br/> |
-|說明  <br/> |使用偵測到的惡意程式碼封鎖目前和未來的電子郵件和附件。  <br/> |
+|描述  <br/> |使用偵測到的惡意程式碼封鎖目前和未來的電子郵件和附件。  <br/> |
 |儲存附件未知的惡意程式碼回應  <br/> |Select **Block-封鎖目前和未來的電子郵件和附件偵測到的惡意**代碼。  <br/> |
 |在偵測時重新導向附件  <br/> |啟用重新導向（選取此方塊）輸入系統管理員帳戶或隔離的信箱設定。          若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍（選取此方塊）。  <br/> |
 |套用對象  <br/> |收件者網域是。 . . 選取您的網域。  <br/> |
@@ -315,7 +315,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
     
 - 新增針對您網域中所有收件者的新原則。
     
-若要取得 ATP 安全連結，請觀看[簡短的訓練影片](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成下列步驟：
+若要取得 ATP 安全連結，請觀看[簡短的訓練影片](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)，或完成下列步驟：
   
 1. 移至 [https://protection.office.com](https://protection.office.com) 並以您的系統管理員帳戶登入。 
     
@@ -329,7 +329,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
     
 2. 在 [**電子郵件除外，套用至內容**] 底下，選取 [適用于**企業的 Microsoft 365 應用程式、Office iOS 和 Android**]。
     
-3. 選取 [儲存]****。 
+3. 選取 **[儲存]**。 
     
 若要建立新的原則針對您網域中的所有收件者：
   
@@ -337,7 +337,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
     
 2. 套用下表所列的設定。
     
-3. 選取 [儲存]****。 
+3. 選取 **[儲存]**。 
     
 |**設定或選項**|**建議的設定** <br/>|
 |:-----|:-----|

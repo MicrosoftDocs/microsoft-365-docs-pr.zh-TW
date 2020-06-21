@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 9d6a3da00445dd5cde26c80fe63edd81f745ce63
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 25a4cd4147f6388cdbd8982eb10624e7b7e8f6cb
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678633"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780118"
 ---
 # <a name="manage-deployment-of-add-ins-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中管理增益集的部署
 
@@ -36,7 +36,7 @@ ms.locfileid: "44678633"
 
 ::: moniker-end
 
-Office 增益集可以協助您將文件個人化，也可以簡化您存取網路資訊的方式 (請參閱[開始使用 Office 增益集](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx))。 作為系統管理員，您可以為組織中的使用者部署 Office 增益集。 您可以使用 Microsoft 365 系統管理中心的 [集中式部署] 功能來執行此動作。
+Office 增益集可以協助您將文件個人化，也可以簡化您存取網路資訊的方式 (請參閱[開始使用 Office 增益集](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862))。 作為系統管理員，您可以為組織中的使用者部署 Office 增益集。 您可以使用 Microsoft 365 系統管理中心的 [集中式部署] 功能來執行此動作。
   
 若要將增益集部署至組織內的使用者和群組，[集中式部署] 是建議和功能最豐富的方法。 如需如何判斷您的組織是否可支援集中式部署的詳細資訊，請參閱判斷您的組織是否可使用[集中式部署增益集](centralized-deployment-of-add-ins.md)。
   
@@ -44,7 +44,7 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
   
 - 全域管理員可以將增益集直接指派給使用者、透過群組將增益集指派給多位使用者，或租使用者指派給每個人。
     
-- 當相關 Office 應用程式啟動時，系統會自動為使用者下載增益集。如果增益集支援增益集命令，增益集會自動顯示在 Office 應用程式的 [功能區] 中。
+- When the relevant Office application starts, the add-in automatically downloads for the user. If the add-in supports add-in commands, the add-in automatically appears in the Ribbon within the Office application.
     
 - 如果系統管理員關閉或刪除增益集，或從 Azure Active Directory 或指派給的群組中移除該使用者，就不再顯示使用者的增益集。
     
@@ -53,11 +53,11 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
   
 ## <a name="recommended-approach-for-deploying-office-add-ins"></a>部署 Office 增益集的建議方式
 
-請考慮採用分階段的方式來推出增益集，這樣有助於確保增益集部署順利進行。我們的建議方案如下：
+Consider rolling out add-ins in a phased approach to help ensure your add-in deployment goes smoothly. We recommend the following plan:
   
-1. 為一小組商務專案關係人以及 IT 部門的成員推行增益集。評估部署是否成功，如果成功，則請繼續進行步驟 2。
+1. Roll-out the add-in to a small set of business stakeholders and members of the IT department. Evaluate if the deployment was successful, and if so, move on to step 2.
     
-2. 為企業中將需使用增益集的一大組人員推行。同樣地，請評估成果，如果一切順利，則請繼續進行完整部署的下一個步驟。
+2. Roll-out to a larger set of individuals within the business who will be using the add-in. Again, evaluate results and, if all went well, go to the next step of a full deployment.
     
 3. 為目標對象使用者完全推行。
     
@@ -83,7 +83,7 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
 7. 部署增益集時，會出現綠色的勾選標記。 您可以依照頁面上的指示測試增益集是否已成功部署。
 
 > [!NOTE]
-> 使用者可能需要重新開機 Office，才能看到增益集圖示出現在應用程式的功能區上。 在使用者的功能區上顯示 Outlook 增益集時，最多可能需要12小時。
+> 使用者可能需要重新開機 Office，才能看到增益集圖示出現在應用程式的功能區上。 Outlook 增益集最多可能需要24小時才能出現在使用者的功能區上。
     
 8. 完成時，選取 **[下一步]**。 如果您只是自行部署，您可以選取 [**變更擁有增益集的存取**權]，以部署至其他使用者。
 
@@ -121,7 +121,7 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
   
 ### <a name="security-of-office-add-ins"></a>Office 增益集的安全性
 
-Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔案合併，但最重要的是，Office 增益集會與指向包含所有程式碼和邏輯的 Web 應用程式合併。增益集可以有各種不同的功能。例如，增益集可以：
+Office add-ins combine an XML manifest file that contains some metadata about the add-in, but most importantly points to a web application which contains all the code and logic. Add-ins can range in their capabilities. For example, add-ins can:
   
 - 顯示資料。
     
@@ -131,9 +131,9 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
     
 如需 Office 增益集類型和功能的詳細資訊，請參閱 [Office 增益集平台概觀](https://go.microsoft.com/fwlink/p/?linkid=846362) (尤其是「分析 Office 增益集」一節)。
   
-若要與使用者的文件互動，增益集必須在資訊清單中宣告需要的權限。五個層級的 JavaScript API 存取權限模型可為工作窗格增益集使用者提供基本的隱私權和安全性。Office 市集中的大多數增益集為 ReadWriteDocument 層級，且包含至少 ReadDocument 層級的大部分增益集支援功能。如需權限層級的詳細資訊，請參閱[要求取得用於內容和工作窗格增益集之 API 的權限](https://go.microsoft.com/fwlink/p/?linkid=848863) (英文)。
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://go.microsoft.com/fwlink/p/?linkid=848863).
   
-更新資訊清單時，通常是變更增益集的圖示和文字。有時則會變更增益集的命令。不過，增益集的權限不會遭到變更。執行增益集的所有程式碼和邏輯的 Web 應用程式可能隨時變更，這是 Web 應用程式的本質所致。
+When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
   
 增益集的更新會以下列方式進行：
   
@@ -252,7 +252,7 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
     
 ## <a name="end-user-experience-with-add-ins"></a>使用者的增益集使用體驗
 
-既然您已部署增益集，使用者就可以開始在他們的 Office 應用程式中使用 (請參閱[開始使用 Office 增益集](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx))。增益集會顯示在增益集支援的所有平台上。
+Now that you've deployed the add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). The add-in will appear on all platforms that the add-in supports.
   
 如果增益集支援增益集命令，命令會顯示在 Office 功能區上。 在下列範例中，會出現**引文**增益集的命令**搜尋引文**。 
 

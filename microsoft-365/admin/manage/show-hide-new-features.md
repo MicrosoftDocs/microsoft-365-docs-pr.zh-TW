@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 決定使用者在 office 的新管理 Office 桌面應用程式中，向使用者顯示或隱藏的功能及其新內容。
-ms.openlocfilehash: d4d4ff24896555a4af0ae4a936840c9935d73813
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 7b9522a901078d6e235e295c184fec65c251338b
+ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678599"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44717172"
 ---
 # <a name="show-or-hide-new-features-using-whats-new-management"></a>使用 [新功能管理] 顯示或隱藏新功能
 
@@ -60,7 +60,8 @@ Office Microsoft 365 系統管理中心及[用戶端設定服務](https://config
 |:-----|:-----|:-----|
 |**通道** <br/> |**在管理預覽** <br/> |**採取動作** <br/> |
 |**目前** <br/> |每月15日  <br/> |每月發行前的 1-3 周 <br/> |
-|**半年 Enterprise （預覽）** <br/> |9月1日和3月1日 <br/> | 主要版本之前2周的新功能
+|**每月企業** <br/> |月的第一  <br/> |主要版本之前2周的新功能 |
+|**半年 Enterprise （預覽）** <br/> |9月1日和3月1日 <br/> | 主要版本之前2周的新功能|
 |**半年 Enterprise** <br/> |1月1日和7月1日 <br/> | 主要版本之前2周的新功能<br/> |
 
 如需有關通道更新排程的詳細資訊，請參閱[Microsoft 365 app 的更新歷程記錄（依日期列出）](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。

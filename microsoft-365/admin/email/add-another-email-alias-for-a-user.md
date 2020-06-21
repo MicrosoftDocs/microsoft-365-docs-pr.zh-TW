@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '瞭解您可以如何有一個以上的電子郵件地址，稱為「電子郵件別名」，與您的 Microsoft 365 for business 帳戶相關聯。 '
-ms.openlocfilehash: bab4ace6d497bac8892a29c76b6f2d05c4fa018f
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: c0e71ef150ccf592ea4f808a5e6609e1675767a4
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432322"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780286"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>為使用者新增其他電子郵件別名
 
@@ -162,7 +162,7 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
   
 ## <a name="related-articles"></a>相關文章
 
-[從不同的地址傳送電子郵件](https://support.office.com/article/ccba89cb-141c-4a36-8c56-6d16a8556d2e.aspx)
+[從不同的地址傳送電子郵件](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
 
 [變更使用名稱和電子郵件地址](../add-users/change-a-user-name-and-email-address.md)
   

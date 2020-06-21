@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 瞭解如何將使用者升級至最新的 Office 用戶端。
-ms.openlocfilehash: 22fe8e12e4aff4f9afe52e913ad57d37866dbb95
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fb2513b2112dd8427222d43d14184895df3b594b
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398807"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778874"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>將您的 Microsoft 365 for business 使用者升級至最新的 Office 用戶端
 
@@ -45,7 +45,7 @@ Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 201
   
  如果您是負責組織中商務用 Microsoft 365 訂閱的系統管理員，您會處在正確的位置。 系統管理員通常負責管理使用者、重設密碼、管理 Office 安裝及新增或移除授權等工作。
 
- [！附注] 如果您不是系統管理員，且有[Microsoft 365 系列](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans)產品，請參閱[如何升級 office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx)以取得有關升級舊版 Office 的資訊。
+ [！附注] 如果您不是系統管理員，且有[Microsoft 365 系列](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans)產品，請參閱[如何升級 office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350)以取得有關升級舊版 Office 的資訊。
 
 ## <a name="get-ready-to-upgrade"></a>準備升級
 
@@ -102,9 +102,9 @@ Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 201
 
 ### <a name="select-the-version-of-office-you-want-to-uninstall"></a>選取您要卸載的 Office 版本
 
-- [從電腦](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)
+- [從電腦](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8)
 
-- [從 Mac](https://support.office.com/article/eefa1199-5b58-43af-8a3d-b73dc1a8cae3.aspx)
+- [從 Mac](https://support.microsoft.com/office/eefa1199-5b58-43af-8a3d-b73dc1a8cae3)
   
 ### <a name="known-issues-trying-to-reinstall-older-versions-of-office-after-an-uninstall"></a>卸載之後嘗試重新安裝舊版 Office 的已知問題
 
@@ -114,7 +114,7 @@ Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 201
 
  **不支援的訂閱**如果您的 Office 副本是透過廢止的訂閱（例如 Office 365 Small Business Premium 或 Office 365 中型企業）取得，除非您擁有訂閱隨附的產品金鑰，否則您將無法安裝舊版的 Office。
 
-如果您想要以最新版本的方式安裝舊版的 Office，您可以在[相同的電腦上，安裝及使用不同版本的 office](https://support.office.com/article/6ebb44ce-18a3-43f9-a187-b78c513788bf.aspx)，以查看其中支援這項功能的版本清單。 如果您已安裝與舊版 Office 搭配使用的協力廠商增益集，且尚未確定這些增益集與最新版本相容，則並列安裝可能是您的正確選擇。
+如果您想要以最新版本的方式安裝舊版的 Office，您可以在[相同的電腦上，安裝及使用不同版本的 office](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf)，以查看其中支援這項功能的版本清單。 如果您已安裝與舊版 Office 搭配使用的協力廠商增益集，且尚未確定這些增益集與最新版本相容，則並列安裝可能是您的正確選擇。
 
 ## <a name="step-4---assign-office-licenses-to-users"></a>步驟 4-將 Office 授權指派給使用者
 
@@ -122,7 +122,7 @@ Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 201
   
 ## <a name="step-5---install-office"></a>步驟 5-安裝 Office
 
-在您確認要升級的使用者擁有授權後，最後一個步驟是讓他們安裝 Office，請參閱[在您的 PC 或 Mac 上下載並安裝或重新安裝 office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。
+在您確認要升級的使用者擁有授權後，最後一個步驟是讓他們安裝 Office，請參閱[在您的 PC 或 Mac 上下載並安裝或重新安裝 office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)。
   
 > [!TIP]
 > 如果您不想讓使用者自行安裝 Office，請參閱[管理 office 365 中的軟體下載設定](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365)。 您可以使用[Office 部署工具](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool)，將 office 軟體下載到您的本機網路，然後使用您一般使用的軟體部署方法來部署 office。

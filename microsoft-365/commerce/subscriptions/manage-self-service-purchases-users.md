@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 使用者可以瞭解如何管理其自助購買服務。
-ms.openlocfilehash: e8cb319b482ef49090544916b5e76a02083ebf06
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7513fc67ab80bcffe6e6159bb13db207be16d0e9
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403255"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741667"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助購買 (使用者)
 
@@ -105,9 +105,9 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ### <a name="update-an-existing-payment-method"></a>更新現有的付款方式
 
-1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">票據 & 付款</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">票據 & 付款</a>] 頁面。
 
-2. 若要編輯現有的支付方式，請從清單中選擇。
+2. 在 [**支付方式**] 索引標籤上，從清單中選擇現有的付款條件。
 
 3. 在右窗格中，選擇 [**編輯**]。 您可以變更安全性代碼、到期日、名片上的名稱，以及位址。
 
@@ -115,20 +115,20 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ### <a name="add-a-new-payment-method"></a>新增支付方式
 
-1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">票據 & 付款</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">票據 & 付款</a>] 頁面。
 
-2. 選擇 [**新增支付方式**]。
+2. 在 [**付款條件**] 索引標籤上，選擇 [**新增支付方式**]。
 
 3. 在 [**新增支付方式**] 窗格中，輸入新付款條件的資訊，**然後選擇 [新增]**。
 
 ## <a name="view-your-invoices"></a>查看您的發票
 
-1. 在系統管理中心中，移至 [**帳單**帳單  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">& 付款</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單**帳單  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& 付款</a>] 頁面。
 
-2. 在 [**發票**] 下，選取您要查看的發票。
+2. 在 [**發票**] 索引標籤上，選取您要查看的發票。 若未顯示任何發票，請將**過去3個月**變更為**過去6個月**或**指定日期範圍**。
 
 ## <a name="need-help-contact-us"></a>需要協助嗎？ 聯繫我們。
 
 如需有關自助購買的常見問題，請參閱[自助購買常見問題](self-service-purchase-faq.md)。
 
-如果您有任何問題或需要協助您購買自助服務，請[與支援人員聯繫](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+如果您有任何問題或需要協助您購買自助服務，請[與支援人員聯繫](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。

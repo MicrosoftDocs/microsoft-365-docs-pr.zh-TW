@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 description: 將電子郵件傳送給一群人員，而不必透過建立通訊（清單）來輸入每個個別收件者的名稱。
-ms.openlocfilehash: cf06d408363a71e43f1a850bf108d667a141af3a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: eaa1051c83f64a6a20d3f27eb17f2a0fef5f2b12
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398963"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779890"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心建立通訊群組
   
@@ -69,7 +69,7 @@ ms.locfileid: "44398963"
     
 6. 若要將使用者新增至通訊群組，請參閱[新增使用者或連絡人至通訊群組](../email/add-user-or-contact-to-distribution-list.md)。
     
-若要瞭解如何在 Outlook 中使用 outlook 2016 和 Outlook 網頁版中的群組，請參閱 Outlook 主題中的[使用連絡人群組（先前是通訊群組清單）](https://support.office.com/article/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39.aspx) 。 
+若要瞭解如何在 Outlook 中使用 outlook 2016 和 Outlook 網頁版中的群組，請參閱 Outlook 主題中的[使用連絡人群組（先前是通訊群組清單）](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 。 
   
 查看[通訊群組問題](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues)以取得通訊群組問題的協助。 
   

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 群組到期原則。
-ms.openlocfilehash: 00dfb09cdf4fe3f70344152444e7433c1de8a8c2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8def757241dec28f5a54c76dc81614fd52fe85e5
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400722"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780418"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 群組到期原則
 
@@ -84,6 +84,6 @@ ms.locfileid: "44400722"
 
 [保留原則概觀](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
-[指派新擁有者給孤立的群組](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
+[指派新擁有者給孤立的群組](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 [設定 Microsoft 365 群組到期](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)'

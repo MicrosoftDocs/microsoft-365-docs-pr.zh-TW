@@ -19,62 +19,48 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 71e7b532e046015dd64e51fd422d276433d65b3a
-ms.sourcegitcommit: 6ea9a910a8106a5f1aa589c55d166bfa67fd12a8
+ms.openlocfilehash: f63c59403e84e79d1a4a5cf2b8a5544f5646781c
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280531"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773848"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威脅防護先決條件
 
 **適用範圍：**
 - Microsoft 威脅防護
 
-瞭解授權、硬體和軟體需求，以及其他設定，以提供和使用 Microsoft 威脅防護。
+深入瞭解布建和使用[Microsoft 威脅防護](microsoft-threat-protection.md)的其他需求。
 
 ## <a name="licensing-requirements"></a>授權需求
-
->[!IMPORTANT]
->從2020年5月12日開始，Microsoft 將逐步推出有關授權需求的新的優化體驗，並[開啟 Microsoft 威脅防護](mtp-enable.md)。 在這段期間內，有些客戶會開始查看其門戶體驗的變更。 有關全新經驗的資訊已在本文中標示**新經驗**。
-
-若要使用 Microsoft 威脅防護，您必須是單一授權或授權組合。 這些授權或授權組合可讓您存取 Microsoft 威脅防護功能，而不需要額外成本。
-
-### <a name="single-license"></a>單一授權
-您可以使用下列*其中一個*授權：
-
-- Microsoft 365 E5 或 A5
-- Microsoft 365 E5 Security 或 A5 Security
-
-### <a name="combination-of-licenses"></a>授權組合
-您也可以在 Office 365、 *Enterprise 可移動性 + Security （EMS）* 和 Windows 中使用代表 E5 或 A5 訂閱的授權組合。 授權組合必須包含下列*所有*授權：
-
-- Office 365 E5 或 A5
-- *企業行動 + 安全性（EMS）* E5 或 A5
-- Windows 10 企業版 E5 或 A5
-
-如需詳細資訊，請[查看 Microsoft 365 企業版服務方案](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
-
-> 還沒有授權？ [試用或購買 Microsoft 365 訂閱](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
-
-
-**新經驗：** 從2020年5月12日起，客戶會逐漸收到這種經驗的變更。 針對具有全新經驗的使用者，使用下列任何一種授權的*客戶都可*使用開啟 Microsoft 威脅防護的選項：
+這些授權中的任何一種可讓您存取 microsoft 365 安全中心的 Microsoft 威脅防護功能，而不需要額外成本：
 
 - Microsoft 365 E5 或 A5
 - Microsoft 365 E5 Security 或 A5 Security
 - Windows 10 企業版 E5 或 A5
 - Enterprise 可移動性 + Security （EMS） E5 或 A5 
 - Office 365 E5 或 A5
-- Windows Defender 進階威脅防護 
+- Microsoft Defender 進階威脅防護
 - Azure 進階威脅防護 
-- Microsoft Cloud App Security 
-- Office 365 高級威脅防護（方案2） 
+- Microsoft Cloud App Security
+- Office 365 高級威脅防護（方案2）
+
+> [!NOTE]
+> Office 365 的試用版授權目前不提供 Microsoft 威脅防護的存取權。
+
+如需詳細資訊，請[查看 Microsoft 365 企業版服務方案](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)。
+
+> 還沒有授權？ [試用或購買 Microsoft 365 訂閱](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>檢查您現有的授權
 移至 Microsoft 365 系統管理中心（[admin.microsoft.com](https://admin.microsoft.com/)）以查看您現有的授權。 在系統管理中心中，移至 **[帳單]** >  **[授權]**。
 
 >[!NOTE]
 > 您必須被指派至[AZURE AD 中](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)的**帳務系統管理員**或**全域讀取**者角色，才能看到授權資訊。 如果您遭遇存取的問題，請與全域管理員聯繫。
+
+## <a name="required-permissions"></a>必要的權限
+如需必要角色的清單，以及如何管制資料的存取，請參閱[管理 Microsoft 威脅防護的存取](mtp-permissions.md)。
 
 ## <a name="browser-requirements"></a>瀏覽器需求
 使用 Microsoft Edge、Internet Explorer 11 或任何符合 HTML 5 標準的網頁瀏覽器，存取 microsoft 365 security center 中的 Microsoft 威脅防護。
@@ -89,3 +75,4 @@ ms.locfileid: "44280531"
 ## <a name="related-topics"></a>相關主題
 - [Microsoft 威脅防護概觀](microsoft-threat-protection.md)
 - [開啟 Microsoft 威脅防護](mtp-enable.md)
+- [管理存取權和許可權](mtp-permissions.md)

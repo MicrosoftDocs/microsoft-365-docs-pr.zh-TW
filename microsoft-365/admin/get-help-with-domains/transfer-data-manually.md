@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 尋找當您變更計畫或公司名稱時，如何在兩部 Microsoft 365 帳戶之間手動傳輸資料，或將多個訂閱組合為一個。
-ms.openlocfilehash: 69476687915024accabdce2a603ebdd7e8b653af
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6e64872ad7e145b63eb71d89ea2d69e5d8697eb6
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399869"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780166"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在兩個帳戶間手動傳輸資料
 
@@ -91,9 +91,9 @@ Microsoft 365 企業版和 Microsoft 365 中型企業版：
   
 - 您可以將舊網站儲存為範本，然後將範本匯入新的網站。
 
-- 若要傳輸檔，請先在新網站上手動重新建立階層。 然後，您可以同時開啟這兩個 SharePoint 小組網站、使用 Windows Explorer 開啟文件庫，以及複製及貼上檔。 請參閱[影片：使用 [以瀏覽器開啟] 複製或移動文件庫](https://support.office.com/article/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790)檔案。
+- 若要傳輸檔，請先在新網站上手動重新建立階層。 然後，您可以同時開啟這兩個 SharePoint 小組網站、使用 Windows Explorer 開啟文件庫，以及複製及貼上檔。 請參閱[影片：使用 [以瀏覽器開啟] 複製或移動文件庫](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)檔案。
 
-- 若要傳輸清單資料、儲存[清單範本](https://support.microsoft.com/en-us/office/manage-list-templates-c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，然後使用儲存的範本在新網站上重新建立清單。
+- 若要傳輸清單資料、儲存[清單範本](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393)，然後使用儲存的範本在新網站上重新建立清單。
 
 - 若要將文件庫或清單內容從 SharePoint 線上環境（商務用 OneDrive 或小組網站）儲存至檔案共用或本機電腦，請參閱[手動遷移 SharePoint 線上內容的相關資訊](https://support.microsoft.com/kb/2783484)。
 
@@ -101,8 +101,8 @@ Microsoft 365 企業版和 Microsoft 365 中型企業版：
 
 ### <a name="email"></a>電子郵件：
 
-在您設定新訂閱後，請使用者[移動電子郵件、連絡人、工作及行事曆資訊](https://support.office.com/article/0996ece3-57c6-49bc-977b-0d1892e2aacc.aspx)。 他們可以使用初始的使用者名稱（例如 sue@contoso.onmicrosoft.com）來取得舊的電子郵件。
+在您設定新訂閱後，請使用者[移動電子郵件、連絡人、工作及行事曆資訊](https://support.microsoft.com/office/0996ece3-57c6-49bc-977b-0d1892e2aacc)。 他們可以使用初始的使用者名稱（例如 sue@contoso.onmicrosoft.com）來取得舊的電子郵件。
   
 ### <a name="onedrive-for-business-data"></a>商務資料的 OneDrive：
 
-要求使用者將[商務內容的 OneDrive](https://support.office.com/article/59b1de2b-519e-4d3a-8f45-51647cf291cd.aspx)複製/同步處理至其電腦，然後將其新增回其新訂閱。
+要求使用者將[商務內容的 OneDrive](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)複製/同步處理至其電腦，然後將其新增回其新訂閱。

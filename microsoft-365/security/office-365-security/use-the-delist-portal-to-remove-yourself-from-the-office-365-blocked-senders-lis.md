@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何使用取消列出入口網站，將您自己從 Microsoft 365 封鎖的寄件者清單中移除。
-ms.openlocfilehash: 239d30fec4d904af353731974435d377801be6c7
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 2d9dbba12740e62305e1bcfd193175659be34026
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208534"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739239"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用取消列出入口網站，將您自己從封鎖寄件者清單中移除
 
@@ -43,7 +43,7 @@ Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件�
 
 1. 在 Web 瀏覽器中，移至 [https://sender.office.com](https://sender.office.com)。
 
-2. 遵循頁面中的指示。請確定您使用被傳送錯誤訊息的電子郵件地址，以及在錯誤訊息中指定的 IP 位址。您每次造訪只能輸入一個電子郵件地址及一個 IP 位址。
+2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
 
 3. 按一下 **[送出]**。
 
@@ -60,4 +60,4 @@ Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件�
     > [!NOTE]
     > 最多可能需要24小時的時間，否則結果會在移除限制之前有很大的差異。
 
-請參閱[在 EOP 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)和[EOP 的輸出垃圾郵件保護](outbound-spam-controls.md)，以防止 IP 被列入黑名單。
+請參閱[在 EOP 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)和[EOP 的輸出垃圾郵件保護](outbound-spam-controls.md)，以防止 IP 遭到封鎖。

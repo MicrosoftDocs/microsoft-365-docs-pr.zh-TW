@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 35c24153bdacbdc0d07d65b508e66878bd0045e4
-ms.sourcegitcommit: ce6121a8e3ca7438071d73b0c76e2b6f33ac1cf7
+ms.openlocfilehash: e0e5c003ed78b78c5f259eae7e08478d523b5b12
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "43029825"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773784"
 ---
 # <a name="device-configuration"></a>裝置設定
 
@@ -31,9 +31,9 @@ ms.locfileid: "43029825"
 
 此表格會顯示在裝置布建期間套用至所有 Microsoft 受管理桌面裝置的預設原則。 Microsoft Managed Desktop Operations 團隊未批准所有已偵測到的變更，將會還原 Microsoft managed Desktop 所管理的物件。
 
-原則 | 說明
+原則 | 描述
 --- | ---
-安全性基準 | 為所有 Microsoft 受管理的桌面裝置設定 MDM 的[Microsoft 安全性基準](https://docs.microsoft.com/windows/device-security/windows-security-baselines)。 此基準為業界標準設定。 Microsoft 安全性專家已公開發行、經過測試，且已由 Microsoft 安全性專家檢查，以維護現代辦公裝置中的 Microsoft 受管理桌面裝置和應用程式的安全性。 <br><br>為了減輕不斷演變的安全性威脅環境中的威脅，使用每個 Windows 10 功能更新時，Microsoft 安全性基準將更新並部署至 Microsoft 受管理的桌面裝置。<br><br>如需詳細資訊，請參閱[Windows 10 安全性基準](https://blogs.technet.microsoft.com/secguide/2017/10/18/security-baseline-for-windows-10-fall-creators-update-v1709-final/)。
+安全性基準 | 為所有 Microsoft 受管理的桌面裝置設定 MDM 的[Microsoft 安全性基準](https://docs.microsoft.com/windows/device-security/windows-security-baselines)。 此基準為業界標準設定。 Microsoft 安全性專家已公開發行、經過測試，且已由 Microsoft 安全性專家檢查，以維護現代辦公裝置中的 Microsoft 受管理桌面裝置和應用程式的安全性。 <br><br>為了減輕不斷演變的安全性威脅環境中的威脅，使用每個 Windows 10 功能更新時，Microsoft 安全性基準將更新並部署至 Microsoft 受管理的桌面裝置。<br><br>如需詳細資訊，請參閱[Windows 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)。
 Microsoft 受管理的桌面推薦的安全性範本 | 一組建議變更的安全性基準，可優化使用者體驗。  這些變更會記錄在[安全性附錄](#security-addendum)中。 原則附錄更新會在必要時進行。  
 更新部署 | 使用 Windows Update for Business 執行軟體更新逐步部署。 IT 系統管理員無法修改部署群組原則的設定。 如需以群組為基礎的部署的詳細資訊，請參閱[Microsoft Managed Desktop 中的更新的處理方式](updates.md)。
 流量計費連接 | 依預設，會關閉透過流量計費連線（例如，LTE 網路）上的更新，不過每個使用者可以在 [設定] 中個別開啟此功能 **> 更新 > 高級選項**。 如果您想要允許所有使用者透過流量計費連線啟用更新，請[提交變更要求](../working-with-managed-desktop/admin-support.md)，它會針對所有裝置開啟此設定。

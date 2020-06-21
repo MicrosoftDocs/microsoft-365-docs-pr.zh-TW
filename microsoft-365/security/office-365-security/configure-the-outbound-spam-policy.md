@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection （EOP）中查看、建立、修改和刪除輸出垃圾郵件原則。
-ms.openlocfilehash: 6a15e33033643f99fc8aeb51036ddac7beba7b71
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 12f2936530a300cf79556ebf02533c187caa23d5
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616575"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761715"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -79,7 +79,17 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要新增、修改和刪除輸出垃圾郵件原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要唯讀的輸出垃圾郵件原則的存取權，您必須是**Security Reader**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派許可權，才能執行本主題中的程式：
+
+  - 若要新增、修改和刪除輸出垃圾郵件原則，您必須是下列其中一個角色群組的成員：
+
+    - 在[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)的**組織管理**或**安全性管理員**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**或**衛生管理**。
+
+  - 若要唯讀的輸出垃圾郵件原則的存取權，您必須是下列其中一個角色群組的成員：
+
+    - 安全性[& 規範中心](permissions-in-the-security-and-compliance-center.md)的**安全性讀取器**。
+    - 在[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**View-Only 的組織管理**。
 
 - 如需輸出垃圾郵件原則的建議設定，請參閱[EOP 呼出垃圾郵件篩選原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)。
 
@@ -154,7 +164,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
    - **每位使用者的收件者數目上限**
 
-     有效的值為0到10000。 預設值為0，這表示使用服務預設值。 如需詳細資訊，請參閱[在 Microsoft 365 選項](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)中傳送限制。
+     有效的值為0到10000。 預設值為0，這表示使用服務預設值。 如需詳細資訊，請參閱傳送[限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)。
 
      - **外部每小時限制**：每小時的外部收件者數目上限。
 
@@ -178,7 +188,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 6. 必備展開 [套用**至**] 區段，識別套用原則的內部寄件者。
 
-    您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同狀況或例外狀況或邏輯的多個值（例如 _\<sender1\>_ or _\<sender2\>_ ）。 使用和邏輯不同的條件或例外狀況（例如 _\<sender1\>_ 和 _\<member of group 1\>_ ）。
+    您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<sender1\>_ 或 _\<sender2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<sender1\>_ 和 _\<member of group 1\>_)。
 
     最簡單的方法是按一下 [新增條件]**** 三次，查看所有可用的條件。 您可以按一下 ![移除按鈕](../../media/scc-remove-icon.png)移除您不想要設定的條件。
 
@@ -500,7 +510,7 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 如需詳細的語法及參數資訊，請參閱[Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterrule)。
 
-## <a name="for-more-information"></a>相關資訊
+## <a name="for-more-information"></a>如需詳細資訊
 
 [從 [受限使用者] 入口網站中移除封鎖的使用者](removing-user-from-restricted-users-portal-after-spam.md)
 

@@ -25,12 +25,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，您將瞭解如何使用安全連結來保護您的組織免受網路釣魚和其他攻擊。
-ms.openlocfilehash: 5cd5e1331bb16b27cd036d20458355448ee32ae2
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 07ec9611a2dca7dff7daf3726b94b0aec638b17c
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616763"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754745"
 ---
 # <a name="atp-safe-links"></a>ATP 安全連結
 
@@ -47,7 +47,7 @@ Office 365 ATP 安全連結（Office 365 的部分「[高級威脅防護](office
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>如何取得 ATP 安全連結保護
 
-**首先，請確定您的訂閱包含[Office 365 高級威脅防護](office-365-atp.md)** 方案1或計畫2。 Office 365 ATP 包含在訂閱中，例如[microsoft 365 企業](https://www.microsoft.com/microsoft-365/enterprise/home)版、 [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)、Office 365 企業版 E5、Office 365 教育版 A5 等等。如果您的組織有未包含 Office 365 ATP 的 Microsoft 365 訂閱，您可以將 ATP 購買為附加元件。 如需詳細資訊，請參閱下列資源：
+**首先，請確定您的訂閱包含[Office 365 高級威脅防護](office-365-atp.md)** 方案1或計畫2。 Office 365 ATP 包含在訂閱中，例如[microsoft 365 企業版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)E5、Office 365 企業版 E5、Office 365 教育版 A5 等等。如果您的組織有未包含 Office 365 ATP 的 Microsoft 365 訂閱，您可以將 ATP 購買為附加元件。 如需詳細資訊，請參閱下列資源： 
 
 - [Office 365 進階威脅防護的方案與定價](https://products.office.com/exchange/advance-threat-protection)
 
@@ -59,7 +59,7 @@ Office 365 ATP 安全連結（Office 365 的部分「[高級威脅防護](office
 
 - Microsoft 365 用戶端應用程式已設定為使用新式驗證（這適用于 Office 檔中的 ATP 安全連結保護）。 (請參閱[適用於 Office 2016 的新式驗證](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。)
 
-- 使用者已使用公司或學校帳戶登入。 (請參閱[登入 Office 或 Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)。)
+- 使用者已使用公司或學校帳戶登入。 （請參閱登[入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。）
 
 - 您組織的電子郵件可通過 Exchange Online Protection。
 
@@ -81,7 +81,7 @@ Office 365 ATP 安全連結（Office 365 的部分「[高級威脅防護](office
 
 下表說明一些範例案例，這些範例可能有或可能沒有 ATP 安全連結保護。 (在這所有案例中，我們都假設組織擁有 Office 365 企業版 E5)。
 
-|**範例案例**|**此案例中是否套用 ATP 安全連結保護？**|
+|範例案例|此案例中是否套用 ATP 安全連結保護？|
 |:-----|:-----|
 |Jean 是群組成員，該群組的 ATP 安全連結原則涵蓋電子郵件和 Office 文件中的 URL。 Jean 開啟某人傳送的 PowerPoint 簡報，然後按一下簡報中的 URL。|是的。 定義的 ATP 安全連結原則適用于 Jean-francois 的群組、Jean-francois 的電子郵件，以及 Jean-francois 開啟的 Word、Excel、PowerPoint 或 Visio 檔，只要在 Windows、iOS 或 Android 裝置上登入 Jean-francois，並使用 Microsoft 365 應用程式 for enterprise。|
 |在 Chris 的組織中，全域或安全性系統管理員都未定義任何 ATP 安全連結原則。 Chris 收到包含惡意網站 URL 的電子郵件。 Chris 不知道 URL 是惡意的，並且按下連結。|否。 適用於組織中所有人且涵蓋 URL 的預設原則都必須加以定義，才能有保護效用。|

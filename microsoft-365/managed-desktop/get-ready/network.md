@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f70f997b1f3b2ef47cfc647178c1836893bc3e66
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
+ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632836"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735511"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路設定
 
@@ -53,8 +53,8 @@ Microsoft 支援和修復助理 | \*。 apibasic.diagnostics.office.com  <br>\*�
 
 Microsoft 服務 | 檔來源-允許清單上的 URLs 必要專案
 --- | ---
-Windows 10 企業版，包含 Windows 更新（商務） | [管理 Windows 10 版本1803的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本1809的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 版本1903的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
-傳遞優化 | [設定 Windows 10 更新的傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
+Windows 10 企業版，包含 Windows 更新（商務） | [管理 Windows 10 版本1803的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本1809的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 版本1903的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 Windows 10 版本2004的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
+傳遞最佳化 | [設定 Windows 10 更新的傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365 URL 與 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [混合式識別所需的埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)和 Active Directory[網域服務埠需求](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune 網路設定需求](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Microsoft Intune 的網路端點](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)

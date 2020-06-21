@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection （EOP）中設定連線篩選，以允許或封鎖電子郵件伺服器的電子郵件。
-ms.openlocfilehash: 14758161f827cf231a8f3a0415748c7a2dd5981f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e0cb5161ac33333a0f8cd5f897b4a0a85315c12e
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616587"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755245"
 ---
 # <a name="configure-connection-filtering"></a>設定連線篩選
 
@@ -46,9 +46,19 @@ ms.locfileid: "44616587"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要修改預設連線篩選原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要對預設連線篩選原則進行唯讀存取，您必須是**Security Reader**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派許可權，才能執行本主題中的程式：
 
-- 若要尋找您要允許或封鎖之電子郵件伺服器（寄件者）的來源 IP 位址，您可以檢查郵件頭中的 [連接 IP （**CIP**）標頭] 欄位。 若要在不同的電子郵件客戶程式中查看郵件頭，請參閱在[Outlook 中查看網際網路郵件頭](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)。
+  - 若要修改預設連線篩選原則，您必須是下列其中一個角色群組的成員：
+
+    - 在[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)的**組織管理**或**安全性管理員**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**或**衛生管理**。
+
+  - 若要對預設連線篩選原則進行唯讀存取，您必須是下列其中一個角色群組的成員：
+
+    - 安全性[& 規範中心](permissions-in-the-security-and-compliance-center.md)的**安全性讀取器**。
+    - 在[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**View-Only 的組織管理**。
+
+- 若要尋找您要允許或封鎖之電子郵件伺服器（寄件者）的來源 IP 位址，您可以檢查郵件頭中的 [連接 IP （**CIP**）標頭] 欄位。 若要在不同的電子郵件客戶程式中查看郵件頭，請參閱在[Outlook 中查看網際網路郵件頭](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)。
 
 - IP 允許清單優先于 IP 封鎖清單（這兩個清單上的位址未遭到封鎖）。
 

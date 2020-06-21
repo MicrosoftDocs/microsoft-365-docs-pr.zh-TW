@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection （EOP）和 Office 365 Advanced 威脅防護（Office 365 ATP）中可用的反網路釣魚原則。
-ms.openlocfilehash: 4cf727cd7d232baac13f44e008a509934f55d895
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: a61123e3d90a4125bf5a8303654973e1b478fc4c
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689275"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754661"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -95,7 +95,7 @@ ATP 反網路釣魚原則僅可用於具有 Office 365 ATP 的組織。 例如�
     - 針對寄件者相片中的問號，SPF 或 DKIM 最為重要。
     - 在 [via] 標籤上，確認 DKIM 簽章中的網域，或是從 [寄件者] 位址的網域中的 [從位址相符（或）**郵件**的子域]。
 
-  如需詳細資訊，請參閱[在 Outlook.com 中識別可疑郵件和網頁上的 Outlook](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206)
+  如需詳細資訊，請參閱[在 Outlook.com 中識別可疑郵件和網頁上的 Outlook](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## <a name="exclusive-settings-in-atp-anti-phishing-policies"></a>ATP 反網路釣魚原則中的獨佔設定
 

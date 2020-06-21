@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: 瞭解如何為 Microsoft 365 群組建立命名原則。
-ms.openlocfilehash: 38b5bbed0c6e4c12af2f529568a53df329d9a933
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ae216d0d8f3319e9633d300d785b4a8c31702798
+ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388002"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702545"
 ---
 # <a name="groups-naming-policy"></a>群組命名原則
 
@@ -80,6 +80,9 @@ ms.locfileid: "44388002"
 - 在建立原則時，總的首碼和尾碼字串長度限制為53個字元。
 
 - 首碼和尾碼可以包含組名和群組別名中支援的特殊字元。 當前綴和尾碼包含不允許在群組別名中使用的特殊字元時，它們只適用于組名。 因此，在此情況下，套用至群組名稱的首碼和尾碼會與套用至群組別名的首碼和尾碼不同。
+
+  > [!NOTE]
+  > 句點（.）或連字號（-）可在群組名稱中的任何地方使用，但名稱的開頭或結尾除外。 在群組名稱中的任何地方（包括在名稱的開頭或結尾）都允許使用底線（_）。
 
 - 如果您使用 Yammer Microsoft 365 連線群組，請避免在您的命名原則中使用下列字元： @，，，， \# \[ \] \<, and \> 。 如果這些字元是在命名原則中，一般 Yammer 使用者將無法建立群組。
 

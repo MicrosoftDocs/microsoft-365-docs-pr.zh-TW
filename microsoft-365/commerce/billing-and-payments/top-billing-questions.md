@@ -26,12 +26,12 @@ search.appverid:
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
 description: '尋找適用于商務用 Microsoft 365 訂閱的最重要帳單問題的答案。 '
-ms.openlocfilehash: 04e2a24ced149e67899608237bdde67eac3f8bad
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: a2c25c82587752493dea6e3110e69f7075ed7b09
+ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400758"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44741685"
 ---
 # <a name="top-billing-questions-for-microsoft-365-for-business"></a>適用于商務用 Microsoft 365 的主要帳單問題
 
@@ -121,7 +121,7 @@ ms.locfileid: "44400758"
 
 是。 若要以電子郵件附件形式取得帳單表述，請使用下列步驟：
   
-1. 在 Microsoft 365 系統管理中心中，移至<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">帳單通知</a>頁面，或選取 [**帳單**] [帳單 \> **通知**]。
+1. 在 Microsoft 365 系統管理中心中，移至 [**帳單**] [帳單 \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">通知</a>] 頁面。
 
 2. 在 [是否要以電子郵件附件形式接收對帳單?]**** 底下，將開關切換為 [開啟]****。
 
@@ -200,9 +200,10 @@ ms.locfileid: "44400758"
 
 ::: moniker range="o365-worldwide"
 
-1. 在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">帳單</a>] 頁面上，選取發票日期範圍。
-  
-2. 若要列印或儲存帳單的 PDF 副本，請選取 [**下載發票 PDF**]，然後列印 pdf。
+1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">票據 & 付款</a>] 頁面。
+2. 在 [**發票**] 索引標籤上，選擇發票日期範圍。
+3. 選取您要查看的發票。
+4. 若要列印或儲存帳單的 PDF 副本，請選取 [**下載 pdf**]，然後列印 pdf。
 
 若要深入瞭解，請參閱[查看您的帳單或發票](view-your-bill-or-invoice.md)。
 

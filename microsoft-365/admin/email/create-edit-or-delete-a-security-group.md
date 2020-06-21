@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: 瞭解如何建立、編輯或刪除安全性群組。
-ms.openlocfilehash: 49fe9b941564f26268045f6e57af329900476b90
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: c7c8d57037d972cd89dad45358dc5a7aa3fb86e8
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432274"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780238"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 admin center 中建立、編輯或刪除安全性群組
 
@@ -41,7 +41,7 @@ ms.locfileid: "44432274"
 您也可以使用 [Exchange Online 和 SharePoint Online 中的群組](#groups-in-exchange-online-and-sharepoint-online)來傳送電子郵件或指派權限給使用者群組，以及使用 [Exchange Online 和 SharePoint Online 中的群組](#groups-in-exchange-online-and-sharepoint-online)來授與網站及網站集合權限與存取權給使用者。 
   
 > [!IMPORTANT]
->  打算使用網站信箱？ 透過安全性群組新增而不是個別新增至 SharePoint 網站的所有使用者僅能從 SharePoint 使用網站信箱。 這些使用者將無法從 Outlook 存取網站信箱。 如需詳細資訊，請參閱[使用 Microsoft 365 群組，而不是網站信箱](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx)。 
+>  打算使用網站信箱？ 透過安全性群組新增而不是個別新增至 SharePoint 網站的所有使用者僅能從 SharePoint 使用網站信箱。 這些使用者將無法從 Outlook 存取網站信箱。 如需詳細資訊，請參閱[使用 Microsoft 365 群組，而不是網站信箱](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b)。 
   
 ## <a name="manage-security-groups-in-the-admin-center"></a>管理系統管理中心的安全性群組
 

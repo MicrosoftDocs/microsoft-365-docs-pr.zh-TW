@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 46ab4b10-6857-44b1-b08d-d1b5f45a69c6
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以在 Microsoft 上懸停。
-ms.openlocfilehash: 74662f37c3f72f02767f2434d9b251e3bd37ff1b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e51cb77831f4e29ac3a51602a1bb19f8b0c9e0e3
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400422"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780346"
 ---
 # <a name="create-dns-records-at-hover-for-microsoft"></a>在 Microsoft 的懸停時建立 DNS 記錄
 
@@ -39,19 +39,19 @@ ms.locfileid: "44400422"
 
   
 > [!NOTE]
->  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 <a name="BKMK_verify"> </a>
 
-在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
-> 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-請依照下列步驟操作或[觀看影片](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2)。
   
-1. 首先請用[這個連結](https://www.hover.com/domains)移至 Hover 上您的網域頁面。系統會提示您先登入。
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![登入](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -76,7 +76,7 @@ ms.locfileid: "44400422"
    
     ![輸入或複製並貼上 DNS 值](../../media/3b0d19f9-4138-47a7-aab2-137ad120ded6.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     ![選取 [儲存]](../../media/07dcf68e-34be-47dc-999e-0216de68cc9c.png)
   
@@ -101,14 +101,14 @@ ms.locfileid: "44400422"
     
   
 > [!NOTE]
->  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft
 <a name="BKMK_add_MX"> </a>
 
-請依照下列步驟操作或[觀看影片](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2)。
   
-1. 首先請用[這個連結](https://www.hover.com/domains)移至 Hover 上您的網域頁面。系統會提示您先登入。
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![登入](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -132,7 +132,7 @@ ms.locfileid: "44400422"
    
     ![輸入或複製並貼上 DNS 值](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     ![選取 [儲存]](../../media/266c30a4-6703-48fb-a919-b510ed966193.png)
   
@@ -151,9 +151,9 @@ ms.locfileid: "44400422"
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
 
-請依照下列步驟操作或[觀看影片](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2)。
   
-1. 首先請用[這個連結](https://www.hover.com/domains)移至 Hover 上您的網域頁面。系統會提示您先登入。
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![登入](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -183,7 +183,7 @@ ms.locfileid: "44400422"
    
     ![輸入或複製並貼上 DNS 值](../../media/6ae607f8-d26e-47f0-a0f2-3487d37e8c7f.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     ![選取 [儲存]](../../media/69aa3546-32de-4c17-a2e2-8c0cd133efaa.png)
   
@@ -195,9 +195,9 @@ ms.locfileid: "44400422"
 > [!IMPORTANT]
 > 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
   
-請依照下列步驟操作或[觀看影片](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2)。
   
-1. 首先請用[這個連結](https://www.hover.com/domains)移至 Hover 上您的網域頁面。系統會提示您先登入。
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![登入](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -221,16 +221,16 @@ ms.locfileid: "44400422"
    
     ![輸入或複製並貼上 DNS 值](../../media/ed36b9e0-aaa9-45fb-804d-7d4e82ba0c7f.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     ![選取 [儲存]](../../media/13a395b9-e0e8-4393-b568-5f99b2da39da.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
 
-請依照下列步驟操作或[觀看影片](https://support.office.com/article/Video-Create-DNS-records-at-Hover-for-Office-365-182bd58e-8fe4-4717-9233-3a3546b72ad2?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片](https://support.microsoft.com/office/182bd58e-8fe4-4717-9233-3a3546b72ad2)。
   
-1. 首先請用[這個連結](https://www.hover.com/domains)移至 Hover 上您的網域頁面。系統會提示您先登入。
+1. To get started, go to your domains page at Hover by using [this link](https://www.hover.com/domains). You'll be prompted to sign in.
     
     ![登入](../../media/f608cfaa-4962-46a1-a469-89010494e4be.png)
   
@@ -257,12 +257,12 @@ ms.locfileid: "44400422"
    
     ![輸入或複製並貼上 DNS 值](../../media/67562cd6-c598-4c37-af53-626f153c0197.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
     ![選取 [儲存]](../../media/0d7ec216-9277-4709-b637-e94c8662730f.png)
   
 7. 使用前三個步驟和表格中第二列的值，新增其他 SRV 記錄。
     
 > [!NOTE]
-> DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   

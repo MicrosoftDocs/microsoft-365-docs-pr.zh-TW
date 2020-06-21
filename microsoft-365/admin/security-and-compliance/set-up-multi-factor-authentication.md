@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 瞭解如何為您的組織設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 9218e81aaf016c379c6ba8c7ae846a2a2132cf35
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: a8e84746a577b95307d325047f0822e8eb3786f0
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515804"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779938"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
   
@@ -80,10 +80,10 @@ ms.locfileid: "44515804"
 使用電子郵件通知、hallway 海報、小組會議或正式訓練，以確保您的員工瞭解：
 
 - 為何登入需要 MFA
-- [如何註冊以進行其他驗證方法](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14?ui=en-US&rs=en-001&ad=US)
-- [註冊後如何登入](https://support.office.com/article/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
-- [如何變更其其他驗證方法](https://support.office.com/article/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
-- [如何處理類似于新智慧型電話的情況](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)
+- [如何註冊以進行其他驗證方法](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [註冊後如何登入](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+- [如何變更其其他驗證方法](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+- [如何處理類似于新智慧型電話的情況](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
 
 最重要的是，請確定您***的員工瞭解何時要強制執行 MFA 需求***，使其不會令人感到驚訝。
 
@@ -120,6 +120,6 @@ ms.locfileid: "44515804"
 
 當您的員工註冊並開始以 MFA 登入時，請確定您的 IT 專家、IT 部門或服務台可以快速解答問題並解決問題。
 
-如需[疑難排解 MFA 登入的相關資訊](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)，請參閱本文。 
+如需[疑難排解 MFA 登入的相關資訊](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)，請參閱本文。 
 
 

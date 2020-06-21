@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 目前針對其 Microsoft 365 環境所面臨之組織的常見威脅和攻擊案例，以及緩解這些風險的建議動作。
-ms.openlocfilehash: c153b94b450b834687e83f39fc7179e0dda1a21f
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 894486951deac7e9c157409af8da5e813b53343b
+ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943564"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44739230"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 商務決策者（Bdm）的安全性
 
@@ -95,7 +95,7 @@ Microsoft 會在您的租使用者中提供安全評分工具，以根據您的�
 其他建議：
 - 使用 TLS 來保護夥伴通道通訊，例如電子郵件。
 - 只開啟與您通訊的合作夥伴的團隊同盟。
-- 不要以白名單寄件者網域、個別寄件者或來源 Ip 為准，這可讓使用者略過垃圾郵件和惡意程式碼檢查-這是一種常見的做法是，客戶會 whitelisting 他們自己的公認的網域或其他許多可報告電子郵件流程問題的網域。 請勿在垃圾郵件和連線篩選清單中新增網域，因為這可能會略過所有垃圾郵件檢查。 
+- 請勿將寄件者網域、個別寄件者或來源 Ip 新增至您的允許清單中，因為這可讓使用者略過垃圾郵件和惡意程式碼檢查-這是一種常見的做法，是客戶新增其公認的網域或其他許多網域，其中電子郵件流程問題可能會報告給允許清單。 請勿在垃圾郵件和連線篩選清單中新增網域，因為這可能會略過所有垃圾郵件檢查。 
 - 啟用輸出垃圾郵件通知—在內部的通訊群組清單中啟用輸出垃圾郵件通知，以報告任何內部使用者是否有任何內部使用者正在對外傳送垃圾郵件。 這可能是因為帳戶已受損的指標。
 - 停用所有使用者的遠端 PowerShell —遠端 PowerShell 主要是由系統管理員用來存取服務，以供管理或以程式設計 API 存取的目的。 建議您停用此選項，讓非系統管理員使用者避免偵測，除非他們有業務需求可以存取。 
 - 封鎖所有非管理員對 Microsoft Azure 管理入口網站的存取權。 若要做到這一點，您可以建立一個條件式存取規則來封鎖所有使用者，但系統管理員例外。 
@@ -117,7 +117,7 @@ Microsoft 365 資訊保護功能可協助您探索您有哪些資訊、儲存的
 |**檢查和優化您的條件式存取和相關原則，以符合零信任網路的目標**。 防範已知威脅包括實施一組建議的[原則](../enterprise/microsoft-365-policies-configurations.md)。 請複查這些原則的實施，以確保您保護應用程式和資料，以防範已取得您網路存取權的駭客。 請注意，建議使用 Windows 10 的 Intune 應用程式保護原則，以啟用 Windows 資訊保護（WIP）。 WIP 可防止透過應用程式和服務（例如電子郵件、社交媒體和公用雲端）意外洩漏組織資料。 |         |![綠色核取記號](../media/green-check-mark.png)|
 |**停用外部電子郵件轉發**。 取得使用者信箱存取權的駭客可將信箱設定為自動轉寄電子郵件，以竊取您的郵件。 即使沒有使用者的認知，也可能會發生這種情況。 您可以設定郵件流程規則，避免發生這種情況。|![綠色核取記號](../media/green-check-mark.png) |![綠色核取記號](../media/green-check-mark.png)|
 |**停用匿名外部行事曆共用**。 預設允許外部匿名日曆共用。 [停用行事曆共用](https://docs.microsoft.com/exchange/sharing/sharing-policies/modify-a-sharing-policy)，以減少機密資訊的可能洩漏。|![綠色核取記號](../media/green-check-mark.png) |![綠色核取記號](../media/green-check-mark.png)|
-|**設定敏感性資料的資料遺失防護原則**。 在安全性&amp;與合規性中心建立資料遺失防護原則，以探索和保護機密資料，例如信用卡號碼、社會保險號碼和銀行帳戶號碼。 Microsoft 365 包含許多您可以在資料遺失防護原則中使用的預先定義的機密資訊類型。 您也可以為環境所自訂的機密資料，建立您自己的敏感資訊類型。 |![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)|
+|**設定敏感性資料的資料遺失防護原則**。 在安全性與合規性中心建立資料遺失防護原則 &amp; ，以探索和保護機密資料，例如信用卡號碼、社會保險號碼和銀行帳戶號碼。 Microsoft 365 包含許多您可以在資料遺失防護原則中使用的預先定義的機密資訊類型。 您也可以為環境所自訂的機密資料，建立您自己的敏感資訊類型。 |![綠色核取記號](../media/green-check-mark.png)|![綠色核取記號](../media/green-check-mark.png)|
 |**實施資料分類和資訊保護原則**。 實施敏感度標籤，並使用它們來分類及套用敏感性資料的保護。 您也可以在資料遺失防護原則中使用這些標籤。 如果您使用的是 Azure 資訊保護標籤，建議您避免在其他系統管理中心中建立新標籤。|         |![綠色核取記號](../media/green-check-mark.png)|
 |**使用 Cloud App Security 來保護協力廠商應用程式和服務中的資料**。 設定 Cloud App Security 原則，以保護跨越協力廠商雲端應用程式（例如 Salesforce、Box 或 Dropbox）的敏感資訊。 您可以使用您在雲端 App 安全性原則中建立的敏感資訊類型和敏感度標籤，並在您的 SaaS 應用程式中套用這些標籤。 <br><br>Microsoft Cloud App Security 可讓您強制執行大量的自動化程式。 原則可以設定為提供連續的合規性掃描、法律 eDiscovery 工作、公開的機密內容和 DLP 等。 Cloud App Security 可以根據超過20個中繼資料篩選器（例如，access 層級、檔案類型）監控任何檔案類型。 |         |![綠色核取記號](../media/green-check-mark.png)|
 |**使用[MICROSOFT Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/information-protection-in-windows-overview)來識別使用者是否要在其 Windows 裝置上儲存敏感資訊**。 |         |![綠色核取記號](../media/green-check-mark.png)|

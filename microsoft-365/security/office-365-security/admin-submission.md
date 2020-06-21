@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
-ms.openlocfilehash: ae84c9ca111c7e7056ae97abff20471c474dccb2
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 18941c1400917291f8924331fd19827e476db914
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209748"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726846"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -36,7 +36,17 @@ ms.locfileid: "44209748"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至**提交**頁面，請使用 <https://protection.office.com/reportsubmission> 。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要新增、修改和刪除反垃圾郵件原則，您必須是「**組織管理**」、「**安全性管理員**」或「**安全性讀者**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派許可權，才能執行本主題中的程式：
+
+  - 若要將郵件和檔案提交給 Microsoft，您必須是下列其中一個角色群組的成員：
+
+    - 在[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)的**組織管理**或**安全性管理員**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**或**衛生管理**。
+
+  - 若要唯讀存取提交入口網站，您必須是下列其中一個角色群組的成員：
+
+    - 安全性[& 規範中心](permissions-in-the-security-and-compliance-center.md)的**安全性讀取器**。
+    - 在[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**View-Only 的組織管理**。
 
 - 如需使用者如何提交郵件和檔案給 Microsoft 的詳細資訊，請參閱[向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。
 

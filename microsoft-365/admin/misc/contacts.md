@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: 瞭解如何在系統管理中心建立連絡人，以及如何管理您的全域通訊清單。
-ms.openlocfilehash: 8abf16fd3332e4ba5789545d54d2a7a99232032d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ecbeb508519fa20e70e9768874d7be57aa2be481
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399419"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780010"
 ---
 # <a name="quick-help-contacts"></a>快速說明：連絡人
 
@@ -42,7 +42,7 @@ ms.locfileid: "44399419"
   
 ## <a name="how-are-these-contacts-different-from-my-contacts"></a>這些連絡人和 [我的連絡人] 有什麼不同？
 
-「我的連絡人」是您為自己建立的連絡人，而您的使用者自行建立，但其他人無法看到。 而您在系統管理中心建立的連絡人是為組織所建立，因此，每個人除了可以看到自己的連絡人之外也可以看到組織的連絡人。 若要深入瞭解，請參閱[人員簡介-Outlook Web App](https://support.microsoft.com/en-us/office/people-overview-outlook-web-app-5fe173cf-e620-4f62-9bf6-da5041f651bf)。
+「我的連絡人」是您為自己建立的連絡人，而您的使用者自行建立，但其他人無法看到。 而您在系統管理中心建立的連絡人是為組織所建立，因此，每個人除了可以看到自己的連絡人之外也可以看到組織的連絡人。 若要深入瞭解，請參閱[人員簡介-Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf)。
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>其他人要如何取得我在系統管理中心建立的連絡人？
 

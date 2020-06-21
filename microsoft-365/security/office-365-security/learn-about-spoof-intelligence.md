@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Exchange Online Protection （EOP）中的欺騙情報，您可以在其中允許或封鎖特定的欺騙寄件者。
-ms.openlocfilehash: fe1e8f8a2e9f0cc792dc802ea5c7362af00687ae
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: e1c282076d054c338a02a50412ec376406f5ce98
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613237"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726741"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中設定欺騙情報
 
@@ -58,7 +58,17 @@ ms.locfileid: "44613237"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要修改欺騙性智慧原則或啟用或停用欺騙智慧，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要取得欺騙智慧原則的唯讀存取權，您必須是「**安全性讀者**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派許可權，才能執行本主題中的程式：
+
+  - 若要修改欺騙性智慧原則或啟用或停用欺騙智慧，您必須是下列其中一個角色群組的成員：
+
+    - 在[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)的**組織管理**或**安全性管理員**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**或**衛生管理**。
+
+  - 若要取得欺騙智慧原則的唯讀存取權，您必須是下列其中一個角色群組的成員：
+
+    - 安全性[& 規範中心](permissions-in-the-security-and-compliance-center.md)的**安全性讀取器**。
+    - 在[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**View-Only 的組織管理**。
 
 - 如需適用于哄騙情報的建議設定，請參閱[EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 

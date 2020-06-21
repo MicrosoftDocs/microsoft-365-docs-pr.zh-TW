@@ -1,5 +1,5 @@
 ---
-title: 將電子郵件和連絡人遷移至 Microsoft 365
+title: 將電子郵件和連絡人移轉到 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -27,14 +27,14 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: '瞭解如何將連絡人、行事曆、來自 Gmail 的電子郵件，或其他電子郵件提供者匯入 Microsoft 365。 '
-ms.openlocfilehash: 6fa8ff991bf9c02743b81d7947d9486e8f7b7b0f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4cc7a68929bdcc4cb79f3c7b78e07023a8952f81
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398867"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779006"
 ---
-# <a name="migrate-email-and-contacts-to-microsoft-365"></a>將電子郵件和連絡人遷移至 Microsoft 365
+# <a name="migrate-email-and-contacts-to-microsoft-365"></a>將電子郵件和連絡人移轉到 Microsoft 365
 
 將電子郵件從 Gmail 或其他電子郵件提供者匯入或複製到 Microsoft 365。
   
@@ -46,11 +46,11 @@ ms.locfileid: "44398867"
 
 請遵循下列步驟，使用 Microsoft 365 將電子郵件、連絡人及行事曆從 Gmail 匯入 Outlook：
   
-- [將 Gmail 匯入至 Outlook](https://support.office.com/article/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7.aspx)
+- [將 Gmail 匯入至 Outlook](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
     
-- [匯入連絡人至 Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+- [匯入連絡人至 Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
-- [匯入 Google Calendar](https://support.office.com/article/098ed60c-936b-41fb-83d6-7e3786437330)
+- [匯入 Google Calendar](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
@@ -58,15 +58,15 @@ ms.locfileid: "44398867"
 
 請遵循下列步驟，將電子郵件、連絡人及行事曆從 Outlook 匯出到 .pst 檔案，然後將該檔案匯入至使用 Microsoft 365 的 Outlook：
   
-1. [匯出電子郵件、連絡人及行事曆](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91)
+1. [匯出電子郵件、連絡人及行事曆](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     
-2. [匯入郵件、連絡人及行事曆](https://support.office.com/article/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
+2. [匯入郵件、連絡人及行事曆](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
     
 如果您只想要連絡人，請遵循下列步驟：
   
-1. [從 Outlook 匯出連絡人](https://support.office.com/article/10f09abd-643c-4495-bb80-543714eca73f.aspx)
+1. [從 Outlook 匯出連絡人](https://support.microsoft.com/office/10f09abd-643c-4495-bb80-543714eca73f)
     
-2. [匯入連絡人至 Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+2. [匯入連絡人至 Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
 若要啟動此程式，請開啟 Outlook，**然後選擇 [** 檔案開啟匯出] [匯 \> ** &amp; ** \> **入/匯出**]。
   
@@ -82,9 +82,9 @@ ms.locfileid: "44398867"
   
 - 開啟 Outlook，然後**移至 [** 檔案] [ \> **新增帳戶**]。
     
-需要更詳細的步驟嗎？ 請參閱[新增帳戶](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b)。
+需要更詳細的步驟嗎？ 請參閱[新增帳戶](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)。
   
-[![顯示 backstage 視圖中 Outlook 帳戶資訊頁面的螢幕擷取畫面。](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
+[![顯示 backstage 視圖中 Outlook 帳戶資訊頁面的螢幕擷取畫面。](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>多個信箱：系統管理員可以大量將電子郵件、連絡人及行事曆匯入 Microsoft 365
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 的攻擊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e775112809fc25e562686761c69471dad6cac1d
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587493"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726799"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
@@ -30,7 +30,7 @@ ms.locfileid: "44587493"
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>什麼是 Office 365 中的非法同意授權攻擊？
 
-在非法同意授權攻擊中，攻擊者會建立已註冊 Azure 的應用程式，要求存取連絡人資訊、電子郵件或文件等資料。 然後，攻擊者誘騙使用者授權該應用程式同意透過網路釣魚攻擊，或透過插入非法程式碼到信任的網站，來存取其資料。 在非法應用程式獲得授權之後，就擁有資料的帳戶層級存取權，而不需要組織帳戶。 一般補救步驟，例如重設遭入侵帳戶的密碼或要求帳戶的多重要素驗證 (MFA)，對這類型攻擊是無效的，因為這些是第三方應用程式，而且在組織外部。 
+在非法同意授權攻擊中，攻擊者會建立已註冊 Azure 的應用程式，要求存取連絡人資訊、電子郵件或文件等資料。 然後，攻擊者誘騙使用者授權該應用程式同意透過網路釣魚攻擊，或透過插入非法程式碼到信任的網站，來存取其資料。 在非法應用程式獲得授權之後，就擁有資料的帳戶層級存取權，而不需要組織帳戶。 一般補救步驟，例如重設遭入侵帳戶的密碼或要求帳戶的多重要素驗證 (MFA)，對這類型攻擊是無效的，因為這些是第三方應用程式，而且在組織外部。
 
 這些攻擊採用一種互動模型，這種模型會假正在呼叫資訊的實體是自動化，而不是人。
 
@@ -43,18 +43,21 @@ ms.locfileid: "44587493"
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>尋找此攻擊徵象的步驟
 
-1. 開啟您租使用者中的**安全性 & 規範中心**。
+1. 開啟**安全性 & 規範中心**，網址為 <https://protection.office.com> 。
 
 2. 流覽至 [**搜尋**]，然後選取 [**審核記錄搜尋**]。
 
-3. 搜尋（所有活動和所有使用者）並輸入開始日期和結束日期（如有需要），然後按一下 [**搜尋**]。 
+3. 搜尋（所有活動和所有使用者）並輸入開始日期和結束日期（如有需要），然後按一下 [**搜尋**]。
 
 4. 按一下 [**篩選結果**]，並在 [**活動**] 欄位中輸入應用程式同意。
 
 5. 按一下結果以查看活動的詳細資料。 按一下 [**詳細資訊**] 以取得活動的詳細資料。 請檢查 IsAdminContent 是否設定為 True。
 
 > [!NOTE]
-> 在發生事件後，可在搜尋結果中顯示對應的審計記錄專案，最多可花30分鐘到24小時的時間。 <br/><br/> 在審核記錄中保留及可搜尋的審計記錄的時間長度，取決於您的 Microsoft 365 訂閱，特別是指派給特定使用者的授權類型。 如需詳細資訊，請參閱[稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
+> 
+> 在發生事件後，可在搜尋結果中顯示對應的審計記錄專案，最多可花30分鐘到24小時的時間。
+> 
+> 在審核記錄中保留及可搜尋的審計記錄的時間長度，取決於您的 Microsoft 365 訂閱，特別是指派給特定使用者的授權類型。 如需詳細資訊，請參閱[稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
 > 
 > 如果這個值為 true，表示擁有全域系統管理員存取權的人員可能已獲得資料的廣泛存取權。 如果這是未預期的，請採取步驟以[確認攻擊](#how-to-confirm-an-attack)。
 
@@ -109,7 +112,7 @@ ms.locfileid: "44587493"
 
 1. 使用本機系統管理員權限登入您將執行指令碼的電腦。
 
-2. 將[Get-AzureADPSPermissions](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)腳本從 GitHub 下載或複製到要執行腳本的資料夾。 此資料夾與寫入輸出「permissions.csv」檔案的資料夾是同一個。
+2. 將[Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)腳本從 GitHub 下載或複製到您要執行腳本的資料夾。 此資料夾與寫入輸出「permissions.csv」檔案的資料夾是同一個。
 
 3. 以系統管理員身分開啟 PowerShell 執行個體，然後開啟您要儲存指令碼的資料夾。
 

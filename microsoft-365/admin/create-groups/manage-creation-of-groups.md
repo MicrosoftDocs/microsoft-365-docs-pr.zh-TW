@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 瞭解如何控制可建立 Microsoft 365 群組的使用者。
-ms.openlocfilehash: f3de4ac0856f1281151e6d1c686d90559a5e8544
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b64e7ac96c5a0e38583d00f8a61bd47c5304cf45
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387990"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761671"
 ---
 # <a name="manage-who-can-create-groups"></a>管理誰可以建立群組
 
@@ -45,14 +45,12 @@ ms.locfileid: "44387990"
 - Microsoft Teams
 
 - Microsoft Stream
-    
-- StaffHub
-    
+
 - Planner
     
 - PowerBI
 
-- 藍圖
+- Web 和藍圖的專案
     
 您可以將 Microsoft 365 群組建立限制在特定安全性群組的成員。 若要設定此，您可以使用 Windows PowerShell。 本文將引導您完成必要的步驟。
   
@@ -125,7 +123,7 @@ ms.locfileid: "44387990"
 
 `$GroupName = "Group Creators"`
 
-將檔案儲存為 GroupCreators。 
+將檔案儲存為 GroupCreators.ps1。 
 
 在 [PowerShell] 視窗中，流覽至您儲存檔案的位置（輸入 "CD <FileLocation> "）。
 
@@ -173,7 +171,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 如果您想關閉群組建立限制，並再次允許所有使用者建立群組，請將 $GroupName 設定為 ""，並 $AllowGroupCreation 為 "True"，然後重新執行腳本。
     
-## <a name="step-4-verify-that-it-works"></a>步驟4：確認其運作正常
+## <a name="step-3-verify-that-it-works"></a>步驟 3：驗證命令能正常運作
 
 變更可能需要30分鐘以上的時間才會生效。 您可以執行下列動作來驗證新的設定：
 

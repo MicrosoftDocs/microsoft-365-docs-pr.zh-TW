@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以瞭解如何在安全性 & 合規性中心的「租使用者支援/封鎖」清單中設定 URL 和檔專案。
-ms.openlocfilehash: 0143ee2601a4cb9593c79f8c6c62d1f06914088f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 742a44c7ed63c8a3037e2ada295c94f89afa9c93
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613417"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726820"
 ---
 # <a name="manage-urls-and-files-in-the-tenant-allowblock-list"></a>管理承租人允許/封鎖清單中的 URLs 和檔案
 
@@ -58,7 +58,17 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要從 [承租人允許/封鎖] 清單中新增及移除值，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要取得租使用者 Allow/封鎖清單的唯讀許可權，您必須是**Security Reader**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派許可權，才能執行本主題中的程式：
+
+  - 若要從 [承租人允許/封鎖] 清單中新增及移除值，您必須是下列其中一個角色群組的成員：
+
+    - 在[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)的**組織管理**或**安全性管理員**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**或**衛生管理**。
+
+  - 若要對租使用者 Allow/封鎖清單進行唯讀存取，您必須是下列其中一個角色群組的成員：
+
+    - 安全性[& 規範中心](permissions-in-the-security-and-compliance-center.md)的**安全性讀取器**。
+    - 在[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**View-Only 的組織管理**。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心在承租人允許/封鎖清單中建立 URL 專案
 
@@ -262,7 +272,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 - 允許 IP4v 和 IPv6 位址，但不會 TCP/UDP 埠。
 
-- 不允許副檔名副檔名（例如，[test .pdf]）。
+- 不允許副檔名副檔名（例如，test.pdf）。
 
 - 不支援 Unicode，但 Punycode 是。
 

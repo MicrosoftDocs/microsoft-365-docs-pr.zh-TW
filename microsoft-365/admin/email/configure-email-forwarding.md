@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 使用 Office365 設定電子郵件轉寄至一或多個電子郵件帳戶。
-ms.openlocfilehash: 3ce82d514e1342ac6110ca74106477e3cf7820cb
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: f6c177ba37cf2b8ce3966732adbe8428d9b6179e
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432298"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780250"
 ---
 # <a name="configure-email-forwarding"></a>設定電子郵件轉寄
 
@@ -61,7 +61,7 @@ ms.locfileid: "44432298"
   
 4. 在 [電子郵件轉寄] 頁面上，選取 [**轉寄所有傳送至此信箱的電子郵件**]，輸入轉寄位址，然後選擇是否要保留轉寄電子郵件的副本。 如果您未看到此選項，請確定已將授權指派給使用者帳戶。 選取 **[儲存變更]**。
     
-    **若要轉寄至多個電子郵件地址**，您可以要求使用者在 Outlook 中設定規則，以轉寄位址。 若要深入瞭解，請參閱[使用規則來自動轉寄郵件](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746)。 
+    **若要轉寄至多個電子郵件地址**，您可以要求使用者在 Outlook 中設定規則，以轉寄位址。 若要深入瞭解，請參閱[使用規則來自動轉寄郵件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
     
      或者，在系統管理中心[建立通訊群組](../setup/create-distribution-lists.md)，[新增位址](add-user-or-contact-to-distribution-list.md)，然後使用本文中的指示，將轉寄設定為指向 DL。
     
@@ -79,7 +79,7 @@ ms.locfileid: "44432298"
 
 4. 在 [電子郵件轉寄] 頁面上，將 [切換至] 設定為 [**開啟**]，輸入轉寄位址，然後選擇是否要保留轉寄電子郵件的副本。 如果您未看到此選項，請確定已將授權指派給使用者帳戶。 選取 **[儲存]**。
     
-    **若要轉寄至多個電子郵件地址**，您可以要求使用者在 Outlook 中設定規則，以轉寄位址。 若要深入瞭解，請參閱[使用規則來自動轉寄郵件](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746)。 
+    **若要轉寄至多個電子郵件地址**，您可以要求使用者在 Outlook 中設定規則，以轉寄位址。 若要深入瞭解，請參閱[使用規則來自動轉寄郵件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
     
      或者，在系統管理中心[建立通訊群組](../setup/create-distribution-lists.md)，[新增位址](add-user-or-contact-to-distribution-list.md)，然後使用本文中的指示，將轉寄設定為指向 DL。
     
@@ -97,7 +97,7 @@ ms.locfileid: "44432298"
 
 4. 在 [電子郵件轉寄] 頁面上，將 [切換至] 設定為 [**開啟**]，輸入轉寄位址，然後選擇是否要保留轉寄電子郵件的副本。 如果您未看到此選項，請確定已將授權指派給使用者帳戶。 選取 **[儲存]**。
     
-    **若要轉寄至多個電子郵件地址**，您可以要求使用者在 Outlook 中設定規則，以轉寄位址。 若要深入瞭解，請參閱[使用規則來自動轉寄郵件](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746)。 
+    **若要轉寄至多個電子郵件地址**，您可以要求使用者在 Outlook 中設定規則，以轉寄位址。 若要深入瞭解，請參閱[使用規則來自動轉寄郵件](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)。 
     
      或者，在系統管理中心[建立通訊群組](../setup/create-distribution-lists.md)，[新增位址](add-user-or-contact-to-distribution-list.md)，然後使用本文中的指示，將轉寄設定為指向 DL。
     

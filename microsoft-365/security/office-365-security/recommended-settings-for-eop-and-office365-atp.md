@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高級威脅防護（ATP）安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用高級威脅防護（ATP），您也可以取得哪些額外功能？
-ms.openlocfilehash: 922457d231681bc4643ea1805fc6060de3abcb65
-ms.sourcegitcommit: b18949de721c6eef3521d5f8286d9b926ad4aabe
+ms.openlocfilehash: 15bd63a35b4279efc634115bbdb5248cdd5038db
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44342538"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761703"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建議設定
 
@@ -95,6 +95,8 @@ ms.locfileid: "44342538"
 
 若要建立及設定輸出垃圾郵件原則，請參閱[在 Office 365 中設定輸出垃圾郵件篩選](configure-the-outbound-spam-policy.md)。
 
+如需服務中預設傳送限制的詳細資訊，請參閱傳送[限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
+
 |||||
 |---|---|---|---|
 |**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
@@ -152,9 +154,9 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 |||||
 |---|---|---|---|
 |**安全性功能名稱**|**Standard**|**嚴格**|**Comment**|
-|受保護的使用者：**新增要保護的使用者** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|開啟 <br/><br/> `$true` <br/><br/> \<使用者清單\>|開啟 <br/><br/> `$true` <br/><br/> \<使用者清單\>|取決於您的組織，但建議您在重要角色中新增使用者。 在內部，這些可能是您 CEO、CFO 和其他資深領導人。 您可以在外部加入委員會成員或董事會。|
+|受保護的使用者：**新增要保護的使用者** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|開啟 <br/><br/> `$true` <br/><br/> \<list of users\>|開啟 <br/><br/> `$true` <br/><br/> \<list of users\>|取決於您的組織，但建議您在重要角色中新增使用者。 在內部，這些可能是您 CEO、CFO 和其他資深領導人。 您可以在外部加入委員會成員或董事會。|
 |受保護的網域：**自動包含我擁有的網域** <br/><br/> _EnableOrganizationDomainsProtection_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|受保護的網域：**包括自訂網域** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|開啟 <br/><br/> `$true` <br/><br/> \<網域清單\>|開啟 <br/><br/> `$true` <br/><br/> \<網域清單\>|取決於您的組織，但建議您新增您經常與其互動的網域。|
+|受保護的網域：**包括自訂網域** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|開啟 <br/><br/> `$true` <br/><br/> \<list of domains\>|開啟 <br/><br/> `$true` <br/><br/> \<list of domains\>|取決於您的組織，但建議您新增您經常與其互動的網域。|
 |受保護的使用者：**如果模仿的使用者傳送電子郵件** <br/><br/> _TargetedUserProtectionAction_|**隔離郵件** <br/><br/> `Quarantine`|**隔離郵件** <br/><br/> `Quarantine`||
 |受保護的網域：**如果類比網域傳送電子郵件** <br/><br/> _TargetedUserProtectionAction_|**隔離郵件** <br/><br/> `Quarantine`|**隔離郵件** <br/><br/> `Quarantine`||
 |**顯示類比使用者的秘訣** <br/><br/> _EnableSimilarUsersSafetyTips_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||

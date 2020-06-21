@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 365 設定安全協同作業
+title: 使用 Microsoft 365 設定安全的共同作業
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: 瞭解如何根據敏感度設定小組以保護您的資料
-ms.openlocfilehash: 8704c3a0a271c247652d611e963ff1d26308dcdb
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
+ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159464"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724800"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全協同作業
+# <a name="set-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全的共同作業
 
 能夠輕易與適當的人員分享資訊，同時避免 oversharing 是組織成功的關鍵。 這包括可以安全地與只有應有存取權的使用者共用機密資料。 視專案而定，這可能包括與組織外部人員共用機密資料。
 
@@ -57,7 +57,16 @@ ms.locfileid: "44159464"
 
 針對上述所有案例，您可以使用 Microsoft 團隊中的團隊來儲存、共用及共同作業資訊。 
 
-## <a name="using-teams-for-all-kinds-of-data"></a>針對所有種類的資料使用團隊
+若要設定安全 collabration，您可以使用這些 Microsoft 365 功能。
+
+| 產品或元件 | 功能 | 授權 |
+|:-------|:-----|:-------|
+| Office 365 進階威脅防護 | SPO、OneDrive 及小組的 ATP 安全附件;ATP 安全檔;小組的 ATP 安全連結    | Microsoft 365 E1，E3 和 E5 |
+| SharePoint    | 網站與檔案共用原則、網站共用許可權、共用連結、存取要求、網站來賓共用設定 | Microsoft 365 E1，E3 和 E5 |
+| Microsoft Teams   | 來賓存取、私人團隊、專用通道 | Microsoft 365 E1，E3 和 E5 |
+| Microsoft 365 合規性  | 敏感度標籤    | Microsoft 365 E3 和 E5 |
+
+### <a name="using-teams-for-all-kinds-of-data"></a>針對所有種類的資料使用團隊
 
 若要使用不同的 sensitivities 管理資訊存取，我們[為小組開發了三個不同的保護層級](configure-teams-three-tiers-protection.md)。 您可以自訂這些層級，以更好地解決需求或您的業務。 
 
@@ -91,7 +100,7 @@ ms.locfileid: "44159464"
 
 如果您有高度機密的專案需要在組織內共用額外的保護，您可以設定一個小組，該小組使用自己的敏感度標籤來加密檔案，只有小組成員可以讀取這些檔案。 如需詳細資訊，請參閱[Configure a team with security 隔離](secure-teams-security-isolation.md)。
 
-## <a name="sharing-with-people-outside-your-organization"></a>與組織外部的人員共用
+### <a name="sharing-with-people-outside-your-organization"></a>與組織外部的人員共用
 
 您可能需要[與組織外部的人員共用任何敏感度的資訊](collaborate-with-people-outside-your-organization.md)。 這可能包括與單一人員共用單一檔，以從世界各地的大型夥伴組織或兼職處理主要專案。 在 Microsoft 365 中，您可以輕鬆執行這種外部共用，並提供適當的防範措施，協助保護您的敏感資訊。
 
@@ -109,7 +118,13 @@ ms.locfileid: "44159464"
 
 如果您有一個主要專案與一個夥伴組織，您可以使用 Azure 權利管理，在您為專案設定的小組中管理該組織的客人。 如需詳細資訊，請參閱[Create a B2B extranet with managed guests](b2b-extranet.md) 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="deploy-the-secure-collaboration-solution"></a>部署安全的共同作業解決方案
+
+當您準備好部署此方案時，請繼續執行下列步驟：
+1. [為小組設定三種不同的保護層級](configure-teams-three-tiers-protection.md)。
+2. 設定[與組織外部人員共用任何敏感度資訊的](collaborate-with-people-outside-your-organization.md)設定。
+
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 安全性文件](https://docs.microsoft.com/microsoft-365/security)
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 瞭解如何建立及刪除 Microsoft 365 群組、新增及移除群組成員，以及自訂群組的運作方式。
-ms.openlocfilehash: 5e89c89c6b50e58f235877a61eaceaefe2bf6ee8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f6023188df1ae796badbf05b85ebaa1afdd914e5
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388014"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780442"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心建立群組
   
@@ -58,7 +58,7 @@ ms.locfileid: "44388014"
 
 ::: moniker range="o365-worldwide"
 
-使用者可以[自行新增或要求核准](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
+使用者可以[自行新增或要求核准](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
 
 1. 在系統管理中心中重新整理頁面，使新的群組出現，然後選取您要新增成員的群組名稱。
     
@@ -76,7 +76,7 @@ ms.locfileid: "44388014"
 
 ::: moniker range="o365-germany"
 
-使用者可以[自行新增或要求核准](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
+使用者可以[自行新增或要求核准](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
 1. 在系統管理中心中重新整理頁面，使新的群組出現，選取 [**群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>]，然後選取您要新增成員的群組。
     
 2. 在 [**成員**] 旁，選取 [**編輯**]。
@@ -92,7 +92,7 @@ ms.locfileid: "44388014"
 
 ::: moniker range="o365-21vianet"
 
-使用者可以[自行新增或要求核准](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
+使用者可以[自行新增或要求核准](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d)，也可以立即加入。
 1. 在系統管理中心中重新整理頁面，使新的群組出現，選取 [**群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>]，然後選取您要新增成員的群組。
     
 2. 在 [**成員**] 旁，選取 [**編輯**]。
@@ -120,7 +120,7 @@ ms.locfileid: "44388014"
 
 ## <a name="related-articles"></a>相關文章
 
-[管理 Microsoft 365 群組的來賓存取權](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[管理 Microsoft 365 群組的來賓存取權](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [選擇建立 Microsoft 365 群組時要使用的網域](choose-domain-to-create-groups.md)
 

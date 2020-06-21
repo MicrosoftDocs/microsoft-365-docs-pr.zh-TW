@@ -16,12 +16,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解威脅追蹤器（包括新的重要追蹤追蹤器），以協助您的組織維持在安全性上的關注。
-ms.openlocfilehash: 336cbe15d6eba7363e926a81fab498a7d6cff44a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 13e8463d88250fe76474311e9df394577949989e
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631154"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755061"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>威脅追蹤器 - 新增和值得注意的功能
 
@@ -42,10 +42,10 @@ ms.locfileid: "43631154"
   
 追蹤器是您使用[Office 365 高級威脅防護方案 2](office-365-ti.md)所獲得的眾多極佳功能。 威脅追蹤器包括[Noteworth](#noteworthy-trackers)追蹤器、[趨勢](#trending-trackers)追蹤器、[追蹤的查詢](#tracked-queries)，以及[已儲存的查詢](#saved-queries)。
   
-若要查看和使用您組織的威脅追蹤追蹤器，請移&amp;至安全性與[https://protection.office.com](https://protection.office.com)合規性中心（），然後選擇 [**威脅管理** \> **威脅追蹤**器]。
+若要查看和使用您組織的威脅追蹤追蹤器，請移至安全性與 &amp; 合規性中心（ [https://protection.office.com](https://protection.office.com) ），然後選擇 [**威脅管理** \> **威脅追蹤**器]。
   
 > [!NOTE]
-> 若要使用威脅追蹤追蹤器，您必須是全域系統管理員、安全性管理員或安全性讀取者。 請參閱[安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。 
+> 若要使用威脅追蹤追蹤器，您必須是全域系統管理員、安全性管理員或安全性讀取者。 請參閱[安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。 
   
 ### <a name="noteworthy-trackers"></a>注意追蹤追蹤
 
@@ -79,15 +79,15 @@ ms.locfileid: "43631154"
 
 您是否要檢查電子郵件、內容或辦公室活動（即將推出）、Explorer 和追蹤器一起運作，以協助您調查和追蹤安全性風險和威脅。 所有共同追蹤追蹤器提供的資訊，可保護您的使用者，方法是強調新的、值得注意和經常搜尋的問題-確保您的業務在移動至雲端時得到更好的保護。
   
-請記住，您可以隨時在[安全性&amp;與合規性中心的一覽](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85)點右下方，按一下 [**意見**反應] 按鈕，以提供我們對此或其他 Microsoft 365 安全性功能的意見反應。
+請記住，您可以在[安全性 & 合規性中心](https://support.microsoft.com/office/a5f2fd18-b029-4257-b5a8-ae83e7768c85)的右下方，按一下右下角的 [**意見**反應] 按鈕，隨時提供我們對此或其他 Microsoft 365 安全性功能的意見反應。
   
-![安全性&amp;與合規性中心](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
+![安全性與 &amp; 合規性中心](../../media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>追蹤器和 Office 365 高級威脅防護
 
 透過我們的 inaugural 值得注意的威脅，我們會強調[Office 365 ATP 安全附件](atp-safe-attachments.md)所偵測到的高級惡意程式碼威脅。 如果您是 Office 365 企業版 E5 客戶，而您不是使用[office 365 高級威脅防護](office-365-atp.md)（ATP），您應該將其包含在您的訂閱中。 即使您有其他安全性工具篩選您的 Office 365 服務中的電子郵件流程，ATP 也會提供價值。 不過，當您主要的電子郵件安全性解決方案是透過 Office 365 時，反垃圾郵件和[Office 365 ATP 安全連結](atp-safe-links.md)功能效果最佳。 
   
-![安全性&amp;與合規性中心的 ATP](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
+![安全性與 &amp; 合規性中心的 ATP](../../media/cee70d07-f0c1-459b-843c-2d10c253349f.png)
   
 在當今威脅 riddled 世界中，只執行傳統的反惡意程式碼掃描，表示您未受到攻擊的程度不足。 當今更為複雜的攻擊者使用常用工具，以建立新的、經過模糊處理或延遲的攻擊，而這些攻擊會因傳統的簽章型反惡意程式碼引擎而無法辨識。 ATP 安全附件功能會取得電子郵件附件，並在虛擬環境中引爆它們，以判斷是否為安全或惡意的。 此引爆程式會開啟虛擬電腦環境中的每個檔案，然後觀察在開啟該檔案後會發生什麼情況。 不論是 PDF、壓縮檔或 Office 檔，惡意程式碼都會隱藏在檔案中，只有在受害者在其電腦上開啟之後，才啟用該檔案。 透過 detonating 和分析電子郵件流程中的檔案，Office 365 ATP 功能會根據行為、檔信譽及許多啟發式規則，尋找這些威脅。
   
@@ -97,7 +97,7 @@ ms.locfileid: "43631154"
 
 - 如果您的組織還沒有這些 Office 365 威脅調查和回應功能，請參閱[如何取得 office 365 威脅調查和回應功能？](office-365-ti.md)。
     
-- 確定您的安全性小組已指派正確的角色和許可權。 您必須是全域系統管理員，或具有安全性管理員或在安全性&amp;與規範中心中指定的「搜尋」和「清除」角色。 請參閱[安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 確定您的安全性小組已指派正確的角色和許可權。 您必須是全域系統管理員，或具有安全性管理員或在安全性與規範中心中指定的「搜尋」和「清除」角色 &amp; 。 請參閱[安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
     
 - 在您的 Microsoft 365 環境中觀賞要顯示的新追蹤器。 若有可用，您可以在[這裡](https://protection.office.com/)找到追蹤追蹤器。 移至**威脅管理** \> **威脅**追蹤器。
     

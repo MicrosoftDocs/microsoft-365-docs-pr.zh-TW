@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在 Exchange Online Protection （EOP）中深入瞭解隔離郵件的使用者垃圾郵件通知。
-ms.openlocfilehash: 7d4cf21ade504e999dc5b53ad9062977369561c6
-ms.sourcegitcommit: 4ce28ad4d17d336106c1720d65349f19f9e90e04
+ms.openlocfilehash: 14dcdfa8373e3826b23bc5574d1b5ae8ff76927b
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44294238"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754781"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>使用使用者垃圾郵件通知來釋放及報告隔離的郵件
 
@@ -44,7 +44,7 @@ ms.locfileid: "44294238"
 
 - **日期**：郵件被隔離的日期和時間（UTC）。
 
-- **封鎖寄件者**：按一下此連結可將寄件者新增至您的封鎖寄件者清單。 如需詳細資訊，請參閱[在 Outlook 中封鎖郵件寄件者](https://support.office.com/article/b29fd867-cac9-40d8-aed1-659e06a706e4)。
+- **封鎖寄件者**：按一下此連結可將寄件者新增至您的封鎖寄件者清單。 如需詳細資訊，請參閱[封鎖郵件寄件者](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)。
 
 - **發行**：針對垃圾郵件（沒有網路釣魚）郵件，您可以在這裡放開郵件，而不需要隔離安全性 & 規範中心。
 

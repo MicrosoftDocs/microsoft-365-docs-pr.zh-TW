@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 深入瞭解由世紀運作的 Office 365，其設計目的是為了符合中國安全、可靠及可伸縮的雲端服務的需求。
 monikerRange: o365-21vianet
-ms.openlocfilehash: f18dd909cedb69e509d6da69e45940337cda8c17
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7c8459c8c3da67ac4cc80ac2912e368f23cd8e10
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399011"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779914"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由 21Vianet 運作的 Office 365
 
@@ -57,10 +57,10 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 |:-----|:-----|
 |自訂網域  <br/> |管理員可以建立及（或）使用透過中文特定網域提供者註冊的自訂網域。 如果您沒有自訂網域，您可以從網域註冊機構[購買功能變數名稱](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)。 如果您已經有一個，請[找到您的網域註冊機構或 DNS 主機服務提供者](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)。  <br/> 此外，如果您使用 Office 365 SharePoint 線上服務建立公用網站，則中國網際網路相容性原則要求您取得網際網路內容提供者（ICP）號碼。  **附注：** 無法使用自訂功能變數名稱中不允許的字詞的自動驗證。           |
 |訂閱、帳單和技術支援  <br/> |由世紀所提供。 如需如何聯繫支援人員的詳細資訊，請參閱[聯繫我們 Office 365 for business support](../contact-support-for-business-products.md)。  <br/> |
-|自助式密碼重設  <br/> |僅適用于系統管理員。 如需詳細資訊，請參閱[在由世紀運作的 Office 365 變更或重設密碼](https://support.microsoft.com/en-us/office/change-or-reset-your-password-in-microsoft-365-operated-by-21vianet-d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
+|自助式密碼重設  <br/> |僅適用于系統管理員。 如需詳細資訊，請參閱[在由世紀運作的 Microsoft 365 中變更或重設密碼](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
 |支援層級的安全性、隱私權、合規性及詳細資料  <br/> |由世紀所提供。  <br/> |
-|Office 桌面設定  <br/> |Office 桌面安裝程式不適用於 Office 2010 和 Office 2007。 不過，系統管理員可以[將目前的 office 桌面應用程式設定為搭配 Office 365](https://support.office.com/article/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)使用。  <br/> |
-|行動裝置和裝置支援\*  <br/> | 即將推出下列行動裝置功能：  <br/>  行動裝置管理（MDM）  <br/>  Blackberry Business 雲端服務（BBCS）無法使用，但是您可以使用 Exchange ActiveSync 裝置或從調研（向內 BlackBerry 無線電子郵件解決方案）來執行 Blackberry Enterprise Server （BE）的服務。  <br/>  如需行動支援的詳細資訊，請參閱[Set up and manage mobile access for a 使用者](https://support.microsoft.com/en-us/office/set-up-and-manage-mobile-access-for-your-users-01fff219-4492-40f2-82d3-fd2ffc0ad802)。  <br/> |
+|Office 桌面設定  <br/> |Office 桌面安裝程式不適用於 Office 2010 和 Office 2007。 不過，系統管理員可以[將目前的 office 桌面應用程式設定為搭配 Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)使用。  <br/> |
+|行動裝置和裝置支援\*  <br/> | 即將推出下列行動裝置功能：  <br/>  行動裝置管理（MDM）  <br/>  Blackberry Business 雲端服務（BBCS）無法使用，但是您可以使用 Exchange ActiveSync 裝置或從調研（向內 BlackBerry 無線電子郵件解決方案）來執行 Blackberry Enterprise Server （BE）的服務。  <br/>  如需行動支援的詳細資訊，請參閱[Set up and manage mobile access for a 使用者](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)。  <br/> |
 |Office Lens  <br/> |不提供。  <br/> |
 |Microsoft Planner  <br/> |即將推出。  <br/> |
 |Microsoft Teams  <br/> |無法使用。  <br/> |
@@ -74,7 +74,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 
 |||
 |:-----|:-----|
-|透過電子郵件與組織外部的人員共用檔、文件庫或網站  <br/> |您可以使用此功能，但預設為關閉，因為使用它可能會讓您的國家/地區以外共用檔案。 系統管理員還是能夠將它開啟，但會出現警告訊息，指出它可能在您的國家/地區外進行檔案共用存取。 嘗試與組織外部的人員共用的使用者也會收到警告。 如需詳細資訊，請參閱[Share SharePoint files or folders In Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx)。  <br/> |
+|透過電子郵件與組織外部的人員共用檔、文件庫或網站  <br/> |您可以使用此功能，但預設為關閉，因為使用它可能會讓您的國家/地區以外共用檔案。 系統管理員還是能夠將它開啟，但會出現警告訊息，指出它可能在您的國家/地區外進行檔案共用存取。 嘗試與組織外部的人員共用的使用者也會收到警告。 如需詳細資訊，請參閱[Share SharePoint files or folders In Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。  <br/> |
 |Access Services  <br/> |支援 Access 2013，但新增 Access 應用程式可能無法使用，因為這項功能將從 Office 365 停用，並 SharePoint 線上。 在 Office 365 和 SharePoint Online 中建立新的 Access 型 web 應用程式和 Access web 資料庫時，將會在4月的2018內停止從6月2017及任何其餘 web 應用程式和 web 資料庫的開始。 此外，Access 2010 功能不受支援，嘗試使用 Access 2010 資料庫會導致錯誤及可能的資料遺失。  <br/> |
 |Microsoft PowerApps  <br/> |即將推出。  <br/> |
 |資訊版權管理 (IRM)  <br/> |即將推出為您的組織設定 SharePoint IRM 功能的功能。  <br/> |
@@ -108,12 +108,12 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
  新的 Exchange 2013 累計更新5（CU5），現在支援內部部署 Exchange 2013 組織和 Office 365 服務之間的完整功能混合部署。 利用混合式設定向導中的新改進功能，Exchange 2013 CU5 支援您的內部部署與 Exchange Online 組織之間的下列混合式功能：  
 
 - 內部部署和 Exchange Online 組織之間的安全郵件路由。 
-- 以共用網域命名空間進行的郵件路由傳送。例如，內部部署和 Exchange Online 組織都採用 @contoso.com SMTP 網域。 
+- Mail routing with a shared domain namespace. For example, both on-premises and Exchange Online organizations use the @contoso.com SMTP domain. 
 - 統一的全域通訊清單 (GAL)，也稱為「共用通訊錄」。  
 - 在內部部署和 Exchange Online 組織之間共用空閒/忙碌和行事曆。  
-- 集中式輸入與輸出郵件流程控制。您可設定所有輸入與輸出 Exchange Online 郵件以透過內部部署 Exchange 組織路由傳輸。 
+- Centralized control of inbound and outbound mail flow. You can configure all inbound and outbound Exchange Online messages to be routed through the on-premises Exchange organization. 
 - 內部部署和 Exchange Online 組織的單一 Office Outlook Web App URL。  
-- 將現有內部部署信箱移至 Exchange Online 組織的能力。若需要，Exchange Online 信箱也可移回至內部部署組織。  
+- The ability to move existing on-premises mailboxes to the Exchange Online organization. Exchange Online mailboxes can also be moved back to the on-premises organization if needed.  
 - 使用內部部署 Exchange 系統管理中心 (EAC) 進行集中式信箱管理。  
 - 在內部部署和 Exchange Online 組織之間的 Outlook 連絡人的 MailTips、HD 相片支援和多信箱搜尋。 
 - 適用於內部部署 Exchange 信箱的雲端式郵件封存。 
@@ -165,7 +165,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 - [使用混合式設定向導建立混合式部署](https://go.microsoft.com/fwlink/?LinkId=506767)
 
 > [!IMPORTANT]
->  [Exchange Server 部署助理](https://go.microsoft.com/fwlink/?LinkId=506768)是免費的 web 式工具，可協助您設定內部部署組織與 office 365 之間的混合式部署，或完全遷移至 office 365。 此工具會提出一些簡單的問題，然後根據您的回答來建立自訂的檢查清單，並指示如何設定混合式佈署。 強烈建議使用部署助理來設定混合部署。 > 針對不想升級或新增 Exchange 2013 CU5 伺服器的組織，Exchange 2013 SP1 組織可以設定其內部部署和 Exchange Online 組織之間的共用行事曆空閒/忙碌共用。 若要設定此混合部署功能，請參閱[使用由世紀運作的 Office 365 設定 Exchange 混合式部署功能](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d)。 
+>  [Exchange Server 部署助理](https://go.microsoft.com/fwlink/?LinkId=506768)是免費的 web 式工具，可協助您設定內部部署組織與 office 365 之間的混合式部署，或完全遷移至 office 365。 此工具會提出一些簡單的問題，然後根據您的回答來建立自訂的檢查清單，並指示如何設定混合式佈署。 強烈建議使用部署助理來設定混合部署。 > 針對不想升級或新增 Exchange 2013 CU5 伺服器的組織，Exchange 2013 SP1 組織可以設定其內部部署和 Exchange Online 組織之間的共用行事曆空閒/忙碌共用。 若要設定此混合部署功能，請參閱[使用由世紀運作的 Office 365 設定 Exchange 混合式部署功能](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d)。 
 
 |||  
 |---|---|
@@ -187,7 +187,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 
 |||
 |:-----|:-----|
-|管理帳戶（從 Office 用戶端內）  <br/> |這項功能，以及要移至 Office 365 入口網站的其他功能，目前指向全球 Office 365 入口網站，您無法使用由您的 Office 365 （由世紀帳戶運作）進行登錄。 這是正修正的已知問題。 同時，您可以使用 URL 登 https://portal.partner.microsoftonline.cn/ 入您的帳戶，並從那裡管理設定。 如需詳細資訊，請參閱[Manage a office 365 Pro Plus account for 由世紀運作的 office 365](https://support.office.com/article/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8.aspx)。  <br/> |
+|管理帳戶（從 Office 用戶端內）  <br/> |這項功能，以及要移至 Office 365 入口網站的其他功能，目前指向全球 Office 365 入口網站，您無法使用由您的 Office 365 （由世紀帳戶運作）進行登錄。 這是正修正的已知問題。 同時，您可以使用 URL 登 https://portal.partner.microsoftonline.cn/ 入您的帳戶，並從那裡管理設定。 如需詳細資訊，請參閱[管理您的 Microsoft 365 應用程式企業版帳戶（由世紀運作的 Office 365](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)）。  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
@@ -197,7 +197,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 |對 Bing 服務的資訊檢索窗格整合  <br/> |無法使用。  <br/> |
 |協助工具檢查程式  <br/> |無法使用。  <br/> |
 |課程筆記本  <br/> |無法使用。  <br/> |
-|Forms  <br/> |無法使用。  <br/> |
+|表單  <br/> |無法使用。  <br/> |
 |沉浸式讀取器  <br/> |無法使用。  <br/> |
 |插入線上圖片  <br/> |無法使用。  <br/> |
 |會議詳細資料  <br/> |無法使用。  <br/> |
@@ -213,7 +213,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 |:-----|:-----|
 |支援商務用 Skype 的網域提供者  <br/> |您必須使用支援 SRV 記錄的中文特有網域提供者註冊您的網域。 如需如何註冊網域的詳細資訊，請參閱[尋找您的網域註冊機構或 DNS 主機服務提供者](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)。  <br/> |
 |電話撥入式會議（為無法存取電腦的使用者加入會議的功能）  <br/> |您可以在商務用 Skype 和商務用 Skype 系統管理中心中看到選項，以進行電話撥入式會議和提供者，但這些功能仍無法使用。 即將推出。  <br/> |
-|商務用 Skype 桌面説明  <br/> |您可以在[這裡](https://support.office.com/article/6ae5853c-f0fd-4710-aecf-f46def8377ad.aspx)找到商務用 Skype 桌面的說明。 不過，除非您是使用 Office 隨選即用，否則無法從產品取得桌面説明。  <br/> |
+|商務用 Skype 桌面説明  <br/> |您可以在[這裡](https://support.microsoft.com/office/6ae5853c-f0fd-4710-aecf-f46def8377ad)找到商務用 Skype 桌面的說明。 不過，除非您是使用 Office 隨選即用，否則無法從產品取得桌面説明。  <br/> |
 |Lync 2010  <br/> |無法使用。  <br/> |
 |當您使用具有 Google Chrome 的 Samsung 型裝置時，從行事曆加入會議的能力  <br/> |即將推出。 同時，您可以開啟商務用 Skype、前往會議視圖，並從那裡加入會議。  <br/> |
 |Polycom、Ares 和 Tanjay 等桌面電話裝置  <br/> |無法使用。  <br/> |

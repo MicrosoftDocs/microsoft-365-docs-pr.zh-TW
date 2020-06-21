@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: 瞭解如何設定由世紀運作的 Office 365，以管理您的 DNS 記錄（1&1 網際網路是 DNS 主機服務提供者時）。
-ms.openlocfilehash: b63dc0664791eb4941513f701824b813d77e67bd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 79870d534e7d825fd59dbbbec54c796227f5faf1
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400698"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780370"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>變更名稱伺服器以設定具有 1&1 IONOS 的 Microsoft 365
 
@@ -39,12 +39,12 @@ ms.locfileid: "44400698"
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 
 
-在您將自己的網域用於 Microsoft 365 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 365 就能確信您擁有該網域。
+Before you use your domain with Microsoft 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft 365 that you own the domain.
   
 > [!NOTE]
-> 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-請依照下列步驟操作或[觀看影片 (從 0:42 處開始)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片 (從 0:42 處開始)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3)。
   
 1. 若要開始，請移至您的網域頁面 1&1 IONOS 透過[此連結](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F)。 You'll be prompted to log in. 
     
@@ -94,7 +94,7 @@ ms.locfileid: "44400698"
 > [!CAUTION]
 > 當您將網域的 NS 記錄變更為指向 Microsoft 365 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，在您進行此變更之後，所有傳送至您網域的電子郵件（如 rob@ *your_domain* .com）都會開始進入 Microsoft 365。 
   
-準備好變更您的 NS 記錄，讓 Microsoft 365 可以設定您的網域？ 請依照下列步驟操作或[觀看影片 (從 2:47 處開始)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US)。
+準備好變更您的 NS 記錄，讓 Microsoft 365 可以設定您的網域？ 請依照下列步驟操作或[觀看影片 (從 2:47 處開始)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3)。
   
 > [!IMPORTANT]
 >  下列程式將告訴您如何刪除清單中的任何其他、不想要的名稱伺服器，以及如何新增正確的名稱伺服器（如果尚未列出）。 > 完成本節中的步驟之後，應該會列出的唯一名稱伺服器為下列四種： > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
@@ -141,7 +141,7 @@ ms.locfileid: "44400698"
    
 ![輸入名稱伺服器值](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
     ![在 [名稱伺服器設定] 頁面上選取 [儲存]](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
@@ -172,7 +172,7 @@ ms.locfileid: "44400698"
    
    ![輸入名稱伺服器值](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
-3. 選取 [儲存]****。
+3. 選取 **[儲存]**。
     
     ![在 [名稱伺服器設定] 頁面上選取 [儲存]](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   

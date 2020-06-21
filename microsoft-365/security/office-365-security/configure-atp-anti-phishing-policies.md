@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何建立、修改及刪除使用 Office 365 高級威脅防護的組織中可用的高級防網路釣魚原則（Office 365 ATP）。
-ms.openlocfilehash: 137c29784c27912b2f8c1a84ac704418722aaf59
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 458a4eac348598d1b752267ed7d79b97bc594580
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616643"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726762"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>設定 ATP 防網路釣魚原則
 
@@ -73,7 +73,17 @@ ATP 反網路釣魚原則的基本元素如下：
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要新增、修改和刪除反網路釣魚原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要獲得反網路釣魚原則的唯讀存取權，您必須是**Security Reader**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派許可權，才能執行本主題中的程式：
+
+  - 若要新增、修改和刪除 ATP 反網路釣魚原則，您必須是下列其中一個角色群組的成員：
+
+    - 在[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)的**組織管理**或**安全性管理員**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**或**衛生管理**。
+
+  - 若要取得 ATP 反網路釣魚原則的唯讀存取權，您必須是下列其中一個角色群組的成員：
+
+    - 安全性[& 規範中心](permissions-in-the-security-and-compliance-center.md)的**安全性讀取器**。
+    - 在[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**View-Only 的組織管理**。
 
 - 如需有關 ATP 反網路釣魚原則的建議設定，請參閱[OFFICE ATP 反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)。
 
@@ -101,7 +111,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
 4. 在出現的 [套用**至**] 頁面上，識別套用原則的內部收件者。
 
-   您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同狀況或例外狀況或邏輯的多個值（例如 _\<recipient1\>_ or _\<recipient2\>_ ）。 使用和邏輯不同的條件或例外狀況（例如 _\<recipient1\>_ 和 _\<member of group 1\>_ ）。
+   您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<member of group 1\>_)。
 
    按一下 [**新增條件**]。 在出現的下拉式清單中，選取 [**適用于**下列條件的條件：
 

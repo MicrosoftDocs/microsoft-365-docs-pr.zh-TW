@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: '若要讓 Microsoft 管理您的 DNS 記錄，請瞭解如何設定含網路方案的 Microsoft 自訂網域。 '
-ms.openlocfilehash: 4a7c1eaab132b0ab41a62ba62d87956ccfafc014
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 69e63a6e5dac6e75e66cb816538d356fdd922581
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400602"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780382"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>使用網路解決方案變更名稱伺服器以設定 Microsoft
 
@@ -37,14 +37,14 @@ ms.locfileid: "44400602"
     
 ## <a name="add-a-txt-record-at-network-solutions-to-verify-that-you-own-the-domain"></a>在 Network Solutions 新增 TXT 記錄以驗證您擁有該網域
 
-在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。
+Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.
   
 > [!NOTE]
-> 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
+> This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-請依照下列步驟操作或[觀看影片 (從 0:47 處開始)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-Network-Solutions-69b092e3-c026-4d19-a7d0-16cdb2d8b261?ui=en-US&amp;rs=en-US&amp;ad=US)。
+請依照下列步驟操作或[觀看影片 (從 0:47 處開始)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)。
   
-1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。系統會提示您先登入。
+1. To get started, go to your domains page at Network Solutions by using [this link](https://www.networksolutions.com/manage-it). You'll be prompted to log in.
     
     > [!IMPORTANT]
     > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。
@@ -108,7 +108,7 @@ ms.locfileid: "44400602"
     
   
 > [!NOTE]
->  DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。 
+>  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>變更您網域的名稱伺服器 (NS) 記錄
 
@@ -117,7 +117,7 @@ ms.locfileid: "44400602"
 > [!CAUTION]
 > 當您將網域的 NS 記錄變更為指向 Microsoft 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，在您進行此變更之後，所有傳送至您網域的電子郵件（如 rob@ *your_domain* .com）都會開始向 Microsoft。
   
-準備好變更您的 NS 記錄，讓 Microsoft 能夠設定您的網域？ 請依照下列步驟操作或[觀看影片 (從 2:23 處開始)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-Network-Solutions-69b092e3-c026-4d19-a7d0-16cdb2d8b261?ui=en-US&amp;rs=en-US&amp;ad=US)。
+準備好變更您的 NS 記錄，讓 Microsoft 能夠設定您的網域？ 請依照下列步驟操作或[觀看影片 (從 2:23 處開始)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)。
   
 > [!IMPORTANT]
 >  當您完成本節中的步驟之後，應該會列出的*唯一*名稱伺服器為下列四種： **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**和**ns4.bdm.microsoftonline.com**。 The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the  *correct*  nameservers if they are not already in the list. 

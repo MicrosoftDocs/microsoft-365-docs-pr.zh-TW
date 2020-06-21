@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生產力分數的概覽。
-ms.openlocfilehash: 52a520e36c6b121984aef650ffba1867f4d3e8c9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399179"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754793"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft 生產力評分（預覽）
 
@@ -134,6 +134,22 @@ ms.locfileid: "44399179"
 行動性的主要洞察力是存取檔的人數，以及跨多個平臺使用電子郵件與聊天的人數。 您可以從任何裝置上的任何位置運作，對擁有銷售角色的人員、資深管理員、顧問，以及需要在辦公室進行工作以進行生產力的人員很重要的功能。 這些工作者的增強功能會影響大。 
 
 我們衡量在兩個以上的平臺（包括桌面、行動裝置和 web）上，使用至少一個 Microsoft 365 生產力應用程式的百分比和絕對人數。 我們測量的生產力應用程式為 Outlook、小組、Word、Excel、PowerPoint、OneNote、Yammer 及 Skype。 人員必須具有 Microsoft 365 應用程式，才能進行企業、Exchange、Yammer、Skype 或小組授權的評估。 
+
+## <a name="business-continuity-special-report"></a>商務持續性特殊報告
+
+「業務持續性報告」是可供所有 Microsoft 365 客戶使用的有限的工作場所智慧報告，可協助他們在這項富有挑戰性的時間內指導其組織。  
+
+此報告可協助業務負責人瞭解： 
+
+- 對「遠端工作」的倒班如何影響共同作業和通訊。 
+
+- 因人員調整為在家運作時，對工作生命期的影響。 
+
+- 如果人員有效地使用會議，以及他們的 
+
+[深入瞭解商務持續性報告](https://aka.ms/bcrps)
+
+[深入瞭解 Microsoft Graph](https://docs.microsoft.com/graph/)
 
 ## <a name="we-want-to-hear-from-you"></a>我們想要聽到您的來信
 

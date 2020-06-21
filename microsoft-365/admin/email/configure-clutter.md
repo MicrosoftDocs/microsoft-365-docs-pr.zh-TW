@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: '瞭解如何使用 Exchange PowerShell 來啟用或停用組織中所有或特定使用者的雜亂功能。 '
-ms.openlocfilehash: 069cf7569ebb3654e979100291f6754693b24def
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 67267b0865dfcfd6c0ba66d59ce1d0d111d59325
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400133"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780274"
 ---
 # <a name="configure-clutter-for-your-organization"></a>為您的組織設定混亂
 
 > [!TIP]
 > [焦點收件](../setup/configure-focused-inbox.md)匣即將取代雜亂的收件匣。 深入瞭解：[更新焦點收件匣和待過濾的計畫](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-身為系統管理員，您可能需要管理 Microsoft 365 中的雜亂功能。 若要開啟/關閉組織中使用者的雜亂功能，您必須使用 Exchange PowerShell。 （個人可以使用這些指示將其開啟/關閉）：在[Outlook 中關閉/開啟雜亂功能](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)。 
+身為系統管理員，您可能需要管理 Microsoft 365 中的雜亂功能。 若要開啟/關閉組織中使用者的雜亂功能，您必須使用 Exchange PowerShell。 （個人可以使用這些指示將其開啟/關閉）：在[Outlook 中關閉/開啟雜亂功能](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)。
   
 請參閱[使用 PowerShell 搭配 Exchange online](https://go.microsoft.com/fwlink/?LinkID=402831)並聯機[至 exchange online PowerShell](https://go.microsoft.com/fwlink/?LinkID=722415)以取得使用 exchange PowerShell 的詳細資料。 您必須具有至少具有 Exchange 服務系統管理員角色的帳戶，以及使用 PowerShell 連線至 Exchange Online 的許可權。 
   
@@ -99,10 +99,10 @@ ms.locfileid: "44400133"
 ## <a name="related-articles"></a>相關文章
 <a name="bkmk_onoff"> </a>
 
-[使用雜亂排序 Outlook 中的低優先順序郵件](https://support.office.com/article/use-clutter-to-sort-low-priority-messages-in-outlook-7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
+[使用雜亂排序 Outlook 中的低優先順序郵件](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
     
-[使用雜亂將 OWA 中的低優先順序郵件排序](https://support.office.com/article/fe4d64ca-bf73-48f1-91b4-9a659e008bce.aspx)
+[使用雜亂將 OWA 中的低優先順序郵件排序](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
     
-[關閉 Outlook 中的雜亂功能](https://support.office.com/article/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c.aspx)
+[關閉 Outlook 中的雜亂功能](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
     
 

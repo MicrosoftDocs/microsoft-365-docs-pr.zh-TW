@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解欺騙性智慧洞察力的運作方式，包括如何快速判斷哪些寄件者可合法傳送您未驗證的電子郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1b97d36c3434e7410f4cb3d19ef8eaee6f37e601
-ms.sourcegitcommit: 86705d15231c987be2fcf5a295b9b6239fc46077
+ms.openlocfilehash: 1f04baca3761e44acfd26c09cdc0d5283db13697
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44566701"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726512"
 ---
 # <a name="walkthrough---atp-spoof-intelligence-insight-in-microsoft-365"></a>逐步解說-在 Microsoft 365 中的 ATP 欺騙智慧洞察力
 
@@ -39,7 +39,12 @@ ms.locfileid: "44566701"
 
   您可以在安全性 & 合規性中心的多個儀表板上查看哄騙智慧洞察力。 不論您所看到的儀表板為何，真知灼見都會提供相同的詳細資料，並可讓您快速執行相同的工作。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要使用欺騙性智慧洞察力，您必須是「**組織管理**」、「**安全性管理員**」或「**安全性讀者**」角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派許可權，才能執行本主題中的程式。 若要使用哄騙智慧洞察力，您必須是下列其中一個角色群組的成員：
+
+  - 在[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)的**組織管理**或**安全性管理員**。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**或**衛生管理**。
+  - 安全性[& 規範中心](permissions-in-the-security-and-compliance-center.md)的**安全性讀取器**。
+  - 在[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**View-Only 的組織管理**。
 
 - 您可以在 ATP 反網路釣魚原則中啟用和停用欺騙智慧。 如需詳細資訊，請參閱[在 Microsoft 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 

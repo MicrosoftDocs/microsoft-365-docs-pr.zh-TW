@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解 Office 365 的 ATP 安全附件功能及如何取得您訂閱的功能。
-ms.openlocfilehash: 36993454a128d23ba388c24321a249f3be40d3d6
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 77842596b460e2d96ccde79e9c8c6ef3d1f8985a
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616775"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754757"
 ---
 # <a name="atp-safe-attachments"></a>ATP 安全附件
 
@@ -41,7 +41,7 @@ ATP 保護也會延伸到 SharePoint Online、商務用 OneDrive 和 Microsoft T
 
 - 已設定 ATP 安全附件原則。 (請參閱[在 Office 365 中設定 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)。)
 
-- 使用者已使用公司或學校帳戶登入。 (請參閱[登入 Office 或 Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)。)
+- 使用者已使用公司或學校帳戶登入。 （請參閱登[入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。）
 
 若要定義 (或編輯) ATP 原則，您必須獲派適當的角色。 下表中有一些範例描述：
 

@@ -19,19 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 110bbe6fe48932217c9bdc009d175161fe9226cd
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: f747737fc94241ca5f65ad9881715f517d5fbe3c
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235192"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773836"
 ---
 # <a name="manage-access-to-microsoft-threat-protection"></a>管理 Microsoft 威脅防護的存取權
 
 **適用於：**
 - Microsoft 威脅防護
-
-
 
 指派下列 Azure Active Directory (AD) 角色的帳戶可存取 Microsoft 威脅防護功能和資料：
 - 全域管理員

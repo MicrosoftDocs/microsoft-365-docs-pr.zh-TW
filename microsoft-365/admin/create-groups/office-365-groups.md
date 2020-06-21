@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 群組。
-ms.openlocfilehash: e677a5206a17f22900007fc4eeffc6e665186f8e
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 14bc1211aaa65fb2daeebdb22729fce10154f204
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419133"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780406"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>系統管理員的 Microsoft 365 群組概觀 (部分機器翻譯)
 
@@ -80,7 +80,7 @@ Microsoft 365 群組是一種基礎成員資格服務，可促進整個 Microsof
 |檔存放區|每個訂閱的使用者需要 1 tb + 10 GB + 購買的任何額外儲存空間。 您可以購買無限量的額外儲存空間。|
 |群組信箱大小|50 GB|
 
-組織可以擁有的預設 Microsoft 365 群組數目為500000，但可按要求增加。 如需 Microsoft 365 群組限制的詳細資訊，請參閱[Microsoft 365 群組-系統管理](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)說明。
+組織可以擁有的預設 Microsoft 365 群組數目為500000，但可按要求增加。 如需 Microsoft 365 群組限制的詳細資訊，請參閱[Microsoft 365 群組-系統管理](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)說明。
 
 當您具有群組使用量的可操作資訊時，管理 Microsoft 365 群組會更有效。 Microsoft 365 系統管理中心有一個報告工具，可讓您查看儲存空間使用方式、您擁有的使用中群組數目，甚至是使用者使用群組的方式。 如需詳細資訊，請參閱： [admin center 中的 Microsoft 365 報告](../activity-reports/office-365-groups.md)。
 
@@ -116,7 +116,7 @@ Microsoft 365 群組使用 Azure Active Directory （AAD）。 您取得的群�
 
 ## <a name="related-articles"></a>相關文章
 
-[深入瞭解 Microsoft 365 群組](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[深入瞭解 Microsoft 365 群組](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [將通訊群組清單升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)
 

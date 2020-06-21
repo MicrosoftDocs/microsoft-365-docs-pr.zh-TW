@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: 深入瞭解 Microsoft 365 訊息中心及其在變更管理中的角色。
-ms.openlocfilehash: c243bb551d98cb0ea3c177cf098cccd035243a06
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f4d99bedaab6efb4dfeccf7610e54bb5f8effeb7
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44694956"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780082"
 ---
 # <a name="message-center"></a>訊息中心
 
@@ -164,7 +164,7 @@ ms.locfileid: "44694956"
 我們使用機器翻譯以您慣用的語言自動顯示郵件。 有關如何設定語言的詳細資訊，請閱讀[郵件中心文章的語言翻譯](language-translation-for-message-center-posts.md)。
   
 > [!NOTE]
-> 電子郵件的每週摘要和所有投遞都會以英文版傳送。 收件者可使用[Outlook 的翻譯工具](https://support.office.com/article/3d7e12ed-99d6-406e-a453-b9db0d9653fa.aspx)，以其慣用語言閱讀郵件。 
+> 電子郵件的每週摘要和所有投遞都會以英文版傳送。 收件者可使用[Outlook 的翻譯工具](https://support.microsoft.com/office/3d7e12ed-99d6-406e-a453-b9db0d9653fa)，以其慣用語言閱讀郵件。 
   
 ### <a name="admin-roles-that-dont-have-access-to-the-message-center"></a>不具備郵件中心存取權的系統管理員角色
 

@@ -19,33 +19,24 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 瞭解如何將來賓新增至 Microsoft 365 群組、查看來賓使用者，以及使用 PowerShell 來控制來賓存取。
-ms.openlocfilehash: 99288521f29d67f3146cafe1f194662750cc8a5d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
+ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386778"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761659"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 群組中管理來賓存取
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
-
-::: moniker-end
 
 根據預設，針對您的組織開啟來賓存取權 Microsoft 365 群組。 系統管理員可以控制是否允許來賓存取整個組織或個別群組的群組。
 
 當其開啟時，群組成員可以透過網頁上的 Outlook 邀請來賓使用者加入 Microsoft 365 群組。 邀請會傳送給群組擁有者以供核准。
 
+一旦核准，就會將來賓使用者新增至目錄和群組。
+
 > [!Note]
 > 處於原生模式或[歐盟地理](https://go.microsoft.com/fwlink/?linkid=2107357)位置的 Yammer Enterprise 網路不支援網路來賓。
 > Microsoft 365 連線的 Yammer 群組目前不支援來賓存取，但您可以在 Yammer 網路中建立未連線的外部群組。 如需相關指示，請參閱[建立及管理 Yammer 中的外部群組](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups)。
-
-### <a name="edit-guest-information"></a>編輯來賓資訊
-
-一旦核准，就會將來賓使用者新增至目錄和群組。
 
 群組中的來賓存取通常是用來包括 SharePoint 或小組的更廣泛案例的一部分。 這些服務有自己的來賓共用設定。 如需設定各群組、SharePoint 及小組之來賓共用的完整指示，請參閱：
 
@@ -56,7 +47,7 @@ ms.locfileid: "44386778"
 
 如果您想要啟用或停用群組中的「來賓存取」，您可以在 Microsoft 365 系統管理中心進行。
 
-1. 在系統管理中心中，移至 [**設定**] \> **設定**，然後選取 [ **Microsoft 365 群組**]。
+1. 在系統管理中心中，移至 [**設定** \> **組織設定**]，然後選取 [**服務**] 索引標籤上的 [ **Microsoft 365 群組**]。
   
 2. 在 [ **Microsoft 365 群組**] 頁面上，選擇您是否要讓組織外部人員存取群組資源，或讓群組擁有者將組織外部人員新增至群組。
 
@@ -70,7 +61,7 @@ ms.locfileid: "44386778"
   
 4. 選取 [**新增成員**]，然後選擇您要新增的客人名稱。
     
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
 
 如果您想要直接將來賓新增至目錄，您可以[在 azure 入口網站中新增 Azure Active directory B2B 協同作業使用者](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator)。
 

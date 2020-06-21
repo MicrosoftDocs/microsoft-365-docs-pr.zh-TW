@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 使用此逐步部署指南，在 Microsoft Office 365 中建立和設定隔離的 SharePoint Online 小組網站。
-ms.openlocfilehash: 772a9e5ea08871857a70cc840e377046d459a314
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 05fdbcfff792805708bfe0b8027e955d54a1ec6f
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036448"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755221"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署獨立的 SharePoint Online 小組網站
 
@@ -161,7 +161,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 首先，使用下列步驟建立 SharePoint Online 小組網站。
   
-1. 使用也用來管理 SharePoint Online 小組網站（SharePoint Online 系統管理員）的帳戶登入 Microsoft 365 系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用也用來管理 SharePoint Online 小組網站（SharePoint Online 系統管理員）的帳戶登入 Microsoft 365 系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 在 Microsoft 365 系統管理中心的 [系統**管理中心**] 下，按一下 [ **SharePoint**]。
 
@@ -187,11 +187,11 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 4. 將 [**允許存取要求**關閉] 設定為 [**關閉**]。
 
-5. 按一下 [儲存]****。
+5. 按一下 **[儲存]**。
     
 6. 在 [**許可權**] 窗格中，按一下 [**高級許可權設定**]。
     
-7. 在 [權限]**** 瀏覽器索引標籤中，按一下清單中的 [\<網站名稱> 成員]****。
+7. 在瀏覽器的 [**許可權**] 索引標籤上，按一下清單中的 [ ** \<site name> 成員**]。
     
 8. 在 [人員與群組]**** 中，按一下 [新增]****。
     
@@ -199,7 +199,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 10. 按一下瀏覽器上的 [上一頁] 按鈕。
     
-11. 按一下清單中 [\<網站名稱> 擁有者]****。
+11. 按一下清單中的 [ ** \<site name> 擁有**者]。
     
 12. 在 [人員與群組]**** 中，按一下 [新增]****。
     
@@ -207,7 +207,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 14. 按一下瀏覽器上的 [上一頁] 按鈕。
     
-15. 按一下清單中 [\<網站名稱> 訪客]****。
+15. 按一下清單中的 [ ** \<site name> 訪客**]。
     
 16. 在 [人員與群組]**** 中，按一下 [新增]****。
     
@@ -217,11 +217,11 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 這些使用權限設定的結果是：
   
-- [\<網站名稱> 擁有者]**** SharePoint 群組包含網站管理員存取群組，其中的所有成員都具有 [完全控制]**** 權限等級。
+- [ ** \<site name> 擁有**者] SharePoint 群組包含網站管理員存取群組，其中的所有成員都具有「**完全控制**」許可權層級。
     
-- [\<網站名稱> 成員]**** SharePoint 群組包含網站成員存取群組，其中的所有成員都具有 [編輯]**** 權限等級。
+- ** \<site name> Members** SharePoint 群組包含網站成員存取群組，其中的所有成員都具有 [**編輯**] 許可權等級。
     
-- [\<網站名稱> 訪客]**** SharePoint 群組包含網站檢視者存取群組，其中的所有成員都具有 [讀取]**** 權限等級。
+- [ ** \<site name> 訪客**SharePoint] 群組包含「網站檢視器存取」群組，其中的所有成員都具有「**讀取**」許可權等級。
     
 - 已停用成員邀請其他成員或非成員要求存取權的功能。
     

@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何在 Microsoft 365 中識別網頁仿冒郵件的原因，以及如何防止未來的更多網路釣魚郵件。
-ms.openlocfilehash: b7a68eb3ab3cf7dbb7156059416cca04d80bb3a8
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: ac416da714e30491f679e22909010a8c02fac843
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588437"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755049"
 ---
 # <a name="tune-anti-phishing-protection"></a>調整防網路釣魚保護
 
@@ -51,17 +51,21 @@ ms.locfileid: "44588437"
 
 - 請以每月的頻率執行[安全分數](../mtp/microsoft-secure-score.md)，以評估組織的安全性設定。
 
-- 定期查看[哄騙情報報告](learn-about-spoof-intelligence.md)，並[設定假冒情報](set-up-anti-phishing-policies.md#spoof-settings)，以**隔離**可疑郵件，而不是傳遞給使用者的 [垃圾郵件] 資料夾。
+- 針對因錯誤而導致隔離的郵件，或透過所允許的郵件，我們建議您在[威脅瀏覽器和即時](threat-explorer.md)偵測中搜尋這些郵件。 您可以依寄件者、收件者或郵件識別碼進行搜尋。 找到訊息之後，按一下主旨以移至 [詳細資料]。 針對隔離的郵件，請查看「偵測技術」為何，這樣您就可以使用適當的方法來覆寫。 若為允許的郵件，請查看允許郵件使用的原則。 
+
+- 冒牌郵件會標記為 ATP 中的網路釣魚。 有時候欺騙是良性的，有時候使用者不想隔離。 若要將影響降至最低，請定期查看[哄騙智慧報告](learn-about-spoof-intelligence.md)。 在您檢查並做任何必要的覆寫後，您就可以自信地[設定假冒情報](set-up-anti-phishing-policies.md#spoof-settings)，以**隔離**可疑郵件，而不是將其傳遞給使用者的 [垃圾郵件] 資料夾。
+
+- 您可以重複上述步驟進行類比（網域或使用者）。 模仿報告位於**威脅管理** \> **儀表板** \> **Insights**底下。
 
 - 定期查看「[威脅防護狀態」報告](view-reports-for-atp.md#threat-protection-status-report)。
 
-- 有些客戶會將自己的網域放入反垃圾郵件原則中的允許寄件者或允許網域清單中，以無意間允許網路釣魚郵件。 如果您選擇這麼做，您必須特別小心使用。 雖然這種設定可讓某些合法的郵件透過，但也會允許垃圾郵件和/或網路釣魚篩選器通常會封鎖惡意郵件。
+- 有些客戶會將自己的網域放入反垃圾郵件原則中的允許寄件者或允許網域清單中，以無意間允許網路釣魚郵件。 雖然這種設定可讓某些合法的郵件透過，但也會允許垃圾郵件和/或網路釣魚篩選器通常會封鎖惡意郵件。 除了允許網域之外，您還應該修正基礎問題。
 
   針對您網域中的寄件者，處理由 Microsoft 365 （誤報）封鎖之合法郵件所做的最佳方式，是針對_所有_的電子郵件網域，在 DNS 中完整且完整地設定 SPF、DKIM 及 DMARC 記錄：
 
   - 確認您的 SPF 記錄識別出您網域中寄件者的_所有_電子郵件來源（請勿忘記協力廠商服務！）。
 
-  - 使用 hard fail （ \- ）以確保已設定為執行此作業的電子郵件系統拒絕未授權的寄件者。 您可以使用[哄騙情報](learn-about-spoof-intelligence.md)來協助識別使用您網域的寄件者，這樣您就可以在 SPF 記錄中包含授權的協力廠商寄件者。
+  - 使用 hard fail （ \- 全部）可確保未授權寄件者被設定為這麼做的電子郵件系統拒絕。 您可以使用[哄騙情報](learn-about-spoof-intelligence.md)來協助識別使用您網域的寄件者，這樣您就可以在 SPF 記錄中包含授權的協力廠商寄件者。
 
   如需設定指示，請參閱：
   
@@ -72,6 +76,8 @@ ms.locfileid: "44588437"
   - [使用 DMARC 驗證電子郵件](use-dmarc-to-validate-email.md)
 
 - 建議您盡可能將網域的電子郵件直接傳遞至 Microsoft 365。 換句話說，請將您的 Microsoft 365 網域的 MX 記錄指向 Microsoft 365。 Exchange Online Protection （EOP）可在將其郵件直接傳遞至 Microsoft 365 時，為您的雲端使用者提供最佳的保護。 如果您必須在 EOP 前使用協力廠商的電子郵件清潔系統，請使用增強型介面篩選功能。 如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+
+- 使用者應將[郵件報告](enable-the-report-message-add-in.md)給 Microsoft，以進行訓練我們的系統。 系統管理員也應利用[管理員提交](admin-submission.md)功能。
 
 - 多重要素驗證（MFA）是防範已遭破壞之帳戶的最佳方式。 您應強烈考慮為您的所有使用者啟用 MFA。 針對分段的方法，在您為所有人啟用 MFA 之前，先為您最機密的使用者（系統管理員、行政人員等等）啟用 MFA，以開始執行。 如需相關指示，請參閱[設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 

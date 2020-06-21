@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: '瞭解如何讓您的使用者與外部使用者共用會議及約會的行事曆。 '
-ms.openlocfilehash: 905280d3c23ffcb9fcf281c39b232a3d05ba1ec5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 972e8376ae3d71b11205d4a6611dc6900c063ffe
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399563"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780058"
 ---
 # <a name="share-calendars-with-external-users"></a>與外部使用者共用行事曆
 
@@ -36,7 +36,7 @@ ms.locfileid: "44399563"
 「行事曆共用」是一個全域設定，這表示您（系統管理員）可以針對承租人中的所有使用者啟用它。 一旦啟用共用，使用者便可使用 Outlook Web App 與組織內外的任何人共用行事曆。 組織內部人員可以並排檢視共用行事曆及其自己的行事曆。 組織外部人員會收到可用來檢視行事曆的 URL。 使用者決定共用時間、共用範圍以及何時保持其行事曆的私密性。
   
 > [!NOTE]
-> 如果您要與使用 Exchange Server 2013 (一種內部部署的解決方案) 的組織共用行事曆，Exchange 系統管理員必須與雲端之間設定驗證關聯。這就是「同盟」，它必須符合最基本的軟體需求。請參閱 [共用](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx)，以取得詳細資訊。 
+> If you want to share calendars with an organization that uses Exchange Server 2013 (an on-premises solution), the Exchange administrator will need to set up an authentication relationship with the cloud. This is known as "federation" and must meet minimum software requirements. See [Sharing](https://technet.microsoft.com/library/dd638083%28v=exchg.150%29.aspx) for more information. 
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>使用 Microsoft 365 admin center 啟用行事曆共用
 
@@ -53,5 +53,5 @@ ms.locfileid: "44399563"
     
 ## <a name="invite-people-to-access-calendars"></a>邀請人員存取行事曆
 
-一旦針對租用戶啟用共用，行事曆擁有者便可擴大邀請特定使用者。請參閱[在 Outlook Web App 中共用行事曆](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5.aspx)以取得相關說明。 
+Once sharing is enabled for the tenant, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for instructions. 
   

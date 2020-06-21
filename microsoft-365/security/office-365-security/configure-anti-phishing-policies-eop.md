@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 exchange Online Protection （EOP）組織中建立、修改和刪除可用的反網路釣魚原則，但不含 Exchange Online 信箱。
-ms.openlocfilehash: bd7686c55e05d4197d43799008596db82375222e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: b6b95515ad44a65dbdd8a7516d8e6c8b2a386450
+ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616695"
+ms.lasthandoff: 06/13/2020
+ms.locfileid: "44726781"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>在 EOP 中設定反網路釣魚原則
 
@@ -73,9 +73,19 @@ ms.locfileid: "44616695"
 
   您無法管理獨立 EOP PowerShell 中的反網路釣魚原則。
 
-- 您必須已獲指派權限，才能執行這些程序。 若要新增、修改和刪除反網路釣魚原則，您必須是「**組織管理**」或「**安全性管理員**」角色群組的成員。 若要獲得反網路釣魚原則的唯讀存取權，您必須是**Security Reader**角色群組的成員。 如需有關安全性與合規性中心中角色群組的詳細資訊，請參閱[安全性與合規性中心裡的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派許可權，才能執行本主題中的程式：
 
-- 若要能夠在獨立 EOP 中建立及修改反垃圾郵件原則，您需要針對租使用者執行需要_分解_的專案。 例如，在 EAC 中，您可以移至 [**許可權**] 索引標籤、選取現有的角色群組、按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 及 [移除角色] （最終將會新增回）。 如果您的租使用者從未 hydrated，您會看到一個名為「**更新組織」設定**的對話方塊，其進度列應該會順利完成。 如需分解的詳細資訊，請參閱[Enable-OrganizationCustomization 指令程式](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization)（不可在獨立 EOP PowerShell 或安全性 & 規範中心）。
+  - 若要新增、修改和刪除反網路釣魚原則，您必須是下列其中一個角色群組的成員：
+
+    - 在[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)的**組織管理**或**安全性管理員**。
+    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**或**衛生管理**。
+
+  - 若要唯讀的反網路釣魚原則存取權，您必須是下列其中一個角色群組的成員：
+
+    - 安全性[& 規範中心](permissions-in-the-security-and-compliance-center.md)的**安全性讀取器**。
+    - 在[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**View-Only 的組織管理**。
+
+- 若要能夠在獨立 EOP 中建立及修改反垃圾郵件原則，您需要針對租使用者執行需要_分解_的專案。 例如，在 Exchange 系統管理中心（EAC）中，您可以移至 [**許可權**] 索引標籤、選取現有的角色群組、按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 及 [移除角色] （最終將新增回）。 如果您的租使用者從未 hydrated，您會看到一個名為「**更新組織」設定**的對話方塊，其進度列應該會順利完成。 如需分解的詳細資訊，請參閱[Enable-OrganizationCustomization 指令程式](https://docs.microsoft.com/powershell/module/exchange/enable-organizationcustomization)（不可在獨立 EOP PowerShell 或安全性 & 規範中心）。
 
 - 如需有關反網路釣魚原則的建議設定，請參閱[EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 
@@ -103,7 +113,7 @@ ms.locfileid: "44616695"
 
 4. 在出現的 [套用**至**] 頁面上，識別套用原則的內部收件者。
 
-   您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同狀況或例外狀況或邏輯的多個值（例如 _\<recipient1\>_ or _\<recipient2\>_ ）。 使用和邏輯不同的條件或例外狀況（例如 _\<recipient1\>_ 和 _\<member of group 1\>_ ）。
+   您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<member of group 1\>_)。
 
    按一下 [**新增條件**]。 在出現的下拉式清單中，選取 [**適用于**下列條件的條件：
 

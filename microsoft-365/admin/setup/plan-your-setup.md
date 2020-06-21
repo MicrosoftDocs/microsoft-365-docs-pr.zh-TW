@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: 深入瞭解設定 Microsoft 365 for business 所需的功能。
-ms.openlocfilehash: 7c329e8f4df5076a9f4826d18e8a82bcc7cd6dd8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398843"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44778946"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>規劃 Microsoft 365 for business 的設定
 
@@ -72,7 +72,7 @@ ms.locfileid: "44398843"
 
     1. [將您的員工新增至 Microsoft 365](../add-users/add-users.md) ，讓他們可以下載及安裝 Office 應用程式。
 
-    2. [下載及安裝 Office App](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)，以便在電腦和裝置上使用 Word、Excel 和 PowerPoint。
+    2. [下載及安裝 Office App](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)，以便在電腦和裝置上使用 Word、Excel 和 PowerPoint。
 
     3. [設定 Microsoft 團隊](#plan-for-teams)以用於會議。
 
@@ -111,9 +111,9 @@ ms.locfileid: "44398843"
 
 ## <a name="plan-for-file-storage-and-migration"></a>規劃檔案儲存空間與移轉
 
-Microsoft 365 為個人、小型組織和企業提供雲端儲存空間。 如需如何儲存位置的指引，請參閱[您可以在 Microsoft 365 中儲存檔的位置](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx)。
+Microsoft 365 為個人、小型組織和企業提供雲端儲存空間。 如需如何儲存位置的指引，請參閱[您可以在 Microsoft 365 中儲存檔的位置](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)。
   
-- **您可以將數百個檔案移**至[OneDrive](https://support.office.com/article/45114744-6D42-45CD-8975-F9617819BDEB.aspx)或[SharePoint 小組網站](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx#__toc384119242)。 您一次可以上傳 100 個檔案。 預設的檔案大小上限為 2GB，因此請勿上傳超過此限制的檔案。
+- **您可以將數百個檔案移**至[OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB)或[SharePoint 小組網站](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242)。 您一次可以上傳 100 個檔案。 預設的檔案大小上限為 2GB，因此請勿上傳超過此限制的檔案。
   
 - **如果您想要將幾千個檔案移**至 Microsoft 365 儲存體，請複查[SharePoint 線上限制](https://go.microsoft.com/fwlink/p/?LinkID=856113)。 建議您使用移轉工具，或考慮雇用[合作夥伴](https://go.microsoft.com/fwlink/?linkid=391089)來協助您進行移轉。 如需如何移轉大量檔案的相關資訊，請參閱 [SharePoint Online 與 OneDrive 移轉使用者指南](https://go.microsoft.com/fwlink/?LinkId=723574)。
   

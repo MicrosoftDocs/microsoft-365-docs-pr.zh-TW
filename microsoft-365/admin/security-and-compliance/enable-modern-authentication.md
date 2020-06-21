@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: 瞭解如何設定登錄機碼，以便為已安裝 Microsoft Office 2013 的裝置啟用新式驗證。
-ms.openlocfilehash: 8bf6f50068f1a1435897c49656823302df40235e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8edcedefc04d5018b8b61022c26cbe027f7c24a9
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399167"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44779962"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>為 Windows 裝置上的 Office 2013 啟用新式驗證
 
@@ -36,7 +36,7 @@ ms.locfileid: "44399167"
 > [!NOTE]
 > Office 2016 用戶端已啟用新式驗證，您無需為 Office 2016 設定登錄機碼。 
   
-若要針對已安裝 Microsoft Office 2013、且執行 Windows 的任何裝置啟用新式驗證 (比如膝上型電腦和平板電腦)，您必須先設定下列登錄機碼。您必須在每部要啟用新式驗證的裝置上設定機碼：
+To enable modern authentication for any devices running Windows (for example on laptops and tablets), that have Microsoft Office 2013 installed, you need to set the following registry keys. The keys have to be set on each device that you want to enable for modern authentication:
   
 |**登錄機碼**|**類型**|**Value** |
 |:-------|:------:|--------:|
@@ -45,7 +45,7 @@ ms.locfileid: "44399167"
    
 設定登錄機碼之後，您可以將 Office 2013 裝置應用程式設定為使用[多重要素驗證（MFA）](set-up-multi-factor-authentication.md)與 Microsoft 365。 
   
-如果您目前使用任何用戶端 App 登入，您就必須在登出後再次登入，變更才會生效。否則，在 ADAL 識別建立之前，您將無法使用 MRU 和漫遊設定。
+If you're currently signed-in with any of the client apps, you need to sign out and sign back in for the change to take effect. Otherwise, the MRU and roaming settings will be unavailable until the ADAL identity is established.
   
 ## <a name="disable-modern-authentication-on-devices"></a>停用裝置上的新式驗證
 
@@ -56,7 +56,7 @@ ms.locfileid: "44399167"
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
    
 ## <a name="related-articles"></a>相關文章
-[使用第二種驗證方式登入 Office 2013](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx)
+[使用第二種驗證方式登入 Office 2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
   
 
