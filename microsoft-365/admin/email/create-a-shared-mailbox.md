@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 建立共用信箱讓組織中的多位使用者共同負責讀取及回覆傳送到某個地址的電子郵件。
-ms.openlocfilehash: 331f5f320f9b57ee503734f57ed8d804e9ad04e3
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 3ffe24cc263c6f58899b3c293793aa231132e411
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432286"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780262"
 ---
 # <a name="create-a-shared-mailbox"></a>建立共用信箱 
 
@@ -138,15 +138,15 @@ It's easy to create shared mailboxes so a group of people can monitor and send e
 
 若要深入了解 Outlook 中的共用信箱，請參閱：
 
-- <a href="https://support.office.com/article/d94a8e9e-21f1-4240-808b-de9c9c088afd.aspx" target="_blank">在 Outlook 中開啟及使用共用信箱</a>
+- <a href="https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd" target="_blank">在 Outlook 中開啟及使用共用信箱</a>
 
-- <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">新增共用信箱到 Outlook 網頁版</a>
+- <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">新增共用信箱到 Outlook 網頁版</a>
 
-- <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">將共用信箱新增至 Outlook mobile</a>
+- <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">將共用信箱新增至 Outlook mobile</a>
 
-- <a href="https://support.office.com/article/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2.aspx" target="_blank">在 Mac 版 Outlook 中開啟共用資料夾或信箱</a>
+- <a href="https://support.microsoft.com/office/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2" target="_blank">在 Mac 版 Outlook 中開啟共用資料夾或信箱</a>
 
-- <a href="https://support.office.com/article/b0963400-2a51-4c64-afc7-b816d737d164.aspx" target="_blank">新增規則到共用信箱</a>
+- <a href="https://support.microsoft.com/office/b0963400-2a51-4c64-afc7-b816d737d164" target="_blank">新增規則到共用信箱</a>
 
 
 ## <a name="use-a-shared-mailbox-on-a-mobile-device-phone-or-tablet"></a>在行動裝置上使用共用信箱 (手機或平板電腦)
@@ -154,11 +154,11 @@ It's easy to create shared mailboxes so a group of people can monitor and send e
 有兩種方式可以行動裝置上存取共用信箱：
 - 在 <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596" target="_blank">iOS 版 Outlook 應用程式</a>或 <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" target="_blank">Android 版 Outlook 行動裝置應用程式</a>中新增共用信箱。 
     
-    如需相關指示，請參閱<a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">將共用信箱新增至 Outlook mobile</a>。
+    如需相關指示，請參閱<a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">將共用信箱新增至 Outlook mobile</a>。
 
 - 開啟您的瀏覽器、登入，然後移至 Outlook 網頁版。 您可以從 Outlook 網頁版存取共用信箱。
 
-    如需相關指示，請參閱<a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">新增共用信箱到 Outlook 網頁版</a>。
+    如需相關指示，請參閱<a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">新增共用信箱到 Outlook 網頁版</a>。
 
 ## <a name="use-the-shared-calendar"></a>使用共用行事曆
 

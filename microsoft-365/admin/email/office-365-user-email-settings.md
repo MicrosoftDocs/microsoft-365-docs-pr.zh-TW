@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: 本文提供管理使用者設定的相關資訊。
-ms.openlocfilehash: 65396339f099628911da1dbaaef83bc18181e680
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5fa8674b8e188605ba3f6339fd6384c37630c917
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400037"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780202"
 ---
 # <a name="user-email-settings"></a>使用者電子郵件設定
 
@@ -40,7 +40,7 @@ ms.locfileid: "44400037"
 |在全域通訊清單中顯示| [在全域通訊清單中顯示] 可讓您啟用或停用在組織通訊錄中顯示使用者信箱。 |
 |電子郵件轉寄|[電子郵件轉寄] 可讓您新增使用者的轉寄電子郵件地址。 如果該使用者有多個電子郵件地址，並且想要在所有電子郵件地址接收電子郵件，可以這麼做。 如需詳細資訊，請參閱[在 Microsoft 365 中設定電子郵件轉寄](configure-email-forwarding.md)。|
 |自動回覆|[自動回覆] 可讓您設定當某人將電子郵件傳送到使用者的電子郵件地址時，自動回覆。 當員工離開您的公司，而您想通知電子郵件寄件者時，可以這麼做。|
-|其他動作| [轉換成共用信箱]**** 可讓您將使用者信箱轉換為共用信箱。 當員工離開您的公司，但您想要保留其信箱資料一段時間時，可以這麼做。 請參閱[將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md)和[開啟及使用共用信箱](https://support.office.com/article/open-and-use-a-shared-mailbox-in-outlook-d94a8e9e-21f1-4240-808b-de9c9c088afd)。</br>[編輯 Exchange 內容]**** 可讓您使用 Exchange 系統管理中心管理其他 Exchange Online 工作。 請參閱[管理 Exchange Online 中的使用者信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。|
+|其他動作| [轉換成共用信箱]**** 可讓您將使用者信箱轉換為共用信箱。 當員工離開您的公司，但您想要保留其信箱資料一段時間時，可以這麼做。 請參閱[將使用者信箱轉換為共用信箱](convert-user-mailbox-to-shared-mailbox.md)和[開啟及使用共用信箱](https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd)。</br>[編輯 Exchange 內容]**** 可讓您使用 Exchange 系統管理中心管理其他 Exchange Online 工作。 請參閱[管理 Exchange Online 中的使用者信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)。|
 
 > [!NOTE]
 >

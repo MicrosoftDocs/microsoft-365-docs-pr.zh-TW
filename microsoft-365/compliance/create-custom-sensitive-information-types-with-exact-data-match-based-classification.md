@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bf4abfd6f5ab19c3bc89673b0cc2255e026d1f7a
-ms.sourcegitcommit: 9d7a14bf4c26bda18561fa45885225d95855fb5c
+ms.openlocfilehash: e6574d59fef98e026da31a21dab9189d2af4581e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44474534"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818002"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
-
-## <a name="overview"></a>概觀
 
 [自訂敏感性資訊類型](custom-sensitive-info-types.md) 用來協助防止意外或不當地共用敏感性資訊。 身為系統管理員，您可以使用 [安全性與合規性中心](create-a-custom-sensitive-information-type.md) 或 [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) 來根據模式、辨識項 (關鍵字如 *員工*、 *徽章*、 *識別碼*等)、鄰近字元 (辨識項與特定模式中字元的鄰近程度)，以及信賴等級，來定義自訂敏感性資訊類型。 這類自訂敏感性資訊類型符合許多組織的業務需求。
 

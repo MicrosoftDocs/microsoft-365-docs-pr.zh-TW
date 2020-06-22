@@ -16,20 +16,20 @@ search.appverid:
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: 6fd860bbe860b9ed398d0f452c6ea60b41c0e225
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 52cb0d00d0c01adc34ee480f6daca9a6b509c671
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617415"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818804"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
 > [!IMPORTANT]
 > 本文適用於擁有 [Office 365 進階威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企業客戶。 如果您使用 Outlook.com、Microsoft 365 家用版或 Microsoft 365 個人版，並且在尋找 Outlook 中的安全連結或安全附件的相關資訊，請參閱[適用於 Microsoft 365 訂閱者的進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
-
-## <a name="overview"></a>概觀
 
 Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息、連結 (URL) 及共同作業工具所造成的惡意威脅。 ATP 包括：
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6a66a5b6f6ad2480dfc3af212e7663ad3f869d10
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 9d678ca5ee9b8a8ebf4feadfb27826caa533967e
+ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254316"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773860"
 ---
 # <a name="european-union-model-clauses"></a>歐盟示範條款
 
@@ -86,7 +86,7 @@ Microsoft 會持續評估歐盟標準，並視需要更新服務。
 - [歐盟資料保護指導方針](https://aka.ms/EU-DPD)
 - [歐洲數據保護委員會](https://edpb.europa.eu/)
 - [適用於 Dynamics 365 和 Office 365 的歐盟示範條款常見問題集](https://products.office.com/business/office-365-trust-center-eu-model-clauses-faq)
-- [Microsoft 和歐盟美國隱私權護盾](https://go.microsoft.com/fwlink/p/?linkid=2099701)
+- [Microsoft 和歐盟美國隱私權護盾](offering-eu-us-privacy-shield.md)
 - [Microsoft 通用控制措施中樞合規性架構](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

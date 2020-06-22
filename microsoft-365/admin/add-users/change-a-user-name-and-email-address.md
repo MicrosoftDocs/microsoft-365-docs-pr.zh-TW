@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全域系統管理員如何變更使用者的電子郵件地址和顯示名稱。 '
-ms.openlocfilehash: b672476048354a8b086781d6d9c89a7aa42ccdd3
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 76a2124c7fc73e40650a18985a5aa10acf57737a
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432084"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780622"
 ---
 # <a name="change-a-user-name-and-email-address"></a>變更使用名稱和電子郵件地址
 
@@ -38,7 +38,7 @@ ms.locfileid: "44432084"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="change-a-users-email-address"></a>變更使用者的電子郵件地址
 
@@ -103,7 +103,7 @@ ms.locfileid: "44432084"
  
   - 此變更可能需要一些時間才能生效。
   
-  - 他們的新使用者名稱。他們將需使用此使用者名稱登入 Office 365。
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - 如果他們使用商務用 Skype Online，請告知他們需要重新排定所有他們舉辦的商務用 Skype Online 會議，而且他們需要通知其外部連絡人更新舊的連絡資訊。
 
@@ -131,7 +131,7 @@ ms.locfileid: "44432084"
  
   - 此變更可能需要一些時間才能生效。
   
-  - 他們的新使用者名稱。他們將需使用此使用者名稱登入 Office 365。
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - 如果他們使用商務用 Skype Online，請告知他們需要重新排定所有他們舉辦的商務用 Skype Online 會議，而且他們需要通知其外部連絡人更新舊的連絡資訊。
 
@@ -159,7 +159,7 @@ ms.locfileid: "44432084"
  
   - 此變更可能需要一些時間才能生效。
   
-  - 他們的新使用者名稱。他們將需使用此使用者名稱登入 Office 365。
+  - What their new username is. They'll need it to sign in to Office 365.
     
   - 如果他們使用商務用 Skype Online，請告知他們需要重新排定所有他們舉辦的商務用 Skype Online 會議，而且他們需要通知其外部連絡人更新舊的連絡資訊。
 
@@ -181,7 +181,7 @@ ms.locfileid: "44432084"
 
     如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱[解決錯誤訊息](#resolve-error-messages)。
 
-最多可能需要等候 24 小時，此變更才會在所有服務中生效。在變更生效之後，使用者將須以其更新的使用者名稱登入 Outlook、商務用 Skype 和 SharePoint，因此請務必向使用者告知此變更。
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -195,7 +195,7 @@ ms.locfileid: "44432084"
 
     如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱[解決錯誤訊息](#resolve-error-messages)。
 
-最多可能需要等候 24 小時，此變更才會在所有服務中生效。在變更生效之後，使用者將須以其更新的使用者名稱登入 Outlook、商務用 Skype 和 SharePoint，因此請務必向使用者告知此變更。
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -209,7 +209,7 @@ ms.locfileid: "44432084"
 
     如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱[解決錯誤訊息](#resolve-error-messages)。
 
-最多可能需要等候 24 小時，此變更才會在所有服務中生效。在變更生效之後，使用者將須以其更新的使用者名稱登入 Outlook、商務用 Skype 和 SharePoint，因此請務必向使用者告知此變更。
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
 
 ::: moniker-end
 
@@ -228,13 +228,13 @@ ms.locfileid: "44432084"
 
 使用者的前一個主要電子郵件地址會保留為其他電子郵件地址。 **強烈建議您不要移除舊電子郵件地址。**
   
-有些人可能會繼續傳送電子郵件到使用者的舊電子郵件地址，所以將其刪除可能會導致 NDR 失敗。Microsoft 會自動將該地址路由到新電子郵件地址。此外，請勿重新使用舊 SMTP 電子郵件地址及將其套用到新帳戶。這也可能會導致 NDR 失敗或傳送到非預期的信箱。
+Some people will likely continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft will automatically route it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
    
 ## <a name="what-if-the-persons-offline-address-book-wont-sync-with-the-global-address-list"></a>人員的離線通訊錄無法與全域通訊清單同步處理時該怎麼辦？
 
-如果他們使用 Exchange Online 或其帳戶與貴組織的內部部署 Exchange 環境連結，您可能會在嘗試變更使用者名稱和電子郵件地址時看到下列錯誤：「此使用者已與本機 Active Directory 同步處理。某些詳細資料只能透過本機 Active Directory 進行編輯。」
+If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you may see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
   
-這是因為 Microsoft 線上電子郵件路由位址 (MOERA) 的緣故。MOERA 是從人員在 Active Directory 中的  _userPrincipalName_ 屬性建構而成，而且會在初始同步處理期間自動指派到雲端帳戶，一旦建立之後，就無法在 Office 365 中修改或移除。您可以後續在 Active Directory 中變更使用者名稱，但它不會變更 MOERA，而且您可能會遇到在 [全域通訊清單] 中顯示新變更之名稱的相關問題。 
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it will not change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
   
 若要修正此問題，請使用您的 Microsoft 365 系統管理員認證登入[適用於 PowerShell 的 Azure Active Directory 模組]( https://go.microsoft.com/fwlink/?LinkId=823193)， 然後使用下列語法： 
   

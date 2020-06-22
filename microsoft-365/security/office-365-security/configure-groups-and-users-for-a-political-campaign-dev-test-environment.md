@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：為政治活動開發/測試環境建立具備使用者與群組的 Office 365 和 Enterprise Mobility + Security (EMS) 之試用訂閱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d1cd4812cdb8a58062d7c64e73049c080f8b906f
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 2d8c315364e9a00a49ad825ef2652ff4e8a7476b
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588461"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755269"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>設定政治活動開發/測試環境的群組和使用者
 
@@ -39,13 +39,13 @@ ms.locfileid: "44588461"
 
 接著，註冊 EMS E5 試用訂閱，並將它新增至與試用訂閱相同的組織。
 
-1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入系統管理中心。 如需說明，請參閱[在何處登入](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入系統管理中心。 如需說明，請參閱[在何處登入](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
 2. 按一下 [管理]**** 磚。
 
 3. 在瀏覽器的 [Microsoft 365 系統管理中心]**** 索引標籤上，按一下左導覽中的 [計費] > [購買服務]****。
 
-4. 在 [購買服務]**** 頁面上，尋找 **Enterprise Mobility + Security E5** 項目。將滑鼠指標停留在上面，並且按一下 [開始免費試用]****。
+4. On the **Purchase services** page, find the **Enterprise Mobility + Security E5** item. Hover your mouse pointer over it and click **Start free trial**.
 
 5. 在 [確認訂單]**** 頁面上，按一下 [立即試用]****。
 
@@ -65,7 +65,7 @@ ms.locfileid: "44588461"
 
 首先，利用 Azure 入口網站建立一組典型政治活動的群組。
 
-1. 在瀏覽器中建立個別索引標籤，然後移至 Azure 入口網站 (網址為 [https://portal.azure.com](https://portal.azure.com))。若有需要，請使用 Office 365 E5 試用訂閱的全域管理員帳戶認證登入。
+1. On a separate tab in your browser, go to the Azure portal at [https://portal.azure.com](https://portal.azure.com). If needed, sign in with the credentials of the global administrator account for your Office 365 E5 trial subscription.
 
 2. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [使用者和群組] > [所有群組]****。
 
@@ -166,7 +166,7 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 ```
 
 > [!IMPORTANT]
-> 此處常見密碼的使用是為自動化開發/測試環境且讓您方便進行設定而提供。建議您不要將此類密碼用於產品訂閱。當您使用這些新使用者帳戶登入時，系統會提示您變更密碼。
+> The use of a common password here is for automation and ease of configuration for a dev/test environment. This is not recommended for production subscriptions. As you sign in with each of these new user accounts, you will be prompted to change the password.
 
 使用這些步驟來確認動態群組成員資格和以群組為基礎之授權是否運作正常。
 

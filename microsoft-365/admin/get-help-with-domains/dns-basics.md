@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解網域及其相關聯的 DNS 記錄，協助您管理網域。
-ms.openlocfilehash: 9e86aed070023963635319cdd9fdb6a8ccca4c23
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3a3a03c408d480b5d4678fde25c8830e063b1310
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399965"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780178"
 ---
 # <a name="dns-basics"></a>DNS 基本知識
 
@@ -155,7 +155,7 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 將自訂網域 (例如 fourthcoffee.com) 新增至 Office 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Office 365 帳戶時，將會[提供一個網域供您使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但包括「onmicrosoft.com」。 如果計劃將 Office 365 用於電子郵件，許多人偏好新增組織或商務網域。 
   
 > [!NOTE]
-> 如果您只是要下載並使用 Microsoft App (例如 Outlook 或 Word)，則無需新增網域：[在您的 PC 或 Mac 上安裝 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。 
+> 如果您只是要下載並使用 Microsoft App (例如 Outlook 或 Word)，則無需新增網域：[在您的 PC 或 Mac 上安裝 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)。 
   
 您可以在 Office 365 中將網域名稱用於電子郵件、公用網站及立即訊息位址。
   
@@ -174,7 +174,7 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 將自訂網域 (例如 fourthcoffee.com) 新增至 Office 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Office 365 帳戶時，將會[提供一個網域供您使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但包括「onmicrosoft.com」。 如果計劃將 Office 365 用於電子郵件，許多人偏好新增組織或商務網域。 
   
 > [!NOTE]
-> 如果您只是要下載並使用 Office 365 App (例如 Outlook 或 Word)，則無需新增網域：[在您的 PC 或 Mac 上安裝 Office](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx)。 
+> 如果您只是要下載並使用 Office 365 App (例如 Outlook 或 Word)，則無需新增網域：[在您的 PC 或 Mac 上安裝 Office](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)。 
   
 您可以在 Office 365 中將網域名稱用於電子郵件、公用網站及立即訊息位址。
   

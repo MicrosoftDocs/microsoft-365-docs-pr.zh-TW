@@ -18,18 +18,18 @@ search.appverid:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 摘要：在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。
-ms.openlocfilehash: e3223b059273f0955d7fc11f8ca98d529d946210
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: d22ada823877d4c0996be942c379e12929242eaf
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036472"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755233"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>在政治活動開發/測試環境中建立小組網站
 
  **摘要：** 在政治活動開發/測試環境中，建立公用、私用、敏感性及高度機密的 SharePoint Online 小組網站。 
   
-使用本文所述指示來建立開發/測試環境，其中包含針對[適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)解決方案的四種不同類型的 SharePoint Online 小組網站。這些網站會在主題 10 中詳細說明，主題 10 的標題為 **「SharePoint 和商務用 OneDrive」**。
+Use the instructions in this article to create a dev/test environment that includes the four different types of SharePoint Online team sites for the [Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md) solution. These sites are described in detail on Topic 10, titled **SharePoint and OneDrive for Business**.
   
 ## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>階段 1：建立政治活動開發/測試環境
 
@@ -39,7 +39,7 @@ ms.locfileid: "44036472"
 
 在這個階段中，您會為 SharePoint Online 小組網站的文件資料夾，建立不同安全性層級的標籤。
   
-1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入系統管理中心。 如需說明，請參閱[在何處登入 Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入系統管理中心。 如需說明，請參閱[在何處登入 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 從 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [管理]**** 磚。
     
@@ -213,7 +213,7 @@ ms.locfileid: "44036472"
     
 4. 在 [設定 - 套用標籤]**** 中，選取 [敏感性]****，然後按一下 [儲存]****。
     
-接下來，設定資料外洩防護 (DLP) 原則；當使用者在組織外部共用具「敏感性」標籤之 SharePoint Online 小組網站上的文件時，即會通知使用者。此 DLP 原則會套用到活動行銷網站中的資源。
+Next, configure a data loss prevention (DLP) policy that notifies users when they share a document on a SharePoint Online team site with the Sensitive label outside the organization. This DLP policy will apply to resources in the Campaign marketing site.
   
 1. 從瀏覽器的 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [安全性 &amp; 合規性]**** 磚。
     
@@ -245,7 +245,7 @@ ms.locfileid: "44036472"
     
 15. 在文字方塊中，鍵入或貼上下列內容：
     
-  - 若要與組織外部的使用者共用，請下載檔案，然後將它開啟。 依序按一下 [檔案]、[保護文件] 和 [以密碼加密]，然後指定強式密碼。 以個別電子郵件或其他通訊方式傳送密碼。
+  - To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.
     
 16. 按一下 [確定]****。
     
@@ -309,7 +309,7 @@ ms.locfileid: "44036472"
     
 - 成員無法修改網站層級的權限 (這只能由 **「活動策略 - 擁有者」** 群組成員來執行)。
     
-- 其他使用者帳戶無法存取網站或其資源，或要求存取網站。網站的額外權限必須由全域管理員或 **「活動策略 - 擁有者」** 群組成員來執行。
+- Other user accounts cannot access the site or its resources or request access to the site. Additional permissions to the site must be done by the global administrator or by a member of the **Campaign strategy-Owners** group.
     
 接下來，為「活動策略」小組網站的文件資料夾設定「高度機密」標籤。
   
@@ -321,7 +321,7 @@ ms.locfileid: "44036472"
     
 4. 在 [設定 - 套用標籤]**** 中，選取 [高度機密]****，然後按一下 [儲存]****。
     
-接下來，設定 DLP 原則；當使用者在組織外部共用具「高度機密」標籤之 SharePoint Online 小組網站上的文件時，即會封鎖使用者。此 DLP 原則會套用到活動策略網站中的資源。
+Next, configure a DLP policy that blocks users when they share a document on a SharePoint Online team site with the Highly Confidential label outside the organization. This DLP policy will apply to resources in the Campaign strategy site.
   
 1. 如果需要，請使用本機電腦上的瀏覽器，並使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com))。
     
@@ -355,7 +355,7 @@ ms.locfileid: "44036472"
     
 16. 在文字方塊中，鍵入或貼上下列內容：
     
-  - 若要與組織外部的使用者共用，請下載檔案，然後將它開啟。 依序按一下 [檔案]、[保護文件] 和 [以密碼加密]，然後指定強式密碼。 以個別電子郵件或其他通訊方式傳送密碼。
+  - To share with a user outside the organization, download the file and then open it. Click File, then Protect Document, and then Encrypt with Password, and then specify a strong password. Send the password in a separate email or other means of communication.
     
 17. 按一下 [確定]****。
     
@@ -369,7 +369,7 @@ ms.locfileid: "44036472"
   
 接著，遵循下列步驟，為 Azure 資訊保護設定新的限域原則與子標籤，以提供保護及權限：
   
-1. 使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用具有安全性系統管理員或公司系統管理員角色的帳戶登入系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
     
 2. 在您瀏覽器的個別索引標籤中，移至 Azure 入口網站 ([https://portal.azure.com](https://portal.azure.com))。
     
@@ -405,7 +405,7 @@ ms.locfileid: "44036472"
     
 19. 按一下 [選取] > [確定]****。
 
-20. 按一下 [新增或移除標籤]****。在 [原則: 新增或移除標籤]**** 窗格中，按一下 [CampaignStrategy]****，然後按一下 [確定]****。   
+20. Click **Add or remove labels**. In the **Policy: Add or remove labels** pane, click **CampaignStrategy**, and then click **OK**.   
 
 21. 按一下 [儲存]****，然後按一下 [確定]****。
   

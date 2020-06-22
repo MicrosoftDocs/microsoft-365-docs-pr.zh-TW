@@ -18,20 +18,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 瞭解獨立的 SharePoint Online 小組網站，包括使用、需求以及可以搭配使用的功能。
-ms.openlocfilehash: 91d8394c40597dfc66c4df39f49223e472e7c663
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 0646ffc37256702844b550fd1beb841944b2d509
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209040"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819530"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>獨立的 SharePoint Online 小組網站
 
  **摘要：** 了解獨立的 Sharepoint 小組網站的用途。
   
-SharePoint Online 小組網站是為 Microsoft Office 365 中的記事、文件、文章、行事曆及其他資源快速建立共同作業空間的簡易方式。SharePoint Online 小組網站是以 Microsoft 365 群組為基礎，具有簡化的系統管理模型，可以允許具有私人群組成員集合或整個組織的開發共同作業。預設 SharePoint Online 小組網站可讓 Microsoft 365 群組的成員邀請其他使用者並且控制權限設定。
+SharePoint Online team sites are an easy way to quickly create a space for collaboration of notes, documents, articles, a calendar, and other resources in Microsoft Office 365. SharePoint Online team sites are based on a Microsoft 365 group and have a simplified administration model to allow open collaboration with a private set of group members or the entire organization. A default SharePoint Online team site allows members of the Microsoft 365 group to invite other users and control permissions settings.
   
-不過，在某些情況下，您會想要為網站權限是透過群組成員資格和 SharePoint Online 權限等級 (只能由 SharePoint 系統管理員進行管理) 進行更嚴密控制的共同作業建立 SharePoint Online 小組網站。我們將它稱為獨立的網站，它獨立於共用作業、檢視其內容或管理網站的使用者集合。針對下列項目，您可能需要獨立的網站：
+However, in some cases, you want to create a SharePoint Online team site for collaboration where the permissions of that site are more tightly controlled through group membership and SharePoint Online permission levels, which are only managed by SharePoint administrators. We call this an isolated site, which is isolated to the set of users that are either collaborating, viewing its contents, or administering the site. You might need an isolated site for the following:
   
 - 組織中的秘密專案。
     
@@ -47,9 +47,9 @@ SharePoint Online 小組網站是為 Microsoft Office 365 中的記事、文件�
     
 - 網站的成員無法邀請其他成員加入小組網站。
     
-- 不是獨立網站成員的使用者無法要求網站的存取權。當他們嘗試存取與網站相關聯的任何 URL 時，會進入存取遭拒網頁。
+- Users who are not members of the isolated site cannot request access to the site. They will receive an access denied web page when they attempt to access any URL associated with the site.
     
-SharePoint Online 系統管理員要求集中式存取控制和自訂權限的代價是網站經過一段時間後仍然是獨立的。舉例來說，目前成員無論有意或無意，都無法對不應該是網站成員的 Microsoft 365 訂閱內其他使用者進行邀請或設定自訂權限。
+The tradeoff of requiring centralized access control and custom permissions by SharePoint Online administrators is that the site remains isolated over time. For example, current members cannot, either intentionally or accidentally, invite or configure custom permissions for other users within the Microsoft 365 subscription who should not be members of the site.
   
 獨立的網站可以與其他功能搭配使用，例如：
   
@@ -63,7 +63,7 @@ SharePoint Online 系統管理員要求集中式存取控制和自訂權限的�
   
 當您準備好要在生產環境中部署獨立的 SharePoint Online 小組網站時，請參閱＜[設計獨立的 SharePoint Online 小組網站](design-an-isolated-sharepoint-online-team-site.md)＞中的逐步設計考量。
   
-## <a name="see-also"></a>另請參閱
+## <a name="related-topics"></a>相關主題
 
 [設計獨立的 SharePoint Online 小組網站](design-an-isolated-sharepoint-online-team-site.md)
   
