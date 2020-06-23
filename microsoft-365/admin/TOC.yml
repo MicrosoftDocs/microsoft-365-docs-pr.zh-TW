@@ -33,7 +33,7 @@
         - name: 推出 Teams
           href: 'https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json'
         - name: 適合所有人的 App 訓練
-          href: 'https://support.office.com/office-training-center'
+          href: 'https://support.microsoft.com/training'
         - name: 我有何種訂閱？
           href: admin-overview/what-subscription-do-i-have.md
         - name: 自訂登入頁面
@@ -93,6 +93,8 @@
               href: manage/assign-licenses-to-users.md
             - name: 指派系統管理員角色
               href: add-users/assign-admin-roles.md
+            - name: 來賓使用者
+              href: add-users/about-guest-users.md
             - name: 將來賓使用者新增至 Microsoft 365 群組
               href: create-groups/manage-guest-access-in-groups.md
             - name: 移除使用者的授權
@@ -170,7 +172,7 @@
               href: email/about-shared-mailboxes.md
             - name: 建立共用信箱
               href: email/create-a-shared-mailbox.md
-            - name: 設定共用信箱
+            - name: 設置共用信箱的設定
               href: email/configure-a-shared-mailbox.md
             - name: 將使用者信箱轉換為共用信箱
               href: email/convert-user-mailbox-to-shared-mailbox.md
@@ -218,6 +220,8 @@
           href: manage/set-password-expiration-policy.md
         - name: 自訂應用程式啟動器
           href: manage/customize-the-app-launcher.md
+        - name: 將使用者升級到最新版的應用程式
+          href: setup/upgrade-users-to-latest-office-client.md
         - name: 增益集集中式部署的必要條件
           href: manage/centralized-deployment-of-add-ins.md
         - name: 使用集中式部署來安裝和管理增益集
@@ -320,11 +324,11 @@
         - name: 與來賓使用者共用行事曆
           href: manage/share-calendars-with-external-users.md
         - name: 建立具有來賓使用者的團隊
-          href: 'https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7'
-        - name: 與來賓排程 Teams 會議
-          href: 'https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US'
+          href: 'https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7'
+        - name: 與來賓使用者排定 Teams 會議時間
+          href: 'https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a'
         - name: 加入包含來賓使用者的 Teams 會議
-          href: 'https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US'
+          href: 'https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8'
     - name: 疑難排解
       href: 'https://docs.microsoft.com/office/troubleshoot/'
     - name: 連絡客戶支援
