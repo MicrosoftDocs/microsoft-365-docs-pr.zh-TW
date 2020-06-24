@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 瞭解如何將來賓新增至 Microsoft 365 群組、查看來賓使用者，以及使用 PowerShell 來控制來賓存取。
-ms.openlocfilehash: fe72f5e831215730a1ac79bcce2296d53b969c9c
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761659"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854243"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 群組中管理來賓存取
 
@@ -47,7 +47,7 @@ ms.locfileid: "44761659"
 
 如果您想要啟用或停用群組中的「來賓存取」，您可以在 Microsoft 365 系統管理中心進行。
 
-1. 在系統管理中心中，移至 [**設定** \> **組織設定**]，然後選取 [**服務**] 索引標籤上的 [ **Microsoft 365 群組**]。
+1. 在系統管理中心中，移至 [**顯示所有** \> **設定** \> 的**組織設定**]，然後在 [**服務**] 索引標籤上，選取 [ **Microsoft 365 群組**]。
   
 2. 在 [ **Microsoft 365 群組**] 頁面上，選擇您是否要讓組織外部人員存取群組資源，或讓群組擁有者將組織外部人員新增至群組。
 

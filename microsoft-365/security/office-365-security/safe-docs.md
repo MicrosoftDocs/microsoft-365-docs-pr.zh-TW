@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解 Microsoft 365 E5 或 Microsoft 365 E5 Security 中的安全檔。
-ms.openlocfilehash: 1861671df5cfa9dab4b57d5fb53af8712a2a64ce
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: c574e28a01dc961d898638184afe9ece90e31133
+ms.sourcegitcommit: aa7f7350d1342ff9713bb840b2cc96d1a4234ef4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811059"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44835345"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全檔
 
@@ -28,9 +28,9 @@ ms.locfileid: "44811059"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 只有使用 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權的使用者才能使用此功能。
+- 現在，使用 Office 版本2004（12730）或更高版本的使用者通常可使用安全檔！ 此功能預設為關閉，必須由安全性管理員啟用。
 
-- 安全檔目前可用於公開預覽，可供使用者在目前通道（預覽）上的[Office 預覽人員計畫](https://insider.office.com/join)中使用，其為 office 版本2002（12527.20092）或更高版本。 此功能預設為關閉，必須由安全性管理員啟用。
+- 此功能僅適用于使用*Microsoft 365 e5*或*Microsoft 365 e5 安全性*授權（未包含在 Office 365 ATP 方案中）的使用者。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "44811059"
 
 為了讓您受到保護，安全檔會將檔案傳送至[Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)雲端，以進行分析。
 
-- 您可以在[這裡](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)找到 Microsoft Defender 高級執行緒保護如何處理資料的詳細資訊
+- 您可以在[這裡](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)找到 Microsoft Defender 高級威脅防護如何處理資料的詳細資料
 - 除了上述指導之外，由安全檔所傳送的檔案不會保留在進行分析所需的時間（通常是小於24小時）。
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>使用安全性 & 規範中心設定安全檔
@@ -51,7 +51,7 @@ ms.locfileid: "44811059"
 
 3. 在 [**信任檔案以在 Office 應用程式中開啟受保護的檢視**] 區段中，在 [協助人員保持安全]] 中，設定下列其中一個設定：
 
-   - **開啟 Office 用戶端的安全檔（檔案也會傳送至 Microsoft 雲端進行深入分析）**
+   - **開啟 Office 用戶端的安全檔**
 
    - **即使安全檔將檔案識別為惡意，允許人員按一下受保護的檢視**：我們建議您不要啟用此選項。
 
@@ -64,7 +64,7 @@ ms.locfileid: "44811059"
 請使用下列語法：
 
 ```powershell
-Set-AtpPolicyForO365 -EnableSafeDocs <$true|$false> -AllowSafeDocsOpen <$true|$false>
+Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
 - _EnableSafeDocs_參數會啟用或停用整個組織的安全檔。

@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ba603f3703a7d4b6df567f8299af9f1804e42b96
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 60d0383f3acae73c36383b65daaac405a4e20bd3
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702567"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854361"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>設定試用實驗室環境的 Microsoft 威脅防護支柱
 
@@ -237,7 +237,7 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 16. 向中按向下方，然後按一下 [**儲存偏好**設定] 以確認新的整合。
 <br>![您需要按一下的影像 of_Save 偏好設定按鈕](../../media/mtp-eval-72.png) <br>
 
-## <a name="turn-on-microsoft-threat-protection"></a>開啟 Microsoft 威脅防護
+## <a name="start-the-microsoft-threat-protection-service"></a>啟動 Microsoft 威脅防護服務
 >[!NOTE]
 >從2020年6月1日開始，Microsoft 會自動為所有合格的承租人啟用 Microsoft 威脅防護功能。 如需詳細資訊，請參閱此[Microsoft 技術小組文章](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426)。 
 <br>
@@ -245,7 +245,10 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 移至[Microsoft 365 Security Center](https://security.microsoft.com/homepage)。 流覽至 [**設定**]，然後選取 [ **Microsoft 威脅防護**]。
 <br>![Microsoft 365 安全性中心設定頁面中的影像 of_Microsoft 威脅防護選項螢幕擷取畫面](../../media/mtp-eval-72b.png) <br>
 
+如需更完整的指導，請參閱[開啟 Microsoft 威脅防護](mtp-enable.md)。 
+
 恭喜！ 您剛剛建立的是 Microsoft 威脅防護試用實驗室環境！ 您現在可以模擬攻擊，並查看「向量積」功能如何偵測、建立提醒，以及自動回應端點上的 fileless 攻擊。
+
 
 ## <a name="next-steps"></a>後續步驟
 [產生測試警示](generate-test-alert.md)。

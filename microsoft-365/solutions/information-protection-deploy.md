@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,24 +16,41 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 設定安全性和服務基礎結構，以保護您的資訊並遵守資料隱私權規定。
-ms.openlocfilehash: 35ccfb21accd969c2a2cbdddde9a4ec1c7eeed64
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695102"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854326"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>使用 Microsoft 365 部署資料隱私權法規的資訊保護
 
-這項解決方案提供有關如何規劃及保護 Microsoft 365 服務中儲存的個人資料，以及可能遵循資料隱私權法規（如歐盟一般資料保護規定（GDPR））的指導方針。 此解決方案著重于適用的 Microsoft 資訊保護和符合性功能、Microsoft 規範分數和評估工具，以協助您瞭解資料。 
- 
-其他資訊也會提供使用 Microsoft 身分識別、裝置和威脅防護控制的資料隱私權需求，以及資料事件探索和回應工具。 
+您的組織可能會受到區域資料隱私權法規的制約，需要您保護、管理及提供對您的 IT 基礎結構（包括內部部署和雲端）中儲存的個人資訊的權利及控制。 資料隱私權規定的最佳範例是歐盟的一般資料保護規定（GDPR）。 無法遵守資料隱私權規定可能會造成大量罰款。
 
-## <a name="organization-of-this-guidance-material"></a>本指南資料的組織
+365 Microsoft 團隊中的資料類型範例包括 Microsoft 團隊、Exchange 中的電子郵件，以及 SharePoint 和 OneDrive 中的檔案。 此解決方案提供有關如何針對 Microsoft 365 服務中儲存的個人資料（受限於資料隱私權法規）識別、尋找、保護、管理及回應資料隱私權事件的指導方針。
+
+![為資料隱私權規定部署資訊保護](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+
+其他資訊也會提供使用 Microsoft 365 身分識別、裝置和威脅防護控制的資料隱私權需求。 
+
+若要符合保護資訊以符合資料隱私權規定的準則，請使用下列 Microsoft 365 功能。
+
+| 功能 | 描述 | 授權 |
+|:-------|:-----|:-------|
+| 合規性管理員 | 使用 Microsoft 服務信任入口網站中的工作流程型風險評估工具，管理與 Microsoft cloud services 相關的規章遵循活動。 | Microsoft 365 E3 和 E5 |
+| 合規性分數 (預覽) | 請參閱您目前規範設定的整體分數和建議，以在 Microsoft 365 規範中心內改進。 | Microsoft 365 E3 和 E5 |
+| Office 高級威脅防護（ATP） | 保護您的 Microsoft 365 應用程式和資料（例如電子郵件、Office 檔和共同作業工具）免受攻擊。 | Microsoft 365 E3 和 E5 | 
+| 敏感度標籤 | 分類及保護您組織的資料，而不會因在電子郵件、檔案或網站上放置具有不同保護層級的標籤，而阻礙使用者的生產力和其共同作業的能力。 | Microsoft 365 E3 和 E5 |
+| 資料遺失防護（DLP） | 偵測、警告和封鎖危險、不慎或不適當的共用，例如內部及外部包含個人資訊的資料共用。 | Microsoft 365 E3 和 E5 | 
+| 資料保留標籤和原則 | 實施資訊控管控制措施，例如，將個人資料的資料和需求保留多久，以符合組織的原則或資料法規。 | Microsoft 365 E3 和 E5 |
+| 電子郵件加密 | 在組織內部和外部的人員之間傳送和接收已加密的電子郵件，包含管制資料，例如客戶上的個人資料。 | Microsoft 365 E3 和 E5 |
+||||
+
+## <a name="organization-of-the-guidance-in-this-solution"></a>此解決方案中指導方針的組織
 
 為了協助您瞭解可供您識別、管理、控制及監視個人資料是否受一或多項隱私權相關的法規制約的 Microsoft 365 工具，本指南會組織成幾節。
  
-![部署資料隱私權法規的資訊保護](../media/information-protection-deploy/information-protection-deploy-grid.png)
+![為資料隱私權規定部署資訊保護](../media/information-protection-deploy/information-protection-deploy-grid.png)
 
 每個章節都對應此方案中的個別文章。
 

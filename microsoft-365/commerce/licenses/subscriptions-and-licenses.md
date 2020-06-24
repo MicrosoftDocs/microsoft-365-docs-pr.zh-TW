@@ -24,18 +24,20 @@ description: '深入瞭解 Microsoft 365 for business 中的訂閱與授權，�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 5ed1925fd51dd1798d4c6ab275494fde01535177
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f83b2069bd1b4c86e2198252a54ed2e8e5c55a04
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402399"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844677"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>瞭解 Microsoft 365 for business 中的訂閱與授權
 
 本文說明訂閱與授權之間的關係，並提供其他有關[誰可以指派授權](#find-out-who-can-assign-licenses)的資訊，[瞭解當您指派授權給某人時所發生的情況](#understand-what-happens-when-you-assign-a-license-to-someone)，以及[人員可以在哪個裝置上安裝 Office](#how-many-devices-can-people-install-office-on)。 此外，它也包含[瞭解非使用者信箱之授權的](#understand-licenses-for-non-user-mailboxes)連結，以及[管理授權的相關文章](#articles-about-managing-licenses)。
   
 當您為商務用 Microsoft 365 購買訂閱時，您會註冊一組應用程式和服務，以每月或每年的頻率支付。 您在訂閱中所收到的應用程式和服務，取決於您購買的是哪一種產品，例如 Microsoft 365 Apps for business Standard 或 Microsoft 365 Business Standard。 您可以在「[購買 Microsoft 365」頁面](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)上查看每個產品隨附的功能。 
+
+您可以在適用于中小型[企業的 Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)中查看不同的授權選項
 
 購買訂閱時，您會依據貴組織中的人數，指定您所需的「授權」數目。 完成購買後，您會為人員建立帳戶，並指派授權給每個人。 當您的組織需要變更時，您可以購買更多授權，以容納新人員，或在某人離開您的組織時，將授權重新指派給其他使用者。 
 
@@ -44,7 +46,7 @@ ms.locfileid: "44402399"
   
 ## <a name="find-out-who-can-assign-licenses"></a>找出誰可以指派授權
 
-不同類型的系統管理員根據其角色可以有不同的授權處理方式。下表列出最常用的選項。如需系統管理員角色和權限的完整清單，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
+Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
   
 |**系統管理員角色**|**指派授權**|**移除授權**|**購買更多授權**|**刪除帳戶**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -81,7 +83,7 @@ ms.locfileid: "44402399"
     
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>了解非使用者信箱的授權
 
-您不需要指派授權給資源信箱、會議室信箱及共用信箱，除非這些信箱超過其 50 GB 的儲存配額。如需非使用者信箱的詳細資訊，請參閱下列文章：
+You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
   
 - [建立共用信箱](../../admin/email/create-a-shared-mailbox.md)
     

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: 瞭解如何允許成員以 Microsoft 365 群組形式傳送電子郵件，或代表 Microsoft 365 群組傳送電子郵件。
-ms.openlocfilehash: 3a93dda83b10d7c38c8c6e7d8fd484b37df565d0
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 090a5e177ed843c035155cd735e0b7b9560e5631
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780466"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844665"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允許成員傳送為或代表群組傳送
 
@@ -76,6 +76,9 @@ ms.locfileid: "44780466"
 5. 若要從清單中搜尋或挑選使用者的類型。 選取 **[確定]** 並**儲存**。
     
     ![在清單中搜尋或挑選使用者的類型](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    
+> [!NOTE]
+> 最多可能需要兩個小時的時間，所做的變更才會生效。
 
 ## <a name="related-articles"></a>相關文章
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f63c59403e84e79d1a4a5cf2b8a5544f5646781c
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: c64adf870d3669b983e11093196f59c82b1f59e0
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773848"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844903"
 ---
 # <a name="microsoft-threat-protection-prerequisites"></a>Microsoft 威脅防護先決條件
 
@@ -60,7 +60,7 @@ ms.locfileid: "44773848"
 > 您必須被指派至[AZURE AD 中](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)的**帳務系統管理員**或**全域讀取**者角色，才能看到授權資訊。 如果您遭遇存取的問題，請與全域管理員聯繫。
 
 ## <a name="required-permissions"></a>必要的權限
-如需必要角色的清單，以及如何管制資料的存取，請參閱[管理 Microsoft 威脅防護的存取](mtp-permissions.md)。
+您必須是**全域系統管理員**或 Azure Active Directory 中的**安全性系統管理員**，才可開啟 Microsoft 威脅防護。 如需使用 Microsoft 威脅防護所需的角色清單，以及如何管制資料存取的相關資訊，請參閱[管理 Microsoft 威脅防護的存取](mtp-permissions.md)。
 
 ## <a name="browser-requirements"></a>瀏覽器需求
 使用 Microsoft Edge、Internet Explorer 11 或任何符合 HTML 5 標準的網頁瀏覽器，存取 microsoft 365 security center 中的 Microsoft 威脅防護。

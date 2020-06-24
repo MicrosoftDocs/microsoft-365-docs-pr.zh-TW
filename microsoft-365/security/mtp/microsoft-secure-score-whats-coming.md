@@ -17,20 +17,20 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f9bca47c6a47468d0a5a37b77e4f587745bf619d
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 48ff6d6f5cac0991895c40cae90ca31657cfedff
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545931"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844879"
 ---
 # <a name="whats-coming-in-microsoft-secure-score"></a>Microsoft 安全分數的情況為何？
 
-若要讓[Microsoft 安全評分](microsoft-secure-score-new.md)為您安全性狀況的更佳代表並提高可用性，我們在近期進行一些變更。 您的分數和可能的最大分數會變更。 不過，這不是指安全性狀況的變更。
+若要讓[Microsoft 安全評分](microsoft-secure-score.md)為您安全性狀況的更佳代表並提高可用性，我們在近期進行一些變更。 您的分數和可能的最大分數會變更。 不過，這不是指安全性狀況的變更。
 
-若要深入瞭解最近的變更，請參閱[Microsoft Secure 得分的新功能？](microsoft-secure-score-new.md#whats-new)
+若要深入瞭解最近的變更，請參閱[Microsoft Secure 得分的新功能？](microsoft-secure-score.md#whats-new)
 
-## <a name="june-2020"></a>2020年6月
+## <a name="june-2020"></a>2020 年 6 月
 
 ### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>移除 Microsoft Defender 高級威脅防護的改進動作
 
@@ -51,5 +51,5 @@ ms.locfileid: "44545931"
 * 封鎖 Office 應用程式將程式碼注入其他程式
 * 封鎖可執行檔，除非符合流行、age 或受信任的清單準則
 * 封鎖來自 PSExec 和 WMI 命令的進程建立
-* 封鎖從 Windows local security 機關子系統（lsass.exe）偷竊的認證
+* 從 Windows local security 機關子系統封鎖認證竊取（lsass.exe）
 * 封鎖 Office 宏的 WIN32 API 呼叫

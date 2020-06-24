@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 決定 Microsoft 365 環境中的資料隱私權法規、相關案例、準備工作和機密資訊類型。
-ms.openlocfilehash: 532a6764cd1d21eb5eb0402c3451e320d306dc03
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: f8d8fd0b5e6d8876dead566a50408cb2e7419386
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695182"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854349"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>使用 Microsoft 365 評估資料隱私權風險及識別敏感專案
 
@@ -133,7 +133,7 @@ GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、
 
 ### <a name="employee-data-required-to-carry-out-day-to-day-business-functions"></a>執行日常商務功能所需的員工資料
 
-依性質，組織必須針對電子身分識別及 HR 目的，收集員工的資料，視其在員工合約中的同意而定。 只要人員可用於公司，這通常不會有問題。 組織可能會想要將機制放在適當的地方，以防止惡意參與者 exfiltrating 或洩漏員工個人資料。 
+依性質，組織必須針對電子身分識別及 HR 目的，收集員工的資料，視其在員工合約中的同意而定。 只要人員可用於公司，這通常不會有問題。 組織可能會想要將機制放在適當的地方，以防止惡意參與者 exfiltration 或洩漏員工個人資料。 
 
 若某人離職，組織通常會有移除使用者帳戶、解除委任信箱和個人磁片磁碟機，以及變更員工在諸如人力資源系統等方面的狀態的程式、程式及保留與刪除排程。 在涉及訴訟的情況下，法律調查的員工或其他團體可能會有合理的理由，以取得組織系統中儲存的個人資料資訊。 在某些情況下，該團體可能要求移除或匿名這類資料。 
 
@@ -151,7 +151,7 @@ B2B 資訊集合也是一項挑戰，因為您的組織可能需要將客戶名�
 
 ### <a name="data-the-organization-has-about-consumers-who-provide-information-to-online-services-that-the-organization-manages-in-the-b2c-scenario"></a>組織有關為組織在 B2C 案例中管理之線上服務提供資訊的消費者所擁有的資料
 
-這種類別是由於客戶資料洩漏的許多公用實例而對資料隱私權所做的最大人們考慮。 這可能是有意的，例如向提供者合約的協力廠商，或無意中（例如由惡意的主角挾帶）。 使用者資料保護是歐盟及其他政府規定這些法規的主要原因之一。 資料隱私權法規（如 GDPR 和 CCPA）會要求您規劃下列各項：
+這種類別是由於客戶資料洩漏的許多公用實例而對資料隱私權所做的最大人們考慮。 這可能是有意的，例如向提供者合約的協力廠商，或無意中（例如由惡意的主角 exfiltration）。 使用者資料保護是歐盟及其他政府規定這些法規的主要原因之一。 資料隱私權法規（如 GDPR 和 CCPA）會要求您規劃下列各項：
 
 - [行動方案](../compliance/gdpr-action-plan.md)和[責任準備狀況檢查](../compliance/gdpr-arc-office365.md)清單
 - [資料保護影響評估](../compliance/gdpr-data-protection-impact-assessments.md)
@@ -181,7 +181,7 @@ GDPR 評估包含下列各節：
 | | |
 |:-------|:-----|
 | 治理 | <ol><li>您的隱私權原則會明確指出正在處理的資料資訊為何？ </li><li>您是否經常執行隱私權影響評估（PIAs）？ </li><li> 您是否使用工具來管理個人資訊（PI）？ </li><li> 您是否有合法的授權，可在任何指定的個人上使用 PI 資料進行商務用？ 您是否追蹤資料的同意？ </li><li> 您是否需要追蹤、實施及管理審計控制措施？ 您是否監視資料洩漏？ </li></ol>|
-| 刪除 & 通知 | <ol><li>您會提供如何存取使用者資料的明確指示。 </li><li> 您是否已記錄處理自願同意的處理常式？ </li><li>   您是否有資料的自動刪除處理常式？ </li><li>   在與客戶接洽時，是否有驗證身分識別的處理常式？ </li></ol>|
+| 刪除和通知 | <ol><li>您會提供如何存取使用者資料的明確指示。 </li><li> 您是否已記錄處理自願同意的處理常式？ </li><li> 您是否有資料的自動刪除處理常式？ </li><li>   在與客戶接洽時，是否有驗證身分識別的處理常式？ </li></ol>|
 | 風險降低和資訊安全性 | <ol><li>您使用工具來掃描非結構化資料嗎？ </li><li>所有伺服器都是最新的，您是否要利用防火牆加以保護？ </li><li>您是否執行伺服器的定期備份？ </li><li>您是否積極監控資料洩漏？ </li><li>您是否要加密靜態和傳輸中的資料？ </li></ol>|
 | 原則管理 | <ol><li>如何管理系結公司規則（BCRs）？ </li><li>您是否追蹤資料的同意？ </li><li> 您的合約是否涵蓋資料分類和處理需求，以1到5的比例從1到5、5。 </li><li>您是否有並定期測試事件回應計畫？ </li><li>您用來管理存取的原則為何？ </li></ol>|
 |||
@@ -190,7 +190,7 @@ GDPR 評估包含下列各節：
 
 此步驟包括識別特定的敏感資訊類型，這些類型受制于特定的規章控制，以及它們在 Microsoft 365 環境中的出現。 
 
-在您的環境中尋找包含個人的內容可能是一項艱巨的工作，以前的組合是使用符合性搜尋、eDiscovery、高級 eDiscovery DLP 和審核。 
+在您的環境中尋找包含個人的內容可能是一項艱巨的工作，以前的組合是使用符合性搜尋、eDiscovery、Advanced eDiscovery、DLP 和核查。 
 
 透過 Microsoft 合規性系統管理中心的新**資料分類**方案，使用[內容瀏覽器](../compliance/data-classification-content-explorer.md)功能，可搭配內建或自訂的機密資訊類型（包括與個人資料相關的資訊類型）使用。
  
@@ -212,7 +212,7 @@ Microsoft 規範系統管理中心預先載入了100以上的敏感資訊類型�
 - [自訂敏感性資訊類型](../compliance/custom-sensitive-info-types.md)
 - [在安全性與合規性中心建立自訂敏感性資訊類型](../compliance/create-a-custom-sensitive-information-type.md)
 - [在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [使用精確的資料符合型分類建立自訂機密資訊類型](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>內容瀏覽器
 

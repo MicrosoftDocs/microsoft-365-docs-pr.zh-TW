@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 部署 Microsoft 365 安全性和合規性功能，並保護您的個人資訊。
-ms.openlocfilehash: 5a6cc6645be6cad4d901922c0a257d2175c85341
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 2ec8d280d650606921becb6120546b52253620f4
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695146"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844689"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保護受資料隱私權法規制約的資訊
 
@@ -283,11 +283,8 @@ DLP 原則是在 Microsoft 合規性系統管理中心中設定，並指定保�
 
 ![使用 DLP 之敏感度標籤的範例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-<!--
+[查看較大版本的此影像](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
-
--->
 以下是一些使用 DLP 和敏感度標籤的資料保護案例，如圖所示。
 
 | 案例 | 程序 |

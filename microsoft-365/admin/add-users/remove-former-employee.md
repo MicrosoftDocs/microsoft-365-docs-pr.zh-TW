@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '遵循此檢查清單，從 Microsoft 365 中移除員工，並保護資料安全。 '
-ms.openlocfilehash: adf5c683828b30a978199145fa2c54f17d1b6b37
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 51fd26835cd74fa8403437397d37395fcf1c7301
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780574"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844855"
 ---
 # <a name="remove-a-former-employee"></a>移除離職員工
 
@@ -51,9 +51,9 @@ ms.locfileid: "44780574"
 
 如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-若要移除員工：
+若要防止員工登入：
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
 
 2. 選取使用者名稱旁的方塊，然後選取 [**重設密碼**]。
 
@@ -65,7 +65,7 @@ ms.locfileid: "44780574"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
 
 2. 選取使用者，然後選取 [**重設密碼**]。
 
@@ -77,7 +77,7 @@ ms.locfileid: "44780574"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
 
 2. 選取使用者，然後選取 [**重設密碼**]。
 
@@ -153,7 +153,7 @@ ms.locfileid: "44780574"
 
 ::: moniker range="o365-worldwide"  
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要封鎖的員工名稱，然後選取 [**郵件**] 索引標籤。
 
@@ -169,7 +169,7 @@ ms.locfileid: "44780574"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要封鎖的員工，然後展開 [**郵件設定**]。
 
@@ -185,7 +185,7 @@ ms.locfileid: "44780574"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要封鎖的員工，然後展開 [**郵件設定**]。
 
@@ -228,7 +228,7 @@ ms.locfileid: "44780574"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要封鎖的員工名稱，在使用者的名稱下，選取 [**封鎖此使用者**的符號]。
 
@@ -238,7 +238,7 @@ ms.locfileid: "44780574"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要封鎖的員工，然後選取 [封鎖登**入**]。
 
@@ -248,7 +248,7 @@ ms.locfileid: "44780574"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要封鎖的員工，然後選取 [封鎖登**入**]。
 
@@ -279,7 +279,7 @@ ms.locfileid: "44780574"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要封鎖的員工名稱，然後選取 [**授權與應用程式**] 索引標籤。
 
@@ -289,7 +289,7 @@ ms.locfileid: "44780574"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要封鎖的員工，然後在 [**產品授權**] 旁，選取 [**編輯**]。
 
@@ -299,7 +299,7 @@ ms.locfileid: "44780574"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要封鎖的員工，然後在 [**產品授權**] 旁，選取 [**編輯**]。
 
@@ -353,7 +353,7 @@ Don't delete the account if you've set up email forwarding or converted it to a 
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要刪除的員工名稱。
 
@@ -363,7 +363,7 @@ Don't delete the account if you've set up email forwarding or converted it to a 
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要刪除的員工名稱。
 
@@ -373,7 +373,7 @@ Don't delete the account if you've set up email forwarding or converted it to a 
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
 
 2. 選取您要刪除的員工名稱。
 

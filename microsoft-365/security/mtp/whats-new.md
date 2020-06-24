@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4fc56caa9be59d1a29032ee6e4f32e50918294fe
-ms.sourcegitcommit: 3119b2246001ba06af8264508785352dfb894166
+ms.openlocfilehash: f4e733cf7196668fb1c3d1830ead15c6262a635e
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44820545"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854291"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft 威脅防護的新增功能
 
@@ -30,6 +30,9 @@ RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此�
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## <a name="june-2020"></a>2020 年 6 月
+- Twitter 摘要 <br> 深入瞭解儀表板內的最新安全性調查、威脅情報、產品新聞及其他。
+
 ## <a name="february-2020"></a>2020 年 2 月
 - [事件](incidents-overview.md) <br> 確切知道攻擊已啟動的位置，以及可協助您瞭解攻擊程度的其他詳細資料。
 - [自動調查及回應](mtp-autoir.md) <br> AIR 可讓您的安全性作業小組大幅增加貴組織處理安全性警示和事件的能力。

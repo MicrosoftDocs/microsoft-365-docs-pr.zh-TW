@@ -3,11 +3,10 @@ title: 如何在 Microsoft 365 系統管理中心取得協助
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-layout: LandingPage
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +21,12 @@ search.appverid:
 - GEA150
 ROBOTS: NOINDEX
 description: 深入瞭解您可以使用 Microsoft 365 系統管理中心取得協助的所有方式。
-ms.openlocfilehash: eea5e58ba571cebd7d73202fa8f6c01ba06b8e44
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b10eb75e1a7d02c384c915ad814dddc9f3c6954f
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386766"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844713"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
@@ -35,66 +34,11 @@ ms.locfileid: "44386766"
 
 如果您是系統管理員， [admin.microsoft.com](https://admin.microsoft.com)是您開始進行管理，並充分利用您的 microsoft 365 訂閱。 在某些情況下，您可能不會發現正確的工作、在工作流程上 embarking 之前需要更多內容，或者根本不會確定動作的範圍和影響為系統管理員。為了涵蓋這些情形，我們會以下列方式在整個 Microsoft 365 系統管理中心中提供新式協助和智慧協助：
 
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>整合說明</h3>
-                            <p>系統管理中心的說明</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#modern-self-help-powered-by-ai">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>智慧協助</h3>
-                            <p>由 AI 供電的自我協助</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#guides-and-articles">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>輔助線和文章</h3>
-                            <p>網頁上的綜合內容</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
- 
+* **整合式協助**-系統管理中心的說明
+
+* **智慧協助**-由 AI 供電的自我協助
+
+* 網頁上的**指南和文章**-綜合性內容
 
 ## <a name="integrated-help"></a>整合說明
 
