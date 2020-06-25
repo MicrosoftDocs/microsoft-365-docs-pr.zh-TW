@@ -69,29 +69,20 @@
               href: mtp/setup-mtpeval.md
             - name: 設定和上線
               href: mtp/config-mtpeval.md
-            - name: 開啟 Microsoft 威脅防護
-              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
+            - name: 啟動 Microsoft 威脅防護服務
+              href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: 產生測試提醒
               href: mtp/generate-test-alert.md
         - name: 操作指南
           items:
             - name: 建立試用實驗室環境
               href: mtp/mtp-evaluation.md
-              items:
-                - name: 準備
-                  href: mtp/prepare-mtpeval.md
-                - name: 設定
-                  href: mtp/setup-mtpeval.md
-                - name: 設定和上線
-                  href: mtp/config-mtpeval.md
-                - name: 開啟 Microsoft 威脅防護
-                  href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection'
-                - name: 產生測試提醒
-                  href: mtp/generate-test-alert.md
             - name: 部署支援服務
               href: mtp/deploy-supported-services.md
             - name: 開啟 Microsoft 威脅防護
               href: mtp/mtp-enable.md
+            - name: 開啟常見問題集
+              href: mtp/mtp-enable-faq.md
             - name: 事件
               items:
                 - name: 概觀
@@ -196,14 +187,10 @@
                       href: mtp/custom-detections-overview.md
                     - name: 建立與管理偵測規則
                       href: mtp/custom-detection-rules.md
-            - name: 安全分數
+            - name: Microsoft 安全分數
               items:
-                - name: 安全分數 (新)
-                  href: mtp/microsoft-secure-score-new.md
-                - name: 安全分數 (上一次反覆運算)
+                - name: 安全分數概觀
                   href: mtp/microsoft-secure-score.md
-                - name: 安全分數 (預覽)
-                  href: mtp/microsoft-secure-score-preview.md
                 - name: 即將推出的功能
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: 報告
@@ -324,6 +311,8 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: 使用取消列出入口網站，將您自己從封鎖寄件者清單中移除
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+                - name: 管理用戶允許/封鎖清單中的 URL 和檔案
+                  href: ./office-365-security/tenant-allow-block-list.md
             - name: 防網路釣魚保護
               href: ./office-365-security/anti-phishing-protection.md
               items:
