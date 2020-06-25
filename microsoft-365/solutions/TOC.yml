@@ -19,12 +19,12 @@
           href: empower-people-to-work-remotely-secure-sign-in.md
         - name: 步驟 2： 提供遠端存取
           href: empower-people-to-work-remotely-remote-access.md
-        - name: 步驟 3： 部署端點管理
+        - name: 步驟 3： 部署安全性與合規性
+          href: empower-people-to-work-remotely-security-compliance.md
+        - name: 步驟 4： 部署端點管理
           href: empower-people-to-work-remotely-manage-endpoints.md
-        - name: 步驟 4： 部署生產力應用程式和服務
+        - name: 步驟 5： 部署生產力應用程式和服務
           href: empower-people-to-work-remotely-teams-productivity-apps.md
-        - name: 步驟 5： 建立通訊地點
-          href: empower-people-to-work-remotely-communication-venues.md
         - name: 步驟 6： 訓練遠端工作者
           href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: 使用 Microsoft 365 設定安全的共同作業
@@ -139,6 +139,8 @@
           href: contoso-case-study-solutions.md
         - name: 用於高度機密專案的隔離團隊
           href: contoso-team-for-top-secret-project.md
+        - name: Teams 語音移轉
+          href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
     - name: 測試實驗室指南
       items:
         - name: 解決方案和案例的測試實驗室指南
