@@ -14,33 +14,40 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: 系統管理員能了解 Exchange Online Protection (EOP) 新增至郵件的標題欄位，以提供有關該郵件及其處理方式的資訊。
+description: 系統管理員可以透過 Exchange Online Protection （EOP）瞭解新增至郵件的標題欄位。 這些標題欄位可提供訊息及其處理方式的相關資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d63d173b90ffd868cfbeac212f2c9d5a6ee125c6
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 8ce0b906bb627a7de11e5a8a6db02c9c6f330a62
+ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208219"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755353"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 的反垃圾郵件標頭
 
 在擁有 Exchange Online 信箱的 Microsoft 365 組織中，或沒有 Exchange Online 信箱的獨立版 Exchange Online Protection (EOP) 組織中，EOP 進行掃描並將 **X-Forefront-Antispam-Report** 標頭插入每個內送電子郵件。 此標頭的欄位有助於提供系統管理員郵件及其處理方式的相關資訊。 **X-Microsoft-Antispam** 標頭中的欄位可提供大宗郵件和網路釣魚的額外資訊。 除了這兩個標頭之外，Exchange Online Protection 還會為其在 **Authentication-results** 標頭中處理的每封郵件插入電子郵件身份驗證結果。
 
-如需如何在各種電子郵件用戶端中檢視電子郵件標頭的詳細資訊，請參閱 [在 Outlook 中查看網際網路郵件標題](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c)。
+如需如何在各種電子郵件用戶端中檢視電子郵件標頭的詳細資訊，請參閱 [在 Outlook 中查看網際網路郵件標題](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)。
 
 > [!TIP]
-> 您可以複製郵件標頭的內容並貼到[郵件分析器](https://testconnectivity.microsoft.com/?tabid=mha) 工具中。 這項工具可協助您剖析標頭，並以易讀取的格式來呈現。
+> 您可以複製訊息標題的內容並貼到[訊息標題分析器](https://mha.azurewebsites.net/) 工具中。 這項工具可協助您剖析標頭，並以易讀取的格式來呈現。
 
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>X-Forefront-Antispam-Report 郵件標頭欄位
 
-存取郵件標頭資訊之後，請搜尋 **X-Forefront-Antispam-Report**，然後尋找以下欄位。 此標頭的其他欄位專供 Microsoft 反垃圾郵件小組進行診斷之用。
+當您擁有訊息標題資訊之後，請找出 **X-Forefront-反垃圾郵件報告** 標題。 這個標題中會有多個標題欄位和值對，並以分號 (;) 分隔。 例如：
+
+`...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;CAT:NONE;SFTY:;...`
+
+下表說明個別欄位和值。
+
+> [!NOTE]
+> **X-Forefront-反垃圾郵件報告** 標題包含許多不同的標題欄位和值。 此標頭中未在表格描述的其他欄位專門由 Microsoft 反垃圾郵件小組進行診斷之用。
 
 |||
 |---|---|
 |**標頭欄位**|**描述**|
 |ARC|ARC 通訊協定的標頭如下： <ul><li>AAR：從 DMARC 記錄驗證結果標頭的內容。</li><li>AMS：這個標頭包含郵件的加密簽名。</li><li>AS：包含郵件標頭的加密簽名。 此標頭含有稱為 "cv =" 的鏈結驗證標籤，其中包含鏈結驗證結果為 **none**、**pass**或 **fail**。</li></ul>|
-|CAT：|郵件所套用的保護原則類別： <ul><li>BULK：大量郵件</li><li>DIMP：網域冒充</li><li>GIMP：信箱情報</li><li>HPHSH 或 HPHISH：高信賴度網路釣魚 </li><li>HSPM：高信賴度的垃圾郵件</li><li>MALW：惡意程式碼</li><li>PHSH：網路釣魚</li><li>SPM：垃圾郵件</li><li>SPOOF：詐騙</li><li>UIMP：使用者冒充</li></ul><br/>可以透過多種形式的保護和多次偵測掃描來標記輸入郵件。 原則具有不同的優先次序，將套用優先次序最高的原則。 如需詳細資訊，請參閱[在您的電子郵件上執行多種保護方法和偵測掃描時適用的原則](how-policies-and-protections-are-combined.md)。|
+|CAT：|郵件所套用的保護原則類別： <ul><li>BULK：大量郵件</li><li>DIMP：網域冒充</li><li>GIMP：以信箱智慧的模擬類比</li><li>HPHSH 或 HPHISH：高信賴度網路釣魚</li><li>HSPM：高信賴度的垃圾郵件</li><li>MALW：惡意程式碼</li><li>PHSH：網路釣魚</li><li>SPM：垃圾郵件</li><li>SPOOF：詐騙</li><li>UIMP：使用者冒充</li><li>AMP: 反惡意程式碼</li><li>SAP: 安全附件</li><li>OSPM: 輸出垃圾郵件</li></ul><br/>可以透過多種形式的保護和多次偵測掃描來標記輸入郵件。 原則具有不同的優先次序，將套用優先次序最高的原則。 如需詳細資訊，請參閱[在您的電子郵件上執行多種保護方法和偵測掃描時適用的原則](how-policies-and-protections-are-combined.md)。|
 |CIP: \[IP address\]|連接的 IP 位址。 您可以在 IP 允許清單或 IP 封鎖清單中使用這個 IP 位址。 如需詳細資訊，請參閱[設定連線篩選](configure-the-connection-filter-policy.md)。|
 |CTRY|來源國家/地區是由連線的 IP 位址來判斷，這可能與原始傳送的 IP 位址不同。|
 |H:\[helostring\]|連線電子郵件伺服器的 HELO 或 EHLO 字串。|

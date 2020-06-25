@@ -16,19 +16,22 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 從 Microsoft 資訊保護架構使用敏感度標籤來分類及保護組織的資料，而不會阻礙使用者的生產效率和共同作業。
-ms.openlocfilehash: 26b916f2a6aa86131da6f0bf9250291bad85dd74
-ms.sourcegitcommit: 57afde60f81499f58a9dce13649361c62f2b5a01
+description: 使用 Microsoft 資訊保護架構中的敏感度標籤，以透過加密和浮水印來分類及保護機密內容。
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+ms.openlocfilehash: 1e1a9d1144381ecc9c6b46d34f71c7a7741c6832
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2020
-ms.locfileid: "44590924"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819243"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-為了完成其工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不會停留在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而您希望內容以符合組織的商務及合規性原則的安全、受保護的方式進行漫遊。
+To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
 
 來自 Microsoft 資訊保護架構的敏感度標籤可讓您分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。
 
@@ -45,7 +48,7 @@ ms.locfileid: "44590924"
 
 您可以使用敏感度標籤來：
   
-- **在標記的內容上強制執行保護設定，例如加密或浮水印。** 例如，使用者可以將「機密」標籤套用至文件或電子郵件，該標籤即可加密內容，並套用「機密」浮水印。
+- **Enforce protection settings such as encryption or watermarks on labeled content.** For example, your users can apply a Confidential label to a document or email, and that label can encrypt the content and apply a Confidential watermark.
 
 - **保護不同平台和裝置之間 Office 應用程式中的內容。** 如需受支援應用程式的清單，請參閱[在 Office 應用程式中使用敏感度標籤](sensitivity-labels-office-apps.md)。
 
@@ -61,7 +64,7 @@ ms.locfileid: "44590924"
 
 當您將敏感度標籤指派給文件或電子郵件，它就像一個戳記套用在內容上，並且是：
 
-- **可自訂。** 您可以為組織中不同等級的敏感內容建立類別，例如個人、公用、一般、機密、高度機密。
+- **Customizable.** You can create categories for different levels of sensitive content in your organization, such as Personal, Public, General, Confidential, and Highly Confidential.
 
 - **純文字。** 由於標籤會以純文字形式儲存在內容的中繼資料中，因此第三方應用程式和服務可以讀取它，然後套用自己的保護動作 (如必要)。
 
@@ -69,7 +72,7 @@ ms.locfileid: "44590924"
 
 在 Office 應用程式中，敏感度標籤就像是在電子郵件或文件上讓使用者看的標記。
 
-內容中的每個項目皆可套用單一敏感度標籤。項目可以同時套用單一敏感度標籤和單一[保留標籤](labels.md)。
+Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
 
 > [!div class="mx-imgBorder"]
 > ![套用至電子郵件的敏感度標籤](../media/Sensitivity-label-on-email.png)
@@ -81,7 +84,7 @@ ms.locfileid: "44590924"
 
 將敏感度標籤套用至電子郵件或文件後，將會對內容強制執行為該標籤設定的保護設定。 您可以使用敏感度標籤：
 
-- 只**加密**電子郵件或電子郵件和文件。 您可以選擇哪些使用者或群組可以擁有權限來執行哪些動作，以及執行多久。 例如，您可以選擇允許另一個組織內特定群組中的使用者有權在標記內容後的 7 天內檢閱內容。 或者，可以讓使用者在套用標籤時，指派權限給內容，而不要使用系統管理員定義的權限。 
+- 只**加密**電子郵件或電子郵件和文件。 您可以選擇哪些使用者或群組可以擁有權限來執行哪些動作，以及執行多久。 例如，您可以選擇允許另一個組織內特定群組中的使用者有權在標記內容後的七天內檢閱內容。 或者，可以讓使用者在套用標籤時，指派權限給內容，而不要使用系統管理員定義的權限。 
     
     如需建立或編輯敏感度標籤時**加密**設定的詳細資訊，請參閱[使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)。
 
@@ -142,7 +145,7 @@ ms.locfileid: "44590924"
 
 - **套用預設標籤**到標籤原則中包含的使用者和群組所建立所有新文件和的電子郵件。 如果您已針對 [Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤](sensitivity-labels-teams-groups-sites.md)，此選項也適用於容器。 如果使用者的文件或電子郵件不是正確的標籤，使用者可以隨時變更預設標籤。 
     
-    請考慮使用預設標籤來設定您想套用到所有內容中的基本保護設定等級。 不過，若沒有使用者訓練和其他控制項，這項設定也可能導致不正確的標記。 選取將套用加密作為對文件之預設標籤的標籤並不是個好主意。 例如，許多組織需要將文件傳送與共用給外部使用者，而這些使用者可能沒有[支援加密的應用程式](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications)，或可能不會使用[可授權的帳戶](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#supported-scenarios-for-opening-protected-documents)。
+    請考慮使用預設標籤來設定您想套用到所有內容中的基本保護設定等級。 不過，若沒有使用者訓練和其他控制項，這項設定也可能導致不正確的標記。 選取將套用加密作為對文件之預設標籤的標籤並不是個好主意。 例如，許多組織需要將文件傳送與共用給外部使用者，而這些使用者可能沒有支援加密的應用程式，或可能不會使用可授權的帳戶。 如需此案例的詳細資訊，請參閱 [與外部使用者共用加密檔](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。
 
 - **需要變更標籤的理由。** 如果使用者嘗試移除標籤，或以較低順序編號的標籤取代其，您可以要求使用者提供理由來執行此動作。 例如，使用者開啟標示為 [機密] (順序編號 3) 的文件，並將該標籤取代為 [公開] (順序編號 1)。 目前，理由尚未傳送到 [標籤分析](label-analytics.md) 以供系統管理員檢閱。 不過 [Azure 資訊保護整合標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)會將此資訊傳送至 [Azure 資訊保護分析](https://docs.microsoft.com/azure/information-protection/reports-aip)。
 
@@ -177,7 +180,7 @@ ms.locfileid: "44590924"
 
 您可以將使用者包含在多個標籤原則中，該使用者即會看到來自這些原則的所有敏感度標籤。 不過，使用者只會取得來自具有最高優先順序標籤原則的原則設定。
 
-如果您沒有看到使用者或群組應有的標籤或標籤原則設定，且已等待 24 小時，請檢查敏感度標籤原則的順序。 若要重新排序標籤原則，請選取 [敏感度標籤原則] > 選擇右側的省略符號 > [下移]**** 或 [上移]****。
+如果您沒有看到使用者或群組應有的標籤或標籤原則設定，且已等待 24 小時，請檢查敏感度標籤原則的順序。 若要重新排序標籤原則，請選取 [敏感度標籤原則] > 選擇右側的省略符號 > **[下移]** 或 **[上移]**。
 
 ![敏感度標籤原則頁面上的移動選項](../media/sensitivity-label-policy-priority.png)
 

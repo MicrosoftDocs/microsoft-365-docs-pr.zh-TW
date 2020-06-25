@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb89a24e48dbdadd9a1af863cb8c44ded46435b1
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
+ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036206"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44800018"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般資料保護摘要
 
@@ -125,7 +125,7 @@ GDPR 強制需要 DPIA 的包含項目：
 在 GDPR 下，您必須在可能會對使用者權限和自由造成高風險的資料處理之前以控制者身分進行 DPIA，尤其是使用新的技術處理。 GDPR 提供下列必須在其中執行 DPIA 的非完整清單：
 
 - 就分析和具有法律效力或同樣會大幅影響資料主題的類似活動的目的自動處理；  
-- 處理大規模的特殊類別個人資料 – 顯示種族或種族來源、政治意見等的資料 — 或與刑事定罪和犯罪相關的資料；  
+- 處理大規模的特殊類別個人資料處理大規模的特殊類別個人資料 – 顯示種族或種族來源、政治意見等的資料 — 或與刑事定罪和犯罪相關的資料；  
 - 系統化監視大規模的公開區域。  
 
 如果您無法找出足夠的程序將資料主題的高度風險降到最低，GDPR 也會要求您在開始任何處理之前，必須洽詢資料保護授權單位 (DPA)。
@@ -293,8 +293,7 @@ GDPR 會規範個人資料的收集、儲存、使用和共用。 依據 GDPR，
 - 稅號
 - 公司地址
 - 信用卡/轉帳卡號碼
-- 社交媒體貼文
-- 社交媒體貼文
+- 社交媒體文章
 - IP 地址 (歐盟地區)
 - 位置/GPS 資料
 - Cookie

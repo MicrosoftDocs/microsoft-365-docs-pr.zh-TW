@@ -20,18 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解您可以使用的群組類型。
-ms.openlocfilehash: b81bb09efedc503b49d2ed4aa10b1e7153116f14
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 333d929e72647421951eefa50508c23dddc196ac
+ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388026"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44780454"
 ---
 # <a name="compare-groups"></a>比較群組
 
 在 Microsoft 365 系統管理中心的 [群組]**** 區段中，您可以建立和管理以下類型的群組： 
 
-- **Microsoft 365 群組**用來在公司內部和外部的使用者之間共同作業。
+- **Microsoft 365 群組** (之前稱為 Office 365 群組)是用在公司內部和外部的使用者之間共同作業。
 - **通訊群組**用來傳送通知給一群人。
 - **安全性群組**用來授權存取資源，例如 SharePoint 網站。
 - **擁有郵件功能的安全性群組**用來授權存取資源 (如 SharePoint)，以及將通知透過電子郵件傳送給這些使用者。
@@ -81,4 +81,4 @@ Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Out
 
 ## <a name="related-articles"></a>相關文章
 
-[深入了解 Microsoft 365 群組](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[深入了解 Microsoft 365 群組](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

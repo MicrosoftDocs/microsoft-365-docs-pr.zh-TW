@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 了解可用來在組織中部署 Microsoft 365 企業版的不同資源。
-ms.openlocfilehash: 42b193683a2e0c5efce73b62b00747b20baec05a
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: c076a3f96c7943d9e37c2d5bd7d6ce17d27ca3d6
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268326"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819325"
 ---
 # <a name="deploy-microsoft-365-for-enterprise"></a>部署 Microsoft 365 企業版
 
@@ -59,7 +59,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
   **如果您是規模較小或創立不久的組織**，請遵循這些階段以便有系統地建置基礎結構。
 
-  不過，您可以根據所需順序來部署階段或階段的各部分，像是[一個接著一個或同時部署](deployment-strategies-microsoft-365-enterprise.md)，藉此來與您目前的基礎結構整合、搭配您的 IT 計劃和資源，以及符合您的商務需求。 若為非企業的簡化部署，請按一下[這裡](deploy-foundation-infrastructure-non-enterprises.md)。
+  不過，您可以根據所需順序來部署階段或階段的各部分，像是[一個接著一個或同時部署](deployment-strategies-microsoft-365-enterprise.md)，藉此來與您目前的基礎結構整合、搭配您的 IT 計劃和資源，以及符合您的商務需求。 若要簡化非企業部署，請移至 [非企業的基礎結構](deploy-foundation-infrastructure-non-enterprises.md)。
 
   **如果您是企業組織**，請將這些階段視為 IT 基礎結構層級而非明確的路徑，並判斷最終要如何做才能符合組織內每一層級的需求。
 
@@ -71,7 +71,7 @@ Microsoft 365 企業版部署指南會逐步引導您完成 Microsoft 365 企業
 
 工作負載會在基礎結構之外運作。 不過，您不一定要建置所有基礎結構階段才能開始進行生力及共同作業的工作負載。
 
-[從此處](deploy-foundation-infrastructure.md)開始您自己的端對端部署旅程。
+以 [企業版 Microsoft 365 基礎結構](deploy-foundation-infrastructure.md)，快速開始您的端對端部署旅程。
 
 ## <a name="take-a-test-drive"></a>採用測試磁碟機
 

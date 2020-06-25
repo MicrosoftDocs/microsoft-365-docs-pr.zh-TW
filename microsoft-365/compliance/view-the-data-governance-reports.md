@@ -15,18 +15,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用安全性與合規性中心的資料控管報告，您可以快速檢視標籤是否如您預期套用到內容。
-ms.openlocfilehash: dbfa8b698a4f09a8307f3bbec38555193237a48c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: a4d0fb70774dfb03dc0bc674edf09c092d8b498f
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626299"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819003"
 ---
 # <a name="view-the-data-governance-reports"></a>檢視資料控管報告
 
-在建立您的標籤之後，您想要驗證它們是否如您預期套用到內容。使用安全性與合規性中心的資料控管報告，您可以快速檢視：
+After you create your labels, you'll want to verify that they're being applied to content as you intended. With the data governance reports in the Security &amp; Compliance Center, you can quickly view:
   
-- **前 5 名標籤** 這份報告會顯示已套用到內容之前 5 名標籤的計數。按一下這份報告來檢視最近已套用到內容之所有標籤的清單。您可以看到每一個標籤的計數、位置、套用方式、其保留動作、其是否為記錄，以及其配置類型。 
+- **Top 5 labels** This report shows the count of the top 5 labels that have been applied to content. Click this report to view a list of all labels that have been recently applied to content. You can see each label's count, location, how it was applied, its retention actions, whether it's a record, and its disposition type. 
     
 - **手動與自動套用** 這份報告會顯示已手動或自動標示之所有內容的計數，以及已手動標示與自動標示之內容的百分比。 
     
@@ -40,7 +41,7 @@ ms.locfileid: "43626299"
   
 ![顯示過去 90 天之標籤趨勢的圖表](../media/0cc06c18-d3b1-4984-8374-47655fb38dd2.png)
   
-您可以依日期 (最多 90 天) 和位置 (Exchange、SharePoint 和商務用 OneDrive) 篩選資料控管報告。最新的資料最多可能需要 24 小時才會出現在報告中。
+You can filter the data governance reports by date (up to 90 days) and location (Exchange, SharePoint, and OneDrive for Business). The most recent data can take up to 24 hours to appear in the reports.
   
 ![資料控管報告的篩選器](../media/77e60284-edf3-42d7-aee7-f72b2568f722.png)
   

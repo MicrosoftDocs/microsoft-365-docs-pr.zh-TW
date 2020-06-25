@@ -16,19 +16,20 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 透過保留原則來主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 377c5e1f21938204123de298e620a3d0d2bb9755
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: 瞭解如何使用保留原則來保留或刪除內容，以及如何將單一原則套用到整個組織或特定位置或使用者。
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ffd7b644f33e7f432c62c182e2d69e07c8bce730
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695136"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818923"
 ---
 # <a name="learn-about-retention-policies"></a>了解保留原則
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-對大多數組織來說，其資料 (電子郵件、文件、即時訊息等) 的數量和複雜性日益增加。有效管理或控管此資訊至關重要，因為您需要：
+For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **主動遵守產業規範和內部原則**，因此您需要將某些內容至少保留一段時間，例如，Sarbanes-Oxley 法案可能會要求您將某些類型的內容保留七年。 
     
@@ -36,7 +37,7 @@ ms.locfileid: "44695136"
     
 - **協助貴組織有效分享知識並提高靈活度**，方法為確保使用者只使用目前和相關的內容。 
     
-保留原則可協助您實現所有這些目標。管理內容通常需要下列兩個動作：
+A retention policy can help you achieve all of these goals. Managing content commonly requires two actions:
   
 - **保留**內容，以便無法在保留期間結束之前將其永久刪除。 
     
@@ -50,7 +51,7 @@ ms.locfileid: "44695136"
     
 - 將原則套用到所有內容或套用到符合特定條件的內容，例如包含關鍵字或[敏感性資訊類型](what-the-sensitive-information-types-look-for.md)的內容。
     
-當內容受限於保留原則時，人員可以繼續編輯及使用該內容，就像是完全沒變更一般。內容會保留在其原始位置。但在某人編輯或刪除受限於保留原則的內容時，則會在該內容的保留原則有效時，將原始內容的複本儲存至保留它所在的安全位置。如需詳細資訊，請參閱此頁面上的[保留原則如何與就地內容搭配使用](#how-a-retention-policy-works-with-content-in-place)一節
+When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect. For more information, see the [How a retention policy works with content in place](#how-a-retention-policy-works-with-content-in-place) section on this page
   
 此外，某些組織必須遵守美國證券交易委員會 (SEC) 規定 17a-4 等法規。 這項法規要求在開啟保留原則之後，不能關閉該原則或執行較不嚴格的限制。 若要滿足這個需求，您可以使用**保留鎖定**。 原則保留鎖定之後，任何人 (包括系統管理員) 均無法關閉保留原則或執行較不嚴格的限制。 如需詳細資訊，請參閱此頁面上的[使用保留鎖定以符合法規需求](#use-preservation-lock-to-comply-with-regulatory-requirements)一節。
 

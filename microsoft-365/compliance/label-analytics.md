@@ -15,13 +15,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 建立您的保留標籤和敏感度標籤後，您將想要查看租用戶間使用標籤的情況。 利用 Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的標籤分析，您可以快速查看最常使用的標籤，以及套用標籤的位置。
-ms.openlocfilehash: 3905b868ec3815fd9bf63ca131a20ceb1034f2c7
-ms.sourcegitcommit: 252b1d1d8ae735b99bf46e27c08353afc330aef3
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何快速查看哪些保留標籤和敏感度標籤最常被使用，以及其套用之處。
+ms.openlocfilehash: 89ccdce54b0d7e6146260037b8dcb085631b408e
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231986"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817502"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>利用標籤分析檢視標籤使用量
 
