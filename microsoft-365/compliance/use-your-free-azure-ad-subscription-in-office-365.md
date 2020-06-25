@@ -16,20 +16,21 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 了解如何存取 Azure Active Directory，其隨附於貴組織的付費訂閱。
-ms.openlocfilehash: be8edecd348d0019916f4f1b974a2bd0f8cabbc9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 43c9c03af74d4edc1fb6c762c9ca89594a907920
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626369"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44819283"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>使用您的免費 Azure Active Directory 訂閱
 
-如果貴組織有 Microsoft 365、Microsoft Dynamics CRM Online、Enterprise Mobility Suite 或其他 Microsoft 服務的付費訂閱，則您有 Microsoft Azure Active Directory 的免費訂閱。您和其他系統管理員可以使用 Azure AD，來建立並管理使用者和群組帳戶。若要使用 Azure AD，只需移至 Azure 入口網站，然後登入您的帳戶。
+If your organization has a paid subscription to Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in to your account.
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="open-a-private-browsing-session"></a>開啟私人瀏覽會話
 
-您可以使用私密瀏覽工作階段 (而非一般工作階段) 存取 Azure 入口網站 (在以下的步驟 1)，藉此避免您目前登入的認證傳送至 Azure。若要開啟私密瀏覽工作階段：
+Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this prevents the credentials that you're currently logged on with from being passed to Azure. To open an private browsing session:
 
 - 在 Microsoft Edge (舊版)、Internet Explorer 或 Mozilla FireFox 中，請按 `CTRL+SHIFT+P`。
 

@@ -17,13 +17,15 @@ ms.collection:
 - SPO_Content
 search.appverid:
 - MET150
-description: 透過安全性與合規性中心的資料外洩防護 (DLP) 原則，您可以識別、監控及自動保護整個 Office 365 的敏感性資訊。
-ms.openlocfilehash: c6a099924852927a319990d3886a10479e96999b
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.custom:
+- seo-marvel-apr2020
+description: 瞭解如何識別、監控和自動保護 Office 365 中貴組織中的敏感資訊。
+ms.openlocfilehash: 93d0eaf882569b6645c98699f83ad19a25af4864
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726556"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44817942"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->

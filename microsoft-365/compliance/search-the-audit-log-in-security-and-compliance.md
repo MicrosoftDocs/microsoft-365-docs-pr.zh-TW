@@ -18,16 +18,15 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
-ms.openlocfilehash: 7602042c0bd8fb46b497bdf0fc16bb6b02809074
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726527"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44818983"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
-
-## <a name="introduction"></a>簡介
 
 需要了解是否有使用者已檢視特定文件或清除信箱中的項目嗎？ 如果是，您可以使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 為什麼使用整合的稽核記錄？ 因為您可以在 Office 365 中搜尋下列類型的[使用者和系統管理員活動](#audited-activities)：
 
@@ -65,7 +64,7 @@ ms.locfileid: "44726527"
 
 - 使用 SharePoint Online 或 Microsoft Teams 網站之敏感度標籤的使用者和系統管理員活動
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="requirements-to-search-the-audit-log"></a>搜尋稽核記錄的要求
 
 開始搜尋稽核記錄前，請務必閱讀下列項目。
 
@@ -916,7 +915,7 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **事件發生後多久才能使用稽核記錄？**
 
-大部分稽核資料都可在事件發生後的 30 鐘內予以使用，但對應的稽核記錄項目最多可能需要 24 小時才會顯示在搜尋結果中。 請參閱本文的[開始之前](#before-you-begin)一節中的表格，其中顯示不同服務中事件所需的時間。
+大部分稽核資料都可在事件發生後的 30 鐘內予以使用，但對應的稽核記錄項目最多可能需要 24 小時才會顯示在搜尋結果中。 請參閱本文的[搜尋稽核記錄的要求](#requirements-to-search-the-audit-log)一節中的表格，其中顯示不同服務中事件所需的時間。
 
 **稽核記錄可保留多久時間？**
 
@@ -932,7 +931,7 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
 
 **針對想擷取稽核記錄的服務，我是否要為每項服務個別啟用稽核功能？**
 
-在大部分的服務中，在您初次為組織啟用稽核功能之後，稽核功能就會預設為啟用 (如本文的[開始之前](#before-you-begin)一節中所述)。
+在大部分的服務中，在您初次為貴組織啟用稽核功能之後，稽核功能就會預設為啟用 (如本文 [搜尋稽核記錄](#requirements-to-search-the-audit-log) 一節中所述)。
 
 **稽核服務支援刪除重複的記錄嗎？**
 

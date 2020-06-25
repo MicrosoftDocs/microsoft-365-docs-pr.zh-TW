@@ -28,16 +28,16 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: 在 Microsoft 365 系統管理中心尋找您的發票或帳單。 您也可以儲存及列印帳單複本。
-ms.openlocfilehash: d034e59e80af6396867282f3e7c23179c332c251
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: 7360f2bb73f78450143d5f1428ae90aa5bc0e0a1
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407941"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44816994"
 ---
 # <a name="view-your-bill-or-invoice"></a>檢視帳單
 
-本文適用於擁有商務用 Microsoft 365 訂閱的使用者。您必須是全域系統管理員或計費系統管理員，才能執行本文所述的步驟。
+This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
   
 如果您需要協助來解讀帳單上顯示的費用，請參閱[了解帳單或發票](understand-your-invoice2.md) (部分機器翻譯) 以取得詳細的逐步解說。
   
@@ -49,13 +49,13 @@ ms.locfileid: "44407941"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo] 
 
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
   
 ## <a name="view-a-bill-or-invoice"></a>檢視帳單或發票
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">[帳單與付款]</a> 頁面。
+1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[帳單與付款]</a> 頁面。
 
 ::: moniker-end
 
@@ -71,21 +71,20 @@ ms.locfileid: "44407941"
 
 ::: moniker-end
 
-2. 從下拉式清單中選取日期範圍，然後選擇您想要檢視的順序。
+2. 在 **[發票]** 索引標籤上，從下拉式清單中選取日期範圍，然後選擇您想要查看的順序。
 
 3. 在 [摘要] 頁面上，您可以看到下列資訊︰
 
-  - 總餘額、目前應付金額、付款到期日、上次付款金額及收到的日期。
+    - 總餘額、目前應付金額、付款到期日、上次付款金額及收到的日期。
 
-  - 付款指示。
+    - 付款指示。
 
-  - 過去付款日期記錄和已支付的金額。
+    - 過去付款日期記錄和已支付的金額。
 
-  - 訂單建立日期及訂單號碼。
+    - 訂單建立日期及訂單號碼。
 
 4. 若要列印或儲存發票的 PDF 複本，請選取 **[下載 PDF]**。
 
-  
 ## <a name="related-articles"></a>相關文章
 
 [使用發票、信用卡或銀行帳戶支付費用](pay-for-your-subscription.md)

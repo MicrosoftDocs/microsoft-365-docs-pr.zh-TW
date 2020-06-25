@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
-description: Microsoft 服務信任入口網站中的合規性管理員會提供工具，可追蹤、實作及管理控制項，在針對 Microsoft 雲端服務 (例如 Office 365 和 Microsoft Azure) 進行測量時，可協助貴組織達到安全性和資料保護法規遵循產業標準 (例如 GDPR、ISO 27001 與 27018，與 HIPAA)。合規性管理員可協助監督資料保護和隱私策略的人員，讓貴組織可管理法規遵循和風險評估程序。
+description: 瞭解如何使用 Microsoft 服務信任入口網站中的合規性管理員，以符合資料保護和法規需求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d90e733dad48dc0e979f6d307a9419afd05cf6
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
+ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165964"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44815594"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合規性管理員 (傳統)
 
@@ -48,16 +48,16 @@ ms.locfileid: "44165964"
 
     
 > [!IMPORTANT]
-> 合規性管理員是一個儀表板，提供您資料保護與合規性結構的摘要，以及改善資料保護與合規性的建議。合規性管理員中所提供的「客戶動作」也是建議；每個組織皆可選擇在實作之前，評估這些建議在其個別法規環境中的效果。合規性管理員中所找到的建議不應視為規範的保證。
+> Compliance Manager is a dashboard that provides a summary of your data protection and compliance stature and recommendations to improve data protection and compliance. The Customer Actions provided in Compliance Manager are recommendations; it is up to each organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
 
     
 ## <a name="what-is-compliance-manager"></a>合規性管理員為何？
 
-「合規性管理員」是以工作流程為基礎的風險評估工具，專門設計來協助您管理雲端責任分擔模型內的法規合規性。合規性管理員為您提供標準的儀表板檢視以及法規和評估，當中包含 Microsoft 的控制項實作細節和測試結果，以及客戶控制實作指導方針及追蹤，可供貴組織進入。合規性管理員會提供認證評估控制項定義、實作和測試控制項的指導方針、控制項的風險加權分數、以角色為基礎的存取權管理，以及追蹤控制項實作、測試狀態和辨識項管理的就地控制執行作業工作流程。合規性管理員會最佳化合規性工作流程，方法是讓客戶以邏輯方式分組評估，並將評估控制項測試套用至相同或相關的控制項，以減少重複的工作，在不同的認證中符合相同控制項需求時可能會需要。
+Compliance Manager is a workflow-based risk assessment tool designed to help you manage regulatory compliance within the shared responsibility model of the cloud. Compliance Manager provides you with a dashboard view of standards and regulations and assessments that contain Microsoft's control implementation details and test results and customer control implementation guidance and tracking for your organization to enter. Compliance Manager provides certification assessment control definitions, guidance on implementation and testing of controls, risk-weighted scoring of controls, role-based access management, and an in-place control action assignment workflow to track control implementation, testing status and evidence management. Compliance Manager optimizes compliance workload by enabling customers to logically group assessments together and apply assessment control testing to identical or related controls, reducing the duplication of effort that might otherwise be required to satisfy identical control requirements across different certifications.
 
 ## <a name="assessments-in-compliance-manager"></a>合規性管理員中的評估
 
-合規性管理員的核心元件名為「評估」**。「評估」是 Microsoft 服務針對憑證標準或資料保護規定 (例如 ISO 27001:2013 和 GDPR) 的評估。「評估」可協助您針對所選 Microsoft 雲端服務的業界標準，分辨貴組織的資料保護及合規性狀態。您可實作對應至要評估的憑證標準之控制項來完成評估。 
+The core component of Compliance Manager is called an *Assessment*. An Assessment is an assessment of a Microsoft service against a certification standard or data protection regulation (such as ISO 27001:2013, and the GDPR). Assessments help you to discern your organization's data protection and compliance posture against the selected industry standard for the selected Microsoft cloud service. Assessments are completed by the implementation of the controls that map to the certification standard being assessed. 
   
 「評估」的結構取決於責任，會在 Microsoft 與貴組織之間共用，以評估雲端中的安全性與合規性風險，並實作合規性標準、資料保護標準、規定或法律所指定的資料保護。
   
@@ -65,13 +65,13 @@ ms.locfileid: "44165964"
   
 - **範圍內的服務** - 每個評估適用於一組特定的 Microsoft 服務，會列在「範圍內的雲端服務」一節中。 
     
-- **Microsoft 管理控制項** - 對於每個雲端服務，Microsoft 會實作及管理一組「控制項」** 作為 Microsoft 與各種標準和法規的合規性。這些控制項會組織成「控制項系列」**，符合對應憑證或「評估」所符合規定的結構。對於每個 Microsoft 管理控制項，「合規性管理員」會提供 Microsoft 實作控制項的方法，以及獨立協力廠商稽核員測試及驗證實作的方式和時間。 
+- **Microsoft-Managed Controls** - For each cloud service, Microsoft implements and manages a set of  *controls*  as part of Microsoft's compliance with various standards and regulations. These controls are organized into  *control families*  that align with the structure from the corresponding certification or regulation that the Assessment is aligned to. For each Microsoft-managed control, Compliance Manager provides details about how Microsoft implemented the control, along with how and when that implementation was tested and validated by an independent third-party auditor. 
     
     以下是 Office 365 的「評估」和 GDPR 中「安全性」**** 控制項系列中，三種 Microsoft 管理控制項的範例。 
 
     ![「合規性管理員」中 Microsoft 管理控制項的詳細資料](../media/d1351212-1ebf-424e-91b8-930c2b2edef1.png)
   
-  a. 從對應到 Microsoft 管理控制項的認證或法規指定下列資訊。
+  a. Specifies the following information from the certification or regulation that maps to the Microsoft-managed control.
 
   - **控制識別碼** - 控制項所對應認證或規定中的小節或文章號碼。
     
@@ -81,15 +81,15 @@ ms.locfileid: "44165964"
     
   - **描述** - 標準或法規的文字，對應至所選的 Microsoft 管理控制項。
 
-  b. 控制項的「合規性分數」，這表示與每個 Microsoft 管理控制項相關聯的風險層級 (因不符合或控制項失敗)。如需詳細資訊，請參閱[了解合規性分數](#understanding-the-compliance-score)。請注意，合規性分數分級介於 1 到 10，且是以色彩標示。黃色表示低風險控制項、橘色表示中風險控制項，而紅色標示高風險控制項。 
+  b. The Compliance Score for the control, which indicates the level of risk (due to non-compliance or control failure) associated with each Microsoft-managed control. See [Understanding the Compliance Score](#understanding-the-compliance-score) for more information. Note that Compliance Scores are rated from 1 to 10 and are color-coded. Yellow indicates low risk controls, orange indicates medium-risk controls, and red indicated high-risk controls. 
     
-  c. 控制項實作狀態的相關資訊、該控制項所測試的日期、執行測試的人員，以及測試結果。
+  c. Information about the implementation status of a control, the date the control was tested, who performed the test, and the test result.
     
-  d. 對於每個控制項，您可以按一下 [更多]**** 以查看詳細資訊，包括關於 Microsoft 控制項實作的詳細資料，以及獨立協力廠商稽核員如何測試及驗證控制項的詳細資料。 
+  d. For each control, you can click **More** to see additional information, including details about Microsoft's implementation of the control and details about how the control was tested and validated by an independent third-party auditor. 
     
-- **客戶管理控制項** - 這是由貴組織所管理控制項的集合。貴組織負責實作這些控制項，作為指定標準或規定合規性程序的一部分。客戶管理控制項也會組織成對應認證或規定的控制項系列。若要進行合規性動作，請使用客戶管理控制項，實作 Microsoft 所建議的建議活動。貴組織可以使用預先設計的指導方針，和每個客戶管理控制項中的建議客戶動作，來管理該控制項的實作和評估程序。
+- **Customer-Managed Controls** - This is the collection of controls that are managed by your organization. Your organization is responsible for implementing these controls as part of your compliance process for a given standard or regulation. Customer-managed controls are also organized into control families for the corresponding certification or regulation. Use the customer-managed controls to implement the recommended actions suggested by Microsoft as part of your compliance activities. Your organization can use the prescriptive guidance and recommended Customer Actions in each customer-managed control to manage the implementation and assessment process for that control.
     
-    「評估」中的客戶管理控制項也都有內建的工作流程管理功能，可供您用來管理及追蹤貴組織完成「評估」的進度。例如，貴組織中的法務人員可將動作項目指派給 IT 系統管理員，其有執行控制項所建議動作的責任和必要權限。工作完成時，IT 系統管理員可以上傳其實作工作的辨識項 (例如，設定或原則設定的螢幕擷取畫面)，然後將 [動作項目] 指派回法務人員來評估收集到的辨識項、測試控制項的實作，並記錄「合規性管理員」中的實作日期和測試結果。如需詳細資訊，請參閱文章中的[管理評估程序](#managing-the-assessment-process)一節。 
+    Customer-managed controls in Assessments also have built-in workflow management functionality that you can use to manage and track your organization's progress towards completing the Assessment. For example, a Compliance Officer in your organization can assign an Action Item to an IT admin who has the responsibility and necessary permissions to perform the actions that are recommended for the control. When that work is complete, the IT admin can upload evidence of their implementation tasks (for example, screenshots of configuration or policy settings) and then assign the Action Item back to the Compliance Officer to evaluate the collected evidence, test the implementation of the control, and record the implementation date and test results in Compliance Manager. For more information, see the [Managing the assessment process](#managing-the-assessment-process) section in the article. 
   
 ## <a name="permissions-and-role-based-access-control"></a>權限和角色型存取控制
 
@@ -97,7 +97,7 @@ ms.locfileid: "44165964"
   
 請注意，已不再有預設的**來賓存取**角色。 每個使用者都必須獲指派角色，才能在合規性管理員中存取及作業。
   
-下表說明每個「合規性管理員」權限，以及其允許使用者執行的動作。表格也會顯示每個權限所指派的角色。
+The following table describes each Compliance Manager permission and what it allows the user do. The table also indicates the role that each permission is assigned to.
   
 ||**合規性管理員讀取者**|**合規性參與者**|**合規性管理員評估者**|**合規性管理員管理者**|**入口網站管理員**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -105,7 +105,7 @@ ms.locfileid: "44165964"
 |**編輯資料** - 使用者可以編輯所有欄位，除了 [測試結果] 和 [測試日期] 欄位以外。  <br/> ||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**編輯測試結果** - 使用者可以編輯 [測試結果] 和 [測試日期] 欄位。  <br/> ||<br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
 |**管理評估** - 使用者可以建立、封存和刪除「評估」。  <br/> |||<br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**管理使用者** - 使用者可以在其組織中，將其他使用者新增至「讀取者」、「參與者」、「評估者」和「管理員」角色。貴組織中具有全域管理員角色的使用者才可以從入口網站管理員角色中新增或移除使用者。<br/> ||||<br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|**Manage users** - Users can add other users in their organization to the Reader, Contributor, Assessor, and Administrator roles. Only those users with the Global Administrator role in your organization can add or remove users from the Portal Admin role.  <br/> ||||<br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 ## <a name="understanding-the-compliance-score"></a>了解合規性分數
 
@@ -125,17 +125,17 @@ ms.locfileid: "44165964"
   
 ![合規性管理員 - 評估控制項低嚴重性 - 3 分](../media/11749f20-5f22-40c2-bbc1-eaccbf29e2ae.png)
   
-合規性管理員會指派預設嚴重性排名給每個控制項。風險排名是根據下列準則來計算：
+The Compliance Manager assigns a default severity ranking to each control. Risk rankings are calculated based on the following criteria:
   
 - 控制項是否避免事件發生 (最高排名) 會偵測所發生的事件，或修正事件的影響 (最低排名)。 針對嚴重性排名，可防止威脅且為強制性的控制措施會獲派最高的得分數字；偵測型或矯正型的控制措施 (不論它們是強制性還是選擇性) 會獲派最低的得分數字。
     
 - 控制項 (經實作之後) 是必要的，因此使用者無法繞徑 (例如，使用者必須重設使用者密碼，並符合密碼長度和字元要求)，或是選擇性的，而使用者可以繞徑 (例如，要求使用者在他們的電腦自動安裝時鎖定螢幕畫面的商務規則)。
     
-- 與資料機密性、完整性和可用性風險相關的控制項，無論這類風險是來自內部或外部威脅，或是威脅是惡意還是意外的。(例如，可協助防止外部攻擊者破壞網路，並取得個人識別資訊存取權的控制項，會比與避免員工不小心將網路路由器設定設定錯誤控制項而導致網路中斷的相關控制項指派更多點數)。
+- Controls related to risks to data confidentiality, integrity, and availability, whether these risks come from internal or external threats, and whether the threat is malicious or accidental. For example, controls that would help prevent an external attacker from breaching that network and gaining access to personally identifiable information would be assigned more points than a control related to preventing an employee from accidentally mis-configuring a network router setting that results in a network outage).
     
 - 每個控制項與法律和外部驅動程式相關的風險，例如合約、法規和公用承諾。
     
-顯示的控制項合規性分數值會依通過/失敗基礎「完整」套用** 至合規性總分--控制項實作並通過後續評估測試，或相反狀況；沒有部分實作的部分分數。僅當控制項將其 [實作狀態]**** 設為 [已實作]**** 或 [替代實作]****，且 [測試結果]**** 設為 [通過]**** 時，指派的點數才會新增至合規性總分。 
+The displayed Compliance Score values for the control are applied  *in their entirety*  to the Total Compliance Score on a pass/fail basis--either the control is implemented and passes the subsequent assessment test or it does not; there is no partial credit for a partial implementation. Only when the control has its **Implementation Status** set to **Implemented** or **Alternative Implementation** and the **Test Result** is set to **Passed** are the assigned points added to the Total Compliance Score. 
   
 最重要的是，合規性分數能指出倘若發生與某個控制措施相關的失敗，哪些控制措施有較高的潛在風險，藉此協助您排定優先順序，決定要專注於實作哪些控制措施。 除了以風險為基礎的優先順序以外，在評定控制措施與其他控制措施相關時 (無論是在相同的評定中，或是在位於相同評定群組內的另一個評定中)，如果成功完成單一控制措施，可能就會根據控制措施測試結果的同步處理情形大幅減少工作。
   
@@ -145,7 +145,7 @@ ms.locfileid: "44165964"
   
 在評定中，GDPR 控制措施 7.5.5 與其他 5 個控制措施 (7.4.1、7.4.3、7.4.4、7.4.8 和 7.4.9) 有關，每個各有中等到高嚴重性風險評分 6 或 8)。 我們使用評定篩選選取了所有這些控制措施，讓它們能夠在評定檢視中顯示，而且我們可以在下方看見它們之中沒有任何一個已經評定。 
   
-![合規性管理員 - 評估檢視 - 篩選控制項，全都未評估](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) 由於這 6 個控制項都是相關的，完成其中任何一個都將導致此評估內相關 控制項中的測試結果同步處理 (就像相同評估群組中任何相關控制項的那樣)。在實作完成且測試 GDPR 控制項 7.5.5 之後，控制項詳細資料區域會重新整理，以顯示 6 個控制項都已評估，相對會增加已評估控制項的數目至 57，且 51% 已評估，合規性總分會變更 + 40。 
+![合規性管理員 - 評估檢視 - 篩選控制項，全都未評估](../media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) As those 6 controls are related, the completion of any one them will result in a synchronization of those test results across the related controls within this assessment (just as it will for any related controls in an assessment that is in the same assessment grouping). Upon completion of the implementation and testing of GDPR control 7.5.5, the control detail area refreshes to show that all 6 controls have been assessed, with a corresponding increase in the number of assessed controls to 57 and 51% assessed, and a change in total Compliance Score of +40. 
   
 ![合規性管理員評估檢視 - 已同步處理控制結果](../media/e9da2b30-053a-4d40-ace9-ae1b39cdaf66.jpg)
   
@@ -154,16 +154,16 @@ ms.locfileid: "44165964"
 ![合規性管理員評估 - 相關的控制項更新確認對話方塊](../media/8be25bd2-1aee-455f-8aa4-10b1184ca4c3.png)
   
 > [!NOTE]
-> 目前，只有 Office 365 雲端服務的評估會包括合規性分數。Azure 和 Dynamics 的評估會顯示評估狀態。 
+> Currently, only Assessments for Office 365 cloud services include a Compliance Score. Assessments for Azure and Dynamics show an assessment status. 
 
 ## <a name="compliance-score-methodology"></a>合規性分數方法
 
 合規性分數 (如 Microsoft 安全分數) 類似於其他行為式評分系統；貴組織的活動會增加其合規性分數，方法為執行與資料保護、隱私權和安全性相關的活動。
   
 > [!NOTE]
-> 合規性分數並不會表達組織符合任何特定標準或規定的絕對測量。而是表示您採用控制項的程度，可降低個人資料和個別隱私權的風險。沒有任何服務可保證您符合標準或規定，且不能以任何形式解釋合規性分數作為保證。 
+> The Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way. 
   
-「合規性管理員」中的「評估」是根據雲端運算的責任分擔模型。在責任分擔模型中，Microsoft 和每位客戶會分擔責任，當資料儲存在我們的雲端時，共同保護客戶的資料。
+Assessments in Compliance Manager are based on the shared responsibility model for cloud computing. In the shared responsibility model, Microsoft and each customer share responsibility for the protection of the customer's data when that data is stored in our cloud.
   
 如下列的 Office 365 GDPR 評定所示，Microsoft 和客戶都各自負有責任，需執行各種專為滿足標準或法規的合規性評定而設計的動作。 為了合理化並了解各種標準和規定所需的動作， 合規性管理員會將所有標準和規定當成控制項架構。 因此，對 Microsoft 和客戶所執行的動作的合規性評定，包含各種控制措施的實作與驗證。
   
@@ -171,7 +171,7 @@ ms.locfileid: "44165964"
   
 以下是執行一般動作的基本工作流程：
   
-1. 組織的合規性、風險、隱私權和/或資料保護長會將工作指派給組織中的人員以實作控制項。該人員可能為：
+1. The Compliance, Risk, Privacy, and/or Data Protection Officer of an organization assigns the task to someone in the organization to implement a control. That person could be:
 
     - 企業原則擁有者
     
@@ -179,7 +179,7 @@ ms.locfileid: "44165964"
     
     - 組織中負責執行工作的另一個人員
     
-2. 該人員會執行實作控制項所需的工作、將實作的辨識項上傳到合規性管理員，並將繫結至控制項的動作標記為已實作。一旦完成這些工作後，他們會將動作指派至評估進行驗證。評估者可能是：
+2. That individual performs the tasks necessary to implement the control, uploads evidence of implementation into Compliance Manager, and marks the control(s) tied to the Action as implemented. Once these tasks are completed, they assign the Action to an Assessor for validation. Assessors can be:
     
     - 在組織中執行控制項驗證的內部評估者
     
@@ -189,13 +189,13 @@ ms.locfileid: "44165964"
     
 一旦評估過所有與「評估」相關聯的控制項後，評估就會視為完成。
   
-合規性管理員中的每個「評估」都會預先載入資訊，提供 Microsoft 所採取的動作，滿足 Microsoft 所負責控制項需求的詳細資料。這項資訊包含有關 Microsoft 如何實作每個控制項，以及協力廠商稽核者評估及驗證 Microsoft 實作的方式與時機相關詳細資料。基於這個原因，每個「評估」的 Microsoft 管理控制項都會標示為 [已評估]，且「評估」的合規性分數會加以反映。
+Every Assessment in Compliance Manager comes pre-loaded with information that provides details about the Actions taken by Microsoft to satisfy the requirements of the controls for which Microsoft is responsible. This information includes details about how Microsoft has implemented each control and how and when Microsoft's implementation was assessed and verified by a third-party auditor. For this reason, the Microsoft Managed Controls for each Assessment are marked as Assessed, and the Compliance Score for the Assessment reflects this.
   
-每個評估都會包含根據責任分擔模型的合規性分數總計。Microsoft 的 Office 365 控制項實作和測試都會計入與 GDPR 評估相關聯總分的一部分。當客戶實作和測試每個客戶動作時，「評估」的合規性分數會依指派給控制項的值而增加。 
+Each Assessment includes a total Compliance Score based on the shared responsibility model. Microsoft's implementation and testing of controls for Office 365 contributes a portion of the total possible points associated with a GDPR assessment. As the customer implements and tests each of the customer Actions, the Compliance Score for the Assessment will increase by the value assigned to the control. 
   
  ### <a name="risk-based-scoring-methodology"></a>風險計分方法
   
-合規性管理員會使用風險計分方法，計分範圍從 1-10，並在控制項失敗或不符合的情況下指派較高的值給代表較高的風險。合規性分數所使用的計分系統是根據幾個重要的因素，例如：
+Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 that assigns a higher value to controls that represent a higher risk in the event the control fails or is non-compliant. The scoring system used by Compliance Score is based on several key factors, such as:
   
 - 控制項的本質
     
@@ -211,17 +211,17 @@ ms.locfileid: "44165964"
   
  ### <a name="mandatory-or-discretionary"></a>必要或選擇性
   
- 「強制控制項」** 是無法故意或無意略過的控制項。通用強制控制項的範例是集中管理密碼原則，可設定密碼長度、複雜度及到期日的需求。使用者必須符合這些需求，才能存取系統。 
+ *Mandatory controls*  are controls that cannot be bypassed either intentionally or accidentally. An example of a common mandatory control is a centrally-managed password policy that sets requirements for password length, complexity, and expiration. Users must comply with these requirements in order to access the system. 
   
- 「選擇性控制項」** 依賴使用者了解原則，並採取適當動作。例如，當使用者離開電腦時會要求鎖定電腦的原則是選擇性控制項，因為它依賴使用者。 
+ *Discretionary controls*  rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user. 
   
  ### <a name="preventative-detective-or-corrective"></a>預防性、偵測性或修正性
   
- 「預防性控制項」** 會避免特定的風險。例如，使用加密靜態保護資訊是預防攻擊、入侵等的預防性控制項。責任分散是預防性控制項，可管理感興趣的衝突及防止詐騙。 
+ *Preventative controls*  are those that prevent specific risks. For example, protecting information at rest using encryption is a preventative control against attacks, breaches, etc. Separation of duties is a preventative control to manage conflict of interest and to guard against fraud. 
   
- 「偵測性控制項」** 是主動監視系統，可找出代表風險或可用來偵測入侵或判斷是否已發生弱點的不規則條件或行為。系統存取稽核及特殊權限系統管理動作稽核是不同類型的偵測性監視控制項；法規合規性稽核是一種偵測性控制項，可用來找出程序問題。 
+ *Detective controls*  are those that actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or determine if a breach has occurred. System access auditing and privileged administrative actions auditing are types of detective monitoring controls; regulatory compliance audits are a type of detective control used to find process issues. 
   
- 「修正性控制項」** 會嘗試將不良的安全性事件保持在最小值、採取修正動作以降低立即的效果及回復損毀，如果可能的話。隱私權事件回應是修正性控制項，可在入侵後將損害及還原系統限制為作業狀態。 
+ *Corrective controls*  are those that try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage, if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach. 
   
 我們使用這些因素評估每一個控制項，可決定控制項的本質，並將相對於其所代表之風險的值指派給它。
   
@@ -242,7 +242,7 @@ ms.locfileid: "44165964"
     
 - 可用性表示資訊隨時可供存取，並具有高品質的服務。
     
-這些特性失敗會視為單一入侵系統。威脅可能來自內部和外部來源，且執行者的意圖可能是不小心或惡意的。這些因素會在威脅模型中估計，將高、中或低的威脅層級指派給每個案例組合。
+A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
 ||**內部**<br/>||**外部**<br/>||||
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -274,13 +274,13 @@ ms.locfileid: "44165964"
   
 ### <a name="summary-of-scoring-methodology"></a>計分方法摘要
   
-合規性分數是合規性管理員協助組織了解及管理其合規性方式的核心元件。評估的合規性分數是公司使用特定標準與法規作為數字的合規性運算式，分數越高 (最高為「評估」的配置分數上限)，公司的合規性狀態越好。了解合規性計分方法，其中評估控制項會指派介於 1-10 (最高到最低) 的風險嚴重性值，以及完成的控制項評估如何新增至合規性分數總分，對於組織優先處理其動作是很重要的。
+The Compliance Score is a core component of the way that Compliance Manager helps organizations understand and manage their compliance. The Compliance Score for an assessment is an expression of the company's compliance with a given standard or regulation as a number, where the higher the score (up to the maximum number of points allocated for the Assessment), the better the company's compliance posture. Understanding the compliance scoring methodology in which assessment controls are assigned risk severity values between 1- 10 (low to high), and how completed control assessments add to the total compliance score is crucial to organizations for prioritizing their actions.
 
 ## <a name="grouping-assessments"></a>群組評估
 
 當您建立新評定時，系統會提示您建立群組以將評定指派到該群組，或是將評定指派到現有群組。 群組可讓您按照邏輯整理評定，並在有相同或相關的客戶管理控制措施之間共用通用資訊和工作流程工作。
   
-例如，您可以在貴組織內依年或小組、部門或機關群組「評估」，或依年將它們群組。以下是幾個群組的範例，以及其中可能包含的「評估」。
+For example, you could group Assessments by year or teams, departments, or agencies within your organization or group them by year. Here are some examples of groups and the Assessments they might contain.
   
 - GDPR 評估 - 2018
     
@@ -315,7 +315,7 @@ ms.locfileid: "44165964"
   
 - 群組名稱 (也稱為 *群組 ID) 在貴組織中必須是唯一的。 
     
-- 群組可以包含相同憑證/規定的「評估」，但每個群組針對特定的雲端服務/認證組只能包含一個「評估」。例如，群組不能包含 Office 365 和 GDPR 的兩個「評估」。同樣地，只要每個的對應憑證/規定不同，群組就可以包含同一個雲端服務的多個「評估」。
+- Groups can contain Assessments for the same certification/regulation, but each group can only contain one Assessment for a specific cloud service/certification pair. For example, a group can't contain two Assessments for Office 365 and GDPR. Similarly, a group can contain multiple Assessments for the same cloud service as long as the corresponding certification/regulation for each one is different.
     
 將評定新增到評定群組後，就無法變更該群組。 您可以重新命名評定群組，這會變更與該群組關聯的所有評定的評定群組名稱。 您可以建立評定和新評定群組，並且從現有評定複製資訊，這會在不同的評定群組中有效地建立該評定的重複項目。 封存評定會中斷該評定與評定群組之間的關係。 其他相關評定的任何進一步更新不會再反映於已封存評定中。
   
@@ -346,11 +346,11 @@ ms.locfileid: "44165964"
 有特定的系統管理功能，僅提供給租用戶系統管理員帳戶，且僅當以全域系統管理員身分登入時才會顯示。
   
 > [!NOTE]
-> 下拉式清單中受限制文件的權限存取可讓系統管理員提供使用者存取 Microsoft 在服務信任入口網站上共用的受限制文件。受限制的文件功能無法使用，但即將推出。 
+> The Access to Restricted Documents permission in the drop-down list will allow administrators to give users access to restricted documents that Microsoft shares on the Service Trust Portal. The Restricted Documents feature isn't available, but is coming soon. 
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>將合規性管理員角色指派給使用者
 
-每個合規性管理員角色都有不太相同的權限。您可以檢視指派給每個角色的權限、可以查看哪些使用者位於哪些角色中，以及透過服務信任入口網站新增使用者或從該角色中移除使用者，方法是選取 [系統管理員]**** 功能表項目，然後選擇 [設定]****。 
+Each Compliance Manager role has slightly different permissions. You can view the permissions assigned to each role, see which users are in which roles, and add or remove users from that role through the Service Trust Portal by selecting the **Admin** menu item, and then choosing **Settings**. 
   
 ![STP 系統功能表 - 選取的設定](../media/65a82b1b-d462-452f-988b-7e4263bd638e.png)
   
@@ -366,7 +366,7 @@ ms.locfileid: "44165964"
     
 5. 新增至每個角色的使用者會列在 [選取角色]**** 頁面上。 
     
-6. 若要將使用者新增至此角色，請按一下 [新增]****。在 [新增使用者]**** 對話方塊中，按一下使用者欄位。您可以捲動瀏覽可用的使用者清單，或根據您的搜尋字詞，開始輸入使用者名稱來篩選清單。按一下使用者以將該帳戶新增至要佈建的 [新增使用者]**** 清單。如果您想要同時新增多個使用者，開始輸入使用者名稱來篩選清單，然後按一下使用者以新增至清單。按一下 [儲存]**** 以佈建所選的角色給這些使用者。 
+6. To add users to this role, click **Add**. In the **Add Users** dialog, click the user field. You can scroll through the list of available users or begin typing the user name to filter the list based on your search term. Click the user to add that account to the **Add Users** list to be provisioned with that role. If you would like to add multiple users concurrently, begin typing a user name to filter the list, and then click the user to add to the list. Click **Save** to provision the selected role to these users. 
     
     ![合規性管理員 - 佈建角色 - 新增使用者](../media/2f386f82-2bf8-4e95-ab41-1724b752b508.png)
   
@@ -376,7 +376,7 @@ ms.locfileid: "44165964"
  
 ## <a name="user-privacy-settings"></a>使用者隱私權設定
 
-某些規定要求組織必須要能夠刪除使用者記錄資料。若要啟用這項，合規性管理員會提供 [使用者隱私權設定]**** 功能，可讓系統管理員： 
+Certain regulations require that an organization must be able to delete user history data. To enable this, Compliance Manager provides the **User Privacy Settings** functions, that allow administrators to: 
   
 - [使用者搜尋](#search-for-a-user)
 
@@ -396,7 +396,7 @@ ms.locfileid: "44165964"
     
 2. 當您輸入正確的使用者名稱時，按一下 [搜尋]****。 
     
-3. 如果找不到該使用者帳戶，「找不到使用者」錯誤訊息會顯示在頁面上。檢查使用者的電子郵件地址資訊、視需要修正，然後按一下 [搜尋]**** 再試一次。 
+3. If the user account is not found, the error message 'User not found' will be displayed on the page. Check the user's email address information, make corrections as necessary and click **Search** to try again. 
     
 4. 找到使用者帳戶時，按鈕的文字會從 [搜尋]**** 變更為 [清除]****，這表示傳回的使用者帳戶是額外功能的作業內容，將會顯示在下面，且執行這些功能將會套用到這個使用者帳戶。 
     
@@ -415,11 +415,11 @@ ms.locfileid: "44165964"
 3. 開啟文件以檢視報告資料。
     
 > [!NOTE]
-> 這並不是歷程記錄報告，會保留並顯示動作項目作業歷程記錄的狀態變更。所產生的報告是報告執行時所指派項目的控制項動作項目 (寫入報表的日期和時間戳記) 的快照。例如，如果針對相同的使用者重新產生此報告，動作項目的任何後續重新指派都將會導致不同的快照報告資料。 
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user. 
   
 ### <a name="reassign-action-items"></a>重新指派動作項目
 
-這項功能可讓組織移除使用者帳戶上任何使用中或未完成的相依性，方法是將所傳回使用者帳戶的所有動作項目擁有權 (其中同時包含作用中和已完成的動作項目) 重新指派給下面選取的新使用者。此動作不會變更已傳回使用者帳戶的文件上傳歷程記錄。 
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account. 
   
  若要將動作項目重新指派給其他使用者：
   
@@ -432,9 +432,9 @@ ms.locfileid: "44165964"
 4. 若要繼續，請按一下 [確定]****，否則請按一下 [取消]****。 
     
 > [!NOTE]
-> 所有的動作項目 (作用中及已完成) 將會指派給新選取的使用者。不過，此動作不會影響文件上傳歷程記；先前指派使用者所上傳的任何文件仍會顯示日期/時間和先前指派使用者的名稱。 
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
   
-變更文件上傳歷程記錄以移除先前指派的使用者必須以手動程序執行。在這種情況下，系統管理員必須：
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
   
 1. 開啟先前已下載的 [匯出] 報告。
   
@@ -446,17 +446,17 @@ ms.locfileid: "44165964"
   
 5. 刪除辨識存放庫中的文件。
   
-6. 重新上傳文件。文件現在會有新的上傳日期、時間和上傳者的使用者名稱。 
+6. Re-upload the document. The document will now have a new upload date, time and Uploaded By username. 
   
 ### <a name="delete-user-data-history"></a>刪除使用者資料歷程記錄
 
-這會將指派給所傳回使用者之所有動作項目的控制項動作項目設為「未指派」。這也會將所傳回使用者上傳的任何文件的上傳者值設為 [已移除使用者]
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
   
  若要刪除使用者帳戶動作項目和文件上傳記錄：
   
 1. 按一下 [刪除]****。 
 
-    確認對話方塊將會出現，指出「這會將所有控制項動作項目作業和所選取使用者的文件上傳歷程記錄移除。這個動作無法復原。是否確定要繼續？」
+    A confirmation dialog will be displayed, stating "This will remove all control action item assignments and the document upload history for the selected user. This action cannot be undone. Are you sure you want to continue?"
     
 3. 若要繼續，請按一下 [確定]****，否則請按一下 [取消]****。 
   
@@ -468,7 +468,7 @@ ms.locfileid: "44165964"
 
 ## <a name="accessing-compliance-manager"></a>存取合規性管理員
 
-您可以從服務信任入口網站存取合規性管理員。任何人只要有 Microsoft 帳戶或 Azure Active Directory 組織帳戶都可以存取合規性管理員。
+You access Compliance Manager from the Service Trust Portal. Anyone with a Microsoft account or Azure Active Directory organizational account can access Compliance Manager.
   
 ![合規性管理員 - 從 STP 功能表存取合規性管理員](../media/14be4cac-2380-49bc-9b36-210da8cafdfa.png)
   
@@ -478,7 +478,7 @@ ms.locfileid: "44165964"
     
 3. 在服務信任入口網站中，按一下 [合規性管理員]****。 
     
-4. 顯示保密協議之後，請閱讀，然後按一下 [同意]**** 以繼續進行。您僅需執行此動作，隨即會顯示合規性管理員儀表板。 
+4. When the Non-Disclosure Agreement is displayed, read it, and then click **Agree** to continue. You'll only have to do this once, and then the Compliance Manager dashboard is displayed. 
 
     為協助您快速上手，我們依預設新增了下列「評估」：
     
@@ -498,7 +498,7 @@ ms.locfileid: "44165964"
     
 2. 按一下 [動作項目]**** 連結，而頁面會重新整理以顯示已指派給您的動作項目。 
     
-    根據預設，會顯示所有的動作項目。如果您有多個認證的動作項目，就會在評估控制項最上方的索引標籤中列出認證的名稱。若要查看特定憑證的動作項目，請按一下該索引標籤。
+    By default, all action items are shown. If you have action items across multiple certifications, the names of the certifications will be listed in tabs across the top of the assessment control. To see the action items for a specific certification, click that tab.
 
 ## <a name="adding-an-assessment"></a>新增評估
 
@@ -506,7 +506,7 @@ ms.locfileid: "44165964"
   
 1. 在合規性管理員儀表板中，按一下 [新增圖示]![](../media/ITPro-EAC-AddIcon.gif)[新增評估]****。 
     
-2. 在 [新增評估]**** 視窗中，您可以建立要新增「評估」的新群組，或將其新增至現有的群組 (內建的群組稱為「初始群組」)。根據您所選擇的選項，請輸入新群組的名稱，或從下拉式清單中選取現有的群組。如需詳細資訊，請參閱[群組評估](#grouping-assessments)。
+2. In the **Add an Assessment** window, you can create a new group to add the Assessment to or you can add it to an existing group (the built-in group is named "Initial Group".) Depending on the option you choose, either type the name of a new group or select an existing group from the drop-down list. For more information, see [Grouping Assessments](#grouping-assessments).
     
     如果您建立群組，您也可以選擇從現有群組將資訊複製到新評定。 也就是說，已從您正在複製群組中的評定新增到客戶管理控制項的實作詳細資料和測試計劃和管理回應欄位的任何資訊，都會複製到新評定中的相同 (或相關) 的客戶管理控制項。 如果您正在將新評定新增到現有群組，來自該群組中的評定的通用資訊將會複製到新評定。 如需詳細資訊，請參閱[從現有的評定複製資訊](#copying-information-from-existing-assessments)。
     
@@ -532,7 +532,7 @@ ms.locfileid: "44165964"
   
 您可以將下列客戶資訊複製到新的「評估」：
   
-- 評估使用者。「評估」使用者是控制項指派對象的使用者。
+- Assessment Users. An Assessment user is a user who the control is assigned to.
     
 - 狀態、日期測試和測試結果。
     
@@ -548,7 +548,7 @@ ms.locfileid: "44165964"
   
 1. 此區段會顯示「評估」摘要資訊，包括「評估群組」的名稱、「產品」、「評估名稱」、評估控制項的數目
     
-2. 本節會顯示「評估篩選器」控制項。如需如何使用「評估篩選器」控制項的更詳細說明，請參閱[管理評估程序](#managing-the-assessment-process)一節。 
+2. This section shows the Assessment Filter controls. For a more detailed explanation of how to use the Assessment Filter controls see the [Managing the assessment process](#managing-the-assessment-process) section. 
     
 3. 本節會顯示評估範圍內的個別雲端服務。
     
@@ -584,19 +584,19 @@ ms.locfileid: "44165964"
     
     - **測試結果** - 傳回所選取測試結果的控制項清單。 
     
-    當您套用篩選條件時，適用控制項的檢視會變更以對應至您的篩選條件。展開控制項系列區段以在下方顯示控制項詳細資料。 
+    As you apply filter conditions, the view of applicable controls will change to correspond to your filter conditions. Expand the control family sections to show the control details below. 
     
     ![合規性管理員評估檢視 - 篩選文章結果](../media/e6485d45-d47f-4b25-8b1c-b3c2ee4a8328.png)
   
-2. 如果選取想要的篩選而沒有顯示結果，這表示沒有對應到指定篩選條件的控制項。例如，如果您選取特定 [指派的使用者]****，然後選擇 [控制]**** 名稱未對應至指派給該使用者的控制項，下方的頁面中不會顯示評估。 
+2. If after selecting the desired filters no results are shown, that means there are no controls that correspond to the specified filter conditions. For instance, if you select a particular **Assigned User** and then choose a **Control** name that does correspond to the control assigned to that user, no assessments will be shown in the page below. 
     
-3. **將動作項目指派給使用者** - 您可以指定動作項目給人員，來實作憑證/規定的需求，或是測試、確認及記錄貴組織的實作需求。當您指派動作項目時，可以選擇傳送電子郵件給人員，當中包含建議的客戶動作和動作項目優先順序的詳細資料。您也可以解除指派或重新指派動作項目給其他人員。 
+3. **Assign an Action Item to a user** - You can assign an Action Item to a person to implement the requirements of a certification/regulation, or to test, verify, and document your organization's implementation requirements. When you assign an Action Item, you can choose to send an email to the person that contains details including the recommended Customer Actions and the Action Item priority. You can also unassign or reassign an Action Item to a different person. 
     
 4. **管理文件**：客戶管理的控制項也有一個管理與執行實作工作相關文件的位置，而且可用於執行測試和驗證工作。 凡是擁有合規性管理員中的資料編輯權限的任何人員，只要按一下 [管理文件]****，就可以上傳文件。 文件上傳完畢後，您可以按一下 [管理文件]**** 來檢視和下載檔案。 
     
 5. **提供實作和測試詳細資料** - 每個客戶管理控制項都有可編輯的欄位，使用者可以在其中新增記錄貴組織為符合憑證/規定需求所採取步驟的實作詳細資料，並驗證及記錄貴組織符合這些需求的方式。
     
-6. **設定狀態** - 在評估程序進行期間設定每個項目的狀態。可用的狀態值是 [已實作]****、[替代實作]****、[已計劃]**** 和 [範圍以外]****。 
+6. **Set Status** - Set the Status for each item as part of the assessment process. Available status values are **Implemented**, **Alternative Implementation**, **Planned**, and **Not in Scope**. 
     
 7. **輸入測試日期和測試結果**：具有合規性管理員評估員角色的人員可以驗證是否已執行適當的測試、檢閱實作詳細資料、測試計劃、測試結果，以及任何上傳的證據，然後設定測試日期和測試結果。 可用的測試結果值包括 [通過]****、[失敗 - 低風險]****、[失敗 - 中度風險]**** 和 [失敗 - 高風險]****。 
 
@@ -604,7 +604,7 @@ ms.locfileid: "44165964"
 
 貴組織中參與評定程序的人員可以從他們身為使用者的所有評定中，使用合規性管理員來檢閱客戶管理的控制項。 當使用者登入「合規性管理員」並開啟 [動作項目]**** 儀表板時，會顯示指派給他們的 [動作項目] 清單。 視使用者獲派的合規性管理員角色而定，他們可以提供實作或測試詳細資料、更新狀態，或是指派動作項目。 
   
-因為憑證控制項通常是由一個人員實作並由另一個人員測試，控制項動作項目初始會指派給一個人員進行實作，一旦完成後，該人員可以重新指派控制項動作項目給下一個人員進行控制項測試並上傳辨識項。指派/重新指派此控制項動作可由具有合規性管理員角色且有足夠權限的任何使用者執行，允許集中管理控制項指派、或分散的路由控制項動作項目，適當從實作者到測試者。
+As certification controls are generally implemented by one person and tested by another, the control action item can be initially assigned to one person for implementation, and once that is complete, that person can reassign the control action item to the next person for control testing and uploading of evidence. This assignment/reassignment of control actions can be performed by any users who have a Compliance Manager role with sufficient permissions, allowing for central management of control assignments, or decentralized routing of control action items, from implementer to tester as appropriate.
   
 若要指派動作項目：
   
@@ -616,7 +616,7 @@ ms.locfileid: "44165964"
     
 4. 在 [指派的使用者]**** 欄中，按一下 [指派]****。 
     
-5. 在 [指定動作項目] 對話方塊中，按一下 [指派至]**** 填入收件者可以指定動作的使用者清單的欄位。您可以捲動清單以找出目標使用者，或開始在欄位中輸入以搜尋使用者名稱。 
+5. In the Assign Action Item dialog box, click the **Assign To** field to populate the list of users to whom the action can be assigned. You can scroll through the list to find the target user or start typing in the field to search for the username. 
     
 6. 按一下使用者以指派此動作項目給他們。
     
@@ -626,7 +626,7 @@ ms.locfileid: "44165964"
  
     使用者會收到其動作項目指派的通知和任何您所提供的附註。
     
-動作項目相關聯的附註會保存在附註區段中，可供下一次指派動作項目時使用。這些記錄不是唯讀狀態，指派動作項目的人員可加以編輯、取代或移除。
+The notes that are associated with the action item are persisted in the notes section, available for the next time the action item is assigned. These notes are not read-only, can be edited, replaced or removed by the person assigning the action item.
 
 ## <a name="exporting-information-from-an-assessment"></a>從評估中匯出資訊
 
@@ -640,14 +640,14 @@ ms.locfileid: "44165964"
     
 - 如果您正在檢視 [評定詳細資料] 頁面，請按一下 [匯出至 Excel]**** 按鈕，位於評定合規性分數上方的頁面右上角。
     
-會在您的瀏覽器工作階段中下載評估報告。如果您沒有看到快顯功能表告知您這個，可能需要檢查您瀏覽器的下載項目資料夾。
+The assessment report will be downloaded in your browser session. If you don't see a popup informing you of this, you may wish to check your browser's downloads folder.
 
 ## <a name="archiving-an-assessment"></a>封存評估
 
-當您完成評估且不再需要它進行合規性目的時，可以進行封存。封存「評估」時，就會從「評估」儀表板中移除。
+When you have completed an Assessment and no longer need it for compliance purposes, you can archive it. When an Assessment is archived, it is removed from Assessments dashboard.
   
 > [!NOTE]
-> 封存「評估」時，就無法「取消封存」或還原到讀寫進度狀態。請注意，封存評估不會保留已上傳辨識項目文件的連結，強烈建議您封存之前執行「匯出評估」，因為匯出的評估報告會包含辨識項文件的連結，讓您可以繼續存取這些內容。 
+> When an Assessment is Archived, it cannot be 'unarchived' or restored to a read-write in progress state. Please note that Archived Assessments do not retain their links to uploaded evidence documents, so it is highly recommended that you perform an Export of the Assessment before archiving it, as the exported assessment report will contain links to the evidence documents, enabling you to continue to access them. 
   
 若要封存評估：
   
@@ -673,9 +673,9 @@ ms.locfileid: "44165964"
 
 ![服務信任入口網站 - 搜尋輸入欄位](../media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-按一下頁面右上角的放大鏡，以展開 [搜尋] 輸入欄位，輸入您的搜尋字詞，然後按 Enter。搜尋控制項隨即出現，並在 [搜尋] 窗格輸入欄位中出現搜尋字詞，搜尋結果會顯示在下方。
+Click the magnifying glass in the upper right-hand corner of the page by to expand the Search input field, enter your search terms and press Enter. The Search control will appear, with the search term in the search pane input field, and search results will appear beneath.
   
-根據預設，搜尋會傳回文件結果，且您可使用 [篩選條件] 下拉式清單來調整所顯示的文件清單，以從檢視中新增或移除搜尋結果。您可以同時使用多個篩選條件屬性，將傳回的文件範圍縮小至特定雲端服務、合規性或安全性做法的類別、世界的區域或產業。按一下文件名稱連結來下載該文件。
+By default, Search returns Document results, and you can use the Filter By dropdown lists to refine the list of documents displayed, to add or remove search results from view. You can use multiple filter attributes at the same time to narrow the returned documents to specific cloud services, categories of compliance or security practices, regions of the world, or industries. Click the document name link to download the document.
   
 ![服務信任入口網站 - 套用篩選器搜尋文件](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
@@ -688,7 +688,7 @@ ms.locfileid: "44165964"
  
 ## <a name="localization-support"></a>當地語系化支援
 
-服務信任入口網站可讓您以不同語言檢視頁面內容。若要變更頁面的語言，只要按一下頁面左上角的地球圖示，然後選取您想要的語言。 
+Service Trust Portal enables you to view the page content in different languages. To change the page language, simply click on the globe icon in the lower left corner of the page and select the language of your choice. 
   
 ![服務信任入口網站 - 當地語系化的內容選項](../media/b50c677e-a886-4267-9eca-915d880ead7a.png)
 
@@ -697,9 +697,9 @@ ms.locfileid: "44165964"
 
 「合規性管理員」的設計是定期更新以便與法規需求變更保持一致，以及與我們的雲端服務變更保持一致。 這些更新包括對客戶管理控制項的變更。 我們會提供變更記錄檔，協助您了解這些變更的影響，包括新增或變更內容的詳細資料，以及變更對現有評定有何影響的指導方針。 通常有兩種類型的變更：
   
-- **主要**變更為客戶動作的重大變更，例如新增或移除控制項或特定編號的步驟，或變更責任、建議或辨識項的指導方針。建議您重新評估您的實作和/或受影響控制項的評估。
+- A **Major** change is a significant change to a Customer Action, such as the addition or removal of a control or specific numbered steps, or a change in the guidance around responsibilities, recommendations, or evidence. For Major changes, we recommend that you re-evaluate your implementation and/or assessment of the affected control.
     
-- **次要**變更是客戶動作的無意義變更，例如修正拼字錯誤或格式設定問題，或是更新或修正超連結。次要變更通常不需要重新評估控制項；不過，建議您檢閱更新的客戶動作。
+- A **Minor** change is an insignificant change to a Customer Actions, such as fixing a typo or formatting issues, or updating or correcting hyperlinks. Minor changes generally do not require the control to be re-evaluated; however, we do recommend that you review the updated Customer Action.
   
 ### <a name="customer-managed-controls---change-log-for-july-2018"></a>客戶管理控制項 - 2018 年 7 月的變更記錄
 
