@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 2fbb54cadaa1681ace4e04dade4fd5a0784360eb
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: d68ba3b4ee1c0de8fa5262c3b59e8f53ebc2d3d2
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739058"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844655"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -58,9 +58,11 @@ ms.locfileid: "44739058"
 
 合規性小組成員會建立敏感度標籤，這些成員需要 Microsoft 365 合規性中心、Microsoft 365 安全性中心或安全性與合規性中心的權限。 
 
-根據預設，您的租用戶的全域系統管理員可以存取這些系統管理中心，並且授與法務人員和其他人員存取權限，而不需授與他們租用戶系統管理員的所有權限。如需這個委派的受限系統管理員存取權，請移至其中一個系統管理中心的 [權限]**** 頁面，然後將成員新增至 [合規性資料系統管理員]****、[合規性系統管理員]**** 或 [安全性系統系統管理員]**** 角色群組。
+根據預設，您的租用戶的全域系統管理員可以存取這些系統管理中心，並且授與法務人員和其他人員存取權限，而不需授與他們租用戶系統管理員的所有權限。如需這個委派的受限系統管理員存取權，請將使用者新增至 [合規性資料系統管理員]****、[合規性系統管理員]**** 或 [安全性系統系統管理員]**** 角色群組。 
 
-除了使用角色以外，您可以建立新的角色群組，並將 [敏感度標籤系統管理員]**** 或 [組織組態]**** 角色新增至此群組。 唯讀角色請使用 [敏感度標籤讀取器]****。 如需相關指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+除了使用預設角色以外，您可以建立新的角色群組，並將 [敏感度標籤系統管理員]**** 或 [組織組態]**** 角色新增至此群組。 唯讀角色請使用 [敏感度標籤讀取器]****。 
+
+如需將使用者新增至預設角色或建立您自己的角色群組的指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
 只有建立及設定敏感度標籤及其標籤原則時，才需要這些權限。 您不需要在應用程式或服務中套用這些標籤。 如果與敏感度標籤相關的特定設定需要其他權限，則這些權限會列在個別的文件指示中。
 
