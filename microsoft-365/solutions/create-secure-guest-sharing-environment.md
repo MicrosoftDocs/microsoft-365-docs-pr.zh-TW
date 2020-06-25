@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，您將了解在 Microsoft 365 中建立安全的來賓共用環境的可用選項。
-ms.openlocfilehash: b567be8df8d0b9dc96400627c6607560fefd9c39
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 9997fee5c12b54642304270e379cd09ca75b5033
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159476"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874891"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>建立安全的來賓共用環境
 
@@ -40,7 +40,7 @@ ms.locfileid: "44159476"
 
 本文中所述的部分選項要求來賓在 Azure Active Directory 中擁有帳戶。 若要確保共用檔案和資料夾時目錄中包含來賓，請使用 [SharePoint 和 OneDrive 與 Azure AD B2B 整合 (預覽版)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)。
 
-請注意，我們不會在本文中討論啟用來賓共用設定。 如需針對不同案例啟用來賓共用的詳細資訊，請參閱[與組織外部人員共同作業](https://docs.microsoft.com/Office365/Enterprise/collaborate-with-people-outside-your-organization)。
+請注意，我們不會在本文中討論啟用來賓共用設定。 如需針對不同案例啟用來賓共用的詳細資訊，請參閱[與組織外部人員共同作業](collaborate-with-people-outside-your-organization.md)。
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>為來賓設定多重要素驗證
 
