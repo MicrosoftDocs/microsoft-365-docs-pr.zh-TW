@@ -1,7 +1,7 @@
 ---
-title: Advanced 搜尋架構中的 IdentityQueryEvents 表格
-description: 深入瞭解高級搜尋架構的 IdentityQueryEvents 資料表中的 Active Directory 查詢事件
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，表格，欄，資料類型，描述，IdentityQueryEvents，Azure AD，Active Directory，Azure ATP，identity，LDAP 查詢
+title: Advanced 搜尋架構中的 IdentityLogonEvents 表格
+description: 深入瞭解在高級搜尋架構的 IdentityLogonEvents 資料表中，由 Active Directory 記錄的驗證事件
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，表格，欄，資料類型，描述，IdentityLogonEvents，Azure AD，Active Directory，Azure ATP，身分識別
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,29 +17,28 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bec7f13d49e2ccf4e3a9121d5e5a2fecd1b10aa2
+ms.openlocfilehash: 17e12e9095219b7ad7923f7b5664946fff6ce724
 ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899110"
+ms.locfileid: "44899372"
 ---
-# <a name="identityqueryevents"></a>IdentityQueryEvents
+# <a name="identitylogonevents"></a>IdentityLogonEvents
 
 適用於：****
 - Microsoft 威脅防護
 
-[！附注] `IdentityQueryEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含針對 Active Directory 物件（如使用者、群組、裝置和網域）所執行之查詢的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `IdentityLogonEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含 Azure Active Directory 和其他 Microsoft 雲端 app 及服務所記錄的驗證活動相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
-| `ActionType` | string | 觸發事件的活動類型 |
+| `ActionType` | 字串 | 觸發事件的活動類型 |
+| `LogonType` | string | 登入會話的類型，特別：<br><br> - **互動式**使用者會使用本機鍵盤和畫面，以實際方式與機器互動<br><br> - **遠端互動（RDP）** 登入-使用者利用遠端桌面、終端機服務、遠端協助或其他 RDP 用戶端從遠端互動<br><br> - 使用 PsExec 存取機器時，或在機器上共用資源（如印表機和共用資料夾）存取時，所啟動的**網路**會話<br><br> - 由排程任務所啟動的**批次**會話<br><br> - **服務**-啟動時由服務啟動的會話 |
 | `Application` | string | 執行錄製動作的應用程式 |
-| `Query` | string | 查詢類型： QueryGroup、QueryUser 或 EnumerateUsers |
-| `QueryObject` | string | 所查詢的使用者、群組、裝置、網域或任何其他實體類型的名稱 |
 | `Protocol` | string | 通訊期間使用的通訊協定 |
 | `AccountName` | string | 帳戶的使用者名稱 |
 | `AccountDomain` | string | 帳戶的網域 |
@@ -47,9 +46,12 @@ ms.locfileid: "44899110"
 | `AccountSid` | string | 帳戶的安全性識別碼（SID） |
 | `AccountObjectId` | string | Azure AD 中帳戶的唯一識別碼 |
 | `AccountDisplayName` | string | 顯示在通訊錄中之帳戶使用者的名稱。 通常是指定的名稱或名字、中間初始名稱或姓氏的組合。 |
-| `DeviceName` | string | 端點的完整功能變數名稱（FQDN） |
+| `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
+| `DeviceType` | string | 裝置類型 |
+| `OSPlatform` | string | 電腦上執行的作業系統平台。 這表示特定作業系統，包括相同家族內的變化，例如 Windows 10 和 Windows 7。 |
 | `IPAddress` | string | 指派給端點的 IP 位址，並在相關的網路通訊期間使用 |
 | `Location` | string | 與事件關聯的城市、國家或其他地理位置 |
+| `Isp` | string | 與端點 IP 位址相關聯的網際網路服務提供者（ISP） |
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

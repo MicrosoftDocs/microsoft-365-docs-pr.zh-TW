@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3be6523372edcda520e05545c87385c0e1a42044
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: d5d666bef07c6ae8c5a43b641a8e7f6a11f5457a
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617115"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899252"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -69,7 +69,7 @@ ms.locfileid: "44617115"
 | `AppGuardContainerId` | string | Application Guard 用來隔離瀏覽器活動的虛擬容器識別碼 |
 
 ## <a name="related-topics"></a>相關主題
-- [主動威脅搜捕](advanced-hunting-overview.md)
+- [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
 - [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)

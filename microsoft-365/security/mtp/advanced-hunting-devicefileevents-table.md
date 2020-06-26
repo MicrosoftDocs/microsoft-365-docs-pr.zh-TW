@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4b815afbe8e3ca1f7967d13f6482b90f7c64e362
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 67749125d2f62f2774c36e6970cf8901b1fd5784
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617159"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899300"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -77,7 +77,7 @@ ms.locfileid: "44617159"
 | `IsAzureInfoProtectionApplied` | 布林值 | 指出檔案是否由 Azure 資訊保護所加密 |
 
 ## <a name="related-topics"></a>相關主題
-- [主動威脅搜捕](advanced-hunting-overview.md)
+- [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
 - [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)

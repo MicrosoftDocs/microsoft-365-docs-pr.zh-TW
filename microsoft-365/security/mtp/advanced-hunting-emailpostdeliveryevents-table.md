@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: f4b34abdbfcbd6c3a2f142001a3d486485c86fcd
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: f5c226b6028c845acc674ec0a0536727386c2380
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515912"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899384"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -56,7 +56,7 @@ ms.locfileid: "44515912"
 - **惡意程式碼 ZAP** –零小時自動清除（ZAP）採取的方式是在傳送後包含惡意程式碼的電子郵件上採取的動作。
 
 ## <a name="related-topics"></a>相關主題
-- [主動威脅搜捕](advanced-hunting-overview.md)
+- [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
 - [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)

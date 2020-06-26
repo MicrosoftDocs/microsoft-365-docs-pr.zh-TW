@@ -1,7 +1,7 @@
 ---
-title: DeviceInfo 資料表中的進階的狩獵結構描述
-description: 了解 OS、 電腦名稱，以及 DeviceInfo 表格中其他電腦資訊的進階的狩獵結構描述
-keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 machineinfo，DeviceInfo，裝置、 機器上，作業系統、 平台使用者
+title: Advanced 搜尋架構中的 DeviceInfo 表格
+description: 深入瞭解高級搜尋架構的 DeviceInfo 資料表中的作業系統、電腦名稱稱及其他機器資訊
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，資料表，欄，資料類型，描述，machineinfo，DeviceInfo，device，machine，OS，平臺，使用者
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 71bd9e9ff1dfb17e4a9266d9ee351799e18888c9
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 526e210a472862593f2652e9b2b21957702c48f0
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235022"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899276"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -31,7 +31,7 @@ ms.locfileid: "42235022"
 
 
 
-`DeviceInfo` [進階的狩獵](advanced-hunting-overview.md)結構描述中的表格包含機器在組織中，包括 OS 版本、 作用中使用者和電腦名稱的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `DeviceInfo` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含組織中電腦的相關資訊，包括作業系統版本、作用中使用者及電腦名稱稱。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -40,20 +40,20 @@ ms.locfileid: "42235022"
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
 | `DeviceId` | 字串 | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
-| `ClientVersion` | string | 端點代理程式或感應器在機器上執行的版本 |
-| `PublicIP` | string | 用來連線至 Microsoft Defender ATP 服務上架機器的公用 IP 位址。 這可能是電腦本身的 IP 位址、 NAT 裝置或 proxy |
+| `ClientVersion` | string | 電腦上執行的端點代理程式或感應器版本 |
+| `PublicIP` | string | 架電腦用來連接至 Microsoft Defender ATP 服務的公用 IP 位址。 這可以是電腦本身、NAT 裝置或 proxy 的 IP 位址 |
 | `OSArchitecture` | 字串 | 電腦上執行的作業系統架構。 |
-| `OSPlatform` | string | 電腦上執行的作業系統平台。 這表示特定的作業系統，包括在相同的系列，例如 Windows 10 和 Windows 7 的變化 |
-| `OSBuild` | string | 建置在機器上執行的作業系統版本 |
-| `IsAzureADJoined` | 布林值 | 布林值的電腦是否加入 Azure Active Directory 指示器 |
-| `LoggedOnUsers` | string | JSON 陣列格式中的事件次登入電腦的所有使用者的清單 |
-| `RegistryDeviceTag` | string | 機器標記新增到登錄 |
-| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，必須使用此資料行搭配 DeviceName 和時間戳記欄 |
+| `OSPlatform` | string | 電腦上執行的作業系統平台。 這表示特定作業系統（包括相同家族內的變化，例如 Windows 10 和 Windows 7） |
+| `OSBuild` | string | 電腦上所執行作業系統的組建版本 |
+| `IsAzureADJoined` | 布林值 | 對電腦是否加入 Azure Active Directory 的布林指標 |
+| `LoggedOnUsers` | string | 以 JSON 陣列格式出現事件時，在機器上記錄的所有使用者清單 |
+| `RegistryDeviceTag` | string | 透過登錄加入的電腦標記 |
+| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
 | `OSVersion` | string | 電腦上執行的作業系統版本。 |
-| `MachineGroup` | string | 電腦的電腦群組。 此群組決定機器的存取權限時，是由角色型存取控制 |
+| `MachineGroup` | string | 機器的電腦群組。 這個群組是由以角色為基礎的存取控制用來判斷對機器的存取權 |
 
 ## <a name="related-topics"></a>相關主題
-- [主動威脅搜捕](advanced-hunting-overview.md)
+- [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
 - [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)

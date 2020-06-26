@@ -17,19 +17,19 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: fcbd487aeed633176c86fd22bfcd156be02fea22
-ms.sourcegitcommit: b6c4b514b2cb6739af949780d7e2a5a5c8dcc161
+ms.openlocfilehash: cba27b5b43141c8c90f9a8bc7f70c55aabc1979d
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43900784"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899312"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
 適用於：****
 - Microsoft 威脅防護
 
-[ `DeviceFileCertificateInfo` ！附注][高級搜尋](advanced-hunting-overview.md)架構中的表格包含檔簽署憑證的相關資訊。 此表格使用從憑證驗證活動取得的資料，定期對端點上的檔案執行。
+[！附注] `DeviceFileCertificateInfo` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含檔簽署憑證的相關資訊。 此表格使用從憑證驗證活動取得的資料，定期對端點上的檔案執行。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -55,7 +55,7 @@ ms.locfileid: "43900784"
 | `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用。 | 
 
 ## <a name="related-topics"></a>相關主題
-- [主動威脅搜捕](advanced-hunting-overview.md)
+- [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
 - [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)

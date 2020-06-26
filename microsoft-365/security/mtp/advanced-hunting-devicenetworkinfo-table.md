@@ -1,7 +1,7 @@
 ---
-title: DeviceNetworkInfo 資料表中的進階的狩獵結構描述
-description: 了解 DeviceNetworkInfo 表格中的進階的狩獵結構描述的網路組態資訊
-keywords: 進階狩獵、 威脅狩獵、 網路威脅狩獵、 microsoft 威脅防護、 microsoft 365、 mtp、 m365、 搜尋、 查詢、 遙測、 結構描述參考、 kusto、 表格、 欄、 資料類型、 描述、 machinenetworkinfo，DeviceNetworkInfo，裝置]，機器、 mac、 ip、 介面卡、 dns、 dhcp、 閘道、 通道
+title: Advanced 搜尋架構中的 DeviceNetworkInfo 表格
+description: 深入瞭解高級搜尋架構的 DeviceNetworkInfo 資料表中的網路設定資訊
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema reference，kusto，table，column，data type，description，machinenetworkinfo，DeviceNetworkInfo，device，dhcp，adapter，隧道
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ce392ee074327114b0794edfeef9eb83091447d6
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 0fd6000f4d3a4b9fafb0eede74cbbe4e6c3d494e
+ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42234992"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44899240"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -31,7 +31,7 @@ ms.locfileid: "42234992"
 
 
 
-`DeviceNetworkInfo` [進階的狩獵](advanced-hunting-overview.md)結構描述中的表格包含機器，包括網路介面卡、 IP 與 MAC 位址，並已連線的網路或網域的網路組態的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `DeviceNetworkInfo` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含電腦網路設定的相關資訊，包括網路介面卡、IP 及 MAC 位址，以及連線的網路或網域。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -40,21 +40,21 @@ ms.locfileid: "42234992"
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
 | `DeviceId` | 字串 | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
-| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，必須使用此資料行搭配 DeviceName 和時間戳記欄 |
+| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
 | `NetworkAdapterName` | string | 網路介面卡的名稱 |
 | `MacAddress` | string | 網路介面卡的 MAC 位址 |
-| `NetworkAdapterType` | string | 網路介面卡類型。 可能的值，請參閱[此列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
-| `NetworkAdapterStatus` | string | 網路介面卡的作業狀態。 可能的值，請參閱[此列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
-| `TunnelType` | string | 通道通訊協定，如果介面可用於此目的，例如 6to4、 Teredo、 ISATAP、 PPTP、 SSTP 及 SSH |
-| `ConnectedNetworks` | string | 網路介面卡所連接的連接。 每一個 JSON 陣列包含的網路名稱、 類別 （公用、 私用或網域）、 描述及旗標，指出是否它連線公開至網際網路 |
-| `DnsAddresses` | string | DNS 伺服器位址，以 JSON 陣列格式 |
+| `NetworkAdapterType` | string | 網路介面卡類型。 如需可能的值，請參閱[this 列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
+| `NetworkAdapterStatus` | string | 網路介面卡的運作狀態。 如需可能的值，請參閱[this 列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
+| `TunnelType` | string | 隧道通訊協定，如果此介面是用於此用途，例如6to4、Teredo、ISATAP、PPTP、SSTP 和 SSH |
+| `ConnectedNetworks` | string | 連接到配接器的網路。 每個 JSON 陣列都包含網路名稱、類別（public、private 或 domain）、描述，以及指出其是否已公開連接到網際網路的標誌。 |
+| `DnsAddresses` | string | JSON 陣列格式的 DNS 伺服器位址 |
 | `IPv4Dhcp` | string | DHCP 伺服器的 IPv4 位址 |
-| `IPv6Dhcp` | string | IPv6 位址的 DHCP 伺服器 |
-| `DefaultGateways` | string | 以 JSON 陣列格式的預設閘道地址 |
-| `IPAddresses` | string | JSON 陣列，其中包含所有指派給介面卡，以及其各自的子網路前置詞和 IP 位址空間，例如公用、 私用] 或連結-本機的 IP 位址 |
+| `IPv6Dhcp` | string | DHCP 伺服器的 IPv6 位址 |
+| `DefaultGateways` | string | 以 JSON 陣列格式的預設閘道位址 |
+| `IPAddresses` | string | 包含所有指派給該配接器之 IP 位址的 JSON 陣列，以及其各自的子網前置詞和 IP 位址空間，例如 public、private 或 link 本機。 |
 
 ## <a name="related-topics"></a>相關主題
-- [主動威脅搜捕](advanced-hunting-overview.md)
+- [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
 - [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
