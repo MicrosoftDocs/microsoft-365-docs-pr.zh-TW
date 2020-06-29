@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 您可以保留您想要的資料、刪除您不想要的資料，並將內容標示為記錄，以了解管理資料的保留標籤。
-ms.openlocfilehash: b7797c55c95845b35fc3d67275bf64920fa59574
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: dc6048fed07f6312d192cde5260b180605e3d4f2
+ms.sourcegitcommit: 92a6595b482396f44675c22221500703a5649dab
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817438"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44879299"
 ---
 # <a name="learn-about-retention-labels"></a>了解保留標籤
 
@@ -347,9 +347,9 @@ It's possible or even likely that content might have several retention policies 
 
 將保留標籤指派至內容後 (無論是由使用者指派或自動套用)，您可以使用「內容搜尋」，尋找以特定保留標籤分類的所有內容。
   
-當您建立內容搜尋時，請選擇 [合規性標籤]**** 條件，然後輸入完整的保留標籤名稱或是部分標籤名稱，再使用萬用字元。 如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
+當您建立內容搜尋時，請選擇 **[合規性標籤]** 條件，然後輸入完整的保留標籤名稱或是部分標籤名稱，再使用萬用字元。 如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
   
-![合規性標籤條件](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![合規性標籤條件](../media/compliance-label-condition.png)
   
 ## <a name="use-retention-labels-instead-of-older-features"></a>使用保留標籤，而非較舊的功能
 

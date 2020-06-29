@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 瞭解如何將系統管理員角色指派給您公司中的使用者或多位使用者，以便他們可以在系統管理中心執行特定工作。
-ms.openlocfilehash: 59fc2211051aa4f122462186753e7f626715722f
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cd50faf5db5e674e865e0913cae14a68a202bd1f
+ms.sourcegitcommit: 2e9e309ec09e5275ac6b3b425fba48a9ffce8eb2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780634"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44900773"
 ---
 # <a name="assign-admin-roles"></a>指派系統管理員角色
 
@@ -78,7 +78,7 @@ ms.locfileid: "44780634"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
 
 2. 在 [作用中**使用者**] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [**角色**] 旁的 [**編輯**]。 
 
@@ -90,7 +90,7 @@ ms.locfileid: "44780634"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 **[使用者]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
 
 2. 在 [作用中**使用者**] 頁面上，選取您要變更其系統管理員角色的使用者。 在彈出窗格中，選取 [**角色**] 旁的 [**編輯**]。
 
@@ -110,9 +110,9 @@ ms.locfileid: "44780634"
 ::: moniker range="o365-worldwide"
 
 
-## <a name="didnt-work-for-you"></a>無法運作嗎？
+## <a name="check-your-permissions"></a>檢查您的許可權
 
-您可能沒有適當的許可權，因此您沒有許可權指派系統管理員角色給其他使用者。 請委託其他系統管理員為您指派角色。
+您可能沒有適當的許可權可以指派系統管理員角色給其他使用者。 請檢查並確定您的許可權是否正確，或要求其他管理員為您指派角色。
 
 ::: moniker-end
 
@@ -120,8 +120,8 @@ ms.locfileid: "44780634"
 
 [關於 Microsoft 365 系統管理員角色](about-admin-roles.md)
 
+[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
 [使用 PowerShell 將角色指派給使用者帳戶](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [授權或移除夥伴關係](../misc/add-partner.md)
-
-[使用 Exchange 系統管理中心新增備選電子郵件地址](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
