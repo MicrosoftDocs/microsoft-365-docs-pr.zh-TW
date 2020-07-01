@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 請參閱本文，以深入瞭解如何在 Office 365 中啟用和設定特殊許可權存取管理。
-ms.openlocfilehash: cbb38c2edff0c85e24855e3f6a1613ad8a92043e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 4bae6d311b3447534165ee803d7094e5797a9b1c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036418"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936318"
 ---
 # <a name="get-started-with-privileged-access-management"></a>開始使用 Privileged Access Management
 
@@ -81,7 +81,7 @@ ms.locfileid: "44036418"
 
 1. 使用組織中的系統管理員帳號憑證，登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
 
-2. 在系統管理中心中，移至 [**群組** > ] [**新增群組**]。
+2. 在系統管理中心中，移至 [**群組**] [  >  **新增群組**]。
 
 3. 選取 [擁有**郵件功能的安全性群組**]，然後完成新群組的**名稱**、**群組電子郵件地址**及**描述**欄位。
 
@@ -99,7 +99,7 @@ ms.locfileid: "44036418"
 
 1. 使用組織中的系統管理員帳號憑證，登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
 
-2. 在系統管理中心中，移至 [**設定] > 設定 > 安全性 & 隱私權** > **許可權存取**]。
+2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
 3. 啟用 [對**特權任務需要核准**] 控制項。
 
@@ -134,7 +134,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 1. 使用組織中的系統管理員帳號憑證，登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
 
-2. 在系統管理中心中，移至 [**設定** > **安全性 & 隱私權** > 特殊**許可權存取**]。
+2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
 3. 選取 [**管理存取原則和要求**]。
 
@@ -180,7 +180,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 1. 使用您的認證登入[Microsoft 365 Admin Center](https://admin.microsoft.com) 。
 
-2. 在系統管理中心中，移至 [**設定** > **安全性 & 隱私權** > 特殊**許可權存取**]。
+2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
 3. 選取 [**管理存取原則和要求**]。
 
@@ -220,7 +220,7 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 1. 使用您的認證登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
 
-2. 在系統管理中心中，移至 [**設定** > **安全性 & 隱私權** > 特殊**許可權存取**]。
+2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
 3. 選取 [**管理存取原則和要求**]。
 
@@ -248,7 +248,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 1. 使用您的認證登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
 
-2. 在系統管理中心中，移至 [**設定** > **安全性 & 隱私權** > 特殊**許可權存取**]。
+2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
 3. 選取 [**管理存取原則和要求**]。
 
@@ -290,7 +290,7 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 1. 使用組織中的系統管理員帳號憑證，登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
 
-2. 在系統管理中心中，移至 [**設定** > **安全性 & 隱私權** > 特殊**許可權存取**]。
+2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
 3. 選取 [**管理存取原則和要求**]。
 
@@ -316,7 +316,7 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 1. 使用組織中的系統管理員帳戶的認證登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
 
-2. 在系統管理中心中，移至 [**設定** > **安全性 & 隱私權** > 特殊**許可權存取**]。
+2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
 3. 啟用 [**需要核准存取**許可權] 控制。
 

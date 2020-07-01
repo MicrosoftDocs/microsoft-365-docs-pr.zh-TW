@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: '深入瞭解 Advanced eDiscovery 中的公用程式，包括案例記錄、清除資料、處理常式錯誤、修改相關性及透明分析。  '
-ms.openlocfilehash: d4495920110916fdd5b07201d50080605ba177b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 深入瞭解 Advanced eDiscovery 中的公用程式，包括案例記錄、清除資料、處理常式錯誤、修改相關性及透明分析。
+ms.openlocfilehash: 4283bc7bea509c8a01fb45c433964230a5256f8a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633388"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936616"
 ---
 # <a name="use-advanced-ediscovery-classic-utilities"></a>使用進階電子文件探索 (傳統版) 公用程式
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在高級 eDiscovery 中顯示並可用的公用程式，取決於內容和使用者角色。
   
@@ -38,7 +38,7 @@ ms.locfileid: "43633388"
   
 1. 在功能表列中，按一下 [ **Cogwheel** ] 圖示。 
     
-2. 在 [**設定與實用\>程式公用程式**] 索引標籤中，選取 [**案例\>記錄檔設定**]。
+2. 在 [**設定與實用 \> 程式公用程式**] 索引標籤中，選取 [**案例記錄檔 \> 設定**]。
     
 3. 選取**記錄層級**，如下所示： 
     
@@ -57,7 +57,7 @@ ms.locfileid: "43633388"
   
 1. 在功能表列中，按一下 [ **Cogwheel** ] 圖示。 
     
-2. 在 [**設定與實用\>程式公用程式**] 索引標籤中，選取 [**清除\>資料安裝**]。
+2. 在 [**設定與實用 \> 程式公用程式**] 索引標籤中，選取 [**清除資料 \> 安裝**]。
     
 3. 選取要初始化的資訊選項：
     
@@ -77,7 +77,7 @@ ms.locfileid: "43633388"
   
 1. 在功能表列中，按一下 [ **Cogwheel** ] 圖示。 
     
-2. 在 [**設定與實用\>程式公用程式**] 索引標籤中，選取 [**修改相關性**]。
+2. 在 [**設定與實用 \> 程式公用程式**] 索引標籤中，選取 [**修改相關性**]。
     
 3. 從選項中選取： 
     
@@ -99,7 +99,7 @@ ms.locfileid: "43633388"
   
 1. 在功能表列中，按一下 [ **Cogwheel** ] 圖示。 
     
-2. 在 [**設定與實用\>程式公用程式**] 索引標籤中，選取 [**透明度\>分析設定**]。
+2. 在 [**設定與實用 \> 程式公用程式**] 索引標籤中，選取 [**透明度分析 \> 設定**]。
     
 3. 在 * * 檔識別碼 * * 中，輸入要處理之檔案的檔案識別碼。
     

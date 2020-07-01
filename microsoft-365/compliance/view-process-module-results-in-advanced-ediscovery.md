@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: '瞭解如何在高級 eDiscovery 中尋找處理模組的結果，包括任務狀態和流程摘要。  '
-ms.openlocfilehash: b7b88ed291236330c87c96d24fa6f1c22fb3d773
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解如何在高級 eDiscovery 中尋找處理模組的結果，包括任務狀態和流程摘要。
+ms.openlocfilehash: 26ef87c762fc5c77f2374978bf4a425940dd5f37
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626309"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936166"
 ---
 # <a name="view-process-module-results-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中查看進程模組結果
 
-啟動**準備** \> **程式後**，您可以查看進度和結果。 
+啟動**準備** \> **Process**程式後，您可以查看進度和結果。 
   
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="process-task-status"></a>進程任務狀態
 
@@ -64,7 +64,7 @@ ms.locfileid: "43626309"
   
 ## <a name="process-summary"></a>進程摘要
 
-在 [ \>準備\>處理\>結果] 流程摘要中，會根據成功的檔案處理及錯誤結果，顯示已載入檔案結果的分解。
+在 [準備 \> 處理 \> 結果] \> 流程摘要中，會根據成功的檔案處理及錯誤結果，顯示已載入檔案結果的分解。
   
 此窗格呈現匯入的檔案統計資料的圖形顯示，如下所示：
   
@@ -104,7 +104,7 @@ ms.locfileid: "43626309"
     
 ## <a name="last-process-errors"></a>最後處理常式錯誤
 
-在 [ \>準備\>處理\>結果] 中，會顯示最後一個會話或執行的錯誤詳細資料中的處理常式錯誤。
+在 [準備 \> 處理結果] 中 \> \> ，會顯示最後一個會話或執行的錯誤詳細資料中的處理常式錯誤。
   
 ![處理序模組錯誤](../media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   

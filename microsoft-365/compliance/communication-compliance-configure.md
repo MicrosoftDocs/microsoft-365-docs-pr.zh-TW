@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: aa4ff0d41a61be0bf75c7943082a6ed75e3ded37
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 8ec31bb08933ba9c1f0cc264bafc8d39bf64a003
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689287"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936848"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
@@ -98,6 +98,11 @@ ms.locfileid: "44689287"
   
 當您指派原則中的通訊群組時，該原則會監控通訊群組中每個使用者的所有電子郵件。 當您在原則中指派 Microsoft 365 群組時，該原則會監控傳送給該群組的所有電子郵件，而不是每個群組成員所收到的個別電子郵件。
 
+如果您是具有 Exchange 內部部署或外部電子郵件提供者的組織，且您想要監視小組聊天中的使用者，則必須為使用內部部署或外部信箱進行監視的使用者建立通訊群組。 在上述步驟中，您會將此通訊群組指派為 [原則嚮導] 中的 [授與**群組**] 選擇。
+
+>[!IMPORTANT]
+>您必須將 Microsoft 支援檔的要求記錄為可讓您的組織在安全性 & 合規性中心使用圖形使用者介面，針對內部部署使用者搜尋小組聊天資料。 如需詳細資訊，請參閱針對[內部部署使用者搜尋雲端架構信箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
+
 如需設定群組的詳細資訊，請參閱：
 
 - [建立並管理通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
@@ -144,7 +149,7 @@ ms.locfileid: "44689287"
     - 選擇是否要啟用分類器。 分類器可以偵測電子郵件訊息或其他類型的文字中傳送或接收的不適當語言。
 
     >[!CAUTION]
-    >我們正在取代**冒犯性語言**內建的分類符，因為它所產生的是大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
+    >我們正在淘汰 [粗穢言語]**** 內建分類器，因為這個分類器產生了大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
 
     - 定義要複查的通訊百分比。
     - 檢查您的原則選擇並建立原則。

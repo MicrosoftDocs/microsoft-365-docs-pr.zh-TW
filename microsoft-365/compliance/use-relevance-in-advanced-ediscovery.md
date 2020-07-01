@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: '深入瞭解「高級 eDiscovery」中的相關性模組，包括工作流程和指導方針，以及訓練和檔案檢查的步驟。  '
-ms.openlocfilehash: 9fa588a139c992c8f67c99c8e02ff4a8540694b1
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 深入瞭解「高級 eDiscovery」中的相關性模組，包括工作流程和指導方針，以及訓練和檔案檢查的步驟。
+ms.openlocfilehash: 8d5cbfff2b205ba785cda269bb09560b2a813f3c
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626389"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936606"
 ---
 # <a name="use-the-relevance-module-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中使用相關性模組
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在 [Advanced eDiscovery] 中，相關性模組包含與案例相關的相關性訓練和評論。 相關性工作流程的顯示和描述如下：
   
@@ -90,7 +90,7 @@ ms.locfileid: "43626389"
     
 ## <a name="steps-in-relevance-training"></a>相關訓練中的步驟
 
-在 [**相關性\>追蹤**] 索引標籤中，Advanced eDiscovery 提供如何在處理過程中進行處理的建議，以及下列後續步驟。 在下列每個步驟都建議使用相關性訓練程式時，說明下列各項的含義。 
+在 [**相關性 \> 追蹤**] 索引標籤中，Advanced eDiscovery 提供如何在處理過程中進行處理的建議，以及下列後續步驟。 在下列每個步驟都建議使用相關性訓練程式時，說明下列各項的含義。 
   
 - 標記/繼續標記：在範例中每個檔案和問題的專家所執行的檔案檢查及相關性標記。
     

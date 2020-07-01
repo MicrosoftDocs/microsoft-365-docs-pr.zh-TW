@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: '瞭解使用高級電子檔探索來準備資料大小的案例檔案的指導方針。  '
-ms.openlocfilehash: c0c0b8c3477f8c3fdbe0437659a88f14fbcad1cd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解使用高級電子檔探索來準備資料大小的案例檔案的指導方針。
+ms.openlocfilehash: 5130bea7da8922fd7e98d07696ffde3930d2ce41
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626459"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936196"
 ---
 # <a name="run-the-process-module-in-advanced-ediscovery-classic"></a>在 [Advanced eDiscovery （古典）] 中執行進程模組
 
-在**準備** \> **過程**中，案例檔案會載入至高級 eDiscovery。 
+在**準備**過程中，案例檔案會載入至高級 eDiscovery \> ** **。 
   
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="guidelines-preparing-data-for-advanced-ediscovery"></a>指導方針：準備用於高級電子檔探索的資料
 
@@ -42,7 +42,7 @@ ms.locfileid: "43626459"
     
 - **檔案類型和名稱**：
     
-  - 「高級 eDiscovery」可以處理各種格式的檔，並將載入的原生檔案解壓縮成\*標準格式，例如。TXT、HTML 或。Xml。 文字檔的處理速度比原生檔案更快。 解壓縮的文字檔會儲存在 case 資料夾中。
+  - 「高級 eDiscovery」可以處理各種格式的檔，並將載入的原生檔案解壓縮成標準格式，例如 \* 。TXT、HTML 或。Xml。 文字檔的處理速度比原生檔案更快。 解壓縮的文字檔會儲存在 case 資料夾中。
     
   - 請勿載入無法解壓縮的檔案，例如系統檔案或圖形影像。 這些檔案可能會延遲處理。
     

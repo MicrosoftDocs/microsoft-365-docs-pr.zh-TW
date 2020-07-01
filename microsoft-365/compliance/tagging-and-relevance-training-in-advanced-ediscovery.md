@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: '在 [高級 eDiscovery] 的「相關性訓練」階段中，瞭解標記的步驟，然後再使用40檔案的訓練範例。  '
-ms.openlocfilehash: 8d03061401cab2014d33e9e3238af42a4d01738a
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 在 [高級 eDiscovery] 的「相關性訓練」階段中，瞭解標記的步驟，然後再使用40檔案的訓練範例。
+ms.openlocfilehash: 56ce30754e04d4a2adcf854093e603f93be5ae36
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636261"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936669"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>高級 eDiscovery （經典）中的標記和關聯性訓練
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 本主題說明使用高級 eDiscovery 相關性訓練模組的程式。 
   
@@ -34,7 +34,7 @@ ms.locfileid: "43636261"
   
 ## <a name="performing-relevance-training"></a>執行相關性訓練
 
-1. 在 [**相關性\> **標籤] 索引標籤中，預設會在左窗格中顯示 [標記] 窗格，並顯示範例檔案，一次顯示一個標記。 
+1. 在 [**相關性 \> **標籤] 索引標籤中，預設會在左窗格中顯示 [標記] 窗格，並顯示範例檔案，一次顯示一個標記。 
     
     ![相關性標籤面板](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
@@ -54,7 +54,7 @@ ms.locfileid: "43636261"
    
   - 如果有多個問題存在於檔案中，在標記一個問題之後，選取範圍就會移至下一個問題（如果有的話）。 
     
-  - 當醒目提示關鍵字（相關性設定\>高亮顯示關鍵字）時，系統管理員或案例管理員所定義的關鍵字，可協助識別標記時的相關檔案。 如果關鍵字具有雙底線，可按一下該關鍵字以顯示具有關鍵詞描述的工具提示。 
+  - 當醒目提示關鍵字（相關性設定高亮顯示關鍵字）時，系統管理員或案例管理員所定義的關鍵字 \> ，可協助識別標記時的相關檔案。 如果關鍵字具有雙底線，可按一下該關鍵字以顯示具有關鍵詞描述的工具提示。 
     
     （選用）在 **[卷**標] 索引標籤中，按一下 [**標記設定**] 以設定下列選項： 
     
@@ -76,9 +76,9 @@ ms.locfileid: "43636261"
     
 ## <a name="working-with-the-sample-files-list"></a>使用範例檔案清單
 
-範例檔案清單可讓您在訓練範例中查看檔案的清單，並在一或多個檔案上執行各種動作。 在 [**相關性** \>卷**標] 索引**標籤中，**範例**檔案左窗格會顯示範例檔案的清單，以進行評估、訓練、追趕及不一致的處理常式。 
+範例檔案清單可讓您在訓練範例中查看檔案的清單，並在一或多個檔案上執行各種動作。 在 [**相關性**標籤] 索引標籤中 \> **Tag** ，**範例**檔案左窗格會顯示範例檔案的清單，以進行評估、訓練、追趕及不一致的處理常式。 
   
-1. 在 [**相關性\>標記**] 索引標籤中，選取左窗格下拉式清單中的範例檔案。 範例檔案會列在左窗格中。 
+1. 在 [**相關性 \> 標記**] 索引標籤中，選取左窗格下拉式清單中的範例檔案。 範例檔案會列在左窗格中。 
     
     ![相關性標籤範例檔案清單](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   

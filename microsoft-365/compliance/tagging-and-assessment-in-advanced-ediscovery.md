@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
-description: '請參閱執行評估訓練的步驟，包括標記檔，以及在高級 eDiscovery 中查看評估結果。 '
-ms.openlocfilehash: ef09268da8f76a4775fa6209a11d9c670abe0f94
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 請參閱執行評估訓練的步驟，包括標記檔，以及在高級 eDiscovery 中查看評估結果。
+ms.openlocfilehash: 57e4e8da0dbeec5e1dba384ae0e62ffb6b3bb03a
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630690"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936690"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>高級 eDiscovery （經典）中的標記和評估
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 本節說明高級 eDiscovery 相關性評估模組的程式。 
   
 ## <a name="performing-assessment-training-and-analysis"></a>執行評估訓練和分析
 
-1. 在 [**相關性\>追蹤**] 索引標籤中，按一下 [**評估**] 以啟動案例評估。 
+1. 在 [**相關性 \> 追蹤**] 索引標籤中，按一下 [**評估**] 以啟動案例評估。 
     
     例如，在此程式中，會建立一個500檔的範例評估集，並顯示 [標籤] 索引標籤，其中包含 **[標記]** 面板、顯示的檔案內容及其他標記選項。 
     
@@ -121,7 +121,7 @@ ms.locfileid: "43630690"
 在缺少以統計為基礎的穩定化時，將會有較低的精確度和信賴等級的結果。 不過，當您不需要知道所找到之相關檔案的百分比時，可以使用這些結果來尋找相關檔案。 同樣地，這種狀態也可以用來訓練低豐富的問題，在此情況下，相關性分數可以加速與特定問題相關的檔案存取。
   
 > [!TIP]
-> 在 [**相關性\>追蹤**] 索引標籤中，展開的 [問題顯示] 中，可使用下列查看選項： > 建議的下一個步驟（如 **[下一步]）：** 按一下其右邊的 [**修改**] 按鈕，然後選取**下一個步驟**中的其他步驟，便可略過（每個問題）標記。 當評估進度指示器尚未完成時，評估會是下一個建議的選項，以標記更多評估檔案，並增加統計資料的準確性。 > 您可以變更錯誤邊界並評估其影響，方法是按一下 [**修改**]，然後在 [**評估層級] 對話方塊**中變更**目標誤差邊界，以進行召回評估**，然後按一下 [**更新值**]。 此外，在此對話方塊中，您可以按一下 [**高級**] 以查看高級選項。 > 您可以按一下 [ **view**] （查看）以查看其他評估層級統計資料及其影響。 在 [顯示的詳細結果] 對話方塊中，每個問題都有至少500標記的評估檔案，且至少有18個檔案標示為相關問題的統計資料。 
+> 在 [**相關性 \> 追蹤**] 索引標籤中，展開的 [問題顯示] 中，可使用下列查看選項： > 建議的下一個步驟（如 **[下一步]）：** 按一下其右邊的 [**修改**] 按鈕，然後選取**下一個步驟**中的其他步驟，便可略過（每個問題）標記。 當評估進度指示器尚未完成時，評估會是下一個建議的選項，以標記更多評估檔案，並增加統計資料的準確性。 > 您可以變更錯誤邊界並評估其影響，方法是按一下 [**修改**]，然後在 [**評估層級] 對話方塊**中變更**目標誤差邊界，以進行召回評估**，然後按一下 [**更新值**]。 此外，在此對話方塊中，您可以按一下 [**高級**] 以查看高級選項。 > 您可以按一下 [ **view**] （查看）以查看其他評估層級統計資料及其影響。 在 [顯示的詳細結果] 對話方塊中，每個問題都有至少500標記的評估檔案，且至少有18個檔案標示為相關問題的統計資料。 
   
 ## <a name="see-also"></a>請參閱
 

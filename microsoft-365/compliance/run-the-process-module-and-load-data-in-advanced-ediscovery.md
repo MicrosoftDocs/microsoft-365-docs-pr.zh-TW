@@ -15,14 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: '瞭解如何使用安全性與 &amp; 合規性中心存取高級 eDiscovery，並執行案例的處理模組。  '
+description: 瞭解如何使用安全性與 &amp; 合規性中心存取高級 eDiscovery，並執行案例的處理模組。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 47614e8bc25a376f9b51068c151a71e025e2f264
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 011a8448c36ac9f4726f13471c548b7bb2427000
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818902"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936156"
 ---
 # <a name="run-the-process-module-and-load-data-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中執行進程模組和載入資料
 

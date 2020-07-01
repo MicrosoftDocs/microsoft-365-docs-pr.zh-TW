@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 判斷您的承租人和使用者是否符合需求，讓您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: 4b9ca7213f36440114d39ef491fe934f13ca96ea
-ms.sourcegitcommit: f80c6c52e5b08290f74baec1d64c4070046c32e4
+ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44717270"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936440"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷集中式部署的增益集是否適用于您的組織
 
@@ -40,16 +40,12 @@ ms.locfileid: "44717270"
 
 [集中式部署] 不支援下列項目：
   
-- 目標鎖定為 Office 2013 中的 Word、Excel 或 PowerPoint 的增益集
-    
+- 目標鎖定為 Office 2013 中的 Word、Excel 或 PowerPoint 的增益集 
 - 內部部署目錄服務
-    
+- 增益集部署至部署信箱的 Exchange
 - 將增益集部署到 SharePoint  
-
 - 小組應用程式
-   
 - 部署元件物件模型 (COM) 或 Visual Studio Tools for Office (VSTO) 增益集
-    
 - 不包含 Exchange 的 Microsoft 365 部署（例如 Microsoft 365 應用程式的企業版）
 
 ### <a name="office-requirements"></a>Office 需求

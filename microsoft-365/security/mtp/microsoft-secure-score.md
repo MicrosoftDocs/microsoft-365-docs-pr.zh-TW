@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 44ba7a1c877580f31ca858f7fefcc502e0bb8beb
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 23938dc78c498af76267233c8ad38dd909d56400
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844621"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936626"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -56,6 +56,19 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 ### <a name="products-included-in-secure-score"></a>安全分數中包含的產品
 
 目前有 Microsoft 365 （包括 Exchange Online）、Azure AD、Microsoft Defender ATP、Azure ATP 和 Cloud App Security 的建議。 即將推出其他安全性產品的建議。 建議不會涵蓋與各項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商或替代範圍的緩解。
+
+### <a name="security-defaults"></a>安全性預設
+
+Microsoft 安全分數已更新改進動作，以支援[Azure Active Directory 中的安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)，如此可讓您的組織使用預先設定的安全性設定進行常見的攻擊，以協助保護您的組織。
+
+如果您開啟安全性預設值，您會獲得下列改進動作的完整得分：
+
+- 確定所有使用者均可完成安全存取的多重要素驗證（9點）
+- 需要對管理角色進行 MFA （10點）
+- 啟用原則以封鎖舊版驗證（7點）
+
+>[!IMPORTANT]
+>安全性預設值包括可提供類似安全性的安全性功能，以「登入風險原則」和「使用者風險原則」改進動作。 我們建議您將這些原則的安全性設定更新為「透過替代的緩解」來解決，而不是在安全性預設的上方進行。
 
 ## <a name="required-permissions"></a>必要的權限
 

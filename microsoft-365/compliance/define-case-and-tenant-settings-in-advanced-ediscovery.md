@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
-description: '深入瞭解您可以在高級 eDiscovery 的案例層級定義的標籤、跨模組和租使用者設定。  '
-ms.openlocfilehash: b4092c7fd60b9ae82e4f97edcfa7f4aaf60ac622
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 深入瞭解您可以在高級 eDiscovery 的案例層級定義的標籤、跨模組和租使用者設定。
+ms.openlocfilehash: 6b0030e30e5e3a4f4c77fbcb5fcbd75bf63c1ea8
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630560"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936420"
 ---
 # <a name="define-case-and-tenant-settings-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中定義案例與租使用者設定
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 本主題將說明「高級 eDiscovery 案例」和「租使用者」設定。
   
@@ -44,7 +44,7 @@ ms.locfileid: "43630560"
     
 - 檔案顯示名稱：會顯示在整個高級 eDiscovery 中以識別檔案的檔案識別碼，也就是檔標題/路徑或電子郵件主旨的高級電子檔顯示名稱的替代方式。
     
-1. 按一下**Cogwheel**圖示，開啟 [**設定] 和 [公用程式**]。 開啟**設定和公用程式\> Case 設定**] \>索引標籤**跨模組**。 
+1. 按一下**Cogwheel**圖示，開啟 [**設定] 和 [公用程式**]。 開啟**設定和公用程式 \> Case 設定**] 索引標籤 \> **跨模組**。 
     
 2. 在 **[登入選項之後從預設頁面**中選取： 
     
@@ -52,7 +52,7 @@ ms.locfileid: "43630560"
     
   - **案例頁面**
     
-3. 按一下 [儲存]****。
+3. 按一下 **[儲存]**。
     
 ## <a name="tenant-settings"></a>租用戶設定
 
@@ -68,7 +68,7 @@ ms.locfileid: "43630560"
   
 1. 按一下**Cogwheel**圖示，開啟 [**設定] 和 [公用程式**]。 
     
-2. 在 [**設定與公用程式\>租使用者設定**] 索引標籤中，選取 [**事件記錄**]。 隨即會顯示事件記錄檔資料。
+2. 在 [**設定與公用程式 \> 租使用者設定**] 索引標籤中，選取 [**事件記錄**]。 隨即會顯示事件記錄檔資料。
     
   - 若要以案例篩選記錄輸出，請從 [**案例**] 清單中選取案例。 
     
@@ -76,7 +76,7 @@ ms.locfileid: "43630560"
     
   - 若要修改欄順序，請按一下並拖曳欄標題。
     
-  - 若要在記錄頁面之間移動**\>** ， **\<** 請按一下 [與圖示]。 
+  - 若要在記錄頁面之間移動，請按一下 [ **\>** 與 **\<** 圖示]。 
     
 ### <a name="system-information"></a>系統資訊
 
@@ -84,7 +84,7 @@ ms.locfileid: "43630560"
   
 1. 按一下**Cogwheel**圖示，開啟 [**設定] 和 [公用程式**]。 
     
-2. 在 [**設定與公用程式\>租使用者設定**] 索引標籤中，選取 [**系統資訊**]。 隨即會顯示版本資訊。
+2. 在 [**設定與公用程式 \> 租使用者設定**] 索引標籤中，選取 [**系統資訊**]。 隨即會顯示版本資訊。
     
 您可以按一下承租人資訊下方的 [重新整理]**圖示，以**更新顯示。 
   

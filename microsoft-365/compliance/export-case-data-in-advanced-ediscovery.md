@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: '瞭解使用「高級 eDiscovery」中的匯出程式匯出 eDiscovery 案例資料和結果以供複查的指導方針。  '
+description: 瞭解使用「高級 eDiscovery」中的匯出程式匯出 eDiscovery 案例資料和結果以供複查的指導方針。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 88be4a96720aee2392b6e0972919997f8634054b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ef717ca82962417856c65cae605c445971b27256
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817762"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936410"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中匯出案例資料
 

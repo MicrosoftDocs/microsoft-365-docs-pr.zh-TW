@@ -15,13 +15,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: '瞭解如何使用安全性 &amp; 與合規性中心，準備要使用高級 eDiscovery 進行分析的資料。 '
-ms.openlocfilehash: cf6ace4f88aa18790495b79ed3aa22ebeda75545
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+description: 瞭解如何使用安全性 &amp; 與合規性中心，準備要使用高級 eDiscovery 進行分析的資料。
+ms.openlocfilehash: 3c9d237a3a9c04a443730143998324a7831f2998
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412822"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936328"
 ---
 # <a name="prepare-data-for-advanced-ediscovery-classic"></a>準備資料以供高級 eDiscovery （經典）
 
@@ -51,7 +51,7 @@ ms.locfileid: "44412822"
     
 4. 在 [高級 eDiscovery] 中，按一下您想要在其中載入資料之案例旁邊的 [**開啟**]。 
     
-5. 在案例的**首頁**上，按一下 [**切換至高級 eDiscovery**]。 
+5. 在案例的 [首頁]**** 頁面上，按一下 [切換至進階電子文件探索]****。 
     
     ![按一下 [切換至高級 eDiscovery]，以在 [高級 eDiscovery] 中開啟案例。](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

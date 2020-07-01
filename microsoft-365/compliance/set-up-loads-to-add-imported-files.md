@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: '在 [高級 eDiscovery] 中執行相關性訓練之前，請先參閱步驟，將匯入的檔案新增至檔案的最後一個已定義的負載（或批次處理）。  '
-ms.openlocfilehash: 7914013d21cfd7bba0e474a0e8d831bcfad0239d
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 在 [高級 eDiscovery] 中執行相關性訓練之前，請先參閱步驟，將匯入的檔案新增至檔案的最後一個已定義的負載（或批次處理）。
+ms.openlocfilehash: fc05111d9193a935158b4b00a14717877ae148a7
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636291"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936814"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>在 [Advanced eDiscovery （傳統）] 中設定載入匯入檔案的負載
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在 [Advanced eDiscovery] 中，load 是新增至案例的新批次檔案。 依預設，會定義一個負載，並新增所有匯入的檔案。 在執行相關性訓練之前，必須先將匯入的檔案新增到負載中。 
   
@@ -40,7 +40,7 @@ ms.locfileid: "43636291"
 
 所有匯入的檔案必須新增至要在高級 eDiscovery 中處理的負載。 匯入的檔案會新增至最後定義的負載。 如果您稍後匯入其他檔案，也必須將其新增至負載。
   
-1. 在 [**相關性\>關聯性設定**] 索引標籤中，選取 [**載入**]。
+1. 在 [**相關性 \> 關聯性設定**] 索引標籤中，選取 [**載入**]。
     
     ![相關性設定負載索引標籤](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
@@ -61,7 +61,7 @@ ms.locfileid: "43636291"
 
 若要變更載入名稱，建議使用對此案例很重要的名稱。
   
-1. 在 [**相關性\>關聯性設定**] 索引標籤中，選取 [**載入**]。
+1. 在 [**相關性 \> 關聯性設定**] 索引標籤中，選取 [**載入**]。
     
 2. 從 [**載入管理**] 清單中，選取負載，然後按一下 [**編輯**] 圖示。 隨即會顯示 [編輯載入] 視窗。 
     
@@ -95,9 +95,9 @@ ms.locfileid: "43636291"
   
 ## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>使用追趕和滾動負載新增新的檔載入
 
-1. 在 [**相關性\>關聯性設定**] 索引標籤中，選取 [**載入**]。
+1. 在 [**相關性 \> 關聯性設定**] 索引標籤中，選取 [**載入**]。
     
-2. 在 [ **+** **載入管理**] 底下，按一下圖示以新增負載。 隨即顯示確認訊息。 
+2. 在 [**載入管理**] 底下，按一下 **+** 圖示以新增負載。 隨即顯示確認訊息。 
     
 3. 按一下 **[是]** 以繼續。 隨即會顯示 [**新增載入**] 對話方塊。 
     
@@ -116,7 +116,7 @@ ms.locfileid: "43636291"
     
     然後您就可以標記檔案並執行計算作業。 標記可讓相關性判斷載入是否類似或截然不同，可讓您繼續處理一組新的檔案。
     
-7. 檢查追趕集之後，請查看追趕結果的**相關性\>追蹤**。 
+7. 檢查追趕集之後，請查看追趕結果的**相關性 \> 追蹤**。 
     
 1. 如果在相關性訓練期間新增新的檔案負載（也就是說，此問題尚未透過批次計算出），則請**繼續訓練**為下一個步驟，不論追趕的結果為何。 
     

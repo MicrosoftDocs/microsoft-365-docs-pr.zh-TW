@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 在安全性與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e6f6e3f2fd5820f280ab47f3ffdde11bd9da72e
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: c71bef11e574593d821b992f3a5037dbf127d5d2
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613357"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936992"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 
@@ -51,9 +51,9 @@ ATP 報告包含下列專案：
 
 |||
 |---|---|
-|依偵測類型|哪些原則會協助捕捉這些威脅？|
+|依原則類型|哪些原則會協助捕捉這些威脅？|
 |依偵測技術|哪些基本的 Microsoft 技術會陷入威脅？|
-|依傳遞狀態|電子郵件被偵測為威脅時會發生什麼事？|
+|依傳遞狀態|電子郵件的最後傳遞狀態為威脅（已偵測為威脅）？|
 |
 
 > [!TIP]
@@ -65,7 +65,8 @@ ATP 報告包含下列專案：
 
 ![此圖形顯示匯出為惡意程式碼視圖功能表中的選項、建立排程和要求報告之間的選項。](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
-**附注**：**網路釣魚**和**惡意**代碼可以匯出的專案數上限，都是在10000。 如果您匯出的是視圖，則只會匯出最近的10000專案。
+> [!NOTE]
+> 可匯出的**網路釣魚**和**惡意**代碼專案數目上限為10000。 如果您匯出的是視圖，則只會匯出最近的10000專案。 在匯出的資料中，[_郵件計數_] 資料行代表偵測技術和原則類型所偵測到的郵件數目。    
 
 「一覽」和「電子郵件」視圖會在處理時間內（而不是24小時）顯示資訊（要求重新）。 增加的速度是清晰的信號）！
 
@@ -80,7 +81,7 @@ ATP 報告包含下列專案：
 
 ![一天的 ATP 威脅防護狀態資料](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
 
-「威脅防護狀態」報告預設會顯示過去7天的資料。 不過，您可以選擇 [**篩選**] 並變更日期範圍，以查看最多90天的資料。 （如果您是使用試用訂閱，則可能會限制為30天的資料。）
+「威脅防護狀態」報告預設會顯示過去7天的資料。 不過，您可以選擇 [**篩選**]，然後變更日期範圍，以查看合計視圖的90天的資料，以及詳細資料檢視的30天。 （如果您是使用試用訂閱，則可能會限制為30天的資料。）
 
 ![ATP 威脅防護狀態篩選](../../media/4f703369-642b-402b-9758-b9c828283410.png)
 
@@ -111,7 +112,7 @@ ATP 報告包含下列專案：
 
 ![ATP 檔案類型報告](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-當您將游標移到某一天時，您可以看到[ATP 安全附件](atp-safe-attachments.md)和[反垃圾郵件 &amp; 反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)偵測到的惡意檔案類型細目。
+當您將游標移到某一天時，您可以看到[ATP 安全附件](atp-safe-attachments.md)和[反垃圾郵件 &amp; 反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)偵測到的惡意檔案類型細目。 報表的匯總視圖允許90天的篩選，而詳細資料檢視只允許10天的篩選。 
   
 ![ATP 檔案類型一天的報告資料](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 47343d3e4ae3224556cc22874687da4bea864e8a
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 825d8bac0d20534310864801b1d8eaef32c9b417
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773714"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936348"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保險流通與責任（HIPAA） & 高科技的運作
 
@@ -98,7 +98,7 @@ Microsoft 為合格的公司或其供應商提供涵蓋在 Microsoft 服務範�
 
 為了協助客戶執行這項工作，Microsoft 已發佈下列指南：
 
-- [Azure](https://aka.ms/azurehipaaguidance)及[Dynamics 365 和 Office 365](https://go.microsoft.com/fwlink/?LinkID=257510)的*HIPAA/高科技法案實現指導*方針。 針對隱私權、安全性和合規性監察官，以及其他負責 HIPAA 和高科技法案實施的人員，描述您的組織可採取的具體步驟，以維護法規遵從性。
+- [Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)及[Dynamics 365 和 Office 365](https://go.microsoft.com/fwlink/?LinkID=257510)的*HIPAA/高科技法案實現指導*方針。 針對隱私權、安全性和合規性監察官，以及其他負責 HIPAA 和高科技法案實施的人員，描述您的組織可採取的具體步驟，以維護法規遵從性。
 - [使用 Microsoft Azure 設計安全狀況解決方案的實用指南](https://aka.ms/azureindustrysecurity)可協助您更進一步瞭解以安全方式成功採用雲端服務所需的功能。
 - [在 Microsoft 雲端中處理 HIPAA 安全性和隱私權需求，](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf)提供法規需求的簡短概述。 它也會詳細分析 Microsoft 的雲端服務是如何以對應至這些需求的方法來建立，以及如何建立規範準備解決方案的指導方針。
 

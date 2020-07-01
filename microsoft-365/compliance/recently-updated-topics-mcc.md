@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 規範中心的功能一樣，我們的說明內容永遠都在發展中。 瞭解本月新增及更新的功能。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3bba8d0bbd68c6d28d72bcf32abdc798d7125250
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818963"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936146"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 規範內容的最近更新
 
@@ -112,7 +112,7 @@ ms.locfileid: "44818963"
 [使用敏感度標籤來保護 Microsoft 小組、microsoft 365 群組和 SharePoint 網站（公開預覽）中的內容](sensitivity-labels-teams-groups-sites.md)（更新）<br>變更包括：
 
 - 已移除 Azure AD 指示，但連結至[AZURE ad 授權資訊](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
-- 更新[當您建立或編輯敏感度標籤區段時，如何設定網站和群組設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels)，包含**Office 365 群組連線之小組網站的隱私權**相關資訊，其中包含 [**無**新] 選項。
+- 更新 [[如何設定網站和群組設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings)] 區段，其中包含**Office 365 群組連線之小組網站的隱私權**資訊，其中包含 [**無**新] 選項。
 - 新增附注，說明使用者建立小組、群組和網站時，如何只使用具有網站和群組設定的標籤。 這種功能會逐漸推出給組織。
 
 [使用敏感度標籤來限制存取內容，以套用加密](encryption-sensitivity-labels.md)（更新）<br>[新的區段](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings)，其中包含一些最常用設定的範例，以保護檔和電子郵件。

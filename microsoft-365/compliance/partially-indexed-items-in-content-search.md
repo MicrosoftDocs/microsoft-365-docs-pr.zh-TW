@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: '深入瞭解 Exchange 和 SharePoint 中的未編制索引的專案，您可以透過安全性 & 規範中心納入內容搜尋執行。 '
-ms.openlocfilehash: 534f0014a448b4ef280586a724067f1a4f820693
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+description: 深入瞭解 Exchange 和 SharePoint 中的未編制索引的專案，您可以透過安全性 & 規範中心納入內容搜尋執行。
+ms.openlocfilehash: 587f887a7ecd8e7393b2f6852a070dd040ff1bda
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214209"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936338"
 ---
 # <a name="partially-indexed-items-in-content-search"></a>內容搜尋中已局部編製索引的項目
 

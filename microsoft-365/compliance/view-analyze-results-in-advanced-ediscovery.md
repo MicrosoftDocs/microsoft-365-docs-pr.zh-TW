@@ -15,24 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: '瞭解在高級 eDiscovery 中查看分析程式結果的位置，包括所顯示之任務選項的定義。  '
-ms.openlocfilehash: 09bb682e753730a4c01581e71f05b5b8ef3d4779
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解在高級 eDiscovery 中查看分析程式結果的位置，包括所顯示之任務選項的定義。
+ms.openlocfilehash: 24a4b0685ec5dc82aff0b1f0de81080a62e49776
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626359"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936946"
 ---
 # <a name="view-analyze-results-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中查看分析結果
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在 [高級 eDiscovery] 中，分析程式的進度和結果可以透過如下所述的各種顯示器加以查看。
   
 ## <a name="view-analyze-task-status"></a>View 分析任務狀態
 
-在 **[ \>準備\>分析\>結果**] 工作狀態中，會在分析程式執行期間和之後顯示狀態。 
+在 [**準備 \> 分析 \> 結果 \> **] 工作狀態中，會在分析程式執行期間和之後顯示狀態。 
   
 ![分析工作狀態](../media/d0372978-ce08-4f4e-a1fc-aa918ae44364.png)
   

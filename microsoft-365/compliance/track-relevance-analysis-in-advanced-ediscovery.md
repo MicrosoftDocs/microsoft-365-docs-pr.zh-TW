@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: '瞭解如何在「高級 eDiscovery」中查看及解釋「案例問題」的相關性訓練狀態和結果。  '
-ms.openlocfilehash: 7cf75607743ce752f8b23e286afc4681a1798a1f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+description: 瞭解如何在「高級 eDiscovery」中查看及解釋「案例問題」的相關性訓練狀態和結果。
+ms.openlocfilehash: bf1fe2fc6c0f3ff80fd7e53d55149a61009e2b32
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636616"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936216"
 ---
 # <a name="track-relevance-analysis-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （經典）中追蹤相關性分析
 
 > [!NOTE]
-> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
+> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 在 [Advanced eDiscovery] 中，[相關性追蹤] 索引標籤會顯示在 [標籤] 索引標籤中所執行相關性訓練的計算有效性，並指出在重複訓練程式中要採取的下一個步驟。 
   
@@ -72,7 +72,7 @@ ms.locfileid: "43636616"
   
 當有一個以上的問題時，批次計算會在每個問題中完成。 在批次計算期間，處理所有檔案時便會監控進度。 
   
-在這裡，建議的下一個步驟是 "None"，表示目前不需要任何其他的重複相關性訓練。 下一個階段是 [**相關性\>決定**] 索引標籤。 
+在這裡，建議的下一個步驟是 "None"，表示目前不需要任何其他的重複相關性訓練。 下一個階段是 [**相關性 \> 決定**] 索引標籤。 
   
 如果您想要在批次計算後匯入新的檔案，系統管理員可以將匯入的檔案新增至新的負載。
   
@@ -84,9 +84,9 @@ ms.locfileid: "43636616"
 若檔標記中有不一致，它會影響分析。 當結果不是最優或一致性不確定時，可以使用高級 eDiscovery 標記一致性處理常式。 會傳回可能不一致的標記檔案清單，並視需要加以檢查並重新標記。
   
 > [!NOTE]
-> 在七個或多個訓練四捨五入後，可在**相關性** \> **追蹤** \> **問題** \>中查看標記一致性。**詳細結果** \> **訓練進度** 此項檢查一次只對一個問題進行。 
+> 在七個或多個訓練四捨五入後，可在**相關性**追蹤問題中查看標記一致性 \> **Track** \> **Issue** \> 。**詳細結果** \> **訓練進度** 此項檢查一次只對一個問題進行。 
   
-1. 在 **[ \>相關性追蹤**] 中，展開問題的列。
+1. 在 [**相關性 \> 追蹤**] 中，展開問題的列。
     
 2. 在 **[下一步]** 的右側，按一下 [**修改**]。
     
@@ -98,7 +98,7 @@ ms.locfileid: "43636616"
     
 ## <a name="viewing-and-using-relevance-results"></a>查看和使用相關性結果
 
-在 [**相關性\>追蹤**] 索引標籤中，展開問題的列，然後按一下 [**詳細結果**] 旁邊的 [**查看**]。 隨即會顯示詳細的結果窗格，如下所示。
+在 [**相關性 \> 追蹤**] 索引標籤中，展開問題的列，然後按一下 [**詳細結果**] 旁邊的 [**查看**]。 隨即會顯示詳細的結果窗格，如下所示。
   
 ![相關性訓練的詳細結果](../media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
@@ -133,7 +133,7 @@ ms.locfileid: "43636616"
  **訓練進度圖**：顯示與 F 量值比較的相關訓練週期數之後，相關性訓練的穩定性程度。 當我們透過圖形從左向右移動時，置信區間會隨著高級 eDiscovery 相關性而縮小及使用，以判斷相關性訓練結果的穩定性。
   
 > [!NOTE]
-> 「相關性」會使用 F2，其中的召回會以精確度的精確度接收兩倍的值。 針對具有大量豐富的情況（超過25%），相關性使用 F1 （1:1 比率）。 您可以在 [**相關性設定** \> ] [**高級設定**] 中設定 F 測量比率。 
+> 「相關性」會使用 F2，其中的召回會以精確度的精確度接收兩倍的值。 針對具有大量豐富的情況（超過25%），相關性使用 F1 （1:1 比率）。 您可以在 [**相關性設定**] [ \> **高級設定**] 中設定 F 測量比率。 
   
 ### <a name="batch-calculation-results"></a>批次計算結果
 

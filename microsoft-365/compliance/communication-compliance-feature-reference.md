@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bd9162316bd5c180210040f0820eb8d1cc46dc6c
-ms.sourcegitcommit: efd4dd29af0ea2b71b674534de3b2dcbfd7482db
+ms.openlocfilehash: 844ae00b1881851dc50c68329a999263c09bdbed
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689241"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936782"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -70,10 +70,16 @@ ms.locfileid: "44689241"
 
 透過通訊相容性原則，您可以選擇以群組或獨立來源的方式，在下列一或多個通訊平臺中掃描郵件。 依預設，每個原則都會保留每個原則所捕獲的通訊，即使使用者離開您的組織而且已刪除其信箱也是一樣。
 
-- **Microsoft 小組**：您可以掃描公開和私人 Microsoft 團隊通道和個別聊天中的聊天通訊和相關聯的附件。 小組聊天和附件符合通訊合規性原則的情況可能需要長達24小時才能處理。 使用下列群組管理設定來監督小組中個別的使用者聊天與通道通訊：
+- **Microsoft 小組**：可以掃描公開和私人 Microsoft 團隊通道和個別聊天中的聊天通訊。 當使用者被指派至與 Microsoft 團隊覆蓋範圍有關的通訊符合性原則時，系統會自動在使用者隸屬的所有 Microsoft 團隊間監控使用者的聊天通訊。 Microsoft 小組覆蓋範圍會自動包含在預先定義的原則範本中，且預設會選取自訂原則範本中。 小組聊天符合通訊相容性原則的情況可能需要長達24小時才能處理。 使用下列群組管理設定來監督小組中個別的使用者聊天與通道通訊：
 
     - **小組聊天通訊：** 指派個別使用者或指派[通訊群組](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)至通訊相容性原則。 此設定適用于一對一或一對多的使用者/聊天關聯。
     - 若**為小組通道通訊：** 將您想要掃描的每個 Microsoft 團隊通道或 Microsoft 365 群組指派給通訊合規性原則，其中包含特定的使用者。 如果您將相同使用者新增至其他 Microsoft 小組通道或 Microsoft 365 群組，請務必將這些新的通道和群組新增至通訊相容性原則。
+    - 若**要讓小組與混合式電子郵件環境交談，** 請執行下列動作：通訊相容性可以針對具有 Exchange 內部部署部署的組織，或已啟用 Microsoft 小組的外部電子郵件提供者，監視其使用者的聊天訊息。 您必須為具有內部部署或外部信箱的使用者建立通訊群組，以進行監視。 建立通訊相容性原則時，您會將此通訊群組指派為 [原則嚮導] 中的 [**監督使用者和群組**] 選擇。
+
+    >[!IMPORTANT]
+    >您必須將 Microsoft 支援檔的要求記錄為可讓您的組織在安全性 & 合規性中心使用圖形使用者介面，針對內部部署使用者搜尋小組聊天資料。 如需詳細資訊，請參閱針對[內部部署使用者搜尋雲端架構信箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
+
+您必須向 Microsoft 支援服務提交要求，才能讓貴組織使用安全性與合規性中心的圖形使用者介面來搜尋內部部署使用者雲端式信箱中的 Teams 聊天資料。
 
 - **Exchange 電子郵件**：在 exchange Online 中主控的信箱，作為 Microsoft 365 或 Office 365 訂閱的一部分，都符合郵件掃描的條件。 Exchange 電子郵件訊息和附件符合通訊合規性原則的情況可能需要長達24小時才能處理。 支援的通訊遵循類型與[Exchange 郵件流程規則內容檢查所支援的檔案類型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 
