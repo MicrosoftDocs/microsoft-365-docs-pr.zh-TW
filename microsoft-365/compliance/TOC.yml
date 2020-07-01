@@ -159,6 +159,8 @@
       href: office-365-service-encryption.md
     - name: 關於 Office 365 中加密的技術參考詳細資料
       href: technical-reference-details-about-encryption.md
+    - name: 適用於 Office 365 的 TLS 1.0 和 1.1 淘汰
+      href: tls-1.0-and-1.1-deprecation-for-office-365.md
     - name: 客戶金鑰
       items:
         - name: Office 365 中的客戶金鑰服務加密
@@ -249,10 +251,14 @@
       items:
         - name: 封存協力廠商資料概觀
           href: archiving-third-party-data.md
+        - name: 封存 Bloomberg 郵件資料 (預覽)
+          href: archive-bloomberg-message-data.md
         - name: 封存 Facebook 資料 (預覽)
           href: archive-facebook-data-with-sample-connector.md
         - name: 匯入人力資源資料（預覽）
           href: import-hr-data.md
+        - name: 封存 ICE 聊天資料 (預覽)
+          href: archive-icechat-data.md
         - name: 封存 Instant Bloomberg 資料
           href: archive-instant-bloomberg-data.md
         - name: 封存 LinkedIn 資料
