@@ -1,0 +1,79 @@
+---
+title: TLS 1.0 和1.1 已過時的 Office 365
+description: 說明 Office 365 的 TLS 1.0 和1.1 棄用。
+author: simonxjx
+manager: dcscontentpm
+localization_priority: Normal
+search.appverid:
+- MET150
+audience: ITPro
+ms.service: O365-seccomp
+ms.topic: article
+ms.author: v-six
+appliesto:
+- Microsoft 365 Apps for enterprise
+- Office 365 Business
+- Office 365 Personal
+- Office Online Server
+- Office Web Apps
+ms.openlocfilehash: 611b6970c3ecb95f4cdf046b96a5e3aa9155391d
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44937328"
+---
+# <a name="tls-10-and-11-deprecation-for-office-365"></a><span data-ttu-id="fe777-103">TLS 1.0 和1.1 已過時的 Office 365</span><span class="sxs-lookup"><span data-stu-id="fe777-103">TLS 1.0 and 1.1 deprecation for Office 365</span></span>
+
+<span data-ttu-id="fe777-104">從2018年10月31日到，Office 365 服務的傳輸層安全性（TLS）1.0 和1.1 通訊協定已被取代。</span><span class="sxs-lookup"><span data-stu-id="fe777-104">As of October 31, 2018, the Transport Layer Security (TLS) 1.0 and 1.1 protocols are deprecated for the Office 365 service.</span></span> <span data-ttu-id="fe777-105">對使用者的影響預計會降至最低。</span><span class="sxs-lookup"><span data-stu-id="fe777-105">The effect for end-users is expected to be minimal.</span></span> <span data-ttu-id="fe777-106">這項變更會在兩年中公佈，第一次公開宣告于12月2017。</span><span class="sxs-lookup"><span data-stu-id="fe777-106">This change was publicized for almost two years, with the first public announcement made in December 2017.</span></span> <span data-ttu-id="fe777-107">本文僅適用于與 Office 365 服務相關的 Office 365 本地用戶端，但是也可以套用至 Office 和 Office Online Server/Office Web Apps 的內部部署 TLS 問題。</span><span class="sxs-lookup"><span data-stu-id="fe777-107">This article is only intended to cover the Office 365 local client in relation to the Office 365 service but can also apply to on-premises TLS issues with Office and Office Online Server/Office Web Apps.</span></span>
+
+## <a name="office-and-tls-overview"></a><span data-ttu-id="fe777-108">Office 和 TLS 概述</span><span class="sxs-lookup"><span data-stu-id="fe777-108">Office and TLS overview</span></span>
+
+<span data-ttu-id="fe777-109">Office 用戶端依靠 Windows web 服務（WINHTTP）來傳送和接收透過 TLS 通訊協定的流量。</span><span class="sxs-lookup"><span data-stu-id="fe777-109">The Office client relies on the Windows web service (WINHTTP) to send and receive traffic over TLS protocols.</span></span> <span data-ttu-id="fe777-110">如果本機電腦的 web 服務可以使用 TLS 1.2，則 Office 用戶端可以使用 TLS 1.2。</span><span class="sxs-lookup"><span data-stu-id="fe777-110">The Office client can use TLS 1.2 if the web service of the local computer can use TLS 1.2.</span></span> <span data-ttu-id="fe777-111">所有 Office 用戶端都可以使用 TLS 通訊協定，因為 TLS 和 SSL 通訊協定都是作業系統的一部分，而不是 Office 用戶端特有的。</span><span class="sxs-lookup"><span data-stu-id="fe777-111">All Office clients can use TLS protocols, as TLS and SSL protocols are part of the operating system and not specific to the Office client.</span></span>
+
+### <a name="on-windows-8-and-later-versions"></a><span data-ttu-id="fe777-112">在 Windows 8 和更新版本上</span><span class="sxs-lookup"><span data-stu-id="fe777-112">On Windows 8 and later versions</span></span>
+
+<span data-ttu-id="fe777-113">根據預設，如果沒有網路裝置設定為拒絕 TLS 1.2 流量，則可以使用 TLS 1.2 和1.1 通訊協定。</span><span class="sxs-lookup"><span data-stu-id="fe777-113">By default, the TLS 1.2 and 1.1 protocols are available if no network devices are configured to reject TLS 1.2 traffic.</span></span>
+
+### <a name="on-windows-7"></a><span data-ttu-id="fe777-114">在 Windows 7</span><span class="sxs-lookup"><span data-stu-id="fe777-114">On Windows 7</span></span>
+
+<span data-ttu-id="fe777-115">沒有[KB 3140245](https://support.microsoft.com/help/3140245)更新，TLS 1.1 和1.2 通訊協定無法使用。</span><span class="sxs-lookup"><span data-stu-id="fe777-115">TLS 1.1 and 1.2 protocols are not available without the [KB 3140245](https://support.microsoft.com/help/3140245) update.</span></span> <span data-ttu-id="fe777-116">此更新會解決此問題，並新增下列登錄子機碼：</span><span class="sxs-lookup"><span data-stu-id="fe777-116">The update addresses this issue and adds the following registry sub key:</span></span>
+
+```console
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp
+```
+
+> [!NOTE]
+> <span data-ttu-id="fe777-117">未安裝此更新的 Windows 7 使用者會受到2018年10月31日的影響。</span><span class="sxs-lookup"><span data-stu-id="fe777-117">Windows 7 users who do not have this update are affected as of October 31, 2018.</span></span> <span data-ttu-id="fe777-118">[KB 3140245](https://support.microsoft.com/help/3140245)具有如何變更 WINHTTP 設定以啟用 TLS 通訊協定的詳細資料。</span><span class="sxs-lookup"><span data-stu-id="fe777-118">[KB 3140245](https://support.microsoft.com/help/3140245) has details about how to change WINHTTP settings to enable TLS protocols.</span></span>
+
+#### <a name="more-information"></a><span data-ttu-id="fe777-119">其他相關資訊</span><span class="sxs-lookup"><span data-stu-id="fe777-119">More information</span></span>
+
+<span data-ttu-id="fe777-120">知識庫文章描述的**DefaultSecureProtocols**登錄機碼值，會決定可以使用的網路通訊協定：</span><span class="sxs-lookup"><span data-stu-id="fe777-120">The value of the **DefaultSecureProtocols** registry key that the KB article describes determines which network protocols can be used:</span></span>
+
+|<span data-ttu-id="fe777-121">DefaultSecureProtocols 值</span><span class="sxs-lookup"><span data-stu-id="fe777-121">DefaultSecureProtocols Value</span></span>|<span data-ttu-id="fe777-122">已啟用通訊協定</span><span class="sxs-lookup"><span data-stu-id="fe777-122">Protocol enabled</span></span>|
+|-|-|
+|<span data-ttu-id="fe777-123">0x00000008</span><span class="sxs-lookup"><span data-stu-id="fe777-123">0x00000008</span></span>|<span data-ttu-id="fe777-124">預設啟用 SSL 2.0</span><span class="sxs-lookup"><span data-stu-id="fe777-124">Enable SSL 2.0 by default</span></span>|
+|<span data-ttu-id="fe777-125">0x00000020</span><span class="sxs-lookup"><span data-stu-id="fe777-125">0x00000020</span></span>|<span data-ttu-id="fe777-126">預設啟用 SSL 3.0</span><span class="sxs-lookup"><span data-stu-id="fe777-126">Enable SSL 3.0 by default</span></span>|
+|<span data-ttu-id="fe777-127">0x00000080</span><span class="sxs-lookup"><span data-stu-id="fe777-127">0x00000080</span></span>|<span data-ttu-id="fe777-128">預設啟用 TLS 1.0</span><span class="sxs-lookup"><span data-stu-id="fe777-128">Enable TLS 1.0 by default</span></span>|
+|<span data-ttu-id="fe777-129">0x00000200</span><span class="sxs-lookup"><span data-stu-id="fe777-129">0x00000200</span></span>|<span data-ttu-id="fe777-130">預設啟用 TLS 1.1</span><span class="sxs-lookup"><span data-stu-id="fe777-130">Enable TLS 1.1 by default</span></span>|
+|<span data-ttu-id="fe777-131">0x00000800</span><span class="sxs-lookup"><span data-stu-id="fe777-131">0x00000800</span></span>|<span data-ttu-id="fe777-132">預設啟用 TLS 1.2</span><span class="sxs-lookup"><span data-stu-id="fe777-132">Enable TLS 1.2 by default</span></span>|
+
+## <a name="office-clients-and-tls-registry-keys"></a><span data-ttu-id="fe777-133">Office 用戶端和 TLS 登錄機碼</span><span class="sxs-lookup"><span data-stu-id="fe777-133">Office clients and TLS registry keys</span></span>
+
+<span data-ttu-id="fe777-134">您可以參考[KB 4057306，準備在 Office 365 中對 TLS 1.2 的強制使用](https://support.microsoft.com/help/4057306)。</span><span class="sxs-lookup"><span data-stu-id="fe777-134">You can refer to [KB 4057306 Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306).</span></span> <span data-ttu-id="fe777-135">這是 IT 系統管理員的一般文章，也是有關 TLS 1.2 變更的官方檔。</span><span class="sxs-lookup"><span data-stu-id="fe777-135">This is a general article for IT administrators, and it's official documentation about the TLS 1.2 change.</span></span>
+
+<span data-ttu-id="fe777-136">下表顯示在 2018 10 月31日後，Office 365 用戶端中的適當登錄機碼值。</span><span class="sxs-lookup"><span data-stu-id="fe777-136">The following table shows the appropriate registry key values in Office 365 clients after October 31, 2018.</span></span>
+
+|<span data-ttu-id="fe777-137">在2018年10月31日之後啟用 Office 365 服務的通訊協定</span><span class="sxs-lookup"><span data-stu-id="fe777-137">Enabled protocols for Office 365 service after October 31, 2018</span></span>|<span data-ttu-id="fe777-138">十六進位值</span><span class="sxs-lookup"><span data-stu-id="fe777-138">Hexadecimal value</span></span>|
+|-|-|
+|<span data-ttu-id="fe777-139">TLS 1.0 + 1.1 + 1。2</span><span class="sxs-lookup"><span data-stu-id="fe777-139">TLS 1.0 + 1.1 + 1.2</span></span>|<span data-ttu-id="fe777-140">0x00000A80</span><span class="sxs-lookup"><span data-stu-id="fe777-140">0x00000A80</span></span>|
+|<span data-ttu-id="fe777-141">TLS 1.1 + 1。2</span><span class="sxs-lookup"><span data-stu-id="fe777-141">TLS 1.1 + 1.2</span></span>|<span data-ttu-id="fe777-142">0x00000A00</span><span class="sxs-lookup"><span data-stu-id="fe777-142">0x00000A00</span></span>|
+|<span data-ttu-id="fe777-143">TLS 1.0 + 1。2</span><span class="sxs-lookup"><span data-stu-id="fe777-143">TLS 1.0 + 1.2</span></span>|<span data-ttu-id="fe777-144">0x00000880</span><span class="sxs-lookup"><span data-stu-id="fe777-144">0x00000880</span></span>|
+|<span data-ttu-id="fe777-145">TLS 1.2</span><span class="sxs-lookup"><span data-stu-id="fe777-145">TLS 1.2</span></span>|<span data-ttu-id="fe777-146">0x00000800</span><span class="sxs-lookup"><span data-stu-id="fe777-146">0x00000800</span></span>|
+
+> [!IMPORTANT]
+> <span data-ttu-id="fe777-147">建議您不要使用 SSL 2.0 和3.0 通訊協定，也可以使用**DefaultSecureProtocols**機碼加以設定。</span><span class="sxs-lookup"><span data-stu-id="fe777-147">We don't recommend that you use the SSL 2.0 and 3.0 protocols, which can also be set by using the **DefaultSecureProtocols** key.</span></span> <span data-ttu-id="fe777-148">SSL 2.0 和3.0 被視為已被取代的通訊協定。</span><span class="sxs-lookup"><span data-stu-id="fe777-148">SSL 2.0 and 3.0 are considered deprecated protocols.</span></span> <span data-ttu-id="fe777-149">最佳作法是使用 SSL 2.0 和 SSL 3.0，但決定這項決策最後取決於最符合您產品需求的決策。</span><span class="sxs-lookup"><span data-stu-id="fe777-149">The best practice is to end the use of SSL 2.0 and SSL 3.0, although the decision to do this ultimately depends on what best meets your product needs.</span></span> <span data-ttu-id="fe777-150">如需有關 SSL 3.0 弱點的詳細資訊，請參閱[KB 3009008](https://support.microsoft.com/help/3009008)。</span><span class="sxs-lookup"><span data-stu-id="fe777-150">For more information about SSL 3.0 vulnerabilities, refer to [KB 3009008](https://support.microsoft.com/help/3009008).</span></span>
+
+<span data-ttu-id="fe777-151">您可以使用 [程式師模式] 中的預設 Windows 計算機設定相同的參照登錄機碼值。</span><span class="sxs-lookup"><span data-stu-id="fe777-151">You can use the default Windows Calculator in Programmer mode to set up the same reference registry key values.</span></span> <span data-ttu-id="fe777-152">如需詳細資訊，請參閱[KB 3140245 更新，以啟用 tls 1.1 和 tls 1.2 做為 Windows WinHTTP 中的預設安全通訊協定](https://support.microsoft.com/help/3140245)。</span><span class="sxs-lookup"><span data-stu-id="fe777-152">For more information, see [KB 3140245 Update to enable TLS 1.1 and TLS 1.2 as a default secure protocols in WinHTTP in Windows](https://support.microsoft.com/help/3140245).</span></span>
+
+<span data-ttu-id="fe777-153">不論是否安裝 Windows 7 更新（[KB 3140245](https://support.microsoft.com/help/3140245)），DefaultSecureProtocols 登錄子系統都不存在，必須手動新增或透過群組原則物件（GPO）新增。</span><span class="sxs-lookup"><span data-stu-id="fe777-153">Regardless if the Windows 7 update ([KB 3140245](https://support.microsoft.com/help/3140245)) is installed or not, the DefaultSecureProtocols registry sub key isn't present and must be added manually or through a group policy object (GPO).</span></span> <span data-ttu-id="fe777-154">也就是說，除非您必須自訂已啟用或限制的安全通訊協定，否則不需要此機碼。</span><span class="sxs-lookup"><span data-stu-id="fe777-154">That is, unless you have to customize what secure protocols are enabled or restricted, this key is not required.</span></span> <span data-ttu-id="fe777-155">您只需要 Windows 7 SP1 （[KB 3140245](https://support.microsoft.com/help/3140245)）更新。</span><span class="sxs-lookup"><span data-stu-id="fe777-155">You only need the Windows 7 SP1 ([KB 3140245](https://support.microsoft.com/help/3140245)) update.</span></span>
