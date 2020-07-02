@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 您可以建立並使用範本，以在您新增多個使用者時節省時間和標準化設定。
-ms.openlocfilehash: cbe61c87bec40196ffd7a8e9868ea4611e4c259e
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 29953eb97476799d74e883ed8b20bd5f3382cbf4
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44431806"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022142"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>建立並使用範本來新增使用者
 
@@ -89,7 +89,7 @@ ms.locfileid: "44431806"
 
 ## <a name="related-articles"></a>相關文章
 
-[個別或大量將使用者新增至 Microsoft 365](add-users.md)
+[同時新增使用者並指派授權](add-users.md)
 
 [從 Microsoft 365 移除離職員工](remove-former-employee.md)
   

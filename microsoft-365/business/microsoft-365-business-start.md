@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 深入瞭解 Microsoft 365 for business，如何加以設定，以及如何準備使用者的裝置和電腦，以確保 Microsoft 365 for business 所保護。
-ms.openlocfilehash: 48a103333e101d545d562e7f2e9dd7329686f107
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786147"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022110"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>開始使用 Microsoft 365 for business
 
@@ -84,7 +84,7 @@ Microsoft 365 for business 是一組完整的商務生產力和共同作業工�
     
     - 使用目錄同步處理嚮導，將您的使用者同步處理至雲端。 依照[設定 Microsoft 365 的目錄同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)處理中的步驟完成此程式。 將使用者同步處理至雲端後，您必須[關閉 Office 365 的目錄同步](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization)作業。
     
-    您也必須將以這種方式新增的每個使用者，授與 Microsoft 365 for business 的授權。 您可以在[安裝精靈](set-up.md)中執行這項作業，也可以[將授權指派給 Microsoft 365 for business 中的使用者](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。
+    您也必須將以這種方式新增的每個使用者，授與 Microsoft 365 for business 的授權。 您可以在[安裝精靈](set-up.md)中執行這項作業，也可以[將授權指派給使用者](../admin/manage/assign-licenses-to-users.md)。
     
 ### <a name="2-prepare-mobile-devices"></a>2：準備行動裝置
 

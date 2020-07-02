@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解 microsoft 服務信任入口網站中的 Microsoft 合規性管理員（免費的工作流程型風險評估工具）。
-ms.openlocfilehash: 79f3145e2512bfb174339ef2cde9a2594b116004
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: 514ee0e032e378c407713254d5d11fcd41a8d91c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330743"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016126"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Microsoft 合規性管理員（預覽）
 
@@ -31,7 +31,7 @@ ms.locfileid: "44330743"
 
 **本文**內容：請閱讀本文以瞭解什麼是合規性管理員，並瞭解其主要元件。
 
-**瞭解更新**：我們已于四月2020公開預覽發行中發佈數個更新。 請造訪[合規性管理員版本](compliance-manager-release-notes.md)資訊，以查看最近更新和已知問題。
+**深入瞭解更新**：請造訪[合規性管理員版本](compliance-manager-release-notes.md)資訊，以查看最近更新和已知問題。
 
 ## <a name="what-is-compliance-manager"></a>何謂合規性管理員
 
@@ -53,7 +53,7 @@ ms.locfileid: "44330743"
 
 [Microsoft 規範分數（預覽）](compliance-score.md)是 microsoft 365 規範中心中的一項功能，可提供組織的相容性狀況的最上層視圖。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 知道您的整體合規性分數可協助您的組織瞭解和管理法規遵從性。 瞭解[如何計算您的合規性分數](compliance-score-methodology.md)。
 
-合規性管理員會與合規性分數共用相同的後端。 在這兩個工具的公開預覽階段中，合規性管理員是您管理評估和自訂控制項實施的所在位置。 深入瞭解[合規性分數和合規性管理員之間的關係](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)。
+合規性管理員會與合規性分數共用相同的後端。 在這兩個工具的公開預覽階段中，合規性管理員是您管理自訂控制項實現的所在位置。 深入瞭解[合規性分數和合規性管理員之間的關係](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)。
 
 ## <a name="compliance-manager-components"></a>合規性管理員元件
 

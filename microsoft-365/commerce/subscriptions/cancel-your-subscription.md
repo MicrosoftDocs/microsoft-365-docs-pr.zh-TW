@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 瞭解如何取消商務用 Microsoft 365 試用版或付費訂閱。
-ms.openlocfilehash: 3f60792446b468aaa5c85d03ab761fd75e607b8b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818516"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023366"
 ---
 # <a name="cancel-your-subscription"></a>取消訂閱
 
@@ -144,10 +144,12 @@ ms.locfileid: "44818516"
 
 ### <a name="uninstall-office-optional"></a>卸載 Office （選用）
 
-如果您取消訂閱，但沒有將使用者移至包含 Microsoft 365 的不同訂閱，則 Microsoft 365 會以精簡功能模式執行。 發生這種情況時，使用者只能讀取和列印檔案，而 Microsoft 365 應用程式會顯示未[授權產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 為了避免產生任何混淆，請要求您的使用者從其電腦[解除安裝 Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)。
+如果您取消訂閱，但沒有[將使用者移至](move-users-different-subscription.md)包含 Microsoft 365 的不同訂閱，則 microsoft 365 會以精簡功能模式執行。 發生這種情況時，使用者只能讀取和列印檔案，而 Microsoft 365 應用程式會顯示未[授權產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。 為了避免產生任何混淆，請要求您的使用者從其電腦[解除安裝 Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx)。
 
 ## <a name="related-articles"></a>相關文章
 
 [更新您的訂閱](renew-your-subscription.md)
 
 [重新啟動您的訂閱](reactivate-your-subscription.md)
+
+[將使用者移至其他訂閱](move-users-different-subscription.md)

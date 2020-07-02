@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 1a84c568d1411cf21c23e59cabad955c40c18ac6
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498360"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005707"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>建立及管理自訂的偵測規則
 
@@ -118,8 +118,8 @@ DeviceEvents
 
 #### <a name="actions-on-devices"></a>裝置上的動作
 這些動作會套用至 `DeviceId` 查詢結果欄中的裝置：
-- **隔離裝置**—使用 MICROSOFT Defender ATP 來套用完整網路隔離，以防止裝置連接至任何應用程式或服務。 [深入瞭解 Microsoft Defender ATP 電腦隔離](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
-- **收集調查套件**—收集 ZIP 檔案中的裝置資訊。 [深入瞭解 Microsoft Defender ATP 調查套件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
+- **隔離裝置**—使用 MICROSOFT Defender ATP 來套用完整網路隔離，以防止裝置連接至任何應用程式或服務。 [深入瞭解 Microsoft Defender ATP 電腦隔離](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **收集調查套件**—收集 ZIP 檔案中的裝置資訊。 [深入瞭解 Microsoft Defender ATP 調查套件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **執行防病毒掃描**-在裝置上執行完整的 Windows Defender 防病毒掃描
 - **開始調查**--在裝置上開始[自動調查](mtp-autoir.md)
 - **限制應用程式執行**—設定裝置上的限制，只允許以 Microsoft 發行的憑證簽署的檔案執行。 [深入瞭解 Microsoft Defender ATP 的應用程式限制](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)

@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 瞭解如何驗證您的電子郵件和網域擁有權，以在 Microsoft 365 中接管未受管理的租使用者
-ms.openlocfilehash: 4c2dcdb0f6c4f6b795d9579c8796e9668ed2ed05
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 1eb54a6c34c9700bda09a660c71d2b1222fcdb8c
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399443"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022154"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>執行內部系統管理員接管
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
 
 如果您是系統管理員，而且想要接管自助使用者註冊所建立的非管理租使用者，您可以使用內部系統管理員接管。
 
@@ -64,7 +64,7 @@ ms.locfileid: "44399443"
 4. 將 TXT 記錄新增至註冊網站後，請回到嚮導並選取 [確定] **，我已新增記錄**。
     
 > [!NOTE]
-> 接管陰影租使用者不會影響任何現有的資訊或服務。 不過，如果網域中的任何使用者已註冊需要授權的服務，系統就會要求您購買其授權，作為接管系統管理員角色的一部分。 您可以在系統管理員設定程式完成之後，新增或移除授權。 
+> 接管陰影租使用者不會影響任何現有的資訊或服務。 不過，如果網域中的任何使用者已註冊需要授權的服務，系統就會要求您購買其授權，作為接管系統管理員角色的一部分。 您可以在系統管理員設定程式完成後，購買或移除授權。
   
 ## <a name="related-articles"></a>相關文章
 

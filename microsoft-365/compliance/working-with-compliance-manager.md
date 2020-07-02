@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何使用合規性管理員來追蹤、指派及驗證 Microsoft 產品相關的法規遵從性活動。
-ms.openlocfilehash: fe7b04fe7687bc91e6f96fb2c3994a6536cec314
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e12250c6f78759b2298bfb5ebba6ae79918a0fd9
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817080"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023390"
 ---
 # <a name="working-with-microsoft-compliance-manager-preview"></a>使用 Microsoft 合規性管理員（預覽）
 
@@ -41,7 +41,10 @@ ms.locfileid: "44817080"
 
 ## <a name="administration"></a>系統管理
 
-只有全域系統管理員可以使用特定的管理功能，而且只有當以全域系統管理員帳戶登入時才會顯示。 全域管理員可以指派使用者權限並開啟自動安全分數更新。
+只有全域系統管理員可以使用特定的管理功能，而且只有當以全域系統管理員帳戶登入時才會顯示。 全域管理員可以：
+- [指派使用者角色](#assigning-compliance-manager-roles-to-users)
+- [開啟和關閉自動安全分數更新](#controlling-automatic-secure-score-updates)
+- [設定使用者隱私權設定](#configuring-user-privacy-settings)
   
 ### <a name="assigning-compliance-manager-roles-to-users"></a>將合規性管理員角色指派給使用者
 
@@ -94,6 +97,92 @@ ms.locfileid: "44817080"
 8. 選取 [**儲存]。** 安全分數連續監控現在已開啟該動作。
 
 **附注：** 只有全域系統管理員才能開啟或關閉所有動作的自動更新。 合規性管理員可以為個別動作開啟自動更新，但不能為全域動作開啟所有動作。
+
+### <a name="configuring-user-privacy-settings"></a>設定使用者隱私權設定
+
+某些法規要求組織能夠刪除使用者的記錄資料。 若要啟用此功能，**使用者隱私權設定**功能可讓系統管理員：
+  
+- [使用者搜尋](#search-for-a-user)
+
+- [匯出帳戶資料歷程記錄的報告](#export-a-report-of-account-data-history)
+
+- [重新指派動作項目](#reassign-action-items)
+
+- [刪除使用者資料歷程記錄](#delete-user-data-history)
+    
+![合規性管理員管理 - 使用者隱私權設定功能](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
+  
+#### <a name="search-for-a-user"></a>搜尋使用者
+
+若要搜尋使用者帳戶：
+  
+1. 輸入使用者電子郵件地址的別名 (位在 @ 符號左邊的資訊)，然後按一下右邊的網域尾碼清單以選擇網域名稱。 如果您的組織有多個註冊的網域，您可以加倍檢查電子郵件地址功能變數名稱尾碼，以確定其是否正確。
+    
+2. 當您輸入正確的使用者名稱時，請選取 [**搜尋**]。
+    
+3. 如果找不到使用者帳戶，將會在頁面上顯示「找不到使用者」錯誤訊息。 請檢查使用者的電子郵件地址資訊，必要時進行修正，然後選取 [**搜尋**] 再試一次。
+    
+4. 找到使用者帳戶時，按鈕的文字會從 [搜尋]**** 變更為 [清除]****，這表示傳回的使用者帳戶是額外功能的作業內容，將會顯示在下面，且執行這些功能將會套用到這個使用者帳戶。
+    
+5. 若要清除搜尋結果並搜尋不同的使用者，請選取 [**清除**]。
+    
+#### <a name="export-a-report-of-account-data-history"></a>匯出帳戶資料歷程記錄的報告
+
+識別使用者帳戶之後，您可能會想要產生一份與此帳戶相關的相依性報告。 這個資訊可以讓您重新指派開放的動作項目，或是確保存取先前上傳的證明。
+  
+ 若要產生並匯出報告：
+  
+1. 選取 [**匯出**]，以產生及下載目前指派給傳回之使用者帳戶的合規性管理員控制項動作專案，以及該使用者上傳的檔案清單。 如果沒有任何指派的動作或上傳的檔，錯誤訊息就會顯示「沒有此使用者的資料」。
+
+2. 報告會在使用中瀏覽器視窗的背景下載。 如果您看不到下載快顯視窗，請檢查您的瀏覽器下載歷程記錄。
+
+3. 開啟文件以檢視報告資料。
+
+> [!NOTE]
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+  
+#### <a name="reassign-action-items"></a>重新指派動作項目
+
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+  
+ 若要將動作項目重新指派給其他使用者：
+  
+1. 按一下輸入方塊以瀏覽並選取所傳回使用者的動作項目應被指派的組織中的另一位使用者。
+    
+2. 選取 [取代]**** 以將所傳回使用者的所有控制項動作項目重新指派給新選取的使用者。
+    
+3. 隨即會顯示確認對話方塊，「這會將目前使用者的所有控制動作專案重新指派給選取的使用者。 這個動作無法復原。 您確定要繼續？」
+    
+4. 若要繼續，請選取 **[確定]**，否則請選取 [**取消**]。
+    
+> [!NOTE]
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+  
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+  
+1. 開啟先前已下載的 [匯出] 報告。
+  
+2. 找出並瀏覽至所需的控制項動作項目。
+  
+3. 選取 [**管理檔**] 以流覽至該控制項的證據存放庫。
+  
+4. 下載文件。
+  
+5. 刪除辨識存放庫中的文件。
+  
+6. 重新上傳檔。 現在檔會有新的上傳日期、時間及「上傳者」的使用者名稱。
+  
+#### <a name="delete-user-data-history"></a>刪除使用者資料歷程記錄
+
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+  
+ 若要刪除使用者帳戶動作項目和文件上傳記錄：
+  
+1. 選取 [刪除]****。
+
+2. 確認對話方塊隨即顯示：「這會移除所有控制項動作專案指派，以及所選使用者的檔上傳記錄。 這個動作無法復原。 您確定要繼續？」
+    
+3. 若要繼續，請選取 **[確定]**，否則請選取 [**取消**]。
 
 ## <a name="groups"></a>群組
 
@@ -196,6 +285,9 @@ ms.locfileid: "44817080"
 ## <a name="assessments"></a>評估
 
 本節說明如何查看和使用評估，包括如何新增、匯出、複製現有評估中的資訊，以及透過版本設定將其更新。
+
+> [!NOTE]
+> 您現在可以在合規性分數中建立評估。 [查看指導方針和指示](compliance-score-assessments.md)。
 
 ### <a name="view-an-assessment-and-action-details"></a>查看評估和動作詳細資料
   
@@ -408,13 +500,16 @@ ms.locfileid: "44817080"
 
 使用範本來建立評估的方法有三種：
 
-1. 使用 Microsoft 提供的預先設定的範本之一。
-2. 透過擴充程式，自訂預先設定的範本和您自己的動作和控制項。
+1. 使用其中一種準備使用 Microsoft 提供的範本。
+2. 透過擴充程式，自訂現成的動作和控制項的可使用範本。
 3. 建立您自己的範本，並將其匯入合規性管理員。
 
-#### <a name="use-a-microsoft-pre-configured-template"></a>使用 Microsoft 預先設定的範本
+> [!NOTE]
+> 當您將範本上傳到合規性管理員時，必須透過保留系統管理員角色的兩位使用者核准它，然後才可使用。
 
-預先設定的範本可在您的**範本**儀表板上使用。 查看目前的[範本清單](compliance-manager-overview.md#templates)，該清單會在每次新的範本可用時更新。
+#### <a name="use-a-ready-to-use-template"></a>使用準備使用的範本
+
+您可以在**範本**儀表板上使用範本。 查看目前的[範本清單](compliance-score-templates.md)，該清單會在每次新的範本可用時更新。
 
 #### <a name="customize-a-template-through-the-extension-process"></a>透過擴充處理常式自訂範本
 
@@ -423,21 +518,23 @@ ms.locfileid: "44817080"
 3. 從下拉式功能表中選取您要擴充的範本。
 4. 若尚未在 Excel 中格式化範本資料，請選取彈出窗格中的連結，以下載 Excel 檔案。 請根據下列[Excel](#import-template-data-with-excel)指示填寫試算表，並將其儲存至您的本機磁片磁碟機。
 5. 選取 **[流覽]** 以上傳您的 Excel 檔案，以匯入自訂的範本資料。
-6. 選取 [**新增至儀表板**]。 然後您會看到新的範本新增至您的**範本**儀表板。
+6. 選取 [**新增至儀表板**]。
+7. 對範本所做的變更需要有兩個擁有系統管理員角色的使用者核准。 這些使用者會收到範本更新的通知。 有兩個系統管理員核准變更，您會在 [**範本**] 儀表板上看到更新的範本。
 
 #### <a name="create-your-own-template-and-import-it-into-compliance-manager"></a>建立您自己的範本，並將其匯入合規性管理員
 
 1. 開啟 [**範本**] 儀表板，然後選取 [ **+ 新增範本**]。
 2. 在 [範本] 飛入窗格上，選取 [**建立新的範本**]。
 3. 選取 **[流覽]** 以上傳包含資料的 Excel 檔案（請參閱下列[Excel 的匯入範本資料](#import-template-data-with-excel)），以匯入範本資料。
-4. 選取 [**新增至儀表板**]。 然後您會看到新的範本新增至您的**範本**儀表板。
+4. 選取 [**新增至儀表板**]。
+5. 新的範本需要有兩個擁有系統管理員角色的使用者核准。 這些使用者接收新範本可供核准的通知。 一個範本已由兩個系統管理員核准，您會在 [**範本**] 儀表板上看到新的範本。
 
 #### <a name="import-template-data-with-excel"></a>使用 Excel 匯入範本資料
 
 若要修改範本或建立您自己的範本，您會使用[Excel 試算表](https://go.microsoft.com/fwlink/?linkid=2124865)來捕獲必要的資料，並將其上傳到合規性管理員。 這個試算表範本具有必須使用的特定格式和架構，否則將不會匯入至合規性管理員。
 
 > [!IMPORTANT]
-> 如果您先前已在合規性管理員中建立或自訂範本，此程式會在2020年4月的合規性管理員（預覽）版本中**更新**。 **請仔細閱讀本節。**
+> 如果您先前已在合規性管理員中建立或自訂範本，則**此程式最近已更新。請仔細閱讀本節。**
 
 試算表包含四個選項卡，其中三個是必要的：
 
@@ -496,7 +593,7 @@ ms.locfileid: "44817080"
 
 - **actionDescription**：提供動作的描述。 您可以套用粗體文字和超連結等格式。 這是必要欄位。
 
-- **維度-動作目的**：這是選用的欄位。 如果包含此標頭，則標頭必須包含 "dimension" 前置詞。 您將在此處包含的任何維度，都將做為[符合性分數中的篩選器](compliance-score-setup.md#filtering-your-dashboard-view)，並顯示在[合規性分數的「改進動作詳細資料」頁面](working-with-compliance-score.md#view-your-improvement-actions)
+- **維度-動作目的**：這是選用的欄位。 如果包含此標頭，則標頭必須包含 "dimension" 前置詞。 您將在此處包含的任何維度，都將做為[符合性分數中的篩選器](compliance-score-setup.md#filtering-your-dashboard-view)，並顯示在合規性分數的「改進動作詳細資料」頁面
 
 ##### <a name="dimensions-tab"></a>維度] 索引標籤
 

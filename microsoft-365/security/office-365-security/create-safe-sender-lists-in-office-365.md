@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解可用及慣用的選項，允許在 Exchange Online Protection （EOP）中輸入郵件。
-ms.openlocfilehash: c9f444483afea82db1fbbe3b5be98751d42c2f5e
-ms.sourcegitcommit: c696852da06d057dba4f5147bbf46521910de3ab
+ms.openlocfilehash: 9ca1fc3911dd3417304d0d1de6923408373bc33c
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44545943"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005855"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中建立安全的寄件者清單
 
@@ -126,7 +126,7 @@ Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來�
 
 - `5322.From`位址是 blueyonder@news.blueyonderairlines.com，這是您在 Outlook 中看到的內容。
 
-EOP 中的反垃圾郵件原則中的安全寄件者清單和安全網域清單會檢查 `5321.MailFrom` 及 `5322.From` 位址。 Outlook 安全寄件者只會使用 `5322.From` 位址。
+EOP 中的反垃圾郵件原則中的安全寄件者清單和安全網域清單僅檢查 `5322.From` 位址，這類似使用該位址的 Outlook 安全寄件者 `5322.From` 。
 
 若要防止郵件被篩選，您可以採取下列步驟：
 

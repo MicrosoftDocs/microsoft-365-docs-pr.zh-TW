@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 在本文中，您將瞭解如何自訂、組織和管理小組網站，以進行檔案儲存與共享。
-ms.openlocfilehash: 5eb95ffc1ec687920b4499a9876ce3186e678062
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: e7c3364332a127b5a398d3b08843ea7dd04679b5
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779866"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022166"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自訂您的小組網站以進行檔案儲存與共享
 
@@ -104,7 +104,7 @@ View a 錄影若要將行事曆新增至您的網站，請參閱[建立共用的
   
 透過[瞭解和管理群組](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d)的群組來查看影片。 
   
-若要將使用者新增至 Microsoft 365 群組，請參閱[個別或大量新增使用者至 microsoft 365-系統管理](../add-users/add-users.md)說明。
+若要將使用者新增至 Microsoft 365 群組，請參閱[同時新增使用者並指派授權](../add-users/add-users.md)。
   
 瞭解如何處理[設定和管理存取要求](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)的存取要求。
   

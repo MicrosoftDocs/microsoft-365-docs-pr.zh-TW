@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 中雲端型應用程式所產生的資料會儲存或關聯至使用者的 Exchange Online 信箱。
-ms.openlocfilehash: 946ad069a57e411c20d9b0a723d28dc03a4b094f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc8588008194b5ea9e414efd1354d835e6bb7a63
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626279"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016296"
 ---
 # <a name="content-stored-in-exchange-online-mailboxes"></a>儲存在 Exchange Online 信箱中的內容
 
@@ -32,7 +32,7 @@ Exchange Online 中的信箱主要是用來儲存電子郵件相關專案，例�
 
 |Microsoft 365 應用程式|描述|
 |:---------|:---------|
-|表單|表單（儲存為 PDF 檔案）和對表單的回應（儲存在 CSV 檔案中）會附加至電子郵件，並儲存在建立表單之使用者信箱的隱藏資料夾中。 當您從 PST 檔案中的表單匯出內容時，此資料會位於以下列全域唯一識別（GUID）： **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**命名的子資料夾中的**ApplicationDataRoot**資料夾中。|
+|表單|表單和表單的回應儲存在附加至電子郵件的檔案中，並儲存在建立表單之使用者信箱的隱藏資料夾中。 在2020年4月之前建立的表單會儲存為 PDF 檔案。 在2020之後建立的表單會儲存為 JSON 檔案。  對表單的回應儲存在 CSV 檔案中。 當您從 PST 檔案中的表單匯出內容時，此資料會位於以下列全域唯一識別（GUID）： **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**命名的子資料夾中的**ApplicationDataRoot**資料夾中。|
 |Microsoft 365 群組|電子郵件、行事曆專案、連絡人（人員）、附注和工作會儲存在與 Microsoft 365 群組相關聯的信箱中。|
 |Outlook/Exchange Online|電子郵件、行事曆專案、連絡人（人員）、便箋和工作都儲存在使用者的信箱中。|
 |多人|[人員] 應用程式中的連絡人（與 Outlook 中可存取的連絡人相同）會儲存在使用者的信箱中。|

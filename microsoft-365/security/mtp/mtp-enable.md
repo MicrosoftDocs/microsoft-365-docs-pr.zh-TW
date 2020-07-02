@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 0badae0d81b52b89c47f950b889109d4b9d35dda
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b6ac30f7e32bbec80952ad4f2104032886b11503
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844589"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016340"
 ---
 # <a name="turn-on-microsoft-threat-protection"></a>開啟 Microsoft 威脅防護
 
@@ -61,10 +61,12 @@ Microsoft 威脅防護會匯總您已部署之各種支援服務的資料。 它
 >如果您在功能窗格中看不到**設定**或無法存取頁面，請檢查您的許可權和授權。
 
 ### <a name="data-center-location"></a>資料中心位置
-Microsoft 威脅防護會儲存和處理[Microsoft DEFENDER ATP 使用的相同位置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)的資料。 如果您沒有 Microsoft Defender ATP，會根據使用中 Microsoft 365 安全性服務的位置，自動選取新的資料中心位置。 選取的資料中心位置會顯示在螢幕上。
+Microsoft 威脅防護會儲存和處理[Microsoft DEFENDER ATP 使用的相同位置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)的資料。 如果您沒有 Microsoft Defender ATP，會根據使用中 Microsoft 365 安全性服務的位置，自動選取新的資料中心位置。 選取的資料中心位置會顯示在螢幕上。 
+
+在 Microsoft 365 的安全性中心中，選取 [**需要協助**]，以與 microsoft 支援人員聯繫，以在不同的資料中心位置提供 Microsoft 威脅防護。 
 
 >[!NOTE]
->在 Microsoft 365 的安全性中心，選取 [**需要協助**]，以與 microsoft 支援部門聯繫，以在不同的資料中心位置提供 Microsoft 威脅防護。 
+>當透過 Azure Security Center 開啟時，Microsoft Defender ATP 會自動布建在歐盟（EU）資料中心。 在相同的歐盟資料中心，針對以這種方式布建 Microsoft Defender ATP 的客戶，會自動為其提供 microsoft 威脅防護。 
 
 ### <a name="confirm-that-the-service-is-on"></a>確認服務已開啟
 服務一旦佈建，它會新增：

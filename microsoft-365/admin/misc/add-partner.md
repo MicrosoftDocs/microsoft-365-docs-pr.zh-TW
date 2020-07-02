@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: 瞭解如何在 Microsoft 365 購買時，新增訂閱顧問合作夥伴作為記錄的合作夥伴，變更合作夥伴或從訂閱刪除合作夥伴。
-ms.openlocfilehash: 4ab02e95c2a2330e95f8a54f717e38025d04714c
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 07e0d47d45f20e206fb8ca4c5ff5e81785bc74b9
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432192"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005683"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>新增、變更或刪除訂閱顧問合作夥伴
 
@@ -56,7 +56,7 @@ ms.locfileid: "44432192"
 
 ::: moniker range="o365-germany"
 
-您選擇的合作夥伴取決於您使用的 Office 365 服務，還有您是在哪個國家或地區使用這類服務。如果您要新增合作夥伴，或要變更訂閱的合作夥伴，首先必須詢問合作夥伴，取得對方的 Microsoft 合作夥伴識別碼。
+The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ ms.locfileid: "44432192"
     
 4. 如果您已經有合作夥伴，請在「結帳」嚮導的第二個步驟中，在 [協力廠商] 窗格的 [合作夥伴資訊] 下，選取 [**新增**]。
 
-5. 輸入您新增之合作夥伴的 Microsoft 合作夥伴識別碼。請詢問合作夥伴，取得對方的 Microsoft 合作夥伴識別碼。
+5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
 6. 完成精靈的其餘步驟，以完成購買您的訂閱。 
     
@@ -98,7 +98,7 @@ ms.locfileid: "44432192"
     
 4. 如果您已經有合作夥伴，請在「結帳」嚮導的第二個步驟中，在 [協力廠商] 窗格的 [合作夥伴資訊] 下，選取 [**新增**]。
 
-5. 輸入您新增之合作夥伴的 Microsoft 合作夥伴識別碼。請詢問合作夥伴，取得對方的 Microsoft 合作夥伴識別碼。
+5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
 
 6. 完成精靈的其餘步驟，以完成購買您的訂閱。 
     
@@ -255,7 +255,7 @@ ms.locfileid: "44432192"
 
 您不能自行移除經銷商關係。
   
-如果您要移除轉銷商關係，[**刪除**] 選項會變暗，您必須要求轉銷商合作夥伴遵循下列指示：[移除與合作夥伴的轉銷商關係](https://docs.microsoft.com/partner-center/remove-a-relationship)。
+您必須要求轉銷商合作夥伴遵循下列指示：[移除與合作夥伴的轉銷商關係](https://docs.microsoft.com/partner-center/remove-a-relationship)。
   
 ::: moniker-end
 

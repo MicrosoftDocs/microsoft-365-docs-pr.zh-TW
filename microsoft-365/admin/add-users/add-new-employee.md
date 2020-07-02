@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: 針對電子郵件、Skype 和 Office 應用程式，將新員工新增至 Microsoft 365 for business。
-ms.openlocfilehash: bd0ed77954c7b7baa60e50473818577ec9ae7f76
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: de647b926a3e1a82aaed4928b96101bd59df07ff
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780670"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45022130"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>將新員工新增至 Microsoft 365
 
@@ -50,7 +50,7 @@ ms.locfileid: "44780670"
 ## <a name="step-1-create-a-microsoft-365-account-for-the-employee"></a>步驟1：建立員工的 Microsoft 365 帳戶
 
 
-如需相關指示，請參閱[個別或大量新增使用者至 Microsoft 365-系統管理](add-users.md)說明。 當您設定新的員工時，您可以選擇將登入詳細資料傳送到員工的個人帳戶。 如此一來，他們會收到來自 Microsoft Online 服務小組的電子郵件，告訴他們如何登入 Microsoft 365。
+如需相關指示，請參閱[同時新增使用者並指派授權](add-users.md)。 當您設定新的員工時，您可以選擇將登入詳細資料傳送到員工的個人帳戶。 如此一來，他們會收到來自 Microsoft Online 服務小組的電子郵件，告訴他們如何登入 Microsoft 365。
   
 ## <a name="step-2-give-the-employee-their-user-id-and-password"></a>步驟2：授與員工的使用者識別碼和密碼
 
@@ -85,12 +85,8 @@ ms.locfileid: "44780670"
 |完成商務訓練的 OneDrive，協助您瞭解如何在雲端中儲存及組織檔、簡報和試算表。  <br/> |使用商務用 OneDrive，將商務相關的檔保存在雲端中。 即使您已登入其他電腦上的 Microsoft 365，您還是可以隨時取得您的內容。 [觀賞影片以瞭解如何使用您的商務 OneDrive](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **訓練：** [商務訓練的 OneDrive](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) （為商務選取 OneDrive）。  <br/> |
 |完成 SharePoint 線上訓練，協助您與同事共同作業和共用內容。  <br/> |您的同事也可以存取的檔的最佳位置是在 SharePoint 線上。  <br/> <br/>**訓練：** [影片：使用 SharePoint Online 與小組內容共同](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121)作業 <br/><br/> **瞭解：** 您的組織如何使用 SharePoint 線上，以及哪種檔案類型會儲存在這裡。 此外，哪些檔會儲存在 OneDrive 的商務中。  <br/> |
 
-   
 ## <a name="related-articles"></a>相關文章
-
 
 [從 Microsoft 365 移除離職員工](remove-former-employee.md)
   
-[個別或大量將使用者新增至 Microsoft 365](add-users.md)
-  
-
+[在相同的 time65 中新增使用者並指派授權](add-users.md)

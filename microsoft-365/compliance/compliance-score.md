@@ -1,5 +1,5 @@
 ---
-title: Microsoft 合規性分數
+title: Microsoft 合規性分數（預覽）
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,29 +13,27 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 合規性分數可協助組織簡化及自動化風險評估，並建議採取建議的動作以協助解決風險。
-ms.openlocfilehash: 3c7a4bdfd5de7a9a6dcbede5146ebb517acdb4bb
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+description: Microsoft 合規性分數（預覽）可協助組織簡化及自動化風險評估，並建議採取的措施以協助解決風險。
+ms.openlocfilehash: 0cb8bd0b5aa39be2a9a6e706afa21bb7dc53eadb
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330797"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016136"
 ---
 # <a name="microsoft-compliance-score-preview"></a>Microsoft 合規性分數（預覽）
 
-[Microsoft 合規性分數](https://compliance.microsoft.com/compliancescore)可協助您簡化管理法規遵從性的方式，並透過方便使用的經驗降低法規遵從性風險。 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)內的公開預覽適用的合規性分數。
+**本文內容：** 瞭解遵循的合規性分數、它如何協助簡化管理規範的方式，以及如何為您的組織加以設定。
 
-**本文內容：** 請閱讀本文，以瞭解哪些相容性分數，以及如何為您的組織設定。
-
-**深入瞭解更新：** 我們已于2020年4月發佈數個更新。 請造訪「[合規性分數版本](compliance-score-release-notes.md)資訊」，以查看「預覽」版本的合規性分數的新功能和已知問題。
+**新功能：** 2020年6月的版本包含建立及管理評估的新功能，以及在合規性分數中查看控制項的功能。 請造訪「[合規性分數版本](compliance-score-release-notes.md)資訊」，以查看相容性分數公開預覽中的新功能。
 
 ## <a name="what-is-compliance-score"></a>合規性分數為何
 
-Microsoft 合規性分數是 Microsoft 365 規範中心的預覽功能，可協助您瞭解組織的合規性狀況。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。
+[Microsoft 合規性分數](https://compliance.microsoft.com/compliancescore)是[microsoft 365 規範中心](microsoft-365-compliance-center.md)的預覽功能，可協助您瞭解組織的合規性狀況。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。
 
 您可以使用合規性分數做為工具，以追蹤所有風險評估。 它提供工作流程功能，協助您透過一般工具，有效地完成風險評估。
 
-如果您目前使用[合規性管理員](compliance-manager-overview.md)，您會注意到「合規性分數」現在是獨立的功能，具有更簡單且便於使用的設計，可協助您更輕鬆地管理規範。 
+[合規性管理員](compliance-manager-overview.md)使用者會注意到「合規性分數」現在是獨立的功能，具有更簡單、更便於使用的設計，可協助組織更輕鬆地管理規範。
 
 主要合規性分數頁面是您的自訂儀表板。 它會顯示您目前的評分，協助您瞭解需要注意的事項，並指導您採取動作以提升您的分數。 您的合規性分數儀表板看起來像這樣：
 
@@ -54,89 +52,88 @@ Microsoft 合規性分數是 Microsoft 365 規範中心的預覽功能，可協�
 
 ## <a name="relationship-to-compliance-manager"></a>與合規性管理員的關係
 
-請將合規性分數視為合規性管理員簡化版本。 雖然這兩者都存在於不同的整合式工具中，但遵從性分數可讓您更容易監視整體的相容性狀況，並採取步驟加以改善。
+請將合規性分數視為合規性管理員簡化的體驗。 雖然這兩者都存在於不同的整合式工具中，但遵從性分數可讓您更容易監視整體的相容性狀況，並採取步驟加以改善。
 
-合規性分數與合規性管理員共用相同的後端，所以合規性管理員中您可能已具備的任何資料都會以相容性分數顯示。
+合規性分數與合規性管理員分享相同的後端。 您在某項工具中執行的任何動作都會以其他工具呈現。
 
-在公開預覽期間，有些功能會維持在合規性管理員內，例如管理評估和建立範本。 建議您在合規性分數中開始所有符合性管理活動。 當您接觸合規性管理員所處理的功能時，系統會將您導向該工具。 基於此原因，本文中的一些檔會將您導向合規性管理員主題。
+在公開預覽期間，評估與範本管理的某些功能仍會保留在合規性管理員中。 建議您在合規性分數中開始所有符合性管理活動。 當您接觸合規性管理員所處理的功能時，我們會在這裡為您提供指導。
 
-深入瞭解[合規性分數版本附注](compliance-score-release-notes.md)中的合規性分數和合規性管理員之間的關係。
+#### <a name="learn-more"></a>深入了解
+
+[瞭解合規性分數和合規性管理員之間的關係](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)。
 
 ## <a name="understanding-your-score"></a>瞭解您的分數
 
-合規性分數為您提供以 Microsoft 365 資料保護基準為基礎的初始分數。 此基準是一組包含常見業界法規和標準的控制。 雖然這個分數是評估符合性狀況的好開端，但一旦您新增了與貴組織更為相關的評估，就會變得更強大。
+合規性分數獎項您可以針對遵守法規、標準或原則所採取的措施進行積分。 每個動作對您的分數有不同的影響，取決於可能的風險。 您的分數可協助您決定關注的動作，以改善您的整體相容性狀況。
 
-例如，如果您的組織屬於金融服務行業，您可能會想要新增 FFIEC 評估。 如果您的組織屬於醫療保健行業，您可以新增 HIPAA/高科技評估。 瞭解如何[在合規性管理員中新增評估](working-with-compliance-manager.md#assessments)。
+合規性分數為您提供以 Microsoft 365 資料保護基準為基礎的初始分數。  此基準是一組控制項，包含資料保護和一般資料控管的重要規章和標準。 此基準主要是從 NIST CSF （國家標準和技術協會 Cybersecurity Framework）和 ISO （國際標準組織的標準化 FedRAMP）和 GDPR （歐盟的一般資料保護法規）和（一般資料保護法規）中的專案來繪製要素。
 
-深入瞭解[如何計算和持續監控規範分數](compliance-score-methodology.md)。
+資料保護基準評估是用來計算您的初始分數，然後再設定其他評估。 在您第一次造訪時，合規性分數已經從您的 Microsoft 365 解決方案中收集信號。 您將會很快看到組織相對於重要資料保護標準與法規的執行方式，並查看建議採取的改進動作。
 
+由於每個組織都有特定需求，因此符合您的需求取決於您設定和管理您自己的評估，以更好地緩解風險。 例如，如果您的組織屬於金融服務行業，您可能會想要新增 FFIEC 評估。 如果您的組織屬於醫療保健行業，您可以新增 HIPAA/高科技評估。
 
-## <a name="key-components-controls-assessments-templates-groups"></a>主要元件：控制項、評估、範本、群組
+#### <a name="learn-more"></a>深入了解
 
-合規性分數使用多個元件，協助您管理相容性活動。 當您使用相容性分數指派、測試及監視合規性活動時，對重要元件有基本的瞭解是很有説明的：控制項、評估、範本和群組。
+[瞭解如何計算和持續監控規範分數](compliance-score-methodology.md)。
+
+[在合規性分數中建立及管理評估](compliance-score-assessments.md)。
+
+## <a name="key-components-controls-assessments-templates-improvement-actions"></a>主要元件：控制項、評估、範本、改進動作
+
+合規性分數使用多個元件，協助您管理相容性活動。 當您使用相容性分數指派、測試及監視合規性活動時，對重要元件具有基本的瞭解會很有説明：控制項、評估、範本及改進動作。
 
 ### <a name="controls"></a>控制項
 
-控制項定義如何評估和管理系統設定、組織程式，以及負責滿足法規、標準或內部原則的特定需求的人員。
+控制項是法規、標準或原則的必要條件。 它會定義如何評估和管理系統設定、組織處理常式，以及負責滿足法規、標準或原則的特定需求的人員。
 
 合規性分數追蹤兩種類型的控制項：
 
-1. **Microsoft 受管理的控制項**： microsoft cloud services 的控制項，microsoft 負責執行這種服務
-2. **客戶管理的控制項**：由您的組織管理的控制項，由您負責執行
- 
+1. **Microsoft managed controls**： microsoft 雲端服務的控制項，microsoft 負責執行這種服務
+2. **您的控制項**：有時候稱為客戶控制項，這些是由您的組織所實施及管理的控制項。
+
+#### <a name="learn-more"></a>深入了解
+
+[監視控制項的進度](compliance-score-assessments.md#monitor-assessment-progress-and-controls)。
+
 ### <a name="assessments"></a>評估
 
-評估是一項範本評估，可對您的組織發起計分程式。 評估群組符合標準、法規或法律需求所需的動作。 例如，您可能會有一個評估，當您完成其中的所有動作時，您的 Office 365 設定會以 ISO 27001 的需求為依據。
-
-合規性分數為您的組織提供以 Microsoft 365 資料保護基準為基礎的初始評估。 這種評估是降低資料保護和合規性風險的建議（[深入瞭解](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)）。
+評估是指來自特定法規、標準或原則的控制項群組。 完成評估內的動作可協助您符合標準、法規或法律的需求。 例如，您可能會有一個評估，當您完成其中的所有動作時，會以 ISO 27001 需求為依據，使您的 Microsoft 365 設定成為線上。
 
 評估包含數個元件：
 
 - **範圍內的服務**：適用于評估的特定 Microsoft 服務集合
-- **Microsoft 管理控制項**： microsoft 所實施及測試的控制項
-- **客戶管理的控制項**：您管理的控制項
-- **評估分數**：完成該評估中的動作可取得的點數百分比
+- **Microsoft managed controls**： microsoft 實施及測試的控制項
+- **您的控制項**：您管理的控制項
+- **評估分數**：完成該評估中的改進動作所能達到的點數百分比
 
-> [!NOTE]
-> 合規性分數會顯示您的評估，以及它們如何影響您的整體分數。 不過，在公開預覽期間，系統會將您導向合規性管理員以管理評估。
+在建立評估時，您會將其指派給**群組**。 您可以以組織最具邏輯的任何方式來設定群組。 例如，您可以依年、組織內的符合性標準、服務、小組或其他方式來群組評估。 一旦您建立群組，您就可以[篩選「合規性分數」儀表板](compliance-score-setup.md#filtering-your-dashboard-view)，以查看一或多個群組的分數。
 
-[在合規性管理員中查看管理評估](working-with-compliance-manager.md#assessments)的詳細指示。
+#### <a name="learn-more"></a>深入了解
+
+[在合規性分數中建立及管理評估](compliance-score-assessments.md)。
 
 ### <a name="templates"></a>範本
 
-合規性分數可提供預先設定的範本進行評估。 您也可以將自己的控制項和動作新增至預先設定的範本，以建立自訂評估。 例如，您可以為商務程式控制建立範本，或為區域資料保護或符合性標準（其中一個預先設定的範本尚未涵蓋）建立範本。 透過將您自己的範本引入合規性分數，您不僅可以追蹤 Microsoft 雲端評估，還可以追蹤組織範圍內任何其他風險評估。
+合規性分數提供可讓您快速建立評估的範本。 您可以修改這些範本，以依據您的需求建立評估優化。 您也可以使用自己的控制項和動作來開發您自己的範本，以建立自訂評估。 例如，您可能想要範本涵蓋內部的商務程式控制，或一個我們的範本未涵蓋的地區性資料保護標準。
 
-符合性分數的預先設定範本如下：
+建立您自己的範本，讓您不僅可以追蹤 Microsoft 雲端評估，還可以追蹤組織範圍內的任何其他風險評估。
 
-1. [巴西一般資料保護法（LGPD）](https://go.microsoft.com/fwlink/?linkid=2115387)
-2. [加州消費者隱私權法案（CCPA）](https://go.microsoft.com/fwlink/?linkid=2108871) （預覽）
-3. [雲端安全性同盟（CSA） Cloud Controls 矩陣（CCM）3.0。1](https://go.microsoft.com/fwlink/?linkid=2109076)
-4. [杜拜資訊安全性解析（DGISR）](https://go.microsoft.com/fwlink/?linkid=2131193)
-5. [歐盟 GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-6. [聯邦金融機構檢查委員會（FFIEC）資訊安全性手冊](https://go.microsoft.com/fwlink/?linkid=2109077)
-7. [FedRAMP 適中](https://go.microsoft.com/fwlink/?linkid=2108869)
-8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078)  / 高[科技](https://go.microsoft.com/fwlink/?linkid=2109079)
-9. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709)  / [澳大利亞政府 ISM](https://go.microsoft.com/fwlink/?linkid=2113024) （預覽）
-10. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-11. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-12. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-13. [Microsoft 365 資料保護基準](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-14. [NIST 800-53 Rev 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-15. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-16. [NIST Cybersecurity Framework （CSF）](https://go.microsoft.com/fwlink/?linkid=2108868)
-17. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
-18. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
+#### <a name="learn-more"></a>深入了解
 
-針對在合規性管理員中所進行的範本，查看[建立範本的詳細指示](working-with-compliance-manager.md#templates)。
+[在建立評估時，查看合規性分數中可用的範本](compliance-score-templates.md)。
 
-### <a name="groups"></a>群組
+[取得建立及修改範本合規性管理員的詳細指示](working-with-compliance-manager.md#templates)。
 
-群組可讓您以合理的方式組織評估。 例如，您可以選擇依年、符合標準、服務、組織內的小組或其他方式來群組評估。
+### <a name="improvement-actions"></a>改進動作
 
-當同一個群組中的兩個不同評估共用客戶管理的動作時，在一個評估中對該動作執行詳細資料、測試及狀態所做的更新，會自動同步處理至群組中任何其他評估中的相同動作。 以這種方式同步處理動作會使指派的「改進」動作統一整個群組，並減少重複的工作。
+改進相容性活動的改進動作。 每個改進動作都提供詳細的執行指導，以協助您與資料保護法規和標準相符。 動作可指派給組織中的使用者，以執行實施和測試工作。 您也可以在改進動作中儲存檔、記事及記錄狀態更新。
 
-瞭解如何[在合規性管理員中建立群組](working-with-compliance-manager.md#groups)。 一旦您建立群組，您就可以[篩選「合規性分數」儀表板](compliance-score-setup.md#filtering-your-dashboard-view)，以查看一或多個群組的分數。
+#### <a name="learn-more"></a>深入了解
 
-## <a name="next-step-begin-setup"></a>後續步驟：開始安裝程式
+[使用提高的動作來管理您的合規性工作流程](compliance-score-improvement-actions.md)。
 
-瞭解如何登入、設定許可權，以及設定[相容性分數設定](compliance-score-setup.md)的更新及儀表板視圖。
+## <a name="next-steps-set-up-and-customize"></a>後續步驟：設定和自訂
+
+瞭解如何登入、設定許可權和角色、設定安全分數更新，以及在[相容性分數設定](compliance-score-setup.md)時個人化儀表板視圖。
+
+然後，[設定評估](compliance-score-assessments.md)以開始自訂群組織的合規性分數。

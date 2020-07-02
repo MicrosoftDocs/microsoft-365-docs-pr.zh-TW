@@ -1,5 +1,5 @@
 ---
-title: Microsoft 合規性分數常見問題
+title: Microsoft 合規性分數（預覽）常見問題
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,18 +14,22 @@ search.appverid:
 - MOE150
 - MET150
 description: 尋找 Microsoft 合規性分數的常見問題解答，協助組織簡化及自動化風險評估。
-ms.openlocfilehash: 942de8f8cc9eeb958cb7f8e96c9e7038447ce3f1
-ms.sourcegitcommit: ff62dd99fa0d4e780da25dc622f93ddc8f7f95a0
+ms.openlocfilehash: 6ba71620d689e6d028b61ff24f7c837337ef60c6
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141558"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016198"
 ---
-# <a name="microsoft-compliance-score-preview-frequently-asked-questions"></a>Microsoft 合規性分數（預覽）常見的常見問題
+# <a name="compliance-score-preview-frequently-asked-questions"></a>合規性分數（預覽）常見的常見問題
 
 ## <a name="what-is-compliance-score"></a>合規性分數為何？
 
-Microsoft 合規性分數是[microsoft 365 規範中心](microsoft-365-compliance-center.md)的預覽功能，可協助您瞭解組織的合規性狀況。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 合規性分數提供內建的控制項對應，可協助在重要的規章和標準之間連接一般控制項，因此您可以採取一個動作來同時滿足多種需求，以及更好地擴充您的合規性計畫。
+Microsoft 合規性分數是[microsoft 365 規範中心](microsoft-365-compliance-center.md)的預覽功能，可協助您瞭解組織的合規性狀況。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 合規性分數提供內建的控制項對應，可協助在重要的規章和標準之間連接一般控制項。 這種對應可讓您同時採取一個動作來滿足多種需求，以協助您擴充規範計畫。
+
+## <a name="whats-new-in-the-preview-version-of-compliance-score"></a>預覽版本的相容性分數的新功能為何？
+
+請造訪[規範分數版本](compliance-score-release-notes.md)資訊，以瞭解功能更新及已知問題。
 
 ## <a name="how-do-i-access-compliance-score"></a>如何存取合規性分數？
 
@@ -33,17 +37,21 @@ Microsoft 合規性分數是[microsoft 365 規範中心](microsoft-365-complianc
 
 ## <a name="what-roles-or-permissions-are-needed-to-use-compliance-score"></a>使用合規性分數所需的角色或許可權為何？
 
-合規性分數使用以角色為基礎的存取控制（RBAC）許可權模型，您可以執行的動作取決於指派給您的角色類型。 貴組織的 Microsoft 365 全域系統管理員是可以執行安裝程式功能，並在合規性分數中管理角色的人員。 使用者至少需要**AZURE AD 全域讀卡機**角色，才能以合規性分數讀取資料。 若要深入瞭解，請參閱[相容性分數設定](compliance-score-setup.md)的許可權、角色及設定程式。
+合規性分數使用以角色為基礎的存取控制（RBAC）許可權模型。 您可以執行的動作會根據指派給您的角色類型而定。 貴組織的 Microsoft 365 全域系統管理員是可以執行安裝程式功能，並在合規性分數中管理角色的人員。 使用者至少需要**AZURE AD 全域讀卡機**角色，才能以合規性分數讀取資料。 若要深入瞭解，請參閱[相容性分數設定](compliance-score-setup.md)的許可權、角色及設定程式。
 
 ## <a name="what-is-the-difference-between-compliance-score-and-compliance-manager"></a>合規性分數和合規性管理員之間的差異為何？
 
-合規性分數和合規性管理員共用相同的後端，但是它們位於兩個不同的位置（合規性分數是在 Microsoft 365 規範中心內，而合規性管理員是在 Microsoft 服務信任入口網站中）。 請將合規性分數視為合規性管理員簡化版本，讓您能更完整地瞭解組織目前的相容性狀況，以及您可以採取的步驟加以改善。 雖然您可以直接在合規性分數內執行許多動作，但現在仍存在合規性管理員中的部分功能。 閱讀相關的[相容性分數和合規性管理員之間的關係](compliance-score.md#relationship-to-compliance-manager)。
+合規性分數和合規性管理員共用相同的後端。 您在某項工具中執行的任何動作都會以其他工具呈現。 其位於兩個不同的位置：相容性分數是在 Microsoft 365 規範中心內，而合規性管理員是在 Microsoft 服務信任入口網站中。 請將合規性分數視為合規性管理員簡化版本，讓您能更完整地瞭解組織目前的相容性狀況，以及您可以採取的步驟加以改善。
 
-## <a name="who-should-use-compliance-score-and-who-should-use-compliance-manager"></a>誰應該使用合規性評分，誰應該使用合規性管理員？
+雖然您可以直接在合規性分數內執行許多動作，但在公開預覽期間，有些功能會在合規性管理員中使用。 閱讀相關的[相容性分數和合規性管理員之間的關係](compliance-score.md#relationship-to-compliance-manager)。
 
-合規性分數適用于組織中扮演監控規範中角色的所有人員，並採取行動以協助遵守法規標準。 遵循合規性分數，您不需要熟悉法規和標準，以協助改善組織的資料保護。 合規性分數是所有使用者的最佳開始位置。 在這裡，您可以看到您的相容性分數，瞭解哪些建議動作可協助將風險降至最低，在許多情況下，請從正確啟動至解決方案以採取這些動作。
+[Microsoft 服務信任入口網站中的 Access 合規性管理員](https://servicetrust.microsoft.com/ComplianceManager/V3)。 請務必從上方導覽下拉式功能表中，**選取 [合規性管理員**] （包含最新的功能），而*不是「合規性管理員」（經典）*，其中包含早期版本功能。
 
-現在，「合規性管理員」是使用者可管理評估及建立自訂範本以建立評估的位置。 深入瞭解在公開預覽期間，[只有合規性管理員才能支援哪些動作](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)。
+## <a name="should-i-use-compliance-score-or-compliance-manager"></a>我應該使用合規性分數還是合規性管理員？
+
+合規性分數對您組織中扮演合規性角色的所有人員十分有用。 遵循合規性分數，您不需要熟悉法規和標準，以協助改善組織的資料保護。 合規性分數是所有使用者的最佳開始位置。 您可以從這裡看到您的合規性分數，瞭解哪些建議動作可協助將風險降至最低，以及管理評估。
+
+現在，「合規性管理員」是您可以建立自訂範本以建立評估的位置。 深入瞭解在公開預覽期間，[只有合規性管理員才能支援哪些動作](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager)。
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>如果我有高分，是否表示我完全相容？
 
@@ -53,15 +61,17 @@ Microsoft 合規性分數是[microsoft 365 規範中心](microsoft-365-complianc
 
 合規性分數可讓您根據 Microsoft 365 資料保護基準（包括常見的行業法規和標準的一組控制項），為您提供初始分數。 此基準主要是從 NIST CSF （國家標準和技術協會 Cybersecurity Framework）和 ISO （國際標準組織的標準化 FedRAMP）和 GDPR （歐盟的一般資料保護法規）和（一般資料保護法規）中的專案來繪製要素。
 
-組織可以建立及新增與其組織更相關的自訂評估。 使用合規性分數的[預先設定的範本](compliance-score.md#templates)之一、使用您自己的控制項和動作自訂 Microsoft 範本，或建立您自己的範本。 閱讀有關如何[使用範本的](working-with-compliance-manager.md#templates)詳細資料。
+組織可以建立及新增與其組織更相關的自訂評估。 使用其中一個合規性分數準備使用[範本](compliance-score-templates.md)、使用您自己的控制項和動作自訂 Microsoft 範本，或建立您自己的範本。 閱讀使用[評估與範本的](compliance-score-assessments.md)詳細資料。
 
-瞭解[相容性分數如何計算您的分數](compliance-score-methodology.md)。
+## <a name="how-does-compliance-score-continuously-assess-my-environment"></a>合規性分數如何持續評估您的環境？
+
+合規性分數會自動掃描您的環境，並使用安全分數偵測系統設定。 深入瞭解[持續性評估](compliance-score-methodology.md#how-compliance-score-continuously-assesses-controls)。
 
 ## <a name="what-is-the-difference-between-compliance-score-and-secure-score"></a>合規性分數與安全評分之間的差異為何？
 
 合規性分數提供組織的資料保護和合規性狀況的廣泛觀點。 合規性分數也提供內建工作流程工具;它可讓組織將工作指派給使用者、追蹤控制項的實施和測試狀態，以及上傳證據及建立審核報告。
 
-Microsoft Secure 得分是一種安全分析工具，可協助您瞭解安全性狀況。 [深入瞭解安全性分數及其運作方式](../security/mtp/microsoft-secure-score.md)。
+Microsoft Secure 得分是一種安全分析工具，可協助您瞭解安全性狀況。 [深入瞭解安全性分數及其運作方式](../security/mtp/microsoft-secure-score-new.md)。
 
 ## <a name="which-cloud-services-are-covered-by-compliance-score"></a>合規性分數涵蓋了哪些雲端服務？
 
@@ -71,11 +81,11 @@ Microsoft Secure 得分是一種安全分析工具，可協助您瞭解安全性
 
 雖然合規性分數只會針對 Microsoft 雲端服務提供連續監控和建議的動作，但您可以在內部部署、協力廠商服務的合規性管理員中新增自訂評估。 如此一來，您可以使用 Microsoft 合規性分數做為 SaaS 合規性管理工具，協助您管理數位資產中的所有控制項。
 
-您可以使用合規性分數的[預先設定的範本](compliance-score.md#templates)之一來建立特定標準的評估，或[建立您自己的範本](working-with-compliance-manager.md#create-a-template)。
+您可以使用其中一個合規性分數來使用[範本](compliance-score-templates.md)來建立特定標準的評估，或[建立您自己的範本](working-with-compliance-manager.md#create-a-template)，您必須在合規性管理員中執行。
 
 ## <a name="how-do-i-delete-a-template-or-assessment-i-no-longer-need"></a>如何刪除不再需要的範本或評估？
 
-您無法刪除評估或範本，但可將其從您的視圖中隱藏。 查看[隱藏評估的指示](working-with-compliance-manager.md#hide-a-template-or-an-assessment)。
+若要刪除評估，請開啟您想要刪除的評估，然後選取 [**刪除評估**]。 請注意，刪除評估是永久性的。 查看有關[刪除評估](compliance-score-assessments.md#delete-an-assessment)的其他詳細資料。 刪除評估並不會刪除其範本。 無法刪除範本，但可在視圖中隱藏。 查看[隱藏範本的指示](working-with-compliance-manager.md#hide-a-template-or-an-assessment)。
 
 ## <a name="what-test-procedures-does-microsoft-follow-for-controls"></a>Microsoft 針對控制項所遵循的測試程式為何？
 

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 14de9d84ef19be3dcf1e630b2814a6060bfe7f27
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 250d19a09d79fc5fd8c69f2ebd24abadc642fafc
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036496"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005843"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 
@@ -66,7 +66,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 // Finds PowerShell execution events that could involve a download
 ```
 
-查詢本身通常會以資料表名稱開頭，後面接著管道 (`|`) 開始的一系列元素。 在此範例中，我們會從建立兩個表格的同盟`DeviceProcessEvents`開始`DeviceNetworkEvents`，並視需要新增管線元素。
+查詢本身通常會以資料表名稱開頭，後面接著管道 (`|`) 開始的一系列元素。 在此範例中，我們會從建立兩個表格的同盟開始，並 `DeviceProcessEvents` `DeviceNetworkEvents` 視需要新增管線元素。
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -81,7 +81,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ### <a name="check-specific-processes"></a>檢查特定進程
 時間範圍後緊接著搜尋代表 PowerShell 應用程式的處理常式檔案名。
 
-```
+```kusto
 // Pivoting on PowerShell processes
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
@@ -102,7 +102,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="customize-result-columns-and-length"></a>自訂結果欄及長度 
-現在您的查詢已清楚識別出您要尋找的資料，您可以新增元素來定義結果。 `project`會傳回特定的欄`top` ，並限制結果的數目。 這些運算子可協助確保結果具有適當的格式，且易於處理。
+現在您的查詢已清楚識別出您要尋找的資料，您可以新增元素來定義結果。 `project`會傳回特定的欄，並 `top` 限制結果的數目。 這些運算子可協助確保結果具有適當的格式，且易於處理。
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 

@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 瞭解如何使用 Complance 總分和合規性管理員來改善個人資料的保護層級。
-ms.openlocfilehash: 0d95c663030cf63fb83dfd40c7f3605c1c0b6f8f
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695170"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016364"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>使用合規性分數和合規性管理員管理改進動作
 
@@ -109,7 +109,7 @@ Microsoft 合規性分數和合規性管理員可以搭配使用，以管理與�
 
 ## <a name="compliance-score"></a>合規性分數
 
-在合規性管理員中執行「評估與複查」規格之後，您現在可以移至 [[規範分數](../compliance/working-with-compliance-score.md)] 工具，並進一步查看分數及切片，並進一步切向資料（包括透過控制區域）。
+在合規性管理員中執行「評估與複查」規格之後，您現在可以移至 [[規範分數](../compliance/compliance-score.md)] 工具，並進一步查看分數及切片，並進一步切向資料（包括透過控制區域）。
 
 Microsoft 365 合規性系統管理中心中的合規性分數工具提供數種方法，可檢查及篩選從合規性管理員和各種 Microsoft 365 服務取得的規範資料。 這項工具會在實施各種設定設定時會自動更新，並與 Microsoft 安全分數共用信號，這樣許多改進動作都會以這兩個分數顯示。 
  
@@ -141,7 +141,7 @@ Microsoft 365 合規性系統管理中心中的合規性分數工具提供數種
 
 - 每個資料隱私權規定都結合了技術控制、檔規格，以及作業、程式和報表需求。 所有這些動作都會顯示在改進動作中。 
 
-- 本文著重于針對合規性管理員和合規性分數中所指定之資料隱私權的技術控制項子集。 如需非技術管理控制的詳細資訊，請參閱合規性管理員工具及[檔](../compliance/working-with-compliance-score.md)。
+- 本文著重于針對合規性管理員和合規性分數中所指定之資料隱私權的技術控制項子集。 如需非技術管理控制的詳細資訊，請參閱合規性管理員工具及[檔](../compliance/compliance-score.md)。
 
 - 若要將改進動作的查看重點放在您感興趣的區域中，您可以在合規性分數管理員的 [**解決方案**] 索引標籤中篩選動作類型。
 

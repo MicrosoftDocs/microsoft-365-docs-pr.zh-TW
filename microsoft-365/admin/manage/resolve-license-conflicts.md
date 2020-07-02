@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- Adm_NonTOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: 瞭解如何解決與 Microsoft 365 for business 訂閱的授權衝突。
-ms.openlocfilehash: 05efe9e75b051ece900ba9defe047f1244b713a9
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2270fd3ad831ec0ad92ac4eddec5f08a1d07f8be
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399665"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015968"
 ---
 # <a name="resolve-license-conflicts"></a>解決授權衝突
 
@@ -59,7 +59,6 @@ ms.locfileid: "44399665"
 
 ::: moniker-end
 
-
 2. 檢查 [**狀態**] 欄，以取得與衝突相關的資訊。 如果發生衝突，您會看到一則警告訊息，指出一或多個使用者需要有效的授權。
 
     > [!NOTE]
@@ -69,7 +68,7 @@ ms.locfileid: "44399665"
 
 您可以從[購買更多授權](../../commerce/licenses/buy-licenses.md)或[從不再需要授權的使用者中移除](remove-licenses-from-users.md)授權，來解決授權衝突。 您可以選擇性地[刪除使用者帳戶以釋出授權](../add-users/delete-a-user.md)。
   
-## <a name="related-articles"></a>相關文章 
+## <a name="related-articles"></a>相關文章
 
 [將授權指派給使用者](assign-licenses-to-users.md)
   

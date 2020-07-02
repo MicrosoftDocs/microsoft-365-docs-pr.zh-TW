@@ -5,108 +5,86 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
-audience: Admin
+ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_O365
 - Adm_TOC
 - commerce
-search.appverid:
-- MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
-description: '深入瞭解 Microsoft 365 for business 中的訂閱與授權，並知道誰可以指派授權，以及當您指派授權給某人時會發生什麼情況。 '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: f83b2069bd1b4c86e2198252a54ed2e8e5c55a04
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+- manage_licenses
+search.appverid:
+- MET150
+description: 深入瞭解 Microsoft 365 for business 中的訂閱與授權。
+ms.date: 07/01/2020
+ms.openlocfilehash: 9f8576b00b942c4b38d6192770bd2128afb4b104
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844677"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015956"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>瞭解 Microsoft 365 for business 中的訂閱與授權
 
-本文說明訂閱與授權之間的關係，並提供其他有關[誰可以指派授權](#find-out-who-can-assign-licenses)的資訊，[瞭解當您指派授權給某人時所發生的情況](#understand-what-happens-when-you-assign-a-license-to-someone)，以及[人員可以在哪個裝置上安裝 Office](#how-many-devices-can-people-install-office-on)。 此外，它也包含[瞭解非使用者信箱之授權的](#understand-licenses-for-non-user-mailboxes)連結，以及[管理授權的相關文章](#articles-about-managing-licenses)。
-  
-當您為商務用 Microsoft 365 購買訂閱時，您會註冊一組應用程式和服務，以每月或每年的頻率支付。 您在訂閱中所收到的應用程式和服務，取決於您購買的是哪一種產品，例如 Microsoft 365 Apps for business Standard 或 Microsoft 365 Business Standard。 您可以在「[購買 Microsoft 365」頁面](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)上查看每個產品隨附的功能。 
+當您為商務用 Microsoft 365 購買訂閱時，您會註冊一組應用程式和服務，以每月或每年的頻率支付。 您在訂閱中所收到的應用程式和服務，取決於您購買的是哪一種產品，例如 Microsoft 365 Apps for business Standard 或 Microsoft 365 Business Standard。 您可以在適用于中小型 [企業的 Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)頁面上，看到每個產品隨附的各項產品。
 
-您可以在適用于中小型[企業的 Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)中查看不同的授權選項
+購買訂閱時，您會依據貴組織中的人數，指定您所需的「授權」數目。 購買訂閱後，您會為組織中的人員建立帳戶，然後將授權指派給每個人。 當您的組織需要變更時，您可以購買更多授權，以容納新人員，或在某人離開您的組織時，將授權重新指派給其他使用者。
 
-購買訂閱時，您會依據貴組織中的人數，指定您所需的「授權」數目。 完成購買後，您會為人員建立帳戶，並指派授權給每個人。 當您的組織需要變更時，您可以購買更多授權，以容納新人員，或在某人離開您的組織時，將授權重新指派給其他使用者。 
+如果您有多個訂閱，您可以針對每個訂閱指派授權給人員。 例如，您可以將所有的使用者指派給所有的 Microsoft 365 應用程式和服務，做為 Microsoft 365 商務標準訂閱的一部分。 您也可以透過個別的 Visio 訂閱，將使用者的子集指派給 Visio Online。
 
-如果您有多個訂閱，您可以針對每個訂閱指派授權給人員。 例如，您的所有使用者都可以指派給所有 Microsoft 365 應用程式和服務做為 Microsoft 365 商務標準訂閱的一部分，而使用者的子集也可以透過個別的 Visio 訂閱指派給 Visio Online。 
+## <a name="how-many-devices-can-people-install-office-on"></a>使用者可以在多少部裝置上安裝 Office？
 
-  
-## <a name="find-out-who-can-assign-licenses"></a>找出誰可以指派授權
+如果您的訂閱包含下列任何產品，每一位人員最多可以在5部 Pc 或 Mac、五部平板電腦和五部手機上安裝 Office。
 
-Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-  
-|**系統管理員角色**|**指派授權**|**移除授權**|**購買更多授權**|**刪除帳戶**|
-|:-----|:-----|:-----|:-----|:-----|
-|全域系統管理員  <br/> |是  <br/> |是  <br/> |是  <br/> |是  <br/> |
-|計費系統管理員  <br/> |否  <br/> |否  <br/> |是  <br/> |否  <br/> |
-|使用者管理系統管理員  <br/> |是  <br/> |是  <br/> |否  <br/> |是  <br/> |
-|服務系統管理員  <br/> |否  <br/> |否  <br/> |否  <br/> |否  <br/> |
-|密碼系統管理員  <br/> |否  <br/> |否  <br/> |否  <br/> |否  <br/> |
-   
-## <a name="understand-what-happens-when-you-assign-a-license-to-someone"></a>了解當您指派授權給某人時會發生什麼情況
+:::row:::
+   :::column span="":::
+        -Microsoft 365 應用程式商務應用程式-microsoft 365 應用程式-Microsoft 365 Business Standard-microsoft 365 Business Premium-microsoft 365 A3-Microsoft 365 A5
+   :::column-end:::
+   :::column span="":::
+        -Microsoft 365 E3-Microsoft 365 E5-Office 365 A1 Plus-Office 365 A3-Office 365 A5-Office 365 E3-Office 365 E5
+   :::column-end:::
+:::row-end:::
+
+## <a name="what-happens-when-you-assign-a-license-to-someone"></a>當您指派授權給某人時會發生什麼情況？
 
 下表列出當您指派授權給某人時會自動發生的情況：
   
 |**如果訂閱含有此服務**|**會自動發生以下情況**|
 |:-----|:-----|
-|Exchange Online  <br/> |系統會為該人員建立信箱。  <br/> 若要瞭解此工作完成的 SLA，請參閱「[設定 ...」Microsoft 365 系統管理中心中的郵件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
+|Exchange Online  <br/> |系統會為該人員建立信箱。 <br/> 若要瞭解此工作完成的 SLA，請參閱「[設定 ...」Microsoft 365 系統管理中心中的郵件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
 |SharePoint Online  <br/> |系統會指派預設 SharePoint Online 小組網站的編輯權限給該人員。  <br/> |
-|商務用 Skype Online  <br/> |該人員會獲得授權相關功能的存取權限。  <br/> |
-|Microsoft 365 Apps 企業版  <br/> |該人員可在最多 5 部 Mac 或 PC、5 台平板電腦和 5 支智慧型手機上下載 Microsoft Office。  <br/> |
-   
-## <a name="how-many-devices-can-people-install-office-on"></a>使用者可以在多少部裝置上安裝 Office？
+|商務用 Skype Online  <br/> |人員可以存取與授權相關聯的功能。  <br/> |
+|Microsoft 365 Apps 企業版  <br/> |使用者最多可以將 Office 應用程式下載到五台 Mac 或電腦、五台平板電腦和五部 smartphone。  <br/> |
 
-如果您的訂閱包含下列任何產品，每個人員都能在最多 5 部 Mac 或 PC、5 台平板電腦和 5 支智慧型手機上安裝 Office。
-  
-- Microsoft 365 Apps 商務版
-    
-- Microsoft 365 商務標準版
-    
-- Microsoft 365 Apps 企業版
-    
-- Office 365 Enterprise E3
-    
-- Office 365 企業版 E5
-    
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>了解非使用者信箱的授權
 
 You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
   
 - [建立共用信箱](../../admin/email/create-a-shared-mailbox.md)
-    
-- [Exchange Online 中的共用信箱](https://go.microsoft.com/fwlink/p/?linkid=847433)，適用于所有其他 Microsoft 365 方案。 
-    
-- [建立及管理會議室信箱](https://go.microsoft.com/fwlink/p/?linkid=847434)
-    
-- [管理設備信箱](https://go.microsoft.com/fwlink/p/?linkid=847435) (機器翻譯)
-    
-## <a name="articles-about-managing-licenses"></a>管理授權的相關文章
+- [從共用信箱中移除授權](../../admin/email/remove-license-from-shared-mailbox.md)
+- [Exchange Online 中的共用信箱](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes)，適用于所有其他 Microsoft 365 方案。
+- [建立及管理會議室信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-room-mailboxes)
+- [管理設備信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-equipment-mailboxes) (機器翻譯)
 
-- [將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md)
-    
-- [從使用者移除授權](../../admin/manage/remove-licenses-from-users.md)
-    
-- [購買訂閱授權](buy-licenses.md)
-    
-- [購買其他訂閱](../buy-another-subscription.md)
-    
-- [購買或編輯附加元件](../buy-or-edit-an-add-on.md)
-    
-- [從您的訂閱中移除授權](remove-licenses-from-subscription.md)
-    
-- [解決授權衝突](../../admin/manage/resolve-license-conflicts.md) (機器翻譯)
-    
-- [管理 Yammer 使用者授權](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365)
+## <a name="who-can-assign-licenses"></a>誰可以指派授權？
+
+Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+  
+|**系統管理員角色**|**指派授權**|**取消指派授權**|**購買更多授權**|**刪除帳戶**|
+|:-----|:-----|:-----|:-----|:-----|
+|計費系統管理員  <br/> |否  <br/> |否  <br/> |是  <br/> |否  <br/> |
+|全域系統管理員  <br/> |是  <br/> |是  <br/> |是  <br/> |是  <br/> |
+|授權系統管理員 <br/> |是 <br/>|是 <br/> |否 <br/> |否 <br/> |
+|服務支援系統管理員  <br/> |否  <br/> |否  <br/> |否  <br/> |否  <br/> |
+|使用者系統管理員  <br/> |是  <br/> |是  <br/> |否  <br/> |是  <br/> |
+
+## <a name="related-content"></a>相關內容
+
+[購買或移除商務用訂閱的授權](buy-licenses.md)（文章） \
+[將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md)（文章） \
+[從使用者取消指派授權](../../admin/manage/remove-licenses-from-users.md)（文章） \
+[從共用信箱中移除授權](../../admin/email/remove-license-from-shared-mailbox.md)（文章）
