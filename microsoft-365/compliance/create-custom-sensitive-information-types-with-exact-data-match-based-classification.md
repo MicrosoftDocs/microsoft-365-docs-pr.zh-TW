@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e6574d59fef98e026da31a21dab9189d2af4581e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b29ff790dbfafb281325879904fe5bfa71fdcf17
+ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818002"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45023334"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -469,7 +469,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 5. 在 [選擇位置] **** 索引標籤上，選取 [讓我選擇特定位置] ****，然後選擇 [下一步] ****。
 
-6. 在 [狀態] **** 資料行中，選取 [Exchange 電子郵件、OneDrive 帳戶、Teams 交談和頻道訊息] **** ，然後選擇 [下一步] ****  (注意：SharePoint 網站目前不支援 EDM，因此 DLP 原則將不會在 EDM 的 Sharepoint 中偵測檔案)
+6. 在 [狀態] **** 資料行中，選取 [Exchange 電子郵件、OneDrive 帳戶、Teams 交談和頻道訊息] **** ，然後選擇 [下一步] **** 
 
 7. 在 [原則設定] **** 索引標籤上，選擇 [使用進階設定] ****，然後選擇 [下一步] ****。
 
@@ -506,7 +506,3 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
 [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
-
-## <a name="feedback"></a>意見反應
-
-已啟用 GitHub 意見反應，但只能在公用網站上新增問題。

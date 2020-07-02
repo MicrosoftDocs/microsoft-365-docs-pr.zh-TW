@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 365 中的 Windows 資訊保護並且進行部署。
-ms.openlocfilehash: 66c9e10772edb0782096ba120858e895684255b2
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c7b76ef28d41810d6e9e45e98adb7a94cf8ae2f4
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43631642"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005719"
 ---
 # <a name="step-4-configure-windows-information-protection"></a>步驟 4： 設定 Windows 資訊保護
 
@@ -37,11 +37,14 @@ Windows 資訊保護 (WIP) 可協助保護 Windows 10 裝置上的此類資料�
 若要在貴組織中使用 Microsoft 365 企業版部署 WIP：
 
 1. 在 Intune 中註冊您的 Windows 裝置。 您應該在[階段 5：行動裝置管理](mobility-infrastructure.md)中完成這項作業。
-2. 建立[適用於 WIP 的 Intune 原則](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-  - 請確定您已填寫受保護的應用程式清單。
-  - 選擇您的 WIP 保護等級。
 
-您也可以搭配使用 WIP 和 [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm)。 
+2. 建立[適用於 WIP 的 Intune 原則](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+
+   -    請確定您已填寫受保護的應用程式清單。
+  
+   - 選擇您的 WIP 保護等級。
+
+您也可以搭配使用 WIP 和 [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr)。 
 
 如需詳細資訊，請參閱 [WIP 最佳做法]( https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip)
 

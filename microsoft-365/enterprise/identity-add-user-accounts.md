@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 直接在雲端中，或透過與內部部署目錄同步處理來新增使用者帳戶和群組。
-ms.openlocfilehash: 324d4662f868a4a92693b43c6bc0f75c11f20519
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.openlocfilehash: 2a54044737f5b924bd619d5a6c7c72091dc7a0d1
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633101"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005831"
 ---
 # <a name="step-4-add-your-user-accounts"></a>步驟 4：新增使用者帳戶
 
@@ -49,12 +49,12 @@ Azure AD Connect 是支援的 Microsoft 工具，可逐步引導您將單一或�
 1. 在伺服器上執行的 Azure AD Connect 會輪詢 AD DS 以了解帳戶、群組和連絡人是否有變更。
 2. Azure AD Connect 會將這些變更傳送至 Microsoft 365 月租方案的 Azure AD 租用戶。
 
-混合式身分識別解決方案中的第一個決策是驗證需求。選項如下：
+The first decision in your hybrid identity solution is your authentication requirement. The following options are options:
 
-- 使用**受控驗證**，Azure AD 會處理使用者登入的驗證程序。受控驗證有兩種方法： 
+- With **managed authentication**, Azure AD handles the authentication process for user sign-in. There are two methods for managed authentication: 
     - **密碼雜湊同步處理 (PHS)** [某些進階功能的建議和必要方法]。 這是最簡單的方法，可為 Azure AD 中的內部部署目錄物件啟用驗證功能。 Azure AD Connect 會從 AD DS 擷取雜湊的密碼、對密碼雜湊進行額外的安全性處理，並將其同步處理到 Azure AD。 如需詳細資訊，請參閱[使用 Azure AD Connect 同步實作密碼雜湊同步處理](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。
     - **傳遞驗證 (PTA)**，會針對以 Azure AD 為基礎的服務提供簡單的密碼驗證解決方案。 PTA 會使用在一或多個內部部署伺服器上執行的代理程式來直接向內部部署 AD DS 驗證使用者驗證。 如需詳細資訊，請參閱[使用 Azure Active Directory 傳遞驗證的使用者登入](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)。
-- 使用**同盟驗證**，在使用者登入時，會透過身分識別同盟伺服器 (例如 Active Directory 同盟服務 (AD FS))，將驗證程序重新導向到另一個身分識別提供者。身分識別提供者可以提供額外的驗證方法，例如智慧卡驗證。如需詳細資訊，請參閱[針對 Azure Active Directory 混合式身分識別解決方案選擇正確的驗證方法](https://docs.microsoft.com/azure/security/azure-ad-choose-authn)。
+- With **federated authentication**, the authentication process is redirected to another identity provider through an identity federation server, such as Active Directory Federation Services (AD FS), for a user’s sign-in. The identity provider can provide additional authentication methods, such as smartcard-based authentication. For more information, see [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn).
 
 請觀看這段影片，以大略了解 Microsoft 365 企業版的身分識別模型和驗證。
 
@@ -116,7 +116,7 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 如需詳細資訊和設定指示，請參閱 [Azure AD SSPR 密碼回寫](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-writeback)。
 
 >[!Note]
->升級至最新版的 Azure AD Connect，以確保在新版本發行後能夠使用新功能並獲得最佳體驗。如需詳細資訊，請參閱 [Azure AD Connect 的自訂安裝](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom)。
+>Upgrade to the latest version of Azure AD Connect to ensure the best possible experience and new features as they are released. For more information, see [Custom installation of Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-get-started-custom).
 >
 
 |||
