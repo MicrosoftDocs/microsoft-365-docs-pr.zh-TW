@@ -217,7 +217,7 @@
               href: mtp/feedback.md
             - name: 透過 ServiceNow 管理票證
               href: ./mtp/tickets.md
-    - name: Office 365 進階威脅防護
+    - name: Office 365 安全性
       items:
         - name: 開始使用
           items:
@@ -366,7 +366,7 @@
               href: ./office-365-security/security-dashboard.md
             - name: 檢視惡意檔案的相關資訊
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: 進階威脅防護
+        - name: Office 365 進階威脅防護
           href: ./office-365-security/office-365-atp.md
           items:
             - name: 查看新增功能
