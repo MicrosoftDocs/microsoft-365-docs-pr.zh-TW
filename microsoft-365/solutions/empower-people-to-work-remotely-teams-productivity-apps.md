@@ -1,5 +1,5 @@
 ---
-title: 步驟 4： 部署遠端工作者生產力應用程式和服務
+title: 步驟 5： 部署遠端工作者生產力應用程式和服務
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,14 +17,14 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 讓您的使用者透過 Teams、Exchange、SharePoint 和其他 Microsoft 365 服務提高生產力。
-ms.openlocfilehash: 1c621ae797f32cd5b98af4c1eb7a341d0f976938
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: 274780d2b9ea4310eb2cd8c9114bb61c326d33fe
+ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560444"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45005959"
 ---
-# <a name="step-4-deploy-remote-worker-productivity-apps-and-services"></a>步驟 4： 部署遠端工作者生產力應用程式和服務
+# <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步驟 5： 部署遠端工作者生產力應用程式和服務
 
 為提高生產力，人員之間必須能夠溝通並共同作業。 他們需要開會、透過語音和文字交談、建立新內容、共用資訊和檔案、交換電子郵件，以及管理行事曆和工作。 Microsoft 365 為這些關鍵功能提供雲端服務：
 
@@ -90,9 +90,9 @@ Microsoft 365 Apps 對於企業而言，是最具生產力且最安全的 Office
 
 ## <a name="user-training-resources-for-productivity-apps-and-services"></a>以生產力應用程式和服務作為使用者培訓資源
 
-- [在 Office 和 Office 365 上訓練您的使用者](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
+- [在 Office 和 Microsoft 365 上訓練您的使用者](https://support.microsoft.com/office/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)
 - [使用網頁版 Office](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## <a name="next-step"></a>下一步
 
-繼續執行 [步驟 5](empower-people-to-work-remotely-communication-venues.md)，以建立其它可供您的遠端工作人員溝通的場所。
+如需訓練使用者並監視其是否成功，請繼續進行[步驟 6](empower-people-to-work-remotely-train-monitor-usage.md)。
