@@ -17,19 +17,19 @@ search.appverid:
 ms.assetid: ''
 description: 本文概要說明 Microsoft 365 中的高級 eDiscovery，以及內部及外部調查的工具。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 84fbf3bbdc4a4ee08901001f7898355e4c8b2705
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: 5adf2a62aad5e7da476c2713fa18f9e8b6ab9329
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322038"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024785"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高級 eDiscovery 解決方案概述
 
 Microsoft 365 中的「高級 eDiscovery 解決方案」是以 Office 365 中現有的 eDiscovery 和分析功能為基礎。 這個新的解決方案稱為「*高級 eDiscovery*」，提供了端對端工作流程，可保留、收集、審閱、分析及匯出回應組織內部和外部調查的內容。 它也可讓法律團隊管理整個法律封存通知工作流程，以與案例中的保管人進行通訊。 
 
 > [!NOTE]
-> 「高級 eDiscovery」需要 Office 365 或 Microsoft 365 E5 Enterprise 訂閱。 如需有關高級 eDiscovery 授權的詳細資訊，請參閱[Microsoft 365 授權指南以取得安全性 & 符合性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery)。
+> 「高級 eDiscovery」需要 Office 365 或 Microsoft 365 E5 Enterprise 訂閱。 如需有關高級 eDiscovery 授權的詳細資訊，請參閱[Microsoft 365 授權指南以取得安全性 & 合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery)。
 
 ## <a name="alignment-with-edrm"></a>與 EDRM 對齊
 
@@ -59,13 +59,13 @@ Advanced eDiscovery 的內建工作流程會與「電子探索參考模型」（
 
 下列各節將說明在高級 eDiscovery 中內建工作流程中的每個步驟。 下列螢幕擷取畫面顯示名為*Product 債務 2019002*之案例的 [**首頁**] 索引標籤。 附注頁面頂端的工作流程索引標籤會被排序，以與 EDRM 處理常式對齊。 
 
-如需有關在高級 eDiscovery 中的端對端工作流程的詳細資訊，請參閱這段[Microsoft 的機械影片](https://go.microsoft.com/fwlink/?linkid=2066133)。 
+如需有關在高級 eDiscovery 中的端對端工作流程的詳細資訊，請參閱這段[Microsoft 的機械影片](https://go.microsoft.com/fwlink/?linkid=2066133)。
 
 ![Advanced eDiscovery 中的索引標籤追蹤 EDRM 工作流程](../media/aedisco-homepage-1.png)
 
-## <a name="managing-custodians"></a>管理保管人
+## <a name="managing-custodians-and-non-custodial-data-sources"></a>管理保管人和非 custodial 資料來源
 
-使用 [**保管人**] 索引標籤可以新增及管理您已在案例中做為興趣之人員的人員。 當您新增保管人時，您可以快速執行與保管人相關的動作，例如對保管人資料來源進行合法保留、與保管人進行通訊，以及搜尋保管人資料來源，以收集與案例相關的內容。 隨著案例的進展，您可以輕鬆地從案例新增保管人或「發行保管人」。 如需詳細資訊，請參閱[Advanced eDiscovery 中的使用保管人](managing-custodians.md)。
+使用 [**來源**] 索引標籤，新增及管理您已在案例中識別為感興趣的人員，以及其他可能未與保管人相關聯的資料來源。 當您新增保管人或非 custodial 資料來源時，您可以快速執行諸如對保管人和非 custodial 資料來源進行合法保留、與保管人進行通訊，以及搜尋保管人和非 custodial 資料來源的動作，以收集與案例相關的內容。 隨著案例的進展，您可以輕鬆地新增保管人或非 custodial 日期來源，或從案例發行。 如需詳細資訊，請參閱[Advanced eDiscovery 中的使用保管人](managing-custodians.md)。
 
 ## <a name="managing-legal-hold-notifications"></a>管理合法保留通知
 

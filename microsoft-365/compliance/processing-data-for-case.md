@@ -18,18 +18,18 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 閱讀在 Office 365 的「高級 eDiscovery 工具」中處理各種形式之資料的概述。
-ms.openlocfilehash: ec39df5ba8f8ad4ce979b2cd110e14f29f7838b4
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: f9940318ba7355303e8afed1c83bb314d98b86cf
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818782"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024753"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>在高級 eDiscovery 中使用處理錯誤
 
 *處理*程式是檔案識別、內嵌檔和附件、文字提取和 OCR （光學字元辨識）的處理，以及該內容的後續索引的處理常式。  
 
-當您將系統管理員新增至**保管人**索引標籤上的案例時，會處理 Microsoft 365 的所有已部分索引項目目，讓它們完全可供搜尋。 同樣地，當內容新增至 Microsoft 365 和非 Microsoft 365 資料來源的審閱集時，也會處理此內容。
+當您將保管人和非保管人資料來源新增至 [**來源**] 索引標籤上的案例時，會處理 Microsoft 365 的所有已部分索引項目目，讓它們完全可供搜尋。 同樣地，當內容新增至 Microsoft 365 和非 Microsoft 365 資料來源的審閱集時，也會處理此內容。
 
 「高級 eDiscovery」中的 [**處理**] 索引標籤可深入瞭解不同處理案例的高級索引狀態。
 

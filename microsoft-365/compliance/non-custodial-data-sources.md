@@ -14,14 +14,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
-description: 您可以將非 custodial 資料來源新增至高級 eDiscovery 案例，並在資料來源上保留。 非 custodial 資料來源會重新編制索引，因此會重新處理被視為部分索引的任何內容，使其完整且可快速搜尋。
-ms.openlocfilehash: 618d39bfb7be6cd260c88cdf4c57501747f440f1
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+description: 您可以將非 custodial 資料來源新增至高級 eDiscovery 案例，並在資料來源上保留。 非 custodial 的資料來源是重新編制索引的，所以被視為已部分索引的任何內容都會重新處理，以讓它完全且快速可供搜尋。
+ms.openlocfilehash: 2009a8cc82dc9407e9871409e85cdcd321ea9bb0
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695496"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024743"
 ---
 # <a name="add-non-custodial-data-sources-to-an-advanced-ediscovery-case"></a>將非 custodial 資料來源新增至高級 eDiscovery 案例
 
@@ -47,7 +46,7 @@ ms.locfileid: "44695496"
 
    您新增的每個非 custodial 資料來源都會列在 [**資料來源**] 頁面上。
 
-   此外，在案例的 [**工作**] 索引標籤上會建立並顯示名為*重新編制索引非 custodial 資料*的工作。 在建立工作之後，起始的高級索引處理常式和資料來源都會重新編制索引。
+   此外，在案例的 [**工作**] 索引標籤上會建立並顯示名為 [*索引] 非 custodial 資料*的工作。 在建立工作之後，起始的高級索引處理常式和資料來源都會重新編制索引。
 
 ## <a name="managing-the-hold-on-non-custodial-data-sources"></a>在非 custodial 資料來源上管理保留
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 226f147dec7795ce6f8314a04218eab84e609218
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 6fbaa0b57c888f5eaf90a2a30d1850a145c33a80
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937022"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035728"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -32,6 +32,9 @@ ms.locfileid: "44937022"
 ![安全性 & 規範中心內的報告儀表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="compromised-users-report"></a>已遭破壞的使用者報告
+
+> [!NOTE]
+> 這份報告可在 Microsoft 365 組織中使用 Exchange Online 信箱。 在沒有 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）組織中無法使用此功能。
 
 「已**遭破壞的使用者**報告」顯示顯示過去7天內已標示為**可疑**或**限制**的使用者帳戶數目。 在上述任一狀態的帳戶都有問題或甚至遭到破壞。 在經常使用的情況下，您可以使用報表來找出峰值，甚至是趨勢，也就是可疑或受限制的帳戶。 如需遭到破壞之使用者的詳細資訊，請參閱[回應遭到破壞的電子郵件帳戶](responding-to-a-compromised-email-account.md)。
 
@@ -176,7 +179,7 @@ ms.locfileid: "44937022"
 
 若要查看報告，請開啟[安全性 & 規範中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [**垃圾郵件**偵測]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=SpamDetections> 。
 
-![報告儀表板中的垃圾郵件偵測小工具](../../media/spam-detections-widget.png)
+![報告儀表板中的垃圾郵件偵測小工具](../../media/spam-detections-report-widget.png)
 
 如需反垃圾郵件保護的詳細資訊，請參閱[EOP 中的反垃圾郵件保護](anti-spam-protection.md)。
 
@@ -193,12 +196,14 @@ ms.locfileid: "44937022"
 
   當您將游標移到圖表中的某一天（資料點）時，您可以查看該天已封鎖的專案數，以及這些專案的分類方式。
 
-  ![垃圾郵件偵測報告中報表檢視中的動作視圖](../../media/spam-detections-report-action-view.png)
+  ![垃圾郵件偵測報告中的動作視圖](../../media/spam-detections-report-action-view.png)
 
 - **分解方式：方向**：下列方向如下：
 
   - **入境**
   - **出境**
+
+  ![垃圾郵件偵測報告中的方向視圖](../../media/spam-detections-report-direction-view.png)
 
 如果您按一下報表檢視中的**篩選器**，您可以使用下列篩選器修改結果：
 
@@ -266,7 +271,7 @@ ms.locfileid: "44937022"
 
 若要查看報告，請開啟[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [**威脅防護狀態**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPV2AggregateReport> 。
 
-![威脅防護狀態報告](../../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
+![報告儀表板中的威脅防護狀態構件](../../media/threat-protection-status-report-widget.png)
 
 根據預設，圖表會顯示過去7天的資料。 如果您按一下 [**篩選**]，您可以選取90天的日期範圍（試用訂閱可能限制為30天）。 [詳細資料] 表格視圖允許篩選30天。
 
@@ -280,45 +285,55 @@ ms.locfileid: "44937022"
   - **電子郵件網路釣魚**
   - **內容惡意程式碼**
 
-- **資料查看方式：內容 \>惡意**代碼：顯示下列資訊：
+  ![威脅防護狀態報表中的一覽視圖](../../media/threat-protection-status-report-overview-view.png)
+
+- **資料查看方式：內容 \>惡意軟體**<sup>1</sup>：針對 Office 365 ATP 組織顯示下列資訊：
 
   - **反惡意程式碼引擎**
   - **檔引爆**
 
+  ![威脅防護狀態報表中的內容惡意程式碼視圖](../../media/threat-protection-status-report-content-malware-view.png)
+
 - **分解方式：偵測技術**和**查看資料：電子郵件網路釣魚：電子郵件 \> 網路釣魚**：下列資訊會顯示：
 
-  - **ATP 產生的 URL 信譽**<sup>\*</sup>
-  - **高級網路釣魚篩選器**<sup>\*</sup>
+  - **ATP-產生的 URL 信譽**<sup>1</sup>
+  - **高級網路釣魚篩選器**
   - **反欺騙： DMARC 失敗**
   - **反欺騙：組織內**
   - **反欺騙：外部網域**
-  - **品牌模仿**<sup>\*</sup>
-  - **網域模仿**<sup>\*</sup>
+  - **品牌模仿**
+  - **網域**模擬<sup>1</sup>
   - **EOP URL 信譽**
   - **一般網路釣魚篩選器**
   - **別人**
-  - **網路釣魚 ZAP**<sup>\*\*</sup>
-  - **URL 引爆**<sup>\*\*</sup>
-  - **使用者類比**<sup>\*</sup>
+  - **網路釣魚 ZAP**<sup>2</sup>
+  - **URL 引爆**<sup>1</sup>
+  - **使用者**模擬<sup>1</sup>
+
+  ![威脅防護狀態報表中網路釣魚電子郵件的偵測技術視圖](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **分解方式：偵測技術**和**View Data：電子郵件 \> 惡意**代碼：會顯示下列資訊：
 
-  - **ATP 產生的檔信譽**<sup>\*\*</sup>
-  - **反惡意程式碼引擎**
+  - **ATP-產生的檔信譽**<sup>1</sup>
+  - **反惡意程式碼引擎**<sup>1</sup>
   - **反惡意程式碼原則檔案類型區塊**
-  - **檔引爆**<sup>\*\*</sup>
+  - **File 引爆**<sup>1</sup>
   - **惡意檔信譽**
-  - * * 惡意程式碼 ZAP * * * *<sup>\*\*</sup>
+  - **惡意程式碼 ZAP**<sup>2</sup>
   - **別人**
+
+  ![威脅防護狀態報表中惡意程式碼的偵測技術視圖](../../media/threat-protection-status-report-malware-detection-tech-view.png)
 
 - **分解方式：原則類型**和**view data \> ** by：電子郵件惡意程式碼：**電子郵件 \> 惡意**代碼：下列是顯示下列資訊：
 
-  - **反惡意程式碼**<sup>\*\*</sup>
-  - **安全附件**<sup>\*\*</sup>
+  - **反惡意程式碼**
+  - **安全附件**<sup>1</sup>
   - **反網路釣魚**
   - **反垃圾郵件**
   - **郵件流程規則**（也稱為傳輸規則）
   - **別人**
+
+  ![威脅防護狀態報表中仿冒電子郵件的原則類型視圖](../../media/threat-protection-status-report-phishing-policy-type-view.png)
 
 - **分解方式：傳遞狀態**和查看資料：電子郵件的** \> 網路釣魚詐騙**或**view data：電子郵件 \> 惡意**代碼：會顯示下列資訊：
 
@@ -332,9 +347,11 @@ ms.locfileid: "44937022"
   - **內部部署伺服器：已傳送**
   - **隔離區**
 
-<sup>\*</sup>僅限 Office 365 ATP
+  ![威脅防護狀態報表中仿冒電子郵件的傳遞狀態視圖](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-<sup>\*\*</sup>在獨立 EOP 中無法使用零小時自動清除（ZAP）（它只適用于 Exchange Online 信箱）。
+僅限<sup>1</sup>個 OFFICE 365 ATP
+
+<sup>2</sup>個零小時自動清除（ZAP）在獨立 EOP 中無法使用（它只適用于 Exchange Online 信箱）。
 
 如果您按一下 [**篩選**]，您可以使用下列篩選器修改報告：
 
@@ -348,10 +365,10 @@ ms.locfileid: "44937022"
 
 - **資料查看方式：內容 \>惡意**代碼：
 
-- **Date**
-- **位置**
-- **導向者**
-- **惡意軟體名稱**
+  - **Date**
+  - **位置**
+  - **導向者**
+  - **惡意軟體名稱**
 
 - **資料查看方式：一覽**：沒有可用的**視圖詳細資料表格**按鈕。
 
@@ -361,7 +378,7 @@ ms.locfileid: "44937022"
   - **主旨**
   - **Sender**
   - **收件者**
-  - **導向者**
+  - **偵測到**
   - **傳遞狀態**
   - **受損來源**
 
@@ -373,33 +390,31 @@ ms.locfileid: "44937022"
 
 ## <a name="top-malware-report"></a>主要惡意程式碼報告
 
-**主要惡意**代碼報告會顯示[EOP](eop-features.md)偵測到的各種惡意程式碼。
+**主要惡意**代碼報告會顯示[EOP 中的反惡意程式碼防護](anti-malware-protection.md)所偵測到的各種惡意程式碼。
 
-若要查看報告，請開啟[安全性 & 規範中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [**主要惡意**代碼]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=TopMalwaret> 。
+若要查看報告，請開啟[安全性 & 規範中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [**主要惡意**代碼]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=TopMalware> 。
 
-![SCC-EOP 主要惡意程式碼](../../media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
+![報表儀表板中的主要惡意程式碼小工具](../../media/top-malware-report-widget.png)
 
 當您將游標移到圓形圖中的楔形上方時，您可以看到惡意程式碼類型的名稱，以及偵測到該惡意程式碼的郵件數目。
 
-按一下（或點擊）報表，以在新的瀏覽器視窗中開啟它，您可以在其中取得更詳細的報表檢視。
+![主要惡意程式碼報表檢視](../../media/top-malware-report-view.png)
 
-![此報告顯示針對您的組織偵測到的主要惡意程式碼](../../media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
+如果您按一下 [**查看詳細資料] 表格**，您可以看到下列詳細資料：
 
-在圖表下方，您會看到偵測到的惡意程式碼，以及偵測到該惡意程式碼的郵件數目。 請注意，匯總視圖只允許90天的篩選。
+- **主要惡意程式碼**
+- **Count**
+
+如果您按一下 [報表檢視] 或 [詳細資料表格] 視圖中的 [**篩選**]，您可以指定具有**開始日期**和**結束日期**的日期範圍。
 
 ## <a name="url-threat-protection-report"></a>URL 威脅防護報告
 
-在 [報告] 儀表板上，此報告的小工具命名為**URL 保護報告**，而且只有 Office 365 Advanced 威脅防護（ATP）才能使用。 特別是：
-
-- Microsoft 365 E5 訂閱。
-- 對任何包含 Exchange Online Protection （EOP）之其他訂閱的高級威脅防護附加元件（方案 1*或*方案2）。
-
-若要直接移至 [ **URL 威脅防護**] 報告，請開啟] <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
-
 > [!NOTE]
-> 若已套用安全連結原則的使用者沒有選取 [不**追蹤使用者點擊**] 選項，則此報告將不會有按一下其資料的使用者。
+> 這個報告只適用于 Office 365 高級威脅防護（ATP）。 例如，Microsoft 365 E5 訂閱，或 ATP Plan 1 或 ATP Plan 2 附加元件。
 
-![動作中的 URL 威脅防護報告圖形。](../../media/tp-URLThreatProRpt1.PNG)
+**Url 威脅防護報告**可提供偵測威脅的摘要和趨勢視圖，以及在 URL 按一下上進行的動作，做為[ATP 安全連結](atp-safe-links.md)的一部分。 若已套用安全連結原則的使用者沒有選取 [不**追蹤使用者點擊**] 選項，則此報告將不會有按一下其資料的使用者。
+
+若要查看報告，請開啟[安全性 & 規範中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **URL 保護**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
 
 ### <a name="report-view-for-the-url-threat-protection-report"></a>URL 威脅防護報告的報表檢視
 
@@ -417,6 +432,8 @@ ms.locfileid: "44937022"
 
   - **開始日期**和**結束日期**
   - 可供按一下的 [保護動作]，加上**允許**查看所有 URL 點擊資訊的值（不只是封鎖的按一下）。
+
+  ![Url 威脅防護報告中的 URL 按一下保護動作視圖](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
 - **依應用程式按一下 url**：會顯示支援 OFFICE 365 ATP 安全連結之應用程式的 url 按一下數目。
 

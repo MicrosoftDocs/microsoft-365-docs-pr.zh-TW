@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: 瞭解 Microsoft 合規性分數如何根據採取的措施來計算個人化分數，並改善您的相容性狀況。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 552f2f85c4659ec24bc717d41c71733764d898ed
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 69b631dc355ff497d0f6042e0cce6aff3d70e557
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023244"
+ms.locfileid: "45024673"
 ---
 # <a name="compliance-score-preview-calculation"></a>合規性分數（預覽）計算
 
@@ -74,7 +74,7 @@ ms.locfileid: "45023244"
 
  - 不能故意或無意中略過強制執行的**動作**。 範例是設定密碼長度、複雜性和到期設定需求的集中式管理密碼原則。 使用者必須遵循這些需求，才能存取系統。
   
- - **自由動作**視使用者來瞭解原則，並採取相應的動作。 例如，如果原則要求使用者在其離開時鎖定其電腦，則其為自由控制項，因為它會因使用者而異。
+ - **自由動作**視使用者來瞭解原則，並採取相應的動作。 例如，如果原則要求使用者在其保留時鎖定其電腦，則其為自由的動作，因為它會因使用者而異。
   
 ### <a name="preventative-detective-and-corrective-actions"></a>預防性、偵探和修正動作
   

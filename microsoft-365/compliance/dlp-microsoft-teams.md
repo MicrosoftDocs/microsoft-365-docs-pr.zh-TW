@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 您現在可以將 DLP 原則套用至 Microsoft 團隊聊天和頻道。 請閱讀本文以深入瞭解其運作方式。
-ms.openlocfilehash: 2e65800f747b4e6eae4e19e9da92ad2589ac0d4e
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 58a96cea3a45fb640b06e09debd35dd005b15a32
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347852"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024723"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>資料遺失防護和 Microsoft 團隊
 
@@ -113,8 +113,8 @@ ms.locfileid: "44347852"
 
 5. 在 [**選擇位置**] 索引標籤上，保留 [所有位置] 的預設設定，或選取 [**讓我選擇特定位置**]，然後選擇 **[下一步**]。<br/>如果您選擇了特定位置，請為您的 DLP 原則選取這些位置，然後選擇 **[下一步]**。<br/>![DLP 原則位置](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
-    > 如果您想要確定包含機密資訊的檔沒有適當地共用，請確定已開啟**SharePoint 網站**和**OneDrive 帳戶**，以及**小組聊天及通道訊息**。
-    > Microsoft 小組中的通道強烈取決於 Exchange Online 功能。 確定針對通道內容應該套用的原則，也會啟用**Exchange 電子郵件**位置。  
+    > 如果您想要確定包含機密資訊的檔不會在小組中正確共用，請確定已開啟**SharePoint 的網站**和**OneDrive 帳戶**，以及**小組聊天及通道訊息**。
+
 <br/>
 
 6. 在 [**原則設定**] 索引標籤的 **[自訂您要保護的內容類型**] 底下，保留預設的簡單設定，或選擇 [**使用高級設定**]，然後選擇 [**下一步]**。 如果您選擇 [高級設定]，您可以建立或編輯原則的規則。 （若要取得此相關協助，請參閱[簡易設定與高級設定](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)。）

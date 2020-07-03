@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 規範中心的功能一樣，我們的說明內容永遠都在發展中。 瞭解本月新增及更新的功能。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b3305a2d6fe2d25730b6d39891723675e7243f50
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936146"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035638"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 規範內容的最近更新
 
@@ -150,7 +150,7 @@ ms.locfileid: "44936146"
 
 [管理信箱審核](enable-mailbox-auditing.md#logon-types-and-mailbox-actions)（更新）<br>已新增使用高級審核引進的新 MailItemsAccessed 信箱動作的相關資訊。
 
-[搜尋審計記錄](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)檔（更新）<br>新增敏感度標籤活動的新描述，以及審核[表單共同作業活動](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-co-authors-and-anonymous-responders)的其他資訊。
+[搜尋審計記錄](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)檔（更新）<br>新增敏感度標籤活動的新描述，以及審核[表單共同作業活動](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-coauthors-and-anonymous-responders)的其他資訊。
 
 ### <a name="compliance-offerings"></a>合規性方案
 

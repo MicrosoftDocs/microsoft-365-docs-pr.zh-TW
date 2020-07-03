@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立評估，以協助您管理組織的合規性，以設計自訂的 Microsoft 合規性分數。
-ms.openlocfilehash: 45a5e76aa4f6581146ded510f75d772c202751ee
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 8b27267461e226a6db2173158d2d35238c0d5a5e
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023306"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035628"
 ---
 # <a name="customize-compliance-score-preview-with-assessments"></a>使用評估自訂合規性分數（預覽）
 
@@ -35,7 +35,7 @@ ms.locfileid: "45023306"
 
 ## <a name="data-protection-baseline-default-assessment"></a>資料保護基準的預設評估
 
-為了讓您開始，Microsoft 提供了包含 Microsoft 365 資料保護基準的符合性分數的**預設**評估。 此基準是一組控制項，包含資料保護和一般資料控管的重要規章和標準。 此基準主要是從 NIST CSF （國家標準和技術協會 Cybersecurity Framework）和 ISO （國際標準組織的標準化 FedRAMP）和 GDPR （歐盟的一般資料保護法規）和（一般資料保護法規）中的專案來繪製要素。
+為了讓您開始，Microsoft 會在包含 Microsoft 365 資料保護基準的合規性分數中提供**預設**評估。 此基準是一組控制項，包含資料保護和一般資料控管的重要規章和標準。 此基準主要是從 NIST CSF （國家標準和技術協會 Cybersecurity Framework）和 ISO （國際標準組織的標準化 FedRAMP）和 GDPR （歐盟的一般資料保護法規）和（一般資料保護法規）中的專案來繪製要素。
 
 在您設定任何其他評估之前，這種評估是用來計算您第一次符合性分數的初始分數。 合規性分數會從您的 Microsoft 365 解決方案中收集初始信號。 您將會很快看到組織相對於重要資料保護標準與法規的執行方式，並查看建議採取的改進動作。
 
@@ -46,7 +46,7 @@ ms.locfileid: "45023306"
 您可以透過三種方式來設定評估：
 
 1. 選擇 [已準備好使用評估]。
-2. 修改評估的範本，以符合您的需求。
+2. 修改[評估的範本](compliance-score-templates.md)，以符合您的需求。
 3. 建立您自己的自訂評估。
 
 使用者必須保留全域管理員、合規性管理員、合規性資料管理員或安全性管理員的角色，才能建立或修改評估。 深入瞭解[角色和許可權](compliance-score-setup.md#set-user-permissions-and-assign-roles)。

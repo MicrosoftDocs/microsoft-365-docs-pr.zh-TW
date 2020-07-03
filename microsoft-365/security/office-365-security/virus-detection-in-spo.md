@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 深入瞭解 SharePoint 線上如何在使用者上傳的檔案中偵測病毒，並防止使用者下載或同步處理檔案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a47f52a30f90d7a19cc01dc9e14eb9b534ec244
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 60d696769ea402e6e2d0e52a1f6633e7962b8329
+ms.sourcegitcommit: f2275d2fbc17a8b5b5da723c7353d3f36c6fb2a7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034947"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45029605"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>SharePoint Online 中的病毒偵測
 
@@ -62,4 +62,10 @@ Microsoft 365 使用常見的病毒偵測引擎。 在線上 SharePoint 中，�
 
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>OneDrive 同步處理用戶端嘗試同步處理已感染的檔案時，會發生什麼情況？
 
-使用者是否要使用新的 OneDrive 同步處理用戶端（OneDrive.exe）或 OneDrive 舊版的 Business sync 用戶端（Groove）同步處理檔案，如果檔案包含病毒，同步處理用戶端將不會下載該檔案。 同步處理用戶端會顯示無法同步處理檔案的通知。
+使用者是否要使用新的 OneDrive 同步處理用戶端（OneDrive.exe）或 OneDrive 舊版的 Business sync 用戶端（Groove.exe）同步處理檔案，如果檔案包含病毒，則同步處理用戶端將不會下載該檔。 同步處理用戶端會顯示無法同步處理檔案的通知。
+
+## <a name="more-information"></a>詳細資訊
+
+如需如何設定線上防病毒 SharePoint 的相關資訊，請參閱[防範威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide#requirements)及[開啟 ATP 的 SharePoint、OneDrive 和 Microsoft 團隊](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-worldwide)。
+
+

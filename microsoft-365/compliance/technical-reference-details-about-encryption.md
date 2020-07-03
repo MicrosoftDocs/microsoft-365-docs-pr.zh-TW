@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: 深入瞭解 Office 365 中用於加密的各種憑證、技術和 TLS 密碼套件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 298d73551b5eb3d7ad7121075b086ee4630562f4
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
+ms.openlocfilehash: 91fa21fff12c429032af6468ff3024acfc6ca2ab
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739111"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024539"
 ---
 # <a name="technical-reference-details-about-encryption"></a>有關加密的技術參考詳細資料
 
@@ -56,10 +56,9 @@ Office 365 支援的所有密碼套件都使用 FIPS 140-2 可接受的演算法
 
 這並不是指 Office 365 會封鎖 TLS 1.0 和1.1 連接。
 
-在這兩個日期上，TLS 1.0 和 TLS 1.1 正式取代。
+[！附注] 雖然我們最初針對全球和 GCC 環境將日期設定為2020年6月1日，用於 TLS 1.0 和 TLS 1.1 為已過時，但此日期已不再有效。 這是因為 COVID-19。 當我們有此過時的新日期時，我們會在這裡發佈它。 
 
-- 全球和 GCC 環境中的2020年6月1日。
-- 在 GCC 高和 DoD 環境中，2020年1月15日。
+針對 GCC 高和 DoD 環境，官方已過時于2020年1月15日發生。
 
 您應確定所有用戶端伺服器及瀏覽器的組合都使用 TLS 1.2 和新式密碼套件，以維護 Office 365 和 Microsoft 365 服務的安全連線。 您可能必須更新特定的用戶端-伺服器及瀏覽器伺服器組合。 如需有關這對您的影響的詳細資訊，請參閱在[Office 365 中準備 TLS 1.2 的強制使用](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。
   

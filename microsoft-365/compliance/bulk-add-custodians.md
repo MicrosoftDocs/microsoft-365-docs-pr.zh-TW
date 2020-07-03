@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 使用大量新增工具，將多個保管人及其相關聯的資料來源快速新增至高級 eDiscovery 中的案例。
-ms.openlocfilehash: 921d4a1616d97f2adde7e40baa5c73f607c849b6
-ms.sourcegitcommit: 956dd3f87adb4e6173517550a662c3bacc2d2d79
+ms.openlocfilehash: ab9626be01814fa95a959141433b431df9bf7724
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44741639"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024663"
 ---
 # <a name="bulk-add-custodians-to-an-advanced-ediscovery-case"></a>將保管人大量新增至高級 eDiscovery 案例
 
@@ -37,7 +37,8 @@ ms.locfileid: "44741639"
 
 4. 將 custodial 資訊新增至 CSV 檔案，並將它儲存在您的本機電腦上。 如需 CSV 檔案中屬性的相關資訊，請參閱下一節。
 
-5. 在 [**來源**] 索引標籤上，再次按一下 [匯**入保管人**]。 
+5. 在 [**來源**] 索引標籤上，再次按一下 [匯**入保管人**]。
+
 6. 在飛入頁面上，按一下 **[流覽]** 並上傳您的 CSV 檔案。
 
    在上傳 CSV 檔案之後，會在 [**工作**] 索引標籤上建立並顯示 BulkAddCustodian 工作。工作會驗證保管人及其對應的資料來源，然後將其新增至案例的 [**來源**] 頁面上的 [**保管人**] 索引標籤。

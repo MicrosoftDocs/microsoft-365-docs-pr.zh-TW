@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在保管人及其資料來源中放置保留，以保留您的高級 eDiscovery 案例中的相關內容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9f540877626d01652912038d69a83598af55ba1d
-ms.sourcegitcommit: ff1af42b036bfdf75729db8c78f10cf4642616ac
+ms.openlocfilehash: f56d12b6d69e56e85f0e7ad37fbf65746a1cff23
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44477159"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024733"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>在高級 eDiscovery 中管理保留
 
@@ -37,13 +37,13 @@ ms.locfileid: "44477159"
 若要查看保管人保留原則：
 
 1. 在 [Microsoft 365 規範中心] 中，按一下 [ **eDiscovery > Advanced**以顯示您組織中的案例清單。
-   
-2. 移至 [**保管人**] 索引標籤，以在您的案例中新增保管人。 若要瞭解如何在高級 eDiscovery 案例中新增及放置保管人，請參閱[Add 保管人 to An Advanced Ediscovery case](add-custodians-to-case.md)。 如果您已新增保管人並將其置於保留狀態，請移至步驟3。
-   
+
+2. 移至 [**來源**] 索引標籤，以在您的案例中新增保管人。 若要瞭解如何在高級 eDiscovery 案例中新增及放置保管人，請參閱[Add 保管人 to a case](add-custodians-to-case.md)。 如果您已新增保管人並將其置於保留狀態，請移至步驟3。
+
 3. 移至 [**保留**] 索引標籤，然後按一下 [ **CustodianHold \<HoldId> **]。
-   
-4. 在飛入頁面中，您可以看到原則的 [保留統計資料]。 您也可以執行將查詢套用至保管人型保留等動作。 如需建立保留查詢及使用條件的詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
- 
+
+4. 在飛入頁面上，您可以看到原則的 [保留統計資料]。 您也可以執行將查詢套用至保管人型保留等動作。 如需建立保留查詢及使用條件的詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
+
 ## <a name="manage-non-custodial-holds"></a>管理非 custodial 保留
 
 當您建立保留時，您可以使用下列選項來限定保留在指定內容位置的內容：
@@ -66,23 +66,23 @@ ms.locfileid: "44477159"
  
 6. 選在 [**描述**] 方塊中，新增保留的描述。
   
-7. 按 [下一步]****。
+7. 按一下 **[下一步]**。
   
 8. 選擇您要保留的內容位置。 您可以將信箱、網站和公用資料夾放入暫止狀態。
 
-   a. **Exchange 電子郵件**-按一下 **[選擇使用者、群組或小組**]，然後按一下 **[選擇使用者、群組或小組**]，以指定要保留的信箱。 使用搜尋方塊來尋找使用者信箱和通訊群組（保留信箱的群組成員）以保留。 您也可以在 Microsoft 365 群組或 Microsoft 小組的相關信箱上放置保留。 選取 [使用者、群組、小組] 核取方塊，按一下 **[選擇**]，然後按一下 [**完成**]。
+   1. **Exchange 電子郵件**-按一下 **[選擇使用者、群組或小組**]，然後按一下 **[選擇使用者、群組或小組**]，以指定要保留的信箱。 使用搜尋方塊來尋找使用者信箱和通訊群組（保留信箱的群組成員）以保留。 您也可以在 Microsoft 365 群組或 Microsoft 小組的相關信箱上放置保留。 選取 [使用者、群組、小組] 核取方塊，按一下 **[選擇**]，然後按一下 [**完成**]。
  
-    > [!NOTE]
-    > 當您按一下 **[選擇使用者、群組或小組**以指定要保留的信箱] 時，顯示的信箱選擇器會是空的。 這項設計的目的是提升效能。 若要將人員新增至此清單，請在 [搜尋] 方塊中輸入名稱（至少3個字元）。
+      > [!NOTE]
+      > 當您按一下 **[選擇使用者、群組或小組**以指定要保留的信箱] 時，顯示的信箱選擇器會是空的。 這項設計的目的是提升效能。 若要將人員新增至此清單，請在 [搜尋] 方塊中輸入名稱（至少3個字元）。
 
-    b. **SharePoint 網站**-按一下 **[選擇網站**]，然後按一下 **[選擇網站**]，以指定要保留之商務網站的 SharePoint 和 OneDrive。 輸入您要保留之每個網站的 URL。 您也可以為 Microsoft 365 群組或 Microsoft 團隊新增 SharePoint 網站的 URL。 按一下 **[選擇**]，然後按一下 [**完成**]。
+   1. **SharePoint 網站**-按一下 **[選擇網站**]，然後按一下 **[選擇網站**]，以指定要保留之商務網站的 SharePoint 和 OneDrive。 輸入您要保留之每個網站的 URL。 您也可以為 Microsoft 365 群組或 Microsoft 團隊新增 SharePoint 網站的 URL。 按一下 **[選擇**]，然後按一下 [**完成**]。
     
-     請參閱**FAQ**一節，以取得放置 Microsoft 365 群組和 microsoft 團隊保留的秘訣。
+      請參閱**FAQ**一節，以取得放置 Microsoft 365 群組和 microsoft 團隊保留的秘訣。
 
-    > [!NOTE]
-    > 使用者 OneDrive 帳戶的 URL 包含使用者主要名稱（UPN）（例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ）。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是非 custodial 保留的一部分，且其 UPN 已變更，您必須更新 [保留] 並指向新的 OneDrive URL。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
+      > [!NOTE]
+      > 使用者 OneDrive 帳戶的 URL 包含使用者主要名稱（UPN）（例如 `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` ）。 在極少數的情況下，使用者的 UPN 變更時，其 OneDrive URL 也會變更，以加入新的 UPN。 如果使用者的 OneDrive 帳戶是非 custodial 保留的一部分，且其 UPN 已變更，您必須更新 [保留] 並指向新的 OneDrive URL。 如需詳細資訊，請參閱 [UPN 變更將如何影響 OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes) (英文)。
 
-     c. **Exchange 公用資料夾**-將切換開關移至 [全部] 位置，將 Exchange Online 組織中的所有公用資料夾保留。 請注意，您無法選擇要保留的特定公用資料夾。 如果您不想要保留公用資料夾，請將切換參數設為 [**無**]。
+   1. **Exchange 公用資料夾**-將切換開關移至 [全部] 位置，將 Exchange Online 組織中的所有公用資料夾保留。 請注意，您無法選擇要保留的特定公用資料夾。 如果您不想要保留公用資料夾，請將切換參數設為 [**無**]。
 
 9. 當您完成將內容位置新增至保留狀態時，按 **[下一步]**。
   
@@ -126,7 +126,7 @@ Microsoft 團隊是以 Office 365 群組為基礎。 因此，在「高級 eDisc
   - 在 Exchange Online 中執行**set-unifiedgroup 指令程式**，以查看 Microsoft 365 群組或 microsoft 小組的屬性。 若要取得與 Microsoft 365 群組或 Microsoft 小組相關聯之網站的 URL，這是一種很好的方式。 例如，下列命令會顯示名為「資深領導團隊」的 Microsoft 365 群組的所選屬性：
 
 
-    ```text
+    ```console
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
     DisplayName            : Senior Leadership Team
     Alias                  : seniorleadershipteam

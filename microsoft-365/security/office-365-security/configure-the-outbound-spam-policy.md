@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection （EOP）中查看、建立、修改和刪除輸出垃圾郵件原則。
-ms.openlocfilehash: 12f2936530a300cf79556ebf02533c187caa23d5
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 7102f858e0293f2a55fe68a55d4dc2cf3ab38a33
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761715"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024579"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -79,17 +79,17 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派許可權，才能執行本主題中的程式：
+- 您必須已獲派權限，才能進行此主題中的程序:
 
   - 若要新增、修改和刪除輸出垃圾郵件原則，您必須是下列其中一個角色群組的成員：
 
-    - 在[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)的**組織管理**或**安全性管理員**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**或**衛生管理**。
+    - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
+    - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理**。
 
   - 若要唯讀的輸出垃圾郵件原則的存取權，您必須是下列其中一個角色群組的成員：
 
-    - 安全性[& 規範中心](permissions-in-the-security-and-compliance-center.md)的**安全性讀取器**。
-    - 在[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**View-Only 的組織管理**。
+    - [安全性與合規性中心](permissions-in-the-security-and-compliance-center.md) 中的 **安全讀者**。
+    - [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅檢視組織管理**。
 
 - 如需輸出垃圾郵件原則的建議設定，請參閱[EOP 呼出垃圾郵件篩選原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)。
 
@@ -118,21 +118,21 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
      若要啟用此設定：
 
-     a. 選取 [啟用] 設定的核取方塊。
+     1. 選取 [啟用] 設定的核取方塊。
 
-     b. 按一下 [**新增人員**]。 在出現的 [**新增或移除**收件者] 浮出控制項中：
+     1. 按一下 [**新增人員**]。 在出現的 [**新增或移除**收件者] 浮出控制項中：
 
-     c. 輸入寄件者的電子郵件地址。 您可以指定多個以分號分隔的電子郵件地址（;)或每行一位收件者。
+     1. 輸入寄件者的電子郵件地址。 您可以指定多個以分號分隔的電子郵件地址（;)或每行一位收件者。
 
-     d. 按一下 ![新增圖示](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 以加入收件者。
+     1. 按一下 ![新增圖示](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 以加入收件者。
 
         視需要重複這些步驟。
 
         您新增的收件者會出現在飛入的 [**收件者清單**] 區段中。 若要刪除收件者，請按一下 [ ![ 移除] 按鈕 ](../../media/scc-remove-icon.png) 。
 
-     e. 完成後，按一下 [儲存]****。
+     1. 完成後，按一下 [儲存]****。
 
-     若要停用此設定，請清除核取方塊。
+        若要停用此設定，請清除核取方塊。
 
    - **如果寄件者因傳送輸出的垃圾郵件而遭到封鎖，請通知特定人員**：
 
@@ -185,8 +185,20 @@ EOP 中的外寄垃圾郵件原則基本元素為：
      - **限制使用者傳送郵件**：已傳送電子郵件通知，使用者會新增至安全性 & 合規性中心內的 **[受限制的使用者] <https://sip.protection.office.com/restrictedusers> **入口網站，直到系統管理員將其從**受限使用者**入口網站中移除之後，使用者才會傳送電子郵件。系統管理員從清單中移除使用者後，該天的使用者將不會受到限制。 如需相關指示，請參閱[在傳送垃圾郵件後移除受限使用者入口網站中的使用者](removing-user-from-restricted-users-portal-after-spam.md)。
 
      - **無動作，只發出警示**：已傳送電子郵件通知。
+6. 選展開 [**自動**轉寄] 區段，設定如何控制使用者的自動轉寄。
 
-6. 必備展開 [套用**至**] 區段，識別套用原則的內部寄件者。
+   > [!NOTE]
+   > 這些設定只適用于雲端架構信箱。
+   
+   - **自動轉送**
+  
+      選取其中一個選項來控制自動轉寄處理的處理方式。
+    
+      - **自動**：預設設定可讓系統以預設會停用自動轉寄的方式來控制自動轉寄。
+      - **On**：在原則內啟用外部轉寄，但沒有限制。
+      - **Off**：已停用外部轉寄，將會封鎖
+
+7. 必備展開 [套用**至**] 區段，識別套用原則的內部寄件者。
 
     您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<sender1\>_ 或 _\<sender2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<sender1\>_ 和 _\<member of group 1\>_)。
 
@@ -200,7 +212,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
     - **除了**：若要為規則新增例外情況，按一下 [新增條件]**** 三次，即可查看所有可用的例外。 設定和行為就像是條件。
 
-7. 完成後，按一下 [儲存]****。
+8. 完成後，按一下 [儲存]****。
 
 ## <a name="use-the-security--compliance-center-to-view-outbound-spam-policies"></a>使用安全性 & 規範中心來查看輸出垃圾郵件原則
 
@@ -404,7 +416,8 @@ Get-HostedOutboundSpamFilterRule -Identity "Contoso Executives" | Format-List
 
 當您在本主題稍早的[步驟1：使用 PowerShell 建立外寄垃圾郵件篩選原則](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy)一節所述，在 PowerShell 中修改惡意程式碼篩選原則時，就可以使用相同設定。
 
-**附注**：您無法重新命名外寄垃圾郵件篩選原則（ **Set-HostedOutboundSpamFilterPolicy** Cmdlet 沒有_Name_參數）。 當您在安全性 & 合規性中心重新命名輸出垃圾郵件原則時，您只是重新命名輸出垃圾郵件篩選_規則_。
+> [!NOTE]
+> 您無法重新命名外寄垃圾郵件篩選原則（ **Set-HostedOutboundSpamFilterPolicy** Cmdlet 沒有_Name_參數）。 當您在安全性 & 合規性中心重新命名輸出垃圾郵件原則時，您只是重新命名輸出垃圾郵件篩選_規則_。
 
 若要修改輸出垃圾郵件篩選原則，請使用下列語法：
 
@@ -468,11 +481,11 @@ Set-HostedOutboundSpamFilterRule -Identity "<RuleName>" -Priority <Number>
 Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-**附註**：
-
-- 若要在建立新規則時設定其優先順序，請改用**HostedOutboundSpamFilterRule** Cmdlet 上的_priority_參數。
-
-- 外寄的預設垃圾郵件篩選原則沒有對應的垃圾郵件篩選規則，它永遠具有「不可修改的優先順序 **」值。**
+> [!NOTE]
+> 
+> - 若要在建立新規則時設定其優先順序，請改用**HostedOutboundSpamFilterRule** Cmdlet 上的_priority_參數。
+>
+> - 外寄的預設垃圾郵件篩選原則沒有對應的垃圾郵件篩選規則，它永遠具有「不可修改的優先順序 **」值。**
 
 ### <a name="use-powershell-to-remove-outbound-spam-filter-policies"></a>使用 PowerShell 移除輸出垃圾郵件篩選原則
 
@@ -510,10 +523,12 @@ Remove-HostedOutboundSpamFilterRule -Identity "Marketing Department"
 
 如需詳細的語法及參數資訊，請參閱[Remove-HostedOutboundSpamFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedoutboundspamfilterrule)。
 
-## <a name="for-more-information"></a>如需詳細資訊
+## <a name="for-more-information"></a>相關資訊
 
 [從 [受限使用者] 入口網站中移除封鎖的使用者](removing-user-from-restricted-users-portal-after-spam.md)
 
 [輸出郵件的高風險傳遞集區](high-risk-delivery-pool-for-outbound-messages.md)
 
 [反垃圾郵件保護常見問題集](anti-spam-protection-faq.md)
+
+[自動轉寄訊息的報告](mfi-auto-forwarded-messages-report.md)

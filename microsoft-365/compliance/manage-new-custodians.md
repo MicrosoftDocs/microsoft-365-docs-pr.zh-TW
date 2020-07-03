@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在高級 eDiscovery 案例中查看對保管人清單的詳細資料、編輯和大量編輯。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 895383f72259fa5e46a46df35925bcc73f62e3a5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 95b7a7dbec5656a1ac0692ed465eb5a99d7ca11a
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034175"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024803"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-case"></a>在高級 eDiscovery 案例中管理保管人
 
-[！注意] 「高級 eDiscovery」中的「保管人」索引標籤會包含已新增至案例的所有保管人清單。 在您將保管人新增至案例後，會自動從 Azure Active Directory 收集每個保管人的詳細資訊，並在高級 eDiscovery 中查看。
+在高級 eDiscovery 案例中，[**來源**] 索引標籤上的「保管人」頁面包含已新增至此案例的所有保管人清單。 在您將保管人新增至案例後，會自動從 Azure Active Directory 收集每個保管人的詳細資訊，並在高級 eDiscovery 中查看。
 
 ![管理保管人](../media/CustodianDetails.PNG)
 
@@ -79,9 +79,9 @@ ms.locfileid: "44034175"
 
 1. 請移至**eDiscovery > Advanced ediscovery** ，然後開啟案例。
   
-2. 按一下 [**保管人**] 索引標籤。
+2. 按一下 [**來源**] 索引標籤。
   
-3. 從清單中選取管理員，然後按一下彈出頁面上的 [**編輯**]。
+3. 在 [**保管人**] 頁面上，從清單中選取管理員，然後按一下彈出頁面上的 [**編輯**]。
 
     ![編輯資料來源](../media/EditCustodianDataSource.PNG)
   
@@ -103,9 +103,11 @@ ms.locfileid: "44034175"
 
 1. 請移至**eDiscovery > Advanced ediscovery** ，然後開啟案例。
 
-2. 按一下 [to**保管人]** 索引標籤，然後選取必須重新編制索引其資料的保管人。 
+2. 按一下 [**來源**] 索引標籤。
 
-3. 在飛入頁面上，按一下 [**更新索引**]。
+3. 在 [**保管人**] 頁面上，選取必須重新編制索引其資料的保管人。
+
+4. 在飛入頁面上，按一下 [**更新索引**]。
 
    隨即會顯示一個對話方塊，指出已經建立索引工作。
 
@@ -127,9 +129,9 @@ ms.locfileid: "44034175"
 
 1. 請移至**eDiscovery > Advanced ediscovery** ，然後開啟案例。
 
-2.    移至 [**保管人**] 索引標籤。
+2. 按一下 [**來源**] 索引標籤。
 
-3.    按一下 [to**保管人]** 索引標籤，然後選取從案例中發放的保管人。
+3. 在 [**保管人**] 頁面上，選取從案例發行的保管人。
 
 4. 在飛入頁面上，按一下 [**發行管理員**]。
 

@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 請查看所有可用於設定 Microsoft 規範分數評估的範本（預覽）。
-ms.openlocfilehash: 4bb4bd95bb9df98f081b2e7a60ae21a86dfdc048
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 9e40527b44bc5b9a7a926a32f6e5d107c257b7b7
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016567"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035618"
 ---
 # <a name="compliance-score-preview-templates"></a>合規性分數（預覽）範本
 
 ## <a name="templates-overview"></a>範本概述
 
-合規性分數提供一組完整的**範本來建立評估**。 這些範本可協助您的組織遵循管理資料集合及使用的本國、區域及特定行業的需求。 新的範本會隨著法規的頒佈和更新而新增。
+[合規性分數](compliance-score.md)提供一組完整的**範本來建立評估**。 這些範本可協助您的組織遵循管理資料集合及使用的本國、區域及特定行業的需求。 新的範本會隨著法規的頒佈和更新而新增。
 
 您可以修改下列任何範本，以符合組織的需求。 您也可以建立您自己的範本，以建立自訂評估。 
 

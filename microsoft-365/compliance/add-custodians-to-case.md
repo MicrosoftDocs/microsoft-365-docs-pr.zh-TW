@@ -17,55 +17,54 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在高級電子檔探索中使用內建的保管人管理工具，以協調您的工作流程，並在案例中識別相關的資料來源。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: adf5df3bba1956ab1bb658590c1fcf9d4f5a814d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 5b64bb288e94c345cc373b0d800bc0349895f7d3
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818610"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024705"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-case"></a>將保管人新增至高級 eDiscovery 案例
 
 使用高級 eDiscovery 中內建的保管人管理工具，讓您的工作流程與管理保管人的工作流程一致，並識別與案例相關聯的相關 custodial 資料來源。 當您新增保管人時，系統會自動針對其 Exchange 信箱和 OneDrive 的商務帳戶，識別並保留其位置。 在調查的探索過程中，您也可以識別保管人存取或貢獻的其他資料來源（例如信箱、網站或小組）。 在此情況下，您可以使用保管人管理工具，將這些資料來源關聯至特定的保管人。 在您將保管人新增至案例並與其他資料來源建立關聯之後，您可以快速保存資料並搜尋 custodial 資料。
 
-使用下列工作流程在高級 eDiscovery 案例中新增及管理保管人。 
+使用下列工作流程在高級 eDiscovery 案例中新增及管理保管人。
 
-![[管理員管理] 索引標籤](../media/CustodianMgtPage.png)
+![高級 eDiscovery 案例中的 [來源] 索引標籤](../media/AeD-Sources-Tab.png)
 
 ## <a name="make-sure-you-have-the-necessary-permissions"></a>確定您具備必要的許可權
 
 若要將保管人新增至案例，您必須是 eDiscovery 管理員角色群組的成員。 這會為您提供必要的許可權，以將保管人新增至案例，並在 custodial 資料來源上進行保留。
-
 
 ## <a name="step-1-add-potential-custodians"></a>步驟1：新增可能的保管人
 
 第一步是將保管人識別並新增至案例。
 
 1. 在「**高級 eDiscovery**首頁」上，按一下您要新增保管人的案例。 
- 
-2. 按一下 [**保管人**] 索引標籤，然後按一下 [ **+ 新增保管人**]。
+
+2. 按一下 [**來源**] 索引標籤，然後按一下 [**新增保管人**]。
 
 3. 尋找要新增至案例的保管人。 輸入人員名稱的第一個部分，以顯示組織之 Azure Active Directory 中的使用者。 找到正確的人員後，請按一下其名稱，將其新增至清單。
 
    ![識別潛在的保管人](../media/AddCustodianStep1.png)
- 
+
 4. 新增所有相關保管人後，請按 **[下一步]** 以選取保管人的主要資料來源。
   
 ## <a name="step-2-select-custodian-data-sources"></a>步驟2：選取保管人資料來源
 
 在新增保管人之後，保管人工具會協助您識別每個系統管理員所擁有的主要資料來源。 這些資料位置是管理員的 Exchange 信箱和 OneDrive 帳戶。 
 
-若要識別保管人資料來源： 
+若要識別保管人資料來源：
 
 1. 若要選取所有保管人的 Exchange 信箱，請選取欄上方的 [ **exchange** ] 核取方塊。 然後，您可以清除任何特定保管人的核取方塊，以將信箱移除為 custodial 位置。 或者，您可以將**Exchange**核取方塊保留未選取的欄上方，然後選取個別保管人的核取方塊。 
- 
+
    ![選取 [Custodial 資料來源]](../media/AddCustodianStep2.png)
- 
+
 2. 請對保管人的 OneDrive 帳戶重複相同的工作。 
 
     在您選取保管人資料來源之後，系統會自動嘗試識別及驗證這些資料來源，然後將這些資料來源當做與保管人相關聯的資料來源新增至案例。
- 
-4. 在案例中，按 **[下一步]** 開始將其他資料來源關聯至保管人。
+
+3. 在案例中，按 **[下一步]** 開始將其他資料來源關聯至保管人。
 
 ## <a name="step-3-associate-additional-data-sources-to-a-custodian"></a>步驟3：將其他資料來源與保管人建立關聯
 
@@ -101,8 +100,8 @@ ms.locfileid: "44818610"
 
 若要將保管人和資料來源保持在狀態，請執行下列動作：
 
-1. 在 [已**選取的保管人**] 頁面上的 [保留] 頁面上，選取欄上方的 [**保留**] 核取方塊，以將所有保管人保留。 然後，您可以清除任何特定保管人的核取方塊，以從保留中移除。 或者，您也可以在未選取的欄上方保留 [**保留**] 核取方塊，然後選取個別保管人的核取方塊。 
- 
+1. 在 [已**選取的保管人**] 頁面上的 [保留] 頁面上，選取欄上方的 [**保留**] 核取方塊，以將所有保管人保留。 然後，您可以清除任何特定保管人的核取方塊，以從保留中移除。 或者，您也可以在未選取的欄上方保留 [**保留**] 核取方塊，然後選取個別保管人的核取方塊。
+
    ![就地保留](../media/AddCustodianStep5.PNG)
 
 2. 確認保管人保留選項，然後按一下 [**完成**]。
@@ -114,4 +113,3 @@ ms.locfileid: "44818610"
 1. 在案例的**首頁**上，按一下 [**保留**] 索引標籤，然後按一下 [ **CustodianHold-Guid**]，  
 
 2. 在飛入頁面上，按一下 [**編輯保留**]，以查看置於保留狀態的所有保管人資料來源。
-

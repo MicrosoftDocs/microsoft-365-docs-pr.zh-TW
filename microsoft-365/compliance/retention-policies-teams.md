@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: 709d4414ebb01081172aff932899146c06d05a19
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
+ms.openlocfilehash: 869f457ddb64e5d828dcb5f1244ba779f889e8c9
+ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268270"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44861160"
 ---
 # <a name="learn-about-retention-policies-for-microsoft-teams"></a>了解 Microsoft Teams 的保留原則
 
@@ -77,7 +77,7 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 
 ## <a name="files-in-teams"></a>Teams 中的檔案
 
-在 Teams 聊天中共用的檔案會儲存在共用檔案之使用者的 OneDrive 帳戶中。 上傳至頻道的檔案則會儲存在團隊的 SharePoint 網站中。 這表示，若要保留或刪除 Teams 中的檔案，除了針對 Teams 設定的任何保留原則以外，必須設定一或多個適用於 **OneDrive 帳戶**和**SharePoint 網站**的保留原則。 如需有關保留原則如何適用這些位置的詳細資訊，請參閱[了解 SharePoint 和 OneDrive 的保留原則](retention-policies-sharepoint.md)。
+在 Teams 聊天中共用的檔案會儲存在共用檔案之使用者的 OneDrive 帳戶中。 上傳至頻道的檔案則會儲存在團隊的 SharePoint 網站中。 這表示要若保留或刪除 Teams 中的檔案，除了您為 Teams 所設定的任何保留原則以外，您必須再設定一或多個適用于 OneDrive 和 SharePoint 的保留原則。 如需有關保留原則如何適用這些位置的詳細資訊，請參閱[了解 SharePoint 和 OneDrive 的保留原則](retention-policies-sharepoint.md)。
 
 > [!NOTE]
 > 包含 Teams 頻道訊息或 Teams 聊天的保留原則只能包含 Teams 位置。 因此，若要在 Teams 中保留或刪除這些檔案，您必須建立個別的保留原則。
@@ -98,6 +98,12 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 
 - 如果外部使用者是使用來自另一個 Microsoft 365 組織的帳戶加入，您的保留原則就無法刪除該使用者的訊息，因為訊息是儲存在該使用者在另一個租用戶的信箱中。 不過，針對相同會議，您的保留原則可以為您的使用者刪除訊息。
 
+
+## <a name="when-a-user-leaves-the-organization"></a>當使用者離開組織時 
+
+如果某位使用者離開您的組織，且其 Office 365 帳戶被刪除，則其要保留的交談訊息會儲存在非作用中的信箱中。 交談訊息在他們的信箱被設成非作用中信箱之前，仍會受置於使用者之任何保留原則的制約，並可供電子文件探索搜尋。 如需詳細資訊，請參閱 [Exchange Online 中的非作用中信箱](inactive-mailboxes-in-office-365.md)。 
+
+如果使用者將所有檔案儲存在 Teams 中，請參閱適用于 SharePoint 和 OneDrive 的 [等效節](retention-policies-sharepoint.md#when-a-user-leaves-the-organization)。
 
 ## <a name="limitations"></a>限制
 
@@ -123,12 +129,9 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
     
     - 當您針對 [Teams 聊天]**** 位置選取 [選擇使用者]**** 時，您可能會看到來賓和非信箱使用者。 保留原則並非為這些使用者設計，因此請不要選取他們。
 
-
 ## <a name="how-to-configure-a-retention-policy-for-microsoft-teams"></a>如何為 Microsoft Teams 設定保留原則
 
-請參閱[建立及設定保留原則](create-retention-policies.md)。
-
-在精靈的 [選擇位置]**** 頁面上，選取下列選項：
+按照 [建立及設定保留原則][](create-retention-policies.md) 和 [選擇位置]**** 精靈頁面中的指示進行，選取下列其中一個選項：
 
 - [讓我選擇特定位置]****  >  [Teams 頻道訊息]**** 和 [Teams 聊天]****
 

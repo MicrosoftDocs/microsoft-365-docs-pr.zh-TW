@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 88ff728f00709707233b97586d1220ead76eca8c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: a9f8635f65867eb9d9543cc23b984f181030a7f9
+ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817542"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45024693"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -161,7 +161,7 @@ ms.locfileid: "44817542"
 |---------|---------|
 |`New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` |<p>在此範例中，我們會定義一個稱為*LocalFTE*的區段，其中包含位於本機的使用者，且其位置並未列出為*暫時*的。    |
  |`New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`|  <p>在此範例中，我們會定義一個稱為*Segment1*的區段，其中包含 group1@contoso.com 成員的人員，而不是 group3@contoso.com 的成員。
-|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com'' -or MemberOf -ne 'group3@contoso.com'"` | 在此範例中，我們會定義一個稱為*Segment2*的區段，其中包含 group2@contoso.com 成員的人員，而不是 group3@contoso.com 的成員。
+|`New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com' -or MemberOf -ne 'group3@contoso.com'"` | 在此範例中，我們會定義一個稱為*Segment2*的區段，其中包含 group2@contoso.com 成員的人員，而不是 group3@contoso.com 的成員。
 |`New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`|  在此範例中，我們會定義一個稱為*Segment1and2*的區段，其中包含 group1@contoso.com 和 group2@contoso.com 的人員，而不是 group3@contoso.com 的成員。
 
 
