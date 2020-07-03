@@ -93,14 +93,12 @@
               href: manage/assign-licenses-to-users.md
             - name: 指派系統管理員角色
               href: add-users/assign-admin-roles.md
+            - name: 取消指派給使用者的授權
+              href: manage/remove-licenses-from-users.md
             - name: 來賓使用者
               href: add-users/about-guest-users.md
             - name: 將來賓使用者新增至 Microsoft 365 群組
               href: create-groups/manage-guest-access-in-groups.md
-            - name: 移除使用者的授權
-              href: manage/remove-licenses-from-users.md
-            - name: 解決授權衝突
-              href: manage/resolve-license-conflicts.md
             - name: 變更使用名稱和電子郵件地址
               href: add-users/change-a-user-name-and-email-address.md
             - name: 移除離職員工
