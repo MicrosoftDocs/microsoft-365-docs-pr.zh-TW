@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡意的電子郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 917534670485327de73f62852af3d8010fd49e40
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 0ac44ab06aaff1618df2dfc1485d15a68458f385
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034253"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039409"
 ---
 # <a name="investigate-and-remediate-malicious-email-that-was-delivered-in-office-365"></a>調查並修復 Office 365 中傳遞的惡意電子郵件
 
@@ -39,7 +39,7 @@ ms.locfileid: "44034253"
     
 - 您的組織有為反垃圾郵件、反惡意程式碼、反網路釣魚等定義的原則。 請參閱[防禦 Office 365 中的威脅](protect-against-threats.md)。
     
-- 您是全域系統管理員，或您已在安全性&amp;與合規性中心內指派安全性管理員或搜尋和清除角色。 請參閱[安全性&amp;與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。 在某些動作中，您也必須已指派新的預覽角色。 
+- 您是全域系統管理員，或您已在安全性與合規性中心內指派安全性管理員或搜尋和清除角色 &amp; 。 請參閱[安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。 在某些動作中，您也必須已指派新的預覽角色。 
 
 #### <a name="preview-role-permissions"></a>預覽角色許可權
 
@@ -47,12 +47,12 @@ ms.locfileid: "44034253"
 
 |活動  |角色群組 |需要預覽角色？  |
 |---------|---------|---------|
-|使用威脅瀏覽器（和即時偵測）來分析威脅     |全域管理員 <br> 安全性系統管理員 <br> 安全性讀取者     | 否   |
-|使用威脅瀏覽器（和即時偵測）來查看電子郵件訊息的標題，以及預覽及下載隔離的電子郵件    |全域管理員 <br> 安全性系統管理員 <br>安全性讀取者   |       否  |
-|使用威脅瀏覽器來查看標頭，並下載傳送至信箱的電子郵件     |全域管理員 <br>安全性系統管理員 <br> 安全性讀取者 <br> 預覽   |   是      |
+|使用威脅瀏覽器（和即時偵測）來分析威脅     |全域系統管理員 <br> 安全性系統管理員 <br> 安全性讀取者     | 否   |
+|使用威脅瀏覽器（和即時偵測）來查看電子郵件訊息的標題，以及預覽及下載隔離的電子郵件    |全域系統管理員 <br> 安全性系統管理員 <br>安全性讀取者   |       否  |
+|使用威脅瀏覽器來查看標頭，並下載傳送至信箱的電子郵件     |全域系統管理員 <br>安全性系統管理員 <br> 安全性讀取者 <br> 預覽   |   是      |
 
 > [!NOTE]
-> *Preview*是角色，不是角色群組;預覽角色必須新增至 Office 365 的現有角色群組。 全域系統管理員角色會指派 Microsoft 365 系統管理中心（[https://admin.microsoft.com](https://admin.microsoft.com)），並在安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）中指派安全性管理員和安全性讀取者角色。 若要深入瞭解角色和許可權，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+> *Preview*是角色，不是角色群組;預覽角色必須新增至 Office 365 的現有角色群組。 全域系統管理員角色會指派 Microsoft 365 系統管理中心（ [https://admin.microsoft.com](https://admin.microsoft.com) ），並在安全性 & 規範中心（）中指派安全性管理員和安全性讀取者角色 [https://protection.office.com](https://protection.office.com) 。 若要深入瞭解角色和許可權，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>尋找和刪除已傳遞的可疑電子郵件
 
@@ -61,7 +61,7 @@ ms.locfileid: "44034253"
 > [!NOTE]
 > 瀏覽器中的預設搜尋目前不包含 Zapped 的專案。  這適用于所有的視圖，例如惡意程式碼或網路釣魚視圖。 若要包含 Zapped 的專案，您需要將 ' 傳遞動作 ' 設定為包含「包含」（由 ZAP 移除）。 如果您包括所有選項，您會看到所有傳遞動作結果，包括 Zapped 專案。
 
-1. **流覽至威脅瀏覽器**：移[https://protection.office.com](https://protection.office.com)至並使用您的 Office 365 的公司或學校帳戶登入。 這會帶您前往安全性&amp;與合規性中心。
+1. **流覽至威脅瀏覽器**：移至 [https://protection.office.com](https://protection.office.com) 並使用您的 Office 365 的公司或學校帳戶登入。 這會帶您前往安全性與 &amp; 合規性中心。
 
 2. 在 [左導覽快速啟動] 中，選擇 [**威脅管理** \> **瀏覽器**]。
 
@@ -88,7 +88,7 @@ ms.locfileid: "44034253"
 
 5. **高級篩選**：使用這些篩選器，您可以建立複雜的查詢並篩選您的資料集。 按一下 [*高級篩選*] 開啟具有選項的浮出控制項。
 
-   「高級篩選 ' 是搜尋功能的極佳補充。 在*收*件者、*寄件者*和*寄件者網域*上，已引進 boolean**非**篩選，以允許系統管理員透過排除值來調查。 此選項會出現在 [選取參數不*包含任何*] 底下。 **不**會讓系統管理員從其調查中排除警示信箱、預設回復信箱，而且可用於系統管理員搜尋特定主旨（subject = 「注意」）的情況，在此情況下，收件者可將收件者設定為*無 defaultMail@contoso.com*。 這是實際值搜尋。
+   「高級篩選 ' 是搜尋功能的極佳補充。 在*收*件者、*寄件者*和*寄件者網域*上，已引進 boolean**非**篩選，以允許系統管理員透過排除值來調查。 此選項會出現在 [選取參數不*包含任何*] 底下。 **不**會讓系統管理員從其調查中排除警示信箱、預設回復信箱，而且可用於系統管理員搜尋特定主旨（subject = 「注意」）的情況，在此情況下，收件者可以設定為*無 defaultMail \@ contoso.com*。 這是實際值搜尋。
 
    ![收件者-' 不含任何的 ' 高級篩選。](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 

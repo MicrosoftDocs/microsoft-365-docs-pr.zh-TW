@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83ae99a75e3c3aa8d109766418abcf0888b8cbf4
-ms.sourcegitcommit: 76edb413cbd7436252075ea7e314f5e1d07d8d55
+ms.openlocfilehash: 09e2f69eb5999ea104c62c807d348ca26b9236cf
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44267164"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039397"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新增功能
 
@@ -60,6 +60,11 @@ ms.locfileid: "44267164"
 
 - [使用 Office 365 ATP 中的市場即時檢視（**預覽**）](campaigns.md)
 
+## <a name="july-2020"></a>2020年7月 
+ 
+- [體驗搜尋體驗的增強功能](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+
+
 ## <a name="november-2019"></a>2019 年 11 月
 
 - [查看新的已遭破壞的使用者偵測和回應功能](address-compromised-users-quickly.md)（**預覽**）（Office 365 ATP 方案2）
@@ -88,10 +93,10 @@ ms.locfileid: "44267164"
 
 您知道 Office 365 ATP 提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 ATP 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Microsoft 威脅防護的自動化調查及回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+

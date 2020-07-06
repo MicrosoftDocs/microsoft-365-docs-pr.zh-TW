@@ -17,20 +17,19 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1aaff0662e549de3ea27db01df02ff34d192a96d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: cf932db30feb3210b8980b95e666972cd3436dd0
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613441"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039520"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
 如果貴組織具有 [Office 365 進階威脅防護](office-365-atp.md) (Office 365 ATP)，而且您具有[必要的權限](#required-licenses-and-permissions)，您具有**總管**或**即時偵測** (先前的*即時報告* — [查看新增功能](#new-features-in-threat-explorer-and-real-time-detections)！)。 在 [安全性 & 規範中心] 中，移至 [**威脅管理**]，然後選擇 [ **Explorer** ]_或_[**即時**偵測]。
 
-|||
+| 在 ATP 方案 2，您會看到： | 在 ATP 方案 1，您會看到： |
 |---|---|
-|**在 ATP 方案 2，您會看到：**|**在 ATP 方案 1，您會看到：**|
 |![威脅總管](../../media/threatmgmt-explorer.png)|![即時偵測](../../media/threatmgmt-realtimedetections.png)|
 |
 
@@ -44,6 +43,43 @@ ms.locfileid: "44613441"
 - [檢視網路釣魚 URL 並按一下結果](#view-data-about-phishing-urls-and-click-verdict)
 - [從總管中的檢視啟動自動化的調查和回應程序](#start-automated-investigation-and-response) (僅限 ATP 方案 2)
 - ... [調查惡意電子郵件等功能](#more-ways-to-use-explorer-or-real-time-detections)！
+
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>豐富威脅瀏覽器和即時偵測的增強功能
+
+在改進搜尋程式的過程中，我們對威脅瀏覽器和即時偵測進行一些更新。 這些是「經驗」的改善，其重點是讓搜尋體驗更為一致。 這些變更如下所示： 
+
+- [時區改進](#timezone-improvements)
+- [重新整理程式中的更新](#update-in-the-refresh-process)
+- [新增至篩選的圖表深入分析](#chart-drilldown-to-add-to-filters)
+- [在產品資訊更新](#in-product-information-updates)
+
+### <a name="timezone-improvements"></a>時區改進 
+
+我們會顯示入口網站中的電子郵件記錄以及匯出資料的時區。 您可以透過電子郵件格線、詳細資料行中的電子郵件時程表及類似的電子郵件，在體驗上看到時區，這樣就不會為使用者提供明確的結果集時區。 
+
+![在瀏覽器中查看時區](../media/TimezoneImprovements.png)
+
+### <a name="update-in-the-refresh-process"></a>重新整理程式中的更新 
+
+我們聽說過與自動重新整理有關之混淆的意見反應（例如，當您變更日期、頁面會重新整理時）和手動重新整理（適用于其他篩選器）。 同樣地，移除篩選器會導致自動重新整理，這會導致在修改查詢時變更不同篩選的情況可能會造成不一致的搜尋體驗。 若要解決此情況，我們會移至手動篩選機制。
+從經驗的觀點來看，使用者可以套用和移除不同的篩選範圍（從 filter set 和 date），然後按下 [重新整理] 按鈕，以在完成定義查詢之後篩選結果。 重新整理按鈕也已更新，可在螢幕上清晰地呼叫。 我們也針對這項變更，更新工具提示及產品中的檔。 
+
+![按一下 [重新整理] 以篩選結果](../media/ManualRefresh.png)
+
+### <a name="chart-drilldown-to-add-to-filters"></a>新增至篩選的圖表深入分析
+
+您現在可以按一下圖表圖例值，將該值新增為篩選。 請注意，您仍然需要按一下 [重新整理] 按鈕，以在上述變更中篩選結果。
+
+![透過圖表深入篩選](../media/ChartDrilldown.png)
+
+### <a name="in-product-information-updates"></a>在產品資訊更新 
+
+您也應該會看到產品中的其他詳細資料。 例如，格線內的搜尋結果總數（請參閱下文）及標籤、錯誤訊息及工具提示的增強功能，可提供更多關於篩選、搜尋經驗及結果集的資訊。 
+
+![View In 產品資訊](../media/ProductInfo.png)
+
+
+## <a name="new-features-in-real-time-detections"></a>即時偵測中的新功能
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測的新功能
 
@@ -68,20 +104,22 @@ ms.locfileid: "44613441"
 
 「傳遞動作」是基於現有原則或偵測對電子郵件所採取的動作。 以下是電子郵件可能採取的動作：
 
-|||||
+|已傳遞  |已標示為垃圾郵件  |已封鎖  |已取代  |
+|---------|---------|---------|---------|
+|電子郵件已傳送至使用者的收件匣或資料夾，而且使用者可以直接存取。    | 電子郵件會傳送至使用者的垃圾郵件資料夾或已刪除的資料夾，而且使用者可以存取這些資料夾中的電子郵件。       | 任何隔離、失敗或丟棄的電子郵件。 這完全無法由使用者存取！     | 任何電子郵件，惡意附件會以表示附件惡意的 .txt 檔取代。     |
+    
+
+| 已傳遞 | 已標示為垃圾郵件 | 已封鎖 | 已取代 |
 |---|---|---|---|
-|**已傳遞**|**已標示為垃圾郵件**|**已封鎖**|**已取代**|
 |電子郵件已傳遞至使用者的收件匣或其他資料夾，使用者可以直接存取。| 電子郵件會傳送至使用者的垃圾郵件資料夾或已刪除的資料夾，而且使用者可以存取這些資料夾中的電子郵件。| 任何已隔離、傳遞失敗或已捨棄的電子郵件，使用者均無法存取。| 以 .txt 檔案替換為惡意附件的任何電子郵件訊息，均指出附件是惡意的。|
 |
 
 以下是使用者可以查看及無法查看的內容：
 
-|||
+| 使用者可以存取 | 使用者無法存取  |
 |---|---|
-|**使用者可以存取**|**使用者無法存取 **|
 |已傳遞|已封鎖|
 |已標示為垃圾郵件|已取代|
-|
 
 傳遞位置顯示原則和執行傳遞後偵測的結果。 其連結到「傳遞動作」。 已新增此欄位，以深入了解找到問題電子郵件時所採取的動作。 以下是傳遞位置可能的值：
 
@@ -205,6 +243,7 @@ ms.locfileid: "44613441"
 - [尋找並調查傳送的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
 - [檢視在 SharePoint Online、OneDrive 和 Microsoft Teams 中偵測到的惡意檔案](malicious-files-detected-in-spo-odb-or-teams.md)
 - [取得威脅總管 (和即時偵測) 檢視的概觀](threat-explorer-views.md)
+- [Microsoft 威脅防護的自動化調查及回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 
@@ -242,3 +281,4 @@ ms.locfileid: "44613441"
 - **威脅瀏覽器**中包含更多篩選功能和可用的動作。
 
 如需詳細資訊，請參閱[Office 365 ATP 服務說明：各高級威脅防護（ATP）方案中的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+
