@@ -13,24 +13,25 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: 665512e322eadd2f590fb5109fd6f1a9e7706e61
-ms.sourcegitcommit: b458277f0a9937555bc6c5b3fb2a41613f7cc9a9
+ms.openlocfilehash: f1902c71b167d6293530eae61fa6c57d63c5f06c
+ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/23/2020
-ms.locfileid: "43794014"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44387798"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
-您可以輕鬆地查看您的員工使用 Microsoft 365 服務的情況。例如，您可以查出誰經常使用服務且達到使用量配額，或是誰可能完全不需要 Microsoft 365 授權。
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.
   
-您可以索取過去 7 天、30 天、90 天及 180 天的報告。不過系統無法立即提供所有報告期間的資料，您會在 48 小時內看到可用的報告。
+Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
   
 觀看此影片，了解如何使用這些報告的概觀：
   
@@ -97,6 +98,8 @@ ms.locfileid: "43794014"
 - [電子郵件應用程式使用量](email-apps-usage.md)
 
 - [表單活動](forms-activity.md)
+
+- [Forms Pro 活動](forms-pro-activity.md)
   
 - [Microsoft 365 群組](office-365-groups.md)
   
@@ -156,7 +159,7 @@ ms.locfileid: "43794014"
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>如何檢視特定使用者的使用量資訊
 
-您可以利用服務報告來調查特定使用者使用服務的多寡。例如，若要查詢特定使用者已使用多少信箱儲存空間，請開啟 [信箱使用量] 報告，然後依名稱排序使用者。如果您有數千名使用者，可以匯出報告至 Excel，以便快速篩選清單。
+Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
   
 在輸入使用者帳戶並取得其使用服務清單與使用量資訊的狀態下，將無法產生報告。
   
@@ -174,7 +177,7 @@ ms.locfileid: "43794014"
   
 ![報告 - 匿名使用者清單](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-這些在報告儀表板中的報告變更，需要幾分鐘後才會生效。此設定也適用於報告 API。
+It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>關閉使用者帳戶時，使用量資料會發生什麼情況？
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83eb4c453b3a11cb037e62e43525199fa247c3f5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
+ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818983"
+ms.lasthandoff: 07/03/2020
+ms.locfileid: "45035658"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -335,7 +335,7 @@ ms.locfileid: "44818983"
 |已刪除記錄合規性原則標籤|ComplianceRecordDelete|已歸類為記錄的文件已刪除。 將內容歸類為記錄的保留標籤套用至文件時，文件就會視為記錄。|
 |偵測到的文件敏感度不相符|DocumentSensitivityMismatchDetected|使用者將文件上傳到受敏感度標籤保護的網站，且文件的敏感度標籤優先於網站的敏感度標籤。 例如，套用「機密」標籤的文件上傳到套用「一般」標籤的網站。 <br/><br/> 如果文件套用的敏感度標籤，其優先順序低於網站所套用的敏感度標籤，則不會觸發此事件。 例如，套用「一般」標籤的文件上傳到標記為「機密」的網站。 如需敏感度標籤優先順序的詳細資訊，請參閱[標籤優先順序 (順序很重要)](sensitivity-labels.md#label-priority-order-matters)。|
 |在檔案中偵測到惡意程式碼|FileMalwareDetected|SharePoint 防毒引擎在檔案中偵測到惡意程式碼。|
-|已捨棄檔案簽出|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
+|已捨棄檔案簽出|FileCheckOutDiscarded|User discards (or undoes) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |下載的檔案|FileDownloaded|使用者從網站下載文件。|
 |已修改檔案|FileModified|使用者或系統帳戶修改網站上的文件內容或屬性。|
 |(無)|FileModifiedExtended|這與「已修改檔案」(FileModified) 活動相關聯。 當相同人員持續修改某個檔案一段時間 (最多 3 小時)，便會記錄 FileModifiedExtended 事件。 <br/><br/> 記錄 FileModifiedExtended 事件的目的在於減少持續修改某個檔案時，記錄 FileModified 事件的數目。 這有助於減少多個 FileModified 記錄的干擾，以了解哪些基本上是同樣的使用者活動，並讓您專注在初始 (且更重要的) FileModified 事件。|
@@ -368,7 +368,7 @@ ms.locfileid: "44818983"
 
 - 合規性功能。 當系統管理員實作合規性功能時，例如保留原則、電子文件探索保留及自動套用靈敏度標籤。
 
-在這些及其他案例中，您也會注意到以 app@sharepoint 作為指定之使用者的稽核記錄是在非常短的時間內建立的，彼此之間的間隔通常為幾秒鐘。 這也表示這些稽核記錄可能是由相同使用者啟動的工作所觸發。 此外，稽核記錄中的 [ApplicationDisplayName] 和 [EventData] 欄位可協助您識別觸發此事件的案例或應用程式。
+在這些及其他案例中，您也會注意到以 app@sharepoint 作為指定之使用者的稽核記錄是在短時間內建立的，彼此之間的間隔通常為幾秒鐘。 這也表示這些稽核記錄可能是由相同使用者啟動的工作所觸發。 此外，稽核記錄中的 [ApplicationDisplayName] 和 [EventData] 欄位可協助您識別觸發此事件的案例或應用程式。
 
 ### <a name="folder-activities"></a>資料夾活動
 
@@ -560,7 +560,7 @@ ms.locfileid: "44818983"
 
 ### <a name="sway-activities"></a>Sway 活動
 
-下表列出在 Sway 中的使用者和系統管理員活動。 Sway 是一個 Microsoft 365 App，可協助使用者在互動式 Web 畫布上收集、格式化，以及分享想法、故事及簡報。 如需詳細資訊，請參閱[關於 Sway 的常見問題集 – 系統管理員說明](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
+下表列出在 Sway 中的使用者和系統管理員活動。 Sway 是一個 Microsoft 365 應用程式，可協助使用者在互動式 Web 畫布上收集、格式化，以及分享想法、故事及簡報。 如需詳細資訊，請參閱[關於 Sway 的常見問題集 – 系統管理員說明](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -704,34 +704,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 ### <a name="microsoft-teams-activities"></a>Microsoft Teams 活動
 
-下表列出稽核記錄中記錄的 Microsoft Teams 使用者和系統管理員活動。 Microsoft Teams 是 Office 365 中以聊天方式為主的工作區。 它能將小組的交談、會議、檔案及筆記存放在同一個位置。 如需詳細資訊以及說明主題的連結，請參閱：
-
-- [Microsoft Teams 的常見問題集 - 系統管理員說明](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
-
-- [Microsoft Teams 說明](https://support.office.com/teams)
-
-|**易記名稱**|**作業**|**描述**|
-|:-----|:-----|:-----|
-|已將 Bot 新增到小組|BotAddedToTeam|使用者在小組中新增機器人。|
-|新增頻道|ChannelAdded|使用者在小組中新增頻道。|
-|已新增連接器|ConnectorAdded|使用者在頻道中新增連接器。|
-|已新增成員|MemberAdded|小組擁有者將成員新增至小組、頻道或群組聊天。|
-|已新增索引標籤|TabAdded|使用者在頻道中新增索引標籤。|
-|已變更的頻道設定|ChannelSettingChanged|小組成員執行下列活動時會記錄 ChannelSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 變更小組頻道名稱 (**頻道名稱**)。 <br/><br/>• 變更小組頻道描述 (**頻道描述**)。|
-|已變更的組織設定|TeamsTenantSettingChanged|當全域系統管理員 (使用 Microsoft 365 系統管理員中心) 執行下列活動時，系統會將 TeamsTenantSettingChanged 作業記錄下來；請注意，這些活動會影響整個組織的 Microsoft Teams 設定。 如需詳細資訊，請參閱 [Microsoft Teams 的系統管理員設定](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365)。 <br/> 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 啟用或停用組織的 Microsoft Teams (**Microsoft Teams**)。 <br/><br/>• 啟用或停用組織中 Microsoft Teams 與商務用 Skype 之間的互通性 (**商務用 Skype 互通性**)。 <br/><br/>• 啟用或停用 Microsoft Teams 用戶端的組織圖檢視 (組織圖檢視 **)。<br/><br/>• 啟用或停用小組成員排程私人會議的能力 (** 私人會議排程 **)。<br/><br/>• 啟用或停用小組成員排程頻道會議的能力 (頻道會議排程**)。 <br/><br/>• 啟用或停用小組會議中的視訊通話 (Skype 視訊會議 **)。<br/><br/>• 啟用或停用組織中 Microsoft Teams 會議中的螢幕共用 (** Skype 會議的螢幕共用 **)。<br/><br/>• 啟用或停用將動畫影像 (稱為 Giphy) 新增至小組交談的能力 (動畫影像**)。 <br/><br/>• 變更組織的內容評等設定 (**評等設定**)。 內容分級會限制交談中可以顯示的動畫影像類型。 <br/><br/>•啟用或停用小組成員將來自網際網路的可自訂影像（稱為自訂紀錄新增）新增至小組對話（源自網際網路的**可自訂圖像)之功能。<br/><br/>•啟用或停用小組成員新增可編輯的影像（稱為貼紙）至小組對話（** 可編輯的影像 **）之功能。<br/><br/>•啟用或停用小組成員在 Microsoft Teams 交談和通道(Org-wide bots)中使用 bots之功能。<br/><br/>•為 Microsoft Teams 啟用特定 bot。這不包括 T-Bot，即一種在組織啟用 bot （** 個別bot **）時可使用的Teams協助。<br/><br/>•啟用或停用小組成員新增副檔名或索引標籤之功能（** 副檔名或索引標籤 **）。<br/><br/>•啟用或停用 Microsoft Teams 專有 Bot 的載入方式(** Bot的側載入 **）。<br/><br/>•啟用或停用使用者將電子郵件訊息傳送到 Microsoft Teams 通道（** 通道電子郵件 * *）之功能。|
-|小組中已變更的成員角色|MemberRoleChanged|小組擁有者在小組中變更成員角色。 下列值指出已指派使用者的角色類型。 <br/><br/> **1** - 代表「擁有者」角色。<br/>**2** - 代表「成員」角色。 <br/>**3** - 代表「來賓」角色。 <br/><br/> 成員屬性也會包含貴組織名稱與成員的電子郵件。|
-|已變更的小組設定|TeamSettingChanged|小組擁有者執行下列活動時會記錄 TeamSettingChanged 作業。 稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動個別顯示所變更設定的描述 (如下列括號所示)。 <br/><br/>• 變更小組存取類型。 您可以將小組設定為 [私人] 或 [公開] (**小組存取類型**)。 當小組設為私人時 (此為預設設定)，使用者僅能透過受邀的方式存取該小組。 當小組設為公開時，任何人都可以找到該小組。 <br/><br/>• 變更小組的資訊分類 (**小組分類**)。 <br/> 例如，小組資料可以分類為高業務衝擊、中業務衝擊或低業務衝擊。<br/><br/>• 變更小組名稱 (**小組名稱**)。 <br/><br/>• 變更小組描述 (小組描述**)。 <br/><br/>• 對小組設定所做的任何變更。 小組擁有者只要以滑鼠右鍵按一下按一下所需小組，然後依序按一下 [管理小組]**** 和 [設定]**** 索引標籤，就能在 Teams 用戶端中存取這些設定。稽核記錄搜尋結果的 [項目]**** 欄中，會針對這些活動顯示所變更設定的名稱。|
-|已建立小組|TeamCreated|使用者建立小組。|
-|已刪除頻道|ChannelDeleted|使用者從小組中刪除頻道。|
-|已刪除小組|TeamDeleted|小組擁有者刪除小組。|
-|已將機器人從小組中移除|BotRemovedFromTeam|使用者將機器人從小組中移除。|
-|已移除連接器|ConnectorRemoved|使用者將連接器從頻道中移除。|
-|已移除成員|MemberRemoved|小組擁有者將成員從小組、頻道或群組聊天移除。|
-|已移除索引標籤|TabRemoved|使用者將索引標籤從頻道中移除。|
-|已更新連接器|ConnectorUpdated|使用者已修改頻道中的連接器。|
-|已更新索引標籤|TabUpdated|使用者已修改頻道中的索引標籤。|
-|使用者已登入 Teams|TeamsSessionStarted|使用者登入 Microsoft Teams 用戶端。 此事件不會擷取權杖重新整理活動。|
-||||
+您可以在 Microsoft Teams 中搜尋使用者和系統管理員活動的稽核記錄。 Teams 是 Office 365 中以聊天方式為主的工作區。 它能將小組的交談、會議、檔案及筆記存放在同一個位置。 如需受稽核的 Teams 活動描述，請參閱 [在 Microsoft Teams 的稽核紀錄中搜尋事件](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities)。
 
 ### <a name="microsoft-teams-healthcare-activities"></a>Microsoft Teams 醫療保健活動
 
@@ -813,7 +786,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 以下說明中指出部分作業包含的其他活動參數。
 
 > [!NOTE]
-> 如果 Forms 活動是由共同作者或匿名回應者執行，則記錄方式會稍有不同。 如需詳細資訊，請參閱[由共同作者和匿名回應者執行的 Forms 活動](#forms-activities-performed-by-co-authors-and-anonymous-responders)一節。
+> 如果 Forms 活動是由共同作者或匿名回應者執行，則記錄方式會稍有不同。 如需詳細資訊，請參閱[由共同作者和匿名回應者執行的 Forms 活動](#forms-activities-performed-by-coauthors-and-anonymous-responders)一節。
 
 |**易記名稱**|**作業**|**描述**|
 |:-----|:-----|:-----|
@@ -846,9 +819,9 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 |已提交回應|SubmitResponse|使用者提交表單的回應。 <br><br>屬性 IsInternalForm：如果回應者與表單擁有者位於同一組織中，則會顯示布林值。|
 ||||
 
-#### <a name="forms-activities-performed-by-co-authors-and-anonymous-responders"></a>由共同作者和匿名回應者執行的 Forms 活動
+#### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>由共同作者和匿名回應者執行的 Forms 活動
 
-在設計表單和分析回應時，Forms 支援共同作業。 表單合作者稱為 [共同作者]**。 除了刪除或移動表單以外，共同作者可以執行表單擁有者可以執行的所有動作。 Forms 也可讓您建立可匿名回應的表單。 這表示回應者不需要登入您的組織就能回應表單。 
+在設計表單和分析回應時，Forms 支援共同作業。 表單共同作業者稱為 [共同作者]**。 除了刪除或移動表單以外，共同作者可以執行表單擁有者可以執行的所有動作。 Forms 也可讓您建立可匿名回應的表單。 這表示回應者不需要登入您的組織就能回應表單。 
 
 下表說明共同作者和匿名回應者執行之活動的稽核記錄中的稽核活動和資訊。
 

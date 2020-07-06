@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 使用安全性與合規性中心的搜尋和清除功能，可搜尋並刪除組織中所有信箱的電子郵件訊息。
-ms.openlocfilehash: 69df11f00680aec2380ed5663761a29bc1fcfebc
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 3be3b64d7745fe97aae6b2003e0adbcd6aa7d82e
+ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626439"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44352096"
 ---
 # <a name="search-for-and-delete-email-messages"></a>搜尋並刪除電子郵件訊息
 
@@ -42,14 +42,16 @@ ms.locfileid: "43626439"
 ## <a name="before-you-begin"></a>開始之前
 
 - 若要建立和執行內容搜尋，您必須是「eDiscovery 管理員」**** 角色群組的成員，或者獲指派「合規性搜尋」**** 管理角色。 若要刪除郵件，您必須是「組織管理」**** 角色群組的成員，或者獲指派「搜尋及清除」**** 管理角色。 如需新增使用者至角色群組的詳細資訊，請參閱[在安全性與合規性中心中指派電子文件探索權限](assign-ediscovery-permissions.md)。
-    
+
 - 您必須使用安全性與合規性中心 PowerShell 來刪除郵件。 如需如何連線的相關指示，請參閱[步驟 2](#step-2-connect-to-security--compliance-center-powershell)。
-    
+
 - 每個信箱一次可以移除最多 10 個項目。 因為搜尋和移除郵件的功能應該是事件回應工具，此限制可以協助確保從信箱快速移除郵件。 這項功能不是用來清除使用者信箱。
-    
+
 - 透過搜尋及清除動作，您最多可以在內容搜尋刪除 50,000 個信箱內的項目。 如果內容搜尋 (您在[步驟 1 ](#step-1-create-a-content-search-to-find-the-message-to-delete)中建立) 中有超過 50,000 個來源信箱，則您在步驟 3 中建立的清除動作將失敗。 請參閱[詳細資訊](#more-information)章節以取得搜尋並清除超過 50,000 個信箱的執行提示。 
-    
+
 - 本文所述的程序只能用於刪除 Exchange Online 信箱和公用資料夾中的項目。 您無法使用這個程序來刪除 SharePoint 或商務用 OneDrive 上的內容。
+
+- 您無法使用本文所述的程序刪除進階電子文件探索案例的檢閱集中的電子郵件項目。 這是因為檢閱集中的項目儲存在 Azure 儲存體位置，而不是在實際服務中。 這表示不會由您在步驟 1 建立的內容搜尋所傳回。 若要刪除檢閱集中的項目，您必須刪除包含檢閱集的進階電子文件探索案例。 如需詳細資訊，請參閱[關閉或刪除進階電子文件探索案例](close-or-delete-case.md)。
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>步驟 1：建立內容搜尋來尋找要刪除的郵件
 
@@ -59,16 +61,16 @@ ms.locfileid: "43626439"
     
 - [內容搜尋的關鍵字查詢](keyword-queries-and-search-conditions.md)
     
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearch)
+- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearch)
     
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/Start-ComplianceSearch)
+- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/Start-ComplianceSearch)
     
 > [!NOTE]
 > 在此步驟中建立的內容搜尋，其搜尋的內容位置不能包含 SharePoint 或商務用 OneDrive 網站。 您只能在內容搜尋中包含將用於電子郵件的信箱和公用資料夾。 如果內容搜尋包含網站，則在步驟 3 中執行 **New-ComplianceSearchAction ** Cmdlet 時會收到錯誤。 
   
 ### <a name="tips-for-finding-messages-to-remove"></a>尋找要移除郵件的提示
 
-搜尋查詢的目標是將搜尋結果縮減為只有您想要移除的郵件。以下是一些提示：
+The goal of the search query is to narrow the results of the search to only the message or messages that you want to remove. Here are some tips:
   
 - 如果您知道郵件主旨行中使用的確切文字或片語，請在搜尋查詢中使用 **Subject** 屬性。 
     
@@ -127,7 +129,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 當您執行上述命令來虛刪除或實刪除郵件時，*SearchName* 參數指定的搜尋是您在步驟 1 建立的內容搜尋。 
   
-如需詳細資訊，請參閱 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction) (英文)。
+如需詳細資訊，請參閱 [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearchAction) (英文)。
 
 ## <a name="more-information"></a>詳細資訊
 
