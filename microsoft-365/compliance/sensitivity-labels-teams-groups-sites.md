@@ -1,5 +1,5 @@
 ---
-title: 對 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤 (公開預覽)
+title: 對 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,44 +17,45 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: ead28675a24b0364b89948fe582277862eaab3b8
-ms.sourcegitcommit: e9cb10d0d617742a5040d7c09d1d36fd1ee25e5d
+ms.openlocfilehash: 7e4b12310d05ecbceb9df2eac5fe4d48e9275bb8
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44649402"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936924"
 ---
-# <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites-public-preview"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容 (公開預覽)
+# <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-在 [Microsoft 365 合規性中心](https://protection.office.com/)中建立敏感度標籤時，您現在可以將這些標籤套用至下列容器：Microsoft Teams 網站、Microsoft 365 群組 ([先前的 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) 和 SharePoint 網站。 使用下列標籤設定來協助保護這些容器中的內容：
+除了使用[敏感度標籤](sensitivity-labels.md)來分類及保護文件和電子郵件，您也可以使用敏感度標籤來保護下列容器中的內容：Microsoft Teams 網站、Microsoft 365 群組 ([之前的 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) 和 SharePoint 網站。 針對此容器層級分類和保護，使用下列標籤設定：
 
 - Microsoft 365 群組連線小組網站的隱私權 (公開或私人)
 - 外部使用者存取
 - 從未受控裝置存取 
 
-當您將此標籤套用至支援的容器時，標籤會自動將已設定的選項套用至連線的網站或群組。 
+當您將此敏感度標籤套用至支援的容器時，標籤會自動將分類和保護設定套用至連線的網站或群組。
 
-不過，這些容器中的內容不會繼承標籤名稱、視覺標記或加密等設定的標籤。 因此，使用者可以為其在 SharePoint 網站或小組網站中的文件加上標籤，請[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
+不過，這些容器中的內容不會繼承分類的標籤和設定 (如視覺標記或加密)。 因此，使用者可以為其在 SharePoint 網站或小組網站中的文件加上標籤，請確定已[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
 
-## <a name="about-the-public-preview-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>關於 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的公開預覽
+> [!NOTE]
+> 容器的敏感度標籤不支援使用 Office 365 內容傳遞網路 (CDN)。
 
-Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤目前為預覽階段，可能在最終發行之前變更。 此公開預覽不適用 Office 365 內容傳遞網路 (CDN)。
+## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>在對 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤時遇到問題嗎？
 
-啟用此預覽並設定新設定的敏感度標籤前，使用者可在其應用程式中查看並套用敏感度標籤。 例如，在 Word 中：
+啟用容器的敏感度標籤並設定新設定的敏感度標籤前，使用者可在其應用程式中查看並套用敏感度標籤。 例如，在 Word 中：
 
 ![Word 傳統型應用程式中顯示的敏感度標籤](../media/sensitivity-label-word.png)
 
-啟用並設定此預覽後，使用者可進一步查看並將敏感度標籤套用至 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站。 例如，從 SharePoint 建立新的小組網站時：
+啟用並設定容器的敏感度標籤後，使用者可進一步查看並將敏感度標籤套用至 Microsoft 小組網站、Microsoft 365 群組和 SharePoint 網站。 例如，從 SharePoint 建立新的小組網站時：
 
 ![從 SharePoint 建立小組網站時的敏感度標籤](../media/sensitivity-labels-new-team-site.png)
 
-## <a name="enable-this-preview-and-synchronize-labels"></a>啟用此預覽並同步處理標籤
+## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>如何為容器啟用敏感度標籤以及同步處理標籤
 
-1. 由於此功能使用 Azure AD 功能，請依照 Azure AD 文件中的指示來啟用預覽：[將敏感度標籤指派到 Azure Active Directory 中的 Microsoft 365 群組 (預覽)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
+1. 由於此功能使用 Azure AD 功能，請依照 Azure AD 文件中的指示來啟用敏感度標籤支援：[將敏感度標籤指派到 Azure Active Directory 中的 Microsoft 365 群組](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
 
-2. 現在[連線至 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
+2. 您現在需要將敏感度標籤同步處理至 Azure AD。 第一，[連接到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
     
     例如，在您以系統管理員身分執行的 PowerShell 工作階段中，使用全域系統管理員帳戶登入：
     
@@ -65,15 +66,15 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤目
     Import-PSSession $Session -DisableNameChecking
     ```
 
-3. 執行下列命令以將您的敏感度標籤同步處理到 Azure AD，以便與 Microsoft 365 群組搭配使用：
+3. 然後執行下列命令，以確保您的敏感度標籤可以搭配 Microsoft 365 群組使用：
     
     ```powershell
     Execute-AzureAdLabelSync
     ```
 
-## <a name="how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels"></a>如何在建立或編輯敏感度標籤時設定網站和群組設定
+## <a name="how-to-configure-site-and-group-settings"></a>如何設定網站和群組設定
 
-您現在可以建立或編輯需要用於網站和群組的敏感度標籤。 啟用預覽可在敏感度標籤精靈中顯示新頁面：**網站和群組設定**
+您現在可以建立或編輯需要用於網站和群組的敏感度標籤。 啟用容器的敏感度標籤可在敏感度標籤精靈中顯示新頁面：**網站和群組設定**
 
 如果您需要建立或編輯敏感度標籤的協助，請參閱[建立及設定敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)的指示。
 
@@ -85,7 +86,7 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤目
     
     如果您想要使用敏感度標籤來保護容器中的內容，但仍讓使用者自行設定隱私權設定，則選取 [無 - 讓使用者選擇可以存取網站的人員]****。
     
-    將此標籤套用至容器時，請選取 [公用]**** 或 [私人]**** 設定來設定和鎖定隱私權設定。 您選擇的設定會取代先前為團隊或群組設定的任何隱私權設定，並鎖定隱私權值，因此必須先移除容器的敏感度標籤才能變更隱私權設定。 移除敏感度標籤後，標籤的隱私權設定會保留，使用者現在便可再次變更隱私權設定。
+    將此標籤套用至容器時，請選取 [公用]**** 或 [私人]**** 設定來設定和鎖定隱私權設定。 您選擇的設定會取代先前為小組或群組設定的任何隱私權設定，並鎖定隱私權值，因此必須先移除容器的敏感度標籤才能變更隱私權設定。 移除敏感度標籤後，標籤的隱私權設定會保留，使用者現在便可再次變更隱私權設定。
 
 - **外部使用者存取**：控制群組擁有者是否可以[將來賓新增至群組](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
@@ -104,36 +105,55 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤目
 
 ## <a name="sensitivity-label-management"></a>敏感度標籤管理
 
-> [!WARNING]
-> 建立、修改和刪除您用於 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤時，需要謹慎地就發佈給使用者的標籤原則進行協調。 
+建立、修改或刪除為網站和群組設定的敏感度標籤時，請使用下列指導方針。
 
-使用下列指南來避免可能影響所有使用者的網站和群組建立錯誤。
+### <a name="creating-and-publishing-labels-that-are-configured-for-sites-and-groups"></a>建立及發佈針對網站和群組設定的標籤
 
-**建立及發佈標籤：**
+建立並發佈敏感度標籤後，最多可能需要 24 小時的時間，標籤才會對小組、群組和網站中的使用者顯示。 當標籤時是針對網站和群組進行設定時，請使用下列指導方針來為您的使用者發佈該標籤：
 
-建立並發佈敏感度標籤後，最多可能需要 24 小時的時間，標籤才會對小組、群組和網站中的使用者顯示。 使用下列步驟為租用戶中的所有使用者發佈標籤：
-
-1. 建立敏感度標籤，並只對租用戶中的一些使用者帳戶發佈。
+1. 建立及設定敏感度標籤之後，請將此標籤新增至只適用一些測試使用者的標籤原則。
 
 2. 等候 24 小時。
 
-3. 等候 24 小時之後，使用您在步驟 1 中指定的其中一個使用者帳戶來建立小組、Microsoft 365 群組或 SharePoint 網站，並搭配您在步驟 1 中建立的標籤。
+3. 在此等候期間之後，請使用其中一個測試使用者帳戶來建立小組、Microsoft 365 群組或 SharePoint 網站，並搭配您在步驟 1 中建立的標籤。
 
-4. 如果在步驟 3 的建立作業期間沒有發生任何錯誤，請對您的租用戶中的所有使用者發佈標籤。 如果發生錯誤，請連絡 [Microsoft 支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+4. 如果在此建立作業期間沒有發生任何錯誤，您便知道可以安全地將標籤發佈給租用戶中的所有使用者。
 
-**修改及刪除已發佈的標籤：**
+### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>修改針對網站和群組設定的已發佈標籤
 
-如果您修改或刪除已啟用網站和群組設定的敏感度標籤，且該標籤包含在一或多個標籤原則中，這些動作可能會導致所有小組、群組和網站建立失敗。 若要避免此情況，請使用下列指導方針：
+最佳做法是，不要在將標籤套用至小組、群組或網站之後，變更敏感度標籤的網站和群組設定。 如果您這麼做，請允許最多 3 天的時間，讓變更複製至已套用標籤的所有容器。 
+
+此外，如果您的變更包括 [外部使用者存取]**** 設定：
+
+- 新設定會套用至新使用者，但不會套用至現有使用者。 例如，如果先前已選取此設定，且因此來賓使用者可存取網站，在標籤設定中清除此設定之後，這些來賓使用者仍然可以存取網站。
+
+- 群組屬性 hiddenMembership 和 roleEnabled 的隱私權設定不會更新。
+
+
+### <a name="deleting-published-labels-that-are-configured-for-sites-and-groups"></a>刪除針對網站和群組設定的已發佈標籤
+
+如果您刪除已啟用網站和群組設定的敏感度標籤，且該標籤包含在一或多個標籤原則中，此動作可能會導致新小組、群組和網站建立失敗。 若要避免此情況，請使用下列指導方針：
 
 1. 從包含標籤的所有標籤原則中移除敏感度標籤。
 
 2. 等候 48 小時。
 
-3. 在等候 48 小時之後，請嘗試建立小組、群組或網站，並確認標籤已不再顯示。
+3. 在此等候期間之後，請嘗試建立小組、群組或網站，並確認標籤已不再顯示。
 
-4. 如果敏感度標籤未顯示，您現在可以放心地修改或刪除標籤。 如果標籤仍顯示，請連絡 [Microsoft 支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+4. 如果敏感度標籤未顯示，您現在可以放心地刪除標籤。
 
-## <a name="assign-sensitivity-labels-to-microsoft-365-groups"></a>將敏感度標籤指派給 Microsoft 365 群組
+## <a name="how-to-apply-sensitivity-labels-to-containers"></a>如何將敏感度標籤套用至容器
+
+您現在可以將敏感度標籤或標籤套用至下列容器：
+
+- [Azure AD 中的 Microsoft 365 群組](#apply-sensitivity-labels-to-microsoft-365-groups)
+- [Microsoft Teams 小組網站](#apply-a-sensitivity-label-to-a-new-team)
+- [Outlook 網頁版中的 Microsoft 365 群組](#apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web)
+- [SharePoint 網站](#apply-a-sensitivity-label-to-a-new-site)
+
+如果您需要[將敏感度標籤套用至多個網站](#use-powershell-to-apply-a-sensitivity-label-to-multiple-sites)，您可以使用 PowerShell。
+
+### <a name="apply-sensitivity-labels-to-microsoft-365-groups"></a>將敏感度標籤套用至 Microsoft 365 群組
 
 您現在可以將敏感度標籤或標籤套用至 Microsoft 365 群組。 如需指示，請返回 Azure AD 文件：
 
@@ -143,7 +163,7 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤目
 
 -  [在 Azure 入口網站中將標籤從現有群組移除](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal)。
 
-## <a name="apply-a-sensitivity-label-to-a-new-team"></a>將敏感度標籤套用至新的小組
+### <a name="apply-a-sensitivity-label-to-a-new-team"></a>將敏感度標籤套用至新的小組
 
 當使用者在 Microsoft Teams 中建立新小組時，可選取敏感度標籤。 當使用者從 [敏感度]**** 下拉式功能表中選取標籤時，隱私權設定可能會變更以反映標籤設定。 根據您為標籤選取的外部使用者存取設定，使用者可以或無法將組織外部的人員新增至小組。
 
@@ -157,13 +177,13 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤目
 
 服務自動將相同的敏感度標籤套用至 Microsoft 365 群組和連線的 SharePoint 小組網站。
 
-## <a name="apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web"></a>在 Outlook 網頁版中將敏感度標籤套用至新的群組
+### <a name="apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web"></a>在 Outlook 網頁版中將敏感度標籤套用至新的群組
 
 在 Outlook 網頁版中，當您建立新的群組時，您可以選取或變更已發佈標籤的**敏感度**選項：
 
 ![建立群組並選取 [敏感度] 底下的選項](../media/sensitivity-label-new-group.png)
 
-## <a name="apply-a-sensitivity-label-to-a-new-site"></a>將敏感度標籤套用至新的網站
+### <a name="apply-a-sensitivity-label-to-a-new-site"></a>將敏感度標籤套用至新的網站
 
 系統管理員和使用者可以在[建立新式小組網站和通訊網站](/sharepoint/create-site-collection)時選取敏感度標籤，然後展開 [進階設定]****：
 
@@ -175,90 +195,89 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤目
 
 ![已套用敏感度標籤的網站](../media/sensitivity-label-site.png)
 
-## <a name="view-sensitivity-labels-in-the-sharepoint-admin-center"></a>在 SharePoint 系統管理中心檢視敏感度標籤
+### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>使用 PowerShell 將敏感度標籤套用至多個網站
 
-若要檢視套用的敏感度標籤，請使用新 SharePoint 系統管理中心的 **[使用中網站]** 頁面。 您可能需要先新增 **[敏感度]** 欄：
+您可以從目前的 SharePoint Online 管理命令介面使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) 和 [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Cmdlet 搭配 *SensitivityLabel* 參數，將敏感度標籤套用至許多網站。 網站可以是任何 SharePoint 網站集合，或 OneDrive 網站。
 
-![[使用中網站] 頁面上的 [敏感度] 欄](../media/manage-site-sensitivity-labels.png)
+確定您有 SharePoint Online 管理命令介面的版本 16.0.19418.12000 或更新版本。
 
-[深入了解在新的 SharePoint 系統管理中心管理網站](/sharepoint/manage-sites-in-new-admin-center)。
+1. 使用 [以系統管理員身分執行]**** 選項開啟 PowerShell 工作階段。
 
-## <a name="change-site-and-group-settings-for-a-label"></a>變更標籤的網站和群組設定
-
-每當您變更標籤的網站和群組設定時，您必須執行下列 PowerShell 命令，以便您的小組、網站和群組可以使用新的設定。 最佳做法是，不要在將敏感度標籤套用至數個小組、群組或網站之後，變更該標籤的網站和群組設定。
-
-1. 第一，[連接到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
-    
-    例如，在您以系統管理員身分執行的 PowerShell 工作階段中，使用全域系統管理員帳戶登入：
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    ```
-
-2. 透過使用 [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) Cmdlet，取得敏感度標籤和其 GUID 的清單：
+2. 如果您不知道標籤 GUID：[連線至 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)，並取得敏感度標籤及其 GUID 清單。
     
     ```powershell
     Get-Label |ft Name, Guid
     ```
 
-3. 記下您已變更之標籤的 GUID。
-
-4. 現在[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
-    
-    例如：
+3. 現在[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)，並將標籤 GUID 儲存為變數。 例如： 
     
     ```powershell
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session
+    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
     ```
-    
-5. 執行 [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/get-unifiedgroup?view=exchange-ps) Cmdlet，指定您的標籤 GUID 來取代範例 GUID "e48058ea-98e8-4940-8db0-ba1310fd955e"： 
+
+4. 建立可找出在其 URL 中有共同識別字串的多個網站的新變數。 例如：
     
     ```powershell
-    $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents" 
     ```
 
-6. 針對每個群組，重新套用敏感度標籤，然後指定您的標籤 GUID 來取代 "e48058ea-98e8-4940-8db0-ba1310fd955e" 的 GUID 範例：
+5. 執行下列命令，將標籤套用至這些網站。 使用我們的範例：
     
     ```powershell
-    foreach ($g in $groups)
-    {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
+    $sites | ForEach-Object {Set-SpoTenant $_.url -SensitivityLabel $Id}
     ```
 
-## <a name="support-for-the-sensitivity-labels"></a>支援敏感度標籤
+若要將不同的標籤套用至不同的網站，請針對每個網站重複下列命令：`Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
-您可以搭配下列應用程式和服務，使用您為網站和群組設定套用的敏感度標籤：
+## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>在 SharePoint 系統管理中心檢視和管理敏感度標籤
 
-- SharePoint Online
-- Teams
-- Outlook 網頁版
-- SharePoint 系統管理中心
-- Azure AD 系統管理中心
+若要檢視、排序和搜尋套用的敏感度標籤，請使用新 SharePoint 系統管理中心的 [使用中網站]**** 頁面。 您可能需要先新增 **[敏感度]** 欄：
 
-目前無法使用您為網站和群組設定套用的敏感度標籤的其他應用程式和服務包括：
+![[使用中網站] 頁面上的 [敏感度] 欄](../media/manage-site-sensitivity-labels.png)
 
-- Mac 版 Outlook
-- Outlook Mobile
-- 適用於 Windows 的電腦版 Outlook
-- Forms
-- Dynamics 365
-- Yammer
-- Stream
-- Planner
-- Project
-- PowerBI
-- Teams 系統管理中心
-- Microsoft 365 系統管理中心
-- Exchange 系統管理中心
+如需從 [作用中網站] 頁面管理網站的詳細資訊，包括如何新增欄，請參閱[在新的 SharePoint 系統管理中心管理網站](/sharepoint/manage-sites-in-new-admin-center)。
 
+您也可以從本頁面變更及套用標籤：
+
+1. 選取網站名稱以開啟詳細資料窗格。
+
+2. 選取 [原則]**** 索引標籤，然後選取 [敏感度]**** 設定的 [編輯]****。
+
+3. 從 [編輯敏感度設定]**** 窗格中，選取您要套用至網站的敏感度標籤，然後選取 [儲存]****。
+
+## <a name="support-for-sensitivity-labels"></a>支援敏感度標籤
+
+下列應用程式與服務支援針對網站和群組進行設定的敏感度標籤：
+
+- 系統管理中心：
+    - SharePoint 系統管理中心
+    - Azure Active Directory 入口網站
+    - Microsoft 365 合規性中心、Microsoft 365 安全性中心、Office 365 安全性與合規性中心
+
+- 使用者應用程式與服務：
+    - SharePoint
+    - Teams
+    - Outlook 網頁版和 Windows 版、MacOS 版、iOS 版及 Android 版
+    - Forms
+    - Stream
+
+下列應用程式與服務目前不支援針對網站和群組進行設定的敏感度標籤：
+
+- 系統管理中心：
+    - Microsoft 365 系統管理中心
+    - Teams 系統管理中心
+    - Exchange 系統管理中心
+
+- 使用者應用程式與服務：
+    - Dynamics 365
+    - Yammer
+    - Planner
+    - Project
+    - PowerBI
 
 ## <a name="classic-azure-ad-group-classification"></a>傳統 Azure AD 群組分類
 
-啟用此預覽時，Microsoft 365 不再針對新的 Microsoft 365 群組和 SharePoint 網站支援舊分類。 不過，現有的群組和網站仍會顯示舊的分類值，除非您轉換它們以使用敏感度標籤。
+啟用容器的敏感度標籤之後，Microsoft 365 不再針對新的 Microsoft 365 群組和 SharePoint 網站支援舊分類。 不過，支援敏感度標籤的現有的群組和網站仍會顯示舊的分類值，直到您轉換它們以使用敏感度標籤為止。
 
 如需您先前可能使用的 SharePoint 舊群組分類範例，請參閱 [SharePoint 新式網站分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)。
 
@@ -281,6 +300,8 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤目
 2. 移除現有群組和網站的舊分類。
 
 雖然您無法防止使用者在尚未支援敏感度標籤的應用程式和服務中建立新群組，但您可以執行週期性 PowerShell 指令碼來尋找使用者使用舊分類建立的新群組，並將它們轉換成使用敏感度標籤。 
+
+若要協助您管理網站和群組的敏感度標籤與 Azure AD 分類的共存，請參閱 [Microsoft 365 群組的 Azure Active Directory 分類和敏感度標籤](migrate-aad-classification-sensitivity-labels.md)。
 
 #### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>使用 PowerShell 將 Microsoft 365 群組的分類轉換成敏感度標籤
 
@@ -344,19 +365,18 @@ Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤目
 
 您可以在 [[敏感度標籤活動]](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) 類別中找到所有這些稽核事件。 如需搜尋稽核記錄的指示，請參閱[在安全性與合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)。
 
-## <a name="troubleshoot-sensitivity-label-deployment"></a>疑難排解敏感度標籤部署
+## <a name="how-to-disable-sensitivity-labels-for-containers"></a>如何停用容器的敏感度標籤
 
-在使用 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤時遇到問題嗎？ 請檢查下列項目：
+您可以使用來自[啟用 PowerShell 中的敏感度標籤支援](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)中的相同指示來關閉 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤。 不過，若要停用此功能，請在步驟 5 中指定 `$setting["EnableMIPLabels"] = "False"`。
 
-### <a name="labels-not-visible-after-publishing"></a>發佈之後標籤無法顯示
-如果您在啟用這些設定或修改敏感度標籤的名稱和工具提示後，於建立網站或 Microsoft 365 群組時遇到問題，請先儲存標籤變更並等候幾小時，然後再嘗試重新建立小組或群組。 如需詳細資訊，請參閱[排程在建立或變更敏感度標籤後推出](sensitivity-labels-sharepoint-onedrive-files.md#schedule-roll-out-after-you-create-or-change-a-sensitivity-label)。
+除了在建立或編輯敏感度標籤時隱藏 [網站和群組設定]**** 頁面，此動作會還原容器用於其設定的屬性。 為 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤，會將使用的屬性從 [分類]**** (用於 [Azure AD 群組分類](#classic-azure-ad-group-classification)) 切換為 [敏感度]****。 停用容器的敏感度標籤時，容器會忽略 [敏感度] 屬性，並再次使用 [分類] 屬性。
 
-如果您仍看不到來自 SharePoint Online 的新敏感度標籤，請連絡 [Microsoft 支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)。
+這表示來自網站和群組、先前套用至容器的任何標籤設定都不會強制執行，而容器則不再顯示標籤。
 
-### <a name="team-group-or-sharepoint-site-creation-errors"></a>小組、群組或 SharePoint 網站建立錯誤
-如果您在公開預覽期間遇到建立錯誤，則可以使用來自[啟用 PowerShell 中的敏感度標籤支援](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)中的相同指示來關閉 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤。 不過，若要停用預覽，請在步驟 5 中使用 `$setting["EnableMIPLabels"] = "False"` 來停用此功能。
+如果這些容器已套用 Azure AD 分類值，則容器會再次還原為使用分類。 請注意，啟用功能之後所建立的任何新網站或群組都不會顯示標籤或具有分類。 針對這些容器以及任何新容器，您現在可以套用分類值。 如需詳細資訊，請參閱 [SharePoint「新式」網站分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)和[為組織中的 Office 群組建立分類](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)。
 
 ## <a name="additional-resources"></a>其他資源
 
 如需有關[透過 Microsoft Teams、O365 群組和 SharePoint Online 網站使用敏感度標籤](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380) (英文) 的資訊，請參閱網路研討會的記錄和回答的問題。
 
+此網路研討會錄製時該功能仍處於預覽，因此您可能會發現 UI 中有部分差異。 不過，此功能的資訊仍會是正確的，且此頁面上會記載任何新功能。
