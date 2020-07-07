@@ -20,12 +20,11 @@ description: 使用 Microsoft 資訊保護架構中的敏感度標籤，以透�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 1e1a9d1144381ecc9c6b46d34f71c7a7741c6832
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: d15152257f9be222420d63ed53a5921c74dc184f
+ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819243"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44936792"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -79,9 +78,6 @@ Each item of content can have a single sensitivity label applied to it. An item 
 
 ## <a name="what-sensitivity-labels-can-do"></a>敏感度標籤的功能
 
-> [!NOTE]
-> 除了將敏感度標籤套用至電子郵件和文件，目前在預覽版中，您也可以[搭配 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤](sensitivity-labels-teams-groups-sites.md)。
-
 將敏感度標籤套用至電子郵件或文件後，將會對內容強制執行為該標籤設定的保護設定。 您可以使用敏感度標籤：
 
 - 只**加密**電子郵件或電子郵件和文件。 您可以選擇哪些使用者或群組可以擁有權限來執行哪些動作，以及執行多久。 例如，您可以選擇允許另一個組織內特定群組中的使用者有權在標記內容後的七天內檢閱內容。 或者，可以讓使用者在套用標籤時，指派權限給內容，而不要使用系統管理員定義的權限。 
@@ -97,9 +93,9 @@ Each item of content can have a single sensitivity label applied to it. An item 
     字串長度：浮水印限制為 255 個字元。 頁首和頁尾均受限於 1024 個字元，但 Excel 除外。 對於頁首及頁尾，Excel 的總限制為 255 個字元，但此限制包含看不見的字元，例如格式代碼。 如果達到該限制，您輸入的字串就不會顯示在 Excel 中。
 
 
-- 當您加入預覽以[在 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站 (公開預覽) 中搭配使用敏感度標籤時](sensitivity-labels-teams-groups-sites.md)，**保護容器中的內容，例如網站和群組**。
+- 當您啟用功能，以[在 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中使用敏感度標籤](sensitivity-labels-teams-groups-sites.md)時，**保護容器中的內容，例如網站和群組**。
     
-    在您選擇預覽版之前，不會顯示 [網站和群組設定]**** 的設定選項。 請注意，此標籤設定並不會導致文件字動加上標籤，相反的，標籤設定會控制儲存文件的容器存取權，以保護內容。 這些設定包括隱私權層級，Microsoft 365 群組擁有者是否可以將來賓新增至群組，以及授權給非管理裝置的存取層級。
+    在您啟用此功能之前，不會顯示 [網站和群組設定]**** 的設定選項。 請注意，此標籤設定並不會導致文件字動加上標籤，相反的，標籤設定會控制儲存文件的容器存取權，以保護內容。 這些設定包括隱私權層級，Microsoft 365 群組擁有者是否可以將來賓新增至群組，以及授權給非管理裝置的存取層級。
 
 - **在 Office 應用程式中自動套用標籤，或建議標籤。** 您可以選擇您要標示的敏感資訊類型，且可以自動套用標籤，或提示使用者套用您建議的標籤。 如果您建議使用某個標籤，提示會顯示您選擇的任何文字。 例如：
     

@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +15,17 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虛構但有代表性的全球組織如何採用 Microsoft 365 企業版。
-ms.openlocfilehash: e623e4a95172432dc790f345b1758afed63e144c
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
-ms.translationtype: HT
+ms.openlocfilehash: dd9bf2dcb7a8bff453746a0084faaf69650bf6fd
+ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268419"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854255"
 ---
 # <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>適用於 Contoso Corporation 的 Microsoft 365 企業版
 
 Microsoft 365 企業版是 Microsoft 的頂級雲端供應項目，結合本機與雲端生產力應用程式和服務與 Windows 10 企業版和進階安全功能，成為完整、智慧型的解決方案，讓所有人都能發揮創意並且安全地共同作業。 
 
-Contoso Corporation 是虛構但有代表性的全球製造集團，總部位於法國巴黎。Contoso 已部署 Microsoft 365 企業版並且針對網路、身分識別、Windows 10 企業版、Microsoft 365 Apps 企業版、行動裝置管理、資訊保護和安全性，訂定主要設計決策和實作詳細資料。 
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
 
 Contoso 對於 Microsoft 365 企業版的整體目標是藉由使用雲端服務來加速其數位轉換，雲端服務可以讓其員工、合作夥伴、資料和程序合併在一起，以建立客戶價值並且在數位優先世界維持其競爭優勢。
 
@@ -72,7 +71,11 @@ Contoso 對於 Microsoft 365 企業版的整體目標是藉由使用雲端服務
 
   為了針對高度機密的專案建立安全的共同作業環境，Contoso 採用一個具有安全性隔離措施的團隊。
 
-## <a name="next-step"></a>後續步驟
+- [Teams 語音移轉概觀](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+
+  了解 Contoso 如何將他們的內部部署使用者移轉至 Teams，以取得整合通訊、共同作業及語音功能。
+
+## <a name="next-step"></a>下一步
 
 [了解](contoso-overview.md) Contoso Corporation、其全球各地辦公室，和部署 Microsoft 365 企業版時訂定的設計考量。
 

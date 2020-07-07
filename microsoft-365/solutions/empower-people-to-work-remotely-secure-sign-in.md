@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/20/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,11 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 您的遠端工作者必須使用多重要素驗證 (MFA) 來登入。
-ms.openlocfilehash: 142f4d42715ae53e411f045f4df09471b7ba63da
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
-ms.translationtype: HT
+ms.openlocfilehash: 57febcb68b09ffcbbb1694100b31d7d75158d872
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560408"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844951"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步驟 1： 使用 MFA 提升遠端工作者的登入安全性
 
@@ -95,6 +94,10 @@ Azure AD Identity Protection 需有已附加在 Microsoft 365 E5 中的 Azure AD
 ## <a name="let-your-users-reset-their-own-passwords"></a>讓您的使用者重設自己的密碼
 
 自助式密碼重設（SSPR）可讓使用者自行重設自己的密碼，而不會影響到 IT 人員的工作。 使用者可隨時隨地快速重設自己的密碼。 請觀看 [這段影片](https://go.microsoft.com/fwlink/?linkid=2128524) 了解如何設定 SSPR。
+
+## <a name="sign-in-to-saas-apps-with-azure-ad"></a>使用 Azure AD 登入 SaaS 應用程式
+
+除了為使用者提供雲端驗證之外，Azure AD 也可以是您保護所有應用程式 (無論是內部部署、位於 Microsoft 雲端或其他雲端) 的核心方式。 透過[將您的應用程式整合到 Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration)，您可以輕鬆地讓遠端工作者探索所需的應用程式，並安全地登入這些應用程式。
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>適用於 MFA 和身分識別的系統管理員技術資源
 

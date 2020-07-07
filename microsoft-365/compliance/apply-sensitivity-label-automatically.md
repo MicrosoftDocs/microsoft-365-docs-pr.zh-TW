@@ -16,12 +16,11 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 6521bd9c23d8596adb8c86b73a82c3e8aecb85fb
-ms.sourcegitcommit: 03da5464943ef4b9a51644601a229897955dcbb2
-ms.translationtype: HT
+ms.openlocfilehash: c9b7782c39582deec3d42eb0c9dd1083519c805e
+ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44658359"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874913"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -54,16 +53,19 @@ ms.locfileid: "44658359"
     如需設定指示，請參閱此頁面上的[如何設定 SharePoint、OneDrive 和 Exchange 的自動套用標籤原則](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)。
     
     SharePoint 和 OneDrive 自動套用標籤專屬限制：
-    - 租用戶中每日最多 25,000 個自動套用標籤的檔案 (Word、PowerPoint 或 Excel)
-    - 所有原則之間 10 個網站集合的上限
-    - 您的租用戶之間 10 個原則的上限
-    - 在類比模式和套用標籤時，系統不會變更修改日期，因為這是自動套用標籤原則。
+    - 支援 Word、PowerPoint 和 Excel 的 Office 檔案。
+    - 租用戶中每日最多有 25,000 個自動套用標籤的檔案。
+    - 所有原則之間 10 個網站集合的上限。
+    - 您的租用戶之間 10 個原則的上限。
+    - 自動標籤原則不會造成修改時間、修改者和日期的現有值變更 (對於兩個模擬模式和套用標籤時)。
+    - 當標籤套用加密時，[版權管理頒發者和版權管理擁有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)會是建立敏感度標籤的人員。
 
     Exchange 自動套用標籤專屬限制：
-    - 不同於 Office 應用程式的手動套用標籤或自動套用標籤，Office 附件也會針對您在自動套用標籤原則中指定的條件進行掃描。 有相符項目時，電子郵件會套用標籤，但是附件不會套用標籤。
+    - 不同於 Office 應用程式的手動套用標籤或自動套用標籤，Office 附件 (Word、Excel 和 PowerPoint 檔案) 和 PDF 附件也會針對您在自動套用標籤原則中指定的條件進行掃描。 有相符項目時，電子郵件會套用標籤，但是附件不會套用標籤。
     - 如果您有套用 IRM 加密的 Exchange 郵件流程規則或資料外洩防護 (DLP) 原則：當內容由這些規則或原則和自動套用標籤原則識別時，則會套用標籤。 如果該標籤套用加密，則會忽略 Exchange 郵件流程規則或 DLP 原則的 IRM 設定。 不過，如果該標籤並未套用加密，除了標籤以外，還會套用郵件流程規則或 DLP 原則的 IRM 設定。
     - 當有一個相符項目使用自動套用標籤時，具有 IRM 加密而沒有標籤的電子郵件，將會由具有任何加密設定的標籤取代。
     - 當有項目與您的自動套用標籤條件相符時，內送電子郵件會套用標籤。 不過，如果標籤針對加密進行設定，則不會套用加密。
+    - 當標籤套用加密時，[版權管理頒發者和版權管理擁有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)會是傳送電子郵件的人員。
     
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>比較 Office 應用程式的自動套用標籤與自動套用標籤原則
@@ -88,7 +90,7 @@ ms.locfileid: "44658359"
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>將多個條件套用到多個標籤時的評估方式
 
-標籤會根據您在原則中指定的標籤位置，針對評估進行排序：位於第一個位置的標籤具有最低的位置 (敏感度最低)，而位於最後一個位置的標籤具有最高的位置 (敏感度最高)。如需有關原則的詳細資訊，請參閱[標籤優先順序 (排序事項)](sensitivity-labels.md#label-priority-order-matters)。
+The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive) and the label positioned last has the highest position (most sensitive). For more information on priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
 
 ## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>請勿設定將上層標籤設定為自動套用或建議選項
 
@@ -100,7 +102,7 @@ ms.locfileid: "44658359"
 
 ## <a name="how-to-configure-auto-labeling-for-office-apps"></a>如何設定適用於 Office 應用程式的自動套用標籤
 
-在 Windows 版 Office 應用程式中的自動標籤，是由 Azure 資訊保護整合標籤用戶端支援。 針對在 Office 應用程式中的內建標籤功能，在[某些應用程式為預覽](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
+在 Windows 版 Office 應用程式中的自動標籤，是由 Azure 資訊保護整合標籤用戶端支援。 對於 Office 應用程式中的內建標籤，此功能 [ 對不同的應用程式，處於不同的可用性階段 ](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
 
 當您[建立或編輯敏感度標籤](create-sensitivity-labels.md)時，可使用適用於 Office 應用程式的自動套用標籤設定。 當偵測到敏感資訊時，您可以選擇自動將敏感度標籤套用到內容。 從敏感度資訊類型或可訓練分類器清單中選擇：
 
@@ -188,20 +190,20 @@ ms.locfileid: "44658359"
 
 - 模擬模式：
     - 必須開啟 Microsoft 365 的稽核功能。 如果您需要開啟稽核，或者如果您不確定稽核是否開啟，請參閱[開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
-    - 若要在 [來源檢視] 中查看檔案內容 (不支援電子郵件)，如果您不是全域系統管理員，則必須擁有 [內容總管內容檢視器]**** 角色。如果您沒有這個權限，當您從 [相符的項目]**** 索引標籤中選取項目時，就不會看到 [預覽器] 窗格。
+    - 若要在 [來源檢視] 中檢視檔案內容，如果您不是全域系統管理員，則必須擁有 [內容總管內容檢視器]**** 角色。如果您沒有這個權限，當您從 [相符的項目]**** 索引標籤中選取項目時，就不會看到 [預覽器] 窗格。
 
 - 若要對 SharePoint 和 OneDrive 中的檔案自動套用標籤：
     - 您必須[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
-    - 當自動套用標籤原則執行時，檔案不能由其他程序或使用者開啟。
+    - 當自動套用標籤原則執行時，檔案不能由其他程序或使用者開啟。 簽出以編輯的檔案屬於這個類別。
 
 - 如果您計劃使用[自訂敏感性資訊類型](custom-sensitive-info-types.md)，而不是內建的敏感性類型： 
     - 針對在自訂敏感性資訊類型儲存之後所建立的內容，會評估自訂敏感性資訊類型。 
     - 若要測試新的自訂敏感性資訊類型，請在建立您的自動套用標籤原則之前建立，然後建立含有範例資料的新文件以進行測試。
 
 - 一或多個敏感性標籤[已建立和已發佈](create-sensitivity-labels.md) (給至少一個使用者)，這些標籤可供您針對自動套用標籤原則選取。 針對這些標籤：
-    - Office 應用程式中的自動套用標籤標籤設定開啟與否並不重要，因為該標籤設定是補充自動套用標籤原則，如簡介中的說明。 
+    - Office 應用程式中的自動套用標籤標籤設定開啟與否並不重要，因為該標籤設定是補充自動套用標籤原則，如簡介中的說明。
     - 如果您想要用於自動套用標籤的標籤是設定為使用視覺標記 (頁首、頁尾、浮水印)，請注意，這些標籤不適用於文件。
-    - 如果標籤採用加密功能，則必須針對 **[立即指派權限]** 設定進行設定。
+    - 如果標籤套用[加密功能](encryption-sensitivity-labels.md)，則必須針對 [立即指派權限]**** 設定進行設定。
 
 ### <a name="learn-about-simulation-mode"></a>了解模擬模式
 
@@ -294,6 +296,8 @@ ms.locfileid: "44658359"
     ![編輯自動套用標籤原則選項](../media/auto-labeling-edit.png)
     
     當您準備好執行原則而不進行模擬時，請選取 [開啟原則]**** 選項。
+
+您的自動原則會持續執行，直到刪除為止。 例如，新的和修改過的文件會包含在目前的原則設定中。
 
 具有適當[權限](data-classification-content-explorer.md#permissions)時，您也可以藉由使用[內容總管](data-classification-content-explorer.md)，來查看自動套用標籤原則的結果：
 - **內容總管清單檢視器**可讓您查看檔案的標籤，但是無法查看檔案的內容。

@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,11 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 請確保您的遠端工作者能夠存取內部部署資源，同時將 Microsoft 365 雲端服務的存取最佳化。
-ms.openlocfilehash: 363f2a5edb43d294be5a8ecfe0fd02964dd8b945
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
-ms.translationtype: HT
+ms.openlocfilehash: 199dc6aa33134cfa0f9ac311d037a934c12ba3b9
+ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160747"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44844975"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步驟 2： 可遠端存取內部部署應用程式和服務
 
@@ -70,7 +69,11 @@ Microsoft 365 流量必須透過貴組織進行間接路由，這可能是從距
 
 ![Azure AD 應用程式 Proxy 的元件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-如需詳細資訊，請參閱這個 [Azure AD 應用程式 Proxy 概觀](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) (部分機器翻譯)。
+如需詳細資訊，請參閱 [Azure AD 應用程式 Proxy 概觀](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)，以及[使用 Azure AD 應用程式 Proxy 的第 3 部分影片](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security) (英文)。
+
+>[!Note]
+>Azure AD 應用程式 Proxy 未包含在 Microsoft 365 訂閱中。 您必須購買單獨的 Azure 訂閱才能使用。
+>
 
 ## <a name="deploy-remote-access-when-not-all-your-apps-are-web-apps"></a>並非所有應用程式都是 Web 應用程式時，部署遠端存取
 
@@ -82,13 +85,32 @@ P2S VPN 連線會透過 Azure 虛擬網路，建立遠端工作者裝置到貴�
 
 如需詳細資訊，請參閱這個 [P2S VPN 概觀](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about) (部分機器翻譯)。
 
+>[!Note]
+>Azure P2S VPN 不包含在 Microsoft 365 訂閱中。 您必須購買單獨的 Azure 訂閱才能使用。
+>
+
 ## <a name="deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices"></a>部署 Windows 虛擬桌面，以便為使用個人裝置的遠端工作者提供遠端存取 
 
-為支援只能使用其個人和非受管理裝置的遠端工作者，請使用 Azure 中的 Windows 虛擬桌面建立並配置虛擬桌面，讓您的使用者可以在家使用。
+為支援只能使用其個人和非受管理裝置的遠端工作者，請使用 Azure 中的 Windows 虛擬桌面建立並配置虛擬桌面，讓您的使用者可以在家使用。 虛擬化的電腦可以充當連線至貴組織網路的電腦使用。
 
-虛擬化的電腦可以充當連線至貴組織網路的電腦使用。
+![Azure Windows 虛擬桌面元件](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
-如需詳細資訊，請參閱這個 [Windows 虛擬桌面的概觀](https://docs.microsoft.com/azure/virtual-desktop/overview)。
+如需詳細資訊，請參閱： 
+
+- [Windows 虛擬桌面的概觀](https://docs.microsoft.com/azure/virtual-desktop/overview)。
+- [讓遠端工作者使用 Windows 虛擬桌面的第 2 部分影片](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity) (英文)。
+
+>[!Note]
+>Windows 虛擬桌面不包含在 Microsoft 365 訂閱中。 您必須購買單獨的 Azure 訂閱才能使用。
+>
+
+## <a name="protect-your-remote-desktop-services-connections-with-the-remote-desktop-services-gateway"></a>使用遠端桌面服務閘道保護您的遠端桌面服務連線
+
+如果您使用遠端桌面服務 (RDS) 來允許員工連線到內部部署網路上的 Windows 電腦，您應在邊緣網路中使用 Microsoft 遠端桌面服務閘道。 該閘道會使用安全通訊端層 (SSL) 加密通訊，並防止直接將主控 RDS 的系統暴露到網際網路上。
+
+![使用遠端桌面服務閘道的遠端桌面服務連線](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
+
+如需詳細資訊，請參閱[這篇文章](https://www.microsoft.com/security/blog/2020/04/16/security-guidance-remote-desktop-adoption/)。
 
 ## <a name="admin-technical-resources-for-remote-access"></a>適用於遠端存取的系統管理技術資源
 
@@ -105,8 +127,9 @@ P2S VPN 連線會透過 Azure 虛擬網路，建立遠端工作者裝置到貴�
 | 沒有遠端存取 VPN 解決方案，而且您只需要遠端存取內部部署的 Web 架構應用程式 | 您已經設定 Azure 應用程式 Proxy。 |
 | 沒有遠端存取 VPN 解決方案、您需要存取內部部署應用程式，而且其中部分應用程式並非 Web 架構 | 您已經設定 Azure P2S VPN。 |
 | 遠端工作者正在家中使用其個人裝置 | 您已經設定 Windows 虛擬桌面。 |
+| 遠端工作者正在使用 RDS 連線到內部部署系統 | 您已在邊緣網路中部署遠端桌面服務閘道。 |
 |||
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
-繼續執行[步驟 3](empower-people-to-work-remotely-manage-endpoints.md) 以管理裝置、電腦及其他端點。
+繼續進行[步驟 3](empower-people-to-work-remotely-security-compliance.md) 部署 Microsoft 365 安全性與合規性服務，以保護您的應用程式、資料和裝置。

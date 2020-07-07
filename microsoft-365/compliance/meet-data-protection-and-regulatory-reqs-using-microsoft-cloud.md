@@ -16,17 +16,16 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: 瞭解如何使用 Microsoft 服務信任入口網站中的合規性管理員，以符合資料保護和法規需求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 071da43244f2afae3df29ec84ae98713ed0dc2d7
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: aedadc682bd45f363f1e97599383dd901c3eae7f
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815594"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45016254"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合規性管理員 (傳統)
 
 > [!NOTE]
-> 本文件說明此產品之前的版本。 使用者強烈不鼓勵使用此版本的合規性管理員，而是建議您使用全新的 [Microsoft 合規性分數](compliance-score.md)。
+> 本文件說明此產品之前的版本。 我們*不鼓勵使用者使用此版本的合規性管理員*。 **如果您使用的是合規性管理員目前的預覽版本，請參閱[合規性管理員 (預覽) 文件](working-with-compliance-manager.md)。**
 
  合規性管理員無法使用 21Vianet 運作的 Office 365、Office 365 德國、Office 365 U.S. Government Community High (GCC High)，或 Office 365 美國國防部。**
   
@@ -227,7 +226,7 @@ Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 
   
  **威脅**
   
-||||
+|<br>|<br>|<br>|
 |:-----|:-----|:-----|
 ||**強制性** <br/> |**選擇性** <br/> |
 |**預防性** <br/> |高風險  <br/> |中度風險  <br/> |
@@ -244,7 +243,7 @@ Compliance Manager uses a risk-based scoring methodology with a scale from 1-10 
     
 A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
-||**內部**<br/>||**外部**<br/>||||
+|<br>|**內部**<br/>|<br>|**外部**<br/>|<br>|<br>|<br>|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||*惡意*<br/>|*意外*<br/>|*惡意*<br/>|*意外*<br/>|||
 |**具機密性**<br/>|(H、M 或 L)  <br/> |(H、M 或 L)  <br/> |(H、M 或 L)  <br/> |(H、M 或 L)|

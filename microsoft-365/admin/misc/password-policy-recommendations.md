@@ -19,18 +19,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加強貴組織對密碼攻擊的防護，以及為何應禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: b4437f2af409fa3040894a1b0f802140df169635
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-ms.translationtype: HT
+ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
+ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399311"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45015920"
 ---
 # <a name="password-policy-recommendations"></a>密碼原則建議
  
 身為組織的系統管理員，您必須為貴組織中的使用者設定密碼原則。 設定密碼原則相當複雜且令人困惑，因此本文提供加強貴組織對密碼攻擊的防護的建議。
   
 若要判斷貴組織中的 Microsoft 365 密碼到期頻率，請參閱[設定 Microsoft 365 的密碼到期原則](../manage/set-password-expiration-policy.md)。
+
+如需有關 Microsoft 365 密碼的詳細資訊，請參閱這些[相關文章](#related-articles)。
   
 ## <a name="understanding-password-recommendations"></a>了解密碼建議
 
@@ -131,3 +132,13 @@ ms.locfileid: "44399311"
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020) (2015 年最差密碼)
 
 - [Download files from the web](https://go.microsoft.com/fwlink/p/?linkid=861029) (從網頁下載檔案)
+
+## <a name="related-articles"></a>相關文章
+
+[重設密碼](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+
+[設定個別使用者的密碼永不過期](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+
+[讓使用者重設自己的密碼](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+
+[重新傳送使用者的密碼 - 系統管理說明](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)

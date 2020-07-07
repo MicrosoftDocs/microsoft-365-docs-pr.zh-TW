@@ -13,12 +13,11 @@ ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 如何協助將金融服務移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規
 f1.keywords: NOCSH
-ms.openlocfilehash: 24177c6e878116b8d60d8f38be77d0b52141699a
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
-ms.translationtype: HT
+ms.openlocfilehash: 6c6b1c6bbd62e632b79629638aa78630974823df
+ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214693"
+ms.lasthandoff: 05/31/2020
+ms.locfileid: "44432424"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 
@@ -99,7 +98,7 @@ FINRA 建議的有效做法包括下列各項：
 * 清楚定義並控制允許的數位頻道。 定義核准和禁止的數位頻道。 封鎖或限制使用禁止的數位頻道，或數位頻道內會限制組織遵守記錄管理與監管需求的禁止功能。
 * 提供數位通訊訓練。 在授權註冊代表存取經核准的數位頻道之前，先實作必要的訓練計劃。 訓練可協助闡明組織對業務和個人數位通訊的期待，並以符合規範的方式指導員工使用各頻道的允許功能。
 
-FINRA 的數位通訊調查結果和觀測值與組織遵守 [SEC 細則 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) 保留所有與業務相關的通訊、FINRA 細則 [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) 和 [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) 監督及審查通訊，以及 Rule Series [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) 保留記錄直接相關。 美國商品期貨交易委員會 (CFTC) 根據 17 CFR 131 頒布了類似的要求。 本文稍後將深入討論這些法規。
+FINRA 的數位通訊調查結果和觀測值與組織遵守 [SEC 細則 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) 保留所有與業務相關的通訊、FINRA 細則 [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) 和 [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) 監督及審查通訊，以及 Rule Series [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) 保留記錄直接相關。 美國商品期貨交易委員會 (CFTC) 根據 17 CFR 131 頒布了類似的規定。 本文稍後將深入討論這些法規。
 
 ***Teams 和 Microsoft 365 安全性與合規性方案的綜合性套件為金融服務機構提供企業數位通訊頻道，以便有效執行業務並遵守管理法規。*** 本文的其餘部分將說明 Microsoft 365 內建的記錄管理、資訊保護、資訊屏障和監督控制的功能如何為團隊提供強大的工具集，以協助滿足這些法規義務。
 
