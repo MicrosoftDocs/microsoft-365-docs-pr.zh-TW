@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 250d19a09d79fc5fd8c69f2ebd24abadc642fafc
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
-ms.translationtype: MT
+ms.openlocfilehash: 26b376fe3e804a3ebaa478e484807bea4c33d38b
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005843"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049689"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 
@@ -151,7 +150,16 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ## <a name="get-help-as-you-write-queries"></a>編寫查詢時取得協助
 運用下列功能更快速地編寫查詢：
 - **Autosuggest** --當您撰寫查詢時，高級搜尋會提供 IntelliSense 的建議。 
-- **結構描述參考** - 在您的工作區域旁提供、包含資料表清單和其資料欄的結構描述參考。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
+- **架構樹**系-您的工作區域旁會提供包含資料表清單和其欄的架構標記法。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
+- **[架構參考（Schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** ）包含資料表和欄描述的入口網站參照，以及支援的事件種類（ `ActionType` 值）和範例查詢
+
+## <a name="work-with-multiple-queries-in-the-editor"></a>在編輯器中使用多個查詢
+查詢編輯器可以做為您用來試驗多個查詢的草稿墊。 若要使用多個查詢：
+
+- 以空行分隔每個查詢。
+- 將游標放在查詢的任何部分，以選取該查詢，然後再執行它。 這只會執行選取的查詢。 若要執行另一個查詢，請據以移動游標，然後選取 [**執行查詢**]。
+
+![具有多個查詢的查詢編輯器影像](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>使用範例查詢
 

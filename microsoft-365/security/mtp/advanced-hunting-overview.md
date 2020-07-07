@@ -18,12 +18,11 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e8f83b943e83c37ecf13af1221c043d413bd6b5
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
-ms.translationtype: MT
+ms.openlocfilehash: 48850c76176d79e4f90581bfbab804f4649998cc
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347828"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049629"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>使用 Microsoft 威脅防護中的進階搜捕功能主動尋找威脅
 
@@ -47,17 +46,13 @@ ms.locfileid: "44347828"
 | **了解語言** | 進階搜捕是基於 [Kusto 查詢語言](https://docs.microsoft.com/azure/kusto/query/)，支援相同的語法和運算子。 執行您的第一個查詢來開始學習查詢語言。 | [查詢語言概觀](advanced-hunting-query-language.md) |
 | **瞭解如何使用查詢結果** | 深入瞭解圖表和您可以查看或匯出結果的各種方式。 探索如何快速調整查詢，並深入瞭解如何取得更豐富的資訊。 | [使用查詢結果工作](advanced-hunting-query-results.md) |
 | **了解結構描述** | 深入了解結構描述中的資料表和資料行。 這可協助您決定要在何處尋找資料，以及如何建構查詢。 | [結構描述參考](advanced-hunting-schema-tables.md) |
-| **運用預先定義的查詢** | 探索涵蓋不同威脅搜捕案例的預先定義查詢集合。 | [使用共用查詢](advanced-hunting-shared-queries.md) |
+| **運用預先定義的查詢** | 探索涵蓋不同威脅搜捕案例的預先定義查詢集合。 | - [使用共用查詢](advanced-hunting-shared-queries.md)<br>- [開始搜尋](advanced-hunting-go-hunt.md) |
 | **最佳化查詢** | 了解如何建立可結合來自電子郵件和裝置資料的高效查詢。 | - [查詢最佳作法](advanced-hunting-shared-queries.md) <br>- [跨裝置和電子郵件進行搜尋](advanced-hunting-best-practices.md) |
 | **建立自訂偵測規則** | 瞭解您可以如何使用高級搜尋查詢來觸發提醒並自動套用回應動作。 | - [自訂偵測簡介](custom-detections-overview.md)<br>- [自訂偵測規則](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>取得存取權
 若要使用高級搜尋或其他[Microsoft 威脅防護](microsoft-threat-protection.md)功能，您必須在 Azure AD 中獲指派適當的角色。 請注意，在 Microsoft Defender ATP 中，以角色為基礎的存取控制設定會影響對端點資料的存取。 [閱讀管理 Microsoft 威脅防護存取的相關資訊](mtp-permissions.md)
 
-## <a name="get-help-as-you-write-queries"></a>編寫查詢時取得協助
-運用下列功能更快速地編寫查詢：
-- **Autosuggest** --當您撰寫查詢時，高級搜尋會提供 IntelliSense 的建議。 
-- **結構描述參考** - 在您的工作區域旁提供、包含資料表清單和其資料欄的結構描述參考。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
 
 ## <a name="related-topics"></a>相關主題
 - [了解查詢語言](advanced-hunting-query-language.md)

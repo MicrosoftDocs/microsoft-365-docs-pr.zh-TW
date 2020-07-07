@@ -22,12 +22,11 @@ search.appverid:
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
 description: 瞭解如何取消商務用 Microsoft 365 試用版或付費訂閱。
-ms.openlocfilehash: da9a86973c271fce8a9552cfc0ce1b287f7debc8
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
-ms.translationtype: MT
+ms.openlocfilehash: 746060596010fd80816e19dece093d91fe850c30
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023366"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049745"
 ---
 # <a name="cancel-your-subscription"></a>取消訂閱
 
@@ -132,7 +131,7 @@ ms.locfileid: "45023366"
 
 如果您在設定網域時未切換 NS 記錄，當您變更 MX 記錄時，您的郵件會立即開始前往新的位址。
 
-如需詳細資訊，請參閱[Microsoft 365 如何管理我的 DNS 記錄？](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records)。 若要變更您的 NS 記錄，請參閱[移除網域](../../admin/get-help-with-domains/remove-a-domain.md)。
+若要變更您的 NS 記錄，請參閱[移除網域](../../admin/get-help-with-domains/remove-a-domain.md)。
 
 ### <a name="save-your-data"></a>儲存資料
 

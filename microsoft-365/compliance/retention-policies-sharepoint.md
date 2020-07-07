@@ -17,12 +17,11 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 SharePoint 和 OneDrive 的保留原則。
-ms.openlocfilehash: e7a265d39b3cca2ffb9c403cf2c87f287a9325b2
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
-ms.translationtype: HT
+ms.openlocfilehash: db0dfdbddc620bfc7449397bad02463b02c270bd
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016244"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049881"
 ---
 # <a name="learn-about-retention-policies-for-sharepoint-and-onedrive"></a>了解 SharePoint 和 OneDrive 的保留原則
 
@@ -57,18 +56,18 @@ ms.locfileid: "45016244"
 
 當保留原則為僅保留或僅刪除時，內容路徑為保留和刪除的變化：
 
-#### <a name="content-paths-for-retain-only-retention-policy"></a>「僅保留」保留原則的內容路徑
+### <a name="content-paths-for-retain-only-retention-policy"></a>「僅保留」保留原則的內容路徑
 
 1. 在保留期間，**如果內容已修改或刪除**：原始文件的複本會在文件保留庫內建立，並保留到保留期間結束時，然後文件保留庫內的複本會移至第二階段資源回收筒，並在 93 天後永久刪除。
 
 2. 在保留期間，**如果未修改或刪除內容**：保留期間前後沒有任何變化；文件仍會保留在其原始位置。
 
-#### <a name="content-paths-for-delete-only-retention-policy"></a>「僅刪除」保留原則的內容路徑
+### <a name="content-paths-for-delete-only-retention-policy"></a>「僅刪除」保留原則的內容路徑
 
 1. **如果在設定的保留期間刪除內容**：文件會移至第一階段資源回收筒。 如果使用者從此處刪除文件，或清空此資源回收筒，則會將文件移至第二階段資源回收筒。 93 天保留期間涵蓋了第一和第二階段資源回收筒。93 天結束時，則會從文件所在的任何位置永久刪除文件 (無論是第一或第二階段資源回收筒)。 如果在設定的期間修改內容，則在保留期間後會遵循相同的刪除路徑。
 
 2. **如果未在設定的保留期間刪除內容**：在設定的保留期間結束時，系統會將文件移至第一階段資源回收筒。 如果使用者從此處刪除文件，或清空此資源回收筒 (也就是清除)，則會將文件移至第二階段資源回收筒。 93 天保留期間涵蓋了第一和第二階段資源回收筒。93 天結束時，則會從文件所在的任何位置永久刪除文件 (無論是第一或第二階段資源回收筒)。 系統並未對資源回收筒編製索引，因此無法提供搜尋。 如此一來，電子文件探索搜尋就找不到可放置保留的資源回收筒內容。
-    
+
 ## <a name="how-a-retention-policy-works-with-document-versions-in-a-site-collection"></a>保留原則如何搭配網站集合中的文件版本使用
 
 版本設定是 SharePoint 和 OneDrive 中所有文件庫的功能。 根據預設，版本設定會最少保留 500 個主要版本，不過您可以增加此限制。 如需詳細資訊，請參閱[啟用和設定清單或文件庫的版本設定](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)。
@@ -76,13 +75,13 @@ ms.locfileid: "45016244"
 僅保留原則會保留 SharePoint 網站集合或 OneDrive 帳戶中文件的所有版本。 受限於保留或僅保留原則的文件首次遭到編輯時，就會將原始文件版本複製到保留文件庫。 如果已啟用版本設定，受限於保留或僅保留原則的文件遭到刪除時，就會將所有版本複製到保留文件庫。 文件保留庫中的每個文件版本都會存在為個別的項目，並有其自己的保留期間：
   
 - If the retention policy is based on when the content was created, each version has the same expiration date as the original document. The original document and its versions all expire at the same time.
-    
+
 - If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
 
 > [!NOTE]
 > 電子文件探索工具無法搜尋保留版本的 SharePoint 和 OneDrive 文件。
 
-## <a name="when-a-user-leaves-the-organization"></a>當使用者離開組織時 
+## <a name="when-a-user-leaves-the-organization"></a>當使用者離開組織時
 
 **SharePoint**：
 
@@ -90,7 +89,7 @@ ms.locfileid: "45016244"
 
 **OneDrive**：
 
-如果組織中的使用者離職，任何受限於保留原則或含有保留標籤的檔案，在原則或標籤的保留期間內都會予以保留。 在此期間，所有的共用存取權都持續有效。 當保留期間到期時，內容會移至 [網站集合資源回收筒] 中，且除了系統管理員以外的任何人都無法存取。如果保留原則將文件將標記為記錄，在保留期間結束前，不會刪除文件，保留期間結束後則會永久刪除。 
+如果組織中的使用者離職，任何受限於保留原則或含有保留標籤的檔案，在原則或標籤的保留期間內都會予以保留。 在此期間，所有的共用存取權都持續有效。 當保留期間到期時，內容會移至 [網站集合資源回收筒] 中，且除了系統管理員以外的任何人都無法存取。如果保留原則將文件將標記為記錄，在保留期間結束前，不會刪除文件，保留期間結束後則會永久刪除。
 
 ## <a name="how-to-configure-a-retention-policy-for-sharepoint-and-onedrive"></a>如何為 SharePoint 和 OneDrive 設定保留原則
 
@@ -100,8 +99,8 @@ ms.locfileid: "45016244"
 
 - **讓我選擇特定位置，** > **SharePoint 網站**、**OneDrive 帳戶**和 **Office 365 群組**。
 
-當您選擇 **SharePoint 網站** 位置時，保留原則可保留 SharePoint 通訊網站中的內容、未透過 Office 365 群組所連結的小組網站，以及傳統網站。 此選項不支援由 Office 365 群組所連結的小組網站，而是使用套用倒群組信箱、網站和檔案中的內容的 **Office 365 群組**位置。 
+當您選擇 **SharePoint 網站** 位置時，保留原則可保留 SharePoint 通訊網站中的內容、未透過 Office 365 群組所連結的小組網站，以及傳統網站。 此選項不支援由 Office 365 群組所連結的小組網站，而是使用套用倒群組信箱、網站和檔案中的內容的 **Office 365 群組**位置。
 
-當您為 SharePoint 網站指定位置時，您不需要存取網站的權限，而在 [編輯位置]**** 頁面上指定 URL 時也不會進行驗證。 不過，網站必須編制索引，而在精靈結尾將會檢查您指定的網站是否存在。 
+當您為 SharePoint 網站指定位置時，您不需要存取網站的權限，而在 [編輯位置]**** 頁面上指定 URL 時也不會進行驗證。 不過，網站必須編制索引，而在精靈結尾將會檢查您指定的網站是否存在。
 
 如果此檢查失敗，您會看到一則訊息，指出您輸入的 URL 驗證失敗，且精靈不會建立保留原則，直到驗證檢查通過為止。 如果您看到這則訊息，請返回精靈變更 URL 或移除網站。

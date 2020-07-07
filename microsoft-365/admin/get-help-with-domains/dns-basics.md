@@ -22,12 +22,11 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解網域及其相關聯的 DNS 記錄，協助您管理網域。
-ms.openlocfilehash: c9fee3488f7de3c0cc4b93be15ff49bd01469495
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
-ms.translationtype: HT
+ms.openlocfilehash: 2fc581968a4cec3c6e9b5c51f717a8cfa78cd6a3
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035606"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049651"
 ---
 # <a name="dns-basics"></a>DNS 基本知識
 
@@ -143,10 +142,6 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 為什麼區域檔案可能位於網域註冊機構以外的其他位置？ 您可能會在網域註冊機構 (例如 HiChina) 註冊您的網域名稱，但您的 DNS 記錄可能是由其他 DNS 主機服務公司或虛擬主機公司管理。 網域的 NS 記錄會儲存該資訊，讓所有 DNS 伺服器知道尋找的位置。
 
 ::: moniker-end
-
-> [!NOTE]
-> 如果您要在 Microsoft 365 設定網域，讓 [Microsoft 為您設定及管理 DNS 記錄](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records)，則在設定過程中，您得[將 DNS 管理變更為 Microsoft 365](../setup/domains-faq.md#change-dns-management-to-office-365)。 
- 
 
 ::: moniker range="o365-worldwide"
 ## <a name="why-add-a-domain-in-office-365"></a>為什麼要在 Office 365 中新增網域？

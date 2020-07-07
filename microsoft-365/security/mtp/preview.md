@@ -19,12 +19,11 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 6287e7c56f79b09a79c75d7e8b8273dbd5569057
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
-ms.translationtype: MT
+ms.openlocfilehash: 45bc42e825c55ca228b13e8d308f9a1384301d07
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005887"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048264"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威脅防護預覽功能
 
@@ -56,6 +55,8 @@ Microsoft 威脅防護服務會不斷更新，以包含新功能增強功能及�
 
 ## <a name="preview-features"></a>預覽功能
 下列是目前可供預覽的功能和增強功能：
+
+- **[入口網站架構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** 資訊：直接在「安全性中心」中使用之架構資料表的相關資訊。 除了資料表和欄描述之外，此參考還提供支援的事件種類（ `ActionType` 值）和範例查詢的相關資訊。  
 
 - 身分**[識別和應用程式表格](advanced-hunting-schema-tables.md)**--在高級搜尋架構中深入瞭解驗證事件、Active Directory 查詢和應用程式相關的活動與[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)和[AppFileEvents](advanced-hunting-appfileevents-table.md)表格。
 

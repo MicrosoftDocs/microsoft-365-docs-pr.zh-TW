@@ -15,12 +15,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60d0383f3acae73c36383b65daaac405a4e20bd3
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
-ms.translationtype: MT
+ms.openlocfilehash: 8a435b220343bd0353f2e0ef85ddf856ebf3e8aa
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854361"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049937"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-environment"></a>設定試用實驗室環境的 Microsoft 威脅防護支柱
 
@@ -247,8 +246,9 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 
 如需更完整的指導，請參閱[開啟 Microsoft 威脅防護](mtp-enable.md)。 
 
-恭喜！ 您剛剛建立的是 Microsoft 威脅防護試用實驗室環境！ 您現在可以模擬攻擊，並查看「向量積」功能如何偵測、建立提醒，以及自動回應端點上的 fileless 攻擊。
+恭喜！ 您剛剛建立的是 Microsoft 威脅防護試用實驗室環境！ 現在，您可以熟悉 Microsoft 威脅防護使用者介面！ 查看您可以從哪些儀表板學習並瞭解如何使用每個儀表板做為日常安全性作業工作： [Microsoft 威脅防護互動指南](https://aka.ms/MTP-Interactive-Guide)。
 
+接下來，您可以模擬攻擊，並查看「向量積」功能如何偵測、建立提醒，以及自動回應端點上的 fileless 攻擊。
 
 ## <a name="next-steps"></a>後續步驟
 [產生測試警示](generate-test-alert.md)。

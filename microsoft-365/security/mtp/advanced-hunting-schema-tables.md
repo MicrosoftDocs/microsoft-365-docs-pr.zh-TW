@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 032368e35cdfc991df4c01643e49cee538549f39
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 0cb275584acfc2ea0d2a2969694ee189f48a875d
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899360"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046039"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解進階搜捕結構描述
 
@@ -31,10 +30,22 @@ ms.locfileid: "44899360"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[進階搜捕](advanced-hunting-overview.md)結構描述是由多個提供事件資訊或與電腦或實體相關資訊的表格所組成。 若要有效組建跨越多個表格的查詢，您需要了解進階搜捕結構描述中的表格和欄。
+[！附注][高級搜尋](advanced-hunting-overview.md)架構是由多個表格組成，可提供事件資訊或裝置、警示、身分識別及其他實體類型的相關資訊。 若要有效組建跨越多個表格的查詢，您需要了解進階搜捕結構描述中的表格和欄。
+
+## <a name="get-schema-information-in-the-security-center"></a>在安全性中心取得架構資訊
+建立查詢時，請使用內建架構參考，快速取得架構中每個資料表的下列相關資訊：
+
+- **資料表描述**—資料表中包含的資料類型和該資料的來源。
+- **欄**-表格中的所有欄。
+- **動作類型**—欄中的可能值， `ActionType` 代表資料表支援的事件種類。 這只是針對包含事件資訊的資料表提供。
+- **範例查詢**--可用於功能如何使用表格的範例查詢。
+
+### <a name="access-the-schema-reference"></a>存取架構參考
+若要快速存取架構參照，請選取架構表示中的資料表名稱旁邊的**View reference**動作。 您也可以選取 [**架構參考**]，以搜尋表格。   
+
+![顯示如何存取入口網站架構參考的影像 ](../../media/mtp-ah/ah-reference.png) 
 
 ## <a name="schema-tables"></a>結構描述表格
-
 以下參考列出結構描述中的所有表格。 每個表格名稱都會連結到描述該表格之欄名稱的頁面。 表格和欄名稱也同樣列於安全性中心，成為進階搜捕畫面上結構描述代表中的一部分。
 
 | 表格名稱 | 描述 |
@@ -47,7 +58,7 @@ ms.locfileid: "44899360"
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | 檔案建立、修改及其他檔案系統事件 |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL 載入事件 |
 | **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | 電腦資訊，包括作業系統資訊 |
-| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | 登入和其他驗證事件 |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | 裝置上的登入和其他驗證事件 |
 | **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** | 網路連結與相關事件 |
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | 電腦的網路摘要資訊，包括介面卡、IP 和 MAC 位址，以及已連結的網路和網域 |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | 程序建立與相關事件 |
@@ -61,7 +72,7 @@ ms.locfileid: "44899360"
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Microsoft 365 將電子郵件傳遞至收件者信箱之後，進行傳遞後的安全性事件 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | 有關電子郵件 URLs 的資訊 |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | 各來源的帳戶資訊，包括 Azure Active Directory |
-| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | 由 Active Directory 及其他 Microsoft online 服務記錄的驗證事件 |
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory 和 Microsoft online services 上的驗證事件 |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | 對 Active Directory 物件（例如使用者、群組、裝置和網域）執行的查詢活動 |
 
 ## <a name="related-topics"></a>相關主題

@@ -22,12 +22,11 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解您可以在 Office 365 安全性 & 規範中心搜尋的電子郵件和檔案屬性。
-ms.openlocfilehash: 9fa68257519860311ffe330eed23bd95468856c4
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: MT
+ms.openlocfilehash: 89d3f0c25694f8f3c89fbc27ee857c58cc5937fd
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817512"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049801"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
@@ -87,7 +86,7 @@ ms.locfileid: "44817512"
 |:-----|:-----|:-----|:-----|
 |作者|Office 檔中的 author 欄位，該欄位會在複製檔時保留。 例如，如果使用者建立檔，並將它的電子郵件給其他人，然後再將其上傳至 SharePoint，該檔仍會保留原來的作者。 請務必使用此屬性的使用者顯示名稱。|`author:"Garth Fort"`|所有由 Garth Fort 撰寫的檔。|
 |ContentType|專案的 SharePoint 內容類型，例如專案、檔或影片。|`contenttype:document`|會傳回所有檔。|
-|建立時間|建立專案的日期。|`created\>=06/01/2016`|在2016年6月1日或之後建立的所有專案。|
+|建立時間|建立專案的日期。|`created>=06/01/2016`|在2016年6月1日或之後建立的所有專案。|
 |CreatedBy|建立或上傳專案的人員。 請務必使用此屬性的使用者顯示名稱。|`createdby:"Garth Fort"`|由 Garth Fort 建立或上傳的所有專案。|
 |DetectedLanguage|專案的語言。|`detectedlanguage:english`|以英文顯示所有專案。|
 |DocumentLink|SharePoint 或商務用 OneDrive 上之特定資料夾的路徑（URL）。 如果您使用此屬性，請務必搜尋指定資料夾所在的網站。  <br/> 若要傳回位於為 documentlink 屬性指定之資料夾的子資料夾中的專案，您必須新增/ \* 至指定資料夾的 URL，例如，`documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>如需搜尋 documentlink 屬性和使用腳本來取得特定網站上資料夾的 documentlink URLs 的詳細資訊，請參閱[使用內容搜尋來搜尋目標集合](use-content-search-for-targeted-collections.md)。|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|第一個範例會傳回 Business folder 的指定 OneDrive 中的所有專案。 第二個範例會傳回檔案名中包含「機密」一詞的指定網站資料夾（和所有子資料夾）中的檔。|
@@ -206,7 +205,7 @@ ms.locfileid: "44817512"
 |:-----|:-----|
 |郵件類型| 要搜尋的郵件類型。 此屬性與 Kind 電子郵件屬性相同。 可能的值：  <br/><br/>  接觸  <br/>  文檔  <br/>  email  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams  <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|
 |參與者|電子郵件訊息中的所有 [人員] 欄位。 這些欄位是從、To、Cc 和 Bcc。|
-|Type|電子郵件專案的郵件類別屬性。 這是 ItemClass 電子郵件屬性的相同屬性。 也是多值的條件。 因此，若要選取多個郵件類別，請按住**CTRL**鍵，然後在下拉式清單中，按一下您要新增至條件的兩個或多個郵件類別。 您在清單中選取的每個郵件類別將會在對應的搜尋查詢中以**OR**運算子邏輯連接。  <br/> 如需 Exchange 使用之郵件類別（及其對應的郵件類別識別碼）的清單，而您可以在**郵件類別**清單中選取，請參閱[專案類型和郵件類別](https://go.microsoft.com/fwlink/?linkid=848143)。|
+|類型|電子郵件專案的郵件類別屬性。 這是 ItemClass 電子郵件屬性的相同屬性。 也是多值的條件。 因此，若要選取多個郵件類別，請按住**CTRL**鍵，然後在下拉式清單中，按一下您要新增至條件的兩個或多個郵件類別。 您在清單中選取的每個郵件類別將會在對應的搜尋查詢中以**OR**運算子邏輯連接。  <br/> 如需 Exchange 使用之郵件類別（及其對應的郵件類別識別碼）的清單，而您可以在**郵件類別**清單中選取，請參閱[專案類型和郵件類別](https://go.microsoft.com/fwlink/?linkid=848143)。|
 |Received|收件者接收到電子郵件的日期。 此屬性與接收的電子郵件屬性相同。|
 |收件者|電子郵件訊息中的所有收件者欄位。 這些欄位是 To、Cc 和 Bcc。|
 |寄件者|電子郵件的寄件者。|

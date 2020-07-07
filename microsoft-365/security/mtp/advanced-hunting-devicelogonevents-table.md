@@ -17,12 +17,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 07b2c2301784f378075e3c9803cebc5bcabf9cb0
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
-ms.translationtype: MT
+ms.openlocfilehash: 67fa551fd7c2add815d5698a22b5eb3ae607f716
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899264"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45048276"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -31,7 +30,7 @@ ms.locfileid: "44899264"
 
 
 
-「 `DeviceLogonEvents` [高級搜尋](advanced-hunting-overview.md)」架構中的表格包含使用者登入和其他驗證事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `DeviceLogonEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含有關裝置上使用者登入和其他驗證事件的資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
