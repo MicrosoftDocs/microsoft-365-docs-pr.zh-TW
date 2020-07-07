@@ -23,492 +23,230 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: 在 FAQ 中尋找問題的答案以深入瞭解網域。
-ms.openlocfilehash: a52513130f9bbbf7c4cd25d4c4827e833700d992
-ms.sourcegitcommit: 9ea67fd2e02af760d4fb62e3d09c93b446173f9d
-ms.translationtype: MT
+description: 找到您常見問題的答案以深入瞭解網域。
+ms.openlocfilehash: 093125d1652355fbd9b624e1f15b5858fd586301
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44739161"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049733"
 ---
-# <a name="domains-faq"></a><span data-ttu-id="0595c-103">網域常見問題集</span><span class="sxs-lookup"><span data-stu-id="0595c-103">Domains FAQ</span></span>
+# <a name="domains-faq"></a><span data-ttu-id="50a19-103">網域常見問題集</span><span class="sxs-lookup"><span data-stu-id="50a19-103">Domains FAQ</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="0595c-104">系統管理中心正在變更。</span><span class="sxs-lookup"><span data-stu-id="0595c-104">The admin center is changing.</span></span> <span data-ttu-id="0595c-105">如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。</span><span class="sxs-lookup"><span data-stu-id="0595c-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="50a19-104">系統管理中心正在變更。</span><span class="sxs-lookup"><span data-stu-id="50a19-104">The admin center is changing.</span></span> <span data-ttu-id="50a19-105">如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。</span><span class="sxs-lookup"><span data-stu-id="50a19-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="0595c-106">本文包含有關 Office 365 中的網域的常見問題解答。</span><span class="sxs-lookup"><span data-stu-id="0595c-106">This article contains answers to Frequently Asked Questions about domains in Office 365.</span></span>
+<span data-ttu-id="50a19-106">本文包含有關 Microsoft 365 中網域的常見問題解答。</span><span class="sxs-lookup"><span data-stu-id="50a19-106">This article contains answers to frequently asked questions about domains in Microsoft 365.</span></span>
 
-<span data-ttu-id="0595c-107">如果您找不到問題的答案，請留言讓我們知道，我們會將它新增至清單。</span><span class="sxs-lookup"><span data-stu-id="0595c-107">If you can't find an answer to your question, let us know by leaving a comment and we'll add it to the list.</span></span>
+<span data-ttu-id="50a19-107">如果您找不到問題的答案，請留言讓我們知道，我們會將它新增至清單。</span><span class="sxs-lookup"><span data-stu-id="50a19-107">If you can't find an answer to your question, let us know by leaving a comment and we'll add it to the list.</span></span>
+
+<span data-ttu-id="50a19-108">本文內容</span><span class="sxs-lookup"><span data-stu-id="50a19-108">In this article</span></span>
+
+<span data-ttu-id="50a19-109">[什麼是 MX 優先順序？](#what-is-mx-priority) 
+[如何驗證我的網域的 SPF 記錄？](#how-can-i-validate-spf-records-for-my-domain) 
+[何謂功能變數名稱？](#what-is-a-domain-name) 
+[如果我的 DNS 提供者不支援某些記錄類型，會發生什麼事？](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types) 
+[如何在 Microsoft 365 中設定或變更預設網域？](#how-do-i-set-or-change-the-default-domain-in-microsoft-365) 
+[我可以將自訂子域或多個網域新增至 Microsoft 365 嗎？](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365) 
+[為什麼我有「onmicrosoft.com」網域？](#why-do-i-have-an-onmicrosoftcom-domain) 
+[為什麼我有「onmicrosoft.de」網域？](#why-do-i-have-an-onmicrosoftde-domain) 
+[如何驗證我的非盈利性或教育狀態？](#how-do-i-verify-my-nonprofit-or-education-status)</span><span class="sxs-lookup"><span data-stu-id="50a19-109">[What is MX priority?](#what-is-mx-priority)
+[How can I validate SPF records for my domain?](#how-can-i-validate-spf-records-for-my-domain)
+[What is a domain name?](#what-is-a-domain-name)
+[What happens if my DNS provider doesn't support certain record types?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
+[How do I set or change the default domain in Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
+[Can I add custom subdomains or multiple domains to Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+[Why do I have an "onmicrosoft.com" domain?](#why-do-i-have-an-onmicrosoftcom-domain)
+[Why do I have an "onmicrosoft.de" domain?](#why-do-i-have-an-onmicrosoftde-domain)
+[How do I verify my nonprofit or education status?](#how-do-i-verify-my-nonprofit-or-education-status)</span></span>
     
-## <a name="what-is-mx-priority"></a><span data-ttu-id="0595c-108">什麼是 MX 優先順序？</span><span class="sxs-lookup"><span data-stu-id="0595c-108">What is MX priority?</span></span>
+## <a name="what-is-mx-priority"></a><span data-ttu-id="50a19-110">什麼是 MX 優先順序？</span><span class="sxs-lookup"><span data-stu-id="50a19-110">What is MX priority?</span></span>
 
-<span data-ttu-id="0595c-109">郵件會以最低喜好設定值（最高優先順序）傳遞到郵件 exchange 伺服器，因此用於郵件路由的 MX 記錄應該具有最低的喜好設定值，通常是0或*高*優先順序。</span><span class="sxs-lookup"><span data-stu-id="0595c-109">Mail is delivered to the mail exchange server with the lowest preference number (highest priority), so the MX record you use for mail routing should have the lowest preference number, typically 0 or  *High*  priority.</span></span> 
+<span data-ttu-id="50a19-111">郵件會以最低喜好設定值（最高優先順序）傳遞到郵件 exchange 伺服器，因此用於郵件路由的 MX 記錄應該具有最低的喜好設定值，通常是0或*高*優先順序。</span><span class="sxs-lookup"><span data-stu-id="50a19-111">Mail is delivered to the mail exchange server with the lowest preference number (highest priority), so the MX record you use for mail routing should have the lowest preference number, typically 0 or  *High*  priority.</span></span> 
   
-- <span data-ttu-id="0595c-110">當您建立 MX 記錄時，大部分的 DNS 主機服務提供者要求您設定偏好設定號碼。</span><span class="sxs-lookup"><span data-stu-id="0595c-110">When you create an MX record, most DNS hosting providers require you to set the preference number.</span></span>
+- <span data-ttu-id="50a19-112">當您建立 MX 記錄時，大部分的 DNS 主機服務提供者要求您設定偏好設定號碼。</span><span class="sxs-lookup"><span data-stu-id="50a19-112">When you create an MX record, most DNS hosting providers require you to set the preference number.</span></span>
     
-- <span data-ttu-id="0595c-111">某些標籤的方塊*偏好*，有些標籤*優先順序*。</span><span class="sxs-lookup"><span data-stu-id="0595c-111">Some label the box  *preference*  , and some label it  *priority*  .</span></span> 
+- <span data-ttu-id="50a19-113">某些標籤的方塊*偏好*，有些標籤*優先順序*。</span><span class="sxs-lookup"><span data-stu-id="50a19-113">Some label the box  *preference*  , and some label it  *priority*  .</span></span> 
     
-- <span data-ttu-id="0595c-112">有些需要數位，有些會要求您選取 [*低*]、[*中*] 或 [*高*]。</span><span class="sxs-lookup"><span data-stu-id="0595c-112">Some require a number, and some ask you to select  *Low*  ,  *Medium*  , or  *High*  .</span></span> 
+- <span data-ttu-id="50a19-114">有些需要數位，有些會要求您選取 [*低*]、[*中*] 或 [*高*]。</span><span class="sxs-lookup"><span data-stu-id="50a19-114">Some require a number, and some ask you to select  *Low*  ,  *Medium*  , or  *High*  .</span></span> 
     
-- <span data-ttu-id="0595c-113">如果您只有一個 MX 記錄，則優先順序或喜好設定的任何值都很好。</span><span class="sxs-lookup"><span data-stu-id="0595c-113">If you only have one MX record, any value is fine for priority or preference.</span></span>
+- <span data-ttu-id="50a19-115">如果您只有一個 MX 記錄，則優先順序或喜好設定的任何值都很好。</span><span class="sxs-lookup"><span data-stu-id="50a19-115">If you only have one MX record, any value is fine for priority or preference.</span></span>
     
-- <span data-ttu-id="0595c-114">如果您有一個以上的，請確定郵件路由的 MX 記錄的優先順序高於用於驗證您擁有該網域的 MX 記錄。</span><span class="sxs-lookup"><span data-stu-id="0595c-114">If you have more than one, make sure the MX record for mail routing is higher priority than the one used for validating that you own the domain.</span></span>
+- <span data-ttu-id="50a19-116">如果您有一個以上的，請確定郵件路由的 MX 記錄的優先順序高於用於驗證您擁有該網域的 MX 記錄。</span><span class="sxs-lookup"><span data-stu-id="50a19-116">If you have more than one, make sure the MX record for mail routing is higher priority than the one used for validating that you own the domain.</span></span>
     
-## <a name="how-can-i-validate-spf-records-for-my-domain"></a><span data-ttu-id="0595c-115">如何驗證我的網域的 SPF 記錄？</span><span class="sxs-lookup"><span data-stu-id="0595c-115">How can I validate SPF records for my domain?</span></span>
+## <a name="how-can-i-validate-spf-records-for-my-domain"></a><span data-ttu-id="50a19-117">如何驗證我的網域的 SPF 記錄？</span><span class="sxs-lookup"><span data-stu-id="50a19-117">How can I validate SPF records for my domain?</span></span>
 
-<span data-ttu-id="0595c-116">您必須具有或建立**一個 SPF 的 TXT 記錄**，這一點很重要。</span><span class="sxs-lookup"><span data-stu-id="0595c-116">It's important that you have or create **only one TXT record for SPF**.</span></span> <span data-ttu-id="0595c-117">如果您已經有 SPF 記錄，您應該將新的 Office 365 值附加到它，而不是建立新的記錄。</span><span class="sxs-lookup"><span data-stu-id="0595c-117">If you already have an SPF record, you should append the new Office 365 values to it, rather than create a new one.</span></span> <span data-ttu-id="0595c-118">在您新增或更新 Microsoft 電子郵件的 SPF 記錄之後，您應該檢查下列其中一項工具，確定語法是否正確：</span><span class="sxs-lookup"><span data-stu-id="0595c-118">After you've added or updated your SPF record for Microsoft email, you should check to make sure that the syntax is correct with one of these tools:</span></span> 
+<span data-ttu-id="50a19-118">您必須具有或建立**一個 SPF 的 TXT 記錄**，這一點很重要。</span><span class="sxs-lookup"><span data-stu-id="50a19-118">It's important that you have or create  **only one TXT record for SPF**.</span></span> <span data-ttu-id="50a19-119">如果您已經有 SPF 記錄，應將新的 Microsoft 365 值附加到它，而不是建立新的記錄。</span><span class="sxs-lookup"><span data-stu-id="50a19-119">If you already have an SPF record, you should append the new Microsoft 365 values to it, rather than create a new one.</span></span> <span data-ttu-id="50a19-120">在您新增或更新 Microsoft 電子郵件的 SPF 記錄之後，您應該檢查下列其中一項工具，確定語法是否正確：</span><span class="sxs-lookup"><span data-stu-id="50a19-120">After you've added or updated your SPF record for Microsoft email, you should check to make sure that the syntax is correct with one of these tools:</span></span> 
   
-- [<span data-ttu-id="0595c-119">SPF 記錄測試控管</span><span class="sxs-lookup"><span data-stu-id="0595c-119">SPF Record Testing Tools</span></span>](http://www.kitterman.com/spf/validate.html)
+- [<span data-ttu-id="50a19-121">SPF 記錄測試控管</span><span class="sxs-lookup"><span data-stu-id="50a19-121">SPF Record Testing Tools</span></span>](http://www.kitterman.com/spf/validate.html)
     
-- [<span data-ttu-id="0595c-120">SPF Surveyor</span><span class="sxs-lookup"><span data-stu-id="0595c-120">SPF Surveyor</span></span>](https://dmarcian.com/spf-survey/)
+- [<span data-ttu-id="50a19-122">SPF Surveyor</span><span class="sxs-lookup"><span data-stu-id="50a19-122">SPF Surveyor</span></span>](https://dmarcian.com/spf-survey/)
     
-- [<span data-ttu-id="0595c-121">挖出 web 介面</span><span class="sxs-lookup"><span data-stu-id="0595c-121">Dig web interface</span></span>](http://digwebinterface.com/)
+- [<span data-ttu-id="50a19-123">挖出 web 介面</span><span class="sxs-lookup"><span data-stu-id="50a19-123">Dig web interface</span></span>](http://digwebinterface.com/)
+
+## <a name="what-is-a-domain-name"></a><span data-ttu-id="50a19-124">何謂功能變數名稱？</span><span class="sxs-lookup"><span data-stu-id="50a19-124">What is a domain name?</span></span>
+
+<span data-ttu-id="50a19-125">網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.**</span><span class="sxs-lookup"><span data-stu-id="50a19-125">A domain is a unique name that appears after the **@** sign in email addresses, and after **www.**</span></span> <span data-ttu-id="50a19-126">後出現的唯一名稱。</span><span class="sxs-lookup"><span data-stu-id="50a19-126">in web addresses.</span></span> <span data-ttu-id="50a19-127">它通常採用組織名稱和標準 Internet 尾碼的形式，例如*yourbusiness.com*或*stateuniversity.edu。*</span><span class="sxs-lookup"><span data-stu-id="50a19-127">It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.*</span></span> 
+  
+<span data-ttu-id="50a19-128">使用自訂網域（例如「可信性\*\* \@ contoso.com\*\*」）與 Microsoft 365，可協助您建立品牌的信譽及認可。</span><span class="sxs-lookup"><span data-stu-id="50a19-128">Using a custom domain like "**rob\@contoso.com**" with Microsoft 365 can help build credibility and recognition for your brand.</span></span> 
+  
+<span data-ttu-id="50a19-129">您可以[在 Microsoft 365 中購買網域，我們會自動加以設定](../get-help-with-domains/buy-a-domain-name.md)，或者您可以從網域註冊機構購買或為您提供自己的現有功能。</span><span class="sxs-lookup"><span data-stu-id="50a19-129">You can [buy a domain in Microsoft 365 and we'll set it up automatically](../get-help-with-domains/buy-a-domain-name.md), or you can buy or bring one you already own from a domain registrar.</span></span>
     
-## <a name="how-does-office-365-manage-my-dns-records"></a><span data-ttu-id="0595c-122">Office 365 如何管理我的 DNS 記錄？</span><span class="sxs-lookup"><span data-stu-id="0595c-122">How does Office 365 manage my DNS records?</span></span>
+## <a name="what-happens-if-my-dns-provider-doesnt-support-certain-record-types"></a><span data-ttu-id="50a19-130">如果我的 DNS 提供者不支援某些記錄類型，會發生什麼事？</span><span class="sxs-lookup"><span data-stu-id="50a19-130">What happens if my DNS provider doesn't support certain record types?</span></span>
 
-<span data-ttu-id="0595c-123">使用 Office 365 的 DNS 管理有兩個選項：</span><span class="sxs-lookup"><span data-stu-id="0595c-123">There are two options for DNS management with Office 365:</span></span>
+<span data-ttu-id="50a19-131">如果您管理自己的 DNS 記錄，而且 DNS 主機不支援 Microsoft 365 所需的所有 DNS 記錄，有些 Microsoft 365 功能將無法運作。</span><span class="sxs-lookup"><span data-stu-id="50a19-131">If you manage your own DNS records and your DNS host does not support all the DNS records that Microsoft 365 needs, some Microsoft 365 features won't work.</span></span> <span data-ttu-id="50a19-132">建議您將網域轉接至支援所有必要 DNS 記錄的註冊機構。</span><span class="sxs-lookup"><span data-stu-id="50a19-132">We recommend that you transfer your domain to a registrar that supports all required DNS records.</span></span>
   
-1. <span data-ttu-id="0595c-124">您變更了名稱伺服器（NS）記錄，然後 Microsoft 會處理所有服務特有的記錄，例如設定電子郵件的 MX 記錄。</span><span class="sxs-lookup"><span data-stu-id="0595c-124">You change your nameserver (NS) records, and then Microsoft takes care of all the service-specific records, like setting up your MX record for email.</span></span> <span data-ttu-id="0595c-125">**推薦**</span><span class="sxs-lookup"><span data-stu-id="0595c-125">**(Recommended)**</span></span>
+<span data-ttu-id="50a19-133">支援所有必要 DNS 記錄的提供者：</span><span class="sxs-lookup"><span data-stu-id="50a19-133">Providers that support all required DNS records:</span></span>
+  
+- <span data-ttu-id="50a19-134">Dynadot</span><span class="sxs-lookup"><span data-stu-id="50a19-134">Dynadot</span></span>
     
-2. <span data-ttu-id="0595c-126">您可以在 DNS 主機自行新增電子郵件和其他 Office 365 服務的 DNS 記錄。</span><span class="sxs-lookup"><span data-stu-id="0595c-126">You add DNS records for email and other Office 365 services at your DNS host yourself.</span></span> <span data-ttu-id="0595c-127">**（僅限專家）**</span><span class="sxs-lookup"><span data-stu-id="0595c-127">**(Experts only)**</span></span>
+- <span data-ttu-id="50a19-135">eNomCentral</span><span class="sxs-lookup"><span data-stu-id="50a19-135">eNomCentral</span></span>
     
-### <a name="office-365-creates-and-hosts-the-dns-records"></a><span data-ttu-id="0595c-128">Office 365 會建立及裝載 DNS 記錄</span><span class="sxs-lookup"><span data-stu-id="0595c-128">Office 365 creates and hosts the DNS records</span></span> 
-<span data-ttu-id="0595c-129">**優點**</span><span class="sxs-lookup"><span data-stu-id="0595c-129">**Advantages**</span></span> 
-- <span data-ttu-id="0595c-130">您不需要擔心您為 Office 365 服務的 DNS 記錄輸入的值錯誤。</span><span class="sxs-lookup"><span data-stu-id="0595c-130">You don't have to worry about making mistakes in the values you enter for the DNS records for Office 365 services.</span></span>  
-- <span data-ttu-id="0595c-131">您選擇的網域註冊機構和 DNS 主機具有較大的彈性。</span><span class="sxs-lookup"><span data-stu-id="0595c-131">You have more flexibility in your choice of domain registrar and DNS host.</span></span> 
-- <span data-ttu-id="0595c-132">任何可讓您變更名稱伺服器記錄的提供者都會運作，即使提供者不支援所有必要的記錄類型。</span><span class="sxs-lookup"><span data-stu-id="0595c-132">Any provider that lets you change your nameserver records will work, even if the provider doesn't support all the required record types.</span></span>   
-- <span data-ttu-id="0595c-133">當 Office 365 新增 DNS 記錄時，您不需要進行更新。</span><span class="sxs-lookup"><span data-stu-id="0595c-133">When Office 365 adds new DNS records, you don't have to make updates.</span></span>  
-
-#### <a name="disadvantages"></a><span data-ttu-id="0595c-134">缺點</span><span class="sxs-lookup"><span data-stu-id="0595c-134">Disadvantages</span></span> 
-- <span data-ttu-id="0595c-135">您無法變更您的 DNS 記錄以主控 Office 365 以外的電子郵件。</span><span class="sxs-lookup"><span data-stu-id="0595c-135">You can't change your DNS records to host email outside of Office 365.</span></span> 
-- <span data-ttu-id="0595c-136">如果您已在網域上使用公用網站的位址（如 www.fourthcoffee.com），您必須將人員重新導向至 Office 365 的該位址。</span><span class="sxs-lookup"><span data-stu-id="0595c-136">If you already use a public website with your domain for its address, like www.fourthcoffee.com, you must redirect people to that address from Office 365.</span></span> 
-- <span data-ttu-id="0595c-137">設定重新導向需要靜態 IP 位址，但不一定能輕易用於公用網站。</span><span class="sxs-lookup"><span data-stu-id="0595c-137">Setting up redirection requires a static IP address, which is not always easily available for public websites.</span></span> <span data-ttu-id="0595c-138">-如果您目前的網域註冊機構不允許您變更網域的名稱伺服器記錄，您必須切換至不同的註冊機構，才能使用此 DNS 管理選項。</span><span class="sxs-lookup"><span data-stu-id="0595c-138">- If your current domain registrar doesn't allow you to change your domain's nameserver records, you have to switch to a different registrar to use this DNS management option.</span></span>  
-
- ### <a name="you-manage-the-dns-records-yourself"></a><span data-ttu-id="0595c-139">您自行管理 DNS 記錄</span><span class="sxs-lookup"><span data-stu-id="0595c-139">You manage the DNS records yourself</span></span> 
- #### <a name="advantages"></a><span data-ttu-id="0595c-140">優點</span><span class="sxs-lookup"><span data-stu-id="0595c-140">Advantages</span></span>
-- <span data-ttu-id="0595c-141">您可以控制 Office 365 服務的 DNS 記錄。</span><span class="sxs-lookup"><span data-stu-id="0595c-141">You control the DNS records for Office 365 services.</span></span>   
-- <span data-ttu-id="0595c-142">如果您擁有網域的公用網站的位址（如 www.fourthcoffee.com），您不需要擔心在您設定 Office 365 中的網域後，使用者仍可進入您的網站。</span><span class="sxs-lookup"><span data-stu-id="0595c-142">If you have a public website with your domain for its address, like www.fourthcoffee.com, you don't have to worry about using redirection to make sure people can still get to your website after you set up your domain in Office 365.</span></span>    
-- <span data-ttu-id="0595c-143">您可以靈活地在其他地方主控電子郵件，例如使用內部部署 Exchange 伺服器。</span><span class="sxs-lookup"><span data-stu-id="0595c-143">You have the flexibility to host email somewhere else, such as with an on-premises Exchange server.</span></span>  
- 
-#### <a name="disadvantages"></a><span data-ttu-id="0595c-144">缺點</span><span class="sxs-lookup"><span data-stu-id="0595c-144">Disadvantages</span></span>
-<span data-ttu-id="0595c-145">您必須自行設定 Office 365 服務的 DNS 記錄（除非您有 GoDaddy 網域）。</span><span class="sxs-lookup"><span data-stu-id="0595c-145">You have to set up the DNS records for Office 365 services yourself (unless you have a GoDaddy domain).</span></span> 
--  <span data-ttu-id="0595c-146">如果目前的 DNS 主機不支援 Microsoft 365 的所有必要記錄類型，有些功能將無法使用，您可能需要切換至不同的 DNS 主機。</span><span class="sxs-lookup"><span data-stu-id="0595c-146">If your current DNS host doesn't support all of the required record types for Microsoft 365, some features won't be available and you might need to switch to a different DNS host.</span></span> 
-- <span data-ttu-id="0595c-147">當 Office 365 變更 DNS 記錄的需求，或加入新的服務時，您必須自行在您的 DNS 主機上進行更新。</span><span class="sxs-lookup"><span data-stu-id="0595c-147">When Office 365 changes requirements for DNS records, or adds new services, you have to make updates yourself at your DNS host.</span></span> 
-   
-## <a name="what-is-a-domain-name"></a><span data-ttu-id="0595c-148">何謂功能變數名稱？</span><span class="sxs-lookup"><span data-stu-id="0595c-148">What is a domain name?</span></span>
-
-
-<span data-ttu-id="0595c-149">網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.**</span><span class="sxs-lookup"><span data-stu-id="0595c-149">A domain is a unique name that appears after the **@** sign in email addresses, and after **www.**</span></span> <span data-ttu-id="0595c-150">後出現的唯一名稱。</span><span class="sxs-lookup"><span data-stu-id="0595c-150">in web addresses.</span></span> <span data-ttu-id="0595c-151">它通常採用組織名稱和標準 Internet 尾碼的形式，例如*yourbusiness.com*或*stateuniversity.edu。*</span><span class="sxs-lookup"><span data-stu-id="0595c-151">It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.*</span></span> 
+- <span data-ttu-id="50a19-136">Europe Registry</span><span class="sxs-lookup"><span data-stu-id="50a19-136">Europe Registry</span></span>
+    
+- <span data-ttu-id="50a19-137">GoDaddy</span><span class="sxs-lookup"><span data-stu-id="50a19-137">GoDaddy</span></span>
+    
+- <span data-ttu-id="50a19-138">懸停</span><span class="sxs-lookup"><span data-stu-id="50a19-138">Hover</span></span>
+    
+- <span data-ttu-id="50a19-139">MyHosting.com</span><span class="sxs-lookup"><span data-stu-id="50a19-139">MyHosting.com</span></span>
+    
+- <span data-ttu-id="50a19-140">Name.com</span><span class="sxs-lookup"><span data-stu-id="50a19-140">Name.com</span></span>
+    
+- <span data-ttu-id="50a19-141">幾乎自由語音</span><span class="sxs-lookup"><span data-stu-id="50a19-141">Nearly Free Speech</span></span>
+    
+- <span data-ttu-id="50a19-142">Nettica</span><span class="sxs-lookup"><span data-stu-id="50a19-142">Nettica</span></span>
+    
+- <span data-ttu-id="50a19-143">網際網路資訊中心 (NIC)</span><span class="sxs-lookup"><span data-stu-id="50a19-143">Network Information Center (NIC)</span></span>
+    
+- <span data-ttu-id="50a19-144">Network Solutions</span><span class="sxs-lookup"><span data-stu-id="50a19-144">Network Solutions</span></span>
+    
+- <span data-ttu-id="50a19-145">Register.com</span><span class="sxs-lookup"><span data-stu-id="50a19-145">Register.com</span></span>
   
-<span data-ttu-id="0595c-152">使用自訂網域（例如「可信性\*\* \@ contoso.com\*\*」）與 Office 365，可協助您建立品牌的信譽及認可。</span><span class="sxs-lookup"><span data-stu-id="0595c-152">Using a custom domain like "**rob\@contoso.com**" with Office 365 can help build credibility and recognition for your brand.</span></span> 
-  
-<span data-ttu-id="0595c-153">您可以[在 Office 365 購買網域，我們會自動加以設定](../get-help-with-domains/buy-a-domain-name.md)，或者您可以從網域註冊機構購買或為您提供自己的現有功能。</span><span class="sxs-lookup"><span data-stu-id="0595c-153">You can [buy a domain in Office 365 and we'll set it up automatically](../get-help-with-domains/buy-a-domain-name.md), or you can buy or bring one you already own from a domain registrar.</span></span>
-  
-## <a name="can-i-transfer-a-domain-i-purchased-from-microsoft-to-another-provider"></a><span data-ttu-id="0595c-154">我可以將從 Microsoft 購買的網域轉移至其他提供者嗎？</span><span class="sxs-lookup"><span data-stu-id="0595c-154">Can I transfer a domain I purchased from Microsoft to another provider?</span></span>
+## <a name="how-do-i-set-or-change-the-default-domain-in-microsoft-365"></a><span data-ttu-id="50a19-146">如何在 Microsoft 365 中設定或變更預設網域？</span><span class="sxs-lookup"><span data-stu-id="50a19-146">How do I set or change the default domain in Microsoft 365?</span></span>
 
-<span data-ttu-id="0595c-155">是的，但是您無法將 Office 365 網域轉接至其他註冊機構，直到您購買 Office 365 的60天之後。</span><span class="sxs-lookup"><span data-stu-id="0595c-155">Yes, but you can't transfer an Office 365 domain to another registrar until 60 days after you purchased it with Office 365.</span></span>
-
-<span data-ttu-id="0595c-156">請注意， *Whois*查詢會將 Office 365 購買的網域註冊機構顯示為通配的 WEST 網域 LLC。</span><span class="sxs-lookup"><span data-stu-id="0595c-156">Please note that a *Whois* query will show an Office 365 purchased domain registrar as Wild West Domains LLC.</span></span> <span data-ttu-id="0595c-157">不過，請只針對您的 Office 365 購買的網域，請與 Office 365 取得聯繫。</span><span class="sxs-lookup"><span data-stu-id="0595c-157">However, only Office 365 should be contacted regarding your Office 365 purchased domain.</span></span>
-  
-<span data-ttu-id="0595c-158">請遵循下列步驟，取得 Office 365 的程式碼，然後移至另一個網域註冊機構的網站，設定將您的功能變數名稱轉移到該註冊機構。</span><span class="sxs-lookup"><span data-stu-id="0595c-158">Follow the steps below to get the code at Office 365, and then go to the other domain registrar's website to set up transferring your domain name to that registrar.</span></span>
+<span data-ttu-id="50a19-147">您必須至少有一個自訂網域新增至 Microsoft 365，您才能選擇預設網域。</span><span class="sxs-lookup"><span data-stu-id="50a19-147">You must have at least one custom domain that you've added to Microsoft 365 before you can choose a default domain.</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="0595c-159">在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-159">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="50a19-148">在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="50a19-148">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="0595c-160">在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-160">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
+1. <span data-ttu-id="50a19-149">在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="50a19-149">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="0595c-161">在系統管理中心中，移至 [**設定** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">授權</a>] 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-161">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenses</a> page.</span></span>
+1. <span data-ttu-id="50a19-150">在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="50a19-150">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
 
 ::: moniker-end
     
-2. <span data-ttu-id="0595c-162">在 [**網域**] 頁面上，選取您要傳送至其他網域註冊機構的 Office 365 網域，然後選取 [**網域傳輸**  >  **啟用網域傳輸**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-162">On the **Domains** page, select the Office 365 domain that you want to transfer to another domain registrar, and then select **Domain Transfer** > **Enable domain transfer**.</span></span>
-       
-4. <span data-ttu-id="0595c-163">遵循步驟來準備轉移您的網域。</span><span class="sxs-lookup"><span data-stu-id="0595c-163">Follow the steps to prepare for transferring your domain.</span></span>
+2. <span data-ttu-id="50a19-151">在 [**網域**] 頁面上，選取您要設定為新電子郵件地址的預設網域。</span><span class="sxs-lookup"><span data-stu-id="50a19-151">On the **Domains** page, select the domain you want to set as the default for new email addresses.</span></span> 
     
-5. <span data-ttu-id="0595c-164">在您取得程式碼之後，請移至網域註冊機構的網站，以供您用來管理功能變數名稱的位置，並遵循傳送網域（搜尋其網站上的說明）的指導。</span><span class="sxs-lookup"><span data-stu-id="0595c-164">After you get the code, go to the website of the domain registrar where you want to manage your domain name going forward and follow their directions for transferring a domain (search for help on their website).</span></span>
+3. <span data-ttu-id="50a19-152">選取 [設定成預設值]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="50a19-152">Select **Set as default**.</span></span>
     
-6. <span data-ttu-id="0595c-165">如果您需要重新查看此程式碼，請在 Office 365 的 [**網域設定**] 頁面上，選取 [ **View the domain transfer 的授權碼**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-165">If you need to see the code again, on the **Domain settings** page in Office 365, select **View authorization code for domain transfer**.</span></span>
-    
-7. <span data-ttu-id="0595c-166">完成傳輸後，您將會在新的網域註冊機構中更新您的網域。</span><span class="sxs-lookup"><span data-stu-id="0595c-166">After the transfer is complete, you'll renew your domain at the new domain registrar.</span></span>
-    
-8. <span data-ttu-id="0595c-167">若要完成此程式，請回到管理中心的 [**網域**] 頁面，並選取 [**完整網域傳輸**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-167">To finish the process, go back to the admin center **Domains** page and select **Complete Domain Transfer**.</span></span> 
-
-<span data-ttu-id="0595c-168">*附注：請注意，Office 365 購買的網域不適用於名稱伺服器變更，或無法在 Office 365 承租人間傳輸網域。 若有任何一項是必要的，則必須將網域註冊轉給另一個註冊機構。*</span><span class="sxs-lookup"><span data-stu-id="0595c-168">*Note: Please note that Office 365 purchased domains are not eligible for Name Server changes or transferring the domain between Office 365 Tenants.  If either of these are required, the domain registration will need to be transferred to another registrar.*</span></span>
-    
-## <a name="how-do-i-change-how-my-dns-records-are-managed-in-office-365"></a><span data-ttu-id="0595c-169">如何變更我的 DNS 記錄在 Office 365 中的管理方式？</span><span class="sxs-lookup"><span data-stu-id="0595c-169">How do I change how my DNS records are managed in Office 365?</span></span>
-
-### <a name="change-dns-management-to-a-dns-host-outside-office-365"></a><span data-ttu-id="0595c-170">將 DNS 管理變更為 Office 365 以外的 DNS 主機</span><span class="sxs-lookup"><span data-stu-id="0595c-170">Change DNS management to a DNS host outside Office 365</span></span>
-   
-1. <span data-ttu-id="0595c-171">登入網域的網域註冊機構。</span><span class="sxs-lookup"><span data-stu-id="0595c-171">Sign in to the domain registrar for your domain.</span></span>
-    
-2. <span data-ttu-id="0595c-172">在註冊機構網站上尋找您更新名稱伺服器記錄的區域，並更新名稱伺服器以指向您網域的 DNS 主機。</span><span class="sxs-lookup"><span data-stu-id="0595c-172">Find the area on the registrar's website where you update nameserver records, and update the nameservers to point to your domain's DNS host.</span></span> <span data-ttu-id="0595c-173">（DNS 主機通常是網域註冊機構。）</span><span class="sxs-lookup"><span data-stu-id="0595c-173">(The DNS host is often the domain registrar.)</span></span>
-    
-3. <span data-ttu-id="0595c-174">遵循連結移至網域安裝精靈：</span><span class="sxs-lookup"><span data-stu-id="0595c-174">Follow a link to go to the domains setup wizard:</span></span>
-
 ::: moniker range="o365-worldwide"
 
-4. <span data-ttu-id="0595c-175">在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-175">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
+<span data-ttu-id="50a19-153">您無法變更*onmicrosoft.com*網域的名稱。</span><span class="sxs-lookup"><span data-stu-id="50a19-153">You cannot change the name of your initial  *.onmicrosoft.com*  domain.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-4. <span data-ttu-id="0595c-176">在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-176">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
+<span data-ttu-id="50a19-154">您無法變更*onmicrosoft.de*網域的名稱。</span><span class="sxs-lookup"><span data-stu-id="50a19-154">You cannot change the name of your initial  *.onmicrosoft.de*  domain.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-4. <span data-ttu-id="0595c-177">在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-177">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
+<span data-ttu-id="50a19-155">您無法變更*partner.onmschina.cn*網域的名稱。</span><span class="sxs-lookup"><span data-stu-id="50a19-155">You cannot change the name of your initial  *.partner.onmschina.cn*  domain.</span></span> 
 
 ::: moniker-end
-    
-5. <span data-ttu-id="0595c-178">在 [**網域**] 頁面上，選取您要切換的網域，然後選取 [ **DNS 管理**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-178">On the **Domains** page, select the domain you're switching, and select **DNS management**.</span></span>
-    
-6. <span data-ttu-id="0595c-179">在 [網域安裝精靈] 中，在 [**設定您的線上服務**] 頁面上，選取 [**我要管理自己的 DNS 記錄**]，然後選取 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="0595c-179">In the domains setup wizard, on the **Set up your online services** page, select **I'll manage my own DNS records**, and then select **Next**.</span></span>
-    
-7. <span data-ttu-id="0595c-180">在 [**更新 dns 設定**] 頁面上，將嚮導建議的 DNS 記錄新增至您的註冊機構網站。</span><span class="sxs-lookup"><span data-stu-id="0595c-180">Add the DNS records suggested by the wizard on the **Update DNS settings** page to your registrar's website.</span></span> 
-    
-8. <span data-ttu-id="0595c-181">在您新增記錄後，請回到 Office 365 並選取 [**驗證**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-181">After you've added the records, come back to Office 365 and select **Verify**.</span></span>
-    
 
-### <a name="change-dns-management-to-office-365"></a><span data-ttu-id="0595c-182">將 DNS 管理變更為 Office 365</span><span class="sxs-lookup"><span data-stu-id="0595c-182">Change DNS management to Office 365</span></span>
+## <a name="can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365"></a><span data-ttu-id="50a19-156">我可以將自訂子域或多個網域新增至 Microsoft 365 嗎？</span><span class="sxs-lookup"><span data-stu-id="50a19-156">Can I add custom subdomains or multiple domains to Microsoft 365?</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="0595c-183">在系統管理中心中，移至 [**設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">網域</a>] 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-183">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page..</span></span>
+<span data-ttu-id="50a19-157">是。</span><span class="sxs-lookup"><span data-stu-id="50a19-157">Yes.</span></span> <span data-ttu-id="50a19-158">若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。</span><span class="sxs-lookup"><span data-stu-id="50a19-158">To add subdomains, you must manage your own DNS settings at your registrar's website.</span></span> <span data-ttu-id="50a19-159">如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。</span><span class="sxs-lookup"><span data-stu-id="50a19-159">If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="0595c-184">在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-184">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
+<span data-ttu-id="50a19-160">是的！</span><span class="sxs-lookup"><span data-stu-id="50a19-160">Yes!</span></span> <span data-ttu-id="50a19-161">若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。</span><span class="sxs-lookup"><span data-stu-id="50a19-161">To add subdomains, you must manage your own DNS settings at your registrar's website.</span></span> <span data-ttu-id="50a19-162">如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。</span><span class="sxs-lookup"><span data-stu-id="50a19-162">If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="0595c-185">在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-185">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
+<span data-ttu-id="50a19-163">是的！</span><span class="sxs-lookup"><span data-stu-id="50a19-163">Yes!</span></span> <span data-ttu-id="50a19-164">若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。</span><span class="sxs-lookup"><span data-stu-id="50a19-164">To add subdomains, you must manage your own DNS settings at your registrar's website.</span></span> <span data-ttu-id="50a19-165">如果您是讓世紀以 NS 記錄來管理您的 DNS 設定，就無法新增子域。</span><span class="sxs-lookup"><span data-stu-id="50a19-165">If you are letting 21Vianet manage your DNS settings with NS records, you can't add subdomains.</span></span>
 
 ::: moniker-end
-    
-2. <span data-ttu-id="0595c-186">在 [**網域**] 頁面上，選取您要切換的網域，然後選取 [ **DNS 管理**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-186">On the **Domains** page, select the domain you're switching, and select **DNS Management**.</span></span>
-    
-3. <span data-ttu-id="0595c-187">在 [網域安裝精靈] 中，在 [**設定您的線上服務**] 頁面上，選取 [**設定我的線上服務給我]。（建議）**，然後選取 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="0595c-187">In the domains setup wizard, on the **Set up your online services** page, select **Set up my online services for me. (Recommended)**, and then select **Next**.</span></span>
-    
-4. <span data-ttu-id="0595c-188">如果您還沒有驗證網域，請遵循執行第一步的步驟。</span><span class="sxs-lookup"><span data-stu-id="0595c-188">If you haven't verified the domain yet, follow the steps to do that first.</span></span>
-    
-5. <span data-ttu-id="0595c-189">在 [**更新 DNS 設定**] 頁面上，列出 Office 365 的名稱伺服器。</span><span class="sxs-lookup"><span data-stu-id="0595c-189">On the **Update DNS settings** page, we list the nameservers for Office 365.</span></span> <span data-ttu-id="0595c-190">移至網域的網域註冊機構，並將名稱伺服器更新為 Office 365 名稱伺服器。</span><span class="sxs-lookup"><span data-stu-id="0595c-190">Go to the domain registrar for your domain, and update the nameservers to the Office 365 nameservers.</span></span> 
-    
-4. <span data-ttu-id="0595c-191">更新名稱伺服器後，請**至少等候一小時**。</span><span class="sxs-lookup"><span data-stu-id="0595c-191">After you've updated the nameservers, **wait at least an hour**.</span></span> <span data-ttu-id="0595c-192">然後，回到 Office 365 的嚮導中，選取 [**驗證**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-192">Then, back in the wizard in Office 365, select **Verify**.</span></span>
-    
-## <a name="what-happens-if-my-dns-provider-doesnt-support-certain-record-types"></a><span data-ttu-id="0595c-193">如果我的 DNS 提供者不支援某些記錄類型，會發生什麼事？</span><span class="sxs-lookup"><span data-stu-id="0595c-193">What happens if my DNS provider doesn't support certain record types?</span></span>
 
-<span data-ttu-id="0595c-194">如果您管理自己的 DNS 記錄，而且 DNS 主機不支援 Office 365 所需的所有 DNS 記錄，有些 Office 365 功能將無法運作。</span><span class="sxs-lookup"><span data-stu-id="0595c-194">If you manage your own DNS records and your DNS host does not support all the DNS records that Office 365 needs, some Office 365 features won't work.</span></span> <span data-ttu-id="0595c-195">建議您將網域轉接至支援所有必要 DNS 記錄的註冊機構。</span><span class="sxs-lookup"><span data-stu-id="0595c-195">We recommend that you transfer your domain to a registrar that supports all required DNS records.</span></span>
+<span data-ttu-id="50a19-166">一般來說，您最多可以將900個網域新增至您的 Microsoft 365 訂閱。</span><span class="sxs-lookup"><span data-stu-id="50a19-166">Typically, you can add up to 900 domains to your Microsoft 365 subscription.</span></span>
   
-<span data-ttu-id="0595c-196">支援所有必要 DNS 記錄的提供者：</span><span class="sxs-lookup"><span data-stu-id="0595c-196">Providers that support all required DNS records:</span></span>
+<span data-ttu-id="50a19-167">例如，您可以新增網域 contoso.com 及 contosomarketing.com，然後新增子域 www.contoso.com、www.partners.contoso.com、www.partners.marketing.contoso.com 等等。</span><span class="sxs-lookup"><span data-stu-id="50a19-167">For example, you could add the domains contoso.com and contosomarketing.com, and then add the subdomains www.contoso.com, www.partners.contoso.com, www.partners.marketing.contoso.com, and so on.</span></span>
   
-- <span data-ttu-id="0595c-197">Dynadot</span><span class="sxs-lookup"><span data-stu-id="0595c-197">Dynadot</span></span>
-    
-- <span data-ttu-id="0595c-198">eNomCentral</span><span class="sxs-lookup"><span data-stu-id="0595c-198">eNomCentral</span></span>
-    
-- <span data-ttu-id="0595c-199">Europe Registry</span><span class="sxs-lookup"><span data-stu-id="0595c-199">Europe Registry</span></span>
-    
-- <span data-ttu-id="0595c-200">GoDaddy</span><span class="sxs-lookup"><span data-stu-id="0595c-200">GoDaddy</span></span>
-    
-- <span data-ttu-id="0595c-201">懸停</span><span class="sxs-lookup"><span data-stu-id="0595c-201">Hover</span></span>
-    
-- <span data-ttu-id="0595c-202">MyHosting.com</span><span class="sxs-lookup"><span data-stu-id="0595c-202">MyHosting.com</span></span>
-    
-- <span data-ttu-id="0595c-203">Name.com</span><span class="sxs-lookup"><span data-stu-id="0595c-203">Name.com</span></span>
-    
-- <span data-ttu-id="0595c-204">幾乎自由語音</span><span class="sxs-lookup"><span data-stu-id="0595c-204">Nearly Free Speech</span></span>
-    
-- <span data-ttu-id="0595c-205">Nettica</span><span class="sxs-lookup"><span data-stu-id="0595c-205">Nettica</span></span>
-    
-- <span data-ttu-id="0595c-206">網際網路資訊中心 (NIC)</span><span class="sxs-lookup"><span data-stu-id="0595c-206">Network Information Center (NIC)</span></span>
-    
-- <span data-ttu-id="0595c-207">Network Solutions</span><span class="sxs-lookup"><span data-stu-id="0595c-207">Network Solutions</span></span>
-    
-- <span data-ttu-id="0595c-208">Register.com</span><span class="sxs-lookup"><span data-stu-id="0595c-208">Register.com</span></span>
-    
- <span data-ttu-id="0595c-209">**如果不支援 SRV 記錄**，則無法使用下列 Office 365 功能：</span><span class="sxs-lookup"><span data-stu-id="0595c-209">**If SRV records are not supported**, the following Office 365 features are not available:</span></span> 
+<span data-ttu-id="50a19-168">當您新增子域時，會根據所驗證的父系網域，自動驗證。</span><span class="sxs-lookup"><span data-stu-id="50a19-168">When you add a subdomain, it is automatically verified based on the parent domain that is being verified.</span></span>
   
-- <span data-ttu-id="0595c-210">商務用 Skype Online IM 和目前狀態與 Outlook Web App 的整合</span><span class="sxs-lookup"><span data-stu-id="0595c-210">Skype for Business Online IM and presence integration with Outlook Web App</span></span>
-    
-- <span data-ttu-id="0595c-211">與其他組織中商務用 Skype Online 使用者的外部通訊（同盟）。</span><span class="sxs-lookup"><span data-stu-id="0595c-211">External communication (federation) with Skype for Business Online users in other organizations.</span></span>
-    
-- <span data-ttu-id="0595c-212">公用網際網路連線（PIC）與商務用 Skype Online 使用者使用 Microsoft 帳戶登入（以前稱為 Windows Live ID）。</span><span class="sxs-lookup"><span data-stu-id="0595c-212">Public Internet Connectivity (PIC) with Skype for Business Online users signed in with a Microsoft account (formerly known as a Windows Live ID).</span></span>
-    
- <span data-ttu-id="0595c-213">**如果不支援多個 CNAME 記錄，** 您必須為商務用 Skype Online 選擇下列功能：</span><span class="sxs-lookup"><span data-stu-id="0595c-213">**If multiple CNAME records are not supported,** you have to choose between the following features for Skype for Business Online:</span></span> 
-  
-- <span data-ttu-id="0595c-214">電子郵件桌面用戶端和行動用戶端可以使用自動探索自動尋找 Exchange Online 服務，讓使用者不必輸入伺服器名稱即可登入。</span><span class="sxs-lookup"><span data-stu-id="0595c-214">Email desktop clients and mobile clients can use Autodiscover to automatically find the Exchange Online service so that users can sign in without having to enter a server name.</span></span>
-    
-- <span data-ttu-id="0595c-215">商務用 skype Online 桌面用戶端可以使用自動探索，自動尋找商務用 Skype Online 服務，讓使用者不必輸入伺服器名稱即可登入。</span><span class="sxs-lookup"><span data-stu-id="0595c-215">Skype for Business Online desktop clients can use Autodiscover to automatically find the Skype for Business Online service so that users can sign in without having to enter a server name.</span></span>
-    
-- <span data-ttu-id="0595c-216">商務用 skype Online 行動用戶端可以使用自動探索，自動尋找商務用 Skype Online 服務，讓使用者不必輸入伺服器名稱即可登入。</span><span class="sxs-lookup"><span data-stu-id="0595c-216">Skype for Business Online mobile clients can use Autodiscover to automatically find the Skype for Business Online service so that users can sign in without having to enter a server name.</span></span>
-
-- <span data-ttu-id="0595c-217">Microsoft 團隊同盟與商務用 Skype 的同盟，不論是內部部署或線上。</span><span class="sxs-lookup"><span data-stu-id="0595c-217">Microsoft Teams federation with Skype for Business, either on-premises or online.</span></span> <span data-ttu-id="0595c-218">如需詳細資訊，請參閱為[Microsoft 團隊準備組織的網路](https://docs.microsoft.com/microsoftteams/prepare-network)。</span><span class="sxs-lookup"><span data-stu-id="0595c-218">For more information, see [Prepare your organization's network for Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network).</span></span>
-    
- <span data-ttu-id="0595c-219">**如果不支援 SPF/TXT 記錄**，其他人可能會使用您的網域來傳送垃圾郵件或其他惡意的電子郵件。</span><span class="sxs-lookup"><span data-stu-id="0595c-219">**If SPF/TXT records are not supported**, other people may be able to use your domain to send spam or other malicious email.</span></span> <span data-ttu-id="0595c-220">SPF 記錄會透過識別從您的網域傳送電子郵件的授權伺服器運作。</span><span class="sxs-lookup"><span data-stu-id="0595c-220">SPF records work by identifying the servers that are authorized to send email from your domain.</span></span> 
-  
-## <a name="how-do-i-set-or-change-the-default-domain-in-office-365"></a><span data-ttu-id="0595c-221">如何在 Office 365 中設定或變更預設網域？</span><span class="sxs-lookup"><span data-stu-id="0595c-221">How do I set or change the default domain in Office 365?</span></span>
-
-<span data-ttu-id="0595c-222">您必須至少有一個自訂網域新增至 Office 365，您才能選擇預設網域。</span><span class="sxs-lookup"><span data-stu-id="0595c-222">You must have at least one custom domain that you've added to Office 365 before you can choose a default domain.</span></span>
-
-::: moniker range="o365-worldwide"
-
-1. <span data-ttu-id="0595c-223">在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-223">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <span data-ttu-id="0595c-224">在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-224">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. <span data-ttu-id="0595c-225">在系統管理中心中，移至 **[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="0595c-225">In the admin center, go to the **Settings** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.</span></span>
-
-::: moniker-end
-    
-2. <span data-ttu-id="0595c-226">在 [**網域**] 頁面上，選取您要設定為新電子郵件地址的預設網域。</span><span class="sxs-lookup"><span data-stu-id="0595c-226">On the **Domains** page, select the domain you want to set as the default for new email addresses.</span></span> 
-    
-3. <span data-ttu-id="0595c-227">選取 [設定成預設值]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="0595c-227">Select **Set as default**.</span></span>
-    
-::: moniker range="o365-worldwide"
-
-<span data-ttu-id="0595c-228">您無法變更*onmicrosoft.com*網域的名稱。</span><span class="sxs-lookup"><span data-stu-id="0595c-228">You cannot change the name of your initial  *.onmicrosoft.com*  domain.</span></span> 
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-<span data-ttu-id="0595c-229">您無法變更*onmicrosoft.de*網域的名稱。</span><span class="sxs-lookup"><span data-stu-id="0595c-229">You cannot change the name of your initial  *.onmicrosoft.de*  domain.</span></span> 
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-<span data-ttu-id="0595c-230">您無法變更*partner.onmschina.cn*網域的名稱。</span><span class="sxs-lookup"><span data-stu-id="0595c-230">You cannot change the name of your initial  *.partner.onmschina.cn*  domain.</span></span> 
-
-::: moniker-end
-
-## <a name="can-i-add-custom-subdomains-or-multiple-domains-to-office-365"></a><span data-ttu-id="0595c-231">我可以將自訂子域或多個網域新增至 Office 365 嗎？</span><span class="sxs-lookup"><span data-stu-id="0595c-231">Can I add custom subdomains or multiple domains to Office 365?</span></span>
-
-::: moniker range="o365-worldwide"
-
-<span data-ttu-id="0595c-232">是的！</span><span class="sxs-lookup"><span data-stu-id="0595c-232">Yes!</span></span> <span data-ttu-id="0595c-233">若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。</span><span class="sxs-lookup"><span data-stu-id="0595c-233">To add subdomains, you must manage your own DNS settings at your registrar's website.</span></span> <span data-ttu-id="0595c-234">如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。</span><span class="sxs-lookup"><span data-stu-id="0595c-234">If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-<span data-ttu-id="0595c-235">是的！</span><span class="sxs-lookup"><span data-stu-id="0595c-235">Yes!</span></span> <span data-ttu-id="0595c-236">若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。</span><span class="sxs-lookup"><span data-stu-id="0595c-236">To add subdomains, you must manage your own DNS settings at your registrar's website.</span></span> <span data-ttu-id="0595c-237">如果您要讓 Microsoft 使用 NS 記錄來管理您的 DNS 設定，或者您購買的是 Microsoft 的網域，您就無法新增子域。</span><span class="sxs-lookup"><span data-stu-id="0595c-237">If you are letting Microsoft manage your DNS settings with NS records, or if you bought the domain from Microsoft, you can't add subdomains.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-<span data-ttu-id="0595c-238">是的！</span><span class="sxs-lookup"><span data-stu-id="0595c-238">Yes!</span></span> <span data-ttu-id="0595c-239">若要新增子域，您必須在註冊機構網站上管理自己的 DNS 設定。</span><span class="sxs-lookup"><span data-stu-id="0595c-239">To add subdomains, you must manage your own DNS settings at your registrar's website.</span></span> <span data-ttu-id="0595c-240">如果您是讓世紀以 NS 記錄來管理您的 DNS 設定，就無法新增子域。</span><span class="sxs-lookup"><span data-stu-id="0595c-240">If you are letting 21Vianet manage your DNS settings with NS records, you can't add subdomains.</span></span>
-
-::: moniker-end
-
-<span data-ttu-id="0595c-241">一般來說，您最多可以將900個網域新增至 Office 365 訂閱。</span><span class="sxs-lookup"><span data-stu-id="0595c-241">Typically, you can add up to 900 domains to your Office 365 subscription.</span></span>
-  
-<span data-ttu-id="0595c-242">例如，您可以新增網域 contoso.com 及 contosomarketing.com，然後新增子域 www.contoso.com、www.partners.contoso.com、www.partners.marketing.contoso.com 等等。</span><span class="sxs-lookup"><span data-stu-id="0595c-242">For example, you could add the domains contoso.com and contosomarketing.com, and then add the subdomains www.contoso.com, www.partners.contoso.com, www.partners.marketing.contoso.com, and so on.</span></span>
-  
-<span data-ttu-id="0595c-243">當您新增子域時，會根據所驗證的父系網域，自動驗證。</span><span class="sxs-lookup"><span data-stu-id="0595c-243">When you add a subdomain, it is automatically verified based on the parent domain that is being verified.</span></span>
-  
-<span data-ttu-id="0595c-244">當您將多個網域新增至 Office 365 時，您可以在您已新增的任何網域上裝載任何服務（如電子郵件）。</span><span class="sxs-lookup"><span data-stu-id="0595c-244">When you add multiple domains to Office 365, you can host any of the services (like email) on any of the domains you've added.</span></span>  <span data-ttu-id="0595c-245">*當您將電子郵件變更為 Office 365 時，更新網域的 MX 記錄，所有傳送至該網域的電子郵件都會開始進入 Office 365。*</span><span class="sxs-lookup"><span data-stu-id="0595c-245">*When you change your email to Office 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Office 365.*</span></span> 
+<span data-ttu-id="50a19-169">當您將多個網域新增至 Microsoft 365 時，您可以在您已新增的任何網域上裝載任何服務（如電子郵件）。</span><span class="sxs-lookup"><span data-stu-id="50a19-169">When you add multiple domains to Microsoft 365, you can host any of the services (like email) on any of the domains you've added.</span></span>  <span data-ttu-id="50a19-170">*當您將電子郵件變更為 Microsoft 365 時，更新網域的 MX 記錄，所有傳送至該網域的電子郵件都會開始成為 Microsoft 365。*</span><span class="sxs-lookup"><span data-stu-id="50a19-170">*When you change your email to Microsoft 365, by updating a domain's MX record, ALL email sent to that domain will start coming to Microsoft 365.*</span></span> 
  
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> <span data-ttu-id="0595c-246">如果您已將 contoso.com 網域新增至 Office 365 租使用者，您也可以將子域 xyz.contoso.com 新增至另一個 Office 365 租使用者。</span><span class="sxs-lookup"><span data-stu-id="0595c-246">If you have already added a contoso.com domain to an Office 365 tenant, you can also add the subdomain xyz.contoso.com to another Office 365 tenant.</span></span> <span data-ttu-id="0595c-247">新增子域時，系統會提示您在 DNS 主機服務提供者中新增 TXT 記錄。</span><span class="sxs-lookup"><span data-stu-id="0595c-247">When adding the subdomain, you will be prompted to add a TXT record in the DNS hosting provider.</span></span>
+> <span data-ttu-id="50a19-171">如果您已將 contoso.com 網域新增至 Microsoft 365 訂閱，您也可以將子域 xyz.contoso.com 新增至其他 Microsoft 365 組織。</span><span class="sxs-lookup"><span data-stu-id="50a19-171">If you added a contoso.com domain to a Microsoft 365 subscription, you can also add the subdomain xyz.contoso.com to another Microsoft 365 organization.</span></span> <span data-ttu-id="50a19-172">新增子域時，系統會提示您在 DNS 主機服務提供者中新增 TXT 記錄。</span><span class="sxs-lookup"><span data-stu-id="50a19-172">When adding the subdomain, you are prompted to add a TXT record in the DNS hosting provider.</span></span>
 
-## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a><span data-ttu-id="0595c-248">為什麼我有「onmicrosoft.com」網域？</span><span class="sxs-lookup"><span data-stu-id="0595c-248">Why do I have an "onmicrosoft.com" domain?</span></span>
+## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a><span data-ttu-id="50a19-173">為什麼我有「onmicrosoft.com」網域？</span><span class="sxs-lookup"><span data-stu-id="50a19-173">Why do I have an "onmicrosoft.com" domain?</span></span>
 
-<span data-ttu-id="0595c-249">當您註冊服務時，Office 365 會為您建立網域，例如*contoso.onmicrosoft.com*。</span><span class="sxs-lookup"><span data-stu-id="0595c-249">Office 365 creates a domain for you, like *contoso.onmicrosoft.com*, when you sign up with the service.</span></span> <span data-ttu-id="0595c-250">您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.com*。</span><span class="sxs-lookup"><span data-stu-id="0595c-250">The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.com*.</span></span> 
+<span data-ttu-id="50a19-174">當您註冊服務時，Microsoft 365 會為您建立網域，例如*contoso.onmicrosoft.com*。</span><span class="sxs-lookup"><span data-stu-id="50a19-174">Microsoft 365 creates a domain for you, like *contoso.onmicrosoft.com*, when you sign up with the service.</span></span> <span data-ttu-id="50a19-175">您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.com*。</span><span class="sxs-lookup"><span data-stu-id="50a19-175">The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.com*.</span></span> 
   
- <span data-ttu-id="0595c-251">**如果您想要讓您的電子郵件看起來像是*alan \@ contoso.com*：** [購買網域，](../get-help-with-domains/buy-a-domain-name.md)或是只要您已擁有您的使用者和網域，請依照將您的[使用者與網域新增至 Office 365](add-domain.md)中的步驟進行。</span><span class="sxs-lookup"><span data-stu-id="0595c-251">**If you want to have your email look like *alan\@contoso.com*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Office 365](add-domain.md) if you own it already.</span></span> 
+ <span data-ttu-id="50a19-176">**如果您想要讓您的電子郵件看起來像是*alan \@ contoso.com*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md)，或是只要您擁有現有的使用者和網域中的步驟，即可執行 [[將您的使用者與網域新增至 Microsoft 365](add-domain.md) ]。</span><span class="sxs-lookup"><span data-stu-id="50a19-176">**If you want to have your email look like *alan\@contoso.com*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Microsoft 365](add-domain.md) if you own it already.</span></span> 
   
-- <span data-ttu-id="0595c-252">**您無法在註冊後重新命名 name.onmicrosoft.com17 網域。**</span><span class="sxs-lookup"><span data-stu-id="0595c-252">**You can't rename the onmicrosoft domain after sign-up.**</span></span> <span data-ttu-id="0595c-253">例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.com，您就無法將它變更為 fabrikam.onmicrosoft.com。</span><span class="sxs-lookup"><span data-stu-id="0595c-253">For example, if the initial domain you chose was fourthcoffee.onmicrosoft.com, you can't change it to be fabrikam.onmicrosoft.com.</span></span> <span data-ttu-id="0595c-254">若要使用不同的 onmicrosoft.com 網域，您必須開始使用 Office 365 的新訂閱。</span><span class="sxs-lookup"><span data-stu-id="0595c-254">To use a different onmicrosoft.com domain, you'd have to start a new subscription with Office 365.</span></span> 
+- <span data-ttu-id="50a19-177">**您無法在註冊後重新命名 name.onmicrosoft.com17 網域。**</span><span class="sxs-lookup"><span data-stu-id="50a19-177">**You can't rename the onmicrosoft domain after sign-up.**</span></span> <span data-ttu-id="50a19-178">例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.com，您就無法將它變更為 fabrikam.onmicrosoft.com。</span><span class="sxs-lookup"><span data-stu-id="50a19-178">For example, if the initial domain you chose was fourthcoffee.onmicrosoft.com, you can't change it to be fabrikam.onmicrosoft.com.</span></span> <span data-ttu-id="50a19-179">若要使用不同的 onmicrosoft.com 網域，您必須開始使用 Microsoft 365 的新訂閱。</span><span class="sxs-lookup"><span data-stu-id="50a19-179">To use a different onmicrosoft.com domain, you'd have to start a new subscription with Microsoft 365.</span></span> 
     
-- <span data-ttu-id="0595c-255">**您無法重新命名您的小組網站 URL。**</span><span class="sxs-lookup"><span data-stu-id="0595c-255">**You can't rename your team site URL.**</span></span> <span data-ttu-id="0595c-256">您的小組網站 URL 是以您的 onmicrosoft.com 功能變數名稱為基礎。</span><span class="sxs-lookup"><span data-stu-id="0595c-256">Your team site URL is based on your onmicrosoft.com domain name.</span></span> <span data-ttu-id="0595c-257">不幸的是，由於 SharePoint 線上架構的運作方式，您無法重新命名小組網站。</span><span class="sxs-lookup"><span data-stu-id="0595c-257">Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site.</span></span> 
+- <span data-ttu-id="50a19-180">**您無法重新命名您的小組網站 URL。**</span><span class="sxs-lookup"><span data-stu-id="50a19-180">**You can't rename your team site URL.**</span></span> <span data-ttu-id="50a19-181">您的小組網站 URL 是以您的 onmicrosoft.com 功能變數名稱為基礎。</span><span class="sxs-lookup"><span data-stu-id="50a19-181">Your team site URL is based on your onmicrosoft.com domain name.</span></span> <span data-ttu-id="50a19-182">不幸的是，由於 SharePoint 線上架構的運作方式，您無法重新命名小組網站。</span><span class="sxs-lookup"><span data-stu-id="50a19-182">Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site.</span></span> 
     
-- <span data-ttu-id="0595c-258">**您無法移除您的 name.onmicrosoft.com17 網域。**</span><span class="sxs-lookup"><span data-stu-id="0595c-258">**You can't remove your onmicrosoft domain.**</span></span> <span data-ttu-id="0595c-259">Office 365 需要保留它，因為它是用於您訂閱的幕後。</span><span class="sxs-lookup"><span data-stu-id="0595c-259">Office 365 needs to keep it around because it's used behind the scenes for your subscription.</span></span> <span data-ttu-id="0595c-260">不過，您不需要在新增自訂網域之後，自行使用網域。</span><span class="sxs-lookup"><span data-stu-id="0595c-260">But you don't have to use the domain yourself after you've added a custom domain.</span></span> 
+- <span data-ttu-id="50a19-183">**您無法移除您的 name.onmicrosoft.com17 網域。**</span><span class="sxs-lookup"><span data-stu-id="50a19-183">**You can't remove your onmicrosoft domain.**</span></span> <span data-ttu-id="50a19-184">Microsoft 365 必須保留它，因為它是用於您訂閱的幕後。</span><span class="sxs-lookup"><span data-stu-id="50a19-184">Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription.</span></span> <span data-ttu-id="50a19-185">不過，您不需要在新增自訂網域之後，自行使用網域。</span><span class="sxs-lookup"><span data-stu-id="50a19-185">But you don't have to use the domain yourself after you've added a custom domain.</span></span> 
     
-<span data-ttu-id="0595c-261">您可以繼續使用初始 onmicrosoft.com 網域，即使是在您新增網域之後。</span><span class="sxs-lookup"><span data-stu-id="0595c-261">You can keep using the initial onmicrosoft.com domain even after you add your domain.</span></span> <span data-ttu-id="0595c-262">它仍適用于電子郵件和其他服務，所以是您的選擇。</span><span class="sxs-lookup"><span data-stu-id="0595c-262">It still works for email and other services, so it's your choice.</span></span>
+<span data-ttu-id="50a19-186">您可以繼續使用初始 onmicrosoft.com 網域，即使是在您新增網域之後。</span><span class="sxs-lookup"><span data-stu-id="50a19-186">You can keep using the initial onmicrosoft.com domain even after you add your domain.</span></span> <span data-ttu-id="50a19-187">它仍適用于電子郵件和其他服務，所以是您的選擇。</span><span class="sxs-lookup"><span data-stu-id="50a19-187">It still works for email and other services, so it's your choice.</span></span>
   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-## <a name="why-do-i-have-an-onmicrosoftde-domain"></a><span data-ttu-id="0595c-263">為什麼我有「onmicrosoft.de」網域？</span><span class="sxs-lookup"><span data-stu-id="0595c-263">Why do I have an "onmicrosoft.de" domain?</span></span>
+## <a name="why-do-i-have-an-onmicrosoftde-domain"></a><span data-ttu-id="50a19-188">為什麼我有「onmicrosoft.de」網域？</span><span class="sxs-lookup"><span data-stu-id="50a19-188">Why do I have an "onmicrosoft.de" domain?</span></span>
 
-<span data-ttu-id="0595c-264">當您註冊服務時，Office 365 會為您建立網域，例如*contoso.onmicrosoft.de*。</span><span class="sxs-lookup"><span data-stu-id="0595c-264">Office 365 creates a domain for you, like *contoso.onmicrosoft.de*, when you sign up with the service.</span></span> <span data-ttu-id="0595c-265">您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.de*。</span><span class="sxs-lookup"><span data-stu-id="0595c-265">The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.de*.</span></span> 
+<span data-ttu-id="50a19-189">當您註冊服務時，Microsoft 365 會為您建立網域，例如*contoso.onmicrosoft.de*。</span><span class="sxs-lookup"><span data-stu-id="50a19-189">Microsoft 365 creates a domain for you, like *contoso.onmicrosoft.de*, when you sign up with the service.</span></span> <span data-ttu-id="50a19-190">您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.de*。</span><span class="sxs-lookup"><span data-stu-id="50a19-190">The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.de*.</span></span> 
   
- <span data-ttu-id="0595c-266">**如果您想要讓您的電子郵件看起來像是*alan@contoso.de*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md)，或是只要[將您的使用者與網域新增至 Office 365](add-domain.md) ，也請依照下列步驟進行。</span><span class="sxs-lookup"><span data-stu-id="0595c-266">**If you want to have your email look like *alan@contoso.de*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Office 365](add-domain.md) if you own it already.</span></span> 
+ <span data-ttu-id="50a19-191">**如果您想要讓您的電子郵件看起來像是*alan@contoso.de*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md)，或是只要[將您的使用者與網域新增至 Microsoft 365](add-domain.md) ，便執行步驟。</span><span class="sxs-lookup"><span data-stu-id="50a19-191">**If you want to have your email look like *alan@contoso.de*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Microsoft 365](add-domain.md) if you own it already.</span></span> 
   
-- <span data-ttu-id="0595c-267">**您無法在註冊後重新命名 name.onmicrosoft.com17 網域。**</span><span class="sxs-lookup"><span data-stu-id="0595c-267">**You can't rename the onmicrosoft domain after sign-up.**</span></span> <span data-ttu-id="0595c-268">例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.de，您就無法將它變更為 fabrikam.onmicrosoft.de。</span><span class="sxs-lookup"><span data-stu-id="0595c-268">For example, if the initial domain you chose was fourthcoffee.onmicrosoft.de, you can't change it to be fabrikam.onmicrosoft.de.</span></span> <span data-ttu-id="0595c-269">若要使用不同的 onmicrosoft.de 網域，您必須開始使用 Office 365 的新訂閱。</span><span class="sxs-lookup"><span data-stu-id="0595c-269">To use a different onmicrosoft.de domain, you'd have to start a new subscription with Office 365.</span></span> 
+- <span data-ttu-id="50a19-192">**您無法在註冊後重新命名 name.onmicrosoft.com17 網域。**</span><span class="sxs-lookup"><span data-stu-id="50a19-192">**You can't rename the onmicrosoft domain after sign-up.**</span></span> <span data-ttu-id="50a19-193">例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.de，您就無法將它變更為 fabrikam.onmicrosoft.de。</span><span class="sxs-lookup"><span data-stu-id="50a19-193">For example, if the initial domain you chose was fourthcoffee.onmicrosoft.de, you can't change it to be fabrikam.onmicrosoft.de.</span></span> <span data-ttu-id="50a19-194">若要使用不同的 onmicrosoft.de 網域，您必須開始使用 Microsoft 365 的新訂閱。</span><span class="sxs-lookup"><span data-stu-id="50a19-194">To use a different onmicrosoft.de domain, you'd have to start a new subscription with Microsoft 365.</span></span> 
     
-- <span data-ttu-id="0595c-270">**您無法重新命名您的小組網站 URL。**</span><span class="sxs-lookup"><span data-stu-id="0595c-270">**You can't rename your team site URL.**</span></span> <span data-ttu-id="0595c-271">您的小組網站 URL 是以您的 onmicrosoft.de 功能變數名稱為基礎。不幸的是，由於 SharePoint 線上架構的運作方式，您無法重新命名小組網站。</span><span class="sxs-lookup"><span data-stu-id="0595c-271">Your team site URL is based on your onmicrosoft.de domain name.Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site.</span></span> 
+- <span data-ttu-id="50a19-195">**您無法重新命名您的小組網站 URL。**</span><span class="sxs-lookup"><span data-stu-id="50a19-195">**You can't rename your team site URL.**</span></span> <span data-ttu-id="50a19-196">您的小組網站 URL 是以您的 onmicrosoft.de 功能變數名稱為基礎。不幸的是，由於 SharePoint 線上架構的運作方式，您無法重新命名小組網站。</span><span class="sxs-lookup"><span data-stu-id="50a19-196">Your team site URL is based on your onmicrosoft.de domain name.Unfortunately, because of the way SharePoint Online architecture works, you can't rename the team site.</span></span> 
     
-- <span data-ttu-id="0595c-272">**您無法移除您的 name.onmicrosoft.com17 網域。**</span><span class="sxs-lookup"><span data-stu-id="0595c-272">**You can't remove your onmicrosoft domain.**</span></span> <span data-ttu-id="0595c-273">Office 365 需要保留它，因為它是用於您訂閱的幕後。</span><span class="sxs-lookup"><span data-stu-id="0595c-273">Office 365 needs to keep it around because it's used behind the scenes for your subscription.</span></span> <span data-ttu-id="0595c-274">不過，您不需要在新增自訂網域之後，自行使用網域。</span><span class="sxs-lookup"><span data-stu-id="0595c-274">But you don't have to use the domain yourself after you've added a custom domain.</span></span> 
+- <span data-ttu-id="50a19-197">**您無法移除您的 name.onmicrosoft.com17 網域。**</span><span class="sxs-lookup"><span data-stu-id="50a19-197">**You can't remove your onmicrosoft domain.**</span></span> <span data-ttu-id="50a19-198">Microsoft 365 必須保留它，因為它是用於您訂閱的幕後。</span><span class="sxs-lookup"><span data-stu-id="50a19-198">Microsoft 365 needs to keep it around because it's used behind the scenes for your subscription.</span></span> <span data-ttu-id="50a19-199">不過，您不需要在新增自訂網域之後，自行使用網域。</span><span class="sxs-lookup"><span data-stu-id="50a19-199">But you don't have to use the domain yourself after you've added a custom domain.</span></span> 
     
-<span data-ttu-id="0595c-275">您可以繼續使用初始 onmicrosoft.de 網域，即使是在您新增網域之後。</span><span class="sxs-lookup"><span data-stu-id="0595c-275">You can keep using the initial onmicrosoft.de domain even after you add your domain.</span></span> <span data-ttu-id="0595c-276">它仍適用于電子郵件和其他服務，所以是您的選擇。</span><span class="sxs-lookup"><span data-stu-id="0595c-276">It still works for email and other services, so it's your choice.</span></span>
+<span data-ttu-id="50a19-200">您可以繼續使用初始 onmicrosoft.de 網域，即使是在您新增網域之後。</span><span class="sxs-lookup"><span data-stu-id="50a19-200">You can keep using the initial onmicrosoft.de domain even after you add your domain.</span></span> <span data-ttu-id="50a19-201">它仍適用于電子郵件和其他服務，所以是您的選擇。</span><span class="sxs-lookup"><span data-stu-id="50a19-201">It still works for email and other services, so it's your choice.</span></span>
   
 ::: moniker-end
 
-## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a><span data-ttu-id="0595c-277">如何驗證我的非盈利性或教育狀態？</span><span class="sxs-lookup"><span data-stu-id="0595c-277">How do I verify my nonprofit or education status?</span></span>
+## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a><span data-ttu-id="50a19-202">如何驗證我的非盈利性或教育狀態？</span><span class="sxs-lookup"><span data-stu-id="50a19-202">How do I verify my nonprofit or education status?</span></span>
 
-1. <span data-ttu-id="0595c-278">在系統[管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-home)選取 [**安裝**] 以啟動嚮導。</span><span class="sxs-lookup"><span data-stu-id="0595c-278">Select **Setup** in the [admin center](https://docs.microsoft.com/microsoft-365/admin/admin-home) to start the wizard.</span></span> <span data-ttu-id="0595c-279">（請務必先登入 Office 365。）</span><span class="sxs-lookup"><span data-stu-id="0595c-279">(Be sure to sign in to Office 365 first.)</span></span> 
+1. <span data-ttu-id="50a19-203">在系統[管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-home)選取 [**安裝**] 以啟動嚮導。</span><span class="sxs-lookup"><span data-stu-id="50a19-203">Select **Setup** in the [admin center](https://docs.microsoft.com/microsoft-365/admin/admin-home) to start the wizard.</span></span> <span data-ttu-id="50a19-204">（請務必先登入 Microsoft 365。）</span><span class="sxs-lookup"><span data-stu-id="50a19-204">(Be sure to sign in to Microsoft 365 first.)</span></span> 
     
-2. <span data-ttu-id="0595c-280">若要成為 school 的系統管理員，請選取 [成為 Office 365 的系統**管理員**] 選項。</span><span class="sxs-lookup"><span data-stu-id="0595c-280">To become the admin for your school, select the **Become an admin** option in Office 365.</span></span> 
+2. <span data-ttu-id="50a19-205">若要成為您的學校系統管理員，請在 Microsoft 365 中選取 [**成為系統管理員**] 選項。</span><span class="sxs-lookup"><span data-stu-id="50a19-205">To become the admin for your school, select the  **Become an admin** option in Microsoft 365.</span></span> 
     
-3. <span data-ttu-id="0595c-281">系統會提示您在網域的 DNS 主機網站上新增 TXT DNS 記錄。</span><span class="sxs-lookup"><span data-stu-id="0595c-281">You'll be prompted to add a TXT DNS record at the DNS host website for your domain.</span></span> <span data-ttu-id="0595c-282">為什麼？</span><span class="sxs-lookup"><span data-stu-id="0595c-282">Why?</span></span> <span data-ttu-id="0595c-283">由於是在 DNS 主機登入，並為您的網域新增記錄，因此您可以為 Office 365 證明您擁有該功能變數名稱。</span><span class="sxs-lookup"><span data-stu-id="0595c-283">Because by signing in at the DNS host and adding a record for your domain, you prove to Office 365 that you own the domain name.</span></span>
+3. <span data-ttu-id="50a19-206">系統會提示您在網域的 DNS 主機網站上新增 TXT DNS 記錄。</span><span class="sxs-lookup"><span data-stu-id="50a19-206">You'll be prompted to add a TXT DNS record at the DNS host website for your domain.</span></span> <span data-ttu-id="50a19-207">為什麼？</span><span class="sxs-lookup"><span data-stu-id="50a19-207">Why?</span></span> <span data-ttu-id="50a19-208">由於是在 DNS 主機登入，並為您的網域新增記錄，因此您可以向 Microsoft 365 證明您擁有該功能變數名稱。</span><span class="sxs-lookup"><span data-stu-id="50a19-208">Because by signing in at the DNS host and adding a record for your domain, you prove to Microsoft 365 that you own the domain name.</span></span>
     
-4. <span data-ttu-id="0595c-284">在您新增記錄後，您會回到 Office 365 入口網站，並確認您已新增該記錄，因此 Office 365 可以進行檢查。</span><span class="sxs-lookup"><span data-stu-id="0595c-284">After you add the record, you'll go back to the Office 365 portal and confirm that you've added it, so Office 365 can check.</span></span>
+4. <span data-ttu-id="50a19-209">在您新增記錄後，您會回到 Microsoft 365 入口網站，並確認您已新增該記錄，所以 Microsoft 365 可以進行檢查。</span><span class="sxs-lookup"><span data-stu-id="50a19-209">After you add the record, you'll go back to the Microsoft 365 portal and confirm that you've added it, so Microsoft 365 can check.</span></span>
     
-<span data-ttu-id="0595c-285">是否有非贏利且想要取得 Office 365？</span><span class="sxs-lookup"><span data-stu-id="0595c-285">Have a nonprofit and want to get Office 365?</span></span> <span data-ttu-id="0595c-286">[請確定您的組織符合資格](https://www.microsoft.com/en-us/nonprofits/eligibility)，然後註冊服務。</span><span class="sxs-lookup"><span data-stu-id="0595c-286">[Make sure your organization qualifies](https://www.microsoft.com/en-us/nonprofits/eligibility) and then sign up for the service.</span></span> 
+<span data-ttu-id="50a19-210">是否有非贏利且想要取得 Microsoft 365？</span><span class="sxs-lookup"><span data-stu-id="50a19-210">Have a nonprofit and want to get Microsoft 365?</span></span> <span data-ttu-id="50a19-211">[請確定您的組織符合資格](https://www.microsoft.com/en-us/nonprofits/eligibility)，然後註冊服務。</span><span class="sxs-lookup"><span data-stu-id="50a19-211">[Make sure your organization qualifies](https://www.microsoft.com/en-us/nonprofits/eligibility) and then sign up for the service.</span></span> 
   
-<span data-ttu-id="0595c-287">想要深入瞭解如何成為您的學校管理員？</span><span class="sxs-lookup"><span data-stu-id="0595c-287">Want to know more about becoming the admin for your school?</span></span> <span data-ttu-id="0595c-288">[深入瞭解](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
-)。</span><span class="sxs-lookup"><span data-stu-id="0595c-288">[Learn all about it](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
+<span data-ttu-id="50a19-212">想要深入瞭解如何成為您的學校管理員？</span><span class="sxs-lookup"><span data-stu-id="50a19-212">Want to know more about becoming the admin for your school?</span></span> <span data-ttu-id="50a19-213">[深入瞭解](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
+)。</span><span class="sxs-lookup"><span data-stu-id="50a19-213">[Learn all about it](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
 ).</span></span>
-  
-## <a name="can-i-pilot-office-365-with-just-a-few-email-addresses-from-my-custom-domain"></a><span data-ttu-id="0595c-289">我可以使用來自自訂網域的一些電子郵件地址試驗 Office 365 嗎？</span><span class="sxs-lookup"><span data-stu-id="0595c-289">Can I pilot Office 365 with just a few email addresses from my custom domain?</span></span>
-
-<span data-ttu-id="0595c-290">您可以，但有一些限制：</span><span class="sxs-lookup"><span data-stu-id="0595c-290">You can, but there are limitations:</span></span>
-  
-- <span data-ttu-id="0595c-291">您目前的電子郵件提供者必須提供電子郵件轉接功能。</span><span class="sxs-lookup"><span data-stu-id="0595c-291">Your current email provider must provide email forwarding.</span></span>
-    
-- <span data-ttu-id="0595c-292">您需要在您的 DNS 主機服務提供者管理與 Office 365 相關的 DNS 記錄，而不是讓 Office 365 為您管理這些記錄。</span><span class="sxs-lookup"><span data-stu-id="0595c-292">You need to manage your Office 365-related DNS records at your DNS hosting provider, rather than having Office 365 manage these records for you.</span></span> <span data-ttu-id="0595c-293">若要瞭解這需要做什麼，請參閱將您的網域新增至 Office 365，以管理您自己的 DNS 記錄。</span><span class="sxs-lookup"><span data-stu-id="0595c-293">To learn what this entails, see Add your domain to Office 365 when you want to manage your own DNS records.</span></span>
-    
-- <span data-ttu-id="0595c-294">有些 Office 365 功能無法使用：</span><span class="sxs-lookup"><span data-stu-id="0595c-294">Some Office 365 features won't be available:</span></span>
-- <span data-ttu-id="0595c-295">使用者將無法查看位於其他電子郵件提供者上之使用者的空閒/忙碌資訊。</span><span class="sxs-lookup"><span data-stu-id="0595c-295">Users won't be able to see free/busy information for the users who are on the other email provider.</span></span>
-- <span data-ttu-id="0595c-296">系統管理員無法從單一位置管理所有人的帳戶。</span><span class="sxs-lookup"><span data-stu-id="0595c-296">Admins won't be able to administer everyone's accounts from one place.</span></span>
-- <span data-ttu-id="0595c-297">使用者可能無法使用 Office 365 垃圾郵件篩選</span><span class="sxs-lookup"><span data-stu-id="0595c-297">Users may not be able to use Office 365 spam filtering</span></span>
-
-### <a name="how-to-set-up-an-office-365-pilot"></a><span data-ttu-id="0595c-298">如何設定 Office 365 試驗</span><span class="sxs-lookup"><span data-stu-id="0595c-298">How to set up an Office 365 pilot</span></span>
-    
-1. <span data-ttu-id="0595c-299">登入 Microsoft 365 系統管理中心</span><span class="sxs-lookup"><span data-stu-id="0595c-299">Sign in to the Microsoft 365 admin center</span></span>
-    
-    1. <span data-ttu-id="0595c-300">使用您的公司或學校帳戶登入 Office 365。</span><span class="sxs-lookup"><span data-stu-id="0595c-300">Sign in to Office 365 with your work or school account.</span></span>
-        
-    2. <span data-ttu-id="0595c-301">移至 [**設定**] [ \> **網域**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-301">Go to **Settings** \> **Domains**.</span></span> 
-    
-2. <span data-ttu-id="0595c-302">確認您擁有要使用的網域</span><span class="sxs-lookup"><span data-stu-id="0595c-302">Verify that you own the domain you want to use</span></span>
-    
-    1. <span data-ttu-id="0595c-303">在 [**網域**] 頁面上，選取 [**新增網域**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-303">On the **Domains** page, select **Add domain**.</span></span> 
-        
-    2. <span data-ttu-id="0595c-304">在面板中，輸入網域，在此範例中 cohowinery.com，然後選取 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="0595c-304">In the panel, type the domain, in this example cohowinery.com, and then select **Next**.</span></span> 
-        
-    3. <span data-ttu-id="0595c-305">在 [**驗證**網域] 頁面上，遵循逐步指示。</span><span class="sxs-lookup"><span data-stu-id="0595c-305">On the **Verify** domain page, follow the step-by-step instructions.</span></span> 
-        
-    4. <span data-ttu-id="0595c-306">在下拉式清單中，選取您的 DNS 主機服務提供者，然後依照指示，顯示您擁有該網域。</span><span class="sxs-lookup"><span data-stu-id="0595c-306">In the drop-down list, select your DNS hosting provider, and follow the instructions to show that you own the domain.</span></span>
-        
-    5. <span data-ttu-id="0595c-307">選取 [**驗證**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-307">Select **Verify**.</span></span> <span data-ttu-id="0595c-308">DNS 變更會在幾分鐘和72小時之間生效。</span><span class="sxs-lookup"><span data-stu-id="0595c-308">It takes between a few minutes and 72 hours for DNS changes to take effect.</span></span> 
-        
-    6. <span data-ttu-id="0595c-309">驗證成功時，系統會要求您修改您的 DNS 記錄。</span><span class="sxs-lookup"><span data-stu-id="0595c-309">When verification is successful, you'll be asked to modify your DNS records.</span></span>
-    
-3. <span data-ttu-id="0595c-310">在 Exchange Online 中將網域標示為「共用」</span><span class="sxs-lookup"><span data-stu-id="0595c-310">Mark the domain as shared in Exchange Online</span></span>
-    
-    1. <span data-ttu-id="0595c-311">移至**Exchange 系統管理中心**（EAC）。</span><span class="sxs-lookup"><span data-stu-id="0595c-311">Go to the **Exchange admin center** (EAC).</span></span> 
-        
-    2. <span data-ttu-id="0595c-312">在 [**郵件流程**] 區段中，選取 [**公認的網域**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-312">In the **Mail flow** section, select **Accepted domains**.</span></span> 
-        
-    3. <span data-ttu-id="0595c-313">按兩下您要修改的網域。</span><span class="sxs-lookup"><span data-stu-id="0595c-313">Double-click the domain you want to modify.</span></span>
-        
-    4. <span data-ttu-id="0595c-314">在開啟的視窗中，選取 [**內部轉送**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-314">In the window that opens, select **Internal Relay**.</span></span> 
-        
-    5. <span data-ttu-id="0595c-315">選取 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="0595c-315">Select **Save**.</span></span> <span data-ttu-id="0595c-316">此設定可能需要幾分鐘才會生效。</span><span class="sxs-lookup"><span data-stu-id="0595c-316">This setting may require a few minutes to take effect.</span></span> 
-    
-4. <span data-ttu-id="0595c-317">（選用）解除封鎖現有的電子郵件伺服器</span><span class="sxs-lookup"><span data-stu-id="0595c-317">Optionally, unblock the existing email server</span></span>
-    
-    1. <span data-ttu-id="0595c-318">Office 365 使用 Exchange Online Protection （EOP）進行垃圾郵件保護。</span><span class="sxs-lookup"><span data-stu-id="0595c-318">Office 365 uses Exchange Online Protection (EOP) for spam protection.</span></span> <span data-ttu-id="0595c-319">如果 EOP 偵測到您目前的郵件伺服器轉寄大量的垃圾郵件，可能會封鎖垃圾郵件，這樣會使轉接無法運作。</span><span class="sxs-lookup"><span data-stu-id="0595c-319">If EOP detects a high volume of spam being forwarded by your current mail server, it may block it, which would prevent forwarding from working.</span></span> <span data-ttu-id="0595c-320">如果您確信其他電子郵件提供者所用的垃圾郵件保護，您可以將其伺服器新增至 Office 365 中的允許清單。</span><span class="sxs-lookup"><span data-stu-id="0595c-320">If you are confident with the spam protection your other email provider uses, you can add their server to an allow list in Office 365.</span></span> <span data-ttu-id="0595c-321">不過，這也會讓透過您原始伺服器到達的任何垃圾郵件都進入 Office 365 信箱，而且您將無法評估 Office 365 如何防止垃圾郵件。</span><span class="sxs-lookup"><span data-stu-id="0595c-321">However, this will also allow any spam that arrives through your original server to come through to the Office 365 mailboxes, and you won't be able to evaluate how well Office 365 prevents spam.</span></span>
-    
-    2. <span data-ttu-id="0595c-322">移至 Exchange 系統管理中心（EAC）。</span><span class="sxs-lookup"><span data-stu-id="0595c-322">Go to Exchange admin center (EAC).</span></span>
-        
-    3. <span data-ttu-id="0595c-323">在 EAC 中，選取 [**保護**]，然後選取 [連線**篩選**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-323">In EAC, select **Protection**, and then select **Connection filter**.</span></span> 
-        
-    4. <span data-ttu-id="0595c-324">在 [ **IP 允許] 清單**中，選取 **+** ，並新增您可以從目前的電子郵件提供者取得的郵件伺服器 IP 位址。</span><span class="sxs-lookup"><span data-stu-id="0595c-324">In the **IP Allow list**, select **+**, and add the mail server IP address that you can get from your current email provider.</span></span> 
-    
-5. <span data-ttu-id="0595c-325">建立使用者帳戶並設定主要（回復）位址</span><span class="sxs-lookup"><span data-stu-id="0595c-325">Create user accounts and set the primary (reply-to) address</span></span>
-    
-    1. <span data-ttu-id="0595c-326">移至 Microsoft 365 系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="0595c-326">Go to the Microsoft 365 admin center.</span></span>
-        
-    2. <span data-ttu-id="0595c-327">在左導覽列中，選取 [**使用者**作用中 \> **使用者**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-327">On the left navigation bar, select **Users** \> **Active Users**.</span></span> 
-        
-    3. <span data-ttu-id="0595c-328">建立使用者帳戶。</span><span class="sxs-lookup"><span data-stu-id="0595c-328">Create the user accounts.</span></span>
-        
-    4. <span data-ttu-id="0595c-329">針對每個帳戶選取 **[+] （新增）**，並填寫必要的資訊。</span><span class="sxs-lookup"><span data-stu-id="0595c-329">For each account select **+ (New)**, and fill out the required information.</span></span> 
-        
-    5. <span data-ttu-id="0595c-330">若要讓使用者的電子郵件與其目前相同，[**使用者名稱**] 欄位應該與使用者的現有電子郵件地址完全相同。</span><span class="sxs-lookup"><span data-stu-id="0595c-330">To keep user's email the same as it is currently, the **User name** field should be exactly the same as the user's existing email address.</span></span> 
-        
-    6. <span data-ttu-id="0595c-331">在 [使用者名稱] 旁，從下拉式清單中選取您的自訂功能變數名稱。</span><span class="sxs-lookup"><span data-stu-id="0595c-331">Next to User name, select your custom domain name from the drop-down list.</span></span>
-        
-    7. <span data-ttu-id="0595c-332">選取 [**建立** \> **關閉**]。</span><span class="sxs-lookup"><span data-stu-id="0595c-332">Select **Create** \> **Close**.</span></span> 
-        
-6. <span data-ttu-id="0595c-333">在您的 DNS 主機服務提供者更新 DNS 記錄</span><span class="sxs-lookup"><span data-stu-id="0595c-333">Update DNS records at your DNS hosting provider</span></span>
-    
-    1. <span data-ttu-id="0595c-334">登入您的 DNS 主機服務提供者的網站，並遵循在[任何 dns 主機服務提供者上為 Office 365 步驟建立 dns 記錄](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)。</span><span class="sxs-lookup"><span data-stu-id="0595c-334">Sign in to your DNS hosting provider's website, and follow the [Create DNS records at any DNS hosting provider for Office 365 steps](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).</span></span> <span data-ttu-id="0595c-335">**請進行下列例外狀況：**</span><span class="sxs-lookup"><span data-stu-id="0595c-335">**Make the following exceptions:**</span></span>
-    
-        1. <span data-ttu-id="0595c-336">請勿建立新的 MX 記錄或變更現有的 MX 記錄。</span><span class="sxs-lookup"><span data-stu-id="0595c-336">Do not create a new MX record or change your existing MX record.</span></span>
-            
-        2. <span data-ttu-id="0595c-337">如果您先前的電子郵件提供者已具備寄件者原則架構（SPF）記錄，而不是為 Exchange Online 建立新的 SPF （TXT）記錄，請直接在目前的 TXT 記錄中新增「包含: spf.protection.outlook.com .com」。</span><span class="sxs-lookup"><span data-stu-id="0595c-337">If you already have a Sender Policy Framework (SPF) record for your previous email provider, instead of creating a new SPF (TXT) record for Exchange Online, just add "include:spf.protection.outlook.com" to the current TXT record.</span></span> <span data-ttu-id="0595c-338">例如，"v = spf1 mx 包含:adatum 包含: spf.protection.outlook.com. .com ~ all"。</span><span class="sxs-lookup"><span data-stu-id="0595c-338">For example, "v=spf1 mx include:adatum.com include:spf.protection.outlook.com ~all".</span></span>
-            
-        3. <span data-ttu-id="0595c-339">如果您還沒有 SPF 記錄，請修改 Office 365 建議的一個，以包含目前電子郵件提供者的網域，加上 spf.protection.outlook.com。</span><span class="sxs-lookup"><span data-stu-id="0595c-339">If you don't have an SPF record yet, modify the one recommended by Office 365 to include the domain for your current email provider, plus spf.protection.outlook.com.</span></span> <span data-ttu-id="0595c-340">這會從兩個電子郵件系統中授權外寄郵件。</span><span class="sxs-lookup"><span data-stu-id="0595c-340">This authorizes outgoing messages from both email systems.</span></span>
-            
-7. <span data-ttu-id="0595c-341">在您目前的提供者設定電子郵件轉寄</span><span class="sxs-lookup"><span data-stu-id="0595c-341">Set up email forwarding at your current provider</span></span>
-    
-    1. <span data-ttu-id="0595c-342">在您目前的電子郵件提供者中，將您的使用者電子郵件帳戶的轉寄功能設定為您的 onmicrosoft.com 網域：</span><span class="sxs-lookup"><span data-stu-id="0595c-342">At your current email provider, set up forwarding for your users email accounts to your onmicrosoft.com domain:</span></span>
-        
-    2. <span data-ttu-id="0595c-343">使用者 A 的信箱應該轉寄至 usera@yourcompany.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="0595c-343">User A's mailbox should forward to usera@yourcompany.onmicrosoft.com</span></span>
-        
-    3. <span data-ttu-id="0595c-344">使用者 B 的信箱應該轉寄至 userb@yourcompany.onmicrosoft.com</span><span class="sxs-lookup"><span data-stu-id="0595c-344">User B's mailbox should forward to userb@yourcompany.onmicrosoft.com</span></span>
-        
-    4. <span data-ttu-id="0595c-345">當您完成此步驟：</span><span class="sxs-lookup"><span data-stu-id="0595c-345">When you complete this step:</span></span>
-        
-    5. <span data-ttu-id="0595c-346">所有傳送至 usera@yourcompany.com 和 userb@yourcompany.com 的郵件都會出現在 Office 365。</span><span class="sxs-lookup"><span data-stu-id="0595c-346">All mail sent to usera@yourcompany.com and userb@yourcompany.com will be available in Office 365.</span></span>
-    
-    6. <span data-ttu-id="0595c-347">附註：</span><span class="sxs-lookup"><span data-stu-id="0595c-347">Notes:</span></span>
-        
-        - <span data-ttu-id="0595c-348">如需設定轉接的確切步驟，請與您目前的電子郵件提供者聯繫。</span><span class="sxs-lookup"><span data-stu-id="0595c-348">Contact your current email provider for the exact steps for setting up forwarding.</span></span>
-            
-        - <span data-ttu-id="0595c-349">您不需要在目前的電子郵件提供者中保留郵件複本。</span><span class="sxs-lookup"><span data-stu-id="0595c-349">You don't need to keep a copy of messages at the current email provider.</span></span>
-            
-        - <span data-ttu-id="0595c-350">大部分提供者會轉寄電子郵件，讓寄件者的回復位址保持不變，因此回復會移至原始寄件者。</span><span class="sxs-lookup"><span data-stu-id="0595c-350">Most providers forward email leaving the Reply-to address of the sender intact, so that replies go to the original sender.</span></span>
-    
-8. <span data-ttu-id="0595c-351">測試郵件流程</span><span class="sxs-lookup"><span data-stu-id="0595c-351">Test mail flow</span></span>
-    
-    1. <span data-ttu-id="0595c-352">使用使用者 A 的認證登入 Outlook Web App。</span><span class="sxs-lookup"><span data-stu-id="0595c-352">Sign in to Outlook Web App using User A's credentials.</span></span>
-        
-    2. <span data-ttu-id="0595c-353">請執行下列測試：</span><span class="sxs-lookup"><span data-stu-id="0595c-353">Perform the following tests:</span></span>
-        
-    3. <span data-ttu-id="0595c-354">測試本機 Microsoft 電子郵件。</span><span class="sxs-lookup"><span data-stu-id="0595c-354">Test local Microsoft email.</span></span> <span data-ttu-id="0595c-355">例如，傳送電子郵件給使用者 B。這封電子郵件應該會立即傳遞。</span><span class="sxs-lookup"><span data-stu-id="0595c-355">For example, send an email to User B. This email should be delivered immediately.</span></span> <span data-ttu-id="0595c-356">在此情況下，郵件將不會路由傳送至原始伺服器上的使用者 B 信箱，因為 Office 365 會將信箱視為本機。</span><span class="sxs-lookup"><span data-stu-id="0595c-356">In this scenario, the message will not be routed to User B's mailbox on your original server because Office 365 sees the mailbox as being local.</span></span>
-        
-    4. <span data-ttu-id="0595c-357">測試電子郵件給其他電子郵件系統上的某人。</span><span class="sxs-lookup"><span data-stu-id="0595c-357">Test email to someone who's on the other email system.</span></span> <span data-ttu-id="0595c-358">例如，傳送電子郵件給使用者 C。這封電子郵件應該傳送至原始郵件伺服器上的使用者 C 信箱。</span><span class="sxs-lookup"><span data-stu-id="0595c-358">For example, send an email to User C. This email should be delivered to User C's mailbox on your original mail server.</span></span>
-        
-    5. <span data-ttu-id="0595c-359">從外部帳戶，或是從其他電子郵件系統上某員工的電子郵件帳戶，確認已在其他電子郵件系統上正確設定轉寄功能。</span><span class="sxs-lookup"><span data-stu-id="0595c-359">From an outside account, or from an employee's email account on the other email system, verify that forwarding is set up properly on the other email system.</span></span> <span data-ttu-id="0595c-360">例如，從使用者 C 的原始伺服器帳戶或 Hotmail 帳戶傳送使用者 A 電子郵件，並確認其送達使用者 A 的 Office 365 信箱。</span><span class="sxs-lookup"><span data-stu-id="0595c-360">For example, from User C's original server account or a Hotmail account, send User A an email and verify that it arrives in User A's Office 365 mailbox.</span></span>
-        
-9. <span data-ttu-id="0595c-361">移動信箱內容</span><span class="sxs-lookup"><span data-stu-id="0595c-361">Move mailbox contents</span></span>
-    
-    1. <span data-ttu-id="0595c-362">由於只有兩位使用者可以移動，而且由於使用者 A 和使用者 B 都使用 Outlook，因此可以開啟舊的電子郵件來移動電子郵件。PST 檔案，並複製郵件、行事曆專案、連絡人等，如從 Outlook 資料檔（.pst）匯入 Outlook 專案中所示。</span><span class="sxs-lookup"><span data-stu-id="0595c-362">Since there are only two users to move, and since User A and User B are both using Outlook already, the email can be moved by opening the old .PST file in the new Outlook profile and copying the messages, calendar items, contacts, etc. as shown in Import Outlook items from an Outlook Data File (.pst).</span></span> <span data-ttu-id="0595c-363">在 Office 365 信箱中的適當位置進行組織時，這些專案就可以從任何裝置從任何地方存取。</span><span class="sxs-lookup"><span data-stu-id="0595c-363">Once organized in the proper locations in the Office 365 mailbox, the items can all be accessed from any device, anywhere.</span></span>
-        
-    2. <span data-ttu-id="0595c-364">當涉及更多信箱，或如果員工尚未使用 Outlook，您可以使用 Exchange 系統管理中心提供的遷移工具。</span><span class="sxs-lookup"><span data-stu-id="0595c-364">When more mailboxes are involved, or if the employees are not already using Outlook, you can use the migration tools available in the Exchange admin center.</span></span> <span data-ttu-id="0595c-365">若要開始使用，請移至 Exchange 系統管理中心，並遵循將電子郵件從 IMAP 伺服器遷移至 Exchange Online 信箱的指示。</span><span class="sxs-lookup"><span data-stu-id="0595c-365">To get started, go to Exchange admin center and follow the directions in Migrate Email from an IMAP Server to Exchange Online Mailboxes.</span></span>
-    

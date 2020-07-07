@@ -21,12 +21,11 @@ search.appverid:
 - GEA150
 ms.assetid: 28343f3a-dcee-41b6-9b97-5b0f4999b7ef
 description: 開始針對 Office 365 中的電子郵件、網站和帳戶使用您自己的網域。 深入瞭解網域、變更您的網域、整合電子郵件與網站，以及取得工具和秘訣。
-ms.openlocfilehash: 1d3e7fb12f497d512693b8289f072106173356bb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-ms.translationtype: MT
+ms.openlocfilehash: 5586744707580bee18e179a35a5ffd042ebe7579
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399917"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049675"
 ---
 # <a name="get-help-with-office-365-domains"></a>取得 Office 365 網域的說明
 
@@ -153,12 +152,11 @@ ms.locfileid: "44399917"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>開始使用</h3>
+                        <h3>入門</h3>
                             <p><a href="../setup/add-domain.md">驗證您的網域 (證明您擁有該網域)</a></p>
                             <p><a href="information-for-dns-records.md">收集建立 DNS 記錄所需的資訊</a></p>
                             <p><a href="find-your-domain-registrar.md">尋找網域的註冊機構</a></p>
                             <p><a href="buy-a-domain-name.md">購買網域名稱</a></p>
-                            <p><a href="../setup/domains-faq.md#how-to-set-up-an-office-365-pilot">為公司內的部分人員設定自訂網域試驗</a></p>
                             <p><a href="domain-connect.md">將 GoDaddy 網域快速新增至 Office 365</a></p>
                             <p>取得<a href="create-dns-records-at-any-dns-hosting-provider.md">新增 Office 365 服務所需的 DNS 記錄</a>的逐步說明</p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization">如何準備無法路由傳送的網域 (例如 .local 網域) 以用於目錄同步處理</a></p>
@@ -208,8 +206,7 @@ ms.locfileid: "44399917"
                         <h3>進行變更</h3>
                             <p><a href="find-and-fix-issues.md">尋找並修正變更您的功能變數名稱或 DNS 記錄之後所發生的問題</a></p>
                             <p><a href="../dns/add-or-edit-custom-dns-records.md">在 Office 365 中新增或編輯自訂 DNS 記錄</a></p>
-                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-office-365">在 Office 365 中新增自訂的子網域或多個網域</a></p>
-                            <p><a href="../setup/domains-faq.md#how-do-i-change-how-my-dns-records-are-managed-in-office-365">變更 Office 365 管理網域 DNS 的方式</a></p>
+                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365">在 Microsoft 365 中新增自訂子域或多個網域</a></p>
                             <p><a href="remove-a-domain.md">移除網域</a></p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/office-365-integration">使用網域整合內部部署電子郵件 (例如，使用目錄服務)</a></p>
                             <p><a href="../contact-support-for-business-products.md">還有其他問題嗎？請連絡支援人員或開支援票證</a></p>
