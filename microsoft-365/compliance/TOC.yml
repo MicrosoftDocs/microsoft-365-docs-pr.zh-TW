@@ -161,6 +161,10 @@
       href: technical-reference-details-about-encryption.md
     - name: 適用於 Office 365 的 TLS 1.0 和 1.1 淘汰
       href: tls-1.0-and-1.1-deprecation-for-office-365.md
+    - name: Office 365 GCC High 和 DoD 中的 TLS 1.0 和 1.1 淘汰
+      href: tls-1-2-in-office-365-gcc.md
+    - name: Office 365 中的 TLS 1.2
+      href: prepare-tls-1.2-in-office-365.md
     - name: 客戶金鑰
       items:
         - name: Office 365 中的客戶金鑰服務加密
@@ -488,15 +492,19 @@
           href: overview-ediscovery-20.md
         - name: 開始使用進階電子文件探索
           href: get-started-with-advanced-ediscovery.md
-        - name: 與監管人合作
+        - name: 與監管人和非監管資料來源合作
           href: managing-custodians.md
           items:
             - name: 將監管人新增至案例
               href: add-custodians-to-case.md
+            - name: 將監管人大量新增至案例
+              href: bulk-add-custodians.md
             - name: 管理監管人
               href: manage-new-custodians.md
             - name: 檢視監管人活動
               href: view-custodian-activity.md
+            - name: 將非監管資料來源新增至案例
+              href: non-custodial-data-sources.md
         - name: 使用通訊
           href: managing-custodian-communications.md
           items:
@@ -809,26 +817,26 @@
   items:
     - name: Microsoft 服務信任入口網站
       href: get-started-with-service-trust-portal.md
-    - name: 合規性分數和合規性管理員
+    - name: 合規性分數和合規性管理員 (預覽)
       items:
         - name: 合規性分數 (預覽)
           href: compliance-score.md
-        - name: 設定合規性分數 (預覽)
+        - name: 設定合規性分數
           href: compliance-score-setup.md
-        - name: 使用合規性分數 (預覽)
-          href: working-with-compliance-score.md
-        - name: 合規性分數計算 (預覽)
+        - name: 使用評估自訂合規性分數
+          href: compliance-score-assessments.md
+        - name: 使用改善動作指派和執行工作
+          href: compliance-score-improvement-actions.md
+        - name: 如何計算成績
           href: compliance-score-methodology.md
-        - name: 合規性分數版本資訊 (預覽)
-          href: compliance-score-release-notes.md
-        - name: 合規性分數常見問題 (預覽)
+        - name: 常見問題集 (FAQ)
           href: compliance-score-faq.md
         - name: 合規性管理員 (預覽)
           href: compliance-manager-overview.md
           items:
             - name: 合規性管理員的新增功能 (預覽)
               href: compliance-manager-release-notes.md
-            - name: 使用合規性管理員 (預覽)
+            - name: 使用合規性管理員 (預覽版)
               href: working-with-compliance-manager.md
             - name: 合規性管理員 (傳統)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
