@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 深入瞭解 Microsoft 365 for business，如何加以設定，以及如何準備使用者的裝置和電腦，以確保 Microsoft 365 for business 所保護。
-ms.openlocfilehash: 08a956cc7e68bbba74d29bafaab77065be1321ce
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: aedcf78f10707dbe6a1d1527effea7d56283dce0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022110"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080036"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>開始使用 Microsoft 365 for business
 
@@ -80,9 +80,9 @@ Microsoft 365 for business 是一組完整的商務生產力和共同作業工�
     
     如果您**永久從本機 Active Directory 移至雲端**，您可以移至 Microsoft 365 系統管理中心，並使用設定向導手動新增您的使用者，也可以使用 Azure AD Connect 進行一次同步處理。 方法有兩種： 
     
-    - 如果您也有 Exchange 2010、Exchange 2013 或 Exchange 2016 伺服器，您可以[使用最小混合式，快速將 Exchange 信箱遷移至 Office 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。 最基本的混合步驟包括將使用者同步處理至 Azure AD，以及從內部部署至雲端的電子郵件遷移。 電子郵件遷移完成之後，當您使用此方法時，目錄同步處理會自動關閉。
+    - 如果您也有 Exchange 2010、Exchange 2013 或 Exchange 2016 伺服器，您可以[使用最低混合式將 Exchange 信箱快速遷移至 Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/use-minimal-hybrid-to-quickly-migrate)。 最基本的混合步驟包括將使用者同步處理至 Azure AD，以及從內部部署至雲端的電子郵件遷移。 電子郵件遷移完成之後，當您使用此方法時，目錄同步處理會自動關閉。
     
-    - 使用目錄同步處理嚮導，將您的使用者同步處理至雲端。 依照[設定 Microsoft 365 的目錄同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)處理中的步驟完成此程式。 將使用者同步處理至雲端後，您必須[關閉 Office 365 的目錄同步](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization)作業。
+    - 使用目錄同步處理嚮導，將您的使用者同步處理至雲端。 依照[設定 Microsoft 365 的目錄同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)處理中的步驟完成此程式。 將使用者同步到雲端之後，您必須[關閉 Microsoft 365 的目錄同步](https://docs.microsoft.com/office365/enterprise/turn-off-directory-synchronization)作業。
     
     您也必須將以這種方式新增的每個使用者，授與 Microsoft 365 for business 的授權。 您可以在[安裝精靈](set-up.md)中執行這項作業，也可以[將授權指派給使用者](../admin/manage/assign-licenses-to-users.md)。
     
@@ -107,7 +107,7 @@ Microsoft 365 for business 是一組完整的商務生產力和共同作業工�
     
 - 做為 Microsoft 365 for business admin，您可以存取我們的客戶支援小組： **[請洽詢商務產品的支援人員-系統管理](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)說明**
     
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [商務用 Microsoft 365 檔和資源](https://go.microsoft.com/fwlink/p/?linkid=853701)
   

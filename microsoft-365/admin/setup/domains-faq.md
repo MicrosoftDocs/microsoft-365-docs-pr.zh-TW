@@ -24,11 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 找到您常見問題的答案以深入瞭解網域。
-ms.openlocfilehash: 093125d1652355fbd9b624e1f15b5858fd586301
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049733"
+ms.locfileid: "45068100"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
@@ -45,15 +46,15 @@ ms.locfileid: "45049733"
 
 本文內容
 
-[什麼是 MX 優先順序？](#what-is-mx-priority) 
-[如何驗證我的網域的 SPF 記錄？](#how-can-i-validate-spf-records-for-my-domain) 
-[何謂功能變數名稱？](#what-is-a-domain-name) 
-[如果我的 DNS 提供者不支援某些記錄類型，會發生什麼事？](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types) 
-[如何在 Microsoft 365 中設定或變更預設網域？](#how-do-i-set-or-change-the-default-domain-in-microsoft-365) 
-[我可以將自訂子域或多個網域新增至 Microsoft 365 嗎？](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365) 
-[為什麼我有「onmicrosoft.com」網域？](#why-do-i-have-an-onmicrosoftcom-domain) 
-[為什麼我有「onmicrosoft.de」網域？](#why-do-i-have-an-onmicrosoftde-domain) 
-[如何驗證我的非盈利性或教育狀態？](#how-do-i-verify-my-nonprofit-or-education-status)
+- [什麼是 MX 優先順序？](#what-is-mx-priority)
+- [如何驗證我的網域的 SPF 記錄？](#how-can-i-validate-spf-records-for-my-domain)
+- [何謂功能變數名稱？](#what-is-a-domain-name)
+- [如果我的 DNS 提供者不支援某些記錄類型，會發生什麼事？](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
+- [如何在 Microsoft 365 中設定或變更預設網域？](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
+- [我可以將自訂子域或多個網域新增至 Microsoft 365 嗎？](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [為什麼我有「onmicrosoft.com」網域？](#why-do-i-have-an-onmicrosoftcom-domain)
+- [為什麼我有「onmicrosoft.de」網域？](#why-do-i-have-an-onmicrosoftde-domain)
+- [如何驗證我的非盈利性或教育狀態？](#how-do-i-verify-my-nonprofit-or-education-status)
     
 ## <a name="what-is-mx-priority"></a>什麼是 MX 優先順序？
 

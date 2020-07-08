@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: 深入瞭解由世紀運作的 Office 365，其設計目的是為了符合中國安全、可靠及可伸縮的雲端服務的需求。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7c8459c8c3da67ac4cc80ac2912e368f23cd8e10
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 133df44635927d185e72c7981953e07162d458a9
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779914"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079734"
 ---
 # <a name="office-365-operated-by-21vianet"></a>由 21Vianet 運作的 Office 365
 
@@ -57,7 +57,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 |:-----|:-----|
 |自訂網域  <br/> |管理員可以建立及（或）使用透過中文特定網域提供者註冊的自訂網域。 如果您沒有自訂網域，您可以從網域註冊機構[購買功能變數名稱](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/buy-a-domain-name)。 如果您已經有一個，請[找到您的網域註冊機構或 DNS 主機服務提供者](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/find-your-domain-registrar)。  <br/> 此外，如果您使用 Office 365 SharePoint 線上服務建立公用網站，則中國網際網路相容性原則要求您取得網際網路內容提供者（ICP）號碼。  **附注：** 無法使用自訂功能變數名稱中不允許的字詞的自動驗證。           |
 |訂閱、帳單和技術支援  <br/> |由世紀所提供。 如需如何聯繫支援人員的詳細資訊，請參閱[聯繫我們 Office 365 for business support](../contact-support-for-business-products.md)。  <br/> |
-|自助式密碼重設  <br/> |僅適用于系統管理員。 如需詳細資訊，請參閱[在由世紀運作的 Microsoft 365 中變更或重設密碼](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
+|自助式密碼重設  <br/> |僅適用于系統管理員。 如需詳細資訊，請參閱[在由世紀運作的 Office 365 變更或重設密碼](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b)。  <br/> |
 |支援層級的安全性、隱私權、合規性及詳細資料  <br/> |由世紀所提供。  <br/> |
 |Office 桌面設定  <br/> |Office 桌面安裝程式不適用於 Office 2010 和 Office 2007。 不過，系統管理員可以[將目前的 office 桌面應用程式設定為搭配 Office 365](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e)使用。  <br/> |
 |行動裝置和裝置支援\*  <br/> | 即將推出下列行動裝置功能：  <br/>  行動裝置管理（MDM）  <br/>  Blackberry Business 雲端服務（BBCS）無法使用，但是您可以使用 Exchange ActiveSync 裝置或從調研（向內 BlackBerry 無線電子郵件解決方案）來執行 Blackberry Enterprise Server （BE）的服務。  <br/>  如需行動支援的詳細資訊，請參閱[Set up and manage mobile access for a 使用者](https://support.microsoft.com/office/01fff219-4492-40f2-82d3-fd2ffc0ad802)。  <br/> |
@@ -197,7 +197,7 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
 |對 Bing 服務的資訊檢索窗格整合  <br/> |無法使用。  <br/> |
 |協助工具檢查程式  <br/> |無法使用。  <br/> |
 |課程筆記本  <br/> |無法使用。  <br/> |
-|表單  <br/> |無法使用。  <br/> |
+|Forms  <br/> |無法使用。  <br/> |
 |沉浸式讀取器  <br/> |無法使用。  <br/> |
 |插入線上圖片  <br/> |無法使用。  <br/> |
 |會議詳細資料  <br/> |無法使用。  <br/> |

@@ -8,12 +8,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: e49c2271bd7005c674447cd59d5ccf7439cf4710
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: ca6bc91ebf300afe47326985cc923d929b2cd412
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44418875"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080078"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 管理的桌面封存裝置
 
@@ -35,12 +35,14 @@ ms.locfileid: "44418875"
 
 | Model  | 最低規格  | 其他需求   | 退休日期 |
 |---------|---------|---------|---------|
+| Dell Precision 3530| 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | **5月22日2023** |
 | Dell Latitude 5490| 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | **2023年1月9日** |
 | Dell Latitude 7390 7390 2-1/7490 | 256 GB/Intel i5/8 GB RAM   | 需要 IR 相機 | **2023年1月9日** |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 需要5VS01AV、紅外線相機或指紋感應器的 SKU  | **2023年2月15日** |
 |HP 精英 x2 1013 G3| 256 GB/Intel i5/8 GB RAM | SKU 與5VS03AV，需要 IR 相機 |**2023年5月14日** |
 |HP EliteBook x360 1030 G3| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 |**2023年5月14日** |
 |HP EliteBook x360 1040 G5| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 | **2023年10月23日** |
+|HP ProBook x360 440 G1| 128 GB/Intel i3/8 GB RAM | 需要5VS04AV、紅外線相機或指紋辨識器的 SKU | **2023年6月6日** |
 |Surface Book 2| 256 GB/Intel i5/8 GB RAM | 無 | **2022年11月16日** |
 |移至表面| 128 GB/Intel 4415Y/8GB RAM | 無 | **2023年8月2日** |
 |Surface 膝上型電腦| 256 GB/Intel i5/8 GB RAM | 無 | **2022年5月20日** |

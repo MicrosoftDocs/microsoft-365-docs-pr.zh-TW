@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 團隊建立小組的共同作業空間。
-ms.openlocfilehash: a89d7a87a18431dfef72c6f7ca4d6c7fbce21f7c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: c5c484b2787bf3e819a723a3b5648106dcf75602
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635645"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079782"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>在 Microsoft 小組中建立共同作業的團隊
 
@@ -85,5 +85,5 @@ Microsoft 團隊是一種共同作業應用程式，可協助您的員工從任�
 
 ## <a name="admin-settings"></a>系統管理設定
 
-您必須是系統管理員，才可建立整個組織的團隊。 如需詳細資訊，請參閱[什麼是 Office 365 的系統管理員？](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
+您必須是系統管理員，才可建立整個組織的團隊。 如需詳細資訊，請參閱[什麼是 Microsoft 365 中的管理員？](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
   

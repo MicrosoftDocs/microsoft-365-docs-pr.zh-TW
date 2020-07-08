@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 瞭解如何使用 Outlook 傳送加密的電子郵件。
-ms.openlocfilehash: 5318fbe045c909e3b7f81d195a8e6b4d5eb96dc1
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: b9d5d32b61c49dcffaab83fb13e46d32f2166552
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322144"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080024"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>加密或標記敏感的電子郵件
 
@@ -52,7 +52,7 @@ ms.locfileid: "44322144"
 
 ## <a name="admin-settings"></a>系統管理設定
 
-您可以[在 Office 365 中瞭解如何在電子郵件加密中](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)設定電子郵件加密。
+您可以[在 Microsoft 365 中瞭解如何在電子郵件加密中](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)設定電子郵件加密。
 
 ### <a name="automatically-encrypt-email-messages"></a>自動加密電子郵件
 
@@ -60,11 +60,11 @@ ms.locfileid: "44322144"
 
 您可以建立郵件流程規則，以使用新的 Office 365 郵件加密（OME）功能來加密電子郵件。 使用 Exchange 系統管理中心（EAC）定義郵件流程規則，以使用新的 OME 功能來觸發郵件加密。 
 
-1. 在網頁瀏覽器中，使用已被授與全域系統管理員許可權的公司或學校帳戶登入 Office 365。 
+1. 在網頁瀏覽器中，使用已被授與全域管理員許可權的工作或學校帳戶登入。 
 2. 選擇 [管理] 磚。 
 3. 在系統管理中心中，選擇 [系統**管理中心] > Exchange**。 
 
-如需詳細資訊，請參閱[定義郵件流程規則，以加密 Office 365 中的電子郵件訊息](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)。
+如需詳細資訊，請參閱[定義郵件流程規則以加密電子郵件訊息](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)。
 
 ### <a name="brand-your-encryption-messages"></a>標記加密郵件
 

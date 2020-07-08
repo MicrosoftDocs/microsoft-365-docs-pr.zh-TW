@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '瞭解您可以如何有一個以上的電子郵件地址，稱為「電子郵件別名」，與您的 Microsoft 365 for business 帳戶相關聯。 '
-ms.openlocfilehash: c0e71ef150ccf592ea4f808a5e6609e1675767a4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 030d8022a8503f6b383d03b0dd97720f66d8f2f6
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780286"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080012"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>為使用者新增其他電子郵件別名
 
@@ -73,12 +73,12 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
   
      
 5. 完成後，請選擇 [**儲存變更**]。
     
-6. 請等候 24 小時，讓新別名填入整個 Office 365。
+6. 請等候24小時，讓新的別名填入整個 Microsoft 365。
     
     使用者現在會有主要位址和別名。 例如，所有傳送至送達 eliza Hoffman 主要位址的郵件，Eliza@NodPublishers.com，而她的別名 Sales@NodPublishers.com 會移至送達 eliza 的收件匣。
     
@@ -99,17 +99,17 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > [!Important] 
     > 如果您收到錯誤訊息「**找不到符合參數名稱的參數 ' EmailAddresses**，這表示要花很長的時間來完成設定您的租使用者或您的自訂網域（如果您最近新增一個）。 設定程序最多可能需要 4 個小時才能完成。 請稍候，讓設定程序完成，然後再試一次。 如果問題仍然存在，請連絡支援人員，他們會為您執行完整的同步處理。
 
-4. 在 [**別名**] 底下的文字方塊中，輸入新電子郵件別名的第一個部分。 如果您已將自己的網域新增至 Office 365，您可以使用下拉式清單選擇新電子郵件別名的網域。 然後選取 **[新增]**。
+4. 在 [**別名**] 底下的文字方塊中，輸入新電子郵件別名的第一個部分。 如果您已將自己的網域新增至 Microsoft 365，您可以使用下拉式清單選擇新電子郵件別名的網域。 然後選取 **[新增]**。
 
     > [!IMPORTANT]
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
 
 5. 當您完成時，請選取 [**儲存**]。
 
-6. 請等候 24 小時，讓新別名填入整個 Office 365。 
+6. 請等候24小時，讓新的別名填入整個 Microsoft 365。 
     
     使用者現在會有主要位址和別名。 例如，所有傳送至送達 eliza Hoffman 主要位址的郵件，Eliza@NodPublishers.com，而她的別名 Sales@NodPublishers.com 會移至送達 eliza 的收件匣。
     
@@ -130,17 +130,17 @@ Microsoft 365 中的主要電子郵件地址通常是使用者在建立帳戶時
     > [!Important] 
     > 如果您收到錯誤訊息「**找不到符合參數名稱的參數 ' EmailAddresses**，這表示要花很長的時間來完成設定您的租使用者或您的自訂網域（如果您最近新增一個）。 設定程序最多可能需要 4 個小時才能完成。 請稍候，讓設定程序完成，然後再試一次。 如果問題仍然存在，請連絡支援人員，他們會為您執行完整的同步處理。
 
-4. 在 [**別名**] 底下的文字方塊中，輸入新電子郵件別名的第一個部分。 如果您已將自己的網域新增至 Office 365，您可以使用下拉式清單選擇新電子郵件別名的網域。 然後選取 **[新增]**。
+4. 在 [**別名**] 底下的文字方塊中，輸入新電子郵件別名的第一個部分。 如果您已將自己的網域新增至 Microsoft 365，您可以使用下拉式清單選擇新電子郵件別名的網域。 然後選取 **[新增]**。
 
     > [!IMPORTANT]
     > 如果您是從 GoDaddy 或其他協力廠商購買訂閱，您必須移至 GoDaddy/協力廠商管理主控台，才能將新別名設為主要電子郵件地址。 
   
     > [!TIP]
-    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
+    > 電子郵件別名必須以來自下拉式清單的網域做為結尾。 若要將另一個功能變數名稱新增至清單，請參閱[add a domain To Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)。 
 
 5. 當您完成時，請選取 [**儲存**]。
 
-6. 請等候 24 小時，讓新別名填入整個 Office 365。 
+6. 請等候24小時，讓新的別名填入整個 Microsoft 365。 
     
     使用者現在會有主要位址和別名。 例如，所有傳送至送達 eliza Hoffman 主要位址的郵件，Eliza@NodPublishers.com，而她的別名 Sales@NodPublishers.com 會移至送達 eliza 的收件匣。
     

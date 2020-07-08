@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 探索 Microsoft 365 商務版 Premium 的設定步驟，包括新增網域和使用者、設定安全性原則等等。
-ms.openlocfilehash: 89186fbd00e47385f0320c45f7fc44c258742aa3
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: efa7934ece0dfeac3c4b20daa37da6f1160901e7
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785697"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079806"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安裝精靈中設定 Microsoft 365 商務版 Premium
 
@@ -49,37 +49,37 @@ ms.locfileid: "44785697"
 
 當您購買 Microsoft 365 商務版特優功能時，您可以選擇使用您擁有的網域，或在[註冊](sign-up.md)期間購買一個網域。
 
-- 如果您在註冊時購買了新的網域，您的網域就是全部設定，您可以移至 [新增[使用者] 和 [指派授權](#add-users-and-assign-licenses)]。
+- 如果您在註冊時購買新的網域，則您的網域全都都已設定完畢，您可以移至 [新增使用者並指派授權](#add-users-and-assign-licenses)。
 
-### <a name="add-your-domain-to-personalize-sign-in"></a>將您的網域新增至個人化登入
+### <a name="add-your-domain-to-personalize-sign-in"></a>新增您的網域以個人化登入
 
-1. 使用您的全域系統管理員認證登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。 
+1. 使用您的全域系統管理員認證登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com)。 
 
-2. 選擇 [**移至設定**] 以啟動嚮導。
+2. 請選擇 **[移至設定]** 來啟動精靈。
 
     ![選取 [移至設定]。](../media/gotosetupinadmincenter.png)
 
-3. 在 [**安裝您的 Office 應用程式**] 頁面上，您可以選擇性地在您自己的電腦上安裝應用程式。
+3. 在 **[安裝您的 Office 應用程式]** 頁面上，您可以選擇將應用程式安裝到自己的電腦上。
     
-4. 在 [**新增網域**] 步驟中，輸入您要使用的功能變數名稱（例如 contoso.com）。
+4. 在 **[新增網域]** 步驟中，輸入您要使用的網域名城（例如 contoso.com）。
 
     > [!IMPORTANT]
-    > 如果您是在註冊時購買網域，您將不會在這裡看到 [**新增網域**] 步驟。 請改改為 [[新增使用者](#add-users-and-assign-licenses)]。
+    > 如果您在註冊時購買了網域，就不會在此看到 **[新增網域]** 步驟。 改移至 [[新增使用者]](#add-users-and-assign-licenses)。
 
     ![個人化登入頁面的螢幕擷取畫面。](../media/adddomain.png)
 
     
-4. 依照嚮導中的步驟，在任何可驗證您擁有網域之[Office 365 的 dns 主機服務提供者處建立 dns 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。 如果您知道網域主機，請參閱[主機特定指示](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)。
+4. 依照嚮導中的步驟，在任何可驗證您擁有網域之[Microsoft 365 的 dns 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。 如果您知道您的網域主機，請參閱 [[主機特定指示]](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions)。
 
-    如果您的主機服務提供者是 GoDaddy 或另一個以[網域](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)連線方式啟用的主機，程式就很容易，而且您將會自動要求您登入，並讓 Microsoft 代表您進行驗證。
+    如果您的主機服務供應商是 GoDaddy 或透過 [[網域連結]](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect) 所啟用的另一個主機，這個過程便會很簡單，您自動便會被要求登入，並讓 Microsoft 替您進行驗證。
 
-    ![在 GoDaddy 確認存取] 頁面上，選取 [授權]。](../media/godaddyauth.png)
+    ![在 GoDaddy 確認存取頁面上，選取 [授權]。](../media/godaddyauth.png)
 
 ### <a name="add-users-and-assign-licenses"></a>新增使用者並指派授權
 
-您可以在嚮導中新增使用者，但您也可以稍後在系統管理中心[新增使用者](add-users-m365b.md)。 此外，如果您有本機的網域控制站，您可以使用[AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)新增使用者。
+您可以在精靈中新增使用者，或稍後在系統管理中心[[新增使用者]](add-users-m365b.md)。 此外，如果您有本機網域控制站，您可以使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)新增使用者。
 
-#### <a name="add-users-in-the-wizard"></a>在嚮導中新增使用者
+#### <a name="add-users-in-the-wizard"></a>在精靈中新增使用者
 
 您在嚮導中新增的任何使用者會自動指派 Microsoft 365 商務版優質授權。
 
@@ -87,23 +87,23 @@ ms.locfileid: "44785697"
 
 1. 如果您的 Microsoft 365 商務版訂閱有現有的使用者（例如，如果您使用 Azure AD Connect），您可以選擇立即將授權指派給他們。 請繼續進行，為他們新增授權。
 
-2. 在您新增使用者之後，您也會看到一個選項，用來與您新增的新使用者共用認證。 您可以選擇列印認證、透過電子郵件傳送認證，或是下載認證。
+2. 新增使用者之後，您也會看到與您新增之使用者共用認證的選項。 您可以選擇列印認證、透過電子郵件傳送認證，或是下載認證。
 
 ### <a name="connect-your-domain"></a>連接您的網域
 
 > [!NOTE]
-> 如果您選擇使用 name.onmicrosoft.com17 網域，或使用 Azure AD Connect 來設定使用者，您就不會看到此步驟。
+> 如果您選擇使用 onmicrosoft 網域，或使用 Azure AD Connect 來設定使用者，您將不會看到此步驟。
   
 若要設定服務，您必須更新 DNS 主機或網域註冊機構中的某些記錄。
   
-1. 設定精靈通常會偵測您的註冊機構，並提供您一個逐步指示連結，讓您更新在註冊機構網站上的 NS 記錄。 如果不是，請[變更名稱伺服器以設定 Office 365 與任何網域註冊](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar)機構。 
+1. 設定精靈通常會偵測您的註冊機構，並提供您一個逐步指示連結，讓您更新在註冊機構網站上的 NS 記錄。 如果不是，請[將名稱伺服器變更為設定 Microsoft 365 與任何網域註冊機構](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar)。 
 
-    - 如果您有現有的 DNS 記錄（例如現有的網站），但您的 DNS 主機已啟用[網域](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)連線，請選擇 [**新增我的記錄**]。 在 [**選擇您的線上服務**] 頁面上，接受所有預設值，然後選擇 [**下一步]**，然後在您的 DNS 主機頁面上選擇 [**授權**]。
-    - 如果您有現有的 DNS 記錄與其他 DNS 主機（未啟用網域連線），您會想要管理自己的 DNS 記錄，以確保現有的服務保持連線。 如需詳細資訊，請參閱[網域基礎知識](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics)。
+    - 如果您有現有的 DNS 記錄，例如現有網站，但您的 DNS 主機已啟用 [網域連線](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect)，請選擇 **[為我新增記錄]**。 在 **[選擇您的線上服務]** 頁面，接受所有預設值，並選擇 **[下一步]**，然後在您的 DNS 主機頁面上選擇 **[授權]**。
+    - 如果您的現有 DNS 記錄中有其他 DNS 主機(該主機無法用於網域連線)，您最好能自己管理自己的 DNS 記錄，以確保現有服務保持連線。 如需詳細資訊，請參閱 [網域基本資訊](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics)。
 
         ![開機記錄頁面。](../media/activaterecords.png)
 
-2. 依照嚮導中的步驟進行，然後會為您設定電子郵件和其他服務。
+2. 按照精靈中的步驟進行，系統會為您設定電子郵件及其他服務。
 
 ### <a name="protect-your-organization"></a>保護您的組織 
 

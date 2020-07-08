@@ -23,23 +23,23 @@ search.appverid:
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: 瞭解如何管理您自己的 DNS 記錄，或讓 Microsoft 為您管理您的 DNS 記錄。
-ms.openlocfilehash: 1b82fd40556b1bf828f9f367aa1175f21723cc8c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ac026ce0dba4eefff2c837da71c18b08aca12ea6
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399881"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079770"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>設定您的網域 (主機專用指示)
 
-若要開始使用 Office 365 的自訂網域（contoso.com），您必須驗證您的網域，並設定網域的 DNS 記錄。 
+若要開始使用 Microsoft 365 的自訂網域（contoso.com），您必須驗證您的網域，並設定網域的 DNS 記錄。 
   
 您可以使用網域主機上的系統管理工具來新增及管理 DNS 記錄，或對您的網域記錄提供 Microsoft 控制，我們會為您設定這些記錄。
   
 請選取下列您的網域主機，以取得確切的步驟。 如果您不確定您的主機是誰，請參閱[尋找您的網域註冊機構](find-your-domain-registrar.md)。
   
 
-## <a name="let-office-365-manage-your-dns-records"></a>讓 Office 365 管理您的 DNS 記錄
+## <a name="let-microsoft-365-manage-your-dns-records"></a>讓 Microsoft 365 管理您的 DNS 記錄
 
 ||
 |---|---|
@@ -52,7 +52,7 @@ ms.locfileid: "44399881"
 |[Namecheap](../dns/change-nameservers-at-namecheap.md)|
 |[Network Solutions](../dns/change-nameservers-at-network-solutions.md) |  
 
-或者，瞭解如何[使用任何網域註冊機構變更名稱伺服器以設定 Office 365](change-nameservers-at-any-domain-registrar.md)。
+或者，瞭解如何[使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365](change-nameservers-at-any-domain-registrar.md)。
 
 ## <a name="manage-your-own-dns-records"></a>管理您自己的 DNS 記錄
 
@@ -68,7 +68,7 @@ ms.locfileid: "44399881"
 |[DNSMadeEasy](../dns/create-dns-records-at-dnsmadeeasy.md) | [網路解決方案](../dns/create-dns-records-at-network-solutions.md) |
 |[Dreamhost](../dns/create-dns-records-at-dreamhost.md)  | [Ovh](../dns/create-dns-records-at-ovh.md) |
 |  [Dyn.com](../dns/create-dns-records-at-dyn-com.md) | [Register.com](../dns/create-dns-records-at-register-com.md) |
-| [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [適用于 Office 365 的 Register365](../dns/create-dns-records-at-register365.md)  |
+| [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [Microsoft 365 的 Register365](../dns/create-dns-records-at-register365.md)  |
 | [Freenom](../dns/create-dns-records-at-freenom.md) | [web.com](../dns/create-dns-records-at-web-com.md)|
 |[GoDaddy](../dns/create-dns-records-at-godaddy.md)|[Windows 型 DNS](../dns/create-dns-records-using-windows-based-dns.md)   |
 | [Google 網域](../dns/create-dns-records-at-google-domains.md) |[Wix](../dns/create-dns-records-at-wix.md) |

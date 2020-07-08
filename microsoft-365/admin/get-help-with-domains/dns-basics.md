@@ -22,11 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解網域及其相關聯的 DNS 記錄，協助您管理網域。
-ms.openlocfilehash: 2fc581968a4cec3c6e9b5c51f717a8cfa78cd6a3
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: a69f6a34585f7ff033a30e10254f29b89d978d3e
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049651"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079988"
 ---
 # <a name="dns-basics"></a>DNS 基本知識
 
@@ -144,7 +145,7 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
-## <a name="why-add-a-domain-in-office-365"></a>為什麼要在 Office 365 中新增網域？
+## <a name="why-add-a-domain-in-microsoft-365"></a>為什麼要在 Microsoft 365 中新增網域？
 
 
 將自訂網域 (例如 fourthcoffee.com) 新增至 Microsoft 365 可讓您使用更簡短、更熟悉的電子郵件地址和該服務的 userID。 註冊 Microsoft 365 帳戶時，將會[提供一個網域供您使用](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)，但包括「onmicrosoft.com」。 如果計劃將 Microsoft 365 用於電子郵件，許多人偏好新增組織或商務網域。 

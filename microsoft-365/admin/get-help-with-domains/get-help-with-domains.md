@@ -1,5 +1,5 @@
 ---
-title: 取得 Office 365 網域的說明
+title: 取得 Microsoft 365 網域的說明
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,16 +20,17 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 28343f3a-dcee-41b6-9b97-5b0f4999b7ef
-description: 開始針對 Office 365 中的電子郵件、網站和帳戶使用您自己的網域。 深入瞭解網域、變更您的網域、整合電子郵件與網站，以及取得工具和秘訣。
-ms.openlocfilehash: 5586744707580bee18e179a35a5ffd042ebe7579
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+description: 開始使用您自己的網域，以供 Microsoft 365 中的電子郵件、網站和帳戶使用。 深入瞭解網域、變更您的網域、整合電子郵件與網站，以及取得工具和秘訣。
+ms.openlocfilehash: e29afe52d0efa8fbec831ff1ea3459322b2d3a22
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049675"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079746"
 ---
-# <a name="get-help-with-office-365-domains"></a>取得 Office 365 網域的說明
+# <a name="get-help-with-microsoft-365-domains"></a>取得 Microsoft 365 網域的說明
 
-使用這些資源，開始在 Office 365 中使用您自己網域的電子郵件、網站和帳戶。 
+使用這些資源開始使用您自己的網域，以供 Microsoft 365 中的電子郵件、網站和帳戶使用。 
  
 <ul class="panelContent cardsFTitle">
     <li>
@@ -43,7 +44,7 @@ ms.locfileid: "45049675"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>將您的使用者與網域新增至 Office 365</h3>
+                        <h3>將您的使用者與網域新增至 Microsoft 365</h3>
                     </div>
                 </div>
             </div>
@@ -79,7 +80,7 @@ ms.locfileid: "45049675"
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>將 GoDaddy 網域快速新增至 Office 365</h3>
+                        <h3>將 GoDaddy 網域快速新增至 Microsoft 365</h3>
                     </div>
                 </div>
             </div>
@@ -140,8 +141,8 @@ ms.locfileid: "45049675"
                             <p><a href="dns-basics.md">網域和 DNS 簡介</a></p>
                             <p><a href="../setup/domains-faq.md?#why-do-i-have-an-onmicrosoftcom-domain">了解您的初始 onmicrosoft 網域</a></p>
                             <p><a href="../setup/add-domain.md">如何新增網域或變更會影響目前電子郵件的 DNS 記錄</a></p>
-                            <p><a href="../setup/domains-faq.md">DNS 管理在 Office 365 中的運作方式</a></p>
-                            <p><a href="https://go.microsoft.com/fwlink/p/?LinkId=402693">閱讀網域的 Office 365 服務說明</a></p>
+                            <p><a href="../setup/domains-faq.md">Microsoft 365 中的 DNS 管理的運作方式</a></p>
+                            <p><a href="https://go.microsoft.com/fwlink/p/?LinkId=402693">閱讀網域的 Microsoft 365 服務說明</a></p>
                     </div>
                 </div>
             </div>
@@ -157,8 +158,8 @@ ms.locfileid: "45049675"
                             <p><a href="information-for-dns-records.md">收集建立 DNS 記錄所需的資訊</a></p>
                             <p><a href="find-your-domain-registrar.md">尋找網域的註冊機構</a></p>
                             <p><a href="buy-a-domain-name.md">購買網域名稱</a></p>
-                            <p><a href="domain-connect.md">將 GoDaddy 網域快速新增至 Office 365</a></p>
-                            <p>取得<a href="create-dns-records-at-any-dns-hosting-provider.md">新增 Office 365 服務所需的 DNS 記錄</a>的逐步說明</p>
+                            <p><a href="domain-connect.md">將 GoDaddy 網域快速新增至 Microsoft 365</a></p>
+                            <p>取得<a href="create-dns-records-at-any-dns-hosting-provider.md">新增 Microsoft 365 服務所需的 DNS 記錄</a>的逐步說明</p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization">如何準備無法路由傳送的網域 (例如 .local 網域) 以用於目錄同步處理</a></p>
                             <p><a href="../setup/domains-faq.md">網域常見問題集</a></p>
                     </div>
@@ -171,12 +172,12 @@ ms.locfileid: "45049675"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>建立 Office 365 的 DNS 記錄</h3>
+                        <h3>建立 Microsoft 365 的 DNS 記錄</h3>
                             <p><a href="../dns/create-dns-records-at-godaddy.md">在 GoDaddy 建立 DNS 記錄</a></p>
                             <p><a href="../dns/create-dns-records-at-1-1-internet.md">在 1&1 IONOS 建立 DNS 記錄</a></p>
                             <p><a href="../dns/create-dns-records-at-network-solutions.md">在網路方案中建立 DNS 記錄</a></p>
                             <p><b>更多常見提供者的說明：</b></p> 
-                            <P><a href="create-dns-records-at-any-dns-hosting-provider.md">當您管理 DNS 記錄時，建立 Office 365 的 DNS 記錄</a></p>
+                            <P><a href="create-dns-records-at-any-dns-hosting-provider.md">當您管理 DNS 記錄時，建立 Microsoft 365 的 DNS 記錄</a></p>
                     </div>
                 </div>
             </div>
@@ -187,12 +188,12 @@ ms.locfileid: "45049675"
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>將名稱伺服器變更為 Office 365</h3>
-                            <p><a href="../dns/change-nameservers-at-1-1-internet.md">使用 1&1 IONOS 變更名稱伺服器以設定 Office 365</a></p>
-                            <p><a href="../dns/change-nameservers-at-network-solutions.md">變更名稱伺服器以設定 Office 365 使用 Network Solutions</a></p>
-                            <p><a href="domain-connect.md">將 GoDaddy 網域快速新增至 Office 365</a></p>
+                        <h3>將名稱伺服器變更為 Microsoft 365</h3>
+                            <p><a href="../dns/change-nameservers-at-1-1-internet.md">變更名稱伺服器以設定具有 1&1 IONOS 的 Microsoft 365</a></p>
+                            <p><a href="../dns/change-nameservers-at-network-solutions.md">使用網路解決方案變更名稱伺服器以設定 Microsoft 365</a></p>
+                            <p><a href="domain-connect.md">將 GoDaddy 網域快速新增至 Microsoft 365</a></p>
                             <p><b>更多常見網域註冊機構的協助：</b></P> 
-                            <p><a href="../get-help-with-domains/set-up-your-domain-host-specific-instructions.md">將名稱伺服器變更為 Office 365，以便為您設定記錄</a></p>
+                            <p><a href="../get-help-with-domains/set-up-your-domain-host-specific-instructions.md">將名稱伺服器變更為 Microsoft 365，以便為您設定記錄</a></p>
                     </div>
                 </div>
             </div>
@@ -205,10 +206,10 @@ ms.locfileid: "45049675"
                     <div class="cardText">
                         <h3>進行變更</h3>
                             <p><a href="find-and-fix-issues.md">尋找並修正變更您的功能變數名稱或 DNS 記錄之後所發生的問題</a></p>
-                            <p><a href="../dns/add-or-edit-custom-dns-records.md">在 Office 365 中新增或編輯自訂 DNS 記錄</a></p>
+                            <p><a href="../dns/add-or-edit-custom-dns-records.md">在 Microsoft 365 中新增或編輯自訂 DNS 記錄</a></p>
                             <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365">在 Microsoft 365 中新增自訂子域或多個網域</a></p>
                             <p><a href="remove-a-domain.md">移除網域</a></p>
-                            <p><a href="https://docs.microsoft.com/office365/enterprise/office-365-integration">使用網域整合內部部署電子郵件 (例如，使用目錄服務)</a></p>
+                            <p><a href="https://docs.microsoft.com/office365/enterprise/office-365-integration">Microsoft 365 與內部部署環境的整合</a></p>
                             <p><a href="../contact-support-for-business-products.md">還有其他問題嗎？請連絡支援人員或開支援票證</a></p>
                     </div>
                 </div>
@@ -221,7 +222,7 @@ ms.locfileid: "45049675"
                 <div class="card">
                     <div class="cardText">
                         <h3>更多影片</h3>
-                            <p><a href="../dns/create-dns-records-at-godaddy.md">在 Office 365 中設定 GoDaddy 網域</a></p>
+                            <p><a href="../dns/create-dns-records-at-godaddy.md">在 Microsoft 365 中設定 GoDaddy 網域</a></p>
                     </div>
                 </div>
             </div>

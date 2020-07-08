@@ -1,5 +1,5 @@
 ---
-title: 新增網域至 Office 365
+title: 新增網域至 Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Office 365。 安裝精靈會引導您完成此程式。
-ms.openlocfilehash: b5ad21174c0a2ebb3466072ef43fb1ba284d3b59
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Microsoft 365。 安裝精靈會引導您完成此程式。
+ms.openlocfilehash: ccebd7dd5e78663b7fd1d5318b17dfbc09bd8fb0
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398987"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079722"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>新增網域至 Microsoft 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "44398987"
 
 ::: moniker-end
 
- 若您找不到所需內容，請**[查看網域常見問題集](domains-faq.md)**。 
+ 若您找不到所需功能，請**[檢查網域常見問題集](domains-faq.md)**。 
   
  *若要新增、修改或移除網域，您**必須**是[企業或企業方案](https://products.office.com/business/office)的**全域系統管理員**。這些變更會影響整個承租人、*自訂*的系統管理員或*一般使用者*無法進行這些變更。*  
 
@@ -94,7 +94,7 @@ ms.locfileid: "44398987"
     1. 如果您想要讓 Office 自動設定 DNS，請選擇 [**為我新增 dns 記錄**]。 
     
   
-    2. 如果您只想要將特定的 Office 365 服務附加至您的網域，請選擇 [**我要自行新增 DNS 記錄**]，否則請稍後再進行此操作。 **如果您確切知道您在做什麼，請選擇此選項。**
+    2. 如果您只想要將特定的 Microsoft 365 服務附加至您的網域，請選擇 [**我要自行新增 DNS 記錄**]，否則請稍後再進行此操作。 **如果您確切知道您在做什麼，請選擇此選項。**
     
 7. 如果您選擇*自行新增 DNS 記錄*，請選取 **[下一步]** ，您將會看到一個頁面，其中包含您需要新增至註冊機構網站以設定網域的所有記錄。 
     
@@ -149,7 +149,7 @@ ms.locfileid: "44398987"
 
 ### <a name="what-happens-to-my-email-and-website"></a>我的電子郵件和網站會發生什麼情況？
 
-完成設定之後，您的網域的 MX 記錄會更新，以指向 Microsoft 365，而您網域的所有電子郵件都會開始進入 Microsoft 365。 請確認您已針對在您的網域取得電子郵件的每位人員，在 Office 365 中新增使用者並設定信箱。
+完成設定之後，您的網域的 MX 記錄會更新，以指向 Microsoft 365，而您網域的所有電子郵件都會開始進入 Microsoft 365。 請確認您已新增使用者，並為在您的網域中取得電子郵件的所有人設定 Microsoft 365 中的信箱！
   
 如果您擁有商務用途的網站，該網站將會在原處繼續運作。 網域連接設定步驟不會影響您的網站。
 
@@ -159,7 +159,7 @@ ms.locfileid: "44398987"
 
 [什麼是網域？](../get-help-with-domains/what-is-a-domain.md)
 
-[在 Office 365 中購買網域名稱](../get-help-with-domains/buy-a-domain-name.md)
+[在 Microsoft 365 中購買網域名稱](../get-help-with-domains/buy-a-domain-name.md)
 
 [設定您的網域 (主機專用指示)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 

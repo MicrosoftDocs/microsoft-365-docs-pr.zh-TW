@@ -23,18 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 365 for business 同步處理網域控制的使用者。
-ms.openlocfilehash: a22e567fa99456b35742fcf40c07193c96c83cf0
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: af9cb7c9b2b639edc2375679a73ab41c4cf6de71
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44565684"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080056"
 ---
 # <a name="synchronize-domain-users-to-microsoft-365"></a>將網域使用者同步處理至 Microsoft 365
 
 ## <a name="1-prepare-for-directory-synchronization"></a>1. 準備目錄同步處理 
 
-在您從本機 Active Directory 網域同步處理使用者和電腦之前，請先複查[準備好目錄同步處理至 Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization)。 具體說來：
+在您從本機 Active Directory 網域同步處理使用者和電腦之前，請先複查[準備好目錄同步處理至 Microsoft 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization)。 具體說來：
 
    - 請確定目錄中的下列屬性沒有重複專案： **mail**、 **proxyAddresses**及**userPrincipalName**。 這些值必須是唯一的，而且必須移除任何重複專案。
    
@@ -59,7 +59,7 @@ ms.locfileid: "44565684"
  5. 依照嚮導的步驟下載 Azure AD Connect，並使用它將您的網域控制的使用者同步處理至 Microsoft 365。
 
 
-請參閱[設定 Office 365 的目錄同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)處理以深入瞭解。
+請參閱[設定 Microsoft 365 的目錄同步](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization)處理以深入瞭解。
 
 當您設定 Azure AD Connect 的選項時，建議您啟用 **[密碼同步**處理]、[**無縫單一 Sign-On**] 及 [**密碼寫回**功能]，這是 Microsoft 365 for business 中也支援的功能。
 

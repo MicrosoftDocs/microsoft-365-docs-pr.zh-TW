@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: '若要讓 Microsoft 管理您的 DNS 記錄，請瞭解如何設定含網路方案的 Microsoft 自訂網域。 '
-ms.openlocfilehash: 69e63a6e5dac6e75e66cb816538d356fdd922581
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 502699cf3760460a13ee067b07737037f31fa4ee
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780382"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079874"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>使用網路解決方案變更名稱伺服器以設定 Microsoft
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。
   
 如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。 （如果您願意，您可以[在 [網路方案] 中管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-network-solutions.md)。）
   
@@ -71,7 +71,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
   
 6. In the boxes for the new record, type or copy and paste the values in the following table.
     
-|**Host** (主機)|**TTL**|**Text**|
+|**Host**|**TTL**|**Text**|
 |:-----|:-----|:-----|
 |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **請注意**：這是一個範例。 在這裡請使用您自己的 [目的地或指向位址]**** 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)
    
@@ -189,8 +189,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
     ![NetworkSolutionsBP-重新委派-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
-3. 在 [**功能變數名稱**] 頁面上，輸入或複製並貼上下表中名稱伺服器的值。
- 
+3. 在 [**功能變數名稱**] 頁面上，輸入或複製並貼上下表中名稱伺服器的值。 
     
 |||
 |:-----|:-----|
