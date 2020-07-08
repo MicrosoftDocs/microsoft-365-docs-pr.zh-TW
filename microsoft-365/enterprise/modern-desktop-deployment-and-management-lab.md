@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: 633e54dc2b3c83d0d6778176318512b03bd073a8
-ms.sourcegitcommit: aab8b94ea8a9d4f7c6b911d6dc5cde70722e00e5
+ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44869853"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049913"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 
@@ -52,12 +52,13 @@ ms.locfileid: "44869853"
 
 ## <a name="step-by-step-labs"></a>逐步實驗室
 
-詳細的實驗室指南可透過多個部署和管理案例來引導您。 這些實驗室已針對 Intune 和 Configuration Manager 的最新版本 (版本 1910) 進行了更新。 
+詳細的實驗室指南可透過多個部署和管理案例來引導您。 我們已為最新版本的 Intune 和 Configuration Manager 更新實驗室。 
 
 ### <a name="device-and-app-readiness"></a>裝置和應用程式整備
 
   - 電腦分析
   - 新增！ 部署及更新新版 Microsoft Edge 
+  - 新增！ 安裝和設定雲端管理閘道 (CMG) 
   - Internet Explorer 模式 
   - 應用程式防護 
 
@@ -92,6 +93,7 @@ ms.locfileid: "44869853"
   - Windows Defender 惡意探索防護
   - Windows Defender 應用程式控制
   - Windows Defender 進階威脅防護
+  - 新增！ 端點安全性 
 
 ### <a name="os-deployment-and-feature-updates"></a>作業系統部署與功能更新
 
@@ -105,6 +107,8 @@ ms.locfileid: "44869853"
   - 使用群組原則來管理 Windows 更新
   - 使用 Configuration Manager 和 Intune 來維護 Windows 10
   - 使用 Configuration Manager 維護 Microsoft 365 Apps 企業版
+  - 新增！ 使用 Configuration Manager 和 Intune 更新 Office
+  - 新增！ 安裝 Microsoft Teams 
 
 ### <a name="new-windows-virtual-desktop"></a>新增！ Windows 虛擬桌面
   - Windows 虛擬桌面：準備、部署、最佳化 

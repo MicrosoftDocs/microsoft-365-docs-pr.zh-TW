@@ -20,12 +20,12 @@ description: 了解如何在 Microsoft 365 的任一 DNS 主機服務提供者�
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: a9809dda90bc9eb4a8241f94f48f7f7842df9af9
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: d3a9e3787afc30b33122edf91c1cf9e3dd84b847
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419121"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049663"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>新增 DNS 記錄以連接您的網域
 
@@ -127,7 +127,7 @@ SPF 是設計來協助防止詐騙，但是仍有 SPF 無法防護的詐騙技�
 
 儲存記錄。
 
-#### <a name="srv-record-feild-restrictions-and-workarounds"></a>SRV 記錄欄位限制和因應措施
+#### <a name="srv-record-field-restrictions-and-workarounds"></a>SRV 記錄欄位限制和因應措施
 某些主機提供者會限制 SRV 記錄中的欄位值。 以下是這些限制的一些常見因應措施。
 
 ##### <a name="name"></a>姓名

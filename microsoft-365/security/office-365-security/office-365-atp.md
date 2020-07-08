@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 02/24/2020
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: 52cb0d00d0c01adc34ee480f6daca9a6b509c671
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ffde9288338f14ea23fa39990ccd9363c7fd2a84
+ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818804"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45039375"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -45,9 +45,8 @@ Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息�
 
 下表摘要列出每個方案所包含的內容。
 
-|||
+| Office 365 ATP 方案 1 | Office 365 ATP 方案 2 |
 |---|---|
-|**Office 365 ATP 方案 1**|**Office 365 ATP 方案 2**|
 |設定、保護和偵測功能：<br/>• [安全附件](atp-safe-attachments.md)<br/>• [安全連結](atp-safe-links.md)<br/>• [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)<br/>• [ATP 防網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [即時偵測](threat-explorer.md)|Office 365 ATP 方案 1 功能<br/>--- 以及 ---<br/>自動化、調查、補救和教育功能：<br/>• [威脅追蹤工具](threat-trackers.md)<br/>• [威脅總管](threat-explorer.md)<br/>• [自動調查及回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [攻擊模擬器](attack-simulator.md)|
 |
 
@@ -56,6 +55,8 @@ Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息�
 - Office 365 ATP 方案 1 包含在 Microsoft 365 商務進階版中。
 
 - Office 365 ATP 方案 1 和 Office 365 ATP 方案 2 各以某些訂閱附加元件的形式提供使用。 若要深入了解，請參閱 [ATP 方案中功能的可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+
+- 只有 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權的使用者才能使用[安全文件](safe-docs.md)功能 (不包含在 Office 365 ATP 方案中)。
 
 - 如果您目前的訂閱未包含 Office 365 ATP，請[與銷售人員連絡以開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，並了解 ATP 如何能幫助您的組織。
 

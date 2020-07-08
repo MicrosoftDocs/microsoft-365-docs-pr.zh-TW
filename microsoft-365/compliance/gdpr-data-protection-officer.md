@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 334c6bfaf041b189a127d34e3eacd8997b349394
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 885055aa0684dc0ad0788a7e056c51b6cfd4c587
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817692"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049769"
 ---
 # <a name="microsofts-data-protection-officer"></a>Microsoft 的資料保護長
 
@@ -50,7 +50,7 @@ Leopardstown<br>
 Dublin 18<br>
 D18 P521<br>
 愛爾蘭<br>
-電話：+353 (0) 1 295-3826<br>
+電話：+353 (1) 706-3117<br>
 
 資料保護長的連絡人詳細資料已傳達至 Microsoft 的主管機關。
 

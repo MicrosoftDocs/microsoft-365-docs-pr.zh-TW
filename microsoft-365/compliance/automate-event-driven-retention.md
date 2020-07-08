@@ -15,36 +15,36 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
-ms.openlocfilehash: 75816512878bc6e42b5330309b99e72095d5546f
-ms.sourcegitcommit: 56772bed89516cebc5eb370e292ccfbb4889cb38
+ms.openlocfilehash: 15d2dd8417cf0a22b8db63f64c0bbb288e74880c
+ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330819"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45046061"
 ---
 # <a name="automate-event-based-retention"></a>自動化事件型保留
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-組織中的內容量暴增，內容逐漸變得冗餘、過時且瑣碎，有關內容的各種問題已經變成一項嚴重的議題。為了持續迎接法律、商務和法規遵循方面的挑戰，組織必須具備保留和保護重要資訊、同時又能快速找出相關內容的能力。將資訊去蕪存菁，只保留重要且相關的資訊將成為組織致勝的關鍵。
+The explosion of content in organizations and how it can become ROT (redundant, obsolete, trivial) is serious business. To continue to meet legal, business, and regulatory compliance challenges, organizations must be able to keep and protect important information and quickly find what’s relevant. Retaining only important, pertinent information is key to an organization's success.
 
-為此，組織可以利用 Office 365 安全性與合規性中心的保留解決方案。保留解決方案可以使用[保留標籤](labels.md)進行觸發。保留標籤可以[根據特定事件選擇保留期間](event-driven-retention.md)。一般而言，保留期間是依據已知的日期，例如內容的建立日期或上次修改日期。然而，組織也可以要求依據事件的發生進行內容處置，例如員工離開組織七年後。
+To help meet this need, organizations can take advantage of retention solutions in the Office 365 Security & Compliance Center. Retention can be triggered by using [retention labels](labels.md). A retention label has the option to [base the retention period on a specific event](event-driven-retention.md). Typically, the retention period is based on a known date, such as the creation date or last modified date for the content. However, organizations also have requirements to dispose of content based on the occurrence of an event, such as seven years after an employee leaves an organization.
 
-為確保內容的處置符合規範，請務必了解事件發生的時間。隨著內容量的迅速暴增，以即時且符合規範的方法保留和處置內容已經演變成一項重大的挑戰。
+To ensure compliant disposal of content, it's imperative to know when an event takes place. With the volume of content increasing rapidly, it's becoming challenging to retain and dispose content in a timely and compliant manner.
 
-事件型保留可以解決這個問題。本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
+Event-based retention solves this problem. This topic explains how to set up your business process flows to automate retention through events by using the Microsoft 365 REST API.
 
 ## <a name="about-event-based-retention"></a>關於事件型保留
 
-組織的規模可以是小型、中型或大型。每日建立和管理的商務文件、法律文件、員工檔案、合約和產品文件的數量卻是急遽增加。
+An organization can be small, medium, or large. The number of business documents, legal documents, employee files, contracts, and product documents that get created and managed on a day-to-day basis is increasing dramatically.
 
-舉例來說，每天有數以百計的員工加入或離開組織，HR 部門依據企業要求不斷地建立、更新或刪除員工相關的文件。這個程序必須針對企業綱要遵循不同的保留原則：
+For example, each day, tens and hundreds of employees are joining and leaving organizations. The HR department continues to create, update, or delete employee-related documents as per business requirements. This process is subject to the different retention policies outlined for the business:
 
-- **內容的保留期間可以是已知的日期**，例如內容的建立日期、上次修改日期或標籤日期。例如，您可以在文件建立後保留文件七年，然後再刪除文件。
+- **The period of retention for content can be a known date** such as the date the content was created, last modified, or labeled. For example, you might retain documents for seven years after they're created and then delete them.
 
-- **內容的保留期間也可以是未知的日期**。例如，您可以使用保留標籤，將保留期間設定成依據特定類型事件的發生時間，例如員工離開組織。
+- **The period of retention of content can also be an unknown date**. For example, with retention labels, you can also base a retention period on when a specific type of event occurs, such as an employee leaving the organization.
 
-事件會觸發保留期間開始進行，而在加上標籤的內容中，所有適用於該事件類型的內容都會強制執行標籤的保留動作。這項功能稱為事件型保留，若要深入了解，請參閱[事件導向保留概觀](event-driven-retention.md)。
+The event triggers the start of the retention period, and all content with a label applied for that type of event get the label's retention actions enforced on them. This is called event-based retention. To learn more, see [Overview of event-driven retention](event-driven-retention.md).
 
 ## <a name="set-up-event-based-retention"></a>設定事件型保留
 
@@ -54,9 +54,9 @@ ms.locfileid: "44330819"
 
 找出組織中執行記錄管理工作，並負責有效且有效率地保留商務文件的各種角色。
 
-  | **角色**| **Role**|
+  | 角色 | 角色 |
   | - | - |
-  | 系統管理 | 在 SharePoint 中建立保留事件類型、保留標籤和記錄存放庫 |
+  | 系統管理員 | 在 SharePoint 中建立保留事件類型、保留標籤和記錄存放庫 |
   | 記錄管理員                                  | 提供保留原則和保留排程的指引和規範詳細資料   |
   | 系統管理員 (企業)                          | 設定和管理外部系統以使用 Microsoft 365                       |
   | 資訊工作者                               | 管理商務程序 (HR、財務、IT 等) 的生命週期                 |
@@ -87,9 +87,9 @@ ms.locfileid: "44330819"
 
 2. 執行下列其中一項動作：
         
-    - 建立 SharePoint 文件庫。在文件庫層級設定事件型標籤。如需更多資訊，請參閱[將預設的保留標籤套用至 SharePoint 文件庫、資料夾或文件組的所有內容](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
+   - Creates a SharePoint library: Set event-based label at the library level. For more information, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
           
-    - 在 SharePoint 中設定文件組。 如需詳細資訊，請參閱[文件組簡介](https://support.microsoft.com/zh-TW/office/introduction-to-document-sets-3dbcd93e-0bed-46b7-b1ba-b31de2bcd234)。
+   - 在 SharePoint 中設定文件組。 如需詳細資訊，請參閱[文件組簡介](https://support.microsoft.com/zh-TW/office/introduction-to-document-sets-3dbcd93e-0bed-46b7-b1ba-b31de2bcd234)。
       
 3. 將資產識別碼指派給每個員工文件組。 資產識別碼是組織使用的產品名稱或代碼，例如員工識別碼可以是資產識別碼。 透過將資產識別碼指派給資料夾的方式，該資料夾內的每個項目都會自動繼承相同的資產識別碼。 這表示所有項目可以透過相同事件觸發保留期間。
 
@@ -99,7 +99,7 @@ ms.locfileid: "44330819"
 
 - **使用系統管理中心 UI** 這個程序可以用於一次保留較少的內容，或是觸發頻率不高的保留，例如每月或每年的頻率。 如需更多有關此方法資訊，請參閱[事件驅動保留概觀](event-driven-retention.md)。 然而，這個觸發保留的方法可能非常耗時且容易發生錯誤，從而阻礙了保留的延展性。 因此，使用自動化流暢的解決方案進行觸發保留將可以增強資料的安全性與合規性。
 
-- **使用 M365 REST API**這個程序可以用於一次保留大量內容的時候，和 (或) 觸發頻率高的保留，例如每日或每週的頻率。當偵測到您的商務線系統內發生事件時，流程會接著在安全規範中心內自動建立相關的事件。因此，每次發生事件時，您不需要在使用者介面手動建立事件。
+- **Using a M365 REST API** This process can be used when large amounts of content are to be retained at a time and/or the frequency to trigger retention is often such as daily or weekly. The flow detects when an event occurs in your line-of-business system, and then automatically creates a related event in the Security & Compliance Center. You don't need to manually create an event in the UI each time one occurs.
 
 有兩個選項可以使用 REST API：
 
@@ -161,100 +161,61 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 呼叫 REST API 的範例程式碼
 
-<table>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>POST</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>URL</td>
-<td>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Headers</td>
-<td>Content-Type</td>
-<td>application/atom+xml</td>
-</tr>
-<tr class="odd">
-<td>Body</td>
-<td><p>&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
-<p>&lt;updated&gt;9/9/2017 10:50:00 PM&lt;/updated&gt;</p>
-<p>&lt;content type='application/xml'&gt;</p>
-<p>&lt;m:properties&gt;</p>
-<p>&lt;d:Name&gt;僱用終止 &lt;/d:Name&gt;</p>
-<p>&lt;d:EventType&gt;99e0ae64-a4b8-40bb-82ed-645895610f56&lt;/d:EventType&gt;</p>
-<p>&lt;d:SharePointAssetIdQuery&gt;1234&lt;/d:SharePointAssetIdQuery&gt;</p>
-<p>&lt;d:EventDateTime&gt;2018-12-01T00:00:00Z &lt;/d:EventDateTime&gt;</p>
-<p>&lt;/m:properties&gt;</p>
-<p>&lt;/content&gt;</p>
-<p>&lt;/entry&gt;</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>驗證</td>
-<td>基本</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>使用者名稱</td>
-<td>“Complianceuser”</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>密碼</td>
-<td>“Compliancepassword”</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+- **方法**：POST
+- **URL**：https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **標頭**：Key = Content-Type, Value = application/atom+xml
+- **本文**：
+    
+    ```xml
+    <?xml version='1.0' encoding='utf-8' standalone='yes'?>
+    
+    <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+    
+    xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+    
+    xmlns='http://www.w3.org/2005/Atom'>
+    
+    <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+    
+    <updated>9/9/2017 10:50:00 PM</updated>
+    
+    <content type='application/xml'>
+    
+    <m:properties>
+    
+    <d:Name>Employee Termination </d:Name>
+    
+    <d:EventType>99e0ae64-a4b8-40bb-82ed-645895610f56</d:EventType>
+    
+    <d:SharePointAssetIdQuery>1234</d:SharePointAssetIdQuery>
+    
+    <d:EventDateTime>2018-12-01T00:00:00Z </d:EventDateTime>
+    
+    </m:properties>
+    
+    </content>
+    
+    </entry>
+    ```
+- **驗證**：基本
+- **使用者名稱**："Complianceuser"
+- **密碼**："Compliancepassword"
+
 
 ##### <a name="available-parameters"></a>可用的參數
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>參數</strong></th>
-<th><strong>描述</strong></th>
-<th><strong>附註</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>&lt;d:Name&gt;&lt;/d:Name&gt;</td>
-<td>提供事件的唯一名稱，</td>
-<td>結尾不可有空格以及下列字元：% * \ &amp; &lt; &gt; | # ? , : ;</td>
-</tr>
-<tr class="even">
-<td>&lt;d:EventType&gt;&lt;/d:EventType&gt;</td>
-<td>輸入事件類型名稱 (或 Guid)</td>
-<td>例如：「僱用終止」。事件類型必須與保留標籤相關聯。</td>
-</tr>
-<tr class="odd">
-<td>&lt;d:SharePointAssetIdQuery&gt;&lt;/d:SharePointAssetIdQuery&gt;</td>
-<td>輸入 ComplianceAssetId: + 員工 ID</td>
-<td>例如：&quot;ComplianceAssetId:12345&quot;</td>
-</tr>
-<tr class="even">
-<td>&lt;d:EventDateTime&gt;&lt;/d:EventDateTime&gt;</td>
-<td>事件的日期和時間</td>
-<td><p>格式：yyyy-MM-ddTHH:mm:ssZ，例如：</p>
-<p>2018-12-01T00:00:00Z</p></td>
-</tr>
-</tbody>
-</table>
+
+|參數|描述|附註|
+|--- |--- |--- |
+|<d:Name></d:Name>|提供事件的唯一名稱，|結尾不可有空格以及下列字元：% * \ & < \> \| # ? , : ;|
+|<d:EventType></d:EventType>|輸入事件類型名稱 (或 Guid)|Example: “Employee termination”. Event type has to be associated with a retention label.|
+|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|輸入 ComplianceAssetId: + 員工 ID|範例："ComplianceAssetId:12345"|
+|<d:EventDateTime></d:EventDateTime>|事件的日期和時間|格式：yyyy-MM-ddTHH:mm:ssZ，例如：2018-12-01T00:00:00Z
+|
 
 ##### <a name="response-codes"></a>回應碼
 
-| **回應碼** | **描述**       |
+| 回應碼 | 描述       |
 | ----------------- | --------------------- |
 | 302               | 重新導向              |
 | 201               | 建立時間               |
@@ -263,53 +224,22 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 ##### <a name="get-events-based-on-time-range"></a>依據時間範圍取得事件
 
-<table>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>GET</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>URL</td>
-<td><ol start="4" type="1">
-<li><p>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&amp;EndDateTime=2019-01-16</p></li>
-</ol></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Headers</td>
-<td>Content-Type</td>
-<td>application/atom+xml</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>驗證</td>
-<td>基本</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>使用者名稱</td>
-<td>“Complianceuser”</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>密碼</td>
-<td>“Compliancepassword”</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+- **方法**：GET
+
+- **URL**：`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16`
+
+- **標頭**：Key = Content-Type, Value = application/atom+xml
+
+- **驗證**：基本
+
+- **使用者名稱**："Complianceuser"
+
+- **密碼**："Compliancepassword"
+
 
 ##### <a name="response-codes"></a>回應碼
 
-| **回應碼** | **描述**                   |
+| 回應碼 | 描述                   |
 | ----------------- | --------------------------------- |
 | 200               | 好的，以 atom+ xml 格式列出事件清單 |
 | 404               | 找不到                         |
@@ -319,17 +249,23 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 ##### <a name="get-an-event-by-id"></a>依 ID 取得事件
 
-| Method         | GET   |                      |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------- |
-| URL            | [https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\)) |                      |
-| Header         | Content-Type                                                                                                                                                                                                                                                       | application/atom+xml |
-| 驗證 | 基本                                                                                                                                                                                                                                                              |                      |
-| 使用者名稱       | “Complianceuser”                                                                                                                                                                                                                                                   |                      |
-| 密碼       | “Compliancepassword”                                                                                                                                                                                                                                               |                      |
+- **方法**：GET
+
+- **URL**：`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')`
+
+- **標頭**：Key = Content-Type, Value = application/atom+xml
+
+- **驗證**：基本
+
+- **使用者名稱**："Complianceuser"
+
+- **密碼**："Compliancepassword"
+
+
 
 ##### <a name="response-codes"></a>回應碼
 
-| **回應碼** | **描述**                                      |
+| 回應碼 | 描述                                      |
 | ----------------- | ---------------------------------------------------- |
 | 200               | 好的，回應本文包含有 atom+xml 格式的事件 |
 | 404               | 找不到                                            |
@@ -339,17 +275,22 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 ##### <a name="get-an-event-by-name"></a>依名稱取得事件
 
-| Method         | GET       |                      |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- |
-| URL            | <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('EventByRESTPost-2226bfebcc2841a8968ba71f9516b763')> |                      |
-| Headers        | Content-Type                                                                                                                                 | application/atom+xml |
-| 驗證 | 基本                                                                                                                                        |                      |
-| 使用者名稱       | “Complianceuser”                                                                                                                             |                      |
-| 密碼       | “Compliancepassword”                                                                                                                         |                      |
+- **方法**：GET
+
+- **URL**：`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+
+- **標頭**：Key = Content-Type, Value = application/atom+xml
+
+- **驗證**：基本
+
+- **使用者名稱**："Complianceuser"
+
+- **密碼**："Compliancepassword"
+
 
 ##### <a name="response-codes"></a>回應碼
 
-| **回應碼** | **描述**                                      |
+| 回應碼 | 描述                                      |
 | ----------------- | ---------------------------------------------------- |
 | 200               | 好的，回應本文包含有 atom+xml 格式的事件 |
 | 404               | 找不到                                            |
@@ -363,49 +304,83 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 步驟 2：執行下列指令碼。
 
-<table>
-<tbody>
-<tr class="odd">
-<td><p>param([string]$baseUri)</p>
-<p>$userName = &quot;使用者名稱&quot;</p>
-<p>$password = &quot;密碼&quot;</p>
-<p>$securePassword = ConvertTo-SecureString $password -AsPlainText -Force</p>
-<p>$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)</p>
-<p>$EventName=&quot;EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))&quot;</p>
-<p>Write-Host &quot;開始建立下列名稱的事件：$EventName&quot;</p>
-<p>$body = &quot;&lt;?xml version='1.0' encoding='utf-8' standalone='yes'?&gt;</p>
-<p>&lt;entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'</p>
-<p>xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'</p>
-<p>xmlns='http://www.w3.org/2005/Atom'&gt;</p>
-<p>&lt;category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' /&gt;</p>
-<p>&lt;updated&gt;7/14/2017 2:03:36 PM&lt;/updated&gt;</p>
-<p>&lt;content type='application/xml'&gt;</p>
-<p>&lt;m:properties&gt;</p>
-<p>&lt;d:Name&gt;$EventName&lt;/d:Name&gt;</p>
-<p>&lt;d:EventType&gt;e823b782-9a07-4e30-8091-034fc01f9347&lt;/d:EventType&gt;</p>
-<p>&lt;d:SharePointAssetIdQuery&gt;'ComplianceAssetId:123'&lt;/d:SharePointAssetIdQuery&gt;</p>
-<p>&lt;/m:properties&gt;</p>
-<p>&lt;/content&gt;</p>
-<p>&lt;/entry&gt;&quot;</p>
-<p>$event = $null</p>
-<p>try</p>
-<p>{</p>
-<p>$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri &quot;$baseUri/ComplianceRetentionEvent&quot; -ContentType &quot;application/atom+xml&quot; -Authentication Basic -Credential $credentials -MaximumRedirection 0</p>
-<p>}</p>
-<p>catch</p>
-<p>{</p>
-<p>$response = $_.Exception.Response</p>
-<p>if($response.StatusCode -eq &quot;Redirect&quot;)</p>
-<p>{</p>
-<p>$url = $response.Headers.Location</p>
-<p>Write-Host &quot;redirected to $url&quot;</p>
-<p>$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType &quot;application/atom+xml&quot; -Authentication Basic -Credential $credentials -MaximumRedirection 0</p>
-<p>}</p>
-<p>}</p>
-<p>$event | fl *</p></td>
-</tr>
-</tbody>
-</table>
+```powershell
+param([string]$baseUri)
+
+$userName = "UserName"
+
+$password = "Password"
+
+$securePassword = ConvertTo-SecureString $password -AsPlainText -Force
+
+$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)
+
+$EventName="EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))"
+
+Write-Host "Start to create an event with name: $EventName"
+
+$body = "<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+
+<entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+
+xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+
+xmlns='http://www.w3.org/2005/Atom'>
+
+<category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+
+<updated>7/14/2017 2:03:36 PM</updated>
+
+<content type='application/xml'>
+
+<m:properties>
+
+<d:Name>$EventName</d:Name>
+
+<d:EventType>e823b782-9a07-4e30-8091-034fc01f9347</d:EventType>
+
+<d:SharePointAssetIdQuery>'ComplianceAssetId:123'</d:SharePointAssetIdQuery>
+
+</m:properties>
+
+</content>
+
+</entry>"
+
+$event = $null
+
+try
+
+{
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri "$baseUri/ComplianceRetentionEvent" -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+catch
+
+{
+
+$response = $_.Exception.Response
+
+if($response.StatusCode -eq "Redirect")
+
+{
+
+$url = $response.Headers.Location
+
+Write-Host "redirected to $url"
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+}
+
+$event | fl *
+
+```
+
 
 #### <a name="verify-the-outcome-in-both-options"></a>確認兩個選項的結果
 
@@ -421,7 +396,7 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 針對客戶、廠商和合作夥伴的單一合約，組織可以擁有多個記錄。 這些文件可以存放在 SharePoint 等文件庫中。 合約結束表示合約相關文件的保留期間開始。 例如，與合約相關的所有記錄必須從合約到期時間起保留五年。 觸發五年保留期間的事件是合約到期日。
 
-客戶關係管理 (CRM) 系統可以使用 Microsoft 365 並觸發合約文件的保留
+客戶關係管理 (CRM) 系統可以使用 Microsoft 365 並觸發合約文件的保留。
 
 **針對這個案例設定自動化事件型保留：**
 
@@ -447,7 +422,7 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 ### <a name="scenario-3-end-of-product-manufacturing"></a>案例 3：產品製造結束
 
-生產各種產品線的製造公司建立許多製造規格和價格文件。當產品不再製造時，所有連結至這個產品的規格和文件都必須在產品存留期結束後保留一段特定的時間。
+A manufacturing company that produces different lines of products creates many manufacturing specifications and pricing documents. When the product is no longer manufactured, all specifications and documents linked to this product need to be retained for a specific period after the end of the lifetime of the product.
 
 企業資源規劃 (ERP) 系統可以使用 Microsoft 365 和 Microsoft Flow 觸發保留。
 
@@ -477,9 +452,9 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 ### <a name="using-redirect-302-response-results-to-call-the-rest-api"></a>使用重新導向 302 回應結果呼叫 REST API
 
-1. 使用 REST API URL 叫用 POST 保留事件呼叫<https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (需要全域管理員權限)
+1. 使用 REST API URL 叫用 POST 保留事件呼叫，<https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (需要全域管理員權限)。
 
-2. 檢查回應碼。如果是 302，則從回應標頭的 Location 屬性取得重新導向的 URL
+2. 檢查回應碼。 如果是 302，則從回應標頭的 Location 屬性取得重新導向的 URL。
 
 3. 使用重新導向的 URL 再次叫用 POST 保留事件呼叫。
 

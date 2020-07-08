@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: 869f457ddb64e5d828dcb5f1244ba779f889e8c9
-ms.sourcegitcommit: e3900c818877c2cdcd227917ec975c03e828c7ea
+ms.openlocfilehash: ead16cf4d89b5dbea2fee4a6669f537a0338984e
+ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44861160"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049847"
 ---
 # <a name="learn-about-retention-policies-for-microsoft-teams"></a>了解 Microsoft Teams 的保留原則
 
@@ -54,7 +54,7 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 > [!NOTE]
 > SubstrateHolds 資料夾中的訊息可供電子文件探索工具搜尋。 永久刪除某個訊息後，電子文件探索搜尋中就不會傳回該訊息。
 
-當保留原則為僅保留或僅刪除時，內容路徑為保留和刪除的變化：
+當保留原則為僅保留或僅刪除時，內容路徑為保留和刪除的變化。
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>「僅保留」保留原則的內容路徑
 
@@ -62,7 +62,7 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 
 2. **如果未在保留期間修改或刪除項目**：保留期間前後沒有任何變化；訊息仍會保留在其原始位置。
 
-#### <a name="content-paths-for-delete-only-retention-policy"></a>僅刪除保留原則的內容路徑
+### <a name="content-paths-for-delete-only-retention-policy"></a>僅刪除保留原則的內容路徑
 
 1. **如果未在保留期間刪除訊息**：在保留期間結束時，系統會將訊息移至 SubstrateHolds 資料夾。 
 
@@ -98,7 +98,6 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 
 - 如果外部使用者是使用來自另一個 Microsoft 365 組織的帳戶加入，您的保留原則就無法刪除該使用者的訊息，因為訊息是儲存在該使用者在另一個租用戶的信箱中。 不過，針對相同會議，您的保留原則可以為您的使用者刪除訊息。
 
-
 ## <a name="when-a-user-leaves-the-organization"></a>當使用者離開組織時 
 
 如果某位使用者離開您的組織，且其 Office 365 帳戶被刪除，則其要保留的交談訊息會儲存在非作用中的信箱中。 交談訊息在他們的信箱被設成非作用中信箱之前，仍會受置於使用者之任何保留原則的制約，並可供電子文件探索搜尋。 如需詳細資訊，請參閱 [Exchange Online 中的非作用中信箱](inactive-mailboxes-in-office-365.md)。 
@@ -109,11 +108,11 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 
 我們持續努力將 Teams 中的保留功能最佳化。 在此同時，請留意以下所述的一些限制：
   
-- **Teams 需要個別的保留原則**。 當您建立保留原則並將 Teams 位置切換為開啟時，其他所有位置都會切換為關閉。 包含 Teams 的保留原則只能包含 Teams 位置，不可包含其他位置。 
-    
-- **Teams 不包含在全組織原則中**。 如果建立全組織原則，則不會包含 Teams，因為它們需要個別的保留原則。 
-    
-- **Teams 不支援進階保留**。 建立保留原則時，如果您選擇 [用來識別符合特定條件內容的進階設定][](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions)，則無法使用 Teams 位置。 目前，當您選取這些位置時，會將 Teams 中的保留套用至所有聊天和頻道訊息內容。 
+- **Teams 需要個別的保留原則**。 當您建立保留原則並將 Teams 位置切換為開啟時，其他所有位置都會切換為關閉。 包含 Teams 的保留原則只能包含 Teams 位置，不可包含其他位置。
+
+- **Teams 不包含在全組織原則中**。 如果建立全組織原則，則不會包含 Teams，因為它們需要個別的保留原則。
+
+- **Teams 不支援進階保留**。 建立保留原則時，如果您選擇 [用來識別符合特定條件內容的進階設定][](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions)，則無法使用 Teams 位置。 目前，當您選取這些位置時，會將 Teams 中的保留套用至所有聊天和頻道訊息內容。
 
 - **當您為 Teams 團隊頻道訊息設定保留原則時，不會包含私人頻道的訊息**。 而是會為使用者將來自私人頻道的訊息包含為群組聊天，其中包含 [Teams 聊天]**** 選項。 
     
@@ -124,7 +123,7 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 
 - **Outlook 中顯示不正確的問題**。 如果您建立 Skype 或 Teams 位置的保留原則，當使用者在 Outlook 電腦版用戶端中檢視信箱資料夾的內容時，其中一個原則會顯示為預設資料夾原則。 這是 Outlook 中顯示不正確的問題，並且是[已知問題](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies)。 應顯示為預設資料夾原則的是套用至資料夾的信箱保留原則。 Skype 或 Teams 保留原則不會套用至使用者的信箱。
 
-- **設定問題**： 
+- **設定問題**：
     - 當您針對 [Teams 頻道訊息]**** 位置選取 [選擇小組]**** 時，您可能會看到也不是小組的 Office 365 群組。 請勿選取這些群組。
     
     - 當您針對 [Teams 聊天]**** 位置選取 [選擇使用者]**** 時，您可能會看到來賓和非信箱使用者。 保留原則並非為這些使用者設計，因此請不要選取他們。
