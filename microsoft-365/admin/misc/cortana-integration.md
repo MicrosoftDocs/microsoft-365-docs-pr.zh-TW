@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 當您使用有效的工作或學校帳戶登入時，使用者可在 Microsoft 365 體驗中取得使用 Cortana 的雲端協助服務，以符合 Office 365 的企業級隱私權、安全性和合規性承諾。
-ms.openlocfilehash: 6c1eb42ad54c0cfb25f84b9f584171eb7d198bb9
-ms.sourcegitcommit: 21977f5cb6b01aee5cae54979717530b2a31a46a
+ms.openlocfilehash: 7b8f60f5138de63234520f18d6de0973b74482ed
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44410998"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083547"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -33,7 +33,7 @@ Cortana，您的個人生產能力 assistant 可提供 AI 的體驗，以節省�
 
 做為個人的生產能力小幫手，Cortana 是專門設計用來透過像電子郵件、檔案、聊天等的方式，提供安全且安全地處理及365原因的功能，以節省時間、提高效率，並增強使用者的生產力。
 
-向前發展，我們的重點是在企業生產力上重點放入小娜。
+向前發展，我們的重點是在企業生產力上重點放入小娜。 
 
 - 與其他 Office 365 服務一致，Cortana enterprise 服務會符合相同的企業級隱私權、安全性和合規性承諾，以反映[線上服務條款（OST）](https://www.microsoft.com/licensing/product-licensing/products)。
 
@@ -55,7 +55,7 @@ Cortana enterprise 服務處理來自使用者的查詢、完成使用者要求�
 
 下表說明 Cortana enterprise 服務的資料處理。
 
-|**Name**|**描述**|
+|**名稱**|**描述**|
 |:-----|:-----|
 |**儲存**  <br/> |客戶資料儲存在 Office 365 雲端內部的 Microsoft 伺服器上。 您的資料是租使用者的一部分。 <br/> 不保留語音音訊。  <br/> |
 |**保留在地理位置**  <br/> |客戶資料儲存于地理位置的 Office 365 雲端內部的 Microsoft 伺服器上。 您的資料是租使用者的一部分。  <br/> |
@@ -80,6 +80,26 @@ Windows 10 版本2004和更新版本中的 cortana，符合對 Cortana enterpris
 從 Windows 10，版本2004開始，Cortana 是以 Windows 預先安裝的通用 Windows 平臺（UWP）應用程式，並定期透過 Microsoft Store 更新。 若要接收 Cortana 的最新更新，您必須[透過 Microsoft Store 啟用更新](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store)。
 
 [深入瞭解 Windows 10 中的 Cortana](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview)
+
+### <a name="cortana-voice-assistance-in-teams"></a>小組中的 Cortana 語音協助
+
+「小組行動應用程式」中的 Cortana 語音協助可讓 Microsoft 365 企業使用者利用口述自然語言來簡化通訊、共同作業和會議相關的工作。 使用者可以按一下位於小組行動應用程式右上方的麥克風按鈕，對 Cortana 講話。 在旅途中，使用者可以進行語音查詢，例如「呼叫 Megan」或「將郵件傳送到我的下一個會議」，以與其他人進行連接。 使用者也可以說「加入我的後續會議」，並使用語音協助來共用檔案、檢查其行事曆等等，以加入會議。 這些語音協助體驗是使用 Cortana 企業級服務來提供，這些服務完全符合 Office 365 的隱私權、安全性和合規性承諾，以反映[線上服務條款（OST）](https://www.microsoft.com/licensing/product-licensing/products)。
+
+**系統管理控制**
+
+預設會為承租人啟用 Cortana 語音協助。 系統管理員可以透過原則（TeamsCortanaPolicy）控制在其承租人中誰可以透過團體使用 Cortana 語音協助。 這個原則可以設定為使用者帳戶層級或租使用者層級。 系統管理員也可以使用此原則控制中的 [CortanaVoiceInvocationMode] 欄位，判斷 Cortana 是否已停用、只使用推入按鈕叫用或啟用喚醒字呼叫（適用于支援此功能的裝置）。 請注意，在 Microsoft 365 企業使用者的初次發行的初次發行時，小組行動應用程式不會支援喚醒 word 啟用，但未來會受到支援。
+
+**使用者控制項**
+
+個別使用者可以透過按一下 [麥克風] 按鈕，嘗試使用「小組行動應用程式」中的 Cortana 語音協助。 他們也可以透過小組行動應用程式中的設定，控制是否為其裝置啟用團體中的 Cortana。 
+
+1. 開啟小組行動應用程式。
+
+2. 移至 [**設定**]。
+
+3. 選取 [ **Cortana**]。
+
+4. 將切換移至 [開啟] 或 [關閉]，取決於您是否要在此裝置上進行 Cortana 語音協助。
 
 ### <a name="play-my-emails"></a>播放我的電子郵件
 

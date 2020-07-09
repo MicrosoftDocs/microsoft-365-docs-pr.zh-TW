@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: 安全規範中心中的資料遺失防護（DLP） &amp; 包括80機密資訊類型，可供您在 DLP 原則中使用。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: a91459652d785f6536cb50e381ab139057a3eae8
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 5bccbd73806a261cdbd795f200b6b459b536a97e
+ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024641"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45084132"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -534,6 +534,7 @@ OR
 - 預繳稅金
 - 個人稅收返還
 - 稅收檔案編號
+- tfn
 
 #### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
 

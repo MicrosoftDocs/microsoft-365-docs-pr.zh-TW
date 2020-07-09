@@ -1,5 +1,5 @@
 ---
-title: 規劃安全性&amp;合規性
+title: 規劃安全性 &amp; 合規性
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登陸頁面提供 Office 365 的安全性和合規性的連結及規劃資訊。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0f3bb6499de2ddd6fb613834b98e46d453d739a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034893"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086654"
 ---
-# <a name="plan-for-security-amp-compliance"></a>規劃安全性&amp;合規性
+# <a name="plan-for-security-amp-compliance"></a>規劃安全性 &amp; 合規性
 
 管理安全性與合規性是一種合作關係。 您負責保護您的資料、身分識別及裝置，但 Microsoft vigorously 會保護 Microsoft 365 服務。 您可以將 Microsoft 365 和 Enterprise 可移動性 + Security （EMS）搭配使用，以協助您為組織達成適當的保護層級。
   
@@ -32,7 +32,7 @@ ms.locfileid: "44034893"
 
 在 [Office 365 海報的資訊保護] 中，將您自己的資訊保護功能定位在一起。 
   
-[PDF](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf) | [Visio](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)
+[使用 Microsoft 365 部署資料隱私權法規的資訊保護](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
   
 ## <a name="step-2-check-your-secure-score"></a>步驟2：檢查您的安全分數
 
@@ -56,15 +56,15 @@ ms.locfileid: "44034893"
   
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>步驟5：利用 Microsoft 365 安全性&amp;與合規性中心
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>步驟5：利用 Microsoft 365 安全性與 &amp; 合規性中心
 
-安全性&amp;與合規性中心提供您用來管理 Microsoft 365 安全性（包括威脅管理、資料管理及搜尋與調查）的控制項單一的視圖。 
+安全性與 &amp; 合規性中心提供您用來管理 Microsoft 365 安全性（包括威脅管理、資料管理及搜尋與調查）的控制項單一的視圖。 
   
-- [移至安全性&amp;與合規性中心](go-to-the-securitycompliance-center.md)
+- [移至安全性與 &amp; 合規性中心](go-to-the-securitycompliance-center.md)
     
-- [安全性&amp;與合規性中心的許可權](~/security/office-365-security/protect-against-threats.md)
+- [安全性與 &amp; 合規性中心的許可權](~/security/office-365-security/protect-against-threats.md)
     
-- [讓使用者能夠存取安全性&amp;與合規性中心](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [讓使用者能夠存取安全性與 &amp; 合規性中心](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>步驟6：使用端對端安全性案例做為開始點
 
@@ -80,6 +80,6 @@ ms.locfileid: "44034893"
   
 |**訂閱**|**管理 URL**|**儀表板和系統管理中心**|
 |:-----|:-----|:-----|
-|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 系統管理中心  <br/>  安全性&amp;與合規性中心  <br/>  Exchange 系統管理中心  <br/>  SharePoint Business admin center 的系統管理中心和 OneDrive  <br/> |
+|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 系統管理中心  <br/>  安全性與 &amp; 合規性中心  <br/>  Exchange 系統管理中心  <br/>  SharePoint Business admin center 的系統管理中心和 OneDrive  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft 行動應用程式管理  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |

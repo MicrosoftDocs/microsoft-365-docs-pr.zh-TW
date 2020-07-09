@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f4e733cf7196668fb1c3d1830ead15c6262a635e
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: e19a5528a4ccc250c981ab21d7644783ad1b0b8b
+ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854291"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45084152"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft 威脅防護的新增功能
 
@@ -32,6 +32,11 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ```
 ## <a name="june-2020"></a>2020 年 6 月
 - Twitter 摘要 <br> 深入瞭解儀表板內的最新安全性調查、威脅情報、產品新聞及其他。
+- [EmailPostDeliveryEvents 架構表格](advanced-hunting-emailpostdeliveryevents-table.md) <br> 在您的高級搜尋查詢中包含對電子郵件訊息所進行投遞投遞動作的相關資訊。
+- [在 [高級搜尋] 中檢查記錄](advanced-hunting-query-results.md#drill-down-from-query-results) <br> 使用新的 [詳細資料] 面板，快速檢查查詢結果中的記錄。
+
+## <a name="may-2020"></a>2020 年 5 月
+- [自訂偵測](custom-detections-overview.md) <br> 使用高級搜尋查詢來建立自訂偵測規則，以自動監控和回應安全性事件和系統狀態。
 
 ## <a name="february-2020"></a>2020 年 2 月
 - [事件](incidents-overview.md) <br> 確切知道攻擊已啟動的位置，以及可協助您瞭解攻擊程度的其他詳細資料。
@@ -39,7 +44,6 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [高級搜尋增強功能](advanced-hunting-overview.md) <br> 使用 Kusto 查詢語言和安全性優化架構，主動搜尋整個現代 workspace 中的威脅。
 
 ## <a name="march-2019"></a>2019 年 3 月
-
 - 進階搜捕 <br> 可讓您主動找到影響電子郵件和資料、裝置和身分識別之威脅的各種搜尋功能的登陸頁面。
 - [Microsoft 安全分數](microsoft-secure-score.md) <br> 度量組織的安全性狀況，其值越高，表示採取的改善動作越多。 遵循安全性分數建議可保護您的組織免受威脅。 
 - [報告](monitoring-and-reporting.md) <br>  可提供一系列的功能，涵蓋安全分析員和系統管理員在日常作業中所追蹤的各種區域。

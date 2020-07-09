@@ -14,12 +14,12 @@ search.appverid: MET150
 description: 威脅修正
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 6c05eac80c6de546a30f9abe29360178bcbcfcf8
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: eb86c0b8e5368a42daa1002de5ac361613037090
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068167"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086688"
 ---
 # <a name="remediate-malicious-email-that-was-delivered-in-office-365"></a>修正 Office 365 中傳遞的惡意電子郵件
 
@@ -77,8 +77,6 @@ ms.locfileid: "45068167"
 您可以開啟每項修復專案，以查看其詳細資料。 當修復專案開啟時，會顯示基本修復詳細資料、修正名稱、建立日期、描述、威脅嚴重性及狀態。 它也會顯示兩個索引標籤。 
 
 1. [**郵件提交]** 索引標籤：這些是透過威脅瀏覽器提交的電子郵件數目，或是要補救的自動調查。 這些電子郵件可以是：
-
-:::image type="content" source="../../../media/tp-RemediationArticle5.png" alt-text="行動中心，具有可行動且不具可操作性的威脅。":::
 
 **可行**：下列雲端信箱位置中的電子郵件可以進行處理及移動，亦即，任何 remediable 類別內的電子郵件都可以從一個位置移動到另一個位置：
   - 收件匣 

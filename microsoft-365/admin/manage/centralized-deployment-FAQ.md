@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 從 Microsoft 365 系統管理中心，回顧有關集中式部署的常見問題解答。
-ms.openlocfilehash: 0d0f2163982042f7b8f868a36f5cc115a17295a2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399821"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083559"
 ---
 # <a name="centralized-deployment-faq"></a>集中式部署常見問題集
 
@@ -36,7 +36,7 @@ ms.locfileid: "44399821"
  
 僅支援線上信箱的集中式部署。 它不支援部署至內部部署 Exchange 信箱。
  
-您可以使用[Office 365 集中式部署相容性檢查](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)   程式，判斷您的訂閱是否符合資格。 
+您可以使用[集中式部署相容性檢查](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)程式   ，判斷您的訂閱是否符合資格。 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>如何使用集中式部署來瞄準增益集使用者的指派？  
 

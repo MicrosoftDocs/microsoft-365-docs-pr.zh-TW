@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 深入瞭解 Microsoft 365 中的多重要素驗證。
-ms.openlocfilehash: e8ba304d145ca7227eea074556ff6efccd751ecf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 71a61c51d2813880cad782d132679fa413ada987
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399143"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083583"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 的多重要素驗證
 
@@ -75,7 +75,7 @@ ms.locfileid: "44399143"
 
 您可以在 Azure 入口網站中，啟用或停用 Azure AD 的**屬性**窗格中的安全性預設值。
 
-![](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
+![[目錄屬性] 頁面的圖片。](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
 您可以使用安全性預設值搭配任何 Microsoft 365 方案。
 
@@ -93,7 +93,7 @@ ms.locfileid: "44399143"
 
 您可以在 Azure 入口網站中，從 Azure AD 的**安全性**窗格中設定條件式存取原則。
 
-![](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![條件式存取的功能表選項 Picure](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 您可以使用條件式存取原則：
 
@@ -140,7 +140,7 @@ ms.locfileid: "44399143"
 
 您可以從 Microsoft 365 系統管理中心的 [作用中**使用者**] 窗格中，為個別使用者帳戶啟用 MFA。
 
-![](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![[作用中使用者] 頁面上多重要素驗證選項的圖片](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 啟用之後，使用者下一次登入時，系統會提示他們註冊 MFA，並選擇及測試其他驗證方法。
 

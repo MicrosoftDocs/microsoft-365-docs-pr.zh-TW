@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 57e18d68f6f33482fec3880b56ccad52c719a6d9
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 44c9992be3fe0e6919a498fea0ee1b480a30a2bb
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023400"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086676"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -89,7 +89,7 @@ Microsoft 安全分數已更新改進動作，以支援[Azure Active Directory �
 若具有唯讀許可權，您就無法編輯 [改進動作]、[編輯計分區域] 或 [編輯自訂比較] 的狀態或附注。
 
 * 説明台管理員
-* 使用者管理員
+* 使用者系統管理員
 * 服務管理員
 * 安全性讀取者
 * 安全性操作員
@@ -131,7 +131,7 @@ Microsoft 安全分數已更新改進動作，以支援[Azure Active Directory �
 
 * 選取 [**管理**] 以進入設定畫面並進行變更。 接著，您將會在飛出的位置看到必要的動作。點通常需要24小時才能更新。
 
-* 選取 [**共用**]，將直接連結複製到 [改進] 動作，或選擇用來共用連結的平臺，例如電子郵件、microsoft 小組、microsoft Planner 或 ServiceNow。 選取 [ServiceNow 將可讓您建立 ServiceNow 和 Microsoft 365 的安全性中心首頁會顯示的變更票證。 若要深入瞭解，請參閱[Microsoft 365 Security Center 和 ServiceNow integration](tickets.md)。
+* 選取 [**共用**]，將直接連結複製到 [改進] 動作，或選擇用來共用連結的平臺，例如電子郵件、microsoft 小組、microsoft Planner 或 ServiceNow。 選取 [ServiceNow 將可讓您建立 ServiceNow 和 Microsoft 365 的安全性中心首頁會顯示的變更票證。 若要深入瞭解，請參閱[Microsoft 365 Security Center 和 ServiceNow integration](tickets-security-center.md)。
 
 ### <a name="choose-an-improvement-action-status"></a>選擇改進動作狀態
 

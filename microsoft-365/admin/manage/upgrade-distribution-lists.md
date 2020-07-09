@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 瞭解如何將一或多個通訊群組清單升級至 Outlook 中的 Microsoft 365 群組，以及如何使用 PowerShell 同時升級多個通訊群組清單。
-ms.openlocfilehash: f5748c293d18943c94c3610c0e3c5c33848eb521
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: a1fb974be4838ebe98c2c55fe8694e89e27d636e
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780022"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083571"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將通訊群組清單升級至 Outlook 中的 Microsoft 365 群組
 
@@ -71,11 +71,15 @@ ms.locfileid: "44780022"
 
 若要升級單一 DL，請執行下列命令：
 
-`Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```
 
 例如，如果您想要使用 SMTP 位址 dl1@contoso.com 升級 DLs，請執行下列命令：
 
-`Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```
 
 > [!NOTE]
 > 您也可以使用[set-unifiedgroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell Cmdlet，將單一通訊群組清單升級至 Microsoft 365 群組。
@@ -84,9 +88,8 @@ ms.locfileid: "44780022"
 
 您也可以以批次方式傳遞多個 DLs，並將它們升級到一起：
 
-```
+```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
@@ -103,7 +106,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 
 1. 在租使用者中取得合格的 DLs，並使用升級命令進行升級：
 
-```
+```PowerShell
 Get-EligibleDistributionGroupForMigration | Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }
@@ -111,7 +114,7 @@ Get-EligibleDistributionGroupForMigration | Foreach-Object{
 
 2. 取得所有 DLs 的清單，並只升級合格的 DLs：
 
-```
+```PowerShell
 Get-DistributionGroup| Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }
