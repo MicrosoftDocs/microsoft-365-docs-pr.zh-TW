@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: 本文提供管理使用者設定的相關資訊。
-ms.openlocfilehash: 5fa8674b8e188605ba3f6339fd6384c37630c917
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: ca57d536794ffde4865ec86f34c8dc644ff3c1f1
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780202"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080000"
 ---
 # <a name="user-email-settings"></a>使用者電子郵件設定
 
@@ -44,4 +44,4 @@ ms.locfileid: "44780202"
 
 > [!NOTE]
 >
-> <sup>1</sup> 您只能管理完全託管於 Office 365 之信箱的電子郵件應用程式。 您無法使用此功能來管理內部部署託管之信箱的電子郵件應用程式。
+> <sup>1</sup> 您只能管理完全託管於 Microsoft 365 之信箱的電子郵件應用程式。 您無法使用此功能來管理內部部署託管之信箱的電子郵件應用程式。

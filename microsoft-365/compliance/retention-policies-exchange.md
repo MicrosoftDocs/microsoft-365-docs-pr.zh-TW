@@ -17,21 +17,24 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Exchange 電子郵件和 Exchange 公用資料夾專屬的保留行為。
-ms.openlocfilehash: aa4142db2114b2b58cc391429f1389c6b9fad52d
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 57f0bf7737522b0435b076fee46edd1736efd856
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049891"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080090"
 ---
 # <a name="learn-about-retention-policies-for-exchange"></a>了解 Exchange 的保留原則
 
 本文中的資訊可補充[了解保留原則](retention-policies.md)，因為其包含 Exchange 專用的資訊。
 
-## <a name="how-a-retention-policy-works-with-exchange-locations"></a>保留原則如何與 Exchange 位置搭配使用
+## <a name="how-a-retention-policy-works-with-exchange"></a>保留原則如何與 Exchange 搭配使用
 
-對於使用者的信箱、行事曆和其他項目，保留原則會在信箱層級套用。
+對於使用者的信箱、行事曆和其他信箱項目，保留原則會在信箱層級套用。
 
-對於公用資料夾，保留原則會套用在資料夾層級套用，而不是信箱層級。 
+對於公用資料夾，保留原則會套用至所有公用資料夾，而非資料夾或信箱層級。
+
+設定這些位置的保留原則時，會包含下列郵件項目：郵件訊息 (包括草稿) 和任何附件、工作和行事曆項目 (具有結束日期)，以及記事。 不會包含連絡人與沒有結束日期的任何工作和行事曆項目。 儲存在信箱中的其他項目 (例如 Skype 和 Teams 儲存的訊息) 會隨著其各自的保留原則包含。
 
 信箱和公用資料夾都是使用 [可復原的項目][](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) 資料夾來保留項目。 已獲指派電子文件探索權限的人員可以檢視其他使用者的 [可復原的項目] 資料夾中的項目。
   
@@ -73,7 +76,7 @@ ms.locfileid: "45049891"
   
 若要在保留原則中排除您選取的 Exchange 項目類型，請使用 [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) 和 [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) Cmdlet 搭配 `ExcludedItemClasses` 參數。
 
-若要使用保留原則 Cmdlet，您必須先[連線至安全性與合規性中心 Powershell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)。
+若要使用保留原則 Cmdlet，您必須先[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)。
 
 ## <a name="when-a-user-leaves-the-organization"></a>當使用者離開組織時 
 

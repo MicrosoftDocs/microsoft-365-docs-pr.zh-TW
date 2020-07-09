@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全域系統管理員如何變更使用者的電子郵件地址和顯示名稱。 '
-ms.openlocfilehash: 0c94114a50ce369ffb809e8f41060994f635a36c
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fedc1532bfec246392180d386a6960dbb08bd137
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936524"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45079710"
 ---
 # <a name="change-a-user-name-and-email-address"></a>變更使用名稱和電子郵件地址
 
@@ -50,7 +50,7 @@ ms.locfileid: "44936524"
     
 2. 選取使用者名稱，然後在 **[帳戶]** 索引標籤上，選取 **[管理使用者名稱]**。
     
-3. 在第一個方塊中，輸入新電子郵件地址的前半部。 如果您已將自己的網域新增到 Office 365，使用下拉式清單選擇新電子郵件別名的網域。 
+3. 在第一個方塊中，輸入新電子郵件地址的前半部。 如果您已將自己的網域新增到 Microsoft 365，請使用下拉式清單選擇新電子郵件別名的網域。 
 
 4. 選取 **[儲存變更]**。
 
@@ -63,9 +63,9 @@ ms.locfileid: "44936524"
 
 2. 選取使用者。 在飛出窗格的 **[使用者名稱/電子郵件]** 旁邊，選取 **[編輯]**。
 
-3. 在第一個方塊中，輸入新電子郵件地址的前半部。 如果您已將自己的網域新增至 Office 365，您可以使用下拉式清單選擇新電子郵件別名的網域。
+3. 在第一個方塊中，輸入新電子郵件地址的前半部。 如果您已將自己的網域新增至 Microsoft 365，您可以使用下拉式清單選擇新電子郵件別名的網域。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 ::: moniker-end
 
@@ -75,9 +75,9 @@ ms.locfileid: "44936524"
 
 2. 選取使用者。 在飛出窗格的 **[使用者名稱/電子郵件]** 旁邊，選取 **[編輯]**。
 
-3. 在第一個方塊中，輸入新電子郵件地址的前半部。 如果您已將自己的網域新增至 Office 365，您可以使用下拉式清單選擇新電子郵件別名的網域。
+3. 在第一個方塊中，輸入新電子郵件地址的前半部。 如果您已將自己的網域新增至 Microsoft 365，您可以使用下拉式清單選擇新電子郵件別名的網域。
 
-4. 選取 **[儲存]**。
+4. 選取 [儲存]****。
 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ ms.locfileid: "44936524"
 
 3. 針對您要為該人員設為主要電子郵件地址的電子郵件地址，選取 **[設為主要]**。 
     
-    **重要**：如果您是從 GoDaddy 或其他提供管理主控台的協力廠商服務購買 Office 365，就不會看到此選項。 在這種情況下，請改為登入 GoDaddy/協力廠商的管理主控台設定主要別名。 
+    **重要**：如果您是從 GoDaddy 或其他提供管理主控台的協力廠商服務購買 Microsoft 365，就不會看到此選項。 在這種情況下，請改為登入 GoDaddy/協力廠商的管理主控台設定主要別名。 
     
     補充一點，您必須是全域系統管理員才能看到此選項。如果您沒有看到這個選項，表示您無權變更使用者的名稱和主要電子郵件地址。
   
@@ -121,7 +121,7 @@ ms.locfileid: "44936524"
 
 3. 針對您要為該人員設為主要電子郵件地址的電子郵件地址，選取 **[設為主要]**。 
     
-    **重要**：如果您是從 GoDaddy 或其他提供管理主控台的協力廠商服務購買 Office 365，就不會看到此選項。 在這種情況下，請改為登入 GoDaddy/協力廠商的管理主控台設定主要別名。 
+    **重要**：如果您是從 GoDaddy 或其他提供管理主控台的協力廠商服務購買 Microsoft 365，就不會看到此選項。 在這種情況下，請改為登入 GoDaddy/協力廠商的管理主控台設定主要別名。 
     
     補充一點，您必須是全域系統管理員才能看到此選項。如果您沒有看到這個選項，表示您無權變更使用者的名稱和主要電子郵件地址。
   
@@ -131,7 +131,7 @@ ms.locfileid: "44936524"
  
   - 此變更可能需要一些時間才能生效。
   
-  - What their new username is. They'll need it to sign in to Office 365.
+  - What their new username is. They'll need it to sign in to Microsoft 365.
     
   - 如果他們使用商務用 Skype Online，請告知他們需要重新排定所有他們舉辦的商務用 Skype Online 會議，而且他們需要通知其外部連絡人更新舊的連絡資訊。
 
@@ -149,7 +149,7 @@ ms.locfileid: "44936524"
 
 3. 針對您要為該人員設為主要電子郵件地址的電子郵件地址，選取 **[設為主要]**。 
     
-    **重要**：如果您是從 GoDaddy 或其他提供管理主控台的協力廠商服務購買 Office 365，就不會看到此選項。 在這種情況下，請改為登入 GoDaddy/協力廠商的管理主控台設定主要別名。 
+    **重要**：如果您是從 GoDaddy 或其他提供管理主控台的協力廠商服務購買 Microsoft 365，就不會看到此選項。 在這種情況下，請改為登入 GoDaddy/協力廠商的管理主控台設定主要別名。 
     
     補充一點，您必須是全域系統管理員才能看到此選項。如果您沒有看到這個選項，表示您無權變更使用者的名稱和主要電子郵件地址。
   
@@ -159,7 +159,7 @@ ms.locfileid: "44936524"
  
   - 此變更可能需要一些時間才能生效。
   
-  - What their new username is. They'll need it to sign in to Office 365.
+  - What their new username is. They'll need it to sign in to Microsoft 365.
     
   - 如果他們使用商務用 Skype Online，請告知他們需要重新排定所有他們舉辦的商務用 Skype Online 會議，而且他們需要通知其外部連絡人更新舊的連絡資訊。
 
@@ -234,7 +234,7 @@ Some people might continue to send email to the person's old email address and d
 
 If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you might see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
   
-This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Microsoft 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
   
 若要修正此問題，請使用您的 Microsoft 365 系統管理員認證登入[適用於 PowerShell 的 Azure Active Directory 模組]( https://go.microsoft.com/fwlink/?LinkId=823193)， 然後使用下列語法： 
   

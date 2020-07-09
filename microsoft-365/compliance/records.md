@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可協助您在 Microsoft 365 中實施記錄管理解決方案的記錄。
-ms.openlocfilehash: 6807f8b8f76b2bc85835edf0d4402b98ea217037
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 35d1becad78cdb01402ba50ba44b277f8c511567
+ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470578"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45080100"
 ---
 # <a name="learn-about-records"></a>了解記錄
 
@@ -62,7 +62,7 @@ ms.locfileid: "44470578"
 
     如需將保留標籤套用至 SharePoint 和 OneDrive 資料夾的詳細資訊，請參閱[將預設的保留標籤套用至 SharePoint 文件庫、資料夾或文件組的所有內容](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
 
-  - **無法刪除記錄**。 如果使用者嘗試刪除 Exchange 中的記錄，該項目會移到 [可復原的項目] 資料夾中，如[如何將保留原則與 Exchange 位置搭配使用](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange-locations) (英文) 中所述。
+  - **無法刪除記錄**。 如果使用者嘗試刪除 Exchange 中的記錄，該項目會移到 [可復原的項目] 資料夾中，如[如何將保留原則與 Exchange 搭配使用](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange)中所述。
 
     如果使用者嘗試刪除 SharePoint 中的記錄，您會看到無法刪除該項目的錯誤，且該項目仍會保留在文件庫中。
 
