@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Microsoft 365 解決方案和架構中心
-summary: 瞭解如何設計適合貴組織的解決方案和架構。
+title: Microsoft 365 解決方案與架構中心
+summary: 瞭解如何設計適合貴組織的解決方案與架構。
 brand: m365
 metadata:
-  title: Microsoft 365 解決方案和架構中心
-  description: 瞭解如何設計適合貴組織的解決方案和架構
+  title: Microsoft 365 解決方案與架構中心
+  description: 瞭解如何設計適合貴組織的解決方案與架構
   ms.service: o365-solutions
   ms.topic: hub-page
   ms.collection:
@@ -18,7 +18,7 @@ metadata:
   localization_priority: Priority
   ms.openlocfilehash: 7f0da78b7d0c716532c2aca277059ff54478be5f
   ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 05/07/2020
   ms.locfileid: "44160144"
@@ -27,53 +27,53 @@ highlightedContent:
   - title: 使用 Microsoft 365 強化遠端工作者
     itemType: whats-new
     url: empower-people-to-work-remotely.md
-  - title: 使用 Microsoft 365 設定安全協同作業
+  - title: 使用 Microsoft 365 設定安全的共同作業
     itemType: get-started
     url: setup-secure-collaboration-with-teams.md
-  - title: 跨 Microsoft 365 部署威脅防護
+  - title: 在 Microsoft 365 部署威脅防護
     itemType: get-started
     url: deploy-threat-protection.md
 productDirectory:
   items:
   - title: Microsoft 365 基礎解決方案
     imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
-    summary: 尋找特定業務問題的完整指引，或從規劃實施到採用的需求。
+    summary: 尋找有關特定商務問題或需求的完整指導方針，從規劃到實施到採用。
     url: foundation-solutions-overview.md
-  - title: 工作量方案及案例指導方針
+  - title: 工作負載解決方案與案例指導方針
     imageSrc: https://docs.microsoft.com/office/media/icons/objects-blue.svg
-    summary: 將這些案例新增至基礎解決方案，以將功能新增至您的環境。
+    summary: 將這些案例新增至基礎解決方案，以在您的環境中新增功能。
     url: workload-solutions-scenarios-overview.md
-  - title: 解決方案和架構圖例
+  - title: 解決方案與架構圖
     imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
-    summary: 請查看或下載這些圖例，以瞭解 Microsoft 365 服務的功能和架構。
+    summary: 查看或下載這些說明，以瞭解 Microsoft 365 服務的功能和架構。
     url: productivity-illustrations.md
   - title: 產業專屬的指引
     imageSrc: https://docs.microsoft.com/office/media/icons/best-practices-blue.svg
     summary: 尋找專為您的行業設計的指導方針。
     url: industry-specific-guidance-overview.md
-  - title: 企業設計原則
+  - title: 套用企業設計原則
     imageSrc: https://docs.microsoft.com/office/media/icons/layout-navigation-blue.svg
-    summary: 瞭解瞭解網路、身分識別、安全性和多國架構所需的重要原則。
+    summary: 瞭解瞭解網路、身分識別、安全性和跨國架構所需的重要原則。
     url: design-principles.md
   - title: 部署藍圖和資源
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    summary: 設定共同作業與安全性和資訊保護的資源。
+    summary: 使用安全性與資訊保護功能來設定共同作業的資源。
     url: https://docs.microsoft.com/microsoft-365/?view=o365-worldwide
 additionalContent:
   sections:
-  - title: Microsoft 365 的更多資源
+  - title: 更多 Microsoft 365 適用的資源
     items:
-    - title: 適用于系統管理員和 IT 專業人員的 Microsoft 365 協助中心
-      summary: 針對 Microsoft 365 頁面上的 IT 專業人員尋找更多資源
+    - title: 適用於系統管理員和 IT 專業人員的 Microsoft 365 說明中心
+      summary: 在 Microsoft 365 頁面上尋找更多 IT 專業人員資源
       url: https://docs.microsoft.com/microsoft-365
     - title: 適用於系統管理員和 IT 專業人員的訓練
-      summary: 尋找用來管理 Microsoft 365 的訓練資源
+      summary: 尋找管理 Microsoft 365 的訓練資源
       url: https://docs.microsoft.com/learn/m365/
     - title: 適用於終端使用者的訓練
-      summary: 協助您的使用者瞭解如何使用 Microsoft 365
+      summary: 協助使用者瞭解如何使用 Microsoft 365
       url: https://support.office.com/modernworkplace
     - title: Microsoft 365 技術社群
-      summary: 與技術社區接洽
+      summary: 與技術社群接洽
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
     - title: 適用於開發人員的資源
       summary: 瞭解如何開發 Microsoft 365

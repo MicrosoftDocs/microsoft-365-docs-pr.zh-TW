@@ -1,39 +1,39 @@
 ---
 title: Microsoft 受管理的電腦服務描述
-description: 概述 Microsoft 受管理的桌面服務中包含的內容
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+description: 說明 Microsoft 受管理的電腦中包含哪些服務
+keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: b7054613ea9add542e2a4466c6feb6d911c99701
 ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/02/2020
 ms.locfileid: "43637861"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft 受管理的電腦服務描述
 
-Microsoft 受管理的桌面是一種服務，可為您的使用者提供安全的時尚體驗，並讓最新版本的 Windows 10 Enterprise edition、Microsoft 365 應用程式與 Microsoft 安全性服務保持最新狀態，包括：
+Microsoft 受管理的電腦是一種服務，可讓您的使用者使用安全的新式體驗，並使用最新版本的 Windows 10 企業版、Microsoft 365 應用程式企業版和 Microsoft 安全服務，持續保持最新的裝置：
 
 - 簡化新裝置的註冊
-- 裝置的設定
-- 保留使用者和裝置安全的功能，包括 Windows Hello、BitLocker、SecureBoot 和虛擬化安全性（根據 Microsoft 最佳作法）
-- 裝置安全性監控和修正服務
-- 應用程式相容性（透過[桌面應用程式保證](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)）
-- 管理適用于企業應用程式的 Windows 10 和 Microsoft 365 應用程式更新
-- 裝置和應用程式使用狀況的分析資料
-- 使用者對使用者的支援
-- IT 專業人員的運作支援
+- 裝置設定
+- 讓使用者和裝置保持安全的功能，包括 Windows Hello、BitLocker、SecureBoot 和虛擬化安全性（依照 Microsoft 最佳做法）
+- 裝置安全性監視和修正服務
+- 應用程式相容性，透過 [桌面應用程式保證](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
+- 管理適用于 Windows 10 和 Microsoft 365 應用程式企業版的應用程式更新
+- 有關裝置和應用程式使用狀況的分析資料
+- 為您的使用者提供 IT 支援
+- 適用于 IT 專業人員的操作支援
 
-如需 Microsoft 受管理的桌面所包含之特定服務的詳細資訊，請參閱本節中的其他主題。 如果您已決定 Microsoft 受管理的桌上型電腦，您已在[Microsoft Managed desktop 中準備好註冊](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/)的主題，為您提供準備加入服務的步驟。
+如需 Microsoft 受管理的電腦所含特定服務的詳細資訊，請參閱本節的其他主題。 如果您已經決定要使用 Microsoft 受管理的電腦，[ 準備註冊 Microsoft 受管理的電腦中 ](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/)的主題，會提供您準備加入該項服務的步驟。
 
-- [Microsoft 受管理的桌面支援的地區和語言](regions-languages.md)說明服務支援哪些地區和語言。
-- 為了保證您的使用者獲得最佳的體驗，Microsoft 受管理的電腦只支援特定裝置。 「[程式」裝置](device-list.md)會指定您可以搭配服務使用的確切裝置模型和設定，不論您是提供或使用協力廠商。
-- [裝置服務](device-services.md)指定 Microsoft 將提供給訂閱者的裝置相關服務。
-- [裝置](device-policies.md)設定說明此服務將套用至已註冊裝置的預設和安全相關行動裝置管理原則。
-- [安全性](security.md)指定從已註冊的裝置收集的資料，以及與裝置安全性、身分識別與存取管理、網路安全性和資訊安全性相關的功能和原則。
-- [更新](updates.md)描述 Microsoft 管理的桌面用來將更新部署至您的裝置的各種更新群組。
-- [支援](support.md)說明 Microsoft 為您的組織和使用者提供的支援。
-- [Operations 和 monitoring](operations-and-monitoring.md)說明變更管理如何與 Microsoft 受管理的桌面搭配運作，包括要求與準備部署變更的標準程式。
-- [應用程式需求](mmd-app-requirements.md)說明 Microsoft 受管理的桌面所允許的應用程式和行為類型，以及應用程式部署和管理的角色與責任劃分。
+- [Microsoft 受管理的電腦支援的地區和語言](regions-languages.md) 說明服務支援哪些地區和語言。
+- 為了保證使用者的最佳使用體驗，Microsoft 受管理的電腦只支援特定的裝置。 [[程式裝置]](device-list.md) 可指定您可以搭配服務使用的確切裝置模型和設定，無論您是提供客戶，還是與合作夥伴合作。
+- [[裝置服務]](device-services.md) 可指定 Microsoft 將提供給訂閱者的裝置相關服務。
+- [[設備設定]](device-policies.md) 會說明預設和安全性相關的行動裝置管理原則，服務會將這些原則套用到註冊的裝置。
+- [[安全性]](security.md) 可指定從註冊的裝置收集的資料，以及與裝置安全性、身分識別和存取管理、網路安全性及資訊安全性相關的功能和原則。
+- [[更新]](updates.md) 會描述 Microsoft 受管理的電腦用來推出裝置更新的各種更新群組。
+- [[支援]](support.md) 會說明 Microsoft 為貴組織和使用者提供的支援。
+- [[操作與監控]](operations-and-monitoring.md) 會說明變更管理如何搭配 Microsoft 受管理的電腦使用，包括要求和準備部署變更的標準程式。
+- [[應用程式需求]](mmd-app-requirements.md) 會說明 Microsoft 受管理的電腦所允許的 app 類型和行為，以及應用程式部署和管理的角色劃分和責任劃分。
