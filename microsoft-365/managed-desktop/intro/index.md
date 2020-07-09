@@ -1,13 +1,13 @@
 ---
-title: 是您的 Microsoft 受管理的電腦右側
+title: Microsoft 受管理的電腦是否適合您？
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
 ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/02/2020
 ms.locfileid: "44011908"
@@ -15,78 +15,78 @@ ms.locfileid: "44011908"
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
 
-Microsoft Managed Desktop 是一項雲端架構服務，可搭配[Microsoft 365 企業版](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview)（包括[Windows 10](https://docs.microsoft.com/windows/windows-10/)企業版和[Office 365 企業版](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)），並新增下列功能：
+Microsoft 受管理的電腦是雲端式服務，可整合 [Microsoft 365 企業版](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (包含 [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise 及 [Office 365 企業版](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) 並新增以下功能：
 
 - 使用者裝置部署
 - IT 服務管理和作業
-- 安全性監控和回應
+- 安全性監視和回應
 - 使用者支援
 
-Microsoft 受管理的桌面為企業和其目前人員提供一些挑戰的解決方案：
-- 將軟體轉變為 agile 的服務是令人望而生畏的工作。
-- 使用者想要具備具備強大功能且已連接的工作經驗。
-- 許多目前的 IT 管理及安全性處理常式已過時、耗時且成本高。
-- 企業想要專注于哪些方面讓他們獨一無二地成功，而不是維護數位基礎結構。
+Microsoft 受管理的電腦為當今企業及其員工面臨的若干挑戰，提供了解決方案：
+- 過渡至軟體即服務靈活世界的過程艱鉅。
+- 使用者希望擁有充份授權的連線工作體驗。
+- 目前許多 IT 管理和安全性程序早已過期、耗時且成本高昂。
+- 企業希望專注於能使其創造獨家成功的因素，而不願維護數位基礎結構。
 
-您的使用者將享受最新版本的 Windows 10 和 Microsoft 365 應用程式（也是更多），使用策劃且經過嚴格測試以取得最佳效能和可靠性的裝置和軟體。 此外，您決不需要擔心將此軟體保持在最新狀態，因為這會自動進行，因為這會在每個步驟中受到監控，因此會自動遵循。 和已註冊的裝置會因技術及安全性問題而受到監控，所以如果發生問題，將會有説明。
+您的使用者將使用經過精心策劃和嚴格測試以實現最佳效能和可靠裝置和軟體，享受針對企業應用 (以及其他用途) 設計的 Windows 10 和 Microsoft 365 應用程式最新版本。 另外，您無需擔心會保持該軟體的任何最新狀態，因為這會自動執行，並會遵循精心監視的階段推出順序，並在每個步驟中對其進行監視。在每個步驟的謹慎推出順序進行。 和註冊裝置系統會以 24x7 的方式監視技術和安全性問題，因此如果發生錯誤，系統會提供協助。
 
 
 ## <a name="unique-to-microsoft-managed-desktop"></a>Microsoft 受管理的電腦獨有
 
-當然，您不會停止自行取得及管理您自己的裝置和 Microsoft 365 部署。 那麼，Microsoft 管理的桌面機之後仍提供什麼功能？
+當然，我們不會阻止您自己取得和管理自己的裝置和 Microsoft 365 部署過程。 那麼除此之外，Microsoft 受管理的電腦還提供什麼功能？
 
-我們的原則及安全性基準為您的使用者提供這些優點：
+我們的原則及安全性基準可為使用者提供以下優點：
 
-- Microsoft 受管理桌面裝置的啟動時間，最長為四分之一。
-- 至少電池壽命的兩倍
-- 大約三分之一的裝置每年崩潰的次數
-- 透過[企業狀態漫遊](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)的裝置行動性，可讓使用者不論要登入的裝置都具有相同的體驗
+- Microsoft 受管理電腦裝置啟動時間只有四分之一。
+- 至少兩倍的電池使用時間
+- 裝置的每年當機次數約僅三分之一
+- 透過[企業狀態漫遊](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)提供的裝置可行動性，可讓使用者無論登入何處，都能擁有相同的體驗
 
-您的 IT 系統管理員會受益于下列功能：
+您的 IT 管理員可以從以下功能中受益：
 
-- Insights 儀表板不斷保持最新的使用狀況、可靠性、裝置健康情況，以及裝置和使用者上的其他資料
-- 大約*一十分之一*更新95% 的裝置所需的時間
-- 由於服務所提供的[裝置管理](#device-management)，將重點放在其他 IT 系統管理員活動上的更多時間。
-- 更好地知曉裝置和應用程式效能，以及來自[裝置監控](#device-monitoring)的安全性問題的及早警告。
+- 深入解析儀表板不斷為您提供有關裝置和使用者的使用情況、可靠性、裝置健康情況情況和其他資料
+- 大約僅需要*十分之一*的時間來更新 95% 的裝置
+- 我們會有更多時間專注於其他 IT 系統管理員活動，感謝這項服務提供的[裝置管理](#device-management)能力。
+- 更容易知曉裝置和應用程式效能，並從[裝置監視](#device-monitoring)來及早警告安全性問題。
 
 ## <a name="device-management"></a>裝置管理
-Microsoft 受管理的桌面會承擔管理已登錄裝置及其所用 Microsoft 軟體的負擔。
+Microsoft 受管理的電腦承擔了管理註冊裝置及其使用的 Microsoft 軟體之任務。
 
-- **硬體：** 不是您的 IT 部門必須研究及測試裝置（及其驅動程式），由 Microsoft 受管理的電腦仔細測試特定裝置，進而產生符合企業層級效能需求的[裝置策劃清單](../service-description/device-list.md)，並保證可與服務搭配使用。 您可以自行（或使用協力廠商）或重複使用已有的裝置，只要這些裝置位於 [已核准] 清單。 註冊裝置非常簡單，而且在部署之前，您也可以為使用者[自訂](../working-with-managed-desktop/config-setting-overview.md)裝置經驗的某些方面。
-- **更新：** Microsoft Managed Desktop 會針對 Windows 10 品質和功能更新、驅動程式、固件、反病毒定義，以及 Microsoft 365 應用程式的企業版更新，設定及管理[部署群組](../service-description/updates.md)的各個層面。 這包括所有更新的大量測試及驗證，以確保已註冊的裝置永遠都是最新的，並使中斷減至最少，從該進行中的工作中釋放您的 IT 部門。
-- **應用程式：** Microsoft 365 Enterprise 的一部分為您提供（及管理）許多重要的 Microsoft 應用程式。 不過，您可能也有其他您公司需要的應用程式。 不是您的 IT 部門，您必須測試、封裝及部署這些應用程式 Microsoft 協助您加以部署，並可在必要時協助[桌面應用程式的保證](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)。 若要深入瞭解，請參閱[Microsoft Managed Desktop 中的應用程式](../get-ready/apps.md)。
+- **硬體：** 您的 IT 部門不必研究並測試裝置 (及其驅動程式)，Microsoft 受管理的電腦會仔細測試特定裝置，從而產生滿足企業效能要求並保證可與服務搭配的精心策劃之[裝置清單](../service-description/device-list.md)。 您可以自行 (或配合合作夥伴) 取得裝置，或重複使用您已擁有的裝置 (如果它已在核准清單上)。 註冊裝置簡單易懂，而且部署之前，您也可以為您的使用者[自訂](../working-with-managed-desktop/config-setting-overview.md)電腦裝置體驗的特定層面。
+- **更新：** Microsoft 受管理的電腦會針對 Windows 10 品質和功能更新、驅動程式、韌體、防毒定義，以及用於企業更新的 Microsoft 365 應用程式來設定及管理[部署群組](../service-description/updates.md)的所有層面。 其中包含所有更新的周延測試和驗證，從而確保已註冊的裝置永遠保持最新狀態並降低系統中斷機率，讓您的 IT 部門擺脫這個無止盡的過程。
+- **應用程式：** 作為 Microsoft 365 企業版的功能一部分，Microsoft 會為您提供 (和管理) 數款關鍵 Microsoft 應用程式。 但是您可能還需要企業所需的其他應用程式。 無需您的 IT 部門進行測試、封裝和部署這些應用程式，Microsoft 可協助您部署之，並在必要時以[電腦 App 保證](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)來協助。 若要深入了解，請前往 [Microsoft 受管理的電腦中的應用程式](../get-ready/apps.md)。
 
 
-## <a name="device-monitoring"></a>裝置監控
+## <a name="device-monitoring"></a>裝置監視
 
-我們會協助您維護裝置的安全性，其專用的安全性作業中心會監視您的裝置，並使用 Microsoft 每月分析的獨特威脅中的資料。 這些安全性功能是內置的，而不是以後新增。
+我們會使用專門的安全性作業中心來維護您裝置的安全性，讓您監視裝置並使用 Microsoft 每月分析的獨特安全威脅資料。 我們內建這些安全性功能，而另外新增。
 
-我們也會監視裝置健康情況，並提供有關裝置效能的深入瞭解。 若要深入瞭解，請參閱[Microsoft Managed Desktop operations 和 monitoring](../service-description/operations-and-monitoring.md)
+我們也會監視裝置健康情況，並提供有關裝置效能的深入分析。 若要深入了解，請移至 [Microsoft 受管理的電腦作業及監視](../service-description/operations-and-monitoring.md)
 
 
 ## <a name="need-more-details"></a>需要更多詳細資料？
-如需 Microsoft 受管理電腦的值（包括客戶案例）的詳細資訊，請參閱[Microsoft Managed desktop](https://aka.ms/mmd)。 深入瞭解入門的場所是[藍圖](https://aka.ms/AA6jiam)、 [Forrester 總的經濟影響案例研究](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)，以及可下載的[單頁摘要](https://aka.ms/AA6ob3h)。 您可以在 Microsoft 管理的桌面[博客](https://aka.ms/AA6l2dd)中尋找最新的新聞。
+如需有關 Microsoft 受管理的電腦 (包含客戶報導) 的價值之詳細資料，請參閱 [Microsoft 受管理的電腦](https://aka.ms/mmd)。 獲得更多入門資訊的好去處為《[藍圖](https://aka.ms/AA6jiam) - [Forrester 總體經濟效益影響案例研究](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf)》，以及可下載的[單頁摘要](https://aka.ms/AA6ob3h)。 您可以在 Microsoft 受管理的電腦[部落格](https://aka.ms/AA6l2dd)中找到最新消息。
 
-如果 Microsoft 受管理的桌面對您的組織似乎是正確的，您可以深入瞭解有關該服務的詳細資訊，以及如何準備您的組織進行註冊，如何開始使用服務，以及在此後進行作業，包括您和您的使用者可以在必要時輕鬆取得協助的方式。 如果您已準備好開始使用，請從與您當地的[帳戶小組](https://pages.email.office.com/contactmmd/)聯繫。
+如果 Microsoft 受管理的電腦看來適合貴組織，您可以深入研究其他文件，文件會詳細說明該服務、如何讓組織準備好報名、如何開始使用該服務，以及此後的持續作業，包含您和您的終端使用者如何在必要時輕鬆取得協助。 如果您已經準備好要開始使用，請先連絡您的[當地帳戶團隊](https://pages.email.office.com/contactmmd/)。
 
-**更多綜述和背景**主要是針對技術和業務決策人員，這些主題會詳細說明組織與 Microsoft 之間的角色與責任劃分方式，以及 Microsoft 受管理的桌面所用技術的相關資訊，以及服務如何在 ITIL 架構中做為更廣泛的策略。
+**更多概要和背景** 主要針對技術和業務決策者撰寫的這些主題詳細介紹了組織與 Microsoft 之間的角色和職責劃分、更多有關 Microsoft 受管理的電腦中使用的技術資訊，以及服務如何以 ITIL 框架的一部分之角色融入更廣泛的策略中。
 
-- [Microsoft 受管理的桌面角色與責任](roles-and-responsibilities.md)
-- [Microsoft 受管理的桌面技術](technologies.md)
+- [Microsoft 受管理的電腦角色和責任](roles-and-responsibilities.md)
+- [Microsoft 受管理的電腦技術](technologies.md)
 - [Microsoft 受管理的電腦和 ITIL](../MMD-and-ITSM.md)
 - [合規性](compliance.md)
 - [Microsoft 受管理的電腦服務描述](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
-**準備好進行登記**下列主題說明您在組織中準備註冊所需的步驟，包括檢查您的環境是否符合主要必要條件、設定網路、設定憑證，以及準備應用程式。
+**準備好註冊** 這些主題描述了在組織中為註冊做準備所必須採取的步驟，包含確定您的環境是否滿足關鍵的必備條件，設定網路，設定證書，以及應用程式準備。
 
 - [Microsoft 受管理電腦的先決條件](../get-ready/prerequisites.md)
-- [Microsoft 受管理電腦的網路設定](../get-ready/network.md)
+- [Microsoft 受管理的電腦的網路設定](../get-ready/network.md)
 - [為 Microsoft 受管理的電腦準備備內部部署資源存取權](../get-ready/authentication.md)
 - [為 Microsoft 受管理的電腦準備對應磁碟機](../get-ready/mapped-drives.md)
 - [為 Microsoft 受管理的電腦準備認證和網路設定檔](../get-ready/certs-wifi-lan.md)
-- [Microsoft 受管理電腦中的應用程式](../get-ready/apps.md)
+- [Microsoft 受管理的電腦中的應用程式](../get-ready/apps.md)
 
-**快速入門**當您準備好註冊後，本節會包含要執行的步驟，以實際加入服務、取得及設定裝置、準備您的使用者，以及部署應用程式。
+**開始** 您準備好註冊之後，本節將介紹實際加入服務，取得和設定裝置，為讓終端使用者做好準備，以及部署應用程式的遵循步驟。
 
 - [在系統管理入口網站中新增和驗證系統管理員連絡人](../get-started/add-admin-contacts.md)
 - [調整條件式存取](../get-started/conditional-access.md)
@@ -97,11 +97,11 @@ Microsoft 受管理的桌面會承擔管理已登錄裝置及其所用 Microsoft
 - [讓您的使用者準備好使用裝置](../get-started/get-started-devices.md)
 - [將應用程式部署至裝置](../get-started/deploy-apps.md)
 
-**使用 Microsoft 受管理的電腦**本節包含服務的日常生活資訊，例如，您的 IT 系統管理員可以如何在需要時取得支援、使用者如何獲得支援、如何在部署時管理應用程式，以及如何在裝置上使用可自訂的設定。
+**使用 Microsoft 受管理的電腦** 本節包含與服務相關的日常工作資訊，例如 IT 系統管理員如何取得支援、您的使用者如何取得支援、部署後管理應用程式，以及如何在裝置上使用可自訂的設定。
 
-- [Microsoft 受管理的電腦的系統管理員支援](../working-with-managed-desktop/admin-support.md)
-- [取得使用者的協助](../working-with-managed-desktop/end-user-support.md)
-- [可設定的設定-Microsoft 受管理的電腦](../working-with-managed-desktop/config-setting-overview.md)
+- [Microsoft 受管理電腦的系統管理員支援](../working-with-managed-desktop/admin-support.md)
+- [為終端使用者取得說明](../working-with-managed-desktop/end-user-support.md)
+- [可組態的設定 - Microsoft 受管理的電腦](../working-with-managed-desktop/config-setting-overview.md)
 
 
 
