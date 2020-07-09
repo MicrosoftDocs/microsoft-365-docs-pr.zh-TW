@@ -20,6 +20,7 @@ description: 瞭解如何使用保留原則來保留或刪除內容，以及如�
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: ffd7b644f33e7f432c62c182e2d69e07c8bce730
 ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/19/2020
 ms.locfileid: "44818923"
