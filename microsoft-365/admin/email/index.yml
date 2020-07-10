@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: 管理電子郵件和行事曆
-summary: 請參閱這些資源，以協助系統管理員進行常見的工作，或參閱左側的功能窗格以取得完整清單。
+summary: 請參閱這些資源，以協助系統管理員執行一般工作，或查看左側的瀏覽窗格以取得完整清單。
 metadata:
   title: 管理電子郵件和行事曆
-  description: 管理電子郵件設定、通訊群組、安全性設定，以及設定共用信箱
+  description: 管理電子郵件設定、通訊群組和安全性設定，以及設定共用信箱
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: c35874ec774b0e8753b0bfacb2dd795a4f000188
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780214"
@@ -28,7 +28,7 @@ landingContent:
       url: email-collaboration.md
   - linkListType: how-to-guide
     links:
-    - text: 新增另一個電子郵件別名
+    - text: 新增其他電子郵件別名
       url: add-another-email-alias-for-a-user.md
     - text: 使用您的自訂網域
       url: change-email-address.md
@@ -42,7 +42,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 設定共用信箱設定
+    - text: 設置共用信箱的設定
       url: configure-a-shared-mailbox.md
     - text: 將使用者信箱轉換為共用信箱
       url: convert-user-mailbox-to-shared-mailbox.md
@@ -54,11 +54,11 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 在 outlook 中管理您的行事曆和連絡人
+    - text: 在 Outlook 中管理行事曆和連絡人
       url: https://support.microsoft.com/office/631a182a-21e0-4e41-8fa2-0d83e55da02d
   - linkListType: video
     links:
-    - text: 建立共用的行事曆
+    - text: 建立共用行事曆
       url: https://support.microsoft.com/office/8385667b-d758-4489-a53f-f542dd01e6ff
 - title: 解決電子郵件連線和傳遞問題
   linkLists:
@@ -66,9 +66,9 @@ landingContent:
     links:
     - text: 尋找並修正電子郵件傳遞問題
       url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
-    - text: 修正並尋找新增您的網域或 DNS 記錄後的問題
+    - text: 尋找並修正新增網域或 DNS 記錄後所發生的問題
       url: ../get-help-with-domains/find-and-fix-issues.md
-    - text: 復原使用者信箱中已刪除的電子郵件
+    - text: 復原使用者信箱中刪除的郵件
       url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
     - text: 修正 Microsoft 365 與 Exchange Online 中的 Outlook 連線問題
       url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f

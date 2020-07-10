@@ -15,7 +15,7 @@ metadata:
   ms.date: 11/29/2019
   ms.openlocfilehash: 31685a610f6560296dc72b7624f81a5927d56ec2
   ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 05/16/2020
   ms.locfileid: "44268254"
@@ -58,7 +58,7 @@ conceptualContent:
       text: Windows 10 企業版
     - url: https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps
       itemType: deploy
-      text: Microsoft 365 Apps 企業版
+      text: 企業用 Microsoft 365 應用程式
     - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
       itemType: deploy
       text: Microsoft Intune

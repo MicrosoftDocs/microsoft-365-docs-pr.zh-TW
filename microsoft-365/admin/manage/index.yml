@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: 管理您的資料和服務
-summary: 請參閱這些資源，以協助系統管理員進行常見的工作，或參閱左側的功能窗格以取得完整清單。
+summary: 請參閱這些資源，以協助系統管理員執行一般工作，或查看左側的瀏覽窗格以取得完整清單。
 metadata:
   title: 管理您的資料和服務
-  description: 監視服務的狀態、備份資料、安裝增益集，以及升級至最新的應用程式
+  description: 監控您的服務狀態、備份資料、安裝增益集，以及升級到最新的應用程式
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,20 +13,20 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 3aba9a081fadb85a3c052d0b11d6ff49dbffa0ca
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44780094"
 landingContent:
-- title: 監視服務的狀態
+- title: 監控服務的狀態
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: 使用報告來監視使用者活動
       url: ../activity-reports/activity-reports.md
-    - text: 監視流量分析
+    - text: 監視使用情況分析
       url: ../usage-analytics/usage-analytics.md
-    - text: 啟用流量分析
+    - text: 啟用使用情況分析
       url: ../usage-analytics/enable-usage-analytics.md
     - text: 變更您的組織連絡人資訊
       url: change-address-contact-and-more.md
@@ -36,21 +36,21 @@ landingContent:
       url: release-options-in-office-365.md
     - text: 顯示或隱藏新功能
       url: show-hide-new-features.md
-- title: 封鎖使用者存取和備份資料
+- title: 封鎖使用者存取權並備份資料
   linkLists:
   - linkListType: how-to-guide
     links:
     - text: 存取及備份離職使用者的資料
       url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
-    - text: 設定電子郵件保留（Microsoft 365 商務版）
+    - text: 設定電子郵件保留 (Microsoft 365 商務進階版)
       url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
-    - text: 從裝置移除公司資料（Microsoft 365 商務版 Premium）
+    - text: 從裝置移除公司資料 (Microsoft 365 商務進階版)
       url: ../../business/remove-company-data.md
 - title: 管理增益集和應用程式
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 將使用者升級到最新的應用程式
+    - text: 將使用者升級到最新應用程式
       url: ../setup/upgrade-users-to-latest-office-client.md
     - text: 自訂應用程式啟動器
       url: customize-the-app-launcher.md
@@ -62,9 +62,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Microsoft 團隊管理檔
+    - text: Microsoft Teams 系統管理文件
       url: https://docs.microsoft.com/en-us/microsoftteams/
-    - text: 一起使用 Outlook 和團隊
+    - text: 搭配使用 Outlook 與 Teams
       url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
   - linkListType: learn
     links:
@@ -74,9 +74,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: 適用于 IT 專業人員和系統管理員的 SharePoint 檔
+    - text: 適用於 IT 專業人員和系統管理員的 SharePoint 文件
       url: https://docs.microsoft.com/sharepoint/
-    - text: 適用于 IT 專業人員和系統管理員的 OneDrive 檔
+    - text: 適用於 IT 專業人員和系統管理員的 OneDrive 文件
       url: https://docs.microsoft.com/onedrive/
   - linkListType: how-to-guide
     links:

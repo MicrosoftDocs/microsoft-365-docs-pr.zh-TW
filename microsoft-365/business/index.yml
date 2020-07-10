@@ -1,9 +1,9 @@
 ### YamlMime:Hub
-title: Microsoft 365 商務版 Premium 資源
-summary: Microsoft 365 商務進階版 (之前稱為 Microsoft 365 商務版) 是一項全面的訂閱服務，適用於員工人數低於 300 人的企業。 它會以高級安全性和裝置管理功能，整合您最喜歡的 Office 生產力應用程式和服務和共同作業工具，例如 Microsoft 團隊。
+title: Microsoft 365 商務進階版資源
+summary: Microsoft 365 商務進階版 (之前稱為 Microsoft 365 商務版) 是一項全面的訂閱服務，適用於員工人數低於 300 人的企業。 它整合了您最愛的 Office 生產力應用程式和服務，以及 Microsoft Teams 等共同作業工具，並具有進階安全性和裝置管理功能。
 brand: m365
 metadata:
-  title: Microsoft 365 商務版 Premium 資源
+  title: Microsoft 365 商務進階版資源
   description: 描述
   ms.service: o365-administration
   ms.topic: hub-page
@@ -14,24 +14,24 @@ metadata:
   ms.date: 10/01/2019
   ms.openlocfilehash: fe849499da31b3be4ab52144d1a39f8a1bc7a212
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44786187"
 productDirectory:
-  title: 使用 Microsoft 365 商務版加強遠端工作
+  title: 使用 Microsoft 365 商務進階版保護遠端工作
   items:
   - title: 讀取
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-    summary: 使用 Microsoft 365 商務版優質啟用安全遠端作業的最佳方式。
+    summary: 讓您能夠使用 Microsoft 365 商務進階版來保護遠端工作的最佳方式。
     url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
   - title: 取得免費的合作夥伴套件
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: 適用于合作夥伴進行遠端工作的實用指導方針和走向市場資源。
+    summary: 實用的指導方針和上市資源，讓合作夥伴保護遠端工作。
     url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
-  - title: 新功能
+  - title: 新功能？
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 已進入 Microsoft 365 商務版 Premium！
+    summary: Azure AD Premium P1 即將在 Microsoft 365 商務進階版中推出！
     url: https://aka.ms/aadp1smbblog
 conceptualContent:
   items:
@@ -42,10 +42,10 @@ conceptualContent:
       text: 概觀
     - url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
       itemType: video
-      text: Microsoft 365 商務特優訓練
+      text: Microsoft 365 商務進階版訓練
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
       itemType: overview
-      text: 比較計畫
+      text: 比較方案
     - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description
       itemType: reference
       text: 服務描述
@@ -56,27 +56,27 @@ conceptualContent:
     links:
     - url: set-up.md
       itemType: how-to-guide
-      text: 1. 執行安裝精靈
+      text: 1. 執行設定精靈
     - url: secure-win-10-pcs.md
       itemType: how-to-guide
       text: 2. 保護您的電腦
     - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
       itemType: video
-      text: 3. 設定小組
+      text: 3. 設定 Teams
     - url: https://support.microsoft.com/office/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
       itemType: get-started
-      text: 4. 我有其他問題
-  - title: 合作夥伴的資源（僅限英文版）
+      text: 4. 安裝 Office
+  - title: 合作夥伴的資源 (僅提供英文版)
     links:
     - url: https://www.microsoft.com/microsoft-365/partners/business
       itemType: overview
       text: 合作夥伴頁面
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
       itemType: download
-      text: 音調卡片（客戶聚焦）
+      text: 銷售簡報 (聚焦客戶)
     - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
       itemType: download
-      text: 音調組（夥伴焦點）
+      text: 銷售簡報 (聚焦合作夥伴)
     - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
       itemType: download
       text: 技術基礎
@@ -107,7 +107,7 @@ conceptualContent:
       text: 設定 MFA
     - url: https://docs.microsoft.com/microsoft-365/business/increase-threat-protection#protect-against-ransomware
       itemType: how-to-guide
-      text: 防護勒索軟體
+      text: 防範勒索軟體
     - url: https://docs.microsoft.com/azure/active-directory/conditional-access/overview
       itemType: overview
       text: 條件式存取
@@ -135,22 +135,22 @@ conceptualContent:
     links:
     - url: view-policies-and-devices.md
       itemType: how-to-guide
-      text: 電腦 & 行動裝置
+      text: 電腦與行動裝置
     - url: remove-company-data.md
       itemType: how-to-guide
       text: 移除公司資料
     - url: reset-devices-to-factory-settings.md
       itemType: how-to-guide
-      text: 擦除和重設
+      text: 抹除並重設
     - url: https://docs.microsoft.com/intune/index
       itemType: overview
       text: Intune
     - url: manage-windows-devices.md
       itemType: how-to-guide
-      text: 設定混合式 Azure AD 聯結
+      text: 設定混合式 Azure AD Join
     - url: access-resources.md
       itemType: how-to-guide
-      text: 設定 Azure AD join
+      text: 設定 Azure AD Join
     - url: https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot
       text: Windows Autopilot
       itemType: overview
@@ -164,18 +164,18 @@ conceptualContent:
       text: 安全分數
     - url: https://docs.microsoft.com/intune/apps/app-protection-policies-monitor
       itemType: overview
-      text: Intune 應用程式保護原則報告
+      text: Inunte 應用程式保護原則報表
     - url: https://docs.microsoft.com/office365/enterprise/view-service-health
       itemType: how-to-guide
-      text: 狀況監視警示
+      text: 健康情況監視警示
     footerLink:
       url: https://docs.microsoft.com/microsoft-365/security/
       text: 查看更多
-  - title: 支援和社區
+  - title: 支援與社群
     links:
     - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
       itemType: whats-new
-      text: Announcements
+      text: 公告
     - url: https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988
       itemType: video
       text: 取得說明
@@ -184,12 +184,12 @@ conceptualContent:
       text: 傳送意見反應
     - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
       itemType: overview
-      text: 中小企業技術社區
-  - title: 我要如何...
+      text: 中小型企業技術社群
+  - title: 我如何...
     links:
     - url: sign-up.md
       itemType: get-started
-      text: 註冊 Microsoft 365 商務版 Premium
+      text: 註冊取得 Microsoft 365 商務進階版
     - url: migrate-to-microsoft-365-business.md
       itemType: how-to-guide
       text: 從 Microsoft 365 商務標準版移轉
@@ -198,7 +198,7 @@ conceptualContent:
       text: 從 Office 365 E3 移轉
     - url: migrate-from-microsoft-365-business-to-microsoft-365-enterprise.md
       itemType: how-to-guide
-      text: 遷移至 Microsoft 365 企業版 E3
+      text: 移轉至 Microsoft 365 企業版 E3
     footerLink:
       url: microsoft-365-business-overview.md
       text: 查看更多
