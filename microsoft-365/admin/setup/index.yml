@@ -1,8 +1,8 @@
 ### YamlMime:Landing
 title: 開始使用
-summary: 請參閱這些資源，以協助系統管理員進行常見的工作，或參閱左側的功能窗格以取得完整清單。
+summary: 請參閱這些資源，以協助系統管理員執行一般工作，或查看左側的瀏覽窗格以取得完整清單。
 metadata:
-  title: 入門
+  title: 開始使用
   description: 設定您的訂閱和電子郵件。 新增使用者和安裝應用程式
   ms.service: O365-administration
   ms.topic: landing-page
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 0af560ae2a7f8aa028e0cb493c9070f78f93e0a4
   ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 06/17/2020
   ms.locfileid: "44779842"
@@ -26,13 +26,13 @@ landingContent:
       url: ../admin-overview/sign-up-for-office-365.md
   - linkListType: video
     links:
-    - text: 註冊並設定 Microsoft 商業基本版
+    - text: 註冊並設定 Microsoft 商務基本版
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
     - text: 註冊 Microsoft 商務標準版
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
-    - text: 註冊 Microsoft 商務版 Premium
+    - text: 註冊 Microsoft 商務進階版
       url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
-- title: 引導設定
+- title: 引導式設定
   linkLists:
   - linkListType: overview
     links:
@@ -40,19 +40,19 @@ landingContent:
       url: plan-your-setup.md
   - linkListType: how-to-guide
     links:
-    - text: 設定 Microsoft 商業基本版
+    - text: 設定 Microsoft 商務基本版
       url: setup-business-basic.md
-    - text: 設定 Microsoft 商務標準
+    - text: 設定 Microsoft 商務標準版
       url: setup-business-standard.md
-    - text: 設定 Microsoft 商務津貼
+    - text: 設定 Microsoft 商務進階版
       url: ../../business/set-up.md
-    - text: 設定 Microsoft 商務應用程式
+    - text: 設定 Microsoft Apps 商務版
       url: setup-apps-for-business.md
 - title: 完成設定
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 遷移資料
+    - text: 移轉資料
       url: migrate-email-and-contacts-admin.md
     - text: 安裝應用程式
       url: install-applications.md
@@ -66,5 +66,5 @@ landingContent:
       url: https://support.microsoft.com/office/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
     - text: 訓練使用者
       url: https://support.microsoft.com/training
-    - text: 將電腦連線至 Microsoft 365 商務版 Premium
+    - text: 將電腦連線至 Microsoft 365 商務進階版
       url: https://support.microsoft.com/office/cd5716f6-05de-430b-ac94-662d5ee71d07

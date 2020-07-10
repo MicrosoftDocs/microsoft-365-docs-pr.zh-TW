@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft 365 系統管理中心說明
-summary: 探索可在 Microsoft 365 系統管理中心中運作的資源。
+summary: 探索在 Microsoft 365 系統管理中心工作所需的資源。
 brand: m365
 metadata:
   title: Microsoft 365 系統管理中心說明
-  description: 在 Microsoft 365 系統管理中心內，設定和管理 Office 365 和 Microsoft 365。
+  description: 在 Microsoft 365 系統管理中心中設定及管理 Office 365 和 Microsoft 365。
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
@@ -15,32 +15,32 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 9d8104660c4686b2240c292509a499a25308d9f6
   ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44799956"
 highlightedContent:
   items:
-  - title: Office 365 現在是 Microsoft 365！
+  - title: Office 365 現在名為 Microsoft 365!
     itemType: whats-new
     url: new-subscription-names.md
-  - title: Microsoft 365 系統管理中心的新增功能！
+  - title: Microsoft 365 系統管理中心的新功能!
     itemType: whats-new
     url: whats-new-in-preview.md
-  - title: 保持最新的 Microsoft 365 變更
+  - title: 隨時掌握 Microsoft 365 變更
     itemType: how-to-guide
     url: manage/stay-on-top-of-updates.md
 productDirectory:
   title: 入門
-  summary: 設定您的訂閱和電子郵件、新增使用者和安裝應用程式。
+  summary: 設定您的訂閱和電子郵件、新增使用者，以及安裝應用程式。
   items:
   - title: 入門
     imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
     summary: 註冊並設定 Microsoft 365。
     url: setup/index.yml
-  - title: 遷移資料
+  - title: 移轉資料
     imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
-    summary: 將資料從其他服務移至 Microsoft 365。
+    summary: 將您的資料從其他服務移至 Microsoft 365。
     url: setup/migrate-email-and-contacts-admin.md
   - title: 安裝應用程式
     imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
@@ -48,37 +48,37 @@ productDirectory:
     url: setup/install-applications.md
   - title: 訓練使用者
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-    summary: 協助貴組織中的使用者瞭解如何儲存及共用檔案，以及如何使用 Office 應用程式。
+    summary: 協助貴組織的使用者了解如何儲存及共用檔案，以及如何使用 Office 應用程式。
     url: https://support.microsoft.com/training
 additionalContent:
   sections:
   - title: 管理
-    summary: 管理您的訂閱、服務和使用者、保護您的業務，並取得協助疑難排解。
+    summary: 管理您的訂閱、服務及使用者、保護您企業的安全，並協助疑難排解。
     items:
     - title: Microsoft 365 系統管理中心概觀
-      summary: 深入瞭解管理角色、如何保持最新的變更，以及如何自訂訂閱。
+      summary: 了解系統管理員角色、如何掌握變更，以及如何自訂您的訂閱。
       url: admin-overview/about-the-admin-center.md
     - title: 使用者和群組
-      summary: 管理密碼、新增及移除使用者、設定及管理群組、管理來賓存取，以及指派使用者授權。
+      summary: 管理密碼、新增和移除使用者、設定及管理群組、管理來賓存取，以及指派使用者授權。
       url: add-users/index.yml
     - title: 電子郵件和行事曆
-      summary: 管理電子郵件設定、通訊群組及安全性設定，以及設定共用信箱。
+      summary: 管理電子郵件設定、通訊群組和安全性設定，以及設定共用信箱。
       url: email/index.yml
     - title: 網域
-      summary: 深入瞭解網域、設定及管理網域，以及更新 DNS 記錄。
+      summary: 了解網域、設定及管理網域，以及更新 DNS 記錄。
       url: setup/add-domain.md
     - title: 您的資料和服務
-      summary: 監視服務的狀態、備份資料、安裝增益集，以及升級至最新的應用程式。
+      summary: 監控您的服務狀態、備份資料、安裝增益集，以及升級到最新的應用程式。
       url: manage/index.yml
     - title: 訂閱與計費
-      summary: 管理票據、訂閱及產品授權、更新支付方式，以及購買其他服務和儲存區。
+      summary: 管理帳單、訂閱和產品授權、更新付款條件，並購買額外的服務和儲存空間。
       url: ../commerce/index.yml
     - title: 保護您的組織
-      summary: 深入瞭解設定多因素驗證（MFA）的最佳方法，並瞭解 Microsoft 安全分數和 GDPR。
+      summary: 了解加強組織安全的最佳方式，例如設定多重要素驗證（MFA），還能深入了解 Microsoft 安全分數與 GDPR。
       url: security-and-compliance/secure-your-business-data.md
     - title: 與客戶合作
-      summary: 共用檔，並使用團隊共同作業和開會。
+      summary: 共用文件和使用團隊共同作業及開會。
       url: work-with-customers/index.yml
     - title: 疑難排解
-      summary: 存取資源以協助您疑難排解和修正 Office 產品或服務的問題。
+      summary: 存取資源來協助您疑難排解和修正 Office 產品或服務的問題。
       url: https://docs.microsoft.com/office/troubleshoot/
