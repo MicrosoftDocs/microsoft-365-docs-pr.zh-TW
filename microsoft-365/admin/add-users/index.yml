@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: 管理使用者和群組
-summary: 請參閱這些資源，以協助系統管理員進行常見的工作，或參閱左側的功能窗格以取得完整清單。
+summary: 請參閱這些資源，以協助系統管理員執行一般工作，或查看左側的瀏覽窗格以取得完整清單。
 metadata:
   title: 管理使用者和群組
-  description: 管理密碼、新增及移除使用者、設定群組，以及管理授權
+  description: 管理密碼、新增和移除使用者、設定群組，以及管理授權
   ms.service: O365-administration
   ms.subservice: subservice
   ms.topic: landing-page
@@ -14,7 +14,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 25b100e8f685c94d3dccc290e8f80b25e24a6d9b
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44785469"
@@ -29,7 +29,7 @@ landingContent:
       url: add-users.md
     - text: 將來賓新增至 Microsoft 365 群組
       url: ../create-groups/manage-guest-access-in-groups.md
-    - text: 新增另一個電子郵件地址
+    - text: 新增其他電子郵件地址
       url: ../email/add-another-email-alias-for-a-user.md
     - text: 建立共用信箱
       url: ../email/create-a-shared-mailbox.md
@@ -53,7 +53,7 @@ landingContent:
       url: ../create-groups/add-or-remove-members-from-groups.md
     - text: 還原或復原已刪除的群組
       url: ../create-groups/restore-deleted-group.md
-    - text: 管理群組中的來賓存取
+    - text: 在群組中管理來賓存取
       url: ../create-groups/manage-guest-access-in-groups.md
 - title: 管理密碼
   linkLists:
@@ -65,7 +65,7 @@ landingContent:
       url: set-password-to-never-expire.md
     - text: 讓使用者重設自己的密碼
       url: let-users-reset-passwords.md
-    - text: 為您的組織設定密碼到期原則
+    - text: 設定組織的密碼到期原則
       url: ../manage/set-password-expiration-policy.md
     - text: 重設系統管理員密碼
       url: reset-passwords.md#reset-my-admin-password
@@ -77,11 +77,11 @@ landingContent:
       url: delete-a-user.md
     - text: 存取及備份離職使用者的資料
       url: get-access-to-and-back-up-a-former-user-s-data.md
-    - text: 將電子郵件轉寄給另一位使用者
+    - text: 將電子郵件轉寄給其他使用者
       url: ../email/configure-email-forwarding.md
     - text: 移除授權
       url: ../manage/remove-licenses-from-users.md
-    - text: 還原已刪除的使用者
+    - text: 還原刪除的使用者
       url: restore-user.md
-    - text: 從裝置移除公司資料（Microsoft 365 商務版 Premium）
+    - text: 從裝置移除公司資料 (Microsoft 365 商務進階版)
       url: ../../business/remove-company-data.md
