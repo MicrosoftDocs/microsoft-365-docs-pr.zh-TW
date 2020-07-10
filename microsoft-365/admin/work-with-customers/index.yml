@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: 與客戶合作
-summary: 請參閱這些資源，以協助系統管理員進行常見的工作，或參閱左側的功能窗格以取得完整清單。
+summary: 請參閱這些資源，以協助系統管理員執行一般工作，或查看左側的瀏覽窗格以取得完整清單。
 metadata:
   title: 與客戶合作
-  description: 共用檔和使用團隊共同作業和開會
+  description: 共用文件和使用 Teams 共同作業及開會
   ms.service: O365-administration
   ms.topic: landing-page
   author: sirkkuw
@@ -13,7 +13,7 @@ metadata:
   ms.custom: AdminSurgePortfolio
   ms.openlocfilehash: 80aea7aef92cd584df0c35b0d14ec71e0ad738b7
   ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: zh-TW
   ms.lasthandoff: 06/18/2020
   ms.locfileid: "44785457"
@@ -30,11 +30,11 @@ landingContent:
     links:
     - text: 建立具有來賓使用者的團隊
       url: https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7
-    - text: 將小組加入為來賓
+    - text: 以來賓身分加入團隊
       url: https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824
     - text: 與員工和客戶聊天
       url: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
-    - text: 排程具有來賓使用者的小組會議
+    - text: 與來賓使用者排定 Teams 會議時間
       url: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
     - text: 加入包含來賓使用者的 Teams 會議
       url: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8
