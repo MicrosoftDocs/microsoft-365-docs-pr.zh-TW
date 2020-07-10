@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
-ms.openlocfilehash: 15d2dd8417cf0a22b8db63f64c0bbb288e74880c
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: c97106597733460caeab8d1d398ff81e23dd2727
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45046061"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45068112"
 ---
 # <a name="automate-event-based-retention"></a>自動化事件型保留
 
@@ -159,10 +159,10 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 
 ##### <a name="create-an-event"></a>建立事件
 
-呼叫 REST API 的範例程式碼
+呼叫 REST API 的範例程式碼：
 
 - **方法**：POST
-- **URL**：https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **URL**：`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **標頭**：Key = Content-Type, Value = application/atom+xml
 - **本文**：
     
@@ -298,7 +298,7 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 | 401               | 授權失敗                                 |
 | 403               | 驗證失敗                                |
 
-#### <a name="using-powershell-ver6-or-higher-or-any-http-client"></a>使用 PowerShell (6 或更新版本) 或任何 HTTP 用戶端
+#### <a name="using-powershell-version-6-or-later-or-any-http-client"></a>使用 PowerShell (版本 6 或更新版本) 或任何 HTTP 用戶端
 
 步驟 1：連線至 PowerShell。
 
@@ -452,7 +452,9 @@ A manufacturing company that produces different lines of products creates many m
 
 ### <a name="using-redirect-302-response-results-to-call-the-rest-api"></a>使用重新導向 302 回應結果呼叫 REST API
 
-1. 使用 REST API URL 叫用 POST 保留事件呼叫，<https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (需要全域管理員權限)。
+1. 使用 REST API URL 叫用 POST 保留事件呼叫：`https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+    
+    需要全域系統管理員權限。
 
 2. 檢查回應碼。 如果是 302，則從回應標頭的 Location 屬性取得重新導向的 URL。
 

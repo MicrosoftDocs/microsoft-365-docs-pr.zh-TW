@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: 7090a9fcc279f9bedc5f86b43952a12e988069e1
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
+ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049913"
+ms.locfileid: "45052722"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 
 這些實驗室是設計來協助您規劃、測試及驗證執行 Windows 10 企業版和 Microsoft 365 Apps 企業版的桌面部署和管理。 實驗室涵蓋桌面部署輪中概述的步驟和工具，跨越 Microsoft Endpoint Configuration Manager、電腦分析、Office 自訂工具、OneDrive、Windows Autopilot，以及其他。
 
-強烈建議準備結束 Windows 7 生命週期的組織進行這項訓練，如果您目前使用的是 Windows 10 和 Office 365 Plus 或 Office 2019，也適用這項訓練。 此外，如果您是獨立環境，實驗室非常適合用來探索部署工具更新，並測試與部署相關的自動化。
+強烈建議準備結束 Windows 7 生命週期的組織進行這項訓練，如果您目前使用的是 Windows 10 和 Microsoft 365 Apps 企業版 (Office 365 專業增強版) 或 Office 2019，也適用這項訓練。 此外，如果您是獨立環境，實驗室非常適合用來探索部署工具更新，並測試與部署相關的自動化。
 
 [下載 Windows 和 Office 部署的 Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
@@ -74,6 +74,7 @@ ms.locfileid: "45049913"
   - 使用 Configuration Manager 和 Microsoft Intune 的企業管理部署
   - 使用 Microsoft Intune 部署及管理應用程式
   - 使用商務用 Microsoft Store 進行應用程式部署和自助安裝
+  - 新增！ 安裝 Microsoft Teams 
 
 ### <a name="user-file-and-settings-migration"></a>使用者檔案和設定移轉
 
@@ -108,8 +109,7 @@ ms.locfileid: "45049913"
   - 使用 Configuration Manager 和 Intune 來維護 Windows 10
   - 使用 Configuration Manager 維護 Microsoft 365 Apps 企業版
   - 新增！ 使用 Configuration Manager 和 Intune 更新 Office
-  - 新增！ 安裝 Microsoft Teams 
-
+  
 ### <a name="new-windows-virtual-desktop"></a>新增！ Windows 虛擬桌面
   - Windows 虛擬桌面：準備、部署、最佳化 
 

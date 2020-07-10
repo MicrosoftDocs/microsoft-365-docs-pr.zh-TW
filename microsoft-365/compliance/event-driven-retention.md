@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常為記錄管理解決方案的一部分，您可以設定保留標籤，以根據您發現的事件來啟動保留期間。
-ms.openlocfilehash: f2cf60eac1197ed7be3fd8cbbe69e41a37614f86
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: a0e0025d23bda36d8b9e6315cb932e58d4237a5c
+ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45048288"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45068122"
 ---
 # <a name="overview-of-event-driven-retention"></a>事件導向保留的概觀
 
@@ -105,14 +105,16 @@ Event-driven retention is typically used as part of a records-management process
 在標籤設定中，在您選擇讓標籤根據 **[事件]** 的選項後，您會看見 **[選擇事件類型]** 的選項。 事件類型只是您要讓標籤與事件建立關聯之事件的一般描述。
   
 例如，如果您建立名為「產品生命週期」的事件類型，您會建立事件型保留標籤，具有名稱說明您想要將標籤套用到什麼類型的內容，例如「產品開發檔案」或「產品業務決策記錄」。
-  
+
+選取其中一個內建的事件類型，或建立您自己的事件類型，然後選取它。
+
 在您選擇事件類型並儲存保留標籤之後，就無法變更事件類型。
   
 ![建立或選擇事件類型的選項](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>步驟 3：發佈或自動套用事件型保留標籤
 
-和任何保留標籤一樣，您必須[發佈或自動套用](create-retention-labels.md)事件型標籤，這樣標籤才會手動或自動套用到內容。
+和任何保留標籤一樣，您必須[發佈或自動套用](create-retention-labels.md)事件型標籤，以便將它套用至文件或電子郵件。
 
 > [!NOTE]
 > 如果您是從 [記錄管理] ****  >  [檔案方案]**** 索引標籤或 [資料控管]****  >  [標籤]**** 索引標籤選取事件型保留標籤，則 [自動套用標籤]**** 按鈕無法使用。
@@ -126,7 +128,7 @@ Event-driven retention is typically used as part of a records-management process
 
 ### <a name="step-4-enter-an-asset-id"></a>步驟 4：輸入資產識別碼
 
-After an event-driven label is applied to content, you can enter an asset ID for each item. For example, your organization might use:
+在事件型標籤套用到內容之後，您可以輸入每個項目的資產識別碼。 例如，貴組織可能使用：
   
 - 產品代碼，您可以用來保留僅限特定產品的內容。
     
@@ -134,13 +136,13 @@ After an event-driven label is applied to content, you can enter an asset ID for
     
 - 員工識別碼，您可以用來保留僅限特定人員的內容。
     
-資產識別碼只是 SharePoint 和 OneDrive 中的另一個文件屬性。 貴組織可能已經使用其他文件屬性和識別碼來分類內容。 若是如此，您也可以在建立事件時使用這些屬性和值，請參閱後續的步驟 6。 重點是，貴組織必須在文件屬性中使用一些屬性:值組合，以將該項目與事件類型建立關聯。
+資產識別碼只是 SharePoint 和 OneDrive 中可用的另一個文件屬性。 貴組織可能已經使用其他文件屬性和識別碼來分類內容。 若是如此，您也可以在建立事件時使用這些屬性和值，請參閱後續的步驟 6。 重點是，您必須在文件屬性中使用一些 *property:value* 組合，以將該項目與事件類型建立關聯。
   
 ![在其中輸入資產識別碼的文字方塊](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### <a name="step-5-create-an-event"></a>步驟 5：建立事件
 
-發生該事件類型的特定執行個體時，例如，產品達到其生命週期的結尾，請移至 Microsoft 365 合規性中心的 [記錄管理]****  >  [事件]**** 頁面，並建立事件。 您必須建立事件，藉此手動觸發事件。
+發生該事件類型的特定執行個體時，例如，產品達到其生命週期的結尾，請移至 Microsoft 365 合規性中心的 [記錄管理]****  >  [事件]**** 頁面，並建立事件。 您可以建立事件來觸發事件。
   
 ### <a name="step-6-choose-the-same-event-type-used-by-the-label-in-step-2"></a>步驟 6：選擇與步驟 2 中的標籤所使用相同的事件類型
 
@@ -150,20 +152,19 @@ After an event-driven label is applied to content, you can enter an asset ID for
   
 ### <a name="step-7-enter-keywords-or-an-asset-id"></a>步驟 7：輸入關鍵字或資產識別碼
 
-現在您可以指定 SharePoint 和 OneDrive 內容的資產識別碼或 Exchange 內容的關鍵字，藉此縮小內容的範圍。 針對資產識別碼，只有在具有指定屬性:值組的內容上才會強制執行保留。 若未輸入資產識別碼，具有該事件類型之標籤的**所有內容**都會套用相同的保留日期。 
+現在您可以指定 SharePoint 和 OneDrive 內容的資產識別碼或 Exchange 內容的關鍵字，藉此縮小內容的範圍。 針對資產識別碼，只有在具有指定 *property:value* 組的內容上才會強制執行保留。 若未輸入資產識別碼，具有該事件類型之標籤的所有內容都會套用相同的保留日期。
+
+例如：如果您使用的是 [資產識別碼] 屬性，請在以下顯示的資產識別碼方塊中輸入 `ComplianceAssetID:<value>`。
   
-資產識別碼只是 SharePoint 和 OneDrive 中的另一個文件屬性。 如果您使用的是 [資產識別碼] 屬性，您會在以下顯示的資產識別碼方塊中輸入 `ComplianceAssetID:<value>`。
+組織可能已將其他屬性和識別碼套用到與此事件類型相關的文件。 例如，如果您需要偵測特定產品的記錄，識別碼可能會是您的自訂屬性 ProductID 和值 "XYZ"。 在此情況下，您會在下圖所示的資產識別碼方塊中輸入 `ProductID:XYZ`。
   
-組織可能已將其他屬性和識別碼套用到與此事件類型相關的文件。 例如，如果您需要偵測特定產品的記錄，識別碼可能會是您的自訂屬性 ProductID 和值 "XYZ"。 在此情況下，您會在資產識別碼的方塊中輸入 `ProductID:XYZ` (如下所示)。
-  
-For Exchange items, you can include keywords. You can refine your query by using search operators like AND, OR, and NOT. For more information on operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+若為 Exchange 項目，請使用關鍵字。 您可以使用 AND、OR 和 NOT 這類搜尋運算子來使用查詢。 如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
   
 最後，選擇事件的發生日期；此日期作為保留期間的開始日期。 建立事件之後，該事件日期會同步處理到保留標籤屬於該事件類型、具有資產識別碼和關鍵字的所有內容。 如同任何保留標籤，同步處理最多可能需要七天。
   
 ![事件設定頁面](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
-> [!NOTE]
-> 建立事件之後，保留設定就會對已套用標籤和已編製索引的內容生效。 如果在建立事件之後，將保留標籤新增至新內容，則您必須使用相同的詳細資料建立新事件。
+建立事件之後，保留設定就會對已套用標籤和已編製索引的內容生效。 如果在建立事件之後，將保留標籤新增至新內容，則您必須使用相同的詳細資料建立新事件。
 
 刪除事件不會取消目前對已套用標籤之內容生效的保留設定。 若要這麼做，請建立具有相同詳細資料的新事件，但將日期保留空白。 
 
@@ -187,7 +188,7 @@ To get access to the **Events** page, reviewers must be members of a role group 
 
 Microsoft 365 合規性中心可讓您手動建立事件，且不支援在事件發生時自動觸發事件。 不過，您可以使用 REST API 自動觸發事件。 如需詳細資訊，請參閱[自動化事件型保留](automate-event-driven-retention.md)。
 
-您也可以使用 PowerShell 指令碼來自動化商務應用程式中以事件為基礎的保留。 適用於事件導向保留的 PowerShell Cmdlet：
+您也可以使用 PowerShell 指令碼來自動化商務應用程式中以事件為基礎的保留。 適用於事件型保留的 PowerShell Cmdlet：
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
