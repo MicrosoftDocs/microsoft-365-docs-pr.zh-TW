@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: d11fd8f29e3232472f9457ba1fc288a5084429e9
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: f4bc5f85b21148c5a923ca1fc18879a193191c4b
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936134"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094783"
 ---
 # <a name="new-microsoft-edge-app"></a>新的 Microsoft Edge app
 
@@ -40,7 +40,7 @@ Microsoft 受管理的桌面裝置上的 Microsoft Edge 安全性基準會設定
 
 Microsoft 受管理的桌面會設定此原則，以防止在受管理的端點上安裝 Chrome 擴充功能。 已知 risksassociated 具有 Chromium 擴充模型，包括資料遺失保護、隱私權及其他可能危及裝置安全的風險。 
 
-#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允許使用者層級的原生郵件主機（安裝時不需系統管理員許可權）
+#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允許未以系統管理員許可權安裝的使用者層級原生郵件主機 () 
 
 **預設值：** 禁用
 
@@ -86,7 +86,7 @@ Microsoft 受管理的桌面會設定此原則，以防止在受管理的端點�
 
 **預設值：** 禁用
 
-因為有相關的安全性風險，所以不建議使用 Flash。 如果您仍然有依賴閃光燈的處理常式，請設定**[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** 原則，為需要它的網站啟用快閃記憶體。 若無法維持允許的網站清單以使用 Flash，請提交變更要求以變更值以按一下 [**播放**]，可讓使用者選擇適當的時間來執行 flash。
+因為有相關的安全性風險，所以不建議使用 Flash。 如果您仍然有依賴閃光燈的處理常式，請設定**[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** 原則，為需要它的網站啟用快閃記憶體。 如果您無法保留允許的網站清單以使用 Flash，請提交變更要求，以變更值以**按一下 [播放**]，這可讓使用者選擇適當的時間來執行 flash。
 
 ### <a name="password-manager"></a>密碼管理員
 

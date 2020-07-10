@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 48512cf2fff802509ebaa14ca69d3ca02908902e
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 16ee37b1c7bf33c902db35af2d29744f42830ea7
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087912"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094831"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>在 Microsoft 365 的安全性中心建立及追蹤 ServiceNow 入場券
 
@@ -33,7 +33,7 @@ ms.locfileid: "45087912"
 在 [安全性中心] 中，安全性管理員可以直接傳送[Microsoft Secure 得分](microsoft-secure-score.md)改進動作來 ServiceNow 和建立票證。 您可以建立事件管理和變更管理票證。 然後，您可以在 [安全性中心] 首頁中追蹤它們，然後 ServiceNow。
 
 - [**深入瞭解必要條件、資料交換及疑難排解**](tickets.md)
-- **管理規範中心的 ServiceNow 入場券**（即將推出）
+- **在規範中心管理 ServiceNow 入場券** (即將推出) 
 
 ## <a name="connect-microsoft-365-security-center-to-servicenow"></a>將 Microsoft 365 的安全性中心連線至 ServiceNow
 
@@ -54,9 +54,7 @@ ms.locfileid: "45087912"
 
 ## <a name="create-a-task-and-share-it-to-servicenow"></a>建立任務並將其共用至 ServiceNow
 
-整合設定後，根據特定的 Microsoft 安全分數改進動作建立 ServiceNow 工作。 請移至 Microsoft 365 安全性中心入口網站中安全評分的任何改進動作，然後選取「共用」圖示。 其中一個 dropdown 選項是 ServiceNow。
-
-![ServiceNow 在安全分數中共用](../../media/servicenow-share.png)
+整合設定後，根據特定的[Microsoft 安全分數](microsoft-secure-score.md)改進動作建立 ServiceNow 工作。 請移至 Microsoft 365 安全性中心入口網站中安全評分的任何改進動作，然後選取 [**共用**]。 其中一個 dropdown 選項是 ServiceNow。
 
 工作會產生，您可以在其中設定優先順序及編輯名稱、描述或到期日。 填寫所有必要欄位後，將工作傳送至 ServiceNow。
 

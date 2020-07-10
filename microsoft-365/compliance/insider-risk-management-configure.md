@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8c8783a570fe1b747ba8d2cf07f7d7f6f2fe39f
-ms.sourcegitcommit: eee4f651bd51d5aedd64e42d02bfed8ccb9be4cd
+ms.openlocfilehash: 000f5ee96587aeb055db783e11833aefa6335a14
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44515760"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091919"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -32,10 +32,10 @@ ms.locfileid: "44515760"
 
 開始使用「內幕風險管理」之前，您應該先確認您的[Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何附加元件。 若要存取及使用「內幕風險管理」，您的組織必須具備下列其中一項訂閱或附加元件：
 
-- Microsoft 365 E5 訂閱（付費或試用版）
+- Microsoft 365 E5 訂閱 (付費或試用版本) 
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
-- Microsoft 365 A5 訂閱（付費或試用版）
+- Microsoft 365 A5 訂閱 (付費或試用版本) 
 - Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
 - Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
 
@@ -60,7 +60,7 @@ ms.locfileid: "44515760"
 
 完成下列步驟，以將使用者新增至「內部使用者風險管理」角色群組：
 
-1. [https://protection.office.com/permissions](https://protection.office.com/permissions)在 Microsoft 365 組織中登入使用系統管理員帳戶的認證。 "" "" "" ""
+1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://protection.office.com/permissions](https://protection.office.com/permissions)。
 
 2. 在安全性與 &amp; 合規性中心，移至 [**許可權**]。 選取連結，以在 Office 365 中檢視及管理角色。
 
@@ -74,13 +74,13 @@ ms.locfileid: "44515760"
 
 7. 選取 **[儲存]** 以將使用者新增至角色群組。 選取 **[關閉]** 以完成步驟。
 
-## <a name="step-2-required-enable-the-audit-log"></a>步驟2（必要）：啟用審核記錄檔
+## <a name="step-2-required-enable-the-audit-log"></a>步驟 2 (必要) ：啟用審核記錄檔
 
 有問必答風險管理使用審核記錄，以供使用者洞察和原則中設定的活動使用。 「審計記錄檔」是與「內幕風險管理」原則相關之所有活動的摘要，或每當原則變更時的摘要。
 
 如需開啟審計的逐步指示，請參閱[開啟或關閉審計記錄搜尋](turn-audit-log-search-on-or-off.md)。 在您開啟審核後，會顯示一則訊息，指出已準備好審核記錄，而且您可以在準備完成後數小時執行搜尋。 您只需執行這項動作一次。 如需使用審核記錄的詳細資訊，請參閱[搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
 
-## <a name="step-3-optional-configure-prerequisites-for-templates"></a>步驟3（選用）：設定範本的必要條件
+## <a name="step-3-optional-configure-prerequisites-for-templates"></a>步驟 3 (選用) ：設定範本的必要條件
 
 部分內幕風險管理範本具有必須針對原則指示器所設定的必要條件，以產生相關的活動警示。 根據您計畫為組織設定的原則，設定適當的必要條件。
 
@@ -93,7 +93,7 @@ ms.locfileid: "44515760"
 >[!IMPORTANT]
 >如果您使用「*盜竊員工資料竊取*」範本來設定原則，則必須設定 HR 連接器，以使用原則範本的完整信號偵測功能。 如果您為貴組織設定多個 HR 連接器，測試人員風險管理將會自動從所有 HR 連接器提取指標。
 
-### <a name="configure-data-loss-prevention-dlp-policies"></a>設定資料遺失防護（DLP）原則
+### <a name="configure-data-loss-prevention-dlp-policies"></a>設定資料遺失防護 (DLP) 原則
 
 「內幕風險管理」支援使用 DLP 原則，以協助識別敏感資訊到有害的各方，以取得高嚴重性層級 DLP 警示。 使用**資料洩漏**範本設定有問必答風險管理原則時，您必須將特定的 DLP 原則指派給原則。
 
@@ -107,7 +107,7 @@ ms.locfileid: "44515760"
 
 如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。 設定 DLP 原則後，請返回這些設定步驟。
 
-## <a name="step-4-required-configure-insider-risk-settings"></a>步驟4（必要）：設定有問必答風險設定
+## <a name="step-4-required-configure-insider-risk-settings"></a>步驟 4 (必要) ：設定內幕人士風險設定
 
 「[內部使用者風險」設定](insider-risk-management-policies.md#policy-settings)會套用至所有的內幕風險管理原則，不論您在建立原則時所選擇的範本為何。 設定是使用「**內幕風險設定**」控制項設定，其位於所有「內幕人員風險管理」索引標籤的頂端。 這些設定會控制隱私權、指示器、監控視窗和智慧偵測。
 
@@ -124,14 +124,14 @@ ms.locfileid: "44515760"
 5. 在 [**智慧**偵測] 頁面上，設定內幕風險原則的[反常偵測、冒犯性語言偵測和警示磁片區層級](insider-risk-management-policies.md#intelligent-detections)。
 6. 選取 [**儲存**] 以啟用內部使用者風險原則的這些設定。
 
-## <a name="step-5-required-create-an-insider-risk-management-policy"></a>步驟5（必要）：建立「內幕人員風險管理」原則
+## <a name="step-5-required-create-an-insider-risk-management-policy"></a>步驟 5 (必要) ：建立「內幕人員風險管理」原則
 
 測試人員風險管理原則包括指派的使用者，並定義針對警示設定的風險指標類型。 必須先設定原則，活動才會觸發警示。
 
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)，移至 **[測試人員風險管理]**，然後選取 **[原則]** 索引標籤。
 2. 選取 **[建立原則]** 以開啟原則精靈
 3. 在 **[新增測試人員風險原則]** 頁面上，完成下列欄位：
-    - **名稱（必要）**：輸入原則的易記名稱。
+    - **Name (必要) **：輸入原則的易記名稱。
     - **說明 (選用)**：輸入原則的說明。
     - **選擇原則範本 (必要)**：選取其中一個[原則範本](insider-risk-management-policies.md#policy-templates)，以定義受原則監視的風險指標類型。
 
