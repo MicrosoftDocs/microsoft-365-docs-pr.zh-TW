@@ -215,8 +215,12 @@
               href: mtp/device-profile.md
             - name: 提供意見反應
               href: mtp/feedback.md
-            - name: 透過 ServiceNow 管理票證
-              href: ./mtp/tickets.md
+            - name: 建立 ServiceNow 票證和工作
+              items:
+                - name: ServiceNow 整合概述
+                  href: ./mtp/tickets.md
+                - name: 安全中心的 ServiceNow 票證
+                  href: ./mtp/tickets-security-center.md
     - name: Office 365 安全性
       items:
         - name: 開始使用
