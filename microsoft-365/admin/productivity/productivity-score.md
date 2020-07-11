@@ -19,14 +19,14 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生產力分數的概覽。
-ms.openlocfilehash: cf8747f38442c0dbef6178dc2cbd4ce32d59c5c6
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754793"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101644"
 ---
-# <a name="microsoft-productivity-score-preview"></a>Microsoft 生產力評分（預覽）
+# <a name="microsoft-productivity-score-preview"></a>Microsoft (預覽的工作效率分數) 
 
 生產力分數可協助組織轉換工作如何使用 Microsoft 365 的相關資訊，以及支援這些功能的技術體驗。 分數會反映貴組織對於員工和技術經驗的效能，並將您的分數與像您的組織相比較。
 
@@ -53,11 +53,11 @@ ms.locfileid: "44754793"
 
 ### <a name="score-categories"></a>分數類別 
 
-- 內容共同作業（100點）
-- 通訊（100點）
-- 行動性（100點）
-- 端點分析（100點）
-- 網路連通性（100點）
+- 內容共同作業 (100 點) 
+-  (100 點的通訊) 
+- 行動性 (100 點) 
+- 端點分析 (100 點) 
+- 網路連通性 (100 點) 
 - **總可能 = 500 點**
  
  在每個類別中，我們都會識別重要活動的模式，以瞭解人員如何使用 Microsoft 365 產品來共同作業、溝通，以及跨平臺工作。 我們提供28天和180天的主要即時檢視。 我們也提供支援的度量值，但不是分數計算的一部分，但很重要的一點是協助您識別您可以採取行動的底層行為和設定，以促進變更。
@@ -66,7 +66,7 @@ ms.locfileid: "44754793"
 
 生產力分數包括來自 Exchange、SharePoint、OneDrive、小組、Word、Excel、PowerPoint、OneNote、Outlook、Yammer 及 Skype 的資料。
 
-您的分數會每日更新，而且會反映在最後28到180天（包括目前日期）中完成的使用者動作。
+您的分數會每日更新，並且反映過去28到180天的使用者動作， (包括當天) 。
 
 
 ## <a name="pre-requisites"></a>先決條件 
@@ -91,7 +91,7 @@ ms.locfileid: "44754793"
 
 ![生產力排名首頁](../../media/pslanding.png)
 
-**您的分數**會顯示為百分比值以及點，因此您可以看到點數（分子）和最大可能的點數（分母）。
+**您的分數**會顯示為百分比值以及點，因此您可以看到 (分子) 和最大可能的點數 (分母) 。
 
 **對等基準**可讓您將您的分數與像您的組織比較。 針對員工經驗類別，對等的基準量值會計算為一組類似組織內的平均量值。 此集合是由您地區中的組織所組成，其授權的使用者數目、授權類型、行業和 tenure，以及 Microsoft 365。 
 
@@ -111,7 +111,7 @@ ms.locfileid: "44754793"
 
 ### <a name="content-collaboration-details"></a>內容共同作業詳細資料
 
-內容共同作業的主要洞察力是線上建立、讀取及共同作業（編輯和共用）的人員人數。 這些措施很重要，因為調查顯示當人們使用線上檔案共同作業時，每個人平均會儲存100分鐘，或每週大約2小時。
+內容共同作業的主要洞察力是建立、讀取及共同作業 (編輯和共用) 線上的人員人數。 這些措施很重要，因為調查顯示當人們使用線上檔案共同作業時，每個人平均會儲存100分鐘，或每週大約2小時。
 
 我們將內容共同作業定義為一個人，以建立及共用 Office 檔案，然後再至少另外一個人進行編輯。 
 
@@ -145,7 +145,7 @@ ms.locfileid: "44754793"
 
 - 因人員調整為在家運作時，對工作生命期的影響。 
 
-- 如果人員有效地使用會議，以及他們的 
+- 如果遠端會議支援有效的決策過程。
 
 [深入瞭解商務持續性報告](https://aka.ms/bcrps)
 

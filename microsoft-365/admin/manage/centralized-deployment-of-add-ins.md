@@ -20,22 +20,32 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 判斷您的承租人和使用者是否符合需求，讓您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: 4ad2f504c26fcc1f01c958bebf448718500a95b7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936440"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102869"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷集中式部署的增益集是否適用于您的組織
 
-若要將 Office 增益集部署至組織內的使用者和群組，集中式部署對於大多數客戶而言是建議和功能最豐富的方法。 如果您是系統管理員，請使用此指導方針來判斷您的承租人和使用者是否符合需求，以便您可以使用集中式部署。
-集中式部署支援三種桌面平臺 Windows、Mac 和線上 Office 應用程式。 集中式部署也支援 iOS 和 Android （僅限 Outlook Mobile 增益集）。
+若要將 Office 增益集部署至組織內的使用者和群組，集中式部署對於大多數客戶而言是建議和功能最豐富的方法。 如果您是系統管理員，請使用此指導方針判斷您的組織和使用者是否符合需求，以便您可以使用集中式部署。
+
+[集中式部署] 提供下列優點：
+  
+- 全域管理員可以將增益集直接指派給使用者、透過群組將增益集指派給多個使用者，或為組織中的每個人指派增益集。
+    
+- 當相關的 Office 應用程式啟動時，增益集就會自動下載。 如果增益集支援增益集命令，增益集會自動出現在 Office 應用程式中的功能區。
+    
+- 如果系統管理員關閉或刪除增益集，或使用者已從 Azure Active Directory 或指派的群組中移除，使用者就不會再出現增益集。
+
+集中式部署支援三種桌面平臺 Windows、Mac 和線上 Office 應用程式。 集中式部署也只會支援 iOS 和 Android (Outlook Mobile 增益集) 。
+
 增益集最多可能需要24小時才能顯示所有使用者的用戶端。
   
 ## <a name="requirements"></a>需求
 
-[！注意] 增益集的集中式部署需要使用者使用 Microsoft 365 應用程式的 enterprise （並使用其組織識別碼登入 Office），且具有 Exchange Online 和 active Exchange Online 信箱。 您的訂閱目錄必須是 in 或同盟至 Azure Active Directory。
+[！注意] 增益集的集中式部署需要使用者使用 Microsoft 365 應用程式的 enterprise (，並使用其組織識別碼) 登入 Office，並擁有 Exchange Online 和 active Exchange Online 信箱。 您的訂閱目錄必須是 in 或同盟至 Azure Active Directory。
 您可以在下面查看 Office 和 Exchange 的特定需求，或使用[集中式部署相容性檢查](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)程式。
 
 [集中式部署] 不支援下列項目：
@@ -57,8 +67,8 @@ ms.locfileid: "44936440"
 - 對於 Outlook，您的使用者必須使用下列其中一項： 
   - 適用于企業的 Microsoft 365 應用程式版本1701或更新版本。
   - Office Professional Plus 2019 或 Office Standard 2019 的版本1808或更新版本。
-  - 16.0.4494.1000 或更新版本的 Office Professional Plus 2016 （MSI）或 Office Standard 2016 （MSI）\*
-  - 15.0.4937.1000 或更新版本的 Office Professional Plus 2013 （MSI）或 Office Standard 2013 （MSI）\*
+  - 16.0.4494.1000 或更新版本的 Office Professional Plus 2016 (MSI) 或 Office Standard 2016 (MSI) \*
+  - 15.0.4937.1000 或更新版本的 Office Professional Plus 2013 (MSI) 或 Office Standard 2013 (MSI) \*
   - 適用于 Mac 的 Office 2016 版本16.0.9318.1000 或更新版本 
 - IOS 的 Outlook mobile 版本2.75.0 或更新版本 
 - 2.2.145 或更新版本的 Outlook mobile for Android 
@@ -96,19 +106,19 @@ Check with your organization's Exchange admin to find out which configuration is
     
 2. 執行下列命令：
 
-```powershell
-Import-Module O365CompatibilityChecker
-```
+   ```powershell
+   Import-Module O365CompatibilityChecker
+   ```
     
 3. 執行**CompatabilityCheck**命令：
 
-```powershell
-Invoke-CompatibilityCheck
-```
-   這會提示您*_TenantDomain_* （例如， *TailspinToysIncorporated）。 </span>com*）和*_TenantAdmin_* 認證（使用您的全域系統管理員認證），然後要求同意。
+   ```powershell
+   Invoke-CompatibilityCheck
+   ```
+   這個命令會提示您輸入*_TenantDomain_* (例如， *TailspinToysIncorporated </span> 。com*) 和*_TenantAdmin_* 認證 (使用您的全域系統管理員認證) ，然後要求同意。
     
-> [!NOTE]
-> 根據您租用戶中的使用者人數而定，檢查程式可能需要花費幾分鐘至幾小時。 
+   > [!NOTE]
+   > 根據您租用戶中的使用者人數而定，檢查程式可能需要花費幾分鐘至幾小時。 
   
 檢查程式執行完畢後，會產生一個逗號分隔 (.csv) 格式的輸出檔案。 預設會將檔案儲存為**C:\windows\system32** 。 輸出檔案中包含下列資訊：
   
@@ -154,11 +164,11 @@ Alternately, you can use the Azure Active Directory Graph API to run queries to 
   
 ### <a name="contacting-microsoft-for-support"></a>連絡 Microsoft 以取得支援
 
-如果您或您的使用者在使用 Office 應用程式（Word、Excel 等）時載入增益集時遇到問題，則您可能需要與 Microsoft 支援人員取得聯繫（[瞭解如何](../contact-support-for-business-products.md)）。 在支援票證中提供下列有關您 Microsoft 365 環境的資訊。
+如果您或您的使用者在使用 Office 應用程式來載入增益集時遇到問題 (Word、Excel 等 ) （已集中部署），您可能需要與 Microsoft 支援人員聯繫 (瞭解) 的[方式](../contact-support-for-business-products.md)。 在支援票證中提供下列有關您 Microsoft 365 環境的資訊。
   
 |**平台**|**偵錯資訊**|
 |:-----|:-----|
 |辦公室  <br/> | Charles/Fiddler 記錄檔  <br/>  租用戶識別碼 ( [了解做法](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID。 查看其中一個 office 頁面的來源，並尋找 [相關性識別碼] 值並傳送給支援：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
-|豐富型用戶端 (Windows、Mac)  <br/> | Charles/Fiddler 記錄檔  <br/>  用戶端應用程式的組建編號（最好是檔案 **/帳戶**的螢幕擷取畫面）  <br/> |
+|豐富型用戶端 (Windows、Mac)  <br/> | Charles/Fiddler 記錄檔  <br/>  用戶端應用程式的組建編號 (最好是檔案 **/帳戶**的螢幕擷取畫面)   <br/> |
    
 

@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: 瞭解如何從透過保護原則管理的裝置中移除公司資料，以及將 Windows 10 裝置重設為其出廠設定。
-ms.openlocfilehash: 1f4b267f5a58429d40c5ece7df42a1bb5727c4e2
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: 88311a2cf08ee0b1ceb4ef3eb599efe5ebccdb05
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44564919"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101614"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>使用 Microsoft 365 商務版 Premium 管理受保護的裝置
 
@@ -44,5 +44,7 @@ ms.locfileid: "44564919"
 [從裝置移除公司資料](remove-company-data.md)
   
 [將 Windows 10 裝置重設成出廠預設值](reset-devices-to-factory-settings.md)
+
+[新增受管理裝置](https://docs.microsoft.com/microsoft-365/business/app-protection-settings-for-android-and-ios)
   
 

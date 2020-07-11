@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 8765d6ecd180d71d918a5feda8cd5089e7f561ee
-ms.sourcegitcommit: 8d9509e617ede7cc5ba933c54fb9300d2d1c6344
+ms.openlocfilehash: 3c43c42ba2cb1feb339ad61b76d28fde4ed94298
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/22/2020
-ms.locfileid: "44347816"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101656"
 ---
 # <a name="register-new-devices-yourself"></a>自行註冊新裝置
 
-Microsoft 受管理的電腦可搭配全新的裝置運作，或您可重複使用您可能已經擁有的裝置 (這需要您重新製作其映像)。 您可以使用 Azure 入口網站上的 Microsoft 受管理的電腦來註冊裝置。
+Microsoft 受管理的電腦可搭配全新的裝置運作，或您可重複使用您可能已經擁有的裝置 (這需要您重新製作其映像)。 您可以使用 Microsoft Managed Desktop Admin 入口網站來註冊裝置。
 
 > [!NOTE]
 > 與合作夥伴合作來取得裝置嗎？ 若是如此，您就不需要擔心取得硬體雜湊，他們會為您處理。 請確定您的夥伴已在 [夥伴中心](https://partner.microsoft.com/dashboard)與您建立關聯。 您的合作夥伴可在 [合作夥伴中心說明](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)深入了解。 建立這種關聯性後，您的合作夥伴就會代表您直接註冊裝置，您不須採取任何進一步動作。 如果您想要查看詳細資料，或您的合作夥伴有疑問，請參閱[可供合作夥伴註冊裝置的步驟](register-devices-partner.md)。 註冊好裝置後，您可以繼續[檢查映像](#check-the-image)並[將裝置交付](#deliver-the-device)給您的使用者。
@@ -86,9 +86,9 @@ CSV 檔案必須採用可供註冊的特定格式。 如果您在先前步驟中
 >[!NOTE]
 >如果您忘記變更任何範例資料，註冊將會失敗。
 
-#### <a name="register-devices-by-using-the-azure-portal"></a>使用 Azure 入口網站來註冊裝置
+#### <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
 
-從 Microsoft 受管理的電腦的 [Azure 入口網站](https://aka.ms/mmdportal)，選取左側導覽窗格中的 [裝置]****。 選取 [+ 註冊裝置]****；飛入視窗隨即開啟：
+從 Microsoft Managed Desktop [Admin 入口網站](https://aka.ms/mmdportal)的左側流覽窗格中，選取 [**裝置**]。 選取 [+ 註冊裝置]****；飛入視窗隨即開啟：
 
 [![在選取 [註冊裝置] 之後飛入，並列出裝置與已指派使用者、序號、狀態、上次查看日期和年限等欄](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 

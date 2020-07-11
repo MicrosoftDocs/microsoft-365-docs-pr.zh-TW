@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0200ec0491104222545becb6c42d51b935fd2df1
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 71e0a631afa596e9cedf939cf3dcb13eec599d5d
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936536"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101668"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通訊法規遵從性
 
@@ -53,7 +53,7 @@ Microsoft 365 中的通訊相容性原則可協助您克服與相容性和內部
 
 - **法規遵從性**
 
-    大多數的組織必須遵守某些類型的規章遵循標準，成為其正常運作程式的一部分。 這些法規通常會要求組織執行某些類型的監察或監管程式，以進行適用于其行業的郵件功能。 財務行業規章機關（FINRA） Rule 3110 是一種很好的範例，其組織必須有主管程式的主管程式，才可掃描員工通訊和其所參與的企業類型。 另一個範例可能需要檢查您組織中的經紀人通訊，以防範可能的金錢 laundering、內幕交易、collusion 或 bribery 活動。 通訊相容性原則可提供掃描和報告公司通訊的程式，協助您的組織符合這些需求。 如需對金融組織支援的詳細資訊，請參閱[美國銀行和資本市場的主要法規遵從性和安全性考慮](../solutions/financial-services-secure-collaboration.md)。
+    大多數的組織必須遵守某些類型的規章遵循標準，成為其正常運作程式的一部分。 這些法規通常會要求組織執行某些類型的監察或監管程式，以進行適用于其行業的郵件功能。 財務行業規章機關 (FINRA) 規則3110是一種很好的需求，讓組織具備監督員工交流的方式，以及其所參與的企業類型。 另一個範例可能需要檢查您組織中的經紀人通訊，以防範可能的金錢 laundering、內幕交易、collusion 或 bribery 活動。 通訊相容性原則可提供掃描和報告公司通訊的程式，協助您的組織符合這些需求。 如需對金融組織支援的詳細資訊，請參閱[美國銀行和資本市場的主要法規遵從性和安全性考慮](../solutions/financial-services-secure-collaboration.md)。
 
 ## <a name="new-enhancements"></a>新的增強功能
 
@@ -101,7 +101,7 @@ Microsoft 365 中的通訊法規遵從性建立于[Office 365 中的監察原則
 - **Exchange online**：在您的 Microsoft 365 組織中的[exchange Online](https://docs.microsoft.com/Exchange/exchange-online)上主控的所有信箱都符合掃描資格。 電子郵件和附件比對通訊相容性原則的情況立即可用於監控和符合性報告。 Exchange Online 現在是一種選用的來源通道，而且通訊法規遵從性原則中已不再需要。
 - **Yammer**：通訊相容性原則支援[yammer](https://docs.microsoft.com/yammer/yammer-landing-page)中的私人郵件和公開社區交談。 Yammer 是選用的通道，必須是[原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，以支援郵件和附件的掃描。
 - **商務用 Skype online**：通訊相容性原則支援在[商務用 skype Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)中的掃描聊天通訊和相關聯的附件。
-- **協力廠商來源**：您可以掃描來自[協力廠商來源](archiving-third-party-data.md)的郵件，以用於將資料匯入至 Microsoft 365 組織中的信箱。 通訊相容性支援多個流行平臺的連線，包括立即 Bloomberg、Facebook、Twitter 及其他。
+- **協力廠商來源**：您可以掃描來自[協力廠商來源](archiving-third-party-data.md)的郵件，以用於將資料匯入至 Microsoft 365 組織中的信箱。 通訊相容性支援多個流行平臺的連線，包括立即 Bloomberg 和其他。
 
 若要深入瞭解通訊相容性原則中的訊息通道支援，請參閱[支援的通訊類型](communication-compliance-feature-reference.md#supported-communication-types)。
 

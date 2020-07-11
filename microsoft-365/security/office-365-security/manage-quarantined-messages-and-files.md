@@ -17,23 +17,23 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 系統管理員可以瞭解如何針對 Exchange Online Protection （EOP）中的所有使用者，查看及管理隔離的郵件。 具有 Office 365 高級威脅防護的組織中的系統管理員（Office 365 ATP）也可以在 SharePoint Online、商務 OneDrive 公司和 Microsoft 小組中管理隔離的檔案。
-ms.openlocfilehash: d3dadeb4035d55fa60785c7a752737cc83038730
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Office 365 Advanced 威脅防護的組織中的系統管理員 (Office 365 ATP) 也可管理 SharePoint 線上、OneDrive 商務和 Microsoft 小組的隔離檔案。
+ms.openlocfilehash: 5e7c594669cf910404badd85c35671c284d4d91e
+ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936968"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45101678"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
 在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或垃圾郵件。 如需詳細資訊，請參閱[在 EOP 中隔離的電子郵件訊息](quarantine-email-messages.md)。
 
-系統管理員可以針對所有使用者，查看、發行和刪除所有類型的隔離郵件。 只有系統管理員可以管理被隔離為惡意程式碼、高可信度網路釣魚或郵件流程規則（也稱為傳輸規則）結果的郵件。 系統管理員也可以將誤報報告給 Microsoft。
+系統管理員可以針對所有使用者，查看、發行和刪除所有類型的隔離郵件。 只有系統管理員可以管理被隔離為惡意程式碼、高可信度網路釣魚的郵件，或郵件流程規則的結果 (也稱為傳輸規則) 。 系統管理員也可以將誤報報告給 Microsoft。
 
-使用 Office 365 高級威脅防護（Office 365 ATP）組織中的系統管理員，也可以在 SharePoint Online、商務 OneDrive 商務和 Microsoft 小組中，查看、下載和刪除隔離的檔案。
+使用 Office 365 高級威脅防護的組織中的系統管理員 (Office 365 ATP) 也可以在 SharePoint 線上、商務用 OneDrive，以及 Microsoft 小組中查看、下載和刪除隔離的檔案。
 
-您可以在安全性 & 合規性中心或 PowerShell （Exchange Online 365 PowerShell 中，使用 Exchange Online 中的信箱來查看及管理隔離的郵件; 獨立 EOP PowerShell 沒有 Exchange Online 信箱的組織）。
+您可以使用 Exchange Online 中的信箱，在安全性 & 合規性中心或 PowerShell (Exchange Online 365 PowerShell 中查看及管理隔離的郵件;沒有 Exchange Online 信箱) 之組織的獨立 EOP PowerShell。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -41,11 +41,11 @@ ms.locfileid: "44936968"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派許可權，才可以系統管理員身分管理隔離。許可權是由安全性 & 合規性中心內的**隔離**角色所控制。 根據預設，此角色會指派給安全性 & 合規性中心內的**組織管理**（全域管理員）、**隔離系統管理員**和**安全性管理員**角色群組。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須已獲指派許可權，才可以系統管理員身分管理隔離。許可權是由安全性 & 合規性中心內的**隔離**角色所控制。 根據預設，此角色會指派給 [安全性 & 規範中心] 中的 [**組織管理** (全域管理員]) 、[**隔離管理員**] 和 [**安全性管理員**] 角色群組。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 隔離的郵件會在自動刪除之前保留在預設時間段內：
 
-  - 反垃圾郵件原則（垃圾郵件、網路釣魚和大量電子郵件）隔離的郵件：30天。 這是預設值和最大值。 若要設定此值，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+  - 反垃圾郵件原則隔離的郵件 (的垃圾郵件、網路釣魚和大量電子郵件) ：30天。 這是預設值和最大值。 若要設定此值，請參閱[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
   - 包含惡意程式碼的郵件：15天。
 
@@ -101,7 +101,7 @@ ms.locfileid: "44936968"
 
    - **隔離原因**：
 
-     - **原則**：郵件符合郵件流程規則（也稱為傳輸規則）的條件。
+     - **原則**：郵件符合郵件流程規則的條件 (也稱為傳輸規則) 。
 
      - **大量郵件**
 
@@ -121,7 +121,7 @@ ms.locfileid: "44936968"
 
    - **郵件識別碼**：郵件的全域唯一識別碼。
 
-     例如，您使用[郵件追蹤](message-trace-scc.md)尋找傳送給組織中使用者的郵件，而您判斷郵件已被隔離而非傳遞。 請務必包含完整的郵件識別碼值，其中可能包含角括弧（ \<\> ）。 例如：`<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
+     例如，您使用[郵件追蹤](message-trace-scc.md)尋找傳送給組織中使用者的郵件，而您判斷郵件已被隔離而非傳遞。 請務必包含完整的郵件識別碼值，其中可能包含角括弧 (\<\>) 。 例如：`<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
 
    - **寄件者電子郵件地址**：單一寄件者的電子郵件地址。
 
@@ -153,7 +153,7 @@ ms.locfileid: "44936968"
 
 - **主旨**
 
-- **隔離原因**：顯示郵件是否已被識別為**垃圾**郵件、**大量**、**網路釣魚詐騙**、符合郵件流程規則（**傳輸規則**），或被識別為包含**惡意**代碼。
+- **隔離原因**：顯示郵件是否已識別為**垃圾**郵件、**大量**、**網路釣魚詐騙**、符合郵件流程規則 (**傳輸規則**) 或已識別為包含**惡意**代碼。
 
 - **收件者**：如果郵件包含多個收件者，則必須按一下 [預覽郵件]**** 或 [檢視郵件標頭]**** 以查看完整的收件者清單。
 
@@ -201,13 +201,13 @@ ms.locfileid: "44936968"
 
 - **Submit message**：在出現的飛入窗格中，選擇下列選項：
 
-  - **物件類型**：**電子郵件**（預設值）、 **URL**或**附件**。
+  - **物件類型**：**電子郵件** (預設) 、 **URL**或**附件**。
 
-  - **提交格式**：**網路消息識別碼**（預設值，具有 [**網路消息識別碼**] 方塊中的對應值 **）或檔案**（流覽至 [本地 .eml] 或 [.msg] 檔案）。 請注意，如果您**選取 [檔案]，然後**選取 [**網路消息識別碼**]，初始值便會消失。
+  - **提交格式**：**網路郵件識別碼** (預設值，並在 [**網路消息識別碼**] 方塊中顯示對應的值) 或**檔案 (流覽**至本地 .eml 或 .msg 檔案) 。 請注意，如果您**選取 [檔案]，然後**選取 [**網路消息識別碼**]，初始值便會消失。
 
   - 收件**者：輸入**郵件的原始收件者，或按一下 [全**選**] 識別所有收件者。 您也可以按一下 [**全選**]，然後選擇性地移除個別收件者。
 
-  - **提交原因**：**應該未封鎖**（預設）或**應該封鎖**。
+  - **提交原因**：**應該不會封鎖** (預設) 或**應該封鎖**。
 
   當您完成時，按一下 [**提交**]。
 
@@ -218,6 +218,9 @@ ms.locfileid: "44936968"
 當您選取清單中的多個隔離郵件 (最多 100 個) 時，隨即會出現 [大量動作]**** 飛出窗格供您採取下列動作：
 
 - **釋出郵件**：這些選項與您釋出單一郵件時的選項相同，差別只在您無法選取 [將郵件釋出給特定收件者]****；您只能選取 [將郵件釋出給所有收件者]**** 或 [將郵件釋出給其他人]****。
+
+  > [!NOTE]
+  > 請考慮下列案例： john@gmail.com 會將郵件傳送至 faith@contoso.com 和 john@subsidiary.contoso.com。 Gmail 會將此郵件 bifurcates 成兩個副本，以在 Microsoft 中路由傳送至隔離區。 系統管理員會將這兩封郵件都發行至 admin@contoso.com。 傳遞到達系統管理員信箱的第一個已發佈郵件。 第二個發行的郵件會被識別為重複傳遞，而且會略過。 如果郵件有相同的郵件識別碼和接收時間，便會將它識別為重複郵件。
 
 - **刪除郵件**：在出現的警告中按一下 [是]**** 之後，郵件就會立即遭到刪除，而不會傳送給原始收件者。
 
@@ -236,7 +239,7 @@ ms.locfileid: "44936968"
 
 2. 變更**隔離**為**預設值檔的**視圖。 您可以按一下可用的欄標題，依序排序欄位。
 
-3. 您可以按一下可用資料行標題來排序結果。 按一下 [修改資料行]**** 可顯示最多七個資料行。 預設欄會以星號（ <sup>\*</sup> ）標示：
+3. 您可以按一下可用資料行標題來排序結果。 按一下 [修改資料行]**** 可顯示最多七個資料行。 預設的欄會以星號 () 標示 <sup>\*</sup> ：
 
    - **使用者**<sup>\*</sup>
 
@@ -272,7 +275,7 @@ ms.locfileid: "44936968"
 
    - **隔離原因**：唯一可用的值為**惡意**代碼。
 
-找到特定隔離的檔案之後，請選取檔案以查看其詳細資料，並對其採取動作（例如，view、release、下載中心或 delete message）。
+找到特定隔離的檔案之後，請選取檔案以查看其詳細資料，並對其採取動作 (例如，view、release、下載中心或 delete message) 。
 
 #### <a name="export-file-results"></a>匯出檔結果
 
@@ -288,13 +291,13 @@ ms.locfileid: "44936968"
 
 - **檔案名稱**
 
-- 檔案**url**：定義檔案位置的 url （例如，在 SharePoint Online 中）。
+- 檔案**url**：定義檔案位置的 url (例如，在 SharePoint 線上) 中。
 
 - **在上偵測到惡意內容**隔離檔的日期/時間。
 
 - **Expires**：將從隔離區中刪除檔案的日期。
 
-- 偵測**者**： ATP （高級威脅防護）或 Microsoft 的反惡意程式碼引擎。
+- 偵測**者**： ATP (高級威脅防護) 或 Microsoft 的反惡意程式碼引擎。
 
 - **已釋出？**
 
@@ -302,7 +305,7 @@ ms.locfileid: "44936968"
 
 - **檔識別碼**：檔的唯一識別碼。
 
-- **檔案大小**：以 kb 為單位。
+- **檔案大小**： KB (kb) 。
 
 - **組織**您組織的唯一識別碼。
 
@@ -310,13 +313,13 @@ ms.locfileid: "44936968"
 
 - **修改者**：上次修改檔案的使用者。
 
-- **安全雜湊演算法 256-位（SHA-256）值**：您可以使用此雜湊值，在其他信譽存放區或您環境中的其他位置識別檔案。
+- **安全雜湊演算法 256-位 (SHA-256) 值**：您可以使用此雜湊值，在其他信譽存放區或您環境中的其他位置識別檔案。
 
 ### <a name="take-action-on-quarantined-files"></a>對隔離的檔案採取動作
 
 當您選取清單中的檔案時，您可以對 [**詳細資料**] 彈出窗格中的檔案採取下列動作：
 
-- **發行**檔案：選取（預設值）或取消選取 [ **Microsoft for analysis**]，然後按一下 [**發行**檔案]。
+- **版本**檔案：選取 [ (預設值]) 或取消選取 [ **Microsoft for Analysis] 的報表**檔案，然後按一下 [**釋放檔**]。
 
 - **下載檔案**
 
@@ -326,13 +329,13 @@ ms.locfileid: "44936968"
 
 #### <a name="actions-on-multiple-quarantined-files"></a>對多個隔離檔的動作
 
-當您在清單中選取多個隔離的檔案（最多100個）時，會出現 [**大量動作**] 飛入窗格，您可以在其中採取下列動作：
+當您在清單中選取多個隔離的檔案 (直到 100) 時，會出現 [**大量動作**] 彈出窗格，您可以在其中採取下列動作：
 
 - **發行檔**
 
 - **刪除**檔案：在出現的警告中，按一下 [**是]** 後，就會立即刪除檔案。
 
-1. 在您的組織中使用具有全域系統管理員許可權（或適當的安全性 & 合規性中心角色）的工作或學校帳戶，登入並[移至安全性 & 規範中心](../../compliance/go-to-the-securitycompliance-center.md)。
+1. 使用具有全域管理員許可權的工作或學校帳戶 (或適當的安全性 & 合規性中心角色) 在組織中，登入並[移至安全性 & 規範中心](../../compliance/go-to-the-securitycompliance-center.md)。
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>使用 Exchange Online PowerShell 或獨立 EOP PowerShell 來查看及管理隔離的郵件和檔案
 

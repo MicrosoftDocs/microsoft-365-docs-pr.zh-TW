@@ -19,23 +19,23 @@ search.appverid:
 - MET150
 - MOE150
 description: 從 Microsoft 365 系統管理中心，回顧有關集中式部署的常見問題解答。
-ms.openlocfilehash: 2d9a3c6f2cfe9418cc83cbd0f29537e5533c4257
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: b1b5ccbb5373bf5d536208efdfe487bc0c872f25
+ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083559"
+ms.lasthandoff: 07/11/2020
+ms.locfileid: "45102881"
 ---
 # <a name="centralized-deployment-faq"></a>集中式部署常見問題集
 
-集中式部署是 Office 365 系統管理員針對組織內的使用者和群組部署 Office 增益集（Word、Excel、PowerPoint 和 Outlook）的建議方法，前提是組織符合本文所述的使用集中式部署的所有需求。   
+集中式部署是 Office 365 系統管理員將 Office 載入) PowerPoint (宏部署到組織內之使用者和群組的建議方法，只要組織符合本文所述的所有使用集中式部署的需求。   
   
 ## <a name="how-do-i-know-if-my-organization-is-set-up-for-centralized-deployment"></a>如何知道我的組織是否已設定進行集中式部署？  
 
-集中式部署增益集需要使用者使用 Microsoft 365 應用程式的企業版（並使用組織登入認證來登入 Office）和 Exchange Online 信箱。 您的訂閱目錄必須是在 Azure Active Directory 中或同盟至 Azure Active Directory。  
+[！注意] 增益集的集中式部署需要使用者使用 Microsoft 365 應用程式的 enterprise (，並使用組織的登入認證來登入 Office) 並擁有 Exchange Online 信箱。 您的訂閱目錄必須是在 Azure Active Directory 中或同盟至 Azure Active Directory。  
  
 僅支援線上信箱的集中式部署。 它不支援部署至內部部署 Exchange 信箱。
- 
+
 您可以使用[集中式部署相容性檢查](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker)程式   ，判斷您的訂閱是否符合資格。 
   
 ## <a name="how-do-you-target-add-in-user-assignments-with-centralized-deployment"></a>如何使用集中式部署來瞄準增益集使用者的指派？  
@@ -54,35 +54,37 @@ ms.locfileid: "45083559"
 
 為了輕鬆將增益集部署至使用者、群組或整個組織，我們建議系統管理員使用集中式部署。
 
-如需管理使用者存取的相關資訊，請參閱 </br>[關閉所有用戶端（Outlook 除外）的 Office Store，以避免增益集下載](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)。 </br>[指定可安裝和管理 Outlook 增益集的系統管理員和使用者](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN)。
+如需管理使用者存取的相關資訊，請參閱：
+ - [在 Outlook) 以外的所有用戶端上關閉 Office 存放區，以防止增益集下載 (](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [指定系統管理員和使用者可安裝和管理適用於 Outlook 增益集](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
 ## <a name="will-centralized-deployment-provide-admins-the-flexibility-to-choose-the-deployment-method-for-outlook-add-ins"></a>集中式部署會為系統管理員提供彈性，以選擇 Outlook 增益集的部署方法？  
 
 是。 集中式部署為系統管理員提供彈性，為增益集部署期間的 Outlook 增益集選擇三種部署方法之一：
 
-**固定（預設值）**  增益集會自動部署至指派的使用者，且無法加以移除。  
+**固定 (預設) **  增益集會自動部署至指派的使用者，且無法加以移除。  
  
-**可用**使用者可以在 Outlook 中安裝增益集，方法是選擇 [首頁] > > 管理管理] 中取得更多增益集。   
+**可用**使用者可以在 Outlook 中安裝增益集，方法是選擇 [**首頁] > > 管理管理] 中取得更多增益集**。
  
 **選用**增益集會自動部署至指派的使用者，但是可以選擇將它移除。  
     
-## <a name="can-admins-update-line-of-business-lob-add-ins"></a>系統管理員可以更新企業營運（LOB）增益集嗎？  
+## <a name="can-admins-update-line-of-business-lob-add-ins"></a>系統管理員是否可以更新企業營運 (LOB) 增益集？  
 
 是。 系統管理員可以上傳新的資訊清單檔案，以支援系統管理員部署的 LOB 增益集的中繼資料變更。增益集會在下次啟動 Office 應用程式時更新。 Web 應用程式可以隨時變更。  
  
-如需詳細資訊，請參閱企業營運營運[增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins)。  
+如需詳細資訊，請參閱企業營運營運[增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security)。  
 
 ## <a name="can-admins-turn-off-add-ins"></a>系統管理員是否可以關閉增益集？  
 
 是。 系統管理員可以開啟或關閉其為所有使用者從 Microsoft 系統管理中心部署的增益集。
 
-如需詳細資訊，請參閱[增益集狀態](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#add-in-states)。  
+如需詳細資訊，請參閱[增益集狀態](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states)。  
 
 ##  <a name="can-admins-delete-or-remove-add-ins"></a>系統管理員可以刪除或移除增益集嗎？
 
 是。 系統管理員可以從 Microsoft 系統管理中心刪除其為所有使用者部署的增益集。
 
-如需詳細資訊，請參閱[刪除增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#delete-the-add-in)。 
+如需詳細資訊，請參閱[刪除增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in)。 
   
 ## <a name="can-admins-deploy-paid-add-ins-from-the-office-store-using-centralized-deployment"></a>使用集中式部署，系統管理員可以從 Office Store 部署付費增益集嗎？ 
 
