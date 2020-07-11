@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在安全性與合規性中心建立及匯入 DLP 的自訂敏感性資訊類型。
-ms.openlocfilehash: 25b2d972214410df96d3dedbe204b75b6cd0b1d9
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: e0b2cbdad49c19e34237095b7825b4a3496fd570
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039387"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086620"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型
 
@@ -49,7 +49,7 @@ Here's the sample XML of the rule package that we'll create in this topic. Eleme
   
 ```xml
 <?xml version="1.0" encoding="UTF-16"?>
-<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
 <RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
     <Version build="0" major="1" minor="0" revision="0"/>
     <Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
@@ -166,7 +166,7 @@ An entity is a sensitive information type, such as a credit card number, that ha
 <!-- why isn't the following in procedure format? -->
 Add the Rules and Entity elements. Then add a comment that contains the name of your custom entity - in this example, Employee ID. Later, you'll add the entity name to the localized strings section, and that name is what appears in the UI when you create a DLP policy.
   
-Next, generate a GUID for your entity. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing [guid]::NewGuid(). Later, you'll also add the entity GUID to the localized strings section.
+Next, generate a GUID for your entity. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing **[guid]::NewGuid()**. Later, you'll also add the entity GUID to the localized strings section.
   
 ![XML 標記，顯示 Rules 和 Entity 元素](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
@@ -302,7 +302,7 @@ The Pattern element has a required confidenceLevel attribute. You can think of t
   
 ![XML 標記，顯示具有不同 confidenceLevel 屬性值的 Pattern 元素](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
-In addition to confidenceLevel for each Pattern, the Entity has a recommendedConfidence attribute. The recommended confidence attribute can be thought of as the default confidence level for the rule. When you create a rule in a DLP policy, if you don't specify a confidence level for the rule to use, that rule will match based on the recommended confidence level for the entity.
+除了每個 Pattern 的 confidenceLevel 以外，Entity 還具有 recommendedConfidence 屬性。 建議的信賴屬性可視為規則的預設信賴等級使用。 當您在 DLP 原則中建立規則時，若您不針對要使用的規則指定信賴等級，則該規則會根據實體的建議信賴等級來比對。 請注意，規則套件中的每個實體識別碼都必須有 recommendedConfidence 屬性，如果遺漏，您將無法儲存使用機密資訊類型的原則。 
   
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-security-amp-compliance-center-localizedstrings-element"></a>Do you want to support other languages in the UI of the Security &amp; Compliance Center? [LocalizedStrings element]
 
@@ -326,7 +326,7 @@ The Version element is also important. When you upload your rule package for the
   
 ```xml
 <?xml version="1.0" encoding="utf-16"?>
-<RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
+<RulePackage xmlns="http://schemas.microsoft.com/office/2011/mce">
   <RulePack id=". . .">
     <Version major="1" minor="0" build="0" revision="0" />
     <Publisher id=". . ." /> 
@@ -568,8 +568,8 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([Byte[]]$(Get-Content -Pat
   
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:mce="https://schemas.microsoft.com/office/2011/mce"
-           targetNamespace="https://schemas.microsoft.com/office/2011/mce"
+<xs:schema xmlns:mce="http://schemas.microsoft.com/office/2011/mce"
+           targetNamespace="http://schemas.microsoft.com/office/2011/mce"
            xmlns:xs="https://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"

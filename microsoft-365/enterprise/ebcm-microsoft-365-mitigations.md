@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 服務事件案例的部分緩和範例。
-ms.openlocfilehash: ea9804d4f22a11ea9ffcda9d9939d70574c2e87e
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: e5313464a45be679eaee6c4d06ca000e63c1010c
+ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601060"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086630"
 ---
 # <a name="service-incident-mitigation-strategies"></a>服務事件緩和策略
 
@@ -36,6 +36,7 @@ ms.locfileid: "41601060"
 |使用 VoIP 電話做為溝通的次要方法。|實作支援 PSTN 通話的非 VoIP 電話，特別針對在事件期間的網路與服務作業中心。 將員工的行動電話號碼新增至公司目錄，以便透過行動網路連絡重要人員。|
 |檔案儲存和使用者生產力仰賴使用商務用 OneDrive。 [檔案隨選](https://techcommunity.microsoft.com/t5/Microsoft-OneDrive-Blog/OneDrive-Files-On-Demand-For-The-Enterprise/ba-p/117234)的設定可釋出本機使用者磁碟機上的空間。|OneDrive 同步處理會提供群組原則，允許系統管理員在本機同步處理特定內容，或在需要時釋出空間。 若要緩和文件無法存取的風險，請設定此原則以同步處理本機的重要檔案。 訓練使用者對重要文件手動套用 [永遠保留在此裝置上] 設定。|
 |向客戶和供應商溝通相關的業務中斷仰賴使用 Exchange Online。|公用協力廠商社交網路可做為大量通訊的備用方式。
+|混合式內部部署架構（例如 ADFS 或 Pass 驗證）會造成使用者無法驗證雲端服務。|將 [密碼散列同步處理](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls#deploy-password-hash-sync-even-if-you-are-federated-or-use-pass-through-authentication)與混合式驗證服務搭配使用，做為輔助雲端型驗證服務，避免在中斷期間登入。 [如需有關建立彈性驗證和存取控制架構的進一步資訊，請參閱建立 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-resilient-controls) 彈性存取控制管理原則。|  
 
 ## <a name="leveraging-mobile-app-access"></a>運用行動應用程式存取
 
