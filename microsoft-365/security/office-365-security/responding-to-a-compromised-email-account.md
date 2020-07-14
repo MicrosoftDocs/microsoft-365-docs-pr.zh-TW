@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用可用工具辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
-ms.openlocfilehash: 8a7bb98432529bfca70764314d251810d3cdb2a4
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: f9d7b1dbcd9b54ca9b1bdca9e4a800be24286654
+ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819482"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45094807"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>回應遭入侵的電子郵件帳戶
 
@@ -98,7 +98,7 @@ ms.locfileid: "44819482"
 - 如果您的內部部署身分識別與 Microsoft 365 同盟，則必須變更您的內部部署密碼，然後必須通知您的系統管理員相關入侵。
 
 > [!TIP]
-> 我們強烈建議您啟用多重要素驗證 (MFA)，以防止入侵，特別是具有系統管理權限的帳戶。  若要深入瞭解 MFA，請移至 [設定多重要素驗證]((https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
+> 我們強烈建議您啟用多重要素驗證 (MFA)，以防止入侵，特別是具有系統管理權限的帳戶。  若要深入了解 MFA，請至 [設定多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>步驟 2 移除可疑的電子郵件轉寄地址
 

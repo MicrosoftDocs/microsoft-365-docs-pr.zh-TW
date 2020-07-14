@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 12b0c15186a27a1583403214a657367c1dd3b1a9
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b509c1581f3b4120e9cf70e7603e56da86126539
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844749"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091993"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -52,7 +52,7 @@ ms.locfileid: "44844749"
     
     若為 Microsoft Teams： 
     - 如果您想要刪除或保留 Teams 頻道訊息或Teams 聊天，您必須選取選擇特定位置的選項。 當您選取這些選項的其中一個做為位置時，即會自動排除其他位置，因為包含此 Teams 資料的保留原則不能包含其他位置。 
-    - 請注意，針對 **Teams 頻道訊息**，會包含來自標準頻道的訊息，但不會包含[私人頻道](https://docs.microsoft.com/microsoftteams/private-channels)的訊息。 當您選取 [Teams 聊天]**** 位置時，會將來自私人頻道的訊息包含為群組聊天。
+    - 請注意，針對 **Teams 頻道訊息**，會包含來自標準頻道的訊息，但不會包含[私人頻道](https://docs.microsoft.com/microsoftteams/private-channels)的訊息。 目前，保留原則尚未支援私人頻道。
     
     如需在組織的保留原則或特定位置之間選擇的詳細資訊，請參閱此頁面上的[將保留原則套用到整個組織或特定位置](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)。
     
@@ -135,7 +135,7 @@ Therefore, before you assign a retention policy to a site collection for the fir
   
 ### <a name="identify-content-that-contains-sensitive-information"></a>識別包含敏感性資訊的內容
 
-You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
+You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personal information, such as taxpayer identification numbers, social security numbers, or passport numbers.
   
 ![敏感資訊類型頁面](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
@@ -235,21 +235,25 @@ You can also apply a retention policy only to content that contains [specific ty
 
 2. 執行 `Get-RetentionCompliancePolicy` 來列出您的保留原則清單，並尋找您想要鎖定的原則名稱。
     
-    ![PowerShell 中保留原則的清單](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+   ![PowerShell 中保留原則的清單](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
 3. 若要在保留原則上放置保留鎖定，請執行 `Set-RetentionCompliancePolicy` 時將 `RestrictiveRetention` 參數設為 True。 例如：
+
+   ```powershell
+   Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
+   ```
+   
+   ![PowerShell 中的 RestrictiveRetention 參數](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-        Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
+   執行完該 Cmdlet 之後，請選擇 [全部皆是]****：
     
-    ![PowerShell 中的 RestrictiveRetention 參數](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
-    
-    執行完該 Cmdlet 之後，請選擇 [全部皆是]****：
-    
-    ![確認您在 PowerShell 想要鎖定保留原則的提示。](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+   ![確認您在 PowerShell 想要鎖定保留原則的提示。](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 保留鎖定現在放置於保留原則上。 如果您執行 `Get-RetentionCompliancePolicy`，`RestrictiveRetention` 參數會設為 true。 例如：
 
-`Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl`
+```powershell
+Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
+```
 
 ![PowerShell 中顯示所有參數的鎖定原則](../media/retention-policy-preservation-lock-locked-policy.PNG)
   

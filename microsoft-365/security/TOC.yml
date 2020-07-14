@@ -191,6 +191,10 @@
               items:
                 - name: 安全分數概觀
                   href: mtp/microsoft-secure-score.md
+                - name: 深入了解您的安全性狀況
+                  href: mtp/microsoft-secure-score-improvement-actions.md
+                - name: 追蹤您的分數記錄並達成目標
+                  href: mtp/microsoft-secure-score-history-metrics-trends.md
                 - name: 即將推出的功能
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: 報告
@@ -411,8 +415,10 @@
                   href: ./office-365-security/air-custom-reporting.md
             - name: 快速偵測和處理受影響的使用者帳戶
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: 調查並修復惡意電子郵件
+            - name: 調查惡意電子郵件
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: 補救惡意電子郵件
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
             - name: 檢視並閱讀 ATP 報告
               href: ./office-365-security/view-reports-for-atp.md
             - name: 使用威脅分析了解最新的攻擊

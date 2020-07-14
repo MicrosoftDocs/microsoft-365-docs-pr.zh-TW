@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 開發雲端感知商務持續性計劃時需考慮的事項。
-ms.openlocfilehash: f8518a96461d33093b9d736f890f6166dc6b3c97
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: 35aa5fb74b8281a089ef0b58998cd297507cc46f
+ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41601090"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083504"
 ---
 # <a name="developing-your-continuity-plan"></a>開發您的持續性計劃
 
@@ -80,6 +80,8 @@ ms.locfileid: "41601090"
 
 當您清查商務程序，並將關係對應到其他程序和技術之後，您必須為所有程序建置驗證案例。 基本上就是要了解如何驗證您的商務程序持續性計劃。 您可能會發現某些內容更重要，而且您想要優先處理這些問題。
 請記得在建立計劃之後，對員工進行事件回應和持續性措施的定期訓練相當重要。 您應該透過納入每個驗證或測試的學習，使用後續事件檢閱來增強復原策略。
+
+![功能驗證 visio](../media/ebcm/capability-validation-visio.png)
 
 ## <a name="incident-coordination-and-communication"></a>事件協調與通訊
 

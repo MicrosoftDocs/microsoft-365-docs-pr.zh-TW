@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何在安全性與合規性中心使用[匯入]服務來將電子郵件資料 (PST 檔案) 大量匯入至使用者信箱。
-ms.openlocfilehash: 8c80f42261ab008d2c3d0957661d5b295695ef6e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e0d0c8c0a963e8660cac09abe68e6824dd7e1d3c
+ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817582"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091939"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>將組織的 PST 檔案匯入的概觀
 
@@ -56,7 +56,7 @@ ms.locfileid: "44817582"
     
 2. **上傳或複製的 PST 檔案** - 下一個步驟取決於您使用網路上傳或磁碟機寄送來匯入 PST 檔案。 在這兩種情況下，您會使用上一個步驟中取得的工具和安全儲存體金鑰。
     
-    - **網路上傳：** AzCopy.exe 工具 (於步驟 1 中下載) 用於上傳 PST 檔案並將其儲存在 Microsoft Cloud 中的 Azure 儲存體位置。 上傳 PST 檔案的 Azure 儲存體位置與組織所在的地區 Microsoft 資料中心相同。
+    - **網路上傳：** AzCopy.exe 工具 (於步驟 1 中下載) 用於上傳 PST 檔案並將其儲存在 Microsoft Cloud 中的 Azure 儲存體位置。 上傳 PST 檔案的 Azure 存儲體位置，與組織位於相同的地區 Microsoft 資料中心。
     
       若要上傳，您想要匯入的 PST 檔案必須位於組織中的檔案共用或檔案伺服器。
     
@@ -119,7 +119,6 @@ ms.locfileid: "44817582"
 
 - [使用 Azure 資料箱將檔案共用內容移轉至 SharePoint Online](https://docs.microsoft.com/sharepointmigration/how-to-migrate-file-share-content-to-spo-using-azuredatabox)
 
-
 ## <a name="frequently-asked-questions-about-importing-pst-files"></a>匯入 PST 檔案的關於常見問題
   
 以下是一些關於使用 Office 365 匯入服務將 PST 檔案大量匯入至 Microsoft 365 信箱的常見問題解答。 
@@ -147,10 +146,7 @@ ms.locfileid: "44817582"
   
  **哪些地區提供網路上傳服務？**
   
-Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
-
-> [!NOTE]
-> 目前無法在德國和瑞士使用網路上傳 PST 檔案。 當這些國家/地區開放使用網路上傳時，將會更新此常見問題。
+Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Germany, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
   
  **使用網路上傳匯入 PST 檔案的費用為何？**
   
@@ -166,7 +162,7 @@ Using network upload to import PST files is free.
   
  **將我的 PST 檔案上傳到 Azure 儲存體區域之後，這些檔案會在 Azure 中保留多久的時間才會遭到刪除？**
   
-使用網路上傳方法來匯入 PST 檔案會將這些檔案上傳到名為 **ingestiondata** 的 Azure Blob 容器。 如果安全性與合規性中心的 [匯入 PST 檔案]**** 頁面目前沒有進行中的匯入工作，則 Azure 中 **ingestiondata** 容器內的所有 PST 檔案都會在最近的匯入工作於安全性與合規性中心建立完成的後 30 天刪除。 這也表示您必須在 PST 檔案上傳到 Azure 的 30 天內，在安全性與合規性中心建立新的匯入工作 (如網路上傳指示中的步驟 5 所述)。
+使用網路上傳方法匯入 PST 檔案，會將這些檔案上傳到名為 `ingestiondata` 的 Azure Blob 容器。 如果安全性與合規性中心的 [匯入 PST 檔案]**** 頁面目前沒有進行中的匯入工作，則 Azure 中 `ingestiondata` 容器內的所有 PST 檔案都會在最近的匯入工作於安全性與合規性中心建立完成的後 30 天刪除。 這也表示您必須在 PST 檔案上傳到 Azure 的 30 天內，在安全性與合規性中心建立新的匯入工作 (如網路上傳指示中的步驟 5 所述)。
   
 這也表示 PST 檔案從 Azure 儲存體區域刪除之後，安全性與合規性中心內完整匯入工作的檔案清單中就不會顯示這些檔案。 即使匯入工作仍然列在安全性與合規性中心的 [匯入 PST 檔案]**** 頁面上，但當您檢視較舊匯入工作的詳細資料時，PST 檔案清單可能為空白。
   
