@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,19 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365solutions
 ms.custom: ''
-description: 瞭解如何使用 Complance 總分和合規性管理員來改善個人資料的保護層級。
-ms.openlocfilehash: 4a45f24d66d08c2c0f17d75d897f523ef074936c
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+description: 瞭解如何使用合規性分數和合規性管理員，以提升個人資料的保護層級。
+ms.openlocfilehash: d3730f7a91876befc05f749497540fbe9abe9641
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016364"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126545"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>使用合規性分數和合規性管理員管理改進動作
 
 Microsoft 合規性分數和合規性管理員可以搭配使用，以管理與資料隱私權法規相關的增強功能，例如：歐盟[一般資料保護規定（GDPR）](../compliance/gdpr.md)、[加州消費者 Protection 法案 CCPA）](../compliance/ccpa-faq.md)、HIPAA-高科技（美國衛生保健隱私權法案）和巴西資料保護法案（LGPD）。 
 
 本文提供如何使用這些工具來進行資料隱私權的指導。
+
+![管理改進動作的合規性分數和合規性管理員](../media/information-protection-deploy-compliance/information-protection-deploy-compliance-grid.png)
 
 >[!Note]
 >合規性管理員中提供的客戶動作為建議。 在實施之前，您需要評估法規環境中這些建議的效能。 合規性管理員建議不得加以轉譯，以保證法規遵從性。

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 05/15/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09e2f69eb5999ea104c62c807d348ca26b9236cf
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: 1d8bd316b847502f9e4b1c94afbf67a0472015a6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039397"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126406"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新增功能
 
@@ -34,6 +34,10 @@ ms.locfileid: "45039397"
 
 > [!TIP]
 > 還沒有 Office 365 ATP？ [連絡人銷售人員開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
+
+## <a name="julyaugust-2020"></a>2020年7月/8 月 
+
+- [體驗搜尋體驗的增強功能](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
 
@@ -93,7 +97,7 @@ ms.locfileid: "45039397"
 
 您知道 Office 365 ATP 提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 

@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 了解 Microsoft 365 商務進階版，這是一項訂閱服務，其中包含 Office 生產力應用程式和供企業防禦網路威脅的進階防護。
-ms.openlocfilehash: 6cff2fe62111e0d3ee99f406d0be83db0a119b09
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 50b1fec21593bd22577e07e000cedb89dfd90f66
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786167"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138221"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Microsoft 365 商務進階版的概觀
 
@@ -110,11 +110,6 @@ Microsoft 365 商務進階版透過下列方式，協助**針對威脅防禦**�
 - 如果您有合作夥伴，他們將取得 Microsoft 365 商務進階版：[從 Microsoft 合作夥伴中心取得 Microsoft 365 商務進階版](get-microsoft-365-business.md)。
 
 - 如果您沒有合作夥伴，且想要取得 Microsoft 365 商務進階版，您可以[在這裡購買](https://www.microsoft.com/microsoft-365/business)，並遵循相關的[註冊](sign-up.md)指示。
-
-- 您也可以前往 [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) 購買 Microsoft 365 商務進階版並取得設定協助。
-
-    > [!NOTE]
-    > 此連結僅供在美國的商店使用
 
 ## <a name="see-also"></a>請參閱
 

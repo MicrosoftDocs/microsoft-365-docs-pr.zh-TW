@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 51db2bf7b618bddf2c6de417b7f5e53c91a64a1b
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 4e9a3a4b7182bfd452c63abd03836623dc77260c
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102857"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138241"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在系統管理中心部署增益集
 
@@ -116,9 +116,9 @@ Office add-ins combine an XML manifest file that contains some metadata about th
     
 - 從使用者的文件讀取及寫入資料，以提供值給該使用者。
     
-如需 Office 增益集類型和功能的詳細資訊，請參閱 [Office 增益集平台概觀](https://go.microsoft.com/fwlink/p/?linkid=846362) (尤其是「分析 Office 增益集」一節)。
+如需 Office 增益集類型和功能的詳細資訊，請參閱 [Office 增益集平台概觀](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins) (尤其是「分析 Office 增益集」一節)。
   
-To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://go.microsoft.com/fwlink/p/?linkid=848863).
+To interact with the user's document, the add-in needs to declare what permission it needs in the manifest. A five-level JavaScript API access-permissions model provides the basis for privacy and security for users of task pane add-ins. The majority of the add-ins in the Office Store are level ReadWriteDocument with almost all add-ins supporting at least the ReadDocument level. For more information about the permission levels, see [Requesting permissions for API use in content and task pane add-ins](https://docs.microsoft.com/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins).
   
 When updating a manifest, the typical changes are to an add-in's icon and text. Occasionally, add-in commands change. However, the permissions of the add-in do not change. The web application where all the code and logic for the add-in runs can change at any time, which is the nature of web applications.
   
@@ -133,9 +133,9 @@ When updating a manifest, the typical changes are to an add-in's icon and text. 
   
 ## <a name="learn-more"></a>深入了解
 
-建立及建立[Office 增益集](https://go.microsoft.com/fwlink/p/?linkid=846362)
+[在系統管理中心管理增益集](manage-addins-in-the-admin-center.md)
 
-[管理管理中心內的增益集](manage-addins-in-the-admin-center.md)
+[建立 Office 增益集](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins-fundamentals)。
 
 [對存放區中的增益集進行未成年人和取得](minors-and-acquiring-addins-from-the-store.md)
   

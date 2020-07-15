@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: '保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。 '
-ms.openlocfilehash: 12a8d036a043cfdd162b5aa47e1d6d5023a42c81
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cffc922aec3ca46543b5b1608fa37e6fa0acfa23
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005627"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138287"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>保護商務用 Microsoft 365 方案的十大方式
 
@@ -47,7 +47,7 @@ Microsoft 建議您完成下清單格中所列的工作，以套用至您的服�
 |2   <br/> |[訓練您的使用者](secure-your-business-data.md#train) <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |3   <br/> |[使用專用的系統管理員帳戶](secure-your-business-data.md#admin) <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |4   <br/> |[提升郵件中惡意程式碼的保護層級](secure-your-business-data.md#malware) <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
-|5   <br/> |[防護勒索軟體](secure-your-business-data.md#ransomware) <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
+|5   <br/> |[防範勒索軟體](secure-your-business-data.md#ransomware) <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |6   <br/> |[停止電子郵件的自動轉寄功能](secure-your-business-data.md#forwarding) <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |7   <br/> |[使用 Office 郵件加密](secure-your-business-data.md#encryption) <br/> ||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |8   <br/> |[保護您的電子郵件免受網路釣魚攻擊](secure-your-business-data.md#phishing) <br/> ||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
@@ -252,7 +252,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
     
 4. 在 [反網路釣魚] 頁面上，選取 [ **+ 建立**]。 嚮導會啟動以逐步逐步定義您的反網路釣魚原則。
     
-5. 請依照下表中的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱[瞭解 ATP 反網路釣魚原則選項](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)。 
+5. 請依照下表中的建議，指定原則的名稱、描述及設定。 如需詳細資訊，請參閱[瞭解 ATP 反網路釣魚原則選項](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)。 
     
 6. 檢查您的設定之後，請選取 [**建立這個原則**] 或 [**儲存**] （視需要）。
 
@@ -269,7 +269,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 |套用對象  <br/> |請選取 **[收件者的網域是]**。 在 **[任一項]** 底下選取 **[選擇]**。 選取 **[+ 新增]**。 選取功能變數名稱（例如，contoso.com，在清單中）旁的核取方塊，然後選取 [**新增**]。 選取 **[完成]**。  <br/> |
 |
    
-如需詳細資訊，請參閱[設定 Office 365 ATP 反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)。
+如需詳細資訊，請參閱[設定 Office 365 ATP 反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
   
 ## <a name="9-protect-against-malicious-attachments-and-files-with-atp-safe-attachments"></a>9：防禦具有 ATP 安全附件的惡意附件和檔案
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Office 郵件加密隨附于 Microsoft 365。 已設定好。 透過 Office 郵�
 |套用對象  <br/> |收件者網域是。 . . 選取您的網域。  <br/> |
 |
    
-如需詳細資訊，請參閱[設定 Office 365 ATP 反網路釣魚原則](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409)。
+如需詳細資訊，請參閱[設定 Office 365 ATP 反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)。
   
 ## <a name="10-protect-against-phishing-attacks-with-atp-safe-links"></a>10：防禦具有 ATP 安全連結的網路釣魚攻擊
 <a name="phishingatp"> </a>

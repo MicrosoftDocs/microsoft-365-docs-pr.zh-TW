@@ -16,12 +16,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 部署 Microsoft 365 安全性和合規性功能，並保護您的個人資訊。
-ms.openlocfilehash: 2ec8d280d650606921becb6120546b52253620f4
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: 99ac0f9e29c161ffa26362976f83584c9b168026
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844689"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126446"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保護受資料隱私權法規制約的資訊
 
@@ -33,6 +33,8 @@ ms.locfileid: "44844689"
 - 資料外洩防護 (DLP)
 - Office 郵件加密（OME）
 - 小組和網站存取控制
+
+![保護受資料隱私權法規制約之個人資訊的重要服務](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)
 
 >[!Note]
 >此解決方案說明安全性和合規性功能，以保護受資料隱私權法規制約的資訊。 如需 Microsoft 365 中安全性功能的完整清單，請參閱[microsoft 365 安全性檔案](https://docs.microsoft.com/microsoft-365/security/)。 如需 Microsoft 365 中符合性功能的完整清單，請參閱[microsoft 365 規範檔](https://docs.microsoft.com/microsoft-365/compliance/)。
@@ -94,7 +96,7 @@ Microsoft 資訊保護架構中的靈敏度標籤可讓您分類及保護組織�
 
 1. 瞭解下列各項：
    - **業務需求。** 建立在您的企業中套用敏感度標籤的業務原因。 例如，您的資訊保護的資料隱私權需求。
-   - **敏感度標籤功能。** 敏感度標籤會變得很複雜，所以請務必先閱讀[靈敏度標籤檔](../compliance/sensitivity-labels.md)，然後再開始著手。
+   - **敏感度標籤功能。** 敏感度標籤會變得很複雜，因此請務必先閱讀[靈敏度標籤檔](../compliance/sensitivity-labels.md)，然後再開始著手。
    - **需要記住的重要事項**敏感度標籤會在 Microsoft 合規性系統管理中心中管理，但目標和應用程式選項會有很大的差異。
       - 容器層級的網站、群組及小組都有敏感性標籤（這些設定不適用於容器內部的內容）。 當您布建網站、群組或小組時，會將這些專案發佈給使用者和群組。
       - 使用中內容有敏感性標籤。 這些也會發佈給使用者或群組，使用者或群組是手動套用的，或會在下列情況下自動套用：
@@ -102,14 +104,14 @@ Microsoft 資訊保護架構中的靈敏度標籤可讓您分類及保護組織�
         - 電子郵件會進行起草及傳送。
       - 除了透過 Exchange 透過 Exchange 傳送電子郵件之外，還會在 rest 的 SharePoint 和 OneDrive 中，自動應用程式的敏感標籤。 這兩個網站都是針對所有網站或特定專案，並自動套用到這些環境中的 rest 檔案。
 
-2. 合理使用過去或替代方法來標籤的目前敏感度
+2. 合理使用過去或替代方法來標出目前敏感度
 
    - Azure 資訊保護
 
-      目前的靈敏度標籤配置可能需要與任何現有的[Azure 資訊保護](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)標籤實施進行協調。
+      目前的靈敏度標籤配置可能需要與任何現有的[Azure 資訊保護](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection)標記實施協調。
    - OME
 
-      如果您打算使用新式敏感度標籤來進行電子郵件保護，且現有的電子郵件加密方法（如 OME）已存在，則可以共存，但您應該瞭解應該套用的情況。 請參閱[Office 365 郵件加密新功能（OME）](#office-365-message-encryption-ome-new-capabilities)，其中包括比較新式敏感度標籤類型保護與 OME 型防護的表格。
+      如果您打算使用新式敏感度標籤來進行電子郵件保護，且現有的電子郵件加密方法（如 OME）已存在，便可共存，但您應該瞭解應該套用的情況。 請參閱[Office 365 郵件加密新功能（OME）](#office-365-message-encryption-ome-new-capabilities)，其中包括比較新式敏感度標籤類型保護與 OME 型防護的表格。
 
 3. 規劃整合到更廣泛的資訊保護架構。 在與 OME 共存的位置上，目前的靈敏度標籤可以像是 Microsoft 365 資料遺失防護（DLP）和 Microsoft Cloud App Security 等相關功能使用。 請參閱[敏感度標籤和 Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) ，以實現您資料隱私權相關的資訊保護目標。
 
@@ -174,7 +176,7 @@ Microsoft 資訊保護架構中的靈敏度標籤可讓您分類及保護組織�
 - 您不需要仰賴使用者正確地將所有內容分類。
 - 使用者不再需要了解原則，而是可以專心於工作。
 
-自動標示功能支援為使用者推薦標籤，以及自動套用標籤。 但是在這兩種情況下，使用者都會決定接受或拒絕標籤，以協助確保正確為內容套用標籤。
+自動標籤可支援向使用者推薦標籤，以及自動套用標籤。 但是在這兩種情況下，使用者都會決定接受或拒絕標籤，以協助確保正確為內容套用標籤。
 
 此用戶端加標籤對於文件有最小延遲，因為您甚至可以在儲存文件之前套用標籤。 不過，並非所有用戶端應用程式都支援自動套用標籤。 Azure 資訊保護統一標籤用戶端和[某些版本的 Office 應用](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)程式都支援這項功能。
 
@@ -235,7 +237,7 @@ DLP 是用來識別包含狀況記錄的檔或電子郵件，然後自動封鎖�
 
 - 持續性的 DLP 原則管理，需要組織中的某人針對敏感資訊類型、保留標籤、法規及符合性原則中的變更，運作及調整原則。
 
-雖然在 DLP 原則條件中無法使用敏感度標籤，但根據敏感資訊類型，您可以根據敏感資訊類型自動套用的機密標籤，防止存取的某些保護案例可以得以實現。 如果已就地確定強大的靈敏度，請考慮是否應該使用 DLP 來增加保護，因為：
+雖然在 DLP 原則條件中無法使用敏感度標籤，但根據敏感資訊類型，您可以根據敏感資訊類型自動套用的機密標籤，防止存取的某些保護案例可以得以實現。 如果已具備強健的靈敏度標記，請考慮是否應該使用 DLP 來增加保護，因為：
 
   - DLP 可以防止共用檔案。 敏感度標籤只會阻止存取。
 
@@ -279,7 +281,7 @@ DLP 原則是在 Microsoft 合規性系統管理中心中設定，並指定保�
 3. 已建立的整體策略，可滿足需求和保護及控制資料隱私權的熱點。
 4. 解決資料隱私權控制策略的分階段行動計畫即會放入到位。
 
-決定這些元素之後，您可以使用敏感資訊類型、敏感度，以及將 DLP 原則放在一起。 下圖顯示範例。
+決定這些元素之後，您可以使用敏感資訊類型、敏感度標籤分類法和 DLP 原則一起使用。 下圖顯示範例。
 
 ![使用 DLP 之敏感度標籤的範例](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
@@ -319,7 +321,7 @@ DLP 原則是在 Microsoft 合規性系統管理中心中設定，並指定保�
 | 外部團體 <br> 與任何外部/消費者使用者安全地進行通訊及共同作業 | 是–標籤中的預先定義收件者 | 建議–根據收件者的即時保護 |
 | 內部 + 協力廠商，具有到期/撤銷 <br> 使用到期及撤銷的內部使用者和信任的合作夥伴來控制郵件和內容的存取 | 建議使用存取時間進行完整的自訂保護，使用者可以手動追蹤和撤銷檔 | 否–內部郵件沒有撤銷或到期 |
 | 具有到期/撤銷的外部方 <br> 使用已到期及撤銷的外部/消費者使用者來控制郵件和內容的存取 | Yes –使用者可以手動追蹤檔 | 建議（E5）–系統管理員可以從安全性 & 規範中心撤銷郵件 |
-| 自動標籤 <br> 組織想要自動保護具有特定機密內容和/或特定收件者的郵件/附件 | 建議（E5）-在 Exchange 和 Outlook 用戶端中自動標記，擴充郵件流程規則和 DLP 原則 | Yes-郵件流程規則和 DLP 原則，只含加密或不轉寄保護 |
+| 自動標記 <br> 組織想要自動保護具有特定機密內容和/或特定收件者的郵件/附件 | 建議（E5）-在 Exchange 和 Outlook 用戶端中自動標記，擴充郵件流程規則和 DLP 原則 | Yes-郵件流程規則和 DLP 原則，只含加密或不轉寄保護 |
 ||||
 
 在這兩種方法之間，使用者與系統管理員的經驗也會有差異。
