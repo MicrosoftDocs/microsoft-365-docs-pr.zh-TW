@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文針對 Microsoft 365 的「高級 eDiscovery」中的案例，定義了審查集內檔的元資料欄位。
-ms.openlocfilehash: 19a8b4968ea4b1d82cd6a9e9278530e6c155ef3f
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: e419cb14d1b0adbebd6d45aaa5120933b060bdf9
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726456"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126950"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>在高級 eDiscovery 中記錄元資料欄位
 
@@ -46,7 +46,7 @@ ms.locfileid: "44726456"
 |作者|作者|Doc_authors|從檔中繼資料製作作者。|
 |密件副本|密件副本|Email_bcc|郵件類型的 [密件副本] 欄位。 Format 為**DisplayName \<SMTPAddress> **。|
 |副本|副本|Email_cc|郵件類型的 [副本] 欄位。 Format 為**DisplayName \<SMTPAddress> **。|
-|符合性標籤|ComplianceLabels|Compliance_labels|套用至 Office 365 內容的[保留標籤](labels.md)。|
+|符合性標籤|ComplianceLabels|Compliance_labels|套用至 Office 365 內容的[保留標籤](retention.md)。|
 |複合路徑|CompoundPath|Compound_path|描述專案來源的人可讀取路徑。|
 |內容|內容||專案的解壓縮文字。|
 |交談主體|交談主體||專案的交談主體。|

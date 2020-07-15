@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: af2e5986530ae6b1eb558ed3389f0927d5f912e9
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 328aa52473fbb8b51ad580379c103e3759c2bff6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773754"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126694"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>金融服務行業規章機關（FINRA） Rule 4511 （c）美國
 
@@ -47,7 +47,7 @@ Cohasset 使用原則鎖定選項驗證[Azure 不可變化的 Blob 儲存](https
 
 ## <a name="microsoft-office-365"></a>Microsoft Office 365
 
-為了評估 Office 365 與 FINRA 規則4511（c）的相容性，Microsoft 保留了專門從事法規問題的主要獨立法律事務所，Covington & Burling，LLP。 在產生的報告中，在 Microsoft Office 365、資料保留和規則17a-4 規範中進行封存，Covington 會驗證[具有保留鎖定的 Office 365](retention-policies.md)包含封存功能，可讓受管制客戶（包括經紀人代理商）以協助其符合記錄保留的 FINRA 需求的方式來儲存資料。
+為了評估 Office 365 與 FINRA 規則4511（c）的相容性，Microsoft 保留了專門從事法規問題的主要獨立法律事務所，Covington & Burling，LLP。 在產生的報告中，在 Microsoft Office 365、資料保留和規則17a-4 規範中進行封存，Covington 會驗證[具有保留鎖定的 Office 365](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)包含封存功能，可讓受管制客戶（包括經紀人代理商）以協助其符合記錄保留的 FINRA 需求的方式來儲存資料。
 
 Office 365 中的封存可協助保留大量的資料，包括電子郵件、語音信箱、共用檔、立即訊息和協力廠商資料。 具體而言，Office 365 中的封存可讓客戶設定全域或細微的郵件保留原則，以儲存定義期間的資料，而不是以不可重寫、不可讀寫的格式使用。
 
@@ -56,7 +56,7 @@ Office 365 中的封存可協助保留大量的資料，包括電子郵件、語
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 ### <a name="azure--finra-rule-4511c"></a>Azure & FINRA 規則4511（c）
 
@@ -66,10 +66,10 @@ Office 365 中的封存可協助保留大量的資料，包括電子郵件、語
 
 [Office 365 中的封存、資料保留及 SEC 規則17a-4 規範](https://www.microsoft.com/microsoft-365/blog/2015/11/10/office-365-exchange-online-archiving-now-meets-sec-rule-17a-4-requirements/)
 
-## <a name="how-to-implement"></a>實作方法
+## <a name="how-to-implement"></a>實施方式
 
 - **金融服務法規**：適用于雲端計算和 Microsoft online 服務之重要的 US 規章原則的符合性地圖。 [深入了解](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
-- **風險評定與合規性指南**：建立 Microsoft 雲端服務風險評定的監管模型和調整通知。 [深入了解](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+- **風險評估與合規性指南**：建立 Microsoft 雲端服務風險評估的監管模型和調整通知。 [深入了解](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 - **金融使用案例**：使用案例概覽、課程及其他資源建立適用於金融服務的 Azure 解決方案。 [深入了解](https://docs.microsoft.com/azure/industry/financial/)
 
 ## <a name="resources"></a>資源

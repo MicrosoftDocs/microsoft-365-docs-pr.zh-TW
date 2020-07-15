@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 深入瞭解將協助您快速開始使用 Microsoft 365 中的合規性的工作。
-ms.openlocfilehash: 87dfa73c52473b0695c496826572ab9b5180dfca
-ms.sourcegitcommit: 92bd1631a2bb6df8683aa6da45a116090b338bb1
+ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44732481"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126612"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 規範快速入門的快速任務
 
@@ -83,7 +83,7 @@ To get their work done, people in your organization collaborate with others both
 
 ## <a name="task-7-configure-a-retention-policy"></a>任務7：設定保留原則
 
-[保留原則](retention-policies.md)可讓您主動決定是否要保留內容、刪除內容或兩者，保留，然後在指定的保留期間結束時刪除內容。 這些動作可能需要遵循行業法規和內部原則，以及在訴訟或違反安全性的情況下降低風險。
+[保留原則](retention.md)可讓您主動決定是否要保留內容、刪除內容或兩者，保留，然後在指定的保留期間結束時刪除內容。 這些動作可能需要遵循行業法規和內部原則，以及在訴訟或違反安全性的情況下降低風險。
 
 當內容受制于保留原則時，使用者可以繼續編輯和使用內容，只要沒有任何變更。 內容會就地保留在其原始位置。 不過，如果有人編輯或刪除遵守保留原則的內容，則原始內容的複本會儲存至保留原則的安全位置，而該內容的保留原則就會生效。
 
@@ -107,11 +107,15 @@ To get their work done, people in your organization collaborate with others both
 
 ### <a name="configure-retention-labels"></a>設定保留標籤
 
-保留原則會在容器層級套用至諸如 SharePoint 網站和 Exchange 信箱等位置，[保留標籤](labels.md)允許對保留和刪除原則進行更特定的目標。 例如，在檔或電子郵件訊息層級，使用者也可以手動套用，除了管理員之外的自動應用程式之外，使用者也可以手動套用。 您也可以將保留標籤套用至 SharePoint 中的文件庫、資料夾或檔集，讓儲存在該位置的所有檔繼承預設的保留標籤。
+保留原則會在容器層級套用至諸如 SharePoint 網站和 Exchange 信箱等位置，[保留標籤](retention.md#retention-labels)允許對保留和刪除原則進行更特定的目標。 例如，在檔或電子郵件訊息層級，使用者也可以手動套用，除了管理員之外的自動應用程式之外，使用者也可以手動套用。 您也可以將保留標籤套用至 SharePoint 中的文件庫、資料夾或檔集，讓儲存在該位置的所有檔繼承預設的保留標籤。
 
 此外，保留標籤支援[記錄管理](records-management.md)，將內容標示為記錄。 如果您這麼做，任何人都無法變更或移除標籤，相關內容也無法編輯或刪除。 您可能需要這些限制，以協助您的組織遵守法規需求。
 
-如需建立及發佈保留標籤的逐步指引，請參閱[create、publish 及 auto a apply 保留標籤](create-retention-labels.md)。 如需記錄管理授權資訊，請參閱[Microsoft 365 授權指南以取得安全性 & 符合性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)。
+如需建立及發佈保留標籤的逐步指引，請參閱下列指導：
+- [在應用程式中建立保留標籤並套用](create-apply-retention-labels.md)
+- [自動將保留標籤套用至內容](apply-retention-labels-automatically.md)
+
+如需記錄管理授權資訊，請參閱[Microsoft 365 授權指南以取得安全性 & 符合性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)。
 
 ### <a name="identify-and-define-sensitive-information-types"></a>識別及定義敏感資訊類型
 

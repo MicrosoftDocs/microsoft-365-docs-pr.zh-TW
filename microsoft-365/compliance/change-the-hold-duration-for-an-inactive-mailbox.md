@@ -20,12 +20,12 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 信箱變為非使用中之後，請變更指派給非使用中信箱的保留或 Office 365 保留原則的持續時間。
-ms.openlocfilehash: 113a3af38d83eabef2e3022f47952c2db70f47a9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 675e6eb36f762a50c3caafce07d09fda9ba9d98e
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818402"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126374"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>變更非作用中信箱的保留持續時間
 
@@ -60,9 +60,6 @@ Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,Litigat
 
 **True**的**LitigationHoldEnabled**屬性值表示非使用中的信箱處於訴訟暫止狀態。 如果將 In-Place 保留、eDiscovery 保留或 Microsoft 365 保留原則放在非使用中的信箱上，保留原則的 GUID 會顯示為**InPlaceHolds**屬性的值。 例如，下列會顯示五個非作用中信箱的結果。 
   
-||
-|:-----|
-|
 ```text
 DisplayName           : Ann Beebe
 Name                  : annb
@@ -110,7 +107,7 @@ InPlaceHolds          : {UniH7d895d48-7e23-4a8d-8346-533c3beac15d}
 |Carol Olson  <br/> |套用至特定信箱之安全性 & 規範中心內的 Microsoft 365 保留原則  <br/> |*InPlaceHolds*屬性包含套用至非使用中信箱之 Microsoft 365 保留原則的 GUID。 您可以告知這是套用至特定信箱的保留原則，因為 GUID 會以前置詞開頭 `mbx` 。 如果套用至非使用中信箱的保留原則 GUID 是以前置詞開始 `skp` ，則表示保留原則已套用至商務用 Skype 交談。  <br/><br/> 若要識別套用至非使用中信箱的 Microsoft 365 保留原則，請在安全性 & 規範中心 PowerShell 中執行下列命令。<br/><br/> `Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name` <br/><br/>`mbx` `skp` 當您執行此命令時，請務必移除或首碼。  <br/> |
 |Abraham McMahon  <br/> |安全性 & 規範中心的 eDiscovery 案例保留  <br/> |*InPlaceHolds*屬性包含放在非使用中信箱上的 eDiscovery 案例保留 GUID。 您可以告訴這是 eDiscovery 案例保留，因為 GUID 是以前置詞開頭 `UniH` 。  <br/> 您可以使用 `Get-CaseHoldPolicy` 安全性 & 規範中心 PowerShell 中的指令程式，取得與非作用中信箱相關聯之 eDiscovery 案例的相關資訊。 例如，您可以執行命令 `Get-CaseHoldPolicy <hold GUID without prefix> | FL Name` 以顯示非使用中信箱上之案例保留的名稱。 `UniH`當您執行此命令時，請務必移除前置詞。  <br/><br/> 若要識別與非作用中信箱上之保留相關的 eDiscovery 案例，請執行下列命令。  <br/><br/> `$CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>`<br/><br/> `Get-ComplianceCase $CaseHold.CaseId | FL Name`<br/><br/><br/> **附注：** 建議您不要對非使用中的信箱使用 eDiscovery 保留。 That's because eDiscovery cases are intended for specific, time-bound cases related to a legal issue. 在某些情況下，法律案例可能會結束，與案例相關聯的保留會被移除，並且 eDiscovery 案例會關閉（或刪除）。 實際上，如果放在非使用中信箱的保留與 eDiscovery 案例相關聯，且已發行保留或 eDiscovery 案例已關閉或已刪除，則系統會永久刪除非作用中的信箱。 
 
-如需 Microsoft 365 保留原則的詳細資訊，請參閱[保留原則一覽](retention-policies.md)。
+如需 Microsoft 365 保留原則的詳細資訊，請參閱[瞭解保留原則和保留標籤](retention.md)。
   
 ## <a name="step-2-change-the-hold-duration-for-an-inactive-mailbox"></a>步驟2：變更非使用中信箱的保留期間
 

@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是將它肯定和否定的範例，以查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護（DLP）或保留原則中。
-ms.openlocfilehash: de52c8c7f96d2d3c0383f27b17bcc5162bb662c5
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 10475420c729efc6a1ff59b6620fed08a1bdefca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371461"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126332"
 ---
 # <a name="getting-started-with-trainable-classifiers-preview"></a>開始使用可訓練的分類器 (預覽)
 
@@ -38,16 +38,16 @@ ms.locfileid: "44371461"
 - 識別專案，因為它是範本的變化[（檔指紋列印）](document-fingerprinting.md)。
 - 使用完全字串的狀態[（完全符合資料）](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
 
-然後，您可以自動套用敏感度和保留標籤，讓內容可用於[資料遺失防護（DLP）](data-loss-prevention-policies.md)和[保留原則](retention-policies.md)。
+敏感度和保留標籤可以自動套用，讓內容可用於[資料遺失防護（DLP）](data-loss-prevention-policies.md)和[自動套用保留標籤](apply-retention-labels-automatically.md)的原則。
 
 ## <a name="trainable-classifiers"></a>Trainable 分類器
 
 這種分類方法特別適合無法透過手動或自動模式相符方法輕易識別的內容。 這種分類方法更詳細地訓練分類器，以根據專案的專案，而不是專案中的元素（模式對應）來識別專案。 分類器透過查看您要分類之內容的數百個範例，瞭解如何識別內容類型。 您可以在類別中進一步送入明確的範例。 一旦處理這些程式，您可以讓它混合使用比對和不相符的範例。 分類器接著會作出預測，以判斷是否有任何指定的專案屬於您所建立的類別。 然後，您可以確認其結果、將正值、負、誤報和 false 的否定排序，以提升預測的準確性。 當您發佈訓練的分類器時，它會在 SharePoint Online、Exchange 及 OneDrive 等位置中排序專案，並將內容分類。
 
 ### <a name="where-you-can-use-trainable-classifiers"></a>您可以使用 trainable 的分類器
-內建的分類器和 trainable 分類器皆為根據條件和[通訊相容性](communication-compliance-configure.md)[自動套用保留標籤原則](labels.md#applying-a-retention-label-automatically-based-on-conditions)的條件。 
+內建的分類器和 trainable 分類器皆為根據條件和[通訊相容性](communication-compliance-configure.md)[自動套用保留標籤原則](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)的條件。 
 
-敏感度標籤可以使用內建及自行組建的分類器作為條件，請參閱對[內容自動套用靈敏度標籤](apply-sensitivity-label-automatically.md)，並[自動為 Office 應用程式](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)加上標籤。
+敏感度標籤可以使用內建及自行組建的分類器作為條件，請參閱對[內容自動套用敏感度標籤](apply-sensitivity-label-automatically.md)。
 
 > [!IMPORTANT]
 > Trainable 的分類程式只會使用未加密及英文的專案。
@@ -80,7 +80,7 @@ Trainable 分類器是 Microsoft 365 E5 或 E5 規範功能。 您必須具有�
 Microsoft 365 隨附了五個建議的內建分類器：
 
 > [!CAUTION]
-> 我們正在取代**冒犯性語言**內建的分類符，因為它所產生的是大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
+> 我們正在淘汰 [粗穢言語]**** 內建分類器，因為這個分類器產生了大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
 
 - **簡歷**：偵測屬於申請人個人、教育、專業資格、工作經驗及其他個人識別資訊的文字帳戶的專案
 - **原始程式碼**：偵測包含一組指令和語句的專案，這些專案是以前25種使用的電腦程式設計語言所撰寫的 GitHub
@@ -129,10 +129,9 @@ Microsoft 365 隨附了五個建議的內建分類器：
 ## <a name="see-also"></a>另請參閱
 
 
-- [保留標籤](labels.md)
-- [保留原則](retention-policies.md)
+- [保留標籤](retention.md)
 - [資料外洩防護 (DLP)](data-loss-prevention-policies.md)
 - [敏感性標籤](sensitivity-labels.md)
-- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [檔指紋列印](document-fingerprinting.md)
 - [完全相符的資料](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

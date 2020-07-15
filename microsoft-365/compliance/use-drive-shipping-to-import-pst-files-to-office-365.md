@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: 系統管理員可以透過將 PST 檔案複製到硬碟，然後將其運送至 Microsoft，瞭解如何將 pst 檔案大量匯入至 Microsoft 365 信箱。
-ms.openlocfilehash: dd97b4734fafbd6126d58997f4fd70eff43d082a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e94a59b19271af275f74a08355a017533f8ef45d
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819083"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127340"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>使用磁片磁碟機運送來匯入您組織的 PST 檔案
 
@@ -51,7 +51,7 @@ ms.locfileid: "44819083"
   
 有關使用磁片磁碟機運送將 PST 檔案匯入至 Office 365 的常見問題，請參閱[FAQs 使用磁片磁碟機運送來匯入 pst](faqimporting-pst-files-to-office-365.md#using-drive-shipping-to-import-pst-files)檔案。 
   
-## <a name="before-you-import-pst-files"></a>匯入 PST 檔案之前
+## <a name="before-you-import-pst-files"></a>在您匯出 PST 檔案之前
 
 - 您必須在 Exchange Online 中獲派信箱匯入匯出角色，才能將 PST 檔案匯入 Microsoft 365 信箱。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增到組織管理角色群組。 或者，可以建立角色群組、指派信箱匯出匯入角色，然後將自己新增為成員。 如需詳細資訊，請參閱[管理角色群組](https://go.microsoft.com/fwlink/p/?LinkId=730688)之＜新增角色至角色群組＞或＜建立角色群組＞一節。
     
@@ -460,7 +460,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
     
   - 使用 Microsoft [eDiscovery 工具](search-for-content.md)來搜尋資料。 
     
-  - 套用[Microsoft 365 保留原則](retention-policies.md)，以控制保留資料的時間長度，以及保留期間到期後要採取的動作。 
+  - 套用[Microsoft 365 保留原則](retention.md)，以控制保留資料的時間長度，以及保留期間到期後要採取的動作。 
     
   - 在[審計記錄](search-the-audit-log-in-security-and-compliance.md)檔中搜尋與此資料相關的事件。 
     

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/12/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,17 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
-description: '啟用封存信箱，並開啟自動擴充封存，以增加 Office 365 中信箱的 [可復原的專案] 資料夾的大小。 '
-ms.openlocfilehash: 884a03bc1693ec76cd3e80d85f62f4054e1d9911
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+description: 啟用封存信箱，並開啟自動擴充封存，增加 Microsoft 365 中信箱的 [可復原的專案] 資料夾的大小。
+ms.openlocfilehash: 3c2ac29fe650d03db7e5d4d1282b870eaece447c
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222706"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138265"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>增加保留信箱的可復原項目配額
 
-在 Exchange Online 中自動套用至新信箱的預設保留原則（名為「預設 MRM 原則」）包含一個名為「可復原的專案」的保留標記，該保留標記會移至封存。 這項保留標記會將專案從使用者主要信箱的 [可復原的專案] 資料夾移至使用者封存信箱中的 [可復原的專案] 資料夾之後，在14天的保留期間到期的專案。 為做到這一點，必須啟用使用者的封存信箱。 如果未啟用封存信箱，則不會採取任何動作，這表示在14天保留期間到期後，信箱的 [可復原的專案] 資料夾中的專案不會移至封存信箱。 因為保留信箱中未刪除任何專案，可能會超出 [可復原的專案] 資料夾的儲存配額，尤其是在未啟用使用者的封存信箱的情況下。 
+預設的 Exchange 保留原則（名為「*預設 MRM 原則*」）會自動套用至 Exchange Online 中的新信箱，包含一個名為「可復原的專案14天」的保留標記，可移至封存。 這項保留標記會將專案從使用者主要信箱的 [可復原的專案] 資料夾移至使用者封存信箱中的 [可復原的專案] 資料夾之後，在14天的保留期間到期的專案。 為做到這一點，必須啟用使用者的封存信箱。 如果未啟用封存信箱，則不會採取任何動作，這表示在14天保留期間到期後，信箱的 [可復原的專案] 資料夾中的專案不會移至封存信箱。 因為保留信箱中未刪除任何專案，可能會超出 [可復原的專案] 資料夾的儲存配額，尤其是在未啟用使用者的封存信箱的情況下。 
   
 為了協助降低超過此限制的機率，[可復原的專案] 資料夾的儲存配額會在 Exchange Online 中的信箱上進行保留時，自動從 30 GB 增加為 100 GB。 如果已啟用封存信箱，則封存信箱中 [可復原的專案] 資料夾的儲存配額也會從 30 GB 增加為 100 GB。 如果啟用 Exchange Online 中的自動展開封存功能，使用者封存中 [可復原的專案] 資料夾的儲存配額將不受限制。
   
@@ -42,20 +42,20 @@ ms.locfileid: "44222706"
   
 當信箱的主要信箱中 [可復原的專案] 資料夾的儲存配額接近達到限制時，您可以執行下列動作：
   
-- **啟用封存信箱並開啟自動展開**的封存-您可以只啟用封存信箱，然後在 Exchange Online 中開啟自動展開的封存功能，即可為 [可復原的專案] 資料夾啟用無限儲存容量。 這會導致主要信箱中 [可復原的專案] 資料夾的 110 GB 和使用者封存中 [可復原的專案] 資料夾的儲存容量量不限。 請參閱操作方法：[在安全性 & 規範中心啟用封存信箱](enable-archive-mailboxes.md)，並[在 Office 365 中啟用無限](enable-unlimited-archiving.md)封存。
+- **啟用封存信箱，並開啟自動展開的封存。** 您可以為 [可復原的專案] 資料夾啟用無限的儲存容量，只要啟用封存信箱，然後開啟 Exchange Online 中的自動擴充封存功能即可。 這會導致主要信箱中 [可復原的專案] 資料夾的 110 GB 和使用者封存中 [可復原的專案] 資料夾的儲存容量量不限。 請參閱操作方法：[在安全性 & 規範中心啟用封存信箱](enable-archive-mailboxes.md)，並[在 Office 365 中啟用無限](enable-unlimited-archiving.md)封存。
     
     > [!NOTE]
     > 當您為接近超過 [可復原的專案] 資料夾的儲存配額的信箱啟用封存後，您可能會想要執行受管理的資料夾助理以手動觸發該信箱的處理常式，這樣到期的專案就會移動封存信箱中的 [可復原的專案] 資料夾。 如需指示，請參閱[步驟 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) 。 請注意，使用者信箱中的其他專案可能會移至新的封存信箱。 請考慮告知使用者啟用封存信箱之後可能會發生這種情況。 
   
-- **為保留的信箱建立自訂保留原則**，除了啟用訴訟暫止或 In-Place 暫止的信箱的封存信箱和自動擴充封存之外，您也可以為保留信箱建立自訂保留原則。 這可讓您將保留原則套用至保留的信箱，與套用至未保留信箱的預設 MRM 原則不同。 這可讓您套用專為保留信箱所設計的保留標記。 這包括為 [可復原的專案] 資料夾建立新的保留標記。 
+- **為保留信箱建立自訂 Exchange 保留原則。** 除了為訴訟暫止或 In-Place 暫止啟用信箱的封存信箱和自動展開封存之外，您還可以為保留信箱建立自訂的 Exchange 保留原則。 這可讓您將保留原則套用至保留的信箱，與套用至未保留信箱的預設 MRM 原則不同，並可讓您套用為保留信箱所設計的保留標記。 這包括為 [可復原的專案] 資料夾建立新的保留標記。 
     
-本主題的其餘部分將說明為保留信箱建立自訂保留原則的逐步程式。
+本主題的其餘部分將說明為保留信箱建立自訂 Exchange 保留原則的逐步程式。
   
 [步驟1：為 [可復原的專案] 資料夾建立自訂保留標記](#step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder)
 
-[[步驟2：為保留信箱建立新的保留原則](#step-2-create-a-new-retention-policy-for-mailboxes-on-hold)
+[步驟2：為保留信箱建立新的 Exchange 保留原則](#step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold)
 
-[步驟3：將新的保留原則套用至保留信箱](#step-3-apply-the-new-retention-policy-to-mailboxes-on-hold)
+[步驟3：將新的 Exchange 保留原則套用至保留信箱](#step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold)
 
 [選步驟4：執行受管理的資料夾助理以套用新的保留設定](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
   
@@ -71,7 +71,7 @@ ms.locfileid: "44222706"
     New-RetentionPolicyTag -Name <Name of RPT> -Type RecoverableItems -AgeLimitForRetention <Number of days> -RetentionAction MoveToArchive
     ```
 
-    例如，下列命令會針對名為「暫止的信箱」之「可復原的專案30天」的 [可復原的專案] 資料夾，建立一個 RPT，保留期間為30天。 這表示專案已在 [可復原的專案] 資料夾中的30天之後，它會移至使用者的封存信箱中的 [可復原的專案] 資料夾。
+    例如，下列命令會針對名為「暫止的信箱」的 [可復原的專案30天] 的 [可復原的專案] 資料夾建立 RPT，保留期間為30天。 這表示專案已在 [可復原的專案] 資料夾中的30天之後，它會移至使用者的封存信箱中的 [可復原的專案] 資料夾。
     
     ```powershell
     New-RetentionPolicyTag -Name "Recoverable Items 30 days for mailboxes on hold" -Type RecoverableItems -AgeLimitForRetention 30 -RetentionAction MoveToArchive
@@ -80,7 +80,7 @@ ms.locfileid: "44222706"
     > [!TIP]
     > 建議 [可復原的專案 RPT] 的保留期間（由_AgeLimitForRetention_參數定義）與 RPT 將套用到之信箱的已刪除專案保留期間相同。 這可讓使用者在將刪除的專案移至封存信箱之前，先將其整個刪除的專案保留期間復原。 在上一個範例中，保留期間會設定為30天，但前提是信箱的刪除專案保留期間也是30天。 Exchange Online 信箱預設會將刪除的項目保留 14 天。 不過，您可以將此設定變更為最多30天。 如需詳細資訊，請參閱[在 Exchange Online 中變更信箱的已刪除專案保留期間](https://www.microsoft.com/?ref=go)。 
   
-## <a name="step-2-create-a-new-retention-policy-for-mailboxes-on-hold"></a>步驟2：為保留信箱建立新的保留原則
+## <a name="step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold"></a>步驟2：為保留信箱建立新的 Exchange 保留原則
 
 下一步是建立新的保留原則並新增保留標記，包括您在步驟1中建立的可復原專案 RPT。 在下一個步驟中，此新原則會套用至信箱保留。 
   
@@ -131,13 +131,13 @@ New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list o
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
 
-## <a name="step-3-apply-the-new-retention-policy-to-mailboxes-on-hold"></a>步驟3：將新的保留原則套用至保留信箱
+## <a name="step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold"></a>步驟3：將新的 Exchange 保留原則套用至保留信箱
 
 最後一個步驟是將您在步驟2中建立的新保留原則套用至組織中的信箱保留原則。 您可以使用 EAC 或 Exchange Online PowerShell 將保留原則套用至單一信箱或多個信箱。 
   
 ### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>使用 EAC 來套用新的保留原則
   
-1. 移至 **[** 收件者] [ \> **信箱**]。
+1. 移至 **[** 收件者] [  >  **信箱**]。
     
 2. 在清單視圖中，選取您要套用保留原則的信箱，然後按一下 [**編輯** ![ 編輯圖示] ](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 。
     
@@ -147,7 +147,7 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
     
 您也可以使用 EAC 將保留原則套用至多個信箱。
   
-1. 移至 **[** 收件者] [ \> **信箱**]。
+1. 移至 **[** 收件者] [  >  **信箱**]。
     
 2. 在清單檢視中，使用 Shift 鍵或 Ctrl 鍵來選取多個信箱。
     
@@ -205,7 +205,7 @@ Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | F
 
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>選步驟4：執行受管理的資料夾助理以套用新的保留設定
 
-將新的保留原則套用至保留信箱之後，您可以在 Exchange Online 中長達7天使用新的保留原則中的設定來處理這些信箱。 您可以使用**Start-ManagedFolderAssistant** Cmdlet 手動觸發助理，以處理套用新保留原則的信箱，而不是等待受管理的資料夾助理執行。 
+將新的 Exchange 保留原則套用至保留信箱之後，您可以在 Exchange Online 中長達7天使用新保留原則中的設定來處理這些信箱。 您可以使用**Start-ManagedFolderAssistant** Cmdlet 手動觸發助理，以處理套用新保留原則的信箱，而不是等待受管理的資料夾助理執行。 
   
 執行下列命令，以啟動 Pilar Pinilla 信箱的受管理的資料夾助理。
   

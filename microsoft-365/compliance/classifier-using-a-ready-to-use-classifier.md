@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 隨附許多內建的分類符，您可以用來識別及標記整個組織中的內容。 本主題將告訴您如何準備使用這些分類器。
-ms.openlocfilehash: 2652df8d79b06d6614e2478843195e67de0a8ebb
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371405"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126312"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>使用保留標籤測試內建的分類器（預覽）
 
@@ -33,7 +33,7 @@ Microsoft 已訓練及測試五個分類器，可協助識別特定的內容類�
 Microsoft 365 隨附了五個建議的內建分類器：
 
 > [!CAUTION]
-> 我們正在取代**冒犯性語言**內建的分類符，因為它所產生的是大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
+> 我們正在淘汰 [粗穢言語]**** 內建分類器，因為這個分類器產生了大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
 
 - **簡歷**：偵測屬於申請人個人、教育、專業資格、工作經驗及其他個人識別資訊的文字帳戶的專案
 - **原始程式碼**：偵測包含一組指令和語句的專案，這些專案是以前25種使用的電腦程式設計語言所撰寫的 GitHub
@@ -71,9 +71,9 @@ Microsoft 365 隨附了五個建議的內建分類器：
 
 5. 選擇 `Choose a label to auto-apply` 。
 
-6. 選擇 `Create new labels` 並建立標籤，以用於此測試。 當您執行此動作時，請 `Retention` 將設定為 `off` 。 您不想開啟任何保留或其他動作。 在此情況下，您只會使用保留標籤做為文字標籤，而不會強制執行任何動作。 例如，您可以建立一個名為 "SourceCode 分類程式 test" 的保留標籤，但不會執行任何動作，然後將該保留標籤自動套用至來原始程式碼分類器為條件的內容。 若要深入瞭解建立保留標籤的詳細資訊，請參閱[保留標籤簡介](labels.md)。
+6. 選擇 `Create new labels` 並建立標籤，以用於此測試。 當您執行此動作時，請 `Retention` 將設定為 `off` 。 您不想開啟任何保留或其他動作。 在此情況下，您只會使用保留標籤做為文字標籤，而不會強制執行任何動作。 例如，您可以建立一個名為 "SourceCode 分類程式 test" 的保留標籤，但不會執行任何動作，然後將該保留標籤自動套用至來原始程式碼分類器為條件的內容。 若要深入瞭解保留標籤，請參閱[瞭解保留原則和保留標籤](retention.md)。
   
-7. 選擇 [ `Auto-apply a label` 和] `Choose a label to auto-apply` 。 若要深入瞭解使用條件自動套用標籤的詳細資訊，請參閱，[根據條件自動套用保留標籤原則](labels.md#applying-a-retention-label-automatically-based-on-conditions)。
+7. 選擇 [ `Auto-apply a label` 和] `Choose a label to auto-apply` 。 若要深入瞭解使用條件自動套用標籤的詳細資訊，請參閱，設定[自動套用保留標籤的條件](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)。
 
 8. 從清單中選擇您的測試卷標，然後選擇 [ `Next` 。
 
@@ -106,5 +106,5 @@ Microsoft 365 隨附了五個建議的內建分類器：
 另請參閱：
 
 - [開始使用可訓練的分類器 (預覽)](classifier-getting-started-with.md)
-- [保留標籤概觀](labels.md)
-- [根據條件自動套用保留標籤原則](labels.md#applying-a-retention-label-automatically-based-on-conditions)
+- [深入瞭解保留原則和保留標籤](retention.md)
+- [自動將保留標籤套用保留或刪除內容](apply-retention-labels-automatically.md)

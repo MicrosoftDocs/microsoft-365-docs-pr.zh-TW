@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 description: 就像 Microsoft 365 規範中心的功能一樣，我們的說明內容永遠都在發展中。 瞭解本月新增及更新的功能。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fca455540ed3b01af3b9b4d2a6cd1053535f75b7
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 3060cadb5752d8420667105113e23e235ab6f306
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035638"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127510"
 ---
 # <a name="recent-updates-to-microsoft-365-compliance-content"></a>Microsoft 365 規範內容的最近更新
 
@@ -202,7 +202,7 @@ ms.locfileid: "45035638"
 
 ### <a name="records-management"></a>記錄管理
 
-[保留標籤簡介](labels.md)（已更新）<br>根據條件套用保留標籤的區段包括使用 trainable 的分類程式的選項。
+[保留標籤簡介](retention.md)（已更新）<br>根據條件套用保留標籤的區段包括使用 trainable 的分類程式的選項。
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 

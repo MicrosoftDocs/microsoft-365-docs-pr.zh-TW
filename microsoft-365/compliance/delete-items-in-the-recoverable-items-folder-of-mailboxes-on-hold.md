@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 瞭解如何刪除 Exchange Online 信箱之使用者的 [可復原的專案] 資料夾中的專案，即使該信箱位於法律封存中也一樣。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2d7babf231efba31a6f4cb1638d98669a9b938f9
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 9b4338784602826694b4683f3d000391592547a8
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817872"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127020"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>刪除雲端式信箱的 [可復原的專案] 資料夾中的專案，保留系統管理員協助
 
@@ -52,7 +52,7 @@ Exchange Online 信箱的 [可復原的專案] 資料夾存在，可防止意外
 
 - 非使用中的信箱不支援本文所述的程式。 這是因為在您移除停用信箱之後，您無法將保留（或保留原則）重新套用至非使用中的信箱。 當您從非使用中的信箱移除保留時，它會變更為一般虛刪除信箱，且會在受管理的資料夾助理處理之後，從組織中永久刪除。
 
-- 您無法對指派給已以保留鎖定鎖定之保留原則的信箱執行此程式。 這是因為保留鎖定可防止您從保留原則移除或排除信箱，以及停用信箱上的受管理的資料夾助理。 如需有關封鎖保留原則的詳細資訊，請參閱[使用保留鎖定以遵守法規需求](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
+- 您無法對指派給已以保留鎖定鎖定之保留原則的信箱執行此程式。 這是因為保留鎖定可防止您從保留原則移除或排除信箱，以及停用信箱上的受管理的資料夾助理。 如需有關封鎖保留原則的詳細資訊，請參閱[使用保留鎖定以遵守法規需求](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
 
 - 如果信箱未處於保留狀態（或沒有啟用單一專案復原），您可以從 [可復原的專案] 資料夾中刪除專案。 如需如何執行此動作的詳細資訊，請參閱[搜尋並刪除組織中的電子郵件訊息](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization)。
   
@@ -224,7 +224,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 在您識別信箱已保留狀態，因為保留標籤套用到資料夾或專案，您可以使用安全性與合規性中心的內容搜尋工具，利用 New-compliancetag 搜尋條件來搜尋已標示的專案。 如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md#conditions-for-common-properties)中的「搜尋條件」一節。
 
-如需標籤的詳細資訊，請參閱[標籤概觀](labels.md)。
+如需標籤的詳細資訊，請參閱[瞭解保留原則和保留標籤](retention.md)。
 
  ### <a name="ediscovery-holds"></a>eDiscovery 保留
   

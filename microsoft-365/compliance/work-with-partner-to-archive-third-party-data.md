@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何設定自訂連接器，以從資料來源（例如 Salesforce 交談、Yahoo Messenger 或 Yammer）匯入協力廠商資料。
-ms.openlocfilehash: f76ceda12bf48d26454a47e4b0b5d6ad42fbe55d
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c3b824909ae1243e2dd1f12b799e53d00d9615ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817038"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126652"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>與合作夥伴配合以封存第三方資料
 
@@ -499,7 +499,7 @@ ms.locfileid: "44817038"
     
       - [將信箱設定為訴訟資料暫留狀態](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-      - [保留原則概觀](retention-policies.md)
+      - [深入瞭解保留原則和保留標籤](retention.md)
     
     - 針對協力廠商資料信箱的擁有者、委派及系統管理存取啟用信箱審計記錄;請參閱[啟用信箱審核](enable-mailbox-auditing.md)。 這可讓您審核任何可存取協力廠商資料信箱之使用者執行的所有活動。
 
@@ -513,7 +513,7 @@ ms.locfileid: "44817038"
     
     - [將信箱設定為訴訟資料暫留狀態](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-    - [保留原則概觀](retention-policies.md)
+    - [深入瞭解保留原則和保留標籤](retention.md)
     
     如先前所述，將信箱置於保留狀態時，您可以設定從協力廠商資料來源保留項目多久的持續時間，或者您可以選擇無限期地保留項目。
 

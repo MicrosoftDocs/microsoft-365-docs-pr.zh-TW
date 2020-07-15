@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監視和管理內容處置，不論您使用的是處置檢查，還是會根據您設定的設定自動刪除內容。
-ms.openlocfilehash: 56eed956e4488932b7bf0f29eb3810964b8cb425
-ms.sourcegitcommit: 3274b65a3932288721541d2b3fa5ecbf4c51e1ab
+ms.openlocfilehash: 5c8c8c4e99edbc32bbca4b3efbe79325f53a3380
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702557"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127010"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -86,11 +86,11 @@ ms.locfileid: "44702557"
 
 ### <a name="workflow-for-a-disposition-review"></a>用於處置評審的工作流程
 
-這是處置檢查的基本工作流程，保留標籤會發佈，然後由使用者手動套用。 或者，設定用於處置檢查的保留標籤，會自動套用至內容。
+下圖顯示保留標籤發佈後，使用者手動套用的處理審閱基本工作流程。 或者，設定用於處置檢查的保留標籤，會自動套用至內容。
   
 ![顯示處置運作方式之流程的圖表](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-在保留期間結束處置檢查時，只會有[保留標籤](labels.md)的設定選項。 保留原則中無法使用此選項。
+在保留期間結束處置檢查時，只會有保留標籤的設定選項。 保留原則無法使用此選項。 如需這兩個保留解決方案的詳細資訊，請參閱[瞭解保留原則和保留標籤](retention.md)。
   
 ![標籤的保留設定](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
@@ -119,7 +119,7 @@ ms.locfileid: "44702557"
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>永久刪除處置內容之前的時間
 
-只有在檢閱者選擇永久刪除內容之後，才會刪除等候進行處置檢查的內容。 當檢閱者選擇此選項時，SharePoint 網站或 OneDrive 帳戶中的內容，就會符合[保留原則使用內容時的方式](retention-policies.md#how-a-retention-policy-works-with-content-in-place)所描述的標準清理程式。
+只有在檢閱者選擇永久刪除內容之後，才會刪除等候進行處置檢查的內容。 當檢閱者選擇此選項時，SharePoint 網站或 OneDrive 帳戶中的內容，就會符合[保留設定如何使用內容就地運作](retention.md#how-retention-settings-work-with-content-in-place)所述的標準清理程式。
 
 ## <a name="disposition-of-records"></a>記錄的處置
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 89456de1ec4ef170d85d7bd9c6b210d8bdb39f28
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 63a7c4f7385ec3d782ff030374ba344406c6d094
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773724"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126662"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>證券和 Exchange 傭金（SEC）原則17a-4 （f）美國
 
@@ -40,14 +40,14 @@ Microsoft Azure 永恆 Blob 儲存 with Policy Lock 和 Microsoft Office 365 （
 若要評估 Azure 與 Office 365 符合 SEC Rule 17a-4 （f），Microsoft 保留了獨立的評估事務所，專門從事記錄管理和資訊管理，Cohasset 關聯。 在結果報告中：
 
 - **Azure**： [SEC 17a-4 （f）合規性評估： Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)，Cohasset 使用原則鎖定選項驗證[Azure 不可變化的 blob 儲存](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage)，當用來保留非擦除和不可讀寫（WORM）格式的時間範圍內的 blob 時，會滿足 SEC 規則的不可變化的儲存需求。 每個 Blob （記錄）都會受到保護，無法進行修改、覆寫或刪除，直到必要的保留期間到期併發行任何關聯的合法保留期間為止。 具有敏感工作負載的軟體提供者和合作夥伴現在可以依靠 Azure 不可變化的 Blob 儲存為 onestop 雲端方案，以進行記錄保留和不可變的儲存。 金融機構現在可以組建自己的應用程式，利用這些功能，並保持不相容。
-- **Office 365**：[使用 Exchange ONLINE 來符合 SEC 17a-4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4)，Cohasset 已驗證[具有保留鎖定的 Office 365](retention-policies.md)包含封存功能，可讓受管制的客戶（包括經紀人代理商）儲存資料，以協助其遵守記錄保留的 SEC 需求。 Office 365 中的保留原則有助於保留大量的資料，包括電子郵件、語音信箱、共用檔、立即訊息和協力廠商資料。 具體而言，Office 365 中的封存可讓客戶設定全域或細微的郵件保留原則，以儲存定義期間的資料，而不是以不可重寫的 nonerasable 格式。
+- **Office 365**：[使用 Exchange ONLINE 來符合 SEC 17a-4](https://docs.microsoft.com/office365/securitycompliance/use-exchange-online-to-comply-with-sec-rule-17a-4)，Cohasset 已驗證[具有保留鎖定的 Office 365](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)包含封存功能，可讓受管制的客戶（包括經紀人代理商）儲存資料，以協助其遵守記錄保留的 SEC 需求。 Office 365 中的保留原則有助於保留大量的資料，包括電子郵件、語音信箱、共用檔、立即訊息和協力廠商資料。 具體而言，Office 365 中的封存可讓客戶設定全域或細微的郵件保留原則，以儲存定義期間的資料，而不是以不可重寫的 nonerasable 格式。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 ### <a name="azure--sec-rule-17"></a>Azure & SEC 規則17
 
@@ -57,7 +57,7 @@ Microsoft Azure 永恆 Blob 儲存 with Policy Lock 和 Microsoft Office 365 （
 
 [SEC 17a-4 （f）合規性評估： Microsoft Security & 合規性中心與 Exchange Online](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-## <a name="how-to-implement"></a>實作方法
+## <a name="how-to-implement"></a>實施方式
 
 ### <a name="financial-services-regulation"></a>金融服務法規
 

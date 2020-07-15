@@ -19,12 +19,12 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: 瞭解如何使用 DSR 案例工具來管理歐盟一般資料保護規定（GDPR）資料主體要求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79d4ff2fb7a83f5c094b4d4f74e68918c2bd5fff
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 3327618a1a297bb6d4afbbe45baa709f0638ee39
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815450"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126774"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>使用 Security & 合規性中心的 DSR 案例工具管理 GDPR 資料主體要求
 
@@ -247,7 +247,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
     
 - **郵件類型（ `kind` ）** –指定要搜尋的電子郵件專案類型。 例如，您可以使用此語法， `kind:email OR kind:im` 只傳回電子郵件、商務用 Skype 交談或 Microsoft 小組中的一對一聊天。 
     
-- **合規性標記（ `compliancetag` ）** –指定指派給電子郵件或檔的標籤。 此條件會傳回以特定標籤分類的專案。 標籤可用來分類電子郵件和檔，以進行資料控管，並根據標籤定義的分類強制執行保留規則。 這是 DSR 調查的有用條件，因為您的組織可能會使用標籤來分類與資料隱私權相關的內容，或包含個人資料或機密資訊的內容。 針對此狀況的值，請使用完整的標籤名稱或標籤名稱的第一個部分搭配萬用字元。 如需詳細資訊，請參閱[Office 365 中的標籤綜述](labels.md)。
+- **合規性標記（ `compliancetag` ）** –指定指派給電子郵件或檔的標籤。 此條件會傳回以特定標籤分類的專案。 標籤可用來分類電子郵件和檔，以進行資料控管，並根據標籤定義的分類強制執行保留規則。 這是 DSR 調查的有用條件，因為您的組織可能會使用標籤來分類與資料隱私權相關的內容，或包含個人資料或機密資訊的內容。 針對此狀況的值，請使用完整的標籤名稱或標籤名稱的第一個部分搭配萬用字元。 如需詳細資訊，請參閱[瞭解 Office 365 中的保留原則和保留標籤](retention.md)。
     
 如需 DSR 案例工具中所有可用條件的清單和描述，請參閱「內容搜尋的關鍵字查詢和搜尋條件」文章中的[搜尋條件](keyword-queries-and-search-conditions.md#search-conditions)。 
   

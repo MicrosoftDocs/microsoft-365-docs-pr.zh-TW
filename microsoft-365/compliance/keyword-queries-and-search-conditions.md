@@ -22,11 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解您可以在 Office 365 安全性 & 規範中心搜尋的電子郵件和檔案屬性。
-ms.openlocfilehash: 89d3f0c25694f8f3c89fbc27ee857c58cc5937fd
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 90365889ed60a5250514fa50b8034d5cfcb904bd
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049801"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127178"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
@@ -194,7 +195,7 @@ ms.locfileid: "45049801"
 |寄件者/作者|電子郵件，是指傳送訊息的人員。 對於檔，為 [author] 欄位中的 Office 檔中所述的人員。 您可以輸入一個以上的名稱，以逗號分隔。 **Or**運算子會以邏輯方式連接兩個或多個值。|
 |大小（位元組）|針對電子郵件和檔，為專案的大小（以位元組為單位）。|
 |主旨/職稱|電子郵件，郵件的主旨行中的文字。 檔的標題。 如先前所述，Title 屬性是 Microsoft Office 檔中指定的中繼資料。 您可以輸入多個主體/標題的名稱，以逗號分隔。 **Or**運算子會以邏輯方式連接兩個或多個值。|
-|規範標籤|針對電子郵件和檔，保留標籤，可由使用者手動指派的標籤原則或保留標籤自動指派給郵件和檔。 保留標籤可用來分類電子郵件和檔以進行資訊控管，並根據標籤定義的設定來強制執行保留規則。 您可以輸入部分保留標籤名稱，並使用萬用字元或輸入完整的標籤名稱。 如需詳細資訊，請參閱[保留標籤簡介](labels.md)。|
+|規範標籤|針對電子郵件和檔，自動標記原則或已手動指派給使用者的保留標籤，會自動指派給郵件和檔的保留標籤。 保留標籤可用來分類電子郵件和檔以進行資訊控管，並根據標籤定義的設定來強制執行保留規則。 您可以輸入部分保留標籤名稱，並使用萬用字元或輸入完整的標籤名稱。 如需保留標籤的詳細資訊，請參閱[瞭解保留原則和保留標籤](retention.md)。|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>郵件屬性的條件

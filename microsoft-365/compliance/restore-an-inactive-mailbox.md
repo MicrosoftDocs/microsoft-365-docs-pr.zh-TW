@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 瞭解如何將非使用中信箱的內容還原（或合併）至 Office 365 中的現有信箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ae3927aaaba64711cdcc3362399b109f228cb12
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 34965832c32bfd4139f4b9a54d3999313aace476
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818933"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127450"
 ---
 # <a name="restore-an-inactive-mailbox"></a>還原非作用中的信箱
 
@@ -104,7 +104,7 @@ ms.locfileid: "44818933"
   Get-Mailbox -InactiveMailboxOnly | FL Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **使用訴訟暫止或 Microsoft 365 保留原則，保留非使用中的信箱內容。** 如果您想要在還原非使用中的信箱時保留其狀態，您可以將目標信箱設定為[訴訟暫](https://go.microsoft.com/fwlink/?linkid=856286)止，或套用[Microsoft 365 保留原則](retention-policies.md)，再還原非使用中的信箱。 這會在還原至目標信箱後，避免永久刪除非作用中信箱中的任何專案。
+- **使用訴訟暫止或 Microsoft 365 保留原則，保留非使用中的信箱內容。** 如果您想要在還原非使用中的信箱時保留其狀態，您可以將目標信箱設定為[訴訟暫](https://go.microsoft.com/fwlink/?linkid=856286)止，或套用[Microsoft 365 保留原則](retention.md)，再還原非使用中的信箱。 這會在還原至目標信箱後，避免永久刪除非作用中信箱中的任何專案。
 
 - **在還原非使用中的信箱之前，請先在目標信箱上啟用保留功能。** 由於非使用中信箱的信箱專案可能是舊的，因此您可以考慮在還原非使用中的信箱之前，先在目標信箱上啟用保留功能。 當您將信箱設為保留狀態時，將不會處理指派給它的保留原則，除非已移除保留狀態，或保留期間到期。 這可讓目標信箱的擁有者管理非使用中信箱的舊郵件。 否則，保留原則可能會刪除舊專案（或將專案移至封存信箱（如果已啟用），該信箱會根據針對目標信箱設定的保留設定而到期。 如需詳細資訊，請參閱在[Exchange Online 中將信箱設為保留狀態](https://go.microsoft.com/fwlink/?linkid=856300)。
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 適用於系統管理員：了解如何使用網路上傳將多個 PST 檔案大量匯入 Microsoft 365 中的使用者信箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d35a6c77379c528d10510c1959df53c8d81a989
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: b7c8621859d04f44b58719a86b4c159f8379b961
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819063"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127330"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用網路上傳將組織的 PST 檔案匯入 Microsoft 365
 
@@ -336,7 +336,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
     
   - 使用 [Microsoft eDiscovery](search-for-content.md) 工具搜尋您匯入的資料。 
     
-  - 使用 [Microsoft 365 保留原則](retention-policies.md)來控制匯入資料的保留時間，以及保留期間到期後要採取的動作。 
+  - 使用 [Microsoft 365 保留原則](retention.md)來控制匯入資料的保留時間，以及保留期間到期後要採取的動作。 
     
   - 搜尋[稽核記錄](search-the-audit-log-in-security-and-compliance.md)，以尋找會影響您匯入資料的信箱相關事件。 
     

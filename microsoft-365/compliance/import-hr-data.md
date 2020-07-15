@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定資料連線器，將員工資料從組織的人力資源（HR）系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 69b290dfb6d5a07ad0fd3b0b356a4b9f6d467613
-ms.sourcegitcommit: ab0a944159d9349fbc7adc2f51c7f881254d7782
+ms.openlocfilehash: 7578b0e6c53d85c0216dbb4b82a2ab4e0f5aac87
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210569"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138300"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>設定連接器以匯入 HR 資料（預覽）
 
@@ -49,7 +49,7 @@ ms.locfileid: "44210569"
 
 ## <a name="step-2-prepare-a-csv-file-with-your-hr-data"></a>步驟2：使用 HR 資料準備 CSV 檔案
 
-下一步是建立 CSV 檔案，其中包含已離開組織之員工的相關資訊。 如「開始之前」一節所述，您必須決定如何從組織的 HR 系統產生此 CSV 檔案。 下列範例顯示包含三個必要參數（資料行）的完整 CSV 檔案（在記事本中開啟）。 在 Microsoft Excel 中編輯 CSV 檔案的工作相當簡單。
+下一步是建立 CSV 檔案，其中包含已離開組織之員工的相關資訊。 如「開始之前」一節所述，您必須決定如何從組織的 HR 系統產生此 CSV 檔案。 下列範例會顯示完整的 CSV 檔案（在記事區中開啟）包含三個必要的參數（資料行）。 在 Microsoft Excel 中編輯 CSV 檔案的工作相當簡單。
 
 ```text
 EmailAddress,TerminationDate,LastWorkingDate
@@ -72,7 +72,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
 ## <a name="step-3-create-the-hr-connector"></a>步驟3：建立 HR 連接器
 
-下一步是在 Microsoft 365 規範中心內建立 HR 連接器。 在步驟4中執行腳本後，您建立的 HR 連接器會將 HR 資料從 CSV 檔案中攝取至您的 Microsoft 365 組織。 在這個步驟中，請務必複製當您建立連接器時所產生的 JobId。 當您執行腳本時，您會使用 JobId。
+下一步是在 Microsoft 365 規範中心內建立 HR 連接器。 在步驟4中執行腳本後，您建立的 HR 連接器會將 HR 資料從 CSV 檔案中攝取至您的 Microsoft 365 組織。 在此步驟中，請務必複製當您建立連接器時所產生的工作識別碼。 當您執行腳本時，您會使用工作識別碼。
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然後按一下左側導覽中的 [**資料連線器**]。
 
@@ -92,13 +92,19 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
 6. 在 [**複查**] 頁面上，複查您的設定，然後按一下 **[完成]** 以建立連接器。
 
-   隨即會顯示 [狀態] 頁面，確認已建立連接器。 此頁面也包含工作識別碼。 在下一個步驟中，您將需要此工作識別碼來執行腳本。 您可以從這個頁面或從連接線的快顯視窗中複製此頁面。
+   隨即會顯示 [狀態] 頁面，確認已建立連接器。 此頁面包含兩個重要事項，您必須完成下一個步驟，才可執行範例腳本以上傳 HR 資料。
+
+   ![查看具有工作識別碼的頁面，並連結至 github 的範例腳本](../media/HRConnector_Confirmation.png)
+
+   a. **工作識別碼。** 在下一個步驟中，您將需要此工作識別碼來執行腳本。 您可以從這個頁面或從 [連接器飛出] 頁面複製此頁面。
+   
+   b. **範例腳本的連結。** 按一下 [**這裡**] 連結，移至 GitHub 網站以存取範例腳本（此連結會開啟新的視窗）。 將此視窗保持開啟，以便您可以在步驟4中複製腳本。 或者，您也可以將目的地做成書簽或複製 URL，以便您可以在步驟4中再次進行存取。 您也可以在 [連接器] 飛入頁面上使用此連結。
 
 7. 按一下 **[完成]**。
-   
+
    新的連接器會顯示在 [**連接器**] 索引標籤上的清單中。 
 
-8. 按一下剛才建立的 HR connector，以顯示飛出頁面，該頁面包含有關連接器的屬性及其他資訊。 
+8. 按一下剛才建立的 HR connector，以顯示飛出頁面，該頁面包含有關連接器的屬性及其他資訊。
 
    ![新 HR 連接器的飛出頁面](../media/HRConnectorWizard7.png)
 
@@ -110,9 +116,9 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
 設定 HR 連接器的最後一個步驟是執行範例腳本，將 CSV 檔案中所建立的 HR 資料上傳至 Microsoft 雲端。 具體說來，腳本會將資料上傳到 HR 連接器。 在您執行腳本後，您在步驟3中建立的 HR 連接器會將 HR 資料匯入至您的 Microsoft 365 組織，以供其他規範工具（例如有問必答風險管理解決方案）進行存取。 在您執行腳本後，請考慮排程任務每天定期執行它，使最新的員工終止資料上傳至 Microsoft 雲端。 請參閱[排程腳本自動執行](#optional-step-6-schedule-the-script-to-run-automatically)。
 
-1. 請移[至此 GitHub 網站](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1)來存取範例腳本。
+1. 移至您在上一個步驟中從左開啟的視窗，以利用範例腳本存取 GitHub 網站。 或者，您也可以開啟書簽網站或使用您複製的 URL。
 
-2. 按一下 [**原始**] 按鈕，以在文字視圖中顯示腳本
+2. 按一下 [**原始**] 按鈕，以在文字視圖中顯示腳本。
 
 3. 複製範例腳本中的所有行，然後將其儲存至文字檔。
 
@@ -132,7 +138,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
    |**參數**|**描述**
    |:-----|:-----|:-----|
-   |`tenantId`|這是您在步驟1中取得之 Microsoft 365 組織的識別碼。 您也可以在 Azure AD 系統管理中心的 [**一覽**] 邊欄中取得組織的 tenantId。 這是用來識別您的組織。|
+   |`tenantId`|這是您在步驟1中取得之 Microsoft 365 組織的識別碼。 您也可以在 Azure AD 系統管理中心的 [**一覽**] 邊欄中取得組織的承租人識別碼。 這是用來識別您的組織。|
    |`appId` |這是您在步驟1中您于 Azure AD 中所建立之應用程式的 AAD 應用程式識別碼。 當腳本嘗試存取您的 Microsoft 365 組織時，Azure AD 可用於驗證。 | 
    |`appSecret`|這是您在步驟1中您在 Azure AD 中建立之應用程式的 AAD 應用程式機密。 這也是用來進行驗證。|
    |`jobId`|這是您在步驟3中建立之 HR 連接器的工作識別碼。 這是用來將上傳至 Microsoft 雲端的 HR 資料與 HR connector 產生關聯。|
@@ -161,7 +167,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
    ![HR connector 記錄檔顯示上傳的 CSV 檔案中的列數](../media/HRConnectorLogFile.png)
 
-   **RecordsSaved**欄位會指出上傳的 CSV 檔案中的列數。 例如，如果 CSV 檔案包含四列，則**RecordsSaved**欄位的值為4，如果腳本成功上傳 CSV 檔案中的所有列。
+   此 `RecordsSaved` 欄位會指出上傳的 CSV 檔案中的列數。 例如，如果 CSV 檔案包含四列，則欄位的值 `RecordsSaved` 為4，如果腳本成功上傳 CSV 檔案中的所有列。
 
 如果您未在步驟4中執行腳本，則 [**最後一次匯入**] 底下會顯示下載腳本的連結。 您可以下載腳本，然後依照步驟4中的步驟執行它。
 

@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何識別可放在 Microsoft 365 的 Exchange Online 信箱上的不同保留類型。
-ms.openlocfilehash: a1629e96352a8b98d1122e9b31b968cdce9efa33
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: ea7beb34107fb5eaf61c56ece7bde8070e6467a6
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817602"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126804"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
@@ -36,7 +36,7 @@ Microsoft 365 提供數種方式，讓您的組織可以防止信箱內容遭到
 
 - **[保留 In-Place](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds)：** 在 Exchange Online 中使用 Exchange 系統管理中心的「In-Place eDiscovery & 保留」工具，將套用至使用者信箱的保留。
 
-- ** [Microsoft 365 保留原則](retention-policies.md)：** 可以設定為保留（或保留然後刪除） Exchange Online 中使用者信箱的內容，以及 Microsoft 365 群組和 Microsoft 小組對應的信箱中的內容。 您也可以建立保留原則，以保留儲存在使用者信箱中的商務用 Skype 交談。
+- ** [Microsoft 365 保留原則](retention.md)：** 可以設定為保留（或保留然後刪除） Exchange Online 中使用者信箱的內容，以及 Microsoft 365 群組和 Microsoft 小組對應的信箱中的內容。 您也可以建立保留原則，以保留儲存在使用者信箱中的商務用 Skype 交談。
 
   有兩種類型的 Microsoft 365 保留原則可指派給信箱。
 
@@ -46,7 +46,7 @@ Microsoft 365 提供數種方式，讓您的組織可以防止信箱內容遭到
     
   如需詳細資訊，請參閱[將保留原則套用至整個組織或特定位置](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)區段。
 
-- **[Microsoft 365 保留標籤](labels.md)：** 如果使用者將 Microsoft 365 保留標籤（已設定為保留內容或保留，然後刪除內容）套用至其信箱中的*任何*資料夾或專案，則會在信箱上保留信箱，就像該信箱已處於訴訟暫止狀態或指派給 Microsoft 365 保留原則一樣。 如需詳細資訊，請參閱「保留中的信箱」，[因為保留標籤已套用至本文中的資料夾或專案](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)一節。
+- **[Microsoft 365 保留標籤](retention.md)：** 如果使用者將 Microsoft 365 保留標籤（已設定為保留內容或保留，然後刪除內容）套用至其信箱中的*任何*資料夾或專案，則會在信箱上保留信箱，就像該信箱已處於訴訟暫止狀態或指派給 Microsoft 365 保留原則一樣。 如需詳細資訊，請參閱「保留中的信箱」，[因為保留標籤已套用至本文中的資料夾或專案](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item)一節。
 
 若要管理暫止的信箱，您可能必須識別放在信箱上的保留類型，這樣才能執行工作，例如變更保留期間、暫時或永久移除保留，或排除來自 Microsoft 365 保留原則的信箱。 在這些情況下，第一步是識別放在信箱上的保留類型。 而且，由於多個保留（和不同類型的保留）可以放在單一信箱上，因此，如果您想要移除或變更保留，您必須識別位於信箱上的所有保留。
 
@@ -100,7 +100,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 |適用于 Exchange 信箱、Exchange 公用資料夾和團隊聊天的 Microsoft 365 保留原則    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   套用至 Exchange 信箱、Exchange 公用資料夾和1xN 聊天室的組織內的保留原則，都是由以前置詞開頭的 Guid 來識別 `mbx` 。 附注1xN 聊天會儲存在個別聊天參與者的信箱中。      |
 |套用至 Microsoft 365 群組和團隊通道郵件的 microsoft 365 保留原則     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    在 Microsoft 小組中套用至 Microsoft 365 群組和通道郵件的全組織保留原則，會由以前置詞開頭的 Guid 來識別 `grp` 。 附注通道郵件會儲存在與 Microsoft 小組相關聯的群組信箱中。     |
 
-如需適用于 Microsoft 小組的詳細資訊保留原則，請參閱[保留原則](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations)的「小組位置」一節。
+如需適用于 Microsoft 小組之保留原則的詳細資訊，請參閱[瞭解 Microsoft 小組的保留原則](retention-policies-teams.md)。
 
 ### <a name="understanding-the-format-of-the-inplaceholds-value-for-retention-policies"></a>瞭解保留原則的 InPlaceHolds 值格式
 
@@ -120,7 +120,7 @@ Get-OrganizationConfig | FL InPlaceHolds
 |**第**    |    表示保留原則設定為保留專案。 原則不會在保留期間到期之後刪除專案。     |
 |**個**     |   表示保留原則已設定為保留專案，然後在保留期間到期時加以刪除。      |
 
-如需有關保留動作的詳細資訊，請參閱[保留原則](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)一節中的「在特定時段保留內容」一節。
+如需有關保留動作的詳細資訊，請參閱在[特定時間段內保留內容](create-retention-policies.md#retaining-content-for-a-specific-period-of-time)一節。
    
 ## <a name="step-2-use-the-guid-to-identify-the-hold"></a>步驟2：使用 GUID 識別保留
 
@@ -179,7 +179,7 @@ Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -Distribution
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-如需保留標籤的詳細資訊，請參閱[Microsoft 365 保留標籤](labels.md)。
+如需保留標籤的詳細資訊，請參閱[保留標籤](retention.md#retention-labels)。
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>管理延遲暫止的信箱
 

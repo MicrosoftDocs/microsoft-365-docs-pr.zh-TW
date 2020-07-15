@@ -20,12 +20,12 @@ ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何使用 Office 365 中的非使用中信箱功能，保留已刪除信箱的內容。
-ms.openlocfilehash: c2a17a4ce4bf8fb175382fb236bbad6c1bbf2336
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 286c1b363f7ceae42d7eaef13635ccf037bb4b21
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023356"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127540"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>建立和管理非使用中信箱
 
@@ -42,7 +42,7 @@ Microsoft 365 使您可以保留已刪除信箱的內容。 這項功能稱為[�
 
 - 若訴訟暫止或保留原則（已設定為保留或保留，然後刪除內容）未在刪除信箱之前加以套用，則信箱的內容將不會保留或可供調查。 不過，刪除的信箱可以在刪除之後的30天內復原，但是在30天后會永久刪除信箱及其內容（如果未復原）。
 
-- 如需訴訟暫止的詳細資訊，請參閱[In-Place 保留和訴訟暫](https://go.microsoft.com/fwlink/p/?LinkId=846124)止。 如需有關保留原則的詳細資訊，請參閱[Microsoft 365 中的保留原則一覽](retention-policies.md)。
+- 如需訴訟暫止的詳細資訊，請參閱[In-Place 保留和訴訟暫](https://go.microsoft.com/fwlink/p/?LinkId=846124)止。 如需保留原則的詳細資訊，請參閱[瞭解保留原則和保留標籤](retention.md)。
   
 ## <a name="create-an-inactive-mailbox"></a>建立非使用中的信箱
 
@@ -58,7 +58,7 @@ Microsoft 365 使您可以保留已刪除信箱的內容。 這項功能稱為[�
   
 - [將信箱設定為訴訟資料暫留狀態](https://go.microsoft.com/fwlink/?linkid=856286)
     
-- [Office 365 中的保留原則概述](retention-policies.md)
+- [深入瞭解 Office 365 中的保留原則和保留標籤](retention.md)
     
 > [!NOTE]
 > 針對訴訟保留和保留原則，您可以建立無限期保留或以時間為基礎的保留。 在無限期保留中，非使用中信箱的內容會永遠保留，或直到取消保留或變更保留期間為止。 移除保留或保留原則（假設信箱已在30天前刪除）之後，非作用中的信箱將會標示為永久刪除，且信箱的內容將不再保留或可供調查。 在以時間為基礎的保留原則中，您可以指定保留的持續時間。 此持續時間視個別項目而定，會從接收或建立信箱項目的日期開始計算。 當信箱專案的保留到期，且該專案移至或位於非使用中信箱的 [可復原的專案] 資料夾中之後，該專案會在刪除的專案保留期間到期後永久刪除（清除）從非使用中的信箱。 

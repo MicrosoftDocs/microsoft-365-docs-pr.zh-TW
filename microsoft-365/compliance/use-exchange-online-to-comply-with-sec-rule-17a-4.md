@@ -18,12 +18,12 @@ description: 設定 Exchange Online 和合規性中心，以協助符合 CFTC �
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6dc53ec9dd016a2423ca96886bba400e2f17e17a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 769e13951ce15fb698131860fa78f25fa133e327
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819073"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127300"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4
 
@@ -56,7 +56,7 @@ Highly regulated industries are often required to store electronic communication
 - 保留一段要求的保留期間，該期間無法縮短，只能增加。
 - 固定，也就是說，在要求的保留期間內，記錄無法覆寫、清除或變更。
 
-In Exchange Online, when a [retention policy](retention-policies.md) is applied to a user's mailbox, all the user's content will be retained based on the criteria of the policy. In fact, if a user attempts to delete or modify an email, a copy of the email before the change is made will be preserved in a secure, hidden location in the user's mailbox. Retention policies can help ensure that an organization retains electronic communications, but those policies can be modified.
+In Exchange Online, when a [retention policy](retention.md) is applied to a user's mailbox, all the user's content will be retained based on the criteria of the policy. In fact, if a user attempts to delete or modify an email, a copy of the email before the change is made will be preserved in a secure, hidden location in the user's mailbox. Retention policies can help ensure that an organization retains electronic communications, but those policies can be modified.
 
 By placing a Preservation Lock on a retention policy, an organization ensures that the policy cannot be modified. In fact, after a Preservation Lock is applied to a retention policy, the following actions are restricted:
 
@@ -68,7 +68,7 @@ By placing a Preservation Lock on a retention policy, an organization ensures th
 
 ## <a name="how-to-set-up-preservation-lock"></a>如何設定保留鎖定
 
-您可以使用 PowerShell 鎖定保留原則。 如需詳細資訊，請參閱[使用保留鎖定以符合法規需求](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
+您可以使用 PowerShell 鎖定保留原則。 如需詳細資訊，請參閱[使用保留鎖定以符合法規需求](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
 
 ## <a name="known-limitations"></a>已知限制
 

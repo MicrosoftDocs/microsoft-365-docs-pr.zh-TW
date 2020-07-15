@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4615b20fbd90af6e2ee7acad31f87d0021edb485
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 4c327ff759f6a0515f5bb454897f01f831c60653
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773744"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127053"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>商品先期交易委員會（CFTC）規則1.31 （iso-c）美國
 
@@ -41,7 +41,7 @@ ms.locfileid: "44773744"
 
 ### <a name="microsoft-office-365"></a>Microsoft Office 365
 
-若要評估 Office 365 與 CFTC 規則1.31 （3-d）的相容性，Microsoft 涉嫌從事主要獨立法律事務所，專門從事法規問題、Covington & Burling、LLP。 在產生的報告中，[在 Microsoft Office 365、資料保留和規則17A-4 規範](https://go.microsoft.com/fwlink/?linkid=830440)中進行封存，Covington 會驗證[具有保留鎖定的 Office 365](retention-policies.md)包含封存功能，讓受管制的客戶能夠以一種方式來儲存資料，以協助滿足記錄保留的 CFTC 需求。
+若要評估 Office 365 與 CFTC 規則1.31 （3-d）的相容性，Microsoft 涉嫌從事主要獨立法律事務所，專門從事法規問題、Covington & Burling、LLP。 在產生的報告中，[在 Microsoft Office 365、資料保留和規則17A-4 規範](https://go.microsoft.com/fwlink/?linkid=830440)中進行封存，Covington 會驗證[具有保留鎖定的 Office 365](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)包含封存功能，讓受管制的客戶能夠以一種方式來儲存資料，以協助滿足記錄保留的 CFTC 需求。
 
 Office 365 中的封存可協助保留大量的資料，包括電子郵件、語音信箱、共用檔、立即訊息和協力廠商資料。 具體而言，Office 365 中的封存可讓客戶設定全域或細微的郵件保留原則，以儲存定義期間的資料，而不是以不可重寫、不可讀寫的格式使用。
 
@@ -50,13 +50,13 @@ Office 365 中的封存可協助保留大量的資料，包括電子郵件、語
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 [Azure & CFTC 規則 1.31-SEC 17a-4 （f） & CFTC 1.31 （c-d） Azure Storage 的合規性評估
 
 [Office 365 & CFTC 規則 1.31-Office 365 中的封存、資料保留及 SEC 規則17a-4 法規遵從性
 
-## <a name="how-to-implement"></a>實作方法
+## <a name="how-to-implement"></a>實施方式
 
 - [金融服務法規](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)：適用于雲端計算和 Microsoft online 服務之重要的 US 規章原則的符合性地圖。
 - [風險評定與合規性指南](https://aka.ms/RiskGovernanceGuide)：建立 Microsoft 雲端服務風險評定的監管模型和調整通知。

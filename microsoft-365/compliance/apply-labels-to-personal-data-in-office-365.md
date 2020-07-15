@@ -18,18 +18,18 @@ search.appverid:
 - MET150
 description: 了解如何使用 Office 標籤做為一般資料保護規定 (GDPR) 保護計劃的一部分。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cfc73433a7087f0f5dd62f2da9b27b5a3cf48d
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: a7bea2abeaec7a858b3cfc693603c46c0f2a416a
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165256"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126814"
 ---
 # <a name="apply-labels-to-personal-data"></a>將標籤套用至個人資料
 
  如果您使用分類標籤做為 GDPR 保護計劃的一部分，請使用本主題。 
 
-如果您使用標籤來保護 Microsoft 365 中的個人資料，Microsoft 建議從使用[保留標籤](labels.md)開始。 使用保留標籤，您可以：
+如果您使用標籤來保護 Microsoft 365 中的個人資料，Microsoft 建議從使用[保留標籤](retention.md#retention-labels)開始。 使用保留標籤，您可以：
 - 使用「進階資料控管」，根據敏感性資訊類型或其他準則自動套用標籤。
 - 使用保留標籤搭配資料外洩防護來套用保護。 
 - 使用標籤搭配電子文件探索和內容搜尋。 
@@ -72,27 +72,27 @@ ms.locfileid: "44165256"
 <tbody>
 <tr class="odd">
 <td align="left">保留標籤。 範例：個人、公用、客戶資料、HR 資料、機密、高度機密</td>
-<td align="left"><p>自動套用此標籤 . . .</p>
+<td align="left"><p>Auto apply this label . . .</p>
 <p>客戶資料</p>
-<p>. . . 至符合這些敏感資訊類型的文件 . . .</p>
+<p>. . . to documents that match these sensitive information types . . .</p>
 <p>&lt;敏感資訊類型範例的清單&gt;</p></td>
-<td align="left"><p>套用此保護 . . .</p>
+<td align="left"><p>Apply this protection . . .</p>
 <p>&lt;定義保護&gt;</p>
-<p>. . . 至具有此標籤的文件 . . .</p>
+<p>. . . to documents with this label . . .</p>
 <p>客戶資料</p></td>
-<td align="left"><p>在任何獲批准的 SaaS App 中具有這些屬性的檔案 . . .</p>
+<td align="left"><p>Alert when files with these attributes . . .</p>
 <p>選擇一或多個屬性：預先定義的 PII 屬性、Microsoft 365 敏感資訊類型、敏感度標籤 (AIP)、自訂運算式</p>
 <p>。 。 。 在組織外共用時發出警示</p><p>附註：雲端 App 安全性目前不支援保留標籤。</td>
 </tr>
 <tr class="even">
-<td align="left">敏感資訊類型範例：比利時國民編碼、信用卡號碼、克羅埃西亞身分證號碼、芬蘭國民身分證</td>
-<td align="left"><p>發佈這些使用者的這些標籤以手動套用 . . .</p>
+<td align="left">Sensitive information types. Examples: Belgium National Number, Credit Card Number, Croatia Identity Cart Number, Finland National ID</td>
+<td align="left"><p>Publish these labels for users to manually apply . . .</p>
 <p>&lt;選取標籤&gt;</p>
-<p>. . . 至這些位置 . . .</p>
+<p>. . . to these locations . . .</p>
 <p>&lt;所有位置或選擇特定位置&gt;</p></td>
-<td align="left"><p>套用此保護 . . .</p>
+<td align="left"><p>Apply this protection . . .</p>
 <p>&lt;定義保護&gt;</p>
-<p>. . . 至符合這些敏感資訊類型的文件&gt;</p></td>
+<p>. . . to documents that match these sensitive information types&gt;</p></td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -100,9 +100,9 @@ ms.locfileid: "44165256"
 
 ## <a name="prioritize-auto-apply-label-policies"></a>指定自動套用標籤原則的優先順序
 
-對於受到 GDPR 約束的個人資料，Microsoft 建議利用您為環境策劃的敏感資訊類型來自動套用標籤。請務必妥善地設計並測試自動套用標籤原則，以確保發生預期的行為。
+For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.
 
-建立自動套用原則的順序，以及使用者是否也套用這些標籤會影響結果。因此，請務必仔細做好推出計劃。以下是須知事項。
+The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here's what you need to know.
 
 ### <a name="one-label-at-a-time"></a>一次一個標籤
 
@@ -110,11 +110,11 @@ ms.locfileid: "44165256"
 
 ### <a name="older-auto-apply-policies-win"></a>越舊的自動套用原則越優先採用
 
-如果有多個指派自動套用標籤的項規，且內容符合多個規則的條件，則會指派最舊規則的標籤。基於這個原因，請務必審慎規劃標籤原則，然後再設定它們。如果組織要求變更標籤原則的優先順序，您需要先刪除它們，然後重新建立。
+If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it's important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.
 
 ### <a name="manual-user-applied-labels-trump-auto-applied-labels"></a>手動使用者套用標籤優先於自動套用標籤
 
-手動使用者套用標籤優先於自動套用標籤。自動套用原則無法取代已由使用者套用的標籤。使用者可以取代自動套用的標籤。
+Manual user applied labels trump auto-applied labels. Auto-apply policies can't replace a label that is already applied by a user. Users can replace labels that are auto-applied.
 
 ### <a name="auto-assigned-labels-can-be-updated"></a>可以更新自動指派的標籤
 
@@ -124,7 +124,7 @@ ms.locfileid: "44165256"
 
 - 指定建立自動套用原則的優先順序。
 
-- 在推出標籤供使用者手動套用之前，允許有足夠的時間自動套用這些標籤。最多可能需要 7 天，標籤才會套用至符合條件的所有內容。
+- Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.
 
 ### <a name="example-priority-for-creating-the-auto-apply-policies"></a>建立自動套用原則的優先順序範例
 
@@ -181,7 +181,7 @@ ms.locfileid: "44165256"
 <tbody>
 <tr class="odd">
 <td align="left"><p>將權限授與規範小組的成員。</p></td>
-<td align="left"><p>要建立標籤的合規性小組成員需有使用安全性中心和/或合規性中心的權限。請移至安全性中心或合規性中心的 [權限]，然後修改合規性系統管理員群組的成員。</p>
+<td align="left"><p>Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center. Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</p>
 <p>請參閱<a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">讓使用者能夠存取安全性中心和/或合規性中心</a>。</p></td>
 </tr>
 <tr class="even">
@@ -190,7 +190,7 @@ ms.locfileid: "44165256"
 </tr>
 <tr class="odd">
 <td align="left"><p>建立標籤的自動套用原則。</p></td>
-<td align="left">移至安全性中心或合規性中心中的 [分類]，選擇 [標籤原則]，然後建立自動套用標籤的原則。請務必依優先順序建立這些原則。</td>
+<td align="left">Go to Classification in security center or the compliance center, choose Label policies, and create the policies for auto-applying labels. Be sure to create these policies in the prioritized order.</td>
 </tr>
 </tbody>
 </table>

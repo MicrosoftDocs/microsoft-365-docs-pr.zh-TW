@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何將 Office 365 中非使用中信箱的內容轉換成包含非使用中信箱內容的新信箱。
-ms.openlocfilehash: e5ac5a5e5e9e73d118ea1872bf36476ee1e1965a
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 077355d31c3159b4970b00ee9c461d6a77cd3cf7
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818943"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127460"
 ---
 # <a name="recover-an-inactive-mailbox"></a>復原非作用中的信箱
 
@@ -81,7 +81,7 @@ ms.locfileid: "44818943"
   
      - **In-Place 暫**止已從復原的信箱中移除 In-Place 保留。 這表示已復原的信箱會從任何 In-Place 保留或 In-Place eDiscovery 搜尋中移除成為來源信箱。
      
-     - **使用保留鎖定的 Microsoft 365 保留原則。** 如果使用保留鎖定（稱為*鎖定的保留原則*）將非作用中的信箱指派給保留原則，則會將復原的信箱指派至相同的鎖定保留原則。 如需已鎖定保留原則的詳細資訊，請參閱[瞭解保留原則](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
+     - **使用保留鎖定的 Microsoft 365 保留原則。** 如果使用保留鎖定（稱為*鎖定的保留原則*）將非作用中的信箱指派給保留原則，則會將復原的信箱指派至相同的鎖定保留原則。 如需已鎖定之保留原則的詳細資訊，請參閱[使用保留鎖定以符合法規需求](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
   
      - **Microsoft 365 保留原則，未保留鎖定。** 非作用中的信箱會從套用至它的任何已解除鎖定的 Microsoft 365 保留原則中移除。 不過，已在復原的信箱上啟用訴訟暫止，以防止刪除超出特定時期之內容的任何整個組織保留原則刪除信箱內容。 您可以保留或移除訴訟暫止狀態。 如需詳細資訊，請參閱[建立訴訟暫](create-a-litigation-hold.md)止。
 

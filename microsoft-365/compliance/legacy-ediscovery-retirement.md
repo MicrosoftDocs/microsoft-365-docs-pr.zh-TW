@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: Exchange Online 中的 In-Place eDiscovery 和 In-Place 保留（以及對應的 PowerShell Cmdlet）會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 及 Advanced eDiscovery 1.0 1.0 也會在相同的時段內淘汰。
-ms.openlocfilehash: 8b428b0d90442c937e08d4dc9ca23fb345553178
-ms.sourcegitcommit: 589f78fc0f39aff9109959ded48d146cc32fc3c5
+ms.openlocfilehash: 12de88fe3c9de7806b12bd610e0dbeeb404524ca
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761683"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126940"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>舊版電子文件探索工具淘汰
 
@@ -124,7 +124,7 @@ ms.locfileid: "44761683"
 <p>將原則套用至特定的內容位置，例如 Exchange Online、SharePoint 線上 OneDrive、商務用 Skype、商務用 Skype、Microsoft 團隊和 Office 365 群組</p></li>
 <li>
 <p>將原則套用至特定使用者</p></li></ul>
-<p>如需詳細資訊，請參閱<a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">保留原則一覽</a>。</td>
+<p>如需詳細資訊，請參閱<a href="https://docs.microsoft.com/microsoft-365/compliance/retention-policies">瞭解保留原則和保留標籤</a>。</td>
 </tr>
 <tr class="odd">
 <td>將電子郵件搜尋結果複製到探索信箱以供審閱</td><td>在高級 eDiscovery 2.0 中複查集</td>
