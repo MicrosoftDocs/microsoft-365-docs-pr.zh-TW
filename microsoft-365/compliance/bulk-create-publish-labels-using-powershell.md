@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 大量建立及發佈保留標籤
+title: 使用 PowerShell 建立及發佈保留標籤
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,43 +17,52 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 了解如何使用 Office 365 保留標籤以使用 PowerShell 來為貴組織實作保留排程。
-ms.openlocfilehash: 01ec0758abc0580aadb6f0fce623e449ec31c853
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+description: 瞭解如何從命令列使用 PowerShell 建立及發佈保留標籤，而不受 Microsoft 365 合規性中心的影響。
+ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035531"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126364"
 ---
-# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 大量建立及發佈保留標籤
+# <a name="create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 建立及發佈保留標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-在 Office 365 中，您可以使用保留標籤來為您的組織實作保留排程。做為記錄管理員或合規性主管，您可能有數百個要建立及發佈的保留標籤。您可以透過安全性與合規性中心的 UI 來執行此動作，但一次建立一個保留標籤費時且無效率。
+在您決定使用 [保留標籤](retention.md) 來協助您保留或刪除 Microsoft 365 中的文件和電子郵件後，您可能會發現您可能有許多，甚至數百個保留標籤供您建立及發佈。 按縮放比例建立保留標籤的建議方法，是使用 Microsoft 365 合規性中心的 [檔案計畫](file-plan-manager.md)。 不過，您也可以使用 [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels)。
   
-您可以使用以下提供的指令碼和 .csv 檔案，大量建立保留標籤及發佈保留標籤原則。 請先在 Excel 中建立保留標籤清單和保留標籤原則清單，然後使用 PowerShell 在這些清單中大量建立保留標籤和保留標籤原則。 這樣就能一次建立及發佈保留排程需要的所有保留標籤，讓操作變得更加簡單。
-  
-如需保留標籤的詳細資訊，請參閱[標籤概觀](labels.md)。
+使用本文的資訊、範本檔和範例以及指令檔，來協助您以大量方式建立保留標籤，並以保留標籤原則發佈。 然後，保留標籤可 [由系統管理員及使用者套用](create-apply-retention-labels.md#how-to-apply-published-retention-labels)。
+
+提供的指示不支援自動套用的保留標籤。
+
+概觀： 
+
+1. 在 Excel 中建立保留標籤清單，以及其保留標籤原則清單。
+
+2. 使用 PowerShell，在這些清單中建立保留標籤和保留標籤原則。
   
 ## <a name="disclaimer"></a>免責聲明
 
-在任何 Microsoft 標準支援程式或服務下，不支援本主題提供的指令碼。範例指令碼係依「現狀」提供，不附帶任何明示或默示的擔保。Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。使用或操作範例指令碼和文件發生的所有風險皆屬於您的責任。Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
+在任何 Microsoft 標準支援程式或服務下，不支援本文中提供的範例指令碼。 範例指令碼係依「現狀」提供，不含任何種類的擔保方式。 Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。 使用或操作範例指令碼和文件發生的所有風險，皆屬於您的責任。 Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼或文件所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
   
-## <a name="step-1-create-a-csv-file-for-creating-the-retention-labels"></a>步驟 1：建立 .csv 檔案以建立保留標籤
+## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>步驟 1：建立 .csv 檔案以建立保留標籤
 
-首先，建立一個 .csv 檔案，其中包含保留標籤清單及設定。您可以使用下列範例做為範本，方法為將它複製到 Excel，同時將文字轉換為資料行 (在 Excel \> [資料]**** 索引標籤 \> [文字到資料行]**** \> [分隔符號]**** \> [逗號]****\> [一般]**** 中)，然後在易於找到的位置中將工作表儲存為 .csv 檔案。
-  
-如需此 Cmdlet 的參數值的詳細資訊，請參閱 [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511)。
+1. 複製下列用於範本的範例 .csv 檔案，以及用於四個不同保留標籤的範例專案，並將其貼到 Excel 中。 
+
+2. 資料剖析： **資料** 索引標籤 \> **資料行的文字** \> **分隔符號** \> **逗號** \> **一般**
+
+2. 將範例取代為您自行保留標籤和設定的專案。 如需參數值的詳細資訊，請參閱 [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511)。
+
+3. 將工作表另存為 .csv 檔案，以便在後續步驟中輕鬆找到。 例如：C: \>Scripts\Labels.csv
+
   
 附註：
-  
-- 如果您沒有提供來源檔案來建立保留標籤，則指令碼會繼續進行，並提示您提供來源檔案來發佈保留標籤 (請參閱下一節)，而且指令碼只會發佈現有的保留標籤。
-    
+
 - 如果 .csv 檔案包含的保留標籤與已存在的保留標籤同名，則指令碼會略過建立該保留標籤。不會建立重複的保留標籤。
     
-- 如果您變更或重新命名資料行標頭，則指令碼將失敗。指令碼需要 .csv 檔案具有下列提供的格式。
+- 請勿變更或重新命名所提供範例 .csv 檔案中的欄標題，否則指令碼將會失敗。
     
-### <a name="sample-csv-file"></a>範例 .csv 檔案
+### <a name="sample-csv-file-for-retention-labels"></a>保留標籤的範例 .csv 檔案
 
 ```
 Name (Required),Comment (Optional),IsRecordLabel (Required),RetentionAction (Optional),RetentionDuration (Optional),RetentionType (Optional),ReviewerEmail (Optional)
@@ -63,23 +72,24 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## <a name="step-2-create-a-csv-file-for-publishing-the-labels"></a>步驟 2：建立 .csv 檔案以發佈標籤
+## <a name="step-2-create-a-csv-file-for-the-retention-label-policies"></a>步驟 2：建立 .csv 檔案以建立保留標籤原則
 
-接著，建立一個 .csv 檔案，其中包含保留標籤原則清單以及其位置及其他設定。您可以使用下列範例做為範本，方法為將它複製到 Excel，同時將文字轉換為資料行 (在 Excel \> [資料]**** 索引標籤 \> [文字到資料行]**** \> [分隔符號]**** \> [逗號]****\> [一般]**** 中)，然後在易於找到的位置中將工作表儲存為 .csv 檔案。
-  
-如需此 Cmdlet 的參數值的詳細資訊，請參閱 [New-RetentionCompliancePolicy](https://go.microsoft.com/fwlink/?linkid=866512)。
-  
+1. 複製下列用於範本的範例 .csv 檔案，以及用於三個不同保留標籤原則的範例專案，並將其貼到 Excel 中。 
+
+2. 資料剖析： **資料** 索引標籤 \> **資料行的文字** \> **分隔符號** \> **逗號** \> **一般**
+
+2. 將範例取代為您自行保留標籤原則和其設定的專案。 如需此 Cmdlet 參數值的詳細資訊，請參閱 [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)。
+
+3. 將工作表另存為 .csv 檔案，以便在後續步驟中輕鬆找到。 例如：`<path>Policies.csv`
+
+
 附註：
   
-- 如果您沒有提供來源檔案來發佈保留標籤，則指令碼會建立保留標籤 (請參閱前一節)，但不會發佈它們。
-    
 - 如果 .csv 檔案包含的保留標籤原則與已存在的保留標籤原則同名，則指令碼會略過建立該保留標籤原則。不會建立重複的保留標籤原則。
     
-- 指令碼只會發佈手動套用到內容的保留標籤。 此指令碼不支援自動套用到內容的保留標籤。
+- 請勿變更或重新命名所提供範例 .csv 檔案中的欄標題，否則指令碼將會失敗。
     
-- 如果您變更或重新命名資料行標頭，則指令碼將失敗。指令碼需要 .csv 檔案具有下列提供的格式。
-    
-### <a name="sample-csv-file"></a>範例 .csv 檔案
+### <a name="sample-csv-file-for-retention-policies"></a>保留原則的範例 .csv 檔案
 
 ```
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
@@ -90,20 +100,30 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 ## <a name="step-3-create-the-powershell-script"></a>步驟 3：建立 PowerShell 指令碼
 
-複製下列 PowerShell 指令碼，並將其貼入 [記事本]。使用檔案名稱尾碼 .ps1，將檔案儲存在易於找到的位置，例如，\<path\>CreateRetentionSchedule.ps1。
-  
+1. 將以下 PowerShell 指令碼複製並貼到 [記事本] 中。
+
+2. 將檔案使用 **.ps1** 的副檔名儲存在容易找到的位置。 例如：`<path>CreateRetentionSchedule.ps1`
+
+附註：
+
+- 指令碼會提示您提供前兩個步驟建立的兩個來源檔案：
+    - 如果您沒有指定要建立保留標籤的來源檔案，指令碼會繼續開啟，以建立保留標籤原則。 
+    - 如果您沒有指定來源檔案來建立保留標籤原則，指令碼只會建立保留標籤。
+
+- 指令碼會產生記錄檔，記錄執行的每個動作以及動作是否成功或失敗。 如需相關指示，請參閱最後一個步驟，瞭解如何找出此記錄檔。
+
 ### <a name="powershell-script"></a>PowerShell 指令碼
 
-```
+```Powershell
 <#
-. Steps: Import and Publish Compliance Tag
-    ○ Load compliance tag csv file 
+. Steps: Import and publish retention labels
+    ○ Load retention labels csv file 
     ○ Validate csv file input
-    ○ Create compliance tag
-    ○ Create compliance policy
-    ○ Publish compliance tag for the policy
-    ○ Generate the log for tags creation
-    ○ Generate the csv result for the tags created and published
+    ○ Create retention labels
+    ○ Create retention policies
+    ○ Publish retention labels for the policies
+    ○ Generate the log for retention labels and policies creation
+    ○ Generate the csv result for the labels and policies created
 . Syntax
     .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
 . Detailed Description
@@ -714,33 +734,29 @@ if ($ResultCSV)
 
 ```
 
-## <a name="step-4-connect-to-security-amp-compliance-center-powershell"></a>步驟 4︰連接到安全性與合規性中心 PowerShell
+## <a name="step-4-run-the-powershell-script"></a>步驟 4：執行 PowerShell 指令碼
 
-請遵循下列步驟：
+首先，[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)。
+
+然後，執行建立並發佈保留標籤的指令碼：
   
-- [連線到安全性與合規性中心 PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)。
+1. 在安全性與合規性中心 PowerShell 工作階段中，輸入路徑，後面跟著字元 `.\` 和指令碼的檔案名稱，然後按 ENTER 以執行指令碼。 例如：
     
-## <a name="step-5-run-the-powershell-script-to-create-and-publish-the-retention-labels"></a>步驟 5：執行 PowerShell 指令碼來建立及發佈保留標籤
+    ```powershell
+    <path>.\CreateRetentionSchedule.ps1
+    ```
 
-在您已連接到安全性與合規性中心 PowerShell 之後，接著執行指令碼來建立及發佈保留標籤。
-  
-1. 在安全性與合規性中心 PowerShell 工作階段中，輸入路徑，後面跟著字元 .\ 和指令碼的檔案名稱，然後按 ENTER 以執行指令碼 - 例如：
+2. 指令碼會提示您輸入前面步驟建立的 .csv 檔案位置。 輸入路徑，後面跟著字元 `.\` 和 .csv 檔案的檔案名稱，然後按 ENTER。 例如，針對第一個提示：
     
-  ```
-  <path>.\CreateRetentionSchedule.ps1
-  ```
+    ```powershell
+    <path>.\Labels.csv
+    ```
 
-    指令碼會提示您輸入您先前所建立之 .csv 檔案的位置。
-    
-2. 輸入路徑，後面跟著字元 .\ 和 .csv 檔案的檔案名稱，然後按 ENTER - 例如：
-    
-  ```
-  <path>.\LabelsToCreate.csv
-  ```
+## <a name="step-5-view-the-log-file-with-the-results"></a>步驟 5：檢視記錄檔與結果
 
-## <a name="step-6-view-the-log-file-with-the-results"></a>步驟 6：檢視記錄檔與結果
+使用指令碼建立的記錄檔來檢查結果，並找出任何需要解決的失敗。
 
-當您執行指令碼時，它會產生記錄檔，記錄其已採取的每個動作，以及動作成功還是失敗。記錄檔包含有關已建立哪些保留標籤和已發佈哪些保留標籤的所有中繼資料。您可以在此位置尋找記錄檔 -- 請注意，檔案名稱中的數字有所不同。
+您可以在下列位置找到記錄檔，但範例檔案名稱的位數可能會有所差異。
   
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
