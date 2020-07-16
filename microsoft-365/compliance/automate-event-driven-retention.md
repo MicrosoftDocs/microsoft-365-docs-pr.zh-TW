@@ -15,36 +15,36 @@ search.appverid:
 - MOE150
 - MET150
 description: 本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
-ms.openlocfilehash: c97106597733460caeab8d1d398ff81e23dd2727
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: aeb0b05b2bf9b62dbeff43370edf6902e577a0d7
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068112"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126396"
 ---
 # <a name="automate-event-based-retention"></a>自動化事件型保留
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-The explosion of content in organizations and how it can become ROT (redundant, obsolete, trivial) is serious business. To continue to meet legal, business, and regulatory compliance challenges, organizations must be able to keep and protect important information and quickly find what’s relevant. Retaining only important, pertinent information is key to an organization's success.
+組織中的內容量暴增，內容逐漸變得冗餘、過時且瑣碎，有關內容的各種問題已經變成一項嚴重的議題。為了持續迎接法律、商務和法規遵循方面的挑戰，組織必須具備保留和保護重要資訊、同時又能快速找出相關內容的能力。將資訊去蕪存菁，只保留重要且相關的資訊將成為組織致勝的關鍵。
 
-To help meet this need, organizations can take advantage of retention solutions in the Office 365 Security & Compliance Center. Retention can be triggered by using [retention labels](labels.md). A retention label has the option to [base the retention period on a specific event](event-driven-retention.md). Typically, the retention period is based on a known date, such as the creation date or last modified date for the content. However, organizations also have requirements to dispose of content based on the occurrence of an event, such as seven years after an employee leaves an organization.
+為此，組織可以利用 Office 365 安全性與合規性中心的保留解決方案。保留解決方案可以使用[保留標籤](retention.md#retention-labels)進行觸發。保留標籤可以[根據特定事件選擇保留期間](event-driven-retention.md)。一般而言，保留期間是依據已知的日期，例如內容的建立日期或上次修改日期。然而，組織也可以要求依據事件的發生進行內容處置，例如員工離開組織七年後。
 
-To ensure compliant disposal of content, it's imperative to know when an event takes place. With the volume of content increasing rapidly, it's becoming challenging to retain and dispose content in a timely and compliant manner.
+為確保內容的處置符合規範，請務必了解事件發生的時間。隨著內容量的迅速暴增，以即時且符合規範的方法保留和處置內容已經演變成一項重大的挑戰。
 
-Event-based retention solves this problem. This topic explains how to set up your business process flows to automate retention through events by using the Microsoft 365 REST API.
+事件型保留可以解決這個問題。本主題說明如何使用 Microsoft 365 REST API 透過事件進行自動化保留，設定您的商務程序流程。
 
 ## <a name="about-event-based-retention"></a>關於事件型保留
 
-An organization can be small, medium, or large. The number of business documents, legal documents, employee files, contracts, and product documents that get created and managed on a day-to-day basis is increasing dramatically.
+組織的規模可以是小型、中型或大型。每日建立和管理的商務文件、法律文件、員工檔案、合約和產品文件的數量卻是急遽增加。
 
-For example, each day, tens and hundreds of employees are joining and leaving organizations. The HR department continues to create, update, or delete employee-related documents as per business requirements. This process is subject to the different retention policies outlined for the business:
+舉例來說，每天有數以百計的員工加入或離開組織，HR 部門依據企業要求不斷地建立、更新或刪除員工相關的文件。這個程序必須針對企業綱要遵循不同的保留原則：
 
-- **The period of retention for content can be a known date** such as the date the content was created, last modified, or labeled. For example, you might retain documents for seven years after they're created and then delete them.
+- **內容的保留期間可以是已知的日期**，例如內容的建立日期、上次修改日期或標籤日期。例如，您可以在文件建立後保留文件七年，然後再刪除文件。
 
-- **The period of retention of content can also be an unknown date**. For example, with retention labels, you can also base a retention period on when a specific type of event occurs, such as an employee leaving the organization.
+- **內容的保留期間也可以是未知的日期**。例如，您可以使用保留標籤，將保留期間設定成依據特定類型事件的發生時間，例如員工離開組織。
 
-The event triggers the start of the retention period, and all content with a label applied for that type of event get the label's retention actions enforced on them. This is called event-based retention. To learn more, see [Overview of event-driven retention](event-driven-retention.md).
+事件會觸發保留期間開始進行，而在加上標籤的內容中，所有適用於該事件類型的內容都會強制執行標籤的保留動作。這項功能稱為事件型保留，若要深入了解，請參閱[事件導向保留概觀](event-driven-retention.md)。
 
 ## <a name="set-up-event-based-retention"></a>設定事件型保留
 
@@ -87,8 +87,8 @@ The event triggers the start of the retention period, and all content with a lab
 
 2. 執行下列其中一項動作：
         
-   - Creates a SharePoint library: Set event-based label at the library level. For more information, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
-          
+    - 建立 SharePoint 文件庫。在文件庫層級設定事件型標籤。如需更多資訊，請參閱[將預設的保留標籤套用至 SharePoint 文件庫、資料夾或文件組的所有內容](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)。
+
    - 在 SharePoint 中設定文件組。 如需詳細資訊，請參閱[文件組簡介](https://support.microsoft.com/zh-TW/office/introduction-to-document-sets-3dbcd93e-0bed-46b7-b1ba-b31de2bcd234)。
       
 3. 將資產識別碼指派給每個員工文件組。 資產識別碼是組織使用的產品名稱或代碼，例如員工識別碼可以是資產識別碼。 透過將資產識別碼指派給資料夾的方式，該資料夾內的每個項目都會自動繼承相同的資產識別碼。 這表示所有項目可以透過相同事件觸發保留期間。
@@ -99,7 +99,7 @@ The event triggers the start of the retention period, and all content with a lab
 
 - **使用系統管理中心 UI** 這個程序可以用於一次保留較少的內容，或是觸發頻率不高的保留，例如每月或每年的頻率。 如需更多有關此方法資訊，請參閱[事件驅動保留概觀](event-driven-retention.md)。 然而，這個觸發保留的方法可能非常耗時且容易發生錯誤，從而阻礙了保留的延展性。 因此，使用自動化流暢的解決方案進行觸發保留將可以增強資料的安全性與合規性。
 
-- **Using a M365 REST API** This process can be used when large amounts of content are to be retained at a time and/or the frequency to trigger retention is often such as daily or weekly. The flow detects when an event occurs in your line-of-business system, and then automatically creates a related event in the Security & Compliance Center. You don't need to manually create an event in the UI each time one occurs.
+- **使用 M365 REST API**這個程序可以用於一次保留大量內容的時候，和 (或) 觸發頻率高的保留，例如每日或每週的頻率。當偵測到您的商務線系統內發生事件時，流程會接著在安全規範中心內自動建立相關的事件。因此，每次發生事件時，您不需要在使用者介面手動建立事件。
 
 有兩個選項可以使用 REST API：
 
@@ -208,7 +208,7 @@ Rest API 是支援 HTTP 操作組 (方法) 的服務端點，提供服務資源�
 |參數|描述|附註|
 |--- |--- |--- |
 |<d:Name></d:Name>|提供事件的唯一名稱，|結尾不可有空格以及下列字元：% * \ & < \> \| # ? , : ;|
-|<d:EventType></d:EventType>|輸入事件類型名稱 (或 Guid)|Example: “Employee termination”. Event type has to be associated with a retention label.|
+|<d:EventType></d:EventType>|輸入事件類型名稱 (或 Guid)|例如：「僱用終止」。事件類型必須與保留標籤相關聯。|
 |<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|輸入 ComplianceAssetId: + 員工 ID|範例："ComplianceAssetId:12345"|
 |<d:EventDateTime></d:EventDateTime>|事件的日期和時間|格式：yyyy-MM-ddTHH:mm:ssZ，例如：2018-12-01T00:00:00Z
 |
@@ -422,7 +422,7 @@ $event | fl *
 
 ### <a name="scenario-3-end-of-product-manufacturing"></a>案例 3：產品製造結束
 
-A manufacturing company that produces different lines of products creates many manufacturing specifications and pricing documents. When the product is no longer manufactured, all specifications and documents linked to this product need to be retained for a specific period after the end of the lifetime of the product.
+生產各種產品線的製造公司建立許多製造規格和價格文件。當產品不再製造時，所有連結至這個產品的規格和文件都必須在產品存留期結束後保留一段特定的時間。
 
 企業資源規劃 (ERP) 系統可以使用 Microsoft 365 和 Microsoft Flow 觸發保留。
 

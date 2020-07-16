@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 活動總管透過讓您查看和篩選使用者對套用標籤的內容執行的操作，來完善資料分類功能。
-ms.openlocfilehash: 5cb6a8dbfa570b3b0e0d1ce39648d12050d2af81
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 63ecb84c0ae658b0fd3463dba10d56059352910b
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327839"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126642"
 ---
 # <a name="get-started-with-activity-explorer"></a>開始使用活動總管
 
@@ -74,8 +74,8 @@ Microsoft 365 會監視和報告 SharePoint Online 和 OneDrive 中的下列活�
 > [!NOTE]
 > 活動總管目前未監視 Exchange Online 的保留活動。
 
-## <a name="see-also"></a>請參閱
-- [敏感性標籤](sensitivity-labels.md)
-- [保留標籤](labels.md)
-- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
-- [保留原則概觀](retention-policies.md)
+## <a name="see-also"></a>另請參閱
+- [了解敏感度標籤](sensitivity-labels.md)
+- [瞭解保留原則和保留標記](retention.md)
+- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+

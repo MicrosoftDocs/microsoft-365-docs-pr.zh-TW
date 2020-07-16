@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計畫為保留標籤提供進階管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 85160a859469a5c2dcb1aec8100eed6e25bd7597
-ms.sourcegitcommit: 5e8901e7e571f20ede04f460bd3e7077dda004ca
+ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874903"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126876"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用檔案計畫來管理保留標籤
 
@@ -42,7 +42,7 @@ ms.locfileid: "44874903"
 
 ![檔案計畫頁面](../media/compliance-file-plan.png)
 
-如需有關保留標籤為何及其使用方式的相關資訊，請參閱[了解保留標籤](labels.md)。
+如需有關保留標籤為何及其使用方式的相關資訊，請參閱[瞭解保留原則及保留標籤](retention.md)。
 
 ## <a name="accessing-file-plan"></a>存取檔案計畫
 
@@ -182,4 +182,6 @@ ms.locfileid: "44874903"
 
 ## <a name="next-steps"></a>後續步驟
 
-如需有關建立及編輯保留標籤及其原則的詳細資訊，請參閱[建立、發佈和自動套用保留標籤](create-retention-labels.md)。
+如需有關建立和編輯保留標籤及其原則的詳細資訊，可參閱下列指南：
+- [建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)
+- [自動將保留標籤套用到內容](apply-retention-labels-automatically.md)

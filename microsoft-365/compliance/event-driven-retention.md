@@ -1,5 +1,5 @@
 ---
-title: 事件導向保留的概觀
+title: 事件發生時，開始保留
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,18 +20,18 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常為記錄管理解決方案的一部分，您可以設定保留標籤，以根據您發現的事件來啟動保留期間。
-ms.openlocfilehash: a0e0025d23bda36d8b9e6315cb932e58d4237a5c
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: 15330c5be34d0cd482b83b4aab5f229cecf2a447
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068122"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126856"
 ---
-# <a name="overview-of-event-driven-retention"></a>事件導向保留的概觀
+# <a name="start-retention-when-an-event-occurs"></a>事件發生時，開始保留
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-When you retain content, the retention period is often based on the age of the content. For example, you might retain documents for seven years after they're created and then delete them. But when you configure [retention labels](labels.md), you can also base a retention period on when a specific type of event occurs. The event triggers the start of the retention period, and all content with a retention label applied for that type of event get the label's retention actions enforced on them.
+當您保留內容時，保留期間通常是依據內容的存留期。例如，您在文件建立之後保留 7 年，然後刪除。但當您設定[保留標籤](labels.md)，您也可以讓發生特定類型事件的時間作為保留期間的依據。事件會觸發啟動保留期間，有保留標籤套用至該類型事件的所有內容，都會強制執行標籤的保留動作。
   
 使用事件導向保留的範例：
   
@@ -39,17 +39,18 @@ When you retain content, the retention period is often based on the age of the c
     
 - **合約到期** 假設與合約相關的所有記錄必須從合約到期時間起保留五年。 會觸發五年保留期間的事件是合約到期。 
     
-- **Product lifetime** Your organization might have retention requirements related to the last manufacturing date of products for content such as technical specifications. In this case, the last manufacturing date is the event that triggers the retention period. 
+- **產品生命週期**貴組織可能有與產品最後製造日期相關的保留需求，例如技術規格。在此情況下，最後製造日期是觸發保留期間的事件。 
     
-Event-driven retention is typically used as part of a records-management process. This means that:
+事件導向保留通常作為記錄管理處理程序的一部分。這表示：
   
 - 根據事件的標籤通常也會將內容分類為記錄。 如需詳細資訊，請參閱[了解記錄](records.md)。
-    
+
 - 已分類為記錄但是其事件觸發程序尚未發生的文件，會無限期保留 (記錄無法永久刪除)，直到事件觸發該文件的保留期間。
     
 - 根據事件的保留標籤通常會在保留期間結束時觸發處置檢閱，這樣記錄管理員就能手動檢閱並處置內容。 如需詳細資訊，請參閱[處置內容](disposition.md)。
     
-根據事件的保留標籤與 Microsoft 365 中任何保留標籤具有相同的功能。 如需詳細資訊，請參閱[[瞭解保留標籤]](labels.md)。
+
+根據事件的標籤與 Microsoft 365 中任何保留標籤具有相同的功能。 如需詳細資訊，請參閱[[瞭解保留原則及保留標籤]](retention.md)。
 
 ## <a name="understanding-the-relationship-between-event-types-labels-events-and-asset-ids"></a>了解事件類型、標籤、事件和資產識別碼之間的關聯性
 
@@ -63,13 +64,13 @@ Event-driven retention is typically used as part of a records-management process
     
 2. 使用者 (通常是記錄管理員) 會將這些保留標籤套用到內容，並且 (若是 SharePoint 和 OneDrive 文件) 為每個項目輸入資產識別碼。 在此範例中，資產識別碼是組織所使用的產品名稱或代碼。 因此，每個產品的記錄都會獲派一個保留標籤，而每筆記錄都會有包含資產識別碼的屬性。 此圖表描繪組織中所有產品記錄的**所有內容**，而每個項目都會承載記錄所屬產品的資產識別碼。 
     
-3. Product Lifetime is the event type; a specific product reaching end of life is an event. When an event of that event type occurs - in this case, when a product reaches its end of life - you create an event that specifies:
+3. 產品生命週期是事件類型；達到生命週期結尾的特定產品是事件。該事件類型的事件發生時 - 在此情況下，當產品達到其生命週期結尾時 - 您建立事件，指定：
     
   - 資產識別碼 (適用於 SharePoint 和 OneDrive 文件)
     
-  - Keywords (for Exchange items). In this example, the organization uses a product code in messages containing product records, so the keyword for Exchange items is the same as the asset ID for SharePoint and OneDrive documents.
+  - 關鍵字 (適用於 Exchange 項目)。在此範例中，組織在包含產品記錄的訊息中使用產品代碼，因此 Exchange 項目的關鍵字與 SharePoint 和 OneDrive 文件中的資產識別碼相同。
     
-  - The date when the event occurred. This date is used as the start of the retention period. This date can be the current, a past, or a future date.
+  - 發生事件的日期。此日期作為保留期間的開始日期。此日期可能是目前、過去或未來的日期。
     
 4. 建立事件之後，該事件日期會同步處理到保留標籤屬於該事件類型的所有內容，以及包含指定資產識別碼或關鍵字的所有內容。 如同任何保留標籤，同步處理最多可能需要 7 天。 上圖中以紅色圈出的所有項目，其保留期間都是由此事件觸發。 換句話說，當這項產品的生命週期結束時，該事件會觸發該產品記錄的保留期間。
     
@@ -114,7 +115,10 @@ Event-driven retention is typically used as part of a records-management process
   
 ### <a name="step-3-publish-or-auto-apply-the-event-based-retention-labels"></a>步驟 3：發佈或自動套用事件型保留標籤
 
-和任何保留標籤一樣，您必須[發佈或自動套用](create-retention-labels.md)事件型標籤，以便將它套用至文件或電子郵件。
+和任何保留標籤一樣，您必須發佈或自動套用事件型標籤，以使標籤可以手動或自動套用到內容中：
+- [建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)
+- [自動將保留標籤套用到內容](apply-retention-labels-automatically.md)
+
 
 > [!NOTE]
 > 如果您是從 [記錄管理] ****  >  [檔案方案]**** 索引標籤或 [資料控管]****  >  [標籤]**** 索引標籤選取事件型保留標籤，則 [自動套用標籤]**** 按鈕無法使用。
@@ -180,7 +184,7 @@ Event-driven retention is typically used as part of a records-management process
   
 ## <a name="permissions"></a>權限
 
-To get access to the **Events** page, reviewers must be members of a role group with the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called Disposition Reviewers, adding these two roles to that role group, and then adding members to the role group. 
+若要取得 [事件]**** 頁面的存取權，檢閱者必須是具有**處置管理**角色和**僅限檢視稽核記錄**角色之角色群組的成員。我們建議建立稱為「處置檢閱者」的新角色群組，將這兩個角色新增至該角色群組，然後將成員新增至角色群組。 
   
 如需詳細資訊，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
   

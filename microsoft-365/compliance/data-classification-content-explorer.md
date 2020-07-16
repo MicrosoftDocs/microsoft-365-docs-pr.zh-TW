@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 內容總管可讓您本機檢視已套用標籤的項目。
-ms.openlocfilehash: 731ae51a02e4a6fbd35b5be7c0bf083c814ddfd3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: e5041f82d22b62e8b343c62136251e2c69ca9e47
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327849"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127040"
 ---
 # <a name="get-started-with-content-explorer"></a>開始使用內容總管
 
@@ -92,7 +92,7 @@ SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資�
 
 ### <a name="retention-labels"></a>保留標籤
 
-[保留標籤](labels.md)可讓您定義保留標記的項目的時間長度，以及刪除它之前要採取的步驟。 它們會透過原則來手動或自動套用。 它們可以在協助您組織保持遵守法律和法規需求方面扮演一個角色。
+[保留標籤](retention.md)可讓您定義保留標記的項目的時間長度，以及刪除它之前要採取的步驟。 它們會透過原則來手動或自動套用。 它們可以在協助您組織保持遵守法律和法規需求方面扮演一個角色。
 
 ### <a name="how-to-use-content-explorer"></a>如何使用內容總管
 
@@ -137,10 +137,9 @@ SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資�
 |檔案副檔名|`txt`|
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [敏感性標籤](sensitivity-labels.md)
-- [保留標籤](labels.md)
+- [了解敏感度標籤](sensitivity-labels.md)
+- [瞭解保留原則和保留標籤](retention.md)
 - [敏感性資訊類型實體定義.md](sensitive-information-type-entity-definitions.md)
-- [保留原則概觀](retention-policies.md)
 - [資料外洩防護概觀](data-loss-prevention-policies.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本解決方案案例說明如何使用保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期。 方法是使用文件中繼資料來分類內容，具體做法是並自動套用保留標籤及設定以事件為基礎的保留。
-ms.openlocfilehash: 9c8a7044dccdb60f8e579d6dcad64310d1dda0d5
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419099"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45126474"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留標籤管理 SharePoint 文件的生命週期
 
@@ -108,11 +108,11 @@ ms.locfileid: "44419099"
 
 - **保留期間：** 五年 (1825 天)
 
-- **記錄標籤**：設定保留標籤，以將內容分類成[記錄](labels.md#using-retention-labels-for-records-management) (分類為記錄的文件不能由使用者修改或刪除)
+- **記錄標籤**：設定保留標籤，以將內容分類成[記錄](records.md) (分類為記錄的文件不能由使用者修改或刪除)
 
 - **檔案計畫描述元：**(用於簡化案例，不會提供檔案描述元)
 
-下列螢幕擷取畫面顯示在安全性與合規合規性中心建立產品規格[保留標籤](labels.md)時的設定。 您可以在建立保留標籤時，建立**產品停產**事件類型。 請參閱下列步驟。
+下列螢幕擷取畫面顯示在安全性與合規合規性中心建立產品規格[保留標籤](retention.md#retention-labels)時的設定。 您可以在建立保留標籤時，建立**產品停產**事件類型。 請參閱下列步驟。
 
 ![產品規格標籤的保留設定](../media/SPRetention5.png)
 
@@ -144,7 +144,7 @@ ms.locfileid: "44419099"
 
 ## <a name="classifying-content-by-auto-applying-retention-labels"></a>使用自動套用保留標籤來分類內容
 
-我們將[自動套用](labels.md#applying-a-retention-label-automatically-based-on-conditions)使用關鍵字查詢語言 (KQL) 為此案例所建立的保留標籤。 KQL 是用於建立搜尋查詢的語言。 您可以在 KQL 中使用關鍵字或 Managed 屬性進行搜尋。 如需關於 KQL 的詳細資訊，請參閱<https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
+我們將[自動套用](apply-retention-labels-automatically.md)使用關鍵字查詢語言 (KQL) 為此案例所建立的保留標籤。 KQL 是用於建立搜尋查詢的語言。 您可以在 KQL 中使用關鍵字或 Managed 屬性進行搜尋。 如需關於 KQL 的詳細資訊，請參閱<https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference>
 
 我們想要讓 Microsoft 365 將**產品規格**保留標籤套用至所有**狀態**為**完稿**，且**文件類型**為**產品規格**的文件。 請記住，**狀態**和**文件類型**是先前在[資訊架構](#information-architecture)一節中為產品文件內容類型定義的網站欄。 為了完成此操作，我們需要設定搜尋結構描述。
 
@@ -268,7 +268,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 由於已成功自動套用保留標籤，因此我們將焦點放在介紹用於指示特定產品停產的事件。 當此事件發生時，便會觸發自動套用至文件的保留標籤中定義的保留期間。 例如，針對產品規格文件，在觸發「停產」事件時，便會開始五年的保留期。
 
-您可以在安全性與合規性中心手動建立事件，方法是移至 [記錄管理]****  >  [事件]****，並選擇事件類型、設定正確的資產識別碼，並輸入事件日期。 如需詳細資訊，請參閱[事件導向保留的概觀](event-driven-retention.md)。
+您可以在安全性與合規性中心手動建立事件，方法是移至 [記錄管理]****  >  [事件]****，並選擇事件類型、設定正確的資產識別碼，並輸入事件日期。 如需更多資訊，請參閱[事件驅動保留概觀](event-driven-retention.md)。
 
 在此案例中，我們會透過從外部生產系統產生事件來自動建立事件。 在此案例中，產生事件的系統是一個簡單的 SharePoint 清單，該清單指出產品是否生產中，以及與該清單相關聯並會觸發事件的 [Microsoft Flow](https://docs.microsoft.com/flow/getting-started)。 在現實案例中，可以是產生事件的任何系統，例如 HR 或 CRM 系統。 Flow 包含許多可供 Microsoft 365 工作負載使用的現成互動和建置區塊，例如 Exchange、SharePoint、Teams 和 Dynamics 365，以及協力廠商應用程式，例如 Twitter、Box、Salesforce 和 Workdays。 這可讓您輕鬆地將 Flow 與這些系統整合。 如需詳細資訊，請參閱[自動化事件導向保留](automate-event-driven-retention.md)。
 

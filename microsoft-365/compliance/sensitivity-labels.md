@@ -20,17 +20,18 @@ description: 使用 Microsoft 資訊保護架構中的敏感度標籤，以透�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: d15152257f9be222420d63ed53a5921c74dc184f
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: d5b8e3c540c133ce4e04a434d03ef4bdb16b6f32
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936792"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127360"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
+為了完成其工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不會停留在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而您希望內容以符合組織的商務及合規性原則的安全、受保護的方式進行漫遊。
 
 來自 Microsoft 資訊保護架構的敏感度標籤可讓您分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。
 
@@ -47,7 +48,7 @@ To get their work done, people in your organization collaborate with others both
 
 您可以使用敏感度標籤來：
   
-- **Enforce protection settings such as encryption or watermarks on labeled content.** For example, your users can apply a Confidential label to a document or email, and that label can encrypt the content and apply a Confidential watermark.
+- **在標記的內容上強制執行保護設定，例如加密或浮水印。** 例如，使用者可以將「機密」標籤套用至文件或電子郵件，該標籤即可加密內容，並套用「機密」浮水印。
 
 - **保護不同平台和裝置之間 Office 應用程式中的內容。** 如需受支援應用程式的清單，請參閱[在 Office 應用程式中使用敏感度標籤](sensitivity-labels-office-apps.md)。
 
@@ -63,7 +64,7 @@ To get their work done, people in your organization collaborate with others both
 
 當您將敏感度標籤指派給文件或電子郵件，它就像一個戳記套用在內容上，並且是：
 
-- **Customizable.** You can create categories for different levels of sensitive content in your organization, such as Personal, Public, General, Confidential, and Highly Confidential.
+- **可自訂。** 您可以為組織中不同等級的敏感內容建立類別，例如個人、公用、一般、機密、高度機密。
 
 - **純文字。** 由於標籤會以純文字形式儲存在內容的中繼資料中，因此第三方應用程式和服務可以讀取它，然後套用自己的保護動作 (如必要)。
 
@@ -71,7 +72,7 @@ To get their work done, people in your organization collaborate with others both
 
 在 Office 應用程式中，敏感度標籤就像是在電子郵件或文件上讓使用者看的標記。
 
-Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
+內容中的每個項目皆可套用單一敏感度標籤。項目可以同時套用單一敏感度標籤和單一[保留標籤](retention.md#retention-labels)。
 
 > [!div class="mx-imgBorder"]
 > ![套用至電子郵件的敏感度標籤](../media/Sensitivity-label-on-email.png)
@@ -180,7 +181,7 @@ Each item of content can have a single sensitivity label applied to it. An item 
 
 ![敏感度標籤原則頁面上的移動選項](../media/sensitivity-label-policy-priority.png)
 
-如果除了敏感度標籤，您還使用保留標籤，請務必記住敏感度標籤原則的優先順序問題，但不適用於[保留標籤原則](labels.md#the-principles-of-retention-or-what-takes-precedence)。
+如果您除了使用敏感度標籤，還使用了保留標籤，請務必記住優先順序對於敏感度標籤原則，但對於[保留標籤原則](retention.md#the-principles-of-retention-or-what-takes-precedence)則否。
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>敏感度標籤和 Azure 資訊保護
 

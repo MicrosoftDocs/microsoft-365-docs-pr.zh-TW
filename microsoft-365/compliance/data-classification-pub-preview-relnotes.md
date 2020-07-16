@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類的版本資訊。
-ms.openlocfilehash: bbef6729680db2c9a6aec4caa9036ec23fad6949
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 71d8e8e4fffddc4c9373a2bdd37d4509337ec231
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327600"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127138"
 ---
 # <a name="data-classification-release-notes"></a>資料分類版本資訊
 
@@ -48,6 +48,6 @@ SharePoint search 不支援內含 `-``_` 的保留標籤名稱。 例如，不�
 - [開始使用資料分類 (預覽)](data-classification-overview.md)
 - [查看標籤活動 (預覽)](data-classification-activity-explorer.md)
 - [檢視已套用標籤的內容 (預覽)](data-classification-content-explorer.md)
-- [敏感性標籤](sensitivity-labels.md)
-- [保留標籤](labels.md)
-- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+- [瞭解敏感度標籤](sensitivity-labels.md)
+- [瞭解保留原則和保留標記](retention.md)
+- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
