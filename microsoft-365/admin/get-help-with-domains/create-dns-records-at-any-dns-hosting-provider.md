@@ -20,12 +20,12 @@ description: 了解如何在 Microsoft 365 的任一 DNS 主機服務提供者�
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: d3a9e3787afc30b33122edf91c1cf9e3dd84b847
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 01bcffe37d9c38d91eff25d9df58f848f4ee1a82
+ms.sourcegitcommit: f7566dd6010744c72684efdc37f4471672330b61
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049663"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138253"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>新增 DNS 記錄以連接您的網域
 
@@ -37,7 +37,9 @@ ms.locfileid: "45049663"
 
 若您在下方找不到所需內容，請[查看網域常見問題集](../setup/domains-faq.md)。
 
-## <a name="step-1-add-a-txt-record-to-verify-you-own-the-domain"></a>步驟1: 新增 TXT 記錄以驗證您擁有該網域
+## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>步驟 1: 新增 TXT 或 MX 記錄以驗證您擁有該網域
+
+### <a name="recommended-verify-with-a-txt-record"></a>建議：使用 TXT 記錄進行驗證
 
 首先，您必須證明您擁有要新增至 Microsoft 365 的網域。
 
@@ -56,6 +58,25 @@ ms.locfileid: "45049663"
 
 在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
 
+### <a name="verify-with-an-mx-record"></a>使用 MX 記錄進行驗證
+
+如果您的註冊機構不支援新增 TXT 記錄，您可以新增 MX 記錄以進行驗證。
+
+1. 登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)，然後選取 **[顯示所有]** > **[設定]** > **[網域]**。
+2. 在新的瀏覽器索引標籤或視窗中，登入您的 DNS 主機服務提供者，然後尋找您管理 DNS 設定的位置（例如 [區域檔案設定]、[管理網域]、[網域管理員]、[DNS 管理員]）。
+3. 移至您提供者的 [DNS 管理員] 頁面，並將系統管理中心所指出的 MT 記錄新增到您的網域。
+
+此 MX 記錄的「優先順序」**** 必須是網域所有現有 MX 記錄的最高者。 否則，可能會干擾傳送和接收電子郵件。 當網域驗證完成後，您應該立即刪除這項記錄。
+
+請確認欄位已設定為下列的值：
+
+- 記錄類型: `MX`
+- 優先順序: 設定為可用的最高值，通常為 `0`。
+- 主機名稱: `@`
+- 指向 [位址]: 從系統管理中心複製值並貼上。
+- TTL：`3600‎` (或您的提供者預設值)
+
+在 Microsoft 找到正確的 MX 記錄後，您的網域即完成驗證。
 
 ## <a name="step-2-add-dns-records-to-connect-microsoft-services"></a>步驟2：新增 DNS 記錄以連結 Microsoft 服務
 

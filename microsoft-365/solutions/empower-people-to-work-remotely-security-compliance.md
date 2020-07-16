@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 使用 Microsoft 365 安全性與合規性服務，以保護遠端工作者的應用程式、資料和裝置。
-ms.openlocfilehash: d8419c00bc4d8b99d9456abafbd5869ca26f4556
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 5ba60a04cf6717f8f9261ed72336445c8d7876bc
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049859"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127071"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>步驟 3：為遠端工作者部署安全性與合規性
 
@@ -54,6 +54,8 @@ ms.locfileid: "45049859"
 | Azure AD Identity Protection  | 自動化身分識別風險的偵測和修正。 <br><br>建立以風險為基礎的條件式存取原則，對於有風險的登入要求多重要素驗證 (MFA)。 | Microsoft 365 E5 或 E3 (含 Azure AD Premium P2 授權) |
 ||||
 
+如需詳細資訊，請參閱[開始使用 Microsoft 365 合規性的快速工作](../compliance/compliance-quick-tasks.md) (部分機器翻譯)。
+
 ## <a name="compliance"></a>合規性
 
 遵守內部原則或管理法規需求，並遵循下列 Microsoft 365 合規性功能。
@@ -64,10 +66,12 @@ ms.locfileid: "45049859"
 | 資料外洩防護 (DLP) | 偵測、警告，並封鎖風險、不慎或不當的共用，例如共用包含個人資訊的資料 (內部和外部)。 | Microsoft 365 E3 和 E5 | 
 | 條件式存取應用程式控制 | 防止敏感性資料遭下載至使用者的個人裝置。 | Microsoft 365 E3 和 E5 |
 | 資料保留標籤和原則 | 實施資訊控管控制，例如資料的保留時間以及對客戶個人資料儲存的要求，以符合組織的原則或資料法規。 | Microsoft 365 E3 和 E5 |
-| 電子郵件加密 | 在組織內外的人員之間傳送和接收加密的電子郵件訊息，包含管制資料，例如客戶的個人資料。 | Microsoft 365 E3 和 E5 |
+| Office 郵件加密 (OME) | 在組織內外的人員之間傳送和接收加密的電子郵件訊息，包含管制資料，例如客戶的個人資料。 | Microsoft 365 E3 和 E5 |
 | 合規性管理員 | 使用 Microsoft 服務信任入口網站中的這個工作流程型風險評估工具來管理與 Microsoft 雲端服務相關的合規性活動。 | Microsoft 365 E3 和 E5 |
 | 合規性分數 (預覽) | 在 Microsoft 365 合規性中心中，查看合規性設定的整體分數以及改善建議。 | Microsoft 365 E3 和 E5 |
 ||||
+
+如需詳細資訊，請參閱[安全性團隊支援在家工作的 12 個首要工作](../security/top-security-tasks-for-remote-work.md)。
 
 ## <a name="results-of-step-3"></a>步驟 3 的結果
 
