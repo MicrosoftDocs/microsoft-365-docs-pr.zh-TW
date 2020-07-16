@@ -75,7 +75,7 @@ Microsoft 提供了數個內建的警示原則，可協助識別系統管理許�
 
 ## <a name="task-6-classify-and-protect-sensitive-data"></a>任務6：分類及保護機密資料
 
-To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
+為了完成其工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不會停留在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而您希望內容以符合組織的商務及合規性原則的安全、受保護的方式進行漫遊。
 
 [敏感度標籤](sensitivity-labels.md)可讓您分類及保護組織的資料，同時確保使用者生產力和其共同作業能力不會形式妨礙。 使用敏感度標籤強制加密和使用限制會套用視覺標記，並保護跨平臺和裝置（內部部署和雲端）的資訊。
 

@@ -108,12 +108,12 @@ Microsoft 不直接營運此項服務。 世紀會運作、提供並管理服務
  新的 Exchange 2013 累計更新5（CU5），現在支援內部部署 Exchange 2013 組織和 Office 365 服務之間的完整功能混合部署。 利用混合式設定向導中的新改進功能，Exchange 2013 CU5 支援您的內部部署與 Exchange Online 組織之間的下列混合式功能：  
 
 - 內部部署和 Exchange Online 組織之間的安全郵件路由。 
-- Mail routing with a shared domain namespace. For example, both on-premises and Exchange Online organizations use the @contoso.com SMTP domain. 
+- 以共用網域命名空間進行的郵件路由傳送。例如，內部部署和 Exchange Online 組織都採用 @contoso.com SMTP 網域。 
 - 統一的全域通訊清單 (GAL)，也稱為「共用通訊錄」。  
 - 在內部部署和 Exchange Online 組織之間共用空閒/忙碌和行事曆。  
-- Centralized control of inbound and outbound mail flow. You can configure all inbound and outbound Exchange Online messages to be routed through the on-premises Exchange organization. 
+- 集中式輸入與輸出郵件流程控制。您可設定所有輸入與輸出 Exchange Online 郵件以透過內部部署 Exchange 組織路由傳輸。 
 - 內部部署和 Exchange Online 組織的單一 Office Outlook Web App URL。  
-- The ability to move existing on-premises mailboxes to the Exchange Online organization. Exchange Online mailboxes can also be moved back to the on-premises organization if needed.  
+- 將現有內部部署信箱移至 Exchange Online 組織的能力。若需要，Exchange Online 信箱也可移回至內部部署組織。  
 - 使用內部部署 Exchange 系統管理中心 (EAC) 進行集中式信箱管理。  
 - 在內部部署和 Exchange Online 組織之間的 Outlook 連絡人的 MailTips、HD 相片支援和多信箱搜尋。 
 - 適用於內部部署 Exchange 信箱的雲端式郵件封存。 

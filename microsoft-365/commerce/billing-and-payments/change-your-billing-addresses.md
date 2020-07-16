@@ -49,7 +49,7 @@ ms.locfileid: "44817026"
 
 - **服務使用位址**使用服務的位址，通常與購買**人位址相同**。 如果貴組織擁有遠端使用者或多個辦公室，請使用您大多數使用者所在位置的地址。
 
-In most cases, these addresses are the same. If you need to change one or more of the addresses, you can do that. You can also provide an alternate email address to receive billing notifications, and change the alternate email address for other admins.
+在大多數的情況下，這些地址完全相同。如果您需要變更一或多個地址，您可以這麼做。您也可以提供備用電子郵件地址接收帳單的通知，並變更其他系統管理員的備用電子郵件地址。
   
 ::: moniker range="o365-worldwide"
 

@@ -139,11 +139,11 @@ ms.locfileid: "45023390"
 3. 開啟文件以檢視報告資料。
 
 > [!NOTE]
-> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+> 這並不是歷程記錄報告，會保留並顯示動作項目作業歷程記錄的狀態變更。所產生的報告是報告執行時所指派項目的控制項動作項目 (寫入報表的日期和時間戳記) 的快照。例如，如果針對相同的使用者重新產生此報告，動作項目的任何後續重新指派都將會導致不同的快照報告資料。
   
 #### <a name="reassign-action-items"></a>重新指派動作項目
 
-This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+這項功能可讓組織移除使用者帳戶上任何使用中或未完成的相依性，方法是將所傳回使用者帳戶的所有動作項目擁有權 (其中同時包含作用中和已完成的動作項目) 重新指派給下面選取的新使用者。此動作不會變更已傳回使用者帳戶的文件上傳歷程記錄。
   
  若要將動作項目重新指派給其他使用者：
   
@@ -156,9 +156,9 @@ This function enables an organization to remove any active or outstanding depend
 4. 若要繼續，請選取 **[確定]**，否則請選取 [**取消**]。
     
 > [!NOTE]
-> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+> 所有的動作項目 (作用中及已完成) 將會指派給新選取的使用者。不過，此動作不會影響文件上傳歷程記；先前指派使用者所上傳的任何文件仍會顯示日期/時間和先前指派使用者的名稱。 
   
-Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+變更文件上傳歷程記錄以移除先前指派的使用者必須以手動程序執行。在這種情況下，系統管理員必須：
   
 1. 開啟先前已下載的 [匯出] 報告。
   
@@ -174,7 +174,7 @@ Changing the document upload history to remove the previously assigned user will
   
 #### <a name="delete-user-data-history"></a>刪除使用者資料歷程記錄
 
-This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+這會將指派給所傳回使用者之所有動作項目的控制項動作項目設為「未指派」。這也會將所傳回使用者上傳的任何文件的上傳者值設為 [已移除使用者]
   
  若要刪除使用者帳戶動作項目和文件上傳記錄：
   
