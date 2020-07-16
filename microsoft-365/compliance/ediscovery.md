@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 提供許多不同的 eDiscovery 工具，可供您用來搜尋及存放位於不同位置的內容，例如 Exchange 信箱、SharePoint 和 OneDrive 商務網站、Microsoft 365 群組和商務用 Skype 交談。
-ms.openlocfilehash: 4d373f2d5e6c0c64fcce6e0ef097e28f0950cb39
-ms.sourcegitcommit: 60c1932dcca249355ef7134df0ceb0e57757dc81
+ms.openlocfilehash: 2f18d3a9559293e071b7060f0e4a01a7352097c1
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43943428"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148123"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>Microsoft 365 中的電子文件探索
 
@@ -88,3 +88,7 @@ Microsoft 365 （也稱為「 *Advanced ediscovery 2.0 2.0*」）中的「高級
 |[分析審閱集中的資料](analyzing-data-in-review-set.md)|瞭解如何對審閱集中的檔執行分析。 執行分析的結果包括近期重複偵測、電子郵件執行緒及主題識別。|
 |[匯出案例資料](exporting-data-ediscover20.md)|瞭解從案例中匯出資料以供外部複查。|
 |||
+
+## <a name="roadmap"></a>藍圖
+
+若要查看已啟動的 eDiscovery 功能、正在進行中或在開發中，請造訪[Microsoft 365 藍圖](https://aka.ms/eDiscoRoadMap)。

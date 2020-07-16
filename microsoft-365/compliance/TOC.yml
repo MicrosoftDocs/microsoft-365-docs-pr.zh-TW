@@ -283,34 +283,40 @@
           href: enable-unlimited-archiving.md
         - name: 設定信箱的封存與刪除原則
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: 保留資料
+    - name: 保留及刪除資料
       items:
-        - name: 了解保留原則
-          href: retention-policies.md
-        - name: 建立及設定保留原則
+        - name: 了解保留
+          items:
+            - name: 保留原則和標籤
+              href: retention.md
+            - name: 適用於 SharePoint 和 OneDrive 的保留
+              href: retention-policies-sharepoint.md
+            - name: 適用於 Microsoft Teams 的保留
+              href: retention-policies-teams.md
+            - name: 適用於 Exchange 的保留
+              href: retention-policies-exchange.md
+        - name: 開始使用保留
+          href: get-started-with-retention.md
+        - name: 建立保留原則
           href: create-retention-policies.md
-        - name: 適用於 SharePoint 和 OneDrive 的保留
-          href: retention-policies-sharepoint.md
-        - name: 適用於 Microsoft Teams 的保留
-          href: retention-policies-teams.md
-        - name: 適用於 Exchange 的保留
-          href: retention-policies-exchange.md
-        - name: 檔案計畫
+        - name: 使用檔案計畫
           href: file-plan-manager.md
-        - name: 了解保留標籤
-          href: labels.md
-        - name: 建立、發佈或自動套用保留標籤
-          href: create-retention-labels.md
+        - name: 建立保留標籤，並在應用程式中使用這些標籤
+          href: create-apply-retention-labels.md
+        - name: 自動將保留標籤套用到內容
+          href: apply-retention-labels-automatically.md
         - name: 符合美國證券交易委員會規定 17A-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: 使用 PowerShell 建立及發佈保留標籤
+        - name: 使用 PowerShell 建立保留標籤
           href: bulk-create-publish-labels-using-powershell.md
-        - name: 事件型保留
-          href: event-driven-retention.md
-        - name: 自動化事件型保留
-          href: automate-event-driven-retention.md
-        - name: 管理 SharePoint 文件的生命週期
-          href: auto-apply-retention-labels-scenario.md
+        - name: 使用事件型保留
+          items:
+            - name: 事件發生時，開始保留
+              href: event-driven-retention.md
+            - name: 自動化事件型保留
+              href: automate-event-driven-retention.md
+            - name: 管理 SharePoint 文件的生命週期
+              href: auto-apply-retention-labels-scenario.md
     - name: 資料處置
       href: disposition.md
     - name: 管理非使用中的信箱
@@ -345,34 +351,6 @@
           href: records-management.md
         - name: 記錄
           href: records.md
-        - name: 檔案計畫
-          items:
-            - name: 管理保留標籤
-              href: file-plan-manager.md
-            - name: 了解保留標籤
-              href: labels.md
-            - name: 建立及發佈保留標籤
-              href: create-retention-labels.md
-            - name: 使用 PowerShell 大量建立及發佈保留標籤
-              href: bulk-create-publish-labels-using-powershell.md
-            - name: 利用標籤分析檢視標籤使用量
-              href: label-analytics.md
-            - name: 檢視文件的標籤活動
-              href: view-label-activity-for-documents.md
-            - name: 檢視資料控管報告
-              href: view-the-data-governance-reports.md
-        - name: 事件
-          items:
-            - name: 事件型保留
-              href: event-driven-retention.md
-            - name: 自動化事件型保留
-              href: automate-event-driven-retention.md
-        - name: 處置
-          href: disposition.md
-        - name: 深入了解記錄管理
-          items:
-            - name: 觀看有關記錄管理的影片
-              href: 'https://go.microsoft.com/fwlink/?linkid=867039'
 - name: 管理電子文件探索
   items:
     - name: Microsoft 365 中的電子文件探索

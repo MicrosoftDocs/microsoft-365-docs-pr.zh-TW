@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 讓您的使用者透過 Teams、Exchange、SharePoint 和其他 Microsoft 365 服務提高生產力。
-ms.openlocfilehash: 274780d2b9ea4310eb2cd8c9114bb61c326d33fe
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: a5c1d27afdb7afd8b4ee3052f745c4c986299a2e
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005959"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127094"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步驟 5： 部署遠端工作者生產力應用程式和服務
 
@@ -67,11 +67,18 @@ Teams 為應用程式和工作流程提供一個平台，您可以從電腦版�
 
 請參閱 [本文](../enterprise/secure-email-recommended-policies.md) 以了解資料存取原則所建議使用的身分識別和裝置，並保護支援新式驗證和 [限制存取] 的組織的電子郵件和電子郵件用戶。
 
-## <a name="store-and-collaborate-on-files-with-sharepoint-online-and-onedrive"></a>使用 SharePoint Online 和 OneDrive 儲存和共同處理檔案
+## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>使用 SharePoint 和 OneDrive 儲存和共同處理檔案
 
-對於內容共同作業，遠端工作者可以使用 SharePoint Online 和 OneDrive 資料夾作為雲端中用來儲存和共用檔案、共同撰寫、溝通及共同作業的集中位置。 遠端工作者可以從網頁瀏覽器、Teams 和 Office 應用程式的任何位置安全地工作。
+對於內容共同作業，遠端工作者可以使用 SharePoint 和 OneDrive 資料夾作為雲端中用來儲存和共用檔案、共同撰寫、溝通及共同作業的集中位置。 遠端工作者可以從網頁瀏覽器、Teams 和 Office 應用程式的任何位置安全地工作。
 
-請參閱 [本文](../enterprise/sharepoint-file-access-policies.md) 以瞭解保護 SharePoint Online 和 商務用 OneDrive 的建議身分識別和裝置存取原則。
+您可能必須將文件從以下位置移轉至 SharePoint 或 OneDrive：
+
+- [SharePoint Server 小組網站](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
+- [MySites](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [檔案共用](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [Box](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+
+若要保護 SharePoint 和 OneDrive，請參閱[此文章](../enterprise/sharepoint-file-access-policies.md)的建議身分識別和裝置存取原則。
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>使用 Microsoft 365 Apps 建立並共同處理內容
 

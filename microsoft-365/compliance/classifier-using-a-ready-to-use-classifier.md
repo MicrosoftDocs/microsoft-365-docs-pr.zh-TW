@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 隨附許多內建的分類符，您可以用來識別及標記整個組織中的內容。 本主題將告訴您如何準備使用這些分類器。
-ms.openlocfilehash: 82155b1dee9ab04dad593ce9ec2da97d3e796e99
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 1d645cc79075c41ce94b0f9b4fc347450a8df8c6
+ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126312"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146217"
 ---
 # <a name="testing-built-in-classifiers-using-retention-labels-preview"></a>使用保留標籤測試內建的分類器（預覽）
 
@@ -38,7 +38,7 @@ Microsoft 365 隨附了五個建議的內建分類器：
 - **簡歷**：偵測屬於申請人個人、教育、專業資格、工作經驗及其他個人識別資訊的文字帳戶的專案
 - **原始程式碼**：偵測包含一組指令和語句的專案，這些專案是以前25種使用的電腦程式設計語言所撰寫的 GitHub
 
-  |語言名稱|||||
+  |**語言名稱**|||||
   |---------|---------|---------|---------|---------|
   |ActionScript|C        |C#       |C++     |Clojure  |
   |CoffeeScript|Css     |移至       |Haskell |HTML     |
@@ -106,5 +106,5 @@ Microsoft 365 隨附了五個建議的內建分類器：
 另請參閱：
 
 - [開始使用可訓練的分類器 (預覽)](classifier-getting-started-with.md)
-- [深入瞭解保留原則和保留標籤](retention.md)
+- [瞭解保留原則和保留標籤](retention.md)
 - [自動將保留標籤套用保留或刪除內容](apply-retention-labels-automatically.md)

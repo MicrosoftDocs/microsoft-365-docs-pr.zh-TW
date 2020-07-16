@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何識別、監控和自動保護 Office 365 中貴組織中的敏感資訊。
-ms.openlocfilehash: 93d0eaf882569b6645c98699f83ad19a25af4864
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 8d507a32a6f36555eabfa0216febdb167ad4241c
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817942"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127530"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -337,11 +337,11 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
     
 ## <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>使用保留標籤作為 DLP 原則的條件
 
-當您在 DLP 原則中使用先前建立及發佈的[保留標籤](labels.md)做為條件時，請注意下列事項：
+當您在 DLP 原則中使用先前建立及發佈的[保留標籤](retention.md#retention-labels)做為條件時，請注意下列事項：
 
-- 您必須具有先前建立、發佈並套用的保留標籤，然後才能嘗試將它用做為 DLP 原則中的條件。
-- 建立並發佈保留標籤之後，最多需要一天的時間來進行同步，以及最多需要七天的時間來自動套用。 如需詳細資訊，請參閱[保留標籤要多久才會生效](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect)。
-- ***僅 SharePoint Online 和商務用 OneDrive 中的項目***才支援在原則中使用保留標籤。
+- 您必須先建立並發佈保留標籤，然後才能嘗試將它做為 DLP 原則中的條件。
+- 已發佈的保留標籤會在一到七天內進行同步處理。如需詳細資訊，關於保留原則中已發佈的保留標籤請參閱 [當保留標籤可以使用時](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) ，關於自動發佈的保留標籤請參閱 [保留標籤要多久才會生效](apply-retention-labels-automatically.md#how-long-it-takes-for-retention-labels-to-take-effect)。
+- **僅 SharePoint 和 OneDrive 中的項目才支援***在原則中使用保留標籤。
 
   ![做為條件的標籤](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
@@ -360,7 +360,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
 
 有多項功能可以套用到含有敏感性資訊的內容：
   
-- [保留標籤](labels.md#applying-a-retention-label-automatically-based-on-conditions)和[保留原則](retention-policies.md)都能對內容強制執行 **「保留」** 動作。 
+- [保留標籤和保留原則](retention.md) 都能對內容強制執行 **保留** 動作。 
     
 - DLP 原則可以對內容強制執行 **「保護」** 動作。 您不僅要為內容設定標籤，還要讓內容滿足其他條件，DLP 原則才能強制執行這些動作。 
     
@@ -418,7 +418,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
   
 1. **以測試模式啟動但不顯示原則提示**，然後使用 DLP 報告和任何事件報告來評估影響。 您可以使用 DLP 報告來檢視原則相符項目的號碼、位置、類型和嚴重性。 根據結果，您可以視需要微調規則。 在測試模式中，DLP 原則不會影響您的組織中工作人員的生產力。 
     
-2. **Move to Test mode with notifications and Policy Tips** so that you can begin to teach users about your compliance policies and prepare them for the rules that are going to be applied. At this stage, you can also ask users to report false positives so that you can further refine the rules. 
+2. **移至測試模式並顯示通知和原則提示**，以便您開始教導使用者相關規範原則及熟悉即將套用的規則。在這個階段，您也可以要求使用者回報誤判，以便您進一步調整規則。 
     
 3. **開始完整強制執行原則**，以便套用規則中的動作，並保護內容。 繼續監視 DLP 報告以及任何事件報告或通知，確保得到您想要的結果。 
 
@@ -450,7 +450,7 @@ DLP 原則通常都有簡單的需求，例如識別包含美國社會安全號�
   
 ## <a name="how-dlp-policies-work"></a>DLP 原則的運作方式
 
-DLP detects sensitive information by using deep content analysis (not just a simple text scan). This deep content analysis uses keyword matches, dictionary matches, the evaluation of regular expressions, internal functions, and other methods to detect content that matches your DLP policies. Potentially only a small percentage of your data is considered sensitive. A DLP policy can identify, monitor, and automatically protect just that data, without impeding or affecting people who work with the rest of your content.
+DLP 會使用深度內容分析 (不只是簡單的文字掃描) 來偵測敏感資訊。此深度內容分析會使用關鍵字比對、字典比對、規則運算式評估、內部函數和其他方法來偵測符合 DLP 原則的內容。可能只有一小部分的資料會被視為敏感資訊。DLP 原則可識別、監視和自動保護該項資料，而不會妨礙或影響到使用其餘內容的人員。
   
 ### <a name="policies-are-synced"></a>原則會同步處理
 
@@ -482,8 +482,7 @@ DLP detects sensitive information by using deep content analysis (not just a sim
   
 ![顯示 DLP 原則如何以非同步的方式評估內容的圖表](../media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
-<!-- conflict with a DLP policy is bad wording -->
-Finally, documents can conflict with a DLP policy, but they can also become compliant with a DLP policy. For example, if a person adds credit card numbers to a document, it might cause a DLP policy to block access to the document automatically. But if the person later removes the sensitive information, the action (in this case, blocking) is automatically undone the next time the document is evaluated against the policy.
+<!-- conflict with a DLP policy is bad wording --> 最後，文件可能會違反 DLP 原則，但也可能會符合 DLP 原則。例如，如果人員在文件中加入信用卡號碼，有可能會導致 DLP 原則自動封鎖文件的存取。但如果人員稍後移除敏感資訊，則會在下次依據原則進行評估時自動復原動作 (在此案例中為封鎖)。
   
 DLP 會評估可編製索引的任何內容。 若要進一步了解依預設會對哪些檔案類型進行編目，請參閱 [SharePoint Server 中的預設編目副檔名和剖析檔案類型](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)。
 

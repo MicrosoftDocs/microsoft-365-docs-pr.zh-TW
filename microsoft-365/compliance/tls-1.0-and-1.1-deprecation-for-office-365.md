@@ -1,31 +1,34 @@
 ---
-title: TLS 1.0 和1.1 已過時的 Office 365
+title: 適用於 Office 365 的 TLS 1.0 和 1.1 淘汰
 description: 說明 Office 365 的 TLS 1.0 和1.1 棄用。
-author: simonxjx
-manager: dcscontentpm
+author: workshay
+manager: laurawi
 localization_priority: Normal
 search.appverid:
 - MET150
 audience: ITPro
 ms.service: O365-seccomp
 ms.topic: article
-ms.author: v-six
+ms.author: shmehta
+ms.reviewer: krowley
 appliesto:
 - Microsoft 365 Apps for enterprise
 - Office 365 Business
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 611b6970c3ecb95f4cdf046b96a5e3aa9155391d
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 270d04974cec9c36fa31a77bda401375fdac0471
+ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937328"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45148145"
 ---
-# <a name="tls-10-and-11-deprecation-for-office-365"></a>TLS 1.0 和1.1 已過時的 Office 365
+# <a name="tls-10-and-11-deprecation-for-office-365"></a>適用於 Office 365 的 TLS 1.0 和 1.1 淘汰
+> [!IMPORTANT]
+> 由於 covid-19，我們會暫時停止對商業客戶執行 TLS 1.0 和1.1 的棄用，但隨著供貨鏈的調整和某些國家的開啟，我們會將 TLS 強制重設為開始 Oct 15，2020。 
 
-從2018年10月31日到，Office 365 服務的傳輸層安全性（TLS）1.0 和1.1 通訊協定已被取代。 對使用者的影響預計會降至最低。 這項變更會在兩年中公佈，第一次公開宣告于12月2017。 本文僅適用于與 Office 365 服務相關的 Office 365 本地用戶端，但是也可以套用至 Office 和 Office Online Server/Office Web Apps 的內部部署 TLS 問題。
+從2018年10月31日到，Office 365 服務的傳輸層安全性（TLS）1.0 和1.1 通訊協定已被取代。 對使用者的影響預計會降至最低。 這項變更已于兩年內公佈，第一次公開宣告于12月2017。 本文僅適用于與 Office 365 服務相關的 Office 365 本地用戶端，但是也可以套用至 Office 和 Office Online Server/Office Web Apps 的內部部署 TLS 問題。
 
 ## <a name="office-and-tls-overview"></a>Office 和 TLS 概述
 
@@ -46,7 +49,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 > [!NOTE]
 > 未安裝此更新的 Windows 7 使用者會受到2018年10月31日的影響。 [KB 3140245](https://support.microsoft.com/help/3140245)具有如何變更 WINHTTP 設定以啟用 TLS 通訊協定的詳細資料。
 
-#### <a name="more-information"></a>其他相關資訊
+#### <a name="more-information"></a>詳細資訊
 
 知識庫文章描述的**DefaultSecureProtocols**登錄機碼值，會決定可以使用的網路通訊協定：
 
