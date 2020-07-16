@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何在安全性與合規性中心使用[匯入]服務來將電子郵件資料 (PST 檔案) 大量匯入至使用者信箱。
-ms.openlocfilehash: e0d0c8c0a963e8660cac09abe68e6824dd7e1d3c
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: fd369a8cde1284c19f9eb3cb38cf8bfe39dbc4ee
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091939"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127158"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>將組織的 PST 檔案匯入的概觀
 
@@ -99,7 +99,7 @@ ms.locfileid: "45091939"
     
   - 使用[電子文件探索案例](ediscovery-cases.md)來管理貴組織的法律調查 
     
-  - 使用安全性與合規性中心的[保留原則](retention-policies.md)來控制信箱內容的保留時間，並在保留期間結束後刪除內容。 
+  - 使用安全性與合規性中心的[保留原則](retention.md)來控制信箱內容的保留時間，並在保留期間結束後刪除內容。 
 
   - 使用[通訊合規性原則](communication-compliance.md)檢查郵件，以確認郵件符合郵件標準的規範，並新增分類類型。
     
