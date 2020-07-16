@@ -1,0 +1,194 @@
+---
+title: 自動套用保留標籤來保留或刪除內容
+f1.keywords:
+- NOCSH
+ms.author: cabailey
+author: cabailey
+manager: laurawi
+ms.date: ''
+audience: Admin
+ms.topic: conceptual
+ms.service: O365-seccomp
+localization_priority: Priority
+ms.collection:
+- M365-security-compliance
+- SPO_Content
+search.appverid:
+- MOE150
+- MET150
+description: 建立及自動發佈保留標籤，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
+ms.openlocfilehash: eb29a846f6a7352eec02683c70dad1b0a423bdfa
+ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45127574"
+---
+# <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤來保留或刪除內容
+
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+
+[保留標籤](retention.md) 最實用的功能之一，是將標籤自動套用至符合特定條件的內容。 在此情況下，貴組織中的人員不必親自套用保留標籤。 Microsoft 365 會執行這些動作。
+  
+自動套用保留標籤很強大是因為：
+  
+- 您不需要訓練您的使用者記下所有分類。
+    
+- 您不需要仰賴使用者正確地將所有內容分類。
+    
+- 使用者不再需要了解資料控管原則，他們可以專心工作。
+    
+當該內容包含敏感資訊、關鍵字或 [可訓練分類器](classifier-getting-started-with.md) 的匹配項目時，您可以自動套用保留標籤到內容上。
+    
+根據下列條件自動套用保留標籤的程式：
+
+![自動套用標籤的角色和工作圖](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
+
+使用下列指示執行兩個系統管理員步驟。
+
+> [!NOTE]
+> 自動原則會使用條件的服務端標籤來自動套用保留標籤。 當您執行下列動作時，您也可以使用標籤原則以自動套用保留標籤： 
+>
+> - 將預設保留標籤套用至 SharePoint 文件庫、資料夾或檔組，讓該容器中未標記的內容自動加上標籤
+>- 使用規則將保留標籤自動套用至電子郵件
+>
+> 在這些情況下，請參閱 [在應用程式中建立集套用保留標籤](create-apply-retention-labels.md)。
+
+## <a name="before-you-begin"></a>開始之前
+
+您組織中的全域系統管理員擁有建立及管理保留標籤及其原則的完整權限。 如果您未以全域系統管理員身分登入，請參閱[建立和管理保留標籤所需權限](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels)。
+
+## <a name="how-to-auto-apply-a-retention-label"></a>如何自動套用保留標籤
+
+首先，建立您自己的保留標籤。 然後建立自動原則來套用該標籤。 如果您已經建立保留標籤，請跳至 [建立自動原則](#step-2-create-an-auto-apply-policy)。
+
+瀏覽指示取決於您使用的是否是 [記錄管理](records-management.md)。 以下提供這兩個案例的指示。
+
+### <a name="step-1-create-a-retention-label"></a>步驟1: 建立保留標籤。
+
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，瀏覽至下列其中一個位置：
+    
+    - 如果您使用記錄管理：
+        - [解決方案]****  >  [記錄管理]****  >  [檔案計劃]**** 索引標籤 > [+ 建立標籤]****  >  [保留標籤]****
+        
+    - 如果您未使用記錄管理：
+       - [解決方案]****  >  [資訊控管]****  >  [標籤]**** 索引標籤 > [+ 建立標籤]****
+    
+    沒有立即看到您的選項？ 先選取 [顯示全部]****。 
+
+2. 遵循精靈中的提示進行。 如果您使用記錄管理：
+    
+    - 如需檔案計劃描述元的詳細資訊，請參閱[使用檔案計劃管理保留標籤](file-plan-manager.md)
+    
+    - 若要使用保留標籤將內容宣告為記錄，請啟用 [使用標籤以將內容分類為「記錄」]**** 核取方塊。
+
+若要編輯現有的標籤，請選取它，然後選取 [編輯標籤]**** 以啟動相同的精靈讓您變更標籤描述和步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)。 或者，選取任何一個可用的 **[編輯]** 選項，直接移至相關頁面以進行更新。
+
+
+### <a name="step-2-create-an-auto-apply-policy"></a>步驟2：建立自動套用原則
+
+當您建立自動套用原則時，會根據您指定的條件，選取要自動套用至內容的保留標籤。
+
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，瀏覽至下列其中一個位置：
+    
+    - 如果您使用記錄管理：**資訊控管**：
+        - [解決方案]****  >  [記錄管理]****  >  [標籤原則]**** 索引標籤 > [自動套用標籤]****
+    
+    - 如果您未使用記錄管理：
+        - [解決方案]****  >  [資訊控管]****  >  [標籤原則]**** 索引標籤 > [自動套用標籤]****
+    
+    沒有立即看到您的選項？ 先選取 [顯示全部]****。 
+
+2. 遵循精靈中的提示進行。
+    
+    如需有關設定會自動套用保留標籤之條件的詳細資訊，請參閱此頁面上的[設定自動套用保留標籤的條件](#configuring-conditions-for-auto-apply-retention-labels)一節。
+    
+    如需保留標籤支援的位置詳細資訊，請參閱[保留標籤和位置](retention.md#retention-label-policies-and-locations)一節。
+
+若要編輯現有的自動套用標籤原則，請選取它，然後選取 [編輯原則]**** 以啟動相同的精靈讓您變更標籤描述和步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)。 或者，選取任何一個可用的 [編輯]**** 選項，直接移至相關頁面以進行更新。
+
+### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>設定自動套用保留標籤的條件
+
+您可以在內容包含以下資訊時，自動將保留標籤套用到內容：
+
+- [特定敏感資訊類型](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
+
+- [符合您所建立查詢的特定關鍵字](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+- [可訓練分類器的符合項目](#auto-apply-labels-to-content-by-using-trainable-classifiers)
+
+#### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>自動將標籤套用至包含特定類型敏感資訊的內容
+
+當您為敏感性資訊建立自動套用保留標籤時，系統會顯示與建立資料外洩防護 (DLP) 原則時相同的原則範本清單。 每個原則範本預設會尋找特定類型的敏感性資訊。 例如本文顯示的範本會尋找美國 ITIN、SSN 和護照號碼。 若要深入了解 DLP，請參閱[資料外洩防護原則概觀](data-loss-prevention-policies.md)。
+  
+![敏感資訊類型的原則範本](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+  
+選取原則範本後，可以新增或移除任何類型的敏感資訊，且可以變更例項計數和比對精確度。此處所示的範例中，只有符合以下條件時，才會自動套用保留標籤：
+  
+- 內容包含 1 到 9 個下列三種敏感資訊類型。您可以刪除 **max ** (上限) 值，條件就會變成 **any** (任何)。
+    
+- 系統偵測到之機密資訊類型的比對精確度 (或信賴區間) 至少會有 75。 許多機密資訊類型是與多個合作夥伴所定義；比對精確度越高的模式需要更多證據 (例如關鍵字、日期或地址)，比對精確度越低的模式則需要較少證據。 **最小**比對精確度越低，內容就越容易與條件相符。 
+    
+如需這些選項的詳細資訊，請參閱[調整規則，讓規則更容易或更難相符](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
+    
+![用於識別機密資訊類型的選項](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
+  
+#### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>自動將標籤套用至包含關鍵字或可搜尋屬性的內容
+
+您可以自動將標籤套用至符合特定條件的內容。現在可用的條件支援將標籤套用至包含特定字詞、片語或可搜尋屬性的值。您可以使用 AND、OR、NOT 等搜尋運算子來精簡查詢。
+
+如需查詢語法的詳細資訊，請參閱：
+
+- [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+
+查詢式標籤使用搜尋索引來識別內容。如需有效可搜尋屬性的詳細資訊，請參閱：
+
+- [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
+- [SharePoint 伺服器中的編目及受控屬性概觀](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+
+範例查詢：
+
+- Exchange
+    - subject:"Quarterly Financials"
+    - recipients:garthf<!--nolink-->@contoso.com
+- SharePoint 和 OneDrive
+    - contenttype:contract
+    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
+
+![查詢編輯器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+
+
+#### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可訓練分類器自動將標籤套用至內容
+
+選擇用於可訓練分類器的選項時，可以選取其中一個內建分類器或自訂分類器。 內建分類器包括 [履歷]****、[原始程式碼]****、[針對性騷擾]****、[粗話]**** 和 [威脅]****：
+
+![選擇可訓練分類器](../media/retention-label-classifers.png)
+
+> [!CAUTION]
+> 我們正在淘汰 [粗穢言語]**** 內建分類器，因為這個分類器產生了大量的誤報。 請不要使用這個內建分類器，如果您目前正在使用此分類器，請將您的商務流程移開。 建議您改用 [針對性騷擾]****、[粗話]**** 和 [威脅]**** 內建分類器。
+
+若要使用此選項自動套用標籤，SharePoint Online 網站和信箱必須有至少 10 MB 的資料。
+
+如需有關可訓練分類器的詳細資訊，請參閱[開始使用可訓練分類器 (預覽)](classifier-getting-started-with.md)。
+
+如需組態範例，請參閱[如何準備及使用內建分類器](classifier-using-a-ready-to-use-classifier.md#how-to-verify-that-a-built-in-classifier-will-meet-your-needs)。
+
+## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保留標籤要多久才會生效
+
+當您自動套用保留標籤，可能需要最多 7 天，保留標籤才會套用至符合條件的所有現有內容。
+  
+![自動標籤生效時的圖表](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
+  
+## <a name="updating-retention-labels-and-their-policies"></a>更新保留標籤及其原則
+
+當您編輯保留標籤或自動套用原則，且保留標籤已套用至內容時，除了新識別的內容以外，您更新的設定會自動套用到此內容。
+
+在建立及儲存標籤或原則之後，部分設定無法變更，其中包括：
+- 保留期間以外的保留設定，除非您已將標籤設定為根據建立時間來保留或刪除內容。
+- 分類為記錄的選項。
+
+## <a name="next-steps"></a>後續步驟
+
+請考慮以另一種自動化形式使用保留標籤，[事件導向保留](event-driven-retention.md)。 當您使用此設定時，保留的開始是由您識別的事件觸發。 您可以使用自動原則或標籤原則來執行事件導向保留。
+
+請參閱[管理具有保留標籤之 SharePoint 文件的生命週期](auto-apply-retention-labels-scenario.md)，以了解使用 SharePoint 中受管理屬性來自動套用保留標籤和實作事件導向保留的詳細案例。
