@@ -146,7 +146,7 @@ ms.locfileid: "45091939"
   
  **哪些地區提供網路上傳服務？**
   
-Network upload is currently available in these regions: United States, Canada, Brazil, the United Kingdom, France, Germany, Europe, India, East Asia, Southeast Asia, Japan, Republic of Korea, Australia, and United Arab Emirates (UAE). Network upload will be available in more regions soon.
+網路上傳的服務範圍目前包括這些地區：美國、加拿大、巴西、英國、法國、德國、歐洲、印度、東亞、東南亞、日本、南韓、澳洲和阿拉伯聯合大公國 (UAE)。我們會盡快在更多地區提供網路上傳服務。
   
  **使用網路上傳匯入 PST 檔案的費用為何？**
   
@@ -174,7 +174,7 @@ Using network upload to import PST files is free.
   
  PST 匯入處理程序如何處理重複的電子郵件項目?****
 
-PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾為不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則所有 PST 檔案中的項目將會重新匯入。
+PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則 PST 檔案中的所有項目將會重新匯入。
  
  **匯入 PST 檔案時，是否有郵件大小限制？**
   
@@ -186,7 +186,7 @@ PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標�
   
  **針對我要匯入至信箱的 PST 檔案，其資料夾階層數是否有上限？**
   
-Yes. You can't import a PST file that has 300 or more levels of nested folders.
+是。您無法匯入具有 300 或更多巢狀資料夾階層的 PST 檔案。
   
  **我是否可以使用網路上傳將 PST 檔案匯入 Office 365 中的非作用中的信箱？**
   
@@ -245,7 +245,7 @@ Office 365 匯入服務只支援使用 2.5 吋固態硬碟 (SSD)，或是 2.5 �
   
  **寄送硬碟之後，需要多久的時間才會送達 Microsoft 資料中心？**
   
-That depends on a few things, such as your proximity to the Microsoft data center and what kind of shipping option you used to ship your hard drive (such as, next-day delivery, two-day delivery, or ground-delivery). With most shippers, you can use the tracking number to track the status of your delivery.
+這取決於幾個要素，例如您與 Microsoft 資料中心之間的距離，以及您使用什麼類型的運送選項來寄送硬碟 (例如，隔天送達、兩日送達或陸地運送)。大多數貨運公司提供追蹤號碼，讓您可以追蹤運送狀態。
   
  **硬碟送達 Microsoft 資料中心後，需要多久的時間才能將我的 PST 檔案上傳到 Azure？**
   
@@ -275,7 +275,7 @@ PST 檔案上傳到 Azure 儲存體區域之後，Microsoft 365 會以安全的�
   
   PST 匯入處理程序如何處理重複的電子郵件項目?****
 
-PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾為不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則所有 PST 檔案中的項目將會重新匯入。
+PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則 PST 檔案中的所有項目將會重新匯入。
  
  **PST 檔案匯入 Microsoft 365 信箱時是否會保留訊息屬性 (例如訊息的傳送或接收時間、收件者清單、和其他屬性)？**
   
@@ -283,7 +283,7 @@ PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標�
   
  **針對我要匯入至信箱的 PST 檔案，其資料夾階層數是否有上限？**
   
-Yes. You can't import a PST file that has 300 or more levels of nested folders.
+是。您無法匯入具有 300 或更多巢狀資料夾階層的 PST 檔案。
   
  **我是否可以使用磁碟機寄送將 PST 檔案匯入至 Microsoft 365 中的非作用中的信箱？**
   
@@ -299,19 +299,19 @@ Yes. You can't import a PST file that has 300 or more levels of nested folders.
   
  **Microsoft 是否可以先將硬碟清空再寄回給我？**
   
-No, Microsoft can't wipe hard drives before shipping them back to customers. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+否，Microsoft 無法先將硬碟清空再寄回給客戶。硬碟會以 Microsoft 當初收到的狀態寄回給您。
   
  **Microsoft 是否可以先將硬碟銷毀再寄回給我？**
   
-No, Microsoft can't destroy your hard drive. Hard drives are returned to you in the same state they were in when they were received by Microsoft.
+否，Microsoft 不能破壞您的硬碟。硬碟會以 Microsoft 當初收到的狀態寄回給您。
   
  **哪些快遞服務支援將硬碟寄回客戶？**
   
-If you're a customer in the United States or Europe, Microsoft uses FedEx to return your hard drive. For all other regions, Microsoft uses DHL.
+如果您是位於美國或歐洲地區的客戶，Microsoft 會使用 FedEx 將硬碟寄回給您。針對所有其他區域，Microsoft 則會使用 DHL。
   
  **將硬碟寄回需要多少費用？**
   
-Return shipping costs vary, depending on your proximity to the Microsoft data center that you shipped your hard drive to. Microsoft will bill your FedEx or DHL account to return your hard drive. The cost of return shipping is your responsibility.
+實際的寄回費用取決於您將硬碟寄出的所在地區與 Microsoft 資料中心之間的距離。Microsoft 會從您的 FedEx 或 DHL 帳戶收取硬碟寄回費用。寄回費用需由您自行承擔。
   
  **我是否能使用自訂運送服務 (例如 FedEx 自訂運送) 將我的硬碟寄給 Microsoft？**
   
@@ -319,4 +319,4 @@ Return shipping costs vary, depending on your proximity to the Microsoft data ce
   
  **如果我需要將硬碟寄到其他國家/地區，我需要採取什麼動作嗎？**
   
-The hard drive that you ship to Microsoft might have to cross international borders. If this is the case, you're responsible for ensuring that the hard drive and the data it contains are imported and/or exported in accordance with the applicable laws. Before shipping a hard drive, check with your advisors to verify that your drive and data can legally be shipped to the specified Microsoft data center. This will help to ensure that it reaches Microsoft in a timely manner.
+您寄給 Microsoft 的硬碟可能會跨國際邊界。在這種情況下，您必須負責確保硬碟和當中的資料可依據相關法律進口和/或出口。寄送硬碟之前，請與您的顧問確認磁碟機和當中的資料可以合法地寄到指定的 Microsoft 資料中心，以確保 Microsoft 能夠及時收到您的硬碟。
