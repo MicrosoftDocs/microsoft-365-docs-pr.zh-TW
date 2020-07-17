@@ -27,7 +27,7 @@ ms.locfileid: "44936638"
 # <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>瞭解 Advanced eDiscovery （古典）中的檔相似性
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 在 [Advanced eDiscovery] 中，「檔相似性」是兩個檔視為接近重複專案所需的最小 resemblance 層級。
   

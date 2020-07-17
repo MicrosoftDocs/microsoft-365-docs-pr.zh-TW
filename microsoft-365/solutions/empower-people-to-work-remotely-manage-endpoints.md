@@ -19,6 +19,7 @@ ms.custom: ''
 description: 使用 Microsoft 端點管理員來管理受管理的裝置、電腦及其他端點。
 ms.openlocfilehash: 64f9aad04dd562e570d81c3c2993c2641354b95a
 ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "44844957"

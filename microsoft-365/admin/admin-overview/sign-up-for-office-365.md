@@ -117,7 +117,7 @@ ms.locfileid: "44780514"
 
   - **Country** where the services will be used. You **won't** be able to change this later, even during the sign up process; you'll have to re-start the sign up wizard.
 
-  - **Email** and **phone number** so we can contact you if needed about your subscription. For example, if you forget your password, we would use this information to send you a temporary one. We also send your billing information to the email address you specify.
+  - **電子郵件** 與 **電話號碼** ，萬一需要就訂閱問題連絡您時，就能派上用場。比方說，如果您忘記密碼，我們就會利用這項資訊，傳送暫時密碼給您。我們也會把帳單資訊傳送到您所指定的電子郵件地址。
 
     > [!NOTE]
     > 您在這裡輸入的電子郵件地址與您的 Microsoft 365 電子郵件地址（您的登入名稱，如下所示）不同。 由於我們也會使用這個電子郵件地址傳送帳單資訊給您，建議您使用適合接收商務電子郵件的電子郵件地址。

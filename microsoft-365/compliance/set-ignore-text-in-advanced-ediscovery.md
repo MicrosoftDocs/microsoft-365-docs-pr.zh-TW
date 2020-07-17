@@ -26,7 +26,7 @@ ms.locfileid: "44936890"
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>設定 [忽略文字] 選項，以在高級 eDiscovery （古典）中進行分析
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 [忽略文字] 功能可以套用到下列所有或任何的高級 eDiscovery 模組：分析（近乎重複的電子郵件執行緒、主題）及相關性。 「相關性」顯示的檔案中不會顯示忽略的文字，而且分析/計算會捨棄忽略的文字。
   

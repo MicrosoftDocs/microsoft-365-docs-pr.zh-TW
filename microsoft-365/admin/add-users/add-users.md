@@ -78,7 +78,7 @@ ms.locfileid: "45015884"
     - **連絡資訊**：展開並填入行動電話號碼、地址等資訊。
     - **密碼**使用自動產生的密碼或展開以指定使用者的強式密碼。 他們必須在90天后變更其密碼。 Or you can choose to **Make this user change their password when they first sign in**.
     - **角色**：如果您需要將這個使用者設為系統管理員的話，請展開此區段。
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **產品授權**：展開此區段並選取合適的授權。如果您沒有可用的授權，您仍然可以新增使用者，並購買額外的授權。
 
 ::: moniker-end
 
@@ -92,7 +92,7 @@ ms.locfileid: "45015884"
     - **連絡資訊**：展開並填入行動電話號碼、地址等資訊。
     - **密碼**使用自動產生的密碼或展開以指定使用者的強式密碼。 他們必須在90天后變更其密碼。 Or you can choose to **Make this user change their password when they first sign in**.
     - **角色**：如果您需要將這個使用者設為系統管理員的話，請展開此區段。
-    - **Product licenses** Expand this section and select the appropriate license. If you don't have any licenses available, you can still add a user and buy additional licenses.
+    - **產品授權**：展開此區段並選取合適的授權。如果您沒有可用的授權，您仍然可以新增使用者，並購買額外的授權。
 
 ::: moniker-end
 

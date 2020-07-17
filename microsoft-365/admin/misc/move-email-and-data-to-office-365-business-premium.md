@@ -57,19 +57,19 @@ ms.locfileid: "44779998"
 4. 選取 **[上傳**]，將檔案從您複製 OneDrive 檔案的硬碟上複製。 
   
     > [!NOTE]
-    >  You can upload individual files and groups of files (such as all files in a particular folder) at one time but you cannot copy a folder to OneDrive for Business. Instead, you'll need to create the folder structure you want on OneDrive for business. >  If you want to copy files to a folder that you created in step 4, open that folder before you upload the files. Otherwise, the files will be uploaded to the root folder. You can also move your files between folders in OneDrive for Business after you've uploaded them. 
+    >  您可以上傳個別檔案，也可以一次上傳一組檔案 (例如特定資料夾中的所有檔案)，但您無法將資料夾複製到商務用 OneDrive。您必須改為在商務用 OneDrive 中建立需要的資料夾結構。 >  如果您想將檔案複製到步驟 4 中建立的資料夾，請在上傳檔案前開啟該資料夾，否則檔案將會上傳到根資料夾。上傳檔案之後，您也可以在商務用 OneDrive 中的資料夾之間移動檔案。 
   
 ## <a name="outlookemail"></a>[Outlook/電子郵件](#tab/Outlook)
   
  **將 Outlook 2013 資訊匯出成 Outlook 資料檔**
-1. Before you can create your Outlook data file (.pst), the account that you want to export Outlook information from must already be added to the desktop version of Outlook. For information about how to add an account to Outlook 2013 or higher, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
+1. 建立 Outlook 資料檔 (.pst) 之前，您必須先在電腦版 Outlook 中新增要匯出 Outlook 資訊的帳戶。若要了解如何將帳戶新增到 Outlook 2013 或更新版本，請參閱[在 Windows 版 Outlook 中設定電子郵件](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)或[在 Mac 版 Outlook 2011 中設定電子郵件](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54)。
     
 2. 每個使用者都需要完成[將電子郵件、連絡人及行事曆匯出或備份為 Outlook.pst 檔案](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)中的步驟。
     
  **在 Outlook 中設定新的電子郵件帳戶**
 1. 每個使用者都必須設定其新的電子郵件帳戶隨附于 Microsoft 365 for business 訂閱。 若要這麼做，他們將需要其新電子郵件帳戶的位址。 每個使用者的電子郵件帳戶與用來登入 Microsoft 365 for business 的使用者名稱相同。 它看起來會類似 sue@contoso.onmicrosoft.com 或 david@contoso.com。
     
-2. Ask each user to add their email account to Outlook. To learn how, see [Set up email in Outlook (for Windows)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) or [Set up email in Outlook for Mac 2011](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54).
+2. 要求每個使用者在 Outlook 中新增自己的電子郵件帳戶。若要了解如何進行這項作業，請參閱[在 Windows 版 Outlook 中設定電子郵件](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)或[在 Mac 版 Outlook 2011 中設定電子郵件](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54)。
     
  **從 Outlook 資料檔匯入資訊**
 1. 這會將儲存在 PST 檔案中的電子郵件、行事曆、工作和連絡人，合併成您的商務用 Microsoft 365 電子郵件帳戶。

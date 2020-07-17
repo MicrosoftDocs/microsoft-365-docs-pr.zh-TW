@@ -74,7 +74,7 @@ Microsoft 365 企業解決方案系列提供實作 Microsoft 365 功能的指引
 
 |**項目**|**描述**|
 |:-----|:-----|
-|[![模型海報：Office 365 和其他 SaaS 應用程式的身分識別與裝置保護](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [更多語言](https://www.microsoft.com/download/details.aspx?id=55032) <br/> 更新日期：2018 年 11 月|It's important to use consistent levels of protection across your data, identities, and devices. This document shows you which capabilities are comparable with more information on capabilities to protect identities and devices.  <br/> |
+|[![模型海報：Office 365 和其他 SaaS 應用程式的身分識別與裝置保護](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [更多語言](https://www.microsoft.com/download/details.aspx?id=55032) <br/> 更新日期：2018 年 11 月|請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。這份文件會顯示哪些功能在保護身分識別和裝置上有相當功能的詳細資訊。  <br/> |
    
 <!--
 
@@ -112,7 +112,7 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
 
 ### <a name="microsoft-telephony-solutions"></a>Microsoft 電話語音解決方案
 
-Microsoft supports several options as you begin your journey to Teams in the Microsoft cloud. This poster helps you decide which Microsoft telephony solution (Phone System in the cloud or Enterprise Voice on-premises) is right for users in your organization, and how your organization can connect to the Public Switched Telephone Network (PSTN).
+當您開始加入 Microsoft 雲端中的 Teams，Microsoft 支援數個選項。此海報協助您決定哪個 Microsoft 電話語音解決方案 (雲端的電話系統或內部部署的 Enterprise Voice) 適合您組織中的使用者，以及您的組織如何連線至公用交換電話網路 (PSTN)。
 
 
 [![Microsoft 電話語音解決方案海報的縮圖](../media/solutions-architecture-center/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>

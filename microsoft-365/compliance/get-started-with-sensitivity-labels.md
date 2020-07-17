@@ -19,6 +19,7 @@ search.appverid:
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
 ms.openlocfilehash: 1b22619b200cd0cdcccfdc9be0d52b0eaa25f303
 ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/30/2020
 ms.locfileid: "44936370"

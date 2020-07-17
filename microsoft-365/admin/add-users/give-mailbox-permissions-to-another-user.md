@@ -37,11 +37,11 @@ ms.locfileid: "44780598"
     
 ## <a name="looking-to-set-up-mailbox-permissions"></a>想知道如何設定信箱權限嗎？
 
-Mailbox permissions allow you to give read/write access to a mailbox to another user. The articles below might give you the help you need to set up and use this feature:
+信箱權限能讓您將某個信箱的讀取/寫入權限授予給另一個使用者。以下文章將協助您設定及使用此功能：
   
  **設定權限：**
   
-The first step to setting up permissions is deciding which actions you want to allow the other user to take in the given mailbox. You can allow a user to read emails from the mailbox, send emails on behalf of another user, and send emails as if they were sent from that mailbox. Refer to the following articles on how to set up each type of permissions:
+設定權限的第一個步驟便是決定您要授權其他使用者可對特定信箱採取的行動。您可以允許使用者讀取信箱中的電子郵件、代理另一個使用者傳送電子郵件，以及以該信箱當作寄件地址傳送電子郵件。請參閱下列文章，了解如何設定各種權限：
   
 - [讀取另一個使用者信箱中的電子郵件](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
@@ -55,7 +55,7 @@ The first step to setting up permissions is deciding which actions you want to a
   
  **如何運用設定完成的權限：**
   
-There are a few different ways you can access a mailbox once you've been given access. For help on this, refer to this article: [Access another person's mailbox](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
+當您獲得權限後，您可以透過幾種不同的方式存取信箱。如需相關說明，請參閱下列文章：[存取另一個人的信箱](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
   
 ## <a name="send-email-from-another-users-mailbox"></a>從另一個使用者的信箱傳送電子郵件
 
@@ -200,7 +200,7 @@ There are a few different ways you can access a mailbox once you've been given a
 ## <a name="send-and-read-from-outlook-and-outlook-on-the-web-for-business"></a>從 Outlook 和商務用 Outlook 網頁版傳送及讀取郵件
 
 
-Want to know how to send email from another user's mailbox? Check out the following topics:
+想知道如何從另一個使用者的信箱傳送電子郵件嗎？請參閱下列主題：
   
 - [管理其他人的郵件和行事曆項目](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
     

@@ -179,11 +179,11 @@ S/MIME 基本上是一種用戶端加密技術，需要複雜的憑證管理與�
   
  **問：回覆和轉寄郵件皆會加密嗎？**
   
-Yes. Responses continue to be encrypted throughout the duration of the thread.
+是的。在整個執行緒期間都會對回應持續加密。
   
  **問： Office 365 郵件加密是否提供當地語系化？**
   
-Incoming email and HTML content is localized based on sender email settings. The viewing portal is localized based on recipient's browser settings. However, the actual body (content) of encrypted message isn't localized.
+內送電子郵件和 HTML 內容均依據寄件者電子郵件設定進行當地語系化。檢視入口網站會依據收件者的瀏覽器設定進行當地語系化。不過，加密郵件的實際內文 (內容) 不會進行當地語系化。
   
  **問： Office 365 郵件加密所使用的加密方法為何？**
   
@@ -191,13 +191,13 @@ Office 365 郵件加密使用 Rights Management Services （RMS）作為加密�
   
 - 如果您使用 Microsoft Azure RMS 取得機碼，則會使用加密模式2。 密碼編譯模式 2 是已更新並增強的 AD RMS 密碼編譯實作。 它支援使用 RSA 2048 進行簽章和加密，也支援使用 SHA-256 進行簽章。
 
-- If you use Active Directory (AD) RMS to obtain the keys, either Cryptographic Mode 1 or Cryptographic Mode 2 is used. The method used depends on your on-premises AD RMS deployment. Cryptographic Mode 1 is the original AD RMS cryptographic implementation. It supports RSA 1024 for signature and encryption, and supports SHA-1 for signature. This mode continues to be supported by all current versions of RMS.
+- 如果您使用 Active Directory (AD) RMS 來取得金鑰，則會使用密碼編譯模式 1 或密碼編譯模式 2。使用的方法取決於內部部署 AD RMS 部署。密碼編譯模式 1 是原始的 AD RMS 密碼編譯實作。它支援使用 RSA 1024 進行簽章和加密，也支援使用 SHA-1 進行簽章。這個模式會繼續受到 RMS 所有目前的版本支援。
 
 如需詳細資訊，請參閱[AD RMS 密碼編譯模式](https://go.microsoft.com/fwlink/p/?LinkId=398616)。
   
  **問：為何某些加密郵件**是來自 Office365@messaging.microsoft.com？
   
-When an encrypted reply is sent from the encryption portal or through the OME Viewer app, the sending email address is set to Office365@messaging.microsoft.com because the encrypted message is sent through a Microsoft endpoint. This helps to prevent encrypted messages from being marked as spam. The displayed name on the email and the address within the encryption portal aren't changed because of this labeling. Also, this labeling only applies to messages sent through the portal, not through any other email client.
+從加密入口網站或透過 OME 檢視器應用程式傳送加密的回覆時，傳送方的電子郵件地址會設為 Office365@messaging.microsoft.com，因為加密的郵件是透過 Microsoft 端點傳送。這有助於避免加密的郵件被標示為垃圾郵件。因為有此標示，加密入口網站中顯示的電子郵件名稱和地址不會變更。此外，此標示只會套用到透過入口網站傳送的郵件，而不會套用到透過任何其他電子郵件用戶端傳送的郵件。
   
  **問：我是 Exchange Hosted Encryption （EHE）訂閱者。在哪裡可以深入瞭解 Office 365 郵件加密的升級？**
   

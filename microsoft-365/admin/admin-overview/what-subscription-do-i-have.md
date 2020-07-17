@@ -53,7 +53,7 @@ ms.locfileid: "44780502"
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
+3. 如果您有多個訂閱，您會看到訂閱詳細資訊旁有一欄，列出已購買的訂閱和所有試用版訂閱。根據預設，系統會自動選取清單頂端列出的訂閱，並顯示該訂閱的詳細資訊。
 
     如果您有多個訂閱，請選擇您要查看詳細資訊的訂閱。 系統會使用該訂閱的相關資訊來更新訂閱卡。
 
@@ -72,7 +72,7 @@ ms.locfileid: "44780502"
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
-3. If you have multiple subscriptions, you'll see a column next to the detailed subscription information that lists the subscriptions that have been purchased, as well as any trial subscriptions. By default, the subscription at the top of the list is automatically selected, and the detailed information for that subscription is shown.
+3. 如果您有多個訂閱，您會看到訂閱詳細資訊旁有一欄，列出已購買的訂閱和所有試用版訂閱。根據預設，系統會自動選取清單頂端列出的訂閱，並顯示該訂閱的詳細資訊。
 
     如果您有多個訂閱，請選擇您要查看詳細資訊的訂閱。 系統會使用該訂閱的相關資訊來更新訂閱卡。
 

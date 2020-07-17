@@ -26,7 +26,7 @@ ms.locfileid: "44936814"
 # <a name="set-up-loads-to-add-imported-files-in-advanced-ediscovery-classic"></a>在 [Advanced eDiscovery （傳統）] 中設定載入匯入檔案的負載
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 在 [Advanced eDiscovery] 中，load 是新增至案例的新批次檔案。 依預設，會定義一個負載，並新增所有匯入的檔案。 在執行相關性訓練之前，必須先將匯入的檔案新增到負載中。 
   

@@ -118,7 +118,7 @@ ms.locfileid: "44739209"
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>允許所有人都看到已傳送的電子郵件 (回覆)
 
-By default, messages sent from the shared mailbox aren't saved to the Sent Items folder of the shared mailbox. Instead, they are saved to the Sent Items folder of the person who sent the message.
+根據預設，從共用信箱寄出的郵件不會儲存至共用信箱的 [寄件備份] 資料夾。不過，這些郵件會儲存到寄件者的 [寄件備份] 資料夾。
 
 如果您想要允許所有人查看已傳送的電子郵件，請在系統管理中心中編輯共用信箱設定，然後選取 [**已傳送的專案**] [ \> **編輯**]。
 

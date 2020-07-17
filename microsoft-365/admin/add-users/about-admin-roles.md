@@ -24,6 +24,7 @@ ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
 ms.openlocfilehash: e76024f1d13e9210b74e2f6c4fc63c9992615099
 ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "45015908"

@@ -40,11 +40,11 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
 
 對每個端點設定 S/MIME 時所採取的步驟會稍有不同。 通常需要執行下列步驟：
 
-1. Install a Windows-based Certification Authority and set up a public key infrastructure to issue S/MIME certificates. Certificates issued by third-party certificate providers are also supported. For details, see [Active Directory Certificate Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11)).
+1. 安裝以 Windows 為基礎的憑證授權單位，並且設定公開金鑰基礎結構，來核發 S/MIME 憑證。也支援協力廠商憑證提供者所發出的憑證。如需詳細資訊，請參閱 [Active Directory 憑證服務概觀](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
 
 2. 在內部部署 AD DS 帳戶的 **UserSMIMECertificate** 和/或 **UserCertificate** 屬性中發佈使用者憑證。
 
-3. For Exchange Online organizations, synchronize the user certificates from AD DS to Azure Active Directory by using an appropriate version of Azure AD Connect. These certificates will then get synchronized from Azure Active Directory to Exchange Online directory and will be used when encrypting a message to a recipient.
+3. 針對 Exchange Online 組織，使用適當版本的 Azure AD Connect，將使用者憑證從 AD DS 同步處理至 Azure Active Directory。然後，這些憑證會從 Azure Active Directory 同步至 Exchange Online 目錄，並會在將郵件加密給收件者時使用。
 
 4. 設定虛擬憑證集合以驗證 S/MIME。 Outlook 網頁版會使用此資訊來驗證電子郵件的簽章，以確保電子郵件是以信任的憑證所簽署。
 

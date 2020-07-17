@@ -21,6 +21,7 @@ ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加強貴組織對密碼攻擊的防護，以及為何應禁用常見密碼並啟用以風險為根據的多重要素驗證。
 ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
 ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/01/2020
 ms.locfileid: "45015920"

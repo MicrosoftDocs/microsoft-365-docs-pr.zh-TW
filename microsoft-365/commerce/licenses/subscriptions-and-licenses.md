@@ -62,7 +62,7 @@ ms.locfileid: "45015956"
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>了解非使用者信箱的授權
 
-You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
+您不需要指派授權給資源信箱、會議室信箱及共用信箱，除非這些信箱超過其 50 GB 的儲存配額。如需非使用者信箱的詳細資訊，請參閱下列文章：
   
 - [建立共用信箱](../../admin/email/create-a-shared-mailbox.md)
 - [從共用信箱中移除授權](../../admin/email/remove-license-from-shared-mailbox.md)
@@ -72,7 +72,7 @@ You don't need to assign licenses to resource mailboxes, room mailboxes, and sha
 
 ## <a name="who-can-assign-licenses"></a>誰可以指派授權？
 
-Different types of admins can work with licenses in different ways, depending on their roles. The following table lists the most common options. For a complete list of admin roles and privileges, see [About admin roles](../../admin/add-users/about-admin-roles.md).
+不同類型的系統管理員根據其角色可以有不同的授權處理方式。下表列出最常用的選項。如需系統管理員角色和權限的完整清單，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
   
 |**系統管理員角色**|**指派授權**|**取消指派授權**|**購買更多授權**|**刪除帳戶**|
 |:-----|:-----|:-----|:-----|:-----|

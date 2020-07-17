@@ -43,7 +43,7 @@ Microsoft 會使用封鎖寄件者清單，來保護其客戶避免垃圾郵件�
 
 1. 在 Web 瀏覽器中，移至 [https://sender.office.com](https://sender.office.com)。
 
-2. Follow the instructions on the page. Ensure that you use the email address to which the error message was sent, and the IP address that is specified in the error message. You can only enter one email address and one IP address per visit.
+2. 遵循頁面中的指示。請確定您使用被傳送錯誤訊息的電子郵件地址，以及在錯誤訊息中指定的 IP 位址。您每次造訪只能輸入一個電子郵件地址及一個 IP 位址。
 
 3. 按一下 **[送出]**。
 

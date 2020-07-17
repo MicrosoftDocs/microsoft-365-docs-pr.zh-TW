@@ -27,7 +27,7 @@ ms.locfileid: "44817652"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Intune 資料主體要求
 
-The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as *data subjects*) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the *data controller* or just *controller*). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called a *Data Subject Request* or DSR.
+歐盟[資料保護規範 (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) 賦予人員 (在規範中稱為*資料主體*) 權限，以管理由雇主或其他類型的公司或組織 (稱為*資料控制者*或簡稱*控制者*) 收集而來的個人資料。個人資料在 GDPR 中的定義非常廣泛，係指與已識別或可識別的自然人相關的任何資料。GDPR 賦予資料主體對其個人資料的特定權限，這些權限包括取得個人資料副本、要求更正資料、限制資料的處理、刪除資料或以電子格式接收資料，以便轉交給其他控制者。由資料主體向控制者提出對其個人資料採取某項動作的正式要求，稱為*資料主體要求*或 DSR。
 
 同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。  CCPA 也提供特定揭露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](offering-ccpa.md)和[常見問題集](ccpa-faq.md)。
 
@@ -61,29 +61,29 @@ The European Union [General Data Protection Regulation (GDPR)](https://ec.europa
 
 ### <a name="understanding-dsrs-for-azure-active-directory-and-microsoft-intune"></a>了解 Azure Active Directory 和 Microsoft Intune 的 DSR
 
-When considering services provided to enterprise customers, execution of DSRs must always be understood within the context of a specific Azure Active Directory (AAD) tenant. Notably, DSRs are always executed within a given AAD tenant. If a user is participating in multiple tenants, it is important to emphasize that a given DSR is *only* executed within the context of the specific tenant the request was received within. This is critical to understand as it means the execution of a DSR by one enterprise customer **will not** impact the data of an adjacent enterprise customer.
+在考慮為企業客戶所提供的服務時，請務必了解要在指定的 Azure Active Directory (AAD) 範圍內執行 DSR。值得注意的是，DSR 一律會在指定的 AAD 租用戶中執行。如果使用者參與了多個租用戶，請務必強調特定的 DSR「只能」** 在接收到要求的指定租用戶範圍內執行。請務必了解這點，因為這代表由某個企業客戶所執行的 DSR **不會**影響相鄰企業客戶的資料。
 
-The same also applies for Microsoft Intune provided to an enterprise customer: execution of a DSR against an Intune account *associated with an AAD tenant* **will only** pertain to data within the tenant. In addition, it is important to understand the following when handling Intune accounts within a tenant:
+這點同樣也適用於提供給企業客戶的 Microsoft Intune：對「與 AAD 租用戶相關聯的」** Intune 帳戶所執行的 DSR，**只會**針對租用戶中的資料。此外，在處理租用戶中的 Intune 帳戶時，請務必了解下列事項：
 
-- If an Intune user creates an Azure subscription, the subscription will be handled as if it were an AAD tenant. Consequently, DSRs are scoped within the tenant as described above.
-- If an Azure subscription created via an Intune account is deleted, **it will not affect** the actual Intune account. Again, as noted above, DSRs executing within the Azure subscription are limited to the scope of the tenant itself.
+- 若 Intune 使用者建立了 Azure 訂用帳戶，我們會將該訂用帳戶視為 AAD 租用戶來處理。因此，DSR 的範圍會限制在租用戶內，如上所述。
+- 若您刪除了透過 Intune 帳戶所建立的 Azure 訂用帳戶，**將不會影響到**實際的 Intune 帳戶。同樣地，如上所述，在 Azure 訂用帳戶中所執行的 DSR，會限制在租用戶本身的範圍內。
 
-DSRs against an Intune account itself, **outside a given tenant**, are executed via the Consumer Privacy Dashboard. Please refer to the Windows Data Subject Request Guide for further details.
+**在指定的租用戶外**，對 Intune 帳戶本身所執行的 DSR，會透過消費者隱私權儀表板來執行。請參閱《Windows 資料主體要求指南》以取得詳細資訊。
 
 ## <a name="part-1-dsr-guide-for-customer-data"></a>第 1 部分：客戶資料的 DSR 指南
 
 ### <a name="executing-dsrs-against-customer-data"></a>針對客戶資料執行 DSR
 
-Microsoft provides the ability to access, delete, and export certain Customer Data through the Azure Portal and also directly via pre-existing application programming interfaces (APIs) or user interfaces (UIs) for specific services (also referred to as *in-product experiences*). Details regarding such in-product experiences are described in the respective services' reference documentation.
+Microsoft 透過 Azure 入口網站，提供了存取、刪除及匯出特定客戶資料的功能；您也可直接透過既有的應用程式開發介面 (APIs) 或特定服務的使用者介面 (UIs) 來執行上述功能 (也稱為 * 產品內體驗 *)。在上述服務各自的參考文件中有詳細資料，說明這類的產品內體驗。
 
 >[!IMPORTANT]  
->Services supporting in-product DSRs require direct usage of the service's application programming interface (API) or user interface (UI), describing applicable CRUD (create, read, update, delete) operations. Consequently, execution of DSRs within a given service must be done in addition to execution of a DSR within the Azure Portal in order to complete a full request for a given data subject. Please refer to specific services' reference documentation for further details.
+>支援產品內 DSRs 的服務，需要直接使用服務的應用程式開發介面 (API) 或使用者介面 (UI)，來描述適用的 CRUD (建立、讀取、更新、刪除) 作業。因此，除了在 Azure 入口網站中執行 DSR 以外，還必須另外在指定的服務中執行 DSRs，才能完成指定資料主體的完整要求。請參閱特定服務的參考文件，以取得詳細資訊。
 
 ### <a name="step-1-discover"></a>步驟 1：探索
 
-The first step in responding to a DSR is to find the personal data that is the subject of the request. This first step - finding and reviewing the personal data at issue - will help you determine whether a DSR meets your organization's requirements for honoring or declining a DSR. For example, after finding and reviewing the personal data at issue, you may determine the request doesn't meet your organization's requirements because doing so may adversely affect the rights and freedoms of others.
+回應 DSR 的第一個步驟是先找出個人資料，也就是要求的主體。第一個步驟，尋找並檢閱上述的個人資料，可協助您判斷 DSR 是否符合貴組織的需求，以便接受或拒絕 DSR。例如，在找出並檢閱有問題的個人資料後，您可能因為這樣做會對其他人的權利和自由造成負面影響，而判斷要求不符合貴組織的需求。
 
-After you find the data, you can then perform the specific action to satisfy the request by the data subject. For details, see the following:
+找到資料後，接著您可以執行特定動作來滿足資料主體的要求。如需詳細資訊，請參閱下列內容：
 
 - [資料收集](https://docs.microsoft.com/intune/privacy-data-collect)
 - [資料儲存和處理](https://docs.microsoft.com/intune/privacy-data-store-process)
@@ -91,7 +91,7 @@ After you find the data, you can then perform the specific action to satisfy the
 
 ### <a name="step-2-access"></a>步驟 2：存取
 
-After you've found Customer Data containing personal data that is potentially responsive to a DSR, it is up to you and your organization to decide which data to provide to the data subject. You can provide them with a copy of the actual document, an appropriately redacted version, or a screenshot of the portions you have deemed appropriate to share. For each of these responses to an access request, you will have to retrieve a copy of the document or other item that contains the responsive data.
+找到包含個人資料且可能會回應 DSR 的客戶資料之後，您與貴組織有權決定要將哪些資料提供給資料主體。您可以提供他們實際文件的副本、經過適當刪減的版本，或您認為適合分享的部分的螢幕擷取畫面。對於這些存取要求的每項回應，您都必須擷取一份文件副本，或其他包含回應資料的項目。
 
 當您提供複本給資料主體時，可能需要移除或刪減關於其他資料主體的個人資訊，以及任何機密資訊。
 
@@ -107,9 +107,9 @@ Microsoft Intune 能夠透過使用者介面 (UI) 或既有的應用程式開發
 
 ### <a name="step-3-rectify"></a>步驟 3：修正
 
-If a data subject has asked you to rectify the personal data that resides in your organization's data, you and your organization will have to determine whether it's appropriate to honor the request. Rectifying the data may include taking actions such as editing, redacting, or removing personal data from a document or other type or item.
+若資料主體要求您修正貴組織資料中常駐的個人資料，您和貴組織需要判斷是否適合接受要求。修正資料可能包含採取下列動作，例如：從文件或其他類型的項目中，編輯、刪減或移除個人資料。
 
-As a data processor, Microsoft does not offer the ability to correct system-generated logs as it reflects factual activities and constitutes a historical record of events within Microsoft services. With respect to Intune, admins can't update device or app specific information. If an end user wants to correct any personal data (like the device name), they must do so directly on their device. Such changes are synchronized the next time they connect to Intune.
+作為資料處理器，Microsoft 不提供對系統所產生記錄檔的更正功能；因為這個功能可反映出實際的活動，並構成 Microsoft 服務中所發生事件的歷史記錄。至於 Intune，系統管理員無法更新裝置或應用程式特定的資訊。若使用者需要修正任何個人資料 (如裝置名稱)，則必須直接在其裝置上進行修正。下次當使用者連線至 Intune 時，系統即會同步這些變更。
 
 ### <a name="step-4-restrict"></a>步驟 4：限制
 
@@ -117,11 +117,11 @@ As a data processor, Microsoft does not offer the ability to correct system-gene
 
 ### <a name="step-5-delete"></a>步驟 5：刪除
 
-The "right to erasure" by the removal of personal data from an organization's Customer Data is a key protection in the GDPR. Removing personal data includes removing all personal data and system-generated logs, except audit log information. For details, see [Delete end user personal data](https://docs.microsoft.com/intune/privacy-data-audit-export-delete#delete-end-user-personal-data).
+從組織的客戶資料中移除其個人資料的「抹除的權利」，是 GDPR 中的關鍵保護機制。這是指移除個人資料，包括移除稽核記錄資訊以外的所有個人資料和系統所產生的記錄。如需詳細資訊，請參閱[刪除使用者個人資料](https://docs.microsoft.com/intune/privacy-data-audit-export-delete#delete-end-user-personal-data)。
 
 ## <a name="part-2-system-generated-logs"></a>第 2 部分：系統所產生的記錄檔
 
-Audit logs provide tenant admins with a record of activities that generate a change in Microsoft Intune. Audit logs are available for many manage activities and typically create, update (edit), delete, and assign actions. Remote tasks that generate audit events can also be reviewed. These audit logs may contain personal data from users whose devices are enrolled in Intune. Admins can't delete audit logs. For details, see [Audit personal data](https://docs.microsoft.com/intune/privacy-data-audit-export-delete#audit-personal-data).
+稽核記錄會向租用戶系統管理員提供活動記錄，其會在 Microsoft Intune 中產生變更。稽核記錄可供許多管理活動使用，且通常會建立、更新 (編輯)、刪除及指派動作。還可以檢閱產生稽核事件的遠端工作。這些稽核記錄可能包含使用者個人資料，而這些使用者的裝置已在 Intune 中加以註冊。系統管理員無法刪除稽核記錄。如需詳細資訊，請參閱[稽核個人資料](https://docs.microsoft.com/intune/privacy-data-audit-export-delete#audit-personal-data)。
 
 ## <a name="notify-about-exporting-or-deleting-issues"></a>匯出或刪除問題的通知
 

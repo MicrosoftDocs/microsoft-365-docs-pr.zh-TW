@@ -26,7 +26,7 @@ ms.locfileid: "44936410"
 # <a name="export-case-data-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中匯出案例資料
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 在 [高級 eDiscovery] 中的匯出程式可讓您匯出「高級 eDiscovery」內容和外部評論結果。 
   

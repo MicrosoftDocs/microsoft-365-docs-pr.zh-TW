@@ -17,6 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.openlocfilehash: bfadeae0f4f0b01197f58f0610d1040da3080922
 ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/02/2020
 ms.locfileid: "45023607"
@@ -33,9 +34,9 @@ Windows 的 Microsoft 資料處理程式服務中內置了安全性，從 [安�
 |**Stage**|**描述**|
 | ------- | ------------- |
 | ***1 — 偵測*** | 潛在事件的第一個徵兆。 |
-| ***2 — 評估*** | An on-call incident response team member assesses the impact and severity of the event. Based on evidence, the assessment may or may not result in further escalation to the security response team. |
+| ***2 — 評估*** | 待命事件回應小組成員會評估事件的影響和嚴重性。取決於證據，可能會也可能不會進一步向安全性回應小組呈報評估。 |
 | ***3 — 診斷*** | 安全性回應專家進行技術或鑑定調查、找出內含項目、風險降低及因應措施策略。 若安全性小組相信客戶資料可能遭受非法或未經授權的人員存取，將會同步進行客戶事件通知程序。 |
-| ***4 — 穩定及復原*** | The incident response team creates a recovery plan to mitigate the issue. Crisis containment steps such as quarantining impacted systems may occur immediately and in parallel with diagnosis. Longer term mitigations may be planned which occur after the immediate risk has passed. |
+| ***4 — 穩定及復原*** | 事件回應小組會建立復原計劃，以降低問題的風險。危機抑制步驟 (例如隔離受影響的系統) 可能會立即與診斷同步進行。長期風險降低預計要等到眼前的風險過後才會進行規劃。 |
 | ***5 — 結案與檢討*** | 事件回應小組會建立概述事件詳細資訊的檢討，目的是修改原則、步驟和流程，以避免該事件再次發生。 |
 
 Microsoft 的 Windows 資料處理程式服務使用的偵測程序旨在探索會讓 Windows 資料處理程式服務的機密性、完整性和可用性遭受風險的事件。有數種事件可能會觸發調查。 有幾個事件可以觸發調查： 
@@ -65,11 +66,11 @@ Microsoft 的 Windows 資料處理程式服務使用的偵測程序旨在探索�
  - **須向客戶報告的安全性事件 (CRSI)**: 有人非法或未經授權存取或使用 Microsoft 系統、設備或設施，導致客戶資料洩漏、修改或遺失。 
  - **隱私權外洩：** 涉及個人資料安全性事件的子類型。 處理流程與安全性事件並無不同。 
 
- For a CRSI to be declared, Microsoft must determine that unauthorized access to customer data has or has very likely occurred and/or that there is a legal or contractual commitment that notification must occur. It is desired, but not required, that specific customer impact, resource access, and repair steps be known. An incident is generally declared a CRSI after the conclusion of the Diagnose stage of a security incident; however, the declaration may happen at any point that all pertinent information is available. The security incident manager must establish evidence beyond reasonable doubt that a reportable event has occurred to begin execution of the Customer Incident Notification Process. 
+ 若要宣告 CRSI，Microsoft 必須先判斷客戶資料已遭到或很有可能已遭到未經授權的存取，且 (或) 有必須通知客戶的法律或合約承諾。雖然並非必要，但您最好了解對特定客戶的影響、資源存取與修復步驟。通常要等到安全性事件的診斷階段結束後，才會宣告事件屬於 CRSI。不過，在所有直接相關的資訊都可供使用時，也可能會隨時宣告。安全性事件管理員必須找出確鑿的證據，足以支持的確發生了須向客戶報告的事件，以開始執行客戶事件通知程序。 
 
-Throughout the investigation, the security response team works closely with global legal advisors to help ensure that forensics are performed in accordance with legal obligations and commitments to customers. There are also significant restrictions on system and customer data viewing and handling in various operating environments. Sensitive or confidential data, as well as Customer Data, are not transferred out of the production environment without explicit written approval from the Incident Manager recorded in the corresponding incident ticket. 
+在整個調查過程中，安全性回應小組都會與全球的法律顧問密切合作，以協助確保根據法律義務與對客戶的承諾而執行鑑識。其中對於在各種作業環境下檢視及處理系統和客戶資料也有重要的限制。未得到對應的事件票證中所記錄之事件管理員的明確書面核准前，不得將敏感性或機密資料以及客戶資料傳輸出去。 
 
-Microsoft verifies that customer and business risk is successfully contained, and that corrective measures are implemented. If necessary, emergency mitigation steps to resolve immediate security risks associated with the event are taken. 
+Microsoft 會確認是否已成功遏制客戶和商業風險，並實施了矯正措施。如有需要，會進行緊急風險降低步驟，以解決與事件關聯的迫切安全性風險。 
 
 Microsoft 也會完成資料外洩的內部檢討。 在本練習當中，我們將評估回應效率和作業程序，找出安全性事件回應標準作業程序 (SOP) 或相關的程序所需的任何更新，然後執行。 資料外洩的內部檢討是不提供給客戶的高度機密記錄。 但是，檢討的摘要可包含在其他客戶活動的通知中。 這類報表會提供外部檢閱，屬於 Windows 資料處理程式服務例行稽核循環的一部分。 
 
@@ -79,7 +80,7 @@ Microsoft 的 Windows 資料處理程式服務視需要通知客戶和監管單�
 
 聲明 CRSI 之後，通知流程將會盡快進行，但同時仍考慮快速行動的安全性風險。 通常，在事件調查進行中時，便會同時展開設計通知的流程。 客戶通知會在我們宣告外洩的 72 小時內傳遞，除了下列情況： 
 
- - Microsoft believes the act of performing a notification will increase the risk to other customers. For example, the act of notifying may tip off an adversary causing an inability to remediate. 
+ - Microsoft 相信執行通知的動作會增加其他客戶的風險。比方說，通知的動作可能會驚動攻擊者，因而無法補救。 
  - 經 Microsoft 法務部門企業外部和法律事務 (CELA) 和事件執行經理審查過的其他不尋常或特殊情況。 
 
  Microsoft 的 Windows 資料處理程式服務可提供客戶詳細資訊，讓他們能執行內部調查，並協助他們符合對使用者的承諾，而不會過度延遲通知程序。 

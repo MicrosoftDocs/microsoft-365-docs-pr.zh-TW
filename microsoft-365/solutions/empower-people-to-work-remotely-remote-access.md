@@ -19,6 +19,7 @@ ms.custom: ''
 description: 請確保您的遠端工作者能夠存取內部部署資源，同時將 Microsoft 365 雲端服務的存取最佳化。
 ms.openlocfilehash: 199dc6aa33134cfa0f9ac311d037a934c12ba3b9
 ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "44844975"

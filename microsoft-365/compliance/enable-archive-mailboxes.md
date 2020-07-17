@@ -46,7 +46,7 @@ Office 365 中的封存 (稱為就地封存) 可為使用者提供額外的信�
     
 3. 在「安全性與合規性中心」的左窗格中，按一下 **[資料控管]** \> **[封存]**。
     
-    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
+    [封存]**** 頁面隨即出現。[封存信箱] **** 欄會指出每個使用者的封存信箱是啟用還是停用。 
     
 4. 在信箱清單中，選取要為其啟用封存信箱的使用者。
     
@@ -61,7 +61,7 @@ Office 365 中的封存 (稱為就地封存) 可為使用者提供額外的信�
     可能需要一些時間才能建立封存信箱。 建立封存信箱後，您可在選取使用者的詳細資料窗格中看到 [封存信箱：已啟用]****。 您可能需要按一下 [重新整理]**** ![重新整理圖示](../media/O365-MDM-Policy-RefreshIcon.gif)，以便更新詳細資料窗格中的資訊。 
     
 > [!TIP]
-> You can also bulk-enable archive mailboxes by selecting multiple users with disabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Enable** in the details pane. 
+> 您也可以選取多個信箱 (使用 Shift 或 Ctrl 鍵) 來大量啟用封存。選取多個信箱後，按一下詳細資料窗格中的 [啟用]。 
   
 ## <a name="disable-an-archive-mailbox"></a>停用封存信箱
   
@@ -77,7 +77,7 @@ Office 365 中的封存 (稱為就地封存) 可為使用者提供額外的信�
     
 3. 在「安全性與合規性中心」的左窗格中，按一下 **[資料控管]** \> **[封存]**。
     
-    The **Archive** page is displayed. The **Archive mailbox** column indicates whether an archive mailbox is enabled or disabled for each user. 
+    [封存]**** 頁面隨即出現。[封存信箱] **** 欄會指出每個使用者的封存信箱是啟用還是停用。 
     
 4. 在信箱清單中，選取要為其停用封存信箱的使用者。
     
@@ -90,7 +90,7 @@ Office 365 中的封存 (稱為就地封存) 可為使用者提供額外的信�
     可能需要一些時間才能停用封存信箱。 停用封存信箱後，您可在選取使用者的詳細資料窗格中看到 [封存信箱：已停用]****。 您可能需要按一下 [重新整理]**** ![重新整理圖示](../media/O365-MDM-Policy-RefreshIcon.gif)，以便更新詳細資料窗格中的資訊。 
     
 > [!TIP]
-> You can also bulk-disable archive mailboxes by selecting multiple users with enabled archive mailboxes (use the Shift or Ctrl keys). After selecting multiple mailboxes, click **Disable** in the details pane. 
+> 您也可以選取多個已啟用封存信箱的使用者 (使用 Shift 或 Ctrl 鍵) 來大量停用封存信箱。選取多個信箱後，按一下詳細資料窗格中的 [停用]****。 
   
 ## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>使用 Exchange Online PowerShell 來啟用或停用封存信箱
 

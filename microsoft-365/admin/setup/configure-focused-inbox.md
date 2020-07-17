@@ -31,7 +31,7 @@ ms.locfileid: "44779926"
 
   如果您負責為企業中的每個人設定電子郵件的運作方式，本文就是為您準備的！ 本文說明如何為您的企業自訂或關閉焦點收件匣，以及回答[常見問題集](#faq-for-focused-inbox)。  <br/> 如果您只想要關閉自己的焦點收件匣，請參閱[關閉焦點收件匣](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2)。  
    
-If you want to be sure that your users receive business-specific email messages, for example, from HR or payroll, you can configure Focused Inbox so these messages reach the Focused view. You can also control whether users in your organization see the Focused Inbox in their mailbox.
+如果您想要確認您的使用者接收特定商務電子郵件訊息 (例如 HR 或薪資資料)，您可以設定焦點收件匣，讓這些訊息可送往 [焦點] 檢視。您也可以控制您組織中的使用者是否會在信箱中看到焦點收件匣。
   
 ## <a name="turn-focused-inbox-on-or-off-in-your-organization"></a>開啟或關閉組織中的焦點收件匣
 
@@ -43,7 +43,7 @@ If you want to be sure that your users receive business-specific email messages,
   
 1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
     
-2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. 您需要先獲指派權限，才能執行此程序或各個程序。若要查看您需要哪些權限，請參閱[訊息原則與合規性權限](https://go.microsoft.com/fwlink/p/?LinkId=829796) 中的「傳輸規則」項目。
     
 3. 執行 **Get-OrganizationConfig** Cmdlet。 
     
@@ -73,15 +73,15 @@ Get-OrganizationConfig
 
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>開啟焦點收件匣之後，使用者會看見什麼？
 
-Your users will see the Focused view only after they close and restart Outlook. When they restart Outlook, they'll see a Tip in the Outlook user interface giving them to the option to use the new Focused Inbox.
+當使用者關閉並重新啟動 Outlook 之後，只會看到 [焦點] 檢視。當他們重新啟動 Outlook 後，就會在 Outlook 使用者介面看見一則提示，提供他們使用新焦點收件匣的選項。
   
 ![使用者第一次開啟 Outlook 網頁版時的焦點收件匣外觀影像。](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
-If you're switching from Clutter to Focused Inbox, they can decide to enable it ("Try it") or dismiss the feature. If the user has multiple (supported) clients, they can enable/disable Focused Inbox individually on each one. The tip looks like this:
+如果您從 [待過濾郵件] 切換至 [焦點收件匣]，他們能決定要啟用 ([試用]) 或是關閉該功能。如果使用者有多個 (受支援的) 用戶端，他們能個別啟用/停用其 [焦點收件匣]。提示看起來像這樣：
   
 ![向使用者推出焦點收件匣以及重新開啟 Outlook 時，焦點收件匣外觀的影像。](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
-When a user decides to start using Focused Inbox, Clutter gets disabled automatically. The Clutter folder gets converted into a standard folder, that allows the user to rename or delete it.
+當使用者決定要開始使用 [焦點收件匣] 時，[待過濾郵件] 便會自動停用。該 [待過濾郵件] 資料夾會轉換成一般的資料夾，讓使用者能重新命名或刪除。
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>針對特定的使用者開啟或關閉焦點收件匣
 
@@ -89,7 +89,7 @@ When a user decides to start using Focused Inbox, Clutter gets disabled automati
   
 1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
     
-2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in the Messaging policy and compliance permissions topic.
+2. 需要先指派權限，您才能執行此程序或各個程序。若要查看您需要哪些權限，請參閱訊息原則與合規性權限主題中的「傳輸規則」項目。
     
 3. 執行 **Get-FocusedInbox** cmdlet，例如： 
     
@@ -129,7 +129,7 @@ When a user decides to start using Focused Inbox, Clutter gets disabled automati
 
 1. [使用遠端 PowerShell 連線到 Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
     
-2. You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Transport rules" entry in [Messaging policy and compliance permissions](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. 您需要先獲指派權限，才能執行此程序或各個程序。若要查看您需要哪些權限，請參閱[訊息原則與合規性權限](https://go.microsoft.com/fwlink/p/?LinkId=829796) 中的「傳輸規則」項目。
 
 3. 例如，執行下列命令，讓來自「薪資部門」的所有郵件傳送到焦點收件匣。
     
@@ -147,7 +147,7 @@ When a user decides to start using Focused Inbox, Clutter gets disabled automati
  
 ## <a name="turn-onoff-clutter"></a>開啟/關閉 [待過濾郵件]
  
-We've received reports that Clutter suddenly stopped working for some users. If this happens, you can enable it again for specific users. See [Configure Clutter for your organization](../email/configure-clutter.md).
+我們收到的報告指出，部分使用者的 [待過濾郵件] 會突然停止運作。如果發生這種情況，您可以為特定的使用者重新啟用。請參閱[為貴組織設定待過濾郵件](../email/configure-clutter.md)。
  
 ## <a name="faq-for-focused-inbox"></a>焦點收件匣常見問題集
 
@@ -155,7 +155,7 @@ We've received reports that Clutter suddenly stopped working for some users. If 
 
 ### <a name="can-i-control-how-i-roll-out-focused-inbox-in-my-organization"></a>我是否可以控制在我的組織中推出焦點收件匣的方式？
 
-Yes. You can turn Focused Inbox on or off for your entire organization, or you can turn it on or off for specified users. See above.
+是。您可以針對整個組織開啟或關閉焦點收件匣，也可以針對指定的使用者開啟或關閉該功能。請參閱上述內容。
   
 ### <a name="is-the-focused-inbox-feature-only-available-for-office-2016-clients"></a>焦點收件匣功能「僅適用於」Office 2016 用戶端嗎？
 
@@ -167,17 +167,17 @@ Yes. You can turn Focused Inbox on or off for your entire organization, or you c
   
 ### <a name="what-happens-to-clutter-once-i-turn-on-focused-inbox"></a>當我開啟焦點收件匣之後，待過濾郵件會發生什麼情況？
 
-After switching, you'll no longer receive less actionable email in the Clutter folder. Instead, email will be split between the Focused and Other tabs in your inbox. The same algorithm that moved items to the Clutter folder now powers Focused Inbox, meaning that any emails that were set to move to Clutter will now be moved to Other. Any messages already in your Clutter folder will remain there until you decide to delete or move them.
+切換之後，您的 [待過濾郵件] 資料夾就不會再收到可執行的電子郵件。電子郵件將改為分類至收件匣的 [焦點] 及 [其他] 索引標籤中。用來將郵件移至 [待過濾郵件] 資料夾的相同演算法現在改用來實現焦點收件匣功能，也就是說以前設定為移至 [待過濾郵件] 的任何電子郵件，現在都會移至 [其他]。已經在 [待過濾郵件] 資料夾中的任何郵件仍會留在該資料夾中，直到您決定刪除或移動它們為止。
   
 請參閱 Microsoft 最有價值專家 [Tony Redmond](https://www.petri.com/author/tony-redmond) 的這篇文章： [焦點收件匣如何取代 Office 365 內部的待過濾郵件](https://www.petri.com/focused-inbox-office-365) (英文)。
   
 ### <a name="can-i-keep-users-on-clutter-what-is-microsofts-recommendation-when-it-comes-to-using-clutter-vs-focused-inbox"></a>可讓使用者各自使用待過濾郵件嗎？ Microsoft 對使用待過濾郵件與焦點收件匣的建議是什麼？
 
-Yes, you can keep users on Clutter and disable Focused Inbox, however, eventually Clutter will be fully replaced with Focused Inbox so Microsoft's recommends moving to Focused Inbox now. To learn more about when you use Clutter with Exchange Online, see this blog post: [Update on Focused Inbox and our plans for Clutter](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448).
+是，您可以讓使用者使用待過濾郵件功能，並停用焦點收件匣，但最終焦點收件匣會完全取代待過濾郵件，因此，Microsoft 建議您立即移動至焦點收件匣。若要深入了解搭配 Exchange Online 使用待過濾郵件的時機，請參閱此部落格文章：[焦點收件匣和待過濾郵件計劃的更新](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)。
   
 ### <a name="should-i-disable-clutter-for-my-end-users-if-we-are-going-to-move-everyone-to-focused-inbox"></a>如果我們要將每個人都移動到焦點收件匣，我是否應該為我的使用者停用待過濾郵件？
 
-No. It's possible to disable Clutter for a mailbox explicitly by running the Set-Clutter cmdlet. However, if you do this, the mailbox owner will see messages that were previously redirected to the Clutter folder remain in the Inbox and they'll have to process those messages until their client is upgraded to a version that supports the Focused Inbox. It's therefore best not to disable Clutter until the upgraded clients are available.
+否。可以透過執行 Set-Clutter Cmdlet 針對信箱明確停用待過濾郵件。但是，如果您這麼做，信箱擁有者會看到先前已重新導向到 [待過濾郵件] 資料夾的郵件保留在收件匣中，且他們必須處理這些郵件，直到他們的用戶端升級為支援焦點收件匣的版本。因此，在可以使用升級的用戶端之前，不建議停用待過濾郵件。
   
 ### <a name="why-are-there-two-different-cmdlets-for-managing-focused-inbox"></a>為什麼有兩個不同的 Cmdlet 可用來管理焦點收件匣？
 
@@ -189,12 +189,12 @@ No. It's possible to disable Clutter for a mailbox explicitly by running the Set
     
 ### <a name="how-does-outlook-decide-to-show-the-focused-inbox-experience-with-these-two-states"></a>Outlook 如何決定透過這兩種狀態顯示焦點收件匣體驗？
 
-Outlook decides to show the experience by choosing which cmdlet has the latest time stamp. By default, both time stamps are "null" and in this case, the feature is enabled.
+Outlook 會透過選擇具有最新時間戳記的 Cmdlet 來顯示體驗。根據預設，這兩個時間戳記都是 "null"，在此情況下會啟用此功能。
   
 ### <a name="why-does-the-get-focusedinbox-cmdlet-return-true-when-ive-turned-focused-inbox-off-in-my-organization"></a>當我在組織中將焦點收件匣關閉時，為什麼 Get-FocusedInbox Cmdlet 會傳回 “true”？
 
-There are two cmdlets for controlling Focused Inbox. When you run Get-FocusedInbox for a mailbox, it returns the mailbox level state of the feature. The experience in Outlook is chosen based on which cmdlet state was last modified.
+有兩個用於控制焦點收件匣的 Cmdlet。當您針對信箱執行 Get-FocusedInbox 時，它會傳回功能的信箱層級狀態。Outlook 中的體驗是根據前次修改的 Cmdlet 狀態來選擇的。
   
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>是否可以執行指令碼以查看誰開啟焦點收件匣？
 
-No, and this is by design. Focused Inbox enablement is a client side setting, so all the cmdlet can do is tell you if the user's mailbox is eligible for the client experience. It is possible for it to be simultaneously enabled in some clients and disabled in others, for example, enabled in Outlook app and Outlook Mobile but disabled in Outlook on the web.
+否，這是預設的設計。焦點收件匣啟用為用戶端設定，因此 Cmdlet 只能告訴您使用者的信箱是否符合用戶端體驗的資格。有可能發生某些用戶端啟用焦點收件匣，但某些用戶端停用這項功能的情況，比方說，在 Outlook App 啟用焦點收件匣，但在 Outlook 網頁版停用此功能。

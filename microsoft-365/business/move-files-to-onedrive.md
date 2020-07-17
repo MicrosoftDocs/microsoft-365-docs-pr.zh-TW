@@ -50,7 +50,7 @@ ms.locfileid: "44785905"
     
 3. 在功能表列中選擇 [**上傳**上傳 ![ ](../media/d9b963b8-10af-42e2-953d-360301b83d3c.png) ]，然後流覽至您要儲存的檔案。 
     
-To transfer the user profile and important files, you can also use a third-party tool, such as ForensiT. You should upload the resulting files in OneDrive for Business also.
+若要傳輸使用者個人資料和重要檔案，您也可以使用協力廠商工具，例如 ForensiT。此外，您也必須將產生的檔案上傳至商務用 OneDrive。
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-for-business"></a>如需設定及使用 Microsoft 365 for business
 

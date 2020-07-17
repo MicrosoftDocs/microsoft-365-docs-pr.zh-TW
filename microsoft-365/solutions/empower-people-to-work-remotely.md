@@ -19,6 +19,7 @@ ms.custom: ''
 description: 設定安全性和服務基礎結構，讓您的工作人員隨時隨地都能遠端工作。
 ms.openlocfilehash: d4dded6c08e665a2756c45659f179e8252fcacc1
 ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "44844867"

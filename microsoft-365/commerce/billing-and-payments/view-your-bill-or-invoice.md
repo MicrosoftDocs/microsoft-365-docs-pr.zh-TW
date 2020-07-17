@@ -37,7 +37,7 @@ ms.locfileid: "44816994"
 ---
 # <a name="view-your-bill-or-invoice"></a>檢視帳單
 
-This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
+本文適用於擁有商務用 Microsoft 365 訂閱的使用者。您必須是全域系統管理員或計費系統管理員，才能執行本文所述的步驟。
   
 如果您需要協助來解讀帳單上顯示的費用，請參閱[了解帳單或發票](understand-your-invoice2.md) (部分機器翻譯) 以取得詳細的逐步解說。
   

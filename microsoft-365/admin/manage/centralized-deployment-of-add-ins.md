@@ -93,7 +93,7 @@ ms.locfileid: "45102869"
 
 Microsoft Exchange 會將增益集資訊清單儲存在貴組織的租用戶中。 部署增益集的系統管理員和接收這些增益集的使用者，必須位於支援 OAuth 驗證的 Exchange Online 版本上。
   
-Check with your organization's Exchange admin to find out which configuration is in use. OAuth connectivity per user can be verified by using the [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell cmdlet. 
+請洽詢貴組織的 Exchange 系統管理員，確認現正使用的設定。您可以使用 [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351) PowerShell Cmdlet，驗證每個使用者的 OAuth 連線。 
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>集中式部署相容性檢查程式
@@ -145,7 +145,7 @@ Check with your organization's Exchange admin to find out which configuration is
   
 集中式部署支援對承租人中個別使用者、群組和所有人的工作分派。 [集中式部署] 支援頂層群組或無父項群組之群組中的使用者，但不支援巢狀群組或有父項群組之群組中的使用者。
    
-Take a look at the following example where Sandra, Sheila, and the Sales Department group are assigned to an add-in. Because the West Coast Sales Department is a nested group, Bert and Fred aren't assigned to an add-in.
+看看下列範例，其中晨怡、欣雯和銷售部門群組已被指派增益集。由於西岸銷售部門是巢狀群組，誠雄和又倫未被指派增益集。
   
 ![銷售部門圖表](../../media/683094bb-1160-4cce-810d-26ef7264c592.png)
 
@@ -160,7 +160,7 @@ You can do the opposite query by resolving the group to see if it's a member of 
   
 ![Outlook 連絡人卡片的 [成員資格] 索引標籤](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
-Alternately, you can use the Azure Active Directory Graph API to run queries to find the list of groups within a group. For more information, see [Operations on groups | Graph API reference](https://go.microsoft.com/fwlink/p/?linkid=846342).
+或者，您也可以使用 Azure Active Directory 圖形 API 來執行查詢，尋找群組中的群組清單。如需詳細資訊，請參閱[群組上的作業 | 圖形 API 參考](https://go.microsoft.com/fwlink/p/?linkid=846342)。
   
 ### <a name="contacting-microsoft-for-support"></a>連絡 Microsoft 以取得支援
 

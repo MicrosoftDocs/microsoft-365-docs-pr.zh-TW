@@ -83,9 +83,9 @@ ms.locfileid: "45022178"
 |**支援** <br/> | 查看現有的服務要求或建立新的服務要求。 在[連絡商務產品的客戶支援 - 系統管理說明](../contact-support-for-business-products.md)中深入了解。 |
 |**設定** <br/> |管理應用程式的通用設定，例如電子郵件、網站和 Office 套件。 變更您的密碼原則和到期日期。 新增及更新網域名稱，例如 contoso.com。 變更您的組織設定檔與發行喜好設定。 然後選擇是否要讓合作夥伴存取您的系統管理中心。  <br/> |
 |**設定** <br/> |管理現有的網域、開啟和管理多重要素驗證、管理系統管理員存取權、將使用者信箱移轉至 Office 365、管理功能更新，以及協助使用者安裝其 Office app。 |
-|**報告** <br/> |See at a glance how your organization is using Microsoft 365 with detailed reports on email use, Office activations, and more. Learn how to use the new [activity reports](../activity-reports/activity-reports.md).  <br/> |
+|**報告** <br/> |請立即查看您的組織如何使用 Microsoft 365，以及有關電子郵件使用、Office 啟用等詳細報告。瞭解如何使用新的[活動報告](../activity-reports/activity-reports.md)。<br/> |
 |**健康情況** <br/> |快速檢視服務健康狀況。 您也可以查看更多詳細資料，以及服務健康情況歷程記錄。 查看[如何查看服務健康情況](https://docs.microsoft.com/office365/enterprise/view-service-health)。  <br/> 使用訊息中心來追蹤未來的功能和服務變更。 我們會在其中張貼公告，提供能協助您規劃變更並了解可能會對使用者造成影響的資訊。 請在 [Office 365 的訊息中心](../manage/message-center.md)中取得詳細資料。  <br/> |
-|**系統管理中心** <br/> |開啟 Exchange、商務用 Skype、SharePoint、Yammer 和 Azure AD 等各自的系統管理中心。 每一個系統管理中心都包含該服務的所有可用設定。  <br/> For example, in the Exchange admin center, set up and manage email, calendars, distribution groups, and more. In the SharePoint admin center, create and manage site collections, site settings, and OneDrive for Business. In the Skype for Business admin center, set up instant messaging notifications, dial-in conferencing, and online presence.  <br/> 深入了解 [Exchange 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkID=271807)和 [SharePoint 系統管理中心](https://docs.microsoft.com/sharepoint/sharepoint-online)。<br/> **附註：** 您是否能使用系統管理中心取決於您的方案和地區。           |
+|**系統管理中心** <br/> |開啟 Exchange、商務用 Skype、SharePoint、Yammer 和 Azure AD 等各自的系統管理中心。 每一個系統管理中心都包含該服務的所有可用設定。  <br/> 例如，在 Exchange 系統管理中心中設定及管理電子郵件、行事曆、通訊群組等。在 SharePoint 系統管理中心可以建立及管理網站集合、網站設定和商務用 OneDrive。在商務用 Skype 系統管理中心可以設定立即訊息通知、電話撥入式會議和線上狀態。  <br/> 深入了解 [Exchange 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkID=271807)和 [SharePoint 系統管理中心](https://docs.microsoft.com/sharepoint/sharepoint-online)。<br/> **附註：** 您是否能使用系統管理中心取決於您的方案和地區。           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>系統管理中心的一般工作
 

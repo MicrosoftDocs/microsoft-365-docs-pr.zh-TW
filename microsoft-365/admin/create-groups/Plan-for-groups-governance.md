@@ -152,7 +152,7 @@ Microsoft 365 群組具有一套豐富的工具，可實施貴組織可能需要
 |![影像 desc](../../media/next_steps.png)|後續步驟|<ul><li>傳遞和發行刪除及還原原則，以告知使用者他們可能期望的行為 </li><li> 記錄您的組織監控已刪除群組的需求。</li><li>規劃在群組推廣過程中執行這些需求。</li></ul>|
 
 > [!Important]
->During the "soft-delete" period if a user tries to access the site they will get a 403 forbidden message. After this period if the user tries to access the site they will get a 404 not found message.
+>在「虛刪除」期間，如果使用者嘗試存取網站，則會看到 403 禁止訊息。 在此期間之後，如果使用者嘗試存取網站，則會看到 404 找不到訊息。
 
 #### <a name="resources"></a>*資源*
 - [還原已刪除的 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group?ui=en-US&rs=en-001&ad=US)

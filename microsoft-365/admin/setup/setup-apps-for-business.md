@@ -66,7 +66,7 @@ ms.locfileid: "44778886"
 
 ## <a name="install-office"></a>安裝 Office
 
-Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Office (Word, Excel, Outlook, etc.). Each person can install Office on up to 5 PCs or Macs.
+為企業中的其他人員建立帳戶後，您和小組成員便可安裝完整電腦版的 Office (Word、Excel、Outlook 等)。每位人員最多可在 5 部 PC 或 Mac 上安裝 Office。
   
 ::: moniker range="o365-worldwide"
 
@@ -100,7 +100,7 @@ Once you've created accounts for other people in your business, you and your tea
   
 ## <a name="store-files-online"></a>線上儲存檔案
 
-Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+Microsoft 讓線上檔案儲存變得容易。若要了解最適合貴公司的儲存位置，請參閱[您可以在 Office 365 中儲存檔案的位置](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)。
   
 在您為每個人建立 Microsoft 帳戶時，他們皆會自動獲得 **OneDrive** 雲端儲存位置。 有了 OneDrive，您可以透過電腦、手機和平板電腦來存取檔案。
   

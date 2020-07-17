@@ -28,7 +28,7 @@ ms.locfileid: "44817592"
 並非所有您需要使用高級 eDiscovery 進行分析的檔，都將會在 Microsoft 365 中活。 使用高級 eDiscovery 的非 Microsoft 365 內容匯入功能，您可以將不在 Microsoft 365 中的檔（PST 檔除外）上傳至連結的情況下，Azure 儲存區 blob 和使用高級 eDiscovery 進行分析。 此程式顯示如何將您的非 Microsoft 365 檔放入高級 eDiscovery 以進行分析。
   
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 > [!NOTE]
 > 您可以購買非 Microsoft 365 內容的高級 eDiscovery 資料儲存區訂閱。 這只適用于使用高級 eDiscovery 進行分析的內容。 遵循[為商務用 Microsoft 365 購買或編輯附加](https://docs.microsoft.com/microsoft-365/commerce/buy-or-edit-an-add-on)元件中的步驟，並購買「Advanced eDiscovery 儲存」附加元件。 

@@ -88,7 +88,7 @@ ms.locfileid: "44780190"
    
 ### <a name="transfer-your-domain-to-a-different-domain-registrar"></a>將網域移轉到其他網域註冊機構
 
-If your domain is managed by a provider that doesn't support all the necessary DNS records, you can transfer it to a different registrar. When you transfer the domain, you change who you send payments to in order to renew and keep your domain name.
+如果負責管理您網域的提供者，並不支援所有需要的 DNS 記錄，您可以將網域移轉到其他註冊機構。移轉網域後，您需變更收款對象，以續約並保留您的網域名稱。
   
 Request the transfer at the registrar that you want to move your domain to. Look on their website for an option such as **Transfer DNS**. Be aware that after they make the changes, it can take a few days update across the Internet.
  
@@ -100,7 +100,7 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 
 
-If you don't already have your own domain, you can easily buy one online at a domain name registrar, domain reseller, or even at your current Internet provider. You get a domain name when you sign up for Office 365 operated by 21Vianet, for example, contoso.partner.onmschina.cn. But you may want to use a custom domain name, like fourthcoffee.com.
+如果您還沒有自己的網域，您可以輕鬆地在線上向網域名稱註冊機構、網域轉售商，甚至是目前的網際網路提供者購買網域。您註冊 由 21Vianet 提供的 Office 365 時即會獲得網域名稱，例如 contoso.partner.onmschina.cn，但您可能會想要使用自訂網域名稱，例如 fourthcoffee.com。
   
 若要在 Microsoft 365 中設定網域，您必須擁有網域，並變更您網域的一些 DNS 記錄。
   

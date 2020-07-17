@@ -160,7 +160,7 @@ ms.locfileid: "45127340"
 1. 在您的本機電腦上開啟 [命令提示字元]。
     
     > [!TIP]
-    > If you run the command prompt as an administrator (by selecting "Run as administrator" when you open it) error messages will be displayed in the command prompt window. This can help you troubleshoot problems running the WAImportExport.exe tool. 
+    > 如果您以系統管理員身分執行命令提示字元 (當您開啟時選取「以系統管理員身分執行」)，在命令提示字元視窗中，將顯示錯誤訊息。這可以協助您進行關於執行 WAImportExport.exe 工具問題的疑難排解。 
   
 2. 移至您在步驟 1 中安裝 WAImportExport.exe 工具的目錄。
     
@@ -176,7 +176,7 @@ ms.locfileid: "45127340"
     |:-----|:-----|:-----|
     | `/j:` <br/> |指定日誌檔的名稱。 此檔案會儲存到與 WAImportExport.exe 工具所在位置相同的資料夾。 您送交給 Microsoft 的每個硬碟都必須有一個日誌檔案。 每次您執行 WAImportTool.exe，將 PST 檔案複製到硬碟時，資訊都將會附加到該磁碟機的日誌檔。  <br/> Microsoft 資料中心人員使用日誌檔中的資訊，將硬碟與您在步驟4中建立的匯入工作產生關聯，並將 PST 檔案上傳至 Microsoft 雲端中的 Azure 儲存體區域。  <br/> | `/j:PSTHDD1.jrn` <br/> |
     | `/t:` <br/> |指定當硬碟連接至本機電腦時的磁碟機代號。  <br/> | `/t:h` <br/> |
-    | `/id:` <br/> |Specifies the name of the copy session. A session is defined as each time you run the WAImportExport.exe tool to copy files to the hard drive. The PST files are copied to a folder named with the session name specified by this parameter.  <br/> | `/id:driveship1` <br/> |
+    | `/id:` <br/> |指定複製工作階段的名稱。工作階段的定義是每次執行 WAImportExport.exe 工具，將檔案複製到硬碟的動作。PST 檔案會複製到資料夾，該資料夾是以此參數所指定的工作階段名稱來命名。   <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |指定貴組織內的來源目錄，該目錄包含在工作階段期間要複製的 PST 檔案。 請務必使用雙引號 (" ") 括住此參數的值。  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
     | `/dstdir:` <br/> |在 Microsoft 雲端中，指定要上傳 Pst 的位置目錄（位於 Azure 儲存體區域中）。 您必須使用值 `ingestiondata/` 。 請務必使用雙引號 (" ") 括住此參數的值。  <br/> 您也可以選擇性地新增額外的檔案路徑至此參數的值。 例如，您可以使用硬碟磁碟機上來原始目錄（轉換成 URL 格式）的檔案路徑，該檔案是參數中指定的 `/srcdir:` 。 例如， `\\FILESERVER01\PSTs` 變更為 `FILESERVER01/PSTs` 。 在此情況下，您仍必須包含 `ingestiondata` 在檔路徑中。 所以在這個範例中，參數的值 `/dstdir:` 將是 `"ingestiondata/FILESERVER01/PSTs"` 。  <br/> 新增其他檔案路徑的原因之一，是您具有相同檔名的 PST 檔案。  <br/> > [!NOTE]> 如果包含選用的路徑名，則將 PST 檔案上傳至 Azure Storage 區域之後的命名空間包含 PST 檔案的路徑名和名稱;例如， `FILESERVER01/PSTs/annb.pst` 。 如果您未包含 pathname，則命名空間只是 PST 檔案名;例如 `annb.pst` 。           | `/dstdir:"ingestiondata/"` <br/> 或者  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/sk:` <br/> |指定您在步驟 1 中所取得的安全存放裝置帳戶金鑰。 請務必使用雙引號 (" ") 括住此參數的值。  <br/> | `"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ=="` <br/> |
@@ -190,7 +190,7 @@ ms.locfileid: "45127340"
     WAImportExport.exe PrepImport /j:PSTHDD1.jrn /t:f /id:driveship1 /srcdir:"\\FILESERVER01\PSTs" /dstdir:"ingestiondata/" /sk:"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ==" blobtype:BlockBlob /encrypt /logdir:"c:\users\admin\desktop\PstImportLogs"
     ```
 
-    After you run the command, status messages are displayed that show the progress of copying the PST files to the hard drive. A final status message shows the total number of files that were successfully copied.
+    在您執行命令後，便會顯示 PST 檔案複製到硬碟進度的狀態訊息。最終狀態訊息會顯示已成功複製的檔案總數。 
     
 4. 以後每次您執行 WAImportExport.ext 工具，將 PST 檔案複製到相同的硬碟時，都要執行此命令。
 
@@ -210,7 +210,7 @@ ms.locfileid: "45127340"
   
 1. [下載 PST 匯入對應檔案的副本](https://go.microsoft.com/fwlink/p/?LinkId=544717)。
     
-2. Open or save the CSV file to your local computer. The following example shows a completed PST Import mapping file (opened in NotePad). It's much easier to use Microsoft Excel to edit the CSV file.
+2. 開啟或儲存 CSV 檔案到您的本機電腦。下列範例顯示了一個已完成的 PST 匯入對應檔案 (在「記事本」中開啟)。若使用 Microsoft Excel 來編輯 CSV 檔案會較為簡單。
 
     ```text
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
@@ -330,7 +330,7 @@ ms.locfileid: "45127340"
     
 - 將硬碟運送到您在步驟 4 中，建立匯入工作時所顯示的 Microsoft 地點。 請務必在寄送地址中包含「Office 365 匯入服務」。
     
-- After you ship the hard drive, be sure to write down the name of the delivery carrier and the tracking number. You'll provide these in the next step.
+- 在您運送硬碟後，請務必寫下出貨承運業者的名稱及追蹤號碼。在下一個步驟中您將提供這些資訊。
     
 ### <a name="enter-the-tracking-number-and-other-shipping-information"></a>輸入追蹤號碼，以及其他的送貨資訊
 
@@ -468,7 +468,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
     
   - 保護您的組織避免敏感資訊的[資料遺失](data-loss-prevention-policies.md)。 
     
-- Here's an example of the secure storage account key and a BitLocker encryption key. This example also contains the syntax for the WAImportExport.exe command that you run to copy PST files to a hard drive. Be sure to take precautions to protect these just like you would protect passwords or other security-related information.
+- 以下是安全存放裝置帳戶金鑰和 BitLocker 加密金鑰的範例。此範例也會包含您要複製 PST 檔案到硬碟，所執行的 WAImportExport.exe 命令的語法。請務必採取預防措施來保護這些項目，就如同您保護密碼或其他安全性相關的資訊一樣。
     
 
     ```text

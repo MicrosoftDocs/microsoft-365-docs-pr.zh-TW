@@ -17,6 +17,7 @@ ms.custom: ''
 description: 虛構但有代表性的全球組織如何採用 Microsoft 365 企業版。
 ms.openlocfilehash: dd9bf2dcb7a8bff453746a0084faaf69650bf6fd
 ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/23/2020
 ms.locfileid: "44854255"
@@ -25,7 +26,7 @@ ms.locfileid: "44854255"
 
 Microsoft 365 企業版是 Microsoft 的頂級雲端供應項目，結合本機與雲端生產力應用程式和服務與 Windows 10 企業版和進階安全功能，成為完整、智慧型的解決方案，讓所有人都能發揮創意並且安全地共同作業。 
 
-The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. Contoso has deployed Microsoft 365 Enterprise and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
+Contoso Corporation 是虛構但有代表性的全球製造集團，總部位於法國巴黎。Contoso 已部署 Microsoft 365 企業版並且針對網路、身分識別、Windows 10 企業版、Microsoft 365 Apps 企業版、行動裝置管理、資訊保護和安全性，訂定主要設計決策和實作詳細資料。 
 
 Contoso 對於 Microsoft 365 企業版的整體目標是藉由使用雲端服務來加速其數位轉換，雲端服務可以讓其員工、合作夥伴、資料和程序合併在一起，以建立客戶價值並且在數位優先世界維持其競爭優勢。
 

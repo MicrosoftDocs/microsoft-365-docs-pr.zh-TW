@@ -56,7 +56,7 @@ ms.locfileid: "45005683"
 
 ::: moniker range="o365-germany"
 
-The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
+您選擇的合作夥伴取決於您使用的 Office 365 服務，還有您是在哪個國家或地區使用這類服務。如果您要新增合作夥伴，或要變更訂閱的合作夥伴，首先必須詢問合作夥伴，取得對方的 Microsoft 合作夥伴識別碼。
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ The partner you choose depends on the Office 365 services you use and the countr
     
 4. 如果您已經有合作夥伴，請在「結帳」嚮導的第二個步驟中，在 [協力廠商] 窗格的 [合作夥伴資訊] 下，選取 [**新增**]。
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. 輸入您新增之合作夥伴的 Microsoft 合作夥伴識別碼。請詢問合作夥伴，取得對方的 Microsoft 合作夥伴識別碼。
 
 6. 完成精靈的其餘步驟，以完成購買您的訂閱。 
     
@@ -98,7 +98,7 @@ The partner you choose depends on the Office 365 services you use and the countr
     
 4. 如果您已經有合作夥伴，請在「結帳」嚮導的第二個步驟中，在 [協力廠商] 窗格的 [合作夥伴資訊] 下，選取 [**新增**]。
 
-5. Type the Microsoft Partner ID for the partner you're adding. You can get the partner's Microsoft Partner ID by asking the partner for it.
+5. 輸入您新增之合作夥伴的 Microsoft 合作夥伴識別碼。請詢問合作夥伴，取得對方的 Microsoft 合作夥伴識別碼。
 
 6. 完成精靈的其餘步驟，以完成購買您的訂閱。 
     

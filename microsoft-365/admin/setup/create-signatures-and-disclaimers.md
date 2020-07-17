@@ -32,7 +32,7 @@ ms.locfileid: "44779878"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>建立整個組織的簽名和免責聲明
 
- You can add an email signature, legal disclaimer, or disclosure statement to the email messages that enter or leave your organization. You can set it up to apply to all incoming and outgoing messages as shown below. Or you can apply it to certain messages like those containing specific words or text patterns.
+ 您可以在進入或離開貴組織的電子郵件中新增電子郵件簽名、法律免責聲明或保密聲明。您可以如下所示，設定將它套用至所有內送或外寄郵件。或者您也可以將它套用至特定郵件，例如包含特定字詞或文字模式的郵件。
 
  觀賞有關如何建立全公司的電子郵件簽名的簡短影片。 <br><br>
   

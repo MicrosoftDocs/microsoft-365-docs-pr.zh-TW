@@ -44,7 +44,7 @@ ms.locfileid: "44780562"
   
 ## <a name="let-users-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
-We strongly recommend that you set up self-service password reset. This way you don't have to manually reset passwords for your users. To learn how, see [Let users reset their own passwords in Office 365](let-users-reset-passwords.md).
+我們強烈建議您設定自助密碼重設，這樣您就不必手動重設使用者的密碼。若要深入了解，請參閱[讓使用者在 Office 365 中自行重設密碼](let-users-reset-passwords.md)。
   
 ## <a name="reset-a-business-password-for-someone-else"></a>重設其他人的商務密碼
 
@@ -118,7 +118,7 @@ We strongly recommend that you set up self-service password reset. This way you 
 ## <a name="reset-business-passwords-in-bulk"></a>大量重設商務密碼
 <a name="bkmk_forgot"> </a>
 
-Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
+使用 PowerShell！請參閱由 Eyal Doron 撰寫的這篇文章：[使用 PowerShell 管理密碼](https://go.microsoft.com/fwlink/?linkid=853696)。
   
 相關文章︰[設定多個使用者帳戶的密碼](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。
   

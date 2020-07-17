@@ -43,7 +43,7 @@ ms.locfileid: "44755185"
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Microsoft Premier Support 訂閱者支援
 
-If you are an EOP customer and also have a Microsoft Premier Support contract, you can get support through the normal Microsoft Premier Support channels. This allows you to receive access to all processes and resources available to Premier Support customers, such as a Premier Technical Account Manager (TAM) and case submission. Premier Support for Microsoft Online Services extends the Premier Support framework beyond on-premises products to online services, providing you with a unified support experience across all products and services. This service helps ensure that customers can resolve issues quickly and simplifies the task of managing support for different components of an IT infrastructure.
+如果您是 EOP 客戶並同時具有 Microsoft Premier Support 合約，可透過一般 Microsoft Premier Support 管道取得支援。這可讓您存取 Premier Support 客戶可用的所有程序和資源，例如 Premier Technical Account Manager (TAM) 和案例提交。Microsoft Online Services 的 Premier Support 將 Premier Support 架構延伸到內部部署產品以外的線上服務，讓您獲得所有產品和服務的一體支援體驗。此服務有助於確保客戶能快速解決問題，並且簡化管理 IT 基礎結構內不同元件的支援工作。
 
 如需頂級支援如何協助組織從 IT 投資創造最大價值的詳細資訊，請參閱[適用於合作夥伴的頂級支援](https://partner.microsoft.com/support/microsoft-services-premier-support)。
 
@@ -67,7 +67,7 @@ If you are an EOP customer and also have a Microsoft Premier Support contract, y
 
 ## <a name="support-telephone-numbers"></a>支援電話號碼
 
-Microsoft provides local or toll-free telephone numbers for product support around the world. Many of these support centers provide help in your local language during business hours or in English 24 hours a day, every day. If you don't see your location listed below, use the Virtual Agent as described above to find your local support telephone number.
+Microsoft 為全球的產品支援提供本機或免付費電話號碼。許多支援中心在上班時間或每日的英文時間（一天24小時）中提供您當地語言的協助。如果您未看到下列所列的位置，請依照上述的方式使用虛擬代理程式來尋找您當地的支援電話號碼。
 
 |**國家或區域**|**購買前和帳務問題**|**技術支援問題**|
 |:-----|:-----|:-----|

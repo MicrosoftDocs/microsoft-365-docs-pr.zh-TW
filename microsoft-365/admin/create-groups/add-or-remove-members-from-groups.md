@@ -179,7 +179,7 @@ ms.locfileid: "44780478"
 
 ## <a name="manage-group-owner-status"></a>管理群組擁有者狀態
 
-By default, the person who created the group is the group owner. Often a group will have multiple owners for backup support or other reasons. Members can be promoted to owner status and owners can be demoted to member status.
+依預設，建立群組的人員即為群組擁有者。通常，基於備份支援或其他理由，群組將擁有多個擁有者。成員可以升級為擁有者狀態，而擁有者也可以降級為成員狀態。
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>在系統管理中心將成員提升為擁有者狀態
 

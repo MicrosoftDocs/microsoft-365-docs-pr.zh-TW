@@ -67,7 +67,7 @@ ms.locfileid: "44785845"
     
 3. 完成 Windows 10 裝置設定。
     
-   Once you're done, the user will be connected to your organization's Azure AD. See [Verify the device is connected to Azure AD](#verify-the-device-is-connected-to-azure-ad) to make sure. 
+   完成後，使用者將連線到貴組織的 Azure AD。請參閱[驗證裝置已連線到 Azure AD](#verify-the-device-is-connected-to-azure-ad) 以確認。 
   
 ### <a name="for-a-device-already-set-up-and-running-windows-10-pro"></a>適用於已設定且執行 Windows 10 專業版的裝置
 

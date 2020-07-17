@@ -26,7 +26,7 @@ ms.locfileid: "44936206"
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （經典）中測試相關性分析
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
   
 Advanced eDiscovery 中的 [測試] 索引標籤可讓您測試、比較及驗證整體的處理品質。 這些測試會在批次計算之後執行。 將檔案標記在集合中，專家便可以判斷每個已標記的檔案是否實際上與案例有關。 
   
