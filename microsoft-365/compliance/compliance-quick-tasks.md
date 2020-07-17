@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 深入瞭解將協助您快速開始使用 Microsoft 365 中的合規性的工作。
-ms.openlocfilehash: a946d4711111089ba6074b2c264b8edd36a01315
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 26d10840382d044e8126745daec32948571a1be9
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126612"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45153686"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Microsoft 365 規範快速入門的快速任務
 
@@ -101,6 +101,34 @@ Microsoft 提供了數個內建的警示原則，可協助識別系統管理許�
 
 如需規劃及設定通訊相容性的逐步指引，請參閱[規劃通訊符合性](communication-compliance-plan.md)及[開始使用通訊相容性](communication-compliance-configure.md)。 如需通訊相容性授權資訊，請參閱[Microsoft 365 授權指南以取得安全性 & 符合性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)。
 
+## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>工作9：查看您的敏感專案發生的情況
+
+敏感度標籤、機密資訊類型、保留標籤與原則及 trainable 分類器可用來分類及標記不同 Exchange、SharePoint 及 OneDrive 中的機密專案，如先前的工作所示。 您的快速任務旅程中的最後一個步驟是查看已標示哪些專案，以及您的使用者對這些敏感專案採取的動作。 [內容流覽](data-classification-content-explorer.md)器和[活動瀏覽器](data-classification-activity-explorer.md)提供此可見度。
+
+### <a name="content-explorer"></a>內容總管
+ 內容瀏覽器可讓您以原生格式來查看已分類為敏感資訊類型的所有專案，或是由 trainable 分類程式屬於特定分類的專案，以及已套用靈敏度或保留標籤的所有專案。
+
+如需使用內容瀏覽器的逐步指引，請參閱[瞭解資料資料分類概述](data-classification-overview.md)，並[開始使用內容瀏覽器](data-classification-content-explorer.md)。
+
+### <a name="activity-explorer"></a>活動瀏覽器
+活動 explorer 可協助您監視整個分類及標示的敏感專案所進行的作業：
+- SharePoint
+- Exchange
+- OneDrive
+
+有超過 30 個不同的篩選可使用，其中包括：
+
+- 日期範圍
+- 活動類型
+- 位置
+- 使用者
+- 敏感度標籤
+- 保留標籤
+- 檔案路徑
+- DLP 原則
+
+如需使用活動 explorer 的逐步指引，請參閱[活動瀏覽器入門](data-classification-activity-explorer.md)。
+
 ## <a name="next-steps"></a>後續步驟
 
 現在，您已經為組織設定合規性管理的基礎知識，請考慮在 Microsoft 365 中遵循下列規範解決方案，以協助您保護機密資訊，並偵測並處理其他的內幕程式風險。
@@ -112,8 +140,8 @@ Microsoft 提供了數個內建的警示原則，可協助識別系統管理許�
 此外，保留標籤支援[記錄管理](records-management.md)，將內容標示為記錄。 如果您這麼做，任何人都無法變更或移除標籤，相關內容也無法編輯或刪除。 您可能需要這些限制，以協助您的組織遵守法規需求。
 
 如需建立及發佈保留標籤的逐步指引，請參閱下列指導：
-- [在應用程式中建立保留標籤並套用](create-apply-retention-labels.md)
-- [自動將保留標籤套用至內容](apply-retention-labels-automatically.md)
+- [建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)
+- [自動將保留標籤套用到內容](apply-retention-labels-automatically.md)
 
 如需記錄管理授權資訊，請參閱[Microsoft 365 授權指南以取得安全性 & 符合性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management)。
 
@@ -125,7 +153,7 @@ Microsoft 提供了數個內建的警示原則，可協助識別系統管理許�
 
 ### <a name="prevent-data-loss"></a>防止資料外洩
 
-[資料遺失防護（DLP）原則](data-loss-prevention-policies.md)可讓您識別、監控並自動保護 Microsoft 365 組織內的敏感資訊。 使用 DLP 原則來識別跨 Microsoft 服務的敏感資訊，避免意外共用機密資訊，並協助使用者瞭解如何保持相容，而不中斷其工作流程。
+[資料遺失防護（DLP）原則](data-loss-prevention-policies.md)可讓您識別、監控並自動保護 Microsoft 365 組織內的敏感資訊。 使用 DLP 原則來識別跨 Microsoft 服務的敏感專案、防止意外共用機密專案，以及協助使用者瞭解如何保持相容性，而不中斷其工作流程。
 
 如需設定 DLP 原則的逐步指引，請參閱「[開始使用 dlp 原則建議](get-started-with-dlp-policy-recommendations.md)」和「[開始使用預設 DLP 原則](get-started-with-the-default-dlp-policy.md)」。 如需資料遺失管理授權資訊，請參閱[Microsoft 365 的安全性授權指南以取得安全性 & 合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
 

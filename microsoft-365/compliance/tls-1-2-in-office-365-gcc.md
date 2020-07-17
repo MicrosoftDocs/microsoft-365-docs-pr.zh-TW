@@ -1,35 +1,33 @@
 ---
 title: 取代 TLS 1.0 和 1.1 in Office 365 GCC 高和 DoD
 description: 討論 Microsoft 如何將日期向前移動，以停止支援在 Office 365 中的 GCC 高端和 DoD 環境中的 TLS 1.1 和1.0，並準備使用 TLS 1.2。
-author: simonxjx
-manager: dcscontentpm
+author: workshay
+manager: laurawi
 localization_priority: Normal
 search.appverid:
 - MET150
 audience: ITPro
-ms.service: O365-seccomp
+ms.collection: M365-security-compliance
+ms.service: information-protection
 ms.topic: article
-ms.author: v-six
-ms.reviewer: lobrion
+ms.reviewer: krowley
+ms.author: shmehta
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: f61c0a809c4666981ee0f2d67eea21474b83a675
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 76e9b203e58ba7fa23942ea42810456e3bee377d
+ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024817"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158878"
 ---
 # <a name="deprecating-tls-10-and-11-in-office-365-gcc-high-and-dod"></a>取代 TLS 1.0 和 1.1 in Office 365 GCC 高和 DoD
 
-> [!IMPORTANT]
-> 世界正處於疫情大爆發中，Microsoft 公司也意識到了這對客戶與合作夥伴的影響。 為了減輕商業客戶負擔，我們暫時停止了 TLS 1.0和1.1 的取代執法。 當前危機穩定後，將會依照修訂後的時間表發送更新。 （本文已進行修訂以反映變更。）
-
 ## <a name="summary"></a>摘要
 
-為了遵守聯邦風險和授權管理計畫（FedRAMP）的最新符合性標準，我們在 Microsoft Office 365 中，移至取代 Transport Layer Security （TLS）版本1.1 和1.0，以供 GCC 高和 DoD 環境使用。 這項變更先前是透過 Microsoft 支援宣告的，以 [準備在 Office 365 中強制使用 TLS 1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。
+為了遵守聯邦風險和授權管理計畫（FedRAMP）的最新符合性標準，我們在 Microsoft Office 365 中取代 Transport Layer Security （TLS）版本1.1 和1.0，以供 GCC 高和 DoD 環境使用。 這項變更先前是透過 Microsoft 支援宣告的，以 [準備在 Office 365 中強制使用 TLS 1.2](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)。
 
-我們知道您的資料安全性很重要，我們承諾對可能影響服務使用的變更進行透明性。
+您的資料安全性很重要，我們承諾對可能影響服務使用的變更進行透明性。
 
 雖然[MICROSOFT TLS 1.0 的執行](https://support.microsoft.com/help/3117336)沒有已知的安全性弱點，但仍然會繼續致力於 FedRAMP 規範標準。 因此，我們會在從1.1 年1月15日開始2020，取代環境 DoD 中的 Office 365 中，TLS 和1.0。 如需如何移除 TLS 1.1 和1.0 相依性的相關資訊，請參閱下列白皮書：
 
