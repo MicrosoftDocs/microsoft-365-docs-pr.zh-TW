@@ -65,6 +65,8 @@
     - name: 開始使用 Microsoft 受管理的電腦
       href: get-started/index.md
       items:
+        - name: 存取系統管理入口網站
+          href: get-started/access-admin-portal.md
         - name: 在系統管理入口網站中新增和驗證系統管理連絡人
           href: get-started/add-admin-contacts.md
         - name: 調整條件式存取
