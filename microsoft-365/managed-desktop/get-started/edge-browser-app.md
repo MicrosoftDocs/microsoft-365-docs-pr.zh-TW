@@ -4,14 +4,18 @@ description: ''
 keywords: 瀏覽器、Microsoft 受管理的桌面、Microsoft 365、服務、檔
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
+manager: laurawi
+audience: ITpro
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: f4bc5f85b21148c5a923ca1fc18879a193191c4b
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 916ddaea2bc91c56944d4561771c1e807447d604
+ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094783"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "45170668"
 ---
 # <a name="new-microsoft-edge-app"></a>新的 Microsoft Edge app
 
@@ -38,9 +42,9 @@ Microsoft 受管理的桌面裝置上的 Microsoft Edge 安全性基準會設定
 #### <a name="extension-installation-blocklist"></a>擴充安裝 blocklist
 **預設值：** 所有
 
-Microsoft 受管理的桌面會設定此原則，以防止在受管理的端點上安裝 Chrome 擴充功能。 已知 risksassociated 具有 Chromium 擴充模型，包括資料遺失保護、隱私權及其他可能危及裝置安全的風險。 
+Microsoft 受管理的桌面會設定此原則，以防止在受管理的端點上安裝 Chrome 擴充功能。 Sassociated 與 Chromium 擴充模型（包括資料遺失保護、隱私權及其他可能危及裝置的危險）的已知風險。 
 
-#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允許未以系統管理員許可權安裝的使用者層級原生郵件主機 () 
+#### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允許使用者層級的原生郵件主機（安裝時不需系統管理員許可權）
 
 **預設值：** 禁用
 
@@ -119,7 +123,7 @@ Microsoft 受管理的桌面不支援基本或摘要驗證架構。
 
 ## <a name="settings-you-manage"></a>您管理的設定
 
-您可以使用 Microsoft Intune 中的「管理範本」設定檔，部署先前沒有描述的任何 Microsft Edge 設定。 如需詳細資訊，請參閱[使用 Microsoft Intune 設定 Microsoft Edge 原則設定](https://docs.microsoft.com/deployedge/configure-edge-with-intune)。 如果您想要評估目前未包含在 Intune 中的 Microsoft Edge 系統管理範本中的原則，您可以在 Intune 中使用 Windows 10 裝置的自訂設定。
+您可以使用 Microsoft Intune 中的「管理範本」設定檔，部署先前並未描述的任何 Microsoft Edge 設定。 如需詳細資訊，請參閱[使用 Microsoft Intune 設定 Microsoft Edge 原則設定](https://docs.microsoft.com/deployedge/configure-edge-with-intune)。 如果您想要評估目前未包含在 Intune 中的 Microsoft Edge 系統管理範本中的原則，您可以在 Intune 中使用 Windows 10 裝置的自訂設定。
 
 ### <a name="enabling-specific-chrome-extensions"></a>啟用特定的 Chrome 副檔名
 

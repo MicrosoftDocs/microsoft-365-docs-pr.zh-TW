@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何取得 Microsoft 團隊使用者活動報告，並深入瞭解組織中的小組活動。
-ms.openlocfilehash: 6c4f8a2ae9e6e88a17b65e61547e03583d116fbd
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 734a4dfd62160c2f4d29b8faffb3268a1962fe4f
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158842"
+ms.locfileid: "45167338"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity--preview"></a>系統管理中心的 microsoft 365 報告-Microsoft 團隊使用者活動-預覽
 
@@ -51,9 +51,9 @@ Microsoft 365**報告**儀表板會向您顯示組織中各產品的活動概況
 |會議總數   <br/> |使用者在指定期間內參與的線上會議數目。  <br/> |
 |1:1 通話   <br/> | 使用者在指定期間內參與的1:1 通話數目。  <br/> |
 |上次活動日期（UTC）  <br/> |使用者參與 Microsoft 小組活動的最後日期。<br/> |
-|會議已即席參加   <br/> | 使用者在指定期間內參與的即席會議數目。  <br/> |
-|以特殊方式組織的會議 <br/> |使用者在指定期間內組織的即席會議數目。 <br/>|
+|會議已即席參加   <br/> | 使用者在指定期間內參與的行事曆上未排定的會議數目。  <br/> |
+|以特殊方式組織的會議 <br/> |在指定期間內，使用者組織的行事曆中未排定的會議數目。 <br/>|
 |排程組織的會議  <br/> |使用者在指定期間內組織的排程會議數目。  <br/> |
 |已授權 |如果使用者授權使用小組，則選取此選項。|
-|其他活動|使用者的其他小組活動數目。 |
+|其他活動|使用者被視為作用中，但聊天訊息、1:1 通話、通道訊息、會議總數和會議組織的值都是空的。 範例動作是指將 Microsoft 團隊用戶端啟動至前景時，會在 [撰寫郵件] 區域中採取動作，快顯通知顯示在 Microsoft 團隊用戶端，顯示在 Microsoft 團隊用戶端中的橫幅，等等。 |
 |||

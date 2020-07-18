@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 從 Microsoft 365 報告取得 Microsoft 團隊應用程式使用方式報告，深入瞭解組織中所使用的 Microsoft 團隊應用程式。
-ms.openlocfilehash: 3599ba24e8df9406b5e0bc93d934604880ca4c39
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 4945e74d91e12c1e846de3e4bd8393220349d608
+ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158854"
+ms.locfileid: "45167350"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage---preview"></a>系統管理中心的 microsoft 365 報告-Microsoft 團隊裝置使用狀況-預覽
 
@@ -57,5 +57,4 @@ Microsoft 365**報告**儀表板會向您顯示組織中各產品的活動概況
 |網頁  <br/> |如果使用者是在裝置上的小組網頁用戶端使用中，則選取此選項。|
 |上次活動日期（UTC）  <br/> |使用者參與小組活動的最後日期（UTC）。  <br/> |
 |已授權|如果使用者授權使用小組，則選取此選項。|
-|小組活動總數|在選取的時段內，小組的活動總數。 |
 |||
