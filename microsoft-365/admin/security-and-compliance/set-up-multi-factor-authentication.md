@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何為您的組織設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 597d8383166e0ddae0984573d77ba75cf54dafdd
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: 34133f4204c1ee305b0a249a0ff8e0e9edaf5599
+ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146227"
+ms.locfileid: "45153674"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
   
@@ -77,6 +77,8 @@ ms.locfileid: "45146227"
 購買 Azure AD Premium P1 的客戶或含此授權的授權（例如 Microsoft 365 商務版 Premium）和 Microsoft 365 E3 皆可使用條件式存取。 如需詳細資訊，請參閱[建立 [條件式存取] 原則](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa)。
 
 透過 Azure AD Premium P2 授權或含此授權的授權（例如 Microsoft 365 E5）可使用風險型條件式存取。 如需詳細資訊，請參閱 [風險型 [條件式存取]](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)。
+
+如需有關 Azure AD P1 和 P2 的詳細資訊，請參閱 [Azure Active Directory 定價](https://azure.microsoft.com/pricing/details/active-directory/)。
 
 ### <a name="turn-on-modern-authentication-for-your-organization"></a>為您的組織開啟 [新式] 驗證。
 
