@@ -20,18 +20,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在 Exchange Online Protection （EOP）中深入瞭解隔離郵件的使用者垃圾郵件通知。
-ms.openlocfilehash: 14dcdfa8373e3826b23bc5574d1b5ae8ff76927b
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 4c3275b6af1eb452ed420b8eb2f923dfbb1267d6
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754781"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200013"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>使用使用者垃圾郵件通知來釋放及報告隔離的郵件
 
 在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或垃圾郵件。 如需詳細資訊，請參閱[EOP 中的隔離郵件](quarantine-email-messages.md)。
 
-根據預設，會停用反垃圾郵件原則中的使用者垃圾郵件通知。 當系統管理員[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)時，收件者（包括共用信箱）將會收到有關其郵件（已被隔離為垃圾郵件、大量電子郵件，或（截止2020年4月）網路釣魚的定期通知。
+根據預設，會停用反垃圾郵件原則中的使用者垃圾郵件通知。 當系統管理員[啟用使用者垃圾郵件通知](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)時，收件者（包括已啟用自動對應的共用信箱）將會收到有關其郵件（已被隔離為垃圾郵件、大量電子郵件，或（截止2020年4月）網路釣魚的定期通知。
 
 > [!NOTE]
 > 以高可信度網路釣魚、惡意程式碼或郵件流程規則（也稱為傳輸規則）隔離的郵件只適用于系統管理員。 如需詳細資訊，請參閱[在 EOP 中管理隔離的郵件和檔案](manage-quarantined-messages-and-files.md)。

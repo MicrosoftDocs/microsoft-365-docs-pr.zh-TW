@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: ca15f26cf8eb19990c3252acf66ba50d52567e44
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 5944439da4c4df9253e5c6d67944ccc1a7339e71
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327121"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199769"
 ---
 # <a name="plan-for-insider-risk-management"></a>測試人員風險管理計畫
 
@@ -36,9 +36,9 @@ ms.locfileid: "44327121"
 
 ## <a name="determine-any-regional-compliance-requirements"></a>決定任何區域合規性需求
 
-不同的地理位置和組織區域可能具有符合性和隱私權的需求，與您組織的其他區域截然不同。 與這些領域中的利益關係人合作，以確保他們瞭解內幕程式風險管理中的合規性和隱私權控制，以及如何跨組織的不同區域使用這些控制。 在某些情況下，法規遵從性和隱私權需求可能需要原則，以根據使用者或規定或地區的原則需求，指定或限制部分的專案關係人調查和案例。
+不同的地理位置和組織區域可能會有不同于組織其他區域的合規性和隱私權需求。 與這些領域中的利益關係人合作，以確保他們瞭解內幕程式風險管理中的合規性和隱私權控制，以及如何跨組織的不同區域使用這些控制。 在某些情況下，法規遵從性和隱私權需求可能需要原則，以根據使用者或規定或地區的原則需求，指定或限制部分的專案關係人調查和案例。
 
-如果您有需要特定專案關係人的需求，以應對特定地區、角色或部門中的員工的案例調查，您可能想要針對不同的地區和人口執行個別（即使相同）[內幕的風險管理原則](insider-risk-management-policies.md)。 這可讓適當的利益關係人更輕鬆地會審及管理與其角色及地區相關的案例。 此外，您可能會考慮針對地區建立程式和原則，讓調查人員和檢閱者與使用者有相同的語言，協助簡化內部測試人員風險管理提醒及案例的升級程式。
+如果您有特定的專案關係人的需求，而您必須要有與特定地區、角色或部門中的使用者相關的案例調查相關的需求，您可能會想要執行個別（甚至相同）的[內幕程式風險管理原則](insider-risk-management-policies.md)，而該原則的目標是不同的地區 這種設定可讓適當的利益關係人更容易地會審及管理與其角色及地區相關的案例。 此外，您可能會考慮針對地區建立程式和原則，讓調查人員和檢閱者與使用者有相同的語言，協助簡化內部測試人員風險管理提醒及案例的升級程式。
 
 ## <a name="plan-for-the-review-and-investigation-workflow"></a>規劃審閱和調查工作流程
 
@@ -61,16 +61,18 @@ ms.locfileid: "44327121"
 
 如果您沒有現有的 Microsoft 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以[將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的訂閱，或註冊 Microsoft 365 Enterprise E5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
-**原則範本需求：** 視原則範本而定，您可能需要先瞭解和規劃，才能設定組織中的「有問必答風險管理」：
+**原則範本需求：** 視您所選擇的原則範本而定，您必須先瞭解和規劃這些需求，才能在組織中設定有問必答風險管理：
 
-- 使用委任**員工資料竊取**範本時，您必須設定 MICROSOFT 365 HR connector，定期為組織中的員工匯入辭職及終止日期資訊。 如需為組織設定 Microsoft 365 HR Connector 的逐步指引，請參閱匯[入含 HR connector 的資料](import-hr-data.md)主題。
-- 使用**資料洩漏**範本時，您必須設定至少一個資料遺失防護（DLP）原則，以定義組織中的敏感資訊，並接收高嚴重性 DLP 原則警示的有問必答風險警示。 如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。
+- 當使用者使用「**資料竊取**」的範本時，您必須設定 MICROSOFT 365 HR 連接器，定期為組織中的使用者匯入辭職及終止日期資訊。 如需為組織設定 Microsoft 365 HR connector 的逐步指引，請參閱[Import data WITH HR connector](import-hr-data.md)文章。
+- 使用**資料洩漏**範本時，您必須設定至少一個資料遺失防護（DLP）原則，以定義組織中的敏感資訊，並接收高嚴重性 DLP 原則警示的有問必答風險警示。 如需為組織設定 DLP 原則的逐步指引，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)文章。
+- 使用**安全性原則違規**範本時，您必須啟用 Microsoft Defender Advanced 威脅防護（ATP），以用於 Defender security Center 中的內部會員風險管理整合，以匯入安全性違規警示。 請參閱[Microsoft defender 文章中的設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features)，以取得啟用 MICROSOFT Defender ATP 整合與內幕風險管理的逐步指引。
+- 使用**不滿的使用者**範本時，您必須設定 MICROSOFT 365 HR connector，定期為組織中的使用者匯入效能或降級狀態資訊。 如需為組織設定 Microsoft 365 HR connector 的逐步指引，請參閱[Import data WITH HR connector](import-hr-data.md)文章。
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>在實際執行環境中與一小組使用者進行測試
 
-在實際執行環境中啟用廣泛的解決方案之前，您可以考慮在組織中進行必要的規範、隱私權和法律檢查時，與一小部分的實際執行使用者一起測試原則。 在測試環境中評估有問必答風險管理，將需要您產生模擬使用者動作和其他信號，以建立模擬和案例的警示，以進行處理。 通常這對大多數的組織而言並不實用，所以在實際執行環境中使用一小小組使用者測試有問必答風險管理，通常是可取的。
+在實際執行環境中啟用廣泛的解決方案之前，您可以考慮在組織中進行必要的規範、隱私權和法律檢查時，與一小部分的實際執行使用者一起測試原則。 在測試環境中評估有問必答風險管理，將需要您產生模擬使用者動作和其他信號，以建立模擬和案例的警示，以進行處理。 這種方法不適用於大多數的組織，所以應該優先使用實際執行環境中的一小組使用者測試有問必答風險管理。
 
-保留原則設定中的匿名功能，以在此測試期間 pseudonymize 「內幕風險管理」主控台中的使用者顯示名稱，以維護工具內的隱私權。 這可協助保護具有原則相符之使用者的隱私權，並可協助您在資料調查和分析審核中，objectivity 內部的風險警示。
+保留原則設定中的匿名功能，以在此測試期間 anonymize 「內幕風險管理」主控台中的使用者顯示名稱，以維護工具內的隱私權。 這項設定可協助保護具有原則相符之使用者的隱私權，並可協助您在資料調查和分析審核 objectivity 中，協助推廣內部專案風險警示。
 
 若在設定「有問必答風險管理」原則之後，未立即看到任何警示，這可能表示尚未滿足最低風險閾值。 若要檢查是否已觸發原則，並如預期般運作，就是查看**使用者頁面上的原則**是否屬於範圍的好方法。
 
@@ -86,4 +88,7 @@ ms.locfileid: "44327121"
 
 ## <a name="ready-to-get-started"></a>準備好開始使用了嗎？
 
-準備好為您的組織設定測試人員風險管理嗎？ 請參閱[開始使用測試人員風險管理](insider-risk-management-configure.md)來設定必要條件、建立原則並開始接收警示。
+準備好為您的組織設定測試人員風險管理嗎？ 請參閱下列文章：
+
+- [開始使用「會員風險管理」設定](insider-risk-management-settings.md)來設定全域原則設定。
+- [開始使用「內幕風險管理](insider-risk-management-configure.md)」來設定必要條件、建立原則及開始接收提醒。

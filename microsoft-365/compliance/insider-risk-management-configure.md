@@ -12,16 +12,16 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 000f5ee96587aeb055db783e11833aefa6335a14
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: c53bfa58e36b2723d5227c38805482dcb629d864
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091919"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199687"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
-使用測試人員風險管理原則來識別危險的活動和管理工具，以針對組織中的風險警示採取動作。 完成下列步驟來設定必要條件及設定有問必答風險管理原則。
+使用「有問必答風險管理」原則，識別危險的活動和管理工具，以應對組織中的風險警示。 完成下列步驟來設定必要條件及設定有問必答風險管理原則。
 
 >[!IMPORTANT]
 >Microsoft 365 測試人員風險管理解決方案提供租用戶層級選項，以協助客戶在使用者層級加強內部管理。 租用戶層級系統管理員可設定權限，以提供組織成員此解決方案的存取權，並設定 Microsoft 365 合規性中心內的資料連接器，以匯入相關資料來支援使用者層級識別潛在危險活動。 客戶認可實質上與僱用相關的個別使用者行為、特性或績效的深入解析可由系統管理員計算，並提供組織中的其他人使用。
@@ -32,10 +32,10 @@ ms.locfileid: "45091919"
 
 開始使用「內幕風險管理」之前，您應該先確認您的[Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何附加元件。 若要存取及使用「內幕風險管理」，您的組織必須具備下列其中一項訂閱或附加元件：
 
-- Microsoft 365 E5 訂閱 (付費或試用版本) 
+- Microsoft 365 E5 訂閱（付費或試用版）
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
-- Microsoft 365 A5 訂閱 (付費或試用版本) 
+- Microsoft 365 A5 訂閱（付費或試用版）
 - Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
 - Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
 
@@ -43,7 +43,7 @@ ms.locfileid: "45091919"
 
 如果您沒有現有的 Microsoft 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以[將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的訂閱，或註冊 Microsoft 365 Enterprise E5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
-## <a name="step-1-required-enable-permissions-for-insider-risk-management"></a>步驟 1 (必要)：為測試人員風險管理啟用權限
+## <a name="step-1-enable-permissions-for-insider-risk-management"></a>步驟1：啟用內部人員風險管理的許可權
 
 有四個角色群組，用來設定許可權以管理「內幕風險管理」功能。 若要繼續這些設定步驟，您的租使用者管理員必須先將您指派給「**內幕人員風險管理**」或「**內幕風險管理**」管理角色群組。 若要在初始設定之後存取及管理有問必答風險管理功能，使用者必須是至少一個「內幕風險管理」角色群組的成員。
 
@@ -74,42 +74,63 @@ ms.locfileid: "45091919"
 
 7. 選取 **[儲存]** 以將使用者新增至角色群組。 選取 **[關閉]** 以完成步驟。
 
-## <a name="step-2-required-enable-the-audit-log"></a>步驟 2 (必要) ：啟用審核記錄檔
+## <a name="step-2-enable-the-audit-log"></a>步驟2：啟用審核記錄檔
 
-有問必答風險管理使用審核記錄，以供使用者洞察和原則中設定的活動使用。 「審計記錄檔」是與「內幕風險管理」原則相關之所有活動的摘要，或每當原則變更時的摘要。
+有問必答風險管理使用審核記錄，以供使用者洞察和原則中設定的活動使用。 「審計記錄檔」是與「內幕風險管理」原則相關之所有活動的摘要，或不論是何時變更原則。
 
 如需開啟審計的逐步指示，請參閱[開啟或關閉審計記錄搜尋](turn-audit-log-search-on-or-off.md)。 在您開啟審核後，會顯示一則訊息，指出已準備好審核記錄，而且您可以在準備完成後數小時執行搜尋。 您只需執行這項動作一次。 如需使用審核記錄的詳細資訊，請參閱[搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
 
-## <a name="step-3-optional-configure-prerequisites-for-templates"></a>步驟 3 (選用) ：設定範本的必要條件
+## <a name="step-3-configure-prerequisites-for-templates"></a>步驟3：設定範本的必要條件
 
-部分內幕風險管理範本具有必須針對原則指示器所設定的必要條件，以產生相關的活動警示。 根據您計畫為組織設定的原則，設定適當的必要條件。
+大多數的內部風險管理範本都具有必須針對原則指示器所設定的必要條件，以產生相關的活動警示。 根據您計畫為組織設定的原則，設定適當的必要條件。
 
-### <a name="configure-microsoft-365-hr-connector"></a>設定 Microsoft 365 HR Connector
+如果您使用*電子郵件原則範本中的冒犯語言*來設定原則，則可以略過此步驟，直接移至**步驟 4**。
 
-測試人員風險管理支援從協力廠商風險管理和人力資源平台匯入使用者和記錄資料。 Microsoft 365 人力資源 (HR) 資料連接器可讓您從 CSV 檔案提取人力資源資料，包括使用者僱用終止和最後僱用日期。 這項資料可協助磁片箱風險管理原則中的警示指示器，而且在設定組織中的完整風險管理範圍時，是一項重要的部分。
+### <a name="configure-microsoft-365-hr-connector"></a>設定 Microsoft 365 HR connector
 
-如需為貴組織設定 Microsoft 365 HR 連接器的逐步指示，請參閱[設定連接器以匯入 HR 資料](import-hr-data.md)主題。 設定 HR 連接器後，請返回這些設定步驟。
+測試人員風險管理支援從協力廠商風險管理和人力資源平台匯入使用者和記錄資料。 Microsoft 365 人力資源（HR）資料連線器可讓您從 CSV 檔案提取人力資源資料，包括使用者終止日期、最後雇傭日期、效能改進計畫通知、效能檢查動作和工作層級變更狀態。 這項資料可協助磁片箱風險管理原則中的警示指示器，而且在設定組織中的完整風險管理範圍時，是一項重要的部分。 如果您為組織設定多個 HR 連接器，「內部使用者風險管理」會自動從所有 HR 連接器提取指示器。
+使用下列原則範本時，需要使用 Microsoft 365 HR 連接器：
 
->[!IMPORTANT]
->如果您使用「*盜竊員工資料竊取*」範本來設定原則，則必須設定 HR 連接器，以使用原則範本的完整信號偵測功能。 如果您為貴組織設定多個 HR 連接器，測試人員風險管理將會自動從所有 HR 連接器提取指標。
+- 脫離使用者資料竊取
+- 脫離使用者的安全性原則違規
+- 不滿的使用者違反安全性原則
+- 因不滿使用者的資料洩漏
 
-### <a name="configure-data-loss-prevention-dlp-policies"></a>設定資料遺失防護 (DLP) 原則
+如需為組織設定 Microsoft 365 HR connector 的逐步指引，請參閱[設定連接器以匯入 HR 資料](import-hr-data.md)文章。 設定 HR 連接器之後，請回到這些設定步驟。
 
-「內幕風險管理」支援使用 DLP 原則，以協助識別敏感資訊到有害的各方，以取得高嚴重性層級 DLP 警示。 使用**資料洩漏**範本設定有問必答風險管理原則時，您必須將特定的 DLP 原則指派給原則。
+### <a name="configure-data-loss-prevention-dlp-policies"></a>設定資料遺失防護（DLP）原則
 
-這個原則可協助為敏感資訊的高嚴重性 DLP 警示產生「內幕人員風險管理」指示器，這是在組織中設定完整風險管理範圍的重要部分。 如需有關有問必答風險管理和 DLP 原則整合及規劃考慮的詳細資訊，請參閱「[有問必答風險管理原則](insider-risk-management-policies.md#data-leaks)」。
+「內幕風險管理」支援使用 DLP 原則，以協助識別敏感資訊到有害的各方，以取得高嚴重性層級 DLP 警示。 使用任何**資料洩漏**範本設定有問必答風險管理原則時，您必須將特定的 DLP 原則指派給原則。
+
+DLP 原則可協助識別使用者為敏感資訊的高嚴重性 DLP 警示啟用內幕風險管理中的風險計分，這是在組織中設定完整風險管理範圍的重要部分。 如需有關有問必答風險管理和 DLP 原則整合及規劃考慮的詳細資訊，請參閱「[有問必答風險管理原則](insider-risk-management-policies.md#general-data-leaks)」。
 
 >[!IMPORTANT]
 >請確認您已完成下列作業：
 >
 >- 您瞭解及正確地設定 DLP 和有問必答風險管理原則中的範圍內使用者，以產生您預期的原則覆蓋範圍。
->- 請確定與此範本搭配使用的內幕人士原則管理之 DLP 原則中的 [**附隨報告**] 設定會設定*高*嚴重性等級警示。 不會從 DLP 原則產生「內幕風險管理」提醒，其**附隨報告**欄位設定為 [*低*] 或「*中*」。
+>- 請確定與這些範本搭配使用之內幕原則管理的 DLP 原則中的 [**附隨報告**] 設定為*高*嚴重性層級警示設定。 不會從 DLP 原則產生「內幕風險管理」提醒，其**附隨報告**欄位設定為 [*低*] 或「*中*」。
 
-如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。 設定 DLP 原則後，請返回這些設定步驟。
+使用下列原則範本時，需要 DLP 原則：
 
-## <a name="step-4-required-configure-insider-risk-settings"></a>步驟 4 (必要) ：設定內幕人士風險設定
+- 一般資料洩漏
+- 依優先使用者的資料洩漏
 
-「[內部使用者風險」設定](insider-risk-management-policies.md#policy-settings)會套用至所有的內幕風險管理原則，不論您在建立原則時所選擇的範本為何。 設定是使用「**內幕風險設定**」控制項設定，其位於所有「內幕人員風險管理」索引標籤的頂端。 這些設定會控制隱私權、指示器、監控視窗和智慧偵測。
+如需為組織設定 DLP 原則的逐步指引，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)文章。 設定 DLP 原則後，請返回這些設定步驟。
+
+### <a name="configure-priority-user-groups"></a>設定優先順序使用者群組
+
+有問必答風險管理包含的支援指派優先順序使用者群組給原則，以協助識別重要位置的使用者特有的風險活動、高層次的資料和網路存取，或過去的風險行為歷史。 建立優先順序使用者群組，並將使用者指派至群組協助範圍原則，以說明這些使用者所呈現的獨特情況。
+
+使用下列原則範本時，需要優先順序的使用者群組：
+
+- 依優先順序的使用者所破壞的安全性原則 
+- 依優先使用者的資料洩漏
+
+如需建立優先順序使用者群組的逐步指引，請參閱[開始使用「會員風險管理」管理設定](insider-risk-management-settings.md#priority-user-groups-preview)文章。 設定優先順序使用者群組之後，請回到這些設定步驟。
+
+## <a name="step-4-configure-insider-risk-settings"></a>步驟4：設定有問必答風險設定
+
+「[內部使用者風險」設定](insider-risk-management-settings.md)會套用至所有的內幕風險管理原則，不論您在建立原則時所選擇的範本為何。 設定是使用「**內幕風險設定**」控制項設定，其位於所有「內幕人員風險管理」索引標籤的頂端。 這些設定會控制隱私權、指示器、監控視窗和智慧偵測。
 
 在設定原則之前，請定義下列「內幕人員風險設定」：
 
@@ -120,34 +141,50 @@ ms.locfileid: "45091919"
     >[!IMPORTANT]
     >您必須選取一或多個指標，才能接收您原則中所定義之危險活動的警示。
 
-4. 在 [**原則時段**] 頁面上，選取[原則時段](insider-risk-management-policies.md#policy-timeframes)，當使用者觸發內部使用者風險原則的相符時，就會變成作用中的使用者。
-5. 在 [**智慧**偵測] 頁面上，設定內幕風險原則的[反常偵測、冒犯性語言偵測和警示磁片區層級](insider-risk-management-policies.md#intelligent-detections)。
-6. 選取 [**儲存**] 以啟用內部使用者風險原則的這些設定。
+4. 在 [**原則時段**] 頁面上，選取[原則時段](insider-risk-management-settings.md#policy-timeframes)，當使用者觸發內部使用者風險原則的相符時，就會變成作用中的使用者。
+5. 在 [**智慧**偵測] 頁面上，為「內部人員風險原則」設定下列設定：
+    - [反常偵測](insider-risk-management-settings.md#anomaly-detections)
+    - [冒犯性語言偵測](insider-risk-management-settings.md#offensive-language-detections)
+    - [警示音量層級](insider-risk-management-settings.md#alert-volume)
+    - [Microsoft 365 Defender 高級威脅防護警示狀態](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
+    - [網域設定](insider-risk-management-settings.md#domains-preview)
+6. 在 [**匯出提醒**] 頁面上，根據需要，使用 Office 365 管理 APIs 啟用「匯出的會員風險警示資訊」。
+7. 在 [**優先順序使用者群組**] 頁面上，建立 [優先順序] 使用者群組，並在**步驟 3**中建立使用者時新增使用者。
+8. 選取 [**儲存**] 以啟用內部使用者風險原則的這些設定。
 
-## <a name="step-5-required-create-an-insider-risk-management-policy"></a>步驟 5 (必要) ：建立「內幕人員風險管理」原則
+## <a name="step-5-create-an-insider-risk-management-policy"></a>步驟5：建立內部人員風險管理原則
 
 測試人員風險管理原則包括指派的使用者，並定義針對警示設定的風險指標類型。 必須先設定原則，活動才會觸發警示。
 
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)，移至 **[測試人員風險管理]**，然後選取 **[原則]** 索引標籤。
 2. 選取 **[建立原則]** 以開啟原則精靈
 3. 在 **[新增測試人員風險原則]** 頁面上，完成下列欄位：
-    - **Name (必要) **：輸入原則的易記名稱。
+    - **名稱（必要）**：輸入原則的易記名稱。
     - **說明 (選用)**：輸入原則的說明。
     - **選擇原則範本 (必要)**：選取其中一個[原則範本](insider-risk-management-policies.md#policy-templates)，以定義受原則監視的風險指標類型。
 
     >[!IMPORTANT]
-    >如果您選取 *[資料外洩]* 範本，必須設定至少一個稍後在精靈中指派的 DLP 原則。 如果您選取*離職員工資料偷竊*範本，您必須將 HR 連接器設定為使用原則範本的完整訊號偵測功能。
+    >大多數原則範本都具有必須針對原則進行設定以產生相關警示的必要條件。 若尚未設定適用的原則必要條件，請參閱上述的**步驟 3** 。
 
 4. 選取 **[下一步]** 繼續。
-5. 在 **[使用者]** 頁面上，選取 **[新增使用者或群組]** 以定義要包含在原則中的使用者，或勾選 **[所有使用者和擁有郵件功能的群組]** 核取方塊。 選取 **[下一步]** 繼續。
-6. 在 **[指定優先內容 (選用)]** 頁面上，您可以指派來源，以設定危險使用者活動的優先順序：
+5. 在 [**使用者**] 頁面上，選取 [**新增使用者或群組**] 或 **[選擇優先級使用者群組**]，以根據您所選取的原則範本，定義納入原則中的使用者或優先順序使用者群組。 如果適用的話，請選取 [**所有使用者及擁有郵件功能的群組**] 核取方塊（如果您尚未選取優先順序使用者的範本）。 選取 **[下一步]** 繼續。
+6. 在 [**指定要設定優先順序的內容（選用）** ] 頁面上，您可以指派來源，以優先增加風險分數。 不過，除非相關的內容包含內建或自訂的機密資訊類型，或是在此頁面上指定為優先順序，否則有些活動根本不會產生警示：
     - **SharePoint 網站**：選取 **[新增 SharePoint 網站]**，然後選取要設定優先順序的 SharePoint 組織。 例如，*"group1@contoso.sharepoint.com/sites/group1"*。
     - **敏感性資訊類型**：選取 **[新增敏感性資訊類型]**，然後選取要設定優先順序的敏感性類型。 例如，*[美國銀行帳戶號碼]* 和 *[信用卡號碼]*。
     - **敏感度標籤**：選取 **[新增敏感度標籤]**，然後選取要設定優先順序的標籤。 例如，*[機密]* 和 *[密碼]*。
 7. 選取 **[下一步]** 繼續。
-8. 在 [**提醒**指標] 頁面上，您會看到您已在 [**有問必答風險設定**  >  **指示器**] 頁面上定義的指示器。 如果您在精靈開始時選取 *[資料外洩]* 範本，必須從 **[DLP 原則]** 下拉式清單中選取 DLP 原則。
-9. 在 [**選取監看視窗]** 頁面上，您會看到 [**有問必答風險設定**原則時段] 頁面上的原則[監控視窗條件](insider-risk-management-policies.md#policy-timeframes)  >  **Policy timeframes** 。 如果您已選取「終止*員工資料竊取*」原則範本，您可以選取 [*檢查活動後終止*] 核取方塊，以在從 Microsoft 365 HR Connector 匯入的終止日期之後，偵測活動。
-10. 選取 **[下一步]** 繼續。
-11. 在**檢閱**頁面上，檢閱您為原則選擇的設定。 選取 **[編輯]** 以變更任何原則值，或選取 **[提交]** 來建立並啟用原則。
+8. 在 [**選取原則指示器**] 頁面上，您會看到您已在「**有問必答風險設定**指示器」頁面上定義為可用的[指示器](insider-risk-management-settings.md#indicators)  >  **Indicators** 。 如果您在嚮導的開頭選取*資料洩漏*範本，則必須從 [ **dlp 原則**] 下拉式清單中選取 dlp 原則，才能啟用該原則的觸發指示器。 選取您要套用到原則的指示器。 如果您不想使用這些指標的預設原則閾值設定，請停用 [**使用 Microsoft 建議的預設閾值**]，然後為每個選取的指示器輸入臨界值。 如果您已選取至少一個*辦公室*或*裝置*指標，請視需要選取 [**風險分數 boosters** ]。 風險分數 boosters 只適用于選取的指示器。
 
-完成這些步驟以建立第一個測試人員風險管理原則後，您會在大約 24 小時後開始從活動指標收到警示。 請視需要使用本主題步驟 4 中的指引，或[建立新的測試人員風險原則](insider-risk-management-policies.md#create-a-new-policy)中的步驟來設定其他原則。
+    >[!IMPORTANT]
+    >如果無法選取此頁面上的指示器，您必須選取要對「**內幕人員風險管理**  >  **設定**  >  **原則指示器**」頁面上的所有原則啟用的指示器。
+
+9. 選取 **[下一步]** 繼續。
+10. 在 [**原則時段**] 頁面上，您會在 [**有問必答風險設定**原則時段] 頁面上看到 [原則] 的 [[啟用] 視窗條件](insider-risk-management-settings.md#policy-timeframes)  >  **Policy timeframes** 。
+11. 選取 **[下一步]** 繼續。
+12. 在**檢閱**頁面上，檢閱您為原則選擇的設定。 選取 **[編輯]** 以變更任何原則值，或選取 **[提交]** 來建立並啟用原則。
+
+## <a name="next-steps"></a>後續步驟
+
+完成這些步驟以建立第一個測試人員風險管理原則後，您會在大約 24 小時後開始從活動指標收到警示。 請視需要使用本文步驟4中的指導方針，或[建立新的內幕檔風險原則](insider-risk-management-policies.md#create-a-new-policy)中的步驟，來設定其他原則。
+
+若要深入瞭解如何調查「內幕風險預警」和「**警示」儀表板**，請參閱「[有問必答風險管理」提醒](insider-risk-management-alerts.md)。

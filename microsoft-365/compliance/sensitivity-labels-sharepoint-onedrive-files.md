@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: ee6f89db7758140ac8e4c2752d8a2883cc0990db
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 8530e3d82fd670eedde9a874b0a87a0bad523fe5
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780716"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199523"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -164,17 +164,18 @@ ms.locfileid: "44780716"
     ```
 3. 針對 Microsoft 365 多地理位置：針對您餘下的地理位置重複步驟1和2。
 
-## <a name="schedule-roll-out-after-you-create-or-change-a-sensitivity-label"></a>在您建立或變更靈敏度標籤之後排程部署
+## <a name="publishing-and-changing-sensitivity-labels"></a>發佈和變更敏感度標籤
 
-在 Microsoft 365 規範中心內建立或變更靈敏度標籤之後，請分階段發佈。 如果您發佈尚未完全同步處理的標籤，當使用者將標籤套用至檔案，並將其上傳至 SharePoint 時，就無法在網頁版的 Office 應用程式中開啟檔案。 搜尋和 eDiscovery 也不適用於檔案。
+當您使用敏感度標籤與 SharePoint 和 OneDrive 時，請記住，當您發佈新的靈敏度標籤或更新現有的靈敏度標籤時，您必須允許的複寫時間。 這對套用加密的新標籤尤其重要。
 
-我們建議您遵循下列步驟：
+例如：您可以建立及發行套用加密的新敏感度標籤，而且會很快出現在使用者的桌面應用程式中。 使用者將此標籤套用至檔，然後將其上傳至 SharePoint 或 OneDrive。 如果服務的標籤複寫尚未完成，則上載時不會將新功能套用至該檔。 因此，在 [搜尋] 或 [eDiscovery] 中不會傳回檔，而且無法在 Office 中為 web 開啟檔。
 
-1. 僅將新的或修改過的敏感度標籤發佈給一或兩個人。
+- 下列變更會在一小時內複寫：新增和刪除的敏感度標籤，以及包含哪些標籤位於原則中的靈敏度標籤原則設定。
 
-2. 在初始出版物過後等候至少24小時。 確認標籤已完全同步處理。
+- 下列變更會在24小時內複製：現有標籤的靈敏度標籤設定變更。
 
-3. 更廣泛地發佈標籤。
+因為對於新的敏感度標籤的複寫延遲現在只一小時，所以您不會在範例中執行案例。 但作為一種保護措施，我們建議您先將新標籤發佈到少數測試使用者，等候一小時，然後在 SharePoint 和 OneDrive 上驗證標籤行為。 最後一個步驟是將更多使用者新增至現有標籤原則，或將標籤新增至現有的標籤原則，以供更多使用者使用。 當您的標準使用者看到標籤時，它已經同步處理至 SharePoint 和 OneDrive。
+
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint 資訊版權管理（IRM）和敏感度標籤
 

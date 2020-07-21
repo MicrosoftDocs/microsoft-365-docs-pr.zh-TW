@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解反垃圾郵件設定和篩選器，有助於防止 Exchange Online Protection （EOP）中的垃圾郵件。
-ms.openlocfilehash: ce673a4bee64dfbc84f870f9cf4871e9ac32a71c
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 74ffe22ffea07350245f6fed18d09b52f96c8351
+ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800104"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45189558"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP 中的反垃圾郵件保護
 
@@ -36,6 +36,9 @@ ms.locfileid: "44800104"
 Microsoft 的電子郵件安全藍圖包含一種無與倫比的跨產品方式。 EOP 反垃圾郵件和反網路釣魚技術是透過電子郵件平臺進行套用，以在整個網路中為使用者提供最新的反垃圾郵件和反網路釣魚工具和革新功能。 EOP 的目標是提供綜合且可用的電子郵件服務，以協助偵測和保護使用者免受垃圾郵件、欺詐電子郵件威脅（網路釣魚）和惡意程式碼的攻擊。
 
 隨著電子郵件使用方式成長，電子郵件濫用。 未受監控的垃圾郵件可能會堵塞收件匣和網路、影響使用者滿意度，並影響合法電子郵件通訊的效能。 這就是 Microsoft 繼續投資反垃圾郵件技術的原因。 簡而言之，它會以包含並篩選垃圾郵件的方式開始。
+
+> [!TIP]
+> 當您想要根據郵件信封（例如，寄件者的網域或郵件的來源 IP 位址）允許或封鎖郵件時，下列反垃圾郵件技術會非常有用。 若要根據負載允許或封鎖郵件（例如，在郵件或附加檔案中 URLs），您應該使用[承租人允許/封鎖清單入口網站](tenant-allow-block-list.md)。
 
 ## <a name="anti-spam-technologies-in-eop"></a>EOP 中的反垃圾郵件技術
 

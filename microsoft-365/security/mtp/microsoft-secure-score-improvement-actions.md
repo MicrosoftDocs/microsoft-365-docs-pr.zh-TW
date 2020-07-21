@@ -1,5 +1,5 @@
 ---
-title: 透過 Microsoft 安全分數深入瞭解安全性狀況
+title: 透過 Microsoft 安全分數評估安全性狀況
 description: 說明如何採取動作，以改善 Microsoft 365 安全中心的 Microsoft 安全分數。
 keywords: 安全性、惡意程式碼、Microsoft 365、M365、安全分數、安全性中心、改進動作
 ms.prod: microsoft-365-enterprise
@@ -20,27 +20,27 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 0ae1a196f11f383c1d3f9fd2056d5d19e7cdd6da
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 469056bbae4627e0b013bfc0f2e965586fd15175
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45095025"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200059"
 ---
-# <a name="gain-visibility-into-your-security-posture-through-microsoft-secure-score"></a>透過 Microsoft 安全分數深入瞭解安全性狀況
+# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分數評估安全性狀況
 
 Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。
 
 為了協助您更快速地取得所需資訊，Microsoft 改進的動作會組織成群組：
 
-*  (Azure AD 帳戶 & 角色的身分識別) 
-* 資料 (Microsoft 資訊保護) 
-* 裝置 (Microsoft Defender ATP，稱為設定[分數](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score)) 
-* App (電子郵件和雲端應用程式，包括 Office 365 和 Microsoft Cloud App Security) 
-* 基礎結構 (現在沒有任何改進動作) 
+* Identity （Azure AD 帳戶 & 角色）
+* 資料（Microsoft 資訊保護）
+* 裝置（Microsoft Defender ATP，稱為設定[分數](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score)）
+* 應用程式（電子郵件和雲端應用程式，包括 Office 365 和 Microsoft Cloud App Security）
+* 基礎結構（現在沒有任何改進動作）
 
 >[!NOTE]
->在最近發行的 Microsoft Secure 得分中，已發行的評分模型已發佈，使 Microsoft 安全分數暫時不相容身分識別安全分數和圖形 API。 [檢視詳細資料](microsoft-secure-score.md#incompatibility-with-identity-secure-score-and-graph-api)
+>在最近發行的 Microsoft Secure 得分中，已發行的評分模型已發佈，使 Microsoft 安全分數暫時不相容身分識別安全分數和圖形 API。 [檢視詳細資料](microsoft-secure-score-whats-new.md)
 
 在 [Microsoft Secure 得分一覽] 頁面中，您可以看到各群組之間的點數如何分割，以及哪些點可供使用。 [一覽表] 頁面也是取得整體總分、您的安全分數與基準比較之歷史趨勢的完整視圖，以及可以採取以改善評分的優先改進動作的位置。
 
@@ -64,7 +64,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 ## <a name="take-action-to-improve-your-score"></a>採取動作以提升您的分數
 
-[**改進動作**] 索引標籤會列出解決可能攻擊面的安全性建議，及其狀態 (，以解決、計畫、接受的風險、透過協力廠商解決、已透過替代的緩解措施解決，以及完成) 。 您可以搜尋、篩選和群組所有的「改進」動作。  
+[**改進動作**] 索引標籤會列出解決可能的攻擊面的安全性建議，及其狀態（to address、已計畫、已被認可的風險、透過協力廠商解決的問題，以及透過取代的緩解，以及已完成）。 您可以搜尋、篩選和群組所有的「改進」動作。  
 
 ### <a name="ranking"></a>排名
 
@@ -94,7 +94,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>威脅 & 弱點管理的改進動作
 
-在 "Device" 類別中的改進動作，您將無法選擇狀態。 相反地，您會被導向相關[威脅 & 弱點管理 (TVM) 安全性建議](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)的[Microsoft Defender 安全中心](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)以採取行動。 您選擇的例外狀況和您所撰寫的理由將會特定于該入口網站，而且不會出現在 Microsoft Secure 得分入口網站中。
+在 "Device" 類別中的改進動作，您將無法選擇狀態。 相反地，您會將[Microsoft Defender 安全中心](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)的相關[威脅 & 漏洞管理（TVM）安全性建議](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)，以採取行動。 您選擇的例外狀況和您所撰寫的理由將會特定于該入口網站，而且不會出現在 Microsoft Secure 得分入口網站中。
 
 #### <a name="completed-improvement-actions"></a>已完成的改進動作
 
@@ -121,3 +121,4 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 - [Microsoft 安全評分概述](microsoft-secure-score.md)
 - [追蹤您的 Microsoft 安全分數記錄並符合目標](microsoft-secure-score-history-metrics-trends.md)
 - [即將推出的功能](microsoft-secure-score-whats-coming.md)
+- [新功能](microsoft-secure-score-whats-new.md)

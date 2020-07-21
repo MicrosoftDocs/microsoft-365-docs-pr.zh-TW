@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 我們不斷將新功能新增至 Microsoft 365 規範中心。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2a48a47c631b0fd3c7e785d98b7221a0c3550c79
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 29d99e0af5f161c91b8a192b9d6f1545a13c7c80
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126906"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199463"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 規範中心的新功能
 
@@ -42,7 +42,7 @@ ms.locfileid: "45126906"
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) （付費或試用版）
 - Microsoft 365 Enterprise E3 訂閱與[Microsoft E5 合規性附加](https://go.microsoft.com/fwlink/?linkid=2120432)元件
 
-請注意，自預覽發行後我們進行了一些改進，包括[新的角色群組](insider-risk-management-configure.md#step-1-required-enable-permissions-for-insider-risk-management)和[全方案設定](insider-risk-management-configure.md#step-4-required-configure-insider-risk-settings)。
+請注意，自預覽發行後我們進行了一些改進，包括[新的角色群組](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)和[全方案設定](insider-risk-management-configure.md#step-4-configure-insider-risk-settings)。
 
 一如既往，請在您使用解決方案時留下意見反應，讓我們能夠繼續進行改進。
 
@@ -171,12 +171,12 @@ ms.locfileid: "45126906"
 |資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md)|
 |資料主體要求 |資料隱私權 > 資料主體要求 <br/> https://protection.office.com/dsrcases |資料主體要求 <br/> https://compliance.microsoft.com/datasubjectrequest |[使用 DSR 案例工具管理 GDPR 資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |電子文件探索|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
-|事件|記錄管理 > 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件發生時的開始保留](event-driven-retention.md)|
+|事件|記錄管理 > 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件發生時開始保留](event-driven-retention.md)|
 |檔案計畫|記錄管理 > 檔計畫 <br/> https://protection.office.com/fileplan |記錄管理 > 檔計畫] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[使用檔案計畫來管理保留標籤](file-plan-manager.md)|
 |匯入 PST 檔案|資訊管理 > 匯入 PST 檔案 <br/> https://protection.office.com/importV2 |資訊控管 > 匯入] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[將組織的 PST 檔案匯入的概觀](importing-pst-files-to-office-365.md)|
 |標籤活動瀏覽器|資訊控管 > 標籤活動瀏覽器 <br/> https://protection.office.com/labelexplorer |資料分類 > 活動流覽] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[檢視套用標籤的內容上的活動 (預覽)](data-classification-activity-explorer.md)|
 |保留標籤及標籤原則 |分類 > 保留標籤 > 標籤及標籤原則] 索引標籤 <br/> https://protection.office.com/retentionlabels |資訊控管 > 標籤及標籤原則] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留標籤概觀](retention.md)|
-|保留原則|資訊管理 > 保留 <br/> https://protection.office.com/retention |資訊管理 > 保留] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[深入瞭解保留原則和保留標籤](retention.md)|
+|保留原則|資訊管理 > 保留 <br/> https://protection.office.com/retention |資訊管理 > 保留] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[瞭解保留原則和保留標籤](retention.md)|
 |敏感資訊類型|分類 > 敏感資訊類型 <br/> https://protection.office.com/sensitivetypes |資料分類 > 敏感度資訊類型] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)|
 |敏感度標籤及標籤原則|分類 > 敏感度標籤 > 標籤及標籤原則] 索引標籤 <br/> https://protection.office.com/sensitivity |資訊保護 > 標籤及標籤原則] 索引標籤 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度標籤](sensitivity-labels.md) |
 |服務保證|服務保證 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服務保障資源只可在 Office 365 安全性 & 規範中心存取。 |[安全性與規範中心的服務保證](service-assurance.md)|
