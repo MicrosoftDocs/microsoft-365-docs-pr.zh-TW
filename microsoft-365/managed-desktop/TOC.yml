@@ -38,6 +38,8 @@
           href: service-description/operations-and-monitoring.md
         - name: 應用程式需求
           href: service-description/mmd-app-requirements.md
+        - name: 應用程式控制
+          href: service-description/app-control.md
         - name: 服務變更與通訊
           href: service-description/servicechanges.md
         - name: 服務方案的例外狀況
@@ -89,6 +91,8 @@
               href: get-started/register-reused-devices-self.md
         - name: 讓您的使用者準備好使用裝置
           href: get-started/get-started-devices.md
+        - name: 開始使用應用程式控制
+          href: get-started/get-started-app-control.md
         - name: 部署應用程式
           href: get-started/deploy-apps.md
           items:
@@ -116,6 +120,8 @@
           href: working-with-managed-desktop/end-user-support.md
         - name: 管理應用程式
           href: working-with-managed-desktop/manage-apps.md
+        - name: 使用應用程式控制
+          href: working-with-managed-desktop/work-with-app-control.md
         - name: 可設定的設定
           href: working-with-managed-desktop/config-setting-overview.md
           items:
