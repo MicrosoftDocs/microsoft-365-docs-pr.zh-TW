@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 瞭解如何將來賓新增至 Microsoft 365 群組、查看來賓使用者，以及使用 PowerShell 來控制來賓存取。
-ms.openlocfilehash: 0322bd269f1c5637627461d136b40f6af4fc9540
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: a56d9599824ac1436c6f875661bcd573c1f6b1ca
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854243"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204740"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 群組中管理來賓存取
 
@@ -114,7 +114,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 ## <a name="add-guests-to-the-global-address-list"></a>將客人新增至全域通訊清單
 
-根據預設，來賓在 Exchange 全域通訊清單中不會顯示。 使用下列步驟，讓來賓在全域通訊清單中可見。
+根據預設，來賓在 Exchange 全域通訊清單中不會顯示。 使用下列步驟，讓來賓在全域通訊清單中可見。 請確定來賓在 Exchange Online 系統管理中心中是可見的。 新增來賓後，可能需要較短的時間顯示出來。
 
 執行下列動作，尋找來賓使用者的 ObjectID：
 

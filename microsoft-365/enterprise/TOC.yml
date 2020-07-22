@@ -88,6 +88,11 @@
           href: deployment-strategies-microsoft-365-enterprise.md
         - name: 使用現有的基礎結構部署
           href: deploy-with-existing-infrastructure.md
+        - name: 部署和更新通道範例設定
+          href: deploy-update-channels-examples.md
+          items:
+            - name: 廣泛部署最新版本
+              href: deploy-update-channels-examples-rapid-deploy.md
         - name: 非企業部署
           href: deploy-foundation-infrastructure-non-enterprises.md
     - name: 部署工作負載

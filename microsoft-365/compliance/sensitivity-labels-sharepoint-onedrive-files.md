@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 8530e3d82fd670eedde9a874b0a87a0bad523fe5
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a6826be5cccf89d3b2e48e0e37df9a9263e4a8a7
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199523"
+ms.locfileid: "45201507"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -30,7 +30,7 @@ ms.locfileid: "45199523"
 
 在 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤之前，您無法將您的[靈敏度卷](sensitivity-labels.md)標套用至網頁上的 office。 您不會在功能區上看到 [**靈敏度**] 按鈕，或在狀態列上看到已套用的標籤名稱。 此外，如果您使用桌面應用程式來標示您的檔案，然後將檔案儲存在 SharePoint 或 OneDrive 上，如果標籤已套用加密，服務就無法處理這些檔案的內容。 在這些情況下，合著、eDiscovery、資料遺失防護、搜尋及其他協同功能無法運作。
 
-當您在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤時，會啟用所有這些功能。 除了為使用者顯示敏感度標籤之外，針對已套用敏感度標籤（包含以雲端為基礎的金鑰進行加密）的新檔和變更的檔案：
+當您在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤時，會啟用所有這些功能。 除了為使用者顯示敏感度標籤之外，針對已套用敏感度標籤的新檔案及已變更檔案，該檔案包含以雲端式金鑰加密（而且不會使用[雙金鑰加密](double-key-encryption.md)）：
 
 - 若為 Word、Excel 及 PowerPoint 檔案，SharePoint 會辨識標籤，現在可以處理加密檔的內容。
 
@@ -45,7 +45,7 @@ ms.locfileid: "45199523"
 - Office 365 eDiscovery 支援這些檔案的全文搜尋。 資料遺失防護（DLP）原則支援這些檔案中的內容。
 
 > [!NOTE]
-> 若尚未使用雲端型金鑰（內部部署金鑰）套用加密，通常稱為「保留您自己的金鑰」（HYOK）的金鑰管理拓撲，處理檔內容的 SharePoint 行為不會改變。
+> 如果已使用內部部署金鑰套用加密，金鑰管理拓撲通常稱為「保留您自己的金鑰」（HYOK），或使用[雙重金鑰加密](double-key-encryption.md)，處理檔內容的 SharePoint 行為不會改變。
 >
 > SharePoint 行為也不會變更 SharePoint 中的現有標籤和加密檔。 為了讓這些檔案受益于新功能，在您執行此命令以啟用 SharePoint 和 OneDrive 的靈敏度標籤之後，必須下載並上傳或編輯這些檔案。 SharePoint 可以處理這些檔案。 例如，他們會在搜尋和 eDiscovery 結果中傳回。
 
@@ -70,17 +70,18 @@ ms.locfileid: "45199523"
 
 ## <a name="limitations"></a>限制
 
-- SharePoint 不會自動將敏感度標籤套用至您已使用 Azure 資訊保護標籤加密的現有檔案。 相反地，若要在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，取得功能，請完成下列工作：
+- SharePoint 不會自動將敏感度標籤套用至您已使用 Azure 資訊保護標籤加密的現有檔案。 相反地，當您在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，這些功能才能運作：
     
     1. 確定您已將[Azure 資訊保護標籤遷移](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)至靈敏度標籤，並已從 Microsoft 365 規範中心（或對等標上的標記系統管理中心）[發行](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)。
     
     2. 下載檔案，然後將檔案上傳至 SharePoint。
 
-- 當套用加密的標籤有下列兩種[加密](encryption-sensitivity-labels.md#configure-encryption-settings)設定時，SharePoint 無法處理加密的檔案：
+- 當套用加密的標籤有下列任何加密設定時[，](encryption-sensitivity-labels.md#configure-encryption-settings)SharePoint 無法處理加密的檔案：
     - **讓使用者在套用標籤**和 [ **Word、PowerPoint 及 Excel 中**的核取方塊時，指定許可權，並選取 [提示使用者指定許可權]。 此設定有時稱為「使用者定義的許可權」。
     - 對**內容到期的使用者存取權**設定為**永不**值以外的值。
+    - 已選取 [**雙機碼加密**]。
     
-    如果是具有上述任一種加密設定的標籤，則網頁上的 Office 使用者不會看到標籤。 此外，新功能也無法與已有這些加密設定的已標記檔一起使用。 例如，即使更新這些檔，這些檔也不會在搜尋結果中傳回。
+    針對具有上述任何加密設定的標籤，網頁上的 Office 使用者不會看到標籤。 此外，新功能也無法與已有這些加密設定的已標記檔一起使用。 例如，即使更新這些檔，這些檔也不會在搜尋結果中傳回。
 
 - 針對授與使用者編輯許可權的加密檔，在 Office 應用程式的 web 版本中無法封鎖複製。
 
@@ -96,6 +97,7 @@ ms.locfileid: "45199523"
 
 - 以下列方式加密的檔無法在 web 上的 Office 中開啟：
     - 使用內部部署機碼的加密（「保留您自己的金鑰」或 HYOK）
+    - 使用[雙重金鑰加密](double-key-encryption.md)所套用的加密 
     - 獨立于標籤所套用的加密，例如直接套用 Rights Management protection 範本。
 
 - 如果您刪除的標籤已套用至 SharePoint 中的檔，而不是從適當的標籤原則中移除標籤，則下載的檔不會標示或加密。 相比之下，如果標籤的檔儲存在 SharePoint 之外，當標籤刪除時，該檔仍會保持加密狀態。 請注意，雖然您可以在測試階段刪除標籤，但很少需要在實際執行環境中刪除標籤。

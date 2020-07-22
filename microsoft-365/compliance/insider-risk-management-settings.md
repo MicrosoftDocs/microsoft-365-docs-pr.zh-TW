@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 7ab2b0ddaa7bc1c8ed4109affb2ef5ff11a7420b
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: a31ee6de305cf9226a8b605f75bb71406f78fd70
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200202"
+ms.locfileid: "45201419"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>開始使用「內幕風險管理」設定
 
@@ -74,7 +74,7 @@ ms.locfileid: "45200202"
 
 ![有問必答風險管理自訂指示器設定](../media/insider-risk-custom-indicators.png)
 
-- 在第一個 [每日] 事件層級中，您會將臨界值設定為*每日10個或多個事件*，以降低事件的風險評分影響、每天*20 或*以上的事件，以瞭解*對事件風險*評分的影響，以及*每天30或以上事件*對事件風險評分的影響。 這些設定實際上表示：
+在第一個 [每日] 事件層級中，您會將臨界值設定為*每日10個或多個事件*，以降低事件的風險評分影響、每天*20 或*以上的事件，以瞭解對事件風險評分的影響，以及*每天30或以上事件*對事件風險評分的影響。 這些設定實際上表示：
 
 - 如果有 1-9 SharePoint 事件會發生于觸發事件後，風險分數會影響最低，而且傾向不要產生警示。
 - 如果有 10-19 SharePoint 事件會在觸發事件之後發生，則風險分數原本會變低，警示嚴重性層級一般會是低層級。

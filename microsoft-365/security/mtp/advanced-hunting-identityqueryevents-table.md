@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bec7f13d49e2ccf4e3a9121d5e5a2fecd1b10aa2
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 436c4d7306f9f5febd614489090a0a10929ba3c9
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899110"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204872"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -38,8 +38,9 @@ ms.locfileid: "44899110"
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
 | `ActionType` | string | 觸發事件的活動類型 |
 | `Application` | string | 執行錄製動作的應用程式 |
-| `Query` | string | 查詢類型： QueryGroup、QueryUser 或 EnumerateUsers |
-| `QueryObject` | string | 所查詢的使用者、群組、裝置、網域或任何其他實體類型的名稱 |
+| `QueryType` | string | 查詢類型，例如 QueryGroup、QueryUser 或 EnumerateUsers |
+| `QueryTarget` | string | 所查詢的使用者、群組、裝置、網域或任何其他實體類型的名稱 |
+| `Query` | string | 用來執行查詢的字串 |
 | `Protocol` | string | 通訊期間使用的通訊協定 |
 | `AccountName` | string | 帳戶的使用者名稱 |
 | `AccountDomain` | string | 帳戶的網域 |
@@ -49,7 +50,14 @@ ms.locfileid: "44899110"
 | `AccountDisplayName` | string | 顯示在通訊錄中之帳戶使用者的名稱。 通常是指定的名稱或名字、中間初始名稱或姓氏的組合。 |
 | `DeviceName` | string | 端點的完整功能變數名稱（FQDN） |
 | `IPAddress` | string | 指派給端點的 IP 位址，並在相關的網路通訊期間使用 |
+| `DestinationDeviceName` | string | 執行伺服器應用程式（處理錄製的動作）的裝置名稱 |
+| `DestinationIPAddress` | string | 執行伺服器應用程式（處理錄製的動作）的裝置的 IP 位址 |
+| `TargetDeviceName` | string | 已錄製動作套用至之裝置的完整功能變數名稱（FQDN） |
+| `TargetAccountUpn` | string | 套用錄製動作之帳戶的使用者主要名稱（UPN） |
+| `TargetAccountDisplayName` | string | 套用錄製的動作所套用之帳戶的顯示名稱 |
 | `Location` | string | 與事件關聯的城市、國家或其他地理位置 |
+| `ReportId` | long | 事件的唯一識別碼 |
+| `AdditionalFields` | string | 實體或事件的其他資訊 |
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

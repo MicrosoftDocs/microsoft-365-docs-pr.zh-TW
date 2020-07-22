@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: 7e4b12310d05ecbceb9df2eac5fe4d48e9275bb8
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: b9168320b5764a3d7ed4e1570c32f0f35ccbc44d
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936924"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199623"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -109,11 +109,13 @@ ms.locfileid: "44936924"
 
 ### <a name="creating-and-publishing-labels-that-are-configured-for-sites-and-groups"></a>建立及發佈針對網站和群組設定的標籤
 
-建立並發佈敏感度標籤後，最多可能需要 24 小時的時間，標籤才會對小組、群組和網站中的使用者顯示。 當標籤時是針對網站和群組進行設定時，請使用下列指導方針來為您的使用者發佈該標籤：
+建立並發佈新敏感度標籤後，在一個小時內小組、群組和網站中的使用者就會看到該標籤。 不過，如果您修改現有的標籤，最多需要等候 24 小時。 當標籤時是針對網站和群組進行設定時，請使用下列指導方針來為您的使用者發佈該標籤：
 
 1. 建立及設定敏感度標籤之後，請將此標籤新增至只適用一些測試使用者的標籤原則。
 
-2. 等候 24 小時。
+2. 等候複寫變更：
+    - 新標籤：等待 1 小時。
+    - 現有標籤：等候 24 小時。
 
 3. 在此等候期間之後，請使用其中一個測試使用者帳戶來建立小組、Microsoft 365 群組或 SharePoint 網站，並搭配您在步驟 1 中建立的標籤。
 
@@ -121,7 +123,7 @@ ms.locfileid: "44936924"
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>修改針對網站和群組設定的已發佈標籤
 
-最佳做法是，不要在將標籤套用至小組、群組或網站之後，變更敏感度標籤的網站和群組設定。 如果您這麼做，請允許最多 3 天的時間，讓變更複製至已套用標籤的所有容器。 
+最佳做法是，不要在將標籤套用至小組、群組或網站之後，變更敏感度標籤的網站和群組設定。 如果您這麼做，請等候最多 24 小時的時間，讓變更複寫至已套用標籤的所有容器。 
 
 此外，如果您的變更包括 [外部使用者存取]**** 設定：
 
@@ -136,7 +138,7 @@ ms.locfileid: "44936924"
 
 1. 從包含標籤的所有標籤原則中移除敏感度標籤。
 
-2. 等候 48 小時。
+2. 請等候 1 小時。
 
 3. 在此等候期間之後，請嘗試建立小組、群組或網站，並確認標籤已不再顯示。
 

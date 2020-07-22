@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection （EOP）中查看、建立、修改和刪除輸出垃圾郵件原則。
-ms.openlocfilehash: 7102f858e0293f2a55fe68a55d4dc2cf3ab38a33
-ms.sourcegitcommit: 51a9f34796535309b8ca8b52da92da0a3621327b
+ms.openlocfilehash: 9f70deeb371278fa397e5186b4c770f776abff32
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45024579"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204848"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -136,26 +136,10 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
    - **如果寄件者因傳送輸出的垃圾郵件而遭到封鎖，請通知特定人員**：
 
-     > [!NOTE]
-     > 當使用者因超過 [**收件者限制**] 區段中的限制時[，已封鎖](../../compliance/alert-policies.md)使用者 TenantAdmins （全域系統管理員）群組的成員時，會將**電子郵件通知**傳送至**TenantAdmins** （**全域系統管理員**）群組的成員。 建議您在輸出垃圾郵件原則中使用警示原則，而不是此設定，以通知系統管理員和其他使用者。 如需相關指示，請參閱[確認限制使用者的警示設定](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 <br/><br/> 此設定僅適用于預設輸出垃圾郵件原則。 在您建立的自訂輸出垃圾郵件原則中無法運作。
-
-     若要啟用此設定：
-
-     a. 選取 [啟用] 設定的核取方塊。
-
-     b. 按一下 [**新增人員**]。 在出現的 [**新增或移除**收件者] 浮出控制項中：
-
-     c. 輸入寄件者的電子郵件地址。 您可以指定多個以分號分隔的電子郵件地址（;)或每行一位收件者。
-
-     d. 按一下 ![新增圖示](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) 以加入收件者。
-
-        視需要重複這些步驟。
-
-        您新增的收件者會出現在飛入的 [**收件者清單**] 區段中。 若要刪除收件者，請按一下 [ ![ 移除] 按鈕 ](../../media/scc-remove-icon.png) 。
-
-     e. 完成後，按一下 [儲存]****。
-
-     若要停用此設定，請清除核取方塊。
+     > [!IMPORTANT]
+     > 此設定正從輸出垃圾郵件原則中被取代。
+     > 
+     > 當使用者因超過 [**收件者限制**] 區段中的限制時[，已封鎖](../../compliance/alert-policies.md)使用者 TenantAdmins （全域系統管理員）群組的成員時，會將**電子郵件通知**傳送至**TenantAdmins** （**全域系統管理員**）群組的成員。 **強烈建議您在輸出垃圾郵件原則中使用警示原則，而不是此設定，以通知系統管理員和其他使用者**。 如需相關指示，請參閱[確認限制使用者的警示設定](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。
 
 5. 選展開 [**收件者限制**] 區段，以設定可疑輸出電子郵件訊息的限制和動作：
 
@@ -189,11 +173,11 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
    > [!NOTE]
    > 這些設定只適用于雲端架構信箱。
-   
+
    - **自動轉送**
   
       選取其中一個選項來控制自動轉寄處理的處理方式。
-    
+
       - **自動**：預設設定可讓系統以預設會停用自動轉寄的方式來控制自動轉寄。
       - **On**：在原則內啟用外部轉寄，但沒有限制。
       - **Off**：已停用外部轉寄，將會封鎖

@@ -12,12 +12,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: fe849499da31b3be4ab52144d1a39f8a1bc7a212
-  ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+  ms.openlocfilehash: 36f6160d4bd4b8d4b7574bb43a4c37025fcbc136
+  ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/18/2020
-  ms.locfileid: "44786187"
+  ms.lasthandoff: 07/21/2020
+  ms.locfileid: "45189474"
 productDirectory:
   title: 使用 Microsoft 365 商務進階版保護遠端工作
   items:
@@ -28,10 +28,10 @@ productDirectory:
   - title: 取得免費的合作夥伴套件
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
     summary: 實用的指導方針和上市資源，讓合作夥伴保護遠端工作。
-    url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+    url: https://aka.ms/SMBSecurityKit
   - title: 新功能？
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Azure AD Premium P1 即將在 Microsoft 365 商務進階版中推出！
+    summary: Azure AD Premium P1 現已包含在 Microsoft 365 商務進階版中！
     url: https://aka.ms/aadp1smbblog
 conceptualContent:
   items:

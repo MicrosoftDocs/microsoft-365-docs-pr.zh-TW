@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本解決方案案例說明如何使用保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期。 方法是使用文件中繼資料來分類內容，具體做法是並自動套用保留標籤及設定以事件為基礎的保留。
-ms.openlocfilehash: 8edd7ea1b64a5f7bf499892dcd32b945307c9668
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126474"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45199852"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留標籤管理 SharePoint 文件的生命週期
 
@@ -112,7 +112,7 @@ ms.locfileid: "45126474"
 
 - **檔案計畫描述元：**(用於簡化案例，不會提供檔案描述元)
 
-下列螢幕擷取畫面顯示在安全性與合規合規性中心建立產品規格[保留標籤](retention.md#retention-labels)時的設定。 您可以在建立保留標籤時，建立**產品停產**事件類型。 請參閱下列步驟。
+下列螢幕擷取畫面顯示在 Microsoft 365 合規性中心建立產品規格[保留標籤](retention.md#retention-labels)時的設定。 您可以在建立保留標籤時，建立**產品停產**事件類型。 請參閱下列步驟。
 
 ![產品規格標籤的保留設定](../media/SPRetention5.png)
 
@@ -181,7 +181,7 @@ ms.locfileid: "45126474"
 
 KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬性。 在標準搜尋案例中，我們建立受管理的屬性，並將其對應到所需的編目屬性。 不過，針對自動套用保留標籤，您只能在 KQL 預先定義的 Managed 屬性中指定，而不能在自訂 Managed 屬性中指定。 系統中已建立一組預先定義的 Managed 屬性，可使用字串 RefinableString00 到 RefinableString199。 如需完整清單，請參閱[預設未使用的 Managed 屬性](https://docs.microsoft.com/sharepoint/manage-search-schema#default-unused-managed-properties)。 這些預設的 Managed 屬性通常是用於定義搜尋精簡器。
 
-為了讓 KQL 查詢能夠正常運作，並將正確的保留標籤自動套用至產品文件內容，我們將編目屬性 **ows\_Doc\_x0020\_Type** 和 **ows\_\_Status** 對應至兩個可精簡搜尋的 Managed 屬性。 此案例的測試環境中並未使用 **RefinableString00** 和 **RefinableString01**。 我們會透過在 SharePont 系統管理中心的**管理搜尋結構描述**中查看 **Managed 屬性**來判斷。
+為了讓 KQL 查詢能夠正常運作，並將正確的保留標籤自動套用至產品文件內容，我們將編目屬性 **ows\_Doc\_x0020\_Type** 和 **ows\_\_Status** 對應至兩個可精簡搜尋的 Managed 屬性。 此案例的測試環境中並未使用 **RefinableString00** 和 **RefinableString01**。 我們會透過在 SharePont 系統管理中心的 **[管理搜尋結構描述]** 中查看 **[Managed 屬性]** 來判斷。
 
 ![搜尋結構描述中的 Managed 屬性](../media/SPRetention12.png)
 
@@ -217,7 +217,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 現在我們已驗證 KQL 查詢正常運作，讓我們來建立使用 KQL 查詢的標籤原則，以將產品規格保留標籤自動套用到適當的文件。
 
-1. 在[安全性與合規性中心](https://protection.office.com)中，移至 [分類]****  >  [保留標籤]****，然後選取 [自動套用標籤]****。 
+1. 在 [ 合規性中心](https://compliance.microsoft.com/homepage)中，移至 **[記錄管理]** > ** [標籤原則]**，然後選取 **[自動套用標籤]**。 
 
    ![在 [標籤] 頁面上選取 [自動套用標籤]](../media/SPRetention16.png)
 
@@ -252,9 +252,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>驗證已自動套用保留標籤
 
-七天後，請使用安全性與合規性中心的[標籤活動總管](view-label-activity-for-documents.md)，查看我們建立的標籤原則是否已自動將此案例中的保留標籤套用至產品文件。 在以下螢幕擷取畫面中，保留標籤也已套用至產品協議和使用者手冊，不過，我們並未在本文中介紹如何建立這些保留標籤和標籤原則。
-
-![使用標籤活動總管來驗證已自動套用標籤](../media/SPRetention20.png)
+七天後，請使用安全性中心的 [[標籤活動總管]](view-label-activity-for-documents.md)，查看我們建立的標籤原則是否已自動將此案例中的保留標籤套用至產品文件。 
 
 另一個驗證步驟是查看文件庫中的文件屬性。 在資訊面板中，您可以看到保留標籤已套用至所選的文件。
 

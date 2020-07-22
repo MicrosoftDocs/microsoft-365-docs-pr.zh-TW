@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 64197133386748695fbef5a33c09022ae41f75d3
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.openlocfilehash: 0ee31ef55c78457ee2b9d3db7b702ada2f55a639
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45185989"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204956"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行業測試的最大得分
 
@@ -100,6 +100,8 @@ SE 實驗會測試產品和服務所使用的解決方案範圍，以偵測和/�
 ## <a name="endpoint-detection--response"></a>& 回應的端點偵測
 
 Microsoft Defender ATP [endpoint 偵測和回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)功能提供接近即時及可行動的高級攻擊偵測。 安全性分析人員可以有效地排定警示的優先順序、深入了解入侵的全貌，並採取回應動作來補救威脅。
+
+Microsoft Defender ATP 的 EDR 和 endpoint protection 功能已從行業測試和出版物收到正面結果。 SC Labs 在2020年6月已[評估端點安全性工具](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/)，並提供 MICROSOFT Defender ATP [5/5 星](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/)。 他們也叫用 Microsoft Defender ATP，以利用一組完整的安全性功能，針對新式威脅環境保護組織，並以整體及統一的方式識別端點安全性解決方案。 他們也認可端點保護與端點偵測功能的融合，因為攻擊鏈現在已完全涵蓋于解決方案。
 
 ### <a name="mitre-industry-leading-optics-and-detection-capabilities"></a>MITRE：業界一流的光學器件和偵測功能
 

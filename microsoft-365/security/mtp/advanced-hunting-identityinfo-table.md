@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b384e76439ae706520725e7193fa64224b724be0
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: e922fc7930d645a7024a0ffc73359277c4b637e4
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44898954"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204920"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -50,7 +50,7 @@ ms.locfileid: "44898954"
 | `AccountName` | string | 帳戶的使用者名稱 |
 | `AccountDomain` | string | 帳戶的網域 |
 | `EmailAddress` | string | 帳戶的 SMTP 位址 |
-| `SipProxyAddress` | string | 客戶的 over IP （VOIP）會話初始通訊協定（SIP）位址的語音 |
+| `SipProxyAddress` | string | 帳戶的 Voice over IP （VOIP）會話初始通訊協定（SIP）位址 |
 | `City` | string | 帳戶使用者所在的城市 |
 | `Country` | string | 帳戶使用者所在的國家/地區 |
 | `IsAccountEnabled` | 布林值 | 指出帳戶是否已啟用 |
