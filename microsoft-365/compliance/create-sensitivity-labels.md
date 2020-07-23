@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: 96784edb6cf31d024d94e12a76c96b2f61340f04
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 61f6a27172e97cdc3f7890b813a9e2f67a8d3d9a
+ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679077"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45200025"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -53,17 +53,29 @@ ms.locfileid: "44679077"
     - 安全性與合規性中心：
         - **分類** > **敏感度標籤**
 
-2. 選取 [標籤]**** 索引標籤上的 [+ 建立標籤]****，以啟動 [新增敏感度標籤]**** 精靈。
-
-3. 按照標籤設定的提示進行。
+2. 在 **[標籤]** 頁面上，選取 **[+ 建立標籤]**，以啟動 [新增敏感度標籤] 精靈。 
     
-    如需有關標籤設定的詳細資訊，請參閱概觀資訊中的[敏感度標籤的功能](sensitivity-labels.md#what-sensitivity-labels-can-do)。
+    例如，從 Microsoft 365 合規性中心:
+    
+    ![建立敏感度標籤](../media/create-sensitivity-label-full.png)
+    
+    注意：根據預設，租使用者沒有任何標籤，您必須建立它們。 範例圖片中的標籤會顯示 [從 Azure 資訊保護中遷移的](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) 預設標籤。
+
+3. 按照標籤設定精靈的提示進行。
+    
+    如需有關標籤設定的詳細資訊，請參閱概觀資訊中的[敏感度標籤功能](sensitivity-labels.md#what-sensitivity-labels-can-do) 並為個別設定套用精靈中的幫助。
 
 4. 重複這些步驟以建立更多標籤。 不過，如果您想要建立子標籤，請先選取父標籤，並選取 **[...]** 以取得 **[其他動作]**，然後選取 **[新增子標籤]**。
 
 5. 建立好所有需要的標籤後，請檢查其順序，並視需要將它們上下移動。 若要變更標籤的順序，請選取 **...** 以取得 [其他動作]****，然後選取 [上移]**** 或 [下移]****。 如需詳細資訊，請參閱概覽資訊中的[標籤優先順序 (順序很重要)](sensitivity-labels.md#label-priority-order-matters) (英文)。
 
-若要編輯現有的標籤，請將其選取，然後選取 [編輯標籤]****。 這會啟動 [編輯敏感度標籤]**** 精靈，它可讓您變更步驟 3 中的所有標籤設定。 
+若要編輯現有的標籤，請將其選取，然後選取 **[編輯標籤]** 按鈕:
+
+![編輯敏感度標籤](../media/edit-sensitivity-label-full.png)
+
+該按鈕會啟動 **[編輯敏感度標籤]** 精靈，它可讓您變更步驟 3 中的所有標籤設定。
+
+除非您瞭解對使用者會造成的影響，否則不要刪除標籤。 如需詳細資訊，請參閱 [移除及刪除標籤](#removing-and-deleting-labels) 一節。 
 
 > [!NOTE]
 > 如果您編輯已使用標籤原則發佈的標籤，當完成精靈後便不需要額外的步驟。 例如，您不需要將其新增到新的標籤原則中，就能讓變更供相同的使用者使用。 不過，請允許最多 24 小時的時間讓變更複寫到使用者和服務。
@@ -125,20 +137,24 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     - 安全性與合規性中心：
         - **分類** > **敏感度標籤**
 
-2. 選取 **[標籤原則]** 索引標籤。
-
-3. 選取 **[發佈標籤]** 以啟動 **[建立原則精靈]**。
-
-4. 選取 **[選擇要發佈的敏感度標籤]**。 選取您要在應用程式和服務中提供使用的標籤，然後選取 **[新增]**。
+2. 選取 **[標籤原則]** 索引標籤，然後 **[發佈標籤]** 以開始 [建立原則] 精靈：
     
-    > [!NOTE]
+    例如，從 Microsoft 365 合規性中心:
+        
+    ![發佈標籤](../media/publish-sensitivity-labels-full.png)
+    
+    注意：根據預設，租使用者沒有任何標籤原則，您必須建立它們。 
+
+3. 在精靈中，請選取 **[選擇要發佈的敏感度標籤]**。 選取您要在應用程式和服務中提供使用的標籤，然後選取 **[新增]**。
+    
+    > [!IMPORTANT]
     > 如果您選取子標籤，請確定您也選取其上層標籤。
     
-5. 檢閱選取的標籤，若要進行任何變更，請選取 **[編輯]**。 否則請選取 **[下一步]**。
+4. 檢閱選取的標籤，若要進行任何變更，請選取 **[編輯]**。 否則請選取 **[下一步]**。
 
-6. 遵循提示來設定原則設定。
+5. 遵循提示來設定原則設定。
     
-    如需有關設定的詳細資訊，請參閱概觀資訊中的[標籤原則的功能](sensitivity-labels.md#what-label-policies-can-do)。
+    如需有關標籤設定的詳細資訊，請參閱概觀資訊中的[標籤原則的功能](sensitivity-labels.md#what-label-policies-can-do) 並為個別設定套用精靈中的幫助。
 
 7. 如果不同的使用者或位置需要不同的原則設定，請重複這些步驟。 例如，您需要一組使用者有其他標籤，或使用者的子集有不同的預設標籤。
 
@@ -146,9 +162,13 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 完成精靈即會自動發佈標籤原則。 若要對已發佈的原則進行變更，只要編輯即可。 沒有特定的發佈或重新發佈動作可供您選取。
 
-若要編輯現有的標籤原則，請將其選取，然後選取 **[編輯原則]**。 這會啟動 **[建立原則]** 精靈，讓您編輯要包含的標籤和標籤設定。 完成精靈時，任何變更都會自動複寫到選取的使用者和服務。
+若要編輯現有的標籤原則，請將其選取，然後選取 **[編輯原則]** 按鈕: 
 
-通常，使用者會在幾小時內在其 Office App 中看到標籤。 不過，請允許最多 24 小時的時間讓您的標籤原則及任何其他所做變更複寫到所有使用者和服務。
+![編輯敏感度標籤](../media/edit-sensitivity-label-policy-full.png)
+
+這個按鈕會啟動 **[建立原則]** 精靈，這會讓您可以編輯要包含的標籤和標籤設定。 完成精靈時，任何變更都會自動複寫到選取的使用者和服務。
+
+1 小時內，使用者便能在其 Office 應用程式中看到新的標籤。 不過，對現有標籤所做的變更最多需 24 小時的時間，才能複製到所有使用者和服務。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>安全性與合規性中心 PowerShell 的其他標籤原則設定
 
@@ -174,7 +194,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 - 針對桌面應用程式：中繼資料中的標籤資訊會保留，但由於無法再將標籤識別碼標示為名稱，使用者就不會看到已套用的標籤名稱 (例如，在狀態列上)，因此使用者會假設內容未加上標籤。 如果標籤已套用加密，則會保留加密，而在內容開啟時使用者仍可看到目前封存保護範本的名稱與描述。
 
-- 針對 Office 網頁版：使用者在狀態列或 [敏感度]**** 欄中不會看到標籤名稱。 只有當標籤未套用加密時，中繼資料中的標籤資訊才會保留。 如果標籤已套用加密，而且您已啟用 SharePoint 和 Onedrive 的 [敏感度標籤][](sensitivity-labels-sharepoint-onedrive-files.md)，則會移除中繼資料中的標籤資訊，並將加密移除。 
+- 針對 Office 網頁版：使用者在狀態列或 [敏感度]**** 欄中不會看到標籤名稱。 只有當標籤未套用加密時，中繼資料中的標籤資訊才會保留。 如果標籤已套用加密，而且您已啟用[ SharePoint 和 Onedrive 的[敏感度標籤]](sensitivity-labels-sharepoint-onedrive-files.md)，則會移除中繼資料中的標籤資訊，並將加密移除。 
+
+當您從標籤原則移除敏感度標籤或刪除敏感度標籤時，這些變更最多可能需要一個小時的時間，才能複製到所有使用者和服務。
 
 ## <a name="next-steps"></a>後續步驟
 
