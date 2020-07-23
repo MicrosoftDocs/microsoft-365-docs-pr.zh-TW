@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c53bfa58e36b2723d5227c38805482dcb629d864
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: b968de12a2dee9d6b820558af05f99c7be29763c
+ms.sourcegitcommit: b3316b947059d3a2e31acbf0ab57d2e000b662ff
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199687"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45255338"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -54,7 +54,7 @@ ms.locfileid: "45199687"
 | **有問必答風險管理** | 使用此角色群組，在單一群組中管理組織的有問必答風險管理。 透過為指定的系統管理員、分析員和調查人員新增所有使用者帳戶，您可以在單一群組中設定「有問必答風險管理」許可權。 此角色群組包含所有測試人員風險管理權限角色。 這項設定是快速開始使用「內幕風險管理」的最簡單方法，而且很適合不需要個別使用者群組定義個別許可權的組織。|
 | **測試人員風險管理系統管理員** | 使用此角色群組開始設定「有問必答風險管理」和更新後的成員，以將內幕風險管理員與定義的群組隔離。  此角色群組中的使用者可以建立、讀取、更新和刪除內部使用者風險管理原則、全域設定和角色群組指派。 |
 | **測試人員風險管理分析員** | 使用此群組可將許可權指派給將擔當「有問必答風險案例分析」的使用者。 這個角色群組中的使用者可以存取所有的「內幕人員風險管理」提醒、案例及通知範本。 他們無法存取「內部使用者風險」內容瀏覽器。 |
-| **測試人員風險調查員** | 使用此群組可將許可權指派給將充當內部使用者風險資料調查人員的使用者。 在所有情況下，此角色群組中的使用者都可以存取所有的內幕程式風險管理提醒、案例、通知範本及內容瀏覽器。 |
+| **測試人員風險調查員** | 使用此群組可將許可權指派給將充當內部使用者風險資料調查人員的使用者。 這個角色群組中的使用者可以存取所有的內部使用者風險管理提醒、案例、通知範本及內容瀏覽器。 |
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>將使用者新增至「內幕風險管理」角色群組
 
