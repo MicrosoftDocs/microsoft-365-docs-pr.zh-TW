@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
-ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 60b53e21978867321f6fe824da35db683dc76663
+ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204860"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45372558"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -357,7 +357,7 @@ EOP 中反垃圾郵件原則的基本元素有：
      > [!NOTE]
      > 如果我們錯過了上一個週期的通知，後續週期會推播通知。 如此可能會在同一天內呈現多個通知。
 
-   - **通知語言**：按一下下拉式清單並從中選取可用的語言。 預設值為 [預設]****，這表示雲端式組織的預設語言。
+   - **通知語言**：按一下下拉式清單並從中選取可用的語言。 預設值為 **[預設]**，也就是英文。
 
    完成後，按一下 [儲存]****。
 
