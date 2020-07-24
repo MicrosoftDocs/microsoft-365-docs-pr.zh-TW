@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 07/23/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d8bd316b847502f9e4b1c94afbf67a0472015a6
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 92ad1b644dd0b3cac04657d01f70cfb274b7e517
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126406"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391551"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新增功能
 
@@ -38,6 +38,7 @@ ms.locfileid: "45126406"
 ## <a name="julyaugust-2020"></a>2020年7月/8 月 
 
 - [體驗搜尋體驗的增強功能](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [使用預先設定的安全性原則輕鬆套用建議設定](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
 
@@ -63,11 +64,6 @@ ms.locfileid: "45126406"
 - [匯出 URL 按一下資料以供離線分析](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)（OFFICE 365 ATP Plan 1 或 Plan 2）
 
 - [使用 Office 365 ATP 中的市場即時檢視（**預覽**）](campaigns.md)
-
-## <a name="july-2020"></a>2020年7月 
- 
-- [體驗搜尋體驗的增強功能](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-
 
 ## <a name="november-2019"></a>2019 年 11 月
 

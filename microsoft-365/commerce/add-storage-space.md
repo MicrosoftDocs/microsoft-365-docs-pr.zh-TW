@@ -29,12 +29,12 @@ search.appverid:
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
 description: 瞭解如何在 Microsoft 365 訂閱中新增及減少檔存放區。 使用額外的檔案存放區，您可以在 SharePoint 線上及 OneDrive 中儲存更多內容。
-ms.openlocfilehash: f3720580c44b68f5b34d5e11f5af1a919ec07dea
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: d0580113449ae91e7be02a13993562d6b91a7d19
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899122"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387418"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>新增您訂閱的儲存空間
 
@@ -48,7 +48,7 @@ ms.locfileid: "44899122"
 如果您快要用完 SharePoint Online 網站集合的儲存空間，而您有合格方案的話，可以將儲存空間新增至您的訂閱。 如果您在可用的附加元件清單中看不到**Office 365 額外檔案儲存空間**，表示您的計畫不合格。 如需詳細資訊，請參閱[我的方案是否可享有？](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> 如果您透過大量授權或 CSP 購買訂閱，您就無法為您的組織購買**Office 365 額外檔案存放區**。 請與您的代表或合作夥伴聯繫以取得協助。
+> 如果您透過大量授權或 CSP 購買訂閱，您就無法直接從 Microsoft 為您的組織購買**Office 365 額外檔案存放區**。 請與您的代表或合作夥伴聯繫以取得協助。
 
 ## <a name="view-available-storage"></a>查看可用的儲存區
 

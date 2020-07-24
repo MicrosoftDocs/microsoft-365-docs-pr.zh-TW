@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date: 12/12/2019
+ms.date: ''
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,18 +16,20 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高級威脅防護（ATP）安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用高級威脅防護（ATP），您也可以取得哪些額外功能？
-ms.openlocfilehash: e6ed4e204ef3cdf66fb065af4621f176bb33cad9
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: 542dce4d2abe9a40fcc5eef57502be5c37a34d57
+ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146239"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45389842"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建議設定
 
 **Exchange Online Protection （EOP）** 是 Microsoft 365 訂閱的安全性核心，可協助防止惡意電子郵件到達您員工的收件匣。 不過，每天都會有新的更複雜的攻擊，但通常需要改進的保護。 **Office 365 高級威脅防護（ATP）** ATP Plan 1 或 ATP 方案2包含其他功能，可提供系統管理員更多層的安全性、控制和調查。
 
 雖然我們可讓安全性管理員自訂其安全性設定，但我們建議的 EOP 和 Office 365 ATP 有兩個安全性層級： **Standard**和**Strict**。 每個客戶的環境和需求各不相同，但我們相信這些等級的郵件篩選設定可協助避免不想要的郵件在大多數情況下抵達員工的收件匣。
+
+若要自動將標準或嚴格設定套用至使用者，請參閱[EOP 和 Office 365 ATP 中的預先設定安全性原則](preset-security-policies.md)。
 
 > [!IMPORTANT]
 > 必須在信箱上啟用垃圾郵件規則，篩選才能正常運作。 它預設為啟用，但是如果篩選似乎不在運作中，您應該加以檢查。 如需詳細資訊，請參閱[在 Office 365中設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
@@ -45,7 +47,7 @@ ms.locfileid: "45146239"
 
 若要建立及設定反垃圾郵件原則，請參閱[在 Office 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
+|安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
 |**垃圾郵件**偵測動作 <br/><br/> _SpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
 |**高信賴的垃圾郵件**偵測動作 <br/><br/> _HighConfidenceSpamAction_|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
@@ -70,7 +72,7 @@ ms.locfileid: "45146239"
 
 建議您為**標準**和**嚴格**的層次 **，關閉這些**ASF 設定。 如需 ASF 設定的詳細資訊，請參閱[Office 365 中的高級垃圾郵件篩選器（ASF）設定](advanced-spam-filtering-asf-options.md)。
 
-| 安全性功能名稱 | 留言 |
+|安全性功能名稱|留言|
 |---|---|
 |**遠端網站的影像連結**（_IncreaseScoreWithImageLinks_）||
 |**URL 中的數位 IP 位址**（_IncreaseScoreWithNumericIps_）||
@@ -95,7 +97,7 @@ ms.locfileid: "45146239"
 
 如需服務中預設傳送限制的詳細資訊，請參閱傳送[限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
-| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
+|安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
 |**每位使用者的收件者數目上限：外部每小時限制** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**每位使用者的收件者數目上限：每小時內部的限制** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
@@ -107,7 +109,7 @@ ms.locfileid: "45146239"
 
 若要建立及設定反惡意程式碼原則，請參閱[在 Office 365 中設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
-| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
+|安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
 |**您是否要在郵件被隔離時通知收件者？** <br/><br/> _Action_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
 |**常見附件類型篩選** <br/><br/> _EnableFileFilter_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
@@ -120,7 +122,7 @@ ms.locfileid: "45146239"
 
 如需這些設定的詳細資訊，請參閱[欺騙設定](set-up-anti-phishing-policies.md#spoof-settings)。 若要設定這些設定，請參閱[在 EOP 中設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
 
-| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
+|安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
 |**啟用反欺騙保護** <br/><br/> _EnableAntispoofEnforcement_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
 |**啟用未經驗證的寄件者** <br/><br/> _EnableUnauthenticatedSender_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|將問號（？）新增至 Outlook 中的寄件者相片，以取得未識別的欺騙寄件者。 如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
@@ -146,7 +148,7 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 
 如需這些設定的詳細資訊，請參閱[ATP 反網路釣魚原則中的類比設定](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)。 若要設定這些設定，請參閱[設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
-| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
+|安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
 |受保護的使用者：**新增要保護的使用者** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|開啟 <br/><br/> `$true` <br/><br/> \<list of users\>|開啟 <br/><br/> `$true` <br/><br/> \<list of users\>|取決於您的組織，但建議您在重要角色中新增使用者。 在內部，這些可能是您 CEO、CFO 和其他資深領導人。 您可以在外部加入委員會成員或董事會。|
 |受保護的網域：**自動包含我擁有的網域** <br/><br/> _EnableOrganizationDomainsProtection_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
@@ -167,7 +169,7 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 
 請注意，這些是[EOP 中的反垃圾郵件原則設定](#eop-anti-spam-policy-settings)中所提供的相同設定。
 
-| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
+|安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
 |**啟用反欺騙保護** <br/><br/> _EnableAntispoofEnforcement_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
 |**啟用未經驗證的寄件者** <br/><br/> _EnableUnauthenticatedSender_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|將問號（？）新增至 Outlook 中的寄件者相片，以取得未識別的欺騙寄件者。 如需詳細資訊，請參閱[反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
@@ -178,7 +180,7 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 
 如需此設定的詳細資訊，請參閱[ATP 反網路釣魚原則中的高級網路釣魚閥](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)值。 若要設定此設定，請參閱[設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
-| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
+|安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
 |**高級網路釣魚臨界值** <br/><br/> _PhishThresholdLevel_|**2-嚴格** <br/><br/> `2`|**3-更嚴格** <br/><br/> `3`||
 
@@ -190,7 +192,7 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 
 **附注**：在 PowerShell 中，您會使用這些[設定的 AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
 
-| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
+|安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
 |**使用下列專案中的安全連結： Office 365 應用程式** <br/><br/> _EnableSafeLinksForO365Clients_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|使用 Office 365 應用程式中的 ATP 安全連結，Office for iOS 和 Android。|
 |**使用者按一下安全連結時請勿追蹤** <br/><br/> _TrackClicks_|關閉 <br/><br/> `$true`|關閉 <br/><br/> `$true`||
@@ -199,9 +201,9 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 
 #### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>特定使用者之自訂原則中的安全連結原則設定
 
-**附注**：在 PowerShell 中，您會使用[New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy)和 [Set-SafeLinksPolicy] （ https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicycmdlet 這些設定的 Cmdlet。
+**附注**：在 PowerShell 中，您可以針對這些設定使用[New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy)和 [Set-SafeLinksPolicy] （ https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy ] Cmdlet。
 
-| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
+|安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
 |**選取郵件中未知可能惡意 URLs 的動作** <br/><br/> _IsEnabled_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
 |**選取 Microsoft 小組中未知或可能惡意的 URLs 的動作** <br/><br/> _EnableSafeLinksForTeams_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
@@ -220,7 +222,7 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 
 **附注**：在 PowerShell 中，您會使用這些[設定的 AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
 
-| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
+|安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
 |**開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP** <br/><br/> _EnableATPForSPOTeamsODB_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
 |**開啟 Office 用戶端的安全檔**<bt/><br/> _EnableSafeDocs_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||此設定僅適用于 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權。 如需詳細資訊，請參閱[Office 365 中的安全檔 [高級威脅防護](safe-docs.md)]。|
@@ -231,7 +233,7 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 
 **附注**：在 PowerShell 中，您會使用[New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy)和[Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) Cmdlet 進行這些設定。
 
-| 安全性功能名稱 | 標準 | 嚴格 | 留言 |
+|安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
 |**安全附件未知的惡意程式碼回應** <br/><br/> _Action_|封鎖 <br/><br/> `Block`|封鎖 <br/><br/> `Block`||
 |**偵測時重新導向附件**：**啟用重新導向** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|，並指定電子郵件地址。 <br/><br/> `$true` <br/><br/> 電子郵件地址|，並指定電子郵件地址。 <br/><br/> `$true` <br/><br/> 電子郵件地址|將郵件重新導向至安全性管理員以進行審閱。|

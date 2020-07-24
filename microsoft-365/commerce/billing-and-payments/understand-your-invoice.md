@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: 瞭解如何閱讀和瞭解 Microsoft 商務產品的帳單或發票。
 keywords: 計費帳戶、組織資訊、發票
-ms.openlocfilehash: 17cfba93e8d892081900f6fcefb4504fb553b5bf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0575683cdcaf0ac76de80c93e0d7573e8c63bae
+ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402639"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391515"
 ---
 # <a name="understand-your-bill-or-invoice"></a>認識您的帳單或發票
 
@@ -42,7 +42,7 @@ ms.locfileid: "44402639"
 
 第一頁的頂端會識別負責付款的人員、計費傳送至的人員，以及費用的摘要。
 
-| 術語 | 說明 |
+| 術語 | 描述 |
 | --- | --- |
 | 銷售至 |用來識別負責付款之法人的名稱和位址的帳單帳戶。 您可以在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">帳單帳戶</a>] 頁面上管理此資訊，您可以在其中找到帳戶合約和管理角色和許可權。 |
 | 付款人 |識別接收發票的人員。 此資訊可在 [<a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">帳單設定檔</a>] 頁面上管理。 計費設定檔也會顯示在 [線上發票] 頁面上的 [**發票摘要**] 區段中。 若要深入瞭解計費設定檔，以及如何使用它們為您的組織建立更靈活的計費選項，請參閱[Manage 計費設定檔](manage-billing-profiles.md)。 |
@@ -55,10 +55,10 @@ ms.locfileid: "44402639"
 
 **計費摘要**會顯示自上次計費期間、所套用的任何貸方、稅金和到期總額的費用摘要。
 
-| 術語 | 說明 |
+| 術語 | 描述 |
 | --- | --- |
 | 收費|為此帳單期限購買的產品總數，以及其相關的費用和稅款。 匯總購買以提供您的帳單的簡潔觀點。 |
-| 參與名單 |您從傳回獲得的學分 |
+| 製作群 |您從傳回獲得的學分 |
 | 應用 Azure 信用 |您的 Azure 信用，會自動套用至 Azure 每個計費期間的費用。 如果您沒有任何 Azure 信用，此欄位是隱藏的。 如需 Azure 信用的詳細資訊，請參閱[追蹤 Microsoft 客戶協定 Azure 信用平衡](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance)。 |
 | 小計 |納稅到期金額 |
 | 稅 |根據帳單設定檔的國家/地區所支付的稅金類型和金額。 如果您不需要支付稅款，您的發票上不會顯示任何稅款。 |
@@ -67,7 +67,7 @@ ms.locfileid: "44402639"
 
 [費用] 頁面會顯示依產品細分的成本。 針對 Azure 客戶，費用可能會依發票區段進行組織。 如需有關發票區段如何搭配 Azure 產品使用的詳細資訊，請參閱[您的 Microsoft 客戶合約計費帳戶快速入門](https://docs.microsoft.com/azure/billing/billing-mca-overview)中的 [[發票] 區段](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections)。 在每個產品訂單內，成本會依服務系列細分。
 
-| 術語 |說明 |
+| 術語 |描述 |
 | --- | --- |
 | 單價 | 用於計算費用的服務有效單價（以定價幣種）。 這項價格對於產品、服務系列、計量和服務都是唯一的。 |
 | 數量 | 計費期間所購買或消耗的數量 |
@@ -79,11 +79,11 @@ ms.locfileid: "44402639"
 
 [行專案] 詳細資料會根據您所收取的產品類型而有所不同。 例如，針對 Azure 產品，會顯示所套用的 Azure 信用數量。 以座位為基礎的產品會顯示單位價格和數量。 [發票詳細資料] 顯示已購買的產品、所套用的折扣或片尾、稅率和金額，以及行專案合計。
 
-    `Total = Charges - Azure Credit + Tax`
+> 總計 = 費用-Azure 信用 + 稅收
 
 每個服務系列的到期總金額是透過從信用/費用中減去 Azure 的點數來計算，並加上稅款：
 
-    `Total = Charges/Credits - Azure Credit + Tax`
+> 總計 = 費用/片尾-Azure 信用 + 稅收
 
 如果您的發票上有您想要詳細資料的 Azure 費用，請參閱[複查您的 Microsoft 客戶合約發票](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill)。
 
