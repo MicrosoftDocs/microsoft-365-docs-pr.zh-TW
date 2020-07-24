@@ -315,14 +315,10 @@
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: 使用 PowerShell 建立保留標籤
           href: bulk-create-publish-labels-using-powershell.md
-        - name: 使用事件型保留
-          items:
-            - name: 事件發生時，開始保留
-              href: event-driven-retention.md
-            - name: 自動化事件型保留
-              href: automate-event-driven-retention.md
-            - name: 管理 SharePoint 文件的生命週期
-              href: auto-apply-retention-labels-scenario.md
+        - name: 事件發生時，開始保留
+          href: event-driven-retention.md
+        - name: 管理 SharePoint 文件的生命週期
+          href: auto-apply-retention-labels-scenario.md
     - name: 資料處置
       href: disposition.md
     - name: 管理非使用中的信箱
