@@ -1,7 +1,7 @@
 ---
-title: 適用於 GDPR 和 CCPA 的 Windows 資料主體要求的資料處理者服務
+title: 適用於 GDPR 和 CCPA 的 Windows 企業版資料主體要求的資料處理者服務
 description: 了解如何使用 Microsoft 產品、服務及系統管理工具，尋找並處理個人資料以回應 DSR 要求。
-keywords: Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
+keywords: Microsoft 365、Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
 ms.prod: Microsoft-365-enterprise
@@ -15,17 +15,17 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 525b8b0783886a7449be72c89a2aa624afda9929
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: bc88f8911f44c9c7b8aad8fbecbbeb073fdcb9ba
+ms.sourcegitcommit: 209a9963719f1ca85ca2075c02721e1a318a7a13
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023589"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45374799"
 ---
-# <a name="data-processor-service-for-windows-data-subject-requests-for-the-gdpr-and-ccpa"></a>適用於 GDPR 和 CCPA 的 Windows 資料主體要求的資料處理者服務 
+# <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>適用於 GDPR 和 CCPA 的 Windows 企業版資料主體要求的資料處理者服務 
 
 >[!NOTE]
->本主題適用於 Windows 預覽計畫的資料處理者服務中的參與者，且需要接受特定使用條款。 若要深入了解該計畫並同意使用條款，請參閱 [https://aka.ms/dpswpublicpreview](https://aka.ms/dpswpublicpreview)。
+>本主題適用於 Windows 企業版預覽計畫的資料處理者服務中的參與者，且需要接受特定使用條款。 若要深入了解該計畫並同意使用條款，請參閱 [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>資料主體要求 (DSR) 簡介 
 歐盟一般資料保護規定 (GDPR) 賦予人們 (在此法規中稱為_資料主體_) 權利來管理雇主或其他類型的代理機構或組織 (稱為_資料控制者_或僅稱為_控制者_) 所收集的個人資料。 依據 GDPR，個人資料的定義非常廣泛，舉凡與已識別或可識別自然人相關的任何資料皆屬之。 GDPR 為資料主體提供其個人資料的特定權限；這些權限包括取得個人資料副本、要求對該資料進行更正、限制對該資料的處理、刪除該資料，或是以電子格式接收該資料以移至另一個控制者。 由資料主體向控制者提出以對其個人資料採取行動的正式要求，稱為_資料主體要求_或 DSR。 
@@ -57,11 +57,11 @@ CCPA 中的個人資訊是任何與已識別或可識別個人相關的資訊。
 
 ## <a name="how-to-use-this-guide"></a>如何使用本指南 
 
-當您在 Windows 註冊裝置使用資料處理者服務時，Windows 會產生一些稱為 Windows 診斷資料的資訊，以便提供服務。
+當您在 Windows 企業版註冊裝置使用資料處理者服務時，Windows 會產生一些稱為 Windows 診斷資料的資訊，以便提供服務。
 
 ## <a name="windows-diagnostic-data"></a>Windows 診斷資料 
 
-Microsoft 提供功能，讓您存取、刪除及匯出與使用者使用 Windows 資料處理者服務相關的 Windows 診斷資料。
+Microsoft 提供功能，讓您存取、刪除及匯出與使用者使用 Windows 企業版資料處理者服務相關的 Windows 診斷資料。
 
 >[!IMPORTANT]
 >不支援修正 Windows 診斷資料的功能。 Windows 診斷資料構成了 Windows 中所進行的實際動作，對這類資料的修改會危害動作的歷程記錄，並增加安全性風險並危害可靠性。 本文件涵蓋的所有資料都視為 Windows 診斷資料。 
@@ -72,7 +72,7 @@ Microsoft 透過 Azure 入口網站以及直接透過現有的應用程式開發
 
 ### <a name="step-1-access"></a>步驟 1：存取 
 
-租用戶系統管理員是組織中唯一能夠存取 Windows 診斷資料的人，該資料與特定使用者對Windows 註冊裝置的資料處理者服務的使用狀況有關。 針對存取要求所擷取的資料會透過匯出，以機器可讀取的格式提供；且會以檔案的形式提供，讓使用者知道與資料相關聯的是哪些裝置與服務。 如上所述，所擷取的資料不會包含可能造成 Windows 裝置安全性或穩定性受損的資料。 
+租用戶系統管理員是組織中唯一能夠存取 Windows 診斷資料的人，該資料與特定使用者對 Windows 企業版註冊裝置的資料處理者服務的使用狀況有關。 針對存取要求所擷取的資料會透過匯出，以機器可讀取的格式提供；且會以檔案的形式提供，讓使用者知道與資料相關聯的是哪些裝置與服務。 如上所述，所擷取的資料不會包含可能造成 Windows 裝置安全性或穩定性受損的資料。 
 
 Microsoft 提供入口網站體驗，讓企業客戶的租用戶系統管理員能夠管理 DSR 存取要求。 [Azure DSR，第 2 部分，步驟3：匯出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)說明如何透過匯出在 Azure 入口網站中執行 DSR 存取要求。
 
@@ -91,7 +91,7 @@ Microsoft 能夠直接透過現有的應用程式開發介面 (API) 刪除使用
 
 ### <a name="step-3-export"></a>步驟 3：匯出 
 
-租用戶系統管理員是組織中唯一能夠存取 Windows 診斷資料的人，該資料與特定使用者對Windows 註冊裝置的資料處理者服務的使用狀況有關。 針對匯出要求所擷取的資料會以機器可讀取的格式提供；且會以檔案的形式提供，讓使用者知道與資料相關聯的是哪些裝置與服務。 如上所述，所擷取的資料不會包含可能造成 Windows 裝置安全性或穩定性受損的資料。 [Azure DSR，第 2 部分，步驟3：匯出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)說明如何透過 Azure 入口網站執行 DSR 匯出要求。 
+租用戶系統管理員是組織中唯一能夠存取 Windows 診斷資料的人，該資料與特定使用者對 Windows 企業版註冊裝置的資料處理者服務的使用狀況有關。 針對匯出要求所擷取的資料會以機器可讀取的格式提供；且會以檔案的形式提供，讓使用者知道與資料相關聯的是哪些裝置與服務。 如上所述，所擷取的資料不會包含可能造成 Windows 裝置安全性或穩定性受損的資料。 [Azure DSR，第 2 部分，步驟3：匯出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)說明如何透過 Azure 入口網站執行 DSR 匯出要求。 
 
 Microsoft 能夠直接透過現有的應用程式開發介面 (API) 匯出客戶資料。 詳細資料請參閱 [API 參考文件](https://docs.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0)。
 

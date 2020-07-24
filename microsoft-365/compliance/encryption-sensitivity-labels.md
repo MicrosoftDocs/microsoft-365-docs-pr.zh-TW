@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bf859cd5abe0dcb36c02c8355cbfa58418b3138
-ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
+ms.openlocfilehash: 4f67ca4f9c57730d2e9b95f6060d6c302728f7dc
+ms.sourcegitcommit: fe20f5ed07f38786c63df0f73659ca472e69e478
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45153696"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201431"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -121,9 +121,9 @@ ms.locfileid: "45153696"
 
 使用下列選項來控制誰可以存取套用此標籤的電子郵件或文件。 您可以：
 
-1. 在特定日期，或是在套用標籤之後的特定天數之後**允許具有標籤的內容的存取權到期**。在此時間後，使用者將無法開啟具有標籤的項目。如果指定日期，則會在目前時區中，該日期的午夜開始生效。(請注意，某些電子郵件用戶端可能因為其快取機制而無法強制執行到期，而顯示超過期限的電子郵件。)
+- 在特定日期，或是在套用標籤之後的特定天數之後**允許具有標籤的內容的存取權到期**。在此時間後，使用者將無法開啟具有標籤的項目。如果指定日期，則會在目前時區中，該日期的午夜開始生效。(請注意，某些電子郵件用戶端可能因為其快取機制而無法強制執行到期，而顯示超過期限的電子郵件。)
 
-2. 在套用標籤之後**允許離線存取**可為從不、一律或特定天數。如果您將離線存取限制為從不或天數，則達到該閾值時，必須重新驗證使用者，並記錄其存取。如需詳細資訊，請參閱關於 Rights Management 使用授權的下一節。
+- 在套用標籤之後**允許離線存取**可為從不、一律或特定天數。如果您將離線存取限制為從不或天數，則達到該閾值時，必須重新驗證使用者，並記錄其存取。如需詳細資訊，請參閱關於 Rights Management 使用授權的下一節。
 
 已加密內容的存取控制設定：
 
@@ -207,6 +207,14 @@ ms.locfileid: "45153696"
 - Rights Management 簽發者仍可以開啟撤銷後的文件。
 
 如需詳細資訊，請參閱 [Rights Management 簽發者和 Rights Management 擁有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
+
+### <a name="double-key-encryption"></a>雙金鑰加密
+
+此功能目前處於公開預覽階段。
+
+只有在您設定雙金鑰加密服務之後，且需要針對將套用此標籤的文件和電子郵件使用此雙密鑰加密，再選取這個選項。
+
+如需詳細資訊、先決條件及設定指示，請參閱[雙金鑰加密 (DKE)](double-key-encryption.md)。
 
 ## <a name="let-users-assign-permissions"></a>讓使用者指派權限
 

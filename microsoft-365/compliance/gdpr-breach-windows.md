@@ -1,7 +1,7 @@
 ---
-title: 適用于 GDPR 的 Windows 資料處理程式服務通知
-description: Windows 資料處理程式服務如何防止個人資料外洩，以及若發生外洩 Microsoft 會如何回應和通知您。
-keywords: Windows、Microsoft 365、Microsoft 365 檔、GDPR 的資料處理者服務
+title: 適用於 GDPR 的 Windows 企業版資料處理者服務通知
+description: Windows 企業版資料處理者服務如何防止個人資料外洩，以及若發生外洩 Microsoft 會如何回應和通知您。
+keywords: Windows 企業版、Microsoft 365、Microsoft 365 文件、GDPR 的資料處理者服務
 localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
 ms.prod: Microsoft-365-enterprise
@@ -15,21 +15,21 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: bfadeae0f4f0b01197f58f0610d1040da3080922
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: c98d89e1b2bb231c600c663e20893dd4f790a779
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023607"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387430"
 ---
-# <a name="data-processor-service-for-windows-breach-notification-under-the-gdpr"></a>適用于 GDPR 的 Windows 資料處理程式服務違反通知
+# <a name="data-processor-service-for-windows-enterprise-breach-notification-under-the-gdpr"></a>適用於 GDPR 的 Windows 企業版資料處理者服務違反通知
 
 >[!NOTE]
->本主題適用於 Windows 預覽計畫的資料處理者服務中的參與者，且需要接受特定使用條款。 若要深入了解該計畫並同意使用條款，請參閱 [https://aka.ms/dpswpublicpreview](https://aka.ms/dpswpublicpreview)。
+>本主題適用於 Windows 企業版預覽計畫的資料處理者服務中的參與者，且需要接受特定使用條款。 若要深入了解該計畫並同意使用條款，請參閱 [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
 
-Microsoft 的 Windows 資料處理程式服務很認真地看待其在一般資料保護規定 (GDPR) 下所需承擔的責任。 Windows 版 Microsoft 資料處理器服務採用大量的安全性措施來防範資料洩露。 這些包含專職的威脅管理小組會主動預測、預防和減少惡意存取。  內部安全性措施（例如埠掃描、周邊安全性漏洞掃描和入侵偵測）會偵測並防止惡意存取，以及自動化的安全性程式、全面的資訊安全性和隱私權原則，以及適用于所有人員的安全性與隱私權訓練。 
+Microsoft 的 Windows 企業版資料處理者服務很認真地看待其在一般資料保護規定 (GDPR) 下所需承擔的責任。 Windows 的 Microsoft 企業版資料處理者服務採用大量的安全性措施來防範資料外洩。 這些包含專職的威脅管理小組會主動預測、預防和減少惡意存取。  內部安全性措施（例如埠掃描、周邊安全性漏洞掃描和入侵偵測）會偵測並防止惡意存取，以及自動化的安全性程式、全面的資訊安全性和隱私權原則，以及適用于所有人員的安全性與隱私權訓練。 
 
-Windows 的 Microsoft 資料處理程式服務中內置了安全性，從 [安全性開發週期](https://www.microsoft.com/sdl/)，這是一種強制執行的開發程式，其中包含隱私權的設計和隱私權預設的方法。 Microsoft 安全戰略的指導原則是「預設違犯」，這是縱深防禦策略的延伸。 透過不斷挑戰 Windows 資料處理器服務的安全性功能，Microsoft 可以持續抵禦新興的威脅。 如需有關 Windows 安全性的資料處理者服務的詳細資訊，請參閱這些 [資源](https://www.microsoft.com/TrustCenter/Security/windows10-security) Windows 的資料處理程式服務根據安全性事件回應程式，回應可能的資料破壞。 Windows 安全事件回應的資料處理器服務是採用五階段程式來執行：偵測、評估、診斷、穩定關閉。 當調查進度時，安全事件回應小組可能會交替診斷和穩定階段。 安全事件回應程式概述如下： 
+Windows 的 Microsoft 企業版資料處理者服務中內置了安全性，包含 [安全性開發週期](https://www.microsoft.com/sdl/)，這是一種強制執行的開發程式，其中包含隱私權的設計和隱私權預設的方法。 Microsoft 安全戰略的指導原則是「預設違犯」，這是縱深防禦策略的延伸。 透過不斷挑戰 Windows 企業版資料處理者服務的安全性功能，Microsoft 可以持續抵禦新興的威脅。 如需有關 Windows 企業版資料處理者服務安全性的詳細資訊，請參閱這些 [資源](https://www.microsoft.com/TrustCenter/Security/windows10-security) Windows 企業版資料處理者服務根據安全性事件回應程式，回應可能的資料外洩。 Windows 企業版資料處理者服務的安全事件回應是採用五階段程序來執行：偵測、評估、診斷、穩定和關閉。 當調查進度時，安全事件回應小組可能會交替診斷和穩定階段。 安全事件回應程式概述如下： 
 
 |**Stage**|**描述**|
 | ------- | ------------- |
@@ -39,7 +39,7 @@ Windows 的 Microsoft 資料處理程式服務中內置了安全性，從 [安�
 | ***4 — 穩定及復原*** | 事件回應小組會建立復原計劃，以降低問題的風險。危機抑制步驟 (例如隔離受影響的系統) 可能會立即與診斷同步進行。長期風險降低預計要等到眼前的風險過後才會進行規劃。 |
 | ***5 — 結案與檢討*** | 事件回應小組會建立概述事件詳細資訊的檢討，目的是修改原則、步驟和流程，以避免該事件再次發生。 |
 
-Microsoft 的 Windows 資料處理程式服務使用的偵測程序旨在探索會讓 Windows 資料處理程式服務的機密性、完整性和可用性遭受風險的事件。有數種事件可能會觸發調查。 有幾個事件可以觸發調查： 
+Microsoft 的 Windows 企業版資料處理者服務使用的偵測程序旨在探索會讓 Windows 企業版資料處理者服務的機密性、完整性和可用性遭受風險的事件。 有幾個事件可以觸發調查： 
 
  - 自動化系統透過內部監視和警示架構發出警示。 這些警示會以病毒碼式警訊 (例如反惡意程式碼軟體、入侵偵測)，或透過旨在分析預期活動並在異常時發出警示的演算法等方式提供。
  - 來自 Microsoft Azure 和 Azure Government 上所執行 Microsoft 服務的第一方報告。
@@ -48,18 +48,18 @@ Microsoft 的 Windows 資料處理程式服務使用的偵測程序旨在探索�
  - 安全性[紅隊和藍隊](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/)活動。 此策略利用由 Microsoft 攻擊性安全專家組成的高度技巧紅隊，來找出並攻擊在 Azure 中的潛在弱點。 負責安全性回應的藍隊必須偵測並防禦紅隊的活動。 我們會用紅隊和藍隊雙方的動作，來確認 Azure 所做的安全性回應是否能有效地因應安全性事件。 安全性紅隊和藍隊活動的執行皆符合參與規則，以協助確保對客戶資料的保護。
  - Azure 服務操作員的呈報。 Microsoft 員工都受過訓練，可找出潛在的安全性問題並向上呈報。
 
- ## <a name="data-processor-service-for-windows-data-breach-response"></a>Windows 資料處理程式服務的資料違反回應。 
+ ## <a name="data-processor-service-for-windows-enterprise-data-breach-response"></a>Windows 企業版資料處理者服務的資料外洩回應。 
 
- Microsoft 藉由判斷事件的功能影響、恢復能力和資訊影響，指派適當的調查優先順序和嚴重性層級。 優先順序和嚴重性可能會隨著調查的進行，根據新的發現結果和結論而變更。 涉及對客戶資料有迫切或經確認風險的安全性事件，我們會視為高嚴重性而不眠不休地設法解決。 Microsoft 的 Windows 資料處理程式服務將事件的資訊影響分成下列缺口類別： 
+ Microsoft 藉由判斷事件的功能影響、恢復能力和資訊影響，指派適當的調查優先順序和嚴重性層級。 優先順序和嚴重性可能會隨著調查的進行，根據新的發現結果和結論而變更。 涉及對客戶資料有迫切或經確認風險的安全性事件，我們會視為高嚴重性而不眠不休地設法解決。 Microsoft 的 Windows 企業版資料處理者服務將事件的資訊影響分成下列缺口類別： 
 
 | **類別**             | **定義**                                                                                                                   |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| ***無***               | 沒有任何資訊遭到挾帶、變更、刪除或以其他方式洩漏出去。 |
-| ***隱私權缺口***     | 納稅人、員工、受益人等的敏感性個人資料遭人存取或挾帶出去。 |
-| ***專利缺口*** | 非機密專利資訊 (例如受保護的關鍵基礎結構資訊 (PCII) 等) 遭人存取或挾帶出去。 |
+| ***無***               | 沒有任何資訊遭到移除、變更、刪除或以其他方式洩漏出去。 |
+| ***隱私權缺口***     | 納稅人、員工、受益人等的敏感性個人資料遭人存取或移除。 |
+| ***專利缺口*** | 非機密專利資訊 (例如受保護的關鍵基礎結構資訊 (PCII) 等) 遭人存取或移除。 |
 | ***完整性受損***     | 敏感性或專利資訊遭人變更或刪除。 |
 
-安全性回應小組會與 Microsoft 的 Windows 資料處理程式服務安全性工程師及主題專家 (SME) 合作，根據證據的事實資料將事件分類。 安全性事件可以歸類為： 
+安全性回應小組會與 Microsoft 的 Windows 企業版資料處理者服務安全性工程師及主題專家 (SME) 合作，根據證據的事實資料將事件分類。 安全性事件可以歸類為： 
 
  - **誤判：** 事件符合偵測準則，但經查明其實是正常商業活動的一部分，且可能需要進行篩選。 服務小組會找出誤判的根本原因，並以系統化的方式視需要運用偵測來源和進行微調，來解決這些問題。 
  - **安全性事件：** 有人非法存取任何儲存在 Microsoft 設備或 Microsoft 設施上的客戶資料或支援資料，或未經授權存取這類設備或設施，進而造成客戶資料或支援資料遺失、洩漏，或變更的事件。 
@@ -72,21 +72,21 @@ Microsoft 的 Windows 資料處理程式服務使用的偵測程序旨在探索�
 
 Microsoft 會確認是否已成功遏制客戶和商業風險，並實施了矯正措施。如有需要，會進行緊急風險降低步驟，以解決與事件關聯的迫切安全性風險。 
 
-Microsoft 也會完成資料外洩的內部檢討。 在本練習當中，我們將評估回應效率和作業程序，找出安全性事件回應標準作業程序 (SOP) 或相關的程序所需的任何更新，然後執行。 資料外洩的內部檢討是不提供給客戶的高度機密記錄。 但是，檢討的摘要可包含在其他客戶活動的通知中。 這類報表會提供外部檢閱，屬於 Windows 資料處理程式服務例行稽核循環的一部分。 
+Microsoft 也會完成資料外洩的內部檢討。 在本練習當中，我們將評估回應效率和作業程序，找出安全性事件回應標準作業程序 (SOP) 或相關的程序所需的任何更新，然後執行。 資料外洩的內部檢討是不提供給客戶的高度機密記錄。 但是，檢討的摘要可包含在其他客戶活動的通知中。 這類報表會提供給外部稽核員檢核，這是屬於 Windows 企業版資料處理者服務例行稽核週期的一部分。 
 
 ## <a name="customer-notice"></a>客戶注意事項
 
-Microsoft 的 Windows 資料處理程式服務視需要通知客戶和監管單位有資料外洩。 Microsoft 在 Windows 的資料處理程式服務執行中，採用大量內部劃分。 資料流程記錄也相當穩定。 在此設計中，大部分的事件都可限定特定客戶。 目標是在受影響的客戶之資料遭到損毀時，為其提供正確、可操作且及時的通知。 
+Microsoft 的 Windows 企業版資料處理者服務視需要通知客戶和監管單位有資料外洩。 Microsoft 在 Windows 企業版資料處理者服務執行中，採用大量內部劃分。 資料流程記錄也相當穩定。 在此設計中，大部分的事件都可限定特定客戶。 目標是在受影響的客戶之資料遭到損毀時，為其提供正確、可操作且及時的通知。 
 
 聲明 CRSI 之後，通知流程將會盡快進行，但同時仍考慮快速行動的安全性風險。 通常，在事件調查進行中時，便會同時展開設計通知的流程。 客戶通知會在我們宣告外洩的 72 小時內傳遞，除了下列情況： 
 
  - Microsoft 相信執行通知的動作會增加其他客戶的風險。比方說，通知的動作可能會驚動攻擊者，因而無法補救。 
  - 經 Microsoft 法務部門企業外部和法律事務 (CELA) 和事件執行經理審查過的其他不尋常或特殊情況。 
 
- Microsoft 的 Windows 資料處理程式服務可提供客戶詳細資訊，讓他們能執行內部調查，並協助他們符合對使用者的承諾，而不會過度延遲通知程序。 
+ Microsoft 的 Windows 企業版資料處理者服務可提供客戶詳細資訊，讓他們能執行內部調查，並協助他們符合對使用者的承諾，而不會過度延遲通知程序。 
 
 個人資料外洩的通知會經由 Microsoft 的選擇 ，包括透過電子郵件，傳送給客戶。 資料外洩的通知會傳送至 Azure 資訊安全中心提供的安全性連絡人清單。您可以按照[實作指南](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)中的指示設定該清單。 如果未在 Azure 資訊安全中心提供連絡人資訊，則通知會傳送給一或多個 Azure 月租方案的管理員。 為了確保通知能順利送達，客戶有責任確定每個適用之月租方案和線上服務管理入口網站上的管理連絡人資訊是正確的。
 
-Microsoft 的 Windows 資料處理程式服務小組也可以選擇通知客服 (CSS) 和客戶專案經理 (AM)，或技術支援專案經理 (TAM) 等其他 Microsoft 人員。 這些人員通常與客戶有密切的關係，也有助於快速進行補救 
+Windows 企業版資料處理者服務小組也可以選擇通知客服 (CSS) 和客戶專案經理 (AM)，或技術支援專案經理 (TAM) 等其他 Microsoft 人員。 這些人員通常與客戶有密切的關係，也有助於快速進行補救 
 
 如需 Microsoft 如何偵測及回應個人資料外洩的詳細資訊，請參閱服務信任入口網站中的 [GDPR 規定的資料外泄通知](https://servicetrust.microsoft.com/ViewPage/GDPRBreach)。

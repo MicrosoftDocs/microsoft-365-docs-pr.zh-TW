@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b29ff790dbfafb281325879904fe5bfa71fdcf17
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 7eb19698cc3dd2d56e05dfbca8759de178f3fc2a
+ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45023334"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229413"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -39,7 +39,7 @@ ms.locfileid: "45023334"
 
 ![以 EDM 為基礎的分類](../media/EDMClassification.png)
 
-以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日或每週重新整理，而且可以包含最多 1 千萬列資料。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以對原則使用以 EDM 為基礎的分類，例如 [資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或  [Microsoft Cloud App Security 檔案原則](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
+以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日或每週重新整理，而且可以包含最多 1 億列資料。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以對原則使用以 EDM 為基礎的分類，例如 [資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或  [Microsoft Cloud App Security 檔案原則](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 
@@ -67,7 +67,7 @@ ms.locfileid: "45023334"
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定義用於敏感性資訊的資料庫結構描述
 
 1. 找出您要使用的敏感性資訊。 將資料匯出至應用程式，例如 Microsoft Excel，並將檔案以 .csv 格式儲存。 資料檔案可能包含：
-      - 最多 1 千萬列敏感性資料
+      - 最多 1 億列敏感性資料
       - 每個資料來源最多 32 個資料行 (欄位)
       - 最多 5 個資料行 (欄位) 標示為可搜尋
 

@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
-ms.openlocfilehash: 191f0492293738a9bce486226ca7d87d947a3f65
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: c129ca73da516a5b4c420136abf0b5068e19e195
+ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726828"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45204860"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -352,12 +352,12 @@ EOP 中反垃圾郵件原則的基本元素有：
 
    - **傳送使用者垃圾郵件通知的頻率 (天)**：選取每隔幾天要傳送通知。 預設值是 3 天。 您可以輸入 1 到 15 天。
 
-     在 24 小時期間內有 3 個使用者垃圾郵件通知週期，從下列時間開始：01:00 UTC、08:00 UTC 和 16:00 UTC。 
+     在 24 小時期間內有 3 個使用者垃圾郵件通知週期，從下列時間開始：01:00 UTC、08:00 UTC 和 16:00 UTC。
 
      > [!NOTE]
      > 如果我們錯過了上一個週期的通知，後續週期會推播通知。 如此可能會在同一天內呈現多個通知。
 
-   - **通知語言**：按一下下拉式清單並從中選取可用的語言。 預設值為 [預設]****，表示使用者隔離通知使用 EOP 組織的預設語言。
+   - **通知語言**：按一下下拉式清單並從中選取可用的語言。 預設值為 [預設]****，這表示雲端式組織的預設語言。
 
    完成後，按一下 [儲存]****。
 

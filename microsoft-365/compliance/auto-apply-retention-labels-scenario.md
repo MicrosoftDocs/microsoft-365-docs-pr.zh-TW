@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 本解決方案案例說明如何使用保留標籤來管理儲存在 SharePoint Online 的產品相關文件的生命週期。 方法是使用文件中繼資料來分類內容，具體做法是並自動套用保留標籤及設定以事件為基礎的保留。
-ms.openlocfilehash: a2e7a3887f9402cecb70ec60d4ff4e47f6a55ee9
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 98e8b7fbe7a62af25797f813e2cefe1be2c39840
+ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199852"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45387450"
 ---
 # <a name="manage-the-lifecycle-of-sharepoint-documents-with-retention-labels"></a>使用保留標籤管理 SharePoint 文件的生命週期
 
@@ -124,10 +124,10 @@ ms.locfileid: "45199852"
 1. 在 [以下列條件保留或刪除內容]**** 下拉式清單中，選取 [事件]****。
 
 2. 選取 [選擇事件類型]****。
+    
+    ![為產品規格標籤建立新的事件類型](../media/SPRetention6.png)
 
-   ![為產品規格標籤建立新的事件類型](../media/SPRetention6.png)
-
-3. 在 [選擇事件類型]**** 頁面中，選取 [您可以在這裡建立新的事件類型]****。
+3. 選取 **[選擇事件類型]** 然後。 在 **[選擇事件類型]** 頁面中，選取 **[建立新的事件類型]**。
 
 4. 建立名為**產品停產**的事件類型，並提供描述，然後選取 [完成]**** 來建立。 
 
@@ -252,7 +252,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 ### <a name="verifying-the-retention-label-was-automatically-applied"></a>驗證已自動套用保留標籤
 
-七天後，請使用安全性中心的 [[標籤活動總管]](view-label-activity-for-documents.md)，查看我們建立的標籤原則是否已自動將此案例中的保留標籤套用至產品文件。 
+七天後，請使用安全性中心的 [[活動總管]](data-classification-activity-explorer.md)，查看我們建立的標籤原則是否已自動將此案例中的保留標籤套用至產品文件。 
 
 另一個驗證步驟是查看文件庫中的文件屬性。 在資訊面板中，您可以看到保留標籤已套用至所選的文件。
 
