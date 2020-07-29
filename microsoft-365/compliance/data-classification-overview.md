@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類儀表板可讓您深入了解貴組織所發現及分類的敏感性資料。
-ms.openlocfilehash: a9c7a275a0f3f2db7d931be5af77b00291cdad83
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: ca08f292bae70d121a3ef157a482a09590bd7ba1
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127218"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430326"
 ---
 # <a name="know-your-data---data-classification-overview"></a>了解您的資料 - 資料分類概觀
 
@@ -130,10 +130,10 @@ SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資�
 > 如果此卡片顯示「未偵測到位置」訊息，則表示您未建立或發佈任何敏感性標籤，或沒有套用保留標籤的內容。 若要開始使用敏感度標籤，請參閱：
 >- [敏感性標籤](sensitivity-labels.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
-- [查看標籤活動 (預覽)](data-classification-activity-explorer.md)
-- [檢視已套用標籤的內容 (預覽)](data-classification-content-explorer.md)
+- [檢視標籤活動](data-classification-activity-explorer.md)
+- [檢視已套用標籤的內容](data-classification-content-explorer.md)
 - [了解敏感度標籤](sensitivity-labels.md)
 - [瞭解保留原則和保留標籤](retention.md)
 - [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
