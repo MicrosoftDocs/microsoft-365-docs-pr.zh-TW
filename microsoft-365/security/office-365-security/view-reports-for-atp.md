@@ -18,135 +18,267 @@ ms.collection:
 - M365-security-compliance
 description: 在安全性與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c71bef11e574593d821b992f3a5037dbf127d5d2
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 4210ea30457215f9adc2984f24f161dc94985873
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936992"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434077"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 
-如果您的組織有[Office 365 高級威脅防護](office-365-atp.md)（ATP），而且您有[必要的許可權](#what-permissions-are-needed-to-view-the-atp-reports)，您可以在安全性與 &amp; 合規性中心使用數個 ATP 報告。 （移至**報表** \>**儀表板**。）
+Office 365 高級威脅防護（ATP）組織（例如，Microsoft 365 E5 訂閱或 ATP Plan 1 或 ATP Plan 2 附加元件）包含各種安全性相關的報告。 如果您有[必要的許可權](#what-permissions-are-needed-to-view-the-atp-reports)，您可以移至 [**報表**] \> **儀表板**，在安全性 & 規範中心中查看這些報告。 若要直接移至 [報告] 儀表板，請開啟] <https://protection.office.com/insightdashboard> 。
 
-![安全性與 &amp; 合規性中心儀表板可協助您查看高級威脅防護的運作情形](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
+![安全性 & 規範中心內的報告儀表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-ATP 報告包含下列專案：
+## <a name="advanced-threat-protection-file-types-report"></a>高級威脅防護檔案類型報告
 
-- [威脅防護狀態報告](#threat-protection-status-report)
-- [ATP 檔案類型報告](#atp-file-types-report)
-- [ATP 郵件處置報告](#atp-message-disposition-report)
-- [即時偵測或 Explorer](threat-explorer.md) （取決於您是否有 OFFICE 365 ATP 方案1或2）
-- ...[等等](#additional-reports-to-view)。
+「**高級威脅防護檔案類型報告**」報告會顯示由[ATP 安全附件](atp-safe-attachments.md)偵測為惡意的檔案類型。
 
-請閱讀本文，以取得 ATP 報表及其用法的概覽。
+ 報表的匯總視圖允許90天的篩選，而詳細資料檢視只允許10天的篩選。
 
-## <a name="threat-protection-status-report"></a>威脅防護狀態報告
+若要查看報告，請開啟[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **Office ATP 檔案類型**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPFileReport> 。
 
-「**威脅防護狀態**報告」是單一的視圖，可彙集[Exchange Online Protection](exchange-online-protection-overview.md) （EOP）和[Office 365 ATP](office-365-atp.md)所偵測到和封鎖的惡意內容和惡意電子郵件資訊。 此報告可用於查看一段時間內的偵測（最多90天），並可讓安全性管理員識別趨勢或判斷是否需要調整原則。
-
-該報告提供包含惡意內容的獨特電子郵件的匯總計數，例如檔案或網站位址（URLs），該惡意內容已封鎖反惡意程式碼引擎、[零小時的自動清除（ZAP）](zero-hour-auto-purge.md)和 atp 功能（如[atp 安全連結](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)及[atp 反網路釣魚](set-up-anti-phishing-policies.md)）。
-
-資訊的篩選和細分可讓您在此報告中進一步細化資訊的類別。 具體而言，**電子郵件** \> **網路釣魚**和**電子郵件** \> **惡意程式碼視圖**中也會包含「細分者」功能表。 它會將資料分解成：
-
-|||
-|---|---|
-|依原則類型|哪些原則會協助捕捉這些威脅？|
-|依偵測技術|哪些基本的 Microsoft 技術會陷入威脅？|
-|依傳遞狀態|電子郵件的最後傳遞狀態為威脅（已偵測為威脅）？|
-|
-
-> [!TIP]
-> 電子郵件 > 網路釣魚 |惡意程式碼視圖對顯示的偵測技術有細微的損害，其類別如*ATP 產生的檔案信譽*、檔案*引爆*、 *URL 引爆*、*反欺騙性： DMARC 失敗*，例如，明確確切指出您的組織攔截威脅的確切功能 led。
-
-![[威脅防護狀態報表] 下拉式清單顯示「中斷者」。](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
-
-這些視圖可讓您透過按鈕按一下（在**電子郵件** \> **網路釣魚**程式、**電子郵件** \> **惡意**代碼和**內容** \> **惡意**代碼視圖）來匯出選項。 匯出至電腦的匯總資料可以在 Excel 中開啟。
-
-![此圖形顯示匯出為惡意程式碼視圖功能表中的選項、建立排程和要求報告之間的選項。](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+![報表儀表板中的 Office ATP 檔案類型構件](../../media/atp-file-types-report-widget.png)
 
 > [!NOTE]
-> 可匯出的**網路釣魚**和**惡意**代碼專案數目上限為10000。 如果您匯出的是視圖，則只會匯出最近的10000專案。 在匯出的資料中，[_郵件計數_] 資料行代表偵測技術和原則類型所偵測到的郵件數目。    
+> 您也可以在「[高級威脅防護郵件](#advanced-threat-protection-message-disposition-report)處理」報告中使用此報告中的資訊。
 
-「一覽」和「電子郵件」視圖會在處理時間內（而不是24小時）顯示資訊（要求重新）。 增加的速度是清晰的信號）！
+### <a name="report-view-for-the-advanced-threat-protection-file-types-report"></a>高級威脅防護檔案類型報告的報表檢視
+
+可供使用的視圖如下：
+
+- **資料查看依據：** 檔案：此圖表包含下列資訊：
+
+  - **惡意 Excel 附件**
+  - **惡意的 Flash 附件**
+  - **惡意的 PDF 附件**
+  - **惡意 PowerPoint 附件**
+  - **惡意 URLs**
+  - **惡意的 Word 附件**
+  - **惡意可執行附件**
+  - **別人**
+
+  當您將游標移到某一天（資料點）時，您可以[在 EOP 中](anti-malware-protection.md)看到[ATP 安全附件](atp-safe-attachments.md)和反惡意程式碼保護所偵測到之惡意檔案類型的細目。
+
+  ![ATP 檔案類型報告中的檔查看](../../media/atp-file-types-report-file-view.png)
+
+  如果您按一下 [**篩選**]，您可以使用下列篩選器修改報告：
+
+  - **開始日期**和**結束日期**
+  - 圖表中顯示的相同檔案類型值。
+
+- **資料查看方式：訊息**：此圖表包含下列資訊：
+
+  - **封鎖存取**
+  - **取代郵件**
+  - **監控的郵件**
+  - 以**動態電子郵件傳遞取代**：如需詳細資訊，請參閱[使用 ATP 安全附件動態傳遞和預覽](dynamic-delivery-and-previewing.md)。
+
+  ![ATP 檔案類型報告中的郵件視圖](../../media/atp-file-types-report-message-view.png)
+
+  如果您按一下 [**篩選**]，您可以使用下列篩選器修改報告：
+
+  - **開始日期**和**結束日期**
+  - 圖表中可用的相同郵件處置值，以及已傳遞的其他**郵件**值。
+
+### <a name="details-table-view-for-the-advanced-threat-protection-file-types-report"></a>高級威脅防護檔案類型報告的詳細資料表格視圖
+
+如果您按一下 [**查看詳細資料] 表格**，此報告可提供最近10天內所有按一下動作的近乎即時視圖。 顯示的資訊取決於您所看到的圖表：
+
+- **資料查看依據：** 檔案：
+
+  - **Date**
+  - **收件者位址**
+  - **寄件者位址**
+  - **郵件識別碼**：郵件頭的**Message-ID**標頭欄位中可用，且應該是唯一的。 範例值為 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` （記下角括弧）。
+  - **File**
+
+  如果您按一下 [**篩選**]，您可以使用下列篩選器修改報告：
+
+  - **開始日期**和**結束日期**
+  - 圖表中顯示的相同檔案類型值。
+
+- **資料查看依據：訊息**：
+
+  - **Date**
+  - **收件者位址**
+  - **寄件者位址**
+  - **郵件識別碼**
+  - **File**
+  - **主旨**
+
+  如果您按一下 [**篩選**]，您可以使用下列篩選器修改結果：
+
+  - **開始日期**和**結束日期**
+  - 圖表中可用的相同郵件處置值，以及已傳遞的其他**郵件**值。
+
+若要回到 [報表] 視圖，請按一下 [ **view report**]。
+
+## <a name="advanced-threat-protection-message-disposition-report"></a>高級威脅防護郵件處置報告
+
+**ATP 郵件**處理報告會顯示偵測到有惡意內容的電子郵件所採取的動作。
+
+若要查看報告，請開啟[安全性 & 規範中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **Office ATP 郵件**處理]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=ATPMessageReport> 。
+
+![報表儀表板中的 Office 365 ATP 郵件處置小工具](../../media/atp-message-disposition-report-widget.png)
 
 > [!NOTE]
-> 「威脅防護狀態」報告適用于具有[Office 365 ATP](office-365-atp.md)或[Exchange Online Protection](exchange-online-protection-overview.md)（EOP）的客戶;不過，針對 ATP 客戶顯示在威脅防護狀態報表中的資訊，其可能會包含與客戶可能看到的 EOP 不同的資料。 例如，ATP 客戶的「威脅防護狀態報表」會包含[SharePoint 線上、OneDrive 或 Microsoft 小組中偵測到之惡意](atp-for-spo-odb-and-teams.md)檔案的相關資訊。 這類資訊專用於 ATP，所以具有 EOP 但不是 ATP 的客戶將無法在威脅防護狀態報表中看到這些詳細資料。
+> 您也可以在「[高級威脅防護檔案類型」報告](#advanced-threat-protection-file-types-report)中使用此報告中的資訊。
 
-若要查看「威脅防護狀態」報告，請在[安全性與 &amp; 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板** \> **威脅防護狀態**。
+### <a name="report-view-for-the-advanced-threat-protection-message-disposition-report"></a>高級威脅防護郵件處理報告的報表檢視
 
-![ATP 威脅防護狀態報表](../../media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
+可供使用的視圖如下：
 
-若要取得一天的詳細狀態，請將游標懸停在圖形上方。
+- **資料查看方式：訊息**：此圖表包含下列資訊：
 
-![一天的 ATP 威脅防護狀態資料](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
+  - **封鎖存取**
+  - **取代郵件**
+  - **監控的郵件**
+  - 以**動態電子郵件傳遞取代**：如需詳細資訊，請參閱[使用 ATP 安全附件動態傳遞和預覽](dynamic-delivery-and-previewing.md)。
 
-「威脅防護狀態」報告預設會顯示過去7天的資料。 不過，您可以選擇 [**篩選**]，然後變更日期範圍，以查看合計視圖的90天的資料，以及詳細資料檢視的30天。 （如果您是使用試用訂閱，則可能會限制為30天的資料。）
+  ![ATP 檔案類型報告中的郵件視圖](../../media/atp-file-types-report-message-view.png)
 
-![ATP 威脅防護狀態篩選](../../media/4f703369-642b-402b-9758-b9c828283410.png)
+  如果您按一下 [**篩選**]，您可以使用下列篩選器修改報告：
 
-您也可以使用 [ **View data by** ] 功能表來變更報表中所顯示的資訊。
+  - **開始日期**和**結束日期**
+  - 圖表中可用的相同郵件處置值，以及已傳遞的其他**郵件**值。
 
-![查看 ATP 威脅防護狀態報表的選項](../../media/4959bf8c-d192-4542-b00b-184e101e7513.png)
+- **資料查看依據：** 檔案：此圖表包含下列資訊：
 
-## <a name="url-protection-status-report"></a>URL 保護狀態報表
+  - **惡意 Excel 附件**
+  - **惡意的 Flash 附件**
+  - **惡意的 PDF 附件**
+  - **惡意 PowerPoint 附件**
+  - **惡意 URLs**
+  - **惡意的 Word 附件**
+  - **惡意可執行附件**
+  - **別人**
 
-這份報告是以每次按一下來收集的資料，以及偵測到的威脅（而大多數其他電子郵件威脅相關的報告為每一封郵件資料）。 此報告的設計目的是顯示來自電子郵件和檔中每次按一下的超連結的威脅。 有兩種觀點：
+  當您將游標移到某一天（資料點）時，您可以[在 EOP 中](anti-malware-protection.md)看到[ATP 安全附件](atp-safe-attachments.md)和反惡意程式碼保護所偵測到之惡意檔案類型的細目。
 
-|||
-|---|---|
-|URL 按一下保護動作|查看封鎖的 URLs 數目、封鎖但以使用者的按一下權覆寫，使用者會以點擊和允許的方式覆寫。|
-|依應用程式按一下 URL|請參閱已按一下 URL 的應用程式。|
-|
+  ![ATP 檔案類型報告中的檔查看](../../media/atp-file-types-report-file-view.png)
 
-在 [詳細資料] 表格中，您將可以看到有關按一下時間和使用者資訊的詳細資訊。 最後，請記住 URL 保護狀態報表顯示來自 ATP 安全連結功能的保護，所以只有已啟用 ATP 安全連結的客戶才能看到此報告上會反映的資料。
+  如果您按一下 [**篩選**]，您可以使用下列篩選器修改報告：
+
+  - **開始日期**和**結束日期**
+  - 圖表中顯示的相同檔案類型值。
+
+### <a name="details-table-view-for-the-advanced-threat-protection-message-disposition-report"></a>高級威脅防護郵件處理報告的詳細資料表格視圖
+
+如果您按一下 [**查看詳細資料] 表格**，此報告可提供最近10天內所有按一下動作的近乎即時視圖。 顯示的資訊取決於您所看到的圖表：
+
+- **資料查看依據：訊息**：
+
+  - **Date**
+  - **收件者位址**
+  - **寄件者位址**
+  - **郵件識別碼**
+  - **File**
+  - **主旨**
+
+  如果您按一下 [**篩選**]，您可以使用下列篩選器修改結果：
+
+  - **開始日期**和**結束日期**
+  - 圖表中可用的相同郵件處置值，以及已傳遞的其他**郵件**值。
+
+- **資料查看依據：** 檔案：
+
+  - **Date**
+  - **收件者位址**
+  - **寄件者位址**
+  - **郵件識別碼**
+  - **File**
+
+  如果您按一下 [**篩選**]，您可以使用下列篩選器修改報告：
+
+  - **開始日期**和**結束日期**
+  - 圖表中顯示的相同檔案類型值。
+
+若要回到 [報表] 視圖，請按一下 [ **view report**]。
+
+## <a name="threat-protection-status-report"></a>威脅防護狀態報表
+
+「**威脅防護狀態**報告」是單一的視圖，可彙集[Exchange Online protection](exchange-online-protection-overview.md) （EOP）和 Office 365 ATP 所偵測到和封鎖的惡意內容和惡意電子郵件資訊。 如需詳細資訊，請參閱[威脅防護狀態報表](view-email-security-reports.md#threat-protection-status-report)。
+
+## <a name="url-threat-protection-report"></a>URL 威脅防護報告
+
+**Url 威脅防護報告**可提供偵測威脅的摘要和趨勢視圖，以及在 URL 按一下上進行的動作，做為[ATP 安全連結](atp-safe-links.md)的一部分。 若已套用安全連結原則的使用者沒有選取 [不**追蹤使用者點擊**] 選項，則此報告將不會有按一下其資料的使用者。
+
+若要查看報告，請開啟[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [ **URL 保護報告**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
+
+![報表儀表板中的 URL 保護報告構件](../../media/url-protection-report-widget.png)
 
 > [!NOTE]
 > 這是一項*保護趨勢報告*，表示資料代表較大資料集的趨勢。 因此，在這種情況下，不會即時提供匯總視圖中的資料，但 [詳細資料] 表格視圖中的資料則是如此，您可能會看到這兩種視圖之間稍有差異。
 
-## <a name="atp-file-types-report"></a>ATP 檔案類型報告
+### <a name="report-view-for-the-url-threat-protection-report"></a>URL 威脅防護報告的報表檢視
 
-**Atp 檔案類型**報告會顯示由[ATP 安全附件](atp-safe-attachments.md)偵測為惡意的檔案類型。
+**URL 威脅防護**報告有兩個匯總的視圖，每四個小時都會重新整理一次，以顯示過去90天的資料：
 
-若要查看此報告，請在[安全性與 &amp; 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板** \> **ATP 檔案類型**。
+- **URL 按一下保護動作**：顯示組織中的使用者按下 URL 按一下數目及按一下的結果：
 
-![ATP 檔案類型報告](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
-  
-當您將游標移到某一天時，您可以看到[ATP 安全附件](atp-safe-attachments.md)和[反垃圾郵件 &amp; 反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)偵測到的惡意檔案類型細目。 報表的匯總視圖允許90天的篩選，而詳細資料檢視只允許10天的篩選。 
-  
-![ATP 檔案類型一天的報告資料](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
+  - **封鎖**
+  - **封鎖並按一下**
+  - **在掃描期間按一下**
 
-## <a name="atp-message-disposition-report"></a>ATP 郵件處置報告
+  按一下表示使用者已透過封鎖頁面透過惡意網站按一下（系統管理員可以停用 [安全連結原則] 中的 [按一下]）。
 
-**ATP 郵件**處理報告會顯示偵測到有惡意內容的電子郵件所採取的動作。
+  如果您按一下 [**篩選**]，您可以使用下列篩選器修改報告：
 
-若要查看此報告，請在[安全性與 &amp; 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板** \> **ATP 郵件部署**。
+  - **開始日期**和**結束日期**
+  - 可供按一下的 [保護動作]，加上**允許**查看所有 URL 點擊資訊的值（不只是封鎖的按一下）。
 
-![ATP 郵件處置報告](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
+  ![Url 威脅防護報告中的 URL 按一下保護動作視圖](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-當您將游標移到圖表中的某個列上方時，您就會看到針對該天所偵測到的電子郵件所採取的動作。
+- **依應用程式按一下 url**：會顯示支援 OFFICE 365 ATP 安全連結之應用程式的 url 按一下數目。
 
-![一天的 ATP 郵件處置報告資料](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
+  - **電子郵件用戶端**
+  - **PowerPoint**
+  - **Word**
+  - **Excel**
+  - **OneNote**
+  - **Visio**
+  - **Teams**
+  - **其他**
+
+  如果您按一下 [**篩選**]，您可以使用下列篩選器修改報告：
+
+  - **開始日期**和**結束日期**
+  - 可用的應用程式。
+
+### <a name="details-table-view-for-the-url-threat-protection-report"></a>URL 威脅防護報告的詳細資料表格視圖
+
+如果您按一下 [**查看詳細資料] 表格**，則報告會提供最近7天內組織內所有按一下動作的近乎即時視圖，其詳細資料如下：
+
+- **按一下 [時間]**
+- **使用者**
+- [URL]****
+- **Action**
+- **App**
+
+如果您按一下 [詳細資料] 表格視圖中的 [**篩選器**]，可以篩選與報表檢視中相同的準則，**以及以逗號分隔的****網域**或收件者。
+
+若要回到 [報表] 視圖，請按一下 [ **view report**]。
 
 ## <a name="additional-reports-to-view"></a>要查看的其他報告
 
-除了本文所述的 ATP 報告之外，還有其他幾個報告可供使用，如下表所述：
+除了本主題所述的 ATP 報告之外，還有其他幾個報告可供使用，如下表所述：
 
-|||
+|報告|主題|
 |---|---|
-|**報告**|**詳細資料**|
-|**瀏覽器**或**即時**偵測：（Office 365 ATP Plan 2 客戶具有 Explorer;Office 365 ATP Plan 1 客戶具備即時偵測。|[威脅總管 (及即時偵測)](threat-explorer.md)|
+|**瀏覽器**（atp 方案2）或**即時**偵測（atp plan 1）|[威脅總管 (及即時偵測)](threat-explorer.md)|
 |**電子郵件安全性報告**，例如主要寄件者和收件者報告、冒名郵件報告和垃圾郵件偵測報告。|[檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)|
-|**ATP 安全連結 URL 追蹤**：（這是您使用 PowerShell 所產生的報表）。此報告顯示在過去七（7）天內 ATP 安全連結動作的結果。|[Get-UrlTrace Cmdlet 參考](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**EOP 和 ATP 結果**：（這是您使用 PowerShell 所產生的自訂報告）。 此報告包含資訊，例如網域、日期、事件種類、方向、動作和郵件數目。|[MailTrafficATPReport Cmdlet 參考](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
-|**EOP 和 ATP**偵測：（這是您使用 PowerShell 所產生的自訂報告）。 此報告包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport Cmdlet 參考](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
-|
+|**郵件流程報告**，例如轉寄報告、郵件流程狀態報表，以及主要寄件者和收件者報告。|[在安全性 & 規範中心內，查看郵件流程報告](view-mail-flow-reports.md)|
+|**ATP 安全連結的 URL 追蹤**（僅限 PowerShell）。 此 Cmdlet 的輸出會顯示在過去7天內 ATP 安全連結動作的結果。|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**EOP 和 ATP 的郵件流量結果**（僅限 PowerShell）。 此 Cmdlet 的輸出包含網域、日期、事件種類、方向、動作和郵件數目的相關資訊。|[MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
+|**EOP 和 ATP 偵測的郵件詳細資料包告**（僅限 PowerShell）。 此 Cmdlet 的輸出包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>查看 ATP 報表所需的許可權為何？
 
-為了查看和使用本文所述的報告，**您必須為安全性與 &amp; 合規性中心和 Exchange 系統管理中心指派適當的角色**。
+若要查看和使用本主題中所述的報表，**您必須為安全性與 &amp; 合規性中心和 Exchange 系統管理中心指派適當的角色**。
 
-- 針對「安全性與合規性中心」，您必須受指派下列其中一個角色：
+- 針對安全性 & 合規性中心，您必須已指派下列角色之一：
 
   - 組織管理
   - 安全性系統管理員 (這可以在 Azure Active Directory 系統管理中心指派 ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
@@ -162,7 +294,7 @@ ATP 報告包含下列專案：
 
 若要深入了解，請參閱下列資源：
 
-- [安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)
+- [安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)
 
 - [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
@@ -172,6 +304,6 @@ ATP 報告包含下列專案：
 
 ## <a name="related-topics"></a>相關主題
 
-[安全性與 &amp; 合規性中心內的報告與深入瞭解](reports-and-insights-in-security-and-compliance.md)
+[安全性與合規性中心內的智慧型報表和深入解析](reports-and-insights-in-security-and-compliance.md)
   
 [角色許可權（Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

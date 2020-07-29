@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
-ms.openlocfilehash: 5ba6f86ca44fbddf5fb603c5312c9fedebfad225
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 009ea920854cfb88082d1c59ba78ac3531d253cf
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127310"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502924"
 ---
 # <a name="supervision-policies"></a>監督原則
 
@@ -286,14 +286,6 @@ Microsoft 365 中的監督原則可讓您透過指定的檢閱者，捕獲員工
 ## <a name="audit"></a>審計
 
 在某些情況下，您必須提供資訊給法規或合規性審計員，以證明員工活動和通訊的監管。 此資訊可能是與定義的原則或任何時刻監管原則變更相關之所有監察作業的摘要。 監督原則具有內建的審計追蹤，可完成內部或外部審計的完整準備工作。 監督原則所監控之每個動作的詳細審計歷史記錄，都提供監督程式的證明。
-
-在整合的審計記錄檔中，會審核和使用下列監督原則活動：
-
-|**活動**|**關聯的命令**|
-|:-----|:-----|
-| **建立原則** | [新 SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewpolicyv2) <br> [新 SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewrule) |
-| **編輯原則** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
-| **刪除原則** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/remove-supervisoryreviewpolicyv2) |
 
 在整合的審計記錄檔或[Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell Cmdlet 中查看審核活動。
 

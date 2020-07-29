@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,20 +15,17 @@ ms.collection:
 - Adm_TOC
 - commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 description: '瞭解在不同地區，您要對 Microsoft 365 for business 訂閱收取多少稅收。 '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 72939c40ad340e751be30aecc6e102570ea42eb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401747"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434058"
 ---
 # <a name="tax-information"></a>稅務資訊
 
@@ -122,7 +119,7 @@ ms.locfileid: "44401747"
 
 3. 在 [**設定 & 動作**] 區段中，選取 [**編輯服務使用位址**]。
 
-4. 在 [**編輯服務使用位址**] 頁面的 [ **vat 號碼**] 方塊中，輸入您的 vat ID，然後選取 [**儲存**]。
+4. 在 [**編輯服務使用位址**] 頁面的 [**加值稅 號碼**] 方塊中，輸入您的 加值稅 ID （包括前置詞），且不含任何空格。 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -134,7 +131,7 @@ ms.locfileid: "44401747"
 
 2. 選取訂閱名稱，然後選取 [**其他動作**] [ \> **編輯加值稅號碼**]。
   
-3. 在 [**編輯服務使用位址**] 頁面的 [ **vat 號碼**] 方塊中，輸入您的 vat ID，然後選取 [**提交**]。
+3. 在 [**編輯服務使用位址**] 頁面的 [**加值稅 號碼**] 方塊中，輸入您的 加值稅 ID （包括前置詞），且不含任何空格。 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -184,8 +181,7 @@ ms.locfileid: "44401747"
 | 保留免除稅款的國際組織 | 來自當地稅務主管機構的憑證/字母確認 |
 | 波多黎各 | Certificado de Compras Exentas |
   
-## <a name="related-articles"></a>相關文章
+## <a name="related-content"></a>相關內容
   
-[檢視帳單](view-your-bill-or-invoice.md)
-  
-[認識您的帳單或發票](understand-your-invoice.md)
+[查看您的帳單或發票](view-your-bill-or-invoice.md)（文章） \
+[瞭解您的帳單或發票](understand-your-invoice.md)（文章）

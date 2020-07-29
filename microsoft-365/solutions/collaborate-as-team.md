@@ -2,7 +2,7 @@
 title: 在小組中與來賓共同作業
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解設定小組以與小組中的客人共同作業所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: 6742409732e1ef9b466dae6854768c3843f33bd0
-ms.sourcegitcommit: 87eff6e8a08cec3cb0464a3b765434717584a4a9
+ms.openlocfilehash: 2a412502af16ff95bf0f1f912ac57d00eb1d382a
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/26/2020
-ms.locfileid: "44371486"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430384"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在小組中與來賓共同作業
 
@@ -82,7 +82,7 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 設定 Microsoft 365 群組來賓設定
 
 1. 在 Microsoft 365 系統管理中心的左側流覽窗格中，展開 [**設定**]。
-2. 按一下 [**服務] & 增益集**。
+2. 按一下 [**組織設定**]。
 3. 在清單中，按一下 [ **Microsoft 365 群組**]。
 4. 確定 [**讓組織外部的成員存取群組內容**] 和 [**允許群組擁有者將組織外部人員新增至群組**] 核取方塊皆已勾選。
 5. 如果您進行變更，請按一下 [**儲存變更**]。

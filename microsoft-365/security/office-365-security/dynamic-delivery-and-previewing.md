@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 當您設定 ATP 安全附件原則時，您選擇 [動態傳遞] 來避免郵件延遲，並讓人員預覽正在掃描的附件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b22112617ecba191c7ee8d7daab0de3cde1bf8c3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819349"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430348"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>使用 ATP 安全附件的動態傳送和預覽
 
@@ -68,20 +68,20 @@ ATP 安全附件掃描會在 Microsoft 365 資料所在的相同區域中進行�
 
 ## <a name="additional-considerations"></a>其他考量因素
 
-在某些情況下，動態傳遞不受支援。 包括下列各項：
+在某些情況下，可能會有安全附件（包括不支援動態傳遞）。 包括：
 
-- 在公用資料夾中的電子郵件訊息
+- 公用資料夾中的電子郵件。
 
-- 使用自訂規則從使用者的信箱路由傳送出去又傳送回來的電子郵件訊息
+- 使用自訂規則，然後再移至使用者信箱的電子郵件。
 
-- 移出 (自動或手動) 託管信箱並且移入其他位置 (包括封存資料夾) 的電子郵件訊息
+- 移出（自動或手動）退出的主控信箱的電子郵件，包括封存資料夾。
 
-- 已刪除的電子郵件訊息
+- 已刪除的電子郵件。
 
-- 處於錯誤狀態的使用者信箱搜尋資料夾
+- 處於錯誤狀態的使用者信箱搜尋資料夾。
 
-- Exchange Online 系統管理員已啟用 Exclaimer 的環境。 若要解決此問題，請參閱[使用 ATP 動態傳遞和 Exclaimer 時，不會傳遞含有附件的郵件](https://support.microsoft.com/help/4014438)
+- Exchange Online 系統管理員已啟用 Exclaimer 的環境。 若要解決此問題，請參閱[使用 ATP 動態傳遞和 Exclaimer 時，具有附件的郵件將不會傳遞](https://support.microsoft.com/help/4014438)。
 
-- 使用 [安全多用途網際網路郵件延伸 (S/MIME)](s-mime-for-message-signing-and-encryption.md)) 加密的郵件
+- 使用[安全/多用途網際網路郵件擴充（S/MIME）](s-mime-for-message-signing-and-encryption.md)加密的郵件。
 
-- 如果動態傳遞不受支援，ATP 安全附件將不會掃描電子郵件訊息。 不過，系統會根據您 [ATP 安全連結原則](set-up-atp-safe-links-policies.md)的設定方式，在傳遞具有附件 (含有 URL) 的電子郵件訊息時會進行檢查。 在這些情況下，會檢查電子郵件訊息和 Office 檔案中的 URL。
+- 在不支援動態傳遞的情況下，安全附件將不會掃描電子郵件。 不過，系統會根據您 [ATP 安全連結原則](set-up-atp-safe-links-policies.md)的設定方式，在傳遞具有附件 (含有 URL) 的電子郵件訊息時會進行檢查。 在這些情況下，會檢查電子郵件訊息和 Office 檔案中的 URL。

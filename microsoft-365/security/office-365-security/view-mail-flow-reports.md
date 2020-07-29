@@ -1,5 +1,5 @@
 ---
-title: 在安全性 & 規範中心內，查看郵件流程報告
+title: 檢視安全性與合規性中心中的郵件流程報告
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用組織的郵件流程安全性報告。 郵件流程報告可在安全性 & 規範中心中取得。
 ms.custom: ''
-ms.openlocfilehash: 70c96bb4f43edb80f98fdc98aa173fed9e54e7d7
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: e891d9373b169dc01cfd89f114e31b23e1bd8480
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44937130"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434176"
 ---
-# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>在安全性 & 規範中心內，查看郵件流程報告
+# <a name="view-mail-flow-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心中的郵件流程報告
 
 除了安全性 & 合規性中心中提供的[郵件流程洞察力](mail-flow-insights-v2.md)之外，也有許多郵件流程報告可協助您監視 Microsoft 365 組織。 如果您有[必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移 <https://office.protection.com> 至 [**報告**] \> **儀表板**，在安全性 & 規範中心中查看這些報告。 若要直接移至 [報告] 儀表板，請開啟] <https://office.protection.office.com/insightdashboard> 。
 
@@ -310,7 +310,7 @@ ms.locfileid: "44937130"
 
   ![傳送和接收的電子郵件報告中的方向視圖](../../media/sent-and-received-email-report-direction-view.png)
 
-- **向下** \> 鑽取**惡意程式碼（反惡意程式碼）**：這項選擇會帶您前往[電子郵件報告中的惡意程式碼偵測](view-email-security-reports.md#malware-detection-in-email-report)。
+- **向下** \> 鑽取**惡意程式碼（反惡意程式碼）**：這項選擇會帶您前往[電子郵件報告中的惡意](view-email-security-reports.md#malware-detections-in-email-report)代碼偵測。
 
 - **向下** \> 鑽取**垃圾郵件**偵測：這項選擇會帶您前往[垃圾郵件偵測報告](view-email-security-reports.md#spam-detections-report)。
 

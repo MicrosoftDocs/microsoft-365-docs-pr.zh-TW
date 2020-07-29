@@ -1,7 +1,7 @@
 ---
 title: Microsoft 受管理電腦的網路設定
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a1cf21fdd53ca90218370fb9c87547c64e867cd8
-ms.sourcegitcommit: bad47f9c69025d76d1e161519640cf7e238bd3b2
+ms.openlocfilehash: 61ee024cc483f9be172063a256cedd3827d6807a
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735511"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430492"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路設定
 
@@ -33,32 +33,33 @@ Microsoft 受管理的桌面為雲端管理的服務。 Microsoft 受管理的�
 
 Proxy 或防火牆必須支援 TLS 1.2。 否則，您可能必須停用通訊協定偵測。
 
-### <a name="endpoints-allowed---specific-for-microsoft-managed-desktop"></a>Microsoft 受管理的桌上型電腦允許的端點-專用
+### <a name="endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop"></a>Microsoft 受管理的桌面所需的端點允許
 
-Microsoft 受管理的桌面使用 Azure 入口網站來主控其網頁主控台。 下表中的下列 URLs 必須位於 proxy 和防火牆的允許清單上，以便 Microsoft 受管理的桌面裝置可以與 Microsoft 服務通訊。  
+Microsoft 受管理的桌面使用 Azure 入口網站來主控其網頁主控台。 下列 URLs 必須位於 proxy 和防火牆的允許清單上，以便 Microsoft 受管理的桌面裝置可以與 Microsoft 服務通訊。  
 
-請注意，下列 Microsoft Managed 桌面 URL 是用於在客戶 API 上執行的任何服務。 您必須確定您的公司網路一定可以存取此 URL。
+Microsoft 受管理的桌面 URL 用於服務于客戶 API 執行的任何專案。 您必須確定您的公司網路一定可以存取此 URL。
 
 Microsoft 服務  | 允許清單上的 URLs 必要專案 
---- | --- | ---
+--- | ---
 Microsoft 受管理的電腦 | prod-mwaas-services-customerapi.azurewebsites.net
 取得說明 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
 快速協助 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com
 Microsoft 支援和修復助理 | \*。 apibasic.diagnostics.office.com  <br>\*。 api.diagnostics.office.com
  
 
-### <a name="endpoints-allowed---other-microsoft-products"></a>允許端點-其他 Microsoft 產品
+### <a name="endpoints-allowed-used-by-other-microsoft-products"></a>其他 Microsoft 產品所允許使用的端點
 
 有來自數個 Microsoft 產品的 URLs 需要位於允許的清單中，以便 Microsoft 受管理的桌面裝置可以與這些 Microsoft 服務進行通訊。 使用連結查看每個產品的完整清單。 
 
-Microsoft 服務 | 檔來源-允許清單上的 URLs 必要專案
+Microsoft 服務 | 文件
 --- | ---
-Windows 10 企業版，包含 Windows 更新（商務） | [管理 Windows 10 版本1803的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本1809的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 版本1903的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 Windows 10 版本2004的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
+Windows 10 企業版，包含 Windows 更新（商務） | [管理 Windows 10 版本1803的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[管理 Windows 10 版本1809的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[管理 Windows 10 版本1903的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[管理 Windows 10 版本2004的連接端點](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)
 傳遞最佳化 | [設定 Windows 10 更新的傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365 URL 與 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [混合式識別所需的埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)和 Active Directory[網域服務埠需求](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune 網路設定需求](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Microsoft Intune 的網路端點](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender 高級威脅防護（ATP） | [Microsoft Defender ATP 端點](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Windows Autopilot | [Windows Autopilot 網路需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

@@ -1,19 +1,19 @@
 ---
 title: 取得 Microsoft 受管理電腦的支援
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 3e74f644457057eafe61235c874ca6290bfae6a3
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 6c23d2ffa70cf4931823fafa1918e7fd5eefa0b8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327889"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430432"
 ---
-# <a name="getting-help-for-end-users"></a>取得使用者的協助
+# <a name="getting-help-for-end-users"></a>為使用者獲得協助
 
 組織中的使用者可透過下列兩種方式取得 Microsoft 受管理桌面裝置的協助：**取得協助**應用程式或電話支援。 這兩種支援選項均可供使用者在一周7天、一天24小時。
  
@@ -37,7 +37,7 @@ ms.locfileid: "44327889"
 - 裝置必須使用[設定 Microsoft 受管理的桌面裝置](../get-started/set-up-devices.md)中的其中一種方法，向 Microsoft managed desktop 註冊，例如[自行註冊新裝置](../get-started/register-devices-self.md)。
 - 裝置的顯示語言必須設定為下列任何一種英文語言地區設定： en-us、en、en、en 或 en-ca。
 - 「取得説明」應用程式應該是最新的。 若要確認這一點，請檢查 Microsoft Store 中的應用程式更新。
-- 必須可從裝置存取特定[端點](../get-ready/network.md#endpoints-allowed---specific-for-microsoft-managed-desktop)。
+- 必須可從裝置存取特定[端點](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop)。
 
 > [!NOTE]
 > 在部署裝置以完全運作後，取得輔助應用程式最多可能需要一小時。

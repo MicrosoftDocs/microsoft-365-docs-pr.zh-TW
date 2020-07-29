@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何在組織內部和外部的人員之間傳送和接收加密的電子郵件。
-ms.openlocfilehash: 527d7519ff9f20b4d7cf5a02cec6b0704802f8dc
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 542b540bb06998c1b90ef74485a4096ebc9ee0dc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818728"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429929"
 ---
 # <a name="message-encryption"></a>郵件加密
 
@@ -60,7 +60,7 @@ Office 365 郵件加密是以 Microsoft Azure 版權管理（Azure RMS）為基�
 
 Office 365 Advanced Message Encryption 可讓您建立多個品牌範本，這樣您就能微調收件者郵件的控制權，並建立自訂的署名體驗，以支援多種組織結構。
 
-Microsoft 365 中的高級郵件加密可協助您符合法規遵從性義務，需要對外部收件者的加密電子郵件存取更靈活的控制。 使用 Office 365 中的高級郵件加密，您可以控制在組織外共用的敏感電子郵件，其方式是可偵測敏感資訊類型（例如 PII、財務或健康情況 IDs）或關鍵字，以透過安全的 web 入口網站終止存取加密的電子郵件，以加強保護。 此外，作為系統管理員，您可以隨時撤銷電子郵件的存取權，以進一步控制透過 Microsoft 365 網頁入口網站存取的加密電子郵件。
+Microsoft 365 中的高級郵件加密可協助您符合法規遵從性義務，需要對外部收件者的加密電子郵件存取更靈活的控制。 使用 Office 365 中的高級郵件加密，您可以控制在組織外共用的敏感電子郵件，其方式是可偵測敏感資訊類型（例如，PII、財務或健康情況 IDs）或關鍵字，以透過安全的 web 入口網站終止存取加密的電子郵件，以加強保護。 身為系統管理員，您可以隨時撤銷電子郵件存取權，以進一步控制透過 Microsoft 365 網頁入口網站存取的加密電子郵件。
 
 郵件吊銷和到期僅適用于您的使用者傳送給組織外部收件者的電子郵件。 此外，收件者必須透過網頁入口網站來存取電子郵件。 為了確保收件者使用入口網站接收電子郵件，您可以設定套用包裝的自訂商標範本。 然後，您可以在郵件流程規則中套用署名範本。 如需高級郵件加密的詳細資訊，請參閱[Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md)。
 

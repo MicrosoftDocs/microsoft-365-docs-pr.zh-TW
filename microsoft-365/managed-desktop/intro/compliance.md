@@ -1,17 +1,17 @@
 ---
 title: 合規性
 description: 本文列出與 Microsoft 受管理的桌面相關的相容性標準。
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 31844ee413f89992babd2b1917fcb89d20db6804
-ms.sourcegitcommit: 5c43e89ed94ad9fd1db049446383c65e548189b7
+ms.openlocfilehash: e2a60bba348e4f19eaa56805b509e4472c9fd215
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322014"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434286"
 ---
 # <a name="compliance"></a>合規性
 
@@ -38,7 +38,7 @@ Microsoft 受管理的桌面已達到下列認證：
 您可以在[服務信任入口網站（STP）](https://servicetrust.microsoft.com/)中，找到相關的資訊，包括控制項和技術需求，以取得 Microsoft 雲端服務產品的相關資訊的中央存放庫。 您可以從 STP 的「[審核報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide)」區段下載審計員報告、符合性憑證等等。
 
 > [!NOTE]
-> 因為 Microsoft 受管理的桌面會在 Azure 上執行，所以相關的檔通常會有檔案名（如 "Microsoft Azure、Dynamics 365）及其他線上服務"）。 在這些檔中，您通常可以在「監控 + 管理」類別下找到 Microsoft 受管理的桌面。
+> 因為 Microsoft 受管理的桌面會在 Azure 上執行，所以相關的檔通常會有檔案名（如 "Microsoft Azure、Dynamics 365）及其他線上服務"）。 在這些檔中，您通常可以在類別 "Microsoft Online Services" 或 "Monitoring + Management" 下找到 Microsoft Managed Desktop。
 
 ## <a name="shared-responsibility"></a>共用責任
 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何設定資料遺失防護（DLP）原則以使用 Microsoft 365 端點資料遺失防護（EPDLP）位置。
-ms.openlocfilehash: c65b1f7ed97fc0400d88eecadfa2081a940bac41
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 38300769a4d6d3a4093fe403e79f5b13e71f2c1c
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199959"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430241"
 ---
 # <a name="using-endpoint-data-loss-prevention-preview"></a>使用端點資料外洩防護 (預覽版)
 
@@ -108,15 +108,14 @@ ms.locfileid: "45199959"
 3. 在此案例中，請選擇 **[隱私權]**，然後 **[美國個人識別資訊（PII）資料]**，然後選擇 **[下一個]**。
 4. 將 **[裝置]** 以外的所有位置的 **[狀態]** 欄位切換為 [關閉]。 選擇 **[下一步]**。
 5. 接受預設 **[查看並自訂範本中的設定]** 選項，然後選擇 **[下一步]**。
-6. 接受預設 **[偵測該內容被共用時]**，然後 **[與我的組織外部人員]** 選項 ，然後選擇 **[下一步]**。
-7. 接受預設 **[保護動作]** 值，然後選擇 **[下一步]**。
-8. 選取 **[稽核或限制 Windows 裝置上的活動]**，並將動作設定為 **[僅限稽核]**。 選擇 **[下一步]**。
-9. 接受預設 **[我想先進行測試]** 值，然後選擇 **[在測試模式中顯示原則提示]**。 選擇 **[下一步]**。
-10. 查看您的設定，然後選擇 **[提交]**。
-11. 新的 DLP 原則會顯示在原則清單中。
-12. 在活動瀏覽器中檢查受監控端點的資料。 設定裝置的位置篩選並新增原則，然後依策略名稱篩選，以查看此原則的影響。 如有需要，請參閱 [啟動活動資源管理器](data-classification-activity-explorer.md)。
-13. 嘗試與組織外部人員共用包含會觸發美國個人識別資訊（PII）資料條件之測試。 這應該會觸發該原則。
-14. 查看活動的活動瀏覽器。
+6. 接受預設 **[保護動作]** 值，然後選擇 **[下一步]**。
+7. 選取 **[稽核或限制 Windows 裝置上的活動]**，並將動作設定為 **[僅限稽核]**。 選擇 **[下一步]**。
+8. 接受預設 **[我想先進行測試]** 值，然後選擇 **[在測試模式中顯示原則提示]**。 選擇 **[下一步]**。
+9. 查看您的設定，然後選擇 **[提交]**。
+10. 新的 DLP 原則會顯示在原則清單中。
+11. 在活動瀏覽器中檢查受監控端點的資料。 設定裝置的位置篩選並新增原則，然後依策略名稱篩選，以查看此原則的影響。 如有需要，請參閱 [啟動活動資源管理器](data-classification-activity-explorer.md)。
+12. 嘗試與組織外部人員共用包含會觸發美國個人識別資訊（PII）資料條件之測試。 這應該會觸發該原則。
+13. 查看活動的活動瀏覽器。
 
 ### <a name="scenario-2-modify-the-existing-policy-set-an-alert"></a>案例2：修改現有原則、設定通知
 
@@ -157,7 +156,7 @@ ms.locfileid: "45199959"
 - [開始使用端點資料外洩防護（預覽版）](endpoint-dlp-getting-started.md)
 - [資料外洩防護概觀](data-loss-prevention-policies.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
-- [開始使用活動總管](data-classification-activity-explorer.md) (英文)
+- [開始使用活動總管](data-classification-activity-explorer.md)
 - [Microsoft Defender 進階威脅防護 (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Windows 10 電腦上線的工具及方法 ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 - [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)

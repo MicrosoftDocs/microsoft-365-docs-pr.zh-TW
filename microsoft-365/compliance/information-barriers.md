@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: 使用資訊障礙，以確保您的組織內的 Microsoft 小組能夠進行通訊法規遵從性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41b9eb1378a585a22bbd747edb395b79cfe761ca
-ms.sourcegitcommit: c51dd4c659f763ae46c188d3fae90aab8d1d7e88
+ms.openlocfilehash: f723885a366e6f92f29faccfb632677c6e0028c8
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45084142"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430221"
 ---
 # <a name="information-barriers"></a>資訊屏障
 
@@ -64,10 +64,11 @@ Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假
 
 資訊壁壘現在正在推出，並包含在訂閱中，例如：
 
-- Microsoft 365 E5
-- Office 365 E5
+- Microsoft 365 E5/A5
+- Office 365 E5/A5
 - Office 365 進階合規性
-- Microsoft 365 規範 E5
+- Microsoft 365 規範 E5/A5
+- Microsoft 365 有問必答風險管理
 
 如需詳細資訊，請參閱[規範解決方案](https://products.office.com/business/security-and-compliance/compliance-solutions)。
 
@@ -75,7 +76,7 @@ Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假
 
 - Microsoft 365 全域系統管理員
 - Office 365 全域系統管理員
-- 合規性系統管理員
+- 合規性管理員
 - IB 相容性管理（這是新的角色！）
 
 （若要深入瞭解角色和許可權，請參閱[Office 365 Security & 合規性中心的許可權](../security/office-365-security/protect-against-threats.md)。）

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何定義安全附件原則，以利用電子郵件中的惡意檔來保護組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 581c45c9c5b606b3b4b0ba91bd96740bc838629d
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 1569e8072f64ce751c44e76f971e98f37540afae
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617227"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430420"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -92,7 +92,7 @@ ms.locfileid: "44617227"
 ||||
 |---|---|---|
 |**選項**|****|**使用時機：**|
-|**關閉**|不掃描附件的惡意程式碼  <br/> 不會延遲郵件傳遞|針對只傳送已知的良好附件的掃描器、傳真或智慧主機，關閉掃描功能  <br/> 避免路由內部郵件的非必要延遲。  <br/> **我們不建議大多數使用者採用此選項。您應只使用此選項，關閉一小小群組的信任寄件者的 ATP 安全附件掃描。**|
+|**關閉**|不掃描附件的惡意程式碼  <br/> 不會延遲郵件傳遞|為選取的收件者關閉掃描。  <br/> 避免路由內部郵件的非必要延遲。  <br/> **大多數使用者不建議使用此選項。您應只使用此選項，關閉只從信任寄件者取得電子郵件之收件者的 ATP 安全附件掃描。**|
 |**監視**|傳送含有附件的郵件，然後追蹤偵測到的惡意程式碼會發生什麼情況|查看偵測到的惡意程式碼會在組織中哪個位置|
 |**封鎖**|防止偵測到惡意程式碼附件的郵件繼續進行  <br/> 將偵測到惡意程式碼的郵件傳送到 [Office 365 中的隔離區](manage-quarantined-messages-and-files.md)，安全性系統管理員或分析者可以在此檢視並釋放 (或刪除) 這些郵件  <br/> 自動封鎖未來的郵件和附件|避免組織遭受相同惡意程式碼附件的重複攻擊|
 |**取代**|移除偵測到的惡意程式碼附件  <br/> 通知收件者附件已移除  <br/> 將偵測到惡意程式碼的郵件傳送到 [Office 365 中的隔離區](manage-quarantined-messages-and-files.md)，安全性系統管理員或分析者可以在此檢視並釋放 (或刪除) 這些郵件|提高收件者看到附件因為偵測到惡意程式碼而遭移除的可能性|

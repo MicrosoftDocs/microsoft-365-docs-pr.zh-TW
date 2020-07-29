@@ -1,5 +1,5 @@
 ---
-title: 預先設定的安全性原則
+title: 預設安全性原則
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Exchange Online Protection （EOP）和 Office 365 高級威脅防護（ATP）的保護功能上套用標準和嚴格的原則設定
-ms.openlocfilehash: 34445c617d2dda59a65b197db2f42324d0085ab3
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: dd730639aa15709bafd600d4cc2706befb143cd4
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389867"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430396"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>EOP 和 Office 365 ATP 中的預先設定安全性原則
 
@@ -88,9 +88,10 @@ ms.locfileid: "45389867"
 
 1. **嚴格保護**預設安全性原則
 2. **標準保護**預設安全性原則
-3. 任何其他相關原則。
+3. 自訂安全性原則
+4. 預設的安全性原則
 
-換句話說，**嚴格保護**原則的設定會覆寫**標準保護**原則的設定，這會覆寫任何其他相關原則的設定。
+換句話說，**嚴格保護**原則的設定會覆寫**標準保護**原則的設定，它會覆寫自訂原則中的設定，以覆寫預設原則中的設定。
 
 ## <a name="assign-preset-security-policies-to-users"></a>將預先設定的安全性原則指派給使用者
 

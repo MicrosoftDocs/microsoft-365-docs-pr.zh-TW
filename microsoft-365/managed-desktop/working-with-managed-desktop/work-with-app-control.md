@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 74cd1ec93058ed733e7d79da2d6932f04acfa5da
-ms.sourcegitcommit: 63887d742c59cc660fc85537b335e98a9dc66fbe
+ms.openlocfilehash: 9efe6ba6704b0e1633973d157c38827221316bbd
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/18/2020
-ms.locfileid: "45170687"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430444"
 ---
 # <a name="work-with-app-control"></a>使用應用程式控制
 
@@ -54,8 +54,8 @@ ms.locfileid: "45170687"
 |---------|---------|---------|
 |測試     |  審計       |  Day 0       |
 |名字     | Enforced        | 第 1 天        |
-|快速     | Enforced        |  第 3 天       |
-|廣泛     | Enforced        |  第 7 天       |
+|快速     | Enforced        |  第 2 天       |
+|廣泛     | Enforced        |  第 3 天       |
 
 
 您可以在首次部署期間隨時暫停或回退部署。 若要這麼做，請使用 Operations 開啟另一個服務要求。

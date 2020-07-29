@@ -16,12 +16,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection （EOP）和高級威脅防護（ATP）安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用高級威脅防護（ATP），您也可以取得哪些額外功能？
-ms.openlocfilehash: 542dce4d2abe9a40fcc5eef57502be5c37a34d57
-ms.sourcegitcommit: 688d62a8c52e4fb0feb721bb92b535effc278f54
+ms.openlocfilehash: f34c4e0aad2413fdeb082c37f980e6e4548db6b3
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45389842"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430372"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建議設定
 
@@ -194,7 +194,8 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 
 |安全性功能名稱|標準|嚴格|留言|
 |---|---|---|---|
-|**使用下列專案中的安全連結： Office 365 應用程式** <br/><br/> _EnableSafeLinksForO365Clients_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|使用 Office 365 應用程式中的 ATP 安全連結，Office for iOS 和 Android。|
+|**使用下列專案中的安全連結： Office 365 應用程式** <br/><br/> _EnableSafeLinksForO365Clients_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|使用 Office 365 desktop 和 mobile （iOS 和 Android）用戶端中的 ATP 安全連結。|
+|**使用下列專案中的安全連結： Office Web Access 分享元件** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|使用 Office Web Apps 中的 ATP 安全連結。|
 |**使用者按一下安全連結時請勿追蹤** <br/><br/> _TrackClicks_|關閉 <br/><br/> `$true`|關閉 <br/><br/> `$true`||
 |**不要讓使用者點擊至原始 URL 的安全連結** <br/><br/> _AllowClickThrough_|開啟 <br/><br/> `$false`|開啟 <br/><br/> `$false`||
 |

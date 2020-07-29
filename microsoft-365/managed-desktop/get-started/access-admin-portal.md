@@ -1,5 +1,5 @@
 ---
-title: 存取管理員入口網站
+title: 存取系統管理入口網站
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 ms.author: jaimeo
@@ -9,16 +9,16 @@ ms.topic: article
 audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b6310849f27200adbbcbcb1584903011fbdf6145
-ms.sourcegitcommit: 9af890ef1b1c95bfc7cc52f7f4e395b62dc5263f
+ms.openlocfilehash: 17696b18b4109b568bb1d616813ba40e2a9dccdc
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45146262"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430468"
 ---
 # <a name="access-the-admin-portal"></a>存取管理員入口網站
 
-您的 Microsoft Managed 桌面服務閘道是 Microsoft [Azure 入口網站](https://portal.azure.com)。 如需更多有關使用和自訂 Azure 入口網站體驗的詳細資訊，請參閱[azure 入口網站檔](https://docs.microsoft.com/azure/azure-portal/)。 
+您的 Microsoft Managed 桌面服務閘道是 Microsoft [Azure 入口網站](https://portal.azure.com)。 如需更多有關使用和自訂 Azure 入口網站體驗的詳細資訊，請參閱[azure 入口網站檔](https://docs.microsoft.com/azure/azure-portal/)。 可用於預覽現在，您也可以在[Microsoft 端點管理員](https://endpoint.microsoft.com/)中找到 Microsoft 受管理的桌面。 如果您不熟悉此入口網站的裝置管理功能，請參閱[Microsoft 端點管理員的檔](https://docs.microsoft.com/mem/)。
 
 您的管理帳戶需要特定許可權，才能存取 Microsoft 受管理的桌面系統管理入口網站。 您可以使用角色型存取控制（RBAC）管理組織內這些功能的系統管理員存取權。 如需 Azure Active Directory 角色的詳細資訊，請參閱[在 Azure Active directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 

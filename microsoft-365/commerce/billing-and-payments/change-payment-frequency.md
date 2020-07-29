@@ -1,5 +1,5 @@
 ---
-title: 變更您的付款頻率
+title: 變更您的帳單頻率
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: 瞭解如何變更您為商務版訂閱收費的頻率。
-ms.openlocfilehash: 321bf660caf53a39a85ad45b20bd7ed2267c8748
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 439e5b9c7e3c628b2b0834b624696e6c2ae19bb6
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402651"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429999"
 ---
-# <a name="change-your-payment-frequency"></a>變更您的付款頻率
+# <a name="change-your-billing-frequency"></a>變更您的帳單頻率
 
 ::: moniker range="o365-21vianet"
 
@@ -37,7 +37,7 @@ ms.locfileid: "44402651"
 
 ::: moniker-end
 
-當您購買訂閱時，請選擇每月或每年帳單。 若要變更您為訂閱計費的頻率，請使用下列步驟。
+當您購買訂閱時，請選擇每月或每年帳單。 若要變更您為訂閱收費的頻率，請使用下列步驟。
 
 1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
 

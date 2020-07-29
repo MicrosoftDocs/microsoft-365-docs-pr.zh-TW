@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 網頁版的 [報告訊息] 增益集。
-ms.openlocfilehash: 0b900fe00dc590b69755b54f8103688042026df0
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 2b074d1bd260f5c95d138577e259aee14ec9e8d7
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588225"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430504"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -49,10 +49,7 @@ Outlook 和網頁型 Outlook （先前稱為 Outlook Web App）的報告訊息�
   - Mac 版 Outlook 2016
   - Outlook 隨附于適用于企業的 Microsoft 365 應用程式
 
-- 報告郵件增益集目前不適用於下列專案：
-
-  - 內部部署 Exchange 組織中的信箱
-  - GCC、GCC 高階或 DoD 訂閱
+- 內部部署 Exchange 組織中的信箱無法使用報告訊息增益集。
 
 - 您可以設定報告的郵件以複製或重新導向至您指定的信箱。 如需詳細資訊，請參閱[在 Exchange Online 中指定使用者送出垃圾郵件和網路釣魚郵件的信箱](user-submission.md)。
 
