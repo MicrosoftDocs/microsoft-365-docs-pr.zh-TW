@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 9e02df52c6b95fef087b8056501ffda7c3ddad14
-ms.sourcegitcommit: 09a500a44d8723f8f2be87d9ad4ce7e453c5192b
+ms.openlocfilehash: 4bebf282f9bdd8f6b785c17c944b145814c80572
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45094843"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503024"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -47,7 +47,7 @@ ms.locfileid: "45094843"
 
 - **內容已儲存 (在 SharePoint 或 OneDrive 中) 或寄送電子郵件 (由 Exchange Online 處理) 時的服務端套用標籤**：使用自動套用標籤原則。 
     
-    此方法稱為使用敏感度標籤自動分類。 您可能也聽過它稱為待用資料 (SharePoint 和 OneDrive 中的文件) 以及傳輸中資料 (由 Exchange 傳送或接收的電子郵件) 的自動套用標籤。 若是 Exchange，不會包含待用電子郵件 (信箱)。 
+    您可能也聽過此方法稱為待用資料 (SharePoint 和 OneDrive 中的文件) 以及傳輸中資料 (由 Exchange 傳送或接收的電子郵件) 的自動套用標籤。 若是 Exchange，不會包含待用電子郵件 (信箱)。 
     
     由於此標籤是由服務套用，而不是由應用程式套用，因此您不需要擔心使用者擁有哪些應用程式及其版本。 如此一來，您就能立即在整個組織中使用這項功能，並且適用於大規模套用標籤。 自動套用標籤原則不支援建議的標籤，因為使用者不會與套用標籤程序進行互動。 相反地，系統管理員會在模擬模式中執行原則，以協助確保在實際套用標籤之前，內容正確套用標籤。
     
@@ -74,7 +74,7 @@ ms.locfileid: "45094843"
 使用下表來協助您識別兩個互補自動套用標籤方法的行為差異：
 
 |功能或行為|標籤設定：適用於 Office 應用程式的自動套用標籤 |原則：自動套用標籤|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----|:-----|
 |應用程式相依性|[是](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |否 |
 |依位置限制|否 |是 |
 |條件：可訓練分類器|是 |否 |
@@ -127,6 +127,8 @@ ms.locfileid: "45094843"
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>為標籤設定可訓練分類器
 
+此選項目前處於預覽。
+
 當您選取 [可訓練分類器]**** 選項時，請選取一或多個 Microsoft 內建可訓練分類器。 如果您已建立自己的自訂可訓練分類器，也可以選取這些分類器：
 
 ![可訓練分類器和敏感度標籤的選項](../media/sensitivity-labels-classifers.png)
@@ -136,9 +138,9 @@ ms.locfileid: "45094843"
 
 如需這些分類器的詳細資訊，請參閱[開始使用可訓練的分類器 (預覽)](classifier-getting-started-with.md) (部分機器翻譯)。
 
-在預覽期間，下列應用程式支援敏感度標籤的可訓練分類器：
+在此選項的預覽期間，下列應用程式支援敏感度標籤的可訓練分類器：
 
-- 適用於 Windows 的 Microsoft 365 Apps 企業版 (之前稱為 [Office 365 專業增強版](https://docs.microsoft.com/deployoffice/name-change))，來自 [Beta 版通道](https://office.com/insider) (之前稱為 [Office 測試人員](https://docs.microsoft.com/deployoffice/update-channels-changes))：
+- 適用於 Windows 的 Microsoft 365 Apps 企業版 (之前稱為 [Office 365 專業增強版](https://docs.microsoft.com/deployoffice/name-change))，現已在版本 2006 和更新版本中的[目前通道](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview)推出：
     - Word
     - Excel
     - PowerPoint

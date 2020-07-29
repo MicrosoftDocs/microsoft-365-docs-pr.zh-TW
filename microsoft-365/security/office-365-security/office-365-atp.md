@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: ffde9288338f14ea23fa39990ccd9363c7fd2a84
-ms.sourcegitcommit: 9ee1261c405f82b49c62390a25dfdea23340d644
+ms.openlocfilehash: d8a8ab2f5c7de5d57f50ec6b1c26e0fc71ac6616
+ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45039375"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45434046"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -87,9 +87,9 @@ Office 365 ATP 包含進階的[報告儀表板](view-reports-for-atp.md)以監�
 
 - [威脅防護狀態報告](view-reports-for-atp.md#threat-protection-status-report)
 
-- [ATP 檔案類型報告](view-reports-for-atp.md#atp-file-types-report)
+- [進階威脅防護檔案類型報告](view-reports-for-atp.md#advanced-threat-protection-file-types-report)
 
-- [ATP 郵件處置報告](view-reports-for-atp.md#atp-message-disposition-report)
+- [進階威脅防護郵件處置報告](view-reports-for-atp.md#advanced-threat-protection-message-disposition-report)
 
 - ... 還有更多功能。
 

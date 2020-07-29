@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作保留原則及保留標籤來管理貴組織的資料，但不確定從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: 415313ac31fe4ad56f9a476576f14b90d7dd97f4
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 4bf8499cc8f29438da407c6dfcdaa53533fea467
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127562"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45430231"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>開始使用保留原則和保留標籤
 
@@ -60,12 +60,13 @@ ms.locfileid: "45127562"
 
 |我想要...|文件|
 |----------------|---------------|
-|為組織有效設定的保留和刪除動作，或按位置： <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 群組 <br />- 商務用 Skype  <br />- Teams  |[建立及設定保留原則](create-retention-policies.md)|
+|為組織有效設定的保留和刪除動作，或按 Microsoft 365 服務： <br />- Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 群組 <br />- 商務用 Skype  <br />- Microsoft Teams  |[建立及設定保留原則](create-retention-policies.md)|
 |讓系統管理員和使用者手動為文件和電子郵件套用一組保留和刪除動作： <br />- SharePoint <br />- OneDrive <br />- Outlook 和 Outlook 網頁版|[建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)|
 |讓網站系統管理員為 SharePoint 文件庫、資料夾或文件集的所有內容設定預設保留標籤|[建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)|
 |讓使用者使用 Outlook 規則自動將保留標籤套用至電子郵件|[建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)|
 |自動為文件和電子郵件套用一組保留和刪除動作 |[自動將保留標籤套用到內容](apply-retention-labels-automatically.md)|
 |當事件發生時，請啟動保留時間，例如:  <br />- 員工離開組織 <br />- 合約到期 <br />- 產品生命週期完結| [事件發生時開始保留](event-driven-retention.md)|
+|管理 SharePoint 中不同文件類型的生命週期| [使用保留標籤管理 SharePoint 文件的生命週期](auto-apply-retention-labels-scenario.md)|
 |針對文件和電子郵件使用單一記錄管理解決方案 |[Microsoft 365 中的記錄管理](records-management.md) |
 |符合美國證券交易委員會規定 17A-4|[使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |請確認在內容在保留期結束被刪除前，有人對內容進行檢查並核准|[處置檢閱](disposition.md#disposition-reviews) |
