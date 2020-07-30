@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 瞭解如何使用 Power BI 中的 Microsoft 365 流量分析範本應用程式，來開始收集租使用者的資料。
-ms.openlocfilehash: fa0973521f5a5e7e8b9b0fda161a5b4779d64c68
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 20228b0e2070065834ce203e22af619480311367
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401503"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502946"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析
 
@@ -36,7 +36,7 @@ ms.locfileid: "44401503"
 
 ::: moniker-end
 
-Microsoft 365 的流量分析也適用于 Microsoft 365 美國政府社區。
+Microsoft 365 美國政府社區尚無可用的 microsoft 365 使用方式分析功能。
   
 ## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用方式分析的步驟
 
@@ -102,4 +102,4 @@ Microsoft 365 的流量分析也適用于 Microsoft 365 美國政府社區。
     
 2. 選取 [**報告**]，然後選擇**顯示匿名識別碼**。 此設定會同時套用至使用狀況報告和範本應用程式。
   
-3. 選取 [儲存變更]****。
+3. 選取 **[儲存變更]**。

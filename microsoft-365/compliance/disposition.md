@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監視和管理內容處置，不論您使用的是處置檢查，還是會根據您設定的設定自動刪除內容。
-ms.openlocfilehash: 5c8c8c4e99edbc32bbca4b3efbe79325f53a3380
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 2ce0478602fa6b833e53b0b3a41a89b7a0fad03b
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127010"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506318"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -121,16 +121,16 @@ ms.locfileid: "45127010"
 
 只有在檢閱者選擇永久刪除內容之後，才會刪除等候進行處置檢查的內容。 當檢閱者選擇此選項時，SharePoint 網站或 OneDrive 帳戶中的內容，就會符合[保留設定如何使用內容就地運作](retention.md#how-retention-settings-work-with-content-in-place)所述的標準清理程式。
 
-## <a name="disposition-of-records"></a>記錄的處置
+## <a name="disposition-of-records"></a>記錄處置
 
 > [!NOTE]
-> 可查看未進行處置檢查便會自動刪除之記錄的功能，會逐步向2020內租至租使用者的租使用者，因此您可能不會立即看到這種體驗。
+> 在未進行處置檢查的情況下，查看自動刪除之記錄的功能仍會向租使用者，所以在此首展期間，您可能不會看到所有已處置的專案。
 
 使用 [**記錄管理**] 頁面中的 [**部署**] 索引標籤來識別自動刪除的記錄。 這些專案會在 [**類型**] 欄中顯示已**處置的記錄**。 例如：
 
 ![未進行處置評審的已處置專案](../media/records-disposed2.png)
 
-在專案被處置後，記錄標籤的 [已**釋放的專案**] 索引標籤中所顯示的專案，最多可保留7年，每筆記錄的每一筆記錄的限制為1000000個專案。 如果您看到的**計數**值接近此限制1000000，而您需要為記錄進行處置，請與[Microsoft 支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)人員聯繫。
+已釋放的 [**專案**] 索引標籤中的記錄標籤所顯示的專案，在專案被處置後，最多可保留7年，每筆記錄的每一筆記錄的限制為1000000個專案。 如果您看到的**計數**值接近此限制1000000，而您需要為記錄進行處置，請與[Microsoft 支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)人員聯繫。
 
 > [!NOTE]
 > 這種功能是以[整合的審計記錄](search-the-audit-log-in-security-and-compliance.md)資訊為基礎，因此需要[啟用並](turn-audit-log-search-on-or-off.md)可搜尋審計，以便捕獲對應的事件。

@@ -1,19 +1,19 @@
 ---
 title: Microsoft 管理的桌面封存裝置
 description: 尚未退休，但仍可供您註冊，但會具有縮短支援壽命的裝置
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: ca6bc91ebf300afe47326985cc923d929b2cd412
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 4c7ce4e8fd9c41f9ae9417f546e14e7bf8beda5c
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080078"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503064"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 管理的桌面封存裝置
 
@@ -43,6 +43,9 @@ ms.locfileid: "45080078"
 |HP EliteBook x360 1030 G3| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 |**2023年5月14日** |
 |HP EliteBook x360 1040 G5| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 | **2023年10月23日** |
 |HP ProBook x360 440 G1| 128 GB/Intel i3/8 GB RAM | 需要5VS04AV、紅外線相機或指紋辨識器的 SKU | **2023年6月6日** |
+|HP EliteDesk 800 G4 DM | 128 GB/Intel i3/8 GB RAM | 具有5VS04AV 的 SKU | **2023年7月18日** |
+|HP EliteDesk 800 G4 SFF | 128 GB/Intel i3/8 GB RAM | 具有5VS04AV 的 SKU | **2023年7月18日** |
+|AIO 中的 HP EliteOne 800 G4 23。8 |128 GB/Intel i3/8 GB RAM |具有5VS04AV 的 SKU| **2023年7月18日** |
 |Surface Book 2| 256 GB/Intel i5/8 GB RAM | 無 | **2022年11月16日** |
 |移至表面| 128 GB/Intel 4415Y/8GB RAM | 無 | **2023年8月2日** |
 |Surface 膝上型電腦| 256 GB/Intel i5/8 GB RAM | 無 | **2022年5月20日** |

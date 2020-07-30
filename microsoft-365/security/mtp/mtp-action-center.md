@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: c3406ebf5962d6f0ac08c1ee280bab725cf1c3bd
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 77bc0f088a9779396a56a9cc8cc9ae6ecbdadea7
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43626955"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46503100"
 ---
 # <a name="the-action-center"></a>重要訊息中心
 
@@ -59,12 +59,26 @@ ms.locfileid: "43626955"
 
 5. 選取清單中的項目以檢視更多有關某調查的詳細資料。 調查詳細資料檢視隨即開啟。<br/>![調查詳細資料](../../media/mtp-air-investdetails.png)
 
-    - 如果調查是針對電子郵件內容（例如，實體為信箱），則會在安全性 & 規範中心（[https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation)）中開啟調查詳細資料。 
+    - 如果調查是針對電子郵件內容（例如，實體為信箱），則會在安全性 & 規範中心（）中開啟調查詳細資料 [https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation) 。 
 
     - 如果調查涉及裝置，便會在安全中心 ([https://security.microsoft.com](https://security.microsoft.com)) 開啟調查詳細資料。 
 
 > [!TIP]
 > 如果您認為 Microsoft 威脅防護中的自動調查和回應功能已錯過或錯誤地偵測到某項功能，請告訴我們！ 請參閱[如何在 Microsoft 威脅防護中，以自動化調查和回應（AIR）功能來報告誤報/負片](mtp-autoir-report-false-positives-negatives.md)。
+
+## <a name="available-actions"></a>可用動作
+
+採取補救措施時，這些動作會列在重要訊息中心的 [記錄] 索引標籤上。 這類動作包括下列各項：
+
+- 收集調查套件 
+- 隔離裝置（可以復原此動作） 
+- 下架機 
+- 發行程式碼執行 
+- 從隔離區發行 
+- 要求範例 
+- 限制程式碼執行（可以復原此動作） 
+- 執行防病毒掃描 
+- 停止和隔離 
 
 ## <a name="required-permissions-for-action-center-tasks"></a>重要訊息中心的必要權限
 
@@ -73,7 +87,7 @@ ms.locfileid: "43626955"
 |補救動作 |必要角色和權限 |
 |--|----|
 |Microsoft Defender ATP 補救 (裝置) |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 指派安全性系統管理員角色<br/>--- 或 ---<br/>在 Microsoft Defender ATP 中指派作用中補救動作角色 <br/> <br/> 若要深入了解，請參閱下列資源： <br/>- [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [建立及管理角色型存取控制的角色 (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Office 365 ATP 補救 (Office 內容和電子郵件)  |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 指派安全性系統管理員角色<br/>--- 且 --- <br/>搜尋並清除已指派安全性 & 規範中心（[https://protection.office.com](https://protection.office.com)）的角色 <br/><br/>**重要**：如果您已將安全性系統管理員角色指派給安全性 & 合規性中心，您將無法存取「行動中心」或「Microsoft 威脅防護」功能。 您必須在 Azure Active Directory 或 Microsoft 365 系統管理中心指派安全性系統管理員角色。 <br/><br/>若要深入了解，請參閱下列資源： <br/>- [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [安全性 & 規範中心的許可權](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Office 365 ATP 補救 (Office 內容和電子郵件)  |在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 指派安全性系統管理員角色<br/>--- 且 --- <br/>搜尋並清除已指派安全性 & 規範中心（）的角色 [https://protection.office.com](https://protection.office.com) <br/><br/>**重要**：如果您已將安全性系統管理員角色指派給安全性 & 合規性中心，您將無法存取「行動中心」或「Microsoft 威脅防護」功能。 您必須在 Azure Active Directory 或 Microsoft 365 系統管理中心指派安全性系統管理員角色。 <br/><br/>若要深入了解，請參閱下列資源： <br/>- [Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [安全性 & 規範中心的許可權](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!NOTE]
 > 在 Azure Active Directory 中指派為全域管理員角色的使用者可核准或拒絕重要訊息中心的任何擱置中動作。 不過，最佳做法是貴組織限制指派為全域管理員角色的人員人數。 我們建議您針對重要訊息中心權限使用安全性系統管理員、作用中補救動作，以及上述「搜尋」和「清除」角色。

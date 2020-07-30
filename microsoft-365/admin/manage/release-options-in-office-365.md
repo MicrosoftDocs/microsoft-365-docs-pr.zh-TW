@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 瞭解如何在 Microsoft 365 系統管理中心中，設定新產品及功能更新的發行選項。
-ms.openlocfilehash: 4b26a3e95b11feb5c6a5894702b86e74f82bde03
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3baec050f33893357b25c832552643cf3a6d10d0
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399689"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502876"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>設定標準或目標發行選項
 
@@ -42,6 +42,9 @@ ms.locfileid: "44399689"
   
 > [!IMPORTANT]
 > 本文所述的 Microsoft 365 更新適用于 Microsoft 365、SharePoint Online 和 Exchange Online。 這些不適用於商務用 Skype 及相關服務。 這些版本選項是針對目標的，將變更發佈至 Microsoft 365 的最佳操作方式，但在任何時間或所有更新皆無法保證。 
+
+> [!NOTE]
+> 如需應用程式更新通道的詳細資訊，請參閱[Microsoft 365 應用程式的更新通道概述](https://docs.microsoft.com/deployoffice/overview-update-channels)。 
   
 ## <a name="how-it-works---release-validation"></a>發行驗證如何運作
 

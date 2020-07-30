@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: ca0c557de24320692d903a1136fc434d635f0507
-ms.sourcegitcommit: 58c1b4208a5e231463091573e40696d08fc39b8e
+ms.openlocfilehash: e0f76f6a232edeac350d08eeeb47188535ffe688
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955588"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502934"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Microsoft 威脅防護中的自動調查遵循的修復動作
 
@@ -39,7 +39,7 @@ ms.locfileid: "42955588"
 
 |裝置（端點）修復動作  |電子郵件補救動作  |
 |---------|---------|
-|隔離的檔案<br/>移除登錄機碼<br/>刪除處理序 <br/>停止服務 <br/>停用驅動程式 <br/>移除排程工作      |虛刪除電子郵件訊息或群集<br/>封鎖 URL (點擊時)<br/>關閉外部郵件轉寄          |
+|-收集調查套件 <br/>隔離裝置（可以復原此動作）<br/>-下架電腦 <br/>-發行程式碼執行 <br/>-從隔離區發行 <br/>-要求範例 <br/>-限制執行程式碼（可以復原此動作） <br/>-執行防病毒掃描 <br/>-停止和隔離      |-封鎖 URL （按一下時間）<br/>-虛刪除電子郵件訊息或聚簇<br/>-隔離電子郵件<br/>-隔離電子郵件附件<br/>-關閉外部郵件轉發          |
 
 修正動作（不論是待核准或已完成），都可以在「[行動中心](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)」中查看。
 

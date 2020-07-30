@@ -1,10 +1,10 @@
 ---
-title: 在您的組織中使用自助註冊
+title: 在組織中使用自助式註冊
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,20 +17,17 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: 深入瞭解 Microsoft 365 自助註冊和可用自助服務程式，例如 Microsoft Power App、Microsoft Flow 及 Dynamics 365 （適用于金融）。
-ms.openlocfilehash: d2d4d23eeb3ddeda0dc5b66acfe072a66f4ce267
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 深入瞭解 Microsoft 365 自助註冊和可用自助服務程式，例如 Microsoft Power App、Microsoft Flow 及 Dynamics 365 （適用于融資）。
+ms.openlocfilehash: 4a95c4b98821100d0a5164b87c1afe02b854608b
+ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399287"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506294"
 ---
-# <a name="using-self-service-sign-up-in-your-organization"></a>在您的組織中使用自助註冊
+# <a name="using-self-service-sign-up-in-your-organization"></a>在組織中使用自助式註冊
 
 我們正在聽取您的意見反應，讓您組織中的使用者更容易註冊 Microsoft 的線上服務。 我們呼叫此新的註冊程式「自助註冊」，因為您的使用者可以註冊使用您訂閱所支付的服務，或是使用免費服務，而不需要代您採取動作。
   
@@ -68,3 +65,4 @@ ms.locfileid: "44399287"
 |**Microsoft Stream** <br/> |上傳和共用整個組織的影片，以改善通訊、參與和學習。  <br/> |[註冊 &amp; 1 天的經驗](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**自動功耗** <br/> |電力自動化是一種產品，可協助您設定最喜歡的應用程式與服務之間的自動化工作流程，以同步處理檔案、取得通知、收集資料等等。  <br/> |[註冊並登入以進行自動功能](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[自動功耗](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power Virtual Agent** <br/> |使用虛擬代理程式可讓小組使用無程式碼的圖形介面輕鬆建立強大的 bot，而不需要資料科學家或開發人員。 Power Virtual Agent 解決當今的 bot 組建許多主要問題。 它可以消除主題專家和建立 bot 的開發小組之間的缺口，以及識別問題和更新 bot 以解決問題的團隊間的長時間延遲。  <br/> |[授權和存取詳細資料](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[註冊 Power Virtual Agent](https://aka.ms/TryPVA) <br/> |
+|**Azure AD B2B** <br/> |Azure Active Directory （Azure AD）企業對企業（B2B）共同作業可讓您邀請外部使用者（或「來賓使用者」）使用您的付費 Azure AD 服務。 有些功能是免費的，但是對於任何付費的 Azure AD 功能，您可以為您擁有的員工或您租使用者中的非來賓使用者的每個 Azure AD edition 授權，邀請最多五個來賓使用者。 <br/> |[Azure AD B2B 協同註冊的自助服務](https://docs.microsoft.com/azure/active-directory/b2b/self-service-portal) <br/> |[Azure Active Directory B2B 協同作業授權指南](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance) <br/> |
