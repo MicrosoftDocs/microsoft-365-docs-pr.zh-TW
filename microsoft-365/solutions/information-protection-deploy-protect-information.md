@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: 部署 Microsoft 365 安全性和合規性功能，並保護您的個人資訊。
-ms.openlocfilehash: 99ac0f9e29c161ffa26362976f83584c9b168026
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 8e7d037218b4d67e9ba7f450bd1a5235b1ae164f
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126446"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46520990"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保護受資料隱私權法規制約的資訊
 
@@ -31,7 +31,7 @@ ms.locfileid: "45126446"
 
 - 敏感度標籤
 - 資料外洩防護 (DLP)
-- Office 郵件加密（OME）
+- Office 郵件加密 (OME)
 - 小組和網站存取控制
 
 ![保護受資料隱私權法規制約之個人資訊的重要服務](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-grid.png)

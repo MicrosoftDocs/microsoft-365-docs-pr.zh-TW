@@ -9,18 +9,19 @@ ms.prod: microsoft-365-enterprise
 ms.collection:
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 深入瞭解設定 SharePoint 網站與來賓共同作業所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: 1f53fa43b6abdfaf21d938bc69db384d173d660e
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 320fb21f19c9616e78f56e519cb804e3e03b2b45
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160000"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527903"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在網站中與來賓共同作業
 
@@ -44,7 +45,7 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 
 設定組織關聯設定
 
-1. 登入 Microsoft Azure，網址[https://portal.azure.com](https://portal.azure.com)為。
+1. 登入 Microsoft Azure，網址為 [https://portal.azure.com](https://portal.azure.com) 。
 2. 在左側導覽中，按一下 [ **Azure Active Directory**]。
 3. 在 [**一覽表**] 窗格中，按一下 [**組織關聯**性]。
 4. 在 [**組織關聯**] 窗格中，按一下 [**設定**]。

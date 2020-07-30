@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 針對市場活動的逐步註冊。 保護您的活動免受 cybersecurity 威脅的電子郵件、資料和通訊的威脅。
-ms.openlocfilehash: 34d5b3103666b9cead1c2dfc09400a9eca5e3e40
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 0628ac1a2e8bf6d12bd4a196df11775ebcc2d583
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632776"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527111"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>註冊 Microsoft 365 以進行活動 
 
@@ -47,7 +48,7 @@ ms.locfileid: "43632776"
 1. 在您對行銷活動電子郵件的 Microsoft 365 邀請中，選取 [**註冊您的組織 >**。 這會帶您前往 Microsoft 365 註冊。
     > [!NOTE]
     > 如果您已有現有的 Microsoft 365 for business 訂閱，而且想要新增 Microsoft 365 的活動提供給它，請移至[現有訂閱的 [新增 microsoft 365 的活動](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)]。
-1. **在 [Microsoft 365 商務版] 頁面上**，輸入您的企業詳細資料。 若為**商務電子郵件地址**，請使用目前的電子郵件地址。 只有在安裝程式期間，我們才需要此位址與您保持聯繫。 選取 [下一步]****。
+1. **在 [Microsoft 365 商務版] 頁面上**，輸入您的企業詳細資料。 若為**商務電子郵件地址**，請使用目前的電子郵件地址。 只有在安裝程式期間，我們才需要此位址與您保持聯繫。 選取 **[下一步]**。
 1. **在 [建立您的使用者識別碼] 頁面上**：
     1. 在 [使用者名稱 **] 中，** 輸入您要用於電子郵件地址的名稱或別名。 例如，您可能想要簡稱為劉愛琳或搶。 在較大的活動中，AliceC 或 AliceChavez 可能會更有意義。
     2. 在**您的公司**中，輸入您所使用之市場活動的名稱。 例如，ContosoCampaign。 如果您已經擁有網域，請在這裡使用該名稱。 
@@ -60,7 +61,7 @@ ms.locfileid: "43632776"
     1. 讓您的電話做好準備，然後選取 [**文字**] （如果您願意，也可**致電我**）。 然後輸入您的電話號碼。 
     2. 當您選取 [**文字**] 時，我們會傳送驗證碼。 或者，如果您選取 [**呼叫我**]，我們會致電您您的程式碼。
     3. 從短信（或叫用）輸入程式碼，然後選取 **[下一步]**。 預計會稍短一些的時間。 
-5. **您將在何處使用此頁面**：輸入活動的主要工作地點詳細資料和電話號碼。 選取 [下一步]****。
+5. **您將在何處使用此頁面**：輸入活動的主要工作地點詳細資料和電話號碼。 選取 **[下一步]**。
 6. **如何查看此頁面**：
     1. 確認每位使用者的成本為 $5.00。 
     2. 如果您只想要立即設定，請選取 **[下一步]**。 
@@ -80,7 +81,7 @@ ms.locfileid: "43632776"
 2. 在 [**歡迎使用] 中，讓我們知道您的**頁面、按一下或點擊 [**想要將此專案新增至現有的訂閱中？登入**。
     
     ![選擇右上角的 [登入]。](../media/addtoexisting.png)
-3. 在 [登入] 頁面上，輸入現有訂閱的系統管理員別名，例如*Alice@VoteContoso<span></span>。 org*，請選擇 **[下一步]**，輸入您的密碼，然後選擇 [登**入**]。
+3. 在 [登入] 頁面上，輸入現有訂閱的系統管理員別名，例如*Alice@VoteContoso <span></span> 。 org*，請選擇 **[下一步]**，輸入您的密碼，然後選擇 [登**入**]。
 4. 請在 [**這是如何？** 輸入您擁有的使用者數目，然後選擇 **[下一步]**。 您不需要在這裡輸入促銷代碼，因為它已包含在邀請 URL 中。
 5. 在 [**您要付款的方式？** ] 頁面上，輸入您的付款條件，然後選擇 [**下單**]。
 

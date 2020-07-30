@@ -5,21 +5,40 @@ keywords: 變更歷程記錄
 ms.prod: m365-md
 ms.sitesec: library
 author: jaimeo
+ms.topic: article
+audience: ITPro
+manager: laurawi
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 1402cd8c03baa233ece1051a0ab9d7dc3b96b965
-ms.sourcegitcommit: ada2f1c6ca79177cae975d887107ff8884358e8a
+ms.openlocfilehash: 809f94e6355b7c0fe9155734fd548c9cb466cbe7
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2020
-ms.locfileid: "45107596"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528033"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 受管理電腦文件的變更歷程記錄
 
 本文列出[Microsoft 受管理桌面檔](index.yml)中的新文章和更新文章。 「已更新」的文章是指具有材料新增或修正功能的文章，也就是未列出更正輸入、樣式或格式問題等細微修正。 您可以[在 GitHub 上](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)流覽儲存機制，以查看特定提交的記錄（包括所有變更的詳細資料）。
+
+
+## <a name="july-2020"></a>2020 年 7 月
+新的或已變更的文章 | 描述
+--- | ---
+[Microsoft 受管理的桌面應用程式需求](service-description/mmd-app-requirements.md) | 更新的文章
+[合規性](intro/compliance.md) | 更新的文章
+[開始使用應用程式控制](get-started/get-started-app-control.md) | 更新的文章
+[使用應用程式控制](working-with-managed-desktop/work-with-app-control.md) | 更新的文章
+[Microsoft 受管理電腦的先決條件](get-ready/prerequisites.md) | 更新的文章
+[應用程式控制](service-description/app-control.md) | 更新的文章
+[Microsoft 受管理電腦的網路設定](get-ready/network.md) | 更新的文章
+[新的 Microsoft Edge app](get-started/edge-browser-app.md) | 更新的文章
+[存取管理員入口網站](get-started/access-admin-portal.md) | 新文章
+[應用程式控制](service-description/app-control.md) | 新文章
+[在 Microsoft 受管理的桌面裝置上安裝 Microsoft Project 或 Microsoft Visio](get-started/project-visio.md) | 更新的文章
 
 ## <a name="june-2020"></a>2020 年 6 月
 新的或已變更的文章 | 描述
