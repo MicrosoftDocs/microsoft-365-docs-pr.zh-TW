@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 瞭解 Microsoft 365 中提供的來賓共用設定，這可能會影響與組織外部人員共用。
-ms.openlocfilehash: 35a1a20e65eccddcb1117f9def09bd4fdfc7f161
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 05cd46be7b7dd81d04fa65d89b47f19e6dbb2493
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679141"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514786"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 來賓共用設定參考
 
@@ -37,7 +37,7 @@ Azure Active Directory 是 Microsoft 365 所使用的目錄服務。 Azure Activ
 
 ### <a name="organizational-relationships-settings"></a>組織關聯性設定
 
-**瀏覽：**[Azure Active Directory 系統管理中心](https://aad.portal.azure.com) > [Azure Active Directory] > [組織關聯性] > [設定]
+**瀏覽：**[Azure Active Directory 系統管理中心](https://aad.portal.azure.com) > [Azure Active Directory] > [外部身分識別] > [外部共同作業設定]
 
 ![Azure Active Directory 組織關聯性設定頁面的螢幕擷取畫面](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -60,7 +60,7 @@ Microsoft 365 系統管理中心有用於共用和用於 Microsoft 365 群組的
 
 ### <a name="sharing"></a>共用
 
-**瀏覽：**[Microsoft 365 系統管理中心](https://admin.microsoft.com) > [設定] > [設定] > [安全性與隱私權] 索引標籤 > [共用]
+**瀏覽：**[Microsoft 365 系統管理中心](https://admin.microsoft.com) > [設定] > [組織設定] > [安全性與隱私權] 索引標籤 > [共用]
 
 ![Microsoft 365 系統管理中心的安全性與隱私權來賓共用設定的螢幕擷取畫面](../media/sharepoint-security-privacy-sharing-setting.png)
 

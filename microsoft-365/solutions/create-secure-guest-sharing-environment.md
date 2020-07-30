@@ -15,12 +15,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，您將了解在 Microsoft 365 中建立安全的來賓共用環境的可用選項。
-ms.openlocfilehash: 4d7c036cccade88bfcd013fe4b31bf4cd02b7b34
-ms.sourcegitcommit: a50260b7c5be7374e8e2bea19cc08406ef51ac47
+ms.openlocfilehash: b720b701ca25dd6b341d4ac5ac696b51af890de5
+ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45167362"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46502912"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>建立安全的來賓共用環境
 
@@ -101,6 +101,9 @@ ms.locfileid: "45167362"
 12. 在 **[新增]** 刀鋒視窗的 **[啟用原則]** 底下，按一下 **[開啟]**，然後按一下 **[建立]**。
 
 現在，來賓使用者首次嘗試存取貴組織中的內容、小組或網站時，必須接受使用規定。
+
+> [!NOTE]
+> 使用條件式存取需要 Azure AD Premium P1 授權。 如需詳細資訊，請參閱[何謂條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)。
 
 ### <a name="more-information"></a>詳細資訊
 [Azure Active Directory 使用規定](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)

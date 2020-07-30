@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解您可以使用的群組類型。
-ms.openlocfilehash: 333d929e72647421951eefa50508c23dddc196ac
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: ee8d14035ed9eb8296c54510b8fe1d374c9dc2b2
+ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780454"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46514764"
 ---
 # <a name="compare-groups"></a>比較群組
 
@@ -55,6 +55,8 @@ Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Out
 
 如果您需要將資訊廣播給一群人，例如「大樓 A 的人員」或「Contoso 的每個人」，則最適合使用通訊群組。
 
+可以將通訊群組[升級至 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists)。
+
 ## <a name="security-groups"></a>安全性群組
 
 [安全性群組](../email/create-edit-or-delete-a-security-group.md)用來授權存取 Microsoft 365 資源，例如 SharePoint。 由於您只需要管理群組，而非將使用者個別新增至每個資源，它們能讓系統管理更容易。
@@ -82,3 +84,5 @@ Microsoft 365 群組可透過行動裝置應用程式存取，例如 iOS 版 Out
 ## <a name="related-articles"></a>相關文章
 
 [深入了解 Microsoft 365 群組](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+
+[為什麼您應該將 Outlook 中的通訊群組清單升級成群組](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
