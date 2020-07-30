@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/14/2020
+ms.date: 07/23/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - M365solutions
 ms.custom: ''
 description: 設定安全性和服務基礎結構，讓您的工作人員隨時隨地都能遠端工作。
-ms.openlocfilehash: 58915d80d9eb81009632971bbfc84a7b681e125e
-ms.sourcegitcommit: 42b618231e9f608f3ae7226a313b0366601d0ea2
+ms.openlocfilehash: 37306a4e4e820d1a21d83eeabf3712a7f6abc99e
+ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158890"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429881"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 強化遠端工作者
 
@@ -36,8 +36,7 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
 ![使用 Microsoft 365 強化您的遠端工作人員](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-
-| | |
+| 主要功能 | 說明 |
 |:-------|:-----|
 | 連接 | 遠端工作人員必須能夠隨時隨地存取： <ul><li>您的 Microsoft 365 訂閱中的雲端服務和資料。 </li><li>組織資源，例如內部部署應用程式資料中心所提供的資源。</li></ul> |
 | 安全 | 以 Microsoft 365 和 Windows 10 的多重要素驗證（MFA）和內建安全性功能保護登入，避免惡意程式碼、惡意攻擊和資料遺失。 |
@@ -53,21 +52,23 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
 | 功能 | 描述 | 授權 |
 |:-------|:-----|:-------|
-| 採用安全性預設值強制執行 MFA   | 要求第二種形式的登入驗證，以防止身分識別和裝置遭到入侵。安全性預設值要求所有使用者帳戶使用 MFA。   | Microsoft 365 E3 和 E5 |
-| 使用條件式存取強制執行 MFA| 根據具有條件式存取原則的登入屬性，要求使用 MFA。    | Microsoft 365 E3 和 E5 | 
+| 採用安全性預設值強制執行 MFA   | 要求第二種形式的登入驗證，以防止身分識別和裝置遭到入侵。安全性預設值要求所有使用者帳戶使用 MFA。   | Microsoft 365 E3 或 E5 |
+| 使用條件式存取強制執行 MFA| 根據具有條件式存取原則的登入屬性，要求使用 MFA。    | Microsoft 365 E3 或 E5 | 
 | 使用風險型條件式存取強制執行 MFA   | 根據使用者使用 Azure 進階威脅防護登入的風險要求使用 MFA。 | Microsoft 365 E5 或 E3 (含 Azure AD Premium P2 授權) | 
-| 自助式密碼重設 (SSPR)    | 允許您的使用者重設或解除鎖定他們的密碼或帳戶。  | Microsoft 365 E3 和 E5 |
+| 自助式密碼重設 (SSPR)    | 允許您的使用者重設或解除鎖定他們的密碼或帳戶。  | Microsoft 365 E3 或 E5 |
 | Azure AD 應用程式 Proxy    | 針對內部網路伺服器上的網頁型應用程式，提供安全的遠端存取。   | 需要個別付費的 Azure 訂閱 |
 | Azure 點對站 VPN   | 透過 Azure 虛擬網路，建立從遠端工作者裝置到您內部網路的安全連線。   | 需要個別付費的 Azure 訂閱 |
 | Windows 虛擬桌面   | 支援只能在 Azure 中執行虛擬桌面才能使用其個人和不受管理裝置的遠端工作者。 | 需要個別付費的 Azure 訂閱 |
-| 遠端桌面服務 (RDS) | 允許員工連線到您內部網路上的 Windows 型電腦。 | Microsoft 365 E3 和 E5 | 
+| 遠端桌面服務 (RDS) | 允許員工連線到您內部網路上的 Windows 型電腦。 | Microsoft 365 E3 或 E5 | 
 | 遠端桌面服務閘道   | 加密通訊並防止 RDS 主機直接暴露在網際網路上。 | 需要不同的 Windows Server 授權 |
-| Microsoft Intune | 管理裝置和應用程式。   | Microsoft 365 E3 和 E5 | 
-| Configuration Manager | 在您的裝置上管理軟體安裝、更新及設定 | 需要個別的 Configuration Manager 授權 |
+| Microsoft Intune | 管理裝置和應用程式。   | Microsoft 365 E3 或 E5 | 
+| 功能 | 在您的裝置上管理軟體安裝、更新及設定 | 需要個別的 Configuration Manager 授權 |
 | 電腦分析 | 判斷 Windows 用戶端的更新準備就緒狀況。   | 需要個別的 Configuration Manager 授權 |
-| Windows Autopilot | 設定並預先設定新的 Windows 10 裝置，以提高生產力。   | Microsoft 365 E3 和 E5 |
-| Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive、Microsoft 365 Apps、Microsoft Power Platform、Yammer、Power Apps | 建立、溝通與共同作業。 | Microsoft 365 E3 和 E5 |
+| Windows Autopilot | 設定並預先設定新的 Windows 10 裝置，以提高生產力。   | Microsoft 365 E3 或 E5 |
+| Microsoft Teams、Exchange Online、SharePoint Online 和 OneDrive、Microsoft 365 Apps、Microsoft Power Platform、Yammer、Power Apps | 建立、溝通與共同作業。 | Microsoft 365 E3 或 E5 |
 ||||
+
+如需遠端工作者的安全性與合規性準則，請參閱 [部署遠端工作者的安全性與合規性](empower-people-to-work-remotely-security-compliance.md)
 
 <a name="poster"></a> 如需這種案例的2頁摘要，請參閱 [提供遠端輔助進程海報](../downloads/empower-remote-workers.pdf)。
 
