@@ -10,15 +10,16 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- M365solutions
+- m365solution-overview
+- m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: e39e69fa7c65d7846cc91b3603c5b6ef96f56752
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: 47ebc8fa23511fbb653b87a31c8a39e1d99c504e
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724840"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527717"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 部署威脅防護功能
 
@@ -53,7 +54,7 @@ Microsoft 的安全性解決方案已內置於我們的產品和服務中。 「
 |多重要素驗證和條件式存取     |防護遭到損害的身分識別和裝置。 請從這種保護開始，因為它是基礎。 此指南中建議的設定包括 Azure AD 身分識別保護為先決條件。     |
 |Azure 進階威脅防護     |  以雲端為基礎的安全性解決方案，可利用您的內部部署 Active Directory 信號來識別、偵測和調查您組織中的高級威脅、遭到破壞的身分識別，以及惡意的內幕程式列動。 請將重點放在下一個，因為它會保護您的部署和雲端基礎結構、沒有相依性或必要條件，而且可提供立即的益處。       | 
 |Office 365 進階威脅防護     | 保護您的組織免受電子郵件訊息、連結（URLs）和共同作業工具帶來的惡意威脅。 針對惡意程式碼、網路釣魚、欺騙及其他攻擊類型的保護。 這是建議的下一步，因為變更控制、從委任系統移轉設定，以及其他考慮可能需要較長時間才能部署。 <br><br>附注：請確定您也設定所有 Office 365 訂閱中包含的威脅防護功能（Exchange Online Protection）。       |
-|Microsoft Defender 進階威脅防護    | Endpoint protection 平臺，可協助避免、偵測、調查和回應高級威脅。 這要花更長的時間進行部署，但如果其他系統管理員負責，則可以與其他功能同時進行。   |
+|Windows Defender 進階威脅防護    | Endpoint protection 平臺，可協助避免、偵測、調查和回應高級威脅。 這要花更長的時間進行部署，但如果其他系統管理員負責，則可以與其他功能同時進行。   |
 |Microsoft Cloud App Security     |   雲端存取安全性經紀人，用於探索、調查和控管。 您可以在早期啟用此功能，以開始收集資料和洞察力。 在您的 SaaS 應用程式中實施資訊和其他有針對性的保護，需要規劃，而且可能需要更多時間。       | 
 
 > [!TIP]

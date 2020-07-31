@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -24,14 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 瞭解如何使用 Outlook 傳送加密的電子郵件。
-ms.openlocfilehash: b9d5d32b61c49dcffaab83fb13e46d32f2166552
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: f5184de55ce07d5e669e98afb6e627833071c4ba
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080024"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526873"
 ---
-# <a name="encrypt-or-label-your-sensitive-email"></a>加密或標記敏感的電子郵件
+# <a name="encrypt-or-label-your-sensitive-email"></a>幫您的機密電子郵件加密或加上標籤
 
 您的資料和活動資訊非常重要，通常是保密的。 使用加密和敏感度標籤來協助保護此機密資訊，讓您和您的電子郵件收件者以其所需的靈敏度來處理資訊。
 

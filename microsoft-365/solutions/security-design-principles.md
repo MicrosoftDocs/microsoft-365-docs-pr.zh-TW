@@ -11,15 +11,14 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: eb8019efb13a13b27a67d541ae69ca6f30b35ed0
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: cdb6b557bf2f46a2338d929547167cf89a048695
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160048"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522273"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>您可以 sail 的安全性障礙（一個架構師的視點）
 
@@ -80,7 +79,7 @@ Sail 超過這些障礙的客戶都有良好的作業與控管與安全性與風
 
 |資源   |詳細資訊  |
 |---------|---------|
-|[最主要的安全性小組工作以支援在家工作](../security/top-security-tasks-for-remote-work.md)      | 如果您覺得您突然支援大多數工作中的工作力，這篇文章可協助您快速提升安全性。 它包含根據您的授權方案的最大建議工作。    |
+|[安全性團隊支援在家工作的最常見工作](../security/top-security-tasks-for-remote-work.md)      | 如果您覺得您突然支援大多數工作中的工作力，這篇文章可協助您快速提升安全性。 它包含根據您的授權方案的最大建議工作。    |
 |[Microsoft 365 商務決策人的安全性](../security/Microsoft-365-security-for-bdm.md)    | 當您有時間進行更全面的計畫時，本文會包含跨越 Microsoft 365 的建議，並依攻擊面劃分優先順序。 它甚至附帶您可以用來排序授權和區域的試算表（例如身分識別、威脅防護和監視）。  |
 |[Microsoft 安全架構建議](https://docs.microsoft.com/security/compass/compass)    | 如果您是安全性架構架構，請務必查看依學科組織的安全性建議，包括身分識別、網路及安全性作業。   |
 |[Microsoft 安全性作業建議](https://docs.microsoft.com/security/compass/security-operations-videos-and-decks)|瞭解設定及執行安全性作業中心（SOC）的 Microsoft 建議 |

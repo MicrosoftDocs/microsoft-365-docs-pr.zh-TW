@@ -7,18 +7,17 @@ audience: ITPro
 ms.topic: article
 ms.collection:
 - M365-security-compliance
-- M365solutions
 ms.prod: microsoft-365-enterprise
 ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 如何協助將金融服務移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規
 f1.keywords: NOCSH
-ms.openlocfilehash: 30e9888a50f4a6ce28597e29760f3a7e7ba4c847
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 1aac8fec923adb896f96bdfe428dda7ebcebf596
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160491"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521180"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 

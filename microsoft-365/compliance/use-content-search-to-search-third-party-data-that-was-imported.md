@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用內容搜尋電子檔探索工具來搜尋從協力廠商資料來源匯入至 Microsoft 365 中信箱的專案，方法是建立查詢。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 916a780bccc3f24d509991e8ac72f31b374757d4
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 823d95d6b32a15662004bfc5d92662b130fe4a65
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819093"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527413"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>使用內容搜尋來搜尋自訂夥伴連接器匯入的協力廠商資料
 

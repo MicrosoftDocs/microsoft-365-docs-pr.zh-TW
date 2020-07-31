@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定資料連線器，將員工資料從組織的人力資源（HR）系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 0cb06bb25e3ba6d4e745094a51fb49663bc7b7b7
-ms.sourcegitcommit: e6bf1af2d5cf54c3fcc3fa916abe268fc96bdd4e
+ms.openlocfilehash: 0febd13003cdcb80867bd7f5b91ac482a463895a
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45189498"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527585"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>設定連接器以匯入 HR 資料（預覽）
 
@@ -29,9 +29,9 @@ ms.locfileid: "45189498"
 
 ## <a name="before-you-begin"></a>開始之前
 
-- 您必須決定要匯入至 Microsoft 365 的 HR 案例和資料。 這將協助您決定需要建立的 CSV 檔案和 HR 連接器數目，以及如何產生及構造 CSV 檔案。 您所匯入的 HR 資料是由您想要執行的「內幕風險管理」原則所決定。 如需詳細資訊，請參閱步驟1。
+- 決定要匯入 Microsoft 365 的人力資源案例和資料。 這將協助您決定需要建立的 CSV 檔案和 HR 連接器數目，以及如何產生及構造 CSV 檔案。 您所匯入的 HR 資料是由您想要執行的「內幕風險管理」原則所決定。 如需詳細資訊，請參閱步驟1。
 
-- 您必須決定如何從組織的 HR 系統（定期）取得或匯出資料，並將其新增至您在步驟1中建立的 CSV 檔案。 您在步驟4中執行的腳本會將 CSV 檔案中的 HR 資料上傳至 Microsoft 雲端。
+- 決定如何從組織的 HR 系統（定期）取得或匯出資料，並將其新增至您在步驟1中建立的 CSV 檔案。 您在步驟4中執行的腳本會將 CSV 檔案中的 HR 資料上傳至 Microsoft 雲端。
 
 - 您的組織必須同意允許 Office 365 匯入服務存取您組織中的資料。 若要同意此要求，請移至[此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全域管理員的認證登入，然後接受要求。 您必須完成此步驟，才可在步驟3中成功建立 HR 連接器。
 
@@ -69,7 +69,7 @@ ms.locfileid: "45189498"
 
 針對每個 HR 案例，您必須在一或多個 CSV 檔案中提供對應的 HR 資料。 您的有問必答風險管理執行所要使用的 CSV 檔案數目，將于本節稍後討論。
 
-使用必要的 HR 資料建立 CSV 檔案之後，請將它儲存在您在步驟4中執行腳本的本機電腦上。 您也應該執行更新策略，以確保 CSV 檔案永遠包含最新的資訊，以便您執行腳本時，最新的 HR 資料資料會上傳至 Microsoft 雲端，並可供內幕人員風險管理解決方案存取。
+使用必要的 HR 資料建立 CSV 檔案之後，請將它儲存在您在步驟4中執行腳本的本機電腦上。 您也應該執行更新策略，以確保 CSV 檔案永遠包含最新的資訊，以便您執行腳本時，最新的 HR 資料會上傳至 Microsoft 雲端，並可供內幕人員風險管理解決方案存取。
 
 > [!IMPORTANT]
 > 下列各節所述的資料列名稱不是必要參數，只是範例。 您可以在 CSV 檔案中使用任何欄名稱。 不過，當您在步驟3中建立 HR 連接器時，您在 CSV 檔案中使用的欄名*必須*對應至資料類型。 另外請注意，下列各節中的範例 CSV 檔案會顯示在 [記事本] 視圖中。 在 Microsoft Excel 中查看和編輯 CSV 檔案的方式很簡單。
@@ -112,8 +112,8 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 62 – Director,Level
 | **EmailAddress**  | 指定使用者的電子郵件地址（UPN）。|
 | **EffectiveDate** | 指定使用者工作層級正式變更的日期。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是[ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
 | **備註**| 指定評估程式所提供之工作層級變更的批註。 這是一個 text 參數，其限制為200個字元。 這是選用的參數。 您不需要將其包含在 CSV 檔案中。|
-| **OldLevel**| 會指定使用者的工作層級之後變更。 這是自由 text 參數，可以包含組織的階層式分類法。 這是選用的參數。 您不需要將其包含在 CSV 檔案中。|
-| **NewLevel**| 指定使用者在變更後的工作層級。 這是自由 text 參數，可以包含組織的階層式分類法。 這是選用的參數。 您不需要將其包含在 CSV 檔案中。|
+| **OldLevel**| 會指定使用者的工作層級之後變更。 這是自由 text 參數，可以包含您組織的階層式分類。 這是選用的參數。 您不需要將其包含在 CSV 檔案中。|
+| **NewLevel**| 指定使用者在變更後的工作層級。 這是自由 text 參數，可以包含您組織的階層式分類。 這是選用的參數。 您不需要將其包含在 CSV 檔案中。|
 |||
 
 ### <a name="csv-file-for-performance-review-data"></a>用於效能檢查資料的 CSV 檔案
@@ -164,7 +164,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 
 - 產生或收集 HR 資料的方法可能會決定 CSV 檔案的數目。 例如，如果用來設定 HR 連接器的不同類型的 HR 資料位於組織的單一 HR 系統中，您可以將資料匯出到單一 CSV 檔案。 不過，如果資料分散在不同的 HR 系統，則將資料匯出至不同的 CSV 檔案可能會比較容易。 例如，員工辭職資料可能位於與工作層級或效能檢查資料不同的人力資源系統中。 在此情況下，使用個別的 CSV 檔案會比較容易，而不必手動將資料合併成單一 CSV 檔案。 因此，您從 HR 系統中取得或匯出資料的方式，可能會決定所需的 CSV 檔案數目。
 
-- 一般來說，您需要建立的 HR 連接器數目取決於 CSV 檔案中的資料類型。 例如，如果 CSV 檔案包含支援您的有問必答風險管理執行所需的所有資料類型，則您只需要一個 HR 連接器。 不過，如果您有兩個不同的 CSV 檔案，每個檔案都包含單一資料型別，則必須建立兩個 HR 連接器。 例外情況是，如果您將 HRScenario * * 欄新增至 CSV 檔案（請參閱下一節），您可以設定單一 HR 連接器來處理不同的 CSV 檔案。
+- 一般來說，您需要建立的 HR 連接器數目取決於 CSV 檔案中的資料類型。 例如，如果 CSV 檔案包含支援您的有問必答風險管理執行所需的所有資料類型，則您只需要一個 HR 連接器。 不過，如果您有兩個不同的 CSV 檔案，每個檔案都包含單一資料型別，則必須建立兩個 HR 連接器。 例外情況是，如果您將**HRScenario**欄新增至 CSV 檔案（請參閱下一節），您可以設定單一 HR 連接器來處理不同的 CSV 檔案。
 
 ### <a name="configuring-a-single-csv-file-for-multiple-hr-data-types"></a>設定多個 HR 資料類型的單一 CSV 檔案
 
@@ -176,7 +176,7 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 
 - 若要使用具有多種 HR 資料類型的 CSV 檔案，HR 連接器必須知道 CSV 檔案中的哪些列包含 HR 資料類型。 若要完成此工作，可將其他**HRScenario**欄新增至 CSV 檔案。 此欄中的值會識別每一列中 HR 資料的類型。 例如，對應至四個 HR 案例的值可能會是 \` 辭職 \` 、 \` 工作層級變更 \` 、 \` 績效審查 \` 和 \` 效能改進計畫 \` 。
 
-- 如果您有多個 CSV 檔案包含**HRScenario**欄，請確定每個檔案都使用相同的欄名稱，以及識別特定 HR 案例的相同值。
+- 如果您有多個 CSV 檔案包含 HRScenario * * 欄，請確定每個檔案都使用相同的欄名稱及識別特定 HR 案例的相同值。
 
 下列範例會顯示包含**HRScenario**欄的 CSV 檔案。 [HRScenario] 欄中的值會識別對應列中的資料類型。
 
@@ -380,6 +380,6 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ## <a name="existing-hr-connectors"></a>現有 HR 連接器
 
-2020年7月20日，我們發行的是 HR 連接器支援的其他案例。 以下是本文先前所述的 HR 案例。 在此日期之前建立的 HR 連接器只支援員工辭職案例。 如果您在2020年7月20日之前建立 HR 連接器，我們已將其遷移，以繼續將 HR 資料移轉至 Microsoft 雲端。 您不需要執行任何動作即可維護此功能。 您可以繼續使用連接器，而不會造成任何中斷。
+2020年7月20日，我們發行的是 HR 連接器支援的其他案例。 以下是本文先前所述的 HR 案例。 在此日期之前建立的任何 HR 連接器都只支援員工辭職案例。 如果您在2020年7月20日之前建立 HR 連接器，我們已將其遷移，以繼續將 HR 資料移轉至 Microsoft 雲端。 您不需要執行任何動作即可維護此功能。 您可以繼續使用連接器，而不會造成任何中斷。
 
 如果您想要執行其他 HR 案例，請建立新的 HR 連接器，並針對所發行的其他 HR 案例加以設定。 您也需要建立一個或多個包含資料的新 CSV 檔案，以支援其他 HR 案例。 在您建立新的 HR 連接器之後，請使用新的連接器及 CSV 檔案的工作識別碼（包含其他 HR 案例的資料）來執行腳本。

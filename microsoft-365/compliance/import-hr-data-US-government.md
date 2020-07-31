@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 美國政府雲端中的系統管理員可以設定資料連線器，將員工資料從組織的人力資源（HR）系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 8023ffda8a9d367736ec8f7fc781bde5d6f1e1f5
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: e14f1a23097cddf3b187d4394d5fa5e3afe06d01
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45205021"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527641"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>設定連接器以匯入美國政府中的 HR 資料（預覽）
 
@@ -87,7 +87,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
    b. 輸入 HR 連接器的名稱。
 
-5. 在 [檔案**對應**] 頁面上，輸入三個欄標題名稱（也稱為自 CSV 檔案中您在每個適當的方塊中所建立的 CSV 檔案中的*參數*）。 名稱不區分大小寫。 如先前所述，您在這些方塊中輸入的名稱必須符合 CSV 檔案中的參數名稱。 例如，下列螢幕擷取畫面顯示在步驟2所示範例 CSV 檔案範例中的參數名稱。
+5. 在 [檔案**對應**] 頁面的每個適當的方塊中，輸入您在步驟2中建立之 CSV 檔案的三個欄標頭（也稱為*參數*）的名稱。 名稱不區分大小寫。 如先前所述，您在這些方塊中輸入的名稱必須符合 CSV 檔案中的參數名稱。 例如，下列螢幕擷取畫面顯示在步驟2所示範例 CSV 檔案範例中的參數名稱。
 
    ![欄標題名稱與 CSV 檔案中的名稱相符](../media/HRConnectorWizard3.png)
 

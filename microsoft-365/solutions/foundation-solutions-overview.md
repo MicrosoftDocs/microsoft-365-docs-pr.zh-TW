@@ -10,15 +10,14 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 49d58c8d489906519f0c5e3aab4cec8183a5fe5d
-ms.sourcegitcommit: a3ec91423c352cd5fbf79b46ccd9c169455a03ba
+ms.openlocfilehash: a0dabc7694c925f35a98d9ca0c9855bd85bf6c53
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44664547"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521382"
 ---
 # <a name="microsoft-365-foundation-solutions-overview"></a>Microsoft 365 Foundation 解決方案概述
 
@@ -28,4 +27,4 @@ ms.locfileid: "44664547"
 - [強化遠端工作人員](empower-people-to-work-remotely.md)
 - [在小組、群組和網站中安全地進行共同作業](setup-secure-collaboration-with-teams.md)
 - [在整個組織中設定威脅防護和網路安全性](deploy-threat-protection.md)
-- [部署資料隱私權法規的資訊保護](information-protection-deploy.md)
+- [為資料隱私權規定部署資訊保護](information-protection-deploy.md)

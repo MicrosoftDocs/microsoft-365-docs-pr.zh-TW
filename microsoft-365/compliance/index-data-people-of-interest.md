@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何使用高級索引，確定您的搜尋會捕獲您要調查的所有資料。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dc7d73c233aa48b88e9dce32fad613ccc5e19333
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6e72ec4a41d5b32ef3837e52f21836207c6f66e1
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035059"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527575"
 ---
 # <a name="advanced-indexing-of-data-for-an-investigation"></a>調查的高級資料索引
 
-即時系統中的內容可以部分編制索引，原因很多，包括影像存在、不支援的檔案類型，或是在遇到索引檔案大小限制時。 當您處理高風險資料溢出時，您想要確保搜尋已捕獲所有想要調查的資料。 當相關人員加入資料調查時，會重新處理被視為部分索引的任何內容，使其完全可供搜尋。 此處理程式稱為「*高級索引*」。 
+即時系統中的內容可以部分編制索引，原因很多，包括影像存在、不支援的檔案類型，或是在遇到索引檔案大小限制時。 當您處理高風險資料溢出時，您想要確保搜尋已捕獲所有想要調查的資料。 在資料調查中加入感興趣的人員時，會重新處理被視為部分索引的任何內容，使其完全可供搜尋。 此處理程式稱為「*高級索引*」。 
 
 若要深入瞭解處理支援和部分索引項目目的詳細資訊，請參閱：
 

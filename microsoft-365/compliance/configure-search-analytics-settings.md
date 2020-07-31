@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在管理資料調查時，設定搜尋及分析設定，例如接近重複專案、電子郵件執行緒及主題。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 06f39a3dd52ecb872c671035460bab9a34956e49
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 3100c83fc027e793f7937a4d27e059ce7e3038a0
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44033663"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527349"
 ---
 # <a name="configure-search-and-analytics-settings"></a>設定搜尋和分析設定
 
@@ -37,6 +37,7 @@ ms.locfileid: "44033663"
 - 依預設隱藏重複：如果啟用此設定，則預設會在工作集中套用隱藏重複檔案的篩選器。 如有必要，可在工作集內手動移除篩選。
 
 - 最小/最大文字數目：接近重複專案和電子郵件執行緒只會在至少具有最少字數的檔上執行，最多隻會在文字的最大數目。
+
 如需詳細資訊，請參閱[近期重複偵測](near-duplicates.md)和[電子郵件執行緒](email-threading.md)。
 
 ## <a name="themes"></a>佈景主題
@@ -44,8 +45,11 @@ ms.locfileid: "44033663"
 在本節中，您可以為主題設定參數。
 
 - 啟用/停用：在分析流程中包含主題叢集（如果已啟用）。
-- 動態調整最大的主題數目：在某些情況下，沒有足夠的檔來產生所需的主題數目。 如果開啟此設定，而不是嘗試強制所需的主題數目上限，系統就會自動調整主題的最大數目。
-- 主題數目上限：所需的主題數目
+
+- 動態調整主題數目上限：在某些情況下，沒有足夠的檔來產生所需的主題數目。 如果開啟此設定，而不是嘗試強制所需的主題數目上限，系統就會自動調整主題的最大數目。
+
+- 主題數目上限：所需的主題數目。
+
 - 在主題中包含編號：啟用時，它會在產生主題時包含數位。  
 
 ## <a name="optical-character-recognition-ocr"></a>光學字元辨識（OCR）

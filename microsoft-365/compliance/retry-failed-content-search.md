@@ -16,19 +16,20 @@ search.appverid:
 ms.assetid: ''
 description: 在調查過程中，您可以使用 [重試] 按鈕來解析內容位置發生錯誤的內容搜尋。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b2d26cd51c30f2c273abb59199cf4a89f5b7a37
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 55ef7ff59bfc58809d0e00ff1f2edf7a8455ba13
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034627"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527631"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重試內容搜尋以解決內容位置錯誤
 
-當您在安全性與合規性中心使用內容搜尋來搜尋大量信箱時，可能會收到與下列類似的搜尋錯誤：
+當您在安全性與合規性中心使用內容搜尋來搜尋大量信箱時，可能會收到與錯誤類似的搜尋錯誤：
 
 ```text
 Error
+
 
 The search on the following locations failed:
 
@@ -41,7 +42,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 ## <a name="cause-of-content-location-errors"></a>內容位置錯誤的原因
 
-搜尋大量信箱時，搜尋會在 Microsoft 資料中心的數千部伺服器間散佈。 在任何時候，特定伺服器都可能是在重新開機狀態，或在容錯移轉至多餘副本的程式中。 在這兩種情況下，內容搜尋要求取得的資料將會超時。 在上一個範例中，失敗的信箱錯誤是搜尋超時的結果。
+搜尋大量信箱時，搜尋會在 Microsoft 資料中心的數千部伺服器間散佈。 在任何時候，特定伺服器都可能是在重新開機狀態，或在容錯移轉至多餘副本的程式中。 在這兩種情況下，內容搜尋要求取得的資料將會超時。在上一個範例中，失敗的信箱錯誤是搜尋超時的結果。
 
 ## <a name="resolving-content-location-errors"></a>解決內容位置錯誤
 
@@ -53,7 +54,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 ## <a name="tips-to-avoid-content-location-errors"></a>避免內容位置錯誤的秘訣
 
-以下是內容位置錯誤的一些新增原因，以及協助您在搜尋大量信箱時避免出現問題的一些秘訣。
+以下是內容位置錯誤的一些額外原因，以及協助您在搜尋大量信箱時避免出現問題的一些秘訣。
 
 - 正在搜尋的信箱可能由於使用者活動而忙碌。 在此情況下，搜尋服務可能會節流自身，以防止信箱變得無法使用。 若要避免這種情況，請試著在非上班時間執行搜尋。
 
@@ -66,6 +67,6 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 - 在相同的信箱上同時執行太多搜尋。 如果可能的話，請嘗試一次在任何一個信箱上執行一個搜尋。
 
-- 搜尋單一搜尋中的信箱太多。 搜尋非常大量的信箱時，內容位置錯誤的發生幾率會增加。 如果可能的話，請嘗試執行多個搜尋，讓每個搜尋都包含您組織中的信箱子集。
+- 搜尋單一搜尋中的信箱太多。 搜尋大量信箱時，內容位置錯誤的發生幾率會增加。 如果可能的話，請嘗試執行多個搜尋，讓每個搜尋都包含您組織中的信箱子集。
 
 - 在信箱上執行必要的維護。 雖然這種原因很少發生，請稍候片刻後再收到內容位置錯誤，然後再試一次搜尋。

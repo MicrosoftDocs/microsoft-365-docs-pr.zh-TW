@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '瞭解如何將私人信箱轉換為可供多位使用者存取的共用信箱。 '
-ms.openlocfilehash: 7ae00c1d9c901378798f063554a44a3e5b741442
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: a4b2e9ce53051feb07ea035adc0c959bbb1a0948
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391527"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521026"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>將使用者信箱轉換為共用信箱
 
@@ -35,7 +35,7 @@ ms.locfileid: "45391527"
 
 - 您要轉換的使用者信箱必須已獲指派授權，才可將其轉換成共用信箱。 否則，您將看不到轉換信箱的選項。 如果您已移除授權，請將其新增回來，以便轉換信箱。 將信箱轉換成共用信箱之後，您可以從使用者的帳戶中移除授權。
 
-- 共用信箱最多可以有50GB 的資料，而不需要指派授權。 若要保留超過該數目的資料，您必須指派授權給它。 您可能需要從共用信箱中刪除大量的電子郵件（稱為附件），以將其壓縮，這樣您就可以移除授權。
+- 共用信箱最多可以有 50 GB 的資料，而不會獲指派授權。 若要保留超過該數目的資料，您必須指派授權給它。 您可能需要從共用信箱中刪除大量的電子郵件（稱為附件），以將其壓縮，這樣您就可以移除授權。
 
 - 不要刪除舊的使用者帳戶。 鎖定共用信箱所需。 如果您已刪除使用者帳戶，請參閱[轉換已刪除之使用者的信箱](#convert-the-mailbox-of-a-deleted-user)。
 
@@ -49,7 +49,7 @@ ms.locfileid: "45391527"
 
 3. 選取使用者信箱。 在 [**轉換為共用信箱**] 底下，選取 [**轉換**]。
 
-4. 如果信箱小於50GB，您可以移除[使用者的授權](../manage/remove-licenses-from-users.md)，然後停止付款。 請勿刪除使用者的帳戶。 共用信箱需要以錨定。 如果您要轉換的是離開組織之員工的信箱，您應該採取額外的步驟，確定他們無法再登入。 請參閱[從 Microsoft 365 移除前任員工](../add-users/remove-former-employee.md)。
+4. 如果信箱小於 50 GB，您可以移除[使用者的授權](../manage/remove-licenses-from-users.md)，然後停止支付。 請勿刪除使用者的帳戶。 共用信箱需要以錨定。 如果您要轉換的是離開組織之員工的信箱，您應該採取額外的步驟，確定他們無法再登入。 請參閱[從 Microsoft 365 移除前任員工](../add-users/remove-former-employee.md)。
     
 5. 如需有關共用信箱的其他資訊，請參閱[關於共用](about-shared-mailboxes.md)信箱及[建立共用信箱](create-a-shared-mailbox.md)。
 
@@ -63,8 +63,8 @@ ms.locfileid: "45391527"
 
 3. 重設使用者的密碼。
 
-> [!NOTE]
-> 在信箱轉換期間，不需要重設使用者的密碼。 不過，如果沒有重設密碼，**則原始的使用者名稱和密碼**會在信箱轉換完成之後繼續運作。
+   > [!NOTE]
+   > 在信箱轉換期間，不需要重設使用者的密碼。 不過，如果沒有重設密碼，**則原始的使用者名稱和密碼**會在信箱轉換完成之後繼續運作。
 
 4. 在 [**郵件**] 索引標籤的 [**其他動作**] 下，選取 [**轉換成共用信箱**]。 
 
@@ -91,7 +91,7 @@ ms.locfileid: "45391527"
 ::: moniker-end
 
 
-如果信箱小於50GB，您可以[移除使用者的授權](../manage/remove-licenses-from-users.md)，然後停止付款。 不要刪除使用者的舊信箱。 共用信箱需要以錨定。 如果您要轉換的是離開組織之員工的信箱，您應該採取額外的步驟，確定他們無法再登入。 請參閱[移除 Microsoft 365 的離職員工](../add-users/remove-former-employee.md)。
+如果信箱小於 50 GB，您可以[移除使用者的授權](../manage/remove-licenses-from-users.md)，然後停止支付。 不要刪除使用者的舊信箱。 共用信箱需要以錨定。 如果您要轉換的是離開組織之員工的信箱，您應該採取額外的步驟，確定他們無法再登入。 請參閱[移除 Microsoft 365 的離職員工](../add-users/remove-former-employee.md)。
     
 如需有關共用信箱的其他資訊，請參閱[關於共用](about-shared-mailboxes.md)信箱及[建立共用信箱](create-a-shared-mailbox.md)。
 
@@ -132,16 +132,16 @@ ms.locfileid: "45391527"
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>轉換使用者在混合式環境中的信箱
 
-如果此共用信箱位於混合式環境中，**強烈建議**（幾乎需要！）將使用者信箱移回內部部署，將使用者信箱轉換成共用信箱，然後將共用信箱移回雲端。
+如果此共用信箱位於混合式環境中，**強烈建議**（幾乎需要！）將使用者信箱移回內部部署，將使用者信箱轉換成共用信箱，然後將共用信箱移回雲端。 
 
 原因如下：如果您轉換雲端中的信箱，它可以進行轉換，但是內部部署仍會認為信箱是使用者信箱，因為新的現實不會同步處理回內部部署。
 
 這通常不是問題，但是在某些情況下，內部部署屬性（會認為信箱是使用者信箱）可能會覆寫這些屬性的新雲端版本，因此，信箱可能會轉換回來。 這是一個問題，原因是使用者信箱需要授權 **，或在30天后才會將其虛刪除**！
 
-我們已解決這種情況下的大部分原因，但仍然可以發生，但不常這麼做。 最好是安全的，將信箱移回內部部署。
+我們已解決這種情況下的大部分原因，但仍然可以發生，但不常這麼做。 最好是安全的，將信箱移回內部部署、轉換，然後將共用信箱移回雲端。 此建議的解決方案不會違反混合式環境的授權協定，因為內部部署使用者信箱的存在只是臨時性的。 如果您維護內部部署組織中的使用者信箱或共用信箱，但沒有將它移回雲端，您就會違反您的授權。
 
 > [!NOTE]
-> 如果您是組織管理或收件者管理的一部分，您可以使用 Exchange 管理命令介面，將使用者信箱變更為內部部署的共用信箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`。
+> 如果您是「組織管理」或「收件者管理」角色群組的成員，您可以使用 Exchange 管理命令介面，將使用者信箱變更為內部部署的共用信箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`。
 
 > [!TIP]
 > 當[共用信箱意外轉換為使用者信箱](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di)時，請參閱此支援解決方案中的解決方法。

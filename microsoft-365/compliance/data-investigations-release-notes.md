@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 description: 在本文中，您將會看到版本資訊，其中包含 Microsoft 365 中「資料調查（預覽）」工具的變更和新功能。
-ms.openlocfilehash: 9567e9d83c6fc952e61271e665b96fad8fc6b69a
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: 40d441aff8da69b4ead0ab2f49fbe93589aa709c
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44352280"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528023"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 中的資料調查（預覽）版本附注
 
-您可以使用 Microsoft 365 中的「新增資料調查（預覽）」工具來會審、調查和修正資料相關的事件，例如資料外泄事件或內部調查。 資料調查的公開預覽可讓您及早存取即將推出的功能和更新。 若要取得最新功能的初期存取，請在安全性 & 規範中心建立新調查（預覽）。 若要深入瞭解，請參閱[管理 Microsoft 365 中的資料外泄事件](manage-data-spillage-incidents.md)。
+您可以使用 Microsoft 365 中的「新增資料調查（預覽）」工具來會審、調查和修正與資料相關的事件，例如資料外泄事件或內部調查。 資料調查的公開預覽可讓您及早存取即將推出的功能和更新。 若要取得最新功能的初期存取，請在安全性 & 規範中心建立新調查（預覽）。 若要深入瞭解，請參閱[管理 Microsoft 365 中的資料外泄事件](manage-data-spillage-incidents.md)。
 
-## <a name="whats-new"></a>新功能 
+## <a name="whats-new"></a>新增功能 
 
 - **調查**-您可以建立調查，以群組搜尋和事件。 新增或移除成員，以管理可以存取調查的人員。  您也可以選取及標示您最愛的調查。 使用新的儀表板，追蹤並監控在調查內和跨調查的活動。 完成調查之後，您可以關閉或刪除。
 
@@ -44,7 +44,7 @@ ms.locfileid: "44352280"
 
 - **標記密文、標記和批註**–在您審閱檔時標記密文、套用標記，並做為批註。
   
-- **高級索引**–如果有任何部分編制索引的專案，將會根據需要重新編制索引，這樣所有的資料就會可供搜尋使用。
+- **高級索引**–如果有任何已編制索引的專案，則會根據需求重新編制索引，這樣所有的資料就都可以供搜尋使用。
 
 - **錯誤修正**–修正或下載處理錯誤。 這包括對大型檔案類型的補救支援、受密碼保護的檔案，以及與索引錯誤相關的其他問題。 
 

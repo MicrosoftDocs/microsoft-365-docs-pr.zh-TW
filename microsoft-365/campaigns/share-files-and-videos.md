@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,49 +24,49 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 與 Microsoft Teams 和 SharePoint 共用檔案和您的行銷活動內的影片。
-ms.openlocfilehash: b67b6f834fd9333814f1807567776644dd2826e7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 與 Microsoft 團隊和 SharePoint 共用您的活動中的檔案和影片。
+ms.openlocfilehash: b3ca070152a19841ff2c934f04d0d147e3387db0
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080412"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526897"
 ---
 # <a name="share-files-and-videos"></a>共用檔案和影片
 
-當您需要控制可以檢視，而且您需要將檔案儲存在安全的位置，其中您可以確定誰可以編輯您的檔案，會適當地套用權限。 您可以使用 Microsoft Teams 可儲存您的檔案，並使用 Microsoft Teams 或傳送 SharePoint 連結，然後共用的檔案內部或外部行銷活動。 傳送連結，而不是電子郵件附件形式表示您知道誰是檢視和修改檔案，並無法檢視或修改您的許可。 
+當您需要控制誰可以查看您的檔案，以及誰可以編輯您的檔案時，您必須將檔案儲存在安全的位置，以確保正確套用許可權。 您可以使用 Microsoft 團隊儲存您的檔案，然後使用 Microsoft 團隊或傳送 SharePoint 連結，在您的活動內部或外部共用檔。 傳送連結（而非電子郵件附件）表示您知道誰在查看及修改檔案，而且不需要您的許可權就能查看或修改這些檔案。 
 
-![Microsoft Teams] 視窗中，顯示檔案] 索引標籤和取得連結] 功能表上的圖表](../media/m365-democracy-teams-sharefiles.png)
+![Microsoft 團隊視窗的圖表，顯示 [檔案] 索引標籤，並取得功能表上的連結](../media/m365-democracy-teams-sharefiles.png)
 
-與您在 Microsoft Teams 和 SharePoint 中的檔案，您也可以同時處理的檔案並檢閱彼此的變更。 使用 Microsoft Teams 來共用檔案政治活動的內容。 若要為活動之外的人員與外部共用，您可以將其新增為來賓小組，或將安全的 SharePoint 連結傳送給他們。
+您也可以在 Microsoft 小組和 SharePoint 中處理檔案，並彼此檢查檔案的變更。 使用 Microsoft 團隊在政治活動中共用檔案。 如果您需要與市場活動外的人員共用，您可以將其新增為其他人的客人，或傳送安全的 SharePoint 連結。
 
-您也可以使用 Microsoft Stream 來儲存與共用您的行銷活動的影片。 這些影片不是檢視公用的所以它們非常適合用於內部活動通訊。
+您也可以使用 Microsoft Stream 來儲存和共用活動的影片。 這些影片對公眾是無法查看的，所以它們非常適合內部活動郵件。
 
 ## <a name="best-practices"></a>最佳做法
 
-使用這些方法來安全地共用檔案和影片：
+使用下列方法可安全地共用檔案和視頻：
 
-1. 儲存檔案的 Microsoft Teams 或 SharePoint，並讓確定，只有使用者需要存取這些檔案已將其的人員。 
-2. 當您想要分享時，不將檔案附加到電子郵件。 相反地，從 Microsoft Teams 或 SharePoint 中選擇 [**取得連結**，並將連結傳送電子郵件中。
-3. 外部檔案共用、 來賓身分的使用者新增至您的小組，或使用 SharePoint 來取得共用該檔案的安全連結。
-4. 使用 Microsoft Stream，您想要查看您的行銷活動的主機影片。 
-5. 使用 Microsoft Teams 或 SharePoint 來儲存您需要您的小組共同作業或共用的視訊檔案。
+1. 將檔案儲存在 Microsoft 小組或 SharePoint 中，並確定只有需要存取這些檔案的人員才會有這些檔案。 
+2. 當您想要共用時，請勿將檔案附加到電子郵件。 請改為選擇 [從 Microsoft 團隊**取得連結**] 或 SharePoint，並以電子郵件傳送連結。
+3. 若要在外部共用檔案，請將使用者新增為您的小組的來賓，或使用 SharePoint 以取得只共用該檔案的安全連結。
+4. 使用 Microsoft Stream 來主控您想要讓活動看到的影片。 
+5. 使用 Microsoft 小組或 SharePoint，存放您需要小組共同作業或分享的影片檔。
 
  
 ## <a name="set-up"></a>設定
 
-若要建立一個小組，並新增來賓，像是廣告商或財務合作夥伴，它，請遵循下列步驟。
+若要建立小組並新增來賓（如廣告人員或融資合作夥伴），請遵循下列步驟。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-若要使用來賓，共用的安全連結，而不需使用 Microsoft Teams，請遵循下列步驟
+若要與來賓共用安全連結，而不使用 Microsoft 小組，請遵循下列步驟
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0]
 
-若要建立並共用影片，請遵循下列步驟。
+若要建立及共用影片，請遵循下列步驟。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-下載[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)若要取得的方式來共用檔案的快速概觀資訊圖表。
+下載[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)中的資訊圖表或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) ，以快速瞭解共用檔案的方式。
 
-[![圖例中的不同的使用者與共用檔案](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)
+[![與不同使用者共用檔案的圖例](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

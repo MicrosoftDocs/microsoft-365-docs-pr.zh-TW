@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: ''
 description: 瞭解如何使用合規性分數和合規性管理員，以提升個人資料的保護層級。
-ms.openlocfilehash: d3730f7a91876befc05f749497540fbe9abe9641
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 5b1d465ad03a6aad5370f76b2cdde0657efd2f79
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126545"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521050"
 ---
 # <a name="use-compliance-score-and-compliance-manager-to-manage-improvement-actions"></a>使用合規性分數和合規性管理員管理改進動作
 

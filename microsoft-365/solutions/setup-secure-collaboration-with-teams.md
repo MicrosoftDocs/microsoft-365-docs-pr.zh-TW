@@ -9,16 +9,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-- M365solutions
+- m365solution-securecollab
+- m365solution-overview
 ms.custom: ''
 f1.keywords: NOCSH
 description: 瞭解如何根據敏感度設定小組以保護您的資料
-ms.openlocfilehash: 8978c8602a00dd9c7caecc30ea4746a01680a236
-ms.sourcegitcommit: 92f641cad63379bf16417854a43b16b48a71a30a
+ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724800"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527705"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全的共同作業
 
@@ -79,7 +80,7 @@ ms.locfileid: "44724800"
 |:--|:-----------|:------------|:-------------------|
 |公用或私人團隊|兩者之一|Private|Private|
 |未經驗證的共用|已封鎖|已封鎖|已封鎖|
-|檔案共用|允許|允許|只有小組擁有者可以共用。|
+|檔案共用|已允許|已允許|只有小組擁有者可以共用。|
 |小組成員資格|任何人都可以加入 public 團隊。<br>加入私人團隊所需的小組擁有者核准。|加入所需的小組擁有者核准。|加入所需的小組擁有者核准。|
 |檔加密|||可用於敏感度標籤|
 |來賓共用|允許|可以允許或封鎖|可以允許或封鎖|
@@ -124,7 +125,7 @@ ms.locfileid: "44724800"
 1. [為小組設定三種不同的保護層級](configure-teams-three-tiers-protection.md)。
 2. 設定[與組織外部人員共用任何敏感度資訊的](collaborate-with-people-outside-your-organization.md)設定。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>也請參閱
 
 [Microsoft 365 安全性文件](https://docs.microsoft.com/microsoft-365/security)
 

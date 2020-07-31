@@ -1,5 +1,5 @@
 ---
-title: Microsoft 雲端架構模型
+title: Microsoft 雲端架構模式
 description: 這些雲端架構海報提供 Microsoft 雲端服務的相關資訊，包括 Office 365、Azure Active Directory、Microsoft Intune、Microsoft Dynamics CRM Online 和混合式內部部署和雲端解決方案。
 ms.author: samanro
 author: samanro
@@ -10,15 +10,14 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365solutions
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: be79402c7aaf540ba3174e0844b1fe5bdc87a7ec
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 3a8daf7982cf0b28adebee5d4d05a9893faf30ba
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160036"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521906"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Microsoft cloud for enterprise 架構設計圖例
 

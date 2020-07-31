@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 取得 Microsoft 365 的行銷活動，讓您可以保護您的活動，使您的 cybersecurity 威脅成為電子郵件、資料和通訊。
-ms.openlocfilehash: 5c528ab0ee856062a8e012d9fb699da92d7afb78
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 13e0f66b388e9041e1654a7a45226d3204499618
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635621"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527327"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>取得 Microsoft 365 的行銷活動
 
@@ -55,7 +56,7 @@ Microsoft 365 商務版 Premium 的此設定包括可協助您和您的員工安
 
 ## <a name="how-do-i-qualify-for-special-pricing"></a>如何才能享受特殊的定價？
 
-1. 請移https://m365forcampaigns.microsoft.com/至並提供一些有關您組織的詳細資料。 您所提供的詳細資料可協助我們確認您在美國所代表的國家層級政治活動或協力廠商。 當您完成此表單時，沒有任何承諾。 
+1. 請移至 https://m365forcampaigns.microsoft.com/ 並提供一些有關您組織的詳細資料。 您所提供的詳細資料可協助我們確認您在美國所代表的國家層級政治活動或協力廠商。 當您完成此表單時，沒有任何承諾。 
 2. 當您完成表單之後，需要花費幾天的時間來查看您的資訊。 
 3. 在我們驗證您代表全國層級的政治活動或某一方後，您將會收到 Microsoft 的電子郵件邀請。 您的邀請包含組織特有的註冊連結。 
 

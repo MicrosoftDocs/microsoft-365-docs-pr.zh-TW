@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 當您使用有效的工作或學校帳戶登入時，使用者可在 Microsoft 365 體驗中取得使用 Cortana 的雲端協助服務，以符合 Office 365 的企業級隱私權、安全性和合規性承諾。
-ms.openlocfilehash: 7b8f60f5138de63234520f18d6de0973b74482ed
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 5707fb5966e77787b609c20b204602318627d350
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083547"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521274"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -33,7 +33,7 @@ Cortana，您的個人生產能力 assistant 可提供 AI 的體驗，以節省�
 
 做為個人的生產能力小幫手，Cortana 是專門設計用來透過像電子郵件、檔案、聊天等的方式，提供安全且安全地處理及365原因的功能，以節省時間、提高效率，並增強使用者的生產力。
 
-向前發展，我們的重點是在企業生產力上重點放入小娜。 
+向前發展，我們的重點是在企業生產力上重點放入小娜。
 
 - 與其他 Office 365 服務一致，Cortana enterprise 服務會符合相同的企業級隱私權、安全性和合規性承諾，以反映[線上服務條款（OST）](https://www.microsoft.com/licensing/product-licensing/products)。
 
@@ -55,7 +55,7 @@ Cortana enterprise 服務處理來自使用者的查詢、完成使用者要求�
 
 下表說明 Cortana enterprise 服務的資料處理。
 
-|**名稱**|**描述**|
+|**Name**|**描述**|
 |:-----|:-----|
 |**儲存**  <br/> |客戶資料儲存在 Office 365 雲端內部的 Microsoft 伺服器上。 您的資料是租使用者的一部分。 <br/> 不保留語音音訊。  <br/> |
 |**保留在地理位置**  <br/> |客戶資料儲存于地理位置的 Office 365 雲端內部的 Microsoft 伺服器上。 您的資料是租使用者的一部分。  <br/> |
@@ -159,7 +159,7 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 1. 在 Microsoft 365 系統管理中心中，選取 [**設定**  >  **組織設定**]，然後選取 [ **Cortana**]。
 
-2. 取消選取 [**允許這些 Cortana 選用的 Cortana 選用的連線經驗] 核取方塊，以使用您組織的 Microsoft 主控資料**來停用 Cortana 連線體驗。
+2. 取消選取 [**允許 Windows 10 中的 cortana （版本1909及更早版本）] 的核取方塊，以及 iOS 和 Android 上的 cortana 應用程式，即可代表組織中的人員存取 Microsoft 主控的資料，** 以停用 Cortana 連線體驗。
 
 3. 選取 **[儲存變更]**。
 

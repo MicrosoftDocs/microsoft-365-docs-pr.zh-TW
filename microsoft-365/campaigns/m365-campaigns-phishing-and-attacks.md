@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -23,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 針對市場活動，防止網路釣魚和其他攻擊使用 Microsoft 365。
-ms.openlocfilehash: 6f53cc069de2d9162d81a5049128dd35064003c1
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: 99b578c0b4f36d107d881d8b424ee899a937aa88
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44165706"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527159"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>抵禦網路釣魚和其他攻擊
 
@@ -69,7 +70,7 @@ Microsoft 365 包含許多保護措施，以防範攻擊，但您可以採取一
 
 [![協助保護您的活動資訊圖形](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
-[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
+[PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)  | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
 ## <a name="set-it-up"></a>進行設定
 

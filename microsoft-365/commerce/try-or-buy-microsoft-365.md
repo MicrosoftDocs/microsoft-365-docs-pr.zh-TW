@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9e8ceac6-8d20-4d28-837a-d766ae99cbd1
 description: 瞭解如何取得免費試用版或購買 Microsoft 365 的訂閱。
-ms.openlocfilehash: 28ec622d32c3218238edf9c171b1eb0566a93c60
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6400f8a05a0e1b8fd8d7200af90a0b232b288895
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403135"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526837"
 ---
 # <a name="try-or-buy-a-microsoft-365-subscription"></a>試用或購買 Microsoft 365 訂閱
 
@@ -40,7 +40,9 @@ Microsoft 365 是完整的解決方案，可結合 Office 365 與 Windows 10 搭
   
 - Microsoft 365 商務進階版
 
-- Office 365 Enterprise E3
+- Microsoft 365 E5
+
+- Microsoft 365 E3
 
 - Office 365 企業版 E5
 

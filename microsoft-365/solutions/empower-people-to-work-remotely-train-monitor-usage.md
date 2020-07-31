@@ -14,15 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-- M365solutions
+- m365solution-remotework
+- m365solution-overview
 ms.custom: ''
 description: 訓練您的使用者，並確保問題獲得快速處理。
-ms.openlocfilehash: bb8c6614ed383136ef5724d45637891ee978c9cd
-ms.sourcegitcommit: 9c828bc27cd73a1bb85e9fe38d818190025ebb3f
+ms.openlocfilehash: 1954a3768d2a35c3193aa523d6383b7b8257a6a0
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44160723"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521430"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>步驟6：訓練遠端工作者和處理使用上的意見反應
 
@@ -43,7 +44,7 @@ ms.locfileid: "44160723"
 - 快速處理遠端工作者的意見反應，並微調原則和設定。
 - 分析小組、電子郵件、SharePoint 網站和 OneDrive 資料夾的使用狀況，並比較其使用預期。
 
-視需要重新訓練您的使用者。
+然後視需要重新訓練您的使用者。
 
 ## <a name="results-of-step-6"></a>步驟 6 的結果
 

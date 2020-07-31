@@ -19,27 +19,27 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 使用內容搜尋和本文中的腳本，針對使用者群組搜尋商務網站的信箱和 OneDrive。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 714574739256f98353f01478fb9216432f3dcb47
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 90aab661992ae2f0c19d18939191230dc0469eaa
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818973"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527359"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
 
-安全性 & 合規性中心提供許多 Windows PowerShell Cmdlet，可讓您自動執行耗時的 eDiscovery 相關工作。 目前，在安全性 & 合規性中心內建立內容搜尋，以搜尋大量的保管人內容位置，需要一些時間與準備工作。 在您建立搜尋之前，您必須收集 OneDrive 每個商務用網站的 URL，然後將每個信箱和 OneDrive 的商務網站新增至搜尋。 在未來的版本中，這會在安全性 & 合規性中心較容易進行。 在此之前，您可以使用本文中的腳本來自動化此程式。 此腳本會提示您組織的 MySite 網域的名稱（例如， **contoso** in URL https://contoso-my.sharepoint.com) 、使用者電子郵件地址的清單、新內容搜尋的名稱，以及要使用的搜尋查詢）。 腳本會針對清單中的每個使用者，取得商務 URL 的 OneDrive，然後使用您提供的搜尋查詢，來建立及啟動搜尋內容，以針對清單中的每一位使用者，搜尋信箱及 OneDrive for Business site。 
+安全性 & 合規性中心提供許多 Windows PowerShell Cmdlet，可讓您自動執行耗時的 eDiscovery 相關工作。 目前，在安全性 & 合規性中心內建立內容搜尋，以搜尋大量的保管人內容位置，需要一些時間與準備工作。 在您建立搜尋之前，您必須收集 OneDrive 每個商務用網站的 URL，然後將每個信箱和 OneDrive 的商務網站新增至搜尋。 在未來的版本中，這會在安全性 & 合規性中心較容易進行。 在此之前，您可以使用本文中的腳本來自動化此程式。 此腳本會提示您組織的 MySite 網域的名稱（例如，在 URL 中為**contoso** `https://contoso-my.sharepoint.com` ）、使用者電子郵件地址的清單、新內容搜尋的名稱，以及要使用的搜尋查詢。 腳本會針對清單中的每個使用者，取得商務 URL 的 OneDrive，然後使用您提供的搜尋查詢，來建立及啟動搜尋內容，以針對清單中的每一位使用者，搜尋信箱及 OneDrive for Business site。
   
 ## <a name="permissions-and-script-information"></a>許可權及腳本資訊
 
 - 您必須是 Security & 合規性中心內的 eDiscovery Manager 角色群組成員，以及 SharePoint Online 全域系統管理員，才能執行步驟3中的腳本。
-    
+
 - 請務必將您在步驟2中建立的使用者清單和步驟3中的腳本儲存在相同的資料夾中。 這樣會使執行腳本變得更容易。
-    
+
 - 腳本包含最低的錯誤處理。 其主要用途是快速且輕鬆地搜尋每個使用者之商務網站的信箱和 OneDrive。
-    
-- 任何 Microsoft standard support program 或 service 都不支援本主題中提供的範例腳本。 範例腳本是以不含任何類型擔保的方式提供。 Microsoft 進一步否認所有我 [https://go.microsoft.com/fwlink/p/?LinkId=517283](https://go.microsoft.com/fwlink/p/?LinkId=517283) 的 mplied 擔保，包括但不限於任何適售性或特定用途適用性的暗示擔保。 因使用或效能範例腳本及檔的整體風險，仍然保留給您。 在任何事件中，Microsoft、其作者、（包括但不限於使用或無法使用範例腳本或檔的任何損害（包括（但不限於）因使用或無法使用範例腳本或檔而造成的任何損害（包括但不限於公司中斷、商務中斷、商務資訊遺失或其他 pecuniary 遺失）以外的任何損害（包括但不限於）使用或無法使用範例腳本或檔時所產生的任何其他
-    
+
+- 在任何 Microsoft 標準支援程式或服務下，不支援本主題提供的指令碼。範例指令碼係依「現狀」提供，不附帶任何明示或默示的擔保。Microsoft 另外不承擔任何明示或默示的擔保，包括但不限於適售性或適合某特定用途的默示擔保。使用或操作範例指令碼和文件發生的所有風險皆屬於您的責任。Microsoft、其作者以及其他與建置、生產或交付程式碼相關的任何人在任何情況下皆完全不需對任何損失負責任，包括但不限於商業利潤損失、業務中斷、業務資訊損失、或其他錢財損失等因使用或無法使用範例指令碼所發生的損失，即使 Microsoft 曾建議這些損失發生的可能性。
+
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>步驟 1：安裝 SharePoint Online 管理命令介面
 
 第一步是安裝 SharePoint 線上管理命令介面。 您不需要在此程式中使用命令介面，但必須安裝它，因為它包含您在步驟3中執行之腳本所需的必要條件。 這些必要條件允許腳本與 SharePoint Online 進行通訊，以取得商務網站 OneDrive 的 URLs。

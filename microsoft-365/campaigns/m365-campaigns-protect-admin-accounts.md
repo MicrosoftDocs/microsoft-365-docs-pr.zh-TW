@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - MiniMaven
@@ -21,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何設定和保護您的系統管理員帳戶。
-ms.openlocfilehash: 2104697320308b329f9fde1b6984c15f9814f9ef
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: dc5f72cda0255641d7d2407d266a6ae584560733
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43633650"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46527183"
 ---
 # <a name="protect-your-administrator-accounts"></a>保護您的系統管理員帳戶
 
@@ -46,7 +47,7 @@ ms.locfileid: "43633650"
 
 若要建立其他系統管理員帳戶：
 
- 1. 移至 [系統<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理中心</a>]，然後選擇左側導覽中的 [**使用者** \> ] [作用中**使用者**]。
+ 1. 移至 [系統<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理中心</a>]，然後選擇左側導覽中的 [**使用者**] [作用 \> 中**使用者**]。
 
     ![選擇左側流覽中的 [使用者] 和 [作用中使用者]](../media/Activeusers.png)
 
@@ -67,10 +68,10 @@ ms.locfileid: "43633650"
 
 ## <a name="create-a-user-account-for-yourself"></a>為自己建立使用者帳戶
 
-使用您的使用者帳戶參與組織的共同作業，包括檢查郵件。 這表示您的系統管理員認證可能類似于*小紅 Chavez<span></span>@Contoso. org*和一般使用者帳戶可能類似*alice<span></span>@Contoso .com*。
+使用您的使用者帳戶參與組織的共同作業，包括檢查郵件。 這表示您的系統管理員認證可能類似于*小紅 Chavez <span></span> @Contoso. org*和一般使用者帳戶可能類似*alice <span></span> @Contoso .com*。
 
 若要建立新的使用者帳戶：
-1. 移至 [系統<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理中心</a>]，然後選擇左側導覽中的 [**使用者** \> ] [作用中**使用者**]。
+1. 移至 [系統<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">管理中心</a>]，然後選擇左側導覽中的 [**使用者**] [作用 \> 中**使用者**]。
 2. 在 [作用中**使用者**] 頁面上，選取頁面頂端的 [**新增使用者**]，然後在 [**新增使用者**] 面板上，輸入名稱及其他資訊。
 3. 展開 [**角色**] 區段，然後選擇 [**使用者] （無管理存取）**。
 1. 在 [**產品授權**] 區段中，將**Microsoft 365 商務**版的選取器移至 [**開啟**]。 

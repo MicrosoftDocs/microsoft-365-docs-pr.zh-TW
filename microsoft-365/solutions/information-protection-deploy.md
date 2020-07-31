@@ -13,15 +13,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
+- m365solution-overview
 ms.custom: ''
 description: 設定安全性和服務基礎結構，以保護您的資訊並遵守資料隱私權規定。
-ms.openlocfilehash: ea0f5ead93dc631a28577a61f33bca3b601406f4
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
+ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
+ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854326"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522286"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>使用 Microsoft 365 部署資料隱私權法規的資訊保護
 
@@ -37,13 +38,13 @@ ms.locfileid: "44854326"
 
 | 功能 | 描述 | 授權 |
 |:-------|:-----|:-------|
-| 合規性管理員 | 使用 Microsoft 服務信任入口網站中的工作流程型風險評估工具，管理與 Microsoft cloud services 相關的規章遵循活動。 | Microsoft 365 E3 和 E5 |
-| 合規性分數 (預覽) | 請參閱您目前規範設定的整體分數和建議，以在 Microsoft 365 規範中心內改進。 | Microsoft 365 E3 和 E5 |
-| Office 高級威脅防護（ATP） | 保護您的 Microsoft 365 應用程式和資料（例如電子郵件、Office 檔和共同作業工具）免受攻擊。 | Microsoft 365 E3 和 E5 | 
-| 敏感度標籤 | 分類及保護您組織的資料，而不會因在電子郵件、檔案或網站上放置具有不同保護層級的標籤，而阻礙使用者的生產力和其共同作業的能力。 | Microsoft 365 E3 和 E5 |
-| 資料遺失防護（DLP） | 偵測、警告和封鎖危險、不慎或不適當的共用，例如內部及外部包含個人資訊的資料共用。 | Microsoft 365 E3 和 E5 | 
-| 資料保留標籤和原則 | 實施資訊控管控制措施，例如，將個人資料的資料和需求保留多久，以符合組織的原則或資料法規。 | Microsoft 365 E3 和 E5 |
-| 電子郵件加密 | 在組織內部和外部的人員之間傳送和接收已加密的電子郵件，包含管制資料，例如客戶上的個人資料。 | Microsoft 365 E3 和 E5 |
+| 合規性管理員 | 使用 Microsoft 服務信任入口網站中的這個工作流程型風險評估工具來管理與 Microsoft 雲端服務相關的合規性活動。 | Microsoft 365 E3 和 E5 |
+| 合規性分數 (預覽) | 在 Microsoft 365 合規性中心中，查看合規性設定的整體分數以及改善建議。 | Microsoft 365 E3 和 E5 |
+| Office 高級威脅防護（ATP） | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 | Microsoft 365 E3 和 E5 | 
+| 敏感度標籤 | 在電子郵件、文件或網站上套用具有不同保護層級的標籤，可以在不影響使用者工作效率和共同作業能力的情況下對組織的資料進行分類和保護。 | Microsoft 365 E3 和 E5 |
+| 資料外洩防護 (DLP) | 偵測、警告，並封鎖風險、不慎或不當的共用，例如共用包含個人資訊的資料 (內部和外部)。 | Microsoft 365 E3 和 E5 | 
+| 資料保留標籤和原則 | 實施資訊控管控制，例如資料的保留時間以及對客戶個人資料儲存的要求，以符合組織的原則或資料法規。 | Microsoft 365 E3 和 E5 |
+| 電子郵件加密 | 在組織內外的人員之間傳送和接收加密的電子郵件訊息，包含管制資料，例如客戶的個人資料。 | Microsoft 365 E3 和 E5 |
 ||||
 
 ## <a name="organization-of-the-guidance-in-this-solution"></a>此解決方案中指導方針的組織

@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - M365-identity-device-management
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -23,27 +24,27 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 設定使用 Microsoft Teams 的線上會議。
-ms.openlocfilehash: 83ff561b4159ffe6785db8bb03314aa80668023a
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 使用 Microsoft 團隊設定線上會議。
+ms.openlocfilehash: ce13dbcc32457263295e0e617b92a2d7e5fc3909
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42080433"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526861"
 ---
 # <a name="set-up-meetings"></a>設定會議
 
-Microsoft Teams 中的會議包含音訊、 視訊和共用。 因為它們是線上，您將一律具有會議空間，而且永遠不需要會議室或投影機行銷活動。Microsoft Teams 會議是來自與您的員工和名冊內部和外部組織很棒的方法。 您不需要為您組織的成員，或甚至有帳戶才能加入會議。 可以為政治活動，您可以排程及執行使用 Microsoft Teams 的線上會議。 您可以包含員工、 名冊和來賓組織外部。 在會議期間，您可以共用您的螢幕共用檔案、 指派工作，等等。
+Microsoft 小組中的會議包括音訊、影片及共用。 而且，因為它們是線上，您的活動永遠都有會議空間，而且不需要會議室或放映機。Microsoft 團隊會議是一種極好的方式，可搭配組織內部和外部的人員和志願者。 您不需要是組織的成員，甚至沒有帳戶可加入會議。 針對您的政治活動，您可以使用 Microsoft 小組排程和執行線上會議。 您可以在組織外部加入人員、志願者和客人。 在會議期間，您可以分享您的畫面、共用檔案、指派任務等等。
 
-[![兩個使用者在會議中的圖例](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
+[![會議中的兩位使用者的圖例](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
-下載[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)以取得如何加入或主控線上會議使用 Microsoft Teams 的快速概觀資訊圖表。
+下載[PDF](https://go.microsoft.com/fwlink/?linkid=2078712)或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079515)中的資訊圖表，以快速瞭解如何使用 Microsoft 小組加入或主控線上會議。
 
 ## <a name="best-practices"></a>最佳做法
 
-請遵循這些的線上會議的最佳作法：
-- 排程線上會議右手 Microsoft teams。 您可以選擇小組及通道，以及小組會邀請小組參與者或自動通道。
-- 需要即席會議嗎？ 如果您是在一對一聊天室中，選擇 **[立即開會]** 啟動視訊或音訊通話與您正在與交談的人員。 
+請遵循下列線上會議的最佳作法：
+- 在 Microsoft 小組中安排您的線上會議。 您可以選擇小組和管道，小組成員會自動邀請該小組或管道中的參與者。
+- 需要即時會議嗎？ 如果您正在使用一對一聊天，請選擇 [**立即開會**]，以與您聊天的人員開始影片或音訊通話。 
 
 
 ## <a name="schedule-a-meeting"></a>排程會議
@@ -54,6 +55,6 @@ Microsoft Teams 中的會議包含音訊、 視訊和共用。 因為它們是�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYWn]
 
-深入了解 Microsoft Teams 中的會議：
+深入瞭解 Microsoft 小組中的會議：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeokQ]
