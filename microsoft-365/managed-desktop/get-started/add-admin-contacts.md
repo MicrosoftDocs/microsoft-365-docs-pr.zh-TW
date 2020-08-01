@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5a980c1e15a6cbc098647139caf48f813b36b040
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085888"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529800"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在系統管理入口網站中新增和驗證系統管理連絡人
 

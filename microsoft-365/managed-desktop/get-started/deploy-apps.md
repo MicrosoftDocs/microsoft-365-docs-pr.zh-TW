@@ -6,12 +6,15 @@ ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9fd6efc56441cfbe8a05404319246c5e0bbe10ab
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 6d35ee7a4a7755a043136f33600abad424956032
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44046325"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529394"
 ---
 # <a name="deploy-apps-to-devices"></a>將應用程式部署至裝置
 上架至 Microsoft Managed Desktop 的一部分包括新增及部署使用者裝置的應用程式。 使用 Microsoft 受管理的桌面入口網站後，您可以新增及部署應用程式。 
@@ -85,7 +88,7 @@ ms.locfileid: "44046325"
 必要 |  App 已安裝在所選群組中的裝置上。 | MMD –*應用程式名稱*–必要
 Uninstall |  已從選取群組中的裝置卸載應用程式。 | MMD –*應用程式名稱*–卸載
 
-將您的使用者新增至這些群組，讓應用程式 availabe、安裝應用程式，或從 Microsoft 受管理的桌面裝置移除應用程式。 
+將您的使用者新增至這些群組，讓應用程式可供使用、安裝應用程式，或從 Microsoft 受管理的桌面裝置移除應用程式。 
 
 <span id="3" />
 

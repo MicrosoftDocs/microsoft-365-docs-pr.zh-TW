@@ -1,20 +1,22 @@
 ---
-title: 準備列印 Microsoft 受管理桌面的資源
+title: 為 Microsoft 受管理的電腦準備列印資源
 description: 確保列印順利運作的重要步驟
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a90d104915ecdd31d9ac35a6393fba74a3816ea8
-ms.sourcegitcommit: 2859c82b30ae9cbd3a3e4bcdebd65f18444f1a9e
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1588a2c91bcbe0bd381acb6be4f9bd5562810860
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42826428"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530244"
 ---
-# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>準備列印 Microsoft 受管理桌面的資源
+# <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>為 Microsoft 受管理的電腦準備列印資源
 
 當您準備好在 Microsoft 受管理的電腦上註冊時，您應該評估列印需求，並決定適合您環境的方式。 您有三個選項：
  

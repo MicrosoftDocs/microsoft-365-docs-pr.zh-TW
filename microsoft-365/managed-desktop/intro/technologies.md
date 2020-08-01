@@ -1,19 +1,22 @@
 ---
-title: Microsoft 受管理的桌面技術
+title: Microsoft 受管理的電腦技術
 description: 本主題列出 Microsoft 受管理的桌面中所用的技術和應用程式。
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 8a86220e7fcfe4c2e788b28842c77d238d98fda4
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 1f82c339e8cbe4426c87eae045107d26201b0025
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636193"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530016"
 ---
-# <a name="microsoft-managed-desktop-technologies"></a>Microsoft 受管理的桌面技術
+# <a name="microsoft-managed-desktop-technologies"></a>Microsoft 受管理的電腦技術
 
 本主題列出 Microsoft 受管理的桌面中所用的技術和應用程式。
 

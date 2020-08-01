@@ -1,16 +1,19 @@
 ---
 title: Microsoft 受管理的桌面產品生命週期
 description: 本主題列出 Microsoft Managed Desktop 中使用的裝置規格。
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: b65724a1eee35149d473fb69ff646b5ef5751b2c
-ms.sourcegitcommit: 1883a103449d7b03d482228bd9ef39a7caf306cf
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 0dee95743e0a504330ebbcc69749e41cdc96da39
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583170"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529944"
 ---
 # <a name="microsoft-managed-desktop-product-lifecycle"></a>Microsoft 受管理的桌面產品生命週期
 

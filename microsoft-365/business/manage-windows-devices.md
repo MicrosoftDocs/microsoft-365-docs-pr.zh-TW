@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何啟用 Microsoft 365，以在幾個步驟中保護本機作用中已加入目錄的 Windows 10 裝置。
-ms.openlocfilehash: 857651081fb10856d28dd419333ebef655388407
-ms.sourcegitcommit: e6e704cbd9a50fc7db1e6a0cf5d3f8c6cbb94363
+ms.openlocfilehash: 2eaf5aa76cae1680b93af008af615ae872e4fb20
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44564924"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533778"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>啟用已加入網域的 Windows 10 裝置以由 Microsoft 365 商務版 Premium 管理
 
@@ -77,44 +77,32 @@ ms.locfileid: "44564924"
         -  將 Azure AD 中已同步處理的所需網域使用者新增至[安全性群組](../admin/create-groups/create-groups.md)。
         -  選擇 [**選取群組**]，以啟用該安全性群組的 MDM 使用者範圍。
 
-## <a name="4-set-up-service-connection-point-scp"></a>4. 設定服務連線點（SCP）
+## <a name="4-create-the-required-resources"></a>4. 建立必要的資源 
 
-您可以從[設定混合式 AZURE AD 聯結](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)簡化這些步驟。 若要完成使用 Azure AD Connect 和您的 Microsoft 365 商務版全域管理員和 Active Directory 系統管理員密碼所需的步驟。
+使用[SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell 模組中的[Initialize-SecMgmtHybirdDeviceEnrollment 指令程式](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md)，執行[設定混合式 Azure AD 聯結](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join)所需的工作已得到簡化。 當您呼叫此 Cmdlet 時，它會建立並設定所需的服務連線點和群組原則。
 
-1.  啟動 Azure AD Connect，然後選取 [**設定**]。
-2.  在 [**其他**工作] 頁面上，選取 [**設定裝置選項**]，然後選取 **[下一步]**。
-3.  在 [**概覽**] 頁面上，選取 **[下一步]**。
-4.  在 [連線**到 AZURE AD]** 頁面上，輸入 Microsoft 365 商務版 Premium 全域管理員的認證。
-5.  在 [**裝置選項**] 頁面上，選取 [**設定混合式 Azure AD 聯結**]，然後選取 **[下一步]**。
-6.  在 [ **SCP** ] 頁面上，針對您要 Azure AD Connect 以設定 SCP 的每個樹系，完成下列步驟，然後選取 **[下一步]**：
-    - 選取樹系名稱旁邊的方塊。 樹系應該是您的 AD 功能變數名稱。
-    - 在 [**驗證服務**] 欄下，開啟下拉式清單，然後選取 [相符的功能變數名稱] （應該只有一個選項）。
-    - 選取 [**新增**]，輸入網域管理員認證。  
-7.  在 [**裝置作業系統**] 頁面上，只選取 [Windows 10 或更新版本的加入網域的裝置]。
-8.  在 [**準備設定**] 頁面上，選取 [**設定**]。
-9.  在 [設定完成] 頁面上 **，選取 [****結束**]。
+您可以從 PowerShell: 實例中喚醒呼叫下列各項，以安裝此模組。
 
-
-## <a name="5-create-a-gpo-for-intune-enrollment--admx-method"></a>5. 建立 GPO 以供 Intune 登記– ADMX 方法
-
-使用。ADMX 範本檔案。
-
-1.  登入 AD server、搜尋及開啟**伺服器管理員**  >  **工具**  >  **群組原則管理**。
-2.  選取 [**網域**] 底下的功能變數名稱，然後在 [**群組原則物件**] 上按一下滑鼠右鍵，選取 [**新增**]。
-3.  提供新的 GPO 名稱，例如 "*Cloud_Enrollment*"，然後選取 **[確定]**。
-4.  在 [**群組原則物件**] 底下的新 GPO 上按一下滑鼠右鍵，然後選取 [**編輯**]。
-5.  在 [**群組原則管理編輯器**] 中，移至 [電腦設定原則] [**系統**  >  **Policies**  >  **管理範本] 「管理範本**」  >  **Windows 元件**  >  **MDM**
-6. 以滑鼠右鍵按一下 [**啟用預設 Azure AD 認證的自動 MDM 註冊**]，然後選取 [**啟用**  >  **確定]**。 關閉 [編輯器] 視窗。
+```powershell
+Install-Module SecMgmt
+```
 
 > [!IMPORTANT]
-> 如果您未看到原則**使用預設 AZURE AD 認證啟用自動 MDM 註冊**，請參閱[取得最新的系統管理範本](#get-the-latest-administrative-templates)。
+> 建議您在執行 Azure AD Connect 的 Windows Server 上安裝此模組。
 
-## <a name="6-deploy-the-group-policy"></a>6. 部署群組原則
+若要建立所需的服務連線點和群組原則，您將會呼叫[SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) Cmdlet。 當您執行此工作時，您將需要 Microsoft 365 商務版通用的系統管理員認證。 當您準備好建立資源時，請呼叫下列專案：
 
-1.  在 [伺服器管理員] 的 [**網域**> 群組原則物件] 底下，選取上述步驟3中的 GPO，例如 "Cloud_Enrollment"。
-2.  為您的 GPO 選取 [**範圍**] 索引標籤。
-3.  在 GPO 的 [範圍] 索引標籤中，以滑鼠右鍵按一下 [**連結**] 底下的 [網域] 連結。
-4.  選取 [**強制**]，以部署 GPO，然後在確認畫面中按一下 **[確定]** 。
+```powershell
+PS C:\> Connect-SecMgmtAccount
+PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device Management'
+```
+
+第一個命令會建立與 Microsoft 雲端的連線，當系統提示時，請指定您的 Microsoft 365 商務版通用系統管理員認證。
+
+## <a name="5-link-the-group-policy"></a>5. 連結群組原則
+
+1. 在 [群組原則管理主控台（GPMC）] 中，以滑鼠右鍵按一下您要連結原則的位置，然後從快顯功能表中選取 [*連結現有的 GPO ...* ]。
+2. 選取上一個步驟中建立的原則，然後按一下 **[確定]**。
 
 ## <a name="get-the-latest-administrative-templates"></a>取得最新的系統管理範本
 
@@ -129,4 +117,3 @@ ms.locfileid: "44564924"
 6.  重新開機網域主控站以供原則使用。 此程式也適用于未來的任何版本。
 
 此時，您應該可以查看原則**使用預設 AZURE AD 認證啟用自動 MDM 註冊**。
-

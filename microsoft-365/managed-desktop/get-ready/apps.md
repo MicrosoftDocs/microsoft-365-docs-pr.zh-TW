@@ -1,17 +1,20 @@
 ---
 title: Microsoft 受管理電腦中的應用程式
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: a24212cf69df50d00a32f17e8daf1939657dd602
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: bc7192cf82c825a13780567663695d96a760b3ef
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632848"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530100"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的應用程式
 

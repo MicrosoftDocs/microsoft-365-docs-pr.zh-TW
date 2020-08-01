@@ -16,12 +16,13 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 4ffc6a8771a93e0aea4583dce092109afe57175d
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+- m365solution-identitydevice
+ms.openlocfilehash: 1a16fa9a26ab20065d213857614b06fdde6c0af1
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222324"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530268"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -33,7 +34,7 @@ Microsoft 知道某些組織有獨特的環境需求或複雜性。 如果您是
 
 ## <a name="intended-audience"></a>目標物件
 
-這些建議適用于企業架構師及 IT 專業人員，熟悉[Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx)和[Microsoft 企業行動性 + 安全性](https://microsoft.com/ems)，包括其他、azure Active Directory （身分識別）、Microsoft Intune （裝置管理）和 azure 資訊保護（資料保護）。
+這些建議適用于企業架構師及 IT 專業人員，熟悉[Office 365](https://docs.microsoft.com/microsoft-365/admin)和[Microsoft 企業行動性 + 安全性](https://microsoft.com/ems)，包括其他、azure Active Directory （身分識別）、Microsoft Intune （裝置管理）和 azure 資訊保護（資料保護）。
 
 ### <a name="customer-environment"></a>客戶環境
 
@@ -45,7 +46,7 @@ Microsoft 知道某些組織有獨特的環境需求或複雜性。 如果您是
 
 ### <a name="caveats"></a>警告
 
-您的組織可能會受限於法規或其他法規遵從性需求，包括可能要求您套用與這些建議設定分開之原則的特定建議。 這些設定會建議過去未提供的使用情形控制項。 建議使用這些控制項，因為我們相信它們代表安全性與生產力之間的平衡。  
+您的組織可能會受限於法規或其他法規遵從性需求，包括可能要求您套用與這些建議設定分開之原則的特定建議。 這些設定會建議過去未提供的使用情形控制項。 我們建議使用這些控制措施，因為我們相信它們代表安全性和生產力之間的平衡。  
 
 我們已盡力考慮各種組織保護需求，但我們不能考慮所有可能的需求，或組織的所有獨有方面。
 
@@ -57,7 +58,7 @@ Microsoft 知道某些組織有獨特的環境需求或複雜性。 如果您是
 
 - **基準保護**：我們建議您建立保護資料的最低標準，以及存取資料的身分識別和裝置。 您可以遵循下列基準建議，提供符合許多組織需求的強預設保護。
 - **敏感保護**：有些客戶的資料子集必須在較高的層級加以保護，否則可能需要以較高的層次保護所有的資料。 您可以將增強的保護套用至 Microsoft 365 環境中的所有或特定資料集。 建議保護以可比較的安全性層級存取敏感性資料的身分識別和裝置。  
-- **高管制**：有些組織的資料量可能非常高，consititutes 貿易機密或管制資料。 Microsoft 所提供的功能可協助組織符合這些需求，包含針對身分識別和裝置新增的保護。
+- **高度管制**：有些組織可能會具有少量的資料，以高度分類，組成交易機密或管制資料。 Microsoft 所提供的功能可協助組織符合這些需求，包含針對身分識別和裝置新增的保護。
 
 ![安全性錐-所有客戶 > 某些客戶 > 特定客戶。 特定應用程式的廣泛應用程式](../media/M365-idquality-threetiers.png)
 
@@ -94,7 +95,7 @@ Microsoft 365 企業版專為大型組織設計，並整合 Office 365 企業版
 
 Azure AD 提供完整的身分識別管理功能套件。 為了保護存取，我們建議使用下列功能：
 
-- **[自助密碼重設（SSPR）](/azure/active-directory/authentication/concept-sspr-howitworks)**：可讓您的使用者安全地重設其密碼，而不需要技術支援人員介入，只要提供系統管理員可控制的多個驗證方法，即可加以驗證。
+- **[自助密碼重設（SSPR）](/azure/active-directory/authentication/concept-sspr-howitworks)**：可讓您的使用者安全地重設其密碼，而不需要協助人員介入，只要提供系統管理員所能控制的多個驗證方法，即可加以驗證。
 
 - **[多重要素驗證（MFA）](/azure/active-directory/authentication/concept-mfa-howitworks)**： MFA 要求使用者提供兩種形式的驗證，例如使用者密碼加上 Microsoft 驗證應用程式或電話的通知。 MFA 大幅降低可用於存取您環境的盜竊身分識別的風險。
 

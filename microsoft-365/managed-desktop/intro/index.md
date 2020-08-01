@@ -5,12 +5,16 @@ keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 0df3f6d2636a277bdca12e7d76279c4c58c9f1d4
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 80d6066872f02c673a48964c7c1bd69b16cec932
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44011908"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46530004"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
@@ -80,7 +84,7 @@ Microsoft 受管理的電腦承擔了管理註冊裝置及其使用的 Microsoft
 **準備好註冊** 這些主題描述了在組織中為註冊做準備所必須採取的步驟，包含確定您的環境是否滿足關鍵的必備條件，設定網路，設定證書，以及應用程式準備。
 
 - [Microsoft 受管理電腦的先決條件](../get-ready/prerequisites.md)
-- [Microsoft 受管理的電腦的網路設定](../get-ready/network.md)
+- [Microsoft 受管理電腦的網路設定](../get-ready/network.md)
 - [為 Microsoft 受管理的電腦準備備內部部署資源存取權](../get-ready/authentication.md)
 - [為 Microsoft 受管理的電腦準備對應磁碟機](../get-ready/mapped-drives.md)
 - [為 Microsoft 受管理的電腦準備認證和網路設定檔](../get-ready/certs-wifi-lan.md)
@@ -100,7 +104,7 @@ Microsoft 受管理的電腦承擔了管理註冊裝置及其使用的 Microsoft
 **使用 Microsoft 受管理的電腦** 本節包含與服務相關的日常工作資訊，例如 IT 系統管理員如何取得支援、您的使用者如何取得支援、部署後管理應用程式，以及如何在裝置上使用可自訂的設定。
 
 - [Microsoft 受管理電腦的系統管理員支援](../working-with-managed-desktop/admin-support.md)
-- [為終端使用者取得說明](../working-with-managed-desktop/end-user-support.md)
+- [為使用者獲得協助](../working-with-managed-desktop/end-user-support.md)
 - [可組態的設定 - Microsoft 受管理的電腦](../working-with-managed-desktop/config-setting-overview.md)
 
 

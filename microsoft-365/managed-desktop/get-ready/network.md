@@ -9,12 +9,14 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 61ee024cc483f9be172063a256cedd3827d6807a
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: fb5a73782650cee36ffdfb95a9bf6efd9464435f
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430492"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529478"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路設定
 
@@ -25,7 +27,7 @@ ms.locfileid: "45430492"
 
 Microsoft 受管理的桌面為雲端管理的服務。 Microsoft 受管理的桌面服務必須能夠達到一組端點。 本節列出 Microsoft 受管理桌面服務各部分必須允許的端點。 
 
-客戶可以透過防火牆或 proxy 直接傳送所有受信任的 Microsoft 365 網路要求，以優化其網路，略過驗證及所有其他的封包層級檢查或處理。 這可減少延遲和周邊容量需求。 
+客戶可以透過防火牆或 proxy 直接傳送所有受信任的 Microsoft 365 網路要求，以優化其網路，略過驗證及所有其他的封包層級檢查或處理。 這會降低延遲和您的周邊容量需求。 
 
 此外，為了優化 Microsoft 受管理的桌面雲端服務的效能，這些端點需要用戶端瀏覽器和其 edge 網路中的裝置進行特殊處理。 這些裝置包括防火牆、SSL 中斷及檢查、資料包檢查裝置和資料遺失防護系統。
 

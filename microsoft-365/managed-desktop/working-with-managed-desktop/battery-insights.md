@@ -1,59 +1,62 @@
 ---
 title: 電池深入解析
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 434f62d5ddfc8bc75c54de422aafc8c6325c4086
-ms.sourcegitcommit: 1c445d68e54ca4249024ca4bb72460dd6fac0a2d
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: f339fc98ea94c291c533045e9906f626f4b74e2a
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170593"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529836"
 ---
 # <a name="battery-insights"></a>電池深入解析
-此檢視提供您的 Microsoft 受管理的電腦裝置電源、 電和應用程式使用狀況計量。 進行這些工作，應用程式被視為 「 使用 」 中，如果它正在執行，並在焦點。
+此視圖會為 Microsoft 受管理的桌面裝置提供電源、電池和應用程式使用方式度量。 在這些情況下，如果應用程式正在執行中且處於焦點，便會被視為「使用中」。
 
-若要檢視流量資料，請選取 [**電池**] 索引標籤。
+若要查看使用狀況資料，請選取 [**電池**] 索引標籤。
 
-![電池窗格： 跨底部預測電池壽命，每個裝置模型在左上方] （依應用程式） 的上方能源消費者，在右上] 觀點資料表。 在右上方的文件連結。](../../media/insights_battery.png)
+![電池窗格：左上方的每台裝置型號（依應用程式）在左上方，透過右下方的 insights 表格。 右上方的檔連結。](../../media/insights_battery.png)
 
-## <a name="predicted-battery-life"></a>預測的電池壽命
+## <a name="predicted-battery-life"></a>預測電池壽命
 
-在**Predicted 電池壽命**] 區域中，我們會提供您的裝置，依裝置型號的預期的電池壽命預測。
+在 [**預計電池壽命**] 區域中，我們會針對您的裝置，依裝置模型所組織，提供預期電池壽命的預測。
 
 > [!NOTE]
-> 此資料被衍生自取樣能源使用量、 使用量的時間及從隨機<em>選取範圍</em>內的裝置 Microsoft 受管理電腦部署也會報告資料的電池容量。
+> 這項資料衍生自您從 Microsoft 管理的桌面部署（也是報告資料）的隨機<em>選擇</em>裝置中的能源使用量、使用時間和電池容量。
 
-表提供預測的電池壽命 （以小時為單位），平均電池壽命的相同模型其他 Microsoft 受管理電腦的部署，並報告您環境中的此資料的裝置數目。 藉由選取欄標題來排序資料。
+此表格提供了預測電池壽命（以小時為單位）、其他 Microsoft 受管理桌面部署中相同型號的平均電池壽命，以及在您的環境中報告此資料的裝置數量。 選取欄標題以排序資料。
 
 
 
-## <a name="top-energy-consumers"></a>上方能源消費者
+## <a name="top-energy-consumers"></a>主要能源消費者
 
-在**上方能源消費者**] 區域中，您會發現應用程式耗用 milliWatt 小時 (mWh) 中的大部分能源您環境中。 顯示應用程式是每個特定裝置，向左**Predicted 電池壽命**區段中選取。 例如，若要查看您的 Microsoft Surface Book 2 裝置的每個應用程式使用率，請電池壽命區域中選取該資料列。 如果您未選取任何模型，所顯示的應用程式耗用資料是我們統稱有資料的所有應用程式。
+在 [**最熱門的能源消費者**] 區域中，您會發現環境中的應用程式，在 milliWatt 時（mWh）消耗最高的能量。 顯示的應用程式為每個特定裝置，您可以在左側的**預測電池壽命**區段中選取。 例如，若要查看 Microsoft Surface Book 2 裝置的每個應用程式消耗量，請選取 [電池壽命] 區域中的那一列。 如果您未選取任何模型，則所顯示的應用程式消耗資料是針對我們所有具有共同資料的應用程式。
 
- 每個應用程式，彩色的區段顯示您的應用程式的能源使用這些類別之間通訊：
+ 在每個應用程式中，彩色區段會顯示應用程式在下列類別中所使用的能源使用方式：
 
 - CPU
-- 顯示
+- 顯示器
 - 網路
 - 其他
 
-「 其他 」 可能包含能源所消耗的各種來源，例如磁碟活動、 行動寬頻使用量和能源至內部的抗拒遺失。 
+"Other" 可以包含各種來源的能量消耗，例如磁片活動、行動寬頻使用量和對內部阻力的能量遺失。 
 
-您可以篩選此檢視，以顯示只有前景應用程式、 背景應用程式]，或兩者皆使用功能表右上角。 前景應用程式 」 是指有鎖 28 天內，例如選取某個項目與滑鼠與使用者互動。
+您可以使用右上角的功能表篩選此視圖，只顯示前景應用程式、背景應用程式或兩者。 前臺應用程式是指在過去28天內，已有使用者互動的應用程式，例如使用滑鼠選取某些專案。
 
 ## <a name="insights"></a>深入資訊
 
-**深入了解**區域顯示上方的三個能源消費者 CPU 及網路類別。 這些項目會耗用高於平均能源相較於所有 Microsoft 受管理電腦部署。 我們不顯示顯示資源，因為它，取決於裝置使用量的時間和螢幕亮度設定。 
+**Insights**區域會顯示 CPU 和網路類別中的前三個能源消費者。 與所有 Microsoft 受管理的桌面部署相比，這些專案消耗的能耗高於平均能耗。 由於大量取決於裝置使用時間和螢幕亮度設定，因此不會顯示顯示資源。 
 
-如需詳細資訊的**詳細資料**] 欄中，請選取 [清單]。
+選取 [**詳細資料**] 欄中的清單以取得詳細資訊。
 
-## <a name="battery-optimization"></a>電池最佳化
+## <a name="battery-optimization"></a>電池優化
 
-Windows 10 可提供許多[裝置設定](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips)] 若要改善 power 使用量增加您的 Microsoft 受管理的電腦裝置的電池壽命。 其中一些設定可以降低其他 Windows 功能，所以您也必須考慮其他因素影響，例如您組織中裝置的角色。 Windows 支援維護[電池省電祕](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips)這些的清單。
+Windows 10 提供許多[裝置設定](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips)，以改善電源使用狀況，並增加 Microsoft 受管理桌面裝置的電池壽命。 其中的部分設定可能會減少其他 Windows 功能，因此您也必須考慮其他因素，例如組織中裝置的角色。 Windows 支援會維護這些[電池儲存提示](https://support.microsoft.com/help/20443/windows-10-battery-saving-tips)的清單。
 
-使用者可以調整自己而不需要系統管理員權限提高或支援某些設定。 其他設定需要支援您的組織從 IT 系統管理員。
+使用者可以自行調整某些設定，而不需要系統管理員提升或支援。 其他設定需要您組織的 IT 管理員提供支援。

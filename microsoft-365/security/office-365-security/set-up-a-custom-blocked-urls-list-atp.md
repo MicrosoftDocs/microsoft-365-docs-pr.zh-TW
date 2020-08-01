@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 Office 365 進階威脅防護為貴組織設定封鎖的 URL 清單。
-ms.openlocfilehash: 5c5253aabf5d5235e31f24624fd9e1b3f4adb184
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+ms.openlocfilehash: 288aea848836a56108872c0e4d36d01f4d59ec42
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617261"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533808"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>使用 ATP 安全連結設定已封鎖的自訂 URLs 清單
 
@@ -84,6 +84,10 @@ ms.locfileid: "44617261"
 |`https://contoso.com/a`|會封鎖網站 `https://contoso.com/a`，但不會封鎖其他子路徑，像是 `https://contoso.com/a/b`|
 |`https://contoso.com/a*`|會封鎖網站 `https://contoso.com/a`和其他子路徑，像是 `https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|封鎖子網域 (在這個例子中為「玩具」)，但允許按一下其他網域 URL (像是 `https://contoso.com` 或 `https://home.contoso.com`)。|
+
+
+> [!NOTE]
+> 根據預設，您只能將 500 URLs 新增至 [Office 365 ATP 安全連結] 預設原則中的 [封鎖的 URL] 清單。
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>如何定義組織中特定使用者的例外情況
 

@@ -19,19 +19,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
-description: 深入瞭解設定 Microsoft 365 for business 所需的功能。
-ms.openlocfilehash: 7509e2c4801adbca492e5f5446c5b97eae31dccf
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: 深入瞭解移至 Microsoft 365 for business 的需求和考慮。
+ms.openlocfilehash: b7d815da012e1c104561d5fccfb9e1704ac5c447
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778946"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529657"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>規劃 Microsoft 365 for business 的設定
 
 本文適用于已訂閱 Microsoft 365 for business plan 的人員。
   
-將組織移至 Microsoft 365 之前，您需要判斷一些事項，以及您需要的資訊。
+將組織移至 Microsoft 365 之前，您需要符合需求，必須符合您的需求，以及您必須進行的決策。
+
+
   
 ## <a name="info-to-have-on-hand-before-you-run-the-setup-wizard"></a>在您執行安裝精靈之前必須準備好的資訊
 

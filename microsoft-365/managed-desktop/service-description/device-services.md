@@ -1,18 +1,20 @@
 ---
 title: Microsoft 受管理的桌面裝置服務
 description: 本主題列出 Microsoft 受管理桌面的裝置服務和限制。
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 02/06/2019
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 99ae4fda67de060a5c4dd7c9cd0550f751706e86
-ms.sourcegitcommit: 98782ee4497d72232462c51a3071fae313282980
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 8048a26fd24697f9df77ff439e6bd3883f34f5aa
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44222392"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529454"
 ---
 # <a name="microsoft-managed-desktop-device-services"></a>Microsoft 受管理的桌面裝置服務
 

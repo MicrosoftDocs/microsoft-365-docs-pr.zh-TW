@@ -1,17 +1,20 @@
 ---
 title: 服務方案的例外狀況
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 9dca53ac9e99fd9bc68ee42f78de6a2bc009e42c
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: 826710bf59acd88494adf1f154e5657d1e039af7
+ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636181"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46529932"
 ---
 # <a name="exceptions-to-the-service-plan"></a>服務方案的例外狀況
 
@@ -21,7 +24,7 @@ Microsoft 受管理的桌面提供策劃裝置清單、[標準裝置設定](devi
 
 例外情況是任何新增或變更 Microsoft 受管理的桌面基本設定;範例範圍從 USB 埠設定到部署新的裝置驅動程式。 我們會將各種例外狀況分組，如下所示：
 
-|類型	  |描述  |
+|類型  |描述  |
 |---------|---------|
 |生產力軟體     |  使用者需要的前臺軟體，受限於[應用程式需求](mmd-app-requirements.md)       |
 |& Vpn 的安全性代理程式     |  用來保護、監視或變更裝置或網路行為的軟體       |
