@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,69 +26,57 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
-ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: 在 Microsoft 365 系統管理中心尋找您的發票或帳單。 您也可以儲存及列印帳單複本。
-ms.openlocfilehash: 7360f2bb73f78450143d5f1428ae90aa5bc0e0a1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 81c3a03207fd8f35c975026ebd2a9a0334fc9407
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44816994"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533610"
 ---
-# <a name="view-your-bill-or-invoice"></a>檢視帳單
+# <a name="view-your-bill-or-invoice"></a>檢視帳單或發票
 
-本文適用於擁有商務用 Microsoft 365 訂閱的使用者。您必須是全域系統管理員或計費系統管理員，才能執行本文所述的步驟。
+本文適用於擁有商務用 Microsoft 365 訂閱的使用者。
   
 如果您需要協助來解讀帳單上顯示的費用，請參閱[了解帳單或發票](understand-your-invoice2.md) (部分機器翻譯) 以取得詳細的逐步解說。
   
- **不是系統管理員？** 請連絡您的 IT 系統管理員以取得協助。 
-  
- **您的帳單有問題嗎？** [連絡商務用產品的客戶支援](../../admin/contact-support-for-business-products.md)。
+**您的帳單有問題嗎？** [連絡商務用產品的客戶支援](../../admin/contact-support-for-business-products.md)。
 
- 請觀看有關如何檢視帳單或發票的短片 (請注意，您的發票可能會與影片中的發票不同)。 <br><br>
+## <a name="before-you-begin"></a>開始之前
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo] 
-
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
+您必須是全域或計費系統管理員，才能執行本文所述的步驟。
   
 ## <a name="view-a-bill-or-invoice"></a>檢視帳單或發票
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[帳單與付款]</a> 頁面。
+    - 如果您使用的是 Office 365 Germany，請移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">[帳單與付款]</a> 頁面。
+    - 如果您使用的是由 21Vianet 運作的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">帳單與付款</a>頁面。
+2. 在**發票**索引標籤上，從下拉式清單中選取日期範圍，然後選擇您想要檢視的順序。
+3. 您可以在摘要頁面上查看發票中所有項目的數量、價格、折扣和總計。
+4. 若要列印或儲存發票的 PDF 複本，請選取**下載 PDF**。
 
-::: moniker-end
+## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>透過電子郵件接收對帳單的複本
 
-::: moniker range="o365-germany"
+您可以選擇透過電子郵件附件形式接收帳單明細的複本。如果您這麼做，請注意以下事項：
 
-1. 在系統管理中心中，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">[帳單與付款]</a> 頁面。
+- 系統會傳送電子郵件給所有列為通知收件者的主要和備用電子郵件。
+- 您會收到兩封不同的電子郵件：一封會通知您帳單已準備就緒，並提供登入系統管理中心入口網站以檢視帳單的指示；另一封會以附件形式包含對帳單。
 
-::: moniker-end
+### <a name="to-receive-your-billing-statement-in-email"></a>透過電子郵件接收對帳單
 
-::: moniker range="o365-21vianet"
+1. 在系統管理中心中，移至**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">帳單通知</a>頁面。
+    - 如果您使用的是 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">帳單通知</a>頁面。
+    - 如果您使用的是由 21Vianet 運作的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">帳單通知</a>頁面。
+1. 在**是否要以電子郵件附件形式接收對帳單?** 底下，將開關切換為**開啟**。
 
-1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">[帳單與付款]</a> 頁面。
+    您可以隨時停止接收對帳單電子郵件，只要將開關切換為**關閉**即可。
 
-::: moniker-end
+## <a name="next-steps"></a>後續步驟
 
-2. 在 **[發票]** 索引標籤上，從下拉式清單中選取日期範圍，然後選擇您想要查看的順序。
+如果您有餘額，且想要支付，您可以在線上支付。 若要了解如何進行，請參閱[支付訂閱費用](pay-for-your-subscription.md)。
 
-3. 在 [摘要] 頁面上，您可以看到下列資訊︰
+## <a name="related-content"></a>相關內容
 
-    - 總餘額、目前應付金額、付款到期日、上次付款金額及收到的日期。
-
-    - 付款指示。
-
-    - 過去付款日期記錄和已支付的金額。
-
-    - 訂單建立日期及訂單號碼。
-
-4. 若要列印或儲存發票的 PDF 複本，請選取 **[下載 PDF]**。
-
-## <a name="related-articles"></a>相關文章
-
-[使用發票、信用卡或銀行帳戶支付費用](pay-for-your-subscription.md)
-  
-[管理付款方式](manage-payment-methods.md)
-
-[Minecraft: Education Edition 付款選項](https://go.microsoft.com/fwlink/p/?linkid=838761)
+[使用發票、信用卡或銀行帳戶支付費用](pay-for-your-subscription.md) (文章)
+[管理付款方式](manage-payment-methods.md) (文章)
+[Minecraft: Education Edition 付款選項](https://go.microsoft.com/fwlink/p/?linkid=838761) (文章)

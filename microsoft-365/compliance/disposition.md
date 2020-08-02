@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監視和管理內容處置，不論您使用的是處置檢查，還是會根據您設定的設定自動刪除內容。
-ms.openlocfilehash: 938d530447d1a798e5a2d6d4c2f622a04827bf1c
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 55b57891732f50eba09425fce4d2be34c94740f3
+ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529598"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533820"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -124,9 +124,9 @@ ms.locfileid: "46529598"
 ## <a name="disposition-of-records"></a>記錄處置
 
 > [!NOTE]
->用於 SharePoint 和 OneDrive 中的記錄的處理證明已完成的展示。 您會在 Microsoft 365 規範中心的 [記錄管理] 頁面上，看到 [已標記內容] 做為 SharePoint 和 OneDrive 的保留標籤清單。 在 [這些標籤] 底下，您可以在 SharePoint 和 OneDrive 中看到專案的清單，該專案會自動處置或在進行處置檢查之後。
-
-Exchange 中的記錄處置憑證尚未使用中。 當此首展開始和完成時，我們將會更新此附注。
+> 用於 SharePoint 和 OneDrive 中的記錄的處理證明已完成的展示。 您會在 Microsoft 365 規範中心的 [記錄管理] 頁面上，看到 [已標記內容] 做為 SharePoint 和 OneDrive 的保留標籤清單。 在 [這些標籤] 底下，您可以在 SharePoint 和 OneDrive 中看到專案的清單，該專案會自動處置或在進行處置檢查之後。
+>
+> Exchange 中的記錄處置憑證尚未使用中。 當此首展開始和完成時，我們將會更新此附注。
 
 使用 [**記錄管理**] 頁面中的 [**部署**] 索引標籤來識別自動刪除的記錄。 這些專案會在 [**類型**] 欄中顯示已**處置的記錄**。 例如：
 

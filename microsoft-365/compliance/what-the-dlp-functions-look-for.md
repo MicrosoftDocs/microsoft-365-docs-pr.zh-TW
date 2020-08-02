@@ -1,5 +1,5 @@
 ---
-title: DLP 功能所尋找的項目
+title: 資料遺失防護（DLP）功能的尋找目標
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: 瞭解資料遺失防護（DLP）功能的尋找方式，以協助您瞭解預先定義的機密資訊類型的運作方式。
-ms.openlocfilehash: 838277b2e30696cd00cfc30df49c1d5a29149d92
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 瞭解資料遺失防護（DLP）功能的尋找目標。
+ms.openlocfilehash: ef87be7dde83b1e5ba12456e7801e0554bceb6ea
+ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819273"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46536308"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>DLP 功能所尋找的項目
 
 資料遺失防護（DLP）包含機密資訊類型，例如信用卡號碼和歐盟卡號，可供您在 DLP 原則中使用。 這些敏感資訊類型會尋找特定的模式，並加以 corroborate，方法是確認正確的格式設定、強制執行校驗和尋找相關的關鍵字或其他資訊。 此功能的部分功能是由內建函式執行。 例如，「信用卡號碼敏感資訊類型」會使用函數來尋找類似到期日的日期，以協助 corroborate 號碼是信用卡號碼。
   
-本主題說明這些功能的含義，以協助您瞭解預先定義的機密資訊類型的運作方式。 如需詳細資訊，請參閱[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+本文說明這些功能的含義，以協助您瞭解預先定義的機密資訊類型的運作方式。 如需詳細資訊，請參閱[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
   
 ## <a name="func_us_date"></a>Func_us_date
 
@@ -61,7 +61,7 @@ ms.locfileid: "44819273"
     
 ## <a name="func_eu_date"></a>Func_eu_date
 
-此函數會以歐盟常用的格式來尋找日期 （和美國以外的大部分地點）。 這包括格式「日/月/年」、「日-月-年」和「日月年」。 月份的名稱或縮寫不區分大小寫。
+此函數會以歐盟常用的格式來尋找日期 （和美國以外的大多數位置），例如「天/月/年」、「日-月-年」和「日月」。 月份的名稱或縮寫不區分大小寫。
   
 範例：
   
@@ -183,7 +183,7 @@ ms.locfileid: "44819273"
     
   - januari，februari，maart，四月，mei，juni，juli，augustus，九月份，ocktober，十月，11月，十二月
     
-  - jan jan maart apr mei 年9月8日9月 okt 年11月
+  - jan jan maart apr mei 年6月8日9月9日在十二月進行 okt
     
 ## <a name="func_expiration_date"></a>Func_expiration_date
 
@@ -201,7 +201,7 @@ ms.locfileid: "44819273"
     
 下列格式支援 YY 或 YYYY：
   
-- 例如，Month-YYYY--。Jan-2010 或一月-2010 或 Jan-10 或年1月
+- Month-YYYY--2010 年1月1日或一月-2010 或 Jan-10 或年1月1日
     
 - Month YYYY--例如，"一月 2010" 或 "Jan 2010" 或 "Jan 10" 或 "Jan 10"
     

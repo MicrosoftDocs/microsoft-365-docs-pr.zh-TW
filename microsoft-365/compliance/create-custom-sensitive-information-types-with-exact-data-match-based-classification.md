@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7eb19698cc3dd2d56e05dfbca8759de178f3fc2a
-ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
+ms.openlocfilehash: 957bde2112d5a0cf0c20bb28a8341b6f04118fc8
+ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229413"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46536318"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
-[自訂敏感性資訊類型](custom-sensitive-info-types.md) 用來協助防止意外或不當地共用敏感性資訊。 身為系統管理員，您可以使用 [安全性與合規性中心](create-a-custom-sensitive-information-type.md) 或 [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) 來根據模式、辨識項 (關鍵字如 *員工*、 *徽章*、 *識別碼*等)、鄰近字元 (辨識項與特定模式中字元的鄰近程度)，以及信賴等級，來定義自訂敏感性資訊類型。 這類自訂敏感性資訊類型符合許多組織的業務需求。
+[自訂敏感性資訊類型](custom-sensitive-info-types.md) 用來協助防止意外或不當地共用敏感性資訊。 身為系統管理員，您可以使用安全性與合規性中心或 PowerShell 來根據模式、辨識項 (關鍵字如 *員工*、 *徽章*、 *識別碼*等)、鄰近字元 (辨識項與特定模式中字元的鄰近程度)，以及信賴等級，來定義自訂敏感性資訊類型。 這類自訂敏感性資訊類型符合許多組織的業務需求。
 
 但是，如果您想要使用確切資料值，而非僅比對泛型模式的自訂敏感性資訊類型，該怎麼做？ 使用以精確資料比對 (EDM) 為基礎的分類，您可以建立其設計目的為以下的自訂敏感性資訊類型：
 
@@ -51,6 +51,16 @@ ms.locfileid: "45229413"
 - Microsoft 365 E5
 - Microsoft 365 E5 合規性
 - Microsoft E5/A5 資訊保護和控管
+
+## <a name="portal-links-for-your-subscription"></a>訂閱的入口網站連結
+
+
+|入口網站  |全球/GCC  |GCC-High  |DOD  |
+|---------|---------|---------|---------|
+|Office SCC     |  protection.office.com       |scc.office365.us         |scc.protection.apps.mil |
+|Microsoft 365 安全性中心     |security.microsoft.com         |security.microsoft.us         |security.apps.mil|
+|Microsoft 365 合規性中心     |compliance.microsoft.com         |compliance.microsoft.us         |compliance.apps.mil|
+
 
 ## <a name="the-work-flow-at-a-glance"></a>工作流程概覽
 
@@ -82,7 +92,7 @@ ms.locfileid: "45229413"
 
       例如，下列 .xml 檔會為病患記錄資料庫定義結構描述，並將五個欄位指定為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 以及  *DOB* 
 
-      (您可以複製、修改及使用我們的範例)。
+      (您可以複製、修改及使用我們的範例。)
 
       ```xml
       <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -100,7 +110,7 @@ ms.locfileid: "45229413"
       </EdmSchema>
       ```
 
-4. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+4. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。
 
 5. 若要上傳資料庫結構描述，請執行下列 Cmdlet，一次一個：
 
@@ -133,7 +143,7 @@ ms.locfileid: "45229413"
 
 1. 編輯您的 **edm.xml** 檔案 (這是本文 [定義結構描述](#define-the-schema-for-your-database-of-sensitive-information) 一節所討論的檔案)。
 
-2. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+2. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。
 
 3. 若要更新資料庫結構描述，請執行下列 Cmdlet，一次一個：
 
@@ -162,7 +172,7 @@ ms.locfileid: "45229413"
 
 (如有需要) 如果您想要移除 EDM 型分類使用的結構描述，請遵循下列步驟：
 
-1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+1. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。
 
 2. 執行下列 PowerShell Cmdlet，將 "patientrecords" 的資料存放區名稱取代為您要移除的資料存放區名稱：
 
@@ -223,7 +233,7 @@ ms.locfileid: "45229413"
             </Pattern>
             <Pattern confidenceLevel="75">
               <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-              <Any minMatches ="3" maxMatches ="100">
+              <Any minMatches ="3" maxMatches ="6">
                 <match matches="PatientID" />
                 <match matches="MRN"/>
                 <match matches="FirstName"/>
@@ -290,7 +300,7 @@ ms.locfileid: "45229413"
 
 #### <a name="set-up-the-security-group-and-user-account"></a>設定安全性群組和使用者帳戶
 
-1. 以全域系統管理員身分，前往系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com/))，並 [建立名為  **EDM\_DataUploaders** 的安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) 。
+1. 以全域系統管理員身分，使用[適用於您訂閱的連結](#portal-links-for-your-subscription)前往系統管理中心，並 [建立名為  **EDM\_DataUploaders** 的安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) 。
 
 2. 將一或多個使用者新增至 **EDM\_DataUploaders** 安全性群組  (這些使用者將管理敏感性資訊的資料庫)。
 
@@ -301,16 +311,25 @@ ms.locfileid: "45229413"
 >[!NOTE]
 > 在開始此程序之前，請確定您是  **EDM\_DataUploaders**  安全性群組的成員，以及您電腦上的本機系統管理員。
 
-1. 下載並安裝 [EDM 上傳代理程式](https://go.microsoft.com/fwlink/?linkid=2088639)。 根據預設，安裝位置應該是  **C:\\Program Files\\Microsoft\\EdmUploadAgent**。
+#### <a name="links-to-edm-upload-agent-by-subscription-type"></a>依訂閱類型的 EDM 上傳代理程式連結
 
-      > [!TIP]
-      > 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
+- [商業 + GCC](https://go.microsoft.com/fwlink/?linkid=2088639)
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
+
+1. 下載並安裝您的訂閱的適當 [EDM 上傳代理程式](#links-to-edm-upload-agent-by-subscription-type)。 根據預設，安裝位置應該是  **C:\\Program Files\\Microsoft\\EdmUploadAgent**。
+
+> [!TIP]
+> 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
+
+> [!NOTE]
+> 您每天最多可以使用 EDMUploadAgent 將資料上傳到任何指定的資料儲存區兩次。
 
 2. 若要授權 EDM 上傳代理程式，請開啟 Windows 命令提示字元 (以系統管理員身分)，然後執行下列命令：
 
     `EdmUploadAgent.exe /Authorize`
 
-3. 使用公司或學校帳戶登入 Office 365。
+3. 使用您的公司或學校帳戶登入已新增至 EDM_DataUploaders 安全性群組的 Office 365。
 
 下一個步驟是使用 EDM 上傳代理程式來為敏感性資料編製索引，然後上傳已編製索引的資料。
 
@@ -347,6 +366,10 @@ ms.locfileid: "45229413"
 `EdmUploadAgent.exe /GetDataStore`
 
 您會看到資料存放區的清單，以及其上次更新時間。
+
+如果您想要查看上傳到特定儲存區的所有資料，請在 Windows 命令提示字元中執行下列命令：
+
+`EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
 
 針對 [重新整理您的敏感性資訊資料庫](#refreshing-your-sensitive-information-database)，繼續設定程序和排程。
 
@@ -459,7 +482,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 #### <a name="to-create-a-dlp-policy-with-edm"></a>使用 EDM 建立 DLP 原則
 
-1. 前往安全性與合規性中心 ([https://protection.office.com](https://protection.office.com/))。
+1. 使用[適用於您的訂閱的連結](#portal-links-for-your-subscription)，移至安全性與合規性中心。
 
 2. 按一下 [資料外洩防護] **** \>[原則] ****。
 
@@ -497,12 +520,9 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ## <a name="related-articles"></a>相關文章
 
-[敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
-
-[自訂敏感性資訊類型](custom-sensitive-info-types.md)
-
-[DLP 原則的概觀](data-loss-prevention-policies.md)
-
-[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-
-[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+- [自訂敏感性資訊類型](custom-sensitive-info-types.md)
+- [DLP 原則的概觀](data-loss-prevention-policies.md)
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
+- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。

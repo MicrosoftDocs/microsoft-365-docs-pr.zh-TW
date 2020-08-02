@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: 了解如何存取 Azure Active Directory，其隨附於貴組織的付費訂閱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43c9c03af74d4edc1fb6c762c9ca89594a907920
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
+ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819283"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46528149"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>使用您的免費 Azure Active Directory 訂閱
 
@@ -30,7 +30,7 @@ ms.locfileid: "44819283"
 
 ## <a name="open-a-private-browsing-session"></a>開啟私人瀏覽會話
 
-您可以使用私密瀏覽工作階段 (而非一般工作階段) 存取 Azure 入口網站 (在以下的步驟 1)，藉此避免您目前登入的認證傳送至 Azure。若要開啟私密瀏覽工作階段：
+您可以使用私密瀏覽工作階段 (而非一般工作階段) 存取 Azure 入口網站 (在以下的步驟 1)。如此可避免您目前登入的認證傳送至 Azure。若要開啟私密瀏覽工作階段：
 
 - 在 Microsoft Edge (舊版)、Internet Explorer 或 Mozilla FireFox 中，請按 `CTRL+SHIFT+P`。
 
