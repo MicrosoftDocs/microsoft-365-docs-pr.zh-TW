@@ -315,6 +315,8 @@
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: 預設安全性原則
                   href: ./office-365-security/preset-security-policies.md
+                - name: 適用於預設安全性原則的設定分析器
+                  href: ./office-365-security/configuration-analyzer-for-security-policies.md
                 - name: 反垃圾郵件訊息標頭
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: 原則和防護的組合方式

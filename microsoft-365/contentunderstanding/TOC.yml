@@ -1,0 +1,22 @@
+- name: 開始使用內容瞭解
+  items:
+    - name: 檔理解概述
+      href: document-understanding-overview.md
+    - name: 表單處理概覽
+      href: form-processing-overview.md
+    - name: 檔瞭解和表單處理模型之間的差異
+      href: difference-between-document-understanding-and-form-processing-model.md
+    - name: 建立內容中心
+      href: create-a-content-center.md
+    - name: 建立分類器
+      href: create-a-classifier.md
+    - name: 建立提取程式
+      href: create-an-extractor.md
+    - name: 套用模型
+      href: apply-a-model.md
+    - name: 建立表單處理模型
+      href: create-a-form-processing-model.md
+- name: 開始使用安裝程式
+  items:
+    - name: 設定內容瞭解
+      href: set-up-content-understanding.md
