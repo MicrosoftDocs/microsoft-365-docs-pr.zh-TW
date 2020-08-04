@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 瞭解系統管理員如何設定和使用資料連線器，將立即 Bloomberg 聊天室工具中的資料匯入並封存至 Microsoft 365。
-ms.openlocfilehash: 9be2e431241e13e59c67c33ee3c7246896e97f1e
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: dbfb0c167d57b4a541c60eda253e93328c156dfc
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936556"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552503"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>設定連接器來封存 Instant Bloomberg 資料
 
@@ -120,7 +120,7 @@ ms.locfileid: "44936556"
 5. 在 [**使用者對應**] 頁面上，啟用自動使用者對應，並視需要提供自訂使用者對應
 
    > [!NOTE]
-   > 連接器會將聊天訊息專案匯入特定使用者的信箱。 會在特定使用者的信箱中建立名為**InstantBloomberg**的新資料夾，並將這些專案匯入該資料夾。 連接器會使用*CorporateEmailAddress*屬性的值。 每個聊天訊息都包含此屬性，且該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用*CorporateEmailAddress*屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 對應檔案應該包含每個使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您啟用自動使用者對應，並提供自訂對應對應，則每個聊天室專案連接器都會先查看自訂對應檔案。 如果找不到對應至使用者 Bloomberg UUID 的有效 Microsoft 365 使用者，連接器會使用聊天室專案的*CorporateEmailAddress*屬性。 如果連接器在自訂對應檔案或聊天室專案的*CorporateEmailAddress*屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
+   > 連接器會將聊天訊息專案匯入特定使用者的信箱。 會在特定使用者的信箱中建立名為**InstantBloomberg**的新資料夾，並將這些專案匯入該資料夾。 連接器會使用*CorporateEmailAddress*屬性的值。 每個聊天訊息都包含此屬性，且該屬性會填入聊天訊息每一位參與者的電子郵件地址。 除了使用*CorporateEmailAddress*屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 對應檔案應該包含每個使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您為每個聊天室專案啟用自動使用者對應並提供自訂對應，連接器會先查看自訂對應檔案。 如果找不到對應至使用者 Bloomberg UUID 的有效 Microsoft 365 使用者，連接器會使用聊天室專案的*CorporateEmailAddress*屬性。 如果連接器在自訂對應檔案或聊天室專案的*CorporateEmailAddress*屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
 6. 按 **[下一步]**，複查您的設定，然後按一下 [**準備**] 以建立連接器。
 
