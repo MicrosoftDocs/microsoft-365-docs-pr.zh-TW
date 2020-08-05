@@ -18,25 +18,31 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 6ac6d74b027cc533f689c1d67c7fce246c73984f
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+ms.openlocfilehash: c45b7d1b01ee776e9519d67ee52d36b8f48bf0ef
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166158"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552351"
 ---
-# <a name="automated-investigation-and-response-air-capabilities-in-microsoft-threat-protection"></a>Microsoft 威脅防護中的自動化調查和回應（AIR）功能
+# <a name="automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>Microsoft 威脅防護中的自動化調查和回應功能
 
 **適用於：**
 - Microsoft 威脅防護
 
-在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 優先處理和調查警示可能會非常耗時，特別是在調查進行時新警示持續出現。 安全性作業小組可能會對必須監控和防範的龐大威脅感到不知所措。 Microsoft 威脅防護中的自動化調查和回應（AIR）功能可能會有所説明。 AIR 就像是在安全性作業中心的虛擬分析員。
+在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 優先處理和調查警示可能會非常耗時，特別是在調查進行時新警示持續出現。 安全性作業小組可能會對必須監控和防範的龐大威脅感到不知所措。 自動化調查和回應功能 (也稱為「Microsoft 威脅防護」) 中的*自動化自我修復*功能可提供協助。 
+
+觀看下列影片，瞭解自動化自我修復功能的運作方式：
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
+
+自動調查和回應就像是在您的安全性運作中心中有虛擬分析員。
 
 ## <a name="your-virtual-analyst"></a>您的虛擬分析員
 
-想像您的第 1 層 / 第 2 層安全性作業小組中有一個虛擬分析員。 虛擬分析員會模仿安全性作業要採取哪些理想步驟來調查和補救威脅。 虛擬助理可以全天候工作、提供無限能力，以及接受大量調查和威脅補救。 如此一來，虛擬助理可以大幅減少回應時間，讓您的安全性作業小組能夠進行其他重要的策略專案。 如果此案例好像是科學 fiction，就不是！ 這類虛擬分析員是屬於您的 Microsoft 威脅防護套件，其名稱為*自動化調查及回應* (AIR)。
+想像您的第 1 層 / 第 2 層安全性作業小組中有一個虛擬分析員。 虛擬分析員會模仿安全性作業要採取哪些理想步驟來調查和補救威脅。 虛擬助理可以全天候工作、提供無限能力，以及接受大量調查和威脅補救。 如此一來，虛擬助理可以大幅減少回應時間，讓您的安全性作業小組能夠進行其他重要的策略專案。 如果此案例好像是科學 fiction，就不是！ 這類虛擬分析員是 Microsoft 威脅防護套件的一部分，其名稱是*自動調查和回應*。
 
-AIR 可讓您的安全性作業小組大幅增加貴組織處理安全性警示和事件的能力。 透過 AIR，您可以降低處理調查和補救活動的成本，並充分利用威脅防護套件。 AIR 協助您的安全性作業小組：
+自動化調查和回應可讓您的安全性運作小組大幅增加組織的容量，以處理安全性警示和事件。 透過自動化調查和回應，您可以減少處理調查和修復活動的成本，並充分利用威脅防護套件。 自動化調查和回應可協助您進行安全性運作小組：
 
 1. 判斷是否要針對威脅採取動作；
 2. 執行 (或建議) 任何必要補救動作；
@@ -54,25 +60,25 @@ AIR 可讓您的安全性作業小組大幅增加貴組織處理安全性警示�
 |裝置 (也稱為端點)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |電子郵件內容 (信箱中的檔案和郵件)     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-每個調查都會針對每個證據調查產生 verdicts （未找到*惡意*、*可疑*或*無威脅*）。 根據威脅類型和產生的判定，您的組織的安全性運作小組會自動或核准執行修正動作。 待處理和已完成的操作會列在[重要訊息中心](mtp-action-center.md)。
+每一項調查都會產生 verdicts (*惡意*、*可疑*或*沒有威脅*) 針對每個證據調查的部分。 根據威脅類型和產生的判定，您的組織的安全性運作小組會自動或核准執行修正動作。 待處理和已完成的操作會列在[重要訊息中心](mtp-action-center.md)。
 
 > [!TIP]
-> 如果您認為 Microsoft 威脅防護中的自動調查和回應功能已錯過或錯誤地偵測到某項功能，請告訴我們！ 請參閱[如何在 Microsoft 威脅防護中，以自動化調查和回應（AIR）功能來報告誤報/負片](mtp-autoir-report-false-positives-negatives.md)。
+> 如果您認為 Microsoft 威脅防護中的自動調查和回應功能已錯過或錯誤地偵測到某項功能，請告訴我們！ 請參閱[如何在 Microsoft 威脅防護中，以自動化調查和回應功能報告誤報/負片](mtp-autoir-report-false-positives-negatives.md)。
 
 當調查進行時，出現的任何其他相關警示會新增到調查中，直到調查完成。 如果在其他地方看到受感染的實體，則自動化調查將擴大其範圍，以包括該實體，並且將執行一般安全性劇本。 
 
 > [!NOTE]
-> 並非每個警式都會觸發自動化調查，也不是每個調查都會產生自動化補救措施；這一切都取決於貴組織如何設定 AIR。 
+> 並非每個提醒都會觸發自動調查，而並非每項調查都會產生自動修復動作。這全都取決於組織如何設定自動調查和回應。 
 
-## <a name="requirements-for-air-in-microsoft-threat-protection"></a>Microsoft 威脅防護的 AIR 需求
+## <a name="requirements-for-automated-investigation-and-response-in-microsoft-threat-protection"></a>在 Microsoft 威脅防護中進行自動化調查和回應的需求
 
-| | |
+|需求 |詳細資料 |
 |--|--|
 |訂閱需求 |下列其中之一： <br/>-Microsoft 365 E5 <br/>-Microsoft 365 A5 <br/>-Microsoft 365 E5 安全性<br/>-Microsoft 365 A5 安全性<br/>-Office 365 E5 plus Enterprise 可移動性 + Security E5 加上 Windows E5<br/><br/>請參閱[Microsoft 威脅防護授權的需求](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements)。|
 |網路需求 |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)已啟用<br/>- [Microsoft 雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) 已設定<br/>- [與 Azure ATP 整合的 MCAS](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
-|Windows 電腦需求 |-已設定下列威脅防護服務，已安裝 windows 10、版本1709或更新版本（請參閱[Windows 10 版本資訊](https://docs.microsoft.com/windows/release-information/)）：<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) <br/>- [Windows Defender 防毒程式](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
+|Windows 電腦需求 |-已安裝 windows 10、版本1709或更新版本 (請參閱[windows 10 版本資訊](https://docs.microsoft.com/windows/release-information/)) 設定下列的威脅防護服務：<br/>- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) <br/>- [Windows Defender 防毒程式](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) |
 |電子郵件內容和 Office 檔案的保護 |已設定[Office 365 高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
-|權限 |- 若要設定 AIR，您必須在 Azure Active Directory (https://portal.azure.com) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 中被指派[全域系統管理員](https://portal.azure.com)或安全性系統管理員角色。<br/><br/>- 若要使用 AIR 功能，請參閱[重要訊息中心的必要權限](mtp-action-center.md#required-permissions-for-action-center-tasks)。 |
+|權限 |-若要設定自動調查和回應，您必須在 [Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 中或在 Microsoft 365 系統管理中心 () 中指派全域管理員或安全性系統管理員角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。<br/><br/>-若要使用自動調查和回應功能，請參閱[動作中心工作所需的許可權](mtp-action-center.md#required-permissions-for-action-center-tasks)。 |
 
 ## <a name="next-steps"></a>後續步驟
 

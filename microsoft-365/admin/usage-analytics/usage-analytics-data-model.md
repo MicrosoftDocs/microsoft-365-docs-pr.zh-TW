@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '瞭解流量分析如何連接至 API，並提供各種 Microsoft 365 服務的每月使用趨勢。  '
-ms.openlocfilehash: 28dc51f76ac2e6bba00ecea853bc79419500508d
-ms.sourcegitcommit: b03a7ad0a80f8b839f40b8d396ab3a049491a12f
+ms.openlocfilehash: 1fa1cb842b603a920665ec1b59ca18f586b5d181
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44695088"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560856"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情況分析資料模型
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Microsoft 365 使用方式分析方格的資料
 
-Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs 位於預覽中，且可在中存取 `https://reports.office.com/pbi/v1.0/\<tenantid\>` （ \<tenant id\> 以您的租使用者 GUID 取代）。 
+Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs 位於預覽中，而且可以在 `https://reports.office.com/pbi/v1.0/\<tenantid\>` (取代為您的 \<tenant id\> 租使用者 GUID) 中存取。 
   
 > [!NOTE]
 > 如需詳細資訊，請參閱使用 microsoft [Graph 中的 microsoft 365 使用量報告](https://go.microsoft.com/fwlink/p/?linkid=864336)。 
@@ -51,7 +51,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |租用戶 SharePoint Online 使用量  <br/> |包含 SharePoint 網站 (涵蓋小組或群組網站) 的相關資料，例如網站總數、網站上的文件數目、依活動類型計算的檔案計數，以及使用的儲存空間。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
 |租用戶商務用 OneDrive 使用量  <br/> |包含 OneDrive 帳戶的相關資料，例如帳戶數目、OneDrive 上的文件數目、使用的儲存空間、依活動類型計算的檔案計數。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
 |承租人 Microsoft 365 群組使用量  <br/> |包含有關 Microsoft 365 群組使用量（包括信箱、SharePoint 及 Yammer）的資料。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
-|租用戶 Office 啟用  <br/> |包含有關 Office 訂閱啟用數目、每個裝置啟用計數（Android/iOS/Mac/PC）、依服務方案啟動的 Microsoft 365 應用程式（適用于企業、Visio、Project）的資料。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
+|租用戶 Office 啟用  <br/> |包含有關 Office 訂閱啟用數目、每個裝置的啟用計數 (Android/iOS/Mac/PC) 、依服務方案啟動的 Microsoft 365 應用程式，例如 Microsoft 應用程式（適用于企業、Visio、Project）的資料。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
 |使用者狀態  <br/> |包含使用者的相關中繼資料，包括使用者顯示名稱、指派的產品、地點、部門、職稱、公司。 此資料與上一個完整月份期間獲指派授權的使用者有關。 每個使用者都由使用者識別碼唯一表示。  <br/> |此資料與上一個完整月份期間指派授權的使用者有關。  <br/> |
 |使用者活動  <br/> |包含授權使用者執行活動的每個使用者層級資訊。  <br/> 如需產品內此資料表格中傳回活動的相關資訊，請參閱[作用中使用者定義](active-user-in-usage-reports.md)。  <br/> |此資料與上一個完整月份期間在任何服務中執行活動的使用者有關。  <br/> |
    
@@ -107,25 +107,25 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |EXO_MeetingSent  <br/> |已傳送的會議數目。  <br/> |
 |ODB_FileViewedModified  <br/> |此使用者在任何商務用 OneDrive 上互動的檔案數目 (例如建立、更新、刪除、檢視或下載)。  <br/> |
 |ODB_FileSynched  <br/> |此使用者在任何商務用 OneDrive 上同步處理的檔案數目。  <br/> |
-|ODB_FileSharedInternally  <br/> |此使用者從任何 OneDrive 公司內部共用的檔案數目，或與群組內的使用者（可能包括外部使用者）。  <br/> |
+|ODB_FileSharedInternally  <br/> |此使用者從任何 OneDrive 公司內部共用的檔案數目，或與可能包含外部使用者) 的群組 (中的使用者共用的檔案數目。  <br/> |
 |ODB_FileSharedExternally  <br/> |此使用者從任何商務用 OneDrive 外部共用的檔案數目。  <br/> |
 |ODB_AccessByOwner  <br/> |使用者與自己的商務用 OneDrive 上檔案互動的檔案數目。  <br/> |
 |ODB_AccessOthers  <br/> |使用者與其他使用者的商務用 OneDrive 上檔案互動的檔案數目。  <br/> |
 |SPO_GroupFileViewedModified  <br/> |與此使用者在任何群組網站上互動的檔案數目。  <br/> |
 |SPO_GroupFileSynched  <br/> |此使用者在任何群組網站上同步處理的檔案數目。  <br/> |
-|SPO_GroupFileSharedInternally  <br/> |與組織內的使用者共用的檔案數目，或與群組內的使用者共用的檔案數目（可能包括外部使用者）。  <br/> |
+|SPO_GroupFileSharedInternally  <br/> |與組織內的使用者共用的檔案數目，或與可能包含外部使用者) 的群組 (中的使用者共用的檔案數目。  <br/> |
 |SPO_GroupFileSharedExternally  <br/> |此使用者從任何群組網站外部共用的檔案數目。  <br/> |
 |SPO_GroupAccessByOwner  <br/> |使用者與自己的群組網站上檔案互動的檔案數目。  <br/> |
 |SPO_GroupAccessByOthers  <br/> |使用者與其他使用者的群組網站上檔案互動的檔案數目。  <br/> |
 |SPO_OtherFileViewedModified  <br/> |此使用者在任何其他網站上互動的檔案數目。  <br/> |
 |SPO_OtherFileSynched  <br/> |此使用者從任何其他網站同步處理的檔案數目。  <br/> |
-|SPO_OtherFileSharedInternally  <br/> |此使用者從任何其他網站（可能包括外部使用者）內部共用的檔案數目。 <br/> |
+|SPO_OtherFileSharedInternally  <br/> |此使用者從任何其他網站內部共用的檔案數目，或與可能包含外部使用者) 的群組 (中的使用者共用的檔案數目。 <br/> |
 |SPO_OtherFileSharedExternally  <br/> |此使用者從任何其他網站外部共用的檔案數目。  <br/> |
 |SPO_OtherAccessedByOwner  <br/> |使用者與其所擁有之其他網站上的互動的網站數目。  <br/> |
 |SPO_OtherAccessedByOthers  <br/> |使用者與其他使用者所擁有的其他網站進行互動的網站數目。  <br/> |
 |SPO_TeamFileViewedModified  <br/> |與此使用者在任何小組網站上互動的檔案數目。  <br/> |
 |SPO_TeamFileSynched  <br/> |此使用者從任何小組網站同步處理的檔案數目。  <br/> |
-|SPO_TeamFileSharedInternally  <br/> |此使用者從任何小組網站內部共用的檔案數目，或與群組內的使用者（可能包括外部使用者）。  <br/> |
+|SPO_TeamFileSharedInternally  <br/> |此使用者從任何小組網站內部共用的檔案數目，或與可能包含外部使用者) 的群組 (中的使用者共用的檔案數目。  <br/> |
 |SPO_TeamFileSharedExternally  <br/> |此使用者從任何小組網站外部共用的檔案數目。  <br/> |
 |SPO_TeamAccessByOwner  <br/> |使用者與自己的小組網站上檔案互動的檔案數目。  <br/> |
 |SPO_TeamAccessByOthers  <br/> |使用者與其他使用者的小組網站上檔案互動的檔案數目。  <br/> |
@@ -140,6 +140,9 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |SFB_P2PSummary  <br/> |此使用者參與的對等工作階段數目。  <br/> |
 |SFB_ConfOrgSummary  <br/> |此使用者組織的會議工作階段數目。  <br/> |
 |SFB_ConfPartSummary  <br/> |此使用者參與的會議工作階段數目。  <br/> |
+
+> [!NOTE]
+> Teams_HasOtherAction 表示使用者被視為作用中，但聊天訊息、1:1 通話、通道訊息、會議總數和會議組織值都是空的。
    
 ### <a name="data-table---tenant-product-usage"></a>資料表格 - 租用戶產品使用情況
 
@@ -244,7 +247,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |**資料行名稱**|**欄說明**|
 |:-----|:-----|
 |時間  <br/> |月份值。 每個產品在過去 12 個月內，每個月都會有一列，包括目前部分月份。  <br/> |
-|GroupType  <br/> |群組的類型（private/public/any）。  <br/> |
+|GroupType  <br/> |群組 (private/public/any) 的類型。  <br/> |
 |TotalGroups  <br/> |每個群組類型中的群組數目。  <br/> |
 |ActiveGroups  <br/> |作用中的群組數目。  <br/> |
 |MBX_TotalGroups  <br/> |信箱群組數目。  <br/> |
@@ -256,12 +259,12 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |SPO_ActiveGroups  <br/> |作用中 SharePoint 群組數目。  <br/> |
 |SPO_FileAccessedActiveGroups  <br/> |具有檔案存取活動的 SharePoint 群組數目。  <br/> |
 |SPO_FileSyncedActiveGroups  <br/> |具有檔同步處理活動的 SharePoint 群組數目。  <br/> |
-|SPO_FileSharedInternallyActiveGroups  <br/> |在內部或與群組（可能包括外部使用者）之間共用活動的 SharePoint 群組數目。  <br/> |
+|SPO_FileSharedInternallyActiveGroups  <br/> |在內部進行共用活動的 SharePoint 群組數目，或與可能包含外部使用者) 的群組 (的數目。  <br/> |
 |SPO_FileSharedExternallyActiveGroups  <br/> |已共用外部活動的 SharePoint 群組數目。  <br/> |
 |SPO_TotalActivities  <br/> |SharePoint 活動的數目。  <br/> |
 |SPO_FileAccessedActivities  <br/> |SharePoint 檔案存取活動的數目。  <br/> |
 |SPO_FileSyncedActivities  <br/> |SharePoint 檔同步處理的活動數目。  <br/> |
-|SPO_FileSharedInternallyActivities  <br/> |內部或群組（可能包含外部成員）的 SharePoint 檔案共用活動的數目。  <br/> |
+|SPO_FileSharedInternallyActivities  <br/> |內部 SharePoint 檔案共用活動的數目，或使用可能包含外部成員) 的群組 (。  <br/> |
 |SPO_FileSharedExternallyActivities  <br/> |共用外部活動的 SharePoint 檔案數目。  <br/> |
 |SPO_TotalFiles  <br/> |SharePoint 檔的數目。  <br/> |
 |SPO_ActiveFiles  <br/> |作用中 SharePoint 檔案數目。  <br/> |

@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何啟用 Microsoft 365，以在幾個步驟中保護本機作用中已加入目錄的 Windows 10 裝置。
-ms.openlocfilehash: 2eaf5aa76cae1680b93af008af615ae872e4fb20
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 6275c6c4be9cd9631ab095f8b0e1b39683022bb2
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533778"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560836"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>啟用已加入網域的 Windows 10 裝置以由 Microsoft 365 商務版 Premium 管理
 
@@ -43,22 +43,21 @@ ms.locfileid: "46533778"
 
 ## <a name="before-you-get-started-make-sure-you-complete-these-steps"></a>開始之前，請先確定您已完成下列步驟：
 - 使用 Azure AD Connect 將使用者同步處理至 Azure AD。
-- 完成 Azure AD Connect 組織單位（OU）同步處理。
+- 完成 Azure AD Connect 組織單位 (OU) sync。
 - 請確定您同步處理的所有網域使用者都具有 Microsoft 365 商務版的授權。
 
 如需步驟，請參閱[同步處理網域使用者至 Microsoft](manage-domain-users.md) 。
 
 ## <a name="1-verify-mdm-authority-in-intune"></a>1. 驗證 Intune 中的 MDM 授權
 
-移至 [portal.azure.com]，並在 [頁面搜尋] 上方的 [Intune] 搜尋。
-在 [Microsoft Intune] 頁面上，選取 [**裝置註冊**]，然後在 [**概覽**] 頁面上，確認**MDM 授權**為**Intune**。
+移至[端點管理員](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview)，然後在 Microsoft Intune 頁面上，選取 [**裝置註冊**]，然後在 [一覽] 頁面上，確定 **[** **MDM 授權**為**Intune**]。
 
 - 如果**mdm 授權**單位為**None**，請按一下**MDM 授權**單位將其設定為**Intune**。
-- 如果**mdm 授權**是**Microsoft Office 365**，請移至 [**裝置]**  >  [**註冊裝置**]，並使用右側的 [**新增 mdm 授權機構**] 對話方塊，以新增**Intune MDM**授權（[**新增 mdm 機關**] 對話方塊只有在**MDM 授權**設定為 [Microsoft Office 365] 時才可用）。
+- 如果**mdm 授權**是**Microsoft Office 365**，請移至 [**裝置]**  >  [**註冊裝置**]，並使用右側的 [**新增 mdm 授權機構**] 對話方塊，以加入**Intune MDM**授權 (只有當**MDM 機關**設定為 [Microsoft Office 365) 時，才可使用 [**新增 mdm 授權**] 對話方塊。
 
 ## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. 確認已針對加入的電腦啟用 Azure AD
 
-- 移至系統管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> ，並選取 [ **Azure active directory** ] （如果未顯示 azure active directory，請選取 [全部顯示**Admin centers**所有專案）] 清單中的 [azure active directory]。 
+- 移至系統管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> ，然後選取 [ **Azure active directory** (]，在 [系統**管理中心**] 清單中看不到 [azure active directory]) 的 [全部顯示]。 
 - 在**Azure Active directory 系統管理中心**中，移至 [ **azure active directory** ]，選擇 [**裝置**]，然後選擇 [**裝置設定**]。
 - 確認**使用者可以將裝置加入至 AZURE AD**已啟用 
     1. 若要啟用所有使用者，請將設定為 [**全部**]。
@@ -68,7 +67,7 @@ ms.locfileid: "46533778"
 
 ## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. 確認已為 MDM 啟用 Azure AD
 
-- 移至系統管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> ，然後選取 [Select **endpoint Managemen**t （選取所有 if**端點管理員**時不會**顯示所有**的）]
+- 移至系統管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> ，然後選取 [Select **endpoint Managemen**t (選取 [**顯示所有**if**端點管理員**] 不可見) 
 - 在**Microsoft 端點**管理員系統管理中心中，移至 [**裝置**] [windows  >  **Windows**  >  **windows 註冊**]  >  **自動註冊**。
 - 確認已啟用 MDM 使用者範圍。
 
@@ -101,16 +100,16 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 ## <a name="5-link-the-group-policy"></a>5. 連結群組原則
 
-1. 在 [群組原則管理主控台（GPMC）] 中，以滑鼠右鍵按一下您要連結原則的位置，然後從快顯功能表中選取 [*連結現有的 GPO ...* ]。
+1. 在 [群組原則管理主控台 (GPMC) 中，以滑鼠右鍵按一下您要連結原則的位置，然後從快顯功能表中選取 [*連結現有的 GPO ...* ]。
 2. 選取上一個步驟中建立的原則，然後按一下 **[確定]**。
 
 ## <a name="get-the-latest-administrative-templates"></a>取得最新的系統管理範本
 
-如果您看不到原則**使用預設 AZURE AD 認證來啟用自動 MDM 註冊**，可能是因為您沒有為 Windows 10、版本1803、版本1809或版本1903安裝 ADMX。 若要修正此問題，請遵循下列步驟（附注：最新的 MDM 會向後相容）：
+如果您看不到原則**使用預設 AZURE AD 認證來啟用自動 MDM 註冊**，可能是因為您沒有為 Windows 10、版本1803、版本1809或版本1903安裝 ADMX。 若要修正此問題，請遵循下列步驟 (附注：最新的 MDM 會向後相容) ：
 
-1.  下載： [Windows 10 的系統管理範本（admx）可能是2019更新（1903）](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all)。
-2.  在網域主控站（PDC）上安裝套件。
-3.  根據資料夾的版本來流覽： **C:\Program 檔案（x86） \Microsoft Group Policy\Windows 10 可能2019更新（1903） v3**。
+1.  下載： [Windows 10 的系統管理範本 ( admx) 可能2019更新 (1903) ](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all)。
+2.  在網域主控站 (PDC) 上安裝套件。
+3.  根據資料夾的版本來流覽： **C:\Program 檔案 (x86) \Microsoft Group Policy\Windows 10 可能 2019 Update (1903) v3**。
 4.  將上述路徑中的**原則定義**資料夾重新命名為**PolicyDefinitions**。
 5.  將**PolicyDefinitions**資料夾複製到**C:\Windows\SYSVOL\domain\Policies**。 
     -   如果您打算使用整個網域的中央原則存放區，請在那裡新增 PolicyDefinitions 的內容。

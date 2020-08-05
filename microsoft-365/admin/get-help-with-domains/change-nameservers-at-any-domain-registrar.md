@@ -25,18 +25,18 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，如此一來，諸如電子郵件和商務用 Skype Online 等服務也會使用您自己的功能變數名稱。
-ms.openlocfilehash: 16e8699c1c8588a4368f04078fea44c165c13e29
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399989"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560338"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 
  若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
-請先檢查[[設定您的網域（主機專用指示）](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) ]，以查看是否有註冊機構的指示。 
+檢查 [[設定網域 (主機特定的指示]) ](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) ，查看是否有註冊機構的指示。 
   
 請遵循下列指示，在 Microsoft 365 中新增及設定您的網域，這樣服務（例如電子郵件和商務用 Skype Online）將使用您自己的功能變數名稱。 若要這麼做，您將會驗證您的網域，然後將網域的名稱伺服器變更為 Microsoft 365，這樣就能為您設定正確的 DNS 記錄。 如果下列語句描述您的情況，請遵循下列步驟：
   
@@ -108,7 +108,7 @@ ms.locfileid: "44399989"
 ## <a name="change-your-domains-nameserver-ns-records"></a>變更您網域的名稱伺服器 (NS) 記錄
 <a name="BKMK_nameservers"> </a>
 
-當您在 Microsoft 365 中取得「網域安裝精靈」的最後一個步驟時，還剩下一個工作。 若要使用 Microsoft 365 服務（例如電子郵件）來設定您的網域，您可以在您的網域註冊機構變更網域的名稱伺服器（或 NS）記錄，以指向 Microsoft 365 主要和次要名稱伺服器。 然後，由於 Microsoft 365 會主控您的 DNS，因此會自動為您設定服務所需的 DNS 記錄。 您可以遵循以下步驟 (網域註冊機構可能會在他們網站上的說明內容中提供)，自行更新名稱伺服器記錄。 如果您不熟悉 DNS，請連絡網域註冊機構的支援人員。
+當您在 Microsoft 365 中取得「網域安裝精靈」的最後一個步驟時，還剩下一個工作。 若要使用 Microsoft 365 服務（如電子郵件）來設定您的網域，您可以在您的網域註冊機構變更網域的名稱伺服器 (或 NS) 記錄，以指向 Microsoft 365 主要和次要名稱伺服器。 然後，由於 Microsoft 365 會主控您的 DNS，因此會自動為您設定服務所需的 DNS 記錄。 您可以遵循以下步驟 (網域註冊機構可能會在他們網站上的說明內容中提供)，自行更新名稱伺服器記錄。 如果您不熟悉 DNS，請連絡網域註冊機構的支援人員。
 
 ::: moniker range="o365-worldwide"
   
@@ -162,15 +162,14 @@ ms.locfileid: "44399989"
 
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
-3. 在 [網域] 頁面上，選取網域。
+2. 在 [**網域**] 頁面上，選取網域，然後選擇 [ **DNS 記錄**]。
 
-4. 在 [ **DNS 設定**] 底下，選取 [**自訂記錄**]，然後選擇 [**新增自訂記錄**]。
+3. 在 [ **DNS 設定**] 底下，選取 [**自訂記錄**]，然後選擇 [**新增自訂記錄**]。
 
-5. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
+4. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
 
-6. 選取 [儲存]****。
+5. 選取 [儲存]****。
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然後，您的 Microsoft 電子郵件和其他服務將全部設定為與您的網域搭配使用。 
   
-

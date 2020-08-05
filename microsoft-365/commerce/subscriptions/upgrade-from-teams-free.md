@@ -20,12 +20,13 @@ ms.custom: ''
 search.appverid: ''
 description: 深入瞭解如何從 Microsoft 團隊升級，以免費訂閱新的 Microsoft 365 for business 訂閱。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6bd36987fcad4cebb217bdc89388dfae44ca30b9
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.date: 07/08/2020
+ms.openlocfilehash: fcd06db64f78c80e5b4a015380e672f529feb0ae
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45087915"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552455"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>從 Microsoft 團隊免費升級為商務用 Microsoft 365
 
@@ -40,7 +41,7 @@ ms.locfileid: "45087915"
 
 若要開始處理常式，請取得您的基礎單位或學校帳戶識別碼。 此帳戶識別碼與您用來免費存取 Microsoft 小組的電子郵件地址不同。
 
-1. 轉到(G)<a href="https://go.microsoft.com/fwlink/p/?linkid=2134797" target="_blank">https://account.activedirectory.windowsazure.com</a>
+1. 轉到 (G) <a href="https://go.microsoft.com/fwlink/p/?linkid=2134797" target="_blank">https://account.activedirectory.windowsazure.com</a>
 2. 在頁首中，選取設定檔圖示。 您的帳戶識別碼會顯示在您的名稱下方，並以*onmicrosoft.com*結尾。
     您的系統管理員電子郵件地址會類似*admin@yourfreeorgname.onmicrosoft.com*。
 
@@ -49,7 +50,7 @@ ms.locfileid: "45087915"
 在您有 Microsoft 小組免費組織的基礎單位或學校帳戶後，您必須重設帳戶的密碼。
 
 1. 移至<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>。 當系統提示您登入時，請選擇 [**忘記我的密碼**]。
-2. 使用基準單位或學校帳戶（結尾是*onmicrosoft.com*的帳戶）完成密碼重設程式。
+2. 使用基礎的工作或學校帳戶（ (結尾為*onmicrosoft.com*) ）完成密碼重設過程。
 3. 完成驗證步驟。 您會收到一封電子郵件，其中包含用來設定新密碼的程式碼。
 4. 輸入完成驗證程式的程式碼。
 
@@ -75,8 +76,8 @@ ms.locfileid: "45087915"
 
 ## <a name="related-content"></a>相關內容
 
-[歡迎使用 Microsoft 團隊免費](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c)（文章） \
-[免費升級 Microsoft 團隊訂閱版本](https://docs.microsoft.com/microsoftteams/upgrade-freemium)（文章） \
-[購買或移除訂閱授權](../licenses/buy-licenses.md)（文章） \
-[將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md)（文章） \
-[從使用者取消指派授權](../../admin/manage/remove-licenses-from-users.md)（文章）
+[歡迎使用 Microsoft 團隊免費](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (文章) \
+ (文章) \[中升級 Microsoft 團隊免費訂閱版本](https://docs.microsoft.com/microsoftteams/upgrade-freemium)\
+[購買或移除訂閱授權](../licenses/buy-licenses.md) (篇) \
+ (篇文章) \[中指派授權給使用者](../../admin/manage/assign-licenses-to-users.md)
+[從使用者取消指派授權](../../admin/manage/remove-licenses-from-users.md) (文章) 

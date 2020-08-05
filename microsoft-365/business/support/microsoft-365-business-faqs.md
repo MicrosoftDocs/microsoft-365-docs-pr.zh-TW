@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務進階版, Microsoft 365, SMB, 常見問題集, 常見問題集, 解答, 商務版
 ms.date: 07/21/2020
-ms.openlocfilehash: 520009d26d0133a2c53c6149fe4938bea9db5a32
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 614da177df9250045ca3cc18c0b071e0aa43b7ec
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46502992"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560792"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 商務進階版常見問題集
 
@@ -137,7 +137,7 @@ Microsoft 365 商務進階版試用版可供 CSP 使用。 稍後將為直接客
 是的，已授權 Microsoft 365 商務版的訂戶使用完整的 Intune 功能，以供 iOS、Android、macOS 及其他跨平臺裝置管理使用。 在 Microsoft 365 商務版的簡化管理主控台中無法使用的功能，如協力廠商應用程式管理、Wi-Fi 設定檔的設定，以及 VPN 憑證，可在完整的 Intune 主控台中管理。 
   
 
-### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business-premium"></a>Azure Active Directory （Azure AD）優質 P1 是否隨附 Microsoft 365 商務版 Premium？ 
+### <a name="does-azure-active-directory-azure-ad-premium-p1-come-with-microsoft-365-business-premium"></a>Azure Active Directory (Azure AD) 優質 P1 是否隨附 Microsoft 365 商務版 Premium？ 
 
 是的，Azure AD Premium P1 隨附于 Microsoft 商務版 Premium。
  
@@ -154,7 +154,7 @@ Windows AutoPilot 是一項服務，可簡化新 Windows 10 電腦的部署。 �
 可以新增至 Microsoft 365 商務標準版的所有附加元件，都可以新增至 Microsoft 365 商務進階版。 這表示您可以購買 Office 365 Cloud App Security、Advanced 合規性、威脅情報、MyAnalytics、Power BI Pro 和音訊會議。 
  
 ### <a name="can-i-add-phone-system-and-calling-plans-to-microsoft-365-business-premium"></a>是否可以將電話系統和通話方案新增至 Microsoft 365 商務進階版？ 
-不行，電話系統和通話方案會保留給有更多進階需求的客戶。 需要這些功能的客戶，應該查看 Microsoft 365 企業版方案。 
+是的，您可以購買商務語音訂閱。 [商務語音](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice)是一種電話語音解決方案，針對最高達300個使用者的中小企業，可捆綁電話系統、音訊會議、國內通話方案等等。 您將取得的電話系統功能包括語音信箱、來電者識別碼、通話駐留、來電轉接、自動語音應答及通話佇列。 <br> 若要瞭解您的國家或地區是否可使用商務語音，請參閱[商務語音的國家和地區可用性](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability)。 如需定價資訊，請參閱[商務語音的定價](https://go.microsoft.com/fwlink/?linkid=2127221)。
  
 ### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>Microsoft 365 商務版客戶可以使用 Microsoft Defender 高級威脅防護嗎？ 
 是的，microsoft Defender 高級威脅防護是以 Microsoft 365 商務版 Premium 客戶的附加元件形式提供。

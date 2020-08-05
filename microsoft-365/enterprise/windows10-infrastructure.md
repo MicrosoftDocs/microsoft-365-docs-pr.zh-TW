@@ -12,12 +12,12 @@ ms.date: 08/28/2019
 f1.keywords:
 - NOCSH
 ms.author: greglin
-ms.openlocfilehash: d1019547fb16fd4fd5669ebd5286e8c9e32668fe
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: 3b4a0174e96fec1591bcac7ba58bcc7d57db8c87
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011920"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552683"
 ---
 # <a name="phase-3-windows-10-enterprise"></a>階段 3：Windows 10 企業版
 
@@ -41,7 +41,7 @@ Microsoft 365 Enterprise 包含 Windows 10 企業版，可讓您執行更多和�
 
 | 部署案例 | 何時使用 |
 |:--- |:--- |
-| [使用 Microsoft 端點 Configuration Manager 做為就地升級](windows10-deploy-inplaceupgrade.md) | 如果您需要將 Windows 7 或 Windows 8.1 電腦升級至目前的 Windows 10 企業<a href="https://aka.ms/windows-10-release-information" target="_blank">版</a>，且您的電腦目前是以<a href="https://docs.microsoft.com/mem/configmgr/core/understand/introduction" target="_blank">Configuration Manager （目前的分支）</a>進行管理，請選取此選項。 |
+| [使用 Microsoft 端點 Configuration Manager 做為就地升級](windows10-deploy-inplaceupgrade.md) | 如果您需要將 Windows 7 或 Windows 8.1 電腦升級至目前 Windows 10 企業<a href="https://aka.ms/windows-10-release-information" target="_blank">版</a>，且您的電腦目前是使用<a href="https://docs.microsoft.com/mem/configmgr/core/understand/introduction" target="_blank">Configuration Manager (目前分支) </a>進行管理，請選取此選項。 |
 | [使用 Windows Autopilot](windows10-deploy-autopilot.md) | 如果您要設定的新 Windows 電腦具有 Windows 10 企業版、版本1703或更新版本，請選取此選項。 使用者可輸入其工作或學校帳戶的認證，以使用您所需的設定來啟動設定。 |
 
 如果這些部署案例不符合您組織的需求，則可以深入瞭解其他案例，並瞭解每個[Windows 10 部署案例](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)中的功能和限制。 您也可以自行<a href="https://aka.ms/planforwin10deployment" target="_blank">規劃 Windows 10 部署</a>。
@@ -56,7 +56,7 @@ Microsoft 365 Enterprise 包含 Windows 10 企業版，可讓您執行更多和�
 ## <a name="additional-services-and-features"></a>其他服務和功能
 在 Windows 10 企業版部署的一部分中，您可以新增這些額外的服務和功能。
 
-### <a name="windows-analytics"></a>Windows Analytics
+### <a name="desktop-analytics"></a>電腦分析
 
 Windows 會使用診斷資料，提供豐富的可運作資訊，協助您深入瞭解作業效率，以及環境中 Windows 10 裝置的健康情況。
 
@@ -64,7 +64,7 @@ Windows 會使用診斷資料，提供豐富的可運作資訊，協助您深入
 * 更新規範-更新規範是針對想要深入瞭解所有 Windows 10 裝置的 IT 系統管理員，不需要任何其他基礎結構需求。
 * 裝置健康情況-您可以使用裝置健康情況，主動偵測和修正使用者影響的問題。
 
-如需詳細資訊，請參閱[Windows Analytics 一覽](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview)。
+如需詳細資訊，請參閱[桌面 Analytics 一覽](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)。
 
 ### <a name="windows-security"></a>Windows 安全性
 

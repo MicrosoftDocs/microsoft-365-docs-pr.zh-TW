@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 我們不斷將新功能新增至 Microsoft 365 規範中心。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29d99e0af5f161c91b8a192b9d6f1545a13c7c80
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 77ba6f0926a1826fe6c946ff4f8c05cf913c57ed
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199463"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560260"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 規範中心的新功能
 
@@ -33,13 +33,105 @@ ms.locfileid: "45199463"
 > 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
 請造訪[microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap)，以瞭解已啟動、已開發、已取消或先前發佈的 microsoft 365 功能。
 
+## <a name="june-2020"></a>2020 年 6 月
+
+### <a name="spotlight-new-data-connectors-hit-preview"></a>聚光燈：新增資料連線器命中預覽
+
+為了協助您將其他協力廠商來源中的資料匯入 Microsoft 365，我們很樂意宣告其他兩個資料連線器的預覽版本：
+
+- [Bloomberg 郵件](archive-bloomberg-message-data.md)。 從 Bloomberg 郵件共同作業工具匯入及封存金融服務電子郵件資料。 將資料儲存在信箱之後，您就可以存取和使用規範功能（例如訴訟暫止、內容搜尋、就地封存、審核、通訊法規遵從性及保留原則）中的資料。
+- [冰聊天](archive-icechat-data.md)。 從「ICE 聊天共同作業」工具匯入及封存金融服務聊天資料。 將資料儲存在信箱之後，您就可以存取和使用規範功能（例如訴訟暫止、eDiscovery、封存、審核、通訊法規遵從性及保留原則）中的資料。
+
+### <a name="compliance-score--compliance-manager-the-hits-keep-coming"></a>合規性管理員 & 合規性分數：不斷進行的點擊
+
+六月更新包含[合規性分數](compliance-score.md)中的新評估向外視圖。 監視控制項進度、新增、刪除評估與符合性分數的直接，等等。
+
+想要掌握相容性分數和合規性管理員的更新的最新資訊嗎？ 將[合規性分數](compliance-score-release-notes.md)的書簽做成版本資訊，並且經常回來查看。
+
+## <a name="may-2020"></a>2020 年 5 月
+
+### <a name="spotlight-data-classification-is-officially-released"></a>聚光燈：已正式發行資料分類
+
+資料分類，亦即「[知道您的資料](data-classification-overview.md)」、功能 (analytics、內容瀏覽器及活動瀏覽器) 已逐步從預覽階段開始，並可供所有組織使用。 強大的洞察力及工具可協助您探索和評估敏感資訊和標籤 (保留和敏感度) 會在組織中的內容中使用。 回顧包含機密資訊或已套用標籤的內容、探索各個 Microsoft 365 位置的標籤活動、建立自訂的機密資訊類型等等。
+
+拍攝影片教程 .。。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
+
+### <a name="trainable-classifiers-a-fix-and-a-feature"></a>Trainable 分類器：修復程式和功能
+
+可能增強 trainable 分類器的增強功能：
+
+- 根據您的意見反應進行修正：當您播種和訓練自訂分類器時，您不再需要手動輸入 SharePoint 網站 URLs 和資料夾路徑。 您現在可以選擇預先填入的網站和資料夾清單。
+- 新功能：建立靈敏度標籤及設定 Office 應用程式的自動標記設定時，您現在可以自動套用 (或建議使用者將標籤套用至符合 trainable 的分類器的內容) 。 [深入了解](apply-sensitivity-label-automatically.md#configuring-trainable-classifiers-for-a-label)
+
+### <a name="communication-compliance-yammer-support-is-here"></a>通訊相容性：在這裡提供 Yammer 支援
+
+通訊相容性原則支援 Yammer 中的私人郵件和公用社區交談。 Yammer 是選用的通道，必須是[原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，以支援郵件和附件的掃描。
+
+### <a name="data-loss-prevention-new-sharing-restriction"></a>資料遺失防護：新的共用限制
+
+在設定 DLP 原則以保護 SharePoint 或 OneDrive 中的內容時，您現在可以設定「限制存取內容」動作，以封鎖已透過「[具有連結的任何人](https://support.microsoft.com/office/share-files-outside-your-organization-with-anyone-links-53e91027-fb8e-4a6e-a3e4-5df4be32e38a)」選項存取內容的人員。
+
+### <a name="insider-risk-management-tailor-your-alert-volume"></a>有問必答風險管理：定制您的警示數量
+
+擁有者風險原則所偵測到的使用者活動，會被指派特定風險分數，進而決定警示嚴重性 (低、中、高) 。 根據預設，Microsoft 365 會產生一定數量的低、中和高嚴重性警示，但在新增[警示磁片區設定](insider-risk-management-settings.md#alert-volume)時，您可以增加或減少音量以符合您的需求。
+
+### <a name="pst-import-new-region-supported"></a>PST 匯入：支援的新地區
+
+現在可以使用阿拉伯聯合大公國使用網路上傳。
+
+### <a name="sensitivity-labels-new-privacy-option"></a>敏感度標籤：新增隱私權選項
+
+設定標籤的[網站和群組設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings)時，您現在可以設定隱私權選項為**None-讓使用者選擇誰可以存取網站**。 當您想要使用敏感度標籤保護容器中的內容，但仍可讓使用者自行設定隱私權設定時，這會很有用。
+
+## <a name="april-2020"></a>2020 年 4 月
+
+### <a name="records-management-overhauland-a-new-addition"></a>記錄管理： [檢修 ...]和新的新增
+
+四月包含對我們記錄管理解決方案的一些重要更新：
+
+- 「記錄管理」區段現在已完全可用於規範中心。 利用更新的使用者介面和功能，以供檔案計畫、保留標籤及標籤原則、事件及處置之用。
+- 在談話中，我們也會在 SharePoint 和 OneDrive 中，針對記錄進行[處置證明](disposition.md#disposition-of-records)。 您現在可以查看已自動或在處置檢查後處置之位置中的專案清單。
+
+:::image type="content" source="../media/mcc-records-management-page.png" alt-text="Microsoft 365 規範中心內的記錄管理區段":::
+
+### <a name="sensitivity-labels-preview-auto-labeling-policies"></a>敏感度標籤：預覽自動標記原則
+
+透過自動標籤原則，您現在可以將敏感度標籤自動套用至 SharePoint，並將已儲存的 OneDrive 檔 (稱為「靜止的資料」) ，以及已傳送或接收的電子郵件 (（也稱為「傳輸中的電子郵件 ) ）。 因為此標籤是由服務所套用，而不是依應用程式來套用，所以您不需要擔心使用者有哪些應用程式和版本。
+
+當您建立靈敏度標籤時，這項功能會延伸已包含「Office app ' 的自動貼上功能設定的現有用戶端標籤。 若要深入瞭解這兩種自動標記選項的差異和優點，請參閱[更新後的文章](apply-sensitivity-label-automatically.md)。
+
+## <a name="march-2020"></a>2020 年 3 月
+
+### <a name="introducing-advanced-audit"></a>簡介高級審計
+
+[Microsoft 365 中的「高級核查](advanced-audit.md)」引入新的審計功能，可協助您的組織進行取證和合規性調查。 亮點包括長期保留審核記錄、自訂審核記錄保留原則、新*MailItemsAccessed*信箱審核動作，以及引進新的租使用者層級節流限制，其可讓您的組織擁有其自己完全分配的頻寬配額，以存取您的審計資料。
+
+### <a name="compliance-score--compliance-manager-preview-the-latest-enhancements"></a>合規性管理員 & 合規性分數：預覽最新的增強功能
+
+此預覽版本的主要更新包括：
+
+- 簡化建立及修改範本的程式
+- 範本和動作的版本設定通知和控制
+- 同步處理各個群組的常見動作
+- 語言支援現在已擴充至中文 (簡化) 、中文 (傳統) 、法文、德文、義大利文、日文、韓文、葡萄牙文 (巴西) 、俄語及西班牙文
+
+深入瞭解[合規性分數](compliance-score.md)和[合規性管理員](compliance-manager-overview.md)
+
+### <a name="sensitivity-labels-support-for-labeling-office-files-in-sharepoint-and-onedrive-preview"></a>敏感度標籤：支援 SharePoint 和 OneDrive (預覽中的 Office 檔案的標記) 
+
+啟用預覽功能可讓使用者將敏感度標籤套用至網頁上的 Office。 他們將能夠在狀態列上看到功能區上的**敏感度**按鈕和套用的標籤名稱。 此外，如果他們使用桌面應用程式來標示標籤，然後將檔案儲存在 SharePoint 或 OneDrive 上，當標籤有套用加密設定時，Microsoft 365 現在可以處理這些檔案的內容。 在這些情況下，也會支援合著、eDiscovery、資料遺失防護、搜尋及其他協同作業功能。
+
+[瞭解如何啟用預覽](sensitivity-labels-sharepoint-onedrive-files.md)
+
 ## <a name="february-2020"></a>2020 年 2 月
 
 ### <a name="insider-risk-management-is-officially-released"></a>已正式發行內幕風險管理
 
 鼓滾，請 .。。<br>「內部人員風險管理」現在可供組織使用下列訂閱：
 
-- [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) （付費或試用版）
+- [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (付費或試用) 
 - Microsoft 365 Enterprise E3 訂閱與[Microsoft E5 合規性附加](https://go.microsoft.com/fwlink/?linkid=2120432)元件
 
 請注意，自預覽發行後我們進行了一些改進，包括[新的角色群組](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)和[全方案設定](insider-risk-management-configure.md#step-4-configure-insider-risk-settings)。
@@ -65,7 +157,7 @@ ms.locfileid: "45199463"
 
 ## <a name="january-2020"></a>2020 年 1 月
 
-等候已過。 我們很樂意宣告 Microsoft 365 規範中心可供所有使用 Microsoft 365、Office 365、企業行動性 + 安全性（EMS）和 Windows 10 企業版方案的客戶使用。 您在安全性 & 合規性中心內管理的任何資料或原則都是在「規範中心」中提供，所以不需要來回跳轉。
+等候已過。 我們很樂意宣告 Microsoft 365 規範中心可供所有客戶使用 Microsoft 365、Office 365、企業行動性 + 安全性 (EMS) 和 Windows 10 企業版方案。 您在安全性 & 合規性中心內管理的任何資料或原則都是在「規範中心」中提供，所以不需要來回跳轉。
 
 > [!TIP]
 > 請再次閱讀去年的更新，以取得我們最近預覽之一些[新方案](#new-compliance-solutions)的複習，以及顯示安全性 & 合規性中心的相容性功能目前在 Microsoft 365 中的活動[藍圖](#updated-compliance-solutions)。
@@ -78,7 +170,7 @@ ms.locfileid: "45199463"
 
 ### <a name="now-in-preview"></a>現在預覽
 
-**有問必答風險管理（預覽）**
+**有問必答風險管理 (預覽) **
 
 我們很樂意宣告，我們的有問必答風險管理解決方案現在是公開預覽。 簡而言之，有問必答風險管理可協助您的組織，透過提供下列各項，以智慧識別並採取對內幕程式風險的動作：
 
@@ -104,7 +196,7 @@ ms.locfileid: "45199463"
 
 **資料連線器**
 
-先前與 Office 365 安全性 & 合規性中心中的其他「匯入」功能共用空間，資料連線器現在在 Microsoft 365 規範中心擁有其專屬的家用。 使用新的「資料連線器」頁面，從組織的人力資源（HR）檔案和各種協力廠商平臺（如 Facebook、LinkedIn、Twitter 及立即 Bloomberg）匯入和封存您的 Microsoft 365 組織中的信箱資料。 一旦匯入之後，就可以透過數個規範解決方案管理此資料，包括 eDiscovery、內幕風險管理、通訊相容性、審核、保留原則等等。
+先前與 Office 365 安全性 & 合規性中心中的其他「匯入」功能共用空間，資料連線器現在在 Microsoft 365 規範中心擁有其專屬的家用。 使用新的「資料連線器」頁面，從組織的人力資源 (HR) 檔案和各種協力廠商平臺 (如 Facebook、LinkedIn、Twitter 及立即 Bloomberg) 到 Microsoft 365 組織中的信箱，匯入並封存資料。 一旦匯入之後，就可以透過數個規範解決方案管理此資料，包括 eDiscovery、內幕風險管理、通訊相容性、審核、保留原則等等。
 
 [深入瞭解資料連線器](archiving-third-party-data.md)
 
@@ -112,13 +204,13 @@ ms.locfileid: "45199463"
 
 ### <a name="noteworthy-updates"></a>值得注意的更新
 
-**遵循規範評分的新評估範本（預覽）**
+** (預覽的合規性分數的新評估範本) **
 
 永遠致力於協助您走出不斷發展的合規性形勢，我們的合規性分數小組已提供一組新的範本，協助您評估組織對最近法規的相容性狀況，並取得如何實施更有效率的控制的指導。 您會看到新的範本：
 
 - ISO/IEC 27701:2019
 - 加州消費者隱私法 (CCPA)
-- 巴西一般資料保護法（Lei Geral de Proteção de Dados-LGPD）
+- 巴西一般資料保護法 (Lei Geral de Proteção de Dados-LGPD) 
 - SOC 1 Type 2 和 SOC 2 Type 2
 
 [深入瞭解合規性分數範本](compliance-score.md#templates)
@@ -145,11 +237,11 @@ ms.locfileid: "45199463"
 
 |**新方案**|**描述**|**深入了解**|
 |:-----|:-----|:-----|
-|Microsoft 合規性分數（預覽） <br/>|從[合規性管理員](compliance-manager-overview.md)內建，相容性分數是一項獨立的功能，具有簡化、便於使用使用者的設計，可協助您瞭解及改善組織的合規性狀況。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 <br/>|[Microsoft 合規性分數概述（預覽）](compliance-score.md)|
-|方案目錄（預覽） <br/>|方案目錄是一種可讓您探索、深入瞭解及快速開始使用我們的合規性和風險管理解決方案的單一停止車間。 目錄會組織成三個符合性類別，每個類別包含組成該類別之解決方案的詳細資料。 類別包括資訊保護 & 控管、內幕風險管理，以及探索 & 回應 <br/>|[方案目錄的概覽（預覽）](microsoft-365-solution-catalog.md)|
-|通訊相容性（預覽） <br/>|通訊相容性是新的有問必答風險管理類別的一部分，可協助您針對組織中的不適當郵件偵測、捕獲和採取補救措施，以協助將通訊風險降到最低。 此方案透過引進一些新的增強功能（如智慧範本、彈性修復工作流程及可行動的觀點），擴充 Office 365 中監管原則的功能。 <br/>|[Microsoft 365 中的通訊法規遵從性（預覽）](communication-compliance.md)|
-|資料分類（預覽） <br/>|我們新的資料分類頁面包含強大的洞察力和工具，可協助您探索和評估敏感資訊和標籤（保留和敏感度）在組織中的內容中的使用方式。 回顧包含機密資訊或已套用標籤的內容、探索各個 Microsoft 365 位置的標籤活動、建立自訂機密資訊類型，以及更多。<br/>|[資料分類概觀 (預覽)](data-classification-overview.md)|
-|Trainable 分類器（預覽） <br/>|這個強大的新工具使用我們的機器學習引擎，協助識別您的組織中的內容類別別，例如法規檔或員工合約。 建立後，可使用多個規範方案中的分類器來偵測相關的內容，並加以分類、保護、保留，等等。<br/>|[開始使用可訓練的分類器 (預覽)](classifier-getting-started-with.md)|
+|Microsoft (預覽的合規性分數)  <br/>|從[合規性管理員](compliance-manager-overview.md)內建，相容性分數是一項獨立的功能，具有簡化、便於使用使用者的設計，可協助您瞭解及改善組織的合規性狀況。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 <br/>|[ (預覽的 Microsoft 合規性分數概述) ](compliance-score.md)|
+|方案目錄 (預覽)  <br/>|方案目錄是一種可讓您探索、深入瞭解及快速開始使用我們的合規性和風險管理解決方案的單一停止車間。 目錄會組織成三個符合性類別，每個類別包含組成該類別之解決方案的詳細資料。 類別包括資訊保護 & 控管、內幕風險管理，以及探索 & 回應 <br/>|[方案目錄 (預覽的概述) ](microsoft-365-solution-catalog.md)|
+|通訊合規性 (預覽)  <br/>|通訊相容性是新的有問必答風險管理類別的一部分，可協助您針對組織中的不適當郵件偵測、捕獲和採取補救措施，以協助將通訊風險降到最低。 此方案透過引進一些新的增強功能（如智慧範本、彈性修復工作流程及可行動的觀點），擴充 Office 365 中監管原則的功能。 <br/>|[Microsoft 365 (預覽中的通訊法規遵從性) ](communication-compliance.md)|
+|資料分類 (預覽)  <br/>|我們新的資料分類頁面包含強大的洞察力和工具，可協助您探索和評估敏感資訊和標籤在組織中的內容中使用 (保留和敏感度) 。 回顧包含機密資訊或已套用標籤的內容、探索各個 Microsoft 365 位置的標籤活動、建立自訂機密資訊類型，以及更多。<br/>|[資料分類概觀 (預覽)](data-classification-overview.md)|
+|Trainable 分類 (預覽)  <br/>|這個強大的新工具使用我們的機器學習引擎，協助識別您的組織中的內容類別別，例如法規檔或員工合約。 建立後，可使用多個規範方案中的分類器來偵測相關的內容，並加以分類、保護、保留，等等。<br/>|[開始使用可訓練的分類器 (預覽)](classifier-getting-started-with.md)|
 
 #### <a name="updated-compliance-solutions"></a>更新的規範解決方案
 
@@ -171,7 +263,7 @@ ms.locfileid: "45199463"
 |資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md)|
 |資料主體要求 |資料隱私權 > 資料主體要求 <br/> https://protection.office.com/dsrcases |資料主體要求 <br/> https://compliance.microsoft.com/datasubjectrequest |[使用 DSR 案例工具管理 GDPR 資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |電子文件探索|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
-|事件|記錄管理 > 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件發生時開始保留](event-driven-retention.md)|
+|Events|記錄管理 > 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件發生時開始保留](event-driven-retention.md)|
 |檔案計畫|記錄管理 > 檔計畫 <br/> https://protection.office.com/fileplan |記錄管理 > 檔計畫] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[使用檔案計畫來管理保留標籤](file-plan-manager.md)|
 |匯入 PST 檔案|資訊管理 > 匯入 PST 檔案 <br/> https://protection.office.com/importV2 |資訊控管 > 匯入] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[將組織的 PST 檔案匯入的概觀](importing-pst-files-to-office-365.md)|
 |標籤活動瀏覽器|資訊控管 > 標籤活動瀏覽器 <br/> https://protection.office.com/labelexplorer |資料分類 > 活動流覽] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[檢視套用標籤的內容上的活動 (預覽)](data-classification-activity-explorer.md)|
@@ -180,7 +272,7 @@ ms.locfileid: "45199463"
 |敏感資訊類型|分類 > 敏感資訊類型 <br/> https://protection.office.com/sensitivetypes |資料分類 > 敏感度資訊類型] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)|
 |敏感度標籤及標籤原則|分類 > 敏感度標籤 > 標籤及標籤原則] 索引標籤 <br/> https://protection.office.com/sensitivity |資訊保護 > 標籤及標籤原則] 索引標籤 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度標籤](sensitivity-labels.md) |
 |服務保證|服務保證 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服務保障資源只可在 Office 365 安全性 & 規範中心存取。 |[安全性與規範中心的服務保證](service-assurance.md)|
-|監督|監督 <br/> https://protection.office.com/supervisoryreviewv2 |通訊合規性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 中的通訊法規遵從性（預覽）](communication-compliance.md) |
+|監督|監督 <br/> https://protection.office.com/supervisoryreviewv2 |通訊合規性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 (預覽中的通訊法規遵從性) ](communication-compliance.md) |
 
 ## <a name="september-2019"></a>2019 年 9 月
 
@@ -213,6 +305,6 @@ ms.locfileid: "45199463"
 
 ### <a name="search-and-filtering-for-reports"></a>搜尋及篩選報表
 
-不會在報表的海洋中向內滾動，以找出您想要的專案。 您現在可以搜尋報告（根據其標題），並篩選類別如「標籤」和「符合性」，以及「Office 365」和「Microsoft Cloud App Security」之類的來源。
+不會在報表的海洋中向內滾動，以找出您想要的專案。 您現在可以根據報表的標題來搜尋報表 () 並篩選類別如「標籤」和「符合性」，以及「Office 365」和「Microsoft Cloud App Security」之類的來源。
 
 ![具有套用篩選之報表之搜尋和篩選按鈕的螢幕抓隨](../media/mcc_report_filtering.png)

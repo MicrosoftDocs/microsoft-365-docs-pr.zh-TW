@@ -1,5 +1,5 @@
 ---
-title: 英國政府-雲端（G-Cloud）
+title: '英國政府-Cloud (G-Cloud) '
 description: Crown 商務服務已將 Microsoft 雲端服務分類更新為政府 Cloud v. 6。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
@@ -14,30 +14,30 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 814b04583724b9ab8e6bcb570d51d24467755064
-ms.sourcegitcommit: 51e47ca4b355436a2ad3deb154060eb1927428e6
+ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773764"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560770"
 ---
-# <a name="united-kingdom-government-cloud-g-cloud"></a>英國政府-雲端（G-Cloud）
+# <a name="united-kingdom-government-cloud-g-cloud"></a>英國政府-Cloud (G-Cloud) 
 
 ## <a name="uk-g-cloud-overview"></a>UK G-Cloud 一覽
 
-政府雲端（G-Cloud）是英國政府的計畫，可讓政府部門輕鬆購買雲端服務，並促進政府廣泛採用雲端計算。 G-雲端包含一系列的架構合約協定與雲端服務提供者（如 Microsoft），以及其在線上存放區中的服務清單（數位市場）。 這類組織可讓公用部門組織比較及購買這些服務，而不需要執行其專屬的完整審查程式。 包含在數位市場中，需要自我證明符合性，接著由政府數位服務（GDS）分支加以判斷以進行驗證。
+政府雲端 (G-Cloud) 是英國政府的計畫，可讓政府部門輕鬆購買雲端服務，並促進政府廣泛採用雲端計算。 G-Cloud 包含一系列的架構合約協定與雲端服務提供者 (例如 Microsoft) ，以及其在線上存放區中的服務清單（數位市場）。 這類組織可讓公用部門組織比較及購買這些服務，而不需要執行其專屬的完整審查程式。 包含在數位市場中需要自我證明法規遵從性，遵循政府數位服務 (GDS) 分支以判斷的方式進行驗證。
 
-G Cloud 約會程式已在2014中經過簡化，可縮短英國政府的時間和成本，並從六個層級簡化政府的安全性分類架構：官方、機密及主要機密。 （G-Cloud 憑證層級不再表示為影響層級或 IL;Microsoft 先前為 Microsoft Azure、Microsoft Dynamics 365 和 Microsoft Office 365 提供 IL2 資格鑒定。
+G Cloud 約會程式已在2014中經過簡化，可縮短英國政府的時間和成本，並從六個層級簡化政府的安全性分類架構：官方、機密及主要機密。  (G-Cloud 憑證層級不再表示為影響層級或 IL;Microsoft 先前為 Microsoft Azure、Microsoft Dynamics 365 和 Microsoft Office 365 提供 IL2 資格鑒定。 ) 
 
 若不是先前提供之雲端服務的中央評估，則新程式需要雲端服務提供者來自我認證，並提供證據以支援 G Cloud 的14雲端安全性原則。 這尚未變更 Microsoft 所產生的證據或公司所遵循的標準。
 
 ## <a name="microsoft-and-uk-g-cloud"></a>Microsoft 和 UK G-Cloud
 
-Microsoft 每年都會準備檔並送出證據，證明其內部範圍的 enterprise 雲端服務遵循原則，讓潛在的 G Cloud 客戶瞭解其風險環境。 （如同舊版的 G-雲端資格鑒定，它會依賴 ISO 27001 認證）。然後，GDS accreditor 會對 Microsoft assertion 語句執行數項隨機檢查，並提供證據範例，並決定符合性。
+Microsoft 每年都會準備檔並送出證據，證明其內部範圍的 enterprise 雲端服務遵循原則，讓潛在的 G Cloud 客戶瞭解其風險環境。  (如同舊版的 G-Cloud 資格鑒定，它會根據 ISO 27001 認證。 ) GDS accreditor 然後對 Microsoft assertion 語句執行數項隨機檢查、範例證據，以及決定符合性。
 
 Microsoft 服務對「數位市場」的預約表示，UK 政府的代理商和合作夥伴可以使用「範圍內的服務」來儲存及處理 UK 官方政府資料（大多數政府資料）。 此外，在 G-雲端中，有超過450的 Microsoft 合作夥伴是 Microsoft 雲端服務的轉銷商。 它們可以直接斷言範圍內服務與自身應用程式中的14個原則的符合性。 不過，客戶和協力廠商必須針對未包含在 Microsoft 雲端服務規範中的任何元件，自行達成其法規遵從性。
 
-瞭解如何使用 Azure 安全性和合規性藍圖加速您的英國 G-Cloud v6 部署：[下載 Azure 藍圖 UK G-Cloud 原則實施指導](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)方針
+ [14 cloud cloud the Cloud Security Controls Using Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/)提供客戶策略，將其服務移至 Azure，並協助符合 CESG/NSCS 所規定的英國義務。 白皮書可深入瞭解 Azure 如何用來協助解決雲端安全性主體中所述的14個控制項，並概述客戶在採用 Microsoft Azure 服務時，如何更快地進行移動，以節約成本。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 

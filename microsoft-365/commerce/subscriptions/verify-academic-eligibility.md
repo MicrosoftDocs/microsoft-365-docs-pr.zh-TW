@@ -18,12 +18,13 @@ ms.custom: ''
 search.appverid:
 - MET150
 description: 瞭解如何驗證您的學校是否符合 Microsoft 365 教育版學術的定價。
-ms.openlocfilehash: 70bc4e986a5072b7f05ae983b2e932aa804caaeb
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.date: 07/21/2020
+ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204997"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560700"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>驗證 Microsoft 365 教育版訂閱的學術資格
 
@@ -44,7 +45,7 @@ ms.locfileid: "45204997"
 
 ## <a name="verify-your-schools-academic-eligibility"></a>驗證學校的學術資格
 
-在大多數情況下，當您註冊免費試用版並完成資格驗證嚮導以提供學校的網域時，您會收到立即核准或拒絕學校的資格。 在某些情況下，我們需要詳細資訊才能完成手動資格考核。 這次評論可能需要最多10個工作日。 在我們回顧您的學校資格資訊之後，我們會傳送電子郵件通知您學校的狀態。
+在大多數情況下，當您註冊免費試用版並完成資格驗證嚮導以提供學校的網域時，您會收到立即核准或拒絕學校的資格。 在某些情況下，我們需要詳細資訊才能完成手動資格考核，並會與您的問卷達成聯繫以完成。 這次評論可能需要最多10個工作日。 在我們回顧您的學校資格資訊之後，我們會傳送電子郵件通知您學校的狀態。
 
 您可以在進入網域之前先關閉學術驗證嚮導，然後立即開始使用試用訂閱。 不過，您必須在完成驗證程式後，才符合學術的價格。 您必須在免費試用結束之前完成程式，以轉換為付費訂閱，並繼續使用該流程。 當您轉換為免費的 A1 訂閱時，也會套用這種情況。
 
@@ -98,9 +99,9 @@ ms.locfileid: "45204997"
 
 ## <a name="related-content"></a>相關內容
 
-[Microsoft 365 IT 系統管理員的教育檔](https://docs.microsoft.com/education/itadmins)（文章連結） \
-[Microsoft 小組教育](https://microsoft.com/education/products/teams/default.aspx)版（產品頁面） \
-[瞭解 Microsoft 365 for business 中的訂閱與授權](../licenses/subscriptions-and-licenses.md)（文章） \
-[將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md)（文章） \
-[購買或移除訂閱授權](../licenses/buy-licenses.md)（文章） \
-[將使用者移至不同的訂閱](move-users-different-subscription.md)（文章）
+[Microsoft 365 的教育檔，供 IT 系統管理員](https://docs.microsoft.com/education/itadmins) (文章連結) \
+[Microsoft 球隊教育](https://microsoft.com/education/products/teams/default.aspx)版 (產品頁面) \
+[瞭解 Microsoft 365 for business 中的訂閱和授權](../licenses/subscriptions-and-licenses.md) (文章) \
+ (篇文章) \[中指派授權給使用者](../../admin/manage/assign-licenses-to-users.md)
+[購買或移除訂閱授權](../licenses/buy-licenses.md) (篇) \
+[將使用者移至其他訂閱](move-users-different-subscription.md) (文章) 

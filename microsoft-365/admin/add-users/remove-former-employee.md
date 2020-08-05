@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '遵循此檢查清單，從 Microsoft 365 中移除員工，並保護資料安全。 '
-ms.openlocfilehash: 51fd26835cd74fa8403437397d37395fcf1c7301
-ms.sourcegitcommit: bd5a08785b5ec320b04b02f8776e28bce5fb448f
+ms.openlocfilehash: b63866615c19ecf1d9096f0d63cbcb2008350f51
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44844855"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560384"
 ---
-# <a name="remove-a-former-employee"></a>移除離職員工
+# <a name="remove-or-delete-a-former-employee"></a>移除或刪除離職員工
 
 ::: moniker range="o365-21vianet"
 
@@ -53,42 +53,45 @@ ms.locfileid: "44844855"
 
 若要防止員工登入：
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取使用者名稱旁的方塊，然後選取 [**重設密碼**]。
 
-3. 輸入新密碼，然後選取 [**重設**]。 （不要將其傳送給他們）。
+3. 輸入新密碼，然後選取 [**重設**]。  (不要將其傳送給他們。 ) 
     
-4. 選取使用者的名稱以移至其屬性窗格，然後在 [ **OneDrive** ] 索引標籤上，選取 [**啟動登出**]。
+4. 選取使用者的名稱以移至其屬性窗格，然後在 [**帳戶**] 索引標籤上，選取 [**啟動登出**]。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取使用者，然後選取 [**重設密碼**]。
 
-3. 輸入新密碼，然後選取 [**重設**]。 （不要將其傳送給他們）。
+3. 輸入新密碼，然後選取 [**重設**]。  (不要將其傳送給他們。 ) 
 
-4. 再次選取使用者，展開 [ **OneDrive 設定**]，然後選取 [登出] 旁邊**的**[**啟動**]。
+4. 選取使用者的名稱以移至其屬性窗格，然後在 [**帳戶**] 索引標籤上，選取 [**啟動登出**]。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取使用者，然後選取 [**重設密碼**]。
 
-3. 輸入新密碼，然後選取 [**重設**]。 （不要將其傳送給他們）。
+3. 輸入新密碼，然後選取 [**重設**]。  (不要將其傳送給他們。 ) 
 
-4. 再次選取使用者，展開 [ **OneDrive 設定**]，然後選取 [登出] 旁邊**的**[**啟動**]。
+4. 選取使用者的名稱以移至其屬性窗格，然後在 [**帳戶**] 索引標籤上，選取 [**啟動登出**]。
 
 ::: moniker-end
 
+> [!NOTE]
+> 您必須是全域系統管理員，才可啟動登出。
+
     
-在一小時內，或在他們保留目前的 Microsoft 365 頁面時，系統會提示他們重新登入。 （存取權杖適用于一個小時，所以時程表取決於該權杖所留下的時間，以及是否要流覽至目前的網頁。）
+在一小時內，或在他們保留目前的 Microsoft 365 頁面時，系統會提示他們重新登入。  (存取權杖適用于一個小時，所以時程表取決於該權杖所留下的時間，以及是否要將其流覽至目前的網頁。 ) 
   
  **警告**：如果使用者在 Outlook 網頁版上，只要在其信箱中按一下 [離開]，就不會立即開啟。 當他們選取不同的麻將牌（例如 OneDrive，或重新整理其瀏覽器）時，就會開始登出。 
   
@@ -153,15 +156,15 @@ ms.locfileid: "44844855"
 
 ::: moniker range="o365-worldwide"  
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要封鎖的員工名稱，然後選取 [**郵件**] 索引標籤。
 
 3. 在 [**電子郵件**轉寄] 底下，選取 [**管理電子郵件轉發**]。
 
-4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入即將取得電子郵件的目前員工（或共用信箱）的電子郵件地址。 
+4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入目前員工 (的電子郵件地址，或要取得電子郵件) 的共用信箱。 
   
-5. 選取 **[儲存]**。 
+5. 選取 [儲存]****。 
     
 6. 請記住，不要刪除離職員工的帳戶。
  
@@ -169,15 +172,15 @@ ms.locfileid: "44844855"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要封鎖的員工，然後展開 [**郵件設定**]。
 
 3. 在 [**電子郵件轉發**] 旁，選取 [**編輯**]。
 
-4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入即將取得電子郵件的目前員工（或共用信箱）的電子郵件地址。 
+4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入目前員工 (的電子郵件地址，或要取得電子郵件) 的共用信箱。 
   
-5. 選取 **[儲存]**。 
+5. 選取 [儲存]****。 
     
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -185,15 +188,15 @@ ms.locfileid: "44844855"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要封鎖的員工，然後展開 [**郵件設定**]。
 
 3. 在 [**電子郵件轉發**] 旁，選取 [**編輯**]。
 
-4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入即將取得電子郵件的目前員工（或共用信箱）的電子郵件地址。 
+4. 開啟 [**轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄**位址**] 方塊中，輸入目前員工 (的電子郵件地址，或要取得電子郵件) 的共用信箱。 
   
-5. 選取 **[儲存]**。 
+5. 選取 [儲存]****。 
     
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -215,9 +218,10 @@ ms.locfileid: "44844855"
     
 5. 在 [行動**裝置詳細資料**] 頁面的 [行動**裝置**] 下，選取行動裝置，選取 [**清除資料** ![ 清除裝置] ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) ，然後選取 [**封鎖**]。 
     
-6. 選取 **[儲存]**。 
+6. 選取 [儲存]****。 
     
-    **秘訣**：請確定您已移除或停用內部部署 Blackberry Enterprise Service 中的使用者。 您也應停用使用者的任何 Blackberry 裝置。 如需有關如何停用使用者的特定步驟，請參閱 Blackberry Business Cloud Services Administration Guide。 
+   > [!TIP]
+   > 請務必移除或停用內部部署 Blackberry Enterprise Service 中的使用者。 您也應停用使用者的任何 Blackberry 裝置。 如需有關如何停用使用者的特定步驟，請參閱 Blackberry Business Cloud Services Administration Guide。 
     
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>封鎖離職員工對 Microsoft 365 資料的存取權
 <a name="bkmk_block"> </a>
@@ -228,7 +232,7 @@ ms.locfileid: "44844855"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要封鎖的員工名稱，在使用者的名稱下，選取 [**封鎖此使用者**的符號]。
 
@@ -238,7 +242,7 @@ ms.locfileid: "44844855"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要封鎖的員工，然後選取 [封鎖登**入**]。
 
@@ -248,7 +252,7 @@ ms.locfileid: "44844855"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要封鎖的員工，然後選取 [封鎖登**入**]。
 
@@ -275,35 +279,35 @@ ms.locfileid: "44844855"
 
 所以，當有人離開您的組織後，您就不會繼續支付授權，因此您必須移除其 Microsoft 365 授權，然後將其從您的訂閱中刪除。 如果您選擇不要從您的訂閱中刪除授權，您可以將授權指派給其他使用者。
   
-在移除授權之後，該使用者的所有資料會保留 30 天。 您可以[存取](get-access-to-and-back-up-a-former-user-s-data.md)資料，或者如果該使用者復職，也可以[還原](restore-user.md)帳戶。 30天后，會從 Microsoft 365 永久刪除使用者的所有資料（儲存在 SharePoint Online 上的檔除外），且無法復原。 
+在移除授權之後，該使用者的所有資料會保留 30 天。 您可以[存取](get-access-to-and-back-up-a-former-user-s-data.md)資料，或者如果該使用者復職，也可以[還原](restore-user.md)帳戶。 30天后，使用者的所有資料 (，除了 SharePoint 線上) 上儲存的檔，都是從 Microsoft 365 永久刪除，且無法復原。 
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要封鎖的員工名稱，然後選取 [**授權與應用程式**] 索引標籤。
 
-4. 清除您要移除之授權的核取方塊，然後選取 [**儲存變更**]。
+4. 清除您要移除之授權 () 的核取方塊，然後選取 [**儲存變更**]。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要封鎖的員工，然後在 [**產品授權**] 旁，選取 [**編輯**]。
 
-3. 在 [**產品授權**] 頁面上，關閉您要移除的授權，然後選取 [**儲存**]。
+3. 在 [**產品授權**] 頁面上，關閉您想要移除的授權 (s) ，然後選取 [**儲存**]。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要封鎖的員工，然後在 [**產品授權**] 旁，選取 [**編輯**]。
 
-3. 在 [**產品授權**] 頁面上，關閉您要移除的授權，然後選取 [**儲存**]。
+3. 在 [**產品授權**] 頁面上，關閉您想要移除的授權 (s) ，然後選取 [**儲存**]。
 
 ::: moniker-end
 
@@ -343,6 +347,10 @@ ms.locfileid: "44844855"
 當您在 Office 365 中移除使用者的授權後，系統會釋出與該使用者相關的 PSTN 通話號碼，方便您將該號碼指派給其他使用者。
   
 如果授權被移除的使用者屬於某個佇列群組，通話佇列代理程式將無法再指定這些使用者。因此，我們建議您一併從與該通話佇列相關的群組中移除該使用者。 
+
+## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>設定對組織中人員的來電轉接
+
+如果您需要設定終止員工之電話號碼的來電轉接，[呼叫原則] 底下的「來電轉接」設定可以設定轉寄，讓來電可以轉寄給其他使用者或同時撥打另一位人員。 如需詳細資訊，請參閱[在 Microsoft 小組中呼叫原則](https://docs.microsoft.com/microsoftteams/teams-calling-policy)。
   
 ## <a name="delete-a-former-employees-user-account"></a>刪除離職員工的使用者帳戶
 <a name="bkmk_delete"> </a>
@@ -353,7 +361,7 @@ ms.locfileid: "44844855"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要刪除的員工名稱。
 
@@ -363,7 +371,7 @@ ms.locfileid: "44844855"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要刪除的員工名稱。
 
@@ -373,7 +381,7 @@ ms.locfileid: "44844855"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 選取您要刪除的員工名稱。
 
@@ -414,7 +422,7 @@ ms.locfileid: "44844855"
    
 ### <a name="how-to-get-fastest-response-for-account-termination"></a>如何以最快速度取得帳戶終止的回應
 
- **最快**：使用 Exchange 系統管理中心（使用 PowerShell）或 Azure Active Directory 系統管理中心。 在內部部署環境中，透過 DirSync 同步處理變更可能會花費數小時。 
+ **最快**：使用 Exchange 系統管理中心 (使用 PowerShell) 或 Azure Active Directory 系統管理中心。 在內部部署環境中，透過 DirSync 同步處理變更可能會花費數小時。 
   
  使用**內部部署與 Exchange Datacenter 中的使用者速度最快**：使用 Azure Active Directory 系統管理中心/Exchange 系統管理中心終止會話，並在內部部署環境中也進行變更。 若不採取此做法，在 Azure Active Directory 系統管理中心或 Exchange 系統管理中心進行的變更將被 DirSync 覆寫。 
   

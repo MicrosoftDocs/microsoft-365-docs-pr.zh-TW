@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: d25ecb72ebdd9415c6745910f9e3fb04d6f078dc
-ms.sourcegitcommit: d767c288ae34431fb046f4cfe36cec485881385f
+ms.openlocfilehash: f7357c204105772ef1780ef94f211e9d711ec735
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43516908"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560880"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心概述
 
@@ -29,7 +29,9 @@ ms.locfileid: "43516908"
 
 新的 Microsoft 365 安全性中心和[Microsoft 365 規範中心](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center)是專門設計的工作區，可滿足安全性小組和合規性小組的需求。 這些解決方案是透過 Microsoft 365 服務整合，並提供可行動的觀點，以協助降低您的數位房地產的風險並加以保護。
 
-請造訪 Microsoft 365 的安全性中心[https://security.microsoft.com](https://security.microsoft.com)，網址為。 
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BmvV]
+
+請造訪 Microsoft 365 的安全性中心，網址為 [https://security.microsoft.com](https://security.microsoft.com) 。 
 
 > [!NOTE]
 > 您必須獲指派適當的角色，例如全域管理員、安全性管理員、安全性操作員或 Azure Active Directory 中的安全性讀取器，才能存取 Microsoft 365 的安全性中心。
@@ -50,7 +52,7 @@ Microsoft 365 安全性中心包含：
 * **報告**–取得您所需的詳細資料和資訊，以更好地保護您的使用者、裝置、應用程式等等。
 * **安全分數** – 使用 Microsoft 安全分數改善整體的安全性狀況。 此頁面提供您已啟用之不同安全性功能及功能的所有摘要摘要，並包含改進區域的建議。
 * **高級搜尋**–主動搜尋 Microsoft 365 組織中的惡意程式碼、可疑檔案和活動。
-* **分類** – 藉由新增標籤來分類文件、電子郵件訊息、文件、網站等項目，以協助防止資料遺失。 套用標籤時（自動或使用者），會根據您選擇的設定，保護內容或網站。 例如，您可以建立標籤來加密檔案、新增內容標記，以及控制使用者對特定網站的存取。
+* **分類** – 藉由新增標籤來分類文件、電子郵件訊息、文件、網站等項目，以協助防止資料遺失。 當標籤自動套用至使用者 () 時，內容或網站會根據您所選擇的設定進行保護。 例如，您可以建立標籤來加密檔案、新增內容標記，以及控制使用者對特定網站的存取。
 * **原則** – 設定原則來管理裝置、防範威脅，以及接收關於組織中各項活動的警示。
 * **權限** – 管理組織中可存取 Microsoft 365 安全性中心以檢視內容及執行工作的人員。 您也可以在 Azure AD 入口網站中指派 Microsoft 365 權限。
 

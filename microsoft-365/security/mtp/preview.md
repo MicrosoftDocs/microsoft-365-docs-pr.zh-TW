@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 77f84519c7173aa1f9a4293b222fa5f677ed8159
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: 3559bf3391427d6f6ae0cfc6b6f6e8ed343438fa
+ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430360"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552659"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威脅防護預覽功能
 
@@ -50,12 +50,14 @@ Microsoft 威脅防護服務會不斷更新，以包含新功能增強功能及�
 
 3. 選取 [**預覽功能**]  >  **開啟預覽功能**。 
 
-3. 選取 **[儲存]**。
+3. 選取 [儲存]****。
 
 當您看到已選取 [**開啟預覽功能**] 核取方塊時，您會知道已開啟預覽功能。 
 
 ## <a name="preview-features"></a>預覽功能
 下列是目前可供預覽的功能和增強功能：
 
-- **[入口網站架構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** 資訊：直接在「安全性中心」中使用之架構資料表的相關資訊。 除了資料表和欄描述之外，此參考還提供支援的事件種類（ `ActionType` 值）和範例查詢的相關資訊。
+- **[在高級搜尋中採取動作](advanced-hunting-take-action.md)**：快速包含威脅或您在 [[高級搜尋](advanced-hunting-overview.md)] 中找到的受損資產。
+
+- **[In 入口架構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**-直接在「安全性中心」中取得高級搜尋架構表格的相關資訊。 除了表及欄描述之外，此便利參考還提供支援的事件種類 (`ActionType` 值) 和範例查詢的相關資訊。
 
