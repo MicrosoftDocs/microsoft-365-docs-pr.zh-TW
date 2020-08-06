@@ -12,12 +12,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 3a8daf7982cf0b28adebee5d4d05a9893faf30ba
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 636ac13ffa4e17411e59e47d7aa532a6f0e516e3
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521906"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578003"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Microsoft cloud for enterprise 架構設計圖例
 
@@ -31,7 +31,7 @@ IT 結構設計師在使用 Microsoft 雲端服務和平台時，有關網路功
   
 |**項目**|**描述**|
 |:-----|:-----|
-|[![Microsoft 雲端網路模型的縮圖影像](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Network-Poster/MSFT_cloud_architecture_networking.vsdx) <br/>2019年11月更新| 此模型包含： <ul><li> 將您的網路提升為雲端連線網路 </li><li> Microsoft 雲端連線的共同項目 </li><li> Microsoft 雲端連線的 ExpressRoute </li><li> 設計 Microsoft SaaS、Azure PaaS 和 Azure IaaS 的網路 </li></ul><br/>  <br/>|
+|[![Microsoft 雲端網路模型的縮圖影像](../media/solutions-architecture-center/msft-cloud-networking-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_networking.vsdx) <br/>2020年8月更新 | 此模型包含： <ul><li> 將您的網路提升為雲端連線網路 </li><li> Microsoft 雲端連線的共同項目 </li><li> Microsoft 雲端連線的 ExpressRoute </li><li> 設計 Microsoft SaaS、Azure PaaS 和 Azure IaaS 的網路 </li></ul><br/>  <br/>|
 
 <a name="hybrid"></a>
 ### <a name="microsoft-hybrid-cloud-for-enterprise-architects"></a>Microsoft hybrid cloud for enterprise architects
@@ -40,7 +40,7 @@ IT 結構設計師在使用 Microsoft 服務和平台時，有關混合雲端需
   
 |**項目**|**描述**|
 |:-----|:-----|
-|[![Microsoft 混合式雲端模型的縮圖影像](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/Hybrid-Poster/MSFT_cloud_architecture_hybrid.vsdx) <br>2019年11月更新 | 此模型包含： <ul><li> Microsoft 的雲端產品 (SaaS、Azure PaaS 和 Azure IaaS) 及其共同元素 </li><li> Microsoft 雲端服務的混合式雲端架構 </li><li> Microsoft SaaS (Office 365)、Azure PaaS 和 Azure IaaS 的混合式雲端案例 </li></ul><br/>|
+|[![Microsoft 混合式雲端模型的縮圖影像](../media/solutions-architecture-center/msft-hybrid-cloud-model-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_hybrid.vsdx) <br>2020年8月更新 | 此模型包含： <ul><li> Microsoft 的雲端產品 (SaaS、Azure PaaS 和 Azure IaaS) 及其共同元素 </li><li> Microsoft 雲端服務的混合式雲端架構 </li><li> Microsoft SaaS (Office 365)、Azure PaaS 和 Azure IaaS 的混合式雲端案例 </li></ul><br/>|
    
 
 ### <a name="architecture-approaches-for-microsoft-cloud-tenant-to-tenant-migrations"></a>Microsoft Cloud 租用戶對租用戶移轉的架構方法 
@@ -48,7 +48,7 @@ IT 結構設計師在使用 Microsoft 服務和平台時，有關混合雲端需
 
 |**Item**|**描述**|
 |:-----|:-----|
-|[![Teams 邏輯架構海報的縮圖影像](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>2019年7月更新    |此模型包含： <ul><li>商務案例與架構方法的對應</li><li>設計考量</li><li>單一事件移轉流程</li><li>分階段移轉流程</li><li>租用戶移動或分割流程</li></ul>|
+|[![Teams 邏輯架構海報的縮圖影像](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>2019年7月更新    |此模型包含： <ul><li>商務案例與架構方法的對應</li><li>設計考量</li><li>單一事件移轉流程</li><li>分階段移轉流程</li><li>租用戶移動或分割流程</li></ul>|
 
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Microsoft cloud security for enterprise architects

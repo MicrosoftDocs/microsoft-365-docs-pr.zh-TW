@@ -1,5 +1,5 @@
 ---
-title: 郵件迴圈深入解析
+title: 修正可能的郵件迴圈洞察力
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,24 +12,32 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: 系統管理員可以深入瞭解安全性 & 規範中心的郵件流程儀表板中的郵件迴圈洞察力。
-ms.openlocfilehash: 80767a265734c542db8e24cf58d0a1c0df469780
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 系統管理員可以瞭解如何使用安全 & 規範中心內郵件流程儀表板中的 [修正可能的郵件迴圈洞察力]，識別並修正其組織中的郵件迴圈。
+ms.openlocfilehash: 54240cffc534b4be708492b37b827636edab280e
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819313"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577619"
 ---
-# <a name="mail-loop-insight"></a>郵件迴圈深入解析
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>修正安全性 & 規範中心內可能的郵件迴圈洞察力
 
-郵件迴圈是錯誤的，因為它會浪費系統資源、使用組織的郵件磁片區配額，並將混亂的未傳遞回報（也稱為 NDRs 或退回的郵件）傳送給原始寄件者。 當您的組織中找到郵件迴圈時，此深入瞭解會報告該迴圈所涉及的電子郵件網域，以及該迴圈中之前一天的郵件數目。
+郵件迴圈是錯誤的，因為它會浪費系統資源、使用組織的郵件磁片區配額，並傳送混亂的非傳遞回報 (也稱為 NDRs 或退回郵件) 至原始寄件者。
 
-![安全性 & 規範中心內郵件流程儀表板中的郵件迴圈洞察力](../../media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+在您的組織中偵測到郵件迴圈時，在安全性 & 合規性中心的 [[郵件流程儀表板](mail-flow-insights-v2.md)] 中，**建議**的郵件流程儀表板區域會通知您，以**修正可能的郵件迴圈**。 這種洞察力只會在偵測到條件之後才會出現 (如果您沒有任何郵件迴圈，您就不會看到) 的洞察力。
 
-您可以按一下 [**查看詳細資料**] 以查看彈出窗格中的詳細資料。 我們也會找出最常見的迴圈案例，並提供建議的動作（如果有的話）來修正迴圈。
+![修正郵件流程儀表板中為您推薦的郵件流程規則的速度](../../media/mfi-fix-possible-mail-loop.png)
 
-![在郵件流程儀表板中按一下 [查看詳細資料] 中的 [查看詳細資料] 後的浮出窗格](../../media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
+當您按一下小工具上的 [**查看詳細資料**] 時，會出現一個快顯視窗，包含詳細資訊：
+
+- **網域**
+- **郵件數目**：您可以按一下 [ **View sample messages** ]，以查看受環路影響之郵件範例的[郵件追蹤](message-trace-scc.md)結果。
+- **網欄位型別**"，例如「授權」或「非授權」。
+- **MX 記錄**：主機 (的**郵件伺服器**) 和網域的 MX 記錄**優先順序**值。
+- **迴圈原因**和**解決方法**：我們會嘗試找出最常見的郵件迴圈案例，並提供建議的動作 (如果可用) 修正此迴圈。
+
+![在 [修正可能的郵件迴圈真知灼見] 上按一下 [查看詳細資料] 後出現的詳細資料浮出](../../media/mfi-fix-possible-mail-loop-details.png)
 
 ## <a name="related-topics"></a>相關主題
 
-如需郵件流量儀表板中其他郵件流程深入解析之詳細資訊，請參閱[安全性與合規性中心中郵件流程深入解析](mail-flow-insights-v2.md)。
+如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱[Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

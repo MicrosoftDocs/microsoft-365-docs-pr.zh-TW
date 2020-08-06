@@ -18,12 +18,12 @@ description: 設定 Exchange Online 和合規性中心，以協助符合 CFTC �
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 769e13951ce15fb698131860fa78f25fa133e327
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: bba51bed4409bfb933b577419f48ab6963d4f7d6
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127300"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577113"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4
 
@@ -70,12 +70,3 @@ Cohasset 已驗證當 Exchange Online 和安全性與合規性中心依建議設
 
 您可以使用 PowerShell 鎖定保留原則。 如需詳細資訊，請參閱[使用保留鎖定以符合法規需求](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)。
 
-## <a name="known-limitations"></a>已知限制
-
-目前，Exchange Online 存在一些限制：
-
-- 無法在 Teams 聊天和頻道訊息中使用通訊對話。
-- 無法保留 Teams 聊天和頻道訊息中的讚。
-
-> [!NOTE]
-> 項目層級稽核現在可供 Microsoft 365 群組信箱使用。 如需詳細資訊，請參閱[管理信箱稽核](enable-mailbox-auditing.md)。

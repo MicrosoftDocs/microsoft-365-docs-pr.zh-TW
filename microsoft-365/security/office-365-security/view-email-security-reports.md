@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 762903428245797ecdc0357dc485e8fe25d2203e
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 269e68c1e7f864ba5be84f1dc444a3d7d9c27e55
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434252"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46578027"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -34,7 +34,7 @@ ms.locfileid: "45434252"
 ## <a name="compromised-users-report"></a>已遭破壞的使用者報告
 
 > [!NOTE]
-> 這份報告可在 Microsoft 365 組織中使用 Exchange Online 信箱。 在獨立 Exchange Online Protection （EOP）組織中無法使用此功能。
+> 這份報告可在 Microsoft 365 組織中使用 Exchange Online 信箱。 在獨立 Exchange Online Protection (EOP) 組織中無法使用此功能。
 
 「已**遭破壞的使用者**報告」顯示顯示過去7天內已標示為**可疑**或**限制**的使用者帳戶數目。 在上述任一狀態的帳戶都有問題或甚至遭到破壞。 在經常使用的情況下，您可以使用報表來找出峰值，甚至是趨勢，也就是可疑或受限制的帳戶。 如需遭到破壞之使用者的詳細資訊，請參閱[回應遭到破壞的電子郵件帳戶](responding-to-a-compromised-email-account.md)。
 
@@ -58,13 +58,13 @@ ms.locfileid: "45434252"
 
 - **建立時間**
 - **User ID**
-- **Action**
+- **動作**
 
 若要回到報表檢視，請按一下 [**查看報告**]。
 
 ## <a name="encryption-report"></a>加密報告
 
-**加密報告**可用於 EOP （不含 exchange online 信箱的 exchange online 或獨立 EOP 中的訂閱）。 組織的安全小組可以使用此報告中的資訊來識別模式，並主動套用或調整敏感電子郵件訊息的原則。 例如：
+您可以在 Exchange Online 或獨立 EOP 中信箱的 EOP (訂閱中取得**加密報告**，而不需要 exchange online 信箱) 。 組織的安全小組可以使用此報告中的資訊來識別模式，並主動套用或調整敏感電子郵件訊息的原則。 例如：
 
 - 如果您看到大量的電子郵件是由使用者加密，您可能會想要新增加密原則，以自動化某些使用案例的加密。 如需詳細資訊，請參閱[定義郵件流程規則，以加密 Microsoft 365 中的電子郵件訊息](../../compliance/define-mail-flow-rules-to-encrypt-email.md)。
 
@@ -141,7 +141,7 @@ ms.locfileid: "45434252"
 
 ## <a name="malware-detections-in-email-report"></a>電子郵件報告中的惡意程式碼偵測
 
-[**電子郵件中的惡意**代碼偵測] 報告會顯示傳入和傳出電子郵件（Exchange Online PROTECTION 或 EOP 偵測到的惡意程式碼）中的惡意程式碼偵測的相關資訊。 如需 EOP 中惡意程式碼保護的詳細資訊，請參閱[EOP 中的反惡意程式碼保護](anti-malware-protection.md)。
+[**電子郵件中的惡意**代碼偵測] 報告會顯示傳入和傳出電子郵件中的惡意程式碼偵測的相關資訊， (Exchange Online PROTECTION 或 EOP) 偵測到的惡意程式碼。 如需 EOP 中惡意程式碼保護的詳細資訊，請參閱[EOP 中的反惡意程式碼保護](anti-malware-protection.md)。
 
  匯總 view 篩選允許90天，而 [詳細資料表格篩選] 只允許10天。
 
@@ -162,7 +162,7 @@ ms.locfileid: "45434252"
 - **Date**
 - **寄件者位址**
 - **收件者位址**
-- **郵件識別碼**：郵件頭的**Message-ID**標頭欄位中可用，且應該是唯一的。 範例值為 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` （記下角括弧）。
+- **郵件識別碼**：郵件頭的**Message-ID**標頭欄位中可用，且應該是唯一的。 範例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (記下角括弧) 。
 - **主旨**
 - **Filename**
 - **惡意軟體名稱**
@@ -171,7 +171,7 @@ ms.locfileid: "45434252"
 
 ## <a name="sent-and-received-email-report"></a>傳送和接收的電子郵件報告
 
-**傳送和接收的電子郵件**報告包含惡意程式碼、垃圾郵件、郵件流程規則（也稱為傳輸規則）的相關資訊，以及電子郵件進入服務後的高級惡意軟體偵測。 如需詳細資訊，請參閱[送出和接收的電子郵件報告](view-mail-flow-reports.md#sent-and-received-email-report)。
+**傳送和接收的電子郵件**報告包含惡意程式碼、垃圾郵件、郵件流程規則 (（也稱為傳輸規則) ）的相關資訊，以及電子郵件進入服務後的高級惡意軟體偵測。 如需詳細資訊，請參閱[送出和接收的電子郵件報告](view-mail-flow-reports.md#sent-and-received-email-report)。
 
 ## <a name="spam-detections-report"></a>垃圾郵件偵測報告
 
@@ -194,9 +194,9 @@ ms.locfileid: "45434252"
   - **篩選的垃圾郵件內容**
   - **垃圾郵件 IP 封鎖**
   - **垃圾郵件信封封鎖**
-  - **垃圾郵件 DBEB 篩選**：以目錄為基礎的邊緣封鎖（DBEB）
+  - **垃圾郵件 DBEB 篩選器**：以目錄為基礎的 edge 封鎖 (DBEB) 
 
-  當您將游標移到圖表中的某一天（資料點）時，您可以查看該天已封鎖的專案數，以及這些專案的分類方式。
+  當您將滑鼠停留在圖表中的某一天 (資料點) 時，您可以看到該天已封鎖的專案數，以及這些專案的分類方式。
 
   ![垃圾郵件偵測報告中的動作視圖](../../media/spam-detections-report-action-view.png)
 
@@ -221,7 +221,7 @@ ms.locfileid: "45434252"
 - **寄件者位址**
 - **收件者位址**
 - **事件類型**
-- **Action**
+- **動作**
 - **主旨**
 
 如果您按一下 [詳細資料] 表格中的 [**篩選**]，您可以使用下列篩選器修改結果：
@@ -234,7 +234,7 @@ ms.locfileid: "45434252"
 
 ## <a name="spoof-detections-report"></a>欺騙偵測報告
 
-「**欺騙**偵測報告」會顯示偵測到的電子郵件訊息數量，以及那些被視為「良好」（由於正當商務理由而完成的電子郵件）。 如需有關電子欺騙的詳細資訊，請參閱[EOP 中的反欺騙防護](anti-spoofing-protection.md)。
+「**欺騙**偵測報告」會顯示偵測到的電子郵件訊息數量，以及那些已被視為「良好」的電子郵件訊息。 (假冒郵件出於正當商務理由) 而完成。 如需有關電子欺騙的詳細資訊，請參閱[EOP 中的反欺騙防護](anti-spoofing-protection.md)。
 
 報表的匯總視圖允許90天的篩選，而詳細資料檢視只允許10天的篩選。
 
@@ -242,7 +242,7 @@ ms.locfileid: "45434252"
 
 ![報告儀表板中的欺騙偵測構件](../../media/spoof-detections-widget.png)
 
-當您將游標移到圖表中的某一天（資料點）時，您可以看到有多少偽造的電子郵件訊息。
+當您將滑鼠停留在圖表中的某一天 (資料點) 時，您可以看到有多少偽造的電子郵件訊息。
 
 您可以按一下 [**篩選**] 並選取下列其中一個或多個值，以篩選圖表和詳細資料表格：
 
@@ -260,16 +260,16 @@ ms.locfileid: "45434252"
 - **欺騙寄件者**
 - **True 寄件者**
 - **寄件者 IP**
-- **Action**
+- **動作**
 - **訊息計數**
 
 若要回到報表檢視，請按一下 [**查看報告**]。
 
-## <a name="threat-protection-status-report"></a>威脅防護狀態報表
+## <a name="threat-protection-status-report"></a>威脅防護狀態報告
 
 「**威脅防護狀態**」報告可用於 EOP 和 OFFICE 365 ATP;不過，報告包含不同的資料。 例如，EOP 客戶可以查看在電子郵件中偵測到惡意程式碼的相關資訊，但不會[發現 SharePoint 線上、OneDrive 或 Microsoft 小組中偵測到之惡意](atp-for-spo-odb-and-teams.md)檔案的相關資訊。
 
-該報告提供包含惡意內容的獨特電子郵件的匯總計數，例如檔案或網站位址（URLs），該惡意內容已封鎖反惡意程式碼引擎、[零小時的自動清除（ZAP）](zero-hour-auto-purge.md)和 atp 功能（如[atp 安全連結](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)及[atp 反網路釣魚](set-up-anti-phishing-policies.md)）。 您可以使用此資訊來識別趨勢，或判斷組織原則是否需要調整。
+報告提供包含惡意內容的獨特電子郵件的匯總計數，例如檔案或網站位址 (URLs 反惡意程式碼引擎封鎖的) 、[零小時的自動清除 (ZAP) ](zero-hour-auto-purge.md)，以及 atp 功能（如[atp 安全連結](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)及[atp 反網路釣魚](set-up-anti-phishing-policies.md)）。 您可以使用此資訊來識別趨勢，或判斷組織原則是否需要調整。
 
 若要查看報告，請開啟[安全性 & 合規性中心](https://protection.office.com)，移至 [**報告**] \> **儀表板**，然後選取 [**威脅防護狀態**]。 若要直接前往報告，請開啟下列其中一個 URLs：
 
@@ -278,7 +278,7 @@ ms.locfileid: "45434252"
 
 ![報告儀表板中的威脅防護狀態構件](../../media/threat-protection-status-report-widget.png)
 
-根據預設，圖表會顯示過去7天的資料。 如果您按一下 [**篩選**]，您可以選取90天的日期範圍（試用訂閱可能限制為30天）。 [詳細資料] 表格視圖允許篩選30天。
+根據預設，圖表會顯示過去7天的資料。 如果您按一下 [**篩選**]，可以選取90天的日期範圍 (試用訂閱可能限制為30天) 。 [詳細資料] 表格視圖允許篩選30天。
 
 ### <a name="report-view-for-the-threat-protection-status-report"></a>威脅防護狀態報表的報表檢視
 
@@ -335,7 +335,7 @@ ms.locfileid: "45434252"
   - **安全附件**<sup>1</sup>
   - **反網路釣魚**
   - **反垃圾郵件**
-  - **郵件流程規則**（也稱為傳輸規則）
+  - **郵件流程規則** (也稱為傳輸規則) 
   - **別人**
 
   ![威脅防護狀態報表中仿冒電子郵件的原則類型視圖](../../media/threat-protection-status-report-phishing-policy-type-view.png)
@@ -356,13 +356,13 @@ ms.locfileid: "45434252"
 
 僅限<sup>1</sup>個 OFFICE 365 ATP
 
-<sup>2</sup>個零小時自動清除（ZAP）在獨立 EOP 中無法使用（它只適用于 Exchange Online 信箱）。
+<sup>兩</sup>個零小時自動清除 (ZAP) 無法在獨立 EOP 中使用 (它只適用于 Exchange Online 信箱) 。
 
 如果您按一下 [**篩選**]，您可以使用下列篩選器修改報告：
 
 - **開始日期**和**結束日期**
 - 偵測值
-- **受保護者**（僅限 OFFICE 365 ATP）： **ATP**或**EOP**。 請注意，View 資料中無法使用這種可篩選的屬性 **：內容 \> 惡意程式碼**。
+-  (Office 365 ATP**保護**) ： **atp**或**EOP**。 請注意，View 資料中無法使用這種可篩選的屬性 **：內容 \> 惡意程式碼**。
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>威脅防護狀態報表的詳細資料表格視圖
 
@@ -391,7 +391,7 @@ ms.locfileid: "45434252"
 
 - **開始日期**和**結束日期**
 - 偵測值
-- **受保護者**（僅限 OFFICE 365 ATP）： **ATP**或**EOP**。 請注意，View 資料中無法使用這種可篩選的屬性 **：內容 \> 惡意程式碼**。
+-  (Office 365 ATP**保護**) ： **atp**或**EOP**。 請注意，View 資料中無法使用這種可篩選的屬性 **：內容 \> 惡意程式碼**。
 
 ## <a name="top-malware-report"></a>主要惡意程式碼報告
 
@@ -414,7 +414,7 @@ ms.locfileid: "45434252"
 
 ## <a name="url-threat-protection-report"></a>URL 威脅防護報告
 
-**URL 威脅防護報告**可用於 Office 365 高級威脅防護（ATP）。 如需詳細資訊，請參閱[URL 威脅防護報告](view-reports-for-atp.md#url-threat-protection-report)。
+您可以在 Office 365 Advanced 威脅防護 (ATP) 中取得**URL 威脅防護報告**。 如需詳細資訊，請參閱[URL 威脅防護報告](view-reports-for-atp.md#url-threat-protection-report)。
 
 ## <a name="user-reported-messages-report"></a>使用者報告的訊息報告
 
@@ -441,7 +441,7 @@ ms.locfileid: "45434252"
 
 - 在安全性 & 規範中心，您必須是下列其中一個角色群組的成員：
 
-  -組織管理-安全性管理員（您也可以在[Azure Active Directory 系統管理中心](https://aad.portal.azure.com)進行此作業-安全性讀取器
+  -組織管理-安全性管理員 (您也可以在[Azure Active Directory 系統管理中心](https://aad.portal.azure.com)進行此作業-安全性讀取器
 
   如需詳細資訊，請參閱[安全性與合規性中心中的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
 

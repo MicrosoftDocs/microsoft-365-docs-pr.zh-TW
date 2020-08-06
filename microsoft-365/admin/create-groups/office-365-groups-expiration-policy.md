@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 群組到期原則。
-ms.openlocfilehash: 84b7048e414fe37c89a59dd9f282a4b35e0f26c8
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: bda4bfbbef4e0d145c55b2a49b4d1203c6a7b1f0
+ms.sourcegitcommit: 4f82fa7270e7ec6c6dd80329f28612e1f3289b22
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560360"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46572136"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 群組到期原則
 
@@ -68,17 +68,25 @@ ms.locfileid: "46560360"
 
 ![Azure Active Directory 中群組到期設定的螢幕擷取畫面](../../media/azure-groups-expiration-settings.png)
 
-## <a name="how-expiry-works-with-the-retention-policy"></a>到期原則與保留原則的運作方式
+## <a name="how-expiration-and-renewal-work"></a>到期和更新的運作方式
 
-如果您在群組的安全性與合規性中心中有設定保留原則，到期原則會順利地使用保留原則運作。 當群組到期時，群組中的 [在信箱中交談] 核取方塊和群組網站中的檔案會保留在保留原則中所定義的特定天數內保留容器內。 但到期後，使用者將不會看到此群組或其內容。
+到期原則的運作方式如下： 
 
-## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>群組擁有者如何以及何時會到期的使用者群組
+- 在到期之前的一個月內，系統會檢查是否已建立群組，或自目前的續訂週期開始之後是否有任何組活動。
 
-群組擁有者只會透過電子郵件通知。 如果群組是透過 Planner、SharePoint 或任何其他應用程式建立，到期通知永遠都透過電子郵件傳送。 如果群組是透過小組建立，群組擁有者會收到透過「活動」區段進行更新的通知。 如果您的群組擁有者沒有有效的電子郵件地址，建議您在群組上啟用到期。
+- 如果偵測到活動，則到期日會在此時間內，依到期原則所指定的天數而推進。
 
-在群組到期之前30天，群組擁有者 (或您為沒有擁有者) 的群組所指定的電子郵件地址，將會收到電子郵件，讓使用者可以輕鬆地更新群組。 如果不加以更新，他們會在到期前的15天內收到另一個更新電子郵件。 如果他們仍未更新，他們會在到期前的一天內收到一封以上的電子郵件通知。
+- 若未偵測到上一活動，系統會繼續監視活動，直到到期日為止。 如果偵測到活動，系統會在該時間以指定的數量來提升到期日。
+
+在群組到期之前30天，群組擁有者 (或您為沒有擁有者) 的群組所指定的電子郵件地址，將會收到電子郵件，讓使用者可以輕鬆地更新群組。 如果不加以更新，他們會在到期前的15天內收到另一個更新電子郵件。 如果他們仍未更新，他們會在到期前的一天內收到一封以上的電子郵件通知。  (更新群組之後，就不會再傳送電子郵件提醒，直到30天前的新到期日為止。 ) 
+
+群組擁有者會透過電子郵件通知。 如果群組是透過 Planner、SharePoint 或任何其他應用程式建立，到期通知永遠都透過電子郵件傳送。 如果群組是透過小組建立，群組擁有者會收到透過「活動」區段進行更新的通知。 如果您的群組擁有者沒有有效的電子郵件地址，建議您在群組上啟用到期。
 
 若由於某些原因，任何擁有者或系統管理員都不會在到期之前更新群組，而且由於群組不符合自動更新的需求，所以不會發生自動更新，管理員仍可在到期後的30天內還原群組。 如需詳細資訊，請參閱：[還原已刪除的 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group)。
+
+## <a name="how-expiry-works-with-retention-policies"></a>到期使用保留原則的處理方式
+
+如果您在群組的安全性與合規性中心中有設定保留原則，到期原則會順利地使用保留原則運作。 當群組到期時，群組中的 [在信箱中交談] 核取方塊和群組網站中的檔案會保留在保留原則中所定義的特定天數內保留容器內。 但到期後，使用者將不會看到此群組或其內容。
 
 ## <a name="related-articles"></a>相關文章
 

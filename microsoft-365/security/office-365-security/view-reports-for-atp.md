@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 在安全性與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a2225cbbd9233199e0ce1fc0baf0be5fe59bd258
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 194ce245e02490a313effdeaad0715fdd8035a19
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560294"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577981"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 
@@ -254,7 +254,7 @@ Office 365 Advanced 威脅防護 (ATP) 組織 (例如，Microsoft 365 E5 訂閱�
 - **按一下 [時間]**
 - **使用者**
 - [URL]****
-- **Action**
+- **動作**
 - **App**
 
 如果您按一下 [詳細資料] 表格視圖中的 [**篩選器**]，可以篩選與報表檢視中相同的準則，**以及以逗號分隔的****網域**或收件者。

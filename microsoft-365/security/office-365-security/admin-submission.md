@@ -17,18 +17,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
-ms.openlocfilehash: 18941c1400917291f8924331fd19827e476db914
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 4d0737d881334db9cc4aeda43037ab89d7444618
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726846"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577867"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
 在使用 Exchange Online 信箱的 Microsoft 365 組織中，系統管理員可以使用安全性 & 合規性中心內的提交入口網站，將電子郵件訊息、URLs 和附件提交給 Microsoft 以供掃描。
 
-當您提交電子郵件時，您會收到任何可能允許內送電子郵件進入租使用者的原則，以及對郵件中的任何 URLs 和附件進行檢查的相關資訊。 可能允許郵件的原則包括個別使用者的安全寄件者清單，以及租使用者層級原則，例如 Exchange 郵件流程規則（也稱為傳輸規則）。
+當您提交電子郵件時，您會收到任何可能允許內送電子郵件進入租使用者的原則，以及對郵件中的任何 URLs 和附件進行檢查的相關資訊。 可能允許郵件的原則包括個別使用者的安全寄件者清單，以及租使用者層級原則，例如 Exchange 郵件流程規則 (也稱為 transport rules) 。
 
 如需其他方式將電子郵件訊息、URLs 和附件提交給 Microsoft，請參閱[向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。
 
@@ -36,17 +36,17 @@ ms.locfileid: "44726846"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至**提交**頁面，請使用 <https://protection.office.com/reportsubmission> 。
 
-- 您必須已獲指派許可權，才能執行本主題中的程式：
+- 您必須已獲派權限，才能進行此主題中的程序:
 
   - 若要將郵件和檔案提交給 Microsoft，您必須是下列其中一個角色群組的成員：
 
-    - 在[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)的**組織管理**或**安全性管理員**。
-    - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**或**衛生管理**。
+    - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
+    - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理**。
 
   - 若要唯讀存取提交入口網站，您必須是下列其中一個角色群組的成員：
 
-    - 安全性[& 規範中心](permissions-in-the-security-and-compliance-center.md)的**安全性讀取器**。
-    - 在[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中**View-Only 的組織管理**。
+    - [安全性與合規性中心](permissions-in-the-security-and-compliance-center.md) 中的 **安全讀者**。
+    - [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅檢視組織管理**。
 
 - 如需使用者如何提交郵件和檔案給 Microsoft 的詳細資訊，請參閱[向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。
 
@@ -84,7 +84,7 @@ ms.locfileid: "44726846"
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>將可疑 URL 傳送給 Microsoft
 
-1. 在 [**物件類型**] 區段中，選取 [ **URL**]。 在出現的方塊中，輸入完整的 URL （例如 <https://www.fabrikam.com/marketing.html> ）。
+1. 在 [**物件類型**] 區段中，選取 [ **URL**]。 在出現的方塊中，輸入完整的 URL (例如， <https://www.fabrikam.com/marketing.html>) 。
 
 2. 在 [**提交原因**] 區段中，選取下列其中一個選項：
 
@@ -118,7 +118,7 @@ ms.locfileid: "44726846"
 
 2. 在出現的 [**提交**] 頁面上，確認已選取 [系統**管理提交**] 索引標籤。
 
-在頁面頂端附近，您可以輸入開始日期、結束日期及（預設值）您可以在此方塊中輸入值，然後按一下 [重新整理] 按鈕，依**提交識別碼**篩選 ![ ](../../media/scc-quarantine-refresh.png) 。 Update
+在頁面頂端附近，您可以輸入開始日期、結束日期和 (預設值) 您可以依**提交識別碼** (指派給每個提交) 的 GUID 值進行篩選，方法是在方塊中輸入值，然後按一下 [重新整理] ![ 按鈕 ](../../media/scc-quarantine-refresh.png) 。 Update
 
 若要變更篩選準則，請按一下 [**提交識別碼**] 按鈕，然後選擇下列其中一個值：
 
@@ -132,7 +132,7 @@ ms.locfileid: "44726846"
 
 若要匯出結果，請按一下頁面頂端附近的 [**匯出**]，然後選取 [**圖表資料**或**表格**]。 在出現的對話方塊中，儲存 .csv 檔案。
 
-在圖形下方有三個索引標籤：**電子郵件**（預設值）、 **URL**及**附件**。
+在圖形下方有三個索引標籤：**電子郵件** (預設) 、 **URL**及**附件**。
 
 ### <a name="view-admin-email-submissions"></a>查看系統管理電子郵件報送
 
@@ -141,7 +141,7 @@ ms.locfileid: "44726846"
 您可以按一下頁面底部附近的 [**欄選項**] 按鈕，從該視圖新增或移除欄：
 
 - **Date**
-- **提交識別碼**
+- **提交識別碼**：指派給每個提交的 GUID 值。
 - **提交者**<sup>\*</sup>
 - **主旨**<sup>\*</sup>
 - **Sender**
@@ -203,7 +203,7 @@ ms.locfileid: "44726846"
 
 <sup>\*</sup>如果您按一下此值，詳細資訊就會顯示在浮出控制項中。
 
-在頁面頂端附近，您可以輸入開始日期、結束日期及（預設值）您可以在此方塊中輸入值，然後按一下 [重新整理] 按鈕，以篩選**寄件者** ![ ](../../media/scc-quarantine-refresh.png) 。 Update
+在頁面頂端附近，您可以輸入開始日期、結束日期和 (預設值) 您可以在 [收件者] 方塊中輸入值，然後按一下 [重新整理] 按鈕，以篩選收**件**者 ![ ](../../media/scc-quarantine-refresh.png) 。 Update
 
 若要變更篩選準則，請按一下 [**寄件者**] 按鈕，然後選擇下列其中一個值：
 
