@@ -131,6 +131,8 @@
                   href: mtp/advanced-hunting-best-practices.md
                 - name: 使用查詢結果工作
                   href: mtp/advanced-hunting-query-results.md
+                - name: 對查詢結果採取動作
+                  href: mtp/advanced-hunting-take-action.md
                 - name: 使用共用查詢
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: 查尋裝置和電子郵件
@@ -327,7 +329,7 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: 使用取消列出入口網站，將您自己從封鎖寄件者清單中移除
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-                - name: 管理用戶允許/封鎖清單中的 URL 和檔案
+                - name: 管理租使用戶允許/封鎖清單中的 URL
                   href: ./office-365-security/tenant-allow-block-list.md
             - name: 防網路釣魚保護
               href: ./office-365-security/anti-phishing-protection.md
