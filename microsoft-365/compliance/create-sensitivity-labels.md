@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: 61f6a27172e97cdc3f7890b813a9e2f67a8d3d9a
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 77d0f99a3e35a62b001395d7491f45d84e95cbd3
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200025"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560508"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -89,9 +89,15 @@ ms.locfileid: "45200025"
 
 您可以使用[安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的 [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) Cmdlet 取得其他標籤設定。
 
-對跨國部署使用 *LocaleSettings* 參數，以便使用者能夠利用本地語言查看標籤名稱和工具提示。 如需設定範例，請參閱下一節。 
+例如：
 
-使用此 Cmdlet，您同時可以為 Azure 資訊保護整合標籤用戶端指定 [[進階設定]](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)。 這些進階設定包括設定標籤色彩，以及在套用標籤時套用自訂屬性。 如需完整清單，請參閱[標籤原則可用的進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)。 
+- 對跨國部署使用 *LocaleSettings* 參數，以便使用者能夠利用本地語言查看標籤名稱和工具提示。 [下列章節](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) 含有指定標籤名稱和法文、義大利文與德文工具提示文本設定範例。
+
+- 使用 *ApplyContentMarkingFooterFontName* 參數為指定的頁尾指定您選擇的字型。 Calibri 是頁首、頁尾和浮水印文字的預設字型。 如果您的替代字型名稱無法用於顯示標籤的服務或裝置，則該字型會回到 Calibri。
+
+- 使用 *ApplyContentMarkingHeaderFontColor* 參數，為您的指定標題指定您的自訂色彩選擇，使用紅、綠、藍（RGB）元件的十六進位三元代碼。 例如，#40e0d0 是青綠色的 RGB 十六進位值。 您可以在許多應用程式中找到這些代碼，讓您編輯圖片。 例如，Microsoft 小畫家可讓您從調色板選擇自訂色彩，並自動顯示 RGB 值，然後您可以複製該色彩。
+
+針對 Azure 資訊保護的整合式標籤用戶端，您也可以指定 [[進階設定]](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，其中包括設定標籤色彩，以及在套用標籤時套用自訂屬性。 如需完整清單，請參閱本用戶端的系統管理指南中的[標籤可用的進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)。
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>設定不同語言敏感度標籤的設定範例
 
@@ -172,11 +178,22 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>安全性與合規性中心 PowerShell 的其他標籤原則設定
 
-您可以使用[安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的 [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) Cmdlet 取得其他標籤原則設定。
+您可以使用[安全規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的 [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps) 指令取得其他標籤原則設定。
 
-使用此 Cmdlet，您可以為 Azure 資訊保護整合標籤用戶端指定 [[進階設定]](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)。 這些進階設定包括為 Outlook 設定不同的預設標籤，以及在 Outlook 中實作可警告、證明或封鎖要傳送的電子郵件的快顯訊息。 如需完整清單，請參閱[標籤可用的進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)。 
+針對 Azure 資訊保護的 [整合式標籤] 用戶端，您可以指定[[進階設定]](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，其中包括為 Outlook 設定不同的預設標籤，以及在 Outlook 中實作可警告、證明或封鎖要傳送的電子郵件的快顯訊息。 如需完整清單，請參閱本用戶端的系統管理指南中的[標籤原則可用的進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)。
 
-您也可以使用此 Cmdlet 往返標籤原則來新增和移除標籤。
+## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>將 PowerShell 用於敏感度標籤及其原則
+
+您現在可以使用 [安全規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps)，建立並設定您在標記系統管理中心看到的所有設定。 這表示除了將 PowerShell 用於標籤系統管理中心的設定以外，您現在可以全面編寫敏感度標籤和敏感度標籤原則的建立與維護腳本。 
+
+如需支援的參數和值，請參閱下列文件：
+
+- [新標籤](https://docs.microsoft.com/powershell/module/exchange/new-label?view=exchange-ps)
+- [新標籤原則](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps)
+- [設定標籤](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)
+- [設定標籤原則](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps)
+
+如果您需要為刪除敏感度標籤或敏感度標籤原則編寫腳本，您也可以使用 [移除標籤](https://docs.microsoft.com/powershell/module/exchange/remove-label?view=exchange-ps) 和 [移除標籤原則](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy?view=exchange-ps)。 不過，在您刪除敏感度標籤前，請務必先閱讀下列章節。
 
 ## <a name="removing-and-deleting-labels"></a>移除並刪除標籤
 

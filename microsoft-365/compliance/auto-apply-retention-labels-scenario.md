@@ -1,5 +1,5 @@
 ---
-title: 使用保留標籤管理儲存在 SharePoint 的產品文件生命週期
+title: 使用保留標籤來管理儲存在 SharePoint 中的文件生命週期
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,19 +15,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 本文說明如何使用保留標籤管理 SharePoint 中產品相關文件的生命週期。 此程序會使用文件中繼資料來分類內容、自動套用保留標籤，然後設定事件型保留。
-ms.openlocfilehash: b3b71757d887781a12c71f2c105409827230f33c
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+description: 如何使用中繼資料分類內容、自動套用標籤，以及使用事件式保留來啟動保留期間，以便在 SharePoint 中使用保留標籤來管理文件生命週期。
+ms.openlocfilehash: 250bf182c26616a3a2f9253471469d2cecbd8d2b
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552525"
+ms.locfileid: "46560666"
 ---
-# <a name="manage-the-lifecycle-of-product-documents-stored-in-sharepoint-with-retention-labels"></a>使用保留標籤管理儲存在 SharePoint 的產品文件生命週期
+# <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>使用保留標籤來管理儲存在 SharePoint 中的文件生命週期
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-本文描述如何使用自動套用的保留標籤並設定事件型保留來管理儲存在 SharePoint 中的產品相關文件的生命週期。
+本文描述如何使用自動套用的保留標籤和事件型保留來管理儲存在 SharePoint 中的文件生命週期。
 
 自動套用功能會使用 SharePoint 中繼資料來進行文件分類。 本文中的範例用於與產品相關的文件，但是相同的概念也可用於其他案例。 例如，在石油與天然氣產業，您可以將其用於管理與石油平台、鑽井記錄或生產授權等實體資產相關文件的生命週期。 在金融服務產業，您可以管理銀行帳戶、貸款或保險合約文件。 在公共部門，您可以管理施工許可證或稅務表單。
 
@@ -80,10 +80,8 @@ ms.locfileid: "46552525"
 | 產品規格      | 停產後 5 年  | 刪除                                       |
 | 產品協議          | 停產後 10 年 | 檢閱                                       |
 | 使用者手冊                | 停產後 5 年  | 刪除                                       |
-| 其他所有類型的文件 | 不主動保留  | 在文件超過 3 年後刪除<sup>\*</sup>  |
+| 其他所有類型的文件 | 不主動保留  | 在文件超過 3 年後刪除 <br /><br /> 如果文件在過去 3 年內未曾修改，便會視為超過 3 年。 |
 |||
-
-   <sup>\*</sup>如果文件在過去 3 年內未曾修改，便會視為超過 3 年。
 
 我們會使用 Microsoft 365 合規性中心建立下列[保留標籤](retention.md#retention-labels)：
 
