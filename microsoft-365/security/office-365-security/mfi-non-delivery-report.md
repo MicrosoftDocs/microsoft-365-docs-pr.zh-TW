@@ -1,5 +1,5 @@
 ---
-title: 未傳遞報告
+title: 郵件流程儀表板中的未傳遞回報
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,28 +12,52 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 系統管理員可以在安全性 & 規範中心的郵件流程儀表板中瞭解未傳遞回報。
-ms.openlocfilehash: eddecd1de5675797837aed84a892c43ba36c4c56
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 系統管理員可以瞭解如何使用 [安全性 & 合規性中心內的郵件流程儀表板中的 [未傳遞詳細資料] 報告，以監視未傳遞回報中最常遇到的錯誤碼 (也稱為 NDRs 或退回的郵件) 來自組織中的寄件者。
+ms.openlocfilehash: d45382ab5c7e0d0a73487740544f20b9c25a3ad1
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819506"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577407"
 ---
-# <a name="non-delivery-report"></a><span data-ttu-id="ab503-103">未傳遞報告</span><span class="sxs-lookup"><span data-stu-id="ab503-103">Non-delivery report</span></span>
+# <a name="non-delivery-report-in-the-security--compliance-center"></a><span data-ttu-id="e7ffd-103">安全性 & 規範中心內的未傳遞回報</span><span class="sxs-lookup"><span data-stu-id="e7ffd-103">Non-delivery report in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="ab503-104">**未傳遞**回報為組織中的使用者顯示未傳遞回報（也稱為 NDRs 或退回的郵件）中最常遇到的錯誤碼。</span><span class="sxs-lookup"><span data-stu-id="ab503-104">The **Non-delivery report** shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization.</span></span> <span data-ttu-id="ab503-105">這份報告主要是用來顯示 NDRs 的詳細資料，因此您可以疑難排解問題。</span><span class="sxs-lookup"><span data-stu-id="ab503-105">This report is intended to show the details of NDRs, so you can troubleshoot problems.</span></span>
+<span data-ttu-id="e7ffd-104">在 Security & 合規性中心的[郵件流程儀表板](mail-flow-insights-v2.md)中，**未傳遞**回報會顯示未傳遞回報中最常遇到的錯誤碼 (也稱為 NDRs 或退回的郵件) 針對您組織中的使用者。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-104">The **Non-delivery report** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization.</span></span> <span data-ttu-id="e7ffd-105">此報告顯示 NDRs 的詳細資料，以便您能夠疑難排解電子郵件傳遞問題。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-105">This report shows the details of NDRs so you can troubleshoot email delivery problems.</span></span>
 
-![安全性 & 規範中心內的郵件流程儀表板中的未傳遞回報](../../media/non-delivery-report-selected.png)
+![安全性 & 規範中心內郵件流程儀表板中的未傳遞回報小工具](../../media/mfi-non-delivery-report-widget.png)
 
-<span data-ttu-id="ab503-107">您可以按一下 [**顯示資料**]，以顯示所有 NDR 代碼或特定程式碼的資訊。</span><span class="sxs-lookup"><span data-stu-id="ab503-107">You can show information for all NDR codes or a specific code by clicking **Show data for**.</span></span> <span data-ttu-id="ab503-108">您也可以按一下 [**查看詳細資料] 表格**，以查看更詳細的視圖，如下圖所示：</span><span class="sxs-lookup"><span data-stu-id="ab503-108">You can also click **View details table** to see a more detailed view as shown in the following diagram:</span></span>
+## <a name="report-view-for-the-non-delivery-report"></a><span data-ttu-id="e7ffd-107">未傳遞回報的報表檢視</span><span class="sxs-lookup"><span data-stu-id="e7ffd-107">Report view for the Non-delivery report</span></span>
 
-![在未傳遞回報中查看詳細資料表格](../../media/non-delivery-report-view-details-table.png)
+<span data-ttu-id="e7ffd-108">按一下 [**未傳遞**回報] 小工具時，將會帶您前往**未傳遞**回報的報告。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-108">Clicking on the **Non-delivery report** widget will take you to the **Non-delivery report**.</span></span>
 
-<span data-ttu-id="ab503-110">當您選取表格中的列以查看特定 NDR 的詳細資料時，您可以使用詳細資訊來進行疑難排解，並採取必要的動作。</span><span class="sxs-lookup"><span data-stu-id="ab503-110">When you select a row in the table to view the details of the specific NDR, you can use the detailed information to troubleshoot and take the necessary actions.</span></span>
+<span data-ttu-id="e7ffd-109">依預設，會顯示所有錯誤碼的活動。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-109">By default, the activity for all error codes is shown.</span></span> <span data-ttu-id="e7ffd-110">如果您按一下 [**顯示資料**]，您可以從下拉式清單中選取特定的錯誤碼。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-110">If you click **Show data for**, you can select a specific error code from the dropdown.</span></span>
 
-![在 [未傳遞回報] 中選取 [詳細資料] 表格的列](../../media/non-delivery-report-details-table-select-row.png)
+<span data-ttu-id="e7ffd-111">如果您將滑鼠停留在特定色彩上 (錯誤碼) 在圖表中的某一天，您就會看到錯誤的郵件總數。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-111">If you hover over a specific color (error code) on a specific day in the chart, you'll see the total number of messages for the error.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="ab503-112">相關主題</span><span class="sxs-lookup"><span data-stu-id="ab503-112">Related topics</span></span>
+![不接受的網域報告中的報表檢視](../../media/mfi-non-delivery-report-overview-view.png)
 
-<span data-ttu-id="ab503-113">如需郵件流量儀表板中其他郵件流程深入解析之詳細資訊，請參閱[安全性與合規性中心中郵件流程深入解析](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="ab503-113">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+## <a name="details-table-view-for-the-non-delivery-report"></a><span data-ttu-id="e7ffd-113">未傳遞回報的詳細資料表格視圖</span><span class="sxs-lookup"><span data-stu-id="e7ffd-113">Details table view for the Non-delivery report</span></span>
+
+<span data-ttu-id="e7ffd-114">如果您按一下報表檢視中的 [**查看詳細資料] 表格**，會顯示下列資訊：</span><span class="sxs-lookup"><span data-stu-id="e7ffd-114">If you click **View details table** in a report view, the following information is shown:</span></span>
+
+- <span data-ttu-id="e7ffd-115">**Date**</span><span class="sxs-lookup"><span data-stu-id="e7ffd-115">**Date**</span></span>
+- <span data-ttu-id="e7ffd-116">**未傳遞回報碼**</span><span class="sxs-lookup"><span data-stu-id="e7ffd-116">**Non-delivery report code**</span></span>
+- <span data-ttu-id="e7ffd-117">**Count**</span><span class="sxs-lookup"><span data-stu-id="e7ffd-117">**Count**</span></span>
+- <span data-ttu-id="e7ffd-118">**範例郵件**：郵件 IDs 受影響郵件的範例。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-118">**Sample messages**: The message IDs of a sample of affected messages.</span></span>
+
+<span data-ttu-id="e7ffd-119">如果您按一下 [詳細資料] 表格視圖中的 [**篩選**]，您可以指定具有**開始日期**和**結束日期**的日期範圍。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-119">If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.</span></span>
+
+<span data-ttu-id="e7ffd-120">若要將特定日期範圍的報告傳送至一或多個收件者，請按一下 [**要求下載**]。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-120">To email the report for a specific date range to one or more recipients, click **Request download**.</span></span>
+
+<span data-ttu-id="e7ffd-121">當您選取表格中的一列時，會出現一個快顯視窗，其中包含下列資訊：</span><span class="sxs-lookup"><span data-stu-id="e7ffd-121">When you select a row in the table, a flyout appears with the following information:</span></span>
+
+- <span data-ttu-id="e7ffd-122">**Date**</span><span class="sxs-lookup"><span data-stu-id="e7ffd-122">**Date**</span></span>
+- <span data-ttu-id="e7ffd-123">**未傳遞回報碼**：您可以按一下連結，以尋找特定錯誤碼的原因和解決方案的詳細資訊。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-123">**Non-delivery report code**: You can click on the link to find for more information about the causes and solutions for the specific error code.</span></span>
+- <span data-ttu-id="e7ffd-124">**Count**</span><span class="sxs-lookup"><span data-stu-id="e7ffd-124">**Count**</span></span>
+- <span data-ttu-id="e7ffd-125">**範例郵件**：您可以按一下 [ **View sample messages** ]，以查看受影響郵件之範例的[郵件追蹤](message-trace-scc.md)結果。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-125">**Sample messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the affected messages.</span></span>
+
+![在未傳遞回報中，選取 [詳細資料表格] 視圖中的列之後的詳細資料浮出控制項](../../media/mfi-non-delivery-report-details-flyout.png)
+
+## <a name="related-topics"></a><span data-ttu-id="e7ffd-127">相關主題</span><span class="sxs-lookup"><span data-stu-id="e7ffd-127">Related topics</span></span>
+
+<span data-ttu-id="e7ffd-128">如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱[Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="e7ffd-128">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

@@ -1,5 +1,5 @@
 ---
-title: 郵件迴圈深入解析
+title: 修正可能的郵件迴圈洞察力
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,24 +12,32 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: 系統管理員可以深入瞭解安全性 & 規範中心的郵件流程儀表板中的郵件迴圈洞察力。
-ms.openlocfilehash: 80767a265734c542db8e24cf58d0a1c0df469780
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+description: 系統管理員可以瞭解如何使用安全 & 規範中心內郵件流程儀表板中的 [修正可能的郵件迴圈洞察力]，識別並修正其組織中的郵件迴圈。
+ms.openlocfilehash: 54240cffc534b4be708492b37b827636edab280e
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819313"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577619"
 ---
-# <a name="mail-loop-insight"></a><span data-ttu-id="f67b9-103">郵件迴圈深入解析</span><span class="sxs-lookup"><span data-stu-id="f67b9-103">Mail loop insight</span></span>
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a><span data-ttu-id="57068-103">修正安全性 & 規範中心內可能的郵件迴圈洞察力</span><span class="sxs-lookup"><span data-stu-id="57068-103">Fix possible mail loop insight in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="f67b9-104">郵件迴圈是錯誤的，因為它會浪費系統資源、使用組織的郵件磁片區配額，並將混亂的未傳遞回報（也稱為 NDRs 或退回的郵件）傳送給原始寄件者。</span><span class="sxs-lookup"><span data-stu-id="f67b9-104">A mail loop is bad because it wastes system resources, consumes your organization's mail volume quota, and sends confusing non-delivery reports (also known as NDRs or bounce messages) to the original senders.</span></span> <span data-ttu-id="f67b9-105">當您的組織中找到郵件迴圈時，此深入瞭解會報告該迴圈所涉及的電子郵件網域，以及該迴圈中之前一天的郵件數目。</span><span class="sxs-lookup"><span data-stu-id="f67b9-105">This insight reports when a mail loop is found in your organization, the email domains that are involved in the loop, and the number of messages from the previous day that were in the loop.</span></span>
+<span data-ttu-id="57068-104">郵件迴圈是錯誤的，因為它會浪費系統資源、使用組織的郵件磁片區配額，並傳送混亂的非傳遞回報 (也稱為 NDRs 或退回郵件) 至原始寄件者。</span><span class="sxs-lookup"><span data-stu-id="57068-104">A mail loop is bad because it wastes system resources, consumes your organization's mail volume quota, and sends confusing non-delivery reports (also known as NDRs or bounce messages) to the original senders.</span></span>
 
-![安全性 & 規範中心內郵件流程儀表板中的郵件迴圈洞察力](../../media/c3f707cb-4c89-4e88-989c-81ce1d1d6b99.png)
+<span data-ttu-id="57068-105">在您的組織中偵測到郵件迴圈時，在安全性 & 合規性中心的 [[郵件流程儀表板](mail-flow-insights-v2.md)] 中，**建議**的郵件流程儀表板區域會通知您，以**修正可能的郵件迴圈**。</span><span class="sxs-lookup"><span data-stu-id="57068-105">The **Fix possible mail loop** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center notifies you when a mail loop is detected in your organization.</span></span> <span data-ttu-id="57068-106">這種洞察力只會在偵測到條件之後才會出現 (如果您沒有任何郵件迴圈，您就不會看到) 的洞察力。</span><span class="sxs-lookup"><span data-stu-id="57068-106">This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).</span></span>
 
-<span data-ttu-id="f67b9-107">您可以按一下 [**查看詳細資料**] 以查看彈出窗格中的詳細資料。</span><span class="sxs-lookup"><span data-stu-id="f67b9-107">You can click **View details** to see the details in a flyout pane.</span></span> <span data-ttu-id="f67b9-108">我們也會找出最常見的迴圈案例，並提供建議的動作（如果有的話）來修正迴圈。</span><span class="sxs-lookup"><span data-stu-id="f67b9-108">We also identify the most common loop scenarios and provide the recommended actions (if available) to fix the loop.</span></span>
+![修正郵件流程儀表板中為您推薦的郵件流程規則的速度](../../media/mfi-fix-possible-mail-loop.png)
 
-![在郵件流程儀表板中按一下 [查看詳細資料] 中的 [查看詳細資料] 後的浮出窗格](../../media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
+<span data-ttu-id="57068-108">當您按一下小工具上的 [**查看詳細資料**] 時，會出現一個快顯視窗，包含詳細資訊：</span><span class="sxs-lookup"><span data-stu-id="57068-108">When you click **View details** on the widget, a flyout appears with more information:</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="f67b9-110">相關主題</span><span class="sxs-lookup"><span data-stu-id="f67b9-110">Related topics</span></span>
+- <span data-ttu-id="57068-109">**網域**</span><span class="sxs-lookup"><span data-stu-id="57068-109">**Domain**</span></span>
+- <span data-ttu-id="57068-110">**郵件數目**：您可以按一下 [ **View sample messages** ]，以查看受環路影響之郵件範例的[郵件追蹤](message-trace-scc.md)結果。</span><span class="sxs-lookup"><span data-stu-id="57068-110">**Number of messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the messages that were affected by the loop.</span></span>
+- <span data-ttu-id="57068-111">**網欄位型別**"，例如「授權」或「非授權」。</span><span class="sxs-lookup"><span data-stu-id="57068-111">**Domain type**" For example, Authoritative or Non-authoritative.</span></span>
+- <span data-ttu-id="57068-112">**MX 記錄**：主機 (的**郵件伺服器**) 和網域的 MX 記錄**優先順序**值。</span><span class="sxs-lookup"><span data-stu-id="57068-112">**MX record**: The host (**Mail server**) and **Priority** values of the MX record for the domain.</span></span>
+- <span data-ttu-id="57068-113">**迴圈原因**和**解決方法**：我們會嘗試找出最常見的郵件迴圈案例，並提供建議的動作 (如果可用) 修正此迴圈。</span><span class="sxs-lookup"><span data-stu-id="57068-113">**Loop reason** and **How to fix**: We'll try to identify the most common mail loop scenarios and provide the recommended actions (if available) to fix the loop.</span></span>
 
-<span data-ttu-id="f67b9-111">如需郵件流量儀表板中其他郵件流程深入解析之詳細資訊，請參閱[安全性與合規性中心中郵件流程深入解析](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="f67b9-111">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+![在 [修正可能的郵件迴圈真知灼見] 上按一下 [查看詳細資料] 後出現的詳細資料浮出](../../media/mfi-fix-possible-mail-loop-details.png)
+
+## <a name="related-topics"></a><span data-ttu-id="57068-115">相關主題</span><span class="sxs-lookup"><span data-stu-id="57068-115">Related topics</span></span>
+
+<span data-ttu-id="57068-116">如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱[Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="57068-116">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>

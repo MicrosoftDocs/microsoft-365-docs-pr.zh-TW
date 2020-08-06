@@ -1,5 +1,5 @@
 ---
-title: 自動轉寄訊息報告
+title: 自動轉寄的郵件洞察力
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,31 +11,47 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 系統管理員可以在安全性 & 合規性中心的郵件流程儀表板中瞭解自動轉寄的郵件報告。
-ms.openlocfilehash: ceeff0c6033cb2610c09a80ddbddcda90ff63b05
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 05e3f62610c32bc95caf579ef4dd46bf1ed90275
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635301"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577811"
 ---
-# <a name="auto-forwarded-messages-report"></a><span data-ttu-id="e3882-103">自動轉寄訊息報告</span><span class="sxs-lookup"><span data-stu-id="e3882-103">Auto-forwarded messages report</span></span>
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a><span data-ttu-id="39b0c-103">在安全性 & 規範中心內，自動轉寄的郵件會深入瞭解</span><span class="sxs-lookup"><span data-stu-id="39b0c-103">Auto-forwarded messages insight in the Security & Compliance Center</span></span>
 
-<span data-ttu-id="e3882-104">郵件流程儀表板中的**自動轉寄郵件**報告會顯示自動從您的組織轉送到外部網域收件者之郵件的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="e3882-104">The **Auto-forwarded messages** report in the mail flow dashboard displays information on messages that are automatically forwarded from your organization to recipients in external domains.</span></span>
+<span data-ttu-id="39b0c-104">在 Security & 合規性中心的[郵件流程儀表板](mail-flow-insights-v2.md)中，可洞察的**自動轉寄郵件**會顯示自動從您的組織轉送到外部網域中收件者之郵件的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="39b0c-104">The **Auto-forwarded messages** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center displays information about messages that are automatically forwarded from your organization to recipients in external domains.</span></span>
 
-![在安全性 & 規範中心內的自動轉送郵件會深入瞭解](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+![安全性 & 規範中心內自動轉寄的郵件小工具](../../media/mfi-auto-forwarded-messages.png)
 
-![安全性 & 規範中心內，郵件流程儀表板中的自動轉寄郵件報告](../../media/8bc2600b-71c3-4b37-b4d0-9435fe0cfc8d.png)
+## <a name="auto-forwarded-messages-details"></a><span data-ttu-id="39b0c-106">自動轉寄的郵件詳細資料</span><span class="sxs-lookup"><span data-stu-id="39b0c-106">Auto-forwarded messages details</span></span>
 
-## <a name="auto-forwarded-messages-details"></a><span data-ttu-id="e3882-107">自動轉寄的郵件詳細資料</span><span class="sxs-lookup"><span data-stu-id="e3882-107">Auto-forwarded messages details</span></span>
+<span data-ttu-id="39b0c-107">當您按一下小工具中的郵件數目時，會出現一個彈出窗格，顯示自動轉寄郵件的詳細資訊：</span><span class="sxs-lookup"><span data-stu-id="39b0c-107">When you click the number of messages in the widget, a flyout pane appears that shows more information about the auto-forwarded messages:</span></span>
 
-<span data-ttu-id="e3882-108">當您按一下小工具中的郵件數目時，會出現一個快顯視窗，顯示自動轉寄的郵件狀態。</span><span class="sxs-lookup"><span data-stu-id="e3882-108">When you click the number of messages in the widget, a flyout pane appears that shows the auto-forwarded message status.</span></span> <span data-ttu-id="e3882-109">您可以按一下 [**轉接報告**] 連結，查看詳細資料。</span><span class="sxs-lookup"><span data-stu-id="e3882-109">You can see the details by clicking the **Forwarding Report** link.</span></span>
+- <span data-ttu-id="39b0c-108">透過**轉送方法自動轉寄的郵件**：</span><span class="sxs-lookup"><span data-stu-id="39b0c-108">**Auto-forwarded messages by forwarding methods**:</span></span>
 
-![安全性 & 規範中心內自動轉寄郵件報告的詳細資料浮出](../../media/87d0fb1e-d2ef-4901-b17c-ec32d23a539e.png)
+  - <span data-ttu-id="39b0c-109">**依郵件流程規則**</span><span class="sxs-lookup"><span data-stu-id="39b0c-109">**By mail flow rules**</span></span>
+  - <span data-ttu-id="39b0c-110">**依收件匣規則**</span><span class="sxs-lookup"><span data-stu-id="39b0c-110">**By Inbox rules**</span></span>
+  - <span data-ttu-id="39b0c-111">**透過 SMTP 轉送**</span><span class="sxs-lookup"><span data-stu-id="39b0c-111">**By SMTP forwarding**</span></span>
+  - <span data-ttu-id="39b0c-112">有關詳細資訊，請查看[轉接報告](view-mail-flow-reports.md#forwarding-report)的連結。</span><span class="sxs-lookup"><span data-stu-id="39b0c-112">A link to the [Forwarding report](view-mail-flow-reports.md#forwarding-report) for more details.</span></span>
 
-## <a name="insights"></a><span data-ttu-id="e3882-111">深入資訊</span><span class="sxs-lookup"><span data-stu-id="e3882-111">Insights</span></span>
+- <span data-ttu-id="39b0c-113">**依網域和使用者自動轉寄郵件**：</span><span class="sxs-lookup"><span data-stu-id="39b0c-113">**Auto-forwarded messages by domains and users**:</span></span>
 
-<span data-ttu-id="e3882-112">這兩種洞察力是根據報表資料產生的：**新增轉寄使用者**和新轉寄**網域**。</span><span class="sxs-lookup"><span data-stu-id="e3882-112">Two insights are generated based on the report data: **New forwarding users** and **New forwarding domains**.</span></span> <span data-ttu-id="e3882-113">每個洞察力都提供新的**轉送**器或網域的數目摘要，該連結可提供兩種資料類型的詳細資料。</span><span class="sxs-lookup"><span data-stu-id="e3882-113">Each insight provides a summary of the number of new forwarders or domains with a link to the **New Forwarding Report** that provides more detail for the two types of data.</span></span> <span data-ttu-id="e3882-114">新的轉寄**報告**也會顯示新活動的時程表視圖，以及詳細資料表格會識別誰開始轉寄及哪些網域。</span><span class="sxs-lookup"><span data-stu-id="e3882-114">The **New Forwarding Report** also shows a timeline view of new activity and the details table identifies who started forwarding and to which domains.</span></span>
+  - <span data-ttu-id="39b0c-114">**前5個網域會轉寄至**</span><span class="sxs-lookup"><span data-stu-id="39b0c-114">**Top 5 domains forwarded to**</span></span>
+  - <span data-ttu-id="39b0c-115">\*\*新的網域 (上周) \*\*</span><span class="sxs-lookup"><span data-stu-id="39b0c-115">**New domains (last week)**</span></span>
+  - <span data-ttu-id="39b0c-116">**前5個轉接使用者**</span><span class="sxs-lookup"><span data-stu-id="39b0c-116">**Top 5 forwarding users**</span></span>
+  - <span data-ttu-id="39b0c-117">\*\*新使用者 (上周) \*\*</span><span class="sxs-lookup"><span data-stu-id="39b0c-117">**New users (last week)**</span></span>
+  - <span data-ttu-id="39b0c-118">有關詳細資訊，請查看「轉寄[修改」報告](mfi-new-users-forwarding-email.md#forwarding-modifications-report)的連結。</span><span class="sxs-lookup"><span data-stu-id="39b0c-118">A link to the [Forwarding modifications report](mfi-new-users-forwarding-email.md#forwarding-modifications-report) for more details.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="e3882-115">另請參閱</span><span class="sxs-lookup"><span data-stu-id="e3882-115">See also</span></span>
+![安全性 & 規範中心內自動轉寄郵件報告的詳細資料彈出報告](../../media/mfi-auto-forwarded-messages-details.png)
 
-<span data-ttu-id="e3882-116">如需郵件流量儀表板中其他郵件流程深入解析之詳細資訊，請參閱[安全性與合規性中心中郵件流程深入解析](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="e3882-116">For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+## <a name="insights"></a><span data-ttu-id="39b0c-120">深入資訊</span><span class="sxs-lookup"><span data-stu-id="39b0c-120">Insights</span></span>
+
+<span data-ttu-id="39b0c-121">這兩種洞察力是根據報表資料產生的：</span><span class="sxs-lookup"><span data-stu-id="39b0c-121">Two insights are generated based on the report data:</span></span>
+
+- [<span data-ttu-id="39b0c-122">新增使用者轉送電子郵件</span><span class="sxs-lookup"><span data-stu-id="39b0c-122">New users forwarding email</span></span>](mfi-new-users-forwarding-email.md)
+- [<span data-ttu-id="39b0c-123">轉寄電子郵件的新網域</span><span class="sxs-lookup"><span data-stu-id="39b0c-123">New domains being forwarded email</span></span>](mfi-new-domains-being-forwarded-email.md)
+
+## <a name="see-also"></a><span data-ttu-id="39b0c-124">請參閱</span><span class="sxs-lookup"><span data-stu-id="39b0c-124">See also</span></span>
+
+<span data-ttu-id="39b0c-125">如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱[Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。</span><span class="sxs-lookup"><span data-stu-id="39b0c-125">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
