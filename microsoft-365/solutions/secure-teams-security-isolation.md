@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用唯一的敏感度標籤來建立小組以獲得安全性。
-ms.openlocfilehash: 33b84423fa4744c34e184690bcfc3fe8dd435298
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: b16133a02c82c2b2ab0e56a5545e19b160933664
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528045"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560226"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>為小組設定安全性隔離
 
@@ -41,6 +41,12 @@ ms.locfileid: "46528045"
 
 > [!IMPORTANT]
 > 請先確定您已啟用[敏感度標籤以保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)，然後再繼續進行本文中的步驟。
+
+<a name="poster"></a> 如需這種案例的2頁摘要，請參閱 [Microsoft 具有安全性隔離的團隊海報](../downloads/team-security-isolation-poster.pdf)。
+
+[![Microsoft 具有安全性隔離的團隊海報](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+
+您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pptx) 格式下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
 
 ## <a name="initial-protections"></a>初始保護
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 571d1b3c9f12594c039a874eb5163e1191fd8fe9
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 8704930b6d1de9e329d892e62fb14b2c59111830
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527823"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560624"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -63,6 +63,7 @@ ms.locfileid: "46527823"
 
     Exchange 自動套用標籤專屬限制：
     - 不同於 Office 應用程式的手動套用標籤或自動套用標籤，Office 附件 (Word、Excel 和 PowerPoint 檔案) 和 PDF 附件也會針對您在自動套用標籤原則中指定的條件進行掃描。 有相符項目時，電子郵件會套用標籤，但是附件不會套用標籤。
+        - 若是 Office 檔案，則會支援 Open XML 格式（例如 .docx 和 .xlsx），但不支援 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
     - 如果您有套用 IRM 加密的 Exchange 郵件流程規則或資料外洩防護 (DLP) 原則：當內容由這些規則或原則和自動套用標籤原則識別時，則會套用標籤。 如果該標籤套用加密，則會忽略 Exchange 郵件流程規則或 DLP 原則的 IRM 設定。 不過，如果該標籤並未套用加密，除了標籤以外，還會套用郵件流程規則或 DLP 原則的 IRM 設定。
     - 當有一個相符項目使用自動套用標籤時，具有 IRM 加密而沒有標籤的電子郵件，將會由具有任何加密設定的標籤取代。
     - 當有項目與您的自動套用標籤條件相符時，內送電子郵件會套用標籤。 不過，如果標籤針對加密進行設定，則不會套用加密。

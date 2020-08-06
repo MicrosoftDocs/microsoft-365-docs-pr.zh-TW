@@ -2,7 +2,7 @@
 title: 未驗證共用的最佳做法
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，您將了解與未驗證使用者共用檔案和資料夾的最佳做法。
-ms.openlocfilehash: 72da93a457b91ec7a25e88a0ac2aa8e64b6fe385
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: cea60152f06e8fbd242c9641b962bc9a96fdd019
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526931"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560472"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>與未驗證使用者共用檔案和資料夾的最佳做法
 
@@ -46,6 +46,8 @@ ms.locfileid: "46526931"
 4. 在方塊中輸入天數，然後按一下 [儲存]****。
 
 請注意，*任何人*連結到期之後，就可以使用新的*任何人*連結重新共用檔案或資料夾。
+
+您可以使用 [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite)，將 *任何人* 的連結到期日設定為特定網站或 OneDrive。
 
 ## <a name="set-link-permissions"></a>設定連結權限
 

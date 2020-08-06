@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 設定安全性和服務基礎結構，讓您的工作人員隨時隨地都能遠端工作。
-ms.openlocfilehash: 76ffc861465508486abebfcd13a84acb2b0379c4
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: dc1f5a540b261437a0bf94132bd41929ce5d3546
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527443"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560916"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 強化遠端工作者
 
@@ -71,7 +71,7 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
 如需遠端工作者的安全性與合規性準則，請參閱 [部署遠端工作者的安全性與合規性](empower-people-to-work-remotely-security-compliance.md)
 
-<a name="poster"></a> 如需這種案例的2頁摘要，請參閱 [提供遠端輔助進程海報](../downloads/empower-remote-workers.pdf)。
+<a name="poster"></a> 如需這份解決方案的2頁摘要，請參閱 [[強化遠端工作人員] 海報](../downloads/empower-remote-workers.pdf)。
 
 [![強化遠端工作人員海報](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 

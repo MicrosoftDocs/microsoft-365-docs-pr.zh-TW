@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: '瞭解如何授予使用者存取另一個使用者信箱的權限。 這可讓使用者從其他使用者的信箱讀取郵件及傳送郵件。 '
-ms.openlocfilehash: dafe0f8c8f7d65b2721b70f6c132d179c461a89b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780598"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560372"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>將信箱權限授予另一位其他使用者 - 系統管理員說明
 
@@ -55,7 +55,10 @@ ms.locfileid: "44780598"
   
  **如何運用設定完成的權限：**
   
-當您獲得權限後，您可以透過幾種不同的方式存取信箱。如需相關說明，請參閱下列文章：[存取另一個人的信箱](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
+當您獲得權限後，您可以透過幾種不同的方式存取信箱。如需相關說明，請參閱下列文章：[存取另一個人的信箱](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)。
+
+> [!NOTE]
+> 權限只能在目前組織租使用者中設定。 無法設定租使用者以外的信箱權限。
   
 ## <a name="send-email-from-another-users-mailbox"></a>從另一個使用者的信箱傳送電子郵件
 

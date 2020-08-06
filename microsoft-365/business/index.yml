@@ -12,12 +12,12 @@ metadata:
   author: samanro
   ms.author: samanro
   ms.date: 10/01/2019
-  ms.openlocfilehash: 86b644f7b35c6bcb2c02b6ee53ee468019caf75d
-  ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+  ms.openlocfilehash: ae67faeeae80f948b12eeb4af47c7bcc5d48148c
+  ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 07/22/2020
-  ms.locfileid: "45204776"
+  ms.lasthandoff: 08/04/2020
+  ms.locfileid: "46560824"
 productDirectory:
   title: 使用 Microsoft 365 商務進階版保護遠端工作
   items:
@@ -33,6 +33,10 @@ productDirectory:
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
     summary: Azure AD Premium P1 現已包含在 Microsoft 365 商務進階版中！
     url: https://aka.ms/aadp1smbblog
+  - title: 加入合作夥伴網路研討會，以提升利潤並降低遠端作業環境的風險！
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+    summary: 8月19日，上午8-9 點。 太平洋時間。
+    url: https://aka.ms/GrowwithMicrosoft365
 conceptualContent:
   items:
   - title: 什麼是 Microsoft 365 商務進階版？
@@ -80,9 +84,9 @@ conceptualContent:
     - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
       itemType: download
       text: 技術基礎
-    - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
+    - url: https://aka.ms/SMBSecurityKit
       itemType: download
-      text: 保護遠端工作的檢查清單
+      text: 安全的遠端作業套件
     - url: https://cct.transform.microsoft.com/
       itemType: deploy
       text: 客戶諮詢工具

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常為記錄管理解決方案的一部分，您可以設定保留標籤，以根據您發現的事件來啟動保留期間。
-ms.openlocfilehash: a3760feafa5307c8c71e83dcc72b988258b94a2a
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 03f8446d54d905665f5bf33c2f581a869dfc478e
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391505"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560530"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>事件發生時，開始保留
 
@@ -85,7 +85,7 @@ ms.locfileid: "45391505"
 ![設定事件導向保留工作流程的圖表](../media/event-based-retention-process.png)
   
 > [!TIP]
-> 請參閱[管理具有保留標籤之 SharePoint 文件的生命週期](auto-apply-retention-labels-scenario.md)，以了解使用 SharePoint 中受管理屬性來自動套用保留標籤和實作事件導向保留的詳細案例。
+> 請參閱 [使用保留標籤來管理儲存在 SharePoint 中的文件生命週期](auto-apply-retention-labels-scenario.md)，以瞭解如何在 SharePoint 中使用管理屬性以自動套用保留標籤及實施事件導向保留。
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>步驟 1：建立其保留期間根據事件的標籤
 

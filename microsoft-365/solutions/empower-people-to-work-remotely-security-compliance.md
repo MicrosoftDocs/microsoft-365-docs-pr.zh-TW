@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: 使用 Microsoft 365 安全性與合規性服務，以保護遠端工作者的應用程式、資料和裝置。
-ms.openlocfilehash: 7483075767b7ffaf269899d83a0ab6e5f5759e99
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 223de710b924fc213e30fd9a6e246b3fec2344c0
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521502"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560460"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>步驟 3：為遠端工作者部署安全性與合規性
 
@@ -70,7 +70,7 @@ ms.locfileid: "46521502"
 | 合規性管理員 | 使用 Microsoft 服務信任入口網站中的這個工作流程型風險評估工具來管理與 Microsoft 雲端服務相關的合規性活動。 | Microsoft 365 E3 或 E5 |
 | 合規性分數 (預覽) | 在 Microsoft 365 合規性中心中，查看合規性設定的整體分數以及改善建議。 | Microsoft 365 E3 或 E5 |
 | 通訊合規性  | 針對貴組織中不適當的郵件進行偵測、捕獲並採取修正動作。 | Microsoft 365 E5 或具有合規性或測試人員風險管理附加元件的 Microsoft 365 E3  |
-| 測試人員風險管理 |  偵測、調查和處理貴組織中的惡意和疏忽活動。 即使工作者使用非管理裝置，Microsoft 365 也能偵測這些類型的活動。 | Microsoft 365 E5 或具有合規性或測試人員風險管理附加元件的 Microsoft 365 E3  |
+| 測試人員風險管理 |  偵測、調查和處理組織中的惡意和疏忽風險。 即使工作者使用非管理裝置，Microsoft 365 也能偵測這些類型的風險。 | Microsoft 365 E5 或具有合規性或測試人員風險管理附加元件的 Microsoft 365 E3  |
 ||||
 
 如需詳細資訊，請參閱[安全性團隊支援在家工作的 12 個首要工作](../security/top-security-tasks-for-remote-work.md)。

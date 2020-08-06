@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及自動發佈保留標籤，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: eb29a846f6a7352eec02683c70dad1b0a423bdfa
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: a67be377e641cb6cc7395cd82f91a05b89c5ea7a
+ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127574"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46560614"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤來保留或刪除內容
 
@@ -189,6 +189,4 @@ ms.locfileid: "45127574"
 
 ## <a name="next-steps"></a>後續步驟
 
-請考慮以另一種自動化形式使用保留標籤，[事件導向保留](event-driven-retention.md)。 當您使用此設定時，保留的開始是由您識別的事件觸發。 您可以使用自動原則或標籤原則來執行事件導向保留。
-
-請參閱[管理具有保留標籤之 SharePoint 文件的生命週期](auto-apply-retention-labels-scenario.md)，以了解使用 SharePoint 中受管理屬性來自動套用保留標籤和實作事件導向保留的詳細案例。
+請參閱 [使用保留標籤來管理儲存在 SharePoint 中的文件週期](auto-apply-retention-labels-scenario.md)，例如，在 SharePoint 中使用自動套用原則和受管理的屬性，以及以事件為基礎的保留原則，開始保留期間。
