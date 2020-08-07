@@ -1,84 +1,53 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Microsoft 受管理電腦文件和資源
+### YamlMime:Landing
+title: Microsoft 受管理的電腦文件
+summary: Microsoft 受管理的電腦將 Microsoft 365企業版、Microsoft 雲端式裝置管理和安全監控結合在一起，使您的 IT 團隊有時間得以專注於核心業務需求。
 metadata:
-  title: Microsoft 受管理電腦文件
-  description: null
-  keywords: 裝置、應用程式和管理
+  title: Microsoft 受管理的電腦文件
+  description: Microsoft 受管理的電腦將 Microsoft 365企業版、Microsoft 雲端式裝置管理和安全監控結合在一起，使您的 IT 團隊有時間得以專注於核心業務需求。
+  keywords: device, app, management
+  ms.service: m365-md
+  ms.topic: landing-page
   author: jaimeo
   ms.author: jaimeo
-  ms.topic: landing-page
-  ms.devlang: na
-  ms.service: m365-md
-sections:
-  - items:
-      - type: markdown
-        text: Microsoft 受管理的電腦將 Microsoft 365企業版、Microsoft 雲端式裝置管理和安全監控結合在一起，使您的 IT 團隊有時間得以專注於核心業務需求。
-  - items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: intro/index.md
-            html: <p>針對決策者的 Microsoft 受管理電腦簡介：它是什麼、它的運作方式，以及它能如何協助您</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_overview.svg'
-              alt: ''
-            title: 什麼是 Microsoft 受管理的電腦？
-          - href: service-description/index.md
-            html: <p>Microsoft 受管理電腦的各個部分之詳細描述</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
-              alt: ''
-            title: 服務描述
-          - href: get-ready/index.md
-            html: <p>讓您的環境與組織準備好開始使用此服務的所有步驟</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_support.svg'
-              alt: ''
-            title: 準備就緒
-          - href: get-started/index.md
-            html: <p>讓您的組織開始使用 Microsoft 受管理的電腦，包括設定裝置和部署應用程式</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-              alt: ''
-            title: 開始使用
-          - href: working-with-managed-desktop/index.md
-            html: <p>與服務相關的日常作業的所有相關資訊</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_portal.svg'
-              alt: ''
-            title: 使用 Microsoft 受管理的電腦
-  - title: 新文章和部落格文章
-    items:
-      - type: paragraph
-        text: 讀取您必須知道的最新及最重要的資訊。
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 2
-        items:
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482'
-            title: '[藍圖] 完整的 Microsoft 受管理電腦的使用藍圖'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182'
-            title: '[白皮書] 研究：對受管理電腦的服務需求增長'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_architecture.svg'
-          - href: 'https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw'
-            title: '[電子書] 使用現代化工作場所為貴公司帶來驚喜'
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
-              alt: ''
-  - title: 影片
-    items:
-      - type: paragraph
-        text: 從 Indiana Pacers 的技術副總裁了解 Microsoft 受管理電腦的優點。
-      - type: markdown
-        text: '>[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]'
-      - type: paragraph
-        text: Microsoft 受管理電腦的總經理在年度 Ignite 會議上分享了此服務的所有亮點。
-      - type: markdown
-        text: '>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]'
+  ms.date: 07/13/2020
+  ms.openlocfilehash: 08ff51dcc2ecc7bb5f7a11616f011964d99287f2
+  ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 08/05/2020
+  ms.locfileid: "46564140"
+landingContent:
+- title: 關於 Microsoft 受管理的電腦
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 什麼是 Microsoft 受管理的電腦？
+      url: /microsoft-365/managed-desktop/intro/
+    - text: 服務描述
+      url: /microsoft-365/managed-desktop/service-description
+  - linkListType: get-started
+    links:
+    - text: 準備就緒
+      url: get-ready/index.md
+    - text: 開始使用
+      url: get-started/index.md
+    - text: 使用 Microsoft 受管理的電腦
+      url: /microsoft-365/managed-desktop/working-with-managed-desktop/
+- title: 新文章和部落格文章
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: '[藍圖] 完整的 Microsoft 受管理電腦的使用藍圖'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
+    - text: '[白皮書] 研究：對受管理電腦的服務需求增長'
+      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
+    - text: '[電子書] 使用現代化工作場所為貴公司帶來驚喜'
+      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
+- title: 影片
+  linkLists:
+  - linkListType: video
+    links:
+    - text: 透過 Lloyds Banking Group 的工程部門總監了解 Microsoft 受管理的電腦的優勢。
+      url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
+    - text: 每年 Ignite 會議中 Microsoft 受管理的電腦的焦點
+      url: /microsoft-365/managed-desktop/service-description

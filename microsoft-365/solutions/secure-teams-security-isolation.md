@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用唯一的敏感度標籤來建立小組以獲得安全性。
-ms.openlocfilehash: b16133a02c82c2b2ab0e56a5545e19b160933664
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: f540c1fce1c525ab49037ea27b139f10fac76f33
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560226"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577959"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>為小組設定安全性隔離
 
@@ -28,7 +28,7 @@ ms.locfileid: "46560226"
 
 除了私人存取外，本文還說明如何設定相關聯的 SharePoint 網站 (可從小組頻道的 [檔案]**** 區段來存取)，以獲得所需的額外安全性進而能夠儲存受到高度管制的資料。
 
-針對高度管制資料，小組需要設定的元素有：
+具有安全性隔離小組的設定元素如下：
 
 - 私人小組
 - 小組的相關聯 SharePoint 網站需要的額外安全性有：
@@ -42,9 +42,9 @@ ms.locfileid: "46560226"
 > [!IMPORTANT]
 > 請先確定您已啟用[敏感度標籤以保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)，然後再繼續進行本文中的步驟。
 
-<a name="poster"></a> 如需這種案例的2頁摘要，請參閱 [Microsoft 具有安全性隔離的團隊海報](../downloads/team-security-isolation-poster.pdf)。
+<a name="poster"></a> 如需此案例的 2 頁式摘要，請參閱[具有安全性隔離的 Microsoft Teams 海報](../downloads/team-security-isolation-poster.pdf)。
 
-[![Microsoft 具有安全性隔離的團隊海報](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
+[![具有安全性隔離的 Microsoft Teams 海報](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) 或 [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pptx) 格式下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
 
@@ -226,7 +226,7 @@ Microsoft 365 提供了其他方法來保護您的內容。 請想想下列選�
 
 小組成立後，您就可以開始對小組成員推動採用此小組及其額外的安全性。
 
-## <a name="train-your-users"></a>訓練您的使用者
+### <a name="train-your-users"></a>訓練您的使用者
 
 小組成員可以存取小組及其所有資源，包括聊天、會議及其他應用程式。 從頻道的 [檔案]**** 區段使用檔案時，小組成員應將敏感度標籤指派給其所建立的檔案。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: 11e374dac4e1e0a13d3bdbc642922dca1b8954f4
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 9c7232b5e90dd51322755220c40198a5bd077cce
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127380"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577971"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
@@ -103,7 +103,9 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 
 - **Teams 不支援進階保留**。 建立保留原則時，如果您選擇 [用來識別符合特定條件內容的進階設定][](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions)，則無法使用 Teams 位置。 目前，當您選取這些位置時，會將 Teams 中的保留套用至所有聊天和頻道訊息內容。
 
-- **當您為 Teams 團隊頻道訊息設定保留原則時，不會包含私人頻道的訊息**。 目前，保留原則尚未支援私人頻道。 
+- **當您為 Teams 團隊頻道訊息設定保留原則時，不會包含私人頻道的訊息**。 目前，保留原則尚未支援 [私人頻道]。 
+
+- **不會保留 Teams 聊天和頻道訊息中的讚和反應**。 保留原則不支援來自其他人表情符號格式的反應。
 
 - **Teams 最多可能需要七天的時間來清理過期的訊息**。 保留期間到期時，套用至 Teams 的保留原則將會刪除聊天和頻道訊息。 不過，要清理並永久刪除這些訊息可能需要三天到七天的時間。 同時，聊天和頻道訊息在保留期間到期後以及當訊息永久刪除時，仍可透過電子文件探索工具進行搜尋。
     

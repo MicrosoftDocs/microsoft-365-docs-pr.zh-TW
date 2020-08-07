@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bf008ed20e1dd56061004f63a24124488487af17
-ms.sourcegitcommit: 8595cb9ffe0ca5556080f24224182381e1d880de
+ms.openlocfilehash: 5bbcd7c7e3c68b5b5a23736901e5772454e9e10a
+ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "45035658"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46577993"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -112,7 +112,7 @@ ms.locfileid: "45035658"
 
 - 發生事件後，對應的稽核記錄最多可能需要 30 分鐘或 24 小時的時間，才會在稽核記錄搜尋的結果中傳回。 下列表格顯示不同 Office 365 服務的所需時間。
 
-  |**Microsoft 365 服務或功能**|**30 分鐘**|**24 小時**|
+  |Microsoft 365 服務或功能|30 分鐘|24 小時|
   |:-----|:-----:|:-----:|
   |進階威脅防護和威脅情報|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (使用者登入活動)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -172,26 +172,26 @@ ms.locfileid: "45035658"
 
 4. 設定下列搜尋準則：
 
-    a. **活動**：按一下下拉式清單以顯示您可以搜尋的活動。 使用者和系統管理員活動會歸類成各種相關活動的群組。 您可以選取特定活動，或者也可以按一下活動群組名稱以選取該群組中的所有活動。 您也可以按一下選定的活動以清除選取。 執行搜尋後，只會顯示選定活動的稽核記錄項目。 選取 [顯示所有活動的結果]**** 會顯示選定使用者或使用者群組所執行的所有活動結果。
+   1. **活動**：按一下下拉式清單以顯示您可以搜尋的活動。 使用者和系統管理員活動會歸類成各種相關活動的群組。 您可以選取特定活動，或者也可以按一下活動群組名稱以選取該群組中的所有活動。 您也可以按一下選定的活動以清除選取。 執行搜尋後，只會顯示選定活動的稽核記錄項目。 選取 [顯示所有活動的結果]**** 會顯示選定使用者或使用者群組所執行的所有活動結果。
 
-    稽核記錄中會記錄超過 100 個使用者和系統管理員活動。 按一下本文主題的 [已稽核活動]**** 索引標籤，可查看不同服務中各項活動的描述。
+      稽核記錄中會記錄超過 100 個使用者和系統管理員活動。 按一下本文主題的 [已稽核活動]**** 索引標籤，可查看不同服務中各項活動的描述。
 
-    b. **開始日期**和**結束日期**：根據預設會選取過去七天。 選取日期和時間範圍，以顯示該期間內已發生的事件。 日期和時間以國際標準時間 (UTC) 格式表示。 您可以指定的最大日期範圍為 90 天。 如果選定的日期範圍大於 90 天，則會顯示錯誤。
+   1. **開始日期**和**結束日期**：根據預設會選取過去七天。 選取日期和時間範圍，以顯示該期間內已發生的事件。 日期和時間以國際標準時間 (UTC) 格式表示。 您可以指定的最大日期範圍為 90 天。 如果選定的日期範圍大於 90 天，則會顯示錯誤。
 
-    > [!TIP]
-    > 如果您使用的是 90 天的最大日期範圍，請為 [開始日期]**** 選取目前的時間。 否則，您會收到一則表示開始日期早於結束日期的錯誤。 如果您已開啟過去 90 天中的稽核，最大日期範圍不能在開啟稽核的日期之前開始。
+      > [!TIP]
+      > 如果您使用的是 90 天的最大日期範圍，請為 [開始日期]**** 選取目前的時間。 否則，您會收到一則表示開始日期早於結束日期的錯誤。 如果您已開啟過去 90 天中的稽核，最大日期範圍不能在開啟稽核的日期之前開始。
 
-    c. **使用者**：在此方塊中按一下，然後選取要顯示搜尋結果的一或多位使用者。 結果清單會顯示您在此方塊中選取的使用者所執行的選定活動之稽核記錄項目。 若要傳回貴組織中所有使用者 (及服務帳戶) 的項目，請將此方塊保留空白。
+   1. **使用者**：在此方塊中按一下，然後選取要顯示搜尋結果的一或多位使用者。 結果清單會顯示您在此方塊中選取的使用者所執行的選定活動之稽核記錄項目。 若要傳回貴組織中所有使用者 (及服務帳戶) 的項目，請將此方塊保留空白。
 
-    d. **檔案、資料夾或網站**：輸入整個檔案或資料夾名稱的一部分，以搜尋含有特定關鍵字之資料夾的檔案相關活動。 您也可以指定檔案或資料夾的 URL。 如果您使用 URL，請確定您輸入了完整的 URL 路徑，或者，如果您只輸入部分 URL，請不要包含任何特殊字元或空格。
+   1. **檔案、資料夾或網站**：輸入整個檔案或資料夾名稱的一部分，以搜尋含有特定關鍵字之資料夾的檔案相關活動。 您也可以指定檔案或資料夾的 URL。 如果您使用 URL，請確定您輸入了完整的 URL 路徑，或者，如果您只輸入部分 URL，請不要包含任何特殊字元或空格。
 
-    若要傳回貴組織中所有檔案和資料夾的項目，請將此方塊保留空白。
+      若要傳回貴組織中所有檔案和資料夾的項目，請將此方塊保留空白。
 
-   **秘訣**
-
-   - 如果您要尋找與**網站**相關的所有活動，在 URL 後面加入萬用字元符號 (\*) 可傳回該網站的所有項目，例如 **"https://contoso-my.sharepoint.com/personal/*"**。
-
-   - 如果您要尋找與**檔案**相關的所有活動，在檔案名稱前面加入萬用字元符號 (\*) 可傳回該檔案的所有項目，例如 **"*Customer_Profitability_Sample.csv"**。
+      > [!TIP]
+      >
+      > - 如果您要尋找與**網站**相關的所有活動，在 URL 後面加入萬用字元符號 (\*) 可傳回該網站的所有項目，例如 **"https://contoso-my.sharepoint.com/personal/*"**。
+      >
+      > - 如果您要尋找與**檔案**相關的所有活動，在檔案名稱前面加入萬用字元符號 (\*) 可傳回該檔案的所有項目，例如 **"*Customer_Profitability_Sample.csv"**。
 
 5. 按一下 [搜尋]**** 以使用您的搜尋準則執行搜尋。
 
@@ -313,17 +313,17 @@ ms.locfileid: "45035658"
 |[Yammer 活動](#yammer-activities)|[Microsoft Power Automate 活動](#microsoft-power-automate-activities)|[Microsoft Power Apps 活動](#microsoft-power-apps-activities)|
 |[Microsoft Stream 活動](#microsoft-stream-activities)|[內容總管活動](#content-explorer-activities)|[隔離活動](#quarantine-activities)|
 |[Microsoft Teams 活動](#microsoft-forms-activities)|[敏感度標籤活動](#sensitivity-label-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)|
-||||
+|[保留原則和保留標籤活動](#retention-policy-and-retention-label-activities)|||
 
 ### <a name="file-and-page-activities"></a>檔案和頁面活動
 
 下表說明 SharePoint Online 和商務用 OneDrive 的檔案和頁面活動。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已存取檔案|FileAccessed|使用者或系統帳戶存取檔案。|
 |(無)|FileAccessedExtended|這與「已存取檔案」(FileAccessed) 活動相關聯。 當相同人員持續存取某個檔案一段時間 (最多 3 小時)，便會記錄 FileAccessedExtended 事件。 <br/><br/> 記錄 FileAccessedExtended 事件的目的在於減少持續存取某個檔案時，記錄 FileAccessed 事件的數目。 這有助於減少多個 FileAccessed 記錄的干擾，以了解哪些基本上是同樣的使用者活動，並讓您專注在初始 (且更重要的) FileAccessed 事件。|
-|已變更合規性原則標籤|ComplianceSettingChanged|保留標籤已在文件中套用或移除。 手動或自動將保留標籤套用到郵件時就會觸發此事件。|
+|已變更檔案的保留標籤|ComplianceSettingChanged|保留標籤已在文件中套用或移除。 手動或自動將保留標籤套用到郵件時就會觸發此事件。|
 |已將記錄狀態變更為鎖定|LockRecord|將文件歸類為記錄的保留標籤記錄狀態已鎖定。 這表示文件無法修改或刪除。 只有至少獲派網站參與者權限的使用者可以變更文件記錄狀態。|
 |已將記錄狀態變更為解除鎖定|UnlockRecord|將文件歸類為記錄的保留標籤記錄狀態已解除鎖定。 這表示文件可修改或刪除。 只有至少獲派網站參與者權限的使用者可以變更文件記錄狀態。|
 |已簽入檔案|FileCheckedIn|使用者簽入他們從文件庫簽出的文件。|
@@ -332,7 +332,7 @@ ms.locfileid: "45035658"
 |已刪除檔案|FileDeleted|使用者刪除網站中的文件。|
 |已刪除資源回收筒中的檔案|FileDeletedFirstStageRecycleBin|使用者從網站的資源回收筒中刪除檔案。|
 |已刪除第二階段資源回收筒中的檔案|FileDeletedSecondStageRecycleBin|使用者從網站的第二階段資源回收筒中刪除檔案。|
-|已刪除記錄合規性原則標籤|ComplianceRecordDelete|已歸類為記錄的文件已刪除。 將內容歸類為記錄的保留標籤套用至文件時，文件就會視為記錄。|
+|已刪除記錄合規性原則標籤|ComplianceRecordDelete|已刪除標示為記錄的文件。 將會把內容標示為記錄的保留標籤套用至文件時，就會將文件視為記錄。|
 |偵測到的文件敏感度不相符|DocumentSensitivityMismatchDetected|使用者將文件上傳到受敏感度標籤保護的網站，且文件的敏感度標籤優先於網站的敏感度標籤。 例如，套用「機密」標籤的文件上傳到套用「一般」標籤的網站。 <br/><br/> 如果文件套用的敏感度標籤，其優先順序低於網站所套用的敏感度標籤，則不會觸發此事件。 例如，套用「一般」標籤的文件上傳到標記為「機密」的網站。 如需敏感度標籤優先順序的詳細資訊，請參閱[標籤優先順序 (順序很重要)](sensitivity-labels.md#label-priority-order-matters)。|
 |在檔案中偵測到惡意程式碼|FileMalwareDetected|SharePoint 防毒引擎在檔案中偵測到惡意程式碼。|
 |已捨棄檔案簽出|FileCheckOutDiscarded|使用者捨棄 (或復原) 已簽出的檔案。這表示會捨棄使用者在簽出時對檔案所做的任何變更，而且不會儲存至文件庫中的文件版本。|
@@ -374,7 +374,7 @@ ms.locfileid: "45035658"
 
 下表說明 SharePoint Online 和商務用 OneDrive 的資料夾活動。 如先前所述，某些 SharePoint 活動的稽核記錄將會指出 app@sharepoint 使用者代表啟動動作的使用者或系統管理員執行了動作。 如需詳細資訊，請參閱[稽核記錄中的 app\@sharepoint 使用者](#the-appsharepoint-user-in-audit-records)。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已複製資料夾|FolderCopied|使用者從網站複製資料夾至 SharePoint 或商務用 OneDrive 中的另一個位置。|
 |已建立資料夾|FolderCreated|使用者在網站上建立資料夾。|
@@ -391,7 +391,7 @@ ms.locfileid: "45035658"
 
 下表說明使用者在 SharePoint Online 中與清單和清單項目互動時的相關活動。 如先前所述，某些 SharePoint 活動的稽核記錄將會指出 app@sharepoint 使用者代表啟動動作的使用者或系統管理員執行了動作。 如需詳細資訊，請參閱[稽核記錄中的 app\@sharepoint 使用者](#the-appsharepoint-user-in-audit-records)。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已建立清單|ListCreated|使用者已建立 SharePoint 清單。|
 |已建立清單欄|ListColumnCreated|使用者已建立 SharePoint 清單欄。 清單欄是連結至一個或多個 SharePoint 清單的欄位。|
@@ -423,7 +423,7 @@ ms.locfileid: "45035658"
 > [!NOTE]
 > 根據使用者物件的 UserType 屬性，使用者可以是成員** 或來賓**。 成員通常是員工，而來賓通常是您的組織之外的共同作業者。 當使用者接受共用邀請時 (而且不屬於您的組織的一部分)，就會在您的組織目錄中為他們建立使用者帳戶。 一旦來賓使用者在您的目錄中擁有帳戶後，就可以直接與他們共用資源 (而不需要邀請)。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已將權限等級新增至網站集合|PermissionLevelAdded|權限等級已新增至網站集合。|
 |已接受存取要求|AccessRequestAccepted|已接受網站、資料夾或文件的存取要求，而提出要求的使用者已獲授與存取權。|
@@ -455,7 +455,7 @@ ms.locfileid: "45035658"
 
 下表列出 SharePoint Online 和商務用 OneDrive 中的檔案同步活動。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已允許電腦同步處理檔案|ManagedSyncClientAllowed|使用者與網站成功建立同步處理關聯性。 同步關係成功，因為使用者的電腦是已新增至網域清單之網域的成員 (稱為「安全收件者清單」**)，可以存取您的組織中的文件庫。 <br/><br/> 如需有關此功能的詳細資訊，請參閱[使用 Windows PowerShell Cmdlet 為安全收件者清單上的網域啟用 OneDrive 同步](https://go.microsoft.com/fwlink/p/?LinkID=534609)。|
 |已阻擋電腦同步處理檔案|UnmanagedSyncClientBlocked|使用者嘗試與網站建立同步關聯性，但作為連線來源的電腦並非您組織網域的成員或是未加入網域清單 (也稱為安全收件者清單)** 中的網域成員，加入此清單者才可存取您組織中的文件庫。 不允許同步關係，並且禁止使用者的電腦同步、下載或上傳文件庫的檔案。 <br/><br/> 如需此功能的相關資訊，請參閱[使用 Windows PowerShell Cmdlet 為安全收件者清單上的網域啟用 OneDrive 同步](https://go.microsoft.com/fwlink/p/?LinkID=534609)。|
@@ -469,7 +469,7 @@ ms.locfileid: "45035658"
 
 下表列出在 SharePoint 中指派權限及使用群組提供 (及撤銷) 網站存取權的相關事件。 如先前所述，某些 SharePoint 活動的稽核記錄將會指出 app@sharepoint 使用者代表啟動動作的使用者或系統管理員執行了動作。 如需詳細資訊，請參閱[稽核記錄中的 app\@sharepoint 使用者](#the-appsharepoint-user-in-audit-records)。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已新增網站集合系統管理員|SiteCollectionAdminAdded|網站集合系統管理員或擁有者新增一位人員來作為網站的網站集合管理員。 網站集合系統管理員擁有網站集合及所有子網站的完全控制權限。 當系統管理員讓自己可存取使用者的 OneDrive 帳戶時 (藉由在 SharePoint 系統管理中心編輯使用者設定檔，或[使用 Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data))，也會記錄此活動。|
 |已將使用者或群組新增至 SharePoint 群組|AddedToGroup|使用者已新增成員或來賓至 SharePoint 群組。 這可能是刻意的動作，或另一個活動的結果 (例如共用事件)。|
@@ -493,7 +493,7 @@ ms.locfileid: "45035658"
 
 下表列出 SharePoint Online 中的網站管理工作所產生的事件。 如先前所述，某些 SharePoint 活動的稽核記錄將會指出 app@sharepoint 使用者代表啟動動作的使用者或系統管理員執行了動作。 如需詳細資訊，請參閱[稽核記錄中的 app\@sharepoint 使用者](#the-appsharepoint-user-in-audit-records)。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已新增允許的資料位置|AllowedDataLocationAdded|SharePoint 或全域系統管理員已在多地理位置環境中新增允許的資料位置。|
 |已新增免除使用者代理程式|ExemptUserAgentSet|SharePoint 或全域系統管理員已將使用者代理程式新增至 SharePoint 系統管理員中心的免除使用者代理程式清單。|
@@ -533,7 +533,7 @@ ms.locfileid: "45035658"
 
  您也可以在 Exchange Online PowerShell 中使用 [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) Cmdlet 來搜尋信箱活動。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |存取信箱項目|MailItemsAccessed|在信箱中讀取或存取郵件。 可以通過以下兩種方式之一觸發此事件的稽核記錄：當郵件客戶端 (例如 Outlook) 對郵件執行繫結作業時，或者當郵件通訊協定 (例如 Exchange ActiveSync 或 IMAP) 同步郵件文件夾中的項目時。 僅有 Office 365 或 Microsoft 365 E5 授權的使用者可記錄此事件。 在調查遭入侵的電子郵件帳戶時，分析此活動的稽核記錄相當實用。 如需詳細資訊，請參閱[進階稽核](advanced-audit.md#access-to-crucial-events-for-investigations)中的〈存取調查重要事件〉一節。 |
 |已新增代理人信箱權限|AddMailboxPermissions|系統管理員已將另一名人員其信箱的 FullAccess 信箱權限指派給某個使用者 (亦稱為「代理人」)。 FullAccess 權限可讓代理人開啟該名人員的信箱，以及讀取和管理信箱的內容。|
@@ -556,13 +556,14 @@ ms.locfileid: "45035658"
 |已從 Outlook 用戶端更新收件匣規則|UpdateInboxRules|信箱擁有者或其他有信箱存取權的使用者已在 Outlook 用戶端中修改收件匣規則。|
 |已更新郵件|Update|郵件或其屬性已變更。|
 |使用者已登入信箱|MailboxLogin|使用者已登入其信箱。|
+|將郵件標示為記錄||使用者對電子郵件訊息套用保留標籤，且該標籤已設定為將該項目標示為記錄。 |
 ||||
 
 ### <a name="sway-activities"></a>Sway 活動
 
 下表列出在 Sway 中的使用者和系統管理員活動。 Sway 是一個 Microsoft 365 應用程式，可協助使用者在互動式 Web 畫布上收集、格式化，以及分享想法、故事及簡報。 如需詳細資訊，請參閱[關於 Sway 的常見問題集 – 系統管理員說明](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已變更 Sway 分享層級|SwayChangeShareLevel|使用者變更 Sway 的分享層級。 此事件會捕捉到使用者對 Sway 相關聯分享範圍的變更，例如公用與組織內部。|
 |已建立 Sway|SwayCreate|使用者建立 Sway。|
@@ -584,7 +585,7 @@ ms.locfileid: "45035658"
 
 下表列出當系統管理員透過 Microsoft 365 系統管理員中心或 Azure 管理入口網站新增或變更使用者帳戶時，會記錄的使用者管理活動。
 
-|**活動**|**作業**|**描述**|
+|活動|作業|描述|
 |:-----|:-----|:-----|
 |已新增使用者|新增使用者|已建立使用者帳戶。|
 |已變更使用者授權|變更使用者授權|指派給使用者的授權已變更。 若要查看哪些授權已變更，請參閱對應的 [更新的使用者]** ** 活動。|
@@ -600,7 +601,7 @@ ms.locfileid: "45035658"
 
 下表列出當系統管理員或使用者建立或變更 Microsoft 365 群組時，或當系統管理員透過 Microsoft 365 系統管理員中心或 Azure 管理入口網站建立安全性群組時，會記錄的群組管理活動。 如需有關 Office 365 中的群組詳細資訊，請參閱[檢視、建立及刪除 Microsoft 365 系統管理員中心的群組](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已新增群組|新增群組|已建立群組。|
 |已將成員新增至群組中|將成員新增至群組中|已將成員新增至群組中。|
@@ -613,7 +614,7 @@ ms.locfileid: "45035658"
 
 下表列出當管理員新增或變更已在 Azure AD 中註冊的應用程式時，會記錄的應用程式系統管理活動。 任何依靠 Azure AD 進行驗證的應用程式都必須在目錄中註冊。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已新增委派項目|新增委派項目|已對 Azure AD 中的應用程式建立/授與驗證權限。|
 |已新增服務主體|新增服務主體|已在 Azure AD 中註冊應用程式。 應用程式在目錄中是由服務主體代表。|
@@ -628,7 +629,7 @@ ms.locfileid: "45035658"
 
 下表列出當系統管理員在 Microsoft 365 系統管理員中心或 Azure 管理入口網站中管理系統管理員角色時，會記錄的 Azure AD 角色管理活動。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |將成員新增至 [角色] 中|將角色成員新增至角色|已將使用者新增至 Microsoft 365 中的系統管理員角色。|
 |已從目錄角色中移除使用者|從角色中移除角色成員|已從 Microsoft 365 中的系統管理員角色中移除使用者。|
@@ -639,7 +640,7 @@ ms.locfileid: "45035658"
 
 下表列出當系統管理員在 Microsoft 365 系統管理員中心或 Azure 管理入口網站中管理其組織時，會記錄的 Azure AD 目錄和網域相關活動。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已將網域新增至公司|將網域新增至公司|已將網域新增至您的組織。|
 |已將合作夥伴新增至目錄|將合作夥伴新增至公司|已將合作夥伴 (委派系統管理員) 新增至您的組織。|
@@ -688,7 +689,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 工作場所分析可針對群組在組織間共同作業的方式提供見解。 下表列出在工作場所分析中獲派系統管理員角色或分析師角色的使用者所執行的活動。 獲派分析師角色的使用者具有所有服務功能的完整存取權，並可使用產品來進行分析。 獲派系統管理員角色的使用者可以設定隱私權設定與系統預設值，並可以準備、上傳及驗證工作場所分析中的組織資料。 如需詳細資訊，請參閱[工作場所分析](https://docs.microsoft.com/workplace-analytics/index-orig)。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已存取 OData 連結|AccessedOdataLink|分析師已存取查詢的 OData 連結。|
 |已取消查詢|CanceledQuery|分析師已取消執行查詢。|
@@ -724,7 +725,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 下表列出稽核記錄中記錄的 Yammer 使用者和系統管理員活動。 若要從稽核記錄傳回 Yammer 相關活動，您必須在 [活動]**** 清單中選取 [顯示所有活動的結果]****。 使用 [日期範圍] 方塊與 [使用者]**** 清單來縮小搜尋結果。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已變更資料保留原則|SoftDeleteSettingsUpdated|驗證系統管理員將網路資料保留原則的設定更新為 [實刪除] 或 [虛刪除]。 僅限驗證系統管理員可以執行這項作業。|
 |已變更網路設定|NetworkConfigurationUpdated|網路或驗證系統管理員變更 Yammer 網路的設定。 這包括設定匯出資料的間隔和啟用聊天。|
@@ -761,7 +762,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 下表列出稽核記錄中記錄的內容總管活動。 內容總管可從 Microsoft 365 合規性中心的資料分類工具中存取。 如需詳細資訊，請參閱[使用資料分類內容總管](data-classification-content-explorer.md)。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已存取的項目|LabelContentExplorerAccessedItem|系統管理員 (或身為內容總管內容檢視器角色群組成員的使用者) 可使用內容總管來檢視電子郵件訊息或 SharePoint/OneDrive 文件。|
 ||||
@@ -770,7 +771,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 以下表格列出您可以在稽核記錄中搜尋的隔離活動。 如需關於隔離的詳細資訊，請參閱[在 Office 365 中隔離電子郵件](../security/office-365-security/quarantine-email-messages.md)。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |刪除隔離郵件|QuarantineDelete|使用者已刪除了被視為有害的電子郵件。|
 |已匯出的隔離郵件|QuarantineExport|使用者已匯出了被視為有害的電子郵件。|
@@ -788,7 +789,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 > [!NOTE]
 > 如果 Forms 活動是由共同作者或匿名回應者執行，則記錄方式會稍有不同。 如需詳細資訊，請參閱[由共同作者和匿名回應者執行的 Forms 活動](#forms-activities-performed-by-coauthors-and-anonymous-responders)一節。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已建立註解|CreateComment|表單擁有者為測驗新增註解或分數。|
 |已建立表單|CreateForm|表單擁有者建立新表單。|
@@ -825,7 +826,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 下表說明共同作者和匿名回應者執行之活動的稽核記錄中的稽核活動和資訊。
 
-|**活動類型**|**內部或外部使用者**|**已登入的使用者識別碼**|**已登入的組織**|**Forms 使用者類型**|
+|活動類型|內部或外部使用者|已登入的使用者識別碼|已登入的組織|Forms 使用者類型|
 |:-----|:-----|:-----|:-----|:-----|
 |共同撰寫活動|內部|UPN|表單擁有者的組織|共同作者|
 |共同撰寫活動|外部|UPN<br>|共同作者的組織<br>|共同作者|
@@ -839,7 +840,7 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 下表列出 SharePoint Online 和 Teams 網站套用標籤活動所產生的事件。
 
-|**易記名稱**|**作業**|**描述**|
+|易記名稱|作業|描述|
 |:-----|:-----|:-----|
 |已將敏感度標籤套用到網站|SensitivityLabelApplied|已將敏感度標籤套用到 SharePoint 或 Teams 網站。|
 |已將敏感度標籤從網站移除|SensitivityLabelRemoved|已將敏感度標籤從 SharePoint 或 Teams 網站移除。|
@@ -847,6 +848,21 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 |已變更套用到檔案的敏感度標籤|FileSensitivityLabelChanged|已使用 Office 網頁版或自動標籤原則將不同的敏感度標籤套用到文件。|
 |已將敏感度標籤從檔案移除|FileSensitivityLabelRemoved|已使用 Office 網頁版或自動標籤原則將敏感度標籤從文件移除。|
 ||||
+
+### <a name="retention-policy-and-retention-label-activities"></a>保留原則和保留標籤活動
+
+|易記名稱|作業|描述|
+|:-----|:-----|:-----|
+| 保留原則已配置的設定 |NewRetentionComplianceRule |系統管理員已設定新保留原則的保留設定。 保留設定包括保留項目的時間長度，以及當項目保留期間到期時，項目會發生的情況 (例如刪除項目、保留項目或保留然後刪除項目)。 此活動也與執行 [RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) Cmdlet 對應。|
+| 已建立保留標籤 |NewComplianceTag |系統管理員已建立新的保留標籤。|
+| 已建立保留原則 |NewRetentionCompliancePolicy|系統管理員已建立新的保留原則。|
+| 已從保留原則刪除設定| RemoveRetentionComplianceRule<br/>| 系統管理員已刪除保留原則的組態設定。 當系統管理員刪除保留原則或執行 [RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionComplianceRule) Cmdlet 時，更可能會記錄此活動。|
+| 已刪除保留標籤 |RemoveComplianceTag | 系統管理員已刪除保留標籤。|
+| 已刪除保留原則 |RemoveRetentionCompliancePolicy<br/> |系統管理員已刪除保留原則。 |
+| 已啟用保留標籤的法規記錄選項<br/> |SetRestrictiveRetentionUI |系統管理員已執行 [RegulatoryComplianceUI](https://docs.microsoft.com/powershell/module/exchange/set-regulatorycomplianceui) Cmdlet，因此系統管理員可以選取保留標籤的 UI 設定選項，以將內容標示為法規記錄。|
+| 保留原則已更新的設定 | SetRetentionComplianceRule | 系統管理員已變更現有保留原則的保留設定。 保留設定包括保留項目的時間長度，以及當項目保留期間到期時，項目會發生的情況 (例如刪除項目、保留項目或保留然後刪除項目)。 此活動也與執行 [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) Cmdlet 對應。 |
+| 已更新保留標籤 |SetComplianceTag  | 系統管理員已更新現有的保留標籤。|
+| 已更新保留原則 |SetRetentionCompliancePolicy |系統管理員已更新現有的保留原則。 觸發此事件的更新包括新增或排除保留原則所套用的內容位置。|
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 系統管理員稽核記錄
 
@@ -874,7 +890,6 @@ Exchange 系統管理員稽核記錄功能 (在 Office 365 中預設為啟用) �
   - [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)
 
    請記住，相同的 Exchange 系統管理員活動會同時記錄在 Exchange 系統管理員稽核記錄和稽核記錄中。
-
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
