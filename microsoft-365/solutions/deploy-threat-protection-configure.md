@@ -1,8 +1,8 @@
 ---
 title: 設定跨 Microsoft 365 之威脅防護功能的步驟
 description: 瞭解如何在 Microsoft 365 E5 中部署威脅防護服務和功能。
-ms.author: bcarter
-author: brendacarter
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 30ecb25ca68b23278aa8b2905c5f3aa8703cb7f1
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 2bbbe1d1af36333ced4209d889c19e7bad7195d6
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522082"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588225"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 設定威脅防護功能
 
@@ -27,7 +27,7 @@ ms.locfileid: "46522082"
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>步驟1：設定多重要素驗證和條件式存取原則
 
-[多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)（MFA）要求使用者使用撥打電話或驗證器應用程式來驗證其身分識別。 [條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)定義必須滿足的特定需求，使用者才能存取 Microsoft 365 中的應用程式和資料。 MFA 和條件式存取原則共同運作，以保護您的組織。 例如，如果有人嘗試使用未啟用 MFA 的帳戶登入行動裝置，且條件式存取原則要求 MFA 生效，該使用者將無法登入。  
+[多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks) (MFA) 要求使用者使用撥打電話或驗證器應用程式來驗證其身分識別。 [條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)定義必須滿足的特定需求，使用者才能存取 Microsoft 365 中的應用程式和資料。 MFA 和條件式存取原則共同運作，以保護您的組織。 例如，如果有人嘗試使用未啟用 MFA 的帳戶登入行動裝置，且條件式存取原則要求 MFA 生效，該使用者將無法登入。  
 
 Microsoft 已測試並建議一組特定的條件式存取和相關原則，以保護所有 SaaS 應用程式的存取，尤其是 Microsoft 365。 建議使用原則進行基準、機密和高管制的保護。 從執行基準保護的原則開始。 
 
@@ -50,9 +50,9 @@ Microsoft 已測試並建議一組特定的條件式存取和相關原則，以�
 
 ## <a name="step-2-configure-azure-advanced-threat-protection"></a>步驟2：設定 Azure 高級威脅防護
 
-[Azure 高級威脅防護](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)（azure ATP）是雲端式的安全性解決方案，可與您的內部部署[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)信號搭配使用，以識別、偵測和調查您組織中的高級威脅、遭到破壞的身分識別，以及惡意的內幕程式列動。
+[Azure Advanced 威脅防護](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (azure ATP) 是雲端式的安全性解決方案，可與您的內部部署[Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis)信號搭配使用，以識別、偵測和調查您組織中的高級威脅、遭到破壞的身分識別，以及惡意的內幕程式列動。
 
-Azure ATP 可讓安全性作業（SecOps）分析員和安全性專業人員在混合環境中偵測到高級攻擊，以進行下列作業：
+Azure ATP 可讓安全性作業 (SecOps) 分析師和安全性專業人員，以偵測混合式環境中的高級攻擊：
 - 使用以教學為基礎的分析來監控使用者、實體行為和活動。
 - 保護儲存在 Active Directory 中的使用者身分識別和認證。
 - 識別並調查整個狙殺鍊中的可疑使用者活動和進階攻擊。
@@ -64,7 +64,7 @@ Azure ATP 可讓安全性作業（SecOps）分析員和安全性專業人員在�
 
 1. [設定 AZURE ATP](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1)以保護您的主要環境。
 2. 保護所有的[網域控制站](https://docs.microsoft.com/azure-advanced-threat-protection/atp-sensor-monitoring)和[樹](https://docs.microsoft.com/azure-advanced-threat-protection/atp-multi-forest)系。
-3. 將[AZURE ATP 警示](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external)整合至您的安全性作業（SecOps）工作流程。
+3. 將[AZURE ATP 警示](https://docs.microsoft.com/azure-advanced-threat-protection/suspicious-activity-guide?tabs=external)整合到您的安全性作業中 (SecOps) 工作流程。
 
 ### <a name="more-information-about-azure-atp"></a>Azure ATP 的詳細資訊
 
@@ -76,7 +76,7 @@ Azure ATP 可讓安全性作業（SecOps）分析員和安全性專業人員在�
 
 [Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)功能會將信號和協調功能結合成單一解決方案。 透過整合的 Microsoft 威脅防護解決方案，安全性專業人員可以結合上述威脅，讓每一種產品收到並決定威脅的完整範圍和影響;如何進入環境、受到影響的內容，以及目前對組織的影響。 Microsoft 威脅防護會自動採取動作，以防止或停止攻擊及自我修復受影響的信箱、端點和使用者身分識別。
 
-Microsoft 威脅防護功能將提醒、事件、自動化調查和回應，以及跨工作負載的高級搜尋（Azure ATP，Office 365 ATP，Microsoft Defender ATP，以及 Microsoft Cloud App Security）統一成單一玻璃體驗。 在您設定一或多個高級威脅防護服務後，開啟 Microsoft 威脅防護。 新功能會連續新增至 Microsoft 威脅防護;請考慮改為接收預覽功能。
+Microsoft 威脅防護針對工作負載整合警示、事件、自動化調查和回應，以及跨工作負載的高級搜尋 (Azure ATP、Office 365 ATP、Microsoft Defender ATP 和 Microsoft Cloud App Security) 單一的玻璃體驗。 在您設定一或多個高級威脅防護服務後，開啟 Microsoft 威脅防護。 新功能會連續新增至 Microsoft 威脅防護;請考慮改為接收預覽功能。
 
 ### <a name="to-set-up-microsoft-threat-protection"></a>設定 Microsoft 威脅防護
 
@@ -93,11 +93,10 @@ Microsoft 威脅防護功能將提醒、事件、自動化調查和回應，以�
 
 ## <a name="step-4-configure-office-365-advanced-threat-protection"></a>步驟4：設定 Office 365 的高級威脅防護
 
-[Office 365 Advanced 威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)（OFFICE 365 ATP）會保護您的組織免受電子郵件訊息（附件和 URLs）、Office 檔及共同作業工具中的惡意威脅。 下表列出 Microsoft 365 E5 中包含的 Office 365 ATP 功能和功能：
+[Office 365 Advanced 威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (OFFICE 365 ATP) 會防範電子郵件中的惡意威脅 (附件及 URLs) 、Office 檔和協同作業工具。 下表列出 Microsoft 365 E5 中包含的 Office 365 ATP 功能和功能：
 
-|||
-|---|---|
 |設定、保護及偵測功能|自動化、調查、修正及教育功能|
+|---|---|
 |[安全附件](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[安全連結](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[安全檔](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP 反網路釣魚保護](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[威脅追蹤工具](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[威脅總管](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[自動調查及回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[攻擊模擬器](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
@@ -118,7 +117,7 @@ Microsoft 威脅防護功能將提醒、事件、自動化調查和回應，以�
 
 ## <a name="step-5-configure-microsoft-defender-advanced-threat-protection"></a>步驟5：設定 Microsoft Defender 高級威脅防護
 
-[Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection)（MICROSOFT defender ATP）會從 cyberthreats、高級攻擊和資料違規中保護您的組織裝置（也稱為端點）。 安全小組在管理其端點的安全性時，效率會更高。 穩健的工具可協助組織使用具有[威脅和弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的漏洞偵測，以不斷處理未經修補的系統。 自動偵測和修正功能，例如[攻擊面降低](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)、[下一代保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)、[端點偵測和回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)，以及[自動調查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)，可協助您保護裝置安全地抵禦惡意程式碼。 在這些功能上，客戶可以取得主動通知，並在需要時與 Microsoft 威脅專家（自願加入受管理的搜尋服務的一部分）接洽。 
+[Microsoft Defender Advanced 威脅防護](https://docs.microsoft.com/windows/security/threat-protection) (MICROSOFT defender ATP) 會保護您的組織裝置， (也稱為) 來自 cyberthreats、高級攻擊和資料違例的端點。 安全小組在管理其端點的安全性時，效率會更高。 穩健的工具可協助組織使用具有[威脅和弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)的漏洞偵測，以不斷處理未經修補的系統。 自動偵測和修正功能，例如[攻擊面降低](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-attack-surface-reduction)、[下一代保護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)、[端點偵測和回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response)，以及[自動調查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)，可協助您保護裝置安全地抵禦惡意程式碼。 在這些功能上，客戶可以取得主動通知，並在需要時與 Microsoft 威脅專家（自願加入受管理的搜尋服務的一部分）接洽。 
 
 
 ### <a name="set-up-microsoft-defender-atp"></a>設定 Microsoft Defender ATP
@@ -155,7 +154,7 @@ Microsoft 威脅防護功能將提醒、事件、自動化調查和回應，以�
 
 ## <a name="step-7-monitor-status-and-take-actions"></a>步驟7：監控狀態並採取動作
 
-設定並部署威脅防護服務和功能之後，下一步是監視威脅偵測，並採取適當的動作。 您最好的起點是 Microsoft 365 的安全性中心（ [https://security.microsoft.com](https://security.microsoft.com) ），您可以在其中監視和管理您的 microsoft 身分識別、資料、裝置、應用程式和基礎結構的安全性。 
+設定並部署威脅防護服務和功能之後，下一步是監視威脅偵測，並採取適當的動作。 您最好的起點是 Microsoft 365 的安全性中心 ([https://security.microsoft.com](https://security.microsoft.com)) ，您可以在其中監視和管理您的所有 Microsoft 身分識別、資料、裝置、應用程式和基礎結構的安全性。 
 
 :::image type="content" source="../media/solutions-architecture-center/m365-security-center.png" alt-text="Microsoft 365 安全性中心":::
 
@@ -191,7 +190,7 @@ Microsoft 365 提供下列資源，協助您在組織中告知使用者：
 除了這項指導之外，Microsoft 也建議您的使用者採取本文所述的動作：[保護您的帳戶和裝置免受駭客和惡意](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx)代碼的攻擊。 這些動作包括：
 - 使用強式密碼
 - 保護裝置 
-- 啟用 Windows 10 和 Mac 電腦上的安全性功能（適用于非管理裝置）
+- 在 Windows 10 和 Mac 電腦上啟用非管理裝置的安全性功能 () 
     
 Microsoft 也建議您採取下列文章中建議的動作來保護其個人電子郵件帳戶：
 - [協助保護您的 Outlook.com 電子郵件帳戶](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
