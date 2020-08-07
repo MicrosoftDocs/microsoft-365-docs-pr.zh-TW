@@ -489,28 +489,30 @@
             - name: 安全性與合規性中心內的郵件流程深入解析
               href: ./office-365-security/mail-flow-insights-v2.md
               items:
-                - name: 郵件流程圖報告
+                - name: 自動轉寄訊息深入解析
+                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
+                - name: 修正可能的郵件迴圈深入解析
+                  href: ./office-365-security/mfi-mail-loop-insight.md
+                - name: 修正緩慢的郵件流程規則深入解析
+                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: 郵件流程圖
                   href: ./office-365-security/mfi-mail-flow-map-report.md
-                - name: 上層網域郵件流程狀態深入解析
-                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
-                - name: SMTP 驗證用戶端報告
-                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
-                - name: 修正寄件者網域深入解析
-                  href: ./office-365-security/mfi-sender-domain-insight.md
-                - name: 未傳遞報告
-                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: 轉寄的新網域電子郵件深入解析
+                  href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
+                - name: 新使用者轉寄電子郵件深入解析
+                  href: ./office-365-security/mfi-new-users-forwarding-email.md
                 - name: 非公認的網域報告
                   href: ./office-365-security/mfi-non-accepted-domain-report.md
-                - name: 外寄和內送郵件流程
+                - name: 未傳遞報告
+                  href: ./office-365-security/mfi-non-delivery-report.md
+                - name: 外寄和內送郵件流程深入解析
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
-                - name: 佇列警示和佇列
+                - name: 佇列深入解析
                   href: ./office-365-security/mfi-queue-alerts-and-queues.md
-                - name: 自動轉寄訊息報告
-                  href: ./office-365-security/mfi-auto-forwarded-messages-report.md
-                - name: 郵件迴圈深入解析
-                  href: ./office-365-security/mfi-mail-loop-insight.md
-                - name: 緩慢的郵件流程規則深入解析
-                  href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md
+                - name: SMTP 驗證用戶端深入解析和報告
+                  href: ./office-365-security/mfi-smtp-auth-clients-report.md
+                - name: 上層網域郵件流程狀態深入解析
+                  href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: 安全性解決方案
           items:
             - name: 適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南
