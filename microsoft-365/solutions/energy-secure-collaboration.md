@@ -13,15 +13,15 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: 了解 Microsoft 365 如何協助將能源組織移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規
 ms.custom: ''
-ms.openlocfilehash: bb45cf1abf101966514eb4f54090b3ac7cbee645
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d68615d96f0f7294c16ccb7a4fba9968f4948266
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521014"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597452"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>能源產業的重要合規性與安全性考量
-:::image type="content" source="../media/solution-arch-center/MSC17_global_016.png" alt-text="使用雲端的各種產業全球檢視圖例比喻":::
+![使用雲端的各種產業全球檢視的示意圖](../media/solution-arch-center/MSC17_global_016.png)
 ## <a name="introduction"></a>簡介
 能源產業提供社會大眾每天依賴的燃料和關鍵基礎結構。 為了確保與大量能源系統相關基礎結構的可靠性，監管機關施加了嚴格的能源產業組織標準。 這些法規標準不僅與能源產生和傳輸相關，也與對能源公司日常工作至關重要的資料和通訊相關。 
 

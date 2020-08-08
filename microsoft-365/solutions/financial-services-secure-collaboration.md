@@ -12,12 +12,12 @@ ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 如何協助將金融服務移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規
 f1.keywords: NOCSH
-ms.openlocfilehash: ccb6243df9030188129c6f2be7b34f467b09781d
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 24355518219830d815ce027ec75bb72ee0675a32
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521204"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597518"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 
@@ -66,7 +66,7 @@ Teams 可提供共同作業空間，以安全的方式儲存敏感性客戶資�
 
 另一個常見的案例是使用 Teams 做為「虛擬資料室」，以安全的方式共同作業，包括儲存及管理文件。 投資金融、資產管理或私募股權公司內的團隊成員和企業集團可安全地在交易或投資上共同作業。 跨職能團隊通常會參與規劃及履行這類交易，而安全地共用資料及進行交談的能力是核心需求。 與外部投資者安全地共用相關文件也是重要需求。 Teams 提供安全且完全可稽核的位置，以集中儲存、保護及共用投資資料。
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="會議中一群上班族在討論大螢幕上的影像。":::
+![一組辦公室工作者在會議中討論大螢幕上的影像](../media/m365cO19-ent-dell-latitude13-5951.jpg)
  
 ### <a name="teams-improve-collaboration-and-reduce-compliance-risk"></a>Teams：改善共同作業並降低合規性風險
 
@@ -156,7 +156,7 @@ Identity Protection 使用 Microsoft 在 Azure AD 組織、Microsoft 帳戶消�
 
 Identity Protection 利用基於啟發學習法、使用者與實體行為分析 (UEBA) 和整個 Microsoft 生態系統中的機器學習 (ML) 的先進偵測技術，協助組織自動防範身分識別洩露。
 
-:::image type="content" source="../media/win17-15021-00-n9.jpg" alt-text="五名資訊工作者觀看一名資訊工作者簡報。":::
+![五名資訊工作者觀看另一名資訊工作者簡報](../media/win17-15021-00-n9.jpg)
  
 ## <a name="identify-sensitive-data-and-prevent-data-loss"></a>識別敏感性資料並防止資料外洩
 Microsoft 365 讓所有組織都能透過強大的功能組合來識別組織內的敏感性資料，包括：
@@ -178,7 +178,7 @@ Microsoft 365 讓所有組織都能透過強大的功能組合來識別組織內
 
 Identity Protection 利用基於啟發學習法、使用者與實體行為分析和整個 Microsoft 生態系統中的機器學習的先進偵測技術，協助組織自動防範身分識別洩露。
 
-:::image type="content" source="../media/clo1718-portrait-006.jpg" alt-text="各種監視器描繪一名資訊工作者。":::
+![在大型電視牆前拍照的一名資訊工作者](../media/clo1718-portrait-006.jpg)
 
 ## <a name="defend-the-fortress"></a>堅守堡壘
 
@@ -199,7 +199,7 @@ Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為�
 * 識別並調查整個狙殺鍊中的可疑使用者活動和進階攻擊。
 * 以簡單的時間表提供清楚的事件資訊，以進行快速分級。
 
-:::image type="content" source="../media/clo1717-corporate-office-021.jpg" alt-text="上班族在小型會議室內開會。其中一位正在簡報。":::
+![辦公室工作者在小型會議室內開會。 其中一位正在進行簡報。](../media/clo1717-corporate-office-021.jpg)
  
 ## <a name="govern-data-and-manage-records"></a>監管資料及管理記錄
 
@@ -285,7 +285,7 @@ Microsoft 365 中的資訊屏障支援 Teams 中的交談和檔案。 資訊屏�
  
 * [FINRA 細則 3120 (監督控制系統)](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) 要求公司必須具備監督控制原則和程序 (SCP) 系統，以驗證由細則 3110 定義的書面監督程序。 公司不僅需要具備 WSP，而且還必須具有每年對這些程序進行測試的原則，以驗證其確保遵守適用的證券法和法規。 可使用風險型方法論和採樣來定義測試範圍。 除其他要求外，此細則還要求公司向高級管理層提供年度報告，其中包括測試結果摘要，以及針對測試結果的任何重大異常或修正程序。
 
-:::image type="content" source="../media/wco18-desk-work-002.jpg" alt-text="一位上班族在檢視螢幕上的圖表和表格，而其他人在背景開會。":::
+![在螢幕上檢視圖表和表格的一名辦公室工作者，同時其他人在背景中開會。](../media/wco18-desk-work-002.jpg)
  
 ### <a name="communication-compliance"></a>通訊合規性
 
@@ -296,7 +296,7 @@ Microsoft 365 中的通訊合規性可讓組織預先設定原則，由授權主
 
 除了遵循 FINRA 細則，通訊合規性還能讓組織監視通訊，以遵循其他法律要求、公司原則和道德標準。 通訊合規性提供內建威脅、騷擾和粗話交叉分類器，可協助減少審查通訊時的誤報，並節省審查者調查及修正程序的時間。 通訊合規性也能讓組織在進行敏感性變更 (例如合併和收購或領導層變更) 時監視通訊，以降低風險。
 
-:::image type="content" source="../media/msc16-slalom-004.jpg" alt-text="一名資訊工作者專注在螢幕上。":::
+![專注在螢幕上的一名資訊工作者。](../media/msc16-slalom-004.jpg)
  
 ## <a name="protect-against-data-exfiltration-and-insider-risk"></a>防範資料外流和測試人員風險
 
@@ -312,14 +312,14 @@ Microsoft 365 最近推出了測試人員風險管理解決方案，可將整個
 
 Microsoft 365 中的測試人員風險管理大幅提升組織監視及調查測試人員風險的能力，同時讓組織仍符合資料隱私權法規，並在案件需要更高級別的動作時遵循已建立的向上呈報途徑。
 
-:::image type="content" source="../media/clo17-call-center-006.jpg" alt-text="隔間內的客服中心工作者一邊看著螢幕一邊打字。":::
+![隔間中的客服中心工作者一邊打字一邊看著螢幕。](../media/clo17-call-center-006.jpg)
  
 ### <a name="tenant-restrictions"></a>租用戶限制
 處理敏感性資料並嚴格強調安全性的組織通常希望控制使用者可存取的線上資源。 同時，這些組織希望透過 Office 365 等線上服務實現安全的共同作業。 因此，控制使用者可存取的 Office 365 環境成為一項挑戰，因為非公司的 Office 365 環境可用於惡意或不小心從公司裝置外流資料。 傳統上，組織會限制使用者可從公司裝置存取的網域或 IP 位址。 但這在使用者需要合法存取 Office 365 服務的雲端優先環境中不適用。
 
 Microsoft 365 為租用戶提供解決此挑戰的[限制](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions)功能。 租用戶限制可設定為使用 Rogue 身分識別 (不屬於貴公司目錄的身分識別) 來限制員工存取外部 Office 365 企業版租用戶。 目前租用戶限制適用於所有租用戶，只允許存取您設定的清單中顯示的租用戶。 Microsoft 正持續開發這項解決方案，以提高控制的細微性並增強其所提供的保護。
 
-:::image type="content" source="../media/clo1717-corporate-office-001.jpg" alt-text="GRAPHIC":::
+![GRAPHIC](../media/clo1717-corporate-office-001.jpg)
  
 ## <a name="conclusion"></a>總結
 

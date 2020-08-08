@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: '了解如何在 Microsoft 365 系統管理中心設定組織的密碼到期原則。 '
-ms.openlocfilehash: eec6231d2c6b5d51b25f42c401e367743fdb19ea
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 053b3214862d477cbd122ff6336a6b53a98e5421
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560868"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597362"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>設定組織的密碼到期原則
 
@@ -75,7 +75,9 @@ ms.locfileid: "46560868"
     
 ## <a name="prevent-last-password-from-being-used-again"></a>避免再次使用上次的密碼
 
-如果您想要避免您的使用者回收舊密碼，您可以在 Azure AD 強制使用密碼記錄來執行此動作。 請參閱 [建立自訂密碼原則](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)。
+如果想要避免您的使用者回收舊密碼，您可以在內部部署 Active Directory (AD) 中強制使用密碼記錄來執行此動作。 請參閱 [建立自訂密碼原則](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy)。
+
+在 Azure AD 中，當使用者變更密碼時，不能再次使用最後一個密碼。 密碼原則會套用至在 Azure AD 中建立並直接管理的所有使用者帳戶。 不能修改此密碼原則。 請參閱 [Azure AD 密碼原則](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts)。
 
 ## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>將內部部署 Active Directory 的使用者密碼雜湊同步處理到 Azure AD (Microsoft 365)
 
