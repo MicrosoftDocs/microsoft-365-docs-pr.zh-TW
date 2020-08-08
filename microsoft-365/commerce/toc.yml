@@ -4,14 +4,10 @@
   href: ../admin/index.yml
 - name: 試用或購買
   items:
-    - name: 註冊 Microsoft 365 試用版
-      href: sign-up-for-office-365-trial.md
     - name: 試用或購買 Microsoft 365
       href: try-or-buy-microsoft-365.md
     - name: 延長試用期
       href: extend-your-trial.md
-    - name: 購買其他訂閱
-      href: buy-another-subscription.md
     - name: 購買或編輯附加元件
       href: buy-or-edit-an-add-on.md
     - name: 新增儲存空間
