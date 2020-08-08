@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Microsoft 365。 安裝精靈會引導您完成此程式。
-ms.openlocfilehash: ccebd7dd5e78663b7fd1d5318b17dfbc09bd8fb0
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 8b70466e5cf82d9cf5be67162263f28ab5bd0d5d
+ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079722"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592295"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>新增網域至 Microsoft 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "45079722"
 
 ::: moniker-end
 
- 若您找不到所需功能，請**[檢查網域常見問題集](domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](domains-faq.md)**。 
   
  *若要新增、修改或移除網域，您**必須**是[企業或企業方案](https://products.office.com/business/office)的**全域系統管理員**。這些變更會影響整個承租人、*自訂*的系統管理員或*一般使用者*無法進行這些變更。*  
 
@@ -124,7 +124,7 @@ ms.locfileid: "45079722"
 
 5. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
     
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
 
 ## <a name="registrars-with-domain-connect"></a>使用網域連接的註冊機構
 
@@ -139,11 +139,12 @@ ms.locfileid: "45079722"
 
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
+- [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [Wordpress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer 或 WildWestDomains （使用 SecureServer DNS 主控的 GoDaddy 轉銷商）
+- 使用 SecureServer DNS 主機的 SecureServer 或 WildWestDomains (GoDaddy 轉銷商) 
     - [MadDog 網域](https://www.maddogdomains.com/)
     - [CheapNames](https://www.cheapnames.com)
 

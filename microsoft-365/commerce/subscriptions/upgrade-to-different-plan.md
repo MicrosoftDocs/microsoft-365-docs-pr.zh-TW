@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +18,14 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-description: 瞭解如何升級為新的訂閱。
-ms.openlocfilehash: 2a0dcff5b4326fc75b4e8e4154ee73e0ac17897d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 瞭解如何升級為其他計畫。
+ms.openlocfilehash: 55667646637cfd2ad6dd56e2361b0c41b136a79e
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403171"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597616"
 ---
 # <a name="upgrade-to-a-different-plan"></a>升級至不同的方案
 
@@ -78,6 +74,10 @@ ms.locfileid: "44403171"
 
 如果您想要以較少的服務移至方案，您可以[手動變更計畫](change-plans-manually.md)，或[致電支援人員](../../admin/contact-support-for-business-products.md)以取得協助。
 
+## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>我只想要升級部分使用者。 如何執行該動作？
+
+如果您只想要將部分使用者升級至不同計畫，但是必須先購買新訂閱，請參閱[手動變更計畫](change-plans-manually.md)。 若您已有要升級使用者的訂閱，請參閱[將使用者移至其他訂閱](move-users-different-subscription.md)。
+
 ## <a name="why-some-changes-take-longer"></a>為何有些變更需要一些時間
 
 **指派使用者數目：** 如果您有大量指派的使用者，將需要較長的時間進行升級，將其移至新的計畫。
@@ -88,7 +88,7 @@ ms.locfileid: "44403171"
 
 如果您沒有在 [**升級**] 索引標籤上看到任何計畫，這表示您的計畫無法自動升級。 在某些情況下，您可能能夠解決問題，讓您能夠查看可供升級的計畫，或者您也可以手動升級或變更方案。
 
- ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>為什麼沒有列出要升級的計畫？
+### <a name="why-are-there-no-plans-listed-to-upgrade"></a>為什麼沒有列出要升級的計畫？
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>您的使用者數目超過授權，所以您現在無法升級訂閱。
 
@@ -148,7 +148,7 @@ ms.locfileid: "44403171"
 
 ## <a name="what-does-upgrading-a-plan-do-to-my-service-and-billing"></a>升級方案對我的服務和計費有何作用？
 
-當您使用 [**切換方案**] 按鈕（或新系統管理中心的 [**升級**] 索引標籤）自動升級計畫時，您的服務和計費會受到影響。
+當您使用 [**切換方案**] 按鈕自動升級方案 (或在新系統管理中心的 [**升級**] 索引標籤) 時，您的服務和計費會受到影響。
 
 ### <a name="access-to-services"></a>存取服務
 
