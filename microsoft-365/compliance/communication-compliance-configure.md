@@ -1,6 +1,6 @@
 ---
 title: 開始使用通訊合規性
-description: 設定通訊相容性原則，以設定員工交流以供審查。
+description: 設定通訊相容性原則，以設定使用者的通訊以進行審閱。
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,32 +18,32 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 8ec31bb08933ba9c1f0cc264bafc8d39bf64a003
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: c61529b612079c93e3c175a67fccd32a7c561400
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936848"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597567"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
-使用通訊相容性原則來捕獲員工透過內部或外部檢閱者進行檢查的通訊。 如需通訊相容性原則如何協助您監視組織中的通訊的詳細資訊，請參閱[Microsoft 365 中的通訊相容性原則](communication-compliance.md)。 如果您想要查看 Contoso 如何快速設定通訊相容性原則，以監視 Microsoft 小組、Exchange Online 和 Yammer 通訊中的冒犯性語言，請參閱此[案例研究](communication-compliance-case-study.md)。
+使用通訊相容性原則，識別內部或外部檢閱者進行檢查的使用者通訊。 如需通訊相容性原則如何協助您監視組織中的通訊的詳細資訊，請參閱[Microsoft 365 中的通訊相容性原則](communication-compliance.md)。 如果您想要查看 Contoso 如何快速設定通訊相容性原則，以監視 Microsoft 小組、Exchange Online 和 Yammer 通訊中的冒犯性語言，請參閱此[案例研究](communication-compliance-case-study.md)。
 
 ## <a name="before-you-begin"></a>開始之前
 
 在您開始進行通訊相容性之前，您應該先確認您的[Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)和任何附加元件。 若要存取及使用通訊相容性，您的組織必須具備下列其中一項訂閱或附加元件：
 
-- Microsoft 365 E5 訂閱（付費或試用版）
+- Microsoft 365 E5 訂閱 (付費或試用版本) 
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
 - Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
-- Microsoft 365 A5 訂閱（付費或試用版）
+- Microsoft 365 A5 訂閱 (付費或試用版本) 
 - Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
 - Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
-- Microsoft 365 G5 訂閱（付費或試用版）
+- Microsoft 365 G5 訂閱 (付費或試用版本) 
 - Microsoft 365 G5 訂閱 + Microsoft 365 G5 合規性附加元件
 - Microsoft 365 G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
-- Office 365 企業版 E5 訂閱（付費或試用版）
-- Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件（已無法再供新訂閱使用，請參閱記事）
+- Office 365 企業版 E5 訂閱 (付費或試用版本) 
+- Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件 (已無法再供新訂閱使用，請參閱記事) 
 
 必須將上述其中一個授權指派給通訊符合性原則中所含的使用者。
 
@@ -52,14 +52,26 @@ ms.locfileid: "44936848"
 
 如果您沒有現有的 Office 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以[將 Microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的訂閱，或註冊 Office 365 Enterprise E5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
 
-## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步驟1（必要）：啟用通訊相容性的許可權
+## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步驟 1 (必要) ：啟用通訊相容性的許可權
 
 >[!Important]
 >根據預設，全域管理員無法存取通訊規範功能。 在此步驟中所指派的角色是必要的通訊相容性功能才能存取。
 
-若要在 Microsoft 365 規範中心中以功能表選項的方式使用**通訊相容性**，您必須獲指派**主管審查系統管理員**角色。 您必須建立新的角色群組供**主管審查系統管理員**、**案例管理**、**合規性管理員**，以及**審查**角色，以透過原則相符的方式調查和修正郵件。
+有五個角色可用於設定管理通訊符合性功能的許可權。 若要在 Microsoft 365 規範中心中以功能表選項的方式提供**通訊相容性**，並繼續進行這些設定步驟，您必須獲指派*通訊合規性系統管理員*角色。
 
-### <a name="create-a-new-role-group"></a>建立新的角色群組
+視您想要管理通訊原則及警示的方式而定，您將需要為系統管理員、檢閱者和調查人員建立一個或多個新的角色群組。 您可以選擇將使用者指派給特定角色群組，以管理不同通訊規範功能的範圍。 或者，您也可以決定建立一個角色群組，並將所有通訊規範角色指派給群組。 建立單一角色群組或多個角色群組，以最大程度符合您的規範管理需求。
+
+設定通訊合規性角色群組時，請從下列角色選項中選擇：
+
+|**角色**|**角色權限**|
+|:-----|:-----|
+| **通訊合規性管理** | 指派此角色的使用者可以建立、讀取、更新和刪除通訊符合性原則、全域設定和角色群組指派。 指派此角色的使用者無法查看郵件警示。 |
+| **通訊相容性分析** | 指派此角色的使用者可以查看指派為檢閱者的原則、查看郵件中繼資料 (非郵件內容) 、升級至其他檢閱者，或傳送通知給使用者。 分析員無法解析待處理的警示。 |
+| **通訊相容性調查** | 指派此角色的使用者可以查看郵件中繼資料和內容、升級至其他檢閱者、升級至高級 eDiscovery 案例、將通知傳送給使用者，以及解決警示。 |
+| **通訊規範檢視器** | 指派此角色的使用者可以存取通訊合規性首頁上的所有報告元件，並可以查看所有的通訊符合性報告。 |
+| **通訊規範案例管理** | 指派此角色的使用者可以管理案例並對提醒採取行動。 為管理員、分析員和調查人員建立自訂角色群組時，需要此角色。 自訂群組的檢視器不需要指派此角色。 |
+
+### <a name="option-1-create-a-new-role-group-with-all-communication-compliance-roles"></a>選項1：建立具有所有通訊相容性角色的新角色群組
 
 1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://protection.office.com/permissions](https://protection.office.com/permissions)。
 
@@ -67,25 +79,57 @@ ms.locfileid: "44936848"
 
 3. 選取 **[建立]**。
 
-4. 在 **[名稱]** 欄位中，為新的角色群組取個好記的名稱。 選取 [下一步]****。
+4. 在 **[名稱]** 欄位中，為新的角色群組取個好記的名稱。 選取 **[下一步]**。
 
-5. 選取 **[選擇角色]**，然後選取 **[新增]**。 選取「**主管審查管理員**」、「**案例管理**」、「**合規性管理員**」及「**複查**」的核取方塊，然後選取 [**新增**並**完成**]。 選取 [下一步]****。
+5. 選取 **[選擇角色]**，然後選取 **[新增]**。 選取下列角色的核取方塊：
 
-    ![通訊規範必要的角色群組](../media/communication-compliance-role-groups-1.png)
+    - 通訊合規性管理
+    - 通訊相容性分析
+    - 通訊相容性調查
+    - 通訊規範檢視器
+    - 通訊規範案例管理
 
-6. 選取 **[選擇成員]**，然後選取 **[新增]**。 針對要建立原則的所有使用者和群組勾選核取方塊，並使用原則符合項目管理訊息，然後選取 **[新增]** 和 **[完成]**。 選取 **[下一步]**。
+    ![通訊相容性角色](../media/communication-compliance-case-roles.png)
 
-7. 選取 **[建立角色群組]** 來完成。
+6. 選取 [**新增**並**完成**]，然後選取 **[下一步]** 繼續。
+
+7. 選取 **[選擇成員]**，然後選取 **[新增]**。 針對要建立原則的所有使用者和群組勾選核取方塊，並使用原則符合項目管理訊息，然後選取 **[新增]** 和 **[完成]**。 選取 **[下一步]**。
+
+8. 選取 **[建立角色群組]** 來完成。
+
+### <a name="option-2-create-new-role-groups-with-different-communication-compliance-roles"></a>選項2：使用不同的通訊相容性角色建立新的角色群組
+
+建立多個角色群組，以分割組織中不同使用者之間的通訊一致性存取和責任。 針對每個新的角色群組，您會指派不同的通訊相容性角色。
+
+1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://protection.office.com/permissions](https://protection.office.com/permissions)。
+
+2. 在安全性與 &amp; 合規性中心，移至 [**許可權**]。 選取連結，以在 Office 365 中檢視及管理角色。
+
+3. 選取 **[建立]**。
+
+4. 在 **[名稱]** 欄位中，為新的角色群組取個好記的名稱。 選取 **[下一步]**。
+
+5. 選取 **[選擇角色]**，然後選取 **[新增]**。 選取您要指派給此群組之通訊相容性角色的核取方塊。 例如，如果此角色群組是針對您組織中的規範分析師，您可以選取*通訊符合性分析*和*通訊符合性案例管理*角色。 如果此角色群組是針對法規遵從性調查人員，您可以選取*通訊符合性調查*和*通訊相容性案例管理*角色。
+
+    ![通訊相容性角色](../media/communication-compliance-analysts-role-group.png)
+
+6. 選取 [**新增**並**完成**]，然後選取 **[下一步]** 繼續。
+
+7. 選取 **[選擇成員]**，然後選取 **[新增]**。 針對要建立原則的所有使用者和群組勾選核取方塊，並使用原則符合項目管理訊息，然後選取 **[新增]** 和 **[完成]**。 選取 **[下一步]**。
+
+8. 選取 **[建立角色群組]** 來完成。
+
+9. 視需要建立其他通訊符合性角色群組。
 
 如需角色群組和權限的詳細資訊，請參閱[規範中心的權限](../security/office-365-security/protect-against-threats.md)。
 
-## <a name="step-2-required-enable-the-audit-log"></a>步驟2（必要）：啟用審核記錄檔
+## <a name="step-2-required-enable-the-audit-log"></a>步驟 2 (必要) ：啟用審核記錄檔
 
 通訊合規性需要「審核記錄檔」顯示提醒，並追蹤檢閱者採取的修復動作。 「審核記錄檔」會摘要所有與已定義的組織原則相關聯的活動，或在任何時刻的通訊合規性原則變更時。
 
 如需開啟審計的逐步指示，請參閱[開啟或關閉審計記錄搜尋](turn-audit-log-search-on-or-off.md)。 在您開啟審核後，會顯示一則訊息，指出已準備好審核記錄，而且您可以在準備完成後數小時執行搜尋。 您只需執行這項動作一次。 如需使用審核記錄的詳細資訊，請參閱[搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。
 
-## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>步驟3（選用）：設定通訊相容性群組
+## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>步驟 3 (選用) ：設定通訊相容性群組
 
  當您建立通訊相容性原則時，您會定義誰會檢查其通訊，以及誰會執行評論。 在原則中，您將使用電子郵件地址來識別個人或人員群組。 若要簡化您的設定，您可以為進行通訊檢查的使用者建立群組，並為審查這些通訊的使用者群組建立群組。 如果您正在使用群組，可能需要數個。 例如，如果您想要監視兩個不同的使用者群組之間的通訊，或是想要指定不會受到監督的群組。
 
@@ -98,7 +142,7 @@ ms.locfileid: "44936848"
   
 當您指派原則中的通訊群組時，該原則會監控通訊群組中每個使用者的所有電子郵件。 當您在原則中指派 Microsoft 365 群組時，該原則會監控傳送給該群組的所有電子郵件，而不是每個群組成員所收到的個別電子郵件。
 
-如果您是具有 Exchange 內部部署或外部電子郵件提供者的組織，且您想要監視小組聊天中的使用者，則必須為使用內部部署或外部信箱進行監視的使用者建立通訊群組。 在上述步驟中，您會將此通訊群組指派為 [原則嚮導] 中的 [授與**群組**] 選擇。
+如果您是具有 Exchange 內部部署或外部電子郵件提供者的組織，且您想要為使用者監視 Microsoft 團隊聊天，您必須為使用內部部署或外部信箱進行監視的使用者建立通訊群組。 在上述步驟中，您會將此通訊群組指派為 [原則嚮導] 中的 [授與**群組**] 選擇。
 
 >[!IMPORTANT]
 >您必須將 Microsoft 支援檔的要求記錄為可讓您的組織在安全性 & 合規性中心使用圖形使用者介面，針對內部部署使用者搜尋小組聊天資料。 如需詳細資訊，請參閱針對[內部部署使用者搜尋雲端架構信箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
@@ -108,16 +152,16 @@ ms.locfileid: "44936848"
 - [建立並管理通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Microsoft 365 群組的概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>步驟4（選用）：確認 Yammer 租使用者處於原生模式
+## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>步驟 4 (選用) ：確認 Yammer 租使用者處於原生模式
 
-在原生模式中，所有的 Yammer 使用者都在 Azure Active Directory （AAD）中，所有群組都是 Office 365 群組，且所有檔案都儲存在 SharePoint 線上中。 您的 Yammer 租使用者必須採用原生模式，以進行通訊相容性原則，以掃描及識別 Yammer 中的私人郵件和社區交談中有風險的交談。
+在原生模式中，所有的 Yammer 使用者都在 Azure Active Directory (AAD) 中，所有群組都是 Office 365 群組，而且所有檔案都儲存在 SharePoint 線上中。 您的 Yammer 租使用者必須採用原生模式，以進行通訊相容性原則，以掃描及識別 Yammer 中的私人郵件和社區交談中有風險的交談。
 
 如需在原生模式中設定 Yammer 的詳細資訊，請參閱：
 
 - [Microsoft 365 中的 Yammer 原生模式概述](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
 - [針對 Microsoft 365 設定您的 Yammer 網路使用原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
 
-## <a name="step-5-required-create-a-communication-compliance-policy"></a>步驟5（必要）：建立通訊相容性原則
+## <a name="step-5-required-create-a-communication-compliance-policy"></a>步驟 5 (必要) ：建立通訊相容性原則
   
 >[!Important]
 >不支援使用 PowerShell 建立及管理通訊相容性原則。 若要建立及管理這些原則，您必須使用[Microsoft 365 通訊規範解決方案](https://compliance.microsoft.com/supervisoryreview)中的原則管理控制項。
@@ -146,10 +190,10 @@ ms.locfileid: "44936848"
     - 選擇要監視的通訊方向，包括輸入、輸出或內部通訊。
     - 定義通訊相容性原則[條件](communication-compliance-feature-reference.md#ConditionalSettings)。 您可以選擇 [郵寄地址]、[關鍵字]、[檔案類型] 和 [大小相符] 條件。
     - 選擇是否要包含機密資訊類型。 在這個步驟中，您可以選取預設和自訂的機密資訊類型。 在 [通訊合規性原則] 中，從現有的自訂敏感資訊類型或自訂關鍵字字典中挑選。 如有需要，您可以在執行該嚮導之前建立這些專案。 您也可以從通訊合規性原則嚮導中建立新的敏感資訊類型。
-    - 選擇是否要啟用分類器。 分類器可以偵測電子郵件訊息或其他類型的文字中傳送或接收的不適當語言。
+    - 選擇是否要啟用分類器。 分類器可以偵測電子郵件訊息或其他類型的文字內傳送或接收的不適當語言和圖像。 您可以選擇下列內建的分類符：*威脅*、*猥褻*、*目標騷擾*、*成人影像*、 *Racy 影像*和*Gory 影像*。
 
     >[!CAUTION]
-    >我們正在淘汰 [粗穢言語]**** 內建分類器，因為這個分類器產生了大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用**威脅**、**猥褻**和**騷擾**內建的分類符。
+    >我們正在淘汰 [粗穢言語]**** 內建分類器，因為這個分類器產生了大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 我們建議您改用**威脅**、**猥褻**和**目標騷擾**內建的分類符。
 
     - 定義要複查的通訊百分比。
     - 檢查您的原則選擇並建立原則。
@@ -158,29 +202,37 @@ ms.locfileid: "44936848"
 
 6. **已建立您**的原則頁面會隨著原則的啟動時間及將捕獲哪些通訊的指導方針來顯示。
 
-## <a name="step-6-optional-create-employee-notice-templates"></a>步驟6（選用）：建立員工通知範本
+## <a name="step-6-optional-create-notice-templates-and-configure-user-anonymization"></a>步驟 6 (選用) ：建立公告範本及設定使用者匿名
 
-如果您想要選擇以傳送提醒通知給關聯的員工來回應原則警示，您必須在組織中至少建立一個公告範本。 [！注意事項] [通知範本] 欄位是可編輯的，在傳送為警示修復程式的一部分之前，建議您為每個通訊相容性原則建立自訂的通知範本。
+如果您想要選擇以傳送提醒通知給關聯的使用者來回應原則警示，您必須在組織中至少建立一個公告範本。 [！注意事項] [通知範本] 欄位是可編輯的，在傳送為警示修復程式的一部分之前，建議您為每個通訊相容性原則建立自訂的通知範本。
+
+您也可以選擇在調查原則符合和對郵件採取動作時，啟用顯示之使用者的匿名。
 
 1. 使用 Microsoft 365 組織中的系統管理員帳戶認證登入[https://compliance.microsoft.com](https://compliance.microsoft.com)。
 
 2. 在 Microsoft 365 規範中心內，移至 [**通訊符合性**]。
 
-3. 選取 [**公告範本**] 索引標籤，然後選取 [**建立公告範本**]。
+3. 若要設定匿名的使用者名，請選取 [**隱私權**] 索引標籤。
 
-4. 在 [**修改公告範本**] 頁面上，完成下欄欄位：
+4. 若要啟用匿名，請選取 [**顯示匿名版本的使用者名**]。
 
-    - 通知範本名稱（必要）
-    - 寄件者（必要）
-    - Cc 和 Bcc （選用）
-    - Subject （必要）
-    - 郵件主體（必要）
+5. 選取 **[儲存]**。
 
-5. 選取 [**儲存**] 以建立及儲存 [公告] 範本。
+6. 流覽至 [**公告範本**] 索引標籤，然後選取 [**建立公告範本**]。
 
-## <a name="step-7-optional-test-your-communication-compliance-policy"></a>步驟7（選用）：測試通訊合規性原則
+7. 在 [**修改公告範本**] 頁面上，完成下欄欄位：
 
-在您建立通訊相容性原則之後，建議您加以測試，以確定原則已正確地強制執行您所定義的條件。 您也可能想要[測試您的資料遺失防護（DLP）原則（](create-test-tune-dlp-policy.md)如果通訊相容性原則包括敏感資訊類型）。 請務必提供您的原則啟動時間，以便您想要測試的通訊得以捕獲。
+    - 範本名稱 (必要) 
+    -  (必要的傳送) 
+    - 抄送和 Bcc (選用) 
+    - 主體 (必要) 
+    - 需要郵件內文 () 
+
+8. 選取 [**儲存**] 以建立及儲存 [公告] 範本。
+
+## <a name="step-7-optional-test-your-communication-compliance-policy"></a>步驟 7 (選用) ：測試通訊合規性原則
+
+在您建立通訊相容性原則之後，建議您加以測試，以確定原則已正確地強制執行您所定義的條件。 您也可以在通訊相容性原則包括敏感資訊類型時，[測試您的資料遺失防護 (DLP) 原則](create-test-tune-dlp-policy.md)。 請務必提供您的原則啟動時間，以便您想要測試的通訊得以捕獲。
 
 請遵循下列步驟來測試您的通訊合規性原則：
 
@@ -193,3 +245,9 @@ ms.locfileid: "44936848"
 3. 以通訊合規性原則中指定的檢閱者身分登入 Microsoft 365。 流覽至 [**通訊相容性**  >  **警示**]，以查看原則的警示。
 
 4. 使用修正控制措施修正警示，並確認已正確解決警示。
+
+## <a name="next-steps"></a>後續步驟
+
+當您完成這些步驟來建立您的第一個通訊符合性原則之後，您將會在大約24小時後開始從活動指示器接收提醒。 根據需要使用本文步驟5的指導方針設定其他原則。
+
+若要深入瞭解如何調查通訊相容性警示，請參閱[調查和修正通訊相容性警示](communication-compliance-investigate-remediate.md)。

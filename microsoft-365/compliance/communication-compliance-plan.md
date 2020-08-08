@@ -1,5 +1,5 @@
 ---
-title: 規劃通訊合規性
+title: 通訊合規性計畫
 description: 深入瞭解在組織中使用通訊規範的規劃。
 f1.keywords:
 - NOCSH
@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 214c5376d4c074525253707e181eee69cefff85e
-ms.sourcegitcommit: eb3c7f473e8fe62624f52c9bb38dcd6a96fa58a3
+ms.openlocfilehash: 4c44610f4d74fe9ebf3c8e549692d9cc7cc6cb34
+ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44045846"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597420"
 ---
-# <a name="plan-for-communication-compliance"></a>規劃通訊合規性
+# <a name="plan-for-communication-compliance"></a>通訊合規性計畫
 
 您的組織中的[通訊合規性](communication-compliance.md)開始之前，必須先閱讀您的資訊技術和合規性管理小組所需的重要規劃活動和考慮。 在下列各項中徹底瞭解及規劃部署，可協助確保您的實施和使用通訊合規性功能，並與解決方案的最佳作法保持一致。
 
@@ -42,7 +42,19 @@ ms.locfileid: "44045846"
 
 ## <a name="plan-for-the-investigation-and-remediation-workflow"></a>規劃調查和修正工作流程
 
-選取 [專屬的檢閱者]，以在[Microsoft 365 規範中心](https://compliance.microsoft.com/)內的定期節奏上監視和審閱警示。 請記住，您必須[建立新的角色群組](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)，以啟用具有「**主管審查管理員**」、「**案例管理**」、「**合規性管理員**」及「**審閱**」角色的許可權，以透過原則相符的方式調查和修正郵件。
+選取 [專屬的利益關係人]，以在[Microsoft 365 規範中心](https://compliance.microsoft.com/)內的定期節奏上監視和審閱警示和案例。 請確定您將如何將不同的通訊合規性角色指派給組織中的專案關係人。
+
+視您想要管理通訊原則及警示的方式而定，您將需要為系統管理員、檢閱者和調查人員建立一個或多個新的角色群組。 您可以選擇將使用者指派給特定角色群組，以管理不同的通訊相容性功能組。 或者，您也可以決定建立一個角色群組，並將所有通訊規範角色指派給群組。 建立單一角色群組或多個群組，以最大程度符合您的規範管理需求。
+
+當您設定通訊合規性角色群組時，規劃從這些角色選項中選擇：
+
+|**角色**|**角色權限**|
+|:-----|:-----|
+| **通訊合規性管理** | 指派此角色的使用者可以建立、讀取、更新和刪除通訊符合性原則、全域設定和角色群組指派。 指派此角色的使用者無法查看郵件警示。 |
+| **通訊相容性分析** | 指派此角色的使用者可以查看指派為檢閱者的原則、查看郵件中繼資料 (非郵件內容) 、升級至其他檢閱者，或傳送通知給使用者。 分析員無法解析待處理的警示。 |
+| **通訊相容性調查** | 指派此角色的使用者可以查看郵件中繼資料和內容、升級至其他檢閱者、升級至高級 eDiscovery 案例、將通知傳送給使用者，以及解決警示。 |
+| **通訊規範檢視器** | 指派此角色的使用者可以存取通訊合規性首頁上的所有報告元件，並可以查看所有的通訊符合性報告。 |
+| **通訊規範案例管理** | 指派此角色的使用者可以管理案例並對提醒採取行動。 為管理員、分析員和調查人員建立自訂角色群組時，需要此角色。 自訂群組的檢視器不需要指派此角色。 |
 
 ## <a name="plan-for-policies"></a>規劃原則
 

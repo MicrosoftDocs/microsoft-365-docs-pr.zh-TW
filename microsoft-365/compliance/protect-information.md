@@ -1,11 +1,11 @@
 ---
-title: 保護資訊
+title: 使用 Microsoft 365 保護資訊
 f1.keywords:
 - NOCSH
-ms.author: bcarter
-author: brendacarter
+ms.author: cabailey
+author: cabailey
 manager: laurawi
-ms.date: 4/26/2019
+ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -14,27 +14,53 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: 此登陸頁面提供在 Microsoft 365 和 Office 365 中保護資訊的連結和相關資訊。
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3657fc674547013c8517b6121d6b2bbb636b7481
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+description: 識別 Microsoft 365 功能和輔助檔，以協助您保護組織的重要資料。
+ms.openlocfilehash: eb83655fddf5b59a7a95d2a8b9999ab683305a89
+ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127490"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592307"
 ---
-# <a name="protect-information"></a>保護資訊
+# <a name="protect-information-using-microsoft-365"></a>使用 Microsoft 365 保護資訊
 
-Microsoft 365 和 Office 365 包含可以套用至特定資料類型以保護資訊的功能。
+>*[Microsoft 365 安全性 & 規範的授權](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
+
+使用 Microsoft 資訊保護功能，在任何生活或傳播時，協助您探索、分類及保護機密資訊。
+
+## <a name="know-your-data"></a>知道您的資料
+
+若要深入瞭解您的資料，並識別整個混合式環境中的重要資料，請使用下列功能：
+ 
+|功能|它會解決什麼問題？|開始使用|
+|:------|:------------|:--------------------|:-----------------------------|
+|[敏感資訊類型](sensitive-information-type-entity-definitions.md)| 使用內建或自訂正則運算式或函數來識別敏感性資料，以及包含關鍵字、信賴層級及鄰近性的確切證據。| [自訂內建的敏感性資訊類型](customize-a-built-in-sensitive-information-type.md)|
+|[Trainable 分類 (預覽) ](classifier-getting-started-with.md)| 使用內建的分類器之一為您分類資料，或使用您自己的內容訓練 classier | [建立 trainable 的分類器 (預覽) ](classifier-creating-a-trainable-classifier.md) |
+|[資料分類](data-classification-overview.md) | 識別具有敏感度標籤、保留標籤，或已分類為組織中機密資訊類型的專案，以及您的使用者所採取的動作  | [開始使用內容總管](data-classification-content-explorer.md)<br /><br /> [開始使用活動總管](data-classification-activity-explorer.md) |
+
+## <a name="protect-your-data"></a>保護您的資料
+
+若要套用包括加密、訪問限制和視覺標記的彈性保護動作，請使用下列功能：
+
+|功能|它會解決什麼問題？|開始使用|
+|:------|:------------|---------------------|:----------------------------|
+|[敏感性標籤](sensitivity-labels.md)| 跨應用程式、服務和裝置的單一解決方案，以標籤及保護您的組織內部和外部的資料 <br /><br />範例案例：套用[和查看 POWER BI 中的敏感度標籤，並在匯出資料時加以保護](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[開始使用敏感度標籤](get-started-with-sensitivity-labels.md) |
+|[Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| 針對 Windows 電腦，擴充敏感度標籤以取得其他功能，包括標記及保護所有檔案類型的檔案 Explorer 和 PowerShell<br /><br /> 範例其他功能： [Azure 資訊保護統一標籤用戶端的自訂](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)設定| [Azure 資訊保護統一標籤用戶端管理員指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
+|[雙重金鑰加密](double-key-encryption.md)| 在所有情況下，只有您可以解密受保護的內容或法規需求，您必須在地理界限內保留加密金鑰 | [部署雙重金鑰加密](double-key-encryption.md#deploy-double-key-encryption)|
+|[Office 365 郵件加密](ome.md) (OME) | 加密傳送給任何裝置上任何使用者的電子郵件訊息和附加檔，因此只有授權的收件者可以讀取以電子郵件傳送的資訊  <br /><br />範例案例：[撤銷由高級郵件加密所加密的電子郵件](revoke-ome-encrypted-mail.md) | [開始使用 Office 365 郵件加密](set-up-new-message-encryption-capabilities.md)|
+|[使用客戶金鑰的服務加密](customer-key-overview.md) | 防止未經授權的系統或人員查看資料，並補充 Microsoft 資料中心的 BitLocker 磁片加密。 | [設定 Office 365 客戶金鑰](customer-key-set-up.md)|
+|[SharePoint Information Rights Management (IRM) ](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|保護 SharePoint 清單和文件庫，讓使用者在簽出檔時，已下載的檔案受到保護，所以只有經過授權的人員才能根據您指定的原則來查看和使用該檔案。 | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
+[版權管理連接器](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |保護-僅適用于使用 Exchange 或 SharePoint 伺服器的現有內部部署，或執行 Windows Server 和檔案分類基礎結構的檔案伺服器 (FCI)  | [部署 RMS 連接器的步驟](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
+|[Azure 資訊保護統一標記掃描器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| 探索、標籤及保護位於內部部署的資料存放區中的機密資訊。 | [設定及安裝 Azure 資訊保護統一標記掃描器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
+|[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| 探索、標籤和保護位於雲端資料存放區中的機密資訊 | [探索、分類、標記和保護儲存在雲端中的控管和敏感性資料](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|[Microsoft 資訊保護 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|將敏感度標籤擴充至協力廠商應用程式和服務  <br /><br /> 範例案例：[設定並取得敏感度標籤 (c + +) ](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft 資訊保護 (MIP) SDK 安裝和設定](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+
+## <a name="prevent-data-loss"></a>防止資料外洩
+
+若要協助防止意外 oversharing 機密資訊，請使用下列功能：
 
 
-|**功能**|**詳細資訊**|
-|:-----|:-----|
-|[敏感性標籤](sensitivity-labels.md) <br/> |使用靈敏度標籤，您可以分類及保護您的敏感內容。 保護選項包括標籤、浮水印和加密。 敏感度標籤使用 Azure 資訊保護。 如果您使用的是 Azure 資訊保護標籤，現在建議您避免在完成遷移之後，在其他系統管理中心中建立新標籤。 請參閱[Azure 資訊保護遷移](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)。 <br/> 請注意，[保留標籤](retention.md#retention-labels)不同于敏感度標籤。 保留標籤可協助您保留或刪除以您定義之原則為基礎的內容。 這些協助組織遵循業界法規和內部原則。|
-|[資料遺失防護](data-loss-prevention-policies.md)（DLP）  <br/> |使用 DLP 原則，您可以識別、監視和自動保護 Office 365 中的機密資訊。 資料遺失防護原則可以使用敏感度標籤和敏感資訊類型來識別敏感資訊。 <br/> |
-|[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md) <br/> |Microsoft 365 包含許多機密資訊類型，可供您用於 DLP 原則，以及使用敏感度和保留標籤進行自動分類。 機密資訊類型也可以搭配[Azure 資訊保護掃描器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)使用，以在內部部署上分類及保護檔案。 敏感資訊類型定義自動化程式如何識別特定的資訊類型，例如健康情況服務號碼和信用卡號碼。   <br/> |
-|[Office 365 郵件加密](ome.md)（OME）  <br/> |透過 Office 365 郵件加密，您的組織可以在組織內部和外部的人員之間傳送和接收加密的電子郵件。 Office 365 郵件加密可與 Outlook.com、Yahoo！、Gmail 及其他電子郵件服務搭配使用。 電子郵件加密可協助確保只有預定的收件者可以查看郵件內容。 <br/> |
-|[Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/)<br/> |Azure 資訊保護（有時稱為 AIP）可協助組織分類、標籤，並選擇性地保護檔和電子郵件。 管理員可以透過定義規則和條件來自動套用標籤。 使用者可以將標籤手動套用至檔案和郵件。 您也可以為使用者提供有關何時套用標籤的建議。<br/> 如果您使用的是敏感度標籤或 Office 郵件加密，您已在使用分類及保護功能。 如果您尚未將 Azure 資訊保護標籤遷移至 Office 365，請繼續在 Azure 資訊保護中進行管理。  <br/>您可以在內部部署執行[Azure 資訊保護掃描器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)，以分類及保護 Windows Server、網路共用和 SharePoint 伺服器網站及文件庫上的檔案。 這可能是識別要遷移至 Office 365 之資料的第一步。
-|使用客戶管理加密金鑰的 Azure 資訊保護 <br/> |有些組織必須具備業務需求或法規遵從性需求，才能保留加密金鑰的控制權。 這並不常見。 Azure 資訊保護可讓組織將您自己的金鑰（BYOK）移至服務。 如需詳細資訊，請參閱[攜帶您自己的金鑰（BYOK）以取得 Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/byok-price-restrictions)。 若有需要在內部部署保留加密金鑰的客戶，也會提供另一個更複雜的選項，稱為保留您自己的金鑰（HYOK）。  如需詳細資訊，請參閱[保留您自己的金鑰（HYOK）以取得 Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/configure-adrms-restrictions)。 <br/> |
-    
-
+|功能|它會解決什麼問題？|開始使用|
+|:------|:------------|:---------------------|:-----------------------------|
+|[資料遺失防護](data-loss-prevention-policies.md) (DLP) | 協助防止意外共用機密專案 <br /><br />範例案例：[保護 Microsoft 小組聊天和通道訊息中的機密資訊](dlp-microsoft-teams.md) | [預設的 DLP 原則快速入門](get-started-with-the-default-dlp-policy.md)|
+|[端點資料遺失防護 (預覽) ](endpoint-dlp-learn-about.md)| 將 DLP 功能延伸至 Windows 10 電腦上使用及共用的專案 | [開始使用端點資料外洩防護（預覽版）](endpoint-dlp-getting-started.md)|

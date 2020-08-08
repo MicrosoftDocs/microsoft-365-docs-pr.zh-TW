@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作保留原則及保留標籤來管理貴組織的資料，但不確定從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: b390e4594d97e96eadac9541429a838abe006a3f
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560760"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588171"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>開始使用保留原則和保留標籤
 
@@ -71,6 +71,7 @@ ms.locfileid: "46560760"
 |符合美國證券交易委員會規定 17A-4|[使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |請確認在內容在保留期結束被刪除前，有人對內容進行檢查並核准|[處置檢閱](disposition.md#disposition-reviews) |
 |對於在保留期結束時被刪除的內容是否有處理證明|[記錄處置](disposition.md#disposition-of-records) |
+| 監視保留標籤的套用方式和位置 | [監視保留標籤](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-retention-labels"></a>保留標籤的終端使用者文件
 

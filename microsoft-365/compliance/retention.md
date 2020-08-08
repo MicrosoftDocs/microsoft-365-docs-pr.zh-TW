@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: b435d80a6f2ce4f056e446bbc32e5580d063d4a9
-ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
+ms.openlocfilehash: ee256271b3520011db586d42e579b64b439a6210
+ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45372476"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588205"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 
@@ -233,10 +233,24 @@ Exchange 公用資料夾、Skype 和 Teams 頻道訊息和聊天不支援保留�
 
 明確指派的保留標籤會優先於隱式指派的保留標籤。 如需詳細資訊，請參閱此頁面上的[原則保留或何者優先？](retention.md#the-principles-of-retention-or-what-takes-precedence)一節。
 
-#### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>使用內容搜尋來尋找套用特定保留標籤的所有內容
+#### <a name="monitoring-retention-labels"></a>監視保留標籤
 
-將保留標籤指派至內容後 (無論是由使用者指派或自動套用)，您可以使用「內容搜尋」，尋找以特定保留標籤分類的所有內容。
-  
+在 Microsoft 365 合規性中心中，使用**資料分類** > **概觀**來監視保留標籤在租用戶中的使用方式，並識別標籤項目的位置。 如需詳細資訊 (包括重要先決條件)，請參閱[了解您的資料 - 資料分類概觀](data-classification-overview.md)。
+
+然後您可以使用[內容總管](data-classification-content-explorer.md)和[活動總管](data-classification-activity-explorer.md)深入探討詳細資料。
+
+> [!TIP]
+>請考慮使用一些其他的資料分類深入解析 (例如可訓練分類器和敏感性資訊類型)，協助您識別可能需要保留或刪除的內容，或管理記錄。
+
+Office 365 安全性與合規性中心具有來自**資訊控管** > **儀表板**的保留標籤同等概觀資訊，以及來自**資訊控管** > **標籤活動總管**的詳細資訊。 如需從此舊版系統管理中心監視保留標籤的詳細資訊，請參閱下列文件：
+- [檢視資料控管報告](view-the-data-governance-reports.md)
+- [利用標籤分析檢視標籤使用量](label-analytics.md)
+- [檢視文件的標籤活動](view-label-activity-for-documents.md)
+
+#### <a name="using-content-search-to-find-all-content-with-a-specific-retention-label"></a>使用內容搜尋來尋找具有特定保留標籤的所有內容
+
+將保留標籤套用至內容後 (無論是由使用者套用或自動套用)，您可以使用內容搜尋來尋找已套用特定保留標籤的所有項目。
+
 當您建立內容搜尋時，請選擇 **[保留標籤]** 條件，然後輸入完整的保留標籤名稱或是部分標籤名稱，再使用萬用字元。 如需詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
   
 ![保留標籤條件](../media/retention-label-condition.png)
@@ -258,6 +272,7 @@ Exchange 公用資料夾、Skype 和 Teams 頻道訊息和聊天不支援保留�
 |在加上標籤起或根據事件來開始保留期間 | 否 | 是 |
 |處置檢閱 | 否| 是 |
 |最高 7 年的處置證明 | 否 |是，當物料宣告為記錄時|
+|稽核系統管理員活動| 是 | 是|
 |識別要保留的項目： <br /> - 內容搜尋 <br /> - 資料分類頁面、內容總管，活動總管 | <br /> 否 <br /> 否 | <br /> 是 <br /> 是|
 
 請注意，您可以使用保留原則和保留標籤做為補充保留方法。 例如：
@@ -292,6 +307,10 @@ Exchange 公用資料夾、Skype 和 Teams 頻道訊息和聊天不支援保留�
 4. **最短刪除期間優先。** 同樣地，如果內容受限於會刪除內容但不帶保留期間的多個保留設定，則會在最短刪除期間結束時刪除該內容。 
 
 最終，保留原則或保留標籤無法永久刪除任何電子文件探索保留的內容。 將保留釋出時，該內容會再次符合上述的清理程序資格，並在工作負載的受保護位置中進行。
+
+## <a name="auditing-retention-configuration"></a>稽核保留設定
+
+[啟用稽核功能](turn-audit-log-search-on-or-off.md)後，系統會將保留原則和保留標籤的系統管理員動作儲存至稽核記錄。 例如，建立、設定或刪除保留原則或標籤後，系統會建立稽核事件。 如需完整清單，請參閱[保留原則和保留標籤活動](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)。
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>保留原則和保留標籤的 PowerShell Cmdlet
 
