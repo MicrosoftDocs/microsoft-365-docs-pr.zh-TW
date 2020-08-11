@@ -1,5 +1,5 @@
 ---
-title: 雙金鑰加密（DKE）
+title: " (DKE) 雙機碼加密"
 description: DKE 可讓您保護高度機密的資料，同時維持機碼的完整控制權。
 author: kccross
 ms.author: krowley
@@ -12,14 +12,14 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 7f54832001f80418ffb09bc45da8f32c79f3df53
-ms.sourcegitcommit: 1b83b6bcacb997324bc4be355deba6daf319591d
+ms.openlocfilehash: 0c66afa22c8712455a875bc8ca4ddcad1678e2e7
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46503034"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601996"
 ---
-# <a name="double-key-encryption-dke"></a>雙金鑰加密（DKE）
+# <a name="double-key-encryption-dke"></a> (DKE) 雙機碼加密
 
 > *適用于： Microsoft 365 公開預覽的雙金鑰加密， [microsoft 365 合規性](https://www.microsoft.com/microsoft-365/business/compliance-management)， [Azure 資訊保護](https://azure.microsoft.com/pricing/details/information-protection)*
 >
@@ -27,7 +27,7 @@ ms.locfileid: "46503034"
 >
 > *服務說明： [Microsoft 365 合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-雙金鑰加密（DKE）搭配兩個按鍵來存取受保護的內容。 您可以在 Microsoft Azure 中儲存一個金鑰，並保留另一個金鑰。 Azure 資訊保護統一的標籤用戶端會保護高度機密的內容，同時維持對其中一個索引鍵的完整控制權。
+雙金鑰加密 (DKE) 會同時使用兩個按鍵來存取受保護的內容。 您可以在 Microsoft Azure 中儲存一個金鑰，並保留另一個金鑰。 Azure 資訊保護統一的標籤用戶端會保護高度機密的內容，同時維持對其中一個索引鍵的完整控制權。
 
 雙金鑰加密可同時支援雲端和內部部署。 這些部署可協助確保在任何儲存受保護的資料時，加密的資料都保持不透明。
 
@@ -138,11 +138,11 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
     例如：
 
-    :::image type="content" source="../media/dke-clone.png" alt-text="從 GitHub 複製 Double 金鑰加密服務存放庫":::
+   ![從 GitHub 複製 Double 金鑰加密服務存放庫](../media/dke-clone.png)
 
 3. 在 Visual Studio 程式碼中，選取 [ **View** \> **Command 調板**]，然後選取 [ **Git：複本**]。 若要跳到清單中的選項，請開始輸入 `git: clone` 以篩選項目，然後從下拉式清單中選取。 例如：
 
-    :::image type="content" source="../media/dke-vscode-clone.png" alt-text="Visual Studio 程式碼 GIT：仿製選項":::
+   ![Visual Studio 程式碼 GIT：仿製選項](../media/dke-vscode-clone.png)
 
 4. 在文字方塊中，粘貼您從 Git 複製的 URL，並**從 GitHub**選取 [複製]。
 
@@ -152,7 +152,7 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
     例如：
 
-    :::image type="content" source="../media/dke-vscode-master.png" alt-text="Visual Studio 程式碼主分支":::
+   ![Visual Studio 程式碼主分支](../media/dke-vscode-master.png)
 
 6. 選取 [word**主**圖形]，然後選取分支清單中的 [ **public_preview** ]。
 
@@ -170,7 +170,7 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
 您可以在 [檔案] 中的 [appsettings.js修改應用程式設定。 此檔案位於您在本機上複製的 DoubleKeyEncryptionService 存放庫中 DoubleKeyEncryptionService\src\customer-key-store。 例如，在 Visual Studio 程式碼中，您可以流覽至檔案，如下圖所示。
 
-:::image type="content" source="../media/dke-appsettingsjson.png" alt-text="在 DKE 的檔案中尋找 appsettings.js。":::
+![在 DKE 的檔案中尋找 appsettings.js。](../media/dke-appsettingsjson.png)
 
 #### <a name="key-access-settings"></a>主要存取設定
 
@@ -200,7 +200,7 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
 此影像顯示檔的**appsettings.js**的電子郵件授權格式設定正確。
 
-   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="檔上顯示電子郵件授權方法的 appsettings.js":::
+   ![檔上顯示電子郵件授權方法的 appsettings.js](../media/dke-email-accesssetting.png)
 
 **使用角色授權設定 DKE 的主要存取設定**
 
@@ -222,7 +222,7 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
 此影像顯示針對角色授權，正確設定檔案格式的**appsettings.js** 。
 
-   :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="檔顯示角色授權方法的appsettings.js":::
+   ![檔顯示角色授權方法的 appsettings.js](../media/dke-role-accesssetting.png)
 
 #### <a name="tenant-and-key-settings"></a>租使用者和主要設定
 
@@ -252,7 +252,7 @@ DKE 租使用者和 key settings 位於檔案中的**appsettings.js** 。
 
 這個圖像會顯示**appsettings.js**中的承租人和機碼設定的正確格式。 `LDAPPath`設定角色授權。
 
-:::image type="content" source="../media/dke-appsettingsjson-tenantkeysettings.png" alt-text="在檔案 appsettings.js中顯示 DKE 的正確租使用者和重要設定。":::
+![在檔案 appsettings.js中顯示 DKE 的正確租使用者和重要設定。](../media/dke-appsettingsjson-tenantkeysettings.png)
 
 ### <a name="generate-test-keys"></a>產生測試機碼
 
@@ -311,7 +311,7 @@ DKE 租使用者和 key settings 位於檔案中的**appsettings.js** 。
 
    結束結果應如下所示。
 
-   :::image type="content" source="../media/dke-startupcs-usetestkeys.png" alt-text="公開預覽的 startup.cs 檔案":::
+   ![公開預覽的 startup.cs 檔案](../media/dke-startupcs-usetestkeys.png)
 
 現在您已經準備好[建立 DKE 專案](#build-the-project)。
 
@@ -325,15 +325,15 @@ DKE 租使用者和 key settings 位於檔案中的**appsettings.js** 。
 
    如果找不到任何建立工作，請選取 [**設定建立**工作] 並為 .net core 建立一個工作，如下所示。
 
-   :::image type="content" source="../media/dke-configurebuildtask.png" alt-text="設定 .NET 的遺失組建工作":::
+   ![設定 .NET 的遺失組建工作](../media/dke-configurebuildtask.png)
 
    1. 選擇 [**從範本建立 tasks.js**]。
 
-   :::image type="content" source="../media/dke-createtasksjsonfromtemplate.png" alt-text="在 DKE 的檔案從範本建立 tasks.js":::
+   ![在 DKE 的檔案從範本建立 tasks.js](../media/dke-createtasksjsonfromtemplate.png)
 
    2. 從範本類型清單中，選取 [ **.Net Core**]。
 
-   :::image type="content" source="../media/dke-tasksjsontemplate.png" alt-text="在 DKE 的檔案從範本建立 tasks.js":::
+   ![在 DKE 的檔案從範本建立 tasks.js](../media/dke-tasksjsontemplate.png)
 
    3. 在 [建立] 區段中，找到 customerkeystore 之 **.csproj**檔案的路徑。 如果沒有的話，請新增下列一行：
 
@@ -349,7 +349,7 @@ DKE 租使用者和 key settings 位於檔案中的**appsettings.js** 。
 
 2. 選取 [**執行** \> **開始調試**] 以調試處理常式。 如果系統提示您選取環境，請選取 [ **.net core**]。
 
-.Net core 偵錯工具通常會啟動至 ' ' ' https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 ，並附加一個正斜線（/）和您的金鑰名稱。 例如：
+.Net 核心偵錯工具通常會啟動至 ' ' ' https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 ，並附加正斜線 (/) 和您的金鑰名稱。 例如：
 
 ```https
 https://localhost:5001/TestKey1
@@ -375,7 +375,7 @@ https://localhost:5001/TestKey1
 
     例如：
 
-    :::image type="content" source="../media/dke-azure-add-app-service.png" alt-text="新增應用程式服務":::
+   ![新增應用程式服務](../media/dke-azure-add-app-service.png)
 
 1. 在頁面底部，選取 [**複查 + 建立**]，然後選取 [**新增**]。
 
@@ -422,7 +422,7 @@ https://localhost:5001/TestKey1
 
     例如：
 
-    :::image type="content" source="../media/dke-ftp-dashboard.png" alt-text="從 FTP 儀表板複製連接字串":::
+   ![從 FTP 儀表板複製連接字串](../media/dke-ftp-dashboard.png)
 
 1. 在金鑰儲存的基本代碼中，移至**customer-key-store\src\customer-key-store 目錄**。
 
@@ -444,7 +444,7 @@ https://localhost:5001/TestKey1
 
 使用上述其中一種方法來部署 DKE 之後，請驗證部署及主要儲存區設定。
 
-運行：
+執行：
 
 src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/mykey
 
@@ -466,11 +466,11 @@ key_store_tester.ps1https://mycustomerkeystore.com/mykey
 
 3. 從顯示的選項中選取帳戶類型。
 
-    如果您使用的是非自訂網域（例如**onmicrosoft.com**）的 Microsoft Azure，請選取 **[僅限 Microsoft 單一租使用者] 中的 [帳戶]。**
+    如果您使用的是非自訂網域（例如**onmicrosoft.com**）的 Microsoft Azure，請選取 [**此組織目錄中的帳戶]，只 (僅限 Microsoft 單一租使用者) 。**
 
     例如：
 
-    :::image type="content" source="../media/dke-app-registration.png" alt-text="新的應用程式註冊":::
+   ![新的應用程式註冊](../media/dke-app-registration.png)
 
 4. 在頁面底部，選取 [**註冊**] 以建立新的應用程式註冊。
 
@@ -528,7 +528,7 @@ key_store_tester.ps1https://mycustomerkeystore.com/mykey
 
 例如：
 
-:::image type="content" source="../media/dke-use-dke.png" alt-text="選取 [Microsoft 365 規範中心] 中的 [使用雙重金鑰加密]":::
+![選取 [Microsoft 365 規範中心] 中的 [使用雙重金鑰加密]](../media/dke-use-dke.png)
 
 在最新版本的 Microsoft 365 應用程式中，您新增的任何 DKE 標籤都會開始顯示給使用者。
 

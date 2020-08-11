@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何將「社交媒體平臺」、「立即訊息平臺」及「檔共同作業平臺」的協力廠商資料匯入至 Microsoft 365 信箱。
-ms.openlocfilehash: da6b412796bbfc4d5c0d5ed177335e6f3fba9f87
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: e192ea19345da0c168b2bb09fd8ec51959ea47fb
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126631"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608320"
 ---
 # <a name="archive-third-party-data"></a>封存第三方資料
 
@@ -40,16 +40,28 @@ Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料
 
 |協力廠商資料  |訴訟暫止|電子文件探索  |保留原則  |記錄管理  |通訊合規性  |測試人員風險管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Android 資料<sup>1</sup>](archive-android-archiver-data.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[在&T 網路資料<sup>1</sup>](archive-att-network-archiver-data.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[鈴聲網路資料<sup>1</sup>](archive-bell-network-data.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Bloomberg 郵件](archive-bloomberg-message-data.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|[企業數位資料<sup>1</sup>](archive-enterprise-number-data.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[HR 資料](import-hr-data.md) ||||||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |[ICE 聊天](archive-icechat-data.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[立即 Bloomberg](archive-instant-bloomberg-data.md)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[O2 網路資料<sup>1</sup>](archive-o2-network-data.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[TELUS 網路資料<sup>1</sup>](archive-telus-network-data.md)    |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 |[Twitter](archive-twitter-data-with-sample-connector.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Verizon 網路資料<sup>1</sup>](archive-verizon-network-data.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
 ||||||||
 
-上表所列的協力廠商資料（HR 資料除外）會匯入至使用者信箱。 支援協力廠商資料的對應相容性解決方案會套用至儲存資料的使用者信箱。
+> [!NOTE]
+> TeleMessage 提供的<sup>1</sup>個連接器。 您必須使用 TeleMessage 來為您的組織設定其封存服務，才可在 Microsoft 365 中封存資料。 如需詳細資訊，請參閱此資料類型逐步指示中的「必要條件」一節。
+>
+
+上表所列的協力廠商資料 (，但 HR 資料) 會匯入使用者信箱中。 支援協力廠商資料的對應相容性解決方案會套用至儲存資料的使用者信箱。
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>支援協力廠商資料的相容性解決方案
 
@@ -57,7 +69,7 @@ Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料
 
 ### <a name="litigation-hold"></a>訴訟暫止
 
-您在使用者信箱上進行[訴訟暫](create-a-litigation-hold.md)止，以保留協力廠商資料。 當您建立保留時，您可以指定保留期間（也稱為以*時間為基礎的保留*），以在指定期間內保留已刪除及已修改的協力廠商資料，然後從信箱中永久刪除。 或者，您可以只保留無限期的內容（稱為*無限期*保留）或移除訴訟暫止。
+您在使用者信箱上進行[訴訟暫](create-a-litigation-hold.md)止，以保留協力廠商資料。 當您建立保留時，您可以指定保留期間 (也稱為以*時間為基礎的保留*) ，如此一來，刪除及修改的協力廠商資料會保留指定的期間，然後從信箱中永久刪除。 或者，您可以只保留未 (稱為*無限期保留*) 或移除訴訟暫止的內容。
 
 ### <a name="ediscovery"></a>電子文件探索
 
@@ -73,7 +85,7 @@ Microsoft 365 中的三個主要 eDiscovery 工具組括內容搜尋、核心 eD
 
 ### <a name="retention-policies"></a>保留原則
 
-您可以將[保留原則](retention.md)套用至使用者信箱，保留期限到期後再刪除協力廠商資料（及其他信箱內容）。 您也可以使用保留原則刪除某段時間內的協力廠商資料，或在保留期間到期時觸發處置檢查。
+您可以將[保留原則](retention.md)套用至使用者信箱以保留，然後刪除協力廠商資料 (和其他信箱內容) 保留期限到期之後。 您也可以使用保留原則刪除某段時間內的協力廠商資料，或在保留期間到期時觸發處置檢查。
 
 ### <a name="records-management"></a>記錄管理
 
