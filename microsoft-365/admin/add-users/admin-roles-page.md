@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
-ms.openlocfilehash: f557d00e21659880a96e4cd1936ab40d4b5a2dec
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 1f662221a2bcd8bc75c8226b2da726966a096be6
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432108"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46602090"
 ---
 # <a name="get-started-with-the-roles-page"></a>「角色」頁面快速入門
 
 在 [角色] 頁面上，您可以授與使用者在系統管理中心執行工作的許可權。 這可協助您的組織將工作散佈給適當的人員，並協助保護您的資料安全。
 
-:::image type="content" source="../../media/roles-main-page.png" alt-text="顯示系統管理員角色的圖形":::
+![顯示系統管理員角色的圖形](../../media/roles-main-page.png)
 
 > [!TIP]
 > 正在尋找詳細的角色描述嗎？ 請參閱[Azure Active Directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)和相關的系統[管理角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)。
@@ -39,7 +39,7 @@ ms.locfileid: "44432108"
 
 您可以匯出系統管理員清單，以及依角色進行搜尋及篩選。
 
-:::image type="content" source="../../media/admin-role-page-options.png" alt-text="篩選或匯入系統管理員角色":::
+![篩選或匯入系統管理員角色](../../media/admin-role-page-options.png)
 
 |||
 |:-----|:-----|
@@ -96,7 +96,7 @@ ms.locfileid: "44432108"
 
 - 最多選取3個角色，然後選擇 [**比較角色**]，以查看每個角色擁有的許可權。
 
-:::image type="content" source="../../media/compare-roles-list.png" alt-text="顯示系統管理員角色比較的圖形":::
+![顯示系統管理員角色比較的圖形](../../media/compare-roles-list.png)
 
 ::: moniker-end
 

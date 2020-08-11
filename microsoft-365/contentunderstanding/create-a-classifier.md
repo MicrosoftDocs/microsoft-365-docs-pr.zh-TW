@@ -1,5 +1,5 @@
 ---
-title: 建立分類器（預覽）
+title: '建立分類器 (預覽) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何建立分類器
-ms.openlocfilehash: 029ac16310f8e95a69a713896b1109a778eb3b8d
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 088770ace8914b583b184c78c3ce110d9d68b4c7
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537026"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612605"
 ---
-# <a name="create-a-classifier-preview"></a>建立分類器（預覽）
+# <a name="create-a-classifier-preview"></a>建立分類器 (預覽) 
 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。
@@ -37,7 +37,7 @@ ms.locfileid: "46537026"
 
 建立分類器時，您需要建立*說明*，以協助您在此檔案類型的情況下，透過注意您預期會發現的常見資料來定義模型。 
 
-您可以使用檔案類型（「範例檔案」）的範例，協助 "訓練" 您的模型來識別具有相同內容類型的檔案。
+您可以使用檔案類型的範例 ( 「範例檔案」 ) ，協助您 "訓練" 您的模型來識別具有相同內容類型的檔案。
 
 若要建立分類符，您必須：
 1. 命名模型
@@ -119,7 +119,7 @@ ms.locfileid: "46537026"
 2. 在 [訓練] 頁面的 [**訓練有素**的檔案] 區段中，您將會看到您先前已標示的範例檔案清單。 從清單中選取其中一個正檔，它會顯示在檢視器中。
 3. 在 [說明] 區段中，按一下 [**新增**]，然後按一下 [**空白**]。
 4. 在 [**建立說明**] 頁面上：</br>
-    a. 輸入**名稱**（例如，「披露組塊」）。</br>
+    a. 輸入**名稱** (例如，"披露 Block" ) 。</br>
     b. 選取**類型**。 在我們的範例中，我們會選取**片語清單**，因為我們會加入文字字串。</br>
     c. 在 [**請輸入此文字**] 方塊中，輸入字串。  在我們的範例中，我們將新增「要求其他披露」。 若字串必須區分大小寫，您可以選取 [區分**大小寫**]。</br>
     d. 按一下 [儲存]****。
@@ -127,7 +127,7 @@ ms.locfileid: "46537026"
     ![建立說明](../media/content-understanding/explanation.png) 
     
  
-5.  模型現在會檢查您建立的釋義是否足夠好，以找出您的剩餘標記範例檔案正確，如正值及負數範例。 在 [訓練有素的檔案] 區段中，檢查訓練**值**欄之後，查看結果。  如果您建立的釋義足以符合您為其標示的專案（肯定或否定），檔案會顯示 [**符合**專案] 的值。
+5.  模型現在會檢查您建立的釋義是否足夠好，以找出您的剩餘標記範例檔案正確，如正值及負數範例。 在 [訓練有素的檔案] 區段中，檢查訓練**值**欄之後，查看結果。  如果您建立的釋義足以符合為 (正值或負數) 所做的標記，則檔案會顯示**符合**專案的值。
 
     ![建立說明](../media/content-understanding/match.png) 
 

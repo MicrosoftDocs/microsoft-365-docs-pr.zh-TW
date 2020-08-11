@@ -1,5 +1,5 @@
 ---
-title: 檔瞭解概覽（預覽）
+title: '檔理解一覽 (預覽) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 深入瞭解 Project Cortex 中的檔知識。
-ms.openlocfilehash: 13b0aa3742c6cf1c0c1123996c683d13c6577876
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: bdebc8a8726a7b9a77eb9a1095f83e937cf36cb1
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46536997"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612711"
 ---
-# <a name="document-understanding-overview-preview"></a>檔瞭解概覽（預覽）
+# <a name="document-understanding-overview-preview"></a>檔理解一覽 (預覽) 
 > [!Note] 
 > 專案 Cortex 目前在預覽中。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。
 
@@ -28,7 +28,7 @@ ms.locfileid: "46536997"
 
 </br>
 
-檔瞭解使用 AI 模型自動進行檔案分類和資訊提取。 它最適合使用非結構化檔，如信件或合約。 檔應有文字可根據片語或模式識別。 識別的文字可以同時指定它所用的檔案類型（分類）和您想要解壓縮的內容（擷取器）。
+檔瞭解使用 AI 模型自動進行檔案分類和資訊提取。 它最適合使用非結構化檔，如信件或合約。 檔應有文字可根據片語或模式識別。 識別的文字可以指定其 (分類的檔案類型) 以及您想提取 (其擷取器) 的內容。
 
 檔理解模型是在一種稱為內容中心的 SharePoint 網站中建立及管理。 套用至 SharePoint 文件庫時，模型會與內容類型相關聯，該內容類型具有用來儲存提取資訊的欄。 您建立的內容類型會儲存在 SharePoint 內容類型庫中。 您也可以選擇使用現有的內容類型，以便使用其架構。
 

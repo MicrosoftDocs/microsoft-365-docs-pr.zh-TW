@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: ac1491a9257ff7169c0e2a10b014897d47a5d14b
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
+ms.openlocfilehash: e44411fdc14279dac92b8829503fd636e3225600
+ms.sourcegitcommit: 51f040a4edb8dd52521a5d7b0f7a975986a1af10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011836"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46608230"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft 安全性入口網站和系統管理中心
 雖然[Microsoft 365 的安全性中心](overview-security-center.md)是新的主版，可監控和管理所有身分識別、資料、裝置和應用程式的安全性，但您需要針對某些特殊的工作，存取不同的入口網站。
@@ -53,4 +53,4 @@ ms.locfileid: "44011836"
 | Microsoft 365 合規性中心 | 管理資料處理原則，並確保[遵守法規](https://docs.microsoft.com/microsoft-365/compliance/offering-home?view=o365-worldwide) | [compliance.microsoft.com](https://compliance.microsoft.com/) |
 | Microsoft 365 系統管理中心 | 設定 Microsoft 365 服務;管理 Microsoft 365 服務的角色、授權和追蹤更新 | [admin.microsoft.com](https://admin.microsoft.com/) |
 | Microsoft 端點管理員系統管理中心 | 使用[Microsoft 端點管理員](https://docs.microsoft.com/mem/configmgr/)，使用組合的 Intune 及 Configuration Manager 功能來管理及保護裝置 | [devicemanagement.microsoft.com](https://devicemanagement.microsoft.com/) |
-| Microsoft Intune 入口網站 | 使用[Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune)部署裝置原則及監視裝置以取得相容性 | [portal.azure.com/#blade/Microsoft_Intune_DeviceSettings](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)
+| Microsoft Intune 入口網站 | 使用[Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune)部署裝置原則及監視裝置以取得相容性 | [endpoint.microsoft.com](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/overview)

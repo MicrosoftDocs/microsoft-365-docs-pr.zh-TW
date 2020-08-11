@@ -1,5 +1,5 @@
 ---
-title: 建立表單處理模型（預覽）
+title: " (預覽中建立表單處理模型) "
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在 Project Cortex 中建立表單處理模型。
-ms.openlocfilehash: d3ca64ff5923e95704b72fd748884549a18624a3
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: 733baf24d8a484571ba9882fdda2633dc2ce0504
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540139"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612771"
 ---
-# <a name="create-a-form-processing-model-preview"></a>建立表單處理模型（預覽）
+# <a name="create-a-form-processing-model-preview"></a> (預覽中建立表單處理模型) 
 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。
@@ -48,7 +48,7 @@ ms.locfileid: "46540139"
 1. 在文件庫中，選取 [**自動化**] 功能表，選取 [ **AI**產生器]，然後選取 [**建立表單處理模型**]。
 
     ![建立 AI 產生器模型](../media/content-understanding/create-ai-builder-model.png)</br>
-2. 在 [**新表單處理模型**] 窗格的 [**名稱**] 欄位中，輸入模型的名稱（例如，[*購買訂單*]）。
+2. 在 [**新增表單處理模型**] 窗格的 [**名稱**] 欄位中，輸入模型 (的名稱，例如，[*採購訂單*]) 。
 
     ![新表單處理模型](../media/content-understanding/new-form-model.png)</br> 
 

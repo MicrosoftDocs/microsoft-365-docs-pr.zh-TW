@@ -1,5 +1,5 @@
 ---
-title: 建立提取程式（預覽）
+title: '建立解壓縮程式 (預覽) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何建立提取程式
-ms.openlocfilehash: 76cb17df069c6905080baabb0b57d765fe5cc94c
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: 64dede9f6613da82c65ca12c6c335a25301f5b9e
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540103"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612759"
 ---
-# <a name="create-an-extractor-preview"></a>建立提取程式（預覽）
+# <a name="create-an-extractor-preview"></a>建立解壓縮程式 (預覽) 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。
 
@@ -48,7 +48,7 @@ ms.locfileid: "46540103"
 
 建立解壓縮程式將會開啟 [解壓縮程式] 頁面，您會在其中看到範例檔案的清單，並在檢視器中顯示清單上的第一個檔案。
 
-1. 在檢視器中，選取您要從檔案中解壓縮的資料。 例如，如果您想要解壓縮*開始服務日期*，您會在第一個檔案（*星期一，10月14日星期一，2019*）中突出顯示其日期值。 然後按一下 [儲存]****。  您會在 [**標籤**] 欄底下的 [標籤範例] 清單中看到檔案的值顯示。
+1. 在檢視器中，選取您要從檔案中解壓縮的資料。 例如，如果您想要解壓縮的*開始服務日期*，您會在第一個檔案 (*星期一，10月14日，2019*) 中，反白顯示它的日期值。 然後按一下 [儲存]****。  您會在 [**標籤**] 欄底下的 [標籤範例] 清單中看到檔案的值顯示。
 2. 選取 **[下一個**檔案] 以自動儲存並開啟檢視器清單中的下一個檔案，您也可以選取 [**儲存**]，然後從 [**標記的範例**] 清單中選取另一個檔案。
 3. 在檢視器中重複步驟1和2，然後在五個檔案中儲存標籤之後，才執行此動作。
 
@@ -75,14 +75,14 @@ ms.locfileid: "46540103"
 
 為了協助識別*服務的開始日期*，您可以建立一個模式說明。
 
-1. 在 [說明] 區段中，選取 [**新增**]，然後輸入名稱（例如*Date*）。
+1. 在 [說明] 區段中，選取 [**新增**]，然後輸入名稱 (例如， *Date*) 。
 2. 選取 [類型] 清單中的 [**模式] 清單**。
 3. 針對此值，您需要提供日期變化顯示在範例檔案中。 例如，如果您的日期格式顯示為0/00/0000，您可以輸入可能出現在檔中的任何變化，例如：
     - 0/0/0000
     - 0/00/0000
     - 00/0/0000
     - 00/00/0000
-4. 選取 **「儲存」**。
+4. 選取 **[儲存]**。
 
 
 ### <a name="use-the-explanation-library"></a>使用說明程式庫
@@ -97,7 +97,7 @@ ms.locfileid: "46540103"
 
     ![說明程式庫](../media/content-understanding/explanation-library.png) 
 
-4. 在 [**建立說明**] 頁面上，[說明] 程式庫中的*日期*資訊會自動填滿欄位。 選取 **「儲存」**。</br>
+4. 在 [**建立說明**] 頁面上，[說明] 程式庫中的*日期*資訊會自動填滿欄位。 選取 **[儲存]**。</br>
 
     ![說明程式庫](../media/content-understanding/date-explanation-library.png) 
 
@@ -117,10 +117,10 @@ ms.locfileid: "46540103"
 
 在我們的範例中，我們會注意到文字字串的*開始服務日期*永遠在實際值之前。 為了協助識別服務的開始日期，我們可以建立片語說明。
 
-1. 在 [說明] 區段中，選取 [**新增**]，然後輸入名稱（例如，*首碼字串*）。
+1. 在 [說明] 區段中，選取 [**新增**]，然後輸入名稱 (例如，*首碼字串*) 。
 2. 在 [類型] 中，選取 [**片語] 清單**。
 3. 使用*服務的開始日期*做為值。
-4. 選取 **「儲存」**。
+4. 選取 **[儲存]**。
 
     ![說明程式庫](../media/content-understanding/prefix-string.png) 
 

@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: 協助您的使用者在 Windows 10 裝置上安裝 Office 應用程式，並在 Microsoft 365 系統管理中心輕鬆安裝 Windows 10 電腦上的 Office。
-ms.openlocfilehash: 9c670ba6727d47276291b1d1ba35b6431a293200
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: 680c1c4e43a037c6afd109220090f387b207f8b1
+ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44786231"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46601976"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>協助您的使用者在 Windows 10 裝置上安裝 Office
 
@@ -60,8 +60,7 @@ ms.locfileid: "44786231"
     
 4. 在 [**電子郵件使用者可下載 Office**面板的連結] 中，選取您要傳送電子郵件的使用者，然後以**電子郵件傳送選取的使用者**。
 
-    
-      :::image type="content" source="../media/sendemailtousers.png" alt-text="選取 [使用者]，以 Office 下載連結傳送電子郵件。":::
+   ![選取 [使用者]，以 Office 下載連結傳送電子郵件。](../media/sendemailtousers.png)
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>如需設定及使用 Microsoft 365 商務版 Premium 的詳細資訊
 

@@ -1,5 +1,5 @@
 ---
-title: 將檔理解模型套用至文件庫（預覽）
+title: '將檔理解模型套用至文件庫 (預覽) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何將已發佈的模型套用至 SharePoint 文件庫。
-ms.openlocfilehash: 7e5f3f02c2679769515b27026918a15c901c896e
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 0658710704273ed04e9f2067413d1141773ef4aa
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537044"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612677"
 ---
-# <a name="apply-a-document-understanding-model-preview"></a>套用檔理解模型（預覽）
+# <a name="apply-a-document-understanding-model-preview"></a>套用檔理解模型 (預覽) 
 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。

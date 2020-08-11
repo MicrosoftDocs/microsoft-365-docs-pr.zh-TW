@@ -1,5 +1,5 @@
 ---
-title: '管理您的知識管理網路（預覽） '
+title: '管理您的知識管理網路 (預覽)  '
 description: 如何設定知識管理。
 author: efrene
 ms.author: efrene
@@ -10,15 +10,15 @@ ms.topic: article
 ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
-ms.openlocfilehash: 87275dba78ab402a9ea9553198ce1a84072e3351
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+localization_priority: None
+ms.openlocfilehash: af53f4d563d286ad29138f935fbb69aa10b902ca
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540115"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612617"
 ---
-# <a name="manage-your-knowledge-management-network-preview"></a>管理您的知識管理網路（預覽）
+# <a name="manage-your-knowledge-management-network-preview"></a>管理您的知識管理網路 (預覽) 
 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。
@@ -60,9 +60,9 @@ ms.locfileid: "46540115"
 
     ![選擇尋找主題的方式](../media/content-understanding/k-manage-select-topic-source.png) </br>
    
-    如果您有多個您想要排除的網站（如果您選取 [**所有] （選取的網站除外**）或 [包含] （如果您**只選取了 [選取的網站**]），您可以選擇上載包含網站名稱和 URLs 的 CSV 檔案。 如果您想要使用 CSV 範本檔案，您可以選取 [**下載網站範本 .csv** ]。
+    如果您有許多您想要排除 (的網站，請選取 [**全部] （選取的網站除外）**) 或包含 (如果您**只選取了 [選取的網站**]) ，您可以選擇上載具有網站名稱和 URLs 的 CSV 檔案。 如果您想要使用 CSV 範本檔案，您可以選取 [**下載網站範本 .csv** ]。
 
-3. 選取 **「儲存」**。
+3. 選取 **[儲存]**。
 
 ##  <a name="change-who-can-see-topics-in-your-organization"></a>變更可以查看組織中主題的人員
 
@@ -75,7 +75,7 @@ ms.locfileid: "46540115"
     c. **沒人**</br>
 
     ![誰可以查看主題](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
-3. 選取 **「儲存」**。  
+3. 選取 **[儲存]**。  
  
 > [!Note] 
 > 雖然此設定可讓您選取組織中的任何使用者，但只有具有指派的知識管理授權的使用者才能查看主題。
@@ -96,7 +96,7 @@ ms.locfileid: "46540115"
 
     ![建立及編輯主題](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
 
-3. 選取 **「儲存」**。</br>
+3. 選取 **[儲存]**。</br>
 
 若要更新誰具有管理主題的許可權：
 
@@ -107,7 +107,7 @@ ms.locfileid: "46540115"
 
     ![管理主題](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
 
-3. 選取 **「儲存」**。</br>
+3. 選取 **[儲存]**。</br>
 
 
 ##  <a name="update-your-topic-center-name"></a>更新主題中心名稱

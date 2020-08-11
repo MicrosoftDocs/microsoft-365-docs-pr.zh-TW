@@ -1,5 +1,5 @@
 ---
-title: '設定內容瞭解（預覽） '
+title: '設定內容瞭解 (預覽)  '
 description: 如何設定專案 Cortex。
 author: efrene
 ms.author: efrene
@@ -9,16 +9,16 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fca80e45dfa45ee5da9521854c6eebfbd87d8859
-ms.sourcegitcommit: 91c82a79962387205c4dd4dd8d61322b79fed55f
+ms.openlocfilehash: 5fcc7f78bfc12faae19ce2a3fbc77c4348da01de
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539900"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612699"
 ---
-# <a name="set-up-content-understanding-preview"></a>設定內容瞭解（預覽）
+# <a name="set-up-content-understanding-preview"></a>設定內容瞭解 (預覽) 
 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。
@@ -53,7 +53,7 @@ ms.locfileid: "46539900"
      **若要 SharePoint 文件庫應該顯示以建立表單處理模型的選項**，您可以選取：</br>
     - **所有 SharePoint 文件庫**，使其可供您租使用者中的所有 SharePoint 庫使用。</br>
     - **僅限選取的網站中**的文件庫，然後選取您要讓其可供使用的網站。</br>
-    - 如果您目前不想要讓任何網站使用，則**無 SharePoint 庫**（您可以在安裝之後加以變更）。
+    - 如果您目前不想讓任何網站使用**SharePoint 程式庫** (您可以在 setup) 之後變更此設定。
 </br>
 
    ![設定表單處理](../media/content-understanding/admin-configforms.png)

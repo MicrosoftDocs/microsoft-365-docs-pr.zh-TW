@@ -1,5 +1,5 @@
 ---
-title: '設定知識管理（預覽） '
+title: '設定知識管理 (預覽)  '
 description: 如何設定知識管理。
 author: efrene
 ms.author: efrene
@@ -10,15 +10,15 @@ ms.topic: article
 ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
-ms.openlocfilehash: d4bc45bd1c88d4043df661972399dc6740dbed84
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+localization_priority: None
+ms.openlocfilehash: ba8cb8ceb3c98019099bfe5438d274c9d2b32280
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540127"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612545"
 ---
-# <a name="set-up-knowledge-management-preview"></a>設定知識管理（預覽）
+# <a name="set-up-knowledge-management-preview"></a>設定知識管理 (預覽) 
 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。
@@ -53,7 +53,7 @@ ms.locfileid: "46540127"
 
 若要設定您的知識網路：
 
-1. 在 Microsoft 365 系統管理中心（admin.microsoft.com）中，選取 [**設定**]，然後查看 [**組織知識**] 區段。
+1. 在 Microsoft 365 系統管理中心 (admin.microsoft.com) 中，選取 [**設定**]，然後查看 [**組織知識**] 區段。
 2. 在 [**組織知識**] 區段中，按一下 **[將人員連線到知識]**。<br/>
 
     ![將人員連線至知識](../media/content-understanding/admin-org-knowledge-options.png) </br>

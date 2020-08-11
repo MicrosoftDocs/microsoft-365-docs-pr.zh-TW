@@ -1,5 +1,5 @@
 ---
-title: 將使用者許可權授與主題中心（預覽）
+title: '將使用者權限授與主題中心 (預覽) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何授與使用者在主題中心執行工作的許可權
-ms.openlocfilehash: 0e4e05d0addfdb754459e67acfdff3f61c7c812e
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 2b7c745146b0386ff7f8bc2dcaf126a530b77598
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537359"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612569"
 ---
-# <a name="give-user-permissions-to-the-topic-center-preview"></a>將使用者許可權授與主題中心（預覽）
+# <a name="give-user-permissions-to-the-topic-center-preview"></a>將使用者權限授與主題中心 (預覽) 
 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex) 

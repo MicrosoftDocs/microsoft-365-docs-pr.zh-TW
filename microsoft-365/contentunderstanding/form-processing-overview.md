@@ -1,5 +1,5 @@
 ---
-title: 表單處理概覽（預覽）
+title: '窗 (預覽中的表單處理一覽) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解 Project Cortex 中的表單處理。
-ms.openlocfilehash: 9709c8170f5dc6ce0edbeb2d90cb4e1f6d759c64
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: dbea06cdf2dbb232a7ea48c78d7ea968dd18b9c0
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540055"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612723"
 ---
-# <a name="form-processing-overview-preview"></a>表單處理概覽（預覽）
+# <a name="form-processing-overview-preview"></a>窗 (預覽中的表單處理一覽) 
 > [!Note]
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。
 

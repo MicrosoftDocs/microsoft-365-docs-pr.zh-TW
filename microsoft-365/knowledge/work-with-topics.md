@@ -1,5 +1,5 @@
 ---
-title: '使用主題中心的主題（預覽） '
+title: '使用主題中央 (預覽) 中的主題 '
 description: 操作方法使用主題中心的主題。
 author: efrene
 ms.author: efrene
@@ -10,15 +10,15 @@ ms.topic: article
 ms.service: ''
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: Normal
-ms.openlocfilehash: 3519b8a1ddcaae09779ae8761ac368e3bd84294f
-ms.sourcegitcommit: 91c82a79962387205c4dd4dd8d61322b79fed55f
+localization_priority: None
+ms.openlocfilehash: e4a9917464e22c6220d26619e7b5ca60f090abb7
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46539857"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612487"
 ---
-# <a name="work-with-topics-in-the-topic-center-preview"></a>使用主題中心的主題（預覽）
+# <a name="work-with-topics-in-the-topic-center-preview"></a>使用主題中央 (預覽) 中的主題
 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。

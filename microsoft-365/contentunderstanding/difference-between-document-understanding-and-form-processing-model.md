@@ -1,5 +1,5 @@
 ---
-title: 檔瞭解和表單處理模型之間的差異（預覽）
+title: '檔瞭解和表單處理模型之間的差異 (預覽) '
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,22 +8,22 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 說明文件瞭解和表單處理模型之間的主要差異。
-ms.openlocfilehash: bceeb4b2f52ecf95aa0a23bf8970d1427088d877
-ms.sourcegitcommit: ea5e2f85bd6b609658545b120c7e08789b9686fd
+ms.openlocfilehash: 7c480b91c1ddd75016b4bd35faa3d5692cacd103
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46537002"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612735"
 ---
-# <a name="difference-between-document-understanding-and-form-processing-models-preview"></a>檔瞭解和表單處理模型之間的差異（預覽）
+# <a name="difference-between-document-understanding-and-form-processing-models-preview"></a>檔瞭解和表單處理模型之間的差異 (預覽) 
 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。
 
-專案 Cortex 中的內容瞭解可讓您識別和分類上載至 SharePoint 文件庫的檔，以及提取每個檔案的相關資訊。  例如，當檔案上傳至 SharePoint 文件庫時，識別為*購買訂單*的所有檔案都會以這種方式分類，並顯示在顯示它們的自訂文件庫視圖中。 此外，您可以從每個檔案（例如， *PO 號碼*和*總計*）提取特定的資訊，並將其顯示在文件庫視圖中的欄中。 
+專案 Cortex 中的內容瞭解可讓您識別和分類上載至 SharePoint 文件庫的檔，以及提取每個檔案的相關資訊。  例如，當檔案上傳至 SharePoint 文件庫時，識別為*購買訂單*的所有檔案都會以這種方式分類，並顯示在顯示它們的自訂文件庫視圖中。 此外，您可以從每個檔案中拉入特定資訊 (例如， *PO 號碼*和*合計*) ，並將其顯示在文件庫視圖中的欄中。 
 
 
 內容瞭解可讓您建立*模型*，以識別及解壓縮您所需的資訊。  可使用的模型類型有兩種：
@@ -38,7 +38,7 @@ ms.locfileid: "46537002"
 
 使用檔理解模型來識別及提取非結構化檔中的資料，例如信件或合約，而您想要提取的文字實體會位於檔的句子或特定區域中。 例如，非結構化檔可以是以不同方式撰寫的合約更新信件。 不過，各項合約更新檔的本文中的資訊都是一致的，例如文字字串「服務的開始日期」，然後是實際的日期。   
 
-使用表單處理模型來識別檔案，並從結構化或半結構化的檔（如表單或發票）中提取資料，您可以在其中有明文的索引鍵-值對（例如， *Date： 10/1/2020*） * 或表格資料。 舉例來說，表單處理的一個不錯的候選人是公司的訂單要求表單，用戶端需要在該表單中提供其資訊，以供位於檔版面配置相同區域中的特定欄位（例如*名稱*、*電話號碼*、*總成本*等）。 納稅表單是結構化檔的好例子。 
+使用表單處理模型來識別檔案，並從結構化或半結構化的檔（例如表單或發票）中提取資料，您可以在其中包含明確的索引鍵-值對 (例如， *Date： 10/1/2020*) * 或 table 資料。 舉例來說，表單處理的一個不錯的候選人是公司的訂單要求表單，用戶端需要在該表單中提供其資訊，以供位於檔版面配置相同區域中的特定欄位（例如*名稱*、*電話號碼*、*總成本*等）。 納稅表單是結構化檔的好例子。 
 
 ## <a name="where-they-are-created"></a>建立位置
 

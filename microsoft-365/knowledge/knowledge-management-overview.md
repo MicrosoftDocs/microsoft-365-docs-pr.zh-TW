@@ -1,5 +1,5 @@
 ---
-title: 知識管理綜述（預覽）
+title: " (預覽的知識管理概述) "
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,17 +8,17 @@ audience: admin
 ms.topic: article
 ms.service: ''
 search.appverid: ''
-localization_priority: Normal
+localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在 Project Cortex 中瞭解知識管理。
-ms.openlocfilehash: 99b0d0ece9ef8271666b1978db7947f3e3f2a4e8
-ms.sourcegitcommit: 3a47efcbdf3d2b39caa2798ea5be806839b05ed1
+ms.openlocfilehash: 6ced55e8886c08219d7296e2709a2ffc2f09078d
+ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/01/2020
-ms.locfileid: "46540069"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46612593"
 ---
-# <a name="knowledge-management-0verview-preview"></a>知識管理0verview （預覽）
+# <a name="knowledge-management-0verview-preview"></a>知識管理 0verview (預覽) 
 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex) 
@@ -52,7 +52,7 @@ ms.locfileid: "46540069"
 提供正確許可權的使用者將可以在主題中心執行下列動作：
 
 - 確認或拒絕您租使用者中探索的主題。
-- 視需要手動建立新的主題（例如，如果沒有提供足夠的資訊供透過 AI 探索）。
+- 在需要時手動建立新的主題 (例如，如果沒有提供足夠的資訊供透過 AI) 探索。
 - 編輯現有的主題頁面。</br>
 
 如需詳細資訊，請參閱[主題中央的使用主題](work-with-topics.md)。  
@@ -81,6 +81,6 @@ AI 會持續運作，提供您在環境中發生變更時改進主題的建議�
 
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [設定知識管理](set-up-knowledge-network.md)</br>
 [主題中心概述](topic-center-overview.md)
