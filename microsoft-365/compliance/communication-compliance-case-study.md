@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 79948e514009d3adffcead87aafc18ab2f1e3b25
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 9e16e96989fd3e2312129f9633bd298181839cf0
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597630"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632084"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>案例研究-Contoso 會快速設定適用于 Microsoft 小組、Exchange 及 Yammer 通訊的冒犯性語言原則
 
@@ -81,7 +81,7 @@ Contoso IT 管理員請採取下列步驟，確認 Contoso 的授權支援：
 
 有五個角色可用於設定管理通訊符合性功能的許可權。 若要在 Microsoft 365 規範中心中以功能表選項的方式提供通訊相容性，並繼續進行這些設定步驟，Contoso 系統管理員會被指派*通訊合規性*系統管理員角色。
 
-Contoso 決定建立一個 custome 角色群組，並將所有通訊相容性角色指派給群組。 這可讓 Contoso 快速快速開始，並最適合其相容性管理需求。
+Contoso 決定建立一個自訂角色群組，並將所有通訊規範角色指派給群組。 這可讓 Contoso 快速快速開始，並最適合其相容性管理需求。
 
 Contoso 會建立一個包含下列所有通訊相容性角色的角色群組：
 

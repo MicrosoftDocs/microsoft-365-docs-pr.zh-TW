@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 7afcf16a42824ff234e53412a0cbd44f997fcaf9
-ms.sourcegitcommit: 634abe8a237e27dfe82376e6ef32280aab5d4a27
+ms.openlocfilehash: cea4dbcb42833a14980d092bd0ff168ca97e5934
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45005707"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632148"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>建立及管理自訂的偵測規則
 
@@ -37,7 +37,7 @@ ms.locfileid: "45005707"
 
 - **安全性管理員**（安全性管理員或安全性系統管理員角色）是[Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)，用來管理 Microsoft 365 安全性中心和各種入口網站和服務中的各種安全性設定。
 
-- **安全操作員**-安全性操作員角色是用來管理提醒的[Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)，具有安全性相關功能的全域唯讀許可權，包括 Microsoft 365 Security center 中的所有資訊。 只有當 Microsoft Defender ATP 中的角色型存取控制（RBAC）關閉時，此角色才足以管理自訂偵測。 如果您已設定 RBAC，您也需要 Microsoft Defender ATP 的「**管理安全性設定**」許可權。
+- **安全操作員**-安全性操作員角色是用來管理提醒的[Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)，具有安全性相關功能的全域唯讀許可權，包括 Microsoft 365 Security center 中的所有資訊。 只有在 Microsoft Defender ATP 中關閉以角色為基礎的存取控制 (RBAC) 時，此角色才足以管理自訂偵測。 如果您已設定 RBAC，您也需要 Microsoft Defender ATP 的「**管理安全性設定**」許可權。
 
 若要管理必要的許可權，**全域管理員**可以執行下列作業：
 
@@ -52,6 +52,10 @@ ms.locfileid: "45005707"
 
 在 Microsoft 365 的 [安全性中心] 中，移至 [**高級搜尋**]，然後選取現有的查詢或建立新的查詢。 使用新的查詢時，請執行查詢以識別錯誤，並瞭解可能的結果。
 
+>[!IMPORTANT]
+>若要防止服務傳回太多警示，每個規則都限制為每次執行時只產生100警示。 在建立規則之前，請先調整您的查詢，以避免正常、日常活動的警示。
+
+
 #### <a name="required-columns-in-the-query-results"></a>查詢結果中的必要欄
 若要建立自訂偵測規則，查詢必須傳回下列資料行：
 
@@ -61,8 +65,8 @@ ms.locfileid: "45005707"
     - `DeviceName`
     - `RemoteDeviceName`
     - `RecipientEmailAddress`
-    - `SenderFromAddress`（信封寄件者或回信路徑位址）
-    - `SenderMailFromAddress`（由電子郵件客戶程式顯示的寄件者位址）
+    - `SenderFromAddress` (信封寄件者或回信路徑位址) 
+    - `SenderMailFromAddress`電子郵件客戶程式顯示的 (寄件者位址) 
     - `RecipientObjectId`
     - `AccountObjectId`
     - `AccountSid`
@@ -77,7 +81,7 @@ ms.locfileid: "45005707"
 
 有多種方式可確保更複雜的查詢傳回這些欄位。 例如，如果您想要依實體（如所示）匯總和計數 `DeviceId` ，您仍然可以 `Timestamp` 從每個唯一相關的最近事件中取得 `DeviceId` 。
 
-下列範例查詢會計算具有防病毒偵測的獨特裝置數目（ `DeviceId` ），並使用此計數來找出具有超過五個偵測的裝置。 若要傳回最新的 `Timestamp` ，它會搭配 `summarize` 函數使用運算子 `arg_max` 。
+下列範例查詢計算使用防病毒偵測 () 的唯一裝置數目 `DeviceId` ，並使用此計數來找出超過五個偵測的裝置。 若要傳回最新的 `Timestamp` ，它會搭配 `summarize` 函數使用運算子 `arg_max` 。
 
 ```kusto
 DeviceEvents
@@ -85,6 +89,7 @@ DeviceEvents
 | summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
 | where count_ > 5
 ```
+
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. 建立新的規則，並提供警示詳細資料。
 
 使用查詢編輯器中的查詢，選取 [**建立偵測規則**]，並指定下列警示詳細資料：
@@ -109,9 +114,9 @@ DeviceEvents
 選取您要監視偵測的頻率，並考慮組織的容量以回應提醒。
 
 ### <a name="3-choose-the-impacted-entities"></a>3. 選擇受影響的實體。
-在查詢結果中識別欄，以找出主要受影響或受影響的實體。 例如，查詢可能會傳回寄件者（ `SenderFromAddress` 或 `SenderMailFromAddress` ）和收件者（ `RecipientEmailAddress` ）位址。 識別哪些欄位代表主要受影響的實體，可協助服務匯總相關的警示、關聯事件，以及目標回應動作。
+在查詢結果中識別欄，以找出主要受影響或受影響的實體。 例如，查詢可能會傳回寄件者 (`SenderFromAddress` 或 `SenderMailFromAddress`) 和收件者 (`RecipientEmailAddress`) 位址。 識別哪些欄位代表主要受影響的實體，可協助服務匯總相關的警示、關聯事件，以及目標回應動作。
 
-您可以為每個實體類型（信箱、使用者或裝置）只選取一個資料行。 無法選取查詢未傳回的資料行。
+您只能為每個實體類型 (信箱、使用者或裝置) 選取一個資料行。 無法選取查詢未傳回的資料行。
 
 ### <a name="4-specify-actions"></a>4. 指定動作。
 您的自訂偵測規則可在查詢所傳回的裝置、檔案或使用者上自動採取動作。
@@ -175,14 +180,14 @@ DeviceEvents
 
 ### <a name="view-and-manage-triggered-alerts"></a>查看及管理觸發的警示
 
-在 [規則詳細資料] 畫面（**搜尋**  >  **自訂**偵測  >  **[規則名稱]**）中，移至 [**觸發警示**]，以查看與規則相符所產生的警示清單。 選取警示以查看該警示的詳細資訊，並對該警示採取下列動作：
+在 [規則詳細資料] 畫面中 (**搜尋**  >  **自訂**偵測  >  **[規則名稱]**) ，移至 [**觸發警示**]，以查看與規則相符所產生的警示清單。 選取警示以查看該警示的詳細資訊，並對該警示採取下列動作：
 
-- 透過設定其狀態和分類（true 或 false 警示）來管理提醒
+- 透過設定其狀態和分類 (true 或 false 警示來管理提醒) 
 - 將警示連結到事件
 - 在高級搜尋中執行觸發警示的查詢
 
 ### <a name="review-actions"></a>審閱動作
-在 [規則詳細資料] 畫面（**搜尋**  >  **自訂**偵測  >  **[規則名稱]**）中，移至 [**觸發動作**]，以查看根據與規則相符所執行的動作清單。
+在 [規則詳細資料] 畫面中 (**搜尋**  >  **自訂**偵測  >  **[規則名稱]**) ，移至 [**觸發動作**]，以查看根據與規則相符所執行的動作清單。
 
 >[!TIP]
 >若要快速查看資訊，並對表格中的專案採取動作，請使用表格左邊的選取範圍欄 [&#10003;]。

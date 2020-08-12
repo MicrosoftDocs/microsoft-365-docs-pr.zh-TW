@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a08d07f574c1cd5463772c803be0d4b3850144f4
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 7701932cdd41b673dcc665c71983df9f4d244a8b
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45199534"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632172"
 ---
 # <a name="insider-risk-management-policies"></a>有問必答風險管理原則
 
@@ -31,7 +31,7 @@ ms.locfileid: "45199534"
 - **主動警示**：每個原則的作用中警示數目。
 - 已**確認的警示**：過去365天內從原則產生案例的警示總數。
 - **對提醒採取的動作**：過去365天內已確認或已解除的警示總數。
-- **原則有效性**：已確認的警示總數取決於對警示所進行的動作總數（即過去一年已確認或已消除的警示總數）。
+- **原則有效性**：已確認的警示總數取決於警示 (所進行的全部動作，也就是過去一年內已確認或消除的警示總數) 。
 - **Active**：案例的狀態為 *[是]* 或 [*否*]。
 
 ![測試人員風險管理原則儀表板](../media/insider-risk-policy-dashboard.png)
@@ -49,7 +49,7 @@ ms.locfileid: "45199534"
 
 ### <a name="general-data-leaks"></a>一般資料洩漏
 
-保護資料和防止資料洩漏是大多陣列織面臨的挑戰，尤其是使用者、裝置及服務建立的新資料的快速成長。 使用者可在服務和裝置間建立、儲存及共用資訊，使管理資料洩漏變得越來越複雜和困難。 資料洩漏可能包括意外 oversharing 組織外部的資訊，或惡意目的資料竊取。 在與指派的資料遺失防護（DLP）原則一起使用時，此範本會從即時偵測至可疑的 SharePoint 線上資料下載、檔案和資料夾共用、列印檔案，以及將資料複製到個人雲端郵件和儲存服務。
+保護資料和防止資料洩漏是大多陣列織面臨的挑戰，尤其是使用者、裝置及服務建立的新資料的快速成長。 使用者可在服務和裝置間建立、儲存及共用資訊，使管理資料洩漏變得越來越複雜和困難。 資料洩漏可能包括意外 oversharing 組織外部的資訊，或惡意目的資料竊取。 與指派的資料遺失防護 (DLP) 原則，這個範本會開始計分可疑的可疑 SharePoint 線上資料下載、檔案和資料夾共用、列印檔案，並將資料複製到個人雲端郵件和儲存服務。
 
 使用**資料洩漏**範本時，您必須指派 DLP 原則，以針對組織中的高嚴重性警示，在內幕風險原則中觸發指示器。 當 DLP 原則規則所產生的高嚴重性警示新增至 Office 365 審核記錄檔時，使用此範本所建立的會員風險原則，會自動檢查高嚴重性的 DLP 警示。 如果警示包含內部使用者風險原則中所定義的範圍內使用者，則此警示會由內幕使用者風險原則處理為新的警示，並指派給內部使用者風險嚴重性和風險分數。 這個原則可讓您在內容中評估此警示，與案例中包含的其他活動。
 
@@ -73,25 +73,25 @@ ms.locfileid: "45199534"
 
 如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。
 
-### <a name="data-leaks-by-priority-users-preview"></a>依優先順序的使用者資料洩漏（預覽）
+### <a name="data-leaks-by-priority-users-preview"></a>依優先順序的使用者 (預覽的資料洩漏) 
 
-保護資料和防止組織中使用者的資料洩漏可能取決於其位置、機密資訊的存取層級，或風險歷程記錄。 資料洩漏可能包括意外 oversharing 組織外部的高敏感度資訊，或有惡意目的的資料竊取。 在與指派的資料遺失防護（DLP）原則一起使用時，此範本會開始計分可疑活動的即時偵測，並產生具有較高嚴重性層級的有問必答風險警示和警示的增加可能性。 優先順序使用者是在「內幕風險管理設定」區域中設定的優先順序使用者群組中定義。 新增連結
+保護資料和防止組織中使用者的資料洩漏可能取決於其位置、機密資訊的存取層級，或風險歷程記錄。 資料洩漏可能包括意外 oversharing 組織外部的高敏感度資訊，或有惡意目的的資料竊取。 與指派的資料遺失防護 (DLP) 原則，這個範本會開始計分可疑活動的即時偵測，並產生具有較高嚴重性層級的有問必答風險警示和警示的增加可能性。 優先順序使用者是在「內幕風險管理設定」區域中設定的[優先順序使用者群組](insider-risk-management-settings.md#priority-user-groups-preview)中定義。
 
 就像**一般資料洩漏範本**一樣，您必須指派 DLP 原則，以在組織中高嚴重性警示的內幕風險原則中觸發指示器。 使用此範本建立原則時，請遵循上述資料洩漏原則指導方針。 此外，您必須將「內部使用者群組」原則**管理**  >  **設定**  >  **優先順序使用者群組**中所建立的優先順序使用者群組指派給原則。
 
-### <a name="data-leaks-by-disgruntled-users-preview"></a>因不滿使用者的資料洩漏（預覽）
+### <a name="data-leaks-by-disgruntled-users-preview"></a>因不滿使用者 (預覽的資料洩漏) 
 
 當使用者遇到雇用 stressors 時，可能會因不滿而導致「內幕風險」活動的機率增加。 在識別與 disgruntlement 相關聯的指示器時，此範本會開始計分使用者活動。 範例包括效能改進通知、效能檢查不良或工作層級狀態的變更。 不滿的使用者可能會包含從 SharePoint 線上下載檔案，並將資料複製到員工 stressor 事件附近的個人雲端訊息和儲存服務。
 
 使用此範本時，您也必須設定 Microsoft 365 HR 連接器，以定期匯入效能改進通知、不良效能檢查狀態，或組織中使用者的工作層級變更資訊。 如需為組織設定 Microsoft 365 HR connector 的逐步指引，請參閱[Import data WITH HR connector](import-hr-data.md)文章。
 
-### <a name="general-security-policy-violations-preview"></a>一般安全性原則違規（預覽）
+### <a name="general-security-policy-violations-preview"></a> (預覽的一般安全性原則違規) 
 
-在許多組織中，使用者有權在其裝置上安裝軟體或修改裝置設定，以協助其工作。 不管是無意或惡意的目的，使用者可能會安裝惡意程式碼或停用重要的安全性功能，以協助保護其裝置或網路資源上的資訊。 這個原則範本使用 Microsoft Defender 高級威脅防護（ATP）的安全性警示，以開始計分這些活動，並將此風險區域的功能重點放在偵測和警示。 當使用者可能會有可能是「有問必答」風險的安全性原則違規記錄時，請使用此範本為案例中的安全性原則違規提供洞察力。
+在許多組織中，使用者有權在其裝置上安裝軟體或修改裝置設定，以協助其工作。 不管是無意或惡意的目的，使用者可能會安裝惡意程式碼或停用重要的安全性功能，以協助保護其裝置或網路資源上的資訊。 這個原則範本使用來自 Microsoft Defender 高級威脅防護 (ATP) 的安全性警示，以開始計分這些活動，並將此風險區域的功能重點放在「偵測」和「警示」。 當使用者可能會有可能是「有問必答」風險的安全性原則違規記錄時，請使用此範本為案例中的安全性原則違規提供洞察力。
 
 您需要在您的組織中設定 Microsoft Defender ATP，並在 Defender Security Center 中啟用 Microsoft Defender ATP，以取得內部的內幕風險管理整合，以匯入安全性侵犯警示。 如需設定 Microsoft Defender ATP for 內幕風險管理整合的詳細資訊，請參閱[在 Microsoft DEFENDER atp 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
-### <a name="security-policy-violations-by-departing-users-preview"></a>脫離使用者的安全性原則違規（預覽）
+### <a name="security-policy-violations-by-departing-users-preview"></a>由使用者 (預覽) 中的使用者進行安全性原則違規
 
 使用者不論是保留正負字詞，都可能會有較高的違反安全性原則的風險。 為了協助防止使用者遭受意外或惡意的安全性違規，此原則範本會使用 Microsoft Defender ATP 警示，以提供與安全性相關的活動的洞察力。 這些活動包含使用者安裝惡意程式碼或其他可能有害的應用程式，以及停用裝置上的安全性功能。 當使用者有讓步或終止日期匯入 Microsoft 365 HR Connector 做為觸發事件後，就會啟動原則指示器。
 
@@ -99,13 +99,13 @@ ms.locfileid: "45199534"
 
 您需要在您的組織中設定 Microsoft Defender ATP，並在 Defender Security Center 中啟用 Microsoft Defender ATP，以取得內部的內幕風險管理整合，以匯入安全性侵犯警示。 如需設定 Microsoft Defender ATP for 內幕風險管理整合的詳細資訊，請參閱[在 Microsoft DEFENDER atp 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
-### <a name="security-policy-violations-by-priority-users-preview"></a>依優先順序的使用者所違反的安全性原則（預覽）
+### <a name="security-policy-violations-by-priority-users-preview"></a>優先使用者 (預覽的安全性原則違規) 
 
 保護組織中使用者的安全性違規可能取決於其位置、機密資訊的存取層級，或風險歷程記錄。 由於優先順序使用者的安全性違規可能會對組織的重要區域產生 outsized 影響，因此這個原則範本會從這些指示器開始計分，並使用 Microsoft Defender ATP 警示，為這些使用者提供與安全性相關的活動的洞察力。 這可能包括安裝惡意程式碼或其他可能有害之應用程式的優先順序使用者，以及停用裝置上的安全性功能。 優先順序使用者是在「內幕風險管理設定」區域中設定的優先順序使用者群組中定義。
 
 您需要在您的組織中設定 Microsoft Defender ATP，並在 Defender Security Center 中啟用 Microsoft Defender ATP，以取得內部的內幕風險管理整合，以匯入安全性侵犯警示。 如需設定 Microsoft Defender ATP for 內幕風險管理整合的詳細資訊，請參閱[在 Microsoft DEFENDER atp 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。 此外，您必須將「內部使用者群組」原則**管理**  >  **設定**  >  **優先順序使用者群組**中所建立的優先順序使用者群組指派給原則。
 
-### <a name="security-policy-violations-by-disgruntled-users-preview"></a>因不滿使用者而違反的安全性原則（預覽）
+### <a name="security-policy-violations-by-disgruntled-users-preview"></a>因不滿使用者 (預覽所違反的安全性原則) 
 
 經驗 stressors 的使用者可能會遭受無意或惡意安全性原則違規的較高風險。 這些 stressors 可能包含要置於效能改進計畫、效能檢查狀態不良或從目前位置降級的使用者。 這個原則範本會啟動與這些使用者相關之事件的相關指示器和活動，以風險計分為基礎。
 
@@ -156,7 +156,7 @@ ms.locfileid: "45199534"
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)，移至 **[測試人員風險管理]**，然後選取 **[原則]** 索引標籤。
 2. 選取 **[建立原則]** 以開啟原則精靈
 3. 在 **[新增測試人員風險原則]** 頁面上，完成下列欄位：
-    - **名稱（必要）**：輸入原則的易記名稱。
+    - **Name (必要) **：輸入原則的易記名稱。
     - **說明 (選用)**：輸入原則的說明。
     - **選擇原則範本 (必要)**：選取其中一個[原則範本](insider-risk-management-policies.md#policy-templates)，以定義受原則監視的風險指標類型。
 
@@ -164,8 +164,8 @@ ms.locfileid: "45199534"
     >大多數原則範本都具有必須針對原則進行設定以產生相關警示的必要條件。 若尚未設定適用的原則必要條件，請參閱「[開始使用內部使用者風險管理](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates)」。
 
 4. 選取 **[下一步]** 繼續。
-5. 在 [**使用者**] 頁面上，選取 [**新增使用者或群組**] 或 **[選擇優先級使用者群組**]，以根據您所選取的原則範本，定義納入原則中的使用者或優先順序使用者群組。 如果適用的話，請選取 [**所有使用者及擁有郵件功能的群組**] 核取方塊（如果您尚未選取優先順序使用者的範本）。 選取 **[下一步]** 繼續。
-6. 在 [**指定要設定優先順序的內容（選用）** ] 頁面上，您可以指派來源，以優先增加風險分數。 不過，除非相關的內容包含內建或自訂的機密資訊類型，或是在此頁面上指定為優先順序，否則有些活動根本不會產生警示：
+5. 在 [**使用者**] 頁面上，選取 [**新增使用者或群組**] 或 **[選擇優先級使用者群組**]，以根據您所選取的原則範本，定義納入原則中的使用者或優先順序使用者群組。 如果有 (的話，請選取 [**所有使用者及擁有郵件功能的群組**] 核取方塊（如果您尚未選取優先順序的使用者範本) ）。 選取 **[下一步]** 繼續。
+6. 在 [**指定優先順序 () 選用的內容**] 頁面上，您可以指派來源，以優先順序增加風險的分數。 不過，除非相關的內容包含內建或自訂的機密資訊類型，或是在此頁面上指定為優先順序，否則有些活動根本不會產生警示：
     - **SharePoint 網站**：選取 **[新增 SharePoint 網站]**，然後選取要設定優先順序的 SharePoint 組織。 例如，*"group1@contoso.sharepoint.com/sites/group1"*。
     - **敏感性資訊類型**：選取 **[新增敏感性資訊類型]**，然後選取要設定優先順序的敏感性類型。 例如，*[美國銀行帳戶號碼]* 和 *[信用卡號碼]*。
     - **敏感度標籤**：選取 **[新增敏感度標籤]**，然後選取要設定優先順序的標籤。 例如，*[機密]* 和 *[密碼]*。
@@ -194,8 +194,8 @@ ms.locfileid: "45199534"
     - **選擇 [原則範本**]：用來定義原則所監控之風險指示器類型的範本。
 5. 在 [**描述**] 欄位中輸入原則的新描述。 
 6. 選取 **[下一步]** 繼續。
-7. 在 [**使用者**] 頁面上，選取 [**新增使用者或群組**] 或 **[選擇優先級使用者群組**]，以根據您所選取的原則範本，定義納入原則中的使用者或優先順序使用者群組。 如果適用的話，請選取 [**所有使用者及擁有郵件功能的群組**] 核取方塊（如果您尚未選取優先順序使用者的範本）。 選取 **[下一步]** 繼續。
-8. 在 [**指定要設定優先順序的內容（選用）** ] 頁面上，您可以指派來源，以優先增加風險分數。 不過，除非相關的內容包含內建或自訂的機密資訊類型，或是在此頁面上指定為優先順序，否則有些活動根本不會產生警示：
+7. 在 [**使用者**] 頁面上，選取 [**新增使用者或群組**] 或 **[選擇優先級使用者群組**]，以根據您所選取的原則範本，定義納入原則中的使用者或優先順序使用者群組。 如果有 (的話，請選取 [**所有使用者及擁有郵件功能的群組**] 核取方塊（如果您尚未選取優先順序的使用者範本) ）。 選取 **[下一步]** 繼續。
+8. 在 [**指定優先順序 () 選用的內容**] 頁面上，您可以指派來源，以優先順序增加風險的分數。 不過，除非相關的內容包含內建或自訂的機密資訊類型，或是在此頁面上指定為優先順序，否則有些活動根本不會產生警示：
     - **SharePoint 網站**：選取 **[新增 SharePoint 網站]**，然後選取要設定優先順序的 SharePoint 組織。 例如，*"group1@contoso.sharepoint.com/sites/group1"*。
     - **敏感性資訊類型**：選取 **[新增敏感性資訊類型]**，然後選取要設定優先順序的敏感性類型。 例如，*[美國銀行帳戶號碼]* 和 *[信用卡號碼]*。
     - **敏感度標籤**：選取 **[新增敏感度標籤]**，然後選取要設定優先順序的標籤。 例如，*[機密]* 和 *[密碼]*。

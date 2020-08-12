@@ -14,20 +14,33 @@ search.appverid:
 - MOE150
 - MET150
 description: 深入瞭解 Microsoft 365 中的資訊管理。
-ms.openlocfilehash: d2c2977a4eeaebb28f37c69683a929cb9f64b085
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d8e0c252bfe0b5b5c3361e67b8327d04951eb9c5
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521240"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641606"
 ---
 # <a name="manage-information-governance"></a>管理資訊控管
 
- 使用 Microsoft 365 功能管理內容生命週期，以匯入、儲存和分類重要業務資料，這樣您就可以保留您所需要的專案，並刪除您不需要的專案。
+使用 Microsoft 資訊管理功能來管理您的資料，以取得法規遵從性或法規需求。
 
-|**功能**|**詳細資訊**|
-|:-----|:-----|
-| **管理資料** | 使用[保留原則和保留標籤](retention.md)，保留您需要保留的資料，並刪除您不需要保留或因法規或規範原因而必須刪除的資料。<br /><br /> 您可以使用匯[入服務](importing-pst-files-to-office-365.md)，快速將 PST 檔案匯入到組織中的 Exchange Online 信箱，並設定[無限期](unlimited-archiving.md)的封存以提供使用者額外的信箱儲存空間。|
-| **監視資料** | [確認保留標籤](view-label-activity-for-documents.md)已正確套用至組織中的內容，並使用[標籤分析](label-analytics.md)快速查看這些標籤的使用順序及其套用的位置。|
-| **管理非使用中的信箱** | 您的組織可能需要將其保留組織之後保留先前的員工電子郵件。 根據您的組織保留需求，您可能需要幾個月數或年後結束工作，或您可能需要無限期保留信箱內容的保留信箱內容。 不論您需要保留電子郵件的時間為何，您可以建立[非](inactive-mailboxes-in-office-365.md)使用中的信箱以保留之前員工的信箱。|
-| **記錄管理** | 請確定已正確宣告[核心商務記錄](records-management.md)，並以完全審核可見度加以儲存，以符合法規需求。|
+## <a name="information-governance"></a>資訊管理
+
+若要保留您想要的內容，並刪除您不會執行的動作：
+ 
+|功能|它會解決什麼問題？|入門|
+|:------|:------------|:--------------------|:-----------------------------|
+|[原則管理和刪除工作流程](retention.md)| 保留或刪除包含電子郵件、檔、即時消息等內容 <br /><br />範例案例：[自動將保留標籤套用至內容](apply-retention-labels-automatically.md) | [開始使用保留原則和保留標籤](get-started-with-retention.md)|
+|[匯入服務](importing-pst-files-to-office-365.md)| 將 PST 檔案大量匯入到 Exchange Online 信箱，以保留及搜尋電子郵件訊息的法規遵從性或法規需求 | [使用網路上傳將組織的 PST 檔案匯入 Microsoft 365](use-network-upload-to-import-pst-files.md)|
+|[封存第三方資料](archiving-third-party-data.md)| 從社交媒體平臺、立即訊息平臺及檔共同作業平臺，匯入、封存及套用相容性解決方案至協力廠商資料| [協力廠商連接器](archiving-third-party-data.md#third-party-data-connectors)|
+|[非使用中的信箱](inactive-mailboxes-in-office-365.md)| 員工離開組織之後保留信箱內容 | [建立和管理非使用中信箱](create-and-manage-inactive-mailboxes.md)|
+
+## <a name="records-management"></a>記錄管理
+
+若要管理對法律、商務或法規義務的高價值內容，請使用記錄管理：
+
+|功能|它會解決什麼問題？|入門|
+|:------|:------------|---------------------|:----------------------------|
+|[記錄管理](records-management.md)| 單一的電子郵件和檔方案，可管理保留、記錄宣告和處理，以支援內容的完整生命週期。 <br /><br />範例案例：[記錄的處置](disposition.md#disposition-of-records)|[深入瞭解記錄](records.md) |
+

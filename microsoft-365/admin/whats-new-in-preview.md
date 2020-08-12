@@ -21,12 +21,12 @@ description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 11a48ecf78c09c8e597d94821f747bf6ebd7e444
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 84932e13a336d225894683f9e328cb44df8c0e78
+ms.sourcegitcommit: 6319e73b3690b4cf1b7932f2b9f51c2c99e70eaa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46602006"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46635019"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -52,6 +52,17 @@ ms.locfileid: "46602006"
 - [Microsoft 威脅防護的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
 - [SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
+
+## <a name="june-2020"></a>2020 年 6 月
+
+### <a name="keeping-up-with-office-whats-new-management"></a>保持 Office 的新管理功能
+
+在幾個月之前，我們新增了一個設定，可讓您管理[使用者的 Office 應用程式中顯示的新訊息](#office-whats-new-management)。 本月，我們發行的是新的首頁卡片，可協助您快速行動並追蹤您要向組織中的使用者顯示的**新**訊息。
+
+### <a name="docs-training-and-videos-june"></a> (年6月的檔、訓練和影片) 
+
+- [小組快速入門](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+
 
 ## <a name="may-2020"></a>2020 年 5 月
 

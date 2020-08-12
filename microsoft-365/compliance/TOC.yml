@@ -261,20 +261,22 @@
       items:
         - name: 封存協力廠商資料概觀
           href: archiving-third-party-data.md
-        - name: 封存 Bloomberg 郵件資料 (預覽)
-          href: archive-bloomberg-message-data.md
-        - name: 封存 Facebook 資料 (預覽)
-          href: archive-facebook-data-with-sample-connector.md
-        - name: 匯入人力資源資料（預覽）
-          href: import-hr-data.md
-        - name: 封存 ICE 聊天資料 (預覽)
-          href: archive-icechat-data.md
-        - name: 封存 Instant Bloomberg 資料
-          href: archive-instant-bloomberg-data.md
-        - name: 封存 LinkedIn 資料
-          href: archive-linkedin-data.md
-        - name: 封存 Twitter 資料（預覽）
-          href: archive-twitter-data-with-sample-connector.md
+        - name: Microsoft 資料連接器
+          items:
+            - name: Bloomberg Message
+              href: archive-bloomberg-message-data.md
+            - name: Facebook Business
+              href: archive-facebook-data-with-sample-connector.md
+            - name: HR 資料
+              href: import-hr-data.md
+            - name: ICE Chat
+              href: archive-icechat-data.md
+            - name: Instant Bloomberg
+              href: archive-instant-bloomberg-data.md
+            - name: LinkedIn
+              href: archive-linkedin-data.md
+            - name: Twitter
+              href: archive-twitter-data-with-sample-connector.md
         - name: 與合作夥伴配合以封存第三方資料
           href: work-with-partner-to-archive-third-party-data.md
         - name: 搜尋第三方資料

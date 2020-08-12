@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 76cae3cc8f578206790eb2f6caaa96aed24b5a2b
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: d8025f6abe9f1b68dea0856b2a53139a711198c6
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597552"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632126"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -68,11 +68,11 @@ ms.locfileid: "46597552"
 開始使用通訊相容性之前，必須先判斷誰需要查看其通訊。 在原則中，使用者電子郵件地址可識別要監督的個人或人員群組。 這些群組的一些範例是 Microsoft 365 群組、Exchange 型通訊清單、Yammer 社區和 Microsoft 小組頻道。 您也可以從特定的排除群組或群組清單之外的掃描中排除特定的使用者或群組。
 
 >[!IMPORTANT]
->通訊相容性原則所涵蓋的使用者，必須具備 Microsoft 365 E5 相容性授權、具有高級合規性附加元件的 Office 365 企業版 E3 授權，或是包含在 Office 365 企業版 E5 訂閱中。如果您沒有現有的企業版 E5 計畫，而且想要嘗試通訊相容性，您可以[註冊 Office 365 企業版 e5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
+>通訊相容性原則所涵蓋的使用者，必須具備 Microsoft 365 E5 相容性授權、具有高級合規性附加元件的 Office 365 企業版 E3 授權，或是包含在 Office 365 企業版 E5 訂閱中。 如果您沒有現有的企業版 E5 計畫，而且想要嘗試通訊相容性，您可以[註冊 Office 365 企業版 e5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
 
 ## <a name="reviewers"></a>檢閱者
 
-當您建立通訊相容性原則時，必須決定誰會審核使用者的郵件。 在原則中，使用者電子郵件地址可識別人員或群組，以查看已監督的通訊。 AAll 檢閱者必須有裝載于 Exchange Online 上的信箱，且必須指派給*通訊合規性分析*或*通訊相容性調查*角色。 「分析員」或「調查人員」) 的檢閱者也必須具有「*通訊規範案例管理*」角色指派的 (。 當檢閱者新增至原則時，會自動收到一封電子郵件，通知他們對原則的指派，並提供審閱程式相關資訊的連結。
+當您建立通訊相容性原則時，必須決定誰會審核使用者的郵件。 在原則中，使用者電子郵件地址可識別人員或群組，以查看已監督的通訊。 所有檢閱者都必須在 Exchange Online 上裝載信箱，而且必須指派給*通訊相容性分析*或*通訊相容性調查*角色。 「分析員」或「調查人員」) 的檢閱者也必須具有「*通訊規範案例管理*」角色指派的 (。 當檢閱者新增至原則時，會自動收到一封電子郵件，通知他們對原則的指派，並提供審閱程式相關資訊的連結。
 
 ## <a name="groups-for-supervised-users-and-reviewers"></a>監督的使用者和檢閱者群組
 
@@ -107,9 +107,9 @@ ms.locfileid: "46597552"
 
 - **協力廠商來源**：您可以掃描來自協力廠商來源的通訊，以用於將資料匯入至 Microsoft 365 組織中的信箱。 連接器支援下列協力廠商資源：
 
-    - [立即 Bloomberg](archive-instant-bloomberg-data.md)
-    - [Bloomberg 郵件](archive-bloomberg-message-data.md)
-    - [ICE 聊天](archive-icechat-data.md)
+    - [Instant Bloomberg](archive-instant-bloomberg-data.md)
+    - [Bloomberg Message](archive-bloomberg-message-data.md)
+    - [ICE Chat](archive-icechat-data.md)
 
 您必須先為 Microsoft 365 組織設定協力廠商連接器，才能將連接器指派給通訊相容性原則。 通訊相容性原則嚮導的 [ **Third-Party 來源**] 區段只會顯示目前設定的協力廠商連接器。
 
@@ -246,13 +246,13 @@ ms.locfileid: "46597552"
 ```HTML
 <!DOCTYPE html>
 <html>
-<body>
-<h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
-<p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
-<p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
-<p>Thank you,</p>
-<p><em>Human Resources</em></p>
-</body>
+    <body>
+        <h2>Action Required: Contoso Employee Code of Conduct Policy Training</h2>
+        <p>A recent message you've sent has generated a policy alert for the Contoso Employee <a href='https://www.contoso.com'>Code of Conduct Policy</a>.</p>
+        <p>You are required to attend the Contoso Employee Code of Conduct <a href='https://www.contoso.com'>training</a> within the next 14 days. Please contact <a href='mailto:hr@contoso.com'>Human Resources</a> with any questions about this training request.</p>
+        <p>Thank you,</p>
+        <p><em>Human Resources</em></p>
+    </body>
 </html>
 ```
 
@@ -268,7 +268,7 @@ ms.locfileid: "46597552"
 | **Date** | 組織中的使用者傳送或接收郵件的日期。 |
 | **檔類別** | 以郵件類型為基礎的郵件類別（*郵件*或*附件*）。 |
 | **具有附件** | 附件存在於郵件中。 |
-| **專案類別** | 根據郵件類型、電子郵件、Microsoft 小組聊天、Bloonmberg 等的郵件來源。如需一般專案類型和郵件類別的詳細資訊，請參閱[專案類型和郵件類別](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes)。 |
+| **專案類別** | 根據郵件類型、電子郵件、Microsoft 小組聊天、Bloomberg 等的郵件來源。如需一般專案類型和郵件類別的詳細資訊，請參閱[專案類型和郵件類別](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes)。 |
 | **收件者網域** | 郵件已傳送至的網域。 根據預設，此網域通常是您的 Microsoft 365 訂閱網域。 |
 | **收件者** | 郵件已傳送至的使用者。 |
 | **Sender** | 傳送郵件的人員。 |
@@ -321,7 +321,7 @@ ms.locfileid: "46597552"
 [**報告**] 儀表板包含下列報告構件：
 
 - **最近的原則相符**：顯示隨時間變化的使用中原則的相符數目。
-- **依原則解析的專案**：顯示隨原則所進行的原則相符警示數目。
+- **依原則解析的專案**：顯示隨時間原則所解析的原則符合警示數目。
 - **具有大多數原則的使用者**：顯示使用者 (或匿名的使用者名稱) ，以及指定期間內的原則相符數目。
 - **具有最多相符的原則**：顯示指定期間內的原則及相符專案數目（排名為最高到最低）。
 

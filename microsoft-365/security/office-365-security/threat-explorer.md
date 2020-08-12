@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42cb7d2ef4fd04875c4bedc5f783e87cc99c13f5
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 635f7f32d16f18f49aa1920d82efd77bf27dc328
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577515"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641638"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -207,6 +207,20 @@ ms.locfileid: "46577515"
 
    > [!NOTE]
    > 在 [URL 飛入] 對話方塊中，會移除電子郵件上的篩選，以顯示您環境中 URL 公開的完整視圖。 這能讓您在總管中篩選出擔心的電子郵件訊息，找出具有潛在威脅的特定 URL，然後了解暴露於環境 (經由 URL 詳細資料對話方塊) 中的 URL，而不需要將 URL 篩選新增至總管檢視本身。
+
+
+**不同按一下 verdicts 的轉譯**
+
+在電子郵件或 URL flyouts 中，按一下上方和篩選體驗內，您會在搜尋體驗的一部分看到不同的按一下值。 以下是按一下 Verdicts 及其轉譯的可能值：
+
+- **無**：我們無法捕獲 URL 的判定。 使用者可能已按一下透過 URL。
+- **允許**：允許使用者流覽至 URL。
+- 已**封鎖**：已封鎖使用者流覽至 URL。
+- **擱置的判定**：使用者已呈現「引爆擱置」頁面。
+- **封鎖已封鎖**：已封鎖使用者流覽至 URL;不過，使用者 overrode 區塊以流覽至 URL。
+- **擱置的判定略過**：使用者呈現的是引爆頁面;不過，使用者 overrode 頁面以流覽至 URL。
+- **錯誤**：使用者已呈現錯誤頁面。 這也可能表示在捕獲判定時發生錯誤。
+- **失敗**：捕獲判定時，發生未知的例外狀況。 使用者可能已按一下透過 URL。 
 
 ## <a name="review-email-messages-reported-by-users"></a>檢閱使用者回報的電子郵件訊息
 
