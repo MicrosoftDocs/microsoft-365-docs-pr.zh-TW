@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 適用於系統管理員：了解如何使用網路上傳將多個 PST 檔案大量匯入 Microsoft 365 中的使用者信箱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b7c8621859d04f44b58719a86b4c159f8379b961
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 14b70c0ab219f1d6153ceef601e3b4b5b4c76d8a
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127330"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641628"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>使用網路上傳將組織的 PST 檔案匯入 Microsoft 365
 
@@ -117,16 +117,16 @@ ms.locfileid: "45127330"
     
     ![在 [匯入資料] 頁面上複製 SAS URL 並下載 AzCopy 工具](../media/74411014-ec4b-4e25-9065-404c934cce17.png)
   
-    a. 在步驟 2，按一下 [顯示網路上傳 SAS URL]****。 顯示 SAS URL 後，按一下 [複製至剪貼簿]**** 然後貼上，並儲存到檔案中以便日後存取。
+    1. 在步驟 2，按一下 [顯示網路上傳 SAS URL]****。 顯示 SAS URL 後，按一下 [複製至剪貼簿]**** 然後貼上，並儲存到檔案中以便日後存取。
     
-    b. 在步驟 3，按一下 **[下載 Azure AzCopy]** 以下載並安裝 AzCopy 工具。 在快顯視窗中，按一下 [執行]**** 來安裝 AzCopy。 
+    1. 在步驟 3，按一下 **[下載 Azure AzCopy]** 以下載並安裝 AzCopy 工具。 在快顯視窗中，按一下 [執行]**** 來安裝 AzCopy。 
     
-> [!NOTE]
-> 您可以讓 [匯入資料]**** 頁面保持開啟 (以防您需要再次複製 SAS URL) 或按一下 [取消]**** 來關閉。 
+   > [!NOTE]
+   > 您可以讓 [匯入資料]**** 頁面保持開啟 (以防您需要再次複製 SAS URL) 或按一下 [取消]**** 來關閉。 
  
 ## <a name="step-2-upload-your-pst-files-to-office-365"></a>步驟 2：將您的 PST 檔案上傳至 Office 365
 
-現在您已準備好使用 AzCopy.exe 工具將 PST 檔案上傳至 Office365。 此工具會上傳並儲存這些檔案至 Microsoft 雲端內的 Azure 儲存體位置。 如之前所說明，上傳 PST 檔案的 Azure 儲存體位置與組織所在的地區性 Microsoft 資料中心是同一個。 若要完成此步驟，PST 檔案必須位於組織的檔案共用內或檔案伺服器中。 這就是此程序中所謂的來源目錄。 每次執行 AzCopy 工具時，您可指定不同的來源目錄。 
+現在您已準備好使用 AzCopy.exe 工具將 PST 檔案上傳至 Office365。 此工具會上傳並儲存這些檔案至 Microsoft 雲端內的 Azure 儲存體位置。 如之前所說明，上傳 PST 檔案的 Azure 儲存位置與組織所在的地區性 Microsoft 資料中心是同一個。 若要完成此步驟，PST 檔案必須位於組織的檔案共用內或檔案伺服器中。 這就是此程序中所謂的來源目錄。 每次執行 AzCopy 工具時，您可指定不同的來源目錄。 
 
 > [!NOTE]
 > 如之前所述，在步驟 2 中上傳到 Azure 儲存位置的每個 PST 檔案都不應超過 20 GB。 大於 20 GB 的 PST 檔案可能會影響您在步驟 6 中啟動的 PST 匯入程序效能。
@@ -146,7 +146,7 @@ ms.locfileid: "45127330"
  
     下表說明了 AzCopy.exe 參數與其需要的值。 您在先前步驟中所取得的資訊，會在這些參數內的值中使用。
     
-    |**參數**|**描述**|**範例**|
+    | 參數 | 描述 | 範例 |
     |:-----|:-----|:-----|
     | `/Source:` <br/> |指定貴組織內的來源目錄，而其包含將上傳至 Office365 的 PST 檔案。  <br/> 請務必使用雙引號 (" ") 括住此參數的值。  <br/> | `/Source:"\\FILESERVER01\PSTs"` <br/> |
     | `/Dest:` <br/> |指定您在步驟 1 中所取得的 SAS URL。  <br/> 請務必使用雙引號 (" ") 括住此參數的值。<br/><br/>**注意事項：** 如果您在指令碼或批次檔案中使用 SAS URL，必須注意需要逸出的特定字元。 例如，您必須將 `%` 變更為 `%%`，並且將 `&` 變更為 `^&`。<br/><br/>**秘訣：**(可選) 您可以在 Azure 儲存體位置指定子資料夾以上傳 PST 檔案。 您可以透過在 SAS URL 中新增子資料夾位置 (在 “ingestiondata” 之後) 來執行此操作。 第一個範例未指定子資料夾。 這表示 PST 將會上傳到 Azure 儲存體位置的根目錄 (名為 *ingestiondata*)。 第二個範例會將 PST 檔案上傳到 Azure 儲存體位置的根目錄的子資料夾中 (名為 *PSTFiles*)。  <br/> | `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> 或  <br/>  `/Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
@@ -208,7 +208,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
 
 2. 開啟或儲存 CSV 檔案到您的本機電腦。下列範例顯示了一個已完成的 PST 匯入對應檔案 (在「記事本」中開啟)。若使用 Microsoft Excel 來編輯 CSV 檔案會較為簡單。
 
-    ```text
+    ```console
     Workload,FilePath,Name,Mailbox,IsArchive,TargetRootFolder,ContentCodePage,SPFileContainer,SPManifestContainer,SPSiteUrl
     Exchange,,annb.pst,annb@contoso.onmicrosoft.com,FALSE,/,,,,
     Exchange,,annb_archive.pst,annb@contoso.onmicrosoft.com,TRUE,,,,,
@@ -229,7 +229,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
 
  3. 使用下列表格的資訊，將所需的資訊填入 CSV 檔案。
 
-    |**參數**|**描述**|**範例**|
+    | 參數 | 描述 | 範例 |
     |:-----|:-----|:-----|
     | `Workload` <br/> |指定資料將會匯入至哪個服務。 若要將 PST 檔案匯入至使用者信箱，請使用 `Exchange`。  <br/> | `Exchange` <br/> |
     | `FilePath` <br/> |指定在 Azure 儲存體位置的資料夾位置，也就是在步驟 2 中上傳 PST 檔案的位置。  <br/> 若您並未在步驟 2 的 `/Dest:` 參數中加入選擇性子資料夾名稱，請在 CSV 檔案將此參數保留空白。 如果您包含子資料夾名稱，則請於此參數內指定 (請參閱第二個範例)。 此參數值區分大小寫。  <br/> 或者，「不要」** 在 `FilePath` 參數值中包含 "ingestiondata"。  <br/><br/> **重要：** 如果在步驟 2 的 `/Dest:` 參數的 SAS URL 中包含可選的子資料夾名稱，則檔案路徑名稱的大小寫必須與您使用的大小寫相同。 例如，如果您在步驟 2 中使用 `PSTFiles` 作為子資料夾名稱，然後在 CSV 檔案的 `FilePath` 參數中使用 `pstfiles`，則 PST檔案的匯入將失敗。 請務必在這兩個案例中使用相同的大小寫。  <br/> |(保留空白)  <br/> 或  <br/>  `PSTFiles` <br/> |
@@ -304,19 +304,19 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
     
     ![您可以修剪 PST 檔案中的資料或匯入所有資料](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
-3. 執行下列其中一項動作：
+3. 執行下列其中一項：
     
-    a. 若要修剪您匯入的資料，請按一下 [是，我要在匯入前先篩選]****。
+   1. 若要修剪您匯入的資料，請按一下 [是，我要在匯入前先篩選]****。
     
-    如需篩選 PST 檔案中的資料，然後開始匯入工作的逐步說明，請參閱[將 PST 檔案匯入 Office 365 時篩選資料](filter-data-when-importing-pst-files.md)。
+      如需篩選 PST 檔案中的資料，然後開始匯入工作的逐步說明，請參閱[將 PST 檔案匯入 Office 365 時篩選資料](filter-data-when-importing-pst-files.md)。
     
-    或
+      或者
     
-    b. 若要匯入 PST 檔案中的所有資料，請按一下 [否，我想要匯入所有項目]****，再按一下 [下一步]****。
+   1. 若要匯入 PST 檔案中的所有資料，請按一下 [否，我想要匯入所有項目]****，再按一下 [下一步]****。
     
 4. 如果選擇匯入所有資料，請按一下 [匯入資料]**** 以開始匯入工作。 
     
-    匯入工作的狀態會顯示在 **[匯入 PST 檔案]** 頁面。 按一下 ![重新整理圖示](../media/O365-MDM-Policy-RefreshIcon.gif) [重新整理]**** 以更新 [狀態] **** 欄位中顯示的狀態資訊。 按一下 [匯入工作] 以顯示狀態彈出頁面，這會顯示匯入的每個 PST 檔案的狀態資訊。 
+   匯入工作的狀態會顯示在 **[匯入 PST 檔案]** 頁面。 按一下 ![重新整理圖示](../media/O365-MDM-Policy-RefreshIcon.gif) [重新整理]**** 以更新 [狀態] **** 欄位中顯示的狀態資訊。 按一下 [匯入工作] 以顯示狀態彈出頁面，這會顯示匯入的每個 PST 檔案的狀態資訊。 
 
 
   
@@ -346,7 +346,7 @@ Microsoft Azure 儲存體總管位於 [預覽] 中。
   
 - 以下是在步驟 1 所取得的共用存取簽章(SAS) URL 範例。 此範例也包含您在 AzCopy.exe 工具中，為了上傳 PST 檔案所執行命令的語法。 請務必採取預防措施來保護 SAS URL，就如同您保護密碼或其他安全性相關的資訊一樣。
 
-    ```text
+    ```console
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D
 
     AzCopy.exe /Source:<Location of PST files> /Dest:<SAS URL> /V:<Log file location> /Y
