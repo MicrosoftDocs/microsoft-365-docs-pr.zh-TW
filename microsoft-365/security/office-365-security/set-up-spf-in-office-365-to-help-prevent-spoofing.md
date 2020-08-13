@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何更新網域名稱服務 (DNS) 記錄，以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。
-ms.openlocfilehash: 93356799967932813252e7db27e7ac796e46cbc6
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936934"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632136"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>設定 SPF 以協助防止詐騙
 
@@ -61,8 +61,8 @@ ms.locfileid: "44936934"
 
 1. 請確定您熟悉下表中的 SPF 語法。
 
-   ||**如果您正在使用...**|**對客戶通用？**|**新增此...**|
-   |:-----|:-----|:-----|:-----|
+   ||如果您正在使用...|對客戶通用？|新增此...|
+   |---|---|---|---|
    |1|任何電子郵件系統 (必要項)|通用。以此值開頭的所有 SPF TXT 記錄|v=spf1|
    |2|Exchange Online|通用|include:spf.protection.outlook.com|
    |3|僅限 Exchange Online 專用|不通用|ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com|
@@ -88,6 +88,16 @@ ms.locfileid: "44936934"
 3. 一旦您已形成 SPF TXT 記錄，您需要在 DNS 中更新記錄。 您的網域只能有一個 SPF TXT 記錄。 如果存在 SPF TXT 記錄，請不要新增新的記錄，而是必須更新現有的記錄。 移至[建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)，然後按一下您的 DNS 主機的連結。
 
 4. 測試您的 SPF TXT 記錄。
+
+## <a name="how-to-handle-subdomains"></a>如何處理子網域？
+
+請注意，你必須為每個子網域建立個別記錄，因為子網域無法獲取最上層網域的 SPF 記錄。
+
+每個網域和子網域都需要額外的通配符 SPF 記錄（`*.`），以免攻擊者傳送聲稱為來自不存在之子網域的電子郵件。 例如：
+
+```console
+*.subdomain.contoso.com. IN TXT "v=spf1 –all"
+```
 
 ## <a name="more-information-about-spf"></a>關於 SPF 的詳細資訊
 
