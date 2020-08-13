@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0fd6000f4d3a4b9fafb0eede74cbbe4e6c3d494e
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 141d2589c5e3c5d8746ba58de01dd63ef0f0c576
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899240"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649364"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -38,7 +38,7 @@ ms.locfileid: "44899240"
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
-| `DeviceId` | 字串 | 服務中電腦的唯一識別碼 |
+| `DeviceId` | string | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
 | `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
 | `NetworkAdapterName` | string | 網路介面卡的名稱 |
@@ -46,7 +46,7 @@ ms.locfileid: "44899240"
 | `NetworkAdapterType` | string | 網路介面卡類型。 如需可能的值，請參閱[this 列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
 | `NetworkAdapterStatus` | string | 網路介面卡的運作狀態。 如需可能的值，請參閱[this 列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
 | `TunnelType` | string | 隧道通訊協定，如果此介面是用於此用途，例如6to4、Teredo、ISATAP、PPTP、SSTP 和 SSH |
-| `ConnectedNetworks` | string | 連接到配接器的網路。 每個 JSON 陣列都包含網路名稱、類別（public、private 或 domain）、描述，以及指出其是否已公開連接到網際網路的標誌。 |
+| `ConnectedNetworks` | string | 連接到配接器的網路。 每個 JSON 陣列都包含網路名稱、類別 (public、private 或 domain) 、描述及表明其是否已公開連接到網際網路的標誌。 |
 | `DnsAddresses` | string | JSON 陣列格式的 DNS 伺服器位址 |
 | `IPv4Dhcp` | string | DHCP 伺服器的 IPv4 位址 |
 | `IPv6Dhcp` | string | DHCP 伺服器的 IPv6 位址 |
@@ -57,6 +57,6 @@ ms.locfileid: "44899240"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

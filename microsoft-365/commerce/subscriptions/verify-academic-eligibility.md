@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: 瞭解如何驗證您的學校是否符合 Microsoft 365 教育版學術的定價。
 ms.date: 07/21/2020
-ms.openlocfilehash: 948d001315c44e288d9fe3e363ec6e1ddeb8ff32
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 0bfb779880b94e309e266d8f57ed0a25b749e1f2
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560700"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653722"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>驗證 Microsoft 365 教育版訂閱的學術資格
 
@@ -59,7 +59,7 @@ ms.locfileid: "46560700"
 在您有 Microsoft 365 教育版試用版之後，您可以隨時查看學校的學術資格狀態。
 
 1. 移至[Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)。
-2. 在首頁上，向下滾動並找到**帳單**卡。
+2. 在首頁上，尋找**帳單**卡。
     **帳單**卡會指出驗證程式的狀態。 這張卡片顯示下列其中一種狀態：「核准」、「擱置」、「拒絕」或「新增您的網域」。
 
     > [!NOTE]

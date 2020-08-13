@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0cb275584acfc2ea0d2a2969694ee189f48a875d
-ms.sourcegitcommit: 11218af1d792af297b4280ca5975d139d2bbe350
+ms.openlocfilehash: 308337f806d54f1beb7ae6112b2ed883707d4513
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45046039"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649292"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解進階搜捕結構描述
 
@@ -81,5 +81,5 @@ ms.locfileid: "45046039"
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用查詢結果工作](advanced-hunting-query-results.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

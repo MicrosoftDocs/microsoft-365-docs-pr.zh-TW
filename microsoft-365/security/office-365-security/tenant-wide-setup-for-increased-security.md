@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: 本主題將針對影響 Microsoft 365 環境安全性的全租使用者設定，引導您進行建議的設定。
-ms.openlocfilehash: 5e02a871385deb2bae9e788eacd772c08af1d972
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 821221e9a7602b7eaaf6850284468abd486cf501
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588049"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653554"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>設定您的 Microsoft 365 租使用者以提高安全性
 
@@ -38,29 +38,31 @@ Office 365 安全分數會根據您的定期活動和安全性設定來分析貴
 
 Microsoft 365 安全性中心包含的功能能夠保護您的環境。 同時，您也可以使用其中的報告和儀表板來進行監控並採取行動。 其中某些區域擁有預設的原則設定， 某些區域則不包含預設原則或規則。 請在威脅管理底下瀏覽以下原則，來調整威脅管理設定以營造更安全的環境。
 
-||||
+****
+
+|範圍|包含預設原則|建議|
 |---|---|---|
-|**適用範圍**|**包含預設原則**|**建議**|
 |**防網路釣魚**|是|如果您有自訂網域，請設定預設的反網路釣魚原則，以保護您最有價值之使用者的電子郵件帳戶，例如 CEO，並保護您的網域。 [在 office 365 中查看反網路釣魚原則](set-up-anti-phishing-policies.md)，並參閱[設定 EOP 中的反網路釣魚原則](configure-anti-phishing-policies-eop.md)，或[設定 Office 365 中的 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。|
 |**反惡意程式碼引擎**|是| 編輯預設原則： <br/> &ensp;&ensp;* 常見附件類型篩選—選取 [開啟] <br/><br/> 您也可以建立自訂的惡意程式碼篩選原則，並將其套用至貴組織中的指定使用者、群組或網域。 <br/><br/> 詳細資訊： <br/> &ensp;&ensp;* [反惡意程式碼保護](anti-malware-protection.md) <br/> &ensp;&ensp;* [設定反惡意程式碼原則](configure-anti-malware-policies.md)|
-|**ATP 安全附件**|否| 在 [安全附件] 的主要頁面上，透過核取方塊來保護 SharePoint、OneDrive 和 Microsoft 小組中的檔案： <br/> &ensp;&ensp;* 開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP <br/><br/> 使用這些設定來新增新的安全附件原則： <br/> &ensp;&ensp;* 封鎖-封鎖目前和未來的電子郵件和附件偵測到的惡意程式碼（選擇此選項） <br/> &ensp;&ensp;* 啟用重新導向-（請選取此方塊並輸入電子郵件地址，例如系統管理員或隔離帳戶） <br/> &ensp;&ensp;* 如果惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍（核取方塊）。 <br/> &ensp;&ensp;* 適用于-收件者網域是（選取您的網域） <br/><br/>詳細資訊：[設定 Office 365 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)|
-|**ATP 安全連結**|是| 新增此設定至整個組織的預設原則： <br/> &ensp;&ensp;* 在下列專案中使用安全連結： Microsoft 365 應用程式（適用于 enterprise、Office for iOS 和 Android （選取這個選項）。 <br/><br/>特定收件者的建議原則： <br/> &ensp;&ensp;URLs * 當使用者按一下連結時，將會重新寫入並檢查已知惡意連結的清單（選取此選項）。 <br/> &ensp;&ensp;* 使用安全附件掃描可下載的內容（核取方塊）。 <br/> &ensp;&ensp;* 適用于-收件者網域是（選取您的網域）。 <br/><br/> 詳細資訊： [Office 365 ATP 安全連結](atp-safe-links.md)。|
+|**ATP 安全附件**|否| 在 [安全附件] 的主要頁面上，透過核取方塊來保護 SharePoint、OneDrive 和 Microsoft 小組中的檔案： <br/> &ensp;&ensp;* 開啟 SharePoint、OneDrive 和 Microsoft 小組的 ATP <br/><br/> 使用這些設定來新增新的安全附件原則： <br/> &ensp;&ensp;* 封鎖-封鎖目前和未來的電子郵件和附件偵測到的惡意軟體 (選擇此選項)  <br/> &ensp;&ensp;* 啟用重新導向— (請選取此方塊並輸入電子郵件地址，例如系統管理員或隔離帳戶)  <br/> &ensp;&ensp;* 如果惡意程式碼掃描附件超時或 (發生錯誤，請套用上述選取範圍)  <br/> &ensp;&ensp;* 套用至 [收件者網域為 (] 選取您的網域)  <br/><br/>詳細資訊： [設定 Office 365 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)|
+|**ATP 安全連結**|是| 新增此設定至整個組織的預設原則： <br/> &ensp;&ensp;* 使用下列安全連結： Microsoft 365 應用程式（適用于 enterprise，Office，適用于 iOS 和 Android (）選取此選項) 。 <br/><br/>特定收件者的建議原則： <br/> &ensp;&ensp;URLs * 當使用者按一下連結時，將會重新寫入並檢查已知惡意連結的清單 (選取此選項) 。 <br/> &ensp;&ensp;* 使用安全附件以掃描可下載的內容 (請) 選取此方塊。 <br/> &ensp;&ensp;* 已套用至 [收件者網域] (選取您的網域) 。 <br/><br/> 詳細資訊： [Office 365 ATP 安全連結](atp-safe-links.md)。|
 |**反垃圾郵件 (郵件篩選)**|是| 想要處理的情況： <br/> &ensp;&ensp;* 垃圾郵件太多-選擇 [自訂設定]，然後編輯預設垃圾郵件篩選原則。 <br/> &ensp;&ensp;* 欺騙性智慧-查看哄騙您網域的寄件者。 封鎖或允許這些寄件者。 <br/><br/>詳細資訊： [Microsoft 365 電子郵件 Anti-Spam 保護](anti-spam-protection.md)。|
-|***電子郵件驗證***|是|電子郵件驗證使用網域名稱系統 (DNS) 將可驗證的資訊新增到某電子郵件寄件者的電子郵件。 Microsoft 365 針對其預設網域（onmicrosoft.com）設定電子郵件驗證，但 Microsoft 365 系統管理員也可以使用自訂網域的電子郵件驗證。 使用的三種驗證方法： <br/><br/> &ensp;&ensp;* 寄件者原則架構（或 SPF）。<br/>&ensp;&ensp;&ensp;&ensp;-如需安裝，請參閱[在 Microsoft 365 中設定 SPF 以協助防止欺騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 <br/> &ensp;&ensp;* DomainKeys 識別的郵件（DKIM）。 <br/> &ensp;&ensp;&ensp;&ensp;-請參閱[USE DKIM 以驗證從您的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)。 <br/>&ensp;&ensp;&ensp;&ensp;- 設定完成 DKIM 後，請在安全性中心中啟用。<br/> &ensp;&ensp;* 以網域為基礎的郵件驗證、報告和符合性（DMARC）。 <br/> &ensp;&ensp;&ensp;&ensp;-適用于 DMARC 安裝程式[使用 DMARC 驗證 Microsoft 365 中的電子郵件](use-dmarc-to-validate-email.md)。|
+|***電子郵件驗證***|是|電子郵件驗證使用網域名稱系統 (DNS) 將可驗證的資訊新增到某電子郵件寄件者的電子郵件。 Microsoft 365 會為其預設網域 (onmicrosoft.com) 設定電子郵件驗證，但 Microsoft 365 系統管理員也可以使用自訂網域的電子郵件驗證。 使用的三種驗證方法： <br/><br/> &ensp;&ensp;* 寄件者原則框架 (或 SPF) 。<br/>&ensp;&ensp;&ensp;&ensp;-如需安裝，請參閱 [在 Microsoft 365 中設定 SPF 以協助防止欺騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 <br/> &ensp;&ensp;* DomainKeys 識別的郵件 (DKIM) 。 <br/> &ensp;&ensp;&ensp;&ensp;-請參閱 [USE DKIM 以驗證從您的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)。 <br/>&ensp;&ensp;&ensp;&ensp;- 設定完成 DKIM 後，請在安全性中心中啟用。<br/> &ensp;&ensp;* 以網域為基礎的郵件驗證、報告及符合性 (DMARC) 。 <br/> &ensp;&ensp;&ensp;&ensp;-適用于 DMARC 安裝程式 [使用 DMARC 驗證 Microsoft 365 中的電子郵件](use-dmarc-to-validate-email.md)。|
 |
 
 > [!NOTE]
-> 在非標準部署的 SPF、混合式部署及疑難排解中： [Microsoft 365 如何使用寄件者原則架構（SPF）來防止欺騙](how-office-365-uses-spf-to-prevent-spoofing.md)。
+> 在非標準部署的 SPF、混合式部署及疑難排解中： [Microsoft 365 如何使用寄件者原則框架 (SPF) 以避免欺騙](how-office-365-uses-spf-to-prevent-spoofing.md)。
 
 ## <a name="view-dashboards-and-reports-in-the-security-and-compliance-centers"></a>請檢視安全性與合規性中心的儀表板和報告
 
 請瀏覽以下報告與儀表板來深入了解您環境的健康狀況。 若您的組織使用 Office 365 服務，這些報告中的資料會變得更豐富。 現在，請先熟悉您可以監控與採取動作的項目。 如需詳細資訊，請參閱：[Microsoft 365 安全性與合規性中心的報告](../../compliance/reports-in-security-and-compliance.md)。
 
-|||
+****
+
+|儀表板|描述|
 |---|---|
-|**儀表板**|**描述**|
 |[威脅管理儀表板](security-dashboard.md)|在安全性中心的 **[威脅管理]** 區段中，使用此儀表板來查看已經處理過的威脅，並將它視為一項實用工具，以此向商業決策者報告威脅調查和回應功能做了哪些舉動來保護貴企業。|
-|[威脅總管 (或即時偵測)](threat-explorer.md)|此功能同樣位於安全性中心的 **[威脅管理]** 區段中。 如果您要調查或遭受對租使用者的攻擊，請使用 Explorer （或即時偵測）來分析威脅。 總管 (或即時偵測) 能顯示隨時間受到的攻擊量，而您可以依照威脅系列、攻擊者的基礎結構等項目來分析這份資料。 您也可以將任何可疑的電子郵件標記為 [事件清單]。|
+|[威脅總管 (或即時偵測)](threat-explorer.md)|此功能同樣位於安全性中心的 **[威脅管理]** 區段中。 如果您要調查或遭受對租使用者的攻擊，請使用 Explorer (或即時偵測) 來分析威脅。 總管 (或即時偵測) 能顯示隨時間受到的攻擊量，而您可以依照威脅系列、攻擊者的基礎結構等項目來分析這份資料。 您也可以將任何可疑的電子郵件標記為 [事件清單]。|
 |報告 - 儀表板|在安全性中心的 **[報告]** 區段中，檢視您的 SharePoint Online 和 Exchange Online 組織的報告。 您也可以從 **[檢視報告]** 頁面存取 Azure Active Directory (Azure AD) 使用者登入報告、使用者活動報告和 Azure AD 稽核記錄。|
 |
 
@@ -70,11 +72,12 @@ Microsoft 365 安全性中心包含的功能能夠保護您的環境。 同時�
 
 Exchange 系統管理中心中有許多安全性與保護控制項同時也包含在安全性中心中。 您不需要在這兩個地方都進行設定。 以下是建議的設定。
 
-||||
+****
+
+|範圍|包含預設原則|建議|
 |---|---|---|
-|**適用範圍**|**包含預設原則**|**建議**|
-|**郵件流程** (郵件流程規則，又稱為傳輸規則)|否|透過封鎖可執行檔案類型和包含宏的 Office 檔案類型，新增郵件流程規則，以協助抵禦勒索軟體。 如需詳細資訊，請參閱[在 Exchange Online 中使用郵件流程規則檢查郵件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。 <br/><br/> 請參閱下列其他主題： <br/>* [防護勒索軟體](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Office 365 中的惡意程式碼和勒索軟體防護](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [從 Office 365 復原勒索軟體攻擊](recover-from-ransomware.md) <br/><br/> 建立郵件流程規則來防止郵件自動轉寄至外部網域。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) (英文)。 <br/><br/> 其他資訊：[Exchange Online 中的郵件流程規則 (傳輸規則)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
-|**啟用新式驗證**|否|新式驗證是使用多重要素驗證（MFA）的必要條件。 MFA 是保護雲端資源存取權 (包括電子郵件) 的建議選項。 <br/><br/> 請參閱這些主題： <br/>* [啟用或停用 Exchange Online 中的新式驗證](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [商務用 Skype Online：針對新式驗證啟用租使用者](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Office 2016 用戶端、SharePoint Online 和商務用 OneDrive 預設會啟用新式驗證。 <br/><br/> 其他資訊：[Office 2013 和 Office 2016 用戶端應用程式的新式驗證運作方式](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
+|**郵件流程** (郵件流程規則，又稱為傳輸規則)|否|透過封鎖可執行檔案類型和包含宏的 Office 檔案類型，新增郵件流程規則，以協助抵禦勒索軟體。 如需詳細資訊，請參閱 [在 Exchange Online 中使用郵件流程規則檢查郵件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。 <br/><br/> 請參閱下列其他主題： <br/>* [防護勒索軟體](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Office 365 中的惡意程式碼和勒索軟體防護](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [從 Office 365 復原勒索軟體攻擊](recover-from-ransomware.md) <br/><br/> 建立郵件流程規則來防止郵件自動轉寄至外部網域。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) (英文)。 <br/><br/> 其他資訊：[Exchange Online 中的郵件流程規則 (傳輸規則)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
+|**啟用新式驗證**|否|新式驗證是使用多重要素驗證 (MFA) 的必要條件。 MFA 是保護雲端資源存取權 (包括電子郵件) 的建議選項。 <br/><br/> 請參閱這些主題： <br/>* [啟用或停用 Exchange Online 中的新式驗證](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [商務用 Skype Online：針對新式驗證啟用租使用者](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Office 2016 用戶端、SharePoint Online 和商務用 OneDrive 預設會啟用新式驗證。 <br/><br/> 其他資訊：[Office 2013 和 Office 2016 用戶端應用程式的新式驗證運作方式](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>設定 SharePoint 系統管理中心的全租用戶共用原則
@@ -85,10 +88,11 @@ Microsoft 建議您從基礎保護開始，逐漸提高 SharePoint 小組網站�
 
 為了支援基礎保護達到目標，請依以下建議設定全租用戶共用原則。 請為個別網站設定比此全租用戶原則更嚴格 (而非更寬鬆) 的共用設定。
 
-||||
+****
+
+|範圍|包含預設原則|建議|
 |---|---|---|
-|**適用範圍**|**包含預設原則**|**建議**|
-|**共用** (SharePoint Online 和商務用 OneDrive)|是|外部共用預設為啟用狀態。 這些為建議設定： <br/>* 允許與已驗證的外部使用者共用，並使用匿名存取連結（預設設定）。 <br/> * 匿名存取連結會在數天后到期。 如有需要，請輸入一個數字，例如 30 天。 <br/>* 預設連結類型-選取 [內部] （僅限組織中的人員）。 想要以匿名連結進行共用的使用者必須從共用功能表中選擇此選項。 <br/><br/> 其他資訊：[外部共用概觀](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
+|**共用** (SharePoint Online 和商務用 OneDrive)|是|外部共用預設為啟用狀態。 這些為建議設定： <br/>* 允許共用至已驗證的外部使用者，並使用匿名存取連結 (預設設定) 。 <br/> * 匿名存取連結會在數天后到期。 如有需要，請輸入一個數字，例如 30 天。 <br/>* 預設連結類型-選取 [只有) 組織中的內部 (人員]。 想要以匿名連結進行共用的使用者必須從共用功能表中選擇此選項。 <br/><br/> 其他資訊：[外部共用概觀](https://docs.microsoft.com/sharepoint/external-sharing-overview)|
 |
 
 SharePoint 系統管理中心與商務用 OneDrive 系統管理中心包含同樣的設定。 任一系統管理中心內的設定都適用於兩者。
@@ -111,7 +115,7 @@ SharePoint 系統管理中心與商務用 OneDrive 系統管理中心包含同�
 
 在此同時，請使用下列其中一項方法，來為 SharePoint Online 和商務用 OneDrive 完成這項作業：
 
-- 使用 PowerShell，請參閱[封鎖未使用新式驗證（ADAL）的應用程式](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block)。
+- 使用 PowerShell，請參閱 [封鎖未使用新式驗證的應用程式 (ADAL) ](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block)。
 
 - 請在 SharePoint 系統管理中心內的 [裝置存取權] 頁面 - [控制不使用新式驗證的應用程式存取權] 進行此設定。 選擇 [封鎖]。
 

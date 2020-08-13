@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在安全性與合規性中心使用郵件追蹤，以了解郵件發生什麼情況。
-ms.openlocfilehash: cb24b9a5f5540f1858ac17b5b4ec3de0c77b47d1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 7c0b87b1bb882714692a04b857bfc054305dee8c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819337"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653638"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件追蹤
 
@@ -26,10 +26,13 @@ ms.locfileid: "44819337"
 
 安全性與合規性中心內的郵件追蹤可追蹤透過 Exchange Online 組織收發的電子郵件。 您可以判斷服務是否已經收到、拒絕、延遲或傳遞郵件。 它也會顯示在郵件到達其最終狀態前，已對郵件執行哪些動作。
 
-安全性 & 規範中心內的郵件追蹤改善於 Exchange 系統管理中心（EAC）中提供的原始郵件追蹤。 您可以使用郵件追蹤中的資訊，有效地解答使用者對郵件發生什麼問題、疑難排解郵件流程問題，以及驗證原則變更。
+安全性 & 規範中心內的郵件追蹤改善於 Exchange 系統管理中心中提供的原始郵件追蹤 (EAC) 。 您可以使用郵件追蹤中的資訊，有效地解答使用者對郵件發生什麼問題、疑難排解郵件流程問題，以及驗證原則變更。
 
 > [!NOTE]
-> •若要進行郵件追蹤，您必須是「組織管理」、「合規性管理」或「服務台」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。 <br/><br/>•結果中顯示的訊息數目上限取決於您選取的報告類型（如需詳細資訊，請參閱[選擇報表類型](#choose-report-type)區段）。 Exchange Online PowerShell 或獨立 EOP 中的[Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) Cmdlet PowerShell 會傳回結果中的所有郵件。
+>
+> - 若要執行郵件追蹤，您必須是「組織管理」、「合規性管理」或「服務台」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+>
+> - 結果中顯示的訊息數目上限取決於您選取的報告類型 (請參閱[選擇報告類型](#choose-report-type)一節，以取得詳細資料) 。 Exchange Online PowerShell 或獨立 EOP 中的[Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) Cmdlet PowerShell 會傳回結果中的所有郵件。
 
 ## <a name="open-message-trace"></a>開啟郵件追蹤
 
@@ -108,7 +111,7 @@ ms.locfileid: "44819337"
 
 這是網際網路郵件識別碼 (也稱為「用戶端識別碼」)，可在郵件標頭的 [郵件識別碼:]**** 標頭欄位中找到。 使用者可將此值提供給您，以便您調查特定郵件。
 
-此值是郵件存留時間的常數。 針對 Microsoft 365 或 Exchange 中建立的郵件，此值的格式為 `<GUID@ServerFQDN>` ，包含角括弧（ \< \> ）。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。 其他郵件系統可能會使用不同的語法或值。 此值應為唯一的狀態，但並非所有電子郵件系統都會嚴格遵循此要求。 如果來自外部來源的內送郵件的 [郵件識別碼:]**** 標頭欄位不存在或空白，則會指派任意值。
+此值是郵件存留時間的常數。 針對 Microsoft 365 或 Exchange 中建立的郵件，此值的格式為 `<GUID@ServerFQDN>` （包括角括弧 () ） \< \> 。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。 其他郵件系統可能會使用不同的語法或值。 此值應為唯一的狀態，但並非所有電子郵件系統都會嚴格遵循此要求。 如果來自外部來源的內送郵件的 [郵件識別碼:]**** 標頭欄位不存在或空白，則會指派任意值。
 
 當您使用 [郵件識別碼:]**** 來篩選結果時，請務必包含完整的字串，包括任何角括號。
 
@@ -332,10 +335,12 @@ ms.locfileid: "44819337"
 
 以 `S:SFA` 做為開頭的 **custom_data** 值是來自垃圾郵件篩選器代理程式。 下表說明重要的詳細資料：
 
-|**值**|**描述**|
-|:-----|:-----|
+****
+
+|值|描述|
+|---|---|
 |`SFV=NSPM`|郵件標記為非垃圾郵件，並傳送給預定的收件者。|
-|`SFV=SPM`|郵件被反垃圾郵件篩選（也稱為內容篩選）標示為垃圾郵件。|
+|`SFV=SPM`|郵件被反垃圾郵件篩選 (（也稱為內容篩選) ）標示為垃圾郵件。|
 |`SFV=BLK`|已略過篩選，且郵件來自封鎖的寄件者，所以封鎖郵件。|
 |`SFV=SKS`|在反垃圾郵件篩選處理之前，郵件會標示為垃圾郵件。 這包括符合郵件流程規則 (也稱為傳輸規則) 而自動標記為垃圾郵件，因而略過所有其他篩選的郵件。|
 |`SCL=<number>`|如需不同 SCL 值和其意義的詳細資訊，請參閱[垃圾郵件信賴等級](spam-confidence-levels.md)。|
@@ -350,6 +355,7 @@ ms.locfileid: "44819337"
 |`IPV=CAL`|因為 IP 位址指定於連線篩選的 [IP 允許] 清單中，所以已透過垃圾郵件篩選允許郵件。|
 |`H=<EHLOstring>`|連線電子郵件伺服器的 HELO 或 EHLO 字串。|
 |`PTR=<ReverseDNS>`|傳送 IP 位址 (也稱為反向 DNS 位址) 的 PTR 記錄。|
+|
 
 篩選出垃圾郵件之郵件的 **custom_data** 範例值，例如：
 
@@ -359,8 +365,10 @@ ms.locfileid: "44819337"
 
 以 `S:AMA` 做為開頭的 **custom_data** 值是來自惡意程式碼篩選器代理程式。 下表說明重要的詳細資料：
 
-|**值**|**描述**|
-|:-----|:-----|
+****
+
+|值|描述|
+|---|---|
 |`AMA=SUM|v=1|` 或 `AMA=EV|v=1`|郵件已判定為包含惡意程式碼。 `SUM` 表示任意數目的引擎可能已偵測到惡意程式碼。 `EV` 表示特定引擎偵測到惡意程式碼。 引擎偵測到惡意程式碼時，這會觸發後續動作。|
 |`Action=r`|已取代郵件。|
 |`Action=p`|已略過郵件。|
@@ -373,6 +381,7 @@ ms.locfileid: "44819337"
 |`Action=b`|已封鎖郵件。|
 |`Name=<malware>`|偵測到之惡意程式碼的名稱。|
 |`File=<filename>`|含有惡意程式碼之檔案的名稱。|
+|
 
 內含惡意程式碼之郵件的 **custom_data** 範例值看起來像這樣：
 
@@ -382,12 +391,15 @@ ms.locfileid: "44819337"
 
 以 `S:TRA` 作為開頭的 **custom_data** 值是來自郵件流程規則 (也稱為傳輸規則) 的傳輸規則代理程式。 下表說明重要的詳細資料：
 
-|**值**|**描述**|
-|:-----|:-----|
+****
+
+|值|描述|
+|---|---|
 |`ETR|ruleId=<guid>`|已符合的規則 ID。|
 |`St=<datetime>`|規則相符時的日期和時間 (以 UTC 表示)。|
 |`Action=<ActionDefinition>`|已套用的動作。 如需可用動作的清單，請參閱 [Exchange Online 中的郵件流程規則動作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
 |`Mode=<Mode>`|規則的模式。 有效值為： <br/>* **強制**：將強制執行規則上的所有動作。 <br/>* 搭配**原則提示來測試：**：將會傳送任何原則提示動作，但不會處理其他強制執行動作。 <br/>* **無原則提示的測試**：動作將會列在記錄檔中，但是不會以任何方式通知寄件者，而且不會處理強制執行動作。|
+|
 
 符合郵件流程規則條件之郵件的 **custom_data** 範例值看起來像這樣：
 

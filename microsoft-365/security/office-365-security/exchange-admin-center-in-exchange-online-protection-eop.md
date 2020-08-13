@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: 深入瞭解獨立 Exchange Online Protection （EOP）中的 web 管理介面。
-ms.openlocfilehash: 777597489e54c642220cb42f0c686b675101897f
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+description: 深入瞭解獨立 Exchange Online Protection (EOP) 中的 web 管理介面。
+ms.openlocfilehash: d5753f687461a5495c2431db687263d7211bcbf5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616995"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652906"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>獨立版 EOP 中的 Exchange 系統管理中心
 
-Exchange 系統管理中心（EAC）是一種以 web 為基礎的管理主控台，供獨立 Exchange Online Protection （EOP）使用。
+Exchange 系統管理中心 (EAC) 是以 web 為基礎的管理主控台，供獨立 Exchange Online Protection (EOP) 。
 
 在尋找本主題的 Exchange Online 版本嗎？ 請參閱[Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
@@ -68,7 +68,7 @@ Exchange 系統管理中心（EAC）是一種以 web 為基礎的管理主控台
   > [!NOTE]
   > 您應在安全性 & 規範中心管理反惡意程式碼原則和預設連線篩選原則。 如需詳細資訊，請參閱在[EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)及[設定 EOP 中的連線篩選](configure-the-connection-filter-policy.md)。
 
-- **郵件流程**：這是您管理郵件流程規則（也稱為傳輸規則）、公認的網域和連接器，以及您可以前往執行郵件追蹤的位置。
+- **郵件流程**：這是您管理郵件流程規則 (的所在位置，也稱為傳輸規則) 、公認的網域和連接器，以及您可以前往執行郵件追蹤的位置。
 
 - **混合**式：這是您可以執行[混合](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)式設定向導的所在位置，以及您可以在其中安裝[Exchange Online PowerShell 模組](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)的位置。
 
@@ -80,9 +80,10 @@ Exchange 系統管理中心（EAC）是一種以 web 為基礎的管理主控台
 
 按一下大部分的索引標籤時，會看到一個工具列。工具列上的圖示會執行特定動作。下表描述圖示及其動作。
 
-||||
+****
+
+|圖示|名稱|動作|
 |---|---|---|
-|**Icon**|**名稱**|**Action**|
 |![新增圖示](../../media/ITPro-EAC-AddIcon.gif)|新增|使用此圖示來建立新的物件。這些圖示中有些擁有一個關聯的向下箭號，您可以按一下以顯示所能建立的其他物件。|
 |![編輯圖示](../../media/ITPro-EAC-EditIcon.gif)|編輯|使用此圖示來編輯物件。|
 |![刪除圖示](../../media/ITPro-EAC-DeleteIcon.gif)|刪除|使用此圖示來刪除物件。部分刪除圖示擁有一個向下箭號，您可以按一下以顯示額外選項。|
@@ -124,125 +125,63 @@ Exchange 系統管理中心（EAC）是一種以 web 為基礎的管理主控台
 在獨立 EOP 中，EAC 支援和使用下列語言。
 
 - 阿姆哈拉文
-
 - 阿拉伯文
-
 - 巴斯克文 (巴斯克文)
-
 - 孟加拉文 (印度)
-
 - 保加利亞文
-
 - 卡達隆尼亞文
-
 - 簡體中文
-
 - 繁體中文
-
 - 克羅埃西亞文
-
 - 捷克文
-
 - 丹麥文
-
 - 荷蘭文
-
-- 荷蘭文
-
 - 英文
-
 - 愛沙尼亞文
-
 - 菲律賓文 (菲律賓)
-
 - 芬蘭文
-
 - 法文
-
 - 加里斯亞文
-
 - 德文
-
 - 希臘文
-
 - 古吉拉特文
-
 - 希伯來文
-
 - 印度文
-
 - 匈牙利文
-
 - 冰島文
-
 - 印尼文
-
 - 義大利文
-
 - 日文
-
 - 坎那達文
-
 - 哈薩克文
-
 - 史瓦希里文
-
 - 韓文
-
 - 拉脫維亞文
-
 - 立陶宛文
-
 - 馬來文 (汶萊)
-
 - 馬來文 (馬來西亞)
-
 - 馬來亞拉姆文
-
 - 馬拉提文
-
 - 挪威文 (巴克摩)
-
 - 挪威文 (尼洛斯克)
-
 - 歐利亞文
-
 - 波斯文
-
 - 波蘭文
-
 - 葡萄牙文 (巴西)
-
 - 葡萄牙文 (葡萄牙)
-
 - 羅馬尼亞文
-
 - 俄文
-
 - 塞爾維亞文 (斯拉夫、塞爾維亞)
-
 - 塞爾維亞文 (拉丁)
-
 - 斯洛伐克文
-
 - 斯洛維尼亞文
-
 - 西班牙文
-
 - 瑞典文
-
 - 坦米爾文
-
 - 特拉古文
-
 - 泰文
-
 - 土耳其文
-
 - 烏克蘭文
-
 - 烏都文
-
 - 越南文
-
 - 威爾斯文

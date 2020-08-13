@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 26b376fe3e804a3ebaa478e484807bea4c33d38b
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049689"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649388"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 
@@ -152,7 +152,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 運用下列功能更快速地編寫查詢：
 - **Autosuggest** --當您撰寫查詢時，高級搜尋會提供 IntelliSense 的建議。 
 - **架構樹**系-您的工作區域旁會提供包含資料表清單和其欄的架構標記法。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
-- **[架構參考（Schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** ）包含資料表和欄描述的入口網站參照，以及支援的事件種類（ `ActionType` 值）和範例查詢
+- **[架構參考（Schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** ）包含資料表和欄描述的入口網站內參照，以及支援的事件種類 (`ActionType` 值) 和範例查詢
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>在編輯器中使用多個查詢
 查詢編輯器可以做為您用來試驗多個查詢的草稿墊。 若要使用多個查詢：
@@ -179,6 +179,6 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [使用查詢結果工作](advanced-hunting-query-results.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

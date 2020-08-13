@@ -19,21 +19,21 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 837232550ca392a364b9842f64a1c3f0d790a502
-ms.sourcegitcommit: 33be6075fcc89d4c0a48fa7e59f3b3ebc605d9f3
+ms.openlocfilehash: 826d8561ba0c9618f21458493416b7dbd75af9e1
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44520155"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656858"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自動化調查和回應功能中報告誤報/負片
 
 適用於：****
 - Office 365 進階威脅防護
 
-[Office 365 中的自動化調查和回應（AIR）功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)是否未命中或錯誤地偵測到某項功能？ 您可以採取一些步驟加以修正。 您可以：
+[自動調查和回應 (Office 365 中的 AIR) 功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)是否漏掉或錯誤地偵測到某項功能？ 您可以採取一些步驟加以修正。 您可以：
 - [向 Microsoft 報告誤報/負數](#report-a-false-positivenegative-to-microsoft-for-analysis)
-- [調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring)（如有需要）;和 
+- 視需要[調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring) () ;和 
 - [復原採取的修復動作](#undo-a-remediation-action)。 
 
 使用本文做為指南。 
@@ -61,11 +61,13 @@ ms.locfileid: "44520155"
 
 透過威脅瀏覽器，您的安全性運作小組可以找到動作所影響的電子郵件，並可能復原動作。
 
-|案例  |復原選項  |深入了解 |
-|---------|---------|---------|
-|將電子郵件路由傳送至使用者的 [垃圾郵件] 資料夾     |-將郵件移至使用者的 [刪除的郵件] 資料夾<br/>-將郵件移至使用者的收件匣 <br/>-刪除郵件          |[尋找並調查 Office 365 中傳遞的惡意電子郵件](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered) |
-|已隔離的電子郵件訊息或檔     |-發行電子郵件或檔案 <br/>-刪除電子郵件或檔         |[以 Office 365 系統管理員身分管理隔離的郵件和檔案](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files) |
+****
 
+|案例|復原選項|深入了解|
+|---|---|---|
+|將電子郵件路由傳送至使用者的 [垃圾郵件] 資料夾|-將郵件移至使用者的 [刪除的郵件] 資料夾<br/>-將郵件移至使用者的收件匣 <br/>-刪除郵件|[尋找並調查 Office 365 中傳遞的惡意電子郵件](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
+|已隔離的電子郵件訊息或檔|-發行電子郵件或檔案 <br/>-刪除電子郵件或檔|[以 Office 365 系統管理員身分管理隔離的郵件和檔案](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
+|
 
 ### <a name="undo-an-action-using-the-actions-tab-for-an-investigation"></a>使用調查的 [動作] 索引標籤復原動作
 
@@ -87,4 +89,4 @@ ms.locfileid: "44520155"
 
 [Office 365 進階威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 
-[開始使用 Office 365 中的自動調查和回應（AIR）](office-365-air.md)
+[開始使用 Office 365 中的自動調查和回應 (AIR) ](office-365-air.md)

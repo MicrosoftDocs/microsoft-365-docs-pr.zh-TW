@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: 了解如何開啟適用於 SharePoint、OneDrive 和 Teams 的 ATP，包括如何為偵測到的檔案設定警示。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 976911abe047be350ae6c64409cd6607ea75de7a
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 6109cecc79b4db876ee595d4786d176ae7f42f5d
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811071"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656548"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 與 Microsoft Teams 的 ATP
 
@@ -35,17 +35,20 @@ ms.locfileid: "44811071"
 
 若要定義 (或編輯) ATP 原則，您必須獲派適當的角色。 下表中有一些範例描述：
 
+****
+
 |角色|指派位置/條件|
-|---------|---------|
-|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。）|
+|---|---|
+|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。 ) |
 |安全性系統管理員|Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織管理|Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 ## <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 與 Microsoft Teams 的 ATP
 
 **開始此程式之前，請確定已為您的 Microsoft 365 環境開啟了審核記錄**。 這項工作通常是由在 Exchange Online 中獲派稽核記錄角色的人員完成。 如需詳細資訊，請參閱[開啟或關閉稽核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-1. 移至 [https://protection.office.com](https://protection.office.com) 然後以您的公司或學校帳戶登入。
+1. 移至 <https://protection.office.com> 然後以您的公司或學校帳戶登入。
 
 2. 在 [安全性 & 規範中心] 的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則** \> **安全附件**]。
 
@@ -59,7 +62,7 @@ ms.locfileid: "44811071"
 
 5. 檢閱 (並視需要編輯) 組織的 [[安全附件原則]](set-up-atp-safe-attachments-policies.md) 和 [[安全連結原則]](set-up-atp-safe-links-policies.md)。
 
-6. 推薦以全域管理員或 SharePoint 線上管理員身分執行**[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** Cmdlet，並將_DisallowInfectedFileDownload_參數設定為*true*。
+6.  (建議) 成為全域系統管理員或 SharePoint Online 管理員，請執行**[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** Cmdlet，並將_DisallowInfectedFileDownload_參數設定為*true*。
 
    - 將參數設定為 *true* 可封鎖偵測到的檔案的所有動作 (刪除除外)。 使用者將無法開啟、移動、複製或共用偵測到的檔案。
 

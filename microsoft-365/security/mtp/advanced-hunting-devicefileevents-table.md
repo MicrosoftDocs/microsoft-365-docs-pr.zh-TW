@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 67749125d2f62f2774c36e6970cf8901b1fd5784
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: b88bdb09b84db5de813fc9020d9695f26c61f105
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899300"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649436"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -39,9 +39,9 @@ ms.locfileid: "44899300"
 | `DeviceId` | string | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
 | `ActionType` | string | 觸發事件的活動類型 |
-| `FileName` | string | 記錄動作已套用的檔案名稱 |
-| `FolderPath` | string | 包含錄製的動作所套用之檔案的資料夾 |
-| `SHA1` | string | 記錄動作已套用的檔案 SHA-1 |
+| `FileName` | 字串 | 記錄動作已套用的檔案名稱 |
+| `FolderPath` | 字串 | 包含錄製的動作所套用之檔案的資料夾 |
+| `SHA1` | 字串 | 記錄動作已套用的檔案 SHA-1 |
 | `SHA256` | 字串 | 記錄動作已套用的檔案 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
 | `MD5` | 字串 | 錄製的動作所套用的檔案 MD5 雜湊 |
 | `FileOriginUrl` | string | 下載檔案所在的 URL |
@@ -49,18 +49,18 @@ ms.locfileid: "44899300"
 | `FileOriginIP` | string | 從中下載檔案的 IP 位址 |
 | `InitiatingProcessAccountDomain` | string | 執行負責事件之處理常式之帳戶的網域 |
 | `InitiatingProcessAccountName` | string | 負責事件之處理常式的帳戶使用者名稱 |
-| `InitiatingProcessAccountSid` | string | 執行事件處理常式之帳戶的安全性識別碼（SID） |
-| `InitiatingProcessMD5` | string | 啟動事件之處理常式（映射檔）的 MD5 雜湊 |
-| `InitiatingProcessSHA1` | string | 啟動事件之處理常式（映射檔）的 SHA-1 |
-| `InitiatingProcessSHA256` | string | 啟動事件之處理常式（映射檔）的 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
-| `InitiatingProcessFolderPath` | 字串 | 包含初始化事件之處理常式（映射檔）的資料夾 |
+| `InitiatingProcessAccountSid` | string | 執行事件負責處理之帳戶的安全性識別碼 (SID)  |
+| `InitiatingProcessMD5` | string | 啟動事件之程式 (映射檔) 的 MD5 雜湊 |
+| `InitiatingProcessSHA1` | string | 啟動事件) 的處理常式 (映射檔 SHA-1 |
+| `InitiatingProcessSHA256` | string | 啟動事件) 的處理常式 (映射檔 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
+| `InitiatingProcessFolderPath` | 字串 | 包含初始化事件之處理 (映射檔) 程式的資料夾 |
 | `InitiatingProcessFileName` | string | 啟動事件的進程名稱 |
-| `InitiatingProcessId` | int | 啟動事件之處理常式的進程識別碼（PID） |
+| `InitiatingProcessId` | int | 啟動事件之程式的進程識別碼 (PID)  |
 | `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |
 | `InitiatingProcessCreationTime` | datetime | 啟動事件處理常式的日期和時間 |
 | `InitiatingProcessIntegrityLevel` | string | 啟動事件之處理常式的完整性層級。 Windows 會根據特定的特性，例如從網際網路下載啟動，將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
-| `InitiatingProcessTokenElevation` | string | 指出是否要將使用者存取控制（UAC）許可權提升套用至啟動事件之處理常式的 Token 類型 |
-| `InitiatingProcessParentId` | int | 產生負責事件之處理常式之父進程的進程識別碼（PID） |
+| `InitiatingProcessTokenElevation` | string | 指出是否存在使用者存取控制的 Token 類型 (UAC) 許可權提升會套用至啟動事件的程式。 |
+| `InitiatingProcessParentId` | int | 產生負責事件之處理常式之父進程的進程識別碼 (PID)  |
 | `InitiatingProcessParentFileName` | string | 產生負責事件之處理常式的父進程名稱 |
 | `InitiatingProcessParentCreationTime` | datetime | 啟動事件之處理常式的父項時的日期和時間 |
 | `RequestProtocol` | string | 用於啟動活動的網路通訊協定（如果適用）：未知、本機、SMB 或 NFS |
@@ -69,7 +69,7 @@ ms.locfileid: "44899300"
 | `RequestSourcePort` | string | 啟動活動的遠端裝置上的來源埠 |
 | `RequestAccountName` | string | 遠端啟動活動所用的帳戶使用者名稱 |
 | `RequestAccountDomain` | string | 用於遠端啟動活動之帳戶的網域 |
-| `RequestAccountSid` | string | 遠端啟動活動所使用之帳戶的安全性識別碼（SID） |
+| `RequestAccountSid` | string | 遠端啟動活動所使用之帳戶的安全性識別碼 (SID)  |
 | `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
 | `AppGuardContainerId` | string | Application Guard 用來隔離瀏覽器活動的虛擬容器識別碼 |
 | `SensitivityLabel` | string | 套用至電子郵件、檔案或其他內容的標籤，以分類資訊保護 |
@@ -80,6 +80,6 @@ ms.locfileid: "44899300"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

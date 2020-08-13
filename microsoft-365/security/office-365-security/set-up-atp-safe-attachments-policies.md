@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何定義安全附件原則，以利用電子郵件中的惡意檔來保護組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1569e8072f64ce751c44e76f971e98f37540afae
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: a8b69d114b1387a1ef76d962424149c1db93ce04
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430420"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656623"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
 
@@ -44,16 +44,18 @@ ms.locfileid: "45430420"
 
 - 請確認您組織有 [Office 365 進階威脅防護](office-365-atp.md)。
 
-- 請確定您具有必要權限。 若要定義（或編輯） ATP 原則，您必須被指派 Exchange Online 組織管理角色（預設為全域管理員指派此角色）或 Exchange Online 衛生管理與安全性管理員角色。 如需詳細資訊，請參閱下表：
+- 請確定您具有必要權限。 若要定義 (或編輯) ATP 原則，您必須指派 Exchange Online 組織管理角色， (全域管理員會指派給此角色，但預設) 或兩者皆為 Exchange Online 衛生管理及安全性系統管理員角色。 如需詳細資訊，請參閱下表：
+
+  ****
 
   |角色|指派位置/條件|
-  |---------|---------|
-  |全域管理員 |簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。）|
+  |---|---|
+  |全域管理員 |簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱 [關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) 以深入瞭解。 ) |
   |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online 組織管理，Exchange Online 的清理管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
   |
 
-  若要深入瞭解角色和許可權，請參閱[安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+  若要深入瞭解角色和許可權，請參閱 [安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 - [了解 ATP 安全附件原則選項](#step-3-learn-about-atp-safe-attachments-policy-options) (在本文中)。 某些選項 (例如監視或取代選項) 可能會造成電子郵件延遲，因為要掃描附件。 若要避免郵件延遲，請考慮使用[動態傳遞和預覽](dynamic-delivery-and-previewing.md)。
 
@@ -63,9 +65,9 @@ ms.locfileid: "45430420"
 
 1. 移至 [https://protection.office.com](https://protection.office.com) 然後以您的公司或學校帳戶當入。
 
-2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則** \> **安全附件**]。
+2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [ **威脅管理**] 底下的 [ **原則** \> **安全附件**]。
 
-3. 如果您看到 [開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的 ATP]****，我們建議您選取此選項。 這將為您的 Microsoft 365 環境啟用[SharePoint、OneDrive 和 Microsoft 小組的 Office 365 高級威脅防護](atp-for-spo-odb-and-teams.md)。
+3. 如果您看到 [開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的 ATP]****，我們建議您選取此選項。 這將為您的 Microsoft 365 環境啟用 [SharePoint、OneDrive 和 Microsoft 小組的 Office 365 高級威脅防護](atp-for-spo-odb-and-teams.md) 。
 
 4. 選擇 [新增]**** \([新增] 按鈕類似加號 (**+**))，以開始建立您的原則。
 
@@ -77,7 +79,7 @@ ms.locfileid: "45430420"
 
    - 在 [回復] 區段中，選擇 [動態傳遞]**** 選項。 ([深入了解 ATP 安全附件的動態傳遞和預覽](dynamic-delivery-and-previewing.md)。)
 
-   - 在 [重新**導向附件**] 區段中，選取 [啟用重新導向] 選項，然後輸入您的全域系統管理員、安全性管理員或將調查惡意附件的安全性分析員的電子郵件地址。
+   - 在 [重新 **導向附件** ] 區段中，選取 [啟用重新導向] 選項，然後輸入您的全域系統管理員、安全性管理員或將調查惡意附件的安全性分析員的電子郵件地址。
 
    - 在 [套用至]**** 區段中，選擇 [收件者網域]****，然後選取您的網域。 選擇 [新增]****，然後選擇 [確認]****。
 
@@ -89,16 +91,17 @@ ms.locfileid: "45430420"
 
 當您設定 ATP 安全附件原則時，您可以從許多選項中選擇，包括監視、封鎖、取代和動態傳遞等等。 如果您想知道這些選項的功能，下表中有每個選項及其效用的摘要。
 
-||||
+****
+
+|選項|Effect|使用時機：|
 |---|---|---|
-|**選項**|****|**使用時機：**|
 |**關閉**|不掃描附件的惡意程式碼  <br/> 不會延遲郵件傳遞|為選取的收件者關閉掃描。  <br/> 避免路由內部郵件的非必要延遲。  <br/> **大多數使用者不建議使用此選項。您應只使用此選項，關閉只從信任寄件者取得電子郵件之收件者的 ATP 安全附件掃描。**|
 |**監視**|傳送含有附件的郵件，然後追蹤偵測到的惡意程式碼會發生什麼情況|查看偵測到的惡意程式碼會在組織中哪個位置|
 |**封鎖**|防止偵測到惡意程式碼附件的郵件繼續進行  <br/> 將偵測到惡意程式碼的郵件傳送到 [Office 365 中的隔離區](manage-quarantined-messages-and-files.md)，安全性系統管理員或分析者可以在此檢視並釋放 (或刪除) 這些郵件  <br/> 自動封鎖未來的郵件和附件|避免組織遭受相同惡意程式碼附件的重複攻擊|
 |**取代**|移除偵測到的惡意程式碼附件  <br/> 通知收件者附件已移除  <br/> 將偵測到惡意程式碼的郵件傳送到 [Office 365 中的隔離區](manage-quarantined-messages-and-files.md)，安全性系統管理員或分析者可以在此檢視並釋放 (或刪除) 這些郵件|提高收件者看到附件因為偵測到惡意程式碼而遭移除的可能性|
 |**動態傳遞**|立即傳送郵件  <br/> 將附件取代為預留檔案，直到掃描完成，然後在未偵測到惡意程式碼的情況下重新附加附件  <br/> 掃描期間會保留大部分 PDF 和 Office 檔案的預覽功能  <br/> 將偵測到惡意程式碼的郵件傳送到隔離區，安全性系統管理員或分析者可以在此檢視並釋放 (或刪除) 這些郵件  <br/> [了解 ATP 安全附件的動態傳遞和預覽](dynamic-delivery-and-previewing.md) <br/> |避免郵件延遲，同時為收件者抵禦惡意檔案  <br/> 執行掃描時，讓收件者以安全模式預覽附件|
 |**啟用重新導向**|當選取 [監視]、[封鎖] 或 [取代] 選項時套用  <br/> 將附件傳送到安全性系統管理員或分析者可以查看的特定電子郵件地址|讓安全性系統管理員和分析者調查可疑附件|
-|**如果惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。**|將不安全附件所設定的動作套用至無法掃描的附件（由於超時或錯誤）|
+|**如果惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。**|將不安全附件所設定的動作套用至無法掃描的附件， (因超時或錯誤) |
 |
 
 ## <a name="next-steps"></a>後續步驟

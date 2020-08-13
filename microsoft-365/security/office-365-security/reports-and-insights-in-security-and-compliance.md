@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解安全性 & 規範中心提供的智慧報告和洞察力，以及如何使用它們來查看及流覽資料，並快速採取動作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f38ed081ce73af737b58a38692ac2fa0519972d
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 5d100aca53f3683d477fd15469ae53ecb7a2901b
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577183"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652774"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的智慧型報告和深入解析
 
@@ -40,7 +40,9 @@ ms.locfileid: "46577183"
 ## <a name="types-of-reports-in-the-security--compliance-center"></a>安全性 & 規範中心內的報告類型
 
 安全性 & 規範中心提供各種各樣的報表。  (移至 [**報告**] \> **儀表板**以取得完整的視圖。 ) 下表列出可用的報表，其連結可深入瞭解：
-  
+
+****
+
 |資訊類型|如何到該處|移至何處以深入瞭解|
 |---|---|---|
 |**安全性 & 規範中心報告** (全部)   <br/> 熱門洞察力和建議，以及安全性 & 符合性報告的連結，包括資料遺失防護報告、標籤、電子郵件安全性報告、高級威脅防護報告等等|在安全性 & 規範中心內，移至 [**報告**] \> **儀表板**|[在 Microsoft 365 的安全性中心監控和查看報告](../mtp/monitoring-and-reporting.md)|
@@ -53,6 +55,7 @@ ms.locfileid: "46577183"
 |**GDPR 規範** <br/> GDPR 合規性的相關資訊，包括資料主體的連結、標籤趨勢，以及使用中 & 關閉的案例|在安全性 & 規範中心內，移至**資料隱私權** \> **GDPR 儀表板**|[GDPR 的 Office 365 資訊保護](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
 |**審核記錄** <br/> Microsoft 365 活動、使用者、檔案或資料夾等等相關資訊|在安全性 & 規範中心內，移至**搜尋 & 調查** \> **審核記錄搜尋**|[在安全性 & 規範中心搜尋審核記錄檔](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**規範報告** <br/> FedRAMP 報告、控管、風險和合規性報告、ISO 資訊安全性管理報告及服務組織控制稽核與評定報告|在安全性 & 規範中心內，移至**服務保證** \> **符合性報告**|[規劃 Office 365 的安全性 & 合規性](../../compliance/plan-for-security-and-compliance.md)|
+|
 
 ## <a name="related-topics"></a>相關主題
 

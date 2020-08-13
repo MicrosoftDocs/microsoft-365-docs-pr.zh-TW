@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何為 Office 365 ATP 安全連結原則中的使用者群組，為使用者設定自訂封鎖 URLs，並不重新寫入 URLs 清單。
-ms.openlocfilehash: 7d7c8ad3f5ae0f6a79bd839151ed09628e7f2dfd
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7909e91b96f8bdbc38ffdceafe11fa47f5ebe897
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517470"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656966"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-atp-safe-links"></a>使用 ATP 安全連結設定自訂的 [不改寫 URLs] 清單
 
@@ -41,11 +41,12 @@ ATP 安全連結保護使用數個清單，包括貴組織的封鎖 URL 清單�
 
 若要編輯 (或定義) ATP 原則，您必須獲派適當的角色。 下表包括一些範例。 若要深入瞭解，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
-|角色  |指派位置/條件  |
-|---------|---------|
-|全域管理員 |簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。）         |
-|安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 組織管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) |
+|角色|指派位置/條件|
+|---|---|
+|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。 ) |
+|安全性系統管理員|Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
+|Exchange Online 組織管理|Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 > [!TIP]
 > 若要深入瞭解角色和許可權，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
@@ -62,7 +63,7 @@ ATP 安全連結保護使用數個清單，包括貴組織的封鎖 URL 清單�
 
 5. URLs**開啟當**使用者按一下連結時，將會重新寫入並檢查已知惡意連結的清單。
 
-6. 在 [**不要重新寫入下列 URLs** ] 區段中，選取 [**輸入有效的 url** ] 方塊，輸入 URL，然後選擇加號（+）。
+6. 在 [**不要重新寫入下列 URLs** ] 區段中，選取 [**輸入有效的 url** ] 方塊，輸入 URL，然後選擇加號 (+) 。
 
 7. 在 [套用至]**** 區段中，選擇 [收件者是以下的成員]****，然後選擇您想要包含在原則中的群組。 選擇 [新增]****，然後選擇 [確認]****。
 
@@ -79,13 +80,16 @@ ATP 安全連結保護使用數個清單，包括貴組織的封鎖 URL 清單�
 
 - 如果您在「不要重寫」清單中已經有 URL 清單，請務必檢閱該清單，並視需要新增萬用字元。 例如，如果您的現有清單包含像是 `https://contoso.com/a` 的項目，而您想要在原則中包含類似 `https://contoso.com/a/b` 的子路徑，請在您的項目中新增萬用字元，使它看起來像是 `https://contoso.com/a/*`。
 
-- 當您為 ATP 安全連結原則指定「不要重新寫入」清單時，最多可以包含三個萬用字元（ \* ）。 萬用字元會明確包含首碼或子域。 例如，該專案與 `contoso.com` 不同的專案不同 `*.contoso.com/*` ，因為 `*.contoso.com/*` 允許人員造訪指定網域中的子域和路徑。
+- 當您為 ATP 安全連結原則指定「不要重新寫入」清單時，最多可以有三個萬用字元 (\*) 。 萬用字元會明確包含首碼或子域。 例如，該專案與 `contoso.com` 不同的專案不同 `*.contoso.com/*` ，因為 `*.contoso.com/*` 允許人員造訪指定網域中的子域和路徑。
 
 下表列出您可以輸入的內容範例，以及這些項目的影響。
 
+****
+
 |範例項目|功能|
-|:-----|:-----|
+|---|---|
 |`contoso.com`|讓收件者可以造訪 `https://contoso.com`，而不是子網域或路徑。|
 |`*.contoso.com/*`|可讓收件者造訪網域、子域及路徑，例如、 `https://www.contoso.com` 、 `https://www.contoso.com` `https://maps.contoso.com` 或 `https://www.contoso.com/a` 。 <br/><br/> 此專案原本很好 `*contoso.com*` ，因為它不包含可能的詐騙網站，例如 `https://www.falsecontoso.com` 或`https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|讓收件者可以造訪像是 `https://contoso.com/a` 的網站，而不是像是 `https://contoso.com/a/b` 的子路徑。|
 |`https://contoso.com/a/*`|讓收件者可以造訪像是 `https://contoso.com/a` 的網站，以及像是 `https://contoso.com/a/b` 的子路徑。|
+|

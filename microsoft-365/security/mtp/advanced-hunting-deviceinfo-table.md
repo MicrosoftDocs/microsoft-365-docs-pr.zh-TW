@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 526e210a472862593f2652e9b2b21957702c48f0
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 342e5747f2c59022ffef76f30e4845f26550c88a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899276"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649082"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -38,24 +38,24 @@ ms.locfileid: "44899276"
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
-| `DeviceId` | 字串 | 服務中電腦的唯一識別碼 |
+| `DeviceId` | string | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
 | `ClientVersion` | string | 電腦上執行的端點代理程式或感應器版本 |
 | `PublicIP` | string | 架電腦用來連接至 Microsoft Defender ATP 服務的公用 IP 位址。 這可以是電腦本身、NAT 裝置或 proxy 的 IP 位址 |
 | `OSArchitecture` | 字串 | 電腦上執行的作業系統架構。 |
-| `OSPlatform` | string | 電腦上執行的作業系統平台。 這表示特定作業系統（包括相同家族內的變化，例如 Windows 10 和 Windows 7） |
+| `OSPlatform` | 字串 | 電腦上執行的作業系統平台。 這表示特定作業系統（包括相同家族內的變化，例如 Windows 10 和 Windows 7） |
 | `OSBuild` | string | 電腦上所執行作業系統的組建版本 |
 | `IsAzureADJoined` | 布林值 | 對電腦是否加入 Azure Active Directory 的布林指標 |
 | `LoggedOnUsers` | string | 以 JSON 陣列格式出現事件時，在機器上記錄的所有使用者清單 |
 | `RegistryDeviceTag` | string | 透過登錄加入的電腦標記 |
 | `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
-| `OSVersion` | string | 電腦上執行的作業系統版本。 |
-| `MachineGroup` | string | 機器的電腦群組。 這個群組是由以角色為基礎的存取控制用來判斷對機器的存取權 |
+| `OSVersion` | 字串 | 電腦上執行的作業系統版本。 |
+| `MachineGroup` | 字串 | 機器的電腦群組。 這個群組是由以角色為基礎的存取控制用來判斷對機器的存取權 |
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

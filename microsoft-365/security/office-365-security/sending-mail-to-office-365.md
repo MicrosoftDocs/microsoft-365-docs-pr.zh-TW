@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 請以外部的寄件者的身分瞭解，如何提高將電子郵件傳遞給 Microsoft 365 中使用者的能力。 此外，還會瞭解如何以外部使用者的身分嘗試報告垃圾郵件 & 網路釣魚嘗試。
-ms.openlocfilehash: c464d09ddd5f6324c9b3e22e9cad6a613862c9a1
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 76fc376d32904b5cb61080e88a38a1dda815836f
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209820"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652762"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>將郵件傳送至 Microsoft 365
 
@@ -31,9 +31,12 @@ ms.locfileid: "44209820"
 
 如果您不是客戶，但正嘗試將郵件傳送給其所在的某人，您就是在正確的地方。 如果您是系統管理員，而您需要協助反擊垃圾郵件，這不是正確的區段。 相反地，請移至[Microsoft 365 中的反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)。
 
-|**相關資訊 .。。**|**看到。。。**|
-|:-----|:-----|
+****
+
+|如需相關資訊...|看到。。。|
+|---|---|
 |我們對傳送個人和大量電子郵件給客戶的電子郵件系統管理員提供服務。|[將郵件傳送至 Office 365 的非客戶服務](services-for-non-customers.md)|
 |如何修正透過電子郵件在 Microsoft 365 中客戶的問題。 將大宗郵件傳送至 Microsoft 365 收件者的最佳作法。|[將疑難排解郵件傳送艮 Office 365](troubleshooting-mail-sent-to-office-365.md)|
 |Microsoft 365 如何防止垃圾郵件（包括網路釣魚和哄騙電子郵件）送出給我們的客戶。|[Microsoft 365 中的反垃圾郵件保護](anti-spam-protection.md)|
 |管理員將電子郵件傳送至 Microsoft 365 客戶的方式，可以避免透過遵守反垃圾郵件原則封鎖電子郵件。 這是您必須知道的法律事項。|[參考：原則、實務與指導方針](reference-policies-practices-and-guidelines.md)|
+|

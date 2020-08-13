@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 深入瞭解獨立 Exchange Online Protection 中的工作所需的許可權
-ms.openlocfilehash: 0c3074789e439c3923667d37446733665fa79d88
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 2f653fbae49087b8fc1ebc3a97586512965df970
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588249"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652894"
 ---
 # <a name="permissions-in-standalone-eop"></a>獨立版 EOP 中的權限
 
-不含 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）會使用角色型存取控制（RBAC）許可權模型，以輕鬆授與許可權給您的系統管理員。 您可以使用獨立 EOP 中的許可權功能，快速地讓新組織正常運作。
+獨立 Exchange Online Protection (EOP) 沒有 Exchange Online 信箱時，會使用以角色為基礎的存取控制 (RBAC) 許可權模型，以輕鬆授與許可權給您的系統管理員。 您可以使用獨立 EOP 中的許可權功能，快速地讓新組織正常運作。
 
 若要授與許可權給使用者，請參閱[管理 EOP 中的系統管理員角色群組](manage-admin-role-group-permissions-in-eop.md)。
 
@@ -29,9 +29,9 @@ ms.locfileid: "44588249"
 
 ## <a name="role-based-permissions"></a>角色型權限
 
-您授與使用者的系統管理員許可權是以管理角色為基礎。 管理角色會定義可用於一組指定任務的 Cmdlet。 因為 Exchange 系統管理中心（EAC）和獨立 EOP PowerShell 兩者都使用 Cmdlet，所以授予 Cmdlet 存取權可讓使用者在 EAC 或獨立 EOP PowerShell 中執行相關工作。 例如，「郵件收件者」角色會定義修改郵件使用者所需的 Cmdlet。
+您授與使用者的系統管理員許可權是以管理角色為基礎。 管理角色會定義可用於一組指定任務的 Cmdlet。 因為 Exchange 系統管理中心 (EAC) 和獨立 EOP PowerShell 兩者都使用 Cmdlet，所以授予 Cmdlet 存取權可讓使用者在 EAC 或獨立 EOP PowerShell 中執行相關工作。 例如，「郵件收件者」角色會定義修改郵件使用者所需的 Cmdlet。
 
-在獨立 EOP 中，系統管理角色是唯一可用的管理角色類型（沒有使用者角色或角色指派原則）。
+在獨立 EOP 中，系統管理角色是唯一可用的管理角色類型， (沒有) 使用者角色或角色指派原則。
 
 ## <a name="role-groups"></a>角色群組
 
@@ -43,21 +43,22 @@ ms.locfileid: "44588249"
 
 下表說明獨立 EOP 中可用的角色群組。
 
-||||
+****
+
+|角色群組|描述|已指派預設角色|
 |---|---|---|
-|**角色群組**|**描述**|**已指派預設角色**|
-|ComplianceManagement|若您的訂閱具有 DLP 功能，請設定及管理組織內的符合性設定（包括資料遺失防護（DLP））。 <br/><br/> Azure AD 中的[合規性系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator)角色成員會自動取得此角色群組的許可權。|稽核記錄 <br/><br/> 合規性管理 <br/><br/> 資訊版權管理 <br/><br/> 保留管理 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視組態 <br/><br/> 僅限檢視收件者|
+|ComplianceManagement|設定及管理組織內的規範設定，包括資料遺失防護 (DLP) （如果您的訂閱具有 DLP 功能）。 <br/><br/> Azure AD 中的[合規性系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator)角色成員會自動取得此角色群組的許可權。|稽核記錄 <br/><br/> 合規性管理 <br/><br/> 資訊版權管理 <br/><br/> 保留管理 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視組態 <br/><br/> 僅限檢視收件者|
 |ContentExplorerContentViewer|不會使用。|資料分類內容檢視器|
 |ContentExplorerListViewer|不會使用。|資料分類清單檢視器|
 |HelpDesk|查看和管理郵件使用者。|重設密碼 <br/><br/> 使用者選項 <br/><br/> 僅限檢視收件者|
-|HygieneManagement|管理保護功能（反垃圾郵件、反惡意程式碼等）。|傳輸衛生 <br/><br/> 僅限檢視組態 <br/><br/> 僅限檢視收件者|
+|HygieneManagement|管理保護功能 (反垃圾郵件、反惡意程式碼等 ) 。|傳輸衛生 <br/><br/> 僅限檢視組態 <br/><br/> 僅限檢視收件者|
 |MailFlowAdministrator|查看及管理公認的網域和連接器|遠端和公認的網域 <br/><br/> 僅限檢視收件者|
 |OrganizationManagement|整個組織的系統管理員存取權，以及執行幾乎任何工作的功能。 <br/><br/> Azure AD 中[全域系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator)角色的成員會自動取得此角色群組的許可權。 <br/><br/> **重要**：由於 OrganizationManagement 角色群組是功能強大的角色，因此只有執行組織層級管理工作的使用者才應成為這個角色群組的成員。|軟體 <br/><br/> 反垃圾郵件 <br/><br/> 稽核記錄 <br/><br/> 合規性系統管理員 <br/><br/> 動態通訊群組 <br/><br/> 資訊版權管理 <br/><br/> 建立郵件收件者 <br/><br/> 郵件收件者 <br/><br/> 郵件追蹤 <br/><br/> 移轉 <br/><br/> 組織用戶端存取 <br/><br/> 組織組態 <br/><br/> 組織傳輸設定 <br/><br/> 隔離 <br/><br/> 收件者原則 <br/><br/> 遠端和公認的網域 <br/><br/> 重設密碼 <br/><br/> 保留管理 <br/><br/> 角色管理 <br/><br/> 安全性系統管理員 <br/><br/> 安全性群組建立和成員資格 <br/><br/> 安全性讀取者 <br/><br/> 敏感度標籤系統管理員 <br/><br/> 監督 <br/><br/> 傳輸衛生 <br/><br/> 傳輸規則 <br/><br/> 使用者選項 <br/><br/> View-Only 反惡意程式碼 <br/><br/> View-Only 反垃圾郵件 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視組態 <br/><br/> View-Only 隔離 <br/><br/> 僅限檢視收件者 <br/><br/> View-Only 威脅情報|
 |QuarantineAdministrator|管理所有收件者的隔離郵件。|隔離|
 |RecipientManagement|建立、管理及移除組織中的收件者物件。|動態通訊群組 <br/><br/> 建立郵件收件者 <br/><br/> 郵件收件者 <br/><br/> 郵件追蹤 <br/><br/> 移轉 <br/><br/> 收件者原則 <br/><br/> 重設密碼|
-|RecordsManagement|設定符合性功能，例如保留原則標記、郵件分類和郵件流程規則（也稱為傳輸規則）。|郵件追蹤 <br/><br/> 保留管理 <br/><br/> 傳輸規則|
-|SecurityAdministrator|設定組織中的所有保護層面（反垃圾郵件、反惡意程式碼、反欺騙、隔離等等）。 <br/><br/> Azure AD 中的[安全性系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)角色成員會自動取得此角色群組的許可權。|軟體 <br/><br/> 反垃圾郵件 <br/><br/> 稽核記錄 <br/><br/> 隔離 <br/><br/> 安全性系統管理員 <br/><br/> 敏感度標籤系統管理員 <br/><br/> View-Only 反惡意程式碼 <br/><br/> View-Only 反垃圾郵件 <br/><br/> 僅限檢視稽核記錄 <br/><br/> View-Only 隔離 <br/><br/> View-Only 威脅情報|
-|SecurityReader|僅可供查看組織中的所有保護層面（反垃圾郵件、反惡意程式碼、反欺騙、隔離等）。 <br/><br/> Azure AD 中的[安全性讀者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader)角色成員會自動取得此角色群組的許可權。|安全性讀取者 <br/><br/> View-Only 反惡意程式碼 <br/><br/> View-Only 反垃圾郵件 <br/><br/> View-Only 隔離 <br/><br/> View-Only 威脅情報|
+|RecordsManagement|設定符合性功能，例如保留原則標記、郵件分類和郵件流程規則 (也稱為傳輸規則) 。|郵件追蹤 <br/><br/> 保留管理 <br/><br/> 傳輸規則|
+|SecurityAdministrator|設定組織中的所有保護方面 (反垃圾郵件、反惡意程式碼、反欺騙、隔離等等 ) 。 <br/><br/> Azure AD 中的[安全性系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)角色成員會自動取得此角色群組的許可權。|軟體 <br/><br/> 反垃圾郵件 <br/><br/> 稽核記錄 <br/><br/> 隔離 <br/><br/> 安全性系統管理員 <br/><br/> 敏感度標籤系統管理員 <br/><br/> View-Only 反惡意程式碼 <br/><br/> View-Only 反垃圾郵件 <br/><br/> 僅限檢視稽核記錄 <br/><br/> View-Only 隔離 <br/><br/> View-Only 威脅情報|
+|SecurityReader|僅可供查看組織中的所有保護方面 (反垃圾郵件、反惡意程式碼、反欺騙、隔離等 ) 的存取權。 <br/><br/> Azure AD 中的[安全性讀者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader)角色成員會自動取得此角色群組的許可權。|安全性讀取者 <br/><br/> View-Only 反惡意程式碼 <br/><br/> View-Only 反垃圾郵件 <br/><br/> View-Only 隔離 <br/><br/> View-Only 威脅情報|
 |TenantAdmins|這個角色群組中的成員資格能跨服務同步，且為集中管理的。 根據預設，此角色群組不會被指派任何角色。 不過，它會是「組織管理」角色群組的成員，並會繼承這些許可權。|無|
 |ViewOnlyOrganizationManagement|查看組織中的收件者、保護和設定物件及其屬性。|合規性系統管理員 <br/><br/> 安全性系統管理員 <br/><br/> 安全性讀取者 <br/><br/> 敏感度標籤系統管理員 <br/><br/> 僅限檢視組態 <br/><br/> 僅限檢視收件者|
 |
@@ -70,9 +71,10 @@ ms.locfileid: "44588249"
 
 下表說明獨立 EOP 中可用的內建角色。
 
-||||
+****
+
+|Role * *|描述|預設角色群組指派|
 |---|---|---|
-|**Role**|**描述**|**預設角色群組指派**|
 |軟體|查看及修改反惡意程式碼功能的設定和報告。|OrganizationManagement <br/><br/> SecurityAdministrator|
 |反垃圾郵件|查看及修改反垃圾郵件功能的設定和報告。|OrganizationManagement <br/><br/> SecurityAdministrator|
 |稽核記錄|搜尋系統管理員的審計記錄檔，然後查看結果。|ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> SecurityAdministrator|
@@ -101,12 +103,12 @@ ms.locfileid: "44588249"
 |敏感度標籤管理員<sup>\*</sup>||OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> ViewOnlyOrganizationManagement|
 |監督<sup>\*</sup>||OrganizationManagement|
 |傳輸衛生|管理反惡意程式碼、反垃圾郵件功能和反欺騙功能。|HygieneManagement <br/><br/> OrganizationManagement|
-|傳輸規則|建立及管理郵件流程規則（也稱為傳輸規則）。|OrganizationManagement <br/><br/> RecordsManagement|
+|傳輸規則|建立及管理郵件流程規則 (也稱為傳輸規則) 。|OrganizationManagement <br/><br/> RecordsManagement|
 |使用者選項|修改現有的郵件使用者。|HelpDesk <br/><br/> OrganizationManagement|
 |View-Only 反惡意程式碼|查看反惡意程式碼功能的設定和報告。|OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
 |View-Only 反垃圾郵件|查看反垃圾郵件功能的設定和報告。|OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
 |僅限檢視稽核記錄|搜尋系統管理員的審計記錄檔，然後查看結果。|ComplianceManagement <br/><br/> OrganizationManagement <br/><br/> SecurityAdministrator|
-|僅限檢視組態|查看組織中的所有組織和郵件流程（非收件者）設定。|ComplianceManagement <br/><br/> HygieneManagement <br/><br/> OrganizationManagement <br/><br/> ViewOnlyOrganizationManagement|
+|僅限檢視組態|查看組織中的所有組織和郵件流程 (非收件者) 設定。|ComplianceManagement <br/><br/> HygieneManagement <br/><br/> OrganizationManagement <br/><br/> ViewOnlyOrganizationManagement|
 |View-Only 隔離|查看所有收件者的所有隔離郵件。|OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
 |僅限檢視收件者|View 收件者屬性並執行郵件追蹤。|ComplianceManagement <br/><br/> HelpDesk <br/><br/> HygieneManagement <br/><br/> MailFlowAdministrator <br/><br/>  OrganizationManagement <br/><br/> ViewOnlyOrganizationManagement|
 |View-Only 威脅情報<sup>\*</sup>||OrganizationManagement <br/><br/> SecurityAdministrator <br/><br/> SecurityReader|
@@ -123,9 +125,10 @@ ms.locfileid: "44588249"
 
 下表列出 Microsoft 365 角色和其對應的獨立 EOP 角色群組。 如需這些角色的相關資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
-|||
+****
+
+|Microsoft 365 角色|EOP 角色群組|
 |---|---|
-|**Microsoft 365 角色**|**EOP 角色群組**|
 |Exchange 系統管理員|OrganizationManagement|
 |全域系統管理員|OrganizationManagement <br/><br/> **附注**：全域系統管理員角色和 OrganizationManagement 角色群組會使用特殊的「公司系統管理員」角色群組進行結合。 公司系統管理員角色群組是在內部管理，且無法直接修改。|
 |密碼系統管理員|HelpDesk|
@@ -142,9 +145,9 @@ ms.locfileid: "44588249"
 
 若要確認您是否已成功複製角色群組，請執行下列其中一個步驟：
 
-- 在 EAC 中，移至 [**許可權**] [系統 \> **管理員角色**]，然後確認角色群組已列出（或未列出）。 選取角色群組，並確認詳細資料窗格中的設定，或按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 以驗證設定。
+- 在 EAC 中，移至 [**許可權**] [系統 \> **管理員角色**]，然後確認角色群組 (列出] 或 [未列出]) 。 選取角色群組，並確認詳細資料窗格中的設定，或按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 以驗證設定。
 
-- 在 Exchange Online PowerShell 中， \<Role Group Name\> 以角色群組的名稱取代，並執行下列命令，以確認角色群組存在（或不存在），並確認設定：
+- 在 Exchange Online PowerShell 中， \<Role Group Name\> 以角色群組的名稱取代，並執行下列命令，以確認角色群組存在 (或不存在) 並確認設定：
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

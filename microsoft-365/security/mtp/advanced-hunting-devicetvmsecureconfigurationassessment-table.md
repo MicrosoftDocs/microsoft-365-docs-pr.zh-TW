@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ade218a440f8e7db223460e95363eae2cb659622
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 38f5cefb9095ca6c1f628f25a5ed374516c2b0a4
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327952"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648998"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -43,7 +43,7 @@ ms.locfileid: "44327952"
 | `Timestamp` | datetime | 記錄的產生日期和時間 |
 | `ConfigurationId` | string | 特定設定的唯一識別碼 |
 | `ConfigurationCategory` | string | 設定所屬的類別或群組：應用程式、作業系統、網路、帳戶、安全性控制 |
-| `ConfigurationSubcategory` | 字串 | 設定所屬的子類別或子群組。 在許多情況下，這會描述特定性能或功能。 |
+| `ConfigurationSubcategory` | string | 設定所屬的子類別或子群組。 在許多情況下，這會描述特定性能或功能。 |
 | `ConfigurationImpact` | string | 設定對整個設定分數 (1-10) 的評分影響 |
 | `IsCompliant` | 布林值 | 指出設定或原則是否已正確設定 |
 
@@ -52,7 +52,7 @@ ms.locfileid: "44327952"
 - [主動威脅搜捕](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)
 - [威脅與弱點管理的概觀](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

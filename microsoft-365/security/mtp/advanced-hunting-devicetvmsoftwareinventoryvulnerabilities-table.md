@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0a7ac5a68bcdb12b3cdcd94cac8012c7807a6e2b
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 70b687a185538b11cf0a8975eebf2a5d8b53ec11
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327945"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648950"
 ---
 # <a name="devicetvmsoftwareinventoryvulnerabilities"></a>DeviceTvmSoftwareInventoryVulnerabilities
 
@@ -40,11 +40,11 @@ ms.locfileid: "44327945"
 | `DeviceId` | string | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
 | `OSPlatform` | string | 電腦上執行的作業系統平台。 這表示特定作業系統，包括相同家族內的變化，例如 Windows 10 和 Windows 7。 |
-| `OSVersion` | string | 電腦上執行的作業系統版本。 |
-| `OSArchitecture` | string | 電腦上執行的作業系統架構。 |
-| `SoftwareVendor` | string | 軟體廠商的名稱 |
-| `SoftwareName` | string | 軟體產品名稱 |
-| `SoftwareVersion` | string | 軟體產品的版本號碼 |
+| `OSVersion` | 字串 | 電腦上執行的作業系統版本。 |
+| `OSArchitecture` | 字串 | 電腦上執行的作業系統架構。 |
+| `SoftwareVendor` | 字串 | 軟體廠商的名稱 |
+| `SoftwareName` | 字串 | 軟體產品名稱 |
+| `SoftwareVersion` | 字串 | 軟體產品的版本號碼 |
 | `CveId` | 字串 | 在常見弱點與漏洞 (CVE) 系統下指派給安全性弱點的唯一識別碼 |
 | `VulnerabilitySeverityLevel` | 字串 | 安全性弱點之嚴重性層級的指派是根據 CVSS 分數，以及受威脅環境影響的動態因素 |
 
@@ -55,7 +55,7 @@ ms.locfileid: "44327945"
 - [主動威脅搜捕](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)
 - [威脅與弱點管理的概觀](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

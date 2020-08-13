@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a1290ee415073a9cb3948bc4b0cc6bb3ae13285b
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 36e76ae097dc31c6d7eb7eeff18dd2128ff0cc5c
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899014"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649484"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
@@ -38,11 +38,11 @@ ms.locfileid: "44899014"
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
-| `AlertId` | string | 警示的唯一識別碼。 |
+| `AlertId` | 字串 | 警示的唯一識別碼。 |
 | `Title` | 字串 | 警示標題 |
 | `Category` | 字串 | 輸入由警示所識別的威脅指示器或入侵活動類型 |
-| `Severity` | string | 表示由警示所識別之威脅指示器或入侵活動的潛在影響 (高、中或低) |
-| `ServiceSource` | string | 提供提醒資訊的產品或服務 |
+| `Severity` | 字串 | 表示由警示所識別之威脅指示器或入侵活動的潛在影響 (高、中或低) |
+| `ServiceSource` | 字串 | 提供提醒資訊的產品或服務 |
 | `DetectionSource` | string | 識別值得注意之元件或活動的偵測技術或感應器 |
 | `AttackTechniques` | string | MITRE ATT&與觸發警示之活動相關聯的 CK 技術 |
 
@@ -50,6 +50,6 @@ ms.locfileid: "44899014"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

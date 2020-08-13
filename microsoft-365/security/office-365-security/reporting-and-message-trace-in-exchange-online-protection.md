@@ -13,17 +13,17 @@ localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您將瞭解 Microsoft Exchange Online Protection （EOP）系統管理員可以使用的報告和疑難排解工具。
-ms.openlocfilehash: b33d343d9b7f02e32619031d3ecf72ad12f891fd
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+description: 在本文中，您將瞭解 Microsoft Exchange Online Protection (EOP) 系統管理員可以使用的報告和疑難排解工具。
+ms.openlocfilehash: ddf8c021681bb600548b134d678d1e0fb0f29d0c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588165"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652798"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的報告和郵件追蹤
 
-在未使用 Exchange online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織中，EOP 提供許多不同的報告，可協助您判斷組織的整體狀態與健康情況。 還有可協助您疑難排解特定事件 (例如郵件未抵達其預定收件者) 的工具，以及有助於符合規範需求的稽核報告。
+在包含 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP 提供許多不同的報告，可協助您判斷貴組織的整體狀態與健康情況) EOP。 還有可協助您疑難排解特定事件 (例如郵件未抵達其預定收件者) 的工具，以及有助於符合規範需求的稽核報告。
 
 ## <a name="usage-reports"></a>使用情況報告
 
@@ -33,7 +33,7 @@ ms.locfileid: "44588165"
 
 **電子郵件應用程式使用狀況**：查看使用的電子郵件應用程式的相關資訊。 這包括每個應用程式的連線總數，以及連接的 Outlook 版本。
 
-**信箱使用狀況**：查看信箱的儲存空間、配額消耗、專案計數及最後一個活動（傳送或讀取活動）的相關資訊。
+**信箱使用狀況**：查看信箱的「傳送或讀取活動」) 使用的儲存空間、配額消耗、專案計數及最後一項活動的相關資訊 (。
 
 如需詳細資訊，請參閱下列資源：
 
@@ -49,7 +49,7 @@ ms.locfileid: "44588165"
 
 這些增強型報告提供 EOP 系統管理員的互動式報告經驗（包括摘要資訊），以及深入查看詳細資訊的功能。
 
-**高級威脅防護（ATP）**：查看有關安全連結的資訊，及屬於 ATP 的安全附件。
+**高級威脅防護 (ATP) **：查看有關安全連結的資訊，及屬於 ATP 的安全附件。
 
 **EOP**：查看組織中惡意程式碼偵測、欺騙性郵件、垃圾郵件偵測和郵件流程的相關資訊。
 
@@ -75,9 +75,10 @@ ms.locfileid: "44588165"
 
 下表說明可使用 EOP 報告和郵件追蹤資料的時間及時間長短。
 
-||||
-|:-----|:-----|:-----|
-|**報告類型**|**資料可用時間 (回顧期間)**|**延遲**|
+****
+
+|報表類型|資料可用時間 (回顧期間)|延遲|
+|---|---|---|
 |郵件保護摘要報告|90 天|郵件資料彙總大部分會在 24 到 48 小時內完成。部分次要的增量彙總變更最多存在 5 天。|
 |郵件保護詳細資料包告|90 天|針對 7 天內的詳細資料，資料應於 24 小時內出現，但可能要等到 48 小時後才完成。部分次要的增量變更最多存在 5 天。 <br/><br/> 若要檢視超過 7 天之郵件的詳細資料報告，結果可能需要幾個小時。|
 |郵件追蹤資料|90 天|針對 7 天內的郵件執行郵件追蹤時，郵件應於 5 到 30 分鐘內出現。<br/><br/> 針對超過 7 天的郵件執行郵件追蹤時，結果可能需要幾個小時。|

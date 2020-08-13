@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a265bb84b0ad59ee56cb0f0670951bab1bcd344a
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 2c16929555b3923086e249db61cebb3cf7af17c8
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327948"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648962"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -39,13 +39,13 @@ ms.locfileid: "44327948"
 |-------------|-----------|-------------|
 | `ConfigurationId` | string | 特定設定的唯一識別碼 |
 | `ConfigurationImpact` | string | 設定對整個組態分數 (1-10) 的評分影響 |
-| `ConfigurationName` | string | 組態的顯示名稱 |
-| `ConfigurationDescription` | string | 組態的描述 |
-| `RiskDescription` | string | 相關風險的描述 |
-| `ConfigurationCategory` | string | 設定所屬的類別或群組：應用程式、作業系統、網路、帳戶、安全性控制|
+| `ConfigurationName` | 字串 | 組態的顯示名稱 |
+| `ConfigurationDescription` | 字串 | 組態的描述 |
+| `RiskDescription` | 字串 | 相關風險的描述 |
+| `ConfigurationCategory` | 字串 | 設定所屬的類別或群組：應用程式、作業系統、網路、帳戶、安全性控制|
 | `ConfigurationSubcategory` | string |設定所屬的子類別或子群組。 在許多情況下，這會描述特定性能或功能。 |
-| `ConfigurationBenchmarks` | string | 行業效能評定清單建議相同或類似的設定 |
-| `RelatedMitreTechniques` | string | 與設定相關的 Mitre ATT&CK 架構技術清單 |
+| `ConfigurationBenchmarks` | 字串 | 行業效能評定清單建議相同或類似的設定 |
+| `RelatedMitreTechniques` | 字串 | 與設定相關的 Mitre ATT&CK 架構技術清單 |
 | `RelatedMitreTactics ` | 字串 | 與設定相關的 Mitre ATT&CK 架構技巧清單 |
 
 ## <a name="related-topics"></a>相關主題
@@ -53,7 +53,7 @@ ms.locfileid: "44327948"
 - [主動威脅搜捕](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)
 - [威脅與弱點管理的概觀](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
-ms.openlocfilehash: 7d1c62bd6ddef44e86e47b894e2d386dd8c0bd55
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 959f842e05939e4a6cfc54d1b860de96bd8546e6
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755185"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656930"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 的說明和支援
 
-在未使用 Exchange online 信箱的 Exchange Online 或獨立 Exchange Online Protection （EOP）組織中使用信箱的 Microsoft 365 組織中，本主題所列的技術支援資源，可協助您在 EOP 中遇到問題時，尋找答案。 Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
+在使用 Exchange Online 或獨立 Exchange online Protection 中信箱的 Microsoft 365 組織中 (EOP) 不含 Exchange Online 信箱的組織，本主題中所列的技術支援資源，可協助您在 EOP 有困難時找到答案。 Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
 
 ## <a name="self-support-options"></a>自我支援選項
 
@@ -69,8 +69,10 @@ ms.locfileid: "44755185"
 
 Microsoft 為全球的產品支援提供本機或免付費電話號碼。許多支援中心在上班時間或每日的英文時間（一天24小時）中提供您當地語言的協助。如果您未看到下列所列的位置，請依照上述的方式使用虛擬代理程式來尋找您當地的支援電話號碼。
 
-|**國家或區域**|**購買前和帳務問題**|**技術支援問題**|
-|:-----|:-----|:-----|
+****
+
+|國家或地區|購買前和帳務問題|技術支援問題|
+|---|---|---|
 |巴西|免付費電話：08007621146 <br/> 本地：1147001999|相同|
 |法國|免付費電話：0805 540 594 <br/> 本地：01 57 32 42 97|相同|
 |德國|免付費電話：0800 589 2332 <br/>  本地：069 380 789 508|相同|
@@ -79,6 +81,7 @@ Microsoft 為全球的產品支援提供本機或免付費電話號碼。許多�
 |西班牙|免付費電話：900 814 197 <br/> 本地：912 718 160|相同|
 |英國|免付費電話：0800 032 6417 <br/> 本地：0203 450 6455|相同|
 |美國|免付費電話：1-877-913-2707|免付費電話：1-800-865-9408|
+|
 
 ## <a name="for-more-information-about-eop-documentation"></a>如需 EOP 文件的詳細資訊
 

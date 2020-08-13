@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解 Office 365 的 ATP 安全附件功能及如何取得您訂閱的功能。
-ms.openlocfilehash: 77842596b460e2d96ccde79e9c8c6ef3d1f8985a
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 16b9ae47ead318e200cdf1e5e5beb58c2bc396bc
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754757"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656990"
 ---
 # <a name="atp-safe-attachments"></a>ATP 安全附件
 
@@ -41,15 +41,16 @@ ATP 保護也會延伸到 SharePoint Online、商務用 OneDrive 和 Microsoft T
 
 - 已設定 ATP 安全附件原則。 (請參閱[在 Office 365 中設定 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)。)
 
-- 使用者已使用公司或學校帳戶登入。 （請參閱登[入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。）
+- 使用者已使用公司或學校帳戶登入。  (請參閱登[入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。 ) 
 
 若要定義 (或編輯) ATP 原則，您必須獲派適當的角色。 下表中有一些範例描述：
 
 |角色|指派位置/條件|
-|---------|---------|
-|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。 （請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。）|
+|---|---|
+|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。 ) |
 |安全性系統管理員|Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織管理|Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
+|
 
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>如何得知 ATP 安全附件保護已實作
 
@@ -57,16 +58,19 @@ ATP 保護也會延伸到 SharePoint Online、商務用 OneDrive 和 Microsoft T
 
 下表將列舉幾個案例。 在上述所有情況下，我們假設組織擁有包含「高級威脅防護」的 Microsoft 365 訂閱。
 
-|**範例案例**|**此案例中是否套用 ATP 安全附件保護？**|
-|:-----|:-----|
+****
+
+|範例案例|此案例中是否套用 ATP 安全附件保護？|
+|---|---|
 |Pat 的組織擁有 Office 365 E5，但尚未為 ATP 安全附件定義任何原則。|否。 雖然功能可供使用，但是必須定義至少一個 ATP 安全附件原則，才能使用「ATP 安全附件」保護。|
 |Lee 是 Contoso 銷售部門的員工。 Lee 的組織已實作 ATP 安全附件原則，僅套用至財務部門員工。|否。 在此情況下，財務部門員工將擁有 ATP 安全附件保護，但是其他員工 (包括銷售部門) 在定義包含這些群組的原則之前沒有保護。|
 |昨天，Jean-francois 組織的系統管理員會設定適用于所有員工的 ATP 安全附件原則。 Jean 在今天稍早收到包含附件的電子郵件訊息。|是。 在此範例中，Jean 有「進階威脅防護」的授權，且包含 Jean 的 ATP 安全附件原則已定義。 新原則通常需要 30 分鐘的時間才會在資料中心之間生效；在此案例中已經過了一天，所以原則應該會生效。|
 |Chris 的組織擁有 Office 365 E5，並且已針對組織中的所有人實作 ATP 安全附件原則。 Chris 會收到包含附件的電子郵件，並將郵件轉寄給組織外部的其他人。|ATP 安全附件保護已針對 Chris 所收到的訊息實作。 如果收件者的組織還實作了「ATP 安全附件」原則，則 Chris 轉寄的郵件在抵達時受限於這些原則。|
 |Jamie 的組織已實作 ATP 安全附件原則，並且已開啟 [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)。 Jamie 假設 SharePoint Online 中的每個檔案都已掃描，並且可以安全開啟或下載。|ATP 安全附件保護已根據定義的原則進行實作，但是這並非表示 SharePoint Online、商務用 OneDrive 或 Microsoft Teams 中的每個個別檔案都已經過掃描。 (若要深入了解，請參閱[適用於 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)。)|
+|
 
 ## <a name="submitting-files-for-malware-analysis"></a>提交檔案以進行惡意程式碼分析
 
 - 如果您想要對收到的檔案要求 Microsoft 進行分析，請造訪[提交檔案以進行惡意程式碼分析](https://aka.ms/wdsi/submit) (英文)。
 
-- 如果您收到的電子郵件（包含或不含附件）您想要提交給 Microsoft 進行分析，請參閱[將郵件和檔案報告給 microsoft](report-junk-email-messages-to-microsoft.md)。
+- 如果您收到的電子郵件訊息 (包含或沒有要提交給 Microsoft 進行分析的附件) ，請參閱[將郵件和檔案報告給 microsoft](report-junk-email-messages-to-microsoft.md)。

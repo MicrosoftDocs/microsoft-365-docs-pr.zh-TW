@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 436c4d7306f9f5febd614489090a0a10929ba3c9
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: cf2038a15242139817eb073ec2a6408905824123
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204872"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649316"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
@@ -44,16 +44,16 @@ ms.locfileid: "45204872"
 | `Protocol` | string | 通訊期間使用的通訊協定 |
 | `AccountName` | string | 帳戶的使用者名稱 |
 | `AccountDomain` | string | 帳戶的網域 |
-| `AccountUpn` | string | 帳戶的使用者主要名稱（UPN） |
-| `AccountSid` | string | 帳戶的安全性識別碼（SID） |
+| `AccountUpn` | string | 帳戶的使用者主要名稱 (UPN)  |
+| `AccountSid` | string | 帳戶的安全性識別碼 (SID)  |
 | `AccountObjectId` | string | Azure AD 中帳戶的唯一識別碼 |
 | `AccountDisplayName` | string | 顯示在通訊錄中之帳戶使用者的名稱。 通常是指定的名稱或名字、中間初始名稱或姓氏的組合。 |
-| `DeviceName` | string | 端點的完整功能變數名稱（FQDN） |
+| `DeviceName` | string | 端點 (FQDN) 的完整功能變數名稱 |
 | `IPAddress` | string | 指派給端點的 IP 位址，並在相關的網路通訊期間使用 |
 | `DestinationDeviceName` | string | 執行伺服器應用程式（處理錄製的動作）的裝置名稱 |
 | `DestinationIPAddress` | string | 執行伺服器應用程式（處理錄製的動作）的裝置的 IP 位址 |
-| `TargetDeviceName` | string | 已錄製動作套用至之裝置的完整功能變數名稱（FQDN） |
-| `TargetAccountUpn` | string | 套用錄製動作之帳戶的使用者主要名稱（UPN） |
+| `TargetDeviceName` | string | 套用錄製動作之裝置的完整功能變數名稱 (FQDN)  |
+| `TargetAccountUpn` | string | 套用錄製動作之帳戶的使用者主要名稱 (UPN)  |
 | `TargetAccountDisplayName` | string | 套用錄製的動作所套用之帳戶的顯示名稱 |
 | `Location` | string | 與事件關聯的城市、國家或其他地理位置 |
 | `ReportId` | long | 事件的唯一識別碼 |
@@ -63,6 +63,6 @@ ms.locfileid: "45204872"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

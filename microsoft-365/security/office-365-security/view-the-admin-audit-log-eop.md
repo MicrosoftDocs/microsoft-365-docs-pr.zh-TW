@@ -11,22 +11,27 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
-description: 系統管理員可以瞭解如何在獨立 Exchange Online Protection （EOP）中查看及搜尋管理審核記錄。
-ms.openlocfilehash: e8c12f622c4dc382b11d03424e45c33e3afe3cbf
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+description: 系統管理員可以瞭解如何在獨立 Exchange Online Protection (EOP) 中查看及搜尋管理審核記錄。
+ms.openlocfilehash: 171f3ec531b232ca796232ab26caefbee8afc75c
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44613321"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653494"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>在獨立版 EOP 中檢視系統管理稽核記錄
 
-在沒有 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）組織中，您可以使用 Exchange 系統管理中心（EAC）或獨立的 EOP PowerShell，在系統管理員審核記錄中搜尋並查看專案。
+在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，您可以使用 Exchange 系統管理中心 (EAC) 或獨立 EOP PowerShell，以搜尋並查看系統管理員審核記錄檔中的專案。
 
 系統管理員審核記錄會根據獨立 EOP PowerShell Cmdlet，記錄由系統管理員及已獲指派系統管理許可權之使用者所執行的特定動作。 系統管理員審核記錄中的專案會提供您執行的指令程式、所使用的參數、使用 Cmdlet 的執行者，以及受影響物件的相關資訊。
 
 > [!NOTE]
-> <ul><li>系統管理員審核記錄預設為啟用，您無法停用。</li><li>系統管理員審核記錄不會根據以**Get**、 **Search**或**Test**動詞開頭的指令程式，記錄動作。</li><li>稽核記錄項目會保留 90 天的時間。 當專案超過90天時，它會被刪除</li></ul>
+>
+> - 系統管理員審核記錄預設為啟用，您無法停用。
+>
+> - 系統管理員審核記錄不會根據以**Get**、 **Search**或**Test**動詞開頭的指令程式，記錄動作。
+>
+> - 稽核記錄項目會保留 90 天的時間。 當專案超過90天時，它會被刪除
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -34,7 +39,7 @@ ms.locfileid: "44613321"
 
 - 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 具體說來，您需要 ComplianceManagement 審核記錄檔或 View-Only 的「審核記錄」角色，其預設會指派給、OrganizationManagement （全域管理員）和 SecurityAdministrator 角色群組。 如需詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)和[使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您必須已獲指派權限，才能執行這些程序。 具體而言，您需要 View-Only 的審計記錄檔或的「審計記錄」角色指派給 ComplianceManagement、OrganizationManagement (全域管理員) ，以及 SecurityAdministrator 角色群組預設。 如需詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)和[使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - 如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -45,7 +50,7 @@ ms.locfileid: "44613321"
 
 1. 在 EAC 中，移至 [**規範管理**] [ \> **審計**]，然後選擇 [**執行系統管理員審計記錄報告**]。
 
-2. 在開啟的 [**搜尋系統管理員角色群組變更**] 頁面上，選擇 [**開始日期**] 和 [**結束日期**] （預設範圍是過去兩周），然後選擇 [**搜尋**]。 All configuration changes made during the specified time period are displayed, and can be sorted, using the following information:
+2. 在開啟的 [**搜尋系統管理員角色群組變更**] 頁面上，選擇 [**開始日期**] 和 [**結束日期**] (預設範圍是過去兩周) ，然後選擇 [**搜尋**]。 All configuration changes made during the specified time period are displayed, and can be sorted, using the following information:
 
    - **日期**：設定變更的日期和時間。 日期和時間會以格林威治標準時間 (UTC) 格式儲存。
 
@@ -57,13 +62,13 @@ ms.locfileid: "44613321"
 
    - **已修改物件**： Cmdlet 所修改的物件。
 
-   - **Parameters （參數： Value）**：使用的 Cmdlet 參數，以及使用參數指定的任何值。
+   - **Parameters (參數： Value) **：所使用的 Cmdlet 參數，以及使用參數指定的任何值。
 
 3. 如果您要列印特定的稽核記錄項目，請選擇詳細資料窗格中的 [ **列印**] 按鈕。
 
 ## <a name="use-standalone-eop-powershell-to-view-the-admin-audit-log"></a>使用獨立 EOP PowerShell 來查看系統管理員審核記錄檔
 
-您可以使用獨立 EOP PowerShell 來搜尋符合您指定之準則的審計記錄專案。 請使用下列語法：
+您可以使用獨立 EOP PowerShell 來搜尋符合您指定之準則的審計記錄專案。 使用下列語法：
 
 ```PowerShell
 Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Parameter1,Parameter2,...ParameterN>] [-StartDate <UTCDateTime>] [-EndDate <UTCDateTime>] [-UserIds <"User1","User2",..."UserN">] [-ObjectIds <"Object1","Object2",..."ObjectN">] [-IsSuccess <$true | $false>]
@@ -76,13 +81,13 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 - _ObjectIds_參數會依 Cmdlet 所修改的物件來篩選結果。 有效的值取決於物件在審計記錄中的表示方式。 例如：
 
   - 名稱
-  - 正常化辨別名稱（例如，contoso.com/Users/Akia Al Zuhairi）
+  - 正常化辨別名稱 (例如，contoso.com/Users/Akia Al Zuhairi) 
 
   您可能需要在此 Cmdlet 上使用其他篩選參數，以縮小結果，並識別您感興趣的物件類型。
 
-- _UserIds_參數會依進行變更的使用者（執行 Cmdlet 的執行者）來篩選結果。
+- _UserIds_參數會依據執行 Cmdlet) 的變更 (來篩選結果。
 
-- 針對_StartDate_和_EndDate_參數，如果您指定的日期/時間值不含時區，則值為 [世界時（UTC）]。 若要指定這個參數的日期/時間值，請使用下列其中一個選項︰
+- 針對_StartDate_和_EndDate_參數，如果您指定的日期/時間值不含時區，則此值會在 [標準時間] (UTC) 。 若要指定這個參數的日期/時間值，請使用下列其中一個選項︰
 
   - 指定 UTC 的日期/時間值：例如，"2016-05-06 14:30:00z"。
 
@@ -133,9 +138,10 @@ Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04
 
 每個審計記錄專案都包含下表所述的資訊。 審核記錄檔包含一或多個審計記錄專案。
 
-|||
+****
+
+|欄位|描述|
 |---|---|
-|**Field**|**描述**|
 |`RunspaceId`|此欄位是由 EOP 在內部使用。|
 |`ObjectModified`|此欄位包含的物件是由欄位中指定的 Cmdlet 所修改 `CmdletName` 。|
 |`CmdletName`|此欄位包含使用者在欄位中執行的 Cmdlet 名稱 `Caller` 。|

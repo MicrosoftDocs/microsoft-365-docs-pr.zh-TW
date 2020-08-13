@@ -13,26 +13,29 @@ localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
-description: Admins in 獨立 Exchange Online Protection （EOP）組織可以瞭解如何在 Exchange 系統管理中心（EAC）和獨立 Exchange Online Protection （EOP） PowerShell 中建立、修改和移除通訊群組和擁有郵件功能的安全性群組。
-ms.openlocfilehash: 42086b67e22df4725bf07bf227853c070f936f24
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+description: Admins in 獨立 Exchange Online Protection (EOP) 組織可以瞭解如何建立、修改及移除 Exchange 系統管理中心內的通訊群組和擁有郵件功能的安全性群組 (EAC) 和獨立 Exchange Online Protection (EOP) PowerShell。
+ms.openlocfilehash: 813735d4024c3b8424a6bbac51ebef7b4c53e590
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44616499"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653650"
 ---
 # <a name="manage-groups-in-eop"></a>管理 EOP 中的群組
 
-在沒有 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）組織中，您可以建立、修改及移除下列類型的群組：
+在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，您可以建立、修改及移除下列類型的群組：
 
-- **通訊群組**：郵件使用者或其他通訊群組的集合。 例如，小組或其他需要在感興趣的常見區域接收或傳送電子郵件的群組。 通訊群組專用於散佈電子郵件，而不是安全主體（他們不能有指派許可權）。
+- **通訊群組**：郵件使用者或其他通訊群組的集合。 例如，小組或其他需要在感興趣的常見區域接收或傳送電子郵件的群組。 通訊群組專門用來散佈電子郵件，而不是安全主體 (他們不能) 指派許可權。
 
 - 擁有**郵件功能的安全性群組**：郵件使用者的集合，以及需要系統管理員角色存取許可權的其他安全性群組。 例如，您可能想要授與特定群組的使用者系統管理員許可權，讓他們可以設定反垃圾郵件和反惡意程式碼設定。
 
     > [!NOTE]
-    > <ul><li>根據預設，啟用郵件功能的新安全性群組會拒絕來自外部（未驗證）寄件者的郵件。</li><li>不要將通訊群組新增至擁有郵件功能的安全性群組。</li></ul>.
+    >
+    > - 根據預設，啟用郵件功能的新安全性群組會拒絕來自外部 (未驗證) 寄件者的郵件。
+    >
+    > - 不要將通訊群組新增至擁有郵件功能的安全性群組。
 
-您可以在 Exchange 系統管理中心（EAC）和獨立 EOP PowerShell 中管理群組。
+您可以在 Exchange 系統管理中心管理群組 (EAC) 和獨立 EOP PowerShell。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -42,7 +45,7 @@ ms.locfileid: "44616499"
 
 - 當您在獨立 EOP PowerShell 中管理群組時，可能會遇到節流。 本主題中的 PowerShell 程式使用批次處理方法，可導致幾分鐘的傳播延遲，然後才會顯示命令的結果。
 
-- 您必須已獲指派權限，才能執行這些程序。 具體說來，您需要「通訊群組」角色，預設會指派給 OrganizationManagement （全域系統管理員）和 RecipientManagement 角色群組。 如需詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)和[使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您必須已獲指派權限，才能執行這些程序。 具體說來，您需要通訊群組角色，預設會指派給 OrganizationManagement (global admins) 和 RecipientManagement 角色群組。 如需詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)和[使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - 如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -67,7 +70,7 @@ ms.locfileid: "44616499"
 
    - <sup>\*</sup>**別名**：使用此方塊可輸入群組的別名名稱。 別名不得超過64個字元，且必須是唯一的。 當使用者在電子郵件的 [我的那一行] 中輸入別名時，它會解析為群組的顯示名稱。
 
-   - <sup>\*</sup>**電子郵件地址**：電子郵件地址是由 at （@）符號左側的別名及右側的網域所組成。 預設會**使用 alias 的**值作為別名值，但您可以變更它。 在 [網域] 值中，按一下下拉清單，然後選取組織中的 [已接受的網域]。
+   - <sup>\*</sup>**電子郵件地址**：電子郵件地址是由位於 ( @ ) 符號之左側的別名，以及右側的網域所組成。 預設會**使用 alias 的**值作為別名值，但您可以變更它。 在 [網域] 值中，按一下下拉清單，然後選取組織中的 [已接受的網域]。
 
    - **描述**：此描述會顯示在通訊錄和 EAC 中的 [詳細資料] 窗格中。
 
@@ -103,9 +106,9 @@ ms.locfileid: "44616499"
 
   如果您已實現群組命名原則，則顯示名稱必須符合原則所定義的命名格式。
 
-- **別名**：這是出現在 @ 符號左邊的電子郵件地址部分。 如果您變更別名，群組的主要 SMTP 位址也會變更，而且會包含新的別名。 此外，具有先前別名的電子郵件地址會保留為群組的 proxy 位址。
+- **別名**：這是電子郵件地址的一部分，出現在 ( @ ) 符號的左側。 如果您變更別名，群組的主要 SMTP 位址也會變更，而且會包含新的別名。 此外，具有先前別名的電子郵件地址會保留為群組的 proxy 位址。
 
-- **電子郵件地址**：電子郵件地址是由 at （@）符號左側的別名及右側的網域所組成。 預設會**使用 alias 的**值作為別名值，但您可以變更它。 在 [網域] 值中，按一下下拉清單，然後選取組織中的 [已接受的網域]。
+- **電子郵件地址**：電子郵件地址是由位於 ( @ ) 符號之左側的別名，以及右側的網域所組成。 預設會**使用 alias 的**值作為別名值，但您可以變更它。 在 [網域] 值中，按一下下拉清單，然後選取組織中的 [已接受的網域]。
 
 - **描述**：此描述會顯示在通訊錄和 EAC 中的 [詳細資料] 窗格中。
 
@@ -161,7 +164,7 @@ New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","User
 
 - _Name_參數是必要的，最大長度為64個字元，且必須是唯一的。 如果您未使用 _DisplayName_ 參數，則 _Name_ 參數的值會用於顯示名稱。
 
-- 如果您未使用_alias_參數， _Name_參數會用於別名值。 移除空格，且不支援的字元會轉換成問號（？）。
+- 如果您未使用_alias_參數， _Name_參數會用於別名值。 移除空格，且不支援的字元會轉換成問號 (？ ) 。
 
 - 如果您未使用_PrimarySmtpAddress_參數，則會在_PrimarySmtpAddress_參數中使用 alias 值。
 
@@ -186,7 +189,7 @@ Set-EOPDistributionGroup -Identity <GroupIdentity> [-Alias <Text>] [-DisplayName
 Update-EOPDistributionGroupMember -Identity <GroupIdentity> -Members @("User1","User2",..."UserN")
 ```
 
-這個範例會使用變更西雅圖員工群組的主要 SMTP 位址（也稱為回復位址）來 sea.employees@contoso.com。
+本範例會使用變更主要 SMTP 位址 (也稱為「西雅圖員工」群組的回復位址) ，以供 sea.employees@contoso.com。
 
 ```PowerShell
 Set-EOPDistributionGroup "Seattle Employees" -PrimarysmptAddress "sea.employees@contoso.com"
@@ -223,9 +226,9 @@ Remove-EOPDistributionGroup -Identity "IT Administrators"
 
 若要確認您是否已成功建立、修改或移除通訊群組或已啟用郵件功能的安全性群組，請執行下列任一步驟：
 
-- 在 EAC 中，**移至 [** 收件者 \> **群組**]。 確認群組已列出（或未列出），並確認 [**群組類型**] 值。 選取群組，然後在詳細資料窗格中查看資訊，或按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-AddIcon.png) 以查看設定。
+- 在 EAC 中，**移至 [** 收件者 \> **群組**]。 請確認群組已列出 (或未列出) ，並確認 [**群組類型**] 值。 選取群組，然後在詳細資料窗格中查看資訊，或按一下 [**編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-AddIcon.png) 以查看設定。
 
-- 在 [獨立 EOP PowerShell] 中，執行下列命令來確認群組已列出（或未列出）：
+- 在 [獨立 EOP PowerShell] 中，執行下列命令，確認群組已列出 (或未列出) ：
 
   ```PowerShell
   Get-Recipient -RecipientType MailUniversalDistributionGroup,MailUniversalSecurityGroup -ResultSize unlimited

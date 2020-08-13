@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 的攻擊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a324c4427046480fe81f58fc810f020c87247032
-ms.sourcegitcommit: df6cc8c2eb2a65c7668f2953b0f7ec783a596d15
+ms.openlocfilehash: 125ebdf8b3d17e3a14abec8154129b0144928905
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/13/2020
-ms.locfileid: "44726799"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46652954"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
 
@@ -35,11 +35,11 @@ ms.locfileid: "44726799"
 這些攻擊採用一種互動模型，這種模型會假正在呼叫資訊的實體是自動化，而不是人。
 
 > [!IMPORTANT]
-> 您是否懷疑遇到違法的同意問題-從應用程式授與的許可權？ Microsoft Cloud App Security （MCAS）具有一些工具，可偵測、調查和修正您的 OAuth 應用程式。 此 MCAS 文章包含的教學課程，說明如何[調查 OAuth 應用程式的風險](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)。 您也可以設定[OAuth 的應用程式原則](https://docs.microsoft.com/cloud-app-security/app-permission-policy)，以調查應用程式要求的許可權，這些許可權是使用者授權這些應用程式，並廣泛核准或禁止這些許可權要求。
+> 您是否懷疑遇到違法的同意問題-從應用程式授與的許可權？ Microsoft Cloud App Security (MCAS) 具有偵測、調查和修正 OAuth 應用程式的工具。 此 MCAS 文章包含的教學課程，說明如何[調查 OAuth 應用程式的風險](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)。 您也可以設定[OAuth 的應用程式原則](https://docs.microsoft.com/cloud-app-security/app-permission-policy)，以調查應用程式要求的許可權，這些許可權是使用者授權這些應用程式，並廣泛核准或禁止這些許可權要求。
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Office 365 中的非法同意授權攻擊的外觀如何？
 
-您必須搜尋「**審計記錄**檔」，以尋找此攻擊的簽署（也稱為損損（IOC）標記。 如果組織擁有許多 Azure 註冊應用程式和大量使用者，最佳做法就是每週檢閱您的組織同意授權。
+您必須搜尋「**審計記錄**檔」，以尋找此攻擊的簽署，也稱為折衷 (IOC) 。 如果組織擁有許多 Azure 註冊應用程式和大量使用者，最佳做法就是每週檢閱您的組織同意授權。
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>尋找此攻擊徵象的步驟
 
@@ -47,18 +47,18 @@ ms.locfileid: "44726799"
 
 2. 流覽至 [**搜尋**]，然後選取 [**審核記錄搜尋**]。
 
-3. 搜尋（所有活動和所有使用者）並輸入開始日期和結束日期（如有需要），然後按一下 [**搜尋**]。
+3. 搜尋 (所有活動和所有使用者) 並輸入開始日期和結束日期（如有需要），然後按一下 [**搜尋**]。
 
 4. 按一下 [**篩選結果**]，並在 [**活動**] 欄位中輸入應用程式同意。
 
 5. 按一下結果以查看活動的詳細資料。 按一下 [**詳細資訊**] 以取得活動的詳細資料。 請檢查 IsAdminContent 是否設定為 True。
 
 > [!NOTE]
-> 
+>
 > 在發生事件後，可在搜尋結果中顯示對應的審計記錄專案，最多可花30分鐘到24小時的時間。
-> 
+>
 > 在審核記錄中保留及可搜尋的審計記錄的時間長度，取決於您的 Microsoft 365 訂閱，特別是指派給特定使用者的授權類型。 如需詳細資訊，請參閱[稽核記錄](../../compliance/search-the-audit-log-in-security-and-compliance.md)。
-> 
+>
 > 如果這個值為 true，表示擁有全域系統管理員存取權的人員可能已獲得資料的廣泛存取權。 如果這是未預期的，請採取步驟以[確認攻擊](#how-to-confirm-an-attack)。
 
 ## <a name="how-to-confirm-an-attack"></a>如何確認攻擊

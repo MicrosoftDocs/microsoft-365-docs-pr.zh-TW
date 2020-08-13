@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 104ca1b89c4dd6ede2ad06404bbdc0da7d11f689
-ms.sourcegitcommit: ab10c042e5e9c6a7b2afef930ab0d247a6aa275d
+ms.openlocfilehash: 80f1be5458474a34a303ae6c306c5907bde0df5a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44899228"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649034"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -41,35 +41,35 @@ ms.locfileid: "44899228"
 | `DeviceId` | string | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
 | `ActionType` | string | 觸發事件的活動類型 |
-| `FileName` | string | 記錄動作已套用的檔案名稱 |
-| `FolderPath` | string | 包含錄製的動作所套用之檔案的資料夾 |
-| `SHA1` | string | 記錄動作已套用的檔案 SHA-1 |
+| `FileName` | 字串 | 記錄動作已套用的檔案名稱 |
+| `FolderPath` | 字串 | 包含錄製的動作所套用之檔案的資料夾 |
+| `SHA1` | 字串 | 記錄動作已套用的檔案 SHA-1 |
 | `SHA256` | 字串 | 記錄動作已套用的檔案 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
 | `MD5` | 字串 | 錄製的動作所套用的檔案 MD5 雜湊 |
-| `ProcessId` | int | 新建立程式的進程識別碼（PID） |
+| `ProcessId` | int | 新建立程式的進程識別碼 (PID)  |
 | `ProcessCommandLine` | string | 用來建立新程式的命令列 |
 | `ProcessIntegrityLevel` | string | 新建立程式的完整性層級。 Windows 會根據某些特性，例如從已下載的網際網路上啟動的方式，將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
-| `ProcessTokenElevation` | string | 表明使用者存取控制（UAC）許可權提升是否已套用至新建立之程式的 Token 類型 |
+| `ProcessTokenElevation` | string | 表示使用者存取控制是否存在的 Token 類型 (UAC) 許可權提升套用至新建立的程式 |
 | `ProcessCreationTime` | datetime | 處理常式的建立日期和時間 |
 | `AccountDomain` | string | 帳戶的網域 |
 | `AccountName` | string | 帳戶的使用者名稱 |
-| `AccountSid` | string | 帳戶的安全性識別碼（SID） |
+| `AccountSid` | string | 帳戶的安全性識別碼 (SID)  |
 | `LogonId` | string | 登入會話的識別碼。 只有在重新開機時，此識別碼在同一部電腦上是唯一的 |
 | `InitiatingProcessAccountDomain` | string | 執行負責事件之處理常式之帳戶的網域 |
 | `InitiatingProcessAccountName` | string | 負責事件之處理常式的帳戶使用者名稱 |
-| `InitiatingProcessAccountSid` | string | 執行事件處理常式之帳戶的安全性識別碼（SID） |
+| `InitiatingProcessAccountSid` | string | 執行事件負責處理之帳戶的安全性識別碼 (SID)  |
 | `InitiatingProcessLogonId` | string | 啟動事件之處理常式的登入會話識別碼。 這個識別碼在同一部電腦上只在重新開機之間是唯一的。 |
 | `InitiatingProcessIntegrityLevel` | string | 啟動事件之處理常式的完整性層級。 Windows 會根據特定的特性，例如從網際網路下載啟動，將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
-| `InitiatingProcessTokenElevation` | string | 指出是否要將使用者存取控制（UAC）許可權提升套用至啟動事件之處理常式的 Token 類型 |
-| `InitiatingProcessSHA1` | string | 啟動事件之處理常式（映射檔）的 SHA-1 |
-| `InitiatingProcessSHA256` | string | 啟動事件之處理常式（映射檔）的 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
-| `InitiatingProcessMD5` | 字串 | 啟動事件之處理常式（映射檔）的 MD5 雜湊 |
+| `InitiatingProcessTokenElevation` | string | 指出是否存在使用者存取控制的 Token 類型 (UAC) 許可權提升會套用至啟動事件的程式。 |
+| `InitiatingProcessSHA1` | string | 啟動事件) 的處理常式 (映射檔 SHA-1 |
+| `InitiatingProcessSHA256` | string | 啟動事件) 的處理常式 (映射檔 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
+| `InitiatingProcessMD5` | 字串 | 啟動事件之程式 (映射檔) 的 MD5 雜湊 |
 | `InitiatingProcessFileName` | string | 啟動事件的進程名稱 |
-| `InitiatingProcessId` | int | 啟動事件之處理常式的進程識別碼（PID） |
+| `InitiatingProcessId` | int | 啟動事件之程式的進程識別碼 (PID)  |
 | `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |
 | `InitiatingProcessCreationTime` | datetime | 啟動事件處理常式的日期和時間 |
-| `InitiatingProcessFolderPath` | string | 包含初始化事件之處理常式（映射檔）的資料夾 |
-| `InitiatingProcessParentId` | int | 產生負責事件之處理常式之父進程的進程識別碼（PID） |
+| `InitiatingProcessFolderPath` | string | 包含初始化事件之處理 (映射檔) 程式的資料夾 |
+| `InitiatingProcessParentId` | int | 產生負責事件之處理常式之父進程的進程識別碼 (PID)  |
 | `InitiatingProcessParentFileName` | string | 產生負責事件之處理常式的父進程名稱 |
 | `InitiatingProcessParentCreationTime` | datetime | 啟動事件之處理常式的父項時的日期和時間 |
 | `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
@@ -79,6 +79,6 @@ ms.locfileid: "44899228"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

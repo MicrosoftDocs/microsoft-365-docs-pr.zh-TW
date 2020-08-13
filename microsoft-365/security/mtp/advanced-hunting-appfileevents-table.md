@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 663dc2a3de676fa2daeab3d9621254e956d42fc4
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 4221af6b0378e67e12852dbef0bbc0a11ff56511
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204752"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649472"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -45,17 +45,17 @@ ms.locfileid: "45204752"
 | `Protocol` | string | 使用的網路通訊協定 |
 | `AccountName` | string | 帳戶的使用者名稱 |
 | `AccountDomain` | string | 帳戶的網域 |
-| `AccountUpn` | string | 帳戶的使用者主要名稱（UPN） |
+| `AccountUpn` | string | 帳戶的使用者主要名稱 (UPN)  |
 | `AccountObjectId` | string | Azure AD 中帳戶的唯一識別碼 |
 | `AccountDisplayName` | string | 顯示在通訊錄中之帳戶使用者的名稱。 通常是指定的名稱或名字、中間初始名稱或姓氏的組合。 |
-| `DeviceName` | string | 裝置的完整功能變數名稱（FQDN） |
+| `DeviceName` | string | 裝置的完整功能變數名稱 (FQDN)  |
 | `DeviceType` | string | 裝置類型 | 
 | `OSPlatform` | string | 裝置上所執行作業系統的平臺。 這表示特定作業系統，包括相同家族內的變化，例如 Windows 10 和 Windows 7。 |
-| `IPAddress` | string | 指派給端點的 IP 位址，並在相關的網路通訊期間使用 |
+| `IPAddress` | 字串 | 指派給端點的 IP 位址，並在相關的網路通訊期間使用 |
 | `DestinationDeviceName` | string | 執行伺服器應用程式（處理錄製的動作）的裝置名稱 |
 | `DestinationIPAddress` | string | 執行伺服器應用程式（處理錄製的動作）的裝置的 IP 位址 |
 | `Location` | string | 與事件關聯的城市、國家或其他地理位置 |
-| `Isp` | string | 與端點 IP 位址相關聯的網際網路服務提供者（ISP） |
+| `Isp` | string | 網際網路服務提供者 (與端點 IP 位址相關聯的 ISP)  |
 | `ReportId` | long | 事件的唯一識別碼 |
 | `AdditionalFields` | string | 實體或事件的其他資訊 |
 
@@ -63,6 +63,6 @@ ms.locfileid: "45204752"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

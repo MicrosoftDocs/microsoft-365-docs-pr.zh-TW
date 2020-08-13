@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 9d7f6ee67e231ce7aa9bce1decc4de2f2d5a6d41
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: f66b17fbdaaa58cf12bd0373d0fece59349c3a48
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42929501"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649496"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>進階搜捕查詢最佳做法
 
@@ -99,5 +99,5 @@ DeviceProcessEvents
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用查詢結果工作](advanced-hunting-query-results.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)

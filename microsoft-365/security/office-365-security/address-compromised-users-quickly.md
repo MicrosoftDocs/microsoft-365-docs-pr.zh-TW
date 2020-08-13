@@ -14,16 +14,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: 瞭解如何使用 Office 365 Advanced 威脅防護方案2中的自動調查和回應功能，以加速偵測和解決已遭破壞之使用者帳戶的處理常式。
-ms.openlocfilehash: 60e9009ff77ebb58794ad7feaf522e1c6efc3039
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 5a1dd64a0b30bb230af0d96432ae9542ce0370d8
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43635769"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656906"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>利用自動調查和回應來處理已遭破壞的使用者帳戶
 
-[Office 365 高級威脅防護方案 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2)包含功能強大的[自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)（AIR）功能。 這類功能可讓您的安全性運作小組儲存大量的時間和精力處理威脅。 Microsoft 繼續加強安全性功能。 最近，AIR 功能已增強，包含已遭破壞的使用者安全性行動手冊（目前在預覽中）。 請閱讀本文以深入瞭解已遭破壞的使用者安全性行動手冊。 透過 Office 365 ATP，查看日誌貼[上的時間，以偵測並回應使用者的洩密和限制損等範圍，](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)以取得其他詳細資料。
+[Office 365 Advanced 威脅防護方案 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2)包含功能強大的[自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) 功能。 這類功能可讓您的安全性運作小組儲存大量的時間和精力處理威脅。 Microsoft 繼續加強安全性功能。 最近，AIR 功能已增強，可在目前預覽) 中包含已遭破壞的使用者安全性行動手冊 (。 請閱讀本文以深入瞭解已遭破壞的使用者安全性行動手冊。 透過 Office 365 ATP，查看日誌貼[上的時間，以偵測並回應使用者的洩密和限制損等範圍，](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)以取得其他詳細資料。
 
 ![針對已遭破壞的使用者進行自動調查](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -31,7 +31,7 @@ ms.locfileid: "43635769"
 
 - 加速偵測到的使用者帳戶的偵測;
 
-- 在帳戶被攻破時限制遭到破壞的範圍;和 
+- 在帳戶被攻破時限制遭到破壞的範圍;和
 
 - 更有效率地回應遭到破壞的使用者。
 
@@ -60,27 +60,29 @@ ms.locfileid: "43635769"
 
 ### <a name="view-and-investigate-restricted-users"></a>查看和調查限制的使用者
 
-您有幾個選項可供您流覽至限制的使用者清單。 例如，在安全性 & 規範中心，您可以前往「**威脅管理** > **」查看** > **限制的使用者**。 下列程式說明如何使用「**警示**」儀表板進行流覽，這是查看可能已觸發的各種警示的好方法。
+您有幾個選項可供您流覽至限制的使用者清單。 例如，在安全性 & 規範中心，您可以前往「**威脅管理**」  >  **查看**  >  **限制的使用者**。 下列程式說明如何使用「**警示**」儀表板進行流覽，這是查看可能已觸發的各種警示的好方法。
 
 1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。
 
-2. 在功能窗格中，選擇 [**警示** > **儀表板**]。
+2. 在功能窗格中，選擇 [**警示**  >  **儀表板**]。
 
-3. 在 [**其他警示**] 小工具中，選擇 [**受限制的使用者**]。<br/>
-   ![其他提醒小工具](/microsoft-365/media/office365atp-otheralertswidget.jpg)<br/>
-   這會開啟受限制的使用者清單。<br/>![Office 365 中的受限使用者](/microsoft-365/media/office365atp-restrictedusers.jpg) 
+3. 在 [**其他警示**] 小工具中，選擇 [**受限制的使用者**]。
 
-4. 選取清單中的使用者帳戶，以查看詳細資料並採取動作，例如[發行受限制的使用者](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam)。 
+   ![其他提醒小工具](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+
+   這會開啟受限制的使用者清單。<br/>![Office 365 中的受限使用者](/microsoft-365/media/office365atp-restrictedusers.jpg)
+
+4. 選取清單中的使用者帳戶，以查看詳細資料並採取動作，例如[發行受限制的使用者](https://docs.microsoft.com/microsoft-365/security/office-365-security/removing-user-from-restricted-users-portal-after-spam)。
 
 ### <a name="view-details-about-automated-investigations"></a>查看有關自動化調查的詳細資料
 
-當自動調查開始時，您可以在安全性 & 規範中心中查看其詳細資料和結果。 移至**威脅管理** > **調查**，然後選取調查以查看其詳細資料。
+當自動調查開始時，您可以在安全性 & 規範中心中查看其詳細資料和結果。 移至**威脅管理**  >  **調查**，然後選取調查以查看其詳細資料。
 
 若要深入瞭解，請參閱[查看調查的詳細資料](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results)。
 
 ## <a name="keep-the-following-points-in-mind"></a>請記住下列幾點
 
-- **停留在提醒**上。 如您所知，入侵的可能性越長，您的組織、客戶及協力廠商的潛在影響程度越大，成本也越大。 及早偵測和及時回應對於緩解威脅很重要，尤其是在使用者的帳戶遭到破壞時。 
+- **停留在提醒**上。 如您所知，入侵的可能性越長，您的組織、客戶及協力廠商的潛在影響程度越大，成本也越大。 及早偵測和及時回應對於緩解威脅很重要，尤其是在使用者的帳戶遭到破壞時。
 
 - 「**自動化」協助（但不取代）您的安全性運作小組**。 自動化調查和回應功能可在初期偵測到遭到損害的使用者，但是您的安全性作業小組可能需要接洽並進行一些調查和修復。 需要一些協助嗎？ 請參閱[複查和核准動作](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air#review-and-approve-actions)。
 

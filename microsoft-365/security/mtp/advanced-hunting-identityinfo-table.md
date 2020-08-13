@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e922fc7930d645a7024a0ffc73359277c4b637e4
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 3d59f987ae4d670e3d7c6f1638f8090ffc3ba7fe
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204920"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649304"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -39,8 +39,8 @@ ms.locfileid: "45204920"
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
 | `AccountObjectId` | string | Azure AD 中帳戶的唯一識別碼 |
-| `AccountUpn` | string | 帳戶的使用者主要名稱（UPN） |
-| `OnPremSid` | string | 帳戶的內部部署安全性識別碼（SID） |
+| `AccountUpn` | string | 帳戶的使用者主要名稱 (UPN)  |
+| `OnPremSid` | string | 內部部署安全性識別碼 (帳戶的 SID)  |
 | `CloudSid` | string | 帳戶的雲端安全性識別碼 |
 | `GivenName` | string | 帳戶使用者的指定名稱或名字 |
 | `Surname` | string | 帳戶使用者的姓氏、系列名稱或姓氏 |
@@ -50,7 +50,7 @@ ms.locfileid: "45204920"
 | `AccountName` | string | 帳戶的使用者名稱 |
 | `AccountDomain` | string | 帳戶的網域 |
 | `EmailAddress` | string | 帳戶的 SMTP 位址 |
-| `SipProxyAddress` | string | 帳戶的 Voice over IP （VOIP）會話初始通訊協定（SIP）位址 |
+| `SipProxyAddress` | string | Voice over IP (VOIP) 會話初始通訊協定 (SIP) 帳戶位址 |
 | `City` | string | 帳戶使用者所在的城市 |
 | `Country` | string | 帳戶使用者所在的國家/地區 |
 | `IsAccountEnabled` | 布林值 | 指出帳戶是否已啟用 |
@@ -59,6 +59,6 @@ ms.locfileid: "45204920"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕所有裝置和電子郵件的威脅](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)
