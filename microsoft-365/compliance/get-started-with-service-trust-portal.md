@@ -29,9 +29,9 @@ Microsoft 服務信任入口網站提供各種內容、工具及其他有關 Mic
   
 ## <a name="accessing-the-service-trust-portal"></a>存取服務信任入口網站
 
-服務信任入口網站包含 Microsoft 實施之控制和程式的詳細資料，以保護我們的雲端服務和其中的客戶資料。 若要存取服務信任入口網站上的某些資源，您必須使用 Microsoft 雲端服務帳戶（Azure Active Directory 組織帳戶或 Microsoft 帳戶）登入已驗證的使用者，並查看並接受 Microsoft 保密協定的相容性材料。
+服務信任入口網站包含 Microsoft 實施之控制和程式的詳細資料，以保護我們的雲端服務和其中的客戶資料。 若要存取服務信任入口網站上的某些資源，您必須以您的 Microsoft 雲端服務帳戶登入已驗證的使用者， (Azure Active Directory 組織帳戶或 Microsoft 帳戶) 並複查並接受 Microsoft 保密協定，以取得規範材料。
   
-現有客戶可以使用下列其中一項線上訂閱**來存取服務信任入口網站** [https://aka.ms/STP](https://aka.ms/STP) （試用版或付費版）： 
+**現有客戶可以** [https://aka.ms/STP](https://aka.ms/STP) 使用下列其中一項線上訂閱，存取服務信任入口網站 (試用版或付費) ： 
   
 - Microsoft 365
 
@@ -44,7 +44,7 @@ Microsoft 服務信任入口網站提供各種內容、工具及其他有關 Mic
   
 **評估 Microsoft online 服務的新客戶和客戶**
   
-若要建立新帳戶或建立試用帳戶，請使用下列其中一種簽入表單（也用於試用帳戶），以取得 STP 的存取權。
+若要建立新帳戶或建立試用帳戶，請使用下列其中一個簽入表單， (也可以用來) 試用帳戶，以取得 STP 的存取權。
   
 - 註冊新的[Microsoft 365 應用程式商務試用帳戶](https://go.microsoft.com/fwlink/p/?LinkID=507653)或新的[Office 365 企業版試用帳戶](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
@@ -70,9 +70,9 @@ Microsoft 服務信任入口網站提供各種內容、工具及其他有關 Mic
 
 合規性管理員是以工作流程為基礎的風險評估工具，可協助您追蹤、指派及驗證組織的與 Microsoft 雲端服務相關的規章遵循活動，例如 Microsoft 365、Dynamics 365 和 Azure。 使用合規性管理員管理雲端的共用責任模型內的規章遵循。 視您想要使用的合規性管理員版本而定，請參閱下列文章以取得詳細資訊：
 
-- [Microsoft 合規性管理員 (傳統)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+- [Microsoft 合規性管理員 (傳統) ](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 
-- [Microsoft 合規性管理員（預覽）](compliance-manager-overview.md)
+- [Microsoft 合規性管理員 (預覽) ](compliance-manager-overview.md)
 
 ### <a name="trust-documents"></a>信任文件
 
@@ -80,7 +80,7 @@ Microsoft 服務信任入口網站提供各種內容、工具及其他有關 Mic
 
 - **審核報告：** 隨即會顯示 Microsoft 雲端服務上的獨立審核和評估報告清單。 這些報告提供與資料保護標準及法規需求相關的 Microsoft 雲端服務規範資訊，例如：
   
-    - 國際標準組織（ISO）
+    - 國際標準組織 (ISO) 
 
     - 服務組織控制 (SOC)
 
@@ -108,23 +108,23 @@ Microsoft 服務信任入口網站提供各種內容、工具及其他有關 Mic
   
 ### <a name="my-library"></a>我的文件庫
 
-這項新功能可讓您儲存（或*固定*）檔，以便您可以在 [我的文件庫] 頁面上快速存取它們。 您也可以設定通知，讓 Microsoft 在我的文件庫中的檔更新時，傳送電子郵件訊息給您。 如需詳細資訊，請參閱本文中的[My Library](#my-library-1)一節。
+這項新功能可讓您將 (或*固定*) 檔，以便在您的 [我的文件庫] 頁面上快速進行存取。 您也可以設定通知，讓 Microsoft 在我的文件庫中的檔更新時，傳送電子郵件訊息給您。 如需詳細資訊，請參閱本文中的[My Library](#my-library-1)一節。
 
 ### <a name="more"></a>更多
 
 移至 [**更多 > 管理員**]，以存取只有全域管理員帳戶才能使用的系統管理功能。 只有當您以全域系統管理員身分登入時，才會顯示此選項。 系統**管理**下拉式功能表中有兩個選項：
   
-- **設定：** 此頁面可讓您將以角色為基礎的存取權（稱為*使用者角色*）指派給合規性管理員。  如需詳細資訊，請參閱：
+- **設定：** 此頁面可讓您指定以角色為基礎的訪問 (，稱為「合規性管理員」) 的*使用者角色*。  如需詳細資訊，請參閱：
    
-  - [合規性管理員中的許可權（經典）](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
+  - [合規性管理員 (傳統) 中的許可權](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
    
-  - [合規性管理員中的許可權（預覽）](compliance-manager-overview.md#permissions)
+  - [合規性管理員中的許可權 (預覽) ](compliance-manager-overview.md#permissions)
 
   您也可以設定合規性管理員中的動作是否要根據安全分數中相同動作的狀態進行更新。 只有在您使用最新版本的合規性管理員時，才支援此功能。 如需詳細資訊，請參閱[控制自動安全分數更新](working-with-compliance-manager.md#controlling-automatic-secure-score-updates)。
 
 - **使用者隱私權設定：** 此頁面可讓您在特定使用者的合規性管理員中，匯出包含交辦事項專案指派的報表。 您也可以將所有動作專案重新指派給不同的使用者，並從指定的使用者移除任何已指派的動作專案。 如需詳細資訊，請參閱[使用者隱私權設定](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings)。
 
-### <a name="search"></a>搜尋
+### <a name="search"></a>Search
 
 按一下 [服務信任入口網站] 頁面右上角的放大鏡，展開方塊，輸入您的搜尋字詞，然後按**enter**。 隨即會顯示 [**搜尋**] 頁面，並在搜尋方塊中顯示搜尋字詞，以及下列所列的搜尋結果。
   

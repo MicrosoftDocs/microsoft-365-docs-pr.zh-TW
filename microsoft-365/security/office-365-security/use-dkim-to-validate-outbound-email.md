@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
-ms.openlocfilehash: 4ec5f7c8779e9d6b6709c8fc3311ec9c0e99b680
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 36e62600836c66b9e7be61ddd07a6081af4ffbeb
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754841"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632160"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -331,6 +331,16 @@ Return-Path: <communication@bulkemailprovider.com>
    > sender@**contoso.com**
 
    > d=**contoso.com**
+   
+## <a name="identify-domains-that-do-not-send-email"></a>辨識出無法傳送電子郵件的網域
+
+組織應明確聲明網域是否不會透過這些網域的 DKIM 記錄中指定的 `v=DKIM1; p=` 來傳送電子郵件。 這建議您收受電子郵件伺服器並沒有網域的有效公用金鑰，且所有聲稱來自該網域的電子郵件都會遭到拒絕。 您應使用萬用字元 DKIM 為每個網欲和子網域執行此動作。
+
+例如，DKIM 記錄看起來會像這樣:
+
+```console
+*._domainkey.SubDomainThatShouldntSendMail.contoso.com. TXT "v=DKIM1; p="
+```
 
 ## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>後續步驟：為 Microsoft 365 設定 DKIM 之後
 <a name="DKIMNextSteps"> </a>

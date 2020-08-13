@@ -15,12 +15,12 @@ ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 ms.collection:
 - M365-security-compliance
 description: 了解如何設定以網域為基礎的訊息驗證、報告和符合性 (DMARC) 來驗證從貴組織傳送的訊息。
-ms.openlocfilehash: 56e557a3ca970540288c00d5fb8a30549c252776
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 09c06d30d118078e310c5e3d0743ef5236ec77ba
+ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601870"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46632114"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 來驗證電子郵件
 
@@ -39,7 +39,7 @@ ms.locfileid: "46601870"
 
 SPF 會針對指定的網域使用 DNS TXT 記錄來提供授權的傳送 IP 位址清單。一般而言，SPF 檢查只會針對 5321.MailFrom 地址執行。這表示當您單獨使用 SPF 時不會驗證 5322.From 地址。這會導致使用者收到的郵件可能通過 SPF 檢查，但卻具有冒名的 5322.From 寄件者地址。例如，請看以下 SMTP 文字記錄：
 
-```text
+```console
 S: Helo woodgrovebank.com
 S: Mail from: phish@phishing.contoso.com
 S: Rcpt to: astobes@tailspintoys.com
@@ -76,7 +76,7 @@ S: .
 
 Microsoft 的 DMARC TXT 記錄看起來如下：
 
-```text
+```console
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1"
 ```
 
@@ -114,7 +114,7 @@ Microsoft 會將其 DMARC 報告傳送給協力廠商 [Agari](https://agari.com)
 
 例如，假設 contoso.com 從 Exchange Online 傳送郵件，其為 IP 位址為 192.168.0.1 的內部部署 Exchange 伺服器和 IP 位址為 192.168.100.100 的 Web 應用程式，則 SPF TXT 記錄呈現如下：
 
-```text
+```console
 contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.protection.outlook.com -all"
 ```
 
@@ -132,7 +132,7 @@ contoso.com  IN  TXT  " v=spf1 ip4:192.168.0.1 ip4:192.168.100.100 include:spf.p
 
 雖然還有其他此處未提及的語法選項，以下是 Microsoft 365 最常使用的選項。以下列格式為您的網域形成 DMARC TXT 記錄：
 
-```text
+```console
 _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 ```
 
@@ -152,19 +152,19 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
 - 原則設為 [無]
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=none"
     ```
 
 - 原則設為 [隔離]
 
-    ```text
+    ```console
     _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=quarantine"
     ```
 
 - 原則設為 [拒絕]
 
-    ```text
+    ```console
     _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
     ```
 
@@ -187,6 +187,16 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 3. 要求外部郵件系統不接受未通過 DMARC 的郵件
 
     最後一個步驟是實作拒絕原則。拒絕原則是已將原則設為拒絕 (p=拒絕) 的 DMARC TXT 記錄。執行此動作即是要求 DMARC 接收器不接受未通過 DMARC 檢查的郵件。
+    
+4. 如何設定適用於子網域的 DMARC？
+
+DMARC 是在 DNS 中以 TXT 記錄的形式發布原則所實施，且為分層系統（例如，針對 contoso.com 發行的原則會套用至 sub.domain.contonos.com，除非明確為子網域定義不同的原則）。 由於組織可能只能指定較少量的高層 DMARC 記錄，所以在覆蓋較廣的層面上，這很實用。 如果您不想讓某子網域承襲高層網域的 DMARC 記錄，則須小心謹慎地設定明確的子網域 DMARC 記錄。
+
+此外，當子網域不應傳送電子郵件時，您可以透過新增 [`sp=reject`] 值，以為 DMARC 新增萬用字元類型原則。 例如：
+
+```console
+_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Microsoft 365 如何處理未通過 DMARC 的輸出電子郵件
 
@@ -220,7 +230,7 @@ Microsoft 身為 ARC密封者，因此 Microsoft 365 目前是使用 ARC 來確�
 
 如果您是客戶，且您網域的主要 MX 記錄並未指向 EOP，則您不會取得 DMARC 的效益。 比方說，如果您將 MX 記錄指向內部部署郵件伺服器，並使用連接器將電子郵件路由傳送至 EOP，則不適用 DMARC。 在此案例中，接收方網域是您其中一個公認的網域，但 EOP 不是主要的 MX。 例如，假設 contoso.com 將其 MX 指向本身，並使用 EOP 作為次要 MX 記錄，contoso.com 的 MX 記錄會如下所示：
 
-```text
+```console
 contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 ```

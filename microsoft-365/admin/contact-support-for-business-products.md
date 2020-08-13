@@ -21,12 +21,12 @@ search.appverid:
 description: 使用您的國家或地區所列的電話號碼，或提交線上服務要求，以取得技術和帳單支援。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 6a7daed145294fa0e1c02ac47144d06cfdf26884
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 1db89882db693c2102ca5c8dcb28f7ceb3ebf12e
+ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552443"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46641582"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>連絡商務產品客戶支援的方式 - 系統管理說明
 
@@ -56,6 +56,9 @@ ms.locfileid: "46552443"
 英文的帳單支援提供時間為週一至週五的上午 9 點到下午 5 點 (澳洲為上午 9 點到下午 6 點)。\
 英文的技術支援提供時間為每週 7 天，每天 24 小時。\
 系統管理員在撥打電話時，必須準備好帳戶詳細資料。
+
+> [!NOTE]
+> 為更進一步保護貴組織，我們在現有的手機驗證程序中新增了 PIN 型驗證步驟。 若您從為註冊到貴組織設定檔的號碼與我們聯繫， Microsoft 支援代表會將驗證碼傳送至您 Microsoft 365 系統管理中心設定檔中註冊的電子信箱或電話號碼。 您必須向支援代表提供此代碼，才能授權他們存取貴組織的帳戶。
 
 - **美國請撥 1 800 865 9408。**
 
