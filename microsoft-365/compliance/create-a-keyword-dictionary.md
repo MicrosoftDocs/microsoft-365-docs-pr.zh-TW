@@ -18,22 +18,22 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解在 Office 365 安全性 & 規範中心建立關鍵字字典的基本步驟。
-ms.openlocfilehash: 38a92aaf7e72ab79243c547ff48fa156e26b6ee6
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: a2b56d013b452f02a26ea956da19e5644bf9d44a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818052"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648726"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
-資料遺失防護（DLP）可以識別、監視和保護您的敏感資訊。 識別敏感資訊有時需要尋找關鍵字，尤其是在識別一般內容時（例如醫療保健相關的通訊）或不適當或明確的語言。 雖然您可以在機密資訊類型中建立關鍵字清單，但關鍵字清單大小有限，需要修改 XML 以建立或編輯。 關鍵字字典可提供更簡單的關鍵字管理，並以更大的比例來支援每個字典的100000字詞。
-  
+資料遺失防護 (DLP) 可以識別、監視和保護您的敏感資訊。 識別敏感資訊有時需要尋找關鍵字，尤其是在識別一般內容 (例如醫療保健相關的通訊) 或不適當或明確的語言時）。 雖然您可以在機密資訊類型中建立關鍵字清單，但關鍵字清單大小有限，需要修改 XML 以建立或編輯。 關鍵字字典可提供更簡單的關鍵字管理，並以更大的比例進行管理，並可支援每個字典的100000個字詞，並支援任何語言。
+
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>建立關鍵字字典的基本步驟
 
 字典的關鍵字可以來自各種來源，最常來自在服務中或是透過 PowerShell Cmdlet 匯入的檔案 (例如 .csv 或 .txt 清單)、來自您直接在 PowerShell Cmdlet 中輸入的清單，或來自現有的字典。當建立關鍵字字典時，您會依照相同的核心步驟：
   
-1. 使用 [**安全性 & 規範中心** [https://protection.office.com](https://protection.office.com) ] （）或 [連線至**安全性與 &amp; 合規性中心] PowerShell**。
+1. 使用 [**安全性 & 規範中心** [https://protection.office.com](https://protection.office.com) ] () 或連線至**安全性與 &amp; 合規性中心 PowerShell**。
     
 2. **定義或載入預定來源中的關鍵字**。 嚮導和指令程式都接受以逗號分隔的關鍵字清單，以建立自訂的關鍵字字典，所以此步驟會稍有不同，具體取決於關鍵字的來源位置。 一旦載入，就會將它們編碼並轉換為位元組陣列，然後再匯入它們。
     
@@ -43,7 +43,7 @@ ms.locfileid: "44818052"
 
 請使用下列步驟來建立和匯入自訂字典的關鍵字：
 
-1. 連接至安全性 & 規範中心（ [https://protection.office.com](https://protection.office.com) ）。
+1.  () ，連線至安全性 & 規範中心] [https://protection.office.com](https://protection.office.com) 。
 
 2. 瀏覽至 [分類] > [敏感性資訊類型]****。
 

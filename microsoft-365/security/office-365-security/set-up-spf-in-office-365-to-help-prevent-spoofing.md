@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何更新網域名稱服務 (DNS) 記錄，以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。
-ms.openlocfilehash: be773fe3265ac6cfd62d261196d4af1d14c91ef2
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: dfbd5f7091420d079f91b93f7c581ed69572b7bd
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632136"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656608"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>設定 SPF 以協助防止詐騙
 
@@ -61,7 +61,9 @@ ms.locfileid: "46632136"
 
 1. 請確定您熟悉下表中的 SPF 語法。
 
-   ||如果您正在使用...|對客戶通用？|新增此...|
+   ****
+
+   |<!-- -->|如果您正在使用...|對客戶通用？|新增此...|
    |---|---|---|---|
    |1|任何電子郵件系統 (必要項)|通用。以此值開頭的所有 SPF TXT 記錄|v=spf1|
    |2|Exchange Online|通用|include:spf.protection.outlook.com|
@@ -70,6 +72,7 @@ ms.locfileid: "46632136"
    |5|協力廠商電子郵件系統|不通用|包含：\<domain name\>  <br/> 其中網域名稱是協力廠商電子郵件系統的網域名稱。|
    |6|內部部署郵件系統例如，Exchange Online Protection 加上另一個郵件系統|不通用| 對每個額外郵件系統使用其中一個︰ <br> ip4：\<_IP address_\>  <br/>  ip6：\<_IP address_\>  <br/>  包含：\<_domain name_\>  <br/>  其中 \<_IP address_\> 的值是其他郵件系統的 IP 位址，\<_domain name_\> 是代表您的網域傳送郵件的其他郵件系統的網域名稱。|
    |7|任何電子郵件系統 (必要項)|通用。以此值結束的所有 SPF TXT 記錄|\<_enforcement rule_\>  <br/> 這可以是數個值其中之一。建議您使用 **-all**。|
+   |
 
 2. 如果您還未這樣做，請使用表格中的語法以形成 SPF TXT 記錄：
 

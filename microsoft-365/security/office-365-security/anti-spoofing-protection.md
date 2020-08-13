@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 系統管理員可以了解 Exchange Online Protection (EOP) 中提供的反詐騙功能，可協助緩解來自詐騙寄件者和網域的網路釣魚攻擊。
-ms.openlocfilehash: b9d8d3b0118083886f2a5d18f64b5d12e1d432af
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 25e1c73a58ffc89ecf4723fbb7cb872ff7d16071
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577845"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653410"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的反詐騙保護
 
@@ -129,8 +129,7 @@ Office 365 ATP 組織可以使用 [安全性與合規性中心] 中的 [威脅�
 
 例如，Gabriela Laureano (glaureano@contoso.com) 對賞鳥有興趣，因此加入 birdwatchers@fabrikam.com 郵寄清單，並且將下列郵件傳送到清單：
 
-> **寄件者：**"Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件者：** 賞鳥的討論清單\<birdwatchers@fabrikam.com\> <br/> 
-**主旨：** 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 <br/><br/>有人這週想要上雷尼爾山 賞景嗎？
+> **寄件者：**"Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件者：** 賞鳥的討論清單\<birdwatchers@fabrikam.com\> <br/> **主旨：** 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 <br/><br/>有人這週想要上雷尼爾山 賞景嗎？
 
 郵寄清單伺服器會接收郵件，修改其內容，並且對清單的成員重新播放。 重新播放的郵件具有相同的 [寄件者] 地址 (glaureano@contoso.com)，但是有標記新增至主旨行，頁尾新增至郵件底端。 這種類型的修改常見於郵寄清單中，且可能會導致詐騙的誤判。
 

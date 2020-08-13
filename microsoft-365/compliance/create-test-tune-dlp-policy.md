@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 在本文中，您將瞭解如何根據組織的需求來建立、測試及調整 DLP 原則。
-ms.openlocfilehash: 3405fc99f4d12715972b1fd18a9c20dd9334382b
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: b8e82e1304cb411a1e73e6f7bdc02fecdda9784f
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45092003"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648780"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>建立、測試及調整 DLP 原則
 
@@ -37,6 +37,24 @@ DLP 使用內容分析引擎檢查電子郵件訊息和檔案的內容，尋找�
 - 主動封鎖電子郵件或檔案共用發生
 
 有時客戶會解除 DLP，因為他們不會考慮他們需要保護的資料類型。 假設敏感性資料（例如醫療記錄或財務資訊）只會存在於衛生保健或執行線上商店之公司的行業。 不過，任何業務都可以定期處理機密資訊，即使未加以實現也是一樣。 員工姓名和出生日期的試算表，都如同客戶名稱和信用卡詳細資料的試算表一樣機密。 而且這種資訊類型的來源可能會比您預期的更多，因為員工不知不覺地前往日常工作中，請考慮從系統中匯出 CSV 檔案，並將郵件傳送給某人。 您也可能會驚訝的是，員工傳送包含信用卡或銀行詳細資料的電子郵件時，不會考慮結果。
+
+## <a name="permissions"></a>權限
+
+您的合規性小組中將建立 DLP 原則的成員必須具備安全性與合規性中心的權限。 根據預設，您的租用戶系統管理員具備安全性與合規性中心的存取權，且能夠將權限授與法務人員和其他人員，而不必將租用戶系統管理員的所有權限授與他們。若要這樣做，建議您：
+  
+1. 在 Microsoft 365 中建立一個群組，並將法務人員新增至此群組。
+    
+2. 在安全性與合規性中心的 **[權限]** 頁面上建立角色群組。 
+
+3. 建立角色群組時，請使用 [**選擇角色**] 區段，將下列角色新增至角色群組： [ **DLP 規範管理**]。
+    
+4. 使用 [選擇成員]**** 區段，將您建立的 Microsoft 365 群組新增至角色群組。
+
+您也可以透過授予 [僅限檢視 DLP 合規性管理]**** 角色，來建立擁有 DLP 原則和 DLP 報告的僅限檢視權限角色群組。
+
+如需詳細資訊，請參閱[授與使用者存取 Office 365 合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+  
+需要這些權限才能建立及套用 DLP 原則。 原則強制執行不需要內容的存取權。
 
 ## <a name="how-sensitive-information-is-detected-by-dlp"></a>DLP 偵測到敏感資訊的方式
 
