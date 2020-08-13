@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,108 +16,112 @@ search.appverid:
 - MET150
 description: 瞭解如何使用 AllowSelfServicePurchase PowerShell Cmdlet 來開啟或關閉自助購買服務。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b35b62a97f8dc269be5db232e163391a8ce50658
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 79ee2d96fa1ae6f49f0402f49ddec34e69257082
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391539"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653710"
 ---
-# <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a><span data-ttu-id="994ee-103">針對 MSCommerce PowerShell 模組使用 AllowSelfServicePurchase</span><span class="sxs-lookup"><span data-stu-id="994ee-103">Use AllowSelfServicePurchase for the MSCommerce PowerShell module</span></span>
+# <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a><span data-ttu-id="44137-103">針對 MSCommerce PowerShell 模組使用 AllowSelfServicePurchase</span><span class="sxs-lookup"><span data-stu-id="44137-103">Use AllowSelfServicePurchase for the MSCommerce PowerShell module</span></span>
 
-<span data-ttu-id="994ee-104">**MSCommerce** PowerShell 模組現在可用於[PowerShell 圖庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)。</span><span class="sxs-lookup"><span data-stu-id="994ee-104">The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery).</span></span> <span data-ttu-id="994ee-105">此模組包含**AllowSelfServicePurchase**的**PolicyID**參數值，可讓您控制組織中的使用者是否可以進行自助購買。</span><span class="sxs-lookup"><span data-stu-id="994ee-105">The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases.</span></span>
+<span data-ttu-id="44137-104">**MSCommerce** PowerShell 模組現在可用於[PowerShell 圖庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)。</span><span class="sxs-lookup"><span data-stu-id="44137-104">The **MSCommerce** PowerShell module is now available on [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery).</span></span> <span data-ttu-id="44137-105">此模組包含**AllowSelfServicePurchase**的**PolicyID**參數值，可讓您控制組織中的使用者是否可以進行自助購買。</span><span class="sxs-lookup"><span data-stu-id="44137-105">The module includes a **PolicyID** parameter value for **AllowSelfServicePurchase** that lets you control whether users in your organization can make self-service purchases.</span></span>
 
-<span data-ttu-id="994ee-106">您可以使用**MSCommerce** PowerShell 模組來：</span><span class="sxs-lookup"><span data-stu-id="994ee-106">You can use the **MSCommerce** PowerShell module to:</span></span>
+<span data-ttu-id="44137-106">您可以使用**MSCommerce** PowerShell 模組來：</span><span class="sxs-lookup"><span data-stu-id="44137-106">You can use the **MSCommerce** PowerShell module to:</span></span>
 
-- <span data-ttu-id="994ee-107">查看**AllowSelfServicePurchase**參數值的預設狀態，不論它是啟用還是停用</span><span class="sxs-lookup"><span data-stu-id="994ee-107">View the default state of the **AllowSelfServicePurchase** parameter value — whether it's enabled or disabled</span></span>
-- <span data-ttu-id="994ee-108">查看適用產品的清單，以及是否啟用或停用自助購買功能</span><span class="sxs-lookup"><span data-stu-id="994ee-108">View a list of applicable products and whether self-service purchase is enabled or disabled</span></span>
-- <span data-ttu-id="994ee-109">查看或修改特定產品的目前設定，以啟用或停用</span><span class="sxs-lookup"><span data-stu-id="994ee-109">View or modify the current setting for a specific product to either enable or disable it</span></span>
+- <span data-ttu-id="44137-107">查看**AllowSelfServicePurchase**參數值的預設狀態，不論它是啟用還是停用</span><span class="sxs-lookup"><span data-stu-id="44137-107">View the default state of the **AllowSelfServicePurchase** parameter value — whether it's enabled or disabled</span></span>
+- <span data-ttu-id="44137-108">查看適用產品的清單，以及是否啟用或停用自助購買功能</span><span class="sxs-lookup"><span data-stu-id="44137-108">View a list of applicable products and whether self-service purchase is enabled or disabled</span></span>
+- <span data-ttu-id="44137-109">查看或修改特定產品的目前設定，以啟用或停用</span><span class="sxs-lookup"><span data-stu-id="44137-109">View or modify the current setting for a specific product to either enable or disable it</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="994ee-110">需求</span><span class="sxs-lookup"><span data-stu-id="994ee-110">Requirements</span></span>
+## <a name="requirements"></a><span data-ttu-id="44137-110">需求</span><span class="sxs-lookup"><span data-stu-id="44137-110">Requirements</span></span>
 
-<span data-ttu-id="994ee-111">若要使用**MSCommerce** PowerShell 模組，您需要：</span><span class="sxs-lookup"><span data-stu-id="994ee-111">To use the **MSCommerce** PowerShell module, you need:</span></span>
+<span data-ttu-id="44137-111">若要使用**MSCommerce** PowerShell 模組，您需要：</span><span class="sxs-lookup"><span data-stu-id="44137-111">To use the **MSCommerce** PowerShell module, you need:</span></span>
 
-- <span data-ttu-id="994ee-112">Windows 10 裝置</span><span class="sxs-lookup"><span data-stu-id="994ee-112">A Windows 10 device</span></span>
-- <span data-ttu-id="994ee-113">裝置的系統管理員許可權</span><span class="sxs-lookup"><span data-stu-id="994ee-113">Administrator permission for the device</span></span>
-- <span data-ttu-id="994ee-114">您租使用者的全域或計費系統管理員角色</span><span class="sxs-lookup"><span data-stu-id="994ee-114">Global or Billing Admin role for your tenant</span></span>
+- <span data-ttu-id="44137-112">Windows 10 裝置</span><span class="sxs-lookup"><span data-stu-id="44137-112">A Windows 10 device</span></span>
+- <span data-ttu-id="44137-113">裝置的系統管理員許可權</span><span class="sxs-lookup"><span data-stu-id="44137-113">Administrator permission for the device</span></span>
+- <span data-ttu-id="44137-114">您租使用者的全域或計費系統管理員角色</span><span class="sxs-lookup"><span data-stu-id="44137-114">Global or Billing Admin role for your tenant</span></span>
 
-## <a name="install-the-mscommerce-powershell-module"></a><span data-ttu-id="994ee-115">安裝 MSCommerce PowerShell 模組</span><span class="sxs-lookup"><span data-stu-id="994ee-115">Install the MSCommerce PowerShell module</span></span>
+## <a name="install-the-mscommerce-powershell-module"></a><span data-ttu-id="44137-115">安裝 MSCommerce PowerShell 模組</span><span class="sxs-lookup"><span data-stu-id="44137-115">Install the MSCommerce PowerShell module</span></span>
 
-<span data-ttu-id="994ee-116">您可以在 Windows 10 裝置上安裝**MSCommerce** PowerShell 模組一次，然後將其匯入您所開始的每個 PowerShell 會話。</span><span class="sxs-lookup"><span data-stu-id="994ee-116">You install the **MSCommerce** PowerShell module on your Windows 10 device once and then import it into each PowerShell session you start.</span></span> <span data-ttu-id="994ee-117">從[PowerShell 庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)下載**MSCommerce** PowerShell 模組。</span><span class="sxs-lookup"><span data-stu-id="994ee-117">Download the **MSCommerce** PowerShell module from the [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery).</span></span>
+<span data-ttu-id="44137-116">您可以在 Windows 10 裝置上安裝**MSCommerce** PowerShell 模組一次，然後將其匯入您所開始的每個 PowerShell 會話。</span><span class="sxs-lookup"><span data-stu-id="44137-116">You install the **MSCommerce** PowerShell module on your Windows 10 device once and then import it into each PowerShell session you start.</span></span> <span data-ttu-id="44137-117">從[PowerShell 庫](https://aka.ms/allowselfservicepurchase-powershell-gallery)下載**MSCommerce** PowerShell 模組。</span><span class="sxs-lookup"><span data-stu-id="44137-117">Download the **MSCommerce** PowerShell module from the [PowerShell Gallery](https://aka.ms/allowselfservicepurchase-powershell-gallery).</span></span>
 
-<span data-ttu-id="994ee-118">若要使用**PowerShellGet**安裝**MSCommerce** PowerShell 模組，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="994ee-118">To install the **MSCommerce** PowerShell module with **PowerShellGet**, run the following command:</span></span>
+<span data-ttu-id="44137-118">若要使用**PowerShellGet**安裝**MSCommerce** PowerShell 模組，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="44137-118">To install the **MSCommerce** PowerShell module with **PowerShellGet**, run the following command:</span></span>
 
 ```powershell
 Install-Module -Name MSCommerce
 ```
 
-## <a name="import-mscommerce-into-the-powershell-session"></a><span data-ttu-id="994ee-119">將 MSCommerce 匯入至 PowerShell 會話</span><span class="sxs-lookup"><span data-stu-id="994ee-119">Import MSCommerce into the PowerShell session</span></span>
+## <a name="import-mscommerce-into-the-powershell-session"></a><span data-ttu-id="44137-119">將 MSCommerce 匯入至 PowerShell 會話</span><span class="sxs-lookup"><span data-stu-id="44137-119">Import MSCommerce into the PowerShell session</span></span>
 
-<span data-ttu-id="994ee-120">在 Windows 10 裝置上安裝模組之後，您可以將它匯入至每個開始的 PowerShell 會話。</span><span class="sxs-lookup"><span data-stu-id="994ee-120">After you install the module on your Windows 10 device, you then import it into each PowerShell session that you start.</span></span> <span data-ttu-id="994ee-121">若要將其匯入 PowerShell 會話，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="994ee-121">To import it into a PowerShell session, run the following command:</span></span>
+<span data-ttu-id="44137-120">在 Windows 10 裝置上安裝模組之後，您可以將它匯入至每個開始的 PowerShell 會話。</span><span class="sxs-lookup"><span data-stu-id="44137-120">After you install the module on your Windows 10 device, you then import it into each PowerShell session that you start.</span></span> <span data-ttu-id="44137-121">若要將其匯入 PowerShell 會話，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="44137-121">To import it into a PowerShell session, run the following command:</span></span>
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a><span data-ttu-id="994ee-122">使用您的認證連接至 MSCommerce</span><span class="sxs-lookup"><span data-stu-id="994ee-122">Connect to MSCommerce with your credentials</span></span>
+## <a name="connect-to-mscommerce-with-your-credentials"></a><span data-ttu-id="44137-122">使用您的認證連接至 MSCommerce</span><span class="sxs-lookup"><span data-stu-id="44137-122">Connect to MSCommerce with your credentials</span></span>
 
-<span data-ttu-id="994ee-123">若要使用您的認證連接至 PowerShell 模組，請執行下列命令。</span><span class="sxs-lookup"><span data-stu-id="994ee-123">To connect to the PowerShell module with your credentials, run the following command.</span></span>
+<span data-ttu-id="44137-123">若要使用您的認證連接至 PowerShell 模組，請執行下列命令。</span><span class="sxs-lookup"><span data-stu-id="44137-123">To connect to the PowerShell module with your credentials, run the following command.</span></span>
 
 ```powershell
 Connect-MSCommerce
 ```
 
-<span data-ttu-id="994ee-124">此命令會將目前的 PowerShell 會話連接至 Azure Active Directory 租使用者。</span><span class="sxs-lookup"><span data-stu-id="994ee-124">This command connects the current PowerShell session to an Azure Active Directory tenant.</span></span> <span data-ttu-id="994ee-125">命令會提示您輸入您要連線的承租人的使用者名稱和密碼。</span><span class="sxs-lookup"><span data-stu-id="994ee-125">The command prompts you for a username and password for the tenant you want to connect to.</span></span> <span data-ttu-id="994ee-126">如果為您的認證啟用多重要素驗證，您可以使用 [互動式] 選項來登入。</span><span class="sxs-lookup"><span data-stu-id="994ee-126">If multi-factor authentication is enabled for your credentials, you use the interactive option to log in.</span></span>
+<span data-ttu-id="44137-124">此命令會將目前的 PowerShell 會話連接至 Azure Active Directory 租使用者。</span><span class="sxs-lookup"><span data-stu-id="44137-124">This command connects the current PowerShell session to an Azure Active Directory tenant.</span></span> <span data-ttu-id="44137-125">命令會提示您輸入您要連線的承租人的使用者名稱和密碼。</span><span class="sxs-lookup"><span data-stu-id="44137-125">The command prompts you for a username and password for the tenant you want to connect to.</span></span> <span data-ttu-id="44137-126">如果為您的認證啟用多重要素驗證，您可以使用 [互動式] 選項來登入。</span><span class="sxs-lookup"><span data-stu-id="44137-126">If multi-factor authentication is enabled for your credentials, you use the interactive option to log in.</span></span>
 
-## <a name="view-details-for-allowselfservicepurchase"></a><span data-ttu-id="994ee-127">查看 AllowSelfServicePurchase 的詳細資料</span><span class="sxs-lookup"><span data-stu-id="994ee-127">View details for AllowSelfServicePurchase</span></span>
+## <a name="view-details-for-allowselfservicepurchase"></a><span data-ttu-id="44137-127">查看 AllowSelfServicePurchase 的詳細資料</span><span class="sxs-lookup"><span data-stu-id="44137-127">View details for AllowSelfServicePurchase</span></span>
 
-<span data-ttu-id="994ee-128">若要根據您的組織，查看**AllowSelfServicePurchase**參數值的描述及預設狀態，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="994ee-128">To view a description of the **AllowSelfServicePurchase** parameter value and the default status, based on your organization, run the following command:</span></span>
+<span data-ttu-id="44137-128">若要根據您的組織，查看**AllowSelfServicePurchase**參數值的描述及預設狀態，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="44137-128">To view a description of the **AllowSelfServicePurchase** parameter value and the default status, based on your organization, run the following command:</span></span>
 
 ```powershell
 Get-MSCommercePolicy -PolicyId AllowSelfServicePurchase
 ```
 
-## <a name="view-a-list-of-self-service-purchase-products-and-their-status"></a><span data-ttu-id="994ee-129">查看自助購買產品及其狀態的清單</span><span class="sxs-lookup"><span data-stu-id="994ee-129">View a list of self-service purchase products and their status</span></span>
+## <a name="view-a-list-of-self-service-purchase-products-and-their-status"></a><span data-ttu-id="44137-129">查看自助購買產品及其狀態的清單</span><span class="sxs-lookup"><span data-stu-id="44137-129">View a list of self-service purchase products and their status</span></span>
 
-<span data-ttu-id="994ee-130">若要查看所有可用自助購買產品的清單，以及每個產品的狀態，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="994ee-130">To view a list of all available self-service purchase products and the status of each, run the following command:</span></span>
+<span data-ttu-id="44137-130">若要查看所有可用自助購買產品的清單，以及每個產品的狀態，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="44137-130">To view a list of all available self-service purchase products and the status of each, run the following command:</span></span>
 
 ```powershell
 Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 ```
 
-<span data-ttu-id="994ee-131">下表列出可用的產品及其**ProductId**。</span><span class="sxs-lookup"><span data-stu-id="994ee-131">The following table lists the available products and their **ProductId**.</span></span>
+<span data-ttu-id="44137-131">下表列出可用的產品及其**ProductId**。</span><span class="sxs-lookup"><span data-stu-id="44137-131">The following table lists the available products and their **ProductId**.</span></span>
 
-| <span data-ttu-id="994ee-132">產品</span><span class="sxs-lookup"><span data-stu-id="994ee-132">Product</span></span> | <span data-ttu-id="994ee-133">ProductId</span><span class="sxs-lookup"><span data-stu-id="994ee-133">ProductId</span></span> |
+| <span data-ttu-id="44137-132">產品</span><span class="sxs-lookup"><span data-stu-id="44137-132">Product</span></span> | <span data-ttu-id="44137-133">ProductId</span><span class="sxs-lookup"><span data-stu-id="44137-133">ProductId</span></span> |
 |-----------------------------|--------------|
-| <span data-ttu-id="994ee-134">每位使用者的電源應用程式</span><span class="sxs-lookup"><span data-stu-id="994ee-134">Power Apps per user</span></span> | <span data-ttu-id="994ee-135">CFQ7TTC0KP0P</span><span class="sxs-lookup"><span data-stu-id="994ee-135">CFQ7TTC0KP0P</span></span> |
-| <span data-ttu-id="994ee-136">每位使用者的電源自動化</span><span class="sxs-lookup"><span data-stu-id="994ee-136">Power Automate per user</span></span> | <span data-ttu-id="994ee-137">CFQ7TTC0KP0N</span><span class="sxs-lookup"><span data-stu-id="994ee-137">CFQ7TTC0KP0N</span></span> |
-| <span data-ttu-id="994ee-138">Power BI Pro</span><span class="sxs-lookup"><span data-stu-id="994ee-138">Power BI Pro</span></span> | <span data-ttu-id="994ee-139">CFQ7TTC0L3PB</span><span class="sxs-lookup"><span data-stu-id="994ee-139">CFQ7TTC0L3PB</span></span> |
+| <span data-ttu-id="44137-134">每位使用者的電源應用程式</span><span class="sxs-lookup"><span data-stu-id="44137-134">Power Apps per user</span></span> | <span data-ttu-id="44137-135">CFQ7TTC0KP0P</span><span class="sxs-lookup"><span data-stu-id="44137-135">CFQ7TTC0KP0P</span></span> |
+| <span data-ttu-id="44137-136">每位使用者的電源自動化</span><span class="sxs-lookup"><span data-stu-id="44137-136">Power Automate per user</span></span> | <span data-ttu-id="44137-137">CFQ7TTC0KP0N</span><span class="sxs-lookup"><span data-stu-id="44137-137">CFQ7TTC0KP0N</span></span> |
+| <span data-ttu-id="44137-138">Power BI Pro</span><span class="sxs-lookup"><span data-stu-id="44137-138">Power BI Pro</span></span> | <span data-ttu-id="44137-139">CFQ7TTC0L3PB</span><span class="sxs-lookup"><span data-stu-id="44137-139">CFQ7TTC0L3PB</span></span> |
+| <span data-ttu-id="44137-140">專案方案1</span><span class="sxs-lookup"><span data-stu-id="44137-140">Project Plan 1</span></span> | <span data-ttu-id="44137-141">CFQ7TTC0KXND</span><span class="sxs-lookup"><span data-stu-id="44137-141">CFQ7TTC0KXND</span></span> |
+| <span data-ttu-id="44137-142">專案計劃3</span><span class="sxs-lookup"><span data-stu-id="44137-142">Project Plan 3</span></span> | <span data-ttu-id="44137-143">CFQ7TTC0KXNC</span><span class="sxs-lookup"><span data-stu-id="44137-143">CFQ7TTC0KXNC</span></span> |
+| <span data-ttu-id="44137-144">Visio 方案1</span><span class="sxs-lookup"><span data-stu-id="44137-144">Visio Plan 1</span></span> | <span data-ttu-id="44137-145">CFQ7TTC0KXN9</span><span class="sxs-lookup"><span data-stu-id="44137-145">CFQ7TTC0KXN9</span></span> |
+| <span data-ttu-id="44137-146">Visio 方案2</span><span class="sxs-lookup"><span data-stu-id="44137-146">Visio Plan 2</span></span> | <span data-ttu-id="44137-147">CFQ7TTC0KXN8</span><span class="sxs-lookup"><span data-stu-id="44137-147">CFQ7TTC0KXN8</span></span> |
 
-## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a><span data-ttu-id="994ee-140">查看或設定 AllowSelfServicePurchase 的狀態</span><span class="sxs-lookup"><span data-stu-id="994ee-140">View or set the status for AllowSelfServicePurchase</span></span>
+## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a><span data-ttu-id="44137-148">查看或設定 AllowSelfServicePurchase 的狀態</span><span class="sxs-lookup"><span data-stu-id="44137-148">View or set the status for AllowSelfServicePurchase</span></span>
 
-<span data-ttu-id="994ee-141">在您查看可供自助購買之產品的清單後，您可以查看或修改特定產品的設定。</span><span class="sxs-lookup"><span data-stu-id="994ee-141">After you view the list of products available for self-service purchase, you can view or modify the setting for a specific product.</span></span>
+<span data-ttu-id="44137-149">在您查看可供自助購買之產品的清單後，您可以查看或修改特定產品的設定。</span><span class="sxs-lookup"><span data-stu-id="44137-149">After you view the list of products available for self-service purchase, you can view or modify the setting for a specific product.</span></span>
 
-<span data-ttu-id="994ee-142">若要取得特定產品的原則設定，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="994ee-142">To get the policy setting for a specific product, run the following command:</span></span>
+<span data-ttu-id="44137-150">若要取得特定產品的原則設定，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="44137-150">To get the policy setting for a specific product, run the following command:</span></span>
 
 ```powershell
 Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N
 ```
 
-<span data-ttu-id="994ee-143">若要啟用特定產品的原則設定，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="994ee-143">To enable the policy setting for a specific product, run the following command:</span></span>
+<span data-ttu-id="44137-151">若要啟用特定產品的原則設定，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="44137-151">To enable the policy setting for a specific product, run the following command:</span></span>
 
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
 ```
 
-<span data-ttu-id="994ee-144">若要停用特定產品的原則設定，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="994ee-144">To disable the policy setting for a specific product, run the following command:</span></span>
+<span data-ttu-id="44137-152">若要停用特定產品的原則設定，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="44137-152">To disable the policy setting for a specific product, run the following command:</span></span>
 
 ```powershell
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
 ```
 
-## <a name="example-script-to-disable-allowselfservicepurchase"></a><span data-ttu-id="994ee-145">停用 AllowSelfServicePurchase 的範例腳本</span><span class="sxs-lookup"><span data-stu-id="994ee-145">Example script to disable AllowSelfServicePurchase</span></span>
+## <a name="example-script-to-disable-allowselfservicepurchase"></a><span data-ttu-id="44137-153">停用 AllowSelfServicePurchase 的範例腳本</span><span class="sxs-lookup"><span data-stu-id="44137-153">Example script to disable AllowSelfServicePurchase</span></span>
 
-<span data-ttu-id="994ee-146">下列範例會逐步引導您如何匯入 MSCommerce 模組、以您的帳戶登入、取得自動**MSCommerce**的**ProductId** ，然後針對該產品停用**AllowSelfServicePurchase** 。</span><span class="sxs-lookup"><span data-stu-id="994ee-146">The following example walks you through how to import the **MSCommerce** module, sign in with your account, get the **ProductId** for Power Automate, and then disable **AllowSelfServicePurchase** for that product.</span></span>
+<span data-ttu-id="44137-154">下列範例會逐步引導您如何匯入 MSCommerce 模組、以您的帳戶登入、取得自動**MSCommerce**的**ProductId** ，然後針對該產品停用**AllowSelfServicePurchase** 。</span><span class="sxs-lookup"><span data-stu-id="44137-154">The following example walks you through how to import the **MSCommerce** module, sign in with your account, get the **ProductId** for Power Automate, and then disable **AllowSelfServicePurchase** for that product.</span></span>
 
 ```powershell
 Import-Module -Name MSCommerce
@@ -126,19 +130,19 @@ $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | wh
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
 
-## <a name="troubleshooting"></a><span data-ttu-id="994ee-147">疑難排解</span><span class="sxs-lookup"><span data-stu-id="994ee-147">Troubleshooting</span></span>
+## <a name="troubleshooting"></a><span data-ttu-id="44137-155">疑難排解</span><span class="sxs-lookup"><span data-stu-id="44137-155">Troubleshooting</span></span>
 
-<span data-ttu-id="994ee-148">**問題**</span><span class="sxs-lookup"><span data-stu-id="994ee-148">**Problem**</span></span>
+### <a name="problem"></a><span data-ttu-id="44137-156">問題</span><span class="sxs-lookup"><span data-stu-id="44137-156">Problem</span></span>
 
-<span data-ttu-id="994ee-149">您會看到下列錯誤訊息：</span><span class="sxs-lookup"><span data-stu-id="994ee-149">You see the following error message:</span></span>
+<span data-ttu-id="44137-157">您會看到下列錯誤訊息：</span><span class="sxs-lookup"><span data-stu-id="44137-157">You see the following error message:</span></span>
 
-> <span data-ttu-id="994ee-150">HandleError：無法使用 PolicyId ' AllowSelfServicePurchase ' 取得原則，ErrorMessage-基礎 connection 已關閉：傳送時發生意外的錯誤。</span><span class="sxs-lookup"><span data-stu-id="994ee-150">HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying connection was closed: An unexpected error occurred on a send.</span></span>
+> <span data-ttu-id="44137-158">HandleError：無法使用 PolicyId ' AllowSelfServicePurchase ' 取得原則，ErrorMessage-基礎 connection 已關閉：傳送時發生意外的錯誤。</span><span class="sxs-lookup"><span data-stu-id="44137-158">HandleError : Failed to retrieve policy with PolicyId 'AllowSelfServicePurchase', ErrorMessage - The underlying connection was closed: An unexpected error occurred on a send.</span></span>
 
-<span data-ttu-id="994ee-151">這可能是因為舊版本的傳輸層安全性（TLS）。</span><span class="sxs-lookup"><span data-stu-id="994ee-151">This may be due to an older version of Transport Layer Security (TLS).</span></span> <span data-ttu-id="994ee-152">若要連接此服務，您需要使用 TLS 1.2 或更新版本</span><span class="sxs-lookup"><span data-stu-id="994ee-152">To connect this service you need to use TLS 1.2 or greater</span></span>
+<span data-ttu-id="44137-159">這可能是因為舊版本的傳輸層安全性 (TLS) 。</span><span class="sxs-lookup"><span data-stu-id="44137-159">This may be due to an older version of Transport Layer Security (TLS).</span></span> <span data-ttu-id="44137-160">若要連接此服務，您需要使用 TLS 1.2 或更新版本</span><span class="sxs-lookup"><span data-stu-id="44137-160">To connect this service you need to use TLS 1.2 or greater</span></span>
 
-<span data-ttu-id="994ee-153">**解決方案**</span><span class="sxs-lookup"><span data-stu-id="994ee-153">**Solution**</span></span>
+### <a name="solution"></a><span data-ttu-id="44137-161">解決方案</span><span class="sxs-lookup"><span data-stu-id="44137-161">Solution</span></span>
 
-<span data-ttu-id="994ee-154">升級到 TLS 1.2：[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)</span><span class="sxs-lookup"><span data-stu-id="994ee-154">Upgrade to TLS 1.2: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)</span></span>
+<span data-ttu-id="44137-162">升級到 TLS 1.2：[https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)</span><span class="sxs-lookup"><span data-stu-id="44137-162">Upgrade to TLS 1.2: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)</span></span>
 
 <!--
 ## Uninstall the MSCommerce module
