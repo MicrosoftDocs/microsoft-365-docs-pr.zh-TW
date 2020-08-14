@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以透過 Exchange Online Protection （EOP）瞭解新增至郵件的標題欄位。 這些標題欄位可提供訊息及其處理方式的相關資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ce0b906bb627a7de11e5a8a6db02c9c6f330a62
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 5073e0721e82e969dbeaa850cc38cb13100a7947
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755353"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653422"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 的反垃圾郵件標頭
 
@@ -43,9 +43,10 @@ ms.locfileid: "44755353"
 > [!NOTE]
 > **X-Forefront-反垃圾郵件報告** 標題包含許多不同的標題欄位和值。 此標頭中未在表格描述的其他欄位專門由 Microsoft 反垃圾郵件小組進行診斷之用。
 
-|||
+****
+
+|標頭欄位|描述|
 |---|---|
-|**標頭欄位**|**描述**|
 |ARC|ARC 通訊協定的標頭如下： <ul><li>AAR：從 DMARC 記錄驗證結果標頭的內容。</li><li>AMS：這個標頭包含郵件的加密簽名。</li><li>AS：包含郵件標頭的加密簽名。 此標頭含有稱為 "cv =" 的鏈結驗證標籤，其中包含鏈結驗證結果為 **none**、**pass**或 **fail**。</li></ul>|
 |CAT：|郵件所套用的保護原則類別： <ul><li>BULK：大量郵件</li><li>DIMP：網域冒充</li><li>GIMP：以信箱智慧的模擬類比</li><li>HPHSH 或 HPHISH：高信賴度網路釣魚</li><li>HSPM：高信賴度的垃圾郵件</li><li>MALW：惡意程式碼</li><li>PHSH：網路釣魚</li><li>SPM：垃圾郵件</li><li>SPOOF：詐騙</li><li>UIMP：使用者冒充</li><li>AMP: 反惡意程式碼</li><li>SAP: 安全附件</li><li>OSPM: 輸出垃圾郵件</li></ul><br/>可以透過多種形式的保護和多次偵測掃描來標記輸入郵件。 原則具有不同的優先次序，將套用優先次序最高的原則。 如需詳細資訊，請參閱[在您的電子郵件上執行多種保護方法和偵測掃描時適用的原則](how-policies-and-protections-are-combined.md)。|
 |CIP: \[IP address\]|連接的 IP 位址。 您可以在 IP 允許清單或 IP 封鎖清單中使用這個 IP 位址。 如需詳細資訊，請參閱[設定連線篩選](configure-the-connection-filter-policy.md)。|
@@ -75,9 +76,10 @@ ms.locfileid: "44755353"
 
 下表說明在 **X-Microsoft-Antispam** 郵件標頭中的實用欄位。 此標頭的其他欄位專供 Microsoft 反垃圾郵件小組進行診斷之用。
 
-|||
+****
+
+|標頭欄位|描述|
 |---|---|
-|**標頭欄位**|**描述**|
 |BCL|郵件的大量抱怨層級 (BCL)。 BCL 高，表示大量郵件訊息 (又稱為 _「灰色郵件」_) 更容易引發抱怨 (因此更可能是垃圾郵件)。 如需詳細資訊，請參閱[大量相容層級 (BCL)](bulk-complaint-level-values.md)。|
 |
 
@@ -140,9 +142,10 @@ dmarc=fail action=oreject header.from=contoso.com
 
 下表描述每個電子郵件驗證檢查的欄位和可能的值。
 
-|||
+****
+
+|標頭欄位|描述|
 |---|---|
-|**標頭欄位**|**描述**|
 |action|表示垃圾郵件篩選器根據 DMARC 檢查結果所採取的動作作。 例如： <ul><li>**oreject** 或 **o.reject**：代表覆寫拒絕。 在這種情況下，當 Microsoft 365 從DMARC TXT 記錄具有 p=reject 原則的網域收到 DMARC 檢查失敗的郵件時，將會採取此動作。 Microsoft 365 會將郵件標記為垃圾郵件，而不是刪除或拒絕郵件。 如需 Microsoft 365 以這種方式設定的原因詳細資訊，請參閱 [Microsoft 365 如何處理未通過 DMARC 的輸入電子郵件](use-dmarc-to-validate-email.md#how-microsoft-365-handles-inbound-email-that-fails-dmarc)。</li><li>**pct.quarantine**：表示無論如何都將傳遞百分比少於 100% 的未通過 DMARC 的郵件。 這表示郵件的 DMARC 失敗並且原則設定為為隔離，但 pct 欄位未設定為 100 %，因此系統隨機決定不根據指定網域的原則來套用 DMARC 動作。</li><li>**pct.reject**：表示無論如何都將傳遞百分比少於 100% 的未通過 DMARC 的郵件。 這表示郵件的 DMARC 失敗並且原則設定為為拒絕，但 pct 欄位未設定為 100 %，因此系統隨機決定不根據指定網域的原則來套用 DMARC 動作。</li><li>**permerror**：在 DMARC 評估期間發生永久性錯誤，例如在 DNS 中發生格式錯誤的 DMARC TXT 記錄。 嘗試重新傳送此郵件也不太會有不同的結果。 相反地，您可能需要連絡網域擁有者來解決問題。</li><li>**temperror**：DMARC 評估期間發生暫時錯誤。 您可能可以要求寄件人稍後重新傳送郵件，以便正確處理電子郵件。</li></ul>|
 |compauth|複合驗證結果。 Microsoft 365 所使用，用於組合多種類型的驗證 (如 SPF、DKIM、DMARC 或郵件的任何其他部分)，以判斷郵件是否經過驗證。 使用 From: 網域作為評估基礎。|
 |dkim|描述郵件的 DKIM 檢查結果。 可能的值包括： <ul><li>**pass**：表示郵件的 DKIM 檢查通過。</li><li>**fail (原因)**：表示郵件的 DKIM 檢查失敗及原因。 例如，郵件未簽署或簽章未經過驗證。</li><li>**none**：表示郵件未簽署。 這可能會也可能不會表示網域具有 DKIM 記錄或 DKIM 記錄未計算結果，僅表示此郵件未簽署。</li></ul>|

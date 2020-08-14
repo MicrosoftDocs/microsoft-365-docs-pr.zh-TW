@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: d8a8ab2f5c7de5d57f50ec6b1c26e0fc71ac6616
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 2241f48877019cb20484aea0dd1fcf7b9e7b8bb5
+ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434046"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46653602"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Office 365 進階威脅防護
 
@@ -45,9 +45,11 @@ Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息�
 
 下表摘要列出每個方案所包含的內容。
 
-| Office 365 ATP 方案 1 | Office 365 ATP 方案 2 |
+****
+
+|Office 365 ATP 方案 1|Office 365 ATP 方案 2|
 |---|---|
-|設定、保護和偵測功能：<br/>• [安全附件](atp-safe-attachments.md)<br/>• [安全連結](atp-safe-links.md)<br/>• [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)<br/>• [ATP 防網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [即時偵測](threat-explorer.md)|Office 365 ATP 方案 1 功能<br/>--- 以及 ---<br/>自動化、調查、補救和教育功能：<br/>• [威脅追蹤工具](threat-trackers.md)<br/>• [威脅總管](threat-explorer.md)<br/>• [自動調查及回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [攻擊模擬器](attack-simulator.md)|
+|<br/>設定、保護和偵測功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全連結](atp-safe-links.md)</li><li>[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)</li><li>[ATP 防網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[即時偵測](threat-explorer.md)</li></ul>|Office 365 ATP 方案 1 功能<br/>--- 以及 ---<br/>自動化、調查、補救和教育功能：</li><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[攻擊模擬器](attack-simulator.md)</li></ul>|
 |
 
 - Office 365 ATP 方案 2 包含在 Office 365 E5、Office 365 A5 和 Microsoft 365 E5 中。
@@ -112,11 +114,11 @@ Office 365 ATP 方案 2 中包含業界最佳[威脅調查及回應工具](offic
 若要存取安全性與合規性中心的 ATP 功能，您必須獲指派適當的角色。 下表包括一些範例：
 
 |角色或角色群組|可深入了解的資源|
-|---------|---------|
-|全域系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派) |[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
-|安全性系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派) |[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)|
+|---|---|
+|全域系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派)|[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|安全性系統管理員 (可在 Azure Active Directory 或安全性與合規性中心指派)|[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br><br/>[安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)|
 |Exchange Online 組織管理 (這是在 Exchange Online 中指派)|[Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)<br><br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
-|搜尋和清除 (僅能在安全性與合規性中心指派) |[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md|
+|搜尋和清除 (僅能在安全性與合規性中心指派)|[安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)|
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 

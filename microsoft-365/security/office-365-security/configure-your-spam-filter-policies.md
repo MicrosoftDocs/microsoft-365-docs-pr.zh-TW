@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
-ms.openlocfilehash: 60b53e21978867321f6fe824da35db683dc76663
-ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
+ms.openlocfilehash: fea1ae4a43ee3002c49bd6511a55a3d490723fc2
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45372558"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656812"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -118,19 +118,24 @@ EOP 中反垃圾郵件原則的基本元素有：
      - 核取記號 ( ![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) 表示可採取的動作 (並非所有的垃圾郵件篩選裁決皆可採取所有動作)。
      - 核取記號之後有星號 (<sup>\*</sup>) 表示垃圾郵件篩選裁決的預設動作。
 
-    |||||||
-    |:---|:---:|:---:|:---:|:---:|:---:|
-    ||**垃圾郵件**|**高信賴度<br/>垃圾郵件<br/>**|**網路釣魚<br/>電子郵件**|**高信賴度<br/>網路釣魚<br/>電子郵件<br/>**|**大量<br/>電子郵件**|
-    |**將郵件移至 [垃圾郵件] 資料夾**：郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-    |**新增 X 標頭**：在郵件標頭中新增 X 標頭，並將郵件傳送到信箱。 <br/> 您稍後可以在 [新增此 X 標頭文字]**** 方塊中輸入 X 標頭欄位的名稱 (不是值)。 <br/><br/> 裁決為**垃圾郵件**和**高信賴度垃圾郵件**的郵件會移至 [垃圾郵件] 資料夾。<sup>1,2</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-    |**在主旨列前加上文字**：新增文字至郵件主旨列的開頭。 郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1,2</sup> <br/> 您稍後可以在 [在主旨列前加上此文字]**** 方塊中輸入文字。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |**將郵件重新導向至電子郵件地址**：將郵件傳送給其他收件者，而不是預定收件者。 <br/> 您稍後可以在 [重新導向到這個電子郵件地址]**** 方塊中指定收件者。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |**刪除郵件**：刪除整封郵件，包括所有附件。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |**隔離郵件**：將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/> 您稍後可以在 [隔離]**** 方塊中指定郵件要在隔離區保留多久。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |**無動作**|||||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-    |
+     ****
 
-    > <sup>1</sup> 在 Exchange Online 中，如果信箱已啟用垃圾郵件規則 (預設為啟用)，郵件會移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。<br/>在獨立版 EOP 環境中，EOP 會保護內部部署 Exchange 信箱，您必須在內部部署 Exchange 中設定郵件流程規則 (又稱為傳輸規則) 以轉譯 EOP 垃圾郵件篩選裁決，這樣垃圾郵件規則才可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定獨立版 EOP 將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。<br/><br/><sup>2</sup> 您可以使用此值做為郵件流程規則 (又稱為傳輸規則) 的條件，以便篩選或傳送郵件。
+     |<span>|垃圾郵件|高<br/>信賴度<br/>垃圾郵件|網路釣魚<br/>電子郵件|高<br/>信賴度<br/>網路釣魚<br/>電子郵件|大量<br/>電子郵件|
+     |---|:---:|:---:|:---:|:---:|:---:|
+     |**將郵件移至 [垃圾郵件] 資料夾**：郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+     |**新增 X 標頭**：在郵件標頭中新增 X 標頭，並將郵件傳送到信箱。 <br/> 您稍後可以在 [新增此 X 標頭文字]**** 方塊中輸入 X 標頭欄位的名稱 (不是值)。 <br/><br/> 裁決為**垃圾郵件**和**高信賴度垃圾郵件**的郵件會移至 [垃圾郵件] 資料夾。<sup>1,2</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+     |**在主旨列前加上文字**：新增文字至郵件主旨列的開頭。 郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1,2</sup> <br/> 您稍後可以在 [在主旨列前加上此文字]**** 方塊中輸入文字。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**將郵件重新導向至電子郵件地址**：將郵件傳送給其他收件者，而不是預定收件者。 <br/> 您稍後可以在 [重新導向到這個電子郵件地址]**** 方塊中指定收件者。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**刪除郵件**：刪除整封郵件，包括所有附件。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**隔離郵件**：將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/> 您稍後可以在 [隔離]**** 方塊中指定郵件要在隔離區保留多久。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**無動作**|||||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |
+
+     > <sup>1</sup> 在 Exchange Online 中，如果信箱已啟用垃圾郵件規則 (預設為啟用)，郵件會移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+     >
+     > 在獨立版 EOP 環境中，EOP 會保護內部部署 Exchange 信箱，您必須在內部部署 Exchange 中設定郵件流程規則 (又稱為傳輸規則) 以轉譯 EOP 垃圾郵件篩選裁決，這樣垃圾郵件規則才可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定獨立版 EOP 將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+     >
+     > <sup>2</sup> 您可以使用此值做為郵件流程規則 (又稱為傳輸規則) 的條件，以便篩選或傳送郵件。
 
    - **選取閾值**：針對會觸發**大量電子郵件**垃圾郵件篩選裁決指定動作的訊息，指定大量抱怨層級 (BCL)，(大於、不大於或等於指定的值)。 較高的值表示不太理想的郵件 (更可能像是垃圾郵件)。 預設值為 7。 如需詳細資訊，請參閱 [EOP 中的大量抱怨層級 (BCL)](bulk-complaint-level-values.md) 和[垃圾電子郵件與大量電子郵件之間有何不同？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
@@ -169,7 +174,10 @@ EOP 中反垃圾郵件原則的基本元素有：
 5. (選用) 展開 [允許清單]**** 區段，依據允許跳過垃圾郵件篩選的電子郵件地址或電子郵件網域，來設定郵件寄件人：
 
    > [!CAUTION]
-   > • 在此新增網域前請仔細考慮。 如需詳細資訊，請參閱[在 EOP 中建立安全寄件者清單](create-safe-sender-lists-in-office-365.md)。 <br/><br/> • 絕對不要將公認的網域 (您擁有的網域) 或常見網域 (例如 microsoft.com 或 office.com) 新增到允許的網域清單中。 這會讓攻擊者能夠略過垃圾郵件篩選將電子郵件送進您的貴組織。
+   >
+   > - 在此新增網域前請仔細考慮。 如需詳細資訊，請參閱[在 EOP 中建立安全寄件者清單](create-safe-sender-lists-in-office-365.md)。
+   >
+   > - 絕對不要將接受的網域 (您擁有的網域) 或一般網域 (例如 microsoft.com 或 office.com) 新增到允許的網域清單中。 這會讓攻擊者能夠略過垃圾郵件篩選將電子郵件送進您的貴組織。
 
    - **允許寄件者**：按一下 [編輯]****。 在 [允許的寄件者清單]**** 飛出視窗中：
 
@@ -424,7 +432,7 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 ```
 
 > [!NOTE]
-> **Set-hostedcontentfilterpolicy** 和 **Set-Set-hostedcontentfilterpolicy** 有較舊的 ZapEnabled__ 參數，以及較新的 PhishZapEnabled__ 和 SpamZapEnabled__ 參數。 ZapEnabled__ 參數已在 2020 年 2 月淘汰。 PhishZapEnabled__ 和 SpamZapEnabled__ 參數則用來繼承 ZapEnabled__ 參數的值。 不過，如果您在命令中使用 PhishZapEnabled__ 和 SpamZapEnabled__ 參數，或是在安全性與合規性中心中的反垃圾郵件原則中使用 [垃圾郵件 ZAP]**** 或 [網路釣魚 ZAP]**** 設定，系統就會忽略 ZapEnabled__ 參數的值。 換句話說，請勿使用 ZapEnabled__ 參數，改用 PhishZapEnabled__ 和 SpamZapEnabled__ 參數。
+> **Set-hostedcontentfilterpolicy** 和 **Set-Set-hostedcontentfilterpolicy** 有較舊的 ZapEnabled__ 參數，以及較新的 PhishZapEnabled__ 和 SpamZapEnabled__ 參數。 _ZapEnabled_ 參數已在 2020 年 2 月淘汰。 PhishZapEnabled__ 和 SpamZapEnabled__ 參數則用來繼承 ZapEnabled__ 參數的值。 不過，如果您在命令中使用 PhishZapEnabled__ 和 SpamZapEnabled__ 參數，或是在安全性與合規性中心中的反垃圾郵件原則中使用 [垃圾郵件 ZAP]**** 或 [網路釣魚 ZAP]**** 設定，系統就會忽略 ZapEnabled__ 參數的值。 換句話說，請勿使用 ZapEnabled__ 參數，改用 PhishZapEnabled__ 和 SpamZapEnabled__ 參數。
 
 如需詳細的語法及參數資訊，請參閱 [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy)。
 
