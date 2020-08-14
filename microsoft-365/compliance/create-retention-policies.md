@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 9974bebef9809647e7fb87f98f9d2f505baca4f3
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 3a08bd67ff705b0b11b815843041b146fbef388f
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126504"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656727"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -288,31 +288,37 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 
 ## <a name="lock-a-retention-policy-by-using-powershell"></a>使用 PowerShell 鎖定保留原則
 
-如果您需要使用[保留鎖定](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)才能符合法規要求，您必須使用 PowerShell。
+如果您需要使用[保留鎖定](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements)才能符合法規要求，您必須使用 PowerShell。 因為系統管理員無法在套用保留鎖定之後停用或刪除保留原則，因此在 UI 中無法使用此功能來防範意外的設定。
 
-1. [連線到安全性與合規性中心 PowerShell ](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+具有任何設定的所有保留原則都支持保留鎖定。 不過，當您使用下列的 PowerShell 命令時，您會發現 **工作量** 參數永遠顯示 **Exchange、SharePoint、OneDriveForBusines、Skype、ModernGroup**，而不是反映原則中設定的實際工作量。 這只是顯示問題。
 
-2. 執行 `Get-RetentionCompliancePolicy` 來列出您的保留原則清單，並尋找您想要鎖定的原則名稱。
+1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+
+2. 執行 [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy) 列出您的保留原則清單，並尋找您想要鎖定的原則名稱。 例如：
     
    ![PowerShell 中保留原則的清單](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
-3. 若要在保留原則上放置保留鎖定，請執行 `Set-RetentionCompliancePolicy` 時將 `RestrictiveRetention` 參數設為 True。 例如：
-
-   ```powershell
-   Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
-   ```
-   
-   ![PowerShell 中的 RestrictiveRetention 參數](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+3. 若要將保留鎖定置於保留原則上，請以保留原則名稱執行 [Set-RetentionCompliancePolicy]( ) cmdlet，並將 *RestrictiveRetention* 參數設為 true：
     
-   執行完該 Cmdlet 之後，請選擇 [全部皆是]****：
+    ```powershell
+    Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
+    ```
+    
+    例如：
+    
+    ![PowerShell 中的 RestrictiveRetention 參數](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
+    
+     當系統提示時，請閱讀並確認此設定隨附的限制，然後選擇 **全部皆是**：
     
    ![確認您在 PowerShell 想要鎖定保留原則的提示。](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
-保留鎖定現在放置於保留原則上。 如果您執行 `Get-RetentionCompliancePolicy`，`RestrictiveRetention` 參數會設為 true。 例如：
+保留鎖定現在放置於保留原則上。 若要確認，請再次執行 `Get-RetentionCompliancePolicy`，但指定保留原則名稱並顯示原則參數：
 
 ```powershell
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
+
+您應該會看到 **RestrictiveRetention** 設定為 **True**。 例如：
 
 ![PowerShell 中顯示所有參數的鎖定原則](../media/retention-policy-preservation-lock-locked-policy.PNG)
   

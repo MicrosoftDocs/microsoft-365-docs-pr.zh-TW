@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 957bde2112d5a0cf0c20bb28a8341b6f04118fc8
-ms.sourcegitcommit: cfb0c50f1366736cdf031a75f0608246b5640d93
+ms.openlocfilehash: d08589ec9465142e772c3190954ed7f93fbc68fe
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46536318"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648748"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -66,8 +66,8 @@ ms.locfileid: "46536318"
 
 |階段  |需要的項目  |
 |---------|---------|
-|[第 1 部分：設定以 EDM 為基礎的分類](#part-1-set-up-edm-based-classification)<br/><br/>(視需要)<br/>- [編輯資料庫結構描述](#editing-the-schema-for-edm-based-classification) <br/>- [移除結構描述](#removing-the-schema-for-edm-based-classification) |- 敏感性資料的讀取存取權<br/>- .xml 格式的資料庫結構描述 (提供範例)<br/>- .xml 格式的規則套件 (提供範例)<br/>- 安全性與合規性中心的系統管理員權限 (使用 PowerShell) |
-|[第 2 部分：編製索引及上傳敏感性資料](#part-2-index-and-upload-the-sensitive-data)<br/><br/>(視需要)<br/>[重新整理資料](#refreshing-your-sensitive-information-database) |- 自訂安全性群組和使用者帳戶<br/>- 具有 EDM 上傳代理程式電腦的本機系統管理員存取權<br/>- 敏感性資料的讀取存取權<br/>- 重新整理資料的程序和排程|
+|[第 1 部分：設定以 EDM 為基礎的分類](#part-1-set-up-edm-based-classification)<br/><br/>(視需要)<br/>- [編輯資料庫結構描述](#editing-the-schema-for-edm-based-classification) <br/>- [移除結構描述](#removing-the-schema-for-edm-based-classification) |- 敏感性資料的讀取存取權<br/>- XML 格式的資料庫結構描述 (提供範例)<br/>- XML 格式的規則套件 (提供範例)<br/>- 安全性與合規性中心的系統管理員權限 (使用 PowerShell) |
+|[第 2 部分：雜湊和上傳敏感性資料](#part-2-hash-and-upload-the-sensitive-data)<br/><br/>(視需要)<br/>[重新整理資料](#refreshing-your-sensitive-information-database) |- 自訂安全性群組和使用者帳戶<br/>- 具有 EDM 上傳代理程式電腦的本機系統管理員存取權<br/>- 敏感性資料的讀取存取權<br/>- 重新整理資料的程序和排程|
 |[第 3 部分：使用以 EDM 為基礎的分類搭配 Microsoft 雲端服務](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- Microsoft 365 訂閱與 DLP<br/>- 已啟用以 EDM 為基礎的分類功能 |
 
 ### <a name="part-1-set-up-edm-based-classification"></a>第 1 部分：設定以 EDM 為基礎的分類
@@ -83,16 +83,16 @@ ms.locfileid: "46536318"
 
 2. 以 .csv 檔案格式將敏感性資料結構化，使得第一列包含用於以 EDM 為基礎的分類的欄位名稱。 在您的 .csv 檔案中，您可能會有欄位名稱，例如 "ssn"、"birthdate"、"firstname"、"lastname" 等等。 請注意，資料行標題的名稱中不能包含空格或底線。 舉例來說，我們的 .csv 檔案稱為 *PatientRecords.csv*，且其資料行包括 *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *SSN*等。
 
-3. 以 .xml 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為  **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行： 
+3. 以 XML 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為  **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行： 
 
       `\<Field name="" searchable=""/\>`。
 
       - 使用資料行名稱作為 *欄位名稱* 值。
       - 對您想讓它可供搜尋最多 5 個欄位的欄位，使用 *searchable="true"* 。 您必須至少將一個欄位指定為可搜尋。
 
-      例如，下列 .xml 檔會為病患記錄資料庫定義結構描述，並將五個欄位指定為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 以及  *DOB* 
+      例如，下列 XML 檔會為病患記錄資料庫定義結構描述，並將五個欄位指定為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 以及  *DOB*。
 
-      (您可以複製、修改及使用我們的範例。)
+      (您可以複製、修改及使用我們的範例)。
 
       ```xml
       <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -195,7 +195,7 @@ ms.locfileid: "46536318"
 
 ### <a name="set-up-a-rule-package"></a>設定規則套件
 
-1. 以 .xml 格式建立規則套件 (使用 Unicode 編碼方式)，類似下列範例。 (您可以複製、修改及使用我們的範例)。
+1. 以 XML 格式建立規則套件 (使用 Unicode 編碼方式)，類似下列範例。 (您可以複製、修改及使用我們的範例)。
 
       當您設定規則套件時，請務必正確參照您的 .csv 檔案和 **edm.xml** 檔案。 您可以複製、修改及使用我們的範例。 在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：
 
@@ -260,7 +260,7 @@ ms.locfileid: "46536318"
       New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
       ```
 
-此時，您已設定以 EDM 為基礎的分類。 下一個步驟是要對敏感性資料編製索引，然後上傳已編製索引的資料。
+此時，您已設定以 EDM 為基礎的分類。 下一個步驟是要對敏感性資料雜湊，然後上傳用於編製索引的雜湊。
 
 回想一下前面的程序，我們的 PatientRecords 結構描述將五個欄位定義為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 和  *DOB*。 我們的範例規則套件包含這些欄位，並會參照資料庫結構描述檔案 (**edm.xml**)，一個  *ExactMatch*  項目會有一個可搜尋欄位。 請考慮下列 ExactMatch 項目：
 
@@ -294,9 +294,9 @@ ms.locfileid: "46536318"
 > [!NOTE]
 > 這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。 在您執行使用新增項目的步驟之前，必須先完成更新。
 
-### <a name="part-2-index-and-upload-the-sensitive-data"></a>第 2 部分：編製索引及上傳敏感性資料
+### <a name="part-2-hash-and-upload-the-sensitive-data"></a>第 2 部分：雜湊及上傳敏感性資料
 
-在此階段，您會設定自訂安全性群組和使用者帳戶，並設定 EDM 上傳代理程式工具。 然後，您會使用工具來為敏感性資料編製索引，並上傳已編製索引的資料。
+在此階段，您會設定自訂安全性群組和使用者帳戶，並設定 EDM 上傳代理程式工具。 然後，您會使用工具來為敏感性資料雜湊，並上傳已雜湊的資料，以便編製索引。
 
 #### <a name="set-up-the-security-group-and-user-account"></a>設定安全性群組和使用者帳戶
 
@@ -319,33 +319,33 @@ ms.locfileid: "46536318"
 
 1. 下載並安裝您的訂閱的適當 [EDM 上傳代理程式](#links-to-edm-upload-agent-by-subscription-type)。 根據預設，安裝位置應該是  **C:\\Program Files\\Microsoft\\EdmUploadAgent**。
 
-> [!TIP]
-> 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
+   > [!TIP]
+   > 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
 
-> [!NOTE]
-> 您每天最多可以使用 EDMUploadAgent 將資料上傳到任何指定的資料儲存區兩次。
+   > [!NOTE]
+   > 您每天最多可以使用 EDMUploadAgent 將資料上傳到任何指定的資料儲存區兩次。
 
 2. 若要授權 EDM 上傳代理程式，請開啟 Windows 命令提示字元 (以系統管理員身分)，然後執行下列命令：
 
-    `EdmUploadAgent.exe /Authorize`
+   `EdmUploadAgent.exe /Authorize`
 
 3. 使用您的公司或學校帳戶登入已新增至 EDM_DataUploaders 安全性群組的 Office 365。
 
-下一個步驟是使用 EDM 上傳代理程式來為敏感性資料編製索引，然後上傳已編製索引的資料。
+下一個步驟是使用 EDM 上傳代理程式來為敏感性資料雜湊，然後上傳已雜湊的資料。
 
-#### <a name="index-and-upload-the-sensitive-data"></a>編製索引及上傳敏感性資料
+#### <a name="hash-and-upload-the-sensitive-data"></a>雜湊及上傳敏感性資料
 
 將敏感性資料檔案 (回想我們的範例是 **PatientRecords.csv**) 儲存至電腦上的本機磁碟機  (我們將範例  **PatientRecords.csv**  檔案儲存至  **C:\\Edm\\Data**。)
 
-若要為敏感性資料編製索引並上傳，請在 Windows 命令提示字元中執行下列命令：
+若要為敏感性資料雜湊並上傳，請在 Windows 命令提示字元中執行下列命令：
 
 `EdmUploadAgent.exe /UploadData /DataStoreName \<DataStoreName\> /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
 範例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\\Edm\\Hash\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
-若要在隔離的環境中區隔並執行敏感性資料的索引，請分別執行索引和上傳步驟。
+若要在隔離的環境中區隔並執行敏感性資料的雜湊，請分別執行雜湊和上傳步驟。
 
-若要為敏感性資料編製索引，請在 Windows 命令提示字元中執行下列命令：
+若要為敏感性資料雜湊，請在 Windows 命令提示字元中執行下列命令：
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
@@ -353,7 +353,7 @@ ms.locfileid: "46536318"
 
 > **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
 
-若要上傳已編製索引的資料，請在 Windows 命令提示字元中執行下列命令：
+若要上傳已雜湊的資料，請在 Windows 命令提示字元中執行下列命令：
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
@@ -361,7 +361,9 @@ ms.locfileid: "46536318"
 
 > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
-若要確認您的敏感性資料已上傳，請在 Windows 命令提示字元中執行下列命令：
+
+若要確認您的敏感性資料已上傳，請在命令提示字元中執行下列命令：
+
 
 `EdmUploadAgent.exe /GetDataStore`
 
@@ -377,28 +379,28 @@ ms.locfileid: "46536318"
 
 #### <a name="refreshing-your-sensitive-information-database"></a>重新整理您的敏感性資訊資料庫
 
-您可以每日或每週重新整理您的敏感性資訊資料庫，而 EDM 上傳工具可以重新為敏感性資料編製索引，然後重新上傳已編製索引的資料。
+您可以每日或每週重新整理您的敏感性資訊資料庫，而 EDM 上傳工具可以重新為敏感性資料進行雜湊，然後重新上傳已雜湊的資料。
 
 1. 決定您重新整理敏感性資訊資料庫的程序和頻率 (每日或每週)。
 
-2. 將敏感性資料重新匯出至應用程式，例如 Microsoft Excel，並將檔案儲存為 .csv 格式。 當您遵循 [編製索引及上傳敏感性資料](#index-and-upload-the-sensitive-data)中所述的步驟時，請保留所使用的相同檔案名稱和位置。
+2. 將敏感性資料重新匯出至應用程式，例如 Microsoft Excel，並將檔案儲存為 .csv 格式。 當您遵循 [雜湊及上傳敏感性資料](#hash-and-upload-the-sensitive-data)中所述的步驟時，請保留所使用的相同檔案名稱和位置。
 
       > [!NOTE]
       > 如果 .csv 檔案的結構 (欄位名稱) 沒有任何變更，重新整理資料時，您不需要對資料庫結構描述檔案進行任何變更。 但如果您必須進行變更，請務必相應地編輯資料庫結構描述和規則套件。
 
-3. 使用 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) 將 [編製索引及上傳敏感性資料](#index-and-upload-the-sensitive-data) 程序中的步驟 2 和 3 自動化。 您可以使用數個方法來排程工作：
+3. 使用 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) 將 [雜湊及上傳敏感性資料](#hash-and-upload-the-sensitive-data) 程序中的步驟 2 和 3 自動化。 您可以使用數個方法來排程工作：
 
-      | **方法**             | **處理方式**                                                                                                                                                                                                                                                                                                                                                                                                                     |
-      | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+      | 方法             | 處理方式 |
+      | ---------------------- | ---------------- |
       | Windows PowerShell     | 請參閱 [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) 文件，以及本文中的 [範例 PowerShell 指令碼](#example-powershell-script-for-task-scheduler)  |
       | 工作排程器 API     | 請參閱 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) 文件                                                                                                                                                                                                                                                                                |
       | Windows 使用者介面 | 在 Windows 中，按一下 [開始] ****，然後輸入工作排程器。 接著，在結果清單中，以滑鼠右鍵按一下 [工作排程器] ****，然後選擇 [以系統管理員身分執行] ****。                                                                                                                                                                                                                                                                           |
 
 #### <a name="example-powershell-script-for-task-scheduler"></a>工作排程器的範例 PowerShell 指令碼
 
-本節包含的範例 PowerShell 指令碼，可供您用來對編製資料索引及上傳已編製索引的資料工作進行排程：
+本節包含的範例 PowerShell 指令碼，可供您用來對雜湊資料及上傳已雜湊的資料工作進行排程：
 
-##### <a name="to-schedule-index-and-upload-in-a-combined-step"></a>在相同的步驟中排程索引並上傳
+##### <a name="to-schedule-hashing-and-upload-in-a-combined-step"></a>在相同的步驟中排程雜湊並上傳
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -430,7 +432,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="to-schedule-index-and-upload-as-separate-steps"></a>在個別的步驟中排程索引和上傳
+#### <a name="to-schedule-hashing-and-upload-as-separate-steps"></a>在個別的步驟中排程雜湊和上傳
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -525,4 +527,4 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [DLP 原則的概觀](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
-- [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+

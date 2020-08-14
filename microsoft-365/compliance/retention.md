@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: ee256271b3520011db586d42e579b64b439a6210
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588205"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46649150"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 
@@ -124,6 +124,8 @@ ms.locfileid: "46588205"
   
 > [!IMPORTANT]
 > 在您鎖定保留原則之前，務必了解影響，並確認您的組織是否需要符合法規需求。 套用保留鎖定之後，系統管理員將無法停用或刪除保留原則。
+
+建立保留原則之後，您可以使用 PowerShell 套用保留鎖定。 如需相關指示，請參閱 [建立及設定保留原則](create-retention-policies.md)。
 
 #### <a name="releasing-a-retention-policy"></a>釋出保留原則
 

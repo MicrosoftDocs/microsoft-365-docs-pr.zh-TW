@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 8704930b6d1de9e329d892e62fb14b2c59111830
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 112857d9778cf850613c808474051eb25df74296
+ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560624"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656824"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -54,16 +54,15 @@ ms.locfileid: "46560624"
     如需設定指示，請參閱此頁面上的[如何設定 SharePoint、OneDrive 和 Exchange 的自動套用標籤原則](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)。
     
     SharePoint 和 OneDrive 自動套用標籤專屬限制：
-    - 支援 Word、PowerPoint 和 Excel 的 Office 檔案。
+    - 支援 Word、PowerPoint 和 Excel 的 Office 檔案。 支援 Open XML 格式（例如 .docx 和 .xlsx），但不支援 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
     - 租用戶中每日最多有 25,000 個自動套用標籤的檔案。
-    - 每個自動標籤原則最多 10 個網站集合。
-    - 在您的租用戶中，最多 10 個自動標籤原則。
+    - 每個租用戶最多 10 個自動套用標籤的原則，每個最多可用於 10 個網站（SharePoint 或 OneDrive）。
     - 自動標籤原則不會造成修改時間、修改者和日期的現有值變更 (對於兩個模擬模式和套用標籤時)。
     - 當標籤套用加密時，[版權管理頒發者和版權管理擁有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)會是建立敏感度標籤的人員。
 
     Exchange 自動套用標籤專屬限制：
     - 不同於 Office 應用程式的手動套用標籤或自動套用標籤，Office 附件 (Word、Excel 和 PowerPoint 檔案) 和 PDF 附件也會針對您在自動套用標籤原則中指定的條件進行掃描。 有相符項目時，電子郵件會套用標籤，但是附件不會套用標籤。
-        - 若是 Office 檔案，則會支援 Open XML 格式（例如 .docx 和 .xlsx），但不支援 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
+        - 針對這些 Office 檔案，將支援 Open XML 格式（例如 .docx 和 .xlsx），但不支援 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
     - 如果您有套用 IRM 加密的 Exchange 郵件流程規則或資料外洩防護 (DLP) 原則：當內容由這些規則或原則和自動套用標籤原則識別時，則會套用標籤。 如果該標籤套用加密，則會忽略 Exchange 郵件流程規則或 DLP 原則的 IRM 設定。 不過，如果該標籤並未套用加密，除了標籤以外，還會套用郵件流程規則或 DLP 原則的 IRM 設定。
     - 當有一個相符項目使用自動套用標籤時，具有 IRM 加密而沒有標籤的電子郵件，將會由具有任何加密設定的標籤取代。
     - 當有項目與您的自動套用標籤條件相符時，內送電子郵件會套用標籤。 不過，如果標籤針對加密進行設定，則不會套用加密。
@@ -215,15 +214,15 @@ ms.locfileid: "46560624"
 
 自動套用標籤原則的工作流程：
 
-1. 建立及設定自動套用標籤原則
+1. 建立及設定自動套用標籤原則。
 
-2. 在模擬模式中執行原則，並等待至少 24 小時
+2. 在模擬模式中執行原則並等候 24 小時，或直到完成模擬為止。
 
-3. 檢閱結果，並視需要調整原則，重新執行模擬模式，並等待至少 24 小時
+3. 查看結果，並視需要調整您的原則。 重新執行模擬模式並等候另 24 小時，或直到模擬完成為止。
 
-4. 視需要重複步驟 3
+4. 視需要重複步驟 3。
 
-5. 在生產環境中部署
+5. 在生產環境中部署。
 
 模擬的部署執行方式類似 PowerShell 的 WhatIf 參數。 您會看到報告的結果，就像是自動套用標籤原則已使用您定義的規則套用您選取的標籤。 如果需要，您可以接著調整規則的精確度，並重新執行模擬。 不過，由於 Exchange 的自動套用標籤適用於傳送和接收的電子郵件，而不是儲存在信箱中的電子郵件，因此除非您能夠傳送及接收完全相同的電子郵件訊息，否則請不要預期模擬中的電子郵件結果會是一致的。
 

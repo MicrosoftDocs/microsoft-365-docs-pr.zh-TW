@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及自動發佈保留標籤，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: a67be377e641cb6cc7395cd82f91a05b89c5ea7a
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
+ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560614"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648802"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤來保留或刪除內容
 
@@ -136,6 +136,8 @@ ms.locfileid: "46560614"
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>自動將標籤套用至包含關鍵字或可搜尋屬性的內容
 
 您可以自動將標籤套用至符合特定條件的內容。現在可用的條件支援將標籤套用至包含特定字詞、片語或可搜尋屬性的值。您可以使用 AND、OR、NOT 等搜尋運算子來精簡查詢。
+
+自動將標籤套用至可搜尋的屬性時，無法在查詢中使用受管理屬性的別名。 它必須是受管理屬性的實際名稱，例如 RefinableString01。
 
 如需查詢語法的詳細資訊，請參閱：
 
