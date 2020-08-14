@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 3a08bd67ff705b0b11b815843041b146fbef388f
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 3bec74c1043e2ecfd632144647945f441433dcb2
+ms.sourcegitcommit: 12e19f9cc319f25ab9dd3b0f77ad17e227d7f0be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656727"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46672908"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -308,7 +308,7 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
     
     ![PowerShell 中的 RestrictiveRetention 參數](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
-     當系統提示時，請閱讀並確認此設定隨附的限制，然後選擇 **全部皆是**：
+     當系統提示時，請閱讀並輸入 **Y** 來認可此設定隨附的限制：
     
    ![確認您在 PowerShell 想要鎖定保留原則的提示。](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 

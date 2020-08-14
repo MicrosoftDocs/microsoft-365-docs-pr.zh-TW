@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5bbcd7c7e3c68b5b5a23736901e5772454e9e10a
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 39c58a86b3f8e3bec2225c4a3df53120fac79eea
+ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577993"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674623"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -39,8 +39,6 @@ ms.locfileid: "46577993"
 - Azure Active Directory (適用於 Office 365 的目錄服務) 中的系統管理員活動
 
 - Exchange Online 中的系統管理員活動 (Exchange 系統管理員稽核記錄)
-
-- Sway 中的使用者和系統管理員活動
 
 - 安全性與合規性中心中的電子文件探索活動
 
@@ -130,7 +128,6 @@ ms.locfileid: "46577993"
   |安全性與合規性中心|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |敏感度標籤||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint Online 和商務用 OneDrive|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-  |Sway||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |工作場所分析|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Yammer||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Microsoft Forms|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -305,15 +302,15 @@ ms.locfileid: "46577993"
 |:-----|:-----|:-----|
 |[檔案和頁面活動](#file-and-page-activities)|[資料夾活動](#folder-activities)|[SharePoint 清單活動](#sharepoint-list-activities)|
 |[共用及存取要求活動](#sharing-and-access-request-activities)|[同步處理活動](#synchronization-activities)|[網站權限活動](#site-permissions-activities)|
-|[網站管理活動](#site-administration-activities)|[Exchange 信箱活動](#exchange-mailbox-activities)|[Sway 活動](#sway-activities)|
-|[使用者管理活動](#user-administration-activities)|[Azure AD 群組管理活動](#azure-ad-group-administration-activities)|[應用程式管理活動](#application-administration-activities)|
-|[角色管理活動](#role-administration-activities)|[目錄管理活動](#directory-administration-activities)|[電子文件探索活動](#ediscovery-activities)|
-|[進階電子文件探索活動](#advanced-ediscovery-activities)|[Power BI 活動](#power-bi-activities)|[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)|
-|[Microsoft Teams 活動](#microsoft-teams-activities)|[Microsoft Teams 醫療保健活動](#microsoft-teams-healthcare-activities)|[Microsoft Teams 班次活動](#microsoft-teams-shifts-activities)|
-|[Yammer 活動](#yammer-activities)|[Microsoft Power Automate 活動](#microsoft-power-automate-activities)|[Microsoft Power Apps 活動](#microsoft-power-apps-activities)|
-|[Microsoft Stream 活動](#microsoft-stream-activities)|[內容總管活動](#content-explorer-activities)|[隔離活動](#quarantine-activities)|
-|[Microsoft Teams 活動](#microsoft-forms-activities)|[敏感度標籤活動](#sensitivity-label-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)|
-|[保留原則和保留標籤活動](#retention-policy-and-retention-label-activities)|||
+|[網站管理活動](#site-administration-activities)|[Exchange 信箱活動](#exchange-mailbox-activities)|[使用者管理活動](#user-administration-activities)|
+|[Azure AD 群組管理活動](#azure-ad-group-administration-activities)|[應用程式管理活動](#application-administration-activities)|[角色管理活動](#role-administration-activities)|
+|[目錄管理活動](#directory-administration-activities)|[電子文件探索活動](#ediscovery-activities)|[進階電子文件探索活動](#advanced-ediscovery-activities)|
+|[Power BI 活動](#power-bi-activities)|[Microsoft 工作場所分析](#microsoft-workplace-analytics-activities)|[Microsoft Teams 活動](#microsoft-teams-activities)|
+|[Microsoft Teams 醫療保健活動](#microsoft-teams-healthcare-activities)|[Microsoft Teams 班次活動](#microsoft-teams-shifts-activities)|[Yammer 活動](#yammer-activities)|
+|[Microsoft Power Automate 活動](#microsoft-power-automate-activities)|[Microsoft Power Apps 活動](#microsoft-power-apps-activities)|[Microsoft Stream 活動](#microsoft-stream-activities)|
+|[內容總管活動](#content-explorer-activities)|[隔離活動](#quarantine-activities)|[Microsoft Teams 活動](#microsoft-forms-activities)|
+|[敏感度標籤活動](#sensitivity-label-activities)|[保留原則和保留標籤活動](#retention-policy-and-retention-label-activities)|[Exchange 系統管理員活動](#exchange-admin-audit-log)
+|||
 
 ### <a name="file-and-page-activities"></a>檔案和頁面活動
 
@@ -557,28 +554,6 @@ ms.locfileid: "46577993"
 |已更新郵件|Update|郵件或其屬性已變更。|
 |使用者已登入信箱|MailboxLogin|使用者已登入其信箱。|
 |將郵件標示為記錄||使用者對電子郵件訊息套用保留標籤，且該標籤已設定為將該項目標示為記錄。 |
-||||
-
-### <a name="sway-activities"></a>Sway 活動
-
-下表列出在 Sway 中的使用者和系統管理員活動。 Sway 是一個 Microsoft 365 應用程式，可協助使用者在互動式 Web 畫布上收集、格式化，以及分享想法、故事及簡報。 如需詳細資訊，請參閱[關於 Sway 的常見問題集 – 系統管理員說明](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075)。
-
-|易記名稱|作業|描述|
-|:-----|:-----|:-----|
-|已變更 Sway 分享層級|SwayChangeShareLevel|使用者變更 Sway 的分享層級。 此事件會捕捉到使用者對 Sway 相關聯分享範圍的變更，例如公用與組織內部。|
-|已建立 Sway|SwayCreate|使用者建立 Sway。|
-|已刪除 Sway|SwayDelete|使用者刪除 Sway。|
-|已停用 Sway 複製|SwayDisableDuplication|使用者停用複製 Sway。|
-|已複製 Sway|SwayDuplicate|使用者複製 Sway。|
-|已編輯 Sway|SwayEdit|使用者編輯 Sway。|
-|已啟用 Sway 複製|EnableDuplication|使用者啟用複製 Sway。 讓使用者啟用複製 Sway 的功能會預設為啟用。|
-|撤銷 Sway 分享|SwayRevokeShare|使用者透過撤銷 Sway 的存取權來停止分享。 撤銷存取權會改變與 Sway 關聯的連結。|
-|分享的 Sway|SwayShare|使用者意圖分享 Sway。 此事件捕捉使用者在 Sway 分享功能表中按一下特定分享目的地的這個動作。 此事件不會指出使用者是否已完成分享動作。|
-|已關閉 Sway 的外部分享|SwayExternalSharingOff|系統管理員透過 Microsoft 365 系統管理員中心為整個組織停用外部 Sway 分享。|
-|已開啟 Sway 的外部分享|SwayExternalSharingOn|系統管理員透過 Microsoft 365 系統管理員中心為整個組織啟用外部 Sway 分享。|
-|已關閉 Sway 服務|SwayServiceOff|系統管理員透過 Microsoft 365 系統管理員中心為整個組織停用 Sway。|
-|已開啟 Sway 服務|SwayServiceOn|系統管理員透過 Microsoft 365 系統管理員中心為整個組織啟用 Sway (Sway 服務預設為啟用)。|
-|已檢視 Sway|SwayView|使用者檢視 Sway。|
 ||||
 
 ### <a name="user-administration-activities"></a>使用者管理活動

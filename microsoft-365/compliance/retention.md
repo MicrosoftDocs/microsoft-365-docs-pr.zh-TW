@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: ff99e61c82f0427d79d8aca99acc82a338f79b8a
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b799f35789ac113128ecb1adcbeae48aede7f847
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649150"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662307"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 
@@ -115,7 +115,7 @@ ms.locfileid: "46649150"
   
 鎖定保留原則時：
 
-- 沒有人可以關閉它
+- 沒有人可以將它關閉
 - 可以新增位置但不能移除位置
 - 不能在保留期間修改或刪除受限於原則的內容
 - 您可以延長保留期間，但不能減少保留期間
