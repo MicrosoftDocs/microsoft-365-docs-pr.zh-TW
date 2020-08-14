@@ -1,7 +1,7 @@
 ---
 title: 使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
@@ -25,20 +25,20 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，如此一來，諸如電子郵件和商務用 Skype Online 等服務也會使用您自己的功能變數名稱。
-ms.openlocfilehash: 8f98e054b4fa9fc9c8746f2b3bec8b59eb04e767
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560338"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662229"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 
  若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
-檢查 [[設定網域 (主機特定的指示]) ](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) ，查看是否有註冊機構的指示。 
+檢查 [ [設定網域 (主機特定的指示]) ](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) ，查看是否有註冊機構的指示。 
   
-請遵循下列指示，在 Microsoft 365 中新增及設定您的網域，這樣服務（例如電子郵件和商務用 Skype Online）將使用您自己的功能變數名稱。 若要這麼做，您將會驗證您的網域，然後將網域的名稱伺服器變更為 Microsoft 365，這樣就能為您設定正確的 DNS 記錄。 如果下列語句描述您的情況，請遵循下列步驟：
+請遵循下列指示，在 Microsoft 365 中新增及設定您的網域，這樣您的服務（例如電子郵件和小組）會使用您自己的功能變數名稱。 若要這麼做，您將會驗證您的網域，然後將網域的名稱伺服器變更為 Microsoft 365，這樣就能為您設定正確的 DNS 記錄。 如果下列語句描述您的情況，請遵循下列步驟：
   
 - 您有自己的網域，且想要將其設定為與 Microsoft 365 搭配使用。
     
@@ -114,17 +114,19 @@ ms.locfileid: "46560338"
   
 若要自行在網域註冊機構的網站變更您網域的名稱伺服器，請遵循這些步驟：
   
-1. 在網域註冊機構的網站上，找出您可編輯您網域之名稱伺服器的區域。
+1. 在網域註冊機構網站上尋找區域，您可以在其中變更您網域的名稱伺服器，或是您可以使用自訂名稱伺服器的區域。
     
-2. 建立兩筆名稱伺服器記錄，或編輯現有的名稱伺服器記錄，以符合下列值：
+2. 建立名稱伺服器記錄，或編輯現有的名稱伺服器記錄，使其符合下列值：
     
 |||
 |:-----|:-----|
-|第一個名稱伺服器  <br/> |ns1.bdm.microsoftonline.com  <br/> |
+|First nameserver (第一個名稱伺服器)  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Second nameserver (第二個名稱伺服器)  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Third nameserver (第三個名稱伺服器)  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Fourth nameserver (第四個名稱伺服器)  <br/> |ns2.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > 您應該使用至少兩個名稱伺服器記錄。 如果有列出任何其他名稱伺服器，您可以將其刪除，或將其變更為**ns3.bdm.microsoftonline.com**和**ns4.bdm.microsoftonline.com**。 
+   > 最好新增四筆記錄，但如果您的註冊機構只支援二個，請新增 **ns1.bdm.microsoftonline.com** 及 **ns2.bdm.microsoftonline.com**。 
   
 3. 儲存變更。
     
@@ -145,7 +147,7 @@ ms.locfileid: "46560338"
 |Second nameserver (第二個名稱伺服器)  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
    
    > [!TIP]
-   > 您應該使用至少兩個名稱伺服器記錄。 如果有列出任何其他名稱伺服器，您可以將其刪除，或將其變更為**ns3.dns.partner.microsoftonline.cn**和**ns4.dns.partner.microsoftonline.cn**。 
+   > 您應該使用至少兩個名稱伺服器記錄。 如果有列出任何其他名稱伺服器，您可以將其刪除，或將其變更為 **ns3.dns.partner.microsoftonline.cn** 和 **ns4.dns.partner.microsoftonline.cn**。 
   
 3. 儲存變更。
     
@@ -162,9 +164,9 @@ ms.locfileid: "46560338"
 
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
 
-2. 在 [**網域**] 頁面上，選取網域，然後選擇 [ **DNS 記錄**]。
+2. 在 [ **網域** ] 頁面上，選取網域，然後選擇 [ **DNS 記錄**]。
 
-3. 在 [ **DNS 設定**] 底下，選取 [**自訂記錄**]，然後選擇 [**新增自訂記錄**]。
+3. 在 [ **DNS 設定**] 底下，選取 [ **自訂記錄**]，然後選擇 [ **新增自訂記錄**]。
 
 4. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
 

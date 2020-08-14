@@ -33,7 +33,7 @@ ms.locfileid: "44403111"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>使用您的促銷代碼來降低價格
 
-當您購買訂閱時，您可以使用促銷代碼來降低價格。 請閱讀本文以瞭解如何將促銷代碼套用至您的訂閱、瞭解[促銷代碼條款](#promo-code-terms)，以及[疑難排解促銷](#troubleshooting-promo-codes)代碼。
+當您購買訂閱時，您可以使用促銷代碼來降低價格。 請閱讀本文以瞭解如何將促銷代碼套用至您的訂閱、瞭解 [促銷代碼條款](#promo-code-terms)，以及 [疑難排解促銷](#troubleshooting-promo-codes)代碼。
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>將促銷代碼套用至訂閱
 
@@ -41,11 +41,11 @@ ms.locfileid: "44403111"
     
 2. 當您取出時，請選擇 [* * 有促銷或折扣碼？]，然後在方塊中輸入您的程式碼。 
   
-3. 選取 [套用**促銷代碼**]。 您應該會看到已成功套用的確認。 If you see a different message, refer to [Troubleshooting promo codes](#troubleshooting-promo-codes) to figure out why. 
+3. 選取 [套用 **促銷代碼**]。 您應該會看到已成功套用的確認。 If you see a different message, refer to [Troubleshooting promo codes](#troubleshooting-promo-codes) to figure out why. 
     
 4. 繼續取出。在 [訂單確認] 頁面上，您會看到含金額的折扣代碼。 
     
-完成購買之後，您就會在帳單上看見由促銷代碼所產生的折扣。 若要深入瞭解，請參閱[View](billing-and-payments/view-your-bill-or-invoice.md)to。
+完成購買之後，您就會在帳單上看見由促銷代碼所產生的折扣。 若要深入瞭解，請參閱 [View](billing-and-payments/view-your-bill-or-invoice.md)to。
   
 ## <a name="promo-code-terms"></a>促銷代碼條款
 
