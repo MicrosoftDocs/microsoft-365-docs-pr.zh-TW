@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Microsoft 365 Apps 企業版。
-ms.openlocfilehash: 4a36e33a6f2ef6df880864dd852f0f63056946e6
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
-ms.translationtype: HT
+ms.openlocfilehash: de6a5348a49a490afa3c3ac632e66026966e2ef3
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44679035"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695155"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>適用於 Contoso 的 Microsoft 365 Apps 企業版部署
 
@@ -79,12 +79,12 @@ Contoso 遵循相同的兩階段方式進行功能更新和部署 Office：在�
  
 ## <a name="next-step"></a>下一步
 
-[深入了解](contoso-mdm.md) Contoso 如何在 Microsoft 365 企業版中使用 Microsoft Intune 來管理組織中的裝置與執行的應用程式。
+[瞭解](contoso-mdm.md) Contoso 如何在 microsoft 365 for enterprise 中使用 microsoft Intune，以管理其裝置，以及其組織內執行的應用程式。
 
 ## <a name="see-also"></a>請參閱
 
-[適用於 Microsoft 365 企業版的 Microsoft 365 Apps 企業版](office365proplus-infrastructure.md)
+[Microsoft 365 Apps 企業版](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
 [測試實驗室指南](m365-enterprise-test-lab-guides.md)
