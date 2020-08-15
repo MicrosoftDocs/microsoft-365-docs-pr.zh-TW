@@ -343,8 +343,12 @@
       items:
         - name: 記錄管理
           href: records-management.md
-        - name: 記錄
+        - name: 了解記錄
           href: records.md
+        - name: 宣告記錄
+          href: declare-records.md
+        - name: 記錄版本設定
+          href: record-versioning.md
 - name: 管理電子文件探索
   items:
     - name: Microsoft 365 中的電子文件探索

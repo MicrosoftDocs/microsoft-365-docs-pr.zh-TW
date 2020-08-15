@@ -133,20 +133,8 @@
               href: create-groups/add-or-remove-members-from-groups.md
             - name: 還原已刪除的群組​​
               href: create-groups/restore-deleted-group.md
-            - name: 群組監管方案
-              href: create-groups/plan-for-groups-governance.md
-            - name: 管理群組的建立
-              href: create-groups/manage-creation-of-groups.md
-            - name: 選擇群組的網域
-              href: create-groups/choose-domain-to-create-groups.md
-            - name: 群組命名原則概觀
-              href: create-groups/groups-naming-policy.md
-            - name: 允許成員傳送往來群組的郵件
-              href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
-            - name: 管理來賓存取群組
+            - name: 管理群組的來賓存取
               href: create-groups/manage-guest-access-in-groups.md
-            - name: 搭配使用敏感度標籤與群組
-              href: ../compliance/sensitivity-labels-teams-groups-sites.md
     - name: 管理電子郵件和行事曆
       href: email/index.yml
       items:
