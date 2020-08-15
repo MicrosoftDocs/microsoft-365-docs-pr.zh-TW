@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用可用工具辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
-ms.openlocfilehash: cd9e5b4f9951bd332950cdc22ba3f3740d084dfb
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d412f40a6c3e1e2f1182437419ce9e0d28ed10eb
+ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527777"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46674611"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>回應遭入侵的電子郵件帳戶
 
@@ -68,11 +68,8 @@ ms.locfileid: "46527777"
 - **Azure AD 入口網站中的 Azure AD 登入記錄檔和其他風險報告**：檢查這些欄中的值：
 
   - 檢閱 IP 位址
-
   - 登入位置
-
   - 登入時間
-
   - 登入成功或失敗
 
 ## <a name="how-to-secure-and-restore-email-function-to-a-suspected-compromised-microsoft-365-account-and-mailbox"></a>如何保護並將電子郵件功能還原到可疑的遭入侵 Microsoft 365 帳戶和信箱
@@ -85,31 +82,31 @@ ms.locfileid: "46527777"
 
 ### <a name="step-1-reset-the-users-password"></a>步驟 1 重設使用者的密碼
 
-> [!WARNING]
-> 請勿透過電子郵件傳送新密碼給預期的使用者，因為攻擊者此時仍可能對信箱具有存取權。
+遵循[重設某人的商務密碼](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password)中的程序進行。
 
-1. 遵循[重設 Microsoft 365 Apps 企業版密碼](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)中為其他人重設 Microsoft 365 Apps 企業版密碼的程序
-
-**附註**：
-
-- 請確定密碼為強式密碼，且包含大寫和小寫字母、至少一個數字，以及至少一個特殊字元。
-
-- 請勿重複使用最後五個密碼。 即使密碼歷程記錄需求可讓您重複使用較新的密碼，您也應該選取攻擊者無法猜測的項目。
-
-- 如果您的內部部署身分識別與 Microsoft 365 同盟，則必須變更您的內部部署密碼，然後必須通知您的系統管理員相關入侵。
-
-> [!TIP]
-> 我們強烈建議您啟用多重要素驗證 (MFA)，以防止入侵，特別是具有系統管理權限的帳戶。  若要深入了解 MFA，請至 [設定多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
+> [!IMPORTANT]
+>
+> - 請勿透過電子郵件傳送新密碼給預期的使用者，因為攻擊者此時仍可能對信箱具有存取權。
+>
+> - 請確定密碼為強式密碼，且包含大寫和小寫字母、至少一個數字，以及至少一個特殊字元。
+>
+> - 請勿重複使用最後五個密碼。 即使密碼歷程記錄需求可讓您重複使用較新的密碼，您也應該選取攻擊者無法猜測的項目。
+>
+> - 如果您的內部部署身分識別與 Microsoft 365 同盟，則必須變更您的內部部署密碼，然後必須通知您的系統管理員相關入侵。
+>
+> - 務必更新應用程式密碼。 使用者帳戶密碼重設時，應用程式密碼未自動撤銷。 使用者應該刪除現有的應用程式密碼，並建立新密碼。 如需指示，請參閱[從其他安全性驗證頁面建立和刪除應用程式密碼](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page)。
+>
+> - 我們強烈建議您啟用多重要素驗證 (MFA)，以防止入侵，特別是具有系統管理權限的帳戶。 若要深入了解 MFA，請至 [設定多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>步驟 2 移除可疑的電子郵件轉寄地址
 
-1. 開啟 [Microsoft 365 系統管理中心] > [作用中的使用者]****。
+1. 開啟位於 <https://admin.microsoft.com> 的 Microsoft 365 系統管理中心
 
-2. 找出有問題的使用者帳戶，並展開 [郵件設定]****。
+2. 移至 [使用者 **]** \> [作用中使用者 **]**。 尋找發生問題的使用者帳戶，並選取使用者 (列) 而不選取核取方塊。
 
-3. 針對 [電子郵件轉寄]****，按一下 [編輯]****。
+3. 在顯示的詳細資料飛出視窗中，選取 [郵件 **]** 索引標籤。
 
-4. 移除任何可疑的轉寄地址。
+4. 如果 [電子郵件轉寄 **]** 區段中的值為 [己套用 **]**，請按一下 [管理電子郵件轉寄 **]**。 在顯示的 [管理電子郵件轉寄 **]** 飛出視窗中，清除 [轉寄所有傳送到此信箱的電子郵件 **]**，然後按一下 [儲存變更 **]**。
 
 ### <a name="step-3-disable-any-suspicious-inbox-rules"></a>步驟 3 停用任何可疑的收件匣規則
 
@@ -132,50 +129,50 @@ ms.locfileid: "46527777"
 > [!IMPORTANT]
 > 您可以封鎖懷疑遭入侵的帳戶，使該帳戶無法登入，直到您認為可以安全地重新啟用存取權為止。
 
-1. 移至 Microsoft 365 系統管理中心。
+1. 開啟 Microsoft 365 系統管理中心，然後移至 [使用者 **]** \> [作用中使用者 **]**。
 
-2. 在 Microsoft 365 系統管理中心，選取 [使用者]****。
+2. 尋找並選取使用者帳戶，按一下 [更多圖示![]](../../media/ITPro-EAC-MoreOptionsIcon.png)，然後選取 [編輯登入狀態 **]**。
 
-3. 選取要封鎖的員工，然後在使用者窗格中選擇 [登入狀態]**** 旁邊的 [編輯]****。
+3. 在顯示的 [封鎖登入 **]** 窗格中，選取 [封鎖此使用者，使其無法登入 **]**，然後按一下 [儲存變更 **]**。
 
-4. 在 [登入狀態]**** 窗格上，選擇 [封鎖登入]****，然後選擇 [儲存]****。
+4. 開啟位於 <admin.protection.outlook.com/ecp/> 的 Exchange 系統管理中心 (EAC)，然後移至 [收件者] > [信箱 **]**。
 
-5. 在系統管理中心的左下方瀏覽窗格中，展開 [系統管理中心]****，然後選取 [Exchange]****。
+5. 尋找並選取使用者。 在詳細資料窗格中，執行下列步驟：
 
-6. 在 Exchange 系統管理中心中，瀏覽到 [收件者] > [信箱]****。
+   - 在 [電話和語音功能 **]** 區段中，執行下列步驟：
 
-7. 選取使用者，然後在使用者屬性頁面的 [行動裝置]**** 底下，按一下 [停用 Exchange ActiveSync]**** 和 [停用裝置用 OWA]****，並且對這兩個選項都回答 [是]****。
+     - 選取 [停用 Exchange ActiveSync **]**，然後按一下顯示的警告中的 [是 **]**。
+     - 選取 [停用裝置用 OWA **]**，然後按一下顯示的警告中的 [是 **]**。
 
-8. 在 [電子郵件連線]**** 底下，按一下 [停用]****，然後回答 [是]****。
+   - 在 Outlook 網頁版的 [電子郵件連線 **]** 區段中，按一下 [停用 **]**，然後按一下顯示的警告中的 [是 **]**。
 
 ### <a name="step-6-optional-remove-the-suspected-compromised-account-from-all-administrative-role-groups"></a>步驟 6 選用：從所有系統管理角色群組移除懷疑遭入侵的帳戶
 
 > [!NOTE]
 > 保護的帳戶之後，就可以還原系統管理角色群組的成員資格。
 
-1. 使用全域系統管理員帳戶登入 Microsoft 365 系統管理中心，然後開啟 [作用中使用者]****。
+1. 使用全域系統管理員帳戶登入：
 
-2. 找出懷疑遭入侵的帳戶，並手動檢查以查看是否有對給該帳戶指派任何系統管理角色。
+2. 在 Microsoft 365 系統管理中心，執行下列步驟：
 
-3. 開啟 [安全性與合規性中心]****。
+   1. 移至 [使用者 **]** \> [作用中使用者 **]**。
+   2. 尋找並選取使用者帳戶，按一下 [更多圖示![]](../../media/ITPro-EAC-MoreOptionsIcon.png)，然後選取 [管理角色 **]**。
+   3. 移除指派給帳戶的任何系統管理角色。 完成後，按一下 [儲存變更 **]**。
 
-4. 按一下 [權限]****。
+3. 在位於 <https://protection.office.com> 的安全性與合規性中心，執行下列步驟：
 
-5. 手動檢查角色群組，以查看懷疑遭入侵的帳戶是否為任何群組的成員。  如果是：
+   選取 [權限 **]**，選取清單中的每個角色群組，並在顯示的詳細資料飛出視窗的 [成員 **]** 區段中尋找該使用者帳戶。 如果角色群組包含該使用者帳戶，請執行下列步驟：
 
-   a. 按一下角色群組，然後按一下 [編輯角色群組]****。
+   a. 按一下 [成員 **]** 旁的 [編輯 **]**。
+   b. 顯示的飛出視窗上的 [編輯選擇成員 **]**，按一下 [編輯 **]**。
+   c. 在顯示的 [選擇成員 **]** 飛出視窗中，選取該使用者帳戶，然後按一下 [移除 **]**。 完成時，依序按一下 [完成 **]** 和 [儲存 **]**，然後按一下 [關閉 **]**。
 
-   b. 按一下 [選擇成員]**** 和 [編輯]****，從角色群組移除使用者。
+4. 在位於 <admin.protection.outlook.com/ecp/> 的 EAC 中，執行下列步驟：
 
-6. 開啟 [Exchange 系統管理中心]****。
+   選取 [權限 **]**，手動選取每個角色群組，然後在詳細資料窗格中，在 [成員 **]** 區段中驗證使用者帳戶。  如果角色群組包含該使用者帳戶，請執行下列步驟：
 
-7. 按一下 [權限]****。
-
-8. 手動檢查角色群組，以查看懷疑遭入侵的帳戶是否為任何群組的成員。 如果是：
-
-   a. 按一下角色群組，然後按一下 [編輯]****。
-
-   b. 使用 [成員]**** 區段，從角色群組移除該使用者。
+   a. 選取角色群組，按一下 [編輯 **]** ![編輯圖示](../../media/ITPro-EAC-EditIcon.png)。
+   b. 在 [成員 **]** 區段中，選取該使用者帳戶，然後按一下 [移除 **]** ![移除圖示](../../media/ITPro-EAC-RemoveIcon.gif)。 完成後，按一下 [儲存 **]**。
 
 ### <a name="step-7-optional-additional-precautionary-steps"></a>步驟 7 選用：額外的預防步驟
 
