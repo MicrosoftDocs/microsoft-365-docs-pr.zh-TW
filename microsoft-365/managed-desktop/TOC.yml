@@ -106,8 +106,6 @@
         - name: 使用報告
           href: working-with-managed-desktop/reports.md
           items:
-            - name: 裝置合規性報告
-              href: working-with-managed-desktop/device-compliance-report.md
             - name: 裝置庫存報告
               href: working-with-managed-desktop/device-inventory-report.md
         - name: 具備深入解析的工作
