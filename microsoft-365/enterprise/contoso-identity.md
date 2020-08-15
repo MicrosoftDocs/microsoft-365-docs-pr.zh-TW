@@ -9,22 +9,22 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用身分識別即服務 (IDaaS)，為其員工提供雲端式驗證，為其合作夥伴和客戶提供同盟驗證。
-ms.openlocfilehash: 77c90740fd39080ccc204552bc8407aa107e354a
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
-ms.translationtype: HT
+ms.openlocfilehash: 795fb7dcb886c792c80d3bb251c9cb5774f1bf97
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633361"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686031"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的身分識別
 
-Microsoft 在具有 Azure Active Directory (AD) 的雲端供應項目之間提供身分識別即服務 (IDaaS)。 為了採用 Microsoft 365 企業版，Contoso 的 IDaaS 解決方案必須運用其內部部署的身分識別提供者，並且仍然包含使用其現有信任的第三方身分識別提供者的同盟驗證。
+Microsoft 在具有 Azure Active Directory (AD) 的雲端供應項目之間提供身分識別即服務 (IDaaS)。 為了採用 Microsoft 365 for enterprise，Contoso 的 IDaaS 解決方案必須利用其內部部署身分識別提供者，並與其現有的受信任的協力廠商身分識別提供者，仍然包含同盟驗證。
 
 ## <a name="contosos-active-directory-domain-services-forest"></a>Contoso 的 Active Directory Domain Services 樹系
 
@@ -55,7 +55,7 @@ Contoso 決定要保留此基礎結構，並讓它專屬於客戶和合作夥伴
 
 Contoso 公司想要使用其內部部署 AD DS 樹系來對 Microsoft 365 雲端資源進行驗證。 其決定使用密碼雜湊同步 (PHS)。
 
-PHS 會同步處理內部部署 AD DS 樹系與 Microsoft 365 企業版訂閱中的 Azure AD 租用戶，並複製使用者和群組帳戶以及雜湊版本的使用者帳戶密碼。 
+PHS 會同步處理內部部署 AD DS 樹系與其 Microsoft 365 for enterprise 訂閱的 Azure AD 租使用者，並複製使用者和群組帳戶，以及散列版本的使用者帳戶密碼。 
 
 為了執行後續的目錄同步處理，Contoso 已在巴黎資料中心的伺服器上部署 Azure AD Connect 工具。 
 
@@ -81,8 +81,8 @@ Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件�
 
 ## <a name="see-also"></a>另請參閱
 
-[Microsoft 365 企業版的身分識別](identity-infrastructure.md)
+[Microsoft 365 的身分識別藍圖](identity-roadmap-microsoft-365.md)
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
 [測試實驗室指南](m365-enterprise-test-lab-guides.md)

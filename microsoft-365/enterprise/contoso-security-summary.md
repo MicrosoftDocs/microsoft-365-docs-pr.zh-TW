@@ -1,5 +1,5 @@
 ---
-title: 適用於 Contoso Corporation 之 Microsoft 365 企業版安全性的摘要
+title: Contoso Corporation 之 Microsoft 365 for enterprise security 的摘要
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,22 +9,22 @@ ms.date: 10/02/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Contoso 如何使用整個 Microsoft 365 企業版的安全性功能。
-ms.openlocfilehash: c0f3497eb49a0490fccf6c0ec5174d932a21005e
-ms.sourcegitcommit: 47c45bd81afdc4867ff2980ced3df31dbad92b84
-ms.translationtype: HT
+description: Contoso 如何使用整個 Microsoft 365 for enterprise 的安全性功能。
+ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268395"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686437"
 ---
-# <a name="summary-of-microsoft-365-enterprise-security-for-the-contoso-corporation"></a>適用於 Contoso Corporation 之 Microsoft 365 企業版安全性的摘要
+# <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 之 Microsoft 365 for enterprise security 的摘要
 
-為了取得 IT 安全性部門對於 Microsoft 365 企業版部署的簽核，必須執行徹底的安全性檢閱。以下是 Contoso 對於雲端的安全性需求：
+若要透過 IT 安全性部門取得 Microsoft 365 for enterprise 的部署登出，請執行徹底的安全性審查。以下是 Contoso 在雲端上的安全性需求：
 
 - 針對存取雲端資源的員工使用最嚴格的驗證方法
 - 確定電腦和行動裝置連線與存取應用程式均安全無虞。
@@ -36,7 +36,7 @@ ms.locfileid: "44268395"
 
 ## <a name="contosos-path-to-microsoft-365-security-readiness"></a>Contoso 進行 Microsoft 365 安全性整備的途徑
 
-Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性：
+Contoso 使用下列步驟來準備好其安全性，以供其 Microsoft 365 for enterprise 的部署：
 
 1. 受限制的雲端系統管理員帳戶
 
@@ -44,13 +44,13 @@ Contoso 會使用下列步驟來準備部署 Microsoft 365 企業版的安全性
 
 2. 進行資料分類分析並分為三個層級
 
-   Contoso 進行了謹慎的審查，並區分為三個層級，這三個層級可用來判斷 Microsoft 365 企業版功能以保護 Contoso 最重要的資料。
+   Contoso 執行了認真檢查，並決定了三個層級，用來判斷適用于企業功能的 Microsoft 365，以保護 Contoso 最具價值的資料。
 
 3. 判別各資料層級的存取權、保留期和資訊保護原則
 
    Contoso 會根據資料層級來決定詳細的要求，這些要求將運用於限定未來移至雲端的 IT 工作負載。
 
-根據安全性最佳做法和 Microsoft 365 企業版部署需求，Contoso 的安全性管理員和 IT 部門已部署許多安全性功能，如下列章節所述。
+依照安全性最佳做法和 Microsoft 365 的企業部署需求，Contoso 的安全性管理員和 IT 部門已經部署了許多安全性功能，如下列各節所述。
 
 ## <a name="identity--access-management"></a>身分識別和存取管理 
 

@@ -9,24 +9,24 @@ ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境，以使用傳遞驗證的先決條件測試身分識別與裝置存取。
-ms.openlocfilehash: 91b773b1ef2588490cf0434517a883ef447cd55d
-ms.sourcegitcommit: e525bcf073a61e1350484719a0c3ceb6ff0d8db1
-ms.translationtype: HT
+ms.openlocfilehash: eeb6c1d1313c95e920b20cce419118fe1e61ad6e
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43153853"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685639"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>身分識別與裝置存取 - 您的 Microsoft 365 測試環境中傳遞驗證的先決條件
 
-*這個測試實驗室指南只能用於 Microsoft 365 企業版測試環境。*
+*此測試實驗室指南僅可用於適用于企業測試環境的 Microsoft 365。*
 
-[身分識別與裝置存取組態](microsoft-365-policies-configurations.md)是一組組態和條件式存取原則，用來保護對與 Azure Active Directory (Azure AD) 整合之所有服務的存取，包括 Microsoft 365 企業版中的 Office 365 和 Enterprise Mobility + Security (EMS)。
+身分[識別與裝置存取](microsoft-365-policies-configurations.md)設定是一組設定和條件式存取原則，可保護所有與 Azure Active Directory (azure AD) 整合的 365 Microsoft 企業版服務的存取。
 
 本文說明如何設定符合[傳遞驗證先決條件組態](identity-access-prerequisites.md#prerequisites)需求、用於身分識別與裝置存取的 Microsoft 365 測試環境。
 
@@ -121,11 +121,11 @@ ms.locfileid: "43153853"
 
 [其他身分識別測試實驗室指南](m365-enterprise-test-lab-guides.md#identity)
 
-[階段 2：身分識別](identity-infrastructure.md)
+[身分識別藍圖](identity-roadmap-microsoft-365.md)
 
 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 企業版部署](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365-enterprise/)
+[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
 

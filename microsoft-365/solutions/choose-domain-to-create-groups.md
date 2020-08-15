@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 透過設定電子郵件地址原則使用 PowerShell，瞭解如何選擇建立 Microsoft 365 群組時所使用的網域。
-ms.openlocfilehash: a4bc5bd499652109586c30462d484a12a6cbe876
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 5ce0068f1b4562c37b2ccf2b1fb9a928b392a7ee
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662522"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686727"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>選擇建立 Microsoft 365 群組時要使用的網域
 
@@ -71,7 +71,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
   ```
 
-- Groups.contoso.com 網域中的所有其他使用者。 請使用下列命令：
+- 在 groups.contoso.com 網域中建立其他任何人所建立的群組。 請使用下列命令：
     
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3

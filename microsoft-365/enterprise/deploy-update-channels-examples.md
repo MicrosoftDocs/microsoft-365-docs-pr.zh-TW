@@ -9,18 +9,18 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: 範例組織如何使用通道部署及更新。
-ms.openlocfilehash: eaf962d7481027b49f26c79163aaae3753fdbb9b
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
-ms.translationtype: HT
+ms.openlocfilehash: 88567fedd92f01885c4971acc273a676c3e82de8
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200107"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686151"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>部署和更新通道範例設定
 
@@ -49,6 +49,6 @@ ms.locfileid: "45200107"
 
 ## <a name="see-also"></a>請參閱
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
 [測試實驗室指南](m365-enterprise-test-lab-guides.md)

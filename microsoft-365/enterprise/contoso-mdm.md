@@ -9,28 +9,28 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 深入了解 Contoso 如何在 Microsoft 365 企業版中使用 Microsoft Intune，來管理裝置和在裝置上執行的應用程式。
-ms.openlocfilehash: 7232c89cc105525cc57facd5a1b9de06426adbca
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+description: 瞭解 Contoso 如何在 Microsoft 365 for enterprise 中使用 Microsoft Intune 來管理其裝置和在其上執行的應用程式。
+ms.openlocfilehash: 40d9473bcadfa636f6fd2b2c6c861c27dae8497c
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068362"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685839"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 的行動裝置管理
 
-Microsoft 365 企業版包含 Intune 和一組 Azure 服務，可支援行動裝置和應用程式管理與安全性。
+適用于企業的 Microsoft 365 包含 Intune 和一組 Azure 服務，以支援行動裝置和應用程式管理及安全性。
 
 Contoso 有許多使用行動裝置的員工，有些在 Contoso 所在地有辦公室，有些則沒有。Contoso 需要能夠讓員工具備生產力，但保持裝置、儲存在裝置上的 Contoso 公司資料及應用程式行為安全的方法。
 
 ## <a name="plan"></a>計劃
 
-在早期為 Microsoft 365 企業版分析行動裝置管理中，Contoso 識別出下列 Intune 使用案例：
+在 Microsoft 365 for enterprise 的行動裝置管理的分析早期，Contoso 識別出下列 Intune 使用案例：
 
 - 保護 Exchange Online 的電子郵件和資料，讓其可以透過行動裝置安全地存取
 - 為 Contoso 員工實施「帶您自己的裝置」(BYOD) 活動
@@ -38,7 +38,7 @@ Contoso 有許多使用行動裝置的員工，有些在 Contoso 所在地有辦
 
 Contoso 不會使用 Intune 來：
 
-- 讓員工從未受管理的公用 Kiosk 安全地存取 Office 365
+- 允許員工透過非管理的公用展臺安全地存取 Microsoft 365
 - 由於不再有內部部署 Microsoft Exchange 伺服器，因此用以保護內部部署上的電子郵件和資料，讓其可以由行動裝置安全地存取。
 
 ## <a name="deploy"></a>部署
@@ -52,7 +52,7 @@ Contoso 不會使用 Intune 來：
 
 - 啟用 Apple 裝置平台以支援員工使用 iPad、iMac、iPhone 及 iPhone 式公司手機
 - 建立 Contoso 特定的條款與條件原則，會在行動裝置安裝 Contoso 公司入口網站時出現
-- 對於未註冊的裝置，則需要一組 Mobile Application Management (MAM) 原則才能授權存取 Office 365 服務
+- 對於未註冊的裝置，一組行動應用程式管理 (MAM) 原則，需要驗證才能存取 Microsoft 365 服務
 - 建立 Intune 原則以強制執行：
   - 允許的應用程式
   - 裝置加密以防止未經授權的存取
@@ -71,13 +71,13 @@ Contoso 不會使用 Intune 來：
 
 ## <a name="next-step"></a>下一步
 
-[深入了解](contoso-info-protect.md) Contoso 如何使用 Microsoft 365 企業版的資訊保護功能，分類、識別及保護組織中的重要數位資產。
+[瞭解](contoso-info-protect.md) Contoso 如何使用 Microsoft 365 for enterprise 的資訊保護功能，在其整個組織中分類、識別及保護重要的數位資產。
 
 ## <a name="see-also"></a>另請參閱
 
-[Microsoft 365 企業版的行動裝置管理](mobility-infrastructure.md)
+[Microsoft 365 裝置管理](device-management-roadmap-microsoft-365.md)
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
 [測試實驗室指南](m365-enterprise-test-lab-guides.md)
 

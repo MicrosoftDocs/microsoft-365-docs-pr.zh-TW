@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 公司的業務及其全球辦公室的分層架構。
-ms.openlocfilehash: 856363881c749b06a530dc7cc4f0eb82dc155054
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 206017744a004ba4e51b6e0d157b172cbe145c66
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42068292"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686449"
 ---
 # <a name="overview-of-the-contoso-corporation"></a>Contoso 公司概觀
 
@@ -58,9 +58,9 @@ Contoso 辦公室皆依照下列三層式架構設計。
 
 25% 的 Contoso 員工屬於行動工作者，當中又以地區中心和衛星辦公室的行動工作者人數佔較高的百分比。為行動工作者提供較完善的支援是 Contoso 的一項重要業務目標。 
 
-## <a name="design-considerations-for-microsoft-365-enterprise"></a>Microsoft 365 企業版的設計考量
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Microsoft 365 for enterprise 的設計考慮
 
-Contoso 的 IT 架構識別在部署 Microsoft 365 企業版時的以下設計需求和考量： 
+Contoso 的 IT 架構師在部署 Microsoft 365 for enterprise 時，識別下列設計需求和考慮： 
 
 - 多個地理位置與其須遵守的當地法規及規範
 - 在總部辦公室的中央內部資料中心和地區應用程式伺服器中，裝載內部業務應用程式
@@ -74,11 +74,11 @@ Contoso 的 IT 架構識別在部署 Microsoft 365 企業版時的以下設計�
 
 ## <a name="next-step"></a>下一步
 
-[深入了解](contoso-infra-needs.md) Contoso 公司的內部部署 IT 基礎架構，以及 Microsoft 365 企業版如何解決其業務需求。
+[深入瞭解](contoso-infra-needs.md) Contoso 公司的內部部署 IT 基礎結構，以及如何使用 Microsoft 365 for enterprise 來解決其業務需求。
 
 ## <a name="see-also"></a>請參閱
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
 [測試實驗室指南](m365-enterprise-test-lab-guides.md)
 

@@ -9,7 +9,7 @@ ms.date: 11/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,16 +18,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的密碼回寫。
-ms.openlocfilehash: cc71b581730001d8dc021b5074e300fed636e3d9
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: b8c89ca7ef967c423b89db4559ef04f715a5f869
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632872"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686223"
 ---
 # <a name="password-writeback-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的密碼回寫
 
-*這個測試實驗室指南只能用於 Microsoft 365 企業版測試環境。*
+*此測試實驗室指南僅可用於適用于企業測試環境的 Microsoft 365。*
 
 密碼回寫可讓使用者透過 Azure Active Directory (Azure AD) 更新密碼，然後將密碼複製到本機 Active Directory 網域服務 (AD DS)。使用密碼回寫，使用者不需要透過內部部署 AD DS 更新密碼，這是其原始使用者帳戶的儲存位置。這對沒有內部部署網路的遠端存取連線的漫遊或遠端使用者來說，很有幫助。
 
@@ -41,7 +41,7 @@ ms.locfileid: "43632872"
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，可查看企業用 Microsoft 365 測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理
 
@@ -51,7 +51,7 @@ ms.locfileid: "43632872"
   
 此組態包含： 
   
-- Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
+- Microsoft 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
 - Azure AD Connect 會在 APP1 上執行，以將 TESTLAB AD DS 網域同步至 Microsoft 365 訂閱的 Azure AD 租用戶。
 
@@ -128,12 +128,10 @@ ms.locfileid: "43632872"
 
 此組態包含：
 
-- 已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
+- 使用 DNS 網域 TESTLAB 的 Microsoft 365 E5 試用版或付費訂閱。\<your domain name> 註冊。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
 - Azure AD Connect 會在 APP1 上執行，以將來自 Microsoft 365 訂閱之 Azure AD 租用戶的帳戶和群組清單同步至 TESTLAB AD DS 網域。 
 - 密碼回寫已啟用，因此使用者可以透過 Azure AD 變更其密碼，而不需要連線到簡化的內部網路。
-
-如需在生產中進行密碼回寫的相關資訊和連結，請參閱身分識別階段中的「[簡化密碼更新](identity-add-user-accounts.md#identity-pw-writeback)」步驟。
 
 ## <a name="next-step"></a>下一步
 
@@ -143,8 +141,8 @@ ms.locfileid: "43632872"
 
 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)
 
-[部署 Microsoft 365 企業版](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365-enterprise/)
+[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 

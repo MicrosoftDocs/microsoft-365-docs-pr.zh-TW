@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -18,16 +18,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定並測試適用於 Microsoft 365 測試環境的 Azure AD 無縫單一登入。
-ms.openlocfilehash: ba3f943a53f05c452a8e01e40bb6924dc42a866e
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: 3ba229a62f66cad715f604bab91cd12032da7be8
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43636865"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685769"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的 Azure AD 無縫單一登入
 
-*這個測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版兩種測試環境。*
+*此測試實驗室指南可用於 enterprise 和 Office 365 企業測試環境的 Microsoft 365。*
 
 Azure AD 無縫單一登入 (SSO) 會在使用者所在的個人電腦或裝置連線到公司網路時自動將他們登入。Azure AD 無縫 SSO 可讓使用者輕鬆存取雲端式應用程式，而不需要任何額外的內部部署元件。
 
@@ -41,7 +41,7 @@ Azure AD 無縫單一登入 (SSO) 會在使用者所在的個人電腦或裝置�
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)(英文)，可查看 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，可查看企業用 Microsoft 365 測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理
 
@@ -51,7 +51,7 @@ Azure AD 無縫單一登入 (SSO) 會在使用者所在的個人電腦或裝置�
   
 此組態包含： 
   
-- Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
+- Microsoft 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
 - Azure AD Connect 會在 APP1 上執行，以定期將 TESTLAB Active Directory Domain Services (AD DS) 網域同步至 Microsoft 365 訂閱的 Azure AD 租用戶。
 
@@ -83,7 +83,7 @@ Azure AD 無縫單一登入 (SSO) 會在使用者所在的個人電腦或裝置�
 
 11. 從 Azure 入口網站的左窗格，按一下 [Azure Active Directory > Azure AD Connect]****。確認 [無縫單一登入]**** 功能顯示為 [已啟用]****。
 
-接下來，以 <strong>user1@testlab.</strong>\<您的公用網域> User1 帳戶的使用者名稱測試登入訂閱的能力。
+接下來，使用 user1@testlab 測試登入訂閱的功能 <strong>。</strong>\<your public domain> User1 帳戶的使用者名稱。
 
 1. 從 APP1 上的 Internet Explorer 中，按一下設定圖示，然後按一下 [網際網路選項]****。
  
@@ -97,7 +97,7 @@ Azure AD 無縫單一登入 (SSO) 會在使用者所在的個人電腦或裝置�
 
 6. 登出然後再次登入，這次指定不同的帳戶。
 
-7. 提示登入時，指定 <strong>user1@testlab.</strong>\<your public domain> name，然後按一下 [下一步]****。 您應該成功以 User1 登入，且系統不會提示您輸入密碼。 這可證明 Azure AD 無縫 SSO 正在執行。
+7. 當系統提示您登入時，請指定 <strong>user1@testlab。</strong>\<your public domain> 名稱，然後按 **[下一步]**。 您應該成功以 User1 登入，且系統不會提示您輸入密碼。 這可證明 Azure AD 無縫 SSO 正在執行。
 
 請注意，User1 雖具有 TESTLAB AD DS 網域的網域管理員權限，但並不是 Azure AD 的全域管理員。 因此，您不會看到 [管理員]**** 圖示選項。
 
@@ -108,12 +108,10 @@ Azure AD 無縫單一登入 (SSO) 會在使用者所在的個人電腦或裝置�
  
 此組態包含：
 
-- 已註冊 DNS 網域 TESTLAB.\<您的網域名稱> 的 Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
+- 使用 DNS 網域 testlab 的 Microsoft 365 E5 試用版或付費訂閱。\<your domain name> 註冊。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成 
 - Azure AD Connect 會在 APP1 上執行，以將來自 Microsoft 365 訂閱之 Azure AD 租用戶的帳戶和群組清單同步至 TESTLAB AD DS 網域。 
 - 啟用 Azure AD 無縫 SSO，可讓模擬內部網路上的電腦登入 Microsoft 365 雲端，而無需指定使用者帳戶的密碼。
-
-如需在生產中設定 Azure AD 無縫 SSO 的相關資訊和連結，請參閱身分識別階段中的[簡化使用者登入](identity-secure-your-passwords.md#identity-sso)步驟。
 
 ## <a name="next-step"></a>下一步
 
@@ -123,8 +121,8 @@ Azure AD 無縫單一登入 (SSO) 會在使用者所在的個人電腦或裝置�
 
 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)
 
-[部署 Microsoft 365 企業版](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365-enterprise/)
+[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 

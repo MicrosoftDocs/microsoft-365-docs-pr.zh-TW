@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 網路基礎結構，以及如何使用其 SD-WAN 技術，以取得與 Microsoft 365 企業版雲端服務的最佳網路效能。
-ms.openlocfilehash: 4e649796b30b96db3b36de2dabec1f276728d3ea
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+description: 瞭解 Contoso 網路基礎結構，以及它如何使用其 SD-WAN 技術，以取得適用于企業雲端服務之 Microsoft 365 的最佳網路效能。
+ms.openlocfilehash: bc2ae68917258b94ed46ef0c1257f56e0736105c
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43625275"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685815"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 的網路
 
@@ -50,7 +50,7 @@ ms.locfileid: "43625275"
 
 ## <a name="use-of-sd-wan-for-optimal-network-connectivity-to-microsoft"></a>使用 SD-WAN 以取得與 Microsoft 的最佳化網路連線
 
-Contoso 遵循 [Microsoft 365 網路連線原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) (部分機器翻譯)，以便：
+Contoso 遵循 [Microsoft 365 網路連線原則](microsoft-365-network-connectivity-principles.md) (部分機器翻譯)，以便：
 
 1. 識別並區分 Microsoft 365 網路流量
 2. 在當地輸出網路連線
@@ -83,17 +83,17 @@ Contoso 已針對以下地點架構其企業營運應用程式和伺服器內部
 
 對於衛星或地區中樞辦公室的使用者來說，有 60% 員工所需要的資源均由衛星和地區中樞辦公室伺服器提供，而另外的 40% 資源要求則必須透過 WAN 連結至巴黎園區。
 
-## <a name="contosos-network-analysis-and-preparation-of-their-network-for-microsoft-365-enterprise"></a>Contoso 的網路分析和針對 Microsoft 365 企業版的網路準備
+## <a name="contosos-network-analysis-and-preparation-of-their-network-for-microsoft-365-for-enterprise"></a>Contoso 的網路分析和其為 Microsoft 365 for enterprise 的網路的準備
 
-Contoso 的使用者對於 Microsoft 365 企業版服務採用的成功與否，取決於網際網路的高可用性和高效能的連線，或是否可直接與 Microsoft 雲端服務連線。Contoso 會採取這些步驟來規劃及實作對 Microsoft 365 企業版雲端服務的最佳化連線：
+Contoso 使用者成功採用 Microsoft 365 的企業服務，取決於對網際網路的高可用性和高性能連線，或直接與 Microsoft 雲端服務的連接。Contoso 採取下列步驟，為企業雲端服務規劃及執行 Microsoft 365 的優化連線：
 
 1. 建立公司 WAN 網路圖以協助規劃
 
    Contoso 藉由建立圖表 (顯示他們的位置、現有網路連線能力、其現有周邊網路裝置和網路上受管理的服務類別) 開始網路規劃。他們會針對網路連線規劃及實作的每個後續步驟，使用這個圖表。
 
-2. 建立 Microsoft 365 企業版網路連線的計劃
+2. 針對 enterprise network connectivity 建立 Microsoft 365 的計畫
 
-   Contoso 使用 [Microsoft 365 網路連線原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) (部分機器翻譯) 及提供參考網路架構，來決定 SD WAN 作為其 Microsoft 365 連線的偏好拓撲。
+   Contoso 使用 [Microsoft 365 網路連線原則](microsoft-365-network-connectivity-principles.md) (部分機器翻譯) 及提供參考網路架構，來決定 SD WAN 作為其 Microsoft 365 連線的偏好拓撲。
 
 3. 在每個辦公室分析網際網路連線使用率和 MPLS WAN 頻寬，並且視需要增加頻寬
 
@@ -109,7 +109,7 @@ Contoso 的使用者對於 Microsoft 365 企業版服務採用的成功與否，
 
 6. 已驗證的網路端點和連接埠連線
 
-   Contoso 會執行由 Microsoft 提供的網路連線測試工具，以驗證 Microsoft 365 企業版雲端服務的連線。
+   Contoso 執行由 Microsoft 提供的網路連線測試控管，以驗證適用于企業雲端服務之 Microsoft 365 的連線能力。
 
 7. 針對網路連線來最佳化員工電腦
 
@@ -121,8 +121,8 @@ Contoso 的使用者對於 Microsoft 365 企業版服務採用的成功與否，
 
 ## <a name="see-also"></a>請參閱
 
-[Microsoft 365 企業版的網路](networking-infrastructure.md)
+[Microsoft 365 的網路藍圖](networking-roadmap-microsoft-365.md)
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
 [測試實驗室指南](m365-enterprise-test-lab-guides.md)

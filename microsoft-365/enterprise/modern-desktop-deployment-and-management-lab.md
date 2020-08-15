@@ -2,31 +2,31 @@
 title: Windows 和 Office 部署的 Lab Kit
 f1.keywords:
 - NOCSH
-ms.author: jogruszc
-author: JGruszczyk
-manager: jemed
-ms.date: 06/10/2019
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: laurawi
+ms.date: 08/10/2020
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: a52d2ef1570509150aa1b44c7d7d767287e308f1
-ms.sourcegitcommit: 020b89b0d558a866ea68d35b5170db76f6d8d74d
-ms.translationtype: HT
+ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45052722"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685495"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 
-這些實驗室是設計來協助您規劃、測試及驗證執行 Windows 10 企業版和 Microsoft 365 Apps 企業版的桌面部署和管理。 實驗室涵蓋桌面部署輪中概述的步驟和工具，跨越 Microsoft Endpoint Configuration Manager、電腦分析、Office 自訂工具、OneDrive、Windows Autopilot，以及其他。
+這些實驗室的設計目的是協助您規劃、測試及驗證執行 Windows 10 企業版和 Microsoft 365 應用程式企業版的桌面部署和管理。 使用 Microsoft 端點設定管理員、桌面 Analytics、Office 自訂工具、OneDrive、Windows Autopilot 等的實驗封面。
 
-強烈建議準備結束 Windows 7 生命週期的組織進行這項訓練，如果您目前使用的是 Windows 10 和 Microsoft 365 Apps 企業版 (Office 365 專業增強版) 或 Office 2019，也適用這項訓練。 此外，如果您是獨立環境，實驗室非常適合用來探索部署工具更新，並測試與部署相關的自動化。
+對於準備進行 Windows 8 升級的組織，強烈建議使用此套件，此外，如果您目前使用的是 Windows 10、Microsoft 365 應用程式的 enterprise (以前版本的 Office 365 ProPlus) 或 Office 2019。 此外，如果您是獨立環境，實驗室非常適合用來探索部署工具更新，並測試與部署相關的自動化。
 
 [下載 Windows 和 Office 部署的 Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
@@ -46,9 +46,8 @@ ms.locfileid: "45052722"
 
 此外，實驗室是設計來連線到下列項目的試用版： 
 
-  - Microsoft 365 E5，或
-  - Office 365 企業版 E5
-  - Enterprise Mobility + Security
+  - Microsoft 365 E5
+  - Office 365 Enterprise E5 搭配 Enterprise 可移動性 + Security (EMS) 
 
 ## <a name="step-by-step-labs"></a>逐步實驗室
 
@@ -57,14 +56,14 @@ ms.locfileid: "45052722"
 ### <a name="device-and-app-readiness"></a>裝置和應用程式整備
 
   - 電腦分析
-  - 新增！ 部署及更新新版 Microsoft Edge 
-  - 新增！ 安裝和設定雲端管理閘道 (CMG) 
+  - 部署及更新新版 Microsoft Edge 
+  - 安裝和設定雲端管理閘道 (CMG) 
   - Internet Explorer 模式 
   - 應用程式防護 
 
 ### <a name="directory-and-network-readiness"></a>目錄和網路整備
 
-  - 新增！ 將 Windows 10 Update 傳遞最佳化 
+  - 將 Windows 10 Update 傳遞最佳化 
   - Configuration Manager 和 Microsoft Intune 共同管理
   - 遠端存取 (VPN)
 
@@ -110,7 +109,7 @@ ms.locfileid: "45052722"
   - 使用 Configuration Manager 維護 Microsoft 365 Apps 企業版
   - 新增！ 使用 Configuration Manager 和 Intune 更新 Office
   
-### <a name="new-windows-virtual-desktop"></a>新增！ Windows 虛擬桌面
+### <a name="windows-virtual-desktop"></a>Windows 虛擬桌面
   - Windows 虛擬桌面：準備、部署、最佳化 
 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>下載 Windows 和 Office 部署的 Lab Kit
@@ -120,8 +119,6 @@ ms.locfileid: "45052722"
 *請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2020 年 9 月 12 日到期。到期之前，將會發佈新的版本。*
 
 ## <a name="additional-guidance"></a>其他指引
-
-  - [桌面部署中心](https://www.aka.ms/howtoshift)
 
   - [來自 Microsoft Mechanics 的桌面部署中心系列影片](https://www.aka.ms/watchhowtoshift)
 

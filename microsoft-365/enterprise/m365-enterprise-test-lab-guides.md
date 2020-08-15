@@ -9,7 +9,7 @@ ms.date: 11/20/2019
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 使用「測試實驗室指南」以設定企業用 Microsoft 365 的示範、概念證明或開發/測試環境。
-ms.openlocfilehash: 5907edd1bc42b9d679ed020331f225ef2d2b2594
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 685bf25db330b4bf43a3a7258aeb43517c239e81
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818738"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686763"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>企業用 Microsoft 365 測試實驗室指南
 
@@ -43,7 +43,7 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
 
 ## <a name="base-configuration"></a>基本設定
 
-首先，您可以建立[企業用 Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/) 的測試環境，以便包含 Office 365 E5、Enterprise Mobility + Security (EMS) E5 及 Windows 10 企業版。您可以建立兩個不同類型的基底組態：
+首先，您會為適用于 [企業的 Microsoft 365](https://docs.microsoft.com/microsoft-365-enterprise/)建立測試環境。您可以建立兩種不同的基本設定類型：
 
 - 當您想要在僅雲端環境中 (其中不包含任何內部部署元件) 設定及示範企業用 Microsoft 365 功能時，使用[輕量型基底組態](lightweight-base-configuration-microsoft-365-enterprise.md)。
 
@@ -63,7 +63,7 @@ TLG 設計為模組化。它們根據彼此而建置，以建立能夠更加符�
   
    啟用及測試對 AD DS 網域控制站的傳遞驗證。
 
-- [同盟驗證](federated-identity-for-your-office-365-dev-test-environment.md)
+- [同盟驗證](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
    啟用及測試對 AD DS 網域控制站的同盟驗證。
 

@@ -9,18 +9,18 @@ ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Microsoft 在服務事件期間做了什麼，讓您可以更好地準備商務持續性計劃。
-ms.openlocfilehash: 3d4a1d6c3a69be4cb3051125d5527b1f0b25b375
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
-ms.translationtype: HT
+ms.openlocfilehash: 5486ad2ae8c2e5d97b466a8cbd2a4dbab416b29b
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42067664"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686115"
 ---
 # <a name="enterprise-business-continuity-management-customer-and-cloud-partner-responsibilities"></a>企業商務持續性管理客戶與雲端合作夥伴責任
 
@@ -65,7 +65,7 @@ Microsoft 為客戶可以使用的服務狀態通訊保留多個通道。
 
 ### <a name="location"></a>位置
 許多組織需要員工位於特定實體或網路位置，才能連線至企業系統與雲端服務。  
-Microsoft 發佈[網路連線原則](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)，引導企業執行設定與雲端資源網路連線的最佳做法。 最佳化的範例包括實作分割通道 VPN，允許來自使用者網路的直接連線，而不是透過 VPN 通道。  雖然這些連線原則對於維護低延遲連線很重要，但是服務復原需要替代方法，針對一般共同作業連線至公司資源。
+Microsoft 發佈[網路連線原則](microsoft-365-network-connectivity-principles.md)，引導企業執行設定與雲端資源網路連線的最佳做法。 最佳化的範例包括實作分割通道 VPN，允許來自使用者網路的直接連線，而不是透過 VPN 通道。  雖然這些連線原則對於維護低延遲連線很重要，但是服務復原需要替代方法，針對一般共同作業連線至公司資源。
 
 ### <a name="systems"></a>系統
 許多共同作業解決方案都與系統相依，例如公司廣域網路 (WAN)。 當這些系統無法使用時，貴組織會如何回應？

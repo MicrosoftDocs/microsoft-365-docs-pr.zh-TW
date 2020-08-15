@@ -9,18 +9,18 @@ ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
 description: 部署最新版本的組織如何使用適用於 Windows 10 和 Microsoft 365 Apps 的通道。
-ms.openlocfilehash: 46f36a7bd26ef190aca2a63fdaa993e420988b30
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
-ms.translationtype: HT
+ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200112"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686163"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>最新版本的廣泛部署範例
 
@@ -109,6 +109,6 @@ ms.locfileid: "45200112"
 
 [部署和更新通道範例組態](deploy-update-channels-examples.md)
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
 [測試實驗室指南](m365-enterprise-test-lab-guides.md)

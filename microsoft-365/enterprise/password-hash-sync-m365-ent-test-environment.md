@@ -9,7 +9,7 @@ ms.date: 05/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -19,16 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 摘要：為您的 Office 365 測試環境設定及示範密碼雜湊同步處理並且登入。
-ms.openlocfilehash: 2d5fbd3ed2a2afb994fc36f5ba3a15a8c55a274e
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+ms.openlocfilehash: 2930d147e2ae3277b0af4d2aa81a602c73128439
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819385"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686545"
 ---
 # <a name="password-hash-synchronization-for-your-microsoft-365-test-environment"></a>適用於 Office 365 測試環境的密碼雜湊同步處理
 
-*這個測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版兩種測試環境。*
+*此測試實驗室指南可用於 enterprise 和 Office 365 企業測試環境的 Microsoft 365。*
 
 許多組織使用 Azure AD Connect 和密碼雜湊同步處理，將其內部部署 Active Directory Domain Services (AD DS) 樹系中的帳戶集同步處理至 Microsoft 365 訂閱的 Azure AD 租用戶帳戶集。 本文說明如何將密碼雜湊同步處理新增至 Office 365 測試環境，進而產生下列組態：
   
@@ -40,7 +40,7 @@ ms.locfileid: "44819385"
 2. 在 APP1 上安裝及設定 Azure AD Connect。
     
 > [!TIP]
-> 如需 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應，請移至 [Microsoft 365 企業測試實驗室指南堆疊](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)。
+> 移至 [microsoft 365 for Enterprise Test Lab Guide 堆疊](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) ，以顯示 microsoft 365 For Enterprise Test lab guide 堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-create-the-microsoft-365-simulated-enterprise-test-environment"></a>階段 1：建立 Microsoft 365 模擬企業測試環境
 
@@ -50,7 +50,7 @@ ms.locfileid: "44819385"
   
 此組態包含： 
   
-- Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱。
+- Microsoft 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路中的 DC1、APP1 及 CLIENT1 虛擬機器組成。 DC1 是 testlab 的網域控制站。\<your public domain name> AD DS 網域。
 
 ## <a name="phase-2-create-and-register-the-testlab-domain"></a>階段 2：建立及註冊 testlab 網域
@@ -59,7 +59,7 @@ ms.locfileid: "44819385"
 
 首先，請使用您的公用 DNS 註冊提供者，根據您目前的網域名稱建立新的公用 DNS 網域名稱，並將它新增至您的訂閱。 我們建議您使用名稱 **testlab.**\<your public domain>。 例如，如果您的公用網域名稱是 **<span>contoso</span>.com**，請新增公用網域名稱 **<span>testlab</span>.contoso.com**。
   
-接下來，您要新增 **testlab.**\<your public domain> 網域至您的 Microsoft 365 或 Office 365 試用版或付費訂閱版，請瀏覽網域註冊程式。 這包括將其他 DNS 記錄新增至 **testlab.**\<your public domain> 網域。 如需詳細資訊，請參閱[新增網域至 Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain)。 
+接下來，您要新增 **testlab.**\<your public domain> 透過網域註冊程式的網域移至您的 Microsoft 365 試用版或付費訂閱。 這包括將其他 DNS 記錄新增至 **testlab.**\<your public domain> 網域。 如需詳細資訊，請參閱 [Add a domain To Microsoft 365](../admin/setup/add-domain.md)。 
 
 以下是產生的組態。
   
@@ -67,7 +67,7 @@ ms.locfileid: "44819385"
   
 此組態包含：
 
-- Microsoft 365 E5 或 Office 365 E5 試用版或付費訂閱版，其包含有 DNS 網域 testlab.\<your public domain name> 註冊。
+- 使用 DNS 網域 testlab 的 Microsoft 365 E5 試用版或付費訂閱。\<your public domain name> 註冊。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路的子網路上的 DC1、APP1 及 CLIENT1 虛擬機器組成
 
 請注意 testlab.\<your public domain name> 現在如何：
@@ -146,8 +146,8 @@ ms.locfileid: "44819385"
 
 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)
 
-[部署 Microsoft 365 企業版](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365-enterprise/)
+[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)
 
 

@@ -9,22 +9,22 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Windows 10 企業版的就地升級。
-ms.openlocfilehash: c66be4ad5ee383301c4fb10cf2590f7cbbed033f
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
-ms.translationtype: HT
+ms.openlocfilehash: a100eb07408053fd270c26f388265696549fff9f
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43630678"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686415"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 的 Windows 10 企業版部署
 
-在 Microsoft 365 企業版廣泛發佈之前，Contoso 擁有與 Windows 相容的電腦和裝置，分別執行 Windows 7 (10%)、Windows 8.1 (65%) 和 Windows 10 (25%)。Contoso 想要升級電腦至 Windows 10 企業版，以利用進階安全性及透過自動化部署更新降低 IT 成本。 
+在 Microsoft 365 for enterprise 的廣泛展示之前，Contoso 具有 Windows 相容的電腦和裝置，其混合了 Windows 7 (10% ) 、Windows 8.1 (65% ) 和 Windows 10 (25% ) 。Contoso 想要升級其電腦的 Windows 10 企業版利用高級安全性，並從自動部署更新，降低 IT 負荷。 
 
 在評估基礎架構和業務需求後，Contoso 識別這些部署的關鍵需求：
 
@@ -95,8 +95,8 @@ Contoso 同時也使用 Windows Analytics 的「升級整備狀況」解決方�
 
 ## <a name="see-also"></a>請參閱
 
-[Microsoft 365 企業版的 Windows 10 企業版](windows10-infrastructure.md)
+[Windows 10 企業版](https://docs.microsoft.com/windows/deployment/)
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
 [測試實驗室指南](m365-enterprise-test-lab-guides.md)

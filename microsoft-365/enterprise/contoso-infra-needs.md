@@ -9,18 +9,18 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: 了解 Contoso 內部部署 IT 基礎結構的基本結構，以及 Microsoft 365 企業版如何符合其業務需求。
-ms.openlocfilehash: 3899466e6c8ad50ad3a3d97863d1368ba1d8af20
-ms.sourcegitcommit: bd8d55f82ca008af1b93a9bb4d1545f68e8188ad
-ms.translationtype: HT
+description: 瞭解 Contoso 內部部署 IT 基礎結構的基本結構，以及 Microsoft 365 for enterprise 如何滿足其業務需求。
+ms.openlocfilehash: 3dd744a8d936307c61303bf8ba0f2f198af59d91
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44011194"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685827"
 ---
 # <a name="contosos-it-infrastructure-and-business-needs"></a>Contoso 的 IT 基礎結構與業務需求
 
@@ -112,20 +112,20 @@ Contoso 的業務需求分成五個主要類別。
 
   自動安裝更新到整個組織的 Windows 作業系統和 Microsoft 365 應用程式企業版。
 
-## <a name="mapping-contosos-business-needs-to-microsoft-365-enterprise"></a>將 Contoso 的業務需求對應至 Microsoft 365 企業版
+## <a name="mapping-contosos-business-needs-to-microsoft-365-for-enterprise"></a>將 Contoso 的業務需求對應至 Microsoft 365 for enterprise
 
 Contoso 的 IT 部門決定在部署之前，將下列業務需求對應至 Microsoft 365 E5 功能：
 
-||||
+
+| 類別 | 商務需求 | 適用于企業產品或功能的 Microsoft 365 |
 |:-------|:-----|:-----|
-| **類別** | **業務需求** | **Microsoft 365 企業版產品或功能** |
 | 生產力 |  |  |
 |  | 讓共同作業更輕鬆 | Microsoft Teams、SharePoint、OneDrive |
 |  | 改善遠端和行動工作者的生產力 | Microsoft 365 工作負載和雲端式資料 |
 |  | 增加創意和創新 | Windows Ink、Cortana at Work、PowerPoint |
 | 安全性 |  |  |
 |  | 身分識別和存取管理 | 具有 Azure 多重要素驗證 (MFA) 與 Azure AD Privileged Identity Management (PIM) 的專用全域系統管理員帳戶 <BR> 適用於所有使用者帳戶的 MFA <BR> 條件式存取 <BR> Windows Hello <BR> Windows Credential Guard |
-|  | 威脅防護 | 進階威脅分析 <BR> Windows Defender <BR> 進階威脅防護 <BR> Office 365 進階威脅防護 <BR> Office 365 威脅調查及回應 <BR> |
+|  | 威脅防護 | 進階威脅分析 <BR> Windows Defender <BR> 進階威脅防護 <BR> Office 365 進階威脅防護 <BR> Microsoft 365 威脅調查和回應 <BR> |
 |  | 資訊保護 | Azure 資訊保護 <BR> 資料外洩防護 (DLP) <BR> Windows 資訊保護 (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | 安全性管理 | Azure 資訊安全中心  <BR> Windows Defender 資訊安全中心 |
 | 遠端和行動裝置存取與商務合作夥伴 |  |  |
@@ -133,7 +133,7 @@ Contoso 的 IT 部門決定在部署之前，將下列業務需求對應至 Micr
 |  | 減少員工的遠端存取基礎結構 | Microsoft 365 工作負載和雲端式資料 |
 |  | 針對 B2B 的交易提供更好的連線能力並降低額外負荷 | 同盟驗證和雲端式資源 |
 | 合規性 |  |  |
-|  | 遵循地區性法規的需求 | Office 365 中的 GDPR 功能 |
+|  | 遵循地區性法規的需求 | Microsoft 365 中的 GDPR 功能 |
 | 管理 |  |  |
 |  | 降低安裝用戶端更新的 IT 額外負荷 | 部署通道 <BR> Windows 10 企業版更新 <BR> Microsoft 365 Apps 企業版更新 |
 ||||
@@ -144,6 +144,6 @@ Contoso 的 IT 部門決定在部署之前，將下列業務需求對應至 Micr
 
 ## <a name="see-also"></a>請參閱
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
 [測試實驗室指南](m365-enterprise-test-lab-guides.md)

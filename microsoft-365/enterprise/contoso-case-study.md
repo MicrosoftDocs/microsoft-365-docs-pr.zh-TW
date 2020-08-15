@@ -1,5 +1,5 @@
 ---
-title: 適用於 Contoso Corporation 的 Microsoft 365 企業版
+title: 適用于 Contoso Corporation 的 Microsoft 365 for enterprise
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -9,26 +9,26 @@ ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: 虛構但有代表性的全球組織如何採用 Microsoft 365 企業版。
-ms.openlocfilehash: dd9bf2dcb7a8bff453746a0084faaf69650bf6fd
-ms.sourcegitcommit: 4512f54ba80d869d4c04e8f9bd897d1878280852
-ms.translationtype: HT
+description: 虛構但具有代表性的全球組織如何採用 Microsoft 365 for enterprise。
+ms.openlocfilehash: fe9003531ada50374c0447c9b05a99798f883e47
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854255"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685983"
 ---
-# <a name="microsoft-365-enterprise-for-the-contoso-corporation"></a>適用於 Contoso Corporation 的 Microsoft 365 企業版
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>適用于 Contoso Corporation 的 Microsoft 365 for enterprise
 
-Microsoft 365 企業版是 Microsoft 的頂級雲端供應項目，結合本機與雲端生產力應用程式和服務與 Windows 10 企業版和進階安全功能，成為完整、智慧型的解決方案，讓所有人都能發揮創意並且安全地共同作業。 
+Microsoft 365 for enterprise 是 Microsoft 的卓越雲端方案，其結合了具有 Windows 10 企業版和高級安全性功能的本機和雲端架構應用程式和服務，可讓所有人都具有創造性且安全地協同運作。 
 
-Contoso Corporation 是虛構但有代表性的全球製造集團，總部位於法國巴黎。Contoso 已部署 Microsoft 365 企業版並且針對網路、身分識別、Windows 10 企業版、Microsoft 365 Apps 企業版、行動裝置管理、資訊保護和安全性，訂定主要設計決策和實作詳細資料。 
+Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部為巴黎，法國。Contoso 已部署適用于企業的 Microsoft 365，並解決主要設計決策，以及網路、身分識別、Windows 10 企業版、Microsoft 365 應用程式（適用于企業、行動裝置管理、資訊保護及安全性）等方面的執行細節。 
 
-Contoso 對於 Microsoft 365 企業版的整體目標是藉由使用雲端服務來加速其數位轉換，雲端服務可以讓其員工、合作夥伴、資料和程序合併在一起，以建立客戶價值並且在數位優先世界維持其競爭優勢。
+Contoso for the Microsoft 365 for enterprise 的整體目標是使用雲端服務，將其員工、合作夥伴、資料和程式結合在一起，以在數位優先世界中，將其員工、合作夥伴、資料和流程結合在一起，以取得客戶的價值並保持競爭優勢。
 
 如需詳細資訊，請參閱下列文章：
 
@@ -62,11 +62,11 @@ Contoso 對於 Microsoft 365 企業版的整體目標是藉由使用雲端服務
 
 - [資訊保護](contoso-info-protect.md)
 
-  為了確保能夠識別、標示一般和高價值資料，並且使其受限於安全性階層，Contoso 會使用 Microsoft 365 企業版資訊保護來強制執行其資料安全性原則。
+  為了確保一般和高價值的資料都已識別、標示並受限於安全性層級，Contoso 會以 Microsoft 365 為公司資訊保護，強制執行其資料安全性原則。
 
-- [Microsoft 365 企業版安全性摘要](contoso-security-summary.md)
+- [Microsoft 365 enterprise security 的摘要](contoso-security-summary.md)
 
-  Contoso 針對身分識別與存取管理、威脅防護、資訊保護和安全性管理，使用 Microsoft 365 企業版安全性功能的完整功能。
+  Contoso 針對身分識別與存取管理、威脅防護、資訊保護和安全性管理，使用 Microsoft 365 的全套企業安全性功能。
 
 - [用於高度機密專案的團隊](../solutions/contoso-team-for-top-secret-project.md)
 
@@ -78,12 +78,12 @@ Contoso 對於 Microsoft 365 企業版的整體目標是藉由使用雲端服務
 
 ## <a name="next-step"></a>下一步
 
-[了解](contoso-overview.md) Contoso Corporation、其全球各地辦公室，和部署 Microsoft 365 企業版時訂定的設計考量。
+[深入瞭解](contoso-overview.md) Contoso 公司、其全球的辦事處，以及部署 Microsoft 365 for enterprise 時所解決的設計考慮。
 
 
 ## <a name="see-also"></a>另請參閱
 
-[部署指南](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
 [測試實驗室指南](m365-enterprise-test-lab-guides.md)
 

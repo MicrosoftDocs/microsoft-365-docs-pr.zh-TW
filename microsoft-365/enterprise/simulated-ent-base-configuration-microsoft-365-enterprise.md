@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -17,37 +17,37 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
-description: 使用此「測試實驗室指南」建立 Microsoft 365 企業版的模擬企業測試環境。
-ms.openlocfilehash: 486429bf9e1c0a88c9beb01a092f968256c1fa77
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
-ms.translationtype: HT
+description: 使用此測試實驗室指南來建立適用于企業的 Microsoft 365 模擬企業測試環境。
+ms.openlocfilehash: 9f4cbb300946109368759d6ec8f1120332e1ed92
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818492"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685673"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模擬企業基本設定
 
-*這個測試實驗室指南可用於 Microsoft 365 企業版和 Office 365 企業版兩種測試環境。*
+*此測試實驗室指南可用於 enterprise 和 Office 365 企業測試環境的 Microsoft 365。*
 
-本文提供逐步指示來為 Microsoft 365 企業版建立簡化的環境，其中包含：
+本文提供逐步指示，可為適用于企業的 Microsoft 365 建立簡化的環境，其中包括：
 
 - Microsoft 365 E5 試用版或付費訂閱。
 - 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路上的三部虛擬機器 (DC1、APP1 及 CLIENT1) 組成。
  
 ![模擬企業基本設定](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-您可以利用額外的[測試實驗室指南](m365-enterprise-test-lab-guides.md)或靠您自己，使用所產生的環境來測試 [Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise)的功能。
+您可以使用所產生的環境，利用其他[測試實驗室指南](m365-enterprise-test-lab-guides.md)或您自己的方式，測試[適用于 enterprise 的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)的功能。
 
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 如需 Microsoft 365 企業版測試實驗室指南堆疊中所有文章的視覺對應，請移至 [Microsoft 365 企業測試實驗室指南堆疊](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)。
+> 移至 [microsoft 365 for Enterprise Test Lab Guide 堆疊](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) ，以顯示 microsoft 365 For Enterprise Test lab guide 堆疊中所有文章的視覺對應。
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>階段 1：建立模擬的內部網路
 
 在這個階段，您可以在 Azure 基礎結構服務中建立模擬內部網路，其中包含 Active Directory Domain Services (AD DS) 網域控制站、應用程式伺服器和用戶端電腦。 
 
-您可以在其他 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)中使用這些電腦，以設定並示範混合式身分識別及其他功能。
+您將在其他 [Microsoft 365 for Enterprise 測試實驗室指南](m365-enterprise-test-lab-guides.md) 中使用這些電腦，以設定並示範混合式身分識別和其他功能。
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>方法 1：使用 Azure Resource Manager 範本建立模擬內部網路
 
@@ -371,7 +371,7 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
 
 使用 CORP\User1 帳戶透過 Azure 入口網站連線至 CLIENT1。
 
-若要建立新的 Office 365 E5 試用訂閱，請執行輕量型基本組態測試實驗室指南的[階段 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-office-365-e5-subscription) 中的指示。
+若要建立新的 Office 365 E5 試用訂閱，請執行輕量型基本組態測試實驗室指南的[階段 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-microsoft-365-e5-subscription) 中的指示。
 
 若要設定您的新 Office 365 E5 試用訂閱，請執行輕量型基本組態測試實驗室指南的[階段 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) 中的指示。
 
@@ -379,7 +379,7 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
 
 如果您只需要 Office 365 測試環境，您可以在這裡停止。 
 
-如需適用於 Office 365 和 Microsoft 365 的其他測試實驗室指南，請參閱 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)。
+如需同時適用于 Microsoft 365 和 Office 365 的其他測試實驗室指南，請參閱 [Microsoft 365 for Enterprise Test Lab 指南](m365-enterprise-test-lab-guides.md) 。
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>新增 Microsoft 365 E5 試用版訂閱
 
@@ -398,7 +398,7 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
   
 ![模擬企業基本設定階段 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   
-您現在已準備好嘗試 [Microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
+您現在已準備好嘗試使用 [Microsoft 365 for enterprise](https://www.microsoft.com/microsoft-365/enterprise)的其他功能。
   
 ## <a name="next-steps"></a>後續步驟
 
@@ -412,6 +412,6 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
 
 [Microsoft 365 企業版測試實驗室指南](m365-enterprise-test-lab-guides.md)
 
-[部署 Microsoft 365 企業版](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 企業版概觀](microsoft-365-overview.md)
 
-[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365-enterprise/)
+[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365-enterprise/)

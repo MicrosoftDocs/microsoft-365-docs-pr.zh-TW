@@ -1,6 +1,6 @@
 ---
-title: 跨 Microsoft 365 部署威脅防護功能
-description: 瞭解如何在 Microsoft 365 E5 中部署威脅防護服務和功能。
+title: 跨 Microsoft 365 部署網路安全性威脅防護
+description: 瞭解如何在 Microsoft 365 E5 上部署威脅防護服務和 IT 網路安全性功能。
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -14,18 +14,19 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 312df25bf4fe2b91bb60b4122378b4457b25723c
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: 0736151f1ceacecb888c8a3eb3dd88183cc3a060
+ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588181"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662317"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 部署威脅防護功能
 
-[惡意](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)代碼和複雜的 cyberattacks （例如[fileless 威脅](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)）都是常見的時機。 企業必須保護自己及其客戶。 網路安全性攻擊可能會造成組織的主要問題，包括從失去信任到財務 woes、業務威脅停機等等。 防護威脅很重要，但決定組織的時間、精力和資源的位置，可能會有很大的難度。 
+[惡意](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware)代碼和複雜的 cyberattacks （例如 [fileless 威脅](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats)）都是常見的時機。 企業必須以有效的 IT 網路安全性功能來保護自己及其客戶。 這類攻擊可能會造成組織的主要問題，包括從失去信任到財務 woes、業務威脅停機等等。 防護威脅很重要，但決定組織的時間、精力和資源的位置，可能會有很大的難度。 
 
-Microsoft 的安全性解決方案已內置於我們的產品和服務中。 「自動化」和「機器學習」功能可減少安全性小組的負載，以確保處理適當的專案。 Microsoft 安全性解決方案的強項是以 trillions 在我們每天處理的[智慧安全性圖形](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中的信號來建立。 Microsoft 365 的安全性解決方案包括[Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)，這會在您的電子郵件、資料、裝置和身分識別間的信號，以繪製對您組織的高級威脅的圖片。
+Microsoft 的安全性解決方案已內置於我們的產品和服務中。 「自動化」和「機器學習」功能可減少安全性小組的負載，以確保處理適當的專案。 Microsoft 網路安全性解決方案的強項是以每日在我們的 [智慧安全性圖形](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph)中處理的信號 trillions 為基礎。 Microsoft 365 的安全性解決方案包括 [Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)，這是一種解決方案，可透過您的電子郵件、資料、裝置和身分識別，在您的組織中繪製高級威脅的圖片。
+
 
 觀賞這段影片，瞭解部署程式的概況。
 
@@ -35,7 +36,7 @@ Microsoft 的安全性解決方案已內置於我們的產品和服務中。 「
 
 ## <a name="threat-protection-in-microsoft-365-e5"></a>Microsoft 365 E5 中的威脅防護
 
-[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab)可讓您使用可自我調整的內建智慧來保護您的組織。 使用 Microsoft 365 E5 中的威脅防護功能，您可以偵測並調查內部部署和雲端環境中的高級威脅、受到損害的身分識別和惡意動作。
+[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) 可讓您使用可自我調整的內建智慧來保護您的組織。 使用 Microsoft 365 E5 中的威脅防護功能，您可以偵測並調查內部部署和雲端環境中的高級威脅、受到損害的身分識別和惡意動作。
 
 在 Microsoft 365 E5 中，預設會整合威脅防護功能。 每項功能的信號增加了偵測及回應威脅的整體能力。 整合的一組功能可為組織（特別是多國組織）提供最佳保護，與執行非 Microsoft 產品相較。 下圖說明本文所述的 Microsoft 365 E5 威脅防護服務和功能。
 
@@ -73,7 +74,7 @@ Microsoft 的安全性解決方案已內置於我們的產品和服務中。 「
 7. [監視狀態並採取動作](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
 8. [訓練使用者](deploy-threat-protection-configure.md#step-8-train-users)
 
-您可以平行設定威脅防護功能，因此，如果您有多個安全小組負責不同的服務，他們就可以同時設定組織的保護功能。 下圖說明部署威脅防護功能的高層級流程。 
+您可以平行設定威脅防護功能，因此，如果您有多個網路安全小組負責不同的服務，則可以同時設定組織的保護功能。 下圖說明部署威脅防護功能的高層級流程。 
 
 ![部署威脅防護功能的程式](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
 
