@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 3bec74c1043e2ecfd632144647945f441433dcb2
-ms.sourcegitcommit: 12e19f9cc319f25ab9dd3b0f77ad17e227d7f0be
+ms.openlocfilehash: 4eb08eed668efb598068a7229b9312ccb6654274
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46672908"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757576"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -150,7 +150,7 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 
 若要保留或刪除一個 Microsoft 365 群組（之前稱為 Office 365 群組）的內容，請使用 **Office 365 群組** 的位置。 即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件**位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。 此外，雖然 **Exchange 電子郵件**位置一開始會允許您指定要包含或排除的群組信箱，但是當您嘗試儲存保留原則時，您會收到 "RemoteGroupMailbox" 不是Exchange 位置的有效選項錯誤訊息。
 
-套用到 Microsoft 365 群組的保留原則同時包含群組信箱和網站。 套用至 Microsoft 365 群組的保留原則可保護由 Microsoft 365 群組所建立的資源，其中包括 Microsoft Teams。
+如果選取小組網站時群組已建立或稍後將小組網站新增至群組時，則套用於 [Microsoft 365 群組] 的保留策略包含 [群組信箱與小組網站]。 儲存在小組網站中的檔案會在此位置涵蓋，但不會有他們自己保留原則位置的 Teams 聊天或 Teams 頻道訊息。
 
 ### <a name="configuration-information-for-skype-for-business"></a>商務用 Skype 的設定資訊
 

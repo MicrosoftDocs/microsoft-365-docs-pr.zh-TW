@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 取得資料遺失防護（DLP）的自訂機密資訊類型概覽，例如 [主要模式]、[字元近似] 和 [信任等級]。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6934edba6eef03bc9d4bfc5c1c69f127a7d3a0e5
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 3b3e30c75641dde16726e1d98c8f12c4437b0df6
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817962"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685473"
 ---
 # <a name="custom-sensitive-information-types"></a>自訂敏感性資訊類型
 
@@ -50,11 +50,26 @@ Microsoft 365 包含可供您在組織中使用的許多內建的敏感性資訊
 
 若要在安全性與合規性中心建立自訂敏感性資訊類型，您可以從數個選項中選擇：
 
-- **使用 EDM** (新增！) 您可以使用以精確資料比對 (EDM) 為基礎的分類來設定自訂敏感性資訊類型。 此方法可讓您使用您可以定期更新的安全資料庫來建立動態敏感性資訊類型。 請參閱[使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
+- **使用 EDM** 您可以使用以精確資料比對 (EDM) 為基礎的分類來設定自訂敏感性資訊類型。 此方法可讓您使用您可以定期更新的安全資料庫來建立動態敏感性資訊類型。 請參閱[使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)。
 
 - **使用 PowerShell** 您可以使用 PowerShell 來設定自訂敏感性資訊類型。 雖然此方法比使用 UI 更複雜，但是您有多個組態選項。 請參閱[在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。
 
 - **使用 UI** 您可以使用安全性與合規性中心 UI 來設定自訂敏感性資訊類型。 使用此方法，您可以使用規則運算式、關鍵字和關鍵字字典。 若要進一步了解，請參閱[建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type.md)。
 
-
+> [!NOTE]
+> Microsoft 365 資訊保護目前支援預覽版的雙位元組字元集語言：
+> - 中文 (簡體)
+> - 中文 (繁體)
+> - 韓文
+> - 日文
+> 
+>此預覽僅限商愛業雲端中，且僅限部署至：
+> - 日本
+> - 韓國
+> - 中國
+> - 香港特別行政區
+> - 澳門特別行政區
+> - 台灣
+>
+>這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱 [資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
 

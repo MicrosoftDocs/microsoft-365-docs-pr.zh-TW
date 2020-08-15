@@ -1,5 +1,5 @@
 ---
-title: 建議的安全文件原則 - Microsoft 365 企業版 | Microsoft Docs
+title: 建議的安全檔原則-Microsoft 365 for enterprise |Microsoft 檔
 description: 描述如何保護 SharePoint 檔案存取之 Microsoft 建議的原則。
 author: BrendaCarter
 manager: laurawi
@@ -16,18 +16,18 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 784a4d617d74916ae7b0ec4b431cc298ce45531e
-ms.sourcegitcommit: d6b641d0ef92f4176da9f4a98d3d5aa3d4f2e184
+ms.openlocfilehash: 25f58582ae912211f72aaf17c2dab338ebb21c7e
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46617183"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695035"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保護 SharePoint 網站和檔案的原則建議
 
-本文說明如何執行建議的身分識別和裝置存取原則，以保護 SharePoint 線上和商務 OneDrive。 本指南是以[通用身分識別和裝置存取原則](identity-access-policies.md)為基礎。
+本文說明如何執行建議的身分識別和裝置存取原則，以保護 SharePoint 線上和商務 OneDrive。 本指南是以 [通用身分識別和裝置存取原則](identity-access-policies.md)為基礎。
 
-這些建議是根據您的需求細微性，以三種不同的安全性和保護層級來保護 SharePoint 檔案：**基準**、**機密**和**高管制**。 您可以在 [[概述](microsoft-365-policies-configurations.md)] 中深入瞭解這些安全性層，以及建議的用戶端作業系統。
+這些建議是根據您的需求細微性，以三種不同的安全性和保護層級來保護 SharePoint 檔案： **基準**、 **機密**和 **高管制**。 您可以在 [ [概述](microsoft-365-policies-configurations.md)] 中深入瞭解這些安全性層，以及建議的用戶端作業系統。
 
 除了執行這項指導之外，請務必設定具有適當保護的 SharePoint 網站，包括為敏感和高管制內容設定適當的許可權。
 
@@ -41,7 +41,7 @@ ms.locfileid: "46617183"
 
 新的原則會將特定存取需求套用至指定的 SharePoint 網站，以實現敏感和高管制內容的裝置保護。
 
-下表列出您需要針對線上 SharePoint 檢查和更新或建立新的原則。 通用身分[識別與裝置存取原則](identity-access-policies.md)文章中相關之設定指示的常見原則連結。
+下表列出您需要針對線上 SharePoint 檢查和更新或建立新的原則。 通用身分 [識別與裝置存取原則](identity-access-policies.md) 文章中相關之設定指示的常見原則連結。
 
 |保護層級|原則|詳細資訊|
 |:---------------|:-------|:----------------|
@@ -51,16 +51,16 @@ ms.locfileid: "46617183"
 |        |[需要相容的電腦](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在雲端應用程式清單中包含 SharePoint 線上|
 |        |[在 SharePoint Online 中使用應用程式強制限制](#use-app-enforced-restrictions-in-sharepoint-online)|新增此新原則。 這會通知 Azure AD 使用 SharePoint Online 中所指定的設定。 此規則會套用至所有使用者，但是只會影響 SharePoint 線上存取原則中所包含之網站的存取權|
 |**敏感度**|[當登入風險為*低*、*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint 線上|
-|         |[需要相容*的電腦和*行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在雲端應用程式清單中包含 SharePoint 線上|
+|         |[需要相容 *的電腦和* 行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在雲端應用程式清單中包含 SharePoint 線上|
 ||[SharePoint 線上存取控制原則](#sharepoint-online-access-control-policies)：允許來自未受管理裝置之特定 SharePoint 網站的瀏覽器存取權|這可避免檔案的編輯和下載。 使用 PowerShell 來指定網站|
-|**高管制**|[*永遠*需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint 線上|
+|**高管制**|[*永遠* 需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint 線上|
 ||[SharePoint 線上存取控制原則](#use-app-enforced-restrictions-in-sharepoint-online)：封鎖非管理裝置對特定 SharePoint 網站的存取權|使用 PowerShell 來指定網站|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint-online"></a>在 SharePoint Online 中使用應用程式強制限制
 
 如果您在線上 SharePoint 中執行存取控制，您必須在 Azure AD 中建立此條件式存取原則，以通知 Azure AD 強制執行您在 SharePoint Online 中設定的原則。 此規則會套用至所有使用者，但是只會影響您在 SharePoint Online 中建立存取控制時，使用 PowerShell 所指定之網站的存取權。
 
-若要設定此原則，請參閱本文中的「封鎖或限制存取特定 SharePoint 網站集合或 OneDrive 帳戶」：[控制來自非管理裝置的存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。
+若要設定此原則，請參閱本文中的「封鎖或限制存取特定 SharePoint 網站集合或 OneDrive 帳戶」： [控制來自非管理裝置的存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。
 
 ## <a name="sharepoint-online-access-control-policies"></a>SharePoint 線上存取控制原則
 
@@ -69,7 +69,7 @@ Microsoft 建議您使用裝置存取控制，以機密和高管制內容來保�
 - 機密網站：允許僅供瀏覽器存取。 這會防止使用者編輯及下載檔案。
 - 高度管制網站：封鎖非管理裝置的存取。
 
-請參閱本文中的「封鎖或限制存取特定 SharePoint 網站集合或 OneDrive 帳戶」：[控制非管理裝置的存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。
+請參閱本文中的「封鎖或限制存取特定 SharePoint 網站集合或 OneDrive 帳戶」： [控制非管理裝置的存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)。
 
 ## <a name="how-these-policies-work-together"></a>這些原則共同運作的方式
 
@@ -85,5 +85,4 @@ Microsoft 建議您使用裝置存取控制，以機密和高管制內容來保�
 - 如果 James 存取敏感或高管制的網站，他是使用自己電腦的成員，只要其電腦符合規範，就會授與其存取權。
 - 如果 James 存取機密的網站，他是使用未受管理的電話的成員（允許基準使用者使用），他只會收到對機密網站的瀏覽器存取權（由於為此網站設定的裝置存取原則）。
 - 如果 James 存取高管制網站，他是使用非管理電話的成員，則會因此網站設定的存取原則而封鎖。 他只能使用受管理和相容的電腦來存取此網站。
-
 

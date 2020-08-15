@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: 9c7232b5e90dd51322755220c40198a5bd077cce
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 8599774994ccabce716c1366c0ffc6e1773626e9
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577971"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46685805"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
@@ -66,7 +66,7 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 
 1. **如果未在保留期間刪除訊息**：在保留期間結束時，系統會將訊息移至 SubstrateHolds 資料夾。 
 
-2. **如果使用者在保留期間刪除項目**，系統會立即將項目移至 SubstrateHolds 資料夾。 如果使用者從該處刪除訊息或清空 SubstrateHolds 資料夾，就會永久刪除項目。 否則訊息會在處於 SubstrateHolds 資料夾的一天後永久刪除。
+2. **如果使用者在保留期間刪除項目**，系統會立即將項目移至 SubstrateHolds 資料夾。 訊息會在處於 SubstrateHolds 資料夾的一天後永久刪除。
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>商務用 Skype 和 Teams Interop 聊天

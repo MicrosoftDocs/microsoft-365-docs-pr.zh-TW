@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: d8601538b440b5133731d67743379bdc7980d1d5
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: d10b4a7d47f849769d0a534941bddc1c3678f3a4
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522238"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46695215"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生產力圖例
 
@@ -56,22 +56,12 @@ Microsoft 365 企業解決方案系列提供實作 Microsoft 365 功能的指引
 |[![Microsoft Defender ATP 部署策略的縮圖](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>更新日期：2020 年 2 月| 架構材料可協助您規劃下列架構的部署： <ul><li> 雲端-原生 </li><li> 共同管理 </li><li> 內部部署</li><li>評估與本機上架</li>
 
 
-<a name="m365foundationinfra"></a>
-### <a name="microsoft-365-enterprise-foundation-infrastructure"></a>Microsoft 365 企業版底層基礎結構
-
-快速檢視 Microsoft 365 企業版的[底層基礎結構](https://docs.microsoft.com/microsoft-365/enterprise/deploy-foundation-infrastructure)以開始部署。
-  
-|**Item**|**描述**|
-|:-----|:-----|
-|[![Microsoft 365 企業版底層基礎結構海報的縮圖影像](../media/solutions-architecture-center/Microsoft365EnterpriseFoundInfra-thumb.png)](https://aka.ms/m365efoundinfraposter) <br/> [線上檢視](https://aka.ms/m365efoundinfraposter) \| [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365EnterpriseFoundInfra.pdf) <br/> 更新日期：2019 年 12 月| 此海報針對目標、功能和工具、設計決策、設定結果、上架，以及持續監視和更新，摘要說明底層基礎結構的每個階段。 <br/>| 
-
-   
 <a name="BKMK_O365IDP"></a>
 ### <a name="identity-and-device-protection-for-office-365"></a>Office 365 的身分識別與裝置保護
 
 推薦可用於保護身分識別和裝置的功能，其可存取 Office 365、其他 SaaS 服務，以及與 Azure AD 應用程式 Proxy 一起發佈的內部部署應用程式。
 
-|**項目**|**描述**|
+|**Item**|**描述**|
 |:-----|:-----|
 |[![模型海報：Office 365 和其他 SaaS 應用程式的身分識別與裝置保護](../media/solutions-architecture-center/O365-Identity-device-protection-thumb.png)          ](https://www.microsoft.com/download/details.aspx?id=55032) <br/> [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656)  \| [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657)  \| [更多語言](https://www.microsoft.com/download/details.aspx?id=55032) <br/> 更新日期：2018 年 11 月|請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。這份文件會顯示哪些功能在保護身分識別和裝置上有相當功能的詳細資訊。  <br/> |
    

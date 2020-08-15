@@ -17,23 +17,40 @@ search.appverid:
 - MET150
 description: 了解如何在安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f702582a0e2c53b0846cd0586295d9bbea657e3c
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 0c54cd9d4969c87bbd83b3048883d8a84dd9bc59
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818062"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686657"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>在安全性與合規性中心建立自訂敏感性資訊類型
 
-閱讀本文，在安全性與合規性中心建立[自訂敏感性資訊類型](custom-sensitive-info-types.md) ([https://protection.office.com](https://protection.office.com))。 透過使用此方法，您建立的自訂敏感性資訊類型會新增到名為 `Microsoft.SCCManaged.CustomRulePack` 的規則套件。
+請閱讀本文，在安全性與合規性中心建立自訂敏感性資訊類型 ([https://protection.office.com](https://protection.office.com))。 透過使用此方法，您建立的自訂敏感性資訊類型會新增到名為 `Microsoft.SCCManaged.CustomRulePack` 的規則套件。
 
 您也可以使用 PowerShell 和 Exact Data Match 功能建立自訂敏感性資訊類型。 若要深入了解這些方法，請參閱：
 - [在安全性與合規性中心 PowerShell 中建立自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [使用 Exact Data Match (EDM) 建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
-## <a name="before-you-begin"></a>開始之前
+> [!NOTE]
+> Microsoft 365 資訊保護目前支援預覽版的雙位元組字元集語言：
+> - 中文 (簡體)
+> - 中文 (繁體)
+> - 韓文
+> - 日文
+> 
+>此預覽僅限商愛業雲端中，且僅限部署至：
+> - 日本
+> - 韓國
+> - 中國
+> - 香港特別行政區
+> - 澳門特別行政區
+> - 台灣
+>
+>這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱 [資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
+
+## <a name="before-you-begin"></a>在您開始之前
 
 > [!NOTE]
 > 您必須具備全域管理員或合規性系統管理員的權限，才能透過 UI 建立、測試及部署自訂的敏感性資訊類型。 請參閱 Office 365 中的[關於系統管理員角色](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide)。

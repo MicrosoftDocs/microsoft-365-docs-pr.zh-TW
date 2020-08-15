@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d08589ec9465142e772c3190954ed7f93fbc68fe
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 699cea6aec6f11462aed0c08db98ca4620df519a
+ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648748"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46686557"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -40,6 +40,23 @@ ms.locfileid: "46648748"
 ![以 EDM 為基礎的分類](../media/EDMClassification.png)
 
 以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日或每週重新整理，而且可以包含最多 1 億列資料。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以對原則使用以 EDM 為基礎的分類，例如 [資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或  [Microsoft Cloud App Security 檔案原則](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
+
+> [!NOTE]
+> Microsoft 365 資訊保護目前支援預覽版的雙位元組字元集語言：
+> - 中文 (簡體)
+> - 中文 (繁體)
+> - 韓文
+> - 日文
+> 
+>此預覽僅限商愛業雲端中，且僅限部署至：
+> - 日本
+> - 韓國
+> - 中國
+> - 香港特別行政區
+> - 澳門特別行政區
+> - 台灣
+>
+>這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱 [資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 

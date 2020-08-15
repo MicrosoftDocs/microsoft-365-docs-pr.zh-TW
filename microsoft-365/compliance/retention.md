@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: b799f35789ac113128ecb1adcbeae48aede7f847
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b0ce412609ac9c7084c1c598a327cde7c055c101
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662307"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757566"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 
@@ -58,7 +58,7 @@ ms.locfileid: "46662307"
 
 - 針對 Exchange 信箱：複本會保留在 **[可復原的項目]** 資料夾中。 
 
-- 針對 Teams 頻道和交談訊息：複本會保留在 Exchange **[可復原的項目]** 資料夾中的隱藏資料夾內。
+- 針對 Teams 頻道和聊天訊息：複本會保留在名為 **SubstrateHolds** 的隱藏資料夾中，以作為 Exchange **[可復原的項目]** 資料夾中的子資料夾。
 
 > [!NOTE]
 > [文件保留庫] 會佔用不受網站儲存空間配額限制的儲存空間。 當您對 SharePoint 和 Microsoft 365 群組使用保留設定時，可能需要增加您的儲存空間。
