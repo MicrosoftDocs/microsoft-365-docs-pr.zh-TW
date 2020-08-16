@@ -105,6 +105,42 @@
               href: 'https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: 跨國公司的案例研究
               href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+        - name: 共同作業控管
+          items:
+            - name: 概觀
+              href: collaboration-governance-overview.md
+            - name: 控管優先
+              href: collaboration-governance-first.md
+            - name: 使用 SharePoint 的群组
+              href: groups-sharepoint-governance.md
+            - name: OneDrive、SharePoint 和 Teams
+              href: groups-sharepoint-teams-governance.md
+            - name: 服務互動參考
+              href: groups-services-interactions.md
+            - name: 存取
+              href: groups-teams-access-governance.md
+            - name: 合規性
+              href: groups-teams-compliance-governance.md
+            - name: 通訊
+              href: groups-teams-communication-governance.md
+            - name: 組織和生命週期
+              items:
+                - name: 組織和生命週期控管
+                  href: plan-organization-lifecycle-governance.md
+                - name: 管理群組建立
+                  href: manage-creation-of-groups.md
+                - name: 命名原則
+                  href: groups-naming-policy.md
+                - name: 到期原則
+                  href: microsoft-365-groups-expiration-policy.md
+                - name: 每個群組的來賓存取權
+                  href: per-group-guest-access.md
+                - name: 傳送為 原則
+                  href: allow-members-to-send-as-or-send-on-behalf-of-group.md
+                - name: 群组建立網域
+                  href: choose-domain-to-create-groups.md
+                - name: 生命週期結束選項
+                  href: end-life-cycle-groups-teams-sites-yammer.md
         - name: 利用 Microsoft 365 在 SharePoint 中進行檔案共同作業
           href: 'https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 規劃智慧型 SharePoint 內部網路

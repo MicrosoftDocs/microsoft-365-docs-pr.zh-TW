@@ -22,13 +22,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: 了解如何指派授權給使用者。
-ms.date: 07/01/2020
-ms.openlocfilehash: 648a3433bf5c2bd9bb96abb90335f56ee4fb6bee
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.date: 08/14/2020
+ms.openlocfilehash: e1f28107f7774fa4eccbecb3882cbd002a6eea1a
+ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015944"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46757554"
 ---
 # <a name="assign-licenses-to-users"></a>將授權指派給使用者
 
@@ -160,6 +160,25 @@ ms.locfileid: "45015944"
 5. 在 **[產品授權]** 窗格底部，選擇 **[儲存]** \> **[關閉]** \> **[關閉]**。
 
 ::: moniker-end
+
+## <a name="assign-a-license-to-a-guest-user"></a>指派授權給來賓使用者
+
+您可以在 Azure Active Directory 系統管理中心中邀請來賓使用者來與您的組織共同作業。 若要進一步了解來賓使用者，請參閱[什麼是 Azure Active Directory B2B 中的來賓使用者存取權？](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) 如果您沒有任何來賓使用者，請參閱[快速入門：在 Azure 入口網站中將來賓使用者新增至您的目錄](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)。
+
+> [!IMPORTANT]
+> 您必須是全域系統管理員才能執行這些步驟。
+
+1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2067268" target="_blank">Azure Active Directory 系統管理中心</a>
+2. 在功能窗格中，選取 [使用者 **]**。
+3. 在 [使用者 | 所有使用者 (預覽)**]** 頁面上，選取 [新增篩選 **]**。
+4. 在 [挑選欄位 **]** 功能表中，選擇 [使用者類型 **]**，然後選取 [套用 **]**。
+5. 在下一個功能表中，選取 [來賓 **]**。
+6. 在結果清單中，選取需要授權的使用者。
+7. 在 [管理 **]** 下，選取 [授權 **]**。
+8. 選取 [作業 **]**。
+9. 在 [更新授權指派 **]** 頁面上，選取您要為其指派授權的產品。
+10. 在右側，除您不要來賓使用者可存取的任何服務的核取方塊。
+11. 選取 [儲存 **]**。
 
 ## <a name="next-steps"></a>後續步驟
 
