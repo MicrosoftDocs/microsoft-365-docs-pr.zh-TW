@@ -2,220 +2,697 @@
   href: index.yml
 - name: Microsoft 365 企業版概觀
   href: microsoft-365-overview.md
-- name: 部署 Microsoft 365 企業版
-  href: deploy-microsoft-365-enterprise.md
+- name: 網路功能
   items:
-    - name: 部署基礎結構
-      href: deploy-foundation-infrastructure.md
+    - name: 藍圖
+      href: networking-roadmap-microsoft-365.md
+    - name: 方案
       items:
-        - name: 階段 1 - 網路
-          href: networking-infrastructure.md
-          items:
-            - name: 步驟 1 - 準備用於 Microsoft 365 的網路
-              href: networking-provide-bandwidth-cloud-services.md
-            - name: 步驟 2 - 設定每個辦公室的當地網際網路連線
-              href: networking-dns-resolution-same-location.md
-            - name: 步驟 3 - 避免網路 Hairpin
-              href: networking-avoid-network-hairpins.md
-            - name: 步驟 4 - 設定流量旁路
-              href: networking-configure-proxies-firewalls.md
-            - name: 步驟 5 - 最佳化用戶端和服務效能
-              href: networking-optimize-tcp-performance.md
-            - name: 網路允出準則
-              href: networking-exit-criteria.md
-        - name: 階段 2 - 身分識別
-          href: identity-infrastructure.md
-          items:
-            - name: 步驟 1 - 建立和保護您的全域系統管理員帳戶
-              href: identity-create-protect-global-admins.md
-            - name: 步驟 2 - 保護您的密碼
-              href: identity-secure-your-passwords.md
-            - name: 步驟 3 - 保護和管理您的使用者登入
-              href: identity-secure-user-sign-ins.md
-            - name: 步驟 4 - 新增使用者帳戶
-              href: identity-add-user-accounts.md
-            - name: 步驟 5 - 使用群組進行管理
-              href: identity-use-group-management.md
-            - name: 步驟 6 - 設定身分識別治理
-              href: identity-configure-identity-governance.md
-            - name: 身分識別允出準則
-              href: identity-exit-criteria.md
-        - name: 階段 3 - Windows 10 企業版
-          href: windows10-infrastructure.md
-          items:
-            - name: 步驟 1 - 準備您的組織
-              href: windows10-prepare-your-org.md
-            - name: 步驟 2 - 部署為就地升級
-              href: windows10-deploy-inplaceupgrade.md
-            - name: 步驟 3 - 部署新裝置
-              href: windows10-deploy-autopilot.md
-            - name: 步驟 4 - 監控裝置健全狀況和合規性
-              href: windows10-enable-windows-analytics.md
-            - name: 步驟 5 - 部署安全性功能
-              href: windows10-enable-security-features.md
-            - name: Windows 10 企業版允出準則
-              href: windows10-exit-criteria.md
-        - name: 階段 4 - Microsoft 365 Apps 企業版
-          href: office365proplus-infrastructure.md
-          items:
-            - name: Microsoft 365 Apps 企業版允出準則
-              href: office365proplus-exit-criteria.md
-        - name: 階段 5 - 行動裝置管理
-          href: mobility-infrastructure.md
-          items:
-            - name: 行動裝置管理允出準則
-              href: mobility-infrastructure-exit-criteria.md
-        - name: 階段 6 - 資訊保護
-          href: infoprotect-infrastructure.md
-          items:
-            - name: 步驟 1 - 定義安全性和資訊保護層級
-              href: infoprotect-define-sec-infoprotect-levels.md
-            - name: 步驟 2 - 設定環境的分類
-              href: infoprotect-configure-classification.md
-            - name: 步驟 3 - 設定增強的 Microsoft 365 安全性
-              href: infoprotect-configure-increased-security-office-365.md
-            - name: 步驟 4 - 設定 Windows 資訊保護
-              href: infoprotect-deploy-windows-information-protection.md
-            - name: 步驟 5 - 設定資料外洩防護
-              href: infoprotect-data-loss-prevention.md
-            - name: 步驟 6 - 設定電子郵件加密
-              href: infoprotect-email-encryption.md
-            - name: 步驟 7 - 設定 Office 365 的特殊權限存取管理
-              href: infoprotect-configure-privileged-access-management.md
-            - name: 資訊保護允出準則
-              href: infoprotect-exit-criteria.md
-        - name: 部署策略
-          href: deployment-strategies-microsoft-365-enterprise.md
-        - name: 使用現有的基礎結構部署
-          href: deploy-with-existing-infrastructure.md
-        - name: 部署和更新通道範例設定
-          href: deploy-update-channels-examples.md
-          items:
-            - name: 廣泛部署最新版本
-              href: deploy-update-channels-examples-rapid-deploy.md
-        - name: 非企業部署
-          href: deploy-foundation-infrastructure-non-enterprises.md
-    - name: 部署工作負載
-      href: deploy-workloads.md
+        - name: Microsoft 365 網路連線能力概觀
+          href: microsoft-365-networking-overview.md
+        - name: Microsoft 365 網路連線原則
+          href: microsoft-365-network-connectivity-principles.md
+        - name: 評估 Microsoft 365 網路連線能力
+          href: assessing-network-connectivity.md
+        - name: 使用 Office 365 ExpressRoute 進行網路規劃
+          href: network-planning-with-expressroute.md
+        - name: 規劃連線到 Microsoft 365 服務的網路裝置
+          href: plan-for-network-devices.md
+        - name: Microsoft 365 的網路和移轉規劃
+          href: network-and-migration-planning.md
+    - name: 部署
       items:
-        - name: Microsoft Teams
-          href: teams-workload.md
-        - name: Exchange Online
-          href: exchangeonline-workload.md
-        - name: SharePoint 和商務用 OneDrive
-          href: sharepoint-online-onedrive-workload.md
-        - name: 移轉
-          href: migration-microsoft-365-enterprise-workload.md
-    - name: 測試實驗室指南
-      href: m365-enterprise-test-lab-guides.md
+        - name: 新增網域
+          href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+        - name: 設定 M365E 端點允許清單
+          items:
+            - name: Office 365 IP 位址和 URL Web 服務
+              href: microsoft-365-ip-web-service.md
+            - name: 未包含在 Web 服務中的其他端點
+              href: additional-office365-ip-addresses-and-urls.md
+        - name: 在 SharePoint Online 中使用 Office 365 CDN
+          href: use-microsoft-365-cdn-with-spo.md
+        - name: 將遠端使用者的連線能力最佳化
+          items:
+            - name: VPN 分割通道概觀
+              href: microsoft-365-vpn-split-tunnel.md
+            - name: 實作 VPN 分割通道
+              href: microsoft-365-vpn-implement-split-tunnel.md
+            - name: 中國使用者適用的 Microsoft 365 最佳化
+              href: microsoft-365-networking-china.md
+            - name: 最佳化 Microsoft 365 流量給原生 Windows 10 VPN 遠端工作者
+              href: 'https://docs.microsoft.com/en-us/windows/security/identity-protection/vpn/vpn-office-365-optimization'
+        - name: Office 365 的 ExpressRoute
+          href: azure-expressroute.md
+          items:
+            - name: 使用 Office 365 的 ExpressRoute 進行路由傳送
+              href: routing-with-expressroute.md
+    - name: 管理
       items:
-        - name: 基本設定
+        - name: Office 365 端點
           items:
-            - name: 輕量型
-              href: lightweight-base-configuration-microsoft-365-enterprise.md
-            - name: 模擬企業
-              href: simulated-ent-base-configuration-microsoft-365-enterprise.md
-        - name: 身分識別
+            - name: Microsoft 365 端點
+              href: microsoft-365-endpoints.md
+            - name: 全球端點
+              href: urls-and-ip-address-ranges.md
+            - name: 美國政府 DoD 端點
+              href: microsoft-365-u-s-government-dod-endpoints.md
+            - name: 美國政府 GCC High 端點
+              href: microsoft-365-u-s-government-gcc-high-endpoints.md
+            - name: 21Vianet 端點運作的 Office 365
+              href: urls-and-ip-address-ranges-21vianet.md
+            - name: Office 365 Germany 端點
+              href: microsoft-365-germany-endpoints.md
+        - name: 內容傳遞網路
+          href: content-delivery-networks.md
+        - name: Office 365 服務中的 IPv6 支援
+          href: ipv6-support.md
+        - name: Office 365 的 NAT 支援
+          href: nat-support-with-microsoft-365.md
+        - name: Mac 版 Office 中的網路要求
+          href: network-requests-in-office-2016-for-mac.md
+        - name: 網路規劃與效能調整
+          href: network-planning-and-performance.md
+        - name: 監控連線能力
+          href: monitor-connectivity.md
+        - name: 管理 ExpressRoute
+          href: managing-expressroute-for-connectivity.md
+    - name: Microsoft 365 網路合作夥伴計劃
+      href: microsoft-365-networking-partner-program.md
+- name: 租用戶
+  items:
+    - name: 藍圖
+      href: tenant-roadmap-microsoft-365.md
+    - name: 方案
+      items:
+        - name: 訂閱、授權、帳戶與租用戶
+          href: subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md
+        - name: 協力廠商的 SSL 憑證的計劃
+          href: plan-for-third-party-ssl-certificates.md
+        - name: 設定指南
+          href: setup-guides-for-microsoft-365.md
+        - name: 整合
           items:
-            - name: 密碼雜湊同步處理
-              href: password-hash-sync-m365-ent-test-environment.md
-            - name: 傳遞驗證
-              href: pass-through-auth-m365-ent-test-environment.md
-            - name: 同盟驗證
-              href: federated-identity-for-your-office-365-dev-test-environment.md
-            - name: Azure AD 無縫單一登入
-              href: single-sign-on-m365-ent-test-environment.md
-            - name: 多重要素驗證
-              href: multi-factor-authentication-microsoft-365-test-environment.md
-            - name: 保護全域系統管理員帳戶
-              href: protect-global-administrator-accounts-microsoft-365-test-environment.md
-            - name: 密碼回寫
-              href: password-writeback-m365-ent-test-environment.md
-            - name: 密碼重設
-              href: password-reset-m365-ent-test-environment.md
-            - name: 自動授權和群組成員資格
-              href: automate-licenses-group-membership-microsoft-365-test-environment.md
-            - name: Azure AD Identity Protection
-              href: azure-ad-identity-protection-microsoft-365-test-environment.md
-            - name: 身分識別與裝置存取
-              href: identity-device-access-m365-test-environment.md
+            - name: 整合應用程式和 Azure AD
+              href: integrated-apps-and-azure-ads.md
+            - name: 與內部部署整合
+              href: microsoft-365-integration.md
+            - name: Azure 整合
+              href: azure-integration.md
+            - name: Azure ExpressRoute
+              href: azure-expressroute.md
+            - name: Office 2013 和 Office 2016 用戶端應用程式的新式驗證方式
+              href: modern-auth-for-office-2013-and-2016.md
+        - name: 租用戶間共同作業
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: 客戶端應用程式支援
+          items:
+            - name: 憑證型驗證
+              href: microsoft-365-client-support-certificate-based-authentication.md
+            - name: 條件式存取
+              href: microsoft-365-client-support-conditional-access.md
+            - name: 選擇基本行動安全與 Intune
+              href: 'https://docs.microsoft.com/office365/securitycompliance/choose-between-mdm-and-intune'
+            - name: 新式驗證
+              href: microsoft-365-client-support-modern-authentication.md
+            - name: 單一登入
+              href: microsoft-365-client-support-single-sign-on.md
+        - name: 混合式新式驗證
+          items:
+            - name: 商務用 Skype Server 和 Exchange Server 的先決條件
+              href: hybrid-modern-auth-overview.md
+            - name: 設定 Exchange Server
+              href: configure-exchange-server-for-hybrid-modern-authentication.md
+            - name: 設定商務用 Skype
+              href: configure-skype-for-business-for-hybrid-modern-authentication.md
+            - name: 商務用 Skype 和Exchange 的移除或停用
+              href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+        - name: 規劃您的升級
+          href: plan-upgrade-previous-versions-office.md
+          items:
+            - name: Office 2007
               items:
-                - name: 僅雲端
-                  href: cloud-only-prereqs-m365-test-environment.md
-                - name: 密碼雜湊同步處理
-                  href: phs-prereqs-m365-test-environment.md
-                - name: 傳遞驗證
-                  href: pta-prereqs-m365-test-environment.md
-        - name: 行動裝置管理
+                - name: 從 Office 2007 伺服器與用戶端升級
+                  href: upgrade-from-office-2007-servers-and-products.md
+                - name: Office 2007 電腦
+                  href: 'https://docs.microsoft.com/DeployOffice/endofsupport/office-2007-end-support-roadmap'
+                - name: Exchange 2007
+                  href: exchange-2007-end-of-support.md
+                - name: SharePoint 2007
+                  href: sharepoint-2007-end-of-support.md
+                - name: Office Communications Server
+                  href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+                - name: PerformancePoint Server 2007
+                  href: pps-2007-end-of-support.md
+                - name: Project Server 2007
+                  href: project-server-2007-end-of-support.md
+            - name: Office 2010
+              items:
+                - name: 從 Office 2010 伺服器與用戶端升級
+                  href: upgrade-from-office-2010-servers-and-products.md
+                - name: Office 2010 電腦
+                  href: 'https://docs.microsoft.com/DeployOffice/endofsupport/office-2010-end-support-roadmap'
+                - name: Exchange 2010
+                  href: exchange-2010-end-of-support.md
+                - name: SharePoint 2010
+                  href: upgrade-from-sharepoint-2010.md
+                - name: Lync Server 2010
+                  href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+                - name: Project Server 2010
+                  href: project-server-2010-end-of-support.md
+        - name: Microsoft 365 中的租用戶隔離
+          href: microsoft-365-tenant-isolation-overview.md
           items:
-            - name: 註冊 iOS 和 Android 裝置
-              href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
-            - name: 裝置合規性原則
-              href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
-        - name: 資訊保護
+            - name: Azure Active Directory 中的隔離與存取控制
+              href: microsoft-365-isolation-in-azure-active-directory.md
+            - name: 監視及測試租用戶界限
+              href: microsoft-365-monitoring-and-testing.md
+            - name: 資源限制
+              href: microsoft-365-resource-limits.md
+            - name: 隔離與存取控制
+              href: microsoft-365-isolation-in-microsoft-365.md
+            - name: 租用戶在搜尋中隔離
+              href: microsoft-365-isolation-in-microsoft-365-search.md
+            - name: 租用戶在影片中隔離
+              href: microsoft-365-isolation-in-microsoft-365-video.md
+            - name: Office Graph 與 Delve 中的租用戶隔離
+              href: microsoft-365-isolation-in-graph-and-delve.md
+        - name: 服務保證
           items:
-            - name: 增強的 Microsoft 365 安全性
-              href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
-            - name: 資料分類
-              href: data-classification-microsoft-365-enterprise-dev-test-environment.md
-            - name: 特殊權限存取管理
-              href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
-    - name: Contoso 案例研究
-      href: contoso-case-study.md
+            - name: 安全性與規範中心的服務保證
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/service-assurance'
+            - name: 系統管理存取權控制
+              href: microsoft-365-administrative-access-controls-overview.md
+              items:
+                - name: 監視及稽核存取控制
+                  href: microsoft-365-monitoring-and-auditing-access-controls.md
+                - name: 隔離控制項
+                  href: microsoft-365-isolation-controls.md
+                - name: 人員控制項
+                  href: microsoft-365-personnel-controls.md
+                - name: echnology 控制項
+                  href: microsoft-365-technology-controls.md
+                - name: Yammer 企業存取控制項
+                  href: microsoft-365-yammer-enterprise-access-controls.md
+            - name: 稽核和報告
+              href: microsoft-365-auditing-and-reporting-overview.md
+              items:
+                - name: 報告功能
+                  href: microsoft-365-reporting-features.md
+                - name: 電子文件探索與搜尋功能
+                  href: microsoft-365-ediscovery-and-search-features.md
+                - name: Microsoft 365 工程內部記錄
+                  href: microsoft-365-internal-logging.md
+                - name: 信箱移轉
+                  href: microsoft-365-mailbox-migrations.md
+                - name: 管理活動 API
+                  href: microsoft-365-management-activity-api.md
+            - name: 站台恢復
+              href: microsoft-365-data-resiliency-overview.md
+              items:
+                - name: 處理資料損毀
+                  href: microsoft-365-dealing-with-data-corruption.md
+                - name: Exchange Online 資料恢復
+                  href: microsoft-365-exchange-data-resiliency.md
+                - name: 惡意程式碼與勒索軟體防護
+                  href: microsoft-365-malware-and-ransomware-protection.md
+                - name: 監視及自我修復
+                  href: microsoft-365-monitoring-and-self-healing.md
+            - name: 資料保留、刪除及毀損
+              href: microsoft-365-data-retention-deletion-and-destruction-overview.md
+              items:
+                - name: 資料毀損
+                  href: microsoft-365-data-destruction.md
+                - name: 永久性
+                  href: microsoft-365-data-immutability.md
+                - name: Exchange Online 資料刪除
+                  href: microsoft-365-exchange-online-data-deletion.md
+                - name: SharePoint Online 資料刪除
+                  href: microsoft-365-sharepoint-online-data-deletion.md
+                - name: 商務用 Skype 資料刪除
+                  href: microsoft-365-skype-data-deletion.md
+            - name: 防禦拒絕服務攻擊
+              href: microsoft-365-defending-cloud-services-against-dos-attacks.md
+              items:
+                - name: Microsoft 的拒絕服務攻擊防禦策略
+                  href: microsoft-365-microsoft-dos-defense-strategy.md
+                - name: 防禦拒絕服務攻擊的核心原則
+                  href: microsoft-365-core-principles-of-defense-against-dos-attacks.md
+            - name: Microsoft Cloud 中的加密
+              href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview'
+              items:
+                - name: Microsoft 365 服務加密
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-service-encryption'
+                - name: 傳輸中資料的加密
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-data-in-transit'
+                - name: 客戶管理的加密功能
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-customer-managed-encryption-features'
+                - name: 加密風險與防護
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-risks-and-protections'
+                - name: 商務用 Skype、商務用 OneDrive、SharePoint Online 與 Exchange Online 的加密
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-for-skype-onedrive-sharepoint-and-exchange'
+                - name: Microsoft Dynamics 365 中的加密
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-microsoft-dynamics-365'
+                - name: Azure 中的加密
+                  href: 'https://docs.microsoft.com/microsoft-365/compliance/office-365-azure-encryption'
+    - name: 部署
       items:
-        - name: 概觀
-          href: contoso-overview.md
-        - name: Contoso 的 IT 基礎結構與需求
-          href: contoso-infra-needs.md
-        - name: 網路功能
-          href: contoso-networking.md
-        - name: 身分識別
-          href: contoso-identity.md
-        - name: Windows 10 企業版
-          href: contoso-win10.md
-        - name: Microsoft 365 Apps 企業版
-          href: contoso-o365pp.md
-        - name: 行動裝置管理
-          href: contoso-mdm.md
-        - name: 資訊保護
-          href: contoso-info-protect.md
-        - name: 安全性摘要
-          href: contoso-security-summary.md
-    - name: Microsoft 365 服務健全狀態
-      href: microsoft-365-service-health.md
-- name: 桌面部署中心
-  href: desktop-deployment-center-home.md
+        - name: 新增網域
+          href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+    - name: 多地理位置
+      items:
+        - name: Microsoft 365 多地理位置
+          href: microsoft-365-multi-geo.md
+        - name: OneDrive 和 SharePoint 多地理位置
+          href: multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md
+        - name: Exchange 多地理位置
+          href: multi-geo-capabilities-in-exchange-online.md
+        - name: 方案
+          items:
+            - name: 規劃多地理位置
+              href: plan-for-multi-geo.md
+            - name: 系統管理體驗
+              href: administering-a-multi-geo-environment.md
+            - name: 使用者體驗
+              href: multi-geo-user-experience.md
+        - name: 部署
+          items:
+            - name: 設定多地理位置
+              href: multi-geo-tenant-configuration.md
+            - name: 設定慣用的資料位置
+              href: /azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation?toc=/Office365/Enterprise/toc.json&bc=/office365/enterprise/breadcrumb/toc.json
+            - name: 設定搜尋
+              href: configure-search-for-multi-geo.md
+        - name: 管理
+          items:
+            - name: 管理多地理位置環境
+              href: administering-a-multi-geo-environment.md
+            - name: 管理 SharePoint 配額
+              href: sharepoint-multi-geo-storage-quota.md
+            - name: 移動 OneDrive 網站
+              href: move-onedrive-between-geo-locations.md
+            - name: 移動 SharePoint 網站
+              href: move-sharepoint-between-geo-locations.md
+            - name: 新增或移除地理位置系統管理員
+              href: add-a-sharepoint-geo-admin.md
+            - name: 將內容限制在地理位置
+              href: restrict-content-to-geo-location.md
+            - name: 設定 Microsoft 365 多地理位置電子文件探索
+              href: multi-geo-ediscovery-configuration.md
+            - name: 使用特定 PDL 建立群組
+              href: multi-geo-add-group-with-pdl.md
+            - name: 刪除地理位置
+              href: delete-a-geo-location.md
+            - name: 在您的衛星地理位置啟用 SharePoint 多地理位置
+              href: enabling-SP-multigeo-satellite-geolocation.md
+            - name: 管理 Exchange 多地理位置
+              href: administering-exchange-online-multi-geo.md
+    - name: 移至新的 Microsoft 365 資料中心地區
+      href: moving-data-to-new-datacenter-geos.md
+      items:
+        - name: 如何要求資料移動
+          href: request-your-data-move.md
+        - name: 資料移動期間和之後
+          href: during-and-after-your-data-move.md
+        - name: 資料移動一般常見問題集
+          href: data-move-faq.md
+        - name: Microsoft Cloud Deutschland - Office 365 移轉計劃
+          href: ms-cloud-germany-transition.md
+        - name: Microsoft Cloud Deutschland - 選擇加入移轉
+          href: ms-cloud-germany-migration-opt-in.md
+        - name: 客戶資料儲存位置
+          href: o365-data-locations.md
+- name: 身份識別
   items:
-    - name: 快速入門 - 人員、流程及技術指導方針 (英文)
-      href: getting-started.md
-    - name: 步驟 1 - 裝置和應用程式整備
-      href: step-1-device-and-app-readiness.md
-    - name: 步驟 2 - 目錄和網路整備
-      href: step-2-directory-and-network-readiness.md
-    - name: 步驟 3 - Office 和 LOB 應用程式傳遞
-      href: step-3-office-and-lob-app-delivery.md
-    - name: 步驟 4 - 使用者檔案和設定移轉
-      href: step-4-user-files-and-settings-migration.md
-    - name: 步驟 5 - 安全性與合規性考量事項
-      href: step-5-security-and-compliance.md
-    - name: 步驟 6 - 作業系統部署與功能更新
-      href: step-6-os-deployment-and-feature-updates.md
-    - name: 步驟 7 - Windows 和 Office 服務
-      href: step-7-windows-and-office-as-a-service.md
-    - name: 步驟 8 - 使用者的通訊和訓練
-      href: step-8-user-communications-and-training.md
-    - name: Windows 7 至 Windows 10 的手動升級
-      href: windows-7-to-windows-10-upgrade-manual.md
-    - name: Windows 7 至 Windows 10 自動升級
-      href: windows-7-to-windows-10-upgrade-automated.md
-    - name: Windows 和 Office 部署與 Lab Kit
-      href: modern-desktop-deployment-and-management-lab.md
-    - name: 尋找部署的說明
-      href: find-help-for-modern-desktop-deployment.md
+    - name: 藍圖
+      href: identity-roadmap-microsoft-365.md
+    - name: 方案
+      items:
+        - name: 身分識別模型
+          href: about-microsoft-365-identity.md
+        - name: 混合式身分識別
+          href: plan-for-directory-synchronization.md
+    - name: 部署
+      items:
+        - name: 保護您的全域管理員帳戶
+          href: protect-your-global-administrator-accounts.md
+        - name: 僅雲端身分識別
+          href: cloud-only-identities.md
+        - name: 混合式身分識別
+          href: prepare-for-directory-synchronization.md
+        - name: 準備無法路由傳送的網域，以用於目錄同步處理
+          href: prepare-a-non-routable-domain-for-directory-synchronization.md
+        - name: 設定目錄同步處理
+          href: set-up-directory-synchronization.md
+        - name: 混合式解決方案
+          items:
+            - name: 概觀
+              href: hybrid-solutions.md
+            - name: 使用適用於 SharePoint Server 2016 驗證的 Azure Active Directory
+              href: using-azure-ad-for-sharepoint-server-authentication.md
+            - name: 使內部部署網路與 Azure 虛擬網路連線
+              href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
+            - name: 在 Azure IaaS 中部署目錄同步處理伺服器
+              href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
+            - name: 部署 Azure 中的高可用性同盟驗證
+              href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+              items:
+                - name: 階段 1 - 設定 Azure
+                  href: high-availability-federated-authentication-phase-1-configure-azure.md
+                - name: 階段 2 - 設定網域控制器
+                  href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
+                - name: 階段 3 - 設定 AD FS 伺服器
+                  href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
+                - name: 階段 4 - 設定網路應用程式 Proxy
+                  href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
+                - name: 階段 5 - 設定同盟驗證
+                  href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
+            - name: Microsoft Azure 中的 SharePoint Server 2013 災害復原
+              href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
+    - name: 管理
+      items:
+        - name: 將授權指派給使用者帳戶
+          href: assign-licenses-to-user-accounts.md
+        - name: Microsoft 365 說明中心
+          href: 'https://docs.microsoft.com/office365/admin/admin-home'
+        - name: 管理使用者帳戶的工具
+          href: manage-microsoft-365-accounts.md
+        - name: 同時新增多個使用者
+          href: add-several-users-at-the-same-time.md
+        - name: 復原使用者信箱中刪除的郵件
+          href: recover-deleted-items-in-a-mailbox.md
+        - name: 目錄同步處理
+          items:
+            - name: 檢視目錄同步處理狀態
+              href: view-directory-synchronization-status.md
+            - name: 識別目錄同步處理錯誤
+              href: identify-directory-synchronization-errors.md
+            - name: 透過目錄同步處理修復問題
+              href: fix-problems-with-directory-synchronization.md
+            - name: 關閉目錄同步處理
+              href: turn-off-directory-synchronization.md
+- name: 客户端和伺服器軟體
+  items:
+    - name: 藍圖
+      href: client-server-software-roadmap-microsoft-365.md
+    - name: 方案
+      items:
+        - name: 規劃您的升級
+          href: plan-upgrade-previous-versions-office.md
+    - name: 部署
+      items:
+        - name: Office 2007
+          items:
+            - name: 從 Office 2007 伺服器與用戶端升級
+              href: upgrade-from-office-2007-servers-and-products.md
+            - name: Office 2007 電腦
+              href: 'https://docs.microsoft.com/DeployOffice/office-2007-end-support-roadmap'
+            - name: Exchange 2007
+              href: exchange-2007-end-of-support.md
+            - name: SharePoint 2007
+              href: sharepoint-2007-end-of-support.md
+            - name: Office Communications Server
+              href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+            - name: PerformancePoint Server 2007
+              href: pps-2007-end-of-support.md
+            - name: Project Server 2007
+              href: project-server-2007-end-of-support.md
+        - name: Office 2010
+          items:
+            - name: 從 Office 2010 伺服器與用戶端升級
+              href: upgrade-from-office-2010-servers-and-products.md
+            - name: Office 2010 電腦
+              href: 'https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap'
+            - name: Exchange 2010
+              href: exchange-2010-end-of-support.md
+            - name: SharePoint 2010
+              href: upgrade-from-sharepoint-2010.md
+            - name: Lync Server 2010
+              href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
+            - name: Project Server 2010
+              href: project-server-2010-end-of-support.md
+- name: 安全性與合規性
+  href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap'
+- name: 雲端服務
+  items:
+    - name: 藍圖
+      href: cloud-services-roadmap-microsoft-365.md
+    - name: 部署
+      items:
+        - name: 準備就緒
+          href: configure-services-and-applications.md
+        - name: Exchange Online
+          href: 'https://docs.microsoft.com/Exchange/exchange-online'
+        - name: SharePoint
+          href: 'https://docs.microsoft.com/sharepoint/sharepoint-online'
+        - name: 商務用 Skype
+          href: 'https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online'
+        - name: Microsoft Teams
+          href: 'https://docs.microsoft.com/MicrosoftTeams/Teams-overview'
+        - name: Yammer
+          href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
+        - name: 啟用權限管理
+          href: activate-rms-in-microsoft-365.md
+        - name: 設定釋出選項
+          href: 'https://support.office.com/article/365-3b3adfa4-1777-4ff0-b606-fb8732101f47'
+        - name: 訓練您的使用者
+          href: 'https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365#training-resources-for-your-users'
+    - name: 管理
+      items:
+        - name: 如何查看服務健全狀態
+          href: view-service-health.md
+        - name: 支援選項
+          href: 'https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b'
+        - name: Exchange Online
+          href: 'https://docs.microsoft.com/Exchange/exchange-online'
+        - name: SharePoint
+          href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
+        - name: 商務用 Skype
+          href: 'https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online'
+        - name: Microsoft Teams
+          href: 'https://docs.microsoft.com//MicrosoftTeams/quality-of-experience-review-guide'
+        - name: Yammer
+          href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
+        - name: 效能調整
+          items:
+            - name: 調整 Microsoft 365 效能
+              href: tune-microsoft-365-performance.md
+            - name: 使用基準與效能歷程記錄進行效能調整
+              href: performance-tuning-using-baselines-and-history.md
+            - name: 調整 Exchange Online 效能
+              href: tune-exchange-online-performance.md
+            - name: 調整 SharePoint Online 效能
+              href: tune-sharepoint-online-performance.md
+              items:
+                - name: SharePoint Online 效能調整簡介
+                  href: introduction-to-performance-tuning-for-sharepoint-online.md
+                - name: 診斷 SharePoint Online 的效能問題
+                  href: diagnosing-performance-issues-with-sharepoint-online.md
+            - name: 調整商務用 Skype Online 效能
+              href: tune-skype-for-business-online-performance.md
+            - name: 調整 Project Online 效能
+              href: 'https://docs.microsoft.com/ProjectOnline/tune-project-online-performance'
+            - name: 效能疑難排解規劃
+              href: performance-troubleshooting-plan.md
+- name: Windows 10
+  href: 'https://docs.microsoft.com/windows/deployment/'
+- name: 企業版 Microsoft 365 應用程式
+  href: 'https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps'
+- name: 部署和更新通道範例設定
+  items:
+    - name: 概觀
+      href: deploy-update-channels-examples.md
+    - name: 廣泛部署最新版本
+      href: deploy-update-channels-examples-rapid-deploy.md
+- name: 裝置管理
+  items:
+    - name: 藍圖
+      href: device-management-roadmap-microsoft-365.md
+- name: 使用 PowerShell 管理 Microsoft 365
+  href: manage-microsoft-365-with-microsoft-365-powershell.md
+  items:
+    - name: 快速入門
+      href: getting-started-with-microsoft-365-powershell.md
+      items:
+        - name: 為什麼您需要使用 PowerShell
+          href: why-you-need-to-use-microsoft-365-powershell.md
+        - name: 使用 PowerShell 連線至 Microsoft 365
+          href: connect-to-microsoft-365-powershell.md
+        - name: 在單一 Windows PowerShell 視窗中連線至所有 Microsoft 365 服務
+          href: connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md
+        - name: 使用 PowerShell 建立報告
+          href: use-windows-powershell-to-create-reports-in-microsoft-365.md
+        - name: Microsoft 365 服務的 Cmdlet 參考資料
+          href: cmdlet-references-for-microsoft-365-services.md
+        - name: PowerShell 社群資源
+          href: microsoft-365-powershell-community-resources.md
+    - name: 以 PowerShell 管理使用者帳戶、授權和群組
+      href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
+      items:
+        - name: 使用者帳戶
+          items:
+            - name: 建立
+              href: create-user-accounts-with-microsoft-365-powershell.md
+            - name: 檢視
+              href: view-user-accounts-with-microsoft-365-powershell.md
+            - name: 設定屬性
+              href: configure-user-account-properties-with-microsoft-365-powershell.md
+            - name: 指派角色
+              href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
+            - name: 刪除和還原
+              href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
+            - name: 封鎖
+              href: block-user-accounts-with-microsoft-365-powershell.md
+        - name: 授權與服務
+          items:
+            - name: 檢視
+              href: view-licenses-and-services-with-microsoft-365-powershell.md
+            - name: 檢視授權和未授權使用者
+              href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
+            - name: 將授權指派給使用者帳戶
+              href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
+            - name: 檢視帳戶授權與服務詳細資料
+              href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: 停用服務存取權
+              href: disable-access-to-services-with-microsoft-365-powershell.md
+              items:
+                - name: 停用 Sway 存取權
+                  href: disable-access-to-sway-with-microsoft-365-powershell.md
+                - name: 停用服務存取權，並指派使用者授權
+                  href: disable-access-to-services-while-assigning-user-licenses.md
+                - name: 從使用者帳戶移除授權
+                  href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
+        - name: 群組
+          items:
+            - name: 維護群組成員資格
+              href: maintain-group-membership-with-microsoft-365-powershell.md
+            - name: 管理 Microsoft 365 群組
+              href: manage-microsoft-365-groups-with-powershell.md
+    - name: 管理 SharePoint Online
+      href: manage-sharepoint-online-with-microsoft-365-powershell.md
+      items:
+        - name: 建立 SharePoint Online 網站並新增使用者
+          href: create-sharepoint-sites-and-add-users-with-powershell.md
+        - name: 管理 SharePoint Online 使用者和群組
+          href: manage-sharepoint-users-and-groups-with-powershell.md
+        - name: 管理 SharePoint Online 網站群組
+          href: manage-sharepoint-site-groups-with-powershell.md
+    - name: 管理 Exchange Online
+      href: 'https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell'
+    - name: 使用 PowerShell 將電子郵件移轉至 Microsoft 365
+      href: use-powershell-for-email-migration-to-microsoft-365.md
+      items:
+        - name: 使用 PowerShell 以完全移轉至 Microsoft 365
+          href: use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md
+        - name: 使用 PowerShell 以網際網路訊息存取通訊設定移轉至 Microsoft 365
+          href: use-powershell-to-perform-an-imap-migration-to-microsoft-365.md
+        - name: 使用 PowerShell 以階段移轉至 Microsoft 365
+          href: use-powershell-to-perform-a-staged-migration-to-microsoft-365.md
+    - name: 使用適用於委派存取合作夥伴的 Windows PowerShell 管理 Microsoft 365
+      href: manage-microsoft-365-with-windows-powershell-for-delegated-access-permissions-dap-p.md
+      items:
+        - name: 使用適用於委派存取合作夥伴的 Windows PowerShell 管理 Microsoft 365 租用戶
+          href: manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissio.md
+        - name: 利用適用於委派存取合作夥伴的 Windows PowerShell 新增用戶端租用網域
+          href: add-a-domain-to-a-client-tenancy-with-windows-powershell-for-delegated-access-pe.md
+        - name: 透過適用於委派存取合作夥伴的遠端 Windows PowerShell 連線至 Exchange Online
+          href: connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated.md
+        - name: 透過適用於委派存取合作夥伴的 Windows PowerShell 擷取客戶報告資料
+          href: retrieve-customer-tenant-reporting-data-with-windows-powershell-for-delegated-ac.md
+    - name: 管理 Microsoft Teams
+      href: 'https://docs.microsoft.com/microsoftteams/teams-powershell-install'
+    - name: 管理商務用 Skype Online
+      href: manage-skype-for-business-online-with-microsoft-365-powershell.md
+      items:
+        - name: 管理商務用 Skype Online 原則
+          href: manage-skype-for-business-online-policies-with-microsoft-365-powershell.md
+        - name: 指派每個使用者商務用 Skype Online 原則
+          href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
+    - name: 使用集中式部署 PowerShell 來管理增益集
+      href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
+- name: 測試實驗室指南
+  href: m365-enterprise-test-lab-guides.md
+  items:
+    - name: 基本設定
+      items:
+        - name: 輕量型
+          href: lightweight-base-configuration-microsoft-365-enterprise.md
+        - name: 模擬企業
+          href: simulated-ent-base-configuration-microsoft-365-enterprise.md
+    - name: 身分識別
+      items:
+        - name: 密碼雜湊同步處理
+          href: password-hash-sync-m365-ent-test-environment.md
+        - name: 傳遞驗證
+          href: pass-through-auth-m365-ent-test-environment.md
+        - name: 同盟驗證
+          href: federated-identity-for-your-microsoft-365-dev-test-environment.md
+        - name: Azure AD 無縫單一登入
+          href: single-sign-on-m365-ent-test-environment.md
+        - name: 多重要素驗證
+          href: multi-factor-authentication-microsoft-365-test-environment.md
+        - name: 保護全域系統管理員帳戶
+          href: protect-global-administrator-accounts-microsoft-365-test-environment.md
+        - name: 密碼回寫
+          href: password-writeback-m365-ent-test-environment.md
+        - name: 密碼重設
+          href: password-reset-m365-ent-test-environment.md
+        - name: 自動授權和群組成員資格
+          href: automate-licenses-group-membership-microsoft-365-test-environment.md
+        - name: Azure AD Identity Protection
+          href: azure-ad-identity-protection-microsoft-365-test-environment.md
+        - name: 身分識別與裝置存取
+          href: identity-device-access-m365-test-environment.md
+          items:
+            - name: 僅雲端
+              href: cloud-only-prereqs-m365-test-environment.md
+            - name: 密碼雜湊同步處理
+              href: phs-prereqs-m365-test-environment.md
+            - name: 傳遞驗證
+              href: pta-prereqs-m365-test-environment.md
+    - name: 行動裝置管理
+      items:
+        - name: 註冊 iOS 和 Android 裝置
+          href: enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md
+        - name: 裝置合規性原則
+          href: mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md
+    - name: 資訊保護
+      items:
+        - name: 增強的 Microsoft 365 安全性
+          href: increased-o365-security-microsoft-365-enterprise-dev-test-environment.md
+        - name: 資料分類
+          href: data-classification-microsoft-365-enterprise-dev-test-environment.md
+        - name: 特殊權限存取管理
+          href: privileged-access-microsoft-365-enterprise-dev-test-environment.md
+- name: Contoso 案例研究
+  href: contoso-case-study.md
+  items:
+    - name: 概觀
+      href: contoso-overview.md
+    - name: Contoso 的 IT 基礎結構與需求
+      href: contoso-infra-needs.md
+    - name: 網路功能
+      href: contoso-networking.md
+    - name: 身分識別
+      href: contoso-identity.md
+    - name: Windows 10 企業版
+      href: contoso-win10.md
+    - name: Microsoft 365 Apps 企業版
+      href: contoso-o365pp.md
+    - name: 行動裝置管理
+      href: contoso-mdm.md
+    - name: 資訊保護
+      href: contoso-info-protect.md
+    - name: 安全性摘要
+      href: contoso-security-summary.md
+- name: Microsoft 365 服務健全狀態
+  href: microsoft-365-service-health.md
 - name: Microsoft 365 合規性
   href: ../compliance/index.yml
 - name: Microsoft 365 安全性
   href: ../security/index.yml
+- name: Microsoft 365 架構與解決方案
+  href: ../solutions/index.yml
 - name: 企業商務持續性管理 (EBCM) 與雲端服務
   href: ebcm-understanding-ebcm-with-cloud-services.md
   items:
@@ -227,3 +704,5 @@
       href: ebcm-developing-your-ebcm-plan.md
     - name: 服務事件的緩解案例
       href: ebcm-microsoft-365-mitigations.md
+- name: 商務用 Microsoft 365
+  href: ../admin/index.yml
