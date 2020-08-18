@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 08/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,12 +16,12 @@ ms.collection:
 - remotework
 ms.custom: ''
 description: 設定安全性和基礎結構，讓您的員工隨時隨地都能遠端工作。
-ms.openlocfilehash: c8d56d3dd6e2c46db6ef1938dee8383b56e8966c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 62361126ad0b843fd909b98807eeb186f13e75bb
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522250"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778333"
 ---
 # <a name="configure-a-team-with-security-isolation-in-a-devtest-environment"></a>在開發/測試環境中為小組設定安全性隔離
 
@@ -33,15 +33,15 @@ ms.locfileid: "46522250"
   
 ## <a name="phase-1-build-out-your-microsoft-365-enterprise-test-environment"></a>階段 1：建置您的 Microsoft 365 企業版測試環境
 
-如果您只想要以最小的需求，透過輕量級方式測試敏感度和高敏感度小組，請依照[輕量型基本組態](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)中的指示進行。
+如果您只想要以最小的需求，透過輕量級方式測試敏感度和高敏感度小組，請依照[輕量型基本組態](../enterprise/lightweight-base-configuration-microsoft-365-enterprise.md)中的指示進行。
 
-如果您想要在模擬的企業中測試敏感度和高敏感度小組，請依照[密碼雜湊同步處理](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment)中的指示進行。
+如果您想要在模擬的企業中測試敏感度和高敏感度小組，請依照[密碼雜湊同步處理](../enterprise/password-hash-sync-m365-ent-test-environment.md)中的指示進行。
 
 >[!Note]
 >測試有安全性隔離的小組不需要模擬的企業測試環境，其中包括模擬的內部網路 (連線到網際網路) 與 Active Directory 網域服務 (AD DS) 樹系中的目錄同步處理。 其在這裡提供作為選項，讓您可以在代表典型組織的環境中測試和試驗有安全性隔離的小組。
 >
     
-## <a name="phase-2-create-and-configure-your-azure-active-directory-ad-group-and-users"></a>階段 2：建立和設定 Azure Active Directory (AD) 群組和使用者
+## <a name="phase-2-create-and-configure-your-azure-active-directory-azure-ad-group-and-users"></a>階段 2：建立和設定 Azure Active Directory ( Azure AD) 群組和使用者
 
 在這個階段中，您會為虛構組織建立和設定 Azure AD 群組和使用者。
   
@@ -77,7 +77,7 @@ ms.locfileid: "46522250"
     
 6. 關閉瀏覽器的 Azure 入口網站索引標籤。
     
-接下來，[與 Azure Active Directory PowerShell for Graph 模組連線](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+接下來，[與 Azure Active Directory PowerShell for Graph 模組連線](../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 填寫組織名稱、位置和一般密碼，然後從 PowerShell 命令提示字元或整合指令碼環境 (ISE) 執行下列命令，以建立新的使用者帳戶，並將這些帳戶新增至 C-Suite 群組：
   
@@ -115,7 +115,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 在此階段中，您要為資深領導人小組的成員建立並設定有安全性隔離的小組，以便合作處理公司策略。
 
-請先啟用敏感度標籤以保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容，然後再繼續進行[本文](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)中的步驟。
+請先啟用敏感度標籤以保護 Microsoft Teams、Office 365 群組和 SharePoint 網站中的內容，然後再繼續進行[本文](../compliance/sensitivity-labels-teams-groups-sites.md)中的步驟。
 
 接下來，建立小組：
 
@@ -126,9 +126,15 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 5. 在 [隱私權]**** 底下，按一下 [私人]****。
 6. 輸入**公司策略**，然後按一下 [建立]**** > [關閉]****。
 
+接下來，將私人頻道的建立限制為 [公司策略] 群組的擁有者。
+
+1. 在該團隊中，按一下 [更多選項]****，然後按一下 [管理團隊]****。
+2. 在 [設定]**** 索引標籤上展開 [成員權限]****。
+3. 清除 [允許成員建立私人頻道]**** 核取方塊。
+
 接下來，您必須使用下列設定來設定敏感度標籤：
 
-- 標籤的名稱是「公司策略」
+- 該名稱為 [公司策略]
 - 已啟用加密
 - 公司策略群組具有共同撰寫權限
 
@@ -199,10 +205,6 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 
 ![公司策略所隔離小組的設定](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config.png)
 
-小組中的檔案可以擁有公司策略群組成員所指派的公司策略敏感度標籤。 範例如下。
+## <a name="next-step"></a>下一步
 
-![套用了公司策略敏感度標籤的檔案範例](../media/team-security-isolation-dev-test/team-security-isolation-dev-test-config-example.png)
- 
-## <a name="next-step"></a>後續步驟
-
-當您準備好進行生產部署時，請參閱[為小組設定安全性隔離](secure-teams-security-isolation.md)以了解詳細的設定資訊。
+當您準備好進行部屬時，請參閱下列 [設定指示](secure-teams-security-isolation.md)。

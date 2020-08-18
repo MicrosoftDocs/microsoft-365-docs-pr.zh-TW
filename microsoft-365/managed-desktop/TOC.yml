@@ -28,8 +28,10 @@
           href: service-description/device-services.md
         - name: 裝置設定
           href: service-description/device-policies.md
-        - name: 安全性
+        - name: 安全性技術
           href: service-description/security.md
+        - name: 安全性作業
+          href: service-description/security-operations.md
         - name: 更新
           href: service-description/updates.md
         - name: 支援
