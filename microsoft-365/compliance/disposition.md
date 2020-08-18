@@ -16,18 +16,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 監視和管理內容處置，不論您使用的是處置檢查，還是會根據您設定的設定自動刪除內容。
-ms.openlocfilehash: 55b57891732f50eba09425fce4d2be34c94740f3
-ms.sourcegitcommit: fab425ea4580d1924fb421e6db233d135f5b7d19
+ms.openlocfilehash: 7548ab12b72aa75047caa373efe3e7c3eb7c5d31
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533820"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778533"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-使用 Microsoft 365 規範中心內的**記錄管理**中的 [**部署**] 索引標籤，管理處置檢查，並查看在保留期間結束時自動刪除的[記錄](records.md)。 
+使用 Microsoft 365 規範中心內的**記錄管理**中的 [**部署**] 索引標籤，管理處置檢查，並查看在保留期間結束時自動刪除的[記錄](records-management.md#records)。 
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>查看內容處置的必要條件
 
@@ -35,26 +35,26 @@ ms.locfileid: "46533820"
 
 ### <a name="permissions-for-disposition"></a>進行處置的許可權
 
-若要成功存取 Microsoft 365 規範中心的「**處置**」索引標籤，使用者必須具有「**處置管理**」角色和「 **View-Only 審核記錄**」角色。 雖然標準建議是將使用者新增至預設角色群組，在此情況下，建議您建立一個名為「**處置檢閱者**」的新角色群組，其具有這兩個角色，並視需要將使用者新增至此群組。 用於進行處理的單一角色群組可減少管理開銷，並可讓使用者更輕鬆地取得所需的組合許可權。
+若要成功存取 Microsoft 365 規範中心的「 **處置** 」索引標籤，使用者必須具有「 **處置管理** 」角色和「 **View-Only 審核記錄** 」角色。 雖然標準建議是將使用者新增至預設角色群組，在此情況下，建議您建立一個名為「 **處置檢閱者** 」的新角色群組，其具有這兩個角色，並視需要將使用者新增至此群組。 用於進行處理的單一角色群組可減少管理開銷，並可讓使用者更輕鬆地取得所需的組合許可權。
 
 > [!NOTE]
-> 即使全域管理員也必須授與**處置管理**角色。 因此，如果全域管理員需要存取「處置」索引標籤，則其為「**處置檢閱者**」角色群組的成員。 
+> 即使全域管理員也必須授與 **處置管理** 角色。 因此，如果全域管理員需要存取「處置」索引標籤，則其為「 **處置檢閱者** 」角色群組的成員。 
 
-特定于**View-Only 的審計記錄**角色：
+特定于 **View-Only 的審計記錄** 角色：
 
-- 因為用於搜尋審核記錄的基準指令程式是 Exchange Online Cmdlet，所以您必須使用[Exchange online 中的 exchange 系統管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)，而不是使用安全性 & 規範中心中的 [**許可權**] 頁面，指派此角色的使用者。 如需相關指示，請參閱[Manage role groups In Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+- 因為用於搜尋審核記錄的基準指令程式是 Exchange Online Cmdlet，所以您必須使用 [Exchange online 中的 exchange 系統管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)，而不是使用安全性 & 規範中心中的 [ **許可權** ] 頁面，指派此角色的使用者。 如需相關指示，請參閱 [Manage role groups In Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
 
-- 此角色不支援 Microsoft 365 群組（[先前稱為 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 請改為指派使用者信箱、郵件使用者或擁有郵件功能的安全性群組。
+- Microsoft 365 群組 ([先前的 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) 不支援此角色。 請改為指派使用者信箱、郵件使用者或擁有郵件功能的安全性群組。
 
-如需授與使用者**處置管理**角色及建立新的處理**檢閱者**角色的指示，請參閱[授與使用者存取 Office 365 安全性與 &amp; 合規性中心的許可權](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需授與使用者 **處置管理** 角色及建立新的處理 **檢閱者** 角色的指示，請參閱 [授與使用者存取 Office 365 安全性與 &amp; 合規性中心的許可權](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 ### <a name="enable-auditing"></a>啟用審核
 
-請確定已在第一次處理動作之前，至少啟用一天的審計。 如需詳細資訊，請參閱在[Office 365 安全性與 &amp; 合規性中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。 
+請確定已在第一次處理動作之前，至少啟用一天的審計。 如需詳細資訊，請參閱在 [Office 365 安全性與 &amp; 合規性中心搜尋審核記錄](search-the-audit-log-in-security-and-compliance.md)檔。 
 
 ## <a name="disposition-reviews"></a>處置檢閱
 
-當內容到達保留期間結束時，可能會有幾個原因會讓您複查內容，以決定是否可以安全地刪除（「已處置」）。 例如，您可能需要：
+當內容到達保留期間結束時，可能會有幾個原因會讓您檢查內容，以決定是否可以安全地刪除 ( 「已處置」 ) 。 例如，您可能需要：
   
 - 在訴訟或審計事件中，封存相關內容的刪除。
     
@@ -66,20 +66,20 @@ ms.locfileid: "46533820"
 
 在保留期間結束時，會觸發處置檢查：
   
-- 您選擇的人員會收到電子郵件通知，告知他們具有要審閱的內容。 這些檢閱者可以是個別使用者、發佈或安全性群組或 Microsoft 365 群組（[以前稱為 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。 請注意，每週會傳送通知。
+- 您選擇的人員會收到電子郵件通知，告知他們具有要審閱的內容。 這些檢閱者可以是個別的使用者、發佈或安全性群組，或 Microsoft 365 群組 ([先前的 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) 。 請注意，每週會傳送通知。
     
-- 檢閱者會移至 Microsoft 365 合規性中心的「**處置**」索引標籤，以查看內容，並決定是否要永久刪除、擴充保留期間或套用其他保留標籤。
+- 檢閱者會移至 Microsoft 365 合規性中心的「 **處置** 」索引標籤，以查看內容，並決定是否要永久刪除、擴充保留期間或套用其他保留標籤。
 
 處置評審可將內容包含在 Exchange 信箱、SharePoint 網站、OneDrive 帳戶和 Microsoft 365 群組中。 只有在檢閱者選擇永久刪除內容之後，才會刪除等候在這些位置中進行處置檢查的內容。
 
 > [!NOTE]
 > 信箱至少必須有 10 MB 的資料，才可支援處理審閱。
 
-您可以在 [**概覽**] 索引標籤中看到所有擱置的處理的概覽。例如：
+您可以在 [ **概覽** ] 索引標籤中看到所有擱置的處理的概覽。例如：
 
 ![記錄管理綜述中的擱置處置](../media/dispositions-overview.png)
 
-當您選取 [**查看所有擱置**中的處理] 時，就會移至 [**部署**] 頁面。 例如：
+當您選取 [ **查看所有擱置**中的處理] 時，就會移至 [ **部署** ] 頁面。 例如：
 
 ![Microsoft 365 規範中心的「處置」頁面](../media/disposition-tab.png)
 
@@ -90,18 +90,18 @@ ms.locfileid: "46533820"
   
 ![顯示處置運作方式之流程的圖表](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-在保留期間結束處置檢查時，只會有保留標籤的設定選項。 保留原則無法使用此選項。 如需這兩個保留解決方案的詳細資訊，請參閱[瞭解保留原則和保留標籤](retention.md)。
+在保留期間結束處置檢查時，只會有保留標籤的設定選項。 保留原則無法使用此選項。 如需這兩個保留解決方案的詳細資訊，請參閱 [瞭解保留原則和保留標籤](retention.md)。
   
 ![標籤的保留設定](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> 當您選取 [選項] 時，當**有可供查看的專案時通知**使用者，請指定使用者或擁有郵件功能的安全性群組。 此選項不支援 Microsoft 365 群組（[先前稱為 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)）。
+> 當您選取 [選項] 時，當 **有可供查看的專案時通知**使用者，請指定使用者或擁有郵件功能的安全性群組。 此選項不支援 Microsoft 365 群組 ([先前的 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) 。
 
 ### <a name="viewing-and-disposing-of-content"></a>內容的查看與處置
 
 當檢閱者透過電子郵件通知出內容可供審閱時，他們會從 Microsoft 365 規範中心的**記錄管理**移至 [**處置**] 索引標籤。 檢閱者可以查看每個保留標籤的專案數目等候處理，然後選取保留標籤以查看具有該標籤的所有內容。
 
-選取保留標籤之後，您就會看到 [**擱置的部署**] 索引標籤中該標籤的所有擱置的處理。選取一個或多個專案，您可以在其中選擇動作並輸入對齊批註：
+選取保留標籤之後，您就會看到 [ **擱置的部署** ] 索引標籤中該標籤的所有擱置的處理。選取一個或多個專案，您可以在其中選擇動作並輸入對齊批註：
 
 ![處置選項](../media/retention-disposition-options.png)
 
@@ -111,7 +111,7 @@ ms.locfileid: "46533820"
 - 延長保留期間
 - 套用其他保留標籤
 
-提供您具有位置和內容的許可權，您可以使用 [**位置**] 欄中的連結，以查看其原始位置中的檔。 在處置檢查期間，內容永遠不會從其原始位置移動，永遠不會刪除，除非檢閱者選擇這麼做。
+提供您具有位置和內容的許可權，您可以使用 [ **位置** ] 欄中的連結，以查看其原始位置中的檔。 在處置檢查期間，內容永遠不會從其原始位置移動，永遠不會刪除，除非檢閱者選擇這麼做。
 
 電子郵件通知會以每週為單位自動傳送給檢閱者。 此排定的程式表示當內容到達其保留期間結束時，最多可能需要7天的時間，檢閱者收到內容正等待處置的電子郵件通知。
   
@@ -119,7 +119,7 @@ ms.locfileid: "46533820"
   
 ### <a name="how-long-until-disposed-content-is-permanently-deleted"></a>永久刪除處置內容之前的時間
 
-只有在檢閱者選擇永久刪除內容之後，才會刪除等候進行處置檢查的內容。 當檢閱者選擇此選項時，SharePoint 網站或 OneDrive 帳戶中的內容，就會符合[保留設定如何使用內容就地運作](retention.md#how-retention-settings-work-with-content-in-place)所述的標準清理程式。
+只有在檢閱者選擇永久刪除內容之後，才會刪除等候進行處置檢查的內容。 當檢閱者選擇此選項時，SharePoint 網站或 OneDrive 帳戶中的內容，就會符合 [保留設定如何使用內容就地運作](retention.md#how-retention-settings-work-with-content-in-place)所述的標準清理程式。
 
 ## <a name="disposition-of-records"></a>記錄處置
 
@@ -132,14 +132,14 @@ ms.locfileid: "46533820"
 
 ![未進行處置評審的已處置專案](../media/records-disposed2.png)
 
-已釋放的 [**專案**] 索引標籤中的記錄標籤所顯示的專案，在專案被處置後，最多可保留7年，每筆記錄的每一筆記錄的限制為1000000個專案。 如果您看到的**計數**值接近此限制1000000，而您需要為記錄進行處置，請與[Microsoft 支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)人員聯繫。
+已釋放的 [ **專案** ] 索引標籤中的記錄標籤所顯示的專案，在專案被處置後，最多可保留7年，每筆記錄的每一筆記錄的限制為1000000個專案。 如果您看到的 **計數** 值接近此限制1000000，而您需要為記錄進行處置，請與 [Microsoft 支援](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)人員聯繫。
 
 > [!NOTE]
-> 這種功能是以[整合的審計記錄](search-the-audit-log-in-security-and-compliance.md)資訊為基礎，因此需要[啟用並](turn-audit-log-search-on-or-off.md)可搜尋審計，以便捕獲對應的事件。
+> 這種功能是以 [整合的審計記錄](search-the-audit-log-in-security-and-compliance.md) 資訊為基礎，因此需要 [啟用並](turn-audit-log-search-on-or-off.md) 可搜尋審計，以便捕獲對應的事件。
     
 ## <a name="filter-and-export-the-views"></a>篩選和匯出視圖
 
-當您從 [**處置**] 頁面中選取保留標籤時，[**擱置處理**] 索引標籤（如果適用）及 [已**釋放的專案**] 索引標籤可讓您篩選視圖，以協助您更輕鬆地找到專案。 
+當您從 [ **處置** ] 頁面中選取保留標籤時，[ **擱置的處理** ] 索引標籤 (（如果適用）) 和 [已 **釋放的專案** ] 索引標籤可讓您篩選視圖，以協助您更輕鬆找到 
 
 針對暫止的處理，時間範圍是以到期日為基礎。 若為已處置的專案，時間範圍會根據刪除日期。
   

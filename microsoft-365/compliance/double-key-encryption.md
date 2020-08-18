@@ -12,18 +12,18 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 0c66afa22c8712455a875bc8ca4ddcad1678e2e7
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: f36eeeb1f228bff48088cbbf3241d6866d0b3a21
+ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601996"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46794162"
 ---
 # <a name="double-key-encryption-dke"></a> (DKE) 雙機碼加密
 
 > *適用于： Microsoft 365 公開預覽的雙金鑰加密， [microsoft 365 合規性](https://www.microsoft.com/microsoft-365/business/compliance-management)， [Azure 資訊保護](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> *相關指示： [Azure 資訊保護統一標籤用戶端 For Windows](https://docs.microsoft.com/azure/information-protection/faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *相關指示： [Azure 資訊保護統一標籤用戶端 For Windows](https://docs.microsoft.com/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *服務說明： [Microsoft 365 合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
@@ -31,7 +31,7 @@ ms.locfileid: "46601996"
 
 雙金鑰加密可同時支援雲端和內部部署。 這些部署可協助確保在任何儲存受保護的資料時，加密的資料都保持不透明。
 
-如需預設的雲端型租使用者超級機碼的詳細資訊，請參閱[規劃及執行 Azure 資訊保護租使用者金鑰](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。
+如需預設的雲端型租使用者超級機碼的詳細資訊，請參閱 [規劃及執行 Azure 資訊保護租使用者金鑰](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。
 
 <!--
 The following video shows how Double Key Encryption works to secure your content.
@@ -41,15 +41,15 @@ The following video shows how Double Key Encryption works to secure your content
 
 如果您的組織有下列任何一個需求，您可以使用 DKE 來保護您的內容：
 
-- 您想要確保*只有您*在所有情況下都能解密受保護的內容。
+- 您想要確保 *只有您* 在所有情況下都能解密受保護的內容。
 - 您不想讓 Microsoft 自行存取受保護的資料。
 - 您有法規需求，可在地理界限內保留金鑰。 您在資料中心維護所有保留用於資料加密和解密的機碼。
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>DKE 的系統和授權需求
 
-與 Microsoft 365 E5 和 Office 365 E5 搭配使用，適用于 Microsoft 365 的雙金鑰加密。 如果您沒有 Microsoft 365 E5 授權，您可以註冊[試用版](https://aka.ms/M365E5ComplianceTrial)。 如需這些授權的相關資訊，請參閱[Microsoft 365 授權指南以取得安全性 & 合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+與 Microsoft 365 E5 和 Office 365 E5 搭配使用，適用于 Microsoft 365 的雙金鑰加密。 如果您沒有 Microsoft 365 E5 授權，您可以註冊 [試用版](https://aka.ms/M365E5ComplianceTrial)。 如需這些授權的相關資訊，請參閱 [Microsoft 365 授權指南以取得安全性 & 合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
-**Office 有問必答**若要使用公開預覽，您必須是 Office 預覽人員計畫的成員。 若要加入 Office 有問必答，請前往 [https://insider.office.com](https://insider.office.com) 。 一旦您是成員，請為您的組織選擇適當的部署方法，以準備您的環境以部署 Office 有問必答組建。 如需相關指示，請參閱[部署 Office 有問必答組建的快速入門](https://insider.office.com/business/deploy)。
+**Office 有問必答** 若要使用公開預覽，您必須是 Office 預覽人員計畫的成員。 若要加入 Office 有問必答，請前往 [https://insider.office.com](https://insider.office.com) 。 一旦您是成員，請為您的組織選擇適當的部署方法，以準備您的環境以部署 Office 有問必答組建。 如需相關指示，請參閱 [部署 Office 有問必答組建的快速入門](https://insider.office.com/business/deploy)。
 
 **Azure 資訊保護**。 DKE 與敏感度標籤搭配運作，需要 Azure 資訊保護。
 
@@ -71,7 +71,7 @@ The following video shows how Double Key Encryption works to secure your content
 
 本文和部署影片使用 Azure 作為 DKE 服務的部署目的地。 如果您要部署至其他位置，您必須提供您自己的值。
 
-觀賞[雙重金鑰加密部署影片](https://youtu.be/vDWfHN_kygg)，以查看文章中概念的逐步綜述。 影片大約需要18分鐘才能完成。
+觀賞 [雙重金鑰加密部署影片](https://youtu.be/vDWfHN_kygg) ，以查看文章中概念的逐步綜述。 影片大約需要18分鐘才能完成。
 
 您將遵循下列一般步驟為您的組織設定雙金鑰加密。
 
@@ -85,7 +85,7 @@ The following video shows how Double Key Encryption works to secure your content
 1. [註冊金鑰存放區](#register-your-key-store)
 1. [建立敏感度標籤](#create-labels-using-dke)
 
-完成後，您可以使用 DKE 加密檔和檔案。 如需詳細資訊，請參閱[將敏感度標籤套用至檔案和 Office 中的電子郵件](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。
+完成後，您可以使用 DKE 加密檔和檔案。 如需詳細資訊，請參閱 [將敏感度標籤套用至檔案和 Office 中的電子郵件](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)。
 
 ### <a name="install-software-prerequisites"></a>安裝軟體必要條件
 
@@ -98,7 +98,7 @@ The following video shows how Double Key Encryption works to secure your content
 
 在您想要安裝 DKE 服務的電腦上安裝這些必要條件。
 
-**.Net Core 3.1 SDK**。 從[下載 .Net Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)下載並安裝 SDK。
+**.Net Core 3.1 SDK**。 從 [下載 .Net Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1)下載並安裝 SDK。
 
 **Visual Studio 程式碼**。 從下載 Visual Studio 程式碼 [https://code.visualstudio.com/](https://code.visualstudio.com) 。 安裝之後，請執行 Visual Studio 程式碼並選取 [ **View** \> **extension**]。 安裝這些分機號碼。
 
@@ -106,7 +106,7 @@ The following video shows how Double Key Encryption works to secure your content
 
 - NuGet 套件管理員
 
-**Microsoft Office 有問必答**。 設定至少一個[部署方法](https://insider.office.com/business/deploy)。
+**Microsoft Office 有問必答**。 設定至少一個 [部署方法](https://insider.office.com/business/deploy)。
 
 **Git 資源**。 下載並安裝下列其中一個。
 
@@ -116,15 +116,15 @@ The following video shows how Double Key Encryption works to secure your content
 
 - [GitHub 企業版](https://github.com/enterprise)
 
-**OpenSSL**您必須安裝[OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) ，才可在部署 DKE 之後[產生測試機碼](#generate-test-keys)。 請確認您已從環境變數路徑正確呼叫它。 例如，如需詳細資訊，請參閱「將安裝目錄新增至路徑」 https://www.osradar.com/install-openssl-windows/ 。
+**OpenSSL** 您必須安裝 [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) ，才可在部署 DKE 之後 [產生測試機碼](#generate-test-keys) 。 請確認您已從環境變數路徑正確呼叫它。 例如，如需詳細資訊，請參閱「將安裝目錄新增至路徑」 https://www.osradar.com/install-openssl-windows/ 。
 
 #### <a name="double-key-encryption-prerequisites-for-client-computers"></a>用戶端電腦的雙金鑰加密必要條件
 
 在您要保護和使用受保護檔的每一部用戶端電腦上安裝這些必要條件。
 
-**Microsoft Office**版本12711或更新版本。
+**Microsoft Office** 版本12711或更新版本。
 
-**Azure 資訊保護統一標籤用戶端**版本2.7.93.0 或更新版本。 從[Microsoft](https://www.microsoft.com/download/details.aspx?id=53018)下載及安裝統一的標記用戶端。
+**Azure 資訊保護統一標籤用戶端** 版本2.7.93.0 或更新版本。 從 [Microsoft](https://www.microsoft.com/download/details.aspx?id=53018)下載及安裝統一的標記用戶端。
 
 ### <a name="clone-the-dke-github-repository"></a>複製 DKE GitHub 存放庫
 
@@ -132,34 +132,34 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
 下列指示適用于未經驗的 git 或 Visual Studio 程式碼使用者：
 
-1. 在您的瀏覽器中，移至：[https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)
+1. 在您的瀏覽器中，移至： [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)
 
-1. 在螢幕右側，選取 [程式**代碼**]。 您的 UI 版本可能會顯示 [**複製] 或 [下載**] 按鈕。 然後，在出現的下拉式清單中，選取複製圖示，將 URL 複製到您的剪貼簿。
+1. 在螢幕右側，選取 [程式 **代碼**]。 您的 UI 版本可能會顯示 [ **複製] 或 [下載** ] 按鈕。 然後，在出現的下拉式清單中，選取複製圖示，將 URL 複製到您的剪貼簿。
 
     例如：
 
    ![從 GitHub 複製 Double 金鑰加密服務存放庫](../media/dke-clone.png)
 
-3. 在 Visual Studio 程式碼中，選取 [ **View** \> **Command 調板**]，然後選取 [ **Git：複本**]。 若要跳到清單中的選項，請開始輸入 `git: clone` 以篩選項目，然後從下拉式清單中選取。 例如：
+3. 在 Visual Studio 程式碼中，選取 [ **View** \> **Command 調板** ]，然後選取 [ **Git：複本**]。 若要跳到清單中的選項，請開始輸入 `git: clone` 以篩選項目，然後從下拉式清單中選取。 例如：
 
    ![Visual Studio 程式碼 GIT：仿製選項](../media/dke-vscode-clone.png)
 
-4. 在文字方塊中，粘貼您從 Git 複製的 URL，並**從 GitHub**選取 [複製]。
+4. 在文字方塊中，粘貼您從 Git 複製的 URL，並 **從 GitHub**選取 [複製]。
 
-5. 在出現的 [**選取資料夾**] 對話方塊中，流覽至儲存存放庫的位置並加以選取。 在提示中，選取 [**開啟**]。
+5. 在出現的 [ **選取資料夾** ] 對話方塊中，流覽至儲存存放庫的位置並加以選取。 在提示中，選取 [ **開啟**]。
 
-    會在 Visual Studio 程式碼中開啟存放庫，並在左下方顯示目前的 Git 分支。 分支應為**master**。
+    會在 Visual Studio 程式碼中開啟存放庫，並在左下方顯示目前的 Git 分支。 分支應為 **master**。
 
     例如：
 
    ![Visual Studio 程式碼主分支](../media/dke-vscode-master.png)
 
-6. 選取 [word**主**圖形]，然後選取分支清單中的 [ **public_preview** ]。
+6. 選取 [word **主** 圖形]，然後選取分支清單中的 [ **public_preview** ]。
 
    > [!IMPORTANT]
    > 選取 [public_preview] 分支可確保您具有正確的檔案來建立專案。 如果您未選擇正確的分支，您的部署將會失敗。
 
-您現在已設定本機的 DKE 來源存放庫。 接下來，修改組織的[應用程式設定](#modify-application-settings)。
+您現在已設定本機的 DKE 來源存放庫。 接下來，修改組織的 [應用程式設定](#modify-application-settings) 。
 
 ### <a name="modify-application-settings"></a>修改應用程式設定
 
@@ -182,7 +182,7 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
 **使用電子郵件授權設定 DKE 的主要存取設定**
 
-1. 開啟檔案**上的appsettings.js** ，並找到 `AuthorizedEmailAddress` 設定。
+1. 開啟檔案 ** 上的appsettings.js** ，並找到 `AuthorizedEmailAddress` 設定。
 
 2. 新增您要授權的電子郵件地址。 使用雙引號和逗號來分隔多個電子郵件地址。 例如：
 
@@ -198,13 +198,13 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
 4. 找到 `AuthorizedRoles` 設定，並刪除整行。
 
-此影像顯示檔的**appsettings.js**的電子郵件授權格式設定正確。
+此影像顯示檔的 **appsettings.js** 的電子郵件授權格式設定正確。
 
    ![檔上顯示電子郵件授權方法的 appsettings.js](../media/dke-email-accesssetting.png)
 
 **使用角色授權設定 DKE 的主要存取設定**
 
-1. 開啟檔案**上的appsettings.js** ，並找到 `AuthorizedRoles` 設定。
+1. 開啟檔案 ** 上的appsettings.js** ，並找到 `AuthorizedRoles` 設定。
 
 2. 新增您要授權的 Active Directory 群組名稱。 使用雙引號和逗號來分隔多個組名。 例如：
 
@@ -220,19 +220,19 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
 4. 找到 `AuthorizedEmailAddress` 設定，並刪除整行。
 
-此影像顯示針對角色授權，正確設定檔案格式的**appsettings.js** 。
+此影像顯示針對角色授權，正確設定檔案格式的 **appsettings.js** 。
 
    ![檔顯示角色授權方法的 appsettings.js](../media/dke-role-accesssetting.png)
 
 #### <a name="tenant-and-key-settings"></a>租使用者和主要設定
 
-DKE 租使用者和 key settings 位於檔案中的**appsettings.js** 。
+DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
 
 **設定 DKE 的承租人和主要設定**
 
-1. 開啟檔**上的appsettings.js** 。
+1. 開啟檔 ** 上的appsettings.js** 。
 
-2. 找到 `ValidIssuers` 設定，並 `<tenantid>` 將其取代為您的租使用者識別碼。 您可以移至 Azure 入口網站並查看[租使用者屬性](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)，以找出您的租使用者識別碼。 例如：
+2. 找到 `ValidIssuers` 設定，並 `<tenantid>` 將其取代為您的租使用者識別碼。 您可以移至 Azure 入口網站並查看 [租使用者屬性](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)，以找出您的租使用者識別碼。 例如：
 
    ```json
    "ValidIssuers": [
@@ -245,12 +245,12 @@ DKE 租使用者和 key settings 位於檔案中的**appsettings.js** 。
 
 
   > [!IMPORTANT]
-  > 的值 `JwtAudience` 必須與您的主機名稱稱*完全*相符。 您可以在調試時使用**localhost： 5001** 。 不過，當您完成調試時，請務必將此值更新為伺服器的主機名稱。
+  > 的值 `JwtAudience` 必須與您的主機名稱稱 *完全*相符。 您可以在調試時使用 **localhost： 5001** 。 不過，當您完成調試時，請務必將此值更新為伺服器的主機名稱。
 
 - `TestKeys:Name`. 輸入機碼的名稱。 例如：`TestKey1`
-- `TestKeys:Id`. 建立 GUID 並輸入為 `TestKeys:ID` 值。 例如，`DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`。 您可以使用像是[線上 GUID 發生器](https://guidgenerator.com/)的網站，以隨機產生 GUID。
+- `TestKeys:Id`. 建立 GUID 並輸入為 `TestKeys:ID` 值。 例如，`DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`。 您可以使用像是 [線上 GUID 發生器](https://guidgenerator.com/) 的網站，以隨機產生 GUID。
 
-這個圖像會顯示**appsettings.js**中的承租人和機碼設定的正確格式。 `LDAPPath`設定角色授權。
+這個圖像會顯示 **appsettings.js**中的承租人和機碼設定的正確格式。 `LDAPPath` 設定角色授權。
 
 ![在檔案 appsettings.js中顯示 DKE 的正確租使用者和重要設定。](../media/dke-appsettingsjson-tenantkeysettings.png)
 
@@ -282,16 +282,16 @@ DKE 租使用者和 key settings 位於檔案中的**appsettings.js** 。
    openssl rsa -in key.pem -pubout > pubkeyonly.pem
    ```
 
-1. 在文字編輯器中，開啟**pubkeyonly**。 將**pubkeyonly**檔案中的所有內容（第一行及最後一列除外）複製到檔案中 `PublicPem` **appsettings.js**區段。
+1. 在文字編輯器中，開啟 **pubkeyonly**。 將 **pubkeyonly** 檔案中的所有內容（第一行及最後一列除外）複製到檔案中 `PublicPem` **appsettings.js** 區段。
 
-1. 在文字編輯器中，開啟**privkeynopass**。 將**privkeynopass**檔案中的所有內容（第一行及最後一列除外）複製到檔案中 `PrivatePem` **appsettings.js**區段。
+1. 在文字編輯器中，開啟 **privkeynopass**。 將 **privkeynopass** 檔案中的所有內容（第一行及最後一列除外）複製到檔案中 `PrivatePem` **appsettings.js** 區段。
 
 1. 移除及區段中的所有空格和分行符號 `PublicPem` `PrivatePem` 。
 
     > [!IMPORTANT]
     > 當您複製此內容時，請勿刪除任何 PEM 資料。
 
-1. 在 Visual Studio 程式碼中，流覽至**Startup.cs**檔案。 此檔案位於您在本機上複製的 DoubleKeyEncryptionService 存放庫中 DoubleKeyEncryptionService\src\customer-key-store\。
+1. 在 Visual Studio 程式碼中，流覽至 **Startup.cs** 檔案。 此檔案位於您在本機上複製的 DoubleKeyEncryptionService 存放庫中 DoubleKeyEncryptionService\src\customer-key-store\。
 
 2. 找到下列行：
 
@@ -313,21 +313,21 @@ DKE 租使用者和 key settings 位於檔案中的**appsettings.js** 。
 
    ![公開預覽的 startup.cs 檔案](../media/dke-startupcs-usetestkeys.png)
 
-現在您已經準備好[建立 DKE 專案](#build-the-project)。
+現在您已經準備好 [建立 DKE 專案](#build-the-project)。
 
 ### <a name="build-the-project"></a>建立專案
 
 使用下列指示在本機建立 DKE 專案：
 
-1. 在 Visual Studio 程式碼的 DKE 服務存放庫中，選取 [ **View** \> **Command 調板**]，然後在提示中輸入**build** 。
+1. 在 Visual Studio 程式碼的 DKE 服務存放庫中，選取 [ **View** \> **Command 調板** ]，然後在提示中輸入 **build** 。
 
-1. 從清單中選擇 [**任務：執行建立任務**]。
+1. 從清單中選擇 [ **任務：執行建立任務**]。
 
-   如果找不到任何建立工作，請選取 [**設定建立**工作] 並為 .net core 建立一個工作，如下所示。
+   如果找不到任何建立工作，請選取 [ **設定建立** 工作] 並為 .net core 建立一個工作，如下所示。
 
    ![設定 .NET 的遺失組建工作](../media/dke-configurebuildtask.png)
 
-   1. 選擇 [**從範本建立 tasks.js**]。
+   1. 選擇 [ **從範本建立 tasks.js**]。
 
    ![在 DKE 的檔案從範本建立 tasks.js](../media/dke-createtasksjsonfromtemplate.png)
 
@@ -335,7 +335,7 @@ DKE 租使用者和 key settings 位於檔案中的**appsettings.js** 。
 
    ![在 DKE 的檔案從範本建立 tasks.js](../media/dke-tasksjsontemplate.png)
 
-   3. 在 [建立] 區段中，找到 customerkeystore 之 **.csproj**檔案的路徑。 如果沒有的話，請新增下列一行：
+   3. 在 [建立] 區段中，找到 customerkeystore 之 **.csproj** 檔案的路徑。 如果沒有的話，請新增下列一行：
 
       ```json
       "${workspaceFolder}/src/customer-key-store/customerkeystore.csproj",
@@ -347,7 +347,7 @@ DKE 租使用者和 key settings 位於檔案中的**appsettings.js** 。
 
    如果有紅色錯誤，請檢查主控台輸出。 確定您已正確完成上述所有步驟，且有正確的版本。
 
-2. 選取 [**執行** \> **開始調試**] 以調試處理常式。 如果系統提示您選取環境，請選取 [ **.net core**]。
+2. 選取 [ **執行** \> **開始調試** ] 以調試處理常式。 如果系統提示您選取環境，請選取 [ **.net core**]。
 
 .Net 核心偵錯工具通常會啟動至 ' ' ' https://localhost:5001 `. To view your test key, go to ` https://localhost:5001 ，並附加正斜線 (/) 和您的金鑰名稱。 例如：
 
@@ -369,15 +369,15 @@ https://localhost:5001/TestKey1
 
 1. 選取您的訂閱和資源群組，然後定義您的實例詳細資料。
 
-    - 輸入您要安裝 DKE 服務之電腦的主機名稱。 請確定其名稱與[**appsettings.json**](#tenant-and-key-settings) file 中的 JwtAudience 設定所定義的名稱相同。 您為此名稱提供的值也是 WebAppInstanceName。
+    - 輸入您要安裝 DKE 服務之電腦的主機名稱。 請確定其名稱與 [**appsettings.json**](#tenant-and-key-settings) file 中的 JwtAudience 設定所定義的名稱相同。 您為此名稱提供的值也是 WebAppInstanceName。
 
-    - 在 [**發佈**]、[程式**代碼**] 及 [**執行時間堆疊**] 中，選取 [ **.net Core 3.1**]。
+    - 在 [ **發佈**]、[程式 **代碼**] 及 [ **執行時間堆疊**] 中，選取 [ **.net Core 3.1**]。
 
     例如：
 
    ![新增應用程式服務](../media/dke-azure-add-app-service.png)
 
-1. 在頁面底部，選取 [**複查 + 建立**]，然後選取 [**新增**]。
+1. 在頁面底部，選取 [ **複查 + 建立**]，然後選取 [ **新增**]。
 
 1. 執行下列其中一項作業，將您產生的機碼發佈到 Azure：
 
@@ -398,7 +398,7 @@ https://localhost:5001/TestKey1
 
     例如：https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
 
-1. 在金鑰存放區的基本代碼中，移至 [ **customer-key-store\src\customer-key-store** ] 資料夾，然後確認此資料夾包含**customerkeystore 的 .csproj**檔案。
+1. 在金鑰存放區的基本代碼中，移至 [ **customer-key-store\src\customer-key-store** ] 資料夾，然後確認此資料夾包含 **customerkeystore 的 .csproj** 檔案。
 
 1. 執行： **dotnet 發佈**
 
@@ -410,11 +410,11 @@ https://localhost:5001/TestKey1
 
 1. 將您建立的 .zip 檔案拖放至您在上面開啟的 ZipDeployUI 網站。 例如：https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
 
-已部署 DKE，您可以流覽至您建立的測試機碼。 繼續[驗證您的部署](#validate-your-deployment)。
+已部署 DKE，您可以流覽至您建立的測試機碼。 繼續 [驗證您的部署](#validate-your-deployment) 。
 
 #### <a name="publish-via-ftp"></a>透過 FTP 發佈
 
-1. 連線至您在[上述](#publish-the-key-store)建立的 App 服務。
+1. 連線至您在 [上述](#publish-the-key-store)建立的 App 服務。
 
     在您的瀏覽器中，移至： **Azure 入口**網站  >  **應用程式服務**  >  **部署中心**  >  **手動部署**  >  **FTP**  >  **儀表板**。
 
@@ -424,9 +424,9 @@ https://localhost:5001/TestKey1
 
    ![從 FTP 儀表板複製連接字串](../media/dke-ftp-dashboard.png)
 
-1. 在金鑰儲存的基本代碼中，移至**customer-key-store\src\customer-key-store 目錄**。
+1. 在金鑰儲存的基本代碼中，移至 **customer-key-store\src\customer-key-store 目錄**。
 
-1. 請確認此目錄包含**customerkeystore （.csproj** ）檔案。
+1. 請確認此目錄包含 **customerkeystore （.csproj** ）檔案。
 
 1. 執行： **dotnet 發佈**
 
@@ -438,7 +438,7 @@ https://localhost:5001/TestKey1
 
 1. 您可以從您的 FTP 用戶端，使用複製的連線資訊連線至應用程式服務。 將您在上一個步驟中建立的 .zip 檔案上傳至 Web 應用程式的根目錄。
 
-已部署 DKE，您可以流覽至您所建立的測試機碼。 接下來，[驗證您的部署](#validate-your-deployment)。
+已部署 DKE，您可以流覽至您所建立的測試機碼。 接下來， [驗證您的部署](#validate-your-deployment)。
 
 ### <a name="validate-your-deployment"></a>驗證您的部署
 
@@ -450,9 +450,9 @@ src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/mykey
 
 例如：
 
-key_store_tester.ps1https://mycustomerkeystore.com/mykey
+key_store_tester.ps1 https://mycustomerkeystore.com/mykey
 
-確定輸出中未顯示任何錯誤。 當您準備好時，請[註冊金鑰存放區](#register-your-key-store)。
+確定輸出中未顯示任何錯誤。 當您準備好時，請 [註冊金鑰存放區](#register-your-key-store)。
 
 ## <a name="register-your-key-store"></a>註冊金鑰存放區
 
@@ -460,71 +460,71 @@ key_store_tester.ps1https://mycustomerkeystore.com/mykey
 
 若要註冊金鑰存放區：
 
-1. 在您的瀏覽器中，開啟[Microsoft Azure 入口網站](https://ms.portal.azure.com/)，然後移至**所有服務**身分 \> **識別** \> **應用程式註冊**。
+1. 在您的瀏覽器中，開啟 [Microsoft Azure 入口網站](https://ms.portal.azure.com/)，然後移至 **所有服務**身分 \> **識別** \> **應用程式註冊**。
 
-2. 選取 [**新增註冊**]，然後輸入有意義的名稱。
+2. 選取 [ **新增註冊**]，然後輸入有意義的名稱。
 
 3. 從顯示的選項中選取帳戶類型。
 
-    如果您使用的是非自訂網域（例如**onmicrosoft.com**）的 Microsoft Azure，請選取 [**此組織目錄中的帳戶]，只 (僅限 Microsoft 單一租使用者) 。**
+    如果您使用的是非自訂網域（例如 **onmicrosoft.com**）的 Microsoft Azure，請選取 [ **此組織目錄中的帳戶]，只 (僅限 Microsoft 單一租使用者) 。**
 
     例如：
 
    ![新的應用程式註冊](../media/dke-app-registration.png)
 
-4. 在頁面底部，選取 [**註冊**] 以建立新的應用程式註冊。
+4. 在頁面底部，選取 [ **註冊** ] 以建立新的應用程式註冊。
 
-5. 在新的應用程式註冊的左窗格中，按一下 [**管理**] 下的 [**驗證**]。
+5. 在新的應用程式註冊的左窗格中，按一下 [ **管理**] 下的 [ **驗證**]。
 
-6. 選取 [**新增平臺**]。
+6. 選取 [ **新增平臺**]。
  
-7. 在 [**設定平臺**] 快顯功能表上，選取 [ **Web**]。
+7. 在 [ **設定平臺** ] 快顯功能表上，選取 [ **Web**]。
  
-8. 在 [重新**導向 URIs**] 底下，輸入您的雙金鑰加密服務 URI。 輸入應用程式服務 URL，包括主機名稱和網域。
+8. 在 [重新 **導向 URIs**] 底下，輸入您的雙金鑰加密服務 URI。 輸入應用程式服務 URL，包括主機名稱和網域。
 
     例如：https://mycustomerkeystoretest.com
 
     - 您輸入的 URL 必須符合部署金鑰存放區的主機名稱。
     - 如果您要在本機上使用 Visual Studio 進行測試，請使用 **https://localhost:5001** 。
-    - 在所有情況下，此配置必須是**HTTPs**。
+    - 在所有情況下，此配置必須是 **HTTPs**。
 
-    確定主機名稱完全符合您的應用程式服務主機名稱。 您可能已經將其變更為 `localhost` 疑難排解組建。 在**appsettings.js開啟**] 中，這個值是您為設定的主機名稱 `JwtAudience` 。
+    確定主機名稱完全符合您的應用程式服務主機名稱。 您可能已經將其變更為 `localhost` 疑難排解組建。 在 **appsettings.js開啟**] 中，這個值是您為設定的主機名稱 `JwtAudience` 。
 
-6. 在 **[隱含授**與] 底下，選取 [**識別碼標記**] 核取方塊。
+6. 在 **[隱含授**與] 底下，選取 [ **識別碼標記** ] 核取方塊。
 
 1. 選取 **[儲存]** 以儲存變更。
 
-7. 在左窗格中，選取 [**公開 API**]，然後選取 [應用程式識別碼 URI] 旁的 [**設定**]。
+7. 在左窗格中，選取 [ **公開 API**]，然後選取 [應用程式識別碼 URI] 旁的 [ **設定**]。
 
-9. 在 [**公開 API** ] 頁面上，選取 [**此 api**區域所定義的範圍] 中的 [**新增範圍**]。 在 [新增] 範圍中：
+9. 在 [ **公開 API** ] 頁面上，選取 [ **此 api** 區域所定義的範圍] 中的 [ **新增範圍**]。 在 [新增] 範圍中：
 
-    1. 將範圍名稱定義為**user_impersonation**。
+    1. 將範圍名稱定義為 **user_impersonation**。
 
     2. 選取可同意的系統管理員和使用者。
 
     3. 定義任何其他必要的值。
 
-    4. 選取 [**新增範圍]。**
+    4. 選取 [ **新增範圍]。**
 
-    選取頂端的 [**儲存**] 以儲存變更。
+    選取頂端的 [ **儲存** ] 以儲存變更。
 
-10. 仍在**公開 API**頁面上，選取 [**授權用戶端應用程式**] 區域中的 [**新增用戶端應用程式**]。
+10. 仍在 **公開 API** 頁面上，選取 [ **授權用戶端應用程式** ] 區域中的 [ **新增用戶端應用程式**]。
 
     在新的用戶端應用程式中：
 
-    1. 將用戶端識別碼定義為**d3590ed6-52b3-4102-aeff-aad2292ab01c**。 這個值是 Microsoft Office 用戶端識別碼，可讓 Office 取得金鑰存放區的存取權杖。
+    1. 將用戶端識別碼定義為 **d3590ed6-52b3-4102-aeff-aad2292ab01c**。 這個值是 Microsoft Office 用戶端識別碼，可讓 Office 取得金鑰存放區的存取權杖。
 
-    2. 在 [**授權範圍**] 底下，選取 [ **user_impersonation** ] 範圍。
+    2. 在 [ **授權範圍**] 底下，選取 [ **user_impersonation** ] 範圍。
 
-    3. 選取 [**新增應用程式**]。
+    3. 選取 [ **新增應用程式**]。
 
-    4. 選取頂端的 [**儲存**] 以儲存變更。
+    4. 選取頂端的 [ **儲存** ] 以儲存變更。
 
 您的 DKE 金鑰存放區現在已註冊。 [使用 DKE 建立標籤](#create-labels-using-dke)以繼續。
 
 ## <a name="create-labels-using-dke"></a>使用 DKE 建立標籤
 
-在 Microsoft 365 規範中心中，建立新的靈敏度標籤，並依照您的需要套用加密。 選取 [**使用雙重金鑰加密**]，然後輸入機碼的端點 URL。
+在 Microsoft 365 規範中心中，建立新的靈敏度標籤，並依照您的需要套用加密。 選取 [ **使用雙重金鑰加密** ]，然後輸入機碼的端點 URL。
 
 例如：
 
