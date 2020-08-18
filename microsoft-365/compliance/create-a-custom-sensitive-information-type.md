@@ -34,13 +34,13 @@ ms.locfileid: "46686657"
 - [使用 Exact Data Match (EDM) 建立自訂敏感性資訊類型](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 > [!NOTE]
-> Microsoft 365 資訊保護目前支援預覽版的雙位元組字元集語言：
+> Microsoft 365 資訊保護目前在預覽版中支援下列雙位元組字元集語言：
 > - 中文 (簡體)
 > - 中文 (繁體)
 > - 韓文
 > - 日文
 > 
->此預覽僅限商愛業雲端中，且僅限部署至：
+>此預覽僅限用於商業雲端中，且僅在下列國家/地區推出：
 > - 日本
 > - 韓國
 > - 中國
@@ -48,7 +48,7 @@ ms.locfileid: "46686657"
 > - 澳門特別行政區
 > - 台灣
 >
->這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱 [資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
+>這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
 
 ## <a name="before-you-begin"></a>在您開始之前
 

@@ -42,13 +42,13 @@ ms.locfileid: "46686557"
 以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日或每週重新整理，而且可以包含最多 1 億列資料。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以對原則使用以 EDM 為基礎的分類，例如 [資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或  [Microsoft Cloud App Security 檔案原則](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
 
 > [!NOTE]
-> Microsoft 365 資訊保護目前支援預覽版的雙位元組字元集語言：
+> Microsoft 365 資訊保護目前在預覽版中支援下列雙位元組字元集語言：
 > - 中文 (簡體)
 > - 中文 (繁體)
 > - 韓文
 > - 日文
 > 
->此預覽僅限商愛業雲端中，且僅限部署至：
+>此預覽僅限用於商業雲端中，且僅在下列國家/地區推出：
 > - 日本
 > - 韓國
 > - 中國
@@ -56,7 +56,7 @@ ms.locfileid: "46686557"
 > - 澳門特別行政區
 > - 台灣
 >
->這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱 [資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
+>這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 

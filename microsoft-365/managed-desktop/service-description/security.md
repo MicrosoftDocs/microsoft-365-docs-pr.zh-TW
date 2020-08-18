@@ -1,31 +1,34 @@
 ---
-title: Microsoft 受管理電腦中的安全性
+title: Microsoft 受管理電腦中的安全性技術
 description: ''
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
-ms.localizationpriority: normal
-ms.date: 09/24/2018
-ms.openlocfilehash: 8bfd71c4a143dee54ae006c8c54d711a8785480f
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
+ms.openlocfilehash: debd21a975ce209677bdd054952e31f34260e405
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470486"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778253"
 ---
-# <a name="security-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的安全性
+# <a name="security-technologies-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的安全性技術
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft 受管理的桌面使用數種 Microsoft 技術來協助保護受管理的裝置和資料。 特別是： 
+Microsoft 受管理的桌面使用數種 Microsoft 技術來協助保護受管理的裝置和資料。 此外，Microsoft 受管理的桌面安全性運作中心會使用各種 [處理](security-operations.md) 程式與這些技術。
 
+特別是： 
 
 - [裝置安全性](#device-security) – Microsoft 受管理桌面裝置上的安全性和保護
 - 身分[識別和存取管理](#identity-and-access-management)-透過 Azure Active Directory 身分識別服務管理裝置的安全使用
 - [網路安全性](#network-security) -VPN 資訊和 Microsoft 受管理的桌面建議方案和設定
 - [資訊安全性](#information-security) –選用的可用服務以進一步保護機密資訊 
 
-如需 Microsoft 管理的桌面所使用之資料儲存、使用方式及安全性作法的詳細資訊，請下載我們的白皮書 [https://aka.ms/mmd-data](https://aka.ms/mmd-data) 。
+如需 Microsoft Managed Desktop 所使用之資料儲存、使用方式及安全性作法的詳細資訊，請參閱白皮書，網址為 [https://aka.ms/mmd-data](https://aka.ms/mmd-data) 。
 
 
 ## <a name="device-security"></a>裝置安全性

@@ -27,16 +27,16 @@ ms.locfileid: "46686635"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
-資料外洩防護 (DLP) 可識別、監控及保護您的敏感性項目。 識別敏感性項目有時需要尋找關鍵字，特別是在識別一般內容 (例如醫療保健相關通訊)，或是不適當或偏激的語言。 雖然您可以在敏感性資訊類型中建立關鍵字清單，但關鍵字清單的大小有限，需要修改 XML 來建立或編輯。 關鍵字字典提供更簡單的關鍵字管理並具有更大的規模，每個字典最多可支持 100,000 個字詞。
+資料外洩防護 (DLP) 可識別、監視及保護您的敏感性項目。 識別敏感性項目有時需要尋找關鍵字，特別是在識別一般內容 (例如醫療保健相關通訊)，或是不適當或偏激的言語。 雖然您可以在敏感性資訊類型中建立關鍵字清單，但關鍵字清單的大小有限，且需要修改 XML 來建立或編輯。 關鍵字字典提供更簡單的關鍵字管理並具有更大的規模，每個字典最多可支持 100,000 個字詞。
   
 > [!NOTE]
-> Microsoft 365 資訊保護目前支援預覽版的雙位元組字元集語言：
+> Microsoft 365 資訊保護目前在預覽版中支援下列雙位元組字元集語言：
 > - 中文 (簡體)
 > - 中文 (繁體)
 > - 韓文
 > - 日文
 > 
->此預覽僅限商愛業雲端中，且僅限部署至：
+>此預覽僅限用於商業雲端中，且僅在下列國家/地區推出：
 > - 日本
 > - 韓國
 > - 中國
@@ -44,13 +44,13 @@ ms.locfileid: "46686635"
 > - 澳門特別行政區
 > - 台灣
 >
->這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱 [資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
+>這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
 
 ## <a name="basic-steps-to-creating-a-keyword-dictionary"></a>建立關鍵字字典的基本步驟
 
 字典的關鍵字可以來自各種來源，最常來自在服務中或是透過 PowerShell Cmdlet 匯入的檔案 (例如 .csv 或 .txt 清單)、來自您直接在 PowerShell Cmdlet 中輸入的清單，或來自現有的字典。當建立關鍵字字典時，您會依照相同的核心步驟：
   
-1. 使用 **安全性與合規性中心** ([https://protection.office.com](https://protection.office.com)) 或連線到 **安全性 &amp; 合規性中心 PowerShell**。
+1. 使用**安全性與合規性中心** ([https://protection.office.com](https://protection.office.com)) 或連線到**安全性與合規性中心 PowerShell**。
     
 2. **從預期的來源定義或載入關鍵字**。 精靈和 Cmdlet 都會接受以逗點分隔的關鍵字清單，用來建立自訂關鍵字字典，因此這個步驟會根據您的關鍵字來自何處而略有不同。 一旦載入，就會將它們編碼並轉換為位元組陣列，然後再匯入它們。
     
@@ -86,7 +86,7 @@ ms.locfileid: "46686635"
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 從檔案建立關鍵字字典
 
-當您需要建立大型字典時，通常會使用來自檔案或從其他來源匯出清單中的關鍵字。 在此情況下，您會建立一個關鍵字字典，其中包含要在外部電子郵件中過濾的不適當語言清單。 首先，[連線到安全性 &amp; 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+當您需要建立大型字典時，通常會使用來自檔案或從其他來源匯出清單中的關鍵字。 在此情況下，您會建立一個關鍵字字典，其中包含要在外部電子郵件中過濾的不適當言語清單。 [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
   
 1. 將關鍵字複製到文字檔案，並確定每個關鍵字位於個別行。
     
@@ -199,7 +199,7 @@ PS> Set-DlpKeywordDictionary -Identity "Diseases" -FileData (Get-Content -Path "
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>使用自訂敏感資訊類型和 DLP 原則中的關鍵字字典
 
-關鍵字字典可做為自訂敏感性資訊類型的符合需求一部分，或做為敏感性資訊類型本身。 兩者都需要您建立 [自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。 按照連結文章中的指示建立敏感性資訊類型。 當您有 XML 之後，就需要字典的 GUID 識別碼來使用它。
+關鍵字字典可做為自訂敏感性資訊類型的符合需求一部分，或做為敏感性資訊類型本身。 兩者都需要您建立[自訂敏感性資訊類型](create-a-custom-sensitive-information-type-in-scc-powershell.md)。 按照連結文章中的指示建立敏感性資訊類型。 當您有 XML 之後，就需要字典的 GUID 識別碼來使用它。
   
 ```xml
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">

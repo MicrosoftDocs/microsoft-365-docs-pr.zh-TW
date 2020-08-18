@@ -23,32 +23,31 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何在設定 Microsoft 365 商務版 Premium 之後保護 Windows 10 電腦。
-ms.openlocfilehash: f18447db445bf051a44b99053d41e10f3ed34fc3
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: a70fcd330fe6ef330fac08512aded4d8913313d5
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785793"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778377"
 ---
 # <a name="secure-windows-10-computers"></a>保護 Windows 10 電腦
 
 本文適用于 Microsoft 365 商務版 Premium。
 
 [設定](set-up.md)Microsoft 365 商務版 Premium 後，就可以保護組織中的 Windows 10 電腦免受盜竊，以及惡意威脅（如病毒和惡意程式碼）。
-觀賞這段影片，瞭解如何設定原則來保護您的 Windows 10 電腦。<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF] 
-
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="to-secure-your-windows-10-pcs"></a>保護您的 Windows 10 電腦
 
-1. 使用您的全域系統管理員認證登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。 
-2. 在左導覽上，選取 [**安裝**]，然後在 [登**入和安全性**] 下，選擇 [**保護您的 Windows 10 電腦**]。 選擇 [View] （**查看**）立即開始。
-3. 在 [**安全您的 Windows 10 電腦**] 頁面上，閱讀所有資訊以瞭解您正在開啟的專案，以及使用者影響的程度。
+1. 使用您的全域系統管理員認證登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com)。 
+2. 在左導覽上，選取 [ **安裝** ]，然後在 [登 **入和安全性**] 下，選擇 [ **保護您的 Windows 10 電腦**]。 選擇 [View] （ **查看** ）立即開始。
+3. 在 [ **安全您的 Windows 10 電腦** ] 頁面上，閱讀所有資訊以瞭解您正在開啟的專案，以及使用者影響的程度。
 
-    在頁面頂端，選擇 [**開始**]。
+    在頁面頂端，選擇 [ **開始**]。
 
-4. 在 [Windows 10] 設定上，選取您要開啟的選項。 如需這些設定的詳細資訊，請參閱[Secure Windows 10 裝置](secure-windows-10-devices.md)。 
-5. 選擇要將原則套用至組織中的人員，然後選擇 [**儲存變更**]。
+4. 在 [ **保護您的 Windows 10 電腦** ] 窗格上，選取您要開啟的選項。 如需這些設定的詳細資訊，請參閱 [Secure Windows 10 裝置](secure-windows-10-devices.md)。 
+    
+    對大多數的組織而言，此處的選項可提供良好的安全性，不過，如果您的組織有更複雜的安全性需求，您也可以使用預先定義的安全性基準來保護您的 Windows 10 裝置。 如需詳細資訊，請參閱 [Windows 10 裝置的安全性基準](https://docs.microsoft.com/mem/intune/protect/security-baselines)。   
 
+1. 選擇 [套用 **設定**]。
+
+    這些設定會套用至組織中的所有使用者。 若要設定不同安全性群組的不同原則，請參閱 [設定 Windows 10 電腦的裝置保護設定](protection-settings-for-windows-10-pcs.md)。

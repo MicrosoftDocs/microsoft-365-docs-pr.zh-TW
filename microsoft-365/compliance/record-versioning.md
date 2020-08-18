@@ -16,7 +16,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 了解可協助您在 Microsoft 365 中實施記錄管理解決方案的記錄。
+description: 了解可協助您在 Microsoft 365 中實作記錄管理解決方案的記錄。
 ms.openlocfilehash: 943bf3949ab57eb4603695495d7a8ca0c4b90db7
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: HT
@@ -26,13 +26,13 @@ ms.locfileid: "46695237"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用記錄版本設定來更新儲存在 SharePoint 或 OneDrive 中的記錄
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)*
 
-將文件標示為 [記錄](records.md) 的功能，以及限制可對記錄執行的動作，是任何記錄管理解決方案的重要目標。 不過，可能也會需要共同作業，讓人員建立後續的版本。
+將文件標示為[記錄](records.md)的功能，以及限制可對記錄執行的動作，是任何記錄管理解決方案的重要目標。 不過，可能也會需要共同作業，讓人員建立後續的版本。
 
 例如，您將銷售合約標示為記錄，但是之後需要使用新的條款來更新合約，並將最新的版本標示為新記錄，同時保留前一份記錄版本。 針對這些類型的案例，SharePoint 和 OneDrive 支援*記錄版本設定*。 OneNote 筆記本資料夾不支援記錄版本設定。
 
-若要使用記錄版本設定，請先 [為文件加上標籤並將它標示為記錄](declare-records.md)。 此時，保留標籤旁會顯示名為 [記錄狀態]** 的文件內容，而初始記錄狀態會是 [鎖定]****。 
+若要使用記錄版本設定，請先[為文件加上標籤並將它標示為記錄](declare-records.md)。 此時，保留標籤旁會顯示名為 [記錄狀態]** 的文件內容，而初始記錄狀態會是 [鎖定]****。 
 
 您現在可以執行下列動作：
 
@@ -103,6 +103,6 @@ ms.locfileid: "46695237"
 
 ## <a name="next-steps"></a>後續步驟
 
-若要將內容標示為記錄，請參閱 [使用保留標籤宣告記錄](declare-records.md)。
+若要將內容標示為記錄，請參閱[使用保留標籤宣告記錄](declare-records.md)。
 
 若要了解記錄的處置，請參閱[內容處置](disposition.md)。
