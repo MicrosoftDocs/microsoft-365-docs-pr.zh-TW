@@ -30,7 +30,15 @@
               href: microsoft-365-ip-web-service.md
             - name: 未包含在 Web 服務中的其他端點
               href: additional-office365-ip-addresses-and-urls.md
-        - name: 在 SharePoint Online 中使用 Office 365 CDN
+            - name: Office 365 GCC High 和 DOD 的額外網路安全性需求
+              href: additional-network-security-requirements-for-office-365-gcchigh-and-dod.md
+            - name: Office 365 DoD 的 DNS 記錄
+              href: dns-records-for-office-365-dod.md
+            - name: Office 365 GCC High 的 DNS 記錄
+              href: dns-records-for-office-365-gcc-high.md
+        - name: 內容傳遞網路 (CDN) 快速入門
+          href: office-365-cdn-quickstart.md
+        - name: 在 SharePoint Online 中使用 CDN
           href: use-microsoft-365-cdn-with-spo.md
         - name: 將遠端使用者的連線能力最佳化
           items:
@@ -45,6 +53,8 @@
         - name: Office 365 的 ExpressRoute
           href: azure-expressroute.md
           items:
+            - name: 實作 ExpressRoute
+              href: implementing-expressroute.md
             - name: 使用 Office 365 的 ExpressRoute 進行路由傳送
               href: routing-with-expressroute.md
     - name: 管理
@@ -53,6 +63,8 @@
           items:
             - name: Microsoft 365 端點
               href: microsoft-365-endpoints.md
+            - name: 管理 Office 365 端點
+              href: managing-office-365-endpoints.md
             - name: 全球端點
               href: urls-and-ip-address-ranges.md
             - name: 美國政府 DoD 端點
@@ -395,6 +407,8 @@
   items:
     - name: 藍圖
       href: client-server-software-roadmap-microsoft-365.md
+    - name: 適用於 SharePoint、Exchange、商務用 Skype 和 Lync 的架構模型
+      href: architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md
     - name: 方案
       items:
         - name: 規劃您的升級
