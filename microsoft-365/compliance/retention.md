@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: b0ce412609ac9c7084c1c598a327cde7c055c101
-ms.sourcegitcommit: 919b5d0f33b41b4beaca5fbb06e1c75d65027b7e
+ms.openlocfilehash: ed8390b9c773e04723c0f409eb9649e20af0dac3
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "46757566"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778397"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 
@@ -89,7 +89,7 @@ ms.locfileid: "46757566"
 
 - 支援[處置檢閱](disposition-reviews.md) 以在內容永久刪除之前檢閱。
 
-- 將內容標示為做為標籤設定一部分的[記錄](records.md)，並且在保留期間結束而刪除內容時，永遠都有 [處置證明](disposition.md#disposition-of-records) 。
+- 將內容標示為做為標籤設定一部分的[記錄](records-management.md#records)，並且在保留期間結束而刪除內容時，永遠都有 [處置證明](disposition.md#disposition-of-records) 。
 
 ### <a name="retention-policies"></a>保留原則
 
@@ -166,7 +166,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
 
 - **將預設保留標籤套用至 SharePoint 中的文件庫、資料夾或文件集**，以便儲存在該位置中的所有文件都繼承預設保留標籤。
 
-此外，保留標籤支援跨 Microsoft 365 應用程式和服務的電子郵件和文件[記錄管理](records-management.md)。 您可以使用保留標籤將內容分類為記錄。 發生此情況且內容仍保留在 Microsoft 365 中時，標籤會針對法規原因可能所需的內容施加進一步的限制。 如需詳細資訊，包括允許或封鎖動作的比較，請參閱[了解記錄](records.md)。
+此外，保留標籤支援跨 Microsoft 365 應用程式和服務的電子郵件和文件[記錄管理](records-management.md)。 您可以使用保留標籤將內容分類為記錄。 發生此情況且內容仍保留在 Microsoft 365 中時，標籤會針對法規原因可能所需的內容施加進一步的限制。 如需詳細資訊，請參閱 [比較允許或封鎖動作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。
 
 與[敏感度標籤](sensitivity-labels.md)不同，如果內容是移至 Microsoft 365 以外的位置，保留標籤不會保留。
 
