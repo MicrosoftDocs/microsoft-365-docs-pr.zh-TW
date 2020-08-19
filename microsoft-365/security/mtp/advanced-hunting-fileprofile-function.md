@@ -1,6 +1,6 @@
 ---
-title: Microsoft 威脅防護的高級搜尋中的 FileProfile （）函數
-description: 瞭解如何使用 FileProfile （）濃縮您的高級搜尋查詢結果中檔案的相關資訊
+title: 'FileProfile Microsoft 威脅防護的高級搜尋中的 ( # A1 函數'
+description: '瞭解如何使用 FileProfile ( # A1，以濃縮您的高級搜尋查詢結果中檔案的相關資訊。'
 keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema reference，kusto，FileProfile，file profile，function，豐富
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6465821ff1b8e8ea23cc5cf6b205f65a483bbe82
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: d0fd359bb6f56f7c20b0a39b7fd45ec551e7e49e
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204944"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797779"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -41,14 +41,14 @@ ms.locfileid: "45204944"
 | GlobalFirstSeen | datetime | Microsoft 全球第一次觀測實體的日期和時間 |
 | GlobalLastSeen | datetime | Microsoft 全球最後觀測實體的日期和時間 |
 | 簽名 | string | 檔案的簽署者相關資訊 |
-| 發行者 | string | 發證憑證授權單位（CA）的相關資訊 |
+| 發行者 | string | 發證憑證授權 (CA 的相關資訊)  |
 | SignerHash | string | 識別簽署者的唯一雜湊值 |
 | IsCertificateValid | 布林值 | 用於簽署檔的憑證是否有效 |
 | IsRootSignerMicrosoft | 布林值 | 會指出根憑證的簽署者是否為 Microsoft |
-| IsExecutable | 布林值 | 檔是否為可遷移的可執行檔（PE）檔案 |
+| IsExecutable | 布林值 | 檔案是否為可遷移的可執行檔 (PE) file |
 | ThreatName | string | 找到的任何惡意程式碼或其他威脅的偵測名稱 |
 | Publisher | string | 發佈檔的組織名稱 |
-| SoftwareName | string | 軟體產品名稱 |
+| SoftwareName | 字串 | 軟體產品名稱 |
 
 ## <a name="syntax"></a>語法
 
@@ -87,3 +87,4 @@ DeviceFileEvents
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
+- [取得更多查詢範例](advanced-hunting-shared-queries.md)

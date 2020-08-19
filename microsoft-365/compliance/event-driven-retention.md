@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常為記錄管理解決方案的一部分，您可以設定保留標籤，以根據您發現的事件來啟動保留期間。
-ms.openlocfilehash: 03f8446d54d905665f5bf33c2f581a869dfc478e
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 7286e65be2313f5716bfc59399c1755cadb9f6d6
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560530"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778523"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>事件發生時，開始保留
 
@@ -43,7 +43,7 @@ ms.locfileid: "46560530"
     
 事件導向保留通常作為記錄管理處理程序的一部分。這表示：
   
-- 根據事件的標籤通常也會將內容分類為記錄。 如需詳細資訊，請參閱[了解記錄](records.md)。
+- 依事件標示的標籤通常也會將其內容分類成一個資料列，為記錄管理解決方案的其中一部分。 如需詳細資訊，請參閱[了解記錄管理](records-management.md)。
 
 - 已分類為記錄但是其事件觸發程序尚未發生的文件，會無限期保留 (記錄無法永久刪除)，直到事件觸發該文件的保留期間。
     

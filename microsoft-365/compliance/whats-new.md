@@ -1,5 +1,5 @@
 ---
-title: 合規性中心的新功能
+title: Microsoft 365 規範的新功能
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -16,22 +16,26 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: 我們不斷將新功能新增至 Microsoft 365 規範中心。 請找出我們所學的月份。
+description: 若要將新的解決方案新增至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 77ba6f0926a1826fe6c946ff4f8c05cf913c57ed
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 9bccaab4c1dd1ac8b4676939d848c0f1a599d86b
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560260"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798168"
 ---
-# <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Microsoft 365 規範中心的新功能
+# <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 規範的新功能
 
-我們不斷將新功能新增至[Microsoft 365 規範中心](microsoft-365-compliance-center.md)，以修正我們所學的問題，並根據您的意見反應進行變更。 請參閱下列內容，以查看今天可提供的功能。 有些功能會以不同的速度向客戶推出。 如果您還沒有看到功能，請嘗試將您新增至[目標版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)。
+是否要將新的解決方案加入至 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)、根據您的意見來更新現有的功能，或推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請參閱下列內容，以查看目前的 Microsoft 365 合規性的新功能。 
+
+> [!NOTE]
+> 有些規範功能會以不同的速度向客戶推出。 如果您還沒有看到功能，請嘗試將您新增至 [目標版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)。
+
 
 > [!TIP]
-> 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br><br>
-請造訪[microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap)，以瞭解已啟動、已開發、已取消或先前發佈的 microsoft 365 功能。
+> 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 威脅防護的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
+請造訪 [microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，以瞭解已啟動、已開發、已取消或先前發佈的 microsoft 365 功能。
 
 ## <a name="june-2020"></a>2020 年 6 月
 
@@ -44,9 +48,9 @@ ms.locfileid: "46560260"
 
 ### <a name="compliance-score--compliance-manager-the-hits-keep-coming"></a>合規性管理員 & 合規性分數：不斷進行的點擊
 
-六月更新包含[合規性分數](compliance-score.md)中的新評估向外視圖。 監視控制項進度、新增、刪除評估與符合性分數的直接，等等。
+六月更新包含 [合規性分數](compliance-score.md)中的新評估向外視圖。 監視控制項進度、新增、刪除評估與符合性分數的直接，等等。
 
-想要掌握相容性分數和合規性管理員的更新的最新資訊嗎？ 將[合規性分數](compliance-score-release-notes.md)的書簽做成版本資訊，並且經常回來查看。
+想要掌握相容性分數和合規性管理員的更新的最新資訊嗎？ 將 [合規性分數](compliance-score-release-notes.md) 的書簽做成版本資訊，並且經常回來查看。
 
 ## <a name="may-2020"></a>2020 年 5 月
 
@@ -67,7 +71,7 @@ ms.locfileid: "46560260"
 
 ### <a name="communication-compliance-yammer-support-is-here"></a>通訊相容性：在這裡提供 Yammer 支援
 
-通訊相容性原則支援 Yammer 中的私人郵件和公用社區交談。 Yammer 是選用的通道，必須是[原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，以支援郵件和附件的掃描。
+通訊相容性原則支援 Yammer 中的私人郵件和公用社區交談。 Yammer 是選用的通道，必須是 [原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) ，以支援郵件和附件的掃描。
 
 ### <a name="data-loss-prevention-new-sharing-restriction"></a>資料遺失防護：新的共用限制
 
@@ -75,7 +79,7 @@ ms.locfileid: "46560260"
 
 ### <a name="insider-risk-management-tailor-your-alert-volume"></a>有問必答風險管理：定制您的警示數量
 
-擁有者風險原則所偵測到的使用者活動，會被指派特定風險分數，進而決定警示嚴重性 (低、中、高) 。 根據預設，Microsoft 365 會產生一定數量的低、中和高嚴重性警示，但在新增[警示磁片區設定](insider-risk-management-settings.md#alert-volume)時，您可以增加或減少音量以符合您的需求。
+擁有者風險原則所偵測到的使用者活動，會被指派特定風險分數，進而決定警示嚴重性 (低、中、高) 。 根據預設，Microsoft 365 會產生一定數量的低、中和高嚴重性警示，但在新增 [警示磁片區設定](insider-risk-management-settings.md#alert-volume)時，您可以增加或減少音量以符合您的需求。
 
 ### <a name="pst-import-new-region-supported"></a>PST 匯入：支援的新地區
 
@@ -83,7 +87,7 @@ ms.locfileid: "46560260"
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>敏感度標籤：新增隱私權選項
 
-設定標籤的[網站和群組設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings)時，您現在可以設定隱私權選項為**None-讓使用者選擇誰可以存取網站**。 當您想要使用敏感度標籤保護容器中的內容，但仍可讓使用者自行設定隱私權設定時，這會很有用。
+設定標籤的 [網站和群組設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) 時，您現在可以設定隱私權選項為 **None-讓使用者選擇誰可以存取網站**。 當您想要使用敏感度標籤保護容器中的內容，但仍可讓使用者自行設定隱私權設定時，這會很有用。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -92,7 +96,7 @@ ms.locfileid: "46560260"
 四月包含對我們記錄管理解決方案的一些重要更新：
 
 - 「記錄管理」區段現在已完全可用於規範中心。 利用更新的使用者介面和功能，以供檔案計畫、保留標籤及標籤原則、事件及處置之用。
-- 在談話中，我們也會在 SharePoint 和 OneDrive 中，針對記錄進行[處置證明](disposition.md#disposition-of-records)。 您現在可以查看已自動或在處置檢查後處置之位置中的專案清單。
+- 在談話中，我們也會在 SharePoint 和 OneDrive 中，針對記錄進行 [處置證明](disposition.md#disposition-of-records) 。 您現在可以查看已自動或在處置檢查後處置之位置中的專案清單。
 
 :::image type="content" source="../media/mcc-records-management-page.png" alt-text="Microsoft 365 規範中心內的記錄管理區段":::
 
@@ -100,13 +104,13 @@ ms.locfileid: "46560260"
 
 透過自動標籤原則，您現在可以將敏感度標籤自動套用至 SharePoint，並將已儲存的 OneDrive 檔 (稱為「靜止的資料」) ，以及已傳送或接收的電子郵件 (（也稱為「傳輸中的電子郵件 ) ）。 因為此標籤是由服務所套用，而不是依應用程式來套用，所以您不需要擔心使用者有哪些應用程式和版本。
 
-當您建立靈敏度標籤時，這項功能會延伸已包含「Office app ' 的自動貼上功能設定的現有用戶端標籤。 若要深入瞭解這兩種自動標記選項的差異和優點，請參閱[更新後的文章](apply-sensitivity-label-automatically.md)。
+當您建立靈敏度標籤時，這項功能會延伸已包含「Office app ' 的自動貼上功能設定的現有用戶端標籤。 若要深入瞭解這兩種自動標記選項的差異和優點，請參閱 [更新後的文章](apply-sensitivity-label-automatically.md)。
 
 ## <a name="march-2020"></a>2020 年 3 月
 
 ### <a name="introducing-advanced-audit"></a>簡介高級審計
 
-[Microsoft 365 中的「高級核查](advanced-audit.md)」引入新的審計功能，可協助您的組織進行取證和合規性調查。 亮點包括長期保留審核記錄、自訂審核記錄保留原則、新*MailItemsAccessed*信箱審核動作，以及引進新的租使用者層級節流限制，其可讓您的組織擁有其自己完全分配的頻寬配額，以存取您的審計資料。
+[Microsoft 365 中的「高級核查](advanced-audit.md) 」引入新的審計功能，可協助您的組織進行取證和合規性調查。 亮點包括長期保留審核記錄、自訂審核記錄保留原則、新 *MailItemsAccessed* 信箱審核動作，以及引進新的租使用者層級節流限制，其可讓您的組織擁有其自己完全分配的頻寬配額，以存取您的審計資料。
 
 ### <a name="compliance-score--compliance-manager-preview-the-latest-enhancements"></a>合規性管理員 & 合規性分數：預覽最新的增強功能
 
@@ -117,11 +121,11 @@ ms.locfileid: "46560260"
 - 同步處理各個群組的常見動作
 - 語言支援現在已擴充至中文 (簡化) 、中文 (傳統) 、法文、德文、義大利文、日文、韓文、葡萄牙文 (巴西) 、俄語及西班牙文
 
-深入瞭解[合規性分數](compliance-score.md)和[合規性管理員](compliance-manager-overview.md)
+深入瞭解 [合規性分數](compliance-score.md) 和 [合規性管理員](compliance-manager-overview.md)
 
 ### <a name="sensitivity-labels-support-for-labeling-office-files-in-sharepoint-and-onedrive-preview"></a>敏感度標籤：支援 SharePoint 和 OneDrive (預覽中的 Office 檔案的標記) 
 
-啟用預覽功能可讓使用者將敏感度標籤套用至網頁上的 Office。 他們將能夠在狀態列上看到功能區上的**敏感度**按鈕和套用的標籤名稱。 此外，如果他們使用桌面應用程式來標示標籤，然後將檔案儲存在 SharePoint 或 OneDrive 上，當標籤有套用加密設定時，Microsoft 365 現在可以處理這些檔案的內容。 在這些情況下，也會支援合著、eDiscovery、資料遺失防護、搜尋及其他協同作業功能。
+啟用預覽功能可讓使用者將敏感度標籤套用至網頁上的 Office。 他們將能夠在狀態列上看到功能區上的 **敏感度** 按鈕和套用的標籤名稱。 此外，如果他們使用桌面應用程式來標示標籤，然後將檔案儲存在 SharePoint 或 OneDrive 上，當標籤有套用加密設定時，Microsoft 365 現在可以處理這些檔案的內容。 在這些情況下，也會支援合著、eDiscovery、資料遺失防護、搜尋及其他協同作業功能。
 
 [瞭解如何啟用預覽](sensitivity-labels-sharepoint-onedrive-files.md)
 
@@ -134,7 +138,7 @@ ms.locfileid: "46560260"
 - [Microsoft 365 E5](https://go.microsoft.com/fwlink/?linkid=2120431) (付費或試用) 
 - Microsoft 365 Enterprise E3 訂閱與[Microsoft E5 合規性附加](https://go.microsoft.com/fwlink/?linkid=2120432)元件
 
-請注意，自預覽發行後我們進行了一些改進，包括[新的角色群組](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)和[全方案設定](insider-risk-management-configure.md#step-4-configure-insider-risk-settings)。
+請注意，自預覽發行後我們進行了一些改進，包括 [新的角色群組](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management) 和 [全方案設定](insider-risk-management-configure.md#step-4-configure-insider-risk-settings)。
 
 一如既往，請在您使用解決方案時留下意見反應，讓我們能夠繼續進行改進。
 
@@ -160,9 +164,9 @@ ms.locfileid: "46560260"
 等候已過。 我們很樂意宣告 Microsoft 365 規範中心可供所有客戶使用 Microsoft 365、Office 365、企業行動性 + 安全性 (EMS) 和 Windows 10 企業版方案。 您在安全性 & 合規性中心內管理的任何資料或原則都是在「規範中心」中提供，所以不需要來回跳轉。
 
 > [!TIP]
-> 請再次閱讀去年的更新，以取得我們最近預覽之一些[新方案](#new-compliance-solutions)的複習，以及顯示安全性 & 合規性中心的相容性功能目前在 Microsoft 365 中的活動[藍圖](#updated-compliance-solutions)。
+> 請再次閱讀去年的更新，以取得我們最近預覽之一些 [新方案](#new-compliance-solutions) 的複習，以及顯示安全性 & 合規性中心的相容性功能目前在 Microsoft 365 中的活動 [藍圖](#updated-compliance-solutions) 。
 
-[書簽和頭部]， [https://compliance.microsoft.com](https://compliance.microsoft.com) 以導覽您在整個組織中管理法規遵從性的單一光圈。您也可以[閱讀本文](microsoft-365-compliance-center.md)以進一步深入。
+[書簽和頭部]， [https://compliance.microsoft.com](https://compliance.microsoft.com) 以導覽您在整個組織中管理法規遵從性的單一光圈。您也可以 [閱讀本文](microsoft-365-compliance-center.md) 以進一步深入。
 
 ![Microsoft 365 規範中心首頁](../media/mcc-home-ga.png)
 
@@ -227,7 +231,7 @@ ms.locfileid: "46560260"
 
 #### <a name="new-compliance-solutions"></a>新的規範解決方案
 
-您可能會想知道*解決方案*的含義。 只要雲端已徹底增加業務的方式，也就是針對新的資料竊取及欺詐和要求新規定的方法開啟門。 我們的規範解決方案是整合功能的集合，可協助您協助您管理這些不斷演化的合規性需求。 方案的功能可能包括原則、警示、報告等的組合。
+您可能會想知道 *解決方案* 的含義。 只要雲端已徹底增加業務的方式，也就是針對新的資料竊取及欺詐和要求新規定的方法開啟門。 我們的規範解決方案是整合功能的集合，可協助您協助您管理這些不斷演化的合規性需求。 方案的功能可能包括原則、警示、報告等的組合。
 
 以下是您將會發現的新解決方案摘要。 請留意即將推出的其他人員。
 
@@ -237,7 +241,7 @@ ms.locfileid: "46560260"
 
 |**新方案**|**描述**|**深入了解**|
 |:-----|:-----|:-----|
-|Microsoft (預覽的合規性分數)  <br/>|從[合規性管理員](compliance-manager-overview.md)內建，相容性分數是一項獨立的功能，具有簡化、便於使用使用者的設計，可協助您瞭解及改善組織的合規性狀況。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 <br/>|[ (預覽的 Microsoft 合規性分數概述) ](compliance-score.md)|
+|Microsoft (預覽的合規性分數)  <br/>|從 [合規性管理員](compliance-manager-overview.md)內建，相容性分數是一項獨立的功能，具有簡化、便於使用使用者的設計，可協助您瞭解及改善組織的合規性狀況。 它會計算以風險為基礎的分數，用以衡量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 <br/>|[ (預覽的 Microsoft 合規性分數概述) ](compliance-score.md)|
 |方案目錄 (預覽)  <br/>|方案目錄是一種可讓您探索、深入瞭解及快速開始使用我們的合規性和風險管理解決方案的單一停止車間。 目錄會組織成三個符合性類別，每個類別包含組成該類別之解決方案的詳細資料。 類別包括資訊保護 & 控管、內幕風險管理，以及探索 & 回應 <br/>|[方案目錄 (預覽的概述) ](microsoft-365-solution-catalog.md)|
 |通訊合規性 (預覽)  <br/>|通訊相容性是新的有問必答風險管理類別的一部分，可協助您針對組織中的不適當郵件偵測、捕獲和採取補救措施，以協助將通訊風險降到最低。 此方案透過引進一些新的增強功能（如智慧範本、彈性修復工作流程及可行動的觀點），擴充 Office 365 中監管原則的功能。 <br/>|[Microsoft 365 (預覽中的通訊法規遵從性) ](communication-compliance.md)|
 |資料分類 (預覽)  <br/>|我們新的資料分類頁面包含強大的洞察力和工具，可協助您探索和評估敏感資訊和標籤在組織中的內容中使用 (保留和敏感度) 。 回顧包含機密資訊或已套用標籤的內容、探索各個 Microsoft 365 位置的標籤活動、建立自訂機密資訊類型，以及更多。<br/>|[資料分類概觀 (預覽)](data-classification-overview.md)|
@@ -281,16 +285,16 @@ ms.locfileid: "46560260"
 ### <a name="new-encryption-options-for-sensitivity-labels"></a>敏感度標籤的新加密選項 
 
 設定敏感度標籤的加密時，您現在有兩個選項可讓使用者在手動將標籤套用至電子郵件及檔時，指派許可權：<br>
-- 將標籤套用至**Outlook 電子郵件**時，使用者可強制執行與 [不要轉寄] 選項同等的限制。 收件者將可以讀取郵件，但不能轉寄、列印或複製內容。
-- 將標籤套用至**Word、PowerPoint 及 Excel**檔案時，系統會提示使用者將存取權限指派給特定的使用者和群組。
+- 將標籤套用至 **Outlook 電子郵件**時，使用者可強制執行與 [不要轉寄] 選項同等的限制。 收件者將可以讀取郵件，但不能轉寄、列印或複製內容。
+- 將標籤套用至 **Word、PowerPoint 及 Excel**檔案時，系統會提示使用者將存取權限指派給特定的使用者和群組。
 
-移至 [[使用敏感度標籤來限制存取內容](encryption-sensitivity-labels.md#let-users-assign-permissions)] 以深入瞭解內容。
+移至 [ [使用敏感度標籤來限制存取內容](encryption-sensitivity-labels.md#let-users-assign-permissions) ] 以深入瞭解內容。
 
 ## <a name="august-2019"></a>2019 年 8 月
 
 ### <a name="update-to-data-investigations"></a>更新資料調查
 
-在執行資料調查時，您現在可以從原始位置刪除專案。 這表示您可以在組織內刪除 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶中的專案。 因為您已將專案收集為證據，所以您可以在證據集中保留這些專案的副本，以進行進一步調查或只保留為參考。 移至 [[管理 Microsoft 365 中的資料外泄事件](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data)] 以深入瞭解。 
+在執行資料調查時，您現在可以從原始位置刪除專案。 這表示您可以在組織內刪除 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶中的專案。 因為您已將專案收集為證據，所以您可以在證據集中保留這些專案的副本，以進行進一步調查或只保留為參考。 [深入瞭解](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 在執行資料調查時，您現在可以從原始位置刪除專案。 這表示您可以在組織內刪除 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶中的專案。 因為您已將專案收集為證據，所以您可以在證據集中保留這些專案的副本，以進行進一步調查或只保留為參考。 移至 [ [管理 Microsoft 365 中的資料外泄事件](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) ] 以深入瞭解。 
 
 ## <a name="july-2019"></a>2019 年 7 月
 

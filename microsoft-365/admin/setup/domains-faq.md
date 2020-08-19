@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 找到您常見問題的答案以深入瞭解網域。
-ms.openlocfilehash: c588586ddd3d57fdbe78d7751131f61e6aa53eba
-ms.sourcegitcommit: dc5de2064706137256307f100b8dc61e9797bd1c
+ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45068100"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804193"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
@@ -52,19 +52,20 @@ ms.locfileid: "45068100"
 - [如果我的 DNS 提供者不支援某些記錄類型，會發生什麼事？](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [如何在 Microsoft 365 中設定或變更預設網域？](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [我可以將自訂子域或多個網域新增至 Microsoft 365 嗎？](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [如何將網域從 Microsoft 365 轉接至其他主機？]
 - [為什麼我有「onmicrosoft.com」網域？](#why-do-i-have-an-onmicrosoftcom-domain)
 - [為什麼我有「onmicrosoft.de」網域？](#why-do-i-have-an-onmicrosoftde-domain)
 - [如何驗證我的非盈利性或教育狀態？](#how-do-i-verify-my-nonprofit-or-education-status)
     
 ## <a name="what-is-mx-priority"></a>什麼是 MX 優先順序？
 
-郵件會以最低喜好設定值（最高優先順序）傳遞到郵件 exchange 伺服器，因此用於郵件路由的 MX 記錄應該具有最低的喜好設定值，通常是0或*高*優先順序。 
+郵件會以最低喜好設定值傳送到郵件 exchange 伺服器， (最高優先順序) ，所以您用來進行郵件路由的 MX 記錄應該會有最低的喜好設定值，通常是0或  *高*  優先順序。 
   
 - 當您建立 MX 記錄時，大部分的 DNS 主機服務提供者要求您設定偏好設定號碼。
     
-- 某些標籤的方塊*偏好*，有些標籤*優先順序*。 
+- 某些標籤的方塊  *偏好*  ，有些標籤  *優先順序*  。 
     
-- 有些需要數位，有些會要求您選取 [*低*]、[*中*] 或 [*高*]。 
+- 有些需要數位，有些會要求您選取 [  *低*  ]、[  *中*  ] 或 [  *高*  ]。 
     
 - 如果您只有一個 MX 記錄，則優先順序或喜好設定的任何值都很好。
     
@@ -72,7 +73,7 @@ ms.locfileid: "45068100"
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>如何驗證我的網域的 SPF 記錄？
 
-您必須具有或建立**一個 SPF 的 TXT 記錄**，這一點很重要。 如果您已經有 SPF 記錄，應將新的 Microsoft 365 值附加到它，而不是建立新的記錄。 在您新增或更新 Microsoft 電子郵件的 SPF 記錄之後，您應該檢查下列其中一項工具，確定語法是否正確： 
+您必須具有或建立  **一個 SPF 的 TXT 記錄**，這一點很重要。 如果您已經有 SPF 記錄，應將新的 Microsoft 365 值附加到它，而不是建立新的記錄。 在您新增或更新 Microsoft 電子郵件的 SPF 記錄之後，您應該檢查下列其中一項工具，確定語法是否正確： 
   
 - [SPF 記錄測試控管](http://www.kitterman.com/spf/validate.html)
     
@@ -82,11 +83,11 @@ ms.locfileid: "45068100"
 
 ## <a name="what-is-a-domain-name"></a>何謂功能變數名稱？
 
-網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.** 後出現的唯一名稱。 它通常採用組織名稱和標準 Internet 尾碼的形式，例如*yourbusiness.com*或*stateuniversity.edu。* 
+網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.** 後出現的唯一名稱。 它通常採用組織名稱和標準 Internet 尾碼的形式，例如  *yourbusiness.com*  或  *stateuniversity.edu。* 
   
 使用自訂網域（例如「可信性** \@ contoso.com**」）與 Microsoft 365，可協助您建立品牌的信譽及認可。 
   
-您可以[在 Microsoft 365 中購買網域，我們會自動加以設定](../get-help-with-domains/buy-a-domain-name.md)，或者您可以從網域註冊機構購買或為您提供自己的現有功能。
+您可以 [在 Microsoft 365 中購買網域，我們會自動加以設定](../get-help-with-domains/buy-a-domain-name.md)，或者您可以從網域註冊機構購買或為您提供自己的現有功能。
     
 ## <a name="what-happens-if-my-dns-provider-doesnt-support-certain-record-types"></a>如果我的 DNS 提供者不支援某些記錄類型，會發生什麼事？
 
@@ -140,25 +141,25 @@ ms.locfileid: "45068100"
 
 ::: moniker-end
     
-2. 在 [**網域**] 頁面上，選取您要設定為新電子郵件地址的預設網域。 
+2. 在 [ **網域** ] 頁面上，選取您要設定為新電子郵件地址的預設網域。 
     
 3. 選取 [設定成預設值]****。
     
 ::: moniker range="o365-worldwide"
 
-您無法變更*onmicrosoft.com*網域的名稱。 
+您無法變更  *onmicrosoft.com*  網域的名稱。 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-您無法變更*onmicrosoft.de*網域的名稱。 
+您無法變更  *onmicrosoft.de*  網域的名稱。 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-您無法變更*partner.onmschina.cn*網域的名稱。 
+您無法變更  *partner.onmschina.cn*  網域的名稱。 
 
 ::: moniker-end
 
@@ -188,18 +189,26 @@ ms.locfileid: "45068100"
   
 當您新增子域時，會根據所驗證的父系網域，自動驗證。
   
-當您將多個網域新增至 Microsoft 365 時，您可以在您已新增的任何網域上裝載任何服務（如電子郵件）。  *當您將電子郵件變更為 Microsoft 365 時，更新網域的 MX 記錄，所有傳送至該網域的電子郵件都會開始成為 Microsoft 365。* 
+當您將多個網域新增至 Microsoft 365 時，您可以在您已新增的任何網域上，主控任何服務 (例如電子郵件) ）。  *當您將電子郵件變更為 Microsoft 365 時，更新網域的 MX 記錄，所有傳送至該網域的電子郵件都會開始成為 Microsoft 365。* 
  
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
 > 如果您已將 contoso.com 網域新增至 Microsoft 365 訂閱，您也可以將子域 xyz.contoso.com 新增至其他 Microsoft 365 組織。 新增子域時，系統會提示您在 DNS 主機服務提供者中新增 TXT 記錄。
 
+## <a name="how-do-i-transfer-a-domain-from-microsoft-365-to-another-host"></a>如何將網域從 Microsoft 365 傳輸到另一部主機？
+
+如需傳輸網域的程式，請參閱將 [網域從 Microsoft 轉接至其他主機](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host)。
+
+## <a name="pilot-microsoft-365-from-my-custom-domain"></a>從我的自訂網域試驗 Microsoft 365
+
+如需試用自自訂網域至 Microsoft 365 信箱的 Microsoft 365 電子郵件功能的程式，請參閱 [從我的自訂網域試用 microsoft 365](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain)。
+
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>為什麼我有「onmicrosoft.com」網域？
 
-當您註冊服務時，Microsoft 365 會為您建立網域，例如*contoso.onmicrosoft.com*。 您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.com*。 
+當您註冊服務時，Microsoft 365 會為您建立網域，例如 *contoso.onmicrosoft.com*。 您註冊時所建立的使用者識別碼包含網域，如 *alan@contoso.onmicrosoft.com*。 
   
- **如果您想要讓您的電子郵件看起來像是*alan \@ contoso.com*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md)，或是只要您擁有現有的使用者和網域中的步驟，即可執行 [[將您的使用者與網域新增至 Microsoft 365](add-domain.md) ]。 
+ **如果您想要讓您的電子郵件看起來像是 *alan \@ contoso.com*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md) ，或是只要您擁有現有的使用者和網域中的步驟，即可執行 [ [將您的使用者與網域新增至 Microsoft 365](add-domain.md) ]。 
   
 - **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.com，您就無法將它變更為 fabrikam.onmicrosoft.com。 若要使用不同的 onmicrosoft.com 網域，您必須開始使用 Microsoft 365 的新訂閱。 
     
@@ -214,9 +223,9 @@ ms.locfileid: "45068100"
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>為什麼我有「onmicrosoft.de」網域？
 
-當您註冊服務時，Microsoft 365 會為您建立網域，例如*contoso.onmicrosoft.de*。 您註冊時所建立的使用者識別碼包含網域，如*alan@contoso.onmicrosoft.de*。 
+當您註冊服務時，Microsoft 365 會為您建立網域，例如 *contoso.onmicrosoft.de*。 您註冊時所建立的使用者識別碼包含網域，如 *alan@contoso.onmicrosoft.de*。 
   
- **如果您想要讓您的電子郵件看起來像是*alan@contoso.de*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md)，或是只要[將您的使用者與網域新增至 Microsoft 365](add-domain.md) ，便執行步驟。 
+ **如果您想要讓您的電子郵件看起來像是 *alan@contoso.de*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md) ，或是只要 [將您的使用者與網域新增至 Microsoft 365](add-domain.md) ，便執行步驟。 
   
 - **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.de，您就無法將它變更為 fabrikam.onmicrosoft.de。 若要使用不同的 onmicrosoft.de 網域，您必須開始使用 Microsoft 365 的新訂閱。 
     
@@ -230,15 +239,15 @@ ms.locfileid: "45068100"
 
 ## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a>如何驗證我的非盈利性或教育狀態？
 
-1. 在系統[管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-home)選取 [**安裝**] 以啟動嚮導。 （請務必先登入 Microsoft 365。） 
+1. 在系統[管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-home)選取 [**安裝**] 以啟動嚮導。  (請務必先登入 Microsoft 365。 )  
     
-2. 若要成為您的學校系統管理員，請在 Microsoft 365 中選取 [**成為系統管理員**] 選項。 
+2. 若要成為您的學校系統管理員，請在 Microsoft 365 中選取 [  **成為系統管理員** ] 選項。 
     
 3. 系統會提示您在網域的 DNS 主機網站上新增 TXT DNS 記錄。 為什麼？ 由於是在 DNS 主機登入，並為您的網域新增記錄，因此您可以向 Microsoft 365 證明您擁有該功能變數名稱。
     
 4. 在您新增記錄後，您會回到 Microsoft 365 入口網站，並確認您已新增該記錄，所以 Microsoft 365 可以進行檢查。
     
-是否有非贏利且想要取得 Microsoft 365？ [請確定您的組織符合資格](https://www.microsoft.com/en-us/nonprofits/eligibility)，然後註冊服務。 
+是否有非贏利且想要取得 Microsoft 365？ [請確定您的組織符合資格](https://www.microsoft.com/en-us/nonprofits/eligibility) ，然後註冊服務。 
   
 想要深入瞭解如何成為您的學校管理員？ [深入瞭解](https://docs.microsoft.com/microsoft-365/education/deploy/becoming-an-admin-in-office-365-education
 )。

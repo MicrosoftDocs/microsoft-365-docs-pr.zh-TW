@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 在本文中，您將瞭解如何在 SharePoint 和 OneDrive 的檔中與客人共同作業。
-ms.openlocfilehash: cb3c527304f0d286b4a1a0147d07537b0fae4eda
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 98eea8fe9c613aef3e24f9e4bb6746ddc9a527ab
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527915"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798267"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>在文件上與來賓共同作業
 
@@ -35,7 +35,7 @@ ms.locfileid: "46527915"
 
 ## <a name="azure-organizational-relationships-settings"></a>Azure 組織關聯性設定
 
-Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設定受到最高層級的制約。 如果 Azure AD 中已停用來賓共用或已限制來賓共用，這會覆寫您在 Microsoft 365 中設定的任何共用設定。
+Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯設定](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)受到最高層級的制約。 如果 Azure AD 中已停用來賓共用或已限制來賓共用，這會覆寫您在 Microsoft 365 中設定的任何共用設定。
 
 檢查 [組織關聯] 設定，以確保未封鎖與來賓共用。
 
@@ -45,12 +45,14 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 
 1. 登入 Microsoft Azure，網址為 [https://portal.azure.com](https://portal.azure.com) 。
 2. 在左側導覽中，按一下 [ **Azure Active Directory**]。
-3. 在 [**一覽表**] 窗格中，按一下 [**組織關聯**性]。
-4. 在 [**組織關聯**] 窗格中，按一下 [**設定**]。
-5. 確定**guest 和 guest inviter role 中的系統管理員和使用者都可以邀請**和**成員可以邀請**皆設定為 **[是]**。
+3. 在 [ **一覽表** ] 窗格中，按一下 [ **組織關聯**性]。
+4. 在 [ **組織關聯** ] 窗格中，按一下 [ **設定**]。
+5. 確定 **guest 和 guest inviter role 中的系統管理員和使用者都可以邀請** 和 **成員可以邀請** 皆設定為 **[是]**。
 6. 如果您做了任何變更，請按一下 [儲存]****。
 
-請記下 [**協同限制**] 區段中的設定。 確定您要與之來賓進行共同作業的網域不會遭到封鎖。
+請記下 [ **協同限制** ] 區段中的設定。 確定您要與之來賓進行共同作業的網域不會遭到封鎖。
+
+如果您與多個組織的客人合作，您可能想要限制其存取目錄資料的能力。 這可防止使用者看到目錄中的客人。 若要執行此動作，請在 [ **來賓使用者訪問限制**] 底下，選取 [來賓使用者對內容的 **存取權受到限制** ]，或 **[來賓使用者存取許可權制于自身目錄物件的屬性和成員資格]** 設定。
 
 ## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 組織層級共用設定
 
@@ -58,7 +60,7 @@ Microsoft 365 中的共用可透過 Azure Active Directory 中的組織關聯設
 
 SharePoint 的組織層級設定會決定個別 SharePoint 網站可使用的設定。 網站設定不能超過組織層級設定的許可。 OneDrive 的組織層級設定決定使用者 OneDrive 庫中可使用的共用層級。
 
-若要 SharePoint 和 OneDrive，如果您想要允許未驗證的檔案和資料夾共用，請選擇 [**任何人**]。 若要確定您組織外部的人員必須進行驗證，請選擇 [**新增] 和 [現有來賓**]。 [*任何人*] 連結是最簡單的共用方式：您組織外部的人員可以在未驗證的情況下開啟連結，而且可以隨意將其傳遞給其他人。
+若要 SharePoint 和 OneDrive，如果您想要允許未驗證的檔案和資料夾共用，請選擇 [ **任何人**]。 若要確定您組織外部的人員必須進行驗證，請選擇 [ **新增] 和 [現有來賓**]。 [*任何人*] 連結是最簡單的共用方式：您組織外部的人員可以在未驗證的情況下開啟連結，而且可以隨意將其傳遞給其他人。
 
 若為 SharePoint，請選擇您組織中的任何網站所需的功能最寬鬆設定。
 
@@ -67,9 +69,9 @@ SharePoint 的組織層級設定會決定個別 SharePoint 網站可使用的設
 
 設定 SharePoint 組織層級共用設定
 
-1. 在 Microsoft 365 系統管理中心的左側導覽中，按一下 [系統**管理中心**] 底下的 [ **SharePoint**]。
+1. 在 Microsoft 365 系統管理中心的左側導覽中，按一下 [系統 **管理中心**] 底下的 [ **SharePoint**]。
 2. 在 SharePoint 管理中心中，按一下左側導覽窗格中的 [共用]****。
-3. 確定 SharePoint 或 OneDrive 的外部共用已設定為**任何人**或**新的和現有的客人**。 （請注意，[OneDrive] 設定不能超過 SharePoint 設定的許可。）
+3. 確定 SharePoint 或 OneDrive 的外部共用已設定為 **任何人** 或 **新的和現有的客人**。  (請注意，OneDrive 設定不能超過 SharePoint 設定的容許數目。 ) 
 4. 如果您做了任何變更，請按一下 [儲存]****。
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 組織層級的預設連結設定
@@ -80,9 +82,9 @@ SharePoint 的組織層級設定會決定個別 SharePoint 網站可使用的設
 
 選擇當使用者共用檔案和資料夾時，預設會選取的連結類型：
 
-- **任何具有連結的使用者**-如果您想要進行許多未驗證的檔案和資料夾共用，請選擇此選項。 如果您想要允許*任何人*的連結，但擔心意外的共用驗證，請將其中一個其他選項視為預設值。 只有在您已啟用**任何**共用時，才可使用此連結類型。
-- **僅限貴組織中的人員**-如果您預期大多數的檔案和資料夾共用與組織內的人員有關，請選擇此選項。
-- **特定人員**-如果您想要對來賓執行大量檔案和資料夾共用，請考慮此選項。 這種連結類型與來賓搭配使用，需要驗證。
+- **任何具有連結的使用者** -如果您想要進行許多未驗證的檔案和資料夾共用，請選擇此選項。 如果您想要允許 *任何人* 的連結，但擔心意外的共用驗證，請將其中一個其他選項視為預設值。 只有在您已啟用 **任何** 共用時，才可使用此連結類型。
+- **僅限貴組織中的人員** -如果您預期大多數的檔案和資料夾共用與組織內的人員有關，請選擇此選項。
+- **特定人員** -如果您想要對來賓執行大量檔案和資料夾共用，請考慮此選項。 這種連結類型與來賓搭配使用，需要驗證。
  
 ![SharePoint 組織層級檔案和資料夾共用設定的螢幕擷取畫面](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
@@ -90,12 +92,12 @@ SharePoint 的組織層級設定會決定個別 SharePoint 網站可使用的設
 設定 SharePoint 和 OneDrive 組織層級的預設連結設定
 
 1. 流覽至 SharePoint 系統管理中心的 [共用] 頁面。
-2. 在 [檔案**和資料夾連結**] 底下，選取您要使用的預設共用連結。
+2. 在 [檔案 **和資料夾連結**] 底下，選取您要使用的預設共用連結。
 3. 如果您做了任何變更，請按一下 [儲存]****。
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>網站層級共用設定 SharePoint
 
-如果您要共用 SharePoint 網站中的檔案和 fodlers，您也需要檢查該網站的網站層級共用設定。
+如果您要共用 SharePoint 網站中的檔案與資料夾，您也需要檢查該網站的網站層級共用設定。
 
 ![SharePoint 網站外部共用設定的螢幕擷取畫面](../media/sharepoint-site-external-sharing-settings.png)
 
@@ -103,12 +105,12 @@ SharePoint 的組織層級設定會決定個別 SharePoint 網站可使用的設
 1. 在 SharePoint 管理中心中，在左側導覽窗格中展開 [網站]****，然後按一下 [使用中網站]****。
 2. 選取您剛建立的網站。
 3. 在功能區中，按一下 [共用]****。
-4. 確定 [共用] 設定為 [**任何人**] 或 [**現有來賓**]。
+4. 確定 [共用] 設定為 [ **任何人** ] 或 [ **現有來賓**]。
 5. 如果您做了任何變更，請按一下 [儲存]****。
 
 ## <a name="invite-users"></a>邀請使用者
 
-現在已設定來賓共用設定，因此使用者現在可以與組織外部的人員共用檔案和資料夾。 如需詳細資訊，請參閱[共用 OneDrive 檔案和資料夾](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07)及[共用 SharePoint 檔案或資料夾](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c)。
+現在已設定來賓共用設定，因此使用者現在可以與組織外部的人員共用檔案和資料夾。 如需詳細資訊，請參閱 [共用 OneDrive 檔案和資料夾](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07) 及 [共用 SharePoint 檔案或資料夾](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c) 。
 
 ## <a name="see-also"></a>另請參閱
 

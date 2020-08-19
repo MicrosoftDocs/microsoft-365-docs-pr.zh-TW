@@ -1,31 +1,31 @@
 ---
-title: 管理資訊控管
+title: Microsoft 365 中的 microsoft 資訊管理
 f1.keywords:
 - NOCSH
-ms.author: robmazz
-author: robmazz
+ms.author: cabailey
+author: cabailey
 manager: laurawi
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 ms.collection: m365-security-compliance
-localization_priority: Normal
+localization_priority: High
 search.appverid:
 - MOE150
 - MET150
-description: 深入瞭解 Microsoft 365 中的資訊管理。
-ms.openlocfilehash: ff7d5ebc1b656aa62bac054cfbd2784b335d03e6
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+description: 在 Microsoft 365 中實施 Microsoft 資訊管理功能，以管理法規遵從性或法規需求的資料。
+ms.openlocfilehash: b67fbe1a8336ba73d1c43ebc531657c60dd3e8d8
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778563"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804241"
 ---
-# <a name="manage-information-governance"></a>管理資訊控管
+# <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 microsoft 資訊管理
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-使用 Microsoft 資訊管理功能來管理您的資料，以取得法規遵從性或法規需求。
+使用 Microsoft 資訊控管 (有時候會以 MIG) 功能來管理您的資料，以用於法規遵從性或法規需求。
 
 ## <a name="information-governance"></a>資訊管理
 

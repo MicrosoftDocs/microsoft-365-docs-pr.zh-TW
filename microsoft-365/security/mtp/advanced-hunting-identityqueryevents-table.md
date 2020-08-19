@@ -17,26 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cf2038a15242139817eb073ec2a6408905824123
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b5238ca32cdf9050391ef69bae3be0914b93f452
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649316"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797801"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
 適用於：****
 - Microsoft 威脅防護
 
-[！附注] `IdentityQueryEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含針對 Active Directory 物件（如使用者、群組、裝置和網域）所執行之查詢的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `IdentityQueryEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含針對 Active Directory 物件（如使用者、群組、裝置和網域）所執行之查詢的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+
+>[!TIP]
+> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
-| `ActionType` | string | 觸發事件的活動類型 |
+| `ActionType` | string | 觸發事件的活動類型。 如需詳細資訊，請參閱[入口網站內架構參考](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `Application` | string | 執行錄製動作的應用程式 |
 | `QueryType` | string | 查詢類型，例如 QueryGroup、QueryUser 或 EnumerateUsers |
 | `QueryTarget` | string | 所查詢的使用者、群組、裝置、網域或任何其他實體類型的名稱 |
@@ -63,6 +66,6 @@ ms.locfileid: "46649316"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

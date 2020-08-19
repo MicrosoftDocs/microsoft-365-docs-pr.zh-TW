@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 64f0b19cfd9588e975b06cb43ca73270b00c5e26
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 15e298edfad2d04079322a070615a36bb5df64ad
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649388"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797849"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 
@@ -33,7 +33,7 @@ ms.locfileid: "46649388"
 
 ## <a name="try-your-first-query"></a>嘗試您的第一個查詢
 
-在 Microsoft 365 的 [安全性中心] 中，移至**搜尋**以執行第一個查詢。 請使用下列範例：
+在 Microsoft 365 的 [安全性中心] 中，移至 **搜尋** 以執行第一個查詢。 請使用下列範例：
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -66,7 +66,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 // Finds PowerShell execution events that could involve a download
 ```
 
-查詢本身通常會以資料表名稱開頭，後面接著管道 (`|`) 開始的一系列元素。 在此範例中，我們會從建立兩個表格的同盟開始，並 `DeviceProcessEvents` `DeviceNetworkEvents` 視需要新增管線元素。
+查詢本身通常會以資料表名稱開頭，後面接著管道 (`|`) 開始的一系列元素。 在此範例中，我們會從建立兩個表格的同盟開始，並  `DeviceProcessEvents` `DeviceNetworkEvents` 視需要新增管線元素。
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
@@ -102,7 +102,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="customize-result-columns-and-length"></a>自訂結果欄及長度 
-現在您的查詢已清楚識別出您要尋找的資料，您可以新增元素來定義結果。 `project`會傳回特定的欄，並 `top` 限制結果的數目。 這些運算子可協助確保結果具有適當的格式，且易於處理。
+現在您的查詢已清楚識別出您要尋找的資料，您可以新增元素來定義結果。 `project` 會傳回特定的欄，並 `top` 限制結果的數目。 這些運算子可協助確保結果具有適當的格式，且易於處理。
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -115,9 +115,9 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ![高級搜尋查詢編輯器中的展開控制項影像](../../media/advanced-hunting-expand.png)
 
 >[!TIP]
->您可以以圖表形式查看查詢結果，並快速調整篩選。 如需相關指導，請[參閱使用查詢結果](advanced-hunting-query-results.md)
+>您可以以圖表形式查看查詢結果，並快速調整篩選。 如需相關指導，請 [參閱使用查詢結果](advanced-hunting-query-results.md)
 
-## <a name="learn-common-query-operators-for-advanced-hunting"></a>了解適用於進階搜捕的一般查詢運算子
+## <a name="learn-common-query-operators"></a>瞭解一般查詢運算子
 
 您已執行了第一個查詢，並對其組成元素有一點了解了，現在可以開始追蹤一些基本概念。 進階搜捕所使用的 Kusto 查詢語言支援一系列運算子，包括下列常見運算子。
 
@@ -136,7 +136,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 若要查看這些運算子的實際範例，請從進階搜捕的 [開始使用]**** 區段中執行這些運算子。
 
-## <a name="understand-data-types-and-their-query-syntax-implications"></a>了解資料類型及其查詢語法含意
+## <a name="understand-data-types"></a>瞭解資料類型
 
 進階搜捕資料表中的資料通常會分類為以下資料類型。
 
@@ -148,17 +148,19 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | `int` | 32 位元數值  |
 | `long` | 64 位元數值 |
 
+若要深入瞭解這些資料類型及其含意，請 [閱讀 Kusto 的純量資料型別](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/)。
+
 ## <a name="get-help-as-you-write-queries"></a>編寫查詢時取得協助
 運用下列功能更快速地編寫查詢：
 - **Autosuggest** --當您撰寫查詢時，高級搜尋會提供 IntelliSense 的建議。 
-- **架構樹**系-您的工作區域旁會提供包含資料表清單和其欄的架構標記法。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
+- **架構樹** 系-您的工作區域旁會提供包含資料表清單和其欄的架構標記法。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
 - **[架構參考（Schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** ）包含資料表和欄描述的入口網站內參照，以及支援的事件種類 (`ActionType` 值) 和範例查詢
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>在編輯器中使用多個查詢
 查詢編輯器可以做為您用來試驗多個查詢的草稿墊。 若要使用多個查詢：
 
 - 以空行分隔每個查詢。
-- 將游標放在查詢的任何部分，以選取該查詢，然後再執行它。 這只會執行選取的查詢。 若要執行另一個查詢，請據以移動游標，然後選取 [**執行查詢**]。
+- 將游標放在查詢的任何部分，以選取該查詢，然後再執行它。 這只會執行選取的查詢。 若要執行另一個查詢，請據以移動游標，然後選取 [ **執行查詢**]。
 
 ![具有多個查詢的查詢編輯器影像](../../media/mtp-ah/ah-multi-query.png)
 
@@ -179,6 +181,6 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [使用查詢結果工作](advanced-hunting-query-results.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

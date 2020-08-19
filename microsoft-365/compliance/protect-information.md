@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft 365 保護資訊
+title: Microsoft 365 中的 microsoft 資訊保護
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -9,26 +9,26 @@ ms.date: ''
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: High
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: 識別 Microsoft 365 功能和輔助檔，以協助您保護組織的重要資料。
-ms.openlocfilehash: eb83655fddf5b59a7a95d2a8b9999ab683305a89
-ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
+description: 在 Microsoft 365 中實施 Microsoft 資訊保護 (MIP) 功能，協助您探索、分類及保護任何地方生活或傳播的敏感資訊。
+ms.openlocfilehash: 058a1b46f879b2cc4b8ada8f2a5de88717958e94
+ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592307"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46804183"
 ---
-# <a name="protect-information-using-microsoft-365"></a>使用 Microsoft 365 保護資訊
+# <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 microsoft 資訊保護
 
 >*[Microsoft 365 安全性 & 規範的授權](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-使用 Microsoft 資訊保護功能，在任何生活或傳播時，協助您探索、分類及保護機密資訊。
+使用 Microsoft 資訊保護 (，通常是針對 MIP) 功能所做的簡化，可協助您探索、分類及保護任何位置的機密資訊。
 
-## <a name="know-your-data"></a>知道您的資料
+## <a name="know-your-data"></a>瞭解您的資料
 
 若要深入瞭解您的資料，並識別整個混合式環境中的重要資料，請使用下列功能：
  
@@ -44,23 +44,23 @@ ms.locfileid: "46592307"
 
 |功能|它會解決什麼問題？|開始使用|
 |:------|:------------|---------------------|:----------------------------|
-|[敏感性標籤](sensitivity-labels.md)| 跨應用程式、服務和裝置的單一解決方案，以標籤及保護您的組織內部和外部的資料 <br /><br />範例案例：套用[和查看 POWER BI 中的敏感度標籤，並在匯出資料時加以保護](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[開始使用敏感度標籤](get-started-with-sensitivity-labels.md) |
+|[敏感性標籤](sensitivity-labels.md)| 跨應用程式、服務和裝置的單一解決方案，以標籤及保護您的組織內部和外部的資料 <br /><br />範例案例：套用 [和查看 POWER BI 中的敏感度標籤，並在匯出資料時加以保護](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[ 開始使用敏感度標籤](get-started-with-sensitivity-labels.md) |
 |[Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| 針對 Windows 電腦，擴充敏感度標籤以取得其他功能，包括標記及保護所有檔案類型的檔案 Explorer 和 PowerShell<br /><br /> 範例其他功能： [Azure 資訊保護統一標籤用戶端的自訂](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)設定| [Azure 資訊保護統一標籤用戶端管理員指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[雙重金鑰加密](double-key-encryption.md)| 在所有情況下，只有您可以解密受保護的內容或法規需求，您必須在地理界限內保留加密金鑰 | [部署雙重金鑰加密](double-key-encryption.md#deploy-double-key-encryption)|
-|[Office 365 郵件加密](ome.md) (OME) | 加密傳送給任何裝置上任何使用者的電子郵件訊息和附加檔，因此只有授權的收件者可以讀取以電子郵件傳送的資訊  <br /><br />範例案例：[撤銷由高級郵件加密所加密的電子郵件](revoke-ome-encrypted-mail.md) | [開始使用 Office 365 郵件加密](set-up-new-message-encryption-capabilities.md)|
+|[Office 365 郵件加密](ome.md) (OME) | 加密傳送給任何裝置上任何使用者的電子郵件訊息和附加檔，因此只有授權的收件者可以讀取以電子郵件傳送的資訊  <br /><br />範例案例： [撤銷由高級郵件加密所加密的電子郵件](revoke-ome-encrypted-mail.md) | [開始使用 Office 365 郵件加密](set-up-new-message-encryption-capabilities.md)|
 |[使用客戶金鑰的服務加密](customer-key-overview.md) | 防止未經授權的系統或人員查看資料，並補充 Microsoft 資料中心的 BitLocker 磁片加密。 | [設定 Office 365 客戶金鑰](customer-key-set-up.md)|
 |[SharePoint Information Rights Management (IRM) ](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|保護 SharePoint 清單和文件庫，讓使用者在簽出檔時，已下載的檔案受到保護，所以只有經過授權的人員才能根據您指定的原則來查看和使用該檔案。 | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
 [版權管理連接器](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |保護-僅適用于使用 Exchange 或 SharePoint 伺服器的現有內部部署，或執行 Windows Server 和檔案分類基礎結構的檔案伺服器 (FCI)  | [部署 RMS 連接器的步驟](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure 資訊保護統一標記掃描器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| 探索、標籤及保護位於內部部署的資料存放區中的機密資訊。 | [設定及安裝 Azure 資訊保護統一標記掃描器](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)| 探索、標籤和保護位於雲端資料存放區中的機密資訊 | [探索、分類、標記和保護儲存在雲端中的控管和敏感性資料](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|[Microsoft 資訊保護 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|將敏感度標籤擴充至協力廠商應用程式和服務  <br /><br /> 範例案例：[設定並取得敏感度標籤 (c + +) ](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft 資訊保護 (MIP) SDK 安裝和設定](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
+|[Microsoft 資訊保護 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|將敏感度標籤擴充至協力廠商應用程式和服務  <br /><br /> 範例案例： [設定並取得敏感度標籤 (c + +) ](https://docs.microsoft.com/information-protection/develop/quick-file-set-get-label-cpp) |[Microsoft 資訊保護 (MIP) SDK 安裝和設定](https://docs.microsoft.com/information-protection/develop/setup-configure-mip)|
 
-## <a name="prevent-data-loss"></a>防止資料外洩
+## <a name="prevent-data-loss"></a>防止資料遺失
 
 若要協助防止意外 oversharing 機密資訊，請使用下列功能：
 
 
 |功能|它會解決什麼問題？|開始使用|
 |:------|:------------|:---------------------|:-----------------------------|
-|[資料遺失防護](data-loss-prevention-policies.md) (DLP) | 協助防止意外共用機密專案 <br /><br />範例案例：[保護 Microsoft 小組聊天和通道訊息中的機密資訊](dlp-microsoft-teams.md) | [預設的 DLP 原則快速入門](get-started-with-the-default-dlp-policy.md)|
+|[資料遺失防護](data-loss-prevention-policies.md) (DLP) | 協助防止意外共用機密專案 <br /><br />範例案例： [保護 Microsoft 小組聊天和通道訊息中的機密資訊](dlp-microsoft-teams.md) | [預設的 DLP 原則快速入門](get-started-with-the-default-dlp-policy.md)|
 |[端點資料遺失防護 (預覽) ](endpoint-dlp-learn-about.md)| 將 DLP 功能延伸至 Windows 10 電腦上使用及共用的專案 | [開始使用端點資料外洩防護（預覽版）](endpoint-dlp-getting-started.md)|

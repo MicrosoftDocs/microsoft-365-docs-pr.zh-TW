@@ -1,7 +1,7 @@
 ---
-title: Advanced 搜尋架構中的 AppFileEvents 表格
-description: 深入瞭解在高級搜尋架構的 AppFileEvents 資料表中，與雲端 app 和服務相關聯的檔案相關事件
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，table，欄，資料類型，描述，AppFileEvents，Cloud App Security，MCAS
+title: Advanced 搜尋架構中的 IdentityDirectoryEvents 表格
+description: 深入瞭解高級搜尋架構的 IdentityDirectoryEvents 資料表中的網域控制站和 Active Directory 事件
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，表格，欄，資料類型，描述，IdentityDirectoryEvents，網域控制站，Active Directory，Azure ATP，身分識別
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -17,19 +17,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4e7ddbc5b5cc330496c01d956c4bcecceb897a9a
+ms.openlocfilehash: 1a65a8e78dfa09bc0a417669a1efd35320e261da
 ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798035"
+ms.locfileid: "46798778"
 ---
-# <a name="appfileevents"></a>AppFileEvents
+# <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
 適用於：****
 - Microsoft 威脅防護
 
-[！附注] `AppFileEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含雲端 app 和服務中由 Microsoft cloud App Security 監控之檔案相關活動的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
+`IdentityDirectoryEvents` [Advanced 搜尋](advanced-hunting-overview.md)架構中的表格包含的事件包括內部部署網域控制站執行 ACTIVE Directory (AD) 。 此表格會捕獲各種身分識別相關的事件，例如密碼變更、密碼到期和使用者主要名稱 (UPN) 變更。 它也會在網域控制站上捕獲系統事件，例如排程任務和 PowerShell 活動。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!TIP]
 > 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
@@ -41,24 +43,24 @@ ms.locfileid: "46798035"
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
 | `ActionType` | string | 觸發事件的活動類型。 如需詳細資訊，請參閱[入口網站內架構參考](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `Application` | string | 執行錄製動作的應用程式 |
-| `FileName` | 字串 | 記錄動作已套用的檔案名稱 |
-| `FolderPath` | 字串 | 包含錄製的動作所套用之檔案的資料夾 |
-| `PreviousFileName` | string | 重新命名為動作結果之檔案的原始名稱 |
-| `PreviousFolderPath` | string | 在套用錄製的動作之前包含檔的原始檔案夾 |
-| `Protocol` | string | 使用的網路通訊協定 |
+| `TargetAccountUpn` | string | 套用錄製動作之帳戶的使用者主要名稱 (UPN)  |
+| `TargetAccountDisplayName` | string | 套用錄製的動作所套用之帳戶的顯示名稱 |
+| `TargetDeviceName` | string | 套用錄製動作之裝置的完整功能變數名稱 (FQDN)  |
+| `DestinationDeviceName` | string | 執行伺服器應用程式（處理錄製的動作）的裝置名稱 |
+| `DestinationIPAddress` | string | 執行伺服器應用程式（處理錄製的動作）的裝置的 IP 位址 |
+| `DestinationPort` | string | 活動的目的地埠 |
+| `Protocol` | string | 通訊期間使用的通訊協定 |
 | `AccountName` | string | 帳戶的使用者名稱 |
 | `AccountDomain` | string | 帳戶的網域 |
 | `AccountUpn` | string | 帳戶的使用者主要名稱 (UPN)  |
+| `AccountSid` | string | 帳戶的安全性識別碼 (SID)  |
 | `AccountObjectId` | string | Azure AD 中帳戶的唯一識別碼 |
 | `AccountDisplayName` | string | 顯示在通訊錄中之帳戶使用者的名稱。 通常是指定的名稱或名字、中間初始名稱或姓氏的組合。 |
 | `DeviceName` | string | 裝置的完整功能變數名稱 (FQDN)  |
-| `DeviceType` | string | 裝置類型 | 
-| `OSPlatform` | string | 裝置上所執行作業系統的平臺。 這表示特定作業系統，包括相同家族內的變化，例如 Windows 10 和 Windows 7。 |
-| `IPAddress` | 字串 | 指派給端點的 IP 位址，並在相關的網路通訊期間使用 |
-| `DestinationDeviceName` | string | 執行伺服器應用程式（處理錄製的動作）的裝置名稱 |
-| `DestinationIPAddress` | string | 執行伺服器應用程式（處理錄製的動作）的裝置的 IP 位址 |
+| `IPAddress` | string | 通訊期間指派給裝置的 IP 位址 |
+| `Port` | string | 通訊期間使用的 TCP 埠 |
 | `Location` | string | 與事件關聯的城市、國家或其他地理位置 |
-| `Isp` | string | 網際網路服務提供者 (與端點 IP 位址相關聯的 ISP)  |
+| `ISP` | string | 與 IP 位址相關聯的網際網路服務提供者 |
 | `ReportId` | long | 事件的唯一識別碼 |
 | `AdditionalFields` | string | 實體或事件的其他資訊 |
 

@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 308337f806d54f1beb7ae6112b2ed883707d4513
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: d9b5fd9bfe881ec1313afb26da5d19cd96054862
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649292"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797825"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解進階搜捕結構描述
 
@@ -31,22 +31,22 @@ ms.locfileid: "46649292"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[！附注][高級搜尋](advanced-hunting-overview.md)架構是由多個表格組成，可提供事件資訊或裝置、警示、身分識別及其他實體類型的相關資訊。 若要有效組建跨越多個表格的查詢，您需要了解進階搜捕結構描述中的表格和欄。
+[！附注] [高級搜尋](advanced-hunting-overview.md) 架構是由多個表格組成，可提供事件資訊或裝置、警示、身分識別及其他實體類型的相關資訊。 若要有效組建跨越多個表格的查詢，您需要了解進階搜捕結構描述中的表格和欄。
 
 ## <a name="get-schema-information-in-the-security-center"></a>在安全性中心取得架構資訊
 建立查詢時，請使用內建架構參考，快速取得架構中每個資料表的下列相關資訊：
 
-- **資料表描述**—資料表中包含的資料類型和該資料的來源。
-- **欄**-表格中的所有欄。
-- **動作類型**—欄中的可能值， `ActionType` 代表資料表支援的事件種類。 這只是針對包含事件資訊的資料表提供。
-- **範例查詢**--可用於功能如何使用表格的範例查詢。
+- **資料表描述** —資料表中包含的資料類型和該資料的來源。
+- **欄** -表格中的所有欄。
+- **動作類型** —欄中的可能值， `ActionType` 代表資料表支援的事件種類。 這只是針對包含事件資訊的資料表提供。
+- **範例查詢** --可用於功能如何使用表格的範例查詢。
 
 ### <a name="access-the-schema-reference"></a>存取架構參考
-若要快速存取架構參照，請選取架構表示中的資料表名稱旁邊的**View reference**動作。 您也可以選取 [**架構參考**]，以搜尋表格。   
+若要快速存取架構參照，請選取架構表示中的資料表名稱旁邊的 **View reference** 動作。 您也可以選取 [ **架構參考** ]，以搜尋表格。   
 
 ![顯示如何存取入口網站架構參考的影像 ](../../media/mtp-ah/ah-reference.png) 
 
-## <a name="schema-tables"></a>結構描述表格
+## <a name="learn-the-schema-tables"></a>瞭解架構表格
 以下參考列出結構描述中的所有表格。 每個表格名稱都會連結到描述該表格之欄名稱的頁面。 表格和欄名稱也同樣列於安全性中心，成為進階搜捕畫面上結構描述代表中的一部分。
 
 | 表格名稱 | 描述 |
@@ -72,6 +72,7 @@ ms.locfileid: "46649292"
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 電子郵件事件，包括電子郵件傳遞和封鎖事件 |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Microsoft 365 將電子郵件傳遞至收件者信箱之後，進行傳遞後的安全性事件 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | 有關電子郵件 URLs 的資訊 |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 與執行 Active Directory (AD) 的內部部署網域控制站相關的事件。 此表格涵蓋 identity 相關事件的範圍，以及網域控制站上的系統事件。 |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | 各來源的帳戶資訊，包括 Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory 和 Microsoft online services 上的驗證事件 |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | 對 Active Directory 物件（例如使用者、群組、裝置和網域）執行的查詢活動 |
@@ -81,5 +82,5 @@ ms.locfileid: "46649292"
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用查詢結果工作](advanced-hunting-query-results.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

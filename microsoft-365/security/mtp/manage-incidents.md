@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f711cc2ff38f15dfd22097e37a1dec42719eb5aa
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: 8880655ec24f20efd139b8334ab754f51146b496
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148111"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46798207"
 ---
 # <a name="manage-incidents-in-microsoft-threat-protection"></a>管理 Microsoft 威脅防護中的事件
 
@@ -43,16 +43,16 @@ ms.locfileid: "45148111"
 在調查時，若您要將警示從某事件移到另一個事件，也可以從 [警示] 索引標籤執行此動作，以建立包含所有相關警示的較大或較小事件。
 
 ## <a name="edit-incident-name"></a>編輯事件名稱
-根據預設，系統會為事件指派一個編號。 您可以修改事件名稱，以更符合您偏好的命名慣例。
+事件會根據警示屬性（如受影響的端點數目、受影響的使用者、偵測來源或類別）自動指派名稱。 這可讓您快速瞭解事件的範圍。
 
-> [!TIP]
-> 如需更深入的可見度、自動事件命名，目前在公開預覽中，會根據警示屬性（如受影響的端點數目、受影響的使用者、偵測來源或類別）產生事件名稱。 這可讓您快速瞭解事件的範圍。
->
-> 例如：多*個來源所報告之多個端點上的多階段事件。*
->
-> 在自動事件命名的首展之前，發生的事件，其名稱不會變更。
->
-> 深入瞭解[開啟預覽功能](preview.md#turn-on-preview-features)。
+例如：多 *個來源所報告之多個端點上的多階段事件。*
+
+您可以修改事件名稱，以更符合您偏好的命名慣例。
+
+> [!NOTE]
+> 在自動事件命名功能的展示中，已存在的事件將保留其名稱。
+
+
 
 ## <a name="assign-incidents"></a>指派事件
 如果尚未指派事件，您可以選取 **[指派給我]** 將事件指派給自己。 這樣做不僅表示您承擔該事件的擁有權，還包括所有與該事件相關的警示。

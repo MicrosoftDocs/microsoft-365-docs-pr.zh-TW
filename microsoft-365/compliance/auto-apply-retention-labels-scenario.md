@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 如何使用中繼資料分類內容、自動套用標籤，以及使用事件式保留來啟動保留期間，以便在 SharePoint 中使用保留標籤來管理文件生命週期。
-ms.openlocfilehash: 250bf182c26616a3a2f9253471469d2cecbd8d2b
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 8aed846c8c95aad737a9dfd56e4df7533e57a329
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560666"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778543"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>使用保留標籤來管理儲存在 SharePoint 中的文件生命週期
 
@@ -107,7 +107,7 @@ ms.locfileid: "46560666"
 
 - **保留期間：** 5 年 (1,825 天)。
 
-- **記錄標籤**：設定保留標籤，以便將內容分類為[*記錄*](records.md)  (使用者無法修改或刪除分類為*記錄*的文件)。
+- **記錄標籤**：設定保留標籤，以便將內容分類為[記錄](records-management.md#records)。 (使用者無法修改或刪除分類為*記錄*的文件)。
 
 - **檔案計畫描述元：**(用於簡化案例，不會提供檔案描述元)
 

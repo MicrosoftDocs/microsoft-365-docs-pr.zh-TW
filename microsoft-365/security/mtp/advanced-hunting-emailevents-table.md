@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c4f7f578aef3612696a8d5ab2a76111ff16d27b7
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 63f95b281dd2284168817a8edd9777c470f01d34
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648884"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797919"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -33,16 +33,19 @@ ms.locfileid: "46648884"
 
 [進階搜捕](advanced-hunting-overview.md)結構描述中的 `EmailEvents` 表格包含有關在 Office 365 ATP 處理電子郵件的事件相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
+>[!TIP]
+> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
 | 欄名稱 | 資料類型 | 描述 |
 |-------------|-----------|-------------|
-| `Timestamp` | datetime | 事件記錄的日期和時間。 |
+| `Timestamp` | datetime | 事件記錄的日期和時間 |
 | `EmailId` | 字串 | 唯一電子郵件和收件者識別碼 |
 | `NetworkMessageId` | 字串 | Microsoft 365 產生之電子郵件的唯一識別碼 |
 | `InternetMessageId` | 字串 | 透過傳送電子郵件系統所設定之電子郵件的公開識別碼 |
 | `SenderMailFromAddress` | 字串 | [郵件寄件者] 標頭中的寄件者電子郵件地址，又稱為信封寄件者或退回路徑位址 |
-| `SenderFromAddress` | 字串 | [寄件者] 標頭中的寄件者電子郵件地址，可對電子郵件用戶端上的電子郵件收件者顯示 |
+| `SenderFromAddress` | 字串 | 電子郵件用戶端上的電子郵件收件者看得到 [寄件者] 標題中的寄件者電子郵件地址 |
 | `SenderMailFromDomain` | 字串 | [郵件寄件者] 標頭中的寄件者網域，也稱為信封寄件者或退回路徑位址 |
 | `SenderFromDomain` | 字串 | [寄件者] 標頭中的寄件者網域，可對電子郵件用戶端上的電子郵件收件者顯示 |
 | `SenderIPv4` | 字串 | 轉送郵件的最後偵測郵件伺服器的 IPv4 位址 |
@@ -68,6 +71,6 @@ ms.locfileid: "46648884"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

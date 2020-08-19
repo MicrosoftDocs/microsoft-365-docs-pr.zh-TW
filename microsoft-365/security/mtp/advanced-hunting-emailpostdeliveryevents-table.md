@@ -17,19 +17,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 0384f3ba07b42c8e783994dfa1db75cf2d6ca80b
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 88074de8792124557c65b5be074e3b02bfec2511
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648860"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797883"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
 適用於：****
 - Microsoft 威脅防護
 
-[！附注] `EmailPostDeliveryEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含對 Microsoft 365 所處理之電子郵件所採取之投遞後動作的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `EmailPostDeliveryEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含對 Microsoft 365 所處理之電子郵件所採取之投遞後動作的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+
+>[!TIP]
+> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
 
 若要取得個別電子郵件訊息的詳細資訊，您也可以使用 [`EmailEvents`](advanced-hunting-emailevents-table.md) 、 [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) 和 [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) 資料表。 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -49,14 +52,14 @@ ms.locfileid: "46648860"
 ## <a name="supported-event-types"></a>支援的事件種類
 此表格會捕獲具有下列值的事件 `ActionType` ：
 
-- **手動修正**–系統管理員會在電子郵件傳送至使用者信箱後，手動對該電子郵件採取動作。 這包括透過[威脅瀏覽器](../office-365-security/threat-explorer.md)手動採取的動作，或核准[ (AIR) 動作的自動調查和回應](mtp-autoir-actions.md)。
-- **網路釣魚 ZAP** –[零小時自動清除 (ZAP) ](../office-365-security/zero-hour-auto-purge.md)會在傳送後對網路釣魚電子郵件採取動作。
+- **手動修正** –系統管理員會在電子郵件傳送至使用者信箱後，手動對該電子郵件採取動作。 這包括透過 [威脅瀏覽器](../office-365-security/threat-explorer.md) 手動採取的動作，或核准 [ (AIR) 動作的自動調查和回應](mtp-autoir-actions.md)。
+- **網路釣魚 ZAP** – [零小時自動清除 (ZAP) ](../office-365-security/zero-hour-auto-purge.md) 會在傳送後對網路釣魚電子郵件採取動作。
 - **惡意程式碼 ZAP** –零小時自動清除 (ZAP) 在傳送後，包含惡意程式碼的電子郵件上採取的動作。
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

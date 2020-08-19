@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 892ffe59f0902938b5d248e11a967b46de9c30b3
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 00e8b30507228df41c8eb29eac88102e59d0950b
+ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649046"
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46797965"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -31,7 +31,10 @@ ms.locfileid: "46649046"
 
 
 
-[！附注] `DeviceNetworkEvents` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含有關網路連線和相關事件的資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `DeviceNetworkEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含有關網路連線和相關事件的資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+
+>[!TIP]
+> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -40,7 +43,7 @@ ms.locfileid: "46649046"
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
 | `DeviceId` | string | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
-| `ActionType` | string | 觸發事件的活動類型 |
+| `ActionType` | string | 觸發事件的活動類型。 如需詳細資訊，請參閱[入口網站內架構參考](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
 | `RemoteIP` | 字串 | 連線到的 IP 位址 |
 | `RemotePort` | int | 連線的遠端裝置上的 TCP 埠 |
 | `RemoteUrl` | 字串 | 已連線到的 URL 或完整網域名稱 (FQDN) |
@@ -72,6 +75,6 @@ ms.locfileid: "46649046"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

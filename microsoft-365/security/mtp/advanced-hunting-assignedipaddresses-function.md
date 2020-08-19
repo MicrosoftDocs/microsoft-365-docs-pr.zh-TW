@@ -1,0 +1,82 @@
+---
+title: 'AssignedIPAddresses Microsoft 威脅防護的高級搜尋中的 ( # A1 函數'
+description: '瞭解如何使用 AssignedIPAddresses ( # A1 函數來取得指派給裝置的最新 IP 位址'
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema reference，kusto，FileProfile，file profile，function，豐富
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: microsoft-365-enterprise
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: lomayor
+author: lomayor
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.openlocfilehash: 72d02bafa168e48c2d588771f5289da09e6d6000
+ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/18/2020
+ms.locfileid: "46794228"
+---
+# <a name="assignedipaddresses"></a>AssignedIPAddresses ( # A1
+
+適用於：****
+- Microsoft 威脅防護
+
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
+使用此 `AssignedIPAddresses()` 功能可快速取得從指定時間點指派給裝置或最近的 ip 位址的最新 ip 位址。 此函數會傳回含下列各欄的資料表：
+
+| 欄 | 資料類型 | 描述 |
+|------------|-------------|-------------|
+| 時間 戳 | datetime | 使用 IP 位址觀測裝置的最晚時間 |
+| IPAddress | string | 裝置使用的 IP 位址 |
+| IPType | string | 指出 IP 位址是否為公用或私人位址 |
+| NetworkAdapterType | int | 已獲指派 IP 位址之裝置使用的網路介面卡類型。 如需可能的值，請參閱 [this 列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2)  |
+| ConnectedNetworks | int | 與指派之 IP 位址的介面卡相連的網路。 每個 JSON 陣列都包含網路名稱、類別 (public、private 或 domain) 、描述及表明其是否已公開連接到網際網路的標誌。 |
+
+
+## <a name="syntax"></a>語法
+
+```kusto
+AssignedIPAddresses(x, y)
+```
+
+## <a name="arguments"></a>引數
+
+- **x** `DeviceId` 或 `DeviceName` 值，用以識別裝置
+- **y** - `Timestamp` (datetime) 值，表示取得最近的 IP 位址的特定時間點。 若未指定，該函數會傳回最新的 IP 位址。
+
+## <a name="examples"></a>範例
+
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-as-of-24-hours-ago"></a>取得裝置在24小時前所使用的 IP 位址清單
+
+```kusto
+AssignedIPAddresses('example-device-name', ago(1d))
+```
+
+### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>取得裝置使用的 IP 位址，並尋找與其通訊的裝置
+此查詢使用此 `AssignedIPAddresses()` 函數來取得 `example-device-name` 在特定日期 () 之前或之前的裝置 () 的指派 IP 位址 `example-date` 。 然後，它會使用 IP 位址尋找其他裝置所初始化之裝置的連線。 
+
+```kusto
+let Date = datetime(example-date);
+let DeviceName = "example-device-name";
+// List IP addresses used on or before the specified date
+AssignedIPAddresses(DeviceName, Date)
+| project DeviceName, IPAddress, AssignedTime = Timestamp 
+// Get all network events on devices with the assigned IP addresses as the destination addresses
+| join kind=inner DeviceNetworkEvents on $left.IPAddress == $right.RemoteIP
+// Get only network events around the time the IP address was assigned
+| where Timestamp between ((AssignedTime - 1h) .. (AssignedTime + 1h))
+```
+
+## <a name="related-topics"></a>相關主題
+- [進階搜捕概觀](advanced-hunting-overview.md)
+- [了解查詢語言](advanced-hunting-query-language.md)
+- [了解結構描述](advanced-hunting-schema-tables.md)

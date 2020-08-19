@@ -18,26 +18,26 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 使用 Microsoft 365 中的記錄管理，您可以將保留時間表套用到管理保留、記錄聲明和處置的檔案計畫中。
-ms.openlocfilehash: 08b028bbd28c06684245321e09f8ef3252098956
-ms.sourcegitcommit: a53af7a228bb1f58cb8128a69a19da49f9e28700
+ms.openlocfilehash: c2ff344d22286fcd865aa08344389dad6334d48d
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45372486"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778321"
 ---
-# <a name="records-management-in-microsoft-365"></a>Microsoft 365 中的記錄管理
+# <a name="learn-about-records-management"></a>了解記錄管理
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)*
 
 所有類型的組織都需要記錄管理解決方案，用來管理其公司資料間的法規、法務及業務關鍵記錄。 Microsoft 365 中的記錄管理可幫助組織管理其法律義務，提供展現法規遵循的能力，並提高不再需要保留、不再具有價值或商業用途不再需要的項目一般處置的效率。
 
-Microsoft 365 中的記錄管理提供下列功能：
+請使用下列功能以支援 Microsoft 365 中的記錄管理解決方案：
 
-- **標籤內容做為記錄**。 建立並設定將內容標記為[記錄](records.md)的保留標籤，使用者可識別敏感性資訊、關鍵字或內容類型而套用或[自動套用](apply-retention-labels-automatically.md)標籤。
+- **標籤內容做為記錄**。 建立並設定保留標籤，以便將內容標示為[記錄](#records)，讓使用者自行套用或透過辨識敏感性資訊、關鍵字、或內容類型而自動套用。
 
 - **使用檔案計劃來移轉和管理您的保留需求**。 透過使用[檔案計劃](file-plan-manager.md)，您可以將現有的保留計劃帶入 Microsoft 365，或是建立新的保留方案以增強管理功能。
 
-- **使用保留標籤以設定保留和刪除設定**。 根據各種因素，包括最後一次修改或建立日期，定義保留與處置期間。
+- **使用保留標籤以便設置保留和刪除的設定值**。 依照各種因素，包括建立的日期或最近一次修改的日期，使用保留期間和動作設定[保留標籤](retention.md#retention-labels)。
 
 - 利用[事件型保留](event-driven-retention.md)，**當事件發生時開始不同的保留期間**。
 
@@ -47,12 +47,59 @@ Microsoft 365 中的記錄管理提供下列功能：
 
 - 為組織中的記錄管理員功能**設定特定權限**，以讓其[具有適當權限](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
-您可以使用 Microsoft 365 中的記錄管理解決方案，將組織的保留排程和需求納入檔案計畫，以便管理保留、記錄宣告和處置，以支援完整的內容生命週期。
+藉由使用這些功能，您可以將組織的保留排程和需求整合成一份記錄管理解決方案，以便管理保留、紀錄聲明和處置，以支援完整的內容生命週期。
 
-## <a name="additional-resources"></a>其他資源
+除了線上文件，您可能會發現，收聽記錄管理的[網路研討會錄音檔](https://aka.ms/MIPC/Video-RecordsManagementWebinar)，並下載隨附的[常見問題投影片組](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)是很實用的。
 
-請參閱 [網路研討會記錄](https://aka.ms/MIPC/Video-RecordsManagementWebinar)和記錄管理的[常見問題集](https://aka.ms/MIPC/Blog-RecordsManagementWebinar)。
+## <a name="records"></a>記錄
+
+當內容標示為記錄時：
+
+- 根據[允許或封鎖的動作](#compare-restrictions-for-what-actions-are-allowed-or-blocked)，對項目施加限制。
+
+- 關於項目的其他活動會予以記錄。
+
+- 在項目保留期結束時將其刪除時，您會有處置證明。
+
+使用[保留標籤](retention.md#retention-labels)將內容標記為記錄。 您可以發佈這些標籤，讓使用者和系統管理員手動將這些標籤套用至內容，或自動將這些標籤套用到您想要標記為記錄的內容。
+
+透過使用保留標籤來將內容標記為記錄，您可以在 Microsoft 365 環境中實作單一且一致的管理記錄策略。
+
+### <a name="compare-restrictions-for-what-actions-are-allowed-or-blocked"></a>比較允許或封鎖動作的限制
+
+使用下表來找出由於套用標準保留標籤，對內容施加的限制，以及將內容標示為記錄的保留標籤。 
+
+標準的保留標籤具有保留設定和動作，但不能將內容標示為記錄。
+
+>[!NOTE] 
+> 為了完整起見，表格包含鎖定和解除鎖定記錄的欄，這適用於 SharePoint 和 OneDrive，但不適用 Exchange。 鎖定和解除鎖定記錄的功能會使用[記錄版本設定](record-versioning.md)，其不支援 Exchange 項目。 因此，針對標示為記錄的所有 Exchange 項目，行為會對應到**記錄 - 鎖定**欄，而**記錄 - 解除鎖定**則不相關。
+
+
+|動作| 保留標籤 |記錄 - 鎖定| 記錄 - 解除鎖定|
+|:-----|:-----|:-----|:-----|:-----|
+|編輯內容|允許 | **封鎖** | 允許|
+|編輯內容，包括重新命名|已允許 |已允許 | 已允許|
+|刪除|允許 <sup>1</sup> |**封鎖** | **封鎖**|
+|複製|已允許 |已允許 | 已允許|
+|在容器內移動 <sup>2</sup>|已允許 |已允許 | 已允許|
+|在容器間移動 <sup>2</sup>|允許 |如果從未解除鎖定則允許 | 允許|
+|開啟/讀取|已允許 |已允許 | 已允許|
+|變更標籤|允許 |允許 - 僅限容器系統管理員 | 允許 - 僅限容器系統管理員|
+|移除標籤|允許 |允許 - 僅限容器系統管理員 | 允許 - 僅限容器系統管理員|
+
+註腳：
+
+<sup>1</sup> OneDrive 和 Exchange 透過將複本保留在安全的位置但由 SharePoint 鎖定而支援。
+
+使用者嘗試刪除 SharePoint 中的加標籤文件時會看見的訊息：
+
+![無法從 SharePoint 中刪除項目的訊息](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
+
+
+<sup>2</sup> 容器包括 SharePoint 文件庫和 Exchange 信箱。
 
 ## <a name="next-steps"></a>後續步驟
 
-如果您準備好要開始使用 Microsoft 365 中的記錄管理，請參閱[了解記錄](records.md)。
+請參照[開始使用記錄管理](get-started-with-records-management.md)。
+
+若要將內容標示為記錄，請參閱[使用保留標籤宣告記錄](declare-records.md)。
