@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在 Microsoft 365 中實施 Microsoft 資訊管理功能，以管理法規遵從性或法規需求的資料。
-ms.openlocfilehash: b67fbe1a8336ba73d1c43ebc531657c60dd3e8d8
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: 8883b376f75ecd92c99d837a769ef6297b5e7129
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804241"
+ms.locfileid: "46815186"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 microsoft 資訊管理
 
@@ -27,11 +27,13 @@ ms.locfileid: "46804241"
 
 使用 Microsoft 資訊控管 (有時候會以 MIG) 功能來管理您的資料，以用於法規遵從性或法規需求。
 
+想要保護您的資料嗎？ 請參閱 microsoft [365 中的 Microsoft 資訊保護](protect-information.md)。
+
 ## <a name="information-governance"></a>資訊管理
 
 若要保留您想要的內容，並刪除您不會執行的動作：
  
-|功能|它會解決什麼問題？|開始使用|
+|功能|它會解決什麼問題？|入門|
 |:------|:------------|:--------------------|:-----------------------------|
 |[保留原則和保留標籤](retention.md)| 保留或刪除具有原則管理的內容，以及電子郵件、檔、即時消息等的刪除工作流程 <br /><br />範例案例： [自動將保留標籤套用至內容](apply-retention-labels-automatically.md) | [開始使用保留原則和保留標籤](get-started-with-retention.md)|
 |[匯入服務](importing-pst-files-to-office-365.md)| 將 PST 檔案大量匯入到 Exchange Online 信箱，以保留及搜尋電子郵件訊息的法規遵從性或法規需求 | [使用網路上傳將組織的 PST 檔案匯入 Microsoft 365](use-network-upload-to-import-pst-files.md)|
@@ -42,7 +44,7 @@ ms.locfileid: "46804241"
 
 若要管理對法律、商務或法規義務的高價值內容，請使用記錄管理：
 
-|功能|它會解決什麼問題？|開始使用|
+|功能|它會解決什麼問題？|入門|
 |:------|:------------|---------------------|:----------------------------|
 |[記錄管理](records-management.md)| 單一的電子郵件和檔方案，可將保留排程和需求納入檔計畫，以支援記錄的完整生命週期，以及記錄宣告、保留及處置 <br /><br />範例案例： [記錄的處置](disposition.md#disposition-of-records)|[開始使用記錄管理](get-started-with-records-management.md) |
 
