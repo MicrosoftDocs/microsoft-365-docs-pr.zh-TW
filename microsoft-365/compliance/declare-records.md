@@ -17,25 +17,27 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用 [保留標籤] 宣告記錄。
-ms.openlocfilehash: c8024cf08be2259ffa8b6747bebf4943e11e4d60
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d637817e8d1bcc8c72bfe011dfd288ac4e2d0298
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695240"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778513"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>使用 [保留標籤] 宣告記錄
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)*
 
-使用[保留標籤](retention.md#retention-labels)將內容標記為記錄。 您可以發佈這些標籤，讓使用者和系統管理員手動將這些標籤套用至內容，或自動將這些標籤套用到您想要標記為記錄的內容。
+若要將項目宣告為紀錄，您可使用 [保留標籤](retention.md#retention-labels) 將其內容標示為記錄。 您可以發佈這些標籤，讓使用者和系統管理員手動將這些標籤套用至內容，或自動將這些標籤套用到您想要標記為記錄的內容。
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>設定 [保留標籤] 以宣告記錄
 
-當您建立 [保留標籤](retention.md#retention-labels) 時，可以選取選項將內容標記為記錄。
+當您建立或設定了一個保留標籤時，選取選項將內容標記為記錄。
 
 >[!NOTE] 
 > 當您在 Microsoft 365 合規性中心中建立或設定 **資訊控管** 中的保留標籤時，無法使用將內容標記為記錄的選項。 而是必須使用 **記錄管理**。
+
+若要將內容標示為記錄而建立一個新的保留標籤時：
 
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com) 中，移至 **[記錄管理]** \> **[檔案計畫]**。 選取在 **[檔案計畫]** 頁面上的 **[建立標籤]**。
 
@@ -62,6 +64,4 @@ ms.locfileid: "46695240"
 
 ## <a name="next-steps"></a>後續步驟
 
-如果您需要更新記錄的文件，請參閱 [使用記錄版本設定，以更新儲存在 SharePoint 或 OneDrive 中的記錄](record-versioning.md)。
-
-若要了解記錄的處置，請參閱[內容處置](disposition.md)。
+若需記錄管理支援的案例清單，請參閱 [[記錄管理的常見案例]](get-started-with-records-management.md#common-scenarios-for-records-management)。

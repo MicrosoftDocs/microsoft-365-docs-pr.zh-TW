@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作保留原則及保留標籤來管理貴組織的資料，但不確定從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: 910d5b64addfeda077a5fd34eb2409a9cac2516d
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: 33b2fbd40c19d1f4e2e2ef042eaa2fe21080eec1
+ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588171"
+ms.lasthandoff: 08/17/2020
+ms.locfileid: "46778289"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>開始使用保留原則和保留標籤
 
@@ -52,7 +52,7 @@ ms.locfileid: "46588171"
 
 您的合規性團隊中負責建立和管理保留原則和保留標籤的成員，必須具備 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)的權限。 根據預設，租用戶系統管理員 (全域系統管理員) 能夠存取此位置，並可讓法務人員和其他人員存取，而不需要為其提供租用戶系統管理員的所有權限。若要授與此受限制的系統管理權限，建議您將使用者新增至 [合規性系統管理員]**** 系統管理員角色群組。 如需相關指示，請參閱[讓使用者能夠存取安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
-需要這些權限才能建立及套用保留原則。 設定保留原則的人員不需要存取內容。
+只有在建立、設定、和套用保留原則及保留標籤時，才需要求這些權限。 設定這些保留原則和標籤的人員毋須存取內容。
 
 ## <a name="common-scenarios-for-retention-policies-and-retention-labels"></a>保留原則和保留標籤的常見案例
 
@@ -67,11 +67,12 @@ ms.locfileid: "46588171"
 |自動為文件和電子郵件套用一組保留和刪除動作 |[自動將保留標籤套用到內容](apply-retention-labels-automatically.md)|
 |當事件發生時，請啟動保留時間，例如:  <br />- 員工離開組織 <br />- 合約到期 <br />- 產品生命週期完結| [事件發生時開始保留](event-driven-retention.md)|
 |管理 SharePoint 中不同文件類型的生命週期| [使用保留標籤來管理儲存在 SharePoint 中的文件生命週期](auto-apply-retention-labels-scenario.md)|
-|針對文件和電子郵件使用單一記錄管理解決方案 |[Microsoft 365 中的記錄管理](records-management.md) |
 |符合美國證券交易委員會規定 17A-4|[使用 Exchange Online 和安全性與合規性中心以符合 SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |請確認在內容在保留期結束被刪除前，有人對內容進行檢查並核准|[處置檢閱](disposition.md#disposition-reviews) |
-|對於在保留期結束時被刪除的內容是否有處理證明|[記錄處置](disposition.md#disposition-of-records) |
 | 監視保留標籤的套用方式和位置 | [監視保留標籤](retention.md#monitoring-retention-labels) |
+|針對文件和電子郵件使用單一記錄管理解決方案 |[了解記錄管理](records-management.md) |
+
+如果您是為了記錄管理而使用保留標籤，還有其他保留標籤專用的案例，也可將其內容標示為記錄。 請參閱 [記錄管理的常見案例](get-started-with-records-management.md#common-scenarios-for-records-management)。
 
 ## <a name="end-user-documentation-for-retention-labels"></a>保留標籤的終端使用者文件
 
