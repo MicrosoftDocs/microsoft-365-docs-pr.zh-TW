@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Microsoft 365。 安裝精靈會引導您完成此程式。
-ms.openlocfilehash: 8b70466e5cf82d9cf5be67162263f28ab5bd0d5d
-ms.sourcegitcommit: 20c219332270f1013d48b39773dd0e48dabad9e4
+ms.openlocfilehash: 0adf8b4dcd5d7bd31038b74a574f449f32bfb037
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46592295"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814429"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>新增網域至 Microsoft 365
 
@@ -77,7 +77,7 @@ ms.locfileid: "46592295"
     
 2. 移至 [**設定**  >  **網域**] 頁面。 
 
-3. 選取 [**新增網域**]。
+3. 選取 [ **新增網域**]。
     
 4. 輸入您要新增的功能變數名稱，然後選取 **[下一步]**。
     
@@ -91,12 +91,12 @@ ms.locfileid: "46592295"
     
 6. 選擇您想要如何進行 DNS 變更，Office 才能使用您的網域。
     
-    1. 如果您想要讓 Office 自動設定 DNS，請選擇 [**為我新增 dns 記錄**]。 
+    1. 如果您想要讓 Office 自動設定 DNS，請選擇 [ **為我新增 dns 記錄** ]。 
     
   
-    2. 如果您只想要將特定的 Microsoft 365 服務附加至您的網域，請選擇 [**我要自行新增 DNS 記錄**]，否則請稍後再進行此操作。 **如果您確切知道您在做什麼，請選擇此選項。**
+    2. 如果您只想要將特定的 Microsoft 365 服務附加至您的網域，請選擇 [ **我要自行新增 DNS 記錄** ]，否則請稍後再進行此操作。 **如果您確切知道您在做什麼，請選擇此選項。**
     
-7. 如果您選擇*自行新增 DNS 記錄*，請選取 **[下一步]** ，您將會看到一個頁面，其中包含您需要新增至註冊機構網站以設定網域的所有記錄。 
+7. 如果您選擇  *自行新增 DNS 記錄*  ，請選取 **[下一步]** ，您將會看到一個頁面，其中包含您需要新增至註冊機構網站以設定網域的所有記錄。 
     
   
   
@@ -106,7 +106,7 @@ ms.locfileid: "46592295"
     
     如果您不知道您網域的 DNS 主機提供者或網域註冊機構，請參閱[尋找您的網域註冊機構或 DNS 主機服務提供者](../get-help-with-domains/find-your-domain-registrar.md)。
     
-    如果您想稍後等候，請滾動至底部，然後選取 [**略過此步驟**]。
+    如果您想稍後等候，請滾動至底部，然後選取 [ **略過此步驟**]。
     
 8. 選取 **[完成]** -您已經完成！ 
 
@@ -118,9 +118,9 @@ ms.locfileid: "46592295"
 
 2. 移至 [**設定**   >  **網域**] 頁面。
 
-3. 在 [**網域**] 頁面上，選取網域。 
+3. 在 [ **網域** ] 頁面上，選取網域。 
     
-4. 在 [ **DNS 設定**] 底下，選取 [**自訂記錄**]，然後選取 [**新增自訂記錄**]。
+4. 在 [ **DNS 設定**] 底下，選取 [ **自訂記錄**]，然後選取 [ **新增自訂記錄**]。
 
 5. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
     
@@ -163,5 +163,3 @@ ms.locfileid: "46592295"
 [在 Microsoft 365 中購買網域名稱](../get-help-with-domains/buy-a-domain-name.md)
 
 [設定您的網域 (主機專用指示)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
-
-[取得網域的說明](../get-help-with-domains/get-help-with-domains.md)

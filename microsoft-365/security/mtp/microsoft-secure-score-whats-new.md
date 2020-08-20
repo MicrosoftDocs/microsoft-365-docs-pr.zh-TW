@@ -20,16 +20,25 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4f9f4f40b9cd88cad1676417d467d04367eaa0be
-ms.sourcegitcommit: a08103bc120bdec7cfeaf67c1be4e221241e69ad
+ms.openlocfilehash: 644e12d3b9dfecc0a31c8d464033e41670bc7b88
+ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45200120"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46815228"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
 
-若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱[Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)。
+若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱 [Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)。
+
+## <a name="july-2020"></a>2020 年 7 月
+
+### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>新增 Azure 高級威脅防護的改進動作
+
+- 有風險的側面移動路徑
+- 不安全的帳戶屬性
+- 在 Active Directory 信任上啟用安全性功能
+- 從實體中移除不安全的 SID 歷程記錄屬性
 
 ## <a name="june-2020"></a>2020 年 6 月
 
@@ -52,7 +61,7 @@ ms.locfileid: "45200120"
 * 封鎖 Office 應用程式將程式碼注入其他程式
 * 封鎖可執行檔，除非符合流行、age 或受信任的清單準則
 * 封鎖來自 PSExec 和 WMI 命令的進程建立
-* 從 Windows local security 機關子系統封鎖認證竊取（lsass.exe）
+* 封鎖從 Windows local security 機關子系統進行的認證竊取 ( # A0) 
 * 封鎖 Office 宏的 WIN32 API 呼叫
 
 ## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>不相容身分識別安全分數與圖形 API
@@ -65,7 +74,7 @@ ms.locfileid: "45200120"
 
 - 新增 Azure Active Directory 改進動作
 - 新增 Azure 高級威脅防護改進動作
-- 支援 Microsoft Defender ATP[威脅 & 弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)安全性建議
+- 支援 Microsoft Defender ATP [威脅 & 弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全性建議
     - 現在提供 TVM 提供的所有發行安全性建議
 
 ## <a name="updated-interface-and-functionality"></a>更新的介面及功能
@@ -79,10 +88,10 @@ ms.locfileid: "45200120"
 
 ## <a name="we-want-to-hear-from-you"></a>我們想要聽到您的來信
 
-如果您有任何問題，請在[安全性、隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy)社區中公佈，以告知我們。 我們正在監視社區，並會提供協助。
+如果您有任何問題，請在 [安全性、隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社區中公佈，以告知我們。 我們正在監視社區，並會提供協助。
 
 ## <a name="related-resources"></a>相關資源
 
-- [評估安全狀況](microsoft-secure-score-improvement-actions.md)
+- [評估您的安全性狀態](microsoft-secure-score-improvement-actions.md)
 - [追蹤您的 Microsoft 安全分數記錄並符合目標](microsoft-secure-score-history-metrics-trends.md)
 - [即將推出的功能](microsoft-secure-score-whats-coming.md)

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 當您使用有效的工作或學校帳戶登入時，使用者可在 Microsoft 365 體驗中取得使用 Cortana 的雲端協助服務，以符合 Office 365 的企業級隱私權、安全性和合規性承諾。
-ms.openlocfilehash: 29e04726b04fafb0b79e5ba4625dce2ae74bfc67
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: e7464525774e15d5b54f1b2321948aef5d998558
+ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788845"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46818298"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -101,6 +101,8 @@ Windows 10 版本2004和更新版本中的 cortana，符合 Cortana enterprise �
 
 4. 將切換移至 [開啟] 或 [關閉]，取決於您是否要在此裝置上進行 Cortana 語音協助。
 
+[深入瞭解小組中的 Cortana 語音協助](https://support.microsoft.com/en-us/office/using-cortana-voice-assistance-in-teams-274bb2f0-d962-4182-b45d-307435cea256?ui=en-us&rs=en-us&ad=us)
+
 ### <a name="play-my-emails"></a>播放我的電子郵件
 
 透過 Outlook mobile (播放我的電子郵件（透過 Outlook mobile) 以語音導向的免提體驗，讓使用者透過其手機、耳機或相連的音訊裝置上的揚聲器收聽新的郵件，並透過揚聲器進行變更。 使用者可以要求 Cortana 高聲閱讀他們最近的電子郵件，並要求 Cortana 採取諸如旗標、封存、刪除和略過訊息等動作。 這項功能特別有助於在 commuting、多工工作或前往時追趕您的電子郵件。 當使用者在 [播放我的電子郵件] 中與 Cortana 交談時，語音音訊要求會直接移至 [Cortana enterprise 服務]。 在 Office 365 雲端中處理使用者電子郵件語音讀出的文字。 在此程式期間，不會在使用者的行動裝置上處理任何 Office 365 資料，也不會儲存電子郵件資料。 口述命令的成績單 (例如「標為已讀取」、「下一步」、「旗標」等等。 ) 可能會依照 Microsoft [Online Services 條款](https://www.microsoft.com/licensing/product-licensing/products)中的資料保護條款保留。
@@ -133,7 +135,7 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 我們將繼續引進與上述類似的經驗，協助您增加組織的生產力。
 
-深入瞭解 [Microsoft 規範服務](https://docs.microsoft.com/microsoft-365/compliance/offering-home)。
+[深入瞭解 Microsoft 規範服務](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
 
 ## <a name="how-is-the-delivery-of-cortana-enterprise-services-different-from-the-delivery-of-other-cortana-features-i-may-have-previously-experienced"></a>Cortana 企業服務的傳遞與我先前可能經歷的其他 Cortana 功能的傳遞有何不同？
 

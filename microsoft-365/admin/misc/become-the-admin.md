@@ -20,42 +20,42 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 瞭解如何驗證您的電子郵件和網域擁有權，以在 Microsoft 365 中接管未受管理的租使用者
-ms.openlocfilehash: 1eb54a6c34c9700bda09a660c71d2b1222fcdb8c
-ms.sourcegitcommit: 3ddcf08e8deec087df1fe524147313f1cb12a26d
+ms.openlocfilehash: 9c1d98616b10737553060bcbad62df9b3b4c0c9a
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45022154"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814465"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>執行內部系統管理員接管
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
 
 如果您是系統管理員，而且想要接管自助使用者註冊所建立的非管理租使用者，您可以使用內部系統管理員接管。
 
 > [!NOTE]
-> 使用 Azure AD 的任何雲端服務註冊的自助服務，會將使用者新增至未受管理或「陰影」 Azure AD 目錄，並建立未受管理的租使用者。 未受管理的租使用者是沒有全域管理員的目錄。 若要判斷承租人是否受管理或未受管理，請參閱[決定租使用者類型](https://docs.microsoft.com/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type)。 
+> 使用 Azure AD 的任何雲端服務註冊的自助服務，會將使用者新增至未受管理或「陰影」 Azure AD 目錄，並建立未受管理的租使用者。 未受管理的租使用者是沒有全域管理員的目錄。 若要判斷承租人是否受管理或未受管理，請參閱 [決定租使用者類型](https://docs.microsoft.com/power-platform/admin/powerapps-gdpr-dsr-guide-systemlogs#determining-tenant-type)。 
   
 ## <a name="step-1-verify-your-email-address"></a>步驟1：確認您的電子郵件地址
 
 > [!NOTE]
 > 如果您的承租人中已啟用自助功能，使用者可以自行訂閱免費服務，例如 Power BI。 這些步驟假設自助使用者訂閱已建立您想要當作系統管理員接管的非管理租使用者。在第一個步驟中，您會在未受管理的租使用者中建立使用者內容，使用 Power BI 來說明管理接管路徑。
 
-1. 若要註冊 power bi，請移至[power bi site](https://powerbi.com) ，然後選取 [**開始免費**  >  **開始免費試用版**（在與 Power BI Pro] 方塊中的 [共用]）。 
+1. 若要註冊 power bi，請移至[power bi site](https://powerbi.com) ，然後選取 [在使用 power bi Pro] 方塊中的 [**開始免費**  >  的**開始免費試用版** (]) 。 
 
-2. 使用您組織的功能變數名稱（例如）註冊使用者帳戶 `powerbiadmin@contoso.com` 。 若您的帳戶已在使用中，請使用您目前的密碼登入。
+2. 使用組織的功能變數名稱 (，如) ，註冊使用您組織的功能變數名稱的使用者帳戶 `powerbiadmin@contoso.com` 。 若您的帳戶已在使用中，請使用您目前的密碼登入。
 
-3. 請檢查您的電子郵件是否有**驗證碼**，並輸入驗證電子郵件地址的程式碼。
+3. 請檢查您的電子郵件是否有 **驗證碼** ，並輸入驗證電子郵件地址的程式碼。
     
 ## <a name="step-2-create-a-new-account"></a>步驟2：建立新帳戶
 
 1. 當您輸入驗證碼時，您會進入可讓您建立新帳戶的頁面。 
     
-2. 在 [使用者名稱] 和 [密碼] 欄位中填入您要使用的帳戶，然後選取 [**啟動**]。 
+2. 在 [使用者名稱] 和 [密碼] 欄位中填入您要使用的帳戶，然後選取 [ **啟動**]。 
     
 ## <a name="step-3-verify-domain-ownership-and-become-the-admin"></a>步驟3：確認網域擁有權並成為系統管理員
 
-1. 隨即會開啟 [**管理員**] 嚮導。 如果該嚮導未啟動，請尋找 [系統**管理**] 磚，然後選取它。 
+1. 隨即會開啟 [ **管理員** ] 嚮導。 如果該嚮導未啟動，請尋找 [系統 **管理** ] 磚，然後選取它。 
 
 2. 選取 **[是，我要成為系統管理員]**。
 
@@ -68,13 +68,11 @@ ms.locfileid: "45022154"
   
 ## <a name="related-articles"></a>相關文章
 
-YouTube：對[POWER BI 和 Microsoft 365 執行 IT 系統管理員的3個步驟](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube：對 [POWER BI 和 Microsoft 365 執行 IT 系統管理員的3個步驟](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
 [Azure AD 中的系統管理接管](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[取得網域的說明](../get-help-with-domains/get-help-with-domains.md)
-
-[在您的組織中使用自助註冊](self-service-sign-up.md)
+[在組織中使用自助式註冊](self-service-sign-up.md)
   
 [瞭解 Power BI 服務系統管理員角色](https://docs.microsoft.com/power-bi/service-admin-role)
 

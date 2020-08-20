@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 瞭解如何在 Microsoft 365 中購買功能變數名稱。
-ms.openlocfilehash: fcf13314d7206837f10459ed8c0a44e5d41f219b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: c9b4ac4cff7ad8166caa28b89e1195d98b3f6d27
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780190"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814453"
 ---
 # <a name="buy-a-domain-name"></a>購買網域名稱
 
@@ -48,7 +48,7 @@ ms.locfileid: "44780190"
 
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
     
-3. 在 [**網域**] 頁面上，選取 [**購買網域**]。
+3. 在 [ **網域** ] 頁面上，選取 [ **購買網域**]。
     
 您可以從下列頂層網域選擇您要的網域。
   
@@ -74,13 +74,13 @@ ms.locfileid: "44780190"
     
 
 > [!NOTE]
-> 當您選取 [**購買網域**] 時，當租使用者透過 Microsoft 合作夥伴購買/管理時，可能會重新導向至您的 Microsoft 合作夥伴網站。
+> 當您選取 [ **購買網域**] 時，當租使用者透過 Microsoft 合作夥伴購買/管理時，可能會重新導向至您的 Microsoft 合作夥伴網站。
 
 ### <a name="domain-privacy"></a>網域隱私權
 在購買網域時，我們會提供免費的網域隱私權訂閱。 這可讓您的連絡人資訊以 ICANN 私人的方式註冊您的網域。 [瞭解更多資訊。](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>向其他網域註冊機構購買網域
-如果您想要從[GoDaddy](https://www.godaddy.com)以外的網域註冊機構購買網域，我們建議您在下列其中一個支援自動安裝的產品（網域連接）。 
+如果您想要從 [GoDaddy](https://www.godaddy.com)以外的網域註冊機構購買網域，我們建議您在下列各項中使用，以支援自動安裝 (domain Connect) 。 
   
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [Wordpress](https://www.wordpress.com) 
@@ -107,7 +107,7 @@ Request the transfer at the registrar that you want to move your domain to. Look
 > [!CAUTION]
 > 有些網域註冊機構或 DNS 主機服務提供者不允許建立 Microsoft 365 所需的所有 DNS 記錄。 下列主機服務提供者則支援所有必要的記錄。 如果您想使用其他的主機服務提供者，請[Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)。 
   
-在您註冊網域（在網域註冊機構）之後，請以系統管理員身分登入 Microsoft 365，並設定您的網域，這樣您就可以使用電子郵件地址和其他服務。
+在網域註冊機構) 註冊網域 (後，請以系統管理員身分登入 Microsoft 365，並設定您的網域，以供您使用電子郵件地址及其他服務。
   
 > [!NOTE]
 > 本文中 SharePoint Online 公用網站資訊僅適用于您的組織在365年3月 9 2015 日之前購買 Microsoft。 
@@ -129,7 +129,5 @@ Request the transfer at the registrar that you want to move your domain to. Look
 [新增網域至 Microsoft 365](../setup/add-domain.md)
 
 [網域常見問題集](../setup/domains-faq.md)
-
-[取得網域的說明](get-help-with-domains.md)
 
 [更新 DNS 記錄以將您的網站保留在目前的主機服務提供者](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)。

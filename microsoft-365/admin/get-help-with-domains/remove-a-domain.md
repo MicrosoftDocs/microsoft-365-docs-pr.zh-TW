@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 瞭解如何從 Microsoft 365 移除舊的網域，以及將使用者和群組移至另一個網域。
-ms.openlocfilehash: 6f5e36a897316c8cdc057a725957c54e7eb53edc
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 57e52cc4f44e41d31200b8b5469aed6c36b63d24
+ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079758"
+ms.lasthandoff: 08/19/2020
+ms.locfileid: "46814417"
 ---
 # <a name="remove-a-domain"></a>移除網域
 
@@ -38,7 +38,7 @@ ms.locfileid: "45079758"
 
 ::: moniker-end
   
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
 您移除的是您的網域，因為您想要將它新增至不同的 Microsoft 365 訂閱計畫嗎？ 還是您只想取消訂閱？ 您可以[變更您的方案或訂閱](../../commerce/subscriptions/switch-to-a-different-plan.md)或[取消您的訂閱](../../commerce/subscriptions/cancel-your-subscription.md)。
   
@@ -48,15 +48,15 @@ ms.locfileid: "45079758"
 
 ::: moniker range="o365-worldwide"
 
-1. 移至系統<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a>。
+1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">[系統管理中心]</a>。
 
-2. 選取 [**使用者**作用 > 中**使用者**]。
+2. 選取 [ **使用者**作用 > 中 **使用者**]。
 
 3. 選取您要移動之所有使用者之名稱旁的方塊。
 
-4. 在頁面頂端選取 [**更多選項**] （**...**），然後選擇 [**變更網域**]。
+4. 在頁面頂端選取 [ **更多選項** ] (**...**) ]，然後選擇 [ **變更網域**]。
 
-5. 在 [**變更網域**] 窗格中，選取另一個網域。
+5. 在 [ **變更網域** ] 窗格中，選取另一個網域。
 
 如果您所處的網域也是您要移除的網域，您也必須為自己執行這個程序。為您的帳戶編輯網域時，您必須先登出，然後使用您選擇的新網域重新登入，才能繼續執行。
 
@@ -64,15 +64,15 @@ ms.locfileid: "45079758"
 
 ::: moniker range="o365-germany"
 
-1. 移至系統<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>。  
+1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[系統管理中心]</a>。  
 
-2. 選取 [**使用者**作用 > 中**使用者**]。
+2. 選取 [ **使用者**作用 > 中 **使用者**]。
 
 3. 選取您要移動之所有使用者之名稱旁的方塊。
 
 4. 在頁面頂端 **，選擇 [** > **編輯網域**]。
 
-5. 在 [**編輯網域**] 窗格中，選取另一個網域。
+5. 在 [ **編輯網域** ] 窗格中，選取另一個網域。
   
 如果您所處的網域也是您要移除的網域，您也必須為自己執行這個程序。為您的帳戶編輯網域時，您必須先登出，然後使用您選擇的新網域重新登入，才能繼續執行。
 
@@ -80,15 +80,15 @@ ms.locfileid: "45079758"
 
 ::: moniker range="o365-21vianet"
 
-1. 移至系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。  
+1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[系統管理中心]</a>。  
 
-2. 選取 [**使用者**作用 > 中**使用者**]。
+2. 選取 [ **使用者**作用 > 中 **使用者**]。
 
 3. 選取您要移動之所有使用者之名稱旁的方塊。
 
 4. 在頁面頂端 **，選擇 [** > **編輯網域**]。
 
-5. 在 [**編輯網域**] 窗格中，選取另一個網域。
+5. 在 [ **編輯網域** ] 窗格中，選取另一個網域。
   
 如果您所處的網域也是您要移除的網域，您也必須為自己執行這個程序。為您的帳戶編輯網域時，您必須先登出，然後使用您選擇的新網域重新登入，才能繼續執行。
 
@@ -98,11 +98,11 @@ ms.locfileid: "45079758"
 
 ::: moniker range="o365-worldwide"
 
-1. 移至系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>。
+1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[系統管理中心]</a>。
 
-2. 移至 [**使用者**作用 \> 中**使用者**]，然後從清單中選取您的帳戶。
+2. 移至 [ **使用者**作用 \> 中 **使用者**]，然後從清單中選取您的帳戶。
 
-3. 在 [**帳戶**] 索引標籤上，選取 [**管理使用者名稱**]，然後選擇不同的網域。
+3. 在 [ **帳戶** ] 索引標籤上，選取 [ **管理使用者名稱**]，然後選擇不同的網域。
   
 4. 在頂端，選取您的帳戶名稱，然後選取 **[登出]。**
 
@@ -114,11 +114,11 @@ ms.locfileid: "45079758"
 
 ::: moniker range="o365-germany"
 
-1. 移至 [**使用者**作用 \> 中**使用者**]，然後在清單中選取您的名稱。
+1. 移至 [ **使用者**作用 \> 中 **使用者**]，然後在清單中選取您的名稱。
 
-2. 在 [使用者**名稱/電子郵件**] 區段中，選取 [**編輯**]，然後選擇不同的網域。
+2. 在 [使用者 **名稱/電子郵件** ] 區段中，選取 [ **編輯**]，然後選擇不同的網域。
 
-3. 選取 [**設為主** > **儲存** > **關閉**]。
+3. 選取 [ **設為主** > **儲存** > **關閉**]。
   
 4. 在頂端，選取您的帳戶名稱，然後選取 **[登出]。**
 
@@ -130,11 +130,11 @@ ms.locfileid: "45079758"
 
 ::: moniker range="o365-21vianet"
 
-1. 移至 [**使用者**作用 \> 中**使用者**]，然後在清單中選取您的名稱。
+1. 移至 [ **使用者**作用 \> 中 **使用者**]，然後在清單中選取您的名稱。
 
-2. 在 [使用者**名稱/電子郵件**] 區段中，選取 [**編輯**]，然後選擇不同的網域。
+2. 在 [使用者 **名稱/電子郵件** ] 區段中，選取 [ **編輯**]，然後選擇不同的網域。
 
-3. 選取 [**設為主** > **儲存** > **關閉**]。
+3. 選取 [ **設為主** > **儲存** > **關閉**]。
   
 4. 在頂端，選取您的帳戶名稱，然後選取 **[登出]。**
 
@@ -148,7 +148,7 @@ ms.locfileid: "45079758"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a>] 頁面。
+1. 在系統管理中心中，移至 [ **群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a> ] 頁面。
   
 2. 選取組名，然後在 [**電子郵件地址，主要** **] 索引**標籤底下，選取 [**編輯**]。
 
@@ -160,7 +160,7 @@ ms.locfileid: "45079758"
 
 ::: moniker range="o365-germany"
 
-1. 在系統<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [**群組** > **群組**] 頁面。
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">管理中心</a>中，移至 [ **群組** > **群組** ] 頁面。
 
 2. 選取組名，然後選取 [**名稱**] 旁的 [**編輯**]。
 
@@ -172,7 +172,7 @@ ms.locfileid: "45079758"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [**群組** > **群組**] 頁面。
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [ **群組** > **群組** ] 頁面。
 
 2. 選取組名，然後選取 [**名稱**] 旁的 [**編輯**]。
 
@@ -192,21 +192,21 @@ ms.locfileid: "45079758"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 [**安裝** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">網域</a>] 頁面。
+1. 在系統管理中心中，移至 [ **安裝** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">網域</a> ] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 [**安裝** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">網域</a>] 頁面。
+1. 在系統管理中心中，移至 [ **安裝** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">網域</a> ] 頁面。
 
 ::: moniker-end
   
-2. 在 [**網域**] 頁面上，選取您要移除的網域。
+2. 在 [ **網域** ] 頁面上，選取您要移除的網域。
 
-3. 在右窗格中，選取 [**移除**]。
+3. 在右窗格中，選取 [ **移除**]。
 
-4. 遵循任何其他提示，然後選取 [**關閉**]。
+4. 遵循任何其他提示，然後選取 [ **關閉**]。
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>移除網域需要多久的時間？
 
@@ -214,7 +214,7 @@ ms.locfileid: "45079758"
   
 如果您有數百名或數千名使用者，請使用 PowerShell 來查詢所有使用者，然後將他們移到另一個網域。否則，UI 中很可能會遺失一些使用者，當您隨後想移除此網域時，將無法執行且不知道原因為何。如需詳細資訊，請參閱 [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) (英文)。若要設定預設網域，請使用 [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0) (英文)。
   
-## <a name="still-need-help"></a>是否仍需要協助？
+## <a name="still-need-help"></a>仍需要協助嗎？
 
 ::: moniker range="o365-worldwide"
 
@@ -228,8 +228,6 @@ ms.locfileid: "45079758"
 ## <a name="related-articles"></a>相關文章
 
 [網域常見問題集](../setup/domains-faq.md)
-
-[取得 Microsoft 365 網域的說明](get-help-with-domains.md)
 
 [切換到其他的商務用 Microsoft 365 方案](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
