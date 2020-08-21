@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: Admin
-ms.topic: hub-page
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.date: ''
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護，並設定如何將它用於您的組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8c2786ebda18b5730e1cbe93316f0d6cc319f6a9
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 8f1cecbb3141b4751778212025e5aad582707e12
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656622"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826822"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -53,7 +53,7 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 ### <a name="roles-and-permissions"></a>角色及權限
 
-您必須獲指派適當的角色，才能設定[安全性 & 合規性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)的原則。 下表包括一些範例：
+您必須獲指派適當的角色，才能設定 [安全性 & 合規性中心](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)的原則。 下表包括一些範例：
 
 ****
 
@@ -64,7 +64,7 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 |Exchange Online 組織管理|[Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>和<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
-若要深入瞭解，請參閱[安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+若要深入瞭解，請參閱 [安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="part-1---anti-malware-protection"></a>第1部分-反惡意程式碼保護
 
@@ -72,63 +72,63 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **反惡意**代碼]。
 
-2. 按兩下**預設**原則，然後選擇 [**設定**]。
+2. 按兩下 **預設** 原則，然後選擇 [ **設定**]。
 
 3. 指定下列設定：
 
-    - 在 [**惡意程式碼偵測回應**] 區段中，保留預設設定 [**否**]。
+    - 在 [ **惡意程式碼偵測回應** ] 區段中，保留預設設定 [ **否**]。
 
-    - 在 [**一般附件類型篩選**] 區段中，選擇 [**開啟**]。
+    - 在 [ **一般附件類型篩選** ] 區段中，選擇 [ **開啟**]。
 
 4. 按一下 [儲存]****。
 
-若要深入瞭解反惡意程式碼原則選項，請參閱[設定反惡意程式碼原則](configure-anti-malware-policies.md)。
+若要深入瞭解反惡意程式碼原則選項，請參閱 [設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
 ## <a name="part-2---protection-from-malicious-urls-and-files"></a>第2部分-防護惡意 URLs 和檔案
 
-在包含[Office 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (atp) 的訂閱中，您可以使用從惡意 URLs 和檔案進行的時刻防護，並且會透過[atp 安全附件](atp-safe-attachments.md)和[atp 安全連結](atp-safe-links.md)原則進行設定。
+在包含 [Office 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (atp) 的訂閱中，您可以使用從惡意 URLs 和檔案進行的時刻防護，並且會透過 [atp 安全附件](atp-safe-attachments.md) 和 [atp 安全連結](atp-safe-links.md) 原則進行設定。
 
 ### <a name="atp-safe-attachments-policies"></a>ATP 安全附件原則
 
-若要設定[Atp 安全附件](atp-safe-attachments.md)，您必須至少定義一個 Atp 安全附件原則。
+若要設定 [Atp 安全附件](atp-safe-attachments.md)，您必須至少定義一個 Atp 安全附件原則。
 
 1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 安全附件**]。
 
-2. 選取 [為**SharePoint、OneDrive 和 Microsoft 團隊開啟 ATP**] 選項。
+2. 選取 [為 **SharePoint、OneDrive 和 Microsoft 團隊開啟 ATP**] 選項。
 
-3. 在 [**保護電子郵件附件**] 區段中，按一下加號 (**+**) 。
+3. 在 [ **保護電子郵件附件** ] 區段中，按一下加號 (**+**) 。
 
 4. 指定下列設定：
 
-   - 在 [**名稱**] 方塊中，輸入 `Block malware` 。
+   - 在 [ **名稱** ] 方塊中，輸入 `Block malware` 。
 
-   - 在 [回應] 區段中，選擇 [**封鎖**]。
+   - 在 [回應] 區段中，選擇 [ **封鎖**]。
 
-   - 在 [重新**導向附件**] 區段中，選取 [**啟用重新導向**] 選項，然後指定組織之安全性管理員或操作員的電子郵件地址，以查看偵測到的檔案。
+   - 在 [重新 **導向附件** ] 區段中，選取 [ **啟用重新導向**] 選項，然後指定組織之安全性管理員或操作員的電子郵件地址，以查看偵測到的檔案。
 
-   - 在 [套用**于**] 區段中，選擇 **[收件者網域是**]。 然後，選取您的網域，選擇 [**新增**]，然後按一下 **[確定]**。
+   - 在 [套用 **于** ] 區段中，選擇 **[收件者網域是**]。 然後，選取您的網域，選擇 [ **新增**]，然後按一下 **[確定]**。
 
 5. 按一下 [儲存]****。
 
-6.  (**建議的其他步驟**) 為全域系統管理員或 SharePoint Online 管理員，請執行**[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** 指令程式，並將您的 Microsoft 365 環境的**DisallowInfectedFileDownload**參數設定為*true* 。  (此方式可防止使用者開啟、移動、複製或共用偵測為惡意的檔案。 ) 
+6.  (**建議的其他步驟**) 為全域系統管理員或 SharePoint Online 管理員，請執行 **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** 指令程式，並將您的 Microsoft 365 環境的 **DisallowInfectedFileDownload** 參數設定為  *true* 。  (此方式可防止使用者開啟、移動、複製或共用偵測為惡意的檔案。 ) 
 
-若要深入瞭解，請參閱[設定 office 365 Atp 安全附件原則](set-up-atp-safe-attachments-policies.md)，並[為 SharePoint、OneDrive 和 Microsoft 團隊開啟 office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
+若要深入瞭解，請參閱 [設定 office 365 Atp 安全附件原則](set-up-atp-safe-attachments-policies.md) ，並 [為 SharePoint、OneDrive 和 Microsoft 團隊開啟 office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
 
 ### <a name="atp-safe-links-policies"></a>ATP 安全連結原則
 
-若要設定[ATP 安全連結](atp-safe-links.md)，請複查和編輯您的預設原則，並新增特定使用者的原則。
+若要設定 [ATP 安全連結](atp-safe-links.md)，請複查和編輯您的預設原則，並新增特定使用者的原則。
 
 1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 安全連結**]。
 
-2. 連按兩下**預設**原則。
+2. 連按兩下 **預設** 原則。
 
-3. 在 [**使用安全連結**] 區段中，選取 [ **Microsoft 365 應用程式適用于企業，Office iOS 和 Android**]，然後按一下 [**儲存**]。
+3. 在 [ **使用安全連結** ] 區段中，選取 [ **Microsoft 365 應用程式適用于企業，Office iOS 和 Android**]，然後按一下 [ **儲存**]。
 
-4. 在 [套用**至特定**收件者的原則] 區段中，按一下加號 (**+**) 。
+4. 在 [套用 **至特定** 收件者的原則] 區段中，按一下加號 (**+**) 。
 
 5. 指定下列設定：
 
-   - 在 [**名稱**] 方塊中，輸入名稱，例如 `Safe Links` 。
+   - 在 [ **名稱** ] 方塊中，輸入名稱，例如 `Safe Links` 。
 
    - 在 [選取動作]**** 區段中，選擇 [開啟]****。
 
@@ -140,7 +140,7 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
      - **不要讓使用者點擊至原始 URL 的安全連結**
 
-   - 在 [套用**于**] 區段中，選擇 **[收件者網域是**]。 然後，選取您的網域，選擇 [**新增**]，然後按一下 **[確定]**。
+   - 在 [套用 **于** ] 區段中，選擇 **[收件者網域是**]。 然後，選取您的網域，選擇 [ **新增**]，然後按一下 **[確定]**。
 
 6. 按一下 [儲存]****。
 
@@ -150,39 +150,39 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 [防網路釣魚]
 
-您可以在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)的訂閱中取得[反網路釣魚防護](anti-phishing-protection.md)。 您可以使用[ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)中的高級反網路釣魚防護。
+您可以在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)的訂閱中取得[反網路釣魚防護](anti-phishing-protection.md)。 您可以使用 [ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)中的高級反網路釣魚防護。
 
 下列程式說明如何設定 ATP 反網路釣魚原則。 設定不含 ATP) 的反網路釣魚原則 (，步驟類似。
 
 1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 反網路釣魚**]。
 
-2. 按一下 [**預設原則**]。
+2. 按一下 [ **預設原則**]。
 
-3. 在 [**類比**] 區段中，按一下 [**編輯**]，然後指定下列設定：
+3. 在 [ **類比** ] 區段中，按一下 [ **編輯**]，然後指定下列設定：
 
-   - 在 [**新增要保護的使用者**] 索引標籤上，開啟 [保護]。 然後新增使用者，例如貴組織的董事會成員、CEO、CFO 和其他資深領導人。  (您可以輸入個別的電子郵件地址，或按一下以顯示清單。 ) 
+   - 在 [ **新增要保護的使用者** ] 索引標籤上，開啟 [保護]。 然後新增使用者，例如貴組織的董事會成員、CEO、CFO 和其他資深領導人。  (您可以輸入個別的電子郵件地址，或按一下以顯示清單。 ) 
 
-   - 在 [**新增要保護的網域**] 索引標籤上，開啟 [**自動包含我擁有的網域**]。 如果您有自訂網域，請同時新增這些網域。
+   - 在 [ **新增要保護的網域** ] 索引標籤上，開啟 [ **自動包含我擁有的網域**]。 如果您有自訂網域，請同時新增這些網域。
 
    - 在 [**動作**] 索引標籤上，選取 [隔離**使用者**和模擬的**網域**] 選項的 **[郵件**]。 此外，開啟類比安全提示。
 
-   - 在 [**信箱智慧**] 索引標籤上，確認已開啟信箱智慧。 此外，開啟信箱智慧型類比保護。 在 [**如果模擬使用者傳送電子郵件**] 清單中，選擇 [**隔離郵件**]。
+   - 在 [ **信箱智慧** ] 索引標籤上，確認已開啟信箱智慧。 此外，開啟信箱智慧型類比保護。 在 [ **如果模擬使用者傳送電子郵件** ] 清單中，選擇 [ **隔離郵件**]。
 
-   - 在 [**新增信任的寄件者和網域**] 索引標籤上，指定您要新增的任何信任寄件者或網域。
+   - 在 [ **新增信任的寄件者和網域** ] 索引標籤上，指定您要新增的任何信任寄件者或網域。
 
-   - 在 [**複查您的設定**] 索引標籤上，在您檢查好設定後，按一下 [**儲存**]。
+   - 在 [ **複查您的設定** ] 索引標籤上，在您檢查好設定後，按一下 [ **儲存**]。
 
-4. 在 [**哄騙**] 區段中，按一下 [**編輯**]，然後指定下列設定：
+4. 在 [ **哄騙** ] 區段中，按一下 [ **編輯**]，然後指定下列設定：
 
-   - 在 [**哄騙篩選設定**] 索引標籤上，確定已開啟反欺詐保護。
+   - 在 [ **哄騙篩選設定** ] 索引標籤上，確定已開啟反欺詐保護。
 
-   - 在 [**動作**] 索引標籤上，選擇 [**隔離郵件**]。
+   - 在 [ **動作** ] 索引標籤上，選擇 [ **隔離郵件**]。
 
-   - 在 [**複查您的設定**] 索引標籤上，在您檢查好設定後，按一下 [**儲存**]。  (如果您未進行任何變更，請按一下 [**取消**]。 ) 
+   - 在 [ **複查您的設定** ] 索引標籤上，在您檢查好設定後，按一下 [ **儲存**]。  (如果您未進行任何變更，請按一下 [ **取消**]。 ) 
 
 5. 關閉 [預設原則設定] 頁面。
 
-若要深入瞭解您的反網路釣魚原則選項，請參閱[設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+若要深入瞭解您的反網路釣魚原則選項，請參閱 [設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
 ## <a name="part-4---anti-spam-protection"></a>第4部分-反垃圾郵件保護
 
@@ -190,17 +190,17 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**]  >  **反垃圾郵件**。
 
-2. 在 [**自訂**] 索引標籤上，開啟 [**自訂設定**]。
+2. 在 [ **自訂** ] 索引標籤上，開啟 [ **自訂設定** ]。
 
-3. 展開 [**預設垃圾郵件篩選原則**]，按一下 [**編輯原則**]，然後指定下列設定：
+3. 展開 [ **預設垃圾郵件篩選原則**]，按一下 [ **編輯原則**]，然後指定下列設定：
 
-   - 在 [**垃圾郵件及大量動作**] 區段中，將臨界值設為5或6。
+   - 在 [ **垃圾郵件及大量動作** ] 區段中，將臨界值設為5或6。
 
-   - 在 [**允許清單**] 區段中，複查 (，視需要編輯) 允許的寄件者和網域。
+   - 在 [ **允許清單** ] 區段中，複查 (，視需要編輯) 允許的寄件者和網域。
 
 4. 按一下 [儲存]****。
 
-若要深入瞭解您的反垃圾郵件原則選項，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+若要深入瞭解您的反垃圾郵件原則選項，請參閱 [在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ## <a name="part-5---additional-settings-to-configure"></a>第5部分-要設定的其他設定
 
@@ -212,13 +212,13 @@ Microsoft 365 包含各種威脅防護功能。 以下是一個快速入門手�
 
 - 垃圾[訊息原則](anti-spam-protection.md)中的垃圾郵件動作會設定為**將郵件移至 [垃圾郵件] 資料夾**。
 
-- 使用者保留其預設的[垃圾郵件設定](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)，但未關閉垃圾郵件保護。
+- 使用者保留其預設的 [垃圾郵件設定](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)，但未關閉垃圾郵件保護。
 
-若要深入瞭解，請參閱[零時自動清除-防護垃圾郵件和惡意](zero-hour-auto-purge.md)代碼。
+若要深入瞭解，請參閱 [零時自動清除-防護垃圾郵件和惡意](zero-hour-auto-purge.md)代碼。
 
 ### <a name="audit-logging-for-reporting-and-investigation"></a>報告和調查的審計記錄
 
-在包含[Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)的訂閱中可使用審核記錄。 為了在威脅防護報告中查看資料（如[安全性儀表板](security-dashboard.md)、[電子郵件安全性報告](view-email-security-reports.md)和[Explorer](threat-explorer.md)），必須為您的組織開啟審核記錄。 若要深入瞭解，請參閱[開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
+在包含 [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)的訂閱中可使用審核記錄。 為了在威脅防護報告中查看資料（如 [安全性儀表板](security-dashboard.md)、 [電子郵件安全性報告](view-email-security-reports.md)和 [Explorer](threat-explorer.md)），必須為您的組織開啟審核記錄。 若要深入瞭解，請參閱 [開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
 
 ## <a name="post-setup-tasks"></a>安裝後的工作
 

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: ae6088a0eab214b4e160b85a278e1160c2845ed9
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 76264801820b6a41ee744a8adcc3b3b48a8e9479
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577123"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826738"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>在 Exchange Online 中指定使用者提交垃圾郵件和網路釣魚郵件的信箱
 
@@ -28,20 +28,20 @@ ms.locfileid: "46577123"
 
 - [報告訊息增益集](enable-the-report-message-add-in.md)
 
-- [Outlook 網頁版中 (的內建報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)（以前稱為 Outlook web App）) 
+- [Outlook 網頁版中 (的內建報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) （以前稱為 Outlook web App）) 
 
 - Outlook 中用於 iOS 和 Android 的內建報告
 
   > [!NOTE]
-  > 如果[在網頁上的 outlook 中已停用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)報告，讓使用者在這裡提交，將會覆寫該設定，讓使用者再次在 Outlook 的 outlook 中報告郵件。
+  > 如果 [在網頁上的 outlook 中已停用](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)報告，讓使用者在這裡提交，將會覆寫該設定，讓使用者再次在 Outlook 的 outlook 中報告郵件。
 
 您也可以設定協力廠商郵件報告工具，將郵件轉寄至您指定的信箱。
 
-將使用者報告的郵件傳送至自訂信箱，而不直接傳送至 Microsoft，可讓您的系統管理員選擇性地使用系統[管理員提交](admin-submission.md)將郵件報告給 Microsoft。
+將使用者報告的郵件傳送至自訂信箱，而不直接傳送至 Microsoft，可讓您的系統管理員選擇性地使用系統 [管理員提交](admin-submission.md)將郵件報告給 Microsoft。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [**使用者報送**] 頁面，請使用 <https://protection.office.com/userSubmissionsReportMessage> 。
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **使用者報送** ] 頁面，請使用 <https://protection.office.com/userSubmissionsReportMessage> 。
 
 - 您必須已獲派權限，才能進行此主題中的程序:
 
@@ -57,21 +57,21 @@ ms.locfileid: "46577123"
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全性 & 規範中心設定使用者提交信箱
 
-1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** \> **原則**] \> **使用者報送**。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則**] \> **使用者報送**。
 
-2. 在出現的 [**使用者提交**] 頁面中，選取下列其中一個選項：
+2. 在出現的 [ **使用者提交** ] 頁面中，選取下列其中一個選項：
 
-   a. **啟用 (建議) 的 Outlook 報告郵件功能**：若您在網頁型 outlook 中使用報表訊息增益集或內建報告，請選取此選項，然後設定下列設定：
+   a. **啟用 (建議) 的 Outlook 報告郵件功能 **：若您在網頁型 outlook 中使用報表訊息增益集或內建報告，請選取此選項，然後設定下列設定：
 
-      - **自訂使用者確認訊息**：按一下此連結。 在出現的 [**自訂確認訊息**] 浮出視窗中，設定下列設定：
+      - **自訂使用者確認訊息**：按一下此連結。 在出現的 [ **自訂確認訊息** ] 浮出視窗中，設定下列設定：
 
-      - **提交之前**：在 [**標題**] 和 [**確認訊息**] 方塊中，輸入使用者在使用「報告郵件增益集」報告郵件之前看到的描述性文字。 您可以使用變數% type%，以包含提交類型 (垃圾郵件、非垃圾郵件、網路釣魚網路等等 ) 。
+      - **提交之前**：在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用「報告郵件增益集」報告郵件之前看到的描述性文字。 您可以使用變數% type%，以包含提交類型 (垃圾郵件、非垃圾郵件、網路釣魚網路等等 ) 。
 
         如所述，如果您選取將報告的郵件傳送給 Microsoft 的選項，下列文字也會新增至通知：
 
         > 您的電子郵件會向 Microsoft 提交，以進行分析。 有些電子郵件可能包含個人或機密資訊。
 
-      - **提交後**：按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 。 在 [**標題**] 和 [**確認訊息**] 方塊中，輸入使用者在使用「報告訊息增益集」報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
+      - **提交後**：按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 。 在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用「報告訊息增益集」報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
 
       完成後，按一下 [儲存]****。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原**回來]。
 
@@ -84,24 +84,24 @@ ms.locfileid: "46577123"
         - **自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。 如果您只想要將郵件移至系統管理員或安全性作業小組進行分析，請使用此選項。 除非系統管理員自行轉寄，否則郵件不會移至 Microsoft。
 
         > [!NOTE]
-        > 美國政府組織 (GCC、GCC 和 DoD) 只能設定**自訂信箱**。 其他兩個選項會停用。 
+        > 美國政府組織 (GCC、GCC 和 DoD) 只能設定 **自訂信箱**。 其他兩個選項會停用。 
 
-      完成後，請按一下 [**確認**]。
+      完成後，請按一下 [ **確認**]。
 
       > [!CAUTION]
-      > 如果您已在 Outlook 網頁版 outlook 上使用 Outlook 來[停用 outlook 中的垃圾郵件報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)，但您設定上述任一設定將郵件報告給 microsoft，使用者就可以使用報告訊息增益集，在網頁型 outlook 中將郵件報告給 microsoft。
+      > 如果您已在 Outlook 網頁版 outlook 上使用 Outlook 來 [停用 outlook 中的垃圾郵件報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) ，但您設定上述任一設定將郵件報告給 microsoft，使用者就可以使用報告訊息增益集，在網頁型 outlook 中將郵件報告給 microsoft。
 
    - **停用 Outlook 的報告郵件功能**：如果您使用協力廠商的報表工具，而不是在 web 上的 Outlook 中使用協力廠商的報表工具或內建的報表，請選取這個選項，然後設定下列設定：
 
-      選取 [**使用此自訂信箱以接收使用者報告的提交**]。 在出現的方塊中，輸入已存在於 Office 365 的現有信箱的電子郵件地址。 這必須是 Exchange Online 中可接收電子郵件的現有信箱。
+      選取 [ **使用此自訂信箱以接收使用者報告的提交**]。 在出現的方塊中，輸入已存在於 Office 365 的現有信箱的電子郵件地址。 這必須是 Exchange Online 中可接收電子郵件的現有信箱。
 
-      完成後，請按一下 [**確認**]。
+      完成後，請按一下 [ **確認**]。
 
 ## <a name="message-submission-format"></a>郵件提交格式
 
 傳送至自訂信箱的郵件必須遵循特定提交郵件格式。 提交的主旨 (信封標題) 應該使用下列格式：
 
-`SafetyAPIAction|NetworkMessgeId|SenderIp|FromAddress|(Message Subject)`
+`SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
 SafetyAPIAction 為下列其中一個整數值：
 

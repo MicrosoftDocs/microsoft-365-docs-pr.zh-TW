@@ -6,66 +6,66 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何在 Microsoft 365 中識別網頁仿冒郵件的原因，以及如何防止未來的更多網路釣魚郵件。
-ms.openlocfilehash: ac416da714e30491f679e22909010a8c02fac843
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: b0fbb29489cece6d708811c5c8d8d60450938f0c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755049"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825206"
 ---
 # <a name="tune-anti-phishing-protection"></a>調整防網路釣魚保護
 
-雖然 Microsoft 365 附帶預設已啟用的各種防網路釣魚功能，但某些網路釣魚郵件仍有可能會進入您的信箱。 本主題說明您可以執行哪些動作來探索網路釣魚郵件的原因，以及您可以如何調整 Microsoft 365 組織中的反網路釣魚設定，_而不會不慎使事情更糟_。
+雖然 Microsoft 365 附帶預設已啟用的各種防網路釣魚功能，但某些網路釣魚郵件仍有可能會進入您的信箱。 本主題說明您可以執行哪些動作來探索網路釣魚郵件的原因，以及您可以如何調整 Microsoft 365 組織中的反網路釣魚設定， _而不會不慎使事情更糟_。
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>第一件事是：處理任何已遭破壞的帳戶，並確定您封鎖其他網路釣魚郵件，讓
 
-如果寄件者的帳戶因網路釣魚郵件而遭到損害，請依照在[Microsoft 365 中回應受損電子郵件帳戶](responding-to-a-compromised-email-account.md)的步驟進行。
+如果寄件者的帳戶因網路釣魚郵件而遭到損害，請依照在 [Microsoft 365 中回應受損電子郵件帳戶](responding-to-a-compromised-email-account.md)的步驟進行。
 
-如果您的訂閱包含高級威脅防護（ATP），您可以使用[Office 365 威脅情報](office-365-ti.md)來識別也收到網路釣魚郵件的其他使用者。 您可以使用其他選項封鎖網路釣魚郵件：
+如果您的訂閱包含高級威脅防護 (ATP) ，您可以使用 [Office 365 威脅情報](office-365-ti.md) 來識別也收到網路釣魚郵件的其他使用者。 您可以使用其他選項封鎖網路釣魚郵件：
 
 - [ATP 安全連結](set-up-atp-safe-links-policies.md)
 
 - [ATP 安全附件](set-up-atp-safe-attachments-policies.md)
 
-- [Microsoft 365 中的 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。 請注意，您可以暫時將原則中的**高級網路釣魚閥**值從**Standard**增加為**積極**、**更積極**或**最積極**的。
+- [Microsoft 365 中的 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。 請注意，您可以暫時將原則中的 **高級網路釣魚閥** 值從 **Standard** 增加為 **積極**、 **更積極**或 **最積極**的。
 
 確認已開啟這些 ATP 功能。
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>將網路釣魚郵件報告給 Microsoft
 
-報告網路釣魚郵件有助於調整用於保護 Microsoft 365 中所有客戶的篩選。 如需相關指示，請參閱[將訊息和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。
+報告網路釣魚郵件有助於調整用於保護 Microsoft 365 中所有客戶的篩選。 如需相關指示，請參閱 [將訊息和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="inspect-the-message-headers"></a>檢查郵件頭
 
 您可以檢查網路釣魚郵件的標頭，以查看是否有任何可以執行的動作，以防止更多網路釣魚郵件進入。 換句話說，檢查郵件頭可協助您識別組織中負責允許網路釣魚郵件的任何設定。
 
-具體而言，您應該檢查郵件頭中的**X-Forefront-Antispam-Report**標頭欄位，以瞭解在垃圾郵件篩選判定（SFV）值中略過的垃圾郵件或網路釣魚篩選跡象。 略過篩選的郵件會有輸入 `SCL:-1` ，這表示您的其中一個設定是透過覆寫由服務所決定的垃圾郵件或網路釣魚 verdicts，允許這封郵件。 如需如何取得郵件頭及所有可用反垃圾郵件和反網路釣魚郵件標題之完整清單的詳細資訊，請參閱[Microsoft 365 中的反垃圾郵件報頭](anti-spam-message-headers.md)。
+具體而言，您應該檢查郵件頭中的 **X-Forefront-Antispam-Report** 標頭欄位，以取得 (SFV) 值的垃圾郵件篩選判定中略過的垃圾郵件或網路釣魚篩選的指示。 略過篩選的郵件會有輸入 `SCL:-1` ，這表示您的其中一個設定是透過覆寫由服務所決定的垃圾郵件或網路釣魚 verdicts，允許這封郵件。 如需如何取得郵件頭及所有可用反垃圾郵件和反網路釣魚郵件標題之完整清單的詳細資訊，請參閱 [Microsoft 365 中的反垃圾郵件報頭](anti-spam-message-headers.md)。
 
 ## <a name="best-practices-to-stay-protected"></a>保持受保護狀態的最佳作法
 
-- 請以每月的頻率執行[安全分數](../mtp/microsoft-secure-score.md)，以評估組織的安全性設定。
+- 請以每月的頻率執行 [安全分數](../mtp/microsoft-secure-score.md) ，以評估組織的安全性設定。
 
-- 針對因錯誤而導致隔離的郵件，或透過所允許的郵件，我們建議您在[威脅瀏覽器和即時](threat-explorer.md)偵測中搜尋這些郵件。 您可以依寄件者、收件者或郵件識別碼進行搜尋。 找到訊息之後，按一下主旨以移至 [詳細資料]。 針對隔離的郵件，請查看「偵測技術」為何，這樣您就可以使用適當的方法來覆寫。 若為允許的郵件，請查看允許郵件使用的原則。 
+- 針對因錯誤而導致隔離的郵件，或透過所允許的郵件，我們建議您在 [威脅瀏覽器和即時](threat-explorer.md)偵測中搜尋這些郵件。 您可以依寄件者、收件者或郵件識別碼進行搜尋。 找到訊息之後，按一下主旨以移至 [詳細資料]。 針對隔離的郵件，請查看「偵測技術」為何，這樣您就可以使用適當的方法來覆寫。 若為允許的郵件，請查看允許郵件使用的原則。 
 
-- 冒牌郵件會標記為 ATP 中的網路釣魚。 有時候欺騙是良性的，有時候使用者不想隔離。 若要將影響降至最低，請定期查看[哄騙智慧報告](learn-about-spoof-intelligence.md)。 在您檢查並做任何必要的覆寫後，您就可以自信地[設定假冒情報](set-up-anti-phishing-policies.md#spoof-settings)，以**隔離**可疑郵件，而不是將其傳遞給使用者的 [垃圾郵件] 資料夾。
+- 冒牌郵件會標記為 ATP 中的網路釣魚。 有時候欺騙是良性的，有時候使用者不想隔離。 若要將影響降至最低，請定期查看 [哄騙智慧報告](learn-about-spoof-intelligence.md)。 在您檢查並做任何必要的覆寫後，您就可以自信地 [設定假冒情報](set-up-anti-phishing-policies.md#spoof-settings) ，以 **隔離** 可疑郵件，而不是將其傳遞給使用者的 [垃圾郵件] 資料夾。
 
-- 您可以重複上述步驟進行類比（網域或使用者）。 模仿報告位於**威脅管理** \> **儀表板** \> **Insights**底下。
+- 您可以重複上述步驟， (網域或使用者) 進行類比。 模仿報告位於 **威脅管理** \> **儀表板** \> **Insights**底下。
 
-- 定期查看「[威脅防護狀態」報告](view-reports-for-atp.md#threat-protection-status-report)。
+- 定期查看「 [威脅防護狀態」報告](view-reports-for-atp.md#threat-protection-status-report)。
 
 - 有些客戶會將自己的網域放入反垃圾郵件原則中的允許寄件者或允許網域清單中，以無意間允許網路釣魚郵件。 雖然這種設定可讓某些合法的郵件透過，但也會允許垃圾郵件和/或網路釣魚篩選器通常會封鎖惡意郵件。 除了允許網域之外，您還應該修正基礎問題。
 
-  針對您網域中的寄件者，處理由 Microsoft 365 （誤報）封鎖之合法郵件所做的最佳方式，是針對_所有_的電子郵件網域，在 DNS 中完整且完整地設定 SPF、DKIM 及 DMARC 記錄：
+  處理由 Microsoft 365 封鎖之合法郵件 (誤報) （包括網域中的寄件者）的最佳方式，是針對 _所有_ 的電子郵件網域，在 DNS 中完整且完整地設定 SPF、DKIM 及 DMARC 記錄：
 
-  - 確認您的 SPF 記錄識別出您網域中寄件者的_所有_電子郵件來源（請勿忘記協力廠商服務！）。
+  - 確認您的 SPF 記錄識別出您網域中寄件者的 _所有_ 電子郵件來源 (請勿忘記協力廠商服務！ ) 。
 
-  - 使用 hard fail （ \- 全部）可確保未授權寄件者被設定為這麼做的電子郵件系統拒絕。 您可以使用[哄騙情報](learn-about-spoof-intelligence.md)來協助識別使用您網域的寄件者，這樣您就可以在 SPF 記錄中包含授權的協力廠商寄件者。
+  - 使用硬性失敗 (\- 所有) ，以確保已設定為執行此作業的電子郵件系統拒絕未授權的寄件者。 您可以使用 [哄騙情報](learn-about-spoof-intelligence.md) 來協助識別使用您網域的寄件者，這樣您就可以在 SPF 記錄中包含授權的協力廠商寄件者。
 
   如需設定指示，請參閱：
   
@@ -75,10 +75,10 @@ ms.locfileid: "44755049"
 
   - [使用 DMARC 驗證電子郵件](use-dmarc-to-validate-email.md)
 
-- 建議您盡可能將網域的電子郵件直接傳遞至 Microsoft 365。 換句話說，請將您的 Microsoft 365 網域的 MX 記錄指向 Microsoft 365。 Exchange Online Protection （EOP）可在將其郵件直接傳遞至 Microsoft 365 時，為您的雲端使用者提供最佳的保護。 如果您必須在 EOP 前使用協力廠商的電子郵件清潔系統，請使用增強型介面篩選功能。 如需相關指示，請參閱[在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+- 建議您盡可能將網域的電子郵件直接傳遞至 Microsoft 365。 換句話說，請將您的 Microsoft 365 網域的 MX 記錄指向 Microsoft 365。 Exchange Online Protection (EOP) 能夠在將其郵件直接傳遞至 Microsoft 365 時，為您的雲端使用者提供最佳的保護。 如果您必須在 EOP 前使用協力廠商的電子郵件清潔系統，請使用增強型介面篩選功能。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-- 使用者應將[郵件報告](enable-the-report-message-add-in.md)給 Microsoft，以進行訓練我們的系統。 系統管理員也應利用[管理員提交](admin-submission.md)功能。
+- 使用者應將 [郵件報告](enable-the-report-message-add-in.md) 給 Microsoft，以進行訓練我們的系統。 系統管理員也應利用 [管理員提交](admin-submission.md) 功能。
 
-- 多重要素驗證（MFA）是防範已遭破壞之帳戶的最佳方式。 您應強烈考慮為您的所有使用者啟用 MFA。 針對分段的方法，在您為所有人啟用 MFA 之前，先為您最機密的使用者（系統管理員、行政人員等等）啟用 MFA，以開始執行。 如需相關指示，請參閱[設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
+- 多重因素驗證 (MFA) 是防範已遭破壞之帳戶的最佳方式。 您應強烈考慮為您的所有使用者啟用 MFA。 針對分段的方法，在您為每個人啟用 MFA 之前，先為最機密的使用者啟用 MFA (系統管理員、行政人員等等 ) 。 如需相關指示，請參閱 [設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 
 - 將規則轉寄給外部收件者通常是被攻擊者用來提取資料。 使用[Microsoft Secure 得分](../mtp/microsoft-secure-score.md)中的 [**複查信箱轉寄規則**] 資訊，尋找甚至避免將轉寄規則轉接給外部收件者。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) (英文)。

@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
 description: 找到您常見問題的答案以深入瞭解網域。
-ms.openlocfilehash: bb949dbd4e32bb62f10dfd0323df70697fdc5404
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: fe602c45059be1b273b7ebe3a11cd91adf89a479
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804193"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845841"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
@@ -52,7 +52,7 @@ ms.locfileid: "46804193"
 - [如果我的 DNS 提供者不支援某些記錄類型，會發生什麼事？](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
 - [如何在 Microsoft 365 中設定或變更預設網域？](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
 - [我可以將自訂子域或多個網域新增至 Microsoft 365 嗎？](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
-- [如何將網域從 Microsoft 365 轉接至其他主機？]
+- [如何將網域從 Microsoft 365 傳輸到另一部主機？](#how-do-i-transfer-a-domain-from-microsoft-365-to-another-host)
 - [為什麼我有「onmicrosoft.com」網域？](#why-do-i-have-an-onmicrosoftcom-domain)
 - [為什麼我有「onmicrosoft.de」網域？](#why-do-i-have-an-onmicrosoftde-domain)
 - [如何驗證我的非盈利性或教育狀態？](#how-do-i-verify-my-nonprofit-or-education-status)

@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您將瞭解如何使用 PowerShell，將設定設定套用至 Microsoft Exchange Online Protection （EOP）中的承租人。
-ms.openlocfilehash: c25bafe9ece71264931d8f059dd726147a6d28a4
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: 在本文中，您將瞭解如何使用 PowerShell 將設定設定套用至 Microsoft Exchange Online Protection (EOP) 中的承租人。
+ms.openlocfilehash: 46b7c756171da7687568e5135974841d828f45bd
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209136"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827454"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>套用 EOP 設定至多個租用戶的範例指令碼
 
@@ -33,7 +33,7 @@ ms.locfileid: "44209136"
 
 3. 對於 .csv 檔案的每一列，在 UserName 欄中加入承租人的管理員名稱，在 Cmdlet 欄中加入要對該承租人執行的指令程式。例如，使用 admin@contoso.com 和 Get-AcceptedDomain。
 
-4. 將[RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1)腳本複製到 [記事本]，然後將檔案儲存至容易尋找的位置（例如，c：\scripts）。
+4. 將 [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) 腳本複製到 [記事本]，然後將檔案儲存到易於 (尋找的位置，例如，c：\scripts) 。
 
 5. 使用下列語法執行指令碼：
 
@@ -44,7 +44,7 @@ ms.locfileid: "44209136"
    以下為範例：
 
    ```powershell
-   & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
+   & "c:\scripts\RunCmdletOnMultipleTenants.ps1" "c:\scripts\inputfile.csv"
    ```
 
 6. 每個租使用者將會登入，並且會執行腳本。

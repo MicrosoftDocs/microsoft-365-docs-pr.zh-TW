@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date: 02/14/2020
+ms.date: ''
 audience: Admin
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: 系統管理員可以瞭解 Microsoft 365 安全性 & 規範中心提供的許可權。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6cf0913b4aebad5199b1da4a1794542c9c2d5362
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: be26607ce261dd109ce6c61cfa3f8e63f43fecb4
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653614"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826834"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全性與合規性中心中的權限
 
@@ -60,7 +60,7 @@ ms.locfileid: "46653614"
 |**內容瀏覽器內容檢視器**|在內容瀏覽器中查看內容檔案。|資料分類內容檢視器|
 |**內容瀏覽器清單檢視器**|只以清單格式查看內容資源管理器中的所有專案。|資料分類清單檢視器|
 |**資料調查人員**|成員可以在信箱、SharePoint 網站和 OneDrive 帳戶上執行搜尋。|通訊 <br/><br/> 合規性搜尋 <br/><br/> 監管人 <br/><br/> 資料調查管理 <br/><br/> 匯出<br/><br/> 預覽 <br/><br/> RMS 解密 <br/><br/> 檢閱<br/><br/> 搜尋和清除|
-|**電子文件探索管理員**|這類成員可以執行搜尋及暫時停用信箱、SharePoint Online 網站和商務用 OneDrive 位置。 成員也可以建立及管理 eDiscovery 案例、新增及移除案例的成員、建立及編輯與案例相關聯的內容搜尋，以及在高級 eDiscovery 中存取案例資料。 <br/><br/> 電子文件探索系統管理員是獲派額外權限的電子文件探索管理員角色群組成員。 除了電子文件探索管理員可以執行的工作以外，電子文件探索系統管理員可以： <br/>* 查看組織中的所有 eDiscovery 案例。 <br/>* 將任何 eDiscovery 案例新增為案例成員之後，再加以管理。 <br/><br/> 電子文件探索管理員與電子文件探索系統管理員之間的主要差異在於，電子文件探索系統管理員可以在安全性與合規性中心，存取列在**電子文件探索案例**頁面上的所有案例。 電子文件探索管理員只能存取他們所建立的案例，或是他們所屬的案例。 如需讓使用者成為 eDiscovery 系統管理員的詳細資訊，請參閱 [在安全性 & 規範中心指派 eDiscovery 許可權](../../compliance/assign-ediscovery-permissions.md)。|案例管理 <br/><br/> 通訊 <br/><br/> 合規性搜尋 <br/><br/> 監管人 <br/><br/> 匯出 <br/><br/> 保留 <br/><br/> 預覽 <br/><br/> RMS 解密 <br/><br/> 檢閱|
+|**電子文件探索管理員**|這類成員可以執行搜尋及暫時停用信箱、SharePoint Online 網站和商務用 OneDrive 位置。 成員也可以建立及管理 eDiscovery 案例、新增及移除案例的成員、建立及編輯與案例相關聯的內容搜尋，以及在高級 eDiscovery 中存取案例資料。 <br/><br/> 電子文件探索系統管理員是獲派額外權限的電子文件探索管理員角色群組成員。 除了電子文件探索管理員可以執行的工作以外，電子文件探索系統管理員可以：<ul><li>查看組織中的所有 eDiscovery 案例。</li><li>在將自我新增為案例成員後，管理任何 eDiscovery 案例。</li></ul> <br/> 電子文件探索管理員與電子文件探索系統管理員之間的主要差異在於，電子文件探索系統管理員可以在安全性與合規性中心，存取列在**電子文件探索案例**頁面上的所有案例。 電子文件探索管理員只能存取他們所建立的案例，或是他們所屬的案例。 如需讓使用者成為 eDiscovery 系統管理員的詳細資訊，請參閱 [在安全性 & 規範中心指派 eDiscovery 許可權](../../compliance/assign-ediscovery-permissions.md)。|案例管理 <br/><br/> 通訊 <br/><br/> 合規性搜尋 <br/><br/> 監管人 <br/><br/> 匯出 <br/><br/> 保留 <br/><br/> 預覽 <br/><br/> RMS 解密 <br/><br/> 檢閱|
 |**全域讀取者**|成員具有報表的唯讀存取權、警示，而且可以查看所有設定和設定。<br/><br/> 全域讀取器與安全性讀取器之間的主要差異在於，全域讀取器可以存取 **設定和設定**。|安全性讀取者 <br/><br/> 敏感度標籤讀取器 <br/><br/> 服務保證檢視 <br/><br/> 僅限檢視稽核記錄 <br/><br/> 僅限檢視 DLP 合規性管理 <br/><br/> 僅限檢視裝置管理 <br/><br/> 僅限檢視 IB 合規性管理 <br/><br/> 僅限檢視管理警示 <br/><br/> 僅限檢視收件者 <br/><br/> 僅限檢視記錄管理 <br/><br/> 僅限檢視保留管理|
 |**有問必答風險管理**|使用此角色群組，在單一群組中管理組織的有問必答風險管理。 透過為指定的系統管理員、分析員和調查人員新增所有使用者帳戶，您可以在單一群組中設定「有問必答風險管理」許可權。 此角色群組包含所有測試人員風險管理權限角色。 這是快速開始使用測試人員風險管理最簡單的方法，適合不需要為個別使用者群組定義不同權限的組織。|案例管理 <br/><br/> 測試人員風險管理系統管理員 <br/><br/> 有問必答風險管理分析 <br/><br/> 內幕風險管理調查 <br/><br/> 內部人員風險管理的暫存份額|
 |**有問必答風險管理系統管理員**|使用此角色群組開始設定「有問必答風險管理」和更新後的成員，以將內幕風險管理員與定義的群組隔離。 此角色群組中的使用者可以建立、讀取、更新和刪除內部使用者風險管理原則、全域設定和角色群組指派。|案例管理 <br/><br/> 測試人員風險管理系統管理員|

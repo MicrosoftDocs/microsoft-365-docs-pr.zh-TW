@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.date: ''
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何建立、修改及刪除組織中可用的高級防網路釣魚原則，以及 Office 365 的高級威脅防護 (Office 365 ATP) 。
-ms.openlocfilehash: b55bfb8b75506837e968b5845bc7a8239ad9b015
-ms.sourcegitcommit: 5c16d270c7651c2080a5043d273d979a6fcc75c6
+ms.openlocfilehash: f7770945e6b99a3d2f3fa2b12daa13b2cc3c2612
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46804229"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825734"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>設定 ATP 防網路釣魚原則
 
@@ -49,8 +49,8 @@ ATP 反網路釣魚原則的基本元素如下：
 每個 Office 365 ATP 組織都有一個內建的 ATP 反網路釣魚原則，名稱為 Office365 AntiPhish 預設值具有下列屬性：
 
 - 原則會套用至組織中的所有收件者，即使沒有反網路釣魚的規則 (收件者篩選) 與原則相關聯。
-- 原則的自訂優先順序值 **最低** ，您無法修改 (原則永遠套用於最後) 。 您建立的任何自訂原則都具有較高的優先順序。
-- 原則是預設原則 (**IsDefault** 屬性的值 `True`) ，而且您無法刪除預設原則。
+- 此原則的自訂優先順序值是**最低的**，表示您無法進行任何修改（此原則ㄧ律到最後才會套用）。 任何您建立的自訂原則皆具有較高的優先順序。
+- 此原則是預設的 (**IsDefault** 屬性具有`True`值)，且您無法刪除此項預設原則。
 
 若要提高反網路釣魚防護的效能，您可以使用套用至特定使用者或使用者群組的更嚴格設定來建立自訂 ATP 反網路釣魚原則。
 
@@ -200,7 +200,7 @@ ATP 反網路釣魚原則的基本元素如下：
      - **顯示類比網域的秘訣**：預設值為 **Off**。 若要將其開啟，請將開關滑動至 [ **開啟**]。
      - **顯示不尋常字元的提示**：預設值為 **Off**。 若要將其開啟，請將開關滑動至 [ **開啟**]。
 
-     完成後，按一下 [儲存 **]**。
+     完成後，按一下 [儲存]****。
 
    - **信箱智慧**：
 
@@ -318,9 +318,9 @@ ATP 反網路釣魚原則的基本元素如下：
 
 ### <a name="set-the-priority-of-custom-atp-anti-phishing-policies"></a>設定自訂 ATP 反網路釣魚原則的優先順序
 
-根據預設，ATP 反網路釣魚原則的優先順序會根據它們在 (較舊的原則中所建立的順序來降低優先順序) 。 較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。 任何兩個原則都不能有相同的優先順序，而且原則處理會在套用第一個原則之後停止。
+根據預設，ATP 反網路釣魚原則的優先順序會根據它們在 (較舊的原則中所建立的順序來降低優先順序) 。 較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。 不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。
 
-如需優先順序順序以及評估與套用多個原則的詳細資訊，請參閱 [電子郵件保護的順序及優先順序](how-policies-and-protections-are-combined.md)。
+如需更多有關優先的排序及如何評估和應用多項原則，請參照 [電子郵件保護的順序和優先順序](how-policies-and-protections-are-combined.md)。
 
 自訂 ATP 反網路釣魚原則會以處理的順序顯示， (第一個原則的 **Priority** 值為 0) 。 預設的反網路釣魚原則（名為 Office365 AntiPhish Default）的自訂優先順序值是 **最低**的，您無法變更它。
 

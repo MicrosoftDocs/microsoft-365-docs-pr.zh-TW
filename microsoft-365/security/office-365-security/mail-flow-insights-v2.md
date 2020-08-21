@@ -6,18 +6,18 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 系統管理員可以深入瞭解安全性 & 規範中心的郵件流程儀表板中提供的真知灼見和報告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 977dcef82a4f32980898c7b4392d011340e3d0a2
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 06e9449553d008bc383ae6f2b6098f9598cad43c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577784"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826562"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
 
@@ -27,13 +27,13 @@ ms.locfileid: "46577784"
 
 可用的真知灼見包括：
 
-- [自動轉寄的郵件洞察力](mfi-auto-forwarded-messages-report.md)
+- [自動轉寄訊息深入解析](mfi-auto-forwarded-messages-report.md)
 
 - [修正可能的郵件迴圈真知灼見](mfi-mail-loop-insight.md)<sup>1</sup>
 
 - [修正郵件流程規則真知灼見](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>的速度
 
-- [郵件流程地圖](mfi-mail-flow-map-report.md)
+- [郵件流程圖](mfi-mail-flow-map-report.md)
 
 - [轉寄的新網域電子郵件洞察力](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
 
@@ -43,17 +43,17 @@ ms.locfileid: "46577784"
 
 - [未傳遞回報](mfi-non-delivery-report.md)
 
-- [輸出和輸入郵件流程洞察力](mfi-outbound-and-inbound-mail-flow.md)
+- [外寄和內送郵件流程深入解析](mfi-outbound-and-inbound-mail-flow.md)
 
-- [佇列洞察力](mfi-queue-alerts-and-queues.md)
+- [佇列深入解析](mfi-queue-alerts-and-queues.md)
 
-- [SMTP 驗證用戶端的洞察力和報告](mfi-smtp-auth-clients-report.md)
+- [SMTP 驗證用戶端深入解析和報告](mfi-smtp-auth-clients-report.md)
 
 - [上層網域郵件流程狀態深入解析](mfi-domain-mail-flow-status-insight.md)
 
-<sup>1</sup>當偵測到問題之後，就會在 [郵件流程] 儀表板的 [**建議**] 區域中顯示此真知灼見。 否則，您將看不到它。
+<sup>1</sup> 當偵測到問題之後，就會在 [郵件流程] 儀表板的 [ **建議** ] 區域中顯示此真知灼見。 否則，您將看不到它。
 
-<sup>2</sup>郵件流程儀表板上不會顯示這種觀點，但在偵測到問題之後，會在 [轉寄[報告](view-mail-flow-reports.md#forwarding-report)] 頁面上顯示。 否則，您將看不到它。
+<sup>2</sup> 郵件流程儀表板上不會顯示這種觀點，但在偵測到問題之後，會在 [轉寄 [報告](view-mail-flow-reports.md#forwarding-report) ] 頁面上顯示。 否則，您將看不到它。
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>查看郵件流程儀表板所需的許可權
 
@@ -69,10 +69,10 @@ ms.locfileid: "46577784"
   - 使用者只具有郵件流程儀表板的唯讀許可權。
   - 使用者將無法存取 Microsoft 365 系統管理中心。
 
-如需安全性 & 規範中心中許可權的詳細資訊，請參閱[安全性 & 規範中心中的許可權](permissions-in-the-security-and-compliance-center.md)，並[授與使用者對安全性 & 規範中心的存取權](grant-access-to-the-security-and-compliance-center.md)。
+如需安全性 & 規範中心中許可權的詳細資訊，請參閱 [安全性 & 規範中心中的許可權](permissions-in-the-security-and-compliance-center.md) ，並 [授與使用者對安全性 & 規範中心的存取權](grant-access-to-the-security-and-compliance-center.md)。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>哪裡可以找到郵件流程儀表板
 
-開啟安全性 & 合規性中心 <https://protection.office.com> ，展開 [**郵件流程**]，然後選取 [**儀表板**]。
+開啟安全性 & 合規性中心 <https://protection.office.com> ，展開 [ **郵件流程**]，然後選取 [ **儀表板**]。
 
 若要直接移至 [郵件流程] 儀表板，請開啟] <https://protection.office.com/mailflow/dashboard> 。

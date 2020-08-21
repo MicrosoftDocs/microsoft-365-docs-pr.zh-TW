@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,45 +18,46 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 的反垃圾郵件原則中所提供的高級垃圾郵件篩選 (ASF) 設定。
-ms.openlocfilehash: b314b8b2a2de72987d9acff688602df0e0947293
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 2a79a6721a587e3033e71e6e46856a21cffe7bcc
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653338"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827334"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP 中的高級垃圾郵件篩選 (ASF) 設定
 
 > [!NOTE]
-> 反垃圾郵件原則中目前可用的 ASF 設定為已被取代的處理常式。 建議您不要在反垃圾郵件原則中使用這些設定。 這些 ASF 設定的功能會併入篩選堆疊的其他部分。 如需詳細資訊，請參閱[EOP 反垃圾郵件原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
+> 反垃圾郵件原則中目前可用的 ASF 設定為已被取代的處理常式。 建議您不要在反垃圾郵件原則中使用這些設定。 這些 ASF 設定的功能會併入篩選堆疊的其他部分。 如需詳細資訊，請參閱 [EOP 反垃圾郵件原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)。
 
-在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 不含 Exchange Online 信箱的組織，垃圾郵件篩選器 (反垃圾郵件原則中的 ASF) 設定 (也稱為垃圾郵件篩選原則或內容篩選原則) 允許系統管理員將郵件標示為以特定郵件內容為垃圾的垃圾郵件。 ASF 特別針對這些屬性，因為它們通常是在垃圾郵件中。 根據屬性，ASF 偵測會將郵件標記為**垃圾**郵件或**高可信度垃圾郵件**。
+在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 不含 Exchange Online 信箱的組織，垃圾郵件篩選器 (反垃圾郵件原則中的 ASF) 設定 (也稱為垃圾郵件篩選原則或內容篩選原則) 允許系統管理員將郵件標示為以特定郵件內容為垃圾的垃圾郵件。 ASF 特別針對這些屬性，因為它們通常是在垃圾郵件中。 根據屬性，ASF 偵測會將郵件標記為 **垃圾** 郵件或 **高可信度垃圾郵件**。
 
 > [!NOTE]
 > 啟用一或多個 ASF 設定是一種積極的垃圾郵件篩選方法。 您無法將以 ASF 篩選的郵件報告為誤報。 您可以使用下列方法來識別透過 ASF 篩選的郵件：
+>
 > - 週期性的使用者垃圾郵件隔離通知。
 >
 > - 隔離中已篩選的郵件是否存在。
 >
 > - `X-CustomSpam:`如本主題所述，新增至郵件的特定 X 標頭欄位。
 
-下列各節說明安全性 & 合規性中心的反垃圾郵件原則中所提供的 ASF 設定和選項，以及 Exchange Online PowerShell 或獨立 EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy)和[Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)) 。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+下列各節說明安全性 & 合規性中心的反垃圾郵件原則中所提供的 ASF 設定和選項，以及 Exchange Online PowerShell 或獨立 EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) 和 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)) 。 如需詳細資訊，請參閱[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
 ## <a name="enable-disable-or-test-asf-settings"></a>啟用、停用或測試 ASF 設定
 
 針對每個 ASF 設定，反垃圾郵件原則中提供下列選項：
 
-- **On**： ASF 會將對應的 X 標頭欄位新增至郵件，並將郵件標示為**垃圾**郵件 (scl 5 或6以[提升垃圾郵件分數設定](#increase-spam-score-settings)) 或**高信賴的垃圾郵件** (SCL 9 做為) 的[垃圾郵件設定](#mark-as-spam-settings)。
+- **On**： ASF 會將對應的 X 標頭欄位新增至郵件，並將郵件標示為 **垃圾** 郵件 (scl 5 或6以 [提升垃圾郵件分數設定](#increase-spam-score-settings)) 或 **高信賴的垃圾郵件** (SCL 9 做為) 的 [垃圾郵件設定](#mark-as-spam-settings) 。
 
 - **Off**： [ASF] 設定為 [已停用]。 此為預設值，建議您不要變更它。
 
-- **Test**： ASF 會將對應的 X 標頭欄位新增到郵件中。 「**測試模式選項**」會判斷郵件會發生什麼變化 (*TestModeAction*) 值：
+- **Test**： ASF 會將對應的 X 標頭欄位新增到郵件中。 「 **測試模式選項** 」會判斷郵件會發生什麼變化 (*TestModeAction*) 值：
 
   - **None**：郵件路由和傳遞不會受到 ASF 偵測的影響。 郵件仍受限於 EOP 中的其他篩選類型和規則。
 
   - **新增預設的 X 標頭文字 (*AddXHeader*) **：會將 X 標頭值 `X-CustomSpam: This message was filtered by the custom spam filter option` 新增至郵件。 您可以使用收件匣規則或郵件流程規則中的這個值 (也稱為傳輸規則) 會影響郵件的路由和傳遞。
 
-  - **傳送 Bcc 郵件 (*BccMessage*) **： TestModeBccToRecipients PowerShell 中 (*) *參數值所指定的電子郵件地址會新增至郵件的 [密件副本] 欄位，且郵件會傳遞至 [密件副本收件者]。 在安全性 & 合規性中心，您可以使用分號分隔多個電子郵件地址 (;) 。 在 PowerShell 中，您可以使用逗號來分隔多個電子郵件地址。
+  - **傳送 Bcc 郵件 (*BccMessage*) **： TestModeBccToRecipients PowerShell 中 (*) * 參數值所指定的電子郵件地址會新增至郵件的 [密件副本] 欄位，且郵件會傳遞至 [密件副本收件者]。 在安全性 & 合規性中心，您可以使用分號分隔多個電子郵件地址 (;) 。 在 PowerShell 中，您可以使用逗號來分隔多個電子郵件地址。
 
   **附註**：
 
@@ -66,11 +67,11 @@ ms.locfileid: "46653338"
     - **NDR 退信攻擊** (*MarkAsSpamNdrBackscatter*) 
     - **SPF 記錄： hard fail** (*MarkAsSpamSpfRecordHardFail*) 
 
-  - [相同的測試模式] 動作會套用至*所有*設定為**test**的 ASF 設定。 您無法針對不同的 ASF 設定設定不同的測試模式動作。
+  - [相同的測試模式] 動作會套用至 *所有* 設定為 **test**的 ASF 設定。 您無法針對不同的 ASF 設定設定不同的測試模式動作。
 
 ## <a name="increase-spam-score-settings"></a>增加垃圾郵件分數設定
 
-下列 ASF 設定會將所偵測郵件的垃圾郵件信賴等級設定 (SCL) 為5或6，這對應于**垃圾**郵件篩選判定和反垃圾郵件原則中的對應動作。
+下列 ASF 設定會將所偵測郵件的垃圾郵件信賴等級設定 (SCL) 為5或6，這對應于 **垃圾** 郵件篩選判定和反垃圾郵件原則中的對應動作。
 
 ****
 
@@ -84,7 +85,7 @@ ms.locfileid: "46653338"
 
 ## <a name="mark-as-spam-settings"></a>標記為垃圾郵件設定
 
-下列 ASF 設定會將偵測到的郵件的 SCL 設定為9，這會對應到**高可信度垃圾郵件**篩選判定和反垃圾郵件原則中的對應動作。
+下列 ASF 設定會將偵測到的郵件的 SCL 設定為9，這會對應到 **高可信度垃圾郵件** 篩選判定和反垃圾郵件原則中的對應動作。
 
 ****
 
@@ -100,5 +101,5 @@ ms.locfileid: "46653338"
 |**套用機密的單字清單** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft 會維護具有可能冒犯性郵件相關聯的動態但不可編輯的字清單。 <br/><br/> 包含在主旨或郵件內文中的機密單字清單中的字詞的郵件會標示為高信賴的垃圾郵件。|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF 記錄：硬性失敗** <br><br/> *MarkAsSpamSpfRecordHardFail*|從 [SPF 寄件者原則] 框架中未指定之 IP 位址傳送的郵件，會將來源電子郵件網域的 DNS 中的「 (SPF) 記錄，標記為高信賴的垃圾郵件。 <br/><br/> 此設定無法使用測試模式。|`X-CustomSpam: SPF Record Fail`|
 |**條件式寄件者識別碼篩選： hard fail** <br><br/> *MarkAsSpamFromAddressAuthFail*|硬性失敗的郵件會將有條件的寄件者識別碼檢查標記為垃圾郵件。 <br/><br/> 此設定會結合使用寄件者識別碼檢查的 SPF 檢查，以協助防止包含偽造寄件者的郵件頭。 <br/><br/> 此設定無法使用測試模式。|`X-CustomSpam: SPF From Record Fail`|
-|**NDR 退信攻擊** <br><br/> *MarkAsSpamNdrBackscatter*|*退信攻擊*無用的未傳遞回報 (也稱為 NDRs 或退回郵件) 由電子郵件中的偽造寄件者所造成。 如需詳細資訊，請參閱[退信攻擊 messages AND EOP](backscatter-messages-and-eop.md)。 <br/><br/> 您不需要在下列環境中設定此設定，因為會傳遞合法的 NDRs，而退信攻擊會標示為垃圾郵件： <ul><li>使用 Exchange Online 信箱的 Microsoft 365 組織。</li><li>您透過 EOP 路由傳送*輸出*電子郵件的內部部署電子郵件組織。</li></ul><br/> 在會保護輸入電子郵件至內部部署信箱的獨立 EOP 環境中，開啟或關閉此設定的結果如下： <ul><li> **開啟**：已傳遞合法的 NDRs，並將退信攻擊標示為垃圾郵件。</li><li>**Off**：合法的 NDRs 和退信攻擊會透過一般垃圾郵件篩選。 大部分合法的 NDRs 都會傳遞給原始郵件寄件者。 部分（但非全部）退信攻擊會標示為高信賴的垃圾郵件。 根據定義，退信攻擊只能傳遞給欺騙寄件者，而不能傳遞給原始寄件者。</li></ul><br/> 此設定無法使用測試模式。|`X-CustomSpam: Backscatter NDR`|
+|**NDR 退信攻擊** <br><br/> *MarkAsSpamNdrBackscatter*|*退信攻擊* 無用的未傳遞回報 (也稱為 NDRs 或退回郵件) 由電子郵件中的偽造寄件者所造成。 如需詳細資訊，請參閱 [退信攻擊 messages AND EOP](backscatter-messages-and-eop.md)。 <br/><br/> 您不需要在下列環境中設定此設定，因為會傳遞合法的 NDRs，而退信攻擊會標示為垃圾郵件： <ul><li>使用 Exchange Online 信箱的 Microsoft 365 組織。</li><li>您透過 EOP 路由傳送 *輸出* 電子郵件的內部部署電子郵件組織。</li></ul><br/> 在會保護輸入電子郵件至內部部署信箱的獨立 EOP 環境中，開啟或關閉此設定的結果如下： <ul><li> **開啟**：已傳遞合法的 NDRs，並將退信攻擊標示為垃圾郵件。</li><li>**Off**：合法的 NDRs 和退信攻擊會透過一般垃圾郵件篩選。 大部分合法的 NDRs 都會傳遞給原始郵件寄件者。 部分（但非全部）退信攻擊會標示為高信賴的垃圾郵件。 根據定義，退信攻擊只能傳遞給欺騙寄件者，而不能傳遞給原始寄件者。</li></ul><br/> 此設定無法使用測試模式。|`X-CustomSpam: Backscatter NDR`|
 |

@@ -1,24 +1,24 @@
 ---
-title: 修正可能的郵件迴圈洞察力
+title: 修正可能的郵件迴圈深入解析
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全 & 規範中心內郵件流程儀表板中的 [修正可能的郵件迴圈洞察力]，識別並修正其組織中的郵件迴圈。
-ms.openlocfilehash: 54240cffc534b4be708492b37b827636edab280e
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 162752ce6981e27d6ae2923aeb0fc33aec42bb0f
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577619"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826950"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>修正安全性 & 規範中心內可能的郵件迴圈洞察力
 
@@ -28,16 +28,16 @@ ms.locfileid: "46577619"
 
 ![修正郵件流程儀表板中為您推薦的郵件流程規則的速度](../../media/mfi-fix-possible-mail-loop.png)
 
-當您按一下小工具上的 [**查看詳細資料**] 時，會出現一個快顯視窗，包含詳細資訊：
+當您按一下小工具上的 [ **查看詳細資料** ] 時，會出現一個快顯視窗，包含詳細資訊：
 
 - **網域**
-- **郵件數目**：您可以按一下 [ **View sample messages** ]，以查看受環路影響之郵件範例的[郵件追蹤](message-trace-scc.md)結果。
+- **郵件數目**：您可以按一下 [ **View sample messages** ]，以查看受環路影響之郵件範例的 [郵件追蹤](message-trace-scc.md) 結果。
 - **網欄位型別**"，例如「授權」或「非授權」。
-- **MX 記錄**：主機 (的**郵件伺服器**) 和網域的 MX 記錄**優先順序**值。
-- **迴圈原因**和**解決方法**：我們會嘗試找出最常見的郵件迴圈案例，並提供建議的動作 (如果可用) 修正此迴圈。
+- **MX 記錄**：主機 (的 **郵件伺服器**) 和網域的 MX 記錄 **優先順序** 值。
+- **迴圈原因** 和 **解決方法**：我們會嘗試找出最常見的郵件迴圈案例，並提供建議的動作 (如果可用) 修正此迴圈。
 
 ![在 [修正可能的郵件迴圈真知灼見] 上按一下 [查看詳細資料] 後出現的詳細資料浮出](../../media/mfi-fix-possible-mail-loop-details.png)
 
 ## <a name="related-topics"></a>相關主題
 
-如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱[Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。
+如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

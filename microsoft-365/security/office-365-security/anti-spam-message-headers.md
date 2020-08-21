@@ -6,7 +6,7 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以透過 Exchange Online Protection （EOP）瞭解新增至郵件的標題欄位。 這些標題欄位可提供訊息及其處理方式的相關資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5073e0721e82e969dbeaa850cc38cb13100a7947
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 5400bdbc9d3eef0b8005619f9820a9e71b829a5a
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653422"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825194"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 的反垃圾郵件標頭
 

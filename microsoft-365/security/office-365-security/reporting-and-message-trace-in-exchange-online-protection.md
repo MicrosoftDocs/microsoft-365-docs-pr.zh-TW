@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解 Microsoft Exchange Online Protection (EOP) 系統管理員可以使用的報告和疑難排解工具。
-ms.openlocfilehash: ddf8c021681bb600548b134d678d1e0fb0f29d0c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 149f7fa36a717a92d3cda5f6f3f82651f0144d73
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652798"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827626"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的報告和郵件追蹤
 
@@ -57,7 +57,7 @@ ms.locfileid: "46652798"
 
 ## <a name="custom-reports-using-microsoft-graph"></a>使用 Microsoft Graph 的自訂報告
 
-使用 Microsoft Graph，以程式設計方式建立可在系統管理中心中使用的報告。 如需詳細資訊，請參閱[Microsoft graph 的概述](https://docs.microsoft.com/graph/overview)和[使用 microsoft Graph 中的 Office 365 使用方式報告](https://docs.microsoft.com/graph/api/resources/report)。
+使用 Microsoft Graph，以程式設計方式建立可在系統管理中心中使用的報告。 如需詳細資訊，請參閱 [Microsoft graph 的概述](https://docs.microsoft.com/graph/overview) 和 [使用 microsoft Graph 中的 Office 365 使用方式報告](https://docs.microsoft.com/graph/api/resources/report)。
 
 ## <a name="message-trace"></a>郵件追蹤
 
@@ -65,11 +65,11 @@ ms.locfileid: "46652798"
 
 您可以使用此資訊來有效地回答使用者的問題、疑難排解郵件流程問題、驗證原則變更，以及緩解聯繫技術支援以尋求協助的需求。
 
-請參閱[安全性 & 規範中心中的郵件追蹤](message-trace-scc.md)。
+請參閱 [安全性 & 規範中心中的郵件追蹤](message-trace-scc.md)。
 
 ## <a name="audit-logging"></a>稽核記錄
 
-追蹤由系統管理員對組織所做的特定變更。 這些報告可協助您疑難排解組態問題，或找出安全性或法規遵循相關問題的原因。 請參閱[EOP 中的審計報告](auditing-reports-in-eop.md)。
+追蹤由系統管理員對組織所做的特定變更。 這些報告可協助您疑難排解組態問題，或找出安全性或法規遵循相關問題的原因。 請參閱 [EOP 中的審計報告](auditing-reports-in-eop.md)。
 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>報告和郵件追蹤資料的可用性與延遲
 

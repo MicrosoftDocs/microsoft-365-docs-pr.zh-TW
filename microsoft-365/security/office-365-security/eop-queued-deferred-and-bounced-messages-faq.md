@@ -7,23 +7,23 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 ms.custom:
 - seo-marvel-apr2020
-description: 尋找在 Exchange Online Protection （EOP）篩選程式期間，有關已排入佇列、延遲或退回之郵件的最常見問題的答案。
-ms.openlocfilehash: 38e72a04e855862c621bd2b170c11407e0d22af3
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: 尋找在 Exchange Online Protection (EOP) 篩選程式期間，有關已排入佇列、延遲或退回之郵件的最常見問題的答案。
+ms.openlocfilehash: 76fe08f3a83321b6c0549dae5f1382ead5f0b3ae
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206589"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827746"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>EOP 排入佇列、延後和退回的訊息常見問題集
 
-本主題提供 Exchange Online Protection （EOP）篩選過程中已排入佇列、延遲或退回之郵件的常見問題解答。
+本主題提供 Exchange Online Protection (EOP) 篩選程式期間已排入佇列、延遲或退回之郵件的常見問題解答。
 
 ## <a name="why-is-mail-queuing"></a>為什麼為郵件佇列？
 
@@ -35,7 +35,7 @@ ms.locfileid: "44206589"
 
 ## <a name="how-long-does-a-message-remain-in-deferral-and-what-is-the-retry-interval"></a>郵件保持延遲的時間和重試間隔是多少？
 
-延遲中的郵件會保留1天的佇列。 郵件重試次數乃是根據我們從收件者的郵件系統所取回的錯誤。 前幾個 deferrals 為15分鐘或更少，後續的重試次數（透過接下來的一半或如此），將多次重試間隔增加到最大的60分鐘。 間隔持續時間擴充是動態的，其中考慮了多個變數，如佇列大小和內部郵件優先順序。 在 basic 中，它是15分鐘（或更少）的開始時間，然後從未來數小時到最多60分鐘進行擴充。
+延遲中的郵件會保留1天的佇列。 郵件重試次數乃是根據我們從收件者的郵件系統所取回的錯誤。 前幾個 deferrals 為15分鐘或更少，後續的重試次數 (于接下來的0.5 分鐘內，否則) 會以多個重試次數增加超過60分鐘的重試間隔。 間隔持續時間擴充是動態的，其中考慮了多個變數，如佇列大小和內部郵件優先順序。 在 basic 中，它是15分鐘 (或更少) 開始，然後從未來數小時到最多60分鐘。
 
 ## <a name="after-your-email-server-is-restored-how-are-queued-messages-distributed"></a>還原電子郵件伺服器之後，佇列中的郵件會如何散佈？
 

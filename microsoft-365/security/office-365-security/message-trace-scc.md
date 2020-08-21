@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在安全性與合規性中心使用郵件追蹤，以了解郵件發生什麼情況。
-ms.openlocfilehash: 7c0b87b1bb882714692a04b857bfc054305dee8c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c6e1f8f9280c84ab6ff6a1572d902ed1d4d4caa3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653638"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827048"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件追蹤
 
@@ -32,13 +32,13 @@ ms.locfileid: "46653638"
 >
 > - 若要執行郵件追蹤，您必須是「組織管理」、「合規性管理」或「服務台」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 >
-> - 結果中顯示的訊息數目上限取決於您選取的報告類型 (請參閱[選擇報告類型](#choose-report-type)一節，以取得詳細資料) 。 Exchange Online PowerShell 或獨立 EOP 中的[Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) Cmdlet PowerShell 會傳回結果中的所有郵件。
+> - 結果中顯示的訊息數目上限取決於您選取的報告類型 (請參閱 [選擇報告類型](#choose-report-type) 一節，以取得詳細資料) 。 Exchange Online PowerShell 或獨立 EOP 中的 [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) Cmdlet PowerShell 會傳回結果中的所有郵件。
 
 ## <a name="open-message-trace"></a>開啟郵件追蹤
 
 1. 開啟安全性 & 規範中心，網址為 <https://protection.office.com> 。
 
-2. 展開 [**郵件流程**]，然後選取 [**郵件追蹤**]。
+2. 展開 [ **郵件流程**]，然後選取 [ **郵件追蹤**]。
 
 ## <a name="message-trace-page"></a>[訊息追蹤] 頁面
 
@@ -99,7 +99,7 @@ ms.locfileid: "46653638"
 
 - **失敗**：未傳遞郵件。
 
-- **已隔離**：已隔離郵件 (垃圾郵件、大宗郵件或網路釣魚)。 如需詳細資訊，請參閱[在 EOP 中隔離的電子郵件訊息](quarantine-email-messages.md)。
+- **已隔離**：已隔離郵件 (垃圾郵件、大宗郵件或網路釣魚)。 如需詳細資訊，請參閱 [在 EOP 中隔離的電子郵件訊息](quarantine-email-messages.md)。
 
 - **篩選為垃圾郵件**：已將郵件識別為垃圾郵件，而且已拒絕或封鎖該郵件 (未隔離)。
 
@@ -398,7 +398,7 @@ ms.locfileid: "46653638"
 |`ETR|ruleId=<guid>`|已符合的規則 ID。|
 |`St=<datetime>`|規則相符時的日期和時間 (以 UTC 表示)。|
 |`Action=<ActionDefinition>`|已套用的動作。 如需可用動作的清單，請參閱 [Exchange Online 中的郵件流程規則動作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)。|
-|`Mode=<Mode>`|規則的模式。 有效值為： <br/>* **強制**：將強制執行規則上的所有動作。 <br/>* 搭配**原則提示來測試：**：將會傳送任何原則提示動作，但不會處理其他強制執行動作。 <br/>* **無原則提示的測試**：動作將會列在記錄檔中，但是不會以任何方式通知寄件者，而且不會處理強制執行動作。|
+|`Mode=<Mode>`|規則的模式。 有效值為：<ul><li>**強制**：將強制執行規則上的所有動作。</li><li>搭配**原則提示來測試：**：將會傳送任何原則提示動作，但不會處理其他強制執行動作。</li><li>**無原則提示的測試**：動作將會列在記錄檔中，但是不會以任何方式通知寄件者，而且不會處理強制執行動作。</li></ul>|
 |
 
 符合郵件流程規則條件之郵件的 **custom_data** 範例值看起來像這樣：

@@ -8,7 +8,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 中的保護應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
-ms.openlocfilehash: 7775f0a37751289e7f0116575e2f6b2733683b6b
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 9556d2262eb59224357e20027a1f0e63404081f2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653674"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827406"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子郵件保護的順序和優先順序
 
@@ -47,13 +47,13 @@ ms.locfileid: "46653674"
   |8：00<sup>\*</sup>|使用者模擬 (受保護的網域) |UIMP|[設定 ATP 防網路釣魚原則](configure-atp-anti-phishing-policies.md)|
   |
 
-  <sup>\*</sup>這些功能只有在 ATP 反網路釣魚原則中才能使用。
+  <sup>\*</sup> 這些功能只有在 ATP 反網路釣魚原則中才能使用。
 
 - **原則的優先順序**：針對每個防護類型 (反垃圾郵件、反惡意程式碼、反網路釣魚等 ) ，都有一個適用于每個人的預設原則，但您可以建立適用于特定使用者的自訂原則。 每個自訂原則都有一個優先順序值，以決定原則的套用順序。 預設原則永遠套用於最後。
 
   如果使用者是在相同類型的多個原則中定義，則只有具有最高優先順序的原則適用于。 不會評估該類型的任何其餘原則 (包括預設原則) 。
 
-例如，請考慮下列**適用于相同使用者**的 ATP 反網路釣魚原則，以及識別為使用者模擬和欺騙的郵件：
+例如，請考慮下列 **適用于相同使用者**的 ATP 反網路釣魚原則，以及識別為使用者模擬和欺騙的郵件：
 
   ****
 

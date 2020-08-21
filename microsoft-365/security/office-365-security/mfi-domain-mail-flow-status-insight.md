@@ -6,27 +6,27 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 規範中心內郵件流程儀表板中的最上層網域郵件流程狀態，來疑難排解與電子郵件網域中的 MX 記錄相關的郵件流程問題。
-ms.openlocfilehash: 6366e3aee0ab50096f1396776397c80fabc8aaf2
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 9640d5e37932efeb7c0c8f8c56d0a15bc7f07e5b
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577744"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827012"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>安全性 & 規範中心內的最上層網域郵件流程狀態洞察力
 
-安全性 & 合規性中心內的[郵件流程儀表板](mail-flow-insights-v2.md)中的**最上層網域郵件流程狀態**，可讓您在郵件流程方面，為您組織的網域提供目前的狀態。 這種洞察力可協助您識別及疑難排解發生***郵件流程影響***問題的網域 (例如，無法接收外部電子郵件) ，尤其是網域到期或具有不正確 MX 記錄的網域。
+安全性 & 合規性中心內的[郵件流程儀表板](mail-flow-insights-v2.md)中的**最上層網域郵件流程狀態**，可讓您在郵件流程方面，為您組織的網域提供目前的狀態。 這種洞察力可協助您識別及疑難排解發生 ***郵件流程影響*** 問題的網域 (例如，無法接收外部電子郵件) ，尤其是網域到期或具有不正確 MX 記錄的網域。
 
 ![安全性 & 規範中心內郵件流程儀表板中的上方網域流程狀態構件](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
-當您按一下小工具中的 [**查看詳細資料**] 時，會出現一個**網域狀態**快顯視窗，顯示每個網域狀態的詳細資訊：
+當您按一下小工具中的 [ **查看詳細資料** ] 時，會出現一個 **網域狀態** 快顯視窗，顯示每個網域狀態的詳細資訊：
 
 - **網域**
 - **先前的 MX 記錄**
@@ -42,4 +42,4 @@ ms.locfileid: "46577744"
 
 ## <a name="related-topics"></a>相關主題
 
-如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱[Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。
+如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

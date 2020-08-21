@@ -7,31 +7,31 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: 管理員可以瞭解如何在獨立 Exchange Online Protection （EOP）中執行系統管理員角色群組報告。 當系統管理員在系統管理員角色群組中新增或移除成員時，此報告會登入，EOP 記錄每次出現一次。
-ms.openlocfilehash: 0c504460657a153aad7d3dd065c81007a68ba916
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+description: 系統管理員可以瞭解如何在獨立 Exchange Online Protection (EOP) 中執行系統管理員角色群組報告。 當系統管理員在系統管理員角色群組中新增或移除成員時，此報告會登入，EOP 記錄每次出現一次。
+ms.openlocfilehash: db1934c7865209d358d164ff5165bb23026589cc
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44587361"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827502"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在獨立版 EOP 中執行系統管理員角色群組報告
 
-在沒有 Exchange Online 信箱的獨立 Exchange Online Protection （EOP）組織中，當系統管理員新增成員至或移除系統管理角色群組中的成員時，服務會記錄每個事件。 如需獨立 EOP 中角色群組的詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)。
+在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，當系統管理員新增成員或從系統管理角色群組中移除成員時，該服務會記錄每個事件。 如需獨立 EOP 中角色群組的詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md)。
 
-當您在 Exchange 系統管理中心（EAC）中執行系統管理員角色群組報告時，專案會顯示為搜尋結果，並包含受影響的角色群組、變更角色群組成員資格的人員，以及進行的成員資格更新。 使用此報告可監視指派給組織使用者的系統管理權限變更。
+當您在 Exchange 系統管理中心中執行系統管理員角色群組報告 (EAC) 時，專案會顯示為搜尋結果，並包含受影響的角色群組、變更角色群組成員資格的人員，以及進行的成員資格更新。 使用此報告可監視指派給組織使用者的系統管理權限變更。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 若要開啟 Exchange 系統管理中心，請參閱[exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 若要開啟 Exchange 系統管理中心，請參閱 [exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 您必須已獲指派權限，才能執行這些程序。 具體說來，您需要 ComplianceManagement 審核記錄檔或 View-Only 的「審核記錄」角色，其預設會指派給、OrganizationManagement （全域管理員）和 SecurityAdministrator 角色群組。 如需詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)和[使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您必須已獲指派權限，才能執行這些程序。 具體而言，您需要 View-Only 的審計記錄檔或的「審計記錄」角色指派給 ComplianceManagement、OrganizationManagement (全域管理員) ，以及 SecurityAdministrator 角色群組預設。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - 如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -42,15 +42,15 @@ ms.locfileid: "44587361"
 
 執行系統管理員角色群組報告，以在特定時間範圍內尋找組織中管理角色群組的變更。
 
-1. 在 EAC 中，移至 [**規範管理**] [ \> **審計**]，然後選擇 [**執行系統管理員角色群組報告**]。
+1. 在 EAC 中，移至 [ **規範管理**] [ \> **審計**]，然後選擇 [ **執行系統管理員角色群組報告**]。
 
-2. 在開啟的 [**搜尋系統管理員角色群組變更**] 頁面上，設定下列設定：
+2. 在開啟的 [ **搜尋系統管理員角色群組變更** ] 頁面上，設定下列設定：
 
-   - **開始日期**和**結束日期**：輸入日期範圍。 依預設，報告會搜尋過去兩週以來對系統管理員角色群組所做的變更。
+   - **開始日期** 和 **結束日期**：輸入日期範圍。 依預設，報告會搜尋過去兩週以來對系統管理員角色群組所做的變更。
 
-   - **選取角色群組**：根據預設，會搜尋所有角色群組。 若要依特定角色群組篩選結果，請按一下 [**選取角色群組**]。 在出現的對話方塊中，選取角色群組，然後按一下 [**載入 >**]。 視需要重複此步驟，然後在完成時按一下 **[確定]** 。
+   - **選取角色群組**：根據預設，會搜尋所有角色群組。 若要依特定角色群組篩選結果，請按一下 [ **選取角色群組**]。 在出現的對話方塊中，選取角色群組，然後按一下 [ **載入 >**]。 視需要重複此步驟，然後在完成時按一下 **[確定]** 。
 
-3. 完成後，請按一下 [**搜尋**]。
+3. 完成後，請按一下 [ **搜尋**]。
 
 如果使用您指定的準則找到任何變更，它們會出現在結果窗格中。按一下搜尋結果中的角色群組，即可在詳細資料窗格中查看變更。
 
@@ -74,7 +74,7 @@ ms.locfileid: "44587361"
 
 ## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>使用獨立 Exchange Online PowerShell 來搜尋審計記錄專案
 
-您可以使用 Exchange Online PowerShell 來搜尋符合您指定之準則的審計記錄專案。 如需搜尋準則的清單，請參閱[Search-AdminAuditLog 搜尋準則](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)。 此程式會使用**Search-AdminAuditLog** Cmdlet，並以 Exchange Online PowerShell 顯示搜尋結果。 當您需要傳回的一組結果超過 **New-AdminAuditLogSearch** Cmdlet 或 EAC「稽核報告」報告中所定義的限制時，就可以使用這個 Cmdlet。
+您可以使用 Exchange Online PowerShell 來搜尋符合您指定之準則的審計記錄專案。 如需搜尋準則的清單，請參閱 [Search-AdminAuditLog 搜尋準則](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet)。 此程式會使用 **Search-AdminAuditLog** Cmdlet，並以 Exchange Online PowerShell 顯示搜尋結果。 當您需要傳回的一組結果超過 **New-AdminAuditLogSearch** Cmdlet 或 EAC「稽核報告」報告中所定義的限制時，就可以使用這個 Cmdlet。
 
 若要搜尋指定準則的稽核記錄，請使用下列語法。
 
@@ -83,7 +83,7 @@ Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 
 ```
 
 > [!NOTE]
-> 根據預設， **Search-AdminAuditLog** 指令程式最多會傳回 1,000 個記錄項目。 使用_ResultSize_參數可指定最多250000個記錄專案。 或者，使用值傳回 `Unlimited` 所有專案。
+> 根據預設， **Search-AdminAuditLog** 指令程式最多會傳回 1,000 個記錄項目。 使用 _ResultSize_ 參數可指定最多250000個記錄專案。 或者，使用值傳回 `Unlimited` 所有專案。
 
 此範例使用下列準則，執行所有稽核記錄項目的搜尋：
 
@@ -113,7 +113,7 @@ Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohibit
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
 ```
 
-如果您的搜尋傳回許多記錄專案，建議您使用使用 Exchange Online PowerShell 中提供的程式，**來搜尋審計記錄專案，並將結果傳送給**本主題稍後的收件者。 該章節中的程序會以電子郵件附件形式將 XML 檔案傳送給您指定的收件者，讓您更輕鬆擷取感興趣的資料。
+如果您的搜尋傳回許多記錄專案，建議您使用使用 Exchange Online PowerShell 中提供的程式， **來搜尋審計記錄專案，並將結果傳送給** 本主題稍後的收件者。 該章節中的程序會以電子郵件附件形式將 XML 檔案傳送給您指定的收件者，讓您更輕鬆擷取感興趣的資料。
 
 如需詳細的語法及參數資訊，請參閱 [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog)。
 
@@ -121,7 +121,7 @@ Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso
 
 **Search-AdminAuditLog** Cmdlet 會傳回[審核記錄內容](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents)中所述的欄位。 在此指令程式傳回的欄位中， **CmdletParameters** 和 **ModifiedProperties** 兩個欄位包含依預設無法檢視的其他資訊。
 
-若要檢視 **CmdletParameters** 和 **ModifiedProperties** 欄位的內容，請使用下列步驟。 或者，您可以使用**Exchange Online PowerShell 中的程式來搜尋審計記錄專案，並將結果傳送到**本主題稍後的收件者，以建立 XML 檔案。
+若要檢視 **CmdletParameters** 和 **ModifiedProperties** 欄位的內容，請使用下列步驟。 或者，您可以使用 **Exchange Online PowerShell 中的程式來搜尋審計記錄專案，並將結果傳送到** 本主題稍後的收件者，以建立 XML 檔案。
 
 此程序採用下列概念：
 

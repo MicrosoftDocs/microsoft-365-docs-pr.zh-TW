@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: 系統管理員可以瞭解如何在獨立 Exchange Online Protection (EOP) 中查看及搜尋管理審核記錄。
-ms.openlocfilehash: 171f3ec531b232ca796232ab26caefbee8afc75c
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 8890ab8f2f2db01ed6bd22657a9bea8f77b25d08
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653494"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46825074"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>在獨立版 EOP 中檢視系統管理稽核記錄
 
@@ -29,17 +29,17 @@ ms.locfileid: "46653494"
 >
 > - 系統管理員審核記錄預設為啟用，您無法停用。
 >
-> - 系統管理員審核記錄不會根據以**Get**、 **Search**或**Test**動詞開頭的指令程式，記錄動作。
+> - 系統管理員審核記錄不會根據以 **Get**、 **Search**或 **Test**動詞開頭的指令程式，記錄動作。
 >
 > - 稽核記錄項目會保留 90 天的時間。 當專案超過90天時，它會被刪除
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 若要開啟 Exchange 系統管理中心，請參閱[exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
+- 若要開啟 Exchange 系統管理中心，請參閱 [exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
 - 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 具體而言，您需要 View-Only 的審計記錄檔或的「審計記錄」角色指派給 ComplianceManagement、OrganizationManagement (全域管理員) ，以及 SecurityAdministrator 角色群組預設。 如需詳細資訊，請參閱[獨立 EOP 中的許可權](feature-permissions-in-eop.md)和[使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您必須已獲指派權限，才能執行這些程序。 具體而言，您需要 View-Only 的審計記錄檔或的「審計記錄」角色指派給 ComplianceManagement、OrganizationManagement (全域管理員) ，以及 SecurityAdministrator 角色群組預設。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - 如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -48,9 +48,9 @@ ms.locfileid: "46653494"
 
 ## <a name="use-the-eac-to-view-the-admin-audit-log"></a>使用 EAC 來查看系統管理員審核記錄檔
 
-1. 在 EAC 中，移至 [**規範管理**] [ \> **審計**]，然後選擇 [**執行系統管理員審計記錄報告**]。
+1. 在 EAC 中，移至 [ **規範管理**] [ \> **審計**]，然後選擇 [ **執行系統管理員審計記錄報告**]。
 
-2. 在開啟的 [**搜尋系統管理員角色群組變更**] 頁面上，選擇 [**開始日期**] 和 [**結束日期**] (預設範圍是過去兩周) ，然後選擇 [**搜尋**]。 All configuration changes made during the specified time period are displayed, and can be sorted, using the following information:
+2. 在開啟的 [ **搜尋系統管理員角色群組變更** ] 頁面上，選擇 [ **開始日期** ] 和 [ **結束日期** ] (預設範圍是過去兩周) ，然後選擇 [ **搜尋**]。 All configuration changes made during the specified time period are displayed, and can be sorted, using the following information:
 
    - **日期**：設定變更的日期和時間。 日期和時間會以格林威治標準時間 (UTC) 格式儲存。
 
@@ -76,7 +76,7 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
 **附註**：
 
-- 您只能將_Parameters_參數與_Cmdlet_參數搭配使用。
+- 您只能將 _Parameters_ 參數與 _Cmdlet_ 參數搭配使用。
 
 - _ObjectIds_參數會依 Cmdlet 所修改的物件來篩選結果。 有效的值取決於物件在審計記錄中的表示方式。 例如：
 
@@ -87,13 +87,13 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
 - _UserIds_參數會依據執行 Cmdlet) 的變更 (來篩選結果。
 
-- 針對_StartDate_和_EndDate_參數，如果您指定的日期/時間值不含時區，則此值會在 [標準時間] (UTC) 。 若要指定這個參數的日期/時間值，請使用下列其中一個選項︰
+- 針對 _StartDate_ 和 _EndDate_ 參數，如果您指定的日期/時間值不含時區，則此值會在 [標準時間] (UTC) 。 若要指定這個參數的日期/時間值，請使用下列其中一個選項︰
 
   - 指定 UTC 的日期/時間值：例如，"2016-05-06 14:30:00z"。
 
   - 指定 [日期/時間] 值做為公式，以將您的本機時區中的日期/時間轉換成 UTC：例如， `(Get-Date "5/6/2016 9:30 AM").ToUniversalTime()` 。 如需詳細資訊，請參閱 [Get-Date](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/get-date)。
 
-- 根據預設，Cmdlet 會傳回最多1000個記錄專案。 使用_ResultSize_參數可指定最多250000個記錄專案。 或者，使用值傳回 `Unlimited` 所有專案。
+- 根據預設，Cmdlet 會傳回最多1000個記錄專案。 使用 _ResultSize_ 參數可指定最多250000個記錄專案。 或者，使用值傳回 `Unlimited` 所有專案。
 
 此範例使用下列準則，執行所有稽核記錄項目的搜尋：
 
@@ -109,7 +109,7 @@ Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04
 
 ### <a name="view-details-of-audit-log-entries"></a>檢視稽核記錄項目的詳細資料
 
-**Search-AdminAuditLog** Cmdlet 會傳回本主題稍後的「[審核記錄內容](#audit-log-contents)」區段中所述的欄位。 由指令程式傳回的欄位、兩個欄位**CmdletParameters**和**ModifiedProperties**，包含預設不會傳回的其他資訊。
+**Search-AdminAuditLog** Cmdlet 會傳回本主題稍後的「[審核記錄內容](#audit-log-contents)」區段中所述的欄位。 由指令程式傳回的欄位、兩個欄位 **CmdletParameters** 和 **ModifiedProperties**，包含預設不會傳回的其他資訊。
 
 若要檢視 **CmdletParameters** 和 **ModifiedProperties** 欄位的內容，請使用下列步驟。
 

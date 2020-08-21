@@ -6,31 +6,31 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
-description: 系統管理員可以深入瞭解與使用連接器（也稱為「郵件流程智慧」）郵件傳遞相關聯的錯誤代碼。
-ms.openlocfilehash: 55b57e4b487444abb57bcc184ef6fd742ea9dc1d
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: 系統管理員可以深入瞭解與使用 (連接器（也稱為「郵件流程情報」) ）相關聯之郵件傳遞的錯誤碼。
+ms.openlocfilehash: b345b52f572efca2aca1fde6ba720d733e521cc4
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44206613"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827710"
 ---
-# <a name="mail-flow-intelligence-in-eop"></a>EOP 中的郵件流程智慧
+# <a name="mail-flow-intelligence-in-eop"></a>EOP 中的郵件流程情報
 
-在包含 Exchange Online 或獨立 Exchange online Protection （EOP）組織中信箱的 Microsoft 365 組織中，您通常會使用連接器將電子郵件訊息從 EOP 路由傳送至您的內部部署電子郵件環境。 您也可以使用連接器將來自 Microsoft 365 的郵件路由傳送至夥伴組織。 當 Microsoft 365 無法透過連接器傳遞這些郵件時，他們就會在 Microsoft 365 中佇列。 Microsoft 365 會繼續重試每封郵件24小時的傳遞。 24小時後，佇列中的郵件會到期，而且郵件會傳回給原始寄件者的未傳遞回報（也稱為 NDR 或退回的郵件）。
+在使用 Exchange Online 或獨立 Exchange online Protection 中信箱的 Microsoft 365 組織中 (EOP) 組織沒有 Exchange Online 信箱，您通常會使用連接器將電子郵件訊息從 EOP 路由傳送至您的內部部署電子郵件環境。 您也可以使用連接器將來自 Microsoft 365 的郵件路由傳送至夥伴組織。 當 Microsoft 365 無法透過連接器傳遞這些郵件時，他們就會在 Microsoft 365 中佇列。 Microsoft 365 會繼續重試每封郵件24小時的傳遞。 24小時後，佇列中的郵件會到期，而且郵件會傳回未傳遞回報的原始寄件者 (也稱為 NDR 或退回郵件) 。
 
-當無法使用連接器傳遞郵件時，Microsoft 365 會產生錯誤。 本主題說明最常見的錯誤及其解決方案。 透過連接器傳送的未傳遞郵件的排隊和通知錯誤，稱為「_郵件流程智慧_」。
+當無法使用連接器傳遞郵件時，Microsoft 365 會產生錯誤。 本主題說明最常見的錯誤及其解決方案。 透過連接器傳送的未傳遞郵件的排隊和通知錯誤，稱為「 _郵件流程智慧_」。
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>錯誤碼： 450 4.4.312 DNS 查詢失敗
 
 一般來說，此錯誤表示 Microsoft 365 嘗試連線至連接器中指定的智慧主機，但 DNS 查詢可尋找智慧主機的 IP 位址失敗。 這種錯誤的可能原因如下：
 
-- 您網域的 DNS 主機服務（為您的網域維護授權名稱伺服器的一方）發生問題。
+- 您網域的 DNS 主機服務會有問題， (維護網域) 之授權名稱伺服器的一方。
 
 - 您的網域最近到期，所以無法檢索 MX 記錄。
 
@@ -40,7 +40,7 @@ ms.locfileid: "44206613"
 
 - 請與您的 DNS 主機服務合作，以找出並修正您網域的問題。
 
-- 如果錯誤來自您的夥伴組織（例如，協力廠商雲端服務提供者），請與您的合作夥伴聯繫以修正此問題。
+- 如果錯誤來自您的夥伴組織 (例如，協力廠商雲端服務提供者) ，請與您的合作夥伴聯繫以修正此問題。
 
 ## <a name="error-code-450-44315-connection-timed-out"></a>錯誤碼： 450 4.4.315 Connection 超時
 
@@ -52,9 +52,9 @@ ms.locfileid: "44206613"
 
 ### <a name="how-do-i-fix-error-code-450-44315"></a>如何修正錯誤碼 450 4.4.315？
 
-- 找出哪個案例適用于您，並進行必要的更正。 例如，如果郵件流程運作正常，但尚未變更連接器設定，則需要檢查您的內部部署電子郵件環境，以查看伺服器是否已關機，或網路基礎結構是否有任何變更（例如，您已變更 internet 服務提供者，所以您現在有不同的 IP 位址）。
+- 找出哪個案例適用于您，並進行必要的更正。 例如，如果郵件流程運作正常，但尚未變更連接器設定，則需要檢查您的內部部署電子郵件環境，以查看伺服器是否已關機，或網路基礎結構是否有任何變更 (例如，您已變更 internet 服務提供者，所以您現在有不同的 IP 位址) 。
 
-- 如果錯誤來自您的夥伴組織（例如，協力廠商雲端服務提供者），請與您的合作夥伴聯繫以修正此問題。
+- 如果錯誤來自您的夥伴組織 (例如，協力廠商雲端服務提供者) ，請與您的合作夥伴聯繫以修正此問題。
 
 ## <a name="error-code-450-44316-connection-refused"></a>錯誤碼： 450 4.4.316 連接被拒絕
 
@@ -62,25 +62,25 @@ ms.locfileid: "44206613"
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>如何修正錯誤碼 450 4.4.316？
 
-- 如果您的內部部署環境中有信箱，您必須修改防火牆設定，以允許 TCP 埠25上來自 Microsoft 365 IP 位址的連線到您的內部部署電子郵件伺服器。 如需 Microsoft 365 IP 位址的清單，請參閱[microsoft 365 URLs 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
+- 如果您的內部部署環境中有信箱，您必須修改防火牆設定，以允許 TCP 埠25上來自 Microsoft 365 IP 位址的連線到您的內部部署電子郵件伺服器。 如需 Microsoft 365 IP 位址的清單，請參閱 [microsoft 365 URLs 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
 
-- 若您的內部部署環境中未傳遞任何郵件，請按一下警示中的 [**立即修正**]，讓 Microsoft 365 可以立即拒絕具有無效收件者的郵件。 這會降低超出組織的配額以取得無效收件者的風險，這可能會影響一般郵件傳遞。 或者，您可以使用下列指示以手動修正問題：
+- 若您的內部部署環境中未傳遞任何郵件，請按一下警示中的 [ **立即修正** ]，讓 Microsoft 365 可以立即拒絕具有無效收件者的郵件。 這會降低超出組織的配額以取得無效收件者的風險，這可能會影響一般郵件傳遞。 或者，您可以使用下列指示以手動修正問題：
 
-  - 在[Exchange 系統管理中心（EAC）](https://docs.microsoft.com/Exchange/exchange-admin-center)中，停用或刪除可將電子郵件從 Microsoft 365 傳送至您的內部部署電子郵件環境的連接器：
+  - 在 [Exchange 系統管理中心中 (EAC) ](https://docs.microsoft.com/Exchange/exchange-admin-center)中，停用或刪除將電子郵件從 Microsoft 365 傳送至您的內部部署電子郵件環境的連接器：
 
-    1. 在 EAC 中，移至 [**郵件流程** \> **連接器**]。
+    1. 在 EAC 中，移至 [ **郵件流程** \> **連接器**]。
 
     2. 選取 [**寄件者**] 值為**Office 365**的連接器，並選取**您組織的電子郵件伺服器**的 [**到**] 值，然後執行下列其中一個步驟：
 
        - 按一下 [**刪除**移除圖示] 以刪除連接器 ![](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - 按一下 [**編輯** ![ 編輯圖示] 並取消 ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 選中 **，以**停用連接器。
+       - 按一下 [ **編輯** ![ 編輯圖示] ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 並清除 [ **關閉**] 以停用連接器。
 
-  - 將與您的內部部署電子郵件環境關聯的 Microsoft 365 中公認的網域從**內部轉送**變更為**權威性**。 如需相關指示，請參閱[管理 Exchange Online 中公認的網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+  - 將與您的內部部署電子郵件環境關聯的 Microsoft 365 中公認的網域從 **內部轉送** 變更為 **權威性**。 如需相關指示，請參閱 [管理 Exchange Online 中公認的網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
   **附注**：一般會有30分鐘到1小時的變更才會生效。 一小時後，請確認您不再收到錯誤。
 
-- 如果錯誤來自您的夥伴組織（例如，協力廠商雲端服務提供者），您必須聯繫您的合作夥伴以修正此問題。
+- 如果錯誤來自您的夥伴組織 (例如，協力廠商雲端服務提供者) ，您必須聯繫您的合作夥伴以修正此問題。
 
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>錯誤碼： 450 4.4.317 無法連接至遠端伺服器
 
@@ -94,7 +94,7 @@ ms.locfileid: "44206613"
 
 - 確認您的內部部署電子郵件伺服器上的 TLS 設定和憑證，以及連接器上的 TLS 設定。
 
-- 如果錯誤來自您的夥伴組織（例如，協力廠商雲端服務提供者），您必須聯繫您的合作夥伴以修正此問題。
+- 如果錯誤來自您的夥伴組織 (例如，協力廠商雲端服務提供者) ，您必須聯繫您的合作夥伴以修正此問題。
 
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>錯誤碼： 450 4.4.318 Connection 突然關閉
 
@@ -102,7 +102,7 @@ ms.locfileid: "44206613"
 
 - 您的防火牆使用 SMTP 封包檢查規則，而這些規則不會正常運作。
 
-- 您的內部部署電子郵件伺服器無法正常運作（例如，服務懸掛、損毀或低系統資源），這會導致伺服器超時並關閉 Microsoft 365 的連線。
+- 您的內部部署電子郵件伺服器無法正常運作 (例如，「服務懸掛」、「系統資源不足」或「低系統資源」) ，這會導致伺服器超時並關閉 Microsoft 365 的連線。
 
 - 您的內部部署環境與 Microsoft 365 之間有網路問題。
 
@@ -112,7 +112,7 @@ ms.locfileid: "44206613"
 
 - 如果問題是由您的內部部署環境和 Microsoft 365 之間的網路問題所造成，請與您的網路小組聯繫以進行問題的疑難排解。
 
-- 如果錯誤來自您的夥伴組織（例如，協力廠商雲端服務提供者），您必須聯繫您的合作夥伴以修正此問題。
+- 如果錯誤來自您的夥伴組織 (例如，協力廠商雲端服務提供者) ，您必須聯繫您的合作夥伴以修正此問題。
 
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>錯誤碼： 450 4.7.320 憑證驗證失敗
 
@@ -128,10 +128,10 @@ ms.locfileid: "44206613"
 
 - 修正連接器上的憑證或設定，讓 Microsoft 365 中的排隊郵件可以傳遞。
 
-- 如果錯誤來自您的夥伴組織（例如，協力廠商雲端服務提供者），您必須聯繫您的合作夥伴以修正此問題。
+- 如果錯誤來自您的夥伴組織 (例如，協力廠商雲端服務提供者) ，您必須聯繫您的合作夥伴以修正此問題。
 
 ## <a name="other-error-codes"></a>其他錯誤碼
 
-Microsoft 365 在將郵件傳遞至您的內部部署或夥伴電子郵件伺服器時遇到問題。 請使用錯誤中的**目的伺服器**資訊檢查您環境中的問題，或在發生設定錯誤時修改連接器。
+Microsoft 365 在將郵件傳遞至您的內部部署或夥伴電子郵件伺服器時遇到問題。 請使用錯誤中的 **目的伺服器** 資訊檢查您環境中的問題，或在發生設定錯誤時修改連接器。
 
-如果錯誤來自您的夥伴組織（例如，協力廠商雲端服務提供者），您必須聯繫您的合作夥伴以修正此問題。
+如果錯誤來自您的夥伴組織 (例如，協力廠商雲端服務提供者) ，您必須聯繫您的合作夥伴以修正此問題。

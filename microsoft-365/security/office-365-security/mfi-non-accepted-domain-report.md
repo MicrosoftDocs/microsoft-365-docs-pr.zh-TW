@@ -6,19 +6,19 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用 [安全性 & 合規性中心內的郵件流程儀表板中的 [非公認的網域報告]，監控來自內部部署組織中的寄件者網域未設定 Microsoft 365 的郵件。
-ms.openlocfilehash: 649163729bbb73140f9cfb7e75c9fd06f3908cce
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: ef5f1c26168347b6696e90292d9c957e63615c0f
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577454"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826938"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全性 & 規範中心內的非公認網域報告
 
@@ -30,9 +30,9 @@ ms.locfileid: "46577454"
 
 ## <a name="report-view-for-the-non-accepted-domain-report"></a>不接受之網域報告的報表檢視
 
-按一下 [**非公認的網域**] 小工具上的圖表，將會帶您前往**非公認的網域**報告。
+按一下 [ **非公認的網域** ] 小工具上的圖表，將會帶您前往 **非公認的網域** 報告。
 
-依預設，會顯示所有受影響連接器的活動。 如果您按一下 [**顯示資料**]，您可以從下拉式清單中選取特定的連接器。
+依預設，會顯示所有受影響連接器的活動。 如果您按一下 [ **顯示資料**]，您可以從下拉式清單中選取特定的連接器。
 
 如果您將滑鼠停留在圖表中的資料點 (day) 上，您會看到連接器的郵件總數。
 
@@ -40,7 +40,7 @@ ms.locfileid: "46577454"
 
 ## <a name="details-table-view-for-the-non-accepted-domain-report"></a>非公認網域報告的詳細資料表格視圖
 
-如果您按一下報表檢視中的 [**查看詳細資料] 表格**，會顯示下列資訊：
+如果您按一下報表檢視中的 [ **查看詳細資料] 表格** ，會顯示下列資訊：
 
 - **Date**
 - **輸入連接器名稱**
@@ -48,9 +48,9 @@ ms.locfileid: "46577454"
 - **訊息計數**
 - **範例郵件**：郵件 IDs 受影響郵件的範例。
 
-如果您按一下 [詳細資料] 表格視圖中的 [**篩選**]，您可以指定具有**開始日期**和**結束日期**的日期範圍。
+如果您按一下 [詳細資料] 表格視圖中的 [ **篩選** ]，您可以指定具有 **開始日期** 和 **結束日期**的日期範圍。
 
-若要將特定日期範圍的報告傳送至一或多個收件者，請按一下 [**要求下載**]。
+若要將特定日期範圍的報告傳送至一或多個收件者，請按一下 [ **要求下載**]。
 
 當您選取表格中的一列時，會出現一個快顯視窗，其中包含下列資訊：
 
@@ -58,12 +58,12 @@ ms.locfileid: "46577454"
 - **輸入連接器名稱**
 - **寄件者網域**
 - **訊息計數**
-- **範例郵件**：您可以按一下 [ **View sample messages** ]，以查看受影響郵件之範例的[郵件追蹤](message-trace-scc.md)結果。
+- **範例郵件**：您可以按一下 [ **View sample messages** ]，以查看受影響郵件之範例的 [郵件追蹤](message-trace-scc.md) 結果。
 
 ![在 [非公認的網域] 報告中，選取 [詳細資料表格] 視圖中的列之後的詳細資料彈出列表](../../media/mfi-non-accepted-domain-report-details-flyout.png)
 
-若要回到 [報告] 視圖，請按一下 [**查看報告**]。
+若要回到 [報告] 視圖，請按一下 [ **查看報告**]。
 
 ## <a name="related-topics"></a>相關主題
 
-如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱[Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。
+如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

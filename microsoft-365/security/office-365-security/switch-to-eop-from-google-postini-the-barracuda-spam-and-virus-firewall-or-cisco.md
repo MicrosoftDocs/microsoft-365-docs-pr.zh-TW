@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您將瞭解如何從內部部署電子郵件清潔裝置或雲端式保護服務切換到 Exchange Online Protection （EOP）。
-ms.openlocfilehash: d7b2cfbe84d1e03bcd549c5220f6063592962792
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+description: 在本文中，您將瞭解如何從內部部署電子郵件清潔裝置或雲端式保護服務切換至 Exchange Online Protection (EOP) 。
+ms.openlocfilehash: a6405411a130abf8369b312f553060caf0bf3855
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209268"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827794"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP
 
@@ -41,7 +41,7 @@ ms.locfileid: "44209268"
 
 ## <a name="switch-to-exchange-online"></a>切換至 Exchange Online
 
-您的內部部署信箱可能具有內部部署的裝置，而且您想要跳到 Exchange Online 雲端託管信箱，並 EOP protection，以利用 Microsoft 365 雲端郵件和保護功能。 若要開始，您可以註冊 Microsoft 365 並新增您的網域。 此案例不需要設定連接器，因為沒有任何資料路由傳送至內部部署信箱。 請從[Microsoft 365 獲得最新的高級功能](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)，以進行註冊，並熟悉其功能。
+您的內部部署信箱可能具有內部部署的裝置，而且您想要跳到 Exchange Online 雲端託管信箱，並 EOP protection，以利用 Microsoft 365 雲端郵件和保護功能。 若要開始，您可以註冊 Microsoft 365 並新增您的網域。 此案例不需要設定連接器，因為沒有任何資料路由傳送至內部部署信箱。 請從 [Microsoft 365 獲得最新的高級功能](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) ，以進行註冊，並熟悉其功能。
 
 在 Microsoft 365 安裝程式中，您將建立雲端式信箱使用者。
 
@@ -57,7 +57,7 @@ ms.locfileid: "44209268"
 
 - **自訂篩選規則**：如果您有自訂篩選或商務原則規則來找出特定的垃圾郵件，我們建議您在遷移規則之前，先嘗試使用預設設定 EOP 一段時間。 EOP 提供具有預設設定的企業級垃圾郵件保護，結果可能是您不需要將部分規則遷移至 EOP。 當然，如果現有的規則會強制執行特定自訂業務原則，即可建立這些原則。 [Exchange Online Protection 中的郵件流程規則（傳輸規則）](mail-flow-rules-transport-rules-0.md)提供在 EOP 建立郵件流程規則的詳細指示。
 
-- **IP 允許清單和 IP 封鎖清單**：如果您有每一使用者的允許清單和封鎖清單，請在設定過程中留出一些時間將這些清單複製到 EOP。 如需 IP 允許清單和 IP 封鎖清單的詳細資訊，請參閱[Configure the connection filter policy](configure-the-connection-filter-policy.md)。
+- **IP 允許清單和 IP 封鎖清單**：如果您有每一使用者的允許清單和封鎖清單，請在設定過程中留出一些時間將這些清單複製到 EOP。 如需 IP 允許清單和 IP 封鎖清單的詳細資訊，請參閱 [Configure the connection filter policy](configure-the-connection-filter-policy.md)。
 
 - **安全通訊**：如果合作夥伴要求郵件必須加密，建議您在 Exchange 系統管理中心設定此案例。 如要設定此案例，請查閱[設定連接器以保護與合作夥伴間的郵件流程安全](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)。
 

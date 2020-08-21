@@ -7,19 +7,19 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
-description: 在本文中，您將瞭解如何將網域和設定從一個 Microsoft Exchange Online Protection （EOP）組織（租使用者）移至另一個。
-ms.openlocfilehash: 32a1721a70df88e7e0d558322988e3e64b3f3397
-ms.sourcegitcommit: 73b2426001dc5a3f4b857366ef51e877db549098
+description: 在本文中，您將瞭解如何將網域和設定從一個 Microsoft Exchange Online Protection (EOP) 組織 (承租人) 移至另一個。
+ms.openlocfilehash: a33042631a5a5371e2d120f76f49cb2a46a638a3
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44617447"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827686"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>將網域及設定從某個 EOP 組織移到另一個
 
@@ -46,7 +46,7 @@ ms.locfileid: "44617447"
 
 - 反垃圾郵件
 
-  - 反垃圾郵件原則（也稱為內容篩選原則）
+  - 反垃圾郵件原則 (也稱為內容篩選原則) 
   - 輸出垃圾郵件篩選原則
   - 連接篩選原則
 
@@ -183,7 +183,7 @@ Foreach ($domain in $Domains) {
 
 2. 按一下 **[網域]**。
 
-   如果您看不到網域，請按一下 [**自訂 navigtion**]，選取 [**設定**]，然後按一下 [**儲存**]。
+   如果您看不到網域，請按一下 [ **自訂導覽**]，選取 [ **設定**]，然後按一下 [ **儲存**]。
 
 3. 按一下每個**啟動安裝程式**連結，然後繼續執行安裝精靈。
 
@@ -191,7 +191,7 @@ Foreach ($domain in $Domains) {
 
 5. 記錄您降用來驗證網域的 MX 記錄或 TXT 記錄，然後完成安裝精靈。
 
-6. 將驗證 TXT 記錄新增至您的 DNS 記錄。 這樣可以在網域從目標組織移除後，讓您更快速地在來源組織中驗證網域。 如需設定 DNS 的詳細資訊，請參閱[在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+6. 將驗證 TXT 記錄新增至您的 DNS 記錄。 這樣可以在網域從目標組織移除後，讓您更快速地在來源組織中驗證網域。 如需設定 DNS 的詳細資訊，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>步驟 3：強制寄件者將郵件加入佇列
 
@@ -201,7 +201,7 @@ Foreach ($domain in $Domains) {
 
 另一個選項是將無效的 MX 記錄放在保留網域 DNS 記錄的每個網域中 (也就是您的 DNS 主機服務)。這會導致寄件者將您的郵件加入佇列然後重試 (一般的重試嘗試會維持 48 個小時，但可能會因為不同的提供者而有所不同)。您可以使用 invalid.outlook.com 做為無效的 MX 目標。將 MX 記錄上的存留時間 (TTL) 值降低至 5 分鐘，將有助於更快速地將變更傳播到 DNS 提供者。
 
-如需設定 DNS 的詳細資訊，請參閱[在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+如需設定 DNS 的詳細資訊，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
 
 > [!IMPORTANT]
 > 不同的提供者將郵件加入佇列的時間也有所不同。您必須快速地設定新的租用戶並還原您的 DNS 設定，以避免未傳遞回報 (NDR) 在佇列時間過期時傳送給寄件者。
@@ -646,11 +646,11 @@ rm -erroraction 'silentlycontinue' $outfile
 #****************************************************************************
 # HostedContentFilterPolicy
 #****************************************************************************
-$HostedContentFilterPolicys = Import-Clixml ".\HostedContentFilterPolicy.xml"
-$HostedContentFilterPolicyCount = $HostedContentFilterPolicys.Name.Count
+$HostedContentFilterPolicies = Import-Clixml ".\HostedContentFilterPolicy.xml"
+$HostedContentFilterPolicyCount = $HostedContentFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedContentFilterPolicyCount Inbound Connectors"
-    ForEach ($HostedContentFilterPolicy in $HostedContentFilterPolicys) {
+    ForEach ($HostedContentFilterPolicy in $HostedContentFilterPolicies) {
         $HostedContentFilterPolicyCmdlet = "New-HostedContentFilterPolicy"
         if($HostedContentFilterPolicy.Name -eq "Default") {$HostedContentFilterPolicyCmdlet = "Set-HostedContentFilterPolicy -Identity Default"}
         else {
@@ -726,11 +726,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # HostedOutboundSpamFilterPolicy
 #****************************************************************************
-$HostedOutboundSpamFilterPolicys = Import-Clixml ".\HostedOutboundSpamFilterPolicy.xml"
-$HostedOutboundSpamFilterPolicyCount = $HostedOutboundSpamFilterPolicys.Name.Count
+$HostedOutboundSpamFilterPolicies = Import-Clixml ".\HostedOutboundSpamFilterPolicy.xml"
+$HostedOutboundSpamFilterPolicyCount = $HostedOutboundSpamFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedOutboundSpamFilterPolicyCount Hosted Outbound Spam Filter Policies"
-    ForEach ($HostedOutboundSpamFilterPolicy in $HostedOutboundSpamFilterPolicys) {
+    ForEach ($HostedOutboundSpamFilterPolicy in $HostedOutboundSpamFilterPolicies) {
         $HostedOutboundSpamFilterPolicyCmdlet = "Set-HostedOutboundSpamFilterPolicy Default"
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "AdminDisplayName" $HostedOutboundSpamFilterPolicy.AdminDisplayName
         $HostedOutboundSpamFilterPolicyCmdlet += makeparam "BccSuspiciousOutboundAdditionalRecipients"
@@ -747,11 +747,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # HostedConnectionFilterPolicy
 #****************************************************************************
-$HostedConnectionFilterPolicys = Import-Clixml ".\HostedConnectionFilterPolicy.xml"
-$HostedConnectionFilterPolicyCount = $HostedConnectionFilterPolicys.Name.Count
+$HostedConnectionFilterPolicies = Import-Clixml ".\HostedConnectionFilterPolicy.xml"
+$HostedConnectionFilterPolicyCount = $HostedConnectionFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $HostedConnectionFilterPolicyCount Hosted Connection Filter Policies"
-    ForEach ($HostedConnectionFilterPolicy in $HostedConnectionFilterPolicys) {
+    ForEach ($HostedConnectionFilterPolicy in $HostedConnectionFilterPolicies) {
         $HostedConnectionFilterPolicyCmdlet = "Set-HostedConnectionFilterPolicy"
         $HostedConnectionFilterPolicyCmdlet += makeparam "Identity" $HostedConnectionFilterPolicy.Name
         $HostedConnectionFilterPolicyCmdlet += makeparam "AdminDisplayName" $HostedConnectionFilterPolicy.AdminDisplayName
@@ -768,11 +768,11 @@ if($HostedContentFilterPolicyCount -gt 0){
 #****************************************************************************
 # MalwareFilterPolicy
 #****************************************************************************
-$MalwareFilterPolicys = Import-Clixml ".\MalwareFilterPolicy.xml"
-$MalwareFilterPolicyCount = $MalwareFilterPolicys.Name.Count
+$MalwareFilterPolicies = Import-Clixml ".\MalwareFilterPolicy.xml"
+$MalwareFilterPolicyCount = $MalwareFilterPolicies.Name.Count
 if($HostedContentFilterPolicyCount -gt 0){
     Write-Host "Importing $MalwareFilterPolicyCount Malware Filter Policies"
-    ForEach ($MalwareFilterPolicy in $MalwareFilterPolicys) {
+    ForEach ($MalwareFilterPolicy in $MalwareFilterPolicies) {
         $MalwareFilterPolicyCmdlet = "New-MalwareFilterPolicy"
         if($MalwareFilterPolicy.Name -eq "Default") {$MalwareFilterPolicyCmdlet = "Set-MalwareFilterPolicy Default"}
         else {
@@ -931,4 +931,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>步驟 8：還原您的 DNS 設定以停止郵件佇列
 
-如果您選擇將 MX 記錄設為無效的位址，造成寄件者在您的轉換期間將郵件加入佇列，您必須將它們設回[系統管理中心](https://admin.microsoft.com)中所指定的正確值。 如需設定 DNS 的詳細資訊，請參閱[在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。
+如果您選擇將 MX 記錄設為無效的位址，造成寄件者在您的轉換期間將郵件加入佇列，您必須將它們設回[系統管理中心](https://admin.microsoft.com)中所指定的正確值。 如需設定 DNS 的詳細資訊，請參閱 [在 Microsoft 365 的任何 DNS 主機服務提供者中建立 dns 記錄](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)。

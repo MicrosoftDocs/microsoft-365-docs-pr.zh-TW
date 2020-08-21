@@ -6,17 +6,17 @@ ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 系統管理員可以瞭解如何使用 Security & 合規性中心內郵件流程儀表板中的 [佇列] 小工具，以透過輸出連接器監視其內部部署或夥伴組織的失敗郵件流程。
-ms.openlocfilehash: fdc3f44041990e3860deb04a36a69a3d506d334a
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 79523533306e847988fa0d4e2dd70eca22f7c76c
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577291"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826902"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心內佇列的洞察力
 
@@ -29,40 +29,40 @@ Microsoft 365 會繼續重新嘗試傳遞24小時。 24小時後，郵件會到�
 
 如果佇列中的電子郵件磁片區超過預先定義的臨界值 (預設值為200郵件) 中，則可在下列位置取得此資訊：
 
-- 在安全性 & 合規性中心的[郵件流程儀表板](mail-flow-insights-v2.md)中，**佇列**的洞察力。 如需詳細資訊，請參閱本主題中的[郵件流程儀表板區段中的佇列洞察力](#queues-insight-in-the-mail-flow-dashboard)。
+- 在安全性 & 合規性中心的[郵件流程儀表板](mail-flow-insights-v2.md)中，**佇列**的洞察力。 如需詳細資訊，請參閱本主題中的 [郵件流程儀表板區段中的佇列洞察力](#queues-insight-in-the-mail-flow-dashboard) 。
   
-- 警示會**顯示在 [** [安全性 & 規範中心](https://protection.office.com)] 中的 [提醒] 儀表板 (**警示** \> **儀表板**] 或 [ <https://protection.office.com/alertsdashboard>) ]。
+- 警示會 **顯示在 [** [安全性 & 規範中心](https://protection.office.com) ] 中的 [提醒] 儀表板 (**警示** \> **儀表板** ] 或 [ <https://protection.office.com/alertsdashboard>) ]。
 
   ![安全性 & 規範中心內的警示儀表板中的最近警示](../../media/mfi-queued-messages-alert.png)
 
-- 系統管理員會根據名為**Messages**的預設警示原則設定，收到電子郵件通知。 若要設定此警示的通知設定，請參閱下一節。
+- 系統管理員會根據名為 **Messages**的預設警示原則設定，收到電子郵件通知。 若要設定此警示的通知設定，請參閱下一節。
 
-  如需警示原則的詳細資訊，請參閱[安全性 & 合規性中心中的警示原則](../../compliance/alert-policies.md)。
+  如需警示原則的詳細資訊，請參閱 [安全性 & 合規性中心中的警示原則](../../compliance/alert-policies.md)。
 
 ## <a name="customize-queue-alerts"></a>自訂佇列警示
 
-1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，移至 [**警示** \> **警示原則**] 或 [開啟] <https://protection.office.com/alertpolicies> 。
+1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，移至 [ **警示** \> **警示原則** ] 或 [開啟] <https://protection.office.com/alertpolicies> 。
 
-2. 在 [**警示原則**] 頁面上，尋找並選取名為 Messages 的原則已**延遲**。
+2. 在 [ **警示原則** ] 頁面上，尋找並選取名為 Messages 的原則已 **延遲**。
 
-3. 在**郵件中已延遲**開啟的浮出的浮出狀態，您可以開啟或關閉提醒並設定通知設定。
+3. 在 **郵件中已延遲** 開啟的浮出的浮出狀態，您可以開啟或關閉提醒並設定通知設定。
 
    ![郵件已延遲警示原則詳細資訊安全 & 規範中心](../../media/mfi-queued-messages-alert-policy.png)
 
    - **狀態**：您可以開啟或關閉提醒。
 
-   - **電子郵件**收件者和**每日通知限制**：按一下 [**編輯**] 以設定下列設定：
+   - **電子郵件** 收件者和 **每日通知限制**：按一下 [ **編輯** ] 以設定下列設定：
 
-4. 若要設定通知設定，請按一下 [**編輯**]。 在出現的 [**編輯原則**] 飛入中，設定下列設定：
+4. 若要設定通知設定，請按一下 [ **編輯**]。 在出現的 [ **編輯原則** ] 飛入中，設定下列設定：
 
    - **傳送電子郵件通知**：預設值為 on。
-   - **電子郵件**收件者：預設值為**TenantAdmins**。
-   - **每日通知限制**：預設值為**無限制**。
+   - **電子郵件**收件者：預設值為 **TenantAdmins**。
+   - **每日通知限制**：預設值為 **無限制**。
    - **臨界**值：預設值為200。
 
    ![郵件中的通知設定已延遲警示原則詳細資訊安全 & 規範中心](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
-5. 完成後，按一下 [**儲存**並**關閉**]。
+5. 完成後，按一下 [ **儲存** 並 **關閉**]。
 
 ## <a name="queues-insight-in-the-mail-flow-dashboard"></a>在郵件流程儀表板中佇列洞察力
 
@@ -70,7 +70,7 @@ Microsoft 365 會繼續重新嘗試傳遞24小時。 24小時後，郵件會到�
 
 ![安全性 & 規範中心內的郵件流程儀表板中的佇列小工具](../../media/mfi-queues-widget.png)
 
-如果您按一下小工具上的郵件數目，則會出現佇列彈出的**郵件**，並顯示下列資訊：
+如果您按一下小工具上的郵件數目，則會出現佇列彈出的 **郵件** ，並顯示下列資訊：
 
 - **佇列中郵件的數目**
 - **連接器名稱**：按一下連接器名稱可管理 Exchange 系統管理中心中的連接器 (EAC) 。
@@ -79,7 +79,7 @@ Microsoft 365 會繼續重新嘗試傳遞24小時。 24小時後，郵件會到�
 - **目的地伺服器**
 - **最後一個 IP 位址**
 - **上一個錯誤**
-- **如何修正**：共有問題和解決方案可供使用。 如果 [**立即修復它**] 連結可用，請按一下它以修正此問題。 否則，請按一下任何可用的連結，以取得有關錯誤及可能解決方案的詳細資訊。
+- **如何修正**：共有問題和解決方案可供使用。 如果 [ **立即修復它** ] 連結可用，請按一下它以修正此問題。 否則，請按一下任何可用的連結，以取得有關錯誤及可能解決方案的詳細資訊。
 
 ![按一下郵件流程儀表板中佇列洞察力之後的詳細資料](../../media/mfi-queues-details.png)
 
@@ -87,6 +87,6 @@ Microsoft 365 會繼續重新嘗試傳遞24小時。 24小時後，郵件會到�
 
 ![郵件已延遲安全性 & 規範中心的警示詳細資料](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱[Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。
+如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

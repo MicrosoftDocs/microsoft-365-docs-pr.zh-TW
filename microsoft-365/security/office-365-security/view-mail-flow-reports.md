@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解安全性 & 合規性中心的「報告」儀表板中提供的郵件流程報告。
 ms.custom: ''
-ms.openlocfilehash: 98b27497b758a202ccbb741f6cb10e4ec65570e9
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: 9e9249eab5d3519dac0e33acf40d600d471b7cb2
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814495"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826454"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中查看郵件流程報告
 
@@ -51,7 +51,7 @@ ms.locfileid: "46814495"
   - **從沒有連接器的網際網路**
   - **沒有連接器的網際網路**
   - 您已設定的特定連接器。
-  
+
   若要隔離圖表中的資料，請使用 [顯示控制項的 **資料** ] 選取其中一個選項或 **所有郵件流程**。
 
   ![在連接器報告中透過郵件流程查看資料](../../media/connector-report-view-data-by-mail-flow.png)
@@ -206,7 +206,7 @@ ms.locfileid: "46814495"
 
 ## <a name="mailflow-status-report"></a>郵件流程狀態報表
 
-**郵件流程狀態報表**類似于[已傳送及已接收的電子郵件報告](#sent-and-received-email-report)，包含有關在 edge 上允許或封鎖之電子郵件的詳細資訊。 這是唯一包含 edge protection 資訊的報告，它會顯示在 Exchange Online Protection (EOP) 中，允許在評估之前封鎖多少封電子郵件。 請務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。  
+**郵件流程狀態報表**類似于[已傳送及已接收的電子郵件報告](#sent-and-received-email-report)，包含有關在 edge 上允許或封鎖之電子郵件的詳細資訊。 這是唯一包含 edge protection 資訊的報告，它會顯示在 Exchange Online Protection (EOP) 中，允許在評估之前封鎖多少封電子郵件。 請務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。
 若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [ **報表**] \> **儀表板** ，然後選取 [ **郵件流程狀態報表**]。 若要直接移至 [ **郵件流程] 狀態報表**，請開啟] <https://protection.office.com/mailflowStatusReport> 。
 
 ![報表儀表板中的郵件流程狀態報表小工具](../../media/mail-flow-status-report-widget.png)
@@ -300,14 +300,14 @@ ms.locfileid: "46814495"
 
 此圖顯示按下列方式組織的電子郵件計數：
 
-  - **電子郵件總數**
-  - **Edge protection 之後的電子郵件**
-  - **反惡意程式碼、檔信譽、檔案類型封鎖後的電子郵件**
-  - **反網路釣魚、URL 信譽、品牌模擬、反欺騙功能之後的電子郵件**
-  - **反垃圾郵件、大宗郵件篩選後的電子郵件**
-  - **使用者和網域模擬1之後的電子郵件**<sup> </sup>
-  - 檔案**及 URL 引爆1後的電子郵件**<sup> </sup>
-  - **在傳遞投遞後保護後，電子郵件偵測為良性 (URL 按一下時間保護) **
+- **電子郵件總數**
+- **Edge protection 之後的電子郵件**
+- **反惡意程式碼、檔信譽、檔案類型封鎖後的電子郵件**
+- **反網路釣魚、URL 信譽、品牌模擬、反欺騙功能之後的電子郵件**
+- **反垃圾郵件、大宗郵件篩選後的電子郵件**
+- **使用者和網域模擬1之後的電子郵件**<sup> </sup>
+- 檔案**及 URL 引爆1後的電子郵件**<sup> </sup>
+- **在傳遞投遞後保護後，電子郵件偵測為良性 (URL 按一下時間保護) **
 
 僅限<sup>1</sup>個 OFFICE 365 ATP
 
@@ -315,15 +315,15 @@ ms.locfileid: "46814495"
 
 此資料表包含下列資訊（以遞減的日期順序顯示）：
 
- - **Date**
- - **電子郵件總數**
- - **Edge protection**
- - **反惡意程式碼、檔信譽、檔案類型封鎖**
- - **反網路釣魚、URL 信譽、品牌模仿、反欺騙**
- - **反垃圾郵件、大宗郵件篩選**
- - ** (ATP) 的使用者和網域類比 **
- - **檔案與 URL 引爆 (ATP) **
- - **後續傳遞保護和 ZAP (ATP) 或 ZAP (EOP) **
+- **Date**
+- **電子郵件總數**
+- **Edge protection**
+- **反惡意程式碼、檔信譽、檔案類型封鎖**
+- **反網路釣魚、URL 信譽、品牌模仿、反欺騙**
+- **反垃圾郵件、大宗郵件篩選**
+- ** (ATP) 的使用者和網域類比 **
+- **檔案與 URL 引爆 (ATP) **
+- **後續傳遞保護和 ZAP (ATP) 或 ZAP (EOP) **
 
 如果您選取資料表格中的資料列，則會在飛入的電子郵件計數中顯示進一步細分。
 
@@ -340,7 +340,7 @@ ms.locfileid: "46814495"
 
  ![郵件流程狀態報表中的漏斗圖視圖 ](../../media/mail-flow-status-report-funnel-view.png)
 
- ### <a name="tech-view-for-the-mailflow-status-report"></a>郵件流程狀態報表的技術視圖
+### <a name="tech-view-for-the-mailflow-status-report"></a>郵件流程狀態報表的技術視圖
 
 **技術視圖**類似**漏斗**圖模式，可提供設定威脅防護功能的更細微細節。 您可以從圖表中查看郵件如何在威脅防護的不同階段進行分類。
 
@@ -360,27 +360,27 @@ ms.locfileid: "46814495"
 
 此圖顯示組織成下列類別的郵件：
 
-  - **電子郵件總數**
-  - **Edge 允許，已篩選 edge**
-  - **非惡意程式碼、安全附件偵測 (ATP) 、反惡意程式碼引擎偵測、規則區塊**
-  - **不是網路釣魚詐騙、DMARC 失敗、模仿偵測、欺騙偵測、網路釣魚偵測偵測**
-  - **沒有偵測 URL 引爆，URL 引爆偵測 (ATP) **
-  - **非垃圾郵件、垃圾郵件**
-  - **非惡意的電子郵件、安全連結偵測 (ATP) 、ZAP**
+- **電子郵件總數**
+- **Edge 允許，已篩選 edge**
+- **非惡意程式碼、安全附件偵測 (ATP) 、反惡意程式碼引擎偵測、規則區塊**
+- **不是網路釣魚詐騙、DMARC 失敗、模仿偵測、欺騙偵測、網路釣魚偵測偵測**
+- **沒有偵測 URL 引爆，URL 引爆偵測 (ATP) **
+- **非垃圾郵件、垃圾郵件**
+- **非惡意的電子郵件、安全連結偵測 (ATP) 、ZAP**
 
 當您將游標移到圖表中的某個類別時，您可以看到該類別中的郵件數目。
 
 此資料表包含下列資訊（以遞減的日期順序顯示）：
 
-  - **Date**  
-  - **電子郵件總數**
-  - **已篩選 Edge**
-  - **反惡意程式碼引擎、安全附件、已篩選的規則**
-  - **DMARC，模擬，欺騙，網路釣魚篩選**
-  - **URL 引爆偵測**
-  - **已篩選的反垃圾郵件**
-  - **移除的 ZAP**
-  - **安全連結偵測**
+- **Date**
+- **電子郵件總數**
+- **已篩選 Edge**
+- **反惡意程式碼引擎、安全附件、已篩選的規則**
+- **DMARC，模擬，欺騙，網路釣魚篩選**
+- **URL 引爆偵測**
+- **已篩選的反垃圾郵件**
+- **移除的 ZAP**
+- **安全連結偵測**
 
 如果您選取資料表格中的資料列，則會在飛入的電子郵件計數中顯示進一步細分。
 

@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,16 +16,16 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解可用及慣用的選項，允許在 Exchange Online Protection (EOP) 中輸入郵件。
-ms.openlocfilehash: bbb25e1c499e84a1af34d0f0a52a81f1470aadfd
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: f182027b153ee73e33131b39066e512c9303fcbd
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652978"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827108"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中建立安全的寄件者清單
 
-如果您是使用 Exchange Online 中的信箱或獨立 Exchange Online Protection (EOP) 客戶沒有 Exchange Online 信箱的 Microsoft 365 客戶，EOP 提供多種方式，以確保使用者能夠接收來自信任寄件者的電子郵件。 這些選項包括 Exchange 郵件流程規則 (也稱為傳輸規則) 、Outlook 安全寄件者、IP 允許清單 (連線篩選) ，以及反垃圾郵件原則中的允許的寄件者清單或允許的網域清單。 綜合，您可以將這些選項視為_安全寄件者清單_。
+如果您是使用 Exchange Online 中的信箱或獨立 Exchange Online Protection (EOP) 客戶沒有 Exchange Online 信箱的 Microsoft 365 客戶，EOP 提供多種方式，以確保使用者能夠接收來自信任寄件者的電子郵件。 這些選項包括 Exchange 郵件流程規則 (也稱為傳輸規則) 、Outlook 安全寄件者、IP 允許清單 (連線篩選) ，以及反垃圾郵件原則中的允許的寄件者清單或允許的網域清單。 綜合，您可以將這些選項視為 _安全寄件者清單_。
 
 下列清單說明可用的安全寄件者清單，依從最高建議至最低建議的順序進行：
 
@@ -34,33 +34,33 @@ ms.locfileid: "46652978"
 3. IP 允許清單 (連線篩選) 
 4.  (反垃圾郵件原則所允許的寄件者清單或允許的網域清單) 
 
-郵件流程規則允許最大的彈性，以確保只允許正確的郵件。 反垃圾郵件原則中的允許寄件者與允許的網域清單不如 IP 允許清單安全，因為寄件者的電子郵件網域很容易遭到欺騙。 不過，IP 允許清單也會帶來風險，因為從該 IP 位址傳送的_任何_網域的電子郵件都會略過垃圾郵件篩選。
+郵件流程規則允許最大的彈性，以確保只允許正確的郵件。 反垃圾郵件原則中的允許寄件者與允許的網域清單不如 IP 允許清單安全，因為寄件者的電子郵件網域很容易遭到欺騙。 不過，IP 允許清單也會帶來風險，因為從該 IP 位址傳送的 _任何_ 網域的電子郵件都會略過垃圾郵件篩選。
 
 > [!IMPORTANT]
 >
-> - 小心使用安全寄件者清單密切監視垃圾郵件篩選的*任何*例外狀況。
+> - 小心使用安全寄件者清單密切監視垃圾郵件篩選的 *任何* 例外狀況。
 >
-> - 雖然您可以使用安全寄件者清單來協助誤報 (已標示為垃圾郵件) 的良好電子郵件，但您應考慮使用安全寄件者清單做為暫時的解決方案，以盡可能避免使用。 建議您不要使用安全寄件者清單來管理誤報，因為垃圾郵件篩選例外會開啟您的組織，以進行欺騙和其他攻擊。 如果您堅持使用安全寄件者清單來管理誤報，您必須時刻警惕，讓主題在準備好時，讓主題[向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。
+> - 雖然您可以使用安全寄件者清單來協助誤報 (已標示為垃圾郵件) 的良好電子郵件，但您應考慮使用安全寄件者清單做為暫時的解決方案，以盡可能避免使用。 建議您不要使用安全寄件者清單來管理誤報，因為垃圾郵件篩選例外會開啟您的組織，以進行欺騙和其他攻擊。 如果您堅持使用安全寄件者清單來管理誤報，您必須時刻警惕，讓主題在準備好時，讓主題 [向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md) 檔案。
 >
 > - 若要讓網域傳送未驗證的電子郵件 (略過反欺騙保護) 但不略過反垃圾郵件和反惡意程式碼檢查，您可以將它新增至[AllowedToSpoof 安全寄件者清單](walkthrough-spoof-intelligence-insight.md)。
 >
-> - EOP 和 Outlook 會檢查不同的郵件內容，以判斷郵件的寄件者。 如需詳細資訊，請參閱本主題稍後的「[大量電子郵件](#considerations-for-bulk-email)」一節的考慮。
+> - EOP 和 Outlook 會檢查不同的郵件內容，以判斷郵件的寄件者。 如需詳細資訊，請參閱本主題稍後的「 [大量電子郵件](#considerations-for-bulk-email) 」一節的考慮。
 
-相比之下，您也有數個選項可以封鎖使用_封鎖的寄件者清單_來自特定來源的電子郵件。 如需詳細資訊，請參閱[在 EOP 中建立封鎖寄件者清單](create-block-sender-lists-in-office-365.md)。
+相比之下，您也有數個選項可以封鎖使用 _封鎖的寄件者清單_來自特定來源的電子郵件。 如需詳細資訊，請參閱[在 EOP 中建立封鎖寄件者清單](create-block-sender-lists-in-office-365.md)。
 
 ## <a name="recommended-use-mail-flow-rules"></a>建議的 () 使用郵件流程規則
 
-Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來識別郵件，以及指定應對這些郵件執行的動作。 如需詳細資訊，請參閱[Mail flow rules (transport rules) In Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
+Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來識別郵件，以及指定應對這些郵件執行的動作。 如需詳細資訊，請參閱 [Mail flow rules (transport rules) In Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
 
 下列範例假設您需要 contoso.com 中的電子郵件，以略過垃圾郵件篩選。 若要這麼做，請設定下列設定：
 
-1. **條件**：**寄件者** \> **網域為** \> contoso.com。
+1. **條件**： **寄件者** \> **網域為** \> contoso.com。
 
 2. 設定下列其中一個設定：
 
-   - **郵件流程規則條件**：**郵件頭** \> **包含下列任何字** \> **標頭名稱**： `Authentication-Results` \> **標頭值**： `dmarc=pass` 或 `dmarc=bestguesspass` 。
+   - **郵件流程規則條件**： **郵件頭** \> **包含下列任何字** \> **標頭名稱**： `Authentication-Results` \> **標頭值**： `dmarc=pass` 或 `dmarc=bestguesspass` 。
 
-     此條件會檢查傳送電子郵件網域的寄件者驗證狀態，以確定傳送網域未遭到欺騙。 如需有關電子郵件驗證的詳細資訊，請參閱[SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)及[DMARC](use-dmarc-to-validate-email.md)。
+     此條件會檢查傳送電子郵件網域的寄件者驗證狀態，以確定傳送網域未遭到欺騙。 如需有關電子郵件驗證的詳細資訊，請參閱 [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)及 [DMARC](use-dmarc-to-validate-email.md)。
 
    - **IP 允許清單**：在連線篩選原則中指定來源 IP 位址或位址範圍。
   
@@ -68,7 +68,7 @@ Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來�
 
    > [!IMPORTANT]
    >
-   > - [永不設定郵件流程規則]*只*會將寄件者網域設定為略過垃圾郵件篩選的條件。 這樣做會*大幅*增加攻擊者欺騙傳送網域的可能性 (或模擬完整的電子郵件地址) 、略過所有垃圾郵件篩選，並略過寄件者驗證檢查，使郵件會到達收件者的收件匣。
+   > - [永不設定郵件流程規則] *只* 會將寄件者網域設定為略過垃圾郵件篩選的條件。 這樣做會 *大幅* 增加攻擊者欺騙傳送網域的可能性 (或模擬完整的電子郵件地址) 、略過所有垃圾郵件篩選，並略過寄件者驗證檢查，使郵件會到達收件者的收件匣。
    >
    > - 請勿使用您擁有的網域 (又稱為公認的網域) 或流行的網域 (例如，microsoft.com) 為郵件流程規則中的條件。 這樣做會將其視為高風險，因為它會產生機會讓攻擊者傳送本來會進行篩選的電子郵件。
    >
@@ -88,19 +88,19 @@ Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來�
 
       例如，`X-ETR: Bypass spam filtering for authenticated sender 'contoso.com'`。 如果規則中有多個網域，您可以視需要自訂標頭文字。
 
-      當郵件由於郵件流程規則而略過垃圾郵件篩選時，value `SFV:SKN` 值會在**X-Forefront-Antispam-Report**標頭中戳。 如果郵件來自 IP 允許清單上的來源， `IPV:CAL` 也會新增此值。 這些值可協助您進行疑難排解。
+      當郵件由於郵件流程規則而略過垃圾郵件篩選時，value `SFV:SKN` 值會在 **X-Forefront-Antispam-Report** 標頭中戳。 如果郵件來自 IP 允許清單上的來源， `IPV:CAL` 也會新增此值。 這些值可協助您進行疑難排解。
 
 ![EAC 中的郵件流程規則設定，以略過垃圾郵件篩選。](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
 ## <a name="use-outlook-safe-senders"></a>使用 Outlook 安全寄件者
 
-使用者或系統管理員可以將寄件者電子郵件地址新增至信箱中的安全寄件者清單，而不是組織設定。 如需相關指示，請參閱[在 Office 365 中設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。 在大多數情況下，這不是必要的，因為寄件者會略過部分的篩選堆疊。 雖然您信任寄件者，但是寄件者的罐也會遭到攻破，而且可以傳送惡意的內容。 您最好讓篩選器執行每封郵件檢查所需的動作，然後在篩選器有錯誤時，[向 Microsoft 報告 false 肯定/負數](report-junk-email-messages-to-microsoft.md)。 略過篩選堆疊也會干擾[ZAP](zero-hour-auto-purge.md)。
+使用者或系統管理員可以將寄件者電子郵件地址新增至信箱中的安全寄件者清單，而不是組織設定。 如需相關指示，請參閱 [在 Office 365 中設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。 在大多數情況下，這不是必要的，因為寄件者會略過部分的篩選堆疊。 雖然您信任寄件者，但是寄件者的罐也會遭到攻破，而且可以傳送惡意的內容。 您最好讓篩選器執行每封郵件檢查所需的動作，然後在篩選器有錯誤時， [向 Microsoft 報告 false 肯定/負數](report-junk-email-messages-to-microsoft.md) 。 略過篩選堆疊也會干擾 [ZAP](zero-hour-auto-purge.md)。
 
-當郵件因使用者的安全寄件者清單而略過垃圾郵件篩選時， **X-Forefront-Antispam-Report**標頭欄位將會包含值 `SFV:SFE` ，表示略過垃圾郵件、欺騙和網路釣魚篩選。
+當郵件因使用者的安全寄件者清單而略過垃圾郵件篩選時， **X-Forefront-Antispam-Report** 標頭欄位將會包含值 `SFV:SFE` ，表示略過垃圾郵件、欺騙和網路釣魚篩選。
 
 ## <a name="use-the-ip-allow-list"></a>使用 IP 允許清單
 
-如先前所述，您無法使用郵件流程規則，下一個最佳選項是將來源電子郵件伺服器或伺服器新增至連線篩選原則中的 IP 允許清單。 如需詳細資訊，請參閱[Configure connection 篩選 IN EOP](configure-the-connection-filter-policy.md)。
+如先前所述，您無法使用郵件流程規則，下一個最佳選項是將來源電子郵件伺服器或伺服器新增至連線篩選原則中的 IP 允許清單。 如需詳細資訊，請參閱 [Configure connection 篩選 IN EOP](configure-the-connection-filter-policy.md)。
 
 **附註**：
 
@@ -115,7 +115,7 @@ Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來�
 
 ## <a name="use-allowed-sender-lists-or-allowed-domain-lists"></a>使用允許的寄件者清單或允許的網域清單
 
-最不可取的選項是使用反垃圾郵件原則中的允許寄件者清單或允許的網域清單。 您應該*盡可能*避免使用此選項，因為寄件者略過所有垃圾郵件、欺騙和網路釣魚防護，而寄件者驗證 (SPF、DKIM、DMARC) 。 這個方法最適合用來進行暫時測試。 您可以在 EOP 主題中的[設定反垃圾郵件原則](configure-your-spam-filter-policies.md)中找到詳細步驟。
+最不可取的選項是使用反垃圾郵件原則中的允許寄件者清單或允許的網域清單。 您應該 *盡可能* 避免使用此選項，因為寄件者略過所有垃圾郵件、欺騙和網路釣魚防護，而寄件者驗證 (SPF、DKIM、DMARC) 。 這個方法最適合用來進行暫時測試。 您可以在 EOP 主題中的 [設定反垃圾郵件原則](configure-your-spam-filter-policies.md) 中找到詳細步驟。
 
 這兩個清單的上限大約是1000個專案;不過，您只可以將30個專案輸入入口網站。 您必須使用 PowerShell 來新增超過30個專案。
 
@@ -129,7 +129,7 @@ Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來�
 
 標準 SMTP 電子郵件由「郵件信封」**(Message Envelope) 和郵件內容組成。 郵件信封包含在 SMTP 伺服器之間傳輸及傳遞郵件所需的資訊。 郵件內容包含統稱為 (「郵件標頭」**) 的郵件標頭欄位和郵件內容。 RFC 5321 會說明郵件信封，而 RFC 5322 中說明郵件頭。 收件者永遠不會看到實際的郵件信封，因為它是由郵件傳輸程式所產生，而且實際上不是郵件的一部分。
 
-- 此 `5321.MailFrom` 位址 (也稱為「**郵件來自**位址」、「P1 寄件者」或「信封寄件者」) 是在郵件的 SMTP 傳輸中使用的電子郵件地址。 這個電子郵件地址通常會記錄在郵件頭的 [傳回**路徑**標頭] 欄位中 (不過，寄件者可能會指定不同的傳回**路徑**電子郵件地址) 。 如果無法傳遞郵件，表示未傳遞回報的收件者 (也稱為 NDR 或退回郵件) 。
+- 此 `5321.MailFrom` 位址 (也稱為「 **郵件來自** 位址」、「P1 寄件者」或「信封寄件者」) 是在郵件的 SMTP 傳輸中使用的電子郵件地址。 這個電子郵件地址通常會記錄在郵件頭的 [傳回 **路徑** 標頭] 欄位中 (不過，寄件者可能會指定不同的傳回 **路徑** 電子郵件地址) 。 如果無法傳遞郵件，表示未傳遞回報的收件者 (也稱為 NDR 或退回郵件) 。
 
 - `5322.From` (也稱為**from** address 或 P2 sender) 是電子郵件地址**的收**件者標頭欄位，也就是顯示在電子郵件客戶程式中的寄件者電子郵件地址。
 
@@ -147,6 +147,6 @@ EOP 中的反垃圾郵件原則中的安全寄件者清單和安全網域清單�
 
 - 新增 blueyonder@news.blueyonderairlines.com (`5322.From`) 為 Outlook 安全寄件者的位址。
 
-- [使用郵件流程規則](#recommended-use-mail-flow-rules)，條件是尋找來自 blueyonder@news.blueyonderairlines.com (`5322.From` 位址、Blueyonder.airlines@margiestravel.com (`5321.MailFrom`) 或兩者的郵件。
+- [使用郵件流程規則](#recommended-use-mail-flow-rules) ，條件是尋找來自 blueyonder@news.blueyonderairlines.com (`5322.From` 位址、Blueyonder.airlines@margiestravel.com (`5321.MailFrom`) 或兩者的郵件。
 
-如需詳細資訊，請參閱[在 EOP 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
+如需詳細資訊，請參閱 [在 EOP 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。

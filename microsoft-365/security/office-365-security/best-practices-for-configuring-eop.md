@@ -7,17 +7,17 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 請遵循下列針對獨立 Exchange Online Protection (EOP) 的最佳作法建議，以便自行設定以取得成功，並避免常見的設定錯誤。
-ms.openlocfilehash: 880e61538f4de588b01a9ec107fcf629a0e7eeed
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: eb8e4aff765fbc1ab13c603f32ca0af51f87a4ae
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653194"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827662"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>設定獨立 EOP 的最佳作法
 
@@ -33,7 +33,7 @@ ms.locfileid: "46653194"
 
 ## <a name="recommended-settings"></a>建議的設定
 
-我們可讓安全性管理員自訂其安全性設定，以滿足組織的需求。 雖然一般來說，在 EOP 和 Office 365 ATP 中也有兩個安全性層級，我們建議： Standard 和 Strict。 這些設定會列在[EOP 和 Office 365 ATP 安全性的建議設定](recommended-settings-for-eop-and-office365-atp.md)中。
+我們可讓安全性管理員自訂其安全性設定，以滿足組織的需求。 雖然一般來說，在 EOP 和 Office 365 ATP 中也有兩個安全性層級，我們建議： Standard 和 Strict。 這些設定會列在 [EOP 和 Office 365 ATP 安全性的建議設定](recommended-settings-for-eop-and-office365-atp.md)中。
 
 ### <a name="miscellaneousnon-policy-settings"></a>雜項/非原則設定
 
@@ -46,7 +46,7 @@ ms.locfileid: "46653194"
 |[設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
 |[使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)|是|是||
 |[在 Office 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)|是|是|使用 `action=quarantine` Standard 和 `action=reject` Strict。|
-|部署[報告訊息增益集](enable-the-report-message-add-in.md)，以改進使用者對可疑電子郵件的報告|是|是||
+|部署 [報告訊息增益集](enable-the-report-message-add-in.md) ，以改進使用者對可疑電子郵件的報告|是|是||
 |排程惡意程式碼和垃圾郵件報告|是|是||
 |應禁止或監視自動轉送至外部網域|是|是||
 |應啟用整合審計|是|是||
@@ -55,14 +55,14 @@ ms.locfileid: "46653194"
 |已驗證的 SMTP 提交|停用|停用|已驗證的用戶端 SMTP 提交 (也稱為「用戶端 SMTP 提交」或「SMTP 驗證」) ，POP3 和 IMAP4 的用戶端才能傳送電子郵件。|
 |EWS 至信箱的連接|停用|停用||
 |[PowerShell 連線能力](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|停用|停用|可供信箱使用者或郵件使用者 ([Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) Cmdlet) 所傳回的使用者物件。|
-|使用[哄騙情報](learn-about-spoof-intelligence.md)將寄件者新增至您的允許清單|是|是||
+|使用 [哄騙情報](learn-about-spoof-intelligence.md) 將寄件者新增至您的允許清單|是|是||
 |[以目錄為基礎的 Edge 封鎖 (DBEB) ](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|已啟用|已啟用|網欄位型別 = 權威性|
 |[設定所有系統管理員帳戶的多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|已啟用|已啟用||
 |
 
 ## <a name="troubleshooting"></a>疑難排解
 
-使用系統管理中心的報告疑難排解一般問題和趨勢。 使用訊息追蹤工具，尋找關於訊息的單點特定資料。 請參閱[Exchange Online Protection 的報告與訊息追蹤](reporting-and-message-trace-in-exchange-online-protection.md)，以深入了解報告功能。 若要深入瞭解郵件追蹤工具，請參閱[安全性 & 合規性中心的郵件追蹤](message-trace-scc.md)。
+使用系統管理中心的報告疑難排解一般問題和趨勢。 使用訊息追蹤工具，尋找關於訊息的單點特定資料。 請參閱[Exchange Online Protection 的報告與訊息追蹤](reporting-and-message-trace-in-exchange-online-protection.md)，以深入了解報告功能。 若要深入瞭解郵件追蹤工具，請參閱 [安全性 & 合規性中心的郵件追蹤](message-trace-scc.md)。
 
 ## <a name="report-false-positives-and-false-negatives-to-microsoft"></a>報告對 Microsoft 的誤報和漏報
 
@@ -72,8 +72,8 @@ ms.locfileid: "46653194"
 
 建立郵件流程規則 (也稱為傳輸規則) 或自訂篩選以滿足您的業務需求。
 
-在實際執行環境中部署新規則時，請先選取其中一個測試模式，以查看規則的效果。 當您認為規則是以預期的方式運作後，請將規則模式變更為 [**強制執行**]。
+在實際執行環境中部署新規則時，請先選取其中一個測試模式，以查看規則的效果。 當您認為規則是以預期的方式運作後，請將規則模式變更為 [ **強制執行**]。
 
-當您部署新規則時，請考慮新增其他 [**產生**附隨報告] 動作，以監視規則採取的動作。
+當您部署新規則時，請考慮新增其他 [ **產生** 附隨報告] 動作，以監視規則採取的動作。
 
-在您的組織同時包含內部部署 Exchange 和 Exchange Online 的混合式環境中，請考慮您在郵件流程規則中使用的條件。 如果您想要將規則套用至整個組織，請務必使用內部部署 Exchange 和 Exchange Online 中提供的條件。 在這兩種環境中，大部分的條件都是可用的，只在一個環境或另一個環境中提供。 若要深入瞭解，請參閱[郵件流程規則 (傳輸規則) 在 Exchange Online 中](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。
+在您的組織同時包含內部部署 Exchange 和 Exchange Online 的混合式環境中，請考慮您在郵件流程規則中使用的條件。 如果您想要將規則套用至整個組織，請務必使用內部部署 Exchange 和 Exchange Online 中提供的條件。 在這兩種環境中，大部分的條件都是可用的，只在一個環境或另一個環境中提供。 若要深入瞭解，請參閱 [郵件流程規則 (傳輸規則) 在 Exchange Online 中](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)。

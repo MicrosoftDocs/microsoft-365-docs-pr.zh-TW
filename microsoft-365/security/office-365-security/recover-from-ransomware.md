@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -13,16 +13,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體的攻擊復原。
-ms.openlocfilehash: 1471b7b0cacbabaf086e0759e21a46b9cb9929ab
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: 2f8e5f5deb18cadfaea7acc1cffe73abbc43010b
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811023"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46827830"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>從 Microsoft 365 復原勒索軟體攻擊
 
-即使您採取每一種防範措施保護您的組織，您還是可以遭到[勒索軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)攻擊的受害人。 勒索軟體是很大的商務用，攻擊是以複雜的驗證。
+即使您採取每一種防範措施保護您的組織，您還是可以遭到 [勒索軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) 攻擊的受害人。 勒索軟體是很大的商務用，攻擊是以複雜的驗證。
 
 本主題中的步驟可讓您最有可能復原由勒索軟體加密的資料，並將協助停止傳播組織中的感染。 在您開始之前，請考慮下列項目：
 
@@ -32,7 +32,7 @@ ms.locfileid: "44811023"
 
 ## <a name="step-1-verify-your-backups"></a>步驟1：驗證備份
 
-如果您有離線備份，您可能會在從環境中移除勒索軟體的負載（惡意程式碼）**之後**，還原加密的資料。
+如果您有離線備份，您可能會在您從環境中移除勒索軟體的負載 (惡意程式碼) **之後** 還原加密的資料。
 
 如果您沒有備份，或是您的備份也受到勒索軟體的影響，您可以略過此步驟。
 
@@ -42,7 +42,7 @@ ms.locfileid: "44811023"
 
 如果您懷疑電子郵件是目標，您應該暫時停用使用者對信箱的存取權。 Exchange ActiveSync 是由行動裝置用於同步裝置與 Exchange Online 信箱之間的資料。
 
-若要停用信箱的 ActiveSync，請參閱[如何為 Exchange Online 中的使用者停用 exchange ActiveSync](https://support.microsoft.com/help/2795303)。
+若要停用信箱的 ActiveSync，請參閱 [如何為 Exchange Online 中的使用者停用 exchange ActiveSync](https://support.microsoft.com/help/2795303)。
 
 若要停用信箱的其他類型的存取，請參閱：
 
@@ -54,17 +54,17 @@ ms.locfileid: "44811023"
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步驟3：從受影響的裝置移除惡意程式碼
 
-在所有可疑電腦和裝置上執行完整的防病毒掃描，並提供最新的更新，以偵測和移除與勒索軟體相關聯的負載。 請勿忘記正在同步處理資料的裝置，或對應網路磁碟機的目標（即必須掃描那些電腦和裝置）。
+在所有可疑電腦和裝置上執行完整的防病毒掃描，並提供最新的更新，以偵測和移除與勒索軟體相關聯的負載。 請勿忘記正在同步處理資料的裝置，或對應網路磁碟機的目標 (那些電腦和裝置必須進行掃描，也就是) 。
 
-您可以使用[Windows Defender](https://www.microsoft.com/windows/comprehensive-security)或（適用于舊版用戶端） [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201)。
+您可以將 [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) 或 (用於舊版用戶端) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201)。
 
-另一種方式也可協助您移除勒索軟體或惡意[軟體是惡意軟體移除工具（MSRT）](https://www.microsoft.com/download/details.aspx?id=9905)。
+另一種方式也可協助您移除勒索軟體或惡意軟體是 [惡意軟體移除工具 (MSRT) ](https://www.microsoft.com/download/details.aspx?id=9905)。
 
-如果這些選項不起作用，您可以嘗試使用[Windows Defender 離線](https://support.microsoft.com/help/17466)或[疑難排解偵測和移除惡意程式碼的問題](https://support.microsoft.com/help/4466982)。
+如果這些選項不起作用，您可以嘗試使用 [Windows Defender 離線](https://support.microsoft.com/help/17466) 或 [疑難排解偵測和移除惡意程式碼的問題](https://support.microsoft.com/help/4466982)。
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>步驟4：在已清除的電腦或裝置上復原檔案
 
-在您完成上述步驟以從環境中移除勒索軟體負載（以避免勒索軟體加密或移除檔案）之後，您可以使用 windows 10 和 Windows 8.1 中的檔案歷程[記錄](https://support.microsoft.com/help/17128)，或 windows 7 中的系統保護，以嘗試復原您的本機檔案和資料夾。
+在您完成上述步驟以從環境中移除勒索軟體負載 (（該負載會使勒索軟體無法加密或移除) 您的檔案）之後，您可以使用 windows 10 和 Windows 8.1 中的檔案歷程 [記錄](https://support.microsoft.com/help/17128) ，或 windows 7 中的系統保護，以嘗試復原您的本機檔案和資料夾。
 
 **附註**：
 
@@ -74,7 +74,7 @@ ms.locfileid: "44811023"
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>步驟5：在您的 OneDrive 商務中復原檔案
 
-在 OneDrive for Business 中還原檔案，可讓您在過去的30天內，將整個 OneDrive 還原至上一個時間點。 如需詳細資訊，請參閱[還原您的 OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
+在 OneDrive for Business 中還原檔案，可讓您在過去的30天內，將整個 OneDrive 還原至上一個時間點。 如需詳細資訊，請參閱 [還原您的 OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)。
 
 ## <a name="step-6-recover-deleted-email"></a>步驟6：復原已刪除的電子郵件
 
@@ -86,17 +86,17 @@ ms.locfileid: "44811023"
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步驟7：重新啟用 Exchange ActiveSync 和 OneDrive 同步處理
 
-在您清潔電腦和裝置並復原資料後，您可以重新啟用 ActiveSync，並 OneDrive 您先前在[步驟 2](#step-2-disable-activesync-and-onedrive-sync)中停用的同步處理。
+在您清潔電腦和裝置並復原資料後，您可以重新啟用 ActiveSync，並 OneDrive 您先前在 [步驟 2](#step-2-disable-activesync-and-onedrive-sync)中停用的同步處理。
 
-## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步驟8（選用）：封鎖特定檔案副檔名的 OneDrive 同步處理
+## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步驟 8 (選用) ：封鎖特定檔案副檔名 OneDrive 同步處理
 
-復原之後，您可以防止商務用戶端的 OneDrive 同步處理此勒索軟體所影響的檔案類型。 如需詳細資訊，請參閱[Set-SPOTenantSyncClientRestriction](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
+復原之後，您可以防止商務用戶端的 OneDrive 同步處理此勒索軟體所影響的檔案類型。 如需詳細資訊，請參閱 [Set-SPOTenantSyncClientRestriction](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenantsyncclientrestriction)
 
 ## <a name="report-the-attack"></a>報告攻擊
 
 ### <a name="contact-law-enforcement"></a>連絡人法律強制執行
 
-您應與當地或聯邦執法機構聯繫。 例如，如果您在美國，您可以聯繫[FBI 當地欄位 office](https://www.fbi.gov/contact-us/field)、 [IC3](http://www.ic3.gov/complaint/default.aspx)或[機密服務](http://www.secretservice.gov/)。
+您應與當地或聯邦執法機構聯繫。 例如，如果您在美國，您可以聯繫 [FBI 當地欄位 office](https://www.fbi.gov/contact-us/field)、 [IC3](http://www.ic3.gov/complaint/default.aspx) 或 [機密服務](http://www.secretservice.gov/)。
 
 ### <a name="submit-a-report-to-your-countrys-scam-reporting-website"></a>將報告提交至您的國家/地區的騙局報告網站
 
@@ -104,7 +104,7 @@ ms.locfileid: "44811023"
 
 - 澳大利亞： [SCAMwatch](http://www.scamwatch.gov.au/)
 
-- 加拿大：[加拿大反欺詐中心](http://www.antifraudcentre-centreantifraude.ca/)
+- 加拿大： [加拿大反欺詐中心](http://www.antifraudcentre-centreantifraude.ca/)
 
 - 法國： [Agence nationale de la sécurité des systèmes d'information](http://www.ssi.gouv.fr/)
 
@@ -112,11 +112,11 @@ ms.locfileid: "44811023"
 
 - 愛爾蘭： a [Garda Síochána](http://www.garda.ie/)
 
-- 紐西蘭：[使用者事務詐騙](http://www.consumeraffairs.govt.nz/scams)
+- 紐西蘭： [使用者事務詐騙](http://www.consumeraffairs.govt.nz/scams)
 
-- 英國：[動作欺詐](http://www.actionfraud.police.uk/)
+- 英國： [動作欺詐](http://www.actionfraud.police.uk/)
 
-- 美國：[線上防護](http://www.onguardonline.gov/)
+- 美國： [線上防護](http://www.onguardonline.gov/)
 
 如果您的國家/地區未列出，請諮詢您的當地或聯邦執法機構。
 
@@ -124,7 +124,7 @@ ms.locfileid: "44811023"
 
 您可以使用下列其中一種方法，報告包含勒索軟體的網路釣魚郵件。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware)
 
@@ -150,4 +150,4 @@ ms.locfileid: "44811023"
 
 - [Cerberus 的三個機頭（如 Cerber）勒索軟體](https://www.microsoft.com/security/blog/2016/03/09/the-three-heads-of-the-cerberus-like-cerber-ransomware/)
 
-- [受（） Da Vinci 程式碼影響的 Troldesh 勒索軟體](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)
+- [ () Da Vinci 程式碼影響的 Troldesh 勒索軟體](https://www.microsoft.com/security/blog/2016/07/13/troldesh-ransomware-influenced-by-the-da-vinci-code/)

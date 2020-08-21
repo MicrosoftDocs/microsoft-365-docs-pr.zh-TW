@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、OneDrive 商務及小組檔案的 Microsoft 365 的客戶金鑰。
-ms.openlocfilehash: 346b723a4741e18d161122edecf985a3fb8c7845
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 87c18c1695d2963fc8a0c064d34d2b6cdc14199c
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794218"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845831"
 ---
 # <a name="set-up-customer-key"></a>設定客戶金鑰
 
@@ -400,25 +400,9 @@ DEP 與儲存在 Azure Key Vault 中的一組機碼相關聯。 您為 Microsoft
   
 若要建立 DEP，請遵循下列步驟：
   
-1. 在您的本機電腦上，使用組織中具有全域系統管理員許可權的工作或學校帳戶，並開啟 Windows PowerShell 並執行下列命令， [以連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) 。
+1. 在您的本機電腦上，使用組織中具有全域系統管理員許可權的公司或學校帳戶，在 Windows PowerShell 視窗中連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 。
 
-   ```powershell
-   $UserCredential = Get-Credential
-   ```
-
-2. 在 [Windows PowerShell 憑證要求] 對話方塊中，輸入您的工作或學校帳戶資訊，按一下 **[確定]**，然後輸入下列命令。
-
-   ```powershell
-   $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-   ```
-
-3. 執行下列命令。
-
-   ```powershell
-   Import-PSSession $Session
-   ```
-
-4. 若要建立 DEP，請輸入下列命令，以使用 DataEncryptionPolicy Cmdlet。
+2. 若要建立 DEP，請輸入下列命令，以使用 DataEncryptionPolicy Cmdlet。
 
    ```powershell
    New-DataEncryptionPolicy -Name <PolicyName> -Description "Policy Description" -AzureKeyIDs <KeyVaultURI1>, <KeyVaultURI2>
@@ -430,15 +414,17 @@ DEP 與儲存在 Azure Key Vault 中的一組機碼相關聯。 您為 Microsoft
 
    - *原則描述* 是一種使用者易記的原則描述，可協助您記起原則的用途。 您可以在描述中包含空格。 例如，「美國信箱的根鍵和其區域」。
 
-   - *KeyVaultURI1* 是原則中第一個索引鍵的 URI。 例如，https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01。
+   - *KeyVaultURI1* 是原則中第一個索引鍵的 URI。 例如，<https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>。
 
-   - *KeyVaultURI2* 是原則中的第二個索引鍵的 URI。 例如，https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02。 以逗號和空格分隔兩個 URIs。
+   - *KeyVaultURI2* 是原則中的第二個索引鍵的 URI。 例如，<https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>。 以逗號和空格分隔兩個 URIs。
 
    範例：
   
    ```powershell
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01, https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02
    ```
+
+如需詳細的語法及參數資訊，請參閱 [DataEncryptionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-data-encryptionpolicy)。
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>將 DEP 指派給信箱
 
@@ -450,7 +436,7 @@ Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 
 其中 *MailboxIdParameter* 會指定信箱。 如需 Set-Mailbox Cmdlet 的詳細資訊，請參閱 [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox)。
 
-針對 [使用 Outlook for iOS 和 Android 搭配混合式新式驗證的內部部署](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)信箱，已同步處理至您的 Exchange Online 租使用者的內部部署信箱資料，可使用 Set-MailUser Cmdlet 來指派 DEP。 
+針對 [使用 Outlook for iOS 和 Android 搭配混合式新式驗證的內部部署](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)信箱，已同步處理至您的 Exchange Online 租使用者的內部部署信箱資料，可使用 Set-MailUser Cmdlet 來指派 DEP。
 
 ```powershell
 Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>

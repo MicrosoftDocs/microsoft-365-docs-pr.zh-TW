@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: acf440d7bc46c51a6c00b10d06619868a09e155d
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: d049cdd61d2155267f4e55c612885929e27adaaa
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662241"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845719"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -40,7 +40,7 @@ ms.locfileid: "46662241"
 
 - 使用 web 上的 Office (Word、Excel PowerPoint) 開啟及編輯具有套用加密之敏感度標籤的 Office 檔案。 會強制執行以加密指派的許可權。 透過網頁上的 Word，您也可以在編輯這些檔時使用自動標籤。
 
-- 外部使用者可以使用 guest 帳戶存取以加密標記的檔。 如需詳細資訊，請參閱 [對外部使用者的支援和標示的內容](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。 
+- 外部使用者可以使用 guest 帳戶存取以加密標記的檔。 如需詳細資訊，請參閱 [對外部使用者的支援和標示的內容](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。
 
 - Office 365 eDiscovery 支援這些檔案與資料遺失防護 (DLP) 原則支援這些檔案中的內容。
 
@@ -50,6 +50,7 @@ ms.locfileid: "46662241"
 > 使用單一 Azure 機碼以加密標示的 SharePoint 中的現有檔案，也不會變更 SharePoint 行為。 若要在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，這些檔案才能從新功能受益，必須下載並重新上傳或編輯檔案。 例如，他們會在搜尋和 eDiscovery 結果中傳回。
 
 在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，會有三個新的 [審計事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) 可用於監視 SharePoint 和 OneDrive 中的檔之敏感度標籤：
+
 - **已將敏感度標籤套用到檔案**
 - **已變更套用到檔案的敏感度標籤**
 - **已將敏感度標籤從檔案移除**
@@ -60,7 +61,7 @@ ms.locfileid: "46662241"
 
 在 SharePoint 中，您可以隨時停用 Office 檔案的靈敏度標籤，並 OneDrive ([自願退出](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) 。
 
-如果您目前使用 SharePoint 資訊版權管理 (IRM) 來保護 SharePoint 中的檔，請務必檢查此頁面上的 [ [SharePoint 的資訊版權管理 (IRM) 和敏感度標籤](#sharepoint-information-rights-management-irm-and-sensitivity-labels) ] 區段。 
+如果您目前使用 SharePoint 資訊版權管理 (IRM) 來保護 SharePoint 中的檔，請務必檢查此頁面上的 [ [SharePoint 的資訊版權管理 (IRM) 和敏感度標籤](#sharepoint-information-rights-management-irm-and-sensitivity-labels) ] 區段。
 
 ## <a name="requirements"></a>需求
 
@@ -71,17 +72,18 @@ ms.locfileid: "46662241"
 ## <a name="limitations"></a>限制
 
 - SharePoint 不會自動將敏感度標籤套用至您已使用 Azure 資訊保護標籤加密的現有檔案。 相反地，當您在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，這些功能才能運作：
-    
+
     1. 確定您已將 [Azure 資訊保護標籤遷移](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) 至靈敏度標籤，並已從 Microsoft 365 規範中心（或對等標上的標記系統管理中心） [發行](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) 。
-    
+
     2. 下載檔案，然後將檔案上傳至 SharePoint。
 
 - 當套用加密的標籤有下列任何加密設定時 [，](encryption-sensitivity-labels.md#configure-encryption-settings)SharePoint 無法處理加密的檔案：
-    - **讓使用者在套用標籤** 和 [ **Word、PowerPoint 及 Excel 中** 的核取方塊時，指定許可權，並選取 [提示使用者指定許可權]。 此設定有時稱為「使用者定義的許可權」。
-    - 對**內容到期的使用者存取權**設定為**永不**值以外的值。
-    - 已選取 [**雙機碼加密**]。
-    
-    針對具有上述任何加密設定的標籤，網頁上的 Office 使用者不會看到標籤。 此外，新功能也無法與已有這些加密設定的已標記檔一起使用。 例如，即使更新這些檔，這些檔也不會在搜尋結果中傳回。
+
+  - **讓使用者在套用標籤** 和 [ **Word、PowerPoint 及 Excel 中** 的核取方塊時，指定許可權，並選取 [提示使用者指定許可權]。 此設定有時稱為「使用者定義的許可權」。
+  - 對**內容到期的使用者存取權**設定為**永不**值以外的值。
+  - 已選取 [**雙機碼加密**]。
+
+  針對具有上述任何加密設定的標籤，網頁上的 Office 使用者不會看到標籤。 此外，新功能也無法與已有這些加密設定的已標記檔一起使用。 例如，即使更新這些檔，這些檔也不會在搜尋結果中傳回。
 
 - 針對授與使用者編輯許可權的加密檔，在 Office 應用程式的 web 版本中無法封鎖複製。
 
@@ -93,12 +95,13 @@ ms.locfileid: "46662241"
 
 - 如果已標示的檔上傳至 SharePoint，而標籤是使用服務主體名稱中的帳戶來套用加密，則無法在網頁上的 Office 中開啟該檔。 範例案例包括 Microsoft Cloud App Security，以及透過電子郵件傳送給小組的檔案。
 
-- 使用者可能會在離線或轉入睡眠模式後遇到儲存問題，而不是使用 web Office 時，他們會使用桌面和行動應用程式進行 Word、Excel 或 PowerPoint。 針對這些使用者，當他們繼續其 Office 應用程式會話並嘗試儲存變更時，會看到上傳失敗訊息，並有一個選項可儲存副本，而不是儲存原始檔案。 
+- 使用者可能會在離線或轉入睡眠模式後遇到儲存問題，而不是使用 web Office 時，他們會使用桌面和行動應用程式進行 Word、Excel 或 PowerPoint。 針對這些使用者，當他們繼續其 Office 應用程式會話並嘗試儲存變更時，會看到上傳失敗訊息，並有一個選項可儲存副本，而不是儲存原始檔案。
 
 - 以下列方式加密的檔無法在 web 上的 Office 中開啟：
-    - 使用內部部署金鑰 ( 「保留您自己的金鑰」或 HYOK) 的加密
-    - 使用[雙重金鑰加密](double-key-encryption.md)所套用的加密 
-    - 獨立于標籤所套用的加密，例如直接套用 Rights Management protection 範本。
+
+  - 使用內部部署金鑰 ( 「保留您自己的金鑰」或 HYOK) 的加密
+  - 使用[雙重金鑰加密](double-key-encryption.md)所套用的加密
+  - 獨立于標籤所套用的加密，例如直接套用 Rights Management protection 範本。
 
 - 如果您刪除的標籤已套用至 SharePoint 中的檔，而不是從適當的標籤原則中移除標籤，則下載的檔不會標示或加密。 相比之下，如果標籤的檔儲存在 SharePoint 之外，當標籤刪除時，該檔仍會保持加密狀態。 請注意，雖然您可以在測試階段刪除標籤，但很少需要在實際執行環境中刪除標籤。
 
@@ -113,21 +116,21 @@ ms.locfileid: "46662241"
 組織的全域系統管理員擁有建立及管理敏感度標籤所有層面的完整權限。 如果您未以全域系統管理員身分登入，請參閱[建立和管理敏感度標籤所需的權限](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)。
 
 1. 登入[Microsoft 365 規範中心](https://compliance.microsoft.com/)，並流覽至**解決方案**  >  **資訊保護**
-    
-    如果您沒有立即看到這個選項，請先選取 [全部顯示]****。 
+
+    如果您沒有立即看到這個選項，請先選取 [全部顯示]****。
 
 2. 如果您看到可在 Office online 檔案中處理內容之功能的訊息，請選取 [ **立即開啟**]：
-    
+
     ![開啟 [立即開啟] 按鈕，以啟用 Office Online 的敏感度標籤](../media/sensitivity-labels-turn-on-banner.png)
-    
-    命令會立即執行，並在下一次重新整理頁面時，您就不會再看到訊息或按鈕。 
+
+    命令會立即執行，並在下一次重新整理頁面時，您就不會再看到訊息或按鈕。
 
 > [!NOTE]
 > 如果您有 Microsoft 365 多地理位置，您必須使用 PowerShell 來啟用所有地理位置的功能。 如需詳細資料，請參閱下一節。
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>使用 PowerShell 啟用敏感度標籤支援
 
-除了使用規範中心之外，您還可以使用 [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Cmdlet 從 SharePoint 線上 PowerShell 中，啟用敏感度標籤支援。 
+除了使用規範中心之外，您還可以使用 [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Cmdlet 從 SharePoint 線上 PowerShell 中，啟用敏感度標籤支援。
 
 如果您有 Microsoft 365 多地理位置，您必須使用 PowerShell 來啟用所有地理位置的支援。
 
@@ -156,14 +159,15 @@ ms.locfileid: "46662241"
 若要啟用新功能，請搭配使用 [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Cmdlet 搭配 *EnableAIPIntegration* 參數：
 
 1. 在 Microsoft 365 中使用具有全域系統管理員或 SharePoint 系統管理員許可權的工作或學校帳戶，連接至 SharePoint。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
-    
+
     附注：如果您有 Microsoft 365 多地理位置，請搭配使用-Url 參數和 [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)，並指定其中一個地理位置的 [SharePoint] 線上管理中心網站 Url。
 
 2. 執行下列命令，然後按 **Y** 確認：
 
     ```PowerShell
-    Set-SPOTenant -EnableAIPIntegration $true  
+    Set-SPOTenant -EnableAIPIntegration $true
     ```
+
 3. 針對 Microsoft 365 多地理位置：針對您餘下的地理位置重複步驟1和2。
 
 ## <a name="publishing-and-changing-sensitivity-labels"></a>發佈和變更敏感度標籤
@@ -178,14 +182,13 @@ ms.locfileid: "46662241"
 
 因為對於新的敏感度標籤的複寫延遲現在只一小時，所以您不會在範例中執行案例。 但作為一種保護措施，我們建議您先將新標籤發佈到少數測試使用者，等候一小時，然後在 SharePoint 和 OneDrive 上驗證標籤行為。 最後一個步驟是將更多使用者新增至現有標籤原則，或將標籤新增至現有的標籤原則，以供更多使用者使用。 當您的標準使用者看到標籤時，它已經同步處理至 SharePoint 和 OneDrive。
 
-
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint Information Rights Management (IRM) 和敏感度標籤
 
 [SharePoint Information Rights Management (IRM) ](set-up-irm-in-sp-admin-center.md) 是一種較舊的技術，可在下載檔案時套用加密和限制，以保護清單和文件庫層級的檔案。 這種舊版保護技術的設計是為了防止未經授權的使用者在 SharePoint 之外的地方開啟檔案。
 
 在比較中，敏感度標籤會提供視覺標記的保護設定 (頁首、頁尾、水位線) 除了加密之外。 加密設定支援所有的 [使用權力](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) ，以限制使用者可對內容執行的動作， [許多案例](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)也支援相同的靈敏度標籤。 在不同的工作負載和應用程式中使用具有一致設定的相同保護方法，會產生一致的保護原則。
 
-不過，您可以同時使用這兩種保護解決方案，行為如下： 
+不過，您可以同時使用這兩種保護解決方案，行為如下：
 
 - 如果您上傳的檔案包含套用加密的靈敏度標籤，則 SharePoint 無法處理此檔案，因此不會針對此檔案使用合著、eDiscovery、DLP 和 search。
 
@@ -208,20 +211,13 @@ ms.locfileid: "46662241"
 `InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
 
 若要取得敏感度標籤的 Guid，請使用「 [取得標籤](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) 」 Cmdlet：
-    
-1. 第一，[連接到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 
-    
-    例如，在您以系統管理員身分執行的 PowerShell 工作階段中，使用全域系統管理員帳戶登入：
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    ```
+
+1. 第一，[連接到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+
+    例如，在以系統管理員身分執行的 PowerShell 會話中，以全域系統管理員帳戶登入。
 
 2. 然後執行下列命令：
-    
+
     ```powershell
     Get-Label |ft Name, Guid
     ```
