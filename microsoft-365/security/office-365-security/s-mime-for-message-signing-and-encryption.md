@@ -7,20 +7,20 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
-description: 系統管理員可以瞭解如何在 Exchange Online 中使用 S/MIME （安全/多用途網際網路郵件擴充）來加密電子郵件，並以數位方式簽署郵件。
+description: 系統管理員可以瞭解如何在 Exchange Online 中使用 S/MIME (安全/多用途網際網路郵件) 延伸，以加密電子郵件並以數位方式簽署郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95bbab5161f9e4133223a247f8937c68f29c0590
-ms.sourcegitcommit: 7a59d83a8660c2344ebdb92e0ea0171c9c2d9498
+ms.openlocfilehash: ca865fa8ef658b4715d18e09fe9cbc1cffb201e6
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44811011"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845917"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>可用於 Exchange Online 中訊息簽署和加密的 S/MIME
 
@@ -33,18 +33,22 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
 您可以設定 S/MIME 供下列任何端點使用：
 
 - Outlook 2010 或更新版本
-
 - Outlook 網頁版 (先前為 Outlook Web App)
-
 - Exchange ActiveSync (EAS)
 
 對每個端點設定 S/MIME 時所採取的步驟會稍有不同。 通常需要執行下列步驟：
 
-1. 安裝以 Windows 為基礎的憑證授權單位，並且設定公開金鑰基礎結構，來核發 S/MIME 憑證。也支援協力廠商憑證提供者所發出的憑證。如需詳細資訊，請參閱 [Active Directory 憑證服務概觀](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
+1. 安裝以 Windows 為基礎的憑證授權單位單位 (CA) 並設定公開金鑰基礎結構，以發行 S/MIME 憑證。也支援協力廠商憑證提供者所發行的憑證。如需詳細資訊，請參閱 [Active Directory 憑證服務概述](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831740(v=ws.11))。
+
+   **附註**：
+
+   - 由協力廠商 CA 所發行的憑證具備所有用戶端和裝置自動信任的優勢。 由內部、私人 CA 所發出的憑證不會自動受用戶端和裝置信任，而且不是所有裝置 (例如，電話) 可以設定為信任私人憑證。
+
+   - 請考慮使用中級憑證，而不要使用根憑證，將憑證頒發給使用者。 如此一來，如果您需要撤銷並重新發出憑證，則根憑證仍然完好無損。
 
 2. 在內部部署 AD DS 帳戶的 **UserSMIMECertificate** 和/或 **UserCertificate** 屬性中發佈使用者憑證。
 
-3. 針對 Exchange Online 組織，使用適當版本的 Azure AD Connect，將使用者憑證從 AD DS 同步處理至 Azure Active Directory。然後，這些憑證會從 Azure Active Directory 同步至 Exchange Online 目錄，並會在將郵件加密給收件者時使用。
+3. 針對 Exchange Online 組織，使用適當版本的 Azure AD Connect，將使用者憑證從 AD DS 同步處理至 Azure Active Directory。 這些憑證會從 Azure Active Directory 同步至 Exchange Online 目錄，並於加密寄給收件者的郵件時使用。
 
 4. 設定虛擬憑證集合以驗證 S/MIME。 Outlook 網頁版會使用此資訊來驗證電子郵件的簽章，以確保電子郵件是以信任的憑證所簽署。
 
@@ -58,9 +62,7 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
 設定 Exchange Online 的 Outlook 網頁版來使用 S/MIME 包含下列幾個主要步驟：
 
 1. [設定 Outlook 網頁版的 S/MIME 設定](configure-s-mime-settings-for-outlook-web-app.md)
-
 2. [設定虛擬憑證集合以驗證 S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
-
 3. [將使用者憑證同步至 Office 365 進行 S/MIME 處理](sync-user-certificates-to-office-365-for-s-mime.md)
 
 ## <a name="related-message-encryption-technologies"></a>相關郵件加密技術
@@ -69,7 +71,7 @@ S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方�
 
 - **傳輸層安全性 (TLS)** 會加密電子郵件伺服器之間的通道或路由，以協助防止側錄和竊聽。
 
-- **安全通訊端層（SSL）** 會加密電子郵件客戶程式與 Microsoft 365 伺服器之間的連線。
+- **安全通訊端層 (SSL) ** 會加密電子郵件客戶程式與 Microsoft 365 伺服器之間的連線。
 
 - **BitLocker** 會加密資料中心硬碟上的資料，因此如果有人未獲授權就存取，便無法讀取資料。
 

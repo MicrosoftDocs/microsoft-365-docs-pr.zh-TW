@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中查看、建立、修改和刪除輸出垃圾郵件原則。
-ms.openlocfilehash: 22a809370787df1798f2f777c852d1004565d2a6
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 530c1af9b7802be6073f19331ce7f6a20bdb2668
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798279"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845975"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -37,39 +37,24 @@ EOP 使用輸出垃圾郵件原則做為組織的整體防禦垃圾郵件的一�
 
 您可以使用 Exchange Online 中的信箱，在安全性 & 合規性中心或 PowerShell (Exchange Online 365 PowerShell 中設定輸出垃圾郵件原則;沒有 Exchange Online 信箱) 之組織的獨立 EOP PowerShell。
 
-## <a name="outbound-spam-policies-in-the-security--compliance-center-vs-powershell"></a>安全性 & 規範中心與 PowerShell 的輸出垃圾郵件原則
-
 EOP 中的外寄垃圾郵件原則基本元素為：
 
 - **輸出垃圾郵件篩選原則**：指定輸出垃圾郵件篩選 verdicts 和通知選項的動作。
-
 - **輸出垃圾郵件篩選規則**：指定原則套用至) 外寄垃圾郵件篩選原則的優先順序和收件者篩選 (。
 
 當您在安全性 & 合規性中心管理輸出垃圾郵件原則時，這兩個元素之間的差異並不明顯。
 
-- 當您在安全性 & 合規性中心建立輸出垃圾郵件原則時，實際上您實際上是使用相同的名稱建立輸出垃圾郵件篩選規則和相關聯的輸出垃圾郵件篩選原則。
+- 當您建立原則時，實際上是建立輸出垃圾郵件篩選規則和相關聯的輸出垃圾郵件篩選原則，同時為這兩者使用相同的名稱。
+- 當您修改原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改外寄垃圾郵件篩選規則。 所有其他設定都會修改相關聯的輸出垃圾郵件篩選原則。
+- 當您移除原則時，會移除輸出垃圾郵件篩選規則和相關聯的輸出垃圾郵件篩選原則。
 
-- 當您在安全性 & 規範中心中修改輸出垃圾郵件原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改輸出垃圾郵件篩選規則。 所有其他設定都會修改相關聯的輸出垃圾郵件篩選原則。
-
-- 當您從安全性 & 合規性中心移除輸出垃圾郵件原則時，會移除輸出垃圾郵件篩選規則和相關聯的輸出垃圾郵件篩選原則。
-
-在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，輸出垃圾郵件篩選原則和輸出垃圾郵件篩選規則之間的差異很明顯。 您可以使用** \* -HostedOutboundSpamFilterPolicy** Cmdlet 來管理輸出垃圾郵件篩選原則，也可以使用** \* -HostedOutboundSpamFilterRule** Cmdlet 來管理輸出垃圾郵件篩選規則。
-
-- 在 PowerShell 中，您先建立輸出垃圾郵件篩選原則，然後建立輸出垃圾郵件篩選規則，以識別套用規則的原則。
-
-- 在 PowerShell 中，您可以分別修改輸出垃圾郵件篩選原則和輸出垃圾郵件篩選規則中的設定。
-
-- 當您從 PowerShell 中移除輸出垃圾郵件篩選原則時，對應的輸出垃圾郵件篩選規則不會自動移除，反之亦然。
-
-### <a name="default-outbound-spam-policy"></a>預設輸出垃圾郵件原則
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本主題稍後的 [使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定輸出垃圾郵件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies) 一節。
 
 每個組織都有一個名為 Default 的內建輸出垃圾郵件原則，具有下列屬性：
 
-- 名為 Default 的輸出垃圾郵件篩選原則會套用至組織中的所有收件者，即使沒有外寄垃圾郵件篩選規則 (收件者篩選器，) 與原則相關聯。
-
-- 名為「預設」的原則具有不能修改的自訂優先順序 **Lowest** (一律最後才會套用的原則)。 任何自訂垃圾郵件原則的優先順序一律都高於名為「預設」的原則。
-
-- 名為「預設」的原則是預設的原則 (**IsDefault** 屬性具有值 `True`)，且您無法刪除預設原則。
+- 原則會套用至組織中的所有收件者，即使沒有輸出的垃圾郵件篩選規則 (收件者篩選器，) 與原則相關聯。
+- 此原則的自訂優先順序值是**最低的**，表示您無法進行任何修改（此原則ㄧ律到最後才會套用）。 任何自訂垃圾郵件原則的優先順序一律都高於名為「預設」的原則。
+- 此原則是預設的 (**IsDefault** 屬性具有`True`值)，且您無法刪除此項預設原則。
 
 若要增加輸出垃圾郵件篩選的效能，您可以使用套用至特定使用者或使用者群組的更嚴格設定來建立自訂輸出垃圾郵件原則。
 
@@ -130,7 +115,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
         您新增的收件者會出現在飛入的 [ **收件者清單** ] 區段中。 若要刪除收件者，請按一下 [ ![ 移除] 按鈕 ](../../media/scc-remove-icon.png) 。
 
-     1. 完成後，按一下 [儲存 **]**。
+     1. 完成後，按一下 [儲存]****。
 
         若要停用此設定，請清除核取方塊。
 
@@ -170,18 +155,24 @@ EOP 中的外寄垃圾郵件原則基本元素為：
      - **限制使用者傳送郵件**：已傳送電子郵件通知，使用者會新增至安全性 & 合規性中心內的 **[受限制的使用者] <https://sip.protection.office.com/restrictedusers> **入口網站，直到系統管理員將其從**受限使用者**入口網站中移除之後，使用者才會傳送電子郵件。系統管理員從清單中移除使用者後，該天的使用者將不會受到限制。 如需相關指示，請參閱 [在傳送垃圾郵件後移除受限使用者入口網站中的使用者](removing-user-from-restricted-users-portal-after-spam.md)。
 
      - **無動作，只發出警示**：已傳送電子郵件通知。
-6.  (選用) 展開 [ **自動** 轉寄] 區段，以設定如何控制使用者的自動轉寄。
+
+6.  (選用) 展開 **自動** 轉寄區段，以控制使用者自動將電子郵件轉寄給外部寄件者。 如需自動轉發的詳細資訊，請參閱 [設定電子郵件](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding)轉寄。
 
    > [!NOTE]
-   > 這些設定只適用于雲端架構信箱。
+   >
+   > - 在2020年9月之前，這些設定均可供使用，但未強制執行。
+   >
+   > - 這些設定只適用于雲端架構信箱。
+   >
+   > - 自動轉接至內部收件者不會受到這些設定的影響。
 
-   - **自動轉送**
-  
-      選取其中一個選項來控制自動轉寄處理的處理方式。
+   可用值包括：
 
-      - **自動**：預設設定可讓系統以預設會停用自動轉寄的方式來控制自動轉寄。
-      - **On**：在原則內啟用外部轉寄，但沒有限制。
-      - **Off**：已停用外部轉寄，將會封鎖
+   - **自動系統控制**：允許輸出垃圾郵件篩選控制自動外部電子郵件轉發。 這是預設值。
+
+   - **On**：自動外部電子郵件轉寄功能未由原則停用。
+
+   - **Off**：原則已停用所有自動外部電子郵件轉接。
 
 7.  (必要) 請展開 [套用 **于** ] 區段，識別套用原則的內部寄件者。
 
@@ -245,7 +236,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 ### <a name="set-the-priority-of-custom-outbound-spam-policies"></a>設定自訂輸出垃圾郵件原則的優先順序
 
-根據預設，輸出垃圾郵件原則的優先順序會根據在 (較舊的原則中所建立的順序，優先順序低於舊版的原則) 。 較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。 任何兩個原則都不能有相同的優先順序，而且原則處理會在套用第一個原則之後停止。
+根據預設，輸出垃圾郵件原則的優先順序會根據在 (較舊的原則中所建立的順序，優先順序低於舊版的原則) 。 較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。 不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。
 
 自訂輸出垃圾郵件原則會以處理的順序顯示， (第一個原則的 **Priority** 值為 0) 。 預設的輸出垃圾郵件原則（名為 **輸出垃圾郵件篩選原則** ）的優先順序值是 **最低**的，您無法變更。
 
@@ -277,12 +268,19 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-outbound-spam-policies"></a>使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定輸出垃圾郵件原則
 
+如先前所述，輸出垃圾郵件原則是由輸出垃圾郵件篩選原則和外寄垃圾郵件篩選規則所組成。
+
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，輸出垃圾郵件篩選原則和輸出垃圾郵件篩選規則之間的差異很明顯。 您可以使用** \* -HostedOutboundSpamFilterPolicy** Cmdlet 來管理輸出垃圾郵件篩選原則，也可以使用** \* -HostedOutboundSpamFilterRule** Cmdlet 來管理輸出垃圾郵件篩選規則。
+
+- 在 PowerShell 中，您先建立輸出垃圾郵件篩選原則，然後建立輸出垃圾郵件篩選規則，以識別套用規則的原則。
+- 在 PowerShell 中，您可以分別修改輸出垃圾郵件篩選原則和輸出垃圾郵件篩選規則中的設定。
+- 當您從 PowerShell 中移除輸出垃圾郵件篩選原則時，對應的輸出垃圾郵件篩選規則不會自動移除，反之亦然。
+
 ### <a name="use-powershell-to-create-outbound-spam-policies"></a>使用 PowerShell 建立輸出垃圾郵件原則
 
 在 PowerShell 中建立輸出垃圾郵件原則的程式分為兩個步驟：
 
 1. 建立輸出垃圾郵件篩選原則。
-
 2. 建立輸出垃圾郵件篩選規則，以指定套用規則的輸出垃圾郵件篩選原則。
 
  **附註**：
@@ -292,7 +290,6 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 - 您可以在 PowerShell 中的新外寄垃圾郵件篩選原則上設定下列設定，而這些原則在安全性 & 規範中心內無法使用，直到您建立原則為止：
 
   - _在_ `$false` **HostedOutboundSpamFilterRule** Cmdlet) 上，建立新原則做為已停用 (。
-
   - 在_Priority_ _\<Number\>_ **HostedOutboundSpamFilterRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。
 
 - 在您將原則指派給垃圾郵件篩選規則之前，您在 PowerShell 中所建立的新輸出垃圾郵件篩選原則不會顯示在安全性 & 規範中心。

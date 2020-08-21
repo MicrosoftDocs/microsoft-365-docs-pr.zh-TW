@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在安全性 & 合規性中心的承租人允許/封鎖清單中設定 URL 專案。
-ms.openlocfilehash: 5ff34cca922f18a015bd9da847facc8177cf8790
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 888a96f23daf2cf47847466ad4080f310be7f9b4
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552547"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845939"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>在承租人允許/封鎖清單中管理 URLs
+# <a name="manage-urls-in-the-tenant-allowblock-list"></a>管理租使用戶允許/封鎖清單中的 URL
 
 > [!NOTE]
 > 本主題中所述的功能包括預覽、可能變更，而且無法在所有的組織中使用。
@@ -35,11 +35,11 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至「**租使用者允許/封鎖清單**」頁面，請使用 <https://protection.office.com/tenantAllowBlockList> 。
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至「 **租使用者允許/封鎖清單** 」頁面，請使用 <https://protection.office.com/tenantAllowBlockList> 。
 
-- 您可以在本主題稍後的[承租人 Allow/封鎖清單區段之 url 語法](#url-syntax-for-the-tenant-allowblock-list)中說明可用的 URL 值。
+- 您可以在本主題稍後的 [承租人 Allow/封鎖清單區段之 url 語法](#url-syntax-for-the-tenant-allowblock-list) 中說明可用的 URL 值。
 
-- 承租人允許/封鎖清單允許 URLss 最多500個專案。
+- 承租人允許/封鎖清單最多可以有500個專案可供 URLs。
 
 - 專案應該在15分鐘內生效。
 
@@ -63,21 +63,21 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心在承租人允許/封鎖清單中建立 URL 專案
 
-如需 URL 專案之語法的詳細資訊，請參閱本主題稍後的[承租人 Allow/封鎖清單區段的 URL 語法](#url-syntax-for-the-tenant-allowblock-list)。
+如需 URL 專案之語法的詳細資訊，請參閱本主題稍後的 [承租人 Allow/封鎖清單區段的 URL 語法](#url-syntax-for-the-tenant-allowblock-list) 。
 
-1. 在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
 
 2. 在 [**租使用者允許/封鎖清單**] 頁面上，確認已選取 [ **URLs** ] 索引標籤，然後按一下 [**新增**]
 
-3. 在出現的 [**新增 URLs** ] 浮出控制項中，設定下列設定：
+3. 在出現的 [ **新增 URLs** ] 浮出控制項中，設定下列設定：
 
    - **使用萬用字元新增 URLs**：每行輸入一個 URL，最多20個。
 
-   - **封鎖/允許**：選取是否要**允許**或**封鎖**指定的 URLs。
+   - **封鎖/允許**：選取是否要 **允許** 或 **封鎖** 指定的 URLs。
 
    - **永不過期**：執行下列其中一個步驟：
 
-     - 確認已關閉此設定 (![ 切換 ](../../media/scc-toggle-off.png)) 並使用 [**到期**日] 方塊來指定專案的到期日。
+     - 確認已關閉此設定 (![ 切換 ](../../media/scc-toggle-off.png)) 並使用 [ **到期** 日] 方塊來指定專案的到期日。
 
      或
 
@@ -85,57 +85,57 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
    - **選用附注**：輸入專案的描述性文字。
 
-4. 完成後，請按一下 [**新增**]。
+4. 完成後，請按一下 [ **新增**]。
 
 ## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心來查看承租人允許/封鎖清單中的專案
 
-1. 在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
 
 2. 選取 [ **URLs** ] 索引標籤。
 
 按一下下列欄標題，以遞增或遞減順序排序：
 
 - **值**
-- **動作**：**封鎖**或**允許**。
+- **動作**： **封鎖** 或 **允許**。
 - **上次更新日期**
 - **有效期**
 - **附註**
 
-按一下 [**群組**]，依**動作**將專案群組 (**封鎖**或**允許**) 或**無**。
+按一下 [ **群組** ]，依 **動作** 將專案群組 (**封鎖** 或 **允許**) 或 **無**。
 
-按一下 [**搜尋**]，輸入全部或部分的值，然後按 enter 以尋找特定值。 完成後，請按一下 [**清除搜尋** ![ 清除搜尋] 圖示 ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) 。
+按一下 [ **搜尋**]，輸入全部或部分的值，然後按 enter 以尋找特定值。 完成後，請按一下 [ **清除搜尋** ![ 清除搜尋] 圖示 ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) 。
 
-按一下 [**篩選**]。 在出現的 [**篩選**] 浮出控制項中，設定下列任一設定：
+按一下 [ **篩選**]。 在出現的 [ **篩選** ] 浮出控制項中，設定下列任一設定：
 
-- **動作**：選取 [**允許**]、[**封鎖**] 或 [兩者]。
+- **動作**：選取 [ **允許**]、[ **封鎖** ] 或 [兩者]。
 
 - **永不過期**：選取 [關閉] (![ 切換 ](../../media/scc-toggle-off.png)) 或 (![ 切換上的 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)) 。
 
-- **上次更新**：**從**)  (的開始日期， (**為**) 或兩者的結束日期。
+- **上次更新**： **從**)  (的開始日期， (**為**) 或兩者的結束日期。
 
-- **到期日**：**從**)  (的開始日期， (**為**) 或兩者的結束日期。
+- **到期日**： **從**)  (的開始日期， (**為**) 或兩者的結束日期。
 
 當您完成時 **，按一下 [** 套用]。
 
-若要清除現有篩選，請按一下 [**篩選**]，然後在出現的 [**篩選**] 浮出控制項中按一下 [**清除篩選**]。
+若要清除現有篩選，請按一下 [ **篩選**]，然後在出現的 [ **篩選** ] 浮出控制項中按一下 [ **清除篩選**]。
 
 ## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心修改承租人允許/封鎖清單中的專案
 
 您無法修改 URL 值本身。 相反地，您必須刪除該專案，然後重新建立。
 
-1. 在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
 
 2. 選取 [ **URLs** ] 索引標籤。
 
-3. 選取您要修改的專案，然後按一下 [**編輯** ![ 編輯圖示] ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 。
+3. 選取您要修改的專案，然後按一下 [ **編輯** ![ 編輯圖示] ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) 。
 
 4. 在出現的浮出控制項中，設定下列設定：
 
-   - **封鎖/允許**：選取 [**允許**] 或 [**封鎖**]。
+   - **封鎖/允許**：選取 [ **允許** ] 或 [ **封鎖**]。
 
    - **永不過期**：執行下列其中一個步驟：
 
-     - 確認已關閉此設定 (![ 切換 ](../../media/scc-toggle-off.png)) 並使用 [**到期**日] 方塊來指定輸入專案的到期日。
+     - 確認已關閉此設定 (![ 切換 ](../../media/scc-toggle-off.png)) 並使用 [ **到期** 日] 方塊來指定輸入專案的到期日。
 
      或
 
@@ -147,13 +147,13 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>使用安全性 & 規範中心移除承租人允許/封鎖清單中的專案
 
-1. 在安全性 & 規範中心內，移至**威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
 
 2. 選取 [ **URLs** ] 索引標籤。
 
-3. 選取您要移除的專案，然後按一下 [**刪除** ![ 刪除圖示] ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) 。
+3. 選取您要移除的專案，然後按一下 [ **刪除** ![ 刪除圖示] ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) 。
 
-4. 在出現的警告對話方塊中，按一下 [**刪除**]。
+4. 在出現的警告對話方塊中，按一下 [ **刪除**]。
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定承租人允許/封鎖清單
 
@@ -171,7 +171,7 @@ New-TenantAllowBlockListItems -ListType Url -Action <Allow | Block> -Entries <St
 New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
 ```
 
-如需詳細的語法及參數資訊，請參閱[TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)。
+如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-view-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 來查看承租人允許/封鎖清單中的專案
 
@@ -187,7 +187,7 @@ Get-TenantAllowBlockListItems -ListType Url [-Entry <URLValue>] [-Action <Allow 
 Get-TenantAllowBlockListItems -ListType Url -Action Block
 ```
 
-如需詳細的語法及參數資訊，請參閱[TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems)。
+如需詳細的語法及參數資訊，請參閱 [TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-modify-entries-in-the-tenant-allowblock-list"></a>使用 PowerShell 修改承租人 Allow/封鎖清單中的專案
 
@@ -205,7 +205,7 @@ Set-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN"> [-Action
 Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate (Get-Date "5/30/2020 9:30 AM").ToUniversalTime()
 ```
 
-如需詳細的語法及參數資訊，請參閱[Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems)。
+如需詳細的語法及參數資訊，請參閱 [Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems)。
 
 ### <a name="use-powershell-to-remove-entries-from-the-tenant-allowblock-list"></a>使用 PowerShell 從承租人允許/封鎖清單中移除專案
 
@@ -221,7 +221,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids <"Id1","Id2",..."IdN">
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
 ```
 
-如需詳細的語法及參數資訊，請參閱[Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems)。
+如需詳細的語法及參數資訊，請參閱 [Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems)。
 
 ## <a name="url-syntax-for-the-tenant-allowblock-list"></a>承租人允許/封鎖清單的 URL 語法
 
@@ -257,7 +257,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
     例如，不 `contoso.com/*` 包括 `contoso.com/a` 。
 
-  - `*.com*`無效 (不是可解析的網域，正確的萬用字元不遵循正斜線) 。
+  - `*.com*` 無效 (不是可解析的網域，正確的萬用字元不遵循正斜線) 。
 
   - IP 位址中不允許使用萬用字元。
 
@@ -281,7 +281,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 #### <a name="scenario-no-wildcards"></a>案例：沒有萬用字元
 
-**專案**：`contoso.com`
+**專案**： `contoso.com`
 
 - **允許相符**： contoso.com
 
@@ -309,14 +309,14 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 #### <a name="scenario-left-wildcard-subdomain"></a>案例：保留萬用字元 (子域) 
 
-**專案**：`*.contoso.com`
+**專案**： `*.contoso.com`
 
-- **允許相符**和**區塊相符**：
+- **允許相符** 和 **區塊相符**：
 
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **允許不符合**或**不符合的封鎖**：
+- **允許不符合** 或 **不符合的封鎖**：
 
   - 123contoso.com
   - contoso.com
@@ -325,15 +325,15 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   
 #### <a name="scenario-right-wildcard-at-top-of-path"></a>案例：路徑頂端的右萬用字元
 
-**專案**：`contoso.com/a/*`
+**專案**： `contoso.com/a/*`
 
-- **允許相符**和**區塊相符**：
+- **允許相符** 和 **區塊相符**：
 
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso/a/？ q = joe@t .com
 
-- **允許不符合**或**不符合的封鎖**：
+- **允許不符合** 或 **不符合的封鎖**：
 
   - contoso.com
   - contoso.com/a
@@ -342,15 +342,15 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   
 #### <a name="scenario-left-tilde"></a>案例：左波形符
 
-**專案**：`~contoso.com`
+**專案**： `~contoso.com`
 
-- **允許相符**和**區塊相符**：
+- **允許相符** 和 **區塊相符**：
 
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **允許不符合**或**不符合的封鎖**：
+- **允許不符合** 或 **不符合的封鎖**：
 
   - 123contoso.com
   - contoso.com/abc
@@ -358,9 +358,9 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 #### <a name="scenario-right-wildcard-suffix"></a>案例：右萬用字元尾碼
 
-**專案**：`contoso.com/*`
+**專案**： `contoso.com/*`
 
-- **允許相符**和**區塊相符**：
+- **允許相符** 和 **區塊相符**：
 
   - contoso （.com）/？ q = whatever@fabrikam .com
   - contoso.com/a
@@ -370,13 +370,13 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - contoso.com/b/a/c
   - contoso.com/ba
 
-- **允許不符合**或**不符合的封鎖**： contoso.com
+- **允許不符合** 或 **不符合的封鎖**： contoso.com
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>案例： Left 通配子域和右萬用字元尾碼
 
-**專案**：`*.contoso.com/*`
+**專案**： `*.contoso.com/*`
 
-- **允許相符**和**區塊相符**：
+- **允許相符** 和 **區塊相符**：
 
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
@@ -384,13 +384,13 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **允許不符合**或**不符合的封鎖**： contoso.com/b
+- **允許不符合** 或 **不符合的封鎖**： contoso.com/b
 
 #### <a name="scenario-left-and-right-tilde"></a>案例：左和右顎化符
 
-**專案**：`~contoso.com~`
+**專案**： `~contoso.com~`
 
-- **允許相符**和**區塊相符**：
+- **允許相符** 和 **區塊相符**：
 
   - contoso.com
   - contoso.com/a
@@ -398,27 +398,27 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
   - www.contoso.com/b
   - xyz.abc.contoso.com
 
-- **允許不符合**或**不符合的封鎖**：
+- **允許不符合** 或 **不符合的封鎖**：
 
   - 123contoso.com
   - contoso.org
 
 #### <a name="scenario-ip-address"></a>案例： IP 位址
 
-**專案**：`1.2.3.4`
+**專案**： `1.2.3.4`
 
-- **允許**比對和**區塊相符**：1.2.3。4
+- **允許** 比對和 **區塊相符**：1.2.3。4
 
-- **允許不符合**或**不符合的封鎖**：
+- **允許不符合** 或 **不符合的封鎖**：
 
   - 1.2.3.4/a
   - 11.2.3.4/a
 
 #### <a name="ip-address-with-right-wildcard"></a>具有右萬用字元的 IP 位址
 
-**專案**：`1.2.3.4/*`
+**專案**： `1.2.3.4/*`
 
-- **允許相符**和**區塊相符**：
+- **允許相符** 和 **區塊相符**：
 
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
