@@ -15,22 +15,22 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9bb0a7d0ce7def52089ec64a35edc5a2475b342
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 79113aa4097da26a3a12a9ed99b1c5a8b3ad3d81
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034007"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866740"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的資料監控與報告
 
-**[資料]** 類別可協助追蹤可能導致未經授權就外洩資料的使用者活動。 這些是現有 DLP 原則報告和協力廠商 DLP 原則相符報告的返工。
+**[資料]** 類別可協助追蹤可能導致未經授權就外洩資料的使用者活動。 它們是現有 DLP 原則報告和協力廠商 DLP 原則相符報告的返工。
 
 您可以看到：
 
-* 從雲端應用程式共用最多檔案的使用者
-* 已發生的 DLP 原則相符數目
-* 報告了多少 DLP 原則覆寫或誤判
-* 透過 Microsoft Cloud App Security 在協力廠商雲端服務中發生的 DLP 原則數目的多少
+- 從雲端應用程式共用最多檔案的使用者
+- 已發生的 DLP 原則相符數目
+- 報告了多少 DLP 原則覆寫或誤判
+- 透過 Microsoft Cloud App Security 在協力廠商雲端服務中發生的 DLP 原則數目的多少
 
 ![報表的資料類別頁面](../../media/data.png)

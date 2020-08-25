@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案新增至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9bccaab4c1dd1ac8b4676939d848c0f1a599d86b
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 95b23ccdb272c9e91ee4c525fd90679c492efc9b
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798168"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868970"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 規範的新功能
 
@@ -97,8 +97,6 @@ ms.locfileid: "46798168"
 
 - 「記錄管理」區段現在已完全可用於規範中心。 利用更新的使用者介面和功能，以供檔案計畫、保留標籤及標籤原則、事件及處置之用。
 - 在談話中，我們也會在 SharePoint 和 OneDrive 中，針對記錄進行 [處置證明](disposition.md#disposition-of-records) 。 您現在可以查看已自動或在處置檢查後處置之位置中的專案清單。
-
-:::image type="content" source="../media/mcc-records-management-page.png" alt-text="Microsoft 365 規範中心內的記錄管理區段":::
 
 ### <a name="sensitivity-labels-preview-auto-labeling-policies"></a>敏感度標籤：預覽自動標記原則
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監視和管理內容處置，不論您使用的是處置檢查，還是會根據您設定的設定自動刪除內容。
-ms.openlocfilehash: 7548ab12b72aa75047caa373efe3e7c3eb7c5d31
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: e70160ef309ad421724f9ad40db0d7c6e00df136
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778533"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867208"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -35,18 +35,14 @@ ms.locfileid: "46778533"
 
 ### <a name="permissions-for-disposition"></a>進行處置的許可權
 
-若要成功存取 Microsoft 365 規範中心的「 **處置** 」索引標籤，使用者必須具有「 **處置管理** 」角色和「 **View-Only 審核記錄** 」角色。 雖然標準建議是將使用者新增至預設角色群組，在此情況下，建議您建立一個名為「 **處置檢閱者** 」的新角色群組，其具有這兩個角色，並視需要將使用者新增至此群組。 用於進行處理的單一角色群組可減少管理開銷，並可讓使用者更輕鬆地取得所需的組合許可權。
+若要在 Microsoft 365 規範中心中成功存取「 **處置** 」索引標籤，使用者必須具有「處理 **管理** 」管理角色。 此角色包含在預設的系統管理員角色群組中（ **合規性管理員** 和 **合規性資料管理員**）。
+
+若要授與使用者這項必要的處理管理角色，請將其新增至其中一個預設角色群組，或建立自訂角色群組 (例如，名稱為「處置檢閱者」 ) 並授與此群組為「處置管理」角色。  
 
 > [!NOTE]
-> 即使全域管理員也必須授與 **處置管理** 角色。 因此，如果全域管理員需要存取「處置」索引標籤，則其為「 **處置檢閱者** 」角色群組的成員。 
+> 即使全域管理員也必須授與 **處置管理** 角色。 
 
-特定于 **View-Only 的審計記錄** 角色：
-
-- 因為用於搜尋審核記錄的基準指令程式是 Exchange Online Cmdlet，所以您必須使用 [Exchange online 中的 exchange 系統管理中心](https://docs.microsoft.com/Exchange/exchange-admin-center)，而不是使用安全性 & 規範中心中的 [ **許可權** ] 頁面，指派此角色的使用者。 如需相關指示，請參閱 [Manage role groups In Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
-
-- Microsoft 365 群組 ([先前的 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) 不支援此角色。 請改為指派使用者信箱、郵件使用者或擁有郵件功能的安全性群組。
-
-如需授與使用者 **處置管理** 角色及建立新的處理 **檢閱者** 角色的指示，請參閱 [授與使用者存取 Office 365 安全性與 &amp; 合規性中心的許可權](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需相關指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 ### <a name="enable-auditing"></a>啟用審核
 

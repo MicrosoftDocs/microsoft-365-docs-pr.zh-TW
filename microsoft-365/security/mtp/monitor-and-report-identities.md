@@ -15,16 +15,16 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6e884e6fc67670f25e48747324c15b158cc5c284
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 7b29e91527f4c9cf6fd466ef730c9c4e9552b10e
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034031"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866880"
 ---
 # <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心的身分識別監控和報告
 
-您可以監視組織中的身分識別，並追蹤可疑或風險的行為。 在**報告**的身分**識別類別中**，您可以追蹤：
+監視組織中的身分識別，並追蹤可疑或風險的行為。 在**報告**的身分**識別類別中**，您可以追蹤：
 
 * 偵測到最多異常的使用者
 * 有多少使用者經條件式存取原則報告為有風險
@@ -34,4 +34,4 @@ ms.locfileid: "44034031"
 
 針對具有特定偵測的使用者，您可以在 Microsoft Defender Security Center 中探索特定警示和調查。 偵測包括不熟悉位置的使用者登入。
 
-如需完整的風險事件集，請參閱[Azure Active Directory 風險事件](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risk-events)。
+如需完整的風險事件集，請參閱 [Azure Active Directory 風險事件](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-risk-events)。

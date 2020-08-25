@@ -16,16 +16,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以在 Exchange Online Protection (EOP) 中，查看有關反欺騙保護的常見問題及解答。
-ms.openlocfilehash: 66dbedaf638154c4a35359a4e5bc66c326c04d1e
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 3547b0a0af6d2e541d4ec3546d9bbd4aa34c3a6b
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826670"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46867136"
 ---
 # <a name="anti-spoofing-protection-faq"></a>反詐騙保護常見問題集
 
-本主題提供 Exchange Online 中的信箱、獨立 Exchange Online Protection (EOP) 組織中的 Microsoft 365 組織的反欺騙保護的常見問題和解答，但沒有 Exchange Online 信箱。
+本文針對 Exchange Online 中的信箱，或獨立 Exchange Online Protection (EOP) 組織中的 Microsoft 365 組織，提供有關反欺騙保護的常見問題和解答，但沒有 Exchange Online 信箱。
 
 如需反垃圾郵件保護的相關問題和解答，請參閱 [反垃圾郵件保護常見問題](anti-spam-protection-faq.md)。
 
@@ -33,11 +33,11 @@ ms.locfileid: "46826670"
 
 ## <a name="why-did-microsoft-choose-to-junk-unauthenticated-inbound-email"></a>Microsoft 為何選擇未驗證的垃圾輸入電子郵件？
 
-因為網路釣魚攻擊的影響，而且電子郵件驗證已超過15年，所以 Microsoft 相信繼續允許未驗證的輸入電子郵件的風險，會高於遺失合法輸入電子郵件的風險。
+Microsoft 相信，繼續允許未驗證的輸入電子郵件的風險，會高於遺失合法輸入電子郵件的風險。
 
 ## <a name="does-junking-unauthenticated-inbound-email-cause-legitimate-email-to-be-marked-as-spam"></a>Junking 未驗證的輸入電子郵件是否導致合法的電子郵件標示為垃圾郵件？
 
-當 Microsoft 在2018中啟用這項功能時，會發生一些誤報 (良好的郵件會標示為壞) 。 不過，隨著時間的變化，寄件者會調整為新的寄件者驗證需求，而 misidentified 為欺騙的郵件數目會變得可以忽略大多數的電子郵件路徑。
+當 Microsoft 在2018中啟用這項功能時，會發生一些誤報 (良好的郵件會標示為壞) 。 不過，隨著時間的變化，寄件者會調整為要求。 對於大部分的電子郵件路徑，已 misidentified 為欺騙的郵件數目會變得忽略。
 
 Microsoft 本身會在將新的電子郵件驗證需求部署給客戶之前，先採用一周。 一開始會出現一些干擾，但慢慢的會減少。
 
@@ -45,7 +45,7 @@ Microsoft 本身會在將新的電子郵件驗證需求部署給客戶之前，�
 
 是。 從10月2018到10月為止，具有 Exchange Online 信箱的所有組織，以及沒有 Exchange Online 信箱的獨立 EOP 組織皆可取得欺騙智慧。
 
-反欺騙技術最初隻會部署至具有 Office 365 企業版 E5 訂閱的組織，或 Office 365 的高級威脅防護 (Office 365 ATP) 其訂閱的附加元件。
+反欺騙技術最初隻提供 Office 365 的高級威脅防護。 例如，Microsoft E5 訂閱或 ATP 附加元件。
 
 ## <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>如何向 Microsoft 回報垃圾郵件或非垃圾郵件？
 
@@ -57,9 +57,9 @@ Microsoft 本身會在將新的電子郵件驗證需求部署給客戶之前，�
 
 ## <a name="what-happens-if-i-disable-anti-spoofing-protection-for-my-organization"></a>如果我停用組織的反欺騙保護，會發生什麼事？
 
-我們不建議這樣做，因為您將會暴露在更多未篩選出的網路釣魚及垃圾郵件中。 並非所有的網路釣魚都是詐騙，也不是所有詐騙郵件都會遺漏。 不過，比起啟用反詐騙功能的客戶，您的風險較高。
+我們不建議停用反欺詐防護。 停用保護將允許在您的組織中傳遞更多網路釣魚和垃圾郵件。 並非所有網路釣魚皆為欺騙性，而且不會丟失所有的冒牌郵件。 不過，您的風險會更高。
 
-現在可以使用 [增強型連接器篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) 功能，如果您的 MX 記錄指向另一部伺服器或服務，然後再將電子郵件傳遞至 EOP，我們就不再建議您關閉反欺騙保護。
+現在可以使用 [增強型連接器篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) ，當您的電子郵件透過另一個服務進行 EOP 之前，我們不再建議您關閉反欺騙保護。
 
 ## <a name="does-anti-spoofing-protection-mean-i-will-be-protected-from-all-phishing"></a>反欺騙保護的意思是我會保護所有網路釣魚嗎？
 
@@ -71,7 +71,7 @@ Microsoft 本身會在將新的電子郵件驗證需求部署給客戶之前，�
 
 ## <a name="do-i-still-need-to-enable-the-advanced-spam-filter-setting-spf-record-hard-fail-_markasspamspfrecordhardfail_-if-i-enable-anti-spoofing"></a>我還是需要啟用高級垃圾郵件篩選器設定 "SPF record： hard fail" (_MarkAsSpamSpfRecordHardFail_) 如果我啟用反欺騙功能？
 
-否。 這種 ASF 設定不再是必要的，因為反欺騙不僅會考慮 SPF hard 失敗，還會有更多更豐富的準則。 如果您已啟用反詐騙功能，並且開啟 **SPF 記錄：驗證失敗** (_MarkAsSpamSpfRecordHardFail_)，則可能會發生更多誤判。
+否。 不再需要這種 ASF 設定。 反欺騙保護會考慮這兩種 SPF 硬性失敗及一組更豐富的準則。 如果您已啟用反詐騙功能，並且開啟 **SPF 記錄：驗證失敗** (_MarkAsSpamSpfRecordHardFail_)，則可能會發生更多誤判。
 
 我們建議您停用此功能，因為它幾乎不會提供偵測垃圾郵件或網路釣魚郵件的額外權益，而會產生大部分的誤報。 如需詳細資訊，請參閱 [EOP 中的高級垃圾郵件篩選 (ASF) 設定](advanced-spam-filtering-asf-options.md)。
 

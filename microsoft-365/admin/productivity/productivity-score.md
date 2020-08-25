@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生產力分數的概覽。
-ms.openlocfilehash: a93ceef3833e1e55f6e3bb979fd93aa3d90ded37
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101644"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868852"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft (預覽的工作效率分數) 
 
@@ -32,7 +32,7 @@ ms.locfileid: "45101644"
 
 分數包括：
 
-- **度量**，可協助您瞭解使用者如何使用 Microsoft 365 產品來共同作業、溝通及跨平臺工作。
+- **度量** ，可協助您瞭解使用者如何使用 Microsoft 365 產品來共同作業、溝通及跨平臺工作。
 - 資料的**深入**瞭解，可協助您找出機會，以提升員工生產力及滿意度。
 - 您可以採取**建議的動作**，協助貴組織中的人員有效使用 Microsoft 365 產品，讓每個人都能進行最佳的工作。
 
@@ -40,11 +40,11 @@ ms.locfileid: "45101644"
 
 - **員工經驗：** 我們會測量人員如何共同處理內容，如何使用 Microsoft 365 產品進行通訊，以及是否在平臺上使用 Microsoft 365。 
 
-    我們提供這些真知灼見，是因為當人們線上共同作業時，他們會節省時間。 當使用者可以自由使用任何裝置時，其效率也會比較高。 當他們能夠以彈性的方式進行通訊時，其效率會更高、形式更好，且您的組織更具整合性。 如需證據，請參閱[Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+    我們提供這些真知灼見，是因為當人們線上共同作業時，他們會節省時間。 當使用者可以自由使用任何裝置時，其效率也會比較高。 當他們能夠以彈性的方式進行通訊時，其效率會更高、形式更好，且您的組織更具整合性。 如需證據，請參閱 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
 
-- **技術經驗：** 生產力取決於可靠性和能力強的技術，以及 Microsoft 365 的有效使用方式。 我們提供端點分析，其可提供有關裝置安裝和啟動時間的洞察力和建議，並為您的組織提供 Microsoft 365 網路 connectivity insights。
+- **技術經驗：** 生產力取決於可靠性和能力強的技術，以及 Microsoft 365 的有效使用方式。 我們提供 [端點分析](https://aka.ms/endpointanalytics)，可協助您瞭解使用者的生產力對您的端點硬體和軟體的效能與狀況問題的影響，並提供建議的動作以加以修復;而且我們為您的組織提供 Microsoft 365 網路連線資訊洞察力。
 
-若要深入瞭解端點分析，請參閱[network connectivity 一覽](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview)。
+如需概述和必要條件詳細資料，請參閱 [何謂「端點分析](https://docs.microsoft.com/mem/analytics/overview) 」。 若要深入瞭解 Microsoft 365 network connectivity insights，請參閱 [network connectivity 一覽](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview)。
   
 
 ## <a name="how-the-score-is-calculated"></a>計算分數的方式
@@ -91,9 +91,9 @@ ms.locfileid: "45101644"
 
 ![生產力排名首頁](../../media/pslanding.png)
 
-**您的分數**會顯示為百分比值以及點，因此您可以看到 (分子) 和最大可能的點數 (分母) 。
+**您的分數** 會顯示為百分比值以及點，因此您可以看到 (分子) 和最大可能的點數 (分母) 。
 
-**對等基準**可讓您將您的分數與像您的組織比較。 針對員工經驗類別，對等的基準量值會計算為一組類似組織內的平均量值。 此集合是由您地區中的組織所組成，其授權的使用者數目、授權類型、行業和 tenure，以及 Microsoft 365。 
+**對等基準** 可讓您將您的分數與像您的組織比較。 針對員工經驗類別，對等的基準量值會計算為一組類似組織內的平均量值。 此集合是由您地區中的組織所組成，其授權的使用者數目、授權類型、行業和 tenure，以及 Microsoft 365。 
 
 端點分析對等基準包括裝置啟動效能的目標，以及根據整個承租人中匯總的中線值進行建議的軟體設定。
 
@@ -103,11 +103,11 @@ ms.locfileid: "45101644"
 
 分數記錄會顯示過去6個月內，每個類別中的分數變更的方式。
 
-「**員工經驗**」和「**技術經驗**」區域包含這些區域中的類別的主要洞察力。 您可以按一下每個類別以查看更深入的見解。
+「 **員工經驗** 」和「 **技術經驗** 」區域包含這些區域中的類別的主要洞察力。 您可以按一下每個類別以查看更深入的見解。
 
 ## <a name="category-details-pages"></a>類別詳細資料頁面
 
-每個類別詳細資料頁面會顯示主要的洞察力和支援度量，以及您可以採取哪些相關的研究和動作，以促進組織中的變更。 調研可支援每個類別之主要真知灼見的重要性和基本概念。 如需詳細資訊，請[閱讀 Forrester 報告](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+每個類別詳細資料頁面會顯示主要的洞察力和支援度量，以及您可以採取哪些相關的研究和動作，以促進組織中的變更。 調研可支援每個類別之主要真知灼見的重要性和基本概念。 如需詳細資訊，請 [閱讀 Forrester 報告](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
 
 ### <a name="content-collaboration-details"></a>內容共同作業詳細資料
 
@@ -153,4 +153,4 @@ ms.locfileid: "45101644"
 
 ## <a name="we-want-to-hear-from-you"></a>我們想要聽到您的來信
 
-請分享您對於生產力評分的想法，以及如何改善的想法。 請使用產品中的**意見**反應區段和/或與 ProductivityScorePreview@service.microsoft.com 的生產力分數小組聯繫。
+請分享您對於生產力評分的想法，以及如何改善的想法。 請使用產品中的 **意見** 反應區段和/或與 ProductivityScorePreview@service.microsoft.com 的生產力分數小組聯繫。

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須先獲指派 Microsoft 365 Security & 合規性中心的許可權，才能管理任何安全性或規範功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d21fef9458c02bd09d6d5ce2129b95571e0f8371
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b51007221257b9adac46c31295e13b20b12342ab
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826598"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868918"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>讓使用者能夠存取安全性與合規性中心
 
@@ -42,54 +42,48 @@ ms.locfileid: "46826598"
 
 - 委派存取許可權 () 協力廠商使用管理代表 (AOBO) 許可權無法存取安全性 & 規範中心。
 
-## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>使用系統管理中心，讓另一位使用者能夠存取安全性 & 規範中心
+## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a>使用安全性 & 合規性中心，讓另一個使用者能夠存取安全性 & 規範中心
 
-1. 登[入並移](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center)至系統管理中心。
+1. 開啟安全性 & 合規性中心 <https://protection.office.com> ，然後移至 [ **許可權**]。 若要直接移至 [ **許可權** ] 索引標籤，請開啟 <https://protection.office.com/permissions> 。
 
-2. 在 Microsoft 365 系統管理中心中，開啟 [系統 **管理中心** ]，然後按一下 [ **安全性 & 合規性**]。
+2. 從角色群組的清單中，選擇角色群組，然後按一下 [ **編輯** ![ 編輯圖示] ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) 。
 
-3. 在 [安全性 & 規範中心] 中，移至 [ **許可權**]。
+3. 在 [**成員**] 底下的角色群組的 [內容] 頁面中，按一下 [**新增** ![ 新增] 圖示 ](../../media/ITPro-EAC-AddIcon.gif) ，然後選取您要新增的使用者 (名稱或使用者) 。
 
-4. 從清單中，選擇您要新增使用者的角色群組，然後按一下 [ **編輯** ![ 編輯圖示] ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) 。
+4. 當您選取要新增至角色群組的所有使用者時，請按一下 [**新增- \> ** ]，然後按一下 **[確定]**。
 
-5. 在 [**成員**] 底下的角色群組的 [內容] 頁面中，按一下 [**新增** ![ 新增] 圖示 ](../../media/ITPro-EAC-AddIcon.gif) ，然後選取您要新增的使用者 (名稱或使用者) 。
+5. 完成後，按一下 [儲存 **]**。
 
-6. 當您選取要新增至角色群組的所有使用者時，請按一下 [**新增- \> ** ]，然後按一下 **[確定]**。
-
-7. 按一下 [儲存]，將變更儲存到角色群組。
-
-### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
-
-1. 在 [安全性 & 規範中心] 中，移至 [ **許可權**]。
-
-2. 從清單中，選取要查看成員的角色群組。
-
-3. 在右側的角色群組詳細資料中，您可以查看角色群組的成員。
-
-## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用 PowerShell 授予另一個使用者存取安全性 & 規範中心的許可權
+## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用安全性 & 規範中心 PowerShell 授予另一個使用者存取安全性 & 規範中心的許可權
 
 1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
-2. 使用 **Add-RoleGroupMember** 命令，以將使用者新增至組織管理角色，如下列範例所示。
+2. 使用下列語法：
+
+   ```powershell
+   Add-RoleGroupMember -Identity <RoleGroup> -Member <UserIdentity>
+
+   - _Identity_ is the role group.
+   - _Member_ is the user or universal security group (USG). You can specify only one member at a time.
+
+   This example adds MatildaS to the Organization Management role group.
 
    ```PowerShell
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-   **參數**：
-
-   - _Identity_ 是要新增成員的角色群組。
-
-   - _成員_ 是信箱、通用安全性群組 (USG) 或要新增至角色群組的電腦。 您一次只能指定一個成員。
-
-如需語法及參數的詳細資訊，請參閱 [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember)。
+如需詳細的語法及參數問題，請參閱 [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
 
 ### <a name="how-do-you-know-this-worked"></a>如何知道這是否正常運作？
 
-若要確認您是否已授予使用者對安全性 & 合規性中心的存取權，請使用 **Get-RoleGroupMember** Cmdlet 來查看「組織管理」角色群組中的成員，如下列範例所示。
+若要確認您是否已成功授與安全性 & 規範中心的存取權，請執行下列其中一個步驟：
 
-```PowerShell
-Get-RoleGroupMember -Identity "Organization Management"
-```
+- 在 [安全性 & 規範中心] 中，移至 [ **許可權** ]，然後選取角色群組。 在開啟的 [詳細資料] 浮出控制項中，驗證角色群組的成員。 
 
-如需語法及參數的詳細資訊，請參閱 [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember)。
+- 在 [安全性 & 規範中心] PowerShell 中， \<RoleGroupName\> 以角色群組的名稱取代，並執行下列命令：
+
+  ```powershell
+  Get-RoleGroupMember -Identity "<RoleGroupName>"
+  ```
+
+  如需詳細的語法及參數資訊，請參閱 [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember)。

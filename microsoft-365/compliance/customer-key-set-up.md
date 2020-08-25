@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、OneDrive 商務及小組檔案的 Microsoft 365 的客戶金鑰。
-ms.openlocfilehash: 87c18c1695d2963fc8a0c064d34d2b6cdc14199c
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 0743b4339dae8e70960293f51a7869dc61fea606
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845831"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868888"
 ---
 # <a name="set-up-customer-key"></a>設定客戶金鑰
 
@@ -89,11 +89,11 @@ SharePoint 線上和商務 OneDrive：
 
 ## <a name="complete-tasks-in-azure-key-vault-and-microsoft-fasttrack-for-customer-key"></a>完成 Azure Key Vault 中的工作及客戶機碼的 Microsoft FastTrack
 
-在 Azure Key Vault 中完成這些工作。 您必須完成這些步驟，不論您是否想要為 Exchange Online 和商務用 Skype、商務用 Skype OneDrive SharePoint，或是 Office 365 中的所有支援服務，都設定客戶金鑰。
+在 Azure Key Vault 中完成這些工作。 您必須完成這些步驟，不論您是否想要為 Exchange Online 和商務用 Skype、商務用 Skype OneDrive SharePoint，或是 Office 365 中的所有支援服務設定客戶金鑰。
   
 ### <a name="create-two-new-azure-subscriptions"></a>建立兩個新的 Azure 訂閱
 
-客戶金鑰需要兩個 Azure 訂閱。 最佳作法是 Microsoft 建議您建立新的 Azure 訂閱，以與客戶金鑰搭配使用。 Azure 金鑰保存庫金鑰只可對相同 Azure Active Directory (AAD) 租使用者中的應用程式授權，您必須使用與 DEPs 將會指派之組織搭配使用的相同 Azure AD 租使用者來建立新的訂閱。 例如，在您的組織中使用具有全域系統管理員許可權的公司或學校帳戶。 如需詳細步驟，請參閱 [註冊 Azure 做為組織](https://azure.microsoft.com/documentation/articles/sign-up-organization/)。
+客戶金鑰需要兩個 Azure 訂閱。 最佳作法是 Microsoft 建議您建立新的 Azure 訂閱，以與客戶金鑰搭配使用。 Azure 金鑰保存庫金鑰只能針對相同 Azure Active directory 中的應用程式授權 (Microsoft Azure Active Directory) 租使用者，您必須使用與 DEPs 將會指派之組織搭配使用的相同 Azure AD 租使用者來建立新的訂閱。 例如，在您的組織中使用具有全域系統管理員許可權的公司或學校帳戶。 如需詳細步驟，請參閱 [註冊 Azure 做為組織](https://azure.microsoft.com/documentation/articles/sign-up-organization/)。
   
 > [!IMPORTANT]
 > 客戶金鑰需要每個資料加密原則 (DEP) 的兩個金鑰。 為了達到此目的，您必須建立兩個 Azure 訂閱。 建議的最佳作法是，您組織中的個別成員可以在每個訂閱中設定一個金鑰。 此外，這些 Azure 訂閱只應該用來管理 Office 365 的加密金鑰。 這會保護您的組織，以防其中一個操作員意外、故意或惡意刪除，或 mismanages 其負責的金鑰。 <br/> 建議您設定只用于管理 Azure 金鑰 Vault 資源的新 Azure 訂閱，以與客戶金鑰搭配使用。 您可以為組織建立的 Azure 訂閱數目沒有實際的限制。 遵循這些最佳作法，可在協助管理客戶金鑰所使用的資源時，將人為錯誤所造成的影響降至最低。
