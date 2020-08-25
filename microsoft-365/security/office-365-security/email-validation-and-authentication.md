@@ -7,7 +7,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: conceptual
 ms.service: O365-seccomp
 search.appverid:
 - MET150
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 系統管理員現在可以了解 Exchange Online Protection (EOP) 如何使用電子郵件驗證 (SPF、DKIM 和 DMARC) 來協助防止詐騙、網路釣魚和垃圾郵件。
-ms.openlocfilehash: c79a75f1ae520a0c4f885c923b4a56cdb0f7fb87
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: cc9489a258608080118e88bf1375e4d5f35f8c77
+ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44209496"
+ms.lasthandoff: 08/20/2020
+ms.locfileid: "46826646"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的電子郵件驗證
 
@@ -41,7 +41,7 @@ ms.locfileid: "44209496"
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>使用電子郵件驗證以協助避免詐騙
 
-DMARC 會藉由檢查郵件中的 [寄件者]**** 地址 (使用者在其電子郵件用戶端中看到的寄件者電子郵件地址)，來防止詐騙。 目的地電子郵件組織也可以驗證網域已通過 SPF 或 DKIM，這表示網域已驗證，因此不是偽造的。 
+DMARC 會藉由檢查郵件中的 [寄件者]**** 地址 (使用者在其電子郵件用戶端中看到的寄件者電子郵件地址)，來防止詐騙。 目的地電子郵件組織也可以驗證網域已通過 SPF 或 DKIM，這表示網域已驗證，因此不是偽造的。
 
 不過，問題是對於電子郵件驗證而言 DNS 中的 SPF、DKIM 和 DMARC 記錄 (統稱為電子郵件驗證原則)，完全是選用的。 因此，雖然採用強式電子郵件驗證原則的網域 (如 microsoft.com 和 skype.com) 可防止詐騙，但是發佈較弱的電子郵件驗證原則、或甚至完全未採用任何原則的網域就成了主要詐騙目標。
 

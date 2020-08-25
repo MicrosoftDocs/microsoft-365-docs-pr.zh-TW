@@ -20,12 +20,12 @@ ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何在安全性與合規性中心使用[匯入]服務來將電子郵件資料 (PST 檔案) 大量匯入至使用者信箱。
-ms.openlocfilehash: fd369a8cde1284c19f9eb3cb38cf8bfe39dbc4ee
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 36cf04722b13f3d1033ddae54e32307497d9194b
+ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127158"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860730"
 ---
 # <a name="overview-of-importing-your-organizations-pst-files"></a>將組織的 PST 檔案匯入的概觀
 
@@ -146,7 +146,7 @@ ms.locfileid: "45127158"
   
  **哪些地區提供網路上傳服務？**
   
-網路上傳的服務範圍目前包括這些地區：美國、加拿大、巴西、英國、法國、德國、歐洲、印度、東亞、東南亞、日本、南韓、澳洲和阿拉伯聯合大公國 (UAE)。我們會盡快在更多地區提供網路上傳服務。
+網路上傳的服務範圍目前包括這些地區：美國、加拿大、巴西、英國、法國、德國、瑞士、挪威、歐洲、印度、東亞、東南亞、日本、南韓、澳洲和阿拉伯聯合大公國 (UAE)。我們會盡快在更多地區提供網路上傳服務。
   
  **使用網路上傳匯入 PST 檔案的費用為何？**
   

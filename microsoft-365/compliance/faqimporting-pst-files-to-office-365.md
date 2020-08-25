@@ -17,22 +17,22 @@ search.appverid:
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
 ms.custom: seo-marvel-apr2020
 description: 本文包含一些常見問題的解答，系統管理員會使用 Office 365 匯入服務，將 PST 檔案匯入 PST 檔案至 Microsoft 365。
-ms.openlocfilehash: 5ba6df2f2c6ed10edee22f58308a5e3ee5acd533
-ms.sourcegitcommit: a4926e98b6594bbee68bfca90438c9c764499255
+ms.openlocfilehash: b6d00bf58225ca016f6debbeeac8468c558c3556
+ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45091897"
+ms.lasthandoff: 08/23/2020
+ms.locfileid: "46860698"
 ---
 # <a name="faq-about-importing-pst-files"></a>匯入 PST 檔案的常見問題集
 
-**本文適用于系統管理員。您是否要將 PST 檔案匯入您自己的信箱？請參閱[從 Outlook .pst 檔案匯入電子郵件、連絡人及行事曆](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+**本文適用于系統管理員。您是否要將 PST 檔案匯入您自己的信箱？請參閱 [從 Outlook .pst 檔案匯入電子郵件、連絡人及行事曆](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
-以下是一些有關使用 Office 365 Import Service 將 PST 檔案大量匯入 Microsoft 365 信箱的常見問題。 如需如何匯入 PST 檔案的詳細資訊，請參閱[將 pst 檔案匯入至 Office 365 的概述](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365)。
+以下是一些有關使用 Office 365 Import Service 將 PST 檔案大量匯入 Microsoft 365 信箱的常見問題。 如需如何匯入 PST 檔案的詳細資訊，請參閱 [將 pst 檔案匯入至 Office 365 的概述](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365)。
   
 ## <a name="using-network-upload-to-import-pst-files"></a>使用網路上傳來匯入 PST 檔案
 
-如需逐步指示，請參閱[使用網路上傳將 PST 檔案匯入 Office 365](use-network-upload-to-import-pst-files.md)。
+如需逐步指示，請參閱 [使用網路上傳將 PST 檔案匯入 Office 365](use-network-upload-to-import-pst-files.md)。
   
  **必須具備哪些權限才能在 Office365 匯入服務中建立匯入工作？**
   
@@ -51,7 +51,7 @@ ms.locfileid: "45091897"
   
  **哪些地區提供網路上傳服務？**
   
-在下列地區中，目前可使用網路上傳：美國、加拿大、巴西、英國、法國、德國、歐洲、印度、東亞洲、東南亞，巴西，日本，韓國，共和國，以及阿拉伯阿拉伯聯合大公國 (UAE) 。 Network upload will be available in more regions soon.
+下列地區目前提供網路上傳：美國、加拿大、巴西、英國、法國、德國、瑞士、挪威、歐洲、德國、東亞洲、東南亞、日本、韓國、韓國、澳大利亞及阿拉伯聯合大公國 (UAE) 。 Network upload will be available in more regions soon.
   
  **使用網路上傳匯入 PST 檔案的費用為何？**
   
@@ -61,13 +61,13 @@ Using network upload to import PST files is free.
   
  **哪些版本的 PST 檔案格式支援匯入 Office 365？**
   
-有兩個版本的 PST 檔案格式支援此作業：ANSI 和 Unicode。 我們建議您使用 Unicode PST 檔案格式來匯入檔案。 不過，使用 ANSI PST 檔案格式的檔案 (例如，使用雙位元組字元集 (DBCS) 語言的檔案) 也可以匯入 Office 365。 如需有關匯入 ANSI PST 檔案的詳細資訊，請參閱[使用網路上傳將組織的 PST 檔案匯入 Office 365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)中的步驟4。
+有兩個版本的 PST 檔案格式支援此作業：ANSI 和 Unicode。 我們建議您使用 Unicode PST 檔案格式來匯入檔案。 不過，使用 ANSI PST 檔案格式的檔案 (例如，使用雙位元組字元集 (DBCS) 語言的檔案) 也可以匯入 Office 365。 如需有關匯入 ANSI PST 檔案的詳細資訊，請參閱 [使用網路上傳將組織的 PST 檔案匯入 Office 365](use-network-upload-to-import-pst-files.md#step-4-create-the-pst-import-mapping-file)中的步驟4。
   
 此外，Outlook 2007 和更新版本的 PST 檔案也可以匯入 Office 365。
   
  **將我的 PST 檔案上傳到 Azure 儲存體區域之後，這些檔案會在 Azure 中保留多久的時間才會遭到刪除？**
   
-當您使用網路上傳方法匯入 PST 檔案時，會將這些檔案上傳到名為的 Azure blob 容器 `ingestiondata` 。 如果 [安全性 & 合規性) 中心] 中的 [匯**入 PST**檔案] 頁面上沒有任何匯入工作正在進行中，則 `ingestiondata` 會在 [安全性 & 規範中心] 中建立最近的匯入工作30天之後刪除 Azure 容器中的所有 PST 檔案。 這也表示您必須在 PST 檔案上傳到 Azure 的 30 天內，在安全性與合規性中心建立新的匯入工作 (如網路上傳指示中的步驟 5 所述)。 
+使用網路上傳方法匯入 PST 檔案，會將這些檔案上傳到名為 `ingestiondata` 的 Azure Blob 容器。 如果安全性與合規性中心的 [匯入 PST 檔案]**** 頁面目前沒有進行中的匯入工作，則 Azure 中 `ingestiondata` 容器內的所有 PST 檔案都會在最近的匯入工作於安全性與合規性中心建立完成的後 30 天刪除。 這也表示您必須在 PST 檔案上傳到 Azure 的 30 天內，在安全性與合規性中心建立新的匯入工作 (如網路上傳指示中的步驟 5 所述)。 
   
 這也表示 PST 檔案從 Azure 儲存體區域刪除之後，安全性與合規性中心內完整匯入工作的檔案清單中就不會顯示這些檔案。 即使匯入工作仍然列在安全性與合規性中心的 [匯入 PST 檔案]**** 頁面上，但當您檢視較舊匯入工作的詳細資料時，PST 檔案清單可能為空白。 
   
@@ -79,7 +79,7 @@ Using network upload to import PST files is free.
   
  PST 匯入處理程序如何處理重複的電子郵件項目?****
 
-PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定不同的目的檔案夾 (在 PST 匯入對應檔案中使用 TargetRootFolder 屬性) 您先前的匯入工作中所指定的專案，則會 reimported PST 檔案中的所有專案。
+PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則 PST 檔案中的所有項目將會重新匯入。
 
  **匯入 PST 檔案時，是否有郵件大小限制？**
   
@@ -95,7 +95,7 @@ PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標�
   
  **我是否可以使用網路上傳將 PST 檔案匯入 Office 365 中的非作用中的信箱？**
   
-Yes, this capability is now available. 
+是，我們現已推出這項功能。
   
  **我是否可以使用網路上傳將 PST 檔案匯入 Exchange 混合式部署中的線上封存信箱？**
   
@@ -107,7 +107,7 @@ Yes, this capability is now available.
   
 ## <a name="using-drive-shipping-to-import-pst-files"></a>使用磁碟機寄送來匯入 PST 檔案
 
-如需逐步指示，請參閱[使用磁片磁碟機運送將 PST 檔案匯入 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)。
+如需逐步指示，請參閱 [使用磁片磁碟機運送將 PST 檔案匯入 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md)。
   
  **必須具備哪些權限才能在 Office365 匯入服務中建立匯入工作？**
   
@@ -141,7 +141,7 @@ Microsoft Enterprise Agreement (EA) 提供將 PST 檔案匯入至 Microsoft 365 
   
  **哪些類型的硬碟支援磁碟機寄送？**
   
-只支援2.5 英寸固態硬碟 (Ssd) 或2.5 英寸或3.5 英寸 SATA II/III 內部硬碟可搭配 Office 365 匯入服務使用。 您可以使用最多 10 TB 的硬碟。 匯入作業時，只會處理硬碟上的第一個資料磁碟區。 資料磁碟區必須為 NTFS 格式。 若要將資料複製到硬碟，您可以直接使用 2.5 吋 SSD 或是 2.5 吋或 3.5 吋 SATA II/III 連接器進行連接，或者使用外接式 2.5 吋 SSD 或是 2.5 吋或 3.5 吋 SATA II/III USB 轉接頭進行外接。
+只有2.5 寸的固態硬碟 (Ssd) 或 3.5 2.5/III 的 SATA II/III 內部硬碟可搭配 Office 365 匯入服務使用。 您可以使用最多 10 TB 的硬碟。 匯入作業時，只會處理硬碟上的第一個資料磁碟區。 資料磁碟區必須為 NTFS 格式。 將資料複製到硬碟時，您可以使用2.5 寸 SSD 或 2.5-寸或 3.5-寸的 SATA II/III 連接器直接連接，也可以使用外部的「2.5-寸 SSD」或「2.5-寸」或「3.5-寸 SATA II/III」 USB 配接器，將其附加到外部磁片。
   
 > [!IMPORTANT]
 > Office 365 匯入服務不支援隨附內建 USB 轉接頭的外接式硬碟。 此外，位於外部硬碟外殼內的碟無法使用。 請不要使用外接式硬碟。 
@@ -172,7 +172,7 @@ PST 檔案上傳到 Azure 儲存體區域之後，Microsoft 365 會以安全的�
   
  **哪些版本的 PST 檔案格式支援匯入至 Microsoft 365？**
   
-有兩個版本的 PST 檔案格式支援此作業：ANSI 和 Unicode。 我們建議您使用 Unicode PST 檔案格式來匯入檔案。 不過，使用 ANSI PST 檔案格式的檔案 (例如，使用雙位元組字元集 (DBCS) 語言的檔案) 也可以匯入至 Microsoft 365。 如需有關匯入 ANSI PST 檔案的詳細資訊，請參閱[使用磁片磁碟機運送將 PST 檔案匯入至 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)中的步驟3。
+有兩個版本的 PST 檔案格式支援此作業：ANSI 和 Unicode。 我們建議您使用 Unicode PST 檔案格式來匯入檔案。 不過，使用 ANSI PST 檔案格式的檔案 (例如，使用雙位元組字元集 (DBCS) 語言的檔案) 也可以匯入至 Microsoft 365。 如需有關匯入 ANSI PST 檔案的詳細資訊，請參閱 [使用磁片磁碟機運送將 PST 檔案匯入至 Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step-3-create-the-pst-import-mapping-file)中的步驟3。
   
 此外，Outlook 2007 和更新版本的 PST 檔案也可以匯入 Office 365。
   
@@ -182,7 +182,7 @@ PST 檔案上傳到 Azure 儲存體區域之後，Microsoft 365 會以安全的�
   
   PST 匯入處理程序如何處理重複的電子郵件項目?****
 
-PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定不同的目的檔案夾 (在 PST 匯入對應檔案中使用 TargetRootFolder 屬性) 您先前的匯入工作中所指定的專案，則會 reimported PST 檔案中的所有專案。
+PST 匯入處理程序會檢查重複的項目，如果目標資料夾、目標信箱或目標封存中已有相同項目，則不會將資料從 PST 檔案複製到信箱或封存。 如果您重新匯入同一個 PST 檔案，並指定與前一個匯入工作指定之資料夾不同的目標資料夾 (使用 PST 匯入對應檔案中的 TargetRootFolder 屬性)，則 PST 檔案中的所有項目將會重新匯入。
  
  **PST 檔案匯入 Microsoft 365 信箱時是否會保留訊息屬性 (例如訊息的傳送或接收時間、收件者清單、和其他屬性)？**
   

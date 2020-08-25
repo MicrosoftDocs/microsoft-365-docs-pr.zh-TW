@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 稽核記錄保留原則是 Microsoft 365 中新增的「進階稽核」功能的一部分。 稽核記錄保留原則可讓您指定要在組織中保留稽核記錄的時間長度。
-ms.openlocfilehash: 0b68eac3dde2f6802d5a5419f8f28b5df26e0a92
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: b07965800c1258c03e3e7615fa88a0ed4e453c40
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351038"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845875"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理稽核記錄保留原則
 
@@ -41,19 +41,19 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 > [!NOTE]
 > 預設的稽核記錄保留原則僅適用獲指派 Office 365 或 Microsoft 365 E5 授權或擁有 Microsoft 365 E5 合規性附加元件授權的使用者所執行活動的稽核記錄。 如果組織中有非 E5 使用者，其對應的稽核記錄則會保留 90 天。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-create-an-audit-log-retention-policy"></a>在建立稽核記錄保留原則之前
 
 - 您必須獲指派安全性與合規性中心中的「組織組態」角色，以才能建立或修改稽核保留原則。
 
 - 您可以在組織中有最多 50 個稽核記錄保留原則。
 
-- 若要保留稽核記錄超過 90 天，產生稽核記錄的使用者必須獲指派 Office 365 或 Microsoft 365 E5 授權，或擁有 365 Microsoft E5 合規性附加元件授權。
+- 若要保留稽核記錄超過 90 天，產生稽核記錄的使用者必須獲指派 Office 365 E5 或 Microsoft 365 E5 授權，或擁有 365 Microsoft E5 合規性或 E5 電子化探索與稽核附加元件授權。
 
 - 所有自訂稽核記錄保留原則 (由您的組織建立) 會優先於預設保留原則。 例如，如果您為具有的保留期間少於一年的建Exchange 信箱活動立稽核記錄保留原則，則 Exchange 信箱活動的稽核記錄將會保留較自訂原則所指定更短的持續時間。
 
-## <a name="create-an-audit-log-retention-policy-in-the-security--compliance-center"></a>在安全性與合規性中心中建立稽核記錄保留原則
+## <a name="create-an-audit-log-retention-policy-in-the-compliance-center"></a>在合規性中心中建立稽核記錄保留原則
 
-1. 移至 [https://protection.office.com](https://protection.office.com)，並使用獲指派安全性與合規性中心中的「組織組態」角色的使用者帳戶登入。 
+1. 移至 [https://protection.office.com](https://protection.office.com)，並使用獲指派安全性與合規性中心中的「組織組態」角色的使用者帳戶登入。
 
 2. 在安全性與合規性中心的左窗格中，按一下 [搜尋]****  >  [稽核記錄搜尋]****。
 
@@ -66,7 +66,7 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
     ![稽核保留原則飛出視窗頁面](../media/AuditLogRetentionPolicy2.png)
 
    a. **名稱：** 稽核記錄保留原則的名稱。 此名稱在組織中必須是唯一的。
-   
+
    b. **描述：** 選用，但對於提供原則相關資訊 (例如記錄類型或工作負載)、原則中指定的使用者和持續時間有幫助。
 
    c. **記錄類型：** 原則適用的稽核記錄類型。 如果選取多個記錄類型，則無法選取活動，因為原則會套用至所選記錄類型的所有活動。 此外，如果將此屬性保留空白，您必須在 [使用者]**** 方塊中選取使用者。
@@ -79,7 +79,7 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 
    g. **優先順序：** 此值會決定組織中稽核記錄保留原則的處理順序。 較高的值表示優先順序較高。 例如，優先順序值為 **5** 的原則會優先於優先順序值為 **0** 的原則。 如先前所述，任何自訂稽核記錄保留原則的優先順序都會高於組織的預設原則。
 
-6. 按一下 [儲存]**** 建立新的稽核記錄保留原則。 
+4. 按一下 [儲存]**** 建立新的稽核記錄保留原則。
 
 此時並不表示保留原則已成功建立。 請參閱下一節，了解如何檢視稽核記錄保留原則的內容。
 
@@ -94,7 +94,7 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
    ```powershell
    New-UnifiedAuditLogRetentionPolicy -Name "Microsoft Teams Audit Policy" -Description "One year retention policy for all Microsoft Teams activities" -RecordTypes MicrosoftTeams -RetentionDuration TwelveMonths -Priority 100
    ```
-    
+
     此範例會建立名為「Microsoft Teams 稽核原則」的稽核記錄保留原則，其中具有這些設定：
 
    - 原則的描述。
@@ -130,9 +130,9 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 - 在安全性與合規性中心 PowerShell 中使用 **Set-UnifiedAuditLogRetentionPolicy** Cmdlet 來修改現有的稽核記錄保留原則。 如需詳細資訊，請參閱 [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy)。
 
-- 在安全性與合規性中心 PowerShell 中使用 **Remove-UnifiedAuditLogRetentionPolicy** Cmdlet 來刪除稽核記錄保留原則。 完全移除原則最多可能需要最多 30 分鐘的時間。 如需詳細資訊，請參閱 [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy)。
+- 在安全性與合規性中心 PowerShell 中使用 **Remove-UnifiedAuditLogRetentionPolicy** Cmdlet 來刪除稽核記錄保留原則。 移除原則可能需要多達 30 分鐘的時間。 如需詳細資訊，請參閱 [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy)。
 
-- 如先前所述，Azure Active Directory、Exchange 和 SharePoint 中的作業稽核記錄會保留一年。 下表列出預設稽核記錄保留原則中包含的所有記錄類型 (針對各項服務)。 這表示具有此記錄類型的稽核記錄將保留一年，除非特定記錄類型、作業或使用者的自訂稽核記錄保留原則具有優先順序。 每種記錄類型的 Enum 值 (在稽核記錄中顯示為 RecordType 屬性的值) 會顯示在括弧中。
+- 如先前所述，Azure Active Directory、Exchange 和 SharePoint 中的作業稽核記錄會保留一年。 下表列出預設稽核記錄保留原則中(針對各項服務)所包含的所有記錄類型。 這表示具有此記錄類型的稽核記錄將保留一年，除非特定記錄類型、作業或使用者的自訂稽核記錄保留原則具有優先順序。 每種記錄類型的 Enum 值 (在稽核記錄中顯示為 RecordType 屬性的值) 會顯示在括弧中。
 
    |AzureActiveDirectory |Exchange  |SharePoint|
    |:---------|:---------|:---------|

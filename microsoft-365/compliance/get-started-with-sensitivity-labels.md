@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 50392693b92ac660445d5966168b143c70853291
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: 4712cc4f2dd042c3564523a565b71db69a18f5bc
+ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506328"
+ms.lasthandoff: 08/21/2020
+ms.locfileid: "46845763"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -80,7 +80,7 @@ ms.locfileid: "46506328"
 
 |我想要...|文件|
 |----------------|---------------|
-|管理 Office 應用程式的敏感度標籤，讓內容標示為已建立 |[在 Office 應用程式中使用敏感度標籤](sensitivity-labels-office-apps.md)|
+|管理 Office 應用程式的敏感度標籤，讓內容標示為已建立 — 包括在所有平台上的手動標籤支援 |[在 Office 應用程式中使用敏感度標籤](sensitivity-labels-office-apps.md)|
 |讓使用者能夠使用 Office 應用程式、檔案總管和 PowerShell，從 Windows 電腦標籤及保護檔案|[適用於 Windows 的 Azure 資訊保護整合標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |使用敏感度標籤加密文件和電子郵件，並限制能夠存取該內容的人員以及使用方式 |[使用敏感度標籤來套用加密以限制存取內容](encryption-sensitivity-labels.md)|
 |在網頁上啟用 Office 的敏感度標籤，並提供共同撰寫、電子文件探索、資料遺失防護、搜尋支援，即使文件已加密 | [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)
@@ -94,7 +94,7 @@ ms.locfileid: "46506328"
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度標籤的使用者文件
 
-最有效的使用者文件會是您為所選的標籤名稱和組態提供的自訂指導方針和指示。 不過，您可以使用下列資源來取得基本指示：   
+最有效的使用者文件會是您為所選的標籤名稱和組態提供的自訂指導方針和指示。 不過，您可以使用下列資源來取得基本指示：
 
 - [在 Office 中將敏感度標籤套用至您的檔案和電子郵件](https://support.microsoft.com/zh-TW/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
     - [Office 敏感度標籤的已知問題](https://support.microsoft.com/zh-TW/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
@@ -104,4 +104,4 @@ ms.locfileid: "46506328"
 
 - [Azure 資訊保護統一標籤使用者指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-user-guide)
 
-
+如果您的敏感度標籤為 PDF 文件套用加密，則可在 Windows 或 Mac 上使用 Microsoft Edge 開啟這些文件。 如需詳細資訊及替代閱讀程式，請參閱 [受保護的 PDF 文件支援哪些 PDF 閱讀程式？](https://docs.microsoft.com/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
