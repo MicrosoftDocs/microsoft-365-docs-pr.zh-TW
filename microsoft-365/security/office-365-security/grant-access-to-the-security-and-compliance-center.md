@@ -19,77 +19,71 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須先獲指派 Microsoft 365 Security & 合規性中心的許可權，才能管理任何安全性或規範功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d21fef9458c02bd09d6d5ce2129b95571e0f8371
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b51007221257b9adac46c31295e13b20b12342ab
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826598"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868918"
 ---
-# <a name="give-users-access-to-the-security--compliance-center"></a><span data-ttu-id="80c57-103">讓使用者能夠存取安全性與合規性中心</span><span class="sxs-lookup"><span data-stu-id="80c57-103">Give users access to the Security & Compliance Center</span></span>
+# <a name="give-users-access-to-the-security--compliance-center"></a><span data-ttu-id="e0c4b-103">讓使用者能夠存取安全性與合規性中心</span><span class="sxs-lookup"><span data-stu-id="e0c4b-103">Give users access to the Security & Compliance Center</span></span>
 
-<span data-ttu-id="80c57-104">在安全性 & 規範中心內，必須將許可權指派給使用者，才能管理任何安全性或規範功能。</span><span class="sxs-lookup"><span data-stu-id="80c57-104">Users need to be assigned permissions in the Security & Compliance Center before they can manage any of its security or compliance features.</span></span> <span data-ttu-id="80c57-105">在安全性 & 規範中心內，以全域管理員或 OrganizationManagement 角色群組成員的身分，您可以將這些許可權授與使用者。</span><span class="sxs-lookup"><span data-stu-id="80c57-105">As a global admin or member of the OrganizationManagement role group in the Security & Compliance Center, you can give these permissions to users.</span></span> <span data-ttu-id="80c57-106">使用者只能管理您授予權利給他們的安全性或符合性功能。</span><span class="sxs-lookup"><span data-stu-id="80c57-106">Users will only be able to manage the security or compliance features that you give them access to.</span></span>
+<span data-ttu-id="e0c4b-104">在安全性 & 規範中心內，必須將許可權指派給使用者，才能管理任何安全性或規範功能。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-104">Users need to be assigned permissions in the Security & Compliance Center before they can manage any of its security or compliance features.</span></span> <span data-ttu-id="e0c4b-105">在安全性 & 規範中心內，以全域管理員或 OrganizationManagement 角色群組成員的身分，您可以將這些許可權授與使用者。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-105">As a global admin or member of the OrganizationManagement role group in the Security & Compliance Center, you can give these permissions to users.</span></span> <span data-ttu-id="e0c4b-106">使用者只能管理您授予權利給他們的安全性或符合性功能。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-106">Users will only be able to manage the security or compliance features that you give them access to.</span></span>
 
-<span data-ttu-id="80c57-107">如需您可以授與安全性 & 規範中心使用者之不同許可權的詳細資訊，請參閱 [安全性 & 規範中心的許可權](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="80c57-107">For more information about the different permissions you can give to users in the Security & Compliance Center, check out [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+<span data-ttu-id="e0c4b-107">如需您可以授與安全性 & 規範中心使用者之不同許可權的詳細資訊，請參閱 [安全性 & 規範中心的許可權](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-107">For more information about the different permissions you can give to users in the Security & Compliance Center, check out [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="80c57-108">開始之前有哪些須知？</span><span class="sxs-lookup"><span data-stu-id="80c57-108">What do you need to know before you begin?</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="e0c4b-108">開始之前有哪些須知？</span><span class="sxs-lookup"><span data-stu-id="e0c4b-108">What do you need to know before you begin?</span></span>
 
-- <span data-ttu-id="80c57-109">您必須是全域系統管理員或安全性 & 規範中心的 OrganizationManagement 角色群組成員，才可完成本文中的步驟。</span><span class="sxs-lookup"><span data-stu-id="80c57-109">You need to be a global admin, or a member of the OrganizationManagement role group in the Security & Compliance Center, to complete the steps in this article.</span></span>
+- <span data-ttu-id="e0c4b-109">您必須是全域系統管理員或安全性 & 規範中心的 OrganizationManagement 角色群組成員，才可完成本文中的步驟。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-109">You need to be a global admin, or a member of the OrganizationManagement role group in the Security & Compliance Center, to complete the steps in this article.</span></span>
 
-- <span data-ttu-id="80c57-110">安全性 & 合規性中心的角色群組可能會具有與 Exchange Online 中的角色群組類似的名稱，但它們不是相同的。</span><span class="sxs-lookup"><span data-stu-id="80c57-110">Role groups for the Security & Compliance Center might have similar names to the role groups in Exchange Online, but they're not the same.</span></span>
+- <span data-ttu-id="e0c4b-110">安全性 & 合規性中心的角色群組可能會具有與 Exchange Online 中的角色群組類似的名稱，但它們不是相同的。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-110">Role groups for the Security & Compliance Center might have similar names to the role groups in Exchange Online, but they're not the same.</span></span>
 
-- <span data-ttu-id="80c57-111">角色群組成員資格不會在 Exchange Online 與安全性 & 合規性中心共用。</span><span class="sxs-lookup"><span data-stu-id="80c57-111">Role group memberships aren't shared between Exchange Online and the Security & Compliance Center.</span></span>
+- <span data-ttu-id="e0c4b-111">角色群組成員資格不會在 Exchange Online 與安全性 & 合規性中心共用。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-111">Role group memberships aren't shared between Exchange Online and the Security & Compliance Center.</span></span>
 
-- <span data-ttu-id="80c57-112">委派存取許可權 () 協力廠商使用管理代表 (AOBO) 許可權無法存取安全性 & 規範中心。</span><span class="sxs-lookup"><span data-stu-id="80c57-112">Delegated Access Permission (DAP) partners with Administer On Behalf Of (AOBO) permissions can't access the Security & Compliance Center.</span></span>
+- <span data-ttu-id="e0c4b-112">委派存取許可權 () 協力廠商使用管理代表 (AOBO) 許可權無法存取安全性 & 規範中心。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-112">Delegated Access Permission (DAP) partners with Administer On Behalf Of (AOBO) permissions can't access the Security & Compliance Center.</span></span>
 
-## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a><span data-ttu-id="80c57-113">使用系統管理中心，讓另一位使用者能夠存取安全性 & 規範中心</span><span class="sxs-lookup"><span data-stu-id="80c57-113">Use the admin center to give another user access to the Security & Compliance Center</span></span>
+## <a name="use-the-security--compliance-center-to-give-another-user-access-to-the-security--compliance-center"></a><span data-ttu-id="e0c4b-113">使用安全性 & 合規性中心，讓另一個使用者能夠存取安全性 & 規範中心</span><span class="sxs-lookup"><span data-stu-id="e0c4b-113">Use the Security & Compliance Center to give another user access to the Security & Compliance Center</span></span>
 
-1. <span data-ttu-id="80c57-114">登[入並移](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center)至系統管理中心。</span><span class="sxs-lookup"><span data-stu-id="80c57-114">[Sign in and go to the admin center](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center).</span></span>
+1. <span data-ttu-id="e0c4b-114">開啟安全性 & 合規性中心 <https://protection.office.com> ，然後移至 [ **許可權**]。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-114">Open the Security & Compliance Center at <https://protection.office.com> and then go to **Permissions**.</span></span> <span data-ttu-id="e0c4b-115">若要直接移至 [ **許可權** ] 索引標籤，請開啟 <https://protection.office.com/permissions> 。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-115">To go directly to the **Permissions** tab, open <https://protection.office.com/permissions>.</span></span>
 
-2. <span data-ttu-id="80c57-115">在 Microsoft 365 系統管理中心中，開啟 [系統 **管理中心** ]，然後按一下 [ **安全性 & 合規性**]。</span><span class="sxs-lookup"><span data-stu-id="80c57-115">In the Microsoft 365 admin center, open **Admin centers** and then click **Security & Compliance**.</span></span>
+2. <span data-ttu-id="e0c4b-116">從角色群組的清單中，選擇角色群組，然後按一下 [ **編輯** ![ 編輯圖示] ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) 。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-116">From the list of role groups, choose the role group, and then click **Edit** ![Edit icon](../../media/O365-MDM-CreatePolicy-EditIcon.gif).</span></span>
 
-3. <span data-ttu-id="80c57-116">在 [安全性 & 規範中心] 中，移至 [ **許可權**]。</span><span class="sxs-lookup"><span data-stu-id="80c57-116">In the Security & Compliance Center, go to **Permissions**.</span></span>
+3. <span data-ttu-id="e0c4b-117">在 [**成員**] 底下的角色群組的 [內容] 頁面中，按一下 [**新增** ![ 新增] 圖示 ](../../media/ITPro-EAC-AddIcon.gif) ，然後選取您要新增的使用者 (名稱或使用者) 。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-117">In the role group's properties page under **Members**, click **Add**![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.</span></span>
 
-4. <span data-ttu-id="80c57-117">從清單中，選擇您要新增使用者的角色群組，然後按一下 [ **編輯** ![ 編輯圖示] ](../../media/O365-MDM-CreatePolicy-EditIcon.gif) 。</span><span class="sxs-lookup"><span data-stu-id="80c57-117">From the list, choose the role group that you want to add the user to and click **Edit** ![Edit icon](../../media/O365-MDM-CreatePolicy-EditIcon.gif).</span></span>
+4. <span data-ttu-id="e0c4b-118">當您選取要新增至角色群組的所有使用者時，請按一下 [\*\*新增- \> \*\* ]，然後按一下 **[確定]**。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-118">When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.</span></span>
 
-5. <span data-ttu-id="80c57-118">在 [**成員**] 底下的角色群組的 [內容] 頁面中，按一下 [**新增** ![ 新增] 圖示 ](../../media/ITPro-EAC-AddIcon.gif) ，然後選取您要新增的使用者 (名稱或使用者) 。</span><span class="sxs-lookup"><span data-stu-id="80c57-118">In the role group's properties page under **Members**, click **Add**![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and select the name of the user (or users) you want to add.</span></span>
+5. <span data-ttu-id="e0c4b-119">完成後，按一下 [儲存 **]**。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-119">When you're finished, click **Save**.</span></span>
 
-6. <span data-ttu-id="80c57-119">當您選取要新增至角色群組的所有使用者時，請按一下 [\*\*新增- \> \*\* ]，然後按一下 **[確定]**。</span><span class="sxs-lookup"><span data-stu-id="80c57-119">When you've selected all of the users you want to add to the role group, click **add-\>** and then **OK**.</span></span>
+## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a><span data-ttu-id="e0c4b-120">使用安全性 & 規範中心 PowerShell 授予另一個使用者存取安全性 & 規範中心的許可權</span><span class="sxs-lookup"><span data-stu-id="e0c4b-120">Use Security & Compliance Center PowerShell to give another user access to the Security & Compliance Center</span></span>
 
-7. <span data-ttu-id="80c57-120">按一下 [儲存]，將變更儲存到角色群組。</span><span class="sxs-lookup"><span data-stu-id="80c57-120">Click **Save** to save the changes to the role group.</span></span>
+1. <span data-ttu-id="e0c4b-121">[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-121">[Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).</span></span>
 
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="80c57-121">如何知道這是否正常運作？</span><span class="sxs-lookup"><span data-stu-id="80c57-121">How do you know this worked?</span></span>
+2. <span data-ttu-id="e0c4b-122">使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="e0c4b-122">Use the following syntax:</span></span>
 
-1. <span data-ttu-id="80c57-122">在 [安全性 & 規範中心] 中，移至 [ **許可權**]。</span><span class="sxs-lookup"><span data-stu-id="80c57-122">In the Security & Compliance Center, go to **Permissions**.</span></span>
+   ```powershell
+   Add-RoleGroupMember -Identity <RoleGroup> -Member <UserIdentity>
 
-2. <span data-ttu-id="80c57-123">從清單中，選取要查看成員的角色群組。</span><span class="sxs-lookup"><span data-stu-id="80c57-123">From the list, select the role group to view the members.</span></span>
+   - _Identity_ is the role group.
+   - _Member_ is the user or universal security group (USG). You can specify only one member at a time.
 
-3. <span data-ttu-id="80c57-124">在右側的角色群組詳細資料中，您可以查看角色群組的成員。</span><span class="sxs-lookup"><span data-stu-id="80c57-124">On the right, in the role group details, you can view the members of the role group.</span></span>
-
-## <a name="use-powershell-to-give-another-user-access-to-the-security--compliance-center"></a><span data-ttu-id="80c57-125">使用 PowerShell 授予另一個使用者存取安全性 & 規範中心的許可權</span><span class="sxs-lookup"><span data-stu-id="80c57-125">Use PowerShell to give another user access to the Security & Compliance Center</span></span>
-
-1. <span data-ttu-id="80c57-126">[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。</span><span class="sxs-lookup"><span data-stu-id="80c57-126">[Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).</span></span>
-
-2. <span data-ttu-id="80c57-127">使用 **Add-RoleGroupMember** 命令，以將使用者新增至組織管理角色，如下列範例所示。</span><span class="sxs-lookup"><span data-stu-id="80c57-127">Use the **Add-RoleGroupMember** command to add a user to the Organization Management Role, as shown in the following example.</span></span>
+   This example adds MatildaS to the Organization Management role group.
 
    ```PowerShell
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-   <span data-ttu-id="80c57-128">**參數**：</span><span class="sxs-lookup"><span data-stu-id="80c57-128">**Parameters**:</span></span>
+<span data-ttu-id="e0c4b-123">如需詳細的語法及參數問題，請參閱 [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)</span><span class="sxs-lookup"><span data-stu-id="e0c4b-123">For detailed syntax and parameter issues, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)</span></span>
 
-   - <span data-ttu-id="80c57-129">_Identity_ 是要新增成員的角色群組。</span><span class="sxs-lookup"><span data-stu-id="80c57-129">_Identity_ is the role group to add a member to.</span></span>
+### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="e0c4b-124">如何知道這是否正常運作？</span><span class="sxs-lookup"><span data-stu-id="e0c4b-124">How do you know this worked?</span></span>
 
-   - <span data-ttu-id="80c57-130">_成員_ 是信箱、通用安全性群組 (USG) 或要新增至角色群組的電腦。</span><span class="sxs-lookup"><span data-stu-id="80c57-130">_Member_ is the mailbox, universal security group (USG), or computer to add to the role group.</span></span> <span data-ttu-id="80c57-131">您一次只能指定一個成員。</span><span class="sxs-lookup"><span data-stu-id="80c57-131">You can specify only one member at a time.</span></span>
+<span data-ttu-id="e0c4b-125">若要確認您是否已成功授與安全性 & 規範中心的存取權，請執行下列其中一個步驟：</span><span class="sxs-lookup"><span data-stu-id="e0c4b-125">To verify that you've successfully granted access to the Security & Compliance Center, do either of the following steps:</span></span>
 
-<span data-ttu-id="80c57-132">如需語法及參數的詳細資訊，請參閱 [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember)。</span><span class="sxs-lookup"><span data-stu-id="80c57-132">For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).</span></span>
+- <span data-ttu-id="e0c4b-126">在 [安全性 & 規範中心] 中，移至 [ **許可權** ]，然後選取角色群組。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-126">In the Security & Compliance Center, go to **Permissions** and select the role group.</span></span> <span data-ttu-id="e0c4b-127">在開啟的 [詳細資料] 浮出控制項中，驗證角色群組的成員。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-127">In the details flyout that opens, verify the members of the role group.</span></span> 
 
-### <a name="how-do-you-know-this-worked"></a><span data-ttu-id="80c57-133">如何知道這是否正常運作？</span><span class="sxs-lookup"><span data-stu-id="80c57-133">How do you know this worked?</span></span>
+- <span data-ttu-id="e0c4b-128">在 [安全性 & 規範中心] PowerShell 中， \<RoleGroupName\> 以角色群組的名稱取代，並執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="e0c4b-128">In Security & Compliance Center PowerShell, replace \<RoleGroupName\> with the name of the role group, and run the following command:</span></span>
 
-<span data-ttu-id="80c57-134">若要確認您是否已授予使用者對安全性 & 合規性中心的存取權，請使用 **Get-RoleGroupMember** Cmdlet 來查看「組織管理」角色群組中的成員，如下列範例所示。</span><span class="sxs-lookup"><span data-stu-id="80c57-134">To verify that you've given users access to the Security & Compliance Center, use the **Get-RoleGroupMember** cmdlet to view the members in the Organization Management role group, as shown in the following example.</span></span>
+  ```powershell
+  Get-RoleGroupMember -Identity "<RoleGroupName>"
+  ```
 
-```PowerShell
-Get-RoleGroupMember -Identity "Organization Management"
-```
-
-<span data-ttu-id="80c57-135">如需語法及參數的詳細資訊，請參閱 [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember)。</span><span class="sxs-lookup"><span data-stu-id="80c57-135">For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).</span></span>
+  <span data-ttu-id="e0c4b-129">如需詳細的語法及參數資訊，請參閱 [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember)。</span><span class="sxs-lookup"><span data-stu-id="e0c4b-129">For detailed syntax and parameter information, see [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).</span></span>
