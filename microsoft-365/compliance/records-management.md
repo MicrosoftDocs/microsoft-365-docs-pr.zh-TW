@@ -1,5 +1,5 @@
 ---
-title: 記錄管理
+title: Microsoft 365 中的記錄管理
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,16 +18,16 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 使用 Microsoft 365 中的記錄管理，您可以將保留時間表套用到管理保留、記錄聲明和處置的檔案計畫中。
-ms.openlocfilehash: c2ff344d22286fcd865aa08344389dad6334d48d
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: d8ea68d8fbbf67928bae4f6d09712658f364e3ef
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778321"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868908"
 ---
-# <a name="learn-about-records-management"></a>了解記錄管理
+# <a name="learn-about-records-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的記錄管理
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)*
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
 所有類型的組織都需要記錄管理解決方案，用來管理其公司資料間的法規、法務及業務關鍵記錄。 Microsoft 365 中的記錄管理可幫助組織管理其法律義務，提供展現法規遵循的能力，並提高不再需要保留、不再具有價值或商業用途不再需要的項目一般處置的效率。
 
