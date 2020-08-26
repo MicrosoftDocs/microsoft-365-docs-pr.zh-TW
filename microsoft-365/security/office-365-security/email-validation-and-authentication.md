@@ -17,17 +17,17 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: 系統管理員現在可以了解 Exchange Online Protection (EOP) 如何使用電子郵件驗證 (SPF、DKIM 和 DMARC) 來協助防止詐騙、網路釣魚和垃圾郵件。
-ms.openlocfilehash: cc9489a258608080118e88bf1375e4d5f35f8c77
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+description: 系統管理員現在可以了解 EOP 如何使用電子郵件驗證 (SPF、DKIM 和 DMARC) 來協助防止詐騙、網路釣魚和垃圾郵件。
+ms.openlocfilehash: 8db5045ec19c5552feba739628a2c9c1c508f620
+ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826646"
+ms.lasthandoff: 08/24/2020
+ms.locfileid: "46866632"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的電子郵件驗證
 
-電子郵件驗證 (又稱為電子郵件驗證) 是一組嘗試停止詐騙 (來自偽造寄件者的電子郵件訊息) 的標準。 在擁有 Exchange Online 信箱的 Microsoft 365 組織中，和沒有 Exchange Online 信箱的獨立版 Exchange Online Protection (EOP) 組織中，EOP 會使用以下標準來驗證內送電子郵件：
+電子郵件驗證 (又稱為電子郵件驗證) 是一組嘗試停止詐騙 (來自偽造寄件者的電子郵件訊息) 的標準。 在所有 Microsoft 365 組織中，EOP 會使用這些標準來驗證輸入電子郵件：
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 
@@ -37,31 +37,34 @@ ms.locfileid: "46826646"
 
 電子郵件驗證會驗證來自寄件者 (例如，laura@contoso.com) 的電子郵件訊息是否合法，以及是否來自該電子郵件網域的預期來源 (例如，contoso.com)。
 
-本主題的其餘部分說明這些技術的運作方式，以及 EOP 如何使用它們來檢查內送電子郵件。
+本文章的其餘部分說明這些技術的運作方式，以及 EOP 如何使用它們來檢查輸入電子郵件。
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>使用電子郵件驗證以協助避免詐騙
 
-DMARC 會藉由檢查郵件中的 [寄件者]**** 地址 (使用者在其電子郵件用戶端中看到的寄件者電子郵件地址)，來防止詐騙。 目的地電子郵件組織也可以驗證網域已通過 SPF 或 DKIM，這表示網域已驗證，因此不是偽造的。
+DMARC 會透過檢查郵件中的**寄件者**位址來防止詐騙。 **寄件者**位址是使用者在其電子郵件用戶端中看到的寄件者電子郵件地址。 目的地電子郵件組織也可以驗證電子郵件網域是否已通過 SPF 或 DKIM。 換句話說，網域已經過驗證，因此寄件者的電子郵件地址不會詐騙。
 
-不過，問題是對於電子郵件驗證而言 DNS 中的 SPF、DKIM 和 DMARC 記錄 (統稱為電子郵件驗證原則)，完全是選用的。 因此，雖然採用強式電子郵件驗證原則的網域 (如 microsoft.com 和 skype.com) 可防止詐騙，但是發佈較弱的電子郵件驗證原則、或甚至完全未採用任何原則的網域就成了主要詐騙目標。
+不過，SPF、DKIM 和 DMARC 的 DNS 記錄 (統稱為電子郵件驗證原則) 是選擇性的。 具有強式電子郵件驗證原則 (例如 microsoft.com 和 skype.com) 的網域會受到保護，避免遭受詐騙。 但是具有較弱式電子郵件驗證原則或完全沒有原則的網域，會是詐騙的主要目標。
 
-截至 2018 年 3 月，在財富雜誌前 500 大公司的網域中，只有 9% 發佈強式的電子郵件驗證原則。 攻擊者可能會對其餘 91% 的公司進行詐騙。 除非有其他的電子郵件篩選機制，否則來自這些網域中偽造寄件者的電子郵件可能會傳送給使用者。
+截至 2018 年 3 月，Fortune 500 中只有 9% 的公司網域已發佈強式電子郵件驗證原則。 攻擊者可能會對其餘 91% 的公司進行詐騙。 除非有其他的電子郵件篩選機制，否則來自這些網域中偽造寄件者的電子郵件可能會傳送給使用者。
 
 ![財富雜誌前 500 大公司採用的 DMARC 原則](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
-不在財富雜誌前 500 大中的中小型企業，有發佈強式電子郵件驗證原則的比例更少，且北美和西歐地區以外的電子郵件網域具有強式電子郵件驗證原則的比例同樣很少。
+發佈強式電子郵件驗證原則的中小型公司的比例較小。 而且在北美洲和歐洲西部以外的電子郵件網域，此數字甚至會更小。
 
-這是個嚴重的問題，因為企業可能沒意識到電子郵件驗證的功用，但攻擊者卻瞭若指掌並加以利用。 因為網路釣魚這類問題的發生，以及強式電子郵件驗證原則的採用率有限，Microsoft 使用「隱含電子郵件驗證」** 來檢查內送電子郵件。
+缺乏強式電子郵件驗證原則是個大問題。 組織可能不了解電子郵件驗證的運作方式，但攻擊者能夠完全了解並加以利用。 因為網路釣魚疑慮，以及強式電子郵件驗證原則的採用率有限，Microsoft 使用*隱含電子郵件驗證*來檢查輸入電子郵件。
 
-隱含電子郵件驗證是根據一般電子郵件驗證原則的許多延伸模組而建立。 這些延伸模組包括寄件者信譽、寄件者歷程記錄、收件者歷程記錄、行為分析，以及其他進階技術。 傳送郵件的網域若未使用電子郵件驗證原則，該郵件將被標示為詐騙郵件，除非郵件包含其他能指出其合法性的訊號。
+隱含電子郵件驗證是一般電子郵件驗證原則的延伸模組。 這些延伸模組包括：寄件者信譽、寄件者歷程記錄、收件者歷程記錄、行為分析，以及其他進階技術。 如果沒有來自這些延伸模組的其他信號，從未使用電子郵件驗證原則的網域傳送的郵件將被標示為詐騙。
 
 若要查看 Microsoft 的一般公告，請參閱[網路釣魚的範圍第 2 部分 - Microsoft 365 中增強的反詐騙保護](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209) (英文)。
 
 ## <a name="composite-authentication"></a>複合驗證
 
-雖然 SPF、DKIM 和 DMARC 本身是很有幫助，但是如果郵件沒有明確驗證記錄，它們不會傳達足夠的驗證狀態。 因此，Microsoft 開發了隱含電子郵件驗證的演算法，將多個訊號組合成一個稱為_複合驗證_的單一值，或簡稱為 compauth。 系統會在郵件標頭的 **Authentication-Results** 標頭中，註記 compauth 值。
+如果網域沒有傳統的 SPF、DKIM 和 DMARC 記錄，這些記錄檢查無法傳達足夠的驗證狀態資訊。 因此，Microsoft 開發了用於隱含電子郵件驗證的演算法。 此演算法會將多個訊號組合成單一值，稱為_複合驗證_，或簡稱為 `compauth`。 系統會在郵件標頭的 **Authentication-Results** 標頭中，加上 `compauth` 值戳記。
 
-> Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
+```text
+Authentication-Results:
+   compauth=<fail | pass | softpass | none> reason=<yyy>
+```
 
 這些值會在 [Authentication-results 郵件標頭](anti-spam-message-headers.md#authentication-results-message-header)中說明。
 
@@ -73,12 +76,11 @@ DMARC 會藉由檢查郵件中的 [寄件者]**** 地址 (使用者在其電子�
 
 - 寄件網域可能沒有所需的 DNS 記錄，或是記錄未正確設定。
 
-- 來源網域具有正確設定的 DNS 記錄，但是該網域與 [寄件者] 地址中的網域不相符。 SPF 和 DKIM 不需要在 [寄件者] 地址中使用網域。 攻擊者或合法服務可以註冊網域、設定網域的 SPF 和 DKIM、在 [寄件者] 地址中使用完全不同的網域，且該郵件會通過 SPF 和 DKIM。
+- 來源網域具有正確設定的 DNS 記錄，但是該網域與 [寄件者] 地址中的網域不相符。 SPF 和 DKIM 不需要在 [寄件者] 地址中使用網域。 攻擊者或合法服務可以註冊網域、設定網域的 SPF 和 DKIM，以及在 [寄件者] 地址中使用完全不同的網域。 來自此網域中寄件者的郵件將會通過 SPF 和 DKIM。
 
-複合驗證可以藉由讓電子郵件檢查失敗的郵件通過，以解決這些限制。
+複合驗證可以藉由讓無法通過電子郵件檢查的郵件通過，以解決這些限制。
 
-> [!NOTE]
-> 如前所述，隱含電子郵件驗證使用多個訊號來判斷郵件是否合法。 為了簡單起見，以下範例著重於電子郵件驗證結果。 其他後端情報因素會將通過電子郵件驗證的郵件視為詐騙，或是將電子郵件驗證失敗的郵件視為合法。
+為了簡單起見，以下範例著重於電子郵件驗證結果。 其他後端情報因素會將通過電子郵件驗證的郵件視為詐騙，或是將電子郵件驗證失敗的郵件視為合法。
 
 例如，fabrikam.com 網域沒有 SPF、DKIM 或 DMARC 記錄。 來自 fabrikam.com 網域中寄件者的郵件無法通過複合驗證 (請記下 `compauth` 值和原因)：
 
@@ -91,7 +93,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-如果 fabrikam.com 設定了沒有 DKIM 記錄的 SPF，郵件可以通過複合驗證，因為通過 SPF 的網域與 [寄件者] 地址中的網域相符：
+如果 fabrikam.com 在沒有 DKIM 記錄的情況下設定 SPF，郵件就可以通過複合驗證。 通過 SPF 檢查的網域會與 [寄件者] 位址中的網域對應：
 
 ```text
 Authentication-Results: spf=pass (sender IP is 10.2.3.4)
@@ -102,7 +104,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-如果 fabrikam.com 設定了沒有 SPF 記錄的 DKIM 記錄，郵件可以通過複合驗證，因為通過 DKIM 簽章的網域與 [寄件者] 地址中的網域相符：
+如果 fabrikam.com 在沒有 SPF 記錄的情況下設定 DKIM 記錄，該郵件就會通過複合驗證。 DKIM 簽章中的網域會與 [寄件者] 位址中的網域對應：
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -128,7 +130,7 @@ To: michelle@fabrikam.com
 
 ## <a name="solutions-for-legitimate-senders-who-are-sending-unauthenticated-email"></a>傳送未經驗證電子郵件的合法寄件者解決方案
 
-Microsoft 365 會追蹤誰傳送未經驗證電子郵件到您的組織。 如果該服務認為寄件者不合法，則會標示為複合驗證失敗。 若要避免發生此情況，您可以使用本節中的建議。
+Microsoft 365 會追蹤誰傳送未經驗證電子郵件到您的組織。 如果服務認為寄件者不合法，則會將來自此寄件者的郵件標示為複合驗證失敗。 若要避免此決策，您可以使用本節中的建議。
 
 ### <a name="configure-email-authentication-for-domains-you-own"></a>為您擁有的網域設定電子郵件驗證
 
@@ -152,7 +154,7 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 此範例表示來自公司基礎結構的電子郵件將會通過電子郵件驗證，但是來自不明來源的電子郵件將會回歸中性。
 
-Microsoft 365 會將來自公司基礎結構的內送電子郵件視為已驗證，但是來自無法識別來源的電子郵件可能仍會標示為詐騙 (依據 Microsoft 365 是否可以對其進行隱含驗證而定)。 但是，比起所有電子郵件都被 Microsoft 365 標示為詐騙郵件，這不失為一項改進。
+Microsoft 365 會將來自您公司基礎結構的輸入電子郵件視為已驗證。 來自無法識別來源的電子郵件若隱含驗證失敗，仍可能會被標示為詐騙。 但是，比起所有電子郵件都被 Microsoft 365 標示為詐騙郵件，這不失為一項改進。
 
 當您開始使用 SPF 後援原則 `?all` 之後，您就可以逐漸探索及包含更多郵件來源，然後使用更嚴格的原則更新您的 SPF 記錄。
 
@@ -202,4 +204,4 @@ Microsoft 365 會將來自公司基礎結構的內送電子郵件視為已驗證
 
 即使您對來自您的平台的電子郵件進行驗證，也無法保證Microsoft 的可傳遞性，但至少可保證 Microsoft 不會因為郵件未經過驗證，而將它列為垃圾郵件。
 
-如需服務提供者最佳作法的詳細資訊，請參閱[適用服務提供者的 M3AAWG 行動傳訊最佳做法](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf)。
+如需服務提供者最佳作法的詳細資訊，請參閱[適用服務提供者的 M3AAWG 行動訊息最佳做法](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf) (英文)。

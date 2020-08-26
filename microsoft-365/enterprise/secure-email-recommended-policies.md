@@ -1,13 +1,13 @@
 ---
 title: 安全電子郵件建議原則-Microsoft 365 for enterprise |Microsoft 檔
 description: 描述如何套用電子郵件原則和設定之 Microsoft 建議的原則。
-author: brendacarter
-manager: laurawi
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 39e7be86c06a471a4eefc0cacd3657c363eddae6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9c289006fc1501865b0cf5529c308a0986895504
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685603"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898137"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>保護電子郵件的原則建議
 
@@ -39,9 +39,9 @@ ms.locfileid: "46685603"
 
 [查看較大版本的此影像](https://raw.githubusercontent.com/MicrosoftDocs/microsoft-365-docs/public/microsoft-365/media/identity-access-ruleset-mail.png)
 
-當您設定 Exchange Online 和 Outlook 時，如果您已在設定原則的範圍內包含 Exchange Online 和 Outlook，您只需要建立新原則來封鎖 ActiveSync 用戶端。 請查看下表所列的原則，並進行建議的新增，或確認是否已包含這些原則。 每個規則都連結到 [通用身分識別和裝置存取原則](identity-access-policies.md) 文章中相關的設定指示。
+當您設定 Exchange Online 和 Outlook 時，如果您已在設定原則的範圍內包含 Exchange Online 和 Outlook，您只需要建立新原則來封鎖 ActiveSync 用戶端。 請查看下表所列的原則，並進行建議的新增，或確認是否已包含這些原則。 每個規則都連結至 [共同身分識別和裝置存取原則](identity-access-policies.md)中的相關設定指示。
 
-|保護層級|原則|詳細資訊|
+|保護層級|原則|其他相關資訊|
 |:---------------|:-------|:----------------|
 |**Baseline**|[當登入風險為*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲應用程式的指派中包含 Exchange Online|
 |        |[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在雲應用程式的指派中包含 Exchange Online|

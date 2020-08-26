@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 系統管理員可以了解 Exchange Online Protection (EOP) 中提供的反詐騙功能，可協助緩解來自詐騙寄件者和網域的網路釣魚攻擊。
-ms.openlocfilehash: 490d0d137f654e06512622e3fd5825822286ba41
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 46adb8b666bd9f73cbd76860f58efedc8d3c1c59
+ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826658"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "46868876"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的反詐騙保護
 
@@ -162,3 +162,7 @@ Office 365 ATP 組織可以使用 [安全性與合規性中心] 中的 [威脅�
 ## <a name="considerations-for-anti-spoofing-protection"></a>反詐騙保護的考量
 
 如果您是目前傳送郵件至 Microsoft 365 的系統管理員，您必須確認您的電子郵件已正確驗證。 否則，可能會標示為垃圾郵件或網路釣魚。 如需詳細資訊，請參閱[傳送未經驗證電子郵件的合法寄件者解決方案](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email)。
+
+個別使用者 (或系統管理員) 的安全寄件者清單中的寄件者，將會略過篩選堆疊部分，包括詐騙防護。 如需詳細資訊，請參閱 [Outlook 安全寄件者](create-safe-sender-lists-in-office-365.md#use-outlook-safe-senders)。
+
+系統管理員應使用允許的寄件者清單或允許的網域清單來加以避免 (若可能)。 這些寄件者會略過所有垃圾郵件、詐騙和網路釣魚防護，以及寄件者驗證 (SPF、DKIM、DMARC)。 如需詳細資訊，請參閱[使用允許的寄件者清單或允許的網域清單](create-safe-sender-lists-in-office-365.md#use-allowed-sender-lists-or-allowed-domain-lists)。

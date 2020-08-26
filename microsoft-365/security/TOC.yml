@@ -313,6 +313,8 @@
                       href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
                     - name: 在 Outlook 網頁版中回報垃圾郵件與網路釣魚
                       href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+                    - name: 在 iOS 和 Android 版 Outlook 中回報垃圾郵件和網路釣魚
+                      href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md
                     - name: 將郵件手動提交給 Microsoft
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
                     - name: 使用郵件流程規則來查看您的使用者報告給 Microsoft 哪些內容
@@ -382,6 +384,8 @@
                   href: ./office-365-security/support-for-validation-of-dkim-signed-messages.md
                 - name: 使用 DMARC 來驗證電子郵件
                   href: ./office-365-security/use-dmarc-to-validate-email.md
+            - name: 為 Office 安裝應用程式防護
+              href: ./office-365-security/install-app-guard.md
             - name: 安全性與合規性中心內的智慧型報告和深入解析
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: 安全性儀表板概觀

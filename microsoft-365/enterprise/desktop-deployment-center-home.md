@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 如何取得與已被取代的桌面部署中心同等的資源。
-ms.openlocfilehash: 6db35ba51f06c7cca025112ebd1bb8d718b7842c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0dc5816959c5284739de4dee31dde7cc520bde55
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686127"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898013"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>已棄用的桌面部署中心 () 
 
@@ -33,7 +33,7 @@ ms.locfileid: "46686127"
 
 您也可以 [從 Microsoft 結構中查看桌面部署數列](https://www.aka.ms/watchhowtoshift)影片。
 
-您還可以從 Microsoft 合作夥伴和 FastTrack 服務中為桌面部署[找到說明](https://aka.ms/mddhelp)。
+您也可以從 Microsoft 合作夥伴和 [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)尋找桌面部署的說明。
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
 

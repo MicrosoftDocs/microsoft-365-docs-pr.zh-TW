@@ -1,13 +1,13 @@
 ---
 title: 通用身分識別和裝置存取原則-Microsoft 365 企業版 |Microsoft 檔
 description: 描述如何套用身分識別和裝置存取原則和設定之 Microsoft 建議的原則。
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 676a37752e24b238117ec238bc171b9df723e247
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685971"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898113"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 本文說明保護雲端服務存取權的常見建議原則，包括使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式。 
@@ -42,7 +42,7 @@ ms.locfileid: "46685971"
 為了讓您有時間完成這些工作，建議您依照此表中所列的順序實施基準原則。 不過，您可以隨時實施機密和高管制保護的 MFA 原則。
 
 
-|保護層級|原則|詳細資訊|
+|保護層級|原則|其他相關資訊|
 |:---------------|:-------|:----------------|
 |**Baseline**|[當登入風險為*中*或*高*時，需要 MFA](#require-mfa-based-on-sign-in-risk)| |
 |        |[封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-modern-authentication)|未使用新式驗證的用戶端可以略過條件式存取規則，因此請務必封鎖這些|
@@ -200,7 +200,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 使用身分 [識別與裝置存取](microsoft-365-policies-configurations.md)設定中所述的原則，比較基準和機密保護階層與第2級企業增強型資料保護設定緊密對應。 高度管制防護階層密切對應于第3級企業高資料保護設定。
 
-|保護層級 |應用程式保護原則  |詳細資訊  |
+|保護層級 |應用程式保護原則  |其他相關資訊  |
 |---------|---------|---------|
 |基準     | [第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | 在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。         |
 |敏感性     | [第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | 在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。        |
@@ -250,7 +250,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 - Android 企業版
 - iOS/iPadOS
 - macOS
-- 此設定適用於下列類型的裝置：
+- Windows Phone 8.1
 - Windows 8.1 和更新版本
 - Windows 10 和更新版本
 

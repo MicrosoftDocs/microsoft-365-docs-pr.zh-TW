@@ -1,13 +1,13 @@
 ---
 title: 允許來賓和外部 B2B 存取的身分識別和裝置存取原則-Microsoft 365 for enterprise |Microsoft 檔
 description: 描述建議的條件式存取和相關原則，以保護來賓和外部使用者的存取。
-author: BrendaCarter
-manager: johmar
 ms.prod: microsoft-365-enterprise
 ms.topic: article
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: Laurawi
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 0ab4a2d48a1ac90f48bbfee82239fc0c4c1d55d5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ad1203543db1c2bd0ea9e9bdd3433aad58db320b
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686823"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898101"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>允許來賓和外部 B2B 存取的原則
 本文說明如何調整建議的常見身分識別和裝置存取原則，以允許 (來賓和外部使用者 B2B 帳戶存取權) 。 本指南是以 [通用身分識別和裝置存取原則](identity-access-policies.md)為基礎。
@@ -37,7 +37,7 @@ ms.locfileid: "46686823"
 
 下表列出您必須更新或建立的原則。 通用身分 [識別與裝置存取原則](identity-access-policies.md) 文章中相關之設定指示的常見原則連結。
 
-|保護層級|原則|詳細資訊|
+|保護層級|原則|其他相關資訊|
 |:---------------|:-------|:----------------|
 |**Baseline**|[需要對來賓和外部使用者永遠進行 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|建立此新規則，並將其套用至來賓和外部使用者。 在 [登入風險] 下，將所有選項保留未勾選狀態，永遠強制執行 MFA。|
 |        |[當登入風險為*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|修改此規則，以排除來賓和外部使用者。|
@@ -47,7 +47,7 @@ ms.locfileid: "46686823"
 
 ![用於排除來賓之控制項的畫面捕獲](../media/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他相關資訊
 
 ### <a name="guests-vs-external-users"></a>來賓與外部使用者
 在 Azure AD 中，來賓和外部使用者皆相同。 這兩種皆為來賓的使用者類型。 來賓使用者 B2B 使用者。

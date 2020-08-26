@@ -10,30 +10,30 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 95bf8ca693ac4b45be569870ff732c4053be39d2
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
+ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597494"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46903868"
 ---
 # <a name="new-microsoft-edge-app"></a>新的 Microsoft Edge app
 
-新的[Microsoft Edge 瀏覽器](https://www.microsoft.com/edge)提供世界一流的效能，具有更多隱私權、生產力和更多的流覽能力。 Microsoft 受管理的桌面為您環境中的新 Edge browser 的部署提供公開預覽。
+新的 [Microsoft Edge 瀏覽器](https://www.microsoft.com/edge) 提供世界一流的效能，具有更多隱私權、生產力和更多的流覽能力。 Microsoft 受管理的桌面為您環境中的新 Edge browser 的部署提供公開預覽。
 
 ## <a name="initial-deployment"></a>初始部署
 
 若要將 Microsoft 受管理的桌面裝置遷移至新的 Microsoft Edge browser，請透過 Microsoft 受管理的桌面入口網站，將 IT 支援票證檔。 當您為票證進行檔案時，我們會將 Edge 穩定通道部署到測試群組，然後在每個後續的部署群組中每隔24小時部署一次。 若要暫停部署，請 file 另一個票證要求作業保留。
 
-[Beta 通道] (https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 也可在組織中要求代表驗證的要求。 Microsoft 受管理的桌面會依照測試和第一個群組的需要部署應用程式，這樣，除了穩定通道之外，所有使用者都有 Beta 通道。 針對任何需要存取 Beta 通道的其他使用者，請將其新增至**新式的 Workplace Edge Beta 使用者**群組，並將其從公司入口網站安裝
+[測試通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)也可在組織中要求代表驗證的要求。 Microsoft 受管理的桌面會依照測試和第一個群組的需要部署應用程式，這樣，除了穩定通道之外，所有使用者都有 Beta 通道。 針對任何需要存取 Beta 通道的其他使用者，請將其新增至 **新式的 Workplace Edge Beta 使用者** 群組，並將其從公司入口網站安裝
 
 ## <a name="updates-to-microsoft-edge"></a>Microsoft Edge 的更新
 
-Microsoft Managed Desktop 會部署每六周自動更新的 Microsoft Edge[穩定通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel)。 「穩定通道」上的更新會由 Microsoft Edge 產品群組[逐步](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout)展開，以確保客戶獲得最佳的體驗。 
+Microsoft Managed Desktop 會部署每六周自動更新的 Microsoft Edge [穩定通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) 。 「穩定通道」上的更新會由 Microsoft Edge 產品群組 [逐步](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) 展開，以確保客戶獲得最佳的體驗。 
 
-[Beta 通道] (https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 會部署至測試和第一個群組中的裝置，以進行組織內的代表驗證。 此通道完全受支援，且每六周大約會以新功能自動更新。
+測試和第一個群組中的裝置會部署 [Beta 通道](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) 至組織內的代表驗證。 此通道完全受支援，且每六周大約會以新功能自動更新。
 
-為了確保 Microsoft Edge 正確更新，請勿修改 Microsoft Edge[更新原則](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
+為了確保 Microsoft Edge 正確更新，請勿修改 Microsoft Edge [更新原則](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
 
 ### <a name="microsoft-edge-beta-channel"></a>Microsoft Edge Beta 通道
 
@@ -49,7 +49,7 @@ Microsoft 受管理的桌面裝置上的 Microsoft Edge 安全性基準會設定
 #### <a name="extension-installation-blocklist"></a>擴充安裝 blocklist
 **預設值：** 所有
 
-Microsoft 受管理的桌面會設定此原則，以防止在受管理的端點上安裝 Chrome 擴充功能。 Sassociated 與 Chromium 擴充模型（包括資料遺失保護、隱私權及其他可能危及裝置的危險）的已知風險。 
+Microsoft 受管理的桌面會設定此原則，以防止在受管理的端點上安裝 Chrome 擴充功能。 Chromium 擴充模型有相關的已知風險，包括資料遺失防護、隱私權及可能危及裝置的其他威脅。 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>允許未以系統管理員許可權安裝的使用者層級原生郵件主機 () 
 
@@ -71,7 +71,7 @@ Microsoft 受管理的桌面會設定此原則，以防止在受管理的端點�
 
 建議您不要啟用此設定，因為它可讓使用者透過 SSL 錯誤來訪問網站。
 
-### <a name="microsoft-defender-smart-screen"></a>Microsoft Defender 智慧畫面
+### <a name="microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen
 
 #### <a name="configure-windows-defender-smartscreen"></a>設定 Windows Defender SmartScreen
 
@@ -97,7 +97,7 @@ Microsoft 受管理的桌面會設定此原則，以防止在受管理的端點�
 
 **預設值：** 禁用
 
-因為有相關的安全性風險，所以不建議使用 Flash。 如果您仍然有依賴閃光燈的處理常式，請設定**[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** 原則，為需要它的網站啟用快閃記憶體。 如果您無法保留允許的網站清單以使用 Flash，請提交變更要求，以變更值以**按一下 [播放**]，這可讓使用者選擇適當的時間來執行 flash。
+因為有相關的安全性風險，所以不建議使用 Flash。 如果您仍然有依賴閃光燈的處理常式，請設定 **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** 原則，為需要它的網站啟用快閃記憶體。 如果您無法保留允許的網站清單以使用 Flash，請提交變更要求，以變更值以 **按一下 [播放**]，這可讓使用者選擇適當的時間來執行 flash。
 
 ### <a name="password-manager"></a>密碼管理員
 
@@ -118,7 +118,7 @@ Microsoft 受管理的桌面預設會啟用裝置的 Internet Explorer 模式
 依預設，裝置會設定為使用 Internet Explorer 模式，但您可以將其設定為在獨立的 Internet Explorer 11 視窗中開啟網站。 若要變更這一點，請歸檔支援要求。
 
 #### <a name="add-sites-to-the-enterprise-mode-site-list"></a>將網站新增至企業模式網站清單
-若要在 Internet Explorer 模式中開啟網站，您必須將其包含在[企業網站清單](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist)中。 維護和部署企業網站清單是您的責任。 如需詳細資訊，請參閱[configure using The Configure Enterprise Mode Site List policy](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
+若要在 Internet Explorer 模式中開啟網站，您必須將其包含在 [企業網站清單](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist)中。 維護和部署企業網站清單是您的責任。 如需詳細資訊，請參閱 [configure using The Configure Enterprise Mode Site List policy](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>其他設定
 
@@ -143,7 +143,7 @@ Microsoft 受管理的桌面不支援基本或摘要驗證架構。
 
 ## <a name="settings-you-manage"></a>您管理的設定
 
-您可以使用 Microsoft Intune 中的「管理範本」設定檔，部署先前並未描述的任何 Microsoft Edge 設定。 如需詳細資訊，請參閱[使用 Microsoft Intune 設定 Microsoft Edge 原則設定](https://docs.microsoft.com/deployedge/configure-edge-with-intune)。 如果您想要評估目前未包含在 Intune 中的 Microsoft Edge 系統管理範本中的原則，您可以在 Intune 中使用 Windows 10 裝置的自訂設定。
+您可以使用 Microsoft Intune 中的「管理範本」設定檔，部署先前並未描述的任何 Microsoft Edge 設定。 如需詳細資訊，請參閱 [使用 Microsoft Intune 設定 Microsoft Edge 原則設定](https://docs.microsoft.com/deployedge/configure-edge-with-intune)。 如果您想要評估目前未包含在 Intune 中的 Microsoft Edge 系統管理範本中的原則，您可以在 Intune 中使用 Windows 10 裝置的自訂設定。
 
 ### <a name="enabling-specific-chrome-extensions"></a>啟用特定的 Chrome 副檔名
 
@@ -154,7 +154,7 @@ Microsoft 受管理的桌面不支援基本或摘要驗證架構。
 您也可以使用系統管理範本來設定 Microsoft Edge，以安裝分機，而不會提醒使用者。 您可以在 [電腦設定 >] 中找到它， **> 擴充 > 控制以無訊息方式安裝的分機**號碼。
 
 ### <a name="microsoft-edge-update-policies"></a>Microsoft Edge 更新原則
-為了確保 Microsoft Edge 正確更新，請勿修改 Microsoft Edge[更新原則](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
+為了確保 Microsoft Edge 正確更新，請勿修改 Microsoft Edge [更新原則](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
 
 ### <a name="other-common-enterprise-policies"></a>其他常見的企業原則
 

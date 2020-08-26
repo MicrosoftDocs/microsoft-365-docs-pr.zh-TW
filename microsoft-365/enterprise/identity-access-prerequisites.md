@@ -1,13 +1,13 @@
 ---
 title: 實施身分識別和裝置存取原則的必要條件工作-Microsoft 365 for enterprise |Microsoft 檔
 description: 描述如何套用身分識別和裝置存取原則和設定之 Microsoft 建議的原則。
-author: BrendaCarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 295e1c713b97740fcf40e9607e650c242a68c035
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a81e17cad1722c58f5bf13b2a36c16fc2ff5cba4
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685875"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898037"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 

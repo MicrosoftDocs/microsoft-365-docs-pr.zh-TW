@@ -1,13 +1,13 @@
 ---
 title: 建議的安全檔原則-Microsoft 365 for enterprise |Microsoft 檔
 description: 描述如何保護 SharePoint 檔案存取之 Microsoft 建議的原則。
-author: BrendaCarter
-manager: laurawi
+ms.author: josephd
+author: JoeDavies-MSFT
+manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.date: 06/07/2018
 ms.reviewer: martincoetzer
 ms.custom:
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 25f58582ae912211f72aaf17c2dab338ebb21c7e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1cd56b7b02dedfbdb544b49410d231f08a0d4c67
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695035"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898149"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保護 SharePoint 網站和檔案的原則建議
 
@@ -43,7 +43,7 @@ ms.locfileid: "46695035"
 
 下表列出您需要針對線上 SharePoint 檢查和更新或建立新的原則。 通用身分 [識別與裝置存取原則](identity-access-policies.md) 文章中相關之設定指示的常見原則連結。
 
-|保護層級|原則|詳細資訊|
+|保護層級|原則|其他相關資訊|
 |:---------------|:-------|:----------------|
 |**Baseline**|[當登入風險為*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint 線上|
 |        |[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在雲端應用程式的指派中包含 SharePoint 線上|

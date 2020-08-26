@@ -1,14 +1,14 @@
 ---
 title: 身分識別與裝置存取設定-適用于企業的 Microsoft 365
 description: 說明部署安全電子郵件、檔及應用程式原則及設定的 Microsoft 建議與核心概念。
-author: brendacarter
+ms.author: josephd
+author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/11/2018
 f1.keywords:
 - NOCSH
-ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom:
 - it-pro
@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: f39b5d72de630674ea6d58c30eadf211917de10d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e76ed8869f2e3bc3198eeff6dc4fcec777d0ce26
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686623"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898161"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -64,15 +64,14 @@ Microsoft 知道某些組織有獨特的環境需求或複雜性。 如果您是
 
 本指南說明如何針對每一種保護層級的身分識別和裝置執行保護。 使用此指導方針做為組織的起點，並調整原則，以符合組織的特定需求。
 
-請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。 例如，如果您要執行此指導方針，請務必保護您的資料，以同等的層次。 這些架構模型會顯示哪些功能是可比較的。
+請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。 例如，如果您要執行此指導方針，請務必保護您的資料，以同等的層次。 
 
-**Office 365 的身分識別與裝置保護**<br/>
+[身分 **識別與裝置保護] 的 Office 365** 架構模型會顯示哪些功能是可比較的。
+
 ![海報「Office 365 的身分識別與裝置保護」的縮圖](../media/O365_Identity_device_protection_thumb.png)<br/>
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多語言](https://www.microsoft.com/download/details.aspx?id=55032)
 
-**Office 365 的檔案保護方案**<br/>
-![海報「Office 365 中的檔案保護解決方案」的縮圖](../media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)<br/>
-[PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
+此外，請參閱 [部署資訊保護以取得資料隱私權法規](../solutions/information-protection-deploy.md) 解決方案，以保護儲存在 Microsoft 365 中的資訊。
 
 ## <a name="security-and-productivity-trade-offs"></a>安全性與生產力的取捨
 
