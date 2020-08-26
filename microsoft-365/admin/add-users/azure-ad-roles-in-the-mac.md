@@ -17,11 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 在 Microsoft 365 系統管理中心管理這些 Azure 系統管理員角色。
-ms.openlocfilehash: d35daab57446fd2a6a052f7e0fca29af7910c5f9
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432454"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898025"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的 Azure Active Directory 角色
 
@@ -67,6 +68,7 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 |訊息中心隱私權讀取者     |    存取訊息中心的資料隱私權訊息，取得電子郵件通知。     |
 |訊息中心讀取者     | 讀取並共用訊息中心的一般訊，取得每週的電子郵件摘要，對使用者、群組、網域和訂閱具備唯讀存取權。     |
 |Office應用程式系統管理員    |   管理 Office 的雲端原則，以及使用者在其 Office 應用程式中看到的新功能內容。   |
+|密碼管理員    |   重設非下列角色系統管理員或成員的使用者密碼：目錄讀取者、來賓邀請者、密碼系統管理員。 此角色無法授與管理服務要求或監視服務健康情況的能力。   |
 |Power BI 系統管理員    |   完全存取 Power Bl 管理工作、管理服務要求及監視服務健康情況。   |
 |Power 平台系統管理員     |    完全存取 Microsoft Dynamics 365、PowerApps、資料外洩防護原則和 Microsoft Flow。     |
 |特殊權限角色系統管理員     |    管理 Privileged Identity Management 的角色指派和所有存取控制功能。     |
