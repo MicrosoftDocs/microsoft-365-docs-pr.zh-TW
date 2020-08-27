@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6709f9edca2e1436bf1ea9be1a48dda596c2d0a4
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 12f61d84557cda1af518bb78de22f4901ebdc08f
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254452"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898091"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>支付卡行業 (PCI) 資料安全標準 (DSS)
 
@@ -98,6 +98,6 @@ PCI 安全標準協會提供的資訊可協助您了解特定合規性要求。 
 
 - [PCI 安全標準協會](https://www.pcisecuritystandards.org/)
 - [PCI 資料安全性標準](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-1.pdf)
-- [Azure PCI DSS 3.2.1 責任矩陣](https://aka.ms/pciresponsibilitymatrix)
+- [Azure PCI DSS 3.2.1 藍圖](https://docs.microsoft.com/azure/governance/blueprints/samples/pci-dss-3.2.1/)
 - [PCI DSS 快速參考指南](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf)
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

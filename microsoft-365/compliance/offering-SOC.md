@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ec4bd2e3244add3b14d614c308fea736c6ceccb6
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 2428109743b408061ead8ad87d5e59ac30417c06
+ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254296"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "46898081"
 ---
 # <a name="service-organization-controls-soc"></a>服務組織控制 (SOC)
 
@@ -107,7 +107,7 @@ Microsoft 雲端服務針對 SOC 1 (SSAE18，ISAE 3402)、SOC 2 (AT 第 101 節)
 
 **Azure SOC 報告多久發行一次？**
 
-Azure、Microsoft Cloud App Security、Flow、Microsoft Graph、Intune、Power BI、PowerApps、Microsoft Stream 和 Microsoft 資料中心的 SOC 報告皆以 12 個月執行 (稽核期間) 為基礎，且每半年季發行新報告 (期間結束於 3 月 31 日與 9 月 30 日)。 橋接信件會在 1 月發行，以涵蓋 10/1 – 12/31 期間，並於 7 月發行以涵蓋 4/1 – 6/30 的期間。 客戶可以從服務信任入口網站[下載](https://aka.ms/stp)最新報告。
+Azure、Microsoft Cloud App Security、Flow、Microsoft Graph、Intune、Power BI、PowerApps、Microsoft Stream 和 Microsoft 資料中心的 SOC 報告皆以 12 個月執行 (稽核期間) 為基礎，且每半年季發行新報告 (期間結束於 3 月 31 日與 9 月 30 日)。 每季都會發放銜接信件，以涵蓋前三個月的內容。 例如，1 月份的信件涵蓋10/1-12/31，4 月的信件涵蓋1/1-3/31，7 月的信件涵蓋4/1-6/30，而 10 月的信件則涵蓋7/1-9/30。 客戶可以從服務信任入口網站[下載](https://aka.ms/stp)最新報告。
 
 **我是否需要自行執行 Microsoft 資料中心的稽核？**
 
