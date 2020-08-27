@@ -20,12 +20,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何將「社交媒體平臺」、「立即訊息平臺」及「檔共同作業平臺」的協力廠商資料匯入至 Microsoft 365 信箱。
-ms.openlocfilehash: 6b75d2857fd95d24a90f9245cb299b7558aa3cec
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+ms.openlocfilehash: ebb5c78dc043afb0e1e35aa8b5c70cd2219a6349
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860708"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282611"
 ---
 # <a name="archive-third-party-data"></a>封存第三方資料
 
@@ -38,7 +38,7 @@ Microsoft 365 可讓系統管理員使用資料連線器，將協力廠商資料
 > [!TIP]
 > 按一下 **協力廠商資料** 欄中的連結，以取得針對該資料類型建立連接器的逐步指示。
 
-|協力廠商資料  |訴訟暫止|電子文件探索  |保留原則  |記錄管理  |通訊合規性  |測試人員風險管理  |
+|協力廠商資料  |訴訟暫止|電子文件探索  |保留設定  |記錄管理  |通訊合規性  |測試人員風險管理  |
 |:---------|:---------|:---------|:---------|:---------|:---------|:---------|
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
@@ -71,9 +71,9 @@ Microsoft 365 中的三個主要 eDiscovery 工具組括內容搜尋、核心 eD
 
    核心 eDiscovery 和高級 eDiscovery 可讓您管理可能與組織法律或內部調查相關的協力廠商資料。
 
-### <a name="retention-policies"></a>保留原則
+### <a name="retention-settings"></a>保留設定
 
-您可以將 [保留原則](retention.md) 套用至使用者信箱以保留，然後刪除協力廠商資料 (和其他信箱內容) 保留期限到期之後。 您也可以使用保留原則刪除某段時間內的協力廠商資料，或在保留期間到期時觸發處置檢查。
+您可以將 [保留原則](retention.md) 套用至使用者信箱以保留，然後刪除協力廠商資料 (和其他信箱內容) 保留期限到期之後。 您也可以使用保留原則來刪除某段時間內的協力廠商資料，或 [使用保留標籤](disposition.md) ，當協力廠商資料的保留期間到期時，就會觸發處置檢查。
 
 ### <a name="records-management"></a>記錄管理
 

@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1fa80d79c1802d96fc755def3b8ec15af13b0c9
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 75d709cc1f98a12bb6f5a5b6539583a33be500b6
+ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649400"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47255742"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>使用 Microsoft 威脅防護中的進階搜捕功能主動尋找威脅
 
@@ -51,7 +51,7 @@ ms.locfileid: "46649400"
 | **瞭解如何使用查詢結果** | 深入瞭解圖表和您可以查看或匯出結果的各種方式。 探索您如何快速調整查詢、深入查看以取得更豐富的資訊，以及採取回應動作。 | - [使用查詢結果](advanced-hunting-query-results.md)<br>- [對查詢結果採取動作](advanced-hunting-take-action.md) |
 | **了解結構描述** | 深入了解結構描述中的資料表和資料行。 這可協助您決定要在何處尋找資料，以及如何建構查詢。 | [結構描述參考](advanced-hunting-schema-tables.md) |
 | **運用預先定義的查詢** | 探索涵蓋不同威脅搜捕案例的預先定義查詢集合。 | - [使用共用查詢](advanced-hunting-shared-queries.md)<br>- [開始搜尋](advanced-hunting-go-hunt.md) |
-| **最佳化查詢** | 了解如何建立可結合來自電子郵件和裝置資料的高效查詢。 | - [查詢最佳作法](advanced-hunting-shared-queries.md) <br>- [跨裝置和電子郵件進行搜尋](advanced-hunting-best-practices.md) |
+| **最佳化查詢** | 了解如何建立可結合來自電子郵件和裝置資料的高效查詢。 | - [查詢最佳作法](advanced-hunting-best-practices.md) <br>- [跨裝置和電子郵件進行搜尋](advanced-hunting-query-emails-devices.md) |
 | **建立自訂偵測規則** | 瞭解您可以如何使用高級搜尋查詢來觸發提醒並自動套用回應動作。 | - [自訂偵測簡介](custom-detections-overview.md)<br>- [自訂偵測規則](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>取得存取權
@@ -63,12 +63,15 @@ ms.locfileid: "46649400"
 - **事件或活動資料** --填入有關警示、安全性事件、系統事件及例行評估的表格。 [！注意] 高級搜尋幾乎會在收集成功的感應器成功傳送至對應的雲端服務之後立即接收這類資料。 例如，您可以在工作站或網域控制站上的狀況良好感應器上開始查詢事件資料，使其能在 Microsoft Defender ATP 和 Azure ATP 上的使用中立即開始。
 - **實體資料** —使用使用者和裝置的整合式資訊來填入資料表。 此資料來自相對靜態資料來源（例如 Active Directory 專案）和動態來源，例如事件記錄。 若要提供新的資料，每15分鐘更新一次表格中的任何新資訊，新增可能不會填滿的資料列。 每24小時都會合並資料，以插入記錄，其中包含每個實體的最新、最全面的資料集。
 
+## <a name="time-zone"></a>時區
+高級搜尋中的所有時間資訊都是在 UTC 時區內。
+
 ## <a name="related-topics"></a>相關主題
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用查詢結果工作](advanced-hunting-query-results.md)
 - [對查詢結果採取動作](advanced-hunting-take-action.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)
 - [自訂偵測概觀](custom-detections-overview.md)
