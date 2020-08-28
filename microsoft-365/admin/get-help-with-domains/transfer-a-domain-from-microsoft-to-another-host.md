@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: '在這裡尋找將網域從 Microsoft 轉接至另一個註冊機構的步驟。 '
-ms.openlocfilehash: 7e00f5ae2c36a06803a3f7a8acd825dcab90805c
-ms.sourcegitcommit: 6fb2a1c404ea3c3573b0f7803bf17459a9387891
+ms.openlocfilehash: c5c1e98ed14c3ac975e55aadbff65e52165a6f8b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788975"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289168"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>將網域從 Microsoft 轉接至其他主機
 
@@ -43,7 +43,7 @@ ms.locfileid: "46788975"
 
 1. 在系統管理中心中，移至 [  **設定**] [   >  **網域**]。
 
-2. <在 [ **網域** ] 頁面上，選取您要轉接至另一個網域註冊機構的 Microsoft 365 網域，然後選取 [ **檢查健康情況**]。
+2. 在 [ **網域** ] 頁面上，選取您要轉接至另一個網域註冊機構的 Microsoft 365 網域，然後選取 [ **檢查健康情況**]。
 
 3. 在頁面頂端，選取 [ **轉移網域**]。
 

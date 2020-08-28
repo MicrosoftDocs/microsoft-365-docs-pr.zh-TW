@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定資料連線器，將員工資料從組織的人力資源 (HR) 系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 49589d2e5a6a716a2e224aa28b73bd14f9048d0b
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 78832d74a7d61577e5ec49c290e19bdec758a0b3
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255766"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289248"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>設定連接器以匯入 HR 資料 (預覽) 
 
@@ -27,7 +27,7 @@ ms.locfileid: "47255766"
 
 設定資料指標以取得可供內幕風險管理原則用來產生風險指示器的工作，包含建立包含 HR 資料的 CSV 檔案。在 Azure Active Directory 中建立用於驗證的應用程式，在 Microsoft 365 規範中心內建立 HR 資料連線器，然後以排程的方式執行腳本 () 將 CSV 檔案中的 HR 資料 ingests 至 Microsoft 雲端，使其可供現有的「內部人員風險管理」解決方案使用。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 - 決定要匯入 Microsoft 365 的人力資源案例和資料。 這將協助您決定需要建立的 CSV 檔案和 HR 連接器數目，以及如何產生及構造 CSV 檔案。 您所匯入的 HR 資料是由您想要執行的「內幕風險管理」原則所決定。 如需詳細資訊，請參閱步驟1。
 
@@ -201,15 +201,15 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>步驟2：在 Azure Active Directory 中建立應用程式
 
-下一步是在 Azure Active Directory (AAD) 中建立及註冊新的應用程式。 應用程式會對應至您在步驟3中建立的 HR 連接器。 建立此應用程式可讓 AAD 在執行時驗證 HR 連接器，並嘗試存取您的組織。 此應用程式也會用來驗證您在步驟4中執行的腳本，將 HR 資料上傳至 Microsoft 雲端。 在建立此 AAD 應用程式期間，請務必儲存下列資訊。 這些值將會在步驟3和步驟4中使用。
+下一步是在 Azure Active Directory (Azure AD) 中建立及註冊新的應用程式。 應用程式會對應至您在步驟3中建立的 HR 連接器。 建立此應用程式後，Azure AD 會在執行時驗證 HR connector，並嘗試存取您的組織。 此應用程式也會用來驗證您在步驟4中執行的腳本，將 HR 資料上傳至 Microsoft 雲端。 在建立此 Azure AD 應用程式期間，請務必儲存下列資訊。 這些值將會在步驟3和步驟4中使用。
 
-- AAD 應用程式識別碼 (也稱為「 *應用程式識別碼* 」或「 *用戶端識別碼* 」) 
+- Azure AD 應用程式識別碼 (也稱為「 *應用程式識別碼* 」或「 *用戶端識別碼* 」) 
 
-- AAD 應用程式機密 (也稱為 *用戶端密碼*) 
+- Azure AD 應用程式機密 (也稱為 *用戶端密碼*) 
 
 - 租使用者識別碼 (也稱為 *目錄識別碼*) 
 
-如需在 AAD 中建立應用程式的逐步指示，請參閱 [使用 Microsoft identity Platform 註冊應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
+如需在 Azure AD 中建立應用程式的逐步指示，請參閱 [使用 Microsoft identity Platform 註冊應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
 
 ## <a name="step-3-create-the-hr-connector"></a>步驟3：建立 HR 連接器
 
@@ -225,7 +225,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 4. 在 [ **安裝程式** ] 頁面上，執行下列動作，然後按 **[下一步]**：
 
-   a. 針對您在步驟2中建立的 Azure 應用程式，輸入或貼上 AAD 應用程式識別碼。
+   a. 針對您在步驟2中建立的 Azure 應用程式，輸入或貼上 Azure AD 應用程式識別碼。
 
    b. 輸入 HR 連接器的名稱。
 
@@ -294,8 +294,8 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
    |**參數**|**描述**
    |:-----|:-----|:-----|
    |`tenantId`|這是您在步驟2中取得之 Microsoft 365 組織的識別碼。 您也可以在 Azure AD 系統管理中心的 [ **一覽** ] 邊欄中取得組織的承租人識別碼。 這是用來識別您的組織。|
-   |`appId` |這是您在步驟2中，您在 Azure AD 中建立之應用程式的 AAD 應用程式識別碼。 當腳本嘗試存取您的 Microsoft 365 組織時，Azure AD 可用於驗證。 | 
-   |`appSecret`|這是您在步驟2中您在 Azure AD 中建立之應用程式的 AAD 應用程式機密。 這也是用來進行驗證。|
+   |`appId` |這是您在步驟2中您在 Azure AD 中建立之應用程式的 Azure AD 應用程式識別碼。 當腳本嘗試存取您的 Microsoft 365 組織時，Azure AD 可用於驗證。 | 
+   |`appSecret`|這是您在步驟2中您在 Azure AD 中建立之應用程式的 Azure AD 應用程式機密。 這也是用來進行驗證。|
    |`jobId`|這是您在步驟3中建立之 HR 連接器的工作識別碼。 這是用來將上傳至 Microsoft 雲端的 HR 資料與 HR connector 產生關聯。|
    |`csvFilePath`|這是 CSV 檔案 (的檔案路徑，與您在步驟1中建立的腳本) 儲存在相同的系統上。 請嘗試避免檔路徑中的空格;否則請使用單引號。|
    |||
@@ -307,9 +307,9 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
     ```
 
    上載成功時，腳本會顯示 **上傳成功** 郵件。
-   
+
    > [!NOTE]
-   > 如果您由於 excution 原則而無法執行先前的命令，請參閱 [關於執行](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) 原則及 [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) ，以取得設定執行原則的指導方針。 
+   > 如果執行原則時發生問題，請參閱 [關於執行](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_execution_policies) 原則及 [Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy) ，以取得設定執行原則的指導方針。
 
 ## <a name="step-5-monitor-the-hr-connector"></a>步驟5：監視 HR 連接器
 

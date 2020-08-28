@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d8a5775d90f592aa5f64dd5f379fb37278032d87
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 8b287200b1c94ff350f7ba00cf0c4e6bc1b4a71f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529800"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289258"
 ---
 # <a name="add-and-verify-admin-contacts-in-the-admin-portal"></a>在系統管理入口網站中新增和驗證系統管理連絡人
 
@@ -42,7 +42,7 @@ Microsoft 受管理電腦的系統管理入口網站要求存取入口網站的�
 應用程式封裝 | 疑難排解應用程式封裝
 裝置 | 裝置健康情況、透過 Microsoft 受管理的電腦裝置進行疑難排解
 安全性 | 透過 Microsoft 受管理的電腦裝置疑難排解安全性問題
-IT 技術支援 | 如果我們的支援人員將使用者票證交給 Microsoft 受管理的電腦支援領域之外 
+IT 技術支援 | 當我們的支援人員在 Microsoft 受管理的桌面支援區域以外的使用者票據上進行轉交時 
 其他 | 其他領域未涵蓋的問題
 
 **無論您選擇誰做為這些連絡人，都必須擁有知識和授權，以便為您的 Microsoft 受管理的電腦環境做出決策。** 當您上線 Microsoft 受管理的電腦環境時，系統會提示您為本地技術支援和安全性新增連絡人。 

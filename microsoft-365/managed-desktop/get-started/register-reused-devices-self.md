@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: a9ff0e76448df183ac5c34c5832155e0b135d313
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 51c241c46a4c8745bcae169a1c1d89e5c4393f2f
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868983"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289136"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 
@@ -155,9 +155,9 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 |---------------|-------------|
 | AutopilotRegistrationRequested | 尚未完成註冊。 稍後再回頭檢查。 |
 | 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[針對裝置註冊進行疑難排解](#troubleshooting-device-registration)。 |
-| 使用者就緒 | 註冊成功，且裝置現在已準備好交付給使用者。 Microsoft 受管理的電腦將會逐步引導使用者完成首次設定，因此您不需要再做任何進一步的準備。 |
-| 作用中 | 裝置已交付給終端使用者並已向您的租用戶註冊。 這也表示使用者經常使用該裝置。 |
-| 非作用中 | 裝置已交付給終端使用者並已向您的租用戶註冊。 不過，使用者最近尚未使用裝置 (在過去 7 天內)。  | 
+| 使用者就緒 | 註冊成功，裝置現在可以傳遞給使用者。 Microsoft 受管理的電腦將會逐步引導使用者完成首次設定，因此您不需要再做任何進一步的準備。 |
+| 作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 這也表示使用者經常使用該裝置。 |
+| 非作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 不過，使用者最近尚未使用裝置 (在過去 7 天內)。  | 
 
 #### <a name="troubleshooting-device-registration"></a>針對裝置註冊進行疑難排解
 
