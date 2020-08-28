@@ -15,12 +15,12 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 description: 有關 Microsoft 家庭使用方案 (常見問題的常見問題) 。
-ms.openlocfilehash: 9d37afb952374b3d01d3ef3212b82cfd1ccde7a7
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: f4848e5f84081152fb42e41887b581d7290dfe2f
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903487"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294683"
 ---
 # <a name="microsoft-home-use-program-frequently-asked-questions-faq"></a>Microsoft 家居使用程式常見的常見問題 (常見問題) 
 
@@ -34,14 +34,13 @@ ms.locfileid: "46903487"
 
 Microsoft 家居使用計畫 (HUP) 可讓合格公司的員工購買 Microsoft 消費者產品的折扣。 您可以透過訪問「 [家用使用計畫產品」頁面](https://www.microsoft.com/home-use-program)，檢查每個產品產品的目前折扣。
 
-## <a name="in-which-countries-is-this-benefit-available"></a>在哪個國家/地區可取得此權益？
+## <a name="in-which-markets-is-the-home-use-program-offered"></a>在哪個市場上提供了家用使用計畫？
 
-當您在 Microsoft Store for Business) 中啟動您的福利 (，在世界各地大多數國家/地區的 HUP 折扣可供員工使用，但例外情況如下：
+Microsoft 365 系列和個人訂閱上的折扣會提供給全球合格的公司，但有下列例外：
 
-- 俄羅斯
-- 委內瑞拉
-
-HUP 折扣也可用於購買 Surface devices 和附屬設施和 Xbox 遊戲的最後一次。 如需可用資訊，請參閱 [Microsoft 365 訂閱](https://go.microsoft.com/fwlink/p/linkid=2139192)。
+- 澳門特別行政區，俄羅斯和委內瑞拉：這項優惠不適用於這些市場。
+- 中國和香港特別行政區：這兩個市場提供一年訂閱。 在中國，請造訪 [Microsoft 365 （中國](https://www.microsoftstore.com.cn/home-use-program/invite)）。 針對香港特別行政區，請造訪 [購買 Microsoft 365，其價格為打折](https://www.microsoftestore.com.hk/partner/hup?locale=en_HK)。
+- 日本：無法使用 Microsoft 365 系列。
 
 ## <a name="how-does-an-organization-qualify-for-hup-discounts"></a>組織如何符合 HUP 折扣？
 
@@ -64,12 +63,6 @@ HUP 折扣也可用於購買 Surface devices 和附屬設施和 Xbox 遊戲的�
 您必須在 DNS 中建立特殊的記錄，以證明您擁有公司網域（例如:contoso）。
 
 如需成為受管理租使用者的逐步程式，請參閱 [在 Azure Active 中以系統管理員身分處理非受管理的目錄](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)。
-
-## <a name="where-can-i-find-marketing-materials-to-help-promote-the-program-within-my-company"></a>哪裡可以找到行銷材料，以協助推廣公司內的程式？
-
-您可以在系統管理員入口網站的 [ _關於_ ] 區段中，找到 [Microsoft 家居使用計畫內架材料] 連結中的公司上架銷售宣傳材料。
-
-您也可以在 [IT/人力資源管理資源] 頁面上快速找到促銷材料。 請造訪「 [家用使用計畫](https://www.microsoft.com/home-use-program/resources) 」首頁，然後向左下至頁面的 [ _家庭使用計畫促銷資源_ ] 區段。
 
 ## <a name="what-resources-are-available-to-help-promote-the-home-use-program-benefit-to-employees"></a>哪些資源可協助促進員工的家用使用計畫受益？
 

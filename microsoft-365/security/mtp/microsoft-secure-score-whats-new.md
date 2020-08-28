@@ -20,16 +20,22 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: e31389705ddd8de4854a3477012d7fa90b78c7ee
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 8b0fda2d8a0b7d9cb6b2c6a4cca2e8e34a876fec
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866892"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289420"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
 
 若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱 [Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)。
+
+## <a name="august-2020"></a>2020年 8月
+
+### <a name="update-improvement-action-for-azure-active-directory"></a>Azure Active Directory 的更新改進動作
+
+- 啟用原則以封鎖舊版驗證
 
 ## <a name="july-2020"></a>2020 年 7 月
 

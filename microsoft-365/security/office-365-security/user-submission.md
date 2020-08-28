@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: b21a95629e3b84ea77bbee5a988f84c1d55d717f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 458938105d03cb82dfa4e9a7824f8b026fddec5d
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866928"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294750"
 ---
 # <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>在 Exchange Online 中指定使用者提交垃圾郵件和網路釣魚郵件的信箱
 
@@ -47,10 +47,10 @@ ms.locfileid: "46866928"
 
   - 若要修改使用者提交的設定，您必須是下列其中一個角色群組的成員：
 
-    - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
+    - Azure AD 中的**[Exchange 管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** 和**組織管理**或**安全性系統管理員**，以及[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。
     - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理**。
 
-  - 若要讓唯讀存取使用者提交，您必須是下列其中一個角色群組的成員：
+  - 若要讓唯讀存取使用者提交，您必須是下列兩個角色群組的成員：
 
     - [安全性與合規性中心](permissions-in-the-security-and-compliance-center.md) 中的 **安全讀者**。
     - [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅檢視組織管理**。
@@ -73,7 +73,7 @@ ms.locfileid: "46866928"
 
       - **提交後**：按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 。 在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用「報告訊息增益集」報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
 
-      完成後，按一下 [儲存 **]**。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原**回來]。
+      完成後，按一下 [儲存]****。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原**回來]。
 
       - **將報告的郵件傳送至**：進行下列其中一項選擇：
 

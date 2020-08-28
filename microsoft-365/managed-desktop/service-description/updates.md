@@ -1,7 +1,7 @@
 ---
 title: 如何在 Microsoft 受管理的電腦中處理更新
 description: 將 Microsoft 管理的桌面保持在最新狀態，可平衡速度和穩定性。
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7e7889cb1540cb2cb164cbbd44e9ec0e480a6fd5
-ms.sourcegitcommit: 584e2e9db8c541fe32624acdca5e12ee327fdb63
+ms.openlocfilehash: 1349b58bdd6243b05323f14197e0ad92c1fc0d7b
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44678691"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289492"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 受管理的電腦中處理更新
 
@@ -23,10 +23,10 @@ ms.locfileid: "44678691"
 
 <!--Update management -->
 
-Microsoft 受管理的桌面會將所有裝置連接至新式雲端架構基礎結構。 保持最新的 Windows、Office、驅動程式、固件及 Microsoft Store for Business 應用程式是速度和穩定性的平衡。 部署群組將用來確保作業系統更新及原則以安全的方式推出。 如需詳細資訊，請參閱影片[Microsoft 受管理的桌面變更和發行處理](https://www.microsoft.com/videoplayer/embed/RE4mWqP)程式。
+Microsoft 受管理的桌面會將所有裝置連接至新式雲端架構基礎結構。 保持最新的 Windows、Office、驅動程式、固件及 Microsoft Store for Business 應用程式是速度和穩定性的平衡。 部署群組將用來確保作業系統更新及原則以安全的方式推出。 如需詳細資訊，請參閱影片 [Microsoft 受管理的桌面變更和發行處理](https://www.microsoft.com/videoplayer/embed/RE4mWqP)程式。
 
 Microsoft 所發行的更新會累計，而且會分類為品質或功能更新。
-如需詳細資訊，請參閱[Windows update For Business： Update types](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types)。 
+如需詳細資訊，請參閱 [Windows update For Business： Update types](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types)。 
 
 ## <a name="update-groups"></a>更新群組
 
@@ -38,13 +38,13 @@ Microsoft 受管理的桌面會使用四個 Azure AD 群組來管理更新：
 - **廣泛**：上一個群組可提供功能和品質更新。 此群組包含租使用者中大部分的使用者，因此在部署時比速度更有利於穩定性。 在環境最穩定的情況時，應該在這裡進行應用程式的測試。 
 
 > [!NOTE]
-> 如果您需要將使用者移至不同的更新群組，請提交支援要求。 如需提交支援要求的詳細資訊，請參閱[Microsoft Managed Desktop 的支援](support.md)。 如果您自行移動使用者，移動將會還原。
+> 如果您需要將使用者移至不同的更新群組，請提交支援要求。 如需提交支援要求的詳細資訊，請參閱 [Microsoft Managed Desktop 的支援](support.md) 。 如果您自行移動使用者，移動將會還原。
 
-如需這些部署群組的詳細資訊，請參閱[Microsoft 受管理的桌面角色和責任](../intro/roles-and-responsibilities.md)
+如需這些部署群組的詳細資訊，請參閱 [Microsoft 受管理的桌面角色和責任](../intro/roles-and-responsibilities.md)
 
 更新部署的運作方式：
 - Microsoft 受管理的桌面會根據下列指定的排程，部署新的功能或品質更新。
-- 在部署期間，Microsoft 受管理的桌面監視器會針對失敗或中斷的跡象（根據診斷資料和使用者支援系統）進行標記。 如果偵測到任何，則會立即暫停部署至所有目前和未來的群組。
+- 在部署期間，Microsoft 受管理的桌面監視器會根據診斷資料和使用者支援系統) ，以取得失敗或中斷 (的跡象。 如果偵測到任何，則會立即暫停部署至所有目前和未來的群組。
     - 範例：如果在部署第一個群組的品質更新時會發現問題，則在解決問題之前，先將部署更新為第一個、快速和廣泛的部署。
     - 您可以在 Microsoft Managed Desktop Admin 入口網站中將票證歸檔，以報告相容性問題。
 - 會獨立暫停功能和品質更新。 預設情況下，Pause 會生效于35天，但可根據問題是否已修正，加以縮短或擴充。
@@ -64,7 +64,7 @@ Microsoft 受管理的桌面會使用四個 Azure AD 群組來管理更新：
 <tr><td>Microsoft 365 Apps 企業版</td><td colspan="4">遵循 Office 的目前通道
 </table>
 
-如需適用于企業的 Microsoft 365 應用程式目前通道的詳細資訊，請參閱[microsoft 365 應用程式的更新通道概述](https://docs.microsoft.com/deployoffice/overview-update-channels)。
+如需適用于企業的 Microsoft 365 應用程式目前通道的詳細資訊，請參閱 [microsoft 365 應用程式的更新通道概述](https://docs.microsoft.com/deployoffice/overview-update-channels)。
 
 >[!NOTE]
 >這些延期期間是特意設計，以確保所有使用者的高安全性和效能標準。 此外，根據在所有 Microsoft 受管理的桌面裝置上收集的資料，以及更新的範圍和影響，Microsoft 受管理的桌面保留可靈活修改任何和所有部署群組的上述延遲週期長度。
@@ -79,6 +79,6 @@ Microsoft 受管理的桌面不支援屬於 Windows 預覽體驗計畫的裝置�
 
 ## <a name="bandwidth-management"></a>頻寬管理
 
-我們使用[傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)來進行所有作業系統及驅動程式更新。 這可透過從公司網路中的對等機器尋找更新，將 Windows Update service 的下載大小降到最低。
+我們使用 [傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) 來進行所有作業系統及驅動程式更新。 這可透過從公司網路中的對等機器尋找更新，將 Windows Update service 的下載大小降到最低。
 
 

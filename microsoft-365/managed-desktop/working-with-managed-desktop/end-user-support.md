@@ -9,23 +9,23 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5d296c9e690421fdd98fba22b21b44a87157b36f
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529752"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289684"
 ---
-# <a name="getting-help-for-end-users"></a>為使用者獲得協助
+# <a name="getting-help-for-users"></a>取得使用者的協助
 
-組織中的使用者可透過下列兩種方式取得 Microsoft 受管理桌面裝置的協助：**取得協助**應用程式或電話支援。 這兩種支援選項均可供使用者在一周7天、一天24小時。
+組織中的使用者可透過下列兩種方式取得 Microsoft 受管理桌面裝置的協助： **取得協助** 應用程式或電話支援。 這兩種支援選項均可供使用者在一周7天、一天24小時。
  
 >[!NOTE]
 >這些支援選項不適用於測試群組中的裝置。
 
 ## <a name="get-help-app"></a>取得協助應用程式
 
-為您的使用者提供支援的慣用方法，可**協助**您在使用者裝置內建便於使用的介面。  
+為您的使用者提供支援的慣用方法，可 **協助**您在使用者裝置內建便於使用的介面。  
 
 ![取得協助應用程式圖示](../../media/get-help.png)
 
@@ -37,22 +37,22 @@ ms.locfileid: "46529752"
 ### <a name="prerequisites"></a>必要條件
 為了讓您的使用者能夠透過應用程式取得協助，請確定符合下列必要條件：
 
-- 裝置必須使用[設定 Microsoft 受管理的桌面裝置](../get-started/set-up-devices.md)中的其中一種方法，向 Microsoft managed desktop 註冊，例如[自行註冊新裝置](../get-started/register-devices-self.md)。
+- 裝置必須使用 [設定 Microsoft 受管理的桌面裝置](../get-started/set-up-devices.md)中的其中一種方法，向 Microsoft managed desktop 註冊，例如 [自行註冊新裝置](../get-started/register-devices-self.md)。
 - 裝置的顯示語言必須設定為下列任何一種英文語言地區設定： en-us、en、en、en 或 en-ca。
 - 「取得説明」應用程式應該是最新的。 若要確認這一點，請檢查 Microsoft Store 中的應用程式更新。
-- 必須可從裝置存取特定[端點](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop)。
+- 必須可從裝置存取特定 [端點](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) 。
 
 > [!NOTE]
 > 在部署裝置以完全運作後，取得輔助應用程式最多可能需要一小時。
 
-如果您已檢查這些必要條件，但取得協助應用程式仍無法運作，您的 IT 系統管理員應該會將[支援要求](admin-support.md)歸檔。
+如果您已檢查這些必要條件，但取得協助應用程式仍無法運作，您的 IT 系統管理員應該會將 [支援要求](admin-support.md)歸檔。
 
 ## <a name="phone-support"></a>電話支援
 
-使用 Microsoft 受管理的桌面裝置的使用者也可以存取可撥打的免付費電話號碼。 這是在取得無法使用 [說明] 時使用。 例如，如果他們無法登入裝置，或裝置遭到中斷。 以下是電話支援電話號碼：
+使用 Microsoft 受管理的桌面裝置的使用者也可以存取他們可以撥打的免付費電話號碼。 這是在取得無法使用 [說明] 時使用。 例如，如果他們無法登入裝置，或裝置遭到中斷。 以下是電話支援電話號碼：
 
 - 美國： + 1 855 425 0216
-- 加拿大（不包括魁北克）： + 1 855 425 0216
+- 加拿大 (（魁北克）) ： + 1 855 425 0216
 - 英國： + 44 800 026 0698
 - 比利時： + 32 800 58533
 - 盧森堡： + 352 800 40119

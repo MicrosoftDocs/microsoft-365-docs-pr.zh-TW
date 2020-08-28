@@ -1,6 +1,6 @@
 ---
 title: 新版 Microsoft Edge
-description: ''
+description: 說明如何部署及更新新的 Edge browser
 keywords: 瀏覽器、Microsoft 受管理的桌面、Microsoft 365、服務、檔
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 089d9dc79da568a43c1d5701d7bc52d9bed0f4f5
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 60ffdcddcd069330d3cde2f9cc6b2635cf205a90
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903868"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294671"
 ---
 # <a name="new-microsoft-edge-app"></a>新的 Microsoft Edge app
 
@@ -35,7 +35,6 @@ Microsoft Managed Desktop 會部署每六周自動更新的 Microsoft Edge [穩�
 
 為了確保 Microsoft Edge 正確更新，請勿修改 Microsoft Edge [更新原則](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies)。
 
-### <a name="microsoft-edge-beta-channel"></a>Microsoft Edge Beta 通道
 
 
 ## <a name="settings-managed-by-microsoft-managed-desktop"></a>Microsoft 受管理的桌面所管理的設定

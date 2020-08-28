@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4707b95c72200042b17c9e8ff9ae876933522d1f
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 596d67d4967886a2df985793f38f968b40d2c3a9
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866916"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289660"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -30,9 +30,8 @@ ms.locfileid: "46866916"
 
 ## <a name="proposed-changes"></a>建議變更
 
-根據您的授權，這些變更可能會立即進入您的 Microsoft 安全分數。 若要深入瞭解最近的變更，請參閱 [Microsoft Secure 得分的新功能？](microsoft-secure-score-whats-new.md)
-
-- 將 Azure Active Directory 提升動作的最大分數從7變更為 "Enable policy to 封鎖舊版驗證"
+### <a name="september-2020"></a>2020年9月
+- 未計畫變更
 
 ## <a name="related-resources"></a>相關資源
 

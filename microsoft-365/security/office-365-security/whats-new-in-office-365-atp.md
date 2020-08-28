@@ -15,14 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/20/2020
+ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39ef79f685c216732aa1e3e0ccb28a4ab6e2b07a
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 8eda787a92228fc9705bd329f0df7203b9a1175c
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845853"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294772"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新增功能
 
@@ -39,6 +39,9 @@ ms.locfileid: "46845853"
 
 - [使用 Configuration Analyzer 檢查您的原則](configuration-analyzer-for-security-policies.md)
 - [使用承租人允許/封鎖清單手動覆寫篩選 verdicts](tenant-allow-block-list.md)
+- [威脅瀏覽器中的延伸功能（包括主要目標使用者、傳輸規則和連接器）](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- 呈現在 [威脅瀏覽器](threat-explorer.md) 中的覆寫資訊 (允許/封鎖承租人/使用者原則的電子郵件) 
+- 在 [威脅 Explorer](threat-explorer.md) 中呈現 URL 威脅 (惡意程式碼、網路釣魚詐騙、垃圾郵件或無) 
 
 ## <a name="julyaugust-2020"></a>2020年7月/8 月 
 
@@ -55,8 +58,6 @@ ms.locfileid: "46845853"
 - [威脅瀏覽器](threat-explorer.md)的增強功能，可讓安全性作業小組在[調查電子郵件](investigate-malicious-email-that-was-delivered.md)時搜尋並篩選多個欄位：
     - 傳遞位置和特殊動作
     - 方向 (輸入、輸出或組織內) 
-    - 覆寫 (使用者封鎖或允許) 
-    - URL 威脅 (惡意程式碼、網路釣魚、垃圾郵件或無) 
     - Advanced NOT 篩選 (這些是包含不包含、不包含等的高級篩選選項 ) 
     - 精確的時間篩選 (日、小時、半小時)  
 
@@ -103,5 +104,4 @@ ms.locfileid: "46845853"
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Office 365 ATP 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-
 
