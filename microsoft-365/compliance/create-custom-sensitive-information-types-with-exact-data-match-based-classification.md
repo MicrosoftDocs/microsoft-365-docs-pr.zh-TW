@@ -17,99 +17,113 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 699cea6aec6f11462aed0c08db98ca4620df519a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f4bbbe8726370297e9ef6317cd468789bb3b3bfe
+ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686557"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47300431"
 ---
-# <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a><span data-ttu-id="10d9b-103">使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型</span><span class="sxs-lookup"><span data-stu-id="10d9b-103">Create custom sensitive information types with Exact Data Match based classification</span></span>
+# <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a><span data-ttu-id="784d8-103">使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型</span><span class="sxs-lookup"><span data-stu-id="784d8-103">Create custom sensitive information types with Exact Data Match based classification</span></span>
 
-<span data-ttu-id="10d9b-104">[自訂敏感性資訊類型](custom-sensitive-info-types.md) 用來協助防止意外或不當地共用敏感性資訊。</span><span class="sxs-lookup"><span data-stu-id="10d9b-104">[Custom sensitive information types](custom-sensitive-info-types.md) are used to help prevent inadvertent or inappropriate sharing of sensitive information.</span></span> <span data-ttu-id="10d9b-105">身為系統管理員，您可以使用安全性與合規性中心或 PowerShell 來根據模式、辨識項 (關鍵字如 *員工*、 *徽章*、 *識別碼*等)、鄰近字元 (辨識項與特定模式中字元的鄰近程度)，以及信賴等級，來定義自訂敏感性資訊類型。</span><span class="sxs-lookup"><span data-stu-id="10d9b-105">As an administrator, you can use the Security & Compliance Center or PowerShell to define a custom sensitive information type based on patterns, evidence (keywords such as *employee*, *badge*, *ID*, and so on), character proximity (how close evidence is to characters in a particular pattern), and confidence levels.</span></span> <span data-ttu-id="10d9b-106">這類自訂敏感性資訊類型符合許多組織的業務需求。</span><span class="sxs-lookup"><span data-stu-id="10d9b-106">Such custom sensitive information types meet business needs for many organizations.</span></span>
+<span data-ttu-id="784d8-104">[的自訂機密資訊類型](custom-sensitive-info-types.md) 用於協助識別機密項目，這樣您可以防止它們不小心或不適當地被共用。</span><span class="sxs-lookup"><span data-stu-id="784d8-104">[Custom sensitive information types](custom-sensitive-info-types.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared.</span></span> <span data-ttu-id="784d8-105">您可以根據下列項目來定義自訂機密資訊類型：</span><span class="sxs-lookup"><span data-stu-id="784d8-105">You define a custom sensitive information type based on:</span></span>
 
-<span data-ttu-id="10d9b-107">但是，如果您想要使用確切資料值，而非僅比對泛型模式的自訂敏感性資訊類型，該怎麼做？</span><span class="sxs-lookup"><span data-stu-id="10d9b-107">But what if you wanted a custom sensitive information type that uses exact data values, instead of matching only with generic patterns?</span></span> <span data-ttu-id="10d9b-108">使用以精確資料比對 (EDM) 為基礎的分類，您可以建立其設計目的為以下的自訂敏感性資訊類型：</span><span class="sxs-lookup"><span data-stu-id="10d9b-108">With Exact Data Match (EDM)-based classification, you can create a custom sensitive information type that is designed to:</span></span>
+- <span data-ttu-id="784d8-106">模式</span><span class="sxs-lookup"><span data-stu-id="784d8-106">patterns</span></span>
+- <span data-ttu-id="784d8-107">關鍵字證據，例如 *employee*、 *識別證*，或 *識別碼*</span><span class="sxs-lookup"><span data-stu-id="784d8-107">keyword evidence such as *employee*, *badge*, or *ID*</span></span>
+- <span data-ttu-id="784d8-108">字元以特定模式接近證據</span><span class="sxs-lookup"><span data-stu-id="784d8-108">character proximity to evidence in a particular pattern</span></span>
+- <span data-ttu-id="784d8-109">信賴等級</span><span class="sxs-lookup"><span data-stu-id="784d8-109">confidence levels</span></span>
 
-- <span data-ttu-id="10d9b-109">動態且可更新；</span><span class="sxs-lookup"><span data-stu-id="10d9b-109">be dynamic and refreshable;</span></span>
-- <span data-ttu-id="10d9b-110">更可調整；</span><span class="sxs-lookup"><span data-stu-id="10d9b-110">be more scalable;</span></span>
-- <span data-ttu-id="10d9b-111">造成較少的誤判；</span><span class="sxs-lookup"><span data-stu-id="10d9b-111">result in fewer false-positives;</span></span>
-- <span data-ttu-id="10d9b-112">使用結構化的敏感性資料；</span><span class="sxs-lookup"><span data-stu-id="10d9b-112">work with structured sensitive data;</span></span>
-- <span data-ttu-id="10d9b-113">更安全地處理敏感性資訊；以及</span><span class="sxs-lookup"><span data-stu-id="10d9b-113">handle sensitive information more securely; and</span></span>
-- <span data-ttu-id="10d9b-114">能與數個 Microsoft 雲端服務搭配使用。</span><span class="sxs-lookup"><span data-stu-id="10d9b-114">be used with several Microsoft cloud services.</span></span>
+ <span data-ttu-id="784d8-110">這類自訂敏感性資訊類型符合許多組織的業務需求。</span><span class="sxs-lookup"><span data-stu-id="784d8-110">Such custom sensitive information types meet business needs for many organizations.</span></span>
+
+<span data-ttu-id="784d8-111">但是，如果您想要一種使用精確數據值的自定義敏感信息類型，而非根據通用模式找到的匹配，該怎麼辦？</span><span class="sxs-lookup"><span data-stu-id="784d8-111">But what if you wanted a custom sensitive information type that uses exact data values, instead of one that found matches based on generic patterns?</span></span> <span data-ttu-id="784d8-112">使用以精確資料比對 (EDM) 為基礎的分類，您可以建立其設計目的為以下的自訂敏感性資訊類型：</span><span class="sxs-lookup"><span data-stu-id="784d8-112">With Exact Data Match (EDM)-based classification, you can create a custom sensitive information type that is designed to:</span></span>
+
+- <span data-ttu-id="784d8-113">動態且可更新；</span><span class="sxs-lookup"><span data-stu-id="784d8-113">be dynamic and refreshable</span></span>
+- <span data-ttu-id="784d8-114">更可以調整的；</span><span class="sxs-lookup"><span data-stu-id="784d8-114">be more scalable</span></span>
+- <span data-ttu-id="784d8-115">造成較少的誤判；</span><span class="sxs-lookup"><span data-stu-id="784d8-115">result in fewer false-positives</span></span>
+- <span data-ttu-id="784d8-116">使用結構化的敏感性資料；</span><span class="sxs-lookup"><span data-stu-id="784d8-116">work with structured sensitive data</span></span>
+- <span data-ttu-id="784d8-117">更安全地處理敏感性資訊；以及</span><span class="sxs-lookup"><span data-stu-id="784d8-117">handle sensitive information more securely</span></span>
+- <span data-ttu-id="784d8-118">能與數個 Microsoft 雲端服務搭配使用。</span><span class="sxs-lookup"><span data-stu-id="784d8-118">be used with several Microsoft cloud services</span></span>
 
 ![以 EDM 為基礎的分類](../media/EDMClassification.png)
 
-<span data-ttu-id="10d9b-116">以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。</span><span class="sxs-lookup"><span data-stu-id="10d9b-116">EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information.</span></span> <span data-ttu-id="10d9b-117">資料庫可以每日或每週重新整理，而且可以包含最多 1 億列資料。</span><span class="sxs-lookup"><span data-stu-id="10d9b-117">The database can be refreshed daily or weekly, and it can contain up to 100 million rows of data.</span></span> <span data-ttu-id="10d9b-118">因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。</span><span class="sxs-lookup"><span data-stu-id="10d9b-118">So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable.</span></span> <span data-ttu-id="10d9b-119">同時，您可以對原則使用以 EDM 為基礎的分類，例如 [資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或  [Microsoft Cloud App Security 檔案原則](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-119">And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies).</span></span>
+<span data-ttu-id="784d8-120">以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。</span><span class="sxs-lookup"><span data-stu-id="784d8-120">EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information.</span></span> <span data-ttu-id="784d8-121">資料庫可以每日重新整理，而且可以包含最多 1 億資料列。</span><span class="sxs-lookup"><span data-stu-id="784d8-121">The database can be refreshed daily, and contain up to 100 million rows of data.</span></span> <span data-ttu-id="784d8-122">因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。</span><span class="sxs-lookup"><span data-stu-id="784d8-122">So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable.</span></span> <span data-ttu-id="784d8-123">同時，您可以對原則使用以 EDM 為基礎的分類，例如 [資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或  [Microsoft Cloud App Security 檔案原則](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。</span><span class="sxs-lookup"><span data-stu-id="784d8-123">And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="10d9b-120">Microsoft 365 資訊保護目前在預覽版中支援下列雙位元組字元集語言：</span><span class="sxs-lookup"><span data-stu-id="10d9b-120">Microsoft 365 Information Protection now  supports in preview double byte character set languages for:</span></span>
-> - <span data-ttu-id="10d9b-121">中文 (簡體)</span><span class="sxs-lookup"><span data-stu-id="10d9b-121">Chinese (simplified)</span></span>
-> - <span data-ttu-id="10d9b-122">中文 (繁體)</span><span class="sxs-lookup"><span data-stu-id="10d9b-122">Chinese (traditional)</span></span>
-> - <span data-ttu-id="10d9b-123">韓文</span><span class="sxs-lookup"><span data-stu-id="10d9b-123">Korean</span></span>
-> - <span data-ttu-id="10d9b-124">日文</span><span class="sxs-lookup"><span data-stu-id="10d9b-124">Japanese</span></span>
+> <span data-ttu-id="784d8-124">Microsoft 365 資訊保護目前在預覽版中支援下列雙位元組字元集語言：</span><span class="sxs-lookup"><span data-stu-id="784d8-124">Microsoft 365 Information Protection now  supports in preview double byte character set languages for:</span></span>
+> - <span data-ttu-id="784d8-125">中文 (簡體)</span><span class="sxs-lookup"><span data-stu-id="784d8-125">Chinese (simplified)</span></span>
+> - <span data-ttu-id="784d8-126">中文 (繁體)</span><span class="sxs-lookup"><span data-stu-id="784d8-126">Chinese (traditional)</span></span>
+> - <span data-ttu-id="784d8-127">韓文</span><span class="sxs-lookup"><span data-stu-id="784d8-127">Korean</span></span>
+> - <span data-ttu-id="784d8-128">日文</span><span class="sxs-lookup"><span data-stu-id="784d8-128">Japanese</span></span>
 > 
-><span data-ttu-id="10d9b-125">此預覽僅限用於商業雲端中，且僅在下列國家/地區推出：</span><span class="sxs-lookup"><span data-stu-id="10d9b-125">This preview is only in the commercial cloud and the rollout is limited to:</span></span>
-> - <span data-ttu-id="10d9b-126">日本</span><span class="sxs-lookup"><span data-stu-id="10d9b-126">Japan</span></span>
-> - <span data-ttu-id="10d9b-127">韓國</span><span class="sxs-lookup"><span data-stu-id="10d9b-127">Korea</span></span>
-> - <span data-ttu-id="10d9b-128">中國</span><span class="sxs-lookup"><span data-stu-id="10d9b-128">China</span></span>
-> - <span data-ttu-id="10d9b-129">香港特別行政區</span><span class="sxs-lookup"><span data-stu-id="10d9b-129">Hong Kong</span></span>
-> - <span data-ttu-id="10d9b-130">澳門特別行政區</span><span class="sxs-lookup"><span data-stu-id="10d9b-130">Macau</span></span>
-> - <span data-ttu-id="10d9b-131">台灣</span><span class="sxs-lookup"><span data-stu-id="10d9b-131">Taiwan</span></span>
+><span data-ttu-id="784d8-129">此預覽僅限用於商業雲端中，且僅在下列國家/地區推出：</span><span class="sxs-lookup"><span data-stu-id="784d8-129">This preview is only in the commercial cloud and the rollout is limited to:</span></span>
+> - <span data-ttu-id="784d8-130">日本</span><span class="sxs-lookup"><span data-stu-id="784d8-130">Japan</span></span>
+> - <span data-ttu-id="784d8-131">韓國</span><span class="sxs-lookup"><span data-stu-id="784d8-131">Korea</span></span>
+> - <span data-ttu-id="784d8-132">中國</span><span class="sxs-lookup"><span data-stu-id="784d8-132">China</span></span>
+> - <span data-ttu-id="784d8-133">香港特別行政區</span><span class="sxs-lookup"><span data-stu-id="784d8-133">Hong Kong</span></span>
+> - <span data-ttu-id="784d8-134">澳門特別行政區</span><span class="sxs-lookup"><span data-stu-id="784d8-134">Macau</span></span>
+> - <span data-ttu-id="784d8-135">台灣</span><span class="sxs-lookup"><span data-stu-id="784d8-135">Taiwan</span></span>
 >
-><span data-ttu-id="10d9b-132">這項支援適用於敏感性資訊類型。</span><span class="sxs-lookup"><span data-stu-id="10d9b-132">This support is available for sensitive information types.</span></span> <span data-ttu-id="10d9b-133">如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-133">See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.</span></span>
+><span data-ttu-id="784d8-136">這項支援適用於敏感性資訊類型。</span><span class="sxs-lookup"><span data-stu-id="784d8-136">This support is available for sensitive information types.</span></span> <span data-ttu-id="784d8-137">如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。</span><span class="sxs-lookup"><span data-stu-id="784d8-137">See, [Information protection support for double byte character sets release notes (preview)](mip-dbcs-relnotes.md) for more information.</span></span>
 
-## <a name="required-licenses-and-permissions"></a><span data-ttu-id="10d9b-134">必要的授權和權限</span><span class="sxs-lookup"><span data-stu-id="10d9b-134">Required licenses and permissions</span></span>
+## <a name="required-licenses-and-permissions"></a><span data-ttu-id="784d8-138">必要的授權和權限</span><span class="sxs-lookup"><span data-stu-id="784d8-138">Required licenses and permissions</span></span>
 
-<span data-ttu-id="10d9b-135">您必須是全域系統管理員、合規性系統管理員或 Exchange Online 系統管理員，才能執行本文所述的工作。</span><span class="sxs-lookup"><span data-stu-id="10d9b-135">You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article.</span></span> <span data-ttu-id="10d9b-136">若要深入了解 DLP 權限，請參閱 [權限](data-loss-prevention-policies.md#permissions)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-136">To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).</span></span>
+<span data-ttu-id="784d8-139">您必須是全域系統管理員、合規性系統管理員或 Exchange Online 系統管理員，才能執行本文所述的工作。</span><span class="sxs-lookup"><span data-stu-id="784d8-139">You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article.</span></span> <span data-ttu-id="784d8-140">若要深入了解 DLP 權限，請參閱 [權限](data-loss-prevention-policies.md#permissions)。</span><span class="sxs-lookup"><span data-stu-id="784d8-140">To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).</span></span>
 
-<span data-ttu-id="10d9b-137">這些訂閱中包含 EDM 型分類</span><span class="sxs-lookup"><span data-stu-id="10d9b-137">EDM-based classification is included in these subscriptions</span></span>
+<span data-ttu-id="784d8-141">這些訂閱中包含 EDM 型分類</span><span class="sxs-lookup"><span data-stu-id="784d8-141">EDM-based classification is included in these subscriptions</span></span>
 
-- <span data-ttu-id="10d9b-138">Office 365 E5</span><span class="sxs-lookup"><span data-stu-id="10d9b-138">Office 365 E5</span></span>
-- <span data-ttu-id="10d9b-139">Microsoft 365 E5</span><span class="sxs-lookup"><span data-stu-id="10d9b-139">Microsoft 365 E5</span></span>
-- <span data-ttu-id="10d9b-140">Microsoft 365 E5 合規性</span><span class="sxs-lookup"><span data-stu-id="10d9b-140">Microsoft 365 E5 Compliance</span></span>
-- <span data-ttu-id="10d9b-141">Microsoft E5/A5 資訊保護和控管</span><span class="sxs-lookup"><span data-stu-id="10d9b-141">Microsoft E5/A5 Information Protection and Governance</span></span>
+- <span data-ttu-id="784d8-142">Office 365 E5</span><span class="sxs-lookup"><span data-stu-id="784d8-142">Office 365 E5</span></span>
+- <span data-ttu-id="784d8-143">Microsoft 365 E5</span><span class="sxs-lookup"><span data-stu-id="784d8-143">Microsoft 365 E5</span></span>
+- <span data-ttu-id="784d8-144">Microsoft 365 E5 合規性</span><span class="sxs-lookup"><span data-stu-id="784d8-144">Microsoft 365 E5 Compliance</span></span>
+- <span data-ttu-id="784d8-145">Microsoft E5/A5 資訊保護和控管</span><span class="sxs-lookup"><span data-stu-id="784d8-145">Microsoft E5/A5 Information Protection and Governance</span></span>
 
-## <a name="portal-links-for-your-subscription"></a><span data-ttu-id="10d9b-142">訂閱的入口網站連結</span><span class="sxs-lookup"><span data-stu-id="10d9b-142">Portal links for your subscription</span></span>
+## <a name="portal-links-for-your-subscription"></a><span data-ttu-id="784d8-146">訂閱的入口網站連結</span><span class="sxs-lookup"><span data-stu-id="784d8-146">Portal links for your subscription</span></span>
 
 
-|<span data-ttu-id="10d9b-143">入口網站</span><span class="sxs-lookup"><span data-stu-id="10d9b-143">Portal</span></span>  |<span data-ttu-id="10d9b-144">全球/GCC</span><span class="sxs-lookup"><span data-stu-id="10d9b-144">World Wide/GCC</span></span>  |<span data-ttu-id="10d9b-145">GCC-High</span><span class="sxs-lookup"><span data-stu-id="10d9b-145">GCC-High</span></span>  |<span data-ttu-id="10d9b-146">DOD</span><span class="sxs-lookup"><span data-stu-id="10d9b-146">DOD</span></span>  |
+|<span data-ttu-id="784d8-147">入口網站</span><span class="sxs-lookup"><span data-stu-id="784d8-147">Portal</span></span>  |<span data-ttu-id="784d8-148">全球/GCC</span><span class="sxs-lookup"><span data-stu-id="784d8-148">World Wide/GCC</span></span>  |<span data-ttu-id="784d8-149">GCC-High</span><span class="sxs-lookup"><span data-stu-id="784d8-149">GCC-High</span></span>  |<span data-ttu-id="784d8-150">DOD</span><span class="sxs-lookup"><span data-stu-id="784d8-150">DOD</span></span>  |
 |---------|---------|---------|---------|
-|<span data-ttu-id="10d9b-147">Office SCC</span><span class="sxs-lookup"><span data-stu-id="10d9b-147">Office SCC</span></span>     |  <span data-ttu-id="10d9b-148">protection.office.com</span><span class="sxs-lookup"><span data-stu-id="10d9b-148">protection.office.com</span></span>       |<span data-ttu-id="10d9b-149">scc.office365.us</span><span class="sxs-lookup"><span data-stu-id="10d9b-149">scc.office365.us</span></span>         |<span data-ttu-id="10d9b-150">scc.protection.apps.mil</span><span class="sxs-lookup"><span data-stu-id="10d9b-150">scc.protection.apps.mil</span></span> |
-|<span data-ttu-id="10d9b-151">Microsoft 365 安全性中心</span><span class="sxs-lookup"><span data-stu-id="10d9b-151">Microsoft 365 Security center</span></span>     |<span data-ttu-id="10d9b-152">security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="10d9b-152">security.microsoft.com</span></span>         |<span data-ttu-id="10d9b-153">security.microsoft.us</span><span class="sxs-lookup"><span data-stu-id="10d9b-153">security.microsoft.us</span></span>         |<span data-ttu-id="10d9b-154">security.apps.mil</span><span class="sxs-lookup"><span data-stu-id="10d9b-154">security.apps.mil</span></span>|
-|<span data-ttu-id="10d9b-155">Microsoft 365 合規性中心</span><span class="sxs-lookup"><span data-stu-id="10d9b-155">Microsoft 365 Compliance center</span></span>     |<span data-ttu-id="10d9b-156">compliance.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="10d9b-156">compliance.microsoft.com</span></span>         |<span data-ttu-id="10d9b-157">compliance.microsoft.us</span><span class="sxs-lookup"><span data-stu-id="10d9b-157">compliance.microsoft.us</span></span>         |<span data-ttu-id="10d9b-158">compliance.apps.mil</span><span class="sxs-lookup"><span data-stu-id="10d9b-158">compliance.apps.mil</span></span>|
+|<span data-ttu-id="784d8-151">Office SCC</span><span class="sxs-lookup"><span data-stu-id="784d8-151">Office SCC</span></span>     |  <span data-ttu-id="784d8-152">protection.office.com</span><span class="sxs-lookup"><span data-stu-id="784d8-152">protection.office.com</span></span>       |<span data-ttu-id="784d8-153">scc.office365.us</span><span class="sxs-lookup"><span data-stu-id="784d8-153">scc.office365.us</span></span>         |<span data-ttu-id="784d8-154">scc.protection.apps.mil</span><span class="sxs-lookup"><span data-stu-id="784d8-154">scc.protection.apps.mil</span></span> |
+|<span data-ttu-id="784d8-155">Microsoft 365 安全性中心</span><span class="sxs-lookup"><span data-stu-id="784d8-155">Microsoft 365 Security center</span></span>     |<span data-ttu-id="784d8-156">security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="784d8-156">security.microsoft.com</span></span>         |<span data-ttu-id="784d8-157">security.microsoft.us</span><span class="sxs-lookup"><span data-stu-id="784d8-157">security.microsoft.us</span></span>         |<span data-ttu-id="784d8-158">security.apps.mil</span><span class="sxs-lookup"><span data-stu-id="784d8-158">security.apps.mil</span></span>|
+|<span data-ttu-id="784d8-159">Microsoft 365 合規性中心</span><span class="sxs-lookup"><span data-stu-id="784d8-159">Microsoft 365 Compliance center</span></span>     |<span data-ttu-id="784d8-160">compliance.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="784d8-160">compliance.microsoft.com</span></span>         |<span data-ttu-id="784d8-161">compliance.microsoft.us</span><span class="sxs-lookup"><span data-stu-id="784d8-161">compliance.microsoft.us</span></span>         |<span data-ttu-id="784d8-162">compliance.apps.mil</span><span class="sxs-lookup"><span data-stu-id="784d8-162">compliance.apps.mil</span></span>|
 
 
-## <a name="the-work-flow-at-a-glance"></a><span data-ttu-id="10d9b-159">工作流程概覽</span><span class="sxs-lookup"><span data-stu-id="10d9b-159">The work flow at a glance</span></span>
+## <a name="the-work-flow-at-a-glance"></a><span data-ttu-id="784d8-163">工作流程概覽</span><span class="sxs-lookup"><span data-stu-id="784d8-163">The work flow at a glance</span></span>
 
-|<span data-ttu-id="10d9b-160">階段</span><span class="sxs-lookup"><span data-stu-id="10d9b-160">Phase</span></span>  |<span data-ttu-id="10d9b-161">需要的項目</span><span class="sxs-lookup"><span data-stu-id="10d9b-161">What's needed</span></span>  |
+|<span data-ttu-id="784d8-164">階段</span><span class="sxs-lookup"><span data-stu-id="784d8-164">Phase</span></span>  |<span data-ttu-id="784d8-165">需要的項目</span><span class="sxs-lookup"><span data-stu-id="784d8-165">What's needed</span></span>  |
 |---------|---------|
-|[<span data-ttu-id="10d9b-162">第 1 部分：設定以 EDM 為基礎的分類</span><span class="sxs-lookup"><span data-stu-id="10d9b-162">Part 1: Set up EDM-based classification</span></span>](#part-1-set-up-edm-based-classification)<br/><br/><span data-ttu-id="10d9b-163">(視需要)</span><span class="sxs-lookup"><span data-stu-id="10d9b-163">(As needed)</span></span><br/><span data-ttu-id="10d9b-164">- [編輯資料庫結構描述](#editing-the-schema-for-edm-based-classification)</span><span class="sxs-lookup"><span data-stu-id="10d9b-164">- [Edit the database schema](#editing-the-schema-for-edm-based-classification)</span></span> <br/><span data-ttu-id="10d9b-165">- [移除結構描述](#removing-the-schema-for-edm-based-classification)</span><span class="sxs-lookup"><span data-stu-id="10d9b-165">- [Remove the schema](#removing-the-schema-for-edm-based-classification)</span></span> |<span data-ttu-id="10d9b-166">- 敏感性資料的讀取存取權</span><span class="sxs-lookup"><span data-stu-id="10d9b-166">- Read access to the sensitive data</span></span><br/><span data-ttu-id="10d9b-167">- XML 格式的資料庫結構描述 (提供範例)</span><span class="sxs-lookup"><span data-stu-id="10d9b-167">- Database schema in XML format (example provided)</span></span><br/><span data-ttu-id="10d9b-168">- XML 格式的規則套件 (提供範例)</span><span class="sxs-lookup"><span data-stu-id="10d9b-168">- Rule package in XML format (example provided)</span></span><br/><span data-ttu-id="10d9b-169">- 安全性與合規性中心的系統管理員權限 (使用 PowerShell)</span><span class="sxs-lookup"><span data-stu-id="10d9b-169">- Admin permissions to the Security & Compliance Center (using PowerShell)</span></span> |
-|[<span data-ttu-id="10d9b-170">第 2 部分：雜湊和上傳敏感性資料</span><span class="sxs-lookup"><span data-stu-id="10d9b-170">Part 2: Hash and upload the sensitive data</span></span>](#part-2-hash-and-upload-the-sensitive-data)<br/><br/><span data-ttu-id="10d9b-171">(視需要)</span><span class="sxs-lookup"><span data-stu-id="10d9b-171">(As needed)</span></span><br/>[<span data-ttu-id="10d9b-172">重新整理資料</span><span class="sxs-lookup"><span data-stu-id="10d9b-172">Refresh the data</span></span>](#refreshing-your-sensitive-information-database) |<span data-ttu-id="10d9b-173">- 自訂安全性群組和使用者帳戶</span><span class="sxs-lookup"><span data-stu-id="10d9b-173">- Custom security group and user account</span></span><br/><span data-ttu-id="10d9b-174">- 具有 EDM 上傳代理程式電腦的本機系統管理員存取權</span><span class="sxs-lookup"><span data-stu-id="10d9b-174">- Local admin access to machine with EDM Upload Agent</span></span><br/><span data-ttu-id="10d9b-175">- 敏感性資料的讀取存取權</span><span class="sxs-lookup"><span data-stu-id="10d9b-175">- Read access to the sensitive data</span></span><br/><span data-ttu-id="10d9b-176">- 重新整理資料的程序和排程</span><span class="sxs-lookup"><span data-stu-id="10d9b-176">- Process and schedule for refreshing the data</span></span>|
-|[<span data-ttu-id="10d9b-177">第 3 部分：使用以 EDM 為基礎的分類搭配 Microsoft 雲端服務</span><span class="sxs-lookup"><span data-stu-id="10d9b-177">Part 3: Use EDM-based classification with your Microsoft cloud services</span></span>](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |<span data-ttu-id="10d9b-178">- Microsoft 365 訂閱與 DLP</span><span class="sxs-lookup"><span data-stu-id="10d9b-178">- Microsoft 365 subscription with DLP</span></span><br/><span data-ttu-id="10d9b-179">- 已啟用以 EDM 為基礎的分類功能</span><span class="sxs-lookup"><span data-stu-id="10d9b-179">- EDM-based classification feature enabled</span></span> |
+|[<span data-ttu-id="784d8-166">第 1 部分：設定以 EDM 為基礎的分類</span><span class="sxs-lookup"><span data-stu-id="784d8-166">Part 1: Set up EDM-based classification</span></span>](#part-1-set-up-edm-based-classification)<br/><br/><span data-ttu-id="784d8-167">(視需要)</span><span class="sxs-lookup"><span data-stu-id="784d8-167">(As needed)</span></span><br/><span data-ttu-id="784d8-168">- [編輯資料庫結構描述](#editing-the-schema-for-edm-based-classification)</span><span class="sxs-lookup"><span data-stu-id="784d8-168">- [Edit the database schema](#editing-the-schema-for-edm-based-classification)</span></span> <br/><span data-ttu-id="784d8-169">- [移除結構描述](#removing-the-schema-for-edm-based-classification)</span><span class="sxs-lookup"><span data-stu-id="784d8-169">- [Remove the schema](#removing-the-schema-for-edm-based-classification)</span></span> |<span data-ttu-id="784d8-170">- 敏感性資料的讀取存取權</span><span class="sxs-lookup"><span data-stu-id="784d8-170">- Read access to the sensitive data</span></span><br/><span data-ttu-id="784d8-171">- XML 格式的資料庫結構描述 (提供範例)</span><span class="sxs-lookup"><span data-stu-id="784d8-171">- Database schema in XML format (example provided)</span></span><br/><span data-ttu-id="784d8-172">- XML 格式的規則套件 (提供範例)</span><span class="sxs-lookup"><span data-stu-id="784d8-172">- Rule package in XML format (example provided)</span></span><br/><span data-ttu-id="784d8-173">- 安全性與合規性中心的系統管理員權限 (使用 PowerShell)</span><span class="sxs-lookup"><span data-stu-id="784d8-173">- Admin permissions to the Security & Compliance Center (using PowerShell)</span></span> |
+|[<span data-ttu-id="784d8-174">第 2 部分：雜湊和上傳敏感性資料</span><span class="sxs-lookup"><span data-stu-id="784d8-174">Part 2: Hash and upload the sensitive data</span></span>](#part-2-hash-and-upload-the-sensitive-data)<br/><br/><span data-ttu-id="784d8-175">(視需要)</span><span class="sxs-lookup"><span data-stu-id="784d8-175">(As needed)</span></span><br/>[<span data-ttu-id="784d8-176">重新整理資料</span><span class="sxs-lookup"><span data-stu-id="784d8-176">Refresh the data</span></span>](#refreshing-your-sensitive-information-database) |<span data-ttu-id="784d8-177">- 自訂安全性群組和使用者帳戶</span><span class="sxs-lookup"><span data-stu-id="784d8-177">- Custom security group and user account</span></span><br/><span data-ttu-id="784d8-178">- 具有 EDM 上傳代理程式電腦的本機系統管理員存取權</span><span class="sxs-lookup"><span data-stu-id="784d8-178">- Local admin access to machine with EDM Upload Agent</span></span><br/><span data-ttu-id="784d8-179">- 敏感性資料的讀取存取權</span><span class="sxs-lookup"><span data-stu-id="784d8-179">- Read access to the sensitive data</span></span><br/><span data-ttu-id="784d8-180">- 重新整理資料的程序和排程</span><span class="sxs-lookup"><span data-stu-id="784d8-180">- Process and schedule for refreshing the data</span></span>|
+|[<span data-ttu-id="784d8-181">第 3 部分：使用以 EDM 為基礎的分類搭配 Microsoft 雲端服務</span><span class="sxs-lookup"><span data-stu-id="784d8-181">Part 3: Use EDM-based classification with your Microsoft cloud services</span></span>](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |<span data-ttu-id="784d8-182">- Microsoft 365 訂閱與 DLP</span><span class="sxs-lookup"><span data-stu-id="784d8-182">- Microsoft 365 subscription with DLP</span></span><br/><span data-ttu-id="784d8-183">- 已啟用以 EDM 為基礎的分類功能</span><span class="sxs-lookup"><span data-stu-id="784d8-183">- EDM-based classification feature enabled</span></span> |
 
-### <a name="part-1-set-up-edm-based-classification"></a><span data-ttu-id="10d9b-180">第 1 部分：設定以 EDM 為基礎的分類</span><span class="sxs-lookup"><span data-stu-id="10d9b-180">Part 1: Set up EDM-based classification</span></span>
+### <a name="part-1-set-up-edm-based-classification"></a><span data-ttu-id="784d8-184">第 1 部分：設定以 EDM 為基礎的分類</span><span class="sxs-lookup"><span data-stu-id="784d8-184">Part 1: Set up EDM-based classification</span></span>
 
-<span data-ttu-id="10d9b-181">設定和配置以 EDM 為基礎的分類涉及將敏感性資料儲存為 .csv 格式、定義您的敏感性資訊的資料庫結構描述、建立規則套件，以及上傳結構描述和規則套件。</span><span class="sxs-lookup"><span data-stu-id="10d9b-181">Setting up and configuring EDM-based classification involves saving sensitive data in .csv format, defining a schema for your database of sensitive information, creating a rule package, and then uploading the schema and rule package.</span></span>
+<span data-ttu-id="784d8-185">設定及安裝以 EDM 為基礎的分類會涉及：</span><span class="sxs-lookup"><span data-stu-id="784d8-185">Setting up and configuring EDM-based classification involves:</span></span>
 
-#### <a name="define-the-schema-for-your-database-of-sensitive-information"></a><span data-ttu-id="10d9b-182">定義用於敏感性資訊的資料庫結構描述</span><span class="sxs-lookup"><span data-stu-id="10d9b-182">Define the schema for your database of sensitive information</span></span>
+1. [<span data-ttu-id="784d8-186">以 .csv 格式儲存機密資料</span><span class="sxs-lookup"><span data-stu-id="784d8-186">Saving sensitive data in .csv format</span></span>](#save-sensitive-data-in-csv-format)
+2. [<span data-ttu-id="784d8-187">定義您的機密資訊資料庫架構</span><span class="sxs-lookup"><span data-stu-id="784d8-187">Define your sensitive information database schema</span></span>](#define-the-schema-for-your-database-of-sensitive-information)
+3. [<span data-ttu-id="784d8-188">建立規則套件</span><span class="sxs-lookup"><span data-stu-id="784d8-188">Create a rule package</span></span>](#set-up-a-rule-package)
 
-1. <span data-ttu-id="10d9b-183">找出您要使用的敏感性資訊。</span><span class="sxs-lookup"><span data-stu-id="10d9b-183">Identify the sensitive information you want to use.</span></span> <span data-ttu-id="10d9b-184">將資料匯出至應用程式，例如 Microsoft Excel，並將檔案以 .csv 格式儲存。</span><span class="sxs-lookup"><span data-stu-id="10d9b-184">Export the data to an app, such as Microsoft Excel, and save the file in .csv format.</span></span> <span data-ttu-id="10d9b-185">資料檔案可能包含：</span><span class="sxs-lookup"><span data-stu-id="10d9b-185">The data file can include a maximum of:</span></span>
-      - <span data-ttu-id="10d9b-186">最多 1 億列敏感性資料</span><span class="sxs-lookup"><span data-stu-id="10d9b-186">Up to 100 million rows of sensitive data</span></span>
-      - <span data-ttu-id="10d9b-187">每個資料來源最多 32 個資料行 (欄位)</span><span class="sxs-lookup"><span data-stu-id="10d9b-187">Up to 32 columns (fields) per data source</span></span>
-      - <span data-ttu-id="10d9b-188">最多 5 個資料行 (欄位) 標示為可搜尋</span><span class="sxs-lookup"><span data-stu-id="10d9b-188">Up to 5 columns (fields) marked as searchable</span></span>
 
-2. <span data-ttu-id="10d9b-189">以 .csv 檔案格式將敏感性資料結構化，使得第一列包含用於以 EDM 為基礎的分類的欄位名稱。</span><span class="sxs-lookup"><span data-stu-id="10d9b-189">Structure the sensitive data in the .csv file such that the first row includes the names of the fields used for EDM-based classification.</span></span> <span data-ttu-id="10d9b-190">在您的 .csv 檔案中，您可能會有欄位名稱，例如 "ssn"、"birthdate"、"firstname"、"lastname" 等等。</span><span class="sxs-lookup"><span data-stu-id="10d9b-190">In your .csv file, you might have field names, such as "ssn", "birthdate", "firstname", "lastname", and so on.</span></span> <span data-ttu-id="10d9b-191">請注意，資料行標題的名稱中不能包含空格或底線。</span><span class="sxs-lookup"><span data-stu-id="10d9b-191">Please note that column headers can't include spaces or underscores in their names.</span></span> <span data-ttu-id="10d9b-192">舉例來說，我們的 .csv 檔案稱為 *PatientRecords.csv*，且其資料行包括 *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *SSN*等。</span><span class="sxs-lookup"><span data-stu-id="10d9b-192">As an example, our .csv file is called *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.</span></span>
+#### <a name="save-sensitive-data-in-csv-format"></a><span data-ttu-id="784d8-189">以 .csv 格式儲存機密資料</span><span class="sxs-lookup"><span data-stu-id="784d8-189">Save sensitive data in .csv format</span></span>
 
-3. <span data-ttu-id="10d9b-193">以 XML 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-193">Define the schema for the database of sensitive information in XML format (similar to our example below).</span></span> <span data-ttu-id="10d9b-194">將此結構描述檔案命名為  **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行：</span><span class="sxs-lookup"><span data-stu-id="10d9b-194">Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax:</span></span> 
+1. <span data-ttu-id="784d8-190">找出您要使用的敏感性資訊。</span><span class="sxs-lookup"><span data-stu-id="784d8-190">Identify the sensitive information you want to use.</span></span> <span data-ttu-id="784d8-191">將資料匯出至應用程式，例如 Microsoft Excel，並將檔案以 .csv 格式儲存。</span><span class="sxs-lookup"><span data-stu-id="784d8-191">Export the data to an app, such as Microsoft Excel, and save the file in .csv format.</span></span> <span data-ttu-id="784d8-192">資料檔案可能包含：</span><span class="sxs-lookup"><span data-stu-id="784d8-192">The data file can include a maximum of:</span></span>
+      - <span data-ttu-id="784d8-193">最多 1 億列敏感性資料</span><span class="sxs-lookup"><span data-stu-id="784d8-193">Up to 100 million rows of sensitive data</span></span>
+      - <span data-ttu-id="784d8-194">每個資料來源最多 32 個資料行 (欄位)</span><span class="sxs-lookup"><span data-stu-id="784d8-194">Up to 32 columns (fields) per data source</span></span>
+      - <span data-ttu-id="784d8-195">最多 5 個資料行 (欄位) 標示為可搜尋</span><span class="sxs-lookup"><span data-stu-id="784d8-195">Up to 5 columns (fields) marked as searchable</span></span>
 
-      <span data-ttu-id="10d9b-195">`\<Field name="" searchable=""/\>`。</span><span class="sxs-lookup"><span data-stu-id="10d9b-195">`\<Field name="" searchable=""/\>`.</span></span>
+2. <span data-ttu-id="784d8-196">以 .csv 檔案格式將敏感性資料結構化，使得第一列包含用於以 EDM 為基礎的分類的欄位名稱。</span><span class="sxs-lookup"><span data-stu-id="784d8-196">Structure the sensitive data in the .csv file such that the first row includes the names of the fields used for EDM-based classification.</span></span> <span data-ttu-id="784d8-197">在您的 .csv 檔案中，您可能會有欄位名稱，例如 "ssn"、"生日"、"名字"、"姓氏" 等等。</span><span class="sxs-lookup"><span data-stu-id="784d8-197">In your .csv file, you might have field names, such as "ssn", "birthdate", "firstname", "lastname".</span></span> <span data-ttu-id="784d8-198">欄標題名稱不能包含空格或底線。</span><span class="sxs-lookup"><span data-stu-id="784d8-198">The column header names can't include spaces or underscores.</span></span> <span data-ttu-id="784d8-199">例如，在本文我們所使用的 .csv 檔案範例稱為「PatientRecords *.csv*，而其欄包含 *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *的 SSN*等等。</span><span class="sxs-lookup"><span data-stu-id="784d8-199">For example, the sample .csv file that we use in this article is named *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.</span></span>
 
-      - <span data-ttu-id="10d9b-196">使用資料行名稱作為 *欄位名稱* 值。</span><span class="sxs-lookup"><span data-stu-id="10d9b-196">Use column names for *Field name* values.</span></span>
-      - <span data-ttu-id="10d9b-197">對您想讓它可供搜尋最多 5 個欄位的欄位，使用 *searchable="true"* 。</span><span class="sxs-lookup"><span data-stu-id="10d9b-197">Use *searchable="true"* for the fields that you want to be searchable up to a maximum of 5 fields.</span></span> <span data-ttu-id="10d9b-198">您必須至少將一個欄位指定為可搜尋。</span><span class="sxs-lookup"><span data-stu-id="10d9b-198">You must designate a minimum of one field as searchable.</span></span>
+#### <a name="define-the-schema-for-your-database-of-sensitive-information"></a><span data-ttu-id="784d8-200">定義用於敏感性資訊的資料庫結構描述</span><span class="sxs-lookup"><span data-stu-id="784d8-200">Define the schema for your database of sensitive information</span></span>
 
-      <span data-ttu-id="10d9b-199">例如，下列 XML 檔會為病患記錄資料庫定義結構描述，並將五個欄位指定為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 以及  *DOB*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-199">As an example, the following XML file defines the schema for a patient records database, with five fields specified as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*.</span></span>
+3. <span data-ttu-id="784d8-201">以 XML 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。</span><span class="sxs-lookup"><span data-stu-id="784d8-201">Define the schema for the database of sensitive information in XML format (similar to our example below).</span></span> <span data-ttu-id="784d8-202">將此結構描述檔案命名為  **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行：</span><span class="sxs-lookup"><span data-stu-id="784d8-202">Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax:</span></span> 
 
-      <span data-ttu-id="10d9b-200">(您可以複製、修改及使用我們的範例)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-200">(You can copy, modify, and use our example.)</span></span>
+      <span data-ttu-id="784d8-203">`\<Field name="" searchable=""/\>`。</span><span class="sxs-lookup"><span data-stu-id="784d8-203">`\<Field name="" searchable=""/\>`.</span></span>
+
+      - <span data-ttu-id="784d8-204">使用資料行名稱作為 *欄位名稱* 值。</span><span class="sxs-lookup"><span data-stu-id="784d8-204">Use column names for *Field name* values.</span></span>
+      - <span data-ttu-id="784d8-205">對您想讓它可供搜尋最多 5 個欄位的欄位，使用 *searchable="true"* 。</span><span class="sxs-lookup"><span data-stu-id="784d8-205">Use *searchable="true"* for the fields that you want to be searchable up to a maximum of 5 fields.</span></span> <span data-ttu-id="784d8-206">至少必須有一個欄位可供搜尋。</span><span class="sxs-lookup"><span data-stu-id="784d8-206">At least one field must be searchable.</span></span>
+
+      <span data-ttu-id="784d8-207">例如，下列 XML 檔會為病患記錄資料庫定義結構描述，並將五個欄位指定為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 以及  *DOB*。</span><span class="sxs-lookup"><span data-stu-id="784d8-207">As an example, the following XML file defines the schema for a patient records database, with five fields specified as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*.</span></span>
+
+      <span data-ttu-id="784d8-208">(您可以複製、修改及使用我們的範例)。</span><span class="sxs-lookup"><span data-stu-id="784d8-208">(You can copy, modify, and use our example.)</span></span>
 
       ```xml
       <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -127,108 +141,50 @@ ms.locfileid: "46686557"
       </EdmSchema>
       ```
 
-4. <span data-ttu-id="10d9b-201">使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="10d9b-201">Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span></span>
+4. <span data-ttu-id="784d8-209">使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="784d8-209">Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span></span>
 
-5. <span data-ttu-id="10d9b-202">若要上傳資料庫結構描述，請執行下列 Cmdlet，一次一個：</span><span class="sxs-lookup"><span data-stu-id="10d9b-202">To upload the database schema, run the following cmdlets, one at a time:</span></span>
+5. <span data-ttu-id="784d8-210">若要上傳資料庫結構描述，請執行下列 Cmdlet，一次一個：</span><span class="sxs-lookup"><span data-stu-id="784d8-210">To upload the database schema, run the following cmdlets, one at a time:</span></span>
 
       ```powershell
       $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
       New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
       ```
 
-      <span data-ttu-id="10d9b-203">系統會提示您確認，如下所示：</span><span class="sxs-lookup"><span data-stu-id="10d9b-203">You will be prompted to confirm, as follows:</span></span>
+      <span data-ttu-id="784d8-211">系統會提示您確認，如下所示：</span><span class="sxs-lookup"><span data-stu-id="784d8-211">You will be prompted to confirm, as follows:</span></span>
 
-      > <span data-ttu-id="10d9b-204">確認</span><span class="sxs-lookup"><span data-stu-id="10d9b-204">Confirm</span></span>
+      > <span data-ttu-id="784d8-212">確認</span><span class="sxs-lookup"><span data-stu-id="784d8-212">Confirm</span></span>
       >
-      > <span data-ttu-id="10d9b-205">是否確定要執行此動作？</span><span class="sxs-lookup"><span data-stu-id="10d9b-205">Are you sure you want to perform this action?</span></span>
+      > <span data-ttu-id="784d8-213">是否確定要執行此動作？</span><span class="sxs-lookup"><span data-stu-id="784d8-213">Are you sure you want to perform this action?</span></span>
       >
-      > <span data-ttu-id="10d9b-206">將匯入資料存放區 'patientrecords' 的新 EDM 結構描述。</span><span class="sxs-lookup"><span data-stu-id="10d9b-206">New EDM Schema for the data store 'patientrecords' will be imported.</span></span>
+      > <span data-ttu-id="784d8-214">將匯入資料存放區 'patientrecords' 的新 EDM 結構描述。</span><span class="sxs-lookup"><span data-stu-id="784d8-214">New EDM Schema for the data store 'patientrecords' will be imported.</span></span>
       >
-      > <span data-ttu-id="10d9b-207">\[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：</span><span class="sxs-lookup"><span data-stu-id="10d9b-207">\[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):</span></span>
+      > <span data-ttu-id="784d8-215">\[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：</span><span class="sxs-lookup"><span data-stu-id="784d8-215">\[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):</span></span>
 
 > [!TIP]
-> <span data-ttu-id="10d9b-208">若要不確認即變更，請在步驟 5 中改用此 Cmdlet：New-DlpEdmSchema -FileData $edmSchemaXml</span><span class="sxs-lookup"><span data-stu-id="10d9b-208">If you want your changes to occur without confirmation, in Step 5, use this cmdlet instead: New-DlpEdmSchema -FileData $edmSchemaXml</span></span>
+> <span data-ttu-id="784d8-216">若要不確認即變更，請在步驟 5 中改用此 Cmdlet：New-DlpEdmSchema -FileData $edmSchemaXml</span><span class="sxs-lookup"><span data-stu-id="784d8-216">If you want your changes to occur without confirmation, in Step 5, use this cmdlet instead: New-DlpEdmSchema -FileData $edmSchemaXml</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="10d9b-209">這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。</span><span class="sxs-lookup"><span data-stu-id="10d9b-209">It can take between 10-60 minutes to update the EDMSchema with additions.</span></span> <span data-ttu-id="10d9b-210">在您執行使用新增項目的步驟之前，必須先完成更新。</span><span class="sxs-lookup"><span data-stu-id="10d9b-210">The update must complete before you execute steps that use the additions.</span></span>
+> <span data-ttu-id="784d8-217">這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。</span><span class="sxs-lookup"><span data-stu-id="784d8-217">It can take between 10-60 minutes to update the EDMSchema with additions.</span></span> <span data-ttu-id="784d8-218">在您執行使用新增項目的步驟之前，必須先完成更新。</span><span class="sxs-lookup"><span data-stu-id="784d8-218">The update must complete before you execute steps that use the additions.</span></span>
 
-<span data-ttu-id="10d9b-211">既然已定義您敏感性資訊資料庫的結構描述，下一個步驟是設定規則套件。</span><span class="sxs-lookup"><span data-stu-id="10d9b-211">Now that the schema for your database of sensitive information is defined, the next step is to set up a rule package.</span></span> <span data-ttu-id="10d9b-212">繼續前往 [設定規則套件](#set-up-a-rule-package)這一節。</span><span class="sxs-lookup"><span data-stu-id="10d9b-212">Proceed to the section [Set up a rule package](#set-up-a-rule-package).</span></span>
+#### <a name="set-up-a-rule-package"></a><span data-ttu-id="784d8-219">設定規則套件</span><span class="sxs-lookup"><span data-stu-id="784d8-219">Set up a rule package</span></span>
 
-#### <a name="editing-the-schema-for-edm-based-classification"></a><span data-ttu-id="10d9b-213">編輯以 EDM 為基礎的分類的結構描述</span><span class="sxs-lookup"><span data-stu-id="10d9b-213">Editing the schema for EDM-based classification</span></span>
+1. <span data-ttu-id="784d8-220">以 XML 格式建立規則套件 (使用 Unicode 編碼方式)，類似下列範例。</span><span class="sxs-lookup"><span data-stu-id="784d8-220">Create a rule package in XML format (with Unicode encoding), similar to the following example.</span></span> <span data-ttu-id="784d8-221">(您可以複製、修改及使用我們的範例)。</span><span class="sxs-lookup"><span data-stu-id="784d8-221">(You can copy, modify, and use our example.)</span></span>
 
-<span data-ttu-id="10d9b-214">如果您想要變更 **edm.xml** 檔案，例如變更哪些欄位用於以 EDM 為基礎的分類，請遵循下列步驟進行：</span><span class="sxs-lookup"><span data-stu-id="10d9b-214">If you want to make changes to your **edm.xml** file, such as changing which fields are used for EDM-based classification, follow these steps:</span></span>
+      <span data-ttu-id="784d8-222">當您設定規則套件時，請務必正確參照您的 .csv 檔案和 **edm.xml** 檔案。</span><span class="sxs-lookup"><span data-stu-id="784d8-222">When you set up your rule package, make sure to correctly reference your .csv file and **edm.xml** file.</span></span> <span data-ttu-id="784d8-223">您可以複製、修改及使用我們的範例。</span><span class="sxs-lookup"><span data-stu-id="784d8-223">You can copy, modify, and use our example.</span></span> <span data-ttu-id="784d8-224">在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：</span><span class="sxs-lookup"><span data-stu-id="784d8-224">In this sample xml the following fields needs to be customized to create your EDM sensitive type:</span></span>
 
-1. <span data-ttu-id="10d9b-215">編輯您的 **edm.xml** 檔案 (這是本文 [定義結構描述](#define-the-schema-for-your-database-of-sensitive-information) 一節所討論的檔案)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-215">Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).</span></span>
+      - <span data-ttu-id="784d8-225">**RulePack id 與 ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 產生 GUID。</span><span class="sxs-lookup"><span data-stu-id="784d8-225">**RulePack id & ExactMatch id**: Use [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) to generate a GUID.</span></span>
 
-2. <span data-ttu-id="10d9b-216">使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="10d9b-216">Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span></span>
+      - <span data-ttu-id="784d8-226">**資料存放區**：此欄位會指定要使用的 EDM 查閱資料存放區。</span><span class="sxs-lookup"><span data-stu-id="784d8-226">**Datastore**: This field specifies EDM lookup data store to be used.</span></span> <span data-ttu-id="784d8-227">您要提供已設定之 EDM 結構描述的資料來源名稱。</span><span class="sxs-lookup"><span data-stu-id="784d8-227">You provide a data source name of a configured EDM Schema.</span></span>
 
-3. <span data-ttu-id="10d9b-217">若要更新資料庫結構描述，請執行下列 Cmdlet，一次一個：</span><span class="sxs-lookup"><span data-stu-id="10d9b-217">To update your database schema, run the following cmdlets, one at a time:</span></span>
+      - <span data-ttu-id="784d8-228">**idMatch**：此欄位會指向 EDM 的主要元素。</span><span class="sxs-lookup"><span data-stu-id="784d8-228">**idMatch**: This field points to the primary element for EDM.</span></span>
+        - <span data-ttu-id="784d8-229">相符項目：指定要在完全查閱中使用的欄位。</span><span class="sxs-lookup"><span data-stu-id="784d8-229">Matches: Specifies the field to be used in exact lookup.</span></span> <span data-ttu-id="784d8-230">您要在資料存放區的 EDM 結構描述中，提供可搜尋的欄位名稱。</span><span class="sxs-lookup"><span data-stu-id="784d8-230">You provide a searchable field name in EDM Schema for the DataStore.</span></span>
+        - <span data-ttu-id="784d8-231">分類：此欄位會指定可觸發 EDM 查閱的敏感性類型符合項目。</span><span class="sxs-lookup"><span data-stu-id="784d8-231">Classification: This field specifies the sensitive type match that triggers EDM lookup.</span></span> <span data-ttu-id="784d8-232">您可以提供現有內建或自訂分類的名稱或 GUID。</span><span class="sxs-lookup"><span data-stu-id="784d8-232">You can provide Name or GUID of an existing built-in or custom classification.</span></span>
 
-      ```powershell
-      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-      ```
-
-      <span data-ttu-id="10d9b-218">系統會提示您確認，如下所示：</span><span class="sxs-lookup"><span data-stu-id="10d9b-218">You will be prompted to confirm, as follows:</span></span>
-
-      > <span data-ttu-id="10d9b-219">確認</span><span class="sxs-lookup"><span data-stu-id="10d9b-219">Confirm</span></span>
-      >
-      > <span data-ttu-id="10d9b-220">是否確定要執行此動作？</span><span class="sxs-lookup"><span data-stu-id="10d9b-220">Are you sure you want to perform this action?</span></span>
-      >
-      > <span data-ttu-id="10d9b-221">將更新資料存放區 'patientrecords' 的 EDM 結構描述。</span><span class="sxs-lookup"><span data-stu-id="10d9b-221">EDM Schema for the data store 'patientrecords' will be updated.</span></span>
-      >
-      > <span data-ttu-id="10d9b-222">\[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：</span><span class="sxs-lookup"><span data-stu-id="10d9b-222">\[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):</span></span>
-
-      > [!TIP]
-      > <span data-ttu-id="10d9b-223">若要不確認即變更，請在步驟 3 中改用此 Cmdlet：Set-DlpEdmSchema -FileData $edmSchemaXml</span><span class="sxs-lookup"><span data-stu-id="10d9b-223">If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: Set-DlpEdmSchema -FileData $edmSchemaXml</span></span>
-
-      > [!NOTE]
-      > <span data-ttu-id="10d9b-224">這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。</span><span class="sxs-lookup"><span data-stu-id="10d9b-224">It can take between 10-60 minutes to update the EDMSchema with additions.</span></span> <span data-ttu-id="10d9b-225">在您執行使用新增項目的步驟之前，必須先完成更新。</span><span class="sxs-lookup"><span data-stu-id="10d9b-225">The update must complete before you execute steps that use the additions.</span></span>
-
-## <a name="removing-the-schema-for-edm-based-classification"></a><span data-ttu-id="10d9b-226">移除以 EDM 為基礎的分類的結構描述</span><span class="sxs-lookup"><span data-stu-id="10d9b-226">Removing the schema for EDM-based classification</span></span>
-
-<span data-ttu-id="10d9b-227">(如有需要) 如果您想要移除 EDM 型分類使用的結構描述，請遵循下列步驟：</span><span class="sxs-lookup"><span data-stu-id="10d9b-227">(As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:</span></span>
-
-1. <span data-ttu-id="10d9b-228">使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="10d9b-228">Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span></span>
-
-2. <span data-ttu-id="10d9b-229">執行下列 PowerShell Cmdlet，將 "patientrecords" 的資料存放區名稱取代為您要移除的資料存放區名稱：</span><span class="sxs-lookup"><span data-stu-id="10d9b-229">Run the following PowerShell cmdlets, substituting the data store name of "patientrecords" with the one you want to remove:</span></span>
-
-      ```powershell
-      Remove-DlpEdmSchema -Identity patientrecords
-      ```
-
-      <span data-ttu-id="10d9b-230">系統會提示您確認，如下所示：</span><span class="sxs-lookup"><span data-stu-id="10d9b-230">You will be prompted to confirm, as follows:</span></span>
-
-      > <span data-ttu-id="10d9b-231">確認</span><span class="sxs-lookup"><span data-stu-id="10d9b-231">Confirm</span></span>
-      >
-      > <span data-ttu-id="10d9b-232">是否確定要執行此動作？</span><span class="sxs-lookup"><span data-stu-id="10d9b-232">Are you sure you want to perform this action?</span></span>
-      >
-      > <span data-ttu-id="10d9b-233">將移除資料存放區 'patientrecords' 的 EDM 結構描述。</span><span class="sxs-lookup"><span data-stu-id="10d9b-233">EDM Schema for the data store 'patientrecords' will be removed.</span></span>
-      >
-      > <span data-ttu-id="10d9b-234">\[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：</span><span class="sxs-lookup"><span data-stu-id="10d9b-234">\[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):</span></span>
-
-      > [!TIP]
-      >  <span data-ttu-id="10d9b-235">若要不確認即變更，請在步驟 2 中改用此 Cmdlet：Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false</span><span class="sxs-lookup"><span data-stu-id="10d9b-235">If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false</span></span>
-
-### <a name="set-up-a-rule-package"></a><span data-ttu-id="10d9b-236">設定規則套件</span><span class="sxs-lookup"><span data-stu-id="10d9b-236">Set up a rule package</span></span>
-
-1. <span data-ttu-id="10d9b-237">以 XML 格式建立規則套件 (使用 Unicode 編碼方式)，類似下列範例。</span><span class="sxs-lookup"><span data-stu-id="10d9b-237">Create a rule package in XML format (with Unicode encoding), similar to the following example.</span></span> <span data-ttu-id="10d9b-238">(您可以複製、修改及使用我們的範例)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-238">(You can copy, modify, and use our example.)</span></span>
-
-      <span data-ttu-id="10d9b-239">當您設定規則套件時，請務必正確參照您的 .csv 檔案和 **edm.xml** 檔案。</span><span class="sxs-lookup"><span data-stu-id="10d9b-239">When you set up your rule package, make sure to correctly reference your .csv file and **edm.xml** file.</span></span> <span data-ttu-id="10d9b-240">您可以複製、修改及使用我們的範例。</span><span class="sxs-lookup"><span data-stu-id="10d9b-240">You can copy, modify, and use our example.</span></span> <span data-ttu-id="10d9b-241">在此範例 xml 中，必須自訂下列欄位，才能建立您的 EDM 敏感性類型：</span><span class="sxs-lookup"><span data-stu-id="10d9b-241">In this sample xml the following fields needs to be customized to create your EDM sensitive type:</span></span>
-
-      - <span data-ttu-id="10d9b-242">**RulePack id 與 ExactMatch id**：使用 [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) 產生 GUID。</span><span class="sxs-lookup"><span data-stu-id="10d9b-242">**RulePack id & ExactMatch id**: Use [New-GUID](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) to generate a GUID.</span></span>
-
-      - <span data-ttu-id="10d9b-243">**資料存放區**：此欄位會指定要使用的 EDM 查閱資料存放區。</span><span class="sxs-lookup"><span data-stu-id="10d9b-243">**Datastore**: This field specifies EDM lookup data store to be used.</span></span> <span data-ttu-id="10d9b-244">您要提供已設定之 EDM 結構描述的資料來源名稱。</span><span class="sxs-lookup"><span data-stu-id="10d9b-244">You provide a data source name of a configured EDM Schema.</span></span>
-
-      - <span data-ttu-id="10d9b-245">**idMatch**：此欄位會指向 EDM 的主要元素。</span><span class="sxs-lookup"><span data-stu-id="10d9b-245">**idMatch**: This field points to the primary element for EDM.</span></span>
-        - <span data-ttu-id="10d9b-246">相符項目：指定要在完全查閱中使用的欄位。</span><span class="sxs-lookup"><span data-stu-id="10d9b-246">Matches: Specifies the field to be used in exact lookup.</span></span> <span data-ttu-id="10d9b-247">您要在資料存放區的 EDM 結構描述中，提供可搜尋的欄位名稱。</span><span class="sxs-lookup"><span data-stu-id="10d9b-247">You provide a searchable field name in EDM Schema for the DataStore.</span></span>
-        - <span data-ttu-id="10d9b-248">分類：此欄位會指定可觸發 EDM 查閱的敏感性類型符合項目。</span><span class="sxs-lookup"><span data-stu-id="10d9b-248">Classification: This field specifies the sensitive type match that triggers EDM lookup.</span></span> <span data-ttu-id="10d9b-249">您可以提供現有內建或自訂分類的名稱或 GUID。</span><span class="sxs-lookup"><span data-stu-id="10d9b-249">You can provide Name or GUID of an existing built-in or custom classification.</span></span>
-
-      - <span data-ttu-id="10d9b-250">**相符項目：** 此欄位會指向 idMatch 鄰近位置的其他辨識項。</span><span class="sxs-lookup"><span data-stu-id="10d9b-250">**Match:** This field points to additional evidence found in proximity of idMatch.</span></span>
-        - <span data-ttu-id="10d9b-251">相符項目：您要在資料存放區的 EDM 結構描述中，提供任何欄位名稱。</span><span class="sxs-lookup"><span data-stu-id="10d9b-251">Matches: You provide any field name in EDM Schema for DataStore.</span></span>
-      - <span data-ttu-id="10d9b-252">**資源：** 此區段會在多個地區設定中，指定敏感性類型的名稱和描述。</span><span class="sxs-lookup"><span data-stu-id="10d9b-252">**Resource:** This section specifies the name and description for sensitive type in multiple locales.</span></span>
-        - <span data-ttu-id="10d9b-253">idRef：您要提供 ExactMatch ID 的 GUID。</span><span class="sxs-lookup"><span data-stu-id="10d9b-253">idRef: You provide GUID for ExactMatch ID.</span></span>
-        - <span data-ttu-id="10d9b-254">名稱與描述：視需要自訂。</span><span class="sxs-lookup"><span data-stu-id="10d9b-254">Name & descriptions: customize as required.</span></span>
+      - <span data-ttu-id="784d8-233">**相符項目：** 此欄位會指向 idMatch 鄰近位置的其他辨識項。</span><span class="sxs-lookup"><span data-stu-id="784d8-233">**Match:** This field points to additional evidence found in proximity of idMatch.</span></span>
+        - <span data-ttu-id="784d8-234">相符項目：您要在資料存放區的 EDM 結構描述中，提供任何欄位名稱。</span><span class="sxs-lookup"><span data-stu-id="784d8-234">Matches: You provide any field name in EDM Schema for DataStore.</span></span>
+      - <span data-ttu-id="784d8-235">**資源：** 此區段會在多個地區設定中，指定敏感性類型的名稱和描述。</span><span class="sxs-lookup"><span data-stu-id="784d8-235">**Resource:** This section specifies the name and description for sensitive type in multiple locales.</span></span>
+        - <span data-ttu-id="784d8-236">idRef：您要提供 ExactMatch ID 的 GUID。</span><span class="sxs-lookup"><span data-stu-id="784d8-236">idRef: You provide GUID for ExactMatch ID.</span></span>
+        - <span data-ttu-id="784d8-237">名稱與描述：視需要自訂。</span><span class="sxs-lookup"><span data-stu-id="784d8-237">Name & descriptions: customize as required.</span></span>
 
       ```xml
       <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -270,16 +226,16 @@ ms.locfileid: "46686557"
       </RulePackage>
       ```
 
-1. <span data-ttu-id="10d9b-255">執行下列 PowerShell Cmdlet 以上傳規則套件，一次一個：</span><span class="sxs-lookup"><span data-stu-id="10d9b-255">Upload the rule package by running the following PowerShell cmdlets, one at a time:</span></span>
+1. <span data-ttu-id="784d8-238">執行下列 PowerShell Cmdlet 以上傳規則套件，一次一個：</span><span class="sxs-lookup"><span data-stu-id="784d8-238">Upload the rule package by running the following PowerShell cmdlets, one at a time:</span></span>
 
       ```powershell
       $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
       New-DlpSensitiveInformationTypeRulePackage -FileData $rulepack
       ```
 
-<span data-ttu-id="10d9b-256">此時，您已設定以 EDM 為基礎的分類。</span><span class="sxs-lookup"><span data-stu-id="10d9b-256">At this point, you have set up EDM-based classification.</span></span> <span data-ttu-id="10d9b-257">下一個步驟是要對敏感性資料雜湊，然後上傳用於編製索引的雜湊。</span><span class="sxs-lookup"><span data-stu-id="10d9b-257">The next step is to hash the sensitive data, and then upload the hashes for indexing.</span></span>
+<span data-ttu-id="784d8-239">此時，您已設定以 EDM 為基礎的分類。</span><span class="sxs-lookup"><span data-stu-id="784d8-239">At this point, you have set up EDM-based classification.</span></span> <span data-ttu-id="784d8-240">下一個步驟是要對敏感性資料雜湊，然後上傳用於編製索引的雜湊。</span><span class="sxs-lookup"><span data-stu-id="784d8-240">The next step is to hash the sensitive data, and then upload the hashes for indexing.</span></span>
 
-<span data-ttu-id="10d9b-258">回想一下前面的程序，我們的 PatientRecords 結構描述將五個欄位定義為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 和  *DOB*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-258">Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*.</span></span> <span data-ttu-id="10d9b-259">我們的範例規則套件包含這些欄位，並會參照資料庫結構描述檔案 (**edm.xml**)，一個  *ExactMatch*  項目會有一個可搜尋欄位。</span><span class="sxs-lookup"><span data-stu-id="10d9b-259">Our example rule package includes those fields and references the database schema file (**edm.xml**), with one *ExactMatch* items per searchable field.</span></span> <span data-ttu-id="10d9b-260">請考慮下列 ExactMatch 項目：</span><span class="sxs-lookup"><span data-stu-id="10d9b-260">Consider the following ExactMatch item:</span></span>
+<span data-ttu-id="784d8-241">回想一下前面的程序，我們的 PatientRecords 結構描述將五個欄位定義為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 和  *DOB*。</span><span class="sxs-lookup"><span data-stu-id="784d8-241">Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*.</span></span> <span data-ttu-id="784d8-242">我們的範例規則套件包含這些欄位，並參照資料庫架構檔（**edm .xml**），其中一個 *ExactMatch* 每個可搜尋欄位的專案。</span><span class="sxs-lookup"><span data-stu-id="784d8-242">Our example rule package includes those fields and references the database schema file (**edm.xml**), with one *ExactMatch* item per searchable field.</span></span> <span data-ttu-id="784d8-243">請考慮下列 ExactMatch 項目：</span><span class="sxs-lookup"><span data-stu-id="784d8-243">Consider the following ExactMatch item:</span></span>
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -300,124 +256,272 @@ ms.locfileid: "46686557"
     </ExactMatch>
 ```
 
-<span data-ttu-id="10d9b-261">請注意本範例中的下列重點：</span><span class="sxs-lookup"><span data-stu-id="10d9b-261">In this example, note the following:</span></span>
+<span data-ttu-id="784d8-244">請注意本範例中的下列重點：</span><span class="sxs-lookup"><span data-stu-id="784d8-244">In this example, note that:</span></span>
 
-- <span data-ttu-id="10d9b-262">資料存放區名稱會參照稍早建立的 .csv 檔案： **dataStore = "PatientRecords"**。</span><span class="sxs-lookup"><span data-stu-id="10d9b-262">The dataStore name references the .csv file we created earlier: **dataStore = "PatientRecords"**.</span></span>
+- <span data-ttu-id="784d8-245">資料存放區名稱會參照稍早建立的 .csv 檔案： **dataStore = "PatientRecords"**。</span><span class="sxs-lookup"><span data-stu-id="784d8-245">The dataStore name references the .csv file we created earlier: **dataStore = "PatientRecords"**.</span></span>
 
-- <span data-ttu-id="10d9b-263">idMatch 值會參照可搜尋的欄位，其列於資料庫結構描述檔案： **idMatch matches = "SSN"**。</span><span class="sxs-lookup"><span data-stu-id="10d9b-263">The idMatch value references a searchable field that is listed in the database schema file: **idMatch matches = "SSN"**.</span></span>
+- <span data-ttu-id="784d8-246">idMatch 值會參照可搜尋的欄位，其列於資料庫結構描述檔案： **idMatch matches = "SSN"**。</span><span class="sxs-lookup"><span data-stu-id="784d8-246">The idMatch value references a searchable field that is listed in the database schema file: **idMatch matches = "SSN"**.</span></span>
 
-- <span data-ttu-id="10d9b-264">分類值會參照現有或自訂敏感性資訊類型： **classification = "U.S. Social Security Number (SSN)"** </span><span class="sxs-lookup"><span data-stu-id="10d9b-264">The classification value references an existing or custom sensitive information type: **classification = "U.S. Social Security Number (SSN)"**.</span></span> <span data-ttu-id="10d9b-265">(在此案例中，我們使用美國社會安全號碼作為現有的敏感性資訊類型)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-265">(In this case, we use the existing sensitive information type of U.S. Social Security Number.)</span></span>
+- <span data-ttu-id="784d8-247">分類值會參照現有或自訂敏感性資訊類型： **classification = "U.S. Social Security Number (SSN)"** </span><span class="sxs-lookup"><span data-stu-id="784d8-247">The classification value references an existing or custom sensitive information type: **classification = "U.S. Social Security Number (SSN)"**.</span></span> <span data-ttu-id="784d8-248">(在此案例中，我們使用美國社會安全號碼作為現有的敏感性資訊類型)。</span><span class="sxs-lookup"><span data-stu-id="784d8-248">(In this case, we use the existing sensitive information type of U.S. Social Security Number.)</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="10d9b-266">這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。</span><span class="sxs-lookup"><span data-stu-id="10d9b-266">It can take between 10-60 minutes to update the EDMSchema with additions.</span></span> <span data-ttu-id="10d9b-267">在您執行使用新增項目的步驟之前，必須先完成更新。</span><span class="sxs-lookup"><span data-stu-id="10d9b-267">The update must complete before you execute steps that use the additions.</span></span>
+> <span data-ttu-id="784d8-249">這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。</span><span class="sxs-lookup"><span data-stu-id="784d8-249">It can take between 10-60 minutes to update the EDMSchema with additions.</span></span> <span data-ttu-id="784d8-250">在您執行使用新增項目的步驟之前，必須先完成更新。</span><span class="sxs-lookup"><span data-stu-id="784d8-250">The update must complete before you execute steps that use the additions.</span></span>
 
-### <a name="part-2-hash-and-upload-the-sensitive-data"></a><span data-ttu-id="10d9b-268">第 2 部分：雜湊及上傳敏感性資料</span><span class="sxs-lookup"><span data-stu-id="10d9b-268">Part 2: Hash and upload the sensitive data</span></span>
+#### <a name="editing-the-schema-for-edm-based-classification"></a><span data-ttu-id="784d8-251">編輯以 EDM 為基礎的分類的結構描述</span><span class="sxs-lookup"><span data-stu-id="784d8-251">Editing the schema for EDM-based classification</span></span>
 
-<span data-ttu-id="10d9b-269">在此階段，您會設定自訂安全性群組和使用者帳戶，並設定 EDM 上傳代理程式工具。</span><span class="sxs-lookup"><span data-stu-id="10d9b-269">During this phase, you set up a custom security group and user account, and set up the EDM Upload Agent tool.</span></span> <span data-ttu-id="10d9b-270">然後，您會使用工具來為敏感性資料雜湊，並上傳已雜湊的資料，以便編製索引。</span><span class="sxs-lookup"><span data-stu-id="10d9b-270">Then, you use the tool to hash the sensitive data, and upload the hashed data so it can be indexed.</span></span>
+<span data-ttu-id="784d8-252">如果您想要變更 **edm.xml** 檔案，例如變更哪些欄位用於以 EDM 為基礎的分類，請遵循下列步驟進行：</span><span class="sxs-lookup"><span data-stu-id="784d8-252">If you want to make changes to your **edm.xml** file, such as changing which fields are used for EDM-based classification, follow these steps:</span></span>
 
-#### <a name="set-up-the-security-group-and-user-account"></a><span data-ttu-id="10d9b-271">設定安全性群組和使用者帳戶</span><span class="sxs-lookup"><span data-stu-id="10d9b-271">Set up the security group and user account</span></span>
+1. <span data-ttu-id="784d8-253">編輯您的 **edm.xml** 檔案 (這是本文 [定義結構描述](#define-the-schema-for-your-database-of-sensitive-information) 一節所討論的檔案)。</span><span class="sxs-lookup"><span data-stu-id="784d8-253">Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).</span></span>
 
-1. <span data-ttu-id="10d9b-272">以全域系統管理員身分，使用[適用於您訂閱的連結](#portal-links-for-your-subscription)前往系統管理中心，並 [建立名為  **EDM\_DataUploaders** 的安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) 。</span><span class="sxs-lookup"><span data-stu-id="10d9b-272">As a global administrator, go to the admin center using the appropriate [link for your subscription](#portal-links-for-your-subscription) and [create a security group](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called **EDM\_DataUploaders**.</span></span>
+2. <span data-ttu-id="784d8-254">使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="784d8-254">Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span></span>
 
-2. <span data-ttu-id="10d9b-273">將一或多個使用者新增至 **EDM\_DataUploaders** 安全性群組 </span><span class="sxs-lookup"><span data-stu-id="10d9b-273">Add one or more users to the **EDM\_DataUploaders** security group.</span></span> <span data-ttu-id="10d9b-274">(這些使用者將管理敏感性資訊的資料庫)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-274">(These users will manage the database of sensitive information.)</span></span>
+3. <span data-ttu-id="784d8-255">若要更新資料庫結構描述，請執行下列 Cmdlet，一次一個：</span><span class="sxs-lookup"><span data-stu-id="784d8-255">To update your database schema, run the following cmdlets, one at a time:</span></span>
 
-3. <span data-ttu-id="10d9b-275">請確定管理敏感性資料的每個使用者，為用於 EDM 上傳代理程式之電腦上的本機系統管理員。</span><span class="sxs-lookup"><span data-stu-id="10d9b-275">Make sure each user who is managing the sensitive data is a local admin on the machine used for the EDM Upload Agent.</span></span>
+      ```powershell
+      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      ```
 
-#### <a name="set-up-the-edm-upload-agent"></a><span data-ttu-id="10d9b-276">設定 EDM 上傳代理程式</span><span class="sxs-lookup"><span data-stu-id="10d9b-276">Set up the EDM Upload Agent</span></span>
+      <span data-ttu-id="784d8-256">系統會提示您確認，如下所示：</span><span class="sxs-lookup"><span data-stu-id="784d8-256">You will be prompted to confirm, as follows:</span></span>
+
+      > <span data-ttu-id="784d8-257">確認</span><span class="sxs-lookup"><span data-stu-id="784d8-257">Confirm</span></span>
+      >
+      > <span data-ttu-id="784d8-258">是否確定要執行此動作？</span><span class="sxs-lookup"><span data-stu-id="784d8-258">Are you sure you want to perform this action?</span></span>
+      >
+      > <span data-ttu-id="784d8-259">將更新資料存放區 'patientrecords' 的 EDM 結構描述。</span><span class="sxs-lookup"><span data-stu-id="784d8-259">EDM Schema for the data store 'patientrecords' will be updated.</span></span>
+      >
+      > <span data-ttu-id="784d8-260">\[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：</span><span class="sxs-lookup"><span data-stu-id="784d8-260">\[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):</span></span>
+
+      > [!TIP]
+      > <span data-ttu-id="784d8-261">若要不確認即變更，請在步驟 3 中改用此 Cmdlet：Set-DlpEdmSchema -FileData $edmSchemaXml</span><span class="sxs-lookup"><span data-stu-id="784d8-261">If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: Set-DlpEdmSchema -FileData $edmSchemaXml</span></span>
+
+      > [!NOTE]
+      > <span data-ttu-id="784d8-262">這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。</span><span class="sxs-lookup"><span data-stu-id="784d8-262">It can take between 10-60 minutes to update the EDMSchema with additions.</span></span> <span data-ttu-id="784d8-263">在您執行使用新增項目的步驟之前，必須先完成更新。</span><span class="sxs-lookup"><span data-stu-id="784d8-263">The update must complete before you execute steps that use the additions.</span></span>
+
+#### <a name="removing-the-schema-for-edm-based-classification"></a><span data-ttu-id="784d8-264">移除以 EDM 為基礎的分類的結構描述</span><span class="sxs-lookup"><span data-stu-id="784d8-264">Removing the schema for EDM-based classification</span></span>
+
+<span data-ttu-id="784d8-265">(如有需要) 如果您想要移除 EDM 型分類使用的結構描述，請遵循下列步驟：</span><span class="sxs-lookup"><span data-stu-id="784d8-265">(As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:</span></span>
+
+1. <span data-ttu-id="784d8-266">使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="784d8-266">Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).</span></span>
+
+2. <span data-ttu-id="784d8-267">執行下列 PowerShell Cmdlet，將 "patientrecords" 的資料存放區名稱取代為您要移除的資料存放區名稱：</span><span class="sxs-lookup"><span data-stu-id="784d8-267">Run the following PowerShell cmdlets, substituting the data store name of "patient records" with the one you want to remove:</span></span>
+
+      ```powershell
+      Remove-DlpEdmSchema -Identity patientrecords
+      ```
+
+      <span data-ttu-id="784d8-268">系統會提示您確認：</span><span class="sxs-lookup"><span data-stu-id="784d8-268">You will be prompted to confirm:</span></span>
+
+      > <span data-ttu-id="784d8-269">確認</span><span class="sxs-lookup"><span data-stu-id="784d8-269">Confirm</span></span>
+      >
+      > <span data-ttu-id="784d8-270">是否確定要執行此動作？</span><span class="sxs-lookup"><span data-stu-id="784d8-270">Are you sure you want to perform this action?</span></span>
+      >
+      > <span data-ttu-id="784d8-271">將移除資料存放區 'patientrecords' 的 EDM 結構描述。</span><span class="sxs-lookup"><span data-stu-id="784d8-271">EDM Schema for the data store 'patientrecords' will be removed.</span></span>
+      >
+      > <span data-ttu-id="784d8-272">\[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：</span><span class="sxs-lookup"><span data-stu-id="784d8-272">\[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):</span></span>
+
+      > [!TIP]
+      >  <span data-ttu-id="784d8-273">若要不確認即變更，請在步驟 2 中改用此 Cmdlet：Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false</span><span class="sxs-lookup"><span data-stu-id="784d8-273">If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false</span></span>
+
+
+<!-- salt notes
+need two salting procedures, one for onestep from the externally facing and another for two step, on an internal machine then the upload from the external machine
+
+- create A  folder put the edmupload agent and, csv and salt file there, run all processes there
+- 
+- stuff you need to have first: DataStoreName, /DataFile name (csv file)  /Hashlocation
+
+- salt can be randomly generated by Microsoft or can be provided by the customer. If provided by the customer it must follow  format of 64 character, and can contain only letters or 0-9 characters.  Use a website to generate a valid salt value.
+ 
+- can run EDMuploadagent.exe from PS or Windows cmd window . tested on Windows Server 2016 or Windows 10 and dot net version 4.6.2
+
+when defiuning the schema file the searchable fields must be either an out of box SIT or custom SIT, only 5 fields )column headings) can be searchable
+
+1. From outbound access device from the cmd prompt run EdmUploadAgent.exe /Authorize -  
+2. data store schema must have already been uploaded
+3.  create hash first then do upload
+4. EdmUploadAgent.exe /CreateHash /DataFile (where the data file is ) E:\emd\test\data\schema32_1000000,csv /HashLocation  (where to store it) E:\edm\tat\hash this makes the salt file and the hash file as output
+5. next is upload EdmUploadAgent.exe /UploadHash /DataStoreName (found in the Schema file DataSore name="FOO" /HashFile (path to hash file locaztion and file name /HashLocation path to hash)  for example
+1.EdmUploadAgent/exe /UploadHash /DataStoreName schema321 /HashFile E:\edm\test\hash\schema32_10000000.EdmHash /HashLocation E:\edm\test\hash  -this one  uses MSFT generated salt, so no need to provide
+
+Salt is an optional parameter so if yo uwant to use a custom salt add /salt and the salt value if salt file not copied to the outbound machine 
+
+OR copy both files hash and salt to the same directory and the commmand will get both
+
+
+OR do it in single step hash, salt ulopad
+
+!! once they download the updated upload agent they will always have SALT, there is no going back.
+
+
+all in one step: EdmUploadAgent.exe /UploadData /DataStoreName schema321 /DataFile E:\edm\test\data\schema32_10000.csv /HashLocation E:\edm\test\hash
+
+tshooting/check status cmd
+
+
+
+Once it gets to completed the admin can start using it in the custom SIT
+
+they have to get their own custom SALT
+
+just copy SALT over in a secure fashion
+
+
+
+
+
+
+
+
+
+
+1.
+6.
+7.
+1.  
+
+
+ -->
+
+### <a name="part-2-hash-and-upload-the-sensitive-data"></a><span data-ttu-id="784d8-274">第 2 部分：雜湊及上傳敏感性資料</span><span class="sxs-lookup"><span data-stu-id="784d8-274">Part 2: Hash and upload the sensitive data</span></span>
+
+<span data-ttu-id="784d8-275">在此階段中，您要設定自訂安全性群組和使用者帳戶，並設定 EDM Upload Agent tool 上傳代理工具。</span><span class="sxs-lookup"><span data-stu-id="784d8-275">In this phase, you set up a custom security group and user account, and set up the EDM Upload Agent tool.</span></span> <span data-ttu-id="784d8-276">然後，您可以對敏感數據使用該工具在雜湊中加入字串，然後將其上傳。</span><span class="sxs-lookup"><span data-stu-id="784d8-276">Then, you use the tool to hash with salt value the sensitive data, and upload it.</span></span>
+
+<span data-ttu-id="784d8-277">雜湊和上傳可以使用一部電腦來完成，或者您也可以將雜湊步驟與上傳步驟分開，以提高安全性。</span><span class="sxs-lookup"><span data-stu-id="784d8-277">The hashing and uploading can be done using one computer or you can separate the hashing step from the upload step for greater security.</span></span>
+
+<span data-ttu-id="784d8-278">如果您想要從一部電腦進行雜湊和上傳，您必須從一部可直接連線至 Microsoft 365 租用者的電腦執行。</span><span class="sxs-lookup"><span data-stu-id="784d8-278">If you want to hash and upload from one computer, you need to do it from a computer that can directly connect to your Microsoft 365 tenant.</span></span> <span data-ttu-id="784d8-279">這要求您明文的敏感性資料在該電腦上進行雜湊。</span><span class="sxs-lookup"><span data-stu-id="784d8-279">This requires that your clear text sensitive data files are on that computer for hashing.</span></span>
+
+<span data-ttu-id="784d8-280">如果您不想公開明文機密的資料檔，可以在安全位置的電腦上雜湊，然後將雜湊檔和鹽檔複製到可直接連線到 Microsoft 365 租用者的電腦。</span><span class="sxs-lookup"><span data-stu-id="784d8-280">If you do not want to expose your clear text sensitive data file, you can hash it on a computer in a secure location and then copy the hash file and the salt file to a computer that can directly connect to your Microsoft 365 tenant for upload.</span></span> <span data-ttu-id="784d8-281">在這個案例中，您將需要在兩部電腦上都有 EDMUploadAgent。</span><span class="sxs-lookup"><span data-stu-id="784d8-281">In this scenario, you will need the EDMUploadAgent on both computers.</span></span> 
+
+#### <a name="prerequisites"></a><span data-ttu-id="784d8-282">必要條件</span><span class="sxs-lookup"><span data-stu-id="784d8-282">Prerequisites</span></span>
+
+- <span data-ttu-id="784d8-283">Microsoft 365的工作或學校帳戶, 該帳戶將新增至 **EDM\_DataUploaders** 的安全性群組</span><span class="sxs-lookup"><span data-stu-id="784d8-283">a work or school account for Microsoft 365  that will be added to the **EDM\_DataUploaders** security group</span></span>
+- <span data-ttu-id="784d8-284">Windows 10 或 Windows Server 2016 電腦，其中包含執行 EDMUploadAgent 的 .NET 版本4.6.2</span><span class="sxs-lookup"><span data-stu-id="784d8-284">a Windows 10 or Windows Server 2016 machine with .NET version 4.6.2 for running the EDMUploadAgent</span></span>
+- <span data-ttu-id="784d8-285">在你所上傳電腦上的目錄有：</span><span class="sxs-lookup"><span data-stu-id="784d8-285">a directory on your upload machine for the:</span></span>
+    -  <span data-ttu-id="784d8-286">EDMUploadAgent</span><span class="sxs-lookup"><span data-stu-id="784d8-286">EDMUploadAgent</span></span>
+    - <span data-ttu-id="784d8-287">在我們的範例中，您在 csv 格式 **PatientRecords** 的機密項目檔案</span><span class="sxs-lookup"><span data-stu-id="784d8-287">your sensitive item file in csv format **PatientRecords.csv** in our examples</span></span>
+    -  <span data-ttu-id="784d8-288">以及輸出雜湊和鹽數值檔案</span><span class="sxs-lookup"><span data-stu-id="784d8-288">and the output hash and salt files</span></span>
+    - <span data-ttu-id="784d8-289">從 **edm.xml** 檔案的資料存儲名稱，在這個範例中的如其 `PatientRecords`</span><span class="sxs-lookup"><span data-stu-id="784d8-289">the datastore name from the **edm.xml** file, for this example its `PatientRecords`</span></span>
+
+#### <a name="set-up-the-security-group-and-user-account"></a><span data-ttu-id="784d8-290">設定安全性群組和使用者帳戶</span><span class="sxs-lookup"><span data-stu-id="784d8-290">Set up the security group and user account</span></span>
+
+1. <span data-ttu-id="784d8-291">以全域系統管理員身分，使用[適用於您訂閱的連結](#portal-links-for-your-subscription)前往系統管理中心，並 [建立名為  **EDM\_DataUploaders** 的安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) 。</span><span class="sxs-lookup"><span data-stu-id="784d8-291">As a global administrator, go to the admin center using the appropriate [link for your subscription](#portal-links-for-your-subscription) and [create a security group](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called **EDM\_DataUploaders**.</span></span>
+
+2. <span data-ttu-id="784d8-292">將一或多個使用者新增至 **EDM\_DataUploaders** 安全性群組 </span><span class="sxs-lookup"><span data-stu-id="784d8-292">Add one or more users to the **EDM\_DataUploaders** security group.</span></span> <span data-ttu-id="784d8-293">(這些使用者將管理敏感性資訊的資料庫)。</span><span class="sxs-lookup"><span data-stu-id="784d8-293">(These users will manage the database of sensitive information.)</span></span>
+
+#### <a name="hash-and-upload-from-one-computer"></a><span data-ttu-id="784d8-294">雜湊並從一部電腦上傳</span><span class="sxs-lookup"><span data-stu-id="784d8-294">Hash and upload from one computer</span></span>
+
+<span data-ttu-id="784d8-295">此電腦必須能夠直接存取您的 Microsoft 365 租用者。</span><span class="sxs-lookup"><span data-stu-id="784d8-295">This computer must have direct access to your Microsoft 365 tenant.</span></span>
 
 >[!NOTE]
-> <span data-ttu-id="10d9b-277">在開始此程序之前，請確定您是  **EDM\_DataUploaders**  安全性群組的成員，以及您電腦上的本機系統管理員。</span><span class="sxs-lookup"><span data-stu-id="10d9b-277">Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group and a local admin on your machine.</span></span>
+> <span data-ttu-id="784d8-296">開始此程式之前，請確認您是 **EDM 的成員\_DataUploaders** 安全性群組。</span><span class="sxs-lookup"><span data-stu-id="784d8-296">Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group.</span></span>
 
-#### <a name="links-to-edm-upload-agent-by-subscription-type"></a><span data-ttu-id="10d9b-278">依訂閱類型的 EDM 上傳代理程式連結</span><span class="sxs-lookup"><span data-stu-id="10d9b-278">Links to EDM upload agent by subscription type</span></span>
+#### <a name="links-to-edm-upload-agent-by-subscription-type"></a><span data-ttu-id="784d8-297">依訂閱類型的 EDM 上傳代理程式連結</span><span class="sxs-lookup"><span data-stu-id="784d8-297">Links to EDM upload agent by subscription type</span></span>
 
-- [<span data-ttu-id="10d9b-279">商業 + GCC</span><span class="sxs-lookup"><span data-stu-id="10d9b-279">Commercial + GCC</span></span>](https://go.microsoft.com/fwlink/?linkid=2088639)
-- [<span data-ttu-id="10d9b-280">GCC-High</span><span class="sxs-lookup"><span data-stu-id="10d9b-280">GCC-High</span></span>](https://go.microsoft.com/fwlink/?linkid=2137521)
-- [<span data-ttu-id="10d9b-281">DoD</span><span class="sxs-lookup"><span data-stu-id="10d9b-281">DoD</span></span>](https://go.microsoft.com/fwlink/?linkid=2137807)
+- [<span data-ttu-id="784d8-298">商業 + GCC</span><span class="sxs-lookup"><span data-stu-id="784d8-298">Commercial + GCC</span></span>](https://go.microsoft.com/fwlink/?linkid=2088639)
+- [<span data-ttu-id="784d8-299">GCC-High</span><span class="sxs-lookup"><span data-stu-id="784d8-299">GCC-High</span></span>](https://go.microsoft.com/fwlink/?linkid=2137521)
+- [<span data-ttu-id="784d8-300">DoD</span><span class="sxs-lookup"><span data-stu-id="784d8-300">DoD</span></span>](https://go.microsoft.com/fwlink/?linkid=2137807)
 
-1. <span data-ttu-id="10d9b-282">下載並安裝您的訂閱的適當 [EDM 上傳代理程式](#links-to-edm-upload-agent-by-subscription-type)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-282">Download and install the appropriate [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) for your subscription.</span></span> <span data-ttu-id="10d9b-283">根據預設，安裝位置應該是  **C:\\Program Files\\Microsoft\\EdmUploadAgent**。</span><span class="sxs-lookup"><span data-stu-id="10d9b-283">By default, the installation location should be **C:\\Program Files\\Microsoft\\EdmUploadAgent**.</span></span>
+1. <span data-ttu-id="784d8-301">為 EDMUploadAgent 建立工作目錄。</span><span class="sxs-lookup"><span data-stu-id="784d8-301">Create a working directory for the EDMUploadAgent.</span></span> <span data-ttu-id="784d8-302">例如， **C:\EDM\Data**。</span><span class="sxs-lookup"><span data-stu-id="784d8-302">For example, **C:\EDM\Data**.</span></span> <span data-ttu-id="784d8-303">將 **PatientRecords** 檔案放在這裡。</span><span class="sxs-lookup"><span data-stu-id="784d8-303">Place the **PatientRecords.csv** file there.</span></span>
 
-   > [!TIP]
-   > <span data-ttu-id="10d9b-284">若要取得所支援命令參數的清單，請執行 agent no 無引數。</span><span class="sxs-lookup"><span data-stu-id="10d9b-284">To a get a list out of the supported command parameters, run the agent no arguments.</span></span> <span data-ttu-id="10d9b-285">例如 'EdmUploadAgent.exe'。</span><span class="sxs-lookup"><span data-stu-id="10d9b-285">For example 'EdmUploadAgent.exe'.</span></span>
+2. <span data-ttu-id="784d8-304">把適合您的訂閱, 下載並安裝到[EDM 上傳代理](#links-to-edm-upload-agent-by-subscription-type), 步驟1您所建立目錄中 。</span><span class="sxs-lookup"><span data-stu-id="784d8-304">Download and install the appropriate [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) for your subscription into the directory you created in step 1.</span></span>
 
-   > [!NOTE]
-   > <span data-ttu-id="10d9b-286">您每天最多可以使用 EDMUploadAgent 將資料上傳到任何指定的資料儲存區兩次。</span><span class="sxs-lookup"><span data-stu-id="10d9b-286">You can upload data with the EDMUploadAgent to any given data store only twice per day.</span></span>
+> [!NOTE]
+> <span data-ttu-id="784d8-305">上方連結的 EDMUploadAgent 已更新，可自動為雜湊資料新增鹽值。</span><span class="sxs-lookup"><span data-stu-id="784d8-305">The EDMUploadAgent at the above links has been updated to automatically add a salt value to the hashed data.</span></span> <span data-ttu-id="784d8-306">或者，您也可以提供自己的鹽值。</span><span class="sxs-lookup"><span data-stu-id="784d8-306">Alternately, you can provide your own salt value.</span></span> <span data-ttu-id="784d8-307">使用此版本後，您將無法使用舊版的 EDMUploadAgent。</span><span class="sxs-lookup"><span data-stu-id="784d8-307">Once you have used this version, you will not be able to use the previous version of the EDMUploadAgent.</span></span>
+>
+> <span data-ttu-id="784d8-308">您每天最多可以使用 EDMUploadAgent 將資料上傳到任何指定的資料儲存區兩次。</span><span class="sxs-lookup"><span data-stu-id="784d8-308">You can upload data with the EDMUploadAgent to any given data store only twice per day.</span></span>
 
-2. <span data-ttu-id="10d9b-287">若要授權 EDM 上傳代理程式，請開啟 Windows 命令提示字元 (以系統管理員身分)，然後執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="10d9b-287">To authorize the EDM Upload Agent, open Windows Command Prompt (as an administrator), and then run the following command:</span></span>
+> [!TIP]
+> <span data-ttu-id="784d8-309">若要取得所支援命令參數的清單，請執行 agent no 無引數。</span><span class="sxs-lookup"><span data-stu-id="784d8-309">To a get a list out of the supported command parameters, run the agent no arguments.</span></span> <span data-ttu-id="784d8-310">例如 'EdmUploadAgent.exe'。</span><span class="sxs-lookup"><span data-stu-id="784d8-310">For example 'EdmUploadAgent.exe'.</span></span>
+
+2. <span data-ttu-id="784d8-311">授權 EDM 上傳代理、開啟命令提示字元視窗（以系統管理員身分），切換至 **C:\EDM\Data** 目錄，然後執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="784d8-311">Authorize the EDM Upload Agent, open  Command Prompt window (as an administrator), switch to the **C:\EDM\Data** directory and then run the following command:</span></span>
 
    `EdmUploadAgent.exe /Authorize`
 
-3. <span data-ttu-id="10d9b-288">使用您的公司或學校帳戶登入已新增至 EDM_DataUploaders 安全性群組的 Office 365。</span><span class="sxs-lookup"><span data-stu-id="10d9b-288">Sign in with your work or school account for Office 365 that was added to the EDM_DataUploaders security group.</span></span>
+3. <span data-ttu-id="784d8-312">用您已加入EDM_DataUploaders 安全性群組的Microsoft 365的工作或學校帳戶來登入.</span><span class="sxs-lookup"><span data-stu-id="784d8-312">Sign in with your work or school account for Microsoft 365 that was added to the EDM_DataUploaders security group.</span></span> <span data-ttu-id="784d8-313">您的租戶信息將從用戶帳戶中提取出來以建立連接。</span><span class="sxs-lookup"><span data-stu-id="784d8-313">Your tenant information is extracted from the user account to make the connection.</span></span>
 
-<span data-ttu-id="10d9b-289">下一個步驟是使用 EDM 上傳代理程式來為敏感性資料雜湊，然後上傳已雜湊的資料。</span><span class="sxs-lookup"><span data-stu-id="10d9b-289">The next step is to use the EDM Upload Agent to hash the sensitive data, and then upload the hashed data.</span></span>
-
-#### <a name="hash-and-upload-the-sensitive-data"></a><span data-ttu-id="10d9b-290">雜湊及上傳敏感性資料</span><span class="sxs-lookup"><span data-stu-id="10d9b-290">Hash and upload the sensitive data</span></span>
-
-<span data-ttu-id="10d9b-291">將敏感性資料檔案 (回想我們的範例是 **PatientRecords.csv**) 儲存至電腦上的本機磁碟機 </span><span class="sxs-lookup"><span data-stu-id="10d9b-291">Save the sensitive data file (recall our example is **PatientRecords.csv**) to the local drive on the machine.</span></span> <span data-ttu-id="10d9b-292">(我們將範例  **PatientRecords.csv**  檔案儲存至  **C:\\Edm\\Data**。)</span><span class="sxs-lookup"><span data-stu-id="10d9b-292">(We saved our example **PatientRecords.csv** file to **C:\\Edm\\Data**.)</span></span>
-
-<span data-ttu-id="10d9b-293">若要為敏感性資料雜湊並上傳，請在 Windows 命令提示字元中執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="10d9b-293">To hash and upload the sensitive data, run the following command in Windows Command Prompt:</span></span>
+4. <span data-ttu-id="784d8-314">若要為敏感性資料雜湊並上傳，請在Command Prompt 命令提示字元視窗中執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="784d8-314">To hash and upload the sensitive data, run the following command in Command Prompt window:</span></span>
 
 `EdmUploadAgent.exe /UploadData /DataStoreName \<DataStoreName\> /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-<span data-ttu-id="10d9b-294">範例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\\Edm\\Hash\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**</span><span class="sxs-lookup"><span data-stu-id="10d9b-294">Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\\Edm\\Hash\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**</span></span>
+<span data-ttu-id="784d8-315">範例： **EdmUploadAgent/UploadData/DataStoreName PatientRecords/DataFile C:\Edm\Hash\PatientRecords.csv/HashLocation C:\Edm\Hash**</span><span class="sxs-lookup"><span data-stu-id="784d8-315">Example: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash**</span></span>
 
-<span data-ttu-id="10d9b-295">若要在隔離的環境中區隔並執行敏感性資料的雜湊，請分別執行雜湊和上傳步驟。</span><span class="sxs-lookup"><span data-stu-id="10d9b-295">To separate and execute the hashing of sensitive data in an isolated environment, execute the hashing and upload steps separately.</span></span>
+<span data-ttu-id="784d8-316">這會自動在雜湊中添加隨機生成的鹽值，以提高安全性。</span><span class="sxs-lookup"><span data-stu-id="784d8-316">This will automatically add a randomly generated salt value to the hash for greater security.</span></span> <span data-ttu-id="784d8-317">或者，如果您想要使用自己的加密鹽值，請在命令列中新增 **/Salt <saltvalue>**。</span><span class="sxs-lookup"><span data-stu-id="784d8-317">Optionally, if you want to use your own salt value, add the **/Salt <saltvalue>** to the command.</span></span> <span data-ttu-id="784d8-318">此值必須是64個字元，且只能包含 a-z 和0-9 個字元。</span><span class="sxs-lookup"><span data-stu-id="784d8-318">This value must be 64 characters in length and can only contain the a-z characters and 0-9 characters.</span></span>
 
-<span data-ttu-id="10d9b-296">若要為敏感性資料雜湊，請在 Windows 命令提示字元中執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="10d9b-296">To hash the sensitive data, run the following command in Windows Command Prompt:</span></span>
+5. <span data-ttu-id="784d8-319">執行此命令以查看上傳狀態：</span><span class="sxs-lookup"><span data-stu-id="784d8-319">Check the upload status by running this command:</span></span>
+
+`EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+
+<span data-ttu-id="784d8-320">範例： **EdmUploadAgent/GetSession/DataStoreName PatientRecords**</span><span class="sxs-lookup"><span data-stu-id="784d8-320">Example: **EdmUploadAgent.exe /GetSession /DataStoreName PatientRecords**</span></span>
+
+<span data-ttu-id="784d8-321">尋找 **ProcessingInProgress**的狀態。</span><span class="sxs-lookup"><span data-stu-id="784d8-321">Look for the status to be in **ProcessingInProgress**.</span></span> <span data-ttu-id="784d8-322">每隔幾分鐘再次檢查，直到狀態變更為 **完成**。</span><span class="sxs-lookup"><span data-stu-id="784d8-322">Check again every few minutes until the status changes to **Completed**.</span></span> <span data-ttu-id="784d8-323">狀態完成後，您的 EDM 資料就可以使用了。</span><span class="sxs-lookup"><span data-stu-id="784d8-323">Once the status is completed, your EDM data is ready for use.</span></span>
+
+#### <a name="separate-hash-and-upload"></a><span data-ttu-id="784d8-324">雜湊和上傳分開</span><span class="sxs-lookup"><span data-stu-id="784d8-324">Separate Hash and upload</span></span>
+
+<span data-ttu-id="784d8-325">在安全的環境中，在電腦上執行雜湊。</span><span class="sxs-lookup"><span data-stu-id="784d8-325">Perform the hash on a computer in a secure environment.</span></span>
+
+1. <span data-ttu-id="784d8-326">在Command Prompt 命令提示視窗中，執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="784d8-326">Run the following command in Command Prompt windows:</span></span>
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-<span data-ttu-id="10d9b-297">例如：</span><span class="sxs-lookup"><span data-stu-id="10d9b-297">For example:</span></span>
+<span data-ttu-id="784d8-327">例如：</span><span class="sxs-lookup"><span data-stu-id="784d8-327">For example:</span></span>
 
-> <span data-ttu-id="10d9b-298">**EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**</span><span class="sxs-lookup"><span data-stu-id="10d9b-298">**EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**</span></span>
+> <span data-ttu-id="784d8-328">**EdmUploadAgent/CreateHash/DataFile C:\Edm\Data\PatientRecords.csv/HashLocation C:\Edm\Hash**</span><span class="sxs-lookup"><span data-stu-id="784d8-328">**EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash**</span></span>
 
-<span data-ttu-id="10d9b-299">若要上傳已雜湊的資料，請在 Windows 命令提示字元中執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="10d9b-299">To upload the hashed data, run the following command in Windows Command Prompt:</span></span>
+<span data-ttu-id="784d8-329">如果您沒有指定 [**/Salt <saltvalue>**] 選項，則會輸出雜湊檔和含這些副檔名的鹽值檔案：</span><span class="sxs-lookup"><span data-stu-id="784d8-329">This will output a hashed file and a salt file with these extensions if you didn't specify the **/Salt <saltvalue>** option:</span></span>
+- <span data-ttu-id="784d8-330">.EdmHash</span><span class="sxs-lookup"><span data-stu-id="784d8-330">.EdmHash</span></span>
+- <span data-ttu-id="784d8-331">.EdmSalt</span><span class="sxs-lookup"><span data-stu-id="784d8-331">.EdmSalt</span></span>
+
+2. <span data-ttu-id="784d8-332">請以安全的方式, 將這些檔案複製到您用來上傳機密專案 csv 檔案（PatientRecords）的電腦。</span><span class="sxs-lookup"><span data-stu-id="784d8-332">Copy these files in a secure fashion to the computer you will use to upload your sensitive items csv file (PatientRecords) to your tenant.</span></span>
+
+<span data-ttu-id="784d8-333">若要上傳已雜湊的資料，請在 Windows 命令提示字元中執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="784d8-333">To upload the hashed data, run the following command in Windows Command Prompt:</span></span>
 
 `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-<span data-ttu-id="10d9b-300">例如：</span><span class="sxs-lookup"><span data-stu-id="10d9b-300">For example:</span></span>
+<span data-ttu-id="784d8-334">例如：</span><span class="sxs-lookup"><span data-stu-id="784d8-334">For example:</span></span>
 
-> <span data-ttu-id="10d9b-301">**EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**</span><span class="sxs-lookup"><span data-stu-id="10d9b-301">**EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**</span></span>
+> <span data-ttu-id="784d8-335">**EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**</span><span class="sxs-lookup"><span data-stu-id="784d8-335">**EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**</span></span>
 
 
-<span data-ttu-id="10d9b-302">若要確認您的敏感性資料已上傳，請在命令提示字元中執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="10d9b-302">To verify that your sensitive data has been uploaded, run the following command in Command Prompt window:</span></span>
+<span data-ttu-id="784d8-336">若要確認您的敏感性資料已上傳，請在命令提示字元中執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="784d8-336">To verify that your sensitive data has been uploaded, run the following command in Command Prompt window:</span></span>
 
 
 `EdmUploadAgent.exe /GetDataStore`
 
-<span data-ttu-id="10d9b-303">您會看到資料存放區的清單，以及其上次更新時間。</span><span class="sxs-lookup"><span data-stu-id="10d9b-303">You'll see a list of data stores and when they were last updated.</span></span>
+<span data-ttu-id="784d8-337">您會看到資料存放區的清單，以及其上次更新時間。</span><span class="sxs-lookup"><span data-stu-id="784d8-337">You'll see a list of data stores and when they were last updated.</span></span>
 
-<span data-ttu-id="10d9b-304">如果您想要查看上傳到特定儲存區的所有資料，請在 Windows 命令提示字元中執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="10d9b-304">If you want to see all the data uploads to a particular store, run the following command in a Windows command prompt:</span></span>
+<span data-ttu-id="784d8-338">如果您想要查看上傳到特定儲存區的所有資料，請在 Windows 命令提示字元中執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="784d8-338">If you want to see all the data uploads to a particular store, run the following command in a Windows command prompt:</span></span>
 
 `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
 
-<span data-ttu-id="10d9b-305">針對 [重新整理您的敏感性資訊資料庫](#refreshing-your-sensitive-information-database)，繼續設定程序和排程。</span><span class="sxs-lookup"><span data-stu-id="10d9b-305">Proceed to set up your process and schedule for [Refreshing your sensitive information database](#refreshing-your-sensitive-information-database).</span></span>
+<span data-ttu-id="784d8-339">針對 [重新整理您的敏感性資訊資料庫](#refreshing-your-sensitive-information-database)，繼續設定程序和排程。</span><span class="sxs-lookup"><span data-stu-id="784d8-339">Proceed to set up your process and schedule for [Refreshing your sensitive information database](#refreshing-your-sensitive-information-database).</span></span>
 
-<span data-ttu-id="10d9b-306">此時，您已準備好使用以 EDM 為基礎的分類搭配 Microsoft 雲端服務。</span><span class="sxs-lookup"><span data-stu-id="10d9b-306">At this point, you are ready to use EDM-based classification with your Microsoft cloud services.</span></span> <span data-ttu-id="10d9b-307">例如，您可以 [使用以 EDM 為基礎的分類來設定 DLP 原則](#to-create-a-dlp-policy-with-edm)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-307">For example, you can [set up a DLP policy using EDM-based classification](#to-create-a-dlp-policy-with-edm).</span></span>
+<span data-ttu-id="784d8-340">此時，您已準備好使用以 EDM 為基礎的分類搭配 Microsoft 雲端服務。</span><span class="sxs-lookup"><span data-stu-id="784d8-340">At this point, you are ready to use EDM-based classification with your Microsoft cloud services.</span></span> <span data-ttu-id="784d8-341">例如，您可以 [使用以 EDM 為基礎的分類來設定 DLP 原則](#to-create-a-dlp-policy-with-edm)。</span><span class="sxs-lookup"><span data-stu-id="784d8-341">For example, you can [set up a DLP policy using EDM-based classification](#to-create-a-dlp-policy-with-edm).</span></span>
 
-#### <a name="refreshing-your-sensitive-information-database"></a><span data-ttu-id="10d9b-308">重新整理您的敏感性資訊資料庫</span><span class="sxs-lookup"><span data-stu-id="10d9b-308">Refreshing your sensitive information database</span></span>
+#### <a name="refreshing-your-sensitive-information-database"></a><span data-ttu-id="784d8-342">重新整理您的敏感性資訊資料庫</span><span class="sxs-lookup"><span data-stu-id="784d8-342">Refreshing your sensitive information database</span></span>
 
-<span data-ttu-id="10d9b-309">您可以每日或每週重新整理您的敏感性資訊資料庫，而 EDM 上傳工具可以重新為敏感性資料進行雜湊，然後重新上傳已雜湊的資料。</span><span class="sxs-lookup"><span data-stu-id="10d9b-309">You can refresh your sensitive information database daily or weekly, and the EDM Upload Tool can re-hash the sensitive data and then reupload the hashed data.</span></span>
+<span data-ttu-id="784d8-343">您可以每天重新整理您的機密資訊資料庫，而 EDM 上傳工具可以將機密資料重新編制索引，然後重新上傳 已編制索引的資料。</span><span class="sxs-lookup"><span data-stu-id="784d8-343">You can refresh your sensitive information database daily, and the EDM Upload Tool can reindex the sensitive data and then reupload the indexed data.</span></span>
 
-1. <span data-ttu-id="10d9b-310">決定您重新整理敏感性資訊資料庫的程序和頻率 (每日或每週)。</span><span class="sxs-lookup"><span data-stu-id="10d9b-310">Determine your process and frequency (daily or weekly) for refreshing the database of sensitive information.</span></span>
+1. <span data-ttu-id="784d8-344">決定您重新整理敏感性資訊資料庫的程序和頻率 (每日或每週)。</span><span class="sxs-lookup"><span data-stu-id="784d8-344">Determine your process and frequency (daily or weekly) for refreshing the database of sensitive information.</span></span>
 
-2. <span data-ttu-id="10d9b-311">將敏感性資料重新匯出至應用程式，例如 Microsoft Excel，並將檔案儲存為 .csv 格式。</span><span class="sxs-lookup"><span data-stu-id="10d9b-311">Re-export the sensitive data to an app, such as Microsoft Excel, and save the file in .csv format.</span></span> <span data-ttu-id="10d9b-312">當您遵循 [雜湊及上傳敏感性資料](#hash-and-upload-the-sensitive-data)中所述的步驟時，請保留所使用的相同檔案名稱和位置。</span><span class="sxs-lookup"><span data-stu-id="10d9b-312">Keep the same file name and location you used when you followed the steps described in [Hash and upload the sensitive data](#hash-and-upload-the-sensitive-data).</span></span>
+2. <span data-ttu-id="784d8-345">將敏感性資料重新匯出至應用程式，例如 Microsoft Excel，並將檔案儲存為 .csv 格式。</span><span class="sxs-lookup"><span data-stu-id="784d8-345">Re-export the sensitive data to an app, such as Microsoft Excel, and save the file in .csv format.</span></span> <span data-ttu-id="784d8-346">當您遵循 [雜湊及上傳敏感性資料](#part-2-hash-and-upload-the-sensitive-data)中所述的步驟時，請保留所使用的相同檔案名稱和位置。</span><span class="sxs-lookup"><span data-stu-id="784d8-346">Keep the same file name and location you used when you followed the steps described in [Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data).</span></span>
 
       > [!NOTE]
-      > <span data-ttu-id="10d9b-313">如果 .csv 檔案的結構 (欄位名稱) 沒有任何變更，重新整理資料時，您不需要對資料庫結構描述檔案進行任何變更。</span><span class="sxs-lookup"><span data-stu-id="10d9b-313">If there are no changes to the structure (field names) of the .csv file, you won't need to make any changes to your database schema file when you refresh the data.</span></span> <span data-ttu-id="10d9b-314">但如果您必須進行變更，請務必相應地編輯資料庫結構描述和規則套件。</span><span class="sxs-lookup"><span data-stu-id="10d9b-314">But if you must make changes, make sure to edit the database schema and your rule package accordingly.</span></span>
+      > <span data-ttu-id="784d8-347">如果 .csv 檔案的結構 (欄位名稱) 沒有任何變更，重新整理資料時，您不需要對資料庫結構描述檔案進行任何變更。</span><span class="sxs-lookup"><span data-stu-id="784d8-347">If there are no changes to the structure (field names) of the .csv file, you won't need to make any changes to your database schema file when you refresh the data.</span></span> <span data-ttu-id="784d8-348">但如果您必須進行變更，請務必相應地編輯資料庫結構描述和規則套件。</span><span class="sxs-lookup"><span data-stu-id="784d8-348">But if you must make changes, make sure to edit the database schema and your rule package accordingly.</span></span>
 
-3. <span data-ttu-id="10d9b-315">使用 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) 將 [雜湊及上傳敏感性資料](#hash-and-upload-the-sensitive-data) 程序中的步驟 2 和 3 自動化。</span><span class="sxs-lookup"><span data-stu-id="10d9b-315">Use [Task Scheduler](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) to automate steps 2 and 3 in the [Hash and upload the sensitive data](#hash-and-upload-the-sensitive-data) procedure.</span></span> <span data-ttu-id="10d9b-316">您可以使用數個方法來排程工作：</span><span class="sxs-lookup"><span data-stu-id="10d9b-316">You can schedule tasks using several methods:</span></span>
+3. <span data-ttu-id="784d8-349">使用 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) 將 [雜湊及上傳敏感性資料](#part-2-hash-and-upload-the-sensitive-data) 程序中的步驟 2 和 3 自動化。</span><span class="sxs-lookup"><span data-stu-id="784d8-349">Use [Task Scheduler](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) to automate steps 2 and 3 in the [Hash and upload the sensitive data](#part-2-hash-and-upload-the-sensitive-data) procedure.</span></span> <span data-ttu-id="784d8-350">您可以使用數個方法來排程工作：</span><span class="sxs-lookup"><span data-stu-id="784d8-350">You can schedule tasks using several methods:</span></span>
 
-      | <span data-ttu-id="10d9b-317">方法</span><span class="sxs-lookup"><span data-stu-id="10d9b-317">Method</span></span>             | <span data-ttu-id="10d9b-318">處理方式</span><span class="sxs-lookup"><span data-stu-id="10d9b-318">What to do</span></span> |
+      | <span data-ttu-id="784d8-351">方法</span><span class="sxs-lookup"><span data-stu-id="784d8-351">Method</span></span>             | <span data-ttu-id="784d8-352">處理方式</span><span class="sxs-lookup"><span data-stu-id="784d8-352">What to do</span></span> |
       | ---------------------- | ---------------- |
-      | <span data-ttu-id="10d9b-319">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="10d9b-319">Windows PowerShell</span></span>     | <span data-ttu-id="10d9b-320">請參閱 [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) 文件，以及本文中的 [範例 PowerShell 指令碼](#example-powershell-script-for-task-scheduler) </span><span class="sxs-lookup"><span data-stu-id="10d9b-320">See the [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article</span></span> |
-      | <span data-ttu-id="10d9b-321">工作排程器 API</span><span class="sxs-lookup"><span data-stu-id="10d9b-321">Task Scheduler API</span></span>     | <span data-ttu-id="10d9b-322">請參閱 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) 文件</span><span class="sxs-lookup"><span data-stu-id="10d9b-322">See the [Task Scheduler](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) documentation</span></span>                                                                                                                                                                                                                                                                                |
-      | <span data-ttu-id="10d9b-323">Windows 使用者介面</span><span class="sxs-lookup"><span data-stu-id="10d9b-323">Windows user interface</span></span> | <span data-ttu-id="10d9b-324">在 Windows 中，按一下 [開始] \*\*\*\*，然後輸入工作排程器。</span><span class="sxs-lookup"><span data-stu-id="10d9b-324">In Windows, click **Start**, and type Task Scheduler.</span></span> <span data-ttu-id="10d9b-325">接著，在結果清單中，以滑鼠右鍵按一下 [工作排程器] \*\*\*\*，然後選擇 [以系統管理員身分執行] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-325">Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.</span></span>                                                                                                                                                                                                                                                                           |
+      | <span data-ttu-id="784d8-353">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="784d8-353">Windows PowerShell</span></span>     | <span data-ttu-id="784d8-354">請參閱 [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) 文件，以及本文中的 [範例 PowerShell 指令碼](#example-powershell-script-for-task-scheduler) </span><span class="sxs-lookup"><span data-stu-id="784d8-354">See the [ScheduledTasks](https://docs.microsoft.com/powershell/module/scheduledtasks/?view=win10-ps) documentation and the [example PowerShell script](#example-powershell-script-for-task-scheduler) in this article</span></span> |
+      | <span data-ttu-id="784d8-355">工作排程器 API</span><span class="sxs-lookup"><span data-stu-id="784d8-355">Task Scheduler API</span></span>     | <span data-ttu-id="784d8-356">請參閱 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) 文件</span><span class="sxs-lookup"><span data-stu-id="784d8-356">See the [Task Scheduler](https://docs.microsoft.com/windows/desktop/TaskSchd/using-the-task-scheduler) documentation</span></span>                                                                                                                                                                                                                                                                                |
+      | <span data-ttu-id="784d8-357">Windows 使用者介面</span><span class="sxs-lookup"><span data-stu-id="784d8-357">Windows user interface</span></span> | <span data-ttu-id="784d8-358">在 Windows 中，按一下 [開始] \*\*\*\*，然後輸入工作排程器。</span><span class="sxs-lookup"><span data-stu-id="784d8-358">In Windows, click **Start**, and type Task Scheduler.</span></span> <span data-ttu-id="784d8-359">接著，在結果清單中，以滑鼠右鍵按一下 [工作排程器] \*\*\*\*，然後選擇 [以系統管理員身分執行] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-359">Then, in the list of results, right-click **Task Scheduler**, and choose **Run as administrator**.</span></span>                                                                                                                                                                                                                                                                           |
 
-#### <a name="example-powershell-script-for-task-scheduler"></a><span data-ttu-id="10d9b-326">工作排程器的範例 PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="10d9b-326">Example PowerShell script for Task Scheduler</span></span>
+#### <a name="example-powershell-script-for-task-scheduler"></a><span data-ttu-id="784d8-360">工作排程器的範例 PowerShell 指令碼</span><span class="sxs-lookup"><span data-stu-id="784d8-360">Example PowerShell script for Task Scheduler</span></span>
 
-<span data-ttu-id="10d9b-327">本節包含的範例 PowerShell 指令碼，可供您用來對雜湊資料及上傳已雜湊的資料工作進行排程：</span><span class="sxs-lookup"><span data-stu-id="10d9b-327">This section includes an example PowerShell script you can use to schedule your tasks for hashing data and uploading the hashed data:</span></span>
+<span data-ttu-id="784d8-361">本節包含的範例 PowerShell 指令碼，可供您用來對雜湊資料及上傳已雜湊的資料工作進行排程：</span><span class="sxs-lookup"><span data-stu-id="784d8-361">This section includes an example PowerShell script you can use to schedule your tasks for hashing data and uploading the hashed data:</span></span>
 
-##### <a name="to-schedule-hashing-and-upload-in-a-combined-step"></a><span data-ttu-id="10d9b-328">在相同的步驟中排程雜湊並上傳</span><span class="sxs-lookup"><span data-stu-id="10d9b-328">To schedule hashing and upload in a combined step</span></span>
+##### <a name="to-schedule-hashing-and-upload-in-a-combined-step"></a><span data-ttu-id="784d8-362">在相同的步驟中排程雜湊並上傳</span><span class="sxs-lookup"><span data-stu-id="784d8-362">To schedule hashing and upload in a combined step</span></span>
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -449,7 +553,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="to-schedule-hashing-and-upload-as-separate-steps"></a><span data-ttu-id="10d9b-329">在個別的步驟中排程雜湊和上傳</span><span class="sxs-lookup"><span data-stu-id="10d9b-329">To schedule hashing and upload as separate steps</span></span>
+#### <a name="to-schedule-hashing-and-upload-as-separate-steps"></a><span data-ttu-id="784d8-363">在個別的步驟中排程雜湊和上傳</span><span class="sxs-lookup"><span data-stu-id="784d8-363">To schedule hashing and upload as separate steps</span></span>
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -485,63 +589,63 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a><span data-ttu-id="10d9b-330">第 3 部分：使用以 EDM 為基礎的分類搭配 Microsoft 雲端服務</span><span class="sxs-lookup"><span data-stu-id="10d9b-330">Part 3: Use EDM-based classification with your Microsoft cloud services</span></span>
+### <a name="part-3-use-edm-based-classification-with-your-microsoft-cloud-services"></a><span data-ttu-id="784d8-364">第 3 部分：使用以 EDM 為基礎的分類搭配 Microsoft 雲端服務</span><span class="sxs-lookup"><span data-stu-id="784d8-364">Part 3: Use EDM-based classification with your Microsoft cloud services</span></span>
 
-<span data-ttu-id="10d9b-331">這些位置支援 EDM 敏感性資訊類型：</span><span class="sxs-lookup"><span data-stu-id="10d9b-331">These locations are support EDM sensitive information types:</span></span>
+<span data-ttu-id="784d8-365">這些位置支援 EDM 敏感性資訊類型：</span><span class="sxs-lookup"><span data-stu-id="784d8-365">These locations are support EDM sensitive information types:</span></span>
 
-- <span data-ttu-id="10d9b-332">適用於 Exchange Online 的 DLP (電子郵件)</span><span class="sxs-lookup"><span data-stu-id="10d9b-332">DLP for Exchange Online (email)</span></span>
-- <span data-ttu-id="10d9b-333">商務用 OneDrive (檔案)</span><span class="sxs-lookup"><span data-stu-id="10d9b-333">OneDrive for Business (files)</span></span>
-- <span data-ttu-id="10d9b-334">Microsoft Teams (交談)</span><span class="sxs-lookup"><span data-stu-id="10d9b-334">Microsoft Teams (conversations)</span></span>
-- <span data-ttu-id="10d9b-335">適用於 SharePoint 的 DLP (檔案)</span><span class="sxs-lookup"><span data-stu-id="10d9b-335">DLP for SharePoint (files)</span></span>
-- <span data-ttu-id="10d9b-336">Microsoft Cloud App Security DLP 原則</span><span class="sxs-lookup"><span data-stu-id="10d9b-336">Microsoft Cloud App Security DLP policies</span></span>
+- <span data-ttu-id="784d8-366">適用於 Exchange Online 的 DLP (電子郵件)</span><span class="sxs-lookup"><span data-stu-id="784d8-366">DLP for Exchange Online (email)</span></span>
+- <span data-ttu-id="784d8-367">商務用 OneDrive (檔案)</span><span class="sxs-lookup"><span data-stu-id="784d8-367">OneDrive for Business (files)</span></span>
+- <span data-ttu-id="784d8-368">Microsoft Teams (交談)</span><span class="sxs-lookup"><span data-stu-id="784d8-368">Microsoft Teams (conversations)</span></span>
+- <span data-ttu-id="784d8-369">適用於 SharePoint 的 DLP (檔案)</span><span class="sxs-lookup"><span data-stu-id="784d8-369">DLP for SharePoint (files)</span></span>
+- <span data-ttu-id="784d8-370">Microsoft Cloud App Security DLP 原則</span><span class="sxs-lookup"><span data-stu-id="784d8-370">Microsoft Cloud App Security DLP policies</span></span>
 
-<span data-ttu-id="10d9b-337">下列案例的 EDM 敏感性資訊類型目前正在開發中，尚未提供使用：</span><span class="sxs-lookup"><span data-stu-id="10d9b-337">EDM sensitive information types for following scenarios are currently in development, but not yet available:</span></span>
+<span data-ttu-id="784d8-371">下列案例的 EDM 敏感性資訊類型目前正在開發中，尚未提供使用：</span><span class="sxs-lookup"><span data-stu-id="784d8-371">EDM sensitive information types for following scenarios are currently in development, but not yet available:</span></span>
 
-- <span data-ttu-id="10d9b-338">自動分類敏感度標籤和保留標籤</span><span class="sxs-lookup"><span data-stu-id="10d9b-338">Auto-classification of sensitivity labels and retention labels</span></span>
+- <span data-ttu-id="784d8-372">自動分類敏感度標籤和保留標籤</span><span class="sxs-lookup"><span data-stu-id="784d8-372">Auto-classification of sensitivity labels and retention labels</span></span>
 
-#### <a name="to-create-a-dlp-policy-with-edm"></a><span data-ttu-id="10d9b-339">使用 EDM 建立 DLP 原則</span><span class="sxs-lookup"><span data-stu-id="10d9b-339">To create a DLP policy with EDM</span></span>
+#### <a name="to-create-a-dlp-policy-with-edm"></a><span data-ttu-id="784d8-373">使用 EDM 建立 DLP 原則</span><span class="sxs-lookup"><span data-stu-id="784d8-373">To create a DLP policy with EDM</span></span>
 
-1. <span data-ttu-id="10d9b-340">使用[適用於您的訂閱的連結](#portal-links-for-your-subscription)，移至安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="10d9b-340">Go to the Security & Compliance Center using the appropriate [link for your subscription](#portal-links-for-your-subscription).</span></span>
+1. <span data-ttu-id="784d8-374">使用[適用於您的訂閱的連結](#portal-links-for-your-subscription)，移至安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="784d8-374">Go to the Security & Compliance Center using the appropriate [link for your subscription](#portal-links-for-your-subscription).</span></span>
 
-2. <span data-ttu-id="10d9b-341">按一下 [資料外洩防護] \*\*\*\* \>[原則] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-341">Choose **Data loss prevention** \> **Policy**.</span></span>
+2. <span data-ttu-id="784d8-375">按一下 [資料外洩防護] \*\*\*\* \>[原則] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-375">Choose **Data loss prevention** \> **Policy**.</span></span>
 
-3. <span data-ttu-id="10d9b-342">選擇 [建立原則] \*\*\*\* \>[自訂] \*\*\*\* \>[下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-342">Choose **Create a policy** \> **Custom** \> **Next**.</span></span>
+3. <span data-ttu-id="784d8-376">選擇 [建立原則] \*\*\*\* \>[自訂] \*\*\*\* \>[下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-376">Choose **Create a policy** \> **Custom** \> **Next**.</span></span>
 
-4. <span data-ttu-id="10d9b-343">在 [為您的原則命名] \*\*\*\* 索引標籤上，指定名稱和描述，然後選擇 [下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-343">On the **Name your policy** tab, specify a name and description, and then choose **Next**.</span></span>
+4. <span data-ttu-id="784d8-377">在 [為您的原則命名] \*\*\*\* 索引標籤上，指定名稱和描述，然後選擇 [下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-377">On the **Name your policy** tab, specify a name and description, and then choose **Next**.</span></span>
 
-5. <span data-ttu-id="10d9b-344">在 [選擇位置] \*\*\*\* 索引標籤上，選取 [讓我選擇特定位置] \*\*\*\*，然後選擇 [下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-344">On the **Choose locations** tab, select **Let me choose specific locations**, and then choose **Next**.</span></span>
+5. <span data-ttu-id="784d8-378">在 [選擇位置] \*\*\*\* 索引標籤上，選取 [讓我選擇特定位置] \*\*\*\*，然後選擇 [下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-378">On the **Choose locations** tab, select **Let me choose specific locations**, and then choose **Next**.</span></span>
 
-6. <span data-ttu-id="10d9b-345">在 [狀態] \*\*\*\* 資料行中，選取 [Exchange 電子郵件、OneDrive 帳戶、Teams 交談和頻道訊息] \*\*\*\* ，然後選擇 [下一步] \*\*\*\* </span><span class="sxs-lookup"><span data-stu-id="10d9b-345">In the **Status** column, select **Exchange email, OneDrive accounts, Teams chat and channel message** , and then choose **Next**.</span></span>
+6. <span data-ttu-id="784d8-379">在 [狀態] \*\*\*\* 資料行中，選取 [Exchange 電子郵件、OneDrive 帳戶、Teams 交談和頻道訊息] \*\*\*\* ，然後選擇 [下一步] \*\*\*\* </span><span class="sxs-lookup"><span data-stu-id="784d8-379">In the **Status** column, select **Exchange email, OneDrive accounts, Teams chat and channel message** , and then choose **Next**.</span></span>
 
-7. <span data-ttu-id="10d9b-346">在 [原則設定] \*\*\*\* 索引標籤上，選擇 [使用進階設定] \*\*\*\*，然後選擇 [下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-346">On the **Policy settings** tab, choose **Use advanced settings**, and then choose **Next**.</span></span>
+7. <span data-ttu-id="784d8-380">在 [原則設定] \*\*\*\* 索引標籤上，選擇 [使用進階設定] \*\*\*\*，然後選擇 [下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-380">On the **Policy settings** tab, choose **Use advanced settings**, and then choose **Next**.</span></span>
 
-8. <span data-ttu-id="10d9b-347">選擇 [+ 新增規則] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-347">Choose **+ New rule**.</span></span>
+8. <span data-ttu-id="784d8-381">選擇 [+ 新增規則] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-381">Choose **+ New rule**.</span></span>
 
-9. <span data-ttu-id="10d9b-348">在 [名稱] \*\*\*\* 區段中，指定規則的名稱和描述。</span><span class="sxs-lookup"><span data-stu-id="10d9b-348">In the **Name** section, specify a name and description for the rule.</span></span>
+9. <span data-ttu-id="784d8-382">在 [名稱] \*\*\*\* 區段中，指定規則的名稱和描述。</span><span class="sxs-lookup"><span data-stu-id="784d8-382">In the **Name** section, specify a name and description for the rule.</span></span>
 
-10. <span data-ttu-id="10d9b-349">在 [條件] \*\*\*\* 區段的 [+ 新增條件] \*\*\*\* 清單中，選擇 [內容包含敏感性類型] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-349">In the **Conditions** section, in the **+ Add a condition** list, choose **Content contains sensitive type**.</span></span>
+10. <span data-ttu-id="784d8-383">在 [條件] \*\*\*\* 區段的 [+ 新增條件] \*\*\*\* 清單中，選擇 [內容包含敏感性類型] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-383">In the **Conditions** section, in the **+ Add a condition** list, choose **Content contains sensitive type**.</span></span>
 
       ![內容包含敏感性資訊類型](../media/edm-dlp-newrule-conditions.png)
 
-11. <span data-ttu-id="10d9b-351">搜尋您設定規則套件時建立的敏感性資訊類型，然後選擇 [+ 新增] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-351">Search for the sensitive information type you created when you set up your rule package, and then choose **+ Add**.</span></span>  
-    <span data-ttu-id="10d9b-352">接著，選擇 [完成] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-352">Then choose **Done**.</span></span>
+11. <span data-ttu-id="784d8-385">搜尋您設定規則套件時建立的敏感性資訊類型，然後選擇 [+ 新增] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-385">Search for the sensitive information type you created when you set up your rule package, and then choose **+ Add**.</span></span>  
+    <span data-ttu-id="784d8-386">接著，選擇 [完成] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-386">Then choose **Done**.</span></span>
 
-12. <span data-ttu-id="10d9b-353">完成選取規則的選項，例如 **使用者通知**、 **使用者覆寫**、 **事件報告**等等，然後選擇 [儲存] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-353">Finish selecting options for your rule, such as **User notifications**, **User overrides**, **Incident reports**, and so on, and then choose **Save**.</span></span>
+12. <span data-ttu-id="784d8-387">完成選取規則的選項，例如 **使用者通知**、 **使用者覆寫**、 **事件報告**等等，然後選擇 [儲存] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-387">Finish selecting options for your rule, such as **User notifications**, **User overrides**, **Incident reports**, and so on, and then choose **Save**.</span></span>
 
-13. <span data-ttu-id="10d9b-354">在 [原則設定] \*\*\*\* 索引標籤上，檢閱您的規則，然後選擇 [下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-354">On the **Policy settings** tab, review your rules, and then choose **Next**.</span></span>
+13. <span data-ttu-id="784d8-388">在 [原則設定] \*\*\*\* 索引標籤上，檢閱您的規則，然後選擇 [下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-388">On the **Policy settings** tab, review your rules, and then choose **Next**.</span></span>
 
-14. <span data-ttu-id="10d9b-355">指定是否立即開啟原則、測試它，或是保持關閉。</span><span class="sxs-lookup"><span data-stu-id="10d9b-355">Specify whether to turn on the policy right away, test it out, or keep it turned off.</span></span> <span data-ttu-id="10d9b-356">接著，選擇 [下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-356">Then choose **Next**.</span></span>
+14. <span data-ttu-id="784d8-389">指定是否立即開啟原則、測試它，或是保持關閉。</span><span class="sxs-lookup"><span data-stu-id="784d8-389">Specify whether to turn on the policy right away, test it out, or keep it turned off.</span></span> <span data-ttu-id="784d8-390">接著，選擇 [下一步] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-390">Then choose **Next**.</span></span>
 
-15. <span data-ttu-id="10d9b-357">在 [檢閱您的設定] \*\*\*\* 索引標籤上，檢閱您的原則。</span><span class="sxs-lookup"><span data-stu-id="10d9b-357">On the **Review your settings** tab, review your policy.</span></span> <span data-ttu-id="10d9b-358">視需要進行變更。</span><span class="sxs-lookup"><span data-stu-id="10d9b-358">Make any needed changes.</span></span> <span data-ttu-id="10d9b-359">準備就緒時，選擇 [建立] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="10d9b-359">When you're ready, choose **Create**.</span></span>
+15. <span data-ttu-id="784d8-391">在 [檢閱您的設定] \*\*\*\* 索引標籤上，檢閱您的原則。</span><span class="sxs-lookup"><span data-stu-id="784d8-391">On the **Review your settings** tab, review your policy.</span></span> <span data-ttu-id="784d8-392">視需要進行變更。</span><span class="sxs-lookup"><span data-stu-id="784d8-392">Make any needed changes.</span></span> <span data-ttu-id="784d8-393">準備就緒時，選擇 [建立] \*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="784d8-393">When you're ready, choose **Create**.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="10d9b-360">允許大約一小時的時間，讓您的新 DLP 原則在您的整個資料中心生效。</span><span class="sxs-lookup"><span data-stu-id="10d9b-360">Allow approximately one hour for your new DLP policy to work its way through your data center.</span></span>
+> <span data-ttu-id="784d8-394">允許大約一小時的時間，讓您的新 DLP 原則在您的整個資料中心生效。</span><span class="sxs-lookup"><span data-stu-id="784d8-394">Allow approximately one hour for your new DLP policy to work its way through your data center.</span></span>
 
-## <a name="related-articles"></a><span data-ttu-id="10d9b-361">相關文章</span><span class="sxs-lookup"><span data-stu-id="10d9b-361">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="784d8-395">相關文章</span><span class="sxs-lookup"><span data-stu-id="784d8-395">Related articles</span></span>
 
-- [<span data-ttu-id="10d9b-362">敏感性資訊類型實體定義</span><span class="sxs-lookup"><span data-stu-id="10d9b-362">Sensitive information type-entity definitions</span></span>](sensitive-information-type-entity-definitions.md)
-- [<span data-ttu-id="10d9b-363">自訂敏感性資訊類型</span><span class="sxs-lookup"><span data-stu-id="10d9b-363">Custom sensitive information types</span></span>](custom-sensitive-info-types.md)
-- [<span data-ttu-id="10d9b-364">DLP 原則的概觀</span><span class="sxs-lookup"><span data-stu-id="10d9b-364">Overview of DLP policies</span></span>](data-loss-prevention-policies.md)
-- [<span data-ttu-id="10d9b-365">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="10d9b-365">Microsoft Cloud App Security</span></span>](https://docs.microsoft.com/cloud-app-security)
-- [<span data-ttu-id="10d9b-366">New-DlpEdmSchema</span><span class="sxs-lookup"><span data-stu-id="10d9b-366">New-DlpEdmSchema</span></span>](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [<span data-ttu-id="784d8-396">敏感性資訊類型實體定義</span><span class="sxs-lookup"><span data-stu-id="784d8-396">Sensitive information type-entity definitions</span></span>](sensitive-information-type-entity-definitions.md)
+- [<span data-ttu-id="784d8-397">自訂敏感性資訊類型</span><span class="sxs-lookup"><span data-stu-id="784d8-397">Custom sensitive information types</span></span>](custom-sensitive-info-types.md)
+- [<span data-ttu-id="784d8-398">DLP 原則的概觀</span><span class="sxs-lookup"><span data-stu-id="784d8-398">Overview of DLP policies</span></span>](data-loss-prevention-policies.md)
+- [<span data-ttu-id="784d8-399">Microsoft Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="784d8-399">Microsoft Cloud App Security</span></span>](https://docs.microsoft.com/cloud-app-security)
+- [<span data-ttu-id="784d8-400">New-DlpEdmSchema</span><span class="sxs-lookup"><span data-stu-id="784d8-400">New-DlpEdmSchema</span></span>](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
 

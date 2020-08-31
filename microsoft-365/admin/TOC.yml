@@ -22,6 +22,8 @@
               href: setup/setup-apps-for-business.md
         - name: 探索設定頁面和精靈
           href: setup/o365-setup-wizard-and-setup-page.md
+        - name: 保護 Windows 10 電腦
+          href: ../business/secure-win-10-pcs.md
         - name: 安裝 Office App
           href: setup/install-applications.md
         - name: 設定 Windows 裝置

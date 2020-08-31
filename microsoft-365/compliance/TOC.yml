@@ -78,8 +78,51 @@
     - name: 客戶加密箱
       href: customer-lockbox-requests.md
 - name: 管理資訊保護
-  href: protect-information.md
   items:
+    - name: 瞭解您的資料、保護您的資料並防止資料遺失
+      href: protect-information.md
+    - name: 敏感性資訊類型
+      items:
+        - name: 敏感資訊類型實體定義
+          href: sensitive-information-type-entity-definitions.md
+        - name: DLP 功能所尋找的項目
+          href: what-the-dlp-functions-look-for.md
+        - name: 觀看自訂的 DLP 延伸概觀
+          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
+        - name: 自訂內建機密資訊類型
+          href: customize-a-built-in-sensitive-information-type.md
+        - name: 自訂敏感性資訊類型
+          href: custom-sensitive-info-types.md
+        - name: 使用精確資料比對建立自訂敏感性資訊類型
+          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: 建立自訂敏感性資訊類型 - 安全性與合規性中心
+          href: create-a-custom-sensitive-information-type.md
+        - name: '建立自訂的敏感性資訊類型 - PowerShell '
+          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
+        - name: 建立關鍵字字典
+          href: create-a-keyword-dictionary.md
+        - name: 文件指紋
+          href: document-fingerprinting.md
+        - name: 敏感性資訊的 DLP 函數
+          href: what-the-dlp-functions-look-for.md
+    - name: 可訓練分類器
+      items:
+        - name: 開始使用可訓練的分類器 (預覽)
+          href: classifier-getting-started-with.md
+        - name: 使用內建分類器 (預覽)
+          href: classifier-using-a-ready-to-use-classifier.md
+        - name: 建立和訓練分類器 (預覽)
+          href: classifier-creating-a-trainable-classifier.md
+    - name: 資料分類
+      items:
+        - name: 了解資料分類
+          href: data-classification-overview.md
+        - name: 開始使用內容總管
+          href: data-classification-content-explorer.md
+        - name: 開始使用活動總管
+          href: data-classification-activity-explorer.md
+        - name: 資料分類版本資訊
+          href: data-classification-pub-preview-relnotes.md
     - name: 敏感度標籤
       items:
         - name: 了解敏感度標籤
@@ -100,9 +143,77 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: 在 Office 應用程式中使用敏感度標籤
           href: sensitivity-labels-office-apps.md
-    - name: 資料外洩防護 (DLP)
-      href: data-loss-prevention-policies.md
+    - name: 加密
       items:
+        - name: 瞭解加密
+          href: encryption.md
+        - name: 雙重金鑰加密 (預覽)
+          href: double-key-encryption.md
+        - name: Office 365 服務加密
+          href: office-365-service-encryption.md
+        - name: 客戶金鑰
+          items:
+            - name: Office 365 中的客戶金鑰服務加密
+              href: customer-key-overview.md
+            - name: 設定 Office 365 客戶金鑰
+              href: customer-key-set-up.md
+            - name: 管理 Office 365 客戶金鑰
+              href: customer-key-manage.md
+            - name: 滾動或旋轉客戶金鑰或可用性金鑰
+              href: customer-key-availability-key-roll.md
+            - name: 了解客戶金鑰的可用性金鑰
+              href: customer-key-availability-key-understand.md
+        - name: 電子郵件加密
+          href: email-encryption.md
+          items:
+            - name: Office 365 郵件加密 (OME)
+              href: ome.md
+            - name: 設定全新的 Office 365 郵件加密功能
+              href: set-up-new-message-encryption-capabilities.md
+            - name: 定義郵件流規則以加密 Office 365 中的電子郵件
+              href: define-mail-flow-rules-to-encrypt-email.md
+            - name: 將貴組織的品牌新增至您的加密郵件
+              href: add-your-organization-brand-to-encrypted-messages.md
+            - name: 使用 Office 365 郵件加密為貴組織建立敏感性資訊類型原則
+              href: ome-sensitive-info-types.md
+            - name: 管理 Office 365 郵件加密
+              href: manage-office-365-message-encryption.md
+            - name: Office 365 進階郵件加密
+              href: ome-advanced-message-encryption.md
+            - name: 為由 Office 365 進階郵件加密所加密的電子郵件設定到期日
+              href: ome-advanced-expiration.md
+            - name: 撤銷由 Office 365 進階郵件加密所加密的電子郵件
+              href: revoke-ome-encrypted-mail.md
+            - name: 比較 OME 版本
+              href: ome-version-comparison.md
+            - name: Office 365 郵件加密常見問題集
+              href: ome-faq.md
+            - name: Exchange Online 如何保護您的電子郵件機密資料
+              href: exchange-online-secures-email-secrets.md
+            - name: Exchange Online 如何使用 TLS 來保護 Office 365 中的電子郵件連線
+              href: exchange-online-uses-tls-to-secure-email-connections.md
+            - name: BitLocker 與 Distributed Key Manager (DKM) 的加密
+              href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
+            - name: 舊版 OME
+              items:
+                - name: Office 365 郵件加密的舊版資訊
+                  href: legacy-information-for-message-encryption.md
+                - name: 設定舊版 Office 365 郵件加密的 Azure Rights Management
+                  href: set-up-azure-rms-for-previous-version-message-encryption.md
+        - name: SharePoint IRM
+          href: set-up-irm-in-sp-admin-center.md
+        - name: 技術參考
+          href: technical-reference-details-about-encryption.md
+        - name: 適用於 Office 365 的 TLS 1.0 和 1.1 淘汰
+          href: tls-1.0-and-1.1-deprecation-for-office-365.md
+        - name: Office 365 GCC High 和 DoD 中的 TLS 1.0 和 1.1 淘汰
+          href: tls-1-2-in-office-365-gcc.md
+        - name: Office 365 中的 TLS 1.2
+          href: prepare-tls-1.2-in-office-365.md
+    - name: 資料外洩防護 (DLP)
+      items:
+        - name: 瞭解 DLP
+          href: data-loss-prevention-policies.md
         - name: DLP 和 Microsoft Teams
           href: dlp-microsoft-teams.md
         - name: 深入了解端點資料外洩防護 (預覽版)
@@ -131,116 +242,42 @@
           href: form-a-query-to-find-sensitive-data-stored-on-sites.md
         - name: DLP 如何在安全性與合規性中心和 Exchange 系統管理中心之間工作
           href: how-dlp-works-between-admin-centers.md
-    - name: 敏感性資訊類型
-      items:
-        - name: 敏感資訊類型實體定義
-          href: sensitive-information-type-entity-definitions.md
-        - name: DLP 功能所尋找的項目
-          href: what-the-dlp-functions-look-for.md
-        - name: 觀看自訂的 DLP 延伸概觀
-          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
-        - name: 自訂內建機密資訊類型
-          href: customize-a-built-in-sensitive-information-type.md
-        - name: 自訂敏感性資訊類型
-          href: custom-sensitive-info-types.md
-        - name: 使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
-          href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
-        - name: 在安全性與合規性中心建立自訂敏感性資訊類型
-          href: create-a-custom-sensitive-information-type.md
-        - name: 使用 PowerShell 建立自訂的敏感性資訊類型
-          href: create-a-custom-sensitive-information-type-in-scc-powershell.md
-        - name: 建立關鍵字字典
-          href: create-a-keyword-dictionary.md
-        - name: 文件指紋
-          href: document-fingerprinting.md
-        - name: 敏感性資訊的 DLP 函數
-          href: what-the-dlp-functions-look-for.md
-    - name: Microsoft 365 中的加密
-      href: encryption.md
-    - name: Office 365 服務加密
-      href: office-365-service-encryption.md
-    - name: 關於 Office 365 中加密的技術參考詳細資料
-      href: technical-reference-details-about-encryption.md
-    - name: 適用於 Office 365 的 TLS 1.0 和 1.1 淘汰
-      href: tls-1.0-and-1.1-deprecation-for-office-365.md
-    - name: Office 365 GCC High 和 DoD 中的 TLS 1.0 和 1.1 淘汰
-      href: tls-1-2-in-office-365-gcc.md
-    - name: Office 365 中的 TLS 1.2
-      href: prepare-tls-1.2-in-office-365.md
-    - name: Microsoft 365 公開預覽版的雙金鑰加密
-      href: double-key-encryption.md
-    - name: 客戶金鑰
-      items:
-        - name: Office 365 中的客戶金鑰服務加密
-          href: customer-key-overview.md
-        - name: 設定 Office 365 客戶金鑰
-          href: customer-key-set-up.md
-        - name: 管理 Office 365 客戶金鑰
-          href: customer-key-manage.md
-        - name: 滾動或旋轉客戶金鑰或可用性金鑰
-          href: customer-key-availability-key-roll.md
-        - name: 了解客戶金鑰的可用性金鑰
-          href: customer-key-availability-key-understand.md
-    - name: 傳輸中資料的加密
-      href: office-365-encryption-for-data-in-transit.md
-    - name: 電子郵件加密
-      href: email-encryption.md
-      items:
-        - name: Office 365 郵件加密 (OME)
-          href: ome.md
-        - name: 設定全新的 Office 365 郵件加密功能
-          href: set-up-new-message-encryption-capabilities.md
-        - name: 定義郵件流規則以加密 Office 365 中的電子郵件
-          href: define-mail-flow-rules-to-encrypt-email.md
-        - name: 將貴組織的品牌新增至您的加密郵件
-          href: add-your-organization-brand-to-encrypted-messages.md
-        - name: 使用 Office 365 郵件加密為貴組織建立敏感性資訊類型原則
-          href: ome-sensitive-info-types.md
-        - name: 管理 Office 365 郵件加密
-          href: manage-office-365-message-encryption.md
-        - name: Office 365 進階郵件加密
-          href: ome-advanced-message-encryption.md
-        - name: 為由 Office 365 進階郵件加密所加密的電子郵件設定到期日
-          href: ome-advanced-expiration.md
-        - name: 撤銷由 Office 365 進階郵件加密所加密的電子郵件
-          href: revoke-ome-encrypted-mail.md
-        - name: 比較 OME 版本
-          href: ome-version-comparison.md
-        - name: Office 365 郵件加密常見問題集
-          href: ome-faq.md
-        - name: Exchange Online 如何保護您的電子郵件機密資料
-          href: exchange-online-secures-email-secrets.md
-        - name: Exchange Online 如何使用 TLS 來保護 Office 365 中的電子郵件連線
-          href: exchange-online-uses-tls-to-secure-email-connections.md
-        - name: BitLocker 與 Distributed Key Manager (DKM) 的加密
-          href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
-        - name: 舊版 OME
-          items:
-            - name: Office 365 郵件加密的舊版資訊
-              href: legacy-information-for-message-encryption.md
-            - name: 設定舊版 Office 365 郵件加密的 Azure Rights Management
-              href: set-up-azure-rms-for-previous-version-message-encryption.md
-    - name: 在 SharePoint 系統管理中心設定 IRM
-      href: set-up-irm-in-sp-admin-center.md
-    - name: 了解資料分類
-      href: data-classification-overview.md
-      items:
-        - name: 開始使用內容總管
-          href: data-classification-content-explorer.md
-        - name: 開始使用活動總管
-          href: data-classification-activity-explorer.md
-        - name: 資料分類版本資訊
-          href: data-classification-pub-preview-relnotes.md
-        - name: 開始使用可訓練的分類器 (預覽)
-          href: classifier-getting-started-with.md
-        - name: 使用內建分類器 (預覽)
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: 建立和訓練分類器 (預覽)
-          href: classifier-creating-a-trainable-classifier.md
 - name: 管理資訊控管
   items:
-    - name: 管理資訊控管
+    - name: 監管您的資料
       href: manage-information-governance.md
+    - name: 保留及刪除資料
+      items:
+        - name: 了解保留
+          items:
+            - name: 保留原則和標籤
+              href: retention.md
+            - name: 適用於 SharePoint 和 OneDrive 的保留
+              href: retention-policies-sharepoint.md
+            - name: 適用於 Microsoft Teams 的保留
+              href: retention-policies-teams.md
+            - name: 適用於 Exchange 的保留
+              href: retention-policies-exchange.md
+        - name: 開始使用保留
+          href: get-started-with-retention.md
+        - name: 建立保留原則
+          href: create-retention-policies.md
+        - name: 使用檔案計畫
+          href: file-plan-manager.md
+        - name: 建立保留標籤，並在應用程式中使用這些標籤
+          href: create-apply-retention-labels.md
+        - name: 自動將保留標籤套用到內容
+          href: apply-retention-labels-automatically.md
+        - name: 符合美國證券交易委員會規定 17A-4
+          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: 使用 PowerShell 建立保留標籤
+          href: bulk-create-publish-labels-using-powershell.md
+        - name: 事件發生時，開始保留
+          href: event-driven-retention.md
+        - name: 使用保留標籤來管理文件生命週期
+          href: auto-apply-retention-labels-scenario.md
+        - name: 管理資料處置
+          href: disposition.md
     - name: 匯入信箱資料
       items:
         - name: 匯入 PST 檔案概觀
@@ -287,38 +324,6 @@
           href: enable-unlimited-archiving.md
         - name: 設定信箱的封存與刪除原則
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: 保留及刪除資料
-      items:
-        - name: 了解保留
-          items:
-            - name: 保留原則和標籤
-              href: retention.md
-            - name: 適用於 SharePoint 和 OneDrive 的保留
-              href: retention-policies-sharepoint.md
-            - name: 適用於 Microsoft Teams 的保留
-              href: retention-policies-teams.md
-            - name: 適用於 Exchange 的保留
-              href: retention-policies-exchange.md
-        - name: 開始使用保留
-          href: get-started-with-retention.md
-        - name: 建立保留原則
-          href: create-retention-policies.md
-        - name: 使用檔案計畫
-          href: file-plan-manager.md
-        - name: 建立保留標籤，並在應用程式中使用這些標籤
-          href: create-apply-retention-labels.md
-        - name: 自動將保留標籤套用到內容
-          href: apply-retention-labels-automatically.md
-        - name: 符合美國證券交易委員會規定 17A-4
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: 使用 PowerShell 建立保留標籤
-          href: bulk-create-publish-labels-using-powershell.md
-        - name: 事件發生時，開始保留
-          href: event-driven-retention.md
-        - name: 使用保留標籤來管理文件生命週期
-          href: auto-apply-retention-labels-scenario.md
-        - name: 管理資料處置
-          href: disposition.md
     - name: 管理非使用中的信箱
       items:
         - name: 非作用中信箱概觀
@@ -333,10 +338,8 @@
           href: restore-an-inactive-mailbox.md
         - name: 刪除非作用中的信箱
           href: delete-an-inactive-mailbox.md
-    - name: 資料控管的其他資訊
-      items:
-        - name: 觀看 Microsoft 資料控管團隊的影片
-          href: 'https://go.microsoft.com/fwlink/?linkid=867039'
+    - name: 資料控管小組的影片
+      href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: 記錄管理
       items:
         - name: 了解記錄管理
