@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
-ms.openlocfilehash: 36e62600836c66b9e7be61ddd07a6081af4ffbeb
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: d2035ed0805215f1bd8e343f9edf1c557035b5c1
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632160"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307844"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -83,7 +83,7 @@ SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽�
 
 1. **已設定 DKIM** 時，您會如下所示輪轉位元：
 
-   1. [透過 PowerShell 連線至 Office 365 工作負載](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 (該 Cmdlet 來自 Exchange Online。)
+   1. [透過 PowerShell 連線至 Office 365 工作負載](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (該 Cmdlet 來自 Exchange Online。)
    1. 執行下列命令：
 
       ```powershell 
@@ -92,7 +92,7 @@ SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽�
 
 1. 或是，針對 **DKIM 的新實作**：
 
-   1. [透過 PowerShell 連線至 Office 365 工作負載](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window)。 (這是 Exchange Online Cmdlet。)
+   1. [透過 PowerShell 連線至 Office 365 工作負載](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (這是 Exchange Online Cmdlet。)
    1. 執行下列命令：
 
       ```powershell

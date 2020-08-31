@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 建立共用信箱讓組織中的多位使用者共同負責讀取及回覆傳送到某個地址的電子郵件。
-ms.openlocfilehash: 47690e1295b67c01f86429d97e0fc8d82ad58d6f
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 55bfb4a907436a2c3500e2c178990dca8fa9bfba
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529632"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306932"
 ---
 # <a name="create-a-shared-mailbox"></a>建立共用信箱 
 
@@ -128,7 +128,7 @@ ms.locfileid: "46529632"
 4. 在 **[編輯登入狀態]** 飛出視窗中，確認已選取 [封鎖使用者，使其無法登入]、選取 **[儲存]**，然後 **[關閉]**。
 ::: moniker-end
 
-如需有關如何使用 Azure AD PowerShell 封鎖帳戶登入的指示 (包含一次封鎖多個帳戶)，請參閱[使用 Office 365 PowerShell 封鎖使用者帳戶](https://docs.microsoft.com/office365/enterprise/powershell/block-user-accounts-with-office-365-powershell)。
+如需有關如何使用 Azure AD PowerShell 封鎖帳戶登入的指示 (包含一次封鎖多個帳戶)，請參閱[使用 Office 365 PowerShell 封鎖使用者帳戶](https://docs.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell)。
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>將共用信箱新增至 Outlook
 

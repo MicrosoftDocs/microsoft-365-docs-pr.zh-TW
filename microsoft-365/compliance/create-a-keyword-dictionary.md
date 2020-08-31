@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全性與合規性中心建立關鍵字字典的基本步驟。
-ms.openlocfilehash: d3308de0138b13391a5bd8a4493cda87c4023bd8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bad95e9a5605631de3e8652e7243909f28b2abde
+ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686635"
+ms.lasthandoff: 08/26/2020
+ms.locfileid: "47282733"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
-資料外洩防護 (DLP) 可識別、監視及保護您的敏感性項目。 識別敏感性項目有時需要尋找關鍵字，特別是在識別一般內容 (例如醫療保健相關通訊)，或是不適當或偏激的言語。 雖然您可以在敏感性資訊類型中建立關鍵字清單，但關鍵字清單的大小有限，且需要修改 XML 來建立或編輯。 關鍵字字典提供更簡單的關鍵字管理並具有更大的規模，每個字典最多可支持 100,000 個字詞。
+資料外洩防護 (DLP) 可識別、監視及保護您的敏感性項目。 識別敏感性項目有時需要尋找關鍵字，特別是在識別一般內容 (例如醫療保健相關通訊)，或是不適當或偏激的言語。 雖然您可以在敏感性資訊類型中建立關鍵字清單，但關鍵字清單的大小有限，且需要修改 XML 來建立或編輯。 關鍵字字典提供更簡單的關鍵字管理並具有更大的規模，在字典中最多可支援 100KB 個字詞 (壓縮後) 及各式語種。 壓縮後的租用戶限制也是 100 KB。
   
 > [!NOTE]
 > Microsoft 365 資訊保護目前在預覽版中支援下列雙位元組字元集語言：

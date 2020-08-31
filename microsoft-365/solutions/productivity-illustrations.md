@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: d10b4a7d47f849769d0a534941bddc1c3678f3a4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 043f5882dcaa15576317958523d6e57d4667ef45
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695215"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308082"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生產力圖例
 
@@ -113,6 +113,6 @@ This guidance includes Test Lab Guides. For more information, see [Microsoft Sec
   
 ## <a name="see-also"></a>另請參閱
 
-[適用於 SharePoint、Exchange、商務用 Skype 和 Lync 的架構模型](https://docs.microsoft.com/office365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)
+[適用於 SharePoint、Exchange、商務用 Skype 和 Lync 的架構模型](https://docs.microsoft.com/microsoft-365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)
   
-[雲端採用測試實驗室指南 (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[雲端採用測試實驗室指南 (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)

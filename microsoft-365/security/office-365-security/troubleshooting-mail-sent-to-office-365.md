@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文提供將電子郵件傳送至 Microsoft 365 收件匣之問題的疑難排解資訊 & 大量郵遞至 Microsoft 365 客戶的最佳作法。
-ms.openlocfilehash: 0d9c1646aa7491b3da458c7cb0ddeb908873153a
-ms.sourcegitcommit: 93c0088d272cd45f1632a1dcaf04159f234abccd
+ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44208594"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307576"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>疑難排解傳送至 Microsoft 365 的郵件
 
@@ -45,25 +45,25 @@ EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exch
 
 ## <a name="ensure-that-you-do-not-advertise-yourself-as-a-non-routable-ip"></a>確定您未以無法路由傳送的 IP 形式刊登廣告
 
-我們可能不會接受寄件者的電子郵件，而不是寄件者進行反向 DNS 查閱。 在某些情況下，合法寄件者會在嘗試開啟與 EOP 的連線時，宣告自身，將其自我宣告為非網際網路可路由傳送的 IP。 保留用於私人（不可路由傳送）網路的 IP 位址包括：
+我們可能不會接受寄件者的電子郵件，而不是寄件者進行反向 DNS 查閱。 在某些情況下，合法寄件者會在嘗試開啟與 EOP 的連線時，宣告自身，將其自我宣告為非網際網路可路由傳送的 IP。 保留用於私人 (不可路由傳送) 網路的 IP 位址包括：
 
-- 192.168.0.0/16 （或 192.168.0.0-192.168.255.255）
+- 192.168.0.0/16 (或 192.168.0.0-192.168.255.255) 
 
-- 10.0.0.0/8 （或 10.0.0.0-10.255.255.255）
+- 10.0.0.0/8 (或 10.0.0.0-10.255.255.255) 
 
-- 172.16.0.0/11 （或 172.16.0.0-172.31.255.255）
+- 172.16.0.0/11 (或 172.16.0.0 172.31.255.255) 
 
-## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>傳送電子郵件給 Office 365 中的使用者時，收到未傳遞回報（NDR）
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>傳送電子郵件給 Office 365 中的使用者時，收到未傳遞回報 (NDR) 
 
 有些傳遞問題是由 Microsoft 封鎖的寄件者的 IP 位址，或是因為先前的垃圾郵件，將使用者帳戶識別為封鎖的寄件者的結果。 如果您認為您已接收到錯誤 NDR，請先遵循 NDR 訊息中的任何指示來解決問題。
 
-如需您收到之錯誤的詳細資訊，請參閱 Exchange Online 中的[電子郵件未傳遞](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)回報中的錯誤代碼清單。
+如需您收到之錯誤的詳細資訊，請參閱 Exchange Online 中的 [電子郵件未傳遞](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online)回報中的錯誤代碼清單。
 
  例如，如果您收到下列 NDR，它表示 Microsoft 已封鎖傳送 IP 位址：
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
-若要從此清單要求移除，您可以[使用取消列出入口網站，將您自己從 [封鎖的寄件者] 清單中移除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
+若要從此清單要求移除，您可以 [使用取消列出入口網站，將您自己從 [封鎖的寄件者] 清單中移除](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)。
 
 ## <a name="my-email-landed-in-the-recipients-junk-email-folder"></a>收件者的 [垃圾郵件] 資料夾中的我的電子郵件進入
 
@@ -79,7 +79,7 @@ EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exch
 
 ## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>我無法從 Microsoft 365 中的寄件者接收電子郵件
 
- 若要從我們的使用者接收郵件，請確定您的網路允許來自 EOP 在我們資料中心使用的 IP 位址的連線。 如需詳細資訊，請參閱[Exchange Online PROTECTION IP 位址](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
+ 若要從我們的使用者接收郵件，請確定您的網路允許來自 EOP 在我們資料中心使用的 IP 位址的連線。 如需詳細資訊，請參閱 [Exchange Online PROTECTION IP 位址](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
 
 ## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>大量電子郵件至 Microsoft 365 使用者的最佳作法
 
@@ -145,7 +145,7 @@ EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exch
 
 - 避免使用大型圖像和附件的內容，或完全由圖像組成的郵件。
 
-- 您的公開隱私權或 P3P 設定應明確指出追蹤圖元的存在（web 臭蟲或信標）。
+- 您的公開隱私權或 P3P 設定應明確指出追蹤圖元是否存在 (網頁臭蟲或信標) 。
 
 ### <a name="remove-incorrect-email-aliases-from-your-databases"></a>移除資料庫中不正確的電子郵件別名
 

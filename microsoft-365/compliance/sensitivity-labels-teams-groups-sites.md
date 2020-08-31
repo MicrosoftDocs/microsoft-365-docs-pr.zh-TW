@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: 849eae1c2c3153d8f17e561aa82312c95672ec04
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: ecc84196435125c83ff9518c2758e3f2611427b3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845741"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307792"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -357,7 +357,7 @@ ms.locfileid: "46845741"
 
 這表示來自網站和群組、先前套用至容器的任何標籤設定都不會強制執行，而容器則不再顯示標籤。
 
-如果這些容器已套用 Azure AD 分類值，則容器會再次還原為使用分類。 請注意，啟用功能之後所建立的任何新網站或群組都不會顯示標籤或具有分類。 針對這些容器以及任何新容器，您現在可以套用分類值。 如需詳細資訊，請參閱 [SharePoint「新式」網站分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)和[為組織中的 Office 群組建立分類](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)。
+如果這些容器已套用 Azure AD 分類值，則容器會再次還原為使用分類。 請注意，啟用功能之後所建立的任何新網站或群組都不會顯示標籤或具有分類。 針對這些容器以及任何新容器，您現在可以套用分類值。 如需詳細資訊，請參閱 [SharePoint「新式」網站分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)和[為組織中的 Office 群組建立分類](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)。
 
 ## <a name="additional-resources"></a>其他資源
 

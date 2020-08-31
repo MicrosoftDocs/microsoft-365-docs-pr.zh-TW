@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規性中心，您可以集中管理與安全性或合規性相關的所有工作權限。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0a7ca90bfc4a8d323b67528ca850f60059abeb12
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: c18f50fcad7b934e02c2110fa05196874ab0169a
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652834"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307770"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
 
@@ -101,7 +101,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune****。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|新增系統管理員、新增原則和設定、上傳記錄及執行控管動作。|
 |[**Azure 安全性中心**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (即將推出)|檢視安全性原則、檢視安全性狀態、編輯安全性原則、檢視警示和建議、關閉警示和建議。|
-|[**Office 365 服務健康狀態**](https://docs.microsoft.com/office365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
+|[**Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
 |
 
 ### <a name="security-operator"></a>安全性操作員
@@ -119,7 +119,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |**Windows Defender ATP 和 EDR**|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 檢視、調查及回應警示。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune****。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|執行安全性讀取者角色可執行的所有動作，以及檢視核取消警示。|
-|[**Office 365 服務健康狀態**](https://docs.microsoft.com/office365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
+|[**Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
 |
 
 ### <a name="security-reader"></a>安全性讀取者
@@ -138,7 +138,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune****。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|使用唯讀權限來檢視資訊。 <br/><br/> 管理警示。|
 |[**Azure 安全性中心**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|檢視建議和警示。 <br/><br/> 檢視安全性原則。 <br/><br/> 檢視安全性狀態、但無法進行變更。|
-|[**Office 365 服務健康狀態**](https://docs.microsoft.com/office365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
+|[**Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
 |
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>全域管理員可在 Azure Active Directory 中管理角色

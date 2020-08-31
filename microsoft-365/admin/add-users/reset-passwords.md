@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: '瞭解如何在 Microsoft 365 for business 訂閱中重設使用者的密碼。 '
-ms.openlocfilehash: d1c17448a1f9993b056fa2dc428980acf8ef82b4
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 6159b62cb6c1e09cb86732cc27cc4c4c87328a42
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780562"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307286"
 ---
 # <a name="reset-passwords"></a>重設密碼
 
@@ -69,9 +69,9 @@ ms.locfileid: "44780562"
 
 ::: moniker-end
 
-2. 在 [作用中**使用者**] 頁面上，選取使用者，然後選取 [**重設密碼**]。
+2. 在 [作用中 **使用者** ] 頁面上，選取使用者，然後選取 [ **重設密碼**]。
     
-3. 依照「**重設密碼**」頁面上的指示，為使用者自動產生新密碼或為使用者建立新密碼，然後選取 [**重設**]。  
+3. 依照「 **重設密碼** 」頁面上的指示，為使用者自動產生新密碼或為使用者建立新密碼，然後選取 [ **重設**]。  
     
 4. 輸入使用者可以取得的電子郵件地址，讓他們接收新密碼，並追蹤以確保他們知道。
  
@@ -80,11 +80,11 @@ ms.locfileid: "44780562"
 
 如果您忘記密碼，但是您可以登入 Microsoft 365，請使用下列步驟，例如，您的密碼儲存在您的瀏覽器中： 
     
-1. 在右上角 >**我的帳戶**  >  **個人資訊**] 中選取您的名稱（圖示）。 
+1. 在右上角 >**我的帳戶**  >  **個人資訊**] 中，選取 [名稱] (圖示) 。 
           
-2. 在 [**連絡人詳細資料**] 下，仔細檢查您的**備選電子郵件**是否正確，以及您是否已提供行動電話號碼。 如果不是，請立即變更。 
+2. 在 [ **連絡人詳細資料**] 下，仔細檢查您的 **備選電子郵件** 是否正確，以及您是否已提供行動電話號碼。 如果不是，請立即變更。 
         
-3. 登出：在右上角選取您的名稱（如**Diane**），請登出 \> ** **。 
+3. 登出：在上方的 **Diane** 中，選取您的名字 () [ \> **登出**]。 
         
 4. 現在重新登入：請輸入您的使用者名稱 \> **Next** \> ，然後選取 [**忘記密碼**]。 
     
@@ -96,20 +96,20 @@ ms.locfileid: "44780562"
 
 - 請確認您已提供替代連絡人資訊，包括行動電話號碼。 
     
-- 或者，請[致電 Microsoft 支援人員](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。 
+- 或者，請 [致電 Microsoft 支援人員](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。 
     
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>同時為組織中的所有人重設所有商務密碼
 <a name="bkmk_forgot"> </a>
 
-這些步驟適用於有大量使用者的企業。 如果您有成百上千的使用者，請參閱下一節 [大量重設密碼（最多40個使用者一次）]。
+這些步驟適用於有大量使用者的企業。 如果您有成百上千的使用者，請參閱下一節：在大量 (最大的40使用者) 時重設密碼。
   
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
     
-2. 選取 [**顯示名稱**] 旁的選項，以選取您公司中的每個人。 然後取消選取 [自行]。 您在重設使用者的密碼時，您不能重設自己的密碼。
+2. 選取 [ **顯示名稱** ] 旁的選項，以選取您公司中的每個人。 然後取消選取 [自行]。 您在重設使用者的密碼時，您不能重設自己的密碼。
     
-3. 選取 [**重設密碼**]。 
+3. 選取 [ **重設密碼**]。 
 
-4. 依照 [**重設密碼**] 頁面上的指示進行，然後選取 [**重設**]。  如果選擇自動產生密碼，就會顯示新的暫時密碼。   
+4. 依照 [ **重設密碼** ] 頁面上的指示進行，然後選取 [ **重設**]。  如果選擇自動產生密碼，就會顯示新的暫時密碼。   
     
 5. 輸入您可以接收臨時密碼的電子郵件地址。 您必須通知使用者其臨時密碼是什麼。
     
@@ -120,9 +120,9 @@ ms.locfileid: "44780562"
 
 使用 PowerShell！請參閱由 Eyal Doron 撰寫的這篇文章：[使用 PowerShell 管理密碼](https://go.microsoft.com/fwlink/?linkid=853696)。
   
-相關文章︰[設定多個使用者帳戶的密碼](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。
+相關文章︰[設定多個使用者帳戶的密碼](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)。
   
-如需概要資訊，請參閱[PowerShell For Microsoft 365 administrators](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1)。
+如需概要資訊，請參閱 [PowerShell For Microsoft 365 administrators](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1)。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>針對企業中的所有使用者強制執行密碼變更
 <a name="bkmk_forgot"> </a>

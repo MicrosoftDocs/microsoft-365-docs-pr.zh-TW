@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft 123-reg.co.uk。
-ms.openlocfilehash: 3c188c7e9f2f9390aa45196d798e04441d33bcb0
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 51542e1f00153a87ca06ec540d391de6ca621bab
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400578"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307028"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>在123-reg.co.uk 建立 Microsoft 的 DNS 記錄
 
@@ -54,7 +54,7 @@ ms.locfileid: "44400578"
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 [**管理您的 DNS** ] 頁面上，選取 [**高級 DNS** ] 索引標籤。 
+4. 在 [ **管理您的 DNS** ] 頁面上，選取 [ **高級 DNS** ] 索引標籤。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -62,10 +62,10 @@ ms.locfileid: "44400578"
     
     ||||
     |:-----|:-----|:-----|
-    |**主機 名** <br/> |**類型** <br/> |**Destination TXT/SPF** <br/> |
+    |**主機 名** <br/> |**Type** <br/> |**Destination TXT/SPF** <br/> |
     |@  <br/> |TXT/SPF  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-6. 選取 **[新增]**。
+6. 選取 [新增]****。
     
 7. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
@@ -88,21 +88,21 @@ ms.locfileid: "44400578"
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft
 <a name="BKMK_add_MX"> </a>
 
-1. 首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。 系統會提示您先登入。
+1. 首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。系統會提示您先登入。
     
 2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 [**管理您的 DNS** ] 頁面上，選取 [**高級 DNS** ] 索引標籤。 
+4. 在 [ **管理您的 DNS** ] 頁面上，選取 [ **高級 DNS** ] 索引標籤。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**主機 名**|**類型**|**優先順序**|**Destination MX (目的地 MX)**|
+    |**主機 名**|**Type**|**優先順序**|**Destination MX (目的地 MX)**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>* mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **附注：**\<domain-key\>從您的 Microsoft 帳戶取得。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **注意：** 從您的 Microsoft 帳戶取得您的 \<domain-key\>。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![複製並貼上表格中的值](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
@@ -110,20 +110,20 @@ ms.locfileid: "44400578"
     
     ![選取 [新增]](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
-7. 如果有任何其他的 MX 記錄，請選擇該記錄的**刪除（垃圾桶）** 圖示以逐一移除。 
+7. 如果有任何其他 MX 記錄，請選擇 [ **刪除 (垃圾桶) ** 該記錄的圖示來移除每個記錄。 
     
-    ![選取 [刪除] （垃圾桶圖示）](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
+    ![選取 [刪除] (垃圾桶圖示) ](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的六筆 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
 
-1. 首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。 系統會提示您先登入。
+1. 首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。系統會提示您先登入。
     
 2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 [**管理您的 DNS** ] 頁面上，選取 [**高級 DNS** ] 索引標籤。 
+4. 在 [ **管理您的 DNS** ] 頁面上，選取 [ **高級 DNS** ] 索引標籤。 
     
 5. 新增六筆 CNAME 記錄的第一筆。
     
@@ -131,13 +131,13 @@ ms.locfileid: "44400578"
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**主機 名**|**類型**|**Destination CNAME (目的地 CNAME)**|
+    |**主機 名**|**Type**|**Destination CNAME (目的地 CNAME)**|
     |:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
+    |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |webdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
+    |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
    
     ![複製並貼上表格中的值](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
@@ -147,7 +147,7 @@ ms.locfileid: "44400578"
   
 7. 新增其他五筆 CNAME 記錄。
     
-    在 [ **ADVANCED DNS** ] 區段中，使用表格中下一列的值建立記錄，然後再選取 [**新增**] 以完成記錄。 
+    在 [ **ADVANCED DNS** ] 區段中，使用表格中下一列的值建立記錄，然後再選取 [ **新增** ] 以完成記錄。 
     
     重複這個程序，直到六筆 CNAME 記錄全部建立完畢。
     
@@ -155,7 +155,7 @@ ms.locfileid: "44400578"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請勿為 Microsfot 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records#bkmk_spfrecords)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請勿為 Microsfot 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.md)。 
   
 1. 首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。 系統會提示您先登入。
     
@@ -163,15 +163,15 @@ ms.locfileid: "44400578"
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 [**管理您的 DNS** ] 頁面上，選取 [**高級 DNS** ] 索引標籤。 
+4. 在 [ **管理您的 DNS** ] 頁面上，選取 [ **高級 DNS** ] 索引標籤。 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** value from the drop-down list.) 
     
-    |**主機 名**|**類型**|**Destination TXT/SPF**|
+    |**主機 名**|**Type**|**Destination TXT/SPF**|
     |:-----|:-----|:-----|
-    |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |@  <br/> |TXT/SPF  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![123Reg-BP-Configure-4-1](../../media/4697701c-eba0-4b03-8d75-4f7fc3bef94a.png)
   
@@ -182,13 +182,13 @@ ms.locfileid: "44400578"
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
 
-1. 首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。 系統會提示您先登入。
+1. 首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。系統會提示您先登入。
     
 2. On the **Domain name overview** page, select the name of the domain that you want to edit. 
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. 在 [**管理您的 DNS** ] 頁面上，選取 [**高級 DNS** ] 索引標籤。 
+4. 在 [ **管理您的 DNS** ] 頁面上，選取 [ **高級 DNS** ] 索引標籤。 
     
 5. 新增兩筆 SRV 記錄的第一筆：
     
@@ -199,8 +199,8 @@ ms.locfileid: "44400578"
     ||||||
     |:-----|:-----|:-----|:-----|:-----|
     |主機名稱|Type (類型)|Priority (優先順序)|TTL|Destination SRV (目的 SRV)|
-    |_sip。 _tls|SRV|100|3600|1 443 sipdir.online.lync.com。 **This value MUST end with a period (.)**<br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
-    |_sipfederationtls。 _tcp|SRV|100|3600|1 5061 sipfed.online.lync.com。 **This value MUST end with a period (.)** <br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com。 **此值必須以英文句點 (.) 結尾。**<br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com。 **此值必須以英文句點 (.) 結尾。** <br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![複製並貼上表格中的值](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
@@ -210,7 +210,7 @@ ms.locfileid: "44400578"
   
 7. 新增另一筆 SRV 記錄：
     
-    在 [ **ADVANCED DNS** ] 區段中，使用表格中第二列的值來建立記錄，然後再選取 [**新增**] 以完成記錄。 
+    在 [ **ADVANCED DNS** ] 區段中，使用表格中第二列的值來建立記錄，然後再選取 [ **新增** ] 以完成記錄。 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 

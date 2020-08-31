@@ -20,12 +20,12 @@ search.appverid:
 description: 瞭解如何從 Office 365 E4 訂閱進行升級。
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3ab3ac1c85dc3726585f9c414449ff4847626fc8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2587732a6c4092dcb7b53daf9493e7cee2f1987c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688667"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308002"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>從 Office 365 E4 訂閱升級
 
@@ -130,7 +130,7 @@ ms.locfileid: "46688667"
 您可以使用 Microsoft 365 系統管理中心，一次為最多20個使用者重新指派授權。 若要深入瞭解，請參閱 [將使用者移至不同的訂閱](move-users-different-subscription.md)。
 
 > [!TIP]
-> 如果您有許多使用者，您可以 [使用 Office 365 PowerShell 以大量指派使用者授權](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)。
+> 如果您有許多使用者，您可以 [使用 Office 365 PowerShell 以大量指派使用者授權](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell)。
 
 ### <a name="step-4-cancel-the-office-365-e4-subscription"></a>步驟4：取消 Office 365 E4 訂閱
 

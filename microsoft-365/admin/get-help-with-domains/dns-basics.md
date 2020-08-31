@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解網域及其相關聯的 DNS 記錄，協助您管理網域。
-ms.openlocfilehash: a69f6a34585f7ff033a30e10254f29b89d978d3e
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 9819ec858eecb659f8576d9fa3c1ef426d500e80
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079988"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306560"
 ---
 # <a name="dns-basics"></a>DNS 基本知識
 
@@ -188,7 +188,7 @@ Microsoft 365 需要具備數種 DNS 記錄才能搭配您的網域使用。 除
   
 您可以[尋找值清單](information-for-dns-records.md)設定您的網域。 這些都包含在 Microsoft 365 系統管理中心。 
   
-或者，如果您正在規劃部署，建議您檢閱 Microsoft 365 所需的所有 DNS 記錄清單、DNS 記錄的作用與範例值。 請參閱 [Microsoft 365 的外部網域名稱系統記錄](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)。
+或者，如果您正在規劃部署，建議您檢閱 Microsoft 365 所需的所有 DNS 記錄清單、DNS 記錄的作用與範例值。 請參閱 [Microsoft 365 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。
   
 ## <a name="how-can-i-learn-more"></a>如何深入了解？
 

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生產力分數的概覽。
-ms.openlocfilehash: 66ab028282fb8c74087713083e43e22cf6708897
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868852"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307474"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft (預覽的工作效率分數) 
 
@@ -44,7 +44,7 @@ ms.locfileid: "46868852"
 
 - **技術經驗：** 生產力取決於可靠性和能力強的技術，以及 Microsoft 365 的有效使用方式。 我們提供 [端點分析](https://aka.ms/endpointanalytics)，可協助您瞭解使用者的生產力對您的端點硬體和軟體的效能與狀況問題的影響，並提供建議的動作以加以修復;而且我們為您的組織提供 Microsoft 365 網路連線資訊洞察力。
 
-如需概述和必要條件詳細資料，請參閱 [何謂「端點分析](https://docs.microsoft.com/mem/analytics/overview) 」。 若要深入瞭解 Microsoft 365 network connectivity insights，請參閱 [network connectivity 一覽](https://docs.microsoft.com/office365/enterprise/office-365-networking-overview)。
+如需概述和必要條件詳細資料，請參閱 [何謂「端點分析](https://docs.microsoft.com/mem/analytics/overview) 」。 若要深入瞭解 Microsoft 365 network connectivity insights，請參閱 [network connectivity 一覽](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)。
   
 
 ## <a name="how-the-score-is-calculated"></a>計算分數的方式

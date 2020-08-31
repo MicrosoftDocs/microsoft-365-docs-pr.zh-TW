@@ -21,19 +21,19 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: 深入瞭解 Office 365 德國。
-ms.openlocfilehash: e17ce259837167dd4b2b0ab894b00318103f73a5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386790"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307274"
 ---
 # <a name="learn-about-office-365-germany"></a>深入了解 Office 365 Germany
 
 > [!NOTE]
 > Office 365 德國不再接受新的客戶或部署新的服務。 在德國，新的雲端地區是在2020的第一季中提供，以供 Microsoft 365 和 Office 365 使用，這會在德國內提供核心客戶資料派駐服務，以及 Microsoft 全球雲端網路的完整連線能力。
 
-Office 365 德國是一種可在歐洲使用的 Office 365 服務的區別選項。 透過德國法律所制約的獨特資料存取和控制量，它可協助您在德國、歐盟（EU）和歐盟免費交易協會（EFTA）中提供最受管制客戶的需求，方法是：從德國資料中心的數位工作、德國資料中心的資料，以及以德國法律為中心的資料，嚴格的資料存取和控制量。
+Office 365 德國是一種可在歐洲使用的 Office 365 服務的區別選項。 透過德國法律所規定的獨特資料存取和控制量，它可協助您在德國、歐盟 (EU) 和歐盟自由交易協會 (EFTA) 中的最受管制客戶的需求，並提供我們業界領先的生產力服務，以供數位化工作從德國資料中心使用。
   
 資料信任者 T-Systems International (獨立德國公司) 和 Deutsche Telekom 子公司會控制客戶資料的實體和邏輯存取。非由資料信任者 (德國法律所規範) 核准或監督不得存取客戶資料。
   
@@ -45,7 +45,7 @@ Office 365 德國計畫選項會在此孤立環境中盡可能搭配全球泛型
   
 部分 [Office 365 Germany 訂閱方案](https://go.microsoft.com/fwlink/p/?linkid=839016)提供下列服務和功能。 此外，請參閱[線上服務條款](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46)。
   
-- 適用于 enterprise、Office 2016 及 Office 2013<sup>1</sup>的 Microsoft 365 應用程式。 請注意，Office 2013 需要搭配[office 用戶端使用 office 365 新式驗證](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。
+- 適用于 enterprise、Office 2016 及 Office 2013<sup>1</sup>的 Microsoft 365 應用程式。 請注意，Office 2013 需要搭配 [office 用戶端使用 office 365 新式驗證](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)。
     
 - Exchange Online
     
@@ -85,19 +85,19 @@ Office 365 德國計畫選項會在此孤立環境中盡可能搭配全球泛型
     
 - Delve
     
-<sup>1</sup>Office 365 德國方案包括用戶端軟體應用程式，已在使用者的裝置上安裝及執行（「用戶端軟體應用程式」），例如 Microsoft 365 Apps for enterprise、Office 2013 和 Office 2016。 用戶端軟體應用程式不僅在德國資料中心運作，它也可以讓使用者存取不屬於[德國線上服務](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的其他線上服務。 您與 Microsoft 簽訂本合約，表示用戶端軟體應用程式不是[德國線上服務](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德國資料信任者所管控的德國資料所在位置承諾及存取權，僅適用於[德國線上服務](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
+<sup>1</sup>Office 365 德國方案包括用戶端軟體應用程式，已在使用者的裝置上安裝及執行 ( 「用戶端軟體應用程式」 ) ，例如 Microsoft 365 Apps for enterprise、Office 2013 和 Office 2016。 用戶端軟體應用程式不僅在德國資料中心運作，它也可以讓使用者存取不屬於[德國線上服務](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的其他線上服務。 您與 Microsoft 簽訂本合約，表示用戶端軟體應用程式不是[德國線上服務](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德國資料信任者所管控的德國資料所在位置承諾及存取權，僅適用於[德國線上服務](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
   
 ## <a name="general-information"></a>一般資訊
 
 |||
 |-----|-----|
 |登入入口網站  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
-|訂閱、帳單和技術支援  <br/> |以德國為基礎的支援可用德語和英文如需詳細資訊，請參閱[商務產品的連絡人支援-系統管理](../contact-support-for-business-products.md)說明。  <br/> |
-|IP 位址和 URL  <br/> |請參閱 [Office 365 Germany 端點](https://docs.microsoft.com/office365/enterprise/office-365-germany-endpoints)。  <br/> |
-|Yammer  <br/> |無法使用。  <br/> |
+|訂閱、帳單和技術支援  <br/> |以德國為基礎的支援可用德語和英文如需詳細資訊，請參閱 [商務產品的連絡人支援-系統管理](../contact-support-for-business-products.md)說明。  <br/> |
+|IP 位址和 URL  <br/> |請參閱 [Office 365 Germany 端點](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-germany-endpoints)。  <br/> |
+|Yammer  <br/> |不提供。  <br/> |
 |舊于 Office 2013 的 Office 版本，或企業版<sup>1</sup>的 Microsoft 365 應用程式 <br/> |不支援。  <br/> |
 |Office Lens  <br/> |不提供。  <br/> |
 |在 Microsoft 365 中購買網域的能力  <br/> |不提供。  <br/> |
 |SharePoint 市集  <br/> |Microsoft App 市集提供的每一個 App 都是由 Microsoft 或協力廠商 App 發行者所提供，並且受到不同隱私權聲明、條款及條件的規範。Microsoft 或協力廠商 App 發行者可能會視需要存取用於 Microsoft App 市集及任何 App 所提供的資料，以及在美國或是 Microsoft 或 App 發行者，及其關係企業或服務提供者維護設備所在的其他任何國家/地區轉移、儲存和處理資料。請洽詢 App 發行者，確保其符合您 Office 365 Germany 的部署需求。  <br/> |
    
-如需每個 Microsoft 365 方案可用服務的詳細資訊，請參閱[Microsoft 365 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。
+如需每個 Microsoft 365 方案可用服務的詳細資訊，請參閱 [Microsoft 365 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-platform-service-description)。

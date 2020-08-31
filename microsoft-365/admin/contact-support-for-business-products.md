@@ -1,10 +1,10 @@
 ---
-title: 連絡商務產品的客戶支援 - 系統管理說明
+title: 連絡商務產品客戶支援的方式 - 系統管理說明
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,44 +17,48 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: 使用您的國家/地區所列電話號碼，或提交線上服務要求，或造訪 Microsoft 網上商店以取得技術和帳單支援。
+description: 使用您的國家或地區所列的電話號碼，或提交線上服務要求，以取得技術和帳單支援。
 feedback_system: None
-ms.openlocfilehash: 80fa10e01934e98f16fa36403268229409638d68
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.date: 7/28/2020
+ms.openlocfilehash: f508607bb19a15fa089cf13eecfd7047f2e6f7bf
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44388242"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307358"
 ---
-# <a name="contact-support-for-business-products---admin-help"></a>連絡商務產品的客戶支援 - 系統管理說明
+# <a name="ways-to-contact-support-for-business-products---admin-help"></a>連絡商務產品客戶支援的方式 - 系統管理說明
 
 ::: moniker range="o365-worldwide"
 
-## <a name="online-support"></a>[線上支援](#tab/online)
+> [!IMPORTANT]
+> 您必須是商務版訂閱的管理員才能使用這些支援方式。 如果您不是商務版系統管理員，請使用 [此支援頁面](https://support.microsoft.com/help/contactus)。
 
-啟動線上服務要求，以節省時間。我們會協助您找出解決方案，或是為您洽詢專家，專家會再以電子郵件或電話連絡您。[了解初始支援回應時間](https://go.microsoft.com/fwlink/p/?LinkId=518251)。
+透過 [檢查目前的服務狀況](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health) 以開始。 您可在<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">服務狀況儀表板</a>上查看關於目前和過去問題的詳細資訊。 若遇到未列出的問題，可採用下列其中一種方式獲得支援：
+
+## <a name="online-support"></a>線上支援人員
+
+線上開始您的服務要求以節省時間。 我們將協助您找到解決方案或為您提供技術支援。
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 如果您收到訊息說明您沒有權限存取此頁面或執行此動作，則您不是系統管理員。[誰擁有公司的系統管理員權限？](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
-2. 選取 **[需要協助嗎?]** 按鈕。
+2. 選取 [需要協助嗎?]**** 按鈕。
 
-3. 在 **[需要協助嗎?]** 窗格中，告訴我們您需要的協助，然後按下 Enter 鍵。
+3. 在 **[需要協助嗎?]** 窗格中，告訴我們您需要的協助，然後按下 **Enter** 鍵。
 
 4. 如果結果沒有幫助，請選取 **[連絡客戶支援]**。
 
-5. 如果需要可輸入描述，確認您的連絡人電話號碼和電子郵件地址，選取您慣用的連絡方式，然後選取 **[與我連絡]**。 預計等候時間會顯示在 **[需要協助嗎?]** 窗格中。
+5. 輸入問題的描述，確認您的連絡人電話號碼和電子郵件地址，選取您慣用的連絡方式，然後選取 **[與我連絡]**。 預計等候時間會顯示在 **[需要協助嗎?]** 窗格中。
 
-## <a name="phone-support"></a>[電話支援](#tab/phone)
+## <a name="phone-support"></a>電話支援
 
 英文的帳單支援提供時間為週一至週五的上午 9 點到下午 5 點 (澳洲為上午 9 點到下午 6 點)。\
 英文的技術支援提供時間為每週 7 天，每天 24 小時。\
-系統管理員在撥打電話時，必須準備好帳戶詳細資料。\
+系統管理員在撥打電話時，必須準備好帳戶詳細資料。
+
+> [!NOTE]
+> 為更進一步保護貴組織，我們在現有的手機驗證程序中新增了 PIN 型驗證步驟。 若您從為註冊到貴組織設定檔的號碼與我們聯繫， Microsoft 支援代表會將驗證碼傳送至您 Microsoft 365 系統管理中心設定檔中註冊的電子信箱或電話號碼。 您必須向支援代表提供此代碼，才能授權他們存取貴組織的帳戶。
 
 - **美國請撥 1 800 865 9408。**
 
@@ -64,23 +68,9 @@ ms.locfileid: "44388242"
 
 - **英國請撥 0800 032 6417。**
 
-如果上方並未列出您的商務用 Microsoft 365 支援電話號碼，請使用下方的下拉式功能表選擇您所在的國家/地區。
+如果上方並未列出您適用的支援電話號碼，請使用下方的下拉式功能表尋找您國家/地區的電話號碼。
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
-
-若要瞭解如何開啟服務要求，請選取上方的 **[線上支援]** 索引標籤。
-
-## <a name="in-store-support"></a>[店內支援](#tab/instore)
-
-現在您可以到當地 Microsoft Store 預約 Answer Desk 專家，協助解決您的 Microsoft 365 問題。
-
-1. 前往 [[Microsoft Store 排程]](https://go.microsoft.com/fwlink/?LinkID=2041482) 頁面，並選取 **[排程約會]**。
-
-2. 輸入您的所在地點，然後搜尋來尋找您附近的 Microsoft Store。
-
-3. 選擇商店，然後選取 **[立刻排程服務預約]**。
-
----
 
 ::: moniker-end
 
@@ -92,15 +82,15 @@ ms.locfileid: "44388242"
 
 21Vianet 運作的 Office 365 技術支援小組僅會針對與 21Vianet 運作的 Office 365 相關問題進行疑難排解。來自客戶網路的問題不在 Office 365 支援範圍內，在這些情況下，客戶必須與其網路小組協同作業以取得協助。
 
-### <a name="community-and-self-service-support-options"></a>社群和自助支援選項
+## <a name="community-and-self-service-support-options"></a>社群和自助支援選項
 
 自助支援適用於所有由 21Vianet 運作的 Office 365 使用者，且包括疑難排解工具和影片、說明文章和影片，以及 [Office 365 社群](https://go.microsoft.com/fwlink/p/?linkid=842838)中的論壇和 Wiki。如需更多自助資源，請參閱[了解由 21Vianet 運作的 Office 365](services-in-china/services-in-china.md)。
 
-### <a name="pre-sales-support"></a>售前支援
+## <a name="pre-sales-support"></a>售前支援
 
 由 21Vianet 運作的 Office 365 售前支援提供的協助如下：訂閱功能和權益、方案比較、定價和授權，以及協助找出能滿足您業務需求的正確解決方案。此外，售前支援可以幫助您尋找合作夥伴，以及購買和註冊試用。您可以在星期一到星期五當地營業時間內撥打電話。售前支援和技術支援的服務電話號碼相同。如需相關指示，請參閱[連絡客戶支援](#contact-support)。
 
-### <a name="billing-and-subscription-management-support"></a>帳務和訂閱管理支援
+## <a name="billing-and-subscription-management-support"></a>帳務和訂閱管理支援
 
 您可透過線上支援或於週一至週五中國的營業時間 (北京時間) 內撥打電話，以取得帳務和訂閱管理問題的協助。帳務和訂閱管理支援與技術支援的服務電話相同，且線上服務要求的提交程序也相同。您可於 21Vianet 運作的 Office 365 入口網站上找到支援電話號碼。如需相關指示，請參閱[連絡客戶支援](#contact-support)。
 
@@ -118,7 +108,7 @@ ms.locfileid: "44388242"
 
 - 取消付費訂閱
 
-### <a name="technical-support"></a>技術支援
+## <a name="technical-support"></a>技術支援
 
 由 21Vianet 運作的 Office 365 訂閱的技術支援提供基本安裝、設定和一般技術使用的協助。下表列出了這些問題的部分範例。
 
@@ -130,7 +120,7 @@ ms.locfileid: "44388242"
 > [!NOTE]
 > 您可以在這裡了解如何連絡技術支援：[連絡客戶支援](#contact-support)。技術支援不包括對協力廠商服務或增益集的疑難排解。在[社群](https://go.microsoft.com/fwlink/p/?linkid=842838)中深入了解如何從其他客戶找到解答。
 
-### <a name="technical-support-case-handling"></a>技術支援案例的處理
+## <a name="technical-support-case-handling"></a>技術支援案例的處理
 
 當某案例處於未處理狀態時，21Vianet 會根據問題類型和客戶影響程度的評估來指定該案例的嚴重層級。下表列出了問題類型和嚴重層級的範例。
 
@@ -140,7 +130,7 @@ ms.locfileid: "44388242"
 | 嚴重度 B (高) | 服務雖可用，但卻有受損問題。此情形對業務的影響較為中等，且可於營業時間內解決。單一使用者、客戶或服務受到部分影響。 | <ul><li>Outlook 中的 [傳送] 按鈕變成亂碼。</li> <li>無法從 EAC (Exchange 系統管理中心) 設定，但可在 Windows PowerShell 中設定。</li></ul> |
 | 嚴重度 C (非重大) | 此情形對業務的影響最小。問題很重要但不會對客戶的目前服務或生產力造成重大影響。單一使用者遇到部分中斷問題，但有可採取的因應措施。 | <ul><li>如何設定永不過期的使用者密碼。</li> <li>使用者不能刪除 Exchange Online 中的連絡人資訊。</li></ul> |
 
-### <a name="technical-support-initial-response-times"></a>技術支援的初始回應時間
+## <a name="technical-support-initial-response-times"></a>技術支援的初始回應時間
 
 初始回應時間取決於上述的嚴重層級。21Vianet 客戶服務小組會根據嚴重層級以合理頻率追蹤調查及客戶通訊。21Vianet 也預期客戶會以合理層級協同合作。
 
@@ -154,22 +144,22 @@ ms.locfileid: "44388242"
 
 <sup>2</sup> 嚴重度 A 僅適用於透過銷售帳戶經理與 21Vianet 已簽署進階線上服務合約的客戶。嚴重度 A 僅適用於技術支援。若是帳單與訂閱管理支援，最高的嚴重層級為 B。
 
-### <a name="technical-support-working-hours"></a>技術支援工作時間
+## <a name="technical-support-working-hours"></a>技術支援工作時間
 
 嚴重度 A：24\*7 連續服務
 
 嚴重度 B/C：每天 9:00 ~24:00 (北京時間)，365 天。
 
-### <a name="contact-support"></a>連絡客戶支援
+## <a name="contact-support"></a>連絡客戶支援
 
 > [!NOTE]
 > 輔助支援選項僅適用於已訂閱 Office 365 的組織系統管理員。如果您使用 Office 365 但不是系統管理員，您仍可在社群論壇中取得支援，或連絡系統管理員取得支援。
 
-#### <a name="open-an-online-request"></a>提出線上要求
+### <a name="open-an-online-request"></a>提出線上要求
 
 線上開始您的服務要求以節省時間。在 Office 365 系統管理中心中，選擇 **[支援]** \> **[新增服務要求]**。
 
-#### <a name="call-support"></a>電話支援
+### <a name="call-support"></a>電話支援
 
 電話支援。如果線上要求發生任何問題，可以撥打 (86) 400-089-0365 取得電話支援。
 
@@ -177,7 +167,7 @@ ms.locfileid: "44388242"
 
 21Vianet 了解即時提供合格專業人員的技術支援是雲端服務的重點優勢。在提供使用者支援服務方面，客戶的 IT 部門同樣扮演著不可或缺的重要角色。
 
-#### <a name="administrator-roles-and-responsibilities"></a>管理員角色和責任
+### <a name="administrator-roles-and-responsibilities"></a>管理員角色和責任
 
 在客戶組織中，只有具備系統管理員角色的人員才能獲授權存取由 21Vianet 運作的 Office 365 入口網站的 [系統管理] 區段，以及直接與 21Vianet 就 Office 365 服務要求進行通訊。
 
@@ -203,7 +193,7 @@ ms.locfileid: "44388242"
 
 管理員需為客戶的使用者提供初步協助。若管理員無法使用自助支援資源來解決問題，則需[連絡客戶支援](#contact-support)。
 
-#### <a name="21vianet-support-role"></a>21Vianet 支援角色
+### <a name="21vianet-support-role"></a>21Vianet 支援角色
 
 21Vianet 支援角色可以：
 
@@ -221,11 +211,11 @@ ms.locfileid: "44388242"
 
 - 透過問卷調查，持續收集客戶對於我們如何改善服務的意見反應。
 
-### <a name="feature-availability"></a>功能可用性
+## <a name="feature-availability"></a>功能可用性
 
 若要檢視跨 Office 365 規劃的功能可用性，請參閱 [Office 365 服務說明](https://go.microsoft.com/fwlink/p/?linkid=846911)
 
-### <a name="follow-us-on-wechat"></a>在 WeChat 上關注我們
+## <a name="follow-us-on-wechat"></a>在 WeChat 上關注我們
 
 掃描此 QR 碼，在 WeChat 上關注我們，並取得由 21Vianet 運作的 Office 365 的最新更新。
 
@@ -242,7 +232,7 @@ ms.locfileid: "44388242"
 > [!NOTE]
 > 下列所有支援選項皆適用於 Microsoft Cloud Germany。如需 Microsoft 如何使用在您連絡 Microsoft 客戶支援時所提供資料的詳細資訊，請參閱[隱私權聲明](https://go.microsoft.com/fwlink/p/?LinkId=512132)。
 
-### <a name="get-assisted-support"></a>取得輔助支援
+## <a name="get-assisted-support"></a>取得輔助支援
 
 輔助支援選項僅適用於已訂閱 Office 365 Germany 的組織系統管理員。如果您在公司或學校使用 Office 365 Germany 但不是系統管理員，您仍可在社群論壇中取得支援，或連絡系統管理員或 IT 部門以取得支援。
 
@@ -252,10 +242,10 @@ ms.locfileid: "44388242"
 
 | 區域 | 電話號碼 | 小時 |
 |-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 德國 | 0800 589 2330 | 帳單支援：德文：週一-週五上午 9 點-下午 5 點柏林；英文：週一-週五上午 9 點-下午 5 點柏林  技術支援：德文：每週 7 天，每天 24 小時；英文：每週 7 天，每天 24 小時  備用電話號碼：069 380 789 305 (以當地通話費率計費) |
-| 歐洲經濟區中的其他所有市場 | +49 69 380 789 305 | 帳單支援：德文：週一-週五上午 9:00 - 下午 5:00 柏林 (UTC+1)  英文：週一-週五上午 9:00 - 下午 5:00 柏林 (UTC+1)  技術支援：德文：每週 7 天，每天 24 小時  英文：每週 7 天，每天 24 小時  可撥打國際電話至德國以取得電話支援服務。 按國際通話費率計費。 您可以透過系統管理中心提交支援票證以省去通話費。 |
+| 德國 | 0800&nbsp;589&nbsp;2330 | 帳單支援︰ <ul><li>德文：柏林時間星期一至星期五上午 9 點到下午 5 點</li><li>英文：柏林時間星期一至星期五上午 9 點到下午 5 點</li></ul>技術支援： <ul><li>德文：全年無休</li><li>英文：全年無休</li></ul>備用電話號碼︰069 380 789 305 (按本地通話費率計費) |
+| 歐洲經濟區中的其他所有市場 | +49&nbsp;69&nbsp;380&nbsp;789&nbsp;305 | 帳單支援︰ <ul><li>德文：柏林時間 (UTC+1) 星期一至星期五上午 9 點到下午 5 點</li><li>英文：柏林時間 (UTC+1) 星期一至星期五上午 9 點到下午 5 點</li></ul>技術支援： <ul><li>德文：全年無休</li><li>英文：全年無休</li></ul>可透過撥打至德國的國際通話來取得電話支援。 按國際通話費率計費。 您可以透過系統管理中心提交支援票證以省去通話費。 |
 
-### <a name="let-our-community-help"></a>讓我們的社群提供協助。
+## <a name="let-our-community-help"></a>讓我們的社群提供協助。
 
 您也可以[搜尋商務用 Microsoft 365 社群論壇](https://go.microsoft.com/fwlink/p/?LinkId=518605)，查看已知問題和熱門主題，或是提出新問題。社群論壇由受過專業訓練的 Microsoft 支援專員監視，可以協助您解決問題。
 

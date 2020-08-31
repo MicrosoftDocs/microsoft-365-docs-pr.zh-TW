@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 系統管理員可以深入瞭解與使用 (連接器（也稱為「郵件流程情報」) ）相關聯之郵件傳遞的錯誤碼。
-ms.openlocfilehash: b345b52f572efca2aca1fde6ba720d733e521cc4
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e8427f3e0341ccb381121b6cdc83d20727713d4c
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827710"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307914"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP 中的郵件流程情報
 
@@ -62,7 +62,7 @@ ms.locfileid: "46827710"
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>如何修正錯誤碼 450 4.4.316？
 
-- 如果您的內部部署環境中有信箱，您必須修改防火牆設定，以允許 TCP 埠25上來自 Microsoft 365 IP 位址的連線到您的內部部署電子郵件伺服器。 如需 Microsoft 365 IP 位址的清單，請參閱 [microsoft 365 URLs 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)。
+- 如果您的內部部署環境中有信箱，您必須修改防火牆設定，以允許 TCP 埠25上來自 Microsoft 365 IP 位址的連線到您的內部部署電子郵件伺服器。 如需 Microsoft 365 IP 位址的清單，請參閱 [microsoft 365 URLs 和 IP 位址範圍](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)。
 
 - 若您的內部部署環境中未傳遞任何郵件，請按一下警示中的 [ **立即修正** ]，讓 Microsoft 365 可以立即拒絕具有無效收件者的郵件。 這會降低超出組織的配額以取得無效收件者的風險，這可能會影響一般郵件傳遞。 或者，您可以使用下列指示以手動修正問題：
 

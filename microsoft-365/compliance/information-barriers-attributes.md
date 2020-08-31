@@ -14,50 +14,50 @@ ms.collection:
 localization_priority: None
 description: 這是您用來定義資訊障礙區段之 Azure Active Directory 使用者帳戶屬性的參考文章。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75a568b4d54432de0b72c379e83077c222acb687
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 6b6fb9cbbe5840888114ba99a604d16117ec795d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035049"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307992"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>資訊屏障原則的屬性
 
-Azure Active Directory 中的某些屬性可用於分割使用者。 在定義區段之後，就可以使用這些區段做為資訊屏障原則的篩選器。 例如，您可以使用**部門**，依組織內的部門定義使用者的區段（假設沒有任何單一員工同時針對兩個部門運作）。 
+Azure Active Directory 中的某些屬性可用於分割使用者。 在定義區段之後，就可以使用這些區段做為資訊屏障原則的篩選器。 例如，您可以使用 **部門** 在組織內依部門定義使用者的區段 (假設沒有任何人同時在兩個部門上運作) 。 
 
 本文說明如何使用具有資訊障礙的屬性，並提供可使用的屬性清單。 若要深入瞭解資訊障礙，請參閱下列資源：
 - [資訊屏障](information-barriers.md)
 - [在 Microsoft 小組中定義資訊障礙的原則](information-barriers-policies.md)
-- [編輯（或移除）資訊屏障原則](information-barriers-edit-segments-policies.md)
+- [編輯 (或移除) 資訊屏障原則](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>如何使用資訊屏障原則中的屬性
 
-本文所列的屬性可以用來定義或編輯使用者的區段。 在[資訊關卡原則](information-barriers-policies.md)中，您定義的區段充當參數（稱為*UserGroupFilter*值）。
+本文所列的屬性可以用來定義或編輯使用者的區段。 在[資訊屏障原則](information-barriers-policies.md)中，已定義的區段做為參數 (稱為*UserGroupFilter*值) 。
 
-1. 決定要用來定義線段的屬性。 （請參閱本文中的[參考](#reference)一節。）
+1. 決定要用來定義線段的屬性。  (請參閱本文中的 [參考](#reference) 一節。 ) 
 
-2. 請確定使用者帳戶已填入您在步驟1中所選取之屬性的值。 查看使用者帳戶詳細資料，必要時，編輯使用者帳戶以包含屬性值。 
+2. 請確定使用者帳戶已填入值，以供您在步驟1中選取的屬性 (s) 。 查看使用者帳戶詳細資料，必要時，編輯使用者帳戶以包含屬性值。 
 
-    - 若要編輯多個帳戶（或使用 PowerShell 編輯單一帳戶），請參閱[使用 Office 365 PowerShell 設定使用者帳戶屬性](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell)。
+    - 若要編輯多個帳戶 (或使用 PowerShell 編輯單一帳戶) ，請參閱 [Configure user account properties With Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)。
 
-    - 若要編輯單一帳戶，請參閱[使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
+    - 若要編輯單一帳戶，請參閱 [使用 Azure Active Directory 新增或更新使用者的設定檔資訊](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。
 
 3. [使用 PowerShell 定義線段](information-barriers-policies.md#define-segments-using-powershell)，類似下列範例：
 
     |範例  |指令程式  |
     |---------|---------|
     |使用部門屬性定義名為 Segment1 的區段     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
-    |使用 MemberOf 屬性定義名為 SegmentA 的區段（假設此屬性包含群組名稱，例如 "BlueGroup"）     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
-    |使用 ExtensionAttribute1 定義名為 DayTraders 的段落（假設此屬性包含職稱，例如 "DayTrader"）|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+    |使用 MemberOf 屬性定義名為 SegmentA 的區段 (假設此屬性包含群組名稱，例如 "BlueGroup" )      | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
+    |使用 ExtensionAttribute1 定義名為 DayTraders 的區段 (假設此屬性包含職稱，例如 "DayTrader" ) |`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > 當您定義區段時，請針對所有的區段使用相同的屬性。 例如，如果您使用*部門*定義部分區段，請使用*部門*定義所有的區段。 不要使用*MemberOf*來定義某些區段使用*部門*和其他。 請確定您的區段沒有交疊;每一位使用者都應該被指派為一個段落。 
+    > 當您定義區段時，請針對所有的區段使用相同的屬性。 例如，如果您使用 *部門*定義部分區段，請使用 *部門*定義所有的區段。 不要使用*MemberOf*來定義某些區段使用*部門*和其他。 請確定您的區段沒有交疊;每一位使用者都應該被指派為一個段落。 
 
 ## <a name="reference"></a>參考
 
 下表列出您可以與資訊障礙搭配使用的屬性。
 
-|Azure Active Directory 屬性名稱<br/>（LDAP 顯示名稱）  |Exchange 屬性名稱  |
+|Azure Active Directory 屬性名稱<br/> (LDAP 顯示名稱)   |Exchange 屬性名稱  |
 |---------|---------|
 |顯       | 顯        |
 |Company     |Company         |

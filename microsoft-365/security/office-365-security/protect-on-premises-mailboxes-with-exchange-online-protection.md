@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在中國使用 Office 365 的系統管理員可以瞭解如何使用獨立 Exchange Online Protection (EOP) 來保護其內部部署信箱。
-ms.openlocfilehash: 57b9e7519edf92438662ecbf27c93b662d9e8f71
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ca3f7f1ffc91b404ac59e92b40ae1f95709ec3ff
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826810"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307746"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>使用獨立版 EOP 保護中國的內部部署信箱
 
@@ -58,7 +58,7 @@ ms.locfileid: "46826810"
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>步驟 4：允許輸入連接埠 25 SMTP 存取
 
-設定連接器之後，請等待 72 小時以允許傳播 DNS 記錄更新。 接著限制防火牆或郵件伺服器上的輸入連接埠 25 SMTP 流量，以僅接受來自 EOP 資料中心的郵件 (尤其是來自[ Office 365 URL 和 IP 位址範圍所列 IP 位址的郵件)。](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)(部分機器翻譯)。 這會限制您可接收的輸入郵件範圍，以保護內部部署環境的安全。 此外，若您在郵件伺服器上進行設定，以控制允許連線執行郵件轉送的 IP 位址，請一併更新這些設定。
+設定連接器之後，請等待 72 小時以允許傳播 DNS 記錄更新。 接著限制防火牆或郵件伺服器上的輸入連接埠 25 SMTP 流量，以僅接受來自 EOP 資料中心的郵件 (尤其是來自[ Office 365 URL 和 IP 位址範圍所列 IP 位址的郵件)。](https://docs.microsoft.com/microsoft-365/enterprise/managing-office-365-endpoints)(部分機器翻譯)。 這會限制您可接收的輸入郵件範圍，以保護內部部署環境的安全。 此外，若您在郵件伺服器上進行設定，以控制允許連線執行郵件轉送的 IP 位址，請一併更新這些設定。
 
 > [!TIP]
 > 將 SMTP 伺服器的連線時間設定設為超過 60 秒。此設定適用於大部分情況，例如在傳送具有大型附件的郵件時可稍許延遲。

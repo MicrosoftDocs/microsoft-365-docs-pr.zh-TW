@@ -17,21 +17,28 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 699cea6aec6f11462aed0c08db98ca4620df519a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f4bbbe8726370297e9ef6317cd468789bb3b3bfe
+ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686557"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47300431"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
-[自訂敏感性資訊類型](custom-sensitive-info-types.md) 用來協助防止意外或不當地共用敏感性資訊。 身為系統管理員，您可以使用安全性與合規性中心或 PowerShell 來根據模式、辨識項 (關鍵字如 *員工*、 *徽章*、 *識別碼*等)、鄰近字元 (辨識項與特定模式中字元的鄰近程度)，以及信賴等級，來定義自訂敏感性資訊類型。 這類自訂敏感性資訊類型符合許多組織的業務需求。
+[的自訂機密資訊類型](custom-sensitive-info-types.md) 用於協助識別機密項目，這樣您可以防止它們不小心或不適當地被共用。 您可以根據下列項目來定義自訂機密資訊類型：
 
-但是，如果您想要使用確切資料值，而非僅比對泛型模式的自訂敏感性資訊類型，該怎麼做？ 使用以精確資料比對 (EDM) 為基礎的分類，您可以建立其設計目的為以下的自訂敏感性資訊類型：
+- 模式
+- 關鍵字證據，例如 *employee*、 *識別證*，或 *識別碼*
+- 字元以特定模式接近證據
+- 信賴等級
+
+ 這類自訂敏感性資訊類型符合許多組織的業務需求。
+
+但是，如果您想要一種使用精確數據值的自定義敏感信息類型，而非根據通用模式找到的匹配，該怎麼辦？ 使用以精確資料比對 (EDM) 為基礎的分類，您可以建立其設計目的為以下的自訂敏感性資訊類型：
 
 - 動態且可更新；
-- 更可調整；
+- 更可以調整的；
 - 造成較少的誤判；
 - 使用結構化的敏感性資料；
 - 更安全地處理敏感性資訊；以及
@@ -39,7 +46,7 @@ ms.locfileid: "46686557"
 
 ![以 EDM 為基礎的分類](../media/EDMClassification.png)
 
-以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日或每週重新整理，而且可以包含最多 1 億列資料。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以對原則使用以 EDM 為基礎的分類，例如 [資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或  [Microsoft Cloud App Security 檔案原則](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
+以 EDM 為基礎的分類可讓您建立自訂敏感性資訊類型，其參考敏感性資訊資料庫中的確切值。 資料庫可以每日重新整理，而且可以包含最多 1 億資料列。 因此，隨著員工、病患或客戶來來去去，以及記錄變更，您的自訂敏感性資訊類型會維持最新且適用。 同時，您可以對原則使用以 EDM 為基礎的分類，例如 [資料外洩防護原則](data-loss-prevention-policies.md) (DLP) 或  [Microsoft Cloud App Security 檔案原則](https://docs.microsoft.com/cloud-app-security/data-protection-policies)。
 
 > [!NOTE]
 > Microsoft 365 資訊保護目前在預覽版中支援下列雙位元組字元集語言：
@@ -89,23 +96,30 @@ ms.locfileid: "46686557"
 
 ### <a name="part-1-set-up-edm-based-classification"></a>第 1 部分：設定以 EDM 為基礎的分類
 
-設定和配置以 EDM 為基礎的分類涉及將敏感性資料儲存為 .csv 格式、定義您的敏感性資訊的資料庫結構描述、建立規則套件，以及上傳結構描述和規則套件。
+設定及安裝以 EDM 為基礎的分類會涉及：
 
-#### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定義用於敏感性資訊的資料庫結構描述
+1. [以 .csv 格式儲存機密資料](#save-sensitive-data-in-csv-format)
+2. [定義您的機密資訊資料庫架構](#define-the-schema-for-your-database-of-sensitive-information)
+3. [建立規則套件](#set-up-a-rule-package)
+
+
+#### <a name="save-sensitive-data-in-csv-format"></a>以 .csv 格式儲存機密資料
 
 1. 找出您要使用的敏感性資訊。 將資料匯出至應用程式，例如 Microsoft Excel，並將檔案以 .csv 格式儲存。 資料檔案可能包含：
       - 最多 1 億列敏感性資料
       - 每個資料來源最多 32 個資料行 (欄位)
       - 最多 5 個資料行 (欄位) 標示為可搜尋
 
-2. 以 .csv 檔案格式將敏感性資料結構化，使得第一列包含用於以 EDM 為基礎的分類的欄位名稱。 在您的 .csv 檔案中，您可能會有欄位名稱，例如 "ssn"、"birthdate"、"firstname"、"lastname" 等等。 請注意，資料行標題的名稱中不能包含空格或底線。 舉例來說，我們的 .csv 檔案稱為 *PatientRecords.csv*，且其資料行包括 *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *SSN*等。
+2. 以 .csv 檔案格式將敏感性資料結構化，使得第一列包含用於以 EDM 為基礎的分類的欄位名稱。 在您的 .csv 檔案中，您可能會有欄位名稱，例如 "ssn"、"生日"、"名字"、"姓氏" 等等。 欄標題名稱不能包含空格或底線。 例如，在本文我們所使用的 .csv 檔案範例稱為「PatientRecords *.csv*，而其欄包含 *PatientID*、 *MRN*、 *LastName*、 *FirstName*、 *的 SSN*等等。
+
+#### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定義用於敏感性資訊的資料庫結構描述
 
 3. 以 XML 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為  **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行： 
 
       `\<Field name="" searchable=""/\>`。
 
       - 使用資料行名稱作為 *欄位名稱* 值。
-      - 對您想讓它可供搜尋最多 5 個欄位的欄位，使用 *searchable="true"* 。 您必須至少將一個欄位指定為可搜尋。
+      - 對您想讓它可供搜尋最多 5 個欄位的欄位，使用 *searchable="true"* 。 至少必須有一個欄位可供搜尋。
 
       例如，下列 XML 檔會為病患記錄資料庫定義結構描述，並將五個欄位指定為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 以及  *DOB*。
 
@@ -152,65 +166,7 @@ ms.locfileid: "46686557"
 > [!NOTE]
 > 這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。 在您執行使用新增項目的步驟之前，必須先完成更新。
 
-既然已定義您敏感性資訊資料庫的結構描述，下一個步驟是設定規則套件。 繼續前往 [設定規則套件](#set-up-a-rule-package)這一節。
-
-#### <a name="editing-the-schema-for-edm-based-classification"></a>編輯以 EDM 為基礎的分類的結構描述
-
-如果您想要變更 **edm.xml** 檔案，例如變更哪些欄位用於以 EDM 為基礎的分類，請遵循下列步驟進行：
-
-1. 編輯您的 **edm.xml** 檔案 (這是本文 [定義結構描述](#define-the-schema-for-your-database-of-sensitive-information) 一節所討論的檔案)。
-
-2. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。
-
-3. 若要更新資料庫結構描述，請執行下列 Cmdlet，一次一個：
-
-      ```powershell
-      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-      ```
-
-      系統會提示您確認，如下所示：
-
-      > 確認
-      >
-      > 是否確定要執行此動作？
-      >
-      > 將更新資料存放區 'patientrecords' 的 EDM 結構描述。
-      >
-      > \[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：
-
-      > [!TIP]
-      > 若要不確認即變更，請在步驟 3 中改用此 Cmdlet：Set-DlpEdmSchema -FileData $edmSchemaXml
-
-      > [!NOTE]
-      > 這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。 在您執行使用新增項目的步驟之前，必須先完成更新。
-
-## <a name="removing-the-schema-for-edm-based-classification"></a>移除以 EDM 為基礎的分類的結構描述
-
-(如有需要) 如果您想要移除 EDM 型分類使用的結構描述，請遵循下列步驟：
-
-1. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。
-
-2. 執行下列 PowerShell Cmdlet，將 "patientrecords" 的資料存放區名稱取代為您要移除的資料存放區名稱：
-
-      ```powershell
-      Remove-DlpEdmSchema -Identity patientrecords
-      ```
-
-      系統會提示您確認，如下所示：
-
-      > 確認
-      >
-      > 是否確定要執行此動作？
-      >
-      > 將移除資料存放區 'patientrecords' 的 EDM 結構描述。
-      >
-      > \[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：
-
-      > [!TIP]
-      >  若要不確認即變更，請在步驟 2 中改用此 Cmdlet：Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
-
-### <a name="set-up-a-rule-package"></a>設定規則套件
+#### <a name="set-up-a-rule-package"></a>設定規則套件
 
 1. 以 XML 格式建立規則套件 (使用 Unicode 編碼方式)，類似下列範例。 (您可以複製、修改及使用我們的範例)。
 
@@ -279,7 +235,7 @@ ms.locfileid: "46686557"
 
 此時，您已設定以 EDM 為基礎的分類。 下一個步驟是要對敏感性資料雜湊，然後上傳用於編製索引的雜湊。
 
-回想一下前面的程序，我們的 PatientRecords 結構描述將五個欄位定義為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 和  *DOB*。 我們的範例規則套件包含這些欄位，並會參照資料庫結構描述檔案 (**edm.xml**)，一個  *ExactMatch*  項目會有一個可搜尋欄位。 請考慮下列 ExactMatch 項目：
+回想一下前面的程序，我們的 PatientRecords 結構描述將五個欄位定義為可搜尋： *PatientID*、 *MRN*、 *SSN*、 *Phone* 和  *DOB*。 我們的範例規則套件包含這些欄位，並參照資料庫架構檔（**edm .xml**），其中一個 *ExactMatch* 每個可搜尋欄位的專案。 請考慮下列 ExactMatch 項目：
 
 ```xml
 <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
@@ -311,9 +267,141 @@ ms.locfileid: "46686557"
 > [!NOTE]
 > 這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。 在您執行使用新增項目的步驟之前，必須先完成更新。
 
+#### <a name="editing-the-schema-for-edm-based-classification"></a>編輯以 EDM 為基礎的分類的結構描述
+
+如果您想要變更 **edm.xml** 檔案，例如變更哪些欄位用於以 EDM 為基礎的分類，請遵循下列步驟進行：
+
+1. 編輯您的 **edm.xml** 檔案 (這是本文 [定義結構描述](#define-the-schema-for-your-database-of-sensitive-information) 一節所討論的檔案)。
+
+2. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。
+
+3. 若要更新資料庫結構描述，請執行下列 Cmdlet，一次一個：
+
+      ```powershell
+      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      ```
+
+      系統會提示您確認，如下所示：
+
+      > 確認
+      >
+      > 是否確定要執行此動作？
+      >
+      > 將更新資料存放區 'patientrecords' 的 EDM 結構描述。
+      >
+      > \[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：
+
+      > [!TIP]
+      > 若要不確認即變更，請在步驟 3 中改用此 Cmdlet：Set-DlpEdmSchema -FileData $edmSchemaXml
+
+      > [!NOTE]
+      > 這可能要花 10 到 60 分鐘的時間，才能將 EDMSchema 更新為新增項目。 在您執行使用新增項目的步驟之前，必須先完成更新。
+
+#### <a name="removing-the-schema-for-edm-based-classification"></a>移除以 EDM 為基礎的分類的結構描述
+
+(如有需要) 如果您想要移除 EDM 型分類使用的結構描述，請遵循下列步驟：
+
+1. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。
+
+2. 執行下列 PowerShell Cmdlet，將 "patientrecords" 的資料存放區名稱取代為您要移除的資料存放區名稱：
+
+      ```powershell
+      Remove-DlpEdmSchema -Identity patientrecords
+      ```
+
+      系統會提示您確認：
+
+      > 確認
+      >
+      > 是否確定要執行此動作？
+      >
+      > 將移除資料存放區 'patientrecords' 的 EDM 結構描述。
+      >
+      > \[Y\] 是 \[A\] 全部皆是 \[N\] 否 \[L\] 全部皆否 \[?\] 說明 (預設值為 "Y")：
+
+      > [!TIP]
+      >  若要不確認即變更，請在步驟 2 中改用此 Cmdlet：Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
+
+
+<!-- salt notes
+need two salting procedures, one for onestep from the externally facing and another for two step, on an internal machine then the upload from the external machine
+
+- create A  folder put the edmupload agent and, csv and salt file there, run all processes there
+- 
+- stuff you need to have first: DataStoreName, /DataFile name (csv file)  /Hashlocation
+
+- salt can be randomly generated by Microsoft or can be provided by the customer. If provided by the customer it must follow  format of 64 character, and can contain only letters or 0-9 characters.  Use a website to generate a valid salt value.
+ 
+- can run EDMuploadagent.exe from PS or Windows cmd window . tested on Windows Server 2016 or Windows 10 and dot net version 4.6.2
+
+when defiuning the schema file the searchable fields must be either an out of box SIT or custom SIT, only 5 fields )column headings) can be searchable
+
+1. From outbound access device from the cmd prompt run EdmUploadAgent.exe /Authorize -  
+2. data store schema must have already been uploaded
+3.  create hash first then do upload
+4. EdmUploadAgent.exe /CreateHash /DataFile (where the data file is ) E:\emd\test\data\schema32_1000000,csv /HashLocation  (where to store it) E:\edm\tat\hash this makes the salt file and the hash file as output
+5. next is upload EdmUploadAgent.exe /UploadHash /DataStoreName (found in the Schema file DataSore name="FOO" /HashFile (path to hash file locaztion and file name /HashLocation path to hash)  for example
+1.EdmUploadAgent/exe /UploadHash /DataStoreName schema321 /HashFile E:\edm\test\hash\schema32_10000000.EdmHash /HashLocation E:\edm\test\hash  -this one  uses MSFT generated salt, so no need to provide
+
+Salt is an optional parameter so if yo uwant to use a custom salt add /salt and the salt value if salt file not copied to the outbound machine 
+
+OR copy both files hash and salt to the same directory and the commmand will get both
+
+
+OR do it in single step hash, salt ulopad
+
+!! once they download the updated upload agent they will always have SALT, there is no going back.
+
+
+all in one step: EdmUploadAgent.exe /UploadData /DataStoreName schema321 /DataFile E:\edm\test\data\schema32_10000.csv /HashLocation E:\edm\test\hash
+
+tshooting/check status cmd
+
+
+
+Once it gets to completed the admin can start using it in the custom SIT
+
+they have to get their own custom SALT
+
+just copy SALT over in a secure fashion
+
+
+
+
+
+
+
+
+
+
+1.
+6.
+7.
+1.  
+
+
+ -->
+
 ### <a name="part-2-hash-and-upload-the-sensitive-data"></a>第 2 部分：雜湊及上傳敏感性資料
 
-在此階段，您會設定自訂安全性群組和使用者帳戶，並設定 EDM 上傳代理程式工具。 然後，您會使用工具來為敏感性資料雜湊，並上傳已雜湊的資料，以便編製索引。
+在此階段中，您要設定自訂安全性群組和使用者帳戶，並設定 EDM Upload Agent tool 上傳代理工具。 然後，您可以對敏感數據使用該工具在雜湊中加入字串，然後將其上傳。
+
+雜湊和上傳可以使用一部電腦來完成，或者您也可以將雜湊步驟與上傳步驟分開，以提高安全性。
+
+如果您想要從一部電腦進行雜湊和上傳，您必須從一部可直接連線至 Microsoft 365 租用者的電腦執行。 這要求您明文的敏感性資料在該電腦上進行雜湊。
+
+如果您不想公開明文機密的資料檔，可以在安全位置的電腦上雜湊，然後將雜湊檔和鹽檔複製到可直接連線到 Microsoft 365 租用者的電腦。 在這個案例中，您將需要在兩部電腦上都有 EDMUploadAgent。 
+
+#### <a name="prerequisites"></a>必要條件
+
+- Microsoft 365的工作或學校帳戶, 該帳戶將新增至 **EDM\_DataUploaders** 的安全性群組
+- Windows 10 或 Windows Server 2016 電腦，其中包含執行 EDMUploadAgent 的 .NET 版本4.6.2
+- 在你所上傳電腦上的目錄有：
+    -  EDMUploadAgent
+    - 在我們的範例中，您在 csv 格式 **PatientRecords** 的機密項目檔案
+    -  以及輸出雜湊和鹽數值檔案
+    - 從 **edm.xml** 檔案的資料存儲名稱，在這個範例中的如其 `PatientRecords`
 
 #### <a name="set-up-the-security-group-and-user-account"></a>設定安全性群組和使用者帳戶
 
@@ -321,12 +409,12 @@ ms.locfileid: "46686557"
 
 2. 將一或多個使用者新增至 **EDM\_DataUploaders** 安全性群組  (這些使用者將管理敏感性資訊的資料庫)。
 
-3. 請確定管理敏感性資料的每個使用者，為用於 EDM 上傳代理程式之電腦上的本機系統管理員。
+#### <a name="hash-and-upload-from-one-computer"></a>雜湊並從一部電腦上傳
 
-#### <a name="set-up-the-edm-upload-agent"></a>設定 EDM 上傳代理程式
+此電腦必須能夠直接存取您的 Microsoft 365 租用者。
 
 >[!NOTE]
-> 在開始此程序之前，請確定您是  **EDM\_DataUploaders**  安全性群組的成員，以及您電腦上的本機系統管理員。
+> 開始此程式之前，請確認您是 **EDM 的成員\_DataUploaders** 安全性群組。
 
 #### <a name="links-to-edm-upload-agent-by-subscription-type"></a>依訂閱類型的 EDM 上傳代理程式連結
 
@@ -334,41 +422,57 @@ ms.locfileid: "46686557"
 - [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
 - [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
 
-1. 下載並安裝您的訂閱的適當 [EDM 上傳代理程式](#links-to-edm-upload-agent-by-subscription-type)。 根據預設，安裝位置應該是  **C:\\Program Files\\Microsoft\\EdmUploadAgent**。
+1. 為 EDMUploadAgent 建立工作目錄。 例如， **C:\EDM\Data**。 將 **PatientRecords** 檔案放在這裡。
 
-   > [!TIP]
-   > 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
+2. 把適合您的訂閱, 下載並安裝到[EDM 上傳代理](#links-to-edm-upload-agent-by-subscription-type), 步驟1您所建立目錄中 。
 
-   > [!NOTE]
-   > 您每天最多可以使用 EDMUploadAgent 將資料上傳到任何指定的資料儲存區兩次。
+> [!NOTE]
+> 上方連結的 EDMUploadAgent 已更新，可自動為雜湊資料新增鹽值。 或者，您也可以提供自己的鹽值。 使用此版本後，您將無法使用舊版的 EDMUploadAgent。
+>
+> 您每天最多可以使用 EDMUploadAgent 將資料上傳到任何指定的資料儲存區兩次。
 
-2. 若要授權 EDM 上傳代理程式，請開啟 Windows 命令提示字元 (以系統管理員身分)，然後執行下列命令：
+> [!TIP]
+> 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
+
+2. 授權 EDM 上傳代理、開啟命令提示字元視窗（以系統管理員身分），切換至 **C:\EDM\Data** 目錄，然後執行下列命令：
 
    `EdmUploadAgent.exe /Authorize`
 
-3. 使用您的公司或學校帳戶登入已新增至 EDM_DataUploaders 安全性群組的 Office 365。
+3. 用您已加入EDM_DataUploaders 安全性群組的Microsoft 365的工作或學校帳戶來登入. 您的租戶信息將從用戶帳戶中提取出來以建立連接。
 
-下一個步驟是使用 EDM 上傳代理程式來為敏感性資料雜湊，然後上傳已雜湊的資料。
-
-#### <a name="hash-and-upload-the-sensitive-data"></a>雜湊及上傳敏感性資料
-
-將敏感性資料檔案 (回想我們的範例是 **PatientRecords.csv**) 儲存至電腦上的本機磁碟機  (我們將範例  **PatientRecords.csv**  檔案儲存至  **C:\\Edm\\Data**。)
-
-若要為敏感性資料雜湊並上傳，請在 Windows 命令提示字元中執行下列命令：
+4. 若要為敏感性資料雜湊並上傳，請在Command Prompt 命令提示字元視窗中執行下列命令：
 
 `EdmUploadAgent.exe /UploadData /DataStoreName \<DataStoreName\> /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
-範例：**EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\\Edm\\Hash\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
+範例： **EdmUploadAgent/UploadData/DataStoreName PatientRecords/DataFile C:\Edm\Hash\PatientRecords.csv/HashLocation C:\Edm\Hash**
 
-若要在隔離的環境中區隔並執行敏感性資料的雜湊，請分別執行雜湊和上傳步驟。
+這會自動在雜湊中添加隨機生成的鹽值，以提高安全性。 或者，如果您想要使用自己的加密鹽值，請在命令列中新增 **/Salt <saltvalue>**。 此值必須是64個字元，且只能包含 a-z 和0-9 個字元。
 
-若要為敏感性資料雜湊，請在 Windows 命令提示字元中執行下列命令：
+5. 執行此命令以查看上傳狀態：
+
+`EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+
+範例： **EdmUploadAgent/GetSession/DataStoreName PatientRecords**
+
+尋找 **ProcessingInProgress**的狀態。 每隔幾分鐘再次檢查，直到狀態變更為 **完成**。 狀態完成後，您的 EDM 資料就可以使用了。
+
+#### <a name="separate-hash-and-upload"></a>雜湊和上傳分開
+
+在安全的環境中，在電腦上執行雜湊。
+
+1. 在Command Prompt 命令提示視窗中，執行下列命令：
 
 `EdmUploadAgent.exe /CreateHash /DataFile \<DataFilePath\> /HashLocation \<HashedFileLocation\>`
 
 例如：
 
-> **EdmUploadAgent.exe /CreateHash /DataFile C:\\Edm\\Data\\PatientRecords.csv /HashLocation C:\\Edm\\Hash**
+> **EdmUploadAgent/CreateHash/DataFile C:\Edm\Data\PatientRecords.csv/HashLocation C:\Edm\Hash**
+
+如果您沒有指定 [**/Salt <saltvalue>**] 選項，則會輸出雜湊檔和含這些副檔名的鹽值檔案：
+- .EdmHash
+- .EdmSalt
+
+2. 請以安全的方式, 將這些檔案複製到您用來上傳機密專案 csv 檔案（PatientRecords）的電腦。
 
 若要上傳已雜湊的資料，請在 Windows 命令提示字元中執行下列命令：
 
@@ -396,16 +500,16 @@ ms.locfileid: "46686557"
 
 #### <a name="refreshing-your-sensitive-information-database"></a>重新整理您的敏感性資訊資料庫
 
-您可以每日或每週重新整理您的敏感性資訊資料庫，而 EDM 上傳工具可以重新為敏感性資料進行雜湊，然後重新上傳已雜湊的資料。
+您可以每天重新整理您的機密資訊資料庫，而 EDM 上傳工具可以將機密資料重新編制索引，然後重新上傳 已編制索引的資料。
 
 1. 決定您重新整理敏感性資訊資料庫的程序和頻率 (每日或每週)。
 
-2. 將敏感性資料重新匯出至應用程式，例如 Microsoft Excel，並將檔案儲存為 .csv 格式。 當您遵循 [雜湊及上傳敏感性資料](#hash-and-upload-the-sensitive-data)中所述的步驟時，請保留所使用的相同檔案名稱和位置。
+2. 將敏感性資料重新匯出至應用程式，例如 Microsoft Excel，並將檔案儲存為 .csv 格式。 當您遵循 [雜湊及上傳敏感性資料](#part-2-hash-and-upload-the-sensitive-data)中所述的步驟時，請保留所使用的相同檔案名稱和位置。
 
       > [!NOTE]
       > 如果 .csv 檔案的結構 (欄位名稱) 沒有任何變更，重新整理資料時，您不需要對資料庫結構描述檔案進行任何變更。 但如果您必須進行變更，請務必相應地編輯資料庫結構描述和規則套件。
 
-3. 使用 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) 將 [雜湊及上傳敏感性資料](#hash-and-upload-the-sensitive-data) 程序中的步驟 2 和 3 自動化。 您可以使用數個方法來排程工作：
+3. 使用 [工作排程器](https://docs.microsoft.com/windows/desktop/TaskSchd/task-scheduler-start-page) 將 [雜湊及上傳敏感性資料](#part-2-hash-and-upload-the-sensitive-data) 程序中的步驟 2 和 3 自動化。 您可以使用數個方法來排程工作：
 
       | 方法             | 處理方式 |
       | ---------------------- | ---------------- |

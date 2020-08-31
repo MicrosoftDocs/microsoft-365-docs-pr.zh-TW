@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 深入瞭解一般資料保護法規 (GDPR) 管理未成年人之個人資料的規章。
-ms.openlocfilehash: dcf2c98906830e0007747e2dd90e67b9dc85a5bb
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: a738e22a0ac0b995c8e44fcf4cc5a2eb47375be5
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45103093"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306548"
 ---
 # <a name="minors-and-acquiring-add-ins-from-the-store"></a>對存放區中的增益集進行未成年人和取得
 
@@ -65,17 +65,17 @@ ms.locfileid: "45103093"
   
 如果啟用 Active Directory 驗證程式庫 (ADAL) ，則 Windows 的 Word、Excel 及 PowerPoint 2013 會支援相同的各處檢查。 規範有兩個選項，如接下來所述。
   
-- **啟用 ADAL**。 本文說明如何啟用 ADAL for Office 2013：搭配[使用 Microsoft 365 新式驗證與 office 用戶端](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。<br/>您也需要將登錄機碼設定為啟用 ADAL，如在[Windows 裝置上啟用 Office 2013 新式驗證](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，您必須安裝下列 Office 2013 的四月更新：
+- **啟用 ADAL**。 本文說明如何啟用 ADAL for Office 2013：搭配 [使用 Microsoft 365 新式驗證與 office 用戶端](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)。<br/>您也需要將登錄機碼設定為啟用 ADAL，如在 [Windows 裝置上啟用 Office 2013 新式驗證](../security-and-compliance/enable-modern-authentication.md)中所述。<br/>此外，您必須安裝下列 Office 2013 的四月更新：
     
   - [Office 2013 的安全性更新說明：4月10日（2018）](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
   - [2018年4月3日，Office 2013 的更新 (KB4018333) ](https://support.microsoft.com/help/4018333/april-3-2018-update-for-office-2013-kb4018333)
     
-- **不要啟用 ADAL**。 如果您無法在 Office 2013 中啟用 ADAL，我們建議使用「群組原則」來關閉 Office 用戶端的存放區。 有關如何關閉 Office 相關應用程式設定的資訊位於[這裡](https://technet.microsoft.com/library/cc178992.aspx)。
+- **不要啟用 ADAL**。 如果您無法在 Office 2013 中啟用 ADAL，我們建議使用「群組原則」來關閉 Office 用戶端的存放區。 有關如何關閉 Office 相關應用程式設定的資訊位於 [這裡](https://technet.microsoft.com/library/cc178992.aspx)。
 
 ## <a name="related-articles"></a>相關文章
 
 [在系統管理中心部署增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
 
-[管理管理中心內的增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center)
+[在系統管理中心管理增益集](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center)
     

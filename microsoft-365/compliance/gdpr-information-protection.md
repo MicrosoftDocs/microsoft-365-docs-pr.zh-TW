@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 196cbc0ebc05683315766b736dd9d5fc2d92afd2
-ms.sourcegitcommit: 1c90bcc5c56f24895f01c3e0423c3f6b73715c13
+ms.openlocfilehash: 02dbb22ad47fbacf964308d2b4a989f34b6d6c9d
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44214567"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307680"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>使用 Microsoft 365 功能實現 GDPR 資訊保護
 
@@ -32,9 +32,9 @@ Microsoft 365 提供了豐富的功能組合，可協助您達成一般資料保
 
 ## <a name="information-protection"></a>資訊保護
 
-Office 365 提供豐富的資料管理功能組合。如需有關尋找、分類、保護及監控個人資料的說明，請參閱 [GDPR 的 Office 365 資訊保護](https://docs.microsoft.com/office365/enterprise/office-365-information-protection-for-gdpr)。
+Office 365 提供豐富的資料管理功能組合。如需有關尋找、分類、保護及監控個人資料的說明，請參閱 [GDPR 的 Office 365 資訊保護](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)。
 
-如需內部部署伺服器的協助，包括檔案共用、SharePoint Server、Exchange Server、商務用 Skype Server、Project Server 和 Office Online Server，請參閱＜[內部部署 Office 伺服器的 GDPR](https://docs.microsoft.com/office365/enterprise/gdpr-for-office-servers)＞。 
+如需內部部署伺服器的協助，包括檔案共用、SharePoint Server、Exchange Server、商務用 Skype Server、Project Server 和 Office Online Server，請參閱＜[內部部署 Office 伺服器的 GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-for-office-servers)＞。 
 
 ## <a name="identity-and-access-management"></a>身分識別和存取管理
 
@@ -50,7 +50,7 @@ Azure Active Directory 和其他 Microsoft 365 功能提供了豐富的功能組
 Microsoft 提供下列建議設定，可作為起點設定：
 
 - [身分識別與裝置存取設定](../enterprise/microsoft-365-policies-configurations.md)：可達成三層保護 (基本、機密、高度管制) 的建議原則設定。本指導包含 Exchange Online 和 SharePoint Online (包含商務用 OneDrive) 的建議原則。
-- [政治活動、非營利組織及其他敏捷組織的安全性指導](https://docs.microsoft.com/office365/enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)：這包含同一組原則，但提供 BYOD 環境及 B2B 帳戶的額外指導。
+- [政治活動、非營利組織及其他敏捷組織的安全性指導](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)：這包含同一組原則，但提供 BYOD 環境及 B2B 帳戶的額外指導。
 
 ## <a name="threat-protection"></a>威脅防護
 

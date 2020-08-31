@@ -13,31 +13,31 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1db3deb6be37fc9b22f4de73e55e8f59e2c5d35b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: adce3f2525c92b8cee565f759a94081bc2f75231
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44393914"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47306512"
 ---
 # <a name="contact-support-for-nigeria"></a>奈及利亞的連絡人支援
 
 [尋找其他國家或地區](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話號碼
-01 271 0156
+01 912 5070
 
 選取選項9
 
 輸入程式碼7705
 
 ## <a name="hours"></a>小時
-### <a name="billing-support"></a>帳單支援：
+### <a name="billing-support"></a>帳單支援︰
 
 英文：週一至週五上午9點-下午5點
 
 ### <a name="technical-support"></a>技術支援：
 
-英文：每週7天、每天24小時
+英文：全年無休
 
 適用本機通話費用

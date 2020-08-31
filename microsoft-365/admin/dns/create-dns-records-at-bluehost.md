@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Bluehost。
-ms.openlocfilehash: 7b241c4635ecc4a8092702f95d19df7ed94ce1cd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400554"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307040"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>在 Bluehost 建立 Microsoft 的 DNS 記錄
 
@@ -49,22 +49,22 @@ ms.locfileid: "44400554"
   
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面的 [**網域**] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
+2. 在 [ **網域** ] 頁面的 [ **網域** ] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
-3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
+3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器** ] 列中，選取 [ **管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
     |||||
     |:-----|:-----|:-----|:-----|
     |**Host Record** <br/> |**TTL** <br/> |**類型** <br/> |**TXT Value** <br/> |
     |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
 6. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
@@ -89,29 +89,29 @@ ms.locfileid: "44400554"
 
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面的 [**網域**] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
+2. 在 [ **網域** ] 頁面的 [ **網域** ] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
-3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
+3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器** ] 列中，選取 [ **管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
     |**Host Record**|**TTL**|**類型**|**指向**|**優先順序**|
     |:-----|:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/>**附注：**\<*domain-key*\>從您的 Microsoft 帳戶取得。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |@  <br/> |14400  <br/> |MX  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>**注意：** 從您的 Microsoft 帳戶取得您的 \<*domain-key*\>。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![從下拉式清單中選擇 [類型]](../../media/70791420-d83c-4a5d-a46c-5cc3bc67f565.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
     ![選取 [新增記錄]](../../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
   
-6. 如果**mx （郵件交換器）** 區段中有任何其他 MX 記錄，請將其刪除。 
+6. 如果 Mx 中有任何其他 MX 記錄 ** (郵件交換器) ** ] 區段中，將每個記錄都刪除。 
     
-    若為其他其中一個 MX 記錄，請選取 [**刪除]。**
+    若為其他其中一個 MX 記錄，請選取 [ **刪除]。**
     
     ![針對每個額外的 MX 記錄選取 [刪除]](../../media/6be17f54-3f33-47af-a9db-4689141530c2.png)
   
@@ -126,16 +126,16 @@ ms.locfileid: "44400554"
 
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面的 [**網域**] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
+2. 在 [ **網域** ] 頁面的 [ **網域** ] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
-3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
+3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器** ] 列中，選取 [ **管理 DNS 記錄**]。
     
-4. 在 [ **A （主機）** 記錄] 區段中，找到**自動**探索記錄的列，然後針對該列選取 [**刪除**]。 
+4. 在 [ ** (主機) ** 記錄] 區段中，找出 **自動** 探索記錄的列，然後針對該資料列選取 [ **刪除** ]。 
     
     > [!IMPORTANT]
-    > 在新增 Microsoft 所需的**自動**探索記錄之前，您必須*先*刪除現有的**自動**探索記錄。 Bluehost 不允許您同時維護兩個**自動**探索記錄。 
+    > 在新增 Microsoft 所需的**自動**探索記錄之前，您必須*先*刪除現有的**自動**探索記錄。 Bluehost 不允許您同時維護兩個 **自動** 探索記錄。 
   
     ![選取 [刪除]](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
@@ -145,9 +145,9 @@ ms.locfileid: "44400554"
   
 6. 建立六筆 CNAME 記錄的第一筆。
     
-    在 [ **DNS 區域編輯器**] 頁面的 [**新增 DNS 記錄**] 區域，于新記錄的方塊中，輸入或複製並貼上下表中第一列的值。 
+    在 [ **DNS 區域編輯器** ] 頁面的 [ **新增 DNS 記錄** ] 區域，于新記錄的方塊中，輸入或複製並貼上下表中第一列的值。 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
     |**Host Record**|**TTL**|**類型**|**指向**|
     |:-----|:-----|:-----|:-----|
@@ -159,13 +159,13 @@ ms.locfileid: "44400554"
    
     ![建立第一個 CNAME 記錄](../../media/4f12e9b1-9dec-4bc2-aa15-8bffa71fe131.png)
   
-7. 選取 [**新增記錄**]。
+7. 選取 [ **新增記錄**]。
     
     ![選取 [新增記錄]](../../media/c2782250-a9a6-4aee-bb15-f57cb0008587.png)
   
 8. 逐一新增其餘五筆 CNAME 記錄。
     
-    仍然在 [**新增 DNS 記錄**] 區段中，使用表格中下一列的值來建立記錄，然後再選取 [**新增記錄**] 以完成記錄。 
+    仍然在 [ **新增 DNS 記錄** ] 區段中，使用表格中下一列的值來建立記錄，然後再選取 [ **新增記錄** ] 以完成記錄。 
     
     重複這個程序，直到六筆 CNAME 記錄全部建立完畢。
     
@@ -173,27 +173,27 @@ ms.locfileid: "44400554"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
   
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面的 [**網域**] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
+2. 在 [ **網域** ] 頁面的 [ **網域** ] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
-3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
+3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器** ] 列中，選取 [ **管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
         
     |**Host Record**|**TTL**|**類型**|**TXT Value**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |14400  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |@  <br/> |14400  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![複製 TXT 值](../../media/b2dabd7a-ee3d-4209-aa1e-0233eb8cf3b9.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
     ![選取 [新增記錄]](../../media/c050e9a2-2274-4640-8f0f-6752d382df5d.png)
   
@@ -202,32 +202,32 @@ ms.locfileid: "44400554"
 
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面的 [**網域**] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
+2. 在 [ **網域** ] 頁面的 [ **網域** ] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
-3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
+3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器** ] 列中，選取 [ **管理 DNS 記錄**]。
     
 4. 建立兩筆 SRV 記錄的第一筆。
     
-    在 [ **DNS 區域編輯器**] 頁面的 [**新增 DNS 記錄**] 區域，于新記錄的方塊中，輸入或複製並貼上下表中第一列的值。 
+    在 [ **DNS 區域編輯器** ] 頁面的 [ **新增 DNS 記錄** ] 區域，于新記錄的方塊中，輸入或複製並貼上下表中第一列的值。 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
-    |**Service** (服務)|**Protocol** (通訊協定)|**Host** (主機)|**TTL**|**類型**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**指向**|
+    |**服務**|**Protocol** (通訊協定)|**Host**|**TTL**|**類型**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**指向**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |_tls  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |14400  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![複製新記錄的值](../../media/e2911bca-c00b-4b8a-837f-f1d438c474c4.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
     ![選取 [新增記錄]](../../media/0fd6a587-03fd-4bce-8321-b14e6ad21f5c.png)
   
 6. 新增另一筆 SRV 記錄。
     
-    仍然在 [**新增 DNS 記錄**] 區段中，使用資料表中另一列的值來建立記錄，然後再選取 [**新增記錄**] 以完成記錄。 
+    仍然在 [ **新增 DNS 記錄** ] 區段中，使用資料表中另一列的值來建立記錄，然後再選取 [ **新增記錄** ] 以完成記錄。 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 

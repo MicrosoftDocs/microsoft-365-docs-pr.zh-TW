@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 摘要：此計劃與實作指南適用於因快速發展而導致威脅增加的組織。
-ms.openlocfilehash: 98ede8a7dade750413dbdf2f35394cb8b15513e5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 79384277ec470d5545e9fe8127a95532e892fb45
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652882"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307880"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南
 
@@ -62,6 +62,6 @@ ms.locfileid: "46652882"
 
 ## <a name="see-also"></a>另請參閱
 
-[雲端採用測試實驗室指南 (TLG)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[雲端採用測試實驗室指南 (TLG)](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[Microsoft Cloud IT 架構資源](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources)
+[Microsoft Cloud IT 架構資源](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)

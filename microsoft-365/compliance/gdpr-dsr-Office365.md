@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3f2f5525337ded683145a6d570562784910f236
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: df3288d8b54d60bc34bbc81132b6d6bc85cd18f2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126734"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307714"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Office 365 資料主體要求
 
@@ -1427,7 +1427,7 @@ Power BI 依賴用於其儀表板和報告的基礎來源資料，才能完整�
 
 解決 DSR 要求來限制處理資料的另一種方法，就是是關閉 Office 365 服務。 這會影響整個組織中的所有使用者，並防止每個人使用服務，或存取服務中的資料。
 
-關閉服務最方便的方式是使用 Office 365 PowerShell，並從組織中的所有使用者移除對應的使用者授權。這會實際上限制任何人存取該服務中的資料。如需詳細指示，請參閱[使用 Office 365 PowerShell 停用服務的存取](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell)，並遵循程序從單一授權方案停用使用者的 Office 365 服務。
+關閉服務最方便的方式是使用 Office 365 PowerShell，並從組織中的所有使用者移除對應的使用者授權。這會實際上限制任何人存取該服務中的資料。如需詳細指示，請參閱[使用 Office 365 PowerShell 停用服務的存取](https://docs.microsoft.com/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell)，並遵循程序從單一授權方案停用使用者的 Office 365 服務。
 
 >[!NOTE]
 >針對 Yammer，除了從使用者帳戶中移除 Yammer 授權之外，您也必須將使用者使用 Yammer 認證登入 Yammer 的能力停用 (透過在登入時，強制使用 Office 365 認證)。如需詳細指示，請參閱[關閉 Microsoft 365 使用者的 Yammer 存取](https://support.office.com/article/Turn-off-Yammer-access-for-Office-365-users-1f79bfad-f713-4143-aa5d-5584985ce53a)。

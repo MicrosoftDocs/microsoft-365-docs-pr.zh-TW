@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: 本主題將針對影響 Microsoft 365 環境安全性的全租使用者設定，引導您進行建議的設定。
-ms.openlocfilehash: 821221e9a7602b7eaaf6850284468abd486cf501
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 3a69a27aa544880e428562892832b6d33a2508e4
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653554"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308216"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>設定您的 Microsoft 365 租使用者以提高安全性
 
@@ -77,7 +77,7 @@ Exchange 系統管理中心中有許多安全性與保護控制項同時也包�
 |範圍|包含預設原則|建議|
 |---|---|---|
 |**郵件流程** (郵件流程規則，又稱為傳輸規則)|否|透過封鎖可執行檔案類型和包含宏的 Office 檔案類型，新增郵件流程規則，以協助抵禦勒索軟體。 如需詳細資訊，請參閱 [在 Exchange Online 中使用郵件流程規則檢查郵件附件](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)。 <br/><br/> 請參閱下列其他主題： <br/>* [防護勒索軟體](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)<br/>* [Office 365 中的惡意程式碼和勒索軟體防護](https://docs.microsoft.com/Office365/Enterprise/office-365-malware-and-ransomware-protection) <br/>* [從 Office 365 復原勒索軟體攻擊](recover-from-ransomware.md) <br/><br/> 建立郵件流程規則來防止郵件自動轉寄至外部網域。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) (英文)。 <br/><br/> 其他資訊：[Exchange Online 中的郵件流程規則 (傳輸規則)](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)|
-|**啟用新式驗證**|否|新式驗證是使用多重要素驗證 (MFA) 的必要條件。 MFA 是保護雲端資源存取權 (包括電子郵件) 的建議選項。 <br/><br/> 請參閱這些主題： <br/>* [啟用或停用 Exchange Online 中的新式驗證](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [商務用 Skype Online：針對新式驗證啟用租使用者](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Office 2016 用戶端、SharePoint Online 和商務用 OneDrive 預設會啟用新式驗證。 <br/><br/> 其他資訊：[Office 2013 和 Office 2016 用戶端應用程式的新式驗證運作方式](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)|
+|**啟用新式驗證**|否|新式驗證是使用多重要素驗證 (MFA) 的必要條件。 MFA 是保護雲端資源存取權 (包括電子郵件) 的建議選項。 <br/><br/> 請參閱這些主題： <br/>* [啟用或停用 Exchange Online 中的新式驗證](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) <br/>* [商務用 Skype Online：針對新式驗證啟用租使用者](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> Office 2016 用戶端、SharePoint Online 和商務用 OneDrive 預設會啟用新式驗證。 <br/><br/> 其他資訊：[Office 2013 和 Office 2016 用戶端應用程式的新式驗證運作方式](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)|
 |
 
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>設定 SharePoint 系統管理中心的全租用戶共用原則

@@ -17,12 +17,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: 在 Microsoft 365 系統管理中心管理這些 Azure 系統管理員角色。
-ms.openlocfilehash: afb025feb6e867b16be7a844a5f48ef42759b543
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 2295a003fa73cb1805fad3231ff62b37930d0306
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898025"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289090"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的 Azure Active Directory 角色
 
@@ -62,6 +62,8 @@ Microsoft 365 系統管理中心可讓您管理超過 30 個 Azure AD 角色。 
 |群組系統管理員   |跨系統管理中心建立群組和管理所有群組設定。|
 |來賓邀請者     |    管理 Azure Active Directory B2B 來賓使用者邀請。     |
 |服務台系統管理員     | 重設所有非系統管理員和部分系統管理員角色的密碼和重新驗證、管理服務要求，以及監視服務健康情況。      |
+|深入解析系統管理員     | 管理Microsoft 365 深入解析應用程式所有各方面、讀取 Azure Active Directory 資訊、可以監空服務健康情況，並建立及管理服務要求。      |
+|深入見解商務系統管理員     | 閱讀 Microsoft 365 深入解析應用程式中的報告和深入解析。      |
 |Intune 系統管理員     | 完全存取 Intune、管理使用者和裝置以關聯原則、建立及管理群組。      |
 |Kaizala 系統管理員     |    完全存取所有 Kaizala 管理功能和資料，管理服務要求。     |
 |授權系統管理員     |     指派和移除使用者的授權，並編輯其使用位置。    |

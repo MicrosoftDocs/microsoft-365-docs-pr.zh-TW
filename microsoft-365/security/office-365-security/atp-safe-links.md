@@ -25,29 +25,29 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，您將瞭解如何使用安全連結來保護您的組織免受網路釣魚和其他攻擊。
-ms.openlocfilehash: 5baf18c249d67551c7ae1eeb643a401ea16d2b6c
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: d9b3c981cb282c286a5b6edcea367c8c57ffd4d3
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656978"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307634"
 ---
 # <a name="atp-safe-links"></a>ATP 安全連結
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Office 365 ATP 安全連結的概觀
 
 > [!IMPORTANT]
-> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 個人，而且您正在尋找 Outlook 中安全連結的相關資訊，請參閱[Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 個人，而且您正在尋找 Outlook 中安全連結的相關資訊，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-Office 365 ATP 安全連結 (部分[office 365 的「高級威脅防護](office-365-atp.md)」) 可以在[電子郵件訊息](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email)和[Office 檔](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents)中，透過網頁位址的驗證， (URLs) ，以協助保護您的組織。 保護是透過您的 Microsoft 365 安全小組所設定的[ATP 安全連結原則](set-up-atp-safe-links-policies.md)所定義。
+Office 365 ATP 安全連結 (部分 [office 365 的「高級威脅防護](office-365-atp.md) 」) 可以在 [電子郵件訊息](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) 和 [Office 檔](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents)中，透過網頁位址的驗證， (URLs) ，以協助保護您的組織。 保護是透過您的 Microsoft 365 安全小組所設定的 [ATP 安全連結原則](set-up-atp-safe-links-policies.md) 所定義。
 
-在您的 ATP 安全連結原則就緒後，全域管理員、安全性管理員及安全性讀者便可[查看高級威脅防護的報告](view-reports-for-atp.md)。 這些報告中的資訊可協助安全性小組採取進一步的步驟來保護您組織或研究安全性事件。
+在您的 ATP 安全連結原則就緒後，全域管理員、安全性管理員及安全性讀者便可 [查看高級威脅防護的報告](view-reports-for-atp.md)。 這些報告中的資訊可協助安全性小組採取進一步的步驟來保護您組織或研究安全性事件。
 
-當[新功能新增至 ATP](office-365-atp.md#new-features-in-office-365-atp)時，您的 Microsoft 365 安全小組可以新增或編輯組織的[ATP 安全連結原則](set-up-atp-safe-links-policies.md)。 此外，您可能會注意到變更與改進功能，例如，在 Outlook (中的新修訂過的[警告頁面](atp-safe-links-warning-pages.md)和原生連結轉譯會在 Microsoft 365 應用程式中引入，以供企業版本 1809) 。
+當 [新功能新增至 ATP](office-365-atp.md#new-features-in-office-365-atp)時，您的 Microsoft 365 安全小組可以新增或編輯組織的 [ATP 安全連結原則](set-up-atp-safe-links-policies.md)。 此外，您可能會注意到變更與改進功能，例如，在 Outlook (中的新修訂過的 [警告頁面](atp-safe-links-warning-pages.md) 和原生連結轉譯會在 Microsoft 365 應用程式中引入，以供企業版本 1809) 。
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>如何取得 ATP 安全連結保護
 
-**首先，請確定您的訂閱包含[Office 365 高級威脅防護](office-365-atp.md)** 方案1或計畫2。 Office 365 ATP 包含在訂閱中，例如[microsoft 365 企業版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)E5、Office 365 企業版 E5、Office 365 教育版 A5 等等。如果您的組織有未包含 Office 365 ATP 的 Microsoft 365 訂閱，您可以將 ATP 購買為附加元件。 如需詳細資訊，請參閱下列資源： 
+**首先，請確定您的訂閱包含 [Office 365 高級威脅防護](office-365-atp.md)** 方案1或計畫2。 Office 365 ATP 包含在訂閱中，例如 [microsoft 365 企業版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)E5、Office 365 企業版 E5、Office 365 教育版 A5 等等。如果您的組織有未包含 Office 365 ATP 的 Microsoft 365 訂閱，您可以將 ATP 購買為附加元件。 如需詳細資訊，請參閱下列資源： 
 
 - [Office 365 進階威脅防護的方案與定價](https://products.office.com/exchange/advance-threat-protection)
 
@@ -55,11 +55,11 @@ Office 365 ATP 安全連結 (部分[office 365 的「高級威脅防護](office-
 
 **接下來，請確定您的 ATP 安全連結原則已定義**。 (請參閱[設定 Office 365 ATP 安全連結原則](set-up-atp-safe-links-policies.md)。) ATP 安全連結功能會在下列情況中運作：
 
-- 電子郵件與 Office 文件中已設定 ATP 安全連結原則。  (請參閱[設定 ATP 安全連結原則](set-up-atp-safe-links-policies.md)。 ) 
+- 電子郵件與 Office 文件中已設定 ATP 安全連結原則。  (請參閱 [設定 ATP 安全連結原則](set-up-atp-safe-links-policies.md)。 ) 
 
-- Microsoft 365 用戶端應用程式設定為使用新式驗證 (此是針對在 Office 檔) 中的 ATP 安全連結保護功能。 (請參閱[適用於 Office 2016 的新式驗證](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016)。)
+- Microsoft 365 用戶端應用程式設定為使用新式驗證 (此是針對在 Office 檔) 中的 ATP 安全連結保護功能。 (請參閱[適用於 Office 2016 的新式驗證](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)。)
 
-- 使用者已使用公司或學校帳戶登入。  (請參閱登[入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。 ) 
+- 使用者已使用公司或學校帳戶登入。  (請參閱登 [入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。 ) 
 
 - 您組織的電子郵件可通過 Exchange Online Protection。
 
@@ -69,7 +69,7 @@ Office 365 ATP 安全連結 (部分[office 365 的「高級威脅防護](office-
 
 |角色|指派位置/條件|
 |---|---|
-|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。 ) |
+|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱 [關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) 以深入瞭解。 ) |
 |安全性系統管理員|Azure Active Directory 系統管理中心 (<https://aad.portal.azure.com>)|
 |Exchange Online 組織管理|Exchange 系統管理中心 (<https://outlook.office365.com/ecp>) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 |
