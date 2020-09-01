@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 實施 Microsoft 資訊保護 (MIP) 功能，方法是使用 Microsoft 365 符合性，協助您探索、分類及保護任何地方生活或傳播的敏感資訊。
-ms.openlocfilehash: 96082bc70b093e763be00c847bb6a68ce302c8a9
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: ac4499fceae1e4f754753cf91beaf106d855c517
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815198"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308344"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 microsoft 資訊保護
 
@@ -38,17 +38,17 @@ MIP 功能隨附于 Microsoft 365 規範中，並提供您用來 [瞭解資料](
 
 若要深入瞭解您的資料，並識別整個混合式環境中的重要資料，請使用下列功能：
  
-|功能|它會解決什麼問題？|入門|
+|功能|它會解決什麼問題？|開始使用|
 |:------|:------------|:--------------------|:-----------------------------|
 |[敏感資訊類型](sensitive-information-type-entity-definitions.md)| 使用內建或自訂正則運算式或函數來識別敏感性資料，以及包含關鍵字、信賴層級及鄰近性的確切證據。| [自訂內建的敏感性資訊類型](customize-a-built-in-sensitive-information-type.md)|
-|[Trainable 分類 (預覽) ](classifier-getting-started-with.md)| 使用內建的分類器之一為您分類資料，或使用您自己的內容訓練 classier | [建立 trainable 的分類器 (預覽) ](classifier-creating-a-trainable-classifier.md) |
+|[Trainable 分類 (預覽) ](classifier-getting-started-with.md)| 使用內建的分類器之一為您分類資料，或使用您自己的內容訓練分類器 | [建立 trainable 的分類器 (預覽) ](classifier-creating-a-trainable-classifier.md) |
 |[資料分類](data-classification-overview.md) | 識別具有敏感度標籤、保留標籤，或已分類為組織中機密資訊類型的專案，以及您的使用者所採取的動作  | [開始使用內容總管](data-classification-content-explorer.md)<br /><br /> [開始使用活動總管](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>保護您的資料
 
 若要套用包括加密、訪問限制和視覺標記的彈性保護動作，請使用下列功能：
 
-|功能|它會解決什麼問題？|入門|
+|功能|它會解決什麼問題？|開始使用|
 |:------|:------------|---------------------|:----------------------------|
 |[敏感性標籤](sensitivity-labels.md)| 跨應用程式、服務和裝置的單一解決方案，以標籤及保護您的組織內部和外部的資料 <br /><br />範例案例：套用 [和查看 POWER BI 中的敏感度標籤，並在匯出資料時加以保護](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[ 開始使用敏感度標籤](get-started-with-sensitivity-labels.md) |
 |[Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| 針對 Windows 電腦，擴充敏感度標籤以取得其他功能，包括標記及保護所有檔案類型的檔案 Explorer 和 PowerShell<br /><br /> 範例其他功能： [Azure 資訊保護統一標籤用戶端的自訂](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)設定| [Azure 資訊保護統一標籤用戶端管理員指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
@@ -66,7 +66,7 @@ MIP 功能隨附于 Microsoft 365 規範中，並提供您用來 [瞭解資料](
 若要協助防止意外 oversharing 機密資訊，請使用下列功能：
 
 
-|功能|它會解決什麼問題？|入門|
+|功能|它會解決什麼問題？|開始使用|
 |:------|:------------|:---------------------|:-----------------------------|
 |[資料遺失防護](data-loss-prevention-policies.md) (DLP) | 協助防止意外共用機密專案 <br /><br />範例案例： [保護 Microsoft 小組聊天和通道訊息中的機密資訊](dlp-microsoft-teams.md) | [預設的 DLP 原則快速入門](get-started-with-the-default-dlp-policy.md)|
 |[端點資料遺失防護 (預覽) ](endpoint-dlp-learn-about.md)| 將 DLP 功能延伸至 Windows 10 電腦上使用及共用的專案 | [開始使用端點資料外洩防護（預覽版）](endpoint-dlp-getting-started.md)|

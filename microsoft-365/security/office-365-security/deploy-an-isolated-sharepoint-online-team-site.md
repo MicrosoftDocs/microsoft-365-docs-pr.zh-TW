@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 使用此逐步部署指南，在 Microsoft Office 365 中建立和設定隔離的 SharePoint Online 小組網站。
-ms.openlocfilehash: 05fdbcfff792805708bfe0b8027e955d54a1ec6f
-ms.sourcegitcommit: 2acd9ec5e9d150389975e854c7883efc186a9432
+ms.openlocfilehash: 3465ec28db8c2045bad6e6c48112861818629524
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44755221"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308412"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署獨立的 SharePoint Online 小組網站
 
@@ -40,7 +40,7 @@ ms.locfileid: "44755221"
 
 決定與獨立小組網站的 SharePoint Online 系統管理員對應的一組使用者帳戶。
   
-如果您是透過 Microsoft 365 管理使用者帳戶和群組，且想要使用 Windows PowerShell，請建立使用者主要名稱（Upn）清單（例如 UPN： belindan@contoso.com）。
+如果您是透過 Microsoft 365 管理使用者帳戶和群組，且想要使用 Windows PowerShell，請將其使用者主體名稱清單 (Upn)  (範例 UPN： belindan@contoso.com) 。
   
 ### <a name="step-2-list-the-members-for-the-site"></a>步驟2：列出網站的成員
 
@@ -103,13 +103,13 @@ ms.locfileid: "44755221"
     
 3. 將步驟 3 的使用者清單新增至網站檢視者存取群組
     
-如果您是透過 Active Directory 網域服務（AD DS）來管理使用者帳戶和群組，請使用一般 AD DS 使用者和群組管理程式將使用者新增至適當的訪問群組，並等候 Microsoft 365 訂閱同步處理。
+如果您是透過 Active Directory Domain Services (AD DS) 來管理使用者帳戶和群組，請使用一般 AD DS 使用者和群組管理程式將使用者新增至適當的訪問群組，並等待與 Microsoft 365 訂閱進行同步處理。
   
 如果您是透過 Office 365 管理使用者帳戶和群組，您可使用 Microsoft 365 系統管理中心或 PowerShell。 如果任何存取群組有重複的群組名稱，您應該使用 Microsoft 365 系統管理中心。
   
 在 Microsoft 365 系統管理中心，使用已指派給使用者帳戶管理員或公司系統管理員角色的使用者帳戶登入，並使用群組將適當的使用者帳戶和群組新增至適當的存取群組。
   
-在 PowerShell 中，先 [與 Azure Active Directory PowerShell for Graph 模組連線](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+在 PowerShell 中，先 [與 Azure Active Directory PowerShell for Graph 模組連線](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下來，使用下列命令區塊將個別的使用者帳戶新增到存取群組：
   
@@ -161,35 +161,35 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
   
 首先，使用下列步驟建立 SharePoint Online 小組網站。
   
-1. 使用也用來管理 SharePoint Online 小組網站（SharePoint Online 系統管理員）的帳戶登入 Microsoft 365 系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
+1. 使用也用來管理 SharePoint Online 小組網站 (SharePoint Online 管理員) 的帳戶，登入 Microsoft 365 系統管理中心。 如需說明，請參閱[在何處登入 Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
-2. 在 Microsoft 365 系統管理中心的 [系統**管理中心**] 下，按一下 [ **SharePoint**]。
+2. 在 Microsoft 365 系統管理中心的 [系統 **管理中心**] 下，按一下 [ **SharePoint**]。
 
-3. 在 SharePoint 系統管理中心中，展開 [**網站**]，然後按一下 [**即時網頁**]。
+3. 在 SharePoint 系統管理中心中，展開 [ **網站** ]，然後按一下 [ **即時網頁**]。
 
-4. 按一下 [**建立**]，然後選擇 [**其他選項**]。
+4. 按一下 [ **建立**]，然後選擇 [ **其他選項**]。
 
-5. 在 [**選擇範本**] 清單中，選擇 [**小組網站**]。
+5. 在 [ **選擇範本** ] 清單中，選擇 [ **小組網站**]。
    
 6. 在 [網站名稱]**** 中，鍵入小組網站的名稱。 
     
-7. 在 [**主要管理員**] 中，輸入您用來登入的帳戶。
+7. 在 [ **主要管理員**] 中，輸入您用來登入的帳戶。
  
-8. 按一下 [完成]****。
+8. 按一下 **[完成]**。
     
 接下來，從新的 SharePoint Online 小組網站，設定權限。
   
 1. 在工具列中，按一下設定圖示，然後按一下 [網站權限]****。
 
-2. 在 [**網站共用**] 底下，按一下 [**變更成員可以共用的方式**]。
+2. 在 [ **網站共用**] 底下，按一下 [ **變更成員可以共用的方式**]。
 
-3. 選擇 [**唯一的網站擁有者可以共用檔案、資料夾及網站**]。
+3. 選擇 [ **唯一的網站擁有者可以共用檔案、資料夾及網站**]。
 
-4. 將 [**允許存取要求**關閉] 設定為 [**關閉**]。
+4. 將 [ **允許存取要求** 關閉] 設定為 [ **關閉**]。
 
-5. 按一下 **[儲存]**。
+5. 按一下 [儲存]****。
     
-6. 在 [**許可權**] 窗格中，按一下 [**高級許可權設定**]。
+6. 在 [ **許可權** ] 窗格中，按一下 [ **高級許可權設定**]。
     
 7. 在瀏覽器的 [**許可權**] 索引標籤上，按一下清單中的 [ ** \<site name> 成員**]。
     

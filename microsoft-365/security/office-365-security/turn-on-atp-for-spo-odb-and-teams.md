@@ -19,12 +19,12 @@ ms.collection:
 - SPO_Content
 description: 了解如何開啟適用於 SharePoint、OneDrive 和 Teams 的 ATP，包括如何為偵測到的檔案設定警示。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6109cecc79b4db876ee595d4786d176ae7f42f5d
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 8a3a3939603d30e9024f43517ce23a87cf765b84
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656548"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308332"
 ---
 # <a name="turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>開啟適用於 SharePoint、OneDrive 與 Microsoft Teams 的 ATP
 
@@ -39,7 +39,7 @@ ms.locfileid: "46656548"
 
 |角色|指派位置/條件|
 |---|---|
-|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。 ) |
+|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱 [關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) 以深入瞭解。 ) |
 |安全性系統管理員|Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織管理|Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 |
@@ -50,7 +50,7 @@ ms.locfileid: "46656548"
 
 1. 移至 <https://protection.office.com> 然後以您的公司或學校帳戶登入。
 
-2. 在 [安全性 & 規範中心] 的左功能窗格中，選擇 [**威脅管理**] 底下的 [**原則** \> **安全附件**]。
+2. 在 [安全性 & 規範中心] 的左功能窗格中，選擇 [ **威脅管理**] 底下的 [ **原則** \> **安全附件**]。
 
    ![在 [安全性 & 規範中心] 中，選擇 [威脅管理 \> 原則]](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
 
@@ -62,7 +62,7 @@ ms.locfileid: "46656548"
 
 5. 檢閱 (並視需要編輯) 組織的 [[安全附件原則]](set-up-atp-safe-attachments-policies.md) 和 [[安全連結原則]](set-up-atp-safe-links-policies.md)。
 
-6.  (建議) 成為全域系統管理員或 SharePoint Online 管理員，請執行**[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** Cmdlet，並將_DisallowInfectedFileDownload_參數設定為*true*。
+6.  (建議) 成為全域系統管理員或 SharePoint Online 管理員，請執行 **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** Cmdlet，並將 _DisallowInfectedFileDownload_ 參數設定為 *true*。
 
    - 將參數設定為 *true* 可封鎖偵測到的檔案的所有動作 (刪除除外)。 使用者將無法開啟、移動、複製或共用偵測到的檔案。
 
@@ -72,7 +72,7 @@ ms.locfileid: "46656548"
 
 8. (建議) 繼續為偵測到的檔案設定警示。
 
-若要深入瞭解搭配 Microsoft 365 使用 PowerShell，請參閱使用[PowerShell 管理 Microsoft 365](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)。
+若要深入瞭解搭配 Microsoft 365 使用 PowerShell，請參閱使用 [PowerShell 管理 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)。
 
 若要深入了解當檔案被偵測為惡意檔案時的使用者體驗，請參閱[在 SharePoint Online、OneDrive 或 Microsoft Teams 中找到惡意檔案時該怎麼做](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)。
 
@@ -80,7 +80,7 @@ ms.locfileid: "46656548"
 
 若要在 SharePoint Online、商務用 OneDrive 或 Microsoft Teams 中的檔案被識別為惡意檔案時收到通知，您可以設定警示。
 
-1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**警示**] [ \> **管理提醒**]。
+1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **警示**] [ \> **管理提醒**]。
 
 2. 選擇 **[新警示原則]**。
 
@@ -98,7 +98,7 @@ ms.locfileid: "46656548"
 
 7. 按一下 **[儲存]**。
 
-若要深入瞭解提醒，請參閱[在安全性 & 規範中心建立活動警示](../../compliance/create-activity-alerts.md)。
+若要深入瞭解提醒，請參閱 [在安全性 & 規範中心建立活動警示](../../compliance/create-activity-alerts.md)。
 
 ## <a name="next-steps"></a>後續步驟
 

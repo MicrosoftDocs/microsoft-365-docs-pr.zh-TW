@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/27/2020
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8eda787a92228fc9705bd329f0df7203b9a1175c
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.reviewer: vippand
+ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47294772"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308376"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新增功能
 
@@ -39,7 +40,7 @@ ms.locfileid: "47294772"
 
 - [使用 Configuration Analyzer 檢查您的原則](configuration-analyzer-for-security-policies.md)
 - [使用承租人允許/封鎖清單手動覆寫篩選 verdicts](tenant-allow-block-list.md)
-- [威脅瀏覽器中的延伸功能（包括主要目標使用者、傳輸規則和連接器）](threat-explorer.md#extended-capabilities-in-Threat-Explorer.md)
+- [威脅瀏覽器中的延伸功能（包括主要目標使用者、傳輸規則和連接器）](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
 - 呈現在 [威脅瀏覽器](threat-explorer.md) 中的覆寫資訊 (允許/封鎖承租人/使用者原則的電子郵件) 
 - 在 [威脅 Explorer](threat-explorer.md) 中呈現 URL 威脅 (惡意程式碼、網路釣魚詐騙、垃圾郵件或無) 
 
