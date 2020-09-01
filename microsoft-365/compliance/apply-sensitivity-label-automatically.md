@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 112857d9778cf850613c808474051eb25df74296
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5b466084701d2424aeaf9e7ee644d33861fdd5f3
+ms.sourcegitcommit: 87449335d9a1124ee82fa2e95e4745155a95a62f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656824"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47310884"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -255,7 +255,7 @@ ms.locfileid: "46656824"
     
     ![選擇位置頁面自動套用標籤精靈 ](../media/locations-auto-labeling-wizard.png)
     
-    針對 OneDrive，您必須指定個人帳戶。 使用者 OneDrive 的 URL 採用下列格式：`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    您必須指定個別的 SharePoint 網站和 OneDrive 帳戶。 若為 OneDrive，使用者 OneDrive 帳戶的 URL 會採用下列格式：`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
     例如，針對 contoso 租用戶中使用者名稱為 "rsimone" 的使用者：`https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
@@ -312,4 +312,44 @@ ms.locfileid: "46656824"
 
 > [!TIP]
 > 您也可以使用內容總管來識別包含包含敏感性資訊、但尚未套用標籤的的文件位置。 利用此資訊，請考量將這些位置新增到您的自動套用標籤原則，並納入已識別的敏感性資訊類型作為規則。
+
+### <a name="use-powershell-for-auto-labeling-policies"></a>將 PowerShell 用於自動套用標籤原則
+
+您現在可以使用[安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 來建立及設定自動套用標籤原則。 這表示您現在可以完整編寫建立和維護自動套用標籤原則的指令碼，這也提供您一個更有效方式，可為 OneDrive 和 SharePoint 位置指定多個 URL。
+
+在 PowerShell 中執行命令之前，您必須先[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+
+若要建立新的自動套用標籤原則： 
+
+```powershell
+New-AutoSensitivityLabelPolicy -Name <AutoLabelingPolicyName> -SharePointLocation "<SharePointSiteLocation>" -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
+```
+此命令會為您指定的 SharePoint 網站建立自動套用標籤原則。 若為 OneDrive 位置，請改用 *OneDriveLocation* 參數。 
+
+若要新增其他網站至現有的自動套用標籤原則：
+
+```powershell
+$spoLocations = @("<SharePointSiteLocation1>","<SharePointSiteLocation2>")
+Set-AutoSensitivityLabelPolicy -Identity <AutoLabelingPolicyName> -AddSharePointLocation $spoLocations -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
+```
+
+此命令會在變數中指定其他 SharePoint URL，然後將該變數新增至現有的自動套用標籤原則。 若要改為新增 OneDrive 位置，請使用 *AddOneDriveLocation* 參數搭配不同的變數，例如 *$OneDriveLocations*。
+
+若要建立新的自動套用標籤原則規則：
+
+```powershell
+New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelingRuleName> -ContentContainsSensitiveInformation @{"name"= "a44669fe-0d48-453d-a9b1-2cc83f2cba77"; "mincount" = "2"} -Workload SharePoint
+```
+
+針對現有的自動套用標籤原則，此命令會建立新的原則規則，以偵測**美國社會安全編號 (SSN)** 的敏感性資訊類型，其具有實體識別碼 a44669fe-0d48-453d-a9b1-2cc83f2cba77。 若要尋找其他敏感性資訊類型的實體識別碼，請參閱[敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)。
+
+如需有關支援自動套用標籤原則的 PowerShell Cmdlet 的詳細資訊、其可用參數和一些範例，請參閱下列 Cmdlet 說明：
+
+- [Get-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/get-autosensitivitylabelpolicy)
+- [New-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelpolicy?view=exchange-ps)
+- [New-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelrule?view=exchange-ps)
+- [Remove-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelpolicy?view=exchange-ps)
+- [Remove-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelrule?view=exchange-ps)
+- [Set-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelpolicy?view=exchange-ps)
+- [Set-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelrule?view=exchange-ps)
 

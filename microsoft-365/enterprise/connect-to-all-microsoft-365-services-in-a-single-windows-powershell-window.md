@@ -1,9 +1,9 @@
 ---
-title: 在單一 Windows PowerShell 視窗中連線至所有 Microsoft 365 服務
+title: 在單一 PowerShell 視窗中連線至所有 Microsoft 365 服務
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/10/2020
+ms.date: 08/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -17,29 +17,27 @@ ms.custom:
 - O365ITProTrain
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
-description: '摘要: 在單一 Windows PowerShell 視窗中，將 Windows PowerShell 連線至所有 Microsoft 365 服務。'
-ms.openlocfilehash: d4e4bf6ec07ee4a0a5b2f8cb1c83ffacd221eaa0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 摘要：在單一 PowerShell 視窗中連線至所有 Microsoft 365 服務。
+ms.openlocfilehash: af676434017cbe7025baa5e8509e6203a5d59674
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688610"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307622"
 ---
-# <a name="connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window"></a>在單一 Windows PowerShell 視窗中連線至所有 Microsoft 365 服務
+# <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>在單一 PowerShell 視窗中連線至所有 Microsoft 365 服務
 
-當您使用 PowerShell 管理 Microsoft 365 時，最多可同時開啟五個不同的 Windows PowerShell 會話，這些會話與 Microsoft 365 系統管理中心、SharePoint Online、Exchange Online、商務用 Skype Online、Microsoft Teams 和安全性 &amp; 合規性中心一致。 由於在個別 WindowsPowerShell 會話中，具有五種不同的連線方法，所以您的桌面看起來可能像這樣:
+當您使用 PowerShell 來管理 Microsoft 365，可同時在不同 PowerShell 視窗中開啟與管理使用者帳戶、SharePoint Online、Exchange Online、商務用 Skype Online、Microsoft Teams 和安全性與合規性中心對應的多個 PowerShell 工作階段。&amp; 
   
-![一次執行五個 Windows PowerShell 主控台](../media/a1a852c2-89ea-4e8e-8d8b-dcdf596763d1.png)
-  
-這對管理 Microsoft 365 而言並非最佳，因為您無法在五個視窗之間交換跨服務管理的資料。 本主題說明如何使用單一 Windows PowerShell 實例，您可以從中管理 Microsoft 365 帳戶、商務用 Skype Online、Exchange Online、SharePoint Online、Microsoft Teams 及安全性 &amp; 合規性中心。
+這對於管理 Microsoft 365 而言並不理想，因為您無法在用於交叉服務管理的這些視窗之間交換資料。 本主題說明如何使用 PowerShell 的單一執行個體，您可以從中管理 Microsoft 365 帳戶、商務用 Skype Online、Exchange Online、SharePoint Online、Microsoft Teams 及安全性與合規性中心。&amp;
 
 >[!Note]
->本文目前僅包含連線至全球（+ GCC）雲端的指令。 其他備註提供文章連結，內含如何連線到其他 Microsoft 365 雲端的相關資訊。
+>本文目前僅包含用來連線至全球 (+GCC) 雲端的命令。 附註提供文章的連結，內含如何連線到其他 Microsoft 365 雲端的相關資訊。
 >
 
 ## <a name="before-you-begin"></a>開始之前
 
-在您可以從單一 Windows PowerShell 實例中管理所有 Microsoft 365之前，請考慮下列先決條件:
+在您可以從 PowerShell 的單一執行個體管理所有 Microsoft 365 之前，請考慮下列先決條件：
   
 - 您用於這些程序的 Microsoft 365 公司或學校帳戶 必須是 Microsoft 365 系統管理員角色的成員。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)。 這是對 Microsoft 365 的 PowerShell 需求，並非所有其他的 Microsoft 365 服務皆須滿足。
     
@@ -67,11 +65,11 @@ ms.locfileid: "46688610"
     
    - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
    - [SharePoint Online 管理命令介面](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-   - [商務用 Skype Online、Windows PowerShell 模組](https://go.microsoft.com/fwlink/p/?LinkId=532439)
+   - [商務用 Skype Online，PowerShell 模組](https://go.microsoft.com/fwlink/p/?LinkId=532439)
    - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)
    - [Teams PowerShell 概觀](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  若要執行商務用 Skype Online 及安全性 &amp; 合規性中心的已簽署腳本，則必須設定 Windows PowerShell。 若要執行此動作，請在升級權限的 Windows PowerShell 會話 (透過選取** [以系統管理員身分執行]** 而開啟的 Windows PowerShell 視窗) 中執行下列指令。
+-  必須設定 PowerShell，才能執行商務用 Skype Online 及安全性與合規性中心的已簽署指令碼。&amp; 若要執行此動作，請在提高權限的 PowerShell 工作階段 (透過選取 [以系統管理員身分執行 **]** 而開啟的 PowerShell 視窗) 中執行下列命令。
     
    ```powershell
    Set-ExecutionPolicy RemoteSigned
@@ -95,14 +93,14 @@ ms.locfileid: "46688610"
    Connect-AzureAD -Credential $credential
    ```
   
-   或者，如果您使用的是適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組，請執行此指令。
+   或者，如果您使用 PowerShell 的 Microsoft Azure Active Directory 模組，請執行此命令。
       
    ```powershell
    Connect-MsolService -Credential $credential
    ```
 
    > [!Note]
-   > PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 **Msol** 的 Cmdlet。 若要繼續使用這些 Cmdlet，您必須從 Windows PowerShell 執行。
+   > PowerShell Core 不支援 PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 **Msol** 的 Cmdlet。 若要繼續使用這些 Cmdlet，您必須從 PowerShell 執行它們。
 
 4. 執行這些指令，以連線到 SharePoint Online。 指定您網域的組織名稱。 例如，針對 "litwareinc.onmicrosoft.com"，組織名稱值為 "litwareinc"。
     
@@ -166,7 +164,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-或者，如果您使用的是適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組，以下則會單一區塊中的所有指令。 指定您網域主機的名稱，然後一次執行它們全部。
+或者，如果您使用 PowerShell 的 Microsoft Azure Active Directory 模組，以下為單一區塊中的所有命令。 指定您網域主機的名稱，然後一次執行它們全部。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -184,7 +182,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-當您準備好關閉 Windows PowerShell 視窗時，請執行此指令將使用中的會話移除至商務用 Skype Online、SharePoint Online、安全性 &amp; 合規性中心及 Teams：
+當您準備好關閉 PowerShell 視窗時，請執行此命令，以移除連線至商務用 Skype Online、SharePoint Online、安全性與合規性中心及 Teams 的使用中工作階段：&amp;
   
 ```powershell
 Remove-PSSession $sfboSession ; Remove-PSSession $SccSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
@@ -211,7 +209,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
-或者，如果您使用的是適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組，以下則是所有指令。
+或者，如果您使用 PowerShell 的 Microsoft Azure Active Directory 模組，以下為所有命令。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -237,4 +235,3 @@ Connect-MicrosoftTeams
 - [使用 PowerShell 連線至 Microsoft 365](connect-to-microsoft-365-powershell.md)
 - [使用 PowerShell 管理 SharePoint Online](manage-sharepoint-online-with-microsoft-365-powershell.md)
 - [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
-- [在 Microsoft 365 中使用 Windows PowerShell 建立報告](use-windows-powershell-to-create-reports-in-microsoft-365.md)

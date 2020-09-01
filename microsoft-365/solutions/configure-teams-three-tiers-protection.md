@@ -21,12 +21,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 在 Microsoft Teams 中保護檔案的設定建議。
-ms.openlocfilehash: d0c3d065da912c37ca21e6ea4300a30c5e7195b8
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: aea542d92e981e286062fc07b7e559b5f36427d4
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527799"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47307724"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>為小組設定三層保護
 
@@ -42,11 +42,8 @@ ms.locfileid: "46527799"
 
 - 高敏感度保護
 
-如需這些層級和每道層級的建議功能詳細資訊，請參閱下列資源。
+如需有關這些層級和針對每個層級所建議功能的詳細資訊，請參閱 [Microsoft Cloud for Enterprise Architects 圖解](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
 
-- [Office 365 的身分識別與裝置保護](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#identity-and-device-protection-for-office-365)
-
-- [Office 365 的檔案保護方案](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#file-protection-solutions-in-office-365)
 
 ## <a name="three-tiers-at-a-glance"></a>三層保護概覽
 

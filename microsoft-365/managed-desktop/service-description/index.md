@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1977009e6b0b1dbbf10a14b6a062207bbee04430
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 0e1189634857921d9c0e3df0683bd6e7758cd058
+ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529406"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "47289468"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft 受管理的電腦服務描述
 
@@ -32,11 +32,11 @@ Microsoft 受管理的電腦是一種服務，可讓您的使用者使用安全�
 如需 Microsoft 受管理的電腦所含特定服務的詳細資訊，請參閱本節的其他主題。 如果您已經決定要使用 Microsoft 受管理的電腦，[ 準備註冊 Microsoft 受管理的電腦中 ](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/)的主題，會提供您準備加入該項服務的步驟。
 
 - [Microsoft 受管理的電腦支援的地區和語言](regions-languages.md) 說明服務支援哪些地區和語言。
-- 為了保證使用者的最佳使用體驗，Microsoft 受管理的電腦只支援特定的裝置。 [[程式裝置]](device-list.md) 可指定您可以搭配服務使用的確切裝置模型和設定，無論您是提供客戶，還是與合作夥伴合作。
+- 為了保證使用者的最佳體驗，Microsoft 受管理的電腦只支援特定裝置。 [[程式裝置]](device-list.md) 可指定您可以搭配服務使用的確切裝置模型和設定，無論您是提供客戶，還是與合作夥伴合作。
 - [[裝置服務]](device-services.md) 可指定 Microsoft 將提供給訂閱者的裝置相關服務。
 - [[設備設定]](device-policies.md) 會說明預設和安全性相關的行動裝置管理原則，服務會將這些原則套用到註冊的裝置。
 - [[安全性]](security.md) 可指定從註冊的裝置收集的資料，以及與裝置安全性、身分識別和存取管理、網路安全性及資訊安全性相關的功能和原則。
 - [[更新]](updates.md) 會描述 Microsoft 受管理的電腦用來推出裝置更新的各種更新群組。
-- [[支援]](support.md) 會說明 Microsoft 為貴組織和使用者提供的支援。
+- [支援](support.md)會說明 Microsoft 為組織和使用者提供的支援。
 - [[操作與監控]](operations-and-monitoring.md) 會說明變更管理如何搭配 Microsoft 受管理的電腦使用，包括要求和準備部署變更的標準程式。
 - [[應用程式需求]](mmd-app-requirements.md) 會說明 Microsoft 受管理的電腦所允許的 app 類型和行為，以及應用程式部署和管理的角色劃分和責任劃分。

@@ -212,6 +212,8 @@
           href: manage/set-password-expiration-policy.md
         - name: 自訂應用程式啟動器
           href: manage/customize-the-app-launcher.md
+        - name: 將應用程式釘選至使用者的應用程式啟動器
+          href: manage/pin-apps-to-app-launcher.md
         - name: 將使用者升級到最新版的應用程式
           href: setup/upgrade-users-to-latest-office-client.md
         - name: 增益集集中式部署的必要條件
@@ -220,6 +222,8 @@
           href: manage/manage-deployment-of-add-ins.md
         - name: 在系統管理中心管理增益集
           href: manage/manage-addins-in-the-admin-center.md
+        - name: 管理 Office 指令碼設定
+          href: manage/manage-office-scripts-settings.md
         - name: 集中式部署常見問題集
           href: manage/centralized-deployment-faq.md
         - name: 尋找合作夥伴或轉銷商。
@@ -293,7 +297,7 @@
           items:
             - name: 驗證 Android 或 iOS 上的設定
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: 設定適用於 Windows 10 電腦的裝置保護設定
+        - name: 編輯或建立適用於 Windows 10 電腦的裝置保護設定
           href: ../business/protection-settings-for-windows-10-pcs.md
           items:
             - name: 驗證 Windows 10 電腦上的設定

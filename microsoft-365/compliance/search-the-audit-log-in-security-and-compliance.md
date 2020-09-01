@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39c58a86b3f8e3bec2225c4a3df53120fac79eea
-ms.sourcegitcommit: 929ca8f4d5fc006c3827f7a8b7d2b43e54c1b42a
+ms.openlocfilehash: 75f807f2d09792838cab2ee5154578b5cbbbfde8
+ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46674623"
+ms.lasthandoff: 08/28/2020
+ms.locfileid: "47294740"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -186,9 +186,9 @@ ms.locfileid: "46674623"
 
       > [!TIP]
       >
-      > - 如果您要尋找與**網站**相關的所有活動，在 URL 後面加入萬用字元符號 (\*) 可傳回該網站的所有項目，例如 **"https://contoso-my.sharepoint.com/personal/*"**。
+      > - 如果您要尋找與**網站**相關的所有活動，在 URL 後面加入萬用字元符號 (\*) 可傳回該網站的所有項目，例如 `"https://contoso-my.sharepoint.com/personal*"`。
       >
-      > - 如果您要尋找與**檔案**相關的所有活動，在檔案名稱前面加入萬用字元符號 (\*) 可傳回該檔案的所有項目，例如 **"*Customer_Profitability_Sample.csv"**。
+      > - 如果您要尋找與**檔案**相關的所有活動，在檔案名稱前面加入萬用字元符號 (\*) 可傳回該檔案的所有項目，例如 `"*Customer_Profitability_Sample.csv"`。
 
 5. 按一下 [搜尋]**** 以使用您的搜尋準則執行搜尋。
 

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用唯一的敏感度標籤來建立小組以獲得安全性。
-ms.openlocfilehash: f540c1fce1c525ab49037ea27b139f10fac76f33
-ms.sourcegitcommit: c04f1207cfaddac2a9abef38967c17d689756a96
+ms.openlocfilehash: 789e75165339f8a834a73aa3fd0d8a2666285ce9
+ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46577959"
+ms.lasthandoff: 08/29/2020
+ms.locfileid: "47308180"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>為小組設定安全性隔離
 
@@ -52,7 +52,7 @@ ms.locfileid: "46577959"
 
 為了協助保護對於小組及其基礎 SharePoint 網站的存取，請檢閱下列最佳做法：
 - [身分識別與裝置存取原則](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies)
-- [SharePoint Online 存取原則](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies)。
+- [SharePoint Online 存取原則](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies)
 - [為小組部署基準保護](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>來賓共用
