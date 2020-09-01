@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Microsoft 365 的身分識別藍圖。
-ms.openlocfilehash: 206d8598bab294e6ecb9502599e5530dd4942a59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2eae98d891672e9fc9adb68e1fee2426fe4934dd
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688867"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315796"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的身分識別藍圖
 
@@ -42,14 +42,14 @@ ms.locfileid: "46688867"
 
 ## <a name="plan"></a>方案
 
-在您的身分識別實施的規劃階段中：
+若要規劃您的身分識別實現：
 
 - [瞭解不同的身分識別模型](about-microsoft-365-identity.md)
 - [規劃混合式身分識別及目錄同步處理](plan-for-directory-synchronization.md)
 
 ## <a name="deploy"></a>部署
 
-在您的身分識別實施的部署階段中：
+若要部署您的身分識別實現：
 
 - [保護您的全域系統管理員帳戶](protect-your-global-administrator-accounts.md)
 - [設定及使用僅限雲端的身分識別](cloud-only-identities.md)
@@ -59,14 +59,14 @@ ms.locfileid: "46688867"
 
 ### <a name="identity-and-device-access-recommendations"></a>身分識別與裝置存取建議
 
-Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configurations.md)提供一組建議，以確保安全且具有生產力的員工。針對身分識別，使用下列文章中的建議和設定以及本階段的步驟：
+Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configurations.md)提供一組建議，以確保安全且具有生產力的員工。 若為身分識別，請使用下列文章中的建議與設定：
 
 - [必要條件](identity-access-prerequisites.md)
 - [一般身分識別與裝置存取原則](identity-access-policies.md)
 
 ## <a name="manage"></a>管理
 
-在您的身分識別實施的管理階段中：
+若要管理您的身分識別實現：
 
 - [指派授權並管理使用者帳戶](assign-licenses-to-user-accounts.md)
 - [監視目錄同步處理](view-directory-synchronization-status.md)
@@ -83,9 +83,6 @@ Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configur
 
 請參閱 Contoso Corporation (虛構但有代表性的跨國企業) 如何為 Microsoft 365 雲端服務[部署混合式身分識別基礎結構](contoso-identity.md)。
 
-![Contoso 公司](../media/contoso-overview/contoso-icon.png)
-
 ## <a name="next-step"></a>下一步
 
 以身分 [識別模型](about-microsoft-365-identity.md)開始您的身分識別規劃。
-

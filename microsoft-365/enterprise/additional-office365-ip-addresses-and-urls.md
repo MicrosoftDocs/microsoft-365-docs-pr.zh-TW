@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：新端點 Web 服務不包含特定案例的少量端點。
 hideEdit: true
-ms.openlocfilehash: e9f8a2b50900641327cebc6574ad09f388272bba
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 821332f573eb8499a01838a5dc9941c9844086a3
+ms.sourcegitcommit: 04f196528a7a91b404478553433af3fa94d7eee7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688661"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47317502"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 位址和 URL Web 服務中未包含的其他端點
 
@@ -55,18 +55,19 @@ ms.locfileid: "46688661"
 | 8  | [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant) Proxy 驗證 | 客戶內部部署 STS | 內送伺服器流量 |
 | 9  | 用來設定 [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant)，使用 [Exchange 混合式組態精靈](https://docs.microsoft.com/exchange/hybrid-configuration-wizard) <br> 附註：只有在設定 Exchange 混合式時，才需要這些端點  | TCP 通訊埠 80 和 443 上的 domains.live.com，只有 Exchange 2010 SP3 混合式組態精靈才需要。<BR> <BR> GCC 高、DoD IP 位址：40.118.209.192/32；168.62.190.41/32 <BR> <BR> 全球各地Worldwide Commercial & GCC: *.store.core.windows.net; asl.configure.office.com; mshrcstorageprod.blob.core.windows.net; tds.configure.office.com; mshybridservice.trafficmanager.net <BR>  | 僅限外寄伺服器的流量 |
 | 10  | 自動偵測服務用於 [Exchange 混合式](https://docs.microsoft.com/exchange/exchange-deployment-assistant)案例，搭配 [iOS 版 Outlook 和 Android 的混合式新式驗證](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | 客戶在 TCP 443 上內部部署 Exchange 伺服器 | 內送伺服器流量 |
-| 11  | Office 2016 中的商務用 Skype 包含使用 UDP 通訊埠根據螢幕共用的視訊。Office 2013 及較舊版本中的商務用 Skype 用戶端在 TCP 通訊埠 443 上使用 RDP。 | TCP 通訊埠 443 開放給 52.112.0.0/14 | Office 2013 及較舊版本中的商務用 Skype 更舊用戶端版本 |
-| 12  | 商務用 Skype 混合式內部部署伺服器連線至商務用 Skype Online | 13.107.64.0/18、52.112.0.0/14  <BR> UDP 連接埠 50,000-59,999 <BR>  TCP 連接埠 50,000-59,999；5061 | 商務用 Skype 內部部署伺服器輸出連線 |
-| 13  | 具有內部部署混合式連線的 Cloud PSTN 要求開啟內部部署主機的網路連線。如需商務用 Skype Online 混合式設定的詳細資料，  | 請參閱[規劃商務用 Skype Server 和 Office 365 之間的混合式連線](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity) (英文) | 商務用 Skype 內部部署混合式輸入 |
-| 14  | **驗證與身分識別 FQDN** <br> FQDN ```secure.aadcdn.microsoftonline-p.com``` 必須在您用戶端的 Internet Explorer (IE) 或 Microsoft Edge 信任的網站區域中才能正常運作。 |  | 信任的網站 |
-| 15  |  **Microsoft Teams FQDN** <br> 如果您使用的是 Internet Explorer 或 Microsoft Edge，您需要啟用第一和第三方 Cookie，並將 Teams 的 FQDN 新增到您的 [信任的網站] 中。這是列 14 所列之跨套件 FQDN、CDN 和遙測之外的項目。如需詳細資訊，請參閱 [Microsoft Teams 的已知問題](https://docs.microsoft.com/microsoftteams/known-issues)。 |  | 信任的網站 |
-| 16  |  **SharePoint Online 和商務用 OneDrive FQDN** <br> 所有在 FQDN 中含有 '\<tenant>' 的 '.sharepoint.com' 的 FQDN 都必須在您用戶端的 IE 或 Microsoft Edge 信任的網站區域中才能正常運作。除了列 14 列出的跨套件 FQDN、CDN 和遙測，您也必須新增這些端點。 |  | 信任的網站 |
-| 17  | **Yammer**  <br> Yammer 僅可於瀏覽器中使用，且必須透過 Proxy 傳遞已驗證的使用者。所有 Yammer FQDN 都必須在用戶端的 IE 或 Microsoft Edge 的信任的網站區域中才能正常運作。 |  | 信任的網站 |
-| 18  | 使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) 將內部部署使用者帳戶同步處理到 Azure AD。 | 請參閱[混合式身分識別所需的連接埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)、[疑難排解 Azure AD 連線](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) 和 [Azure AD Connect Health 代理程式安裝](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)。 | 僅限外寄伺服器的流量 |
-| 19  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) 與中國的 21 ViaNet 將內部部署使用者帳戶同步處理到 Azure AD。 | \*.digicert.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>另請參閱[針對 Azure AD Connect 的連線問題進行疑難排解](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity)。 | 僅限外寄伺服器的流量 |
-| 20  | Microsoft Stream (需要 Azure AD 使用者權杖)。 <BR> Office 365 全球 (包括 GCC) | \*.cloudapp.net <BR> \*.api.microsoftstream.com <BR> \*.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP 通訊埠 443  | 內送伺服器流量 |
-| 21  | 在伺服器的新安裝以及使用Active Directory 網域服務 (AD DS) 進行設定時，將 MFA 伺服器用於多重要素驗證要求。 | 請參閱[開始使用 Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)。  | 僅限外寄伺服器的流量 |
-| 22  | Microsoft Graph 變更通知 | 開發人員可以利用[變更通知](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0)來訂閱 Microsoft Graph 中的事件。 | *.cloudapp.net<BR> 104.43.130.21、137.116.169.230、13.79.38.63、104.214.39.228、公用雲端：168.63.250.205、52.161.9.202、40.68.103.62、13.89.60.223、23.100.95.104、40.113.95.219、104.214.32.10、168.63.237.145、52.161.110.176、52.174.177.183 <BR> 適用於美國政府的 Microsoft 雲端：52.244.231.173、52.238.76.151、52.244.250.211、52.238.78.108 <BR> Microsoft Cloud Germany：51.4.231.136、51.5.243.223、51.4.226.154、51.5.244.215 <BR> 由 21Vianet 營運的 Microsoft Cloud China：139.219.15.33、42.159.154.223、42.159.88.79、42.159.155.77<BR> TCP 通訊埠 443 <BR> 附註：開發人員可以在建立訂閱時指定不同的通訊埠。  | 內送伺服器流量 |
+| 11  | Exchange 混合式 Azure AD 驗證 | msappproxy.net | 僅限 TCP 輸出伺服器流量 |
+| 12   | Office 2016 中的商務用 Skype 包含使用 UDP 通訊埠根據螢幕共用的視訊。Office 2013 及較舊版本中的商務用 Skype 用戶端在 TCP 通訊埠 443 上使用 RDP。 | TCP 通訊埠 443 開放給 52.112.0.0/14 | Office 2013 及較舊版本中的商務用 Skype 更舊用戶端版本 |
+| 13   | 商務用 Skype 混合式內部部署伺服器連線至商務用 Skype Online | 13.107.64.0/18、52.112.0.0/14  <BR> UDP 連接埠 50,000-59,999 <BR>  TCP 連接埠 50,000-59,999；5061 | 商務用 Skype 內部部署伺服器輸出連線 |
+| 14   | 具有內部部署混合式連線的 Cloud PSTN 要求開啟內部部署主機的網路連線。如需商務用 Skype Online 混合式設定的詳細資料，  | 請參閱[規劃商務用 Skype Server 和 Office 365 之間的混合式連線](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity) (英文) | 商務用 Skype 內部部署混合式輸入 |
+| 15  | **驗證與身分識別 FQDN** <br> FQDN ```secure.aadcdn.microsoftonline-p.com``` 必須在您用戶端的 Internet Explorer (IE) 或 Microsoft Edge 信任的網站區域中才能正常運作。 |  | 信任的網站 |
+| 16   |  **Microsoft Teams FQDN** <br> 如果您使用的是 Internet Explorer 或 Microsoft Edge，您需要啟用第一和第三方 Cookie，並將 Teams 的 FQDN 新增到您的 [信任的網站] 中。這是列 14 所列之跨套件 FQDN、CDN 和遙測之外的項目。如需詳細資訊，請參閱 [Microsoft Teams 的已知問題](https://docs.microsoft.com/microsoftteams/known-issues)。 |  | 信任的網站 |
+| 17   |  **SharePoint Online 和商務用 OneDrive FQDN** <br> 所有在 FQDN 中含有 '\<tenant>' 的 '.sharepoint.com' 的 FQDN 都必須在您用戶端的 IE 或 Microsoft Edge 信任的網站區域中才能正常運作。除了列 14 列出的跨套件 FQDN、CDN 和遙測，您也必須新增這些端點。 |  | 信任的網站 |
+| 18   | **Yammer**  <br> Yammer 僅可於瀏覽器中使用，且必須透過 Proxy 傳遞已驗證的使用者。所有 Yammer FQDN 都必須在用戶端的 IE 或 Microsoft Edge 的信任的網站區域中才能正常運作。 |  | 信任的網站 |
+| 19  | 使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) 將內部部署使用者帳戶同步處理到 Azure AD。 | 請參閱[混合式身分識別所需的連接埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)、[疑難排解 Azure AD 連線](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) 和 [Azure AD Connect Health 代理程式安裝](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)。 | 僅限外寄伺服器的流量 |
+| 共  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) 與中國的 21 ViaNet 將內部部署使用者帳戶同步處理到 Azure AD。 | \*.digicert.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>另請參閱[針對 Azure AD Connect 的連線問題進行疑難排解](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity)。 | 僅限外寄伺服器的流量 |
+|  21  | Microsoft Stream (需要 Azure AD 使用者權杖)。 <BR> Office 365 全球 (包括 GCC) | \*.cloudapp.net <BR> \*.api.microsoftstream.com <BR> \*.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP 通訊埠 443  | 內送伺服器流量 |
+| 22  | 在伺服器的新安裝以及使用Active Directory 網域服務 (AD DS) 進行設定時，將 MFA 伺服器用於多重要素驗證要求。 | 請參閱[開始使用 Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)。  | 僅限外寄伺服器的流量 |
+| 至  | Microsoft Graph 變更通知 | 開發人員可以利用[變更通知](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0)來訂閱 Microsoft Graph 中的事件。 | *.cloudapp.net<BR> 104.43.130.21、137.116.169.230、13.79.38.63、104.214.39.228、公用雲端：168.63.250.205、52.161.9.202、40.68.103.62、13.89.60.223、23.100.95.104、40.113.95.219、104.214.32.10、168.63.237.145、52.161.110.176、52.174.177.183 <BR> 適用於美國政府的 Microsoft 雲端：52.244.231.173、52.238.76.151、52.244.250.211、52.238.78.108 <BR> Microsoft Cloud Germany：51.4.231.136、51.5.243.223、51.4.226.154、51.5.244.215 <BR> 由 21Vianet 營運的 Microsoft Cloud China：139.219.15.33、42.159.154.223、42.159.88.79、42.159.155.77<BR> TCP 通訊埠 443 <BR> 附註：開發人員可以在建立訂閱時指定不同的通訊埠。  | 內送伺服器流量 |
 |||||
 
 ## <a name="related-topics"></a>相關主題

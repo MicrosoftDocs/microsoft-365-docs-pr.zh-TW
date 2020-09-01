@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 設定 Microsoft 365 承租人的藍圖。
-ms.openlocfilehash: db7054d1f6afc7e4835507dc6415e0b240918c1f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688809"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315750"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 租使用者藍圖
 
@@ -30,7 +30,7 @@ ms.locfileid: "46688809"
 
 ## <a name="plan"></a>方案
 
-在您的租使用者實施的規劃階段：
+若要規劃租使用者的執行：
 
 - [瞭解訂閱、授權和 Azure Active Directory (Azure AD) 承租人](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [瞭解如何使用協力廠商 SSL 憑證](plan-for-third-party-ssl-certificates.md)
@@ -44,7 +44,7 @@ ms.locfileid: "46688809"
 
 ## <a name="deploy"></a>部署
 
-在您的租使用者執行的部署階段中， [新增組織的 DNS 網域](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 。
+若要部署您的租使用者，請為您 [的組織新增 DNS 網域](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 。
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>具有多個地理位置的承租人
 
@@ -52,7 +52,7 @@ ms.locfileid: "46688809"
 
 [開始](microsoft-365-multi-geo.md) 瞭解、規劃、設定及管理 Microsoft 365 多地理位置。
 
-## <a name="moving-a-tenants-geographic-locations"></a>移動租使用者的地理位置
+## <a name="move-a-tenants-geographic-locations"></a>移動租使用者的地理位置
 
 Microsoft 會繼續開啟新的資料中心地理位置， (geos) Microsoft 365 服務。 這些新的資料中心 geos 可增加容量及計算資源，以支援客戶需求和使用量成長。 此外，新的資料中心 geos 提供核心客戶資料的地理位置資料派駐服務。
 

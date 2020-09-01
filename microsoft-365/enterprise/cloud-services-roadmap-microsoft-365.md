@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 設定 Microsoft 365 的雲端服務的藍圖。
-ms.openlocfilehash: 2b6b69f25888305232ba93d9d738319fe5137019
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688673"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315762"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Microsoft 365 的雲端服務藍圖
 
@@ -28,11 +28,11 @@ ms.locfileid: "46688673"
 
 ## <a name="deploy"></a>部署
 
-在雲端服務的部署階段：
+若要部署雲端服務：
 
 - [立即準備服務](configure-services-and-applications.md)
 - [將您的內部部署資料移轉至 Microsoft 365](migrate-data-to-office-365.md)
-- 部署雲端服務
+- 為您的使用者設定您的雲端服務
   - [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online)
   - [SharePoint Online](https://docs.microsoft.com/sharepoint/sharepoint-online)
   - [商務用 Skype](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)
@@ -42,7 +42,7 @@ ms.locfileid: "46688673"
 
 ## <a name="manage"></a>管理
 
-在您的雲端服務管理階段中： 
+若要管理雲端服務： 
 
 - [檢查您的服務健康情況](view-service-health.md)
 - [瞭解您的支援選項](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)

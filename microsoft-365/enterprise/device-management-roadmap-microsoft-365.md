@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: 設定 Microsoft 365 裝置管理的藍圖。
-ms.openlocfilehash: 1c5a06c75ede11697e2ecf17c47eb035e78dcd27
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1a1bdb449aa1d1ba12cf1de422b3e279df6c1376
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688486"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315738"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 的裝置管理藍圖
 
@@ -47,17 +47,11 @@ Intune 可讓您使用行動裝置管理 (MDM) 或行動應用程式管理 (MAM)
  
 ## <a name="identity-and-device-access-recommendations"></a>身分識別與裝置存取建議
 
-Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configurations.md)提供一組建議，以確保安全且具有生產力的員工。 針對裝置存取，請使用下列文章中的建議和設定，以及此階段中的步驟：
+Microsoft 會針對[身分識別與裝置存取](microsoft-365-policies-configurations.md)提供一組建議，以確保安全且具有生產力的員工。 如需裝置存取，請使用下列文章中的建議和設定：
 
 - [必要條件](identity-access-prerequisites.md)
 - [一般身分識別與裝置存取原則](identity-access-policies.md)
 
-## <a name="how-microsoft-does-device-management-for-microsoft-365"></a>Microsoft 如何對 Microsoft 365 進行裝置管理
-
-深入瞭解 Microsoft 的 IT 專家如何 [使用 EMS 管理裝置](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8)。
-
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Contoso 如何對 Microsoft 365 進行裝置管理
 
 請參閱 Contoso Corporation （虛構但有代表性的跨國企業）如何使用 Microsoft 365 雲端服務 [部署行動裝置管理基礎結構](contoso-mdm.md) 。
-
-![Contoso 公司](../media/contoso-overview/contoso-icon.png)

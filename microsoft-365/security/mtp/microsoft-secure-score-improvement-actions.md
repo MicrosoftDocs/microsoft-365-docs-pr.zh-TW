@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ab75e7ddbf3ada01c3f1247e58d8dc9472ecae77
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 3b913b3d53abf8c46fbcc9e053f91f512864c9d8
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866972"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315828"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分數評估安全性狀況
 
@@ -35,7 +35,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 *  (Azure Active Directory 帳戶 & 角色的身分識別) 
 * 資料 (Microsoft 資訊保護) 
-* 裝置 (Microsoft Defender ATP，稱為設定 [分數](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score)) 
+* 裝置 (Microsoft Defender ATP，稱為 [裝置的 Microsoft 安全分數](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)) 
 * App (電子郵件和雲端應用程式，包括 Office 365 和 Microsoft Cloud App Security) 
 * 基礎結構 (現在沒有任何改進動作) 
 

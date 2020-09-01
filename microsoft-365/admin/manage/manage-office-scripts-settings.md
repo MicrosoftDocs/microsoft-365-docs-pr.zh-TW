@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 瞭解如何管理組織中使用者的 Office 腳本設定。
-ms.openlocfilehash: 12a80f277f6d17a8e7f5228f6948e70b7a93be11
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 44e2a5c0e0577db344fdbb00a110674df3e71bdc
+ms.sourcegitcommit: 04f196528a7a91b404478553433af3fa94d7eee7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300827"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47317490"
 ---
 # <a name="manage-office-scripts-settings"></a>管理 Office 腳本設定
 
@@ -35,7 +35,7 @@ Office 腳本可讓使用者在網頁上的 Excel 中錄製、編輯和執行腳
 
     - Microsoft 365 商務標準版
     - Microsoft 365 Apps 商務版
-    - Microsoft 365 Apps 企業版
+    - Microsoft 365 企業版應用程式
     - Office 365 E3
     - Office 365 E5
     - Office 365 A3
@@ -80,7 +80,7 @@ Office 腳本可讓使用者在網頁上的 Excel 中錄製、編輯和執行腳
 
 7. 選取 [儲存]****。
 
-    您可能需要長達48小時，Office 腳本設定的變更才會生效。
+    [！注意] Office 腳本設定所做的變更可能需要長達48小時才能生效。
 
 ## <a name="next-steps"></a>後續步驟
 
