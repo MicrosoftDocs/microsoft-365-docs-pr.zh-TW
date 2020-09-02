@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、OneDrive 商務及小組檔案的 Microsoft 365 的客戶金鑰。
-ms.openlocfilehash: 0743b4339dae8e70960293f51a7869dc61fea606
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 94403e1d76fbc6fdf06d784fbb7bb9025dc06fc0
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868888"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324209"
 ---
 # <a name="set-up-customer-key"></a>設定客戶金鑰
 
@@ -31,7 +31,9 @@ ms.locfileid: "46868888"
   
 ## <a name="before-you-set-up-customer-key"></a>在您設定客戶機碼之前
 
-開始之前，請先確定您的組織具有適當的授權。 Microsoft 365 中的客戶金鑰是在 Office 365 E5 或高級規範 SKU 中提供。 若要瞭解本主題中的概念和程式，請參閱 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) 檔。 此外，熟悉 Azure 中使用的條款，例如 [承租人](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100))。
+開始之前，請先確定您的組織具有適當的授權。 從 office 365 的2020年4月1日開始，于 office 365 E5，M365 E5，M365 E5 規範，以及 M365 E5 & 控管 SKUs 中提供的資訊保護。 Office 365 Advanced 相容性 SKU 已無法再提供購置新的授權。 現有的 Office 365 Advanced 相容性授權會繼續受到支援。
+
+若要瞭解本主題中的概念和程式，請參閱 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) 檔。 此外，熟悉 Azure 中使用的條款，例如 [AZURE AD 租](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)使用者。
 
 FastTrack 僅用於收集用於註冊客戶金鑰所需的承租人和服務設定資訊。 客戶金鑰提供方案是透過 FastTrack 發佈，讓您與我們的協力廠商可以方便您與我們的合作夥伴使用相同方法提交必要的資訊。 FastTrack 也可讓您輕鬆地封存您在提供中提供的資料。
   

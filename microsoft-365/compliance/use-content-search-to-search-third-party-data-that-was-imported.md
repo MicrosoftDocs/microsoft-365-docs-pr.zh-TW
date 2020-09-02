@@ -17,37 +17,37 @@ search.appverid:
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: 使用內容搜尋電子檔探索工具來搜尋從協力廠商資料來源匯入至 Microsoft 365 中信箱的專案，方法是建立查詢。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 823d95d6b32a15662004bfc5d92662b130fe4a65
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 24ca63cf78b85f7b8b5181d5babd16058b641128
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527413"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324569"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>使用內容搜尋來搜尋自訂夥伴連接器匯入的協力廠商資料
 
-您可以使用安全性 & 合規性中心的[內容搜尋 eDiscovery 工具](content-search.md)，在協力廠商資料來源中搜尋從 Microsoft 365 匯入信箱的專案。 您可以建立查詢來搜尋所有匯入的協力廠商資料項目，也可以建立查詢來搜尋特定的協力廠商資料項目。 此外，您也可以建立查詢型保留原則或以查詢為基礎的 eDiscovery 保留，以保留協力廠商資料。
+您可以使用安全性 & 合規性中心的 [內容搜尋 eDiscovery 工具](content-search.md) ，在協力廠商資料來源中搜尋從 Microsoft 365 匯入信箱的專案。 您可以建立查詢來搜尋所有匯入的協力廠商資料項目，也可以建立查詢來搜尋特定的協力廠商資料項目。 此外，您也可以建立查詢型保留原則或以查詢為基礎的 eDiscovery 保留，以保留協力廠商資料。
   
-如需使用協力廠商資料匯入協力廠商資料的詳細資訊，以及您可以匯入至 Microsoft 365 的協力廠商資料類型清單，請參閱在[Office 365 中使用協力廠商資料的合作](work-with-partner-to-archive-third-party-data.md)。
+如需使用協力廠商資料匯入協力廠商資料的詳細資訊，以及您可以匯入至 Microsoft 365 的協力廠商資料類型清單，請參閱在 [Office 365 中使用協力廠商資料的合作](work-with-partner-to-archive-third-party-data.md)。
 
 > [!IMPORTANT]
-> 本文中的指導方針只適用于自訂夥伴連接器匯入的協力廠商資料。 本文不適用於使用 Microsoft 規範中心內[協力廠商資料連線器](archiving-third-party-data.md#third-party-data-connectors)匯入的協力廠商資料。
+> 本文中的指導方針只適用于自訂夥伴連接器匯入的協力廠商資料。 本文不適用於使用 Microsoft 規範中心內 [協力廠商資料連線器](archiving-third-party-data.md#third-party-data-connectors) 匯入的協力廠商資料。
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>建立查詢以搜尋所有協力廠商資料
 
-若要搜尋（或保留）您已匯入至 Office 365 的協力廠商資料類型，您可以 `kind:externaldata` 在內容搜尋的 [關鍵字] 方塊中，或在建立查詢型保留時，使用 [關鍵字] 屬性-值對。 例如，若要搜尋從任何協力廠商資料來源匯入的專案，並在匯入專案的 Subject 屬性中包含 "contoso" 一詞，您可以使用下列查詢： 
+若要搜尋 (或保留狀態) 您已匯入至 Office 365 的協力廠商資料類型，您可以  `kind:externaldata` 在 [關鍵字] 方塊中使用「內容搜尋」或 [建立查詢型保留] 的 [郵件屬性-值] 組。 例如，若要搜尋從任何協力廠商資料來源匯入的專案，並在匯入專案的 Subject 屬性中包含 "contoso" 一詞，您可以使用下列查詢： 
   
 ```powershell
 kind:externaldata AND subject:contoso
 ```
 
-上一個關鍵字查詢範例包含 subject 屬性。 如需可包含在關鍵字查詢中的協力廠商資料項目的其他屬性清單，請參閱使用[協力廠商在 Office 365 中封存協力廠商資料](work-with-partner-to-archive-third-party-data.md#more-information)一節中的「其他資訊」一節。
+上一個關鍵字查詢範例包含 subject 屬性。 如需可包含在關鍵字查詢中的協力廠商資料項目的其他屬性清單，請參閱使用 [協力廠商在 Office 365 中封存協力廠商資料](work-with-partner-to-archive-third-party-data.md#more-information)一節中的「其他資訊」一節。
   
-建立查詢以搜尋並保留協力廠商資料時，您也可以使用條件來縮小搜尋結果。 如需建立內容搜尋查詢的詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
+建立查詢以搜尋並保留協力廠商資料時，您也可以使用條件來縮小搜尋結果。 如需建立內容搜尋查詢的詳細資訊，請參閱 [內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
   
 ## <a name="creating-a-query-to-search-specific-types-of-third-party-data"></a>建立查詢以搜尋特定類型的協力廠商資料
 
-除了搜尋所有類型的協力廠商資料之外，您可以使用下列郵件*屬性：值*組合，在內容搜尋的關鍵字方塊中，建立只搜尋協力廠商資料的指定類型的查詢：
+除了搜尋所有類型的協力廠商資料之外，您可以使用下列郵件 *屬性：值* 組合，在內容搜尋的關鍵字方塊中，建立只搜尋協力廠商資料的指定類型的查詢：
   
 ```powershell
 itemclass:ipm.externaldata.<third-party data type>* 
@@ -59,7 +59,7 @@ itemclass:ipm.externaldata.<third-party data type>*
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
 ```
 
-下表列出您可以搜尋的協力廠商資料類型，以及用於郵件屬性的值， `itemclass:` 以特別搜尋該類型的協力廠商資料。 查詢語法不區分大小寫。 
+下表列出您可以搜尋的協力廠商資料類型，以及用於郵件屬性的值，  `itemclass:` 以特別搜尋該類型的協力廠商資料。 查詢語法不區分大小寫。 
   
 |**協力廠商資料類型**|**屬性值 `itemclass:`**|
 |:-----|:-----|
@@ -82,7 +82,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |BlackBerry PIN  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |BlackBerry 短信  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |彭博  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
-|Bloomberg 郵件  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
+|Bloomberg Message  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
 |Bloomberg 訊息  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Box  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco IM &amp; 顯示伺服器  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
@@ -102,7 +102,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |HubConnex  <br/> | `ipm.externaldata.HubConnex*` <br/> |
 |IBM 連線  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
-|ICE 聊天  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
+|ICE Chat  <br/> | `ipm.externaldata.conversation.Ice Chat*` <br/> |
 |Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
 |Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
 |Instant Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
