@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: 瞭解如何在 Microsoft 365 系統管理中心中，設定新產品及功能更新的發行選項。
-ms.openlocfilehash: 648be8ca5d3c7aae93ed868972bc59b32ba87987
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 110cefa646f7c42c6979a97ca617b015a100866e
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560712"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324533"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>設定標準或目標發行選項
 
@@ -39,30 +39,27 @@ ms.locfileid: "46560712"
 ::: moniker-end
 
 > [!IMPORTANT]
-> 本文所述的 Microsoft 365 更新適用于 Microsoft 365、SharePoint Online 和 Exchange Online。 這些版本選項是針對目標的，將變更發佈至 Microsoft 365 的最佳操作方式，但在任何時間或所有更新皆無法保證。 不適用於商務用 Skype、Microsoft 小組和相關的服務。
+> 本文所述的 Microsoft 365 更新適用于 Microsoft 365、SharePoint Online 和 Exchange Online。 這些版本選項是針對目標的，將變更發佈至 Microsoft 365 的最佳操作方式，但在任何時間或所有更新皆無法保證。 它們不適用於 Microsoft 365 應用程式、商務用 Skype、Microsoft 小組和相關的服務。 如需 Microsoft 365 應用程式之版本選項的詳細資訊，請參閱 [microsoft 365 應用程式的更新通道概述](https://docs.microsoft.com/deployoffice/overview-update-channels)。
 
 使用 Microsoft 365 時，您會在新的產品更新及功能可供使用時收到，而不是每隔幾年執行昂貴的更新。 您可以管理組織收到這些更新的方式。 例如，您可以註冊以在早期取得發行的更新，讓您的組織率先收到更新。 您可以指定僅特定人員收到這些更新。 或者，您可以維持預設的發行排程，於稍後收到更新。 本文說明不同的發行選項，以及您可以如何將它們用於您的組織。
 
-> [!NOTE]
-> 如需應用程式更新通道的詳細資訊，請參閱[Microsoft 365 應用程式的更新通道概述](https://docs.microsoft.com/deployoffice/overview-update-channels)。 
-  
 ## <a name="how-it-works---release-validation"></a>發行驗證如何運作
 
-任何新的版本都會先由功能小組進行測試及驗證，再由整個 Microsoft 365 功能小組進行測試及驗證，最後是所有 Microsoft。 在內部測試及驗證之後，下一步是**目標發行** (（先前稱為「初次發行」) 客戶加入宣告）。 在每個發行週期，Microsoft 都會收集意見反應，並透過監視關鍵使用計量，進一步驗證品質。 這樣一系列的漸進式驗證，都是為了確保全球發行能夠盡可能完善。 下圖是發行的圖片說明： 
+任何新的版本都會先由功能小組進行測試及驗證，再由整個 Microsoft 365 功能小組進行測試及驗證，最後是所有 Microsoft。 在內部測試及驗證之後，下一步是 **目標發行** (（先前稱為「初次發行」) 客戶加入宣告）。 在每個發行週期，Microsoft 都會收集意見反應，並透過監視關鍵使用計量，進一步驗證品質。 這樣一系列的漸進式驗證，都是為了確保全球發行能夠盡可能完善。 下圖是發行的圖片說明： 
   
 ![Microsoft 365 的版本驗證鈴聲](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-對於重要的更新，客戶最初是由[Microsoft 365 藍圖](https://products.office.com/business/office-365-roadmap)通知。 隨著更新變得更接近，它會透過您的[Microsoft 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)進行傳遞。
+對於重要的更新，客戶最初是由 [Microsoft 365 藍圖](https://products.office.com/business/office-365-roadmap)通知。 隨著更新變得更接近，它會透過您的 [Microsoft 365 訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)進行傳遞。
 
 > [!NOTE]
-> 您必須使用 Microsoft 365 或 Azure AD 帳戶，透過系統[管理中心](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)存取您的郵件中心。 Microsoft 365 家用方案使用者沒有系統管理員中心。
+> 您必須使用 Microsoft 365 或 Azure AD 帳戶，透過系統 [管理中心](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center)存取您的郵件中心。 Microsoft 365 家用方案使用者沒有系統管理員中心。
 
 
 ## <a name="standard-release"></a>標準發行
 
 這是預設選項，當您和您的使用者廣泛發佈給所有客戶時，您就會收到最新的更新。
   
-好的做法是讓大部分的使用者都是在**標準發行**中，也可以讓 IT 專業人員和超級使用者在**目標版本**中，評估新功能，並準備小組以支援商務使用者和主管人員。 
+好的做法是讓大部分的使用者都是在 **標準發行** 中，也可以讓 IT 專業人員和超級使用者在 **目標版本** 中，評估新功能，並準備小組以支援商務使用者和主管人員。 
   
 > [!NOTE]
 > 如果您從已設定目標發行切換回標準發行，您的使用者可能無法存取尚未到達標準發行的功能。 
@@ -76,11 +73,11 @@ ms.locfileid: "46560712"
   
 ### <a name="targeted-release-for-entire-organization"></a>適用於整個組織的已設定目標發行
 
-如果您為此選項[設定系統管理中心的 [發行] 選項](#set-up-the-release-option-in-the-admin-center)，所有的使用者都將取得目標的發行體驗。 針對超過 300 個使用者的組織，建議您針對此選項使用測試訂閱。 如需測試訂閱資訊，請連絡您的 Microsoft 連絡人。 
+如果您為此選項 [設定系統管理中心的 [發行] 選項](#set-up-the-release-option-in-the-admin-center) ，所有的使用者都將取得目標的發行體驗。 針對超過 300 個使用者的組織，建議您針對此選項使用測試訂閱。 如需測試訂閱資訊，請連絡您的 Microsoft 連絡人。 
   
 ### <a name="targeted-release-for-selected-users"></a>適用於已選取使用者的已設定目標發行
 
-如果您為此選項[設定系統管理中心的 [發行] 選項](#set-up-the-release-option-in-the-admin-center)，您可以定義特定使用者（通常為 [超級使用者]）以接收可及早存取功能。 
+如果您為此選項 [設定系統管理中心的 [發行] 選項](#set-up-the-release-option-in-the-admin-center) ，您可以定義特定使用者（通常為 [超級使用者]）以接收可及早存取功能。 
   
 ## <a name="benefits-of-targeted-release"></a>已設定目標發行的優點
 
@@ -105,15 +102,15 @@ ms.locfileid: "46560712"
   
 1. 在系統管理中心中，移至 [**設定**  >  **組織設定**]，然後在 [**組織設定檔**] 索引標籤下，選擇 [**發行喜好**設定]。
 
-5. 若要停用目標版本，請選取 [**標準版本**]，然後選取 [**儲存變更**]。 
+5. 若要停用目標版本，請選取 [ **標準版本**]，然後選取 [ **儲存變更**]。 
     
-6. 若要為組織中的所有使用者啟用目標版本，請為 [所有人] 選取 [**目標版本**]，然後選取 [**儲存變更**]。 
+6. 若要為組織中的所有使用者啟用目標版本，請為 [所有人] 選取 [ **目標版本**]，然後選取 [ **儲存變更**]。 
     
-7. 若要為組織中的某些人員啟用目標版本，請選取 [**目標的版本] 選取的使用者**，然後選取 [**儲存變更**]。 
+7. 若要為組織中的某些人員啟用目標版本，請選取 [ **目標的版本] 選取的使用者**，然後選取 [ **儲存變更**]。 
     
-8. 選擇 [**選取使用者**]，一次新增一個使用者，或**上傳使用者**以大量新增使用者。
+8. 選擇 [ **選取使用者** ]，一次新增一個使用者，或 **上傳使用者** 以大量新增使用者。
     
-9. 當您新增使用者後，請選取 [**儲存變更**]。
+9. 當您新增使用者後，請選取 [ **儲存變更**]。
 
 
   

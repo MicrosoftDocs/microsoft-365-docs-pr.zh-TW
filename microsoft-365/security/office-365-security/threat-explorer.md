@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 635f7f32d16f18f49aa1920d82efd77bf27dc328
-ms.sourcegitcommit: 3f9aac62e79799eca751ba9c8510aad1fc3afc5d
+ms.openlocfilehash: 4220c850e5ef7f830f7fc6ec57bb220cca29eaf4
+ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46641638"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47322010"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
-如果貴組織具有 [Office 365 進階威脅防護](office-365-atp.md) (Office 365 ATP)，而且您具有[必要的權限](#required-licenses-and-permissions)，您具有**總管**或**即時偵測** (先前的*即時報告* — [查看新增功能](#new-features-in-threat-explorer-and-real-time-detections)！)。 在 [安全性 & 規範中心] 中，移至 [**威脅管理**]，然後選擇 [ **Explorer** ]_或_[**即時**偵測]。
+如果貴組織具有 [Office 365 進階威脅防護](office-365-atp.md) (Office 365 ATP)，而且您具有[必要的權限](#required-licenses-and-permissions)，您具有**總管**或**即時偵測** (先前的*即時報告* — [查看新增功能](#new-features-in-threat-explorer-and-real-time-detections)！)。 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**]，然後選擇 [ **Explorer** ] _或_[ **即時**偵測]。
 
 |在 ATP 方案 2，您會看到：|在 ATP 方案 1，您會看到：|
 |---|---|
@@ -78,8 +78,39 @@ ms.locfileid: "46641638"
 
 ![View In 產品資訊](../../media/ProductInfo.png)
 
+## <a name="extended-capabilities-in-threat-explorer"></a>威脅瀏覽器中的延伸功能
 
-## <a name="new-features-in-real-time-detections"></a>即時偵測中的新功能
+### <a name="top-targeted-users"></a>主要目標使用者
+
+如今，我們會在惡意程式碼系列 (內的主要惡意程式碼) 區段中，公開主要目標使用者的清單。 我們也會在網路釣魚和所有電子郵件視圖中擴充此視圖，您可以在其中看到前五個目標使用者，以及每位使用者對對應 (view 的嘗試次數。例如，針對 [網路釣魚視圖]，您將能夠看到) 的網路釣魚嘗試次數。
+您也可以將目標使用者的清單匯出為3000的限制，以及每個電子郵件 view 的離線分析嘗試次數。 除此之外，選取 [否]。 嘗試 (例如，下列 13) 會在威脅瀏覽器中開啟篩選的視圖，這樣您就可以深入瞭解該使用者的電子郵件和威脅。 
+
+![主要目標使用者](../../media/Top_Targeted_Users.png)
+
+
+### <a name="exchange-transport-rules"></a>Exchange 傳輸規則
+在資料豐富中，您也應該可以查看已套用至郵件的所有不同傳輸規則。 此資訊將會出現在 [電子郵件格線] 視圖中 (以進行查看，請選取 [格線] 中的 [欄選項]，然後在 [格線] 的 [欄] 選項中新增 Exchange Transport Rule) 以及電子郵件中的詳細資訊。
+您可以同時看到 GUID，以及已套用至郵件的傳輸規則名稱。 此外，您也可以使用傳輸規則的名稱來搜尋郵件。 這會是「包含」搜尋，這表示您也可以使用部分搜尋進行搜尋。 
+
+#### <a name="important-note"></a>重要注意事項： 
+ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具有下列其中一個角色/許可權，才能查看 ETR 名稱和搜尋。  如果您未指派任何下列角色，您將無法看到傳輸規則的名稱，並使用 ETR 名稱來搜尋郵件。。 不過，您將可以在電子郵件詳細資料中看到 ETR 標籤及 GUID 資訊。 在電子郵件網格、電子郵件 flyouts、篩選和匯出等中查看記錄的其他體驗不會受到影響。 
+ 
+- 僅限 EXO-資料遺失防護：全部
+- 僅限 EXO-O365SupportViewConfig： All
+- AAD 或 EXO-安全性系統管理員： All
+- AAD 或 EXO-Security Reader： All
+- 僅限 EXO-Transport Rules： All
+- 僅限 EXO-View-Only 設定： All
+
+在電子郵件格線、詳細資料浮出和匯出的 CSV 中，ETRs 會以如下所示的名稱/GUID 呈現。 
+
+![Exchange 傳輸規則](../../media/ETR_Details.png)
+
+### <a name="inbound-connectors"></a>輸入連接器 
+
+連接器是一組指示，可自訂您的電子郵件流向和來源於您的 Microsoft 365 或 Office 365 組織的方式，以及套用任何安全性限制或控制措施的功能。 在威脅瀏覽器內，您現在可以查看與電子郵件相關的連接器，也能使用連接器名稱搜尋電子郵件。 連接器的搜尋是「包含」，其性質表示部分關鍵字搜尋應該也會運作。 在主格線視圖中，[詳細資料] 飛入和匯出的 CSV，連接器會以如下所示的名稱/GUID 格式顯示： 
+
+![連接器詳細資料](../../media/Connector_Details.png)
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測的新功能
 
@@ -93,7 +124,7 @@ ms.locfileid: "46641638"
 
 ### <a name="preview-email-header-and-download-email-body"></a>預覽電子郵件標頭和下載電子郵件內文
 
-預覽電子郵件標頭和下載電子郵件內文能力為威脅總管提供的新功能。 系統管理員將能分析下載的標頭/電子郵件訊息是否存在威脅。 由於下載電子郵件訊息可能有資訊暴露的風險，此程序是由角色型存取控制 (RBAC) 來控制。 新的角色，*預覽*必須新增至另一個角色群組 (例如安全作業或安全性系統管理員) ，授與可在 [所有電子郵件] 視圖中下載郵件和預覽標頭的能力。
+預覽電子郵件標頭和下載電子郵件內文能力為威脅總管提供的新功能。 系統管理員將能分析下載的標頭/電子郵件訊息是否存在威脅。 由於下載電子郵件訊息可能有資訊暴露的風險，此程序是由角色型存取控制 (RBAC) 來控制。 新的角色， *預覽*必須新增至另一個角色群組 (例如安全作業或安全性系統管理員) ，授與可在 [所有電子郵件] 視圖中下載郵件和預覽標頭的能力。
 
 但總管 (和即時偵測) 也會新增新欄位，設計用於提供您更完整的電子郵件訊息目標位置資訊。 這項變更的部分目標是讓安全性作業人員更容易搜捕，但最後的結果在於對問題電子郵件訊息的位置一目了然。
 
@@ -134,7 +165,7 @@ ms.locfileid: "46641638"
 
 **電子郵件時間表**是總管的另一個新功能，目標是提升系統管理員的搜捕體驗。 這可減少不規則性，因為花較少的時間檢查不同位置以嘗試了解事件。 當多個事件同時或接近同時發生在某電子郵件時，這些事件會出現在時刻表檢視。 事實上，某些在傳遞郵件後發生的事件會由「特殊動作」欄擷取。 透過結合該郵件在時間表的資訊和傳遞郵件後採取的特殊動作，能讓系統管理員深入了解其原則的運作方式、郵件最後路由傳送的位置，以及在某些情況下最終評估的內容。
 
-如需有關調查惡意電子郵件訊息的詳細討論，請參閱[調查並修復 Office 365 中傳遞的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)。
+如需有關調查惡意電子郵件訊息的詳細討論，請參閱 [調查並修復 Office 365 中傳遞的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)。
 
 ### <a name="export-url-click-data"></a>匯出 URL 點擊資料
 
@@ -293,5 +324,4 @@ ms.locfileid: "46641638"
 - **所有的電子郵件**view 均可在**威脅瀏覽器**中 (，而不會在**即時**偵測報告) 中。
 - **威脅瀏覽器**中包含更多篩選功能和可用的動作。
 
-如需詳細資訊，請參閱[Office 365 ATP 服務說明：各高級威脅防護的功能可用性 (ATP) 方案](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
-
+如需詳細資訊，請參閱 [Office 365 ATP 服務說明：各高級威脅防護的功能可用性 (ATP) 方案](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,30 +18,28 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
-description: 透過前往 [訂閱] 頁面，瞭解您的組織有哪些訂閱可供驗證。
-ms.openlocfilehash: fff76f1a9ac127d061460767a41941f4daf2ea32
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: 瞭解如何透過前往 [產品] 頁面來驗證您的組織所擁有的訂閱。
+ms.openlocfilehash: bd7b7726c93ee6c5022df7ca72342d8d3b7a1c09
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780502"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324545"
 ---
 # <a name="what-subscription-do-i-have"></a>我有何種訂閱？
 
 如果您是系統管理員，可以前往系統管理中心確認您的組織有哪些訂閱。
   
- **不是系統管理員？** 請參閱[我有哪些 Microsoft 365 的商務版產品或授權？](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+ **不是系統管理員？** 請參閱 [我有哪些 Microsoft 365 的商務版產品或授權？](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
-
-2. 您的訂閱會顯示在 [**產品**] 頁面上，以及訂閱名稱、訂閱的相關資訊及其狀態。 若要查看簡潔的視圖，請選取 [**表格視圖**]。
+2. 在 [ **產品** ] 索引標籤上，您會看到所有的訂閱。 每個訂閱行都包含授權、訂閱狀態和帳單的相關資訊。
+3. 如果您想要變更出現在清單中的欄，請選取 **[選擇欄**]。 變更 [欄的選取範圍]，然後選取 [ **儲存**]。
+4. 若要查看單一訂閱的詳細資訊，請選取該訂閱。
 
 ::: moniker-end
   
@@ -49,7 +47,7 @@ ms.locfileid: "44780502"
 
 1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">訂閱</a>] 頁面。  
 
-2. 如果您只有一個訂閱，它會顯示在 [**訂閱**] 頁面上，以及訂閱名稱、訂閱資訊及其狀態。 在下列螢幕擷取畫面中，您可以看到我有 Microsoft 365 應用程式商務版訂閱。
+2. 如果您只有一個訂閱，它會顯示在 [ **訂閱** ] 頁面上，以及訂閱名稱、訂閱資訊及其狀態。 在下列螢幕擷取畫面中，您可以看到我有 Microsoft 365 應用程式商務版訂閱。
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   
@@ -68,7 +66,7 @@ ms.locfileid: "44780502"
 
 1. 在系統管理中心中，移至 [**帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">訂閱</a>] 頁面。  
 
-2. 如果您只有一個訂閱，它會顯示在 [**訂閱**] 頁面上，以及訂閱名稱、訂閱資訊及其狀態。 在下列螢幕擷取畫面中，您可以看到我有 Microsoft 365 應用程式商務版訂閱。
+2. 如果您只有一個訂閱，它會顯示在 [ **訂閱** ] 頁面上，以及訂閱名稱、訂閱資訊及其狀態。 在下列螢幕擷取畫面中，您可以看到我有 Microsoft 365 應用程式商務版訂閱。
 
     ![The Subscriptions page that shows which subscription you have as well as its status.](../../media/4d51dfcc-e9f3-4414-964a-6ef182f49eba.png)
   

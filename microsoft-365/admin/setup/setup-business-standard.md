@@ -25,14 +25,20 @@ search.appverid:
 - MOE150
 - BEA160
 description: 瞭解如何設定 Microsoft 365 商務標準版訂閱。
-ms.openlocfilehash: b42dd0779c708410614ea2ab0d134aa3dcf0c7e9
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44778922"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324443"
 ---
 # <a name="set-up-microsoft-business-standard"></a>設定 Microsoft 商務標準版
+
+觀看有關設定 Microsoft 365 商務標準版的短片。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ELKR]
+
+如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
   
  *這些步驟適用於擁有 **[Microsoft 365 商務標準版方案](https://go.microsoft.com/fwlink/p/?LinkId=627220)** 的公司和[非營利組織](https://go.microsoft.com/fwlink/p/?LinkId=627221)。*
 

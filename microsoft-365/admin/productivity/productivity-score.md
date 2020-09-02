@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生產力分數的概覽。
-ms.openlocfilehash: 47675f37e9146586b3fe0dd8d974887fd2435bf3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a7f6fc5fef9189f7478bcc67e1d24bdf037f561d
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307474"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324431"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft (預覽的工作效率分數) 
 
@@ -40,9 +40,9 @@ ms.locfileid: "47307474"
 
 - **員工經驗：** 我們會測量人員如何共同處理內容，如何使用 Microsoft 365 產品進行通訊，以及是否在平臺上使用 Microsoft 365。 
 
-    我們提供這些真知灼見，是因為當人們線上共同作業時，他們會節省時間。 當使用者可以自由使用任何裝置時，其效率也會比較高。 當他們能夠以彈性的方式進行通訊時，其效率會更高、形式更好，且您的組織更具整合性。 如需證據，請參閱 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+    我們提供這些真知灼見，是因為當人們線上共同作業時，他們會節省時間。 在任何裝置上都可以自由運作，其效率更高且滿足您的要求。 以一種靈活的方式進行通訊，可讓人員更有效率、形成更好的關聯性，以及組織更具整合的方式。 如需證據，請參閱 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
 
-- **技術經驗：** 生產力取決於可靠性和能力強的技術，以及 Microsoft 365 的有效使用方式。 我們提供 [端點分析](https://aka.ms/endpointanalytics)，可協助您瞭解使用者的生產力對您的端點硬體和軟體的效能與狀況問題的影響，並提供建議的動作以加以修復;而且我們為您的組織提供 Microsoft 365 網路連線資訊洞察力。
+- **技術經驗：** 生產力取決於可靠性和能力強的技術，以及 Microsoft 365 的有效使用方式。 我們提供 [端點分析](https://aka.ms/endpointanalytics)，可協助您瞭解使用者的生產力對您的端點硬體和軟體的效能與狀況問題有何影響。 我們也為您的組織提供建議的動作，以進行修正，以及適用于您組織的 Microsoft 365 network connectivity insights。
 
 如需概述和必要條件詳細資料，請參閱 [何謂「端點分析](https://docs.microsoft.com/mem/analytics/overview) 」。 若要深入瞭解 Microsoft 365 network connectivity insights，請參閱 [network connectivity 一覽](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)。
   
@@ -66,7 +66,7 @@ ms.locfileid: "47307474"
 
 生產力分數包括來自 Exchange、SharePoint、OneDrive、小組、Word、Excel、PowerPoint、OneNote、Outlook、Yammer 及 Skype 的資料。
 
-您的分數會每日更新，並且反映過去28到180天的使用者動作， (包括當天) 。
+您的分數會每日更新，而且會反映在最後 28 (中完成的使用者動作，包括當天) 。
 
 
 ## <a name="pre-requisites"></a>先決條件 
@@ -111,15 +111,15 @@ ms.locfileid: "47307474"
 
 ### <a name="content-collaboration-details"></a>內容共同作業詳細資料
 
-內容共同作業的主要洞察力是建立、讀取及共同作業 (編輯和共用) 線上的人員人數。 這些措施很重要，因為調查顯示當人們使用線上檔案共同作業時，每個人平均會儲存100分鐘，或每週大約2小時。
+內容共同作業的主要洞察力是建立、讀取及共同作業 (編輯和共用) 線上的人員人數。 這些措施很重要，因為調查顯示當人們使用線上檔案進行共同作業時，每個人員平均每週會儲存大約2小時。
 
-我們將內容共同作業定義為一個人，以建立及共用 Office 檔案，然後再至少另外一個人進行編輯。 
+我們會將內容共同作業定義為一個人，以建立及共用 Office 檔案，然後再進行一個其他人員閱讀。 
 
-讀者：在 OneDrive 或 SharePoint 中存取或下載線上檔案的人員。
+**讀者**：在 OneDrive 或 SharePoint 中存取或下載線上檔案的人員。
 
 建立**者：** 建立、修改、上傳、同步處理、存回、複製或移動線上 OneDrive 或 SharePoint 檔案的人員。
 
-合作者：使用 OneDrive 或 SharePoint 與線上檔案共同作業的人員。 若有兩位人員在建立或修改線上 Word、Excel、PowerPoint、OneNote 或 PDF 雲端檔之後，他們會在28天的時段內讀取或編輯該檔，這兩個人都是合作者。
+**合作者**：使用 OneDrive 或 SharePoint 與線上檔案共同作業的人員。 當其他人建立或修改線上 Office 應用程式或 PDF 雲端檔之後，有兩個人是共同作業者，在28天的時段內。
 
 考慮進行共同作業的檔案類型包括 Word、Excel、PowerPoint、OneNote 和 PDF 檔。
 
@@ -127,7 +127,7 @@ ms.locfileid: "47307474"
 
 ### <a name="communication-details"></a>通訊詳細資料
 
-通訊的主要洞察力是組織中的人員使用電子郵件、聊天和群組帖子進行通訊的頻率。 這項洞察力很重要，因為當人們使用各種即時通訊工具時，他們可以選擇可協助其最有效率的通訊模式，而且其工具類似聊天和社區，可協助他們開發各辦公室位置的關聯性。
+通訊的主要洞察力是組織中的人員使用電子郵件、聊天和群組帖子進行通訊的頻率。 當人們使用各種即時通訊工具時，他們可以選擇一種可協助其有效的通訊模式，例如聊天和社區，可協助他們開發不同 office 位置的關聯性。
 
 ### <a name="mobility-details"></a>行動詳細資料
 
@@ -141,7 +141,7 @@ ms.locfileid: "47307474"
 
 此報告可協助業務負責人瞭解： 
 
-- 對「遠端工作」的倒班如何影響共同作業和通訊。 
+- 移動作業與通訊對遠端工作的影響。 
 
 - 因人員調整為在家運作時，對工作生命期的影響。 
 
@@ -153,4 +153,4 @@ ms.locfileid: "47307474"
 
 ## <a name="we-want-to-hear-from-you"></a>我們想要聽到您的來信
 
-請分享您對於生產力評分的想法，以及如何改善的想法。 請使用產品中的 **意見** 反應區段和/或與 ProductivityScorePreview@service.microsoft.com 的生產力分數小組聯繫。
+分享您對於生產力評分的想法，以及如何改善的想法。 請使用產品中的 **意見** 反應區段和/或與 ProductivityScorePreview@service.microsoft.com 的生產力分數小組聯繫。
