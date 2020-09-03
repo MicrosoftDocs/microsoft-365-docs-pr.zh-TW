@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及自動發佈保留標籤，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 80a5ef502450a24d9c8aeeb08d571bfcbd51a4e3
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 7528fed52ae3df1a60303c40df35a42de6bc1f31
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648802"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315811"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤來保留或刪除內容
 
@@ -38,8 +38,8 @@ ms.locfileid: "46648802"
     
 - 使用者不再需要了解資料控管原則，他們可以專心工作。
     
-當該內容包含敏感資訊、關鍵字或 [可訓練分類器](classifier-getting-started-with.md) 的匹配項目時，您可以自動套用保留標籤到內容上。
-    
+當內容包含敏感性資訊、關鍵字或[可訓練分類器](classifier-getting-started-with.md)的相符項目時，您可以自動對該內容套用保留標籤。
+
 根據下列條件自動套用保留標籤的程式：
 
 ![自動套用標籤的角色和工作圖](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
@@ -113,7 +113,7 @@ ms.locfileid: "46648802"
 
 - [特定敏感資訊類型](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
 
-- [符合您所建立查詢的特定關鍵字](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+- [符合您所建立查詢的特定關鍵字或可搜尋的屬性](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 - [可訓練分類器的符合項目](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
@@ -135,30 +135,28 @@ ms.locfileid: "46648802"
   
 #### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>自動將標籤套用至包含關鍵字或可搜尋屬性的內容
 
-您可以自動將標籤套用至符合特定條件的內容。現在可用的條件支援將標籤套用至包含特定字詞、片語或可搜尋屬性的值。您可以使用 AND、OR、NOT 等搜尋運算子來精簡查詢。
+您可以使用包含特定字詞、片語或可搜尋屬性的查詢，自動將標籤套用至內容。您可以使用 AND、OR 和 NOT 等搜尋運算子來精簡查詢。
 
-自動將標籤套用至可搜尋的屬性時，無法在查詢中使用受管理屬性的別名。 它必須是受管理屬性的實際名稱，例如 RefinableString01。
+![查詢編輯器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
-如需查詢語法的詳細資訊，請參閱：
+如需使用關鍵字查詢語言 (KQL) 的查詢語法的詳細資訊，請參閱[關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
 
-- [關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
-
-查詢式標籤使用搜尋索引來識別內容。如需有效可搜尋屬性的詳細資訊，請參閱：
+查詢型標籤會使用搜尋索引來識別內容。 如需有關您可使用的可搜尋屬性的詳細資訊，請參閱：
 
 - [內容搜尋的關鍵字查詢與搜尋條件](keyword-queries-and-search-conditions.md)
 - [SharePoint 伺服器中的編目及受控屬性概觀](https://docs.microsoft.com/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
+> [!NOTE]
+> 雖然 SharePoint 管理屬性支援別名，但當您設定保留標籤時，請不要使用這些別名。 一律指定受管理屬性的實際名稱，例如，"RefinableString01"。
+
 範例查詢：
 
-- Exchange
-    - subject:"Quarterly Financials"
-    - recipients:garthf<!--nolink-->@contoso.com
-- SharePoint 和 OneDrive
-    - contenttype:contract
-    - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
-
-![查詢編輯器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-
+| 工作負載 | 範例 |
+|:-----|:-----|
+|Exchange   | `subject:"Quarterly Financials"` |
+|Exchange   | `recipients:garthf@contoso.com` |
+|SharePoint | `contenttype:contract` |
+|SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可訓練分類器自動將標籤套用至內容
 

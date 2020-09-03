@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 9eaea7579faedace50ca76a69997fbfd83e452bb
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321898"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332746"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -161,7 +161,7 @@ Windows 10 搭配使用 Microsoft 365 應用程式的企業版是電腦的建議
 ![設定身分識別與裝置存取的步驟。](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
 
 1. 設定必要身分識別功能及其設定。
-2. 設定最常見的身分識別和存取條件式存取原則。
+2. 設定通用身分識別和存取條件式存取原則。
 3. 為來賓和外部使用者設定條件式存取原則。
 4. 針對 microsoft 團隊、Exchange Online 和 SharePoint，設定 Microsoft 365 雲端 app 的條件式存取原則。
 

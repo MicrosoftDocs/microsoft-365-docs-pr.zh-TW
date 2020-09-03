@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 6a22c1020c7e6d6c1fce4f80ce40da353b095e64
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 5b0b81d18afad9f0f9cba6ec24e157ad8f96e4ef
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903858"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315843"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -209,10 +209,8 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
   
 ### <a name="identify-content-that-contains-specific-keywords"></a>識別包含特定關鍵字的內容
 
-您可以將保留原則套用到僅符合特定條件的內容，然後針對該內容執行保留動作。 可用的條件可支援將保留原則套用至包含特定字詞或詞組的內容。 您可以使用 AND、OR 和 NOT 這類搜尋運算子來精簡您的查詢。 如需有關這些運算子的詳細資訊，請參閱[內容查詢的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
-  
-即將推出對新增可搜尋屬性 (例如 **subject:**) 的支援。
-  
+您可以將保留原則套用到僅符合特定條件的內容，然後針對該內容執行保留動作。 可用的條件可支援將保留原則套用至包含特定字詞或詞組的內容。 您可以使用 AND、OR 和 NOT 這類搜尋運算子來精簡您的查詢。 如需有關這些運算子的詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
+
 查詢型保留會使用搜尋索引來識別內容。
   
 ![查詢編輯器](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)

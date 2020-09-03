@@ -1,7 +1,7 @@
 ---
 title: Office 365 商務用 Skype 資料刪除
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 在本文中，您可以在商務用 Skype 中尋找資料刪除的說明，包含哪些類型的內容不會保留。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bf317f2ecd3d547ae8601553a34fb43fb4b5bd9d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0a47df4dd0dfdf5551668f8cafc9baa023bd6db1
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688685"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332709"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Office 365 中的商務用 Skype 資料刪除
 

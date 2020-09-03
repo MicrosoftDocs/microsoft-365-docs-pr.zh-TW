@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留功能在 SharePoint 以及 OneDrive 中的運作方式。
-ms.openlocfilehash: f19f452a01c093d08dbeed38a34756dcaf7a4e95
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
+ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127400"
+ms.lasthandoff: 08/31/2020
+ms.locfileid: "47315786"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>瞭解 SharePoint 和 OneDrive 的保留功能
 
@@ -71,7 +71,7 @@ ms.locfileid: "45127400"
 
 ## <a name="how-retention-works-with-document-versions-in-a-site-collection"></a>保留原則如何使用網站集合中的文件檔案版本
 
-版本設定是 SharePoint 和 OneDrive 中所有文件庫的功能。 根據預設，版本設定會最少保留 500 個主要版本，不過您可以增加此限制。 如需詳細資訊，請參閱[啟用和設定清單或文件庫的版本設定](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)。
+版本設定是 SharePoint 和 OneDrive 中所有文件庫的功能。 根據預設，版本設定會最少保留 500 個主要版本，不過您可以增加此限制。 如需詳細資訊，請參閱[啟用和設定清單或文件庫的版本設定](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)和[版本設定如何在清單和文件庫中運作](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247)。
   
 僅保留原則設定會保留在 SharePoint 網站集合或 OneDrive 帳戶中所有版本的文件檔案。 在首次編輯受到保留或僅保留原則規範的文件檔案時，原始文件檔案的版本就會被複製到 [文件保留庫]。 若有啟用版本設定功能，在刪除受到保留或僅保留設定的時，該檔案的所有版本資訊都會複製到 [文件保留庫]。 在 [文件保留庫] 中的每個文件版本都會以單一個別的項目儲存，並有各自不同的保留期間：
   
@@ -81,6 +81,10 @@ ms.locfileid: "45127400"
 
 > [!NOTE]
 > 電子文件探索工具無法搜尋保留版本的 SharePoint 和 OneDrive 文件。
+
+對於受限於保留原則 (或法務保存措施) 的項目，會忽略文件庫的版本設定限制，直到達到文件的保留期間為止。 在此案例中，不會自動清除舊的版本，且會防止使用者刪除版本。
+
+如果未對網站套用保留原則，保留標籤就不會有此作用。 相反地，會採用版本設定限制，以便可自動刪除較舊的版本以容納新版本，但使用者仍無法刪除版本。
 
 ## <a name="when-a-user-leaves-the-organization"></a>當使用者離開組織時
 

@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: 71969a58acd64c3e830da398288249cbb8610b5f
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 17c32ea53d860e54a7c9a8fcf70778151c28c539
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797791"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334846"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -506,9 +506,6 @@ OR
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_australian_tax_file_number" />
         <Match idRef="Keyword_Australia_Tax_File_Number" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_number_exclusions" />
-        </Any>
       </Pattern>
     </Entity>
 ```
@@ -526,39 +523,6 @@ OR
 - 個人稅收返還
 - 稅收檔案編號
 - tfn
-
-#### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
-
-- 00000000
-- 11111111
-- 22222222
-- 33333333
-- 44444444
-- 55555555
-- 66666666
-- 77777777
-- 88888888
-- 99999999
-- 000000000
-- 111111111
-- 222222222
-- 333333333
-- 444444444
-- 555555555
-- 666666666
-- 777777777
-- 888888888
-- 999999999
-- 0000000000
-- 1111111111
-- 2222222222
-- 3333333333
-- 4444444444
-- 5555555555
-- 6666666666
-- 7777777777
-- 8888888888
-- 9999999999
 
 ## <a name="austria-drivers-license-number"></a>奧地利駕駛執照號碼
 這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
@@ -727,7 +691,9 @@ OR
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
   
-- 函數  `Func_austria_eu_ssn_or_equivalent` 會找到符合模式的內容。 
+- 函數 ' Func_austria_eu_
+
+_or_equivalent ' 找到符合模式的內容。 
     
 - 找到來自的關鍵字  `Keywords_austria_eu_ssn_or_equivalent` 。 
     
@@ -1782,7 +1748,7 @@ OR
 - 法律實體 
 - 法律實體 
 - 註冊狀態 
-- 商務版 
+- Business 
 - Company
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
@@ -2869,28 +2835,30 @@ Registro de Identidade (RIC)  (新格式) ：
 - kreditkartenprufnummer
 - prüfziffer
 - prufziffer
-- sicherheits Kode
+- sicherheits Kode
 - sicherheitscode
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- Cod。 sicurezza
+- Cod。sicurezza
 - 貨至 sicurezza
 - n autorizzazione
 - código
 - codigo
-- Cod。 Seg
+- Cod。Seg
 - 貨至 seg
 - código de segurança
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód. segurança
-- Cod。 seguranca 貨。 segurança
-- cód. seguranca
-- cód segurança
-- 貨至付款 seguranca，segurança
-- cód seguranca
+- cód.segurança
+- Cod。seguranca
+- Cod。segurança
+- cód.seguranca
+- cód segurança
+- 貨至 seguranca
+- 貨至 segurança
+- cód seguranca
 - número de verificação
 - numero de verificacao
 - ablauf
@@ -2903,8 +2871,8 @@ Registro de Identidade (RIC)  (新格式) ：
 - fecha de expiracion
 - fecha de venc
 - vencimiento
-- válido hasta
-- valido hasta
+- válido hasta
+- valido hasta
 - vto
 - 資料 de expiração
 - 資料 de expiracao
@@ -2912,26 +2880,37 @@ Registro de Identidade (RIC)  (新格式) ：
 - validade
 - 勇氣
 - vencimento
-- Venc 
+- 交易
+- 交易編號
+- 參考編號
+- セキュリティコード
+- セキュリティ コード
+- セキュリティナンバー
+- セキュリティ ナンバー
+- セキュリティ番號
+
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
 
 - amex
 - 美洲 express
 - americanexpress
+- americano espresso
 - 簽證
 - 萬事 達
 - 主卡
-- Mc 
+- Mc
 - mastercards
 - 主卡
 - diner 俱樂部
 - diners 俱樂部
 - dinersclub
+- 發現
 - 探索卡片
 - discovercard
 - 探索卡片
 - JCB
+- BrandSmart
 - 日本卡片局
 - 購買 blanche
 - carteblanche
@@ -2974,6 +2953,18 @@ Registro de Identidade (RIC)  (新格式) ：
 - enroute
 - 途中
 - 卡片類型
+- Cardmember 帳戶
+- cardmember 帳戶
+- Cardno
+- 公司卡片
+- 公司卡片
+- 卡片類型
+- 信用卡帳戶號碼
+- 卡片成員帳戶
+- Cardmember 帳戶。
+- 卡片編號
+- 無卡
+- 卡號碼
 - 購買 bancaire
 - 反 crédit
 - 購買退款
@@ -2989,31 +2980,31 @@ Registro de Identidade (RIC)  (新格式) ：
 - kreditkarteninstitut
 - kreditkartentyp
 - eigentümername
-- kartennr 
+- kartennr
 - kartennummer
 - kreditkartennummer
 - kreditkarten-nummer
 - carta di credito
-- carta credito
-- 憲章
+- carta credito
+- \r\n.憲章
 - n carta
-- 星期日。 憲章
+- 星期日。憲章
 - nr carta
-- numero carta
-- numero della carta
+- numero carta
+- numero della carta
 - numero di carta
-- tarjeta credito
+- tarjeta credito
 - tarjeta de credito
-- tarjeta crédito
+- tarjeta crédito
 - tarjeta de crédito
 - tarjeta de atm
 - tarjeta atm
-- tarjeta debito
+- tarjeta debito
 - tarjeta de debito
-- tarjeta débito
+- tarjeta débito
 - tarjeta de débito
 - 消除 tarjeta 的 n º
-- 不。 de tarjeta
+- 不。de tarjeta
 - 無 de tarjeta
 - numero de tarjeta
 - número de tarjeta
@@ -3027,10 +3018,10 @@ Registro de Identidade (RIC)  (新格式) ：
 - cartao de débito
 - cartão de debito
 - cartao de debito
-- débito automático
-- debito automatico
+- débito automático
+- debito automatico
 - número 執行 cartão
-- numero 執行 cartão 
+- numero 執行 cartão
 - número 執行 cartao
 - numero 執行 cartao
 - número de cartão
@@ -3039,11 +3030,40 @@ Registro de Identidade (RIC)  (新格式) ：
 - numero de cartao
 - n º do cartão
 - n º do cartao
-- n º。 執行 cartão
+- n º。執行 cartão
 - 無 do cartão
 - 無 do cartao
-- 不。 執行 cartão
-- 不。 執行 cartao 
+- 不。執行 cartão
+- 不。執行 cartao
+- クレジットカード番號
+- クレジットカードナンバー
+- クレジットカード＃
+- クレジットカード
+- クレジット
+- クレカ
+- カード番號
+- カードナンバー
+- カード＃
+- アメックス
+- アメリカンエクスプレス
+- アメリカン エクスプレス
+- Visaカード
+- 簽證カード
+- マスターカード
+- マスター カード
+- マスター
+- ダイナースクラブ
+- ダイナース クラブ
+- ダイナース
+- 有効期限
+- 期限
+- キャッシュカード
+- キャッシュ カード
+- カード名義人
+- カードの名義人
+- カードの名義
+- デビット カード
+- デビットカード
 
 ## <a name="croatia-drivers-license-number"></a>克羅地亞駕駛執照號碼
 這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
@@ -6688,12 +6708,9 @@ bnationalit
 
 ### <a name="definition"></a>定義
 
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
 - 正則運算式 Regex_indonesia_id_card 找到符合模式的內容。
 - 會找到來自 Keyword_indonesia_id_card 的關鍵字。
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 正則運算式 Regex_indonesia_id_card 找到符合模式的內容。
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -6701,10 +6718,6 @@ bnationalit
   <Pattern confidenceLevel="85">
      <IdMatch idRef="Regex_indonesia_id_card"/>
      <Match idRef="Keyword_indonesia_id_card"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_indonesia_id_card"/>
-  </Pattern>
 </Entity>
 ```
 
@@ -12176,7 +12189,15 @@ OR
 - 醫療注意力
 - 社會保障
 - 英國
-- 保險
+- NI 號碼
+- NI 否。
+- 鎳#
+- 鎳#
+- 保險#
+- insurancenumber
+- nationalinsurance#
+- nationalinsurancenumber
+
     
 ## <a name="uk-tax-identification-number"></a>英國。 納稅識別號碼
 此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
@@ -12610,14 +12631,18 @@ OR
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
-- 社會保障 
-- 社會保障# 
-- Soc Sec 
-- Ssn 
-- 主旨 SSN 
-- Ssn# 
-- 秒# 
-- Ssid 
+- SSA 編號
+- 社會安全號碼
+- 社會保障#
+- 社會保障#
+- 社會安全性否
+- 社會保障#
+- Soc Sec
+- Ssn
+- 主旨 SSN
+- Ssn#
+- 秒#
+- Ssid
    
 ## <a name="us--uk-passport-number"></a>美國/英國 護照號碼
 英國 護照號碼機密資訊類型實體可用於歐盟護照號碼機密資訊類型，並可作為獨立的機密資訊類型實體使用。
