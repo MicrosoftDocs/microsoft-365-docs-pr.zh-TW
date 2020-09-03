@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 中的管理存取控制
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 本文提供 Microsoft 365 中的「管理存取控制」和「資料分類」的概述。
-ms.openlocfilehash: b5063f89e89b6cffffda53a5df3088a80f89c242
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 817a5907566435d021fe78d89b5c9476c04318d0
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688307"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332589"
 ---
 # <a name="administrative-access-controls-in-microsoft-365"></a>Microsoft 365 中的管理存取控制 
 
@@ -95,7 +95,7 @@ Microsoft 365 可讓您在內部部署環境中管理資料的方式相同。 �
 ## <a name="related-links"></a>相關連結
 
 - [隔離控制項](microsoft-365-isolation-controls.md)
-- [人員控制](microsoft-365-personnel-controls.md)
+- [人員控制項](microsoft-365-personnel-controls.md)
 - [技術控制項](microsoft-365-technology-controls.md)
 - [監視及稽核的存取控制](microsoft-365-monitoring-and-auditing-access-controls.md)
 - [Yammer 企業存取控制](microsoft-365-yammer-enterprise-access-controls.md)

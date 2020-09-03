@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: 摘要：設定 Microsoft Azure 基礎結構，以裝載 Microsoft 365 的高可用性同盟驗證。
-ms.openlocfilehash: a99259e8c60346665f76aeba3a8a440e0f9061f0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688768"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332337"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>高可用性同盟驗證階段 1：設定 Azure
 
@@ -57,7 +57,7 @@ Azure 必須布建下列基本元件：
     
 2. 將結果位元數轉換為小數，使用設定為閘道子網路大小的前置長度將其表示為位址空間。
     
-請參閱 [Azure 閘道子網的位址空間計算機](https://gallery.technet.microsoft.com/scriptcenter/Address-prefix-calculator-a94b6eed) ，以取得 PowerShell 命令區塊和 c # 或 Python 主控台應用程式，為您執行這種計算。
+請參閱 [Azure 閘道子網的位址空間計算機](address-space-calculator-for-azure-gateway-subnets.md) ，以取得 PowerShell 命令區塊和 c # 或 Python 主控台應用程式，為您執行這種計算。
   
 請與您的 IT 部門合作，以從虛擬網路位址空間判斷這些位址空間。
   
@@ -304,7 +304,7 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 ![Azure 中使用 Azure 基礎結構之高可用性 Microsoft 365 同盟驗證的階段1](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 使用 [階段2：設定網域控制站](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) 以繼續設定此工作負載。
   

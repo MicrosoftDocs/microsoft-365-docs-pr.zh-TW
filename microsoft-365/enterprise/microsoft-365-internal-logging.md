@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 工程的 microsoft 365 內部記錄
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,14 +16,14 @@ f1.keywords:
 - NOCSH
 description: 在本文中，將尋找 Microsoft 365 工程小組內部記錄運作方式的說明。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4c4b1db876a6b68ec852adbbd51afe7386a1855
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 08f87ba682a88a7efd93735b160af49bf5468ca2
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695625"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332505"
 ---
-# <a name="internal-logging-for-microsoft-365-engineering"></a>Microsoft 365 工程的內部記錄
+# <a name="internal-logging-for-microsoft-365-engineering"></a>Microsoft 365 工程內部記錄
 
 除了可供客戶使用的事件和記錄資料之外，microsoft 的 Microsoft 365 工程師也可使用內部記錄資料收集系統。 許多不同類型的記錄資料會從 Microsoft 365 伺服器上傳至內部的大型資料計算服務，稱為 Cosmos。 每個服務小組都會將審核記錄從各自的伺服器上傳至 Cosmos 資料庫，以進行匯總和分析。 使用稱為 Office Data Loader (ODL) 的專屬自動化工具，在特別認可的埠和通訊協定上，會透過 FIPS 140-2 驗證的 TLS 連線進行此資料傳輸。 Microsoft 365 中用來收集和處理審計記錄的工具不允許對原始的審計記錄內容或時間順序進行永久或不可逆的變更。
 

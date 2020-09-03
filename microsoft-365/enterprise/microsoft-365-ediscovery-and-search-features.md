@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 eDiscovery 和搜尋功能概述
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 中的 eDiscovery 功能及其他搜尋功能的概覽，以供審計使用和透明性。
-ms.openlocfilehash: 6a30e1aa687807d61b788bd75fcc63129ff0aa0b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688699"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47331856"
 ---
 # <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 eDiscovery 和搜尋功能概述 
 
@@ -41,7 +41,7 @@ EDiscovery 功能為系統管理員、合規性監察官及其他經授權的使
 
 下表詳細資料顯示于活動報告中的一些資訊。 請參閱 [審計記錄檔中的詳細](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log) 內容，以取得每個 Microsoft 365 工作負載所收集之屬性的詳細資訊。
 
-| 屬性	 | 描述 |
+| 屬性	 | 說明 |
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | 日期 | 事件的日期和時間 |
 | 使用者 | 執行動作的使用者 |

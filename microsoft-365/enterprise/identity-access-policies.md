@@ -1,6 +1,6 @@
 ---
 title: 通用身分識別和裝置存取原則-Microsoft 365 企業版 |Microsoft 檔
-description: 描述如何套用身分識別和裝置存取原則和設定之 Microsoft 建議的原則。
+description: 描述建議的一般身分識別和裝置存取原則及設定。
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 699bc04c8e286c004e1f47ae6825ae311434d9cb
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 9819c161cc421117730cb4c58d1db06859125476
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898113"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332091"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 本文說明保護雲端服務存取權的常見建議原則，包括使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式。 
@@ -32,8 +32,8 @@ ms.locfileid: "46898113"
 
 下圖說明建議的原則組。 它會顯示每個原則套用至哪個層級的保護，以及這些原則套用至電腦或電話和平板電腦，或是這兩種裝置的類別。 它也會指出設定這些原則的位置。
 
-設定身分[ ![ 識別與裝置存取的常見原則，](../media/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png) 
- [請參閱較大版本的此影像](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/Identity_device_access_policies_byplan.png)
+設定身分[ ![ 識別與裝置存取的常見原則，](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
+ [請參閱較大版本的此影像](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
 本文的其餘部分將說明如何設定這些原則。 
 
@@ -63,13 +63,13 @@ ms.locfileid: "46898113"
 
 下圖提供使用者指派及排除的範例。
 
-![MFA 規則的使用者指派及排除範例](../media/identity-access-policies-assignment.png)
+![MFA 規則的使用者指派及排除範例](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 在插圖中，「主要機密專案 X 小組」已被指派一個條件式存取原則，需要 *一定*要進行 MFA。 對使用者套用較高級別的保護時請務必合理。 在每次登入時，此專案小組的成員必須提供兩種形式的驗證，即使他們不會查看高管制內容也是一樣。  
 
-在這些建議中建立的所有 Azure AD 群組都必須建立為 Microsoft 365 群組。 在 SharePoint Online 中保護文件時，這對於部署 Azure 資訊保護 (AIP) 特別重要。
+在這些建議中建立的所有 Azure AD 群組都必須建立為 Microsoft 365 群組。 這對於在線上 SharePoint 保護檔時，尤其重要的是要部署敏感度標籤。
 
-![用於建立 Microsoft 365 群組的螢幕截圖](../media/identity-device-AAD-groups.png)
+![用於建立 Microsoft 365 群組的螢幕截圖](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
 
 ## <a name="require-mfa-based-on-sign-in-risk"></a>需要根據登入風險進行 MFA

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 中的隔離與存取控制
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 摘要： Microsoft 365 的各個應用程式內隔離和存取控制的說明。
-ms.openlocfilehash: 40a1f1d93fe34333366e456cc006ab2d1c700a83
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 53f60c09b94bdcc2515bcc5ff70dfbcd47f42bb4
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688584"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332325"
 ---
 # <a name="isolation-and-access-control-in-microsoft-365"></a>Microsoft 365 中的隔離與存取控制
 
@@ -43,7 +43,7 @@ Exchange Online 會將客戶資料儲存在信箱中。 信箱主控于可擴展
 - 行事曆和空閒/忙碌資訊
 - 聯絡人
 - 工作
-- 附註
+- 注意事項
 - 群組
 - 推斷資料
 

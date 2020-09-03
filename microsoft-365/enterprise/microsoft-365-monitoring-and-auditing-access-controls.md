@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 監控和審計存取控制
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 摘要： Microsoft 365 內可用之監控和審核存取控制的摘要。
-ms.openlocfilehash: f1302c4056bfd605e35aae08d8f5355f8d204db2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ba79ba2263940e5677ada412f467a429e584b8ff
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688581"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332289"
 ---
 # <a name="monitoring-and-auditing-access-controls-in-microsoft-365"></a>在 Microsoft 365 中監控和審計存取控制
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 用戶端應用程式支援-單一 Sign-On
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 在本文中，瞭解哪些平臺、用戶端和 Powershell 模組支援 Microsoft 365 的單一登入。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c0171e277d6072515e7fe0ca8ede8b8005ad8fe2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8ab973fcfb0cc61378ee06c115264e308d8ec3ad
+ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688464"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47332001"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 用戶端應用程式支援-單一 Sign-On
 
