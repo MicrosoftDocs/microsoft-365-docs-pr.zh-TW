@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,19 +18,15 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
-description: '了解如何使用產品金鑰續約您的商務用 Microsoft 365 訂閱，並開啟或關閉週期性計費。 '
-ms.openlocfilehash: 8dd9697f95e238ff759b90b1fef7544be9196c85
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: 瞭解如何透過關閉或開啟定期計費來續約您的 Microsoft 365。
+ms.openlocfilehash: 1bf6d3957479d1cb695075e139dc4af2a09db3df
+ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403219"
+ms.lasthandoff: 09/01/2020
+ms.locfileid: "47324301"
 ---
 # <a name="renew-microsoft-365-for-business"></a>續約商務用 Microsoft 365
 
@@ -57,18 +53,15 @@ ms.locfileid: "44403219"
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
-
 2. 選擇您想要管理週期性計費的訂閱。
-
-3. 在 **[帳單]** 下，於 **[更新日期]** 或 **[到期日]** 旁，選取 **[編輯]**。
-
-4. 在 **[週期性計費設定]** 窗格中，選取 **[關閉]** 可將它關閉。 如果週期性帳單已關閉，選取 **[每月]** 或 **[一次]** 以將它開啟。
-
-5. 選取 **[送出變更]**。
+3. 在訂閱詳細資料頁面的**訂閱與付款**設定底下，選取 **編輯週期性計費**。
+4. 在**編輯週期性計費的設定** 窗格中,選取**其位於**上的, **開啟, 但續約一次**, 或 **關閉**。
+5. 選取 **[儲存]**。
 
     > [!NOTE]
     > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須[重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
-    > - 當 **[週期性計費]** 關閉時，不會立即取消訂閱。 在到期之前，它會一直保持有效。 您可以在 **[您的產品]** 頁面上的訂閱詳細資料中，查看 **[帳單]** 區段中的到期日。
+    > - 當 **週期性計費** 關閉時，該訂閱不會被取消。 如果您想要保持訂閱有效，您必須手動付款帳單。
+    > - 如果您關閉 **週期性帳單**，訂閱會一直持續有效，直到到期為止。 您可以在**訂閱和付款設置**區的訂閱詳細訊息頁面上查看到期日期。
     > - 若要了解如何立即取消訂閱，請參閱[取消訂閱](cancel-your-subscription.md)。
 
 ::: moniker-end
