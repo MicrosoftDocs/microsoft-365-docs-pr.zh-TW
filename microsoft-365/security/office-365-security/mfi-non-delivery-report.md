@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用 [安全性 & 合規性中心內的郵件流程儀表板中的 [未傳遞詳細資料] 報告，以監視未傳遞回報中最常遇到的錯誤碼 (也稱為 NDRs 或退回的郵件) 來自組織中的寄件者。
-ms.openlocfilehash: bdc2a2a16f76f4e6ada629c82b86423422ab56c9
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: f9017a7f041037c5db2dc9b9f4f5155b038bf2c7
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826914"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357407"
 ---
 # <a name="non-delivery-report-in-the-security--compliance-center"></a>安全性 & 規範中心內的未傳遞回報
 
-在 Security & 合規性中心的[郵件流程儀表板](mail-flow-insights-v2.md)中，**未傳遞**回報會顯示未傳遞回報中最常遇到的錯誤碼 (也稱為 NDRs 或退回的郵件) 針對您組織中的使用者。 此報告顯示 NDRs 的詳細資料，以便您能夠疑難排解電子郵件傳遞問題。
+在[Security & 合規性中心](https://protection.office.com)的[郵件流程儀表板](mail-flow-insights-v2.md)中，**未傳遞**回報會顯示未傳遞回報中最常遇到的錯誤碼 (也稱為 NDRs 或退回的郵件) 針對您組織中的使用者。 此報告顯示 NDRs 的詳細資料，以便您能夠疑難排解電子郵件傳遞問題。
 
 ![安全性 & 規範中心內郵件流程儀表板中的未傳遞回報小工具](../../media/mfi-non-delivery-report-widget.png)
 

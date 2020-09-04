@@ -11,18 +11,18 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: 系統管理員可以瞭解如何使用「安全性 & 規範中心」中的新使用者轉寄電子郵件，以調查組織中的使用者將郵件轉寄給新網域的時間。
-ms.openlocfilehash: cb2e16d321e181916219e3425c26e59ebe31b866
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 4d8c88cef182ab1c521d23970797e4746e188916
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826966"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357363"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新的使用者在安全性 & 合規性中心轉寄電子郵件洞察力
 
 當您組織中的新使用者帳戶突然開始將電子郵件轉送至外部網域時，它會是可疑的。
 
-當您組織中新建立的使用者將郵件轉寄給外部網域時， **轉寄電子郵件的新網域** 就會通知您。 這種情況可能表示使用已遭到損害的系統管理員帳戶來建立新的使用者。 如果您懷疑帳戶已遭破壞，請參閱 [回應遭到破壞的電子郵件帳戶](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)。
+當您組織中新建立的使用者將郵件轉寄給外部網域時，在[安全性 & 合規性中心](https://protection.office.com)內**轉寄的新網域**會通知您。 這種情況可能表示使用已遭到損害的系統管理員帳戶來建立新的使用者。 如果您懷疑帳戶已遭破壞，請參閱 [回應遭到破壞的電子郵件帳戶](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)。
 
 這種洞察力只會在偵測到問題時出現，而且會出現在 [ [轉接回報報告](view-mail-flow-reports.md#forwarding-report) ] 頁面上。
 

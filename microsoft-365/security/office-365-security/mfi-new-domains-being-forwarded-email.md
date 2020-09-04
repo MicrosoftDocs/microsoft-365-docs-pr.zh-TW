@@ -11,18 +11,18 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: 系統管理員可以瞭解如何使用現代 Exchange 系統管理中心中已轉寄的電子郵件功能，調查組織中的使用者將郵件轉寄給已永不轉寄的外部網域。
-ms.openlocfilehash: 0b4cd0490feebc8e05deb889b3cf54e1ea9f5928
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 0f0622fc686cb9c90790630e16c187bf9f69d918
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826926"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358255"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心轉寄電子郵件的新網域
 
 雖然您可以將電子郵件轉寄至特定網域中的外部收件者，但在組織中的使用者突然開始將郵件轉送至外部網域，而組織中的使用者卻沒有任何人轉寄郵件給這些網域，但在 (新的網域) 之前，這是可疑的業務原因。 這種情況可能表示使用者帳戶遭到破壞。 如果您懷疑帳戶已遭破壞，請參閱 [回應遭到破壞的電子郵件帳戶](https://docs.microsoft.com/microsoft-365/security/office-365-security/responding-to-a-compromised-email-account)。
 
-當您組織中的使用者將郵件轉送至新網域時， **正轉送的新網域** 會告訴您。
+當您組織中的使用者將郵件轉寄給新網域時，在[安全性 & 合規性中心](https://protection.office.com)**轉寄的新網域**會通知您。
 
 這種洞察力只會在偵測到問題時出現，而且會出現在 [ [轉接回報報告](view-mail-flow-reports.md#forwarding-report) ] 頁面上。
 

@@ -13,18 +13,18 @@ ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全 & 規範中心內郵件流程儀表板中的 [修正可能的郵件迴圈洞察力]，識別並修正其組織中的郵件迴圈。
-ms.openlocfilehash: 162752ce6981e27d6ae2923aeb0fc33aec42bb0f
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 063906195488aa7d65093c538d9045002448e181
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826950"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358267"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>修正安全性 & 規範中心內可能的郵件迴圈洞察力
 
 郵件迴圈是錯誤的，因為它會浪費系統資源、使用組織的郵件磁片區配額，並傳送混亂的非傳遞回報 (也稱為 NDRs 或退回郵件) 至原始寄件者。
 
-在您的組織中偵測到郵件迴圈時，在安全性 & 合規性中心的 [[郵件流程儀表板](mail-flow-insights-v2.md)] 中，**建議**的郵件流程儀表板區域會通知您，以**修正可能的郵件迴圈**。 這種洞察力只會在偵測到條件之後才會出現 (如果您沒有任何郵件迴圈，您就不會看到) 的洞察力。
+在您的組織中偵測到郵件迴圈時，在[安全性 & 合規性中心](https://protection.office.com)的 [[郵件流程儀表板](mail-flow-insights-v2.md)] 中，**建議**的郵件流程儀表板區域會通知您，以**修正可能的郵件迴圈**。 這種洞察力只會在偵測到條件之後才會出現 (如果您沒有任何郵件迴圈，您就不會看到) 的洞察力。
 
 ![修正郵件流程儀表板中為您推薦的郵件流程規則的速度](../../media/mfi-fix-possible-mail-loop.png)
 

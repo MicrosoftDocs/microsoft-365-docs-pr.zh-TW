@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 系統管理員可以瞭解如何使用 Security & 合規性中心內郵件流程儀表板中的 [佇列] 小工具，以透過輸出連接器監視其內部部署或夥伴組織的失敗郵件流程。
-ms.openlocfilehash: 79523533306e847988fa0d4e2dd70eca22f7c76c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: bcd78a50f017aae65e82185bf167ea7a227656fa
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826902"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357385"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心內佇列的洞察力
 
@@ -29,7 +29,7 @@ Microsoft 365 會繼續重新嘗試傳遞24小時。 24小時後，郵件會到�
 
 如果佇列中的電子郵件磁片區超過預先定義的臨界值 (預設值為200郵件) 中，則可在下列位置取得此資訊：
 
-- 在安全性 & 合規性中心的[郵件流程儀表板](mail-flow-insights-v2.md)中，**佇列**的洞察力。 如需詳細資訊，請參閱本主題中的 [郵件流程儀表板區段中的佇列洞察力](#queues-insight-in-the-mail-flow-dashboard) 。
+- 在[安全性 & 合規性中心](https://protection.office.com)的[郵件流程儀表板](mail-flow-insights-v2.md)中，**佇列**的洞察力。 如需詳細資訊，請參閱本主題中的 [郵件流程儀表板區段中的佇列洞察力](#queues-insight-in-the-mail-flow-dashboard) 。
   
 - 警示會 **顯示在 [** [安全性 & 規範中心](https://protection.office.com) ] 中的 [提醒] 儀表板 (**警示** \> **儀表板** ] 或 [ <https://protection.office.com/alertsdashboard>) ]。
 

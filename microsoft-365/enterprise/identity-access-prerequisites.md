@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: ca898fa76ff45fe15a6dc48e7ad8bcae3e94951c
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 40910c00a91a1e98d01fe2e25a4f9aed828a024a
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332544"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357971"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
@@ -116,6 +116,6 @@ ms.locfileid: "47332544"
 
 ## <a name="next-step"></a>後續步驟
 
-![步驟2：設定通用身分識別和存取條件式存取原則。](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
+![步驟2：設定一般身分識別和存取條件式存取原則](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)
 
 [設定一般身分識別和裝置存取原則](identity-access-policies.md)

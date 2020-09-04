@@ -13,16 +13,16 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用 [安全性 & 合規性中心內的郵件流程儀表板中的 [非公認的網域報告]，監控來自內部部署組織中的寄件者網域未設定 Microsoft 365 的郵件。
-ms.openlocfilehash: ef5f1c26168347b6696e90292d9c957e63615c0f
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 02692fbded20aa5062ce8add83925fb65c116630
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826938"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358575"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>安全性 & 規範中心內的非公認網域報告
 
-在 Security & 合規性中心的[郵件流程儀表板](mail-flow-insights-v2.md)中，**未接受的網域**報告會顯示來自內部部署電子郵件組織之郵件的相關資訊，而寄件者的網域並未設定為 Microsoft 365 組織中公認的網域。
+在[Security & 合規性中心](https://protection.office.com)的[郵件流程儀表板](mail-flow-insights-v2.md)中，**未接受的網域**報告會顯示來自內部部署電子郵件組織之郵件的相關資訊，而寄件者的網域並未設定為 Microsoft 365 組織中公認的網域。
 
 如果我們有資料證明這些郵件的目的是惡意的，Microsoft 365 可能會節流這些郵件。 因此，請務必瞭解所發生的情況，並修正問題。
 

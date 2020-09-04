@@ -12,16 +12,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 系統管理員可以在安全性 & 合規性中心的郵件流程儀表板中瞭解輸出和輸入郵件流程的洞察力。
-ms.openlocfilehash: 920c1212f4d6dee508704c93272e48140e199710
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 87ea7faed2e2387c31fdb06abaf242a2a3aea76e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826890"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357419"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>安全性 & 規範中心內的輸出和輸入郵件流程洞察力
 
-安全性 & 合規性中心內的[郵件流程儀表板](mail-flow-insights-v2.md)中的**輸出和輸入郵件流程**洞察力，結合了[連接器報告](view-mail-flow-reports.md#connector-report)中的資訊和舊的**TLS 總覽報告**中的一個位置。
+[安全性 & 合規性中心](https://protection.office.com)內的[郵件流程儀表板](mail-flow-insights-v2.md)中的**輸出和輸入郵件流程**洞察力，結合了[連接器報告](view-mail-flow-reports.md#connector-report)中的資訊和舊的**TLS 總覽報告**中的一個位置。
 
 在您的組織中傳遞郵件時，構件會顯示用來進行連線的 TLS 加密。 與其他電子郵件服務建立的連線，若兩端都提供 TLS，則會由 TLS 進行加密。 小工具會提供上一週的郵件流程快照。
 
