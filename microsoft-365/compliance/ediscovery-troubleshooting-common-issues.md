@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 瞭解您可以採取的基本疑難排解步驟，以解決 Office 365 eDiscovery 中的常見問題。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f643f4c3709b811a10618343a4b37ac4114dd8c0
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 2b96ed80ba9f347616fd364b3b97ac960cdaeb8e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434166"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357993"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>調查、疑難排解及解決常見的 eDiscovery 問題
 
@@ -32,13 +32,13 @@ ms.locfileid: "45434166"
 
 ## <a name="errorissue-ambiguous-location"></a>錯誤/問題：不明確的位置
 
-如果您嘗試將使用者的信箱位置新增至搜尋中，且在 Exchange Online Protection （EOP）目錄中有相同 userID 的重複或衝突物件，您會收到此錯誤： `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` 。
+如果您嘗試將使用者的信箱位置新增至搜尋中，且在 Exchange Online Protection (EOP) 目錄中有相同 userID 的重複或衝突物件，您會收到此錯誤： `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` 。
 
 ### <a name="resolution"></a>解決方案
 
 檢查是否有相同使用者識別碼的重複使用者或通訊群組清單。
 
-1. 連線至[安全性 & 規範中心] PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. 連線至 [安全性 & 規範中心] PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 執行下列命令，以取回使用者名稱的所有實例：
 
@@ -49,7 +49,7 @@ ms.locfileid: "45434166"
    ' Useralias@contoso.com ' 的輸出類似下列所示：
 
    > 
-   > |名稱|RecipientType|
+   > |姓名|RecipientType|
    > |---|---|
    > |Alias、User|MailUser|
    > |Alias、User|使用者|
@@ -59,7 +59,7 @@ ms.locfileid: "45434166"
 ## <a name="errorissue-search-fails-on-specific-locations"></a>錯誤/問題：搜尋在特定位置失敗
 
 EDiscovery 或內容搜尋可能會產生下列錯誤：
->此搜尋已完成（#）錯誤。  您想要重試失敗位置上的搜尋嗎？
+>此搜尋已完成，但有 ( # ) 錯誤。  您想要重試失敗位置上的搜尋嗎？
 
 ![搜尋特定位置未通過錯誤螢幕擷取畫面](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -67,7 +67,7 @@ EDiscovery 或內容搜尋可能會產生下列錯誤：
 
 如果您收到此錯誤，建議您確認在搜尋中失敗的位置，然後在失敗的位置上只重新執行搜尋。
 
-1. 連線至[安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)然後執行下列命令：
+1. 連線至 [安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) 然後執行下列命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -77,27 +77,27 @@ EDiscovery 或內容搜尋可能會產生下列錯誤：
 
 3. 只重試失敗位置上的 eDiscovery 搜尋。
 
-4. 如果您繼續收到這些錯誤，請參閱[重試失敗位置](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search)，以取得更多疑難排解步驟。
+4. 如果您繼續收到這些錯誤，請參閱 [重試失敗位置](https://docs.microsoft.com/Office365/SecurityCompliance/retry-failed-content-search) ，以取得更多疑難排解步驟。
 
 ## <a name="errorissue-file-not-found"></a>錯誤/問題：找不到檔案
 
-當執行的 eDiscovery 搜尋包含 SharePoint 線上及一個用於商務位置的硬碟磁碟機時，您可能會收到錯誤， `File Not Found` 但檔案位於網站上。 此錯誤會出現在 [匯出警告] 和 [errors.csv 或略過 items.csv 中。 如果無法在網站上找到檔案，或索引已過期，就可能會發生這種情況。 以下是實際錯誤的文字（新增強調）。
+當執行的 eDiscovery 搜尋包含 SharePoint 線上及一個用於商務位置的硬碟磁碟機時，您可能會收到錯誤， `File Not Found` 但檔案位於網站上。 此錯誤會出現在 [匯出警告] 和 [errors.csv 或略過 items.csv 中。 如果無法在網站上找到檔案，或索引已過期，就可能會發生這種情況。 以下是具有強調新增) 之實際錯誤 (的文字。
 
-> 28.06.2019 10：02：19_FailedToExportItem_Failed 下載內容。 其他診斷資訊： ContentDownloadTemporaryFailure：無法從 content 6ea52149 ExportWorker-91cd-4965-b5bb-82ca6a3ec9be-類型的檔。 相關識別碼：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894---Microsoft.SharePoint >***未找到***ServerException： File。 Microsoft.SharePoint 在 ClientRequest （Stream responseStream）的 ProcessResponseStream （Stream） Microsoft.SharePoint 上---內部例外狀況堆疊追蹤的結尾---
+> 28.06.2019 10：02：19_FailedToExportItem_Failed 下載內容。 其他診斷資訊： ContentDownloadTemporaryFailure：無法從 content 6ea52149 ExportWorker-91cd-4965-b5bb-82ca6a3ec9be-類型的檔。 相關識別碼：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894---Microsoft.SharePoint > ***未找到***ServerException： File。 在 responseStream Microsoft.SharePoint ProcessResponseStream (Stream) at Microsoft.SharePoint。 ( # A3---內部例外狀況堆疊追蹤的結尾---
 
 ### <a name="resolution"></a>解決方案
 
 1. 檢查搜尋中識別的位置，以確保檔案的位置正確，並新增至搜尋位置。
 
-2. 您可以使用程式[，以手動方式要求編目及重新建立網站、文件庫或清單的索引，以重新索引](https://docs.microsoft.com/sharepoint/crawl-site-content)網站。
+2. 您可以使用程式 [，以手動方式要求編目及重新建立網站、文件庫或清單的索引，以重新索引](https://docs.microsoft.com/sharepoint/crawl-site-content) 網站。
 
 ## <a name="errorissue-search-fails-because-recipient-is-not-found"></a>錯誤/問題：搜尋失敗，因為找不到收件者
 
-EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Exchange Online Protection （EOP）中找到使用者物件，因為物件尚未同步處理，可能會發生此錯誤。
+EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Exchange Online Protection (EOP) 中找到使用者物件，因為物件尚未同步處理，可能會發生此錯誤。
 
 ### <a name="resolution"></a>解決方案
 
-1. 連接至[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+1. 連接至 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 
 2. 執行下列命令，檢查使用者是否已同步處理至 Exchange Online Protection：
 
@@ -113,9 +113,9 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 ### <a name="resolution"></a>解決方案
 
-1. 請嘗試使用本文所述的步驟，[增加下載速度](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)。
+1. 請嘗試使用本文所述的步驟， [增加下載速度](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)。
 
-2. 如果仍有問題，請連接至[安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)然後執行下列命令：
+2. 如果仍有問題，請連接至 [安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) 然後執行下列命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -133,9 +133,9 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 6. 檢查您將內容匯出到的目錄中的追蹤 .log 檔案，以查看是否有任何錯誤。
 
-## <a name="errorissue-internal-server-error-500-occurred"></a>錯誤/問題：「發生內部伺服器錯誤（500）」
+## <a name="errorissue-internal-server-error-500-occurred"></a>錯誤/問題：「發生內部伺服器錯誤 (500) 
 
-執行 eDiscovery 搜尋時，如果搜尋持續失敗，且出現與「發生內部伺服器錯誤（500）」類似的錯誤，您可能需要在特定的信箱位置上只重新執行搜尋。
+執行 eDiscovery 搜尋時，如果搜尋持續失敗，且發生錯誤類似「發生內部伺服器錯誤 (500) 」，您可能需要在特定信箱位置上只重新執行搜尋。
 
 ![內部伺服器錯誤500螢幕擷取畫面](../media/edisc-tshoot-error-500.png)
 
@@ -143,7 +143,7 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 1. 將搜尋分割成較小的搜尋，然後再次執行搜尋。  請嘗試使用較小的日期範圍或限制要搜尋的位置數目。
 
-2. 連線至[安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)然後執行下列命令：
+2. 連線至 [安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) 然後執行下列命令：
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -163,7 +163,7 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 ### <a name="resolution"></a>解決方案
 
-1. 連線至[安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)然後針對 eDiscovery 案例保留執行下列命令：
+1. 連線至 [安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) 然後針對 eDiscovery 案例保留執行下列命令：
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL

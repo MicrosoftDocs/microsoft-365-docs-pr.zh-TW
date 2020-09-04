@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: 在安全性 & 規範中心使用內容搜尋，以執行目標的集合，以確保專案位於特定信箱或網站資料夾中。
-ms.openlocfilehash: 179d893c153af337cf6b8b9ed633172e22cf208a
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 7257ae669e7d325140af546466fb3e6a8a8a17fe
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324579"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357653"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>對目標集合使用內容搜尋
 

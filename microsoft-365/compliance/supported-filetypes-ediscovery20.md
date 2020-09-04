@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: ''
 description: Microsoft 365 Advanced eDiscovery 中支援的檔案類型清單，包括「高級 eDiscovery」中的 OCR 功能支援的圖像檔案類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e7c1840642dcc572da8e23bcdde3b7759746b209
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4b23e0b0f428c91b13e461eb6514da99e5a69f42
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819153"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357744"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>高級 eDiscovery 中支援的檔案類型
 
-「高級 eDiscovery」支援許多不同層級的檔案類型，如下表所述。 此清單尚未完成，我們會在繼續進行驗證測試時，新增檔案類型。 這些表格指出在原生檢視器中可查看檔案類型（和光學字元辨識或 OCR 文字提取），以及在高級 eDiscovery 的批註檢視器中支援的檔案類型。
+「高級 eDiscovery」支援許多不同層級的檔案類型，如下表所述。 此清單尚未完成，我們會在繼續進行驗證測試時，新增檔案類型。 這些表格會指出檔案類型是否支援文字提取 (和光學字元辨識或 OCR 文字提取功能) 、在原生檢視器中查看，以及在高級 eDiscovery 的批註檢視器中支援的圖像檔案。
 
 ## <a name="archive--container"></a>封存/容器
 
@@ -180,7 +180,7 @@ ms.locfileid: "44819153"
 
 | Mime 類型 | 檔識別 | 中繼資料解壓縮 | 文字提取 | 原生檢視器 | 批註檢視器 | 可能的分機 |
 | :- |  :- |  :- |  :- |  :- |  :- |  :- |
-| application/json | 是 | 是 | 是 | 是 | 是 | n/a |
+| application/json | 是 | 是 | 是 | 是 | 是 | 不適用 |
 | application/vnd.ms-excel。 ms-graph | 是 | 是 | 否 | 否 | 否 |  |
 | application/winhlp | 是 | 是 | 否 | 否 | 否 | .hlp |
 | application/x-tnef | 是 | 是 | 否 | 否 | 否 |  |

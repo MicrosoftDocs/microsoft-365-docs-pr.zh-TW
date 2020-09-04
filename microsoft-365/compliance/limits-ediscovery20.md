@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解 Microsoft 365 中的高級 eDiscovery 解決方案的大小寫限制、索引限制和搜尋限制。
-ms.openlocfilehash: 5666bae5315586ed421ad8d6c748505cda8ae3e6
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: c139480f18e0e6d94aae5a38d5fd636fbc62b2dc
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778459"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47358471"
 ---
 # <a name="limits-in-advanced-ediscovery"></a>進階電子文件探索的限制
 
@@ -62,7 +62,7 @@ ms.locfileid: "46778459"
 |可以同時執行的搜尋數目上限。  <br/> |無限制  <br/> | 
 |單一使用者可以同時開始的搜尋數目上限。  <br/> |10   <br/> | 
 |搜尋查詢 (包含運算子和條件) 的最大字元數。  <br/> |**信箱**：10000<br/>**網站**：4000搜尋所有網站或2000時搜尋最多20個網站時 <sup>2</sup> <br/> |
-|首碼萬用字元的最小字母字元數目;例如**一個 \* **或**設定 \* **。 <br/> |個  <br/> |  
+|首碼萬用字元的最小字母字元數目;例如**一個 \* **或**設定 \* **。 <br/> |3   <br/> |  
 |使用首碼萬用字元來搜尋確切的字詞，或是使用前置詞萬用字元及 **接近** 的布林運算子時，所傳回的最大變種。  <br/> |10000 <sup>3</sup> <br/> |
 |搜尋的預覽頁面上顯示的每個使用者信箱的專案數上限。 隨即顯示最新的專案。   <br/> |100  <br/> |
 |搜尋時，預覽頁面上顯示的所有信箱中的專案數上限。  <br/> |1,000  <br/> |

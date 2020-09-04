@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
@@ -20,18 +20,18 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何執行腳本，將商務網站的信箱 & OneDrive 新增至與安全性 & 合規性中心內的 eDiscovery 案例相關聯的新保留。
-ms.openlocfilehash: 55ad3c8c8a4a6b77df4c2d3409fee6e5b43cc5f6
-ms.sourcegitcommit: 41eb898143286755cd36df9f7e769de641263d73
+ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45391483"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357673"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>使用腳本將使用者新增至核心 eDiscovery 案例中的保留
 
 安全性 & 規範中心提供 PowerShell Cmdlet，可讓您自動化與建立及管理 eDiscovery 案例相關的耗時工作。 目前，使用安全性 & 合規性中心內的 eDiscovery 案例工具，將大量的保管人內容位置置於保留狀態，需要一些時間與準備工作。 例如，在您建立保留之前，您必須為想要保留的商務網站收集每個 OneDrive 的 URL。 然後，針對您想要保留的每位使用者，您必須將其信箱和其 OneDrive 的商務網站新增至保留狀態。 在未來的安全性 & 規範中心發行中，這將會變得更容易。 在此之前，您可以使用本文中的腳本來自動化此程式。
   
-腳本會提示您組織之「我的網站」網域的名稱（例如， **contoso** in URL https://contoso-my.sharepoint.com) 、現有 eDiscovery 案例的名稱、與案例相關聯之使用者的電子郵件地址清單、您想要建立查詢式保留的使用者的電子郵件地址清單，以及要使用的搜尋查詢）。 然後，腳本會為清單中的每位使用者取得商務用網站 OneDrive 的 URL，並建立新的保留，然後針對清單中的每一位使用者，新增信箱及 OneDrive 的商務用網站。 腳本也會產生包含新保留相關資訊的記錄檔。
+腳本會提示您組織之「我的網站」網域的名稱 (例如， **contoso** in URL https://contoso-my.sharepoint.com) 、現有 eDiscovery 案例的名稱、與案例關聯之新保留的名稱、您想要保留之使用者的電子郵件地址清單，以及您想要建立查詢式保留的搜尋查詢。 然後，腳本會為清單中的每位使用者取得商務用網站 OneDrive 的 URL，並建立新的保留，然後針對清單中的每一位使用者，新增信箱及 OneDrive 的商務用網站。 腳本也會產生包含新保留相關資訊的記錄檔。
   
 以下是進行這種動作的步驟：
   
@@ -43,7 +43,7 @@ ms.locfileid: "45391483"
   
 ## <a name="before-you-add-users-to-a-hold"></a>將使用者新增至保留之前
 
-- 您必須是 Security & 合規性中心內的 eDiscovery Manager 角色群組成員，以及 SharePoint Online 系統管理員執行步驟3中的腳本。 如需詳細資訊，請參閱[在 Office 365 安全性 & 規範中心指派 eDiscovery 許可權](assign-ediscovery-permissions.md)。
+- 您必須是 Security & 合規性中心內的 eDiscovery Manager 角色群組成員，以及 SharePoint Online 系統管理員執行步驟3中的腳本。 如需詳細資訊，請參閱 [在 Office 365 安全性 & 規範中心指派 eDiscovery 許可權](assign-ediscovery-permissions.md)。
 
 - 最多可將1000個信箱和100網站新增至與安全性 & 合規性中心內的 eDiscovery 案例相關聯的保留。 假設您要置於保留狀態的每一位使用者都有商務網站的 OneDrive，您可以使用本文中的腳本，將最多100個使用者新增至保留。
 
@@ -69,19 +69,19 @@ ms.locfileid: "45391483"
 
 第一步是安裝本機電腦上的 SharePoint Online 管理命令介面（如果尚未安裝）。 您不需要在此程式中使用命令介面，但必須安裝它，因為它包含您在步驟3中執行之腳本所需的必要條件。 這些必要條件允許腳本與 SharePoint Online 進行通訊，以取得商務網站 OneDrive 的 URLs。
   
-移至[設定 SharePoint 線上管理命令介面 Windows PowerShell 環境](https://go.microsoft.com/fwlink/p/?LinkID=286318)，並執行步驟1和步驟2，在您的本機電腦上安裝 SharePoint 的線上管理命令介面。 
+移至 [設定 SharePoint 線上管理命令介面 Windows PowerShell 環境](https://go.microsoft.com/fwlink/p/?LinkID=286318) ，並執行步驟1和步驟2，在您的本機電腦上安裝 SharePoint 的線上管理命令介面。 
 
 ## <a name="step-2-generate-a-list-of-users"></a>步驟2：產生使用者清單
 
-步驟3中的腳本會建立與 eDiscovery 案例相關聯的保留，並新增要保留之使用者清單的信箱和 OneDrive。 您可以只輸入文字檔中的電子郵件地址，也可以在 Windows PowerShell 中執行命令，以取得電子郵件地址清單，並將其儲存至檔案（位於您將在步驟3中儲存腳本的相同資料夾中）。
+步驟3中的腳本會建立與 eDiscovery 案例相關聯的保留，並新增要保留之使用者清單的信箱和 OneDrive。 您可以只輸入文字檔中的電子郵件地址，也可以在 Windows PowerShell 中執行命令，以取得電子郵件地址的清單，並將其儲存至相同資料夾中的檔案 (，您將在步驟 3) 中儲存腳本。
   
-以下是 PowerShell 命令（您可以使用連線至 Exchange Online 組織的遠端 PowerShell）來取得組織中所有使用者的電子郵件地址清單，並將其儲存至名為 HoldUsers.txt 的文字檔。
+以下是您使用連線至 Exchange Online 組織的遠端 PowerShell 所執行的 PowerShell 命令 () 以取得組織中所有使用者的電子郵件地址清單，並將其儲存至名為 HoldUsers.txt 的文字檔。
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-在您執行此命令之後，請開啟文字檔，並移除包含屬性名稱的標頭 `PrimarySmtpAddress` 。 然後針對您想要新增至您在步驟3中建立之保留的使用者，移除所有的電子郵件地址。 請確定電子郵件地址清單前面或後面沒有任何空白列。
+在您執行此命令之後，請開啟文字檔，並移除包含屬性名稱的標頭  `PrimarySmtpAddress` 。 然後針對您想要新增至您在步驟3中建立之保留的使用者，移除所有的電子郵件地址。 請確定電子郵件地址清單前面或後面沒有任何空白列。
   
 ## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>步驟3：執行腳本以建立保留並新增使用者
 
@@ -89,13 +89,13 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   
 - **您的使用者認證：** 腳本會使用您的認證，以遠端 PowerShell 連接至安全性 & 合規性中心。 它也會使用這些認證來存取 SharePoint 線上，以取得使用者清單的商務用 OneDrive URLs。
 
-- 「**我的網站」網域的名稱：**「我的網站網域」是一個網域，包含您組織中的所有商務網站 OneDrive。 例如，如果「我的網站」網域的 URL 是 **https://contoso-my.sharepoint.com** ， `contoso` 當腳本提示您輸入「我的網站」網域的名稱時，您就會輸入。
+- 「**我的網站」網域的名稱：**「我的網站網域」是一個網域，包含您組織中的所有商務網站 OneDrive。 例如，如果「我的網站」網域的 URL 是 **https://contoso-my.sharepoint.com** ，  `contoso` 當腳本提示您輸入「我的網站」網域的名稱時，您就會輸入。
 
 - **案例名稱：** 現有案例的名稱。 此腳本會建立與此案例相關聯的新保留。
 
 - **保留的名稱：** 腳本將要建立並與指定之案例產生關聯的保留名稱。
 
-- **查詢型保留的搜尋查詢：** 您可以建立以查詢為基礎的保留，使只保留符合指定之搜尋準則的內容。 若要將所有內容保留，只要在提示搜尋查詢時按下**enter**鍵。
+- **查詢型保留的搜尋查詢：** 您可以建立以查詢為基礎的保留，使只保留符合指定之搜尋準則的內容。 若要將所有內容保留，只要在提示搜尋查詢時按下 **enter** 鍵。
 
 - **開啟暫止狀態：** 您可以讓腳本在建立保留後將其開啟，也可以讓腳本建立保留，但不加以啟用。 如果您未啟用 [保留] 的腳本，您可以稍後在安全性 & 合規性中心或執行下列 PowerShell 命令進行開啟：
 
@@ -107,7 +107,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
-- **具有使用者清單之文字檔的名稱**-步驟2中包含要新增至保留之使用者清單的文字檔名稱。 如果此檔案與腳本位於相同的資料夾，只要輸入檔案名（例如 HoldUsers.txt）即可。 如果文字檔位於另一個資料夾中，請輸入完整的檔案名。
+- **具有使用者清單之文字檔的名稱** -步驟2中包含要新增至保留之使用者清單的文字檔名稱。 如果此檔案與腳本位於相同的資料夾中，只要輸入檔案名 (例如，HoldUsers.txt) 。 如果文字檔位於另一個資料夾中，請輸入完整的檔案名。
 
 在您收集腳本將會提示您的資訊後，最後一步是執行腳本以建立新的保留，並新增使用者。
   
@@ -304,6 +304,6 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 - **LocationsNotOnHold.txt：** 包含未保留腳本之商務網站的信箱和 OneDrive 清單。 如果使用者有信箱，但不是商務網站的 OneDrive，該使用者將會包含在未保留之商務網站的 OneDrive 清單中。
 
-- **GetCaseHoldPolicy.txt：** 包含新保留的**Get-CaseHoldPolicy** Cmdlet 的輸出，腳本會在建立新的保留後執行。 此指令程式傳回的資訊包含使用者清單，以及其信箱和 OneDrive 商務網站保留，以及是否已啟用或停用保留。 
+- **GetCaseHoldPolicy.txt：** 包含新保留的 **Get-CaseHoldPolicy** Cmdlet 的輸出，腳本會在建立新的保留後執行。 此指令程式傳回的資訊包含使用者清單，以及其信箱和 OneDrive 商務網站保留，以及是否已啟用或停用保留。 
 
-- **GetCaseHoldRule.txt：** 包含新保留的**Get-CaseHoldRule** Cmdlet 的輸出，腳本會在建立新的保留後執行。 如果您使用腳本來建立查詢型保留，則此 Cmdlet 傳回的資訊會包含搜尋查詢。
+- **GetCaseHoldRule.txt：** 包含新保留的 **Get-CaseHoldRule** Cmdlet 的輸出，腳本會在建立新的保留後執行。 如果您使用腳本來建立查詢型保留，則此 Cmdlet 傳回的資訊會包含搜尋查詢。

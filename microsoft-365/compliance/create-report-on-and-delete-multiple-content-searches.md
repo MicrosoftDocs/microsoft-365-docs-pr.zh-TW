@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - SPO_Content
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: 瞭解如何透過 Office 365 的安全性 & 規範中心內的 PowerShell 腳本，以自動化內容搜尋工作，例如建立搜尋及執行報告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d748e12942fa2d634f27c04de37ccf5b3ec19297
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 0412c0d217603acb4e200e3ccd62a7748610297e
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845895"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357583"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>建立、報告及刪除多個內容搜尋
 
@@ -64,7 +64,7 @@ ms.locfileid: "46845895"
 
    ****
 
-   |參數|描述|
+   |參數|說明|
    |---|---|
    |`ExchangeLocation`|使用者信箱的 SMTP 位址。|
    |`SharePointLocation`|使用者的商務用網站 OneDrive URL，或組織中任何網站的 URL。 若為商務用網站的 OneDrive URL，請使用此格式： ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com ` 。 例如，  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。|

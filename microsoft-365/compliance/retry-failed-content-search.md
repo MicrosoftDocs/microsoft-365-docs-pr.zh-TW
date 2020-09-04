@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: ''
 description: 在調查過程中，您可以使用 [重試] 按鈕來解析內容位置發生錯誤的內容搜尋。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55ef7ff59bfc58809d0e00ff1f2edf7a8455ba13
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: b3aed9c1d2d1fe3c40adb64b4854ef359f931bcb
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527631"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357553"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>重試內容搜尋以解決內容位置錯誤
 
@@ -38,7 +38,7 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-這些錯誤（錯誤碼為 CS001-002，CS003-002，CS008-009，CS012-002，及其他格式 CS0XX-0XX）表示內容搜尋無法搜尋特定的內容位置;在此範例中，未搜尋兩個信箱。 這些錯誤會顯示在內容搜尋的 [狀態詳細資料浮出] 頁面上。
+這些錯誤 (的錯誤碼為 CS001-002、CS003-002、CS008-009、CS012-002，以及其他表單 CS0XX-0XX 的錯誤) 表示內容搜尋無法搜尋特定的內容位置;在此範例中，未搜尋兩個信箱。 這些錯誤會顯示在內容搜尋的 [狀態詳細資料浮出] 頁面上。
 
 ## <a name="cause-of-content-location-errors"></a>內容位置錯誤的原因
 
@@ -46,7 +46,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 ## <a name="resolving-content-location-errors"></a>解決內容位置錯誤
 
-重新開機搜尋通常會在不同的伺服器上導致類似的錯誤。 若不重新開機搜尋，請按一下顯示在搜尋結果頁面頂端的 [**重試**] 按鈕。
+重新開機搜尋通常會在不同的伺服器上導致類似的錯誤。 若不重新開機搜尋，請按一下顯示在搜尋結果頁面頂端的 [ **重試** ] 按鈕。
 
 ![按一下 [重試] 按鈕以解決內容位置錯誤](../media/retrycontentsearch3.png)
 
@@ -60,7 +60,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 - 搜尋查詢可能會從信箱中檢索太多的內容。 如果可能的話，請嘗試使用關鍵字、日期範圍和搜尋條件來縮小搜尋範圍。
 
-- 使用[關鍵字清單](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches)建立搜尋查詢時，關鍵字或關鍵字片語太多。 當您執行使用關鍵字清單的搜尋查詢時，此服務實質上會針對關鍵字清單中的每一列執行個別的搜尋，以產生統計資料。 如果您是在搜尋查詢中使用關鍵字清單，請將關鍵字清單中的列數減至最少，或是將數位關鍵字分割成較小的清單，並為每個關鍵字清單建立不同的搜尋。
+- 使用 [關鍵字清單](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches)建立搜尋查詢時，關鍵字或關鍵字片語太多。 當您執行使用關鍵字清單的搜尋查詢時，此服務實質上會針對關鍵字清單中的每一列執行個別的搜尋，以產生統計資料。 如果您是在搜尋查詢中使用關鍵字清單，請將關鍵字清單中的列數減至最少，或是將數位關鍵字分割成較小的清單，並為每個關鍵字清單建立不同的搜尋。
 
   > [!NOTE]
   > 為了避免大型關鍵字清單所造成的問題，您目前限制在搜尋查詢的關鍵字清單中，最多可有20列。

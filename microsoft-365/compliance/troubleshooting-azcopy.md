@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -19,12 +19,12 @@ description: 疑難排解 Azure AzCopy 的錯誤。在 Advanced eDiscovery 中�
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: caec3011c89e027f1b78991a3dad842ff4b8c8aa
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: 4bf8461cb02ca3601707f248a64d8a8a9741efab
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434276"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357703"
 ---
 # <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>在高級 eDiscovery 中 AzCopy 疑難排解
 
@@ -36,15 +36,15 @@ ms.locfileid: "45434276"
 
 ## <a name="the-supported-version-of-azcopy-isnt-installed-on-the-local-computer"></a>本機電腦上未安裝支援的 AzCopy 版本
 
-此時，您必須使用 AzCopy app-v 8.1，在 Advanced eDiscovery 中載入非 Microsoft 365 資料。 如果您不是使用 AzCopy 的第板，則顯示在先前的螢幕擷取畫面所顯示之 [上**傳**檔案] 頁面上的 AzCopy 命令會傳回錯誤。 若要安裝此版本，請參閱在[Windows 上使用 AzCopy app-v 8.1 傳輸資料](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)。
+此時，您必須使用 AzCopy app-v 8.1，在 Advanced eDiscovery 中載入非 Microsoft 365 資料。 如果您不是使用 AzCopy 的第板，則顯示在先前的螢幕擷取畫面所顯示之 [上 **傳** 檔案] 頁面上的 AzCopy 命令會傳回錯誤。 若要安裝此版本，請參閱在 [Windows 上使用 AzCopy app-v 8.1 傳輸資料](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)。
 
 ## <a name="azcopy-isnt-installed-on-the-local-computer-or-its-not-installed-in-the-default-location"></a>本機電腦上未安裝 AzCopy，或其未安裝在預設位置
 
-如果 AzCopy 未安裝或安裝在預設安裝位置（亦即）以外的位置 `%ProgramFiles(x86)%` ，當您執行 AzCopy 命令時，可能會收到下列錯誤：
+如果 AzCopy 並未安裝或安裝在預設安裝位置（) 的預設安裝 (位置 `%ProgramFiles(x86)%` ）上，當您執行 AzCopy 命令時，可能會收到下列錯誤：
 
 > 系統找不到指定的路徑。
 
-如果本機電腦上未安裝 AzCopy，您可以在[使用 AzCopy 中的「傳送機 8.1](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)」，在 Windows 上尋找傳送資料的安裝資訊。 請務必將其安裝在預設位置。
+如果本機電腦上未安裝 AzCopy，您可以在 [使用 AzCopy 中的「傳送機 8.1](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy)」，在 Windows 上尋找傳送資料的安裝資訊。 請務必將其安裝在預設位置。
 
 如果安裝了 AzCopy，但是安裝的位置與預設位置不同，您可以複製命令、將其貼到文字檔，然後將路徑變更至已安裝 AzCopy 的位置。 例如，如果 Azcopy 位於 `%ProgramFiles%` ，您可以將命令的第一個部分變更 `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy.exe` 為 `%ProgramFiles%\Microsoft SDKs\Azure\AzCopy` 。 進行此變更後，請從文本檔案複製並執行命令提示字元。
 

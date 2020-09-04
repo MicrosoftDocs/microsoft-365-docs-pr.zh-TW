@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: 1/3/2017
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
@@ -19,16 +19,16 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: 使用內容搜尋和本文中的腳本，針對使用者群組搜尋商務網站的信箱和 OneDrive。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90aab661992ae2f0c19d18939191230dc0469eaa
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: e3a10913cc4d8618e3d25bdf34e30c9d55a43324
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527359"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357795"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>使用內容搜尋來搜尋信箱與商務用 OneDrive 網站的使用者清單
 
-安全性 & 合規性中心提供許多 Windows PowerShell Cmdlet，可讓您自動執行耗時的 eDiscovery 相關工作。 目前，在安全性 & 合規性中心內建立內容搜尋，以搜尋大量的保管人內容位置，需要一些時間與準備工作。 在您建立搜尋之前，您必須收集 OneDrive 每個商務用網站的 URL，然後將每個信箱和 OneDrive 的商務網站新增至搜尋。 在未來的版本中，這會在安全性 & 合規性中心較容易進行。 在此之前，您可以使用本文中的腳本來自動化此程式。 此腳本會提示您組織的 MySite 網域的名稱（例如，在 URL 中為**contoso** `https://contoso-my.sharepoint.com` ）、使用者電子郵件地址的清單、新內容搜尋的名稱，以及要使用的搜尋查詢。 腳本會針對清單中的每個使用者，取得商務 URL 的 OneDrive，然後使用您提供的搜尋查詢，來建立及啟動搜尋內容，以針對清單中的每一位使用者，搜尋信箱及 OneDrive for Business site。
+安全性 & 合規性中心提供許多 Windows PowerShell Cmdlet，可讓您自動執行耗時的 eDiscovery 相關工作。 目前，在安全性 & 合規性中心內建立內容搜尋，以搜尋大量的保管人內容位置，需要一些時間與準備工作。 在您建立搜尋之前，您必須收集 OneDrive 每個商務用網站的 URL，然後將每個信箱和 OneDrive 的商務網站新增至搜尋。 在未來的版本中，這會在安全性 & 合規性中心較容易進行。 在此之前，您可以使用本文中的腳本來自動化此程式。 此腳本會提示您組織的 MySite 網域的名稱 (例如，) URL 中的 **contoso** 、 `https://contoso-my.sharepoint.com` 使用者的電子郵件地址清單、新內容搜尋的名稱，以及要使用的搜尋查詢。 腳本會針對清單中的每個使用者，取得商務 URL 的 OneDrive，然後使用您提供的搜尋查詢，來建立及啟動搜尋內容，以針對清單中的每一位使用者，搜尋信箱及 OneDrive for Business site。
   
 ## <a name="permissions-and-script-information"></a>許可權及腳本資訊
 
@@ -44,33 +44,33 @@ ms.locfileid: "46527359"
 
 第一步是安裝 SharePoint 線上管理命令介面。 您不需要在此程式中使用命令介面，但必須安裝它，因為它包含您在步驟3中執行之腳本所需的必要條件。 這些必要條件允許腳本與 SharePoint Online 進行通訊，以取得商務網站 OneDrive 的 URLs。
   
-移至[設定 SharePoint 線上管理命令介面 Windows PowerShell 環境](https://go.microsoft.com/fwlink/p/?LinkID=286318)，並執行步驟1和步驟2安裝 SharePoint 線上管理命令介面。
+移至 [設定 SharePoint 線上管理命令介面 Windows PowerShell 環境](https://go.microsoft.com/fwlink/p/?LinkID=286318) ，並執行步驟1和步驟2安裝 SharePoint 線上管理命令介面。
   
 ## <a name="step-2-generate-a-list-of-users"></a>步驟2：產生使用者清單
 
-步驟3中的腳本會建立內容搜尋，以搜尋信箱及 OneDrive 帳戶清單中的使用者。 您可以只輸入文字檔中的電子郵件地址，也可以在 Windows PowerShell 中執行命令，以取得電子郵件地址清單，並將其儲存至檔案（位於您將在步驟3中儲存腳本的相同資料夾中）。
+步驟3中的腳本會建立內容搜尋，以搜尋信箱及 OneDrive 帳戶清單中的使用者。 您可以只輸入文字檔中的電子郵件地址，也可以在 Windows PowerShell 中執行命令，以取得電子郵件地址的清單，並將其儲存至相同資料夾中的檔案 (，您將在步驟 3) 中儲存腳本。
   
-以下是[Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)命令，您可以 runt 以取得組織中所有使用者的電子郵件地址清單，並將其儲存至名為的文字檔 `Users.txt` 。 
+以下是 [Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283) 命令，您可以 runt 以取得組織中所有使用者的電子郵件地址清單，並將其儲存至名為的文字檔 `Users.txt` 。 
   
 ```powershell
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > Users.txt
 ```
 
-在您執行此命令之後，請務必開啟檔案，並移除包含屬性名稱的標頭 `PrimarySmtpAddress` 。 文字檔應該只包含電子郵件地址的清單，而不包含其他任何內容。 請確定電子郵件地址清單前面或後面沒有任何空白列。
+在您執行此命令之後，請務必開啟檔案，並移除包含屬性名稱的標頭  `PrimarySmtpAddress` 。 文字檔應該只包含電子郵件地址的清單，而不包含其他任何內容。 請確定電子郵件地址清單前面或後面沒有任何空白列。
   
 ## <a name="step-3-run-the-script-to-create-and-start-the-search"></a>步驟3：執行腳本以建立及啟動搜尋
 
 當您在此步驟中執行腳本時，它會提示您輸入下列資訊。 在執行腳本之前，請務必準備好此資訊。
   
-- **您的使用者認證**-腳本會使用您的認證來存取 SharePoint 線上，以取得商務 OneDrive URLs，以及透過遠端 PowerShell 連接至安全性 & 規範中心。 
+- **您的使用者認證** -腳本會使用您的認證來存取 SharePoint 線上，以取得商務 OneDrive URLs，以及透過遠端 PowerShell 連接至安全性 & 規範中心。 
     
-- **MySite 網域的名稱**-MySite 網域是包含組織中商務網站所有 OneDrive 的網域。 例如，如果 MySite 網域的 URL 是 **https://contoso-my.sharepoint.com** ， `contoso` 當腳本提示您輸入 MySite 網域的名稱時，就會輸入。 
+- **MySite 網域的名稱** -MySite 網域是包含組織中商務網站所有 OneDrive 的網域。 例如，如果 MySite 網域的 URL 是 **https://contoso-my.sharepoint.com** ，  `contoso` 當腳本提示您輸入 MySite 網域的名稱時，就會輸入。 
     
-- **步驟2中的文字檔路徑名**-您在步驟2中建立的文字檔路徑名。 如果文字檔和腳本位於相同的資料夾中，請輸入文字檔的名稱。 否則，請輸入文字檔的完整路徑名。 
+- **步驟2中的文字檔路徑名** -您在步驟2中建立的文字檔路徑名。 如果文字檔和腳本位於相同的資料夾中，請輸入文字檔的名稱。 否則，請輸入文字檔的完整路徑名。 
     
-- **內容搜尋的名稱**-將由腳本建立的內容搜尋的名稱。 
+- **內容搜尋的名稱** -將由腳本建立的內容搜尋的名稱。 
     
-- **搜尋查詢**-建立及執行將用於內容搜尋的搜尋查詢。 如需搜尋查詢的詳細資訊，請參閱[內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
+- **搜尋查詢** -建立及執行將用於內容搜尋的搜尋查詢。 如需搜尋查詢的詳細資訊，請參閱 [內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
 
 
 **若要執行腳本：**
@@ -177,7 +177,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 4. 當系統提示您輸入認證時，請輸入您的電子郵件地址和密碼，然後按一下 **[確定]**。 
     
-5. 當腳本提示時，請輸入下列資訊。 輸入每一條資訊，然後按**enter**鍵。
+5. 當腳本提示時，請輸入下列資訊。 輸入每一條資訊，然後按 **enter**鍵。
     
     - MySite 網域的名稱。 
     
@@ -185,6 +185,6 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
     
     - 內容搜尋的名稱。
     
-    - 搜尋查詢（將此專案保留空白以傳回內容位置中的所有專案）。
+    - 搜尋查詢 (將此專案保持空白，以傳回內容位置) 中的所有專案。
     
-    腳本會為商務網站的每個 OneDrive 取得 URLs，然後建立並啟動搜尋。 您可以在安全性 & 規範中心」中執行**Get-ComplianceSearch** Cmdlet PowerShell 以顯示搜尋統計資料和結果，也可以前往安全性 & 規範中心的「**內容搜尋**」頁面，以查看搜尋的相關資訊。 
+    腳本會為商務網站的每個 OneDrive 取得 URLs，然後建立並啟動搜尋。 您可以在安全性 & 規範中心」中執行 **Get-ComplianceSearch** Cmdlet PowerShell 以顯示搜尋統計資料和結果，也可以前往安全性 & 規範中心的「 **內容搜尋** 」頁面，以查看搜尋的相關資訊。 
