@@ -15,71 +15,94 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 瞭解如何選取及匯出或下載簡報或外部評論的審閱集合中的內容。
+description: 瞭解如何選取及匯出簡報或外部評論的審閱集合中的內容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29c2224a1ce0a92bca3b2057352f6f82fdc7afde
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 855f1b8fef7a1df6ed86f058b71e5027851b5f0d
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034091"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399172"
 ---
-# <a name="export-documents-from-a-review-set"></a><span data-ttu-id="a19ec-103">從檢閱集匯出文件</span><span class="sxs-lookup"><span data-stu-id="a19ec-103">Export documents from a review set</span></span>
+# <a name="export-documents-from-a-review-set"></a><span data-ttu-id="13d80-103">從檢閱集匯出文件</span><span class="sxs-lookup"><span data-stu-id="13d80-103">Export documents from a review set</span></span>
 
-<span data-ttu-id="a19ec-104">您可以透過下列其中一種方法，從審閱集中匯出簡報或外部審閱內容：</span><span class="sxs-lookup"><span data-stu-id="a19ec-104">You can export content for presentation or external review from a review set by one of the following methods:</span></span>
+<span data-ttu-id="13d80-104">匯出功能可讓使用者自訂下載套件所包含的內容。</span><span class="sxs-lookup"><span data-stu-id="13d80-104">Export allows users to customize the content that is included in the download package.</span></span> <span data-ttu-id="13d80-105">匯出工具提供具有下列設定的設定頁面：</span><span class="sxs-lookup"><span data-stu-id="13d80-105">The Export tool provides a configuration page with the following settings:</span></span>
 
-- [<span data-ttu-id="a19ec-105">下載檔案</span><span class="sxs-lookup"><span data-stu-id="a19ec-105">Download documents</span></span>](#download-documents-from-a-review-set)
- 
-- [<span data-ttu-id="a19ec-106">匯出檔</span><span class="sxs-lookup"><span data-stu-id="a19ec-106">Export documents</span></span>](#export-documents-from-a-review-set)
+![從審閱集匯出專案的選項](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-## <a name="download-documents-from-a-review-set"></a><span data-ttu-id="a19ec-107">從審閱集下載檔案</span><span class="sxs-lookup"><span data-stu-id="a19ec-107">Download documents from a review set</span></span>
+## <a name="export-options"></a><span data-ttu-id="13d80-107">匯出選項</span><span class="sxs-lookup"><span data-stu-id="13d80-107">Export options</span></span>
 
-<span data-ttu-id="a19ec-108">下載提供一種簡單的方式，可從原生格式的審閱集下載內容。</span><span class="sxs-lookup"><span data-stu-id="a19ec-108">Download offers a simple way to download content from a review set in Native format.</span></span> <span data-ttu-id="a19ec-109">它會利用瀏覽器的資料傳輸功能，讓下載做好準備時出現瀏覽器提示。</span><span class="sxs-lookup"><span data-stu-id="a19ec-109">It leverages the browser's data transfer features so a browser prompt will appear once a download is ready.</span></span> <span data-ttu-id="a19ec-110">使用此方法下載的檔案會壓縮成容器檔案，並將成為專案層級檔案。</span><span class="sxs-lookup"><span data-stu-id="a19ec-110">Files downloaded using this method will be zipped into a container file and will be item level files.</span></span> <span data-ttu-id="a19ec-111">這表示如果您選取附件，將會自動收到包含附件的電子郵件。</span><span class="sxs-lookup"><span data-stu-id="a19ec-111">This means that if you select an attachment, you will automatically receive the email with the attachment included.</span></span> <span data-ttu-id="a19ec-112">同樣地，如果您選取嵌入在 word 檔中的 excel 試算表，您會收到 word 檔，並嵌入 excel 試算表。</span><span class="sxs-lookup"><span data-stu-id="a19ec-112">Similarly, if you select an excel spreadsheet that was embedded in a word document, you will receive the word document with the excel spreadsheet embedded.</span></span> <span data-ttu-id="a19ec-113">已下載的專案會保留最後一個修改的日期，該日期可以看作是檔案屬性。</span><span class="sxs-lookup"><span data-stu-id="a19ec-113">Downloaded items will preserve the last modified date which can be viewed as a file property.</span></span>
+- <span data-ttu-id="13d80-108">匯出名稱：匯出工作的名稱。</span><span class="sxs-lookup"><span data-stu-id="13d80-108">Export name: Name of the export job.</span></span>
 
-<span data-ttu-id="a19ec-114">若要從審閱集下載內容，請先選取您想要下載的檔案，然後選取 [動作] 功能表中的 [下載]。</span><span class="sxs-lookup"><span data-stu-id="a19ec-114">To download content from a review set, start by selecting the files you want to download then select "Download" under the Actions menu.</span></span>
+- <span data-ttu-id="13d80-109">描述：可讓您新增描述的自由文字欄位。</span><span class="sxs-lookup"><span data-stu-id="13d80-109">Description: Free-text field for you to add a description.</span></span>
 
-![自動產生電腦描述的螢幕擷取畫面](../media/eDiscoDownload.png)
+- <span data-ttu-id="13d80-110">匯出下列檔：</span><span class="sxs-lookup"><span data-stu-id="13d80-110">Export these documents:</span></span>
 
-## <a name="export-documents-from-a-review-set"></a><span data-ttu-id="a19ec-116">從檢閱集匯出文件</span><span class="sxs-lookup"><span data-stu-id="a19ec-116">Export documents from a review set</span></span>
+  - <span data-ttu-id="13d80-111">僅限選取的檔-只匯出目前選取的檔。</span><span class="sxs-lookup"><span data-stu-id="13d80-111">Selected documents only - Exports only the documents that are currently selected.</span></span>
+  
+  - <span data-ttu-id="13d80-112">審閱集合中的所有檔-匯出審閱集中的所有檔</span><span class="sxs-lookup"><span data-stu-id="13d80-112">All documents in the review set - Exports all documents in the review set</span></span>
 
-<span data-ttu-id="a19ec-117">匯出功能可讓使用者自訂下載套件所包含的內容。</span><span class="sxs-lookup"><span data-stu-id="a19ec-117">Export allows users to customize the content that is included in the download package.</span></span> <span data-ttu-id="a19ec-118">它會提供具有下列設定的設定頁面：</span><span class="sxs-lookup"><span data-stu-id="a19ec-118">It provides a configuration page with the following settings:</span></span>
+- <span data-ttu-id="13d80-113">中繼資料</span><span class="sxs-lookup"><span data-stu-id="13d80-113">Metadata</span></span>
+  
+  - <span data-ttu-id="13d80-114">載入檔-此檔案包含每個檔案的中繼資料。</span><span class="sxs-lookup"><span data-stu-id="13d80-114">Load file - This file contains metadata for each file.</span></span> <span data-ttu-id="13d80-115">如需包含哪些欄位的詳細資訊，請參閱 [Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md) 。</span><span class="sxs-lookup"><span data-stu-id="13d80-115">see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md) for more information about what fields are included.</span></span> <span data-ttu-id="13d80-116">這個檔案通常可由協力廠商的 eDiscovery 工具來 ingested。</span><span class="sxs-lookup"><span data-stu-id="13d80-116">This file can typically be ingested by third-party eDiscovery tools.</span></span>
+  
+  - <span data-ttu-id="13d80-117">標記-選取時，標籤資訊將會包含在載入檔中。</span><span class="sxs-lookup"><span data-stu-id="13d80-117">Tags - When selected, tagging information will be included in the load file.</span></span>
 
-### <a name="metadata-file"></a><span data-ttu-id="a19ec-119">元資料檔案</span><span class="sxs-lookup"><span data-stu-id="a19ec-119">Metadata file</span></span>
-
-<span data-ttu-id="a19ec-120">這可以視為您的「載入檔案」，該檔案包含與匯出之檔案相關聯的中繼資料。</span><span class="sxs-lookup"><span data-stu-id="a19ec-120">This can be considered your "load file" that contains metadata associated with the files you export.</span></span> <span data-ttu-id="a19ec-121">如需元資料檔案中可用的匯出欄位清單，請參閱[Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md)。</span><span class="sxs-lookup"><span data-stu-id="a19ec-121">For a list of exported fields available in the metadata file, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).</span></span> <span data-ttu-id="a19ec-122">這個檔案通常可由協力廠商工具來 ingested。</span><span class="sxs-lookup"><span data-stu-id="a19ec-122">This file can typically be ingested by third-party tools.</span></span>
-
-### <a name="tag-data"></a><span data-ttu-id="a19ec-123">標記資料</span><span class="sxs-lookup"><span data-stu-id="a19ec-123">Tag data</span></span>
-
-<span data-ttu-id="a19ec-124">此內容會新增為元資料檔案中的欄位。</span><span class="sxs-lookup"><span data-stu-id="a19ec-124">This content would be added as fields in the metadata file.</span></span> <span data-ttu-id="a19ec-125">包含所有套用至審查集的標記資訊。</span><span class="sxs-lookup"><span data-stu-id="a19ec-125">It contains all of the tag information applied in review sets.</span></span>
-
-### <a name="text-files"></a><span data-ttu-id="a19ec-126">文字檔</span><span class="sxs-lookup"><span data-stu-id="a19ec-126">Text files</span></span>
-
-<span data-ttu-id="a19ec-127">可為從審閱集匯出的每個檔案產生文字檔。</span><span class="sxs-lookup"><span data-stu-id="a19ec-127">Text files can be generated for each file exported from a review set.</span></span> <span data-ttu-id="a19ec-128">這些檔案通常是服務合作夥伴在 ingesting 資料到協力廠商工具的一部分時所需的時間。</span><span class="sxs-lookup"><span data-stu-id="a19ec-128">Often times these files are required by service partners as part of ingesting data into third-party tools.</span></span>
-
-### <a name="redacted-files"></a><span data-ttu-id="a19ec-129">Redacted 檔案</span><span class="sxs-lookup"><span data-stu-id="a19ec-129">Redacted files</span></span>
-
-<span data-ttu-id="a19ec-130">如果審閱時產生 redacted PDF 檔案，則在匯出期間可使用這些檔案。</span><span class="sxs-lookup"><span data-stu-id="a19ec-130">If redacted PDF files are generated during review, these files are available during export.</span></span> <span data-ttu-id="a19ec-131">您可以決定是否只匯出原生檔案，或將需要密文的原生檔案取代成包含實際密文的 PDF 檔案。</span><span class="sxs-lookup"><span data-stu-id="a19ec-131">You can decide whether to export native files only or to replace the native files that required redaction with the PDF files that contain the actual redactions.</span></span>
-
-### <a name="export-location"></a><span data-ttu-id="a19ec-132">匯出位置</span><span class="sxs-lookup"><span data-stu-id="a19ec-132">Export location</span></span>
-
-<span data-ttu-id="a19ec-133">匯出的內容會傳送至 Microsoft 提供的 Azure blob 或客戶的 blob，如果在匯出時提供詳細資料，即可使用。</span><span class="sxs-lookup"><span data-stu-id="a19ec-133">Exported content is delivered to either a Microsoft provided Azure blob or a customer's blob can be used if the details are provided at export.</span></span>
-
-### <a name="export-structure"></a><span data-ttu-id="a19ec-134">匯出結構</span><span class="sxs-lookup"><span data-stu-id="a19ec-134">Export structure</span></span>
-
-<span data-ttu-id="a19ec-135">從審閱集匯出內容時，會以下列結構組織內容。</span><span class="sxs-lookup"><span data-stu-id="a19ec-135">When content is exported from a review set, the content is organized in the following structure.</span></span>
-
-  - <span data-ttu-id="a19ec-136">根資料夾–下載識別碼</span><span class="sxs-lookup"><span data-stu-id="a19ec-136">Root folder – Download ID</span></span>
+- <span data-ttu-id="13d80-118">內容</span><span class="sxs-lookup"><span data-stu-id="13d80-118">Content</span></span>
+  
+  - <span data-ttu-id="13d80-119">原生檔案-選取此核取方塊以包含原生檔案。</span><span class="sxs-lookup"><span data-stu-id="13d80-119">Native files - Select this checkbox to include the native files.</span></span>
+  
+  - <span data-ttu-id="13d80-120">交談選項</span><span class="sxs-lookup"><span data-stu-id="13d80-120">Conversation options</span></span>
     
-      - <span data-ttu-id="a19ec-137">Export\_load\_file .csv = metadata file</span><span class="sxs-lookup"><span data-stu-id="a19ec-137">Export\_load\_file.csv = metadata file</span></span>
+    - <span data-ttu-id="13d80-121">交談檔案-匯出會重新構建聊天訊息。</span><span class="sxs-lookup"><span data-stu-id="13d80-121">Conversation files - Export reconstructed chat messages.</span></span> <span data-ttu-id="13d80-122">這種格式會顯示與使用者在原生應用程式中看到的外觀類似的對話。</span><span class="sxs-lookup"><span data-stu-id="13d80-122">This format presents conversations in a form that resembles what users see in the native application.</span></span>
     
-      - <span data-ttu-id="a19ec-138">摘要 .txt = 具有匯出統計資料的摘要檔案</span><span class="sxs-lookup"><span data-stu-id="a19ec-138">Summary.txt = a summary file with export statistics</span></span>
+    - <span data-ttu-id="13d80-123">個別聊天訊息-當原始交談檔案儲存在 Microsoft 365 中時，將其匯出。</span><span class="sxs-lookup"><span data-stu-id="13d80-123">Individual chat messages - Export the original conversation files as they are stored in Microsoft 365.</span></span>
+
+- <span data-ttu-id="13d80-124">選項</span><span class="sxs-lookup"><span data-stu-id="13d80-124">Options</span></span>
+
+  - <span data-ttu-id="13d80-125">文字檔-包括解壓縮的原生文字檔版本。</span><span class="sxs-lookup"><span data-stu-id="13d80-125">Text files - Include extracted text versions of native files.</span></span>
+  
+  - <span data-ttu-id="13d80-126">Replace redacted natives with 已轉換的 Pdf-如果審閱時產生 redacted PDF 檔案，這些檔案可供匯出。</span><span class="sxs-lookup"><span data-stu-id="13d80-126">Replace redacted natives with converted PDFs - If redacted PDF files are generated during review, these files are available for export.</span></span> <span data-ttu-id="13d80-127">您可以選擇只匯出 redacted (的原生檔案，但不要選取此選項) 或選取此選項，即可匯出包含實際密文的 PDF 檔案。</span><span class="sxs-lookup"><span data-stu-id="13d80-127">You can choose to export only the native files that were redacted (by not selecting this option) or you can select this option to export the PDF files that contain the actual redactions.</span></span>
+
+- <span data-ttu-id="13d80-128"> (匯出內容的輸出選項可透過網頁瀏覽器直接下載，或是可以傳送至 Azure 儲存體帳戶。</span><span class="sxs-lookup"><span data-stu-id="13d80-128">Output options (Exported content is either available for download directly through a web browser or can be sent to an Azure Storage account.</span></span> <span data-ttu-id="13d80-129">前兩個選項可讓您直接下載。 ) </span><span class="sxs-lookup"><span data-stu-id="13d80-129">The first two options enable direct download.)</span></span>
+  
+  - <span data-ttu-id="13d80-130">鬆散檔案和 Pst (電子郵件會在可能的情況) 中，以類似使用者在原生應用程式中所看到之原始目錄結構的格式來匯出時，新增至 Pst。</span><span class="sxs-lookup"><span data-stu-id="13d80-130">Loose files and PSTs (email is added to PSTs when possible) - Files are exported in a format that resembles the original directory structure seen by users in their native applications.</span></span>  <span data-ttu-id="13d80-131">如需詳細資訊，請參閱 [鬆散檔案及 PST 匯出結構](#loose-files-and-pst-export-structure) 一節。</span><span class="sxs-lookup"><span data-stu-id="13d80-131">For more information, see the [Loose files and PST export structure](#loose-files-and-pst-export-structure) section.</span></span>
+  
+  - <span data-ttu-id="13d80-132">緊縮的目錄結構-檔會匯出並包含在下載中。</span><span class="sxs-lookup"><span data-stu-id="13d80-132">Condensed directory structure - Files are exported and included in the download.</span></span>
+  
+  - <span data-ttu-id="13d80-133">匯出至您的 Azure 儲存體帳戶的壓縮目錄結構-檔案會匯出至您組織的 Azure Storage accouunt。</span><span class="sxs-lookup"><span data-stu-id="13d80-133">Condensed directory structure exported to your Azure Storage account - Files are exported to your organization's Azure Storage accouunt.</span></span>
+
+## <a name="loose-files-and-pst-export-structure"></a><span data-ttu-id="13d80-134">鬆散檔與 PST 匯出結構</span><span class="sxs-lookup"><span data-stu-id="13d80-134">Loose files and PST export structure</span></span>
+
+<span data-ttu-id="13d80-135">如果您選取此匯出選項，匯出的內容會以下列結構組織：</span><span class="sxs-lookup"><span data-stu-id="13d80-135">If you select this export option, the exported content is organized in the following structure:</span></span>
+
+- <span data-ttu-id="13d80-136">根資料夾–此資料夾命名為 ExportName.zip</span><span class="sxs-lookup"><span data-stu-id="13d80-136">Root folder – This folder in named ExportName.zip</span></span>
+  
+  - <span data-ttu-id="13d80-137">Export_load_file.csv 元資料檔案。</span><span class="sxs-lookup"><span data-stu-id="13d80-137">Export_load_file.csv - Metadata file.</span></span>
+  
+  - <span data-ttu-id="13d80-138">Summary.csv-也包含匯出統計資料的摘要檔案。</span><span class="sxs-lookup"><span data-stu-id="13d80-138">Summary.csv - A summary file that also contains export statistics.</span></span>
+  
+  - <span data-ttu-id="13d80-139">Exchange-此資料夾包含所有來自 Exchange 的內容，以原生檔案格式。</span><span class="sxs-lookup"><span data-stu-id="13d80-139">Exchange - This folder contains all content from Exchange in native file format.</span></span> <span data-ttu-id="13d80-140">如果您選取 [ **以轉換的 Pdf 取代 redacted Natives** ] 選項，則 Natives 檔案會取代為 redacted pdf。</span><span class="sxs-lookup"><span data-stu-id="13d80-140">Natives files are replaced with redacted PDFs if you selected the **Replace redacted natives with converted PDFs** option.</span></span>
+  
+  - <span data-ttu-id="13d80-141">SharePoint = 此資料夾包含以原生檔案格式 SharePoint 的所有本機內容。</span><span class="sxs-lookup"><span data-stu-id="13d80-141">SharePoint = This folder contains all native content from SharePoint in a native file format.</span></span> <span data-ttu-id="13d80-142">如果您選取 [ **以轉換的 Pdf 取代 redacted Natives** ] 選項，則 Natives 檔案會取代為 redacted pdf。</span><span class="sxs-lookup"><span data-stu-id="13d80-142">Natives files are replaced with redacted PDFs if you selected the **Replace redacted natives with converted PDFs** option.</span></span>
+
+## <a name="condensed-directory-structure"></a><span data-ttu-id="13d80-143">緊縮目錄結構</span><span class="sxs-lookup"><span data-stu-id="13d80-143">Condensed directory structure</span></span>
+
+- <span data-ttu-id="13d80-144">根資料夾-此資料夾命名為 ExportName.zip</span><span class="sxs-lookup"><span data-stu-id="13d80-144">Root folder - This folder is named ExportName.zip</span></span>
+  
+  - <span data-ttu-id="13d80-145">Export_load_file.csv 元資料檔案。</span><span class="sxs-lookup"><span data-stu-id="13d80-145">Export_load_file.csv - Metadata file.</span></span>
+  
+  - <span data-ttu-id="13d80-146">Summary.txt-也包含匯出統計資料的摘要檔案。</span><span class="sxs-lookup"><span data-stu-id="13d80-146">Summary.txt - A summary file that also contains export statistics.</span></span>
+  
+  - <span data-ttu-id="13d80-147">Input_or_native_files-此資料夾包含所有已匯出的原生檔案。</span><span class="sxs-lookup"><span data-stu-id="13d80-147">Input_or_native_files - This folder contains all the native files that were exported.</span></span> <span data-ttu-id="13d80-148">如果您匯出的是 redacted PDF 檔案，則不會放入 PST 檔案。</span><span class="sxs-lookup"><span data-stu-id="13d80-148">If you export redacted PDF files, they are not put in PST files.</span></span> <span data-ttu-id="13d80-149">相反地，它們會新增至分開的資料夾。</span><span class="sxs-lookup"><span data-stu-id="13d80-149">Instead, they're added to a separated folder.</span></span>
+  
+  - <span data-ttu-id="13d80-150">Error_files-此資料夾包含下列錯誤檔案（如果它們包含在匯出中）：</span><span class="sxs-lookup"><span data-stu-id="13d80-150">Error_files - This folder contains the following error files, if they are included in the export:</span></span>
     
-      - <span data-ttu-id="a19ec-139">輸入\_或原\_生檔案 = 包含所有的原生檔案</span><span class="sxs-lookup"><span data-stu-id="a19ec-139">Input\_or native\_files = contains all native files</span></span>
+    - <span data-ttu-id="13d80-151">ExtractionError.</span><span class="sxs-lookup"><span data-stu-id="13d80-151">ExtractionError.</span></span> <span data-ttu-id="13d80-152">CSV 檔案，其中包含未從父系檔案正確提取之任何可用之檔案的中繼資料。</span><span class="sxs-lookup"><span data-stu-id="13d80-152">A CSV file that contains any available metadata of files that weren't properly extracted from parent files.</span></span>
     
-      - <span data-ttu-id="a19ec-140">錯誤\_檔案 = 包含匯出中包含的任何錯誤檔案</span><span class="sxs-lookup"><span data-stu-id="a19ec-140">Error\_files = contains any error files included in the export</span></span>
-        
-          - <span data-ttu-id="a19ec-141">ExtractionError –包含未從父系檔案正確提取之任何可用檔案中繼資料的 csv</span><span class="sxs-lookup"><span data-stu-id="a19ec-141">ExtractionError – a csv that contains any available metadata of files that were not properly extracted from parent files</span></span>
-        
-          - <span data-ttu-id="a19ec-142">ProcessingError –具有處理錯誤的內容。</span><span class="sxs-lookup"><span data-stu-id="a19ec-142">ProcessingError – content with processing errors.</span></span> <span data-ttu-id="a19ec-143">此內容是專案層級的意義。如果附件發生處理錯誤，包含附件的電子郵件將會包含在此資料夾中。</span><span class="sxs-lookup"><span data-stu-id="a19ec-143">This content is item level meaning if an attachment experienced a processing error, the email that contains the attachment will be included in this folder.</span></span>
-    
-      - <span data-ttu-id="a19ec-144">解壓縮\_的\_文字檔 = 包含處理時所產生的所有解壓縮文字檔。</span><span class="sxs-lookup"><span data-stu-id="a19ec-144">Extracted\_text\_files = contains all of the extracted text files generated at processing.</span></span>
+    - <span data-ttu-id="13d80-153">ProcessingError –此檔案包含含處理錯誤的檔案清單。</span><span class="sxs-lookup"><span data-stu-id="13d80-153">ProcessingError – This file contains a list of documents with processing errors.</span></span> <span data-ttu-id="13d80-154">此內容屬於專案層級，也就是說，如果附件導致處理錯誤，則包含附件的電子郵件會包含在此資料夾中。</span><span class="sxs-lookup"><span data-stu-id="13d80-154">This content is item-level, meaning if an attachment resulted in a processing error, the email message that contains the attachment is included in this folder.</span></span>
+  
+  - <span data-ttu-id="13d80-155">Extracted_text_files-此資料夾包含在處理時所產生的所有解壓縮文字檔。</span><span class="sxs-lookup"><span data-stu-id="13d80-155">Extracted_text_files - This folder contains all of the extracted text files that were generated at processing.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="13d80-156">匯出工作會在案例週期內保留，只要案例並未刪除，就可以下載。</span><span class="sxs-lookup"><span data-stu-id="13d80-156">Export jobs are retained for the life of the case and can be downloaded as long as the case isn't deleted.</span></span>
