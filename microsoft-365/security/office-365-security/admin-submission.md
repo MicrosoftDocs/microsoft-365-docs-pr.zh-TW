@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
-ms.openlocfilehash: 1b3715e3ed6f0472d9202573ff0cab92f7240ffa
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 08d1633142bba7348cbc899f9cf9b2a1288c3743
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845963"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394732"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -36,17 +36,13 @@ ms.locfileid: "46845963"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 **提交** 頁面，請使用 <https://protection.office.com/reportsubmission> 。
 
-- 您必須已獲派權限，才能進行此主題中的程序:
+- 若要將郵件和檔案提交給 Microsoft，您必須是下列其中一個角色群組的成員：
 
-  - 若要將郵件和檔案提交給 Microsoft，您必須是下列其中一個角色群組的成員：
+  - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
 
-    - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
-    - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理**。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**。
 
-  - 若要唯讀存取提交入口網站，您必須是下列其中一個角色群組的成員：
-
-    - [安全性與合規性中心](permissions-in-the-security-and-compliance-center.md) 中的 **安全讀者**。
-    - [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅檢視組織管理**。
+    請注意，此角色群組的成員資格是 [查看使用者送至自訂信箱的使用者](#view-user-submissions-to-the-custom-mailbox) ，如本主題稍後所述。
 
 - 如需使用者如何提交郵件和檔案給 Microsoft 的詳細資訊，請參閱 [向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。
 
@@ -215,7 +211,7 @@ ms.locfileid: "46845963"
 
 ## <a name="view-user-submissions-to-the-custom-mailbox"></a>查看自訂信箱的使用者報送
 
-如果您已 [將自訂信箱設定](user-submission.md) 為接收使用者報告的郵件，您可以查看並提交傳遞到報表信箱的郵件。
+**如果** 您已 [將自訂信箱設定](user-submission.md) 為接收使用者報告的郵件，您可以查看並提交傳遞到報表信箱的郵件。
 
 1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **提交**]。
 

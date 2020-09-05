@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d709cc1f98a12bb6f5a5b6539583a33be500b6
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: ae0105fd5eba134c7896daef34136748802e9010
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255742"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394678"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>使用 Microsoft 威脅防護中的進階搜捕功能主動尋找威脅
 
@@ -39,7 +39,7 @@ ms.locfileid: "47255742"
 
 您可以使用相同的威脅搜尋查詢來建立自訂的偵測規則。 自動執行這些規則，以檢查各種活動和系統狀態，包括可疑的破壞活動和錯誤配置的電腦。
 
-此功能與 [Microsoft DEFENDER atp 中的高級搜尋](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)類似，不同之處在于，「microsoft 365 安全性中心」中的「高級搜尋」支援查詢可查看各種工作區中的資料，包括來自 MICROSOFT Defender ATP、OFFICE 365 ATP、Microsoft Cloud App Security 和 Azure atp 的資料。 若要使用進階搜捕，請[開啟 Microsoft 威脅防護](mtp-enable.md)。
+這項功能與 [Microsoft DEFENDER atp 中的高級搜尋](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)類似，不同之處在于 microsoft 365 security center 中所提供的 Microsoft 威脅防護中的「高級搜尋」支援查詢，以查看各種工作區中的資料，包括來自 MICROSOFT Defender ATP、OFFICE 365 ATP、Microsoft Cloud App Security 和 Azure atp 的資料。 若要使用進階搜捕，請[開啟 Microsoft 威脅防護](mtp-enable.md)。
 
 ## <a name="get-started-with-advanced-hunting"></a>開始使用進階搜捕
 
