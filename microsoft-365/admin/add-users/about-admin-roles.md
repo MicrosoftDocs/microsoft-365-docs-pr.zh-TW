@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員向 Microsoft 開啟支援票證。
-ms.openlocfilehash: 361c6599dfccbe7a80fa520bcd1fa988a1fae536
-ms.sourcegitcommit: 6cf29958aff90d8bc1df0fe5fb9238d338db8237
+ms.openlocfilehash: d80207ac264cb1b649f631d358c86809c2992a8e
+ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "46506282"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47361770"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
@@ -40,6 +40,10 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 正在尋找您可以在 Microsoft 365 系統管理中心管理的詳細 Intune 角色描述的完整清單嗎？  請參閱 [使用 Microsoft Intune 的角色型存取控制 (RBAC)](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)。
 
 如需在 Microsoft 365 系統管理中心指派角色的詳細資訊，請參閱[指派系統管理員角色](assign-admin-roles.md)。
+
+### <a name="watch-what-is-an-admin"></a>注意: 何謂系統管理員?
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
 ## <a name="security-guidelines-for-assigning-roles"></a>指派角色的安全性指導方針
 

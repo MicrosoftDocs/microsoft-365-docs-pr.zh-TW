@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/23/2020
+ms.date: 09/02/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 設定安全性和服務基礎結構，讓您的工作人員隨時隨地都能遠端工作。
-ms.openlocfilehash: 17cc826f5cf28ff375deaf1e6a4b192700eebf2f
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: b0f6816ad758f374f2512076939cfa6392b748de
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898125"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357299"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 強化遠端工作者
 
@@ -37,13 +37,33 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
 ![使用 Microsoft 365 強化您的遠端工作人員](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-| 主要功能 | 說明 |
-|:-------|:-----|
-| 連接 | 遠端工作人員必須能夠隨時隨地存取： <ul><li>您的 Microsoft 365 訂閱中的雲端服務和資料。 </li><li>組織資源，例如內部部署應用程式資料中心所提供的資源。</li></ul> |
-| 安全 | 以 Microsoft 365 和 Windows 10 的多重要素驗證（MFA）和內建安全性功能保護登入，避免惡意程式碼、惡意攻擊和資料遺失。 |
-| 受管理 | 您可以透過安全性設定、允許的應用程式和對系統健康的符合要求以雲端來管理您的遠端工作人員的裝置。 |
-| 共同作業和生產力 | 透過以下高度協作的方式，您的遠端工作人員可以像在內部部屬工作時一樣高效: <ul><li>以 Teams 進行線上會議和聊天會話。 </li><li>透過 SharePoint 和 OneDrive，使用全域協助工具和即時共同作業的雲端式檔案儲存空間以共用工作區。 </li><li>共用工作和工作流程來劃分並完成工作。 </li></ul> |
-|||
+觀看這段影片以獲取部屬程序概觀。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
+
+此解決方案提供這些關鍵功能。
+
+- 連接
+
+  遠端工作人員必須能夠隨時隨地存取： 
+
+  - 您的 Microsoft 365 訂閱中的雲端服務和資料。 
+  - 組織資源，例如內部部署應用程式資料中心所提供的資源。
+
+- 安全
+
+  以 Microsoft 365 和 Windows 10 的多重要素驗證（MFA）和內建安全性功能保護登入，避免惡意程式碼、惡意攻擊和資料遺失。
+
+- 受管理
+
+  您可以透過安全性設定、允許的應用程式和對系統健康的符合要求以雲端來管理您的遠端工作人員的裝置。
+
+- 共同作業和生產力
+
+  透過以下高度協作的方式，您的遠端工作人員可以像在內部部屬工作時一樣高效:
+  - 以 Teams 進行線上會議和聊天會話。 
+  - 透過 SharePoint 和 OneDrive，使用全域協助工具和即時共同作業的雲端式檔案儲存空間以共用工作區。
+  - 共用工作和工作流程來劃分並完成工作。 
 
 若要取得無縫登入體驗，您的內部部署 Active Directory 網域服務 (AD DS) 使用者帳戶應與 Azure Active Directory (Azure AD) 同步處理。 為了保護您的 Windows 10 裝置，應在 Intune 中註冊。 以下是基礎結構的高階檢視。
 
