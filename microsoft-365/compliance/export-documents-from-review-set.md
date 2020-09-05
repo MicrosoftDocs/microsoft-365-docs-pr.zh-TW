@@ -15,71 +15,94 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 瞭解如何選取及匯出或下載簡報或外部評論的審閱集合中的內容。
+description: 瞭解如何選取及匯出簡報或外部評論的審閱集合中的內容。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 29c2224a1ce0a92bca3b2057352f6f82fdc7afde
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 855f1b8fef7a1df6ed86f058b71e5027851b5f0d
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034091"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399172"
 ---
 # <a name="export-documents-from-a-review-set"></a>從檢閱集匯出文件
 
-您可以透過下列其中一種方法，從審閱集中匯出簡報或外部審閱內容：
+匯出功能可讓使用者自訂下載套件所包含的內容。 匯出工具提供具有下列設定的設定頁面：
 
-- [下載檔案](#download-documents-from-a-review-set)
- 
-- [匯出檔](#export-documents-from-a-review-set)
+![從審閱集匯出專案的選項](../media/bcfc72c7-4a01-4697-9e16-2965b7f04fdb.png)
 
-## <a name="download-documents-from-a-review-set"></a>從審閱集下載檔案
+## <a name="export-options"></a>匯出選項
 
-下載提供一種簡單的方式，可從原生格式的審閱集下載內容。 它會利用瀏覽器的資料傳輸功能，讓下載做好準備時出現瀏覽器提示。 使用此方法下載的檔案會壓縮成容器檔案，並將成為專案層級檔案。 這表示如果您選取附件，將會自動收到包含附件的電子郵件。 同樣地，如果您選取嵌入在 word 檔中的 excel 試算表，您會收到 word 檔，並嵌入 excel 試算表。 已下載的專案會保留最後一個修改的日期，該日期可以看作是檔案屬性。
+- 匯出名稱：匯出工作的名稱。
 
-若要從審閱集下載內容，請先選取您想要下載的檔案，然後選取 [動作] 功能表中的 [下載]。
+- 描述：可讓您新增描述的自由文字欄位。
 
-![自動產生電腦描述的螢幕擷取畫面](../media/eDiscoDownload.png)
+- 匯出下列檔：
 
-## <a name="export-documents-from-a-review-set"></a>從檢閱集匯出文件
+  - 僅限選取的檔-只匯出目前選取的檔。
+  
+  - 審閱集合中的所有檔-匯出審閱集中的所有檔
 
-匯出功能可讓使用者自訂下載套件所包含的內容。 它會提供具有下列設定的設定頁面：
+- 中繼資料
+  
+  - 載入檔-此檔案包含每個檔案的中繼資料。 如需包含哪些欄位的詳細資訊，請參閱 [Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md) 。 這個檔案通常可由協力廠商的 eDiscovery 工具來 ingested。
+  
+  - 標記-選取時，標籤資訊將會包含在載入檔中。
 
-### <a name="metadata-file"></a>元資料檔案
-
-這可以視為您的「載入檔案」，該檔案包含與匯出之檔案相關聯的中繼資料。 如需元資料檔案中可用的匯出欄位清單，請參閱[Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md)。 這個檔案通常可由協力廠商工具來 ingested。
-
-### <a name="tag-data"></a>標記資料
-
-此內容會新增為元資料檔案中的欄位。 包含所有套用至審查集的標記資訊。
-
-### <a name="text-files"></a>文字檔
-
-可為從審閱集匯出的每個檔案產生文字檔。 這些檔案通常是服務合作夥伴在 ingesting 資料到協力廠商工具的一部分時所需的時間。
-
-### <a name="redacted-files"></a>Redacted 檔案
-
-如果審閱時產生 redacted PDF 檔案，則在匯出期間可使用這些檔案。 您可以決定是否只匯出原生檔案，或將需要密文的原生檔案取代成包含實際密文的 PDF 檔案。
-
-### <a name="export-location"></a>匯出位置
-
-匯出的內容會傳送至 Microsoft 提供的 Azure blob 或客戶的 blob，如果在匯出時提供詳細資料，即可使用。
-
-### <a name="export-structure"></a>匯出結構
-
-從審閱集匯出內容時，會以下列結構組織內容。
-
-  - 根資料夾–下載識別碼
+- 內容
+  
+  - 原生檔案-選取此核取方塊以包含原生檔案。
+  
+  - 交談選項
     
-      - Export\_load\_file .csv = metadata file
+    - 交談檔案-匯出會重新構建聊天訊息。 這種格式會顯示與使用者在原生應用程式中看到的外觀類似的對話。
     
-      - 摘要 .txt = 具有匯出統計資料的摘要檔案
+    - 個別聊天訊息-當原始交談檔案儲存在 Microsoft 365 中時，將其匯出。
+
+- 選項
+
+  - 文字檔-包括解壓縮的原生文字檔版本。
+  
+  - Replace redacted natives with 已轉換的 Pdf-如果審閱時產生 redacted PDF 檔案，這些檔案可供匯出。 您可以選擇只匯出 redacted (的原生檔案，但不要選取此選項) 或選取此選項，即可匯出包含實際密文的 PDF 檔案。
+
+-  (匯出內容的輸出選項可透過網頁瀏覽器直接下載，或是可以傳送至 Azure 儲存體帳戶。 前兩個選項可讓您直接下載。 ) 
+  
+  - 鬆散檔案和 Pst (電子郵件會在可能的情況) 中，以類似使用者在原生應用程式中所看到之原始目錄結構的格式來匯出時，新增至 Pst。  如需詳細資訊，請參閱 [鬆散檔案及 PST 匯出結構](#loose-files-and-pst-export-structure) 一節。
+  
+  - 緊縮的目錄結構-檔會匯出並包含在下載中。
+  
+  - 匯出至您的 Azure 儲存體帳戶的壓縮目錄結構-檔案會匯出至您組織的 Azure Storage accouunt。
+
+## <a name="loose-files-and-pst-export-structure"></a>鬆散檔與 PST 匯出結構
+
+如果您選取此匯出選項，匯出的內容會以下列結構組織：
+
+- 根資料夾–此資料夾命名為 ExportName.zip
+  
+  - Export_load_file.csv 元資料檔案。
+  
+  - Summary.csv-也包含匯出統計資料的摘要檔案。
+  
+  - Exchange-此資料夾包含所有來自 Exchange 的內容，以原生檔案格式。 如果您選取 [ **以轉換的 Pdf 取代 redacted Natives** ] 選項，則 Natives 檔案會取代為 redacted pdf。
+  
+  - SharePoint = 此資料夾包含以原生檔案格式 SharePoint 的所有本機內容。 如果您選取 [ **以轉換的 Pdf 取代 redacted Natives** ] 選項，則 Natives 檔案會取代為 redacted pdf。
+
+## <a name="condensed-directory-structure"></a>緊縮目錄結構
+
+- 根資料夾-此資料夾命名為 ExportName.zip
+  
+  - Export_load_file.csv 元資料檔案。
+  
+  - Summary.txt-也包含匯出統計資料的摘要檔案。
+  
+  - Input_or_native_files-此資料夾包含所有已匯出的原生檔案。 如果您匯出的是 redacted PDF 檔案，則不會放入 PST 檔案。 相反地，它們會新增至分開的資料夾。
+  
+  - Error_files-此資料夾包含下列錯誤檔案（如果它們包含在匯出中）：
     
-      - 輸入\_或原\_生檔案 = 包含所有的原生檔案
+    - ExtractionError. CSV 檔案，其中包含未從父系檔案正確提取之任何可用之檔案的中繼資料。
     
-      - 錯誤\_檔案 = 包含匯出中包含的任何錯誤檔案
-        
-          - ExtractionError –包含未從父系檔案正確提取之任何可用檔案中繼資料的 csv
-        
-          - ProcessingError –具有處理錯誤的內容。 此內容是專案層級的意義。如果附件發生處理錯誤，包含附件的電子郵件將會包含在此資料夾中。
-    
-      - 解壓縮\_的\_文字檔 = 包含處理時所產生的所有解壓縮文字檔。
+    - ProcessingError –此檔案包含含處理錯誤的檔案清單。 此內容屬於專案層級，也就是說，如果附件導致處理錯誤，則包含附件的電子郵件會包含在此資料夾中。
+  
+  - Extracted_text_files-此資料夾包含在處理時所產生的所有解壓縮文字檔。
+
+> [!NOTE]
+> 匯出工作會在案例週期內保留，只要案例並未刪除，就可以下載。

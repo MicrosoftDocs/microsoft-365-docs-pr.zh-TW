@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定連接器，將資料從 Globanet 寬限電子檔探索匯入 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 2d24f2784b07446f529057d9abfc05cf2688be4a
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 86a6595ae12201e5083b524661ef53dba54f8cf3
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361970"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399304"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>設定連接器以封存可寬限電子檔探索資料 (預覽) 
 
@@ -64,7 +64,7 @@ ms.locfileid: "47361970"
 
 ## <a name="step-2-configure-slack-ediscovery"></a>步驟2：設定寬延時間 eDiscovery
 
-第二個步驟是設定 Merge1 網站上的寬延時間 eDiscovery 連接器。 如需如何在 Globanet Merge1 網站中設定時差電子檔探索連接器的詳細資訊，請參閱 [Merge1 Third-Party Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf)。
+第二個步驟是設定 Merge1 網站上的寬延時間 eDiscovery 連接器。 如需如何在 Globanet Merge1 網站上設定時差電子檔探索連接器的詳細資訊，請參閱 [Merge1 Third-Party Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Slack%20eDiscovery%20User%20Guide.pdf)。
 
 在您按一下 **[儲存] & 完成**之後，您會回到 Microsoft 365 規範中心，移至 [連接器] 嚮導中的 [ **使用者對應** ] 頁面。
 

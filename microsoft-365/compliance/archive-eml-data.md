@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定連接器，將 .EML 資料從 Globanet 匯入 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 9a2b473f258973dcbe9cb0e6a155671c80b1f552
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: b27bfdfc9d14495857dadcb4d30b1930d7b90781
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362064"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399150"
 ---
 # <a name="set-up-a-connector-to-archive-eml-data-preview"></a>設定連接器以封存 .EML 資料 (預覽) 
 
@@ -68,7 +68,7 @@ ms.locfileid: "47362064"
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>步驟3：對應使用者並完成連接器設定
 
-若要在 Microsoft 365 規範中心內對應使用者並完成連接器設定，請遵循下列步驟：
+若要對應使用者，並完成 Microsoft 365 規範中心內的連接器設定，請遵循下列步驟：
 
 1. 在 [將 **外部使用者對應至 Microsoft 365 使用者** ] 頁面上，啟用自動使用者對應。 .EML 來源專案包括稱為「 *電子郵件*」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，則將 .EML 專案匯入該使用者的信箱。
 

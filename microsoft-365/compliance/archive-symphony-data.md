@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定連接器，將資料從 Globanet Symphony 匯入 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 29af0cda6d1f6b194c13047382ab7e01b6b200dc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: ccd6676060d48027713203f9fe27e506635af92c
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361794"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399314"
 ---
 # <a name="set-up-a-connector-to-archive-symphony-data-preview"></a>設定連接器以封存 Symphony 資料 (預覽) 
 
@@ -62,13 +62,13 @@ ms.locfileid: "47361794"
 
 ## <a name="configure-the-symphony-connector-on-the-globanet-merge1-site"></a>設定 Globanet Merge1 網站上的 Symphony 連接器
 
-第二個步驟是設定 Merge1 網站上的 Symphony 連接器。 如需在 Globanet Merge1 網站中設定 Symphony 連接器的詳細資訊，請參閱 [Merge1 Third-Party 連接器 User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf)。
+第二個步驟是設定 Merge1 網站上的 Symphony 連接器。 如需在 Globanet Merge1 網站上設定 Symphony 連接器的詳細資訊，請參閱 [Merge1 Third-Party 連接器 User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Symphony%20User%20Guide%20.pdf)。
 
 在您按一下 **[儲存] & 完成**之後，您會傳回 Microsoft 365 規範中心至 [連接器] 嚮導的 [ **使用者對應** ] 頁面。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>步驟3：對應使用者並完成連接器設定
 
-若要在 Microsoft 365 規範中心內對應使用者並完成連接器設定，請遵循下列步驟：
+若要對應使用者，並完成 Microsoft 365 規範中心內的連接器設定，請遵循下列步驟：
 
 1. 在 [將 **外部使用者對應至 Microsoft 365 使用者** ] 頁面上，啟用自動使用者對應。 Symphony 專案包括稱為「 *電子郵件*」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
 

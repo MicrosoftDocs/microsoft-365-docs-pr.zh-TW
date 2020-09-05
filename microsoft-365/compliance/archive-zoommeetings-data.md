@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定連接器，將資料從 Globanet 縮放會議匯入 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 6c040d6955b8b3ef737fdccd648bd5993fc5c135
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: c053137c67276fa76dd84c38e1aca602a0b9c151
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361980"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399140"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>設定連接器以封存「縮放會議」資料 (預覽) 
 
@@ -74,7 +74,7 @@ ms.locfileid: "47361980"
 
 ## <a name="step-2-configure-the-zoom-meetings-connector"></a>步驟2：設定縮放會議連接器
 
-第二個步驟是在 Merge1 網站上設定縮放會議連接器。 如需如何在 Globanet Merge1 網站中設定縮放會議連接器的詳細資訊，請參閱 [Merge1 Third-Party Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)。
+第二個步驟是在 Merge1 網站上設定縮放會議連接器。 如需如何在 Globanet Merge1 網站上設定縮放會議連接器的詳細資訊，請參閱 [Merge1 Third-Party Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Zoom%20Meetings%20User%20Guide%20.pdf)。
 
 在您按一下 **[儲存] & 完成**之後，您會回到 Microsoft 365 規範中心，移至 [連接器] 嚮導中的 [ **使用者對應** ] 頁面。
 
