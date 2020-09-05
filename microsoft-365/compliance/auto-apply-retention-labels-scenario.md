@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 如何使用中繼資料分類內容、自動套用標籤，以及使用事件式保留來啟動保留期間，以便在 SharePoint 中使用保留標籤來管理文件生命週期。
-ms.openlocfilehash: 8aed846c8c95aad737a9dfd56e4df7533e57a329
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: d02c8102dc53f455c5e0620acf1f8a9a7529bf08
+ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778543"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47336688"
 ---
 # <a name="use-retention-labels-to-manage-the-lifecycle-of-documents-stored-in-sharepoint"></a>使用保留標籤來管理儲存在 SharePoint 中的文件生命週期
 
@@ -60,14 +60,14 @@ ms.locfileid: "46778543"
 
 每個產品皆有一個專用的 SharePoint 網站，其中包含一個已啟用正確內容類型的文件庫。 所有文件皆儲存在此文件庫中。
 
-![產品文件的文件庫](../media/SPRetention3.png)
+[![產品文件的文件庫](../media/SPRetention3.png)](../media/SPRetention3.png#lightbox)
 
 > [!NOTE]
 > 在此案例中，製造公司不會對每個產品皆使用一個 SharePoint 網站，而是對每個產品使用一個 Microsoft Team 來支援與小組成員共同作業 (例如，透過常設聊天室)，並使用 Teams 中的 **[檔案]** 索引標籤進行文件管理。 本文只著重於文件，因此我們只會使用網站。
 
 以下是「指尖陀螺」產品文件庫的檢視：
 
-![指尖陀螺文件庫](../media/SPRetention4.png)
+[![指尖陀螺文件庫](../media/SPRetention4.png)](../media/SPRetention4.png#lightbox)
 
 既然我們擁有用於文件管理的基本資訊架構，讓我們來看看對於使用中繼資料之文件的保留和處置策略，以及如何為這些文件分類。
 
@@ -75,7 +75,7 @@ ms.locfileid: "46778543"
 
 製造公司的合規性和資料控管原則會規定資料保留和處置的方式。 產品相關文件必須在產品製造期間保留，並額外保留一段特定時間。 這段額外的時間會因為產品規格、協議和使用者手冊而有所不同。 下表指示保留和處置需求：
 
-| **文件類型**          | **保留**                          | **處置**                              |
+|   文件類型            |   保留                            |   處置                                |
 | -------------------------- | -------------------------------------- | -------------------------------------------- |
 | 產品規格      | 停產後 5 年  | 刪除                                       |
 | 產品協議          | 停產後 10 年 | 檢閱                                       |
@@ -137,8 +137,9 @@ ms.locfileid: "46778543"
    ![新產品規格標籤的設定](../media/SPRetention7.png)
 
 6. 選取 **[建立此標籤]**。 
-> [!TIP]
-> 如需更多詳細步驟，請參閱[建立其保留期間是根據事件的標籤](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event)。
+
+   > [!TIP]
+   > 如需更多詳細步驟，請參閱[建立其保留期間是根據事件的標籤](event-driven-retention.md#step-1-create-a-label-whose-retention-period-is-based-on-an-event)。
 
 現在讓我們來看看如何將保留標籤自動套用至產品規格內容。
 
@@ -183,7 +184,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 若要讓 KQL 查詢將正確的保留標籤自動套用至產品文件內容，我們將編目屬性 **ows\_Doc\_x0020\_Type* 和 *ows\_\_Status** 對應至兩個可精簡搜尋的 Managed 屬性。 此案例的測試環境中並未使用 **RefinableString00** 和 **RefinableString01**。 我們會透過在 SharePont 系統管理中心的 **[管理搜尋結構描述]** 中查看 **[Managed 屬性]** 來判斷。
 
-![搜尋結構描述中的 Managed 屬性](../media/SPRetention12.png)
+[![搜尋結構描述中的 Managed 屬性](../media/SPRetention12.png)](../media/SPRetention12.png#lightbox)
 
 請注意，前面螢幕擷取畫面中 [對應的編目屬性]**** 欄為空白。
 
@@ -199,7 +200,8 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
    在 [對應的編目屬性]**** 區段中，您應該會看到類似以下螢幕擷取畫面的內容：
 
-   ![在 [對應的編目屬性] 區段中選取 [新增對應]](../media/SPRetention13.png)
+   [![在 [對應的編目屬性] 區段中選取 [新增對應]](../media/SPRetention13.png)](../media/SPRetention13.png#lightbox)
+
 
 5. 捲動到頁面底部，然後選取 **[確定]** 以儲存對應。
 
@@ -207,7 +209,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 現在，您應該有兩個 Managed 屬性對應到兩個編目屬性：
 
-![顯示的 Managed 屬性會對應到編目屬性](../media/SPRetention14.png)
+[![顯示的 Managed 屬性會對應到編目屬性](../media/SPRetention14.png)](../media/SPRetention14.png#lightbox)
 
 讓我們執行企業搜尋來驗證設定是否正確。 在瀏覽器中，移至 *https://\<your_tenant>.sharepoint.com/search*。 在搜尋方塊中，輸入 ***RefinableString00:"Product Specification"***，然後按 Enter。 此搜尋應該會傳回 **[產品規格]** 為 ***[文件類型]*** 的所有文件。
 
@@ -219,7 +221,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 1. 在[合規性中心](https://compliance.microsoft.com/homepage)，移至 **[記錄管理]** > ** [標籤原則]** > **[自動套用標籤]**。
 
-   ![在 [標籤] 頁面上選取 [自動套用標籤]](../media/SPRetention16.png)
+   [![在 [標籤] 頁面上選取 [自動套用標籤]](../media/SPRetention16.png)](../media/SPRetention16.png#lightbox)
 
 2. 在 **[選擇要自動套用的標籤]** 精靈頁面上，選取 **[選擇要自動套用的標籤]**。
 
@@ -227,7 +229,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 4. 選取 [將標籤套用到包含特定文字或字詞的內容]****，然後選取 [下一步]****。
 
-   ![選取 [將標籤套用到包含特定字詞、片語或屬性的內容]](../media/SPRetention17.png)
+   [![選取 [將標籤套用到包含特定字詞、片語或屬性的內容]](../media/SPRetention17.png)](../media/SPRetention17.png#lightbox)
 
    在下一個步驟中，您將提供上一節中測試的相同 KQL 搜尋查詢。 此查詢會傳回狀態為 *[完稿]* 的所有產品規格文件。 在標籤原則中使用這個相同的查詢時，產品規格保留標籤將會自動套用至符合的所有文件。
 
@@ -259,11 +261,11 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 此外，查看文件庫中文件的屬性。 在資訊面板中，您可以看到保留標籤已套用至所選的文件。
 
-![查看文件庫中的文件屬性，驗證已套用標籤](../media/SPRetention21.png)
+[![查看文件庫中的文件屬性，驗證已套用標籤](../media/SPRetention21.png)](../media/SPRetention21.png#lightbox)
 
 由於保留標籤已自動套用至文件，因此可以保護文件免遭刪除，因為保留標籤已設定為將文件宣告為*記錄*。 舉例來說，當我們嘗試刪除其中一個文件時，會收到下列錯誤訊息：
 
-![錯誤訊息顯示因為標籤宣告文件為記錄而無法刪除這些文件。](../media/SPRetention22.png)
+[![錯誤訊息顯示因為標籤宣告文件為記錄而無法刪除這些文件。](../media/SPRetention22.png)](../media/SPRetention22.png#lightbox)
 
 ## <a name="generate-the-event-that-triggers-the-retention-period"></a>產生觸發保留期間的事件
 
@@ -275,13 +277,13 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 下列螢幕擷取畫面顯示將用於觸發事件的 SharePoint 清單：
 
-![將觸發保留事件的清單](../media/SPRetention23.png)
+[![將觸發保留事件的清單](../media/SPRetention23.png)](../media/SPRetention23.png#lightbox)
 
 目前有兩種產品投入生產，如從 **[生產中]** 欄的 ***[是]*** 值所示。 當某產品此欄的值設為 ***[否]*** 時，與清單相關聯的流程會自動產生事件。 此事件會觸發開始自動套用到對應產品文件的保留標籤保留期間。
 
 在此案例中，我們使用下列流程來觸發事件：
 
-![設定將觸發事件的流程](../media/SPRetention24.png)
+[![設定將觸發事件的流程](../media/SPRetention24.png)](../media/SPRetention24.png#lightbox)
 
 若要建立此流程，請從 SharePoint 連接器開始，並選取 [建立或修改項目時]**** 觸發程序。 指定網站位址和清單名稱。 然後，根據 **[生產中]** 清單欄值是否設定為 ***[否]*** (或在條件卡片中等於 *false*) 來新增條件。 然後根據內建的 HTTP 範本新增動作。 使用下一節中的值來設定 HTTP 動作。 您可以從下一節複製 **URI** 和 **Body** 屬性的值，然後將其貼到範本中。
 
@@ -290,7 +292,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 - **標頭**：Key = Content-Type, Value = application/atom+xml
 - **本文**：
     
-    ```HTML
+    ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'>
     <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices' xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata' xmlns='https://www.w3.org/2005/Atom'>
     <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent'>
@@ -312,7 +314,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 - **EventType**：此參數值與建立的事件將套用的事件類型相對應。 建立保留標籤時，便會定義此事件類型。 在此案例中，事件類型為「停產」。
 - **SharePointAssetIdQuery**：此參數定義事件的資產識別碼。 事件型保留需要文件的唯一識別碼。 我們可以使用資產識別碼來識別特定事件適用的文件，或者如同此案例，使用 **[產品名稱]** 中繼資料欄來識別。 若要這麼做，我們需要建立可在 KQL 查詢中使用的新 **ProductName** Managed 屬性  (或者，我們可以使用 **RefinableString00**，而不是建立新的 Managed 屬性)。 我們也需要將這個新的 Managed 屬性對應至 **ows_Product_x0020_Name** 編目屬性。 以下是此 Managed 屬性的螢幕擷取畫面。
 
-    ![保留 Managed 屬性](../media/SPRetention25.png)
+    [![保留 Managed 屬性](../media/SPRetention25.png)](../media/SPRetention25.png#lightbox)
 
 - **EventDateTime**：此參數定義事件發生的日期。 使用目前的日期格式：<br/><br/>*formatDateTime(utcNow(),'yyyy-MM-dd'*)
 
@@ -320,7 +322,7 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 現在已經建立並自動套用保留標籤，並設定及建立流程。 當 [產品] 清單中「旋轉小工具」產品的 **[生產中]** 欄中的值從 ***[是]*** 變更為 ***[否]*** 時，會觸發流程來建立事件。 若要在合規性中心查看此事件，請移至 **[記錄管理]** > **[事件]**。
 
-![流程所觸發的事件會顯示在合規性中心的 [事件] 頁面上。](../media/SPRetention28.png)
+[![流程所觸發的事件會顯示在合規性中心的 [事件] 頁面上。](../media/SPRetention28.png)](../media/SPRetention28.png#lightbox)
 
 選取事件以便在飛出頁面上檢視詳細資料。 請注意，即使已建立事件，事件狀態仍會顯示未處理任何 SharePoint 網站或文件。
 
@@ -340,16 +342,10 @@ KQL 無法在搜尋查詢中使用編目屬性。 而必須使用受管理的屬
 
 如以下螢幕擷取畫面所示，資產識別碼 Managed 屬性稱為 **ComplianceAssetId**。
 
-![ComplianceAssetId Managed 屬性](../media/SPRetention27.png)
+[![ComplianceAssetId Managed 屬性](../media/SPRetention27.png)](../media/SPRetention27.png#lightbox)
 
 您可以使用其他任何屬性，而不是使用預設的 **[資產識別碼]** 屬性，如同此案例的做法。 但請務必了解，如果您沒有為事件指定資產識別碼或關鍵字，具有該事件類型標籤的所有內容都將由該事件觸發其保留期間。
 
 ### <a name="using-advanced-search-in-sharepoint"></a>在 SharePoint 中使用進階搜尋
 
 在前面的螢幕擷取畫面中，您可以看到有另一個與保留標籤相關的 Managed 屬性，稱為 **ComplianceTag**，並對應到編目屬性。 **ComplianceAssetId** Managed 屬性也會對應到編目屬性。 這表示您可以在進階搜尋中使用這些 Managed 屬性來擷取所有已使用保留標籤標記的文件。
-
-## <a name="credits"></a>參與名單
-
-此案例的作者： 
-
-Frederic Lapierre<br/>Microsoft 服務首席顧問

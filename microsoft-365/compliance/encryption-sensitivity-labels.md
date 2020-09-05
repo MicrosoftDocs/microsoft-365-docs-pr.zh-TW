@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae9131b4cd70cfca4cc32116a651bf4642ed94f1
-ms.sourcegitcommit: c4a7b227f7d9abd666dfb93e3ded78ba8288e649
+ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
+ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229433"
+ms.lasthandoff: 09/02/2020
+ms.locfileid: "47334856"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -208,12 +208,12 @@ ms.locfileid: "45229433"
 
 如需詳細資訊，請參閱 [Rights Management 簽發者和 Rights Management 擁有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)。
 
-### <a name="double-key-encryption"></a>雙重金鑰加密
+### <a name="double-key-encryption"></a>雙金鑰加密
 
 > [!NOTE]
-> 此功能目前正於公開預覽中推出。 如需詳細資訊，請參閱[宣佈 Microsoft 365 雙重金鑰加密的公開預覽](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451)。
+> 此功能目前處於公開預覽階段。 如需詳細資訊，請參閱[宣佈 Microsoft 365 雙重金鑰加密的公開預覽](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451)。
 
-只有在您設定雙重金鑰加密服務之後，且需要針對將套用此標籤的文件和電子郵件使用此雙重金鑰加密，再選取這個選項。
+只有在您設定雙重金鑰加密服務之後，且需要針對將套用此標籤的檔案和電子郵件使用此雙重金鑰加密，再選取這個選項。
 
 如需詳細資訊、先決條件及設定指示，請參閱[雙金鑰加密 (DKE)](double-key-encryption.md)。
 
