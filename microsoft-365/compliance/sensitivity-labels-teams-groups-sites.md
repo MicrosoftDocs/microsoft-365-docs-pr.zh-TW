@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: ecc84196435125c83ff9518c2758e3f2611427b3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: d0ac249483d888b76915e98429b72da88884e135
+ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307792"
+ms.lasthandoff: 09/03/2020
+ms.locfileid: "47357785"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -32,7 +32,10 @@ ms.locfileid: "47307792"
 
 - Microsoft 365 群組連線小組網站的隱私權 (公開或私人)
 - 外部使用者存取
-- 從未受控裝置存取
+- 從未受管理的裝置存取
+
+> [!IMPORTANT]
+> **從未受管理的裝置存取** 設定可與 SharePoint 功能搭配使用以進行[從未受管理的裝置控制存取](/sharepoint/control-access-from-unmanaged-devices)。 您必須為您的租使用者設定這個相關的 SharePoint 功能，以使用已設定此設定的敏感度標籤。 下列指示中包含其他資訊。
 
 當您將此敏感度標籤套用至支援的容器時，標籤會自動將分類和保護設定套用至連線的網站或群組。
 
@@ -83,7 +86,13 @@ ms.locfileid: "47307792"
 
 - **外部使用者存取**：控制群組擁有者是否可以[將來賓新增至群組](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
-- **未受管理的裝置**：針對[未受管理的裝置](/sharepoint/control-access-from-unmanaged-devices)，允許完全存取、僅限 Web 存取，或完全封鎖存取權。 如果您已在租用戶層級或特定網站上設定此設定，則僅在限制性更強的情況下才會套用此處指定的設定。
+- **未受管理的裝置**：針對此選項，您也必須設定使用 Azure AD 條件式存取的 SharePoint 功能，以封鎖或限制存取未受管理裝置的 SharePoint 和 OneDrive 內容。 如需指示，請參閱[從未受管理的裝置控制存取](/sharepoint/control-access-from-unmanaged-devices)。 您為這個標籤設定所指定的選項，相當於 [封鎖或限制特定 SharePoint 網站或 OneDrive 的存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)。
+    
+    如果您未設定相關的 SharePoint 功能，您在此處指定的選項將不會產生任何影響。 此外，如果其限制低於租使用者層級所設定的設定，則不會產生任何影響。 選擇與租使用者層級設定相同或具有更多限制的標籤設定。
+    
+    例如，如果您的租使用者設定為 **允許有限的、僅限網頁存取**，則允許完全存取的標籤設定將不會產生任何影響，因為其限制較少。 針對此租使用者層級設定，請選擇標籤設定，以封鎖存取 {具有更多限制} 或限制存取 (與租使用者設定相同) 的標籤設定。
+    
+    由於您可以在標籤設定外獨立設定 SharePoint 功能，因此在敏感度標籤精靈中依存關係部分不會顯示為勾選。
 
 ![網站和群組設定索引標籤](../media/edit-sensitivity-label-site-group2.png)
 
@@ -272,7 +281,7 @@ ms.locfileid: "47307792"
   - Yammer
   - Planner
   - Project
-  - PowerBI
+  - Power BI
 
 ## <a name="classic-azure-ad-group-classification"></a>傳統 Azure AD 群組分類
 
