@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: 適用於系統管理員和 IT 專業人員的 Microsoft 365 說明中心
-summary: 探索 Microsoft 365 說明與訓練資源。
+title: Microsoft 365 文件
+summary: 為您的企業或組織找到開始使用 Microsoft 365 所需的解決方案、案例和資源。
 brand: m365
 metadata:
-  title: 適用於系統管理員和 IT 專業人員的 Microsoft 365 說明中心
-  description: 設定、部署及管理 Microsoft 365 以支援貴組織、小型企業、行銷活動或教育者與學生
+  title: Microsoft 365 文件
+  description: 為您的企業或組織找到開始使用 Microsoft 365 所需的解決方案、案例和資源。
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.topic: hub-page
@@ -13,61 +13,241 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: a7d2dfe479d51d67c526dbe1bed2bc3dc5c56546
-  ms.sourcegitcommit: 7f765670cb6970fdf7ddbad464ed3f8fe704bfaf
+  ms.openlocfilehash: 2f414fe4556735a367bab9f08d8496f48843cb9e
+  ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 06/27/2020
-  ms.locfileid: "44909285"
+  ms.lasthandoff: 09/04/2020
+  ms.locfileid: "47399108"
 highlightedContent:
   items:
-  - title: 適用於系統管理員和 IT 專業人員的訓練
-    itemType: learn
-    url: https://docs.microsoft.com/learn/m365/
-  - title: 適用於終端使用者的訓練
-    itemType: learn
-    url: https://support.office.com/modernworkplace
-  - title: 在雲端中設立您的公司
-    itemType: learn
-    url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
-  - title: 適用於 IT 專業人員的測試實驗室指南
+  - title: 強化遠端工作人員
     itemType: how-to-guide
-    url: ./enterprise/m365-enterprise-test-lab-guides.md
-  - title: Microsoft 365 技術社群
+    url: solutions/empower-people-to-work-remotely.md
+  - title: 使用 Microsoft Teams 遠端學習
     itemType: get-started
-    url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
-  - title: 適用於開發人員的資源
-    itemType: reference
-    url: https://developer.microsoft.com/microsoft-365
+    url: /MicrosoftTeams/remote-learning-edu
+  - title: 使用 Microsoft Learn 培養您的技能
+    itemType: learn
+    url: /learn/m365/
+  - title: 使用 Microsoft 365 開始建立您的小型企業
+    itemType: quickstart
+    url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+productDirectory:
+  title: Microsoft 365 解決方案和案例
+  items:
+  - title: Microsoft 365 解決方案
+    imageSrc: https://docs.microsoft.com/office/media/icons/secure-document-blue.svg
+    links:
+    - url: solutions/empower-people-to-work-remotely.md
+      text: 強化遠端工作人員
+    - url: solutions/setup-secure-collaboration-with-teams.md
+      text: 設定安全的共同作業
+    - url: solutions/deploy-threat-protection.md
+      text: 部署威脅防護
+    - url: solutions/information-protection-deploy.md
+      text: 為資料隱私權規定部署資訊保護
+    - url: campaigns/index.md
+      text: 適用於行銷活動的 Microsoft 365 (適用于所有小型企業的安全性指導方針)
+  - title: 會面與通訊
+    imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
+    links:
+    - url: /MicrosoftTeams/quick-start-meetings-live-events
+      text: Microsoft Teams 中的會議和即時活動
+    - url: /MicrosoftTeams/business-voice/whats-business-voice
+      text: Microsoft 365 商務語音
+    - url: /MicrosoftTeams/cloud-voice-landing-page
+      text: Microsoft Teams 的 [雲端語音]
+    - url: /SkypeForBusiness/hybrid/msft-telephony-solutions
+      text: Microsoft 電話語音解決方案
+  - title: 與您的團隊共同作業
+    imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
+    links:
+    - url: solutions/collaborate-with-people-outside-your-organization.md
+      text: 設定外部共用
+    - url: /sharepoint/plan-intranet
+      text: 規劃智慧型 SharePoint 內部網路
+    - url: /sharepoint/deploy-file-collaboration
+      text: SharePoint 中的檔案共同作業
+    - url: /onedrive/plan-onedrive-enterprise
+      text: 適用於企業的 OneDrive 指南
+  - title: 架構資源
+    imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
+    links:
+    - url: solutions/productivity-illustrations.md
+      text: Microsoft 365 生產力圖例
+    - url: solutions/cloud-architecture-models.md
+      text: Microsoft 雲端架構模式
+    - url: solutions/design-principles.md
+      text: 企業架構設計原則
+  - title: 保護您的組織
+    imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
+    links:
+    - url: security/top-security-tasks-for-remote-work.md
+      text: 安全性團隊支援在家工作的最常見工作
+    - url: solutions/configure-teams-three-tiers-protection.md
+      text: 使用 Microsoft Teams 的三層保護
+    - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
+      text: 部署 Microsoft Defender 進階威脅防護
+    - url: security/office-365-security/office-365-atp.md
+      text: 部屬 Office 365 進階威脅防護
+    - url: enterprise/microsoft-365-policies-configurations.md
+      text: 設定身分識別和裝置存取防護
+  - title: 保護您的資訊並遵守法規
+    imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
+    links:
+    - url: compliance/compliance-quick-tasks.md
+      text: 開始使用 Microsoft 365 合規性的快速工作
+    - url: compliance/protect-information.md
+      text: 管理資訊保護
+    - url: compliance/manage-information-governance.md
+      text: 管理資訊控管
+    - url: compliance/overview-data-investigations.md
+      text: 管理內部和外部調查
+    - url: compliance/insider-risk-management.md
+      text: 管理測試人員風險
+  - title: 部署及管理您的桌面和裝置
+    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+    links:
+    - url: /DeployOffice/plan-microsoft-365-apps
+      text: 部署 Microsoft 365 Apps
+    - url: /windows/deployment/
+      text: 部署 Windows 10
+    - url: /microsoft-365/managed-desktop/
+      text: Microsoft 受管理的電腦
+    - url: /mem/intune/fundamentals/what-is-intune
+      text: 使用 Microsoft Intune 來進行裝置管理
+  - title: 移轉至 Microsoft 365
+    imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+    links:
+    - url: /MicrosoftTeams/journey-skypeforbusiness-teams
+      text: 移轉至 Microsoft Teams
+    - url: /sharepointmigration/migrate-to-sharepoint-online
+      text: 將您的內容移轉至 SharePoint、OneDrive 和 Teams
+    - url: /Exchange/mailbox-migration/mailbox-migration
+      text: 將多個電子郵件帳戶移轉到 Microsoft 365
+  - title: 產業專屬的解決方案和案例
+    imageSrc: https://docs.microsoft.com/office/media/icons/on-premises-blue.svg
+    links:
+    - url: solutions/financial-services-secure-collaboration.md
+      text: 金融服務的安全性與合規性
+    - url: solutions/energy-secure-collaboration.md
+      text: 能源與公用事業服務的安全性與合規性
+    - url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+      text: 適用於醫療保健組織的 Teams
+    - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page
+      text: 適用於教育的 Teams
+    - url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page
+      text: 適用於政府機關的 Teams
+    - url: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams
+      text: 支援使用 Microsoft Teams 的遠端政府工作者
 additionalContent:
   sections:
-  - title: 取得 Microsof 365 的說明
-    summary: 選取卡片以深入了解 Microsoft 365。
+  - title: 所有應用程式和服務
+    summary: Microsoft 365 中所包含的全部應用程式和產品的文件。
     items:
-    - title: Microsoft 365 系統管理中心
+    - title: Microsoft 365
       summary: 為您的組織設定及管理 Microsoft 365 服務。
-      url: ./admin/index.yml
-    - title: Microsoft 365 商務進階版
-      summary: 專為中小型企業設計。 使用最新版本的 Windows 和 Office App (例如 Excel 和 Outlook) 處理業務。 利用可延伸至所有商務裝置的資料保護和安全性。
-      url: ./business/index.yml
-    - title: Microsoft 365 企業版
-      summary: 專為大型組織設計。 保護您的企業並轉變您使用 Office App、Windows 10 及 Enterprise Mobility + Security 的方式。
-      url: ./enterprise/index.yml
-    - title: Microsoft 365 解決方案與架構中心
-      summary: 了解如何設計適合組織的解決方案與架構。
-      url: ./solutions/index.yml
-    - title: Microsoft 365 教育版
-      summary: 專為授課者設計，以為教育打造之單一且價格合理的教育解決方案中來解放創意、提升團隊合作，並提供簡單且安全的體驗。
-      url: https://docs.microsoft.com/education/
-    - title: Microsoft 365 合規性
-      summary: 協助貴組織管理資訊、防範風險，並遵守法務或法規標準。
-      url: ./compliance/index.yml
-    - title: Microsoft 365 安全性
-      summary: 了解 Microsoft 365 安全性中強大的安全性解決方案與服務，讓您能夠更進一步全方面保護組織免受攻擊。
-      url: ./security/index.yml
-    - title: 適用於行銷活動的 Microsoft 365
-      summary: 使用針對商務用 Microsoft 365 建議的組態，保持行銷活動或商務資料和通訊的安全。
-      url: ./campaigns/index.md
-    - title: Microsoft 受管理的電腦
-      summary: Microsoft 受管理的電腦將 Microsoft 365企業版、Microsoft 雲端式裝置管理和安全監控結合在一起，使您的 IT 團隊有時間得以專注於核心業務需求。
-      url: ./managed-desktop/index.yml
+      links:
+      - text: Microsoft 365 系統管理中心
+        url: admin/index.yml
+      - text: Microsoft 365 商務進階版
+        url: business/index.yml
+      - text: Microsoft 365 企業版
+        url: enterprise/index.yml
+      - text: Microsoft 365 合規性
+        url: compliance/index.yml
+      - text: Microsoft 365 安全性
+        url: security/index.yml
+      - text: Microsoft 受管理的電腦
+        url: managed-desktop/index.yml
+      - text: 疑難排解及支援
+        url: /office/troubleshoot
+    - title: Microsoft Teams
+      links:
+      - text: 系統管理文件
+        url: /MicrosoftTeams/Teams-overview
+      - text: Teams 中的安全性與合規性
+        url: /MicrosoftTeams/security-compliance-overview
+      - text: 從商務用 Skype 升級至 Teams
+        url: /MicrosoftTeams/journey-skypeforbusiness-teams
+      - text: 更多 >
+        url: /MicrosoftTeams
+    - title: 部署 Office
+      links:
+      - text: Microsoft 365 Apps
+        url: /DeployOffice/plan-microsoft-365-apps
+      - text: Mac 版 Office
+        url: /DeployOffice/mac
+      - text: Office 2019
+        url: /DeployOffice/office2019
+      - text: 更多 >
+        url: /DeployOffice
+    - title: SharePoint
+      links:
+      - text: SharePoint Online
+        url: /sharepoint/sharepoint-online
+      - text: SharePoint Server
+        url: /sharepoint/sharepoint-server
+      - text: 混合式
+        url: /sharepoint/hybrid/hybrid
+      - text: 適用於 SharePoint 的 PowerShell 參考
+        url: /powershell/sharepoint
+      - text: 更多 >
+        url: /sharepoint
+    - title: OneDrive
+      links:
+      - text: 規劃、部署及管理
+        url: /onedrive/onedrive
+      - text: 更多 OneDrive >
+        url: /onedrive
+    - title: Outlook 和 Exchange
+      links:
+      - text: iOS 和 Android 版 Outlook
+        url: https://resources.techcommunity.microsoft.com/outlook-mobile-adoption/
+      - text: Exchange Online
+        url: /Exchange/exchange-online
+      - text: 更多 Exchange >
+        url: /Exchange
+    - title: Planner 和 Project
+      links:
+      - text: Planner 系統管理說明
+        url: /office365/planner/planner-admin-home
+      - text: Project 網頁版
+        url: /project-for-the-web/projectforweb-admin-home
+      - text: 更多 Project >
+        url: /Project
+    - title: Yammer
+      links:
+      - text: 系統管理說明
+        url: /yammer/yammer-landing-page
+    - title: Kaizala
+      links:
+      - text: 入門
+        url: /Kaizala
+    - title: Microsoft Stream
+      links:
+      - text: 說明文件
+        url: /stream/
+    - title: 商務用 Skype
+      links:
+      - text: IT 專業人員文件
+        url: /skypeforbusiness
+    - title: Office Online Server
+      links:
+      - text: 入門
+        url: /officeonlineserver
+  - title: 相關的指導方針與資源
+    items:
+    - title: 開發人員
+      summary: 在 [Microsoft 365 開發人員中心] 尋找適用於開發人員的教學課程、參考資料及其他資源。
+      url: https://developer.microsoft.com/microsoft-365
+    - title: 終端使用者
+      summary: 在 support.microsoft.com 上尋找適用於 Microsoft 365 使用者的訓練、操作說明及說明內容。
+      url: https://support.microsoft.com/microsoft-365
+    - title: 教育者
+      summary: 瞭解如何使用 Microsoft 365 教育版，輕鬆地開展創新、促進團隊合作，並擁有安全且簡單的體驗。
+      url: /education
+    - title: '[技術] 社群'
+      summary: 加入 Microsoft 365 [技術] 社群，以交流體驗、接洽並向專家學習。
+      url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
