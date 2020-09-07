@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計畫為保留標籤提供進階管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 96150005421f6c2e28183c6e4417edd64b80a814
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: eb35915861c08588fab309210a49585a49d1b9da
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126876"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399210"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用檔案計畫來管理保留標籤
 
@@ -108,11 +108,11 @@ ms.locfileid: "45126876"
 
 建立或編輯保留標籤時，檔案計畫描述元的範例：
 
-![檔案計畫描述元](../media/file-plan-descriptors.png)
+![建立或編輯保留標籤時的檔案計畫描述元](../media/file-plan-descriptors.png)
 
 檔案計畫描述元欄的範例檢視：
 
-![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
+![檔案計畫描述元欄](../media/file-plan-descriptors-on-labels-tab.png)
 
 ## <a name="export-all-retention-labels-to-analyze-or-enable-offline-reviews"></a>匯出所有保留標籤以分析或啟用離線檢閱
 

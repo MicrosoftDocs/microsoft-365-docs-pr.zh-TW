@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留功能在 SharePoint 以及 OneDrive 中的運作方式。
-ms.openlocfilehash: 3c1b2564b0ba9d96d22ab9d3b78da500b54363e2
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: da700c72a03bad85310be8807bf94e54ec6a4048
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315786"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394700"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>瞭解 SharePoint 和 OneDrive 的保留功能
 
@@ -98,4 +98,9 @@ ms.locfileid: "47315786"
 
 ## <a name="configuration-guidance"></a>配置指導方針
 
-如果您已準備好在 Microsoft 365 中設定保留，請參閱 [開始使用保留原則及保留標籤](get-started-with-retention.md)。
+如果您才剛開始在 Microsoft 365 中進行設定保留，請參閱 [開始使用保留原則及保留標籤](get-started-with-retention.md)。
+
+如果您已準備好設定 Exchange 的保留原則或保留標籤，請參閱下列指示:
+- [建立及設定保留原則](create-retention-policies.md)
+- [建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)
+- [自動將保留標籤套用到內容](apply-retention-labels-automatically.md)

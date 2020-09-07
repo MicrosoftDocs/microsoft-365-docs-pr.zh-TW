@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解 Exchange 保留的運作方式。
-ms.openlocfilehash: e1860b9ff9c521a5a6a61c58d822a2a893570e99
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: e12f46b68feb4b64ade14cfb046061d89e1a607c
+ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127440"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47394710"
 ---
 # <a name="learn-about-retention-for-exchange"></a>了解 Exchange 的保留
 
@@ -70,4 +70,9 @@ ms.locfileid: "45127440"
 
 ## <a name="configuration-guidance"></a>配置指導方針
 
-如果您已準備好在 Microsoft 365 中設定保留，請參閱 [開始使用保留原則及保留標籤](get-started-with-retention.md)。
+如果您才剛開始在 Microsoft 365 中進行設定保留，請參閱 [開始使用保留原則及保留標籤](get-started-with-retention.md)。
+
+如果您已準備好設定 Exchange 的保留原則或保留標籤，請參閱下列指示:
+- [建立及設定保留原則](create-retention-policies.md)
+- [建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)
+- [自動將保留標籤套用到內容](apply-retention-labels-automatically.md)

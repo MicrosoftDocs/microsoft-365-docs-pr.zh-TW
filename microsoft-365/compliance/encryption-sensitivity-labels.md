@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc7f1e181fcc2ffda6cd9b36596c164f49d23452
-ms.sourcegitcommit: 6ad2e4164ed59d5a58a0df9cb8413531c1be0986
+ms.openlocfilehash: e3604518be47e35590792689c46bb036cbeb8965
+ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47334856"
+ms.lasthandoff: 09/04/2020
+ms.locfileid: "47399262"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
 
@@ -170,11 +170,11 @@ ms.locfileid: "47334856"
 
 最佳做法是使用群組，而非使用者。此策略可讓您保持更簡單的組態。
 
-##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>**新增任何已驗證使用者**的需求與限制
+##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>「新增任何已驗證使用者」的需求與限制
 
 此設定不會限制能夠存取標籤所加密內容的人員，同時仍會加密內容，並提供限制內容使用方式 (權限) 和存取方式 (到期和離線存取) 的選項。 不過，開啟加密內容的應用程式必須能夠支援所使用的驗證。 因此，同盟社交提供者 (例如 Google) 和一次性密碼驗證僅對電子郵件有效，且僅在您使用 Exchange Online 時才有效。 您可以將 Microsoft 帳戶與 Office 365 應用程式和 [Azure 資訊保護檢視器](https://portal.azurerms.com/#/download)搭配使用。
 
-任何已驗證使用者設定的一些典型案例如下：
+任何已驗證使用者設定的某些典型案例如下:
 - 您不在意檢視內容的是誰，但想要限制其使用方式。 例如，您不希望編輯、複製或列印內容。
 - 您不需要限制存取內容的是誰，但想要能夠確認誰開啟了該內容。
 - 您必須將靜態內容和在傳輸中的內容加密，但不要求存取控制。
@@ -213,7 +213,7 @@ ms.locfileid: "47334856"
 > [!NOTE]
 > 此功能目前處於公開預覽階段。 如需詳細資訊，請參閱[宣佈 Microsoft 365 雙重金鑰加密的公開預覽](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451)。
 
-只有在您設定雙重金鑰加密服務之後，且需要針對將套用此標籤的檔案和電子郵件使用此雙重金鑰加密，再選取這個選項。
+只有在您設定 [雙重金鑰加密] 服務之後，且需要針對將套用此標籤的檔案使用此雙重金鑰加密時，再選取這個選項。
 
 如需詳細資訊、先決條件及設定指示，請參閱[雙金鑰加密 (DKE)](double-key-encryption.md)。
 

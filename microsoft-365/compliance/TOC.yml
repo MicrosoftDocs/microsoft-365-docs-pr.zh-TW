@@ -548,10 +548,10 @@
         - name: 匯出案例資料
           href: exporting-data-ediscover20.md
           items:
+            - name: 從檢閱集下載文件
+              href: download-documents-from-review-set.md
             - name: 從檢閱集匯出文件
               href: export-documents-from-review-set.md
-            - name: 下載匯出工作
-              href: download-export-jobs.md
         - name: 管理工作
           href: managing-jobs-ediscovery20.md
         - name: 設定案例設定
