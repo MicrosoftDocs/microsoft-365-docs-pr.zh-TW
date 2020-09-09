@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理員可以設定連接器，以在 Microsoft 365 中從 Globanet 的 Webex 小組連接器匯入及封存資料。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 65a0f6eb6e3b7d3e7147cc3eaf96212d75d687c0
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: c345edd3a560fff3818cdc7a52ad04e03279f339
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399404"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405442"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data-preview"></a>設定連接器以封存 Webex 小組資料 (預覽) 
 
@@ -26,7 +26,7 @@ ms.locfileid: "47399404"
 
 在將 Webex 小組資料儲存在使用者信箱之後，您可以套用 Microsoft 365 合規性功能，例如訴訟暫止、eDiscovery、保留原則和保留標籤，以及通訊法規遵從性。 使用 Webex 小組連接器來匯入和封存 Microsoft 365 中的資料，可協助您的組織遵守政府和法規原則。
 
-## <a name="overview-of-archiving-webex-teams"></a>封存 Webex 小組的概況
+## <a name="overview-of-archiving-webex-teams-data"></a>封存 Webex 小組資料的概覽
 
 下列概要說明如何使用連接器將 Microsoft 365 中的 Webex 小組資料封存。
 
@@ -40,9 +40,9 @@ ms.locfileid: "47399404"
 
 4. 連接器會使用自動使用者對應的 *電子郵件* 屬性值，將專案匯入至特定使用者的信箱，如 [步驟 3](#step-3-map-users-and-complete-the-connector-setup)所述。 在使用者信箱中，會建立名為 **Webex 小組** 收件匣資料夾中的子資料夾，並將這些專案匯入該資料夾。 連接器會使用 *Email* 屬性的值來執行此動作。 每個 Webex 團隊專案都包含此屬性，其會填入專案的每個參與者的電子郵件地址。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
-- 透過接受 Webex 小組連接器的條款及條件來建立 Globanet Merge1 帳戶。 若要這麼做，請與 [Globanet 客戶支援](https://globanet.com/contact-us)部門聯繫。 當您在步驟1中建立連接器時，您必須登入此帳戶。
+- 為 Microsoft connector 建立 Globanet Merge1 帳戶。 若要這麼做，請與 [Globanet 客戶支援](https://globanet.com/ms-connectors-contact)部門聯繫。 當您在步驟1中建立連接器時，您必須登入此帳戶。
 
 - 在中建立應用程式 [https://developer.webex.com/](https://developer.webex.com) ，以從 Webex 小群組帳戶提取資料。 如需建立應用程式的逐步指示，請參閱[Merge1 Third-Party Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf) 。
 

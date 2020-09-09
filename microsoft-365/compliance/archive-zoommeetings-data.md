@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定連接器，將資料從 Globanet 縮放會議匯入 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: c053137c67276fa76dd84c38e1aca602a0b9c151
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 6b2f5f0b61eb2d569ad49d8f58c7e03d11cdbca0
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399140"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405494"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>設定連接器以封存「縮放會議」資料 (預覽) 
 
@@ -40,9 +40,9 @@ ms.locfileid: "47399140"
 
 4. 連接器會使用 *電子郵件* 屬性和自動使用者對應的值，將已轉換的會議專案匯入到特定使用者的信箱，如步驟3所述。 在使用者信箱中建立名為「 **縮放會議** 」的 [收件匣] 資料夾中的新子資料夾，並將會議專案匯入該資料夾。 連接器會使用 *Email* 屬性的值來執行此動作。 每個會議專案都包含此屬性，其會填入會議每個參與者的電子郵件地址。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
-- 透過接受時差電子檔探索連接器的條款及條件來建立 Globanet Merge1 帳戶。 若要這麼做，請與 [Globanet 客戶支援](https://globanet.com/contact-us)部門聯繫。 當您在步驟1中建立連接器時，您必須登入此帳戶。
+- 為 Microsoft connector 建立 Globanet Merge1 帳戶。 若要這麼做，請與 [Globanet 客戶支援](https://globanet.com/ms-connectors-contact)部門聯繫。 當您在步驟1中建立連接器時，您必須登入此帳戶。
 
 - 取得組織的「縮放商務」或「縮放企業」企業帳戶的使用者名稱和密碼。 當您設定縮放會議連接器時，您必須在步驟2中登入此帳戶。
 

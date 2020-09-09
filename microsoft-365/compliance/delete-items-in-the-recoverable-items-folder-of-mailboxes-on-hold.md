@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 瞭解系統管理員如何刪除 Exchange Online 信箱之使用者的 [可復原的專案] 資料夾中的專案，即使該信箱位於法律封存中也一樣。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 52cfe237bb05bc151058a41914af5725bdacee18
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321960"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405464"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>刪除雲端式信箱中可復原的項目資料夾中的保留項目
 
@@ -288,11 +288,11 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
 
    - **DiscoveryHolds**：包含已由 eDiscovery 保留或保留原則所保留的實刪除專案。 使用者看不到這個子資料夾。
 
-   - **SubstrateHolds**：包含已由保留原則或其他類型保留所保留的來自小組和其他雲端式應用程式的實刪除專案。使用者看不到這個子資料夾。
+   - **SubstrateHolds**：包含已由保留原則或其他類型保留所保留的來自小組和其他雲端式應用程式的實刪除專案。 使用者看不到這個子資料夾。
 
 3. 使用 **New-ComplianceSearch** Cmdlet (在安全性 & 規範中心 PowerShell) 或使用規範中心的內容搜尋工具，建立從目標使用者的 [可復原的專案] 資料夾中傳回專案的內容搜尋。 若要執行此動作，您可以在要搜尋的所有子資料夾中，加入搜尋查詢中的 FolderId。 例如，下列查詢會傳回清除和 eDiscoveryHolds 子資料夾中的所有郵件：
 
-   ```powershell
+   ```text
    folderid:<folder ID of Purges subfolder> OR folderid:<folder ID of DiscoveryHolds subfolder>
    ```
 
@@ -307,8 +307,15 @@ Set-Mailbox <username> -RemoveDelayReleaseHoldApplied
    New-ComplianceSearchAction -SearchName "RecoverableItems" -Purge -PurgeType HardDelete
    ```
 
-   > [!NOTE]
-   > 當您執行先前的命令時，每個信箱 (最多10個專案) 會被刪除。 這表示您必須多次執行命令， `New-ComplianceSearchAction -Purge` 才能刪除 [可復原的專案] 資料夾中要刪除的專案。
+5. 當您執行上述命令時，每個信箱最多可刪除10個專案。 這表示，您可能需要多次執行 `New-ComplianceSearchAction -Purge` 命令，以刪除 [可復原的專案] 資料夾中的所有要刪除的專案。 若要刪除其他專案，您必須先移除先前的符合性搜尋清除動作。 您可以執行 Cmdlet 來執行此動作 `Remove-ComplianceSearchAction` 。 例如，若要刪除上一個步驟中所執行的清除動作，請執行下列命令：
+
+   ```powershell
+   Remove-ComplianceSearchAction "RecoverableItems_Purge"
+   ```
+
+   完成之後，您可以建立新的符合性搜尋清除動作，以刪除更多專案。 在建立新的清除動作之前，必須先將其刪除。
+
+   若要取得符合性搜尋動作的清單，您可以執行 `Get-ComplianceSearchAction` Cmdlet。 清除動作會 `_Purge` 以附加至搜尋名稱來識別。
 
 ### <a name="verify-that-items-were-deleted"></a>確認已刪除專案
 

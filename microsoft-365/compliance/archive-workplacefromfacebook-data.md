@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理員可以設定連接器，將來自于 Globanet 之 Merge1 網站上的 Facebook 的資料匯入和封存至 Microsoft 365。 設定連接器需要您使用 Globanet 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: e7cdb81b2b676424c289c42490fe23e7b5441239
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 4bef408f7da93f2ade18fe126d3a1dedaa413a65
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399130"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405484"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data-preview"></a>設定從 Facebook 資料 (預覽中封存工作場所的連接器) 
 
@@ -40,9 +40,9 @@ ms.locfileid: "47399130"
 
 4. 連接器會使用 [步驟 3] 中所述之自動使用者對應的 *電子郵件* 屬性值，將轉換後的專案匯入至特定使用者的信箱。 建立從 Facebook 中名為 **Workplace 之** [收件匣] 資料夾中的子資料夾，並將工作區專案匯入該資料夾。 連接器會使用 *Email* 屬性的值來執行此動作。 每個 Workplace 專案都包含此屬性，其是以每個聊天或張貼參與者的電子郵件地址填入。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
-- 從 Facebook connector 接收工作區的條款及條件，以建立 Merge1 帳戶。 您將需要與 [Globanet 客戶支援](https://globanet.com/contact-us/)人員聯繫。 當您在步驟1中建立連接器時，您必須登入此帳戶。
+- 為 Microsoft connector 建立 Globanet Merge1 帳戶。 若要這麼做，請與 [Globanet 客戶支援](https://globanet.com/ms-connectors-contact)部門聯繫。 當您在步驟1中建立連接器時，您必須登入此帳戶。
 
 - 從 APIs 建立自訂整合， https://my.workplace.com/work/admin/apps/ 以透過相容性和 eDiscovery 目的從工作場所取得資料。
 

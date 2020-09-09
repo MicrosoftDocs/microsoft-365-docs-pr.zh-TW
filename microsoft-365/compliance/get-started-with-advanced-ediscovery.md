@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 本文說明如何開始使用 Microsoft 365 中的「高級 eDiscovery」。 完成一些快速步驟之後，就可以使用「高級 eDiscovery」工具。 第一步是建立案例，然後開始使用 Advanced eDiscovery 的功能和功能。
-ms.openlocfilehash: cc593009337a9b78285fbcf98ad78dbf1899bce1
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 47647c2f4f944812fa066be272a39ded77099c75
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357503"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405415"
 ---
 # <a name="get-started-with-advanced-ediscovery"></a>開始使用進階電子文件探索
 
@@ -141,11 +141,11 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
 
    - 保管人的 Exchange 信箱、OneDrive 帳戶，以及保管人隸屬的任何 Microsoft 團隊或 Yammer 群組中的資料，都可以 "標示" 為案例中的 custodial 資料。
   
-   - 管理員資料會以稱為「 *高級索引*) 」的處理常式重新編制索引 (。 這可協助您在下一個步驟中優化搜尋。
+   - 保管人資料是由稱為「 *高級索引*) 」的程式 (重新編制索引。 這可協助您在下一個步驟中優化搜尋。
   
    - 您可以對保管人資料進行保留。 這會在調查期間保留與案例相關的資料。
   
-   - 您可以將其他資料來源與保管人 (產生關聯。例如，您可以將 SharePoint 網站或 Microsoft 365 群組與保管人) 產生關聯，這樣便可重新建立索引、保留及搜尋這些資料，就像是保管人的信箱或 OneDrive 帳戶中的資料。
+   - 您可以將其他資料來源與保管人 (產生關聯。例如，您可以將 SharePoint 網站或 Microsoft 365 群組與保管人) 產生關聯，這樣就可以重新編制索引、保留及搜尋此資料，就像是保管人的信箱或 OneDrive 帳戶中的資料一樣。
 
    - 您可以使用高級 eDiscovery 中的 [通訊工作流程](managing-custodian-communications.md) ，將合法保留通知傳送給保管人。
 
@@ -157,7 +157,7 @@ EDiscovery 管理員角色群組中有兩個子群組。 這些子群組之間�
 
    - 修改查詢，然後重新執行搜尋。
 
-3. **[將資料新增至審閱集](add-data-to-review-set.md)**。 當您設定並確認搜尋傳回所需的資料之後，下一步是將搜尋結果新增至審閱集。 當您將資料新增至審閱集時，專案會從其原始位置複製到安全的 Azure 存放位置。 當複查及分析審閱集中的專案時，會再次重新建立資料的索引，以進行完整及快速搜尋的優化。 此外，您也可以 [將非 Office 365 資料新增至審閱集](load-non-office-365-data-into-a-review-set.md)。
+3. **[將資料新增至審閱集](add-data-to-review-set.md)**。 當您設定並確認搜尋傳回所需的資料之後，下一步是將搜尋結果新增至審閱集。 當您將資料新增至審閱集時，專案會從其原始位置複製到安全的 Azure 存放位置。 當審閱及分析審閱集中的專案時，會再次重新編制索引資料，以優化完整和快速的搜尋。 此外，您也可以 [將非 Office 365 資料新增至審閱集](load-non-office-365-data-into-a-review-set.md)。
 
    此外還有一種特殊的審閱集，您可以將資料新增至（稱為「 *交談複查集*」）。 這兩種審閱集可提供交談重新構建功能，以重新構建、審閱及匯出像是 Microsoft 小組中的對話交談。 如需詳細資訊，請參閱 [在高級 eDiscovery 中查看交談](conversation-review-sets.md)。
 
