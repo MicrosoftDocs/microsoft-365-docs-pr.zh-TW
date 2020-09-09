@@ -13,17 +13,29 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 72155563a3249aa61075bc9f246b2a553e7b5191
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: f1606e62813aa63225113b38414338c4e2ff7d57
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289600"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405674"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Microsoft 受管理電腦文件的變更歷程記錄
 
 本文列出 [Microsoft 受管理桌面檔](index.yml)中的新文章和更新文章。 「已更新」的文章是指具有材料新增或修正功能的文章，也就是未列出更正輸入、樣式或格式問題等細微修正。 您可以隨時透過 [GitHub 上](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)的儲存機制者，查看特定提交 (的記錄，包括任何變更) 的詳細資料。
 
+## <a name="august-2020"></a>2020年 8月
+新的或已變更的文章 | 描述
+--- | ---
+[裝置庫存報告](working-with-managed-desktop/device-inventory-report.md) | 新文章
+[新的 Microsoft Edge app](get-started/edge-browser-app.md) | 更新的文章
+[自行註冊新裝置](get-started/register-devices-self.md) | 更新的文章
+[自行註冊現有裝置](get-started/register-reused-devices-self.md) | 更新的文章
+[Microsoft 受管理電腦的先決條件](get-ready/prerequisites.md) | 更新的文章
+[Microsoft 受管理電腦中的安全性作業](service-description/security-operations.md) | 新文章
+[存取管理員入口網站](get-started/access-admin-portal.md) | 更新的文章
+[Microsoft 365 Apps 企業版](get-started/m365-apps.md) | 新文章
+[隱私權和個人資料](service-description/privacy-personal-data.md) | 新文章
 
 ## <a name="july-2020"></a>2020 年 7 月
 新的或已變更的文章 | 描述
@@ -51,7 +63,7 @@ ms.locfileid: "47289600"
 ## <a name="may-2020"></a>2020 年 5 月
 新的或已變更的文章 | 描述
 --- | ---
-[取得使用者的協助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[為使用者取得協助](working-with-managed-desktop/end-user-support.md) | 更新的文章
 [讓合作夥伴註冊裝置的步驟](get-started/register-devices-partner.md) | 更新的文章
 [Microsoft 受管理的桌面裝置](service-description/device-list.md) | 更新的文章
 [自行註冊新裝置](get-started/register-devices-self.md) | 更新的文章
@@ -98,7 +110,7 @@ ms.locfileid: "47289600"
 ## <a name="december-2019"></a>2019 年 12 月
 新的或已變更的文章 | 描述
 --- | ---
-[Microsoft 受管理電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的文章
+[Microsoft 受管理的電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的文章
 [Microsoft 受管理的桌面裝置](service-description/device-list.md) | 更新的文章
 [Microsoft 管理的桌面封存裝置](service-description/archived-device-list.md) | 更新的文章
 
@@ -121,8 +133,8 @@ ms.locfileid: "47289600"
 新的或已變更的文章 | 描述
 --- | ---
 [服務方案的例外狀況](service-description/customizing.md) | 新文章
-[取得使用者的協助](working-with-managed-desktop/end-user-support.md) | 更新的文章
-[Microsoft 受管理電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的文章
+[為使用者取得協助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[Microsoft 受管理的電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的文章
 [服務變更與通訊](service-description/servicechanges.md) | 新文章
 [自行註冊新裝置](get-started/register-devices-self.md) | 更新的文章
 [自行註冊現有裝置](get-started/register-reused-devices-self.md) | 更新的文章
@@ -135,10 +147,10 @@ ms.locfileid: "47289600"
 新的或已變更的文章 | 描述
 --- | ---
 [Microsoft 受管理的電腦技術](intro/technologies.md) | 更新的文章
-[取得使用者的協助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[為使用者取得協助](working-with-managed-desktop/end-user-support.md) | 更新的文章
 [Microsoft 受管理的桌面裝置](service-description/device-list.md) | 更新的文章
 [部署及追蹤可設定的設定-Microsoft 受管理的電腦](working-with-managed-desktop/config-setting-deploy.md) | 更新的文章
-[Microsoft 受管理電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的文章
+[Microsoft 受管理的電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的文章
 [Microsoft 受管理電腦的先決條件](get-ready/prerequisites.md) | 更新的文章
 [設定 Microsoft 受管理的電腦裝置](get-started/set-up-devices.md) | 新文章
 [自行註冊新裝置](get-started/register-devices-self.md) | 更新的文章
@@ -149,8 +161,8 @@ ms.locfileid: "47289600"
 新的或已變更的文章 | 描述
 --- | ---
 [使用 Microsoft 諮詢服務](get-ready/apps-mcs.md) | 更新的文章
-[Microsoft 受管理電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的文章
-[取得使用者的協助](working-with-managed-desktop/end-user-support.md) | 更新的文章
+[Microsoft 受管理的電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新的文章
+[為使用者取得協助](working-with-managed-desktop/end-user-support.md) | 更新的文章
 [Microsoft 受管理電腦的先決條件](get-ready/prerequisites.md) | 更新的文章
 [Microsoft 受管理的電腦技術](intro/technologies.md) | 更新的文章
 
@@ -183,7 +195,7 @@ ms.locfileid: "47289600"
 [為 Microsoft 受管理的電腦準備對應磁碟機](get-ready/mapped-drives.md) | 新文章
 [為 Microsoft 受管理的電腦準備認證和網路設定檔](get-ready/certs-wifi-lan.md) | 新文章
 [Microsoft 受管理的桌面裝置順序](get-started/devices.md) | 更新的文章
-[取得使用者的協助](working-with-managed-desktop/end-user-support.md) | 新文章
+[為使用者取得協助](working-with-managed-desktop/end-user-support.md) | 新文章
 
 ## <a name="april-2019"></a>2019 年 4 月
 新的或已變更的文章 | 描述
@@ -220,7 +232,7 @@ ms.locfileid: "47289600"
 新的或已變更的文章 | 描述
 --- | ---
 [Microsoft 受管理電腦的作業和監控](service-description/operations-and-monitoring.md) | 增加責任表和更新其他表格的餘額。
-[Microsoft 受管理電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新支援類型、嚴重性說明及其他詳細資料。
+[Microsoft 受管理的電腦的系統管理員支援](working-with-managed-desktop/admin-support.md) | 更新支援類型、嚴重性說明及其他詳細資料。
 
 ## <a name="november-2018"></a>2018 年 11 月
 

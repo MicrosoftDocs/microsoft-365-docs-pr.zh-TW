@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 取得最新的硬體隔離。 防止目前和新興的攻擊（如入侵或惡意連結）中斷員工生產力和企業安全性。
-ms.openlocfilehash: d0a89e8f8874c9ad298bf862384019b9e1ace0bf
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 32a8705255bf4ae4f0e3678de9cd812b64107cfd
+ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867371"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47405538"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>適用于系統管理員的 Office 的應用程式防護 (公開預覽) 
 
@@ -45,7 +45,7 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
 
 * **Windows 10**： Windows 10 Enterprise Edition，Client Build version 2004 (20H1) 組建19041
 * **Office**： Office Beta 通道組建版本 2008 16.0.13212 或更新版本
-* **更新套件**： Windows 10 累計每月安全性更新 [KB4566782](https://support.microsoft.com/help/4566782/windows-10-update-kb4566782) 
+* **更新套件**： Windows 10 累計每月安全性更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 如需詳細的系統需求，請參閱 [Microsoft Defender Application Guard 的系統需求](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 若要深入瞭解 Office 測試人員預覽組建，請參閱 [部署 office 測試人員組建的快速入門](https://insider.office.com/business/deploy)。
 
@@ -56,28 +56,9 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
 
 ### <a name="enable-application-guard-for-office"></a>啟用適用于 Office 的應用程式防護
 
-1.  下載及安裝 **Windows 10 累計每月安全性更新 KB4566782**。 
+1.  下載及安裝 **Windows 10 累計每月安全性更新 KB4571756**。 
 
-2. 下載並安裝 [**Office 的應用程式防護功能啟用套件**](https://download.microsoft.com/download/e/4/c/e4c1180a-fcff-462a-8324-4151c44973a8/Windows%20Preview%20-%20WDAG%20Office%20070920%2001.msi)。 此套件會在 [ **電腦 Configuration\Administrative 範本**] 底下安裝名為 "KB4559004 Issue 001 Preview" 的群組原則。 將此群組原則設定為 [ **啟用**]。
-     ![本機群組原則編輯器](../../media/ag01-deploy.png)
-
-     ![KB4559004 Issue 001 預覽](../../media/ag02-deploy.png)
-
-    您也可以直接設定下列登錄機碼： 
-    
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 3457697930 /t REG_DWORD /d 1 
-    ```
-    ```
-    reg add HKLM\SYSTEM\CurrentControlSet\Policies\Microsoft\FeatureManagement\Overrides /v 94539402 /t REG_DWORD /d 1 
-    ```
-    然後，請執行此 PowerShell 命令： 
-    
-    ```powershell
-    Get-ScheduledTask -TaskName "ReconcileFeatures" -TaskPath "\Microsoft\Windows\Flighting\FeatureConfig\" | Start-ScheduledTask 
-    ```
-
-3.  選取 [Windows 功能] 底下的 [ **Microsoft Defender 應用程式防護** ] 並選取 **[確定]**。 啟用 Application Guard 功能時，會提示重新開機系統。 您可以選擇 [現在] 或 [在步驟4之後重新開機]。
+2.  選取 [Windows 功能] 底下的 [ **Microsoft Defender 應用程式防護** ] 並選取 **[確定]**。 啟用 Application Guard 功能時，會提示重新開機系統。 您可以選擇 [現在] 或 [在步驟3之後重新開機]。
 
     ![顯示 AG 的 [Windows 功能] 對話方塊](../../media/ag03-deploy.png)
     
@@ -87,7 +68,7 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-4.  在 [電腦設定] 系統管理範本的「管理模式」群組原則中尋找 Microsoft Defender Application Guard ** \\ \\ \\ microsoft defender application guard**。 在 [選項為**2**或**3**時設定值]，然後選取 **[確定] 或 [套用]** ，以開啟此**原則。**
+3.  在 [電腦設定] 系統管理範本的「管理模式」群組原則中尋找 Microsoft Defender Application Guard ** \\ \\ \\ microsoft defender application guard**。 在 [選項為**2**或**3**時設定值]，然後選取 **[確定] 或 [套用]** ，以開啟此**原則。**
 
     ![在受管理的模式中開啟 AG](../../media/ag04-deploy.png)
   
@@ -98,7 +79,7 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
     <br>值： **2**
 
 
-5.  重新開機系統。
+4.  重新開機系統。
 
 ### <a name="set-diagnostics--feedback-to-send-full-data"></a>設定診斷 & 傳送完整資料的意見
 

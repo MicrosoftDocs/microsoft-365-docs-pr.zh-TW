@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Office 365、Microsoft 365 和服務保證中的審計和報告功能的概覽。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 11dbf29faf028ec9ed0274c806fc8c8979a6f1fd
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 297eba449515eeadf462d4a6d09e585f1da6209d
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332577"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407947"
 ---
 # <a name="auditing-and-reporting-in-microsoft-cloud-services"></a>Microsoft 雲端服務中的審計和報告
 
@@ -37,7 +37,7 @@ Microsoft 雲端服務包含數個審計和報告功能，您可以用來追蹤�
 
 - **警示：** 可讓您管理提醒、查看與安全性相關的提醒，以及使用 [雲端 App 安全性](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)管理高級提醒。
 - **許可權：** 可讓您將合規性管理員、eDiscovery 管理員及其他 [許可權指派](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center) 給組織中的人員，讓他們可以在這些中心執行任務。 您可以為每個中心的大部分功能指派許可權，但必須使用 Exchange 系統管理中心和 SharePoint 系統管理中心設定其他許可權。
-- **威脅管理：** 可讓您使用 [Microsoft 365 行動裝置管理](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)來建立及套用裝置管理原則，以設定組織的 [資料遺失防護](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) (DLP) 原則，設定電子郵件篩選、反惡意程式碼、DomainKeys 識別的郵件 (DKIM) 、安全附件、安全連結及 OAuth 應用程式。
+- **威脅管理：** 可讓您使用 [Microsoft 365 的基本行動性和安全性](https://support.microsoft.com/office/overview-of-basic-mobility-and-security-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)來建立及套用裝置管理原則，以設定組織的 [資料遺失防護](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) (DLP) 原則，設定電子郵件篩選、反惡意程式碼、DomainKeys 識別的郵件 (DKIM) 、安全附件、安全連結及 OAuth 應用程式。
 - **資料管理：** 可讓您將 [電子郵件或 SharePoint 資料從其他系統匯入 Microsoft 365](https://support.office.com/article/Import-PST-files-or-SharePoint-data-to-Office-365-ba688e0a-0fcb-4bd7-8e57-2b669564ea84)、設定封存 [信箱](https://support.office.com/article/Enable-archive-mailboxes-in-the-Office-365-Security-Compliance-Center-268a109e-7843-405b-bb3d-b9393b2342ce)，以及設定電子郵件和組織內其他內容的 [保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) 。
 - **搜尋 & 調查：** 提供「 [內容搜尋](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a)」、「 [審計記錄](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c)」、「隔離」和「 [eDiscovery 案例管理](https://support.office.com/article/Manage-eDiscovery-cases-in-the-Office-365-Security-Compliance-Center-edea80d6-20a7-40fb-b8c4-5e8c8395f6da) 」工具，以快速深入瞭解 Exchange online 信箱、群組和公用資料夾、SharePoint 線上和商務 OneDrive 中的活動。
 - **報告：** 可讓您快速存取 SharePoint Online、商務 OneDrive、Exchange Online 和 Azure AD 的 [報表](https://support.office.com/article/Reports-in-the-Office-365-Security-Compliance-Center-7acd33ce-1ec8-49fb-b625-43bac7b58c5a) 。

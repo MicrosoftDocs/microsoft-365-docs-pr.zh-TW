@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 和 Office 365 的高級威脅防護 (Office 365 ATP) 中可用的反網路釣魚原則。
-ms.openlocfilehash: 7118bca15102fd52e7825ee873187fa11d9fc0f9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a68baf8f2598b8ca0cd13e45d18919ecfdccdacc
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308192"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407925"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -106,21 +106,23 @@ ATP 反網路釣魚原則僅可用於具有 Office 365 ATP 的組織。 例如�
     - [在 Microsoft 365 中以系統管理員身分管理被隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
     - [以 Microsoft 365 中的使用者身分找到並釋放被隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)
 
-- **未經驗證的寄件者**：請參閱下一節的描述。
+- **未經驗證的寄件者**：請參閱下一節中的資訊。
 
 ### <a name="unauthenticated-sender"></a>未驗證寄件者
 
 未經驗證的寄件者識別碼是反網路釣魚原則和 ATP 反網路釣魚原則中提供的 [欺騙設定](#spoof-settings) 的一部分，如上一節所述。
 
-**未經驗證的寄件者**設定可啟用或停用 Outlook 中未識別的寄件者識別 特別是：
+**未經驗證的寄件者**設定可啟用或停用 Outlook 中未經驗證的寄件者識別 特別是：
 
-- 當郵件未通過 SPF 或 DKIM 檢查 **，且** 郵件未通過 DMARC 或 [複合驗證](email-validation-and-authentication.md#composite-authentication)時，就會在寄件者的相片中加入一個問號 (？ ) 。
+- 當郵件未通過 SPF 或 DKIM 檢查 **，且** 郵件未通過 DMARC 或 [複合驗證](email-validation-and-authentication.md#composite-authentication)時，就會在寄件者的相片中加入一個問號 (？ ) 。 停用未經驗證的寄件者識別碼，可防止問號加入寄件者的相片。
 
-- 如果 [寄件者] 位址中的網域 (電子郵件) 客戶程式中顯示的郵件寄件者不同于 DKIM 簽章中的網域或**郵件**的 [寄件者] 位址中的網域，則會新增 via 標籤<u> (chris@contoso.com 透過</u>michelle@fabrikam.com) 。 如需這些位址的詳細資訊，請參閱 [電子郵件標準的概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+- 如果 [寄件者] 位址中的網域 (電子郵件) 客戶程式中顯示的郵件寄件者不同于 DKIM 簽章中的網域或**郵件**的 [寄件者] 位址中的網域，則會新增 via 標籤<u> (chris@contoso.com 透過</u>michelle@fabrikam.com) 。 如需這些位址的詳細資訊，請參閱 [電子郵件標準的概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
-若要防止這些識別碼新增至特定寄件者的郵件，您可以使用下列選項：
+  停用未經驗證的寄件者識別碼時，如果 [寄件者] 位址中的網域與 DKIM 簽章中的網域不同或郵件的 [寄件者] 位址不同，就不會防止加入標籤。
 
-- 允許寄件者在欺騙智慧原則中哄騙。 如需相關指示，請參閱 [Configure 哄騙情報 In Microsoft 365](learn-about-spoof-intelligence.md)。
+若要防止問號或 via 標記新增至特定寄件者的郵件，您可以使用下列選項：
+
+- 允許寄件者在欺騙智慧原則中哄騙。 當停用未經驗證的寄件者身分識別時，此巨集指令可防止來自寄件者的郵件顯示「透過」標記。 如需相關指示，請參閱 [Configure 哄騙情報 In Microsoft 365](learn-about-spoof-intelligence.md)。
 
 - 設定寄件者網域的[電子郵件驗證](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own)。
   

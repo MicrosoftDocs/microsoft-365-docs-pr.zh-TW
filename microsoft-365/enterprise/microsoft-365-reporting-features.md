@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 深入瞭解 Microsoft 365 內的各種報告功能，包括 Azure Active Directory 和 Exchange Online。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3beb327bd5cb995c378a414e19cc54dea8ad1304
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 59a7569518ad3e4704b3528d175c092b0a19b819
+ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332733"
+ms.lasthandoff: 09/08/2020
+ms.locfileid: "47407913"
 ---
 # <a name="microsoft-365-reporting-features"></a>Microsoft 365 報告功能
 
@@ -58,7 +58,7 @@ Exchange Online 審核報告包含信箱存取的詳細資料，以及系統管�
 > [!NOTE]
 > 您必須啟用每個信箱的信箱審核記錄，以便在該信箱的審計記錄中儲存已審核的事件。 如果信箱審核記錄未啟用信箱，該信箱的事件將不會儲存在審計記錄檔中，也不會出現在信箱審計報告中。 如需詳細資訊，請參閱 [啟用信箱審核](https://support.office.com/article/Enable-mailbox-auditing-in-Office-365-aaca8987-5b62-458b-9882-c28476a66918)。
 
-| 工作 | 說明 |
+| 工作 | 描述 |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [執行非擁有者信箱存取報告](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report) | 顯示其他人員存取的信箱清單，而非信箱的擁有者。 報告包含誰存取信箱的相關資訊、他們在信箱中採取的動作，以及動作是否成功。 |
 | [匯出信箱稽核記錄](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs) | 信箱審核記錄檔包含信箱擁有者以外的使用者所採取之信箱中存取和動作的資訊。 管理員可以指定信箱，並在日期範圍內產生報告。 這些記錄會以 XML 形式匯出，並附加至郵件，並傳送給特定使用者，如系統管理員所決定。 |
@@ -71,9 +71,9 @@ Exchange Online 審核報告包含信箱存取的詳細資料，以及系統管�
 
 ## <a name="device-compliance-reports"></a>裝置合規性報告
 
-您可以使用 Microsoft 365 行動裝置管理 (MDM) ，管理和保護連線至您訂閱的行動裝置。 用來存取工作電子郵件、行事曆、連絡人及檔的行動裝置，可確保員工可以隨時隨地運作，並在任何地方運作。 保護貴組織的資訊非常重要。 您可以使用 Microsoft 365 MDM 設定裝置安全性原則和存取規則。 如果遺失或遭盜，您也可以使用 Microsoft 365 MDM 來清除行動裝置。
+您可以使用 Microsoft 365 的基本行動性和安全性，管理連線到您訂閱的行動裝置及保護其安全。 用來存取工作電子郵件、行事曆、連絡人及檔的行動裝置，可確保員工可以隨時隨地運作，並在任何地方運作。 保護貴組織的資訊非常重要。 您可以使用 Microsoft 365 的基本行動性和安全性，設定裝置安全性原則和存取規則。 若遺失或遭盜，您也可以使用 Microsoft 365 的基本行動性和安全性，以清除行動裝置。
 
-MDM 相容性報告可提供組織設定的原則，以保護存取 Microsoft 365 資料的行動裝置。 報告允許依照相容性狀態、報告的違規、封鎖的裝置，以及由於安全性原則所擦除的裝置，來篩選裝置。 如需詳細資訊，請參閱 [Microsoft 365 行動裝置管理的概述](https://support.microsoft.com/office/overview-of-mobile-device-management-mdm-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)。
+基本行動性和安全性符合性報告可提供組織設定的原則，以保護存取 Microsoft 365 資料的行動裝置。 報告允許依照相容性狀態、報告的違規、封鎖的裝置，以及由於安全性原則所擦除的裝置，來篩選裝置。 如需詳細資訊，請參閱 [Microsoft 365 的基本行動及安全性概述](https://support.microsoft.com/office/overview-of-basic-mobility-and-security-for-microsoft-365-faa7d8e5-645d-4d59-839c-c8d4c1869e4a)。
 
 ## <a name="data-loss-prevention"></a>資料外洩防護
 
@@ -87,7 +87,7 @@ Yammer Enterprise 可讓系統管理員透過 [yammer 資料匯出 API](https://
 
 可匯出的資料如下：
 
-| Filename | 說明 |
+| Filename | 描述 |
 |----------------------------|-------------------------------------------------------------------------|
 | Users.csv | 網路中所有的新、擱置和擱置的使用者 |
 | Messages.csv | 網路中的所有郵件 |
