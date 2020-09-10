@@ -17,56 +17,57 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cea4dbcb42833a14980d092bd0ff168ca97e5934
-ms.sourcegitcommit: 9489aaf255f8bf165e6debc574e20548ad82e882
+ms.openlocfilehash: f6c00ef68b59f900882f662e33f8e9cf3e08e170
+ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46632148"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47419153"
 ---
-# <a name="create-and-manage-custom-detections-rules"></a><span data-ttu-id="8ea0c-104">建立及管理自訂的偵測規則</span><span class="sxs-lookup"><span data-stu-id="8ea0c-104">Create and manage custom detections rules</span></span>
+# <a name="create-and-manage-custom-detections-rules"></a><span data-ttu-id="7391f-104">建立及管理自訂的偵測規則</span><span class="sxs-lookup"><span data-stu-id="7391f-104">Create and manage custom detections rules</span></span>
 
-<span data-ttu-id="8ea0c-105">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="8ea0c-105">**Applies to:**</span></span>
-- <span data-ttu-id="8ea0c-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="8ea0c-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="7391f-105">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="7391f-105">**Applies to:**</span></span>
+- <span data-ttu-id="7391f-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="7391f-106">Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="8ea0c-107">透過[高級搜尋](advanced-hunting-overview.md)查詢所建立的自訂偵測規則，可讓您主動監視各種事件和系統狀態，包括可疑的破壞活動和設定不當的端點。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-107">Custom detection rules built from [Advanced hunting](advanced-hunting-overview.md) queries let you proactively monitor various events and system states, including suspected breach activity and misconfigured endpoints.</span></span> <span data-ttu-id="8ea0c-108">您可以將其設定為定期執行，並在每個專案相符時產生提醒並採取回應動作。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-108">You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.</span></span>
+<span data-ttu-id="7391f-107">自訂偵測規則是您可以使用 [高級搜尋](advanced-hunting-overview.md) 查詢進行設計和調整的規則。</span><span class="sxs-lookup"><span data-stu-id="7391f-107">Custom detection rules are rules you can design and tweak using [advanced hunting](advanced-hunting-overview.md) queries.</span></span> <span data-ttu-id="7391f-108">這些規則可讓您主動監視各種事件和系統狀態，包括可疑的侵犯活動和設定不當的端點。</span><span class="sxs-lookup"><span data-stu-id="7391f-108">These rules let you proactively monitor various events and system states, including suspected breach activity and misconfigured endpoints.</span></span> <span data-ttu-id="7391f-109">您可以將其設定為定期執行，並在每個專案相符時產生提醒並採取回應動作。</span><span class="sxs-lookup"><span data-stu-id="7391f-109">You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.</span></span>
 
-## <a name="required-permissions-for-managing-custom-detections"></a><span data-ttu-id="8ea0c-109">管理自訂偵測的必要許可權</span><span class="sxs-lookup"><span data-stu-id="8ea0c-109">Required permissions for managing custom detections</span></span>
+## <a name="required-permissions-for-managing-custom-detections"></a><span data-ttu-id="7391f-110">管理自訂偵測的必要許可權</span><span class="sxs-lookup"><span data-stu-id="7391f-110">Required permissions for managing custom detections</span></span>
 
-<span data-ttu-id="8ea0c-110">若要管理自訂偵測，您必須被指派其中一個角色：</span><span class="sxs-lookup"><span data-stu-id="8ea0c-110">To manage custom detections, you need to be assigned one of these roles:</span></span>
+<span data-ttu-id="7391f-111">若要管理自訂偵測，您必須被指派其中一個角色：</span><span class="sxs-lookup"><span data-stu-id="7391f-111">To manage custom detections, you need to be assigned one of these roles:</span></span>
 
-- <span data-ttu-id="8ea0c-111">**安全性管理員**（安全性管理員或安全性系統管理員角色）是[Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)，用來管理 Microsoft 365 安全性中心和各種入口網站和服務中的各種安全性設定。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-111">**Security administrator** — the security administrator or security admin role is an [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) for managing various security settings in Microsoft 365 security center and various portals and services.</span></span>
+- <span data-ttu-id="7391f-112">**安全性管理員**：具有此 [Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理 Microsoft 365 安全性中心及其他入口網站和服務中的安全性設定。</span><span class="sxs-lookup"><span data-stu-id="7391f-112">**Security administrator**—Users with this [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) can manage security settings in Microsoft 365 security center and other portals and services.</span></span>
 
-- <span data-ttu-id="8ea0c-112">**安全操作員**-安全性操作員角色是用來管理提醒的[Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator)，具有安全性相關功能的全域唯讀許可權，包括 Microsoft 365 Security center 中的所有資訊。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-112">**Security operator** —  the security operator role is an [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) for managing alerts and has global read-only access on security-related features, including all information in Microsoft 365 security center.</span></span> <span data-ttu-id="8ea0c-113">只有在 Microsoft Defender ATP 中關閉以角色為基礎的存取控制 (RBAC) 時，此角色才足以管理自訂偵測。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-113">This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender ATP.</span></span> <span data-ttu-id="8ea0c-114">如果您已設定 RBAC，您也需要 Microsoft Defender ATP 的「**管理安全性設定**」許可權。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-114">If you have RBAC configured, you also need the **manage security settings** permission for Microsoft Defender ATP.</span></span>
+- <span data-ttu-id="7391f-113">**安全操作員**-具有此 [Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理提醒，並具有安全相關功能的全域唯讀許可權，包括 Microsoft 365 Security center 中的所有資訊。</span><span class="sxs-lookup"><span data-stu-id="7391f-113">**Security operator**—Users with this [Azure Active Directory role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) can manage alerts and have global read-only access to security-related features, including all information in Microsoft 365 security center.</span></span> <span data-ttu-id="7391f-114">只有在 Microsoft Defender ATP 中關閉以角色為基礎的存取控制 (RBAC) 時，此角色才足以管理自訂偵測。</span><span class="sxs-lookup"><span data-stu-id="7391f-114">This role is sufficient for managing custom detections only if role-based access control (RBAC) is turned off in Microsoft Defender ATP.</span></span> <span data-ttu-id="7391f-115">如果您已設定 RBAC，您也需要 Microsoft Defender ATP 的「 **管理安全性設定** 」許可權。</span><span class="sxs-lookup"><span data-stu-id="7391f-115">If you have RBAC configured, you also need the **manage security settings** permission for Microsoft Defender ATP.</span></span>
 
-<span data-ttu-id="8ea0c-115">若要管理必要的許可權，**全域管理員**可以執行下列作業：</span><span class="sxs-lookup"><span data-stu-id="8ea0c-115">To manage required permissions, a **global administrator** can do the following:</span></span>
+<span data-ttu-id="7391f-116">若要管理必要的許可權， **全域管理員** 可以：</span><span class="sxs-lookup"><span data-stu-id="7391f-116">To manage required permissions, a **global administrator** can:</span></span>
 
-- <span data-ttu-id="8ea0c-116">在 [ **role**security admin] 底下的[Microsoft 365 系統管理中心](https://admin.microsoft.com/)中指派**安全性管理員**或**安全性操作員**角色  >  \*\* \*\*。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-116">Assign the **security administrator** or **security operator** role in [Microsoft 365 admin center](https://admin.microsoft.com/) under **Roles** > **Security admin**.</span></span>
-- <span data-ttu-id="8ea0c-117">在 [**設定**許可權角色] 底下的[microsoft defender Security Center](https://securitycenter.windows.com/)中檢查 microsoft defender ATP 的 RBAC 設定  >  **Permissions**  >  \*\* \*\*。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-117">Check RBAC settings for Microsoft Defender ATP in [Microsoft Defender Security Center](https://securitycenter.windows.com/) under **Settings** > **Permissions** > **Roles**.</span></span> <span data-ttu-id="8ea0c-118">選取對應的角色以指派「**管理安全性設定**」許可權。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-118">Select the corresponding role to assign the **manage security settings** permission.</span></span>
+- <span data-ttu-id="7391f-117">在 [ **role**security admin] 底下的[Microsoft 365 系統管理中心](https://admin.microsoft.com/)中指派**安全性管理員**或**安全性操作員**角色  >  \*\* \*\*。</span><span class="sxs-lookup"><span data-stu-id="7391f-117">Assign the **security administrator** or **security operator** role in [Microsoft 365 admin center](https://admin.microsoft.com/) under **Roles** > **Security admin**.</span></span>
+- <span data-ttu-id="7391f-118">在 [**設定**許可權角色] 底下的[microsoft defender Security Center](https://securitycenter.windows.com/)中檢查 microsoft defender ATP 的 RBAC 設定  >  **Permissions**  >  \*\* \*\*。</span><span class="sxs-lookup"><span data-stu-id="7391f-118">Check RBAC settings for Microsoft Defender ATP in [Microsoft Defender Security Center](https://securitycenter.windows.com/) under **Settings** > **Permissions** > **Roles**.</span></span> <span data-ttu-id="7391f-119">選取對應的角色以指派「 **管理安全性設定** 」許可權。</span><span class="sxs-lookup"><span data-stu-id="7391f-119">Select the corresponding role to assign the **manage security settings** permission.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8ea0c-119">若要管理自訂的偵測，當已開啟 RBAC 時，**安全性操作員**會需要 MICROSOFT Defender ATP 中的「**管理安全性設定**」許可權。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-119">To manage custom detections, **security operators** will need the **manage security settings** permission in Microsoft Defender ATP if RBAC is turned on.</span></span>
+> <span data-ttu-id="7391f-120">若要管理自訂的偵測，當已開啟 RBAC 時， **安全性操作員** 會需要 MICROSOFT Defender ATP 中的「 **管理安全性設定** 」許可權。</span><span class="sxs-lookup"><span data-stu-id="7391f-120">To manage custom detections, **security operators** will need the **manage security settings** permission in Microsoft Defender ATP if RBAC is turned on.</span></span>
 
-## <a name="create-a-custom-detection-rule"></a><span data-ttu-id="8ea0c-120">建立自訂偵測規則</span><span class="sxs-lookup"><span data-stu-id="8ea0c-120">Create a custom detection rule</span></span>
-### <a name="1-prepare-the-query"></a><span data-ttu-id="8ea0c-121">1. 準備查詢。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-121">1. Prepare the query.</span></span>
+## <a name="create-a-custom-detection-rule"></a><span data-ttu-id="7391f-121">建立自訂偵測規則</span><span class="sxs-lookup"><span data-stu-id="7391f-121">Create a custom detection rule</span></span>
+### <a name="1-prepare-the-query"></a><span data-ttu-id="7391f-122">1. 準備查詢。</span><span class="sxs-lookup"><span data-stu-id="7391f-122">1. Prepare the query.</span></span>
 
-<span data-ttu-id="8ea0c-122">在 Microsoft 365 的 [安全性中心] 中，移至 [**高級搜尋**]，然後選取現有的查詢或建立新的查詢。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-122">In Microsoft 365 security center, go to **Advanced hunting** and select an existing query or create a new query.</span></span> <span data-ttu-id="8ea0c-123">使用新的查詢時，請執行查詢以識別錯誤，並瞭解可能的結果。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-123">When using a new query, run the query to identify errors and understand possible results.</span></span>
+<span data-ttu-id="7391f-123">在 Microsoft 365 的 [安全性中心] 中，移至 [ **高級搜尋** ]，然後選取現有的查詢或建立新的查詢。</span><span class="sxs-lookup"><span data-stu-id="7391f-123">In Microsoft 365 security center, go to **Advanced hunting** and select an existing query or create a new query.</span></span> <span data-ttu-id="7391f-124">使用新的查詢時，請執行查詢以識別錯誤，並瞭解可能的結果。</span><span class="sxs-lookup"><span data-stu-id="7391f-124">When using a new query, run the query to identify errors and understand possible results.</span></span>
 
 >[!IMPORTANT]
-><span data-ttu-id="8ea0c-124">若要防止服務傳回太多警示，每個規則都限制為每次執行時只產生100警示。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-124">To prevent the service from returning too many alerts, each rule is limited to generating only 100 alerts whenever it runs.</span></span> <span data-ttu-id="8ea0c-125">在建立規則之前，請先調整您的查詢，以避免正常、日常活動的警示。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-125">Before creating a rule, tweak your query to avoid alerting for normal, day-to-day activity.</span></span>
+><span data-ttu-id="7391f-125">若要防止服務傳回太多警示，每個規則都限制為每次執行時只產生100警示。</span><span class="sxs-lookup"><span data-stu-id="7391f-125">To prevent the service from returning too many alerts, each rule is limited to generating only 100 alerts whenever it runs.</span></span> <span data-ttu-id="7391f-126">在建立規則之前，請先調整您的查詢，以避免正常、日常活動的警示。</span><span class="sxs-lookup"><span data-stu-id="7391f-126">Before creating a rule, tweak your query to avoid alerting for normal, day-to-day activity.</span></span>
 
 
-#### <a name="required-columns-in-the-query-results"></a><span data-ttu-id="8ea0c-126">查詢結果中的必要欄</span><span class="sxs-lookup"><span data-stu-id="8ea0c-126">Required columns in the query results</span></span>
-<span data-ttu-id="8ea0c-127">若要建立自訂偵測規則，查詢必須傳回下列資料行：</span><span class="sxs-lookup"><span data-stu-id="8ea0c-127">To create a custom detection rule, the query must return the following columns:</span></span>
+#### <a name="required-columns-in-the-query-results"></a><span data-ttu-id="7391f-127">查詢結果中的必要欄</span><span class="sxs-lookup"><span data-stu-id="7391f-127">Required columns in the query results</span></span>
+<span data-ttu-id="7391f-128">若要建立自訂偵測規則，查詢必須傳回下列資料行：</span><span class="sxs-lookup"><span data-stu-id="7391f-128">To create a custom detection rule, the query must return the following columns:</span></span>
 
-- `Timestamp`
-- <span data-ttu-id="8ea0c-128">下列其中一個裝置、使用者或信箱欄：</span><span class="sxs-lookup"><span data-stu-id="8ea0c-128">One of the following device, user, or mailbox columns:</span></span>
+- <span data-ttu-id="7391f-129">`Timestamp`-用於設定所產生警示的時間戳記</span><span class="sxs-lookup"><span data-stu-id="7391f-129">`Timestamp`—used to set the timestamp for generated alerts</span></span>
+- <span data-ttu-id="7391f-130">`ReportId`-啟用原始記錄的查閱</span><span class="sxs-lookup"><span data-stu-id="7391f-130">`ReportId`—enables lookups for the original records</span></span>
+- <span data-ttu-id="7391f-131">下列其中一欄可識別特定裝置、使用者或信箱：</span><span class="sxs-lookup"><span data-stu-id="7391f-131">One of the following columns that identify specific devices, users, or mailboxes:</span></span>
     - `DeviceId`
     - `DeviceName`
     - `RemoteDeviceName`
     - `RecipientEmailAddress`
-    - <span data-ttu-id="8ea0c-129">`SenderFromAddress` (信封寄件者或回信路徑位址) </span><span class="sxs-lookup"><span data-stu-id="8ea0c-129">`SenderFromAddress` (envelope sender or Return-Path address)</span></span>
-    - <span data-ttu-id="8ea0c-130">`SenderMailFromAddress`電子郵件客戶程式顯示的 (寄件者位址) </span><span class="sxs-lookup"><span data-stu-id="8ea0c-130">`SenderMailFromAddress` (sender address displayed by email client)</span></span>
+    - <span data-ttu-id="7391f-132">`SenderFromAddress` (信封寄件者或回信路徑位址) </span><span class="sxs-lookup"><span data-stu-id="7391f-132">`SenderFromAddress` (envelope sender or Return-Path address)</span></span>
+    - <span data-ttu-id="7391f-133">`SenderMailFromAddress` 電子郵件客戶程式顯示的 (寄件者位址) </span><span class="sxs-lookup"><span data-stu-id="7391f-133">`SenderMailFromAddress` (sender address displayed by email client)</span></span>
     - `RecipientObjectId`
     - `AccountObjectId`
     - `AccountSid`
@@ -74,125 +75,133 @@ ms.locfileid: "46632148"
     - `InitiatingProcessAccountSid`
     - `InitiatingProcessAccountUpn`
     - `InitiatingProcessAccountObjectId`
+
 >[!NOTE]
-><span data-ttu-id="8ea0c-131">當新的資料表新增至[高級搜尋架構](advanced-hunting-schema-tables.md)時，將新增額外實體的支援。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-131">Support for additional entities will be added as new tables are added to the [advanced hunting schema](advanced-hunting-schema-tables.md).</span></span>
+><span data-ttu-id="7391f-134">當新的資料表新增至 [高級搜尋架構](advanced-hunting-schema-tables.md)時，將新增額外實體的支援。</span><span class="sxs-lookup"><span data-stu-id="7391f-134">Support for additional entities will be added as new tables are added to the [advanced hunting schema](advanced-hunting-schema-tables.md).</span></span>
 
-<span data-ttu-id="8ea0c-132">簡單的查詢（如未使用 `project` or `summarize` 運算子自訂或匯總結果的查詢）通常會傳回這些通用欄。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-132">Simple queries, such as those that don't use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.</span></span>
+<span data-ttu-id="7391f-135">簡單的查詢（如未使用 `project` or `summarize` 運算子自訂或匯總結果的查詢）通常會傳回這些通用欄。</span><span class="sxs-lookup"><span data-stu-id="7391f-135">Simple queries, such as those that don't use the `project` or `summarize` operator to customize or aggregate results, typically return these common columns.</span></span>
 
-<span data-ttu-id="8ea0c-133">有多種方式可確保更複雜的查詢傳回這些欄位。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-133">There are various ways to ensure more complex queries return these columns.</span></span> <span data-ttu-id="8ea0c-134">例如，如果您想要依實體（如所示）匯總和計數 `DeviceId` ，您仍然可以 `Timestamp` 從每個唯一相關的最近事件中取得 `DeviceId` 。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-134">For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` by getting it from the most recent event involving each unique `DeviceId`.</span></span>
+<span data-ttu-id="7391f-136">有多種方式可確保更複雜的查詢傳回這些欄位。</span><span class="sxs-lookup"><span data-stu-id="7391f-136">There are various ways to ensure more complex queries return these columns.</span></span> <span data-ttu-id="7391f-137">例如，如果您想要依實體（如所示）匯總和計數 `DeviceId` ，仍然可以傳回 `Timestamp` ，並 `ReportId` 從每個唯一相關的最近事件中取得 `DeviceId` 。</span><span class="sxs-lookup"><span data-stu-id="7391f-137">For example, if you prefer to aggregate and count by entity under a column such as `DeviceId`, you can still return `Timestamp` and `ReportId` by getting it from the most recent event involving each unique `DeviceId`.</span></span>
 
-<span data-ttu-id="8ea0c-135">下列範例查詢計算使用防病毒偵測 () 的唯一裝置數目 `DeviceId` ，並使用此計數來找出超過五個偵測的裝置。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-135">The sample query below counts the number of unique devices (`DeviceId`) with antivirus detections and uses this count to find only the devices with more than five detections.</span></span> <span data-ttu-id="8ea0c-136">若要傳回最新的 `Timestamp` ，它會搭配 `summarize` 函數使用運算子 `arg_max` 。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-136">To return the latest `Timestamp`, it uses the `summarize` operator with the `arg_max` function.</span></span>
+<span data-ttu-id="7391f-138">下列範例查詢計算使用防病毒偵測 () 的唯一裝置數目 `DeviceId` ，並使用此計數來找出超過五個偵測的裝置。</span><span class="sxs-lookup"><span data-stu-id="7391f-138">The sample query below counts the number of unique devices (`DeviceId`) with antivirus detections and uses this count to find only the devices with more than five detections.</span></span> <span data-ttu-id="7391f-139">若要傳回最新 `Timestamp` 和對應的 `ReportId` ，它會搭配 `summarize` 函數使用運算子 `arg_max` 。</span><span class="sxs-lookup"><span data-stu-id="7391f-139">To return the latest `Timestamp` and the corresponding `ReportId`, it uses the `summarize` operator with the `arg_max` function.</span></span>
 
 ```kusto
 DeviceEvents
+| where Timestamp > ago(1d)
 | where ActionType == "AntivirusDetection"
-| summarize Timestamp = max(Timestamp), count() by DeviceId, SHA1, InitiatingProcessAccountObjectId 
+| summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
 | where count_ > 5
 ```
 
-### <a name="2-create-new-rule-and-provide-alert-details"></a><span data-ttu-id="8ea0c-137">2. 建立新的規則，並提供警示詳細資料。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-137">2. Create new rule and provide alert details.</span></span>
+> [!TIP]
+> <span data-ttu-id="7391f-140">為了獲得更佳的查詢效能，請設定符合規則之預定執行頻率的時間篩選。</span><span class="sxs-lookup"><span data-stu-id="7391f-140">For better query performance, set a time filter that matches your intended run frequency for the rule.</span></span> <span data-ttu-id="7391f-141">由於頻率最低的執行是 _每24小時_，篩選過去一天會涵蓋所有新的資料。</span><span class="sxs-lookup"><span data-stu-id="7391f-141">Since the least frequent run is _every 24 hours_, filtering for the past day will cover all new data.</span></span>
 
-<span data-ttu-id="8ea0c-138">使用查詢編輯器中的查詢，選取 [**建立偵測規則**]，並指定下列警示詳細資料：</span><span class="sxs-lookup"><span data-stu-id="8ea0c-138">With the query in the query editor, select **Create detection rule** and specify the following alert details:</span></span>
+### <a name="2-create-new-rule-and-provide-alert-details"></a><span data-ttu-id="7391f-142">2. 建立新的規則，並提供警示詳細資料。</span><span class="sxs-lookup"><span data-stu-id="7391f-142">2. Create new rule and provide alert details.</span></span>
 
-- <span data-ttu-id="8ea0c-139">**偵測名稱**—偵測規則的名稱</span><span class="sxs-lookup"><span data-stu-id="8ea0c-139">**Detection name** — name of the detection rule</span></span>
-- <span data-ttu-id="8ea0c-140">**Frequency** ：執行查詢和採取動作的間隔。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-140">**Frequency** — interval for running the query and taking action.</span></span> [<span data-ttu-id="8ea0c-141">請參閱以下其他指導方針</span><span class="sxs-lookup"><span data-stu-id="8ea0c-141">See additional guidance below</span></span>](#rule-frequency)
-- <span data-ttu-id="8ea0c-142">**警示標題**—顯示規則所觸發警示的標題</span><span class="sxs-lookup"><span data-stu-id="8ea0c-142">**Alert title** — title displayed with alerts triggered by the rule</span></span>
-- <span data-ttu-id="8ea0c-143">**嚴重性**（由規則所識別之元件或活動的潛在風險）</span><span class="sxs-lookup"><span data-stu-id="8ea0c-143">**Severity** — potential risk of the component or activity identified by the rule</span></span>
-- <span data-ttu-id="8ea0c-144">**類別**：由規則識別的威脅元件或活動</span><span class="sxs-lookup"><span data-stu-id="8ea0c-144">**Category** — threat component or activity identified by the rule</span></span>
-- <span data-ttu-id="8ea0c-145">**MITRE ATT&CK 技術**-由規則識別的一或多個攻擊技術（如 MITRE ATT 中所述） [&CK framework](https://attack.mitre.org/)。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-145">**MITRE ATT&CK techniques** — one or more attack techniques identified by the rule as documented in the [MITRE ATT&CK framework](https://attack.mitre.org/).</span></span> <span data-ttu-id="8ea0c-146">本節不適用於特定警示類別，包括惡意程式碼、勒索軟體、可疑活動和不需要的軟體</span><span class="sxs-lookup"><span data-stu-id="8ea0c-146">This section does not apply and is hidden for certain alert categories, including malware, ransomware, suspicious activity, and unwanted software</span></span>
-- <span data-ttu-id="8ea0c-147">**描述**-規則所識別之元件或活動的詳細資訊</span><span class="sxs-lookup"><span data-stu-id="8ea0c-147">**Description** — more information about the component or activity identified by the rule</span></span> 
-- <span data-ttu-id="8ea0c-148">**建議動作**-回應者可能會採取以回應警示的其他動作</span><span class="sxs-lookup"><span data-stu-id="8ea0c-148">**Recommended actions** — additional actions that responders might take in response to an alert</span></span>
+<span data-ttu-id="7391f-143">使用查詢編輯器中的查詢，選取 [ **建立偵測規則** ]，並指定下列警示詳細資料：</span><span class="sxs-lookup"><span data-stu-id="7391f-143">With the query in the query editor, select **Create detection rule** and specify the following alert details:</span></span>
 
-#### <a name="rule-frequency"></a><span data-ttu-id="8ea0c-149">規則頻率</span><span class="sxs-lookup"><span data-stu-id="8ea0c-149">Rule frequency</span></span>
-<span data-ttu-id="8ea0c-150">儲存之後，新的或已編輯的自訂偵測規則會立即執行，並檢查過去30天的資料是否相符。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-150">When saved, a new or edited custom detection rule immediately runs and checks for matches from  the past 30 days of data.</span></span> <span data-ttu-id="8ea0c-151">然後，該規則會以固定間隔重新執行，並根據您所選擇的頻率 lookback 持續時間：</span><span class="sxs-lookup"><span data-stu-id="8ea0c-151">The rule then runs again at fixed intervals and lookback durations based on the frequency you choose:</span></span>
+- <span data-ttu-id="7391f-144">**偵測名稱**—偵測規則的名稱</span><span class="sxs-lookup"><span data-stu-id="7391f-144">**Detection name**—name of the detection rule</span></span>
+- <span data-ttu-id="7391f-145">**Frequency**：執行查詢和採取動作的間隔。</span><span class="sxs-lookup"><span data-stu-id="7391f-145">**Frequency**—interval for running the query and taking action.</span></span> [<span data-ttu-id="7391f-146">請參閱以下其他指導方針</span><span class="sxs-lookup"><span data-stu-id="7391f-146">See additional guidance below</span></span>](#rule-frequency)
+- <span data-ttu-id="7391f-147">**警示標題**—顯示規則所觸發警示的標題</span><span class="sxs-lookup"><span data-stu-id="7391f-147">**Alert title**—title displayed with alerts triggered by the rule</span></span>
+- <span data-ttu-id="7391f-148">**嚴重性**（由規則所識別之元件或活動的潛在風險）</span><span class="sxs-lookup"><span data-stu-id="7391f-148">**Severity**—potential risk of the component or activity identified by the rule</span></span>
+- <span data-ttu-id="7391f-149">**類別**：由規則識別的威脅元件或活動</span><span class="sxs-lookup"><span data-stu-id="7391f-149">**Category**—threat component or activity identified by the rule</span></span>
+- <span data-ttu-id="7391f-150">**MITRE ATT&CK 技術**-由規則識別的一或多個攻擊技術（如 MITRE ATT 中所述） [&CK framework](https://attack.mitre.org/)。</span><span class="sxs-lookup"><span data-stu-id="7391f-150">**MITRE ATT&CK techniques**—one or more attack techniques identified by the rule as documented in the [MITRE ATT&CK framework](https://attack.mitre.org/).</span></span> <span data-ttu-id="7391f-151">此區段針對某些警示類別（包括惡意程式碼、勒索軟體、可疑活動和不需要的軟體）隱藏。</span><span class="sxs-lookup"><span data-stu-id="7391f-151">This section is hidden for certain alert categories, including malware, ransomware, suspicious activity, and unwanted software</span></span>
+- <span data-ttu-id="7391f-152">**描述**-規則所識別之元件或活動的詳細資訊</span><span class="sxs-lookup"><span data-stu-id="7391f-152">**Description**—more information about the component or activity identified by the rule</span></span> 
+- <span data-ttu-id="7391f-153">**建議動作**-回應者可能會採取以回應警示的其他動作</span><span class="sxs-lookup"><span data-stu-id="7391f-153">**Recommended actions**—additional actions that responders might take in response to an alert</span></span>
 
-- <span data-ttu-id="8ea0c-152">**每24小時**-每24小時執行一次，檢查過去30天的資料</span><span class="sxs-lookup"><span data-stu-id="8ea0c-152">**Every 24 hours** — runs every 24 hours, checking data from the past 30 days</span></span>
-- <span data-ttu-id="8ea0c-153">**每12小時**-每12小時執行一次，檢查過去24小時的資料</span><span class="sxs-lookup"><span data-stu-id="8ea0c-153">**Every 12 hours** — runs every 12 hours, checking data from the past 24 hours</span></span>
-- <span data-ttu-id="8ea0c-154">**每3小時**，每3小時執行一次，檢查過去6個小時的資料</span><span class="sxs-lookup"><span data-stu-id="8ea0c-154">**Every 3 hours** — runs every 3 hours, checking data from the past 6 hours</span></span>
-- <span data-ttu-id="8ea0c-155">**每小時-每小時執行一次**，檢查過去2個小時的資料</span><span class="sxs-lookup"><span data-stu-id="8ea0c-155">**Every hour** — runs hourly, checking data from the past 2 hours</span></span>
+#### <a name="rule-frequency"></a><span data-ttu-id="7391f-154">規則頻率</span><span class="sxs-lookup"><span data-stu-id="7391f-154">Rule frequency</span></span>
+<span data-ttu-id="7391f-155">當您儲存或編輯新規則時，它會執行並檢查過去30天的資料是否相符。</span><span class="sxs-lookup"><span data-stu-id="7391f-155">When you save or edit a new rule, it runs and checks for matches from the past 30 days of data.</span></span> <span data-ttu-id="7391f-156">然後，此規則會以固定間隔重新執行，並根據您選擇的頻率套用 lookback 持續時間：</span><span class="sxs-lookup"><span data-stu-id="7391f-156">The rule then runs again at fixed intervals, applying a lookback duration based on the frequency you choose:</span></span>
 
-<span data-ttu-id="8ea0c-156">選取您要監視偵測的頻率，並考慮組織的容量以回應提醒。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-156">Select the frequency that matches how closely you want to monitor detections, and consider your organization's capacity to respond to the alerts.</span></span>
-
-### <a name="3-choose-the-impacted-entities"></a><span data-ttu-id="8ea0c-157">3. 選擇受影響的實體。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-157">3. Choose the impacted entities.</span></span>
-<span data-ttu-id="8ea0c-158">在查詢結果中識別欄，以找出主要受影響或受影響的實體。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-158">Identify the columns in your query results where you expect to find the main affected or impacted entity.</span></span> <span data-ttu-id="8ea0c-159">例如，查詢可能會傳回寄件者 (`SenderFromAddress` 或 `SenderMailFromAddress`) 和收件者 (`RecipientEmailAddress`) 位址。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-159">For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses.</span></span> <span data-ttu-id="8ea0c-160">識別哪些欄位代表主要受影響的實體，可協助服務匯總相關的警示、關聯事件，以及目標回應動作。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-160">Identifying which of these columns represent the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.</span></span>
-
-<span data-ttu-id="8ea0c-161">您只能為每個實體類型 (信箱、使用者或裝置) 選取一個資料行。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-161">You can select only one column for each entity type (mailbox, user, or device).</span></span> <span data-ttu-id="8ea0c-162">無法選取查詢未傳回的資料行。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-162">Columns that are not returned by your query can't be selected.</span></span>
-
-### <a name="4-specify-actions"></a><span data-ttu-id="8ea0c-163">4. 指定動作。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-163">4. Specify actions.</span></span>
-<span data-ttu-id="8ea0c-164">您的自訂偵測規則可在查詢所傳回的裝置、檔案或使用者上自動採取動作。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-164">Your custom detection rule can automatically take actions on devices, files, or users that are returned by the query.</span></span>
-
-#### <a name="actions-on-devices"></a><span data-ttu-id="8ea0c-165">裝置上的動作</span><span class="sxs-lookup"><span data-stu-id="8ea0c-165">Actions on devices</span></span>
-<span data-ttu-id="8ea0c-166">這些動作會套用至 `DeviceId` 查詢結果欄中的裝置：</span><span class="sxs-lookup"><span data-stu-id="8ea0c-166">These actions are applied to devices in the `DeviceId` column of the query results:</span></span>
-- <span data-ttu-id="8ea0c-167">**隔離裝置**—使用 MICROSOFT Defender ATP 來套用完整網路隔離，以防止裝置連接至任何應用程式或服務。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-167">**Isolate device** — uses Microsoft Defender ATP to apply full network isolation, preventing the device from connecting to any application or service.</span></span> [<span data-ttu-id="8ea0c-168">深入瞭解 Microsoft Defender ATP 電腦隔離</span><span class="sxs-lookup"><span data-stu-id="8ea0c-168">Learn more about Microsoft Defender ATP machine isolation</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- <span data-ttu-id="8ea0c-169">**收集調查套件**—收集 ZIP 檔案中的裝置資訊。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-169">**Collect investigation package** — collects device information in a ZIP file.</span></span> [<span data-ttu-id="8ea0c-170">深入瞭解 Microsoft Defender ATP 調查套件</span><span class="sxs-lookup"><span data-stu-id="8ea0c-170">Learn more about the Microsoft Defender ATP investigation package</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- <span data-ttu-id="8ea0c-171">**執行防病毒掃描**-在裝置上執行完整的 Windows Defender 防病毒掃描</span><span class="sxs-lookup"><span data-stu-id="8ea0c-171">**Run antivirus scan** — performs a full Windows Defender Antivirus scan on the device</span></span>
-- <span data-ttu-id="8ea0c-172">**開始調查**--在裝置上開始[自動調查](mtp-autoir.md)</span><span class="sxs-lookup"><span data-stu-id="8ea0c-172">**Initiate investigation** — initiates an [automated investigation](mtp-autoir.md) on the device</span></span>
-- <span data-ttu-id="8ea0c-173">**限制應用程式執行**—設定裝置上的限制，只允許以 Microsoft 發行的憑證簽署的檔案執行。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-173">**Restrict app execution** — sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run.</span></span> [<span data-ttu-id="8ea0c-174">深入瞭解 Microsoft Defender ATP 的應用程式限制</span><span class="sxs-lookup"><span data-stu-id="8ea0c-174">Learn more about app restrictions with Microsoft Defender ATP</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
-
-#### <a name="actions-on-files"></a><span data-ttu-id="8ea0c-175">檔上的動作</span><span class="sxs-lookup"><span data-stu-id="8ea0c-175">Actions on files</span></span>
-<span data-ttu-id="8ea0c-176">選取此選項時，您可以選擇對查詢結果的、、或欄中的檔案套用**隔離檔**動作 `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` 。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-176">When selected, you can choose to apply the **Quarantine file** action on files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results.</span></span> <span data-ttu-id="8ea0c-177">此巨集指令會從目前的位置刪除檔案，並將複本放入隔離區。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-177">This action deletes the file from its current location and places a copy in quarantine.</span></span>
-
-#### <a name="actions-on-users"></a><span data-ttu-id="8ea0c-178">使用者的動作</span><span class="sxs-lookup"><span data-stu-id="8ea0c-178">Actions on users</span></span>
-<span data-ttu-id="8ea0c-179">選取此選項時，會對使用者于、或欄中的查詢結果，對使用者採取「將**使用者標示為受損**」動作 `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` 。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-179">When selected, the **Mark user as compromised** action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results.</span></span> <span data-ttu-id="8ea0c-180">此動作會在 Azure Active Directory 中將使用者風險層級設為「高」，以觸發對應的身分[識別保護原則](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-180">This action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).</span></span>
-
-> [!NOTE]
-> <span data-ttu-id="8ea0c-181">Microsoft 威脅防護目前不支援自訂偵測規則的 allow 或 block 動作。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-181">The allow or block action for custom detection rules is currently not supported on Microsoft Threat Protection.</span></span>
-
-### <a name="5-set-the-rule-scope"></a><span data-ttu-id="8ea0c-182">5. 設定規則範圍。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-182">5. Set the rule scope.</span></span>
-<span data-ttu-id="8ea0c-183">設定範圍以指定規則涵蓋哪些裝置。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-183">Set the scope to specify which devices are covered by the rule.</span></span> <span data-ttu-id="8ea0c-184">此範圍會影響檢查裝置的規則，而不會影響僅檢查信箱和使用者帳戶或身分識別的規則。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-184">The scope influences rules that check devices and doesn't affect rules that check only mailboxes and user accounts or identities.</span></span>
-
-<span data-ttu-id="8ea0c-185">當您設定範圍時，您可以選取：</span><span class="sxs-lookup"><span data-stu-id="8ea0c-185">When setting the scope, you can select:</span></span>
-
-- <span data-ttu-id="8ea0c-186">所有裝置</span><span class="sxs-lookup"><span data-stu-id="8ea0c-186">All devices</span></span>
-- <span data-ttu-id="8ea0c-187">特定裝置群組</span><span class="sxs-lookup"><span data-stu-id="8ea0c-187">Specific device groups</span></span>
-
-<span data-ttu-id="8ea0c-188">只會查詢範圍中裝置的資料。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-188">Only data from devices in scope will be queried.</span></span> <span data-ttu-id="8ea0c-189">此外，只會對那些裝置採取動作。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-189">Also, actions will be taken only on those devices.</span></span>
-
-### <a name="6-review-and-turn-on-the-rule"></a><span data-ttu-id="8ea0c-190">6. 檢查並開啟規則。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-190">6. Review and turn on the rule.</span></span>
-<span data-ttu-id="8ea0c-191">檢查規則之後，按一下 [**建立**] 進行儲存。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-191">After reviewing the rule, click **Create** to save it.</span></span> <span data-ttu-id="8ea0c-192">自訂偵測規則會立即執行。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-192">The custom detection rule immediately runs.</span></span> <span data-ttu-id="8ea0c-193">它會以檢查相符專案的設定頻率重新執行，並產生警示和採取回應動作。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-193">It runs again based on configured frequency to check for matches, generate alerts, and take response actions.</span></span>
-
-## <a name="manage-existing-custom-detection-rules"></a><span data-ttu-id="8ea0c-194">管理現有的自訂偵測規則</span><span class="sxs-lookup"><span data-stu-id="8ea0c-194">Manage existing custom detection rules</span></span>
-<span data-ttu-id="8ea0c-195">您可以查看現有的自訂偵測規則清單，檢查其先前的執行，並查看其觸發的警示。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-195">You can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered.</span></span> <span data-ttu-id="8ea0c-196">您也可以根據需要執行規則，並加以修改。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-196">You can also run a rule on demand and modify it.</span></span>
-
-### <a name="view-existing-rules"></a><span data-ttu-id="8ea0c-197">查看現有規則</span><span class="sxs-lookup"><span data-stu-id="8ea0c-197">View existing rules</span></span>
-
-<span data-ttu-id="8ea0c-198">若要查看所有現有的自訂偵測規則，請流覽至**搜尋**  >  **自訂**偵測。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-198">To view all existing custom detection rules, navigate to **Hunting** > **Custom detections**.</span></span> <span data-ttu-id="8ea0c-199">頁面會列出具有下列執行資訊的所有規則：</span><span class="sxs-lookup"><span data-stu-id="8ea0c-199">The page lists all the rules with the following run information:</span></span>
-
-- <span data-ttu-id="8ea0c-200">**上次執行**時間-最後一次執行規則以檢查查詢符合專案並產生警示</span><span class="sxs-lookup"><span data-stu-id="8ea0c-200">**Last run** — when a rule was last run to check for query matches and generate alerts</span></span>
-- <span data-ttu-id="8ea0c-201">**上次執行狀態**—是否已成功執行規則</span><span class="sxs-lookup"><span data-stu-id="8ea0c-201">**Last run status** — whether a rule ran successfully</span></span>
-- <span data-ttu-id="8ea0c-202">**下一次執行**（下一個排程的執行）</span><span class="sxs-lookup"><span data-stu-id="8ea0c-202">**Next run** — the next scheduled run</span></span>
-- <span data-ttu-id="8ea0c-203">**狀態**—是否已開啟或關閉規則</span><span class="sxs-lookup"><span data-stu-id="8ea0c-203">**Status** — whether a rule has been turned on or off</span></span>
-
-### <a name="view-rule-details-modify-rule-and-run-rule"></a><span data-ttu-id="8ea0c-204">View rule details、modify rule 及 run rule</span><span class="sxs-lookup"><span data-stu-id="8ea0c-204">View rule details, modify rule, and run rule</span></span>
-
-<span data-ttu-id="8ea0c-205">若要查看有關自訂偵測規則的完整資訊，請從**搜尋**  >  **自訂**偵測中的規則清單中，選取規則的名稱。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-205">To view comprehensive information about a custom detection rule, select the name of rule from the list of rules in **Hunting** > **Custom detections**.</span></span> <span data-ttu-id="8ea0c-206">這會開啟有關該規則之一般資訊的自訂偵測規則頁面，包括警示、執行狀態和範圍的詳細資料。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-206">This opens a page about the custom detection rule with general information about the rule, including the details of the alert, run status, and scope.</span></span> <span data-ttu-id="8ea0c-207">它也會提供觸發警示及觸發動作的清單。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-207">It also provides the list of triggered alerts and triggered actions.</span></span>
-
-<span data-ttu-id="8ea0c-208">![自訂偵測規則詳細資料頁面](../../media/custom-detection-details.png)</span><span class="sxs-lookup"><span data-stu-id="8ea0c-208">![Custom detection rule details page](../../media/custom-detection-details.png)</span></span><br>
-<span data-ttu-id="8ea0c-209">*自訂偵測規則詳細資料*</span><span class="sxs-lookup"><span data-stu-id="8ea0c-209">*Custom detection rule details*</span></span>
-
-<span data-ttu-id="8ea0c-210">您也可以在此頁面上對規則採取下列動作：</span><span class="sxs-lookup"><span data-stu-id="8ea0c-210">You can also take the following actions on the rule from this page:</span></span>
-
-- <span data-ttu-id="8ea0c-211">**Run** -立即執行規則。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-211">**Run** — run the rule immediately.</span></span> <span data-ttu-id="8ea0c-212">這也會重設下一個執行的間隔。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-212">This also resets the interval for the next run.</span></span>
-- <span data-ttu-id="8ea0c-213">**編輯**—修改規則但不變更查詢</span><span class="sxs-lookup"><span data-stu-id="8ea0c-213">**Edit** — modify the rule without changing the query</span></span>
-- <span data-ttu-id="8ea0c-214">**修改查詢**-在高級搜尋中編輯查詢</span><span class="sxs-lookup"><span data-stu-id="8ea0c-214">**Modify query** — edit the query in advanced hunting</span></span>
-- <span data-ttu-id="8ea0c-215">**開啟**  / **關閉**—啟用規則或停止執行</span><span class="sxs-lookup"><span data-stu-id="8ea0c-215">**Turn on** / **Turn off** — enable the rule or stop it from running</span></span>
-- <span data-ttu-id="8ea0c-216">**刪除**—關閉規則並加以移除</span><span class="sxs-lookup"><span data-stu-id="8ea0c-216">**Delete** — turn off the rule and remove it</span></span>
-
-### <a name="view-and-manage-triggered-alerts"></a><span data-ttu-id="8ea0c-217">查看及管理觸發的警示</span><span class="sxs-lookup"><span data-stu-id="8ea0c-217">View and manage triggered alerts</span></span>
-
-<span data-ttu-id="8ea0c-218">在 [規則詳細資料] 畫面中 (**搜尋**  >  **自訂**偵測  >  **[規則名稱]**) ，移至 [**觸發警示**]，以查看與規則相符所產生的警示清單。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-218">In the rule details screen (**Hunting** > **Custom detections** > **[Rule name]**), go to **Triggered alerts** to view the list of alerts generated by matches to the rule.</span></span> <span data-ttu-id="8ea0c-219">選取警示以查看該警示的詳細資訊，並對該警示採取下列動作：</span><span class="sxs-lookup"><span data-stu-id="8ea0c-219">Select an alert to view detailed information about that alert and take the following actions on that alert:</span></span>
-
-- <span data-ttu-id="8ea0c-220">透過設定其狀態和分類 (true 或 false 警示來管理提醒) </span><span class="sxs-lookup"><span data-stu-id="8ea0c-220">Manage the alert by setting its status and classification (true or false alert)</span></span>
-- <span data-ttu-id="8ea0c-221">將警示連結到事件</span><span class="sxs-lookup"><span data-stu-id="8ea0c-221">Link the alert to an incident</span></span>
-- <span data-ttu-id="8ea0c-222">在高級搜尋中執行觸發警示的查詢</span><span class="sxs-lookup"><span data-stu-id="8ea0c-222">Run the query that triggered the alert on advanced hunting</span></span>
-
-### <a name="review-actions"></a><span data-ttu-id="8ea0c-223">審閱動作</span><span class="sxs-lookup"><span data-stu-id="8ea0c-223">Review actions</span></span>
-<span data-ttu-id="8ea0c-224">在 [規則詳細資料] 畫面中 (**搜尋**  >  **自訂**偵測  >  **[規則名稱]**) ，移至 [**觸發動作**]，以查看根據與規則相符所執行的動作清單。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-224">In the rule details screen (**Hunting** > **Custom detections** > **[Rule name]**), go to **Triggered actions** to view the list of actions taken based on matches to the rule.</span></span>
+- <span data-ttu-id="7391f-157">**每24小時**-每24小時執行一次，檢查過去30天的資料</span><span class="sxs-lookup"><span data-stu-id="7391f-157">**Every 24 hours**—runs every 24 hours, checking data from the past 30 days</span></span>
+- <span data-ttu-id="7391f-158">**每12小時**-每12小時執行一次，檢查過去24小時的資料</span><span class="sxs-lookup"><span data-stu-id="7391f-158">**Every 12 hours**—runs every 12 hours, checking data from the past 24 hours</span></span>
+- <span data-ttu-id="7391f-159">**每3小時**，每3小時執行一次，檢查過去6個小時的資料</span><span class="sxs-lookup"><span data-stu-id="7391f-159">**Every 3 hours**—runs every 3 hours, checking data from the past 6 hours</span></span>
+- <span data-ttu-id="7391f-160">**每小時-每小時執行一次**，檢查過去2個小時的資料</span><span class="sxs-lookup"><span data-stu-id="7391f-160">**Every hour**—runs hourly, checking data from the past 2 hours</span></span>
 
 >[!TIP]
-><span data-ttu-id="8ea0c-225">若要快速查看資訊，並對表格中的專案採取動作，請使用表格左邊的選取範圍欄 [&#10003;]。</span><span class="sxs-lookup"><span data-stu-id="8ea0c-225">To quickly view information and take action on an item in a table, use the selection column [&#10003;] at the left of the table.</span></span>
+> <span data-ttu-id="7391f-161">使查詢中的時間篩選與 lookback 持續時間相符。</span><span class="sxs-lookup"><span data-stu-id="7391f-161">Match the time filters in your query with the lookback duration.</span></span> <span data-ttu-id="7391f-162">Lookback 持續時間以外的結果會被忽略。</span><span class="sxs-lookup"><span data-stu-id="7391f-162">Results outside of the lookback duration are ignored.</span></span>  
 
-## <a name="related-topic"></a><span data-ttu-id="8ea0c-226">相關主題</span><span class="sxs-lookup"><span data-stu-id="8ea0c-226">Related topic</span></span>
-- [<span data-ttu-id="8ea0c-227">自訂偵測概觀</span><span class="sxs-lookup"><span data-stu-id="8ea0c-227">Custom detections overview</span></span>](custom-detections-overview.md)
-- [<span data-ttu-id="8ea0c-228">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="8ea0c-228">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="8ea0c-229">了解進階搜捕查詢語言</span><span class="sxs-lookup"><span data-stu-id="8ea0c-229">Learn the advanced hunting query language</span></span>](advanced-hunting-query-language.md)
+<span data-ttu-id="7391f-163">選取頻率，以符合您要監視偵測的程度。</span><span class="sxs-lookup"><span data-stu-id="7391f-163">Select the frequency that matches how closely you want to monitor detections.</span></span> <span data-ttu-id="7391f-164">請考慮您組織的容量，以回應提醒。</span><span class="sxs-lookup"><span data-stu-id="7391f-164">Consider your organization's capacity to respond to the alerts.</span></span>
+
+### <a name="3-choose-the-impacted-entities"></a><span data-ttu-id="7391f-165">3. 選擇受影響的實體。</span><span class="sxs-lookup"><span data-stu-id="7391f-165">3. Choose the impacted entities.</span></span>
+<span data-ttu-id="7391f-166">在查詢結果中識別欄，以找出主要受影響或受影響的實體。</span><span class="sxs-lookup"><span data-stu-id="7391f-166">Identify the columns in your query results where you expect to find the main affected or impacted entity.</span></span> <span data-ttu-id="7391f-167">例如，查詢可能會傳回寄件者 (`SenderFromAddress` 或 `SenderMailFromAddress`) 和收件者 (`RecipientEmailAddress`) 位址。</span><span class="sxs-lookup"><span data-stu-id="7391f-167">For example, a query might return sender (`SenderFromAddress` or `SenderMailFromAddress`) and recipient (`RecipientEmailAddress`) addresses.</span></span> <span data-ttu-id="7391f-168">識別哪些欄位代表主要受影響的實體，可協助服務匯總相關的警示、關聯事件，以及目標回應動作。</span><span class="sxs-lookup"><span data-stu-id="7391f-168">Identifying which of these columns represent the main impacted entity helps the service aggregate relevant alerts, correlate incidents, and target response actions.</span></span>
+
+<span data-ttu-id="7391f-169">您只能為每個實體類型 (信箱、使用者或裝置) 選取一個資料行。</span><span class="sxs-lookup"><span data-stu-id="7391f-169">You can select only one column for each entity type (mailbox, user, or device).</span></span> <span data-ttu-id="7391f-170">無法選取查詢未傳回的資料行。</span><span class="sxs-lookup"><span data-stu-id="7391f-170">Columns that are not returned by your query can't be selected.</span></span>
+
+### <a name="4-specify-actions"></a><span data-ttu-id="7391f-171">4. 指定動作。</span><span class="sxs-lookup"><span data-stu-id="7391f-171">4. Specify actions.</span></span>
+<span data-ttu-id="7391f-172">您的自訂偵測規則可在查詢所傳回的裝置、檔案或使用者上自動採取動作。</span><span class="sxs-lookup"><span data-stu-id="7391f-172">Your custom detection rule can automatically take actions on devices, files, or users that are returned by the query.</span></span>
+
+#### <a name="actions-on-devices"></a><span data-ttu-id="7391f-173">裝置上的動作</span><span class="sxs-lookup"><span data-stu-id="7391f-173">Actions on devices</span></span>
+<span data-ttu-id="7391f-174">這些動作會套用至 `DeviceId` 查詢結果欄中的裝置：</span><span class="sxs-lookup"><span data-stu-id="7391f-174">These actions are applied to devices in the `DeviceId` column of the query results:</span></span>
+- <span data-ttu-id="7391f-175">**隔離裝置**—使用 MICROSOFT Defender ATP 來套用完整網路隔離，以防止裝置連接至任何應用程式或服務。</span><span class="sxs-lookup"><span data-stu-id="7391f-175">**Isolate device**—uses Microsoft Defender ATP to apply full network isolation, preventing the device from connecting to any application or service.</span></span> [<span data-ttu-id="7391f-176">深入瞭解 Microsoft Defender ATP 電腦隔離</span><span class="sxs-lookup"><span data-stu-id="7391f-176">Learn more about Microsoft Defender ATP machine isolation</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- <span data-ttu-id="7391f-177">**收集調查套件**—收集 ZIP 檔案中的裝置資訊。</span><span class="sxs-lookup"><span data-stu-id="7391f-177">**Collect investigation package**—collects device information in a ZIP file.</span></span> [<span data-ttu-id="7391f-178">深入瞭解 Microsoft Defender ATP 調查套件</span><span class="sxs-lookup"><span data-stu-id="7391f-178">Learn more about the Microsoft Defender ATP investigation package</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- <span data-ttu-id="7391f-179">**執行防病毒掃描**-在裝置上執行完整的 Windows Defender 防病毒掃描</span><span class="sxs-lookup"><span data-stu-id="7391f-179">**Run antivirus scan**—performs a full Windows Defender Antivirus scan on the device</span></span>
+- <span data-ttu-id="7391f-180">**開始調查**--在裝置上開始[自動調查](mtp-autoir.md)</span><span class="sxs-lookup"><span data-stu-id="7391f-180">**Initiate investigation**—initiates an [automated investigation](mtp-autoir.md) on the device</span></span>
+- <span data-ttu-id="7391f-181">**限制應用程式執行**—設定裝置上的限制，只允許以 Microsoft 發行的憑證簽署的檔案執行。</span><span class="sxs-lookup"><span data-stu-id="7391f-181">**Restrict app execution**—sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run.</span></span> [<span data-ttu-id="7391f-182">深入瞭解 Microsoft Defender ATP 的應用程式限制</span><span class="sxs-lookup"><span data-stu-id="7391f-182">Learn more about app restrictions with Microsoft Defender ATP</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
+
+#### <a name="actions-on-files"></a><span data-ttu-id="7391f-183">檔上的動作</span><span class="sxs-lookup"><span data-stu-id="7391f-183">Actions on files</span></span>
+<span data-ttu-id="7391f-184">選取此選項時，您可以選擇對查詢結果的、、或欄中的檔案套用 **隔離檔** 動作 `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` 。</span><span class="sxs-lookup"><span data-stu-id="7391f-184">When selected, you can choose to apply the **Quarantine file** action on files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results.</span></span> <span data-ttu-id="7391f-185">此巨集指令會從目前的位置刪除檔案，並將複本放入隔離區。</span><span class="sxs-lookup"><span data-stu-id="7391f-185">This action deletes the file from its current location and places a copy in quarantine.</span></span>
+
+#### <a name="actions-on-users"></a><span data-ttu-id="7391f-186">使用者的動作</span><span class="sxs-lookup"><span data-stu-id="7391f-186">Actions on users</span></span>
+<span data-ttu-id="7391f-187">選取此選項時，會對使用者于、或欄中的查詢結果，對使用者採取「將 **使用者標示為受損** 」動作 `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` 。</span><span class="sxs-lookup"><span data-stu-id="7391f-187">When selected, the **Mark user as compromised** action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results.</span></span> <span data-ttu-id="7391f-188">此動作會在 Azure Active Directory 中將使用者風險層級設為「高」，以觸發對應的身分 [識別保護原則](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。</span><span class="sxs-lookup"><span data-stu-id="7391f-188">This action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="7391f-189">Microsoft 威脅防護目前不支援自訂偵測規則的 allow 或 block 動作。</span><span class="sxs-lookup"><span data-stu-id="7391f-189">The allow or block action for custom detection rules is currently not supported on Microsoft Threat Protection.</span></span>
+
+### <a name="5-set-the-rule-scope"></a><span data-ttu-id="7391f-190">5. 設定規則範圍。</span><span class="sxs-lookup"><span data-stu-id="7391f-190">5. Set the rule scope.</span></span>
+<span data-ttu-id="7391f-191">設定範圍以指定規則涵蓋哪些裝置。</span><span class="sxs-lookup"><span data-stu-id="7391f-191">Set the scope to specify which devices are covered by the rule.</span></span> <span data-ttu-id="7391f-192">此範圍會影響檢查裝置的規則，而不會影響僅檢查信箱和使用者帳戶或身分識別的規則。</span><span class="sxs-lookup"><span data-stu-id="7391f-192">The scope influences rules that check devices and doesn't affect rules that check only mailboxes and user accounts or identities.</span></span>
+
+<span data-ttu-id="7391f-193">當您設定範圍時，您可以選取：</span><span class="sxs-lookup"><span data-stu-id="7391f-193">When setting the scope, you can select:</span></span>
+
+- <span data-ttu-id="7391f-194">所有裝置</span><span class="sxs-lookup"><span data-stu-id="7391f-194">All devices</span></span>
+- <span data-ttu-id="7391f-195">特定裝置群組</span><span class="sxs-lookup"><span data-stu-id="7391f-195">Specific device groups</span></span>
+
+<span data-ttu-id="7391f-196">只會查詢範圍中裝置的資料。</span><span class="sxs-lookup"><span data-stu-id="7391f-196">Only data from devices in scope will be queried.</span></span> <span data-ttu-id="7391f-197">此外，只會對那些裝置採取動作。</span><span class="sxs-lookup"><span data-stu-id="7391f-197">Also, actions will be taken only on those devices.</span></span>
+
+### <a name="6-review-and-turn-on-the-rule"></a><span data-ttu-id="7391f-198">6. 檢查並開啟規則。</span><span class="sxs-lookup"><span data-stu-id="7391f-198">6. Review and turn on the rule.</span></span>
+<span data-ttu-id="7391f-199">檢查規則之後，請選取 [ **建立** ] 以儲存該規則。</span><span class="sxs-lookup"><span data-stu-id="7391f-199">After reviewing the rule, select **Create** to save it.</span></span> <span data-ttu-id="7391f-200">自訂偵測規則會立即執行。</span><span class="sxs-lookup"><span data-stu-id="7391f-200">The custom detection rule immediately runs.</span></span> <span data-ttu-id="7391f-201">它會以檢查相符專案的設定頻率重新執行，並產生警示和採取回應動作。</span><span class="sxs-lookup"><span data-stu-id="7391f-201">It runs again based on configured frequency to check for matches, generate alerts, and take response actions.</span></span>
+
+## <a name="manage-existing-custom-detection-rules"></a><span data-ttu-id="7391f-202">管理現有的自訂偵測規則</span><span class="sxs-lookup"><span data-stu-id="7391f-202">Manage existing custom detection rules</span></span>
+<span data-ttu-id="7391f-203">您可以查看現有的自訂偵測規則清單，檢查其先前的執行，並查看其觸發的警示。</span><span class="sxs-lookup"><span data-stu-id="7391f-203">You can view the list of existing custom detection rules, check their previous runs, and review the alerts they have triggered.</span></span> <span data-ttu-id="7391f-204">您也可以根據需要執行規則，並加以修改。</span><span class="sxs-lookup"><span data-stu-id="7391f-204">You can also run a rule on demand and modify it.</span></span>
+
+### <a name="view-existing-rules"></a><span data-ttu-id="7391f-205">查看現有規則</span><span class="sxs-lookup"><span data-stu-id="7391f-205">View existing rules</span></span>
+
+<span data-ttu-id="7391f-206">若要查看所有現有的自訂偵測規則，請流覽至**搜尋**  >  **自訂**偵測。</span><span class="sxs-lookup"><span data-stu-id="7391f-206">To view all existing custom detection rules, navigate to **Hunting** > **Custom detections**.</span></span> <span data-ttu-id="7391f-207">頁面會列出具有下列執行資訊的所有規則：</span><span class="sxs-lookup"><span data-stu-id="7391f-207">The page lists all the rules with the following run information:</span></span>
+
+- <span data-ttu-id="7391f-208">**上次執行**時間-最後一次執行規則以檢查查詢符合專案並產生警示</span><span class="sxs-lookup"><span data-stu-id="7391f-208">**Last run**—when a rule was last run to check for query matches and generate alerts</span></span>
+- <span data-ttu-id="7391f-209">**上次執行狀態**—是否已成功執行規則</span><span class="sxs-lookup"><span data-stu-id="7391f-209">**Last run status**—whether a rule ran successfully</span></span>
+- <span data-ttu-id="7391f-210">**下一次執行**（下一個排程的執行）</span><span class="sxs-lookup"><span data-stu-id="7391f-210">**Next run**—the next scheduled run</span></span>
+- <span data-ttu-id="7391f-211">**狀態**—是否已開啟或關閉規則</span><span class="sxs-lookup"><span data-stu-id="7391f-211">**Status**—whether a rule has been turned on or off</span></span>
+
+### <a name="view-rule-details-modify-rule-and-run-rule"></a><span data-ttu-id="7391f-212">View rule details、modify rule 及 run rule</span><span class="sxs-lookup"><span data-stu-id="7391f-212">View rule details, modify rule, and run rule</span></span>
+
+<span data-ttu-id="7391f-213">若要查看有關自訂偵測規則的完整資訊，請移至**搜尋**  >  **自訂**偵測，然後選取規則的名稱。</span><span class="sxs-lookup"><span data-stu-id="7391f-213">To view comprehensive information about a custom detection rule, go to **Hunting** > **Custom detections** and then select the name of rule.</span></span> <span data-ttu-id="7391f-214">然後您就可以查看規則的一般資訊，包括資訊的執行狀態和範圍。</span><span class="sxs-lookup"><span data-stu-id="7391f-214">You can then view general information about the rule, including information its run status and scope.</span></span> <span data-ttu-id="7391f-215">此頁面也會提供觸發警示和動作的清單。</span><span class="sxs-lookup"><span data-stu-id="7391f-215">The page also provides the list of triggered alerts and actions.</span></span>
+
+<span data-ttu-id="7391f-216">![自訂偵測規則詳細資料頁面](../../media/custom-detection-details.png)</span><span class="sxs-lookup"><span data-stu-id="7391f-216">![Custom detection rule details page](../../media/custom-detection-details.png)</span></span><br>
+<span data-ttu-id="7391f-217">*自訂偵測規則詳細資料*</span><span class="sxs-lookup"><span data-stu-id="7391f-217">*Custom detection rule details*</span></span>
+
+<span data-ttu-id="7391f-218">您也可以在此頁面上對規則採取下列動作：</span><span class="sxs-lookup"><span data-stu-id="7391f-218">You can also take the following actions on the rule from this page:</span></span>
+
+- <span data-ttu-id="7391f-219">**Run**-立即執行規則。</span><span class="sxs-lookup"><span data-stu-id="7391f-219">**Run**—run the rule immediately.</span></span> <span data-ttu-id="7391f-220">這也會重設下一個執行的間隔。</span><span class="sxs-lookup"><span data-stu-id="7391f-220">This also resets the interval for the next run.</span></span>
+- <span data-ttu-id="7391f-221">**編輯**—修改規則但不變更查詢</span><span class="sxs-lookup"><span data-stu-id="7391f-221">**Edit**—modify the rule without changing the query</span></span>
+- <span data-ttu-id="7391f-222">**修改查詢**-在高級搜尋中編輯查詢</span><span class="sxs-lookup"><span data-stu-id="7391f-222">**Modify query**—edit the query in advanced hunting</span></span>
+- <span data-ttu-id="7391f-223">**開啟**  / **關閉**—啟用規則或停止執行</span><span class="sxs-lookup"><span data-stu-id="7391f-223">**Turn on** / **Turn off**—enable the rule or stop it from running</span></span>
+- <span data-ttu-id="7391f-224">**刪除**—關閉規則並加以移除</span><span class="sxs-lookup"><span data-stu-id="7391f-224">**Delete**—turn off the rule and remove it</span></span>
+
+### <a name="view-and-manage-triggered-alerts"></a><span data-ttu-id="7391f-225">查看及管理觸發的警示</span><span class="sxs-lookup"><span data-stu-id="7391f-225">View and manage triggered alerts</span></span>
+
+<span data-ttu-id="7391f-226">在 [規則詳細資料] 畫面中 (**搜尋**  >  **自訂**偵測  >  **[規則名稱]**) 中，移至 [**觸發警示**]，其中會列出與規則相符所產生的警示。</span><span class="sxs-lookup"><span data-stu-id="7391f-226">In the rule details screen (**Hunting** > **Custom detections** > **[Rule name]**), go to  **Triggered alerts**, which lists the alerts generated by matches to the rule.</span></span> <span data-ttu-id="7391f-227">選取警示以查看與其相關的詳細資訊，並採取下列動作：</span><span class="sxs-lookup"><span data-stu-id="7391f-227">Select an alert to view detailed information about it and take the following actions:</span></span>
+
+- <span data-ttu-id="7391f-228">透過設定其狀態和分類 (true 或 false 警示來管理提醒) </span><span class="sxs-lookup"><span data-stu-id="7391f-228">Manage the alert by setting its status and classification (true or false alert)</span></span>
+- <span data-ttu-id="7391f-229">將警示連結到事件</span><span class="sxs-lookup"><span data-stu-id="7391f-229">Link the alert to an incident</span></span>
+- <span data-ttu-id="7391f-230">在高級搜尋中執行觸發警示的查詢</span><span class="sxs-lookup"><span data-stu-id="7391f-230">Run the query that triggered the alert on advanced hunting</span></span>
+
+### <a name="review-actions"></a><span data-ttu-id="7391f-231">審閱動作</span><span class="sxs-lookup"><span data-stu-id="7391f-231">Review actions</span></span>
+<span data-ttu-id="7391f-232">在 [規則詳細資料] 畫面中 (**搜尋**  >  **自訂**偵測  >  **[規則名稱]**) 中，移至 [**觸發的動作**]，其中會根據符合規則的相符，列出所採取的動作。</span><span class="sxs-lookup"><span data-stu-id="7391f-232">In the rule details screen (**Hunting** > **Custom detections** > **[Rule name]**), go to **Triggered actions**, which lists the actions taken based on matches to the rule.</span></span>
+
+>[!TIP]
+><span data-ttu-id="7391f-233">若要快速查看資訊，並對表格中的專案採取動作，請使用表格左邊的選取範圍欄 [&#10003;]。</span><span class="sxs-lookup"><span data-stu-id="7391f-233">To quickly view information and take action on an item in a table, use the selection column [&#10003;] at the left of the table.</span></span>
+
+## <a name="related-topic"></a><span data-ttu-id="7391f-234">相關主題</span><span class="sxs-lookup"><span data-stu-id="7391f-234">Related topic</span></span>
+- [<span data-ttu-id="7391f-235">自訂偵測概觀</span><span class="sxs-lookup"><span data-stu-id="7391f-235">Custom detections overview</span></span>](custom-detections-overview.md)
+- [<span data-ttu-id="7391f-236">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="7391f-236">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="7391f-237">了解進階搜捕查詢語言</span><span class="sxs-lookup"><span data-stu-id="7391f-237">Learn the advanced hunting query language</span></span>](advanced-hunting-query-language.md)

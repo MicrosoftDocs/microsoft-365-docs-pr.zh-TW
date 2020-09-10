@@ -1,0 +1,45 @@
+- name: Microsoft Bookings
+  href: bookings-overview.md
+  items:
+    - name: 設定
+      items:
+        - name: 取得預訂的存取權
+          href: get-access.md
+        - name: 輸入您的商務資訊
+          href: enter-business-information.md
+        - name: 定義您的服務選項
+          href: define-service-offerings.md
+        - name: 排程公休日及下班時間
+          href: schedule-closures-time-off-vacation.md
+        - name: 設定排程原則
+          href: set-scheduling-policies.md
+        - name: 自訂併發布您的預約頁面
+          href: customize-booking-page.md
+        - name: 建立手動預約
+          href: create-a-manual-booking.md
+        - name: 排程公休日及下班時間
+          href: schedule-closures-time-off-vacation.md
+        - name: 員工時數
+          href: employee-hours.md
+        - name: 將自訂及必要問題新增至預約頁面
+          href: add-questions.md
+        - name: 設定緩衝時間
+          href: set-buffer-time.md
+        - name: 度量和活動追蹤
+          href: metrics-and-activity-tracking.md
+        - name: 設定語言和時區
+          href: set-language-time-zones.md
+    - name: 取得預定應用程式
+      href: get-bookings-app.md
+    - name: Microsoft 小組中的預約應用程式和虛擬走訪
+      href: 'https://docs.microsoft.com/en-us/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
+    - name: 比較圖表-web 應用程式與小組應用程式
+      href: comparison-chart.md
+    - name: 刪除預約行事曆
+      href: delete-calendar.md
+    - name: 開啟或關閉 Microsoft 預約
+      href: turn-bookings-on-or-off.md
+    - name: Microsoft 預約的報告資訊
+      href: reporting-info.md
+    - name: 'Microsoft 預約常見問題 (常見問題) '
+      href: bookings-faq.md

@@ -936,7 +936,7 @@
 - name: 合規性方案
   items:
     - name: Microsoft 合規性方案
-      href: offering-home.md
+      href: offering-home.yml
     - name: 全域
       items:
         - name: CIS 基準
