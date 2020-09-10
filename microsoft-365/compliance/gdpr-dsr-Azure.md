@@ -3,7 +3,7 @@ title: GDPR 和 CCPA 的 Azure 資料主體要求
 description: 了解如何使用 Microsoft 產品、 服務及系統管理工具，尋找並處理個人資料以回應 DSR 要求。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 47aca22a5766b39bce513772874bca56de3420c5
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: b22baa48293e48567d801227996d080e8ee1cce2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44035451"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416647"
 ---
 # <a name="azure-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Azure 資料主體要求
 
@@ -75,10 +75,10 @@ ms.locfileid: "44035451"
 
 ### <a name="executing-dsrs-against-customer-data"></a>針對客戶資料執行 DSR
 
-Microsoft 透過 Azure 入口網站，提供了存取、刪除及匯出特定客戶資料的功能；您也可直接透過既有的應用程式開發介面 (API) 或特定服務的使用者介面 (UI) 來執行上述功能 (也稱為 *「產品內體驗」*)。 在上述服務各自的參考文件中有詳細資料，說明這類的產品內體驗。
+Microsoft 透過 Azure 入口網站，提供了存取、刪除及匯出特定客戶資料的功能；您也可直接透過既有的應用程式開發介面 (APIs) 或特定服務的使用者介面 (UIs) 來執行上述功能 (也稱為 * 產品內體驗 *)。在上述服務各自的參考文件中有詳細資料，說明這類的產品內體驗。
 
 >[!IMPORTANT]  
-> 支援產品內 DSR 的服務需要直接使用服務的應用程式開發介面 (API) 或使用者介面 (UI)，來描述適用的 CRUD (建立、讀取、更新、刪除) 作業。 因此，除了在 Azure 入口網站中執行 DSR 以外，還必須另外在指定的服務中執行 DSR，才能完成指定資料主體的完整要求。 請參閱特定服務的參考文件，以取得詳細資訊。
+> 支援產品內 DSRs 的服務，需要直接使用服務的應用程式開發介面 (API) 或使用者介面 (UI)，來描述適用的 CRUD (建立、讀取、更新、刪除) 作業。因此，除了在 Azure 入口網站中執行 DSR 以外，還必須另外在指定的服務中執行 DSRs，才能完成指定資料主體的完整要求。請參閱特定服務的參考文件，以取得詳細資訊。
 
 ### <a name="step-1-discover"></a>步驟 1：探索
 
@@ -114,7 +114,7 @@ Microsoft 提供直接透過既有的應用程式開發介面 (API) 或特定服
 
 ### <a name="step-2-access"></a>步驟 2：存取
 
-找到包含個人資料且可能會回應 DSR 的客戶資料之後，您與貴組織有權決定提供給資料主體的資料。 您可以提供實際文件的副本、經過適當刪減的版本，或認為適合分享的部分螢幕擷取畫面。 對於這些存取要求的每項回應，您都必須擷取一份文件副本，或其他包含回應資料的項目。
+找到包含個人資料且可能會回應 DSR 的客戶資料之後，您與貴組織有權決定要將哪些資料提供給資料主體。您可以提供他們實際文件的副本、經過適當刪減的版本，或您認為適合分享的部分的螢幕擷取畫面。對於這些存取要求的每項回應，您都必須擷取一份文件副本，或其他包含回應資料的項目。
 
 當您提供複本給資料主體時，可能需要移除或刪減關於其他資料主體的個人資訊，以及任何機密資訊。
 

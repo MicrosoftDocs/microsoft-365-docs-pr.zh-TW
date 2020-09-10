@@ -3,7 +3,7 @@ title: Microsoft 365 GDPR 行動計畫 — 前 30 天、90 天及以後的優先
 description: 當您工作以符合一般資料保護規定 (GDPR) 需求時可以遵循的優先行動計畫
 keywords: Microsoft 365、Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9f497c2692523ba8eb97257cac0c0a1b32c0857
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 0c0f0c8b81009a574c016e0c443d1f848d6518e2
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308354"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416211"
 ---
 # <a name="microsoft-365-gdpr-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 GDPR 行動計畫 — 前 30 天、90 天及過後的首要工作
 

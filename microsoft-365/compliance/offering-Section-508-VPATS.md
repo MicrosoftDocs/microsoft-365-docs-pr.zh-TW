@@ -3,7 +3,7 @@ title: U.S. Section 508
 description: Microsoft 提供許多用於說明這些服務之協助工具之雲端服務的詳細協助工具一致性報告。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 7f61248fc6e31d0982eedd153aa71ae3eed71de5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 1037232f7e72bd6d82cd0818dfad2ca2722144ec
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066296"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415341"
 ---
 # <a name="us-section-508"></a>U.S. Section 508
 
 ## <a name="about-us-section-508"></a>關於 U.S. Section 508
 
-美國國會修正了1998和2000中的康復法案，可要求聯邦代理商將其電子和資訊技術（EIT）產品（如軟體、硬體、電子內容及支援檔），以供殘疾人士存取。 508美國工作力康復法案：1973（29 US Code §794d）（修正）規定，聯邦機構以確保殘疾人士的訪問和使用，以及與其他聯邦員工相對的方式，以確保聯邦員工能夠搭配和使用的方式，以確保聯邦員工獲得、維護和使用 EIT。
+美國國會修正了1998和2000中的康復法案，可要求聯邦代理商 (EIT) 產品（如軟體、硬體、電子內容及支援檔），以供殘疾人士存取。 508美國工作力康復法案，1973 (29 US Code § 794d) （修正）規定，聯邦機構會以確保殘疾人士對和使用、存取和使用的方式，以及與其他聯邦員工相關的資料和 EIT。
 
 Microsoft 是美國聯邦和州政府的主要軟體和雲端服務提供者。  為了協助政府客戶進行購買決策，Microsoft 會發佈協助工具的一致性報告，描述我們的產品和服務支援508節之準則的程度。  此資訊可協助 Microsoft 客戶判定特定產品或服務是否符合其指定需求。
 
@@ -52,5 +52,5 @@ Microsoft 在開發產品和服務時，508考慮到其對所有客戶都可以�
 - [Microsoft 協助工具頁面](https://go.microsoft.com/fwlink/p/?linkid=2051579)：探索 microsoft innovates 的方式，讓每個人都能獲得更多的功能。
 - [Office 365 協助工作中心](https://go.microsoft.com/fwlink/p/?linkid=2051801)：針對身心障礙使用者提供的 Office 365 資源。
 - [企業身心障礙人士 Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890)：針對我們的產品和服務或合規性有相關協助工具問題之企業客戶所提供的專用支援。
-- [DHS 受信任的測試人員計畫](https://go.microsoft.com/fwlink/?linkid=2052171)：取得 Microsoft 參與的 Homeland 安全性（DHS）受信任的測試人員計畫之美國系的相關資訊。
+- [DHS 信任的測試人員計畫](https://go.microsoft.com/fwlink/?linkid=2052171)：取得 Homeland SECURITY (DHS 的美國部門相關資訊，) 受信任的測試人員計畫，其中有 Microsoft 參與。
 - [Microsoft 信任中心的合規性](https://www.microsoft.com/trust-center/compliance/compliance-overview)

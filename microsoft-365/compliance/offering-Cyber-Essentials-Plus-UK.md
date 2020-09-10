@@ -3,7 +3,7 @@ title: 英國網路基礎和
 description: 「網路」重點加上英國政府定義的配置，可協助組織防禦一般網路安全性威脅。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 8a95d2037c95f62b955e830b23e1d1ea46f31bf4
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 6b0d28c853c540e72c4287b141097f12ddf23419
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066426"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415573"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>英國網路基礎和
 
@@ -38,11 +38,11 @@ ms.locfileid: "44066426"
 
 ## <a name="microsoft-and-uk-cyber-essentials-plus"></a>Microsoft 和英國網路基礎，加上
 
-Microsoft Azure 已具備網路基礎知識加上徽章，符合「網路」[基本架構](https://go.microsoft.com/fwlink/p/?linkid=2099398)中所述的需求。 Azure 實際執行系統會經常進行測試和審核，以提供全球領先的規範產品群組的證據。
+Microsoft Azure 已具備網路基礎知識加上徽章，符合「網路」 [基本架構](https://go.microsoft.com/fwlink/p/?linkid=2099398)中所述的需求。 Azure 實際執行系統會經常進行測試和審核，以提供全球領先的規範產品群組的證據。
 
 [Azure 網路基礎和認證](https://aka.ms/AzureCyberEPlusCert)（適用于 azure 的全球作業系統）可供下載。
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 - [Azure 網路基礎和相容性報告](https://aka.ms/AzureCyberEPlusReport)
 - [Azure 網路基礎和認證](https://aka.ms/AzureCyberEPlusCert)

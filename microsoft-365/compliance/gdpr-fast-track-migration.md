@@ -4,7 +4,7 @@ description: Microsoft 技術指導方針 - 提交刪除要求的 FASTTRACK 移�
 keywords: FastTrack 移轉、Microsoft 365 教育版、Microsoft 365 文件、GDPR
 localization_priority: Priority
 Robots: NOFOLLOW,NOINDEX
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 7e4f7fb72d6fb2b84c85ecb55301fc2024630f58
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.openlocfilehash: 162a64535f82f24411121ed81e36078511eb8eba
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43632484"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416909"
 ---
 # <a name="fasttrack-migration-toolset-for-submitting-delete-request"></a>提交刪除要求的 FASTTRACK 移轉工具組
 
@@ -73,7 +73,7 @@ PowerShell 主控台應用程式的 PowerShell 資源庫中提供此工具組。
 
 若要提交 DSR，您必須先使用 Office 365 認證登入，輸入適當的認證會驗證您的全域系統管理員狀態，並收集租用資訊。 
 
-**Login-FastTrackAccount -ApiKey：\<FastTrack MVM 所提供的 API 金鑰\>**
+**Login-FastTrackAccount -ApiKey: \<API Key provided by FastTrack MVM\>**
 
 一旦順利登入後，系統會儲存認證和金鑰，以供與目前 PowerShell 工作階段其餘部分的 FastTrack 模組搭配使用。
 

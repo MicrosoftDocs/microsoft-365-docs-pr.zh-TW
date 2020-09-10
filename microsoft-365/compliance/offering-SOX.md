@@ -3,7 +3,7 @@ title: 2002 年沙賓法案 (SOX)
 description: 金融服務公司可以使用 Microsoft 規範報告來處理其與 Sarbanes-Oxley 法案的相容性。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,30 +14,30 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a1ee3987a762d3ff9555a8e992dda67e4a154849
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ca91606910c38664e74d650f750769121ea11957
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066306"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415351"
 ---
 # <a name="sarbanes-oxley-act-of-2002-sox"></a>2002 年沙賓法案 (SOX)
 
 ## <a name="sox-overview"></a>SOX 概述
 
-2002的 Sarbanes-Oxley 行為是由證券法和 Exchange 傭金（秒）所管理的美國聯邦法。 在其他指令中，SOX 要求上市公司有適當的內部控制結構，以驗證其財務報告是否正確反映其財務結果。
+2002的 Sarbanes-Oxley 法案是由證券和 Exchange 傭金 (SEC) 所管理的美國聯邦法律。 在其他指令中，SOX 要求上市公司有適當的內部控制結構，以驗證其財務報告是否正確反映其財務結果。
 
 SEC 不會定義或強加 SOX 認證程式。 相反地，它會為 it 所控制的公司提供廣泛的指導方針，以決定如何遵守 SOX 報表需求。
 
 ## <a name="microsoft-and-sox"></a>Microsoft 和 SOX
 
-Microsoft cloud services 客戶遵循 Sarbanes-Oxley 法案（SOX）法規的管制，可在解決其專屬的 SOX 法規遵從性義務時，使用 Microsoft 從獨立的核查公司收到的 SOC 1 類型2證明。 這種認證適用于透過財務報告內部控制的報告。
+Microsoft cloud services 客戶遵循 Sarbanes-Oxley 法案 (SOX) 可使用從獨立審核事務所接收的 SOC 1 Type 2 證明，以解決其專屬的 SOX 合規性責任。 這種認證適用于透過財務報告內部控制的報告。
 
-雖然雲端服務提供者沒有任何 SOX 憑證或驗證，但 Microsoft 可協助客戶滿足其 SOX 義務。 例如，SOX 需要內部控制財務報表的準備和審查，尤其會影響財務報告相關材料變更的準確性、完整性、有效性及公開披露的控制項。 為了協助公司，Microsoft 會維護第2級的 SOC 1 類型的證明，以用於報告大量服務，以用於建立大量的應用程式。 它是以美國認證公開會計（AICPA）聲明為基礎，證明合約18（SSAE 18）和國際標準的保證合約否。 3402（ISAE 3402）。 （此認證取代 SAS 70。）
+雖然雲端服務提供者沒有任何 SOX 憑證或驗證，但 Microsoft 可協助客戶滿足其 SOX 義務。 例如，SOX 需要內部控制財務報表的準備和審查，尤其會影響財務報告相關材料變更的準確性、完整性、有效性及公開披露的控制項。 為了協助公司，Microsoft 會維護第2級的 SOC 1 類型的證明，以用於報告大量服務，以用於建立大量的應用程式。 它是以美國簽定的公開會計會計師為基礎， (AICPA) 說明認證合約 18 (SSAE 18) 和國際標準的保證合約否。 3402 (ISAE 3402) 。  (此認證取代 SAS 70。 ) 
 
 由協力廠商審核公司所產生的「審核報告」會證實 Microsoft 控制項已正確設計，在指定日期的作業中，並在指定的時間週期內有效運作。 客戶可以查看報告，以瞭解 Microsoft control 目標和其控制項的效能，並取得補充性控制項的存取權。
 
-為了進一步協助 Azure 用戶端解決其 SOX 義務，Microsoft 已發佈[Azure 的 Sarbanes-Oxley 的 Azure 指導](https://aka.ms/Azure-SOX-Guide)方針。 本檔提供遷移的最佳作法，包括遵循 SOX 的影響，並在將 SOX 相關應用程式（Microsoft 財政部和 Microsoft 財務）遷移至 Azure 的內部經驗上進行繪製。
+為了進一步協助 Azure 用戶端解決其 SOX 義務，Microsoft 已發佈 [Azure 的 Sarbanes-Oxley 的 Azure 指導](https://aka.ms/Azure-SOX-Guide)方針。 本檔提供遷移的最佳作法，包括遵循 SOX 的影響，並在將 SOX 相關應用程式（Microsoft 財政部和 Microsoft 財務）遷移至 Azure 的內部經驗上進行繪製。
 
 在 Microsoft，我們共同分享與我們客戶相符的責任。 我們提供規範計畫的詳細資料，您可以從驗證協力廠商要求詳細的審計結果來驗證。 不過，最後，您可以決定我們的服務是否符合適用于您公司的特定法律和規定。 例如，有與 SOX 相關的安全性控制措施（例如，使用者存取雲端資源）是您的責任：您的組織必須在您的 SOX 法規遵從性的情況下，開發這些控制項的適當審核。
 
@@ -53,7 +53,7 @@ Microsoft cloud services 客戶遵循 Sarbanes-Oxley 法案（SOX）法規的管
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
-[SOC 1 Type 2](offering-SOC.md)報告：
+[SOC 1 Type 2](offering-SOC.md) 報告：
 
 - Azure 和 Power BI
 - Dynamics 365

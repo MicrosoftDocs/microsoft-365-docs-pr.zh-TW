@@ -3,7 +3,7 @@ title: 加州消費者隱私法 (CCPA) 常見問題集
 description: 有關 Microsoft 服務和加州消費者隱私法 (CCPA) 的常見問題集。
 keywords: Microsoft 365, 合規性, CCPA, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: f4f6d33d9c8898899486c1c6ab08af5113c4a42a
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ms.openlocfilehash: fa0c37d6a077810668472c2b7feeaf852e497c96
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41595950"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416333"
 ---
 # <a name="california-consumer-privacy-act-ccpa-frequently-asked-questions"></a>加州消費者隱私法 (CCPA) 常見問題集
 
@@ -130,17 +130,17 @@ CCPA 最大的差異在於核心需求，即可以選擇不向第三方銷售資
 *身分識別*
 
 - 名稱
-- 家庭住址
-- 工作地址
-- 电话号码
-- 手机号码
-- 电子邮件地址
-- 护照号码
-- 国民身份证
-- 社会安全号码（或等效物）
-- 驾驶执照
-- 物理、生理或遗传信息
-- 医疗信息
+- 住家地址
+- 公司地址
+- 電話號碼
+- 手機號碼
+- 電子郵件地址
+- 護照號碼
+- 國民身分證
+- 社會安全號碼 (或等同)
+- 駕駛執照
+- 物理、生理或遺傳資訊
+- 醫療資訊
 - 文化身分識別
 
 *財務*
@@ -153,8 +153,8 @@ CCPA 最大的差異在於核心需求，即可以選擇不向第三方銷售資
 *線上成品*
 
 - 社交媒體貼文
-- IP 地址（欧盟地区）
-- 位置/GPS 数据
+- IP 地址 (歐盟地區)
+- 位置/GPS 資料
 - Cookie
 
 **CCPA 如何適用於兒童？**

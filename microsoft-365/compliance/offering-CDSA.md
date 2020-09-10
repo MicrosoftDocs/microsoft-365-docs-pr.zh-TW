@@ -3,7 +3,7 @@ title: 內容傳遞與安全性關聯 (CDSA) 內容保護與安全性 (CPS) 標�
 description: Azure 是經內容傳遞與安全性關聯內容保護與安全性標準所認證。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b349c41f2f423f7c0fca1b66c20c571a3512fa54
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 8c87d00e76ac71be3527e9db741aea6ee7a741f4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44065858"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417307"
 ---
 # <a name="content-delivery--security-association-cdsa-content-protection--security-cps-standard"></a>內容傳遞與安全性關聯 (CDSA) 內容保護與安全性 (CPS) 標準
 

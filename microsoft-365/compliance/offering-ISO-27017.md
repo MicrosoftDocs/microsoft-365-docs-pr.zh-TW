@@ -3,7 +3,7 @@ title: ISO/IEC 27017:2015 資訊安全性控制的工作條例規定
 description: Microsoft 雲端服務已實作此「資訊安全性控制的工作條例規定」。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 329bb7c4662d6449d69c6dca9ad489bdd70a0d3f
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: c289b8c3ad2e177a9c2ee575014d8682da553352
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254226"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417687"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>資訊安全性控制的 ISO/IEC 27017:2015 工作條例規定
 

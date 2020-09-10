@@ -3,7 +3,7 @@ title: 標題 23 NYCRR 第 500 部分
 description: Microsoft 準備了指南來解釋 Azure、Office 365 和 Power BI 如何協助金融機構符合 23 NYCRR 500 需求。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e9b72f7206ff83b790cf41c00e3f7042eadf3664
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: a44c52c31377e0644a817affe068c11b19d006f5
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066660"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416221"
 ---
 # <a name="title-23-nycrr-part-500"></a>第 23 號 NYCRR 第 500 編
 

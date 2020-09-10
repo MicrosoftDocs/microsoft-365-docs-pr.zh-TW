@@ -3,7 +3,7 @@ title: 紐西蘭政府雲端計算安全性和隱私權考慮
 description: Microsoft 紐西蘭解決紐西蘭雲端計算架構中發佈的問題。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 99e7d28bea37ec282bd6358b5af81a3078dfdd38
-ms.sourcegitcommit: b7f4f1e04b27519b818d4255022b28f99fbe54af
+ms.openlocfilehash: 992f531a39fdb21a109099ed30f75591f010c476
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46852499"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417045"
 ---
 # <a name="new-zealand-government-cloud-computing-security-and-privacy-considerations"></a>紐西蘭政府雲端計算安全性和隱私權考慮
 

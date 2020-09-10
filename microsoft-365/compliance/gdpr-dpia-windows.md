@@ -4,7 +4,7 @@ description: 在使用 Microsoft 企業版的 Windows 資料處理者服務時�
 keywords: DPIA, Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: e24ef676f8ff1a918e9f74f118731061580a72fd
-ms.sourcegitcommit: 4789b261eb029d7c965421a1260acc110e6385db
+ms.openlocfilehash: df294d75f1175684751cefb65bbe52b13c47fc34
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45387408"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416687"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-data-processor-service-for-windows-enterprise"></a>資料保護影響評估：給使用 Microsoft 企業版的 Windows 資料處理者服務之資料控制器的指引
 

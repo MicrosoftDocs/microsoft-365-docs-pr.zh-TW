@@ -3,7 +3,7 @@ title: 歐洲標準 EN 301 549
 description: Microsoft 雲端由許多服務所組成，且包含在許多個別的一致性報告中。
 keywords: Microsoft 365, compliance, offerings , 合規性, 方案
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ac8829d681e27609a505e7539e835c5c58c8474e
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 80f990db632b8a050a6444970d843a826f8a036a
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064722"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415501"
 ---
 # <a name="european-standards-en-301-549"></a>歐洲標準 EN 301 549
 

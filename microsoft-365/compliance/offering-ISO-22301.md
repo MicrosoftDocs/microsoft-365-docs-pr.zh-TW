@@ -3,7 +3,7 @@ title: ISO 22301：2012 商務持續性管理標準
 description: Microsoft 已通過這些商務持續性管理標準實作的認證。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 64a43fc281e5074314ca2b272306a0733297d34e
-ms.sourcegitcommit: daad5f2f1994a812c2b9c78e7dd148d10c51f61d
+ms.openlocfilehash: 2e470972e1d1549bff5cce107666a930a9b29969
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44254432"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416231"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 商務持續性管理標準
 

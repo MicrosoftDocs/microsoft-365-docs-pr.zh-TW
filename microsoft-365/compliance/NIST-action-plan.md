@@ -4,7 +4,7 @@ description: 當您工作以符合美國國家標準與技術研究院 (National
 keywords: Microsoft 365、Microsoft 365 教育版, Microsoft 365 文件, NIST, NIST 800-53
 author: BrendaCarter
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 09/14/2018
 f1.keywords:
@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 355d83c4ad1e51e03f137a1342d00f3693c242e7
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5624bf3ebf5ce7b443cb7c6a20466e9b701f3440
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308014"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416373"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 行動計畫 — 前 30 天、90 天及過後的首要工作
 

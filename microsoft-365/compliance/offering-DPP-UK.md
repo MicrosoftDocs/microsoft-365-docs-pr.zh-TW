@@ -1,9 +1,9 @@
 ---
-title: 數位生產合作夥伴（DPP）英國
+title: 數位生產合作 (DPP) 英國
 description: Microsoft Azure 已獲獎勵 DPP 認可進行廣播的安全性標記。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,24 +14,24 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4f97b0c0d5af681ed55a119f7ebbaf6c89fb1393
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: ce688fbf933cc14884e989572e222396f4ccec52
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066630"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47415451"
 ---
-# <a name="digital-production-partnership-dpp-united-kingdom"></a>數位生產合作夥伴（DPP）英國
+# <a name="digital-production-partnership-dpp-united-kingdom"></a>數位生產合作 (DPP) 英國
 
 ## <a name="about-the-dpp"></a>關於 DPP
 
-在網站、IT 基礎結構和系統中，廣播公司對 confronting 的 cyberattacks 不斷增加。 為了回應這些威脅，[數位生產合作夥伴](https://www.thedpp.com/)（DPP）會與[**北美廣播公司協會**](https://nabanet.com/)（NABA）合作，以開發各項[廣播公司的廣播公司網路安全性需求](https://nabanet.com/wp-content/uploads/2017/08/NABA_DPP_CyberSecurity_Requirements_3.pdf)。 來自 UK 廣播公司的首席資訊安全性官員已將這些資訊認可為最低的 cybersecurity 需求。  
+在網站、IT 基礎結構和系統中，廣播公司對 confronting 的 cyberattacks 不斷增加。 為了應對這些威脅， [數位生產合夥](https://www.thedpp.com/) (DPP) 與 [**北美廣播公司協會**](https://nabanet.com/) (NABA) 合作，以開發各項廣播公司的 [廣播公司網路安全性需求](https://nabanet.com/wp-content/uploads/2017/08/NABA_DPP_CyberSecurity_Requirements_3.pdf)。 來自 UK 廣播公司的首席資訊安全性官員已將這些資訊認可為最低的 cybersecurity 需求。  
   
-然後，DPP 與廣播公司及供應商的安全性專家合作，以建立自我評估庫存，[承諾使用安全計畫廣播檢查清單](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklist.xlsx)，讓供應商向廣播公司展示其 cybersecurity 最佳作法的部署。 這項工作會產生正式[DPP，認可于](https://www.thedpp.com/tech/security/committed-to-security/)十月2017所啟動的安全性計畫，具有兩個不同的標記：一個用於廣播，一個用於實際執行。
+然後，DPP 與廣播公司及供應商的安全性專家合作，以建立自我評估庫存， [承諾使用安全計畫廣播檢查清單](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklist.xlsx)，讓供應商向廣播公司展示其 cybersecurity 最佳作法的部署。 這項工作會產生正式 [DPP，認可于](https://www.thedpp.com/tech/security/committed-to-security/) 十月2017所啟動的安全性計畫，具有兩個不同的標記：一個用於廣播，一個用於實際執行。
 
 ## <a name="microsoft-and-the-dpp"></a>Microsoft 和 DPP
 
-Microsoft Azure 已獲獎勵 DPP 在完成數位生產合作關係（DPP）自我評估問卷（已取得*安全計畫廣播檢查清單*）後，認可用於廣播的安全性標記。 它需要記錄檔與測試、驗證及安全性控制的最佳作法集合。 [Eurofins 數位測試](https://www.eurofins-digitaltesting.com/)、品質保證專家和 DPP 成員、在 Microsoft 回應中檢查和簽署，並提交至 DPP 以進行最終驗證。  
+Microsoft Azure 已獲獎勵 DPP 已在完成數位生產合作 (DPP 之後認可用於廣播的安全性標記。) 自我評估問卷， *承諾進行安全計畫廣播檢查清單*。 它需要記錄檔與測試、驗證及安全性控制的最佳作法集合。 [Eurofins 數位測試](https://www.eurofins-digitaltesting.com/)、品質保證專家和 DPP 成員、在 Microsoft 回應中檢查和簽署，並提交至 DPP 以進行最終驗證。  
   
 這表示使用 Azure 的廣播公司和其他媒體客戶可以信賴其強大的安全性和彈性服務，以協助滿足廣播網行業的獨特需求，從程式開發到傳輸。
 

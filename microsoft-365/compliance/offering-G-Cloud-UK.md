@@ -3,7 +3,7 @@ title: '英國政府-Cloud (G-Cloud) '
 description: Crown 商務服務已將 Microsoft 雲端服務分類更新為政府 Cloud v. 6。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6392c591ab5db083f00da97c50e6c388e8656815
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 2d0498ab48190758f6f21f538eefe131fb1edd70
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560770"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416049"
 ---
 # <a name="united-kingdom-government-cloud-g-cloud"></a>英國政府-Cloud (G-Cloud) 
 
@@ -37,7 +37,7 @@ Microsoft 每年都會準備檔並送出證據，證明其內部範圍的 enterp
 
 Microsoft 服務對「數位市場」的預約表示，UK 政府的代理商和合作夥伴可以使用「範圍內的服務」來儲存及處理 UK 官方政府資料（大多數政府資料）。 此外，在 G-雲端中，有超過450的 Microsoft 合作夥伴是 Microsoft 雲端服務的轉銷商。 它們可以直接斷言範圍內服務與自身應用程式中的14個原則的符合性。 不過，客戶和協力廠商必須針對未包含在 Microsoft 雲端服務規範中的任何元件，自行達成其法規遵從性。
 
- [14 cloud cloud the Cloud Security Controls Using Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/)提供客戶策略，將其服務移至 Azure，並協助符合 CESG/NSCS 所規定的英國義務。 白皮書可深入瞭解 Azure 如何用來協助解決雲端安全性主體中所述的14個控制項，並概述客戶在採用 Microsoft Azure 服務時，如何更快地進行移動，以節約成本。
+ [14 cloud cloud the Cloud Security Controls Using Microsoft Azure](https://azure.microsoft.com/resources/14-cloud-security-controls-for-uk-cloud-using-microsoft-azure/) 提供客戶策略，將其服務移至 Azure，並協助符合 CESG/NSCS 所規定的英國義務。 白皮書可深入瞭解 Azure 如何用來協助解決雲端安全性主體中所述的14個控制項，並概述客戶在採用 Microsoft Azure 服務時，如何更快地進行移動，以節約成本。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -84,7 +84,7 @@ Microsoft 服務對「數位市場」的預約表示，UK 政府的代理商和�
 
 **誰有資格使用數位 Marketplace？**
 
-所有 UK 政府部門、devolved administrations、當地機關、更寬的公用系內文，以及 arm 的長度，都有資格購買 marketplace 的服務。 如果您不確定資格，請參閱[公用部門組織的完整清單](https://www.gov.uk/government/publications/public-sector-organisations-eligible-to-use-cloudstore)。
+所有 UK 政府部門、devolved administrations、當地機關、更寬的公用系內文，以及 arm 的長度，都有資格購買 marketplace 的服務。 如果您不確定資格，請參閱 [公用部門組織的完整清單](https://www.gov.uk/government/publications/public-sector-organisations-eligible-to-use-cloudstore)。
 
 **何謂 arm 的長度正文？**
 
@@ -94,12 +94,12 @@ Microsoft 服務對「數位市場」的預約表示，UK 政府的代理商和�
 
 UK 中的 Microsoft 雲端提供與英國的資料派駐所結合的可靠性和效能。 這為客戶提供受信任的雲端服務，可協助他們符合當地的合規性和原則需求。 此外，在英國的多個資料中心內複寫資料，都為客戶提供異地冗余資料保護，以實現純雲和混合案例的業務持續性。 我們的資料中心遍佈英國的多個位置。
 
-- 您可以在[全域 azure 對應](https://azuredatacentermap.azurewebsites.net/)上看到新的 Azure 地區、uk 西和 UK 南部。
-- 對於 Office 365，英國資料中心共同組成了新的英國 Office 365 地區。 您可以在[全域 Office 365 地圖](https://o365datacentermap.azurewebsites.net/)上看到更多內容。
+- 您可以在 [全域 azure 對應](https://azuredatacentermap.azurewebsites.net/)上看到新的 Azure 地區、uk 西和 UK 南部。
+- 對於 Office 365，英國資料中心共同組成了新的英國 Office 365 地區。 您可以在 [全域 Office 365 地圖](https://o365datacentermap.azurewebsites.net/)上看到更多內容。
 
 **其他 Microsoft 歐盟資料中心位於何處？**
 
-除了英國資料中心之外，Microsoft 雲端服務在多個位置都有資料中心。 如需所有中心的最新清單，請存取我們的[資料位置頁面](https://www.microsoft.com/TrustCenter/Privacy/where-your-data-is-located)。
+除了英國資料中心之外，Microsoft 雲端服務在多個位置都有資料中心。 如需所有中心的最新清單，請存取我們的 [資料位置頁面](https://www.microsoft.com/TrustCenter/Privacy/where-your-data-is-located)。
 
 **如何取得審計員報表的複本？**
 

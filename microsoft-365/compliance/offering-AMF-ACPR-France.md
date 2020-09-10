@@ -3,7 +3,7 @@ title: 金融管理局 (AMF) 與審慎管理局 (ACPR) 法國
 description: Microsoft 為協助法國金融機構之雲端採用指導方針。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 931aab574fd5bea59c2dca997fdff02db8a2e1c6
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 21ad1cb8e0c3cabb02fc3ebe2110afe2888ab8fe
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066640"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416149"
 ---
 # <a name="financial-authority-amf-and-prudential-authority-acpr-france"></a>金融管理局 (AMF) 與審慎管理局 (ACPR) 法國
 

@@ -1,9 +1,9 @@
 ---
-title: 聯邦金融機構檢查委員會（FFIEC）
-description: Microsoft 可協助金融服務用戶端遵守聯邦金融機構檢查委員會（FFIEC）的審計要求。
+title: '聯邦金融機構檢查委員會 (FFIEC) '
+description: Microsoft 會協助金融服務用戶端遵守《聯邦金融機構檢查理事會 (FFIEC) 的審計要求。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,33 +14,33 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c30f92bbbe3458fe4751f829b02203f622414cda
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 34feea4f90ddbb4036bb08c5548696f4fcd649a9
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800094"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417317"
 ---
-# <a name="federal-financial-institutions-examination-council-ffiec"></a>聯邦金融機構檢查委員會（FFIEC）
+# <a name="federal-financial-institutions-examination-council-ffiec"></a>聯邦金融機構檢查委員會 (FFIEC) 
 
 ## <a name="ffiec-overview"></a>FFIEC 概述
 
-「聯邦金融機構檢查委員會」（FFIEC）是由五個銀行機構所組成的正式 interagency 本文，其適用于美國的美國聯邦政府檢查金融機構。 FFIEC 檢查人員教育版 Office 會發佈 IT 檢查手冊，以供來自 FFIEC 成員機構的欄位 examiners。
+「聯邦財務機構檢查委員會」 (FFIEC) 是由五個銀行機構組成的正式 interagency 本文，其適用于美國的美國聯邦政府檢查金融機構。 FFIEC 檢查人員教育版 Office 會發佈 IT 檢查手冊，以供來自 FFIEC 成員機構的欄位 examiners。
 
-[FFIEC AUDIT IT 測驗手冊](https://ithandbook.ffiec.gov/it-booklets/audit.aspx)包含這些 examiners 的指導方針，用以評估財務機構和 TSPS 的 IT 審計計畫的品質和效能。 具體而言，它包含對美洲認可的公開會計（AICPA）（如獨立的審計報告範例）的 SOC 1、SOC 2 和 SOC 3 認證報告。 不過，FFIEC 建議財務單位不只依賴這些報告中所含的資訊，但使用[FFIEC 外包技術服務 IT 測驗手冊](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)中詳細討論的驗證與監控程式。
+[FFIEC AUDIT IT 測驗手冊](https://ithandbook.ffiec.gov/it-booklets/audit.aspx)包含這些 examiners 的指導方針，用以評估財務機構和 TSPS 的 IT 審計計畫的品質和效能。 具體而言，它包含對美洲認可的公開會計會計師 (AICPA) （如獨立的審計報告範例）所提的 SOC 1、SOC 2 和 SOC 3 認證報告。 不過，FFIEC 建議財務單位不只依賴這些報告中所含的資訊，但使用 [FFIEC 外包技術服務 IT 測驗手冊](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)中詳細討論的驗證與監控程式。
 
 ## <a name="microsoft-and-ffiec"></a>Microsoft 和 FFIEC
 
 Microsoft Azure、Microsoft Power BI 和 Microsoft Office 365 是針對金融服務中心提供雲端服務的嚴格需求而建立的。 在我們的支援中，我們提供指導方針，協助您遵循資訊技術的 FFIEC 審核需求，以及在尋求您的 FFIEC 合規性義務時使用 Azure SOC attestations 的能力。
 
-加速金融服務部署：[下載 Azure 安全性和合規性 FFIEC 金融服務藍圖](https://servicetrust.officeppe.com/ViewPage/FFIECBlueprint)
+加速金融服務部署： [下載 Azure 安全性和合規性 FFIEC 金融服務藍圖](https://servicetrust.officeppe.com/ViewPage/FFIECBlueprint)
 
 為了協助金融機構用戶端符合 Azure 的 FFIEC 合規性需求，Microsoft 已開發：
 
-- [雲端安全性診斷工具 * *](https://aka.ms/FFIEC-CSDT)可協助您更有效率地進行 Azure 服務的風險評估。 工具（Excel 試算表）的功能有5個資訊安全網域（例如網路及系統安全性和資訊和風險管理），可追蹤金融服務法規和其他相關標準的需求，以及 FFIEC IT 檢查手冊。 此工具會說明 Azure 如何符合每個適用于技術服務提供者（TSPs）的需求。
+- [雲端安全性診斷工具 * *](https://aka.ms/FFIEC-CSDT) 可協助您更有效率地進行 Azure 服務的風險評估。 此工具 (Excel 試算表) 功能19資訊安全網域 (例如網路及系統安全性，以及用以追蹤金融服務法規和其他相關標準的資訊和風險管理) ，以及 FFIEC IT 檢查手冊的需求。 此工具會說明 Azure 如何符合每個適用于技術服務提供者 (TSPs) 的要求。
 - [FFIEC 管制服務工作負載的 Azure 安全性和合規性藍圖](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)，與診斷工具配套。 它提供使用 Azure 雲端服務的指引，以及客戶遵循 FFIEC 需求和風險評估指導方針的考慮。
 
-為了進一步協助您遵循 FFIEC 需求，Microsoft 雲端服務提供獨立 CPA 公司所產生的[SOC 認證報告](offering-SOC.md)。 例如，SOC 1 Type 2 認證是以 AICPA SSAE 18 standard 為基礎（請參閱 AT-C 區段105）取代 SAS 70，且適用于報告某些財務報告的控制項。 SOC 報告包含審計員對 Microsoft 控制項效能的觀點，以在指定的監控期間達到相關的控制目標。 當針對 Azure、Power BI 和 Office 365 上部署的資產採取 FFIEC 特有的合規性義務時，金融機構可使用此正式審計。
+為了進一步協助您遵循 FFIEC 需求，Microsoft 雲端服務提供獨立 CPA 公司所產生的 [SOC 認證報告](offering-SOC.md) 。 例如，SOC 1 Type 2 認證是以 AICPA SSAE 18 standard (為基礎，請參閱105節) 取代的 SAS 70，且適用于報告某些財務報告的控制項。 SOC 報告包含審計員對 Microsoft 控制項效能的觀點，以在指定的監控期間達到相關的控制目標。 當針對 Azure、Power BI 和 Office 365 上部署的資產採取 FFIEC 特有的合規性義務時，金融機構可使用此正式審計。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -57,7 +57,7 @@ Azure 和 Office 365 SOC 認證報告。
 
 **我可以使用 Microsoft 合規性與 SOC 標準，以符合我的機構的 FFIEC 合規性義務？**
 
-為了協助您符合這些義務，Microsoft 會依照上述方式，提供與 SOC 標準的相容性相關資訊。 不過，最後，您可以決定我們的服務是否遵循適用于您機構的特定法律和規定。 FFIEC 也會建議「審計報告或評論的使用者不應該只依賴報告中所含的資訊，以驗證 TSP 的內部控制環境。 FFIEC IT 測驗手冊的[外包技術手冊](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)中所述，應使用其他驗證與監控程式。
+為了協助您符合這些義務，Microsoft 會依照上述方式，提供與 SOC 標準的相容性相關資訊。 不過，最後，您可以決定我們的服務是否遵循適用于您機構的特定法律和規定。 FFIEC 也會建議「審計報告或評論的使用者不應該只依賴報告中所含的資訊，以驗證 TSP 的內部控制環境。 FFIEC IT 測驗手冊的 [外包技術手冊](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) 中所述，應使用其他驗證與監控程式。
 
 ## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
 
@@ -65,7 +65,7 @@ Azure 和 Office 365 SOC 認證報告。
 
 ## <a name="resources"></a>資源
 
-- [聯邦金融機構檢查委員會（FFIEC）](https://www.ffiec.gov/)
+- [聯邦金融機構檢查委員會 (FFIEC) ](https://www.ffiec.gov/)
 - [雲端計算和美國法規原則的符合性地圖](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - [FFIEC 審計 IT 測驗手冊](https://ithandbook.ffiec.gov/it-booklets/audit.aspx)
 - [FFIEC 外包技術服務 IT 測驗手冊](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx)

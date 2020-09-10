@@ -1,9 +1,9 @@
 ---
-title: 同盟防盜的同盟（事實）
+title: 針對著作權盜竊 (事實) 的同盟
 description: Microsoft Azure 已取得同盟的憑證，以防範 UK 中的著作權盜竊。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,22 +14,22 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e8d7ce93438ce3699dd30ac8b5f0f8818045eaf5
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: acc0ab379cdd93d873cc0b1eb2f0d729eff251c8
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066396"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416109"
 ---
-# <a name="federation-against-copyright-theft-fact"></a>同盟防盜的同盟（事實）
+# <a name="federation-against-copyright-theft-fact"></a>針對著作權盜竊 (事實) 的同盟
 
 ## <a name="fact-overview"></a>事實綜述
 
 受版權保護的內容有多種形式：圖片、影片、音樂、合約、腳本、工作流程、圖形、架構等等，以及代表許多企業的核心資產。 盜版會因非法收益或市場中斷而造成這些公司因非法的智慧財產權散佈而造成破壞。 隨著實際執行工作流程和生產後的工作流程逐漸移至雲端，其智慧財產權的黑色市場會類似于線上裝置的實體媒體。
 
-## <a name="microsoft-and-federation-against-copyright-theft-fact"></a>針對著作權盜竊的 Microsoft 和同盟（事實）
+## <a name="microsoft-and-federation-against-copyright-theft-fact"></a>針對著作權盜竊 (事實) 的 Microsoft 和同盟
 
-若要在 Microsoft 對客戶 entrust 這類資產的承諾時，對客戶進行保護的底線，microsoft Azure 已透過同盟防禦版權所有（事實）。 事實證明是以 ISO 27001 為基礎，其重點是實體和數位安全性、人員篩選和訓練，以及存取控制。 事實內容保護和安全性計畫會在法律強制執行、技術合作夥伴和行業關聯上，在抵禦著作權侵犯和內容盜竊方面的專業知識，例如對等共用、非法的光碟重複和信號竊取等方面。
+若要在 Microsoft 對客戶 entrust 這類資產的承諾時，對客戶進行保護的底線，microsoft Azure 已經過同盟的認可 (事實) 在英國。 事實證明是以 ISO 27001 為基礎，其重點是實體和數位安全性、人員篩選和訓練，以及存取控制。 事實內容保護和安全性計畫會在法律強制執行、技術合作夥伴和行業關聯上，在抵禦著作權侵犯和內容盜竊方面的專業知識，例如對等共用、非法的光碟重複和信號竊取等方面。
 
 根據 Microsoft 對事實審核的自願提交，事實審計員認可型 Azure。 Azure 是第一個用於取得事實證明的多承租人公用雲端服務，新增至 Azure 的媒體相關憑證組合，包括 CDSA 憑證和 MPAA 的正式評估。
 

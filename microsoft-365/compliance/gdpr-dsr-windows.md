@@ -4,7 +4,7 @@ description: 了解如何使用 Microsoft 產品、服務及系統管理工具�
 keywords: Microsoft 365、Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
 ROBOTS: NOINDEX, NOFOLLOW
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: bc88f8911f44c9c7b8aad8fbecbbeb073fdcb9ba
-ms.sourcegitcommit: 209a9963719f1ca85ca2075c02721e1a318a7a13
+ms.openlocfilehash: b113935ce31aa7992eab1d57f78b6cdec5919cc4
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "45374799"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416899"
 ---
 # <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>適用於 GDPR 和 CCPA 的 Windows 企業版資料主體要求的資料處理者服務 
 

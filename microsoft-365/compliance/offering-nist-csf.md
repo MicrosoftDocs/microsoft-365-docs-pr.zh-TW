@@ -1,9 +1,9 @@
 ---
-title: 國家標準和技術研究院（NIST） Cybersecurity Framework （CSF）
-description: Microsoft 雲端服務符合美國國家標準和技術協會（NIST） Cybersecurity Framework （CSF）。
+title: '國家標準和技術研究院 (NIST) Cybersecurity Framework (CSF) '
+description: Microsoft Cloud Services) Cybersecurity Framework (CSF) ，符合國家安全局的標準和技術研究院 (NIST。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: None
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,26 +14,26 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2b705d26efa513214164c05703acafe8d5d141c2
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: 90670c8102afe0dcf0814726bde36bd422e802a9
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44799978"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417085"
 ---
-# <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>國家標準和技術研究院（NIST） Cybersecurity Framework （CSF）
+# <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>國家標準和技術研究院 (NIST) Cybersecurity Framework (CSF) 
 
 ## <a name="nist-csf-overview"></a>NIST CSF 概述
 
-國家標準和技術研究院（NIST）會推廣及維護度量標準，以及協助組織評估風險的指導方針。 若要在強化聯邦網路和重要基礎結構的 cybersecurity 中，以回應 Executive 順序13636，NIST 發行了架構以改進2月2014的重要基礎結構 Cybersecurity （FICIC）。
+國家標準和技術研究院 (NIST) 會促進及維護度量標準，以及協助組織評估風險的指導方針。 如需加強聯邦網路和重要基礎結構 cybersecurity 的管理順序13636，NIST 發行了架構以提升重要基礎結構 Cybersecurity (FICIC) 月2014。
 
 FICIC 的主要優先順序是建立一組標準和做法，協助組織管理 cybersecurity 風險，同時啟用商務效率。 NIST Framework 會解決 cybersecurity 風險，而不需要為政府和私營部門組織提供額外的法規需求。
 
-FICIC 參照以全域方式辨識的標準，其中包含 NIST SP 800-53，可在 NIST 的框架 A 中找到，以[提升重要基礎結構 Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)。 FICIC 架構中的每個控制項都會對應至 FedRAMP 適中基準內的對應 NIST 800-53 控制項。
+FICIC 參照以全域方式辨識的標準，其中包含 NIST SP 800-53，可在 NIST 的框架 A 中找到，以 [提升重要基礎結構 Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)。 FICIC 架構中的每個控制項都會對應至 FedRAMP 適中基準內的對應 NIST 800-53 控制項。
 
 ## <a name="microsoft-and-the-nist-csf"></a>Microsoft 和 NIST CSF
 
-NIST Cybersecurity Framework （CSF）是一種自願架構，由標準、指導方針和最佳作法組成，以管理 Cybersecurity 相關的風險。 Microsoft 雲端服務已經過獨立，協力廠商 FedRAMP 適度和高基準審核，且已依照 FedRAMP 標準進行驗證。 此外，透過 HITRUST 執行的已驗證評估，主要的安全性和隱私權標準的開發和資格鑒定組織，會針對 NIST CSF 中指定的目標，認證 Office 365。
+NIST Cybersecurity Framework (CSF) 是一種自願架構，由標準、指導方針和最佳作法組成，以管理 Cybersecurity 相關的風險。 Microsoft 雲端服務已經過獨立，協力廠商 FedRAMP 適度和高基準審核，且已依照 FedRAMP 標準進行驗證。 此外，透過 HITRUST 執行的已驗證評估，主要的安全性和隱私權標準的開發和資格鑒定組織，會針對 NIST CSF 中指定的目標，認證 Office 365。
 
 瞭解如何使用合規性分數和我們的 Azure 安全性與合規性藍圖，加速您的 NIST Cybersecurity Framework 部署：
 
@@ -54,7 +54,7 @@ Office 365 的 NIST CSF 認證為兩年有效。
 
 ## <a name="quickly-build-nist-csf-solutions-on-azure"></a>在 Azure 上快速建立 NIST CSF 解決方案
 
-NIST Cybersecurity Framework （CSF） standard 可能是雲端的挑戰性。 幸運的是，使用 Azure，您將擁有「Azure 安全性和合規性 NIST CSF 藍圖」的頭部。 此藍圖提供的工具和指引，可讓您立即開始建立 NIST CSF 相容的解決方案。
+NIST Cybersecurity Framework (CSF) standard 可能是雲端的挑戰。 幸運的是，使用 Azure，您將擁有「Azure 安全性和合規性 NIST CSF 藍圖」的頭部。 此藍圖提供的工具和指引，可讓您立即開始建立 NIST CSF 相容的解決方案。
 
 - [開始使用 Azure NIST CSF 藍圖](https://aka.ms/Azure-Blueprint-DoD-NIST)
 
@@ -68,7 +68,7 @@ NIST Cybersecurity Framework （CSF） standard 可能是雲端的挑戰性。 �
 
 **是否有獨立的 assessor 驗證 Azure 政府、Dynamics 365 和 Office 365 是否支援 NIST CSF 需求？**
 
-是的，協力廠商評估組織已 attested Azure 政府雲端服務產品符合 NIST Cybersecurity Framework （CSF）風險管理慣例（如在架構中所定義，以改進重要基礎結構 Cybersecurity，1.0 年2月 2014 12 日，版本）。 NIST CSF 會對應至 FedRAMP 適中的控制項架構，而獨立的 assessor 已根據 FedRAMP 適中的基準評估 Dynamics 365。 此外，Office 365 會在六月2018中取得來自 HITRUST[的 NIST CSF 信](https://aka.ms/O365NISTCSFcertification)。
+是的，協力廠商評估組織已 attested Azure 政府雲端服務產品符合 NIST Cybersecurity Framework (CSF) 風險管理慣例（如架構中所定義，用以改善重要基礎結構 Cybersecurity，1.0 年2月 2014 12 日版本）。 NIST CSF 會對應至 FedRAMP 適中的控制項架構，而獨立的 assessor 已根據 FedRAMP 適中的基準評估 Dynamics 365。 此外，Office 365 會在六月2018中取得來自 HITRUST [的 NIST CSF 信](https://aka.ms/O365NISTCSFcertification) 。
 
 **Microsoft Cloud Services 如何示範是否符合架構？**
 
@@ -84,7 +84,7 @@ NIST Cybersecurity Framework （CSF） standard 可能是雲端的挑戰性。 �
 
 **美國政府視為重要基礎結構的組織為何？**
 
-根據 Homeland 的[安全性](https://www.dhs.gov/critical-infrastructure-sectors)，這包括下列部門中的組織：化學、商業設施、通訊、重要製造業、Dams、國防工業基礎、緊急服務、能源、金融服務、食物和農業、政府設施、保健和公開健康情況、資訊技術、核（Reactors 材料和廢物）、運輸系統和水線（和 Wastewater）。
+根據 Homeland 的 [安全性](https://www.dhs.gov/critical-infrastructure-sectors)，這包括下列部門中的組織：化學、商業設施、通訊、重要製造業、Dams、國防工業基礎、緊急服務、能源、金融服務、食物和農業、政府設施、保健和公開健康情況、資訊技術、核 (Reactors 材料和廢物) 、運輸系統和水 (和 Wastewater) 。
 
 **Office 365 的範圍內服務有哪些？**
 
@@ -104,7 +104,7 @@ Microsoft 提供最全面的選項，與其他雲端服務提供者相較。 為
 ## <a name="resources"></a>資源
 
 - [Microsoft 雲端服務授權](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
-- [將 Microsoft 網路服務對應至： NIST Cybersecurity Framework （CSF）、CIS 控制項、ISO27001：2013和 HITRUST CSF](https://go.microsoft.com/fwlink/p/?linkid=2074025)
+- [將 Microsoft 網路服務對應至： NIST Cybersecurity Framework (CSF) 、CIS 控制項、ISO27001：2013和 HITRUST CSF](https://go.microsoft.com/fwlink/p/?linkid=2074025)
 - [改進重要基礎結構 Cybersecurity 的架構](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [在增強聯邦網路和重要基礎結構的 Cybersecurity 方面的總統執行順序](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft 政府雲端](https://go.microsoft.com/fwlink/p/?linkid=2087246)

@@ -3,7 +3,7 @@ title: GDPR 和 CCPA 的 Intune 資料主體要求
 description: 瞭解如何使用 Microsoft Intune 以尋找並處理個人資料，並回應客戶提出的 DSR 和 CCPA 要求。
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, GDPR, CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-mar2020
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: a9dd161edd740aa97e97afa02a6c53933a6ac211
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 56ccf1cb2cb858c87d6d8791734d4cfb2bbf098a
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44817652"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416607"
 ---
 # <a name="intune-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Intune 資料主體要求
 

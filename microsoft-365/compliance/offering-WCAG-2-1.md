@@ -3,7 +3,7 @@ title: 網頁內容協助工具指導方針
 description: Microsoft 發行了 WCAG AA 報告，其中反映完整的產品或服務，或可個別安裝的部分產品。
 keywords: Microsoft 365, compliance, offerings , 合規性, 方案
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 35f565eb9adb2283238a753fe5e46c208387afb0
-ms.sourcegitcommit: 7f307b4f583b602f11f69adae46d7f3bf6982c65
+ms.openlocfilehash: 76ebe71f5ce4f3c33df1499171fab5ff9e36d29f
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44066276"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417467"
 ---
 # <a name="web-content-accessibility-guidelines"></a>網頁內容協助工具指導方針
 

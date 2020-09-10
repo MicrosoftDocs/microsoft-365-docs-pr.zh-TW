@@ -3,7 +3,7 @@ title: 可信資訊安全評估交換體系 (TISAX) 德國
 description: 獨立、ENX 認可的稽核者，針對 TISAX 安全性需求評估 Microsoft 雲端資料中心。
 keywords: Microsoft 365, 合規性, 方案
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c6f876ee3285f68f6488f83fdc978e175c26f3eb
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: fe9186b45268fee11d011d6a941e244071e31a42
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357289"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417537"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>可信資訊安全評估交換體系 (TISAX) 德國
 

@@ -3,7 +3,7 @@ title: 符合 GDPR 的責任整備檢查清單
 description: 在本文中，您將了解有關責任整備檢查清單使用 Microsoft 產品與服務時，以存取支援 GDPR 所需資訊。
 keywords: Microsoft 365、Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 154ba945db3bd5cfab25881bfdbbdc6738a3dfd7
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 8bee0c58075c535b5175d9f5ecbed6c6f2f5044c
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036111"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416983"
 ---
 # <a name="support-your-gdpr-program-with-accountability-readiness-checklists"></a>使用責任整備檢查清單支援 GDPR 計劃
 

@@ -3,7 +3,7 @@ title: 依據 GDPR 和 CCPA 的 Office 365 資料主體要求
 description: 了解 GDPR 和 CCPA 下的使用者權利，以及 Office 365 如何協助企業找出並處理資料，以回應 DSR。
 keywords: Office 365、DSR、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR、CCPA
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: df3288d8b54d60bc34bbc81132b6d6bc85cd18f2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f08d0adf58d0e6028fddabf7c88bc7c0bcf8aecb
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307714"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416627"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Office 365 資料主體要求
 
