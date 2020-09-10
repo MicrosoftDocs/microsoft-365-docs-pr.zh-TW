@@ -3,7 +3,7 @@ title: 符合 GDPR 的 Microsoft 支援服務與專業服務責任整備程度�
 description: 提供使用 Microsoft 專業服務與支援服務時，便於存取支援 GDPR 所需資訊的方式。
 keywords: ARC、責任整備程度檢查清單、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 05bf6a14e27e716e4e30b6ad3715f3cdd4f49eec
-ms.sourcegitcommit: e741930c41abcde61add22d4b773dbf171ed72ac
+ms.openlocfilehash: f6242ebddf6597d3ce4256f4ddfc0ab9ac59c8f5
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558134"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422417"
 ---
 # <a name="microsoft-support-and-professional-services-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Microsoft 支援服務與專業服務責任整備程度檢查清單
 
@@ -139,7 +139,7 @@ ms.locfileid: "42558134"
 |  9 <a name="9"> </a> | [Microsoft 專業服務針對客戶資料保護影響評估的重要資訊](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-prof-services) | |
 | 10 <a name="10"> </a> | [ISO 27001 稽核報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=7e71ff67-7609-43e6-9d68-4ceea0b41b50&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) | |
 | 11 <a name="11"> </a> | Microsoft 專業服務 ISO/IEC 27001:2013 ISMS 適用性聲明 | 透過客戶帳戶管理小組的要求 SOA。|
-| 12 <a name="12"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.md) | |
+| 12 <a name="12"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.yml) | |
 | 13 <a name="13"> </a> | [Microsoft DPO 資訊](https://docs.microsoft.com/microsoft-365/compliance/gdpr-data-protection-officer) | |
 
 ## <a name="learn-more"></a>深入了解

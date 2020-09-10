@@ -4,7 +4,7 @@ description: 當您工作以符合國際標準組織 (ISO) 需求時可以遵循
 keywords: Microsoft 365, Microsoft 365 教育版, Microsoft 365 文件, ISO, ISO 27001
 author: BrendaCarter
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ audience: itpro
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7415fd8f455d90e791f9dfa6669378e78a5d741d
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a90ed0603a6c64797cafcae66721b86ec109d0b6
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308286"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417887"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 行動計畫 — 前 30 天、90 天及過後的首要工作
 

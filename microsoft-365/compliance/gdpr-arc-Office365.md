@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 07f63fd590c5ce9f5fabee942056a1f9c261bf55
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 84554b0f77ea469635dab6f77f8416c509e6bf84
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307834"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422383"
 ---
 # <a name="accountability-readiness-checklist-for-microsoft-365"></a>適用於 Microsoft 365 的責任整備檢查清單
 
@@ -145,7 +145,7 @@ ms.locfileid: "47307834"
 | 10 <a name="10"> </a> | [客戶資料保護影響評估適用的 Office 365 重要資訊](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) |
 | 11 <a name="11"> </a> | [SOC 2 Type 2 稽核報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=0cf2cce9-972d-4a64-865f-b8e6eba4ed5e&docTab=4ce99610-c9c0-11e7-8c2c-) |
 | 12 <a name="12"> </a> | [Microsoft Office 365 ISO/IEC 27001:2013 ISMS 適用性聲明](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=d7255c90-03e3-48a6-938d-e69d8f723c7a&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 13 <a name="13"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.md) |
+| 13 <a name="13"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.yml) |
 | 14 <a name="14"> </a> | [Office 365 ISMS 手冊](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=72821313-c175-4857-b1f7-e3c5e6eb2db4&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
 | 15 <a name="15"> </a> | [使用租用戶限制管理 SaaS 雲端應用程式的存取](https://docs.microsoft.com/azure/active-directory/active-directory-tenant-restrictions) |
 | 16 <a name="16"> </a> | [在 Office 365 安全與合規性中心搜尋稽核記錄](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) |

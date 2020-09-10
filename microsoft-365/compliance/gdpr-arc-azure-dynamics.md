@@ -3,7 +3,7 @@ title: 符合 GDPR 的 Dynamics 365 與 Azure 責任整備程度檢查清單
 description: 提供使用 Microsoft Azure 時，便於存取支援 GDPR 所需資訊的方式。
 keywords: ARC Azure、Microsoft 365、Microsoft 365 教育版、Microsoft 365 文件、GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd94ab9bfcc4ca1c9e8f6b99364fa99dde5ff644
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: eb2d4ca52acce338e3afb31852409d441e52cfe0
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815256"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422461"
 ---
 # <a name="azure-and-dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Dynamics 365 與 Azure 責任整備程度檢查清單
 
@@ -144,7 +144,7 @@ ms.locfileid: "46815256"
 | 11 <a name="11"> </a> | [Azure 針對客戶資料保護影響評估的重要資訊](https://aka.ms/DPIAAzure) |
 | 12 <a name="12"> </a> | [SOC 2 Type 2 稽核報告 [12]](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=3c7123a5-f507-48b7-8dce-cd948e6150e6&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_SOC_%2F_SSAE_16_Reports) |
 | 13 <a name="13"> </a> | [Microsoft Azure (全部版本) ISO/IEC 27001:2013 ISMS 適用性聲明](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports) |
-| 14 <a name="14"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.md)  |
+| 14 <a name="14"> </a> | [Microsoft 信任中心合規性供應項目](offering-home.yml)  |
 | 15 <a name="15"> </a> | [Microsoft DPO 資訊](https://aka.ms/GDPRDPO) |
 | 16 <a name="16"> </a> | [Dynamics 365 在客戶資料保護影響方面的重要資訊](https://servicetrust.microsoft.com/ViewPage/GDPRDPIA?command=Download&downloadType=Document&downloadId=ef2902bb-3137-4f4a-8ca6-af35afaa6bec&docTab=2ba9a350-555c-11e8-b74a-77b1f31da06e_DPIA) |
 | 17 <a name="17"> </a> | [Dynamics 365 中的稽核和報告](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-use-comprehensive-auditing) |

@@ -3,7 +3,7 @@ title: 一般資料保護規定
 description: 了解一般資料保護規定 (GDPR) 的 Microsoft 技術指導及尋找實用資訊。
 keywords: Microsoft 365、Microsoft 365 教育版, Microsoft 365 文件, GDPR
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d1e6730d215fcef6bd0cad6244c82b960ed39ce
-ms.sourcegitcommit: 89636f35b0194986f156302fc1bb96af25d4805b
+ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
+ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44800018"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47422451"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般資料保護摘要
 
@@ -209,7 +209,7 @@ Microsoft 長期以來一直使用標準合同條款 (也稱為示範條款) 作
 
 **有哪些其他 Microsoft 合規性方案？**
 
-身為客戶幾乎遍及全世界每個國家/地區的全球公司，Microsoft 具備強固的合規性產品組合來協助我們的客戶。 若要檢視合規性方案的完整清單，包括 FedRamp、HIPAA/HITECH、ISO 27001、ISO 27002、ISO 27018、NIST 800-171、UK G-Cloud， 以及其他等等，請參閱[合規性方案主題](offering-home.md)。
+身為客戶幾乎遍及全世界每個國家/地區的全球公司，Microsoft 具備強固的合規性產品組合來協助我們的客戶。 若要檢視合規性方案的完整清單，包括 FedRamp、HIPAA/HITECH、ISO 27001、ISO 27002、ISO 27018、NIST 800-171、UK G-Cloud， 以及其他等等，請參閱[合規性方案主題](offering-home.yml)。
 
 **GDPR 對我的公司有何影響？**
 

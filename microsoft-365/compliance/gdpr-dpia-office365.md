@@ -3,7 +3,7 @@ title: 適用於使用 Office 365 之資料控制者的指引
 description: 本文件為資料控制者提供 Office 365 相關資訊，協助他們判斷是否需要 DPIA，以及應包含哪些詳細資料。
 keywords: DPIA、Office 365、Microsoft 365 文件、GDPR
 ms.localizationpriority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: d0fe3092d0ea3004097aba9a86e1916025b87841
-ms.sourcegitcommit: 0da80ba7b504841c502ab06fea659a985c06fe8f
+ms.openlocfilehash: 2408445598ab1e474ac1967be6e13f19887144a8
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "43547563"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417897"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-office-365"></a>資料保護影響評估：適用於使用 Office 365 之資料控制者的指引 
 
