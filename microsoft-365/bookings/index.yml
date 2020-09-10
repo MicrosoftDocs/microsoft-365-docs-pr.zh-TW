@@ -1,0 +1,41 @@
+### YamlMime:Hub
+title: Microsoft Bookings
+summary: 瞭解如何設定 Microsoft 預約，以在約會基礎上為客戶提供服務。
+brand: m365
+metadata:
+  title: Microsoft Bookings
+  description: 瞭解如何設定 Microsoft 預約，以在約會基礎上為客戶提供服務。
+  ms.service: bookings
+  ms.topic: hub-page
+  author: dmaguire
+  ms.author: dmaguire
+  manager: serdars
+  audience: Admin
+  ms.date: 09/04/2020
+  ms.openlocfilehash: 8c7158c72700a7db866051a4de10bbc890ad4478
+  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "47419384"
+additionalContent:
+  sections:
+  - items:
+    - title: 何謂 Microsoft 預約？
+      summary: 使用以 web 為基礎的預約行事曆和應用程式（包括員工的 Outlook 整合及自動通知電子郵件）來排程和管理約會。
+      url: bookings-overview.md
+    - title: 輸入您的商務資訊
+      summary: 在 Microsoft 預約中輸入您建立的關於我們頁面，包括公司名稱、位址、電話號碼、網站 URL、徽標和上班時間。
+      url: enter-business-information.md
+    - title: 取得預定應用程式
+      summary: 變更色彩主題，並設定您的外部客戶預定頁面的外觀。
+      url: customize-booking-page.md
+    - title: 將員工新增至預定
+      summary: 建立您的教職員工清單，並管理人員姓名、電話號碼和電子郵件地址等人員成員詳細資料。
+      url: add-staff.md
+    - title: 排程公休日、休息時間和休假時間
+      summary: 將 office 公休日和員工從預約行事曆中登出，讓員工在指定時間內標示為無法預約。
+      url: schedule-closures-time-off-vacation.md
+    - title: Microsoft 預定中的員工工作時間
+      summary: 在 Microsoft 預約中設定員工的工作時數和可用性。
+      url: employee-hours.md

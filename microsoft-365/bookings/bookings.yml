@@ -1,0 +1,52 @@
+### YamlMime:Landing
+title: Microsoft Bookings
+summary: 使用 Microsoft 預約排程和管理約會。 包含與 Outlook 和自動通知的整合。
+metadata:
+  title: Microsoft Bookings
+  description: 使用 Microsoft 預約排程和管理約會。 包含與 Outlook 和自動通知的整合。
+  ms.service: bookings
+  ms.topic: landing-page
+  author: dmaguire
+  ms.author: dmaguire
+  manager: serdars
+  audience: Admin
+  ms.date: 07/21/2020
+  ms.openlocfilehash: 7fb9456dfeb6481aebe1f81307a30c4cfad0ec02
+  ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+  ms.translationtype: MT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 09/09/2020
+  ms.locfileid: "47419425"
+landingContent:
+- title: 關於 Microsoft 預定
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 何謂 Microsoft 預約？
+      url: bookings-overview.md
+  - linkListType: download
+    links:
+    - text: 取得預定應用程式
+      url: get-bookings-app.md
+- title: 設定 Microsoft 預定
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 輸入您的商務資訊
+      url: enter-business-information.md
+    - text: 設定排程原則
+      url: set-scheduling-policies.md
+    - text: 定義您的服務選項
+      url: define-service-offerings.md
+    - text: 設定員工工作時數
+      url: employee-hours.md
+    - text: 自訂併發布您的預約頁面
+      url: customize-booking-page.md
+    - text: 建立和人員預定您的預約
+      url: create-a-manual-booking.md
+- title: 邀請人員參加預定約會
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 自訂您的預約頁面
+      url: customize-booking-page.md

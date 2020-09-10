@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 說明如何將 Microsoft 365 授權指派給使用者帳戶（個別或根據群組成員資格）。
-ms.openlocfilehash: 60936e52bffa58d50419f771e670848ee76271fd
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e132a8c2d65c401899624b9d255050385f2cb721
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688301"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417095"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>將 Microsoft 365 授權指派給使用者帳戶
 
@@ -58,5 +58,5 @@ ms.locfileid: "46688301"
 
 - [實施安全性](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [部署用戶端軟體，例如 Microsoft 365 應用程式](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
-- [在 Microsoft 365 中設定行動裝置管理](https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [在 Microsoft 365 中設定基本行動性和安全性](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
 - [設定服務和應用程式](configure-services-and-applications.md)

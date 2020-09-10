@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ccb7b049ee3bc2aa25847886b57341ae936d20b9
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: c24f5891573b8541a97a35d228c57642766fe4a0
+ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649340"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47419141"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>尋找跨裝置、電子郵件、應用程式和身分識別的威脅
 
@@ -62,9 +62,6 @@ EmailEvents
 
 您可以合併或加入 [IdentityInfo 表格](advanced-hunting-identityinfo-table.md)，以取得帳戶名稱及其他帳戶資訊。 下列查詢會從 [EmailEvents 資料表](advanced-hunting-emailevents-table.md) 取得網路釣魚和惡意程式碼偵測清單，然後將該資訊加入表格， `IdentityInfo` 以取得每個收件者的詳細資訊。 
 
->[!Tip]
-> 此查詢 `kind=inner` 會使用來指定 [內部聯接](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)，以避免重復資料刪除左側的值或收件者的電子郵件地址。
-
 ```kusto
 EmailEvents
 | where Timestamp > ago(7d)
@@ -81,6 +78,9 @@ Department, City, Country
 
 ### <a name="get-device-information"></a>取得裝置資訊
 「 [高級搜尋架構](advanced-hunting-schema-tables.md) 」在各種表格中提供大量的裝置資訊。 例如， [DeviceInfo 表格](advanced-hunting-deviceinfo-table.md) 會根據定期匯總的事件資料，提供完整的裝置資訊。 此查詢會使用 `DeviceInfo` 表格來檢查是否有可能已遭破壞的使用者 (`<account-name>`) 已登入任何裝置，然後列出已在那些裝置上觸發的警示。
+
+>[!Tip]
+> 此查詢 `kind=inner` 會使用來指定 [內部聯接](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)，以避免重復資料刪除的左側值 `DeviceId` 。
 
 ```kusto
 DeviceInfo

@@ -3,7 +3,7 @@ title: 保護您的 Microsoft 365 全域管理員帳戶
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/08/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 本文提供保護 Microsoft 365 訂閱之全域管理員存取的相關資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08e0960e7150395b2997dbd9ff0a1818822e17e2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb8f85b3ee5c0f72c2dd93517e68784459c32e7e
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695595"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47416383"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>保護您的 Microsoft 365 全域管理員帳戶
 
@@ -43,13 +43,14 @@ Microsoft 提供的功能可協助保護您的組織，但只有在您使用這�
     
 2. 為您專屬的 Microsoft 365 全域管理員帳戶設定多重要素驗證，並使用最強形式的次要驗證。
     
-> [!附注] 雖然此篇文章著重于全域管理員帳戶，但您應該考慮是否有其他具有廣域許可權的帳戶，以存取您訂閱中的資料（例如 eDiscovery 管理員或安全性或合規性管理員帳戶），應以相同的方式加以保護。 <br > 您可以建立全域管理員帳戶，而不需要新增任何授權。
+> [!Note]
+> 雖然本文著重于全域管理員帳戶，您還是應該考慮是否有其他具有廣域許可權的帳戶，以存取您訂閱中的資料，例如 eDiscovery 管理員或安全性或合規性管理員帳戶，都應該以相同的方式加以保護。 <br > 您可以建立全域管理員帳戶，而不需要新增任何授權。
   
 ## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>步驟 1： 建立專屬的 Microsoft 365 全域管理員帳戶，並只在必要時加以使用
 
 需要全域管理員許可權的系統管理工作相對較少，例如指派角色給使用者帳戶。 因此，請執行下列步驟，而不是使用已獲指派全域系統管理員角色的日常使用者帳戶：
   
-1. 決定已指派全域系統管理員角色的使用者帳戶集。 您可以使用 Azure Active (Azure AD) Directory PowerShell for Graph] 命令來執行這項操作：
+1. 決定已指派全域系統管理員角色的使用者帳戶集。 您可以使用下列 Azure Active (Azure AD) Directory PowerShell for Graph] 命令來執行這項操作：
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
@@ -120,15 +121,15 @@ Microsoft 提供的功能可協助保護您的組織，但只有在您使用這�
     
 如果所需強驗證方法的安全性基礎結構不存在，且無法在 Microsoft 365 MFA 中運作，我們強烈建議您使用 Microsoft 驗證程式應用程式、電話通話或為全域系統管理員帳戶傳送至智慧型電話的電子郵件驗證碼，設定具有 MFA 的專屬全域管理員帳戶，以作為過渡的安全性度量單位。 請勿留下專屬全域管理員帳戶，除非 MFA 提供額外的保護。
   
-如需詳細資訊，請參閱 [規劃 Microsoft 365 部署的多重要素驗證](https://docs.microsoft.com/office365/admin/security-and-compliance/multi-factor-authentication-plan)。
+如需詳細資訊，請參閱 [Microsoft 365 的 MFA](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)。
   
 若要使用 MFA 和 PowerShell 連接至 Microsoft 365 服務，請參閱下列文章：
 
 - [針對使用者帳戶、群組和授權的 Microsoft 365 PowerShell](connect-to-microsoft-365-powershell.md)
 - [Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
-- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps#connect-to-exchange-online-powershell-by-using-mfa)
+- [Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
 - [SharePoint Online](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
-- [商務用 skype Online] 管理-使用中商務用 skype-線上-365-a-a-a-a-a-a-a-a-a-a-a-a-a a-a-a) -a-a
+- [商務用 Skype Online](manage-skype-for-business-online-with-microsoft-365-powershell.md#connect-using-a-skype-for-business-online-administrator-account-with-multi-factor-authentication)
 
 ## <a name="additional-protections-for-enterprise-organizations"></a>企業組織的其他保護
 
@@ -156,7 +157,7 @@ PIM 可與 Azure AD Premium P2 搭配使用，其隨附于 Microsoft 365 企業�
 
 在伺服器上執行的 SIEM 軟體會即時分析應用程式和網路硬體所建立的安全性警示和事件。 若要讓您的 SIEM 伺服器在其分析和報告功能中包含 Microsoft 365 的安全性警示和事件，請整合 Azure AD 至您的 SEIM。 請參閱 [Azure 記錄整合簡介](https://docs.microsoft.com/azure/security/security-azure-log-integration-overview)。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 如果您正在設定 Microsoft 365 訂閱的身分識別，請參閱：
 
@@ -164,6 +165,6 @@ PIM 可與 Azure AD Premium P2 搭配使用，其隨附于 Microsoft 365 企業�
 - 如果您使用的是混合身分識別，[準備目錄同步](prepare-for-directory-synchronization.md)處理
 
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 安全性藍圖](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)。
