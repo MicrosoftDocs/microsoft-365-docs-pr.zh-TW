@@ -4,7 +4,7 @@ description: 此文章包含 GDPR 的 Microsoft 歐盟資料保護長 (DPO) 相�
 keywords: Microsoft 365、Microsoft 365 教育版, Microsoft 365 文件, GDPR
 ms.custom: seo-marvel-apr2020
 localization_priority: Priority
-ms.prod: Microsoft-365-enterprise
+ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -16,44 +16,44 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 885055aa0684dc0ad0788a7e056c51b6cfd4c587
-ms.sourcegitcommit: 7c1b34205746ff0690ffc774a74bdfd434256cf5
+ms.openlocfilehash: 140d66c48feed0534c377fb03673bb575e62527d
+ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049769"
+ms.lasthandoff: 09/09/2020
+ms.locfileid: "47417937"
 ---
-# <a name="microsofts-data-protection-officer"></a><span data-ttu-id="25fab-104">Microsoft 的資料保護長</span><span class="sxs-lookup"><span data-stu-id="25fab-104">Microsoft's data protection officer</span></span>
+# <a name="microsofts-data-protection-officer"></a><span data-ttu-id="91b33-104">Microsoft 的資料保護長</span><span class="sxs-lookup"><span data-stu-id="91b33-104">Microsoft's data protection officer</span></span>
 
-<span data-ttu-id="25fab-p101">Microsoft 已指定歐盟資料保護長 (DPO) 擔任 Microsoft 工程暨業務群的獨立顧問，並協助確保所有建議的個人資料處理皆符合歐盟法律要求與 Microsoft 的企業標準。這個角色旨在符合第 37-39 章中說明的 GDPR 準則。</span><span class="sxs-lookup"><span data-stu-id="25fab-p101">Microsoft has designated a European Union Data Protection Officer (DPO) to be an independent advisor for Microsoft's engineering and business groups and to help ensure that all proposed processing of personal data meets EU legal requirements and Microsoft's corporate standards. The role was designed to meet the GDPR criteria set out in Articles 37-39.</span></span>
+<span data-ttu-id="91b33-p101">Microsoft 已指定歐盟資料保護長 (DPO) 擔任 Microsoft 工程暨業務群的獨立顧問，並協助確保所有建議的個人資料處理皆符合歐盟法律要求與 Microsoft 的企業標準。這個角色旨在符合第 37-39 章中說明的 GDPR 準則。</span><span class="sxs-lookup"><span data-stu-id="91b33-p101">Microsoft has designated a European Union Data Protection Officer (DPO) to be an independent advisor for Microsoft's engineering and business groups and to help ensure that all proposed processing of personal data meets EU legal requirements and Microsoft's corporate standards. The role was designed to meet the GDPR criteria set out in Articles 37-39.</span></span>
 
-## <a name="qualifications"></a><span data-ttu-id="25fab-107">條件</span><span class="sxs-lookup"><span data-stu-id="25fab-107">Qualifications</span></span>
+## <a name="qualifications"></a><span data-ttu-id="91b33-107">條件</span><span class="sxs-lookup"><span data-stu-id="91b33-107">Qualifications</span></span>
 
-<span data-ttu-id="25fab-p102">DPO 角色要求合格人選須具備至少七年的專業資料保護經驗，或 10 年的資料保護、安全性與企業風險管理綜合經驗，方可列入本職位考量人選。此外，人選必須展示國際資料保護法律和實務的專業知識。</span><span class="sxs-lookup"><span data-stu-id="25fab-p102">The DPO role requires successful candidates to have at least seven years of professional data protection experience, or a mix of 10 years of data protection, security and enterprise risk management experience in order to be considered for the position. In addition, candidates must have demonstrated expertise in international data protection law and practices.</span></span> 
+<span data-ttu-id="91b33-p102">DPO 角色要求合格人選須具備至少七年的專業資料保護經驗，或 10 年的資料保護、安全性與企業風險管理綜合經驗，方可列入本職位考量人選。此外，人選必須展示國際資料保護法律和實務的專業知識。</span><span class="sxs-lookup"><span data-stu-id="91b33-p102">The DPO role requires successful candidates to have at least seven years of professional data protection experience, or a mix of 10 years of data protection, security and enterprise risk management experience in order to be considered for the position. In addition, candidates must have demonstrated expertise in international data protection law and practices.</span></span> 
 
-## <a name="nature-of-the-role"></a><span data-ttu-id="25fab-110">角色的性質</span><span class="sxs-lookup"><span data-stu-id="25fab-110">Nature of the role</span></span>
+## <a name="nature-of-the-role"></a><span data-ttu-id="91b33-110">角色的性質</span><span class="sxs-lookup"><span data-stu-id="91b33-110">Nature of the role</span></span>
 
-<span data-ttu-id="25fab-p103">DPO 需適當且即時負責處理與個人資料保護相關的所有主要問題。這在某種程度上由 DPO 的角色實行，以檢閱及建議由 Microsoft 產生的所有資料保護影響評估 (DPIA)。由於 DPIA 程式是設計用於擷取所有在 Microsoft 的個人資料處理，DPO 將可跨公司進行檢視，並根據 GDPR 就 Microsoft 個人資料處理通知及建議 Microsoft 其義務。此相同機制也允許 DPO 監視 Microsoft 與適用資料保護法規的合規性，包括 GDPR，以及 Microsoft 的內部原則與控制。</span><span class="sxs-lookup"><span data-stu-id="25fab-p103">The DPO is involved, properly and in a timely manner, in all key issues which relate to the protection of personal data. This is effectuated, in part, by the DPO's role in reviewing and advising on all Data Protection Impact Assessments (DPIAs) generated by Microsoft. As the DPIA program is designed to capture all personal data processing at Microsoft, the DPO will have cross-company visibility into, and the opportunity to inform and advise Microsoft of its obligations pursuant to the GDPR in regards to Microsoft's personal data processing. This same mechanism also allows the DPO to monitor Microsoft's compliance with applicable data protection regulations, including the GDPR, as well as Microsoft's internal policies and controls.</span></span> 
+<span data-ttu-id="91b33-p103">DPO 需適當且即時負責處理與個人資料保護相關的所有主要問題。這在某種程度上由 DPO 的角色實行，以檢閱及建議由 Microsoft 產生的所有資料保護影響評估 (DPIA)。由於 DPIA 程式是設計用於擷取所有在 Microsoft 的個人資料處理，DPO 將可跨公司進行檢視，並根據 GDPR 就 Microsoft 個人資料處理通知及建議 Microsoft 其義務。此相同機制也允許 DPO 監視 Microsoft 與適用資料保護法規的合規性，包括 GDPR，以及 Microsoft 的內部原則與控制。</span><span class="sxs-lookup"><span data-stu-id="91b33-p103">The DPO is involved, properly and in a timely manner, in all key issues which relate to the protection of personal data. This is effectuated, in part, by the DPO's role in reviewing and advising on all Data Protection Impact Assessments (DPIAs) generated by Microsoft. As the DPIA program is designed to capture all personal data processing at Microsoft, the DPO will have cross-company visibility into, and the opportunity to inform and advise Microsoft of its obligations pursuant to the GDPR in regards to Microsoft's personal data processing. This same mechanism also allows the DPO to monitor Microsoft's compliance with applicable data protection regulations, including the GDPR, as well as Microsoft's internal policies and controls.</span></span> 
 
-## <a name="position-of-the-data-protection-officer"></a><span data-ttu-id="25fab-115">資料保護長的職位</span><span class="sxs-lookup"><span data-stu-id="25fab-115">Position of the Data Protection Officer</span></span>
+## <a name="position-of-the-data-protection-officer"></a><span data-ttu-id="91b33-115">資料保護長的職位</span><span class="sxs-lookup"><span data-stu-id="91b33-115">Position of the Data Protection Officer</span></span>
 
-<span data-ttu-id="25fab-p104">歐盟 DPO 直屬 Microsoft 的隱私權長 (Microsoft 公司與法律事務部門資深主管) 管轄。DPO 角色具有自主權，可以獨立、公正的方式執行職務。DPO 可透過隱私權長的組織，視需要行使訓練及客戶回應資源來執行 DPO 職務。需透過保密合約，來約束與 DPO 工作相關的機密性。</span><span class="sxs-lookup"><span data-stu-id="25fab-p104">The European Union DPO reports directly to Microsoft's Chief Privacy Officer, a senior executive within Microsoft's Corporate and Legal Affairs division.  The DPO role has autonomy to perform the functions in an independent, unbiased manner. Through the Chief Privacy Officer's organization, the DPO has access to training and customer response resources as necessary to perform the DPO functions. The DPO is bound by confidentiality concerning their tasks through the use of a non-disclosure agreement.</span></span>  
+<span data-ttu-id="91b33-p104">歐盟 DPO 直屬 Microsoft 的隱私權長 (Microsoft 公司與法律事務部門資深主管) 管轄。DPO 角色具有自主權，可以獨立、公正的方式執行職務。DPO 可透過隱私權長的組織，視需要行使訓練及客戶回應資源來執行 DPO 職務。需透過保密合約，來約束與 DPO 工作相關的機密性。</span><span class="sxs-lookup"><span data-stu-id="91b33-p104">The European Union DPO reports directly to Microsoft's Chief Privacy Officer, a senior executive within Microsoft's Corporate and Legal Affairs division.  The DPO role has autonomy to perform the functions in an independent, unbiased manner. Through the Chief Privacy Officer's organization, the DPO has access to training and customer response resources as necessary to perform the DPO functions. The DPO is bound by confidentiality concerning their tasks through the use of a non-disclosure agreement.</span></span>  
 
-## <a name="contact"></a><span data-ttu-id="25fab-120">連絡人</span><span class="sxs-lookup"><span data-stu-id="25fab-120">Contact</span></span>
+## <a name="contact"></a><span data-ttu-id="91b33-120">連絡人</span><span class="sxs-lookup"><span data-stu-id="91b33-120">Contact</span></span>
 
-<span data-ttu-id="25fab-p105">資料主體可在 [https://aka.ms/privacyresponse](https://aka.ms/privacyresponse) 填寫網路表格來連絡資料保護長。您也可透過文章連絡 DPO：</span><span class="sxs-lookup"><span data-stu-id="25fab-p105">Data subjects may contact the data protection officer by filling out the webform at [https://aka.ms/privacyresponse](https://aka.ms/privacyresponse). The DPO can also be reached by post at:</span></span>
+<span data-ttu-id="91b33-p105">資料主體可在 [https://aka.ms/privacyresponse](https://aka.ms/privacyresponse) 填寫網路表格來連絡資料保護長。您也可透過文章連絡 DPO：</span><span class="sxs-lookup"><span data-stu-id="91b33-p105">Data subjects may contact the data protection officer by filling out the webform at [https://aka.ms/privacyresponse](https://aka.ms/privacyresponse). The DPO can also be reached by post at:</span></span>
 
-<span data-ttu-id="25fab-123">Microsoft 歐盟資料保護長</span><span class="sxs-lookup"><span data-stu-id="25fab-123">Microsoft EU Data Protection Officer</span></span><br>
-<span data-ttu-id="25fab-124">One Microsoft Place</span><span class="sxs-lookup"><span data-stu-id="25fab-124">One Microsoft Place</span></span><br>
-<span data-ttu-id="25fab-125">South County Business Park</span><span class="sxs-lookup"><span data-stu-id="25fab-125">South County Business Park</span></span><br>
-<span data-ttu-id="25fab-126">Leopardstown</span><span class="sxs-lookup"><span data-stu-id="25fab-126">Leopardstown</span></span><br>
-<span data-ttu-id="25fab-127">Dublin 18</span><span class="sxs-lookup"><span data-stu-id="25fab-127">Dublin 18</span></span><br>
-<span data-ttu-id="25fab-128">D18 P521</span><span class="sxs-lookup"><span data-stu-id="25fab-128">D18 P521</span></span><br>
-<span data-ttu-id="25fab-129">愛爾蘭</span><span class="sxs-lookup"><span data-stu-id="25fab-129">Ireland</span></span><br>
-<span data-ttu-id="25fab-130">電話：+353 (1) 706-3117</span><span class="sxs-lookup"><span data-stu-id="25fab-130">Telephone: +353 (1) 706-3117</span></span><br>
+<span data-ttu-id="91b33-123">Microsoft 歐盟資料保護長</span><span class="sxs-lookup"><span data-stu-id="91b33-123">Microsoft EU Data Protection Officer</span></span><br>
+<span data-ttu-id="91b33-124">One Microsoft Place</span><span class="sxs-lookup"><span data-stu-id="91b33-124">One Microsoft Place</span></span><br>
+<span data-ttu-id="91b33-125">South County Business Park</span><span class="sxs-lookup"><span data-stu-id="91b33-125">South County Business Park</span></span><br>
+<span data-ttu-id="91b33-126">Leopardstown</span><span class="sxs-lookup"><span data-stu-id="91b33-126">Leopardstown</span></span><br>
+<span data-ttu-id="91b33-127">Dublin 18</span><span class="sxs-lookup"><span data-stu-id="91b33-127">Dublin 18</span></span><br>
+<span data-ttu-id="91b33-128">D18 P521</span><span class="sxs-lookup"><span data-stu-id="91b33-128">D18 P521</span></span><br>
+<span data-ttu-id="91b33-129">愛爾蘭</span><span class="sxs-lookup"><span data-stu-id="91b33-129">Ireland</span></span><br>
+<span data-ttu-id="91b33-130">電話：+353 (1) 706-3117</span><span class="sxs-lookup"><span data-stu-id="91b33-130">Telephone: +353 (1) 706-3117</span></span><br>
 
-<span data-ttu-id="25fab-131">資料保護長的連絡人詳細資料已傳達至 Microsoft 的主管機關。</span><span class="sxs-lookup"><span data-stu-id="25fab-131">The contact details for the Data Protection Officer have been communicated to Microsoft's Supervisory Authority.</span></span>
+<span data-ttu-id="91b33-131">資料保護長的連絡人詳細資料已傳達至 Microsoft 的主管機關。</span><span class="sxs-lookup"><span data-stu-id="91b33-131">The contact details for the Data Protection Officer have been communicated to Microsoft's Supervisory Authority.</span></span>
 
-## <a name="learn-more"></a><span data-ttu-id="25fab-132">深入了解</span><span class="sxs-lookup"><span data-stu-id="25fab-132">Learn more</span></span>
+## <a name="learn-more"></a><span data-ttu-id="91b33-132">深入了解</span><span class="sxs-lookup"><span data-stu-id="91b33-132">Learn more</span></span>
 
-- [<span data-ttu-id="25fab-133">Microsoft 信任中心</span><span class="sxs-lookup"><span data-stu-id="25fab-133">Microsoft Trust Center</span></span>](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
+- [<span data-ttu-id="91b33-133">Microsoft 信任中心</span><span class="sxs-lookup"><span data-stu-id="91b33-133">Microsoft Trust Center</span></span>](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
