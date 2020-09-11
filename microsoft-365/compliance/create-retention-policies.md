@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過保留原則，您可以主動決定要保留內容、刪除內容，還是兩者 (保留然後刪除內容)；將單一原則套用到整個組織或套用到特定位置或使用者；以及將原則套用到所有內容或套用到符合特定條件的內容。
-ms.openlocfilehash: 5b0b81d18afad9f0f9cba6ec24e157ad8f96e4ef
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 01a5137c3ab098101ebfeab71be38ee3ca28088f
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315843"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426960"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -297,7 +297,7 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 
 具有任何設定的所有保留原則都支持保留鎖定。 不過，當您使用下列的 PowerShell 命令時，您會發現 **工作量** 參數永遠顯示 **Exchange、SharePoint、OneDriveForBusines、Skype、ModernGroup**，而不是反映原則中設定的實際工作量。 這只是顯示問題。
 
-1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 2. 執行 [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy) 列出您的保留原則清單，並尋找您想要鎖定的原則名稱。 例如：
     

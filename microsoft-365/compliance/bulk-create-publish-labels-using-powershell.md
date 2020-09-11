@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何從命令列使用 PowerShell 建立及發佈保留標籤，而不受 Microsoft 365 合規性中心的影響。
-ms.openlocfilehash: 416746bb849020d76bcf950d397768239d17baf1
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 5b8bb7a08c9794139e840d59f9238d858e15dd4e
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126364"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426980"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>使用 PowerShell 建立及發佈保留標籤
 
@@ -736,7 +736,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>步驟 4：執行 PowerShell 指令碼
 
-首先，[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)。
+首先，[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 然後，執行建立並發佈保留標籤的指令碼：
   

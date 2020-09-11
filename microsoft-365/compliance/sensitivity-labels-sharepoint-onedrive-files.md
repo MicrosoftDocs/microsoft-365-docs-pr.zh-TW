@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: d049cdd61d2155267f4e55c612885929e27adaaa
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 650673bd85ab8a7597c9dcd644872fab2b045e72
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845719"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47426970"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -130,7 +130,7 @@ ms.locfileid: "46845719"
 
 ### <a name="use-powershell-to-enable-support-for-sensitivity-labels"></a>使用 PowerShell 啟用敏感度標籤支援
 
-除了使用規範中心之外，您還可以使用 [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Cmdlet 從 SharePoint 線上 PowerShell 中，啟用敏感度標籤支援。
+除了使用規範中心之外，您還可以使用 [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) Cmdlet 從 SharePoint 線上 PowerShell 中，啟用敏感度標籤支援。
 
 如果您有 Microsoft 365 多地理位置，您必須使用 PowerShell 來啟用所有地理位置的支援。
 
@@ -156,11 +156,11 @@ ms.locfileid: "46845719"
 
 #### <a name="run-the-powershell-command-to-enable-support-for-sensitivity-labels"></a>執行 PowerShell 命令以啟用敏感度標籤支援
 
-若要啟用新功能，請搭配使用 [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) Cmdlet 搭配 *EnableAIPIntegration* 參數：
+若要啟用新功能，請搭配使用 [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant) Cmdlet 搭配 *EnableAIPIntegration* 參數：
 
 1. 在 Microsoft 365 中使用具有全域系統管理員或 SharePoint 系統管理員許可權的工作或學校帳戶，連接至 SharePoint。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 
-    附注：如果您有 Microsoft 365 多地理位置，請搭配使用-Url 參數和 [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps)，並指定其中一個地理位置的 [SharePoint] 線上管理中心網站 Url。
+    附注：如果您有 Microsoft 365 多地理位置，請搭配使用-Url 參數和 [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice)，並指定其中一個地理位置的 [SharePoint] 線上管理中心網站 Url。
 
 2. 執行下列命令，然後按 **Y** 確認：
 
@@ -210,11 +210,11 @@ ms.locfileid: "46845719"
 
 `InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
 
-若要取得敏感度標籤的 Guid，請使用「 [取得標籤](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) 」 Cmdlet：
+若要取得敏感度標籤的 Guid，請使用「 [取得標籤](https://docs.microsoft.com/powershell/module/exchange/get-label) 」 Cmdlet：
 
 1. 第一，[連接到 Office 365 安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
-    例如，在以系統管理員身分執行的 PowerShell 會話中，以全域系統管理員帳戶登入。
+    例如，在您以系統管理員身分執行的 PowerShell 工作階段中，使用全域系統管理員帳戶登入。
 
 2. 然後執行下列命令：
 
@@ -228,7 +228,7 @@ ms.locfileid: "46845719"
 
 如果您停用這些新功能，當您為 SharePoint 和 OneDrive 啟用敏感度標籤之後，您上傳的檔案會繼續受到標籤的保護，因為標籤設定會繼續強制執行。 當您停用這些新功能之後，當您將敏感度標籤套用至新的檔案時，全文搜尋、eDiscovery 和合著將不再運作。
 
-若要停用這些新功能，您必須使用 PowerShell。 使用 SharePoint 線上管理命令介面和[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps)指令程式，指定與[使用 PowerShell 以啟用敏感度標籤](#use-powershell-to-enable-support-for-sensitivity-labels)] 區段中所述的相同*EnableAIPIntegration*參數。 不過這段時間，請將參數值設為 false，然後按 **Y** 確認：
+若要停用這些新功能，您必須使用 PowerShell。 使用 SharePoint 線上管理命令介面和[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant)指令程式，指定與[使用 PowerShell 以啟用敏感度標籤](#use-powershell-to-enable-support-for-sensitivity-labels)] 區段中所述的相同*EnableAIPIntegration*參數。 不過這段時間，請將參數值設為 false，然後按 **Y** 確認：
 
 ```PowerShell
 Set-SPOTenant -EnableAIPIntegration $false

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計畫為保留標籤提供進階管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: eb35915861c08588fab309210a49585a49d1b9da
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: a92f835658bdeedbc64d3d4f2349900e30ec6dda
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399210"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47427022"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用檔案計畫來管理保留標籤
 
@@ -163,7 +163,7 @@ ms.locfileid: "47399210"
    |CitationUrl|字串|此屬性指定在 **[條款/引文]** 檔案計劃描述元中顯示的 URL。|
    |CitationJurisdiction|字串|此屬性指定在 [條款/引文]**** 檔案計畫描述元中顯示的管轄單位或代理機構。 例如「美國證券交易委員會 (SEC)」|
    |Regulatory|字串|保留空白。 目前無法使用此屬性。|
-   |EventType|字串|此屬性會指定與標籤相關聯的保留規則。 您可以使用唯一識別規則的任何值。 例如：</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>您可以使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule?view=exchange-ps) Cmdlet 來檢視可用的保留規則。 請注意，因為 EventType 值是每個組織特有，如果從某組織匯出標籤，您無法使用來自該組織的 EventType 屬性值，來將標籤匯入至不同組織。|
+   |EventType|字串|此屬性會指定與標籤相關聯的保留規則。 您可以使用唯一識別規則的任何值。 例如：</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>您可以使用 [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule) Cmdlet 來檢視可用的保留規則。 請注意，因為 EventType 值是每個組織特有，如果從某組織匯出標籤，您無法使用來自該組織的 EventType 屬性值，來將標籤匯入至不同組織。|
    |||
 
    以下是含有保留標籤相關資訊的範本範例。
