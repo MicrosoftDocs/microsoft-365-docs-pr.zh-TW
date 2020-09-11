@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: 77d0f99a3e35a62b001395d7491f45d84e95cbd3
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 71e7724873a783f72e8a4088e85f82be68ae75f8
+ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560508"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47427002"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -71,7 +71,7 @@ ms.locfileid: "46560508"
 
 若要編輯現有的標籤，請將其選取，然後選取 **[編輯標籤]** 按鈕:
 
-![編輯敏感度標籤](../media/edit-sensitivity-label-full.png)
+![編輯敏感度標籤的 [編輯標籤] 按鈕](../media/edit-sensitivity-label-full.png)
 
 該按鈕會啟動 **[編輯敏感度標籤]** 精靈，它可讓您變更步驟 3 中的所有標籤設定。
 
@@ -87,7 +87,7 @@ ms.locfileid: "46560508"
 
 ### <a name="additional-label-settings-with-security--compliance-center-powershell"></a>安全性與合規性中心 PowerShell 的其他標籤設定
 
-您可以使用[安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的 [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) Cmdlet 取得其他標籤設定。
+您可以使用[安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) 中的 [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label) Cmdlet 取得其他標籤設定。
 
 例如：
 
@@ -107,7 +107,7 @@ ms.locfileid: "46560508"
 
 針對需要支援的語言，請使用 Office [語言識別項](https://docs.microsoft.com/deployoffice/office2016/language-identifiers-and-optionstate-id-values-in-office-2016#language-identifiers) (又稱為語言標籤)，然後為標籤名稱和工具提示指定自己的翻譯。
 
-在 PowerShell 中執行命令之前，您必須先[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+在 PowerShell 中執行命令之前，您必須先[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
 
 ```powershell
@@ -178,22 +178,22 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>安全性與合規性中心 PowerShell 的其他標籤原則設定
 
-您可以使用[安全規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) 中的 [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps) 指令取得其他標籤原則設定。
+您可以使用[安全規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) 中的 [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy) 指令取得其他標籤原則設定。
 
 針對 Azure 資訊保護的 [整合式標籤] 用戶端，您可以指定[[進階設定]](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，其中包括為 Outlook 設定不同的預設標籤，以及在 Outlook 中實作可警告、證明或封鎖要傳送的電子郵件的快顯訊息。 如需完整清單，請參閱本用戶端的系統管理指南中的[標籤原則可用的進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)。
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>將 PowerShell 用於敏感度標籤及其原則
 
-您現在可以使用 [安全規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps)，建立並設定您在標記系統管理中心看到的所有設定。 這表示除了將 PowerShell 用於標籤系統管理中心的設定以外，您現在可以全面編寫敏感度標籤和敏感度標籤原則的建立與維護腳本。 
+您現在可以使用 [安全規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)，建立並設定您在標記系統管理中心看到的所有設定。 這表示除了將 PowerShell 用於標籤系統管理中心的設定以外，您現在可以全面編寫敏感度標籤和敏感度標籤原則的建立與維護腳本。 
 
 如需支援的參數和值，請參閱下列文件：
 
-- [新標籤](https://docs.microsoft.com/powershell/module/exchange/new-label?view=exchange-ps)
-- [新標籤原則](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps)
-- [設定標籤](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)
-- [設定標籤原則](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps)
+- [新標籤](https://docs.microsoft.com/powershell/module/exchange/new-label)
+- [新標籤原則](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy)
+- [設定標籤](https://docs.microsoft.com/powershell/module/exchange/set-label)
+- [設定標籤原則](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy)
 
-如果您需要為刪除敏感度標籤或敏感度標籤原則編寫腳本，您也可以使用 [移除標籤](https://docs.microsoft.com/powershell/module/exchange/remove-label?view=exchange-ps) 和 [移除標籤原則](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy?view=exchange-ps)。 不過，在您刪除敏感度標籤前，請務必先閱讀下列章節。
+如果您需要為刪除敏感度標籤或敏感度標籤原則編寫腳本，您也可以使用 [移除標籤](https://docs.microsoft.com/powershell/module/exchange/remove-label) 和 [移除標籤原則](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy)。 不過，在您刪除敏感度標籤前，請務必先閱讀下列章節。
 
 ## <a name="removing-and-deleting-labels"></a>移除並刪除標籤
 

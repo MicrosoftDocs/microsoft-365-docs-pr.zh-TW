@@ -582,7 +582,7 @@
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: 管理 Microsoft 365 群組
               href: manage-microsoft-365-groups-with-powershell.md
-    - name: 管理 SharePoint Online
+    - name: 管理 SharePoint
       href: manage-sharepoint-online-with-microsoft-365-powershell.md
       items:
         - name: 建立 SharePoint Online 網站並新增使用者
