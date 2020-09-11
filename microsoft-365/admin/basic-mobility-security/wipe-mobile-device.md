@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用內建基本行動性和安全性，以移除已註冊裝置中的資訊。
-ms.openlocfilehash: 4d854c7d4d81cd0b49ec7f81a49de5478b08f049
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 4627b0cb2d0963ae724c425a6a7ea6279f271856
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336777"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429947"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>在基本行動及安全性中清除行動裝置
 
@@ -39,7 +39,7 @@ ms.locfileid: "47336777"
 
 - **在擦除裝置時 (出廠重設或移除公司資料) **中，裝置會從受管理的裝置清單中移除。
     
-- **自動重設裝置**：您可以設定基本行動性和安全性原則，當使用者未成功輸入裝置密碼的特定次數時，自動將裝置重設為自動出廠設定。 若要這麼做，請遵循以 [基本行動性和安全性建立裝置安全性原則](create-device-security-policies-in-basic-mmobility-and-security.md)中的步驟。
+- **自動重設裝置**：您可以設定基本行動性和安全性原則，當使用者未成功輸入裝置密碼的特定次數時，自動將裝置重設為自動出廠設定。 若要這麼做，請遵循以 [基本行動性和安全性建立裝置安全性原則](create-device-security-policies.md)中的步驟。
     
 - **如果您想要知道** 您在擦除其裝置時的使用者體驗，請參閱  [使用者和裝置影響的情況為何？](#whats-the-user-and-device-impact)。   
 
@@ -91,4 +91,4 @@ ms.locfileid: "47336777"
 
 ## <a name="related-topics"></a>相關主題
 
-[設定基本行動與安全性](set-up-basic-mobility-and-security.md)
+[設定基本行動與安全性](set-up.md)

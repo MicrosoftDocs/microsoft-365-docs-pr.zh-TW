@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性是 Microsoft 365 方案的一部分。
-ms.openlocfilehash: d4595428dd2e2b14948b9f788720fcadcf9eb895
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: df52d500c945275b62170ab16260f0c019340f73
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336799"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429923"
 ---
 # <a name="choose-between-basic-mobility-and-security-and-intune"></a>選擇基本行動性和安全性及 Intune
 
@@ -61,9 +61,9 @@ Microsoft Intune 和內建基本行動性及安全性兩者都能讓您在組織
 |**功能範圍**|**功能重點**|**基本行動性和安全性**|**Microsoft Intune**|
 |:-----|:-----|:-----|:-----|
 |裝置類型|不同的作業系統平臺及主要的管理模式變種。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac 作業系統<br/>iPad 作業系統|
-|裝置合規性|設定和管理安全性原則，如裝置層級 PIN 碼鎖定和 jailbreak 偵測。 |Android 9 和更新版本裝置的限制。 如需詳細資訊，請參閱 [基本行動性和安全性的功能](capabilities-of-basic-mobility-and-secruity.md)。|是|
+|裝置合規性|設定和管理安全性原則，如裝置層級 PIN 碼鎖定和 jailbreak 偵測。 |Android 9 和更新版本裝置的限制。 如需詳細資訊，請參閱 [基本行動性和安全性的功能](capabilities.md)。|是|
 |根據裝置規範的條件式存取 |防止不相容的裝置從雲端存取公司的電子郵件和資料。 |-在 Windows 10 上不受支援。<br/>-局限于控制對 Exchange Online、Sharepoint Online 和 Outlook 服務的存取。 |否|
-|裝置設定  |設定裝置設定 (例如停用攝像頭) 。 |有限的設定集。如需詳細資訊，請參閱 [基本行動性和安全性的功能](capabilities-of-basic-mobility-and-secruity.md)。 |是|
+|裝置設定  |設定裝置設定 (例如停用攝像頭) 。 |有限的設定集。如需詳細資訊，請參閱 [基本行動性和安全性的功能](capabilities.md)。 |是|
 |遠端動作  |透過網際網路將命令傳送至裝置。 例如，從員工的裝置移除 Office 資料，同時保留個人資料 (停用) 。 |淘汰<br/>擦去<br/>刪除|-僅 (Windows) 重設 Autopilot<br/>- [Bitlocker 金鑰輪替](https://docs.microsoft.com/mem/intune/protect/encrypt-devices#rotate-bitlocker-recovery-keys)  僅限 Windows () <br/>- [刪除](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#delete-devices-from-the-intune-portal)<br/>- [停用啟用 loc](https://docs.microsoft.com/mem/intune/remote-actions/device-activation-lock-disable)  僅 (iOS) <br/>- [全新開始](https://docs.microsoft.com/mem/intune/remote-actions/device-fresh-start)  僅限 Windows () <br/>- [完整掃描](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)  僅限 Windows 10 () <br/>- [尋找裝置](https://docs.microsoft.com/mem/intune/remote-actions/device-locate)  僅 (iOS) <br/>- [遺失模式](https://docs.microsoft.com/mem/intune/remote-actions/device-lost-mode)  僅 (iOS) <br/>- 僅限 Windows 10 ([快速掃描](https://docs.microsoft.com/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-antivirus)) <br/>- [Android 的遠端控制](https://docs.microsoft.com/mem/intune/remote-actions/teamviewer-support)<br/>- [遠端鎖定](https://docs.microsoft.com/mem/intune/remote-actions/device-remote-lock)<br/>- [重新命名裝置](https://docs.microsoft.com/mem/intune/remote-actions/device-rename)<br/>- [重設密碼](https://docs.microsoft.com/mem/intune/remote-actions/device-passcode-reset)<br/>- [重新開機](https://docs.microsoft.com/mem/intune/remote-actions/device-restart)  僅限 Windows () <br/>- [退休](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#retire)<br/>-僅更新 Windows Defender 安全性情報 (Windows) <br/>-Windows 10 PIN 碼重設 (僅限 Windows) <br/>- [擦](https://docs.microsoft.com/mem/intune/remote-actions/devices-wipe#wipe)<br/>- [傳送自訂通知](https://docs.microsoft.com/mem/intune/remote-actions/custom-notifications#send-a-custom-notification-to-a-single-device)   (Android、iOS、iPad 作業系統) <br/>- [同步處理裝置](https://docs.microsoft.com/mem/intune/remote-actions/device-sync)|
 |電子郵件設定檔  |在裝置上布建原生電子郵件設定檔。 |是|是|
 |WIFI 設定檔 |在裝置上布建本機 WIFI 設定檔。 |否|是|

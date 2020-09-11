@@ -16,21 +16,21 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
-description: 在本文中，您將瞭解如何使用 PowerShell 來管理 Microsoft 365 使用者帳戶、授權和群組。
-ms.openlocfilehash: a262cbb62cd457e3a22550af2f773551cf67bb43
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 瞭解如何使用 PowerShell 來管理 Microsoft 365 使用者帳戶、授權和群組。
+ms.openlocfilehash: 0c6ca6a4165b616097405a9de178c254aa489a3c
+ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695620"
+ms.lasthandoff: 09/10/2020
+ms.locfileid: "47429983"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-任何 Microsoft 365 系統管理員的主要工作之一是管理使用者帳戶、授權和群組。 雖然您可以在 Microsoft 365 系統管理中心完成這些工作的大部分，但其他工作使用 PowerShell 會更快速且更容易。 
+Microsoft 365 管理員需要管理使用者帳戶、授權和群組。 雖然您可以在 Microsoft 365 系統管理中心中執行大部分工作，但在 PowerShell 中，有些工作會比較容易。
 
-如需詳細資訊，請參閱下列主題。
+如需詳細資訊，請參閱下列文章。
 
 ## <a name="user-accounts"></a>使用者帳戶
 
@@ -54,4 +54,3 @@ ms.locfileid: "46695620"
 ## <a name="groups"></a>群組
 - [維護群組成員資格](maintain-group-membership-with-microsoft-365-powershell.md)
 - [管理 Microsoft 365 群組](manage-microsoft-365-groups-with-powershell.md)
-
