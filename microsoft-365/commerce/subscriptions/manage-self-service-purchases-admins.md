@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何管理組織中使用者所進行的自我服務購買。
-ms.openlocfilehash: f10f525f8efc6bc63e2fa042c299a6d03c77d0cb
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ca25bf0c3e3539196e81dcc289592028cc4dfa47
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429995"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546671"
 ---
 # <a name="manage-self-service-purchases-admin"></a>管理自助購買 (管理員)
 
@@ -38,13 +38,13 @@ ms.locfileid: "47429995"
 ## <a name="view-self-service-subscriptions"></a>查看自助訂閱
 
 1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
-2. 在 [ **精煉結果**] 旁邊的 [ **帳戶類型** ] 下拉式清單中，選擇 [ **自助**]。
+2. 在 [ **產品** ] 索引標籤上，選取篩選圖示，然後選取 [ **自助**]。
 3. 若要查看訂閱的詳細資料，請從清單中選擇其中一個。
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>查看誰有自助購買訂閱的授權
 
 1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">授權</a>] 頁面。
-2. 選擇 [篩選] 圖示，然後選擇 [ **自我服務**]。
+2. 選取 [篩選] 圖示，然後選擇 [ **自我服務**]。
 3. 選取產品以查看指派給人員的授權。
     > [!NOTE]
     > 如果有多個產品購買的產品，該產品只會列出一次，而且 [ **可用數量** ] 欄會顯示針對該產品購買的所有訂閱總數。
@@ -67,13 +67,12 @@ ms.locfileid: "47429995"
 
 您可以指派現有的授權，或透過現有的合約針對指派給自助購買之使用者的現有協定來購買其他訂閱。 在您指派這些已集中購買的授權之後，您可以要求購買者取消其現有的訂閱。
 
-1. 使用您的全域系統管理員帳戶或計費系統管理員帳戶登入系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理中心</a> 。
-2. 移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a>] 頁面。
-3. 尋找並選擇您想要購買的產品，然後選擇 [ **購買**]。
-4. 完成其餘步驟以完成購買。
-5. 請遵循 View the [自助購買訂閱授權的](#view-who-has-licenses-for-a-self-service-purchase-subscription) 使用者，以匯出步驟6中所參照的使用者清單。
-6. 將授權指派給在其他訂閱中具有授權的每個人。 如需完整步驟，請參閱 [將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md)。
-7. 聯繫購買自助購買訂閱的人員，並要求他們取消。
+1. 在系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a> ] 頁面。
+2. 尋找並選擇您想要購買的產品，然後選擇 [ **購買**]。
+3. 完成其餘步驟以完成購買。
+4. 請遵循 View the [自助購買訂閱授權的](#view-who-has-licenses-for-a-self-service-purchase-subscription) 使用者，在下一個步驟中將使用者清單匯出為參考的使用者。
+5. 將授權指派給在其他訂閱中具有授權的每個人。 如需完整步驟，請參閱 [將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md)。
+6. 聯繫購買自助購買訂閱的人員，並要求他們 [取消](manage-self-service-purchases-users.md#cancel-a-subscription)。
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>接管自助購買訂閱
 

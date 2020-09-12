@@ -16,14 +16,14 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Microsoft 365 中的 eDiscovery 功能及其他搜尋功能的概覽，以供審計使用和透明性。
-ms.openlocfilehash: ea7b221ab8fe2ff41d089bb344d2dce58002d0f5
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: d18d3d4776c434788ee8fef7fb8be9edf339ff04
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47331856"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547767"
 ---
-# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 eDiscovery 和搜尋功能概述 
+# <a name="microsoft-365-ediscovery-and-search-features-overview"></a>Microsoft 365 eDiscovery 和搜尋功能概述
 
 ## <a name="ediscovery"></a>電子文件探索
 
@@ -67,6 +67,6 @@ EDiscovery 功能為系統管理員、合規性監察官及其他經授權的使
 
 ## <a name="search-unified-audit-log"></a>搜尋整合的審計記錄
 
-使用「審核記錄搜尋」功能來搜尋整合的審計記錄。 Microsoft 365 也提供使用遠端 PowerShell 搜尋此記錄的功能。 Exchange Online PowerShell 中的 [Search-UnifiedAuditLog Cmdlet](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/Search-UnifiedAuditLog?view=exchange-ps) 是用來搜尋整合的審計記錄檔，這些事件與 exchange online 中的使用者作業、SharePoint 線上、OneDrive for Business 及 Azure AD 相關。 
+使用「審核記錄搜尋」功能來搜尋整合的審計記錄。 Microsoft 365 也提供使用遠端 PowerShell 搜尋此記錄的功能。 Exchange Online PowerShell 中的 [Search-UnifiedAuditLog Cmdlet](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) 是用來搜尋整合的審計記錄檔，這些事件與 exchange online 中的使用者作業、SharePoint 線上、OneDrive for Business 及 Azure AD 相關。
 
 您可以搜尋指定日期範圍內的所有事件，也可以根據特定準則來篩選結果，例如特定的動作、執行動作的使用者或目標物件。 系統管理員最多可使用三個同時執行 Exchange Online PowerShell 會話，以分割大量的日期範圍搜尋。

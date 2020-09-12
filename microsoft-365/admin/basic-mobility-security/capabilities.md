@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性可協助您保護和管理行動裝置。
-ms.openlocfilehash: a88afd539209d20046a778f8c6d16cadd51b5a9a
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: aed4f4c2d252e487d24496ac00f3de24bc57ab55
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430121"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545893"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本行動及安全性的功能
 
@@ -166,9 +166,9 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 |使用 [可移動儲存區] 封鎖連線 |是|是|否|
 |封鎖藍牙連線 |是|是|否|
 
-##  <a name="additional-settings"></a>其他設定 
+## <a name="additional-settings"></a>其他設定
 
-您可以使用 PowerShell Cmdlet 來設定下列其他原則設定。 如需詳細資訊，請參閱 [安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps)。
+您可以使用安全性 & 合規性中心 PowerShell Cmdlet 來設定下列其他原則設定。 如需詳細資訊，請參閱 [安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell)。
 
 |**設定名稱**|**iOS 7.1 和更新版本**|**Android 5 及更新版本**|
 |:-----|:-----|:-----|

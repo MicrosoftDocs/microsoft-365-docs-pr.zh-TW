@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 932d57c0-1520-4f0f-8ec9-9966d646480f
 description: 瞭解如何使用 PowerShell 來管理 Microsoft 365 使用者、授權和365應用程式。
-ms.openlocfilehash: 0af4a47b713da1f0316ae4be91fb7c6472f0e625
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ef6146744909755efb974ee57f34ae3b924a7f2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429899"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547911"
 ---
 # <a name="manage-microsoft-365-with-powershell"></a>使用 PowerShell 管理 Microsoft 365
 
@@ -35,7 +35,7 @@ PowerShell Microsoft 365 是一種強大的管理工具，可補充 Microsoft 36
 
 從下列主題中進行選取，以瞭解如何使用 Microsoft 365 使用者和授權、商務用 Skype Online、SharePoint Online、Exchange Online 及安全性 & 規範中心的 PowerShell。
   
-- [**入門**](getting-started-with-microsoft-365-powershell.md)
+- [**快速入門**](getting-started-with-microsoft-365-powershell.md)
 
     如果您不熟悉 Microsoft 365 的 PowerShell，而您想要安裝 Microsoft 365 模組並連接到您的訂閱，請從這裡開始。
 
@@ -47,7 +47,7 @@ PowerShell Microsoft 365 是一種強大的管理工具，可補充 Microsoft 36
 
     如果您已安裝 Microsoft 365 模組，並且想要使用自動化命令來管理 SharePoint，請從這裡開始。
 
-- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)
+- [**Exchange Online PowerShell**](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
     如果您想要使用自動化命令來管理 Exchange Online，請從這裡開始。
 
@@ -55,7 +55,7 @@ PowerShell Microsoft 365 是一種強大的管理工具，可補充 Microsoft 36
 
     如果您已安裝 PowerShell 365 模組，且想要從預先存在的系統移轉您的電子郵件，請從這裡開始。
 
-- [**安全性與合規性中心**](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell)
+- [**安全性與合規性中心**](https://docs.microsoft.com/powershell/exchange/scc-powershell)
 
     如果您想要使用自動化命令來管理安全性 & 規範中心 PowerShell，請從這裡開始。
 

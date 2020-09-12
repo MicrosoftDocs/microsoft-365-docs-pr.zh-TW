@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft 預定常見問題。
-ms.openlocfilehash: db04c2759187f66503bcc28660b5177f636eaa6c
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419444"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545713"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 預定常見問題
 
@@ -180,7 +180,7 @@ Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的�
 
 ### <a name="can-email-notifications-be-sent-as-the-tenant-domain-name"></a>電子郵件通知是否可以以租使用者功能變數名稱形式傳送？
 
-電子郵件地址是在 Microsoft 365 設定層級加以控制和管理，視您的網域設定設定而定。 您可以在 [這裡](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)找到詳細資訊。
+電子郵件地址是在 Microsoft 365 設定層級加以控制和管理，視您的網域設定設定而定。 您可以在 [這裡](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)找到詳細資訊。
 
 ### <a name="is-the-ability-to-send-sms-messages-dependent-on-a-different-service-or-specific-configuration"></a>是否能夠根據不同的服務或特定設定傳送短信訊息？
 
@@ -366,7 +366,7 @@ GDPR 合規性已存在此功能。 「預約」頁面具有「自訂同意」�
 
   - [自訂併發布您的預約頁面](customize-booking-page.md)
 
-  - [租使用者信箱設定](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-accepteddomain?view=exchange-ps)
+  - [租使用者信箱設定](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 
   - [群組預訂](https://techcommunity.microsoft.com/t5/microsoft-bookings-blog/microsoft-bookings-now-supports-online-meetings-and-group/ba-p/1214120)
 

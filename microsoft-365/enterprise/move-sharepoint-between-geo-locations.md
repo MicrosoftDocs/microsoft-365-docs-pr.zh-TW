@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解如何將 SharePoint 網站移至多地理位置環境中的不同地理位置，並溝通對使用者所做的變更。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e96c422b1d2685c9fe3d4c8c45aa8437a6776621
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688237"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545633"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>將 SharePoint 網站移至不同的地理位置
 
@@ -36,13 +36,13 @@ ms.locfileid: "46688237"
 您必須是全域系統管理員或 SharePoint 系統管理員，才能在地理位置之間移動網站。
 
 SharePoint 網站地理移動會有大約 4 到 6 小時的唯讀時段，視網站內容而定。
- 
+
 ## <a name="best-practices"></a>最佳做法
 
-- 請在測試網站上嘗試進行 SharePoint 網站移動，以便熟悉此程序。 
-- 在排程或執行移動之前驗證是否可以移動該網站。 
+- 請在測試網站上嘗試進行 SharePoint 網站移動，以便熟悉此程序。
+- 在排程或執行移動之前驗證是否可以移動該網站。
 - 若可能，將跨地理位置網站排程在非上班時段，以減少對使用者的影響。
-- 在網站移動之前，與受影響的使用者溝通。 
+- 在網站移動之前，與受影響的使用者溝通。
 
 ## <a name="communicating-to-your-users"></a>與使用者溝通
 
@@ -62,10 +62,11 @@ SharePoint 網站地理移動會有大約 4 到 6 小時的唯讀時段，視網
 
 - 您一次最多可以排定 4,000 個移動。
 - 您可以在移動開始時排定更多移動，並將最多 4,000 個擱置移動排入佇列和任何指定的時間。
- 
+
 若要排程在稍後的時間進行 SharePoint 網站地理移動，當您開始移動時請包含下列其中一個參數：
+
 - `PreferredMoveBeginDate`：移動將可能在這個指定的時間開始。
-- `PreferredMoveEndDate`：移動將可能在指定的時間、基於最大努力原則來完成。 
+- `PreferredMoveEndDate`：移動將可能在指定的時間、基於最大努力原則來完成。
 
 這兩個參數都必須以國際標準時間 (UTC) 來指定時間。
 
@@ -73,19 +74,22 @@ SharePoint 網站地理移動會有大約 4 到 6 小時的唯讀時段，視網
 
 SharePoint 網站地理移動要求您從網站所在地理位置中的 SharePoint 系統管理員 URL 連線並執行移動。
 
-例如，如果網站 URL 是 https://contosohealthcare.sharepoint.com/sites/Turbines，請連線到位於 https://contosohealthcare-admin.sharepoint.com: 的 SharePoint 系統管理員 URL
+例如，如果網站 URL 是 <https://contosohealthcare.sharepoint.com/sites/Turbines> ，請在下列位置連接至 SharePoint 管理 URL <https://contosohealthcare-admin.sharepoint.com> ：
 
-`Connect-SPOService -url https://contosohealthcare-admin.sharepoint.com`
+```powershell
+Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
+```
 
-![](../media/move-onedrive-between-geo-locations-image1.png)
- 
+![顯示 Connect-SPOService 命令的 SharePoint 線上管理命令介面視窗](../media/move-onedrive-between-geo-locations-image1.png)
+
 ### <a name="validating-the-environment"></a>驗證環境
 
 建議您在排程任何網站移動之前先進行驗證，以確保可以移動該網站。
 
 我們不支援移動具有下列項目的網站：
--    Business Connectivity Services
--    InfoPath 表單 
+
+- Business Connectivity Services
+- InfoPath 表單
 - 套用的資訊版權管理 (IRM) 範本
 
 若要確保所有地理位置相容，請執行 `Get-SPOGeoMoveCrossCompatibilityStatus`。 這會顯示您的所有地理位置，以及環境是否與目的地地理位置相容。
@@ -102,15 +106,17 @@ Start-SPOSiteContentMove -SourceSiteUrl <SourceSiteUrl> -ValidationOnly -Destina
 
 根據預設，網站的初始 URL 會變更為目的地地理位置的 URL。 例如：
 
-https://Contoso.sharepoint.com/sites/projectx 到 https://ContosoEUR.sharepoint.com/sites/projectx
+<https://Contoso.sharepoint.com/sites/projectx> 到 <https://ContosoEUR.sharepoint.com/sites/projectx>
 
 針對沒有 Microsoft 365 群組關聯的網站，您也可以使用 `-DestinationUrl` 參數來將網站重新命名。 例如：
 
-https://Contoso.sharepoint.com/sites/projectx 到 https://ContosoEUR.sharepoint.com/sites/projecty
+<https://Contoso.sharepoint.com/sites/projectx> 到 <https://ContosoEUR.sharepoint.com/sites/projecty>
 
 若要開始網站移動，請執行：
 
-`Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>`
+```powershell
+Start-SPOSiteContentMove -SourceSiteUrl <siteURL> -DestinationDataLocation <DestinationDataLocation> -DestinationUrl <DestinationSiteURL>
+```
 
 ![顯示 Start-SPOSiteContentMove Cmdlet 的 PowerShell 視窗螢幕擷取畫面](../media/multi-geo-sharepoint-site-move-powershell.png)
 
@@ -124,7 +130,8 @@ https://Contoso.sharepoint.com/sites/projectx 到 https://ContosoEUR.sharepoint.
 Set-SPOUnifiedGroup -PreferredDataLocation <PDL> -GroupAlias <GroupAlias>
 Get-SPOUnifiedGroup -GroupAlias <GroupAlias>
 ```
-更新 PDL 之後，您就可以開始進行網站移動： 
+
+更新 PDL 之後，您就可以開始進行網站移動：
 
 ```PowerShell
 Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <DestinationDataLocation>
@@ -139,19 +146,22 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 您可以使用下列 Cmdlet 來判斷您所連線的地理位置中網站移動的狀態：
 
 - [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (非群組連線網站)
-- Get-SPOUnifiedGroupMoveState (群組連線網站)
+- [SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (群組連線的網站) 
 
 使用 `-SourceSiteUrl` 參數來指定您要查看移動狀態的網站。
 
 下表說明移動狀態。
 
+****
+
 |狀態|描述|
-|:-----|:----------|
+|---|---|
 |準備好觸發|移動尚未開始。|
 |已排程|移動在佇列中，但尚未開始。|
 |進行中 (n/4)|移動正在進行中，可能是下列其中一種狀態：驗證 (1/4)、備份 (2/4)、還原 (3/4)、清除 (4/4)。|
 |成功|已成功完成移動。|
 |失敗|移動失敗。|
+|
 
 您也可以套用 `-Verbose` 選項，以查看有關移動的其他資訊。
 
@@ -215,4 +225,4 @@ SharePoint 行動裝置 App 可跨地理位置相容，且能偵測網站的新�
 
 ### <a name="data-movement-between-geo-locations"></a>地理位置之間的資料移動
 
-SharePoint 將內容放置在 Azure Blob 儲存體，而將與網站和其檔案相關聯的中繼資料則儲存在 SharePoint 內。 在將網站從來源地理位置移動到目的地地理位置後，服務也將移動其相關聯的 Blob 儲存體。 Blob 儲存體移動大約需要 40 天才能完成。 
+SharePoint 將內容放置在 Azure Blob 儲存體，而將與網站和其檔案相關聯的中繼資料則儲存在 SharePoint 內。 在將網站從來源地理位置移動到目的地地理位置後，服務也將移動其相關聯的 Blob 儲存體。 Blob 儲存體移動大約需要 40 天才能完成。

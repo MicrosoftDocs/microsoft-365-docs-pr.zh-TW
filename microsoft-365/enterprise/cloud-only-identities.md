@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 說明當您的 Microsoft 365 訂閱使用僅限雲端身分識別時，如何建立使用者和群組。
-ms.openlocfilehash: 4c8e7d4a29f548fca2fef9696f488dc333743ef9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 6ec727ea3648f1daa3af42763e5f497715b987a2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688397"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547755"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>僅限 Microsoft 365 雲端身分識別
 
@@ -55,7 +55,7 @@ ms.locfileid: "46688397"
 
 - 使用以群組為基礎的授權，可在新增為成員時，自動將 Microsoft 365 的授權指派給您的使用者帳戶。
 - 根據使用者帳戶屬性（例如部門名稱），以動態方式將使用者帳戶新增至特定群組。
-- 自動將軟體的使用者布建為服務 (SaaS) 應用程式，並使用多重要素驗證 (MFA) 和其他條件式存取規則來保護對這些應用程式的存取。
+- 自動將軟體的使用者布建為服務 (SaaS) 的應用程式，並使用多重要素驗證 (MFA) 和其他條件式存取原則，來保護這些應用程式的存取權。
 - 為 SharePoint Online 小組網站提供許可權和存取層級。
 
 您可以使用下列方式建立新的 ***使用者*** ：

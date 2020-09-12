@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: 瞭解如何使用 Region 參數，設定電子檔探索，以用於 Microsoft 365 多地理位置的衛星位置。
-ms.openlocfilehash: 83141f824c76ca5531e1b390b91adcdb4f3874de
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 216012791473776395d27821293e8fc565568c2c
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688421"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547947"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 多地理位置電子文件探索設定
 
@@ -35,7 +35,7 @@ Microsoft 365 全域系統管理員必須指派電子文件探索管理員權限
 
 若要為某地區設定合規性安全性篩選：
 
-1. [連線至 Microsoft 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [連線至 Microsoft 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 2. 請使用下列語法：
 
@@ -49,4 +49,4 @@ Microsoft 365 全域系統管理員必須指派電子文件探索管理員權限
    New-ComplianceSecurityFilter -Action All -FilterName "NAM eDiscovery Managers" -Region NAM -Users adwood@contoso.onmicrosoft.com
    ```
 
-請參閱 [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesecurityfilter) 一文以了解額外的參數和語法。
+請參閱 [New-ComplianceSecurityFilter](https://docs.microsoft.com/powershell/module/exchange/new-compliancesecurityfilter) 一文以了解額外的參數和語法。

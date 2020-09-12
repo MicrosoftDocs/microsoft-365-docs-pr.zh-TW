@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 瞭解如何設定多地理位置環境中的搜尋。 只有部分用戶端（例如商務用 OneDrive）可以傳回多地理位置環境中的結果。
-ms.openlocfilehash: 22c71661e8f3b643a1fd7afa33b38584a1cd1be5
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695055"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547149"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>設定 Microsoft 365 多地理位置的搜尋
 
@@ -30,15 +30,11 @@ ms.locfileid: "46695055"
 
 這些用戶端可以從所有地理位置傳回結果：
 
--   商務用 OneDrive
-
--   Delve
-
--   SharePoint 首頁
-
--   搜尋中心
-
--   使用 SharePoint 搜尋 API 的自訂搜尋應用程式
+- 商務用 OneDrive
+- Delve
+- SharePoint 首頁
+- 搜尋中心
+- 使用 SharePoint 搜尋 API 的自訂搜尋應用程式
 
 ### <a name="onedrive-for-business"></a>商務用 OneDrive
 
@@ -135,14 +131,12 @@ Delve 摘要和個人檔案卡片只會顯示儲存在中央位置之檔案的�
 
 所有搜尋用戶端都會使用現有 SharePoint 搜尋 REST API 與搜尋索引互動。
 
-<img src="../media/configure-search-for-multi-geo-image1-1.png" />
+![圖表顯示 SharePoint 搜尋余料如何與搜尋索引互動 APIs](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. 搜尋用戶端會使用查詢屬性 EnableMultiGeoSearch = true 來呼叫搜尋 REST 端點。
 2. 系統會將查詢傳送至租用戶中的所有地理位置中。
 3. 來自每個地理位置的搜尋結果會合併並排名。
 4. 用戶端會取得整合的搜尋結果。
-
-
 
 <span id="_Set_up_a" class="anchor"><span id="_Ref501388384" class="anchor"></span></span>請注意，在收到來自所有地理位置的結果之前，我們不會合併搜尋結果。 這表示相較於只有單一地理位置環境中的搜尋，多地理位置搜尋會有額外的延遲。
 
@@ -151,29 +145,32 @@ Delve 摘要和個人檔案卡片只會顯示儲存在中央位置之檔案的�
 
 每個搜尋中心都提供數種類別，而且您必須個別設定每個類別。
 
-1.  請務必使用有權編輯搜尋結果網頁與搜尋結果網頁組件的帳戶來執行這些步驟。
+1. 請務必使用有權編輯搜尋結果網頁與搜尋結果網頁組件的帳戶來執行這些步驟。
 
-2.  瀏覽至 [搜尋結果] 頁面 (請參閱搜尋結果頁面的[清單](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213))
+2. 瀏覽至 [搜尋結果] 頁面 (請參閱搜尋結果頁面的[清單](https://support.office.com/article/174d36e0-2f85-461a-ad9a-8b3f434a4213))
 
-3.  選取要設定的類別，請按一下右上角的 [設定]**** 圖示，然後按一下 [編輯頁面] ****。在編輯模式中搜尋結果網頁會開啟。
+3. 選取要設定的類別，請按一下右上角的 [設定]**** 圖示，然後按一下 [編輯頁面] ****。在編輯模式中搜尋結果網頁會開啟。
 
-     ![](../media/configure-search-for-multi-geo-image2.png)
-1.  在搜尋結果網頁組件中，請將指標移至網頁組件的右上角，按一下箭號，然後按一下功能表上的 [編輯網頁組件]****。 搜尋結果網頁組件工具窗格隨即在網頁右上方的功能區下開啟。 ![](../media/configure-search-for-multi-geo-image3.png)
+   ![在 [設定] 中編輯頁面選項](../media/configure-search-for-multi-geo-image2.png)
 
-1.  在網頁組件工具窗格 [設定]**** 區段中，在 [結果控制設定]****，請選取 [顯示多地理位置結果]**** 以取得搜尋結果網頁組件，以顯示來自所有地理位置的結果。
+4. 在搜尋結果網頁組件中，請將指標移至網頁組件的右上角，按一下箭號，然後按一下功能表上的 [編輯網頁組件]****。 搜尋結果網頁組件工具窗格隨即在網頁右上方的功能區下開啟。
 
-2.  按一下 [確定]**** 以儲存變更並且關閉網頁組件工具窗格。
+   ![編輯網頁元件選取範圍](../media/configure-search-for-multi-geo-image3.png)
 
-3.  檢查您對搜尋結果網頁組件所做的變更，請在主功能表的 [頁面] 索引標籤上按一下 [存回]****。
+5. 在網頁組件工具窗格 [設定]**** 區段中，在 [結果控制設定]****，請選取 [顯示多地理位置結果]**** 以取得搜尋結果網頁組件，以顯示來自所有地理位置的結果。
 
-4.  使用頁面頂端之附註中提供的連結發佈變更。
+6. 按一下 [確定]**** 以儲存變更並且關閉網頁組件工具窗格。
+
+7. 檢查您對搜尋結果網頁組件所做的變更，請在主功能表的 [頁面] 索引標籤上按一下 [存回]****。
+
+8. 使用頁面頂端之附註中提供的連結發佈變更。
 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>取得自訂搜尋應用程式，以顯示來自全部或部分地理位置的結果
 
 自訂搜尋應用程式會透過指定含對 SharePoint 搜尋 REST API 之要求的查詢參數，以取得來自全部或部分地理位置的結果。視查詢參數而定，系統會將查詢展開傳送至所有地理位置或部分的地理位置。例如，如果您只需要查詢地理位置的子集來尋找相關資訊，您可以控制只對這些項目進行展開傳送。如果要求成功，SharePoint 搜尋 REST API 會傳回回應資料。
 
-**需求**
+### <a name="requirement"></a>需求
 
 對於每個地理位置，您必須確保組織中的所有使用者都已被授予根網站的**讀取**權限層級 (例如contoso**APAC**.sharepoint.com/ 和 contoso**EU**.sharepoint.com/)。[了解權限](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848)。
 
@@ -230,14 +227,12 @@ MultiGeoSearchStatus – 這是 SharePoint 搜尋 API 在回應中傳回至要�
 <td align="left">Partial</td>
 <td align="left">從一或多個地理位置的部分結果。結果會因為暫時性錯誤而不完整。</td>
 </tr>
-
 </tbody>
 </table>
 
 ### <a name="query-using-the-rest-service"></a>使用 REST 服務的查詢
 
 使用 GET 要求時，您可以在 URL 中指定查詢參數。使用 POST 要求時，您能以 JavaScript 物件標記法 (JSON) 格式在內文中傳遞查詢參數。
-
 
 #### <a name="request-headers"></a>要求標頭
 
@@ -269,8 +264,9 @@ HTTPs:// \<tenant\> / \_ api/search/query？ querytext = ' site ' &ClientType = 
 
 #### <a name="sample-post-request-thats-fanned-out-to-all-geo-locations"></a>已展開傳送至**所有**地理位置的範例 POST 要求
 
+```text
     {
-        "request": {
+    "request": {
             "__metadata": {
             "type": "Microsoft.Office.Server.Search.REST.SearchRequest"
         },
@@ -289,11 +285,11 @@ HTTPs:// \<tenant\> / \_ api/search/query？ querytext = ' site ' &ClientType = 
         "ClientType": "my_client_id"
         }
     }
-
+```
 
 #### <a name="sample-post-request-thats-fanned-out-to-some-geo-locations"></a>已展開傳送至**部分**地理位置的範例 POST 要求
 
-
+```text
     {
         "request": {
             "Querytext": "SharePoint",
@@ -318,13 +314,15 @@ HTTPs:// \<tenant\> / \_ api/search/query？ querytext = ' site ' &ClientType = 
             }
         }
     }
+```
 
 ### <a name="query-using-csom"></a>使用 CSOM 查詢
 
 此為已展開傳送至**所有**地理位置的範例 CSOM 查詢：
 
-    var keywordQuery = new KeywordQuery(ctx);
-    keywordQuery.QueryText = query.SearchQueryText;
-    keywordQuery.ClientType = <enter a string here>;
-    keywordQuery["EnableMultiGeoSearch"] = true;
-
+```text
+var keywordQuery = new KeywordQuery(ctx);
+keywordQuery.QueryText = query.SearchQueryText;
+keywordQuery.ClientType = <enter a string here>;
+keywordQuery["EnableMultiGeoSearch"] = true;
+```

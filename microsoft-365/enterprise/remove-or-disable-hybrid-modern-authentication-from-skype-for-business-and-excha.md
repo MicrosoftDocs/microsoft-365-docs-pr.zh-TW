@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文說明如何從商務用 Skype 和 Exchange 中移除或停用混合式新式驗證。
-ms.openlocfilehash: da0887936f5def69ad80c8f04381bcb3a85c2349
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 70f62b9b2165464837aa1dea0e12854df116efe0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688326"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547093"
 ---
 # <a name="removing-or-disabling-hybrid-modern-authentication-from-skype-for-business-and-exchange"></a>從商務用 Skype 與 Exchange 移除或停用混合式新式驗證
 
@@ -47,7 +47,7 @@ Set-OrganizationConfig -OAuth2ClientProfileEnabled $false
 Set-AuthServer -Identity evoSTS -IsDefaultAuthorizationEndpoint $false
 ```
 
-2. **Exchange online**：以遠端 PowerShell [連接至 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 。 執行下列命令，將您的  *OAuth2ClientProfileEnabled*  旗標轉換為 "false"：
+2. **Exchange online**：以遠端 PowerShell [連接至 Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 。 執行下列命令，將您的  *OAuth2ClientProfileEnabled*  旗標轉換為 "false"：
 
 ```powershell    
 Set-OrganizationConfig -OAuth2ClientProfileEnabled:$false

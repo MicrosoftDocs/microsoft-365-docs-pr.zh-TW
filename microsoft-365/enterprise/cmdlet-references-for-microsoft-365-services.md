@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: 尋找適用于 Azure AD、Exchange Online、SharePoint Online、商務用 Skype Online 及安全性 & 規範的 Microsoft 365 PowerShell Cmdlet 參考主題。
-ms.openlocfilehash: 4905c20216e6df02399fe372ec31fe3bedfde6c4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 8f2aa4b123e3b7e3f92aabee7f9e8adeeb9c154f
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688672"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547115"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 服務的 Cmdlet 參考資料
 
@@ -42,7 +42,7 @@ Windows PowerShell Cmdlet 的 Azure Active Directory 模組參考主題位於[Az
   
 ## <a name="exchange-online-powershell-cmdlets"></a>Exchange Online PowerShell Cmdlet
 
-Exchange Online Cmdlet 參考主題位於[Exchange online PowerShell 檔](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)的 [**參考**] 區段中。
+Exchange Online Cmdlet 參考主題位於[Exchange online PowerShell 檔](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)的 [**參考**] 區段中。
   
 如需 Exchange Online PowerShell 的連線指示，請按一下 [[連線至 Exchange online PowerShell]](https://go.microsoft.com/fwlink/p/?LinkId=396554)。
   
@@ -61,17 +61,14 @@ Exchange Online Cmdlet 參考主題位於[Exchange online PowerShell 檔](https:
   
 如需商務用 Skype Online PowerShell 的連線指示，請按一下 [ [使用 PowerShell 管理商務用 Skype online](manage-skype-for-business-online-with-microsoft-365-powershell.md)]。
 
-## <a name="security-amp-compliance-center-powershell-cmdlets"></a>安全規範中心 PowerShell Cmdlet
+## <a name="security--compliance-center-powershell-cmdlets"></a>安全性 & 規範中心 PowerShell Cmdlet
 
-Microsoft 365 安全性與 &amp; 合規性中心 Cmdlet 參考主題位於[Exchange Online PowerShell 檔](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)的 [**參考**] 區段中。
+Microsoft 365 Security & 規範中心 Cmdlet 參考主題位於[安全性 & 規範 PowerShell 檔](https://docs.microsoft.com/powershell/exchange/scc-powershell)的 [**參考**] 區段中。
   
-如需安全性與 &amp; 合規性中心 PowerShell 的連線指示，請按一下 [[連線至安全性與 &amp; 合規性中心] PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps)。
+如需安全性 & 合規性中心 PowerShell 的連線指示，請按一下 [[連線至安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
-
-  
 ## <a name="see-also"></a>另請參閱
 
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [開始使用適用於 Microsoft 365 的 PowerShell](getting-started-with-microsoft-365-powershell.md)
-

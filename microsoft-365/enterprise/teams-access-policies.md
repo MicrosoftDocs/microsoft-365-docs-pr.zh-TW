@@ -16,16 +16,16 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 41ead64a7a94dcd5afb22a311d7637326949fc7c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4dde82ef9deb4d515ea5223470f7c96c1fe28a26
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685651"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546344"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保護小組聊天、群組和檔案的原則建議
 
-本文說明如何執行建議的身分識別和裝置存取原則，以保護小組聊天、群組和內容，例如檔案和行事曆。 本指南以通用身分 [識別和裝置存取原則](identity-access-policies.md)為基礎，具有特定小組特有的額外資訊。 因為小組與我們的其他產品整合，另請參閱 [原則建議，以保護 SharePoint 網站和](sharepoint-file-access-policies.md) 檔案，以及 [保護電子郵件的原則建議](secure-email-recommended-policies.md)。
+本文說明如何執行建議的身分識別和裝置存取原則，以保護 Microsoft 團隊聊天、群組和內容（如檔案和行事曆）。 本指南以通用身分 [識別和裝置存取原則](identity-access-policies.md)為基礎，具有特定小組特有的額外資訊。 因為小組與我們的其他產品整合，另請參閱 [原則建議，以保護 SharePoint 網站和](sharepoint-file-access-policies.md) 檔案，以及 [保護電子郵件的原則建議](secure-email-recommended-policies.md)。
 
 這些建議是以三種不同的安全性和保護層級為基礎，可根據您的需求細微性來套用這些小組：基準、機密和高管制。 您可以在身分 [識別和裝置存取](microsoft-365-policies-configurations.md)設定中深入瞭解這些安全層及這些建議所參照的建議原則。
 
@@ -38,25 +38,27 @@ ms.locfileid: "46685651"
 - Microsoft 365 群組
 - SharePoint 小組網站
 - 商務用 OneDrive
-- 信箱
+- Exchange 信箱
 - Stream 影片和 Planner 方案 (若啟用這些服務) 
 
 ## <a name="updating-common-policies-to-include-teams"></a>將常見原則更新為包含小組
 
-下圖說明在小組中保護聊天、群組和內容的建議原則集合。 鉛筆圖示會指出需要視的原則，以確保雲端應用程式的指派中包含小組和相依服務。
+為了保護「聊天」、群組及小組內容，下列圖表說明要從通用身分識別和裝置存取原則更新哪些原則。 針對每個要更新的原則，請確定 cloud app 的指派中包含小組和相依的服務。
 
-![圖表顯示如何在各種裝置上使用 Microsoft 團隊。](../media/identity-access-ruleset-teams.png)
+[![保護對小組及其相依服務之存取的原則更新摘要](../media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
+
+[查看較大版本的此影像](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
 以下是要納入小組的雲端應用程式指派中的相依服務：
 
 - Microsoft Teams
-- SharePoint Online 和商務用 OneDrive
+- SharePoint 和商務用 OneDrive
 - Exchange Online
 - 商務用 Skype Online
 - Microsoft Stream (會議錄製) 
 - Microsoft Planner (Planner 工作和規劃資料) 
 
-此表格列出必須針對 [一般身分識別和裝置存取原則](identity-access-policies.md)中的每個原則進行存取的原則，以及所有 Office 應用程式的較寬規則集的連結。
+此表格列出必須針對 [一般身分識別和裝置存取原則](identity-access-policies.md)中的每個原則所進行的原則，以及所有 Office 應用程式的更大原則設定的連結。
 
 |保護層級|原則|小組實施的進一步資訊|
 |:---------------|:-------|:----------------|
@@ -76,13 +78,13 @@ ms.locfileid: "46685651"
 
 為了供參考，下圖說明服務小組所依賴的服務。 如需詳細資訊及其他圖解，請參閱 microsoft [團隊和 microsoft 的相關生產力服務，請參閱 microsoft 365 FOR IT 架構設計](../solutions/productivity-illustrations.md)人員。
 
-![此圖表顯示團隊對 SharePoint 線上、商務 OneDrive 和 Exchange 的相依性。](../media/identity-access-logical-architecture-teams.png)
+![圖表顯示團隊對 SharePoint、商務 OneDrive 和 Exchange 的相依性依賴性](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
 ## <a name="enabling-guest-and-external-access-for-teams"></a>為小組啟用來賓和外部存取
 
 在 Azure AD 中，來賓和外部使用者皆相同。 這兩種皆為來賓的使用者類型。 來賓使用者 B2B 使用者。 Microsoft 小組區分來賓使用者和應用程式中的外部使用者。 雖然瞭解各小組的各項處理方式很重要，但這兩種類型的使用者都是 Azure AD 中 B2B 使用者，而 B2B 使用者同時套用的建議原則，也是建議的原則。 如需允許來賓存取的建議原則，請參閱 [允許來賓和外部 B2B 存取的原則](identity-access-policies-guest-access.md)。
 
-### <a name="guest-access-in-teams"></a>小組中的來賓存取權
+### <a name="guest-access-in-teams"></a>Teams 中的來賓存取
 
 除了您公司或組織內部的使用者原則之外，管理員還可以讓來賓存取允許以使用者為基礎的使用者，在您的公司或組織外部的人員存取小組資源，並與內部人員（例如群組交談、聊天和會議）進行互動。 您可以在下列連結中深入瞭解來賓存取： [小組訪客存取權](https://docs.microsoft.com/microsoftteams/guest-access)
 
@@ -120,6 +122,10 @@ ms.locfileid: "46685651"
 
 ## <a name="next-steps"></a>後續步驟
 
-[瞭解如何為 Exchange Online 啟用條件式存取](secure-email-recommended-policies.md)
+![步驟4： Microsoft 365 雲端應用程式的原則](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
+為下列專案設定條件式存取原則：
+
+- [Exchange Online](secure-email-recommended-policies.md)
+- [SharePoint](secure-email-recommended-policies.md)
 

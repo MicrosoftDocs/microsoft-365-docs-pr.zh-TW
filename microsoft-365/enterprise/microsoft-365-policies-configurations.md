@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 72344e1918a85de65ab7de8a60b7ace0b2629ac6
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332746"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546639"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -73,10 +73,9 @@ ms.locfileid: "47332746"
 
 請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。 例如，如果您要執行此指導方針，請務必保護您的資料，以同等的層次。 
 
-[身分 **識別與裝置保護] 的 Office 365** 架構模型會顯示哪些功能是可比較的。
+Microsoft 365 架構模型的身分 **識別與裝置保護** 會顯示哪些功能是可比較的。
 
-![海報「Office 365 的身分識別與裝置保護」的縮圖](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)<br/>
-[PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多語言](https://www.microsoft.com/download/details.aspx?id=55032)
+[![Microsoft 365 海報的身分識別和裝置保護的縮圖影像](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載為 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 此外，請參閱 [部署資訊保護以取得資料隱私權法規](../solutions/information-protection-deploy.md) 解決方案，以保護儲存在 Microsoft 365 中的資訊。
 
@@ -105,10 +104,11 @@ Azure AD 提供完整的身分識別管理功能套件。 我們建議使用這�
 |:-------|:-----|:-------|
 | [多重要素驗證 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks) | MFA 要求使用者提供兩種形式的驗證，例如使用者密碼加上 Microsoft 驗證應用程式或電話的通知。 MFA 大幅降低可供盜竊之認證存取您環境的風險。 Microsoft 365 使用 Azure Multi-Factor 驗證服務進行 MFA 型登入。 | Microsoft 365 E3 或 E5 |
 | [條件式存取](/azure/active-directory/conditional-access/overview) | Azure AD 評估使用者登入的條件，並使用條件式存取原則來決定允許的存取。 例如，在此指導中，我們會告訴您如何建立條件式存取原則，以要求存取機密資料的裝置合規性。 這會極大降低具有自身裝置和盜竊認證的駭客可以存取您機密資料的風險。 它也會保護裝置上的機密資料，因為裝置必須符合健康和安全性的特定需求。 | Microsoft 365 E3 或 E5 |
-| [Azure AD 群組](/azure/active-directory/fundamentals/active-directory-manage-groups) | 條件式存取規則、具有 Intune 的裝置管理，以及對您組織中檔案和網站的許可權，都依賴指派給使用者帳戶或 Azure AD 群組。 建議您建立對應至您所實施之保護層級的 Azure AD 群組。 例如，您的 executive 人員很可能是駭客的高價值目標。 因此，您可以將這些員工的使用者帳戶新增至 Azure AD 群組，並將此群組指派給條件式存取原則及其他強制進行存取保護等級的原則。 | Microsoft 365 E3 或 E5 |
-| [裝置註冊](/azure/active-directory/devices/overview) | 您可以在 Azure AD 中註冊裝置，以建立裝置的身分識別。 當使用者登入並套用需要加入網域或合規的電腦的條件式存取規則時，此身分識別可用於驗證裝置。 針對此指南，我們使用裝置註冊功能自動註冊加入網域的 Windows 電腦。 裝置註冊是使用 Intune 管理裝置的必要條件。 | Microsoft 365 E3 或 E5 |
+| [Azure AD 群組](/azure/active-directory/fundamentals/active-directory-manage-groups) | 條件式存取原則、具有 Intune 的裝置管理，以及對您組織中檔案和網站的許可權，都依賴指派給使用者帳戶或 Azure AD 群組。 建議您建立對應至您所實施之保護層級的 Azure AD 群組。 例如，您的 executive 人員很可能是駭客的高價值目標。 因此，您可以將這些員工的使用者帳戶新增至 Azure AD 群組，並將此群組指派給條件式存取原則及其他強制進行存取保護等級的原則。 | Microsoft 365 E3 或 E5 |
+| [裝置註冊](/azure/active-directory/devices/overview) | 您可以在 Azure AD 中註冊裝置，以建立裝置的身分識別。 此身分識別是用來在使用者登入並套用需要加入網域或合規的電腦的條件式存取原則時，用來驗證裝置。 針對此指南，我們使用裝置註冊功能自動註冊加入網域的 Windows 電腦。 裝置註冊是使用 Intune 管理裝置的必要條件。 | Microsoft 365 E3 或 E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | 可讓您偵測影響組織之身分識別的潛在弱點，並設定自動修正原則為低、中、高的登入風險和使用者風險。 本指南取決於此風險評估，針對多重要素驗證套用條件式存取原則。 本指南也包含條件式存取原則，需要使用者在其帳戶中偵測到高風險的活動時變更其密碼。 | Microsoft 365 E5，使用 Identity & 威脅防護附加元件、EMS E5 或 Azure Premium P2 授權的 Microsoft 365 E3 |
 | [自助密碼重設 (SSPR) ](/azure/active-directory/authentication/concept-sspr-howitworks) | 可讓您的使用者安全地重設其密碼，而不需要協助桌面的干預，只要提供系統管理員可控制的多個驗證方法的驗證。 | Microsoft 365 E3 或 E5 |
+| [AZURE AD 密碼保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)。 偵測並封鎖已知弱密碼和其變種，以及組織特有的其他弱字詞。 預設全域禁止密碼清單會自動套用至 Azure AD 租使用者中的所有使用者。 您可以在 [自訂禁止的密碼] 清單中定義其他專案。 當使用者變更或重設其密碼時，會檢查這些禁止的密碼清單，以強制使用強式密碼。 |  Microsoft 365 E3 或 E5 |
 ||||
 
 ![身分識別與裝置存取的元件。](../media/microsoft-365-policies-configurations/identity-device-access-components.png)

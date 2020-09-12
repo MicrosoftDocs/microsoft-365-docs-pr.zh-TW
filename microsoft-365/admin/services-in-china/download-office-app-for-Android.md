@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 深入瞭解 Microsoft Office 應用程式（適用于中國運作的 Office 365），以及如何在中國為客戶下載。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 4ebb044835321a91109659ca9e58094345bc0d0c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: b2c35c2f9b4ea8e10ace3c9426aed7aadefe0b1d
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399059"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545793"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>由世紀運作之 Office 365 的 office 應用程式（適用于 Android）
 
@@ -36,10 +36,10 @@ ms.locfileid: "44399059"
 - 圖像至文字和圖像至表格 
 - 將照片從鏡頭轉換為 Word 檔 
 - 傳輸檔動作 
-- 附注保持在本機狀態，不會同步處理至伺服器
+- 附注會保持在本機狀態，而且不會同步到伺服器
 - 掃描 QR 中的連結預覽
 - Me 區段中的 Live persona 卡片
-- 分類、標籤及保護（CLP）
+- 分類、標籤和保護 (CLP) 
 
 
 ## <a name="download-the-office-app-for-android"></a>下載適用于 Android 的 Office 應用程式

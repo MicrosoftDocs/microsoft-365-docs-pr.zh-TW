@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護，並設定如何將它用於您的組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b96ba1735f94e80450fa4f604fc45dc60b80d12
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a78bbea2d11360bbfa48fa3da01391471b2e0a4d
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417119"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547359"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -230,17 +230,17 @@ SharePoint、OneDrive 和小組等工作負載都是為了共同作業而建立�
 
 5. 檢閱 (並視需要編輯) 組織的 [[安全附件原則]](set-up-atp-safe-attachments-policies.md) 和 [[安全連結原則]](set-up-atp-safe-links-policies.md)。
 
-6.  (建議) 成為全域系統管理員或 SharePoint Online 管理員，請執行 **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** Cmdlet，並將 _DisallowInfectedFileDownload_ 參數設定為 *true*。
+6.  (建議) 成為全域系統管理員或 SharePoint Online 管理員，請執行 **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** Cmdlet，並將 _DisallowInfectedFileDownload_ 參數設定為 `$true` 。
 
-   - 將參數設定為 *true* 可封鎖偵測到的檔案的所有動作 (刪除除外)。 使用者將無法開啟、移動、複製或共用偵測到的檔案。
+   - `$true` 封鎖針對偵測到的檔案 (刪除) 以外的所有動作。 使用者將無法開啟、移動、複製或共用偵測到的檔案。
+   - `$false` 封鎖除 Delete 和下載中心以外的所有動作。 使用者可以選擇接受風險並下載偵測到的檔案。
 
-   - 將參數設定為 *false* 可封鎖所有動作 (刪除和下載除外)。 使用者可以選擇接受風險並下載偵測到的檔案。
-   > [!TIP] 若要深入瞭解搭配 Microsoft 365 使用 PowerShell，請參閱使用 [PowerShell 管理 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)。
+   > [!TIP]
+   > 若要深入瞭解搭配 Microsoft 365 使用 PowerShell，請參閱使用 [PowerShell 管理 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)。
 
 7. 允許最多30分鐘的變更，以散佈至所有 Microsoft 365 資料中心。
 
-
-#### <a name="now-set-up-alerts-for-detected-files"></a>現在，設定偵測到檔案的警示
+### <a name="now-set-up-alerts-for-detected-files"></a>現在，設定偵測到檔案的警示
 
 若要在 SharePoint Online、商務用 OneDrive 或 Microsoft Teams 中的檔案被識別為惡意檔案時收到通知，您可以設定警示。
 
@@ -266,9 +266,10 @@ SharePoint、OneDrive 和小組等工作負載都是為了共同作業而建立�
 
 > [!NOTE]
 > 當您完成設定時，請使用下列連結來開始工作負載調查：
->- [檢視在 SharePoint、OneDrive 或 Microsoft Teams 中偵測到的惡意檔案資訊](malicious-files-detected-in-spo-odb-or-teams.md)
->- [在 SharePoint 線上、OneDrive 或 Microsoft 小組中找到惡意檔案時，要執行的動作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
->- [在 Microsoft 365 中以系統管理員身分管理被隔離的郵件和檔案](manage-quarantined-messages-and-files.md) 
+>
+> - [檢視在 SharePoint、OneDrive 或 Microsoft Teams 中偵測到的惡意檔案資訊](malicious-files-detected-in-spo-odb-or-teams.md)
+> - [在 SharePoint 線上、OneDrive 或 Microsoft 小組中找到惡意檔案時，要執行的動作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+> - [在 Microsoft 365 中以系統管理員身分管理被隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
 
 ## <a name="part-6---additional-settings-to-configure"></a>第6部分-要設定的其他設定
 

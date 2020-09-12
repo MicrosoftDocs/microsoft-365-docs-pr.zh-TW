@@ -4,7 +4,7 @@ author: msfttracyp
 ms.author: tracyp
 manager: dansimp
 ms.topic: article
-ms.service: Microsoft Threat Protection
+ms.service: O365-seccomp
 audience: admin
 f1.keywords:
 - NOCSH
@@ -14,12 +14,12 @@ search.appverid: MET150
 description: 威脅修正
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 44f20b29dcc88b1d991f9e93929aacc0e8aece32
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903880"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547237"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修復 Office 365 中傳遞的惡意電子郵件
 
@@ -39,7 +39,6 @@ ms.locfileid: "46903880"
 |使用威脅瀏覽器 (和即時偵測) 來分析威脅 |全域系統管理員 <br> 安全性系統管理員 <br> 安全性讀取者|否|
 |使用威脅瀏覽器 (和即時偵測) 來查看電子郵件訊息的標題，以及預覽及下載隔離的電子郵件|全域系統管理員 <br> 安全性系統管理員 <br>安全性讀取者|否|
 |使用威脅瀏覽器來查看標頭，並下載傳送至信箱的電子郵件|全域系統管理員 <br>安全性系統管理員 <br> 安全性讀取者 <br> 預覽|是|
-
 
 > [!NOTE]
 > Preview 是 *角色*，不是 *角色群組*。 預覽角色必須新增至 Office 365 的現有角色群組。 *全域系統管理員角色*會指派于[Microsoft 365 系統管理中心](https://admin.microsoft.com)。 安全性管理員和安全性讀取者角色會指派在 [安全性與合規性中心](https://protection.office.com)。 若要深入瞭解角色和許可權，請參閱 [安全性與合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。

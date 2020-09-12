@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: 深入瞭解 Office 365 德國。
-ms.openlocfilehash: 694f1a2ebbe3740c09cb306a26729b6482497d0b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: a9ad8f88f48315c77d17ca51855d75d1c443f6f2
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307274"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545915"
 ---
 # <a name="learn-about-office-365-germany"></a>深入了解 Office 365 Germany
 
@@ -35,11 +35,11 @@ ms.locfileid: "47307274"
 
 Office 365 德國是一種可在歐洲使用的 Office 365 服務的區別選項。 透過德國法律所規定的獨特資料存取和控制量，它可協助您在德國、歐盟 (EU) 和歐盟自由交易協會 (EFTA) 中的最受管制客戶的需求，並提供我們業界領先的生產力服務，以供數位化工作從德國資料中心使用。
   
-資料信任者 T-Systems International (獨立德國公司) 和 Deutsche Telekom 子公司會控制客戶資料的實體和邏輯存取。非由資料信任者 (德國法律所規範) 核准或監督不得存取客戶資料。
+資料信任者 T-Systems International (獨立德國公司) 和 Deutsche Telekom 子公司會控制客戶資料的實體和邏輯存取。 未經德國法律制約的資料受信者的核准或監督無法存取客戶資料。
   
-客戶必須已移動，而且 Office 365 德國的隔離限制可滿足客戶想要的彈性和一致性能力。 從2018年8月開始，我們不再接受新的客戶，或從目前可用的 Microsoft 雲端德國部署任何新的服務。 如需詳細資訊，請參閱下列博客文章： [Microsoft 在2019中從德國的新 datacentres 傳遞雲端服務，以滿足不斷發展的客戶需求](https://go.microsoft.com/fwlink/p/?linkid=839016)。
+客戶必須已移動，而且 Office 365 德國的隔離限制可滿足客戶所需之彈性和一致性的能力。 從2018年8月開始，我們不再接受新的客戶，或從目前可用的 Microsoft 雲端德國部署任何新的服務。 如需詳細資訊，請參閱下列博客文章： [Microsoft 在2019中從德國的新 datacentres 傳遞雲端服務，以滿足不斷發展的客戶需求](https://go.microsoft.com/fwlink/p/?linkid=839016)。
   
-## <a name="what-microsoft-online-services-are-available-in-office-365-germany"></a>Office 365 Germany 提供哪些 Microsoft 線上服務？
+## <a name="which-microsoft-online-services-are-available-in-office-365-germany"></a>Office 365 德國有哪些 Microsoft 線上服務可供使用？
 
 Office 365 德國計畫選項會在此孤立環境中盡可能搭配全球泛型服務。 例外情況包括 Yammer 相關方案、生命週期即將結束的方案，以及採非營利計畫方式提供的方案。 Office 365 E5、SPE 及其他服務會在 Office 365 德國正式供貨之後提供。 
   
@@ -89,7 +89,7 @@ Office 365 德國計畫選項會在此孤立環境中盡可能搭配全球泛型
   
 ## <a name="general-information"></a>一般資訊
 
-|||
+|項目|資訊|
 |-----|-----|
 |登入入口網站  <br/> |[https://portal.office.de](https://portal.office.de)  <br/> |
 |訂閱、帳單和技術支援  <br/> |以德國為基礎的支援可用德語和英文如需詳細資訊，請參閱 [商務產品的連絡人支援-系統管理](../contact-support-for-business-products.md)說明。  <br/> |

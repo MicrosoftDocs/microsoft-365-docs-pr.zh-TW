@@ -18,29 +18,29 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本行動性和安全性來建立保護組織資訊的裝置原則。
-ms.openlocfilehash: eddd3454e8f00bab7a830e7710331cafd097d7de
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 322bca862c852f83406ca4622a63384b2e2275e5
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430118"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545881"
 ---
-# <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本行動性和安全性中建立裝置安全性原則 
+# <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本行動性和安全性中建立裝置安全性原則
 
 您可以使用基本行動性和安全性來建立裝置原則，以協助保護 Microsoft 365 上的組織資訊免受未授權的存取。 您可以將原則套用至組織中的任何行動裝置，讓裝置的使用者具有適用的 Microsoft 365 授權，並已在基本行動性和安全性中註冊裝置。
 
 ## <a name="before-you-begin"></a>開始之前
 
->[!IMPORTANT]
->在您可以建立行動裝置原則之前，您必須啟動並設定基本行動性和安全性。 如需詳細資訊，請參閱基本行動性和安全性概述。
+> [!IMPORTANT]
+> 在您可以建立行動裝置原則之前，您必須啟動並設定基本行動性和安全性。 如需詳細資訊，請參閱基本行動性和安全性概述。
 
 - 深入瞭解基本行動性和安全性所支援的裝置、行動裝置應用程式及安全性設定。 請參閱 [基本行動性和安全性的功能](capabilities.md)。
 - 建立安全性群組，其中包含您想要部署原則的 Microsoft 365 使用者，以及您可能想要排除禁止存取 Microsoft 365 的使用者。 建議您在將新的原則部署至組織之前，先將原則部署至少量的使用者，以測試原則。 您可以建立並使用安全性群組，其中只包含您自己或可以為您測試原則的少數 Microsoft 365 使用者。 若要深入瞭解安全性群組，請參閱 [建立、編輯或刪除安全性群組](https://go.microsoft.com/fwlink/p/?LinkId=518555)。
 - 若要在 Microsoft 365 中建立及部署基本行動及安全性原則，您必須是 Microsoft 365 全域管理員。如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1)。
 - 在您部署原則之前，請讓您的組織知道以基本行動性和安全性登錄裝置的潛在影響。 根據您設定原則的方式，可以封鎖不相容的裝置以存取 Microsoft 365 和資料，包括已註冊裝置上已安裝的應用程式、相片和個人資訊，以及可刪除的資料。
 
->[!NOTE]
->在 MDM for Microsoft 365 商務標準中建立的原則和存取規則會覆寫 Exchange 系統管理中心建立的行動裝置信箱原則和裝置存取規則 ActiveSync。 在 MDM for Microsoft 365 商務標準中登記裝置後，就會忽略任何 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則套用至裝置。 若要深入瞭解 Exchange ActiveSync，請參閱 exchange [Online 中的 exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=524380)。
+> [!NOTE]
+> 在 MDM for Microsoft 365 商務標準中建立的原則和存取規則會覆寫 Exchange 系統管理中心建立的行動裝置信箱原則和裝置存取規則 ActiveSync。 在 MDM for Microsoft 365 商務標準中登記裝置後，就會忽略任何 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則套用至裝置。 若要深入瞭解 Exchange ActiveSync，請參閱 exchange [Online 中的 exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=524380)。
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>步驟1：建立裝置原則並部署至測試群組
 
@@ -50,7 +50,7 @@ ms.locfileid: "47430118"
 
 2. 選取 [ **建立原則**]。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本行動及安全性原則設定":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本行動及安全性原則設定":::
 
 3. 在 [ **原則設定** ] 頁面上，指定您要套用至組織中行動裝置的需求。
 
@@ -71,7 +71,7 @@ ms.locfileid: "47430118"
 3. 檢查已套用原則的使用者裝置狀態。 您想要管理裝置的 **狀態** **。**
 4. 您也可以在選取裝置後，按一下 [**出廠重設**] 或 [從**管理**中**移除公司資料**] 按鈕，在裝置上進行完整或選擇性的擦除。 如需相關指示，請參閱 [在 Microsoft 365 中清除行動裝置。
 
-步驟3：將原則部署至您的組織
+## <a name="step-3-deploy-a-policy-to-your-organization"></a>步驟3：將原則部署至您的組織
 
 在您建立裝置原則並驗證它如預期般運作後，請將其部署至您的組織。
 
@@ -85,7 +85,7 @@ ms.locfileid: "47430118"
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>步驟4：封鎖不受支援的裝置的電子郵件存取
 
-為了協助保護您的組織資訊，您應該封鎖 Microsoft 365 電子郵件的應用程式存取（基本行動裝置及安全性不支援的行動裝置）。 如需支援的裝置清單，請參閱 [支援的裝置](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)。 
+為了協助保護您的組織資訊，您應該封鎖 Microsoft 365 電子郵件的應用程式存取（基本行動裝置及安全性不支援的行動裝置）。 如需支援的裝置清單，請參閱 [支援的裝置](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices)。
 
 **封鎖應用程式存取：**
 
@@ -93,7 +93,7 @@ ms.locfileid: "47430118"
 2. 選取 [ **管理整個組織的裝置存取設定**]。
 3. 若要封鎖不支援的裝置，請選擇 [**如果 Microsoft 365 的 MDM 不支援裝置**，請選擇**封鎖**]，然後選取 [**儲存**]。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本行動性和安全性封鎖存取選項":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本行動性和安全性封鎖存取選項":::
 
 ## <a name="step-5-choose-security-groups-to-be-excluded-from-conditional-access-checks"></a>步驟5：選擇要從條件式存取檢查排除的安全性群組
 
@@ -103,7 +103,7 @@ ms.locfileid: "47430118"
 
 2. 選取 [ **管理整個組織的裝置存取設定**]。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本行動及安全性建立原則選項":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本行動及安全性建立原則選項":::
 
 3. 選取 [ **新增** ]，以新增您要從封鎖 Microsoft 365 的存取權中排除之使用者的安全性群組。 當使用者已新增至此清單時，他們可以在使用不受支援的裝置時存取 Microsoft 365 電子郵件。
 
@@ -113,7 +113,7 @@ ms.locfileid: "47430118"
 
 6. 在 **全組織的裝置存取設定** 面板上，選擇 [ **儲存**]。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="基本行動及安全性允許存取選項":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="基本行動及安全性允許存取選項":::
 
 ## <a name="what-is-the-impact-of-security-policies-on-different-device-types"></a>安全性原則對不同裝置類型的影響為何？
 
@@ -138,14 +138,15 @@ ms.locfileid: "47430118"
 當您刪除原則或移除已部署原則的群組中的使用者時，可能會從使用者的裝置中移除原則設定 [Microsoft 365 電子郵件設定檔及快取的電子郵件。 請參閱下表，查看針對不同裝置類型移除的內容。
 
 |**移除的功能**|**iOS 6 和更新版本**|**Android 4 和更新版本 (包括 Samsung KNOX**|
-|:-----|:-----|:----------------------|
+|:-----|:-----|:-----|
 |受管理的電子郵件設定檔<sup>1</sup>|是|否|
 |封鎖雲端備份|是|否|
-<sup>1</sup>如果已選取 [ **管理的電子郵件設定檔** ] 來部署原則，則會從使用者裝置中刪除受管理的電子郵件設定檔及快取的電子郵件。
+
+<sup>1</sup> 如果已選取 [ **受管理的電子郵件設定檔** ] 來部署原則，則會從使用者裝置中刪除受管理的電子郵件設定檔及快取的電子郵件。
 
 原則會從行動裝置中移除每位使用者，原則會套用至下一次其裝置使用基本行動性和安全性進行簽入時。 如果您部署的是套用至這些使用者裝置的新原則，系統會提示他們在基本行動性和安全性中重新註冊。
 
-您也可以完全清除裝置，或選擇性地清除裝置中的組織資訊。 如需詳細資訊，請參閱 [在基本行動及安全性中清除行動裝置](wipe-mobile-device.md)。 
+您也可以完全清除裝置，或選擇性地清除裝置中的組織資訊。 如需詳細資訊，請參閱 [在基本行動及安全性中清除行動裝置](wipe-mobile-device.md)。
 
 ## <a name="related-topics"></a>相關主題
 
