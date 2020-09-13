@@ -2,7 +2,7 @@
 title: Microsoft 365 Apps 企業版
 description: 如何部署 Microsoft 365 應用程式、其更新方式及設定的管理方式
 keywords: 變更歷程記錄
-ms.prod: m365-md
+ms.service: m365-md
 ms.sitesec: library
 author: jaimeo
 f1.keywords:
@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: b3843da0d35d78486ed22af6d057930ee4ad5bc9
-ms.sourcegitcommit: 89b2ad0793c68415f178b8792a9757b9448345a6
+ms.openlocfilehash: 767489ba9f9ac63bc1a2d8b4999b6634335b1aef
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47295257"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547743"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps 企業版
 

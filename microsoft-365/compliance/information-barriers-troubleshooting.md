@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: 使用本文做為疑難排解資訊障礙的指南。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4e6087d0e1886d833a6cf0472ed467f8577c5d0
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: e19c7d22e2b34d3f8083bcf5b8fb7297dbf86229
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307926"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545667"
 ---
 # <a name="troubleshooting-information-barriers"></a>疑難排解資訊屏障
 
@@ -28,7 +28,7 @@ ms.locfileid: "47307926"
 當有人在資訊壁壘出現之後發生意外問題時，您可以採取一些步驟來解決這些問題。 使用本文做為指南。
 
 > [!IMPORTANT]
-> 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-全域管理員<br/>-合規性管理員<br/>-IB 相容性管理 (這是一個新的角色！ ) <p>若要深入瞭解資訊障礙的必要條件，請參閱 [資訊屏障原則) 的必要條件 (](information-barriers-policies.md#prerequisites)。<p>請務必 [連接至安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+> 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-全域管理員<br/>-合規性管理員<br/>-IB 相容性管理 (這是一個新的角色！ ) <p>若要深入瞭解資訊障礙的必要條件，請參閱 [資訊屏障原則) 的必要條件 (](information-barriers-policies.md#prerequisites)。<p>請務必 [連接至安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>問題：使用者意外封鎖，無法與 Microsoft 小組中的其他使用者通訊 
 
@@ -147,7 +147,7 @@ ms.locfileid: "47307926"
 
 2. 根據上一個步驟的結果，執行下列其中一個步驟：
   
-    |狀態  |下一步  |
+    |狀態  |後續步驟  |
     |---------|---------|
     |**未開始**     |若 **InformationBarrierPoliciesApplication** Cmdlet 已執行超過45分鐘，請複查您的審核記錄檔，以查看原則定義中是否有任何錯誤，或應用程式尚未啟動的其他一些原因。 |
     |**失敗**     |若應用程式失敗，請複查您的審核記錄檔。 另外，請複查您的區段和原則。 是否有任何使用者被指派至多個區段？ 是否有任何區段被指派多個 poliicy？ 如有必要，請 [編輯區段](information-barriers-edit-segments-policies.md#edit-a-segment) 和/或 [編輯原則](information-barriers-edit-segments-policies.md#edit-a-policy)，然後再次執行 **InformationBarrierPoliciesApplication** Cmdlet。  |
@@ -161,11 +161,11 @@ ms.locfileid: "47307926"
 
 請確定您的組織沒有適當的 [Exchange 通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 。 這類原則會防止套用資訊屏障原則。
 
-1. 連接至 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。 
+1. 連接至 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 
 
-2. 執行 [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps) Cmdlet，並檢查結果。
+2. 執行 [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy) Cmdlet，並檢查結果。
 
-    |結果  |下一步  |
+    |結果  |後續步驟  |
     |---------|---------|
     |Exchange 通訊錄原則會列出     |[移除通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy)         |
     |無通訊錄原則存在 |檢查您的審計記錄檔，以找出原則應用程式失敗的原因 |

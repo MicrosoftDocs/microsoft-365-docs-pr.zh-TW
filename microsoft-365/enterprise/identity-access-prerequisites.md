@@ -16,18 +16,18 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 40910c00a91a1e98d01fe2e25a4f9aed828a024a
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 2c654cb0ec2afd138c7c9fb4b339b53a8522e5e4
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357971"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547201"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
 本文說明在部署建議的身分識別和裝置存取原則之前，必須先執行的必要條件。 本文也會討論推薦的預設平臺用戶端設定，以提供最佳單一登入 (SSO) 使用者經驗，以及條件式存取的技術必要條件。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 在執行建議的身分識別和裝置存取原則之前，您的組織必須符合 Microsoft 365 和 Office 365 的這些身分識別和驗證模型：
 
@@ -40,7 +40,7 @@ ms.locfileid: "47357971"
 
 | 組態 | 例外狀況 |
 | :------------- | :-----------: |
-|  [設定密碼雜湊同步](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)處理。 這必須啟用以偵測已洩漏的認證，並針對風險型條件式存取採取行動。 **附注：** 不論您的組織是否使用混合式同盟驗證，都是必要的。 |  僅雲端 |
+|  [設定 PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。  這必須啟用以偵測已洩漏的認證，並針對風險型條件式存取採取行動。 **附注：** 不論您的組織是否使用同盟驗證，都是必要的。 |  僅雲端 |
 | [啟用無縫單一登入](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) ，當使用者位於連接至組織網路的組織裝置時，自動簽署使用者。 | 僅限雲端和同盟  |
 | [設定具名網路](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal)。 Azure AD Identity Protection 會收集和分析可產生風險分數的所有可用工作階段資料。 建議您在 Azure AD 命名為 [網路設定] 中，為您的網路指定您組織的公用 IP 範圍。 來自這些範圍的流量會獲得較低的風險分數，而來自組織環境以外的流量會獲得較高的風險排名。 | |
 |在[SSPR) 和多重要素驗證 (MFA) 時，註冊所有使用者的自助密碼重設 (](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)。 我們建議您提前註冊 Azure 使用者進行 Azure Multi-Factor 驗證。 Azure AD 身分識別保護會利用 Azure Multi-Factor 驗證，以執行其他安全性驗證。 此外，為了獲得最佳登入經驗，我們建議使用者在其裝置上安裝 [Microsoft 驗證者應用程式](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) 和 Microsoft 公司入口網站。 這些可從每個平臺的應用程式存放區安裝。 | |
@@ -49,7 +49,7 @@ ms.locfileid: "47357971"
 | [將密碼回寫設定成內部部署 AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。 密碼回寫可讓 Azure AD 要求使用者在偵測到高風險帳戶時變更其內部部署密碼。 您可以使用下列兩種方式之一，使用 Azure AD Connect 來啟用此功能：在 Azure AD Connect 安裝精靈的 [選用功能] 畫面啟用 **密碼回寫** 功能，或透過 Windows PowerShell 加以啟用。 | 僅雲端 |
 | [設定 AZURE AD 密碼保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)。 Azure AD 密碼保護偵測並封鎖已知弱密碼和其變種，也可以封鎖您組織特有的其他弱字詞。 預設全域禁止密碼清單會自動套用至 Azure AD 租使用者中的所有使用者。 您可以在 [自訂禁止的密碼] 清單中定義其他專案。 當使用者變更或重設其密碼時，會檢查這些禁止的密碼清單，以強制使用強式密碼。 | |
 | [啟用 Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。 Azure AD 身分識別保護可讓您偵測影響組織之身分識別的潛在弱點，並設定自動修正原則為低、中、高的登入風險和使用者風險。  | |
-| 為[Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)和[商務用 Skype Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)**啟用新式驗證**。 新式驗證是使用多重要素驗證 (MFA) 的必要條件。 Office 2016 用戶端、SharePoint Online 和商務用 OneDrive 預設會啟用新式驗證。 |  |
+| 為[Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)和[商務用 Skype Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)**啟用新式驗證**。 新式驗證是使用 MFA 的必要條件。 預設會為 Office 2016 用戶端、SharePoint 和商務 OneDrive 啟用新式驗證。 |  |
 |||
 
 ## <a name="recommended-client-configurations"></a>建議的用戶端設定

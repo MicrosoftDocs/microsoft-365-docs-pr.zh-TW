@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、OneDrive 商務及小組檔案的 Microsoft 365 的客戶金鑰。
-ms.openlocfilehash: 94403e1d76fbc6fdf06d784fbb7bb9025dc06fc0
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 8181ccfc988a10813f13e0b61d15f83eef57db76
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324209"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546755"
 ---
 # <a name="set-up-customer-key"></a>設定客戶金鑰
 
@@ -402,7 +402,7 @@ DEP 與儲存在 Azure Key Vault 中的一組機碼相關聯。 您為 Microsoft
   
 若要建立 DEP，請遵循下列步驟：
   
-1. 在您的本機電腦上，使用組織中具有全域系統管理員許可權的公司或學校帳戶，在 Windows PowerShell 視窗中連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 。
+1. 在您的本機電腦上，使用組織中具有全域系統管理員許可權的公司或學校帳戶，在 Windows PowerShell 視窗中連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 。
 
 2. 若要建立 DEP，請輸入下列命令，以使用 DataEncryptionPolicy Cmdlet。
 
@@ -486,7 +486,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 ### <a name="validate-file-encryption"></a>驗證檔加密
 
- 若要驗證 SharePoint 線上、OneDrive 商務及小組檔案的加密，請 [連線至 SharePoint 線上 PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)，然後使用 SPODataEncryptionPolicy 指令程式檢查您租使用者的狀態。 如果已啟用客戶金鑰加密，且所有網站中的所有檔案都已加密，則 _State_ 屬性會傳回 **已註冊** 的值。 如果加密仍在進行中，則此 Cmdlet 會提供完成的網站百分比資訊。
+ 若要驗證 SharePoint 線上、OneDrive 商務及小組檔案的加密，請 [連線至 SharePoint 線上 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)，然後使用 SPODataEncryptionPolicy 指令程式檢查您租使用者的狀態。 如果已啟用客戶金鑰加密，且所有網站中的所有檔案都已加密，則 _State_ 屬性會傳回 **已註冊** 的值。 如果加密仍在進行中，則此 Cmdlet 會提供完成的網站百分比資訊。
 
 ## <a name="related-articles"></a>相關文章
 

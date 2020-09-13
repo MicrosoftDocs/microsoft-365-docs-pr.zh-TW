@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 28d47ae30d47430744729705d9ace2e1ea0a6b97
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 8c4b136f30da0499b31102683f1a903e71813142
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419165"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547216"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 
@@ -44,7 +44,7 @@ ms.locfileid: "47419165"
 
 為了讓您有時間完成這些工作，建議您依照此表中所列的順序實施基準原則。 不過，針對敏感和高管制保護層級的 MFA 原則，可在任何時候實施。
 
-|保護層級|原則|其他相關資訊|
+|保護層級|原則|詳細資訊|
 |:---------------|:-------|:----------------|
 |**Baseline**|[當登入風險為*中*或*高*時，需要 MFA](#require-mfa-based-on-sign-in-risk)| |
 |        |[封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-modern-authentication)|未使用新式驗證的用戶端可以略過條件式存取原則，因此請務必封鎖這些設定。|
@@ -62,11 +62,11 @@ ms.locfileid: "47419165"
 
 設定原則之前，請先識別您針對每個保護層所使用的 Azure AD 群組。 一般會將基準保護套用至組織中的每個人。 包含在基線及敏感保護中的使用者，將會套用所有的基準原則，加上機密原則。 保護是累積的，且強制執行限制性最強的原則。 
 
-建議的做法是建立 Azure AD 群組，以進行條件式存取排除。 在 [**工作分派**] 區段的 [**使用者和群組**的**排除**值] 設定中，將此群組新增至所有的條件式存取規則。 這可讓您在疑難排解存取問題時，提供使用者存取的方法。 這只是建議的臨時解決方案。 監視此群組中的變更，並確定排除群組的使用只是預定的。 
+建議的做法是建立 Azure AD 群組，以進行條件式存取排除。 在 [**工作分派**] 區段的 [**使用者和群組**的**排除**值] 設定中，將此群組新增至所有的條件式存取原則。 這可讓您在疑難排解存取問題時，提供使用者存取的方法。 這只是建議的臨時解決方案。 監視此群組中的變更，並確定排除群組的使用只是預定的。 
 
 以下是需要 MFA 之群組指派及排除的範例。
 
-![MFA 規則的群組指派及排除範例](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
+![MFA 原則的群組指派及排除範例](../media/microsoft-365-policies-configurations/identity-access-policies-assignment.png)
 
 結果如下：
 
@@ -82,7 +82,7 @@ ms.locfileid: "47419165"
 
 對群組和使用者套用較高級別的保護時請務必小心。 例如，在每次登入時，最上層機密專案 X 群組的成員將需要使用 MFA，即使他們不是在 Project X 的高管制內容上運作也是一樣。  
 
-在這些建議中建立的所有 Azure AD 群組都必須建立為 Microsoft 365 群組。 在保護 Microsoft 小組中的檔並 SharePoint 線上時，此功能對於部署敏感度標籤來說很重要。
+在這些建議中建立的所有 Azure AD 群組都必須建立為 Microsoft 365 群組。 在保護 Microsoft 小組和 SharePoint 中的檔時，此功能對於部署敏感度標籤很重要。
 
 ![用於建立 Microsoft 365 群組的螢幕截圖](../media/microsoft-365-policies-configurations/identity-device-AAD-groups.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "47419165"
 |:---|:---------|:-----|:----|
 |使用者和群組|Include| **選取 [使用者和群組] > 使用者和群組**：選取包含目標使用者帳戶的特定群組。 |從包含試驗使用者帳戶的群組開始。|
 ||排除| **使用者和群組**：選取您的條件式存取例外狀況群組; (應用程式身分識別) 的服務帳戶。|成員資格應以所需的暫存方式來修改。|
-|雲端應用程式或動作| **雲端應用程式 > 包含** | **選取應用程式**：選取您想要套用此規則的應用程式。 例如，選取 [Exchange Online]。||
+|雲端應用程式或動作| **雲端應用程式 > 包含** | **選取應用程式**：選取您想要套用此原則的應用程式。 例如，選取 [Exchange Online]。||
 |條件| | |設定您的環境和需求特有的條件。|
 ||登入風險||請參閱下表中的指南。|
 |||||
@@ -194,6 +194,8 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 請考慮使用 [if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) 工具來測試原則。
 
+使用此原則搭配 [設定 AZURE AD 密碼保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)，它會偵測並封鎖已知弱密碼和其變種，以及組織特有的其他弱字詞。 使用 Azure AD 密碼保護可確保變更的密碼為強式密碼。
+
 ## <a name="apply-app-data-protection-policies"></a>套用應用程式資料保護原則
 
 應用程式保護原則 (應用程式) 定義允許哪些應用程式，以及可以對組織的資料採取的動作。 應用程式中的可用選項可讓組織針對其特定需求量身定制防護。 在某些情況下，可能不會很顯然，執行完整案例需要哪些原則設定。 為了協助組織優先考慮行動用戶端端點強化，Microsoft 已引進其應用程式資料保護架構的分類，以供 iOS 和 Android 行動應用程式管理。 
@@ -208,7 +210,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 使用身分 [識別與裝置存取](microsoft-365-policies-configurations.md)設定中所述的原則，比較基準和機密保護階層與第2級企業增強型資料保護設定緊密對應。 高度管制防護階層密切對應于第3級企業高資料保護設定。
 
-|保護層級 |應用程式保護原則  |其他相關資訊  |
+|保護層級 |應用程式保護原則  |詳細資訊  |
 |---------|---------|---------|
 |基準     | [第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | 在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。         |
 |敏感性     | [第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | 在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。        |
@@ -221,11 +223,11 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 ## <a name="require-approved-apps-and-app-protection"></a>需要核准的應用程式和應用程式保護
 
-若要強制執行您在 Intune 中所套用的應用程式保護原則，您必須建立一個條件式存取規則，以要求核准的用戶端應用程式，以及應用程式保護原則中設定的條件。 
+若要強制執行您在 Intune 中所套用的應用程式保護原則，您必須建立一個條件式存取原則，以要求核准的用戶端應用程式，以及應用程式保護原則中設定的條件。 
 
 強制執行應用程式保護原則需要 [使用應用程式保護原則，以具備條件式存取權存取雲端應用](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)程式的原則。 這些原則都包含在此建議的身分識別和存取設定原則組中。
 
-若要建立需要經核准的應用程式和應用程式保護的條件式存取規則365，請在 [案例1： microsoft 365 應用程式需要已核准的應用程式搭配應用程式保護原則](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)，以允許 Outlook IOS 和 Android，但封鎖 OAuth 功能的 Exchange ActiveSync 用戶端無法連線至 Exchange Online。
+若要建立需要經核准的應用程式和應用程式保護的條件式存取原則365，請在 [案例1： microsoft 365 應用程式需要已核准的應用程式搭配應用程式保護原則](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)，以允許 Outlook IOS 和 Android，但封鎖 OAuth 功能的 Exchange ActiveSync 用戶端無法連線至 Exchange Online。
 
    > [!NOTE]
    > 這種原則可確保行動使用者可以使用適用的應用程式來存取所有 Office 端點。
@@ -234,7 +236,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
  這些原則利用授與控制措施 [需要核准的用戶端應用程式](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) ，並 [要求應用程式保護原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)。
 
-最後，封鎖 iOS 和 Android 裝置上其他用戶端應用程式的舊版驗證，以確保這些用戶端無法略過條件式存取規則。 如果您遵循本文的指導方針，您已設定 [封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-modern-authentication)。
+最後，封鎖 iOS 和 Android 裝置上其他用戶端應用程式的舊版驗證，以確保這些用戶端無法略過條件式存取原則。 如果您遵循本文的指導方針，您已設定 [封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-modern-authentication)。
 
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).

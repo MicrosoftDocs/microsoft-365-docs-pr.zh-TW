@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解客戶密碼箱要求，可讓您控制當您遇到問題時，Microsoft 支援工程師可如何存取您的資料。
-ms.openlocfilehash: 67662c34ed3aedb22c3462a2ba8aff9e338e07c6
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: d71fbaa42fba49bd0f06b26d34d2257f8a4a60ba
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794252"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546499"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Office 365 中的客戶加密箱
 
@@ -101,7 +101,7 @@ ms.locfileid: "46794252"
     ![核准或拒絕客戶加密箱要求](../media/CustomerLockbox8.png)
 
 > [!NOTE]
-> 使用 AccessToCustomerDataRequest 指令程式來核准、拒絕或取消 Microsoft 365 客戶加密箱要求，以控制 Microsoft 支援工程師對您資料的存取權。 如需詳細資訊，請參閱 [AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest?view=exchange-ps)。
+> 使用 AccessToCustomerDataRequest 指令程式來核准、拒絕或取消 Microsoft 365 客戶加密箱要求，以控制 Microsoft 支援工程師對您資料的存取權。 如需詳細資訊，請參閱 [AccessToCustomerDataRequest](https://docs.microsoft.com/powershell/module/exchange/set-accesstocustomerdatarequest)。
 
 
 ## <a name="auditing-customer-lockbox-requests"></a>審核客戶加密箱要求

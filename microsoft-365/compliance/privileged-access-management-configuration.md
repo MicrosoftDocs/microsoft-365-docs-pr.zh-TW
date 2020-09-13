@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 請參閱本文，以深入瞭解如何在 Office 365 中啟用和設定特殊許可權存取管理。
-ms.openlocfilehash: 4bae6d311b3447534165ee803d7094e5797a9b1c
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 7b3ac9dbc065bcbbdf48e805a3975886a894c645
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936318"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545993"
 ---
 # <a name="get-started-with-privileged-access-management"></a>開始使用 Privileged Access Management
 
@@ -32,23 +32,23 @@ ms.locfileid: "44936318"
 
 ## <a name="before-you-begin"></a>開始之前
 
-開始使用特殊許可權存取管理之前，您應該先確認您的[Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)及任何附加元件。 若要存取及使用「特殊的存取管理」，您的組織必須具備下列其中一項訂閱或附加元件：
+開始使用特殊許可權存取管理之前，您應該先確認您的 [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) 及任何附加元件。 若要存取及使用「特殊的存取管理」，您的組織必須具備下列其中一項訂閱或附加元件：
 
-- Microsoft 365 E5 訂閱（付費或試用版）
-- Microsoft 365 E3 訂閱（或 Office 365 E3 訂閱 + Enterprise 可移動性和 Security E3 訂閱） + Microsoft 365 E5 相容性附加元件
+- Microsoft 365 E5 訂閱 (付費或試用版本) 
+- Microsoft 365 E3 訂閱 (或 Office 365 E3 訂閱 + Enterprise 可移動性和 Security E3 訂閱) + Microsoft 365 E5 相容性附加元件
 - 商務訂閱的任何 Microsoft 365、Office 365、Exchange、SharePoint 或 OneDrive + Microsoft 365 E5 內幕人士風險管理附加元件  
-- Microsoft 365 A5 訂閱（付費或試用版）
-- Microsoft 365 A3 訂閱（或 Office 365 A3 訂閱 + Enterprise 可移動性和安全性 A3 訂閱） + Microsoft A5 符合性附加元件
+- Microsoft 365 A5 訂閱 (付費或試用版本) 
+- Microsoft 365 A3 訂閱 (或 Office 365 A3 訂閱 + 企業行動及安全性 A3 訂閱) + Microsoft A5 規範附加元件
 - 教育版訂閱的任何 Microsoft 365、Office 365、Exchange、SharePoint 或 OneDrive，也就是 Microsoft 365 A5 內幕人士風險管理附加元件
-- Office 365 企業版 E5 訂閱（付費或試用版）
-- Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件（已無法再供新訂閱使用，請參閱記事）
+- Office 365 企業版 E5 訂閱 (付費或試用版本) 
+- Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件 (已無法再供新訂閱使用，請參閱記事) 
 
 提交及回應特殊許可權存取管理要求的使用者，必須指派上述其中一個授權。
 
 >[!IMPORTANT]
 >Office 365 Advanced 合規性不再銷售為獨立訂閱。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
 
-如果您沒有現有的 Office 365 企業版 E5 計畫，且想要嘗試使用許可權存取管理，您可以[將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365)至現有的 office 365 訂閱，或註冊 Microsoft 365 企業版 e5 的[試用版](https://www.microsoft.com/microsoft-365/enterprise)。
+如果您沒有現有的 Office 365 企業版 E5 計畫，且想要嘗試使用許可權存取管理，您可以 [將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 至現有的 office 365 訂閱，或註冊 Microsoft 365 企業版 e5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
 
 ## <a name="enable-and-configure-privileged-access-management"></a>啟用和設定特殊許可權存取管理
 
@@ -64,30 +64,30 @@ ms.locfileid: "44936318"
 
 - [步驟3：建立存取原則](privileged-access-management-configuration.md#step3)
 
-    建立核准原則可讓您定義個別任務的特定核准需求範圍。 核准類型選項為**自動**或**手動**。
+    建立核准原則可讓您定義個別任務的特定核准需求範圍。 核准類型選項為 **自動** 或 **手動**。
 
 - [步驟4：提交/核准許可權存取要求](privileged-access-management-configuration.md#step4)
 
     一旦啟用，「特殊許可權存取」會要求任何具有定義相關核准原則的任務的核准。 對於包含在核准原則中的工作，使用者必須要求並授與「存取權核准」，以具備執行工作所需的許可權。
 
-授與核准後，要求使用者可以執行預定的工作，而許可權存取將會代表使用者授權並執行工作。 核准對於要求的持續時間（預設工期為4小時）保持有效，在此期間，申請者可以多次執行預定的工作。 所有這類執行都會記錄下來，以進行安全性和合規性審核。 
+授與核准後，要求使用者可以執行預定的工作，而許可權存取將會代表使用者授權並執行工作。 核准對於要求的持續時間保持有效 (預設持續時間為4小時) ，在此期間，申請者可以多次執行預定的工作。 所有這類執行都會記錄下來，以進行安全性和合規性審核。 
 
 >[!NOTE]
->如果您想要使用 Exchange 管理 PowerShell 來啟用及設定特殊許可權存取，請依照使用 Multi-Factor 驗證連線至 exchange Online PowerShell 與 Office 365 認證，[使用 [連線至 Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps)中的步驟進行。 您不需要為組織啟用多重要素驗證，就能在連線至 Exchange Online PowerShell 時，使用這些步驟來啟用許可權存取。 使用多重要素驗證來建立 OAuth 權杖，以供簽署要求的授權存取使用。
+>如果您想要使用 Exchange 管理 PowerShell 來啟用及設定特殊許可權存取，請依照使用 Multi-Factor 驗證連線至 exchange Online PowerShell 與 Office 365 認證， [使用 [連線至 Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa) 中的步驟進行。 您不需要為組織啟用多重要素驗證，就能在連線至 Exchange Online PowerShell 時，使用這些步驟來啟用許可權存取。 使用多重要素驗證來建立 OAuth 權杖，以供簽署要求的授權存取使用。
 
 <a name="step1"> </a>
 
 ## <a name="step-1-create-an-approvers-group"></a>步驟1：建立核准者的群組
 
-1. 使用組織中的系統管理員帳號憑證，登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
+1. 使用組織中的系統管理員帳號憑證，登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com) 。
 
 2. 在系統管理中心中，移至 [**群組**] [  >  **新增群組**]。
 
-3. 選取 [擁有**郵件功能的安全性群組**]，然後完成新群組的**名稱**、**群組電子郵件地址**及**描述**欄位。
+3. 選取 [擁有 **郵件功能的安全性群組** ]，然後完成新群組的 **名稱**、 **群組電子郵件地址**及 **描述** 欄位。
 
 4. 儲存群組。 可能需要幾分鐘的時間，才能完整設定群組，並顯示在 Microsoft 365 系統管理中心。
 
-5. 選取新的核准者群組，然後選取 [**編輯**]，將使用者新增至群組。
+5. 選取新的核准者群組，然後選取 [ **編輯** ]，將使用者新增至群組。
 
 6. 儲存群組。
 
@@ -97,15 +97,15 @@ ms.locfileid: "44936318"
 
 ### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心
 
-1. 使用組織中的系統管理員帳號憑證，登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
+1. 使用組織中的系統管理員帳號憑證，登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com) 。
 
 2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
-3. 啟用 [對**特權任務需要核准**] 控制項。
+3. 啟用 [對 **特權任務需要核准** ] 控制項。
 
-4. 將您在步驟1中建立的核准者群組指派為預設的 [**核准者] 群組**。
+4. 將您在步驟1中建立的核准者群組指派為預設的 [ **核准者] 群組**。
 
-5. **儲存**並**關閉**。
+5. **儲存** 並 **關閉**。
 
 ### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell
 
@@ -132,13 +132,13 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心
 
-1. 使用組織中的系統管理員帳號憑證，登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
+1. 使用組織中的系統管理員帳號憑證，登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com) 。
 
 2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
-3. 選取 [**管理存取原則和要求**]。
+3. 選取 [ **管理存取原則和要求**]。
 
-4. 選取 [**設定原則**]，然後選取 [**新增原則**]。
+4. 選取 [ **設定原則** ]，然後選取 [ **新增原則**]。
 
 5. 從下拉欄位中，為您的組織選取適當的值：
     
@@ -152,7 +152,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
     **核准群組**：選取步驟1中建立的核准者群組
 
-6. 選取 [**建立**後**關閉**]。 可能需要幾分鐘的時間，才能完全設定或啟用原則。
+6. 選取 [ **建立** 後 **關閉**]。 可能需要幾分鐘的時間，才能完全設定或啟用原則。
 
 ### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell
 
@@ -178,13 +178,13 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 #### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心
 
-1. 使用您的認證登入[Microsoft 365 Admin Center](https://admin.microsoft.com) 。
+1. 使用您的認證登入 [Microsoft 365 Admin Center](https://admin.microsoft.com) 。
 
 2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
-3. 選取 [**管理存取原則和要求**]。
+3. 選取 [ **管理存取原則和要求**]。
 
-4. 選取 [**新增要求**]。 從下拉欄位中，為您的組織選取適當的值：
+4. 選取 [ **新增要求**]。 從下拉欄位中，為您的組織選取適當的值：
 
     **要求類型**：任務、角色或角色群組
 
@@ -192,11 +192,11 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **要求**：從可用原則選取
 
-    **持續時間（小時）**：要求存取的小時數。 可要求的小時數沒有限制。
+    **Duration (小時) **：要求存取的小時數。 可要求的小時數沒有限制。
 
     **批註**：與您的 access 要求相關的註解文字欄位
 
-5. 選取 [**儲存**並**關閉**]。 您的要求將透過電子郵件傳送給核准者的群組。
+5. 選取 [ **儲存** 並 **關閉**]。 您的要求將透過電子郵件傳送給核准者的群組。
 
 #### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell
 
@@ -218,13 +218,13 @@ New-ElevatedAccessRequest -Task 'Exchange\New-MoveRequest' -Reason 'Attempting t
 
 #### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心
 
-1. 使用您的認證登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
+1. 使用您的認證登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com) 。
 
 2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
-3. 選取 [**管理存取原則和要求**]。
+3. 選取 [ **管理存取原則和要求**]。
 
-4. 選取 [ **View** ] （提交）以透過**擱置**、**核准**、**拒絕**或**客戶密碼箱**狀態來篩選送出的要求。
+4. 選取 [ **View** ] （提交）以透過 **擱置**、 **核准**、 **拒絕**或 **客戶密碼箱** 狀態來篩選送出的要求。
 
 #### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell
 
@@ -246,15 +246,15 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 
 #### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心
 
-1. 使用您的認證登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
+1. 使用您的認證登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com) 。
 
 2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
-3. 選取 [**管理存取原則和要求**]。
+3. 選取 [ **管理存取原則和要求**]。
 
 4. 選取列出的要求以查看詳細資料，並對要求採取動作。
 
-5. 選取 [**核准**] 以核准要求，或選取 [**拒絕**] 以拒絕要求。 先前核准的要求可以透過選取 **[撤銷]** 來撤銷存取權。
+5. 選取 [ **核准** ] 以核准要求，或選取 [ **拒絕** ] 以拒絕要求。 先前核准的要求可以透過選取 **[撤銷]** 來撤銷存取權。
 
 #### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell
 
@@ -288,15 +288,15 @@ Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comm
 
 ### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心
 
-1. 使用組織中的系統管理員帳號憑證，登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
+1. 使用組織中的系統管理員帳號憑證，登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com) 。
 
 2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
-3. 選取 [**管理存取原則和要求**]。
+3. 選取 [ **管理存取原則和要求**]。
 
-4. 選取 [**設定原則**]。
+4. 選取 [ **設定原則**]。
 
-5. 選取您要刪除的原則，然後選取 [**移除原則**]。
+5. 選取您要刪除的原則，然後選取 [ **移除原則**]。
 
 6. 選取 **[關閉]**。
 
@@ -314,11 +314,11 @@ Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you w
 
 ### <a name="in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心
 
-1. 使用組織中的系統管理員帳戶的認證登入[Microsoft 365 系統管理中心](https://admin.microsoft.com)。
+1. 使用組織中的系統管理員帳戶的認證登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com) 。
 
 2. 在系統管理中心中，移至 [**設定**  >  **組織設定**  >  **安全性 & 隱私權**特殊  >  **許可權存取**]。
 
-3. 啟用 [**需要核准存取**許可權] 控制。
+3. 啟用 [ **需要核准存取** 許可權] 控制。
 
 ### <a name="in-exchange-management-powershell"></a>在 Exchange 管理 PowerShell
 

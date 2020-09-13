@@ -7,17 +7,18 @@ author: markjjo
 manager: laurawi
 audience: Admin
 ms.topic: how-to
+ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 您必須啟用 ClickOnce 支援，才能使用最新版的 Microsoft Edge 從內容搜尋和 eDiscovery 的安全性與合規性中心下載搜尋結果。
-ms.openlocfilehash: 317e19c81a606565fcb18f3256fd5bac007747e1
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 60f42d2884c56aaff40bc0a6a979e99698a3cd2e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357573"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546817"
 ---
 # <a name="use-the-ediscovery-export-tool-in-microsoft-edge"></a>使用 Microsoft Edge 中的 eDiscovery 匯出工具
 

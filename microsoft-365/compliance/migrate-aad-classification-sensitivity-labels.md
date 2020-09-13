@@ -7,15 +7,15 @@ manager: pamgreen
 audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
-ms.service: o365-seccomp
+ms.service: O365-seccomp
 localization_priority: Normal
 description: 本文討論傳統 Azure Active Directory 分類和敏感度標籤。
-ms.openlocfilehash: 38a3dbe727f3d0759d427944016ae98440f2686f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 2506e7f467a485878f1e26a23ee1071907b41614
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308170"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47545657"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Microsoft 365 群組的 Azure Active Directory 分類和敏感度標籤
 
@@ -48,8 +48,10 @@ ms.locfileid: "47308170"
 
 > [!NOTE]
 > 在 Outlook 桌面用戶端 (Win 32) 時，系統管理員會在其承租人上啟用敏感度標籤，而其使用者位於舊版的 Outlook 桌面用戶端 (Win 32) ：
+>
 > - 使用者看到敏感度標籤會出現在舊版的 Outlook desktop 用戶端上。
 > - 不過，當使用者編輯群組，並以靈敏度標籤儲存群組時，所選取的隱私權設定會被套用靈敏度標籤的隱私權設定所取代。
+>
 > 建議您的使用者在舊版本的 Outlook 用戶端升級至較新的版本。
 
 ## <a name="scenario-2-tenant-is-already-using-classic-aad-classifications"></a>案例2：承租人已使用傳統的 AAD [分類](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
@@ -76,8 +78,10 @@ ms.locfileid: "47308170"
 
 > [!NOTE]
 > 在 Outlook 桌面用戶端 (Win 32) 時，系統管理員會在其承租人上啟用敏感度標籤，而其使用者位於舊版的 Outlook 桌面用戶端 (Win 32) ：
+>
 > - 使用者看到敏感度標籤會出現在舊版的 Outlook desktop 用戶端上。
 > - 不過，當使用者編輯群組，並以靈敏度標籤儲存群組時，所選取的隱私權設定會被套用靈敏度標籤的隱私權設定所取代。
+>
 > 建議您的使用者在舊版本的 Outlook 用戶端升級至較新的版本。
 
 ### <a name="case-b-tenant-used-sensitivity-labels-for-documents-and-emails"></a>案例 B：租使用者對檔和電子郵件使用敏感度標籤
@@ -90,4 +94,3 @@ ms.locfileid: "47308170"
 ## <a name="sample-script"></a>指令碼範例
 
 如需將具有傳統 AAD 標籤的群組遷移至敏感度標籤的範例腳本，請參閱 [傳統 AZURE AD 群組分類](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification)。
-

@@ -4,18 +4,17 @@ keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 ms.author: jaimeo
 author: jaimeo
-ms.prod: microsoft-365-enterprise
 ms.topic: article
 audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 8a5de1673a7b67481c368c5c76444e817f237fe7
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 2ac0bb01c1a941d460e92c7e75e765ceb85b2bc0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315774"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546571"
 ---
 # <a name="access-the-admin-portal"></a>存取管理員入口網站
 
