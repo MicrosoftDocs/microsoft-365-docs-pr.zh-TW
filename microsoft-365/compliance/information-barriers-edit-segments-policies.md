@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: 瞭解如何編輯或移除資訊障礙的原則。
-ms.openlocfilehash: 6ac739ecff3921b4061d5d22410b2e2b1ada7af2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 7e027d9026818eefacd1c84949e3211c19ae8cf9
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307936"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547461"
 ---
 # <a name="edit-or-remove-information-barrier-policies"></a>編輯 (或移除) 資訊屏障原則
 
@@ -26,7 +26,7 @@ ms.locfileid: "47307936"
 
 ## <a name="what-do-you-want-to-do"></a>您要執行的工作
 
-|動作  |描述 |
+|動作  |說明 |
 |---------|---------|
 |[編輯使用者帳戶屬性](#edit-user-account-attributes)     |在 Azure Active Directory 中填入可用於定義區段的屬性。<br/>編輯使用者帳戶屬性時，使用者不會包含在應是的區段中，變更使用者所在的區段，或定義使用不同屬性的區段。         |
 |[編輯區段](#edit-a-segment)     |當您想要變更區段定義的方式時，請編輯段落。 <br/>例如，您可能原本使用 *部門* 定義的區段，現在想要使用另一個屬性，例如 *MemberOf*。         |
@@ -38,7 +38,7 @@ ms.locfileid: "47307936"
 |[疑難排解資訊屏障](information-barriers-troubleshooting.md)     |當您遇到資訊障礙的意外問題時，請參閱本文。         |
 
 > [!IMPORTANT]
-> 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-全域管理員<br/>-合規性管理員<br/>-IB 相容性管理 (這是一個新的角色！ ) <p>若要深入瞭解資訊障礙的必要條件，請參閱 [資訊屏障原則) 的必要條件 (](information-barriers-policies.md#prerequisites)。<p>請務必 [連接至安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+> 若要執行本文所述的工作，您必須獲指派適當的角色，例如下列其中一項：<br/>-Microsoft 365 企業版全域系統管理員<br/>-全域管理員<br/>-合規性管理員<br/>-IB 相容性管理 (這是一個新的角色！ ) <p>若要深入瞭解資訊障礙的必要條件，請參閱 [資訊屏障原則) 的必要條件 (](information-barriers-policies.md#prerequisites)。<p>請務必 [連接至安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 ## <a name="edit-user-account-attributes"></a>編輯使用者帳戶屬性
 

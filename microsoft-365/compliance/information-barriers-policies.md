@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 024b10f86cb38532dc441ebd9c88c050fe2839b7
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: dcf7fd496098032bad075c1679f0081ddf29caef
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308072"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547441"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -55,7 +55,7 @@ ms.locfileid: "47308072"
 | (視需要) [編輯區段或原則](information-barriers-edit-segments-policies.md)    |-編輯區段<br/>-編輯或移除原則<br/>-重新執行原則應用程式<br/>-查看原則狀態         |
 | (視需要) [疑難排解](information-barriers-troubleshooting.md)|-當事情沒有如預期的運作時採取動作|
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 除了 [必要的授權和許可權](information-barriers.md#required-licenses-and-permissions)之外，請確定符合下列需求： 
      
@@ -71,7 +71,7 @@ ms.locfileid: "47308072"
 - 無通訊錄原則-在您定義及套用資訊屏障原則之前，請確定沒有任何 Exchange 通訊錄原則存在到位。 資訊障礙是以通訊錄原則為基礎，但這兩種原則不相容。 如果您有這類原則，請務必先 [移除您的通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) 。 一旦資訊障礙原則已啟用，且已啟用階層式通訊錄，所有 ***未包含*** 在資訊屏障區段中的使用者，都會在 Exchange online 中看到 [階層式通訊錄](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) 。
 
 - 目前 PowerShell 中，資訊屏障原則是在 Office 365 安全性 & 規範中心使用 PowerShell Cmdlet 來定義及管理。 雖然本文提供了數個範例，但您需要熟悉 PowerShell Cmdlet 及參數。 您也會需要 Azure PowerShell 模組。
-    - [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
     - [安裝 Azure PowerShell 模組](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - 管理員對 Microsoft 小組資訊障礙的同意-當您的原則就緒時，資訊障礙可以從聊天會話中移除人員。 這可協助確保您的組織符合原則及規定。 使用下列程式可讓資訊障礙原則在 Microsoft 小組中如預期的方式運作。 

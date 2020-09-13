@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 瞭解系統管理員如何刪除 Exchange Online 信箱之使用者的 [可復原的專案] 資料夾中的專案，即使該信箱位於法律封存中也一樣。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d0983a3ce10a3980f23af68736acac1382ef938f
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 5f111a19e3baf57f2b6f2e2254df97d21689de2e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405464"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546147"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold"></a>刪除雲端式信箱中可復原的項目資料夾中的保留項目
 
@@ -226,7 +226,7 @@ Get-Mailbox <username> |FL ComplianceTagHoldApplied
 
 ### <a name="ediscovery-holds"></a>eDiscovery 保留
   
-在 [安全性 & 規範中心」 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) 中執行下列命令，以找出與電子檔探索 (案例（稱為 *Ediscovery 保留*) （已套用至信箱）相關聯的保留。 使用 GUID (不要包含  `UniH` 您在步驟1中識別的 eDiscovery 暫止) 首碼。 第二個命令會顯示保留所關聯的 eDiscovery 案例名稱;第三個命令會顯示保留的名稱。
+在 [安全性 & 規範中心」 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中執行下列命令，以找出與電子檔探索 (案例（稱為 *Ediscovery 保留*) （已套用至信箱）相關聯的保留。 使用 GUID (不要包含  `UniH` 您在步驟1中識別的 eDiscovery 暫止) 首碼。 第二個命令會顯示保留所關聯的 eDiscovery 案例名稱;第三個命令會顯示保留的名稱。
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -412,7 +412,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
     Get-CASMailbox <username> | FL EwsEnabled,ActiveSyncEnabled,MAPIEnabled,OWAEnabled,ImapEnabled,PopEnabled
     ```
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>詳細資訊
 
 以下表格說明當您執行**Get-Mailbox**或**Get-OrganizationConfig** Cmdlet 時，如何根據*InPlaceHolds*屬性中的值來識別不同的保留類型。 如需詳細資訊，請參閱 how [to 識別位於 Exchange Online 信箱的保留類型](identify-a-hold-on-an-exchange-online-mailbox.md)。
 

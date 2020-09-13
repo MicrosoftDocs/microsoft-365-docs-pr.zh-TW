@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 927b81c3a1ce049f1a2427bbbf1d306608be35cb
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: efccbdf2be33fb771e7e68ba5a0b3dafa82d9ce8
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798185"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546057"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -120,7 +120,7 @@ Microsoft 365 使用者可以從 Outlook for Windows 和 Mac (2013 及 2016) 、
 
 Outlook 桌面不會以本機方式支援 PDF 檔案附件的加密。 相反地，您必須設定 Exchange 郵件流程規則或 DLP，以先將加密套用至 PDF 附件。 當您使用 PDF 附件從 Outlook Desktop 傳送郵件時，用戶端會先將郵件與附件一起傳送給服務。 當服務接收到檔案時，服務會在 Exchange Online 中將 OME 保護的資料遺失防護 (DLP) 原則或郵件流程規則。 接下來，Exchange Online 會傳送包含受保護的 PDF 檔附件的郵件。
 
-若要啟用 PDF 附件的加密，請在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)中執行下列命令：
+若要啟用 PDF 附件的加密，請在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
