@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全性與合規性中心建立關鍵字字典的基本步驟。
-ms.openlocfilehash: bad95e9a5605631de3e8652e7243909f28b2abde
-ms.sourcegitcommit: b144e8ba1ab0c40fa7e0e8e893b5cb44aa2d8243
+ms.openlocfilehash: 7fe425a1f8ac954c6c24752927b218fc7e6f37c7
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47282733"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547007"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
@@ -86,7 +86,7 @@ ms.locfileid: "47282733"
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>使用 PowerShell 從檔案建立關鍵字字典
 
-當您需要建立大型字典時，通常會使用來自檔案或從其他來源匯出清單中的關鍵字。 在此情況下，您會建立一個關鍵字字典，其中包含要在外部電子郵件中過濾的不適當言語清單。 [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+當您需要建立大型字典時，通常會使用來自檔案或從其他來源匯出清單中的關鍵字。 在此情況下，您會建立一個關鍵字字典，其中包含要在外部電子郵件中過濾的不適當言語清單。 [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
   
 1. 將關鍵字複製到文字檔案，並確定每個關鍵字位於個別行。
     

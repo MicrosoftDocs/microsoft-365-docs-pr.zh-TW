@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f4bbbe8726370297e9ef6317cd468789bb3b3bfe
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 1c47d682d7b3c52fa5ca5b71386a764f3b3da693
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300431"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546955"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -141,7 +141,7 @@ ms.locfileid: "47300431"
       </EdmSchema>
       ```
 
-4. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。
+4. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
 
 5. 若要上傳資料庫結構描述，請執行下列 Cmdlet，一次一個：
 
@@ -273,7 +273,7 @@ ms.locfileid: "47300431"
 
 1. 編輯您的 **edm.xml** 檔案 (這是本文 [定義結構描述](#define-the-schema-for-your-database-of-sensitive-information) 一節所討論的檔案)。
 
-2. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。
+2. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
 
 3. 若要更新資料庫結構描述，請執行下列 Cmdlet，一次一個：
 
@@ -302,7 +302,7 @@ ms.locfileid: "47300431"
 
 (如有需要) 如果您想要移除 EDM 型分類使用的結構描述，請遵循下列步驟：
 
-1. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) 中的程序，連線到安全性與合規性中心。
+1. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
 
 2. 執行下列 PowerShell Cmdlet，將 "patientrecords" 的資料存放區名稱取代為您要移除的資料存放區名稱：
 
@@ -647,5 +647,5 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [自訂敏感性資訊類型](custom-sensitive-info-types.md)
 - [DLP 原則的概觀](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
 

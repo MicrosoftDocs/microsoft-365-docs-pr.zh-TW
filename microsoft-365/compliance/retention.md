@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: ed8390b9c773e04723c0f409eb9649e20af0dac3
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 4dc328cdba9f01177b3e8239ab2c09317774eb31
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778397"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546541"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 
@@ -316,7 +316,7 @@ Office 365 安全性與合規性中心具有來自**資訊控管** > **儀表板
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>保留原則和保留標籤的 PowerShell Cmdlet
 
-若要使用保留 Cmdlet，您必須先[連線至 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。 然後使用以下任一 Cmdlet：
+若要使用保留 Cmdlet，您必須先[連線至 Office 365 安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。 然後使用以下任一 Cmdlet：
 
 - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
 

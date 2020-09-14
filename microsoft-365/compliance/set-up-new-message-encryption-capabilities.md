@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解可與組織內外的人員進行受保護的電子郵件通訊的全新 Office 365 訊息加密功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d6e37da7456cfbb0b7cbf8d986b54615aca60f0
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 4102611d3be43a5bedffc83fba5c83c0b648ca42
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44819183"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547615"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>設定全新的郵件加密功能
 
@@ -62,9 +62,9 @@ Azure RMS 也會對多數合格方案自動啟用，因此您也不需要對此�
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>在 Exchange Online PowerShell 中驗證 新的 OME 設定
 
-您可以驗證您的 Microsoft 365 租用戶已正確設定以使用 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps) 中的新 OME 功能。
+您可以驗證您的 Microsoft 365 租用戶已正確設定以使用 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell) 中的新 OME 功能。
   
-1. 使用具有 Microsoft 365 租用戶中全域系統管理員權限的帳戶[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+1. 使用具有 Microsoft 365 租用戶中全域系統管理員權限的帳戶[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 2. 執行 Get-IRMConfiguration Cmdlet。
 

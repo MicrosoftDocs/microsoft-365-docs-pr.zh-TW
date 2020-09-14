@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何識別、監控和自動保護 Office 365 中貴組織中的敏感資訊。
-ms.openlocfilehash: 8d507a32a6f36555eabfa0216febdb167ad4241c
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: fc2287743bbe0239442e9507464dda4599880eb0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45127530"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546213"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -529,19 +529,19 @@ Office 中的 DLP 原則評估依設計並不會影響程式的效能或內容�
 
 若要對安全性與合規性中心使用大部分 Cmdlet，您必須：
   
-1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+1. [使用遠端 PowerShell 連線到 Office 365 安全性與合規性中心](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
     
-2. 使用任何 [policy-and-compliance-dlp Cmdlet](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)。
+2. 使用任何 [policy-and-compliance-dlp Cmdlet](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection)。
     
 不過，DLP 報告需要從整個 Microsoft 365 擷取資料，包含 Exchange Online。 有鑑於此，**DLP 報告的 Cmdlet 可在 Exchange Online PowerShell 中使用，但安全性與合規性中心 PowerShell 則不行**。 因此，若要為 DLP 報告使用 Cmdlet，您需要︰
   
-1. [使用遠端 PowerShell 連線到 Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)。
+1. [使用遠端 PowerShell 連線到 Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
     
 2. 為 DLP 報告使用下列任何 Cmdlet：
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport?view=exchange-ps)
+    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport?view=exchange-ps)
+    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport)
     
 ## <a name="more-information"></a>詳細資訊
 

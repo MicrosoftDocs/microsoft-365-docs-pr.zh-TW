@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全性與合規性中心的內容搜尋工具，在 Exchange 混合式部署中搜尋及匯出內部部署使用者的 Microsoft Teams 聊天資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 159c9c674feca4b01618289b194dd162c9020d59
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: e3bb1f187faf3196dae6aa663af89dcb2b9e7e53
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818882"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547593"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users"></a>搜尋內部部署使用者的雲端式信箱
 
@@ -110,7 +110,7 @@ ms.locfileid: "44818882"
 
 您可以在安全性與合規性中心 PowerShell 中使用 **New-ComplianceSearch** 和 **Set-ComplianceSearch** Cmdlet 來搜尋內部部署使用者的雲端式信箱。 如先前所述，您不需要提交支援要求，即可使用 PowerShell 來搜尋內部部署使用者的 Teams 聊天資料。 
   
-1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 2. 執行下列 PowerShell 命令來建立搜尋內部部署使用者雲端式信箱的內容搜尋。
 

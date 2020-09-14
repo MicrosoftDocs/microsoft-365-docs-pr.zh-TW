@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: bbed892481571706d8d43c3fa4d5aff7e9fb4c92
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: b81d598c3a80a915d9d20622a1b6d2e6f4517883
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47427012"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547685"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -207,7 +207,7 @@ ms.locfileid: "47427012"
 
 1. 使用 [以系統管理員身分執行]**** 選項開啟 PowerShell 工作階段。
 
-2. 如果您不知道標籤 GUID：[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)，並取得敏感度標籤及其 GUID 清單。
+2. 如果您不知道標籤 GUID：[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)，並取得敏感度標籤及其 GUID 清單。
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -325,7 +325,7 @@ ms.locfileid: "47427012"
 
 3. 記下您要套用至 Microsoft 365 群組的敏感度標籤 GUID。
 
-4. 現在，在不同的 Windows PowerShell 視窗中 [連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
+4. 現在，在不同的 Windows PowerShell 視窗中 [連線到 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
 5. 使用下列命令做為範例，以取得目前具有「一般」分類的群組清單：
 

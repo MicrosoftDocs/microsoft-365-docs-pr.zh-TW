@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: '使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d65b64f80dc9d8c3c799e8044d6fc5d3dfec4321
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 21a8ea6f930efcd106c541021c9b9bd47af43f23
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357805"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547249"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
 
@@ -828,14 +828,14 @@ Power BI 的稽核記錄未預設為啟用。 若要在稽核記錄中搜尋 Pow
 
 |易記名稱|作業|描述|
 |:-----|:-----|:-----|
-| 保留原則已配置的設定 |NewRetentionComplianceRule |系統管理員已設定新保留原則的保留設定。 保留設定包括保留項目的時間長度，以及當項目保留期間到期時，項目會發生的情況 (例如刪除項目、保留項目或保留然後刪除項目)。 此活動也與執行 [RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) Cmdlet 對應。|
+| 保留原則已配置的設定 |NewRetentionComplianceRule |系統管理員已設定新保留原則的保留設定。 保留設定包括保留項目的時間長度，以及當項目保留期間到期時，項目會發生的情況 (例如刪除項目、保留項目或保留然後刪除項目)。 此活動也與執行 [RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) Cmdlet 對應。|
 | 已建立保留標籤 |NewComplianceTag |系統管理員已建立新的保留標籤。|
 | 已建立保留原則 |NewRetentionCompliancePolicy|系統管理員已建立新的保留原則。|
 | 已從保留原則刪除設定| RemoveRetentionComplianceRule<br/>| 系統管理員已刪除保留原則的組態設定。 當系統管理員刪除保留原則或執行 [RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/Remove-RetentionComplianceRule) Cmdlet 時，更可能會記錄此活動。|
 | 已刪除保留標籤 |RemoveComplianceTag | 系統管理員已刪除保留標籤。|
 | 已刪除保留原則 |RemoveRetentionCompliancePolicy<br/> |系統管理員已刪除保留原則。 |
 | 已啟用保留標籤的法規記錄選項<br/> |SetRestrictiveRetentionUI |系統管理員已執行 [RegulatoryComplianceUI](https://docs.microsoft.com/powershell/module/exchange/set-regulatorycomplianceui) Cmdlet，因此系統管理員可以選取保留標籤的 UI 設定選項，以將內容標示為法規記錄。|
-| 保留原則已更新的設定 | SetRetentionComplianceRule | 系統管理員已變更現有保留原則的保留設定。 保留設定包括保留項目的時間長度，以及當項目保留期間到期時，項目會發生的情況 (例如刪除項目、保留項目或保留然後刪除項目)。 此活動也與執行 [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) Cmdlet 對應。 |
+| 保留原則已更新的設定 | SetRetentionComplianceRule | 系統管理員已變更現有保留原則的保留設定。 保留設定包括保留項目的時間長度，以及當項目保留期間到期時，項目會發生的情況 (例如刪除項目、保留項目或保留然後刪除項目)。 此活動也與執行 [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) Cmdlet 對應。 |
 | 已更新保留標籤 |SetComplianceTag  | 系統管理員已更新現有的保留標籤。|
 | 已更新保留原則 |SetRetentionCompliancePolicy |系統管理員已更新現有的保留原則。 觸發此事件的更新包括新增或排除保留原則所套用的內容位置。|
 

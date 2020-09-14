@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: efe09796b7c3048fd9c6026a5e6a2ca6fbc234a3
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 88ad35b2bc07f85a86a1900d9f551b92d4646ba1
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47427032"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546725"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -315,9 +315,9 @@ ms.locfileid: "47427032"
 
 ### <a name="use-powershell-for-auto-labeling-policies"></a>將 PowerShell 用於自動套用標籤原則
 
-您現在可以使用[安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell) 來建立及設定自動套用標籤原則。 這表示您現在可以完整編寫建立和維護自動套用標籤原則的指令碼，這也提供您一個更有效方式，可為 OneDrive 和 SharePoint 位置指定多個 URL。
+您現在可以使用[安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) 來建立及設定自動套用標籤原則。 這表示您現在可以完整編寫建立和維護自動套用標籤原則的指令碼，這也提供您一個更有效方式，可為 OneDrive 和 SharePoint 位置指定多個 URL。
 
-在 PowerShell 中執行命令之前，您必須先[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+在 PowerShell 中執行命令之前，您必須先[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 若要建立新的自動套用標籤原則： 
 

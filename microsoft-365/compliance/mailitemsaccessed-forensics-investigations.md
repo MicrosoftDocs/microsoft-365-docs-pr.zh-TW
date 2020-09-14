@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 信箱稽核動作執行遭入侵使用者帳戶的鑑識調查。
-ms.openlocfilehash: cd76a49e1f7b6e52d2a21e74162781771a8552a1
-ms.sourcegitcommit: f6840dfcfdbcadc53cda591fd6cf9ddcb749d303
+ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44327647"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546289"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用進階稽核調查遭入侵帳戶
 
@@ -67,7 +67,7 @@ MailItemsAccessed 信箱稽核動作涵蓋所有郵件通訊協定：POP、IMAP�
 
 信箱稽核會產生存取電子郵件訊息的稽核記錄，因此您可以確信電子郵件訊息並未遭到入侵。 基於此原因，在不確定某些資料已遭存取的情況下，我們會假設資料已遭存取而記錄下所有的郵件存取活動。
 
-使用 MailItemsAccessed 稽核記錄做為鑑識之用的執行時機通常是在解決資料外洩並驅逐攻擊者之後。 若要開始調查，您應該找出已遭入侵的信箱組，然後判定攻擊者可以存取組織內信箱的時間範圍。 接著，您可以在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) 中使用 **Search-UnifiedAuditLog** 或 **Search-MailboxAuditLog** Cmdlet，搜尋對應到資料外洩的稽核記錄。 
+使用 MailItemsAccessed 稽核記錄做為鑑識之用的執行時機通常是在解決資料外洩並驅逐攻擊者之後。 若要開始調查，您應該找出已遭入侵的信箱組，然後判定攻擊者可以存取組織內信箱的時間範圍。 接著，您可以在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 中使用 **Search-UnifiedAuditLog** 或 **Search-MailboxAuditLog** Cmdlet，搜尋對應到資料外洩的稽核記錄。 
 
 您可以執行下列其中一個命令來搜尋 MailItemsAccessed 稽核記錄：
 

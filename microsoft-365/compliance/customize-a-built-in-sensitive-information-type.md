@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何建立自訂機密資訊類型，讓您能夠使用符合貴組織需求的規則。
-ms.openlocfilehash: 6e9fb0295f8958584878921c1fac362dc511be8f
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 745cea9a0851168999335e27b970276726b516d0
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086610"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47546661"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>自訂內建機密資訊類型
 
@@ -33,7 +33,7 @@ ms.locfileid: "45086610"
   
 ## <a name="export-the-xml-file-of-the-current-rules"></a>匯出目前規則的 XML 檔案
 
-若要匯出 XML，您必須[透過遠端 PowerShell 連線到安全性與合規性中心。](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)。
+若要匯出 XML，您必須[透過遠端 PowerShell 連線到安全性與合規性中心。](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
   
 1. 在 PowerShell 中，輸入下列項目以在畫面上顯示貴組織的規則。如果您尚未建立自己的規則，則只會看到標示為「Microsoft 規則套件」的預設、內建規則。
 
