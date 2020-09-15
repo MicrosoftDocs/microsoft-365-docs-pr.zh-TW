@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定資料連線器，將員工資料從組織的人力資源 (HR) 系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 78832d74a7d61577e5ec49c290e19bdec758a0b3
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a8eaeda3bc883de55a2c588e39557b4517ae3cc5
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289248"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817158"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-preview"></a>設定連接器以匯入 HR 資料 (預覽) 
 
-您可以設定 Microsoft 365 規範中心內的資料連線器，以匯入人力資源 (HR) 與事件相關的資料，例如使用者的辭職程度或使用者工作階層中的變更。 「 [內部使用者風險管理」解決方案](insider-risk-management.md) 會利用這種 HR 資料來產生風險指示器，以協助您識別組織內使用者可能的惡意活動或資料竊取。
+您可以設定 Microsoft 365 規範中心內的資料連線器，以匯入人力資源 (HR) 與事件相關的資料，例如使用者的辭職程度或使用者工作階層中的變更。 使用者可以使用 HR 資料來 [產生風險指示器，以協助](insider-risk-management.md) 您識別組織內使用者可能的惡意活動或資料竊取。
 
 設定資料指標以取得可供內幕風險管理原則用來產生風險指示器的工作，包含建立包含 HR 資料的 CSV 檔案。在 Azure Active Directory 中建立用於驗證的應用程式，在 Microsoft 365 規範中心內建立 HR 資料連線器，然後以排程的方式執行腳本 () 將 CSV 檔案中的 HR 資料 ingests 至 Microsoft 雲端，使其可供現有的「內部人員風險管理」解決方案使用。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 - 決定要匯入 Microsoft 365 的人力資源案例和資料。 這將協助您決定需要建立的 CSV 檔案和 HR 連接器數目，以及如何產生及構造 CSV 檔案。 您所匯入的 HR 資料是由您想要執行的「內幕風險管理」原則所決定。 如需詳細資訊，請參閱步驟1。
 
@@ -91,8 +91,8 @@ pilarp@contoso.com,2019-04-24T09:15:49Z,2019-04-29T15:18:02.7117540
 | **欄**  |  **描述**|
 |:------------|:----------------|
 |**EmailAddress**| 指定已終止使用者 (UPN) 的電子郵件地址。|
-| **ResignationDate** | 指定使用者正式終止組織中使用者雇傭的日期。 例如，這可能是使用者提供有關離開組織之通知的日期。 此日期可能不同于人員的最後一天的工作日期。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
-| **LastWorkingDate** | 為終止的使用者指定最後一天的工作。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+| **ResignationDate** | 指定使用者正式終止組織中使用者雇傭的日期。 例如，這可能是使用者提供有關離開組織之通知的日期。 此日期可能不同于人員的最後一天的工作日期。 請使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+| **LastWorkingDate** | 為終止的使用者指定最後一天的工作。 請使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
 |||
 
 ### <a name="csv-file-for-job-level-changes-data"></a>用於工作層級變更資料的 CSV 檔案
@@ -110,10 +110,10 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 62 – Director,Level
 | **欄**|**描述**|
 |:--------- |:------------- |
 | **EmailAddress**  | 指定使用者的電子郵件地址 (UPN) 。|
-| **EffectiveDate** | 指定使用者工作層級正式變更的日期。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
-| **備註**| 指定評估程式所提供之工作層級變更的批註。 這是一個 text 參數，其限制為200個字元。 這是選用的參數。 您不需要將其包含在 CSV 檔案中。|
-| **OldLevel**| 會指定使用者的工作層級之後變更。 這是自由 text 參數，可以包含您組織的階層式分類。 這是選用的參數。 您不需要將其包含在 CSV 檔案中。|
-| **NewLevel**| 指定使用者在變更後的工作層級。 這是自由 text 參數，可以包含您組織的階層式分類。 這是選用的參數。 您不需要將其包含在 CSV 檔案中。|
+| **EffectiveDate** | 指定使用者工作層級正式變更的日期。 請使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+| **備註**| 指定評估程式所提供之工作層級變更的批註。 您可以輸入200個字元的限制。 此參數為選用。 您不需要將其包含在 CSV 檔案中。|
+| **OldLevel**| 會指定使用者的工作層級之後變更。 這是自由 text 參數，可以包含您組織的階層式分類。 此參數為選用。 您不需要將其包含在 CSV 檔案中。|
+| **NewLevel**| 指定使用者在變更後的工作層級。 這是自由 text 參數，可以包含您組織的階層式分類。 此參數為選用。 您不需要將其包含在 CSV 檔案中。|
 |||
 
 ### <a name="csv-file-for-performance-review-data"></a>用於效能檢查資料的 CSV 檔案
@@ -131,9 +131,9 @@ pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with th
 | **欄**|**描述**|
 |:----------|:--------------|
 | **EmailAddress**  | 指定使用者的電子郵件地址 (UPN) 。|
-| **EffectiveDate** | 指定使用者正式獲悉其效能檢查結果的日期。 這可以是效能考核週期結束的日期。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
-| **備註**| 指定評估程式為使用者提供的任何評語，以進行績效審查。 這是一個 text 參數，其限制為200個字元。 這是選用的參數。 您不需要將其包含在 CSV 檔案中。|
-| **評級**| 會指定績效審查所提供的評級。 這是一個 text 參數，可以包含您的組織用來辨識評估的任何自由格式的文字。 例如，"3 符合預期" 或 "2 低於平均"。 這是文本參數，最大限制為25個字元。 這是選用的參數。 您不需要將其包含在 CSV 檔案中。|
+| **EffectiveDate** | 指定使用者正式獲悉其效能檢查結果的日期。 這可以是效能考核週期結束的日期。 請使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+| **備註**| 指定評估程式為使用者提供的任何評語，以進行績效審查。 這是一個 text 參數，其限制為200個字元。 此參數為選用。 您不需要將其包含在 CSV 檔案中。|
+| **評級**| 會指定績效審查所提供的評級。 這是一個 text 參數，可以包含您的組織用來辨識評估的任何自由格式的文字。 例如，"3 符合預期" 或 "2 低於平均"。 這是文本參數，最大限制為25個字元。 此參數為選用。 您不需要將其包含在 CSV 檔案中。|
 |||
 
 ### <a name="csv-file-for-performance-improvement-plan-data"></a>效能改善計畫資料的 CSV 檔案
@@ -255,7 +255,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
    b. **範例腳本的連結。** 按一下 [ **這裡** ] 連結，移至 GitHub 網站以存取範例腳本 (連結會開啟新的視窗) 。 將此視窗保持開啟，以便您可以在步驟4中複製腳本。 或者，您也可以將目的地做成書簽或複製 URL，以便在您執行腳本時可再次存取它。 您也可以在 [連接器] 飛入頁面上使用此連結。
 
-9. 按一下 **[完成]**。
+9. 按一下 [完成]****。
 
    新的連接器會顯示在 [ **連接器** ] 索引標籤上的清單中。
 

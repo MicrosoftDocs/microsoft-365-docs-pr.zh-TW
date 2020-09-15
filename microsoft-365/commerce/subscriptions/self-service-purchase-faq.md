@@ -17,28 +17,28 @@ ms.custom:
 search.appverid:
 - MET150
 description: 尋找有關自助購買的常見問題的答案。
-ms.date: 08/12/2020
-ms.openlocfilehash: 78a7082a966a866f18ac2aa378198dbb33d8c158
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.date: 09/15/2020
+ms.openlocfilehash: 81143dfe3794bc4f42bea879905bf08750f498b4
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653698"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816922"
 ---
 # <a name="self-service-purchase-faq"></a>自助購買常見問題
 
-自助購買讓使用者有機會嘗試新的技術，並開發最終受益于組織規模較高的解決方案。 中央採購和 IT 小組可透過<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>購買及部署自助購買解決方案的所有使用者都能看到。 系統管理員可以透過 PowerShell 關閉以每個產品為基礎的自助購買服務。 若要深入瞭解，請參閱[Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。
+自助購買讓使用者有機會嘗試新的技術，並開發最終受益于組織規模較高的解決方案。 中央採購和 IT 小組可透過 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>購買及部署自助購買解決方案的所有使用者都能看到。 系統管理員可以透過 PowerShell 關閉以每個產品為基礎的自助購買服務。 若要深入瞭解，請參閱 [Use AllowSelfServicePurchase for The MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。
 
 自助購買可用於 Power Platform (Power BI、Power App 及 Power) 、Project 和 Visio 的自動功能。
 
 > [!NOTE]
-> 無法在印度使用自助購買，也無法供政府或教育客戶使用。
+> 在印度或政府或教育版客戶中，無法使用自助購買服務。 Project 和 Visio 不適用於巴西的自助購買和剛果民主共和國。
 
 ## <a name="making-a-self-service-purchase"></a>進行自助購買
 
 ### <a name="how-does-a-customer-make-a-self-service-purchase"></a>客戶如何進行自助購買？
 
-客戶可以從產品網站或從應用程式購買提示中，讓自助購買線上。 客戶會先要求輸入電子郵件地址，以確保他們是現有 Azure Active Directory (AD) 租使用者中的使用者。 接下來，他們會使用 Azure AD 認證，導向使用者登入。 登入後，系統會要求客戶選取他們想要購買的訂閱數目，並提供信用卡付款。 購買完成後，即可開始使用其訂閱。 買方可以存取<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>的有限查看權，讓他們可以將授權指派給組織中的其他人。
+客戶可以從產品網站或從應用程式購買提示中，讓自助購買線上。 客戶會先要求輸入電子郵件地址，以確保他們是現有 Azure Active Directory (AD) 租使用者中的使用者。 接下來，他們會使用 Azure AD 認證，導向使用者登入。 登入後，系統會要求客戶選取他們想要購買的訂閱數目，並提供信用卡付款。 購買完成後，即可開始使用其訂閱。 買方可以存取 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a> 的有限查看權，讓他們可以將授權指派給組織中的其他人。
 
 ### <a name="what-are-the-payment-options-for-self-service-purchases"></a>自助購買的付款選項為何？
 
@@ -60,11 +60,11 @@ ms.locfileid: "46653698"
 
 ### <a name="who-can-self-service-purchasers-assign-licenses-to"></a>誰可以自行服務購買指派授權？
 
-自助購買只能將授權指派給相同 Azure AD 租使用者中的使用者。 買方可以存取<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>的有限視圖，以指派授權。 「購買者」可以將授權指派給他們透過自助購買購買的產品，而且只能將這些授權指派給相同 Azure AD 租使用者中的使用者。
+自助購買只能將授權指派給相同 Azure AD 租使用者中的使用者。 買方可以存取 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a> 的有限視圖，以指派授權。 「購買者」可以將授權指派給他們透過自助購買購買的產品，而且只能將這些授權指派給相同 Azure AD 租使用者中的使用者。
 
 ### <a name="where-does-the-self-service-purchaser-see-and-manage-their-purchases"></a>自助買方如何查看和管理其購買情況？
 
-自助購買可在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>的有限顯示中管理其購買。 「購買者」可以從內置於所有 Microsoft 365 和 Dynamics online 應用程式的應用程式啟動器中的系統**管理**磚，取得系統管理員中心的連線。 「購買者」可以查看他們所進行的購買、購買相同服務的其他訂閱，並將這些訂閱的授權指派給其組織中的其他使用者。 此外，「購買者」可以查看和支付帳單、更新其支付方式，以及取消訂閱。
+自助購買可在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>的有限顯示中管理其購買。 「購買者」可以從內置於所有 Microsoft 365 和 Dynamics online 應用程式的應用程式啟動器中的系統 **管理** 磚，取得系統管理員中心的連線。 「購買者」可以查看他們所進行的購買、購買相同服務的其他訂閱，並將這些訂閱的授權指派給其組織中的其他使用者。 此外，「購買者」可以查看和支付帳單、更新其支付方式，以及取消訂閱。
 
 ## <a name="pricing"></a>定價
 
@@ -80,9 +80,9 @@ Microsoft 網站提供每項自助購買產品的定價。 當使用者進行自
 
 ### <a name="what-capabilities-does-an-admin-have-for-self-service-purchases"></a>管理員對自助購買有哪些功能？
 
-系統管理員可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>的組織中，查看其組織中所進行的所有自助購買。 他們可以查看產品、購買購買的訂閱、到期日、訂單記錄、購買價格，以及每個自助購買的指派使用者。 在 [電源平臺系統管理中心] 中，系統管理員也可以查看自助購買容量。 根據組織的需要，系統管理員可以透過 PowerShell 關閉以每個產品為基礎的自助購買服務。 管理員透過自助購買或集中購買的產品，都具有相同的資料管理和存取原則。
+系統管理員可以在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>的組織中，查看其組織中所進行的所有自助購買。 他們可以查看產品、購買購買的訂閱、到期日、訂單記錄、購買價格，以及每個自助購買的指派使用者。 在 [電源平臺系統管理中心] 中，系統管理員也可以查看自助購買容量。 根據組織的需要，系統管理員可以透過 PowerShell 關閉以每個產品為基礎的自助購買服務。 管理員透過自助購買或集中購買的產品，都具有相同的資料管理和存取原則。
 
-系統管理員也可以控制組織中的使用者是否可以進行自助購買。 如需詳細資訊，請參閱[Use AllowSelfServicePurchase For MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。
+系統管理員也可以控制組織中的使用者是否可以進行自助購買。 如需詳細資訊，請參閱 [Use AllowSelfServicePurchase For MSCommerce PowerShell module](allowselfservicepurchase-powershell.md)。
 
 ### <a name="how-is-microsoft-respecting-data-governance-and-compliance-by-enabling-self-service-purchase"></a>Microsoft 如何透過啟用自助購買來尊重資料控管和合規性？
 
@@ -124,4 +124,4 @@ IT 部門和合作夥伴不會期望對透過自助購買購買的產品提供�
 
 ### <a name="whats-the-role-of-microsofts-partners-in-self-service-purchases"></a>Microsoft 合作夥伴在自助購買方面的角色為何？
 
-委派管理許可權的合作夥伴可以在<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>中查看自助購買，就像是管理員一樣。合作夥伴可協助您支援要集中使用自助購買購買的產品的組織。 此外，協力廠商可提供可擴充自助購買功能的解決方案。
+委派管理許可權的合作夥伴可以在 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>中查看自助購買，就像是管理員一樣。合作夥伴可協助您支援要集中使用自助購買購買的產品的組織。 此外，協力廠商可提供可擴充自助購買功能的解決方案。

@@ -7,7 +7,7 @@ author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在評審集中建立及執行查詢，以在高級 eDiscovery 案例中組織資料，以進行更有效率的審閱。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 871630af4b8b19e5fad1a062129782e36b9706f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 508e8e9fdb4a558a998a33aa561dc3755edcc40d
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527433"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816716"
 ---
 # <a name="query-the-data-in-a-review-set"></a>查詢檢視集中的資料
 
@@ -30,13 +30,13 @@ ms.locfileid: "46527433"
 
 ## <a name="creating-and-running-a-query-in-a-review-set"></a>在審閱集中建立及執行查詢
 
-若要為審閱集內的檔建立並執行查詢，請按一下 [檢查集合] 中的 [**新增查詢**]。 在命名查詢並定義條件之後，按一下 [**儲存**] 儲存並執行查詢。 若要執行先前已儲存的查詢，請按一下已儲存的查詢。
+若要為審閱集內的檔建立並執行查詢，請選取 [檢查集合] 中的 [ **新增查詢** ]。 在命名查詢並定義條件之後，請選取 [ **儲存** ] 以儲存並執行查詢。 若要執行先前已儲存的查詢，請選取一個已儲存的查詢。
 
 ![檢查集合查詢](../media/AeDReviewSetQueries.png)
 
 ## <a name="building-a-review-set-query"></a>建立審閱集查詢
 
-您可以使用關鍵字條件卡中的條件卡和查詢語言組合，建立查詢。 您也可以將條件卡片組合成組塊（稱為*條件群組*），以建立更複雜的查詢。 如需您可以搜尋之中繼資料屬性的清單和描述，請參閱[Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md)。
+您可以使用關鍵字條件卡中的條件卡和查詢語言組合，建立查詢。 您也可以將條件卡片組合在一起，當作稱為 *條件群組* 的封鎖 () 建立更複雜的查詢。 如需您可以搜尋之中繼資料屬性的清單和描述，請參閱 [Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md)。
 
 ### <a name="condition-cards"></a>條件卡片
 
@@ -54,11 +54,11 @@ ms.locfileid: "46527433"
 
 ### <a name="query-language"></a>查詢語言
 
-除了條件卡片之外，您還可以使用關鍵字智慧卡中的類似 KQL 的查詢語言來建立您的查詢。 「檢查的複查集」查詢語言支援標準 Boolean 運算子，例如**and**、 **OR**、 **NOT**和**NEAR**。 它也支援單一字元萬用字元（？）和多字元萬用字元（*）。
+除了條件卡片之外，您還可以使用關鍵字智慧卡中的類似 KQL 的查詢語言來建立您的查詢。 「檢查的複查集」查詢語言支援標準 Boolean 運算子，例如 **and**、 **OR**、 **NOT**和 **NEAR**。 它也支援單一字元萬用字元 (？ ) 和多字元萬用字元 ( * ) 。
 
-## <a name="using-filters"></a>使用篩選
+## <a name="filters"></a>篩選
 
-除了您可以儲存的查詢之外，您還可以使用「複查集」篩選，將其他條件快速套用至審閱集查詢。 這可協助您進一步精煉審閱集查詢所顯示的結果。
+除了您可以儲存的查詢之外，您還可以使用「複查集」篩選，將其他條件快速套用至審閱集查詢。 使用篩選可協助您進一步精煉「審閱集」查詢所顯示的結果。
 
 ![審閱集合篩選](../media/AeDReviewSetFilters.png)
 

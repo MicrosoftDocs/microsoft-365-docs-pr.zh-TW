@@ -15,18 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 美國政府雲端的系統管理員可以設定資料連線器，將員工資料從組織的人力資源 (HR) 系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 2f41426003fcf3b6afe14d24cf7176fa4668ad44
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 30a3730bcb2d4f41df28c47fdb9ab35e9d012540
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289814"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47817163"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>設定連接器以匯入美國政府 (預覽中的人力資源資料) 
 
 您可以設定 Microsoft 365 規範中心內的資料連線器，將人力資源) 資料 (人力資源匯入美國政府組織。 HR 相關的資料包括員工提交其辭職的日期和員工最後一天的日期。 這種 HR 資料可供 Microsoft 資訊保護解決方案（如「 [內幕風險管理」解決方案](insider-risk-management.md)）使用，以協助保護您的組織免受惡意活動或組織內的資料竊取。 設定 HR 連接器是指在 Azure Active Directory 中建立應用程式，以供連接器進行驗證，建立包含 HR 資料的 CSV 對應檔案，在規範中心建立一個資料連線器，然後在排程的) 基礎上執行腳本 (，以 ingests CSV 檔案中的 HR 資料至 Microsoft 雲端。 然後，「內部使用者風險管理」工具使用資料連線器，來存取已匯入 Microsoft 365 美國政府組織的 HR 資料。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 - 您的組織必須同意允許 Office 365 匯入服務存取您組織中的資料。 若要同意此要求，請移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全域管理員的認證登入，然後接受要求。 您必須完成此步驟，才可在步驟3中成功建立 HR 連接器。
 
@@ -65,11 +65,11 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 |**資料行名稱**|**描述**|
 |:-----|:-----|
 | **EmailAddress** <br/> |指定離職員工的電子郵件地址。|
-| **TerminationDate** <br/> |會指定人員正式終止組織中的雇用日期。 例如，這可能是員工在離開組織時所提供通知的日期。 此日期可能不同于人員的最後一天的工作日期。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
-|**LastWorkingDate**|為終止的員工指定最後一天的工作。 您必須使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+| **TerminationDate** <br/> |會指定人員正式終止組織中的雇用日期。 例如，這可能是員工在離開組織時所提供通知的日期。 此日期可能不同于人員的最後一天的工作日期。 請使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
+|**LastWorkingDate**|為終止的員工指定最後一天的工作。 請使用下列日期格式： `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm` ，也就是 [ISO 8601 的日期和時間格式](https://www.iso.org/iso-8601-date-and-time-format.html)。|
 |||
 
-在您建立含有必要 HR 資料的 CSV 檔案之後，請將它儲存在您在步驟4中執行的腳本所在的相同系統上。 您也應該執行更新策略，以確保 CSV 檔案永遠包含最新的資訊，因此，不論您執行腳本，最新的員工終止資料都會上傳至 Microsoft 雲端。
+在您建立含有必要 HR 資料的 CSV 檔案之後，請將它儲存在您在步驟4中執行的腳本所在的相同系統上。 請務必執行更新策略，使 CSV 檔案永遠包含最新資訊。 這樣做可確保不論您執行腳本，最新的員工終止資料都會上傳至 Microsoft 雲端。
 
 ## <a name="step-3-create-the-hr-connector"></a>步驟3：建立 HR 連接器
 
@@ -101,7 +101,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
    
    b. **範例腳本的連結。** 按一下 [ **這裡** ] 連結，移至 GitHub 網站以存取範例腳本 (連結會開啟新的視窗) 。 將此視窗保持開啟，以便您可以在步驟4中複製腳本。 或者，您也可以將目的地做成書簽或複製 URL，以便您可以在步驟4中再次進行存取。 您也可以在 [連接器] 飛入頁面上使用此連結。
 
-7. 按一下 **[完成]**。
+7. 按一下 [完成]****。
 
    新的連接器會顯示在 [ **連接器** ] 索引標籤上的清單中。 
 
@@ -139,11 +139,11 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
    |**參數**|**描述**
    |:-----|:-----|:-----|
-   |`tenantId`|這是您在步驟1中取得之 Microsoft 365 組織的識別碼。 您也可以在 Azure AD 系統管理中心的 [ **一覽** ] 邊欄中取得組織的承租人識別碼。 這是用來識別您的組織。|
-   |`appId` |這是您在步驟1中您于 Azure AD 中所建立之應用程式的 Azure AD 應用程式識別碼。 當腳本嘗試存取您的 Microsoft 365 組織時，Azure AD 可用於驗證。 |
-   |`appSecret`|這是您在步驟1中您在 Azure AD 中建立之應用程式的 Azure AD 應用程式機密。 這也是用來進行驗證。|
-   |`jobId`|這是您在步驟3中建立之 HR 連接器的工作識別碼。 這是用來將上傳至 Microsoft 雲端的 HR 資料與 HR connector 產生關聯。|
-   |`csvFilePath`|這是 CSV 檔案 (的檔案路徑，與您在步驟2中建立的腳本) 儲存在相同的系統上。 請嘗試避免檔路徑中的空格;否則請使用單引號。|
+   |`tenantId`|您在步驟1中取得之 Microsoft 365 組織的識別碼。 您也可以在 Azure AD 系統管理中心的 [ **一覽** ] 邊欄中取得組織的承租人識別碼。 這是用來識別您的組織。|
+   |`appId` |您在步驟1中您于 Azure AD 中所建立之應用程式的 Azure AD 應用程式識別碼。 當腳本嘗試存取您的 Microsoft 365 組織時，Azure AD 可用於驗證。 |
+   |`appSecret`|您在步驟1中您于 Azure AD 中所建立之應用程式的 Azure AD 應用程式密碼。 這也是用來進行驗證。|
+   |`jobId`|您在步驟3中建立之 HR 連接器的工作識別碼。 這是用來將上傳至 Microsoft 雲端的 HR 資料與 HR connector 產生關聯。|
+   |`csvFilePath`|CSV 檔案 (的檔案路徑與您在步驟2中建立的腳本) 儲存在相同的系統上。 請嘗試避免檔路徑中的空格;否則請使用單引號。|
    |||
    
    以下是 HR 連接器腳本語法的範例，其中每個參數都使用實際值：

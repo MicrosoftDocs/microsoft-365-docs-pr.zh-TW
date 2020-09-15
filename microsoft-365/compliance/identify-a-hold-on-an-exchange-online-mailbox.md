@@ -17,12 +17,12 @@ ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何識別可放在 Microsoft 365 的 Exchange Online 信箱上的不同保留類型。
-ms.openlocfilehash: 1cd947f70c57d453b038ac419abccde006f393ae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a76b02f6345421871c759e1b31bf19207b474e2a
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547451"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816822"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>如何找出位於 Exchange Online 信箱的保留類型
 
@@ -40,11 +40,9 @@ Microsoft 365 提供數種方式，讓您的組織可以防止信箱內容遭到
 
   有兩種類型的 Microsoft 365 保留原則可指派給信箱。
 
-    - **特定位置保留原則：** 這些是指派給特定使用者之內容位置的原則。 您可以在 Exchange Online PowerShell 中使用 **Get-Mailbox** Cmdlet，以取得指派給特定信箱之保留原則的相關資訊。
+    - **特定位置保留原則：** 這些是指派給特定使用者之內容位置的原則。 您可以在 Exchange Online PowerShell 中使用 **Get-Mailbox** Cmdlet，以取得指派給特定信箱之保留原則的相關資訊。 如需此類型保留原則的詳細資訊，請參閱從保留原則檔中 [包含或排除特定包含或排除的原則](create-retention-policies.md#a-policy-with-specific-inclusions-or-exclusions) 一節。
 
-    - **整個組織保留原則：** 這些是指派給組織中所有內容位置的原則。 您可以在 Exchange Online PowerShell 中使用 **Get-OrganizationConfig** Cmdlet，以取得整個組織保留原則的資訊。
-    
-  如需詳細資訊，請參閱 [將保留原則套用至整個組織或特定位置](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) 區段。
+    - **整個組織保留原則：** 這些是指派給組織中所有內容位置的原則。 您可以在 Exchange Online PowerShell 中使用 **Get-OrganizationConfig** Cmdlet，以取得整個組織保留原則的資訊。 如需此類型保留原則的詳細資訊，請參閱從保留原則檔 [套用至整個位置的原則](create-retention-policies.md#a-policy-that-applies-to-entire-locations) 一節。
 
 - **[Microsoft 365 保留標籤](retention.md)：** 如果使用者將 Microsoft 365 保留卷 (標套用至一個設定為保留內容或保留，然後刪除其信箱中 *任何* 資料夾或專案的) 內容，則會在信箱上保留信箱，就像該信箱是放在訴訟暫止狀態或指派給 Microsoft 365 保留原則。 如需詳細資訊，請參閱「保留中的信箱」， [因為保留標籤已套用至本文中的資料夾或專案](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) 一節。
 
