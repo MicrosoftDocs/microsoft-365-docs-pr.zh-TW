@@ -13,12 +13,12 @@ localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 商務進階版, Microsoft 365, SMB, 常見問題集, 常見問題集, 解答, 商務版
 ms.date: 07/21/2020
-ms.openlocfilehash: 614da177df9250045ca3cc18c0b071e0aa43b7ec
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: e056f0c33aec180080a0d4e27e182d2d98877e6e
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560792"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775078"
 ---
 # <a name="microsoft-365-business-premium-frequently-asked-questions"></a>Microsoft 365 商務進階版常見問題集
 
@@ -49,7 +49,7 @@ Microsoft 365 是一個整合式解決方案，聚集所有同級最佳的生產
 * 透過 Windows AutoPilot 簡化電腦部署。
 
 **其他權利** 
-- Microsoft 365 商務進階版客戶也可以存取 Windows 虛擬桌面和 Office 共用電腦啟用功能。 若要深入了解，請參閱 [Microsoft 365 商務進階版部落格](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 另請參閱[Microsoft 365 for business 服務說明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
+- Microsoft 365 商務進階版客戶也可以存取 Windows 虛擬桌面和 Office 共用電腦啟用功能。 若要深入了解，請參閱 [Microsoft 365 商務進階版部落格](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog)。 另請參閱 [Microsoft 365 for business 服務說明](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description)。
 
 ### <a name="who-should-consider-adopting-microsoft-365-business-premium"></a>誰應考慮採用 Microsoft 365 商務進階版？ 
 Microsoft 365 商務進階版是一項全面的雲端安全性解決方案，可讓您：  
@@ -98,9 +98,9 @@ Windows 10 商務版也附帶特定的 Microsoft Defender 功能，例如控制�
 Microsoft 365 商務進階版提供客戶簡單卻功能強大的方式，讓員工在使用個人裝置工作的同時，提供企業避免這些裝置被存取、保留及/或分享企業資訊的能力。 具體來說： 
 * **適用於 Office 行動裝置版應用程式的應用程式防護**可協助應用程式保護 Office 資料，包括 iOS 和 Android 行動裝置上的電子郵件、行事曆、連絡人及文件，方法是強制執行如在規定時間內若未連接服務便刪除商務資料等原則、要求資訊僅儲存到商務用 OneDrive、要求提供 PIN/指紋驗證以存取 Office 應用程式，以及防止將公司資料從 Office 應用程式複製到個人應用程式。 Microsoft 365 商務進階版訂閱者也提供透過 Intune 取得其他行動裝置應用程式的行動裝置應用程式管理。 
   
-* **適用于 Windows 10 電腦的裝置管理**可讓企業選擇設定和強制執行 Microsoft Defender 防防毒保護（如惡意程式碼、自動更新，以及在指定的時間後關閉螢幕）等功能。 此外，可以透過系統管理中心完全清除遺失或遭竊 Windows 10 裝置的商務應用程式和資料。 
+* **適用于 Windows 10 電腦的裝置管理** 可讓企業選擇設定和強制執行 Microsoft Defender 防防毒保護（如惡意程式碼、自動更新，以及在指定的時間後關閉螢幕）等功能。 此外，可以透過系統管理中心完全清除遺失或遭竊 Windows 10 裝置的商務應用程式和資料。 
 
-* **IOS、android & macOS 功能的裝置管理**可協助企業安全地管理包括 IOS、Android、Windows 和 macOS 裝置的各種裝置生態系統。 
+* **IOS、android & macOS 功能的裝置管理** 可協助企業安全地管理包括 IOS、Android、Windows 和 macOS 裝置的各種裝置生態系統。 
 
 ### <a name="how-does-microsoft-365-business-premium-help-protect-pcs-in-my-organization-from-malicious-attacks"></a>Microsoft 365 商務進階版如何協助保護組織中的電腦使其免受惡意攻擊？ 
 使用 Microsoft 365 商務版管理的電腦受到 Microsoft Defender 防毒軟體的保護，也就是 No。 Windows 10 上排名第一的防毒功能，可較其他任何解決方案保護更多電腦免受病毒、惡意程式碼、間諜軟體及其他威脅攻擊。 透過 Microsoft 365 商務版 Premium，組織可以確保 Microsoft Defender 防防毒保護在其所有 Windows 10 裝置上都在執行，並永遠保持最新狀態。  
@@ -154,10 +154,10 @@ Windows AutoPilot 是一項服務，可簡化新 Windows 10 電腦的部署。 �
 可以新增至 Microsoft 365 商務標準版的所有附加元件，都可以新增至 Microsoft 365 商務進階版。 這表示您可以購買 Office 365 Cloud App Security、Advanced 合規性、威脅情報、MyAnalytics、Power BI Pro 和音訊會議。 
  
 ### <a name="can-i-add-phone-system-and-calling-plans-to-microsoft-365-business-premium"></a>是否可以將電話系統和通話方案新增至 Microsoft 365 商務進階版？ 
-是的，您可以購買商務語音訂閱。 [商務語音](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice)是一種電話語音解決方案，針對最高達300個使用者的中小企業，可捆綁電話系統、音訊會議、國內通話方案等等。 您將取得的電話系統功能包括語音信箱、來電者識別碼、通話駐留、來電轉接、自動語音應答及通話佇列。 <br> 若要瞭解您的國家或地區是否可使用商務語音，請參閱[商務語音的國家和地區可用性](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability)。 如需定價資訊，請參閱[商務語音的定價](https://go.microsoft.com/fwlink/?linkid=2127221)。
+是的，您可以購買商務語音訂閱。 [商務語音](https://docs.microsoft.com/microsoftteams/business-voice/whats-business-voice) 是一種電話語音解決方案，針對最高達300個使用者的中小企業，可捆綁電話系統、音訊會議、國內通話方案等等。 您將取得的電話系統功能包括語音信箱、來電者識別碼、通話駐留、來電轉接、自動語音應答及通話佇列。 <br> 若要瞭解您的國家或地區是否可使用商務語音，請參閱 [商務語音的國家和地區可用性](https://docs.microsoft.com/microsoftteams/business-voice/country-region-availability)。 如需定價資訊，請參閱 [商務語音的定價](https://go.microsoft.com/fwlink/?linkid=2127221)。
  
 ### <a name="can-microsoft-365-business-premium-customers-use--microsoft-defender-advanced-threat-protection"></a>Microsoft 365 商務版客戶可以使用 Microsoft Defender 高級威脅防護嗎？ 
-是的，microsoft Defender 高級威脅防護是以 Microsoft 365 商務版 Premium 客戶的附加元件形式提供。
+是的，從 [Microsoft 雲端解決方案提供者](https://partner.microsoft.com/membership/cloud-solution-provider/find-a-provider)購買時，Microsoft Defender 高級威脅防護是以 Microsoft 365 商務版的附加元件形式提供。
 
 ## <a name="partner-opportunity"></a>合作夥伴商機
 

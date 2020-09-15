@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 設定 Microsoft 365 的雲端服務的藍圖。
-ms.openlocfilehash: 4e9630ad84b5e442f0c8fd6ab95ca9d0c48c780a
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 9d28b03f17aa0b9de955af824939d0db28faa057
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315762"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775132"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Microsoft 365 的雲端服務藍圖
 
 若要取得 Microsoft 365 for enterprise 的創意、團隊合作和生產力優點，請部署最適合組織需求的雲端服務。
 
-如果您有現有的伺服器部署 Exchange、SharePoint 或商務用 Skype，請參閱 [用戶端和伺服器軟體藍圖](client-server-software-roadmap-microsoft-365.md) ，將整個組織遷移至適用于企業的 Microsoft 365。 本藍圖包含 Microsoft Office 用戶端產品、內部部署 Office 伺服器產品及 Microsoft Windows 型裝置。
+如果您有現有的以伺服器為基礎的 Exchange、SharePoint 或商務用 Skype 部署，且想要將整個組織遷移至適用于企業的 Microsoft 365，請參閱 [用戶端和伺服器軟體藍圖](client-server-software-roadmap-microsoft-365.md)。 此藍圖包含 Microsoft Office 用戶端產品、內部部署 Office 伺服器產品及 Microsoft Windows 型 &ndash; 裝置。
 
 ## <a name="deploy"></a>部署
 
@@ -56,12 +56,12 @@ ms.locfileid: "47315762"
 
 ## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Microsoft 如何進行 Microsoft 365 的雲端服務
 
-若要瞭解 Microsoft IT 部門部署或管理 Microsoft 365 雲端服務的方式：
+如需 Microsoft IT 如何部署或管理 Microsoft 365 雲端服務的相關資訊：
 
-1. 移至 [MICROSOFT IT 展示](https://www.microsoft.com/itshowcase)。
+1. 移至 [ [MICROSOFT IT] 展示](https://www.microsoft.com/itshowcase)。
 2. 選取 [ **搜尋內容**]。
-3. 在 [**精簡結果**] 中，選取 [**物件**] 底下的 [ **IT 專業人員**]，以及您對 [**產品**] 下所需之雲端服務
+3. 在 [**調整結果**] 底下，選取 [**物件**] 底下的 [ **IT 專業人員**]，然後在 [**產品**] 下選取雲端服務。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
-開始實施雲端服務， [準備好](configure-services-and-applications.md)。
+啟動您的雲端服務實施。 如需相關指引，請參閱 [Configure Microsoft 365 Enterprise 服務和應用程式](configure-services-and-applications.md)。

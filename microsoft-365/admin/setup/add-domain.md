@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Microsoft 365。 安裝精靈會引導您完成此程式。
-ms.openlocfilehash: 3da99644f339eac2db6f1904e4eb50a7f584bc80
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: a9a0c12d5207db210b4a08ce58abeb44270c8506
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315714"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775156"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>新增網域至 Microsoft 365
 
@@ -83,34 +83,26 @@ ms.locfileid: "47315714"
     
 5. 選擇您要如何驗證您擁有該網域。
     
-    1. 如果您的網域註冊機構使用[網域](#domain-connect-registrars-integrating-with-microsoft-365)**連線**，請選取  >  **[下一步]** ，Microsoft[將會自動設定記錄](../get-help-with-domains/domain-connect.md)。
+    1. 如果您的網域註冊機構使用 [網域 Connect](#domain-connect-registrars-integrating-with-microsoft-365)，Microsoft 將會您登入您的註冊機構，並確認 microsoft 365 的連線，以 [自動設定您的記錄](../get-help-with-domains/domain-connect.md) 。 您將會傳回系統管理中心，然後 Microsoft 將會自動驗證您的網域。
+    2. 您可以使用 TXT 記錄來驗證您的網域。 選取 **[下一步]，然後選取 [下一步]** ，查看如何將此 DNS 記錄新增至您註冊機構網站的指示。 在您新增記錄後，可能需要長達30分鐘的時間來進行驗證。 
+    3. 您可以將文字檔新增至您網域的網站。 從安裝精靈選取並下載 .txt 檔案，然後將檔案上傳至網站的最上層資料夾。 檔案的路徑看起來應該類似下列所示： `http://mydomain.com/ms39978200.txt` 。 我們會在您的網站上尋找檔案，以確認您擁有該網域。
     
-    2. 您可以傳送一封含有驗證碼的電子郵件給網域的已登記連絡人。 如果您無法辨識或存取記錄中的電子郵件，您可以使用第三個選項。
+6. 選擇您想要如何進行 DNS 變更，Microsoft 才能使用您的網域。
     
-    3. 您可以使用 TXT 記錄來驗證您的網域。 選取 **[下一步]，然後選取 [下一步]** ，查看如何將此 DNS 記錄新增至您註冊機構網站的指示。 在您新增記錄後，可能需要長達30分鐘的時間來進行驗證。 
-
-    4. 您可以將文字檔新增至您網域的網站。 從安裝精靈選取並下載 .txt 檔案，然後將檔案上傳至網站的最上層資料夾。 檔案的路徑看起來應該類似下列所示： `http://mydomain.com/ms39978200.txt` 。 我們會在您的網站上尋找檔案，以確認您擁有該網域。
-    
-6. 選擇您想要如何進行 DNS 變更，Office 才能使用您的網域。
-    
-    1. 如果您想要讓 Office 自動設定 DNS，請選擇 [ **為我新增 dns 記錄** ]。 
-    
-  
+    1. 如果您的註冊機構支援網域連線，請選擇 [ **為我新增 DNS 記錄** []](#domain-connect-registrars-integrating-with-microsoft-365)，Microsoft 將會您登入註冊機構，並確認 microsoft 365 的連線，以 [自動設定您的記錄](../get-help-with-domains/domain-connect.md) 。
     2. 如果您只想要將特定的 Microsoft 365 服務附加至您的網域，請選擇 [ **我要自行新增 DNS 記錄** ]，否則請稍後再進行此操作。 **如果您確切知道您在做什麼，請選擇此選項。**
-    
-7. 如果您選擇  *自行新增 DNS 記錄*  ，請選取 **[下一步]** ，您將會看到一個頁面，其中包含您需要新增至註冊機構網站以設定網域的所有記錄。 
-    
-  
-  
+
+7. 如果您選擇 *自行新增 DNS 記錄*  ，請選取 **[下一步]** ，您將會看到一個頁面，其中包含您需要新增至註冊機構網站以設定網域的所有記錄。 
+
     如果入口網站無法辨認您的註冊機構，您可以[遵循這些一般指示](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (機器翻譯)。
     
     查看我們的[特定主機指示](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) 來尋找您的主機，並遵循步驟來新增您需要的所有記錄。 
     
     如果您不知道您網域的 DNS 主機提供者或網域註冊機構，請參閱[尋找您的網域註冊機構或 DNS 主機服務提供者](../get-help-with-domains/find-your-domain-registrar.md)。
     
-    如果您想稍後等候，請滾動至底部，然後選取 [ **略過此步驟**]。
+    若要稍等片刻，請取消選取 [所有服務]，然後按一下 [ **繼續**]，或在先前的網域連線步驟中，選取 [ **更多選項** ]，然後選取 [ **立即略過此**項]。
     
-8. 選取 **[完成]** -您已經完成！ 
+8. 選取 **[完成]** -您已經完成！
 
 ## <a name="add-or-edit-custom-dns-records"></a>新增或編輯自訂 DNS 記錄
 
@@ -140,15 +132,16 @@ ms.locfileid: "47315714"
 ### <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>與 Microsoft 365 整合的網域連接註冊機構
 
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
-- [123Reg](https://www.123-reg.co.uk/)
+- [EuroDNS](https://www.eurodns.com/)
 - [Cloudflare](https://www.cloudflare.com/)
 - [GoDaddy](https://www.godaddy.com/)
 - [Wordpress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - 使用 SecureServer DNS 主機的 SecureServer 或 WildWestDomains (GoDaddy 轉銷商) 
-    - [MadDog 網域](https://www.maddogdomains.com/)
-    - [CheapNames](https://www.cheapnames.com)
+    - 範例：
+        - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
+        - [DomainRightNow](https://www.domainrightnow.com/)
 
 ### <a name="what-happens-to-my-email-and-website"></a>我的電子郵件和網站會發生什麼情況？
 

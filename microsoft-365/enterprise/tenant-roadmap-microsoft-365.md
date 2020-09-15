@@ -13,20 +13,20 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 設定 Microsoft 365 承租人的藍圖。
-ms.openlocfilehash: 540d1bc53ac06b85d22a8a60a62e51761e10339c
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
+ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315750"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47775144"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 租使用者藍圖
 
-您的 Microsoft 365 租使用者是指派給您組織的一組服務。 此租使用者通常與一或多個 DNS 功能變數名稱相關聯，其作用中為不同訂閱的中央容器，以及您指派給使用者帳戶的授權。 
+您的 Microsoft 365 租使用者是指派給您組織的一組服務。 此租使用者通常會與一或多個 DNS 功能變數名稱產生關聯，並充當不同訂閱的中央容器，以及您指派給使用者帳戶的授權。
 
 當您建立 Microsoft 365 租使用者時，您可以將其指派給特定的地理位置。 您也可以讓租使用者使用多個地理位置，並將租使用者從一個位置移至另一個位置。
 
-規劃良好且執行的租使用者設定對於網路和身分識別的基礎服務的準備很重要。
+若要讓您的租使用者準備好用於網路和身分識別的基礎服務，請務必謹慎規劃並執行您的租使用者設定。
 
 ## <a name="plan"></a>方案
 
@@ -50,15 +50,15 @@ ms.locfileid: "47315750"
 
 使用 Microsoft 365 多地理位置，您的組織可以將 Microsoft 365 存在狀態擴展到現有租用戶中的多個地理區域和/或國家/地區。
 
-[開始](microsoft-365-multi-geo.md) 瞭解、規劃、設定及管理 Microsoft 365 多地理位置。
+如需 Microsoft 365 多地理位置的相關資訊，包括如何規劃、設定及管理，請 [從這裡開始](microsoft-365-multi-geo.md)。
 
 ## <a name="move-a-tenants-geographic-locations"></a>移動租使用者的地理位置
 
 Microsoft 會繼續開啟新的資料中心地理位置， (geos) Microsoft 365 服務。 這些新的資料中心 geos 可增加容量及計算資源，以支援客戶需求和使用量成長。 此外，新的資料中心 geos 提供核心客戶資料的地理位置資料派駐服務。
 
-開始瞭解和要求地區資料移動，將 [核心資料移至新的 Microsoft 365 datacenter geo](moving-data-to-new-datacenter-geos.md)。
+如需 Microsoft 365 資料中心地理位置的詳細資訊，包括如何要求地區資料移動，請 [從這裡開始](moving-data-to-new-datacenter-geos.md)。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 以 [訂閱、授權、帳戶及](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)租使用者的方式開始規劃承租人。
 

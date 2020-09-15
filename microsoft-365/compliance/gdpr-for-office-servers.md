@@ -12,28 +12,28 @@ ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4efb3803df2baa1ca37aeda05ae81947c3b65010
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 5ee42a12f65ad5eff0a33ef2b61d328ebdc7af3e
+ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036258"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "47547329"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>適用於內部部署 Office 伺服器的 GDPR
 
 一般資料保護規定 (GDPR) 引進了適用於組織的需求，以保護個人資料並且適當地回應資料主體要求。這一系列的文章提供內部部署工作負載的建議方法：
 
--   [SharePoint Server](gdpr-for-sharepoint-server.md)
+- [SharePoint Server](gdpr-for-sharepoint-server.md)
 
--   [Exchange Server](gdpr-for-exchange-server.md)
+- [Exchange Server](gdpr-for-exchange-server.md)
 
--   [商務用 Skype Server](gdpr-for-skype-for-business-server.md)
+- [商務用 Skype Server](gdpr-for-skype-for-business-server.md)
 
--   [Project Server](gdpr-for-project-server.md)
+- [Project Server](gdpr-for-project-server.md)
 
--   [Office Web Apps Server 和 Office Online Server](gdpr-for-office-online-server.md)
+- [Office Web Apps Server 和 Office Online Server](gdpr-for-office-online-server.md)
 
--   [內部部署檔案共用](gdpr-for-on-premises-file-shares.md)
+- [內部部署檔案共用](gdpr-for-on-premises-file-shares.md)
 
 如需有關 GDPR 以及 Microsoft 可以如何協助您的詳細資訊，請參閱 [Microsoft 信任中心](https://www.microsoft.com/trust-center/privacy/gdpr-overview
 )。
@@ -42,17 +42,20 @@ ms.locfileid: "44036258"
 
 下圖列出在各個工作負載中使用的建議功能，以探索、分類、保護及監視個人資料。請參閱本節中的文章以取得詳細資訊。
 
-![](../media/gdpr-for-office-servers-image1.png)
+![圖表描述如何在各個工作負載中探索、分類、保護及監控個人資料功能](../media/gdpr-for-office-servers-image1.png)
 
 ## <a name="illustration-description"></a>圖例說明
 
 為了便於存取，下表會在圖例中提供相同的範例。
 
-|             |Windows Server 檔案共用|SharePoint Server|Exchange Server|商務用 Skype|Project Server|
-|:------------|:-------------------------|:----------------|:--------------|:-----------------|:-------------|
-|探索|Azure 資訊保護掃描器*|搜尋中心或 eDiscovery (在資料分類之後)；Azure 資訊保護掃描器*|Exchange eDiscovery 入口網站|Exchange eDiscovery 入口網站|用於探索和匯出的 SQL 指令碼|
-|分類|Azure 資訊保護掃描器 *；Office 365 機密資訊類型|Azure 資訊保護掃描器 *；Office 365 機密資訊類型|Exchange 保留標記和保留原則|Exchange 保留標記和保留原則||
-|保護||Exchange Server 資料外洩防護規則；權限，文件庫的 IRM 保護|Exchange Server 資料外洩防護規則；與 Exchange Server 的 IRM 整合|||
-|監視|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|
+****
 
-*請注意，保護會加密檔案。因此，SharePoint Server 在保護的檔案中找不到敏感性資訊類型。
+|動作|Windows Server 檔案共用|SharePoint Server|Exchange Server|商務用 Skype|Project Server|
+|---|---|---|---|---|---|
+|探索|Azure 資訊保護掃描器<sup>\*</sup>|搜尋中心或電子文件探索 (在分類資料之後) <br/><br/> Azure 資訊保護掃描器<sup>\*</sup>|Exchange eDiscovery 入口網站|Exchange eDiscovery 入口網站|用於探索和匯出的 SQL 指令碼|
+|分類|Azure 資訊保護掃描器<sup>\*</sup> <br/><br/> Office 365 敏感性資訊類型|Azure 資訊保護掃描器<sup>\*</sup> <br/><br/> Office 365 敏感性資訊類型|Exchange 保留標記和保留原則|Exchange 保留標記和保留原則||
+|保護||Exchange Server 資料外洩防護規則 <br/><br/> 權限，文件庫的 IRM 保護|Exchange Server 資料外洩防護規則 <br/><br/> 與 Exchange Server 的 IRM 整合|||
+|監視|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|整合記錄與 SIEM 工具|
+|
+
+<sup>\*</sup> 請注意，保護會加密檔案。 因此，SharePoint Server 在保護的檔案中找不到敏感性資訊類型。
