@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ff610cee46b2b48815af82fa86d0b30aa99f4b5c
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: 502dc87b45c42f0ae95ea9da898c4d4589b19671
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46798231"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649946"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威脅防護預覽功能
 
@@ -50,13 +50,14 @@ Microsoft 威脅防護服務會不斷更新，以包含新功能增強功能及�
 
 3. 選取 [**預覽功能**]  >  **開啟預覽功能**。 
 
-3. 選取 **[儲存]**。
+3. 選取 [儲存]****。
 
 當您看到已選取 [ **開啟預覽功能** ] 核取方塊時，您會知道已開啟預覽功能。 
 
 ## <a name="preview-features"></a>預覽功能
 下列是目前可供預覽的功能和增強功能：
 
+- **[Microsoft 威脅防護 APIs](api-overview.md)** -lop-exo 層級 Microsoft 威脅防護 APIs 可讓您根據共用的事件和高級搜尋表來自動化工作流程。 
 - **[IdentityDirectoryEvents table in advanced 搜尋](advanced-hunting-identitydirectoryevents-table.md)** -尋找涉及內部部署網域控制站執行 Active DIRECTORY (AD) 的事件。 此表格涵蓋 identity 相關事件的範圍，以及網域控制站上的系統事件。
 - **[AssignedIPAddresses ( # A1 函數](advanced-hunting-assignedipaddresses-function.md)** -在高級搜尋中使用此功能，可快速取得從指定時間點指派給裝置或最近的 ip 位址的最新 ip 位址。
 - **[在高級搜尋中採取動作](advanced-hunting-take-action.md)** ：快速包含威脅或您在 [ [高級搜尋](advanced-hunting-overview.md)] 中找到的受損資產。

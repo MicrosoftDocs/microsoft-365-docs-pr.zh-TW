@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: f6ee8147965a29b87d84690535116f096e4c6006
-ms.sourcegitcommit: 5476c2578400894640ae74bfe8e93c3319f685bd
+ms.openlocfilehash: a9d7b514aac8d1a769c0dabf6dcdb54f4bcb447b
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44049636"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649958"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-environment"></a>建立 Microsoft 威脅防護試用實驗室環境 
 
@@ -31,7 +31,7 @@ ms.locfileid: "44049636"
 
 建立此試用實驗室環境的目的是為了說明可在組織中使用的偵測、防護、調查和回應中，Microsoft 威脅防護的綜合、整合及智慧功能。 
 
-本指南會逐步引導您逐步開始 Microsoft 威脅防護評估，以建議的部署路徑為基礎。 其目標是協助您設定實驗室環境中的整合式 Microsoft 威脅防護服務，或在組織中向安全性解決方案決策者展示時，做為概念證明（POC）。 當您執行攻擊模擬時，會自動調查和回應，並對結果滿意，您可以使用 Microsoft 技術銷售人員或您組織中的專家協助，在實際執行環境中部署它。 
+本指南會逐步引導您逐步開始 Microsoft 威脅防護評估，以建議的部署路徑為基礎。 其目標是協助您設定實驗室環境中的整合式 Microsoft 威脅防護服務，或在向組織中的安全性解決方案決策者展示時， (POC) 的概念證明。 當您執行攻擊模擬時，會自動調查和回應，並對結果滿意，您可以使用 Microsoft 技術銷售人員或您組織中的專家協助，在實際執行環境中部署它。 
 
 本指南將協助您：
 - 設定實驗室服務器和電腦
@@ -68,7 +68,7 @@ ms.locfileid: "44049636"
     -   Office 365 進階威脅防護
     -   Azure 進階威脅防護
     -   Microsoft Cloud App Security
-    -   Windows Defender 進階威脅防護
+    -   Microsoft Defender 進階威脅防護
 
 ## <a name="out-of-scope"></a>超出範圍
 
@@ -78,6 +78,5 @@ ms.locfileid: "44049636"
 -   實際執行環境中的滲透測試
 
 ## <a name="next-step"></a>後續步驟
-|||
-|:-------|:-----|
-|![階段1：準備](../../media/prepare.png) <br>[階段1：準備](prepare-mtpeval.md) | 準備您的 Microsoft 威脅防護評估實驗室環境
+![階段1：準備](../../media/prepare.png) <br>[階段1：準備](prepare-mtpeval.md) 
+<br> 準備您的 Microsoft 威脅防護評估實驗室環境

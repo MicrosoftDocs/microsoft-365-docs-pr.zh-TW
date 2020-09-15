@@ -1,5 +1,5 @@
 ---
-title: 調查 Microsoft 威脅防護中的事件
+title: Microsoft 威脅防護中的事件概觀
 description: 調查在不同裝置、使用者和信箱看到的事件。
 keywords: 事件, 警示, 調查, 關聯, 攻擊, 電腦, 裝置, 使用者, 身分識別, 身分識別, 信箱, 電子郵件, 365, microsoft, m365
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 29eeb5f0699321441543057040b434c4dad61925
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 805b83262bd9d91500dc7e8b6b82542dfbc7e9c5
+ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235112"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47649934"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Microsoft 威脅防護中的事件概觀
 

@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 08/31/2020
+ms.date: 09/14/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,26 +17,33 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 375e58214e19960d3e3100a0c1051fe7c4924aae
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: be35663fc32a2d214e1ca0ae91161079a5f672a3
+ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546639"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "47651141"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
-本系列文章說明如何執行建議的環境和設定（包括一組規定的條件式存取原則和相關功能），以設定對雲端365服務的安全存取。 您可以使用此指導方針，來保護與 Azure Active Directory (Azure AD) 整合的所有服務存取，包括 Microsoft 365 服務、其他 SaaS 服務，以及使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式。
+組織目前的安全性周邊環境會延伸至您的網路以外，以包含從各種裝置的任何位置存取雲端架構應用程式的使用者。 您的安全性基礎結構需要判斷是否應授與指定的存取要求，以及在哪些條件下。 
 
-這些建議：
+這項判斷應該是以使用者帳戶登入、正在使用的裝置、使用者嘗試存取的應用程式、建立存取要求的位置，以及要求的風險評估。 這項功能可協助確保只有核准的使用者和裝置可以存取您的重要資源。
 
+本系列文章說明一組身分識別與裝置存取的必要條件設定，以及一組 Azure Active Directory (Azure AD) 條件式存取、Microsoft Intune 及其他原則，以保護對 Microsoft 365 for enterprise cloud app 和服務、其他 SaaS 服務，以及使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式的存取。
+
+身分識別與裝置存取設定和原則，可在三個層級中使用：基準保護、機密保護，以及針對具有高管制或保密資料之環境的保護。 這些階層及其對應的設定會在您的資料、身分識別及裝置中提供一致的保護層級。
+
+這些功能及其建議：
+
+- 支援 Microsoft 365 E3 和 Microsoft 365 E5。
 - 會與 [Microsoft 安全分數](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) 和 [Azure AD 中的身分識別分數](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score)對齊，並且會為您的組織增加這些分數。
-- 會協助您執行下列 [五個步驟，以保護您的身分識別基礎結構](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。 
+- 會協助您執行下列 [五個步驟，以保護您的身分識別基礎結構](https://docs.microsoft.com/azure/security/azure-ad-secure-steps)。
 
 如果您的組織有獨特的環境需求或複雜性，請使用這些建議做為開始點。 不過，大多陣列織可依照預定的方式來執行這些建議。
 
 >[!Note]
->Microsoft 也會為 Office 365 訂閱銷售企業行動 + 安全性 (EMS) 授權。 EMS E3 和 EMS E5 功能大體上相當於 Microsoft 365 E3 和 Microsoft 365 E5 中的功能。 如需詳細資訊，請參閱 [EMS 方案](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 。
+>Microsoft 也會為 Office 365 訂閱銷售企業行動 + 安全性 (EMS) 授權。 EMS E3 和 EMS E5 功能相當於 Microsoft 365 E3 和 Microsoft 365 E5 中的功能。 如需詳細資訊，請參閱 [EMS 方案](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 。
 >
 
 ## <a name="intended-audience"></a>目標物件
