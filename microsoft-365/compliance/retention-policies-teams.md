@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: cc0d422220d4f3c2ca667a4f0076eb9e62d90518
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 04ca027b9ce8ad1b36e0d4e60c4e10308a822a63
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394690"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816736"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
@@ -100,10 +100,6 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 ## <a name="limitations"></a>限制
 
 我們持續努力將 Teams 中的保留功能最佳化。 在此同時，當您使用保留 Teams 頻道訊息和交談時，請注意以下幾個限制：
-
-- **Teams 不包含在全組織原則中**。 如果建立全組織原則，則不會包含 Teams 頻道訊息和 Teams 聊天，因為它們需要個別的保留原則。
-
-- **Teams 不支援進階保留**。 建立保留原則時，如果您選擇 [用來識別符合特定條件內容的進階設定][](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions)，則無法使用 Teams 位置。 當您選取這些位置時，會將 Teams 中的保留套用至所有聊天和頻道訊息內容。
 
 - **當您為 Teams 團隊頻道訊息設定保留原則時，不會包含私人頻道的訊息**。 目前，保留原則尚未支援 [私人頻道]。 
 
