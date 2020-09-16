@@ -3,7 +3,7 @@ title: Microsoft 365 多地理位置
 ms.reviewer: adwood
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: 在本文中，您將瞭解如何使用 Microsoft 365 多地理位置，將 Microsoft 365 的目前狀態擴充為多個地理區域。
-ms.openlocfilehash: a5843b98b5d64dfb3872c3d8a5d48c0e56949c02
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 41069490a8c824bb58a8f4247987abd3ce0901b6
+ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688682"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "47825349"
 ---
 # <a name="microsoft-365-multi-geo"></a>Microsoft 365 多地理位置
 
@@ -26,9 +26,9 @@ ms.locfileid: "46688682"
   
 您可以使用 Microsoft 365 多地理位置，在您所選擇的地理位置佈建和儲存待用資料以符合資料落地要求，同時將現代化生產力體驗逐步拓展至您的員工。
 
-#### <a name="video-introducing-microsoft-365-multi-geo"></a>影片：簡介 Microsoft 365 多地理位置
+如需 Microsoft 365 多地理位置的影片簡介，請參閱 [SharePoint 線上及 OneDrive 多地理位置，以控制您的資料所在位置](https://www.youtube.com/watch?v=Do9U3JuROhk)。
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1Yk6B?autoplay=false]
+## <a name="multi-geo-architecture"></a>多地理位置架構
 
 在多地理位置環境中，Microsoft 365 租用戶包含一個中央位置(最初佈建 Microsoft 365 訂閱的位置) 和一個或多個衛星位置。 在多地理位置租用戶中，地理位置、群組和使用者資訊的相關資訊掌握在 Azure Active Directory (Azure AD) 中。 由於您的租用戶資訊會集中管理並同步到每個地理位置，若要共用及體驗，公司的每一位員工都必須擁有全域概念。
 
