@@ -7,21 +7,6 @@
           href: top-security-tasks-for-remote-work.md
         - name: 適用於 BDM 的 Microsoft 365 安全性
           href: Microsoft-365-security-for-bdm.md
-        - name: 資訊安全長 (CISO) 研討會訓練
-          href: ./office-365-security/ciso-workshop.md
-          items:
-            - name: 單元 1 - Microsoft 網路安全簡報
-              href: ./office-365-security/ciso-workshop-module-1.md
-            - name: 單元 2 - 安全性管理
-              href: ./office-365-security/ciso-workshop-module-2.md
-            - name: 單元 3 - 身分識別和零信任使用者存取
-              href: ./office-365-security/ciso-workshop-module-3.md
-            - name: 單元 4a - 威脅防護策略，第一部分
-              href: ./office-365-security/ciso-workshop-module-4a.md
-            - name: 單元 4b - 威脅防護策略，第二部分
-              href: ./office-365-security/ciso-workshop-module-4b.md
-            - name: 單元 5 - 資訊保護
-              href: ./office-365-security/ciso-workshop-module-5.md
     - name: 身分識別與裝置存取設定
       href: ../enterprise/microsoft-365-policies-configurations.md
       items:
@@ -87,7 +72,7 @@
               href: mtp/generate-test-alert.md
         - name: 操作指南
           items:
-            - name: 建立試用實驗室環境
+            - name: 建立試用實驗室或試驗環境
               href: mtp/mtp-evaluation.md
             - name: 部署支援服務
               href: mtp/deploy-supported-services.md
@@ -219,22 +204,62 @@
                   href: mtp/monitor-devices.md
                 - name: 應用程式監視與報告
                   href: mtp/monitor-apps.md
+            - name: API
+              items: null
+        - name: 參考
+          items:
             - name: 權限與設定
               items:
                 - name: 管理存取權
                   href: mtp/mtp-permissions.md
                 - name: 設定時區
                   href: mtp/mtp-time-zone.md
-            - name: 檢視裝置設定檔
-              href: mtp/device-profile.md
-            - name: 提供意見反應
-              href: mtp/feedback.md
-            - name: 建立 ServiceNow 票證和工作
+                - name: 檢視裝置設定檔
+                  href: mtp/device-profile.md
+                - name: 提供意見反應
+                  href: mtp/feedback.md
+                - name: 建立 ServiceNow 票證和工作
+                  items:
+                    - name: ServiceNow 整合概述
+                      href: ./mtp/tickets.md
+                    - name: 安全中心的 ServiceNow 票證
+                      href: ./mtp/tickets-security-center.md
+            - name: Microsoft 威脅防護 API (預覽)
               items:
-                - name: ServiceNow 整合概述
-                  href: ./mtp/tickets.md
-                - name: 安全中心的 ServiceNow 票證
-                  href: ./mtp/tickets-security-center.md
+                - name: Microsoft 威脅防護 API 概觀 (預覽)
+                  href: mtp/api-overview.md
+                - name: 開始使用 Microsoft 威脅防護 API (預覽)
+                  items:
+                    - name: Microsoft 威脅防護 API 授權和使用條款
+                      href: mtp/api-terms.md
+                    - name: 存取 Microsoft 威脅防護 API
+                      href: mtp/api-access.md
+                    - name: Hello World 範例
+                      href: mtp/api-hello-world.md
+                    - name: 使用應用程式內容取得存取權
+                      href: mtp/api-create-app-web.md
+                    - name: 使用使用者內文取得存取權
+                      href: mtp/api-create-app-user-context.md
+                    - name: 取得夥伴應用程式存取權
+                      href: mtp/api-partner-access.md
+                    - name: 其他 API 資源
+                      href: mtp/api-articles.md
+                - name: Microsoft 威脅防護 API 和結構描述 (預覽)
+                  items:
+                    - name: 受支援的 Microsoft 威脅防護 API
+                      href: mtp/api-supported.md
+                    - name: 常見的 REST API 錯誤碼
+                      href: mtp/api-error-codes.md
+                    - name: 進階搜捕 API
+                      href: mtp/api-advanced-hunting.md
+                    - name: 事件 API
+                      items:
+                        - name: 事件方法和屬性
+                          href: mtp/api-incident.md
+                        - name: 列出事件
+                          href: mtp/api-list-incidents.md
+                        - name: 更新事件
+                          href: mtp/api-update-incidents.md
     - name: Office 365 安全性
       items:
         - name: 開始使用
