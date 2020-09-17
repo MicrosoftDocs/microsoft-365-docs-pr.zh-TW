@@ -1,5 +1,5 @@
 ---
-title: Windows 和 Office 部署的 Lab Kit
+title: Windows 和 Office 部署實驗室套件
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -15,14 +15,14 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: 751d2a04daa707049c59b9b7cabb18ca06a598d1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685495"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949877"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署的 Lab Kit
+# <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署實驗室套件
 
 這些實驗室的設計目的是協助您規劃、測試及驗證執行 Windows 10 企業版和 Microsoft 365 應用程式企業版的桌面部署和管理。 使用 Microsoft 端點設定管理員、桌面 Analytics、Office 自訂工具、OneDrive、Windows Autopilot 等的實驗封面。
 
@@ -32,7 +32,7 @@ ms.locfileid: "46685495"
 
 ## <a name="a-complete-lab-environment"></a>完整的實驗室環境
 
-實驗室可讓您自動佈建虛擬實驗室環境，包括網域結合的桌面用戶端、網域控制站、網際網路閘道，以及完整設定的 Configuration Manager 執行個體。 實驗室包含下列產品的最新試用版：
+實驗室可讓您自動佈建虛擬實驗室環境，包括網域結合的桌面用戶端、網域控制站、網際網路閘道，以及完整設定的 Configuration Manager 執行個體。 實驗室包含下列產品的最新評估版本：
 
   - 新增！ Windows 10 企業版 (版本 2004)
   - Windows 7 企業版
@@ -53,70 +53,36 @@ ms.locfileid: "46685495"
 
 詳細的實驗室指南可透過多個部署和管理案例來引導您。 我們已為最新版本的 Intune 和 Configuration Manager 更新實驗室。 
 
-### <a name="device-and-app-readiness"></a>裝置和應用程式整備
+### <a name="plan-and-prepare-infrastructure"></a>規劃及準備基礎結構 
+電腦分析   
+雲端管理閘道 & 雲端發佈點租使用者、共同管理及切換工作負載    
+遠端存取
 
-  - 電腦分析
-  - 部署及更新新版 Microsoft Edge 
-  - 安裝和設定雲端管理閘道 (CMG) 
-  - Internet Explorer 模式 
-  - 應用程式防護 
+### <a name="prepare-configuration"></a>準備設定   
+使用 configuration manager 服務 windows 10 365，優化 Windows 10 更新傳遞服務 Windows 10 使用 Microsoft Intune 服務 windows 10 搭配 microsoft Intune 服務應用程式使用 Configuration Manager 服務 microsoft 365 Apps for enterprise for enterprise for enterprise 使用 Intune    
+安全性及規範符合性 
 
-### <a name="directory-and-network-readiness"></a>目錄和網路整備
+### <a name="prepare-applications"></a>準備應用程式    
+適用于 Office 的準備工作工具    
+MSIX Win32 應用程式的打包及轉換 
 
-  - 將 Windows 10 Update 傳遞最佳化 
-  - Configuration Manager 和 Microsoft Intune 共同管理
-  - 遠端存取 (VPN)
+### <a name="deploy-windows-10"></a>部署 Windows 10   
+在 MDT Windows Autopilot 中，Configuration Manager OS 部署工作順序中的作業系統部署工作順序部署及管理新的 Microsoft Edge    
 
-### <a name="office-and-lob-app-delivery"></a>Office 和 LOB 應用程式傳遞
+### <a name="deploy-microsoft-365-apps-for-enterprise"></a>部署 Microsoft 365 Apps 企業版    
+雲端管理部署    
+本機管理的部署  
+在非 AD 上加入裝置上進行企業部署的 Microsoft 365 應用程式   
+使用 Microsoft Intune 之 Configuration Manager 企業管理部署的企業管理部署    
+使用 Microsoft Intune 部署 Microsoft 團隊的 LOB 部署和管理
 
-  - Microsoft 365 Apps 企業版
-  - 使用 Configuration Manager 和 Microsoft Intune 的企業管理部署
-  - 使用 Microsoft Intune 部署及管理應用程式
-  - 使用商務用 Microsoft Store 進行應用程式部署和自助安裝
-  - 新增！ 安裝 Microsoft Teams 
-
-### <a name="user-file-and-settings-migration"></a>使用者檔案和設定移轉
-
-  - 已知資料夾檔案移轉 
-  - 使用者狀態移轉工具 
-  - 企業狀態漫遊
-  - [開始] 功能表自訂和 UWP App 移除 
-  - User Experience Virtualization (UE-V) 
-
-### <a name="security-and-compliance"></a>安全性及規範符合性
-
-  - BitLocker 裝置加密
-  - Windows Defender 防毒軟體
-  - Windows Hello 企業版
-  - BIOS 至 UEFI 轉換
-  - Windows Defender 應用程式防護
-  - Windows Defender 惡意探索防護
-  - Windows Defender 應用程式控制
-  - Windows Defender 進階威脅防護
-  - 新增！ 端點安全性 
-
-### <a name="os-deployment-and-feature-updates"></a>作業系統部署與功能更新
-
-  - 建立作業系統映像
-  - Configuration Manager 中的作業系統部署工作順序 
-  - MDT 中的作業系統部署工作順序
-  - Windows Autopilot
-  - 佈建套件 
-
-### <a name="windows-and-office-as-a-service"></a>Windows 和 Office 即服務
-  - 使用群組原則來管理 Windows 更新
-  - 使用 Configuration Manager 和 Intune 來維護 Windows 10
-  - 使用 Configuration Manager 維護 Microsoft 365 Apps 企業版
-  - 新增！ 使用 Configuration Manager 和 Intune 更新 Office
-  
-### <a name="windows-virtual-desktop"></a>Windows 虛擬桌面
-  - Windows 虛擬桌面：準備、部署、最佳化 
-
+### <a name="deploy-windows-virtual-desktop"></a>部署 Windows 虛擬桌面  
+ 
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>下載 Windows 和 Office 部署的 Lab Kit
 
 [下載 Windows 和 Office 部署的 Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-*請使用寬頻來下載此內容，以強化您的下載體驗，並允許 30-45 分鐘進行自動佈建。實驗室環境最少需要 16 GB 可用記憶體及 150 GB 可用磁碟空間。如需最佳效能，建議使用 32 GB 可用記憶體。實驗室將在 2020 年 9 月 12 日到期。到期之前，將會發佈新的版本。*
+*請使用廣泛的頻寬下載此內容，以增強您的下載體驗，並允許自動布建的30-45 分鐘。實驗室環境至少需要 16 GB 的可用記憶體和 150 GB 可用磁碟空間。為了達到最佳效能，建議使用 32 GB 的可用記憶體。實驗室于2020年12月4日到期。在到期之前會發佈新的版本。*
 
 ## <a name="additional-guidance"></a>其他指引
 

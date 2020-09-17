@@ -1,46 +1,47 @@
 ---
 title: 可靠深入解析
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation, Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: b7f56a64f1846676f458f7b3ddb210e84b9ca8f7
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+ms.openlocfilehash: 06e1446ca290439c9e6689f4461c825438cf6aaf
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42085665"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950339"
 ---
 # <a name="reliability-insights"></a>可靠深入解析
 
-此檢視為您提供您受管理的裝置健全狀況摘要。 若要檢視可靠性資料，請選取 [**可靠性**] 索引標籤。
+此視圖提供受管理裝置的健康情況摘要。 若要查看可靠性資料，請選取 [ **可靠性** ] 索引標籤。
 
 
-![可靠性窗格： 上方的 [跨裝置透過時間圖表中右上，upper left、 可靠性問題資料表跨底部。 說明和意見反應] 按鈕在右下方。](../../media/insights_reliability.png)
+![可靠性窗格：左上方各裝置的可靠性、右上方的可靠性，右上方的 [最大問題] 表格。 右下方的說明和意見反應按鈕。](../../media/insights_reliability.png)
 
-**跨裝置的可靠性**] 區段中會提供快速的健全狀況摘要。 您過去 14 天的部署所報告的裝置會被認為是 「 良好 」 並觀察到自上次報告失敗後平均時間百分比。 
+[ **各裝置的可靠性** ] 區段透過報告視為「狀況良好」的裝置百分比，以及自上次報告失敗後所觀測的平均時間，提供您部署在過去14天內的快速狀況摘要。 
 
  
-**經過一段時間的可靠性**圖形右邊報告發生嚴重錯誤的裝置數目和觀察到的重大錯誤的總數，經過一段時間。
+右側的 **可靠性隨時間** 圖表會報告發生嚴重錯誤的裝置數量，以及觀測的嚴重錯誤總數。
 
-[**熱門問題**] 區段中詳細說明特定偵測到的問題會影響，至少有 5%的受管理的裝置。 報告的詳細資料包括：
+**最上層的問題**一節將詳細說明會影響至少5% 受管理裝置之特定偵測到的問題。 報告的詳細資料包括：
 
-- 此類型的問題
-    - 應用程式損毀，應用程式會停止運作或意外停止
-    - 應用程式停止回應，其中的應用程式停止回應輸入
-    - 嚴重錯誤，就會發生當發生此問題： 無法復原從 Windows。
-- 受影響的同一個問題的裝置數目
-- 數字代表的受管理裝置的百分比
-- 特定問題數總計
-- 問題的來源看起來軟體元件
-- 偵測到問題的類別：
-    - 瀏覽器 (Edge、 Chrome IE)
-    - 未知 （非 Microsoft 元件）
-    - 驅動程式 （音訊、 圖形或其他驅動程式）
-    - 產能 （寬限時間，G Suite、 Microsoft Office 和其附加元件或擴充功能、 Teams）
-    - 媒體 （影像、 等候音樂或視訊的應用程式
-    - 安全性 （Windows 安全性元件）
-- 為 Microsoft 受管理的桌上型電腦作業的目前狀態，進行調查和 remediates 問題
+- 問題類型
+    - 應用程式崩潰，應用程式停止運作或意外停止
+    - 應用程式懸掛，應用程式停止回應輸入
+    - 發生嚴重錯誤，當 Windows 發生問題而無法復原時，便會發生此錯誤。
+- 受相同問題影響的裝置數目
+- 代表數目的受管理裝置百分比
+- 特定問題發生的總次數
+- 似乎是問題來源的軟體元件
+- 偵測到之問題的類別：
+    - 瀏覽器 (Edge、Chrome、IE) 
+    - 未知的 (非 Microsoft 元件) 
+    - 驅動程式 (音訊、圖形或其他驅動程式) 
+    - 生產力 (寬限時間、G-套件、Microsoft Office 及其附加元件或分機，小組) 
+    - 媒體 (影像、音樂或影片應用程式
+    - 安全性 (Windows 安全性元件) 
+- 目前的狀態為 Microsoft 受管理的桌面作業調查並 remediates 問題
 

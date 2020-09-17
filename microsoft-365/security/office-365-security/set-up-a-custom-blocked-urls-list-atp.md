@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 Office 365 進階威脅防護為貴組織設定封鎖的 URL 清單。
-ms.openlocfilehash: 5f863a3ba61278d0bec5304034ed75d343f93c77
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: f66d447b980cae4a4afbb706f26659c5976bdf37
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656644"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948087"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>使用 ATP 安全連結設定已封鎖的自訂 URLs 清單
 
@@ -49,13 +49,13 @@ ms.locfileid: "46656644"
 
 |角色|指派位置/條件|
 |---|---|
-|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。 ) |
+|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱 [關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) 以深入瞭解。 ) |
 |安全性系統管理員|Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織管理|Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 |
 
 > [!TIP]
-> 若要深入瞭解角色和許可權，請參閱[安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+> 若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 ### <a name="to-view-or-edit-a-custom-blocked-urls-list"></a>若要檢視或編輯自訂封鎖 URL 清單
 
@@ -92,7 +92,7 @@ ms.locfileid: "46656644"
 |
 
 > [!NOTE]
-> 根據預設，您只能將 500 URLs 新增至 [Office 365 ATP 安全連結] 預設原則中的 [封鎖的 URL] 清單。
+> 根據預設，您只能將 500 URLs 新增至 [Office 365 ATP 安全連結] 預設原則中的 [封鎖的 URL] 清單。 個別 URL 不得超過128個字元。 整個封鎖的 URL 清單不得超過10000個字元。
 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>如何定義組織中特定使用者的例外情況
 

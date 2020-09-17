@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: e7eb3eaa6961993f8c77645c8d6760e6701817e2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547935"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950481"
 ---
 # <a name="privacy-and-personal-data"></a>隱私權和個人資料
 
@@ -128,7 +128,7 @@ Microsoft 受管理的桌面不會使用任何收集的個人資料，做為進�
 
 ### <a name="it-admin-contact-information"></a>IT 系統管理員連絡人資訊
 
-租使用者管理員可以直接在 Microsoft 受管理的桌面入口網站的 [系統管理員連絡人] 區段中查看、更正和刪除個人資料。
+租使用者管理員可以在 Microsoft 受管理的桌面入口網站上，查看、更正和刪除自己的個人資料 (例如自己的連絡人資訊) 。
 
 ### <a name="user-related-personal-data"></a>使用者相關個人資料
 

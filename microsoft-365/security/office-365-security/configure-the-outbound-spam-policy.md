@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中查看、建立、修改和刪除輸出垃圾郵件原則。
-ms.openlocfilehash: 530c1af9b7802be6073f19331ce7f6a20bdb2668
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: ebeebe3486ad4dad926ad72509154904700e320a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845975"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949345"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -361,7 +361,7 @@ Get-HostedOutboundSpamFilterPolicy -Identity "Executives" | Format-List
 若要查看現有的輸出垃圾郵件篩選規則，請使用下列語法：
 
 ```PowerShell
-Get-HostedOutboundSpamFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+Get-HostedOutboundSpamFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled>]
 ```
 
 若要傳回所有輸出垃圾郵件篩選規則的摘要清單，請執行下列命令：

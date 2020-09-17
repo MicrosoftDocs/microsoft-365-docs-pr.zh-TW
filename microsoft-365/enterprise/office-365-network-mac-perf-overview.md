@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 系統管理中心的網路效能建議 (預覽) '
+title: 'Microsoft 365 系統管理中心的網路連線 (預覽) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -14,16 +14,16 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: 2f7e922f1e9abd68ebe51d26ef270760a7c446e2
-ms.sourcegitcommit: 22fd8517707ed3ab6ef996247ad2aa372535ee56
+ms.openlocfilehash: f8eff2248fb7abce75c27f227a2c5e7ec7219046
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46815240"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948402"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
-Microsoft 365 系統管理中心現在 includesaggregated 從您的 Microsoft 365 租使用者收集到的網路連線度量，而且只能在您的租使用者中查看其系統管理使用者。 **網路評估** 和 **網路洞察力** 會顯示在 Microsoft 365 系統管理中心的 [ **狀況] |連線能力**。
+Microsoft 365 系統管理中心現在包含從您的 Microsoft 365 租使用者收集到的匯總網路連線衡量標準，而且只能在租使用者中查看其管理使用者。 **網路評估** 和 **網路洞察力** 會顯示在 Microsoft 365 系統管理中心的 [ **狀況] |連線能力**。
 
 ![網路效能頁面](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
@@ -35,9 +35,9 @@ Microsoft 365 系統管理中心現在 includesaggregated 從您的 Microsoft 36
 
 ### <a name="1-enable-windows-location-services"></a>1. 啟用 Windows 位置服務
 
-在此選項中，您必須至少要有兩部電腦在支援先決條件的辦公室位置執行。 您必須在每一部電腦上安裝 Windows 版本19.232 或更新版本的 OneDrive。 如需 OneDrive 版本的詳細資訊，請參閱 [OneDrive 版本](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0)資訊。 在近期的 Office 365 用戶端應用程式中，計畫加入網路度量。
+在此選項中，您必須至少要有兩部電腦在支援先決條件的辦公室位置執行。 您必須在每一部電腦上安裝 Windows 版本 **19.232** 或更新版本的 OneDrive。 如需 OneDrive 版本的詳細資訊，請參閱 [OneDrive 版本](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0)資訊。 在近期的 Office 365 用戶端應用程式中，計畫加入網路度量。
 
-Windows 位置服務必須同意電腦。 您可以執行「 **地圖** 」應用程式並自行尋找，以測試這種情況。 您可以**在具有設定**隱私權位置的單一電腦上啟用此  ->  **Privacy**  ->  **Location**設定，必須啟用設定「允許應用程式存取您的位置」。 您可以使用 MDM 或群組原則，將 Windows Location 服務同意部署至使用設定 _LetAppsAccessLocation_的電腦。
+Windows 位置服務必須同意電腦。 您可以執行「 **地圖** 」應用程式並自行尋找，以測試這種情況。 可在具有設定的單一機器上啟用 **|隱私權 |** 必須啟用設定 _允許應用程式存取您的位置_ 的位置。 您可以使用 MDM 或群組原則，將 Windows Location 服務同意部署至使用設定 _LetAppsAccessLocation_的電腦。
 
 您不需要使用此方法在系統管理中心中新增位置，因為它們會在城市解析度中自動識別。 您無法使用 Windows 位置服務，在城市內顯示多個辦公室位置。
 
@@ -47,7 +47,7 @@ Windows 位置服務必須同意電腦。 您可以執行「 **地圖** 」應�
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. 新增位置及提供 LAN 子網資訊
 
-若為此選項，則不需要 Windows Location 服務和 Wi-Fi。 您必須在位置上的每個 commputer 上安裝20.161.0811.0001 或以上的 Windows 版本或以上 OneDrive。
+若為此選項，則不需要 Windows Location 服務和 Wi-Fi。 您需要在該位置的每台電腦上安裝 Windows 版本20.161 或更新版本 OneDrive。
 
 您也需要在系統管理中心的 [網路連線] 頁面中新增位置，或從 CSV 檔案匯入這些位置。 新增的位置必須包含您的 office LAN 子網資訊。
 
@@ -118,14 +118,14 @@ Microsoft 已從數個 Office 桌面和網頁用戶端，提供支援 Microsoft 
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>LAN 子網辦公位置的 CSV 匯入
 
-針對 LAN 子網的 office 身分識別，您必須預先新增每個 locaiton。 您可以從 CSV 檔案匯入這些位置，而不是在 [ **位置** ] 索引標籤中新增個別的 office 位置。 您可以從其他儲存的地方取得此資料，例如通話品質儀表板或 Active Directory 網站和服務
+針對 LAN 子網的 office 身分識別，您必須預先新增每個位置。 您可以從 CSV 檔案匯入這些位置，而不是在 [ **位置** ] 索引標籤中新增個別的 office 位置。 您可以從其他儲存的地方取得此資料，例如通話品質儀表板或 Active Directory 網站和服務
 
 在 CSV 檔案中，發現的城市位置標示為「 **城市**」，而手動新增的 office 位置標示為 **location**。
 
 1. 在 [主要 _連接至 Microsoft 365_ ] 視窗中，按一下 [ **位置** ] 索引標籤。
 1. 按一下 [位置] 清單上方的 [匯 **入** ] 按鈕。 隨即會顯示 [匯 **入 office 位置** ] 快顯視窗。
 
-   ![CSV 匯入錯誤訊息](../media/m365-mac-perf/m365-mac-perf-import.png)
+   ![CSV 匯入訊息](../media/m365-mac-perf/m365-mac-perf-import.png)
 
 1. 按一下 [將 **目前的 office 位置 ( .csv) ** ] 連結，將目前的位置清單匯出至 csv 檔案，並將其儲存到本機硬碟。 這將為您提供正確的格式 CSV 和您可以新增位置的欄標題。 您可以保留現有的匯出位置。當您匯入更新的 CSV 時，將不會重複。 如果您想要變更現有位置的位址，當您匯入 CSV 時，它就會更新。 您無法變更所探索之城市的位址。
 1. 開啟 CSV 並新增您的位置，方法是針對您想要新增的每個位置，在新行上填上下欄欄位。 保留所有其他欄位為空白;您在其他欄位中輸入的值將會被忽略。
@@ -169,3 +169,5 @@ Microsoft 365 服務前端是 Microsoft 全球網路的進入點，Office 用戶
 [Microsoft 365 connectivity test in M365 Admin Center (預覽) ](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location 服務 (預覽) ](office-365-network-mac-location-services.md)
+
+[Microsoft 365 network connectivity test 工具 (預覽) ](office-365-network-mac-perf-onboarding-tool.md)

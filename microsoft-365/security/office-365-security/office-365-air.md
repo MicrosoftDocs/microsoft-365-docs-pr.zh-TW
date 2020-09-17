@@ -16,22 +16,21 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 開始使用 Office 365 進階威脅防護方案 2 中的自動化調查及回應功能
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 14742df5d9dbd2f65a032250696dbc7c61210562
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 0587c2d58410d7a0bc4a581f156a2cbfc06701a9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336676"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949695"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>開始使用 Office 365 中的自動調查和回應 (AIR) 
 
 [Office 365 Advanced 威脅防護](office-365-atp.md) (OFFICE 365 ATP) 計畫2包含強大的自動化調查和回應 (空氣) 功能，可節約您的安全性運作小組時間和精力。 當觸發警示時，您的安全性作業小組會檢查、優先順序及回應這些警示。 保持傳入提醒的數量非常驚人。 自動化某些部分可提供協助。 透過 AIR，您的安全性運作小組可以專注于優先順序較高的工作，而不會失去所觸發之警示的視線。
 
-本文包含下列資訊：
-
-- 空氣的[整體流動](#the-overall-flow-of-air)
-- [如何取得空中](#how-to-get-air)
-- 設定或使用 AIR 功能[所需的許可權](#required-permissions-to-use-air-capabilities)
+本文包括：
+- 空氣的 [整體流向](#the-overall-flow-of-air) ;
+- [如何取得空氣](#how-to-get-air);和 
+- 設定或使用 AIR 功能 [所需的許可權](#required-permissions-to-use-air-capabilities) 。 
 
 ## <a name="the-overall-flow-of-air"></a>空氣的整體流動
 

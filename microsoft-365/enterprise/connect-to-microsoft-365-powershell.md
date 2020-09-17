@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: 使用適用於 Microsoft 365 的 PowerShell 連線至您的 Microsoft 365 租用戶，以從命令列執行系統管理中心工作。
-ms.openlocfilehash: d1e347a13ca5c587fa544ef80a8e289a8dec0a59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9b4cdbe9fcdea48df456e75095f8d269ab84696f
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688608"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950553"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>使用 PowerShell 連線至 Microsoft 365
 
@@ -56,13 +56,12 @@ ms.locfileid: "46688608"
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>與 Azure Active Directory PowerShell for Graph 模組連線
 
-在Azure Active Directory PowerShell 圖表模組中的命令，其 Cmdlet 名稱中會包含 **AzureAD**。 您可以安裝 [Azure Active Directory PowerShell 的圖表](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)或 [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-3.6.1)。
+在Azure Active Directory PowerShell 圖表模組中的命令，其 Cmdlet 名稱中會包含 **AzureAD**。 您可以安裝 [Azure Active Directory PowerShell 的圖表](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)或 [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)。
 
 針對需要 Azure Active Directory PowerShell for Graph 模組中新 Cmdlet 的程序，請使用下列步驟來安裝模組，並連線至您的 Microsoft 365 訂閱。
 
->[!Note]
->如需支援不同版本的 Microsoft Windows 的詳細資訊，請參閱 [Azure Active Directory PowerShell for Graph 模組](https://docs.microsoft.com/powershell/azuread/v2/azureactivedirectory)。
->
+> [!Note]
+> 如需支援不同版本的 Microsoft Windows 的詳細資訊，請參閱 [Azure Active Directory PowerShell for Graph 模組](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)。
 
 ### <a name="step-1-install-required-software"></a>步驟 1：安裝必要的軟體
 

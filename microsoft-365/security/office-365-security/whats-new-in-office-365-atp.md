@@ -15,15 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/27/2020
+ms.date: 09/10/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 2e6638480ec3a687b1bed9f2a176b6bf21278ef2
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 1aa5d2b59bf1f07c0a74ee7381cbefdb2b5c7506
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308376"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949417"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新增功能
 
@@ -40,29 +40,29 @@ ms.locfileid: "47308376"
 
 - [使用 Configuration Analyzer 檢查您的原則](configuration-analyzer-for-security-policies.md)
 - [使用承租人允許/封鎖清單手動覆寫篩選 verdicts](tenant-allow-block-list.md)
-- [威脅瀏覽器中的延伸功能（包括主要目標使用者、傳輸規則和連接器）](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections)
+- [威脅瀏覽器中的擴充功能，包括主要目標使用者、傳輸規則和連接器](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (OFFICE 365 ATP 方案 2) 
 - 呈現在 [威脅瀏覽器](threat-explorer.md) 中的覆寫資訊 (允許/封鎖承租人/使用者原則的電子郵件) 
-- 在 [威脅 Explorer](threat-explorer.md) 中呈現 URL 威脅 (惡意程式碼、網路釣魚詐騙、垃圾郵件或無) 
+- 在 [威脅 Explorer](threat-explorer.md) 中呈現 URL 威脅 (惡意程式碼、網路釣魚詐騙、垃圾郵件或無)  
 
 ## <a name="julyaugust-2020"></a>2020年7月/8 月 
 
-- [體驗搜尋體驗的增強功能](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-- [使用預先設定的安全性原則輕鬆套用建議設定](preset-security-policies.md)
+- 體驗 Office 365 ATP Plan 1 或 Plan 2 ([搜尋體驗的增強功能](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)) 
+- [使用預先設定的安全性原則輕鬆套用建議設定](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
 
-- [使用自動調查和回應來處理已遭破壞之使用者帳戶](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)的功能現在現已提供。
+- [使用自動調查和回應來處理已遭破壞之使用者帳戶](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)的功能現在現已提供。  (Office 365 ATP 方案 2) 
 
 ## <a name="januaryfebruary-2020"></a>2020年1月/2 月
 
-- [Office 365 ATP 中市場即時檢視的公開可用性](campaigns.md)
-- [威脅瀏覽器](threat-explorer.md)的增強功能，可讓安全性作業小組在[調查電子郵件](investigate-malicious-email-that-was-delivered.md)時搜尋並篩選多個欄位：
+- [Office 365 atp 中的市場即時檢視的公開可用性](campaigns.md) (OFFICE 365 atp 方案 2) 
+- [威脅瀏覽器](threat-explorer.md)的增強功能，讓安全性作業小組能夠在[調查電子郵件](investigate-malicious-email-that-was-delivered.md)時，在多個欄位上搜尋及篩選： (Office 365 ATP Plan 2) 
     - 傳遞位置和特殊動作
     - 方向 (輸入、輸出或組織內) 
     - Advanced NOT 篩選 (這些是包含不包含、不包含等的高級篩選選項 ) 
     - 精確的時間篩選 (日、小時、半小時)  
 
-- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在安全性 & 規範中心中，移至「**威脅管理**  >  **檢查**」。 ) 
+- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在安全性 & 規範中心中，移至「**威脅管理**」  >  ** **。 )  (Office 365 ATP 方案 2) 
 
 - [Microsoft 365 中的安全檔](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) ** (預覽) **
 
@@ -70,7 +70,7 @@ ms.locfileid: "47308376"
 
 - [匯出 URL 按一下 [資料] 以供離線分析](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (OFFICE 365 ATP Plan 1 or Plan 2) 
 
-- [使用 Office 365 ATP (**預覽**) 中的市場即時檢視 ](campaigns.md)
+- [使用 office 365 atp (**預覽**) ](campaigns.md) (office 365 atp Plan 2) 
 
 ## <a name="november-2019"></a>2019 年 11 月
 
@@ -100,7 +100,7 @@ ms.locfileid: "47308376"
 
 您知道 Office 365 ATP 提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 

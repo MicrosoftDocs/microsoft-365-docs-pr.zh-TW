@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
-ms.openlocfilehash: 08d1633142bba7348cbc899f9cf9b2a1288c3743
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: ef401f34bb0bc7a9a9718443101924ad09bca8a0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394732"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947969"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -78,7 +78,7 @@ ms.locfileid: "47394732"
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>將可疑 URL 傳送給 Microsoft
 
-1. 在 [ **物件類型** ] 區段中，選取 [ **URL**]。 在出現的方塊中，輸入完整的 URL (例如， <https://www.fabrikam.com/marketing.html>) 。
+1. 在 [ **物件類型** ] 區段中，選取 [ **URL**]。 在出現的方塊中，輸入完整的 URL (例如， `https://www.fabrikam.com/marketing.html`) 。
 
 2. 在 [ **提交原因** ] 區段中，選取下列其中一個選項：
 

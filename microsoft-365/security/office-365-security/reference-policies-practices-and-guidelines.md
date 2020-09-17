@@ -16,12 +16,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft 已開發各種原則、程式，並採用數種行業最佳作法，協助保護我們的使用者免受濫用、有害或惡意的電子郵件。
-ms.openlocfilehash: 13bc62f8be25a21f5ed2d1c2c2f4208a56d28bf0
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 5b815678fc7462df5448447624d6f7c0c63d6eb6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826514"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949653"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>參考：原則、實務與指導方針
 
@@ -43,7 +43,7 @@ Microsoft 致力於協助提供最受信任的使用者在網頁上的體驗。 
 
 - [CAN-垃圾郵件法案：商務規範指南](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
-- [「移除我的回應和責任：電子郵件行銷人員必須服從「取消訂閱」宣告](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.mdl)
+- [「移除我的回應和責任：電子郵件行銷人員必須服從「取消訂閱」宣告](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.html)
 
 ## <a name="technical-guidelines"></a>技術指導方針
 

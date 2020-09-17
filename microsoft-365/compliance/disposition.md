@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 監視和管理內容處置，不論您使用的是處置檢查，還是會根據您設定的設定自動刪除內容。
-ms.openlocfilehash: 5751857f8b3bf0a7f63df73e9bfaa244897bf429
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: 6789ab1abe54b76f22462a47326b07a213f19b0c
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47321992"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950387"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -122,7 +122,7 @@ ms.locfileid: "47321992"
 > [!NOTE]
 > 用於 SharePoint 和 OneDrive 中的記錄的處理證明已完成的展示。
 >
-> Exchange 中的記錄處置證明已開始向內推出。完成此首展後，我們將會更新此附注。
+> 在 Exchange 中，在 Exchange 中處理記錄的處理證明的首展即將完成，我們將會移除此筆記。
 
 使用 [**記錄管理**] 頁面中的 [**部署**] 索引標籤，識別現在已刪除的記錄（自動或在處置檢查之後）。 這些專案會在 [**類型**] 欄中顯示已**處置的記錄**。 例如：
 

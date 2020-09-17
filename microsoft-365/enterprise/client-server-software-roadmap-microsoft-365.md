@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 設定 Microsoft 365 用戶端和伺服器軟體的藍圖。
-ms.openlocfilehash: 14169809deb363cac8ff3dd6ad35c12c20318674
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 898464222b8296cee3ab12fe7351295f39a23736
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688407"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950565"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365 的用戶端與伺服器軟體藍圖
 
@@ -34,8 +34,7 @@ ms.locfileid: "46688407"
 >Windows 7 已於 **2020 年 1 月 14 日**終止支援。 如需詳細資訊，請按一下[這裡](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
 >
 
-完成所有這些遷移一段時間之後，您的組織越接近 [現代的工作場所](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)，這是一種安全且整合的環境，可解除組織中的團隊合作和創造力，而且所有這些都是由 Microsoft 365 for enterprise 所支援及加強。 
-
+完成所有這些遷移一段時間之後，您的組織越接近 [現代的工作場所](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)，這是一種安全且整合的環境，可解除組織中的團隊合作和創造力，而且所有這些都是由 Microsoft 365 for enterprise 所支援及加強。
 
 ## <a name="migration-for-microsoft-office-client-products"></a>Microsoft Office 用戶端產品的移轉
 
@@ -44,7 +43,7 @@ ms.locfileid: "46688407"
 - 可使用最新的安全性更新和支援修正進行[更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)，但此程序有時需手動進行，且可能無法擴及整個組織。
 - 未以最佳化方式啟用以便運用 Microsoft 雲端技術，及協助您的企業進行數位轉型。
 - 不包含新功能。
- 
+
 適用于企業的 microsoft 365 包括適用于企業的 Microsoft 365 應用程式、Office 用戶端產品的版本，以及 microsoft 365 for enterprise license，已從 Microsoft 雲端安裝並更新。 Microsoft 365 Apps 企業版授權包括安全性更新和最新功能。 如需詳細資訊，請參閱[關於 Microsoft 365 應用程式企業版](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)。
 
 ### <a name="office-2007"></a>Office 2007
@@ -63,7 +62,7 @@ Microsoft 365 App 企業版會自動安裝更新，可以充分利用以雲端�
 
 針對 Office 2010 發行版本中的 Office 版本，終止支援為 **2020 年 10 月 13 日**。 如需詳細資訊，請參閱 [Office 2010 終止支援藍圖](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)。
 
-若不使用 Office 2013 或 Office 2016 (這兩者都必須手動更新) 來升級您執行 Office 2010 的電腦，請考慮： 
+若不使用 Office 2013 或 Office 2016 (這兩者都必須手動更新) 來升級您執行 Office 2010 的電腦，請考慮：
 
 1. 為使用者取得並指派 Microsoft 365 授權。
 2. 在使用者電腦中解除安裝 Office 2010。
@@ -92,7 +91,7 @@ Microsoft 365 App 企業版會自動安裝安全性和新功能更新，並可�
 - 不包含新的生產力應用程式，例如 Microsoft Teams。
 - 不包含最新的安全性功能，例如 Exchange 進階威脅防護。
 
-Microsoft 365 for enterprise 包含雲端架構版本的 Office server 服務，其使用一些與 Office server 軟體內部部署版本（如網頁瀏覽器和 Outlook 用戶端）相同的工具。 這些服務會不斷進行安全性更新，而不需 IT 進行，進而為您節省了維護和更新內部部署伺服器所需的時間。 這些服務也含有 Office 伺服器軟體中沒有的新功能增強功能。 
+Microsoft 365 for enterprise 包含雲端架構版本的 Office server 服務，其使用一些與 Office server 軟體內部部署版本（如網頁瀏覽器和 Outlook 用戶端）相同的工具。 這些服務會不斷進行安全性更新，而不需 IT 進行，進而為您節省了維護和更新內部部署伺服器所需的時間。 這些服務也含有 Office 伺服器軟體中沒有的新功能增強功能。
 
 如需針對特定 Microsoft 365 工作負載遷移使用者和資料的詳細資訊：
 
@@ -146,7 +145,7 @@ Microsoft 365 for enterprise 包含雲端架構版本的 Office server 服務，
 
 ## <a name="migration-for-microsoft-windows-7-and-81"></a>Microsoft Windows 7 和 8.1 的移轉
 
-Windows 7 已於 **2020 年 1 月 14 日**終止支援。 若要移轉執行 Windows 7 或 Windows 8.1 的裝置，您可以執行就地升級。 
+Windows 7 已於 **2020 年 1 月 14 日**終止支援。 若要移轉執行 Windows 7 或 Windows 8.1 的裝置，您可以執行就地升級。
 
 如需其他方法，請參閱 [Windows 10 部署案例](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)。 您也可以自行[規劃 Windows 10 部署](https://aka.ms/planforwin10deployment)。
 
@@ -160,9 +159,9 @@ Windows 7 已於 **2020 年 1 月 14 日**終止支援。 若要移轉執行 Win
 
 您可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
-## <a name="transition-your-entire-organization"></a>轉換您的整個組織
+## <a name="transition-your-entire-organization"></a>轉換整個組織
 
-若要進一步瞭解如何將整個組織移至 Microsoft 365 for enterprise 中的產品和服務，請參閱 [轉換海報](../downloads/transition-org-to-m365.pdf)。
+若要更全面地掌握如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請參閱[轉換海報](../downloads/transition-org-to-m365.pdf)。
 
 [![轉換至 Microsoft 365 海報的影像](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
 
@@ -172,11 +171,10 @@ Windows 7 已於 **2020 年 1 月 14 日**終止支援。 若要移轉執行 Win
 
 ## <a name="how-microsoft-does-microsoft-365-for-enterprise"></a>Microsoft 如何進行企業的 Microsoft 365
 
-請參閱 Microsoft IT 專家如何使用下列資源將公司遷移至 Microsoft 365 for enterprise： 
+請參閱 Microsoft IT 專家如何使用下列資源將公司遷移至 Microsoft 365 for enterprise：
 
 - [部署和更新適用于企業的 Microsoft 365 應用程式](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft 會將 150000 個信箱移轉到 Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
 - [SharePoint 至雲端：深入了解 Microsoft 如何執行自己的移轉](https://www.microsoft.com/itshowcase/Article/Content/691/SharePoint-to-the-cloud-Learn-how-Microsoft-ran-its-own-migration)
 - [在 Microsoft 以就地升級方式部署 Windows 10](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
 - [Windows 10 部署：Microsoft IT 的秘訣與技巧](https://www.microsoft.com/itshowcase/Article/Content/951/Windows-10-deployment-tips-and-tricks-from-Microsoft-IT) (影片)
-

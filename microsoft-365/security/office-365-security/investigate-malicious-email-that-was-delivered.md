@@ -19,19 +19,19 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡意的電子郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5026b69f356fad11a664900a3e316d9c1c976905
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 91f16c3aa7ba98467c52fb25e0597f346a810003
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845951"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949261"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>調查 Office 365 中傳遞的惡意電子郵件
 
 [Office 365 的「高級威脅防護](office-365-atp.md) 」可讓您調查讓組織中的人員面臨風險的活動，並採取行動以保護您的組織。 例如，如果您是組織的安全性小組的一部分，您可以找出並調查已傳遞的可疑電子郵件訊息。 您可以使用 [威脅瀏覽器 (或即時偵測) ](threat-explorer.md)來執行此動作。
 
 > [!NOTE]
-> 在 [這裡](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-21vianet&branch=pr-en-us-4258)跳到修正文章。
+> 在 [這裡](remediate-malicious-email-delivered-office-365.md)跳到修正文章。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -61,7 +61,7 @@ ms.locfileid: "46845951"
 > [!NOTE]
 > *Preview* 是角色，不是角色群組;預覽角色必須新增至 Office 365 的現有角色群組。 全域系統管理員角色會指派 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) ，而且安全性管理員和安全性讀取者角色會指派在安全性 & 規範中心 ([https://protection.office.com](https://protection.office.com)) 。 若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>尋找和刪除已傳遞的可疑電子郵件
+## <a name="find-suspicious-email-that-was-delivered"></a>尋找已傳遞的可疑電子郵件
 
 威脅瀏覽器是一種強大的報表，可用於多種用途，例如尋找和刪除郵件、識別惡意電子郵件寄件者的 IP 位址，或啟動事件以進一步進行調查。 下列程式著重于使用 Explorer 尋找及刪除收件者信箱中的惡意電子郵件。
 
@@ -191,11 +191,11 @@ ms.locfileid: "46845951"
 **電子郵件時程表** 是威脅瀏覽器中的欄位，可讓您的安全性運作小組更輕鬆進行搜尋。 當電子郵件上發生多個事件或在同一時間關閉時，這些事件會顯示在時程表視圖中。 某些會在 [ **特殊動作** ] 欄中捕獲傳送投遞至電子郵件的事件。 將電子郵件的時程表中的資訊組合在一起，可讓系統管理員深入瞭解原則和威脅處理 (例如郵件路由的位置，以及在某些情況下，最後評估) 。
 
 > [!IMPORTANT]
-> 在 [這裡](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)跳到修正主題。
+> 在 [這裡](remediate-malicious-email-delivered-office-365.md)跳到修正主題。
 
 ## <a name="related-topics"></a>相關主題
 
-[修復 Office 365 中傳遞的惡意電子郵件](https://docs.microsoft.com/microsoft-365/security/mtp/article-submission/remediate-malicious-email-delivered-office-365?view=o365-worldwide)
+[修復 Office 365 中傳遞的惡意電子郵件](remediate-malicious-email-delivered-office-365.md)
 
 [Office 365 進階威脅防護](office-365-ti.md)
 

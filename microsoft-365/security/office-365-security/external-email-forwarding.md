@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 7cb2ab9c6987900f2b53a17c3eda49001bca4d84
-ms.sourcegitcommit: 90efec455336b4cecc06a8cbf0ce287740433523
+ms.openlocfilehash: 727f14e8158f7e024b6029231fed18adb2d56a62
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46898049"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949680"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>在 Office 365 中設定外部電子郵件轉發功能
 
@@ -31,7 +31,10 @@ ms.locfileid: "46898049"
 
 - **Off** –會停用自動外部轉送，並且會產生未傳遞回報 (NDR) 給使用者。
 
-如需如何設定這些設定的詳細資訊，請參閱 [設定 EOP 中的外寄垃圾郵件篩選](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide) 。
+如需如何設定這些設定的詳細資訊，請參閱 [設定 EOP 中的外寄垃圾郵件篩選](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) 。
+
+> [!NOTE]
+> 停用自動轉送也會 dsable 將郵件重新導向至外部地址的收件匣規則。
 
 ## <a name="controlling-external-email-forwarding"></a>控制外部電子郵件轉發
 
@@ -42,7 +45,7 @@ Office 365 不允許由收件匣規則或信箱設定自動進行外部轉送，
 > [!NOTE]
 > 停用 Office 365 中的自動轉寄外部地址時，將會逐步顯示詳細資訊透過 [訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) 文章進行通訊。 若要協助系統管理員準備這些變更，請提前修改原則，以確保使用者沒有任何中斷。
 
-在您組織中使用自動轉寄 (收件匣規則或 SMTP 轉送) 使用者的詳細資訊，可以在 [ [自動轉寄的郵件] 報告](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide)中找到。
+在您組織中使用自動轉寄 (收件匣規則或 SMTP 轉送) 使用者的詳細資訊，可以在 [ [自動轉寄的郵件] 報告](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true)中找到。
 
 ## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>這個原則如何與其他自動轉寄控制項搭配使用
 

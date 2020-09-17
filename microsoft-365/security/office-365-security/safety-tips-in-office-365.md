@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 深入瞭解如何將安全性秘訣加入電子郵件，以瞭解 EOP 和 Office 365 如何保護您免受垃圾郵件、網路釣魚和惡意程式碼的防禦。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e13e9cce325dfd3f8312c1d68459ab3c423c1fbb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b4bcfd2bf05f2f5ae7a51fbc2488cb1aa6e7d2c9
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827478"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949629"
 ---
 # <a name="safety-tips-in-email-messages"></a>電子郵件訊息的安全提示
 
@@ -38,12 +38,6 @@ Outlook 中的安全性秘訣不一定取決於您所使用的 Outlook 版本，
     ![顯示紅色安全提示的螢幕擷取畫面。](../../media/5078a0be-e556-44a1-b169-09d780d26898.png)
 
     電子郵件中的紅色安全性秘訣表示您收到的訊息包含可疑專案（例如網路釣魚詐騙）。 建議您從收件匣刪除這類電子郵件，而不需要開啟它。
-
-- 垃圾郵件 (黃色的安全性提示) 。
-
-    ![顯示黃色安全提示的螢幕擷取畫面。](../../media/793c9265-ea44-48fd-a98f-804fadd4163b.png)
-
-    電子郵件中的黃色安全提示表示郵件已標示為垃圾郵件。 如果您未辨識或不信任郵件的寄件者，請勿下載任何附件或圖片，不要按一下郵件中的任何連結。 在 web 上的 Outlook 中，您可以按一下 [垃圾郵件專案] 之黃色列中 **的 [不是垃圾** 郵件]，將郵件移至您的收件匣。 如果在傳送至您的收件匣的郵件上顯示黃色安全提示，這可能是因為您已停用將垃圾郵件移至 [垃圾郵件] 資料夾。
 
 - 安全郵件 (綠色的安全性提示) 。
 
