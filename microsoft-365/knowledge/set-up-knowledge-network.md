@@ -1,22 +1,22 @@
 ---
 title: '設定知識管理 (預覽)  '
 description: 如何設定知識管理。
-author: efrene
-ms.author: efrene
-manager: pamgreen
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d6495f297f09ddc167d7c36835ac82a15abc91ac
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: 6f5d014a8f401d9c3489eabb849b9d666444e6aa
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405642"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948147"
 ---
 # <a name="set-up-knowledge-management-preview"></a>設定知識管理 (預覽) 
 
@@ -60,7 +60,7 @@ ms.locfileid: "47405642"
 
 3. 在 [連線 **人員至知識]** 頁面上，按一下 [ **開始** ]，逐步引導您完成安裝程式。<br/>
 
-    ![入門](../media/content-understanding/k-get-started.png) </br>
+    ![開始使用](../media/content-understanding/k-get-started.png) </br>
 
 4. 在 [ **選擇知識網路可如何尋找主題** ] 頁面上，您會設定主題探索。 在 [ **選取 SharePoint 主題來源** ] 區段中，選取要在探索過程中將其編目為主題來源的 SharePoint 網站。 這包括：</br>
     a. **所有網站**：您租使用者中的所有 SharePoint 網站。 這會捕獲目前和未來的網站。</br>
@@ -91,7 +91,7 @@ ms.locfileid: "47405642"
 
     完成並儲存 CSV 範本檔之後，請選取 **[流覽]** 以找出並選取。
     
-    選取 [下一步]****。</br>
+    選取 **[下一步]**。</br>
 
 6. 在 [ **誰可以看到主題及其可以查看的位置** ] 頁面上，您會設定主題可見度。 在 [在 **知識網路中查看主題** ] 設定中，您可以選擇誰可以存取主題詳細資料，例如高亮主題、主題卡片、搜尋中的主題答案及主題頁面。 您可以選取：</br>
     a. **組織中的所有人**</br>
@@ -112,10 +112,10 @@ ms.locfileid: "47405642"
 
     ![主題管理的許可權](../media/content-understanding/ksetup3.png) </br>
 
-    選取 [下一步]****。</br>
+    選取 **[下一步]**。</br>
 9. 在 [ **建立主題中心** ] 頁面上，您可以建立可以查看主題頁面和管理主題的主題中心網站。  在 [ **主題中心名稱** ] 方塊中，輸入主題中心的名稱。 您可以選擇性地在 [ **網站描述** ] 方塊中輸入簡短的描述。 </br>
 
-選取 [下一步]****。</br>
+選取 **[下一步]**。</br>
 
    ![建立知識中心](../media/content-understanding/ksetup4.png) </br> 
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 502dc87b45c42f0ae95ea9da898c4d4589b19671
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 1e779e0da89ea49fb4ed390b20a6fb67ffd3b162
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47649946"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947993"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威脅防護預覽功能
 
@@ -59,7 +59,6 @@ Microsoft 威脅防護服務會不斷更新，以包含新功能增強功能及�
 
 - **[Microsoft 威脅防護 APIs](api-overview.md)** -lop-exo 層級 Microsoft 威脅防護 APIs 可讓您根據共用的事件和高級搜尋表來自動化工作流程。 
 - **[IdentityDirectoryEvents table in advanced 搜尋](advanced-hunting-identitydirectoryevents-table.md)** -尋找涉及內部部署網域控制站執行 Active DIRECTORY (AD) 的事件。 此表格涵蓋 identity 相關事件的範圍，以及網域控制站上的系統事件。
-- **[AssignedIPAddresses ( # A1 函數](advanced-hunting-assignedipaddresses-function.md)** -在高級搜尋中使用此功能，可快速取得從指定時間點指派給裝置或最近的 ip 位址的最新 ip 位址。
 - **[在高級搜尋中採取動作](advanced-hunting-take-action.md)** ：快速包含威脅或您在 [ [高級搜尋](advanced-hunting-overview.md)] 中找到的受損資產。
 - **[In 入口架構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** -直接在「安全性中心」中取得高級搜尋架構表格的相關資訊。 除了表及欄描述之外，此便利參考還提供支援的事件種類 (`ActionType` 值) 和範例查詢的相關資訊。
 

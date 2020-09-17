@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: e16f6421-2a1a-4142-bf9d-9846600a060a
 description: 取得 Microsoft 365 系統管理應用程式，並瞭解如何從您的手機或平板電腦管理您的線上組織。
-ms.openlocfilehash: 287aafb0be3161c5f100211d6d8169fd133d427b
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 1ad44ccc379b5115ad36e657708eed38f58dca34
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780538"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948805"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>關於 Microsoft 365 admin 行動裝置應用程式
 
-您的系統管理員通常在旅途中？ 然後，請參閱[Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216)。 您可以使用此應用程式從您的手機或平板電腦管理您的線上組織。 您可以從 Apple Store 和 Google Play 取得應用程式。 <br> 
+您的系統管理員通常在旅途中？ 然後，請參閱 [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216)。 您可以使用此應用程式從您的手機或平板電腦管理您的線上組織。 您可以從 Apple Store 和 Google Play 取得應用程式。 <br> 
 
 ![系統管理員行動應用程式首頁的螢幕抓隨，顯示搜尋、訊息、健康情況及快速連結。](../../media/admin-mobile-app-darkbg.png)
 
@@ -48,7 +48,7 @@ ms.locfileid: "44780538"
 而且，如果您是負責多部線上組織的人員，您可以登入多個組織 emc，並在兩者之間快速切換。 
   
 > [!IMPORTANT]
-> 如果您在 iOS 或 Android 上使用系統管理員行動裝置時遇到問題，請以電子郵件傳送我們的[feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，以告知我們。 
+> 如果您在 iOS 或 Android 上使用系統管理員行動裝置時遇到問題，請以電子郵件傳送我們的 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) ，以告知我們。 
   
 ## <a name="download-the-admin-mobile-app"></a>下載 Admin 行動應用程式
 
@@ -89,6 +89,10 @@ ms.locfileid: "44780538"
 
 如果您選取特定的服務事件或郵件，[共用] 選項將會位於右上角。 目前支援電子郵件共用。
   
+### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>我可以使用此應用程式與多個帳戶或租使用者嗎？
+
+是的，您可以設定多個帳戶或承租人。
+  
 ### <a name="my-app-is-acting-funny-what-can-i-do-to-troubleshoot-weird-app-behavior"></a>我的 App 無法正常運作。 我該如何疑難排解 App 不正常的行為？
 
 您可以嘗試一些常見的行動應用程式疑難排解步驟︰
@@ -97,11 +101,11 @@ ms.locfileid: "44780538"
     
 2. 解除安裝並重新安裝 App。
 
-3. 如果仍無法運作，您可以在[feedback365@microsoft.com](mailto:feedback365@microsoft.com)以電子郵件傳送給我們，告訴我們。
+3. 如果仍無法運作，您可以在 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) 以電子郵件傳送給我們，告訴我們。
     
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>如果仍無法解決我的問題該怎麼辦？
 
-電子郵件[feedback365@microsoft.com](mailto:feedback365@microsoft.com)以報告應用程式的問題。 您也可以在本文的底部提供意見反應。 
+電子郵件 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) 以報告應用程式的問題。 您也可以在本文的底部提供意見反應。 
   
 ## <a name="see-also"></a>請參閱
 

@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
 description: 本文包含有關網路規劃、測試及遷移至 Office 365 的資訊連結。
-ms.openlocfilehash: 1e6973f93c65012f4ca007332a47cc6b9e67b3b0
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2b08b05b8863fd9351510878f9438264bb2999f5
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688811"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948445"
 ---
 # <a name="network-and-migration-planning-for-office-365"></a>Office 365 的網路和移轉規劃
 
@@ -51,7 +51,7 @@ ms.locfileid: "46688811"
     
 2. 決定哪些 Office 365 服務與功能可供用戶端使用。 您可能需要一組人員搭配不同的服務或使用設定檔。
     
-3. 針對由用戶端組成的試驗群組測量網路使用狀況。 請確保試驗用戶端能代表組織中屬於各種不同設定檔及地理位置的人員。 您可以對照我們過去的 [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) 和 [商務用 Skype](https://go.microsoft.com/fwlink/p/?LinkId=321551) 計算機，或在我們自己的網路上所執行的 [案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) ，來交叉檢查您的結果。 
+3. 針對由用戶端組成的試驗群組測量網路使用狀況。 請確保試驗用戶端能代表組織中屬於各種不同設定檔及地理位置的人員。 您可以對照 [Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-the-exchange-client-network-bandwidth-calculator-beta/ba-p/601744) 和 [Microsoft 小組](https://docs.microsoft.com/microsoftteams/prepare-network) 舊的計算機，或是我們在自己網路上所執行的 [案例研究](https://www.microsoft.com/itshowcase/Article/Content/631/Optimizing-network-performance-for-Microsoft-Office-365) ，來交叉檢查您的結果。 
     
 4. 從試驗群組的測量結果推算整個組織的需求，然後重新測試以驗證估計值，再變更您的網路設定。
     

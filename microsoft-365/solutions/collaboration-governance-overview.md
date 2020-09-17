@@ -14,12 +14,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 瞭解如何在 Microsoft 365 群組、小組、SharePoint 及 Yammer 中管理相關的功能。
-ms.openlocfilehash: cdef9a4f939c20b34bf32efb5a258deddd885d0e
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: b217dc089eb150d01eed9cd720b2caa290d54bf1
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662521"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950709"
 ---
 # <a name="overview-of-collaboration-governance-in-microsoft-365"></a>Microsoft 365 中的共同作業管理
 
@@ -108,16 +108,16 @@ Microsoft 365 支援三種主要通訊方法：
 
 深入瞭解 Microsoft 365 群組中的基礎和新創新，包括規模的管理和控管，以及驅動使用狀況和採用方式的最佳作法，以及自助服務。
 
-- [接納 Microsoft 365 群組](https://myignite.techcommunity.microsoft.com/sessions/81553)
+- [接納 Microsoft 365 群組](https://www.youtube.com/watch?v=dAamBF1gb7M)
 
 **管理**
 
 瞭解如何設定您的群組到期生命週期、命名原則、分類標籤、與外部來賓的共同作業，以及管理群組建立許可權。
 
-- [使用 Office 365 群組轉換共同作業及抵制陰影](https://myignite.techcommunity.microsoft.com/sessions/81554)
+- [使用 Office 365 群組轉換共同作業及抵制陰影](https://www.youtube.com/watch?v=Bhf_bKx3lAg)
 
 **客戶範例**
 
 請參閱幕後的範例，說明 Microsoft 365 群組、SharePoint、小組和 Yammer 如何共同運作，以提供全球協同作業平臺。
 
-- [使用 Office 365 群組、SharePoint、小組和 Yammer 尋找共同作業的最擅長點](https://myignite.techcommunity.microsoft.com/sessions/84289)
+- [使用 Office 365 群組、SharePoint、小組和 Yammer 尋找共同作業的最擅長點](https://www.youtube.com/watch?v=Rx9eVwqXeQk)

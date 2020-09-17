@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: a88fc5f46a6dafda72a24ba5e80587b24a216955
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: c61526139111885ec345bc4a4dd3cd6b147370e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546467"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950805"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>允許來賓和外部 B2B 存取的原則
 
@@ -55,7 +55,9 @@ ms.locfileid: "47546467"
 ### <a name="guests-vs-external-users"></a>來賓與外部使用者
 在 Azure AD 中，來賓和外部使用者皆相同。 這兩種皆為來賓的使用者類型。 來賓使用者 B2B 使用者。
 
-Microsoft 小組會區別來賓使用者與應用程式中的外部使用者，但是在驗證時，這兩個使用者都 B2B 使用者。 如需小組來賓和外部使用者的詳細資訊，請參閱 [啟用使用者的來賓和外部存取](teams-access-policies.md#enabling-guest-and-external-access-for-teams)。
+Microsoft 小組區分來賓使用者和應用程式內的外部使用者。 來賓使用者已有 Azure AD B2B 帳戶，而且可以新增至小組。 外部使用者只能參與通話、聊天和會議。 如需詳細資訊，請參閱 [這兩種來賓和外部使用者對團隊的比較](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)。
+
+請參閱 [保護小組聊天、群組和檔案的原則建議](teams-access-policies.md) ，以取得安全身分識別與裝置存取的相關資訊。
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>需要對來賓和外部使用者永遠進行 MFA
 此原則會提示客人在您的租使用者中註冊 MFA，不論他們是否已在其主承租人中為 MFA 註冊。 當存取您租使用者中的資源時，來賓和外部使用者必須針對每個要求使用 MFA。 

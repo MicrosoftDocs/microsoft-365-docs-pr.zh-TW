@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 資料移動是指 Microsoft 將租使用者的服務和相關資料移至新的資料中心地理位置時，會發生後端作業。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9f87628d6bbc65fe4122999f6d0fde809fed51b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688463"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950269"
 ---
 # <a name="during-and-after-your-data-move"></a>資料移動期間和之後
 
@@ -45,8 +45,8 @@ ms.locfileid: "46688463"
 |阿拉伯聯合大公國  <br/> |2022年7月1日  <br/> |
 |南非  <br/> |2022年7月1日  <br/> |
 |瑞士，列支敦斯登  <br/> |2022年7月1日  <br/> |
-|德國  <br/> |計畫  <br/> |
 |挪威  <br/> |2022年11月1日  <br/> |
+|德國  <br/> |計畫  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -67,7 +67,7 @@ ms.locfileid: "46688463"
   
 - 商務用 OneDrive
     
-- Microsoft Project Online
+- Project Online
     
 - Microsoft 365 的專案
     
@@ -89,7 +89,7 @@ ms.locfileid: "46688463"
     
 - 我們正在從舊版資料中心移除交易編碼複本，並在新的資料中心內再將其轉換。
     
-### <a name="search"></a>Search
+### <a name="search"></a>搜尋
 
 在移動 SharePoint 線上資料的過程中，我們會將您的搜尋索引和搜尋設定遷移至新的位置。 在 **完成** SharePoint 線上資料的移動之前，我們會繼續為您的使用者提供原始位置的索引。 在新位置時，搜尋會在完成移動 SharePoint 線上資料之後，自動開始編目您的內容。 從這個點開始，我們會從已遷移的索引為您的使用者提供服務。 在進行編目挑選之前，遷移之後所發生的內容變更將不會包含在遷移後的索引中。 大部分的客戶不會注意到，當我們已完成移動 SharePoint 線上資料後，結果會變得不夠全新，但是某些客戶可能會在前24-48 小時內經歷低的新鮮度。 
   

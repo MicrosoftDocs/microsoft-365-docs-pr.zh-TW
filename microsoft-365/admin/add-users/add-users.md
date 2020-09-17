@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 瞭解如何同時新增使用者並指派授權給 Microsoft 365。
 ms.date: 07/01/2020
-ms.openlocfilehash: 6745285600b6c5a62b4327d7174b2c249ff5276c
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 95f84ead009b7510699e467bf5f12bf32d8097d8
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307370"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948793"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同時新增使用者並指派授權
 
@@ -37,9 +37,9 @@ ms.locfileid: "47307370"
 
 ::: moniker-end
 
-在您的小組中，每個人都需要一個使用者帳戶，才能登入並存取 [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395)。 新增使用者帳戶的最簡單方法是在 Microsoft 365 系統管理中心一次加入一個使用者帳戶。 完成此步驟後，您的使用者就會有 Microsoft 365 授權、登入認證，以及 Microsoft 365 信箱。
+在您的小組中，每個人都需要一個使用者帳戶，才能登入並存取 [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business)。 新增使用者帳戶的最簡單方法是在 Microsoft 365 系統管理中心一次加入一個使用者帳戶。 完成此步驟後，您的使用者就會有 Microsoft 365 授權、登入認證，以及 Microsoft 365 信箱。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 您必須是全域、授權或使用者系統管理員，才能新增使用者並指派授權。 如需詳細資訊，請參閱[關於系統管理員角色](../../admin/add-users/about-admin-roles.md)。
 
@@ -54,7 +54,7 @@ ms.locfileid: "47307370"
 
 ::: moniker range="o365-worldwide"
 
-1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
+1. 移至位於 <https://admin.microsoft.com> 的系統管理中心。
 2. 移至 [ **使用者**] [作用 > 中 **使用者**]，然後選取 [ **新增使用者**]。
 3. 在 [ **設定基礎** ] 窗格中，填入基本的使用者資訊，然後選取 **[下一步]**。
     - **名稱** 填入名字和姓氏、顯示名稱和使用者名稱。
@@ -62,7 +62,7 @@ ms.locfileid: "47307370"
     - **密碼設定** 選擇使用自動產生的密碼或為使用者建立您自己的強式密碼。
     - 使用者必須在90天后變更其密碼。 或者，您可以選擇 **要求此使用者在第一次登入時變更其密碼**。
     - 選擇是否要在使用者新增時以電子郵件傳送密碼。
-4. 在 [ **指派產品授權** ] 窗格中，選取該使用者的位置和適當授權。 如果您沒有可用的授權，您仍然可以新增使用者，並購買額外的授權。 展開 [ **應用** 程式]，選取或取消選取 [應用程式]，以限制使用者擁有授權的應用程式。 選取** **[下一步]。
+4. 在 [ **指派產品授權** ] 窗格中，選取該使用者的位置和適當授權。 如果您沒有可用的授權，您仍然可以新增使用者，並購買額外的授權。 展開 [ **應用** 程式]，選取或取消選取 [應用程式]，以限制使用者擁有授權的應用程式。 選取 **[下一步]**。
 5. 在 [ **選用設定** ] 窗格中，展開 [ **角色** ]，讓此使用者成為系統管理員。展開 [ **設定檔資訊** ]，以新增其他有關使用者的資訊。
 6. 選取 **[下一步]**，查看新使用者的設定，進行任何您想要的變更，然後選取 **[完成新增]**，然後按一下 [ **關閉**]。
 
@@ -70,7 +70,7 @@ ms.locfileid: "47307370"
 
 ::: moniker range="o365-germany"
 
-1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a> 的系統管理中心。
+1. 移至位於 <https://portal.office.de/adminportal> 的系統管理中心。
 2. 移至 [ **使用者**] [作用 > 中 **使用者**]，然後選取 [ **新增使用者**]。
 3. 在 [ **新增使用者** ] 窗格中填入下列資訊。 當您完成時，請選取 [ **新增**]。
     - **名稱**：請填入名字、姓氏、顯示名稱和使用者名稱。
@@ -84,7 +84,7 @@ ms.locfileid: "47307370"
 
 ::: moniker range="o365-21vianet"
 
-1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a> 的系統管理中心。
+1. 移至位於 <https://portal.partner.microsoftonline.cn> 的系統管理中心。
 2. 移至 [ **使用者**] [作用 > 中 **使用者**]，然後選取 [ **新增使用者**]。
 3. 在 [ **新增使用者** ] 窗格中填入下列資訊。 當您完成時，請選取 [ **新增**]。
     - **名稱**：請填入名字、姓氏、顯示名稱和使用者名稱。
@@ -99,7 +99,7 @@ ms.locfileid: "47307370"
 ## <a name="add-multiple-users-at-the-same-time"></a>同時新增多個使用者
 
 您可以使用下列任何一種方法，同時新增多個使用者：
-  
+
 - **使用試算表大量新增人員。** 請參閱 [同時新增多個使用者](https://docs.microsoft.com/microsoft-365/enterprise/add-several-users-at-the-same-time)。
 - **自動新增帳戶並指派授權** 。 請參閱 [使用 Microsoft 365 PowerShell 建立使用者帳戶](https://docs.microsoft.com/microsoft-365/enterprise/create-user-accounts-with-microsoft-365-powershell)。 如果您已熟悉 Windows PowerShell Cmdlet 的用法，請選擇這個方法。
 - **使用 ActiveDirectory？** [設定 Microsoft 365 的目錄同步](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization)處理。 使用 Azure AD Connect 工具複寫 Active Directory 使用者帳戶， (及其他 Active Directory 物件) 在 Microsoft 365 中。 [同步處理] 只會新增使用者帳戶。 您必須先將授權指派給同步處理的使用者，才能使用電子郵件和其他 Office 應用程式。

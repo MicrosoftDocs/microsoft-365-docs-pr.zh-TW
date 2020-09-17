@@ -16,16 +16,16 @@ ms.collection:
 - m365solution-infoprotection
 ms.custom: ''
 description: 使用 Microsoft 365 保留標籤和原則來管理您的 Microsoft 365 環境中的個人資料。
-ms.openlocfilehash: a7a0d6e00d29d80dfd0cb72ba217177aa6029a2c
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 766995b9c758d4ae8cbf7140fb259d208cfb7771
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522298"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949249"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>管理資料隱私權法規的使用資訊
 
-您可以在您的環境中使用資訊控管控制，以協助滿足資料隱私權合規性需求，包括一般資料保護規定（GDPR）、HIPAA （美國衛生保健隱私權法案）的特定數位、加州消費者防護法案（CCPA）和巴西資料保護法案（LGPD）。 
+您可以在您的環境中使用資訊控管控制，以協助滿足資料隱私權符合性需求，包括一般資料保護法規的特定數位 (GDPR) 、HIPAA-高科技 (美國衛生保健隱私權法案) 、加州消費者 Protection 法案 (CCPA) ，以及巴西資料保護法案 (LGPD) 。 
 
 這些控制項主要分為下列解決方案區域：
 
@@ -37,14 +37,14 @@ ms.locfileid: "46522298"
 
 以下是可能與資訊管理控制相關之資料隱私權法規的範例清單：
 
-- GDPR 文章（13）（2）（a）
-- GDPR 文章（5）（1）（f）
-- HIPAA-高科技（45 CFR 164.312 （c）（2））
-- HIPAA-高科技（45 CFR 164.316 （b）（1）（i））
-- HIPAA-高科技（45 CFR 164.316 （b）（1）（ii））
+- GDPR 文章 (13) # B2 2) # B4 a) 
+- GDPR 文章 (5) # B2 1) # B4 f) 
+- HIPAA-高科技 (45 CFR 164.312 (c) # B3 2) # A5
+- HIPAA-高科技 (45 CFR 164.316 (b) # B3 1) # B5 i) # A7
+- HIPAA-高科技 (45 CFR 164.316 (b) # B3 1) # B5 ii) # A7
 - LGPD 文章46
 
-如需這些法規的詳細資訊，請參閱[評估資料隱私權風險及識別敏感資訊文章](information-protection-deploy-assess.md)。
+如需這些法規的詳細資訊，請參閱 [評估資料隱私權風險及識別敏感資訊文章](information-protection-deploy-assess.md)。
 
 針對資訊管理，資料隱私權規定一般會呼叫下列各項：
 
@@ -67,7 +67,7 @@ ms.locfileid: "46522298"
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>管理 Microsoft 365 中的資訊管理
 
-若要開始，請參閱管理 Microsoft 365 中的[資訊](../compliance/manage-information-governance.md)管理和[資料保留、刪除和銷毀](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)。
+若要開始，請參閱管理 Microsoft 365 中的 [資訊](../compliance/manage-information-governance.md) 管理和 [資料保留、刪除和銷毀](https://docs.microsoft.com/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)。
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>開發容器、電子郵件和內容的資料保留時間表
 
@@ -81,27 +81,13 @@ ms.locfileid: "46522298"
 
 - 一旦環境中的個人資訊類型更知名，請建立這種內容類型的保留和刪除排程，並調整您的資訊架構，以簡化這類資訊的管理。 例如，以可控存取方式隔離個別網站、文件庫或資料夾中的個人資訊。
 
-### <a name="retention-policies"></a>保留原則
+### <a name="retention-policies-and-retention-labels"></a>保留原則和保留標籤
 
-針對自動套用的網站中的內容建立及部署[保留原則](../compliance/retention-policies.md)。
-
-針對包含或預計包含個人資料之網站的資料隱私權，請指定保留或刪除規則，以解決組織標準。
-
-### <a name="retention-labels"></a>保留標籤
-
-建立及部署內容和電子郵件的[保留標籤](../compliance/labels.md)。
-
-針對包含或預計包含個人資料之網站、文件庫、資料夾及電子郵件的資料隱私權，請指定自動保留或刪除規則，以解決組織標準。
+使用 [保留原則和保留標籤](../compliance/retention.md) ，保留或刪除包含或預計包含個人資料之 Microsoft 365 中的內容。
 
 ### <a name="records-management"></a>記錄管理
 
-根據記錄保留排程和檔計畫，建立及部署記錄管理的保留標籤。
+使用可宣告內容 a 記錄的保留標籤，以對 Microsoft 365 中的資料執行 [記錄管理解決方案](../compliance/records-management.md) 。
 
-針對資料隱私權，合法系所收到的資料主體要求（Dsr）宣告了一筆記錄，並無限期儲存，以遵守法規活動保留規格。
+針對資料隱私權，合法系所收到的資料主體要求 (Dsr) 會宣告一筆記錄，而且可以使用大量儲存或處置憑證，以遵守法規活動的保留規格。
 
-如需詳細資訊，請參閱下列資源： 
-
-- [記錄管理](../compliance/records-management.md)
-- [檔案計劃管理員](../compliance/file-plan-manager.md)
-- [以事件為基礎的記錄管理保留](../compliance/automate-event-driven-retention.md)
-- [內容處置](../compliance/disposition-reviews.md)

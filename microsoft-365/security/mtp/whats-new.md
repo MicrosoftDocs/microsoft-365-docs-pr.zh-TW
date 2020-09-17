@@ -15,25 +15,28 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 1a2a8cd91d0cc32dc5a10b1eb1dd28714cd4f6c4
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: da3fd8b97899e302c9b7b24a5c0677534b579981
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45429963"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47947981"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft 威脅防護的新增功能
 
-在最新版本的 Microsoft 威脅防護中，通常會提供下列功能（GA）。
+在最新版本的 Microsoft 威脅防護中， (GA) 一般都有下列功能可供使用。
 
 RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此頁面的通知：
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## <a name="september-2020"></a>2020 年 9 月
+- [AssignedIPAddresses ( # A1 函數](advanced-hunting-assignedipaddresses-function.md) <br> 在您的 [高級搜尋](advanced-hunting-overview.md) 查詢中使用此功能，可快速取得從指定時間點指派給裝置或最近的 ip 位址的最新 ip 位址。
+
 ## <a name="july-2020"></a>2020 年 7 月
-- [FileProfile （）函數](advanced-hunting-fileprofile-function.md) <br> 在您的[高級搜尋](advanced-hunting-overview.md)查詢中使用此功能，以豐富包含完整檔案資訊的結果。
-- [身分識別和應用程式表格](advanced-hunting-schema-tables.md)<br> 使用高級搜尋架構中的[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)及[AppFileEvents](advanced-hunting-appfileevents-table.md)表格，可以深入瞭解驗證事件、Active Directory 查詢及應用程式相關的活動。
-- [去搜尋](advanced-hunting-go-hunt.md)<br> 使用查詢式的[高級搜尋](advanced-hunting-overview.md)功能，快速從調查事件，以檢查特定事件、使用者、裝置或其他實體類型。
+- [FileProfile ( # A1 函數](advanced-hunting-fileprofile-function.md) <br> 在您的高級搜尋查詢中使用此功能，以豐富包含完整檔案資訊的結果。
+- [身分識別和應用程式表格](advanced-hunting-schema-tables.md)<br> 使用高級搜尋架構中的 [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)及 [AppFileEvents](advanced-hunting-appfileevents-table.md) 表格，可以深入瞭解驗證事件、Active Directory 查詢及應用程式相關的活動。
+- [去搜尋](advanced-hunting-go-hunt.md)<br> 使用查詢式的高級搜尋功能，快速從調查事件，以檢查特定事件、使用者、裝置或其他實體類型。
 
 ## <a name="june-2020"></a>2020 年 6 月
 - Twitter 摘要 <br> 深入瞭解儀表板內的最新安全性調查、威脅情報、產品新聞及其他。

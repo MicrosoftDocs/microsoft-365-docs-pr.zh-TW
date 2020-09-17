@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 12ac7d0a3d07749e16443e645f50de8fda185658
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: b9e900baf02e9fc866fe6fe520ad1e40ccd565de
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866776"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950697"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>將 ServiceNow 票證整合至 Microsoft 365 的安全性中心和合規性中心
 
@@ -32,7 +32,7 @@ ms.locfileid: "46866776"
 
 ServiceNow 是一個流行的雲端計算平臺，可協助公司管理企業作業的數位工作流程。 其 Now 平臺具有 IT 工作流程、員工工作流程和客戶工作流程。 [深入瞭解 ServiceNow](https://www.servicenow.com/)
 
-Microsoft 已與 ServiceNow 合作，讓 IT 系統管理員可輕鬆管理這兩個平臺的票證和工作。 [Microsoft 365 的安全性中心](overview-security-center.md) 和 [microsoft 365 規範中心](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center) 已增強，可在 ServiceNow 中以本機方式建立及追蹤票證。
+Microsoft 已與 ServiceNow 合作，讓 IT 系統管理員可輕鬆管理這兩個平臺的票證和工作。 [Microsoft 365 的安全性中心](overview-security-center.md) 和 [microsoft 365 規範中心](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) 已增強，可在 ServiceNow 中以本機方式建立及追蹤票證。
 
 - [**管理安全性中心的 ServiceNow 票證**](tickets-security-center.md)
 - **在規範中心管理 ServiceNow 入場券** (即將推出) 

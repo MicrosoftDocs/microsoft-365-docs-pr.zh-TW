@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: 尋找當您變更計畫或公司名稱時，如何在兩部 Microsoft 365 帳戶之間手動傳輸資料，或將多個訂閱組合為一個。
-ms.openlocfilehash: 91ea4140f0460e1f8cc1243f1b5f203738dcc9ee
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1297e2d55692262be55b166dacc56cb89cc6c8a0
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685507"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948721"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>在兩個帳戶間手動傳輸資料
 
@@ -106,3 +106,7 @@ Microsoft 365 企業版和 Microsoft 365 中型企業版：
 ### <a name="onedrive-for-business-data"></a>商務資料的 OneDrive：
 
 要求使用者將 [商務內容的 OneDrive](https://support.microsoft.com/office/59b1de2b-519e-4d3a-8f45-51647cf291cd)複製/同步處理至其電腦，然後將其新增回其新訂閱。
+
+### <a name="onenote"></a>OneNote 
+
+要求使用者 [備份 OneNote](https://support.microsoft.com/office/back-up-notes-f58b34b0-611d-435e-87fa-7942a1767af4?ui=en-us&rs=en-us&ad=us) ，並將 [Notes 從備份還原](https://support.microsoft.com/en-us/office/restore-notes-from-a-backup-5daf9cb0-6769-4998-a5de-f044fdd0d831?ui=en-us&rs=en-us&ad=us) 至新的訂閱。

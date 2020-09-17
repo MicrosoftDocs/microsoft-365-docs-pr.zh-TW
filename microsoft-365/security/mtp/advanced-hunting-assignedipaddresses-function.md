@@ -17,30 +17,29 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 72d02bafa168e48c2d588771f5289da09e6d6000
-ms.sourcegitcommit: 234726a1795d984c4659da68f852d30a4dda5711
+ms.openlocfilehash: 4ee07abe7ce1432921a843d713d0f9b914631174
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46794228"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949309"
 ---
-# <a name="assignedipaddresses"></a>AssignedIPAddresses ( # A1
+# <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 適用於：****
 - Microsoft 威脅防護
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+使用此 `AssignedIPAddresses()` 功能可快速取得指派給裝置的最新 IP 位址。 如果您指定的是 timestamp 引數，此函數會在指定的時間取得最近的 IP 位址。 
 
-使用此 `AssignedIPAddresses()` 功能可快速取得從指定時間點指派給裝置或最近的 ip 位址的最新 ip 位址。 此函數會傳回含下列各欄的資料表：
+此函數會傳回含下列各欄的資料表：
 
 | 欄 | 資料類型 | 描述 |
 |------------|-------------|-------------|
-| 時間 戳 | datetime | 使用 IP 位址觀測裝置的最晚時間 |
-| IPAddress | string | 裝置使用的 IP 位址 |
-| IPType | string | 指出 IP 位址是否為公用或私人位址 |
-| NetworkAdapterType | int | 已獲指派 IP 位址之裝置使用的網路介面卡類型。 如需可能的值，請參閱 [this 列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2)  |
-| ConnectedNetworks | int | 與指派之 IP 位址的介面卡相連的網路。 每個 JSON 陣列都包含網路名稱、類別 (public、private 或 domain) 、描述及表明其是否已公開連接到網際網路的標誌。 |
-
+| `Timestamp` | datetime | 使用 IP 位址觀測裝置的最晚時間 |
+| `IPAddress` | string | 裝置使用的 IP 位址 |
+| `IPType` | string | 指出 IP 位址是否為公用或私人位址 |
+| `NetworkAdapterType` | int | 已獲指派 IP 位址之裝置使用的網路介面卡類型。 如需可能的值，請參閱 [this 列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype) |
+| `ConnectedNetworks` | int | 與指派之 IP 位址的介面卡相連的網路。 每個 JSON 陣列都包含網路名稱、類別 (public、private 或 domain) 、描述，以及表明其是否已公開連接到網際網路的旗標。 |
 
 ## <a name="syntax"></a>語法
 
@@ -51,11 +50,11 @@ AssignedIPAddresses(x, y)
 ## <a name="arguments"></a>引數
 
 - **x** `DeviceId` 或 `DeviceName` 值，用以識別裝置
-- **y** - `Timestamp` (datetime) 值，表示取得最近的 IP 位址的特定時間點。 若未指定，該函數會傳回最新的 IP 位址。
+- **y**- `Timestamp` (datetime) 值指示函數從特定時間取得最近指派的 IP 位址。 若未指定，該函數會傳回最新的 IP 位址。
 
 ## <a name="examples"></a>範例
 
-### <a name="get-the-list-of-ip-addresses-used-by-a-device-as-of-24-hours-ago"></a>取得裝置在24小時前所使用的 IP 位址清單
+### <a name="get-the-list-of-ip-addresses-used-by-a-device-24-hours-ago"></a>取得裝置24小時前使用的 IP 位址清單
 
 ```kusto
 AssignedIPAddresses('example-device-name', ago(1d))

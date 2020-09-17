@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae0105fd5eba134c7896daef34136748802e9010
-ms.sourcegitcommit: 916fa2dacbc13287b49823176375259d7af03f86
+ms.openlocfilehash: 47035b5c988dba551948334c0c93d08b779c0d38
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47394678"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950733"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-threat-protection"></a>使用 Microsoft 威脅防護中的進階搜捕功能主動尋找威脅
 
@@ -32,14 +32,14 @@ ms.locfileid: "47394678"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-進階搜捕是一種查詢式威脅搜捕工具，可讓您探索最多 30 天的原始資料。 您可以主動檢查您網路中的事件，以找出相關的指標和實體。 可靈活存取資料有助於不受限制地同時搜捕已知和潛在的威脅。
+進階搜捕是一種查詢式威脅搜捕工具，可讓您探索最多 30 天的原始資料。 您可以主動檢查您網路中的事件，以找出威脅指示器和實體。 對資料的靈活存取可對已知和潛在的威脅進行無限制的搜尋。
 <p></p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
-您可以使用相同的威脅搜尋查詢來建立自訂的偵測規則。 自動執行這些規則，以檢查各種活動和系統狀態，包括可疑的破壞活動和錯誤配置的電腦。
+您可以使用相同的威脅搜尋查詢來建立自訂的偵測規則。 這些規則會自動執行，以檢查是否有可疑的破壞活動、錯誤設定的機器及其他發現的回應。
 
-這項功能與 [Microsoft DEFENDER atp 中的高級搜尋](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)類似，不同之處在于 microsoft 365 security center 中所提供的 Microsoft 威脅防護中的「高級搜尋」支援查詢，以查看各種工作區中的資料，包括來自 MICROSOFT Defender ATP、OFFICE 365 ATP、Microsoft Cloud App Security 和 Azure atp 的資料。 若要使用進階搜捕，請[開啟 Microsoft 威脅防護](mtp-enable.md)。
+這項功能類似于 [Microsoft DEFENDER ATP 中的高級搜尋](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。 可在 Microsoft 365 的 [安全性中心] 中取得。此功能支援查詢，可從 Microsoft Defender ATP、Office 365 ATP、Microsoft Cloud App Security 和 Azure ATP 檢查更廣泛的資料集。 若要使用進階搜捕，請[開啟 Microsoft 威脅防護](mtp-enable.md)。
 
 ## <a name="get-started-with-advanced-hunting"></a>開始使用進階搜捕
 
@@ -47,31 +47,30 @@ ms.locfileid: "47394678"
 
 | 學習目標 | 描述 | 資源 |
 |--|--|--|
-| **了解語言** | 「高級搜尋」是以 [Kusto 查詢語言](https://docs.microsoft.com/azure/kusto/query/)為基礎，支援相同的語法及運算子。 執行您的第一個查詢來開始學習查詢語言。 | [查詢語言概觀](advanced-hunting-query-language.md) |
+| **瞭解語言** | 「高級搜尋」是以 [Kusto 查詢語言](https://docs.microsoft.com/azure/kusto/query/)為基礎，支援相同的語法及運算子。 執行您的第一個查詢來開始學習查詢語言。 | [查詢語言概觀](advanced-hunting-query-language.md) |
 | **瞭解如何使用查詢結果** | 深入瞭解圖表和您可以查看或匯出結果的各種方式。 探索您如何快速調整查詢、深入查看以取得更豐富的資訊，以及採取回應動作。 | - [使用查詢結果](advanced-hunting-query-results.md)<br>- [對查詢結果採取動作](advanced-hunting-take-action.md) |
-| **了解結構描述** | 深入了解結構描述中的資料表和資料行。 這可協助您決定要在何處尋找資料，以及如何建構查詢。 | [結構描述參考](advanced-hunting-schema-tables.md) |
-| **運用預先定義的查詢** | 探索涵蓋不同威脅搜捕案例的預先定義查詢集合。 | - [使用共用查詢](advanced-hunting-shared-queries.md)<br>- [開始搜尋](advanced-hunting-go-hunt.md) |
-| **最佳化查詢** | 了解如何建立可結合來自電子郵件和裝置資料的高效查詢。 | - [查詢最佳作法](advanced-hunting-best-practices.md) <br>- [跨裝置和電子郵件進行搜尋](advanced-hunting-query-emails-devices.md) |
-| **建立自訂偵測規則** | 瞭解您可以如何使用高級搜尋查詢來觸發提醒並自動套用回應動作。 | - [自訂偵測簡介](custom-detections-overview.md)<br>- [自訂偵測規則](custom-detection-rules.md) |
+| **了解結構描述** | 深入了解結構描述中的資料表和資料行。 瞭解在建立查詢時要尋找資料的位置。 | [結構描述參考](advanced-hunting-schema-tables.md) |
+| **取得專家秘訣和範例** | 透過 Microsoft 專家的指南訓練。 探索涵蓋不同威脅搜捕案例的預先定義查詢集合。 | - [取得專家訓練](advanced-hunting-expert-training.md)<br>- [使用共用查詢](advanced-hunting-shared-queries.md)<br>- [開始搜尋](advanced-hunting-go-hunt.md)<br>- [尋找跨裝置、電子郵件、應用程式和身分識別的威脅](advanced-hunting-query-emails-devices.md) |
+| **優化查詢並處理錯誤** | 瞭解如何建立高效且無錯誤的查詢。 | - [查詢最佳作法](advanced-hunting-best-practices.md)<br>- [處理錯誤](advanced-hunting-errors.md) |
+| **建立自訂偵測規則** | 瞭解您可以如何使用高級搜尋查詢來觸發提醒並自動採取回應動作。 | - [自訂偵測簡介](custom-detections-overview.md)<br>- [自訂偵測規則](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>取得存取權
-若要使用高級搜尋或其他 [Microsoft 威脅防護](microsoft-threat-protection.md) 功能，您必須在 Azure AD 中獲指派適當的角色。 請注意，在 Microsoft Defender ATP 中，以角色為基礎的存取控制設定會影響對端點資料的存取。 [閱讀管理 Microsoft 威脅防護存取的相關資訊](mtp-permissions.md)
+若要使用高級搜尋或其他 [Microsoft 威脅防護](microsoft-threat-protection.md) 功能，您在 Azure Active Directory 中需要有適當的角色。 此外，您可以使用 Microsoft Defender ATP 中的角色型存取控制 (RBAC) 設定所決定的端點資料存取。 [閱讀管理 Microsoft 威脅防護存取的相關資訊](mtp-permissions.md)
 
 ## <a name="data-freshness-and-update-frequency"></a>資料新鮮度和更新頻率
 「高級搜尋」資料可以分類成兩種不同的類型，每個不同的合併。
 
-- **事件或活動資料** --填入有關警示、安全性事件、系統事件及例行評估的表格。 [！注意] 高級搜尋幾乎會在收集成功的感應器成功傳送至對應的雲端服務之後立即接收這類資料。 例如，您可以在工作站或網域控制站上的狀況良好感應器上開始查詢事件資料，使其能在 Microsoft Defender ATP 和 Azure ATP 上的使用中立即開始。
-- **實體資料** —使用使用者和裝置的整合式資訊來填入資料表。 此資料來自相對靜態資料來源（例如 Active Directory 專案）和動態來源，例如事件記錄。 若要提供新的資料，每15分鐘更新一次表格中的任何新資訊，新增可能不會填滿的資料列。 每24小時都會合並資料，以插入記錄，其中包含每個實體的最新、最全面的資料集。
+- **事件或活動資料**--填入有關警示、安全性事件、系統事件及例行評估的表格。 [！注意] 高級搜尋幾乎會在收集成功的感應器成功傳送至對應的雲端服務之後立即接收這類資料。 例如，您可以在工作站或網域控制站上的狀況良好感應器上查詢事件資料，使其在 Microsoft Defender ATP 和 Azure ATP 上可用之後幾乎可以立即查詢。
+- **實體資料**—使用使用者和裝置的整合式資訊來填入資料表。 此資料來自相對靜態資料來源和動態來源，例如 Active Directory 專案和事件記錄。 若要提供全新的資料，每隔15分鐘更新一次所有新資訊的資料表，新增可能不會填滿的資料列。 每24小時都會合並資料，以插入記錄，其中包含每個實體的最新、最全面的資料集。
 
 ## <a name="time-zone"></a>時區
-高級搜尋中的所有時間資訊都是在 UTC 時區內。
+「高級搜尋」中的時間資訊是在 UTC 時區。
 
 ## <a name="related-topics"></a>相關主題
 - [了解查詢語言](advanced-hunting-query-language.md)
-- [使用查詢結果工作](advanced-hunting-query-results.md)
-- [對查詢結果採取動作](advanced-hunting-take-action.md)
+- [取得專家訓練](advanced-hunting-expert-training.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)
 - [自訂偵測概觀](custom-detections-overview.md)
+

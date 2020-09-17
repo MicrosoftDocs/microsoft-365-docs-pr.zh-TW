@@ -6,17 +6,17 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 說明文件瞭解和表單處理模型之間的主要差異。
-ms.openlocfilehash: 972fa9e8446a44f6220baa7cde3f484172c50da6
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: ceea3a6e7898d8971ea458222d6164b496fcb8b7
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405614"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950057"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models-preview"></a>檔瞭解和表單處理模型之間的差異 (預覽) 
 

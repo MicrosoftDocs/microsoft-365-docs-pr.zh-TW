@@ -3,7 +3,7 @@ title: 'Microsoft 365 network connectivity test (預覽) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/14/2020
+ms.date: 09/15/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 network connectivity test (預覽) '
-ms.openlocfilehash: 92bd850c98261df1808219ee1f28c75da370d443
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47649984"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948539"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 network connectivity test (預覽) 
 
@@ -29,6 +29,8 @@ Microsoft 365 network connectivity test 工具位於 <https://connectivity.offic
 >Network connectivity test 工具支援位於 WW 和德國的承租人，但不支援 GCC 適中、GCC 高、DoD 或中國。
 
 Microsoft 365 系統管理中心的網路洞察力是以週期性產品測量值為基礎，針對每日進行匯總的 Microsoft 365 租使用者。 相比之下，來自 Microsoft 365 網路連線測試的網路洞察力會在本機執行，並在工具中執行一次。 您可以在產品中執行的測試是有限的，而且在使用者可以收集更多資料的地方執行測試時，可能會產生更深入的洞察力。 請考慮，Microsoft 365 系統管理中心的網路洞察力會顯示在特定辦公室位置使用 Microsoft 365 的網路問題。 Microsoft 365 連線測試可協助識別導致網路效能改進動作的問題根源。
+
+![Network connectivity test 工具](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 建議您將這些功能搭配使用，讓您可以在 Microsoft 365 系統管理中心中評估每個辦公室位置的網路品質狀態，並且在部署以 Microsoft 365 連線測試為基礎的測試之後找到更多細節。
 
@@ -205,6 +207,28 @@ Exchange Online 服務前端的使用者辦公室位置的網路 TCP 延遲會�
 
 本節顯示 ICMP traceroute 至 Exchange Online 服務前門、SharePoint Online 服務前門和 Microsoft 團隊服務前門的結果。 只提供此資訊，而且沒有相關聯的網路洞察力。 提供三種 traceroutes。 Traceroute 至 _outlook.office365.com_、traceroute 至客戶 SharePoint 前端或 _microsoft.sharepoint.com_ （如果未提供），以及 traceroute 到 _world.tr.teams.microsoft.com_。
 
+## <a name="what-happens-at-each-test-step"></a>每個測試步驟會發生什麼事
+
+### <a name="office-location-identification"></a>辦公室位置識別
+
+當您按一下 [執行測試] 按鈕時，會顯示 [正在執行的測試] 頁面，並識別辦公室位置。 您可以使用城市、州和國家輸入您的位置，也可以從網頁瀏覽器中偵測到該位置。 如果您偵測到這種情況，我們會從網頁瀏覽器要求緯度和經度，並在使用之前限制 300m 300m 的精確度。 之所以這麼做，是因為不需要更正確地識別位置，而不是網路效能的大樓。 
+
+### <a name="javascript-tests"></a>JavaScript 測試
+
+在 office 位置識別後，我們會在 JavaScript 中執行 TCP 延遲測試，我們會向服務要求有關使用中及建議的 Office 365 服務前端伺服器的資料。 完成這些工作之後，我們會在地圖和 [詳細資料] 索引標籤中顯示它們，以在下一個步驟之前查看。
+
+### <a name="download-the-advanced-tests-client-application"></a>下載高級測試用戶端應用程式
+
+接下來，我們將開始下載高級測試用戶端應用程式。 我們依靠使用者來啟動用戶端應用程式，而且也必須已安裝 .NET Core。
+
+### <a name="start-the-advanced-tests-client-application"></a>啟動 [高級測試] 用戶端應用程式
+
+一旦用戶端應用程式啟動網頁，便會更新以顯示這種情況，而且測試資料將會開始接收到網頁。 它會在每次接收新資料時更新，您可以在資料到達時查看資料。
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>已完成的高級測試及測試報表上載
+
+測試完成後，網頁和高級測試用戶端會同時指出這一點，而且如果使用者已登入測試報告，就會將其上傳至客戶租使用者。
+
 ## <a name="connectivity-reports"></a>連線性報告
 
 登入後，您可以查看先前所執行的報告。 您也可以將其共用或從清單中刪除。
@@ -224,6 +248,10 @@ Exchange Online 服務前端的使用者辦公室位置的網路 TCP 延遲會�
 ### <a name="is-this-tool-released-and-supported-by-microsoft"></a>Microsoft 是否已發行及支援此工具？
 
 這是一種預覽方式，我們計畫定期提供更新，直到我們達到一般可用性發行狀態時，才會從 Microsoft 取得支援。 請提供意見反應以協助我們改進。 我們打算將更詳細的 Office 365 網路上架指南發佈為此工具的一部分，此工具是由其測試結果自訂為組織的一部分。
+
+### <a name="what-is-required-to-run-the-advanced-test-client"></a>執行高級測試用戶端的必要條件為何？
+
+高級測試用戶端需要 .NET Core 3.1 Desktop Runtime。 如果您執行的是未安裝的高級測試用戶端，將會定向至 [.Net Core 3.1 installer 頁面](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 請務必安裝桌面執行時間，而不是 SDK，或頁面上較高的 ASP.NET 核心執行時間。 電腦上的系統管理員許可權是 reuqired，以安裝 .NET Core。 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>何謂 Microsoft 365 服務的前門？
 

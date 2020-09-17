@@ -21,18 +21,18 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 深入瞭解 Microsoft 365 中的多重要素驗證。
-ms.openlocfilehash: 71a61c51d2813880cad782d132679fa413ada987
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: bca84e949e696b483b567bf5f72233840023abca
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083583"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948709"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Microsoft 365 的多重要素驗證
 
 密碼是對電腦或線上服務驗證登入的最常見方法，但也是最容易受到攻擊的方法。 人員可以選擇輕鬆密碼，並對不同的電腦和服務使用多個登入的相同密碼。
 
-若要為登入提供額外的安全性層級，您必須使用多重要素驗證（MFA），它會同時使用密碼（該密碼應該強），並以其他驗證方法為基礎：
+若要為登入提供額外的安全性層級，您必須使用多重要素驗證 (MFA) ，這兩種驗證都使用密碼，也就是強的，另一種驗證方法是以下列方式進行：
 
 - 您所擁有的專案不會輕易重複，例如智慧型電話。
 - 您獨特且 biologically 的功能，例如您的指紋、字型或其他生物統計學屬性。
@@ -51,15 +51,15 @@ ms.locfileid: "45083583"
 
 - 使用安全性預設值
 - 使用條件式存取原則
-- 每個個別使用者帳戶（不建議）
+- 針對每個個別使用者帳戶 (不建議使用) 
 
 這些方式是以您的 Microsoft 365 方案為基礎。
     
 |方案  |建議  | 客戶類型 |
 |---------|---------|----------|
 | 所有 Microsoft 365 方案 | 使用安全性預設值，這需要對所有使用者帳戶執行 MFA。 <br> 您也可以針對個別使用者帳戶要求 MFA，但不建議這麼做。 | 小型企業 |
-| Microsoft 365 商務進階版 <br><br> Microsoft 365 E3 <br><br> Azure Active Directory （Azure AD）高級 P1 授權 | 使用條件式存取原則，根據群組成員資格、應用程式或其他準則，針對使用者帳戶要求 MFA。 | 小型企業對企業 |
-| Microsoft 365 E5 <br><br> Azure AD 高級 P2 授權 | 使用 Azure AD 身分識別保護，根據登入風險準則要求 MFA。 |  企業 |
+| Microsoft 365 商務進階版 <br><br> Microsoft 365 E3 <br><br> Azure Active Directory (Azure AD) 高級 P1 授權 | 使用條件式存取原則，根據群組成員資格、應用程式或其他準則，針對使用者帳戶要求 MFA。 | 小型企業對企業 |
+| Microsoft 365 E5 <br><br> Azure AD 高級 P2 授權 | 使用 Azure AD 身分識別保護，根據登入風險準則要求 MFA。 |  Enterprise |
 ||||
 
 ### <a name="security-defaults"></a>安全性預設
@@ -73,7 +73,7 @@ ms.locfileid: "45083583"
 
 安全性預設可確保所有組織都具備預設啟用的使用者登入基本層級安全性。 您可以使用條件式存取原則來停用安全性預設值，以取代 MFA。
 
-您可以在 Azure 入口網站中，啟用或停用 Azure AD 的**屬性**窗格中的安全性預設值。
+您可以在 Azure 入口網站中，啟用或停用 Azure AD 的 **屬性** 窗格中的安全性預設值。
 
 ![[目錄屬性] 頁面的圖片。](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
@@ -91,7 +91,7 @@ ms.locfileid: "45083583"
 
 您也可以使用條件式存取原則進行更高級的功能，例如，針對特定的應用程式要求 MFA，或登入是從相容的裝置（例如，您的可擕式電腦執行 Windows 10）進行。
 
-您可以在 Azure 入口網站中，從 Azure AD 的**安全性**窗格中設定條件式存取原則。
+您可以在 Azure 入口網站中，從 Azure AD 的 **安全性** 窗格中設定條件式存取原則。
 
 ![條件式存取的功能表選項 Picure](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
@@ -104,7 +104,7 @@ ms.locfileid: "45083583"
 針對具有 Microsoft 365 商務版 Premium 的小型企業，您可以使用下列步驟輕鬆使用條件式存取原則：
 
 1. 建立群組，以包含需要 MFA 的使用者帳戶。
-2. 啟用 [**需要對全域管理員的 MFA** ] 原則。
+2. 啟用 [ **需要對全域管理員的 MFA** ] 原則。
 3. 使用下列設定來建立以群組為基礎的條件式存取原則：
     - > 使用者和群組的工作分派：上述步驟1的群組名稱。
     - 工作分派 > Cloud app or 動作：所有雲端應用程式。
@@ -115,7 +115,7 @@ ms.locfileid: "45083583"
 
 此條件式存取原則可讓您以您自己的節奏向您的使用者推廣 MFA 需求。
 
-企業應該使用[通用的條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則：
+企業應該使用 [通用的條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) 來設定下列原則：
 
 - [要求系統管理員使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
 - [要求所有使用者使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
@@ -125,7 +125,7 @@ ms.locfileid: "45083583"
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-使用 Azure AD Identity Protection，您可以建立額外的條件式存取原則，以在登[入風險為中低或高時，要求進行 MFA](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies#require-mfa-based-on-sign-in-risk)。
+使用 Azure AD Identity Protection，您可以建立額外的條件式存取原則，以在登 [入風險為中低或高時，要求進行 MFA](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-policies#require-mfa-based-on-sign-in-risk)。
 
 您可以使用 Azure AD 身分識別保護和以風險為基礎的條件式存取原則：
 
@@ -134,11 +134,11 @@ ms.locfileid: "45083583"
 
 如需詳細資訊，請參閱這個 [Azure AD Identity Protection 概觀](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
 
-### <a name="mfa-for-an-individual-user-account-not-recommended"></a>個別使用者帳戶的 MFA （不建議使用）
+### <a name="legacy-per-person-mfa-not-recommended"></a>舊版每個人 MFA (不建議使用) 
 
 您應該使用安全性預設值或條件式存取原則，針對您的使用者帳戶登入要求 MFA。不過，如果上述任一項無法使用，Microsoft 強烈建議對具有系統管理員角色的使用者帳戶（特別是全域系統管理員角色）進行 MFA，以進行任何大小訂閱。 
 
-您可以從 Microsoft 365 系統管理中心的 [作用中**使用者**] 窗格中，為個別使用者帳戶啟用 MFA。
+您可以從 Microsoft 365 系統管理中心的 [作用中 **使用者** ] 窗格中，為個別使用者帳戶啟用 MFA。
 
 ![[作用中使用者] 頁面上多重要素驗證選項的圖片](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
@@ -152,7 +152,7 @@ ms.locfileid: "45083583"
 |:-------|:-----|:-------|:-------|
 | **安全性預設** | 無法使用條件式存取原則 |   可以使用條件式存取原則 | Microsoft Authenticator 應用程式 |
 | **條件式存取原則** |如果已啟用任何原則，則無法啟用安全性預設 | 如果已停用所有原則，則可啟用安全性預設 | 在註冊 MFA 期間由使用者指定 |
-| **每個使用者帳戶設定（不建議使用）** | 覆寫安全性預設值，以及在每次登入時要求 MFA 的條件式存取原則 | 由安全性預設值和條件式存取原則所取代 | 在註冊 MFA 期間由使用者指定|
+| **舊版每個人 MFA (不建議使用) ** | 覆寫安全性預設值，以及在每次登入時要求 MFA 的條件式存取原則 | 由安全性預設值和條件式存取原則所取代 | 在註冊 MFA 期間由使用者指定|
 ||||
 
 如果啟用安全性預設值，系統會提示所有新的使用者進行 MFA 註冊，並在下一個登入時使用 Microsoft 驗證應用程式。
@@ -171,4 +171,3 @@ ms.locfileid: "45083583"
 ## <a name="your-next-step"></a>下一個步驟
 
 [設定 Microsoft 365 的 MFA](set-up-multi-factor-authentication.md)
-

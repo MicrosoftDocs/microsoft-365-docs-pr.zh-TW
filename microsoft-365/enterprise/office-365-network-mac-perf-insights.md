@@ -14,26 +14,32 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 網路洞察力 (預覽) '
-ms.openlocfilehash: b30af89d480383fdc9011d24409e3b418339c70b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a9d4dbde112c9b6c74e340824c63ce2b9749e80e
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688539"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948513"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 網路洞察力 (預覽) 
 
-**網路洞察力** 是從您的 Microsoft 365 租使用者收集到的即時效能計量，而且只能在您的租使用者中查看其管理使用者。 Insights 會顯示在 Microsoft 365 系統管理中心中 <https://portal.microsoft.com/adminportal/home#/networkperformance> 。
+**網路洞察力** 是從您的 Microsoft 365 租使用者收集到的效能度量，而且只能在您的租使用者中查看其管理使用者。 Insights 會顯示在 Microsoft 365 系統管理中心中 <https://portal.microsoft.com/adminportal/home#/networkperformance> 。
 
 深入瞭解有助於為您的辦公室位置設計網路週邊。 每個真知灼見都會針對使用者存取租使用者時，針對每個地理位置的特定一般問題，提供有關效能特性的實際詳細資料。
 
-每個辦公室位置可能會顯示五個特定的網路洞察力：
+每個辦公室位置都可能顯示六個特定的網路洞察力：
 
 - [Backhauled 網路出局](#backhauled-network-egress)
 - [接近您的客戶，偵測到更佳效能](#better-performance-detected-for-customers-near-you)
 - [使用非最優 Exchange Online 服務前門](#use-of-a-non-optimal-exchange-online-service-front-door)
 - [使用非最佳的 SharePoint 線上服務前門](#use-of-a-non-optimal-sharepoint-online-service-front-door)
 - [從 SharePoint 前門開始的低下載速度](#low-download-speed-from-sharepoint-front-door)
+- [中國使用者最佳網路出口](#china-user-optimal-network-egress)
+
+租使用者可能會顯示兩個租使用者層級的網路洞察力。 這些也會出現在 [producvitivy 分數] 頁面上：
+
+- [Exchange 抽樣連接問題影響的連線](#exchange-sampled-connections-impacted-by-connectivity-issues)
+- [受連線問題影響的 SharePoint 採樣連接](#sharepoint-sampled-connections-impacted-by-connectivity-issues)
 
 >[!IMPORTANT]
 >Microsoft 365 系統管理中心的網路洞察力、效能建議和評估目前處於預覽狀態，只適用于已在功能預覽計畫中註冊的 Microsoft 365 承租人。
@@ -128,7 +134,7 @@ ms.locfileid: "46688539"
 
 如果您的組織具備私人 WAN 連線能力，我們建議您在中國的 office 位置，設定網路 WAN 電路，在下列任何位置都有網路出口給網際網路：
 
-- 香港
+- 香港特別行政區
 - 日本
 - 台灣
 - 南韓
@@ -140,6 +146,30 @@ ms.locfileid: "46688539"
 ### <a name="what-should-i-do"></a>我該怎麼做？
 
 如需如何減輕與此洞察力相關之效能問題的詳細資訊，請參閱 [適用于中國使用者的 Office 365 全域承租人效能優化](microsoft-365-networking-china.md)。
+
+## <a name="exchange-sampled-connections-impacted-by-connectivity-issues"></a>Exchange 抽樣連接問題影響的連線
+
+這種洞察力會顯示何時會影響50% 或更多的抽樣連線。 每個範例的 Exchange 評估為低於60% 的 Exchange 評估所定義的影響。
+
+### <a name="what-does-this-mean"></a>案例
+
+這表示大多數的使用者可能會在連線至 Exchange Online 的 Outlook 中遇到使用者經驗問題。 樣本百分比可能代表顯示低於60點的使用者百分比。  
+
+### <a name="what-should-i-do"></a>我該怎麼做？
+
+若尚未啟用 office 位置網路連線，請啟用。 您想要識別哪些辦事處是由影響 Exchange 的不良網路連線所 impactred，並尋找一種方式，以在將使用者連線至 Microsoft 網路的情況時，提高網路周邊網路的能力。
+
+## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>受連線問題影響的 SharePoint 採樣連接
+
+這種洞察力會顯示何時會影響50% 或更多的抽樣連線。 每個範例的 SharePoint 評估所定義的影響低於40%。
+
+### <a name="what-does-this-mean"></a>案例
+
+這表示大多數的使用者可能會遇到 SharePoint 和 OneDrive 的使用者經驗問題。 樣本百分比可能代表顯示低於40點的使用者百分比。  
+
+### <a name="what-should-i-do"></a>我該怎麼做？
+
+若尚未啟用 office 位置網路連線，請啟用。 您想要識別哪些辦事處是透過 impactred SharePoint 影響的低網路連線能力所，並尋找將使用者連接至 Microsoft 網路的方式，以提升網路周邊網路的方式。
 
 ## <a name="related-topics"></a>相關主題
 

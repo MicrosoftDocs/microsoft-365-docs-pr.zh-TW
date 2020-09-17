@@ -1,22 +1,22 @@
 ---
 title: '設定內容瞭解 (預覽)  '
 description: 如何設定專案 Cortex。
-author: efrene
-ms.author: efrene
-manager: pamgreen
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: serdars
 ms.date: 08/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5fcc7f78bfc12faae19ce2a3fbc77c4348da01de
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 05696f99e59cbd51ba004f6007311b4b6af4a839
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612699"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950033"
 ---
 # <a name="set-up-content-understanding-preview"></a>設定內容瞭解 (預覽) 
 
@@ -38,20 +38,20 @@ ms.locfileid: "46612699"
 
 ## <a name="to-set-up-content-understanding"></a>設定內容瞭解
 
-1. 在 Microsoft 365 系統管理中心中，選取 [**安裝**]，然後查看 [**組織知識**] 區段。
-2. 在 [**組織知識**] 區段中，選取 [**自動瞭解內容**]。<br/>
+1. 在 Microsoft 365 系統管理中心中，選取 [ **安裝**]，然後查看 [ **組織知識** ] 區段。
+2. 在 [ **組織知識** ] 區段中，選取 [ **自動瞭解內容**]。<br/>
 
     ![組織知識設定頁面](../media/content-understanding/admin-org-knowledge-options.png)</br>
 
-3. 在 [**自動化內容瞭解**] 頁面上，按一下 [**快速入門**] 以逐步引導您完成安裝程式。<br/>
+3. 在 [ **自動化內容瞭解** ] 頁面上，按一下 [ **快速入門** ] 以逐步引導您完成安裝程式。<br/>
 
     ![開始安裝程式](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 
-4. 在 [**設定表單處理**] 頁面上，您可以選擇是否要讓使用者能夠使用 AI 建立器在特定 SharePoint 文件庫中建立表單處理模型。 [文件庫] 功能區中會提供功能表選項，以在啟用該模型的 SharePoint 文件庫中**建立表單處理模型**。
+4. 在 [ **設定表單處理** ] 頁面上，您可以選擇是否要讓使用者能夠使用 AI 建立器在特定 SharePoint 文件庫中建立表單處理模型。 [文件庫] 功能區中會提供功能表選項，以在啟用該模型的 SharePoint 文件庫中 **建立表單處理模型** 。
  
      **若要 SharePoint 文件庫應該顯示以建立表單處理模型的選項**，您可以選取：</br>
-    - **所有 SharePoint 文件庫**，使其可供您租使用者中的所有 SharePoint 庫使用。</br>
+    - **所有 SharePoint 文件庫** ，使其可供您租使用者中的所有 SharePoint 庫使用。</br>
     - **僅限選取的網站中**的文件庫，然後選取您要讓其可供使用的網站。</br>
     - 如果您目前不想讓任何網站使用**SharePoint 程式庫** (您可以在 setup) 之後變更此設定。
 </br>
@@ -63,8 +63,8 @@ ms.locfileid: "46612699"
    > 在 SharePoint 文件庫上啟用此設定不會影響已套用至文件庫的現有模型，也不會影響將檔理解模型套用至文件庫的功能。 
 
     
-5. 在 [**建立內容中心**] 頁面上，您可以建立 SharePoint 內容中心網站，您的使用者可以在該網站上建立及管理檔理解模型。 </br>
-    a. 在 [**網站名稱**] 中，輸入您要提供給內容中心網站的名稱。</br>
+5. 在 [ **建立內容中心** ] 頁面上，您可以建立 SharePoint 內容中心網站，您的使用者可以在該網站上建立及管理檔理解模型。 </br>
+    a. 在 [ **網站名稱**] 中，輸入您要提供給內容中心網站的名稱。</br>
     b. **網站位址**會根據您為網站名稱所選取的內容，顯示網站的 URL。</br>
 
     > [!Note] 
@@ -73,14 +73,14 @@ ms.locfileid: "46612699"
       ![建立內容中心](../media/content-understanding/admin-cu-create-cc.png)</br>
 
 
-    選取 [下一步]****。
-6. 在 [**完成與複查]** 頁面上，您可以查看選取的設定，並選擇進行變更。 如果您對選擇滿意，請選取 [**啟動**]。
+    選取 **[下一步]**。
+6. 在 [ **完成與複查]** 頁面上，您可以查看選取的設定，並選擇進行變更。 如果您對選擇滿意，請選取 [ **啟動**]。
 
 
 
-7. 隨即會顯示 [**內容瞭解**已啟動] 頁面，確認系統已新增您的表單處理喜好設定，以及建立內容中心網站。 選取 **[完成]**。
+7. 隨即會顯示 [ **內容瞭解** 已啟動] 頁面，確認系統已新增您的表單處理喜好設定，以及建立內容中心網站。 選取 **[完成]**。
 
-8. 您將會傳回 [**自動化內容瞭解**] 頁面。 您可以從這個頁面，選取 [**管理**]，對您的設定設定進行任何變更。 
+8. 您將會傳回 [ **自動化內容瞭解** ] 頁面。 您可以從這個頁面，選取 [ **管理** ]，對您的設定設定進行任何變更。 
 
 ## <a name="see-also"></a>另請參閱
 

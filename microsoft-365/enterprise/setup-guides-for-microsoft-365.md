@@ -3,7 +3,7 @@ title: Microsoft 365 和 Office 365 服務的設定指南
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 使用設定指南，加速規劃和設定 Microsoft 365 或 Office 365。
-ms.openlocfilehash: 2f2c398a3e807b3859cf8f53f63a0ac908ba2683
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 879942d75f37a7984dad8f4ac5dc99933b3988f4
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688430"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949735"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服務的設定指南
 
@@ -51,7 +51,7 @@ Microsoft 365 和 Office 365 安裝指南提供管理員針對部署應用程式
 
 ## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>安裝指南在 Microsoft 365 系統管理中心內的運作方式為何？
 
-每個指南都會提供逐步指示、資源、文章，以及在需要時使用的腳本，以進行設定變更。 這些指南為您提供選項，以反映小型和大型組織 emc 的特定需求。 此外，提供的指導方針包括對新的和更有經驗的系統管理員的協助。
+每個指南都會提供逐步指示、資源、文章，以及在需要時使用的腳本，以進行設定變更。 這些指南為您提供各種選擇，以反映小型和大型組織的特定需求。 此外，提供的指導方針包括對新的和更有經驗的系統管理員的協助。
 
 ![安裝指南的範例](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
@@ -65,7 +65,7 @@ Microsoft 365 和 Office 365 安裝指南提供管理員針對部署應用程式
 
 ### <a name="email-setup-advisor"></a>電子郵件安裝顧問
 
-「 [電子郵件安裝顧問](https://aka.ms/office365setup) 」為您提供為您的組織設定 Exchange Online 所需的逐步指引。 這包括設定新的電子郵件帳戶、遷移電子郵件，以及設定電子郵件保護。 若要成功設定電子郵件，請使用此顧問，並根據您組織目前的郵件系統、要遷移的信箱數目，以及您想要管理使用者及其存取的方式，來接收建議的遷移方法。
+「 [電子郵件安裝顧問](https://aka.ms/office365setup) 」為您提供為您的組織設定 Exchange Online 所需的逐步指引。 這包括設定新的電子郵件帳戶、遷移電子郵件，以及設定電子郵件保護。 若要成功設定電子郵件，請使用此顧問，並根據組織目前的郵件系統、要遷移的信箱數目，以及您想要管理使用者及其存取的方式，來接收建議的遷移方法。
 
 ### <a name="gmail-contacts-and-calendar-advisor"></a>Gmail 連絡人和行事曆顧問
 
@@ -90,7 +90,7 @@ Windows 虛擬機器是雲端中執行的綜合桌面和應用程式虛擬化服
 
 [Windows Virtual Desktop 安裝指南](https://aka.ms/wvdsetupguide)為系統管理員提供規劃資源和必要條件，以進行部署、安裝指導及其他資源。 
 
-## <a name="guides-for-security"></a>安全性指南
+## <a name="guides-for-authentication-and-access"></a>驗證和存取指南
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD 安裝指南
 
@@ -103,6 +103,18 @@ Windows 虛擬機器是雲端中執行的綜合桌面和應用程式虛擬化服
 升級至替代登入方法，可讓使用者使用下列其中一個 passwordless 驗證方法，安全地存取其裝置： Windows Hello 企業版、Microsoft 驗證者應用程式或安全性參數。 
 
 使用 [ [規劃您的 passwordless 部署] 嚮導](https://aka.ms/passwordlesssetup) 來探索最佳的 passwordless 驗證方法，以使用和接收如何部署這些方法的指導方針。 
+
+### <a name="plan-your-self-service-password-reset-deployment"></a>規劃自助密碼重設部署
+
+讓使用者可以獨立變更或重設其密碼，如果其帳戶已鎖定，或忘記其密碼，而不需要與服務台工程師聯繫。 
+
+使用 [ [規劃您的自助密碼重設部署] 嚮導](https://aka.ms/SSPRSetupGuide) 來接收相關文章，以及設定適當 Azure 入口網站選項的指示，以協助您在環境中部署 SSPR。
+
+### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Active Directory Federation Services (AD FS) 部署顧問
+
+[AD FS 部署顧問](https://aka.ms/adfsguidance)為您提供部署內部部署 AD FS 基礎結構的逐步指引，該基礎結構可驗證 Microsoft 365 和 Office 365 服務的使用者。 透過本指南，您的組織可以查看 AD FS 元件和需求、取得及安裝部署所需的 SSL 憑證，以及安裝必要的 web 應用程式 proxy 伺服器。 
+
+## <a name="guides-for-security-and-compliance"></a>安全性與合規性指南
 
 ### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender 高級威脅防護 (ATP) 顧問
 
@@ -121,31 +133,39 @@ Microsoft Exchange Online Protection (EOP) 是雲端式電子郵件篩選服務�
 
 [Office 365 Advanced 威脅防護顧問](https://aka.ms/oatpsetup)會保護您的組織免受您的環境可能透過電子郵件訊息、連結及協力廠商共同作業工具帶來的惡意威脅。 本指南為您提供資源及資訊，可協助您準備及識別符合組織需求的高級威脅防護計畫。 
 
-### <a name="active-directory-federation-services-ad-fs-deployment-advisor"></a>Active Directory Federation Services (AD FS) 部署顧問
+### <a name="microsoft-information-protection-setup-guide"></a>Microsoft 資訊保護安裝指南
 
-[AD FS 部署顧問](https://aka.ms/adfsguidance)為您提供部署內部部署 AD FS 基礎結構的逐步指引，該基礎結構可驗證 Microsoft 365 和 Office 365 服務的使用者。 透過此指南，您的組織可以查看 AD FS 元件和需求、取得及安裝部署所需的 SSL 憑證，以及安裝必要的 web 應用程式 proxy 伺服器。 
+深入瞭解您可以套用至您的資訊保護原則的功能，讓您能夠確信機密資訊受到保護。 使用四階段的週期方法，您可以在其中探索、分類、保護及監視敏感資訊。 《 [Microsoft 資訊保護安裝指南》](https://aka.ms/mipsetupguide) 提供每個階段的完成指導方針。
+
+### <a name="microsoft-information-governance-setup-guide"></a>Microsoft 資訊管理安裝指南
+
+[Microsoft 資訊管理設定指南](https://aka.ms/migsetupguide)為您提供了設定及管理組織的控管策略所需的資訊，以確保您的資料根據您設定的特定生命週期指導方針進行分類和管理。 透過本指南，您將會瞭解如何建立、自動套用或發佈標籤、標籤原則，以及要套用至組織的可重複使用內容及合規性記錄的保留原則。 您也可以使用大量案例的檔計畫，或手動套用至個別檔，以取得匯入 CSV 檔案的相關資訊。 
 
 ## <a name="guides-for-collaboration"></a>共同作業輔助線
 
-### <a name="microsoft-365-apps-for-enterprise-deployment-advisor"></a>適用于企業部署顧問的 Microsoft 365 應用程式
+### <a name="microsoft-365-apps-deployment-advisor"></a>Microsoft 365 應用程式部署顧問
 
 [Microsoft 365 應用程式部署顧問](https://aka.ms/OPPquickstartguide)可協助您讓使用者的裝置執行最新版本的 Office 產品，例如 Word、Excel、PowerPoint 及 OneNote。 您將取得各種部署方法的指導方針，這些方法包括簡易的自行安裝選項，以使用管理工具進行企業部署。 這些指示會協助您評估您的環境、找出特定的部署需求，並執行必要的支援工具，以確保成功安裝。 
 
-### <a name="mobile-apps-setup-assistant"></a>行動應用程式安裝助理
+### <a name="office-mobile-apps-setup-assistant"></a>Office 行動應用程式設定助理
 
-行動裝置 [應用程式設定助理](https://aka.ms/officeappguidance) 提供在 Windows、IOS 和 Android 行動裝置上下載和安裝 Office 應用程式的指示。 本指南為您提供逐步資訊，可在您的手機和平板電腦裝置上下載和安裝 Microsoft 365 和 Office 365 應用程式。
+[Office 行動應用程式設定助理](https://aka.ms/officeappguidance)提供在 Windows、IOS 和 Android 行動裝置上下載和安裝 Office 應用程式的指示。 本指南為您提供逐步資訊，可在您的手機和平板電腦裝置上下載和安裝 Microsoft 365 和 Office 365 應用程式。
 
 ### <a name="microsoft-teams-setup-guide"></a>Microsoft 團隊設定指南
 
 [Microsoft 團隊設定指南](https://aka.ms/teamsguidance)為您的組織提供指導，以設定小組工作區，以主持即時交談，以進行小組和私人通訊的訊息、通話和音訊或視訊會議。 您將會收到使用網路 Planner 工具及小組系統管理中心中的小組顧問來判斷組織之網路需求的指示。 完成部署後，指南會包含有用的資源，可讓您開始使用團隊。
 
-### <a name="sharepoint-deployment-advisor"></a>SharePoint 部署顧問
+### <a name="sharepoint-setup-guide"></a>SharePoint 安裝指南
 
-[SharePoint 部署顧問](https://aka.ms/spoguidance)可協助您設定 SharePoint 檔存放區和內容管理、建立網站、設定外部共用、遷移資料和設定高級設定，以促進組織內的使用者接洽和通訊。 您將遵循設定內容共用許可權原則、選擇遷移同步處理工具及啟用 SharePoint 環境安全性設定的步驟。 
+[SharePoint 安裝指南](https://aka.ms/spoguidance)可協助您設定 SharePoint 檔存放區和內容管理、建立網站、設定外部共用、遷移資料和設定高級設定，以及促進組織內的使用者接洽和通訊。 您將遵循設定內容共用許可權原則、選擇遷移同步處理工具及啟用 SharePoint 環境安全性設定的步驟。 
 
-### <a name="onedrive-quick-start-guide"></a>OneDrive 快速入門手冊
+### <a name="onedrive-setup-guide"></a>OneDrive 安裝指南
 
 使用 [OneDrive 設定指南](https://aka.ms/ODfBquickstartguide) 開始使用 OneDrive 檔案儲存、共用、共同作業及同步功能。 OneDrive 提供一個集中位置，使用者可以在其中同步處理其 Microsoft 365 應用程式檔案、設定外部共用、遷移使用者資料，以及設定高級安全性和裝置存取設定。 OneDrive 安裝指南可使用 OneDrive 訂閱或獨立 OneDrive 方案進行部署。 
+
+### <a name="yammer-deployment-advisor"></a>Yammer 部署顧問
+
+透過 Yammer 連線和接洽您的組織。 [Yammer 部署顧問](https://aka.ms/yammerdeploymentguide)會透過新增網域、定義系統管理員及結合 Yammer 網路來準備 yammer 網路。 您將取得部署 Yammer 的指導，然後自訂外觀、設定安全性和符合性，以及精煉設定。
 
 ## <a name="advanced-wizards"></a>高級嚮導
 
@@ -156,6 +176,12 @@ Microsoft Exchange Online Protection (EOP) 是雲端式電子郵件篩選服務�
 ### <a name="deploy-office-to-your-users"></a>將 Office 部署到您的使用者
 
 使用 Office 部署工具，從雲端部署 Office 應用程式，以自訂安裝。 [ [部署 Office 至您的使用者] 指南 ](https://aka.ms/proplusodt) 可協助您使用「高級設定」建立自訂的 Office 設定，或者您可以使用預先建立的建議配置。 不管您的使用者是要個別或大量部署給使用者，此高級嚮導都會提供逐步指示，讓使用者能夠為您的組織量身定做的 Office 安裝。
+
+### <a name="deploy-office-to-remote-users"></a>將 Office 部署到遠端使用者
+
+現在，以遠端方式工作是一種標準，使用者必須在未連接到內部網路或使用自己的裝置時，才接收組織的 Office 設定。 
+
+使用 [將 [Office 部署到遠端使用者] 指南](https://aka.ms/officeremoteinstall) 可建立自訂的 Office 安裝，然後傳送使用者產生的 PowerShell 腳本，可透過您的設定順利安裝 Office。
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>使用 Configuration Manager 部署及更新 Microsoft 365 應用程式
 
