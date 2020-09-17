@@ -7,73 +7,73 @@ manager: pamgreen
 ms.date: 8/1/2020
 audience: admin
 ms.topic: article
-ms.service: ''
+ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: e9306ff3f797e03422a40ceb189a76dee331ddd9
-ms.sourcegitcommit: a3a5dc541b0c971608cc86ef480509c25a13ca60
+ms.openlocfilehash: 6e4038982f396bbd427273225c2a3d1a9f866252
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46612499"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948123"
 ---
-# <a name="topic-center-overview-preview"></a><span data-ttu-id="55ee1-103">主題中心簡介 (預覽) </span><span class="sxs-lookup"><span data-stu-id="55ee1-103">Topic center overview (Preview)</span></span>
+# <a name="topic-center-overview-preview"></a><span data-ttu-id="50dc7-103">主題中心簡介 (預覽) </span><span class="sxs-lookup"><span data-stu-id="50dc7-103">Topic center overview (Preview)</span></span>
 
 > [!Note] 
-> <span data-ttu-id="55ee1-104">本文內容適用于 Project Cortex 私人預覽。</span><span class="sxs-lookup"><span data-stu-id="55ee1-104">The content in this article is for Project Cortex Private Preview.</span></span> <span data-ttu-id="55ee1-105">[進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。</span><span class="sxs-lookup"><span data-stu-id="55ee1-105">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
+> <span data-ttu-id="50dc7-104">本文內容適用于 Project Cortex 私人預覽。</span><span class="sxs-lookup"><span data-stu-id="50dc7-104">The content in this article is for Project Cortex Private Preview.</span></span> <span data-ttu-id="50dc7-105">[進一步瞭解專案 Cortex](https://aka.ms/projectcortex)。</span><span class="sxs-lookup"><span data-stu-id="50dc7-105">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
 
-<span data-ttu-id="55ee1-106">主題中心是現代的 SharePoint 網站，可充當組織的知識中心。</span><span class="sxs-lookup"><span data-stu-id="55ee1-106">The topic center is a Modern SharePoint site that serves as a center of knowledge for your organization.</span></span> <span data-ttu-id="55ee1-107">在 Microsoft 365 系統管理中心的[知識管理安裝程式](set-up-knowledge-network.md)期間建立。</span><span class="sxs-lookup"><span data-stu-id="55ee1-107">It is created during [Knowledge Management setup](set-up-knowledge-network.md) in the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="50dc7-106">主題中心是現代的 SharePoint 網站，可充當組織的知識中心。</span><span class="sxs-lookup"><span data-stu-id="50dc7-106">The topic center is a Modern SharePoint site that serves as a center of knowledge for your organization.</span></span> <span data-ttu-id="50dc7-107">在 Microsoft 365 系統管理中心的 [知識管理安裝程式](set-up-knowledge-network.md) 期間建立。</span><span class="sxs-lookup"><span data-stu-id="50dc7-107">It is created during [Knowledge Management setup](set-up-knowledge-network.md) in the Microsoft 365 admin center.</span></span>
 
-<span data-ttu-id="55ee1-108">透過主題中心，具有適當許可權的使用者可以執行下列作業：</span><span class="sxs-lookup"><span data-stu-id="55ee1-108">Through the topic center, users with the proper permissions can do the following:</span></span>
+<span data-ttu-id="50dc7-108">透過主題中心，具有適當許可權的使用者可以執行下列作業：</span><span class="sxs-lookup"><span data-stu-id="50dc7-108">Through the topic center, users with the proper permissions can do the following:</span></span>
 
-- <span data-ttu-id="55ee1-109">確認或拒絕已探索的主題</span><span class="sxs-lookup"><span data-stu-id="55ee1-109">Confirm or reject discovered topics</span></span>
-- <span data-ttu-id="55ee1-110">建立新的主題頁面</span><span class="sxs-lookup"><span data-stu-id="55ee1-110">Create a new topic page</span></span>
-- <span data-ttu-id="55ee1-111">編輯現有的主題頁面</span><span class="sxs-lookup"><span data-stu-id="55ee1-111">Edit an existing topic page</span></span>
+- <span data-ttu-id="50dc7-109">確認或拒絕已探索的主題</span><span class="sxs-lookup"><span data-stu-id="50dc7-109">Confirm or reject discovered topics</span></span>
+- <span data-ttu-id="50dc7-110">建立新的主題頁面</span><span class="sxs-lookup"><span data-stu-id="50dc7-110">Create a new topic page</span></span>
+- <span data-ttu-id="50dc7-111">編輯現有的主題頁面</span><span class="sxs-lookup"><span data-stu-id="50dc7-111">Edit an existing topic page</span></span>
 
 > [!Note] 
-> <span data-ttu-id="55ee1-112">您可以在[[使用主題中心的主題](work-with-topics.md)] 中深入瞭解每個任務。</span><span class="sxs-lookup"><span data-stu-id="55ee1-112">You can learn more about each task in [Work with topics in the topic center](work-with-topics.md).</span></span>
+> <span data-ttu-id="50dc7-112">您可以在 [[使用主題中心的主題](work-with-topics.md)] 中深入瞭解每個任務。</span><span class="sxs-lookup"><span data-stu-id="50dc7-112">You can learn more about each task in [Work with topics in the topic center](work-with-topics.md).</span></span>
 
-## <a name="where-is-the-topic-center"></a><span data-ttu-id="55ee1-113">主題中心的位置</span><span class="sxs-lookup"><span data-stu-id="55ee1-113">Where is the topic center</span></span>
+## <a name="where-is-the-topic-center"></a><span data-ttu-id="50dc7-113">主題中心的位置</span><span class="sxs-lookup"><span data-stu-id="50dc7-113">Where is the topic center</span></span>
 
-<span data-ttu-id="55ee1-114">您的主題中心是在知識管理安裝期間建立。</span><span class="sxs-lookup"><span data-stu-id="55ee1-114">Your topic center is created during Knowledge Management setup.</span></span> <span data-ttu-id="55ee1-115">安裝程式完成後，系統管理員可以在「[知識中心管理」頁面](manage-knowledge-network.md)上找到該 URL。</span><span class="sxs-lookup"><span data-stu-id="55ee1-115">After setup completes, an admin can find the URL on the [knowledge center management page](manage-knowledge-network.md).</span></span>
+<span data-ttu-id="50dc7-114">您的主題中心是在知識管理安裝期間建立。</span><span class="sxs-lookup"><span data-stu-id="50dc7-114">Your topic center is created during Knowledge Management setup.</span></span> <span data-ttu-id="50dc7-115">安裝程式完成後，系統管理員可以在「 [知識中心管理」頁面](manage-knowledge-network.md)上找到該 URL。</span><span class="sxs-lookup"><span data-stu-id="50dc7-115">After setup completes, an admin can find the URL on the [knowledge center management page](manage-knowledge-network.md).</span></span>
 
-1. <span data-ttu-id="55ee1-116">在 Microsoft 365 系統管理中心中，選取功能窗格中的 [**安裝程式**]，然後選取 [**組織知識**] 區段中的 **[連線人員與知識]**。</span><span class="sxs-lookup"><span data-stu-id="55ee1-116">In the Microsoft 365 admin center, select **Setup** in the navigation pane, and in the **Organizational Knowledge** section, select **Connect people to knowledge**.</span></span>
+1. <span data-ttu-id="50dc7-116">在 Microsoft 365 系統管理中心中，選取功能窗格中的 [ **安裝程式** ]，然後選取 [ **組織知識** ] 區段中的 **[連線人員與知識]**。</span><span class="sxs-lookup"><span data-stu-id="50dc7-116">In the Microsoft 365 admin center, select **Setup** in the navigation pane, and in the **Organizational Knowledge** section, select **Connect people to knowledge**.</span></span>
 
    ![將人員連線至知識](../media/content-understanding/manage-connect-people-to-knowledge.png) </br>
 
-2. <span data-ttu-id="55ee1-118">在 [連線**人員至知識]** 頁面的 [**一覽**] 區段中，參閱網站 URL 的**主題中心位址**。</span><span class="sxs-lookup"><span data-stu-id="55ee1-118">On the **Connect people to knowledge** page, in the **At a glance** section, see **Topic center address** for the site URL.</span></span>
+2. <span data-ttu-id="50dc7-118">在 [連線 **人員至知識]** 頁面的 [ **一覽** ] 區段中，參閱網站 URL 的 **主題中心位址** 。</span><span class="sxs-lookup"><span data-stu-id="50dc7-118">On the **Connect people to knowledge** page, in the **At a glance** section, see **Topic center address** for the site URL.</span></span>
 
-## <a name="permissions-to-use-the-topic-center"></a><span data-ttu-id="55ee1-119">使用主題中心的許可權</span><span class="sxs-lookup"><span data-stu-id="55ee1-119">Permissions to use the topic center</span></span>
+## <a name="permissions-to-use-the-topic-center"></a><span data-ttu-id="50dc7-119">使用主題中心的許可權</span><span class="sxs-lookup"><span data-stu-id="50dc7-119">Permissions to use the topic center</span></span>
 
-<span data-ttu-id="55ee1-120">若要在主題中心運作，您必須具備必要的許可權。</span><span class="sxs-lookup"><span data-stu-id="55ee1-120">To work in the topic center, you need to have the required permissions.</span></span> <span data-ttu-id="55ee1-121">您的系統管理員可以在[知識管理安裝](set-up-knowledge-network.md)期間將這些許可權指派給使用者，或使用 Microsoft 365 系統管理中心，以系統管理員[身分新增新](give-user-permissions-to-the-topic-center.md)的使用者。</span><span class="sxs-lookup"><span data-stu-id="55ee1-121">Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.</span></span>
+<span data-ttu-id="50dc7-120">若要在主題中心運作，您必須具備必要的許可權。</span><span class="sxs-lookup"><span data-stu-id="50dc7-120">To work in the topic center, you need to have the required permissions.</span></span> <span data-ttu-id="50dc7-121">您的系統管理員可以在 [知識管理安裝](set-up-knowledge-network.md)期間將這些許可權指派給使用者，或使用 Microsoft 365 系統管理中心，以系統管理員 [身分新增新](give-user-permissions-to-the-topic-center.md) 的使用者。</span><span class="sxs-lookup"><span data-stu-id="50dc7-121">Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.</span></span>
 
-<span data-ttu-id="55ee1-122">主題中心使用者可獲得兩組許可權：</span><span class="sxs-lookup"><span data-stu-id="55ee1-122">Topic center users can be given two sets of permissions:</span></span>
+<span data-ttu-id="50dc7-122">主題中心使用者可獲得兩組許可權：</span><span class="sxs-lookup"><span data-stu-id="50dc7-122">Topic center users can be given two sets of permissions:</span></span>
 
-- <span data-ttu-id="55ee1-123">**建立及編輯主題**：建立新的主題或更新主題內容，例如描述、檔和相關人員。</span><span class="sxs-lookup"><span data-stu-id="55ee1-123">**Create and edit topics**: Create new topics or update topic content such as the description, documents and associated persons.</span></span> <span data-ttu-id="55ee1-124">將此許可權指派給負責審閱主題頁面的主題專家。</span><span class="sxs-lookup"><span data-stu-id="55ee1-124">Assign this permission to subject matter experts who are tasked with reviewing topic pages.</span></span>
-- <span data-ttu-id="55ee1-125">**管理主題**：使用主題儀表板來查看整個組織中的主題。</span><span class="sxs-lookup"><span data-stu-id="55ee1-125">**Manage topics**: Use the topic dashboard to review topics across the organization.</span></span> <span data-ttu-id="55ee1-126">使用者可以執行諸如確認和拒絕未確認主題等動作。</span><span class="sxs-lookup"><span data-stu-id="55ee1-126">Users can perform actions such as confirming and rejecting unconfirmed topics.</span></span>
+- <span data-ttu-id="50dc7-123">**建立及編輯主題**：建立新的主題或更新主題內容，例如描述、檔和相關人員。</span><span class="sxs-lookup"><span data-stu-id="50dc7-123">**Create and edit topics**: Create new topics or update topic content such as the description, documents and associated persons.</span></span> <span data-ttu-id="50dc7-124">將此許可權指派給負責審閱主題頁面的主題專家。</span><span class="sxs-lookup"><span data-stu-id="50dc7-124">Assign this permission to subject matter experts who are tasked with reviewing topic pages.</span></span>
+- <span data-ttu-id="50dc7-125">**管理主題**：使用主題儀表板來查看整個組織中的主題。</span><span class="sxs-lookup"><span data-stu-id="50dc7-125">**Manage topics**: Use the topic dashboard to review topics across the organization.</span></span> <span data-ttu-id="50dc7-126">使用者可以執行諸如確認和拒絕未確認主題等動作。</span><span class="sxs-lookup"><span data-stu-id="50dc7-126">Users can perform actions such as confirming and rejecting unconfirmed topics.</span></span>
 
-<span data-ttu-id="55ee1-127">使用者可以指定這兩組許可權，或只有一個使用者需要。</span><span class="sxs-lookup"><span data-stu-id="55ee1-127">A user can be given both sets of permissions, or only one if needed.</span></span> 
+<span data-ttu-id="50dc7-127">使用者可以指定這兩組許可權，或只有一個使用者需要。</span><span class="sxs-lookup"><span data-stu-id="50dc7-127">A user can be given both sets of permissions, or only one if needed.</span></span> 
 
-## <a name="reviewing-topics-in-the-topic-dashboard"></a><span data-ttu-id="55ee1-128">審閱主題儀表板中的主題</span><span class="sxs-lookup"><span data-stu-id="55ee1-128">Reviewing topics in the topic dashboard</span></span>
+## <a name="reviewing-topics-in-the-topic-dashboard"></a><span data-ttu-id="50dc7-128">審閱主題儀表板中的主題</span><span class="sxs-lookup"><span data-stu-id="50dc7-128">Reviewing topics in the topic dashboard</span></span>
 
-<span data-ttu-id="55ee1-129">主題儀表板會顯示從您指定之來源位置中挖掘的主題。</span><span class="sxs-lookup"><span data-stu-id="55ee1-129">The topic dashboard shows topics that were mined from your specified source locations.</span></span> <span data-ttu-id="55ee1-130">每個主題都會顯示已探索該主題的日期，以及其上是否提供任何意見反應。</span><span class="sxs-lookup"><span data-stu-id="55ee1-130">Each topic will show the date the topic was discovered and if any feedback has been provided on it.</span></span> <span data-ttu-id="55ee1-131">已獲指派「**管理主題**」許可權的使用者可以查看未確認的主題，並選擇：</span><span class="sxs-lookup"><span data-stu-id="55ee1-131">A user who was assigned **Manage topics** permissions can review the unconfirmed topics and choose to:</span></span>
-- <span data-ttu-id="55ee1-132">確認主題：對具有存取權的使用者強調該主題，讓他們能看到相關聯的主題卡片和主題頁面。</span><span class="sxs-lookup"><span data-stu-id="55ee1-132">Confirm the topic: Highlights the topic to users who have access and lets them see the associated topic card and topic page.</span></span>
-- <span data-ttu-id="55ee1-133">拒絕主題：讓使用者無法使用主題。</span><span class="sxs-lookup"><span data-stu-id="55ee1-133">Reject the topic: Makes the topic not available to users.</span></span> <span data-ttu-id="55ee1-134">將主題移至 [已**拒絕**] 索引標籤，並在需要時再確認。</span><span class="sxs-lookup"><span data-stu-id="55ee1-134">The topic is moved to the **Rejected** tab and can be confirmed later if needed.</span></span>
+<span data-ttu-id="50dc7-129">主題儀表板會顯示從您指定之來源位置中挖掘的主題。</span><span class="sxs-lookup"><span data-stu-id="50dc7-129">The topic dashboard shows topics that were mined from your specified source locations.</span></span> <span data-ttu-id="50dc7-130">每個主題都會顯示已探索該主題的日期，以及其上是否提供任何意見反應。</span><span class="sxs-lookup"><span data-stu-id="50dc7-130">Each topic will show the date the topic was discovered and if any feedback has been provided on it.</span></span> <span data-ttu-id="50dc7-131">已獲指派「 **管理主題** 」許可權的使用者可以查看未確認的主題，並選擇：</span><span class="sxs-lookup"><span data-stu-id="50dc7-131">A user who was assigned **Manage topics** permissions can review the unconfirmed topics and choose to:</span></span>
+- <span data-ttu-id="50dc7-132">確認主題：對具有存取權的使用者強調該主題，讓他們能看到相關聯的主題卡片和主題頁面。</span><span class="sxs-lookup"><span data-stu-id="50dc7-132">Confirm the topic: Highlights the topic to users who have access and lets them see the associated topic card and topic page.</span></span>
+- <span data-ttu-id="50dc7-133">拒絕主題：讓使用者無法使用主題。</span><span class="sxs-lookup"><span data-stu-id="50dc7-133">Reject the topic: Makes the topic not available to users.</span></span> <span data-ttu-id="50dc7-134">將主題移至 [已 **拒絕** ] 索引標籤，並在需要時再確認。</span><span class="sxs-lookup"><span data-stu-id="50dc7-134">The topic is moved to the **Rejected** tab and can be confirmed later if needed.</span></span>
 
-## <a name="create-or-edit-a-topic"></a><span data-ttu-id="55ee1-135">建立或編輯主題</span><span class="sxs-lookup"><span data-stu-id="55ee1-135">Create or edit a topic</span></span>
+## <a name="create-or-edit-a-topic"></a><span data-ttu-id="50dc7-135">建立或編輯主題</span><span class="sxs-lookup"><span data-stu-id="50dc7-135">Create or edit a topic</span></span>
 
-<span data-ttu-id="55ee1-136">如果您有**建立及編輯主題**許可權，您可以選擇：</span><span class="sxs-lookup"><span data-stu-id="55ee1-136">If you have **Create and edit topics** permissions, you can choose to:</span></span>
+<span data-ttu-id="50dc7-136">如果您有 **建立及編輯主題** 許可權，您可以選擇：</span><span class="sxs-lookup"><span data-stu-id="50dc7-136">If you have **Create and edit topics** permissions, you can choose to:</span></span>
 
-- <span data-ttu-id="55ee1-137">編輯現有主題：您可以對透過探索所建立的現有主題頁面進行變更。</span><span class="sxs-lookup"><span data-stu-id="55ee1-137">Edit existing topics: You can make changes to existing topic pages that were created through discovery.</span></span>
-- <span data-ttu-id="55ee1-138">建立新主題：您可以為未透過探索找到的專案建立新的主題，或如果 AI 工具沒有找到足夠的證據可以建立主題。</span><span class="sxs-lookup"><span data-stu-id="55ee1-138">Create new topics: You can create new topics for ones that were not found through discovery, or if AI tools did not find enough evidence to create a topic.</span></span>
-
-
+- <span data-ttu-id="50dc7-137">編輯現有主題：您可以對透過探索所建立的現有主題頁面進行變更。</span><span class="sxs-lookup"><span data-stu-id="50dc7-137">Edit existing topics: You can make changes to existing topic pages that were created through discovery.</span></span>
+- <span data-ttu-id="50dc7-138">建立新主題：您可以為未透過探索找到的專案建立新的主題，或如果 AI 工具沒有找到足夠的證據可以建立主題。</span><span class="sxs-lookup"><span data-stu-id="50dc7-138">Create new topics: You can create new topics for ones that were not found through discovery, or if AI tools did not find enough evidence to create a topic.</span></span>
 
 
 
 
-## <a name="see-also"></a><span data-ttu-id="55ee1-139">另請參閱</span><span class="sxs-lookup"><span data-stu-id="55ee1-139">See also</span></span>
+
+
+## <a name="see-also"></a><span data-ttu-id="50dc7-139">另請參閱</span><span class="sxs-lookup"><span data-stu-id="50dc7-139">See also</span></span>
 
 
 
