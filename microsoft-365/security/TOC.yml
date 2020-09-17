@@ -112,6 +112,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: 了解查詢語言
                   href: mtp/advanced-hunting-query-language.md
+                - name: 取得專家訓練
+                  href: mtp/advanced-hunting-expert-training.md
                 - name: 套用查詢最佳做法
                   href: mtp/advanced-hunting-best-practices.md
                 - name: 使用查詢結果工作
