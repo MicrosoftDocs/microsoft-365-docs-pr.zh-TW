@@ -49,7 +49,7 @@
             - name: 中國使用者適用的 Microsoft 365 最佳化
               href: microsoft-365-networking-china.md
             - name: 最佳化 Microsoft 365 流量給原生 Windows 10 VPN 遠端工作者
-              href: 'https://docs.microsoft.com/en-us/windows/security/identity-protection/vpn/vpn-office-365-optimization'
+              href: 'https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization'
         - name: Office 365 的 ExpressRoute
           href: azure-expressroute.md
           items:
@@ -271,6 +271,8 @@
       items:
         - name: 新增網域
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+        - name: 設定指南
+          href: setup-guides-for-microsoft-365.md
     - name: 多地理位置
       items:
         - name: Microsoft 365 多地理位置
