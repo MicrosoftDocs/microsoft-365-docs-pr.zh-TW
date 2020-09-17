@@ -9,17 +9,17 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: abd6a123cdc06a84ce094a93eac06f50fe23a315
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a126627a4c4d96b2b6918cefb0630801b3674383
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289730"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950493"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>什麼是 Microsoft 受管理的電腦？
 
 
-Microsoft 受管理的電腦是雲端式服務，可整合 [Microsoft 365 企業版](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (包含 [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise 及 [Office 365 企業版](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) 並新增以下功能：
+Microsoft 受管理的電腦是雲端式服務，可整合 [Microsoft 365 企業版](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (包含 [Windows 10](https://docs.microsoft.com/windows/windows-10/)企業版及 [Office 365 企業版](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) 並新增以下功能：
 
 - 使用者裝置部署
 - IT 服務管理和工作

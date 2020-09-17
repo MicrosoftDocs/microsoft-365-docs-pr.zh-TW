@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 企業版的元件、方案和部署路徑的簡介。
-ms.openlocfilehash: 1a7c0cbb339ae0023264fbafb39e9b8682e98af2
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: b5064d78a1681a3331248f3d17d389c46b1da314
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775180"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949913"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -30,22 +30,22 @@ Microsoft 365 企業版是為大型組織所設計，但也可用於需要最進
 
 Microsoft 365 企業版包含：
 
-| 服務 | 說明 |
-|:-------|:-----|
-| 本機和以雲端為基礎的應用程式和生產力服務 | 包含 Microsoft 365 Apps 企業版、最新的 PC 與 Mac 版 Office 應用程式 (如 Word、Excel、PowerPoint、Outlook 和其他項目)，以及一組完整的電子郵件、檔案儲存空間和共同作業、會議和其他的線上服務。 |
-| Windows 10 企業版 | 符合大中型組織的需求。 這是適用於使用者的最高生產力和最安全的 Windows 版本。 針對 IT 專業人員，它也提供全面的部署、裝置和應用程式管理功能。 |
-| 裝置管理和進階安全性服務 | 包括 Microsoft Intune，它是雲端式企業行動力管理服務，可在協助提高員工生產力的同時持續保護貴組織的資料。 |
+|服務|說明|
+|---|---|
+|本機和以雲端為基礎的應用程式和生產力服務|包含 Microsoft 365 Apps 企業版、最新的 PC 與 Mac 版 Office 應用程式 (如 Word、Excel、PowerPoint、Outlook 和其他項目)，以及一組完整的電子郵件、檔案儲存空間和共同作業、會議和其他的線上服務。|
+|Windows 10 企業版|符合大中型組織的需求。 這是適用於使用者的最高生產力和最安全的 Windows 版本。 針對 IT 專業人員，它也提供全面的部署、裝置和應用程式管理功能。|
+|裝置管理和進階安全性服務|包括 Microsoft Intune，它是雲端式企業行動力管理服務，可在協助提高員工生產力的同時持續保護貴組織的資料。|
 |||
 
 ## <a name="plans"></a>方案
 
 Microsoft 365 企業版提供三個方案。
 
-| 方案名稱 | 功能 |
-|:-------|:-----|
-| E3 | 存取 Microsoft 365 核心產品和功能，以提高工作場所生產力並推動創新。 |
-| E5 | 存取 Microsoft 365 最新產品和功能。 其中包括進階威脅防護、安全性工具和共同作業工具。 此方案包括所有 E3 的功能與進階安全性、語音和資料分析工具。 |
-| F3 | 透過專門打造的工具和資源與第一線員工交流，他們可以使用這些工具和資源來幫助展現最佳工作成效。 |
+|方案名稱|功能|
+|---|---|
+|E3|存取 Microsoft 365 核心產品和功能，以提高工作場所生產力並推動創新。|
+|E5|存取 Microsoft 365 最新產品和功能。 其中包括進階威脅防護、安全性工具和共同作業工具。 此方案包括所有 E3 的功能與進階安全性、語音和資料分析工具。|
+|F3|透過專門打造的工具和資源與第一線員工交流，他們可以使用這些工具和資源來幫助展現最佳工作成效。|
 |||
 
 如果您有 Microsoft 365 E3，您也可以取得這些附加元件：
@@ -107,31 +107,31 @@ Microsoft 365 E3 使用者可以使用這些附加元件來利用 Microsoft 365 
 規劃 Microsoft 365 企業版產品、功能和元件的部署有三個方式：
 
 - 與 FastTrack 合作：
-  
+
    透過 FastTrack，Microsoft 工程師可協助您以您自己的步調移至雲端。 請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
-  
+
 - 利用 Microsoft 諮詢服務或 [Microsoft 合作夥伴](https://partner.microsoft.com/)的協助：
 
    顧問可以分析您目前的基礎架構，並協助您開發方案來納入 Microsoft 365 企業版的所有軟體和服務。
 
 - 自行完成：
 
-   從[網路藍圖](networking-roadmap-microsoft-365.md)開始建置或驗證您現有的基礎結構和生產力工作負載。 
+   從[網路藍圖](networking-roadmap-microsoft-365.md)開始建置或驗證您現有的基礎結構和生產力工作負載。
 
 關於虛構但有代表性的跨國組織如何部署 Microsoft 365 企業版之案例，請參閱 [Contoso Corporation](contoso-overview.md)。
 
 ## <a name="additional-microsoft-365-products"></a>其他 Microsoft 365 產品
 
 - [Microsoft 365 商務進階版](https://docs.microsoft.com/microsoft-365/business/)
- 
+
   將同等級最佳生產力和共同作業功能與裝置管理和安全性解決方案整合在一起，以保護中小型企業的商務資料。
 
 - [Microsoft 365 教育版](https://docs.microsoft.com/education)
- 
+
   可讓授課者解放創意、提升團隊合作，並在專為教育打造且價格合理的單一解決方案中提供簡單且安全的體驗。
 
 - [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
- 
+
   讓美國公營事業員工共同且安全地合作。
 
 ## <a name="microsoft-365-training"></a>Microsoft 365 訓練
@@ -139,7 +139,6 @@ Microsoft 365 E3 使用者可以使用這些附加元件來利用 Microsoft 365 
 ![Microsoft 365 基礎概念訓練](../media/microsoft-365-overview/m365-fundamentals.svg)
 
 若要深入瞭解 Microsoft 365 並致力於 Microsoft 365 認證，您可以從 [Microsoft 365 認證：基礎](https://docs.microsoft.com/learn/paths/m365-fundamentals/)開始。
-
 
 ## <a name="see-also"></a>另請參閱
 

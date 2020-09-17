@@ -110,22 +110,30 @@
               items:
                 - name: 進階搜捕概觀
                   href: mtp/advanced-hunting-overview.md
-                - name: 了解查詢語言
-                  href: mtp/advanced-hunting-query-language.md
-                - name: 取得專家訓練
-                  href: mtp/advanced-hunting-expert-training.md
-                - name: 套用查詢最佳做法
-                  href: mtp/advanced-hunting-best-practices.md
+                - name: 瞭解、訓練與取得範例
+                  items:
+                    - name: 瞭解查詢語言
+                      href: mtp/advanced-hunting-query-language.md
+                    - name: 取得專家訓練
+                      href: mtp/advanced-hunting-expert-training.md
+                    - name: 使用共用查詢
+                      href: mtp/advanced-hunting-shared-queries.md
+                    - name: 搜捕裝置、電子郵件、應用程式和身分識別
+                      href: mtp/advanced-hunting-query-emails-devices.md
                 - name: 使用查詢結果工作
                   href: mtp/advanced-hunting-query-results.md
                 - name: 對查詢結果採取動作
                   href: mtp/advanced-hunting-take-action.md
-                - name: 使用共用查詢
-                  href: mtp/advanced-hunting-shared-queries.md
-                - name: 搜捕裝置、電子郵件、應用程式和身分識別
-                  href: mtp/advanced-hunting-query-emails-devices.md
-                - name: 去搜尋
+                - name: 開始搜補
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: 優化查詢並處理錯誤
+                  items:
+                    - name: 套用查詢最佳做法
+                      href: mtp/advanced-hunting-best-practices.md
+                    - name: 處理錯誤
+                      href: mtp/advanced-hunting-errors.md
+                    - name: 服務限制
+                      href: mtp/advanced-hunting-limits.md
                 - name: 延伸資料涵蓋範圍
                   href: mtp/advanced-hunting-extend-data.md
                 - name: 資料結構描述

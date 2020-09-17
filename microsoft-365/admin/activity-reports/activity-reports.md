@@ -20,18 +20,18 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: f1902c71b167d6293530eae61fa6c57d63c5f06c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387798"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948205"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
-You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.
+您可以輕鬆地查看您的員工使用 Microsoft 365 服務的情況。例如，您可以查出誰經常使用服務且達到使用量配額，或是誰可能完全不需要 Microsoft 365 授權。
   
-Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
+您可以索取過去 7 天、30 天、90 天及 180 天的報告。不過系統無法立即提供所有報告期間的資料，您會在 48 小時內看到可用的報告。
   
 觀看此影片，了解如何使用這些報告的概觀：
   
@@ -141,13 +141,25 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams 使用者活動](microsoft-teams-user-activity.md)
+- [Microsoft Teams 使用者活動](microsoft-teams-user-activity-preview.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Microsoft Teams 裝置使用量](microsoft-teams-device-usage.md)
+- [適用於國防部和政府社區雲端的 Microsoft Teams 使用者活動](microsoft-teams-user-activity.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Microsoft Teams 裝置使用量](microsoft-teams-device-usage-preview.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [適用於國防部和政府社區雲端的 Microsoft Teams 裝置使用量](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 
@@ -159,7 +171,7 @@ Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data 
   
 ## <a name="how-to-view-usage-information-for-a-specific-user"></a>如何檢視特定使用者的使用量資訊
 
-Use the service reports to research how much a specific user is using the service. For example, to find out how much mailbox storage a specific user has consumed, open the Mailbox usage report, and sort the users by name. If you have thousands of users, export the report to Excel so you filter through the list quickly.
+您可以利用服務報告來調查特定使用者使用服務的多寡。例如，若要查詢特定使用者已使用多少信箱儲存空間，請開啟 [信箱使用量] 報告，然後依名稱排序使用者。如果您有數千名使用者，可以匯出報告至 Excel，以便快速篩選清單。
   
 在輸入使用者帳戶並取得其使用服務清單與使用量資訊的狀態下，將無法產生報告。
   
@@ -177,7 +189,7 @@ Use the service reports to research how much a specific user is using the servic
   
 ![報告 - 匿名使用者清單](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
-It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
+這些在報告儀表板中的報告變更，需要幾分鐘後才會生效。此設定也適用於報告 API。
   
 ## <a name="what-happens-to-usage-data-when-a-user-account-is-closed"></a>關閉使用者帳戶時，使用量資料會發生什麼情況？
 

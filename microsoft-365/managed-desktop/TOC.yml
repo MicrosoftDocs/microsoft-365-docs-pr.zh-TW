@@ -106,6 +106,8 @@
               href: get-started/edge-browser-app.md
             - name: Microsoft 365 Apps 企業版
               href: get-started/m365-apps.md
+            - name: Microsoft Teams
+              href: get-started/teams.md
     - name: 使用 Microsoft 受管理的電腦
       href: working-with-managed-desktop/index.md
       items:

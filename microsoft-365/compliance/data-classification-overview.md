@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類儀表板可讓您深入了解貴組織所發現及分類的敏感性資料。
-ms.openlocfilehash: 3198a1981ed7d4d5428452b55aeb22b234712354
-ms.sourcegitcommit: b812771805c8b9e92b64deb1928e265e60d80405
+ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588215"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948503"
 ---
 # <a name="know-your-data---data-classification-overview"></a>了解您的資料 - 資料分類概觀
 
@@ -49,7 +49,7 @@ ms.locfileid: "46588215"
 
 每個存取並使用資料分類的帳戶，都必須有從下列其中一個訂閱中指派的授權：
 
-- Microsoft 365 (E5)
+- Microsoft 365 (E5/A5)
 - Office 365 (E5)
 - 進階合規性 (E5) 附加元件
 - 進階威脅情報 (E5) 附加元件

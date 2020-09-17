@@ -4,13 +4,14 @@ description: 設定裝置並設定 Azure 功能以搭配使用服務的步驟
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 1c5edfd096694324082bdd4fcb70b85b0dd1f5f0
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: 02f12174ef3b8a55f9642bba41c845952b1c1c48
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "38020396"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47950541"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>開始使用 Microsoft 受管理的電腦
 

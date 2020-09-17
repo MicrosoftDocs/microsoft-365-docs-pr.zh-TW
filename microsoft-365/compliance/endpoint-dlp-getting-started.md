@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 端點資料遺失防護以監視檔案活動，並對這些端點的文件實作保護動作。
-ms.openlocfilehash: f24dff993a125de9ecd126b232abfcfa503deb83
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 43ab2a30570f153f16819ede2eeed1f0e091da74
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399220"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47949843"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>開始使用端點資料外洩防護 (預覽版)
 
@@ -102,7 +102,7 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
    ![啟用裝置管理](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
-   > 通常啟用裝置上線需要 60 秒的時間，但請等候達 30 分鐘，再與 [Microsoft 支援服務] 連絡以取得協助。
+   > 通常啟用裝置上線需要 60 秒的時間，但請等候最多 30 分鐘的時間再與 Microsoft 支援服務聯絡以取得協助。
 
 3. 選擇 **[裝置管理]** 以開啟 **[裝置]** 清單。 在您的裝置上線之前，此清單會是空白。
 4. 選擇 **[上線]** 開始上線程序。
