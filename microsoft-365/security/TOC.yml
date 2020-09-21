@@ -70,10 +70,24 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: 產生測試提醒
               href: mtp/generate-test-alert.md
+        - name: 在生產環境中執行試驗
+          items:
+            - name: 試驗概覽
+              href: mtp/mtp-pilot.md
+            - name: 方案
+              href: mtp/mtp-pilot-plan.md
+            - name: 準備
+              href: mtp/prepare-mtpeval.md
+            - name: 類比攻擊
+              href: mtp/mtp-pilot-simulate.md
+            - name: 結束和摘要
+              href: mtp/mtp-pilot-close.md
         - name: 操作指南
           items:
             - name: 建立試用實驗室或試驗環境
               href: mtp/mtp-evaluation.md
+            - name: 執行試驗劇本
+              href: mtp/mtp-pilot.md
             - name: 部署支援服務
               href: mtp/deploy-supported-services.md
             - name: 開啟 Microsoft 威脅防護
@@ -94,16 +108,18 @@
                       href: mtp/manage-incidents.md
             - name: 自動調查及回應
               items:
-                - name: AIR 概觀
+                - name: 自動調查及回應概觀
                   href: mtp/mtp-autoir.md
-                - name: 補救動作
+                - name: 設定自動調查及回應功能
+                  href: mtp/mtp-configure-auto-investigation-response.md
+                - name: 自動調查後的補救動作
                   href: mtp/mtp-remediation-actions.md
-                - name: 重要訊息中心
+                - name: 造訪重要訊息中心
                   href: mtp/mtp-action-center.md
+                - name: 檢閱或拒絕擱置的補救動作
+                  href: mtp/mtp-autoir-actions.md
                 - name: 檢視自動調查的詳細資料和結果
                   href: mtp/mtp-autoir-results.md
-                - name: 核准或拒絕擱置動作
-                  href: mtp/mtp-autoir-actions.md
                 - name: 回報誤判/漏報
                   href: mtp/mtp-autoir-report-false-positives-negatives.md
             - name: 進階搜捕
@@ -214,8 +230,6 @@
                   href: mtp/monitor-devices.md
                 - name: 應用程式監視與報告
                   href: mtp/monitor-apps.md
-            - name: API
-              items: null
         - name: 參考
           items:
             - name: 權限與設定
