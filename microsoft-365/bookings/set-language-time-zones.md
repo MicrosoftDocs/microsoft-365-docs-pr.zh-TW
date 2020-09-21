@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 94af3e22-aca6-4e91-8b91-1cd5a02a9ea8
 description: 在 Microsoft 預約中變更您的語言和時區設定。 如果在錯誤的時間建立預約，可能會將預約設定為錯誤時區。
-ms.openlocfilehash: 07e5dde2a896610ee079063943aff24ec69ba721
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 3e7709666d6426b11c275e46a18d43e7b7ab3526
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419366"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962428"
 ---
 # <a name="set-language-and-time-zones-in-microsoft-bookings"></a>在 Microsoft 預約中設定語言和時區
 
 如果您使用的是 Microsoft 預約，且在錯誤的時間建立了預約，您可能需要變更您的時區設定。 同樣地，如果某些預約是以錯誤的語言，您可能需要變更您的語言設定。
 
 有兩種不同的語言和時區設定可供預訂。 第一個設定會控制預約行事曆的語言和時區，並使用 Outlook 的使用者設定，以供登入使用者的個人行事曆使用。 第二個設定會影響客戶使用的「自助預約」頁面，並使用「地區設定」頁面來設定，此頁面只會控制該頁面的語言和時區。
-
-> [!NOTE]
-> 預設會針對具有 Microsoft 365 商務標準、Microsoft 365 A3 或 Microsoft 365 A5 訂閱的客戶，開啟預訂。 預定也可供擁有 Office 365 Enterprise E3 和 Office 365 企業版 E5 的客戶使用，但預設為關閉。 若要開始，請參閱 [取得 Microsoft 預約存取權](get-access.md)。 若要開啟或關閉預約，請參閱 [為您的組織開啟或關閉預訂](turn-bookings-on-or-off.md)。
 
 ## <a name="setting-language-and-time-zone-for-a-booking-calendar"></a>設定預約行事曆的語言和時區
 
@@ -39,7 +36,7 @@ ms.locfileid: "47419366"
 
 1. 在 [ **語言] 或 [目前** 時區] 方塊中選取下拉式箭號，然後選擇所需的設定，以變更語言或時區。
 
-1. 按一下 **[儲存]**。 [設定] 面板隨即關閉，網頁上的 Outlook 重新開機，並套用新的語言和時區設定。
+1. 按一下 [儲存]****。 [設定] 面板隨即關閉，網頁上的 Outlook 重新開機，並套用新的語言和時區設定。
 
 ## <a name="setting-the-language-and-time-zone-for-the-booking-page"></a>設定 [預約] 頁面的語言和時區
 

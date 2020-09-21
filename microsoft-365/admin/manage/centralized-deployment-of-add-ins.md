@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 判斷您的承租人和使用者是否符合需求，讓您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: fbf6ce702cfe0fa3c85b634996a38cc4857190b6
-ms.sourcegitcommit: 222fc3f8841de82b1b558f47db8a79aa5054d0ed
+ms.openlocfilehash: 4bd81dcf1d1ee6221a3519baac0a3b1bc63b791f
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "45102869"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131731"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷集中式部署的增益集是否適用于您的組織
 
@@ -46,7 +46,7 @@ ms.locfileid: "45102869"
 ## <a name="requirements"></a>需求
 
 [！注意] 增益集的集中式部署需要使用者使用 Microsoft 365 應用程式的 enterprise (，並使用其組織識別碼) 登入 Office，並擁有 Exchange Online 和 active Exchange Online 信箱。 您的訂閱目錄必須是 in 或同盟至 Azure Active Directory。
-您可以在下面查看 Office 和 Exchange 的特定需求，或使用[集中式部署相容性檢查](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker)程式。
+您可以在下面查看 Office 和 Exchange 的特定需求，或使用[集中式部署相容性檢查](#centralized-deployment-compatibility-checker)程式。
 
 [集中式部署] 不支援下列項目：
   
@@ -78,15 +78,15 @@ ms.locfileid: "45102869"
 
 #### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>確定是否已安裝適用于企業的 Microsoft 365 應用程式
 
-若要使用 Microsoft 365 應用程式的企業版，使用者必須擁有 Microsoft 365 帳戶，且必須已獲指派授權。 如需詳細資訊，請參閱適用[于企業的 Microsoft 365 應用程式概述](https://go.microsoft.com/fwlink/p/?linkid=846328)。
+若要使用 Microsoft 365 應用程式的企業版，使用者必須擁有 Microsoft 365 帳戶，且必須已獲指派授權。 如需詳細資訊，請參閱適用 [于企業的 Microsoft 365 應用程式概述](https://go.microsoft.com/fwlink/p/?linkid=846328)。
 
-偵測使用者是否已安裝 Microsoft 365 應用程式並最近使用它的最簡單方法，就是使用 microsoft Office 啟用報告，該報告可在 Microsoft 365 系統管理中心中取得。 報告提供過去7天、30天、90天或180天內，已為企業版啟用 Microsoft 365 應用程式的所有使用者清單。 對於集中式部署用途而言，Windows 或 Mac 的電腦版啟用數是報告中的重要欄。 您可以將報告匯出到 Excel。 如需報告的詳細資訊，請參閱系統[管理中心的 microsoft 365 報告-Microsoft Office](../activity-reports/microsoft-office-activations.md)啟用。
+偵測使用者是否已安裝 Microsoft 365 應用程式並最近使用它的最簡單方法，就是使用 microsoft Office 啟用報告，該報告可在 Microsoft 365 系統管理中心中取得。 報告提供過去7天、30天、90天或180天內，已為企業版啟用 Microsoft 365 應用程式的所有使用者清單。 對於集中式部署用途而言，Windows 或 Mac 的電腦版啟用數是報告中的重要欄。 您可以將報告匯出到 Excel。 如需報告的詳細資訊，請參閱系統 [管理中心的 microsoft 365 報告-Microsoft Office](../activity-reports/microsoft-office-activations.md)啟用。
   
-如果您不想使用啟用報告，您可以要求使用者在其電腦上開啟 Office 應用程式（如 Word），然後選擇 [**檔** \> **帳戶**]。 在 [**產品資訊**] 底下，您應該會看到 [**訂閱產品**] 和 [ **Microsoft 365 for enterprise**]，如下列影像所示。
+如果您不想使用啟用報告，您可以要求使用者在其電腦上開啟 Office 應用程式（如 Word），然後選擇 [ **檔** \> **帳戶**]。 在 [ **產品資訊**] 底下，您應該會看到 [ **訂閱產品** ] 和 [ **microsoft 365 For enterprise**] 或 [microsoft 365 商務版 Premium]，類似下圖中所示。
 
 ![Office 應用程式中的產品資訊](../../media/product-information-microsoft-365-enterprise.png)
   
-如需 Microsoft 365 應用程式 enterprise 的說明，請參閱適用于[企業的 microsoft 365 應用程式疑難排解秘訣](https://go.microsoft.com/fwlink/p/?linkid=846339)。
+如需 Microsoft 365 應用程式 enterprise 的說明，請參閱適用于 [企業的 microsoft 365 應用程式疑難排解秘訣](https://go.microsoft.com/fwlink/p/?linkid=846339)。
 
 
 ### <a name="exchange-online-requirements"></a>Exchange Online 需求
@@ -110,17 +110,17 @@ Microsoft Exchange 會將增益集資訊清單儲存在貴組織的租用戶中�
    Import-Module O365CompatibilityChecker
    ```
     
-3. 執行**CompatabilityCheck**命令：
+3. 執行 **CompatabilityCheck** 命令：
 
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   這個命令會提示您輸入*_TenantDomain_* (例如， *TailspinToysIncorporated </span> 。com*) 和*_TenantAdmin_* 認證 (使用您的全域系統管理員認證) ，然後要求同意。
+   這個命令會提示您輸入  *_TenantDomain_* (例如， *TailspinToysIncorporated </span> 。com*) 和  *_TenantAdmin_* 認證 (使用您的全域系統管理員認證) ，然後要求同意。
     
    > [!NOTE]
    > 根據您租用戶中的使用者人數而定，檢查程式可能需要花費幾分鐘至幾小時。 
   
-檢查程式執行完畢後，會產生一個逗號分隔 (.csv) 格式的輸出檔案。 預設會將檔案儲存為**C:\windows\system32** 。 輸出檔案中包含下列資訊：
+檢查程式執行完畢後，會產生一個逗號分隔 (.csv) 格式的輸出檔案。 預設會將檔案儲存為 **C:\windows\system32** 。 輸出檔案中包含下列資訊：
   
 - 使用者名稱
     
@@ -152,7 +152,7 @@ Microsoft Exchange 會將增益集資訊清單儲存在貴組織的租用戶中�
    
 ### <a name="find-out-if-a-group-contains-nested-groups"></a>確認群組是否包含巢狀群組
 
-The easiest way to detect if a group contains nested groups is to view the group contact card within Outlook. 如果您在電子郵件的 [**至**] 欄位中輸入組名，然後在解析時選取組名，它會顯示其是否包含使用者或嵌套的群組。 In the example below, the **Members** tab of the Outlook contact card for the Test Group shows no users and only two sub groups. 
+The easiest way to detect if a group contains nested groups is to view the group contact card within Outlook. 如果您在電子郵件的 [ **至** ] 欄位中輸入組名，然後在解析時選取組名，它會顯示其是否包含使用者或嵌套的群組。 In the example below, the **Members** tab of the Outlook contact card for the Test Group shows no users and only two sub groups. 
   
 ![Outlook 連絡人卡片的 [成員] 索引標籤](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
@@ -164,11 +164,11 @@ You can do the opposite query by resolving the group to see if it's a member of 
   
 ### <a name="contacting-microsoft-for-support"></a>連絡 Microsoft 以取得支援
 
-如果您或您的使用者在使用 Office 應用程式來載入增益集時遇到問題 (Word、Excel 等 ) （已集中部署），您可能需要與 Microsoft 支援人員聯繫 (瞭解) 的[方式](../contact-support-for-business-products.md)。 在支援票證中提供下列有關您 Microsoft 365 環境的資訊。
+如果您或您的使用者在使用 Office 應用程式來載入增益集時遇到問題 (Word、Excel 等 ) （已集中部署），您可能需要與 Microsoft 支援人員聯繫 (瞭解) 的 [方式](../contact-support-for-business-products.md) 。 在支援票證中提供下列有關您 Microsoft 365 環境的資訊。
   
 |**平台**|**偵錯資訊**|
 |:-----|:-----|
 |辦公室  <br/> | Charles/Fiddler 記錄檔  <br/>  租用戶識別碼 ( [了解做法](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID。 查看其中一個 office 頁面的來源，並尋找 [相關性識別碼] 值並傳送給支援：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
-|豐富型用戶端 (Windows、Mac)  <br/> | Charles/Fiddler 記錄檔  <br/>  用戶端應用程式的組建編號 (最好是檔案 **/帳戶**的螢幕擷取畫面)   <br/> |
+|豐富型用戶端 (Windows、Mac)  <br/> | Charles/Fiddler 記錄檔  <br/>  用戶端應用程式的組建編號 (最好是檔案 **/帳戶** 的螢幕擷取畫面)   <br/> |
    
 

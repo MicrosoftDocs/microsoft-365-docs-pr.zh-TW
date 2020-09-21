@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: 在 Microsoft 預約中設定員工的工作時數和可用性。
-ms.openlocfilehash: 656b52992f4da32ae334809bd1a3ee4dd3b89652
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 140ab5732b051931666824cd4290a38c0b11fd65
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419395"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962522"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft 預定中的員工工作時間
 
@@ -23,9 +23,6 @@ ms.locfileid: "47419395"
 在 [ **人員** ] 頁面上，您可以自訂員工工作時數，以符合您的商務和員工的需求。
 
 如果您想要為職員人員上班時間，讓客戶無法在外出時將其預訂，請參閱 [排程公休日、請假和請假的時間](schedule-closures-time-off-vacation.md) 。
-
-> [!NOTE]
-> 預設會針對具有 Microsoft 365 商務標準、Microsoft 365 A3 或 Microsoft 365 A5 訂閱的客戶，開啟預訂。 預定也可供擁有 Office 365 Enterprise E3 和 Office 365 企業版 E5 的客戶使用，但預設為關閉。 若要開始，請參閱 [取得 Microsoft 預約存取權](get-access.md)。 若要開啟或關閉預約，請參閱 [為您的組織開啟或關閉預訂](turn-bookings-on-or-off.md)。
 
 ## <a name="customize-employee-working-hours"></a>自訂員工工作時間
 

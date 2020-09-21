@@ -3,7 +3,7 @@ title: 'Microsoft 365 系統管理中心的網路連線 (預覽) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,16 +14,20 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: f8eff2248fb7abce75c27f227a2c5e7ec7219046
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 35ea28ec45a7e581901c0f4f22360a1dcd0def8b
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948402"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962284"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
-Microsoft 365 系統管理中心現在包含從您的 Microsoft 365 租使用者收集到的匯總網路連線衡量標準，而且只能在租使用者中查看其管理使用者。 **網路評估** 和 **網路洞察力** 會顯示在 Microsoft 365 系統管理中心的 [ **狀況] |連線能力**。
+Microsoft 365 系統管理中心現在包含從您的 Microsoft 365 租使用者收集到的匯總網路連線衡量標準，而且只能在租使用者中查看其管理使用者。
+
+![Network connectivity test 工具](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
+
+**網路評估** 和 **網路洞察力** 會顯示在 Microsoft 365 系統管理中心的 [ **狀況] |連線能力**。
 
 ![網路效能頁面](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 

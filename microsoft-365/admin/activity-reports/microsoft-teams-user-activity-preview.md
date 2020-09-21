@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何取得 Microsoft 團隊使用者活動報告，並深入瞭解組織中的小組活動。
-ms.openlocfilehash: 5b6c67903e7af600cac6ad1fda10962aecc2cc83
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 32252ed89dd9447b5df59ee733088349c559a320
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949025"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104507"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>系統管理中心的 microsoft 365 報告-Microsoft 團隊使用者活動
 
@@ -44,7 +44,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 
 選取 **[選擇欄位** ]，以新增或移除報告中的欄。  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 
+您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 **音訊時間**、**影片時間**和**螢幕共用時間**的匯出格式，會依照 ISO8601 日期格式。
 
 |項目|描述|
 |:-----|:-----|
@@ -59,5 +59,5 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |以特殊方式組織的會議 <br/> |在指定期間內，使用者組織的行事曆中未排定的會議數目。 <br/>|
 |排程組織的會議  <br/> |使用者在指定期間內組織的排程會議數目。  <br/> |
 |已授權 |如果使用者授權使用小組，則選取此選項。|
-|其他活動|使用者被視為作用中，但聊天訊息、1:1 通話、通道訊息、會議總數和會議組織的值都是空的。 範例動作是指將 Microsoft 團隊用戶端啟動至前景時，會在 [撰寫郵件] 區域中採取動作，快顯通知顯示在 Microsoft 團隊用戶端，顯示在 Microsoft 團隊用戶端中的橫幅，等等。 |
+|其他活動|使用者被視為作用中，但聊天訊息、1:1 通話、通道訊息、會議總數和會議組織度量值的值都是空的。 範例動作是指使用者開啟通道郵件時，但沒有回復，或是收到私人郵件時，但未作出回應。 |
 |||

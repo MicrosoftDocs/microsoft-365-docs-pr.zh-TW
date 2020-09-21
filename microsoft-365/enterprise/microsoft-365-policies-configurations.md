@@ -17,18 +17,18 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 686d31c64394094530099edb97bbd10912a58cb8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949889"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131575"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
 組織目前的安全性周邊環境會延伸至您的網路以外，以包含從各種裝置的任何位置存取雲端架構應用程式的使用者。 您的安全性基礎結構需要判斷是否應授與指定的存取要求，以及在哪些條件下。 
 
-這項判斷應該是以使用者帳戶登入、正在使用的裝置、使用者嘗試存取的應用程式、建立存取要求的位置，以及要求的風險評估。 這項功能可協助確保只有核准的使用者和裝置可以存取您的重要資源。
+這項判斷應該是根據登入的使用者帳戶、正在使用的裝置、使用者正在使用的應用程式、建立存取要求的位置，以及要求的風險評估。 這項功能可協助確保只有核准的使用者和裝置可以存取您的重要資源。
 
 本系列文章說明一組身分識別與裝置存取的必要條件設定，以及一組 Azure Active Directory (Azure AD) 條件式存取、Microsoft Intune 及其他原則，以保護對 Microsoft 365 for enterprise cloud app 和服務、其他 SaaS 服務，以及使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式的存取。
 

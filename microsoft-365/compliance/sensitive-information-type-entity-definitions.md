@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: 8716a6d4e29f94ff3d7bedaaadece2449fcec8a3
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d29732051f2a7c023992287a131f3bb68bd28a4d
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950281"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104497"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -212,11 +212,11 @@ ms.locfileid: "47950281"
 11位數（選用分隔符號）：
 
 - 兩位數
-- 選項連字號或空格
+- 選用的連字號或空格
 - 三位數
-- 選項連字號或空格
+- 選用的連字號或空格
 - 三位數
-- 選項連字號或空格
+- 選用的連字號或空格
 - 三位數
 
 ### <a name="checksum"></a>校驗
@@ -3728,12 +3728,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
  (舊格式的九位數) ：
 - 六位數代表出生日期
-- 一個正斜線
+- 選用的正斜線
 - 三位數
 
 10位數 (新的格式) ：
 - 六位數代表出生日期
-- 一個正斜線 
+- 選用的正斜線 
 - 最後一個數位是檢查碼的四位數
 
 ### <a name="checksum"></a>校驗
@@ -4756,24 +4756,24 @@ Registro de Identidade (RIC)  (新格式) ：
 - [捷克文](#czech-personal-identity-number)
 - [丹麥](#denmark-personal-identification-number)
 - [愛沙尼亞](#estonia-personal-identification-code)
-- [芬蘭](#finland-national-identification-number)
-- [法國](#france-national-identification-card-cni)
+- [芬蘭](#finland-national-id)
+- [法國](#france-national-id-card-cni)
 - [德國](#germany-identity-card-number)
 - [希臘](#greece-national-id-card)
-- [匈牙利](#hungary-national-identification-number)
-- [愛爾蘭](#ireland-national-identification-number)
-- [義大利](#italy-national-identification-number)
-- [拉脫維亞](#latvia-national-identification-number)
-- [立陶宛](#lithuania-national-identification-number)
-- [盧森堡](#luxemburg-national-identification-number)
-- [馬爾他](#malta-national-identification-number)
-- [荷蘭](#netherlands-national-identification-number)
+- [匈牙利](#hungary-personal-identification-number)
+- [愛爾蘭](#ireland-personal-public-service-pps-number)
+- [義大利](#italy-fiscal-code)
+- [拉脫維亞](#latvia-personal-code)
+- [立陶宛](#lithuania-personal-code)
+- [盧森堡](#luxemburg-national-identification-number-natural-persons)
+- [馬爾他](#malta-identity-card-number)
+- [荷蘭](#netherlands-citizens-service-bsn-number)
 - [波蘭](#poland-national-id-pesel)
 - [葡萄牙](#portugal-citizen-card-number)
-- [羅馬尼亞](#romania-national-identification-number)
-- [斯洛伐克](#slovakia-national-identification-number)
-- [斯洛維尼亞](#slovenia-national-identification-number)
-- [西班牙](#spain-national-identification-number)
+- [羅馬尼亞](#romania-personal-numeric-code-cnp)
+- [斯洛伐克](#slovakia-personal-number)
+- [斯洛維尼亞](#slovenia-unique-master-citizen-number)
+- [西班牙](#spain-dni)
 - [英國。](#uk-national-insurance-number-nino)                                        
 
 
@@ -4835,26 +4835,33 @@ Registro de Identidade (RIC)  (新格式) ：
 這些實體屬於歐盟納稅身分識別號碼的敏感資訊類型。
 
 - [奧地利](#austria-tax-identification-number)
+- [比利時](#belgium-national-number)
+- [保加利亞](#bulgaria-uniform-civil-number)
+- [克羅埃西亞](#croatia-identity-card-number)
 - [賽普勒斯](#cyprus-tax-identification-number)
+- [捷克文](#czech-personal-identity-number)
+- [丹麥](#denmark-personal-identification-number)
+- [愛沙尼亞](#estonia-personal-identification-code)
+- [芬蘭](#finland-national-id)
 - [法國](#france-tax-identification-number)
 - [德國](#germany-tax-identification-number)
 - [希臘](#greece-tax-identification-number)
 - [匈牙利](#hungary-tax-identification-number)
-- [愛爾蘭](#ireland-tax-identification-number)
-- [義大利](#italy-tax-identification-number)
-- [拉脫維亞](#latvia-tax-identification-number)
-- [立陶宛](#lithuania-tax-identification-number)
-- [盧森堡](#luxemburg-tax-identification-number)
+- [愛爾蘭](#ireland-personal-public-service-pps-number)
+- [義大利](#italy-fiscal-code)
+- [拉脫維亞](#latvia-personal-code)
+- [立陶宛](#lithuania-personal-code)
+- [盧森堡](#luxemburg-national-identification-number-non-natural-persons)
 - [馬爾他](#malta-tax-identification-number)
 - [荷蘭](#netherlands-tax-identification-number)
 - [波蘭](#poland-tax-identification-number)
 - [葡萄牙](#portugal-tax-identification-number)
-- [羅馬尼亞](#romania-tax-identification-number)
-- [斯洛伐克](#slovakia-tax-identification-number)
+- [羅馬尼亞](#romania-personal-numeric-code-cnp)
+- [斯洛伐克](#slovakia-personal-number)
 - [斯洛維尼亞](#slovenia-tax-identification-number)
 - [西班牙](#spain-tax-identification-number)
 - [瑞典](#sweden-tax-identification-number)
-- [英國。](#uk-tax-identification-number)
+- [英國。](#uk-unique-taxpayer-reference-number)
 
 
 ## <a name="finland-drivers-license-number"></a>芬蘭駕照編號
@@ -4965,7 +4972,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - terveyskortti
 
 
-## <a name="finland-national-identification-number"></a>芬蘭國身分識別號碼
+## <a name="finland-national-id"></a>芬蘭國 ID
 
 ### <a name="format"></a>格式
 
@@ -5263,7 +5270,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - d'assuré社交
 
 
-## <a name="france-national-identification-card-cni"></a>法國國身分識別卡 (CNI) 
+## <a name="france-national-id-card-cni"></a>法國全國身分識別卡 (CNI) 
 
 ### <a name="format"></a>格式
 
@@ -6351,9 +6358,7 @@ bnationalit
 - vezetoi engedely
 
 
-## <a name="hungary-national-identification-number"></a>匈牙利國身分識別號碼
-
-這個敏感資訊類型實體僅可用於歐盟國身分識別號碼的敏感資訊類型。
+## <a name="hungary-personal-identification-number"></a>匈牙利個人身分識別號碼
 
 ### <a name="format"></a>格式
 
@@ -6363,7 +6368,7 @@ bnationalit
 
 11位數：
   
--  對應于性別 (1-男，2-女，其他號碼的一個數位，也可能是在1900或公民的情況下出生的公民)  
+- 對應于性別 (1-男，2-女，其他號碼的一個數位，也可能是在1900或公民的情況下出生的公民)  
 - 對應至出生日期 (YYMMDD 的六位數) 
 - 對應至序列值的三位數
 - 一個檢查碼
@@ -6384,15 +6389,20 @@ bnationalit
 - 函數  `Func_hungary_eu_national_id_card` 會找到符合模式的內容。 
     
 ```xml
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungary Personal Identification Number -->
+      <Entity id="7b5cc218-7046-47d9-80c9-f325b50896ca" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_hungary_eu_national_id_card" />
           <Match idRef="Keywords_hungary_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_hungary_eu_national_id_card" />
-</Pattern>
-</Entity>
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_hungary_eu_telephone_number" />
+            <Match idRef="Keywords_hungary_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -6515,8 +6525,6 @@ bnationalit
 
 ## <a name="hungary-tax-identification-number"></a>匈牙利納稅識別號碼
 
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
-
 ### <a name="format"></a>格式
 
 沒有空格或分隔符號的10位數
@@ -6526,8 +6534,7 @@ bnationalit
 10位數：
   
 - 一個位數，必須是 "8" 
-- 代表日期01/01/1867 和個人出生日期之間的天數所對應的5位數
-- 三位數的值，對應于因有機會讓個別人出生于同一天所產生的數目
+- 八位數
 - 一個檢查碼
     
 ### <a name="checksum"></a>校驗
@@ -6546,16 +6553,20 @@ bnationalit
 - 函數  `Func_hungary_eu_tax_file_number` 會找到符合模式的內容。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Hungary Tax Identification Number -->
+      <Entity id="ede42eb4-59d9-49eb-9603-d7853fbda91d" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_hungary_eu_tax_file_number" />
           <Match idRef="Keywords_hungary_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_hungary_eu_tax_file_number" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_hungary_eu_telephone_number" />
+            <Match idRef="Keywords_hungary_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -7029,88 +7040,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - ceadúnas tiomána
 
 
-## <a name="ireland-national-identification-number"></a>愛爾蘭國身分識別號碼
-
-這個敏感資訊類型實體只包含在歐盟國身分識別號碼的敏感資訊類型中。
-
-### <a name="format"></a>格式
-
-在指定的模式中，字母、數位及空格的九個字元組合
-  
-### <a name="pattern"></a>模式
-
-在指定的模式中，字母、數位及空格的九個字元組合
-  
-從01年1月2013至現在：
-  
-- 七位數 
-- 一個檢查碼
-- 一個空格或大寫的字母 "W" (大小寫) 
-    
-在2013年1月1日之前：
-  
-- 七位數 
-- 一個檢查碼
-- 一個空格或大寫字母 (區分大小寫) 
-    
-### <a name="checksum"></a>校驗
-
-是
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-  
-- 函數會找到符合模式的內容。
-- 找到來自的關鍵字。
-    
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-  
-- 函數會找到符合模式的內容。
-    
-```xml
- <!--Ireland national identification number  -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_ireland_eu_national_id_card" />
-          <Match idRef="Keywords_ireland_eu_national_id_card" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_ireland_eu_national_id_card" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
-
-- 用戶端身分識別服務
-- 識別號碼
-- 個人號碼
-- 個人公開服務號碼
-- 個人服務否
-- phearsanta seirbhíse poiblí
-- pps 否
-- pps 號碼
-- pps 服務否
-- pps uimh
-- ppsn
-- ppsno#
-- ppsno
-- 公用服務否
-- publicserviceno#
-- publicserviceno
-- 收入與社交保險號碼
-- rsi 否
-- rsi 編號
-- rsin
-- seirbhís aitheantais 用戶端
-- uimh.Psp
-- uimhir aitheantais chánach
-- uimhir aitheantais phearsanta
-- uimhir phearsanta seirbhíse poiblí
-
 ## <a name="ireland-passport-number"></a>愛爾蘭護照號碼
 
 這個敏感資訊類型實體只適用于歐盟護照號碼機密資訊類型。
@@ -7178,7 +7107,7 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 新格式 (1 Jan 2013 及之後) ：
 - 七位數 
 - 字母 (不區分大小寫) （字母檢查碼） 
-- 字母 "A" 或 "H" (不區分大小寫) 
+- 範圍 A-I 或 "W" 中的選用字母
 
 ### <a name="checksum"></a>校驗
 
@@ -7188,9 +7117,7 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
 - 函數 Func_ireland_pps 找到符合模式的內容。
-- 下列其中一項為真：
-    - 會找到來自 Keyword_ireland_pps 的關鍵字。
-    - 函數 Func_eu_date 會找到正確日期格式的日期。
+- 會找到來自 Keywords_ireland_eu_national_id_card 的關鍵字。
 - 校驗和通過。
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是65%：
@@ -7198,81 +7125,21 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 校驗和通過。
 
 ```xml
-<!-- Ireland Personal Public Service (PPS) Number -->
-<Entity id="1cdb674d-c19a-4fcf-9f4b-7f56cc87345a" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_ireland_pps"/>
-     <Any minMatches="1">
-  <Match idRef="Keyword_ireland_pps"/>
-  <Match idRef="Func_eu_date"/>
-     </Any>
-  </Pattern>
-  <Pattern confidenceLevel="65">
-     <IdMatch idRef="Func_ireland_pps"/>
-  </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keyword_ireland_pps"></a>Keyword_ireland_pps
-
-- 個人公開服務號碼 
-- PPS 號碼 
-- PPS 數位 
-- PPS No。 
-- Pps# 
-- Pps# 
-- PPSN 
-- 公用服務卡片 
-- Uimhir Phearsanta Seirbhíse Poiblí 
-- Uimh. Psp 
-- Psp 
-
-
-## <a name="ireland-tax-identification-number"></a>愛爾蘭納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
-
-### <a name="format"></a>格式
-
-七位數後接字母，不含空格或分隔符號
-  
-### <a name="pattern"></a>模式
-
-七位數後接字母：
-  
-- 七位數 
-- 一個字母 (不區分大小寫) 
-    
-### <a name="checksum"></a>校驗
-
-不適用
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_ireland_eu_tax_file_number` 會找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_ireland_eu_tax_file_number` 。 
-    
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_ireland_eu_tax_file_number` 會找到符合模式的內容。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Personal Public Service (PPS) Number -->
+      <Entity id="1cdb674d-c19a-4fcf-9f4b-7f56cc87345a" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
         <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_ireland_eu_tax_file_number" />
-          <Match idRef="Keywords_ireland_eu_tax_file_number" />
+          <IdMatch idRef="Func_ireland_pps" />
+          <Match idRef="Keywords_ireland_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_ireland_eu_tax_file_number" />
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Func_ireland_pps" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_ireland_eu_tax_file_number"></a>Keywords_ireland_eu_tax_file_number
+#### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
 - 用戶端身分識別服務
 - 識別號碼
@@ -7282,11 +7149,12 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - phearsanta seirbhíse poiblí
 - pps 否
 - pps 號碼
+- pps 數位
 - pps 服務否
-- pps uimh
 - ppsn
 - ppsno#
 - ppsno
+- Psp
 - 公用服務否
 - publicserviceno#
 - publicserviceno
@@ -7295,10 +7163,26 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - rsi 編號
 - rsin
 - seirbhís aitheantais 用戶端
-- uimh.Psp
+- uimh
 - uimhir aitheantais chánach
 - uimhir aitheantais phearsanta
 - uimhir phearsanta seirbhíse poiblí
+- 納稅識別碼
+- 納稅識別碼否
+- 納稅識別號碼
+- 納稅否#
+- 納稅否
+- 納稅號碼
+- 稅務登記編號
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- 納稅人識別碼
+- tin no
+- 錫#
 
 
 ## <a name="israel-bank-account-number"></a>以色列銀行帳戶號碼
@@ -7434,8 +7318,7 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - numero di patente di guida 
 - patente di guida 
 
-## <a name="italy-national-identification-number"></a>義大利國身分識別號碼
-這個敏感資訊類型實體僅可用於歐盟國身分識別號碼的敏感資訊類型。
+## <a name="italy-fiscal-code"></a>義大利會計代碼
 
 ### <a name="format"></a>格式
 
@@ -7466,16 +7349,16 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 函數  `Func_italy_eu_national_id_card` 會找到符合模式的內容。 
     
 ```xml
-<!-- Italy national identification number -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Italy Fiscal Code -->
+      <Entity id="4cd79172-8da9-4ff5-9188-98b1e7e2eca6" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_italy_eu_national_id_card" />
           <Match idRef="Keywords_italy_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_italy_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -7563,89 +7446,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - passaporto numero
 - numéro passeport italien
 - numéro passeport
-
-
-## <a name="italy-tax-identification-number"></a>義大利納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
-
-### <a name="format"></a>格式
-
-在指定的模式中有16個字母和數位
-  
-### <a name="pattern"></a>模式
-
-16個字母和數位：
-  
-- 與系列名稱中的前三個雙子音相對應的三個字母 
-- 與名字中的第一個、第三個和第四個雙子音相對應的三個字母
-- 與出生年份的最後一個數位相對應的兩位數
-- 對應至出生月份的一個數位（字母會以字母順序使用），但是只會使用字母 A 到 E、H、L、M、P、P，R (因此，一月份為 A，10月是 R) 
-- 兩位數，對應至出生的出生一天，40會新增至女生中，以區別于男生
-- 對應至某人出生之 municipality 之特定區功能變數代碼的四位數（國家/地區的碼是用於國外國家/地區）。
-- 一個檢查碼
-    
-### <a name="checksum"></a>校驗
-
-是
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_italy_eu_tax_file_number` 會找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_italy_eu_tax_file_number` 。 
-    
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_italy_eu_tax_file_number` 會找到符合模式的內容。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_italy_eu_tax_file_number" />
-          <Match idRef="Keywords_italy_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_italy_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keywords_italy_eu_tax_file_number"></a>Keywords_italy_eu_tax_file_number
-
-- codice 會計
-- codice fiscale
-- codice 識別碼 personale
-- codice personale
-- 會計代碼
-- numero certificato personale
-- numero di identificazione fiscale
-- numero 識別碼 personale
-- numero personale
-- 個人憑證號碼
-- 個人程式碼
-- 個人識別碼代碼
-- 個人號碼
-- personalcodeno#
-- 稅碼
-- 納稅識別碼
-- 納稅識別碼否
-- 納稅識別號碼
-- 納稅身分識別號碼
-- 納稅否#
-- 納稅否
-- 納稅號碼
-- 稅務登記編號
-- taxid#
-- taxidno#
-- taxidnumber#
-- taxno#
-- taxnumber#
-- taxnumber
-- 納稅人識別碼
-- tin no
-- 錫#
 
 
 ## <a name="italy-value-added-tax-number"></a>義大利值增加的納稅號碼
@@ -8221,14 +8021,15 @@ Otemachi
 - dlno#
 - autovadītāja apliecība
 
-## <a name="latvia-national-identification-number"></a>拉脫維亞國身分識別號碼
-這個敏感資訊類型實體僅可用於歐盟國身分識別號碼的敏感資訊類型。
+## <a name="latvia-personal-code"></a>拉脫維亞個人程式碼
 
 ### <a name="format"></a>格式
 
-11位數和指定格式的連字號
+11位數和選擇性連字號
   
 ### <a name="pattern"></a>模式
+
+舊格式
 
 11位數和連字號：
   
@@ -8236,6 +8037,13 @@ Otemachi
 - 連字號
 - 一個數位，對應至出生的世紀 ( "0"，第5個世紀，"1" 表示20世紀，而 "2" 表示21世紀) 
 - 四位數（隨機產生）
+
+新格式
+
+11位數
+
+- 兩位數 "32"
+- 九位數
     
 ### <a name="checksum"></a>校驗
 
@@ -8244,23 +8052,39 @@ Otemachi
 ### <a name="definition"></a>定義
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_latvia_eu_national_id_card` 會找到符合模式的內容。 
+- 函數  `Func_latvia_eu_national_id_card` 或正則運算式 `Regex_latvia_eu_national_id_card_new_format` 找到符合模式的內容。 
 - 找到來自的關鍵字  `Keywords_latvia_eu_national_id_card` 。 
     
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_latvia_eu_national_id_card` 會找到符合模式的內容。 
+- 函數  `Func_latvia_eu_national_id_card` 或正則運算式 `Regex_latvia_eu_national_id_card_new_format` 找到符合模式的內容。 
     
 ```xml
-<!-- Latvia national identification number -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Personal Code -->
+      <Entity id="03fcf763-27c2-49ed-9422-2641c6c895c9" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_latvia_eu_national_id_card" />
           <Match idRef="Keywords_latvia_eu_national_id_card" />
         </Pattern>
- <Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_latvia_eu_national_id_card" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_latvia_eu_telephone_number" />
+            <Match idRef="Keywords_latvia_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_latvia_eu_national_id_card_new_format" />
+          <Match idRef="Keywords_latvia_eu_national_id_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_latvia_eu_national_id_card_new_format" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_latvia_eu_telephone_number" />
+            <Match idRef="Keywords_latvia_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
+
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -8371,111 +8195,6 @@ Otemachi
 - 護照否
 - pase numurs    
 
-## <a name="latvia-tax-identification-number"></a>拉脫維亞納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
-
-### <a name="format"></a>格式
-
-11位數，不含空格或分隔符號
-  
-### <a name="pattern"></a>模式
-
-指定的模式中的11位數
-  
-- 對應至出生日期 (DDMMYY 的六位數)  
-- 對應至出生世紀的一個數位，其中 "0" 對應于19世紀，"1" 對應于20世紀，"2" 對應于21世紀。
-- 四位數
-    
-### <a name="checksum"></a>校驗
-
-是
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_latvia_eu_tax_file_number` 會找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_latvia_eu_tax_file_number` 。 
-    
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_latvia_eu_tax_file_number` 會找到符合模式的內容。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_latvia_eu_tax_file_number" />
-          <Match idRef="Keywords_latvia_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_latvia_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keywords_latvia_eu_tax_file_number"></a>Keywords_latvia_eu_tax_file_number
-
-- 管理號碼
-- alvas nē
-- 出生號碼
-- 公民編號
-- 民事號碼
-- 電子人口普查編號
-- 電子號碼
-- 會計代碼
-- 醫療保健使用者號碼
-- Id#
-- 識別碼-程式碼
-- 識別號碼
-- identifikācijas numurs
-- 識別碼-號碼
-- 個別號碼
-- latvija alva
-- nacionālais 識別碼
-- 國家識別碼
-- 本國識別號碼
-- 本國身分識別號碼
-- 本國保險號碼
-- 本國收銀機號碼
-- nodokļa numurs
-- nodokļu 識別碼
-- nodokļu identifikācija numurs
-- 個人憑證號碼
-- 個人程式碼
-- 個人識別碼代碼
-- 個人號碼
-- 個人身分識別碼
-- 個人識別碼
-- 個人身分識別號碼
-- 個人號碼
-- 個人數位代碼
-- personalcodeno#
-- 角色 kods
-- 人口識別代碼
-- 公用服務號碼
-- 登記編號
-- 收入數目
-- 社交保險號碼
-- 社會安全號碼
-- 州稅碼
-- 稅收檔案編號
-- 納稅識別碼
-- 納稅識別碼否
-- 納稅識別號碼
-- 納稅否#
-- 納稅否
-- 納稅號碼
-- taxid#
-- taxidno#
-- taxidnumber#
-- taxno#
-- taxnumber#
-- taxnumber
-- 納稅人識別碼
-- tin no
-- 錫#
-- voter 的號碼
 
 ## <a name="lithuania-drivers-license-number"></a>立陶宛駕照編號
 這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
@@ -8526,8 +8245,7 @@ Otemachi
 - dlno#
 - vairuotojo pažymėjimas
 
-## <a name="lithuania-national-identification-number"></a>立陶宛國身分識別號碼
-這個敏感資訊類型實體僅可用於歐盟國身分識別號碼的敏感資訊類型。
+## <a name="lithuania-personal-code"></a>立陶宛個人程式碼
 
 ### <a name="format"></a>格式
 
@@ -8537,7 +8255,7 @@ Otemachi
 
 11位數，不含空格及分隔符號：
   
-- 對應至人員性別和出生世紀的一個數位
+- 對應至人員性別和出生世紀的一個數位 (1-6) 
 - 對應至出生日期 (YYMMDD 的六位數)  
 - 對應至出生日期之序號的三位數
 - 一個檢查碼
@@ -8549,23 +8267,27 @@ Otemachi
 ### <a name="definition"></a>定義
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_lithuania_eu_national_id_card` 會找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_lithuania_eu_national_id_card` 。 
+- 函數  `Func_lithuania_eu_tax_file_number` 會找到符合模式的內容。 
+- 找到來自的關鍵字  `Keywords_lithuania_eu_tax_file_number` 。 
     
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_lithuania_eu_national_id_card` 會找到符合模式的內容。 
+- 函數  `Func_lithuania_eu_tax_file_number` 會找到符合模式的內容。 
     
 ```xml
-<!-- Lithuania national identification number -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Personal Code -->
+      <Entity id="cd6d3786-8ec3-4524-a2cf-1e0095379171" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_lithuania_eu_national_id_card" />
-          <Match idRef="Keywords_lithuania_eu_national_id_card" />
-        </Pattern> 
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_lithuania_eu_national_id_card" />
+          <IdMatch idRef="Func_lithuania_eu_tax_file_number" />
+          <Match idRef="Keywords_lithuania_eu_tax_file_number" />
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_lithuania_eu_tax_file_number" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_lithuania_eu_telephone_number" />
+            <Match idRef="Keywords_lithuania_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -8645,78 +8367,6 @@ Otemachi
 - 護照否
 - paso numeris
 
-## <a name="lithuania-tax-identification-number"></a>立陶宛納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
-
-### <a name="format"></a>格式
-
-11位數，不含空格或分隔符號
-  
-### <a name="pattern"></a>模式
-
-11位數
-  
-### <a name="checksum"></a>校驗
-
-不適用
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_lithuania_eu_tax_file_number` 會找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_lithuania_eu_tax_file_number` 。 
-    
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_lithuania_eu_tax_file_number` 會找到符合模式的內容。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_lithuania_eu_tax_file_number" />
-          <Match idRef="Keywords_lithuania_eu_tax_file_number" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_lithuania_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keywords_lithuania_eu_tax_file_number"></a>Keywords_lithuania_eu_tax_file_number
-
-- asmeninis skaitmeninis kodas
-- asmens kodas
-- 公民服務號碼
-- mokesčių識別碼
-- mokesčių identifikavimas numeris
-- mokesčių identifikavimo numeris
-- mokesčių numeris
-- 國家識別號碼
-- 個人程式碼
-- piliečio paslaugos numeris
-- 納稅識別碼
-- 納稅識別碼否
-- 納稅識別號碼
-- 納稅否#
-- 納稅否
-- 納稅號碼
-- 稅務登記編號
-- taxid#
-- taxidno#
-- taxidnumber#
-- taxno#
-- taxnumber#
-- taxnumber
-- 納稅人識別碼
-- tin no
-- 錫#
-- unikalus identifikavimo kodas
-- unikalus identifikavimo numeris
-- 唯一識別碼
-- 唯一的身分識別號碼
-- uniqueidentityno#
 
 ## <a name="luxemburg-drivers-license-number"></a>Luxemburg 駕駛執照號碼
 這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
@@ -8767,39 +8417,48 @@ Otemachi
 - dlno#
 - fahrerlaubnis
 
-## <a name="luxemburg-national-identification-number"></a>Luxemburg 國身分識別號碼
-這個敏感資訊類型實體僅可用於歐盟國身分識別號碼的敏感資訊類型。
+## <a name="luxemburg-national-identification-number-natural-persons"></a>Luxemburg (自然個人的國家識別號碼) 
 
 ### <a name="format"></a>格式
 
-11位數，不含空格及分隔符號
+13位數沒有空格或分隔符號
   
 ### <a name="pattern"></a>模式
 
-11位數
+13位數：
   
-- 對應至人員性別和出生世紀的一個數位
-- 對應至出生日期 (YYMMDD 的六位數)  
-- 對應至出生日期之序號的三位數
-- 一個檢查碼
+- 11位數 
+- 兩個檢查碼
     
 ### <a name="checksum"></a>校驗
 
-不適用
+是
   
 ### <a name="definition"></a>定義
 
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 正則運算式會  `Regex_luxemburg_eu_national_id_card` 找到符合模式的內容。 
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
+- 函數  `Func_luxemburg_eu_tax_file_number` 會找到符合模式的內容。 
 - 找到來自的關鍵字  `Keywords_luxemburg_eu_national_id_card` 。 
-    
+
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+- 函數  `Func_luxemburg_eu_tax_file_number` 會找到符合模式的內容。 
+
+
 ```xml
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_luxemburg_eu_national_id_card" />
+      <!-- Luxemburg National Identification Number (Natural persons) -->
+      <Entity id="aaf661ed-29ec-426d-8bf9-880cad298ebb" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_luxemburg_eu_tax_file_number" />
           <Match idRef="Keywords_luxemburg_eu_national_id_card" />
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_luxemburg_eu_tax_file_number" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_luxemburg_eu_telephone_number" />
+            <Match idRef="Keywords_luxemburg_eu_mobile_number" />
+          </Any>
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -8867,19 +8526,24 @@ Otemachi
 - 護照否
 - passnummer
 
-## <a name="luxemburg-tax-identification-number"></a>Luxemburg 納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Luxemburg 非自然個人 (的本國識別碼) 
 
 ### <a name="format"></a>格式
 
-13位數沒有空格或分隔符號
+11位數
   
 ### <a name="pattern"></a>模式
 
-13位數：
+11位數
   
-- 11位數 
-- 兩個檢查碼
+- 兩位數
+- 選擇性的空格 
+- 三位數 
+- 選擇性的空格
+- 三位數 
+- 選擇性的空格
+- 兩位數
+- 一個檢查碼
     
 ### <a name="checksum"></a>校驗
 
@@ -8888,23 +8552,27 @@ Otemachi
 ### <a name="definition"></a>定義
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_luxemburg_eu_tax_file_number` 會找到符合模式的內容。 
+- 函數  `Func_luxemburg_eu_tax_file_number_non_natural` 會找到符合模式的內容。 
 - 找到來自的關鍵字  `Keywords_luxemburg_eu_tax_file_number` 。 
     
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_luxemburg_eu_tax_file_number` 會找到符合模式的內容。 
+- 函數  `Func_luxemburg_eu_tax_file_number_non_natural` 會找到符合模式的內容。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Luxemburg National Identification Number (Non-natural persons) -->
+      <Entity id="84bffa3a-d805-4788-a613-b1e4df3804cf" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_luxemburg_eu_tax_file_number" />
+          <IdMatch idRef="Func_luxemburg_eu_tax_file_number_non_natural" />
           <Match idRef="Keywords_luxemburg_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_luxemburg_eu_tax_file_number" />
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_luxemburg_eu_tax_file_number_non_natural" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_luxemburg_eu_telephone_number" />
+            <Match idRef="Keywords_luxemburg_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -9071,8 +8739,7 @@ Otemachi
 - dlno#
 - liċenzja tas-sewqan
 
-## <a name="malta-national-identification-number"></a>馬爾他國身分識別號碼
-這個敏感資訊類型實體僅可用於歐盟國身分識別號碼的敏感資訊類型。
+## <a name="malta-identity-card-number"></a>馬爾他身分識別卡號碼
 
 ### <a name="format"></a>格式
 
@@ -9083,7 +8750,7 @@ Otemachi
 七位數後接一個字母：
   
 - 七位數 
-- 一個大寫字母 (區分大小寫) 
+- "M，G，A，P，L，H，B，Z" (不區分大小寫的一個字母) 
     
 ### <a name="checksum"></a>校驗
 
@@ -9099,16 +8766,16 @@ Otemachi
 - 正則運算式會  `Regex_malta_eu_national_id_card` 找到符合模式的內容。 
     
 ```xml
- <!--Malta national identification number  -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Identity Card Number -->
+      <Entity id="854b36b3-a388-4ac8-a4ec-677c2b5e4356" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_national_id_card" />
           <Match idRef="Keywords_malta_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="65">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Regex_malta_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -9172,7 +8839,6 @@ Otemachi
 - numru tal-passaport
 
 ## <a name="malta-tax-identification-number"></a>馬爾他納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
 
 ### <a name="format"></a>格式
 
@@ -9200,23 +8866,30 @@ Otemachi
 ### <a name="definition"></a>定義
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_malta_eu_tax_file_number` 會找到符合模式的內容。 
+- Regex  `Regex_malta_eu_tax_file_number`  或 `Regex_malta_eu_tax_file_number_non_maltese_national` 找到符合模式的內容。 
 - 找到來自的關鍵字  `Keywords_malta_eu_tax_file_number` 。 
     
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是65%：
-- 函數  `Func_malta_eu_tax_file_number` 會找到符合模式的內容。 
+- Regex  `Regex_malta_eu_tax_file_number` 或 `Regex_malta_eu_tax_file_number_non_maltese_national` 找到符合模式的內容。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Tax ID Number -->
+      <Entity id="ec830c63-65f4-45d0-9d8c-910dc8334b20" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_malta_eu_tax_file_number" />
+          <IdMatch idRef="Regex_malta_eu_tax_file_number" />
           <Match idRef="Keywords_malta_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="65">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Regex_malta_eu_tax_file_number" />
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_malta_eu_tax_file_number_non_maltese_national" />
+          <Match idRef="Keywords_malta_eu_tax_file_number" />
+        </Pattern>
+        <Pattern confidenceLevel="65">
+          <IdMatch idRef="Regex_malta_eu_tax_file_number_non_maltese_national" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -9278,23 +8951,21 @@ Otemachi
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
 - 函數 Func_netherlands_bsn 找到符合模式的內容。
 - 會找到來自 Keyword_netherlands_bsn 的關鍵字。
-- 函數 Func_eu_date2 會找到正確日期格式的日期。
 - 校驗和通過。
 
 ```xml
-<!-- Netherlands Citizen's Service (BSN) Number -->
-<Entity id="c5f54253-ef7e-44f6-a578-440ed67e946d" patternsProximity="300" recommendedConfidence="85">
-  <Pattern confidenceLevel="85">
-       <IdMatch idRef="Func_netherlands_bsn" /> 
-       <Match idRef="Keyword_netherlands_bsn" /> 
-       <Match idRef="Func_eu_date2" /> 
-  </Pattern>
-</Entity>
+      <!-- Netherlands Citizen's Service (BSN) Number -->
+      <Entity id="c5f54253-ef7e-44f6-a578-440ed67e946d" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_netherlands_bsn" />
+          <Match idRef="Keywords_netherlands_eu_national_id_card" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keyword_netherlands_bsn"></a>Keyword_netherlands_bsn
+#### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
   
 - bsn#
 - bsn
@@ -9369,68 +9040,6 @@ Otemachi
 - rijbewijs
 - rijbewijsnummer
 
-## <a name="netherlands-national-identification-number"></a>荷蘭國身分識別號碼
-這個敏感資訊類型實體僅可用於歐盟國身分識別號碼的敏感資訊類型。
-
-### <a name="format"></a>格式
-
-九位數，不含空格或分隔符號
-  
-### <a name="pattern"></a>模式
-
-九位數
-  
-### <a name="checksum"></a>校驗
-
-是
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_netherlands_eu_national_id_card` 會找到符合模式的內容。 
-- 找到來自的關鍵字。
-    
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_netherlands_eu_national_id_card` 會找到符合模式的內容。 
-    
-```xml
- <!--Netherland national identification number  -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_netherlands_eu_national_id_card" />
-          <Match idRef="Keywords_netherlands_eu_national_id_card" />
-        </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_netherlands_eu_national_id_card" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
-
-- bsn#
-- bsn
-- burgerservicenummer
-- 公民服務號碼
-- 人員號碼
-- 個人號碼
-- 個人數位代碼
-- 人員相關號碼
-- persoonlijk nummer
-- persoonlijke numerieke 程式碼
-- persoonsgebonden
-- persoonsnummer
-- sociaal-fiscaal nummer
-- 社交會計編號
-- sofi
-- sofinummer
-- uniek identificatienummer
-- uniek identiteitsnummer
-- 唯一識別碼
-- 唯一的身分識別號碼
-- uniqueidentityno#
 
 ## <a name="netherlands-passport-number"></a>荷蘭護照號碼
 這個敏感資訊類型實體只適用于歐盟護照號碼機密資訊類型。
@@ -9476,7 +9085,6 @@ Otemachi
 - paspoortnummer
 
 ## <a name="netherlands-tax-identification-number"></a>荷蘭稅務識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
 
 ### <a name="format"></a>格式
 
@@ -9496,20 +9104,20 @@ Otemachi
 - 函數  `Func_netherlands_eu_tax_file_number` 會找到符合模式的內容。 
 - 找到來自的關鍵字  `Keywords_netherlands_eu_tax_file_number` 。 
     
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是65%：
 - 函數  `Func_netherlands_eu_tax_file_number` 會找到符合模式的內容。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Tax Identification Number -->
+      <Entity id="01f42a64-eba7-4892-a67b-398237e4ade2" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_netherlands_eu_tax_file_number" />
           <Match idRef="Keywords_netherlands_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Func_netherlands_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -10122,7 +9730,6 @@ Otemachi
 
    
 ## <a name="poland-national-id-pesel"></a>波蘭國家識別碼 (PESEL) 
-這種敏感資訊類型的實體包含在歐盟國身分識別號碼機密資訊類型中，並可作為獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -10130,7 +9737,9 @@ Otemachi
 
 ### <a name="pattern"></a>模式
 
-11個連續數位
+- 六位數代表出生日期格式 YYMMDD
+- 4位數
+- 1檢查碼
 
 ### <a name="checksum"></a>校驗
 
@@ -10143,14 +9752,21 @@ Otemachi
 - 會找到來自 Keyword_pesel_identification_number 的關鍵字。
 - 校驗和通過。
 
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+- 函數 Func_pesel_identification_number 找到符合模式的內容。
+- 校驗和通過。
+
 ```xml
-<!-- Poland National ID (PESEL) -->      
-<Entity id="E3AAF206-4297-412F-9E06-BA8487E22456" patternsProximity="300" recommendedConfidence="85">
-      <Pattern confidenceLevel="85">
+      <!-- Poland National ID (PESEL) -->
+      <Entity id="E3AAF206-4297-412F-9E06-BA8487E22456" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_pesel_identification_number" />
           <Match idRef="Keyword_pesel_identification_number" />
-      </Pattern>
-</Entity>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_pesel_identification_number" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -10270,7 +9886,6 @@ Otemachi
 
 
 ## <a name="poland-tax-identification-number"></a>波蘭納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
 
 ### <a name="format"></a>格式
 
@@ -10290,20 +9905,15 @@ Otemachi
 - 函數  `Func_poland_eu_tax_file_number` 會找到符合模式的內容。 
 - 找到來自的關鍵字  `Keywords_poland_eu_tax_file_number` 。 
     
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_poland_eu_tax_file_number` 會找到符合模式的內容。 
-    
+  
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Poland Tax Identification Number -->
+      <Entity id="1ff28b4d-40f2-49e9-b677-9606a88e2bca" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_poland_eu_tax_file_number" />
           <Match idRef="Keywords_poland_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_poland_eu_tax_file_number" />
-        </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -10340,9 +9950,6 @@ Otemachi
    
 
 ## <a name="portugal-citizen-card-number"></a>葡萄牙公民卡片號碼
-- 這種敏感資訊類型的實體包含在歐盟國身分識別號碼機密資訊類型中，並可作為獨立的機密資訊類型實體。
-- 這種敏感資訊類型實體包含在歐盟社會保險號碼或同等識別碼的敏感資訊類型中。
-
 
 ### <a name="format"></a>格式
 
@@ -10494,15 +10101,18 @@ Otemachi
 - número 執行 passaporte
 
 ## <a name="portugal-tax-identification-number"></a>葡萄牙納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
 
 ### <a name="format"></a>格式
 
-九位數（沒有空格或分隔符號）
+包含選擇性空格的九位數
   
 ### <a name="pattern"></a>模式
 
-九位數
+- 3位數
+- 選擇性的空格
+- 3位數
+- 選擇性的空格
+- 3位數
   
 ### <a name="checksum"></a>校驗
 
@@ -10514,20 +10124,20 @@ Otemachi
 - 函數  `Func_portugal_eu_tax_file_number` 會找到符合模式的內容。 
 - 找到來自的關鍵字  `Keywords_portugal_eu_tax_file_number` 。 
     
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是65%：
 - 函數  `Func_portugal_eu_tax_file_number` 會找到符合模式的內容。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Tax Identification Number -->
+      <Entity id="65372402-3131-4f1e-9983-4439841d1f15" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_portugal_eu_tax_file_number" />
           <Match idRef="Keywords_portugal_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Func_portugal_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -10610,8 +10220,7 @@ Otemachi
 - dlno#
 - permis de conducere
 
-## <a name="romania-national-identification-number"></a>羅馬尼亞國身分識別號碼
-這個敏感資訊類型實體僅可用於歐盟國身分識別號碼的敏感資訊類型。
+## <a name="romania-personal-numeric-code-cnp"></a>羅馬尼亞個人數位代碼 (CNP) 
 
 ### <a name="format"></a>格式
 
@@ -10619,8 +10228,11 @@ Otemachi
   
 ### <a name="pattern"></a>模式
 
-13位數
-  
+- 1-9 的1位數
+- 代表出生日期 (YYMMDD 的6位數) 
+- 可為01-52 或99的2位數
+- 4位數
+
 ### <a name="checksum"></a>校驗
 
 是
@@ -10635,16 +10247,16 @@ Otemachi
 - 函數  `Func_romania_eu_national_id_card` 會找到符合模式的內容。 
     
 ```xml
- <!--Romania national identification number  -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Personal Numerical Code (CNP) -->
+      <Entity id="eb5fa399-fe28-4c67-8188-d63a616ed89c" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_romania_eu_national_id_card" />
           <Match idRef="Keywords_romania_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_romania_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -10739,90 +10351,6 @@ Otemachi
 - 羅馬尼亞護照號碼
 - 護照否
 - numărul pașaportului
-
-## <a name="romania-tax-identification-number"></a>羅馬尼亞納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
-
-### <a name="format"></a>格式
-
-13位數沒有空格或分隔符號
-  
-### <a name="pattern"></a>模式
-
-13位數
-  
-### <a name="checksum"></a>校驗
-
-不適用
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 正則運算式會  `Regex_romania_eu_tax_file_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_romania_eu_tax_file_number` 。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_romania_eu_tax_file_number" />
-          <Match idRef="Keywords_romania_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keywords_romania_eu_tax_file_number"></a>Keywords_romania_eu_tax_file_number
-
-- Cnp#
-- Cnp
-- identificare 個人
-- 貨到數值的個人
-- 貨至 unic identificare
-- codnumericpersonal#
-- codul 會計 nr。
-- identificarea fiscală nr#
-- id-ul taxei
-- 保險號碼
-- insurancenumber#
-- 國家識別碼#
-- 國家識別碼
-- 國家識別號碼
-- număr identificare 個人
-- număr identitate
-- număr 個人 unic
-- număridentitate#
-- număridentitate
-- numărpersonalunic#
-- numărpersonalunic
-- număru de identificare fiscală
-- numărul de identificare fiscală
-- 個人數位代碼
-- 針#
-- 針
-- 納稅檔案編號
-- 稅收檔案編號
-- 納稅識別碼
-- 納稅識別碼否
-- 納稅識別號碼
-- 納稅否#
-- 納稅否
-- 納稅號碼
-- 稅務登記編號
-- taxid#
-- taxidno#
-- taxidnumber#
-- taxno#
-- taxnumber#
-- taxnumber
-- 納稅人識別碼
-- tin no
-- 錫#
-- 唯一識別碼
-- 唯一的身分識別號碼
-- uniqueidentityno#
-- uniqueidentityno
 
 
 ## <a name="russia-passport-number-domestic"></a>俄羅斯護照號碼國內
@@ -11083,16 +10611,18 @@ Otemachi
 - dlno#
 - vodičský preukaz
 
-## <a name="slovakia-national-identification-number"></a>斯洛伐克國身分識別號碼
-這個敏感資訊類型實體僅可用於歐盟國身分識別號碼的敏感資訊類型。
+## <a name="slovakia-personal-number"></a>斯洛伐克個人號碼
 
 ### <a name="format"></a>格式
 
-10位數包含一個反斜線
+包含選擇性反斜線的九位數或十位數
   
 ### <a name="pattern"></a>模式
 
-10位數包含一個反斜線：
+- 六位數代表出生日期
+- 選用斜線 (/) 
+- 3位數
+- 1個選擇性檢查碼
   
 ### <a name="checksum"></a>校驗
 
@@ -11104,20 +10634,21 @@ Otemachi
 - 函數  `Func_slovakia_eu_national_id_card` 會找到符合模式的內容。 
 - 找到來自的關鍵字  `Keywords_slovakia_eu_national_id_card` 。 
     
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是65%：
 - 函數  `Func_slovakia_eu_national_id_card` 會找到符合模式的內容。 
     
 ```xml
- <!-- Slovakia national identification number -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Personal Number -->
+      <Entity id="951c26b7-3b35-4f73-924b-15dd599cb9ab" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_slovakia_eu_national_id_card" />
           <Match idRef="Keywords_slovakia_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Func_slovakia_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
+    </Version>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -11209,86 +10740,6 @@ Otemachi
 - 護照否
 - číslo pasu
 
-## <a name="slovakia-tax-identification-number"></a>斯洛伐克納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
-
-### <a name="format"></a>格式
-
-沒有空格或分隔符號的10位數
-  
-### <a name="pattern"></a>模式
-
-10位數
-  
-### <a name="checksum"></a>校驗
-
-不適用
-  
-### <a name="definition"></a>定義
-
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 正則運算式會  `Regex_slovakia_eu_tax_file_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_slovakia_eu_tax_file_number` 。 
-    
-```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_slovakia_eu_tax_file_number" />
-          <Match idRef="Keywords_slovakia_eu_tax_file_number" />
-        </Pattern>
-</Entity>
-```
-
-### <a name="keywords"></a>關鍵字
-
-#### <a name="keywords_slovakia_eu_tax_file_number"></a>Keywords_slovakia_eu_tax_file_number
-
-- azonosító szám
-- 出生號碼
-- číslo národnej identifikačnej karty
-- číslo občianského preukazu
-- daňové číslo
-- 識別碼號碼
-- 識別碼否
-- 識別號碼
-- identifikačná karta č
-- identifikačné číslo
-- 身分識別卡
-- 身分識別卡號碼
-- národná identifikačná značka č
-- 國家/地區號碼
-- nationalnumber#
-- nemzeti személyazonosító igazolvány
-- personalidnumber#
-- rč
-- rodne cislo
-- rodné číslo
-- 社會安全號碼
-- Ssn#
-- Ssn
-- személyi igazolvány szám
-- személyi igazolvány száma
-- személyigazolvány szám
-- 納稅檔案編號
-- 稅收檔案編號
-- 納稅識別碼
-- 納稅識別碼否
-- 納稅識別號碼
-- 納稅否#
-- 納稅否
-- 納稅號碼
-- 稅務登記編號
-- taxid#
-- taxidno#
-- taxidnumber#
-- taxno#
-- taxnumber#
-- taxnumber
-- 納稅人識別碼
-- tin no
-- 錫#
-
 
 ## <a name="slovenia-drivers-license-number"></a>斯洛維尼亞駕照編號
 這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
@@ -11339,8 +10790,7 @@ Otemachi
 - dlno#
 - vozniško dovoljenje
 
-## <a name="slovenia-national-identification-number"></a>斯洛維尼亞國身分識別號碼
-這個敏感資訊類型實體僅可用於歐盟國身分識別號碼的敏感資訊類型。
+## <a name="slovenia-unique-master-citizen-number"></a>斯洛維尼亞唯一主公民號碼
 
 ### <a name="format"></a>格式
 
@@ -11351,7 +10801,7 @@ Otemachi
 指定的模式中的13位數：
   
 - 對應至出生日期 (DDMMLLL) （其中 "LLL" 會對應至出生年份的後三位數）的7位數 
-- 對應至出生區域的兩位數
+- 對應至出生 "50" 區域的兩位數
 - 對應至同一天出生的人的性別和序陣列合的三位數 (000-499 （適用于雌雄) 的男和500-999）
 - 一個檢查碼
     
@@ -11369,16 +10819,16 @@ Otemachi
 - 函數  `Func_slovenia_eu_national_id_card` 會找到符合模式的內容。 
     
 ```xml
- <!-- Slovenia national identification number -->
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Unique Master Citizen Number -->
+      <Entity id="68948b27-803d-41e4-adf1-13e05eb541bb" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_slovenia_eu_national_id_card" />
           <Match idRef="Keywords_slovenia_eu_national_id_card" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_slovenia_eu_national_id_card" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -11456,7 +10906,6 @@ Otemachi
 - številka potnega lista
 
 ## <a name="slovenia-tax-identification-number"></a>斯洛維尼亞納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
 
 ### <a name="format"></a>格式
 
@@ -11464,7 +10913,9 @@ Otemachi
   
 ### <a name="pattern"></a>模式
 
-八位數
+- 1-9 的一個數位
+- 六位數
+- 一個檢查碼
   
 ### <a name="checksum"></a>校驗
 
@@ -11476,20 +10927,20 @@ Otemachi
 - 函數  `Func_slovenia_eu_tax_file_number` 會找到符合模式的內容。 
 - 找到來自的關鍵字  `Keywords_slovenia_eu_tax_file_number` 。 
     
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是65%：
 - 函數  `Func_slovenia_eu_tax_file_number` 會找到符合模式的內容。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Tax Identification Number -->
+      <Entity id="e47b071e-c352-4d70-8241-8c215ad65505" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_nation_eu_tax_file_number" />
-          <Match idRef="Keywords_nation_eu_tax_file_number" />
+          <IdMatch idRef="Func_slovenia_eu_tax_file_number" />
+          <Match idRef="Keywords_slovenia_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="65">
           <IdMatch idRef="Func_slovenia_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -11690,39 +11141,52 @@ Otemachi
 - el carnet de conducir
 - carnet conducir
 
-## <a name="spain-national-identification-number"></a>西班牙國身分識別號碼
-這個敏感資訊類型實體僅可用於歐盟國身分識別號碼的敏感資訊類型。
+## <a name="spain-dni"></a>西班牙 DNI
 
 ### <a name="format"></a>格式
 
-七位數後接一個字元
+八位數後接一個字元
   
 ### <a name="pattern"></a>模式
 
 七位數後接一個字元
   
-- 七位數
-- 一個數位或字母 (不區分大小寫) 
+- 八位數
+- 選擇性空格或連字號
+- 一個檢查信件 (不區分大小寫) 
     
 ### <a name="checksum"></a>校驗
 
-不適用
+是
   
 ### <a name="definition"></a>定義
 
-如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 正則運算式會  `Regex_spain_eu_national_id_card` 找到符合模式的內容。 
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
+- 函數  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 找到符合模式的內容。 
 - 找到來自的關鍵字  `Keywords_spain_eu_national_id_card"` 。 
+
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+- 函數  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 找到符合模式的內容。 
+
     
 ```xml
-<!-- Spain national identification number -->
- 
-<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_spain_eu_national_id_card" />
+      <!-- Spain DNI -->
+      <Entity id="8e6251b9-47b4-40e8-a42b-0f80876be192" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
           <Match idRef="Keywords_spain_eu_national_id_card" />
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+          <Match idRef="Keywords_spain_eu_national_id_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -11841,7 +11305,6 @@ Otemachi
 無
 
 ## <a name="spain-tax-identification-number"></a>西班牙納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
 
 ### <a name="format"></a>格式
 
@@ -11885,23 +11348,30 @@ Foreigners 與 Foreigner 的識別號碼
 ### <a name="definition"></a>定義
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數  `Func_spain_eu_tax_file_number` 會找到符合模式的內容。 
+- 函數  `Func_spain_eu_tax_file_number` 或 `Func_spain_eu_DL_and_NI_number_citizen` 找到符合模式的內容。 
 - 找到來自的關鍵字  `Keywords_spain_eu_tax_file_number` 。 
     
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_spain_eu_tax_file_number` 會找到符合模式的內容。 
+- 函數  `Func_spain_eu_tax_file_number` 或 `Func_spain_eu_DL_and_NI_number_citizen` 找到符合模式的內容。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Spain Tax Identification Number -->
+      <Entity id="10f0d113-b0e1-47dc-872a-a4f45b9376a3" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_spain_eu_tax_file_number" />
           <Match idRef="Keywords_spain_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_spain_eu_tax_file_number" />
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+          <Match idRef="Keywords_spain_eu_tax_file_number" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -12068,7 +11538,6 @@ Foreigners 與 Foreigner 的識別號碼
 - körkort
 
 ## <a name="sweden-national-id"></a>瑞典國家識別碼
-這種敏感資訊類型的實體包含在歐盟國身分識別號碼機密資訊類型中，並可作為獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -12077,9 +11546,9 @@ Foreigners 與 Foreigner 的識別號碼
 ### <a name="pattern"></a>模式
 
 10或12位數和選用的分隔符號：
-- 二到四位數 (選用)  
+- 兩位數 (選用)  
 - 日期格式 YYMMDD 的六位數 
-- 分隔符號 "-" 或 "+" (選用) ，加上
+- "-" 或 "+" 的分隔符號 (選用) 
 - 四位數
 
 ### <a name="checksum"></a>校驗
@@ -12089,21 +11558,48 @@ Foreigners 與 Foreigner 的識別號碼
 ### <a name="definition"></a>定義
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
-- 函數 Func_swedish_national_identifier 找到符合模式的內容。
+- 函數 `Func_swedish_national_identifier` 會找到符合模式的內容。
+- 找到來自的關鍵字 `Keywords_swedish_national_identifier`
 - 校驗和通過。
 
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+- 函數 `Func_swedish_national_identifier` 會找到符合模式的內容。
+- 校驗和通過。
+
+
 ```xml
-<!-- Sweden National ID -->
-<Entity id="f69aaf40-79be-4fac-8f05-fd1910d272c8" patternsProximity="300" recommendedConfidence="85">
-    <Pattern confidenceLevel="85">
+    <!-- Sweden National ID -->
+    <Entity id="f69aaf40-79be-4fac-8f05-fd1910d272c8" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_swedish_national_identifier" />
-    </Pattern>
-</Entity>
+        <Match idRef="Keywords_swedish_national_identifier" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_swedish_national_identifier" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-否
+#### <a name="keywords_swedish_national_identifier"></a>Keywords_swedish_national_identifier
+
+- 識別碼 no
+- 識別碼號碼
+- Id#
+- 識別碼否
+- 識別號碼
+- identifikationsnumret#
+- identifikationsnumret
+- identitetshandling
+- 身分識別檔
+- identity no
+- 身分識別號碼
+- 識別碼-nummer
+- 個人識別碼
+- personnummer#
+- personnummer
+- skatteidentifikationsnummer
    
 ## <a name="sweden-passport-number"></a>瑞典護照號碼
 這個敏感資訊類型實體包含在歐盟護照號碼機密資訊類型中，並可作為獨立的敏感資訊類型實體。
@@ -12238,7 +11734,6 @@ Foreigners 與 Foreigner 的識別號碼
 - identifikationsnumret#
 
 ## <a name="sweden-tax-identification-number"></a>瑞典納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
 
 ### <a name="format"></a>格式
 
@@ -12249,7 +11744,7 @@ Foreigners 與 Foreigner 的識別號碼
 10位數和符號：
   
 - 對應至出生日期 (YYMMDD 的六位數)  
-- 正負號或反斜線
+- 加號或減號
 - 在下列情況下，識別號碼唯一的三位數： 
   - 若為1990之前所簽發的號碼，第七和第八位數識別出生的縣或對外出生的人員
   - 第九個位置中的位數會以奇數為單位表示，甚至是對女的性別
@@ -12269,16 +11764,20 @@ Foreigners 與 Foreigner 的識別號碼
 - 函數  `Func_sweden_eu_tax_file_number` 會找到符合模式的內容。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+      <!-- Sweden Tax Identification Number -->
+      <Entity id="139acba0-a5bc-4fbb-876d-f7a493ae8a40" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_sweden_eu_tax_file_number" />
           <Match idRef="Keywords_sweden_eu_tax_file_number" />
         </Pattern>
-<Pattern confidenceLevel="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_sweden_eu_tax_file_number" />
+          <Any minMatches="0" maxMatches="0">
+            <Match idRef="Keywords_sweden_eu_telephone_number" />
+            <Match idRef="Keywords_sweden_eu_mobile_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -12949,23 +12448,20 @@ OR
 - nationalinsurancenumber
 
     
-## <a name="uk-tax-identification-number"></a>英國。 納稅識別號碼
-此機密資訊類型實體僅可用於歐盟納稅識別碼的敏感資訊類型。
-
+## <a name="uk-unique-taxpayer-reference-number"></a>英國。 唯一的納稅人參考編號
 
 ### <a name="format"></a>格式
 
-唯一的納稅人參考 (UTR) ：10位數，不含空格及分隔符號
+10位數，不含空格及分隔符號
  
   
 ### <a name="pattern"></a>模式
 
-唯一的納稅人參考 (UTR) ：10位數
-
+10位數
   
 ### <a name="checksum"></a>校驗
 
-是
+否
   
 ### <a name="definition"></a>定義
 
@@ -12974,13 +12470,13 @@ OR
 - 找到來自的關鍵字  `Keywords_uk_eu_tax_file_number` 。 
     
 ```xml
- <!-- EU Tax File Number -->
-<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
+      <!-- U.K. Unique Taxpayer Reference Number -->
+      <Entity id="ad4a8116-0db8-439a-b545-6d967642f0ec" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_uk_eu_tax_file_number" />
           <Match idRef="Keywords_uk_eu_tax_file_number" />
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字

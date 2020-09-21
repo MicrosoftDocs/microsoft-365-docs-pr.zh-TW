@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及自動發佈保留標籤，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 7528fed52ae3df1a60303c40df35a42de6bc1f31
-ms.sourcegitcommit: 19515d787246d38c4e0da579a767ce67b9dbc2bc
+ms.openlocfilehash: 088a521089d34e74865c94b3cd147b02f8d812cb
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/31/2020
-ms.locfileid: "47315811"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816955"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤來保留或刪除內容
 
@@ -80,9 +80,11 @@ ms.locfileid: "47315811"
     
     - 如需檔案計劃描述元的詳細資訊，請參閱[使用檔案計劃管理保留標籤](file-plan-manager.md)
     
-    - 若要使用保留標籤將內容宣告為記錄，請啟用 [使用標籤以將內容分類為「記錄」]**** 核取方塊。
+    - 若要使用保留標籤聲明[記錄](records-management.md#records)，請啟用 **[將項目標記為記錄]** 選項。
 
-若要編輯現有的標籤，請選取它，然後選取 [編輯標籤]**** 以啟動相同的精靈讓您變更標籤描述和步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)。 或者，選取任何一個可用的 **[編輯]** 選項，直接移至相關頁面以進行更新。
+3. 建立標籤並看到發佈標籤、自動套用標籤或僅保存標籤的選項：選取 **[自動將此標籤套用於特定類型的內容]**，然後選取 **[完成]** 以啟動 [建立自動標籤] 精靈，該精靈將直接帶您進入以下過程中的步驟 2。
+
+若要編輯現有的標籤，請選取它，然後選取 **[編輯標籤]** 以啟動編輯保留精靈讓您變更標籤描述和步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)。
 
 
 ### <a name="step-2-create-an-auto-apply-policy"></a>步驟2：建立自動套用原則
@@ -92,20 +94,21 @@ ms.locfileid: "47315811"
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，瀏覽至下列其中一個位置：
     
     - 如果您使用記錄管理：**資訊控管**：
-        - [解決方案]****  >  [記錄管理]****  >  [標籤原則]**** 索引標籤 > [自動套用標籤]****
+        - **[解決方案]**  > ** [記錄管理]**  > ** [標籤原則]** 索引標籤 > **[自動套用標籤]**
     
     - 如果您未使用記錄管理：
-        - [解決方案]****  >  [資訊控管]****  >  [標籤原則]**** 索引標籤 > [自動套用標籤]****
+        - **[解決方案]**  >  **[資訊控管]**  >  **[標籤原則]** 索引標籤 > **[自動套用標籤]**
     
     沒有立即看到您的選項？ 先選取 [顯示全部]****。 
 
-2. 遵循精靈中的提示進行。
+2. 按照 [建立自動標籤精靈] 中的提示。
     
     如需有關設定會自動套用保留標籤之條件的詳細資訊，請參閱此頁面上的[設定自動套用保留標籤的條件](#configuring-conditions-for-auto-apply-retention-labels)一節。
     
     如需保留標籤支援的位置詳細資訊，請參閱[保留標籤和位置](retention.md#retention-label-policies-and-locations)一節。
 
-若要編輯現有的自動套用標籤原則，請選取它，然後選取 [編輯原則]**** 以啟動相同的精靈讓您變更標籤描述和步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)。 或者，選取任何一個可用的 [編輯]**** 選項，直接移至相關頁面以進行更新。
+若要編輯現有的自動套用原則，請選取該原則以啟動 [編輯保留原則] 精靈，該精靈允許您更改所選的保留標籤和步驟 2 中的任何[合格設定](#updating-retention-labels-and-their-policies)。
+
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>設定自動套用保留標籤的條件
 
@@ -119,17 +122,19 @@ ms.locfileid: "47315811"
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>自動將標籤套用至包含特定類型敏感資訊的內容
 
-當您為敏感性資訊建立自動套用保留標籤時，系統會顯示與建立資料外洩防護 (DLP) 原則時相同的原則範本清單。 每個原則範本預設會尋找特定類型的敏感性資訊。 例如本文顯示的範本會尋找美國 ITIN、SSN 和護照號碼。 若要深入了解 DLP，請參閱[資料外洩防護原則概觀](data-loss-prevention-policies.md)。
-  
+當您為敏感性資訊建立自動套用保留標籤時，系統會顯示與建立資料外洩防護 (DLP) 原則時相同的原則範本清單。 每個範本預設會尋找特定類型的敏感性資訊。 例如，此處顯示的範本從**隱私權**類別中查找美國 ITIN、SSN 和護照號碼，以及**美國個人識別資訊 (PII) 資料範本**：
+
 ![敏感資訊類型的原則範本](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+
+了解有關敏感性資訊類型的更多資訊，請參閱[敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)。
+
+選取原則範本後，您可以新增或移除任何類型的機密資訊，也可以變更執行個體計數和比對精確度。 在下方顯示的示例螢幕擷取畫面中，只有在以下情况下才會自動套用保留標籤：
   
-選取原則範本後，可以新增或移除任何類型的敏感資訊，且可以變更例項計數和比對精確度。此處所示的範例中，只有符合以下條件時，才會自動套用保留標籤：
-  
-- 內容包含 1 到 9 個下列三種敏感資訊類型。您可以刪除 **max ** (上限) 值，條件就會變成 **any** (任何)。
-    
-- 系統偵測到之機密資訊類型的比對精確度 (或信賴區間) 至少會有 75。 許多機密資訊類型是與多個合作夥伴所定義；比對精確度越高的模式需要更多證據 (例如關鍵字、日期或地址)，比對精確度越低的模式則需要較少證據。 **最小**比對精確度越低，內容就越容易與條件相符。 
-    
-如需這些選項的詳細資訊，請參閱[調整規則，讓規則更容易或更難相符](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
+- 系統偵測到之機密資訊類型的比對精確度 (或信賴區間) 至少會有 75。 許多機密資訊類型是與多個合作夥伴所定義；比對精確度越高的模式需要更多證據 (例如關鍵字、日期或地址)，比對精確度越低的模式則需要較少證據。 **最小**比對精確度越低，內容就越容易與條件相符。
+
+- 內容包含 1 到 9 個以下三種機密資訊類型其中之一的執行個體。 您可以删除 **to** 值，使其更改為**任何**。
+
+有關這些選項的更多資訊，請參閱 DLP 檔案中的以下指導方針[調整規則以讓它們更容易更難符合](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
     
 ![用於識別機密資訊類型的選項](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
@@ -137,7 +142,7 @@ ms.locfileid: "47315811"
 
 您可以使用包含特定字詞、片語或可搜尋屬性的查詢，自動將標籤套用至內容。您可以使用 AND、OR 和 NOT 等搜尋運算子來精簡查詢。
 
-![查詢編輯器](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
+![查詢編輯器](../media/new-retention-query-editor.png)
 
 如需使用關鍵字查詢語言 (KQL) 的查詢語法的詳細資訊，請參閱[關鍵字查詢語言 (KQL) 語法參考](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)。
 
@@ -167,7 +172,7 @@ ms.locfileid: "47315811"
 > [!CAUTION]
 > 我們正在淘汰 [粗穢言語]**** 內建分類器，因為這個分類器產生了大量的誤報。 請不要使用這個內建分類器，如果您目前正在使用此分類器，請將您的商務流程移開。 建議您改用 [針對性騷擾]****、[粗話]**** 和 [威脅]**** 內建分類器。
 
-若要使用此選項自動套用標籤，SharePoint Online 網站和信箱必須有至少 10 MB 的資料。
+若要使用此選項自動套用標籤，SharePoint 網站和信箱必須有至少 10 MB 的資料。
 
 如需有關可訓練分類器的詳細資訊，請參閱[開始使用可訓練分類器 (預覽)](classifier-getting-started-with.md)。
 
@@ -185,7 +190,7 @@ ms.locfileid: "47315811"
 
 在建立及儲存標籤或原則之後，部分設定無法變更，其中包括：
 - 保留期間以外的保留設定，除非您已將標籤設定為根據建立時間來保留或刪除內容。
-- 分類為記錄的選項。
+- 將項目標記為記錄的選項。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 01/29/2020
+ms.date: 09/16/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,23 +19,24 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 4030469b54d9a3a9c6f2eaceae384d39ea7f3e20
-ms.sourcegitcommit: 2614f8b81b332f8dab461f4f64f3adaa6703e0d6
+ms.reviewer: evaldm, isco
+ms.openlocfilehash: ace9ab8e5b73e4a4310b476c8954b0be81faaa66
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43637077"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962320"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>在自動化調查和回應功能中處理誤報/負片
 
 適用於：****
 - Microsoft 威脅防護
 
-Microsoft 威脅防護中的[自動化調查和回應功能](mtp-autoir.md)是否遺漏或錯誤地偵測到某項內容？ 您可以採取一些步驟加以修正。 您可以：
+Microsoft 威脅防護中的 [自動化調查和回應功能](mtp-autoir.md) 是否遺漏或錯誤地偵測到某項內容？ 您可以採取一些步驟加以修正。 您可以：
 
 - [向 Microsoft 報告誤報/負數](#report-a-false-positivenegative-to-microsoft-for-analysis)
 
-- [調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring)（如有需要）;和 
+- 視需要[調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring) () ;和 
 
 - [復原對裝置採取的修正動作](#undo-a-remediation-action-that-was-taken-on-a-device)。 
 
@@ -58,31 +59,28 @@ Microsoft 威脅防護中的[自動化調查和回應功能](mtp-autoir.md)是�
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>復原裝置上所執行的修復動作
 
-如果在裝置（例如 Windows 10 裝置）上採取修正動作，且該專案實際上不是威脅，您的安全性作業小組可以復原[動作中心](mtp-action-center.md)的修復動作。
+如果對裝置執行修正動作 (例如 Windows 10 裝置) ，且該專案實際上不是威脅，您的安全性作業小組可以復原 [動作中心](mtp-action-center.md)的修復動作。
 
 > [!IMPORTANT]
-> 在嘗試執行下列工作之前，請先確定您具備[必要的許可權](mtp-action-center.md#required-permissions-for-action-center-tasks)。
+> 在嘗試執行下列工作之前，請先確定您具備 [必要的許可權](mtp-action-center.md#required-permissions-for-action-center-tasks) 。
 
 1. 移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。 
 
 2. 在功能窗格中，選擇 [控制中心]****。 
 
-3. 在 [**記錄**] 索引標籤上，選取您要復原的動作。 這會開啟快顯視窗。<br/>
+3. 在 [ **記錄** ] 索引標籤上，選取您要復原的動作。 這會開啟快顯視窗。<br/>
     > [!TIP]
     > 使用篩選器縮小結果清單。 
 
-4. 在選取專案的浮出控制項中，選取 [**開啟調查] 頁面**。
+4. 在選取專案的浮出控制項中，選取 [ **開啟調查] 頁面**。
 
-5. 在 [調查詳細資料] 視圖中，選取 [**動作**] 索引標籤。
+5. 在 [調查詳細資料] 視圖中，選取 [ **動作** ] 索引標籤。
 
 6. 選取狀態為 [**已完成**] 的專案，然後在 [**決策**] 欄中尋找連結（如「**已核准**」）。 這會開啟快顯視窗，包含動作的詳細資料。
 
-7. 若要復原動作，請選取 [**刪除修正**]。
+7. 若要復原動作，請選取 [ **刪除修正**]。
 
-## <a name="related-articles"></a>相關文章
+## <a name="see-also"></a>請參閱
 
-- [與自動化調查及回應相關的核准或拒絕動作](mtp-autoir-actions.md)
-
-- [深入了解重要訊息中心](mtp-action-center.md)
-
+- [檢視自動調查的詳細資料和結果](mtp-autoir-results.md)
 - [使用 Microsoft 威脅防護中的進階搜捕功能主動尋找威脅](advanced-hunting-overview.md)

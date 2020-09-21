@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: 在 Microsoft 預約應用程式中變更預約頁面的色彩主題。
-ms.openlocfilehash: f76fee71194cb210f879617b8898e6fd8c9d7b92
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419415"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962510"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>自訂併發布您的預約頁面
 
 [預約] 頁面是您設定外部「客戶對誰預約」頁面外觀的所在位置。 當您自訂併發布您的預約頁面後，客戶將會使用它來預訂約會。
-
-> [!NOTE]
-> 預設會針對具有 Microsoft 365 商務標準、Microsoft 365 A3 或 Microsoft 365 A5 訂閱的客戶，開啟預訂。 預定也可供擁有 Office 365 Enterprise E3 和 Office 365 企業版 E5 的客戶使用，但預設為關閉。 若要開始，請參閱 [取得 Microsoft 預約存取權](get-access.md)。 若要開啟或關閉預約，請參閱 [為您的組織開啟或關閉預訂](turn-bookings-on-or-off.md)。
 
 若要自訂您的預約頁面，請登入 [Office.com](https://office.com)，然後 **移至 [** \> **預約預約] 頁面**。 您可以使用下列選項自訂 [預約] 頁面。 安裝預約頁面後，您可以將其發佈，讓客戶可以開始預約約會。
 

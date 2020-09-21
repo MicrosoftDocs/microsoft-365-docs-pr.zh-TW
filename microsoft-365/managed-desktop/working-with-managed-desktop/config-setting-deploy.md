@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b731422e6d981b12ea576ed26b841e7c679266ae
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: a24d0dc64e2262a8b208119c45a4a6bade701c10
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530256"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104531"
 ---
 # <a name="deploy-and-track-configurable-settings---microsoft-managed-desktop"></a>部署及追蹤可設定的設定-Microsoft 受管理的電腦
 
@@ -38,34 +38,35 @@ ms.locfileid: "46530256"
 
 **若要部署變更**
 
-1. 登入[Microsoft Managed Desktop Admin 入口網站](https://aka.ms/mwaasportal)
-2. 在 [設定] 底下，選取 [**可****設定**]。
-3. 在 [**部署狀態**] 工作區中，選取您要部署的設定，然後選取要部署的分段部署。
-4. 選取 [**部署**]，將變更部署至其中一個部署群組。
+1. 登入 [Microsoft 端點管理員](https://endpoint.microsoft.com/) ，並流覽至 [ **裝置** ] 功能表
+2. 尋找 [Microsoft 受管理的桌面] 區段，選取 [ **設定**]。
+3. 在 [ **部署狀態** ] 工作區中，選取您要部署的設定，然後選取要部署的分段部署。
+4. 選取 [ **部署** ]，將變更部署至其中一個部署群組。
 
 > [!NOTE] 
 > 橙色的警告圖示會指出有一個舊的群組可供部署，因此建議您在順序中執行。 
 
-![部署狀態工作區。 右側的 [信任的網站] 窗格。 「部署群組」區段分為三欄：部署群組、裝置和狀態。 在 [狀態] 欄中，會反白顯示「deploy」。](../../media/1deployedit.png)
+<!-- Needs picture updated to show MEM ![Deployment status workspace. Trusted sites pane on the right. In the Deployment groups section are three columns: deployment groups, devices, and status. In the status column, "deploy" is highlighted.](../../media/1deployedit.png) -->
+
 建議依照此順序部署至部署群組： Test、First、Fast 及寬泛。 
 
-每個群組中的變更完成時，狀態變更為 [**完成**]。
+每個群組中的變更完成時，狀態變更為 [ **完成**]。
 
-![部署狀態工作區，具有更新日期的欄、版本、測試、第一、快速和廣泛。 Proxy 列已展開，顯示每四個部署群組中已標示為 "complete" 的日期設定。](../../media/2completeedit.png)
+<!-- Needs picture updated to show MEM ![Deployment status workspace with columns for date updated, version, test, first, fast, and broad. The Proxy row is expanded, showing a dated setting flagged as "complete" in each of the four deployment groups.](../../media/2completeedit.png) -->
 
 ## <a name="revert-deployment"></a>還原部署
 
-在您部署變更之後，您可以從**部署狀態**還原。 當您還原**進行中**或**完成**的變更時，目前的部署會停止。 設定會還原為所有群組部署的最後一個版本。 
+在您部署變更之後，您可以從 **部署狀態**還原。 當您還原 **進行中** 或 **完成**的變更時，目前的部署會停止。 設定會還原為所有群組部署的最後一個版本。 
 
 我們將使用桌面背景圖片做為範例，顯示還原變更的步驟。 
 
 **還原變更**
-1. 登入[Microsoft Managed Desktop Admin 入口網站](https://aka.ms/mwaasportal)
-2. 在 [設定] 底下，選取 [**可****設定**]。
-3. 在 [**部署狀態**] 工作區中，選取您要還原的設定，然後選取要還原的分段部署。
-4. 在 [**需要回復此變更嗎？**] 下，選取 [**還原部署**]。
+1. 登入 [Microsoft 端點管理員](https://endpoint.microsoft.com/) ，並流覽至 [ **裝置** ] 功能表
+2. 尋找 [Microsoft 受管理的桌面] 區段，選取 [ **設定**]。
+3. 在 [ **部署狀態** ] 工作區中，選取您要還原的設定，然後選取要還原的分段部署。
+4. 在 [ **需要回復此變更嗎？**] 下，選取 [ **還原部署**]。
 
-![部署狀態工作區。 已選取 [瀏覽器起始頁面]，在右側開啟窗格，以及提交的變更及其狀態的相關資料。 在底部是「必須回復此變更」區域，您可以在其中選取「還原部署」。](../../media/3revert.png) 
+<!-- Needs picture updated to show MEM ![Deployment status workspace. Browser start pages is selected, opening a pane on the right side with data about the submitted change and its status. At the bottom is the "need to revert this change" area where you can select "Revert deployment."](../../media/3revert.png) -->
 
 ## <a name="additional-resources"></a>其他資源
 - [可設定的設定概述](config-setting-overview.md)

@@ -3,7 +3,7 @@ title: 'Microsoft 365 網路洞察力 (預覽) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/21/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 網路洞察力 (預覽) '
-ms.openlocfilehash: a9d4dbde112c9b6c74e340824c63ce2b9749e80e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e3730704b6672c931b7538659a38f218e769dd0a
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948513"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962368"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 網路洞察力 (預覽) 
 
@@ -86,7 +86,7 @@ ms.locfileid: "47948513"
 
 在某些摘要視圖中，此深入瞭解是「路由」。
 
-![非最優前門](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
+![非最佳 EXO 前門](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-exo.png)
 
 ### <a name="what-does-this-mean"></a>案例
 
@@ -102,7 +102,7 @@ ms.locfileid: "47948513"
 
 在某些摘要視圖中，此真知灼見是縮寫為 "Afd"。
 
-![非最優前門](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
+![非最佳 SPO 前門](../media/m365-mac-perf/m365-mac-perf-insights-detail-front-door-spo.png)
 
 ### <a name="what-does-this-mean"></a>案例
 
@@ -173,7 +173,7 @@ ms.locfileid: "47948513"
 
 ## <a name="related-topics"></a>相關主題
 
-[Microsoft 365 系統管理中心的網路效能建議 (預覽) ](office-365-network-mac-perf-overview.md)
+[Microsoft 365 系統管理中心的網路連線 (預覽) ](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 網路評估 (預覽) ](office-365-network-mac-perf-score.md)
 

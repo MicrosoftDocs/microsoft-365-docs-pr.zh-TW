@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: cd796a6bd5faebc87b2f7c9cab36fe17be41fe2e
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 43edaec282cc1efb9f4ab7d9e92ed0a779d255ab
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597464"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131555"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Microsoft 365 中的通訊法規遵從性
 
@@ -53,7 +53,7 @@ Microsoft 365 中的通訊相容性原則可協助您克服與相容性和內部
 
 - **法規遵從性**
 
-    大多數的組織必須遵守某些類型的規章遵循標準，成為其正常運作程式的一部分。 這些法規通常會要求組織執行某些類型的監察或監管程式，以進行適用于其行業的郵件功能。 財務行業規章機關 (FINRA) 規則3110是一種很好的範例，是組織必須具備監管程式程式才能掃描使用者通訊和其所在的企業類型的必要條件。 另一個範例可能需要檢查您組織中的經紀人通訊，以防範可能的金錢 laundering、內幕交易、collusion 或 bribery 活動。 通訊相容性原則可提供掃描和報告公司通訊的程式，協助您的組織符合這些需求。 如需對金融組織支援的詳細資訊，請參閱[美國銀行和資本市場的主要法規遵從性和安全性考慮](../solutions/financial-services-secure-collaboration.md)。
+    大多數的組織必須遵守某些類型的規章遵循標準，成為其正常運作程式的一部分。 這些法規通常會要求組織執行某些類型的監察或監管程式，以進行適用于其行業的郵件功能。 財務行業規章機關 (FINRA) 規則3110是一種很好的範例，是組織必須具備監管程式程式才能掃描使用者通訊和其所在的企業類型的必要條件。 另一個範例可能需要檢查您組織中的經紀人通訊，以防範可能的金錢 laundering、內幕交易、collusion 或 bribery 活動。 通訊相容性原則可提供掃描和報告公司通訊的程式，協助您的組織符合這些需求。 如需對金融組織支援的詳細資訊，請參閱 [美國銀行和資本市場的主要法規遵從性和安全性考慮](../solutions/financial-services-secure-collaboration.md)。
 
 ## <a name="new-enhancements"></a>新的增強功能
 
@@ -70,7 +70,7 @@ Microsoft 365 中的通訊法規遵從性提供數項重要的功能，以協助
 通訊相容性中可自訂的智慧範本可讓您套用機器教學，以智慧化偵測組織中的通訊違規。
 
 - **可自訂的預先設定的範本**：新原則範本可協助解決最常見的通訊風險。 使用預先定義的反騷擾和冒犯性語言、機密資訊和法規遵從性範本，就能更快速地建立及後續更新。
-- **新的機器學習支援**：內建威脅、騷擾、猥褻和影像[分類](classifier-getting-started-with.md)器有助於減少掃描郵件中的誤報時間，在調查和修正程式期間儲存檢閱者的時間。
+- **新的機器學習支援**：內建威脅、騷擾、猥褻和影像 [分類](classifier-get-started-with.md) 器有助於減少掃描郵件中的誤報時間，在調查和修正程式期間儲存檢閱者的時間。
 - **改進的條件**建立器：設定原則條件現在已簡化為原則嚮導中的單一整合體驗，以減少原則套用條件的方式混淆。
 
 ### <a name="flexible-remediation-workflows"></a>彈性修復工作流程
@@ -98,13 +98,13 @@ Microsoft 365 中的通訊法規遵從性提供數項重要的功能，以協助
 
 通訊相容性原則可跨多個通訊通道掃描及捕獲郵件，以協助您快速查看和修正法規遵從性問題：
 
-- **Microsoft 小組**：公用和私人[Microsoft 團隊](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)通道和個別聊天的聊天通訊支援為獨立通道來源或其他 Microsoft 365 服務。 當您選取要在通訊合規性原則中監督的使用者和群組時，您必須手動新增個別使用者、通訊群組或特定 Microsoft 小組頻道。
-- **Exchange online**：在您的 Microsoft 365 組織中的[exchange Online](https://docs.microsoft.com/Exchange/exchange-online)上主控的所有信箱都符合掃描資格。 電子郵件和附件比對通訊相容性原則的情況立即可用於監控和符合性報告。 Exchange Online 現在是一種選用的來源通道，而且通訊法規遵從性原則中已不再需要。
-- **Yammer**：通訊相容性原則支援[yammer](https://docs.microsoft.com/yammer/yammer-landing-page)中的私人郵件和公開社區交談。 Yammer 是選用的通道，必須是[原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，以支援郵件和附件的掃描。
-- **商務用 Skype online**：通訊相容性原則支援在[商務用 skype Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)中的掃描聊天通訊和相關聯的附件。
-- **協力廠商來源**：您可以掃描來自[協力廠商來源](archiving-third-party-data.md)的郵件，以用於將資料匯入至 Microsoft 365 組織中的信箱。 通訊相容性支援多個流行平臺的連線，包括立即 Bloomberg 和其他。
+- **Microsoft 小組**：公用和私人 [Microsoft 團隊](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) 通道和個別聊天的聊天通訊支援為獨立通道來源或其他 Microsoft 365 服務。 當您選取要在通訊合規性原則中監督的使用者和群組時，您必須手動新增個別使用者、通訊群組或特定 Microsoft 小組頻道。
+- **Exchange online**：在您的 Microsoft 365 組織中的 [exchange Online](https://docs.microsoft.com/Exchange/exchange-online) 上主控的所有信箱都符合掃描資格。 電子郵件和附件比對通訊相容性原則的情況立即可用於監控和符合性報告。 Exchange Online 現在是一種選用的來源通道，而且通訊法規遵從性原則中已不再需要。
+- **Yammer**：通訊相容性原則支援 [yammer](https://docs.microsoft.com/yammer/yammer-landing-page) 中的私人郵件和公開社區交談。 Yammer 是選用的通道，必須是 [原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) ，以支援郵件和附件的掃描。
+- **商務用 Skype online**：通訊相容性原則支援在 [商務用 skype Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)中的掃描聊天通訊和相關聯的附件。
+- **協力廠商來源**：您可以掃描來自 [協力廠商來源](archiving-third-party-data.md) 的郵件，以用於將資料匯入至 Microsoft 365 組織中的信箱。 通訊相容性支援多個流行平臺的連線，包括立即 Bloomberg 和其他。
 
-若要深入瞭解通訊相容性原則中的訊息通道支援，請參閱[支援的通訊類型](communication-compliance-feature-reference.md#supported-communication-types)。
+若要深入瞭解通訊相容性原則中的訊息通道支援，請參閱 [支援的通訊類型](communication-compliance-feature-reference.md#supported-communication-types)。
 
 ## <a name="workflow"></a>工作流程
 
@@ -119,7 +119,7 @@ Microsoft 365 中的通訊法規遵從性提供數項重要的功能，以協助
 在此工作流程步驟中，您可以識別您的相容性需求，並設定適用的通訊相容性原則。 原則範本是一種極好的方式，不僅可以快速設定新的符合性原則，也可以在需求變更時快速修改和更新原則。 例如，在為組織中的所有使用者設定原則之前，您可能會想要快速測試用於冒犯性語言和反騷擾使用者通訊的原則。
 
 >[!Important]
->根據預設，全域管理員無法存取通訊規範功能。 若要啟用通訊相容性功能的許可權，請參閱[建立組織中的通訊相容性](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。
+>根據預設，全域管理員無法存取通訊規範功能。 若要啟用通訊相容性功能的許可權，請參閱 [建立組織中的通訊相容性](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。
 
 您可以從下列 Microsoft 365 規範中心的原則範本中選擇：
 
@@ -132,7 +132,7 @@ Microsoft 365 中的通訊法規遵從性提供數項重要的功能，以協助
 
 在這個步驟中，您會深入瞭解偵測為符合您的通訊相容性原則所偵測到的問題。 此步驟包含下列 Microsoft 365 規範中心提供的動作：
 
-- **警示**：當郵件符合原則條件時，系統會自動產生警示。 針對每個警示，您可以查看狀態、嚴重性、偵測到的時間，以及是否已指派高級 eDiscovery 案例及其狀態。 新的提醒會顯示在通訊合規性首頁及**警示**頁面上，並依嚴重性順序列出。
+- **警示**：當郵件符合原則條件時，系統會自動產生警示。 針對每個警示，您可以查看狀態、嚴重性、偵測到的時間，以及是否已指派高級 eDiscovery 案例及其狀態。 新的提醒會顯示在通訊合規性首頁及 **警示** 頁面上，並依嚴重性順序列出。
 - **問題管理**：針對每個警示，您可以採取調查動作，協助修正在郵件中偵測到的問題。
 - **檔檢查**：在調查問題期間，您可以使用多個郵件視圖，以協助正確地評估偵測到的問題。 這些視圖包括交談摘要、僅限文字、批註和通訊交談的詳細資料檢視。
 - **審閱使用者活動歷程記錄**：針對原則相符，查看使用者訊息活動和修正動作（如過去的通知和上報）的記錄。
@@ -158,6 +158,6 @@ Microsoft 365 中的通訊法規遵從性提供數項重要的功能，以協助
 
 ## <a name="ready-to-get-started"></a>準備好開始使用了嗎？
 
-- 如需規劃資訊，請參閱[規劃通訊符合性](communication-compliance-plan.md)。
-- 查看 Contoso 的[案例研究](communication-compliance-case-study.md)，並查看其如何快速設定通訊相容性原則，以監視 Microsoft 小組、Exchange Online 和 Yammer 通訊中的冒犯性語言。
-- 若要設定 Microsoft 365 組織的通訊相容性，請參閱[configure communication 合規性（適用于 microsoft 365](communication-compliance-configure.md)）。
+- 如需規劃資訊，請參閱 [規劃通訊符合性](communication-compliance-plan.md)。
+- 查看 Contoso 的 [案例研究](communication-compliance-case-study.md) ，並查看其如何快速設定通訊相容性原則，以監視 Microsoft 小組、Exchange Online 和 Yammer 通訊中的冒犯性語言。
+- 若要設定 Microsoft 365 組織的通訊相容性，請參閱 [configure communication 合規性（適用于 microsoft 365](communication-compliance-configure.md)）。

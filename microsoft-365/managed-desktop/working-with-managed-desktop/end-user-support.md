@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2d6dab7ae722b6e64b782596e51e0898ddc2cccc
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289684"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104409"
 ---
-# <a name="getting-help-for-users"></a>取得使用者的協助
+# <a name="getting-help-for-users"></a>為使用者取得協助
 
 組織中的使用者可透過下列兩種方式取得 Microsoft 受管理桌面裝置的協助： **取得協助** 應用程式或電話支援。 這兩種支援選項均可供使用者在一周7天、一天24小時。
  
@@ -71,4 +71,4 @@ ms.locfileid: "47289684"
 ## <a name="additional-resources"></a>其他資源
 - [Microsoft 受管理的電腦的系統管理員支援](admin-support.md)。 
 - [Microsoft 受管理電腦的支援](../service-description/support.md)。
-- 如果您已訂閱 Microsoft 受管理的電腦，您可以在[microsoft Managed Desktop Admin 入口網站](https://aka.ms/mwaasportal)的 [**線上資源**] 區段中，找到 [Microsoft managed desktop admin Guide] 中的詳細程式、處理流程、工作指示及 FAQs。
+- 如果您已訂閱 Microsoft 受管理的電腦，您可以在 microsoft 管理的桌面系統管理指南中，[于 microsoft 的](https://endpoint.microsoft.com/)「**租**使用者管理」功能表的 [Microsoft 受管理的桌面] 區段**中，找到**相關的詳細程式、處理流程、工作指示及 FAQs。

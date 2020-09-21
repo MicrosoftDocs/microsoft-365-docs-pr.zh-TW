@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: e433b10b66b5e4f061227eae7e944c7fd19e2260
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 550f7dd35b3990a08da4c2bb9dd3042ff084b185
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104397"
 ---
 # <a name="register-new-devices-yourself"></a>自行註冊新裝置
 
-Microsoft 受管理的電腦可搭配全新的裝置運作，或您可重複使用您可能已經擁有的裝置 (這需要您重新製作其映像)。 您可以使用 Microsoft Managed Desktop Admin 入口網站來註冊裝置。
+Microsoft 受管理的電腦可搭配全新的裝置運作，或您可重複使用您可能已經擁有的裝置 (這需要您重新製作其映像)。 您可以在 Microsoft 的端點管理員入口網站中使用 Microsoft 受管理的桌上型電腦註冊裝置。
 
 > [!NOTE]
 > 與合作夥伴合作來取得裝置嗎？ 若是如此，您就不需要擔心取得硬體雜湊，他們會為您處理。 請確定您的夥伴已在 [夥伴中心](https://partner.microsoft.com/dashboard)與您建立關聯。 您的合作夥伴可在 [合作夥伴中心說明](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)深入了解。 建立這種關聯性後，您的合作夥伴就會代表您直接註冊裝置，您不須採取任何進一步動作。 如果您想要查看詳細資料，或您的合作夥伴有疑問，請參閱[可供合作夥伴註冊裝置的步驟](register-devices-partner.md)。 註冊好裝置後，您可以繼續[檢查映像](#check-the-image)並[將裝置交付](#deliver-the-device)給您的使用者。
@@ -73,9 +73,9 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
 
-從 Microsoft Managed Desktop [Admin 入口網站](https://aka.ms/mmdportal)的左側流覽窗格中，選取 [ **裝置** ]。 選取 [+ 註冊裝置]****；飛入視窗隨即開啟：
+在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的左導覽窗格中，選取 [ **裝置** ]。 尋找功能表中的 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 在 [Microsoft 受管理的電腦裝置] 工作區中，選取 [ **+ 註冊裝置** ]，以即時註冊新裝置。
 
-[![在選取 [註冊裝置] 之後飛入，並列出裝置與已指派使用者、序號、狀態、上次查看日期和年限等欄](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -87,7 +87,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 3. 選取 [註冊裝置]****。 系統會將裝置新增至 **裝置**上的裝置清單，並標示為 **AutopilotRegistrationRequested**。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
 
 
-您可以在主要 [Microsoft 受管理的電腦 - 裝置]**** 頁面上監視裝置註冊的進度。 其回報的可能狀態包括：
+您可以在主頁面上監視裝置註冊的進度。 其回報的可能狀態包括：
 
 | 狀態 | 描述 |
 |---------------|-------------|

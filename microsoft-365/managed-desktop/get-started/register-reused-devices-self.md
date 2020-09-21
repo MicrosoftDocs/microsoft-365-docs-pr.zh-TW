@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 51c241c46a4c8745bcae169a1c1d89e5c4393f2f
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 6c241894ab50b6b1341b06f47c107c8945fb6e8c
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289136"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104567"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 
@@ -21,7 +21,7 @@ ms.locfileid: "47289136"
 
 合作夥伴的程式會記錄在協力廠商，以 [供協力廠商註冊裝置](register-devices-partner.md)。
 
-Microsoft 受管理的電腦可搭配全新的裝置運作，或您可重複使用您可能已經擁有的裝置 (這需要您重新製作其映像)。 您可以使用 Microsoft Managed Desktop Admin 入口網站來註冊裝置。
+Microsoft 受管理的電腦可搭配全新的裝置運作，或您可重複使用您可能已經擁有的裝置 (這需要您重新製作其映像)。 您可以在 Microsoft 的端點管理員入口網站中使用 Microsoft 受管理的桌上型電腦註冊裝置。
 
 ## <a name="prepare-to-register-existing-devices"></a>準備註冊現有的裝置
 
@@ -56,7 +56,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 2. 在 [監視] 工作區中，展開 [ **報告** ] 節點、[ **報告**]，然後選取 [ **硬體-一般** ] 節點。 
 3. 執行報告、 **Windows Autopilot 裝置資訊**，以及查看結果。
 4. 在報表檢視器中，選取 [ **匯出** ] 圖示，然後選擇 **CSV (逗點分隔) ** ] 選項。
-5. 儲存檔案之後，您必須將結果篩選為您計畫向 Microsoft Managed Desktop 註冊的裝置，並將資料上傳至 Microsoft Managed Desktop [Admin 入口網站](https://aka.ms/mmdportal)，然後在左功能窗格中選取 [ **裝置** ]。 選取 [+ 註冊裝置]****；飛入視窗隨即開啟：
+5. 儲存檔案之後，您必須將結果篩選為您計畫向 Microsoft Managed Desktop 註冊的裝置，並將資料上傳至 Microsoft Managed Desktop。 開啟 Microsoft 端點管理員並流覽至 [ **裝置** ] 功能表，然後尋找 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 選取 [ **+ 註冊裝置** ]，以即時開啟新裝置。
 
 
 如需詳細資訊，請參閱 [使用系統管理入口網站的註冊裝置](#register-devices-by-using-the-admin-portal) 。
@@ -134,9 +134,9 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
 
-從 Microsoft Managed Desktop [Admin 入口網站](https://aka.ms/mmdportal)的左側流覽窗格中，選取 [ **裝置** ]。 選取 [+ 註冊裝置]****；飛入視窗隨即開啟：
+在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的左導覽窗格中，選取 [ **裝置** ]。 尋找功能表中的 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 在 [Microsoft 受管理的電腦裝置] 工作區中，選取 [ **+ 註冊裝置** ]，以即時註冊新裝置。
 
-[![在選取 [註冊裝置] 之後飛入，並列出裝置與已指派使用者、序號、狀態、上次查看日期和年限等欄](../../media/new-registration-ui.png)](../../media/new-registration-ui.png)
+<!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
 
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
@@ -149,7 +149,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 1. 選取 [註冊裝置]****。 系統會將裝置新增至 **裝置**上的裝置清單，並標示為 **AutopilotRegistrationRequested**。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
 
 
-您可以在主要 [Microsoft 受管理的電腦 - 裝置]**** 頁面上監視裝置註冊的進度。 其回報的可能狀態包括：
+您可以在主頁面上監視裝置註冊的進度。 其回報的可能狀態包括：
 
 | 狀態 | 描述 |
 |---------------|-------------|

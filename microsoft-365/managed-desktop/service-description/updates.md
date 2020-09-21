@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 1349b58bdd6243b05323f14197e0ad92c1fc0d7b
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 03a9b19a5b8ba957419e23c2bb12748c9c57e80d
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289492"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104615"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 受管理的電腦中處理更新
 
@@ -55,16 +55,15 @@ Microsoft 受管理的桌面會使用四個 Azure AD 群組來管理更新：
 
 
 <table>
-<tr><th colspan="5">更新部署設定</th></tr>
-<tr><th>更新類型</th><th>測試</th><th>名字</th><th>快速</th><th>廣泛</th></tr>
-<tr><td>作業系統的品質更新</td><td>0天</td><td>0天</td><td>0天</td><td>3天</td></tr>
-<tr><td>作業系統的功能更新</td><td>0天</td><td>30 天</td><td>60 天</td><td>90 天</td></tr>
-<tr><td>驅動程式/固件</td><td colspan="4">遵循品質更新的排程</td></tr>
-<tr><td>防病毒定義</td><td colspan="4">更新每個掃描</td></tr>
-<tr><td>Microsoft 365 Apps 企業版</td><td colspan="4">遵循 Office 的目前通道
+    <tr><th colspan="5">更新部署設定</th></tr>
+    <tr><th>更新類型</th><th>測試</th><th>名字</th><th>快速</th><th>廣泛</th></tr>
+    <tr><td>作業系統的品質更新</td><td>0天</td><td>0天</td><td>0天</td><td>3天</td></tr>
+    <tr><td>作業系統的功能更新</td><td>0天</td><td>30 天</td><td>60 天</td><td>90 天</td></tr>
+    <tr><td>驅動程式/固件</td><td colspan="4">遵循品質更新的排程</td></tr>
+    <tr><td>防病毒定義</td><td colspan="4">更新每個掃描</td></tr>
+    <tr><td>Microsoft 365 Apps 企業版</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">深入了解</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">深入了解</a></td></tr>
 </table>
-
-如需適用于企業的 Microsoft 365 應用程式目前通道的詳細資訊，請參閱 [microsoft 365 應用程式的更新通道概述](https://docs.microsoft.com/deployoffice/overview-update-channels)。
 
 >[!NOTE]
 >這些延期期間是特意設計，以確保所有使用者的高安全性和效能標準。 此外，根據在所有 Microsoft 受管理的桌面裝置上收集的資料，以及更新的範圍和影響，Microsoft 受管理的桌面保留可靈活修改任何和所有部署群組的上述延遲週期長度。

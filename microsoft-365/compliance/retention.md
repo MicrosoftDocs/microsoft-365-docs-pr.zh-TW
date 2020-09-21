@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 4dc328cdba9f01177b3e8239ab2c09317774eb31
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 7787d3e2e3dead737d7a0e5ed083a851a349d561
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546541"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816754"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 
@@ -77,7 +77,7 @@ ms.locfileid: "47546541"
 
 使用保留原則為網站或信箱層級的內容指派相同的保留設定，並使用保留標籤來指派項目層級 (資料夾、文件、電子郵件) 的保留設定。
 
-例如，如果 SharePoint 網站中的所有文件都應該保留五年，使用保留原則比將相同的保留標籤套用至該網站中所有文件的方法更有效率。 不過，如果該網站中的部分文件應保留五年，而其他文件保留十年，一個保留原則就不夠用。 當您必須在項目層級指定保留設定時，請使用保留標籤。 
+例如，如果 SharePoint 網站中的所有文件都應該保留 5 年，使用保留原則比將相同的保留標籤套用至該網站中所有文件的方法更有效率。 不過，如果該網站中的部分文件應保留 5 年，而其他文件保留 10 年，一個保留原則就不夠用。 當您必須在項目層級指定保留設定時，請使用保留標籤。 
 
 不同於保留原則，保留標籤的保留設定會隨著內容複製或移至其他 Microsoft 365 位置而保留。 此外，保留標籤具有以下保留原則不支援的功能： 
  
@@ -166,7 +166,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
 
 - **將預設保留標籤套用至 SharePoint 中的文件庫、資料夾或文件集**，以便儲存在該位置中的所有文件都繼承預設保留標籤。
 
-此外，保留標籤支援跨 Microsoft 365 應用程式和服務的電子郵件和文件[記錄管理](records-management.md)。 您可以使用保留標籤將內容分類為記錄。 發生此情況且內容仍保留在 Microsoft 365 中時，標籤會針對法規原因可能所需的內容施加進一步的限制。 如需詳細資訊，請參閱 [比較允許或封鎖動作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。
+此外，保留標籤支援跨 Microsoft 365 應用程式和服務的電子郵件和文件[記錄管理](records-management.md)。 您可以使用保留標籤將內容標記為記錄。 發生此情況且內容仍保留在 Microsoft 365 中時，標籤會針對法規原因可能所需的內容施加進一步的限制。 如需詳細資訊，請參閱 [比較允許或封鎖動作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。
 
 與[敏感度標籤](sensitivity-labels.md)不同，如果內容是移至 Microsoft 365 以外的位置，保留標籤不會保留。
 
@@ -178,7 +178,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
   
 例如，您可以建立並套用名為「稍後檢閱」的保留標籤，而不執行任何動作，然後使用該標籤於稍後尋找該內容。
   
-![標籤設定頁面中關閉保留](../media/retention-label-retentionoff.png)
+![僅限分類的標籤設定](../media/retention-label-retentionoff.png)
 
 #### <a name="using-a-retention-label-as-a-condition-in-a-dlp-policy"></a>使用保留標籤作為 DLP 原則的條件
 
@@ -267,6 +267,7 @@ Office 365 安全性與合規性中心具有來自**資訊控管** > **儀表板
 |可以保留然後刪除、僅保留或僅刪除的保留設定 |是 |是 |
 |支援的工作負載： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 群組 <br />- 商務用 Skype <br />- Teams|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，除了公用資料夾 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否  |
 |自動套用的保留 | 是 | 是 |
+|根據條件套用保留 <br /> - 敏感資訊類型、KQL 查詢、可訓練分類器| 否 | 是 |
 |手動套用的保留 | 否 | 是 |
 |使用者的 UI 目前狀態 | 否 | 是 |
 |如果內容已移動，則會持續存在 | 否 | 是，在 Microsoft 365 中 |

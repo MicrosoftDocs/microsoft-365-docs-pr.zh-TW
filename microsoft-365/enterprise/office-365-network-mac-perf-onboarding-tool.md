@@ -3,7 +3,7 @@ title: 'Microsoft 365 network connectivity test (預覽) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/15/2020
+ms.date: 09/17/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,23 +14,23 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 network connectivity test (預覽) '
-ms.openlocfilehash: 0a5e7831b28488e793488f572fd830d47a0f3f9a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948539"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962394"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 network connectivity test (預覽) 
 
 Microsoft 365 network connectivity test 工具位於 <https://connectivity.office.com> 。 其為輔助工具，可在 Microsoft 365 系統管理中心的 [ **健康情況 |] 底下使用網路評估和網路洞察力資訊。連接** 功能表。
 
+![Connectivity test 工具](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
+
 >[!NOTE]
 >Network connectivity test 工具支援位於 WW 和德國的承租人，但不支援 GCC 適中、GCC 高、DoD 或中國。
 
 Microsoft 365 系統管理中心的網路洞察力是以週期性產品測量值為基礎，針對每日進行匯總的 Microsoft 365 租使用者。 相比之下，來自 Microsoft 365 網路連線測試的網路洞察力會在本機執行，並在工具中執行一次。 您可以在產品中執行的測試是有限的，而且在使用者可以收集更多資料的地方執行測試時，可能會產生更深入的洞察力。 請考慮，Microsoft 365 系統管理中心的網路洞察力會顯示在特定辦公室位置使用 Microsoft 365 的網路問題。 Microsoft 365 連線測試可協助識別導致網路效能改進動作的問題根源。
-
-![Network connectivity test 工具](../media/m365-mac-perf/m365-mac-perf-admin-center.png)
 
 建議您將這些功能搭配使用，讓您可以在 Microsoft 365 系統管理中心中評估每個辦公室位置的網路品質狀態，並且在部署以 Microsoft 365 連線測試為基礎的測試之後找到更多細節。
 

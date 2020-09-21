@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: 設定 Microsoft 預約中約會之前或之後的緩衝時間，以允許清除或重設設備的時間。
-ms.openlocfilehash: dceb777f9ddba9f1ddabfee00608813afae57a86
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 882ab0340fe56976429ed8294f2fa386b801941f
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419368"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962344"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>在 Microsoft 預定中設定緩衝時間
 
 您的一些約會可能需要在您與客戶進行設定、清除或重設會議室和設備之後的時間。 或者，如果您正處於客戶約會之間，您可能需要一些時間，以確保您和您的小組可以在約會之間進行移動，而不需等待客戶等候。
 
 您可以在約會開始之前、約會結束或兩者之間設定緩衝時間，讓員工在下一個約會中做好準備。
-
-> [!NOTE]
-> 預設會針對具有 Microsoft 365 商務標準、Microsoft 365 A3 或 Microsoft 365 A5 訂閱的客戶，開啟預訂。 預定也可供擁有 Office 365 Enterprise E3 和 Office 365 企業版 E5 的客戶使用，但預設為關閉。 若要開始，請參閱 [取得 Microsoft 預約存取權](get-access.md)。 若要開啟或關閉預約，請參閱 [為您的組織開啟或關閉預訂](turn-bookings-on-or-off.md)。
 
 ## <a name="set-buffer-time-defaults"></a>設定緩衝時間預設值
 

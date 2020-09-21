@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: 請遵循下列指示，建立您的 [關於我們] 頁面，包括 Microsoft 預約中的公司名稱、位址、電話號碼、網站 URL、徽標和上班時間。
-ms.openlocfilehash: 65de115f2217948b1e57a1642ca3c6a105675898
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 0424794d4627d7c6770f86f32d81d4653f889163
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419391"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962498"
 ---
 # <a name="enter-your-business-information"></a>輸入您的商務資訊
 
@@ -25,7 +25,7 @@ ms.locfileid: "47419391"
    ![Microsoft 預約中商務資訊頁面範例的影像](../media/bookings-business-info.png)
 
 > [!NOTE]
-> 預設會針對具有 Microsoft 365 商務標準、Microsoft 365 A3 或 Microsoft 365 A5 訂閱的客戶，開啟預訂。 預定也可供擁有 Office 365 Enterprise E3 和 Office 365 企業版 E5 的客戶使用，但預設為關閉。 若要開始，請參閱 [取得 Microsoft 預約存取權](get-access.md)。 若要開啟或關閉預約，請參閱 [為您的組織開啟或關閉預訂](turn-bookings-on-or-off.md)。
+> 若要開始，請參閱 [取得 Microsoft 預約存取權](get-access.md)。 若要開啟或關閉預約，請參閱 [為您的組織開啟或關閉預訂](turn-bookings-on-or-off.md)。
 
 ## <a name="provide-business-name-and-contact-information"></a>提供公司名稱和連絡人資訊
 
@@ -41,7 +41,7 @@ ms.locfileid: "47419391"
 
 1. 輸入 **隱私權原則** 及 **字詞 & 條件** URLs。
 
-1. 選取 **[儲存]**。
+1. 選取 [儲存]****。
 
 ## <a name="set-your-business-hours"></a>設定上班時間
 

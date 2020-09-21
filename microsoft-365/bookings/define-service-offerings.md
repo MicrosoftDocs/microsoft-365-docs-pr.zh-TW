@@ -9,21 +9,18 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: 輸入服務產品資訊的指示，包括服務名稱、描述、位置、持續時間及定價。 您也可以標記有資格提供服務的員工。
-ms.openlocfilehash: 60b77633b9845b3c269f6773c1fb8a26256fbdc5
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 095188546c01149a793a478a3cbd5ac9fbeb5524
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419407"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962534"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>在預訂中定義您的服務選項
 
 當您在 Microsoft 預約中定義您的服務產品時，您可以設定服務名稱、描述、位置 (，選擇您要在人員中開會，還是要有線上會議) 、持續時間、客戶和人員的預設提醒、服務的內部注意事項及定價。 您也可以標記有資格提供服務的員工。 然後，當客戶前往您的商務網站來預訂約會時，他們就能確切看到可供使用的約會類型、選擇他們要提供服務的人員，以及其服務的成本。
 
 您也可以將自訂資訊和 URLs 新增至電子郵件確認，以及當某人透過您的預約頁面預定服務時所傳送的提醒。
-
-> [!NOTE]
-> 預設會針對具有 Microsoft 365 商務標準、Microsoft 365 A3 或 Microsoft 365 A5 訂閱的客戶，開啟預訂。 預定也可供擁有 Office 365 Enterprise E3 和 Office 365 企業版 E5 的客戶使用，但預設為關閉。 若要開始，請參閱 [取得 Microsoft 預約存取權](get-access.md)。 若要開啟或關閉預約，請參閱 [為您的組織開啟或關閉預訂](turn-bookings-on-or-off.md)。
 
 ## <a name="create-the-service-details"></a>建立服務詳細資料
 

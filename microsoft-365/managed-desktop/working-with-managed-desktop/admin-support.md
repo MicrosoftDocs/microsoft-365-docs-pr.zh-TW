@@ -1,5 +1,5 @@
 ---
-title: Microsoft 受管理電腦的系統管理員支援
+title: Microsoft 受管理的電腦的系統管理員支援
 description: ''
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fb786383e448ad3f5c78b22f3cdbf282c2c9f906
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 972430f5637f1160c330bed1558b79c8273171c5
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289718"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104579"
 ---
-# <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的系統管理員支援
+# <a name="admin-support-for-microsoft-managed-desktop"></a>Microsoft 受管理的電腦的系統管理員支援
 
 您可以使用 Microsoft Managed Desktop 管理入口網站，向 Microsoft 提交支援票證或意見反應。 支援要求永遠優先于意見反應報送。 支援要求會依照 [嚴重性定義表](#sev)中所述的嚴重性，加以會審和管理。 評審意見反應，並在要求的位置提供回應。 
 
@@ -24,10 +24,11 @@ ms.locfileid: "47289718"
 >請務必為應用程式封裝、裝置、安全性和其他 [設定系統管理員連絡人](../get-started/add-admin-contacts.md) 。 若未設定系統管理員連絡人，您就無法在任何區域中提交支援要求。
 
 **提交支援要求**
-1. 登入 [Microsoft Managed Desktop Admin 入口網站](https://aka.ms/mwaasportal)。 
-2. 在 [ **支援要求**] 上，選取 [ **+ 新支援票證**]。
-3. 選取符合您所需之説明的 **支援要求類型** 。 下表概述選項。 
-4. 選取 [ **嚴重性] 層級**。 如需詳細資訊，請參閱 [支援要求嚴重性定義](#sev)。 
+1. 登入 [Microsoft 端點管理員](https://endpoint.microsoft.com/) ，並流覽至 [ **疑難排解 + 支援** ] 功能表。
+2. 尋找 [Microsoft 受管理的桌面] 區段，選取 [提供 **要求**]。
+3. 在 [ **支援要求**] 上，選取 [ **+ 新支援票證**]。
+4. 選取符合您所需之説明的 **支援要求類型** 。 下表概述選項。 
+5. 選取 [ **嚴重性] 層級**。 如需詳細資訊，請參閱 [支援要求嚴重性定義](#sev)。 
 
 支援要求類型 | 何時使用
 --- | ---
@@ -58,7 +59,7 @@ ms.locfileid: "47289718"
 
 我們感激您的意見反應，並使用它來改進系統管理支援體驗。
 
-當票證處於 [已 **緩解** ] 或 [ **已解決** ] 狀態時，您就可以與該特定問題分享您的意見反應。 若要這麼做，請移至管理入口網站中的「 **支援要求** 」頁面。 選取特定票證。 在顯示在右側的 [飛入] 中，選取 [ **意見** 反應] 索引標籤，並提供所要求的資訊。 請小心不要將任何個人資訊包含在意見反應表單中。 如需隱私權的詳細資訊，請參閱 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)。
+當票證處於 [已 **緩解** ] 或 [ **已解決** ] 狀態時，您就可以與該特定問題分享您的意見反應。 若要執行此動作，請移至 MEM 入口網站的 [**疑難排解 + 支援**] 功能表中的 [**服務要求**] 頁面。 選取特定票證。 票證詳細資料會出現在右側的飛入位置，請選取 [ **回饋** ] 索引標籤，並提供所要求的資訊。 請小心不要將任何個人資訊包含在意見反應表單中。 如需隱私權的詳細資訊，請參閱 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)。
 
 ![意見反應表單](../../media/feedback_form.png)
 
@@ -67,4 +68,4 @@ ms.locfileid: "47289718"
 ## <a name="additional-resources"></a>其他資源
 - [Microsoft 受管理桌面的使用者支援](end-user-support.md)。 
 - [Microsoft 受管理電腦的支援](../service-description/support.md)。 
-- 如果您已訂閱 Microsoft 受管理的電腦，您可以在[microsoft Managed Desktop Admin 入口網站](https://aka.ms/mwaasportal)的 [**線上資源**] 區段中，找到 [Microsoft managed desktop admin Guide] 中的詳細程式、處理流程、工作指示及 FAQs。
+- 如果您已訂閱 Microsoft 受管理的電腦，您可以在 microsoft 管理的桌面系統管理指南中的 [microsoft managed desktop] 頁面的 [microsoft **managed desktop] 區段中**，于[microsoft Endpoint Manager](https://endpoint.microsoft.com/)中的 [**租使用者管理**] 功能表中，找到詳細程式、處理流程、工作指示及 FAQs。 **Online resources**

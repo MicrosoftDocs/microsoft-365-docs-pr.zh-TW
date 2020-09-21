@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5fde3c6d5fd14bd0e4d108030ffaa8e5aeb5ed5c
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: d64edc9d80722080db18c45127bfc82110d1ea9e
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289318"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131535"
 ---
 # <a name="plan-for-communication-compliance"></a>通訊合規性計畫
 
@@ -66,7 +66,7 @@ ms.locfileid: "47289318"
 - 若要簡化您的設定，請考慮為需要查看其通訊的使用者建立群組。 如果您使用的是群組，則為您可能需要數個。 例如，如果您想要掃描兩個不同的使用者群組之間的通訊，或是想要指定未監督的群組。
 - 設定要在100% 檢查的通訊百分比，以確保原則能夠捕捉組織中的所有相關問題。
 - 您可以從 [協力廠商來源](communication-compliance-feature-reference.md#supported-communication-types) 掃描通訊，以用於將資料匯入至 Microsoft 365 組織中的信箱。 若要在這些平臺中包含通訊的複查，您必須先設定這些服務的連接器，然後通訊原則才能監視郵件會議原則條件。
-- 在自訂通訊合規性原則中，原則可以支援非英文的監控語言。 使用您選擇的語言建立冒犯性文字的 [自訂關鍵字字典](communication-compliance-feature-reference.md#custom-keyword-dictionaries) ，或使用 Microsoft 365 中的 [trainable 分類](classifier-getting-started-with.md) 程式建立您自己的機器學習模型。
+- 在自訂通訊合規性原則中，原則可以支援非英文的監控語言。 使用您選擇的語言建立冒犯性文字的 [自訂關鍵字字典](communication-compliance-feature-reference.md#custom-keyword-dictionaries) ，或使用 Microsoft 365 中的 [trainable 分類](classifier-get-started-with.md) 程式建立您自己的機器學習模型。
 - 所有組織都有不同的通訊標準和原則需求。 使用通訊相容性 [原則條件](communication-compliance-feature-reference.md#conditional-settings) ，或利用 [自訂敏感資訊類型](create-a-custom-sensitive-information-type.md)監控特定類型的資訊，監視特定關鍵字。
 
 ## <a name="ready-to-get-started"></a>準備好開始使用了嗎？

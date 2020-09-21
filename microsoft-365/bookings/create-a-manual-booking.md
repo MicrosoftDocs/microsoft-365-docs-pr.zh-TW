@@ -9,19 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: 遵循下列指示建立約會，並透過 Microsoft 預約應用程式指派員工。
-ms.openlocfilehash: d0538b1c3e19a6bc78c997ff3e681ac30aa074ff
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: dffc63b1f638c551e40d22852b1ba6a73c5be869
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419418"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962558"
 ---
 # <a name="create-a-manual-booking"></a>建立手動預約
 
 您可以以兩種不同的方式排程和安排預訂。 第一種方式是由客戶使用獨立預約頁面或您新增至網站的內嵌預約頁面。 另一種方式是讓您或您的其中一位員工手動輸入預約，例如客戶通話約會。 本文涵蓋手動案例。
-
-> [!NOTE]
-> 預設會針對具有 Microsoft 365 商務標準、Microsoft 365 A3 或 Microsoft 365 A5 訂閱的客戶，開啟預訂。 預定也可供擁有 Office 365 Enterprise E3 和 Office 365 企業版 E5 的客戶使用，但預設為關閉。 若要開始，請參閱 [取得 Microsoft 預約存取權](get-access.md)。 若要開啟或關閉預約，請參閱 [為您的組織開啟或關閉預訂](turn-bookings-on-or-off.md)。
 
 1. 在 [Microsoft 365] 中，選取應用程式啟動器，然後選取 [ **預定**]。
 

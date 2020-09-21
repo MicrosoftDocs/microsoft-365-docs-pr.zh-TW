@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及發佈保留標籤的指示，以便您日後在應用程式中套用，用以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: a301568e80bdfe0681b052225852cde8bf8cdf50
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 2394ee4534ef837488503aae2558964924b2de6b
+ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778311"
+ms.lasthandoff: 09/15/2020
+ms.locfileid: "47816912"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>建立保留標籤，並在應用程式中使用這些標籤
 
@@ -68,15 +68,17 @@ ms.locfileid: "46778311"
     
     - 如需檔案計劃描述元的詳細資訊，請參閱[使用檔案計劃管理保留標籤](file-plan-manager.md)
     
-    - 若要使用保留標籤將內容宣告為記錄，請啟用 [使用標籤以將內容分類為「記錄」]**** 核取方塊。
+    - 若要使用保留標籤聲明[記錄](records-management.md#records)，請啟用 **[將項目標記為記錄]** 選項。
 
-3. 重複這些步驟以建立更多標籤。
+3. 建立標籤並看到發佈標籤、自動套用標籤或僅保存標籤的選項：選擇 **[立即儲存標籤]**，然後選擇 **[完成]**。
 
-若要編輯現有的標籤，請選取它，然後選取 [編輯標籤]**** 以啟動相同的精靈讓您變更標籤描述和步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)。 或者，選取任何一個可用的 **[編輯]** 選項，直接移至相關頁面以進行更新。
+4. 重複這些步驟以建立更多標籤。
+
+若要編輯現有的標籤，請選取它，然後選取 **[編輯標籤]** 以啟動編輯保留精靈讓您變更標籤描述和步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)。
 
 ### <a name="step-2-publish-retention-labels"></a>步驟 2：發布保留標籤
 
-發佈保留標籤，以便讓系統館員和使用者應用這些標籤。
+發佈保留標籤，以便使用者可以在應用程式 (如 SharePoint 和 Outlook) 中套用保留標籤。
 
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，瀏覽至下列其中一個位置：
     
@@ -92,7 +94,7 @@ ms.locfileid: "46778311"
     
     如需保留標籤支援的位置詳細資訊，請參閱[保留標籤和位置](retention.md#retention-label-policies-and-locations)一節。 
 
-若要編輯現有的保留標籤原則，請選取它，然後選取 [編輯原則]****，即可啟動相同的精靈讓您變更原則描述和步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)。 或者，選取任何一個可用的 [編輯]**** 選項，直接移至相關頁面以進行更新。
+要編輯現有的保留標籤原則 (原則類型為 **[發佈]**)，請將其選中，然後選取 **[編輯]** 選項以啟動編輯保留原則。 此精靈讓您從步驟 2 更改原則描述和任何[合格設定](#updating-retention-labels-and-their-policies)。
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>當保留標籤可以使用時
@@ -246,7 +248,8 @@ For example, you can create a rule that applies a specific retention label to al
 To create a rule, right-click an item \> **Rules** \> **Create Rule** \> **Advanced Options** \> **Rules Wizard** \> **apply retention policy**.
   
 ![Rules wizard with option to apply retention policies](../media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
-  
+
+Although the UI refers to retention policies, it's your retention labels that display here and can be selected, not your retention policies.
 
 ## Updating retention labels and their policies
 
