@@ -18,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: autoir
-ms.openlocfilehash: 725d22629d2c81a0edf8f329602214afddde6511
-ms.sourcegitcommit: 93e6bf1b541e22129f8c443051375d0ef1374150
+ms.reviewer: evaldm, isco
+ms.date: 09/16/2020
+ms.openlocfilehash: d7739ac6184509abe4df3aaf140db66f6039717c
+ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42633921"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "47962650"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>自動調查後核准或拒絕擱置的動作
 
@@ -33,9 +35,9 @@ ms.locfileid: "42633921"
 當自動化調查執行時，可能會導致需要核准才能繼續的一或多個[補救動作](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)。 例如，可能需要刪除一組電子郵件訊息，或可能需要移除隔離的檔案。 務必盡快核准 (或拒絕) 擱置中的動作，這樣您的自動化調查才能及時進行和完成。 
 
 > [!TIP]
-> 如果您認為 Microsoft 威脅防護中的自動調查和回應功能已錯過或錯誤地偵測到某項功能，請告訴我們！ 請參閱[如何在 Microsoft 威脅防護中，以自動化調查和回應（AIR）功能來報告誤報/負片](mtp-autoir-report-false-positives-negatives.md)。
+> 如果您認為 Microsoft 威脅防護中的自動調查和回應功能已錯過或錯誤地偵測到某項功能，請告訴我們！ 請參閱 how [to (AIR) Microsoft 威脅防護中的功能，以自動化調查和回應報告誤報的誤報/負片](mtp-autoir-report-false-positives-negatives.md)。
 
-您可以使用「[行動中心](#review-a-pending-action-in-the-action-center)」或「[調查詳細資料」視圖](#review-a-pending-action-in-the-investigation-details-view)，檢查和核准擱置的動作。
+您可以使用「 [行動中心](#review-a-pending-action-in-the-action-center) 」或「 [調查詳細資料」視圖](#review-a-pending-action-in-the-investigation-details-view)，檢查和核准擱置的動作。
 
 > [!NOTE]
 > 您必須具備[適當的權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，才能核准或拒絕補救動作。
@@ -62,8 +64,5 @@ ms.locfileid: "42633921"
 
 ## <a name="next-steps"></a>後續步驟
 
-- [深入了解重要訊息中心](mtp-action-center.md)
-
-- [深入了解事件](incidents-overview.md)
-
-- [了解搜捕](advanced-hunting-overview.md)
+- [檢視自動調查的詳細資料和結果](mtp-autoir-results.md)
+- [在自動化調查和回應功能中處理誤報/負片](mtp-autoir-report-false-positives-negatives.md)

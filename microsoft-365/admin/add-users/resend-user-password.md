@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: 瞭解如何重設密碼，並將通知電子郵件傳送至新的 Microsoft 365 使用者。
-ms.openlocfilehash: d39a448cdea9e986c46fbebc1d4cfcdf63882daf
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+description: 瞭解如何重設密碼，並將電子郵件傳送至新的 Microsoft 365 使用者。
+ms.openlocfilehash: 206e38929183fc280134a42e3febead2483d0f76
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361816"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131743"
 ---
 # <a name="resend-a-users-password---admin-help"></a>重新傳送使用者的密碼 - 系統管理說明
 
@@ -33,7 +33,7 @@ ms.locfileid: "47361816"
 
 ## <a name="before-you-begin"></a>在您開始之前
 
-本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶？](../admin-overview/admin-overview.md)。
+本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../admin-overview/admin-overview.md)
 
 您必須是 [全域系統管理員或密碼系統管理員](about-admin-roles.md) ，才可執行這些步驟。
 

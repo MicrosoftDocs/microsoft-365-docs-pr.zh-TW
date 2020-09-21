@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a684f49ab8c70a19a17ff43195197677bccbf95b
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 6b87b051d243c11fe2b32fccb50f3ad0d01d0c04
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816766"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956148"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>準備您的 Microsoft 威脅防護試用實驗室或試驗環境
 
@@ -67,7 +67,7 @@ ms.locfileid: "47816766"
 準備工作是任何成功部署的關鍵。 本節會引導您在準備建立 Microsoft 威脅防護部署的試用實驗室或試驗環境時，您需要考慮的事項。
 
 ## <a name="prerequisites"></a>必要條件
-瞭解授權、硬體和軟體需求，以及其他設定，以提供和使用 Microsoft 威脅防護。 請參閱 [Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?view=o365-worldwide)的最低需求， [microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)， [OFFICE 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)， [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)， [microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)。
+瞭解授權、硬體和軟體需求，以及其他設定，以提供和使用 Microsoft 威脅防護。 請參閱 [Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites)的最低需求， [microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)， [OFFICE 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)， [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)， [microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)。
 
 ## <a name="stakeholders-and-sign-off"></a>利益關係人和簽署
 您可以在下列區段中找出專案中相關的所有利益關係人，以及可能需要登入、審查或通知的所有利益關係人，是否要評估或執行試驗。
@@ -126,11 +126,12 @@ ms.locfileid: "47816766"
 
 | 元件                               | 說明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 設定順序排名 |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 進階威脅防護| Office 365 ATP 會保護您的組織免受電子郵件訊息、連結 (URLs) 和共同作業工具所帶來的惡意威脅。 <br> [瞭解更多資訊。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)                                                                                                                                                                                                                                             | 1                    |
+| Office 365 進階威脅防護| Office 365 ATP 會保護您的組織免受電子郵件訊息、連結 (URLs) 和共同作業工具所帶來的惡意威脅。 <br> [瞭解更多資訊。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
 |Azure 進階威脅防護|Azure ATP 使用 Active Directory 信號來識別、偵測和調查您組織中的高級威脅、已遭破壞的身分識別，以及惡意的有問必答行為。 <br> [深入了解](https://docs.microsoft.com/azure-advanced-threat-protection/)。| 2  |
-|Microsoft Cloud App Security| Microsoft Cloud App Security 是雲端存取安全性經紀人 (CASB) ，可在多個雲端上運作。 它可提供豐富的知名度、控制資料旅行和複雜的分析，以在所有雲端服務之間識別及打擊 cyberthreats。 <br> [深入了解](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |3                    |
+|Microsoft Cloud App Security| Microsoft Cloud App Security 是雲端存取安全性經紀人 (CASB) ，可在多個雲端上運作。 它可提供豐富的知名度、控制資料旅行和複雜的分析，以在所有雲端服務之間識別及打擊 cyberthreats。 <br> [深入了解](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |個                   |
 |Microsoft Defender 進階威脅防護 | Microsoft Defender ATP 端點偵測和回應功能可提供近乎即時並可採取行動的進階攻擊偵測。 安全性分析人員可以有效地排定警示的優先順序、深入了解入侵的全貌，並採取回應動作來補救威脅。 <br> [瞭解更多資訊。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>後續步驟
-![階段2：設定](../../media/setup.png) <br>[階段2：設定](setup-mtpeval.md)<br> 設定您的 Microsoft 威脅防護試用實驗室或試驗環境
+|![階段2：設定](../../media/setup.png) <br>[階段2：設定](setup-mtpeval.md) | 設定您的 Microsoft 威脅防護試用實驗室或試驗環境
+|:-------|:-----|
 

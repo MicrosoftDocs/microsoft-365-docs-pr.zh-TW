@@ -8,7 +8,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: heidip
-ms.date: 09/12/2020
+ms.date: 09/18/2020
 ms.reviewer: anmorgan
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: fc2b83fc167a9385383d7085ed6d1e8db15abd42
-ms.sourcegitcommit: a13f43a3e981c90f1e0b9805c9c16a56f67fc650
+ms.openlocfilehash: 570ef098a3989bf42d641b78e325414350b8e5a5
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47651129"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132109"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保護小組聊天、群組和檔案的原則建議
 
@@ -71,28 +71,49 @@ ms.locfileid: "47651129"
 |        |[需要相容的電腦](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在此原則中包括小組和相依服務。|
 |**敏感度**|[當登入風險為*低*、*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|小組也會考慮訪客存取和外部存取規則，您將在本文稍後深入瞭解這些規則。 在此原則中包括小組和相依服務。|
 |         |[需要相容 *的電腦和* 行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在此原則中包括小組和相依服務。|
-|**高管制**|[*永遠* 需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|不論使用者身分識別，您的組織都會使用 MFA。 在此原則中包括小組和相依服務。
+|**高管制**|[*永遠* 需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|不論使用者身分識別，您的組織都會使用 MFA。 在此原則中包括小組和相依服務。 |
 | | |
 
 ## <a name="teams-dependent-services-architecture"></a>小組相依服務架構
 
 為了供參考，下圖說明服務小組所依賴的服務。 如需詳細資訊及其他圖解，請參閱 microsoft [團隊和 microsoft 的相關生產力服務，請參閱 microsoft 365 FOR IT 架構設計](../solutions/productivity-illustrations.md)人員。
 
-![圖表顯示團隊對 SharePoint、商務 OneDrive 和 Exchange 的相依性依賴性](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
+[![圖表顯示團隊對 SharePoint、商務 OneDrive 和 Exchange 的相依性依賴性](../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-## <a name="enabling-guest-and-external-access-for-teams"></a>為小組啟用來賓和外部存取
+[查看較大版本的此影像](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
-在 Azure AD 中，來賓和外部使用者皆相同。 這兩種皆為來賓的使用者類型。 來賓使用者 B2B 使用者。 Microsoft 小組區分來賓使用者和應用程式中的外部使用者。 雖然瞭解各小組的各項處理方式很重要，但這兩種類型的使用者都是 Azure AD 中 B2B 使用者，而 B2B 使用者同時套用的建議原則，也是建議的原則。 如需允許來賓存取的建議原則，請參閱 [允許來賓和外部 B2B 存取的原則](identity-access-policies-guest-access.md)。
+## <a name="guest-and-external-access-for-teams"></a>團隊的來賓和外部存取權
+
+Microsoft 小組定義下列專案：
+
+- **來賓存取** 針對來賓或外部使用者使用 Azure AD B2B 帳戶，可將其新增為小組成員，並擁有對該小組之通訊和資源的所有專屬許可權存取權。
+
+- **外部存取** 適用于沒有 Azure AD B2B 帳戶的外部使用者。 外部存取可以包含邀請，並參與通話、聊天和會議，但不包括小組成員資格和對小組資源的存取。
+
+條件式存取原則只適用于小組中的來賓存取，因為有對應的 Azure AD B2B 帳戶。
+
+<!--
+In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both. 
+
+--> 
+
+如需允許使用 Azure AD B2B 帳戶存取來賓和外部使用者的建議原則，請參閱 [允許來賓和外部 B2B 帳戶存取的原則](identity-access-policies-guest-access.md)。
 
 ### <a name="guest-access-in-teams"></a>Teams 中的來賓存取
 
-除了您公司或組織內部的使用者原則之外，管理員還可以讓來賓存取允許以使用者為基礎的使用者，在您的公司或組織外部的人員存取小組資源，並與內部人員（例如群組交談、聊天和會議）進行互動。 您可以在下列連結中深入瞭解來賓存取： [小組訪客存取權](https://docs.microsoft.com/microsoftteams/guest-access)
+除了您公司或組織內部的使用者原則之外，管理員還可以讓來賓存取允許以使用者為基礎的使用者，在您的公司或組織外部的人員存取小組資源，並與內部人員（例如群組交談、聊天和會議）進行互動。 
+
+如需來賓存取及其實施方式的詳細資訊，請參閱  [小組訪客存取](https://docs.microsoft.com/microsoftteams/guest-access)。
 
 ### <a name="external-access-in-teams"></a>小組中的外部存取
 
-外部存取有時候會與來賓存取混淆，所以請務必明確這兩個非內部存取機制的實際差別很大。 「來賓存取」是以每位使用者為基礎進行， (您一次新增一個使用者) ，當系統管理員啟用外部存取時，可讓您同時將外部網域的所有使用者新增至小組。 不過，這些外部使用者的存取權和功能，不如透過來賓存取新增的人員。 外部存取使用者可以透過小組與您的內部使用者交談。
+外部存取有時候會與來賓存取混淆，所以請務必明確這兩個非內部存取機制的實際差別很大。 
 
-如需有關外部存取的詳細資訊，以及如何在需要時加以實施，請參閱 [管理 Microsoft 團隊中的外部存取](https://docs.microsoft.com/microsoftteams/manage-external-access)
+「外部存取」是一種方法，讓團隊使用者可以從整個外部網域尋找、呼叫、聊天及設定小組中的使用者的會議。 小組管理員會設定組織層級的外部存取。 如需詳細資訊，請參閱 [管理 Microsoft 團隊中的外部存取](https://docs.microsoft.com/microsoftteams/manage-external-access)。
+
+外部存取使用者與透過來賓存取新增的人員相比，具有較少的存取權和功能。 例如，外部存取使用者可以與內部使用者聊天，但無法存取小組通道、檔案或其他資源。
+
+外部存取不使用 Azure AD B2B 使用者帳戶，因此不會使用條件式存取原則。 
 
 ## <a name="teams-policies"></a>小組原則
 

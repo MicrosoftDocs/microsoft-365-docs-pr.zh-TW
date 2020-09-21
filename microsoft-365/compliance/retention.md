@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 7787d3e2e3dead737d7a0e5ed083a851a349d561
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816754"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132133"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 
@@ -83,7 +83,7 @@ ms.locfileid: "47816754"
  
 - 除了內容的年限或上次修改時間以外，還可選擇從為內容加上標籤的時間或根據事件來開始保留期間的選項。
 
-- 使用[可訓練分類器](classifier-getting-started-with.md)來識別要加上標籤的內容。
+- 使用[可訓練分類器](classifier-learn-about.md)來識別要加上標籤的內容。
 
 - 為 SharePoint 文件套用預設標籤。
 

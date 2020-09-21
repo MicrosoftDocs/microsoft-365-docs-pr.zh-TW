@@ -2,7 +2,7 @@
 title: 在高級 eDiscovery 中收集案例的資料
 f1.keywords:
 - NOCSH
-ms.author: esclee
+ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何使用 Advanced eDiscovery 中的搜尋工具，識別要在調查中查看的檔組。
 ms.custom: seo-marvel-2020
-ms.openlocfilehash: 9d8a88ddfc6bcb30f8678f39ad2bc4fbaf717ecc
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 725c289324a8e4d5bd4d7a7b9ddd9e091b6d6241
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034347"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956196"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>在高級 eDiscovery 中收集案例的資料
 
@@ -32,28 +32,28 @@ ms.locfileid: "44034347"
 
 ## <a name="create-a-search"></a>建立搜尋
 
-在 [**搜尋**] 索引標籤上選取 [**新增搜尋**]，將會啟動一個指導您建立搜尋的嚮導。 如需如何建立搜尋的詳細資訊，請參閱[建立搜尋以收集資料](create-search-to-collect-data.md)。
+在 [**搜尋**] 索引標籤上選取 [**新增搜尋**]，將會啟動一個指導您建立搜尋的嚮導。 如需如何建立搜尋的詳細資訊，請參閱 [建立搜尋以收集資料](create-search-to-collect-data.md)。
 
-在建立搜尋之後，會顯示一個包含詳細資料的浮出頁面頁面。 因為尚未完成搜尋，所以**統計**及**預覽**按鈕最初無法使用。 您可以在 [**搜尋**] 索引標籤上追蹤搜尋進度。
+在建立搜尋之後，會顯示一個包含詳細資料的浮出頁面頁面。 因為尚未完成搜尋，所以 **統計** 及 **預覽** 按鈕最初無法使用。 您可以在 [ **搜尋** ] 索引標籤上追蹤搜尋進度。
 
 ## <a name="view-search-results-and-statistics"></a>查看搜尋結果和統計資料
 
-內容搜尋有兩個元件：統計資料（預估）和預覽。 每個元件都完成之後，您會看到 [**搜尋**] 索引標籤的 [搜尋] 索引標籤上的**In progress**對應欄的狀態會**顯示為 [** **已完成**]。
+內容搜尋有兩個元件：統計資料 (估計) 和預覽。 每個元件都完成之後，您會看到 [**搜尋**] 索引標籤的 [搜尋] 索引標籤上的**In progress**對應欄的狀態會**顯示為 [** **已完成**]。
 
-完成搜尋預估後，請選取搜尋以顯示飛出頁面，此頁面會顯示搜尋結果的一些高層次統計資料。 此時，[**統計資料]** 按鈕將會作用中。 您可以選取它，以查看搜尋統計資料，例如：
+完成搜尋預估後，請選取搜尋以顯示飛出頁面，此頁面會顯示搜尋結果的一些高層次統計資料。 此時，[ **統計資料]** 按鈕將會作用中。 您可以選取它，以查看搜尋統計資料，例如：
 
 - 摘要
 - 主要位置
 - 查詢
 
-如需搜尋統計資料的詳細資訊，請參閱[搜尋統計資料](search-statistics.md)。
+如需搜尋統計資料的詳細資訊，請參閱 [搜尋統計資料](search-statistics.md)。
 
-完成預覽後，**預覽**按鈕將會作用中。 選取它，以預覽結果的抽樣子集。
+完成預覽後， **預覽** 按鈕將會作用中。 選取它，以預覽結果的抽樣子集。
 
 ## <a name="add-search-results-to-a-review-set"></a>將搜尋結果新增至檢閱集
 
-當您準備好收集並處理整個搜尋結果時，您可以將其新增至審閱集來執行。 如需詳細資訊，請參閱[將資料新增至審閱集](add-data-to-review-set.md)。
+當您準備好收集並處理整個搜尋結果時，您可以將其新增至審閱集來執行。 如需詳細資訊，請參閱 [將資料新增至審閱集](add-data-to-review-set.md)。
 
 ## <a name="add-non-microsoft-365-data-to-a-review-set"></a>將非 Microsoft 365 資料新增至審閱集
 
-在案例的集合過程中，您也可以將非 Office 365 資料新增至審閱集，並與您使用「搜尋」工具收集的 Office 365 資料一起進行審閱及分析。 當您新增非 Office 365 時，您必須將它與案例中的特定系統管理員相關聯。 如需詳細資訊，請參閱[Load 非 Microsoft 365 data into a a 審校 set](load-non-Office-365-data-into-a-review-set.md)。
+在案例的集合過程中，您也可以將非 Office 365 資料新增至審閱集，並與您使用「搜尋」工具收集的 Office 365 資料一起進行審閱及分析。 當您新增非 Office 365 時，您必須將它與案例中的特定系統管理員相關聯。 如需詳細資訊，請參閱 [Load 非 Microsoft 365 data into a a 審校 set](load-non-Office-365-data-into-a-review-set.md)。

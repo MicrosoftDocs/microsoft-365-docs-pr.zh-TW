@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類儀表板可讓您深入了解貴組織所發現及分類的敏感性資料。
-ms.openlocfilehash: aff6d2c30fe8036448a8816426896f080b86b9e6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 725dc5d2e9e5cf0638a54c5ee46d77b321ae4796
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948503"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131721"
 ---
 # <a name="know-your-data---data-classification-overview"></a>了解您的資料 - 資料分類概觀
 
@@ -34,7 +34,7 @@ ms.locfileid: "47948503"
 - 敏感性資料和保留資料的位置
 
 您也可以在 [資料分類] 頁面上管理這些功能：
-- [可訓練分類器](classifier-getting-started-with.md)
+- [可訓練分類器](classifier-learn-about.md)
 - [敏感性資訊類型](what-the-sensitive-information-types-look-for.md)
 
 您可以在 [Microsoft 365 合規性中心]**** 或 [Microsoft 365 安全性中心]**** > [分類]**** > [資料分析]**** 中找到資料分析。
@@ -137,4 +137,4 @@ SharePoint 和 OneDrive 中的檔案必須啟用敏感度標籤，以便在資�
 - [了解敏感度標籤](sensitivity-labels.md)
 - [瞭解保留原則和保留標籤](retention.md)
 - [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
-- [開始使用可訓練的分類器 (預覽)](classifier-getting-started-with.md)
+- [深入瞭解可訓練分類器（預覽版）](classifier-learn-about.md)

@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 網路洞察力 (預覽) '
-ms.openlocfilehash: e3730704b6672c931b7538659a38f218e769dd0a
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 682c888fefb9bec9725e470d62019c857fc2de07
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962368"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171335"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 網路洞察力 (預覽) 
 
@@ -157,7 +157,7 @@ ms.locfileid: "47962368"
 
 ### <a name="what-should-i-do"></a>我該怎麼做？
 
-若尚未啟用 office 位置網路連線，請啟用。 您想要識別哪些辦事處是由影響 Exchange 的不良網路連線所 impactred，並尋找一種方式，以在將使用者連線至 Microsoft 網路的情況時，提高網路周邊網路的能力。
+若尚未啟用 office 位置網路連線，請啟用。 您想要找出影響 Exchange 的網路連線不良影響哪些分支機搆，並尋找將使用者連線至 Microsoft 網路的方法，以改善網路周邊網路的速度。
 
 ## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>受連線問題影響的 SharePoint 採樣連接
 
@@ -169,7 +169,7 @@ ms.locfileid: "47962368"
 
 ### <a name="what-should-i-do"></a>我該怎麼做？
 
-若尚未啟用 office 位置網路連線，請啟用。 您想要識別哪些辦事處是透過 impactred SharePoint 影響的低網路連線能力所，並尋找將使用者連接至 Microsoft 網路的方式，以提升網路周邊網路的方式。
+若尚未啟用 office 位置網路連線，請啟用。 您想要找出會影響 SharePoint 不良網路連線的分支，並尋找一種方法，以將使用者連接至 Microsoft 的網路，以提升網路周邊網路的能力。
 
 ## <a name="related-topics"></a>相關主題
 
@@ -177,6 +177,6 @@ ms.locfileid: "47962368"
 
 [Microsoft 365 網路評估 (預覽) ](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 connectivity test in M365 Admin Center (預覽) ](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 network connectivity test 工具 (預覽) ](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location 服務 (預覽) ](office-365-network-mac-location-services.md)

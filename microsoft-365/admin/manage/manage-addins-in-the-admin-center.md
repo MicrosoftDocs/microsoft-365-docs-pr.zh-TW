@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 10bca6776173c07a28b097f44c641c3e65a0cf6c
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+description: 瞭解如何使用集中式增益集，將增益集部署至組織中的使用者和群組。
+ms.openlocfilehash: c7f8b7bf71dbdaaf1c850c801a5145d3ab47a65c
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948697"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171289"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>在系統管理中心管理增益集
 

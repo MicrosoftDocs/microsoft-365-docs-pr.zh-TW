@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以非常有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: b992452cffbe7fa2df5e7ad02726ca337fbe0f45
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 8663da0a93bb4781af747d810200d4a2a777acb4
+ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816841"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47948171"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-使用保留原則主動決定是否要保留內容、刪除內容，還是兩者，即保留然後刪除內容。 
+使用保留原則主動決定是否要保留內容、刪除內容，還是兩者，即保留然後刪除內容。
 
 透過將相同的保留設定依照位置如網站或信箱層級的內容進行指派，保留原則可讓您工作的更有效率，。 如果您不確定是否要使用保留原則或保留標籤，可參閱[保留原則及保留標籤](retention.md#retention-policies-and-retention-labels)。
 
@@ -41,6 +41,7 @@ ms.locfileid: "47816841"
 ## <a name="create-and-configure-a-retention-policy"></a>建立及設定保留原則
 
 雖然保留原則可以支援多個位置，但您無法建立含括所有支援位置的單一個保留原則：
+
 - Exchange 電子郵件
 - SharePoint 網站
 - OneDrive 帳戶
@@ -64,15 +65,15 @@ ms.locfileid: "47816841"
 2. 選取 **[新保留原則]** 以啟動 [建立保留原則] 精靈，並命名新的保留原則。
 
 3. 對於 **[選擇要套用原則的位置]** 頁面，請為 Teams 選取一個或兩個位置：**Teams 頻道訊息**和 **Teams 聊天**。
-     
-    針對 **Teams 頻道訊息**，會包含來自標準頻道的訊息，但不會包含 [私人頻道](https://docs.microsoft.com/microsoftteams/private-channels)。 目前，保留原則尚未支援 [私人頻道]。
-    
-    根據預設，[所有小組和所有使用者都處於選中狀態](#a-policy-that-applies-to-entire-locations)，但您可以透過選取 [**[選擇]** 和 **[排除]** 選項](#a-policy-with-specific-inclusions-or-exclusions)對其進行優化。
+
+   針對 **Teams 頻道訊息**，會包含來自標準頻道的訊息，但不會包含 [私人頻道](https://docs.microsoft.com/microsoftteams/private-channels)。 目前，保留原則尚未支援 [私人頻道]。
+
+   根據預設，[所有小組和所有使用者都處於選中狀態](#a-policy-that-applies-to-entire-locations)，但您可以透過選取 [**[選擇]** 和 **[排除]** 選項](#a-policy-with-specific-inclusions-or-exclusions)對其進行優化。
 
 4. 在精靈的頁面上，如需 **決定是否要保留內容、刪除內容，或兩者皆可**，請指定保留及刪除內容的設定選項。
-    
-    您可以建立只會保留內容但不刪除內容的保留原則，建立會保留並於一段指定的時間後刪除內容的原則，或直接在一段時間後刪除指定內容的原則。 如需詳細資訊，請參閱此頁面上的[保留和刪除內容的設定 ](#settings-for-retaining-and-deleting-content)。
-    
+
+   您可以建立只會保留內容但不刪除內容的保留原則，建立會保留並於一段指定的時間後刪除內容的原則，或直接在一段時間後刪除指定內容的原則。 如需詳細資訊，請參閱此頁面上的[保留和刪除內容的設定 ](#settings-for-retaining-and-deleting-content)。
+
 5. 完成精靈以儲存您的設定。
 
 如需 Teams 保留原則的詳細資訊，請參閱在 Teams 文件中的 [Microsoft Teams 的保留原則](https://docs.microsoft.com/microsoftteams/retention-policies)。
@@ -83,7 +84,7 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 
 如果您有未與 Microsoft 365 群組連線的 Teams 位置，您需要有可以包含 **SharePoint 網站**或 **OneDrive 帳戶**位置的保留原則，用以保留及刪除 Teams 中的檔案：
 
-- 在聊天中共用的檔案會儲存在共用檔案之使用者的 OneDrive 帳戶中。 
+- 在聊天中共用的檔案會儲存在共用檔案之使用者的 OneDrive 帳戶中。
 
 - 上傳至頻道的檔案則會儲存在團隊的 SharePoint 網站中。
 
@@ -92,15 +93,14 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 
 套用至 Microsoft 365、SharePoint 網站或 OneDrive 帳戶的保留原則有可能會刪除 Teams 聊天中參考的檔案，或在頻道訊息刪除前就將其刪除。 在這種情況下，檔案仍會顯示在 Teams 訊息中，但是當使用者選取檔案時，會收到「找不到檔案」錯誤。 此行為並非保留原則特定，因此也可能在使用者從 SharePoint 或 OneDrive 中手動刪除檔案時發生。
 
-
 ### <a name="retention-policy-for-locations-other-than-teams"></a>除了 Teams 以外的位置保留原則
 
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，選取 **[原則]** >  **[保留]**。
 
 2. 選取 **[新保留原則]** 以啟動 [建立保留原則] 精靈，並命名新的保留原則。
 
-3. 對於 **[選擇位置]** 頁面，開啟或關閉除 Teams 位置以外的任何位置。 您可以將每個位置保留為預設值，以便[將原則套用於整個位置](#a-policy-that-applies-to-entire-locations)，或[指定包含和排除](#a-policy-with-specific-inclusions-or-exclusions)。 
-    
+3. 對於 **[選擇位置]** 頁面，開啟或關閉除 Teams 位置以外的任何位置。 您可以將每個位置保留為預設值，以便[將原則套用於整個位置](#a-policy-that-applies-to-entire-locations)，或[指定包含和排除](#a-policy-with-specific-inclusions-or-exclusions)。
+
     位置專用資訊：
     - [Exchange 電子郵件和 Exchange 公用資料夾](#configuration-information-for-exchange-email-and-exchange-public-folders)
     - [SharePoint 網站和 OneDrive 帳戶](#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
@@ -108,11 +108,10 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
     - [商務用 Skype](#configuration-information-for-skype-for-business)
 
 4. 在精靈的頁面上，如需 **決定是否要保留內容、刪除內容，或兩者皆可**，請指定保留及刪除內容的設定選項。
-    
+
     您可以建立只會保留內容但不刪除內容的保留原則，建立會保留並於一段指定的時間後刪除內容的原則，或直接在一段時間後刪除指定內容的原則。 如需詳細資訊，請參閱此頁面上的[保留和刪除內容的設定 ](#settings-for-retaining-and-deleting-content)。
 
 5. 完成精靈以儲存您的設定。
-
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Exchange 電子郵件和 Exchange 公用資料夾的設定資訊
 
@@ -128,7 +127,7 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 
 當您選擇 **SharePoint 網站** 位置時，保留原則即可保留和刪除在 SharePoint 通訊網站中的文件、未與 Office 365 群組連結的小組網站，以及傳統網站。 此選項不支援由 Office 365 群組所連結的小組網站，而是使用套用倒群組信箱、網站和檔案中的內容的 **Office 365 群組**位置。
 
-雖然保留原則可套用到網站層級，但只有文件會套用保留設定。 保留設定不適用於組織結構，包含像是文件庫、清單及網站內的資料夾。 
+雖然保留原則可套用到網站層級，但只有文件會套用保留設定。 保留設定不適用於組織結構，包含像是文件庫、清單及網站內的資料夾。
 
 當您為 SharePoint 網站或 OneDrive 帳戶指定您的位置時，您不需要存取網站的權限，而當你在 **[編輯位置]** 頁面上指定 URL 時也不會需要進行任何的驗證。 不過，SharePoint 網站必須編制索引，而您指定的網站會在精靈結束時進行檢查，以確認這些網站是否存在。
 
@@ -151,7 +150,7 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 不同於 Exchange 電子郵件，您無法將 Skype 位置的狀態切換為開啟以自動包含所有使用者，但當您開啟該位置時，必須手動選擇您想要保留其交談的使用者：
 
 ![為保留原則選擇 Skype 位置](../media/skype-location-retention-policies.png)
-  
+
 當您選取 **[選擇使用者]** 時，您可以選取 **[選取所有]** 方塊，快速包含所有使用者。 不過，請務必了解，會將每個使用者算成原則中的一個特定包含。 因此，如果透過選擇 **[全選]** 方塊拉包含 1000 位使用者，則與手動選取要包含的 1000 位使用者相同，這是 商務用 Skype 支持的最大值。
 
 請注意 Outlook 中的 **[交談記錄]** 資料夾的功能與 Skype 封存毫無關聯。 使用者可以關閉 **[交談記錄]**，但 Skype 封存的運作方式是，將 Skype 交談的複本儲存在使用者無法存取但 eDiscovery 可以使用的隱藏資料夾。
@@ -161,39 +160,39 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 透過在保留原則中選擇用於保留和刪除內容的設定，您的保留原則會具有下列其中一個設定達一段指定的期間：
 
 - 僅保留
-    
+
     在此設定中，請選擇 **[在特定期內保留項目]** 和**在保留期結束時：不做任何處理**。 或者，選取 **[永遠保留項目]**。
 
 - 保留然後刪除
-    
+
     在此設定中，請選擇 **[在特定期內保留項目]** 和**在保留期結束時：自動刪除項目**。
 
 - 僅刪除
-    
+
     在此設定中，選擇 **「只有項目達到特定存留期時才刪除它」**。
 
 ### <a name="retaining-content-for-a-specific-period-of-time"></a>將內容保留特定的一段時間
 
 設定保留原則時，您會選擇保留項目，或將其保留特定數天、數月或數年。 或者永遠保留項目。
 
-設定保留原則時，您可以選擇無限期保留內容，或將內容保留特定數天、數月或數年。 保留時長是從內容的存留期起算，而不是從套用保留原則的時間起算。 
+設定保留原則時，您可以選擇無限期保留內容，或將內容保留特定數天、數月或數年。 保留時長是從內容的存留期起算，而不是從套用保留原則的時間起算。
 
 保留期開始時，您還可以選擇建立內容的時間，或者只支援檔案和 SharePoint、OneDrive 和 Office 365 位置的內容上次修改的時間。
 
 範例：
-  
+
 - SharePoint：如果您在將網站集合中的項目在上次修改后保留七年，而該網站集合中的某文件已有六年未曾修改，如果後續仍未修改該文件，則只會再保留該文件一年。 如果該文件重新編輯，則其存留期將會從新的前次修改日期起算，因而會再保留七年。
-  
+
 - Exchange：同樣地，如果您要讓信箱中的項目保留七年，而六年前已傳送過某封郵件，該郵件則只會再保留一年。 若為 Exchange 項目，時限是以收到內送電子郵件的日期，或傳送外寄電子郵件的日期為基礎。 根據前次修改時間保留項目只會套用到 OneDrive 和 SharePoint 中的網站內容。
-  
+
 在保留期間結束時，您會選擇是否要永久刪除內容：
-  
+
 ![保留設定頁面](../media/b05f84e5-fc71-4717-8f7b-d06a29dc4f29.png)
-  
+
 ### <a name="deleting-content-thats-older-than-a-specific-age"></a>刪除早於特定存留期的內容
 
 保留原則可以保留然後刪除項目，或刪除舊項目而不保留它們。
-  
+
 在這兩種情況下，如果您的保留原則刪除項目，請務必了解，文件刪除原則所指定的期限並不是從指派原則的時間算起，而是從建立或修改項目的時間算起。
 
 因此，在第一次指派保留原則之前，尤其是在該原則删除項目時，請首先考慮現有內容的期限以及該原則可能對該內容產生的影響。 您也可以在指派新原則前先與使用者溝通，讓他們有足夠的時間可評估可能的影響。
@@ -201,22 +200,22 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 ### <a name="a-policy-that-applies-to-entire-locations"></a>套用到整個組織的原則
 
 當您選擇位置時，除了商務用 Skype，預設設定是當位置的狀態為**開啟**時的**全部**。
-  
-當保留原則套用於整個位置的任何組合時，原則可以包含的收件者、網站、帳戶、組等的數量沒有限制。 
+
+當保留原則套用於整個位置的任何組合時，原則可以包含的收件者、網站、帳戶、組等的數量沒有限制。
 
 例如，如果原則包含所有 Exchange 電子郵件和所有 SharePoint 網站，無論有多少個網站和收件者都會全部包含。 而對於 Exchange，在套用原則後建立的任何新信箱都會自動繼承原則。
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>具有特定包含或排除的原則
 
-您也可以將保留原則套用至特定使用者、特定 Microsoft 365 群組或特定網站。 若要這麼做，請確保該位置的 **[狀態]** 為** [開啟]**，然後使用連結來包含或排除特定使用者、Microsoft 365 群組或網站。 
-  
+您也可以將保留原則套用至特定使用者、特定 Microsoft 365 群組或特定網站。 若要這麼做，請確保該位置的 **[狀態]** 為** [開啟]**，然後使用連結來包含或排除特定使用者、Microsoft 365 群組或網站。
+
 不過，使用此設定時，如果您的保留原則包含或排除超過 1,000 個特定物件，則會有一些限制：
-  
+
 - 保留原則的數目上限：
-    - 1000 個信箱
-    - 1,000 個 Microsoft 365 群組
-    - 1000 個 Teams 私人聊天使用者
-    - 100 個網站 (OneDrive 或 SharePoint)
+  - 1000 個信箱
+  - 1,000 個 Microsoft 365 群組
+  - 1000 個 Teams 私人聊天使用者
+  - 100 個網站 (OneDrive 或 SharePoint)
 
 針對一個租用戶支援的原則數目上限：10,000 個。 這些項目包括保留原則、保留標籤原則，以及自動套用保留原則。
 
@@ -224,9 +223,9 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 
 > [!WARNING]
 > 如果您設定 [包含] 然後移除最後一個，則設定會還原為該位置的 **[全部]**。  儲存原則前，請確定這是您想要的設定。
-> 
+>
 > 例如，如果您指定一個 SharePoint 網站要包含在設定為刪除資料的保留原則中，然後移除單一網站，則預設所有 SharePoint 網站都會遵守永久刪除資料的保留原則。 Exchange 收件者、OneDrive 帳戶、Teams 聊天使用者等都適用。
-> 
+>
 > 在這種情況下，如果您不想讓該位置的 **[所有]** 設定遵守保留原則，可以將位置切換為 [關閉]。 或者，指定 [排除] 以免於使用原則。
 
 ## <a name="updating-retention-policies"></a>更新保留原則
@@ -243,22 +242,22 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 
 1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
-2. 執行 [Get-RetentionCompliancePolicy](https://powershell/module/exchange/get-retentioncompliancepolicy) 列出您的保留原則清單，並尋找您想要鎖定的原則名稱。 例如：
-    
+2. 執行 [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy) 列出您的保留原則清單，並尋找您想要鎖定的原則名稱。 例如：
+
    ![PowerShell 中保留原則的清單](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
-    
+
 3. 若要將保留鎖定置於保留原則上，請以保留原則名稱執行 [Set-RetentionCompliancePolicy]( ) cmdlet，並將 *RestrictiveRetention* 參數設為 true：
-    
+
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true
     ```
-    
+
     例如：
-    
+
     ![PowerShell 中的 RestrictiveRetention 參數](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
-    
+
      當系統提示時，請閱讀並輸入 **Y** 來認可此設定隨附的限制：
-    
+
    ![確認您在 PowerShell 想要鎖定保留原則的提示。](../media/retention-policy-preservation-lock-confirmation-prompt.PNG)
 
 保留鎖定現在放置於保留原則上。 若要確認，請再次執行 `Get-RetentionCompliancePolicy`，但指定保留原則名稱並顯示原則參數：
@@ -270,5 +269,3 @@ Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 您應該會看到 **RestrictiveRetention** 設定為 **True**。 例如：
 
 ![PowerShell 中顯示所有參數的鎖定原則](../media/retention-policy-preservation-lock-locked-policy.PNG)
-  
-

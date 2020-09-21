@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 瞭解如何將系統管理員角色指派給您公司中的使用者或多位使用者，以便他們可以在系統管理中心執行特定工作。
-ms.openlocfilehash: f5449bdb6b05e2a29393ad8e389c562953efd710
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 6d7a09ca9c515494eaf18ea144b7f67ce0003890
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307316"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131755"
 ---
 # <a name="assign-admin-roles"></a>指派系統管理員角色
 
@@ -42,7 +42,7 @@ ms.locfileid: "47307316"
 
 當您加入新的使用者時，如果您不是指派系統管理員角色，則其為 *使用者角色* ，且沒有任何 Microsoft 系統管理中心的系統管理員許可權。 不過，如果您需要協助完成，您可以將系統管理員角色指派給使用者。 例如，如果您需要人員協助重設密碼，您不應該將其指派為全域系統管理員角色，您應該將密碼系統管理員角色指派給他們。 如果有太多全域系統管理員，但對您的資料和線上業務的存取不受限制，則會有安全性風險。
 
-觀賞有關新增管理員的簡短影片。<br><br>
+## <a name="watch-add-an-adminbrbr"></a>觀賞：新增管理員。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -100,7 +100,6 @@ ms.locfileid: "47307316"
 
 ::: moniker-end
 
-
 ## <a name="assign-admin-roles-to-multiple-users"></a>指派系統管理員角色給多個使用者
 
 如果您知道 PowerShell，請參閱 [使用 PowerShell 指派角色給使用者帳戶](https://go.microsoft.com/fwlink/?linkid=854257)。 這最適合用來指派角色給數百個使用者。
@@ -108,7 +107,6 @@ ms.locfileid: "47307316"
 使用下列指示指派角色給數十個使用者。
 
 ::: moniker range="o365-worldwide"
-
 
 ## <a name="check-your-permissions"></a>檢查您的許可權
 

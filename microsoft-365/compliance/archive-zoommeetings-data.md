@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定連接器，將資料從 Globanet 縮放會議匯入 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 6b2f5f0b61eb2d569ad49d8f58c7e03d11cdbca0
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: c7052e7f51108cac93ad8d87402a07acd12df28a
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405494"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956230"
 ---
 # <a name="set-up-a-connector-to-archive-zoom-meetings-data-preview"></a>設定連接器以封存「縮放會議」資料 (預覽) 
 
@@ -30,7 +30,7 @@ ms.locfileid: "47405494"
 
 下列概要說明如何使用連接器封存 Microsoft 365 中的「縮放會議」資料。
 
-![寬限電子檔探索封存工作流程](../media/ZoomMeetingsConnectorWorkflow.png)
+![縮放會議封存工作流程](../media/ZoomMeetingsConnectorWorkflow.png)
 
 1. 您的組織與「縮放會議」搭配設定和設定縮放會議網站。
 

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 系統管理員會管理您組織的電子郵件和信箱。 例如，他們會在使用者的信箱中復原已刪除的郵件。 '
-ms.openlocfilehash: 0b63679883e8329782700085fa0c11a0ac6585ca
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: be4c8a4f1c75402d690cc705dd408c9070e40c9b
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307430"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131767"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>關於 Exchange Online 系統管理員角色
 
@@ -34,15 +34,17 @@ ms.locfileid: "47307430"
   
  **提示**：當您將某人指派給 Exchange 系統管理員角色時，也會將其指派給服務系統管理員角色。 如此一來，他們就可以在 Microsoft 365 系統管理中心中看到重要資訊（例如 Exchange Online 服務的健康情況），以及變更和發佈通知。
   
+## <a name="before-you-begin"></a>開始之前
+
 以下是在指派給 Exchange 系統管理員角色時，使用者可以執行的一些主要工作：
   
 - [復原使用者信箱中刪除的郵件 - 系統管理說明](https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox)
-    
+
 - [設定組織中信箱的封存和刪除原則](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes)。
-    
+
 - 設定信箱功能，例如信箱共用原則：使用者如何與組織外的其他人共用行事曆和連絡人資訊。
-    
-- 為某人的信箱設定「[傳送為](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)」和「[傳送 abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)」代理人。 例如，行政人員可能想要讓其助理能夠代您傳送郵件。 
+
+- 為某人的信箱設定「[傳送為](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)」和「[傳送 abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)」代理人。 例如，行政人員可能想要讓其助理能夠代您傳送郵件。
 
 - [建立共用信箱](../email/create-a-shared-mailbox.md) ，讓一群組人員可以從共同的電子郵件地址監視及傳送電子郵件。
 

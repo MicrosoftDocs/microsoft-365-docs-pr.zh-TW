@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 規範的新功能
+title: Microsoft 365 合規性中心的新功能
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案新增至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 750d8274faa5e68f8d36006f8ccf6d7fa55f8250
-ms.sourcegitcommit: 2179abfe0b7a8bea917eb1c1057ed3795bdf91e6
+ms.openlocfilehash: 7d5e1bb67d6adc1b3c25aea8f468a23ed5c1019a
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47336666"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132033"
 ---
-# <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 規範的新功能
+# <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
 是否要將新的解決方案加入至 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)、根據您的意見來更新現有的功能，或推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請參閱下列內容，以查看目前的 Microsoft 365 合規性的新功能。 
 
@@ -269,7 +269,7 @@ ms.locfileid: "47336666"
 |方案目錄 (預覽)  <br/>|方案目錄是一種可讓您探索、深入瞭解及快速開始使用我們的合規性和風險管理解決方案的單一停止車間。 目錄會組織成三個符合性類別，每個類別包含組成該類別之解決方案的詳細資料。 類別包括資訊保護 & 控管、內幕風險管理，以及探索 & 回應 <br/>|[方案目錄 (預覽的概述) ](microsoft-365-solution-catalog.md)|
 |通訊合規性 (預覽)  <br/>|通訊相容性是新的有問必答風險管理類別的一部分，可協助您針對組織中的不適當郵件偵測、捕獲和採取補救措施，以協助將通訊風險降到最低。 此方案透過引進一些新的增強功能（如智慧範本、彈性修復工作流程及可行動的觀點），擴充 Office 365 中監管原則的功能。 <br/>|[Microsoft 365 (預覽中的通訊法規遵從性) ](communication-compliance.md)|
 |資料分類 (預覽)  <br/>|我們新的資料分類頁面包含強大的洞察力和工具，可協助您探索和評估敏感資訊和標籤在組織中的內容中使用 (保留和敏感度) 。 回顧包含機密資訊或已套用標籤的內容、探索各個 Microsoft 365 位置的標籤活動、建立自訂機密資訊類型，以及更多。<br/>|[資料分類概觀 (預覽)](data-classification-overview.md)|
-|Trainable 分類 (預覽)  <br/>|這個強大的新工具使用我們的機器學習引擎，協助識別您的組織中的內容類別別，例如法規檔或員工合約。 建立後，可使用多個規範方案中的分類器來偵測相關的內容，並加以分類、保護、保留，等等。<br/>|[開始使用可訓練的分類器 (預覽)](classifier-getting-started-with.md)|
+|Trainable 分類 (預覽)  <br/>|這個強大的新工具使用我們的機器學習引擎，協助識別您的組織中的內容類別別，例如法規檔或員工合約。 建立後，可使用多個規範方案中的分類器來偵測相關的內容，並加以分類、保護、保留，等等。<br/>|[深入瞭解 trainable 的分類器 (預覽) ](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>更新的規範解決方案
 
@@ -288,7 +288,7 @@ ms.locfileid: "47336666"
 |稽核記錄檔搜尋|搜尋 > 審計記錄搜尋 <br/> https://protection.office.com/unifiedauditlog |審計 <br/> https://compliance.microsoft.com/auditlogsearch | [在安全性 & 規範中心搜尋審核記錄檔](search-the-audit-log-in-security-and-compliance.md)|
 |內容搜尋|搜尋 > 內容搜尋 <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | 內容搜尋 <br/> https://compliance.microsoft.com/contentsearch |[在 Office 365 中搜尋內容](search-for-content.md) |
 |資料連線器|資訊管理 > 封存協力廠商資料 <br/> https://protection.office.com/nativeconnector | 資料連線器 <br/> https://compliance.microsoft.com/connectorlanding |[封存第三方資料](archiving-third-party-data.md)|
-|資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md)|
+|資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md) (英文)|
 |資料主體要求 |資料隱私權 > 資料主體要求 <br/> https://protection.office.com/dsrcases |資料主體要求 <br/> https://compliance.microsoft.com/datasubjectrequest |[使用 DSR 案例工具管理 GDPR 資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |電子文件探索|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
 |Events|記錄管理 > 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件發生時開始保留](event-driven-retention.md)|

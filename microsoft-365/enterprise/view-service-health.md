@@ -26,27 +26,27 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: 請先查看 Microsoft 365 服務的健康狀態，再致電支援人員，查看是否有使用中的服務中斷狀態。
-ms.openlocfilehash: 49f7d3afd3c19cd4e9b6486db580082fe933b997
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 20e19072e1a851fba20e556be696146b8ad57a2f
+ms.sourcegitcommit: 392f60efa0921c64ac1462dd63985cd156e6498a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688781"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48134072"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>如何檢查 Microsoft 365 服務健康情況
 
-[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide)
+[![[標籤] 可讓您知道系統管理中心正在變更，您可以在 aka.ms/aboutM365preview 取得更多詳細資料。](../media/O365-Admin-AdminCenterChanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview?view=o365-worldwide&preserve-view=true)
 
 您可以在[microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)的 [**服務健康**情況] 頁面上，查看 microsoft 服務的健康情況，包括網頁上的 Office、YAMMER、Microsoft Dynamics CRM 及行動裝置管理雲端服務。 如果雲端服務發生問題，在您連絡支援人員或花時間進行疑難排解之前，可以查看服務健康情況，以確定是否為正在開發解決方法的已知問題。
 
 如果您無法登入服務入口網站，您可以使用 [ [服務狀態] 頁面](https://status.office365.com) 檢查是否有已知的問題，以防您登入您的租使用者。
   
-### <a name="how-to-check-service-health"></a>如何查看服務健康情況
+### <a name="how-to-check-service-health"></a>如何查看服務健全狀態
 
 1. 移至 Microsoft 365 系統管理中心 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) ，並以系統管理員帳戶登入。
 
     > [!NOTE]
-    > 被指派全域系統管理員或服務系統管理員角色的人員方可檢視服務健康情況。 若要允許 Exchange、SharePoint 以及商務用 Skype 管理員檢視服務健康情況，必須同時將服務系統管理員角色指派給他們。 如需可查看服務健康情況之角色的詳細資訊，請參閱 [關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)。
+    > 被指派全域系統管理員或服務系統管理員角色的人員方可檢視服務健康情況。 若要允許 Exchange、SharePoint 以及商務用 Skype 管理員檢視服務健康情況，必須同時將服務系統管理員角色指派給他們。 如需可查看服務健康情況之角色的詳細資訊，請參閱 [關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide&preserve-view=true#roles-available-in-the-microsoft-365-admin-center)。
   
 2. 如果您不是使用新的系統管理中心，請在 **首頁** 上，選取 [ **嘗試以新系統管理中心** 切換] 右上角。
 
@@ -64,7 +64,9 @@ ms.locfileid: "46688781"
 
 如果您在使用 Microsoft 365 服務時發生問題，但您未在 [ **服務健康** 情況] 頁面上看到該問題，請選取 [ **報告問題**]，然後完成簡寫表單來告訴我們。 我們將從其他組織查看相關資料和報告，以查看問題的程度，以及是否與我們的服務有關。 如果是的話，我們會將其新增為 [ **服務健康** 情況] 頁面上的新事件或建議，您可以在這裡追蹤其解決方法。 如果您在大約30分鐘內沒有看到它出現在清單中，請考慮與支援人員聯繫以解決問題。
 
-若要註冊影響您租使用者的新事件的電子郵件通知，以及對使用中事件的狀態變更，請選取 [ **喜好**設定]，按一下 [ **以電子郵件傳送我的服務 heath 通知**]，然後指定：
+若要自訂在儀表板上顯示服務的視圖，請選取 [**喜好**設定  >  **自訂視圖**]，然後清除您要篩選出服務健康情況儀表板視圖之服務的核取方塊。 確定針對您要監視的每一個服務，都選取了核取方塊。    
+
+若要註冊會影響租使用者的新事件的電子郵件通知，以及對使用中事件的狀態變更，請選取 [**喜好**設定  >  **電子郵件**]，按一下 [**以電子郵件傳送我的服務 heath 通知**]，然後指定：
 
 - 最多兩個電子郵件地址。
 - 您是否需要事件或建議的通知
@@ -80,7 +82,7 @@ ms.locfileid: "46688781"
 
 在 [ **所有服務** ] 視圖上，選取服務狀態將會開啟 [建議] 或 [事件] 的摘要視圖。
   
-![顯示服務建議的螢幕擷取畫面](../media/service-health-advisory.png)
+[![顯示服務建議 ](../media/service-health-advisory.png) 的螢幕擷取畫面](../media/service-health-advisory.png#lightbox)
 
 建議或事件摘要會提供下列資訊：
 
@@ -114,7 +116,7 @@ ms.locfileid: "46688781"
   
 ### <a name="incidents-and-advisories"></a>事件和建議
 
-| 圖示 | 描述 |
+| 圖示 | 說明 |
 |:-----|:-----|
 |![Information icon for advisory](../media/a7f5fd21-c760-4948-9bc1-50f7c8070e28.png)|如果系統針對某個服務顯示「建議」，表示我們發現了會對部分使用者造成影響的問題，但該服務仍可使用。建議中通常會提供問題的因應措施，且該問題可能是間歇發生，或其波及範圍和對使用者造成的影響並不大。  <br/> |
 |![Exclamation point icon for incident](../media/a636db57-6083-44dc-bbd5-556850804f17.png)|如果系統針對某個服務顯示有作用中的「事件」，代表這是一個重大問題，且該服務或其主要功能無法使用。例如，使用者可能無法傳送和接收電子郵件，或者無法登入。事件會對使用者造成明顯影響。當有進行中的事件時，我們會在服務健康情況儀表板中提供更新資訊，讓您掌握調查和移轉作業的進度，以及確認解決方案。  <br/> |
@@ -150,4 +152,4 @@ ms.locfileid: "46688781"
 ## <a name="related-topics"></a>相關主題
 
 [Microsoft 365 系統管理中心](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
- 的活動報告[訊息中心喜好](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide#preferences11)設定
+ 的活動報告[訊息中心喜好](https://docs.microsoft.com/microsoft-365/admin/manage/message-center?view=o365-worldwide&preserve-view=true#preferences11)設定

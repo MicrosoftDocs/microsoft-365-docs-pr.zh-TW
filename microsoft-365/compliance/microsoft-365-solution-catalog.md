@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 深入瞭解 Microsoft 365 解決方案目錄（包括其包含的內容，以及如何進行）及後續的步驟。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: f396801d4241b06c5523e4f3312c9ce597ac015e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547561"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132167"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解決方案目錄
 
@@ -101,6 +101,6 @@ Microsoft 365 的規範解決方案是整合功能的集合，您可以用來協
 
 - **Microsoft 資訊保護**，請參閱 microsoft 365 解決方案如何協助您探索、分類及保護機密資訊的任何位置或傳播。
     - **深入瞭解並設定 Microsoft Cloud App Security**。 請參閱 [快速入門： Microsoft Cloud App Security 快速入門](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。
-    - **立即開始使用類元**。 分類內容，然後將其標示，使其受到保護和正確處理是資訊保護訓練科目的開始位置。 請參閱 [trainable 分類器的快速入門](classifier-getting-started-with.md)。
+    - **立即開始使用類元**。 分類內容，然後將其標示，使其受到保護和正確處理是資訊保護訓練科目的開始位置。 請參閱 [瞭解 trainable 的分類 (預覽) ](classifier-learn-about.md)。
 
 - 請**經常造訪您的 Microsoft 365 方案目錄**，並務必查看新的解決方案，以協助您符合規範的需求。 在 [https://compliance.microsoft.com](https://compliance.microsoft.com) 左功能窗格中登入，然後選取 [ **目錄** ]。

@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 60c1a39e350a9a1d5d43c9b59ab12c4a6ad3f12a
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c3323192e0095ad6693241390cff81d42be9cce1
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817178"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956240"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>設定您的 Microsoft 威脅防護試用實驗室環境 
 
@@ -121,7 +121,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 ## <a name="enable-microsoft-365-trial-subscription"></a>啟用 Microsoft 365 試用訂閱
 
 >[!NOTE]
->註冊試用版可提供25個使用者授權供一個月使用。 如需詳細資訊，請參閱 [Try Or 購買 M365 訂閱](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide#try-or-buy-a-microsoft-365-subscription-1) 。
+>註冊試用版可提供25個使用者授權供一個月使用。 如需詳細資訊，請參閱 [Try Or 購買 M365 訂閱](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365#try-or-buy-a-microsoft-365-subscription-1) 。
 
 1. 從 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)，按一下 [ **帳單** ]，然後流覽至 [ **購買服務**]。
 
@@ -149,4 +149,5 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 
 
 ## <a name="next-step"></a>後續步驟
-![階段3：設定板載 &](../../media/config-onboard.png) <br>[階段3：設定板載 &](config-mtpeval.md) <br>針對您的 Microsoft 威脅防護試用實驗室或試驗環境和您的端點，設定每個 Microsoft 威脅防護 pillar。
+|![階段3：設定板載 &](../../media/config-onboard.png) <br>[階段3：設定板載 &](config-mtpeval.md) | 針對您的 Microsoft 威脅防護試用實驗室或試驗環境和您的端點，設定每個 Microsoft 威脅防護 pillar。
+|:-------|:-----|

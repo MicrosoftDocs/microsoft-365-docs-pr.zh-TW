@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 network connectivity test (預覽) '
-ms.openlocfilehash: 2197f3361efee51dfa2bd170b0c8d8e94709d3e8
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962394"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171347"
 ---
 # <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 network connectivity test (預覽) 
 
@@ -37,13 +37,33 @@ Microsoft 365 系統管理中心的網路洞察力是以週期性產品測量值
 >[!IMPORTANT]
 >Microsoft 365 系統管理中心的網路洞察力、效能建議和評估目前處於預覽狀態，只適用于已在功能預覽計畫中註冊的 Microsoft 365 承租人。
 
-## <a name="the-advanced-tests-client-application"></a>高級測試用戶端應用程式
+## <a name="what-happens-at-each-test-step"></a>每個測試步驟會發生什麼事
+
+### <a name="office-location-identification"></a>辦公室位置識別
+
+當您按一下 [執行測試] 按鈕時，會顯示 [正在執行的測試] 頁面，並識別辦公室位置。 您可以使用城市、州和國家輸入您的位置，也可以從網頁瀏覽器中偵測到該位置。 如果您偵測到這種情況，我們會從網頁瀏覽器要求緯度和經度，並在使用之前限制 300m 300m 的精確度。 之所以這麼做，是因為不需要更正確地識別位置，而不是網路效能的大樓。 
+
+### <a name="javascript-tests"></a>JavaScript 測試
+
+在 office 位置識別後，我們會在 JavaScript 中執行 TCP 延遲測試，我們會向服務要求有關使用中及建議的 Office 365 服務前端伺服器的資料。 完成這些工作之後，我們會在地圖和 [詳細資料] 索引標籤中顯示它們，以在下一個步驟之前查看。
+
+### <a name="download-the-advanced-tests-client-application"></a>下載高級測試用戶端應用程式
+
+接下來，我們將開始下載高級測試用戶端應用程式。 我們依靠使用者來啟動用戶端應用程式，而且也必須已安裝 .NET Core。
 
 Microsoft 365 網路連線測試有兩個部分; <https://connectivity.office.com> 可執行高級網路連線測試的網站和可下載的 Windows 用戶端應用程式。 大部分的測試都需要執行應用程式。 它會在執行時，將結果填回網頁。
 
 網頁瀏覽器測試完成後，系統會提示您從網站下載高級用戶端測試應用程式。 出現提示時，開啟並執行檔。
 
 ![高級測試用戶端應用程式](../media/m365-mac-perf/m365-mac-perf-open-run-file.png)
+
+### <a name="start-the-advanced-tests-client-application"></a>啟動 [高級測試] 用戶端應用程式
+
+一旦用戶端應用程式啟動網頁，便會更新以顯示這種情況，而且測試資料將會開始接收到網頁。 它會在每次接收新資料時更新，您可以在資料到達時查看資料。
+
+### <a name="advanced-tests-completed-and-test-report-upload"></a>已完成的高級測試及測試報表上載
+
+測試完成後，網頁和高級測試用戶端會同時指出這一點，而且如果使用者已登入測試報告，就會將其上傳至客戶租使用者。
 
 ## <a name="sharing-your-test-report"></a>共用您的測試報告
 
@@ -111,7 +131,7 @@ Microsoft 365 網路連線測試有兩個部分; <https://connectivity.office.co
 
 #### <a name="vpn-split-tunnel"></a>VPN 分割隧道
 
-Exchange Online 的每個最優化類別路由、SharePoint 線上，以及 Microsoft 團隊會進行測試，以查看其是否已在 VPN 上 tunnelled。 分割的工作負載可以完全避免 VPN。 Tunnelled 工作負載全部透過 VPN 傳送。 選擇性 tunnelled 工作負載會透過 VPN 和部分分割傳送某些路由。如果所有工作負載都已分割或選擇性 tunnelled，則會顯示傳遞結果。
+Exchange Online 的每個最優化類別路由、SharePoint 線上，以及 Microsoft 團隊會進行測試，以查看其是否為 VPN 上的隧道功能。 分割的工作負載可以完全避免 VPN。 隧道工作負載全部透過 VPN 傳送。 選擇性隧道工作負載會透過 VPN 傳送某些路由，並進行一些分割。如果所有工作負載都已分割或選擇性隧道，將會顯示傳遞結果。
 
 #### <a name="customers-in-your-metropolitan-area-with-better-performance"></a>具有較佳效能的大都市區域中的客戶
 
@@ -207,33 +227,11 @@ Exchange Online 服務前端的使用者辦公室位置的網路 TCP 延遲會�
 
 本節顯示 ICMP traceroute 至 Exchange Online 服務前門、SharePoint Online 服務前門和 Microsoft 團隊服務前門的結果。 只提供此資訊，而且沒有相關聯的網路洞察力。 提供三種 traceroutes。 Traceroute 至 _outlook.office365.com_、traceroute 至客戶 SharePoint 前端或 _microsoft.sharepoint.com_ （如果未提供），以及 traceroute 到 _world.tr.teams.microsoft.com_。
 
-## <a name="what-happens-at-each-test-step"></a>每個測試步驟會發生什麼事
-
-### <a name="office-location-identification"></a>辦公室位置識別
-
-當您按一下 [執行測試] 按鈕時，會顯示 [正在執行的測試] 頁面，並識別辦公室位置。 您可以使用城市、州和國家輸入您的位置，也可以從網頁瀏覽器中偵測到該位置。 如果您偵測到這種情況，我們會從網頁瀏覽器要求緯度和經度，並在使用之前限制 300m 300m 的精確度。 之所以這麼做，是因為不需要更正確地識別位置，而不是網路效能的大樓。 
-
-### <a name="javascript-tests"></a>JavaScript 測試
-
-在 office 位置識別後，我們會在 JavaScript 中執行 TCP 延遲測試，我們會向服務要求有關使用中及建議的 Office 365 服務前端伺服器的資料。 完成這些工作之後，我們會在地圖和 [詳細資料] 索引標籤中顯示它們，以在下一個步驟之前查看。
-
-### <a name="download-the-advanced-tests-client-application"></a>下載高級測試用戶端應用程式
-
-接下來，我們將開始下載高級測試用戶端應用程式。 我們依靠使用者來啟動用戶端應用程式，而且也必須已安裝 .NET Core。
-
-### <a name="start-the-advanced-tests-client-application"></a>啟動 [高級測試] 用戶端應用程式
-
-一旦用戶端應用程式啟動網頁，便會更新以顯示這種情況，而且測試資料將會開始接收到網頁。 它會在每次接收新資料時更新，您可以在資料到達時查看資料。
-
-### <a name="advanced-tests-completed-and-test-report-upload"></a>已完成的高級測試及測試報表上載
-
-測試完成後，網頁和高級測試用戶端會同時指出這一點，而且如果使用者已登入測試報告，就會將其上傳至客戶租使用者。
-
 ## <a name="connectivity-reports"></a>連線性報告
 
 登入後，您可以查看先前所執行的報告。 您也可以將其共用或從清單中刪除。
 
-![報告](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
+![報表](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
 
 ## <a name="network-health-status"></a>網路健康狀態
 
@@ -251,7 +249,7 @@ Exchange Online 服務前端的使用者辦公室位置的網路 TCP 延遲會�
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>執行高級測試用戶端的必要條件為何？
 
-高級測試用戶端需要 .NET Core 3.1 Desktop Runtime。 如果您執行的是未安裝的高級測試用戶端，將會定向至 [.Net Core 3.1 installer 頁面](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 請務必安裝桌面執行時間，而不是 SDK，或頁面上較高的 ASP.NET 核心執行時間。 電腦上的系統管理員許可權是 reuqired，以安裝 .NET Core。 
+高級測試用戶端需要 .NET Core 3.1 Desktop Runtime。 如果您執行的是未安裝的高級測試用戶端，將會定向至 [.Net Core 3.1 installer 頁面](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 請務必安裝桌面執行時間，而不是 SDK，或頁面上較高的 ASP.NET 核心執行時間。 需要有機器的系統管理員許可權，才能安裝 .NET Core。 
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>何謂 Microsoft 365 服務的前門？
 

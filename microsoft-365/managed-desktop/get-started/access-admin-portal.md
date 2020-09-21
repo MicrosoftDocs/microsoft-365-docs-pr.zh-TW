@@ -9,18 +9,26 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 2ac0bb01c1a941d460e92c7e75e765ceb85b2bc0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
+ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546571"
+ms.lasthandoff: 09/19/2020
+ms.locfileid: "48137032"
 ---
 # <a name="access-the-admin-portal"></a>存取管理員入口網站
 
 您的 Microsoft Managed 桌面服務閘道是 Microsoft [Azure 入口網站](https://portal.azure.com)。 如需更多有關使用和自訂 Azure 入口網站體驗的詳細資訊，請參閱 [azure 入口網站檔](https://docs.microsoft.com/azure/azure-portal/)。 可用於預覽現在，您也可以在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)中找到 Microsoft 受管理的桌面。 如果您不熟悉此入口網站的裝置管理功能，請參閱 [Microsoft 端點管理員的檔](https://docs.microsoft.com/mem/)。
 
-您的管理帳戶需要特定許可權，才能存取 Azure 入口網站或 Microsoft 端點管理員中的 Microsoft 受管理桌面系統管理功能。 您可以使用以角色為基礎的存取控制 (RBAC) ，管理組織內這些功能的系統管理員存取權。 您可以使用數種 Azure AD 系統管理員角色和內建自訂角色，為 Microsoft Managed Desktop Admin 入口網站中的不同功能提供更精細的控制。 如需 Azure Active Directory 角色的詳細資訊，請參閱 [在 Azure Active directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 與適用于各種 Microsoft 產品和服務的 AAD 系統管理員角色不同，自訂角色是針對 Microsoft 受管理的桌面所特有，且只會保證可存取此服務的系統管理功能。 系統管理員可以個別或結合 AAD 系統管理員角色，將自訂角色指派給使用者，以將 Microsoft 管理的桌面許可權新增至現有的系統管理員帳戶。
+> [!NOTE]
+> 不過，您可以選擇 accesss Microsoft 受管理的電腦，在 [Microsoft 端點管理員](https://endpoint.microsoft.com/) 或 [Azure 入口網站](https://portal.azure.com)中，支援下列瀏覽器：
+> - Microsoft Edge (最新版本) 
+> - Microsoft Internet Explorer 11
+> - Safari (最新版本，僅限 Mac) 
+> - Chrome (最新版本) 
+> - Firefox (最新版本) 
+
+您的管理帳戶需要特定許可權，才能存取 Azure 入口網站或 Microsoft 端點管理員中的 Microsoft 受管理桌面系統管理功能。 您可以使用以角色為基礎的存取控制 (RBAC) ，管理組織內這些功能的系統管理員存取權。 有幾個 Azure Active Directory (Azure AD) 系統管理員角色和內建自訂角色，可為 Microsoft Managed Desktop Admin 入口網站中的不同功能提供更細微的控制。 如需 Azure Active Directory 角色的詳細資訊，請參閱 [在 Azure Active directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 與適用于各種 Microsoft 產品和服務的 Azure AD 系統管理員角色不同，自訂角色是 Microsoft 受管理的桌面所特有，且只會保證此服務的系統管理功能存取權。 管理員可以個別或搭配使用 Azure AD 系統管理員角色，將自訂角色指派給使用者，以將 Microsoft 管理的桌面許可權新增至現有的系統管理員帳戶。
 
 您可以指派下列每個角色，以提供不同的存取層級：
 

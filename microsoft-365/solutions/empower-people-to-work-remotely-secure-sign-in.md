@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-remotework
 ms.custom: ''
 description: 您的遠端工作者必須使用多重要素驗證 (MFA) 來登入。
-ms.openlocfilehash: a8c0b8ac689407fa871d2373f1ca0a3658bb1668
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 0b655800d27e6836a3848bfb2a94fc9c30439ec7
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521514"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132199"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步驟 1： 使用 MFA 提升遠端工作者的登入安全性
 
@@ -86,7 +86,7 @@ Azure AD Identity Protection 需有已附加在 Microsoft 365 E5 中的 Azure AD
 
 下表顯示啟用 MFA 與安全性預設和條件式存取原則的結果。
 
-|| 啟用 | 停用 | 額外驗證方法 |
+| 方法 | 啟用 | 停用 | 額外驗證方法 |
 |:-------|:-----|:-------|:-------|
 | **安全性預設**  | 無法使用條件式存取原則 | 可以使用條件式存取原則 | Microsoft Authenticator 應用程式 |
 | **條件式存取原則** | 如果已啟用任何原則，則無法啟用安全性預設 | 如果已停用所有原則，則可啟用安全性預設  | 在 MFA 註冊期間由使用者指定  |
@@ -104,7 +104,7 @@ Azure AD Identity Protection 需有已附加在 Microsoft 365 E5 中的 Azure AD
 
 - [ Microsoft 365 適用的 MFA](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 - [Azure AD 可協助您啟用遠端工作的五大方法](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
-- [規劃及部署 Microsoft 365 的身分識別基礎結構](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure?view=o365-worldwide#plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure)
+- [Microsoft 365 的身分識別藍圖](../enterprise/identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD 訓練影片](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [設定 Azure Multi-Factor Authentication 註冊原則](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [ 規劃 Azure AD 的自助式密碼重設部署](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)

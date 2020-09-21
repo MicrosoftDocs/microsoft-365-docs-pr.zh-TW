@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 深入瞭解設定 SharePoint 網站與來賓共同作業所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: c04114218342a2d65b318c71d061c2a0ed815fab
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: d5a868e57753a6eb05f74b4873ed64ef0a70878e
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797813"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171265"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在網站中與來賓共同作業
 
@@ -39,18 +39,18 @@ ms.locfileid: "46797813"
 
 Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯設定](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)受到最高層級的制約。 如果 Azure AD 中已停用來賓共用或已限制來賓共用，這會覆寫您在 Microsoft 365 中設定的任何共用設定。
 
-檢查 [組織關聯] 設定，以確保未封鎖與來賓共用。
+檢查外部共同作業設定，以確保未封鎖與來賓共用。
 
-![Azure Active Directory 組織關聯性設定頁面的螢幕擷取畫面](../media/azure-ad-organizational-relationships-settings.png)
+![Azure Active Directory 外部協同作業設定頁面的螢幕擷取畫面](../media/azure-ad-organizational-relationships-settings.png)
 
-設定組織關聯設定
+若要設定外部協同作業設定：
+
 
 1. 登入 Microsoft Azure，網址為 [https://portal.azure.com](https://portal.azure.com) 。
 2. 在左側導覽中，按一下 [ **Azure Active Directory**]。
-3. 在 [ **一覽表** ] 窗格中，按一下 [ **組織關聯**性]。
-4. 在 [ **組織關聯** ] 窗格中，按一下 [ **設定**]。
-5. 確定 **guest 和 guest inviter role 中的系統管理員和使用者都可以邀請** 和 **成員可以邀請** 皆設定為 **[是]**。
-6. 如果您做了任何變更，請按一下 [儲存]****。
+3. 選取 [ **外部** 身分識別]，然後按一下 [ **外部協同作業設定**]。
+4. 在 [ **來賓邀請設定** ] 窗格中，確定 **來賓和來賓 inviter 角色中的系統管理員和使用者可以** 邀請和 **成員** 都已設定為 **[是]**。
+5. 如果您做了任何變更，請按一下 [儲存]****。
 
 請記下 [ **協同限制** ] 區段中的設定。 確定您要與之來賓進行共同作業的網域不會遭到封鎖。
 
@@ -135,7 +135,7 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 1. 在網頁版的 Outlook 中的 [ **群組**] 下，按一下您要新增成員的群組。
 2. 開啟群組連絡人卡片，然後在 [ **其他選項** ( ) ...] 下，按一下 [ **新增成員**]。
 3. 輸入您要邀請之來賓的電子郵件地址，然後按一下 [ **新增**]。
-4. 按一下 [關閉]****。
+4. 按一下 **[關閉]**。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -146,4 +146,3 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 [建立安全的來賓共用環境](create-secure-guest-sharing-environment.md)
 
 [使用受管理來賓建立 B2B 外部網路](b2b-extranet.md)
-

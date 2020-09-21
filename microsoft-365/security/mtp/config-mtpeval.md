@@ -1,9 +1,29 @@
 ---
-title：設定試用實驗室或試驗環境描述的 Microsoft 威脅防護支柱：設定 Microsoft 威脅防護支柱： Office 365 ATP、Azure ATP、Microsoft Cloud App Security 和 Microsoft Defender ATP，適用于您的試用實驗室或試驗環境。
-關鍵字：設定 Microsoft 威脅防護試用版、Microsoft 威脅防護試用版設定、設定 Microsoft 威脅防護試驗專案、設定 Microsoft 威脅防護支柱、Microsoft 威脅防護證券搜尋。產品： w10 10XVcnh appverid： met150 eADQiWindows： mktglfcycl： library ms. sitesec： security ms. author： pagetype  
-author： DulceMontemayor localizationpriority：中級管理員： dansimp 物件： ITPro： M365-安全性規範毫秒。主題：文章 
+title: 設定試用實驗室或試驗環境的 Microsoft 威脅防護支柱
+description: 針對您的試用實驗室或試驗環境，設定 Microsoft 威脅防護支柱，例如 Office 365 ATP、Azure ATP、Microsoft Cloud App Security 和 Microsoft Defender ATP。
+keywords: 設定 Microsoft 威脅防護試用版、Microsoft 威脅防護試用版設定、設定 Microsoft 威脅防護試驗專案、設定 microsoft 威脅防護支柱、Microsoft 威脅防護支柱
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: microsoft-365-enterprise
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+f1.keywords:
+- NOCSH
+ms.author: dolmont
+author: DulceMontemayor
+ms.localizationpriority: medium
+manager: dansimp
+audience: ITPro
+ms.collection: M365-security-compliance
+ms.topic: article
+ms.openlocfilehash: 4d751ec5eb786a91d62ab11988132bfed076984d
+ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "47956255"
 ---
-
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>為您的試用實驗室或試驗環境設定 Microsoft 威脅防護支柱
 
 適用於：****
@@ -43,7 +63,7 @@ author： DulceMontemayor localizationpriority：中級管理員： dansimp 物�
 
 ## <a name="microsoft-threat-protection-pillars"></a>Microsoft 威脅防護的支柱
 Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的網路組織的安全性提供價值，但是啟用四個 Microsoft 威脅防護的分項會使組織發揮最大的價值。
-
+<br>
 ![影像 of_Microsoft 威脅防護解決方案，適用于使用者、Azure 高級威脅防護、端點 Microsoft Defender 高級威脅防護、雲端應用程式、Microsoft Cloud App 安全性及資料，Office 365 高級威脅防護  ](../../media/mtp-eval-31.png) <br>
 
 本節會引導您設定下列專案：
@@ -121,7 +141,7 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 <br>![影像 of_Azure 高級威脅防護] 頁面，您應該在此按一下 [下一步] 依照 Azure ATP 感應器嚮導](../../media/mtp-eval-47.png) <br>
  
 7. 在感應器部署類型中按 **[下一步]** 。
-<br>![影像 of_Azure 高級威脅防護] 頁面，您應該在此按一下 [下一步] 依照 Azure ATP 感應器嚮導](../../media/mtp-eval-48.png) <br>
+<br>![影像 of_Azure 高級威脅防護] 頁面，您應該在此頁面上，按一下 [下一步] 以移至下一頁](../../media/mtp-eval-48.png) <br>
  
 8. 複製存取機碼，因為您需要在嚮導的下一步輸入它。
 ![影像 of_the 感應器頁面，您應該在此頁面上複製您需要在下一個 Azure ATP 感應器安裝精靈中輸入的訪問金鑰。](../../media/mtp-eval-49.png) <br>
@@ -233,5 +253,6 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 
 接下來，您可以模擬攻擊，並查看「向量積」功能如何偵測、建立提醒，以及自動回應端點上的 fileless 攻擊。
 
-## <a name="next-steps"></a>後續步驟
-[產生測試警示](generate-test-alert.md)。
+## <a name="next-step"></a>後續步驟
+|![攻擊模擬階段](../../media/mtp/run-sim.png) <br>[攻擊模擬階段](mtp-pilot-simulate.md) | 針對您的 Microsoft 威脅防護試驗環境執行攻擊模擬。
+|:-------|:-----|

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: 09441f879fa41d1b920aae7d37625d0a52160d84
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949877"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171407"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署實驗室套件
 
@@ -54,35 +54,47 @@ ms.locfileid: "47949877"
 詳細的實驗室指南可透過多個部署和管理案例來引導您。 我們已為最新版本的 Intune 和 Configuration Manager 更新實驗室。 
 
 ### <a name="plan-and-prepare-infrastructure"></a>規劃及準備基礎結構 
-電腦分析   
-雲端管理閘道 & 雲端發佈點租使用者、共同管理及切換工作負載    
-遠端存取
+- 電腦分析 
+- 雲端管理閘道 & 雲端發佈點 
+- 租使用者附加、共同管理及切換工作負載  
+-  (VPN) 的遠端存取 
 
 ### <a name="prepare-configuration"></a>準備設定   
-使用 configuration manager 服務 windows 10 365，優化 Windows 10 更新傳遞服務 Windows 10 使用 Microsoft Intune 服務 windows 10 搭配 microsoft Intune 服務應用程式使用 Configuration Manager 服務 microsoft 365 Apps for enterprise for enterprise for enterprise 使用 Intune    
-安全性及規範符合性 
+- 優化 Windows 10 更新傳遞   
+- 使用群組原則維護 Windows 10
+- 使用 Microsoft Intune 服務 Windows 10   
+- 使用 Configuration Manager 維護 Windows 10   
+- 使用 Configuration Manager 服務企業的 Microsoft 365 應用程式   
+- 使用 Intune 服務 Microsoft 365 應用程式 enterprise  
+- 安全性及合規性   
 
 ### <a name="prepare-applications"></a>準備應用程式    
-適用于 Office 的準備工作工具    
-MSIX Win32 應用程式的打包及轉換 
+- 適用于 Office 的準備工作工具  
+- MSIX Win32 應用程式的打包及轉換   
 
 ### <a name="deploy-windows-10"></a>部署 Windows 10   
-在 MDT Windows Autopilot 中，Configuration Manager OS 部署工作順序中的作業系統部署工作順序部署及管理新的 Microsoft Edge    
+- Configuration Manager 中的作業系統部署工作順序
+- MDT 中的作業系統部署工作順序   
+- Windows Autopilot
+- 部署及管理新的 Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>部署 Microsoft 365 Apps 企業版    
-雲端管理部署    
-本機管理的部署  
-在非 AD 上加入裝置上進行企業部署的 Microsoft 365 應用程式   
-使用 Microsoft Intune 之 Configuration Manager 企業管理部署的企業管理部署    
-使用 Microsoft Intune 部署 Microsoft 團隊的 LOB 部署和管理
+- 雲端管理部署  
+- 本機管理的部署    
+- 在非 AD 上加入裝置上進行企業部署的 Microsoft 365 應用程式 
+- 使用 Configuration Manager 的企業管理部署
+- 使用 Microsoft Intune 進行企業管理的部署  
+- 使用 Microsoft Intune 進行 LOB 部署和管理
+- 部署 Microsoft 團隊
 
 ### <a name="deploy-windows-virtual-desktop"></a>部署 Windows 虛擬桌面  
+- Prepare、deploy、optimize
  
 ### <a name="download-the-windows-and-office-deployment-lab-kit"></a>下載 Windows 和 Office 部署的 Lab Kit
 
 [下載 Windows 和 Office 部署的 Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-*請使用廣泛的頻寬下載此內容，以增強您的下載體驗，並允許自動布建的30-45 分鐘。實驗室環境至少需要 16 GB 的可用記憶體和 150 GB 可用磁碟空間。為了達到最佳效能，建議使用 32 GB 的可用記憶體。實驗室于2020年12月4日到期。在到期之前會發佈新的版本。*
+*請使用廣泛的頻寬下載此內容，以增強您的下載體驗，並允許自動布建的30-45 分鐘。實驗室環境至少需要 16 GB 的可用記憶體和 150 GB 可用磁碟空間。為了達到最佳效能，建議使用 32 GB 的可用記憶體。實驗室到期2020年12月5日。在到期之前會發佈新的版本。*
 
 ## <a name="additional-guidance"></a>其他指引
 

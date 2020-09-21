@@ -3,7 +3,7 @@ title: 實作 Office 365 的 VPN 分割通道
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 6/15/2020
+ms.date: 9/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何實作 Office 365 的 VPN 分割通道
-ms.openlocfilehash: 1fa86501e9cf29ffd41ec5b25a86cc4f2b139d52
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695651"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171419"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>實作 Office 365 的 VPN 分割通道
 
@@ -220,7 +220,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 ### <a name="configuration"></a>組態
 
-在通話和會議中，只要 Teams 媒體所需的最佳化 IP 子網路正確地放在路由表中，當 Teams 呼叫 _GetBestRoute_ 方法來判斷其應該針對特定目的地所使用的介面時，系統就會針對以上所列的 Microsoft IP 區塊中的 Microsoft 目的地傳回本機介面。
+針對呼叫和會議，只要小組介質的必要優化 IP 子網已正確放在路由表中，當小組呼叫 [GetBestRoute](https://docs.microsoft.com/windows/win32/api/iphlpapi/nf-iphlpapi-getbestroute) 函數來決定哪個本機介面對應至應該用於特定目的地的路由時，就會針對上述 microsoft IP 區塊中的 microsoft 目的地傳回本機介面。
 
 有些 VPN 用戶端軟體允許以 URL 為基礎的路由操作。 不過，Teams 媒體流量沒有相關聯的 URL，因此必須使用 IP 子網路來完成此流量的路由控制。
 
@@ -293,7 +293,7 @@ Microsoft 安全小組已發佈概括安全性專業人員重要方式的 [文�
 
 ### <a name="how-do-i-apply-dlp-and-protect-my-sensitive-data-when-the-traffic-no-longer-flows-through-my-on-premises-solution"></a>當流量不再透過內部部署解決方案傳送時，如何套用 DLP 並保護我的敏感性資料？
 
-為了協助您防止意外洩漏敏感性資訊，Office 365 提供一組豐富的[內建工具](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)。 您可以使用 Teams 和 SharePoint 的內建 [DLP 功能](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide)來偵測不當儲存或共用的敏感性資訊。 如果您的部分遠端工作策略需要隨 (BYOD) 原則，您可以使用以 [應用程式為基礎的條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) ，防止敏感性資料下載至使用者的個人裝置。
+為了協助您防止意外洩漏敏感性資訊，Office 365 提供一組豐富的[內建工具](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)。 您可以使用 Teams 和 SharePoint 的內建 [DLP 功能](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)來偵測不當儲存或共用的敏感性資訊。 如果您的部分遠端工作策略需要隨 (BYOD) 原則，您可以使用以 [應用程式為基礎的條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) ，防止敏感性資料下載至使用者的個人裝置。
 
 ### <a name="how-do-i-evaluate-and-maintain-control-of-the-users-authentication-when-they-are-connecting-directly"></a>我要如何在使用者直接連線的情況下，評估使用者的驗證及維持其控制權？
 
@@ -307,7 +307,7 @@ Microsoft 安全小組已發佈概括安全性專業人員重要方式的 [文�
 
 ### <a name="how-do-i-protect-against-viruses-and-malware"></a>如何防禦病毒和惡意程式碼？
 
-同樣地，Office 365 會針對服務本身不同層中標示 [最佳化] 的端點提供保護 (如[本文件概述](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection))。 如所述，在服務中提供這些安全性元素的效率會更高，而不是嘗試使用可能不會完全瞭解通訊協定/流量的裝置來執行。根據預設，SharePoint 線上 [會自動掃描](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo?view=o365-worldwide) 檔案上傳的已知惡意程式碼
+同樣地，Office 365 會針對服務本身不同層中標示 [最佳化] 的端點提供保護 (如[本文件概述](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection))。 如所述，在服務中提供這些安全性元素的效率會更高，而不是嘗試使用可能不會完全瞭解通訊協定/流量的裝置來執行。根據預設，SharePoint 線上 [會自動掃描](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo) 檔案上傳的已知惡意程式碼
 
 針對以上所列的 Exchange 端點，[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) 和 [Office 365 進階威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)都擅於提供送至服務的流量安全性。
 
@@ -323,7 +323,7 @@ Microsoft 安全小組已發佈概括安全性專業人員重要方式的 [文�
 
 ### <a name="why-is-port-80-required-is-traffic-sent-in-the-clear"></a>為何需要連接埠 80？ 傳送的流量是否沒問題？
 
-連接埠 80 只用於重新導向連接埠 443 工作階段之類的情況，無法透過連接埠 80 傳送或存取任何客戶資料。 [這篇文章](https://docs.microsoft.com/microsoft-365/compliance/encryption?view=o365-worldwide)概述 Office 365 的傳輸中資料和待用資料加密，而[這篇文章](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)概述我們如何使用 SRTP 來保護 Teams 媒體流量。
+連接埠 80 只用於重新導向連接埠 443 工作階段之類的情況，無法透過連接埠 80 傳送或存取任何客戶資料。 [這篇文章](https://docs.microsoft.com/microsoft-365/compliance/encryption)概述 Office 365 的傳輸中資料和待用資料加密，而[這篇文章](https://docs.microsoft.com/microsoftteams/microsoft-teams-online-call-flows#types-of-traffic)概述我們如何使用 SRTP 來保護 Teams 媒體流量。
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>這項建議是否適用於使用全球 Office 365 執行個體的中國使用者？
 

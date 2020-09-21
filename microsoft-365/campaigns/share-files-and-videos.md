@@ -2,7 +2,7 @@
 title: 共用檔案和影片
 f1.keywords:
 - NOCSH
-ms.author: stevhord
+ms.author: twerner
 author: twerner
 manager: scotv
 ms.audience: Admin
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 與 Microsoft 團隊和 SharePoint 共用您的活動中的檔案和影片。
-ms.openlocfilehash: b3ca070152a19841ff2c934f04d0d147e3387db0
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d8f9df1befe720dbcd2affc56ff02f29c037216b
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526897"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48132009"
 ---
 # <a name="share-files-and-videos"></a>共用檔案和影片
 
@@ -47,7 +47,7 @@ ms.locfileid: "46526897"
 使用下列方法可安全地共用檔案和視頻：
 
 1. 將檔案儲存在 Microsoft 小組或 SharePoint 中，並確定只有需要存取這些檔案的人員才會有這些檔案。 
-2. 當您想要共用時，請勿將檔案附加到電子郵件。 請改為選擇 [從 Microsoft 團隊**取得連結**] 或 SharePoint，並以電子郵件傳送連結。
+2. 當您想要共用時，請勿將檔案附加到電子郵件。 請改為選擇 [從 Microsoft 團隊 **取得連結** ] 或 SharePoint，並以電子郵件傳送連結。
 3. 若要在外部共用檔案，請將使用者新增為您的小組的來賓，或使用 SharePoint 以取得只共用該檔案的安全連結。
 4. 使用 Microsoft Stream 來主控您想要讓活動看到的影片。 
 5. 使用 Microsoft 小組或 SharePoint，存放您需要小組共同作業或分享的影片檔。
@@ -67,6 +67,6 @@ ms.locfileid: "46526897"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrv0F]
 
-下載[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)中的資訊圖表或[PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) ，以快速瞭解共用檔案的方式。
+下載 [PDF](https://go.microsoft.com/fwlink/?linkid=2079435) 中的資訊圖表或 [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438) ，以快速瞭解共用檔案的方式。
 
 [![與不同使用者共用檔案的圖例](../media/ShareYourfiles-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2079435)

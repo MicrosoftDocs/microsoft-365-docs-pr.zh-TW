@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 端點資料外洩防護擴充監視檔案活動，和針對這些端點的檔案保護動作。 在 Microsoft 365 合規性中心解決方案中可看到檔案 '
-ms.openlocfilehash: 2423f45fefe994fbaf5704074c49ce862a59340e
-ms.sourcegitcommit: df59c83174d845b8ddec48b9be2659fbfb58bb7f
+ms.openlocfilehash: 7403f20fa7c97c63be0e5001e8d3f5b37b409eee
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46517494"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131545"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>深入瞭解 Microsoft 365 端點資料外洩防護（預覽版）
 
@@ -120,7 +120,7 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 - 裝置名稱
 - 目的地位置類型
 - 執行複製的應用程式
-- MDATP 裝置識別碼（若適用）
+- 適用於端點的 Microsoft Defender 裝置識別碼 (如果適用)
 - 可移除式媒體裝置製造商
 - 可移除式裝置模型
 - 可移除式裝置序號

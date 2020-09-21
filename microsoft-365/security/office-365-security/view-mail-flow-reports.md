@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解安全性 & 合規性中心的「報告」儀表板中提供的郵件流程報告。
 ms.custom: ''
-ms.openlocfilehash: 772aec3c18e3e6343bdfd4831252d03a46961735
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3db9130083565d77bb84b4b31ec63eee5cc7a7c9
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949617"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171395"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中查看郵件流程報告
 
@@ -131,22 +131,22 @@ ms.locfileid: "47949617"
 
   - **Date**
   - **傳輸規則**
-  - **主旨**
+  - **Subject**
   - **寄件者位址**
   - **收件者位址**
   - **嚴重性**
-  - **方向**
+  - **Direction**
 
 - 透過**下列方式查看資料： DLP Exchange transport rules**：
 
   - **Date**
   - **DLP 原則**
   - **傳輸規則**
-  - **主旨**
+  - **Subject**
   - **寄件者位址**
   - **收件者位址**
   - **嚴重性**
-  - **方向**
+  - **Direction**
 
 如果您按一下 [詳細資料] 表格視圖中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
 
@@ -237,7 +237,7 @@ ms.locfileid: "47949617"
 
 此資料表包含下列資訊：
 
-- **方向**
+- **Direction**
 - **Type**
 - **24 小時**
 - **3天**
@@ -399,7 +399,7 @@ ms.locfileid: "47949617"
 
 ## <a name="sent-and-received-email-report"></a>傳送和接收的電子郵件報告
 
-「 **傳送及接收的電子郵件** 報告」是一個智慧報告，顯示傳入和傳出電子郵件的相關資訊，包括垃圾郵件偵測、惡意程式碼，以及識別為「良好」的電子郵件。 此報告與 [郵件流程狀態報表](#mailflow-status-report) 之間的差異為：此報告不包含 edge protection 所封鎖之郵件的相關資料。
+「 **傳送及接收的電子郵件** 報告」是一個智慧報告，顯示傳入和傳出電子郵件的相關資訊，包括垃圾郵件偵測、惡意程式碼，以及識別為「良好」的電子郵件。 此報告與 [郵件流程狀態報表](#mailflow-status-report) 之間的差異為：此報告不包含 edge protection 所封鎖之郵件的相關資料。請務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為一封郵件。
 
 報表的匯總視圖和詳細資料檢視允許90天的篩選。
 
@@ -446,7 +446,7 @@ ms.locfileid: "47949617"
 
 - **日期 (UTC) **
 - **Type**
-- **方向**
+- **Direction**
 - **訊息計數**
 
 如果您按一下 [詳細資料] 表格視圖中的 [ **篩選** ]，您可以使用下列篩選器修改結果：

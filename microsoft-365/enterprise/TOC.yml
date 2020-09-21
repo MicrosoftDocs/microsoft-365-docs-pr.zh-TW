@@ -358,6 +358,8 @@
           href: prepare-a-non-routable-domain-for-directory-synchronization.md
         - name: 設定目錄同步處理
           href: set-up-directory-synchronization.md
+        - name: 安全使用者登入
+          href: microsoft-365-secure-sign-in.md
         - name: 混合式解決方案
           items:
             - name: 概觀
