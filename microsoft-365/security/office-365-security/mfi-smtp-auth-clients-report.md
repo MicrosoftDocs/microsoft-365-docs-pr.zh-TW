@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內郵件流程儀表板中的 SMTP 驗證瞭解和報告，以監視其組織中使用已驗證 SMTP (SMTP 驗證) 傳送電子郵件的電子郵件寄件者。
-ms.openlocfilehash: 4123edcfa08e31217dcd6a29186492bc036fa7a0
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 7ca673e5ecc92c28996a976c26a38ae570f16203
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357431"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199238"
 ---
 # <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>SMTP 驗證用戶端在安全性 & 規範中心內的洞察力和報告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **Smtp 驗證用戶端**在[郵件流程儀表板](mail-flow-insights-v2.md)中深入瞭解，[安全性 & 規範中心](https://protection.office.com)內的相關聯[SMTP 驗證用戶端報告](#smtp-auth-clients-report)，請強調使用者或組織中的系統帳戶使用 SMTP 驗證用戶端提交通訊協定。 這種舊版通訊協定 (會使用端點 smtp.office365.com) 僅提供基本驗證，而且很容易遭到受損帳戶使用以傳送電子郵件。 「洞察力」和「報告」可讓您檢查是否有不尋常的 SMTP 驗證電子郵件提交活動。 此外，它也會顯示使用 SMTP 驗證之用戶端或裝置的 TLS 使用狀況資料。
 

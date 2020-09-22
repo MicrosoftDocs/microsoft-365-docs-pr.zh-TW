@@ -19,19 +19,22 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1e67d4a4af84da9651f091f45eddaa01f467e06c
-ms.sourcegitcommit: 2fbcecaa60e9f551738b9235bd380af807a6681a
+ms.openlocfilehash: 90e889928e9bb49c5325036b22d7caacc76f362f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44339899"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199438"
 ---
 # <a name="microsoft-threat-protection-data-security-and-privacy"></a>Microsoft 威脅防護資料安全性與隱私權
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用於：**
 - Microsoft 威脅防護
 
-Microsoft 威脅防護是在 Microsoft Azure 資料中心的歐盟、英國和美國運作。 在 [布建] 或 [（b）] 中，由服務收集的客戶資料會儲存在 rest 中（a），如果 Microsoft 威脅防護使用另一部 Microsoft online 服務來處理這類資料，則是由其他線上服務之資料儲存規則所定義的地理位置。
+Microsoft 威脅防護是在 Microsoft Azure 資料中心的歐盟、英國和美國運作。 服務所收集的客戶資料會儲存在 rest 的 () 布建期間所識別的承租人地理位置，如果 Microsoft 威脅防護使用另一部 Microsoft online 服務來處理這類資料，則會依照其他線上服務的資料儲存規則所定義的地理位置而定， (b) 。
 
 在假名化表單中的客戶資料也可以儲存在美國中央儲存區與處理系統中。
 

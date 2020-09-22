@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 description: 設定安全性和服務基礎結構，以保護您的資訊並遵守資料隱私權規定。
-ms.openlocfilehash: 640ce075515c687c037cb0e4ab3e03e3beda81dc
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 2b249b3b43f1b520e42be4b6e5f9d684c718dc79
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522286"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195636"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>使用 Microsoft 365 部署資料隱私權法規的資訊保護
 
-您的組織可能會受到區域資料隱私權法規的制約，需要您保護、管理及提供對您的 IT 基礎結構（包括內部部署和雲端）中儲存的個人資訊的權利及控制。 資料隱私權規定的最佳範例是歐盟的一般資料保護規定（GDPR）。 無法遵守資料隱私權規定可能會造成大量罰款。
+您的組織可能會受到區域資料隱私權法規的制約，需要您保護、管理及提供對您的 IT 基礎結構（包括內部部署和雲端）中儲存的個人資訊的權利及控制。 資料隱私權規定的最佳範例是歐盟的一般資料保護法規 (GDPR) 。 無法遵守資料隱私權規定可能會造成大量罰款。
 
 365 Microsoft 團隊中的資料類型範例包括 Microsoft 團隊、Exchange 中的電子郵件，以及 SharePoint 和 OneDrive 中的檔案。 此解決方案提供有關如何針對 Microsoft 365 服務中儲存的個人資料（受限於資料隱私權法規）識別、尋找、保護、管理及回應資料隱私權事件的指導方針。
 
@@ -38,9 +38,8 @@ ms.locfileid: "46522286"
 
 | 功能 | 描述 | 授權 |
 |:-------|:-----|:-------|
-| 合規性管理員 | 使用 Microsoft 服務信任入口網站中的這個工作流程型風險評估工具來管理與 Microsoft 雲端服務相關的合規性活動。 | Microsoft 365 E3 和 E5 |
-| 合規性分數 (預覽) | 在 Microsoft 365 合規性中心中，查看合規性設定的整體分數以及改善建議。 | Microsoft 365 E3 和 E5 |
-| Office 高級威脅防護（ATP） | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 | Microsoft 365 E3 和 E5 | 
+| 合規性管理員 | 管理法規遵從性活動、取得目前的規範設定的整體分數，以及在 Microsoft 365 規範中心的此工作流程型風險評估工具中尋找改進的建議。 | Microsoft 365 E3 和 E5 |
+| Office Advanced 威脅防護 (ATP)  | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 | Microsoft 365 E3 和 E5 | 
 | 敏感度標籤 | 在電子郵件、文件或網站上套用具有不同保護層級的標籤，可以在不影響使用者工作效率和共同作業能力的情況下對組織的資料進行分類和保護。 | Microsoft 365 E3 和 E5 |
 | 資料外洩防護 (DLP) | 偵測、警告，並封鎖風險、不慎或不當的共用，例如共用包含個人資訊的資料 (內部和外部)。 | Microsoft 365 E3 和 E5 | 
 | 資料保留標籤和原則 | 實施資訊控管控制，例如資料的保留時間以及對客戶個人資料儲存的要求，以符合組織的原則或資料法規。 | Microsoft 365 E3 和 E5 |
@@ -66,29 +65,29 @@ ms.locfileid: "46522286"
 
 評估貴組織所需的資料隱私權規定和風險，是開始實施增強功能（包括透過 Microsoft 365 設定可實現）的重要第一步。 這可能包括您的組織需要遵守之監管控制的整體準備工作或特定機密資訊類型的識別，以及在 Microsoft 365 環境中的出現。
 
-如需詳細資訊，請參閱[評估資料隱私權風險及識別敏感專案](information-protection-deploy-assess.md)。
+如需詳細資訊，請參閱 [評估資料隱私權風險及識別敏感專案](information-protection-deploy-assess.md)。
 
-## <a name="track-use-compliance-score-and-compliance-manager"></a>追蹤：使用合規性分數和合規性管理員 
+## <a name="track-use-compliance-manager"></a>追蹤：使用合規性管理員
 
-合規性分數和合規性管理員提供一組整合的工具，可在 Microsoft 365 合規性系統管理中心和服務信任入口網站中使用。 這些工具共同為您提供內建的功能，可以追蹤和管理整體的整體功能，以及與您所進行的多個資料隱私權法規相關的功能。
+合規性管理員（適用于 Microsoft 365 規範中心）提供了內建的功能，可用於追蹤及管理整體的改善動作，以及與您套用至多個資料隱私權法規相關的功能。
 
-這些工具也可讓您利用各項法規特有的內建評估範本，您可以在其中追蹤選取的每個評估範本的動作專案，以及查看特定的規章控制項，並將它們與特定動作相關聯。
+利用每項法規特有的綜合評估範本，您可以在其中追蹤所選取之每個評估範本的動作專案，以及查看特定的規章控制，以及將它們與特定動作相關聯。
 
-如需詳細資訊，請參閱[使用合規性分數和合規性管理員管理改進動作](information-protection-deploy-compliance.md)。
+如需詳細資訊，請參閱 [Use 合規性管理員管理改進動作](information-protection-deploy-compliance.md)。
 
 ## <a name="prevent-use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>禁止：針對資料隱私權規定使用身分識別、裝置和威脅防護
 
 Microsoft 365 提供許多身分識別、裝置和威脅防護功能，可讓您用來協助遵守資料隱私權法規合規性。 
 
-如需詳細資訊，請參閱[使用身分識別、裝置和威脅防護以取得資料隱私權規定](information-protection-deploy-identity-device-threat.md)。
+如需詳細資訊，請參閱 [使用身分識別、裝置和威脅防護以取得資料隱私權規定](information-protection-deploy-identity-device-threat.md)。
 
 本文簡短說明這些方面的資料隱私權法規一般會通話的內容，並提供相關 Microsoft 365 解決方案的清單，並提供詳細資訊的連結，可協助您處理任何執行需求。 
 
 ## <a name="protect-information-subject-to-data-privacy-regulation"></a>保護受資料隱私權法規制約的資訊
 
-資料隱私權規定是指可在您的環境中使用的許多個人資訊保護控制項，包含超過40保護 GDPR 的範例集合中的四個數據隱私權規定、加州消費者保護法（美國衛生保健隱私權法案）和巴西資料保護法案（LGPD）等各項的資訊控制。
+資料隱私權規定是指可在您的環境中使用的許多個人資訊保護控制項，包含超過40保護 GDPR 的範例集合中的四個數據隱私權規定，LGPD 法案 Act (CCPA) 、HIPAA-高科技 (美國衛生保健隱私權法案) 及巴西資料保護法案 () 。
 
-如需詳細資訊，請參閱[保護您組織中的資料隱私權法規的資訊](information-protection-deploy-protect-information.md)。
+如需詳細資訊，請參閱 [保護您組織中的資料隱私權法規的資訊](information-protection-deploy-protect-information.md)。
 
 本文將說明可用於為組織中的資料保密的資訊保護需求提供主要控制項架構。
 
@@ -96,7 +95,7 @@ Microsoft 365 提供許多身分識別、裝置和威脅防護功能，可讓您
 
 針對您的環境可採用的個人資訊控管，資料隱私權法規的呼叫，包括 GDPR、CCPA、HIPAA-高科技的範例，以及 LGPD 的四個數據隱私權規定中的超過二十五個控制措施。
 
-如需詳細資訊，請參閱[管理組織中的資料隱私權規定所遵循的資訊](information-protection-deploy-govern.md)。
+如需詳細資訊，請參閱 [管理組織中的資料隱私權規定所遵循的資訊](information-protection-deploy-govern.md)。
 
 在資訊控管（如惡意保留、刪除及封存）上可能會有不明確的資料隱私權規定 &mdash; ， &mdash; 本文將展示主要控制項架構，您可以針對組織中的資料隱私權使用位址資訊管理需求。
 
@@ -106,4 +105,4 @@ Microsoft 365 提供許多身分識別、裝置和威脅防護功能，可讓您
 
 針對上述各項，具有程式、程式及其他檔，都很重要，都是示範規章主體的合規性。
 
-如需詳細資訊，請參閱[監視並回應組織中的資料隱私權事件](information-protection-deploy-monitor-respond.md)。
+如需詳細資訊，請參閱 [監視並回應組織中的資料隱私權事件](information-protection-deploy-monitor-respond.md)。

@@ -14,14 +14,17 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用「修正慢速」郵件流程規則深入瞭解安全性 & 合規性中心，識別並修正低效或中斷的郵件流程規則， (也稱為其組織中) 的傳輸規則。
-ms.openlocfilehash: c933a6816c82161d0f4a6199ff1a339dd8a10eae
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 2f9a35534ab4377cff164b38eeb66dd55c48d5b9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357341"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199262"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>修正郵件流程規則安全 & 規範中心的洞察力
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 電子郵件流程規則（也稱為傳輸規則) ）可能會導致組織的郵件流程延期 (。 這種洞察力可報告影響組織郵件流程的郵件流程規則。 這些規則類型的範例包括：
 

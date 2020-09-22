@@ -16,14 +16,17 @@ ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何在 Exchange Online 中傳送與 S/MIME 保護的郵件，然後再將適當的憑證發佈到 Office 365。
-ms.openlocfilehash: 634b65e45b01186a27f9ae61c91d4b27f1a11635
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 3551dbacc3cc6279d319860f1133d059216ae591
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826478"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202100"
 ---
 # <a name="sync-user-certificates-to-office-365-for-smime"></a>將使用者憑證同步至 Office 365 進行 S/MIME 處理
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在 Exchange Online 中，任何人都可以傳送 S/MIME 保護的郵件，必須設定適當的憑證。 若要透過 Exchange Online 傳送加密郵件，寄件者的電子郵件應用程式會使用收件者的公用憑證來加密郵件。 這個公用的 X.509 憑證必須發行至 Office 365。
 

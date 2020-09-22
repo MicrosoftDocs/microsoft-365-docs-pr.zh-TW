@@ -14,14 +14,17 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解 Microsoft Exchange Online Protection (EOP) 系統管理員可以使用的報告和疑難排解工具。
-ms.openlocfilehash: 149f7fa36a717a92d3cda5f6f3f82651f0144d73
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 86f4e18430324ed95f036f93746d826225ec3b2f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827626"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196396"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的報告和郵件追蹤
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在包含 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP 提供許多不同的報告，可協助您判斷貴組織的整體狀態與健康情況) EOP。 還有可協助您疑難排解特定事件 (例如郵件未抵達其預定收件者) 的工具，以及有助於符合規範需求的稽核報告。
 

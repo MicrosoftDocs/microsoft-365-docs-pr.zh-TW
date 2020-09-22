@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 2f050885d731563c27100b2d14a3c32cd1a84df1
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: ce80b68784392f5e74f18378e7f074b8273fe73b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648906"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198094"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用範圍：**
 - Microsoft 威脅防護
@@ -52,6 +55,6 @@ ms.locfileid: "46648906"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

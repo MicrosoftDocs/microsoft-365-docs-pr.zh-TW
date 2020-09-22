@@ -16,19 +16,22 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: 取得您在 Office 365 高級威脅防護工作時可能看到的警告頁面的概覽。
-ms.openlocfilehash: 00052c7212f9f469ca94d83ed53851b65904fd8e
-ms.sourcegitcommit: 2de6e07ec55d78a5c5cf2f45732ae68acf058bcf
+ms.openlocfilehash: 7fbca71e7c000cc73b71feeaa777042278e35c4b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44588285"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198794"
 ---
 # <a name="atp-safe-links-warning-pages"></a>ATP 安全連結警告頁面
 
-> [!IMPORTANT]
-> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 個人，而且您正在尋找 Outlook 中安全連結的相關資訊，請參閱[Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-[Office 365 Advanced 威脅防護](office-365-atp.md)（ATP）可協助您的組織防禦透過功能（例如[atp 安全連結](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和[反網路釣魚防護](anti-phishing-protection.md)）等功能的網路釣魚企圖和惡意程式碼。 保護功能到位時，會檢查電子郵件和 Office 檔中的連結（URLs）。 如果 URL 被識別為可疑或惡意的，當您按一下 url 時，可能會遭到封鎖，無法將其開啟。 您也可能會看到警告頁面，而不是直接前往網站。
+
+> [!IMPORTANT]
+> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 個人，而且您正在尋找 Outlook 中安全連結的相關資訊，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+
+[Office 365 Advanced 威脅防護](office-365-atp.md) (ATP) 會透過功能（例如 [atp 安全連結](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)和 [反網路釣魚保護](anti-phishing-protection.md)）協助保護您的組織免受網路釣魚企圖和惡意程式碼的攻擊。 保護到位時，會檢查電子郵件和 Office 檔中 URLs) 的連結 (。 如果 URL 被識別為可疑或惡意的，當您按一下 url 時，可能會遭到封鎖，無法將其開啟。 您也可能會看到警告頁面，而不是直接前往網站。
 
 請閱讀本文，以查看可能出現之警告頁面的範例，以及警告頁面的最近更新。
 

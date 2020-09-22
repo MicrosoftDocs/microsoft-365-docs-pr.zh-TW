@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 將組織的 SIEM 伺服器與 office 365 的高級威脅防護和相關威脅事件，與 Office 365 活動管理 API 整合。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e9dcf24adfb227d0c454b4f5952c879cea511f7
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860686"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203637"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>SIEM 與高級威脅防護的整合
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 如果您的組織使用安全性事件和事件管理 (SIEM) server，您可以將 365 Office 365 的「高級威脅防護」與 SIEM server 整合 (Office ATP) 。 您可以使用 [Office 365 活動管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)設定這種整合方式。 
 

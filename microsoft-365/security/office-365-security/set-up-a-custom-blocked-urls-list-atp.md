@@ -19,14 +19,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何使用 Office 365 進階威脅防護為貴組織設定封鎖的 URL 清單。
-ms.openlocfilehash: f66d447b980cae4a4afbb706f26659c5976bdf37
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e153d5631c12d52564643477216b777cdbc49433
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948087"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201000"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-atp-safe-links"></a>使用 ATP 安全連結設定已封鎖的自訂 URLs 清單
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是家用版使用者且正在尋找 Outlook 中安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。

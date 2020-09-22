@@ -17,21 +17,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: cdbaf9cfd2172656ed75cb3c0a1a9e361070f25b
-ms.sourcegitcommit: 7bb3d8a93a85246172e2499d6c58c390e46f5bb9
+ms.openlocfilehash: 28d6cca20c8b386d5e6f7f39b80264a39f88ec55
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44498348"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199462"
 ---
 # <a name="custom-detections-overview"></a>自訂偵測概觀
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
 
 透過自訂偵測，您可以主動監視和回應各種事件和系統狀態，包括可疑的破壞活動和設定不當的端點。 這種方式是可自訂的偵測規則，自動觸發警示和回應動作。
 
-自訂偵測可與[高級搜尋](advanced-hunting-overview.md)搭配使用，其提供強大且靈活的查詢語言，涵蓋網路的大量事件和系統資訊。 您可以將其設定為定期執行，並在每個專案相符時產生提醒並採取回應動作。
+自訂偵測可與 [高級搜尋](advanced-hunting-overview.md)搭配使用，其提供強大且靈活的查詢語言，涵蓋網路的大量事件和系統資訊。 您可以將其設定為定期執行，並在每個專案相符時產生提醒並採取回應動作。
 
 自訂偵測提供：
 - 從高級搜尋查詢所建立之規則的偵測警示

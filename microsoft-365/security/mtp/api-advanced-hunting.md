@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 9e92a0328d2e7fb9cfe7461241dd866081926876
-ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
+ms.openlocfilehash: dd7b02200e370588bbb9470a3d7e897b30234ead
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47825371"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197806"
 ---
 # <a name="advanced-hunting-apis"></a>高級搜尋 APIs
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
@@ -70,7 +73,7 @@ Content-Type    | application/json
 ## <a name="request-body"></a>要求正文
 在要求主體中，提供具有下列參數的 JSON 物件：
 
-參數 | 類型    | 說明
+參數 | 類型    | 描述
 :---|:---|:---
 查詢 | 文字 |  要執行的查詢。 **必要欄位**。
 

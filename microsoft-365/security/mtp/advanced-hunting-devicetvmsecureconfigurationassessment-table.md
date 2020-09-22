@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 38f5cefb9095ca6c1f628f25a5ed374516c2b0a4
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b186574cfc1307dfd8a01f7a77ef60bf91f4b162
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648998"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196986"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
@@ -52,7 +55,7 @@ ms.locfileid: "46648998"
 - [主動威脅搜捕](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)
 - [威脅與弱點管理的概觀](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

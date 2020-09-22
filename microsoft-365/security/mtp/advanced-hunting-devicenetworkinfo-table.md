@@ -17,21 +17,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 141d2589c5e3c5d8746ba58de01dd63ef0f0c576
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: b874ef77dcf6efacd7adeff18553c0c8e6752bda
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649364"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197070"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
 
 
 
-[！附注] `DeviceNetworkInfo` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含電腦網路設定的相關資訊，包括網路介面卡、IP 及 MAC 位址，以及連線的網路或網域。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `DeviceNetworkInfo` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含電腦網路設定的相關資訊，包括網路介面卡、IP 及 MAC 位址，以及連線的網路或網域。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -43,8 +46,8 @@ ms.locfileid: "46649364"
 | `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
 | `NetworkAdapterName` | string | 網路介面卡的名稱 |
 | `MacAddress` | string | 網路介面卡的 MAC 位址 |
-| `NetworkAdapterType` | string | 網路介面卡類型。 如需可能的值，請參閱[this 列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
-| `NetworkAdapterStatus` | string | 網路介面卡的運作狀態。 如需可能的值，請參閱[this 列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
+| `NetworkAdapterType` | string | 網路介面卡類型。 如需可能的值，請參閱 [this 列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
+| `NetworkAdapterStatus` | string | 網路介面卡的運作狀態。 如需可能的值，請參閱 [this 列舉](https://docs.microsoft.com/dotnet/api/system.net.networkinformation.operationalstatus?view=netframework-4.7.2) |
 | `TunnelType` | string | 隧道通訊協定，如果此介面是用於此用途，例如6to4、Teredo、ISATAP、PPTP、SSTP 和 SSH |
 | `ConnectedNetworks` | string | 連接到配接器的網路。 每個 JSON 陣列都包含網路名稱、類別 (public、private 或 domain) 、描述及表明其是否已公開連接到網際網路的標誌。 |
 | `DnsAddresses` | string | JSON 陣列格式的 DNS 伺服器位址 |
@@ -57,6 +60,6 @@ ms.locfileid: "46649364"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

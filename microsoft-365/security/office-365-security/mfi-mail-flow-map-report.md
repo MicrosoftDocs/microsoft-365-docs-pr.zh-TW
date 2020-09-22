@@ -13,14 +13,17 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內郵件流程儀表板中的郵件流程地圖，以視覺化和追蹤郵件如何透過連接器傳送或從其組織傳送，而不使用連接器。
-ms.openlocfilehash: e144d1d42603fbf2a8f031b1cf7584b6e6ed5c7b
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 74cabb7f7b34be6248d18d71565c8a9729d7e38b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358587"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199368"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>安全性 & 規範中心內的郵件流程地圖
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [安全性 & 合規性中心](https://protection.office.com)的[郵件流程儀表板](mail-flow-insights-v2.md)中的**郵件流程地圖**，可提供郵件透過您的組織流動的洞察力。 您可以使用此資訊來瞭解模式、識別異常，並在發生問題時修正問題。
 
@@ -68,6 +71,6 @@ ms.locfileid: "47358587"
 
 若要回到 [報告] 視圖，請按一下 [ **查看報告**]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

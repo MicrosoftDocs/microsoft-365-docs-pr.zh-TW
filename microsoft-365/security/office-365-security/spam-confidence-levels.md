@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解在 Exchange Online Protection (EOP) 中套用至郵件的垃圾郵件信賴等級 (SCL) 。
-ms.openlocfilehash: 44687b8234e38e7f818aee908d1b65f382c908fe
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827394"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202230"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP 中的垃圾郵件信賴等級 (SCL) 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 組織沒有 Exchange Online 信箱時，輸入郵件會透過 EOP 中的垃圾郵件篩選，並獲指派垃圾郵件分數。 該分數對應于個別垃圾郵件信賴等級， (SCL) 新增至 X 標頭中的郵件。 較高的 SCL 表示郵件可能是垃圾郵件。 EOP 會根據 SCL 對郵件採取動作。
 
@@ -45,7 +48,7 @@ ms.locfileid: "46827394"
 
 您可以使用郵件流程規則（也稱為傳輸規則）) 來加蓋郵件上的 SCL 的 (。 如果您使用郵件流程規則來設定 SCL，則值5或6會觸發垃圾郵件的垃圾郵件篩選 **動作，而**值7、8或9會觸發垃圾郵件篩選動作，以取得 **高信賴的垃圾郵件**。 如需詳細資訊，請參閱[使用郵件流程規則在郵件中設定垃圾郵件信賴等級 (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
 
-類似 SCL，大量投訴層級 (BCL) 識別錯誤的大量電子郵件 (也稱為 _灰色郵件_) 。 較高的 BCL 表示大宗郵件訊息很可能會產生抱怨 (，因此很可能是) 的垃圾郵件。 您可以在反垃圾郵件原則中設定 BCL 閾值。 如需詳細資訊，請參閱 [設定 EOP 中的反垃圾郵件原則](configure-your-spam-filter-policies.md)、 [大量投訴層級 (BCL) ) ](bulk-complaint-level-values.md)，以及 [垃圾郵件和大量電子郵件有什麼不同？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
+類似 SCL，大量投訴層級 (BCL) 識別錯誤的大量電子郵件 (也稱為 _灰色郵件_) 。 BCL 高，表示大量郵件訊息更容易引發抱怨 (因此更可能是垃圾郵件)。 您可以在反垃圾郵件原則中設定 BCL 閾值。 如需詳細資訊，請參閱 [設定 EOP 中的反垃圾郵件原則](configure-your-spam-filter-policies.md)、 [大量投訴層級 (BCL) ) ](bulk-complaint-level-values.md)，以及 [垃圾郵件和大量電子郵件有什麼不同？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
 |<!-- -->|
 |---|

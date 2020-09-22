@@ -12,14 +12,17 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 系統管理員可以深入瞭解安全性 & 規範中心的郵件流程儀表板中提供的真知灼見和報告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 06e9449553d008bc383ae6f2b6098f9598cad43c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 089c6351485712d841691d5b856b1ba28dfe4fc4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826562"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198478"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 系統管理員可以使用安全性 & 合規性中心內的郵件流程儀表板來探索趨勢、深入資訊，並採取行動來修正組織中與郵件流程相關的問題。
 

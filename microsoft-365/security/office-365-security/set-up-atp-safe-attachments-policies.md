@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何定義安全附件原則，以利用電子郵件中的惡意檔來保護組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8b69d114b1387a1ef76d962424149c1db93ce04
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 5f9f1a6cc250fdd336e48c19c6cb5d73e9a05800
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656623"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197220"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!IMPORTANT]
 > 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是家用版使用者且正在尋找 Outlook 中安全附件的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。

@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f303ea37e67077c2a55c4fd94766b34671b78e5d
-ms.sourcegitcommit: 74bf600424d0cb7b9d16b4f391aeda7875058be1
+ms.openlocfilehash: 82b79389420520c637b0b526c178e515c6c54cd1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42235232"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201012"
 ---
 # <a name="whats-new-in-microsoft-365-security"></a>Microsoft 365 安全性的新功能
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用於：**
 - Microsoft 威脅防護

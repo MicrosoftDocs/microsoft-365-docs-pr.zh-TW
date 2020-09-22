@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 62852dfe75794d5d0e33453f978967fff40813e1
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 202a5900dedece865f1aa328735477293a8a19c0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816934"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201768"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>建立 Microsoft 威脅防護試用實驗室或試驗環境 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
@@ -48,7 +51,7 @@ ms.locfileid: "47816934"
 
 建立 Microsoft 威脅防護試用實驗室環境並部署它時，有三個階段：
 
-|階段 | 說明 | 
+|階段 | 描述 | 
 |:-------|:-----|
 | ![階段1：準備](../../media/prepare.png)<br>[階段1：準備](prepare-mtpeval.md)| 深入瞭解在試用實驗室或試驗環境中部署 Microsoft 威脅防護時，需要考慮的事項： <br><br>-專案關係人和簽核關 <br> -環境考慮 <br>-Access <br>-Azure Active Directory 安裝程式 <br> -設定順序
 |  ![階段2：設定](../../media/setup.png) <br>[階段2：設定](setup-mtpeval.md)|  請先取得存取 Microsoft 365 安全中心的初始步驟，以設定您的 Microsoft 威脅防護試用實驗室或試驗環境。 您將會指導您：<br><br>-註冊 Microsoft 365 E5 試用版 <br>  -設定網域<br>-指派 Microsoft 365 E5 授權<br>-完成入口網站中的設定向導|
@@ -77,6 +80,6 @@ ms.locfileid: "47816934"
 -   設定可能會與 Microsoft 威脅防護整合的協力廠商解決方案
 -   實際執行環境中的滲透測試
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 ![階段1：準備](../../media/prepare.png) <br>[階段1：準備](prepare-mtpeval.md) 
 <br> 準備您的 Microsoft 威脅防護試用實驗室或試驗環境

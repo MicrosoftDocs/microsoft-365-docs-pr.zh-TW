@@ -14,14 +14,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f831e952b20d04796f69a6c3c00ba4d69d332951
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 425956ebd4c3badc54f074b779997d530e2ee1a5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867230"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200988"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心概述
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 管理您的企業安全性以防範不斷變化的威脅環境會帶來許多挑戰。 您可能會有太多安全性解決方案與不同的位置來設定許多控制項。 您可能會想知道哪些控制項最為有效，而且會為您的工作力帶來新的挑戰。 安全小組很難找到安全性和生產力的適當平衡。
 

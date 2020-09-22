@@ -19,16 +19,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解 Office 365 的「高級威脅防護計畫中的威脅調查和回應功能。
-ms.openlocfilehash: 6c009a756b30d4b35159b98b145b19b72c9ab541
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: c37129c7c3801ab1e55bd59f9c40c9e65f9cbd8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656668"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198430"
 ---
 # <a name="threat-investigation-and-response"></a>威脅調查及回應
 
-Office 365 中的威脅調查和回應功能[高級威脅防護](office-365-atp.md)可協助安全性分析專家和系統管理員保護組織的 Microsoft 365 for business 使用者，其方式如下：
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+Office 365 中的威脅調查和回應功能 [高級威脅防護](office-365-atp.md) 可協助安全性分析專家和系統管理員保護組織的 Microsoft 365 for business 使用者，其方式如下：
 - 讓您輕鬆識別、監視和瞭解 cyberattacks
 - 協助快速解決 Exchange Online 中的威脅、SharePoint 線上、商務和 Microsoft 小組 OneDrive
 - 提供真知灼見和知識以協助安全性作業，以防止 cyberattacks 對其組織
@@ -48,19 +51,19 @@ Office 365 中的威脅調查和回應功能[高級威脅防護](office-365-atp.
 
 ### <a name="threat-dashboard"></a>威脅儀表板
 
-使用 [威脅儀表板] (這也稱為[安全性儀表板](security-dashboard.md)) 以快速查看已解決的威脅，以及向業務決策決策者報告 Microsoft 365 服務如何保護您的業務的視覺方式。
+使用 [威脅儀表板] (這也稱為 [安全性儀表板](security-dashboard.md)) 以快速查看已解決的威脅，以及向業務決策決策者報告 Microsoft 365 服務如何保護您的業務的視覺方式。
   
 ![威脅儀表板](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
   
-若要查看和使用此儀表板，請在安全性與 &amp; 合規性中心，移至 [**威脅管理** \> **儀表板**]。
+若要查看和使用此儀表板，請在安全性與 &amp; 合規性中心，移至 [ **威脅管理** \> **儀表板**]。
   
 ### <a name="threat-explorer"></a>威脅總管
 
-使用[威脅瀏覽器 (和即時偵測) ](threat-explorer.md)來分析威脅、查看一段時間的攻擊量，以及依威脅系列、攻擊者基礎結構等來分析資料。 威脅瀏覽器 (也稱為 Explorer) 是任何安全分析員調查工作流程的開始位置。
+使用 [威脅瀏覽器 (和即時偵測) ](threat-explorer.md) 來分析威脅、查看一段時間的攻擊量，以及依威脅系列、攻擊者基礎結構等來分析資料。 威脅瀏覽器 (也稱為 Explorer) 是任何安全分析員調查工作流程的開始位置。
 
 ![威脅總管](../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png)
   
-若要查看和使用此報告，請在安全性與 &amp; 合規性中心，移至 [**威脅管理** \> **瀏覽器**]。
+若要查看和使用此報告，請在安全性與 &amp; 合規性中心，移至 [ **威脅管理** \> **瀏覽器**]。
   
 ### <a name="incidents"></a>事件
 
@@ -68,17 +71,17 @@ Office 365 中的威脅調查和回應功能[高級威脅防護](office-365-atp.
 
 ![Office 365 中的目前威脅事件清單](../../media/acadd4c7-d2de-4146-aeb8-90cfad805a9c.png)
 
-若要查看組織目前的事件清單，請在安全性 & 合規性中心，移至**威脅管理** \> **回顧** \> **事件**。
+若要查看組織目前的事件清單，請在安全性 & 合規性中心，移至 **威脅管理** \> **回顧** \> **事件**。
 
 ![在 [安全性 & 規範中心] 中，選擇 [威脅管理 \> 檢查]](../../media/e0f46454-fa38-40f0-a120-b595614d1d22.png)
 
 ### <a name="attack-simulator"></a>攻擊模擬器
 
-使用攻擊模擬器，在您的組織中設定及執行實際的 cyberattacks，並在實際 cyberattack 影響您的公司之前識別有漏洞的人員。 若要深入瞭解，請參閱[Office 365 中的攻擊模擬器](attack-simulator.md)。
+使用攻擊模擬器，在您的組織中設定及執行實際的 cyberattacks，並在實際 cyberattack 影響您的公司之前識別有漏洞的人員。 若要深入瞭解，請參閱 [Office 365 中的攻擊模擬器](attack-simulator.md)。
 
 ### <a name="automated-investigation-and-response"></a>自動調查及回應
 
-使用自動調查和回應 (AIR) 功能，以儲存組織中威脅帶來的時間與精力，以關聯內容、裝置和人員。 每當觸發特定警示時，或是當您的安全性作業小組開始時，就可以開始空氣處理常式。 若要深入瞭解，請參閱[Office 365 中的自動化調查和回應](automated-investigation-response-office.md)。
+使用自動調查和回應 (AIR) 功能，以儲存組織中威脅帶來的時間與精力，以關聯內容、裝置和人員。 每當觸發特定警示時，或是當您的安全性作業小組開始時，就可以開始空氣處理常式。 若要深入瞭解，請參閱 [Office 365 中的自動化調查和回應](automated-investigation-response-office.md)。
 
 ## <a name="threat-intelligence-widgets"></a>威脅智慧小元件
 
@@ -88,7 +91,7 @@ Office 365 中的威脅調查和回應功能[高級威脅防護](office-365-atp.
 
 ## <a name="how-do-we-get-these-capabilities"></a>如何取得這些功能？
 
-Microsoft 365 威脅調查和回應功能包含在 Office 365 的「高級威脅防護計畫2」中，它包含在企業版 E5 中，或在特定訂閱中包含為附加元件。 若要深入瞭解，請參閱[Office 365 ATP Plan 1 和 Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
+Microsoft 365 威脅調查和回應功能包含在 Office 365 的「高級威脅防護計畫2」中，它包含在企業版 E5 中，或在特定訂閱中包含為附加元件。 若要深入瞭解，請參閱 [Office 365 ATP Plan 1 和 Plan 2](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
 
 ## <a name="required-roles-and-permissions"></a>必要角色和權限
 
@@ -105,11 +108,11 @@ Office 365 高級威脅防護會使用以角色為基礎的存取控制。 許�
 
 |活動|角色及權限|
 |---|---|
-|使用威脅儀表板 (或新的[安全性儀表板](security-dashboard.md)) <br/> <br/>查看最近或目前威脅的相關資訊|下列其中之一： <br/>- **全域管理員**  <br/> - **安全性管理員** <br/>- **安全性讀取器** <br/> <br/>您可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 () 中指派這些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
-|使用[威脅瀏覽器 (和即時偵測) ](threat-explorer.md)來分析威脅|下列其中之一： <br/>- **全域管理員**  <br/> - **安全性管理員** <br/>- **安全性讀取器** <br/> <br/>您可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 () 中指派這些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
+|使用威脅儀表板 (或新的 [安全性儀表板](security-dashboard.md)) <br/> <br/>查看最近或目前威脅的相關資訊|下列其中之一： <br/>- **全域管理員**  <br/> - **安全性管理員** <br/>- **安全性讀取器** <br/> <br/>您可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 () 中指派這些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
+|使用 [威脅瀏覽器 (和即時偵測) ](threat-explorer.md) 來分析威脅|下列其中之一： <br/>- **全域管理員**  <br/> - **安全性管理員** <br/>- **安全性讀取器** <br/> <br/>您可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 () 中指派這些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
 |View 事件 (也稱為「調查」)  <br/> 將電子郵件新增至事件|下列其中之一： <br/>- **全域管理員**  <br/> - **安全性管理員** <br/>- **安全性讀取器** <br/> <br/>您可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 () 中指派這些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
-|觸發事件中的電子郵件動作 <br/> <br/> 尋找和刪除可疑的電子郵件|下列其中之一： <br/>- **全域管理員**  <br/> - **安全性管理員**和**搜尋及清除**角色<br/><br/>**全域管理員**及**安全性管理員**角色可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 () 中指派 [https://admin.microsoft.com](https://admin.microsoft.com) 。 <br/><br/>您必須在安全性 & 規範中心 () 中指派**搜尋和清除**角色 [https://protection.office.com](https://protection.office.com) 。|
-|整合 Office 365 Advanced 威脅防護方案2與 Microsoft Defender 高級威脅防護  <br/><br/> 將 Office 365 Advanced 威脅防護方案2與 SIEM 伺服器整合|在任何 Azure Active Directory (中所指派的**全域系統管理員**或**安全性管理員**角色 [https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 。<br/>--- **加** ---<br/>在其他應用程式中指派的適當角色 (例如[Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)或 SIEM server) |
+|觸發事件中的電子郵件動作 <br/> <br/> 尋找和刪除可疑的電子郵件|下列其中之一： <br/>- **全域管理員**  <br/> - **安全性管理員** 和 **搜尋及清除** 角色<br/><br/>**全域管理員**及**安全性管理員**角色可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 () 中指派 [https://admin.microsoft.com](https://admin.microsoft.com) 。 <br/><br/>您必須在安全性 & 規範中心 () 中指派 **搜尋和清除** 角色 [https://protection.office.com](https://protection.office.com) 。|
+|整合 Office 365 Advanced 威脅防護方案2與 Microsoft Defender 高級威脅防護  <br/><br/> 將 Office 365 Advanced 威脅防護方案2與 SIEM 伺服器整合|在任何 Azure Active Directory (中所指派的 **全域系統管理員** 或 **安全性管理員** 角色 [https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 。<br/>--- **加** ---<br/>在其他應用程式中指派的適當角色 (例如 [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) 或 SIEM server) |
 |
 
 ## <a name="next-steps"></a>後續步驟

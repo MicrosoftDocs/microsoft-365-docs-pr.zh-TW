@@ -18,36 +18,39 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解 Office 365 的 ATP 安全附件功能及如何取得您訂閱的功能。
-ms.openlocfilehash: 16b9ae47ead318e200cdf1e5e5beb58c2bc396bc
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 1ff7021f1c9fa64d3f04cbcac7231733399ad2b8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656990"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198772"
 ---
 # <a name="atp-safe-attachments"></a>ATP 安全附件
 
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
 ## <a name="overview-of-office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件的概觀
 
-ATP 安全附件 (隨附於 [ATP 安全連結](atp-safe-links.md)) 是 [Office 365 進階威脅防護](office-365-atp.md) (ATP) 的一部分。 「ATP 安全附件」功能會檢查電子郵件附件是否為惡意，然後採取行動來保護貴組織。 ATP 安全附件功能會根據全域管理員或安全性系統管理員所設定的[Atp 安全附件原則](set-up-atp-safe-attachments-policies.md)，來保護您的組織。
+ATP 安全附件 (隨附於 [ATP 安全連結](atp-safe-links.md)) 是 [Office 365 進階威脅防護](office-365-atp.md) (ATP) 的一部分。 「ATP 安全附件」功能會檢查電子郵件附件是否為惡意，然後採取行動來保護貴組織。 ATP 安全附件功能會根據全域管理員或安全性系統管理員所設定的 [Atp 安全附件原則](set-up-atp-safe-attachments-policies.md) ，來保護您的組織。
 
 ATP 保護也會延伸到 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的檔案。 若要深入了解，請參閱[為 SharePoint、OneDrive 和 Microsoft Teams 啟用了 Office 365 進階威脅防護](atp-for-spo-odb-and-teams.md)。
 
 ## <a name="how-to-get-atp-safe-attachments"></a>如何取得 ATP 安全附件
 
-首先，請確定您的訂用帳戶包含[進階威脅防護](office-365-atp.md)。 在訂閱中包含 ATP，例如[microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)、Office 365 E5、office 365 A5 等等。如果您的組織有未包含 Office 365 ATP 的 Microsoft 365 訂閱，您可以將 ATP 購買為附加元件。 如需詳細資訊，請參閱 [Office 365 進階威脅防護方案和定價](https://products.office.com/exchange/advance-threat-protection)和 [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (部分機器翻譯)。
+首先，請確定您的訂用帳戶包含[進階威脅防護](office-365-atp.md)。 在訂閱中包含 ATP，例如 [microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)、Office 365 E5、office 365 A5 等等。如果您的組織有未包含 Office 365 ATP 的 Microsoft 365 訂閱，您可以將 ATP 購買為附加元件。 如需詳細資訊，請參閱 [Office 365 進階威脅防護方案和定價](https://products.office.com/exchange/advance-threat-protection)和 [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (部分機器翻譯)。
 
 接下來，請確定您的 ATP 安全附件原則已定義。 (請參閱[設定 Office 365 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md))。ATP 安全附件功能會在下列情況中運作：
 
 - 已設定 ATP 安全附件原則。 (請參閱[在 Office 365 中設定 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)。)
 
-- 使用者已使用公司或學校帳戶登入。  (請參閱登[入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。 ) 
+- 使用者已使用公司或學校帳戶登入。  (請參閱登 [入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。 ) 
 
 若要定義 (或編輯) ATP 原則，您必須獲派適當的角色。 下表中有一些範例描述：
 
 |角色|指派位置/條件|
 |---|---|
-|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)以深入瞭解。 ) |
+|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱 [關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) 以深入瞭解。 ) |
 |安全性系統管理員|Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online 組織管理|Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 |
@@ -73,4 +76,4 @@ ATP 保護也會延伸到 SharePoint Online、商務用 OneDrive 和 Microsoft T
 
 - 如果您想要對收到的檔案要求 Microsoft 進行分析，請造訪[提交檔案以進行惡意程式碼分析](https://aka.ms/wdsi/submit) (英文)。
 
-- 如果您收到的電子郵件訊息 (包含或沒有要提交給 Microsoft 進行分析的附件) ，請參閱[將郵件和檔案報告給 microsoft](report-junk-email-messages-to-microsoft.md)。
+- 如果您收到的電子郵件訊息 (包含或沒有要提交給 Microsoft 進行分析的附件) ，請參閱 [將郵件和檔案報告給 microsoft](report-junk-email-messages-to-microsoft.md)。

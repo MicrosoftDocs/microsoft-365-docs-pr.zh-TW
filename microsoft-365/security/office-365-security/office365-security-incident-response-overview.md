@@ -18,14 +18,17 @@ search.appverid:
 description: 此解決方案會告訴您，在 Microsoft 365 中最常見的 cybersecurity 攻擊可能如您所述，以及如何回應它們
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: c6f5087799a0e3a06d0849f99e9911cf77260e1b
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 221303d43620e89b8200392961d8aa0916c82763
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818792"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198700"
 ---
 # <a name="security-incident-response"></a>安全性事件回應
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **摘要：** 此解決方案會告訴您 Office 365 中最常見的 cybersecurity 攻擊的指示器為何，如何正確確認任何指定的攻擊，以及如何對其作出回應。
 
@@ -37,7 +40,7 @@ ms.locfileid: "44818792"
 
 - 攻擊的含義及其運作方式。
 
-- 有哪些符號稱為損損（IOC），可供尋找及尋找方式。
+-  (IOC) 中的標誌（稱為「損損」），以尋找及如何尋找這些標記。
 
 - 如何正確確認攻擊。
 
@@ -59,7 +62,7 @@ ms.locfileid: "44818792"
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>像網路安全專業人員一般保護 Microsoft 365
 
-您的 Microsoft 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用[microsoft 365 安全性藍圖-前30天、90天和之後的最高優先順序](security-roadmap.md)，以執行 microsoft 建議的最佳作法，以保護您的 microsoft 365 組織。
+您的 Microsoft 365 訂閱隨附一組功能強大的安全性功能，可供您用來保護您的資料和您的使用者。  使用 [microsoft 365 安全性藍圖-前30天、90天和之後的最高優先順序](security-roadmap.md) ，以執行 microsoft 建議的最佳作法，以保護您的 microsoft 365 組織。
 
 - 要在前 30 天內完成的工作。  這些工作會有立即的影響，而且對您的使用者影響較低。
 

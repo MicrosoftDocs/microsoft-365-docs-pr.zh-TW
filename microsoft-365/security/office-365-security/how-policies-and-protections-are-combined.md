@@ -16,14 +16,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 中的保護應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
-ms.openlocfilehash: 9556d2262eb59224357e20027a1f0e63404081f2
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e2da22bfbe0e7df70cf8d8b0d8cfd09eaf6e2ee3
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827406"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196044"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子郵件保護的順序和優先順序
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 組織沒有 Exchange Online 信箱，輸入的電子郵件可能會以多種保護形式進行標記。 例如，可供所有 Microsoft 365 客戶使用的內建 EOP 防網路釣魚原則，以及 Office 365 高級威脅防護中也可使用的更強健的 ATP 反網路釣魚原則 (Office 365 ATP) 客戶。 郵件也會透過多個偵測掃描進行惡意程式碼、垃圾郵件、網路釣魚等的掃描。在此活動中，可能會對套用的原則產生一些混淆。
 
@@ -38,7 +41,7 @@ ms.locfileid: "46827406"
   |優先順序|電子郵件保護|類別|要管理的位置|
   |---|---|---|---|
   |1|惡意程式碼|CAT： MALW|[在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)|
-  |2|網路釣魚|CAT： PHSH|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |2 |網路釣魚|CAT： PHSH|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |個|高信賴度的垃圾郵件|CAT： HSPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |4 |詐騙|CAT：欺騙|[在 EOP 中設定欺騙情報](learn-about-spoof-intelligence.md)|
   |5 |垃圾郵件|CAT： SPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
@@ -60,7 +63,7 @@ ms.locfileid: "46827406"
   |ATP 反網路釣魚原則|優先順序|使用者模擬|反詐騙|
   |---|---|---|---|
   |原則 A|1|開啟|關閉|
-  |原則 B|2|關閉|開啟|
+  |原則 B|2 |關閉|開啟|
   |
 
 1. 郵件會標示及視為欺騙性，因為哄騙具有比使用者模擬 (8) 更高優先順序的 (4) 。

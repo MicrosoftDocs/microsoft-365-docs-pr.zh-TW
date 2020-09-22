@@ -20,14 +20,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在 Exchange Online Protection (EOP) 中瞭解隔離郵件的使用者垃圾郵件通知。
-ms.openlocfilehash: 9e9c95fafe3610e0ad945f18aa85ff13342d8d65
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 9d1da6c4db245ecb065a5a076f2bc6a9c275c494
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827358"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195816"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>使用使用者垃圾郵件通知來釋放及報告隔離的郵件
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，隔離區會保存可能有害或垃圾郵件。 如需詳細資訊，請參閱 [EOP 中的隔離郵件](quarantine-email-messages.md)。
 

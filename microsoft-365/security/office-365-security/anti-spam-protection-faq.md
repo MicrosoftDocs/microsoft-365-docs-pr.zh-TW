@@ -17,14 +17,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在 Exchange Online Protection (EOP) 中查看有關反垃圾郵件保護的常見問題及解答。
-ms.openlocfilehash: ed871990cf5f8fc4e15995987312fc6814ab8296
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: d114c20a3a246eb0cd925b6783b10071d056443d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825170"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198604"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾郵件保護常見問題集
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 本主題提供 Exchange Online 中的信箱、獨立 Exchange Online Protection (EOP) 組織中的 Microsoft 365 組織的反惡意程式碼保護的常見問題和解答，但沒有 Exchange Online 信箱。
 

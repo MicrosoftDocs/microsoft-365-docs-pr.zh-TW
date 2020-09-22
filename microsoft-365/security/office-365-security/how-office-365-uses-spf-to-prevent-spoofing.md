@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解 Microsoft 365 如何使用寄件者原則框架 (的 SPF) TXT 記錄，以確保目的地電子郵件系統信任從您的自訂網域傳送的郵件。
-ms.openlocfilehash: 702c5de90c53388a3d55ad752010fbaa04b5556b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c437793a63f3869573b023cbcd9420e4d3c3b554
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307646"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196104"
 ---
 # <a name="how-microsoft-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Microsoft 365 如何使用寄件者原則架構 (SPF) 來防止詐騙
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **摘要：** 本文說明 Microsoft 365 如何使用 DNS 中的寄件者原則框架 (SPF) TXT 記錄，以確保目的地電子郵件系統信任從您的自訂網域傳送的郵件。 這適用于從 Microsoft 365 傳送的輸出郵件。 從 Microsoft 365 傳送給 Microsoft 365 內之收件者的郵件，將永遠會透過 SPF。
 

@@ -14,14 +14,17 @@ ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何使用 PowerShell 將設定設定套用至 Microsoft Exchange Online Protection (EOP) 中的承租人。
-ms.openlocfilehash: 46b7c756171da7687568e5135974841d828f45bd
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 6e33ceb6a9daa88bfefd4ec08ac9f2a9f34a942f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827454"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198676"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>套用 EOP 設定至多個租用戶的範例指令碼
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 下列範例指令碼可讓管理多個承租人 (公司) 的 Microsoft Exchange Online Protection (EOP) 系統管理員，利用 Windows PowerShell 將組態設定套用至他們的承租人。
 

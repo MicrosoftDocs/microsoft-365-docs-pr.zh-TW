@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Outlook.com 所接受或拒絕的電子郵件地址類型，以協助防止網路釣魚。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c67cf5855f2b0a99cf8d03bb6d7ba8557329b300
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827418"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196056"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP 如何驗證寄件者位址以避免網路釣魚
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 網路釣魚攻擊是對任何電子郵件組織造成的持續威脅。 除了使用 [冒牌 (偽造) 寄件者電子郵件地址](anti-spoofing-protection.md)，攻擊者通常會使用來自于網際網路標準的「寄件者」位址值。 為了協助防止此類型的網路釣魚，Exchange Online Protection (EOP) 和 Outlook.com 現在要求輸入郵件包含與 RFC 相容的「來源位址」（如本主題所述）。 此強制已于2017年11月啟用。
 

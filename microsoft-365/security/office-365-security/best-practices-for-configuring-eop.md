@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 請遵循下列針對獨立 Exchange Online Protection (EOP) 的最佳作法建議，以便自行設定以取得成功，並避免常見的設定錯誤。
-ms.openlocfilehash: eb8e4aff765fbc1ab13c603f32ca0af51f87a4ae
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: cb3aa36720a6a46932d69341394304937bb1a296
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827662"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203560"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>設定獨立 EOP 的最佳作法
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 請遵循下列針對獨立 Exchange Online Protection (EOP) 的最佳作法建議，以便自行設定以取得成功，並避免常見的設定錯誤。 本主題假設您已完成安裝程序。 若您尚未完成 EOP 安裝，請參閱 [設定 EOP 服務](set-up-your-eop-service.md)。
 
@@ -41,7 +44,7 @@ ms.locfileid: "46827662"
 
 ****
 
-|安全性功能名稱|標準|嚴格|留言|
+|安全性功能名稱|標準版|嚴格|留言|
 |---|---|---|---|
 |[設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
 |[使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)|是|是||

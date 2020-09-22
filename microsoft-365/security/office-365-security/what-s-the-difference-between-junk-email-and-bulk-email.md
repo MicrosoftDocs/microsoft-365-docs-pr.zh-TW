@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Exchange Online Protection 中的垃圾郵件 (垃圾郵件) 和大量電子郵件)  (灰色郵件 (EOP) 。
-ms.openlocfilehash: 17e6223175013678f389c0d7624cc4e4f4476f98
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 1e11f897a145f7b34acc81e1d132d6babac08979
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826726"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195472"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>EOP 中垃圾郵件和大量電子郵件有什麼不同？
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在使用 Exchange Online 中的信箱或獨立 Exchange Online (Protection 的 Microsoft 365 組織中，EOP) 不含 Exchange Online 信箱的組織，客戶有時會問：「垃圾郵件和大量電子郵件有什麼不同？」。 本主題說明 EOP 中可用的控制項的差異和描述。
 

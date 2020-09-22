@@ -14,14 +14,17 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何從內部部署電子郵件清潔裝置或雲端式保護服務切換至 Exchange Online Protection (EOP) 。
-ms.openlocfilehash: a6405411a130abf8369b312f553060caf0bf3855
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 25669982c06127331369fdb595c6614733681047
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827794"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202122"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  本主題的目的在於協助您了解從內部部署電子郵件檢疫裝置或雲端保護服務切換到 Exchange Online Protection (EOP) 的程序，然後提供給您開始使用的說明資源。有許多垃圾郵件篩選解決方案，但在大多數情況下，切換到 EOP 的程序類型很類似。
 

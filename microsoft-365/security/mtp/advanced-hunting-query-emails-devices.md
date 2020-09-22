@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: c24f5891573b8541a97a35d228c57642766fe4a0
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 5b2ef4881eabea7e546eb8cd3d164b372b0018ee
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419141"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199826"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>尋找跨裝置、電子郵件、應用程式和身分識別的威脅
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用於：**
 - Microsoft 威脅防護

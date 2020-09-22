@@ -15,16 +15,19 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 瞭解如何使用自訂或協力廠商報表解決方案來整合自動調查和回應。
-ms.openlocfilehash: cd7eb016ecd250eef56039e0135237c1caebadf8
-ms.sourcegitcommit: fa8e488936a36e4b56e1252cb4061b5bd6c0eafc
+ms.openlocfilehash: 2ff0ef995fc8418c3d57895f00ea96f05b0aaa97
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656894"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195602"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>使用自訂或協力廠商報表解決方案的管理活動 API
 
-使用[Office 365 的高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，您可以取得[有關自動化調查的詳細資訊](air-view-investigation-results.md)。 不過，部分組織也會使用自訂或協力廠商報表解決方案。 如果您的組織想要整合利用這類方案進行的自動調查資訊，您可以使用 Office 365 管理活動 API。
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+使用 [Office 365 的高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，您可以取得 [有關自動化調查的詳細資訊](air-view-investigation-results.md)。 不過，部分組織也會使用自訂或協力廠商報表解決方案。 如果您的組織想要整合利用這類方案進行的自動調查資訊，您可以使用 Office 365 管理活動 API。
 
 使用下列資源進行設定：
 

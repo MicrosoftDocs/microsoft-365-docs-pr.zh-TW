@@ -13,14 +13,17 @@ ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全 & 規範中心內郵件流程儀表板中的 [修正可能的郵件迴圈洞察力]，識別並修正其組織中的郵件迴圈。
-ms.openlocfilehash: 063906195488aa7d65093c538d9045002448e181
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: e868c020ae307ba490e85e5803f94a67a1a94057
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358267"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198442"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>修正安全性 & 規範中心內可能的郵件迴圈洞察力
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 郵件迴圈是錯誤的，因為它會浪費系統資源、使用組織的郵件磁片區配額，並傳送混亂的非傳遞回報 (也稱為 NDRs 或退回郵件) 至原始寄件者。
 

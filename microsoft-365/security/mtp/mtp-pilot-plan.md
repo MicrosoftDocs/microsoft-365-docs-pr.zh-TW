@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 601e81fc5265fe2ec5f41009b6c4fa43c0c8233d
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962606"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195648"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>規劃試驗 Microsoft 威脅防護專案 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
@@ -75,12 +78,12 @@ ms.locfileid: "47962606"
 
 |**使用案例**|**需求**|**設定需求**|**測試計劃**|**預期的結果**|**測試狀態**|**分數**|**附註**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|事件管理|-Microsoft 威脅防護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud App Security (optional) |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作 |[模擬攻擊](mtp-pilot-simulate.md) <br></br>[調查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |調查人員可以瞭解該事件的範圍與影響，並管理該事件||||
-|AutoIR|-Microsoft 威脅防護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作 <br>啟用 AutoIR  |[模擬攻擊](mtp-pilot-simulate.md) <br></br>[自動調查](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Microsoft 威脅防護會自動修正警示和事件||||
+|事件管理|-Microsoft 威脅防護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud App Security (optional) |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作 |[類比攻擊](mtp-pilot-simulate.md) <br></br>[調查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |調查人員可以瞭解該事件的範圍與影響，並管理該事件||||
+|AutoIR|-Microsoft 威脅防護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作 <br>啟用 AutoIR  |[類比攻擊](mtp-pilot-simulate.md) <br></br>[自動調查](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Microsoft 威脅防護會自動修正警示和事件||||
 |進階搜捕|-Microsoft 威脅防護 </br></br>-Microsoft Defender ATP </br></br>-Office 365 ATP   |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作|[高級搜尋案例](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |調查人員可以透過高級搜尋、切換至受影響的實體，以及建立自訂的偵測，尋找資料||||
 
 
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 |![準備階段](../../media/prepare.png) <br>[準備階段](prepare-mtpeval.md) | 準備您的 Microsoft 威脅防護試驗環境
 |:-------|:-----|

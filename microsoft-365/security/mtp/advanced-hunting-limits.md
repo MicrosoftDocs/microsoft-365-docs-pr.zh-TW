@@ -17,21 +17,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: e3fbe29076d541df68dc39754960386fe935c7bc
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: aaba01f5970c9abf55f5fae760d1ba1fed8ba914
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950922"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199874"
 ---
 # <a name="advanced-hunting-service-limits"></a>高級搜尋服務限制
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
 
 為了讓服務具有高性能和回應能力，「高級搜尋」會為手動執行和 [自訂偵測規則](custom-detection-rules.md)，設定各種查詢限制。 請參閱下表以瞭解這些限制。
 
-| 限制 | 大小 | 重新整理週期 | 說明 |
+| 限制 | 大小 | 重新整理週期 | 描述 |
 |--|--|--|--|
 | 資料範圍 | 30 天 | 每個查詢 | 每個查詢都可以查詢過去30天的資料。 |
 | 結果集 | 10000列 | 每個查詢 | 每個查詢最多可以傳回10000筆記錄。 |

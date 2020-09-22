@@ -11,14 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 系統管理員可以在安全性 & 合規性中心的郵件流程儀表板中瞭解自動轉寄的郵件報告。
-ms.openlocfilehash: e9e3a0159671dd4ce62f4fa0b07b7162807fe0e6
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b5255a95718fa6624c85e93a19c8accf9c3dcdb2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949853"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199356"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心內，自動轉寄的郵件會深入瞭解
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在[Security & 合規性中心](https://protection.office.com)的[郵件流程儀表板](mail-flow-insights-v2.md)中，可洞察的**自動轉寄郵件**會顯示自動從您的組織轉送到外部網域中收件者之郵件的相關資訊。
 

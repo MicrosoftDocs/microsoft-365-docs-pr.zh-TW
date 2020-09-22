@@ -17,19 +17,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 3d59f987ae4d670e3d7c6f1638f8090ffc3ba7fe
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 6922f50906013cfbfa3bd63c69fff3e89ed46cd5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649304"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196818"
 ---
 # <a name="identityinfo"></a>IdentityInfo
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
 
-[！附注] `IdentityInfo` [高級搜尋](advanced-hunting-overview.md)架構中的表格包含從各種服務（包含 Azure Active Directory）取得之使用者帳戶的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `IdentityInfo` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含從各種服務（包含 Azure Active Directory）取得之使用者帳戶的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!NOTE]
 >此資料表已重新命名 `AccountInfo` 。 重新命名時，儲存在入口網站中的所有查詢都會自動更新。 檢查您已儲存在其他位置的查詢。
@@ -59,6 +62,6 @@ ms.locfileid: "46649304"
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

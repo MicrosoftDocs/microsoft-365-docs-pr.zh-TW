@@ -17,21 +17,24 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 222d7f12c1a648800e4a359eb341354a5609c548
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: d9650811a264992c20a1ed88939e06694373b25c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649376"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197700"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高級搜尋查詢結果
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-雖然您可以建立您的[高級搜尋](advanced-hunting-overview.md)查詢以傳回非常精確的資訊，但您也可以使用查詢結果，以深入瞭解並調查特定活動和指示器。 您可以對查詢結果採取下列動作：
+雖然您可以建立您的 [高級搜尋](advanced-hunting-overview.md) 查詢以傳回非常精確的資訊，但您也可以使用查詢結果，以深入瞭解並調查特定活動和指示器。 您可以對查詢結果採取下列動作：
 
 - 以表格或圖表形式查看結果
 - 匯出資料表和圖表
@@ -113,17 +116,17 @@ AppFileEvents
 
 
 ## <a name="export-tables-and-charts"></a>匯出資料表和圖表
-執行查詢後，請選取 [**匯出**]，將結果儲存至本機檔案。 您所選擇的查看會決定結果的匯出方式：
+執行查詢後，請選取 [ **匯出** ]，將結果儲存至本機檔案。 您所選擇的查看會決定結果的匯出方式：
 
-- **表格視圖**--查詢結果會以表格形式匯出為 Microsoft Excel 活頁簿
-- **任何圖表**--查詢結果會匯出為所呈現圖表的 JPEG 圖像
+- **表格視圖** --查詢結果會以表格形式匯出為 Microsoft Excel 活頁簿
+- **任何圖表** --查詢結果會匯出為所呈現圖表的 JPEG 圖像
 
 ## <a name="drill-down-from-query-results"></a>從查詢結果向下切入
-若要快速檢查查詢結果中的記錄，請選取對應的資料列，以開啟 [**檢查記錄**] 面板。 面板會根據選取的記錄提供下列資訊：
+若要快速檢查查詢結果中的記錄，請選取對應的資料列，以開啟 [ **檢查記錄** ] 面板。 面板會根據選取的記錄提供下列資訊：
 
-- **資產**-記錄中所) 的主要資產 (信箱、裝置和使用者的摘要視圖，並提供可用的資訊，例如風險和暴露程度。
-- **進程樹狀目錄**：針對含處理常式資訊並豐富使用可用內容資訊的記錄所產生;一般說來，傳回多個資料列的查詢可能會產生更豐富的程式樹。
-- **所有詳細資料**：記錄中的欄的所有值  
+- **資產** -記錄中所) 的主要資產 (信箱、裝置和使用者的摘要視圖，並提供可用的資訊，例如風險和暴露程度。
+- **進程樹狀目錄** ：針對含處理常式資訊並豐富使用可用內容資訊的記錄所產生;一般說來，傳回多個資料列的查詢可能會產生更豐富的程式樹。
+- **所有詳細資料** ：記錄中的欄的所有值  
 
 ![具有檢查記錄之面板之選取記錄的影像](../../media/mtp-ah/inspect-record.png)
 
@@ -151,7 +154,7 @@ AppFileEvents
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)
 - [自訂偵測概觀](custom-detections-overview.md)
