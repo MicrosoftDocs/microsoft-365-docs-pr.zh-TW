@@ -20,49 +20,52 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: d7739ac6184509abe4df3aaf140db66f6039717c
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: dd7ded318c5ab0cf9aad47054ac04d5a2d353943
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962650"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199802"
 ---
-# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a><span data-ttu-id="eb6a0-104">自動調查後核准或拒絕擱置的動作</span><span class="sxs-lookup"><span data-stu-id="eb6a0-104">Approve or reject pending actions following an automated investigation</span></span>
+# <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a><span data-ttu-id="fa848-104">自動調查後核准或拒絕擱置的動作</span><span class="sxs-lookup"><span data-stu-id="fa848-104">Approve or reject pending actions following an automated investigation</span></span>
 
-<span data-ttu-id="eb6a0-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="eb6a0-105">**Applies to:**</span></span>
-- <span data-ttu-id="eb6a0-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="eb6a0-106">Microsoft Threat Protection</span></span>
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="eb6a0-107">當自動化調查執行時，可能會導致需要核准才能繼續的一或多個[補救動作](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-107">When an automated investigation runs, it can result in one or more [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) that require approval to proceed.</span></span> <span data-ttu-id="eb6a0-108">例如，可能需要刪除一組電子郵件訊息，或可能需要移除隔離的檔案。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-108">For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed.</span></span> <span data-ttu-id="eb6a0-109">務必盡快核准 (或拒絕) 擱置中的動作，這樣您的自動化調查才能及時進行和完成。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-109">It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner.</span></span> 
+
+<span data-ttu-id="fa848-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="fa848-105">**Applies to:**</span></span>
+- <span data-ttu-id="fa848-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="fa848-106">Microsoft Threat Protection</span></span>
+
+<span data-ttu-id="fa848-107">當自動化調查執行時，可能會導致需要核准才能繼續的一或多個[補救動作](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions)。</span><span class="sxs-lookup"><span data-stu-id="fa848-107">When an automated investigation runs, it can result in one or more [remediation actions](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) that require approval to proceed.</span></span> <span data-ttu-id="fa848-108">例如，可能需要刪除一組電子郵件訊息，或可能需要移除隔離的檔案。</span><span class="sxs-lookup"><span data-stu-id="fa848-108">For example, a cluster of email messages might need to be deleted, or a quarantined file might need to be removed.</span></span> <span data-ttu-id="fa848-109">務必盡快核准 (或拒絕) 擱置中的動作，這樣您的自動化調查才能及時進行和完成。</span><span class="sxs-lookup"><span data-stu-id="fa848-109">It's important to approve (or reject) pending actions as soon as possible so that your automated investigations can proceed and complete in a timely manner.</span></span> 
 
 > [!TIP]
-> <span data-ttu-id="eb6a0-110">如果您認為 Microsoft 威脅防護中的自動調查和回應功能已錯過或錯誤地偵測到某項功能，請告訴我們！</span><span class="sxs-lookup"><span data-stu-id="eb6a0-110">If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know!</span></span> <span data-ttu-id="eb6a0-111">請參閱 how [to (AIR) Microsoft 威脅防護中的功能，以自動化調查和回應報告誤報的誤報/負片](mtp-autoir-report-false-positives-negatives.md)。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-111">See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).</span></span>
+> <span data-ttu-id="fa848-110">如果您認為 Microsoft 威脅防護中的自動調查和回應功能已錯過或錯誤地偵測到某項功能，請告訴我們！</span><span class="sxs-lookup"><span data-stu-id="fa848-110">If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know!</span></span> <span data-ttu-id="fa848-111">請參閱 how [to (AIR) Microsoft 威脅防護中的功能，以自動化調查和回應報告誤報的誤報/負片](mtp-autoir-report-false-positives-negatives.md)。</span><span class="sxs-lookup"><span data-stu-id="fa848-111">See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).</span></span>
 
-<span data-ttu-id="eb6a0-112">您可以使用「 [行動中心](#review-a-pending-action-in-the-action-center) 」或「 [調查詳細資料」視圖](#review-a-pending-action-in-the-investigation-details-view)，檢查和核准擱置的動作。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-112">Pending actions can be reviewed and approved by using the [Action center](#review-a-pending-action-in-the-action-center) or the [investigation details view](#review-a-pending-action-in-the-investigation-details-view).</span></span>
+<span data-ttu-id="fa848-112">您可以使用「 [行動中心](#review-a-pending-action-in-the-action-center) 」或「 [調查詳細資料」視圖](#review-a-pending-action-in-the-investigation-details-view)，檢查和核准擱置的動作。</span><span class="sxs-lookup"><span data-stu-id="fa848-112">Pending actions can be reviewed and approved by using the [Action center](#review-a-pending-action-in-the-action-center) or the [investigation details view](#review-a-pending-action-in-the-investigation-details-view).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="eb6a0-113">您必須具備[適當的權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，才能核准或拒絕補救動作。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-113">You must have [appropriate permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions.</span></span>
+> <span data-ttu-id="fa848-113">您必須具備[適當的權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，才能核准或拒絕補救動作。</span><span class="sxs-lookup"><span data-stu-id="fa848-113">You must have [appropriate permissions](mtp-action-center.md#required-permissions-for-action-center-tasks) to approve or reject remediation actions.</span></span>
 
-## <a name="review-a-pending-action-in-the-action-center"></a><span data-ttu-id="eb6a0-114">在重要訊息中心檢閱擱置中的動作</span><span class="sxs-lookup"><span data-stu-id="eb6a0-114">Review a pending action in the Action center</span></span>
+## <a name="review-a-pending-action-in-the-action-center"></a><span data-ttu-id="fa848-114">在重要訊息中心檢閱擱置中的動作</span><span class="sxs-lookup"><span data-stu-id="fa848-114">Review a pending action in the Action center</span></span>
 
-1. <span data-ttu-id="eb6a0-115">移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-115">Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in.</span></span> 
+1. <span data-ttu-id="fa848-115">移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。</span><span class="sxs-lookup"><span data-stu-id="fa848-115">Go to [https://security.microsoft.com](https://security.microsoft.com) and sign in.</span></span> 
 
-2. <span data-ttu-id="eb6a0-116">在功能窗格中，選擇 [重要訊息中心]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-116">In the navigation pane, choose **Action center**.</span></span> 
+2. <span data-ttu-id="fa848-116">在功能窗格中，選擇 [重要訊息中心]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="fa848-116">In the navigation pane, choose **Action center**.</span></span> 
 
-3. <span data-ttu-id="eb6a0-117">在重要訊息中心的 [擱置中]\*\*\*\* 索引標籤上，選取清單中的一個項目。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-117">In the Action Center, on the **Pending** tab, select an item in the list.</span></span> 
+3. <span data-ttu-id="fa848-117">在重要訊息中心的 [擱置中]\*\*\*\* 索引標籤上，選取清單中的一個項目。</span><span class="sxs-lookup"><span data-stu-id="fa848-117">In the Action Center, on the **Pending** tab, select an item in the list.</span></span> 
 
-    - <span data-ttu-id="eb6a0-118">如果您選取 [調查編號]\*\*\*\* 資料行中的項目，調查詳細資料頁面會隨即開啟。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-118">If you select an item in the **Investigation number** column, the investigation details page opens.</span></span> <span data-ttu-id="eb6a0-119">您可以在該處檢視調查結果，然後核准或拒絕建議的動作。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-119">There, you can view the results of the investigation, and then either approve or reject the recommended action.</span></span>
+    - <span data-ttu-id="fa848-118">如果您選取 [調查編號]\*\*\*\* 資料行中的項目，調查詳細資料頁面會隨即開啟。</span><span class="sxs-lookup"><span data-stu-id="fa848-118">If you select an item in the **Investigation number** column, the investigation details page opens.</span></span> <span data-ttu-id="fa848-119">您可以在該處檢視調查結果，然後核准或拒絕建議的動作。</span><span class="sxs-lookup"><span data-stu-id="fa848-119">There, you can view the results of the investigation, and then either approve or reject the recommended action.</span></span>
  
-    - <span data-ttu-id="eb6a0-120">如果您選取清單中的資料列，就會開啟飛出視窗，您可以在此檢視該項目的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-120">If you select a row in the list, a flyout opens, where you can view information about that item.</span></span> <br/>![核准或拒絕動作](../../media/air-actioncenter-itemselected.png)<br/><span data-ttu-id="eb6a0-122">使用連結來檢視相關聯的警示或調查，並核准或拒絕動作。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-122">Use the links to view an associated alert or an investigation, and approve or reject the action.</span></span>
+    - <span data-ttu-id="fa848-120">如果您選取清單中的資料列，就會開啟飛出視窗，您可以在此檢視該項目的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="fa848-120">If you select a row in the list, a flyout opens, where you can view information about that item.</span></span> <br/>![核准或拒絕動作](../../media/air-actioncenter-itemselected.png)<br/><span data-ttu-id="fa848-122">使用連結來檢視相關聯的警示或調查，並核准或拒絕動作。</span><span class="sxs-lookup"><span data-stu-id="fa848-122">Use the links to view an associated alert or an investigation, and approve or reject the action.</span></span>
 
-## <a name="review-a-pending-action-in-the-investigation-details-view"></a><span data-ttu-id="eb6a0-123">在調查詳細資料檢視中檢閱擱置中的動作</span><span class="sxs-lookup"><span data-stu-id="eb6a0-123">Review a pending action in the investigation details view</span></span>
+## <a name="review-a-pending-action-in-the-investigation-details-view"></a><span data-ttu-id="fa848-123">在調查詳細資料檢視中檢閱擱置中的動作</span><span class="sxs-lookup"><span data-stu-id="fa848-123">Review a pending action in the investigation details view</span></span>
 
 ![調查詳細資料](../../media/mtp-air-investdetails.png)
 
-1. <span data-ttu-id="eb6a0-125">在 [調查詳細資料][](mtp-autoir-results.md) 頁面上，選取 [擱置中的動作]\*\*\*\* (或 [動作]\*\*\*\*) 索引標籤。此處會列出核准擱置中的項目。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-125">On an [investigation details](mtp-autoir-results.md) page, select the **Pending actions** (or **Actions**) tab. Items that are pending approval are listed here.</span></span>
+1. <span data-ttu-id="fa848-125">在 [調查詳細資料][](mtp-autoir-results.md) 頁面上，選取 [擱置中的動作]\*\*\*\* (或 [動作]\*\*\*\*) 索引標籤。此處會列出核准擱置中的項目。</span><span class="sxs-lookup"><span data-stu-id="fa848-125">On an [investigation details](mtp-autoir-results.md) page, select the **Pending actions** (or **Actions**) tab. Items that are pending approval are listed here.</span></span>
 
-2. <span data-ttu-id="eb6a0-126">選取清單中的項目，然後選擇 [核准]\*\*\*\* 或 [拒絕]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="eb6a0-126">Select an item in the list, and then choose **Approve** or **Reject**.</span></span>
+2. <span data-ttu-id="fa848-126">選取清單中的項目，然後選擇 [核准]\*\*\*\* 或 [拒絕]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="fa848-126">Select an item in the list, and then choose **Approve** or **Reject**.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="eb6a0-127">後續步驟</span><span class="sxs-lookup"><span data-stu-id="eb6a0-127">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="fa848-127">後續步驟</span><span class="sxs-lookup"><span data-stu-id="fa848-127">Next steps</span></span>
 
-- [<span data-ttu-id="eb6a0-128">檢視自動調查的詳細資料和結果</span><span class="sxs-lookup"><span data-stu-id="eb6a0-128">View the details and results of an automated investigation</span></span>](mtp-autoir-results.md)
-- [<span data-ttu-id="eb6a0-129">在自動化調查和回應功能中處理誤報/負片</span><span class="sxs-lookup"><span data-stu-id="eb6a0-129">Handle false positives/negatives in automated investigation and response capabilities</span></span>](mtp-autoir-report-false-positives-negatives.md)
+- [<span data-ttu-id="fa848-128">檢視自動調查的詳細資料和結果</span><span class="sxs-lookup"><span data-stu-id="fa848-128">View the details and results of an automated investigation</span></span>](mtp-autoir-results.md)
+- [<span data-ttu-id="fa848-129">在自動化調查和回應功能中處理誤報/負片</span><span class="sxs-lookup"><span data-stu-id="fa848-129">Handle false positives/negatives in automated investigation and response capabilities</span></span>](mtp-autoir-report-false-positives-negatives.md)
