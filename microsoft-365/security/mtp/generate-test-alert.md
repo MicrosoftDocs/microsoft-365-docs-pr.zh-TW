@@ -17,25 +17,28 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: c2a5c7a95a16b9a29e73b98310e64f403d4d342b
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 389fc25abb6d3afbe4aac28f6f87ee1af31a1c14
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104555"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199390"
 ---
-# <a name="generate-a-test-alert-in-your-microsoft-threat-protection-evaluation-lab"></a><span data-ttu-id="ebf4b-104">在您的 Microsoft 威脅防護評估實驗室中產生測試警示</span><span class="sxs-lookup"><span data-stu-id="ebf4b-104">Generate a test alert in your Microsoft Threat Protection evaluation lab</span></span>  
+# <a name="generate-a-test-alert-in-your-microsoft-threat-protection-evaluation-lab"></a><span data-ttu-id="94b6a-104">在您的 Microsoft 威脅防護評估實驗室中產生測試警示</span><span class="sxs-lookup"><span data-stu-id="94b6a-104">Generate a test alert in your Microsoft Threat Protection evaluation lab</span></span>  
 
-<span data-ttu-id="ebf4b-105">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="ebf4b-105">**Applies to:**</span></span>
-- <span data-ttu-id="ebf4b-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="ebf4b-106">Microsoft Threat Protection</span></span>
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="ebf4b-107">現在，您已完成 Microsoft 威脅防護評估實驗室安裝和設定，您可以執行威脅攻擊類比，以體驗整合安全性解決方案的偵測、警示關聯及自我修復修復功能。</span><span class="sxs-lookup"><span data-stu-id="ebf4b-107">Now that you've completed your Microsoft Threat Protection evaluation lab setup and configuration, you can run a threat attack simulation to experience the detection, alert correlation, and self-healing remediation capabilities of the integrated security solution.</span></span>  
 
-1. <span data-ttu-id="ebf4b-108">登入 https://security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="ebf4b-108">Log on to https://security.microsoft.com</span></span>
-2. <span data-ttu-id="ebf4b-109">在首頁上，尋找標為 [ **類比**] 的麻將牌。</span><span class="sxs-lookup"><span data-stu-id="ebf4b-109">On the Home page, look for a tile titled **Simulation**.</span></span>  <span data-ttu-id="ebf4b-110">如需在 Microsoft 威脅防護中建立測試事件的步驟，請參閱逐步說明手冊。</span><span class="sxs-lookup"><span data-stu-id="ebf4b-110">Review the walkthrough guide for steps to create a test incident in Microsoft Threat Protection.</span></span>
-<br><span data-ttu-id="ebf4b-111">![Microsoft 365 安全性儀表板中模擬卡的影像](../../media/mtp-eval-73.png)</span><span class="sxs-lookup"><span data-stu-id="ebf4b-111">![Image of simulation card in the Microsoft 365 Security dashboard](../../media/mtp-eval-73.png)</span></span> <br>
+<span data-ttu-id="94b6a-105">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="94b6a-105">**Applies to:**</span></span>
+- <span data-ttu-id="94b6a-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="94b6a-106">Microsoft Threat Protection</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="ebf4b-112">後續步驟</span><span class="sxs-lookup"><span data-stu-id="ebf4b-112">Next steps</span></span>
+<span data-ttu-id="94b6a-107">現在，您已完成 Microsoft 威脅防護評估實驗室安裝和設定，您可以執行威脅攻擊類比，以體驗整合安全性解決方案的偵測、警示關聯及自我修復修復功能。</span><span class="sxs-lookup"><span data-stu-id="94b6a-107">Now that you've completed your Microsoft Threat Protection evaluation lab setup and configuration, you can run a threat attack simulation to experience the detection, alert correlation, and self-healing remediation capabilities of the integrated security solution.</span></span>  
 
-<span data-ttu-id="ebf4b-113">流覽 [Microsoft 365 解決方案和架構中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) ，瞭解如何設計適合貴組織的解決方案和架構。</span><span class="sxs-lookup"><span data-stu-id="ebf4b-113">Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to understand how to design the solution and architecture that is right for your organization.</span></span>
+1. <span data-ttu-id="94b6a-108">登入 https://security.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="94b6a-108">Log on to https://security.microsoft.com</span></span>
+2. <span data-ttu-id="94b6a-109">在首頁上，尋找標為 [ **類比**] 的麻將牌。</span><span class="sxs-lookup"><span data-stu-id="94b6a-109">On the Home page, look for a tile titled **Simulation**.</span></span>  <span data-ttu-id="94b6a-110">如需在 Microsoft 威脅防護中建立測試事件的步驟，請參閱逐步說明手冊。</span><span class="sxs-lookup"><span data-stu-id="94b6a-110">Review the walkthrough guide for steps to create a test incident in Microsoft Threat Protection.</span></span>
+<br><span data-ttu-id="94b6a-111">![Microsoft 365 安全性儀表板中模擬卡的影像](../../media/mtp-eval-73.png)</span><span class="sxs-lookup"><span data-stu-id="94b6a-111">![Image of simulation card in the Microsoft 365 Security dashboard](../../media/mtp-eval-73.png)</span></span> <br>
+
+## <a name="next-steps"></a><span data-ttu-id="94b6a-112">後續步驟</span><span class="sxs-lookup"><span data-stu-id="94b6a-112">Next steps</span></span>
+
+<span data-ttu-id="94b6a-113">流覽 [Microsoft 365 解決方案和架構中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) ，瞭解如何設計適合貴組織的解決方案和架構。</span><span class="sxs-lookup"><span data-stu-id="94b6a-113">Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) to understand how to design the solution and architecture that is right for your organization.</span></span>
 

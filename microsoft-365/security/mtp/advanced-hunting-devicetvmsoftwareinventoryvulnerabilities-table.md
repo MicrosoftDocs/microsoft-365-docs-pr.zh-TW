@@ -17,45 +17,48 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 70b687a185538b11cf0a8975eebf2a5d8b53ec11
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 78878593e345cd6744af54b54356ab7de9864ccf
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46648950"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196993"
 ---
-# <a name="devicetvmsoftwareinventoryvulnerabilities"></a><span data-ttu-id="6e934-104">DeviceTvmSoftwareInventoryVulnerabilities</span><span class="sxs-lookup"><span data-stu-id="6e934-104">DeviceTvmSoftwareInventoryVulnerabilities</span></span>
+# <a name="devicetvmsoftwareinventoryvulnerabilities"></a><span data-ttu-id="94604-104">DeviceTvmSoftwareInventoryVulnerabilities</span><span class="sxs-lookup"><span data-stu-id="94604-104">DeviceTvmSoftwareInventoryVulnerabilities</span></span>
 
-<span data-ttu-id="6e934-105">**適用範圍：**</span><span class="sxs-lookup"><span data-stu-id="6e934-105">**Applies to:**</span></span>
-- <span data-ttu-id="6e934-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="6e934-106">Microsoft Threat Protection</span></span>
-
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="6e934-107">進階搜捕結構描述中的 `DeviceTvmSoftwareInventoryVulnerabilities` 表格包含裝置上軟體庫存的 [威脅與弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)，以及這些軟體產品中的任何已知弱點。</span><span class="sxs-lookup"><span data-stu-id="6e934-107">The `DeviceTvmSoftwareInventoryVulnerabilities` table in the advanced hunting schema contains the [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) inventory of software on your devices as well as any known vulnerabilities in these software products.</span></span> <span data-ttu-id="6e934-108">本表格也包含作業系統資訊、CVE 識別碼和弱點嚴重性的資訊。</span><span class="sxs-lookup"><span data-stu-id="6e934-108">This table also includes operating system information, CVE IDs, and vulnerability severity information.</span></span> <span data-ttu-id="6e934-109">使用這個參照來建立從表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="6e934-109">Use this reference to construct queries that return information from the table.</span></span>
+<span data-ttu-id="94604-105">**適用範圍：**</span><span class="sxs-lookup"><span data-stu-id="94604-105">**Applies to:**</span></span>
+- <span data-ttu-id="94604-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="94604-106">Microsoft Threat Protection</span></span>
 
-<span data-ttu-id="6e934-110">如需進階搜捕結構描述中其他表格的資訊，請參閱 [進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="6e934-110">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="6e934-111">資料行名稱</span><span class="sxs-lookup"><span data-stu-id="6e934-111">Column name</span></span> | <span data-ttu-id="6e934-112">資料類型</span><span class="sxs-lookup"><span data-stu-id="6e934-112">Data type</span></span> | <span data-ttu-id="6e934-113">描述</span><span class="sxs-lookup"><span data-stu-id="6e934-113">Description</span></span> |
+
+<span data-ttu-id="94604-107">進階搜捕結構描述中的 `DeviceTvmSoftwareInventoryVulnerabilities` 表格包含裝置上軟體庫存的 [威脅與弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)，以及這些軟體產品中的任何已知弱點。</span><span class="sxs-lookup"><span data-stu-id="94604-107">The `DeviceTvmSoftwareInventoryVulnerabilities` table in the advanced hunting schema contains the [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) inventory of software on your devices as well as any known vulnerabilities in these software products.</span></span> <span data-ttu-id="94604-108">本表格也包含作業系統資訊、CVE 識別碼和弱點嚴重性的資訊。</span><span class="sxs-lookup"><span data-stu-id="94604-108">This table also includes operating system information, CVE IDs, and vulnerability severity information.</span></span> <span data-ttu-id="94604-109">使用這個參照來建立從表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="94604-109">Use this reference to construct queries that return information from the table.</span></span>
+
+<span data-ttu-id="94604-110">如需進階搜捕結構描述中其他表格的資訊，請參閱 [進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="94604-110">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+
+| <span data-ttu-id="94604-111">資料行名稱</span><span class="sxs-lookup"><span data-stu-id="94604-111">Column name</span></span> | <span data-ttu-id="94604-112">資料類型</span><span class="sxs-lookup"><span data-stu-id="94604-112">Data type</span></span> | <span data-ttu-id="94604-113">描述</span><span class="sxs-lookup"><span data-stu-id="94604-113">Description</span></span> |
 |-------------|-----------|-------------|
-| `DeviceId` | <span data-ttu-id="6e934-114">string</span><span class="sxs-lookup"><span data-stu-id="6e934-114">string</span></span> | <span data-ttu-id="6e934-115">服務中電腦的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="6e934-115">Unique identifier for the machine in the service</span></span> |
-| `DeviceName` | <span data-ttu-id="6e934-116">string</span><span class="sxs-lookup"><span data-stu-id="6e934-116">string</span></span> | <span data-ttu-id="6e934-117">電腦的完整網域名稱 (FQDN)</span><span class="sxs-lookup"><span data-stu-id="6e934-117">Fully qualified domain name (FQDN) of the machine</span></span> |
-| `OSPlatform` | <span data-ttu-id="6e934-118">string</span><span class="sxs-lookup"><span data-stu-id="6e934-118">string</span></span> | <span data-ttu-id="6e934-119">電腦上執行的作業系統平台。</span><span class="sxs-lookup"><span data-stu-id="6e934-119">Platform of the operating system running on the machine.</span></span> <span data-ttu-id="6e934-120">這表示特定作業系統，包括相同家族內的變化，例如 Windows 10 和 Windows 7。</span><span class="sxs-lookup"><span data-stu-id="6e934-120">This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</span></span> |
-| `OSVersion` | <span data-ttu-id="6e934-121">字串</span><span class="sxs-lookup"><span data-stu-id="6e934-121">string</span></span> | <span data-ttu-id="6e934-122">電腦上執行的作業系統版本。</span><span class="sxs-lookup"><span data-stu-id="6e934-122">Version of the operating system running on the machine</span></span> |
-| `OSArchitecture` | <span data-ttu-id="6e934-123">字串</span><span class="sxs-lookup"><span data-stu-id="6e934-123">string</span></span> | <span data-ttu-id="6e934-124">電腦上執行的作業系統架構。</span><span class="sxs-lookup"><span data-stu-id="6e934-124">Architecture of the operating system running on the machine</span></span> |
-| `SoftwareVendor` | <span data-ttu-id="6e934-125">字串</span><span class="sxs-lookup"><span data-stu-id="6e934-125">string</span></span> | <span data-ttu-id="6e934-126">軟體廠商的名稱</span><span class="sxs-lookup"><span data-stu-id="6e934-126">Name of the software vendor</span></span> |
-| `SoftwareName` | <span data-ttu-id="6e934-127">字串</span><span class="sxs-lookup"><span data-stu-id="6e934-127">string</span></span> | <span data-ttu-id="6e934-128">軟體產品名稱</span><span class="sxs-lookup"><span data-stu-id="6e934-128">Name of the software product</span></span> |
-| `SoftwareVersion` | <span data-ttu-id="6e934-129">字串</span><span class="sxs-lookup"><span data-stu-id="6e934-129">string</span></span> | <span data-ttu-id="6e934-130">軟體產品的版本號碼</span><span class="sxs-lookup"><span data-stu-id="6e934-130">Version number of the software product</span></span> |
-| `CveId` | <span data-ttu-id="6e934-131">字串</span><span class="sxs-lookup"><span data-stu-id="6e934-131">string</span></span> | <span data-ttu-id="6e934-132">在常見弱點與漏洞 (CVE) 系統下指派給安全性弱點的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="6e934-132">Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system</span></span> |
-| `VulnerabilitySeverityLevel` | <span data-ttu-id="6e934-133">字串</span><span class="sxs-lookup"><span data-stu-id="6e934-133">string</span></span> | <span data-ttu-id="6e934-134">安全性弱點之嚴重性層級的指派是根據 CVSS 分數，以及受威脅環境影響的動態因素</span><span class="sxs-lookup"><span data-stu-id="6e934-134">Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape</span></span> |
+| `DeviceId` | <span data-ttu-id="94604-114">string</span><span class="sxs-lookup"><span data-stu-id="94604-114">string</span></span> | <span data-ttu-id="94604-115">服務中電腦的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="94604-115">Unique identifier for the machine in the service</span></span> |
+| `DeviceName` | <span data-ttu-id="94604-116">string</span><span class="sxs-lookup"><span data-stu-id="94604-116">string</span></span> | <span data-ttu-id="94604-117">電腦的完整網域名稱 (FQDN)</span><span class="sxs-lookup"><span data-stu-id="94604-117">Fully qualified domain name (FQDN) of the machine</span></span> |
+| `OSPlatform` | <span data-ttu-id="94604-118">string</span><span class="sxs-lookup"><span data-stu-id="94604-118">string</span></span> | <span data-ttu-id="94604-119">電腦上執行的作業系統平台。</span><span class="sxs-lookup"><span data-stu-id="94604-119">Platform of the operating system running on the machine.</span></span> <span data-ttu-id="94604-120">這表示特定作業系統，包括相同家族內的變化，例如 Windows 10 和 Windows 7。</span><span class="sxs-lookup"><span data-stu-id="94604-120">This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7.</span></span> |
+| `OSVersion` | <span data-ttu-id="94604-121">字串</span><span class="sxs-lookup"><span data-stu-id="94604-121">string</span></span> | <span data-ttu-id="94604-122">電腦上執行的作業系統版本。</span><span class="sxs-lookup"><span data-stu-id="94604-122">Version of the operating system running on the machine</span></span> |
+| `OSArchitecture` | <span data-ttu-id="94604-123">字串</span><span class="sxs-lookup"><span data-stu-id="94604-123">string</span></span> | <span data-ttu-id="94604-124">電腦上執行的作業系統架構。</span><span class="sxs-lookup"><span data-stu-id="94604-124">Architecture of the operating system running on the machine</span></span> |
+| `SoftwareVendor` | <span data-ttu-id="94604-125">字串</span><span class="sxs-lookup"><span data-stu-id="94604-125">string</span></span> | <span data-ttu-id="94604-126">軟體廠商的名稱</span><span class="sxs-lookup"><span data-stu-id="94604-126">Name of the software vendor</span></span> |
+| `SoftwareName` | <span data-ttu-id="94604-127">字串</span><span class="sxs-lookup"><span data-stu-id="94604-127">string</span></span> | <span data-ttu-id="94604-128">軟體產品名稱</span><span class="sxs-lookup"><span data-stu-id="94604-128">Name of the software product</span></span> |
+| `SoftwareVersion` | <span data-ttu-id="94604-129">字串</span><span class="sxs-lookup"><span data-stu-id="94604-129">string</span></span> | <span data-ttu-id="94604-130">軟體產品的版本號碼</span><span class="sxs-lookup"><span data-stu-id="94604-130">Version number of the software product</span></span> |
+| `CveId` | <span data-ttu-id="94604-131">字串</span><span class="sxs-lookup"><span data-stu-id="94604-131">string</span></span> | <span data-ttu-id="94604-132">在常見弱點與漏洞 (CVE) 系統下指派給安全性弱點的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="94604-132">Unique identifier assigned to the security vulnerability under the Common Vulnerabilities and Exposures (CVE) system</span></span> |
+| `VulnerabilitySeverityLevel` | <span data-ttu-id="94604-133">字串</span><span class="sxs-lookup"><span data-stu-id="94604-133">string</span></span> | <span data-ttu-id="94604-134">安全性弱點之嚴重性層級的指派是根據 CVSS 分數，以及受威脅環境影響的動態因素</span><span class="sxs-lookup"><span data-stu-id="94604-134">Severity level assigned to the security vulnerability based on the CVSS score and dynamic factors influenced by the threat landscape</span></span> |
 
 
 
-## <a name="related-topics"></a><span data-ttu-id="6e934-135">相關主題</span><span class="sxs-lookup"><span data-stu-id="6e934-135">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="94604-135">相關主題</span><span class="sxs-lookup"><span data-stu-id="94604-135">Related topics</span></span>
 
-- [<span data-ttu-id="6e934-136">主動威脅搜捕</span><span class="sxs-lookup"><span data-stu-id="6e934-136">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="6e934-137">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="6e934-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="6e934-138">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="6e934-138">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="6e934-139">跨裝置、電子郵件、應用程式及身分識別搜尋</span><span class="sxs-lookup"><span data-stu-id="6e934-139">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="6e934-140">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="6e934-140">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="6e934-141">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="6e934-141">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
-- [<span data-ttu-id="6e934-142">威脅與弱點管理的概觀</span><span class="sxs-lookup"><span data-stu-id="6e934-142">Overview of Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="94604-136">主動威脅搜捕</span><span class="sxs-lookup"><span data-stu-id="94604-136">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="94604-137">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="94604-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="94604-138">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="94604-138">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="94604-139">搜捕裝置、電子郵件、應用程式和身分識別</span><span class="sxs-lookup"><span data-stu-id="94604-139">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="94604-140">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="94604-140">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="94604-141">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="94604-141">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+- [<span data-ttu-id="94604-142">威脅與弱點管理的概觀</span><span class="sxs-lookup"><span data-stu-id="94604-142">Overview of Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

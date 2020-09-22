@@ -17,33 +17,36 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aa81628368cbaac121e2930bde9d5498f8d71f17
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 096cddac5f2e8db74cbe6ef84e0be3094a7a1d57
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649328"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197986"
 ---
-# <a name="emailurlinfo"></a><span data-ttu-id="3b55d-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="3b55d-104">EmailUrlInfo</span></span>
+# <a name="emailurlinfo"></a><span data-ttu-id="5905c-104">EmailUrlInfo</span><span class="sxs-lookup"><span data-stu-id="5905c-104">EmailUrlInfo</span></span>
 
-<span data-ttu-id="3b55d-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="3b55d-105">**Applies to:**</span></span>
-- <span data-ttu-id="3b55d-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="3b55d-106">Microsoft Threat Protection</span></span>
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="3b55d-107">[進階搜捕](advanced-hunting-overview.md)結構描述中的 `EmailUrlInfo` 表格包含有關 Office 365 ATP 所處理的電子郵件和附件 URL 資訊。</span><span class="sxs-lookup"><span data-stu-id="3b55d-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP.</span></span> <span data-ttu-id="3b55d-108">使用這個參考來建立從此表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="3b55d-108">Use this reference to construct queries that return information from this table.</span></span>
 
-<span data-ttu-id="3b55d-109">如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="3b55d-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="5905c-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="5905c-105">**Applies to:**</span></span>
+- <span data-ttu-id="5905c-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="5905c-106">Microsoft Threat Protection</span></span>
 
-| <span data-ttu-id="3b55d-110">欄名稱</span><span class="sxs-lookup"><span data-stu-id="3b55d-110">Column name</span></span> | <span data-ttu-id="3b55d-111">資料類型</span><span class="sxs-lookup"><span data-stu-id="3b55d-111">Data type</span></span> | <span data-ttu-id="3b55d-112">描述</span><span class="sxs-lookup"><span data-stu-id="3b55d-112">Description</span></span> |
+<span data-ttu-id="5905c-107">[進階搜捕](advanced-hunting-overview.md)結構描述中的 `EmailUrlInfo` 表格包含有關 Office 365 ATP 所處理的電子郵件和附件 URL 資訊。</span><span class="sxs-lookup"><span data-stu-id="5905c-107">The `EmailUrlInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about URLs on emails and attachments processed by Office 365 ATP.</span></span> <span data-ttu-id="5905c-108">使用這個參考來建立從此表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="5905c-108">Use this reference to construct queries that return information from this table.</span></span>
+
+<span data-ttu-id="5905c-109">如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="5905c-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+
+| <span data-ttu-id="5905c-110">欄名稱</span><span class="sxs-lookup"><span data-stu-id="5905c-110">Column name</span></span> | <span data-ttu-id="5905c-111">資料類型</span><span class="sxs-lookup"><span data-stu-id="5905c-111">Data type</span></span> | <span data-ttu-id="5905c-112">描述</span><span class="sxs-lookup"><span data-stu-id="5905c-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="3b55d-113">datetime</span><span class="sxs-lookup"><span data-stu-id="3b55d-113">datetime</span></span> | <span data-ttu-id="3b55d-114">事件記錄的日期和時間</span><span class="sxs-lookup"><span data-stu-id="3b55d-114">Date and time when the event was recorded</span></span> |
-| `UrlId` | <span data-ttu-id="3b55d-115">string</span><span class="sxs-lookup"><span data-stu-id="3b55d-115">string</span></span> | <span data-ttu-id="3b55d-116">電子郵件主旨、內文或附件中 URL 的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="3b55d-116">Unique identifier for the URL in the email subject, body, or attachment</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="3b55d-117">string</span><span class="sxs-lookup"><span data-stu-id="3b55d-117">string</span></span> | <span data-ttu-id="3b55d-118">Microsoft 365 產生之電子郵件的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="3b55d-118">Unique identifier for the email, generated by Microsoft 365</span></span> |
-| `Url` | <span data-ttu-id="3b55d-119">string</span><span class="sxs-lookup"><span data-stu-id="3b55d-119">string</span></span> | <span data-ttu-id="3b55d-120">電子郵件主旨、內文或附件中的完整 URL</span><span class="sxs-lookup"><span data-stu-id="3b55d-120">Full URL in the email subject, body, or attachment</span></span> |
+| `Timestamp` | <span data-ttu-id="5905c-113">datetime</span><span class="sxs-lookup"><span data-stu-id="5905c-113">datetime</span></span> | <span data-ttu-id="5905c-114">事件記錄的日期和時間</span><span class="sxs-lookup"><span data-stu-id="5905c-114">Date and time when the event was recorded</span></span> |
+| `UrlId` | <span data-ttu-id="5905c-115">string</span><span class="sxs-lookup"><span data-stu-id="5905c-115">string</span></span> | <span data-ttu-id="5905c-116">電子郵件主旨、內文或附件中 URL 的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="5905c-116">Unique identifier for the URL in the email subject, body, or attachment</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="5905c-117">string</span><span class="sxs-lookup"><span data-stu-id="5905c-117">string</span></span> | <span data-ttu-id="5905c-118">Microsoft 365 產生之電子郵件的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="5905c-118">Unique identifier for the email, generated by Microsoft 365</span></span> |
+| `Url` | <span data-ttu-id="5905c-119">string</span><span class="sxs-lookup"><span data-stu-id="5905c-119">string</span></span> | <span data-ttu-id="5905c-120">電子郵件主旨、內文或附件中的完整 URL</span><span class="sxs-lookup"><span data-stu-id="5905c-120">Full URL in the email subject, body, or attachment</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="3b55d-121">相關主題</span><span class="sxs-lookup"><span data-stu-id="3b55d-121">Related topics</span></span>
-- [<span data-ttu-id="3b55d-122">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="3b55d-122">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="3b55d-123">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="3b55d-123">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="3b55d-124">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="3b55d-124">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="3b55d-125">跨裝置、電子郵件、應用程式及身分識別搜尋</span><span class="sxs-lookup"><span data-stu-id="3b55d-125">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="3b55d-126">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="3b55d-126">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="3b55d-127">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="3b55d-127">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="5905c-121">相關主題</span><span class="sxs-lookup"><span data-stu-id="5905c-121">Related topics</span></span>
+- [<span data-ttu-id="5905c-122">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="5905c-122">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="5905c-123">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="5905c-123">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="5905c-124">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="5905c-124">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="5905c-125">搜捕裝置、電子郵件、應用程式和身分識別</span><span class="sxs-lookup"><span data-stu-id="5905c-125">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="5905c-126">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="5905c-126">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="5905c-127">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="5905c-127">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
