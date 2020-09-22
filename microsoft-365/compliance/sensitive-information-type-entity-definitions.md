@@ -18,16 +18,28 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: d29732051f2a7c023992287a131f3bb68bd28a4d
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 7985d52bcf0cbd4e3e86bc240abb8f692e733743
+ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104497"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48177121"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
 資料遺失防護 (規範中心中的 DLP) 包含許多可供您在 DLP 原則中使用的機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。 敏感資訊類型是由正則運算式或函數所識別的模式所定義。 此外，您也可以使用確切證據（如關鍵字及校驗和）來識別敏感資訊類型。 評估程式中也會使用信賴等級和近程。
+
+敏感資訊類型需要下列其中一項訂閱：
+- Microsoft 365 E3
+- Microsoft 365 E5
+
+敏感資訊類型可用於：
+- 資料遺失防護原則
+- 通訊相容性 polcies
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
+
   
 ## <a name="aba-routing-number"></a>ABA 路由號碼
 
