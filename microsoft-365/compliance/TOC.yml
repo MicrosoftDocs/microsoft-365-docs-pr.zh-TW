@@ -107,12 +107,14 @@
           href: what-the-dlp-functions-look-for.md
     - name: 可訓練分類器
       items:
-        - name: 開始使用可訓練的分類器 (預覽)
-          href: classifier-getting-started-with.md
-        - name: 使用內建分類器 (預覽)
-          href: classifier-using-a-ready-to-use-classifier.md
-        - name: 建立和訓練分類器 (預覽)
-          href: classifier-creating-a-trainable-classifier.md
+        - name: 深入瞭解可訓練分類器（預覽版）
+          href: classifier-learn-about.md
+        - name: 開始使用可訓練分類器（預覽版）
+          href: classifier-get-started-with.md
+        - name: 如何重新定型通訊合規性的分類器（預覽版）
+          href: classifier-how-to-retrain-comms-compliance.md
+        - name: 如何重新定型內容總管的分類器（預覽版）
+          href: classifier-how-to-retrain-content-explorer.md
     - name: 資料分類
       items:
         - name: 了解資料分類
