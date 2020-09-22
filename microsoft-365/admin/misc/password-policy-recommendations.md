@@ -19,15 +19,15 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加強貴組織對密碼攻擊的防護，以及為何應禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: 1d6e399acb83751ec6a45eb0c811dedec394127e
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 0ae26dc27cc698c24d999acde03f63f9cfead081
+ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015920"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48131939"
 ---
 # <a name="password-policy-recommendations"></a>密碼原則建議
- 
+
 身為組織的系統管理員，您必須為貴組織中的使用者設定密碼原則。 設定密碼原則相當複雜且令人困惑，因此本文提供加強貴組織對密碼攻擊的防護的建議。
   
 若要判斷貴組織中的 Microsoft 365 密碼到期頻率，請參閱[設定 Microsoft 365 的密碼到期原則](../manage/set-password-expiration-policy.md)。
@@ -78,11 +78,11 @@ ms.locfileid: "45015920"
   
 ### <a name="password-expiration-requirements-for-users"></a>使用者密碼到期要求
 
-密碼到期要求弊大於利，因為這些要求會讓使用者選擇可預測的密碼，即由彼此密切相關的連續字詞和數字組成的密碼。 在這些情況下，下一個密碼可根據先前的密碼來預測。 密碼到期要求不會提供任何控制優勢，因為網路罪犯總會在盜取憑證後立即使用憑證。
+密碼到期要求弊大於利，因為這些要求會讓使用者選擇可預測的密碼，即由彼此密切相關的連續字詞和數字組成的密碼。 在這些情況下，下一個密碼可根據先前的密碼來預測。 密碼到期要求不會提供任何控制優勢，因為網路罪犯總會在盜取憑證後立即使用憑證。 請查閱 [是時候重新思考強制密碼變更了](https://go.microsoft.com/fwlink/p/?linkid=861018) 以獲得其它資訊。
   
 ### <a name="requiring-long-passwords"></a>要求使用長密碼
 
-密碼長度要求 (大於約 10 個字元) 可能會導致可預測且不必要的使用者行為。 例如，必須具有 16 個字元密碼的使用者可能會選擇 **fourfourfourfour** 或 **passwordpassword** 等符合字元長度要求但不難猜測的重複模式。 此外，長度要求會提高使用者採用其他不安全做法的機會，例如將密碼寫下來、重複使用密碼，或將密碼不加密地儲存在文件中。 若要鼓勵使用者考慮使用唯一密碼，建議您維持符合 8 個字元的最小長度要求。 
+密碼長度要求 (大於約 10 個字元) 可能會導致可預測且不必要的使用者行為。 例如，必須具有 16 個字元密碼的使用者可能會選擇 **fourfourfourfour** 或 **passwordpassword** 等符合字元長度要求但不難猜測的重複模式。 此外，長度要求會提高使用者採用其他不安全做法的機會，例如將密碼寫下來、重複使用密碼，或將密碼不加密地儲存在文件中。 若要鼓勵使用者考慮使用唯一密碼，建議您維持符合 8 個字元的最小長度要求。
   
 ### <a name="requiring-the-use-of-multiple-character-sets"></a>要求使用多個字元集
 
@@ -131,8 +131,6 @@ ms.locfileid: "45015920"
 - [Time to rethink mandatory password changes](https://go.microsoft.com/fwlink/p/?linkid=861018) (是時候重新思考強制密碼變更了)
 
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020) (2015 年最差密碼)
-
-- [Download files from the web](https://go.microsoft.com/fwlink/p/?linkid=861029) (從網頁下載檔案)
 
 ## <a name="related-articles"></a>相關文章
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: f0dcb1fac17a39d1125f9188028d714962c9797d
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
+ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948205"
+ms.lasthandoff: 09/18/2020
+ms.locfileid: "48104443"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
@@ -58,9 +58,8 @@ ms.locfileid: "47948205"
 
 ::: moniker-end
 
-   
-2. 選取儀表板頂端的 **[選取報告]**，從所有可用報告的清單中選擇所需報告。 或者您也可以選取單個服務 (例如電子郵件或 OneDrive) 的概覽活動小工具以查看詳細資訊。 <br/>![使用情況儀表板](../../media/usage-report-dashboard.png)
-  
+2. 在服務（例如電子郵件或 OneDrive）的概覽活動卡片，按一下 **檢視更多內容** 按鈕以查看報告詳細資料頁面。 在有不同的服務報告中，會在索引標籤中提供。 <br/>![使用情況儀表板](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+
 ## <a name="who-can-see-reports"></a>誰可以查看報告
 
 擁有下列權限的人員：
@@ -147,7 +146,7 @@ ms.locfileid: "47948205"
 
 ::: moniker range="o365-worldwide"
 
-- [適用於國防部和政府社區雲端的 Microsoft Teams 使用者活動](microsoft-teams-user-activity.md)
+- [適用於美國政府的 Microsoft Teams 使用者活動](microsoft-teams-user-activity.md)
 
 ::: moniker-end
 
@@ -159,7 +158,7 @@ ms.locfileid: "47948205"
 
 ::: moniker range="o365-worldwide"
 
-- [適用於國防部和政府社區雲端的 Microsoft Teams 裝置使用量](microsoft-teams-device-usage.md)
+- [適用於美國政府的 Microsoft Teams 裝置使用量 ](microsoft-teams-device-usage.md)
 
 ::: moniker-end
 
