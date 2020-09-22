@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 518afae2d241cca5fdff054faeb07d25e37eb585
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: aa4767deac30641e39880c2eeb001c2dc884540a
+ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956346"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48173317"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>執行 Microsoft 威脅防護攻擊模擬  
 
@@ -33,9 +33,9 @@ ms.locfileid: "47956346"
 
 在此模擬中，我們的範例案例會從 PowerShell 腳本開始。 使用者可能會欺騙執行腳本。 或者，腳本可能從先前感染的裝置遠端連線至另一部電腦，企圖在網路中移動橫向。 偵測到這些腳本可能很困難，因為系統管理員也經常會以遠端方式執行腳本，以執行各種管理活動。
 
-在模擬過程中，攻擊會將程式碼插入看似合法的程式。 在此案例中，我們將使用 notepad.exe。 我們為模擬選擇此程式，但攻擊者很可能會以長期執行的系統進程為目標，例如 svchost.exe。 然後，命令介面會繼續聯繫攻擊者的命令和控制項 (C2) server，以接收如何繼續的指示。 此外，腳本會嘗試對網域控制站執行偵測查詢 (DC) 。 這可讓攻擊者取得最近使用者登入資訊的相關資訊。 一旦攻擊者取得這項資訊，他們就可以在網路中移動橫向，以取得特定的機密帳戶。
-
 ![Fileless PowerShell 攻擊，處理常式植入和 SMB reconnaisance 攻擊圖表](../../media/mtp/mtpdiydiagram.png)
+
+在模擬過程中，攻擊會將程式碼插入看似合法的程式。 在此案例中，我們將使用 notepad.exe。 我們為模擬選擇此程式，但攻擊者很可能會以長期執行的系統進程為目標，例如 svchost.exe。 然後，命令介面會繼續聯繫攻擊者的命令和控制項 (C2) server，以接收如何繼續的指示。 此外，腳本會嘗試對網域控制站執行偵測查詢 (DC) 。 這可讓攻擊者取得最近使用者登入資訊的相關資訊。 一旦攻擊者取得這項資訊，他們就可以在網路中移動橫向，以取得特定的機密帳戶。
 
 >[!IMPORTANT]
 >為了獲得最佳結果，請盡可能遵循攻擊模擬指示。
@@ -109,9 +109,9 @@ ran NetSessionEnum against [DC Name] with return code result 0
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-切換至 SOC 分析員的觀點，您現在可以開始調查 Microsoft 威脅防護入口網站的攻擊。 
+切換至 SOC 分析員的觀點，您現在可以開始在 Microsoft 365 的安全性中心入口網站上調查攻擊。 
 
-1.  從任何裝置開啟 [Microsoft 威脅防護入口網站](https://security.microsoft.com/incidents) 事件佇列。
+1.  從任何裝置開啟 [Microsoft 365 安全性中心入口網站](https://security.microsoft.com/incidents) 事件佇列。
 
 2.  從功能表流覽至 [ **事件** ]。 
 
@@ -230,7 +230,7 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-在 Microsoft 威脅防護入口網站中向後流覽至該事件。 [**事件**] 頁面中的 [**調查**] 索引標籤會顯示 Azure ATP 和 Microsoft Defender atp 所觸發的自動調查。 下列螢幕擷取畫面只會顯示 Microsoft Defender ATP 所觸發的自動調查。 根據預設，Microsoft Defender ATP 會自動 remediates 佇列中找到的專案，而這些專案需要進行修復。
+在 Microsoft 365 的安全性中心入口網站中，向後流覽至該事件。 [**事件**] 頁面中的 [**調查**] 索引標籤會顯示 Azure ATP 和 Microsoft Defender atp 所觸發的自動調查。 下列螢幕擷取畫面只會顯示 Microsoft Defender ATP 所觸發的自動調查。 根據預設，Microsoft Defender ATP 會自動 remediates 佇列中找到的專案，而這些專案需要進行修復。
 
 ![與事件相關之自動調查的螢幕擷取畫面](../../media/mtp/fig14.png)
 
@@ -255,7 +255,7 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 
 按一下 [ **管理事件**]。 將狀態設定為 [ **解決事件** ]，然後選取相關的分類。
 
-一旦解決該事件，便會在 Microsoft 威脅防護和相關入口網站中關閉所有相關聯的警示。
+一旦解決該事件，它就會在 Microsoft 365 的安全性中心和相關的入口網站中關閉所有相關聯的警示。
 
 ![[事件] 頁面的螢幕擷取畫面，其中包含「開啟的管理事件」面板，您可以在其中按一下參數來解決事件。](../../media/mtp/fig16.png) 
 
@@ -289,7 +289,7 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 1.  開啟 security.microsoft.com 入口網站。
 2.  流覽至 **搜尋 > 高級搜尋**。
 
-    ![M365 安全性入口網站導覽列中高級搜尋的螢幕擷取畫面](../../media/mtp/fig17.png) 
+    ![M365 安全性中心入口網站導覽列中高級搜尋的螢幕擷取畫面](../../media/mtp/fig17.png) 
 
 3.  建立以收集電子郵件事件開始的查詢。
     a.  在 [查詢] 窗格中，選取 [新增]。
@@ -438,7 +438,7 @@ EmailEvents
 | 第3集：匯總、切換和視覺化資料|現在，我們可以篩選、處理及加入資料，這是時間開始摘要、量化、旋轉及形象。 在此過程中，我們將涵蓋匯總運算子和您可以執行的一些計算，同時深入探討高級搜尋架構中的其他表格。 我們會將資料集變成圖表，以協助改善分析。 | [時](https://aka.ms/MTP29JUL20_MP4) | [YouTube](https://youtu.be/UKnk9U1NH6Y) | [第3集： Git 中的 CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | 第4集：讓我們尋找！ 將 KQL 套用至事件追蹤|追蹤某些攻擊者活動的時間！ 在此期間，我們將使用 Microsoft 威脅防護中深入瞭解的 KQL 和高級搜尋來追蹤攻擊。 深入瞭解此欄位中所用的部分秘訣，以追蹤攻擊者的活動，包括 cybersecurity 的 ABCs，以及如何將其套用至事件回應。 | [時](https://aka.ms/MTP5AUG20_MP4) | [YouTube](https://youtu.be/2EUxOc_LNd8) | [第4集： Git 中的 CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) |
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 |![關閉及摘要階段](../../media/mtp/close.png) <br>[關閉及摘要階段](mtp-pilot-close.md) | 分析您的 Microsoft 威脅防護試驗結果，將其呈現給您的專案關係人，然後採取下一個步驟。
 |:-----|:-----|
 
