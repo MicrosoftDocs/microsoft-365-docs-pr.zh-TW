@@ -17,14 +17,17 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4220c850e5ef7f830f7fc6ec57bb220cca29eaf4
-ms.sourcegitcommit: 4ac96855d7c269a0055ca8943000b762a70ca4ba
+ms.openlocfilehash: f6df9ce21f29cdeaf4943ba930668420a24344ca
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47322010"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201862"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 如果貴組織具有 [Office 365 進階威脅防護](office-365-atp.md) (Office 365 ATP)，而且您具有[必要的權限](#required-licenses-and-permissions)，您具有**總管**或**即時偵測** (先前的*即時報告* — [查看新增功能](#new-features-in-threat-explorer-and-real-time-detections)！)。 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**]，然後選擇 [ **Explorer** ] _或_[ **即時**偵測]。
 

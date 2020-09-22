@@ -25,14 +25,17 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，您將瞭解如何使用安全連結來保護您的組織免受網路釣魚和其他攻擊。
-ms.openlocfilehash: d9b3c981cb282c286a5b6edcea367c8c57ffd4d3
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 486c19fa0ba47baadf7b3418608a644407e6e1d0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307634"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200430"
 ---
 # <a name="atp-safe-links"></a>ATP 安全連結
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Office 365 ATP 安全連結的概觀
 

@@ -3,7 +3,7 @@ title: 'Microsoft 365 系統管理中心的網路連線 (預覽) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: 644efe53e862f6bbe98be7dca889bc3637084521
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171359"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200792"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
@@ -63,7 +63,7 @@ Windows 位置服務必須同意電腦。 您可以執行「 **地圖** 」應�
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. 使用 Microsoft 365 network connectivity test 工具手動收集測試報告
 
-針對此選項，您必須在每個位置識別人員。 要求他們在具有管理許可權的 Windows 電腦上流覽至 [Microsoft 365 網路連線測試](https://connectivity.office.com) 。 在網站上，他們必須登入其 Office 365 帳戶，以取得您想要查看結果的相同組織。 然後按一下 [執行測試]。 在測試期間，有一個已下載的 Connectivity test EXE。 他們也需要開啟並執行這種情況。 測試完成後，測試結果會上傳至 Office 365。
+針對此選項，您必須在每個位置識別人員。 要求使用者在其具有系統管理許可權的 Windows 電腦上流覽至 [Microsoft 365 網路連線測試](https://connectivity.office.com) 。 在網站上，他們必須登入其 Office 365 帳戶，以取得您想要查看結果的相同組織。 然後，他們應該按一下 [ **執行測試**]。 在測試期間，有一個已下載的 Connectivity test EXE。 他們也需要開啟並執行這種情況。 測試完成後，測試結果會上傳至 Office 365。
 
 測試報告如果是以 LAN 子網資訊新增，則會連結至該位置，否則只會顯示在城市位置。
 
@@ -174,7 +174,7 @@ Microsoft 365 服務前端是 Microsoft 全球網路的進入點，Office 用戶
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>何謂最優的 Microsoft 365 服務前門？
 
-最佳的 Microsoft 365 服務前端是最接近您的網路出局，通常是在您的城市或大都市區域中。 使用 [microsoft 365](office-365-network-mac-perf-onboarding-tool.md) 的連線測試來判斷您使用中的 microsoft 365 服務前門和最優服務前門的位置。 如果工具判斷您的使用中的前門是最優的，您就會以最優化方式連線至 Microsoft 的全球網路。
+最佳的 Microsoft 365 服務前端是最接近您的網路出局，通常是在您的城市或大都市區域中。 使用 [Microsoft 365 connectivity test 工具 (預覽) ](office-365-network-mac-perf-onboarding-tool.md) ，以判斷您的使用中的 microsoft 365 服務前門和最優服務前端門的位置。 如果工具判斷您的使用中的前門是最優的，您就會以最優化方式連線至 Microsoft 的全球網路。
 
 ### <a name="what-is-an-internet-egress-location"></a>何謂網際網路出口的位置？
 
@@ -186,8 +186,6 @@ Microsoft 365 服務前端是 Microsoft 全球網路的進入點，Office 用戶
 
 [Microsoft 365 網路評估 (預覽) ](office-365-network-mac-perf-score.md)
 
-[Microsoft 365 connectivity test in M365 Admin Center (預覽) ](office-365-network-mac-perf-onboarding-tool.md)
+[Microsoft 365 connectivity test tool (預覽) ](office-365-network-mac-perf-onboarding-tool.md)
 
 [Microsoft 365 Network Connectivity Location 服務 (預覽) ](office-365-network-mac-location-services.md)
-
-[Microsoft 365 network connectivity test 工具 (預覽) ](office-365-network-mac-perf-onboarding-tool.md)

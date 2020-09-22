@@ -14,14 +14,17 @@ ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 81ad3ab0d3bc20a49128fa6ed45ff62195b32bc7
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47963850"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199742"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>在 Microsoft 威脅防護中設定自動化調查和回應功能
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Microsoft 威脅防護包含強大的 [自動化調查和回應功能](mtp-autoir.md) ，可讓您的安全性運作小組很長時間和精力儲存。 透過自我修復，這些功能會模仿安全性分析員調查和回應威脅的採取步驟，只會加快，而且可擴充規模的能力。 本文說明如何在 Microsoft 威脅防護中設定自動調查和回應。
 

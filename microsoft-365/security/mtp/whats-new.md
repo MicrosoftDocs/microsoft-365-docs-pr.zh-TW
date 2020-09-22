@@ -15,14 +15,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: da3fd8b97899e302c9b7b24a5c0677534b579981
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d5a7cc491b0a8547848f4e341a605ae0c4b87cc9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47947981"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201276"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft 威脅防護的新增功能
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 在最新版本的 Microsoft 威脅防護中， (GA) 一般都有下列功能可供使用。
 
@@ -36,7 +39,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ## <a name="july-2020"></a>2020 年 7 月
 - [FileProfile ( # A1 函數](advanced-hunting-fileprofile-function.md) <br> 在您的高級搜尋查詢中使用此功能，以豐富包含完整檔案資訊的結果。
 - [身分識別和應用程式表格](advanced-hunting-schema-tables.md)<br> 使用高級搜尋架構中的 [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)及 [AppFileEvents](advanced-hunting-appfileevents-table.md) 表格，可以深入瞭解驗證事件、Active Directory 查詢及應用程式相關的活動。
-- [去搜尋](advanced-hunting-go-hunt.md)<br> 使用查詢式的高級搜尋功能，快速從調查事件，以檢查特定事件、使用者、裝置或其他實體類型。
+- [開始搜補](advanced-hunting-go-hunt.md)<br> 使用查詢式的高級搜尋功能，快速從調查事件，以檢查特定事件、使用者、裝置或其他實體類型。
 
 ## <a name="june-2020"></a>2020 年 6 月
 - Twitter 摘要 <br> 深入瞭解儀表板內的最新安全性調查、威脅情報、產品新聞及其他。

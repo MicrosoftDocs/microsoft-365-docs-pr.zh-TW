@@ -18,14 +18,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文提供將電子郵件傳送至 Microsoft 365 收件匣之問題的疑難排解資訊 & 大量郵遞至 Microsoft 365 客戶的最佳作法。
-ms.openlocfilehash: 4243f46746cb21425fc2dc7493c69818f095e71f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307576"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201725"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>疑難排解傳送至 Microsoft 365 的郵件
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 本文提供嘗試將電子郵件傳送至 Microsoft 365 收件匣的寄件者疑難排解資訊，以及大量郵遞至客戶的最佳作法。
 

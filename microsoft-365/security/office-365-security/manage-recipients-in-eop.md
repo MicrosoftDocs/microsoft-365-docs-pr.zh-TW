@@ -14,14 +14,17 @@ ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解獨立 Exchange Online Protection (EOP) 中的不同類型的收件者物件。
-ms.openlocfilehash: 8ee3821d05a4d777227e90c9b6208b3e9f8644a4
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c277365fb8a5c43108faa15a375af39ecc086eed
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827036"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201724"
 ---
 # <a name="manage-recipients-in-standalone-eop"></a>在獨立版 EOP 中管理收件者
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 獨立 Exchange Online Protection (EOP) 不含 Exchange Online 信箱的組織，都支援下列類型的收件者：
 

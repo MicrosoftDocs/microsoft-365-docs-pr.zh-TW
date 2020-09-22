@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡意的電子郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 91f16c3aa7ba98467c52fb25e0597f346a810003
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 120cc32a2736858a0f0d99ab37f1d51c70a6071c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949261"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201910"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>調查 Office 365 中傳遞的惡意電子郵件
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [Office 365 的「高級威脅防護](office-365-atp.md) 」可讓您調查讓組織中的人員面臨風險的活動，並採取行動以保護您的組織。 例如，如果您是組織的安全性小組的一部分，您可以找出並調查已傳遞的可疑電子郵件訊息。 您可以使用 [威脅瀏覽器 (或即時偵測) ](threat-explorer.md)來執行此動作。
 

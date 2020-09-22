@@ -1,9 +1,9 @@
 ---
-title: 'Microsoft 365 network connectivity test (預覽) '
+title: 'Microsoft 365 network connectivity test 工具 (預覽) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 09/17/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,15 +13,15 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: 'Microsoft 365 network connectivity test (預覽) '
-ms.openlocfilehash: 40a46ecb39366c64c99077e90bb35c5056f36b9d
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+description: 'Microsoft 365 network connectivity test 工具 (預覽) '
+ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171347"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200814"
 ---
-# <a name="microsoft-365-network-connectivity-test-preview"></a>Microsoft 365 network connectivity test (預覽) 
+# <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 network connectivity test 工具 (預覽) 
 
 Microsoft 365 network connectivity test 工具位於 <https://connectivity.office.com> 。 其為輔助工具，可在 Microsoft 365 系統管理中心的 [ **健康情況 |] 底下使用網路評估和網路洞察力資訊。連接** 功能表。
 
@@ -249,7 +249,7 @@ Exchange Online 服務前端的使用者辦公室位置的網路 TCP 延遲會�
 
 ### <a name="what-is-required-to-run-the-advanced-test-client"></a>執行高級測試用戶端的必要條件為何？
 
-高級測試用戶端需要 .NET Core 3.1 Desktop Runtime。 如果您執行的是未安裝的高級測試用戶端，將會定向至 [.Net Core 3.1 installer 頁面](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 請務必安裝桌面執行時間，而不是 SDK，或頁面上較高的 ASP.NET 核心執行時間。 需要有機器的系統管理員許可權，才能安裝 .NET Core。 
+高級測試用戶端需要 .NET Core 3.1 Desktop Runtime。 如果您執行的是未安裝的高級測試用戶端，將會定向至 [.Net Core 3.1 installer 頁面](https://dotnet.microsoft.com/download/dotnet-core/3.1)。 請務必安裝桌面執行時間，而不是 SDK，或頁面上較高的 ASP.NET 核心執行時間。 需要有機器的系統管理員許可權，才能安裝 .NET Core。
 
 ### <a name="what-is-microsoft-365-service-front-door"></a>何謂 Microsoft 365 服務的前門？
 
@@ -267,7 +267,7 @@ Microsoft 365 服務前端是 Microsoft 全球網路的進入點，Office 用戶
 
 ## <a name="related-topics"></a>相關主題
 
-[Microsoft 365 系統管理中心的網路效能建議 (預覽) ](office-365-network-mac-perf-overview.md)
+[Microsoft 365 系統管理中心的網路連線 (預覽) ](office-365-network-mac-perf-overview.md)
 
 [Microsoft 365 網路效能深入 (預覽) ](office-365-network-mac-perf-insights.md)
 

@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4d751ec5eb786a91d62ab11988132bfed076984d
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 1778e8485e859d01e4eec40c7a0d404636e27e8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956255"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199646"
 ---
 # <a name="configure-microsoft-threat-protection-pillars-for-your-trial-lab-or-pilot-environment"></a>為您的試用實驗室或試驗環境設定 Microsoft 威脅防護支柱
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
@@ -98,17 +101,17 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 5. 選取 [ **ATP 安全附件** ]，然後選取 [ **開啟 SharePoint]、[OneDrive] 和 [Microsoft 小組** ] 選項的 atp。  
 ![Image of_Office 365 Security & 合規性中心] 頁面，您可以在其中開啟 SharePoint、OneDrive 及 Microsoft 小組的 ATP](../../media/mtp-eval-36.png) <br>
 
-6. 按一下 [+] 圖示，以建立新的安全附件原則，並將其套用為網域的收件者網域。 按一下 [儲存]****。
+6. 按一下 [+] 圖示，以建立新的安全附件原則，並將其套用為網域的收件者網域。 按一下 **[儲存]**。
 ![Image of_Office 365 Security & 合規性中心] 頁面，您可以在此頁面上建立新的安全附件原則](../../media/mtp-eval-37.png) <br>
  
 7. 接下來，選取 [ **ATP 安全連結** 原則]，然後按一下鉛筆圖示以編輯預設原則。
 
-8. 請確定未選取 [ **不要在使用者按一下安全連結時進行追蹤** ] 選項，而會選取其餘的選項。 如需詳細資訊，請參閱 [安全連結設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) 。 按一下 [儲存]****。 
+8. 請確定未選取 [ **不要在使用者按一下安全連結時進行追蹤** ] 選項，而會選取其餘的選項。 如需詳細資訊，請參閱 [安全連結設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) 。 按一下 **[儲存]**。 
 ![Image of_Office 365 Security & 相容性中心] 頁面，顯示未選取 [使用者按一下安全時不會追蹤] 選項](../../media/mtp-eval-38.png) <br>
 
 9. 接下來選取 **反惡意** 代碼原則，選取預設值，然後選擇 [鉛筆] 圖示。
 
-10. 按一下 [ **設定** ]，然後選取 **[是] 並使用預設通知文字** ，以啟用 **惡意程式碼偵測回應**。 開啟 **通用附件類型 Filter** 。 按一下 [儲存]****。
+10. 按一下 [ **設定** ]，然後選取 **[是] 並使用預設通知文字** ，以啟用 **惡意程式碼偵測回應**。 開啟 **通用附件類型 Filter** 。 按一下 **[儲存]**。
 <br>![Image of_Office 365 Security & 合規性中心] 頁面，顯示惡意程式碼偵測回應開啟時會啟用預設通知，而一般附件類型篩選已開啟](../../media/mtp-eval-39.png) <br>
   
 11. 流覽至[Office 365 Security & 合規性中心](https://protection.office.com/homepage)  >  **搜尋**  >  **審核記錄檔搜尋**，然後開啟審計。  
@@ -152,7 +155,7 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 10. 恭喜，您已在您的網域控制站上成功設定 Azure 高級威脅防護。
 ![影像 of_Azure 高級威脅防護 Azure ATP 感應器嚮導安裝完成，您應該按一下 [完成] 按鈕](../../media/mtp-eval-51.png) <br>
  
-11. 在 [ [Azure AZURE ATP](https://go.microsoft.com/fwlink/?linkid=2040449) 設定] 區段中，選取 [ **Windows Defender atp**]，然後開啟切換。 按一下 [儲存]****。 
+11. 在 [ [Azure AZURE ATP](https://go.microsoft.com/fwlink/?linkid=2040449) 設定] 區段中，選取 [ **Windows Defender atp**]，然後開啟切換。 按一下 **[儲存]**。 
 ![Image of_the Azure Azure ATP 設定頁面，您應該在此頁面上開啟 Windows Defender ATP 切換](../../media/mtp-eval-52.png) <br>
 
 >[!NOTE]
@@ -177,7 +180,7 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 >[!NOTE]
 >針對新的 Azure ATP 實例，此整合切換功能會自動開啟。 在您繼續下一個步驟之前，請確認您的 Azure ATP 整合已啟用。
  
-4. 在 [雲端探索設定] 底下，選取 [ **Microsoft DEFENDER ATP 整合**]，然後啟用整合。 按一下 [儲存]****。
+4. 在 [雲端探索設定] 底下，選取 [ **Microsoft DEFENDER ATP 整合**]，然後啟用整合。 按一下 **[儲存]**。
 ![Unsanctioned Microsoft Defender ATP 頁面上的 of_the 影像，其中會選取 [Microsoft Defender ATP 整合] 底下的 [封鎖應用程式] 核取方塊。 按一下 [儲存]。](../../media/mtp-eval-56.png) <br>
 
 5. 在 [雲端探索設定] 底下，選取 [ **使用者豐富**]，然後啟用與 Azure Active Directory 的整合。
@@ -253,6 +256,6 @@ Microsoft 威脅防護包含四個支柱。 雖然一個 pillar 可以為您的�
 
 接下來，您可以模擬攻擊，並查看「向量積」功能如何偵測、建立提醒，以及自動回應端點上的 fileless 攻擊。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 |![攻擊模擬階段](../../media/mtp/run-sim.png) <br>[攻擊模擬階段](mtp-pilot-simulate.md) | 針對您的 Microsoft 威脅防護試驗環境執行攻擊模擬。
 |:-------|:-----|

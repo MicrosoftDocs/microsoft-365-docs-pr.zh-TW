@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: '系統管理員可以瞭解 Exchange Online Protection (EOP 中可用的系統管理員審計報告) '
-ms.openlocfilehash: ab2c1af7197094b456d8e1b4151dd42791d992a1
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 8e5175266cd964a2f2fb721a67f64e709661ce26
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825782"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200330"
 ---
 # <a name="auditing-reports-in-standalone-eop"></a>獨立版 EOP 中的稽核報告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，審核報告可協助您符合組織的法規、規範和訴訟需求。 您可以隨時取得稽核報告，來判斷已對 EOP 組態所做的變更。 這些報告可協助您疑難排解組態問題，或找出安全性相關或規範相關問題的原因。
 

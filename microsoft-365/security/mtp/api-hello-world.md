@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d9aafc43fb08d9e8b3a427805ba58490afee6297
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: cdf3f6a0c007763d2772233b1a299d59c931b2e5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650205"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201324"
 ---
 # <a name="hello-world-for-microsoft-threat-protection-rest-api"></a>Hello World for Microsoft 威脅防護 REST API 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護

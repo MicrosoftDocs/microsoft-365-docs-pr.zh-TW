@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以從 Office 365 中的 [受限使用者] 入口網站瞭解如何移除使用者。 傳送輸出垃圾郵件 (通常是因為「帳戶洩露」) 的使用者會被新增至 [受限使用者] 入口網站。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d411cec48ff6704d737850974e832dbe07a3ad3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c63d50fcf24e19c6a3265d57ea34fb8ab852c61c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826526"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201552"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>從 Office 365 中的 [受限使用者] 入口網站移除封鎖的使用者
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 如果使用者超過[服務限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)或[輸出垃圾郵件](configure-the-outbound-spam-policy.md)原則中所指定的輸出傳送限制之一，系統就會限制使用者傳送電子郵件，但他們仍可接收電子郵件。
 

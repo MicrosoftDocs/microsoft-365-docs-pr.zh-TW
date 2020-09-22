@@ -15,14 +15,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90d9fcc45e768abd5fddef948fcafdaf9e77f5fb
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: eb765cf353569e9907352fb3146a12ffe7b34df4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866716"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199956"
 ---
 # <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>在 Microsoft 365 的安全性中心監控和查看報告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 Microsoft 365 的安全性中心提供整個 Microsoft 365 環境中保護和安全性狀態的摘要。
 

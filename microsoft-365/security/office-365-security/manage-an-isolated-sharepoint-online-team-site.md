@@ -16,14 +16,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 管理隔離的 SharePoint 線上小組網站、新增使用者和群組、移除使用者和群組，以及使用自訂許可權建立 documents 子資料夾。
-ms.openlocfilehash: d66f9a349bd5834d07fbc13146127bde522923e4
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: e63cd6d17bf30ce6d236e38673b33cf054940eac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308264"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200616"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>管理獨立的 SharePoint Online 小組網站
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **摘要：** 使用這些程式來管理您的隔離 SharePoint Online 小組網站。
   
@@ -156,13 +159,13 @@ Remove-AzureADGroupMember -MemberId (Get-AzureADGroup | Where { $_.DisplayName -
     
 3. 流覽至 documents 資料夾中的資料夾，該資料夾將包含具有自訂許可權的子資料夾、建立資料夾，然後開啟該資料夾。
     
-4. 按一下 [共用]****。
+4. 按一下 **[共用]**。
     
 5. 按一下 [ **與 > Advanced**] [共用]。
     
 6. 按一下 [ **停止繼承許可權**]，然後按一下 **[確定]**。
     
-7. 按一下 [共用]****。
+7. 按一下 **[共用]**。
     
 8. 按一下 [ **與 > Advanced**] [共用]。
     

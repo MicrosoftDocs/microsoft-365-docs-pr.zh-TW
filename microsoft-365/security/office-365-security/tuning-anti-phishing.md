@@ -12,14 +12,17 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何在 Microsoft 365 中識別網頁仿冒郵件的原因，以及如何防止未來的更多網路釣魚郵件。
-ms.openlocfilehash: b0fbb29489cece6d708811c5c8d8d60450938f0c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825206"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201672"
 ---
 # <a name="tune-anti-phishing-protection"></a>調整防網路釣魚保護
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 雖然 Microsoft 365 附帶預設已啟用的各種防網路釣魚功能，但某些網路釣魚郵件仍有可能會進入您的信箱。 本主題說明您可以執行哪些動作來探索網路釣魚郵件的原因，以及您可以如何調整 Microsoft 365 組織中的反網路釣魚設定， _而不會不慎使事情更糟_。
 

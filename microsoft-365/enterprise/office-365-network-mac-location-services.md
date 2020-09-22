@@ -3,7 +3,7 @@ title: 'Microsoft 365 Network Connectivity Location 服務 (預覽) '
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 03/31/2020
+ms.date: 09/21/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 Network Connectivity Location 服務 (預覽) '
-ms.openlocfilehash: e614e719069a74ea087b07ca624ae0450790c763
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f2ab872f67eca70ab2791d3ad6fe1396b009cc18
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688677"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200778"
 ---
 # <a name="microsoft-365-network-connectivity-location-services-preview"></a>Microsoft 365 Network Connectivity Location 服務 (預覽) 
 
@@ -38,3 +38,13 @@ Microsoft 365 系統管理中心現在會顯示 **網路洞察力和效能建議
 透過 Bing 地圖提供的任何內容（包括 geocodes），只能在提供內容的產品內使用。 客戶使用 Microsoft 365 Admin Center Location 服務功能（由 Bing 地圖供電）受 bing 地圖的制約，其 _使用於的 Bing 地圖使用者使用條款_ <https://go.microsoft.com/?linkid=9710837> 和 _Microsoft 隱私權聲明_ 可用於 <https://go.microsoft.com/fwlink/?LinkID=248686.>
 
 此功能（透過 Bing 地圖提供）也是由 **這裡的技術**支援。 Bing 地圖如何利用這裡技術所提供的位置服務，受下列 _技術服務條款_ 的制約 <https://legal.here.com/en-gb/terms> 。
+
+## <a name="related-topics"></a>相關主題
+
+[Microsoft 365 系統管理中心的網路連線 (預覽) ](office-365-network-mac-perf-overview.md)
+
+[Microsoft 365 網路效能深入 (預覽) ](office-365-network-mac-perf-insights.md)
+
+[Microsoft 365 網路評估 (預覽) ](office-365-network-mac-perf-score.md)
+
+[Microsoft 365 connectivity test in M365 Admin Center (預覽) ](office-365-network-mac-perf-onboarding-tool.md)

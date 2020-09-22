@@ -15,14 +15,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79113aa4097da26a3a12a9ed99b1c5a8b3ad3d81
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 861ee8a01f9fba7daeec7375ebb6f33ffcae1fcd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866740"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199814"
 ---
 # <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的資料監控與報告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **[資料]** 類別可協助追蹤可能導致未經授權就外洩資料的使用者活動。 它們是現有 DLP 原則報告和協力廠商 DLP 原則相符報告的返工。
 

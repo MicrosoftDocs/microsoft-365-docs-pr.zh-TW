@@ -16,14 +16,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以在 Exchange Online Protection (EOP) 中，查看有關反欺騙保護的常見問題及解答。
-ms.openlocfilehash: 3547b0a0af6d2e541d4ec3546d9bbd4aa34c3a6b
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 207fa9b12c2b39571c72397abfb6a64fe992b43e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867136"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199108"
 ---
 # <a name="anti-spoofing-protection-faq"></a>反詐騙保護常見問題集
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 本文針對 Exchange Online 中的信箱，或獨立 Exchange Online Protection (EOP) 組織中的 Microsoft 365 組織，提供有關反欺騙保護的常見問題和解答，但沒有 Exchange Online 信箱。
 

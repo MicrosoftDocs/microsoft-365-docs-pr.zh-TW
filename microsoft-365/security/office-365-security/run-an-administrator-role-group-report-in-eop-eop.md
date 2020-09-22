@@ -14,14 +14,17 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在獨立 Exchange Online Protection (EOP) 中執行系統管理員角色群組報告。 當系統管理員在系統管理員角色群組中新增或移除成員時，此報告會登入，EOP 記錄每次出現一次。
-ms.openlocfilehash: db1934c7865209d358d164ff5165bb23026589cc
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: f2f3e32a818825d14c02b2bbffdc136e82f83013
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827502"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200478"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在獨立版 EOP 中執行系統管理員角色群組報告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，當系統管理員新增成員或從系統管理角色群組中移除成員時，該服務會記錄每個事件。 如需獨立 EOP 中角色群組的詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md)。
 

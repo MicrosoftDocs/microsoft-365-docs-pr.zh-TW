@@ -17,21 +17,24 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解屬於 Office 365 高級威脅防護的反網路釣魚功能，以提供對商用 & spear 網路釣魚攻擊的保護。
-ms.openlocfilehash: 238c841ec7ba45fe2675598a29979b550c1c4fa3
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: db1587d0cd60dc94e79b1498e000e63aa2a5ceac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653361"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199060"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Office 365 中的 ATP 防網路釣魚功能
 
-ATP 反網路釣魚是[Office 365 高級威脅防護](office-365-atp.md)的一部分。 ATP 反網路釣魚會將一組機器學習模型與冒充偵測演算法一起套用到內送郵件，以針對商品和魚叉式網路釣魚攻擊提供保護。 所有郵件都受限於一組廣泛的機器學習模型，以偵測網路釣魚郵件，以及一組用來防禦各種使用者和網域模擬攻擊的高級演算法。 ATP 反網路釣魚會根據您的 Office 365 全域或安全性管理員所設定的原則來保護您的組織。
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+ATP 反網路釣魚是 [Office 365 高級威脅防護](office-365-atp.md)的一部分。 ATP 反網路釣魚會將一組機器學習模型與冒充偵測演算法一起套用到內送郵件，以針對商品和魚叉式網路釣魚攻擊提供保護。 所有郵件都受限於一組廣泛的機器學習模型，以偵測網路釣魚郵件，以及一組用來防禦各種使用者和網域模擬攻擊的高級演算法。 ATP 反網路釣魚會根據您的 Office 365 全域或安全性管理員所設定的原則來保護您的組織。
   
-若要深入瞭解，請參閱[在 Office 365 中設定反網路釣魚原則](set-up-anti-phishing-policies.md)。
+若要深入瞭解，請參閱 [在 Office 365 中設定反網路釣魚原則](set-up-anti-phishing-policies.md)。
   
 > [!NOTE]
-> ATP 反網路釣魚只有在「高級威脅防護」（包括[microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 商務](https://www.microsoft.com/microsoft-365/business)版、Office 365 企業版 E5、Office 365 教育版 A5 等等）中才有提供。如果您的組織有 Office 365 訂閱，但未包含 Office 365 ATP，您可以將 ATP 購買為附加元件。 如需詳細資訊，請參閱 [Office 365 進階威脅防護方案和定價](https://products.office.com/exchange/advance-threat-protection)和 [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (部分機器翻譯)。
+> ATP 反網路釣魚只有在「高級威脅防護」（包括 [microsoft 365 企業版](https://www.microsoft.com/microsoft-365/enterprise/home)、 [microsoft 365 商務](https://www.microsoft.com/microsoft-365/business)版、Office 365 企業版 E5、Office 365 教育版 A5 等等）中才有提供。如果您的組織有 Office 365 訂閱，但未包含 Office 365 ATP，您可以將 ATP 購買為附加元件。 如需詳細資訊，請參閱 [Office 365 進階威脅防護方案和定價](https://products.office.com/exchange/advance-threat-protection)和 [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (部分機器翻譯)。
 
 ## <a name="how-atp-anti-phishing-works"></a>ATP 反網路釣魚的運作方式
 
@@ -39,19 +42,19 @@ ATP 反網路釣魚檢查內送郵件的指示，郵件可能是網路釣魚。 
   
 ATP 反網路釣魚允許 Office 365 全域管理員或安全性系統管理員定義原則，以防範包含使用者或網域模擬的網路釣魚攻擊。  (或兩者) 。 Office 365 全域系統管理員或安全性系統管理員會在原則中定義使用者和網域應如何使用固定的使用者或網域清單，或透過信箱智慧加以保護，以防範模仿攻擊。 信箱智慧指的是使用者的電子郵件習慣和個人連絡人的深入瞭解。 ATP 瞭解每個個別使用者如何與組織內部和外部的使用者通訊，並建立這些關聯的對應。 此對應表允許 ATP 深入瞭解如何確認正確的郵件可識別為模擬的詳細資訊。
   
-ATP 反網路釣魚原則可以套用到組織中特定的一組人員或群組，或是整個網域或所有自訂網域。 若要深入瞭解，請參閱[在 Office 365 中設定反網路釣魚原則](set-up-anti-phishing-policies.md)。
+ATP 反網路釣魚原則可以套用到組織中特定的一組人員或群組，或是整個網域或所有自訂網域。 若要深入瞭解，請參閱 [在 Office 365 中設定反網路釣魚原則](set-up-anti-phishing-policies.md)。
   
 ## <a name="how-to-get-atp-anti-phishing"></a>如何取得 ATP 反網路釣魚
 
-ATP 反網路釣魚功能是[高級威脅防護](office-365-atp.md)的一部分;不過，當反網路釣魚原則定義時，ATP 反網路釣魚防護會套用。  (其中一個範例是模擬型原則。 ) 請參閱[設定 Office 365 中的反網路釣魚原則](set-up-anti-phishing-policies.md)。
+ATP 反網路釣魚功能是 [高級威脅防護](office-365-atp.md)的一部分;不過，當反網路釣魚原則定義時，ATP 反網路釣魚防護會套用。  (其中一個範例是模擬型原則。 ) 請參閱 [設定 Office 365 中的反網路釣魚原則](set-up-anti-phishing-policies.md)。
   
 ## <a name="how-to-know-if-atp-anti-phishing-is-in-place"></a>如何知道 ATP 反網路釣魚是否已到位
 
 必須定義 ATP 反網路釣魚原則，保護功能才能生效。 請先檢查此項，以確認已就地保護。
 
-此外，報告可用於示範服務對您組織的運作方式。 若要深入瞭解，請參閱[View reports For Office 365 Advanced 威脅 Protection](view-reports-for-atp.md)。
+此外，報告可用於示範服務對您組織的運作方式。 若要深入瞭解，請參閱 [View reports For Office 365 Advanced 威脅 Protection](view-reports-for-atp.md)。
 
-針對特定使用者，ATP 反網路釣魚機器教學模型為作用中，該使用者必須是定義的[ATP 安全附件](atp-safe-attachments.md)、 [ATP 安全連結](atp-safe-links.md)或 ATP 反網路釣魚原則的一部分。 
+針對特定使用者，ATP 反網路釣魚機器教學模型為作用中，該使用者必須是定義的 [ATP 安全附件](atp-safe-attachments.md)、 [ATP 安全連結](atp-safe-links.md)或 ATP 反網路釣魚原則的一部分。 
 
 下表說明一些範例案例。 在上述每個範例中，組織使用的是 Office 365 企業版 E5，其中包括「高級威脅防護」。
 

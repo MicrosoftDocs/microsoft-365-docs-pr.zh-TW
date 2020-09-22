@@ -14,14 +14,17 @@ ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解在 Exchange Online Protection (EOP) 中設定郵件流程及路由的選項。
-ms.openlocfilehash: c58981afaadf2c4083b6a6db99c74cf9544715c3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: e1c821e3de8dd7dd18c192522bd18fd32a395dca
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827722"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200700"
 ---
 # <a name="mail-flow-in-eop"></a>EOP 中的郵件流程
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在具有 Exchange Online 信箱的 Microsoft 365 組織中，或獨立 Exchange Online Protection (EOP) 組織沒有 Exchange Online 信箱，所有傳送給您組織的郵件都會透過 EOP 傳遞，然後您的工作者才能看到它們。 您可以選擇如何路由傳送至您的工作人員收件匣的郵件，並透過 EOP 進行處理。
 

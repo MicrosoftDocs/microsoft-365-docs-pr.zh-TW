@@ -19,14 +19,17 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用可用工具辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
-ms.openlocfilehash: cfd20b0d5e6e13343346761b9b909a333b9a6ff5
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 2830fd10b633e094c92fd98fe61ce678a4da842b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827514"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200116"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>回應遭入侵的電子郵件帳戶
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **摘要** 了解如何辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
 

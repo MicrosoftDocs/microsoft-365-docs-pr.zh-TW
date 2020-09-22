@@ -14,14 +14,17 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何將網域和設定從一個 Microsoft Exchange Online Protection (EOP) 組織 (承租人) 移至另一個。
-ms.openlocfilehash: a33042631a5a5371e2d120f76f49cb2a46a638a3
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 141fb85bb7120f4e547c27f399d254847b19e3c2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827686"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200500"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>將網域及設定從某個 EOP 組織移到另一個
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。從一個 EOP 組織移至第二個 EOP 組織並不容易，但是利用幾個基本遠端 Windows PowerShell 指令碼和少量的準備工作，就可以使用一個相當小的維護視窗達成此目地。
 

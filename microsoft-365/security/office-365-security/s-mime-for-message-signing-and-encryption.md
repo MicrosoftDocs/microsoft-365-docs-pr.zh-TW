@@ -15,14 +15,17 @@ search.appverid:
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: 系統管理員可以瞭解如何在 Exchange Online 中使用 S/MIME (安全/多用途網際網路郵件) 延伸，以加密電子郵件並以數位方式簽署郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ca865fa8ef658b4715d18e09fe9cbc1cffb201e6
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: 8dce3e3fa3d24e1773f51f96e19a58d8a3b2efce
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845917"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200604"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>可用於 Exchange Online 中訊息簽署和加密的 S/MIME
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 S/MIME (安全多用途網際網路郵件延伸) 是一種被廣為接受的方法 (更具體來說是通訊協定) 可用來傳送已數位簽署和加密的郵件。 S/MIME 可讓您將電子郵件加密和進行數位簽署。 對電子郵件使用 S/MIME 時，可讓收件者確定收件匣裡的郵件確實為寄件者所寄出。 也可讓收件者確定郵件來自特定的寄件者，而不是由其他人假冒寄件者。 為了達到此目的，S/MIME 提供密碼編譯的安全性服務，例如驗證、訊息完整性和來源不可否認性 (使用數位簽章)。 另外還可加強電子郵件通訊的隱私性和資料安全性 (使用加密)。 如需 S/MIME 在電子郵件方面的歷史和架構的完整背景資訊，請參閱＜[瞭解 S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65))＞。
 

@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 深入瞭解如何將安全性秘訣加入電子郵件，以瞭解 EOP 和 Office 365 如何保護您免受垃圾郵件、網路釣魚和惡意程式碼的防禦。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b4bcfd2bf05f2f5ae7a51fbc2488cb1aa6e7d2c9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949629"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201980"
 ---
 # <a name="safety-tips-in-email-messages"></a>電子郵件訊息的安全提示
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange Online Protection (EOP) 和 Microsoft 365 保護您的垃圾郵件、網路釣魚和惡意程式碼防護。 如今，有些攻擊非常精心設計，看起來很合理。 將郵件傳送至 [垃圾郵件] 資料夾並不一定足夠。 現在，當您在 Outlook 或 Outlook 網頁版或任何電子郵件客戶程式中檢查您的電子郵件時，EOP 會自動檢查寄件者，並將安全性秘訣加入至電子郵件的最上層。
 

@@ -16,14 +16,17 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 為了協助維護使用者對電子郵件使用的信任，Microsoft 將各種原則和技術放在一起，以協助保護我們的使用者。
-ms.openlocfilehash: 74389d3b975a0ffaebdc1619be40fd3ac74d72f4
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652654"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199574"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>將郵件傳送至 Microsoft 365 的非客戶服務
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 電子郵件濫用、垃圾郵件和欺詐電子郵件 (網路釣魚) 會繼續負擔整個電子郵件生態系統。 為了協助維護使用者對電子郵件使用的信任，Microsoft 將各種原則和技術放在適當位置，以協助保護我們的使用者。 不過，Microsoft 知道合法的電子郵件不會受到不良影響。 因此，我們已建立一套服務，以協助寄件者透過主動管理其傳送信譽，以提升電子郵件傳送至 Microsoft 365 使用者的能力。
 
@@ -47,15 +50,15 @@ Microsoft 提供數種支援選項，讓使用者在傳送郵件給 Microsoft 36
 
 - 遵循您收到的任何未傳遞回報中的指示進行。
 
-- 查看[對傳送至 Office 365 的郵件進行疑難排解](troubleshooting-mail-sent-to-office-365.md)時，最常遇到的問題。
+- 查看 [對傳送至 Office 365 的郵件進行疑難排解](troubleshooting-mail-sent-to-office-365.md)時，最常遇到的問題。
 
-- 使用[Microsoft 365 取消列出入口網站](https://sender.office.com)提交要求從封鎖的寄件者清單中移除您的 IP 的要求。
+- 使用 [Microsoft 365 取消列出入口網站](https://sender.office.com) 提交要求從封鎖的寄件者清單中移除您的 IP 的要求。
 
-- 閱讀[Microsoft 社區論壇](https://community.office365.com/f/)。
+- 閱讀 [Microsoft 社區論壇](https://community.office365.com/f/)。
 
 - 請聯繫您嘗試使用另一種方法傳送電子郵件的客戶，並要求他們聯繫 Microsoft 支援服務，並代表您開啟支援票證。 在某些情況下，由於法律原因，Microsoft 支援必須直接與擁有被封鎖之 IP 空間的寄件者直接通訊。 不過，非客戶通常無法開啟支援票證。
 
-  如需 Microsoft 技術支援 Office 365 的詳細資訊，請參閱[support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support)。
+  如需 Microsoft 技術支援 Office 365 的詳細資訊，請參閱 [support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support)。
 
 ## <a name="anti-spam-ip-delist-portal"></a>Anti-Spam IP 取消列出入口網站
 
@@ -63,4 +66,4 @@ Microsoft 提供數種支援選項，讓使用者在傳送郵件給 Microsoft 36
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>來自 Exchange Online 的垃圾郵件的濫用和垃圾郵件報告
 
-Microsoft365 是協力廠商使用，以傳送垃圾郵件，違反我們的使用條款和原則。 如果您收到來自 Office 365 的任何垃圾郵件，您可以將這些郵件報告給 Microsoft。 如需相關指示，請參閱[將訊息和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。
+Microsoft365 是協力廠商使用，以傳送垃圾郵件，違反我們的使用條款和原則。 如果您收到來自 Office 365 的任何垃圾郵件，您可以將這些郵件報告給 Microsoft。 如需相關指示，請參閱 [將訊息和檔案報告給 Microsoft](report-junk-email-messages-to-microsoft.md)。

@@ -14,14 +14,17 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Admins in 獨立 Exchange Online Protection (EOP) 組織可以瞭解如何建立、修改及移除 Exchange 系統管理中心內的通訊群組和擁有郵件功能的安全性群組 (EAC) 和獨立 Exchange Online Protection (EOP) PowerShell。
-ms.openlocfilehash: e7b93b9d05fda7e4f5f8abea02fbe3f1c70a6c74
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: a395c0738093a00c0225aea22a6e556863eebee5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826550"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201874"
 ---
 # <a name="manage-groups-in-eop"></a>管理 EOP 中的群組
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，您可以建立、修改及移除下列類型的群組：
 

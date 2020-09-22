@@ -13,14 +13,17 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 瞭解如何在 Exchange Online Protection (EOP) 中管理郵件使用者，包括使用目錄同步處理、EAC 和 PowerShell 來管理使用者。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64b7effadd96b6dc025677139c4303acd538dadb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827072"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201780"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>在獨立版 EOP 中管理郵件使用者
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，郵件使用者是使用者帳戶的基本類型。 郵件使用者在獨立 EOP 組織中具有帳號憑證，而且可以存取) 具有指派許可權的資源 (。 郵件使用者的電子郵件地址為外部 (例如，在您的內部部署電子郵件環境) 中。
 
@@ -273,7 +276,7 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
 3. [選取要用於 AZURE AD Connect 的安裝類型](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation)：
 
-   - [表達](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+   - [Express](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
 
    - [自訂](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
 

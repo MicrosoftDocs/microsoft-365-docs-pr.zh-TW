@@ -16,14 +16,17 @@ ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何使用傳遞集區來保護 Microsoft 365 資料中心的電子郵件伺服器信譽。
-ms.openlocfilehash: 83ea21a9230240f1339513efc75587f3d84733cb
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: b3016be7c1887536fe3e742b5ab4ec598b6a5f89
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46827734"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201486"
 ---
 # <a name="outbound-delivery-pools"></a>輸出傳遞集區
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Microsoft 365 資料中心的電子郵件伺服器可能會暫時 guilty 寄送垃圾郵件。 例如，在內部部署電子郵件組織中的惡意程式碼或惡意垃圾郵件攻擊，會透過 Microsoft 365 傳送輸出郵件，或遭到受損的 Microsoft 365 帳戶。 攻擊者也會嘗試透過 Microsoft 365 轉寄來轉送郵件，以避免偵測。
 

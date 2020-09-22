@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 系統管理員可以瞭解如何在 exchange Online Protection 中指派或移除 Exchange 系統管理中心 (EAC) 中的許可權。
-ms.openlocfilehash: 8d452eb85d59bbe82cc6685d652617bc857c1ddf
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: fb1e0979b77c38d852f35817e01135af888eac68
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46825686"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201898"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>在獨立版 EOP 中管理角色群組
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在獨立 Exchange Online Protection (EOP 中) 沒有 Exchange Online 信箱的組織，您可以使用 Exchange 系統管理中心 (EAC) 將使用者新增至角色群組。 將使用者新增至角色群組，可讓使用者執行特定系統管理員工作的許可權。 您也可以從角色群組中移除使用者。
 

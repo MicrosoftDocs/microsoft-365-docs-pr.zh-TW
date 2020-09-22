@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a87cee31b4e0251aea8eb39640d37184ccd0ee96
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104519"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199214"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [安全性 & 合規性中心](https://protection.office.com)提供各種報告，可協助您觀察電子郵件安全性功能（例如，反垃圾郵件、反惡意程式碼，以及 Microsoft 365 中的加密功能）如何保護您的組織。 如果您有 [必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移至 [ **報表**] \> **儀表板**，在安全性 & 規範中心中查看這些報告。 若要直接移至 [報告] 儀表板，請開啟] <https://protection.office.com/insightdashboard> 。
 
@@ -58,7 +61,7 @@ ms.locfileid: "48104519"
 
 - **建立時間**
 - **User ID**
-- **動作**
+- **Action**
 
 若要回到報表檢視，請按一下 [ **查看報告**]。
 
@@ -119,7 +122,7 @@ ms.locfileid: "48104519"
   - **加密範本**
   - **加密方法**
   - **收件者位址**
-  - **主旨**
+  - **Subject**
 
 - **資料查看依據：前5位收件者網域**：
 
@@ -163,7 +166,7 @@ ms.locfileid: "48104519"
 - **寄件者位址**
 - **收件者位址**
 - **郵件識別碼**：郵件頭的 **Message-ID** 標頭欄位中可用，且應該是唯一的。 範例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (記下角括弧) 。
-- **主旨**
+- **Subject**
 - **Filename**
 - **惡意軟體名稱**
 
@@ -221,8 +224,8 @@ ms.locfileid: "48104519"
 - **寄件者位址**
 - **收件者位址**
 - **事件類型**
-- **動作**
-- **主旨**
+- **Action**
+- **Subject**
 
 如果您按一下 [詳細資料] 表格中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
 
@@ -260,7 +263,7 @@ ms.locfileid: "48104519"
 - **欺騙寄件者**
 - **True 寄件者**
 - **寄件者 IP**
-- **動作**
+- **Action**
 - **訊息計數**
 
 若要回到報表檢視，請按一下 [ **查看報告**]。
@@ -380,9 +383,9 @@ ms.locfileid: "48104519"
 - 所有其他圖表：
 
   - **Date**
-  - **主旨**
+  - **Subject**
   - **Sender**
-  - **收件者**
+  - **Recipients**
   - **偵測到**
   - **傳遞狀態**
   - **受損來源**

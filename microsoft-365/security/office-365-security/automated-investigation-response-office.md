@@ -16,14 +16,17 @@ ms.collection: M365-security-compliance
 ms.date: 08/21/2020
 description: 深入瞭解 Office 365 高級威脅防護方案2中的自動化調查和回應功能。
 ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: 27a2330d5f1ff339aabf6a0fccb94a15dec30852
-ms.sourcegitcommit: 37da941919036a714da42eaa039682ccbe0da670
+ms.openlocfilehash: d6793793a663e562b05df7e8458a6a8933e5ee47
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/23/2020
-ms.locfileid: "46860718"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200342"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-365"></a>Microsoft 365 中 (AIR) 的自動化調查和回應概覽
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 在某些情況下，安全性作業小組可能感覺到所觸發的警示數量所淹沒。 自動調查和回應 (Office 365 的 AIR) 功能 (Office 365 ATP) 可助您。 
 

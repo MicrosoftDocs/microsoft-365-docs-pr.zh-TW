@@ -20,14 +20,17 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 205809bac14cc82e850ea1cbc0349256432bfe68
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 232d19cb0bcb6a2f91c1bdad15d842ec7396499c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962582"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201048"
 ---
 # <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Microsoft 威脅防護中的自動調查遵循的修復動作
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
@@ -65,6 +68,6 @@ ms.locfileid: "47962582"
 
 ## <a name="next-steps"></a>後續步驟
 
-- [流覽行動中心](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
+- [造訪重要訊息中心](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
 - [核准或拒絕擱置動作](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir-actions)
 - [在自動化調查和回應功能中處理誤報/負片](mtp-autoir-report-false-positives-negatives.md)

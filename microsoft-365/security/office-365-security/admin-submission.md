@@ -17,14 +17,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
-ms.openlocfilehash: ef401f34bb0bc7a9a9718443101924ad09bca8a0
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 85251e82166279c25f009728dd5e5f0ff3c3f2ea
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47947969"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201252"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 在使用 Exchange Online 信箱的 Microsoft 365 組織中，系統管理員可以使用安全性 & 合規性中心內的提交入口網站，將電子郵件訊息、URLs 和附件提交給 Microsoft 以供掃描。
 
@@ -200,7 +203,7 @@ ms.locfileid: "47947969"
 若要變更篩選準則，請按一下 [ **寄件者** ] 按鈕，然後選擇下列其中一個值：
 
 - **寄件者網域**
-- **主旨**
+- **Subject**
 - **提交者**
 - **提交類型**
 - **寄件者 IP**

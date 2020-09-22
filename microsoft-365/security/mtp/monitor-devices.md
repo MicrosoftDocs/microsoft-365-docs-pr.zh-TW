@@ -15,14 +15,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8abb4960318bb12b0205d014c32e48a60d4b9ae5
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 638fa558d3bc83b94f1a165e8d087e3770357d42
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866810"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200026"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的裝置監控與報告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 在 Microsoft 365 的安全性中心，讓您的裝置具有安全、最新和潛在的潛在威脅。
 

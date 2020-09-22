@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: d9dcd07a4fc63130d015bf31270d1de9212f9a53
-ms.sourcegitcommit: 51097b18d94da20aa727ebfbeb6ec84c263b25c3
+ms.openlocfilehash: 3682044ab100d396719e3b7ffe5a6331852d0d55
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46649184"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201216"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>在進階搜捕中使用共用查詢
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
@@ -60,7 +63,7 @@ ms.locfileid: "46649184"
 2. 選取 [刪除]**** 並確認刪除。 或選取 [重新命名]****，並為查詢提供新名稱。
 
 ## <a name="create-a-direct-link-to-a-query"></a>建立查詢的直接連結
-若要產生連結，以直接在高級搜尋查詢編輯器中開啟查詢，請完成查詢並選取 [**共用] 連結**。
+若要產生連結，以直接在高級搜尋查詢編輯器中開啟查詢，請完成查詢並選取 [ **共用] 連結**。
 
 ## <a name="access-queries-in-the-github-repository"></a>存取 GitHub 儲存庫中的查詢  
 Microsoft 安全研究人員會定期在 [GitHub 上的指定公開儲存庫](https://aka.ms/hunting-queries)中共用進階搜捕查詢。 這個儲存庫開放個人提出貢獻。 若要貢獻，請[免費加入 GitHub ](https://github.com/)。
@@ -72,6 +75,6 @@ Microsoft 安全研究人員會定期在 [GitHub 上的指定公開儲存庫](ht
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用查詢結果工作](advanced-hunting-query-results.md)
-- [跨裝置、電子郵件、應用程式及身分識別搜尋](advanced-hunting-query-emails-devices.md)
+- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)
