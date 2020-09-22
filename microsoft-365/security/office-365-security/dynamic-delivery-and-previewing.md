@@ -18,14 +18,17 @@ ms.collection:
 - M365-security-compliance
 description: 當您設定 ATP 安全附件原則時，您選擇 [動態傳遞] 來避免郵件延遲，並讓人員預覽正在掃描的附件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e2da24ebac5863ab7852fdf8f9c7af8d507698b
-ms.sourcegitcommit: 583fd1ac1f385c58b93bda648907a1bd8e0a1950
+ms.openlocfilehash: c0b19317babbd433ba0914ca2385cf6c9b40d89b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45430348"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203032"
 ---
 # <a name="dynamic-delivery-and-previewing-with-atp-safe-attachments"></a>使用 ATP 安全附件的動態傳送和預覽
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 ## <a name="basic-features-of-dynamic-delivery"></a>動態傳遞的基本功能
 
@@ -39,7 +42,7 @@ ms.locfileid: "45430348"
 
 - 因為每個附件都是乾淨的，可以開啟或下載。
 
-- 如果將附件決定為惡意，它會傳送至隔離區，讓組織的安全小組（例如全域管理員或安全性管理員）可以[管理 Office 365 中的隔離郵件](manage-quarantined-messages-and-files.md)。
+- 如果將附件決定成為惡意的附件，就會傳送至隔離區，讓組織的安全性小組 (（例如全域管理員或安全性管理員）) 可以 [在 Office 365 中管理隔離的郵件](manage-quarantined-messages-and-files.md)。
 
 大部分 PDF 和 Office 文件都可以在 ATP 掃描正在進行時，在安全模式中預覽。 如果附件與動態傳遞預覽程式不相容，電子郵件收件者會看見附件預留位置，直到 ATP 安全附件掃描完成為止。
 
@@ -68,20 +71,20 @@ ATP 安全附件掃描會在 Microsoft 365 資料所在的相同區域中進行�
 
 ## <a name="additional-considerations"></a>其他考量因素
 
-在某些情況下，可能會有安全附件（包括不支援動態傳遞）。 包括：
+在某些情況下，不支援 (包含動態傳遞的安全附件) 。 包括：
 
 - 公用資料夾中的電子郵件。
 
 - 使用自訂規則，然後再移至使用者信箱的電子郵件。
 
-- 移出（自動或手動）退出的主控信箱的電子郵件，包括封存資料夾。
+- 移動的電子郵件訊息 (會自動或手動) 會從主控的信箱移至其他位置，包括封存資料夾。
 
 - 已刪除的電子郵件。
 
 - 處於錯誤狀態的使用者信箱搜尋資料夾。
 
-- Exchange Online 系統管理員已啟用 Exclaimer 的環境。 若要解決此問題，請參閱[使用 ATP 動態傳遞和 Exclaimer 時，具有附件的郵件將不會傳遞](https://support.microsoft.com/help/4014438)。
+- Exchange Online 系統管理員已啟用 Exclaimer 的環境。 若要解決此問題，請參閱 [使用 ATP 動態傳遞和 Exclaimer 時，具有附件的郵件將不會傳遞](https://support.microsoft.com/help/4014438)。
 
-- 使用[安全/多用途網際網路郵件擴充（S/MIME）](s-mime-for-message-signing-and-encryption.md)加密的郵件。
+- 使用 [安全/多用途網際網路郵件擴充加密的郵件 (S/MIME) ](s-mime-for-message-signing-and-encryption.md)) 。
 
 - 在不支援動態傳遞的情況下，安全附件將不會掃描電子郵件。 不過，系統會根據您 [ATP 安全連結原則](set-up-atp-safe-links-policies.md)的設定方式，在傳遞具有附件 (含有 URL) 的電子郵件訊息時會進行檢查。 在這些情況下，會檢查電子郵件訊息和 Office 檔案中的 URL。

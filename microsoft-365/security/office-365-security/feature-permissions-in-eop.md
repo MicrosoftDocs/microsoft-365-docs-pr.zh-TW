@@ -12,14 +12,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: 深入瞭解獨立 Exchange Online Protection 中的工作所需的許可權
-ms.openlocfilehash: f9c0f0549ba5a0a65fa3bbe3af1afbfddc6e735c
-ms.sourcegitcommit: e12fa502bc216f6083ef5666f693a04bb727d4df
+ms.openlocfilehash: ae43dc2223b17d3b73f9b76fa6bde8fb9cb95e77
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46826622"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202864"
 ---
 # <a name="permissions-in-standalone-eop"></a>獨立版 EOP 中的權限
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 獨立 Exchange Online Protection (EOP) 沒有 Exchange Online 信箱時，會使用以角色為基礎的存取控制 (RBAC) 許可權模型，以輕鬆授與許可權給您的系統管理員。 您可以使用獨立 EOP 中的許可權功能，快速地讓新組織正常運作。
 
@@ -131,7 +134,7 @@ ms.locfileid: "46826622"
 |---|---|
 |Exchange 系統管理員|OrganizationManagement|
 |全域系統管理員|OrganizationManagement <br/><br/> **附注**：全域系統管理員角色和 OrganizationManagement 角色群組會使用特殊的「公司系統管理員」角色群組進行結合。 公司系統管理員角色群組是在內部管理，且無法直接修改。|
-|密碼系統管理員|HelpDesk|
+|密碼管理員|HelpDesk|
 |全域讀取者|ViewOnlyOrganizationManagement|
 |安全性系統管理員|SecurityAdministrator|
 |安全性讀取者|SecurityReader|

@@ -17,20 +17,23 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 596d67d4967886a2df985793f38f968b40d2c3a9
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: c6643b30327b7f362c4649c2be1b1eea81ff3523
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289660"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203616"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分數
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 我們在近期進行一些變更，讓 [Microsoft 安全評分](microsoft-secure-score.md) 成為安全狀況的更好代表，並提高可用性。 您的分數和可能的最大分數可能會有所變更。
 
 ## <a name="proposed-changes"></a>建議變更
 
-### <a name="september-2020"></a>2020年9月
+### <a name="september-2020"></a>2020 年 9 月
 - 未計畫變更
 
 ## <a name="related-resources"></a>相關資源

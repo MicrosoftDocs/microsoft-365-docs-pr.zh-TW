@@ -1,6 +1,6 @@
 ---
-title: 支援的 Microsoft 威脅防護 APIs
-description: 支援的 Microsoft 威脅防護 APIs
+title: 受支援的 Microsoft 威脅防護 API
+description: 受支援的 Microsoft 威脅防護 API
 keywords: MTP、APIs、api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 49fa182a6142748ca7769411fe74389f365ba75f
-ms.sourcegitcommit: 9a275a13af3e063e80ce1bd3cd8142a095db92d2
+ms.openlocfilehash: fda90945f09abfadfe56ea11469687130d88b2a7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47650186"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203692"
 ---
-# <a name="supported-microsoft-threat-protection-apis"></a>支援的 Microsoft 威脅防護 APIs 
+# <a name="supported-microsoft-threat-protection-apis"></a>受支援的 Microsoft 威脅防護 API 
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 適用於：****
 - Microsoft 威脅防護
 
@@ -52,5 +55,5 @@ ms.locfileid: "47650186"
 
 主題 | 描述
 :---|:---
-[高級搜尋 API](api-advanced-hunting.md) | 從 API 執行高級搜尋查詢。
-[事件 APIs](api-incident.md) | 執行與事件相關的 API 通話，例如：列出事件、更新事件等等。
+[進階搜捕 API](api-advanced-hunting.md) | 從 API 執行高級搜尋查詢。
+[事件 API](api-incident.md) | 執行與事件相關的 API 通話，例如：列出事件、更新事件等等。

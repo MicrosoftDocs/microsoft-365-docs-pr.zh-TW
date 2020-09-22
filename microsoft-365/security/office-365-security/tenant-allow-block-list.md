@@ -15,14 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在安全性 & 合規性中心的承租人允許/封鎖清單中設定 URL 專案。
-ms.openlocfilehash: 888a96f23daf2cf47847466ad4080f310be7f9b4
-ms.sourcegitcommit: 260bbb93bbda62db9e88c021ccccfa75ac39a32e
+ms.openlocfilehash: eb9dcc5b239aae1366a0a2e0eebd68b3f0082e6b
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "46845939"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202336"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>管理租使用戶允許/封鎖清單中的 URL
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 > [!NOTE]
 > 本主題中所述的功能包括預覽、可能變更，而且無法在所有的組織中使用。
@@ -95,7 +98,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 按一下下列欄標題，以遞增或遞減順序排序：
 
-- **值**
+- **Value**
 - **動作**： **封鎖** 或 **允許**。
 - **上次更新日期**
 - **有效期**

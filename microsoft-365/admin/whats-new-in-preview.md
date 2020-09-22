@@ -21,12 +21,12 @@ description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 7504fa085c6dd5413a1dcddbb71f3d015ded72c1
-ms.sourcegitcommit: 97ef8f846939c3d31bb0638edf07bb89463ace0b
+ms.openlocfilehash: 64c9939f7dd6c4370b80e74987263942dad0e62f
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2020
-ms.locfileid: "47300446"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208882"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -49,17 +49,121 @@ ms.locfileid: "47300446"
 - [SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office 更新](https://docs.microsoft.com/OfficeUpdates/)
 
+## <a name="ignite-2020-august--september"></a>Ignite 2020 (月 & 年9月) 
+
+歡迎使用 Microsoft Ignite-我們的第一個僅供線上使用的 Ignite。 我們希望在我們的其中一個會話中看到您： [Microsoft Ignite 2020 Session Catalog](https://myignite.microsoft.com/sessions)。 以下是您將在 Ignite 中談論的一些事項。 
+> [!NOTE]
+> 並非所有的功能都會立即提供給所有的功能。 如果您未看到新功能，請 [加入目標版本](manage/release-options-in-office-365.md)。
+
+### <a name="multi-tenant-management"></a>多租使用者管理
+
+我們為多承租人系統管理員開發了一組功能，讓您能更快速且更有效率地完成工作。
+
+- **您的承租人**：在您管理的承租人之間快速切換。
+- **所有承租人**：一種新的頁面，您可以在其中快速查看所有租使用者服務的健康情況、任何開啟的服務要求、產品和計費、建議的設定工作，以及該租使用者的使用者人數。
+- **安裝程式**：「多租使用者安裝」頁面提供 [安裝] 頁面的清單視圖，但為許多承租人進行組織。 您可以看到哪些功能未開啟，所有承租人的工作均已完成，但承租人仍需完成的工作。 這個視圖會協助您追蹤功能採用，並確定總能進行建議的安全性設定工作。
+- **服務健康**情況：服務健康情況視圖會向您顯示是否有任何事件或諮詢影響承租人。 它甚至會告訴您受管理的承租人中有多少受到影響。 只要選取一個事件，即可在 [概覽] 索引標籤上取得詳細資訊，然後切換至 [租受影響] 索引標籤，以向下切入並支援該租使用者。
+- **跨租使用者信箱遷移** 是一項新服務，現在是公開預覽，可讓您在承租人之間移動信箱，而不需要下架，然後是上架信箱。 
+- **跨承租人網域共用**：不久，您可以加入私人預覽，以取得可讓您跨多個承租人共用網域的功能。 例如，如果 Contoso 取得 Wingtip 玩具，Contoso 可以與 Wingtip 玩具共用網域，讓這兩個承租人中的人都可以使用「contoso.com」作為其電子郵件地址。
+
+![已選取事件且受租使用者開啟] 索引標籤的多承租人服務健康情況頁面。 導覽功能表的所有承租人、安裝程式和服務健康情況都是唯一的選項。](../media/MAC-WN-MTinServiceHealth.png)
+
+### <a name="monitor-your-most-important-accounts"></a>監視最重要的帳戶
+
+您可以監視和追蹤傳送給使用者的失敗或延遲的電子郵件訊息，其具有高業務影響，例如 CEO。 您可以在 Microsoft 365 系統管理中心中，將使用者新增至您的優先順序帳戶清單，以追蹤優先順序帳戶。 新增具有敏感或高優先順序資訊存取權、主管、主管或其他使用者。
+
+優先順序帳戶只適用于符合下列兩項需求的組織：
+
+- Office 365 E3 或 Microsoft 365 E3，或 Office 365 E5 或 Microsoft 365 E5。
+- 至少10000個授權，以及至少50個每月使用中 Exchange Online 使用者。
+
+![功能的安裝頁面：監控最重要的帳戶](../media/MAC-WN-PriorityAccounts.png)
+
+有兩種開始入門：
+
+- 移至 [ **使用者**]，然後在 [其他動作] 功能表中，選取 [ **管理優先順序帳戶** ]，將使用者新增至清單。
+- 移至 [ **設定**]，尋找「安裝程式 **工作」監視您最重要的帳戶**，然後選取 [ **開始**]。
+
+如需優先順序帳戶的詳細資訊，請參閱 [監控](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 優先順序帳戶和 [優先順序帳戶的電子郵件問題](https://docs.microsoft.com/Exchange/mail-flow-best-practices/mail-flow-insights/mfi-email-issues-for-priority-accounts)。
+
+### <a name="search-faster-and-get-better-results-from-any-page"></a>更快地搜尋並取得任何頁面的結果
+
+我們已開始為系統管理中心推出新的搜尋體驗，我們無法等候您進行嘗試。 ![搜尋方塊已移至橫幅區域。 Alt + S 可從任何頁面進行搜尋。](../media/MAC-WN-GlobalSearch.png)
+
+- [搜尋] 方塊移至「Microsoft 365 系統管理中心」所在的頁首區域，所以現在您可以從任何頁面（而不只是首頁）進行搜尋。 我們甚至已獲得快捷方式： **Alt + S**。
+- 搜尋更聰明，可提供更好的結果，甚至更快速。 請嘗試輸入 "2fa" 開始著手。
+- 搜尋結果會依您可以採取的專案類型或動作進行組織。
+  - **使用者**：選取使用者的名稱，您可以在其中編輯該使用者。 如果您選取其名稱旁邊的「其他動作」功能表，您可以重設其密碼。 您可以依顯示名稱、姓氏、名字、username 或主要電子郵件地址，以及電子郵件別名進行搜尋。 但若要取得完全相符，請依主要電子郵件地址或使用者名稱進行搜尋。
+  - **群組**：從任何頁面編輯群組、新增成員、指派擁有者。
+  - **動作**：類似于您可以搜尋使用者然後重設密碼的方式，您也可以從任何頁面搜尋「重設密碼」，然後為使用者重新設定一或多個密碼。
+  - **導覽**：導覽底下的結果會很快協助您快速前往系統管理中心的頁面。 例如，搜尋「角色」會帶您前往 Azure AD 角色的「角色」頁面。
+  - **設定**：搜尋與您組織相關的任何設定、您訂閱的服務，以及安全性和隱私權設定。 
+  - **網域**：您可以找到您的網域的快速連結，然後連結會帶您前往該網域的 [概述與健康情況] 頁面。
+  - **檔**：如果找不到結果，我們會嘗試尋找一些檔來協助。 策劃清單若要尋找相符專案所需的時間稍長一些，所以請等候第二個，讓搜尋尋找結果。 
+  - **意見**反應：未找到您所要尋找的專案？ 從搜尋向我們傳送意見反應。 我們會在系統管理中心新增更多頁面和功能的搜尋功能。
+
+### <a name="microsoft-365-admin-mobile-app"></a>Microsoft 365 admin 行動裝置應用程式
+
+在您的訂閱中隨附的 [microsoft 365 admin 行動應用程式](https://www.microsoft.com/microsoft-365/business/manage-office-365-admin-app)，可讓您從行動裝置管理 microsoft 365，讓您離開桌面執行每一天的工作。 實際上，應用程式中有超過90的功能--而且我們只會新增一些功能：
+
+- **支援 Microsoft Intune 的行動應用程式管理和條件式存取原則**：即使您的組織已開啟 Intune 的行動應用程式管理和條件式存取原則，您現在也可以使用您的個人裝置來管理 Microsoft 365。
+- **郵件中心通知**： **Settings**  >  如果您想要收到有關新的郵件中心文章的警示，請在設定**通知**開啟郵件中心通知。 透過通知，我們想要確保您及時瞭解租使用者的重要資訊和事件。
+- **帳單**通知： **Settings**  >  如果您想要在訂閱即將到期時，在裝置上取得帳單通知，您也可以在設定**通知**中開啟帳單通知。
+- **深色模式**：歡迎使用行動應用程式的深邊。 這是我們最要求的功能之一。 移至 [**設定**]  >  **主題**，開啟它。
+- **報告問題**：您現在可以在應用程式中報告問題，或查看其他系統管理員所報告的問題。 請造訪 **服務健康** 情況，以取出。
+
+![Microsoft 365 系統管理應用程式中的「健康情況」頁面，包含訊息中心的通知、服務健康情況、計費警示。](../media/MAC-WN-AdminMobileApp.png)
+
+### <a name="usage-recommendations-for-small-and-medium-businesses"></a>適用于中小型企業的使用建議
+
+如果組織中的某些人員未使用團隊、OneDrive 或 Office 應用程式，則小型和中型企業可能會在 **首頁** 上獲得建議。 當您查看建議時，您可以將 Microsoft 訓練傳送至非使用中的使用者，以協助他們開始使用應用程式，並確認您已從您的訂閱取得完整的價值。
+
+### <a name="remote-work-collection"></a>遠端工作集合
+
+在十月，我們將新增一個遠端工作集合，協助小型企業擁有者和員工在遠端工作。  「**遠端工作」基本**設定是 Microsoft 建議安全啟用遠端工作和有效共同作業的所有功能策劃清單。 在幾周內，您可以在「**安裝程式**  >  **遠端工作」概要**中嘗試。
+
+![安裝中的遠端工作基礎頁面（7項任務未開始）。](../media/MAC-WN-RemoteWork.png)
+
+如需如何安全地允許遠端工作的詳細資訊，以及便於記憶和共用的便捷網址，請移至 [aka.ms/remote-business](https://aka.ms/remote-business)。
+
+### <a name="need-help-moving-to-more-admin-centers"></a>需要協助嗎？移至更多系統管理中心
+
+我們會不斷查看和更新內容及工具，以維持產品中的變更。 現在我們有許多自助的診斷工具，可協助您快速有效地解決問題。 以下是最近新增的少數幾個專案：
+
+- 變更您的 Exchange Web 服務節流原則
+- 檢查小組提供和驗證特定使用者的狀態
+- 修正 DKIM 安裝問題
+- 診斷 Intune 使用者註冊錯誤
+
+而且，我們正在推出您已在 Microsoft 365 系統管理中心中看到的新的和改善的支援經驗，以供其他一些系統管理中心。 小組系統管理中心及安全性與合規性管理中心已具備這種新體驗。 而且不久， **Exchange 系統管理中心**、 **SharePoint 系統管理中心**和 **Office.com** 將會隨系統管理員的這一新協助體驗一起更新。
+
+### <a name="manage-changes-with-microsoft-planner"></a>使用 Microsoft Planner 管理變更
+
+在5月宣佈，我們宣佈您可以將郵件中心發佈同步處理至 Microsoft Planner，現在可供所有人使用。  您現在可以從郵件建立工作、指派任務，以及追蹤工作完成。 您第一次選取 [ **Planner 同步** 處理] 時，您必須連線至適當的計畫。
+
+![在 [喜好設定] 按鈕旁邊的命令列中，高亮顯示「規劃同步處理」的郵件中心頁面。](../media/MAC-WN-MCPlannerSync.png)
+
+若要深入瞭解它，請參閱本文和影片以查看其運作方式： [在 Planner 中追蹤您的訊息中心文章](https://docs.microsoft.com/Office365/Planner/track-message-center-tasks-planner)
+
+### <a name="documentation-training-and-videos"></a>檔、訓練和影片
+
+- 適用于 Microsoft Ignite--[虛擬中樞](https://adoption.microsoft.com/virtual-hub/)的全新和即時的品牌。 深入深入瞭解 IT 專業人員和開發人員的技術訓練。 在 #SIDETRACKED 中，快速尋找20個新影片，作為的一部分，這一年的 Ignite 系統管理員追蹤名稱。
+- [Microsoft 365 vcd 系列的新](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) 功能：本月，我們涵蓋在小組和網頁上的白板中可用的新功能、如何自動化使用者對 Azure AD 的布建、新的 Power 自動化觸發器及小組中的動作等等。 並在下個月繼續深入瞭解，我們將在 Ignite 取得所有重要事情的回顧！
+- 我們會先重新設計著重于解決方案的 [Microsoft 365 檔](https://docs.microsoft.com/microsoft-365) 頁面。 我們會在此頁面上醒目提示新的解決方案，因此請留意。
+
+![Microsoft 365 解決方案的新登陸分頁檔，含「提供遠端工作者」等解決方案。](../media/MAC-WN-M365Docspage.png)
+
 ## <a name="july-2020"></a>2020 年 7 月
 
 ### <a name="getting-ready-for-ignite-2020"></a>準備好 Ignite 2020
 
-當我們在 Microsoft 移至 Ignite 季節時，我們並未發佈許多功能，讓我們在我們的會話中有大量討論。 
+當我們在 Microsoft 移至 Ignite 季節時，我們並未發佈許多功能，讓我們在我們的會話中有大量討論。
 
 本文的下一次更新將會在第一次僅限線上 Ignite 的開始日期。 今年，您可以免費參加！ 請取出： [Microsoft Ignite 2020](https://www.microsoft.com/ignite)。
 
 ### <a name="your-products"></a>您的產品
 
-在訂閱管理中已完成許多工作，使頁面的載入速度更快、找到您所需的內容，以及符合 web acessibility 標準 ([WCAG 2.1 指導方針](http://www.w3.org/TR/WCAG21/)) 。
+在訂閱管理中已完成許多工作，使頁面的載入速度更快、找到您所需的內容，以及符合 web 協助工具標準 ([WCAG 2.1 指導方針](http://www.w3.org/TR/WCAG21/)) 。
 
 - **表重新設計**：資料表經過重新設計，可讓您分組類似的訂閱。 移至**Billing**  >  **您的產品**收費。
 - **產品詳細資料**：透過選取清單中的產品，即可取得您訂閱的詳細資料。
@@ -73,9 +177,9 @@ ms.locfileid: "47300446"
 
 :::image type="content" source="../media/MAC-WN-DomainDNS.PNG" alt-text="Contoso.com 的網域詳細資料頁面":::
 
-### <a name="docs-training-and-videos"></a>檔、訓練和影片
+### <a name="docs-training-and-videos-july-2020"></a>2020年7月 (的檔、訓練和影片) 
 
-[Microsoft 365 vcd 系列的新功能](https://youtu.be/m1Nu8WJgCDY) ：本月，我們涵蓋新的 yammer 體驗網頁和行動裝置，如何整合 Microsoft 小組的 yammer 社區應用程式、新的原則套件以支援 firstline 工作者和主管等等。
+[Microsoft 365 vcd 系列的新功能](https://youtu.be/m1Nu8WJgCDY) ：本月，我們涵蓋新的 yammer 體驗網頁和行動裝置，如何整合 Microsoft 小組的 yammer 社區應用程式、新的原則套件以支援 Firstline 工作者和主管等等。
 
 ## <a name="june-2020"></a>2020 年 6 月
 
@@ -91,7 +195,7 @@ ms.locfileid: "47300446"
 
 ### <a name="new-update-channel-for-office"></a>適用于 Office 的新更新通道
 
-在5月12日，我們宣佈推出新更新通道 for Office：月度 Enterprise 通道。 此更新通道會在每月的第二個星期二，于每月提供一次新 Office 功能的使用者。
+在5月12日，我們宣佈推出新更新通道 for Office：月度 Enterprise 通道。 此更新通道會在每月的第二個星期二，一月內為您的使用者提供新的 Office 功能。
 
 如果您允許使用者從入口網站自行安裝 Office，您可以為其選取每月的 Enterprise 通道。 若要這麼做，請登入 Microsoft 365 系統管理中心，然後移至 [**顯示所有**  > **設定**的所有設定] [  >  **組織**  >  **Services**  >  **Office 軟體下載設定**]。 如果您在每月 ** (每月的 Enterprise 通道) **選擇一次，則會將任何新的自行安裝設定為使用每月的 enterprise 通道。
 
@@ -238,7 +342,7 @@ ms.locfileid: "47300446"
 |Office 365 商務基本版     |   Microsoft 365 商務基本版      |
 |Office 365 商務進階版     |    Microsoft 365 商務標準版     |
 |Microsoft 365 商務版     |    Microsoft 365 商務進階版     |
-|Office 365 商務版     |    Microsoft 365 Apps 商務版       |
+|Office 365 Business     |    Microsoft 365 Apps 商務版       |
 |Office 365 專業增強版    |   適用于企業的 Microsoft 365 應用程式      |
 
 ### <a name="videos-training-and-docs"></a>影片、訓練及檔
@@ -257,7 +361,7 @@ ms.locfileid: "47300446"
 ![螢幕捕捉：首頁顯示組織設定檔名稱及切換圖示的頁首。](../media/MAC-Organization-switcher.png)
 
 2. 在 [組織切換器] 中，選取您要管理的組織。
-![螢幕捕捉：首頁顯示組織設定檔名稱及切換圖示的頁首。](../media/MAC-OrgSwitcherSelected.png)
+![螢幕捕捉：「我的組織租使用者」整合的信使租使用者已反白顯示](../media/MAC-OrgSwitcherSelected.png)
 
 這實際上!!!
 

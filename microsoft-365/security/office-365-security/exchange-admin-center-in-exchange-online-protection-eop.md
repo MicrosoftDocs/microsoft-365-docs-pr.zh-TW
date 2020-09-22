@@ -16,14 +16,17 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解獨立 Exchange Online Protection (EOP) 中的 web 管理介面。
-ms.openlocfilehash: d5753f687461a5495c2431db687263d7211bcbf5
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 732991befa9084b62c152295d10a2bbf94bc36ec
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652906"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202948"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>獨立版 EOP 中的 Exchange 系統管理中心
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Exchange 系統管理中心 (EAC) 是以 web 為基礎的管理主控台，供獨立 Exchange Online Protection (EOP) 。
 
@@ -35,15 +38,15 @@ Exchange 系統管理中心 (EAC) 是以 web 為基礎的管理主控台，供�
 
 - **從 Microsoft 365 系統管理中心**：
 
-  1. 移至 <https://admin.microsoft.com> 並按一下 [**全部顯示**]。
+  1. 移至 <https://admin.microsoft.com> 並按一下 [ **全部顯示**]。
 
      ![按一下 Microsoft 365 系統管理中心內的 [全部顯示]](../../media/m365-center-show-all.png)
 
-  2. 在出現的 [系統**管理中心**] 區段中，按一下 [**所有系統管理中心**]。
+  2. 在出現的 [系統 **管理中心** ] 區段中，按一下 [ **所有系統管理中心**]。
 
      ![按一下 [Microsoft 365 系統管理中心] 中的 [所有系統管理中心]。](../../media/m365-center-select-all-admin-centers.png)
 
-  3. 在出現的 [**所有系統管理中心**] 頁面上，按一下 [ **Exchange Online Protection**]。
+  3. 在出現的 [ **所有系統管理中心** ] 頁面上，按一下 [ **Exchange Online Protection**]。
 
 - 直接移至 `https://admin.protection.outlook.com/ecp/` 。
 
@@ -66,11 +69,11 @@ Exchange 系統管理中心 (EAC) 是以 web 為基礎的管理主控台，供�
 - **保護**：這是您可以管理反惡意程式碼原則、預設連線篩選原則及 DKIM 的所在位置。
 
   > [!NOTE]
-  > 您應在安全性 & 規範中心管理反惡意程式碼原則和預設連線篩選原則。 如需詳細資訊，請參閱在[EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)及[設定 EOP 中的連線篩選](configure-the-connection-filter-policy.md)。
+  > 您應在安全性 & 規範中心管理反惡意程式碼原則和預設連線篩選原則。 如需詳細資訊，請參閱在 [EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md) 及 [設定 EOP 中的連線篩選](configure-the-connection-filter-policy.md)。
 
 - **郵件流程**：這是您管理郵件流程規則 (的所在位置，也稱為傳輸規則) 、公認的網域和連接器，以及您可以前往執行郵件追蹤的位置。
 
-- **混合**式：這是您可以執行[混合](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)式設定向導的所在位置，以及您可以在其中安裝[Exchange Online PowerShell 模組](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)的位置。
+- **混合**式：這是您可以執行 [混合](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)式設定向導的所在位置，以及您可以在其中安裝 [Exchange Online PowerShell 模組](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)的位置。
 
 ### <a name="tabs"></a>索引標籤
 

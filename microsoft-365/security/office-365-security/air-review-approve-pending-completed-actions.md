@@ -15,24 +15,27 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 深入瞭解 Office 365 Advanced 威脅防護方案2中自動化調查和回應功能的修復動作。
-ms.openlocfilehash: c44b0a535e6838258d3efa63010d7ccc63009af9
-ms.sourcegitcommit: 1e9ce51efa583c33625299d17e37f58048a4169c
+ms.openlocfilehash: 2f1d6a1dccfaece6a52ec33fd86ea244fbb6c4fe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "43804832"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202444"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>在 Office 365 中進行自動調查後，查看擱置或已完成的修復動作
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 
 ![AIR 調查動作頁面](../../media/air-investigationactionspage.png)
 
-## <a name="approve-or-reject-pending-actions"></a>核准（或拒絕）暫止的動作
+## <a name="approve-or-reject-pending-actions"></a>核准 (或拒絕) 擱置的動作
 
-當您查看[調查的詳細資料](air-view-investigation-results.md)時，您可以核准或拒絕任何擱置的修復動作。 我們建議您儘快執行這種操作，以完成您的自動化調查。
+當您查看 [調查的詳細資料](air-view-investigation-results.md)時，您可以核准或拒絕任何擱置的修復動作。 我們建議您儘快執行這種操作，以完成您的自動化調查。
 
 > [!IMPORTANT]
-> 核准或拒絕修正動作必須具有適當的許可權。 請參閱[使用 AIR 功能所需的許可權](office-365-air.md#required-permissions-to-use-air-capabilities)。
+> 核准或拒絕修正動作必須具有適當的許可權。 請參閱 [使用 AIR 功能所需的許可權](office-365-air.md#required-permissions-to-use-air-capabilities)。
 
 1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這樣會帶您前往安全性與合規性中心。
 
@@ -40,13 +43,13 @@ ms.locfileid: "43804832"
 
 3. 在調查清單中，選取 [識別碼]**** 欄中的項目。 
 
-4. 選取 [**動作**] 索引標籤。
+4. 選取 [ **動作** ] 索引標籤。
 
-5. 選取清單中的項目。 （這會啟用 [核准] 和 [拒絕] 按鈕。）
+5. 選取清單中的項目。  (這會啟用 [核准] 及 [拒絕] 按鈕。 ) 
 
-6. 查看您選取之專案的可用資訊，然後核准或拒絕動作。 
-   - **核准**允許開始修復。
-   - **拒絕**不再採取任何動作
+6. 查看您所選取之專案 () 可用資訊，然後核准或拒絕該動作 (s) 。 
+   - **核准** 允許開始修復。
+   - **拒絕** 不再採取任何動作
 
 ## <a name="next-steps"></a>後續步驟
 

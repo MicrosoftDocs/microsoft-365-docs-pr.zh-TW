@@ -18,14 +18,17 @@ search.appverid:
 - MET150
 description: 系統管理員可以深入瞭解 Microsoft 365 的安全性 & 規範中心提供的許可權。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1738438601712199b9a8e7365338d03e17621f0
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 6dab91169b260ea3dae47034ec5c15ebeb2462a4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171311"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48202684"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全性與合規性中心中的權限
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 安全性 & 合規性中心可讓您將許可權授與執行規范工作（如裝置管理、資料遺失防護、eDiscovery、保留等等）的人員。 這些人員只能執行您已明確授與權限的工作。 若要存取安全性 & 規範中心，使用者必須是全域系統管理員或一或多個安全性 & 規範中心角色群組的成員。
 

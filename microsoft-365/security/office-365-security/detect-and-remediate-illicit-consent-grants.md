@@ -17,14 +17,17 @@ search.appverid:
 - MET150
 description: 瞭解如何辨識和修正非法同意授與 Microsoft Office 365 的攻擊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 125ebdf8b3d17e3a14abec8154129b0144928905
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: b534d53166c09cf77993948cf1c448e21c8cd330
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46652954"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203092"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>偵測並修正違法的同意授與
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 **摘要**了解如何識別並修正在 Office 365 中的非法同意授權。
 
@@ -35,23 +38,23 @@ ms.locfileid: "46652954"
 這些攻擊採用一種互動模型，這種模型會假正在呼叫資訊的實體是自動化，而不是人。
 
 > [!IMPORTANT]
-> 您是否懷疑遇到違法的同意問題-從應用程式授與的許可權？ Microsoft Cloud App Security (MCAS) 具有偵測、調查和修正 OAuth 應用程式的工具。 此 MCAS 文章包含的教學課程，說明如何[調查 OAuth 應用程式的風險](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)。 您也可以設定[OAuth 的應用程式原則](https://docs.microsoft.com/cloud-app-security/app-permission-policy)，以調查應用程式要求的許可權，這些許可權是使用者授權這些應用程式，並廣泛核准或禁止這些許可權要求。
+> 您是否懷疑遇到違法的同意問題-從應用程式授與的許可權？ Microsoft Cloud App Security (MCAS) 具有偵測、調查和修正 OAuth 應用程式的工具。 此 MCAS 文章包含的教學課程，說明如何 [調查 OAuth 應用程式的風險](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth)。 您也可以設定 [OAuth 的應用程式原則](https://docs.microsoft.com/cloud-app-security/app-permission-policy) ，以調查應用程式要求的許可權，這些許可權是使用者授權這些應用程式，並廣泛核准或禁止這些許可權要求。
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Office 365 中的非法同意授權攻擊的外觀如何？
 
-您必須搜尋「**審計記錄**檔」，以尋找此攻擊的簽署，也稱為折衷 (IOC) 。 如果組織擁有許多 Azure 註冊應用程式和大量使用者，最佳做法就是每週檢閱您的組織同意授權。
+您必須搜尋「 **審計記錄** 檔」，以尋找此攻擊的簽署，也稱為折衷 (IOC) 。 如果組織擁有許多 Azure 註冊應用程式和大量使用者，最佳做法就是每週檢閱您的組織同意授權。
 
 ### <a name="steps-for-finding-signs-of-this-attack"></a>尋找此攻擊徵象的步驟
 
-1. 開啟**安全性 & 規範中心**，網址為 <https://protection.office.com> 。
+1. 開啟 **安全性 & 規範中心** ，網址為 <https://protection.office.com> 。
 
-2. 流覽至 [**搜尋**]，然後選取 [**審核記錄搜尋**]。
+2. 流覽至 [ **搜尋** ]，然後選取 [ **審核記錄搜尋**]。
 
-3. 搜尋 (所有活動和所有使用者) 並輸入開始日期和結束日期（如有需要），然後按一下 [**搜尋**]。
+3. 搜尋 (所有活動和所有使用者) 並輸入開始日期和結束日期（如有需要），然後按一下 [ **搜尋**]。
 
-4. 按一下 [**篩選結果**]，並在 [**活動**] 欄位中輸入應用程式同意。
+4. 按一下 [ **篩選結果** ]，並在 [ **活動** ] 欄位中輸入應用程式同意。
 
-5. 按一下結果以查看活動的詳細資料。 按一下 [**詳細資訊**] 以取得活動的詳細資料。 請檢查 IsAdminContent 是否設定為 True。
+5. 按一下結果以查看活動的詳細資料。 按一下 [ **詳細資訊** ] 以取得活動的詳細資料。 請檢查 IsAdminContent 是否設定為 True。
 
 > [!NOTE]
 >
@@ -112,7 +115,7 @@ ms.locfileid: "46652954"
 
 1. 使用本機系統管理員權限登入您將執行指令碼的電腦。
 
-2. 將[Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)腳本從 GitHub 下載或複製到您要執行腳本的資料夾。 此資料夾與寫入輸出「permissions.csv」檔案的資料夾是同一個。
+2. 將 [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) 腳本從 GitHub 下載或複製到您要執行腳本的資料夾。 此資料夾與寫入輸出「permissions.csv」檔案的資料夾是同一個。
 
 3. 以系統管理員身分開啟 PowerShell 執行個體，然後開啟您要儲存指令碼的資料夾。
 
@@ -136,7 +139,7 @@ ms.locfileid: "46652954"
 
 ## <a name="determine-the-scope-of-the-attack"></a>判斷攻擊的範圍
 
-當您完成清查應用程式存取之後，請複查**審核記錄**以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [Microsoft 365 安全性與合規性中心][](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) 中搜尋**稽核記錄**。
+當您完成清查應用程式存取之後，請複查 **審核記錄** 以判斷破壞的完整範圍。 搜尋受影響的使用者、非法應用程式有權存取您組織的時間範圍，以及應用程式擁有的權限。 您可以在 [Microsoft 365 安全性與合規性中心][](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) 中搜尋**稽核記錄**。
 
 > [!IMPORTANT]
 > 您必須在攻擊之前啟用 [信箱稽核][](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) 和 [系統管理員與使用者的活動稽核][](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)，才能獲得此訊息。

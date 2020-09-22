@@ -17,14 +17,17 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 了解 Office 365 進階威脅防護中的行銷活動檢視。
-ms.openlocfilehash: 60ec8ea1d2c164905e7b57f4b518ea3f80e7986c
-ms.sourcegitcommit: dcbcd5ef278949c777059b0aa6db072e821f72dd
+ms.openlocfilehash: 881dcde1157877eb015d9700bcbcd08fd3336192
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48173305"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203476"
 ---
 # <a name="campaign-views-in-office-365-atp"></a>Office 365 ATP 中的行銷活動檢視
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 [活動] 視圖是「高級威脅防護」中的一項功能， (ATP) Plan 2 (例如，Microsoft 365 E5 或具有 ATP Plan 2 附加元件) 的組織。 安全性 & 合規性中心的即時檢視會識別和分類服務中的網路釣魚攻擊。 行銷活動檢視可協助您：
 

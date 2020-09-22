@@ -18,14 +18,17 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 設計獨立 SharePoint Online 小組網站，包括決定許可權等級、將許可權指派給具有存取群組的使用者，以及嵌套的 Azure AD 群組。
-ms.openlocfilehash: d26f55d9e037d86eac28e5cf21c56406eae5cc19
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 035952c1921443d86602eb94e3965acee86ae3e8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653002"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48203116"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>設計獨立的 SharePoint Online 小組網站
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
  **摘要：** 逐步執行獨立 SharePoint Online 小組網站的設計程式。
 
@@ -35,11 +38,11 @@ ms.locfileid: "46653002"
 
 預設會使用下列 SharePoint 群組建立每個 SharePoint Online 小組網站：
 
-- \<site name>成員
+- \<site name> 成員
 
-- \<site name>遊客
+- \<site name> 遊客
 
-- \<site name>業主
+- \<site name> 業主
 
 這些群組與 Microsoft 365 和 Azure Active Directory (AD) 群組不同，也是指派網站資源之許可權的基礎。
 
@@ -49,9 +52,9 @@ ms.locfileid: "46653002"
 
 |SharePoint 群組|權限層級|
 |---|---|
-|\<site name>成員|編輯|
-|\<site name>遊客|讀取|
-|\<site name>業主|完全控制|
+|\<site name> 成員|編輯|
+|\<site name> 遊客|讀取|
+|\<site name> 業主|完全控制|
 |
 
  **最佳作法：** 您可以建立額外的 SharePoint 群組和許可權層級。 不過，我們建議您針對隔離的 SharePoint Online 網站使用預設的 SharePoint 群組和許可權層級。
@@ -74,15 +77,15 @@ ms.locfileid: "46653002"
 
  **最佳作法：** 雖然您可以透過個別使用者帳戶管理許可權，但建議您改用單一 Azure AD 群組（稱為存取群組）。 這可簡化透過存取群組成員資格的版權管理，而不是管理每個 SharePoint 群組的使用者帳戶清單。
 
-Microsoft 365 的 Azure AD 群組不同于 Microsoft 365 群組。 Azure AD 群組會顯示在 Microsoft 365 系統管理中心中，其**類型**設為 [**安全性**]，而且沒有電子郵件地址。 Azure AD 群組可在下列專案中管理：
+Microsoft 365 的 Azure AD 群組不同于 Microsoft 365 群組。 Azure AD 群組會顯示在 Microsoft 365 系統管理中心中，其 **類型** 設為 [ **安全性** ]，而且沒有電子郵件地址。 Azure AD 群組可在下列專案中管理：
 
 - Active Directory Domain Services (AD DS)
 
-    這些是在您的內部部署 AD DS 基礎結構中建立並同步處理至您的 Microsoft 365 訂閱的群組。 在 Microsoft 365 系統管理中心中，這些群組的**狀態**為 [已**與 active directory 同步處理**]。
+    這些是在您的內部部署 AD DS 基礎結構中建立並同步處理至您的 Microsoft 365 訂閱的群組。 在 Microsoft 365 系統管理中心中，這些群組的 **狀態** 為 [已 **與 active directory 同步處理**]。
 
 - Office 365
 
-    這些是使用 Microsoft 365 系統管理中心、Azure 入口網站或 Microsoft PowerShell 建立的群組。 在 Microsoft 365 系統管理中心中，這些群組的**狀態**為**雲端**。
+    這些是使用 Microsoft 365 系統管理中心、Azure 入口網站或 Microsoft PowerShell 建立的群組。 在 Microsoft 365 系統管理中心中，這些群組的 **狀態** 為 **雲端**。
 
  **最佳作法：** 如果您使用的是 AD DS 內部部署並與 Microsoft 365 訂閱進行同步處理，請使用 AD DS 執行您的使用者和群組管理。
 
@@ -92,9 +95,9 @@ Microsoft 365 的 Azure AD 群組不同于 Microsoft 365 群組。 Azure AD 群�
 
 |SharePoint 群組|Azure AD 型訪問群組|權限層級|
 |---|---|---|
-|\<site name>成員|\<site name>成員|編輯|
-|\<site name>遊客|\<site name>觀眾|讀取|
-|\<site name>業主|\<site name>管理員|完全控制|
+|\<site name> 成員|\<site name> 成員|編輯|
+|\<site name> 遊客|\<site name> 觀眾|讀取|
+|\<site name> 業主|\<site name> 管理員|完全控制|
 |
 
  **最佳作法：** 雖然您可以使用 Microsoft 365 或 Azure AD 群組做為 SharePoint 群組的成員，我們還是建議您使用 Azure AD 群組。 Azure AD 群組（透過 AD DS 或 Microsoft 365 管理）可讓您更靈活地使用嵌套群組來指派許可權。
@@ -140,7 +143,7 @@ Microsoft 365 的 Azure AD 群組不同于 Microsoft 365 群組。 Azure AD 群�
 
 ## <a name="next-step"></a>下一步
 
-當您準備好在實際執行中建立和設定隔離的網站時，請參閱[部署隔離的 SharePoint Online 小組網站](deploy-an-isolated-sharepoint-online-team-site.md)。
+當您準備好在實際執行中建立和設定隔離的網站時，請參閱 [部署隔離的 SharePoint Online 小組網站](deploy-an-isolated-sharepoint-online-team-site.md)。
 
 ## <a name="see-also"></a>另請參閱
 
