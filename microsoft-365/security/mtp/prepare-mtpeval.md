@@ -15,14 +15,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 6b87b051d243c11fe2b32fccb50f3ad0d01d0c04
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 97e75b07721c180fe6b4df56c2d9cc819b610802
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956148"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195544"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>準備您的 Microsoft 威脅防護試用實驗室或試驗環境
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
@@ -83,7 +86,7 @@ ms.locfileid: "47956148"
 
 -   I = 此專案的通知
 
-| 姓名                 | 角色                                                                                                                                                                                                          | 動作 |
+| 名稱                 | 角色                                                                                                                                                                                                          | 動作 |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 輸入名稱和電子郵件 | **首席資訊安全性監察官 (CISO) ** *成為新技術部署之組織內充當主管的執行代表。*                                                  | 所以     |
 | 輸入名稱和電子郵件 | **網路防護運作中心的 Head (CDOC) ** *CDOC 小組的代表，以定義如何將此變更與客戶的安全性作業小組中的處理常式對齊。*       | 所以     |
@@ -124,14 +127,14 @@ ms.locfileid: "47956148"
 ## <a name="configuration-order"></a>設定順序
 下表指出 Microsoft 建議為您的試用實驗室或試驗環境部署設定 Microsoft 威脅防護元件的順序。
 
-| 元件                               | 說明                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 設定順序排名 |
+| 元件                               | 描述                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 設定順序排名 |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 進階威脅防護| Office 365 ATP 會保護您的組織免受電子郵件訊息、連結 (URLs) 和共同作業工具所帶來的惡意威脅。 <br> [瞭解更多資訊。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
+| Office 365 進階威脅防護| Office 365 ATP 會保護您的組織免受電子郵件訊息、連結 (URLs) 和共同作業工具所帶來的惡意威脅。 <br> [瞭解更多資訊。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                   |
 |Azure 進階威脅防護|Azure ATP 使用 Active Directory 信號來識別、偵測和調查您組織中的高級威脅、已遭破壞的身分識別，以及惡意的有問必答行為。 <br> [深入了解](https://docs.microsoft.com/azure-advanced-threat-protection/)。| 2  |
 |Microsoft Cloud App Security| Microsoft Cloud App Security 是雲端存取安全性經紀人 (CASB) ，可在多個雲端上運作。 它可提供豐富的知名度、控制資料旅行和複雜的分析，以在所有雲端服務之間識別及打擊 cyberthreats。 <br> [深入了解](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |個                   |
 |Microsoft Defender 進階威脅防護 | Microsoft Defender ATP 端點偵測和回應功能可提供近乎即時並可採取行動的進階攻擊偵測。 安全性分析人員可以有效地排定警示的優先順序、深入了解入侵的全貌，並採取回應動作來補救威脅。 <br> [瞭解更多資訊。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 |![階段2：設定](../../media/setup.png) <br>[階段2：設定](setup-mtpeval.md) | 設定您的 Microsoft 威脅防護試用實驗室或試驗環境
 |:-------|:-----|
 

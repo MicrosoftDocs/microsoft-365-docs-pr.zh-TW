@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 23f35c087d55208f7251a6b921cfe7532616742a
-ms.sourcegitcommit: 62a8c226422eac9c085cc886b4836b037f95ef6d
+ms.openlocfilehash: 7db1854534964928b622a7c2f47d07654472f048
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "47840754"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197962"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>取得高級搜尋的專家訓練
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 - Microsoft 威脅防護
@@ -32,7 +35,7 @@ ms.locfileid: "47840754"
 透過 _追蹤敵人_，以提升您的高級搜尋知識，獲得新安全性分析師和經驗豐富威脅 hunters 的網路廣播系列。 該數列會逐步引導您建立您自己複雜的查詢的基本方法。 先從第一個影片開始，或跳到更多符合您經驗水準的視頻。
 
 
-| 職稱 | 說明 | Watch | 查詢 | 
+| 職稱 | 描述 | Watch | 查詢 | 
 |--|--|--|--|
 | 第1集： KQL 基礎 | 這一部分涵蓋 Microsoft 威脅防護中的高級搜尋基本知識。 深入瞭解可用的高級搜尋資料和基本 KQL 語法及運算子。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14)  | [CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | 劇集2：聯接 | 繼續瞭解高級搜尋中的資料，以及如何將資料表結合在一起。 深入瞭解 `inner` 、 `outer` 、 `unique` 及 `semi` 加入，並瞭解預設 Kusto join 的細微差別 `innerunique` 。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33)  | [CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |

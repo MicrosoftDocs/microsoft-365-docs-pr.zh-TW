@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及自動發佈保留標籤，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 088a521089d34e74865c94b3cd147b02f8d812cb
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: dc525a9f7a2ea97f61f03320495eea737465cfd9
+ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816955"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "48171301"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤來保留或刪除內容
 
@@ -38,7 +38,7 @@ ms.locfileid: "47816955"
     
 - 使用者不再需要了解資料控管原則，他們可以專心工作。
     
-當內容包含敏感性資訊、關鍵字或[可訓練分類器](classifier-getting-started-with.md)的相符項目時，您可以自動對該內容套用保留標籤。
+當內容包含敏感性資訊、關鍵字或[可訓練分類器](classifier-get-started-with.md)的相符項目時，您可以自動對該內容套用保留標籤。
 
 根據下列條件自動套用保留標籤的程式：
 
@@ -174,9 +174,10 @@ ms.locfileid: "47816955"
 
 若要使用此選項自動套用標籤，SharePoint 網站和信箱必須有至少 10 MB 的資料。
 
-如需有關可訓練分類器的詳細資訊，請參閱[開始使用可訓練分類器 (預覽)](classifier-getting-started-with.md)。
+如需可訓練分類器的詳細資訊，請參閱[了解可訓練分類器 (預覽)](classifier-learn-about.md)(部分機器翻譯)。
 
-如需組態範例，請參閱[如何準備及使用內建分類器](classifier-using-a-ready-to-use-classifier.md#how-to-verify-that-a-built-in-classifier-will-meet-your-needs)。
+> [!TIP]
+> 如果您使用的是 Exchange 版可訓練分類器，請參閱最近發行的[如何在內容總管中重新定型分類器 (預覽)](classifier-how-to-retrain-content-explorer.md)(部分機器翻譯)。
 
 ## <a name="how-long-it-takes-for-retention-labels-to-take-effect"></a>保留標籤要多久才會生效
 

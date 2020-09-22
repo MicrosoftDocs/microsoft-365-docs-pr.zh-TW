@@ -19,14 +19,17 @@ ms.collection:
 - M365-security-compliance
 description: 深入瞭解 SharePoint 線上如何在使用者上傳的檔案中偵測病毒，並防止使用者下載或同步處理檔案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0e58fa8dc8b30c5bc6ff5db1508d8b7f9189b73a
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 8c65db566f165939d72429bcd61b7d0a880814e0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653506"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196508"
 ---
 # <a name="virus-detection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint 線上、OneDrive 和 Microsoft 小組中的病毒偵測
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 Microsoft 365 可以偵測使用者上傳至 SharePoint 線上、OneDrive 和 Microsoft 小組的檔案，以協助保護您的環境免受惡意軟體的攻擊。 檔案在上傳後可能會進行病毒掃描。 若發現檔案遭到感染，則會設定屬性，讓使用者無法下載或同步處理檔案。
 

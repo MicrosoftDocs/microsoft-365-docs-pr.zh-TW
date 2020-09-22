@@ -14,14 +14,17 @@ search.appverid: MET150
 description: 威脅修正
 appliesto:
 - Microsoft Threat Protection
-ms.openlocfilehash: 2542f7af8a34088a79aae8a14f7ccdb8ea8fd121
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 526a88409514127d4fb484f88632bf3185004854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547237"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197438"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修復 Office 365 中傳遞的惡意電子郵件
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 修正是指對威脅採取 proscribed 動作。 傳送給您組織的惡意電子郵件可以由系統清除，不論是透過零小時自動清除 (ZAP) ，還是由安全小組透過修復動作（如 *移至 [收件*匣]、[ *移至垃圾*郵件]、[ *移至刪除的郵件*]、[ *虛刪除*] 或 [ *實刪除*]）來清除。 Office Advanced 威脅防護 (Office ATP) P2/E5 可讓安全小組透過手動和自動調查來修正電子郵件和共同作業功能的威脅。
 

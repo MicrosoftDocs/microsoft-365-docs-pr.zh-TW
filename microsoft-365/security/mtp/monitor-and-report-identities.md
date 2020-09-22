@@ -15,14 +15,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b29e91527f4c9cf6fd466ef730c9c4e9552b10e
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: d3eacb8804871d0371ddabbd75c78875a8b49f0d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866880"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196140"
 ---
 # <a name="identity-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 安全中心的身分識別監控和報告
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 監視組織中的身分識別，並追蹤可疑或風險的行為。 在**報告**的身分**識別類別中**，您可以追蹤：
 

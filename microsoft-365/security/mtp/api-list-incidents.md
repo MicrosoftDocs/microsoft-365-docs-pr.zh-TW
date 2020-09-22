@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 54f5ba640ecc175e78c7087df8016e9b715f17f7
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: 9defc9c0f8fa04e019c0108ca0f4111de54edb5f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775108"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195375"
 ---
 # <a name="list-incidents-api-in-microsoft-threat-protection"></a>在 Microsoft 威脅防護中列出事件 API
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 適用於：****
 
@@ -136,7 +139,7 @@ GET /api/incidents
 | riskScore                                 | 裝置的風險分數。                                                                                                                                                                                                                                                                                                                                                                       | 高                                                                                                                                                                                                                                              |
 | 實體                                  | 已識別為特定警示之一部分或與其相關的所有實體。                                                                                                                                                                                                                                                                                | \[\] (查看下列實體欄位的詳細資料)                                                                                                                                                                                                          |
 | **實體格式**                             |                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                   |
-| entityType                                | 識別為屬於指定警示或與其相關的實體。<br>屬性值包括： *User*， *Ip*， *Url*， *File*， *Process*， *MailBox*， *MailMessage*， *MailCluster*， *Registry*                                                                                                                                                                                                     | User                                                                                                                                                                                                                                              |
+| entityType                                | 識別為屬於指定警示或與其相關的實體。<br>屬性值包括： *User*， *Ip*， *Url*， *File*， *Process*， *MailBox*， *MailMessage*， *MailCluster*， *Registry*                                                                                                                                                                                                     | 使用者                                                                                                                                                                                                                                              |
 | sha1                                      | 當 entityType 為 *File*時可用。<br>與檔案或處理常式相關聯之警示的檔案雜湊。                                                                                                                                                                                                                                                                                    | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd                                                                                                                                                                                                          |
 | sha256                                    | 當 entityType 為 *File*時可用。<br>與檔案或處理常式相關聯之警示的檔案雜湊。                                                                                                                                                                                                                                                                                    | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043                                                                                                                                                                                  |
 | 檔案名                                  | 當 entityType 為 *File*時可用。<br>與檔案或處理常式相關聯的警示檔案名                                                                                                                                                                                                                                                                                    | Detector.UnitTests.dll                                                                                                                                                                                                                            |
@@ -693,5 +696,5 @@ GET https://api.security.microsoft.com/api/incidents
 ```
 
 ## <a name="related-topic"></a>相關主題
-- [事件 APIs](api-incident.md)
+- [事件 API](api-incident.md)
 - [更新事件](api-update-incidents.md)

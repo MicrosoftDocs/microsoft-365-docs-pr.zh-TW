@@ -19,14 +19,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1883f61f50dad9b601329369bf180ddecba70138
-ms.sourcegitcommit: 3b2fdf159d7dd962493a3838e3cf0cf429ee2bf2
+ms.openlocfilehash: 46d82220851c78525bd0b1ee00c4abae69c0304f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928959"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196308"
 ---
 # <a name="investigate-incidents-in-microsoft-threat-protection"></a>調查 Microsoft 威脅防護中的事件
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 **適用於：**
 
@@ -96,7 +99,7 @@ Microsoft 威脅防護可彙總各種裝置、使用者和信箱的所有相關�
 
 ## <a name="investigations"></a>調查
 
-選取 [**調查**]，以查看此事件中的警示所觸發的所有自動調查。 調查將執行修復動作或等待分析人員核准動作，具體取決於您如何設定自動化調查以在 Microsoft Defender ATP 和 Office 365 進階威脅防護中執行。
+選取 [ **調查** ]，以查看此事件中的警示所觸發的所有自動調查。 調查將執行修復動作或等待分析人員核准動作，具體取決於您如何設定自動化調查以在 Microsoft Defender ATP 和 Office 365 進階威脅防護中執行。
 
 ![事件調查索引標籤影像](../../media/incident-investigations.png)
 

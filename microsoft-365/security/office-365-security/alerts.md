@@ -19,16 +19,19 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何使用 Office 365 安全性 & 規範中心中的 [提醒] 功能，以查看及管理提醒，包括管理高級提醒。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c51d5d58b1af64a5066e6176fb2533c91bcf6f01
-ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
+ms.openlocfilehash: 2e53d61b2bbbf241683379916362a9d33fa5ace8
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "46653350"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197652"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>安全性 & 規範中心的警示
 
-使用安全性 & 合規性中心中的警示功能，以查看及管理組織的提醒，包括在[Microsoft Cloud App Security 概要](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)中管理高級提醒。
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+使用安全性 & 合規性中心中的警示功能，以查看及管理組織的提醒，包括在 [Microsoft Cloud App Security 概要](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)中管理高級提醒。
 
 ## <a name="how-to-get-to-the-alerts-features"></a>如何取得警示功能
 
@@ -40,26 +43,26 @@ ms.locfileid: "46653350"
 
 2. 使用您的公司或學校帳戶登入。
 
-3. 在左窗格中，按一下 [**警示**] 以查看警示功能。
+3. 在左窗格中，按一下 [ **警示** ] 以查看警示功能。
 
 ### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a>使用應用程式啟動器移至安全性 & 規範中心
 
 1. 使用您的公司或學校帳戶登入。
 
-2. 按一下左上角的應用程式啟動器，然後按一下 [**安全性 & 合規性**]。
+2. 按一下左上角的應用程式啟動器，然後按一下 [ **安全性 & 合規性**]。
 
     找不到您要的 App 嗎？請從應用程式啟動器選取 [所有 App]**** 以查看依字母順序排序的可用 Office 365 App 清單。您可從該處搜尋特定的 App。
 
-3. 在左窗格中，按一下 [**警示**] 以查看警示功能。
+3. 在左窗格中，按一下 [ **警示** ] 以查看警示功能。
 
 ## <a name="alerts-features"></a>警示功能
 
-下表說明安全性 & 合規性中心內的**警示**所提供的工具。
+下表說明安全性 & 合規性中心內的 **警示** 所提供的工具。
 
 ****
 
 |工具|描述|
 |---|---|
 |[管理提醒](../../compliance/create-activity-alerts.md)|當使用者在 Office 365 中執行特定活動時，可使用活動提醒將電子郵件通知傳送給自己或其他管理員。 活動警示類似于搜尋審計記錄檔的事件，只是當您已建立警示的事件發生時，您會收到電子郵件。|
-|[管理高級提醒](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|使用 Office 365 Cloud App Security 的「**管理高級提醒**」功能，設定可在 Office 365 中提醒您可疑和反常活動的原則。 當您收到警示後，您可以調查可能有問題的情況，並視需要採取行動以解決安全性問題。|
+|[管理高級提醒 ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|使用 Office 365 Cloud App Security 的「 **管理高級提醒** 」功能，設定可在 Office 365 中提醒您可疑和反常活動的原則。 當您收到警示後，您可以調查可能有問題的情況，並視需要採取行動以解決安全性問題。|
 |

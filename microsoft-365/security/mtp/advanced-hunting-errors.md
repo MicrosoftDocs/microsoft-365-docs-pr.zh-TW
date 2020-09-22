@@ -17,14 +17,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5bc49ddfa93a06bc8f3d84ce7b8492681ee65cb7
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 20133e0f5dda3abc583adf66cc20a1d8fde190cf
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950904"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197998"
 ---
 # <a name="handle-advanced-hunting-errors"></a>處理高級搜尋錯誤
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 「高級搜尋」顯示錯誤，以通知語法錯誤，以及每當查詢命中 [預先定義的限制](advanced-hunting-limits.md)。 請參閱下表，以取得如何解決或避免錯誤的秘訣。 
 

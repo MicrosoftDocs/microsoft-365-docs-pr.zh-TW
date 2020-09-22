@@ -19,14 +19,17 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: bd5bf8533d38337c063acdf0dda073e4961e416a
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: f57fc83f9102e5eeea61deaaadc17203bad030ac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46867242"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195532"
 ---
 # <a name="create-and-track-servicenow-tickets-in-the-microsoft-365-security-center"></a>在 Microsoft 365 的安全性中心建立及追蹤 ServiceNow 入場券
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+
 
 [Microsoft 365 的安全性中心](overview-security-center.md)已增強，可在 ServiceNow 中以本機方式建立及追蹤票證。 [深入瞭解 ServiceNow](https://www.servicenow.com/)
 

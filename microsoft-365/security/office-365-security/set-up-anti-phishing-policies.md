@@ -16,14 +16,17 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 和 Office 365 的高級威脅防護 (Office 365 ATP) 中可用的反網路釣魚原則。
-ms.openlocfilehash: 06307efdc1df03d918e7f0b48c42f6e8ecb1dd79
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950601"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48195912"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
 
 使用 Exchange Online 信箱、獨立 Exchange Online Protection (EOP) 組織（沒有 Exchange Online 信箱）和 Office 365 高級威脅防護 (Office 365 ATP) 組織，可在 Microsoft 365 組織中取得設定反網路釣魚保護設定的原則。
 
@@ -142,10 +145,10 @@ ATP 反網路釣魚原則僅可用於具有 Office 365 ATP 的組織。 例如�
 
 模仿是指寄件者或寄件者的電子郵件網域與實際寄件者或網域類似的位置：
 
-- 網域 contoso.com 的模仿範例是ćóntoso.com。
-- 使用者 michelle@contoso.com 的模仿範例是 michele@contoso.com。
+- contoso.com 這個網域的網域模擬例子是 ćóntoso.com。
+- 使用者 michelle@contoso.com 的模擬例子是 michele@contoso.com。
 
-另一個模擬的網域可能會被視為合法 (已註冊的網域、設定的電子郵件驗證記錄等等 ) ，但其目的是欺騙收件者。
+另外，模擬網域可能被視為合法 (註冊網域、設定的電子郵件驗證記錄等)，惟其目的是欺騙收件者。
 
 下列模擬設定僅適用于 ATP 反網路釣魚原則中：
 
