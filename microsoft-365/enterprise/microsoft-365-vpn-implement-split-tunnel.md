@@ -3,7 +3,7 @@ title: 實作 Office 365 的 VPN 分割通道
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 9/21/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何實作 Office 365 的 VPN 分割通道
-ms.openlocfilehash: bfdc11ffe4244ec0ac83bb1c0470476aafeec939
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171419"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214857"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>實作 Office 365 的 VPN 分割通道
 
@@ -37,7 +37,7 @@ ms.locfileid: "48171419"
 
 使用強制通道 VPN 來連線到分散式和效能敏感型雲端應用程式並不太好，但是從安全性的觀點來看，有些企業可能為了維持現狀而接受了其負面影響。 以下是這種情況的範例圖表：
 
-![分割通道 VPN 設定](../media/vpn-split-tunneling/vpn-ent-challenge.png)
+![分割通道 VPN 設定](../media/vpn-split-tunneling/enterprise-network-traditional.png)
 
 此問題已在數年內持續成長，許多客戶都回報網路流量模式重大轉變。 用於保留內部部署的流量現在會連接至外部雲端端點。 許多 Microsoft 客戶回報其先前大約有 80% 的網路流量送至某個內部來源 (在上圖中以虛線表示)。 在 2020 年，該數字現在大約為 20% 或更低，因為他們已將主要工作負載移轉到雲端，這些趨勢在其他企業並不常見。 經過一段時間，隨著雲端旅程進展，上述模型會變得益加麻煩且不永續，並使組織在移至雲端優先的世界時不太靈活。
 
@@ -95,7 +95,7 @@ Microsoft 建議用於最佳化遠端工作者連線的建議策略，著重於�
 
 下圖說明建議 VPN 分割通道解決方案的運作方式：
 
-![分割通道 VPN 解決方案詳細資料](../media/vpn-split-tunneling/vpn-split-detail.png)
+![分割通道 VPN 解決方案詳細資料](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. 找出要最佳化的端點
 
@@ -109,9 +109,6 @@ Microsoft 建議用於最佳化遠端工作者連線的建議策略，著重於�
 - 屬於頻寬和/或延遲敏感型
 - 能夠擁有服務中提供 (而非內嵌在網路上) 的必要安全性元素
 - 大約佔送至 Office 365 服務的 70-80% 流量
-
->[!NOTE]
->Microsoft 已努力暫停對 Office 365 的 **[最佳化]** 端點進行變更 (至少在 **2020 年 6 月 30 日**之前)，讓客戶能專注處理其他挑戰，而不需在最初實作後就要維護端點允許清單。 本文將會更新，以反映未來的任何變更。
 
 如需有關 Office 365 端點及其分類和管理方式的詳細資訊，請參閱[管理 Office 365 端點](managing-office-365-endpoints.md)。
 

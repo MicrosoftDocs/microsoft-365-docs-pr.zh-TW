@@ -115,8 +115,6 @@
               href: azure-expressroute.md
             - name: Office 2013 和 Office 2016 用戶端應用程式的新式驗證方式
               href: modern-auth-for-office-2013-and-2016.md
-        - name: 租用戶間共同作業
-          href: microsoft-365-inter-tenant-collaboration.md
         - name: 客戶端應用程式支援
           items:
             - name: 憑證型驗證
@@ -271,8 +269,12 @@
       items:
         - name: 新增網域
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
-        - name: 設定指南
-          href: setup-guides-for-microsoft-365.md
+    - name: 多個租用戶
+      items:
+        - name: 租用戶間共同作業
+          href: microsoft-365-inter-tenant-collaboration.md
+        - name: 跨租用戶信箱移轉
+          href: cross-tenant-mailbox-migration.md
     - name: 多地理位置
       items:
         - name: Microsoft 365 多地理位置

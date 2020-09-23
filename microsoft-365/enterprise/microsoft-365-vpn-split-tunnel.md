@@ -3,7 +3,7 @@ title: 概觀：使用 VPN 分割通道搭配 Office 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2020
+ms.date: 9/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 使用 VPN 分割通道搭配 Office 365 將遠端使用者的 Office 365 連線能力最佳化的指引。
-ms.openlocfilehash: aad7932abb6b96a518b069ec24e836d2b5d234a1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: cda9333c7edbcc323544290c2ba946a8464f9c57
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695645"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214750"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化
 <!---
@@ -89,16 +89,13 @@ Office 365 將 Office 365 所需的端點分為三個類別：**最佳化**、**
 
 對於服務內不同層的這些端點，DLP、AV 防護、驗證和存取控制等安全性元素都能以更有效的方式提供。 隨著我們使大量流量從 VPN 解決方案分流出來，就能釋放 VPN 容量給仍然倚賴該解決方案的商務關鍵性流量。 在許多情況下，應該也能免除經歷冗長且昂貴升級方案來處理這種新運作方式的需求。
 
-![分割通道 VPN 設定](../media/vpn-split-tunneling/vpn-model-2.png)
+![分割隧道 VPN 設定詳細資料](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _圖 3：VPN 分割通道解決方案，具有直接傳送到服務的明確 Office 365 例外狀況。不管目的地為何，所有其他流量都被迫回到公司網路。_
 
 從安全性的觀點來看，Microsoft 有一系列的安全性功能，可用來提供類似內部部署安全性堆疊的內嵌檢查所提供的安全性，或甚至更強的安全性。 Microsoft 安全小組的部落格文章[在今日獨特的遠端工作情境中，安全專業人員與 IT 達到現代安全控制的另一種方法](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) (英文) 清楚地概括說明可用的功能，而您可在這篇文章中找到更多詳細的指引。 如需有關 Microsoft 實作 VPN 分割通道的詳細資訊，另請參閱[在 VPN 上執行：Microsoft 如何使遠端員工保持聯繫](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/?elevate-lv) (英文)。
 
 在許多情況下，此實作可在幾小時內達成，讓組織得以迅速轉向全規模遠距工作來快速解決其所面臨的最迫切問題。 如需 VPN 分割通道實作指引，請參閱[實作 Office 365 的 VPN 分割通道](microsoft-365-vpn-implement-split-tunnel.md)。
-
->[!NOTE]
->Microsoft 已努力暫停對 Office 365 的 **[最佳化]** 端點進行變更 (至少在 **2020 年 6 月 30 日**之前)，讓客戶能專注處理其他挑戰，而不需在最初實作後就要維護端點允許清單。
 
 ## <a name="related-topics"></a>相關主題
 

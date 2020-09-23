@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: a51cfba962ff884afa634473c0523e49a92a56f5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc800d6f7a63e34f83b089fdea41b68cbf9134da
+ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200792"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48214912"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
@@ -33,7 +33,7 @@ Microsoft 365 系統管理中心現在包含從您的 Microsoft 365 租使用者
 
 您可能需要代表您的組織加入此功能的公開預覽。 接受通常會立即發生，然後您就會看到 [網路連接] 頁面。 
 
-流覽至 [網路連線] 頁面時，您會看到 [一覽表] 窗格，其中包含全域網路效能對應、整個承租人範圍的網路評估，以及目前問題的清單。 若要存取此頁面，您必須是 Microsoft 365 內組織的管理員。 報告讀取器系統管理角色對此資訊具有「讀取」許可權。 若要設定網路連線的位置和其他元素，系統管理員必須是伺服器管理員角色的一部分，例如服務支援系統管理員角色。 您可以從 [概述] 中深入查看特定的網路效能度量和依位置的問題。 如需詳細資訊，請參閱 [Microsoft 365 系統管理中心的網路效能概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
+流覽至 [網路連線] 頁面時，您會看到 [一覽表] 窗格，其中包含全域網路效能對應、整個承租人範圍的網路評估，以及目前問題的清單。 若要存取此頁面，您必須是 Microsoft 365 內組織的管理員。 報告讀取器系統管理角色對此資訊具有「讀取」許可權。 若要設定網路連線的位置和其他元素，系統管理員必須是伺服器管理員角色的一部分，例如服務支援系統管理員角色。 您可以從 [概述] 中深入查看特定的網路效能度量和依位置的問題。 如需詳細資訊，請參閱 [Microsoft 365 系統管理中心的網路連線概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
 ## <a name="pre-requisites-for-network-connectivity-assessments-to-appear"></a>顯示網路連線評估的先決條件
 
