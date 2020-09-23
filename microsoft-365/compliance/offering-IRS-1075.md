@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 83c66bfce39698cfea7833433d337fe7411e0ebe
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: bf1297fb955a2f66de0d6e5677668952c8808c5c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416343"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208375"
 ---
 # <a name="us-internal-revenue-service-publication-1075"></a>美國內年收入服務出版物1075
 
@@ -75,6 +75,10 @@ Microsoft 會定期監視其安全性、隱私權、運作控制措施和 NIST 8
 **我可以使用 Azure 或 Office 365 公用雲端環境，是否仍然相容于 IRS 1075？**
 
 否。 可以儲存並處理的唯一環境是 Azure 政府或 Office 365 美國政府。 政府客戶必須符合資格的要求才能使用這些環境。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

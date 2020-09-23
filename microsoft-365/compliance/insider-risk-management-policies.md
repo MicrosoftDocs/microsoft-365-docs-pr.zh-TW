@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: fa38b81ff02729f1bd874c1ac286712b0a6bbb7a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 9ff029904a34291f4131f2013ffe30b73aa3233c
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416807"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208779"
 ---
 # <a name="insider-risk-management-policies"></a>有問必答風險管理原則
 
@@ -71,7 +71,7 @@ ms.locfileid: "47416807"
 
 從 **資料洩漏** 範本所建立的每個內幕人士風險管理原則，只能有一個指派的 DLP 原則。 請考慮建立專用的 DLP 原則，將您要偵測的不同活動和作用中的事件，當作使用 **資料洩漏** 範本的有問必答風險原則的觸發事件。
 
-如需為貴組織設定 DLP 原則的逐步指示，請參閱[建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)主題。
+如需為組織設定 DLP 原則的逐步指引，請參閱 [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md) 文章。
 
 ### <a name="data-leaks-by-priority-users-preview"></a>依優先順序的使用者 (預覽的資料洩漏) 
 
@@ -115,6 +115,9 @@ ms.locfileid: "47416807"
 
 ### <a name="offensive-language-in-email"></a>電子郵件中的冒犯性語言
 
+>[!IMPORTANT]
+>從2020年10月16日開始，您將無法再使用此範本建立原則。 使用此範本的任何作用中原則，必須在2021年1月後永久移除。 我們會取代支援此範本的冒犯性語言內建分類程式，因為它所產生的是大量的誤報。 為了處理攻擊性語言的風險問題，我們建議使用 Microsoft 365 [通訊相容性](communication-compliance.md) 原則。 如需內建分類器的詳細資訊，請參閱 [開始使用 trainable 類元](classifier-get-started-with.md)。
+
 偵測和採取動作，以防止冒犯性和濫用行為成為預防風險的重要元件。 Microsoft 365 中內建的分類器會從組織中的 Exchange Online 信箱傳送電子郵件訊息，以取得不同類型的相容性問題。 這些分類器使用人工智慧和關鍵字的組合，識別可能違反反騷擾原則的電子郵件中的語言。 使用此範本快速建立原則，使用這些分類器自動偵測可能被視為濫用或冒犯性的電子郵件內容。 有問必答風險管理使用的分類器掃描已傳送的電子郵件訊息，以包含冒犯性語言的英文字詞和 sentiment。
 
 ### <a name="policy-template-prerequisites-and-triggering-events"></a>原則範本必要條件及觸發事件
@@ -139,7 +142,7 @@ ms.locfileid: "47416807"
 
 有問必答風險管理原則支援針對內容指定較高的優先順序，具體取決於其儲存位置或其分類方式。 將內容指定為優先順序，可增加任何關聯活動的風險分數，進而會增加產生高嚴重性警示的機率。 不過，除非相關的內容包含內建或自訂的機密資訊類型，或是在原則中指定為優先順序，否則有些活動根本不會產生警示。
 
-例如，您的組織擁有高度機密專案的專屬 SharePoint 網站。 此 SharePoint 網站中資訊的資料洩漏可能會危及專案，並對其成功產生重大影響。 在資料洩漏原則中優先使用此 SharePoint 網站，可自動增加符合資格活動的風險分數。 這會增加這些活動產生「有問必答風險」警示的可能性，並會提升警示的嚴重性等級。
+例如，您的組織擁有高度機密專案的專屬 SharePoint 網站。 此 SharePoint 網站中資訊的資料洩漏可能會危及專案，並對其成功產生重大影響。 在資料洩漏原則中優先使用此 SharePoint 網站，可自動增加符合資格活動的風險分數。 這種優先順序會增加這些活動產生「有問必答風險」警示的可能性，並會提升警示的嚴重性等級。
 
 當您在原則嚮導中建立「有問必答風險管理」原則時，可以選擇下列優先順序：
 

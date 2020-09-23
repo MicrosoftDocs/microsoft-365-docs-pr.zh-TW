@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 深入瞭解 Microsoft 365 解決方案目錄（包括其包含的內容，以及如何進行）及後續的步驟。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ff445711dfd57ec69305c3f8cc7d01e05a66a1cc
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: a560193bf7ee2911b90332f84eef2d60027cbbf9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132167"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198356"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解決方案目錄
 
@@ -93,7 +93,7 @@ Microsoft 365 的規範解決方案是整合功能的集合，您可以用來協
 
 ## <a name="next-steps"></a>後續步驟
 
-- **查看您的 Microsoft 合規性分數**，這是一種個人化且以風險為基礎的分數，可協助您瞭解貴組織遵循重要標準和規定的狀態。 它提供您可以採取以加強整體符合性狀況的建議動作，並提供工作流程功能，協助您有效地執行這些動作。 若要深入瞭解，請參閱 [相容性分數 (預覽) ](compliance-score.md)。
+- **請造訪 Microsoft 合規性管理員**，協助您瞭解組織遵循重要標準和規定的狀態。 它提供您可以採取以加強整體符合性狀況的建議動作，並提供工作流程功能，協助您有效地執行這些動作。 若要深入瞭解，請參閱 [合規性管理員](compliance-manager.md)。
 
 - **設定「有問必答風險管理」原則** ，協助將內部風險降至最低，並讓您偵測、調查和採取行動，以應對組織中的危險活動。 請參閱「 [有問必答風險管理](insider-risk-management.md)」。
 

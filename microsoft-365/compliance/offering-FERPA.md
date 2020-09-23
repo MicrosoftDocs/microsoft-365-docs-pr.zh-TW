@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cbf8b04fe4e3d301d3ee79c09895093f97c2e785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 89f7e0ca95144e783b70e23c21008dcc46328522
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417347"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208455"
 ---
 # <a name="family-educational-rights-and-privacy-act-ferpa"></a>家庭教育權利和隱私權法案 (FERPA) 
 
@@ -53,7 +53,7 @@ FERPA 不需要或認可審核或其他憑證，所以任何受制于 FERPA 的�
 - Azure DevOps Services
 - Windows Defender ATP
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 FERPA 不需要或認可的審計或認證。
 
@@ -67,6 +67,10 @@ FERPA 不需要或認可的審計或認證。
 
 - [聯邦收銀機： FERPA Final Rule](https://aka.ms/ferpa-reg) (十二月 2011) 
 - [FERPA 父母的一般指導方針](https://www2.ed.gov/policy/gen/guid/fpco/ferpa/parents.html)
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0ff270c27c4b3d1a376b8b9ddefd1177cdd7823f
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 03a48dc757b8028fe0391bdc8f0469b8632f0f61
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417327"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208645"
 ---
 # <a name="australian-government-information-security-registered-assessor-program-irap"></a>澳大利亞政府資訊安全性註冊 Assessor 程式 (IRAP) 
 
@@ -50,7 +50,7 @@ Microsoft 在澳大利亞的服務評估涵蓋四個可用的 Azure 地區。 �
 
 針對每個評估，Microsoft 共同致力於以 ACSC 認證的 IRAP assessor，檢查 Microsoft IT 運作小組所用的安全性控制和程式、實體資料中心、入侵偵測、密碼編譯、跨網域和網路安全性、存取控制，以及範圍內服務的資訊安全性風險管理。 IRAP 評估發現 Microsoft 系統架構是以合理的安全性原則為基礎，且適用的澳大利亞政府資訊安全性手冊 (ISM) 控制項已到位，且在我們評估的服務內完全有效。
 
-ISM 所用的風險管理架構會從 [本國標準和技術研究院 (NIST) 特殊出版物 (SP) 800-37 Rev。 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final)，「資訊系統和組織的風險管理架構：安全性和隱私權的系統生命週期」方法。 在此風險管理架構中，您可以使用各種風險管理標準（例如 [國際標準組織 (ISO) 31000:2018、風險管理–指導方針](https://www.iso.org/standard/65694.html)）來識別安全性控制風險及選擇。 ISM 所用的風險管理架構廣泛，包含六個步驟：
+ISM 所用的風險管理架構會從 [本國的標準和技術研究院 (NIST) 特殊出版物 (SP) 800-37 Rev。 2](https://csrc.nist.gov/publications/detail/sp/800-37/rev-2/final)，「資訊系統和組織的風險管理架構」：安全性和隱私權的系統生命週期。 ' 在此風險管理架構中，您可以使用各種風險管理標準（例如 [國際標準組織 (ISO) 31000:2018、風險管理-指導方針](https://www.iso.org/standard/65694.html)）來識別安全性控制風險及選擇。 ISM 所用的風險管理架構廣泛，包含六個步驟：
 
 - 定義系統
 - 選取安全性控制
@@ -86,9 +86,9 @@ IRAP 適用于所有使用雲端服務的澳大利亞聯邦、州及地方政府
 - [誰提供 IRAP 訓練？](https://acsc.gov.au/infosec/irap/training.htm)
 - [合規性與不符合性需求資訊](https://acsc.gov.au/infosec/irap/compliance.htm)
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
 
-[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)後，請從**範本**下拉式功能表中選取預先設定的[IRAP 範本](https://go.microsoft.com/fwlink/?linkid=2117913)，以協助您的組織符合此法規的需求。
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

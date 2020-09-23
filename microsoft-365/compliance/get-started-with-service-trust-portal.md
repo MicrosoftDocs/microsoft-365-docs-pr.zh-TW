@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: 瞭解如何存取及使用 Microsoft 服務信任入口網站，以協助安全性、隱私權和規範作法。
-ms.openlocfilehash: 40c80c0256f730784373a0ff96474d02dbf175c5
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a3a46884a41be31779b82a74bc2b6750dea697c5
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547471"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197760"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>開始使用 Microsoft 服務信任入口網站
 
@@ -68,11 +68,8 @@ Microsoft 服務信任入口網站提供各種內容、工具及其他有關 Mic
 
 ### <a name="compliance-manager"></a>合規性管理員
 
-合規性管理員是以工作流程為基礎的風險評估工具，可協助您追蹤、指派及驗證組織的與 Microsoft 雲端服務相關的規章遵循活動，例如 Microsoft 365、Dynamics 365 和 Azure。 使用合規性管理員管理雲端的共用責任模型內的規章遵循。 視您想要使用的合規性管理員版本而定，請參閱下列文章以取得詳細資訊：
-
-- [Microsoft 合規性管理員 (傳統) ](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-
-- [Microsoft 合規性管理員 (預覽) ](compliance-manager-overview.md)
+> [!IMPORTANT]
+> 合規性管理員已從服務信任入口網站移至 [Microsoft 365 規範中心](https://compliance.microsoft.com/)內的新位置。 所有客戶資料都已移至新位置，因此您可以繼續使用合規性管理員而不會中斷。 如需設定資訊，請參閱 [合規性管理員檔](compliance-manager.md) ，瞭解新功能。 雖然傳統版本的合規性管理員仍保留在服務信任入口網站中，但鼓勵所有使用者使用 Microsoft 365 規範中心的合規性管理員。
 
 ### <a name="trust-documents"></a>信任文件
 
@@ -110,15 +107,9 @@ Microsoft 服務信任入口網站提供各種內容、工具及其他有關 Mic
 
 移至 [ **更多 > 管理員** ]，以存取只有全域管理員帳戶才能使用的系統管理功能。 只有當您以全域系統管理員身分登入時，才會顯示此選項。 系統 **管理** 下拉式功能表中有兩個選項：
 
-- **設定：** 此頁面可讓您指定以角色為基礎的訪問 (，稱為「合規性管理員」) 的 *使用者角色* 。  如需詳細資訊，請參閱：
+- **設定：** 此頁面可讓您將合規性管理員的使用者角色指派 (傳統) 。
 
-  - [合規性管理員 (傳統) 中的許可權 ](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control)
-
-  - [合規性管理員中的許可權 (預覽) ](compliance-manager-overview.md#permissions)
-
-  您也可以設定合規性管理員中的動作是否要根據安全分數中相同動作的狀態進行更新。 只有在您使用最新版本的合規性管理員時，才支援此功能。 如需詳細資訊，請參閱 [控制自動安全分數更新](working-with-compliance-manager.md#controlling-automatic-secure-score-updates)。
-
-- **使用者隱私權設定：** 此頁面可讓您在特定使用者的合規性管理員中，匯出包含交辦事項專案指派的報表。 您也可以將所有動作專案重新指派給不同的使用者，並從指定的使用者移除任何已指派的動作專案。 如需詳細資訊，請參閱 [使用者隱私權設定](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#user-privacy-settings)。
+- **使用者隱私權設定：** 此頁面可讓您在特定使用者 (傳統) 中，匯出包含合規性管理員中的動作專案指派的報表。 您也可以將所有動作專案重新指派給不同的使用者，並從指定的使用者移除任何已指派的動作專案。
 
 ### <a name="search"></a>搜尋
 
@@ -126,9 +117,9 @@ Microsoft 服務信任入口網站提供各種內容、工具及其他有關 Mic
 
 ![服務信任入口網站 - 套用篩選器搜尋文件](../media/86b754e1-c63c-4514-89ac-d014bf334140.png)
 
-根據預設，第 th 搜尋會傳回檔結果。 您可以使用下拉式清單來縮小所顯示的檔案清單，以篩選結果。 您可以使用多個篩選器縮小檔案清單。 篩選器包含特定的雲端服務、規範類別或安全性作法、地區和行業。 按一下 [檔案名稱] 連結，以下載檔案。
+根據預設，搜尋會傳回檔結果。 您可以使用下拉式清單來縮小所顯示的檔案清單，以篩選結果。 您可以使用多個篩選器縮小檔案清單。 篩選器包含特定的雲端服務、規範類別或安全性作法、地區和行業。 按一下 [檔案名稱] 連結，以下載檔案。
 
-若要在合規性管理員中列出評估與搜尋字詞相關的控制項，請按一下 [ **合規性管理員**]。 搜尋結果會顯示評估的建立日期、評估群組的名稱、適用的 Microsoft 雲端服務，以及控制項是 Microsoft 或客戶管理的。 按一下控制項的名稱，以在合規性管理員的評估中查看該控制項。
+若要在合規性管理員中列出評估 (傳統) 相關的搜尋字詞，請按一下 [ **合規性管理員**]。 搜尋結果會顯示評估的建立日期、評估群組的名稱、適用的 Microsoft 雲端服務，以及控制項是 Microsoft 或客戶管理的。 按一下控制項的名稱，以在合規性管理員 (傳統) 中的評估中查看該控制項。
 
 ![服務信任入口網站 - 搜尋合規性管理員控制項](../media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
 

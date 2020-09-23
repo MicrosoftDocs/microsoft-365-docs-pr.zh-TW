@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fb964bd6dcf229f362476b68ad87d05053e87f74
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 079fb69eb4d8fd41b9493d8bf992084640f2835a
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417747"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208655"
 ---
 # <a name="australian-prudential-regulation-authority-apra"></a>澳大利亞 Prudential 規章核證機關 (APRA) 
 
@@ -87,6 +87,10 @@ CPS 234 會密切反映核心 Microsoft 安全性框架：「保護」、「偵�
 **是否允許在澳大利亞以外的資料傳輸？**
 
 是。 一般隱私權法規 (適用于所有部門，而不只是金融機構) 在某些情況下允許以澳大利亞以外的方式轉讓。 Microsoft 同意以澳大利亞隱私權原則為依據的合約，讓您在使用 Microsoft 雲端服務時，允許從澳大利亞以外的資料轉移。 不過，我們的許多澳大利亞金融服務客戶都利用了我們澳大利亞資料中心提供的雲端服務，我們會在澳大利亞地理位置進行特定的合約承諾，以存放資料類別的資料。 在 [規範檢查清單](https://www.microsoft.com/cms/api/am/binary/RE3ez0C)中，將會進一步列出這些承諾。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

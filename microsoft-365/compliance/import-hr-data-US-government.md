@@ -15,14 +15,14 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 美國政府雲端的系統管理員可以設定資料連線器，將員工資料從組織的人力資源 (HR) 系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 30a3730bcb2d4f41df28c47fdb9ab35e9d012540
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: c1382cd94fcbba1d2ba561657c756e509af21dae
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817163"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196386"
 ---
-# <a name="set-up-a-connector-to-import-hr-data-in-us-government-preview"></a>設定連接器以匯入美國政府 (預覽中的人力資源資料) 
+# <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>設定連接器以匯入美國政府的 HR 資料
 
 您可以設定 Microsoft 365 規範中心內的資料連線器，將人力資源) 資料 (人力資源匯入美國政府組織。 HR 相關的資料包括員工提交其辭職的日期和員工最後一天的日期。 這種 HR 資料可供 Microsoft 資訊保護解決方案（如「 [內幕風險管理」解決方案](insider-risk-management.md)）使用，以協助保護您的組織免受惡意活動或組織內的資料竊取。 設定 HR 連接器是指在 Azure Active Directory 中建立應用程式，以供連接器進行驗證，建立包含 HR 資料的 CSV 對應檔案，在規範中心建立一個資料連線器，然後在排程的) 基礎上執行腳本 (，以 ingests CSV 檔案中的 HR 資料至 Microsoft 雲端。 然後，「內部使用者風險管理」工具使用資料連線器，來存取已匯入 Microsoft 365 美國政府組織的 HR 資料。
 
@@ -77,7 +77,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然後按一下左側導覽中的 [ **資料連線器** ]。
 
-2. 在 [ **資料 (預覽 ** ] 的 [資料連線線]) ] 頁面 **上，按一下**[ **View**]。
+2. 在 [ **HR**] 底下的 [**資料連線器**] 頁面上，按一下 [ **View**]。
 
 3. 在 [ **HR** ] 頁面上，按一下 [ **新增連接器**]。
 

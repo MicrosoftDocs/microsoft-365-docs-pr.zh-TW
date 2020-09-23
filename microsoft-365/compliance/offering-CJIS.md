@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5680cc1bf8f3a0290f82baaccea1de7b982317a7
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416415"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208615"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a> (CJIS) 安全性原則的刑事審判資訊服務
 
@@ -77,6 +77,10 @@ Microsoft 會以州 CJIS 系統代理商 (CSA) 來簽署資訊協定;您可以�
 **從何處開始，我的代理人的合規性**
 
 [CJIS 安全性原則](https://aka.ms/cjis-security-policy) 涵蓋您的代理人保護 CJI 所必須採取的防範措施。 此外，您的 Microsoft 帳戶代表可讓您與熟悉司法需求的人員保持聯繫
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

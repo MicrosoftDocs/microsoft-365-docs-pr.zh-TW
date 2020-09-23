@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定 TeleMessage 連接器，以匯入並封存來自 Android 行動電話的 SMS、MMS 和語音通話。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 2284e09b3f04bf135435407a842f3e2c3f0648fa
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 35ff69ec3b8f0af5ed86350862bb7b0917a98909
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362096"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200258"
 ---
-# <a name="set-up-a-connector-to-archive-android-mobile-data-preview"></a>設定連接器，將 Android mobile 資料封存 (預覽) 
+# <a name="set-up-a-connector-to-archive-android-mobile-data"></a>設定連接器以封存 Android 行動電話資料
 
 使用 Microsoft 365 規範中心的 TeleMessage 連接器，從 Android 行動電話匯入並封存 SMS、MMS、語音通話及通話記錄。 在您設定及設定連接器之後，它每天會連線到您組織的 TeleMessage 帳戶，並將使用 TeleMessage Android 歸檔人員的員工行動通訊，匯入至 Microsoft 365 中的信箱。
 
@@ -40,7 +39,7 @@ ms.locfileid: "47362096"
 
 4. 連接器會將行動通訊專案匯入特定使用者的信箱。 會在特定使用者的信箱中建立名為 Android 的新資料夾，並將這些專案匯入該資料夾。 連接器會使用 *使用者的電子郵件地址* 屬性值進行對應。 每封電子郵件都包含此內容，該屬性會填入電子郵件的每個參與者的電子郵件地址。 除了使用 *使用者之電子郵件地址* 屬性值的自動使用者對應，您也可以透過上載 CSV 對應檔來定義自訂對應。 這個對應檔案應該包含使用者的行動電話號碼，以及每位使用者對應的 Microsoft 365 信箱位址。 如果您啟用自動使用者對應，並提供自訂對應，則每個電子郵件專案連接器都會先查看自訂對應檔案。 如果找不到與使用者的行動電話號碼相對應的有效 Microsoft 365 使用者，連接器會使用該電子郵件專案的使用者電子郵件地址屬性。 如果連接器在自訂對應檔案或電子郵件專案的 [ *電子郵件地址* ] 屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 封存 Android 通訊資料所需的部分執行步驟是 Microsoft 365 的外部，必須先完成，您才能在規範中心建立連接器。
 
@@ -84,4 +83,4 @@ ms.locfileid: "47362096"
 
 ## <a name="known-issues"></a>已知問題
 
-- 此時，我們不支援匯入大於 10 MB 的附件，但較大專案的支援將于之後提供。
+- 此時，我們不支援匯入大於 10 MB 的附件或專案。 稍後將提供對較大專案的支援。

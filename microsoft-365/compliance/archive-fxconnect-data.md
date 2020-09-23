@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定連接器，以在 Microsoft 365 中從 Globanet FX Connect 匯入及封存資料。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: d22313ab1de1700c14ee4b35f6a0e3dbcae73ae3
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: e56c0bc1ab16d9790e56bf0baf054057121ff94c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405584"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197244"
 ---
-# <a name="set-up-a-connector-to-archive-fx-connect-data-preview"></a>設定連接器，將 FX 連接資料封存 (預覽) 
+# <a name="set-up-a-connector-to-archive-fx-connect-data"></a>設定連接器以封存 FX Connect 資料
 
 使用 Microsoft 365 相容性中心內的 Globanet 連接器，從 FX Connect 協同平臺將資料匯入至您的 Microsoft 365 組織中的使用者信箱，並將其封存。 Globanet 提供 [Fx 連接](https://globanet.com/fx-connect/) 連接器，該連接器設定為捕獲 FX 連線專案，並將這些專案匯入至 Microsoft 365。 連接器會將內容從 FX 連線（例如交易、郵件，以及組織的 FX 線上帳戶中的其他詳細資料）轉換為電子郵件訊息格式，然後再將這些專案匯入 Microsoft 365 中的使用者信箱。
 
@@ -90,4 +89,4 @@ ms.locfileid: "47405584"
 
 ## <a name="known-issues"></a>已知問題
 
-- 此時，我們不支援匯入大於 10 MB 的附件，但較大專案的支援將于之後提供。
+- 此時，我們不支援匯入大於 10 MB 的附件或專案。 稍後將提供對較大專案的支援。

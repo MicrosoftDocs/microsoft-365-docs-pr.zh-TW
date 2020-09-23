@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: fa93c78d240c243911e21e687ef5d02c29b714b2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 59e11a5e0142647003ea4b0e9f1876ebedb37d00
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417337"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208445"
 ---
 # <a name="food-and-drug-administration-cfr-title-21-part-11"></a>食品和藥品管理 CFR Title 21 第11部分
 
@@ -55,7 +55,7 @@ Microsoft enterprise 雲端服務經歷一般獨立的協力廠商 SOC 1 Type 2 
 - [Dynamics 365 和 Dynamics 365 美國政府](https://aka.ms/d365-compliance-list)
 - Office 365 和 Office 365 美國政府
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 SOC 1 和 SOC 2 Type 2 的審計報告（ISO/IEC 27001 和 ISO/IEC 27018 標準證明已實現的控制項的有效性，並可協助客戶遵循 FDA CFR Title 21 第11部分。
 
@@ -79,9 +79,13 @@ FDA CFR Title 21 Part 11 適用于包含產品和服務的組織，這些產品�
 
 是。 IEC/ISO 27001、ISO/IEC 27018、SOC 1 和 SOC 2 標準的獨立協力廠商法規遵從性報告可證明 Microsoft 控制項的效能。 Microsoft enterprise cloud 客戶可以使用這些相關報告中所述的已審核控制項，作為其自有之 CFR Title 的一部分，21第11部分的風險分析和限定工作。 建立及部署遵循 FDA 法規之應用程式的客戶負責確保其應用程式符合 FDA 的需求。
 
-**Microsoft 對於維護符合此標準的責任為何？**
+**使用這個標準時，Microsoft 對維護合規性有何責任？**
 
 Microsoft 可確保其 enterprise 雲端服務符合管理 [線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31) 中所定義的條款及適用的服務等級協定 (sla) 。 這些會定義我們的責任，用以實施及維護控制措施，以保護及監視系統。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

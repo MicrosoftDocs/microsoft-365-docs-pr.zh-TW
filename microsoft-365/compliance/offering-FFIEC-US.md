@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 34feea4f90ddbb4036bb08c5548696f4fcd649a9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: ccefeeb9b09ce35ed38587077d19be13d00b31b2
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417317"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208465"
 ---
 # <a name="federal-financial-institutions-examination-council-ffiec"></a>聯邦金融機構檢查委員會 (FFIEC) 
 
@@ -57,11 +57,11 @@ Azure 和 Office 365 SOC 認證報告。
 
 **我可以使用 Microsoft 合規性與 SOC 標準，以符合我的機構的 FFIEC 合規性義務？**
 
-為了協助您符合這些義務，Microsoft 會依照上述方式，提供與 SOC 標準的相容性相關資訊。 不過，最後，您可以決定我們的服務是否遵循適用于您機構的特定法律和規定。 FFIEC 也會建議「審計報告或評論的使用者不應該只依賴報告中所含的資訊，以驗證 TSP 的內部控制環境。 FFIEC IT 測驗手冊的 [外包技術手冊](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) 中所述，應使用其他驗證與監控程式。
+為了協助您符合這些義務，Microsoft 會依照上述方式，提供與 SOC 標準的相容性相關資訊。 不過，最後，您可以決定我們的服務是否遵循適用于您機構的特定法律和規定。 FFIEC 也會建議 ' 審計報告或評論的使用者不應完全依賴報告中所包含的資訊，以驗證 TSP 的內部控制環境。 FFIEC IT 測驗手冊的 [外包技術手冊](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) 中所討論的功能，應使用其他驗證與監控程式。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
 
-[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)後，請從**範本**下拉式功能表中選取預先設定的[FFIEC Office 365 範本](https://go.microsoft.com/fwlink/?linkid=2117912)和[FFIEC Intune 範本](https://go.microsoft.com/fwlink/?linkid=2118101)，以協助您的組織滿足此法規的需求。
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

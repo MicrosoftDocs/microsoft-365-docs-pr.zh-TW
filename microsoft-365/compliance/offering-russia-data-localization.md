@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c8c5e78cfd7d531b2c2ee46ae4f28367240a87ca
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29c56d525375162926d34bd298bbbd660964438d
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415989"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208155"
 ---
 # <a name="russian-personal-data-localization-requirements"></a>俄文個人資料當地語系化需求
 
@@ -40,6 +40,10 @@ Microsoft 邀請客戶會考慮透過 Microsoft 雲端解決方案提供者 (CSP
 ### <a name="managing-user-identity-and-access-for-microsoft-online-services"></a>管理 Microsoft Online Services 的使用者身分識別和存取
 
 針對 microsoft Azure、Microsoft 365、Dynamics 365 及 Power Platform 等 Microsoft Online Services，使用者驗證和存取管理是透過 [Azure Active Directory (AAD) ](https://azure.microsoft.com/services/active-directory/)來執行。 請注意，Microsoft 客戶使用本機身分識別管理系統做為 Microsoft cloud services (例如 Windows Server Active Directory (AD) 或任何其他 ID 管理系統) 時，客戶有機會透過 Azure AD Connect，透過 Azure Active Directory (AAD) ，迅速整合這類系統。 如需詳細資訊，請參閱 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/cloud-provisioning/) 選項。 Microsoft 客戶也可以考慮使用協力廠商廠商的應用程式和解決方案來管理其使用者，並將其本機識別系統與 Azure AD 整合。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="questions-and-support"></a>問題及支援
 

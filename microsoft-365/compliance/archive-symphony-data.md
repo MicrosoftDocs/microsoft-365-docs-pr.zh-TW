@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定連接器，將資料從 Globanet Symphony 匯入 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: ade08b0f6f82bb2c76cdaf033e276909b5ec2122
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: fd44575aa34ea6f6180c5eabdbb286a3b8380d33
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405528"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196730"
 ---
-# <a name="set-up-a-connector-to-archive-symphony-data-preview"></a>設定連接器以封存 Symphony 資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-symphony-data"></a>設定連接器以封存 Symphony 資料
 
 使用 Microsoft 365 規範中心內的 Globanet 連接器，將 Symphony 資料匯入至您的 Microsoft 365 組織中的使用者信箱，並將其封存。 Symphony 是金融服務行業中使用的訊息和共同作業平臺。 Globanet 提供 Symphony 的 Microsoft 365 規範中心中的 [資料連線器](https://globanet.com/symphony) ，您可以設定為定期捕獲協力廠商資料來源中的專案 () 然後將這些專案匯入至使用者信箱。 連接器會將專案的內容從 Symphony 帳戶轉換成電子郵件格式，然後將該專案匯入 Microsoft 365 中的信箱。
 
@@ -90,4 +89,4 @@ ms.locfileid: "47405528"
 
 ## <a name="known-issues"></a>已知問題
 
-- 此時，我們不支援匯入大於 10 MB 的附件，但較大專案的支援將于之後提供。
+- 此時，我們不支援匯入大於 10 MB 的附件或專案。 稍後將提供對較大專案的支援。

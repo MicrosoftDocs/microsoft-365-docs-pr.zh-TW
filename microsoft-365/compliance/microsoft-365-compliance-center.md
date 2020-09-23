@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: 深入瞭解 Microsoft 365 規範中心，包括其包含的內容、如何取得，以及您的後續步驟。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: de91456ff8a18d712b967a20895e7cdb2e7a31c8
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 630884eb5e33ebc619e1526a752b8aa0f2d5ec53
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132177"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198384"
 ---
 # <a name="microsoft-365-compliance-center"></a>Microsoft 365 合規性中心
 
@@ -40,9 +40,9 @@ ms.locfileid: "48132177"
 
 在這裡，您可以：
 
-- 回顧 **Microsoft 規範評分** 卡，它會讓您瞭解新的 [合規性分數](compliance-score.md) 解決方案。 它會計算以風險為基礎的分數，可衡量完成建議動作的進度，以協助降低資料保護和法規標準的風險。 它還提供工作流程功能及內建的控制項對應，協助您有效地執行這些動作。
+- 回顧 **Microsoft 合規性管理員** 卡片，它會讓您加入 [合規性管理員](compliance-manager.md) 解決方案。 合規性管理員會協助簡化管理規範的方式。 它會計算以風險為基礎的分數，以衡量所做的建議動作，以協助降低資料保護和法規標準的風險。 它還提供工作流程功能及內建的控制項對應，以協助您有效地執行改進動作。
 
-    ![合規性計分卡 Microsoft 365 規範中心](../media/m365-compliance-center-compliance-score-card.png)
+    ![合規性管理員卡片 Microsoft 365 規範中心](../media/m365-compliance-center-compliance-manager-card.png)
 
 - 回顧新的 **方案目錄** 卡，它會連結至 [整合解決方案](microsoft-365-solution-catalog.md) 的集合，以協助您管理端對端的符合性案例。 方案的功能和工具可能包含原則、警示、報告等的組合。
 
@@ -62,7 +62,7 @@ ms.locfileid: "48132177"
 
 |  |  |
 |---------|---------|
-|![Microsoft 365 規範中心內的導覽](../media/m365-compliance-center-leftnav.png)  | 選取 [ **首頁** ] 以回到 Microsoft 365 規範中心主頁。 <br><br> 選取 [ **資料分類** ] 區段，以存取 [trainable 的分類](classifier-learn-about.md)器、 [機密資訊類型實體定義](sensitive-information-type-entity-definitions.md)、內容及 [活動](data-classification-activity-explorer.md) 瀏覽器。 <br/><br/> 選取 [ **資料連線器** ]，以設定在 Microsoft 365 訂閱中匯入和封存資料的 [連接器](archiving-third-party-data.md) 。 <br><br> 移至 **提醒** 以查看及解決 [通知](alert-policies.md) <br/><br/>就診 **報告** 以查看 [標籤使用狀況和保留](sensitivity-labels.md)的相關資料、 [DLP 原則比對和覆寫](view-the-dlp-reports.md)、 [共用](https://docs.microsoft.com/cloud-app-security/file-filters)檔案、 [使用中的協力廠商應用程式](https://docs.microsoft.com/cloud-app-security/discovered-apps)等等。 <br/><br/> 移至 [ **原則** ] 以設定管理資料、管理裝置和接收 [提醒](../security/office-365-security/alerts.md)的原則。 您也可以存取您的 [DLP](data-loss-prevention-policies.md) 和 [保留](retention.md) 原則。<br/><br/> 選取 [ **許可權** ]，以管理您組織中能夠存取 Microsoft 365 規範中心的人員，以查看內容和完成工作。 <br/><br/> 使用 [ **解決方案** ] 區段中的連結，以存取組織的合規性解決方案。 包括： <br/><br/> [型錄](microsoft-365-solution-catalog.md) <br> 探索、深入瞭解及開始使用可供您組織使用的智慧相容性和風險管理解決方案。 <br/><br/> [審計](search-the-audit-log-in-security-and-compliance.md) <br> 使用審核記錄檔，調查常見的支援和合規性問題。 <br/><br/> [內容搜尋](search-for-content.md) <br> 使用內容搜尋，以在 Exchange 信箱、SharePoint 網站中的檔、OneDrive 位置，以及 Microsoft 團隊和商務用 Skype 中的立即訊息交談，快速尋找電子郵件。 <br/><br/> [通訊合規性](communication-compliance.md) <br> 自動捕獲不適當的郵件、調查可能的原則違規和採取補救措施，以盡可能降低通訊風險。 <br/><br/> [資料調查](overview-data-investigations.md) <br/> 跨內容位置進行搜尋，以在 Microsoft 365 中識別敏感、惡意或誤放的資料，因此您可以調查並修復任何事件，例如資料外泄。 <br/><br/> [資料遺失保護](data-loss-prevention-policies.md) <br> 在整個組織中、雲端和裝置上，偵測機密內容的使用和共用，並協助防止意外的資料遺失。 <br/><br/> [資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md) <br> 尋找及匯出使用者的個人資料，以協助您回應一般資料保護法規 (GDPR) 的資料主體要求。 <br/><br/> [eDiscovery](overview-ediscovery-20.md) <br> 請展開此區段，以使用核心和高級 eDiscovery，保留、收集、審閱、分析和匯出以回應組織內部和外部調查的內容。 <br/><br/> [資訊管理](manage-information-governance.md) <br> 使用功能來管理您的內容生命週期，以匯入、儲存和分類業務關鍵型資料，這樣您就可以保留您所需要的專案，並刪除您不需要的專案。 <br/><br/> [資訊保護](protect-information.md) <br> 探索、分類及保護整個組織中其整個生命週期的敏感和業務關鍵型內容。 <br/><br/> [測試人員風險管理](insider-risk-management.md) <br> 偵測整個組織的危險活動，以協助您快速識別、調查和採取對內部使用者風險和威脅的動作。 <br/><br/> [記錄管理](records-management.md) <br> 自動化和簡化組織中法規、法律和業務關鍵型記錄的保留排程。
+|![Microsoft 365 規範中心內的導覽](../media/m365-compliance-center-leftnav.png)  | 選取 [ **首頁** ] 以回到 Microsoft 365 規範中心主頁。 <br><br>請造訪 **合規性管理員** 以檢查您的合規性分數，並開始管理組織的 [合規性](compliance-manager.md) 。 <br><br> 選取 [ **資料分類** ] 區段，以存取 [trainable 的分類](classifier-learn-about.md)器、 [機密資訊類型實體定義](sensitive-information-type-entity-definitions.md)、內容及 [活動](data-classification-activity-explorer.md) 瀏覽器。 <br/><br/> 選取 [ **資料連線器** ]，以設定在 Microsoft 365 訂閱中匯入和封存資料的 [連接器](archiving-third-party-data.md) 。 <br><br> 移至 **提醒** 以查看及解決 [通知](alert-policies.md) <br/><br/>就診 **報告** 以查看 [標籤使用狀況和保留](sensitivity-labels.md)的相關資料、 [DLP 原則比對和覆寫](view-the-dlp-reports.md)、 [共用](https://docs.microsoft.com/cloud-app-security/file-filters)檔案、 [使用中的協力廠商應用程式](https://docs.microsoft.com/cloud-app-security/discovered-apps)等等。 <br/><br/> 移至 [ **原則** ] 以設定管理資料、管理裝置和接收 [提醒](../security/office-365-security/alerts.md)的原則。 您也可以存取您的 [DLP](data-loss-prevention-policies.md) 和 [保留](retention.md) 原則。<br/><br/> 選取 [ **許可權** ]，以管理您組織中能夠存取 Microsoft 365 規範中心的人員，以查看內容和完成工作。 <br/><br/> 使用 [ **解決方案** ] 區段中的連結，以存取組織的合規性解決方案。 包括： <br/><br/> [型錄](microsoft-365-solution-catalog.md) <br> 探索、深入瞭解及開始使用可供您組織使用的智慧相容性和風險管理解決方案。 <br/><br/> [審計](search-the-audit-log-in-security-and-compliance.md) <br> 使用審核記錄檔，調查常見的支援和合規性問題。 <br/><br/> [內容搜尋](search-for-content.md) <br> 使用內容搜尋，以在 Exchange 信箱、SharePoint 網站中的檔、OneDrive 位置，以及 Microsoft 團隊和商務用 Skype 中的立即訊息交談，快速尋找電子郵件。 <br/><br/> [通訊合規性](communication-compliance.md) <br> 自動捕獲不適當的郵件、調查可能的原則違規和採取補救措施，以盡可能降低通訊風險。 <br/><br/> [資料調查](overview-data-investigations.md) <br/> 跨內容位置進行搜尋，以在 Microsoft 365 中識別敏感、惡意或誤放的資料，因此您可以調查並修復任何事件，例如資料外泄。 <br/><br/> [資料外洩防護](data-loss-prevention-policies.md) <br> 在整個組織中、雲端和裝置上，偵測機密內容的使用和共用，並協助防止意外的資料遺失。 <br/><br/> [資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md) <br> 尋找及匯出使用者的個人資料，以協助您回應一般資料保護法規 (GDPR) 的資料主體要求。 <br/><br/> [eDiscovery](overview-ediscovery-20.md) <br> 請展開此區段，以使用核心和高級 eDiscovery，保留、收集、審閱、分析和匯出以回應組織內部和外部調查的內容。 <br/><br/> [資訊管理](manage-information-governance.md) <br> 使用功能來管理您的內容生命週期，以匯入、儲存和分類業務關鍵型資料，這樣您就可以保留您所需要的專案，並刪除您不需要的專案。 <br/><br/> [資訊保護](protect-information.md) <br> 探索、分類及保護整個組織中其整個生命週期的敏感和業務關鍵型內容。 <br/><br/> [測試人員風險管理](insider-risk-management.md) <br> 偵測整個組織的危險活動，以協助您快速識別、調查和採取對內部使用者風險和威脅的動作。 <br/><br/> [記錄管理](records-management.md) <br> 自動化和簡化組織中法規、法律和業務關鍵型記錄的保留排程。
 
 ## <a name="how-do-i-get-the-compliance-center"></a>如何取得規範中心？
 
@@ -90,7 +90,7 @@ ms.locfileid: "48132177"
 
 ## <a name="next-steps"></a>後續步驟
 
-- 請**複查您的 Microsoft 合規性分數**，以提升您的合規性分數。 若要深入瞭解，請參閱 [相容性分數 (預覽) ](compliance-score.md)。
+- **請造訪 Microsoft 合規性管理員** 以查看您的合規性分數，並開始管理組織的合規性。 若要深入瞭解，請參閱 [合規性管理員](compliance-manager.md)。
 
 - **設定「有問必答風險管理」原則** ，協助將內部風險降至最低，並讓您偵測、調查和採取行動，以應對組織中的危險活動。 請參閱「 [有問必答風險管理](insider-risk-management.md)」。
 

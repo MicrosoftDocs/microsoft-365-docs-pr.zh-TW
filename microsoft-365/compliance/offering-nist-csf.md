@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 90670c8102afe0dcf0814726bde36bd422e802a9
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: be40c207f5f09c97d1a0a4da5cf56e2caf2c51b7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417085"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208165"
 ---
 # <a name="national-institute-of-standards-and-technology-nist-cybersecurity-framework-csf"></a>國家標準和技術研究院 (NIST) Cybersecurity Framework (CSF) 
 
@@ -97,9 +97,9 @@ NIST CSF 認證的範圍內服務是 Exchange Online 封存、Exchange Online Pr
 
 Microsoft 提供最全面的選項，與其他雲端服務提供者相較。 為了維持跨地區和行業的廣泛合規性服務，我們根據市場需求、客戶意見反應及產品生命週期，在我們的保證工作範圍內加入服務。 如果服務並未包含在特定規范產品的目前範圍內，則您的組織有責任根據您的合規性義務評估風險，並決定處理該服務中資料的方式。 我們會持續收集客戶的意見反應，與管理機構和審計員合作，以擴大我們的安全性和合規性需求。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
 
-[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)後，請從**範本**下拉式功能表中選取預先設定的[NIST CSF 範本](https://go.microsoft.com/fwlink/?linkid=2117917)，以協助您的組織符合此法規的需求。
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

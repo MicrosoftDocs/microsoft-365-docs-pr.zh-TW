@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e4a13d25506481ddcdfaf6ca2f9ad21c871bb603
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6645ce4d4f6b2fa8f2725e4b0679bc00fdec3505
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416467"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208799"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -89,6 +89,7 @@ ms.locfileid: "47416467"
 ### <a name="configure-microsoft-365-hr-connector"></a>設定 Microsoft 365 HR connector
 
 測試人員風險管理支援從協力廠商風險管理和人力資源平台匯入使用者和記錄資料。 Microsoft 365 人力資源 (HR) 資料連線器可讓您從 CSV 檔提取人力資源資料，包括使用者終止日期、最後雇傭日期、效能改進計畫通知、效能檢查動作和工作層級變更狀態。 這項資料可協助磁片箱風險管理原則中的警示指示器，而且在設定組織中的完整風險管理範圍時，是一項重要的部分。 如果您為組織設定多個 HR 連接器，「內部使用者風險管理」會自動從所有 HR 連接器提取指示器。
+
 使用下列原則範本時，需要使用 Microsoft 365 HR 連接器：
 
 - 脫離使用者資料竊取
@@ -123,10 +124,19 @@ DLP 原則可協助識別使用者為敏感資訊的高嚴重性 DLP 警示啟�
 
 使用下列原則範本時，需要優先順序的使用者群組：
 
-- 依優先順序的使用者所破壞的安全性原則 
+- 依優先順序的使用者所破壞的安全性原則
 - 依優先使用者的資料洩漏
 
 如需建立優先順序使用者群組的逐步指引，請參閱 [開始使用「會員風險管理」管理設定](insider-risk-management-settings.md#priority-user-groups-preview) 文章。 設定優先順序使用者群組之後，請回到這些設定步驟。
+
+### <a name="configure-physical-badging-connector-optional"></a>設定實體聲譽徽章授予連接器 (選用) 
+
+有問必答風險管理支援從實體控制和存取平臺匯入使用者和記錄資料。 實體聲譽徽章授予連接器可讓您從 JSON 檔案中拉入 access 資料，包括使用者 IDs、存取點 IDs、存取時間和日期，以及存取狀態。 這項資料可協助磁片箱風險管理原則中的警示指示器，而且在設定組織中的完整風險管理範圍時，是一項重要的部分。 如果您為組織設定一個以上的實體聲譽徽章授予連接器，「內部使用者風險管理」會自動從所有實體聲譽徽章授予連接器中拉出指示器。 來自實體聲譽徽章授予連接器的資訊，會在使用所有有問必答風險原則範本時，補充其他會員風險的信號。
+
+>[!IMPORTANT]
+>若要使用或關聯使用實體控制和存取平臺之事件資料的委任及終止使用者相關的通知資料，您也必須設定 Microsoft 365 HR connector。 如果您啟用實體聲譽徽章授予連接器但未啟用 Microsoft 365 HR connector，「內部使用者風險管理」原則只會處理組織中使用者未授權實體存取的事件。
+
+如需設定組織之實體聲譽徽章授予連接器的逐步指引，請參閱 [設定連接器以匯入實體聲譽徽章授予資料](import-physical-badging-data.md) 文章。 在您設定連接器之後，請回到這些設定步驟。
 
 ## <a name="step-4-configure-insider-risk-settings"></a>步驟4：設定有問必答風險設定
 
@@ -150,14 +160,17 @@ DLP 原則可協助識別使用者為敏感資訊的高嚴重性 DLP 警示啟�
     - [網域設定](insider-risk-management-settings.md#domains-preview)
 6. 在 [ **匯出提醒** ] 頁面上，根據需要，使用 Office 365 管理 APIs 啟用「匯出的會員風險警示資訊」。
 7. 在 [ **優先順序使用者群組** ] 頁面上，建立 [優先順序] 使用者群組，並在 **步驟 3**中建立使用者時新增使用者。
-8. 選取 [ **儲存** ] 以啟用內部使用者風險原則的這些設定。
+8. 在 [ **電源自動流程** ] 頁面上，設定「內幕人員風險流程範本」的流程，或是建立新的流程。 如需逐步指引，請參閱入門的「 [內幕人員風險管理設定](insider-risk-management-settings.md#power-automate-flows-preview) 」文章。
+9. 在 [ **優先順序資產] 頁面**上，設定優先順序資產，以使用實體聲譽徽章授予連接器所匯入的實體控制和存取平臺中的資料。 如需逐步指引，請參閱入門的「 [內幕人員風險管理設定](insider-risk-management-settings.md#priority-physical-assets-preview) 」文章。
+10. 在 [ **Microsoft 小組** ] 頁面上，讓 Microsoft 團隊能夠與「內幕風險管理」整合，以自動建立小組以進行案例或使用者共同作業。 如需逐步指引，請參閱入門的「 [內幕人員風險管理設定](insider-risk-management-settings.md#microsoft-teams-preview) 」文章。
+11. 選取 [ **儲存** ] 以啟用內部使用者風險原則的這些設定。
 
 ## <a name="step-5-create-an-insider-risk-management-policy"></a>步驟5：建立內部人員風險管理原則
 
 測試人員風險管理原則包括指派的使用者，並定義針對警示設定的風險指標類型。 必須先設定原則，活動才會觸發警示。
 
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)，移至 **[測試人員風險管理]**，然後選取 **[原則]** 索引標籤。
-2. 選取 **[建立原則]** 以開啟原則精靈
+2. 選取 [ **建立原則** ] 以開啟原則嚮導。
 3. 在 **[新增測試人員風險原則]** 頁面上，完成下列欄位：
     - **Name (必要) **：輸入原則的易記名稱。
     - **說明 (選用)**：輸入原則的說明。
@@ -165,6 +178,9 @@ DLP 原則可協助識別使用者為敏感資訊的高嚴重性 DLP 警示啟�
 
     >[!IMPORTANT]
     >大多數原則範本都具有必須針對原則進行設定以產生相關警示的必要條件。 若尚未設定適用的原則必要條件，請參閱上述的 **步驟 3** 。
+
+    >[!CAUTION]
+    >從2020年10月16日開始，您將無法再使用電子郵件範本中的冒犯性語言來建立原則。 使用此範本的任何作用中原則，必須在2021年1月後永久移除，才可運作。
 
 4. 選取 **[下一步]** 繼續。
 5. 在 [ **使用者** ] 頁面上，選取 [ **新增使用者或群組** ] 或 **[選擇優先級使用者群組** ]，以根據您所選取的原則範本，定義納入原則中的使用者或優先順序使用者群組。 如果有 (的話，請選取 [ **所有使用者及擁有郵件功能的群組** ] 核取方塊（如果您尚未選取優先順序的使用者範本) ）。 選取 **[下一步]** 繼續。

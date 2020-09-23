@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，將「ICE 聊天」工具中的資料匯入和封存至 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: b6b31c0ef9b083aa6432e35029fc14be1a817733
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 94a2d35b9bb8d3a0edae0eebeae53d7dd7b04af2
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358225"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196366"
 ---
-# <a name="set-up-a-connector-to-archive-ice-chat-data-preview"></a>設定連接器以封存「 (預覽」的「冰激淩」聊天資料) 
+# <a name="set-up-a-connector-to-archive-ice-chat-data"></a>設定連接器以封存「我的冰激淩」聊天資料
 
 使用 Microsoft 365 規範中心內的原生連接器，從「ICE 聊天共同作業」工具匯入及封存金融服務聊天資料。 在您設定及設定連接器之後，它會連線到您組織的冰激淩聊天安全 FTP (SFTP) 網站一次，將聊天訊息的內容轉換成電子郵件格式，然後將這些專案匯入至 Microsoft 365 中的信箱。
 
@@ -41,7 +41,7 @@ ms.locfileid: "47358225"
 
    除了使用 *SenderEmail* 和 *RecipientEmail* (屬性之值的自動使用者對應，也意味著該連接器會將聊天訊息匯入寄件者的信箱，並將每個收件者) 的信箱匯入，您也可以透過上載 CSV 對應檔來定義自訂使用者對應。 這個對應檔案包含組織中每位使用者的「冰激淩聊天 *ImId* 」和對應的 Microsoft 365 信箱位址。 如果您啟用自動使用者對應，並提供自訂對應檔案，則每個聊天專案連接器都會先查看自訂對應檔案。 如果找不到與使用者的「交談」 ImId 相對應的有效 Microsoft 365 使用者帳戶，連接器會使用聊天室專案的 *SenderEmail* 和 *RecipientEmail* 屬性，將專案匯入聊天參與者的信箱。 如果連接器在自訂對應檔或 *SenderEmail* 及 *RecipientEmail* 屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 封存「交談」資料所需的部分執行步驟是 Microsoft 365 的外部，必須先完成，您才能在規範中心建立連接器。
 
@@ -59,7 +59,7 @@ ms.locfileid: "47358225"
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並按一下左側導覽中的 [ **資料連線器** ]。
 
-2. 在 [ **資料連線器] () 預覽 ** ] 頁面的 [ **冰激淩聊天**] 底下，按一下 [ **View**]。
+2. 在 [**冰激淩聊天**] 底下的 [**資料連線器**] 頁面上，按一下 [ **View**]。
 
 3. 在 [ **ICE 聊天** ] 頁面上，按一下 [ **新增連接器**]。
 

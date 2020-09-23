@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定連接器，將 .EML 資料從 Globanet 匯入 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 99b32960b46853ed4766c255e36df05c8fe9086a
-ms.sourcegitcommit: 57b37a3ce40f205c7320d5be1a0d906dd492b863
+ms.openlocfilehash: c11d66774a61fa20a533b5c906b3c8601659c1fe
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47405594"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200216"
 ---
-# <a name="set-up-a-connector-to-archive-eml-data-preview"></a>設定連接器以封存 .EML 資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-eml-data"></a>設定連接器以封存 .EML 資料
 
 使用 Microsoft 365 規範中心內的 Globanet 連接器，將 .EML 資料匯入至您的 Microsoft 365 組織中的使用者信箱，並將其封存。 .EML 是儲存在檔案中的電子郵件的副檔名。 連接器會將專案的內容從來源格式轉換為電子郵件訊息格式，然後將該專案匯入至使用者信箱。
 
@@ -90,4 +89,4 @@ ms.locfileid: "47405594"
 
 ## <a name="known-issues"></a>已知問題
 
-- 此時，我們不支援匯入大於 10 MB 的附件，但較大專案的支援將于之後提供。
+- 此時，我們不支援匯入大於 10 MB 的附件或專案。 稍後將提供對較大專案的支援。

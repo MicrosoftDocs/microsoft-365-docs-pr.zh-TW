@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8667c625de4c83c98efd8f1cf20f3db57ed0d4c5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2ba67f833a7a4ee14b53adf38db786bb344a40bb
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416557"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208849"
 ---
 # <a name="insider-risk-management-cases"></a>內部人員風險管理案例
 
@@ -127,6 +127,15 @@ ms.locfileid: "47416557"
 4. **風險活動 chronology**：會列出與案例相關聯之所有風險警示的完整 chronology，包括對應警示氣泡中所有可用的詳細資料。
 5. **案例動作**：解決案例的選項位於 [案例] 動作工具列上。 您可以解決案例、將電子郵件通知傳送給使用者，或為數據或使用者調查上報案例。
 
+### <a name="activity-explorer-preview"></a>活動瀏覽器 (預覽) 
+
+>[!IMPORTANT]
+>在您的組織中有此功能的使用者的「案例管理」區域中，可以使用 [活動流覽] 索引標籤。
+
+[ **活動流覽** ] 索引標籤可讓風險分析人員和調查人員查看與風險警示相關的活動詳細資料。 例如，在案例管理動作中，調查人員和分析員可能需要查看與案例相關聯的所有風險活動，以取得詳細資訊。 透過 **活動瀏覽器**，檢閱者可以快速查看偵測到風險的啟用時間表，並識別及篩選與提醒相關聯的所有風險活動。
+
+如需活動瀏覽器的詳細資訊，請參閱「 [內幕人員風險管理提醒](insider-risk-management-alerts.md#activity-explorer-preview) 」文章。
+
 ### <a name="content-explorer"></a>內容瀏覽器
 
 [ **內容瀏覽器** ] 索引標籤可讓風險分析人員和調查人員檢查與風險警示相關聯之所有個別檔案和電子郵件的副本。 例如，如果當使用者從 SharePoint 下載成百上千個檔案，且該活動觸發一個原則警示時，就會建立警示，並從原始的儲存來源中捕獲並複製該警示的所有已下載檔案至「有問必答風險管理案例」。
@@ -196,15 +205,42 @@ ms.locfileid: "47416557"
 1. 在 [Microsoft 365 規範中心](https://compliance.microsoft.com)，移至「 **內幕人員風險管理** 」，然後選取 [ **案例** ] 索引標籤。
 2. 選取案例，然後選取 [案例動作] 工具列上的 [ **呈報以進行調查** ] 按鈕。
 3. 在 [ **升級以進行調查** ] 對話方塊中，輸入新使用者調查的名稱。 如有需要，請輸入有關案例的備註，然後選取 [ **呈報**]。
+4. 視需要複查 [注意事項] 欄位及更新。 這裡輸入的值會覆寫範本上的值。
 5. 選取 [ **確認** ] 以建立使用者調查案例，或選取 [ **取消** ] 關閉對話方塊，而不建立新的使用者調查案例。
 
 當「內幕風險管理案例」升級至新的使用者調查案例之後，您可以在 Microsoft 365 規範中心的**eDiscovery**  >  **Advanced**區域中查看新案例。
 
-### <a name="share-a-case"></a>共用案例
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>在案例中以 Power 自動化流程執行自動化工作
 
-共用內部使用者風險管理案例，可讓調查人員和評論，與組織中的其他法規遵從性利益相關者輕鬆合作。 您可以使用「案例管理」區域中的外部利益關係人，快速分享內部使用者風險管理案例的連結。 若要從連結存取「內部使用者風險管理案例」，必須在任何「內幕風險管理」角色群組中包含專案關係人。
+使用建議的電源自動流程，風險調查人員和分析員可以快速採取下列動作：
 
-可使用的共用選項如下： 
+- 在內部使用者風險案例中，向來自人力資源或公司的使用者要求資訊
+- 使用者擁有「內幕風險警示」時通知管理員
+- 新增行事曆提醒以追蹤現有的有問必答風險案例
+
+若要針對內幕風險管理案例執行、管理或建立電源自動化流程，請執行下列動作：
+
+1. 選取 [案例動作] 工具列上的 [ **自動** ]。 
+2. 選擇 [電源自動化流程] 以執行，然後選取 [ **執行流程**]。 
+3. 流程完成後，請選取 [ **完成**]。
+
+若要深入瞭解「內部人員風險管理」的 Power 自動化流程，請參閱「 [內幕人員風險管理」設定快速](insider-risk-management-settings.md#power-automate-flows-preview)入門。
+
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>為案例查看或建立 Microsoft 團隊團隊
+
+在 [設定] 中啟用「對內幕人員風險管理的 Microsoft 團隊整合」時，會在每次確認提醒並建立案例時，自動建立 Microsoft 團隊團隊。 風險調查人員和分析師可以在案例動作工具列上，選取 [ **View Microsoft 團隊小組** ]，快速開啟 Microsoft 團隊，並直接流覽至小組以取得案例。
+
+在啟用 Microsoft Team 整合之前開啟的案例，風險調查人員和分析員可以在案例動作工具列上，選取 [ **建立 Microsoft 團隊小組** ]，以在案例中建立新的 microsoft 團隊小組。
+
+當解決案例時，關聯的 Microsoft 團隊會自動封存 (隱藏，並將其變成隻讀) 。
+
+若要深入瞭解 Microsoft 球隊的內幕人士風險管理，請參閱「 [內幕人員風險管理設定」快速](insider-risk-management-settings.md#microsoft-teams-preview)入門。
+
+### <a name="share-the-case"></a>分享案例
+
+共用內部使用者風險管理案例，可讓風險調查人員和分析員輕鬆與組織中的其他合規性專案關係人進行共同作業。 您可以使用「案例管理」區域中的外部利益關係人，快速分享內部使用者風險管理案例的連結。 若要從連結存取「內部使用者風險管理案例」，必須在任何「內幕風險管理」角色群組中包含專案關係人。
+
+可使用的共用選項如下：
 
 - **ServiceNow**：為您的 microsoft 365 組織設定 microsoft 365 ServiceNow 連接器之後，您可以輕鬆地分享案例的連結、開啟事件，或是向您的 ServiceNow 組織要求變更。 若要與 ServiceNow 共用案例，請**Share**  >  從 [案例] 動作中選取 [共用]**ServiceNow** 。 ServiceNow 與內幕風險管理的整合支援包含下列案例資訊和動作：
     - **任務名稱**：新 ServiceNow 任務的名稱。

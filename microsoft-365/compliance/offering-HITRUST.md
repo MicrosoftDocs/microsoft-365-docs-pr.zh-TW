@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 5ee3e77624650f0a5c1b913081620695cdc13142
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 54d188aa84cd6bc2614489dbbc3a969d30b40342
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417035"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208415"
 ---
 # <a name="health-information-trust-alliance-hitrust-common-security-framework-csf"></a>狀況資訊信任同盟 (HITRUST) 常見的安全性架構 (CSF) 
 
@@ -45,7 +45,7 @@ HITRUST 提供三種確定性或評估等級：自我評估、CSF 驗證及 CSF 
 - Intune
 - [Office 365 和 Office 365 美國政府](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 Azure 和 Office 365 的 HITRUST CSF 憑證是兩年有效。
 
@@ -102,6 +102,10 @@ Microsoft 提供最全面的選項，與其他雲端服務提供者相較。 為
 **如何與 Microsoft 接洽？**
 
 登入 HITRUST MyCSF®工具，並預先填入 Microsoft Azure 上的您的解決方案評估，以及 Azure 的完全繼承或共用責任控制。 Microsoft HITRUST 系統管理員會在 [MyCSF®] 工具上使用其帳戶完成評估的部分。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

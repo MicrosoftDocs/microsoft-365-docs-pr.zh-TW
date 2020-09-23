@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定 TeleMessage 連接器，以從 Microsoft 365 中的 Verizon 網路匯入及封存 SMS 和 MMS 資料。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: c088adbd0e0a5d4a46b3f7ddb3d64d3f8c32c8dc
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 8d3d23a4383f15b9390db3fb84b20a5566a28b8d
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361828"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196552"
 ---
-# <a name="set-up-a-connector-to-archive-verizon-network-data-preview"></a>設定連接器以封存 Verizon 網路資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-verizon-network-data"></a>設定連接器以封存 Verizon 網路資料
 
 使用 Microsoft 365 規範中心內的 TeleMessage 連接器，匯入及封存短信服務 (SMS) 和多媒體訊息服務 (MMS) 來自 Verizon 網路的資料。 在您設定及設定連接器之後，它每天會連線到您組織的 Verizon 網路，並將 SMS 和 MMS 資料匯入 Microsoft 365 中的信箱。
 
@@ -42,7 +41,7 @@ Verizon 網路連接器資料儲存在使用者信箱之後，您可以套用 Mi
 
    除了使用 *使用者的電子郵件地址* 屬性值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來執行自訂對應。 此對應檔包含組織中使用者的行動電話號碼和對應的 Microsoft 365 電子郵件地址。 如果您為每個 Verizon 專案啟用自動使用者對應及自訂對應，連接器會先查看自訂對應檔案。 如果找不到對應至使用者行動電話號碼的有效 Microsoft 365 使用者，連接器會使用嘗試匯入之專案的電子郵件地址屬性值。 如果連接器在自訂對應檔案或 Verizon 專案的電子郵件地址屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 封存 Verizon 網路資料所需的部分執行步驟是 Microsoft 365 的外部，必須先完成，您才能在規範中心建立連接器。
 
@@ -88,4 +87,4 @@ Verizon 網路連接器資料儲存在使用者信箱之後，您可以套用 Mi
 
 ## <a name="known-issues"></a>已知問題
 
-- 此時，我們不支援匯入大於 10 MB 的附件，但較大專案的支援將于之後提供。
+- 此時，我們不支援匯入大於 10 MB 的附件或專案。 稍後將提供對較大專案的支援。

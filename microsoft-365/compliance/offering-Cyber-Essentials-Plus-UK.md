@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 6b0d28c853c540e72c4287b141097f12ddf23419
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 54f1c4006450d47e974c4775720c91d8c6bea764
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415573"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208585"
 ---
 # <a name="united-kingdom-cyber-essentials-plus"></a>英國網路基礎和
 
@@ -42,10 +42,14 @@ Microsoft Azure 已具備網路基礎知識加上徽章，符合「網路」 [�
 
 [Azure 網路基礎和認證](https://aka.ms/AzureCyberEPlusCert)（適用于 azure 的全球作業系統）可供下載。
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 - [Azure 網路基礎和相容性報告](https://aka.ms/AzureCyberEPlusReport)
 - [Azure 網路基礎和認證](https://aka.ms/AzureCyberEPlusCert)
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

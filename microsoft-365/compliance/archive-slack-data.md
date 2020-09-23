@@ -11,18 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定連接器，將資料從 Globanet 寬限匯入至 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 6466beb6115037ff726b1e5fd3350032bceb2230
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: 532b8a8eb4331d66e1c7522d79bde2b5b6b0a02f
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47957032"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196755"
 ---
-# <a name="set-up-a-connector-to-archive-slack-data-preview"></a>設定 (預覽中封存寬限資料的連接器) 
+# <a name="set-up-a-connector-to-archive-slack-data"></a>設定連接器以封存寬限資料
 
-使用 Microsoft 365 規範中心的 Globanet 連接器，將協力廠商資料從社交媒體、立即訊息及檔共同作業平臺匯入至您的 Microsoft 365 組織中的信箱。 Globanet 提供了 Microsoft 365 規範中心的 [寬延時間資料連線器](https://globanet.com/slack/) 連接器，您可以設定為定期捕獲協力廠商資料來源中的專案 () 然後將這些專案匯入至 Microsoft 365。 時差會從寬限 API 提取郵件和檔案，並將電子郵件訊息格式，然後將其匯入 Microsoft 365 中的使用者信箱。
+使用 Microsoft 365 規範中心的 Globanet 連接器，將協力廠商資料從社交媒體、立即訊息及檔共同作業平臺匯入至您的 Microsoft 365 組織中的信箱。 Globanet 提供了一個寬延時間連接器，可設定為定期捕獲協力廠商資料來源中的專案 () 然後將這些專案匯入至 Microsoft 365。 時差會從寬限 API 提取郵件和檔案，並將其轉換成電子郵件格式，然後將該專案匯入至使用者信箱。
 
 在使用者信箱中儲存時差資料後，您可以套用 Microsoft 365 規範功能（例如訴訟暫止、eDiscovery、保留原則和保留標籤，以及通訊法規遵從性）。 使用時差連接器在 Microsoft 365 中匯入和封存資料，可協助您的組織遵守政府和法規原則。
 
@@ -92,4 +91,4 @@ ms.locfileid: "47957032"
 
 ## <a name="known-issues"></a>已知問題
 
-- 此時，我們不支援匯入大於 10 MB 的附件及專案。 稍後將提供對較大專案的支援。
+- 此時，我們不支援匯入大於 10 MB 的附件或專案。 稍後將提供對較大專案的支援。

@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bb1452bc0f33b56cd9fee6bb4846a8e623c0b96a
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 37da9f692b3556bf887d742ece3b99cdc1da60a2
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416847"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208405"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保險流通與責任 (HIPAA) & 高科技的運作
 
@@ -102,9 +102,9 @@ Microsoft 為合格的公司或其供應商提供涵蓋在 Microsoft 服務範�
 - [使用 Microsoft Azure 設計安全狀況解決方案的實用指南](https://aka.ms/azureindustrysecurity) 可協助您更進一步瞭解以安全方式成功採用雲端服務所需的功能。
 - [在 Microsoft 雲端中處理 HIPAA 安全性和隱私權需求，](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) 提供法規需求的簡短概述。 它也會詳細分析 Microsoft 的雲端服務是如何以對應至這些需求的方法來建立，以及如何建立規範準備解決方案的指導方針。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
 
-[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)後，請從**範本**下拉式功能表中選取預先設定的[HIPAA Office 365 範本](https://go.microsoft.com/fwlink/?linkid=2118005)及[HIPAA Intune 範本](https://go.microsoft.com/fwlink/?linkid=2118006)，以協助您的組織滿足此法規的需求。
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

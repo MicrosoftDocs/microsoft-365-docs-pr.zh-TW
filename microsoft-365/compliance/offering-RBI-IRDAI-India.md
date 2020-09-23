@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c037a36154f14cc0db2092bc2eeea6344b5544ff
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: aac61dc6686e318d21a6aa6cb1ee86704879f51b
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416069"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208195"
 ---
 # <a name="reserve-bank-of-india-rbi-and-insurance-regulatory-and-development-authority-of-india-irdai"></a>預約銀行 (RBI) 和保險業法規和開發授權的印度 (IRDAI) 
 
@@ -31,7 +31,7 @@ ms.locfileid: "47416069"
 
 - 透過銀行 (RBI) [管理在財務服務外包](https://rbidocs.rbi.org.in/rdocs/notification/PDFs/73713.pdf)時所面臨的風險和行為準則的指導方針解決在外包金融服務時所面臨的受管制銀行的風險，並協助確保外購不會妨礙 RBI 的主管角色。 RBI 不需要在尋求外包金融服務的銀行之前核准;不過，核心銀行功能（例如內部審核和規範功能）不應外包。
 - [資訊安全性、電子銀行、技術風險管理及網路 Frauds](https://rbidocs.rbi.org.in/rdocs/content/PDFs/GBS300411F.pdf) (RBI) 的指導方針。 金融機構必須報告外包的方式，其中的活動規模和性質都很重要，或需要大量的資料與印度以外的服務提供者共用。 本指南特別適用于在印度境外儲存或處理作業資料時。
-- [印度保險公司法規](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) (IRDAI) 中的活動外包。 每年，保險公司都必須報告外包給 IRDAI，以在金融年度結束45天內，對核心活動的某些支援功能進行報告。 在 Microsoft [檢查清單](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) 中 (第7頁描述「核心活動支援職能」。
+- [印度保險公司法規](https://www.irdai.gov.in/ADMINCMS/cms/frmGeneral_Layout.aspx?page=PageNo3149&flag=1) (IRDAI) 中的活動外包。 每年，保險公司都必須報告外包給 IRDAI，以在金融年度結束45天內，對核心活動的某些支援功能進行報告。 在 Microsoft [檢查清單](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) 中 (第7頁說明組成核心活動支援職能的專案。
 
 使用雲端服務的財務公司也必須遵守隱私權規則，包括 [資訊技術 (合理的安全性作法和程式及敏感個人資料或資訊) 規則，2011](https://meity.gov.in/sites/upload_files/dit/files/GSR313E_10511\(1\).pdf) (MeitY) 。 為了加強印度的資料保護法而開發，這些規則可管理敏感個人資料的保護和處理。
 
@@ -43,7 +43,7 @@ ms.locfileid: "47416069"
 
 Microsoft 檢查清單可協助印度中執行 Microsoft 商務雲端服務之到期評估的財務公司，並包含：
 
-- 內容的規章環境概述。
+- 內容的法規環境概觀。
 - 檢查清單，以根據這些法規義務，設定要解決的問題，並對應 Microsoft Azure、Microsoft Dynamics 365 和 Microsoft Office 365 服務。 檢查清單可做為工具，以根據法規架構評定合規性，提供記錄合規性的內部結構，並協助客戶自行進行 Microsoft 商務雲端服務風險評估。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
@@ -55,7 +55,7 @@ Microsoft 檢查清單可協助印度中執行 Microsoft 商務雲端服務之�
 ## <a name="how-to-implement"></a>實作方法
 
 - [印度的規範檢查清單](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)：財務公司可以協助您進行 Microsoft 商務雲端服務的風險評估。
-- [風險評估與合規性指南](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)：建立 Microsoft 雲端服務風險評估的監管模型和調整通知。
+- [風險評定與合規性指南](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)：建立 Microsoft 雲端服務風險評定的監管模型和調整通知。
 - [Azure 的財務使用案例](https://docs.microsoft.com/azure/industry/financial/)：使用案例概述、教學課程及其他資源，建立用於金融服務的 Azure 解決方案。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
@@ -63,6 +63,10 @@ Microsoft 檢查清單可協助印度中執行 Microsoft 商務雲端服務之�
 **在與雲端服務提供者的合約中，是否必須包含任何強制性條款？**
 
 是。 以上所述的指導方針 stipulate 某些特定的財務機構必須納入其雲端服務合約的要點。 「 [檢查清單](https://servicetrust.microsoft.com/Documents/TrustDocuments?command=Download&downloadType=Document&downloadId=26f4af15-2771-4cd4-a7c7-9328149f9453&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) 」的第2部分 (頁面 70) 針對 Microsoft 合約檔中的區段來對應這些檔。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

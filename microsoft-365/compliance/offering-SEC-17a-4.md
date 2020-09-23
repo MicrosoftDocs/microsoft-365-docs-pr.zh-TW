@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bd91e2439b501a20396763358f35a94aa31b4672
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: c0abd8db3084630a6f848f740f5b1387dc58b704
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417231"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208185"
 ---
 # <a name="securities-and-exchange-commission-sec-rule-17a-4f-united-states"></a>證券和 Exchange 傭金 (SEC) Rule 17a-4 (f) 美國
 
@@ -47,7 +47,7 @@ Microsoft Azure 永恆 Blob 儲存 with Policy Lock 和 Microsoft Office 365 （
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
 
 ### <a name="azure--sec-rule-17"></a>Azure & SEC 規則17
 
@@ -70,6 +70,10 @@ Microsoft Azure 永恆 Blob 儲存 with Policy Lock 和 Microsoft Office 365 （
 ### <a name="financial-use-cases"></a>財務使用案例
 
 使用案例概述、教學課程及其他資源，建立用於金融服務的 Azure 解決方案。 [深入了解](https://docs.microsoft.com/azure/industry/financial/)
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

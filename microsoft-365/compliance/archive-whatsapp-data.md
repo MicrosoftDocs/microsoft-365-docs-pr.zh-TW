@@ -11,16 +11,15 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: 系統管理員可以設定 TeleMessage 連接器，以匯入和封存 Microsoft 365 中的 WhatsApp 資料。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: fbd0e30cf8016da9479d5f1e24715d2e2aaa628c
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: a8a3465ca3f728290b69cf9b6c5d0820daf00221
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361868"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199156"
 ---
-# <a name="set-up-a-connector-to-archive-whatsapp-data-preview"></a>設定連接器以封存 WhatsApp 資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-whatsapp-data"></a>設定連接器以封存 WhatsApp 資料
 
 使用 Microsoft 365 規範中心內的 TeleMessage 連接器，匯入及封存 WhatsApp 通話、聊天、附件、檔案及已刪除的郵件。 在您設定及設定連接器之後，它每天會連線到您組織的 TeleMessage 帳戶，並將使用 TeleMessage WhatsApp Phone 歸檔器或 TeleMessage WhatsApp 雲端歸檔人員的員工行動通訊，匯入至 Microsoft 365 中的信箱。
 
@@ -42,7 +41,7 @@ ms.locfileid: "47361868"
 
    除了使用 *使用者的電子郵件地址* 屬性值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來執行自訂對應。 此對應檔包含組織中使用者的行動電話號碼和對應的 Microsoft 365 電子郵件地址。 如果您為每個 WhatsApp 專案啟用自動使用者對應及自訂對應，連接器會先查看自訂對應檔案。 如果找不到對應至使用者行動電話號碼的有效 Microsoft 365 使用者，連接器會使用嘗試匯入之專案的電子郵件地址屬性值。 如果連接器在自訂對應檔案或 WhatsApp 專案的電子郵件地址屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 封存 WhatsApp 通訊資料所需的部分執行步驟是 Microsoft 365 的外部，必須先完成，您才能在規範中心建立連接器。
 
@@ -86,4 +85,4 @@ ms.locfileid: "47361868"
 
 ## <a name="known-issues"></a>已知問題
 
-- 此時，我們不支援匯入大於 10 MB 的附件，但較大專案的支援將于之後提供。
+- 此時，我們不支援匯入大於 10 MB 的附件或專案。 稍後將提供對較大專案的支援。

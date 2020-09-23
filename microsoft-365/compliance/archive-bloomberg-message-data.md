@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理員可以設定資料連線器，將 Bloomberg 郵件電子郵件工具中的資料匯入和封存至 Microsoft 365。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: b8b144905ad3ff47f54c06985fca9cfef6b70590
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: cc14bd9d76e04fe3e285f63b5dce9dbb1f680794
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358289"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200226"
 ---
-# <a name="set-up-a-connector-to-archive-bloomberg-message-data-preview"></a>設定連接器以封存 Bloomberg 郵件資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-bloomberg-message-data"></a>設定連接器以封存 Bloomberg 郵件資料
 
 使用 Microsoft 365 規範中心的資料連線器，從 [Bloomberg 郵件](https://www.bloomberg.com/professional/product/collaboration/) 共同作業工具匯入及封存金融服務電子郵件資料。 在您設定及設定連接器之後，它會連線到您組織的 Bloomberg secure FTP (SFTP) 網站一次，並將電子郵件專案匯入 Microsoft 365 中的信箱。
 
@@ -41,7 +41,7 @@ ms.locfileid: "47358289"
 
    連接器會使用 CorporateEmailAddress 屬性的值來執行此動作。 每封電子郵件都包含此內容，該屬性會填入電子郵件的每個參與者的電子郵件地址。 除了使用 *CorporateEmailAddress* 屬性的值進行自動使用者對應之外，您也可以透過上載 CSV 對應檔來定義自訂對應。 此對應檔包含組織中每位使用者的 Bloomberg UUID 和對應的 Microsoft 365 信箱位址。 如果您啟用自動使用者對應，並提供自訂對應，則每個電子郵件專案連接器都會先查看自訂對應檔案。 如果找不到對應至使用者 Bloomberg UUID 的有效 Microsoft 365 使用者，連接器會使用電子郵件專案的 *CorporateEmailAddress* 屬性。 如果連接器在自訂對應檔案或電子郵件專案的 *CorporateEmailAddress* 屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 封存 Bloomberg 郵件資料所需的部分執行步驟是 Microsoft 365 的外部，必須先完成，您才能在規範中心建立連接器。
 

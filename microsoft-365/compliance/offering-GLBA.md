@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1b3cf1017a3ed64cecafe269e313ab5a6980af25
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 7969d18bea1e8873651a1ea94e46c6b7a6b48c83
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417727"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208395"
 ---
 # <a name="gramm-leach-bliley-act-glba"></a>Gramm-Leach-Bliley Act (GLBA)
 
@@ -51,6 +51,10 @@ Microsoft 已開發 [azure](https://servicetrust.microsoft.com/ViewPage/TrustDoc
 **如何知道我的金融機構是否必須符合 GLB 法案？**
 
 FTC 會在其 GLB 法案頁面（ [由隱私權規則涵蓋](https://www.ftc.gov/tips-advice/business-center/guidance/how-comply-privacy-consumer-financial-information-rule-gramm#whois)）上詳細解答這一問題？
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+
+[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 
