@@ -18,12 +18,12 @@ search.appverid:
 - BCS160
 ms.assetid: c08786fb-298e-437c-8222-dab7625fc815
 description: 摘要：說明 Microsoft Office 365 元件和 Office 365 政府產品方案中的 IPv6 支援。
-ms.openlocfilehash: c4ecd2ef26ecf660eb1d172b1951907724d2238a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: f671e8caf868ebbed628a155b73ce6fe413949a9
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688414"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235603"
 ---
 # <a name="ipv6-support-in-office-365-services"></a>Office 365 服務中的 IPv6 支援
 
@@ -50,6 +50,10 @@ Office 365 同時支援 IPv6 和 IPv4;不過，並非所有的 Office 365 功能
 ### <a name="skype-for-business-and-ipv6"></a>商務用 Skype 和 IPv6
 
 請注意，商務用 Skype 不支援 IPv6，也無法再啟用。
+
+### <a name="microsoft-teams-and-ipv6"></a>Microsoft 小組和 IPV6
+
+Microsoft 小組直接路由只支援 IPv4。 Microsoft 小組服務和用戶端支援 IPv4 和 IPv6。 如果您想要控制與 Microsoft 小組的通訊，請使用 [Office 365 URLs 和 IP 位址範圍](urls-and-ip-address-ranges.md)中的 ip 位址範圍。
   
 ### <a name="exchange-online-protection-and-ipv6"></a>Exchange Online Protection 和 IPv6
 

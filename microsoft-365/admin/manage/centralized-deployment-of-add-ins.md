@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 判斷您的承租人和使用者是否符合需求，讓您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: 4bd81dcf1d1ee6221a3519baac0a3b1bc63b791f
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131731"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235415"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷集中式部署的增益集是否適用于您的組織
 
@@ -45,7 +45,7 @@ ms.locfileid: "48131731"
   
 ## <a name="requirements"></a>需求
 
-[！注意] 增益集的集中式部署需要使用者使用 Microsoft 365 應用程式的 enterprise (，並使用其組織識別碼) 登入 Office，並擁有 Exchange Online 和 active Exchange Online 信箱。 您的訂閱目錄必須是 in 或同盟至 Azure Active Directory。
+[！重要] 增益集的集中式部署需要使用者使用 Microsoft 365 Apps for enterprise 或 Microsoft 365 Business Premium (，並使用組織識別碼) 登入 Office，並擁有 Exchange Online 和 active Exchange Online 信箱。 您的訂閱目錄必須是 in 或同盟至 Azure Active Directory。
 您可以在下面查看 Office 和 Exchange 的特定需求，或使用[集中式部署相容性檢查](#centralized-deployment-compatibility-checker)程式。
 
 [集中式部署] 不支援下列項目：
@@ -61,11 +61,11 @@ ms.locfileid: "48131731"
 ### <a name="office-requirements"></a>Office 需求
 
 - 若為 Word、Excel 及 PowerPoint 增益集，您的使用者必須使用下列其中一項：
-  - 在 Windows 裝置上，適用于企業的 Microsoft 365 應用程式版本1704或更新版本。
+  - 在 Microsoft 365 應用程式的 Windows 裝置、版本1704或更新版本，或 Microsoft 365 商務版 Premium。
   - 在 Mac 上，版本15.34 或更新版本。
 
 - 對於 Outlook，您的使用者必須使用下列其中一項： 
-  - 適用于企業的 Microsoft 365 應用程式版本1701或更新版本。
+  - 適用于企業的 Microsoft 365 應用程式版本1701或更新版本，或 Microsoft 365 商務版 Premium。
   - Office Professional Plus 2019 或 Office Standard 2019 的版本1808或更新版本。
   - 16.0.4494.1000 或更新版本的 Office Professional Plus 2016 (MSI) 或 Office Standard 2016 (MSI) \*
   - 15.0.4937.1000 或更新版本的 Office Professional Plus 2013 (MSI) 或 Office Standard 2013 (MSI) \*

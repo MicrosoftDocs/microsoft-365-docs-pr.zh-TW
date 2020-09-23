@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: fc800d6f7a63e34f83b089fdea41b68cbf9134da
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214912"
+ms.locfileid: "48235535"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
@@ -30,6 +30,11 @@ Microsoft 365 系統管理中心現在包含從您的 Microsoft 365 租使用者
 **網路評估** 和 **網路洞察力** 會顯示在 Microsoft 365 系統管理中心的 [ **狀況] |連線能力**。
 
 ![網路效能頁面](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
+
+>[!NOTE]
+>Network connectivity test 工具支援位於 WW 和德國的承租人，但不支援 GCC 適中、GCC 高、DoD 或中國。
+
+當您第一次流覽至 [網路性能] 頁面時，您會看到 [一覽表] 窗格，其中包含全域網路效能對應、整個承租人範圍的網路評估，以及目前問題的清單。 您可以從 [概述] 中深入查看特定的網路效能度量和依位置的問題。 如需詳細資訊，請參閱 [Microsoft 365 系統管理中心的網路效能概述](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
 您可能需要代表您的組織加入此功能的公開預覽。 接受通常會立即發生，然後您就會看到 [網路連接] 頁面。 
 

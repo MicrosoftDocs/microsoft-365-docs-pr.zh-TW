@@ -3,7 +3,7 @@ title: 使用 PowerShell 移除使用者帳戶中的 Microsoft 365 授權
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,16 +20,20 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
 description: 說明如何使用 PowerShell 來移除先前指派給使用者的 Microsoft 365 授權。
-ms.openlocfilehash: 815b2290ca3b5ac4ee3cfec87383161ea70f3dca
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7651f300dbf7a57ce163096d500401365e624663
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688340"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235451"
 ---
 # <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>使用 PowerShell 移除使用者帳戶中的 Microsoft 365 授權
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
+
+>[!Note]
+>瞭解如何使用 Microsoft 365 系統管理中心[移除使用者帳戶中的授權](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users)。 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 

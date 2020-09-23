@@ -3,7 +3,7 @@ title: 使用 PowerShell 建立 Microsoft 365 使用者帳戶
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 在本文中，您將瞭解如何使用 PowerShell 來建立使用者帳戶或多個 Microsoft 365 使用者帳戶。
-ms.openlocfilehash: 53077352862b6d0df6bb569300e2d8bc2475df91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 00ae8806e786eada092704febd65c72c72382788
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688629"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235591"
 ---
 # <a name="create-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 建立 Microsoft 365 使用者帳戶
 
@@ -42,7 +42,10 @@ ms.locfileid: "46688629"
 |**LicenseAssignment** <br/> |否  <br/> |這是授權方案 (也稱為授權計畫或 SKU) ，可將可用的授權指派給使用者帳戶。 授權會定義可供帳戶使用的 Microsoft 365 服務。 當您建立帳戶時，您不需要指派授權給使用者，但是需要授權才能存取 Microsoft 365 服務。 建立使用者帳戶之後，您有 30 天的時間進行使用者帳戶授權。 |
 |**Password** <br/> |否  <br/> | 如果您未指定密碼，則會指派隨機密碼給使用者帳戶，並可在命令結果中看見此密碼。如果您指定密碼，該密碼必須是下列任三種類型的 8 到 16 個 ASCII 文字：小寫字母、大寫字母、數字和符號。 <br/> |
 |**UsageLocation** <br/> |否  <br/> |這是有效的 ISO 3166-1 alpha-2 國碼。 例如，US 代表美國、FR 代表法國。 提供此值很重要，因為某些國家/地區無法使用某些 Microsoft 365 服務，因此除非該帳戶已設定此值，否則您無法指派授權給使用者帳戶。 如需詳細資訊，請參閱 [關於授許可權制](https://go.microsoft.com/fwlink/p/?LinkId=691730)。  <br/> |
-   
+
+>[!Note]
+>瞭解如何使用 Microsoft 365 系統管理中心[建立使用者帳戶](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users)。 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+>   
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 

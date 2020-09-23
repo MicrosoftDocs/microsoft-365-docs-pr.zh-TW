@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c6643b30327b7f362c4649c2be1b1eea81ff3523
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2d9d166c8e9fd16b09964c75a3b6bace05265120
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203616"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235463"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -33,8 +33,10 @@ ms.locfileid: "48203616"
 
 ## <a name="proposed-changes"></a>建議變更
 
-### <a name="september-2020"></a>2020 年 9 月
-- 未計畫變更
+### <a name="october-2020"></a>10月2020
+
+#### <a name="remove-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>移除 Microsoft Defender 高級威脅防護的改進動作
+- 設定 Microsoft Defender SmartScreen Windows 應用程式 web 內容檢查以警告
 
 ## <a name="related-resources"></a>相關資源
 

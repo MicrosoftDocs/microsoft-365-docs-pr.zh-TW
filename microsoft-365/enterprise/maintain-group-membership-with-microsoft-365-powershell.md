@@ -3,7 +3,7 @@ title: 維護使用 PowerShell 的 Microsoft 365 群組成員資格
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 瞭解如何使用 PowerShell 維護 Microsoft 365 群組中的成員資格。
-ms.openlocfilehash: 61bdcb96433f4f384033768debf416900a305624
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 464ebcebe87fcd7ce081de85e75acf76cd6d5a46
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688748"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235627"
 ---
 # <a name="maintain-microsoft-365-group-membership-with-powershell"></a>維護使用 PowerShell 的 Microsoft 365 群組成員資格
 
@@ -34,6 +34,10 @@ ms.locfileid: "46688748"
 
 > [!TIP]
 > 若要透過指定使用者帳戶和群組名稱來產生現成的 PowerShell 命令，請使用此 [群組維護 Microsoft Excel 活頁簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/maintain-group-membership-with-microsoft-365-powershell/GroupMaintPowerShellGenerator.xlsx)。 
+
+>[!Note]
+>瞭解如何使用 Microsoft 365 admin center[維護 microsoft 365 群組成員資格](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)。 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+>
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。

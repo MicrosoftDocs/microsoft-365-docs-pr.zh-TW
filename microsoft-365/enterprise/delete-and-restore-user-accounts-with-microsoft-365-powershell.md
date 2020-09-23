@@ -3,7 +3,7 @@ title: 使用 PowerShell 刪除 Microsoft 365 使用者帳戶
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/17/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,16 +20,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
 description: 在本文中，您將瞭解如何在 PowerShell 中使用不同的模組，以刪除 Microsoft 365 使用者帳戶。
-ms.openlocfilehash: 6da2d83b3f305db09f8c1d02f54e643a0ad1978b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0c13b57c13fb3d01d648438a5d6973fea8b9db67
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688622"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235439"
 ---
 # <a name="delete-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 刪除 Microsoft 365 使用者帳戶
 
-您可以使用 Microsoft 365 的 PowerShell 刪除使用者帳戶。
+您可以使用 Microsoft 365 的 PowerShell 來刪除及還原使用者帳戶。
+
+>[!Note]
+>瞭解如何使用 Microsoft 365 系統管理中心[還原使用者帳戶](https://docs.microsoft.com/microsoft-365/admin/add-users/restore-user)。 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+>   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 

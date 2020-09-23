@@ -3,7 +3,7 @@ title: 使用 PowerShell 將角色指派給 Microsoft 365 使用者帳戶
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
+ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
 description: 在本文中，瞭解如何使用 Microsoft 365 將角色指派給使用者帳戶，以快速且輕鬆地使用 PowerShell。
-ms.openlocfilehash: 4726dcea109490ff28299002bc5263aa15dca949
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 9df1b018cf3e89e0afbd5265fdd1ec9f92b34aec
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688298"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235427"
 ---
 # <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 將角色指派給 Microsoft 365 使用者帳戶
 
@@ -34,7 +34,7 @@ ms.locfileid: "46688298"
 您可以使用 Microsoft 365 PowerShell，快速且輕鬆地將角色指派給使用者帳戶。
 
 >[!Note]
->若要使用 Microsoft 365 系統管理中心指派角色給使用者帳戶，請參閱 [這些指示](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)。
+>瞭解如何使用 Microsoft 365 系統管理中心[指派角色給使用者帳戶](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)。 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell

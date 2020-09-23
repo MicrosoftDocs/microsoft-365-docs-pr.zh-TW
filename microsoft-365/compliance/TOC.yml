@@ -14,6 +14,8 @@
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Office 365 中的安全性與合規性計劃
       href: plan-for-security-and-compliance.md
+    - name: 合規性擴充性
+      href: compliance-extensibility.md
 - name: 管理測試人員風險
   items:
     - name: 測試人員風險管理
@@ -258,6 +260,8 @@
               href: retention-policies-sharepoint.md
             - name: 適用於 Microsoft Teams 的保留
               href: retention-policies-teams.md
+            - name: 適用於 Yammer 的保留
+              href: retention-policies-yammer.md
             - name: 適用於 Exchange 的保留
               href: retention-policies-exchange.md
         - name: 開始使用保留
@@ -310,8 +314,52 @@
               href: archive-instant-bloomberg-data.md
             - name: LinkedIn
               href: archive-linkedin-data.md
+            - name: 實體頒發徽章資料
+              href: import-physical-badging-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
+        - name: Globanet 資料連接器
+          items:
+            - name: EML
+              href: archive-eml-data.md
+            - name: FX Connect
+              href: archive-fxconnect-data.md
+            - name: Reuters Eikon
+              href: archive-reuterseikon-data.md
+            - name: Slack
+              href: archive-slack-data.md
+            - name: Symphony
+              href: archive-symphony-data.md
+            - name: 文字分隔
+              href: archive-text-delimited-data.md
+            - name: Webex Teams
+              href: archive-webexteams-data.md
+            - name: Facebook Workplace
+              href: archive-workplacefromfacebook-data.md
+            - name: Zoom Meetings
+              href: archive-zoommeetings-data.md
+            - name: Slack
+              href: archive-slack-data.md
+            - name: Zoom Meetings
+              href: archive-zoommeetings-data.md
+        - name: TeleMessage 資料連接器
+          items:
+            - name: Android
+              href: archive-android-archiver-data.md
+            - name: AT&T Network
+              href: archive-att-network-archiver-data.md
+            - name: Bell Network
+              href: archive-bell-network-data.md
+            - name: 企業編號
+              href: archive-enterprise-number-data.md
+            - name: O2 Network
+              href: archive-o2-network-data.md
+            - name: TELUS Network
+              href: archive-telus-network-data.md
+            - name: Verizon Network
+              href: archive-verizon-network-data.md
+            - name: WhatsApp
+              href: archive-whatsapp-data.md
         - name: 與合作夥伴配合以封存第三方資料
           href: work-with-partner-to-archive-third-party-data.md
         - name: 搜尋第三方資料
@@ -794,31 +842,30 @@
       href: alert-policies.md
 - name: 管理合規性風險
   items:
+    - name: 合規性管理員
+      items:
+        - name: 了解合規性管理員
+          href: compliance-manager.md
+        - name: 合規性管理員快速入門
+          href: compliance-manager-quickstart.md
+        - name: '開始使用 [合規性管理員]'
+          href: compliance-manager-setup.md
+        - name: 建置及管理評估
+          href: compliance-manager-assessments.md
+        - name: 使用評估範本
+          href: compliance-manager-templates.md
+        - name: 合規性管理員範本清單
+          href: compliance-manager-templates-list.md
+        - name: 指派並完成改進動作
+          href: compliance-manager-improvement-actions.md
+        - name: 如何計算合規性分數
+          href: compliance-score-calculation.md
+        - name: 常見問題集 (FAQ)
+          href: compliance-manager-faq.md
+        - name: 合規性管理員 (傳統)
+          href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft 服務信任入口網站
       href: get-started-with-service-trust-portal.md
-    - name: 合規性分數和合規性管理員 (預覽)
-      items:
-        - name: 合規性分數 (預覽)
-          href: compliance-score.md
-        - name: 設定合規性分數
-          href: compliance-score-setup.md
-        - name: 使用評估自訂合規性分數
-          href: compliance-score-assessments.md
-        - name: 使用改善動作指派和執行工作
-          href: compliance-score-improvement-actions.md
-        - name: 如何計算成績
-          href: compliance-score-methodology.md
-        - name: 常見問題集 (FAQ)
-          href: compliance-score-faq.md
-        - name: 合規性管理員 (預覽)
-          href: compliance-manager-overview.md
-          items:
-            - name: 合規性管理員的新增功能 (預覽)
-              href: compliance-manager-release-notes.md
-            - name: 使用合規性管理員 (預覽版)
-              href: working-with-compliance-manager.md
-            - name: 合規性管理員 (傳統)
-              href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR 資料主體要求工具
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
     - name: GDPR 的 Office 365 資訊保護

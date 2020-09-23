@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c7026dcc09207ce1b6fa911bf20683e4e642eee5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 757da7f0fb3089c358333ac5f49140d965476945
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397595"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235403"
 ---
 # <a name="contact-support-for-india"></a>印度的連絡人支援
 
@@ -27,14 +27,16 @@ ms.locfileid: "44397595"
 ## <a name="phone-number"></a>電話號碼
 000 800 440 2038
 
+本機免費
+
 ## <a name="hours"></a>小時
-### <a name="billing-support"></a>帳單支援：
+### <a name="billing-support"></a>帳單支援︰
 
 英文：週一至週五上午9點-下午6點
 
 ### <a name="technical-support"></a>技術支援：
 
-英文：每週7天、每天24小時
+英文：全年無休
 
 替代電話號碼： 1800 200 2052
 
