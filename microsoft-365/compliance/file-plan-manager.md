@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 檔案計畫為保留標籤提供進階管理功能。
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: a92f835658bdeedbc64d3d4f2349900e30ec6dda
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: c56f71032ccf154e5d9f416b42df1345da03d9a4
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47427022"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199014"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>使用檔案計畫來管理保留標籤
 
@@ -81,6 +81,7 @@ ms.locfileid: "47427022"
 - [記錄中]**** 可識別套用標籤時，項目是否標記為記錄。 有效值：
     - 否
     - 是
+    - Yes(Regulatory)
 
 - [保留期間]**** 可識別保留期間。 有效值：
     - 天

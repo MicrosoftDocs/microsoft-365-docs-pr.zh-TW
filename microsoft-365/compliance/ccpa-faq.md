@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: fa0c37d6a077810668472c2b7feeaf852e497c96
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: b76eb26ae0065a681f50c7839f261947ab2084c9
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416333"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199510"
 ---
 # <a name="california-consumer-privacy-act-ccpa-frequently-asked-questions"></a>加州消費者隱私法 (CCPA) 常見問題集
 
@@ -100,7 +100,7 @@ CCPA 中的私人訴訟權僅限於資料外洩。 根據私人訴訟權，每�
 
 **有哪些工具可以協助我的組織開始為 CCPA 做好準備？**
 
-- 開始運用合規性分數中的 GDPR 評估，作為 CCPA 隱私權計畫的一部分。
+- 開始運用合規性管理員中的 GDPR 評估，作為 CCPA 隱私權計畫的一部分。
 - 建立可有效回應消費者要求的流程。
 - 設定標籤和原則以探索、分類並加上標籤，以及使用 Microsoft 資訊保護來保護敏感性資料。
 - 使用電子郵件加密功能進一步控制敏感性資訊。

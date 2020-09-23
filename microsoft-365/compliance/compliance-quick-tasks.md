@@ -12,12 +12,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: 深入瞭解將協助您快速開始使用 Microsoft 365 中的合規性的工作。
-ms.openlocfilehash: 1702c05b271c0e8b5456c1a93f8bf1dc28f7fbd9
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: d2399b65e6f8d2765d3fc8691b0e395f113092f1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816812"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200836"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>開始使用 Microsoft 365 合規性的快速工作
 
@@ -31,7 +31,7 @@ ms.locfileid: "47816812"
 
 請務必管理貴組織中的哪些人員可以存取 Microsoft 365 合規性中心，以查看內容和執行管理工作。 Microsoft 365 提供與相容性和使用 Microsoft 365 規範中心所包含之工具相關的管理角色。
 
-從為組織中的人員指派合規性許可權開始，讓他們能夠執行這些工作，並防止未經授權的人員存取其責任以外的區域。 在您開始設定及執行 Microsoft 365 隨附的規範解決方案之前，您會想確定已將適當的人員指派給 **合規性資料管理員** 和 **合規性管理員** 管理員角色。 您也需要將使用者指派至 Azure Active Directory 全域讀取器角色，以查看合規性分數中的資料。
+從為組織中的人員指派合規性許可權開始，讓他們能夠執行這些工作，並防止未經授權的人員存取其責任以外的區域。 在您開始設定及執行 Microsoft 365 隨附的規範解決方案之前，您會想確定已將適當的人員指派給 **合規性資料管理員** 和 **合規性管理員** 管理員角色。 您也需要指派 Azure Active Directory 全域讀取器角色的使用者，以在合規性管理員中查看資料。
 
 如需設定許可權並指派系統管理員角色的逐步指引，請參閱 [安全性 & 合規性中心的許可權](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。
 
@@ -39,9 +39,9 @@ ms.locfileid: "47816812"
 
 如果您不知道所在的位置，很難知道要移往何處。 符合您的合規性需求，包括瞭解目前的風險層級，以及這些不斷變更的時間可能需要哪些更新。 您的組織是否為符合性需求的新功能，或具備管理您行業之標準及規定的深度經驗，您可以採取的單一最佳做法，以瞭解您的組織所在的位置。
 
-[Microsoft 合規性分數](compliance-score.md) 可協助您瞭解組織的合規性狀況，並強調可能需要改進的區域。 合規性分數使用集中式儀表板計算以風險為基礎的分數，測量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 您也可以使用合規性分數來追蹤所有風險評估。 它提供工作流程功能，協助您透過一般工具，有效地完成風險評估。
+[Microsoft 合規性管理員](compliance-manager.md) 可協助您瞭解組織的合規性狀況，並強調可能需要改進的區域。 合規性管理員使用集中式儀表板計算以風險為基礎的分數，測量您在完成動作方面的進展，以協助降低資料保護和法規標準的風險。 您也可以使用合規性管理員來追蹤所有風險評估。 它提供工作流程功能，協助您透過一般工具，有效地完成風險評估。
 
-如需開始使用合規性分數的逐步指引，請參閱 [設定合規性分數](compliance-score-setup.md)。
+如需開始使用合規性管理員的逐步指引，請參閱 [合規性管理員](compliance-manager-setup.md)入門。
 
 >[!IMPORTANT]
 >對大多數的組織而言，安全性和合規性已緊密整合。 您的組織必須處理基本的安全性、威脅防護和身分識別與存取管理區域，以協助為安全性和合規性提供深層防禦方法。

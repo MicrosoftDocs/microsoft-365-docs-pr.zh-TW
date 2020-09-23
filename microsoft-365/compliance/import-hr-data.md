@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定資料連線器，將員工資料從組織的人力資源 (HR) 系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: a8eaeda3bc883de55a2c588e39557b4517ae3cc5
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 31afa01a518028e7ec25116e947b4e0d6dc94dac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817158"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201542"
 ---
-# <a name="set-up-a-connector-to-import-hr-data-preview"></a>設定連接器以匯入 HR 資料 (預覽) 
+# <a name="set-up-a-connector-to-import-hr-data"></a>設定連接器以匯入人力資源資料
 
 您可以設定 Microsoft 365 規範中心內的資料連線器，以匯入人力資源 (HR) 與事件相關的資料，例如使用者的辭職程度或使用者工作階層中的變更。 使用者可以使用 HR 資料來 [產生風險指示器，以協助](insider-risk-management.md) 您識別組織內使用者可能的惡意活動或資料竊取。
 
@@ -219,7 +219,7 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下左側導覽中的 [ **資料連線器** ]。
 
-2. 在 [ **資料 (預覽 ** ] 的 [資料連線線]) ] 頁面 **上，按一下**[ **View**]。
+2. 在 [ **HR**] 底下的 [**資料連線器**] 頁面上，按一下 [ **View**]。
 
 3. 在 **HR 自訂** 頁面上，按一下 [ **新增連接器**]。
 

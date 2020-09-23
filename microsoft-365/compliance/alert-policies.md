@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全性與合規性中心建立警示原則，以監視潛在威脅、資料遺失和許可權問題。
-ms.openlocfilehash: 5f4c715058c7fd9a98dc268b18cc487af4c1ae10
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962674"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200582"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全性與合規性中心的警示原則
 
@@ -205,7 +205,7 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 
 若要查看指派預設警示原則的類別，請參閱「 [預設警示原則](#default-alert-policies) 」區段中的表格。
 
-|&nbsp;|資訊管理|資料外洩防護|郵件流程|權限|威脅管理|其他人|
+|角色|資訊管理|資料外洩防護|郵件流程|權限|威脅管理|其他人|
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |稽核記錄|||||||
 |案例管理|||||||
