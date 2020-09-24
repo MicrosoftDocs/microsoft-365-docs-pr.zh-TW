@@ -2,9 +2,9 @@
 title: 安裝精靈與安裝頁面之間的差異
 f1.keywords:
 - NOCSH
-ms.author: v-sharos
-author: shars
-manager: mnirkhe
+ms.author: sirkkuw
+author: Sirkkuw
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,21 +20,21 @@ search.appverid:
 - MOE150
 - BEA160
 description: 瞭解安裝精靈與設定頁面之間的差異。
-ms.openlocfilehash: eecc86b1d2a23ea2940a68c9edee3e33a5f5339e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: dd04920c1c686cd0082b0d3c11cc7869e5d3f4eb
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398855"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245922"
 ---
 # <a name="difference-between-the-setup-wizard-and-the-setup-page"></a>安裝精靈與安裝頁面之間的差異
 
 Microsoft 365 提供兩種安裝體驗： 
 
 - 使用設定向導初始設定
-- 使用**設定**頁面進行持續及高級設定
+- 使用 **設定** 頁面進行持續及高級設定
 
-安裝精靈提供設定基本 Microsoft 365 設定的指導性逐步解說。 完成初始設定之後，您可以移至 [**設定**] 頁面，以完成您訂閱所附帶的服務的設定和設定。
+安裝精靈提供設定基本 Microsoft 365 設定的指導性逐步解說。 完成初始設定之後，您可以移至 [ **設定** ] 頁面，以完成您訂閱所附帶的服務的設定和設定。
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>使用設定向導完成初始設定工作
 
@@ -60,12 +60,12 @@ Microsoft 365 提供兩種安裝體驗：
 
 ![Microsoft 365 商務版安裝頁面](../../media/o365b-setup-page.png)
 
-選擇 [View] （**查看**）任何工作以取得一覽資訊，例如任務描述、使用者影響、必要條件、實施工作以及安全性和採用統計資料，以協助您在繼續進行之前瞭解結果和影響。
+選擇 [View] （ **查看** ）任何工作以取得一覽資訊，例如任務描述、使用者影響、必要條件、實施工作以及安全性和採用統計資料，以協助您在繼續進行之前瞭解結果和影響。
 
-您也會看到任務的狀態（[**已開始**]、[**尚未開始**] 或 [**已完成**]）。 如果您是多工作、在數天內執行工作，或是有多個系統管理員在處理任務，您可以快速查看已完成的工作，以及哪些任務仍需要注意，以追蹤完成。 
+您也會看到 (**已開始**、尚未 **開始**或 **已完成**) 的任務狀態。 如果您是多工作、在數天內執行工作，或是有多個系統管理員在處理任務，您可以快速查看已完成的工作，以及哪些任務仍需要注意，以追蹤完成。 
 
-若要存取有關您所設定之功能的綜合性文章，請選取任何 [**深入瞭解**] 連結。 工作的集合永遠都在這裡，所以您可以隨時回到**Setup**頁面以進一步探索資源。
+若要存取有關您所設定之功能的綜合性文章，請選取任何 [ **深入瞭解** ] 連結。 工作的集合永遠都在這裡，所以您可以隨時回到 **Setup** 頁面以進一步探索資源。
 
-當您準備好完成工作時，請選取 [**開始**使用] 以逐步執行設定程式。 完成工作之後，[**開始**使用] 按鈕會變更為 [**管理**] 按鈕，讓您可以視需要管理工作。
+當您準備好完成工作時，請選取 [ **開始** 使用] 以逐步執行設定程式。 完成工作之後，[ **開始** 使用] 按鈕會變更為 [ **管理** ] 按鈕，讓您可以視需要管理工作。
 
 ![顯示一覽資訊的任務檢視](../../media/o365b-at-a-glance.png)

@@ -1,8 +1,8 @@
 ---
-title: 建立共同作業的團隊
+title: 建立共同作業小組
 f1.keywords:
 - NOCSH
-ms.author: stevhord
+ms.author: samanro
 author: samanro
 manager: scotv
 ms.audience: Admin
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 團隊建立小組的共同作業空間。
-ms.openlocfilehash: c5c484b2787bf3e819a723a3b5648106dcf75602
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: 7a07b7b90f5c89f6b1c6a6dd17145ca11af5dfa6
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079782"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245842"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>在 Microsoft 小組中建立共同作業的團隊
 
@@ -48,8 +48,8 @@ Microsoft 團隊是一種共同作業應用程式，可協助您的員工從任�
 
 當您建立小組時，以下是另一個建立的內容：
 
-- 新的[Microsoft 365 群組](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
-- 用於儲存小組檔案的[SharePoint 線上](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact)網站和文件庫
+- 新的 [Microsoft 365 群組](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- 用於儲存小組檔案的 [SharePoint 線上](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) 網站和文件庫
 - [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact)共用信箱和行事曆
 - OneNote 筆記本
 - 與其他 Office 365 應用程式（如 Planner 和 Power BI）進行結合
@@ -81,9 +81,9 @@ Microsoft 團隊是一種共同作業應用程式，可協助您的員工從任�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-深入瞭解 microsoft 小組的[microsoft 團隊技術檔](https://docs.microsoft.com/microsoftteams/microsoft-teams)
+深入瞭解 microsoft 小組的 [microsoft 團隊技術檔](https://docs.microsoft.com/microsoftteams/microsoft-teams)
 
 ## <a name="admin-settings"></a>系統管理設定
 
-您必須是系統管理員，才可建立整個組織的團隊。 如需詳細資訊，請參閱[什麼是 Microsoft 365 中的管理員？](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
+您必須是系統管理員，才可建立整個組織的團隊。 如需詳細資訊，請參閱 [什麼是 Microsoft 365 中的管理員？](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)。
   

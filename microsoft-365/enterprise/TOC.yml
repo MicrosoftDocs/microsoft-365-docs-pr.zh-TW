@@ -269,6 +269,8 @@
       items:
         - name: 新增網域
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+        - name: 設定指南
+          href: setup-guides-for-microsoft-365.md
     - name: 多個租用戶
       items:
         - name: 租用戶間共同作業
@@ -355,38 +357,40 @@
         - name: 僅雲端身分識別
           href: cloud-only-identities.md
         - name: 混合式身分識別
-          href: prepare-for-directory-synchronization.md
-        - name: 準備無法路由傳送的網域，以用於目錄同步處理
-          href: prepare-a-non-routable-domain-for-directory-synchronization.md
-        - name: 設定目錄同步處理
-          href: set-up-directory-synchronization.md
+          items:
+            - name: 為目錄同步作業做好準備
+              href: prepare-for-directory-synchronization.md
+            - name: 準備無法路由傳送的網域，以用於目錄同步處理
+              href: prepare-a-non-routable-domain-for-directory-synchronization.md
+            - name: 設定目錄同步處理
+              href: set-up-directory-synchronization.md
+            - name: 混合式解決方案
+              items:
+                - name: 概觀
+                  href: hybrid-solutions.md
+                - name: 使用適用於 SharePoint Server 2016 驗證的 Azure Active Directory
+                  href: using-azure-ad-for-sharepoint-server-authentication.md
+                - name: 使內部部署網路與 Azure 虛擬網路連線
+                  href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
+                - name: 在 Azure IaaS 中部署目錄同步處理伺服器
+                  href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
+                - name: 部署 Azure 中的高可用性同盟驗證
+                  href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
+                  items:
+                    - name: 階段 1 - 設定 Azure
+                      href: high-availability-federated-authentication-phase-1-configure-azure.md
+                    - name: 階段 2 - 設定網域控制器
+                      href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
+                    - name: 階段 3 - 設定 AD FS 伺服器
+                      href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
+                    - name: 階段 4 - 設定網路應用程式 Proxy
+                      href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
+                    - name: 階段 5 - 設定同盟驗證
+                      href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
+                - name: Microsoft Azure 中的 SharePoint Server 2013 災害復原
+                  href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
         - name: 安全使用者登入
           href: microsoft-365-secure-sign-in.md
-        - name: 混合式解決方案
-          items:
-            - name: 概觀
-              href: hybrid-solutions.md
-            - name: 使用適用於 SharePoint Server 2016 驗證的 Azure Active Directory
-              href: using-azure-ad-for-sharepoint-server-authentication.md
-            - name: 使內部部署網路與 Azure 虛擬網路連線
-              href: connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md
-            - name: 在 Azure IaaS 中部署目錄同步處理伺服器
-              href: deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md
-            - name: 部署 Azure 中的高可用性同盟驗證
-              href: deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md
-              items:
-                - name: 階段 1 - 設定 Azure
-                  href: high-availability-federated-authentication-phase-1-configure-azure.md
-                - name: 階段 2 - 設定網域控制器
-                  href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
-                - name: 階段 3 - 設定 AD FS 伺服器
-                  href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
-                - name: 階段 4 - 設定網路應用程式 Proxy
-                  href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
-                - name: 階段 5 - 設定同盟驗證
-                  href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
-            - name: Microsoft Azure 中的 SharePoint Server 2013 災害復原
-              href: sharepoint-server-2013-disaster-recovery-in-microsoft-azure.md
     - name: 管理
       items:
         - name: 將授權指派給使用者帳戶
@@ -565,7 +569,7 @@
               href: block-user-accounts-with-microsoft-365-powershell.md
         - name: 授權與服務
           items:
-            - name: 檢視
+            - name: 檢視授權與服務
               href: view-licenses-and-services-with-microsoft-365-powershell.md
             - name: 檢視授權和未授權使用者
               href: view-licensed-and-unlicensed-users-with-microsoft-365-powershell.md
@@ -573,6 +577,8 @@
               href: assign-licenses-to-user-accounts-with-microsoft-365-powershell.md
             - name: 檢視帳戶授權與服務詳細資料
               href: view-account-license-and-service-details-with-microsoft-365-powershell.md
+            - name: 從使用者帳戶移除授權
+              href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
             - name: 停用服務存取權
               href: disable-access-to-services-with-microsoft-365-powershell.md
               items:
@@ -580,8 +586,6 @@
                   href: disable-access-to-sway-with-microsoft-365-powershell.md
                 - name: 停用服務存取權，並指派使用者授權
                   href: disable-access-to-services-while-assigning-user-licenses.md
-                - name: 從使用者帳戶移除授權
-                  href: remove-licenses-from-user-accounts-with-microsoft-365-powershell.md
         - name: 群組
           items:
             - name: 維護群組成員資格

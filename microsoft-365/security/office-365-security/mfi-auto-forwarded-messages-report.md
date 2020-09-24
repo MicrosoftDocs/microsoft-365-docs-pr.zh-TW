@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 系統管理員可以在安全性 & 合規性中心的郵件流程儀表板中瞭解自動轉寄的郵件報告。
-ms.openlocfilehash: b5255a95718fa6624c85e93a19c8accf9c3dcdb2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d4b772e6392e0af22e6bed475970f637ed03dcb1
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199356"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245944"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心內，自動轉寄的郵件會深入瞭解
 
@@ -35,7 +35,7 @@ ms.locfileid: "48199356"
 
   - **依郵件流程規則**
   - **依收件匣規則**
-  - **透過 SMTP 轉送**
+  - 依照**SMTP**轉寄：這是系統管理員可以在信箱上設定的自動轉寄，如[設定信箱的電子郵件](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)轉寄中所述。
   - 有關詳細資訊，請查看 [轉接報告](view-mail-flow-reports.md#forwarding-report) 的連結。
 
 - **依網域和使用者自動轉寄郵件**：
