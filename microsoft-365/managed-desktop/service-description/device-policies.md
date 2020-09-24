@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 319b26261f623a7e19e5bb8fbcd0b5d8a50d10a8
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: a76bae70adeb07d9ea0574a25bac14f89a0a790d
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289706"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262214"
 ---
 # <a name="device-configuration"></a>裝置設定
 
@@ -42,7 +42,7 @@ Microsoft 受管理的桌面推薦的安全性範本 | 一組建議變更的安�
 流量計費連接 | 根據預設， **> 更新 > 高級選項**的 [設定] 中的「 (例如 LTE 網路) 等方式來更新。 如果您想要允許所有使用者透過流量計費連線啟用更新，請 [提交變更要求](../working-with-managed-desktop/admin-support.md)，它會針對所有裝置開啟此設定。
 | 裝置合規性 | 這些原則是針對所有 Microsoft 受管理的桌面裝置進行設定。 從我們所需的安全性設定 drifts 時，裝置會報告為不相容。
 
-## <a name="diagnostic-data"></a>診斷資料
+## <a name="windows-diagnostic-data"></a>Windows 診斷資料
 
  裝置將設定為以已知的商業識別碼在 Microsoft 提供增強的診斷資料。 在 Microsoft 受管理的電腦中，IT 系統管理員無法變更這些設定。 針對一般資料保護法規中的客戶 (GDPR) 地區，使用者可以降低所提供的診斷資料層級，但會減少服務。 例如，Microsoft 受管理的電腦將無法收集必要的資料，以重複執行設定和原則，以最佳的效能與安全性需求。 如需詳細資訊，請參閱 [在您的組織中設定 Windows 診斷資料。](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enhanced-level)
 
