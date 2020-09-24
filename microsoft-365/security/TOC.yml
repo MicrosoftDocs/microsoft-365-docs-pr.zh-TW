@@ -498,6 +498,8 @@
               href: ./office-365-security/attack-simulator.md
             - name: Office 365 ATP 中的安全文件
               href: ./office-365-security/safe-docs.md
+            - name: Office 365 ATP 中的使用者標記
+              href: ./office-365-security/user-tags.md
             - name: 威脅總管 (及即時偵測)
               href: ./office-365-security/threat-explorer.md
               items:
