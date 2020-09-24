@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: 5d776fcf816359fd30c750b9bebe536269a2b6c5
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 8ee871ccde30d3ab71dbcb2d5183aafdf11482bd
+ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208095"
+ms.lasthandoff: 09/23/2020
+ms.locfileid: "48235569"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -206,6 +206,13 @@ ms.locfileid: "48208095"
 - 國際 原子能 機構
 
 ## <a name="australia-business-number"></a>澳大利亞商務電話號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
+
 
 ### <a name="format"></a>格式
 
@@ -261,6 +268,12 @@ ms.locfileid: "48208095"
 - businessno#
 
 ## <a name="australia-company-number"></a>澳大利亞公司號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -689,6 +702,12 @@ OR
 - fuhrerschein republik osterreich
 
 ## <a name="austria-identity-card"></a>奧地利身分識別卡
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -761,20 +780,38 @@ OR
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_passport_number" />
-          <Match idRef="Keywords_austria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_austria_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_austria_eu_passport_number"></a>Keywords_austria_eu_passport_number
 
-- 護照號碼
-- 奧地利護照號碼
-- 護照否
-- reisepass
-- österreichisch reisepass
+- reisepassnummer
+- reisepasse
+- 非 Reisepass 
+- Nr-Reisepass
+- Reisepass-Nr
+- Passnummer
+- reisepässe
 
 ## <a name="austria-social-security-number-or-equivalent-identification"></a>奧地利的社會安全號碼或同等身分識別
 這個敏感資訊類型實體只有歐盟社會保險號碼或同等識別碼的敏感資訊類型提供。
@@ -904,6 +941,12 @@ OR
 - 納稅號碼
  
 ## <a name="austria-value-added-tax"></a>奧地利加值稅
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -1621,23 +1664,42 @@ OR
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_belgium__eu_passport_number" />
-          <Match idRef="Keywords_belgium_eu_passport_number" />
+          <IdMatch idRef="Regex_belgium_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_belgium_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
 
-- 護照號碼
-- 比利時護照號碼
-- 護照否
-- paspoort
+- numéro passeport
+- paspoort nr
+- paspoort-nr
 - paspoortnummer
+- paspoortnummers
+- Passeport 購買
+- Passeport livre
+- 傳遞-Nr
+- Passnummer
 - reisepass kein
-- reisepass
 
 ## <a name="belgium-social-security-number-or-equivalent-identification"></a>比利時社會安全號碼或對等身分識別
 這個敏感資訊類型實體只有歐盟社會保險號碼或同等識別碼的敏感資訊類型提供。
@@ -1701,6 +1763,12 @@ OR
 
 
 ## <a name="belgium-value-added-tax-number"></a>比利時增值的納稅號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -2017,6 +2085,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="bulgaria-uniform-civil-number"></a>保加利亞統一的民事編號
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -2128,26 +2202,40 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_bulgaria_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_bulgaria_eu_passport_number` 。 
+- `Keywords_bulgaria_eu_passport_number`找到或的關鍵字 `Keywords_eu_passport_number_common` 。 
 
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
-          <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_bulgaria_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_bulgaria_eu_passport_number"></a>Keywords_bulgaria_eu_passport_number
 
-- 護照號碼
-- 保加利亞文護照號碼
-- 護照否
 - номер на паспорта
-
+- номер на паспорт
+- паспорт否
 
 ## <a name="canada-bank-account-number"></a>加拿大銀行帳戶號碼
 
@@ -3265,26 +3353,40 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_croatia_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_croatia_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_croatia_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_passport_number" />
-          <Match idRef="Keywords_croatia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_croatia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
-- 護照號碼
-- 克羅地亞護照號碼
-- 護照否
 - broj putovnice
-
+- Br。 Putovnice
+- br putovnice
    
 ## <a name="croatia-personal-identification-oib-number"></a>克羅地亞個人身分識別 (OIB) 號碼
 
@@ -3471,6 +3573,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="cyprus-identity-card"></a>賽普勒斯身分識別卡片
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -3531,29 +3639,57 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_cyprus_eu_passport_number` 找到符合模式的內容。
-- 找到來自的關鍵字  `Keywords_cyprus_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_cyprus_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_passport_number" />
-          <Match idRef="Keywords_cyprus_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_cyprus_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_cyprus_eu_passport_number"></a>Keywords_cyprus_eu_passport_number
 
-- 護照號碼
-- 賽普勒斯護照號碼
-- 護照否
 - αριθμό διαβατηρίου
-
+- pasaportu
+- Αριθμός Διαβατηρίου
+- κυπριακό διαβατήριο
+- διαβατήριο#
+- διαβατήριο
+- αριθμός διαβατηρίου
+- Pasaport Kimliği
+- pasaport numarası
+- Pasaport 編號
+- Αρ. Διαβατηρίου
 
 ## <a name="cyprus-tax-identification-number"></a>賽普勒斯納稅識別號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -3699,27 +3835,43 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_czech_republic_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_czech_republic_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_czech_republic_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_passport_number" />
-          <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_czech_republic_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_czech_republic_eu_passport_number"></a>Keywords_czech_republic_eu_passport_number
 
-- 護照號碼
-- 捷克護照號碼
-- 護照否
 - cestovní pas
-- Pas
+- číslo pasu
+- cestovní pasu
+- passeport 否
+- čísla pasu
 
 
 ## <a name="czech-personal-identity-number"></a>捷克個人身分識別號碼
@@ -3954,31 +4106,44 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_denmark_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_denmark_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_denmark_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_passport_number" />
-          <Match idRef="Keywords_denmark_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_denmark_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_denmark_eu_passport_number"></a>Keywords_denmark_eu_passport_number
 
-- 護照號碼
-- 丹麥文護照號碼
-- 護照否
-- Pas
 - pasnummer
+- Passeport n °
+- pasnumre
 
 
 ## <a name="denmark-personal-identification-number"></a>丹麥個人身分識別號碼
-這種敏感資訊類型的實體包含在歐盟國身分識別號碼機密資訊類型中，並可作為獨立的機密資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -4244,6 +4409,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="estonia-personal-identification-code"></a>愛沙尼亞個人識別碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -4343,26 +4514,39 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_estonia_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_estonia_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_estonia_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_passport_number" />
-          <Match idRef="Keywords_estonia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_estonia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
-- 護照號碼
-- 愛沙尼亞文護照號碼
-- 護照否
-- eesti kodaniku 傳遞
+eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 ## <a name="eu-debit-card-number"></a>歐盟借方卡號碼
 
@@ -4923,6 +5107,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="finland-european-health-insurance-number"></a>芬蘭歐洲健康情況保險業號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -5088,22 +5278,44 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式 Regex_finland_passport_number 找到符合模式的內容。
-- 會找到來自 Keyword_finland_passport_number 的關鍵字。
+- 會找到 Keywords_eu_passport_number_common 或 Keyword_finland_passport_number 中的關鍵字。
 
 ```xml
 <!-- Finland Passport Number -->
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Regex_finland_passport_number"/>
-     <Match idRef="Keyword_finland_passport_number"/>
-  </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_finland_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keyword_finland_passport_number" />
+          </Any>
+        </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>關鍵字
 
-- Keyword_finland_passport_number
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
 - 護照
-- Passi
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
+#### <a name="keyword_finland_passport_number"></a>Keyword_finland_passport_number
+
+- suomalainen passi
+- passin numero
+- passin numero.#
+- passin numero#
+- passin numero.
+- passi#
+- passi 編號
 
 
 ## <a name="finland-social-security-number-or-equivalent-identification"></a>芬蘭社會安全號碼或對等身分識別
@@ -5230,6 +5442,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="france-health-insurance-number"></a>法國健康保險業號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -5532,6 +5750,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="france-value-added-tax-number"></a>法國加值稅收號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -5815,68 +6039,41 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
 - 函數 Func_german_passport 找到符合模式的內容。
-- 找到任何五個關鍵字清單中的關鍵字。
+- 找到來自的關鍵字 `Keyword_german_passport` 。
 - 校驗和通過。
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 函數 Func_german_passport_data 找到符合模式的內容。
-- 找到任何五個關鍵字清單中的關鍵字。
+- 找到來自的關鍵字 `Keyword_german_passport` 。
 - 校驗和通過。
 
 ```xml
-<!-- Germany Passport Number -->
-<Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="85">
+    <!-- German Passport Number -->
+    <Entity id="2e3da144-d42b-47ed-b123-fbf78604e52c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_german_passport" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keyword_german_passport_collaborative" />
-          <Match idRef="Keyword_german_passport_number" />
-          <Match idRef="Keyword_german_passport1" />
-          <Match idRef="Keyword_german_passport2" />
-        </Any>
-  </Pattern>
-  <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_german_passport" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_passport_data" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_passport" />
-          <Match idRef="Keyword_german_passport_collaborative" />
-          <Match idRef="Keyword_german_passport_number" />
-          <Match idRef="Keyword_german_passport1" />
-          <Match idRef="Keyword_german_passport2" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_passport" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
 #### <a name="keyword_german_passport"></a>Keyword_german_passport
 
-- reisepass
 - reisepasse
 - reisepassnummer
-- 護照
-- 護照
-
-#### <a name="keyword_german_passport_collaborative"></a>Keyword_german_passport_collaborative
-
-- geburtsdatum
-- ausstellungsdatum
-- ausstellungsort
-
-#### <a name="keyword_german_passport_number"></a>Keyword_german_passport_number
-
-Reisepass Nr-Reisepass
-
-#### <a name="keyword_german_passport1"></a>Keyword_german_passport1
-
-Reisepass-Nr
-
-#### <a name="keyword_german_passport2"></a>Keyword_german_passport2
-
-bnationalit
-
+- 非 Reisepass 
+- Nr-Reisepass
+- Reisepass-Nr
+- Passnummer
+- reisepässe
+- passeport 編號
+- passeport 否
 
 ## <a name="germany-tax-identification-number"></a>德國納稅識別號碼
 
@@ -5953,6 +6150,12 @@ bnationalit
 
 
 ## <a name="germany-value-added-tax-number"></a>德國加值稅號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -6139,28 +6342,49 @@ bnationalit
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
 - 正則運算式會  `Regex_greece_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_greece_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_greece_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_passport_number" />
-          <Match idRef="Keywords_greece_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_greece_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_greece_eu_passport_number"></a>Keywords_greece_eu_passport_number
 
-- 護照號碼
-- 希臘文護照號碼
-- 護照否
-- διαβατηριο
+- αριθμός διαβατηρίου
+- αριθμούς διαβατηρίου
+- αριθμός διαβατηριο
 
 ## <a name="greece-tax-identification-number"></a>希臘納稅識別號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -6363,6 +6587,12 @@ bnationalit
 
 
 ## <a name="hungary-personal-identification-number"></a>匈牙利個人身分識別號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -6443,26 +6673,40 @@ bnationalit
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
 - 正則運算式會  `Regex_hungary_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_hungary_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_hungary_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_passport_number" />
-          <Match idRef="Keywords_hungary_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_hungary_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_hungary_eu_passport_number"></a>Keywords_hungary_eu_passport_number
 
-- 護照號碼
-- 匈牙利文護照號碼
-- 護照否
 - útlevél száma
-
+- Útlevelek száma
+- útlevél szám
 
 ## <a name="hungary-social-security-number-or-equivalent-identification"></a>匈牙利社會安全號碼或同等身分識別
 
@@ -6528,6 +6772,12 @@ bnationalit
 
 
 ## <a name="hungary-tax-identification-number"></a>匈牙利納稅識別號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -6603,6 +6853,12 @@ bnationalit
 
 
 ## <a name="hungary-value-added-tax-number"></a>匈牙利增值的納稅號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -7068,29 +7324,45 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
 - 正則運算式會  `Regex_ireland_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_ireland_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_ireland_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_passport_number" />
-          <Match idRef="Keywords_ireland_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_ireland_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
-- 護照號碼
-- 愛爾蘭護照號碼
-- 護照否
-- Pas
-- 護照
-- passeport
 - passeport numero
+- uimhreacha pasanna
+- uimhir pas
+- uimhir phas
+- uimhreacha pas
+- uimhir cárta
+- uimhir chárta
 
 ## <a name="ireland-personal-public-service-pps-number"></a>愛爾蘭個人公開服務 (PPS) 號碼
 
@@ -7323,6 +7595,12 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - patente di guida 
 
 ## <a name="italy-fiscal-code"></a>義大利會計代碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -7425,34 +7703,53 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_italy_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_italy_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_italy_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_italy_eu_passport_number" />
-          <Match idRef="Keywords_italy_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_italy_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
 
-- 義大利護照號碼
-- repubblica italiana passaporto
-- passaporto
+- italiana passaporto
 - passaporto italiana
-- 護照號碼
-- italiana passaporto numero
 - passaporto numero
-- numéro passeport italien
 - numéro passeport
-
+- numero di passaporto
+- numeri del passaporto
+- passeport italien
 
 ## <a name="italy-value-added-tax-number"></a>義大利值增加的納稅號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -7681,6 +7978,12 @@ Otemachi
 
 
 ## <a name="japan-my-number---corporate"></a>日本我的號碼-公司
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -7736,6 +8039,12 @@ Otemachi
 
 
 ## <a name="japan-my-number---personal"></a>日本我的號碼-個人
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -8178,27 +8487,44 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_latvia_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_latvia_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_latvia_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_passport_number" />
-          <Match idRef="Keywords_latvia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_latvia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_latvia_eu_passport_number"></a>Keywords_latvia_eu_passport_number
 
-- 護照號碼
-- 拉脫維亞文護照號碼
-- 護照否
-- pase numurs    
-
+- pase numurs
+- pase numur
+- pases numuri
+- pases nr
+- passeport 否
+- n ° du Passeport
 
 ## <a name="lithuania-drivers-license-number"></a>立陶宛駕照編號
 這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
@@ -8250,6 +8576,12 @@ Otemachi
 - vairuotojo pažymėjimas
 
 ## <a name="lithuania-personal-code"></a>立陶宛個人程式碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -8350,27 +8682,41 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_lithuania_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_lithuania_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_lithuania_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_passport_number" />
-          <Match idRef="Keywords_lithuania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_lithuania_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_lithuania_eu_passport_number"></a>Keywords_lithuania_eu_passport_number
 
-- 護照號碼
-- lithunian 護照號碼
-- 護照否
 - paso numeris
-
+- paso numeriai
+- paso nr
 
 ## <a name="luxemburg-drivers-license-number"></a>Luxemburg 駕駛執照號碼
 這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
@@ -8422,6 +8768,12 @@ Otemachi
 - fahrerlaubnis
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>Luxemburg (自然個人的國家識別號碼) 
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -8744,6 +9096,12 @@ Otemachi
 - liċenzja tas-sewqan
 
 ## <a name="malta-identity-card-number"></a>馬爾他身分識別卡號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -8821,26 +9179,41 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_malta_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_malta_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_malta_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_passport_number" />
-          <Match idRef="Keywords_malta_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_malta_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_malta_eu_passport_number"></a>Keywords_malta_eu_passport_number
 
-- 護照號碼
-- 馬爾他護照號碼
-- 護照否
 - numru tal-passaport
+- numri tal-passaport
+- Nru tal-passaport
 
 ## <a name="malta-tax-identification-number"></a>馬爾他納稅識別號碼
 
@@ -9089,6 +9462,12 @@ Otemachi
 - paspoortnummer
 
 ## <a name="netherlands-tax-identification-number"></a>荷蘭稅務識別號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -9166,6 +9545,12 @@ Otemachi
 
 
 ## <a name="netherlands-value-added-tax-number"></a>荷蘭增值納稅號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -9222,6 +9607,12 @@ Otemachi
 
 
 ## <a name="new-zealand-bank-account-number"></a>紐西蘭銀行帳戶號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -9278,6 +9669,12 @@ Otemachi
 
 
 ## <a name="new-zealand-drivers-license-number"></a>紐西蘭駕駛執照號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -9387,6 +9784,12 @@ Otemachi
 
 
 ## <a name="new-zealand-inland-revenue-number"></a>紐西蘭 inland 收入數目
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -9484,6 +9887,12 @@ Otemachi
 
 
 ## <a name="new-zealand-social-wlefare-number"></a>紐西蘭社交 wlefare 號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -9830,6 +10239,12 @@ Otemachi
 - Paszport
 
 ## <a name="poland-regon-number"></a>波蘭 REGON 編號
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -9890,6 +10305,12 @@ Otemachi
 
 
 ## <a name="poland-tax-identification-number"></a>波蘭納稅識別號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -10083,26 +10504,48 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_portugal_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_portugal_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_portugal_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_passport_number" />
-          <Match idRef="Keywords_portugal_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_portugal_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_portugal_eu_passport_number"></a>Keywords_portugal_eu_passport_number
 
-- 護照號碼
-- 葡萄牙文護照號碼
-- 護照否
 - número 執行 passaporte
+- 葡萄牙文護照
+- 葡萄牙 passeport
+- 葡萄牙 passaporte
+- passaporte n º
+- passeport n º
+- números de passaporte
+- 葡萄牙 passports
+- número passaporte
+- números passaporte
 
 ## <a name="portugal-tax-identification-number"></a>葡萄牙納稅識別號碼
 
@@ -10225,6 +10668,12 @@ Otemachi
 - permis de conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>羅馬尼亞個人數位代碼 (CNP) 
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -10335,29 +10784,47 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_romania_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_romania_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_romania_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_passport_number" />
-          <Match idRef="Keywords_romania_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_romania_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
-- 護照號碼
-- 羅馬尼亞護照號碼
-- 護照否
-- numărul pașaportului
-
+numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 ## <a name="russia-passport-number-domestic"></a>俄羅斯護照號碼國內
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -10414,6 +10881,12 @@ Otemachi
 
 
 ## <a name="russia-passport-number-international"></a>俄羅斯護照號碼國際
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -10616,6 +11089,12 @@ Otemachi
 - vodičský preukaz
 
 ## <a name="slovakia-personal-number"></a>斯洛伐克個人號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -10723,27 +11202,43 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_slovakia_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_slovakia_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_slovakia_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovakia_eu_passport_number" />
-          <Match idRef="Keywords_slovakia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_slovakia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_slovakia_eu_passport_number"></a>Keywords_slovakia_eu_passport_number
 
-- 護照號碼
-- 斯洛伐克護照號碼
-- 護照否
 - číslo pasu
-
+- čísla pasov
+- pas č。
+- Passeport n °
+- n ° Passeport
 
 ## <a name="slovenia-drivers-license-number"></a>斯洛維尼亞駕照編號
 這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
@@ -10795,6 +11290,12 @@ Otemachi
 - vozniško dovoljenje
 
 ## <a name="slovenia-unique-master-citizen-number"></a>斯洛維尼亞唯一主公民號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -10888,28 +11389,52 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_slovenia_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_slovenia_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_slovenia_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_passport_number" />
-          <Match idRef="Keywords_slovenia_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_slovenia_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number
 
-- 護照號碼
-- 斯洛維尼亞護照號碼
-- 護照否
 - številka potnega lista
+- potek veljavnosti
+- potni 清單#
+- 基準 rojstva
+- potni 清單
+- številke potnih listov
 
 ## <a name="slovenia-tax-identification-number"></a>斯洛維尼亞納稅識別號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -11146,6 +11671,12 @@ Otemachi
 - carnet conducir
 
 ## <a name="spain-dni"></a>西班牙 DNI
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -11242,31 +11773,50 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_spain_eu_passport_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_spain_eu_passport_number` 。 
+- `Keywords_eu_passport_number_common`找到或的關鍵字 `Keywords_spain_eu_passport_number` 。 
     
 ```xml
  <!-- EU Passport Number -->
 <Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_spain_eu_passport_number" />
-          <Match idRef="Keywords_spain_eu_passport_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_passport_number_common" />
+            <Match idRef="Keywords_spain_eu_passport_number" />
+          </Any>
         </Pattern>
 </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
+
+- 護照#
+- 護照#
+- passportid
+- 護照
+- passportno
+- 護照否
+- passportnumber
+- 護照號碼
+- passportnumbers
+- 護照號碼
+
 #### <a name="keywords_spain_eu_passport_number"></a>Keywords_spain_eu_passport_number
 
-- 護照
-- 西班牙護照
-- 護照手冊
-- 護照號碼
-- 護照否
 - libreta pasaporte
 - número pasaporte
 - españa pasaporte
-- pasaporte
+- números de pasaporte
+- número de pasaporte
+- números pasaporte
+- pasaporte 否
+- Passeport n °
+- n ° Passeport
+- pasaporte 編號
+- pasaporte n °
+- 西班牙護照
 
 
 ## <a name="spain-social-security-number-ssn"></a> (SSN) 的西班牙社會安全號碼
@@ -11309,6 +11859,12 @@ Otemachi
 無
 
 ## <a name="spain-tax-identification-number"></a>西班牙納稅識別號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -11738,6 +12294,12 @@ Foreigners 與 Foreigner 的識別號碼
 - identifikationsnumret#
 
 ## <a name="sweden-tax-identification-number"></a>瑞典納稅識別號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -11884,7 +12446,13 @@ Foreigners 與 Foreigner 的識別號碼
 - 程式碼 identificateur de banque 
 
 
-## <a name="swiss-ssn-ahv-number"></a>瑞士 SSN AHV 號碼
+## <a name="switzerland-ssn-ahv-number"></a>瑞士 SSN AHV 號碼
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -12453,6 +13021,12 @@ OR
 
     
 ## <a name="uk-unique-taxpayer-reference-number"></a>英國。 唯一的納稅人參考編號
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -12946,6 +13520,12 @@ OR
 - Passeportn ° 
 
 ## <a name="ukraine-passport-domestic"></a>烏克蘭護照（國內）
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 
@@ -12988,6 +13568,12 @@ OR
 
 
 ## <a name="ukraine-passport-international"></a>烏克蘭護照（國際）
+此機密資訊類型僅可用於下列專案：
+- 資料遺失防護原則
+- 通訊相容性原則
+- 資訊管理
+- 記錄管理
+- Microsoft cloud app security
 
 ### <a name="format"></a>格式
 

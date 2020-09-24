@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 757b1fcdae69e98ec45bb29e669ceda8f8cb8f98
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: e1e1677c929ef0de5d47dbb98ef8987a8fba548d
+ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131633"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48245900"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -198,7 +198,7 @@ ms.locfileid: "48131633"
 
 下表說明每個條件的詳細資訊。
   
-|**條件**|**如何使用此條件**|
+|**Condition**|**如何使用此條件**|
 |:-----|:-----|
 | **內容符合任何這些分類器** | 當郵件中包含或排除任何分類器時，套用至原則。 有些分類器是在您的租使用者中預先定義的，而且自訂分類器必須分開設定，才能用於此條件。 只有一個分類器可以定義為原則中的條件。 如需設定分類程式的詳細資訊，請參閱 [瞭解 trainable 的分類 (預覽) ](classifier-learn-about.md)。 |
 | **內容包含下列任何敏感資訊類型** | 當郵件中包含或排除任何敏感資訊類型時，套用至原則。 有些分類器是在您的租使用者中預先定義的，而且自訂分類器可以個別設定，也可以個別設定，也可以是條件指派過程的一部分。 您選擇的每一種機密資訊類型都是分開套用的，而且只有其中一個敏感資訊類型必須套用，原則才能套用至郵件。 如需自訂敏感資訊類型的詳細資訊，請參閱 [自訂敏感資訊類型](custom-sensitive-info-types.md)。 |
@@ -256,7 +256,7 @@ ms.locfileid: "48131633"
 |**範本名稱** | 是 | 您將在修正期間于通知工作流程中選取之公告範本的易記名稱，會支援文字字元。 |
 | **寄件者位址** | 是 | 一或多個使用者或群組的位址，會將郵件傳送給具有原則相符的使用者，並從 Active Directory 中為您的訂閱選取。 |
 | **抄送和 BCC 位址** | 否 | 選取的使用者或群組，以取得您訂閱之 Active Directory 的原則相符的通知。 |
-| **主旨** | 是 | 顯示在郵件主旨行中的資訊，支援文字字元。 |
+| **Subject** | 是 | 顯示在郵件主旨行中的資訊，支援文字字元。 |
 | **郵件內文** | 是 | 出現在郵件內文中的資訊支援文字或 HTML 值。 |
 
 ### <a name="html-for-notices"></a>用於通知的 HTML
@@ -285,7 +285,7 @@ ms.locfileid: "48131633"
 
 |**Filter**|**詳細資料**|
 |:-----|:-----|
-| **Date** | 組織中的使用者傳送或接收郵件的日期。 |
+| **Date** | 組織中的使用者傳送或接收郵件的日期。 若要篩選單一一天，請選取一天開始的日期範圍，以您想要的結果，並以下一天結束。 例如，如果您想要篩選9/20/2020 的結果，請選擇篩選日期範圍為9/20/2020-9/21/2020。|
 | **檔類別** | 以郵件類型為基礎的郵件類別（ *郵件* 或 *附件*）。 |
 | **具有附件** | 附件存在於郵件中。 |
 | **專案類別** | 根據郵件類型、電子郵件、Microsoft 小組聊天、Bloomberg 等的郵件來源。如需一般專案類型和郵件類別的詳細資訊，請參閱 [專案類型和郵件類別](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes)。 |
