@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 在本文中，您將瞭解如何在 PowerShell 中執行 Microsoft 365 群組的常見管理工作。
-ms.openlocfilehash: a02990b2890d9fdfd523209e1d912aafdaeac091
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: c1aa551597644b7f41c3445a791ea27579464f7b
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547923"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277471"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>使用 PowerShell 管理 Microsoft 365 群組
 
@@ -64,16 +64,16 @@ Add-RecipientPermission -Identity $groupsRecipientDetails.Name -Trustee $userAli
 
 執行 Cmdlet 後，使用者可以透過將群組電子郵件地址新增至 [ **發件** 人] 欄位，移至要傳送為群組的 Outlook 或 outlook 網頁。
 
-## <a name="create-classifications-for-office-groups-in-your-organization"></a>為您組織中的 Office 群組建立分類
+## <a name="create-classifications-for-microsoft-365-groups-in-your-organization"></a>在組織中建立 Microsoft 365 群組的分類
 
 您可以建立您組織中的使用者在建立 Microsoft 365 群組時所能設定的靈敏度標籤。 如果您想要分類群組，我們建議使用敏感度標籤，而不是「先前的群組分類」功能。 如需使用敏感度標籤的詳細資訊，請參閱 [使用敏感度標籤來保護 Microsoft 團隊、microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
 
 > [!IMPORTANT]
 > 如果您目前使用的是分類標籤，當啟用敏感度標籤之後，建立群組的使用者將無法再使用這些標籤。
 
-您仍然可以使用「先前的群組分類」功能。 您可以建立組織中的使用者在建立 Office 365 群組時所能設定的分類。 例如，您可以允許使用者設定其所建立之群組上的「標準」、「機密」和「主要密碼」。 預設不會設定群組分類，您必須建立群組分類，使用者才能設定群組分類。 使用 Azure Active Directory PowerShell，將您的使用者指向您組織的 Office 365 群組使用指導方針。
+您仍然可以使用「先前的群組分類」功能。 您可以建立組織中的使用者在建立 Microsoft 365 群組時所能設定的分類。 例如，您可以允許使用者設定其所建立之群組上的「標準」、「機密」和「主要密碼」。 預設不會設定群組分類，您必須建立群組分類，使用者才能設定群組分類。 使用 Azure Active Directory PowerShell，將您的使用者指向您組織的 Microsoft 365 群組使用原則。
 
-請參閱 [Azure Active Directory Cmdlet 以設定群組設定](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets) ，並遵循在 **目錄層級的 [建立設定** ] 中的步驟，定義 Office 365 群組的分類。
+請參閱 [Azure Active Directory Cmdlet 以設定群組設定](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets) ，並遵循在 **目錄層級的 [建立設定** ] 中的步驟，定義 Microsoft 365 群組的分類。
 
 ```powershell
 $setting["ClassificationList"] = "Low Impact, Medium Impact, High Impact"
@@ -109,21 +109,21 @@ New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -Ac
 
 啟用這些設定之後，群組擁有者將可以從網頁和 Outlook 的 Outlook 的下拉式功能表中選擇分類，然後從 [ **編輯** 群組] 頁面進行儲存。
 
-![選擇 Office 365 群組分類](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
+![選擇 Microsoft 365 群組分類](../media/f8d4219a-6180-491d-b0e1-4313ac83998b.png)
 
-## <a name="hide-office-365-groups-from-gal"></a>隱藏 GAL 中的 Office 365 群組
+## <a name="hide-microsoft-365-groups-from-the-global-address-list"></a>從全域通訊清單中隱藏 Microsoft 365 群組。
 <a name="BKMK_CreateClassification"> </a>
 
-您可以指定 Office 365 群組是否會顯示在全域通訊清單中 (GAL) 和組織中的其他清單。 例如，如果您有一個您不想要顯示在通訊清單中的法律部門群組，您可以停止該群組出現在 GAL 中。 執行設定整合群組指令程式，以從通訊清單中隱藏群組，如下所示：
+您可以指定 Microsoft 365 群組是否會出現在全域通訊清單中 (GAL) 和組織中的其他清單。 例如，如果您有一個您不想要顯示在通訊清單中的法律部門群組，您可以停止該群組出現在 GAL 中。 執行設定整合群組 Cmdlet，以從通訊清單中隱藏群組，如下所示：
 
 ```powershell
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
 ```
 
-## <a name="allow-only-internal-users-to-send-message-to-office-365-group"></a>僅允許內部使用者傳送郵件至 Office 365 群組
+## <a name="allow-only-internal-users-to-send-message-to-microsoft-365-groups"></a>僅允許內部使用者傳送郵件至 Microsoft 365 群組
 <a name="BKMK_CreateClassification"> </a>
 
-如果您不想讓其他組織的使用者將電子郵件傳送至 Office 365 群組，您可以變更該群組的設定。 它只允許內部使用者將電子郵件傳送至您的群組。 如果外部使用者嘗試傳送郵件給該群組，就會遭到拒絕。
+如果您不想讓其他組織的使用者將電子郵件傳送至 Microsoft 365 群組，您可以變更該群組的設定。 它只允許內部使用者將電子郵件傳送至您的群組。 如果外部使用者嘗試傳送郵件給該群組，它會遭到拒絕。
 
 執行 Set-UnifiedGroup Cmdlet 以更新此設定，如下所示：
 
@@ -131,10 +131,10 @@ Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $tr
 Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationEnabled $true
 ```
 
-## <a name="add-mailtips-to-the-office-365-groups"></a>將 MailTips 新增至 Office 365 群組
+## <a name="add-mailtips-to-microsoft-365-groups"></a>將 MailTips 新增至 Microsoft 365 群組
 <a name="BKMK_CreateClassification"> </a>
 
-當寄件者嘗試傳送電子郵件到 Office 365 群組時，會向他們顯示 MailTip。
+當寄件者嘗試將電子郵件傳送至 Microsoft 365 群組時，可能會向他們顯示 MailTip。
 
 執行設定整合群組 Cmdlet，將郵件提示新增至群組：
 
@@ -148,18 +148,18 @@ Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
 Set-UnifiedGroup -Identity "MailaTip Group" -MailTip "This group has a MailTip" -MailTipTranslations "@{Add="ES:Esta caja no se supervisa."
 ```
 
-## <a name="change-display-name-of-the-office-365-group"></a>變更 Office 365 群組的顯示名稱
+## <a name="change-the-display-name-of-the-microsoft-365-group"></a>變更 Microsoft 365 群組的顯示名稱
 
-顯示名稱會指定 Office 365 群組的名稱。 您可以在 exchange 系統管理中心或 Microsoft 365 系統管理中心中看到此名稱。 您可以執行 Set-UnifiedGroup 命令，編輯群組的顯示名稱或指派顯示名稱至現有的 Office 365 群組：
+顯示名稱會指定 Microsoft 365 群組的名稱。 您可以在 exchange 系統管理中心或 Microsoft 365 系統管理中心中看到此名稱。 您可以執行 Set-UnifiedGroup 命令，編輯群組的顯示名稱或指派顯示名稱給現有的 Microsoft 365 群組：
 
 ```powershell
 Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 ```
 
-## <a name="change-the-default-setting-of-office-365-groups-for-outlook-to-public-or-private"></a>將 Outlook 365 群組的預設設定變更為 [公用] 或 [私人]
+## <a name="change-the-default-setting-of-microsoft-365-groups-for-outlook-to-public-or-private"></a>將 Outlook 的預設設定設為 [公用] 或 [私人] 的 Microsoft 365 群組
 <a name="BKMK_CreateClassification"> </a>
 
-預設會建立 Outlook 中的 Office 365 群組為私人。 如果您的組織想要預設建立為 Public 的 Office 365 群組 (或回私人) ，請使用此 PowerShell Cmdlet 語法：
+預設會建立 Outlook 中的 Microsoft 365 群組為私人。 如果您的組織365想要預設建立為公用 (或回私人) ，請使用此 PowerShell Cmdlet 語法：
 
  `Set-OrganizationConfig -DefaultGroupAccessType Public`
 
@@ -173,29 +173,29 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 
 若要深入瞭解，請參閱 [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) 和 [Get-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/get-organizationconfig)。
 
-## <a name="office-365-groups-cmdlets"></a>Office 365 群組 Cmdlet
+## <a name="microsoft-365-groups-cmdlets"></a>Microsoft 365 群組 Cmdlet
 
-下列 Cmdlet 可搭配 Office 365 群組使用。
+下列 Cmdlet 可搭配 Microsoft 365 群組使用。
 
 |**Cmdlet 名稱**|**描述**|
 |:-----|:-----|
-|[Set-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |使用此 Cmdlet 來查詢現有的 Office 365 群組，以及查看 group 物件的屬性  <br/> |
-|[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |更新特定 Office 365 群組的屬性  <br/> |
-|[新 Set-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |建立新的 Office 365 群組。 此 Cmdlet 提供一組最小的參數，用以設定擴充屬性的值使用 Set-UnifiedGroup 建立新群組之後  <br/> |
-|[Remove-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |刪除現有的 Office 365 群組  <br/> |
-|[UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |取得 Office 365 群組的成員資格及擁有者資訊  <br/> |
-|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |將成百上千的使用者或新的擁有者新增至現有的 Office 365 群組  <br/> |
-|[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |移除現有 Office 365 群組的擁有者和成員  <br/> |
+|[Set-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616182) <br/> |使用此 Cmdlet 來查詢現有的 Microsoft 365 群組，以及查看 group 物件的屬性  <br/> |
+|[Set-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616189) <br/> |更新特定 Microsoft 365 群組的屬性  <br/> |
+|[新 Set-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |建立新的 Microsoft 365 群組。 此 Cmdlet 提供一組基本的參數。 若要設定擴充屬性的值，請在建立新群組之後使用 Set-UnifiedGroup  <br/> |
+|[Remove-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |刪除現有的 Microsoft 365 群組  <br/> |
+|[UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |取得 Microsoft 365 群組的成員資格及擁有者資訊  <br/> |
+|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |將成百上千的使用者或新的擁有者新增至現有的 Microsoft 365 群組  <br/> |
+|[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |從現有的 Microsoft 365 群組中移除擁有者和成員  <br/> |
 |[UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |用來查看與帳戶相關聯之使用者相片的相關資訊。 使用者相片儲存在 Active Directory 中  <br/> |
 |[UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |用於將使用者相片與帳戶產生關聯。 使用者相片儲存在 Active Directory 中  <br/> |
-|[Remove-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |移除 Office 365 群組的相片  <br/> |
+|[Remove-UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536512) <br/> |移除 Microsoft 365 群組的相片  <br/> |
 
 ## <a name="related-topics"></a>相關主題
 
-[將通訊群組清單升級至 Office 365 群組](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
+[將通訊群組清單升級至 Microsoft 365 群組](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[管理可建立 Office 365 群組的人員](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
+[管理可建立 Microsoft 365 群組的人員](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
-[管理 Office 365 群組的來賓存取權](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[管理 Microsoft 365 群組的來賓存取權](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [將靜態群組成員資格變更為動態的](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type)

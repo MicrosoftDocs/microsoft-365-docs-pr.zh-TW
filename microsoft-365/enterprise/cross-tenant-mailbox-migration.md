@@ -1,5 +1,5 @@
 ---
-title: 跨承租人信箱遷移
+title: 跨租用戶信箱移轉
 description: 如何在 Microsoft 365 或 Office 365 承租人之間移動信箱。
 ms.author: josephd
 author: JoeDavies-MSFT
@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f649a72dc5569e8aec46347df295aa3ff9d93613
-ms.sourcegitcommit: 327163f70eac0de568ebe3c9a97a744c3ed408cb
+ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48177148"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277496"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -57,12 +57,12 @@ ms.locfileid: "48177148"
 
 以下是處理常式的運作方式。
 
-:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg" alt-text="信箱遷移的租使用者準備。":::
+:::image type="content" source="../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png" alt-text="信箱遷移的租使用者準備。":::
 
 <!--
-[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg)
+[![Tenant preparation for mailbox migration](../media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png)
 
-[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.svg).
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/tenant-to-tenant-mailbox-move/prepare-tenants-flow.png).
 --> 
 
 ### <a name="prepare-tenants"></a>準備承租人
@@ -162,11 +162,11 @@ ms.locfileid: "48177148"
 
 1.  在設定期間，以目標系統管理員所指定的-ResourceTenantAdminEmail 登入您的信箱。 尋找來自目標租使用者的電子郵件邀請，然後選取 [ **快速入門** ] 按鈕。
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="[您已 invided] 對話方塊":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/invited-by-target-tenant.png" alt-text="[您已被邀請] 對話方塊":::
 
 2. 選取 [ **接受** ] 以接受邀請。
 
-    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="接受 permissons 的對話方塊":::
+    :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-accept.png" alt-text="接受許可權的對話方塊":::
 
    > [!NOTE]
    > 如果您未收到這封電子郵件或找不到，則目標租使用者管理員會提供直接 URL，可供您用來接受邀請。 URL 應在目標租使用者 admin 的遠端 PowerShell 會話的成績單中。
