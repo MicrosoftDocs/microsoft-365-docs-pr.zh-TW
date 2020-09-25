@@ -16,12 +16,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 1512ba01f78d901177254fce86d0154e97e36496
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 6a8ab25a1bce4355e63482b8450412884a9f0faf
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950784"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269402"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 
@@ -169,6 +169,8 @@ ms.locfileid: "47950784"
 最後 **，選取 [** **啟用原則**]，然後選擇 [ **建立**]。
 
 請考慮使用 [if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) 工具來測試原則。
+
+針對 Exchange Online，您可以使用驗證原則來 [停用基本身份](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online)驗證，以強制所有用戶端存取要求使用新式驗證。
 
 ## <a name="high-risk-users-must-change-password"></a>高風險使用者必須變更密碼
 
@@ -376,7 +378,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 >啟用此原則之前，請先確定您的裝置是否相容。 否則，您可能會收到鎖定，而且將無法變更此原則，直到您的使用者帳戶已新增至條件式存取排除群組為止。
 >
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [![步驟3：來賓和外部使用者的原則](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 

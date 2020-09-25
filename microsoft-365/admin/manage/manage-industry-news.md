@@ -1,0 +1,80 @@
+---
+title: 管理行業新聞
+f1.keywords:
+- NOCSH
+ms.author: pebaum
+author: pebaum
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+ms.custom: AdminSurgePortfolio
+search.appverid:
+- MET150
+description: 為您的使用者提供有關您行業和組織資訊的最新資訊資訊，使用新聞服務可為您的組織啟用自訂的新聞摘要。
+ms.openlocfilehash: 20a24dcc567a032423419fad6b31ee8b87fa6720
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269671"
+---
+# <a name="manage-industry-news"></a>管理行業新聞
+
+若要為您的使用者提供有關您行業和組織資訊的最新新聞標題，請使用 [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 服務為您的組織啟用自訂的新聞摘要。 您也可以啟用每日的行業新聞電子郵件更新，並自訂 Bing 首頁和 Microsoft Edge [新增] 索引標籤頁面的設定。
+
+## <a name="what-your-users-will-see"></a>您的使用者將會看到的內容
+
+您可以選擇使用「標題」及完整文章的連結，傳送您的使用者每日的行業新聞電子郵件更新。 使用者可遵循其他主題，自訂其電子郵件更新，方法是選擇何時傳遞更新、排除 paywalls 後的文章，以及選取要查看的文章數目。
+
+:::image type="content" source="../../media/manage-industry-news-1.png" alt-text="行業新聞頁面的螢幕擷取畫面 ":::
+
+已登入的使用者可以前往 Bing 首頁看到您的行業新聞摘要資訊來自組織的個人化資訊。
+
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="從網頁到行業新聞的影像輪播螢幕擷取畫面":::
+
+他們也可以在 Microsoft Edge 的 [新增] 索引標籤頁面上，看到公司、行業和內部新聞或個人化的工作資訊。
+
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="包含業界新聞文章的 Microsoft Edge 新索引標籤頁面":::
+
+## <a name="news-settings"></a>新聞設定
+
+身為系統管理員，您可以控制組織的新聞摘要設定，包括所選的行業及 Bing 首頁、Microsoft Edge new tab 頁面及電子郵件體驗。
+
+1. 在 Microsoft 365 系統管理中心中，移至 [**設定**] [  >  **組織設定**  >  **服務**  >  [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)]
+2. 在 [ **新聞** ] 面板中，按一下 [ **一般** ] 索引標籤
+3. 在 [ **行業** ] 清單中，選取您組織的行業。 這會決定出現在組織新摘要中的一般新聞。
+4. 在 [ **主題** ] 欄位中，輸入您要查看有關的資訊相關主題。 您的使用者將無法變更這些主題。
+5. 您可以將關鍵字新增至 **Exclude 內容** 欄位，以封鎖主題及案例。 請避免將一般字詞（包括 (、it 和等等） ) ，以封鎖您的行業新聞摘要中顯示相關的內容。
+6. 選取 **[儲存]**。
+
+## <a name="industry-updates-in-email"></a>電子郵件中的行業更新
+
+您可以將每日的電子郵件更新與相關的行業新聞傳送至使用者的收件匣。 深入瞭解 [業界新聞電子郵件更新](https://newspro.microsoft.com/baw/faq)。
+
+1. 在 Microsoft 365 系統管理中心中，移至 [**設定**] [  >  **組織設定**  >  **服務**  >  [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)]。
+2. 在 [ **新聞** ] 面板中，按一下 [ **工業更新** ] 索引標籤。
+3. 選取 [ **傳送每日電子郵件更新** ] 以傳送電子郵件給您的使用者。
+4. 若要讓使用者能夠自訂他們在電子郵件更新中取得的資訊，請選取 [ **允許使用者自訂自己的主題**]。
+
+## <a name="bing-homepage"></a>Bing 首頁
+
+您可以自訂 Bing 首頁，以包含有關您行業的新聞。 在 Microsoft 365 系統管理中心中，移至 [**設定**] [  >  **組織設定**  >  **服務**  >  [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)]。 在 [ **新聞** ] 面板中，按一下 [ **bing 首頁** ] 索引標籤，然後選取 [ **納入 bing 首頁**]。 行業新聞會出現在組織的個人化資訊底下。
+
+## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge [新增] 索引標籤頁面
+
+當您的使用者使用有效的工作或學校帳戶登入 Microsoft Edge 時，他們可以查看個人化新聞，並閱讀內部 SharePoint 網站中的故事。
+
+1. 在 Microsoft 365 系統管理中心中，移至 [**設定**] [  >  **組織設定**  >  **服務**  >  [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)]
+2. 在 [ **新聞** ] 面板中，按一下 [ **Microsoft Edge 新增]** 索引標籤頁面。
+3. **在 [新增] 索引標籤頁面上，選取 [允許 Office 365 內容]**。 啟用時，使用者可以自訂其 [新增] 索引標籤，以顯示 Office 365 的資訊，包括建議和最近的檔案，以及經常使用 SharePoint 網站和其他資訊。
+4. 在 **[新增] 索引標籤頁面上，選取 [顯示公司資訊和行業新聞]**。 您的組織及行業相關的新聞文章，會針對使用者選擇在其新索引標籤上看到 Microsoft News。
+5. 在 **[新增] 索引標籤頁面上選取 [允許 SharePoint 新聞]** ，以在 [新增] 索引標籤頁面上，包含在組織內部 SharePoint 新聞網站上張貼的內容
+
+## <a name="related-articles"></a>相關文章
+
+- [Microsoft 搜尋](https://docs.microsoft.com/microsoftsearch/)
+- [管理您的資料和服務](https://docs.microsoft.com/microsoft-365/admin/manage)
