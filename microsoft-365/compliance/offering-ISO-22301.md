@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 2e470972e1d1549bff5cce107666a930a9b29969
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29af3729260d3d87f0cf17b83beec70da6fb7931
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416231"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208385"
 ---
 # <a name="iso-223012012-business-continuity-management-standard"></a>ISO 22301:2012 商務持續性管理標準
 
@@ -70,6 +70,10 @@ ISO 22301 是企業及政府組織所用的認證，讓他們透過達到商務�
 **我是否可以在組織的認證中使用 Microsoft 服務的 ISO 22301 合規性？**
 
 是。 如果您的企業需要適用於在 Microsoft 服務部署實作的 ISO 22301 認證，您可以在您的合規性評定中使用 Azure 和 Office 365 認證。 不過，您有責任確保評定者有參與評估組織中及您自己的應用程式的控制和程序，以及 ISO 22301 合規性的實作。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的 **[評估範本]** 頁面尋找範本。 瞭解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

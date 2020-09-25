@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 0fbef84ca8f4d8993ca40b48b25effaf44e141f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8c2c1e516e0d2c338104d36bb227e877d490ecb7
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416159"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208635"
 ---
 # <a name="cloud-computing-compliance-controls-catalog-c5"></a>雲端運算合規性控制目錄 (C5)
 
@@ -59,6 +59,10 @@ IT-Grundschutz 提供了特定的方法，可協助組織識別及實施 IT 系�
 **什麼是 Microsoft Cloud Germany？**
 
 Microsoft Cloud Germany 實際位於德國，遵守德國隱私權法的要求，該要求限制了將個人資料傳輸到其他國家/地區的行為，並防範其他司法管轄機關存取可能違反國內法律的內容。 Azure Germany 從資料駐留在德國的德國資料中心提供 Azure 服務，並透過受德國法律管理的獨特資料信任者模型提供嚴格的資料存取和控制措施。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的 **[評估範本]** 頁面尋找範本。 瞭解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

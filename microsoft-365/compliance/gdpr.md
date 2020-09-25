@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd17ac35c732189fe8699d75ceb054cc4c900364
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: a1c04718c1ebb798319a83155a6c70f72b0847de
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422451"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208809"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般資料保護摘要
 
@@ -56,6 +56,10 @@ GDPR 提供人員管理組織中收集之個人資料的權限。 透過資料�
 - **[資料保護影響評估](gdpr-data-protection-impact-assessments.md)**。 GDPR 規定資料控制者為「可能導致自然人之權利和自由高風險」的資料作業準備資料保護影響評估 (DPIA)。
 
 如上所述，GDPR 的建議動作方案和責任整備檢查清單提供使用 Microsoft 產品和服務時，實作或評估 GDPR 合規性的指南。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性經理針對企業版 E5 客戶提供此法規的預先建立評估。 可在合規性管理員的 **[評估範本]** 頁面尋找範本。 瞭解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="data-subject-request-dsr"></a>資料主體要求 (DSR)
 
@@ -177,7 +181,7 @@ Microsoft 具備適當原則和程序可立即通知您。 為滿足您對 DPA �
 
 ## <a name="accountability-readiness-checklists-for-the-gdpr"></a>符合 GDPR 的責任整備檢查清單
 
-這些[檢查清單](gdpr-arc.md) 提供使用 Microsoft 產品時，便於存取支援 GDPR 所需資訊的方式。 您可以使用 [Microsoft 合規性管分數](compliance-score.md)管理檢查清單項目，方法是參考 GDPR 動態磚中 [客戶管理控制措施] 底下的控制措施識別碼和控制措施標題。
+這些[檢查清單](gdpr-arc.md) 提供使用 Microsoft 產品時，便於存取支援 GDPR 所需資訊的方式。 您可以使用 [[Microsoft 合規性管理員]](compliance-manager.md) 管理檢查清單項目，方法是參考 GDPR 動態磚中 [客戶管理控制措施] 底下的控制措施識別碼和控制措施標題。
 
 ## <a name="gdpr-faqs"></a>GDPR 常見問題集
 

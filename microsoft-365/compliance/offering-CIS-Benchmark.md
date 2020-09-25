@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: d8b24885b1d1a80380d0e9ad5c7942bb31ba054c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 398fdb66623fb668bfc95e8a8a8f8fae44c8163e
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416717"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208605"
 ---
 # <a name="center-for-internet-security-cis-benchmarks"></a>網際網路安全性 (CIS) 中心基準
 
@@ -85,6 +85,10 @@ CIS 基準會為採用範圍內 Microsoft 產品和服務的任何人，建立�
 **誰參與開發 Microsoft CIS 基準？**
 
 CIS 指出其「準則是透過主題專家、技術廠商、公用和私人 CIS 基準社群成員，以及 CIS 基準開發小組的慷慨自願付出而進行開發」。 例如，您可以在 [CIS Microsoft Azure 基礎基準 v1.0.0 現在可供使用](https://www.cisecurity.org/blog/cis-microsoft-azure-foundations-benchmark-v1-0-0-now-available/)上，找到 Azure 參與者的清單。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的 **[評估範本]** 頁面尋找範本。 瞭解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

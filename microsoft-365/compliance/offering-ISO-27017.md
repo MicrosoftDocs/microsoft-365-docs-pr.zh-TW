@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: c289b8c3ad2e177a9c2ee575014d8682da553352
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a01a0599776c33d46850bcd0a5fbc6c3377056fa
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417687"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208295"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>資訊安全性控制的 ISO/IEC 27017:2015 工作條例規定
 
@@ -79,11 +79,15 @@ Microsoft 雲端服務會每年隨著 ISO/IEC 27001:2013 的認證程序，針�
 
 **我是否可以在組織的認證程序中使用 Microsoft 服務的 ISO/IEC 27017 合規性？**
 
-是的。 如果貴公司正在尋求用於在任何 Microsoft 範圍內企業雲端服務上所部署實作的認證，則可以在您的合規性評定中使用 Microsoft 的相關認證。 不過，您有責任確保評定者有參與評估合規性的實作，以及組織中的控制和程序。
+是。 如果貴公司正在尋求用於在任何 Microsoft 範圍內企業雲端服務上所部署實作的認證，則可以在您的合規性評定中使用 Microsoft 的相關認證。 不過，您有責任確保處理者有參與評估合規性的實作，以及組織中的控制和程序。
 
 **如何取得適用稽核報告的複本？**
 
 [服務信任入口網站](https://aka.ms/stphelp)提供獨立的協力廠商稽核報告和其他相關文件。 您可以使用入口網站來下載並檢閱此文件，以獲得您自己的法規需求的協助。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的 **[評估範本]** 頁面尋找範本。 瞭解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

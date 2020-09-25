@@ -218,6 +218,8 @@
           href: setup/upgrade-users-to-latest-office-client.md
         - name: 增益集集中式部署的必要條件
           href: manage/centralized-deployment-of-add-ins.md
+        - name: 管理產業新聞
+          href: manage/manage-industry-news.md
         - name: 在系統管理中心部署增益集
           href: manage/manage-deployment-of-add-ins.md
         - name: 在系統管理中心管理增益集

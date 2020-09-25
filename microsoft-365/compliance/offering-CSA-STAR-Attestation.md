@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 33fd2cef596144c48dcc76594d8d466e09481dd4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 56f01880e3e2f381d85ed386ac413d4dbff38ff4
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415613"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208593"
 ---
 # <a name="cloud-security-alliance-csa-star-attestation"></a>雲端安全性聯盟 (CSA) STAR 證明
 
@@ -39,7 +39,7 @@ SOC 2 類型 2 稽核是根據美國註冊會計師協會 (AICPA) 信任服務�
 
 Microsoft Azure 和 Microsoft Intune 獲得 CSA STAR 證明。 STAR 證明可在 Microsoft 雲端服務中針對 SOC 2 控制措施的設計適用性和操作有效性，提供稽核員的研究結果。
 
-- [Azure 與 Azure Government](https://aka.ms/AzureCompliance)
+- [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
 - [Azure 德國](https://aka.ms/AzureCompliance)
 - Microsoft 雲端 App 安全性
 - Microsoft Graph
@@ -68,6 +68,10 @@ CCM 符合產業公認的安全性標準、規定及控制措施架構，例如�
 - **層級 1**：**CSA STAR 自我評定**：Azure、Microsoft Dynamics 365 和 Microsoft Office 365。 [自我評定](offering-csa-star-self-assessment.md)是雲端服務提供者所提供的免費方案，用於記錄其安全性控制措施以協助客戶評定服務安全性。
 - **層級 2**：**CSA STAR 認證**：Azure、Microsoft 雲端 App 安全性、Intune 和 Microsoft Power BI。 STAR 認證是以獲得 ISO/IEC 27001 認證並符合 CCM 中指定的準則為基礎。 該認證是在第三方嚴格評定雲端服務提供者的安全性控制措施和做法之後頒發。
 - **層級 2**：**CSA STAR 證明**：Azure 和 Intune。 CSA 和 AICPA 使用 AICPA (信任服務原則 AT 101) 和 CSA CCM 的準則，為進行 SOC 2 業務的 CPA 共同提供指導方針。 [STAR 證明](offering-CSA-STAR-Attestation.md)是以這些指導方針為基礎，並對雲端提供者進行嚴格的獨立評定之後頒發。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的 **[評估範本]** 頁面尋找範本。 瞭解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 
