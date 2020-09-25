@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '將安全性 & 合規性中心的內容搜尋中的搜尋結果匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 從 SharePoint 和 OneDrive 商務網站的內容會匯出為原生 Office 檔。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 97073c95af986afcbe932dfc2b5bc840d5e2dc5c
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 59b0d723c93bddd607c12172ee0fed81650a09b0
+ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357931"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48269589"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -71,7 +71,7 @@ ms.locfileid: "47357931"
     
     在 [和] 標記之間的  *machine.config*  檔案中新增下列行  `<configuration>`  `</configuration>` 。 請務必以您的組織來取代  `ProxyServer` 和  `Port` 正確的值; 例如，  `proxy01.contoso.com:80` 。 
     
-    ```text
+    ```xml
     <system.net>
        <defaultProxy enabled="true" useDefaultCredentials="true">
          <proxy proxyaddress="https://ProxyServer :Port " 
@@ -157,26 +157,28 @@ ms.locfileid: "47357931"
 2. 在 [ **匯出金鑰**] 底下，按一下 [ **複製到剪貼**簿]。 您可以在步驟5中使用此機碼下載搜尋結果。
     
     > [!NOTE]
-    > 由於任何人都可以安裝並啟動 eDiscovery 匯出工具，然後使用此機碼來下載搜尋結果，請務必採取預防措施，像是保護密碼或其他安全性相關資訊一樣加以保護。 
+    > 由於任何人都可以安裝並啟動 eDiscovery 匯出工具，然後使用此機碼來下載搜尋結果，請務必採取預防措施，像是保護密碼或其他安全性相關資訊一樣加以保護。
   
 3. 按一下 [ **下載結果**]。
-    
-4. 如果系統提示您安裝 **EDiscovery 匯出工具**，請按一下 [ **安裝**]。
-    
-5. 在 [ **EDiscovery 匯出工具**] 中，在適當的方塊中貼上您在步驟2中複製的匯出金鑰。
-    
-6. 按一下 [瀏覽]**** 以指定搜尋結果檔案要下載到的位置。 
-    
-    > [!NOTE]
-    > 由於大量的磁片活動 (讀寫) ，所以應該將搜尋結果下載至本機磁片磁碟機;不要將其下載到對應的網路磁碟機或其他網路位置。 
-  
-1. 按一下 [開始]**** 將搜尋結果下載至您的電腦。 
-    
-    **EDiscovery 匯出工具**會顯示匯出程式的狀態資訊，包括估計要下載之其餘專案的數位 (和大小) 。 匯出程式完成後，您可以在下載檔案的位置存取檔案。 
-    
 
+4. 如果系統提示您安裝 **EDiscovery 匯出工具**，請按一下 [ **安裝**]。
+
+5. 在 [ **EDiscovery 匯出工具**] 中，執行下列動作：
+
+   ![eDiscovery 匯出工具](../media/eDiscoveryExportTool.png)
+
+   1. 在適當的方塊中貼上您在步驟2中複製的匯出金鑰。
+    
+   2. 按一下 [瀏覽]**** 以指定搜尋結果檔案要下載到的位置。
+    
+      > [!NOTE]
+      > 由於大量的磁片活動 (讀寫) ，所以應該將搜尋結果下載至本機磁片磁碟機;不要將其下載到對應的網路磁碟機或其他網路位置。 
   
-## <a name="more-information"></a>其他相關資訊
+6. 按一下 [開始]**** 將搜尋結果下載至您的電腦。
+    
+    **EDiscovery 匯出工具**會顯示匯出程式的狀態資訊，包括估計要下載之其餘專案的數位 (和大小) 。 匯出程式完成後，您可以在下載檔案的位置存取檔案。
+
+## <a name="more-information"></a>詳細資訊
 
 以下是匯出搜尋結果的詳細資訊。
   
@@ -188,23 +190,27 @@ ms.locfileid: "47357931"
 
 [匯出個別郵件或 PST 檔案](#exporting-individual-messages-or-pst-files)
   
+[從100000個信箱匯出結果](#exporting-results-from-more-than-100000-mailboxes)
+
 [解密 RMS 加密的郵件](#decrypting-rms-encrypted-messages)
 
 [匯出專案的檔案名](#filenames-of-exported-items)  
   
 [其他工作](#miscellaneous)
   
- ### <a name="export-limits"></a>匯出限制
+### <a name="export-limits"></a>匯出限制
   
 - 從安全性 & 合規性中心匯出搜尋結果的限制如下：
-    
+
   - 您可以從單一內容搜尋中匯出最多 2 TB 的資料。 如果搜尋結果大於 2 TB，請考慮使用日期範圍或其他類型的篩選器來減少搜尋結果的總大小。
-    
+  
   - 您的組織最多可以在一天內匯出 2 TB 的資料。
-    
+  
   - 您最多可以在組織內同時執行10個匯出。
-    
+
   - 單一使用者最多可以同時執行三個匯出。
+  
+  - 您可以使用 Office 365 安全性 & 合規性中心或 Microsoft 365 規範中心的電子檔探索匯出工具，從最多100000個信箱下載搜尋結果。 若要從100000個以上的信箱下載搜尋結果，您必須使用安全性 & 規範中心 PowerShell。 如需相關指示，請參閱 [匯出超過100000個信箱的結果](#exporting-results-from-more-than-100000-mailboxes)。
 
   > [!NOTE]
   > 只從內容搜尋中匯出報告也會計算同時執行的匯出數目和單一使用者可以執行的匯出數目。
@@ -215,15 +221,15 @@ ms.locfileid: "47357931"
     
     此外，除非單一信箱的內容超過 10 GB，否則不會將特定信箱的搜尋結果分割在多個 PST 檔案中。 如果您選擇在一個 PST 檔案中匯出搜尋結果，其中包含單一資料夾中的所有郵件，且搜尋結果大於 10 GB，則專案仍會以時間順序進行組織，所以這些專案會根據傳送日期 spilt 到其他 PST 檔案中。
      
- ### <a name="export-reports"></a>匯出報告
+### <a name="export-reports"></a>匯出報告
   
 - 當您匯出搜尋結果時，除了搜尋結果之外，還會包含下列報告。
     
-  - **匯出摘要** 包含匯出摘要的 Excel 檔。 這包括下列資訊：搜尋的內容來源數目、搜尋結果的預估和下載大小，以及已匯出專案的預估和下載數目。 
+  - **匯出摘要** 包含匯出摘要的 Excel 檔。 這包括下列資訊：搜尋的內容來源數目、搜尋結果的預估和下載大小，以及已匯出專案的預估和下載數目。
     
-  - **資訊清單** 包含搜尋結果中所包含之每個專案相關資訊的資訊清單檔案 (以 XML 格式) 。 
+  - **資訊清單** 包含搜尋結果中所包含之每個專案相關資訊的資訊清單檔案 (以 XML 格式) 。
     
-  - **結果** 包含每個下載專案（搜尋結果）相關資訊的 Excel 檔。 針對電子郵件，結果記錄檔包含每封郵件的相關資訊，包括： 
+  - **結果** 包含每個下載專案（搜尋結果）相關資訊的 Excel 檔。 針對電子郵件，結果記錄檔包含每封郵件的相關資訊，包括：
     
       - 來源信箱中郵件的位置 (，包含郵件是在主要或封存信箱) 中。
         
@@ -256,7 +262,7 @@ ms.locfileid: "47357931"
     > [!NOTE]
     > 您可以只匯出這些檔，而不需要匯出實際的搜尋結果。 請參閱 [匯出內容搜尋報告](export-a-content-search-report.md)。 
   
- ### <a name="exporting-partially-indexed-items"></a>匯出部分索引項目目
+### <a name="exporting-partially-indexed-items"></a>匯出部分索引項目目
   
 - 如果您要從內容搜尋中匯出信箱專案，而該搜尋會傳回搜尋結果中的所有信箱專案 (因為搜尋查詢中所包含的關鍵字並未包含在搜尋查詢中) ，所以部分編制索引的專案不會複製到包含未編制索引項目目的 PST 檔案中。 這是因為所有專案（包括任何已部分索引的專案）都會自動包含在一般搜尋結果中。 這表示部分編制索引的專案會包含在 PST 檔案 (或個別郵件中，) 包含其他的已編制索引的專案。
     
@@ -275,11 +281,11 @@ ms.locfileid: "47357931"
     ![根據網站是否包含符合搜尋準則的索引項目目，選擇 [匯出] 選項](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
-    a. 只會匯出符合搜尋準則的索引項目目。 不會匯出部分索引的專案。
+    1. 只會匯出符合搜尋準則的索引項目目。 不會匯出部分索引的專案。
     
-    b. 如果網站上沒有任何已編制索引的專案符合搜尋準則，則不會匯出從該相同網站部分編制索引的專案。 如果在搜尋結果中傳回來自某一網站的索引項目目，則會匯出該網站的部分已編制索引的專案。 換句話說，只會匯出包含符合搜尋準則之專案之網站的部分索引項目目。
+    1. 如果網站上沒有任何已編制索引的專案符合搜尋準則，則不會匯出從該相同網站部分編制索引的專案。 如果在搜尋結果中傳回來自某一網站的索引項目目，則會匯出該網站的部分已編制索引的專案。 換句話說，只會匯出包含符合搜尋準則之專案之網站的部分索引項目目。
     
-    c. 不論網站是否包含符合搜尋準則的專案，所有來自搜尋中之網站的部分已編制索引的專案都會匯出。
+    1. 不論網站是否包含符合搜尋準則的專案，所有來自搜尋中之網站的部分已編制索引的專案都會匯出。
     
     如果您選擇匯出部分編制索引的專案，則會在個別的 PST 檔案中匯出部分索引的信箱專案，而不管您在 [將 **Exchange 內容匯出為**] 下選擇的選項。
 
@@ -291,9 +297,31 @@ ms.locfileid: "47357931"
     
 - 如先前所述，電子郵件搜尋結果會匯出至檔案系統中的資料夾。 個別郵件的資料夾路徑會複製使用者信箱中的資料夾路徑。 例如，在使用者的 [收件匣] 中，名為 "ContosoCase101" 郵件的搜尋會位於資料夾路徑中  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` 。 
     
-- 如果您選擇在包含單一資料夾中的所有郵件的一個 PST 檔案中匯出電子郵件，則 [ **刪除的郵件** ] 資料夾及 [ **搜尋資料夾** ] 資料夾都會包含在 pst 資料夾的最上層。 這些資料夾是空白的。 
+- 如果您選擇在包含單一資料夾中的所有郵件的一個 PST 檔案中匯出電子郵件，則 [ **刪除的郵件** ] 資料夾及 [ **搜尋資料夾** ] 資料夾都會包含在 pst 資料夾的最上層。 這些資料夾是空白的。
   
- ### <a name="decrypting-rms-encrypted-messages"></a>解密 RMS 加密的郵件
+### <a name="exporting-results-from-more-than-100000-mailboxes"></a>從100000個信箱匯出結果
+
+- 如先前所述，您必須使用安全性 & 合規性中心 PowerShell 下載超過100000個信箱的搜尋結果。 您可以在本節中執行下列腳本，以下載這些搜尋結果。 使用此腳本會假設您已匯出搜尋結果 (匯出工作會顯示在 [內容搜尋) 工具] 的 [ **匯出** ] 索引標籤上，而且現在想要下載。
+
+   ```powershell
+   $export=Get-ComplianceSearchAction SEARCHNAME_Export -IncludeCredential;
+   $exportUrl=   [System.Uri]::EscapeDataString(($export.Results.Split(";") | ?{$_ -like '*Container url*'} | %{$_.Split(":",2)} | select -last 1).Trim());
+   $exportToken=($export.Results.Split(";") | ?{$_ -like '*SAS Token*'} | %{$_.Split(":",2)} | select -last 1).Trim();
+   ."$env:ProgramFiles\Internet Explorer\IEXPLORE.EXE" "https://complianceclientsdf.blob.core.windows.net/v16/Microsoft.Office.Client.Discovery.UnifiedExportTool.application?name=$($export.Name)&source=$exportUrl&zip=allow&trace=1";
+   $exportToken | clip;
+   ```
+
+  在腳本中，您必須指定要匯出結果的搜尋名稱。 例如，針對搜尋，將 `SearchAllMailboxes` SEARCHNAME_Export 取代為 `SearchAllMailboxes_Export` 。
+
+  在將搜尋的名稱新增至腳本後，您可以複製腳本文字，然後將其貼到 [已連接至安全性 & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)的 Windows PowerShell 視窗中。 在您貼上腳本後，電子檔探索匯出工具 (會顯示為當您使用 UI) 下載搜尋結果時，如下所示：
+
+  ![eDiscovery 匯出工具](../media/eDiscoveryExportTool.png)
+
+  在 [匯出機碼] 方塊中按一下，然後按下 `CTRL + V` 以貼上匯出金鑰 (腳本會將匯出機碼複製到剪貼簿，這樣您就可以將其貼) 。 按一下 **[流覽]** 以指定您要下載搜尋結果檔案的位置，然後開始下載。
+
+  如先前所述，建議您將搜尋結果下載至本機磁片磁碟機，因為大量的磁片活動 (讀取及寫入) 中。 不要將搜尋結果下載到對應的網路磁碟機或其他網路位置。
+
+### <a name="decrypting-rms-encrypted-messages"></a>解密 RMS 加密的郵件
   
 - 如先前所述，若要在匯出 RMS 加密郵件時對其進行解密，您必須將搜尋結果匯出為個別郵件。 如果您將搜尋結果匯出至 PST 檔案，RMS 加密的郵件會保持加密。
     
@@ -335,4 +363,4 @@ ms.locfileid: "47357931"
     
 - 當檔匯出至您的本機電腦時，系統會維護 SharePoint 和商務用 OneDrive 的檔案系統中繼資料。 這表示檔案屬性（如建立的和上次修改的日期）在匯出檔時不會變更。
 
-- 如果您的搜尋結果包含的清單專案來自符合搜尋查詢的 SharePoint，除了符合搜尋查詢的專案之外，還會匯出清單中的所有列。 這包括清單中的任何附件。 其原因是提供搜尋結果中傳回的清單專案內容。 另外請注意，其他清單專案和附件可能會導致匯出的專案計數與原始搜尋結果的估計值不同。
+- 如果您的搜尋結果包含的清單專案來自符合搜尋查詢的 SharePoint，除了符合搜尋查詢的專案以及清單中的任何附件之外，還會匯出清單中的所有列。 這種行為的原因是針對搜尋結果中傳回的清單專案提供內容。 另外請注意，其他清單專案和附件可能會導致匯出的專案計數與原始搜尋結果的估計值不同。

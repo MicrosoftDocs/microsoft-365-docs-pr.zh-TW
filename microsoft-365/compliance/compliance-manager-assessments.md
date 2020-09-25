@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員中的組建評估，可協助您符合組織重要的規章和憑證需求。
-ms.openlocfilehash: 5bbdba66d2288c173827062aade3bbd196d77040
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d09103f58be3a5fa39b57ca35da411e8046aace5
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204357"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262288"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>在合規性管理員中建立及管理評估
 
@@ -206,6 +206,9 @@ ms.locfileid: "48204357"
 3. 隨即會出現一個視窗，詢問您是否要永久刪除評估。 選取 [ **刪除評估** ] 以關閉視窗。 您將會看到一個確認視窗，表明您已從合規性管理員中刪除評估。
 
 如果您只刪除群組中的唯一評估，該群組也會從合規性管理員中刪除。
+
+> [!NOTE]
+> 您無法刪除所有評估。 組織至少需要一個評估合規性管理員才能正常運作。 如果您想要刪除的評估只有一個，請在刪除其他評估之前，先新增另一個評估。
 
 ## <a name="monitor-assessment-progress-and-controls"></a>監視評估進度和控制措施
 

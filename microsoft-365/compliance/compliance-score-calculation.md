@@ -15,14 +15,16 @@ search.appverid:
 - MET150
 description: 瞭解 Microsoft 合規性管理員如何根據採取的措施來計算個人化分數，以解決風險並改善您的相容性狀況。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9fd71b4953dc40a3c1e7601f42f595488fcef98b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f1707e0117d0a61f572716f21d13a02821955401
+ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204333"
+ms.lasthandoff: 09/24/2020
+ms.locfileid: "48262266"
 ---
 # <a name="compliance-score-calculation"></a>合規性分數計算
+
+**本文內容：** 瞭解合規性管理員如何計算組織的合規性分數。 本文說明如何 **轉譯您的分數**、 **資料保護基準評估** 包含的內容、 **連續監控**，以及 **如何管理和計分不同類型的動作**。
 
 > [!IMPORTANT]
 > 「合規性管理員」的建議不得加以轉譯，以保證法規遵從性。 您可以根據法規環境評估和驗證客戶控制措施的效能。 這些服務須遵守 [線上服務條款](https://go.microsoft.com/fwlink/?linkid=2108910)中的條款及條件。 另請參閱 [Microsoft 365 授權指南以取得安全性和合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。

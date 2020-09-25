@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: 了解 Microsoft 365 如何協助將能源組織移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規
 ms.custom: ''
-ms.openlocfilehash: d68615d96f0f7294c16ccb7a4fba9968f4948266
-ms.sourcegitcommit: 9550298946f8accb90cd59be7b46b71d4bf4f8cc
+ms.openlocfilehash: 4677c55c7c490c7ab95f9066236d14bb597389ac
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597452"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48199586"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>能源產業的重要合規性與安全性考量
 ![使用雲端的各種產業全球檢視的示意圖](../media/solution-arch-center/MSC17_global_016.png)
@@ -101,23 +101,19 @@ Microsoft Teams 預設會啟用自助建立 Teams。 不過，許多監管組織
 ## <a name="provide-secure-and-compliant-collaboration-in-the-energy-industry"></a>在能源產業中提供安全且合規的共同作業
 如前文所述，Microsoft Office 365 和 Office 365 美國政府都獲得「中度影響」層級 FedRAMP ATO，而 Azure 和 Azure Government 則獲得 FedRAMP High P-ATO，這是最高的 FedRAMP 授權層級。 此外，FedRAMP 中等控制集涵蓋所有 NERC CIP 需求，因此可讓能源產業組織 (「註冊實體」) 運用現有的 FedRAMP 授權，作為解決 NERC 審核需求的可調整和有效方法。 不過，請注意，FedRAMP 不是時間點認證，而是評估和授權方案，其中包含[持續監視](https://www.fedramp.gov/assets/resources/documents/CSP_Continuous_Monitoring_Strategy_Guide.pdf)的佈建。 雖然這項佈建主要適用於 CSP，營運大量電力系統的 Microsoft 客戶要負責確保自身符合 NERC CIP 標準，而且通常建議持續監視組織的合規性狀況，以協助確保持續遵守法規。
 
-Microsoft 提供了兩種關鍵工具，協助監視一段時間內的法規合規性：
+Microsoft 提供的關鍵工具可協助您監視一段時間內的法規合規性：
 
-- **Microsoft 合規性分數**可協助組織了解其目前的合規性狀況，以及針對改善該狀況可採取的動作。 「合規性分數」會計算風險型分數，評量完成動作的進度，協助降低資料保護和法規標準的風險。 「合規性分數」依據 Microsoft 365 資料保護基準提供初始分數。 此基準是一組包含常見業界法規和標準的控制。 這個分數是很好的起點，而如果組織新增與其產業更加相關的評估，「合規性分數」就會變得更加強大。 「合規性分數」支援與 NERC CIP 合規性義務相關的許多法規標準，其中包括 [FedRAMP 中等控制集](https://www.fedramp.gov/documents/) (英文)、[NIST 800-53 修訂版 4](https://go.microsoft.com/fwlink/?linkid=2109075) (英文)，以及 [AICPA SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184) (英文)。 如果需要，能源產業組織也可以建立或匯入自訂控制集。
+- **Microsoft 合規性管理員**可協助組織了解目前的合規性狀況，以及針對改善該狀況可採取的動作。 [合規性管理員] 會計算風險型分數，衡量完成動作的進度，協助降低資料保護和法規標準的風險。 [合規性管理員] 會依據 Microsoft 365 資料保護基準提供初始分數。 此基準是一組包含常見業界法規和標準的控制。 這個分數是很好的起點，而如果組織新增與其產業更加相關的評估，[合規性管理員] 就會變得更加強大。 [合規性管理員] 支援與 NERC CIP 合規性義務相關的許多法規標準，其中包括 [FedRAMP 中等控制集](https://www.fedramp.gov/documents/) (英文)、[NIST 800-53 修訂版 4](https://go.microsoft.com/fwlink/?linkid=2109075) (英文)，以及 [AICPA SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184) (英文)。 如果需要，能源產業組織也可以建立或匯入自訂控制集。
 
-- **Microsoft 合規性管理員**是一種風險評估工具，可讓組織追蹤、指派及驗證與 Microsoft 雲端服務相關的法規合規性活動。 「合規性管理員」可讓組織將 Microsoft 提供給稽核者和法規機構有關其雲端服務的詳細合規性資訊，與針對適用標準和法規的組織合規性自我評估，結合在一起。 「合規性管理員」是 Microsoft 365、Office 365 或 Azure Active Directory 訂閱的一部分，可協助組織管理 Microsoft [共用責任模型](https://gallery.technet.microsoft.com/Shared-Responsibilities-81d0ff91)中的法規合規性。 其提供集中式儀表板以檢視標準、法規、控制實作詳細資料，以及 Microsoft 服務評估測試結果。 
-
-合規性分數和合規性管理員已整合。 「合規性管理員」中的所有資料，也會顯示在「合規性分數」中。 「合規性分數」可讓您輕鬆監視組織的整體合規性狀況，並採取動作來改善該狀況。 「合規性管理員」提供健全的功能以執行組織針對多個法規合規性標準的合規性自我評估。
-
-內建至「合規性分數」和「合規性管理員」的工作流程型功能，可讓能源組織轉換和數位化其法規合規性程序。 傳統上，能源產業合規性小組面臨的挑戰包括：
+內建於 [合規性管理員] 的工作流程型功能，可讓能源組織轉換和數位化其法規合規性程序。 傳統上，能源產業合規性小組面臨的挑戰包括：
 - 補救動作的進度報告或追蹤不一致
 - 程序低效或無效
 - 資源不足或缺少擁有權
 - 缺乏即時資訊和人為錯誤
 
-透過運用「合規性分數」和「合規性管理員」，讓法規合規性程序自動化，組織可以降低法律和合規性功能的系統管理負擔。 這項工具可提供更多補救動作的最新資訊、更一致的報告，以及動作 (連結至動作實作) 的已記錄擁有權，藉以協助解決這些挑戰。 組織可以自動追蹤一段時間內的補救動作，並查看整體效能提升。 這樣可讓員工更專注於取得深入解析和開發戰略，以更有效率地瀏覽風險。 
+透過運用 [合規性管理員]，讓法規合規性程序自動化，組織可以降低法律和合規性功能的系統管理負擔。 這項工具可提供更多補救動作的最新資訊、更一致的報告，以及動作 (連結至動作實作) 的已記錄擁有權，藉以協助解決這些挑戰。 組織可以自動追蹤一段時間內的補救動作，並查看整體效能提升。 這樣可讓員工更專注於取得深入解析和開發戰略，以更有效率地瀏覽風險。
 
-「合規性分數」的高低並不能用來代表組織合規性絕對符合某個特定的標準或法規。 這代表您採取的控制措施可降低個人資料和個人隱私權暴露在風險中的程度。 您不應將「合規性分數」和「合規性管理員」中的建議視為合規性的保證。 「合規性管理員」中提供的客戶動作僅為建議，每個組織可於實作之前自行評估這些建議在其個別的法規環境中的有效性。 您不應將合規性管理員中找到的建議視為合規性的保證。
+[合規性管理員] 並不能用來代表組織合規性絕對符合某個特定的標準或法規。 這代表您採取的控制措施可降低個人資料和個人隱私權暴露在風險中的程度。 您不應將 [合規性管理員] 提供的建議視為合規性的保證。 「合規性管理員」中提供的客戶動作僅為建議，每個組織可於實作之前自行評估這些建議在其個別的法規環境中的有效性。 您不應將合規性管理員中找到的建議視為合規性的保證。
 
 許多網路安全性相關控制都包含在 [FedRAMP 中等控制集](https://www.fedramp.gov/documents/) (英文) 和 [NERC CIP 標準](https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx) (英文) 中。 不過，與 Microsoft 365 平台相關的關鍵控制包括安全性管理控制 (CIP-003-6)、帳戶與存取權管理/存取撤銷 (CIP-004-6)、電子安全性周邊 (CIP-005-5)、安全性事件監視和事件回應 (CIP-008-5)。 下列基本 Microsoft 365 功能可協助解決這些主題中所包含的風險和需求。
 
