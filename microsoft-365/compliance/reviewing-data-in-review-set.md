@@ -1,5 +1,5 @@
 ---
-title: 檢閱在進階電子文件中的案例資料
+title: 在高級 eDiscovery 中查看案例資料
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,15 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: ''
-ms.openlocfilehash: 9c978144df9e254ac3072e3d0d2ed4a0403fad43
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 瞭解如何在高級 eDiscovery 的審閱集中查看案例資料。
+ms.openlocfilehash: 890edc0e813f620944cea1e73bc8f9dc45132eb3
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42081550"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285349"
 ---
-# <a name="review-case-data-in-advanced-ediscovery"></a><span data-ttu-id="7627c-102">檢閱在進階電子文件中的案例資料</span><span class="sxs-lookup"><span data-stu-id="7627c-102">Review case data in Advanced eDiscovery</span></span>
+# <a name="review-case-data-in-advanced-ediscovery"></a><span data-ttu-id="0458d-103">在高級 eDiscovery 中查看案例資料</span><span class="sxs-lookup"><span data-stu-id="0458d-103">Review case data in Advanced eDiscovery</span></span>
 
-
-<span data-ttu-id="7627c-103">即將推出</span><span class="sxs-lookup"><span data-stu-id="7627c-103">Coming soon</span></span>
+<span data-ttu-id="0458d-104">即將推出。</span><span class="sxs-lookup"><span data-stu-id="0458d-104">Coming soon.</span></span>
