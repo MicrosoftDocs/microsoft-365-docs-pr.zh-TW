@@ -1,12 +1,12 @@
 ---
-title: 查看審閱集中的檔-eDiscovery
+title: 在高級電子檔探索中的審閱集中查看檔
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
@@ -15,14 +15,14 @@ search.appverid:
 - MET150
 description: 選擇您在高級 eDiscovery 中查看內容的方式，例如文字、批註、轉換或原生視圖。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c7527caedb06ccc6a2600a35576600452bb9c09a
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: ba66b64460a4aa9cf76641c6d84f0282195b85e9
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034285"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286049"
 ---
-# <a name="view-documents-in-a-review-set"></a>檢視檢閱集中的文件
+# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>在高級電子檔探索中的審閱集中查看檔
 
 「高級 eDiscovery」透過多個檢視器顯示內容，各有不同的用途。 按一下複查集內的任何檔，即可使用不同的檢視器。 目前提供的檢視器包括：
 

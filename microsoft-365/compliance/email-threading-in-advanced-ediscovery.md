@@ -1,5 +1,5 @@
 ---
-title: 電子郵件執行緒-eDiscovery
+title: 高級 eDiscovery 中的電子郵件執行緒
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,17 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: 當您執行高級 eDiscovery 分析時，電子郵件執行緒會分析電子郵件交談，並將每封郵件分隔成不同的類別。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e6072650a07f634b8dc19a013907eb36469c443b
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: b087bfc84175f80daaf1c0d2f1394584a70757ac
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527671"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285559"
 ---
-# <a name="email-threading"></a>電子郵件執行緒
+# <a name="email-threading-in-advanced-ediscovery"></a>高級 eDiscovery 中的電子郵件執行緒
 
 請考慮已有一段時間的電子郵件交談。 在大多數情況下，線索上的最後一封電子郵件會包含上述所有電子郵件的內容;檢查最後一個電子郵件將會提供執行緒中發生之談話的完整內容。 電子郵件執行緒識別這類電子郵件，讓檢閱者可以在不遺失任何內容的情況下，審閱收集的檔數。
 

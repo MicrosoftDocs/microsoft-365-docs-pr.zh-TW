@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: ad755398afc80f829561854217f1295ce8fff6f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 1151fd74e5f40a91107467b6004049081c4a9a69
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417857"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208235"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>支付卡行業 (PCI) 資料安全標準 (DSS)
 
@@ -93,6 +93,10 @@ PCI 安全標準協會提供的資訊可協助您了解特定合規性要求。 
 **商務用 OneDrive 和 SharePoint Online 的適用範圍為何？**
 
 目前，只有上傳至商務用 OneDrive 和 SharePoint Online 的檔案和文件會收到 PCI DSS 的投訴。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的**評估範本**頁面尋找範本。 了解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

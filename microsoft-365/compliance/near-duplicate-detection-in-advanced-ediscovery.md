@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 在分析高級 eDiscovery 的大小寫資料時，使用接近的重複偵測來群組按內容的類似檔。
+description: 在高級 eDiscovery 中分析案例資料時，使用接近的重複偵測，以群組的類似檔進行群組。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4c24e1b67af68dc5fccd900fc390a63e8da3c389
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 255531897a1706904005034c56cab00d0032b7f3
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036438"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286019"
 ---
-# <a name="near-duplicate-detection"></a>近似重複項偵測
+# <a name="near-duplicate-detection-in-advanced-ediscovery"></a>高級 eDiscovery 中的接近重複偵測
 
 請考慮一組要檢查的檔，其中的子集是以相同的範本為基礎，而且基本上是相同的樣板語言，但這裡有一些差異。 如果檢閱者可以識別此子集，請仔細查看其中一項，並檢查其餘部分的差異，但不會遺漏任何唯一的資訊，只是只花一段時間，只需要讓他們讀取所有檔封面以供封面。 接近重複偵測可群組的類似檔，以協助您更有效率地進行審閱程式。
 

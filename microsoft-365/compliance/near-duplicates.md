@@ -14,15 +14,14 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: 在管理資料調查時，請使用接近重複偵測，在分析案例資料時，群組的類似檔。
+description: 在管理資料調查時，請在分析資料調查中的證據時，使用接近的重複偵測，以分組類似的檔 (預覽) 。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: aa451051c008f7a1614661d3bd66129cac6bb4ad
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 37ce968016e674ec83da536c65361d2075cf9bbb
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036428"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285949"
 ---
 # <a name="near-duplicate-detection"></a>近似重複項偵測
 

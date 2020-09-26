@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: 瞭解如何使用 Microsoft 服務信任入口網站中的合規性管理員，以符合資料保護和法規需求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aedadc682bd45f363f1e97599383dd901c3eae7f
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 1e530acb5ca22fd67d94fea47aa37973d62e767c
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45016254"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198534"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合規性管理員 (傳統)
 
-> [!NOTE]
-> 本文件說明此產品之前的版本。 我們*不鼓勵使用者使用此版本的合規性管理員*。 **如果您使用的是合規性管理員目前的預覽版本，請參閱[合規性管理員 (預覽) 文件](working-with-compliance-manager.md)。**
+> [!IMPORTANT]
+> **[Microsoft 365 合規性中心](https://compliance.microsoft.com/)現在正式推出合規性管理員。我們強烈建議客戶停止使用合規性管理員 (傳統)，移動到全新的合規性管理員，從其豐富的使用者體驗和更新的控制措施對應獲得效益。請參閱我們的[合規性管理員文件](compliance-manager.md)，在 Microsoft 365 合規性中心設定並開始使用全新的合規性管理員。**
 
  合規性管理員無法使用 21Vianet 運作的 Office 365、Office 365 德國、Office 365 U.S. Government Community High (GCC High)，或 Office 365 美國國防部。**
   
@@ -43,9 +43,6 @@ ms.locfileid: "45016254"
 - 提供安全存放庫，讓您可上傳並管理辨識項，以及與您合規性活動相關的其他成品。
     
 - 在 Microsoft Excel 中產生豐富詳細的報告，以記錄由 Microsoft 與貴組織執行的合規性活動，可提供給稽核員、管理者，以及其他法規遵循專案關係人。
-
-如需合規性管理員的簡短示範，請參閱這個[合規性管理員](https://www.youtube.com/watch?v=r1vs8NdSXKQ)影片。
-
     
 > [!IMPORTANT]
 > 合規性管理員是一個儀表板，提供您資料保護與合規性結構的摘要，以及改善資料保護與合規性的建議。合規性管理員中所提供的「客戶動作」也是建議；每個組織皆可選擇在實作之前，評估這些建議在其個別法規環境中的效果。合規性管理員中所找到的建議不應視為規範的保證。
@@ -830,11 +827,3 @@ ms.locfileid: "45016254"
 |B.8.4.7  <br/> |8.5.7  <br/> |
 |B.8.4.8  <br/> |8.5.8  <br/> |
 |
-   
-## <a name="see-also"></a>另請參閱
-
-- [合規性管理員互動指南](https://content.cloudguides.com/guides/Compliance%20Manager)
-
-- [宣布合規性管理員正式公開上市](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Announcing-Compliance-Manager-general-availability/ba-p/161922)
-
-- [Microsoft 365 提供資訊保護策略來協助符合 GDPR](https://blogs.office.com/2018/02/22/microsoft-365-provides-an-information-protection-strategy-to-help-with-the-gdpr)

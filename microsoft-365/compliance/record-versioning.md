@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解可協助您在 Microsoft 365 中實作記錄管理解決方案的記錄。
-ms.openlocfilehash: 47a6aee128dbc8375d5860e1e8b1e4e0acc355cb
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 4b8209108564f0a75f8d70efecd57d2526d9face
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778449"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200522"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>使用記錄版本設定來更新儲存在 SharePoint 或 OneDrive 中的記錄
 
->*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)*
+>*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+
+>[!NOTE] 
+> 由於法規記錄會封鎖編輯，法規記錄無法使用記錄版本設定。
 
 將文件標示為[記錄](records-management.md#records)的功能，以及限制可對記錄執行的動作，是任何記錄管理解決方案的重要目標。 不過，可能也會需要共同作業，讓人員建立後續的版本。
 

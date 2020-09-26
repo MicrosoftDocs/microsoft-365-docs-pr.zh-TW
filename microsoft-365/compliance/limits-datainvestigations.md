@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: 在資料調查 (預覽) 中，尋找描述、索引、搜尋、匯出及下載限制的相關資訊。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 53c71e50dd83332ebd1bb1076b3dbf5dd304b927
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 30d8b26493fcd0d5059238876abe5b8209429670
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358501"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285909"
 ---
-# <a name="data-investigations-preview-limits"></a>資料調查 (預覽) 限制
+# <a name="limits-in-data-investigations-preview"></a>資料調查 (預覽的限制) 
 
 本文說明 (預覽) 中的資料調查限制。
 

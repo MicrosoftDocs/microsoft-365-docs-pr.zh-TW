@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 取得 GDPR 的 Office 365 資訊保護概觀。了解如何探索、分類、保護及監視個人資料。
-ms.openlocfilehash: 83a090b214821142a312ee81463fb3c395876867
-ms.sourcegitcommit: 2399ee6f9bc955cf8f2a76c01fc84c19eb37ff42
+ms.openlocfilehash: 72ce55b5ceb2ec3ff95cada481ec4aee0bbe8eef
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43919602"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197404"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>GDPR 的 Office 365 資訊保護概觀
 
@@ -43,13 +43,13 @@ GDPR 規定個人資料的收集、儲存、處理及共用。在 GDPR 下，個
 
 遵循 GDPR 規範的第一個步驟為評估 GDPR 是否適用於您的組織，如果適用，可到什麼程度。此分析包括了解您組織處理的資料，以及其所在位置。
 
-### <a name="step-1--use-compliance-score-to-view-the-regulation-requirements-and-track-your-progress"></a>步驟 1 — 使用合規性分數來檢視規定需求及追蹤進度
+### <a name="step-1--use-compliance-manager-to-view-the-regulation-requirements-and-track-your-progress"></a>步驟 1 — 使用合規性管理員來檢視規定需求及追蹤進度
 
-合規性分數提供數個工具來追蹤、實作及管理稽核控制，以協助組織達到各種不同的規範標準，包括 GDPR。
+合規性管理員可以協助您追蹤、實作及管理稽核控制措施，協助貴組織達到包括 GDPR 在內各種不同標準的規範。
 
-![使用合規性分數和合規性管理員來檢視需求及追蹤進度](../media/Overview-image1.png)
+![使用合規性管理員來檢視需求及追蹤進度](../media/Overview-image1.png)
 
-如需詳細資訊，請參閱[合規性分數](compliance-score.md)。
+如需詳細資訊，請參閱[合規性管理員](compliance-manager.md)。
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>步驟 2 — 使用內容搜尋和敏感資訊類型來尋找個人資料 
 

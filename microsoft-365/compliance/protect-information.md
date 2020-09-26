@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 實施 Microsoft 資訊保護 (MIP) 功能，方法是使用 Microsoft 365 符合性，協助您探索、分類及保護任何地方生活或傳播的敏感資訊。
-ms.openlocfilehash: f867391243302d0ce912ae5d740ed761ea7317b7
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d69395523cb656d23e44b577f01338eb78c7b386
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131963"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277528"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 microsoft 資訊保護
 
@@ -41,8 +41,8 @@ MIP 功能隨附于 Microsoft 365 規範中，並提供您用來 [瞭解資料](
 |功能|它會解決什麼問題？|開始使用|
 |:------|:------------|:--------------------|:-----------------------------|
 |[敏感資訊類型](sensitive-information-type-entity-definitions.md)| 使用內建或自訂正則運算式或函數來識別敏感性資料，以及包含關鍵字、信賴層級及鄰近性的確切證據。| [自訂內建的敏感性資訊類型](customize-a-built-in-sensitive-information-type.md)|
-|[Trainable 分類 (預覽) ](classifier-learn-about.md)| 使用內建的分類器之一為您分類資料，或使用您自己的內容訓練分類器 | [開始使用可訓練的分類器 (預覽)](classifier-get-started-with.md) |
-|[資料分類](data-classification-overview.md) | 識別具有敏感度標籤、保留標籤，或已分類為組織中機密資訊類型的專案，以及您的使用者所採取的動作  | [開始使用內容總管](data-classification-content-explorer.md)<br /><br /> [開始使用活動瀏覽器](data-classification-activity-explorer.md) |
+|[Trainable 分類 (預覽) ](classifier-learn-about.md)| 使用內建的分類器之一為您分類資料，或使用您自己的內容訓練分類器 | [開始使用可訓練分類器（預覽版）](classifier-get-started-with.md) |
+|[資料分類](data-classification-overview.md) | 識別具有敏感度標籤、保留標籤，或已分類為組織中機密資訊類型的專案，以及您的使用者所採取的動作  | [開始使用內容總管](data-classification-content-explorer.md)<br /><br /> [開始使用活動總管](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>保護您的資料
 
@@ -52,7 +52,7 @@ MIP 功能隨附于 Microsoft 365 規範中，並提供您用來 [瞭解資料](
 |:------|:------------|---------------------|:----------------------------|
 |[敏感性標籤](sensitivity-labels.md)| 跨應用程式、服務和裝置的單一解決方案，以標籤及保護您的組織內部和外部的資料 <br /><br />範例案例：套用 [和查看 POWER BI 中的敏感度標籤，並在匯出資料時加以保護](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[ 開始使用敏感度標籤](get-started-with-sensitivity-labels.md) |
 |[Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| 針對 Windows 電腦，擴充敏感度標籤以取得其他功能，包括標記及保護所有檔案類型的檔案 Explorer 和 PowerShell<br /><br /> 範例其他功能： [Azure 資訊保護統一標籤用戶端的自訂](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)設定| [Azure 資訊保護統一標籤用戶端管理員指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
-|[雙金鑰加密](double-key-encryption.md)| 在所有情況下，只有您可以解密受保護的內容或法規需求，您必須在地理界限內保留加密金鑰 | [部署雙重金鑰加密](double-key-encryption.md#deploy-double-key-encryption)|
+|[雙重金鑰加密](double-key-encryption.md)| 在所有情況下，只有您可以解密受保護的內容或法規需求，您必須在地理界限內保留加密金鑰 | [部署雙重金鑰加密](double-key-encryption.md)|
 |[Office 365 郵件加密](ome.md) (OME) | 加密傳送給任何裝置上任何使用者的電子郵件訊息和附加檔，因此只有授權的收件者可以讀取以電子郵件傳送的資訊  <br /><br />範例案例： [撤銷由高級郵件加密所加密的電子郵件](revoke-ome-encrypted-mail.md) | [開始使用 Office 365 郵件加密](set-up-new-message-encryption-capabilities.md)|
 |[使用客戶金鑰的服務加密](customer-key-overview.md) | 防止未經授權的系統或人員查看資料，並補充 Microsoft 資料中心的 BitLocker 磁片加密。 | [設定 Office 365 客戶金鑰](customer-key-set-up.md)|
 |[SharePoint Information Rights Management (IRM) ](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|保護 SharePoint 清單和文件庫，讓使用者在簽出檔時，已下載的檔案受到保護，所以只有經過授權的人員才能根據您指定的原則來查看和使用該檔案。 | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|

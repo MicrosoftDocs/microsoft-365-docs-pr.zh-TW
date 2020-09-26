@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 43e7cc1231e88144e1f03f81de6e2355a582a785
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 8440d510e5f6f2e1e90e4f3e9a7368cd00f0f802
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417917"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208275"
 ---
 # <a name="motion-picture-association-of-america-mpaa"></a>美國電影協會 (MPAA)
 
@@ -59,6 +59,10 @@ MPAA 指導方針提供主要工作室廠商和合作夥伴一組最佳做法，
 **我的組織仍需要經過 MPAA 稽核嗎？或者可以使用 Azure 稽核？**
 
 生產設施、視覺效果公司和其他服務合作夥伴應與其執行製作人和導演合作，以了解新的安全性需求，以及是否需要正式 MPAA 稽核。 遵守 MPAA 指導方針合規性是自願的，但 Microsoft 選擇執行獨立評定，因此媒體客戶可以對 Azure 的內容安全和保護功能放心。 然而，Azure 不會管理客戶的個別雲端環境，這可能會受其他 MPAA 法規的約束，最好透過您自己對環境的稽核來解決。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的**評估範本**頁面尋找範本。 了解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

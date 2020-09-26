@@ -17,12 +17,12 @@ ms.collection:
 hideEdit: true
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eb2d4ca52acce338e3afb31852409d441e52cfe0
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: 2083b7b6ed208f5681f4e19c276c1d7425999854
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422461"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48201520"
 ---
 # <a name="azure-and-dynamics-365-accountability-readiness-checklist-for-the-gdpr"></a>符合 GDPR 的 Dynamics 365 與 Azure 責任整備程度檢查清單
 
@@ -33,7 +33,7 @@ ms.locfileid: "47422461"
 - [ISO/IEC 27701](https://shop.bsigroup.com/ProductDetail/?pid=000000000030351736) 為安全性技術需求。
 - [ISO/IEC 27001](https://shop.bsigroup.com/ProductDetail?pid=000000000030347472) 為隱私權管理需求。
 
-您可以通過在 GDPR 圖格中的客戶管理的控制項下引用控制項辨識碼和控制項標題，使用合規性分數[[16](gdpr-arc-Azure.md#16)] 管理此清單中的項目。 此控制項結構也可用於分類 Microsoft Azure 與 Dynamics 365 支援 GDPR 的內部顯示控制項，您可以在這裡下載：[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)。
+您可以使用合規性管理員 [[16](gdpr-arc-Azure.md#16)] 管理檢查清單項目，方法是參考 GDPR 動態磚中 [客戶管理控制措施] 底下的控制措施識別碼和控制措施標題。 此控制項結構也可用於分類 Microsoft Azure 與 Dynamics 365 支援 GDPR 的內部顯示控制項，您可以在這裡下載：[服務信任入口網站](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)。
 
 此控制項結構也可用於組織 [Microsoft Dynamics 365 實作以支援 GDPR 的內部控制項](https://aka.ms/gdprcontrols)展示。
 

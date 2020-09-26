@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: '將安全性 & 合規性中心的內容搜尋中的搜尋結果匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 從 SharePoint 和 OneDrive 商務網站的內容會匯出為原生 Office 檔。 '
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 59b0d723c93bddd607c12172ee0fed81650a09b0
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a809a5880a247c66cd96daf7ae44efea13c04704
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269589"
+ms.locfileid: "48277461"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -317,7 +317,7 @@ ms.locfileid: "48269589"
 
   ![eDiscovery 匯出工具](../media/eDiscoveryExportTool.png)
 
-  在 [匯出機碼] 方塊中按一下，然後按下 `CTRL + V` 以貼上匯出金鑰 (腳本會將匯出機碼複製到剪貼簿，這樣您就可以將其貼) 。 按一下 **[流覽]** 以指定您要下載搜尋結果檔案的位置，然後開始下載。
+  在 [匯出機碼] 方塊中按一下，然後按下 `CTRL + V` 以貼上匯出金鑰 (腳本會將匯出機碼複製到 [剪貼簿]) 。 按一下 **[流覽]** 以指定您要下載檔案的位置，然後開始下載。
 
   如先前所述，建議您將搜尋結果下載至本機磁片磁碟機，因為大量的磁片活動 (讀取及寫入) 中。 不要將搜尋結果下載到對應的網路磁碟機或其他網路位置。
 

@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何使用協力廠商資料連線器和 Microsoft Graph APIs，擴充 Microsoft 365 合規性解決方案。
-ms.openlocfilehash: 284125db8243b10f5c8de7e0a37c1b7284709c28
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8eeb83013ec412ed82973b37c4c10e2250f5eaf8
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204329"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285739"
 ---
 # <a name="microsoft-365-compliance-extensibility"></a>Microsoft 365 合規性擴充性
 
@@ -77,7 +77,7 @@ MIP SDK 會向協力廠商應用程式和服務，公開卷標和保護服務的
 
 這兩個 APIs 會形成小組 DLP 的 Microsoft Graph API。 您可以從 [範例應用程式](https://github.com/microsoftgraph/csharp-webhook-with-resource-data)開始試用。 如需 Microsoft 團隊郵件 webhooks 的詳細資訊，請參閱 [檔](https://docs.microsoft.com/graph/api/subscription-post-subscriptions)。
 
-如需小組 DLP 的授權需求，請參閱 [適用于安全性 & 符合性的 Microsoft 365 授權指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)。
+如需小組 DLP 的授權需求，請參閱 [適用于安全性 & 符合性的 Microsoft 365 授權指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-data-loss-prevention-for-teams)。
 
 ### <a name="microsoft-graph-api-for-ediscovery-preview"></a>用於 eDiscovery 的 Microsoft Graph API (預覽) 
 

@@ -1,5 +1,5 @@
 ---
-title: 搜尋統計資料
+title: 預先探索中的搜尋統計資料
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -7,63 +7,72 @@ author: esclee
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: ''
-ms.openlocfilehash: b7975f5d288348177cbb6edec8002b4ed49de327
-ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
+description: 透過查看在高級 eDiscovery 中執行集合搜尋之後所產生的統計資料，以驗證搜尋結果。
+ms.openlocfilehash: ef5653a76d94272ba5f608149648f1421198929a
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42069870"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286079"
 ---
-# <a name="search-statistics"></a>搜尋統計資料
+# <a name="search-statistics-in-advanced-ediscovery"></a>在高級 eDiscovery 中搜尋統計資料
 
-您可以驗證您的搜尋結果的其中一個方法是查看周圍您若要確保其符合您預期的結果的統計資料。 搜尋完成時，搜尋的詳細資訊彈出式視窗會顯示高層級的統計資料：
-- 數目與搜尋所擷取的項目數量
-- 數目和磁碟區的已局部編製索引/未建立索引的搜尋位置中找到的項目
-- 搜尋信箱和位置的數目。
-若要檢視更詳細的統計資料，請按一下 [從搜尋的詳細資訊彈出式視窗上 「 統計資料 」。
+驗證搜尋結果的一種方式是查看結果的統計資料，以確保其符合您的預期。 搜尋完成時，會在 [搜尋詳細資料] 浮出控制項上顯示高層級統計資料：
 
-## <a name="summary"></a>摘要
+- 搜尋所檢索的專案數目及數量
 
-在 [摘要] 檢視中，您可以看到細分依位置類型 (如 Exchange) 的搜尋結果。 每個位置類型，您可以看到：
-- 位置會有符合搜尋條件的項目數目
-- 這些符合搜尋條件的位置中的項目數
-- 總量符合搜尋條件的項目。
+- 在搜尋位置中找到的部分索引或未編制索引的專案數目及數量
 
-## <a name="top-locations"></a>上方的位置
+- 已搜尋的信箱和位置數目。
+若要查看詳細的統計資料，請按一下 [搜尋詳細資料] 飛入中的「統計資料」。
 
-在頂端的位置] 檢視中，您會看到最相符項目與個別的位置。 為每個位置中，您會看到：
-- 位置名稱 (例如 SharePoint URL)
+## <a name="summary-view"></a>摘要視圖
+
+在摘要視圖中，您可以看到搜尋結果依位置類型所細分 (例如 Exchange) 。 您可以在每個位置類型上查看：
+
+- 專案符合搜尋條件的位置數目
+
+- 從這些位置符合搜尋條件的專案數
+
+- 符合搜尋條件的專案總容量。
+
+## <a name="top-locations-view"></a>頂端位置視圖
+
+在 [頂端位置] 視圖中，您會看到具有最相符專案的個別位置。 針對每個位置，您會看到：
+
+- 位置名稱 (例如 SharePoint URL) 
+
 - 位置類型
-- 符合搜尋條件的項目數目
-- 總量符合搜尋條件的項目。
 
-## <a name="queries"></a>查詢
+- 符合搜尋條件的專案數
 
-如果您已在查詢中使用 (c:s) 關鍵字或關鍵字的資料列，您可以看到您的查詢，查詢每個位置類型的檢視中的明細。 每個位置類型，您會看到：
+- 符合搜尋條件的專案總容量。
 
-- 組件： 此欄會讓 word 「 主要 」 或 「 關鍵字 」。 「 主要 」 表示 [列呈現統計資料，在整個查詢，而 「 關鍵字 」 表示下列其中一個查詢元件。
+## <a name="queries-view"></a>查詢檢視
 
-- 查詢： 實際的查詢元件列參照。 如果部分是 「 主要 」，這將會在整個查詢;如果組件 」 關鍵字 」，您會看到下列其中一個查詢元件。
+如果您已在查詢中使用 (c:s) 關鍵字或關鍵字列，則您可以在每個位置類型的查詢檢視中查看查詢明細。 針對每個位置類型，您會看到：
+
+- 部分：此欄會包含 "Primary" 或 "關鍵字" 一字。 "Primary" 表示列在整個查詢中呈現統計資料，而 "關鍵字" 則表示其中一個查詢元件。
+
+- 查詢：列所參照的實際查詢元件。 如果 Part 是 "Primary"，這會是整個查詢;如果 Part 是 "關鍵字"，您會在這裡看到其中一個查詢元件。
   
-  - 當您搜尋所有 contentin 信箱 （藉由不指定任何關鍵字） 時，實際的查詢是 (大小 >= 0)，所以會傳回所有項目
+  - 當您搜尋所有的 contentin 信箱 (但未指定任何關鍵字) 時，實際的查詢 (大小 >= 0) ，這樣就會傳回所有專案。
   
-  - 當您搜尋 SharePoint Online 和 OneDrive for Business 網站時，會新增兩個下列元件：
+  - 當您搜尋商務網站的線上 SharePoint 和 OneDrive 時，會新增下列兩個元件：
     
-    - 不 isexternalcontent: 1-從內部部署 SharePoint 組織排除任何內容
+    - 不 IsExternalContent:1-排除內部部署 SharePoint 組織中的任何內容
     
-    - 不 isOneNotePage: 1-排除所有 OneNote 檔案，因為這些是重複的任何符合搜尋查詢的文件。
+    - 非 isOneNotePage： 1-排除所有的 OneNote 檔案，因為這些檔案會是符合搜尋查詢的任何檔的重複專案。
 
-- 位置會有符合搜尋條件的項目數目。
+- 專案符合搜尋條件的位置數目。
 
-- 從下列位置，複製符合搜尋條件的項目數。
+- 從這些位置符合搜尋條件的專案數。
 
-- 總量符合搜尋條件的項目。
+- 符合搜尋條件的專案總容量。

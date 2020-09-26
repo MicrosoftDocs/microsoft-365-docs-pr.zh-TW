@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 瞭解如何使用規範界限來建立邏輯界限，以控制 eDiscovery 管理員可在 Microsoft 365 中搜尋的使用者內容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c0d0b4b8c5c43945efad737165acdd2612d33b7
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 19165af60d7813134952589831bf94a91bfe7f40
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269392"
+ms.locfileid: "48277108"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
@@ -70,7 +70,10 @@ ms.locfileid: "48269392"
 
 - 辦公室
 
-- C (兩個字母的國家代碼) 
+- C (兩個字母的國家代碼) <sup>*</sup>
+
+  > [!NOTE]
+  > <sup>*</sup> 此屬性會對應至在 Exchange Online PowerShell 中執行 **Get-User** Cmdlet 所傳回的 CountryOrRegion 屬性。 Cmdlet 會傳回當地語系化的國家名稱，該名稱會從兩個字母的國家碼轉譯。 如需詳細資訊，請參閱 [Set-User](https://docs.microsoft.com/powershell/module/exchange/set-user) Cmdlet 參考文章中的 CountryOrRegion 參數描述。
 
 雖然有其他使用者屬性可供使用（特別是針對 Exchange 信箱），但以上所列的屬性是目前 OneDrive 支援的屬性。
   
@@ -243,7 +246,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="using-compliance-boundaries-for-sharepoint-hub-sites"></a>使用 SharePoint hub 網站的規範界限
 
-[SharePoint hub 網站](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) 通常會與 eDiscovery 相容性邊界遵循的相同地理位置或代理商界限對齊。 這表示您可以使用 hub 網站的 site ID 屬性來建立符合性界限。 若要這麼做，請在 SharePoint Online PowerShell 中使用 [SPOHubSite 指令程式](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite?view=sharepoint-ps#examples) ，以取得 hub 網站的 SiteId，然後使用 [部門 ID] 屬性的此值建立搜尋許可權篩選。
+[SharePoint hub 網站](https://docs.microsoft.com/sharepoint/dev/features/hub-site/hub-site-overview) 通常會與 eDiscovery 相容性邊界遵循的相同地理位置或代理商界限對齊。 這表示您可以使用 hub 網站的 site ID 屬性來建立符合性界限。 若要這麼做，請在 SharePoint Online PowerShell 中使用 [SPOHubSite 指令程式](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spohubsite#examples) ，以取得 hub 網站的 SiteId，然後使用 [部門 ID] 屬性的此值建立搜尋許可權篩選。
 
 使用下列語法為 SharePoint hub 網站建立搜尋許可權篩選：
 

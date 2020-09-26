@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cdc8835989ada5ebe4089c4d7fed5fd8cf064673
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a648673d06300190695db52d14e85f114bfe0e87
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415420"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208143"
 ---
 # <a name="service-organization-controls-soc"></a>服務組織控制 (SOC)
 
@@ -90,7 +90,7 @@ Microsoft 雲端服務針對 SOC 1 (SSAE18，ISAE 3402)、SOC 2 (AT 第 101 節)
 - [Office 365 核心版 - SSAE 18 SOC 1 報告](https://aka.ms/o365SOC-1)
 - [Office 365 核心版 - SSAE 18 SOC 2 報告](https://aka.ms/o365SOC-2)
 - [Office 365 核心版 - SSAE 18 SOC 3 報告](https://aka.ms/o365SOC-3)
-- [Office 365 微服務 T1 - SSAE 18 SOC2 Type I 報告](https://aka.ms/o365-MS-SOC-2-type1)
+- [Office 365 微服務 T1-SSAE 18 SOC2 Type I 報告](https://aka.ms/o365-MS-SOC-2-type1)
 - [客戶加密箱 SOC 1 SSAE 16 稽核報告](https://aka.ms/Office365CustomerLockboxSOCAuditReport)
 - [Yammer SOC 2 AT 101 Type I 稽核報告](https://aka.ms/YammerSOC2Type1AuditReport)
 - [Yammer SOC 2 Type II 報告](https://aka.ms/yammerSOC-2)
@@ -121,9 +121,9 @@ Azure、Microsoft Cloud App Security、Flow、Microsoft Graph、Intune、Power B
 
 [適用於服務組織的 SOC 套件](https://aka.ms/soc-toolkit)是了解 SOC 報告程序及推動貴組織使用這些報告的實用資源。
 
-## <a name="use-microsoft-compliance-score-to-assess-your-risk"></a>使用 Microsoft 合規性分數來評估風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
 
-[Microsoft 合規性分數](compliance-score.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的預覽功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 [設定合規性分數](compliance-score-setup.md)之後，從 [範本]**** 下拉式功能表中選擇預先設定的 [SOC 1 範本][](https://go.microsoft.com/fwlink/?linkid=2117918) 和 [SOC 2 範本][](https://go.microsoft.com/fwlink/?linkid=2117919)，以幫助您的組織滿足此法規的要求。
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的**評估範本**頁面尋找範本。 了解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

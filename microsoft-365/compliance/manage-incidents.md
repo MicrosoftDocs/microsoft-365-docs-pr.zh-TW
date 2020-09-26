@@ -1,5 +1,5 @@
 ---
-title: 管理辨識項組中的資料調查
+title: 管理資料調查中的證據集
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,18 +14,15 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
-description: ''
-ms.openlocfilehash: e82f3c90dd931fc23635710c13e5727b1b3add79
-ms.sourcegitcommit: 1c91b7b24537d0e54d484c3379043db53c1aea65
+ROBOTS: NOINDEX, NOFOLLOW
+description: 管理您已新增至資料調查的證據。
+ms.openlocfilehash: 070429ab96ff903cda70fac0f6decf9c86e7b45d
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "41600540"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285729"
 ---
-# <a name="manage-evidence-sets-in-data-investigations-preview"></a>管理辨識項組中的資料調查 （預覽）  
+# <a name="manage-evidence-sets-in-data-investigations-preview"></a>在資料調查 (預覽中管理證據集合)   
 
 內容即將推出。
-
-  
-

@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在管理資料調查時，設定搜尋及分析設定，例如接近重複專案、電子郵件執行緒及主題。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3100c83fc027e793f7937a4d27e059ce7e3038a0
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ebc04e68c4d8854c91ceae75b164cc061e77aad4
+ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527349"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48277080"
 ---
-# <a name="configure-search-and-analytics-settings"></a>設定搜尋和分析設定
+# <a name="configure-search-and-analytics-settings-in-data-investigations"></a>在資料調查中設定搜尋及分析設定
 
 ## <a name="near-duplicates-and-email-threading"></a>接近重複專案和電子郵件執行緒
 
@@ -38,7 +38,7 @@ ms.locfileid: "46527349"
 
 - 最小/最大文字數目：接近重複專案和電子郵件執行緒只會在至少具有最少字數的檔上執行，最多隻會在文字的最大數目。
 
-如需詳細資訊，請參閱[近期重複偵測](near-duplicates.md)和[電子郵件執行緒](email-threading.md)。
+如需詳細資訊，請參閱 [近期重複偵測](near-duplicates.md) 和 [電子郵件執行緒](email-threading.md)。
 
 ## <a name="themes"></a>佈景主題
 
@@ -52,10 +52,10 @@ ms.locfileid: "46527349"
 
 - 在主題中包含編號：啟用時，它會在產生主題時包含數位。  
 
-## <a name="optical-character-recognition-ocr"></a>光學字元辨識（OCR）
+## <a name="optical-character-recognition-ocr"></a>光學字元辨識 (OCR) 
 
 開啟此設定時，會在 ingested 至工作集的影像上執行 OCR，使其可供搜尋。
 
 ## <a name="ignore-text"></a>忽略文字
 
-在某些情況下，有些文字會降低 analytics 的品質，例如，即使電子郵件的內容，也會新增至特定電子郵件的冗長免責聲明。 如果您知道這種情況，您可以指定文字（支援 RegEx）以及應排除文字的模組，即可從分析中排除此文字。
+在某些情況下，有些文字會降低 analytics 的品質，例如，即使電子郵件的內容，也會新增至特定電子郵件的冗長免責聲明。 如果您知道這種情況，您可以指定 (RegEx 支援的文字，) 以及應排除文字的模組，即可從分析中排除此文字。

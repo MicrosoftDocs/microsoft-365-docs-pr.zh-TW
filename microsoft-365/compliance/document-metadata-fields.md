@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 在 [資料調查] (預覽) 中，查看列出證據集中檔之元資料欄位的表格。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4462b2031bc50f3d167b9340b6df5dba5a412d78
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: f365ca6381fee2713f6e1c8e68eb9b1cd8e1fb88
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357623"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48285389"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>資料調查中的檔元資料欄位 (預覽) 
 

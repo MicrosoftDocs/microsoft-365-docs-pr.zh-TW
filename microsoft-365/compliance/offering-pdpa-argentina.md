@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 19a05cd9d9605904ad12e6f0d244d7cf0afce006
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 24820526b6ba58c82c2412ed3d0902eecb60b5b6
+ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417055"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48208105"
 ---
 # <a name="personal-data-protection-act-pdpa-argentina"></a>個人資料保護法 (PDPA) 阿根廷
 
@@ -55,6 +55,10 @@ Microsoft 資料傳輸協議是針對線上服務條款中的資料處理條款�
 **GDPR 如何改變個人資料保護法？**
 
 在 2018 年末，阿根廷尚未頒布與 GDPR 相關的法規，但已起草了新的資料保護議案 (已由行政機關提交國會並由眾議院修改) 以使其資料保護法與 GDPR 保持一致。 該議案解決了諸如資料主體的定義和個人資訊跨傳輸顧慮的差異。
+
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的**評估範本**頁面尋找範本。 了解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 
