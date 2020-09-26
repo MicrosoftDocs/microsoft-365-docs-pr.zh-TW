@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 550f7dd35b3990a08da4c2bb9dd3042ff084b185
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 225cb8b74a50fa8308cc14e8ad35283e6a7aa044
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104397"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279574"
 ---
 # <a name="register-new-devices-yourself"></a>自行註冊新裝置
 
@@ -84,14 +84,14 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 請遵循下列步驟：
 
 1. 在 [檔案上傳]**** 中，提供您先前建立的 CSV 檔案路徑。
-3. 選取 [註冊裝置]****。 系統會將裝置新增至 **裝置**上的裝置清單，並標示為 **AutopilotRegistrationRequested**。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
+3. 選取 [註冊裝置]****。 系統會將裝置新增至 [裝置] 刀鋒視窗**** 上標示為 [註冊擱置]**** 的裝置清單。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
 
 
 您可以在主頁面上監視裝置註冊的進度。 其回報的可能狀態包括：
 
 | 狀態 | 描述 |
 |---------------|-------------|
-| AutopilotRegistrationRequested | 尚未完成註冊。 稍後再回頭檢查。 |
+| 註冊擱置 | 尚未完成註冊。 稍後再回頭檢查。 |
 | 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[針對裝置註冊進行疑難排解](#troubleshooting-device-registration)。 |
 | 使用者就緒 | 註冊成功，裝置現在可以傳遞給使用者。 Microsoft 受管理的電腦將會逐步引導使用者完成首次設定，因此您不需要再做任何進一步的準備。 |
 | 作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 這也表示使用者經常使用該裝置。 |

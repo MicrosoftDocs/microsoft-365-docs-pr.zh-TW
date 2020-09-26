@@ -17,24 +17,23 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 設定安全連結原則來保護貴組織，以防範 Word、Excel、PowerPoint 和 Visio 檔案，以及電子郵件中的惡意連結。
-ms.openlocfilehash: 8c72473a9b1337e1d932ec7235ed12e79f0c48f6
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 76d0aba026b96251a64163ef7d7f518fe0b1e1b1
+ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201756"
+ms.lasthandoff: 09/25/2020
+ms.locfileid: "48279581"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 > [!IMPORTANT]
 > 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是家用版使用者且正在尋找 Outlook 中安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-[ATP 安全連結](atp-safe-links.md)([Office 365 進階威脅防護](office-365-atp.md) (ATP) 的功能) 可協助貴組織防範網路釣魚和其他攻擊中使用的惡意連結。 如果您擁有 [安全性 & 合規性中心](permissions-in-the-security-and-compliance-center.md)的必要許可權，您可以設定 ATP 安全連結原則，以協助確保當使用者按一下網址 (URLs) 時，您的組織受到保護。 您可以將 ATP 安全連結原則設定為掃描電子郵件中的 URL 和 Office 文件中的 URL。
+[Atp 安全連結](atp-safe-links.md) 是 [Office 365 的「高級威脅](office-365-atp.md))  (防護」中的一項功能，可協助您保護組織免受網路釣魚和其他攻擊中所使用的惡意連結。 如果您擁有 [安全性 & 合規性中心](permissions-in-the-security-and-compliance-center.md)的必要許可權，您可以設定 ATP 安全連結原則，以協助確保當使用者按一下網址 (URLs) 時，您的組織受到保護。 您可以將 ATP 安全連結原則設定為掃描電子郵件中的 URL 和 Office 文件中的 URL。 ATP 安全連結會掃描內送的電子郵件中是否有已知的惡意超連結和包含惡意程式碼的附件。 此功能會將掃描的 URLs 寫入 Microsoft 的標準 URL 格式首碼 <https://nam01.safelinks.protection.outlook.com> 。 在重新寫入連結後，會針對任何可能的惡意內容進行分析。 啟用 ATP 安全連結後，如果使用者按一下電子郵件中的連結，且該 URL 已被組織的自訂封鎖 URL 清單封鎖，或是該 URL 已確定為惡意的，就會開啟警告頁面。
 
-啟用 ATP 安全連結後，如果使用者按一下電子郵件中的連結，且該 URL 已被組織的自訂封鎖 URL 清單封鎖，或是該 URL 已確定為惡意的，就會開啟警告頁面。
+當 ATP 安全連結重新寫入 URL 後，如果郵件是轉寄或回復的，該 URL 就會繼續重新寫入。 新增至正在回復或轉寄之郵件的其他連結將不會被重新寫入。
 
 [我們會持續將新功能新增至 ATP](office-365-atp.md#new-features-in-office-365-atp)。 新增新功能後，您可能需要調整現有的 ATP 安全連結原則。
 
