@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以非常有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 8663da0a93bb4781af747d810200d4a2a777acb4
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948171"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48198490"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -50,11 +50,14 @@ ms.locfileid: "47948171"
 - Exchange 公用資料夾
 - Teams 通道訊息
 - Teams 聊天
+- Yammer 社群訊息
+- Yammer 私人訊息
 
-當您在建立保留原則時選取任一個 Teams 位置時，系統會自動排除其他的位置。 因此，請依照您是否要涵蓋 Teams 位置來決定要遵循的指示：
+建立保留原則時若選取 Teams 或 Yammer 位置，系統會自動排除另一個位置。 因此，應遵循的指示將取決於您是否要包含 Teams 或 Yammer 位置而定：
 
-- [Teams 位置的保留原則相關指示](#retention-policy-for-teams-locations)
-- [除了 Teams 以外的位置保留原則相關指示](#retention-policy-for-locations-other-than-teams)
+- [Teams 位置保留原則的指示](#retention-policy-for-teams-locations)
+- [Yammer 位置保留原則的指示](#retention-policy-for-yammer-locations)
+- [Teams 和 Yammer 以外位置保留原則的指示](#retention-policy-for-locations-other-than-teams-and-yammer)
 
 當您有多個保留原則，以及當您同時使用保留標籤時，請參閱 [保留原則優先或以什麼為優先？](retention.md#the-principles-of-retention-or-what-takes-precedence) 以瞭解在相同的內容上同時有多個保留設定套用時，會有什麼樣的結果。
 
@@ -93,7 +96,56 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 
 套用至 Microsoft 365、SharePoint 網站或 OneDrive 帳戶的保留原則有可能會刪除 Teams 聊天中參考的檔案，或在頻道訊息刪除前就將其刪除。 在這種情況下，檔案仍會顯示在 Teams 訊息中，但是當使用者選取檔案時，會收到「找不到檔案」錯誤。 此行為並非保留原則特定，因此也可能在使用者從 SharePoint 或 OneDrive 中手動刪除檔案時發生。
 
-### <a name="retention-policy-for-locations-other-than-teams"></a>除了 Teams 以外的位置保留原則
+### <a name="retention-policy-for-yammer-locations"></a>Yammer 位置的保留原則
+
+> [!NOTE]
+> Yammer 的保留原則已推出預覽版。 如果您還沒有看到 Yammer 的新位置，請幾天後再試一次。
+>
+> 若要使用此功能，您的 Yammer 網路必須處於[原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)，而非混合模式。
+
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，選取 **[原則]** >  **[保留]**。
+
+2. 選取 **[新增保留原則]** 以建立新的保留原則。
+
+3. 在精靈的頁面上，如需 **決定是否要保留內容、刪除內容，或兩者皆可**，請指定保留及刪除內容的設定選項。 
+    
+    您可以建立只會保留內容但不刪除內容的保留原則，建立會保留並於一段指定的時間後刪除內容的原則，或直接在一段時間後刪除指定內容的原則。 如需詳細資訊，請參閱此頁面上的[保留和刪除內容的設定 ](#settings-for-retaining-and-deleting-content)。
+    
+    請勿選取 [使用進階保留設定 **]**，因為 Yammer 位置不支援此選項。 
+
+4. 在 [選擇位置 **]** 頁面上，選取 [讓我選擇特定位置 **]**。 然後將 Yammer 的一個或兩個位置切換為開啟：**Yammer 社群訊息**和 **Yammer 私人訊息**。
+    
+    預設會選取所有社群和使用者，但是您可以指定要包含或排除的社群和使用者，以縮小範圍。
+    
+    針對 Yammer 私人訊息： 
+    - 如果您保留預設值**全部**，將不會包含 Azure B2B 來賓使用者。 
+    - 如果您選取 [選擇使用者 **]**，就可以將保留原則套用至外部使用者 (如果您知道其帳戶)。
+
+5. 完成精靈以儲存您的設定。
+
+如需保留原則對 Yammer 運作方式的詳細資訊，請參閱[了解 Yammer 的保留](retention-policies-yammer.md)。
+
+#### <a name="additional-retention-policies-needed-to-support-yammer"></a>支援 Yammer 所需的額外保留原則
+
+Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 若要保留及刪除您 Yammer 網路的電子郵件，請使用 **Office 365 群組**位置來設定額外的保留原則，其中包括用於 Yammer 的任何 Microsoft 365 群組。 
+
+若要保留及刪除 Yammer 中儲存的檔案，您需要包含 **SharePoint 網站**或 **OneDrive 帳戶**位置的保留原則：
+
+- 在私人訊息中共用的檔案會儲存在共用檔案之使用者的 OneDrive 帳戶中。 
+
+- 上傳到社群的檔案會儲存在 Yammer 社群的 SharePoint 網站中。
+
+套用至 SharePoint 網站或 OneDrive 帳戶的保留原則可能會在刪除 Yammer 訊息之前便刪除這些訊息中參考的檔案。 在這種情況下，檔案仍會顯示在 Yammer 訊息中，但是當使用者選取檔案時，會遇到「找不到檔案」錯誤。 此行為並非保留原則特定，因此也可能在使用者從 SharePoint 或 OneDrive 中手動刪除檔案時發生。
+
+### <a name="retention-policy-for-locations-other-than-teams-and-yammer"></a>Teams 和 Yammer 以外位置的保留原則
+
+針對適用於下列任何服務的保留原則，使用下列指示：
+
+- Exchange：電子郵件和公用資料夾
+- SharePoint：網站
+- OneDrive：帳戶
+- Microsoft 365 群組
+- 商務用 Skype
 
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，選取 **[原則]** >  **[保留]**。
 

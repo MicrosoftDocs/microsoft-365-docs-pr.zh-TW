@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 3d5bf971f65be5fd6ef4fdbed46cc41827657a54
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: d8b9ff7bea32f489a5cce5f64626908e8ec56fa1
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132133"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48197336"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 
@@ -31,6 +31,7 @@ ms.locfileid: "48132133"
 對大多數組織來說，其資料 (電子郵件、文件、即時訊息等) 的數量和複雜性日益增加。有效管理或控管此資訊至關重要，因為您需要：
   
 - **主動遵守產業規範和內部原則**，因此您需要將某些內容至少保留一段時間，例如，Sarbanes-Oxley 法案可能會要求您將某些類型的內容保留七年。 
+
 - **降低發生訴訟或安全性漏洞的風險**，方法為永久刪除您不再需要保留的舊內容。 
     
 - **協助貴組織有效分享知識並提高靈活度**，方法為確保使用者只使用目前和相關的內容。 
@@ -58,7 +59,7 @@ ms.locfileid: "48132133"
 
 - 針對 Exchange 信箱：複本會保留在 **[可復原的項目]** 資料夾中。 
 
-- 針對 Teams 頻道和聊天訊息：複本會保留在名為 **SubstrateHolds** 的隱藏資料夾中，以作為 Exchange [可復原的項目]**** 資料夾中的子資料夾。
+- 針對 Teams 和 Yammer 訊息：複本會保留在名為 **SubstrateHolds** 的隱藏資料夾中，以作為 Exchange [可復原的項目 **]** 資料夾中的子資料夾。
 
 > [!NOTE]
 > [文件保留庫] 會佔用不受網站儲存空間配額限制的儲存空間。 當您對 SharePoint 和 Microsoft 365 群組使用保留設定時，可能需要增加您的儲存空間。
@@ -69,6 +70,7 @@ ms.locfileid: "48132133"
 
 - [瞭解 SharePoint 和 OneDrive 的保留功能](retention-policies-sharepoint.md)
 - [了解 Microsoft Teams 保留](retention-policies-teams.md)
+- [了解 Yammer 的保留](retention-policies-yammer.md)
 - [了解 Exchange 的保留](retention-policies-exchange.md)
 
 ## <a name="retention-policies-and-retention-labels"></a>保留原則和保留標籤
@@ -102,6 +104,8 @@ ms.locfileid: "48132133"
 - Exchange 公用資料夾
 - Teams 通道訊息
 - Teams 聊天
+- Yammer 社群訊息
+- Yammer 私人訊息
 
 您可以輕鬆地將單一原則套用到多個位置，或特定位置或使用者。
     
@@ -214,7 +218,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
    
 在 Exchange 中，您只能在新傳送的郵件 (傳輸中的資料) 上自動套用保留標籤功能，而非目前在信箱中的所有郵件 (待用資料)。 此外，您只能在所有信箱中為敏感性資訊類型和可訓練分類器來自動套用保留標籤功能，但無法選取特定信箱。
   
-Exchange 公用資料夾、Skype 和 Teams 頻道訊息和聊天不支援保留標籤。 若要保留或刪除這些位置中的內容，請改用保留原則。
+Exchange 公用資料夾、Skype、Teams 和 Yammer 訊息不支援保留標籤。 若要保留或刪除這些位置中的內容，請改用保留原則。
 
 #### <a name="only-one-retention-label-at-a-time"></a>一次只能有一個保留標籤
 
@@ -265,7 +269,7 @@ Office 365 安全性與合規性中心具有來自**資訊控管** > **儀表板
 |功能|保留原則 |保留標籤|
 |:-----|:-----|:-----|:-----|
 |可以保留然後刪除、僅保留或僅刪除的保留設定 |是 |是 |
-|支援的工作負載： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 群組 <br />- 商務用 Skype <br />- Teams|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，除了公用資料夾 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否  |
+|支援的工作負載： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 群組 <br />- 商務用 Skype <br />- Teams<br />- Yammer|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，除了公用資料夾 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否 <br /> 否 |
 |自動套用的保留 | 是 | 是 |
 |根據條件套用保留 <br /> - 敏感資訊類型、KQL 查詢、可訓練分類器| 否 | 是 |
 |手動套用的保留 | 否 | 是 |

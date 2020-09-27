@@ -17,16 +17,19 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及自動發佈保留標籤，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: dc525a9f7a2ea97f61f03320495eea737465cfd9
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 9ab456cd5b1f5f1bf47a1e24a3d7e58b7992ede0
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171301"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48196376"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤來保留或刪除內容
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
+
+> [!NOTE]
+> [法規記錄](records-management.md#records)不支援此案例。
 
 [保留標籤](retention.md) 最實用的功能之一，是將標籤自動套用至符合特定條件的內容。 在此情況下，貴組織中的人員不必親自套用保留標籤。 Microsoft 365 會執行這些動作。
   
@@ -39,6 +42,9 @@ ms.locfileid: "48171301"
 - 使用者不再需要了解資料控管原則，他們可以專心工作。
     
 當內容包含敏感性資訊、關鍵字或[可訓練分類器](classifier-get-started-with.md)的相符項目時，您可以自動對該內容套用保留標籤。
+
+> [!TIP]
+> 現在處於預覽階段，使用可搜尋的屬性來找出 [Teams 會議錄製](#microsoft-teams-meeting-recordings)。
 
 根據下列條件自動套用保留標籤的程式：
 
@@ -80,7 +86,7 @@ ms.locfileid: "48171301"
     
     - 如需檔案計劃描述元的詳細資訊，請參閱[使用檔案計劃管理保留標籤](file-plan-manager.md)
     
-    - 若要使用保留標籤聲明[記錄](records-management.md#records)，請啟用 **[將項目標記為記錄]** 選項。
+    - 若要使用保留標籤來宣告記錄，請選取 [將項目標記為記錄 **]**，或 [將項目標記為法規記錄 **]**。 如需詳細資訊，請參閱[設定保留標籤以宣告記錄](declare-records.md#configuring-retention-labels-to-declare-records)。
 
 3. 建立標籤並看到發佈標籤、自動套用標籤或僅保存標籤的選項：選取 **[自動將此標籤套用於特定類型的內容]**，然後選取 **[完成]** 以啟動 [建立自動標籤] 精靈，該精靈將直接帶您進入以下過程中的步驟 2。
 
@@ -162,6 +168,29 @@ ms.locfileid: "48171301"
 |Exchange   | `recipients:garthf@contoso.com` |
 |SharePoint | `contenttype:contract` |
 |SharePoint | `site:https://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract`|
+
+##### <a name="microsoft-teams-meeting-recordings"></a>Microsoft Teams 會議錄製
+
+> [!NOTE]
+> 保留及刪除 Teams 會議錄製的功能已在預覽版中推出，且必須將錄製儲存到 OneDrive 或 SharePoint，否則無法運作。 如需詳細資訊，請參閱[使用商務用 OneDrive 和 SharePoint 或 Stream 進行會議錄製](https://docs.microsoft.com/MicrosoftTeams/tmr-meeting-recording-change)。
+
+若要識別儲存在使用者 OneDrive 帳戶或 SharePoint 中的 Microsoft Teams 會議錄製，請為**關鍵字查詢編輯器**指定下列項目：
+
+``` 
+ProgID:Media AND ProgID:Meeting
+```
+
+針對此保留標籤，您也必須透過建立標籤原則，將它發佈到相關使用者的 OneDrive 帳戶或 SharePoint 網站。 在多數時候，會議錄製都會儲存到 OneDrive，但針對頻道會議，則是將它們儲存在 SharePoint 中。
+
+儲存自動套用原則後：
+
+1. 選取 [標籤原則 **]** 索引標籤 > [發佈標籤 **]**
+
+2. 當系統提示您選取標籤時，請選擇您使用 KQL 查詢建立的標籤，以找出 Teams 會議錄製。
+
+3. 當系統提示您輸入位置時，請選擇 [SharePoint 網站 **]**，然後選擇 [OneDrive 帳戶 **]**。 然後您可以保留預設值**全部**，或指定個別位置，例如，包含或排除特定 OneDrive 帳戶。
+
+4. 完成精靈並儲存此標籤原則。
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可訓練分類器自動將標籤套用至內容
 
