@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，如此一來，諸如電子郵件和商務用 Skype Online 等服務也會使用您自己的功能變數名稱。
-ms.openlocfilehash: 6a99ee90db3bb71038309175b32bd4d96097aa5a
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 34e4db5748f9d4c1f1864db09071374bcec73e1d
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662229"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295055"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 
@@ -122,8 +122,8 @@ ms.locfileid: "46662229"
 |:-----|:-----|
 |First nameserver (第一個名稱伺服器)  <br/> |ns1.bdm.microsoftonline.com  <br/> |
 |Second nameserver (第二個名稱伺服器)  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Third nameserver (第三個名稱伺服器)  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Fourth nameserver (第四個名稱伺服器)  <br/> |ns2.bdm.microsoftonline.com  <br/> |
+|Third nameserver (第三個名稱伺服器)  <br/> |ns3.bdm.microsoftonline.com  <br/> |
+|Fourth nameserver (第四個名稱伺服器)  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
    > 最好新增四筆記錄，但如果您的註冊機構只支援二個，請新增 **ns1.bdm.microsoftonline.com** 及 **ns2.bdm.microsoftonline.com**。 
@@ -170,7 +170,7 @@ ms.locfileid: "46662229"
 
 4. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
 
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. 然後，您的 Microsoft 電子郵件和其他服務將全部設定為與您的網域搭配使用。 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 588c30ca07684636661c7946b2418b75574c8cbd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199214"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295535"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -364,8 +364,13 @@ ms.locfileid: "48199214"
 如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
 
 - **開始日期** 和 **結束日期**
-- 偵測值
--  (Office 365 ATP**保護**) ： **atp**或**EOP**。 請注意，View 資料中無法使用這種可篩選的屬性 **：內容 \> 惡意程式碼**。
+- **偵測**
+- **保護者**： **ATP** 或 **EOP**
+- **Tag**：以標籤篩選，以傳回已套用特定標記的使用者或群組。 如需使用者標記的相關資訊，請參閱 [user tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)。
+- **網域**
+
+> [!NOTE]
+> **受保護者**、 **標記** 和 **網域** 只是 Office 365 ATP。 在 View 資料中無法使用下列可篩選 **的屬性：內容 \> 惡意程式碼**。
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>威脅防護狀態報表的詳細資料表格視圖
 
@@ -378,7 +383,12 @@ ms.locfileid: "48199214"
   - **導向者**
   - **惡意軟體名稱**
 
-- **資料查看方式：一覽**：沒有可用的 **視圖詳細資料表格** 按鈕。
+如果您按一下此視圖中的 **篩選器** ，您可以使用下列篩選器修改報告：
+
+- **開始日期** 和 **結束日期**
+- **偵測**
+
+**資料查看方式：一覽**：沒有可用的 **視圖詳細資料表格** 按鈕。
 
 - 所有其他圖表：
 
@@ -389,12 +399,16 @@ ms.locfileid: "48199214"
   - **偵測到**
   - **傳遞狀態**
   - **受損來源**
+  - **標記**
 
 如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
 
 - **開始日期** 和 **結束日期**
-- 偵測值
--  (Office 365 ATP**保護**) ： **atp**或**EOP**。 請注意，View 資料中無法使用這種可篩選的屬性 **：內容 \> 惡意程式碼**。
+- **偵測**
+- **受** 限於 (OFFICE 365 ATP) ： **ATP** 或 **EOP**
+- **Tag**：以標籤篩選，以傳回已套用特定標記的使用者或群組。 如需使用者標記的相關資訊，請參閱 [user tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)。
+- **網域**
+- 收件**者 (請**注意，[詳細資料] 表格視圖中只提供此可篩選的屬性) 
 
 ## <a name="top-malware-report"></a>主要惡意程式碼報告
 

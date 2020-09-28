@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: 在設定自訂網域時，請確定已正確設定 DNS 記錄，以追蹤在設定自訂網域時所執行的任何問題。
-ms.openlocfilehash: 0a315be243395940146479e05de2c7044a5a36ab
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 8d46d681e44a0bebd0a9571d18ffa95e1e554dc8
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560248"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295043"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>尋找並修正新增網域或 DNS 記錄之後所發生的問題
 
@@ -36,7 +36,7 @@ ms.locfileid: "46560248"
 將您的網域設定為與 Microsoft 365 搭配使用可能是挑戰性。 使用 DNS 系統的限制頗多，而且您網域的 DNS 設定也會影響到重要的商務活動，例如電子郵件！
 
 > [!NOTE]
-> 您可以檢查您的網域的狀態，以查看其是否存在問題。 移至 [**安裝**  >  **網域**]，然後在 [**狀態**] 欄中查看通知。 如果您看到問題，請選取 [更多動作 (三個點) ]，然後選擇 [**檢查健康情況**]。 隨即開啟的窗格會描述您的網域所發生的任何問題。
+> 您可以檢查您的網域的狀態，以查看其是否存在問題。 移至 [**安裝**  >  **網域**]，然後在 [**狀態**] 欄中查看通知。 如果您看到問題，請選取 [更多動作 (三個點) ]，然後選擇 [ **檢查健康情況**]。 隨即開啟的窗格會描述您的網域所發生的任何問題。
   
 ## <a name="whats-going-on"></a>What's going on?
 
@@ -73,14 +73,14 @@ ms.locfileid: "46560248"
 
 當您將您的網域新增至 Microsoft 365 時，通常您的網域的 MX 記錄會更新 (您或 Microsoft 365) 指向 Microsoft 365，而且所有傳送至該網域的電子郵件都會開始使用 Microsoft 365。 在您變更 MX 記錄之前，請確定您已在 Microsoft 365 中為已在您的網域上有電子郵件的每位使用者建立信箱。
   
-如果您不想將您網域中的每一個人的電子郵件移至 Microsoft 365，該怎麼辦？ 您可以[只使用一些電子郵件地址試驗 Microsoft 365 的](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)步驟。
+如果您不想將您網域中的每一個人的電子郵件移至 Microsoft 365，該怎麼辦？ 您可以 [只使用一些電子郵件地址試驗 Microsoft 365 的](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)步驟。
   
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>無法確認非盈利或學校帳戶狀態？
 <a name="BKMK_validateAcct"> </a>
 
 您只需要驗證組織的網域，而不會設定任何服務時，會有幾種案例。 例如，若要證明您的組織符合學校訂閱的 Microsoft 365。
   
-請參閱[驗證您的 Microsoft 365 網域中的指南，以證明擁有擁有權、非盈利性或教育狀態，或啟動 Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)以確定您已完成所有必要步驟。 這對於每種情況都有些不同。 
+請參閱 [驗證您的 Microsoft 365 網域中的指南，以證明擁有擁有權、非盈利性或教育狀態，或啟動 Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 以確定您已完成所有必要步驟。 這對於每種情況都有些不同。 
   
 ## <a name="services-not-working-with-your-domain"></a>您的網域無法使用服務嗎？
 <a name="BKMK_Test"> </a>
@@ -88,7 +88,7 @@ ms.locfileid: "46560248"
 我們可以協助您追蹤網域的 DNS 設定問題。 Microsoft 365 中的 [網域] 疑難排解程式會顯示所有需要修正的記錄，以及記錄所需的確切設定。 
 
 > [!TIP]
-> 已正確設定您的 DNS，但是郵件無法在桌面版 Outlook 正常運作？ 請參閱[您可以與 Microsoft 365 搭配的不同郵件流程案例](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices)，以確定您已為您的公司正確設定專案。 或透過電子郵件，取得下列更多疑難排解說明：[修正 Outlook 問題](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)。 
+> 已正確設定您的 DNS，但是郵件無法在桌面版 Outlook 正常運作？ 請參閱 [您可以與 Microsoft 365 搭配的不同郵件流程案例](https://docs.microsoft.com/exchange/mail-flow-best-practices/mail-flow-best-practices) ，以確定您已為您的公司正確設定專案。 或透過電子郵件，取得下列更多疑難排解說明：[修正 Outlook 問題](https://docs.microsoft.com/exchange/troubleshoot/outlook-connectivity/outlook-connection-issues)。 
   
 ## <a name="accessing-your-website-isnt-working"></a>無法存取您的網站嗎？
 <a name="BKMK_Website"> </a>
@@ -97,5 +97,10 @@ ms.locfileid: "46560248"
   
 - 人員無法進入您的網站 www.mydomain.com：[追蹤網站問題](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
     
-- 您無法更新 A 記錄或 CNAME 記錄，使其指向您的網站：[更新 Microsoft 365 中的自訂 DNS 記錄](../dns/add-or-edit-custom-dns-records.md)
+- 您無法更新 A 記錄或 CNAME 記錄，使其指向您的網站： [更新 Microsoft 365 中的自訂 DNS 記錄](../dns/add-or-edit-custom-dns-records.md)
+
+## <a name="related-content"></a>相關內容
+
+[疑難排解：驗證的網域變更上的審計資料](https://docs.microsoft.com/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+
     

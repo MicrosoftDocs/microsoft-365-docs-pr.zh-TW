@@ -1,7 +1,7 @@
 ---
 title: 追蹤您的 Microsoft 安全分數記錄並符合目標
-description: 深入瞭解已影響安全分數的活動。 探索趨勢及設定目標。
-keywords: 安全性、惡意程式碼、Microsoft 365、M365、安全分數、安全性中心、改進動作
+description: 深入瞭解已影響 Microsoft 安全分數的活動。 探索趨勢及設定目標。
+keywords: microsoft 安全分數、安全分數、office 365 安全分數、microsoft security 得分、microsoft 365 安全性中心、改進動作
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c31ea1f7217babd4949bee843b091bb767e210e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4f5d0a59372fb32b2802a094c247e45740ba3946
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196286"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295247"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>追蹤您的 Microsoft 安全分數記錄並符合目標
 

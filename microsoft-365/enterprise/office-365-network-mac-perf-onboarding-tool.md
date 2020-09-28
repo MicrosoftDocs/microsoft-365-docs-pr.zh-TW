@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 network connectivity test 工具 (預覽) '
-ms.openlocfilehash: 72f42a71ec44d165a24187edaf03aa62d330479b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200814"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295523"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 network connectivity test 工具 (預覽) 
 
@@ -205,7 +205,7 @@ Exchange Online 服務前端的使用者辦公室位置的網路 TCP 延遲會�
 
 顯示 UDP 封包遺失，以10秒的測試音訊撥號從用戶端到 Microsoft 小組服務的前門。 這應低於 **1.00%** 的傳遞。
 
-### <a name="latency"></a>延遲
+#### <a name="latency"></a>延遲
 
 顯示測定的 UDP 延遲，它應低於 **100ms**。
 
@@ -231,7 +231,7 @@ Exchange Online 服務前端的使用者辦公室位置的網路 TCP 延遲會�
 
 登入後，您可以查看先前所執行的報告。 您也可以將其共用或從清單中刪除。
 
-![報表](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
+![報告](../media/m365-mac-perf/m365-mac-perf-reports-list.png)
 
 ## <a name="network-health-status"></a>網路健康狀態
 

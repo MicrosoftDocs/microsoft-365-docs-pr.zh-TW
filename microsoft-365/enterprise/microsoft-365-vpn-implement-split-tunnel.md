@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何實作 Office 365 的 VPN 分割通道
-ms.openlocfilehash: af5c2ea35df921abe8eaa9a85ab2ab244931c098
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: ff79138d44c98d76af1a3d9c374159b0fae4c7ed
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214857"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295271"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>實作 Office 365 的 VPN 分割通道
 
@@ -325,6 +325,10 @@ Microsoft 安全小組已發佈概括安全性專業人員重要方式的 [文�
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>這項建議是否適用於使用全球 Office 365 執行個體的中國使用者？
 
 **否**，不適用。 對上述建議提供一項警告：PRC 中連線到全球 Office 365 執行個體的使用者。 由於區域中經常發生跨境網路擁塞情況，因此直接網際網路出口效能可能變化無常。 區域中的大部分客戶都使用 VPN 運作，將流量匯入公司網路，並利用其獲得授權的 MPLS 迴路或類似於透過最佳化路徑的國家/地區外部出口。 [Office 365 針對中國使用者的效能最佳化](microsoft-365-networking-china.md)這篇文章有進一步的概括說明。
+
+### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>分割通道設定是否適用于瀏覽器中執行的團隊？
+
+**否**，不適用。 它只適用于 Microsoft 團隊用戶端版本1.3.00.13565 或更高版本。 此版本包含用戶端偵測到可用網路路徑的方式的增強功能。
 
 ## <a name="related-topics"></a>相關主題
 
