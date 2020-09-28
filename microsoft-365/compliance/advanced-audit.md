@@ -6,7 +6,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: article
+ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -15,45 +15,61 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: 451eb2a10074081b6d688754002d4f2e9f50f4b1
-ms.sourcegitcommit: 40ec697e27b6c9a78f2b679c6f5a8875dacde943
+ms.openlocfilehash: bd92d8d471af07d6be252390f0be0764e6b320f7
+ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44351690"
+ms.lasthandoff: 09/22/2020
+ms.locfileid: "48200299"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
-Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and-compliance.md)，可讓組織深入了解 Microsoft 365 中多種不同服務的多個類型的稽核活動。 現在隨著 Microsoft 365 中進階稽核的推出，我們會加入新的稽核功能，以協助組織進行鑑識與合規性調查。
+Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and-compliance.md)，可讓組織深入了解 Microsoft 365 中多種不同服務的多個類型的稽核活動。 進階稽核經由增加進行調查時所需的稽核記錄保留，提供對有助於判斷危害範圍重要事件的存取，以及快速存取 Office 365 管理活動 API，來幫助組織進行鑑定及合規性調查。
 
 > [!NOTE]
-> 進階稽核可供具有 Office 365 E5 或 Microsoft 365 企業版 E5 訂閱的組織使用。 此外，當進階稽核功能需要針對每位使用者進行授權時，您可以將 Microsoft 365 E5 合規性附加元件授權指派給使用者，而針對稽核記錄和存取重要調查事件的長期保留也是如此。
+> 進階稽核可供具有 Office 365 E5 或 Microsoft 365 企業版 E5 訂閱的組織使用。 此外，當進階稽核功能需要針對每位使用者進行授權時，您可以將 Microsoft 365 E5 合規性或 E5 電子文件探索和稽核附加元件授權指派給使用者，而針對稽核記錄和存取重要調查事件的長期保留也是如此。 如需有關授權的詳細資訊，請參閱 [Microsoft 365 安全性與合規性的授權指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
 
-本文提供這些進階稽核功能的概觀。
+本文提供進階稽核功能的概觀。
 
 ## <a name="long-term-retention-of-audit-logs"></a>長期保留稽核記錄
 
-進階稽核會保留所有 Exchange、SharePoint 和 Azure Active Directory 稽核記錄，時間為一年。 這是透過預設的稽核記錄保留原則完成，它會保留包含 **Workload** 屬性 (這指出發生活動所在的服務) 的 **Exchange**、**SharePoint** 或 **AzureActiveDirectory** 的值的任何稽核記錄一年。 這可協助進行持續的鑑識或合規性調查。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md#default-audit-log-retention-policy)中的「預設稽核記錄保留原則」一節。
+進階稽核會保留所有 Exchange、SharePoint 和 Azure Active Directory 稽核記錄，時間為一年。 這是透過預設的稽核記錄保留原則完成，它會保留包含 **Workload** 屬性 (這指出發生活動所在的服務) 的 **Exchange**、**SharePoint** 或 **AzureActiveDirectory** 的值的任何稽核記錄一年。 保留稽核記錄的時間越長，可協助您進行深入的鑑定或合規性調查。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md#default-audit-log-retention-policy)中的「預設稽核記錄保留原則」章節。
 
-## <a name="audit-log-retention-policies"></a>稽核記錄保留原則
+我們也會發佈將稽核記錄保留 10 年的功能。 將稽核記錄保留 10 年可協助支援長期的調查，並回應法規、法律和內部責任。
 
-在其他服務中產生、未在預設稽核記錄保留原則涵蓋範圍的所有稽核記錄 (如前一節所述)，將會保留 90 天。 不過，您現在可以建立自訂的稽核記錄保留原則，以保留其他稽核記錄最多達一年。 您可以根據下列一或多項準則，建立用來保留稽核記錄的原則：
+> [!NOTE]
+> 保留 10 年的稽核記錄會需要額外的附加元件授權。 這個新的授權將於 2021 年初提供。 如需詳細資訊，請參閱本文中的[進階稽核常見問題集](#faqs-for-advanced-audit)章節。
 
-- 稽核活動發生所在的 Microsoft 365 服務
+### <a name="audit-log-retention-policies"></a>稽核記錄保留原則
 
-- 特定已稽核活動
+在其他服務中產生、未在預設稽核記錄保留原則涵蓋範圍的所有稽核記錄 (如前一節所述)，將會保留 90 天。 不過，您可以建立自訂的稽核記錄保留原則，將其他稽核記錄保留更久的時間，最多可達 10 年。 您可以根據下列一或多項準則，建立用來保留稽核記錄的原則：
 
-- 執行已稽核活動的使用者
+- 發生已稽核活動的 Microsoft 365 服務。
 
-您也可以指定要保留符合原則的稽核記錄的時間長度和優先順序層級，以便特定原則可優先於其他原則。 另請注意，如果您需要為組織中的部分或所有使用者保留 Exchange、SharePoint 或 Azure Active Directory 稽核記錄少於一年，任何自訂稽核記錄保留原則都會優先於預設的稽核保留原則。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md)。
+- 特定已稽核活動。
+
+- 執行已稽核活動的使用者。
+
+您也可以指定要保留符合原則的稽核記錄的時間長度和優先順序層級，以便特定原則可優先於其他原則。 另請注意，如果您需要為組織中的部分或所有使用者保留 Exchange、SharePoint 或 Azure Active Directory 稽核記錄少於一年 (或 10 年)，任何自訂稽核記錄保留原則都會優先於預設的稽核保留原則。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md)。
 
 ## <a name="access-to-crucial-events-for-investigations"></a>存取調查重要事件
 
-重要安全性與合規性相關的稽核事件，可協助您調查可能外洩或其他與鑑識相關的調查。 我們要發佈的第一個重要事件是 *MailItemsAccessed* 信箱稽核動作。 當郵件通訊協定和郵件用戶端存取郵件資料時，即會觸發此動作。 MailItemsAccessed 動作可幫助調查人員識別資料外洩，並判斷可能已遭入侵的郵件範圍。 如果攻擊者取得電子郵件訊息，即使沒有明確訊號指出已實際讀取郵件 (也就是說，在稽核記錄中記錄了透過繫結或同步處理之類的存取類型)，將會觸發 MailItemsAccessed 動作。
+進階稽核經由提供對重要事件的存取 (例如何時存取郵件項目、何時回覆和轉寄郵件項目以及使用者何時 Exchange Online 和 SharePoint Online 中進行搜尋和搜尋哪些內容)，來幫助組織進行鑑定及合規性調查。 這些重要事件可協助您調查可能的破壞，並判斷危害的範圍。  [進階稽核] 提供下列重要事件：
 
-新的 MailItemsAccessed 信箱動作會取代 Exchange Online 中信箱稽核記錄的 MessageBind，並提供下列改善：
+- [MailItemsAccessed](#mailitemsaccessed)
+
+- [Send](#send)
+
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
+
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
+
+### <a name="mailitemsaccessed"></a>MailItemsAccessed
+
+MailItemsAccessed 事件是信箱稽核動作，當郵件資料受郵件通訊協定和郵件用戶端存取時，系統會觸發該事件。 MailItemsAccessed 動作可幫助調查人員識別資料外洩，並判斷可能已遭入侵的郵件範圍。 如果攻擊者取得電子郵件訊息，即使沒有明確訊號指出已實際讀取郵件 (也就是說，在稽核記錄中記錄了透過繫結或同步處理之類的存取類型)，將會觸發 MailItemsAccessed 動作。
+
+MailItemsAccessed 信箱動作會取代 Exchange Online 中信箱稽核記錄的 MessageBind，並提供下列改善：
 
 - MessageBind 僅可針對 AuditAdmin 使用者登入類型設定；不適用於代理人或擁有者動作。 MailItemsAccessed 適用於所有登入類型。
 
@@ -63,13 +79,55 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
 
 如需有關 MailItemsAccessed 活動的稽核記錄資訊，請參閱[使用進階稽核調查遭入侵帳戶](mailitemsaccessed-forensics-investigations.md)。
 
-### <a name="search-for-mailitemsaccessed-audit-records"></a>搜尋 MailItemsAccessed 稽核記錄
+若要搜尋 MailItemsAccessed 稽核記錄，您可以在 Microsoft 365 合規性中心的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[Exchange 信箱活動]** 下拉式清單中搜尋 **[已存取的信箱項目]** 活動。
 
-若要搜尋 MailItemsAccessed 稽核記錄，您可以在安全性與合規性中心的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 [Exchange 信箱活動]**** 下拉式清單中搜尋 [已存取的信箱項目]**** 活動。
-
-![在稽核記錄搜尋工具中搜尋 MailItemsAccessed 動作](../media/MailItemsAccessedSCC1.png)
+![在稽核記錄搜尋工具中搜尋 MailItemsAccessed 動作](../media/AdvAudit_MailItemsAccessed.png)
 
 您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) 或 [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) 命令。
+
+### <a name="send"></a>傳送
+
+Send 事件也是信箱審核動作，當使用者執行下列其中一項動作時，會觸發該事件：
+
+- 傳送電子郵件訊息
+
+- 回覆電子郵件訊息
+
+- 轉寄電子郵件訊息
+
+調查人員可以使用 Send 事件識別從遭入侵帳戶發送的電子郵件。 Send 事件的稽核記錄中包含郵件的相關資訊，例如郵件傳送的時間、InternetMessage 識別碼、主旨列，以及郵件是否包含附件。 這項稽核資訊可協助調查人員識別從遭入侵帳戶或攻擊者傳送的電子郵件訊息相關資訊。 此外，調查人員可以使用 Microsoft 365 或電子文件探索工具來搜尋郵件 (使用主旨列或郵件識別碼)，以找出傳送郵件的收件者，以及傳送郵件的實際內容。
+
+若要搜尋 Send 稽核記錄，您可以在 Microsoft 365 合規性中心的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[Exchange 信箱活動]** 下拉式清單中搜尋 **[傳送電子郵件]** 活動。
+
+![在 [稽核記錄搜尋工具] 中搜尋 [傳送電子郵件] 動作](../media/AdvAudit_SentMessage.png)
+
+您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) 或 [Search-MailboxAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) 命令。
+
+### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
+
+當某人在 Outlook 或 Outlook 網頁版中使用搜尋列來搜尋信箱中的項目時，就會觸發 SearchQueryInitiatedExchange 事件。 調查人員可以使用 SearchQueryInitiatedExchange 事件，來判斷可能有遭入侵帳號的攻擊者是否已查看或嘗試存取信箱中的機密資訊。 SearchQueryInitiatedExchange 事件的稽核記錄包含實際搜尋的查詢文字等資訊，以及搜尋是在 Outlook 電腦版用戶端或在 Outlook 網頁版中執行。 透過查看攻擊者可能執行的搜尋查詢，調查人員可以更能瞭解搜尋的電子郵件資料意圖。
+
+若要搜尋 SearchQueryInitiatedExchange 稽核記錄，您可以在合規性中心的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[搜尋活動]** 下拉式清單中搜尋 **[執行電子郵件搜尋]** 活動。
+
+![在 [稽核記錄搜尋工具] 中搜尋 [執行電子郵件搜尋] 動作](../media/AdvAudit_SearchExchange.png)
+
+您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog)。
+
+> [!NOTE]
+> 您必須在 Exchange Online PowerShell 中執行下列命令，以便在稽核記錄搜尋結果中包含 SearchQueryInitiatedExchange 事件 (由指定的 E5 使用者執行)：`Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。
+
+### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
+
+與搜尋信箱項目類似，當某人搜尋貴組織中的 SharePoint 主網站、Teams 網站、共同作業網站和中樞網站中的項目時，就會觸發 SearchQueryInitiatedSharePoint 事件。 調查人員可以使用 SearchQueryInitiatedSharePoint 事件來判斷攻擊者是否嘗試在 SharePoint 中尋找 (且可能存取) 敏感性資訊。 SearchQueryInitiatedSharePoint 事件的稽核記錄也包含實際搜尋的查詢文字。 透過查看攻擊者可能執行的搜尋查詢，調查人員可以更能瞭解欲搜尋的檔案資料意圖和範圍。
+
+若要搜尋 SearchQueryInitiatedSharePoint 稽核記錄，您可以在合規性中心的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[搜尋活動]** 下拉式清單中搜尋 **[執行 SharePoint 搜尋]** 活動。
+
+![在 [稽核記錄搜尋工具] 中搜尋 [執行 SharePoint 搜尋] 動作](../media/AdvAudit_SearchSharePoint.png)
+
+您也可以在 Exchange Online PowerShell 中執行 [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog)。
+
+> [!NOTE]
+> 您必須在 Exchange Online PowerShell 中執行下列命令，以便在稽核記錄搜尋結果中包含 SearchQueryInitiatedSharePoint 事件 (由指定的 E5 使用者執行)：`Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`。
 
 ## <a name="high-bandwidth-access-to-the-office-365-management-activity-api"></a>Office 365 管理活動 API 的高頻寬存取權
 
@@ -83,47 +141,21 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
 
 ## <a name="faqs-for-advanced-audit"></a>進階稽核的常見問題集
 
-**我可以在哪裡存取進階稽核？**
-
-在您的組織推出進階稽核之後，您就可以建立稽核記錄保留原則，並使用[安全性與合規性中心](https://protection.office.com)中的 [稽核記錄搜尋] 工具來搜尋 MailItemsAccessed 稽核記錄。 我們正努力在未來幾周內，在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)推出進階稽核。
-
 **每位使用者是否需要 E5 授權才能使用進階稽核？**
 
 若要使用使用者層級的進階稽核功能，使用者必須獲指派 E5 授權。 部分功能會檢查是否有適當授權，才會開放功能供使用者使用。 例如，如果您正嘗試保留使用者的稽核記錄，但該使用者在 90 天內未獲指派 E5 授權，系統將會傳回錯誤訊息。
 
-**為什麼即使已有 E5 訂閱，而使用者也已獲指派 E5 授權，在組織中仍看不到進階稽核？**
+**我的組織擁有 E5 訂閱，我是否需要執行任何動作才能存取重要事件的稽核記錄？**
 
-即使已具備正確的授權，您的組織可能仍無法使用 [進階稽核] 功能 (例如建立稽核記錄保留原則和記錄 MailItemsAccessed 稽核記錄的功能)。 如果您遇到此問題，這是因為進階稽核套件尚未部署至您的組織。 這是暫時的授權回填問題，應該很快會為受影響組織解決這個問題。 若要緩解此問題，請針對每個 E5 使用者執行下列步驟：
+針對符合資格的客戶，您不需要採取任何動作就能存取重要稽核事件。 不過，如本主題先前所述，由於授權回填問題所造成的延遲，可能會造成稽核記錄搜尋無法傳回重要事件的稽核記錄。 如果發生這種情況，請依照先前常見問題中有關暫時授權回填問題的指示進行。
 
-1. 在 Microsoft 365 系統管理中心，移至 [使用者] > [作用中的使用者]****，然後選取使用者。
+**何時提供新的 10 年稽核記錄保留附加元件授權？**
 
-2. 在 [使用者內容] 飛出頁面上，按一下 [授權和應用程式]****。
+新的 10 年稽核記錄保留附加元件將於 2021 年初提供給 E5 訂閱的客戶購買。
 
-3. 展開 [應用程式]**** 區段，然後執行下列其中一項操作：
+**如果我建立了 10 年稽核記錄保留原則，此功能已發發布至正式版本，但在 2021 年初所需的附加元件授權可使用之前，系統會對我組織的稽核記錄資料產生什麼影響？**
 
-   a. 如果沒有選取 [Microsoft 365 進階稽核]**** 核取方塊，請選取它，然後按一下 [儲存變更]****。 此使用者的 MailItemsAccessed 動作的稽核記錄應可在 24 小時內提供搜尋。
-
-   b. 如果已選取 [Microsoft 365 進階稽核]**** 核取方塊，請清除它，然後按一下 [儲存變更]****。 請參閱步驟 4。
-
-4. 如果您已在步驟 3 中清除核取方塊，請稍候 60 分鐘，然後重複步驟 3a 來啟用 Microsoft 365 進階稽核應用程式。
-
-針對使用以群組為基礎授權之指派授權至使用者群組的組織，請務必關閉該群組的 Microsoft 365 進階稽核授權指派。 儲存變更之後，請確認已關閉群組的 Microsoft 365 進階稽核。 然後重新開啟群組的授權指派。 如需以群組為基礎授權的相關指示，請參閱[在 Azure Active Directory 中以群組成員資格指派授權給使用者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) (英文)。
-
-**如果我的組織處於私人預覽階段的一年稽核記錄保留，會發生什麼情況？**
-
-只要您不以自訂稽核保留原則來覆寫和變更稽核保留原則，就可以保留預覽計畫中的審核保留原則。
-
-**如果我的組織想要將稽核記錄保留一年以上，該怎麼辦？**
-
-我們正在探索相關作法，讓我們可以為稽核記錄提供較長的保留期間。 您可以在 [Office 365 使用者意見](https://office365.uservoice.com/forums/289138-office-365-security-compliance?category_id=137187) (英文) 中提供關於稽核記錄較長保留時間的意見反應。
-
-**我的組織擁有 E5 訂閱，我是否需要執行任何動作才能存取 MailItemsAccessed 事件的稽核記錄？**
-
-針對符合資格的客戶，您不需要採取任何動作就能存取 MailItemsAccessed 事件。 不過，如本主題先前所述，由於授權回填問題所造成的延遲，可能會造成稽核記錄搜尋無法傳回 MailItemsAccessed 事件的稽核記錄。 如果發生這種情況，請按照 [搜尋 MailItemsAccessed 稽核記錄] 一節中的指示進行。
-
-**您是否計畫在今年推出其他事件？**
-
-是的，我們計畫在未來幾個月內推出對調查來說至關重要的新事件。 接近推出日期時，我們會在 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)中公告這些新事件的相關資訊。
+您在正式發行之後建立的 10 年稽核記錄保留原則所涵蓋的所有稽核資料，都將保留 10 年。 當 2021 年初 10 年稽核記錄保留附加元件授權可用時，您將需要為使用現有 10 年稽核記錄保留原則保留稽核資料的使用者購買附加元件授權。 此外，只要 2021 年初附加元件授權可用時，當您建立新的 10 年稽核紀錄保留原則時，系統就會強制執行適當的授權。
 
 **Office 365 管理活動 API 的進階稽核中是否有新的事件？**
 
@@ -131,4 +163,4 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
 
 **頻寬較高代表延遲較好或更高的 SLA 嗎？**
 
-目前，高頻寬可提供更好的管道，特別是具有大量稽核訊號和大量消費模式的組織。 這可能會導致更好的延遲。 不過，SLA 與高頻寬無關。 標準延遲已予以記錄，且在進階稽核推出時不會變更。
+目前，高頻寬可提供更好的管道，特別是具有大量稽核訊號和大量消費模式的組織。 更多頻寬可以導致更好的延遲。 不過 SLA 與高頻寬無關。 標準延遲已予以記錄，且這些延遲在進階稽核推出時不會變更。
