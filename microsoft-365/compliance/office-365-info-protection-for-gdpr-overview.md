@@ -45,7 +45,7 @@ GDPR 規定個人資料的收集、儲存、處理及共用。在 GDPR 下，個
 
 ### <a name="step-1--use-compliance-manager-to-view-the-regulation-requirements-and-track-your-progress"></a>步驟 1 — 使用合規性管理員來檢視規定需求及追蹤進度
 
-合規性管理員可以協助您追蹤、實作及管理稽核控制措施，協助貴組織達到包括 GDPR 在內各種不同標準的規範。
+合規性管理員可以協助您追蹤、實作及管理稽核控制措施，協助貴組織達到包括 GDPR 在內各種不同合規性的規範。
 
 ![使用合規性管理員來檢視需求及追蹤進度](../media/Overview-image1.png)
 

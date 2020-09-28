@@ -40,7 +40,7 @@ Azure 和 Azure Government 適用於受 NERC CIP 標準 (包括 BCSI 工作負�
 - [NERC CIP 標準和雲端運算](https://aka.ms/AzureNERC)是一份技術白皮書，該技術白皮書基於適用於雲端服務提供者 (例如FedRAMP) 的既有第三方稽核，討論了 NERC CIP 需求的合規性考量。 它涵蓋了雲端操作人事的背景檢測，並回答有關註冊實體感興趣的邏輯隔離和多租用戶的常見問題。 其中也解決了內部部署與雲端部署之間的安全性考量。
 - [NERC 稽核的雲端實作指南](https://aka.ms/AzureNERCGuide)是一份指導文件，提供當前 NERC CIP 標準需求集與構成 FedRAMP 基礎的 [NIST SP 800-53 Rev 4](https://nvd.nist.gov/800-53/Rev4) 控制集之間的控制項對應。 它被設計為技術指導方針，以協助註冊實體解決針對在雲端部署之資產的 NERC CIP 合規性要求。 該文件包含預先填入的[可靠性標準稽核工作表 (RSAWs)](https://www.nerc.com/pa/comp/Pages/Reliability-Standard-Audit-Worksheets-\(RSAWs\).aspx)敘述，協助解釋 Azure 控制如何解決 NERC CIP 需求，以及針對註冊實體如何使用 Azure 服務實作自有控制項的指導。
 
-NERC ERO 企業[發佈](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)合規性監視與執行計畫 (CMEP) 的[做法指南](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)，為 ERO 企業的 CMEP 人員提供指導方針，評估已註冊實體對 BCSI 儲存位置以及任何可控制已註冊實體實作的存取授權程序。 此外，NERC 檢閱的 Azure 控制實作詳細資料，以及與 NERC CIP-004-6 和 CIP-011-2 標準相關的 FedRAMP 稽核證據，都適用於 BCSI。 根據 ERO 發放的做法指南和已檢閱的 FedRAMP 控制項來確保註冊實體加密其資料，註冊實體在雲端部署 BCSI 和關聯的工作負載不需要額外的指導方針或說明。 但是，註冊實體最終要根據自己的事實和情況負責遵守 NERC CIP 標準。 註冊實體需要檢閱 [NERC 稽核的雲端實作指南](https://aka.ms/AzureNERCGuide)，以協助記錄其程序和用於授權對 BCSI 儲存位置進行電子存取的證據，包括 Azure 和 Azure Government 中用於 BCSI 加密的加密金鑰管理。
+NERC ERO 企業[發佈](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)合規性監視與執行計畫 (CMEP) 的[做法指南](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)，為 ERO 企業的 CMEP 人員提供指導方針，評定已註冊實體對指定 BCSI 儲存位置以及註冊實體實作之任何存取控制的存取授權程序。 此外，NERC 檢閱的 Azure 控制實作詳細資料，以及與 NERC CIP-004-6 和 CIP-011-2 標準相關的 FedRAMP 稽核證據，都適用於 BCSI。 根據 ERO 發放的做法指南和已檢閱的 FedRAMP 控制項來確保註冊實體加密其資料，註冊實體在雲端部署 BCSI 和關聯的工作負載不需要額外的指導方針或說明。 但是，註冊實體最終要根據自己的事實和情況負責遵守 NERC CIP 標準。 註冊實體需要檢閱 [NERC 稽核的雲端實作指南](https://aka.ms/AzureNERCGuide)，以協助記錄其程序和用於授權對 BCSI 儲存位置進行電子存取的證據，包括 Azure 和 Azure Government 中用於 BCSI 加密的加密金鑰管理。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
@@ -79,11 +79,11 @@ Microsoft 必須每年重新認證其雲端服務，以維護其 P-ATO 和 ATO�
 
 NERC [CIP 標準](https://www.nerc.com/pa/Stand/Reliability%20Standards%20Complete%20Set/RSCompleteSet.pdf)和[詞彙表](https://www.nerc.com/pa/Stand/Glossary%20of%20Terms/Glossary_of_Terms.pdf)指出 BES 網路資產會執行監視獲控制 BES 的即時功能，並且會在受損後 15 分鐘內影響 BES 的可靠運作。 為了在雲端運算中適當容納 BES 網路資產和受保護的網路資產，[需要修訂](https://www.nerc.com/pa/Stand/Pages/Project%202016-02%20Modifications%20to%20CIP%20Standards.aspx) NERC CIP 標準中的現有定義。 但是，有許多工作負載處理 CIP 敏感性資料，並且不受 15 分鐘規則限制，包括 BES 網路系統資訊 (BCSI) 的廣泛類別。
 
-NERC ERO 企業[發佈](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)合規性監視與執行計畫 (CMEP) 的[做法指南](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)，為 ERO 企業的 CMEP 人員提供指導方針，評估已註冊實體對 BCSI 儲存位置以及任何可控制已註冊實體實作的存取授權程序。 此外，NERC 檢閱的 Azure 控制實作詳細資料，以及與 NERC CIP-004-6 和 CIP-011-2 標準相關的 FedRAMP 稽核證據，都適用於 BCSI。 根據 ERO 發放的做法指南和已檢閱的 FedRAMP 控制項來確保註冊實體加密其資料，註冊實體在雲端部署 BCSI 和關聯的工作負載不需要額外的指導方針或說明。 但是，註冊實體最終要根據自己的事實和情況負責遵守 NERC CIP 標準。
+NERC ERO 企業[發佈](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx)合規性監視與執行計畫 (CMEP) 的[做法指南](https://www.nerc.com/pa/comp/guidance/CMEPPracticeGuidesDL/ERO%20Enterprise%20CMEP%20Practice%20Guide%20_%20BCSI%20-%20v0.2%20CLEAN.pdf)，為 ERO 企業的 CMEP 人員提供指導方針，評定已註冊實體對指定 BCSI 儲存位置以及註冊實體實作之任何存取控制的存取授權程序。 此外，NERC 檢閱的 Azure 控制實作詳細資料，以及與 NERC CIP-004-6 和 CIP-011-2 標準相關的 FedRAMP 稽核證據，都適用於 BCSI。 根據 ERO 發放的做法指南和已檢閱的 FedRAMP 控制項來確保註冊實體加密其資料，註冊實體在雲端部署 BCSI 和關聯的工作負載不需要額外的指導方針或說明。 但是，註冊實體最終要根據自己的事實和情況負責遵守 NERC CIP 標準。
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評定風險
 
-[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的**評估範本**頁面尋找範本。 了解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性態勢，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評定。 可在合規性管理員的 [評定範本]**** 頁面尋找範本。 了解如何[在合規性管理員中建立評定](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

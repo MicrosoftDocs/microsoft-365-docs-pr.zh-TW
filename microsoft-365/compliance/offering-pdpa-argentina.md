@@ -35,7 +35,7 @@ PDPA 與保護資料隱私權的歐洲立法模式相符，阿根廷是拉丁美
 
 Microsoft 透過 [ Microsoft 線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)承諾遵守範圍內的商務雲端服務已實施技術和組織安全性保護措施，可以協助客戶符合阿根廷個人資料保護法 (PDPA) 第 25.326 號。 Microsoft 也建立了一份資料傳輸協議，以協助遵守 60-E/2016 條款的合規性，該規款規範了個人資料的跨境傳輸。 這意味著 Microsoft 客戶可以按照符合阿根廷 PDPA 的方式使用 Microsoft Azure、Microsoft Dynamics 365 和 Microsoft 365。
 
-在商務雲端服務中實施的技術和組織安全性措施也支援 PDPA 中的其他規則，例如，禁止對資料主體的個人資料進行任何次要使用，以及禁止將個人資料傳輸到未提供適當保護層級的國家/地區。
+在商務雲端服務中實作的技術和組織安全性措施也支援 PDPA 中的其他規則，例如，禁止對資料主體的個人資料進行任何次要使用，以及禁止將個人資料傳輸到未提供適當保護層級的國家/地區。
 
 Microsoft 資料傳輸協議是針對線上服務條款中的資料處理條款的增修條款 (增修條款識別碼 M314)。 該協議增加了重要的承諾，包括 Microsoft 將任何具有法律約束力的要求通知客戶以揭露個人資料；應客戶或獨立第三方的要求，提交其資料處理設備以進行稽核；並事先取得使用轉包商的書面同意。
 
@@ -56,9 +56,9 @@ Microsoft 資料傳輸協議是針對線上服務條款中的資料處理條款�
 
 在 2018 年末，阿根廷尚未頒布與 GDPR 相關的法規，但已起草了新的資料保護議案 (已由行政機關提交國會並由眾議院修改) 以使其資料保護法與 GDPR 保持一致。 該議案解決了諸如資料主體的定義和個人資訊跨傳輸顧慮的差異。
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評定風險
 
-[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的**評估範本**頁面尋找範本。 了解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性態勢，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評定。 可在合規性管理員的 [評定範本]**** 頁面尋找範本。 了解如何[在合規性管理員中建立評定](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

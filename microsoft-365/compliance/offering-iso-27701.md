@@ -25,7 +25,7 @@ ms.locfileid: "48208135"
 
 ## <a name="privacy-information-management-system-pims-overview"></a>隱私權資訊管理系統 (PIMS) 概觀
 
-歐盟的一般資料保護規範 (GDPR) 迎接全球隱私權法規與合規性的新紀元。 更多的隱私權法規，許多都是在 GDPR 之後成形，已經在不同管轄區 (市場/產業，或實體位置) 中頒佈。 因此，組織必須實作原則和程序，以確保符合不斷增加的隱私權法規。 此外，我們都在快速數位轉換洪流當中，資料收集和處理急劇增加。 該資料的資料量和法規需求同時成長，讓所有類型的組織面臨日益複雜的法規遵循。
+歐盟的一般資料保護規定 (GDPR) 迎接全球隱私權法規與合規性的新紀元。 更多的隱私權法規，許多都是在 GDPR 之後成形，已經在不同管轄區 (市場/產業，或實體位置) 中頒佈。 因此，組織必須實作原則和程序，以確保符合不斷增加的隱私權法規。 此外，我們都在快速數位轉換洪流當中，資料收集和處理急劇增加。 該資料的資料量和法規需求同時成長，讓所有類型的組織面臨日益複雜的法規遵循。
 
 新的國際標準 [ISO/IEC 27701 隱私權資訊管理系統 (PIMS)](https://www.iso.org/standard/71670.html) (以前在草擬時期稱為 ISO/IEC 27552)，可協助組織調和隱私權法規需求。 標準概述全面性的操作控制集合，可以對應至各種法規，包括 GDPR。 一旦對應，PIMS 操作控制會由隱私權專業人員實作，並且由內部或第三方稽核員進行稽核，達成認證及全面性合格證明。
 
@@ -91,9 +91,9 @@ ISO/IEC 27001 和 PIMS 的要點：
 - [Azure、Dynamics 365 和線上服務：ISO27701 憑證](https://aka.ms/azureiso27701cert)
 - [Azure、Dynamics 365 和線上服務：ISO27701 評估報告](https://aka.ms/azureiso27701report)
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評定風險
 
-[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的**評估範本**頁面尋找範本。 了解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性態勢，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評定。 可在合規性管理員的 [評定範本]**** 頁面尋找範本。 了解如何[在合規性管理員中建立評定](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 
