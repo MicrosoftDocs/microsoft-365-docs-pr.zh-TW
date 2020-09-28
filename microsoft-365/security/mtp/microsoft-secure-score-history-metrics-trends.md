@@ -1,7 +1,7 @@
 ---
 title: 追蹤您的 Microsoft 安全分數記錄並符合目標
-description: 深入瞭解已影響安全分數的活動。 探索趨勢及設定目標。
-keywords: 安全性、惡意程式碼、Microsoft 365、M365、安全分數、安全性中心、改進動作
+description: 深入瞭解已影響 Microsoft 安全分數的活動。 探索趨勢及設定目標。
+keywords: microsoft 安全分數、安全分數、office 365 安全分數、microsoft security 得分、microsoft 365 安全性中心、改進動作
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,65 +20,65 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c31ea1f7217babd4949bee843b091bb767e210e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4f5d0a59372fb32b2802a094c247e45740ba3946
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196286"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295247"
 ---
-# <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a><span data-ttu-id="d8703-105">追蹤您的 Microsoft 安全分數記錄並符合目標</span><span class="sxs-lookup"><span data-stu-id="d8703-105">Track your Microsoft Secure Score history and meet goals</span></span>
+# <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a><span data-ttu-id="d54df-105">追蹤您的 Microsoft 安全分數記錄並符合目標</span><span class="sxs-lookup"><span data-stu-id="d54df-105">Track your Microsoft Secure Score history and meet goals</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="d8703-106">[Microsoft Secure 得分](microsoft-secure-score.md) 是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。</span><span class="sxs-lookup"><span data-stu-id="d8703-106">[Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken.</span></span> <span data-ttu-id="d8703-107">可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。</span><span class="sxs-lookup"><span data-stu-id="d8703-107">It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).</span></span>
+<span data-ttu-id="d54df-106">[Microsoft Secure 得分](microsoft-secure-score.md) 是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。</span><span class="sxs-lookup"><span data-stu-id="d54df-106">[Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken.</span></span> <span data-ttu-id="d54df-107">可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。</span><span class="sxs-lookup"><span data-stu-id="d54df-107">It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).</span></span>
 
-## <a name="gain-insights-into-activity-that-has-affected-your-score"></a><span data-ttu-id="d8703-108">深入瞭解已影響分數的活動</span><span class="sxs-lookup"><span data-stu-id="d8703-108">Gain insights into activity that has affected your score</span></span>
+## <a name="gain-insights-into-activity-that-has-affected-your-score"></a><span data-ttu-id="d54df-108">深入瞭解已影響分數的活動</span><span class="sxs-lookup"><span data-stu-id="d54df-108">Gain insights into activity that has affected your score</span></span>
 
-<span data-ttu-id="d8703-109">在 [ **記錄** ] 索引標籤中，透過一段時間來查看組織的分數圖表。</span><span class="sxs-lookup"><span data-stu-id="d8703-109">View a graph of your organization's score over time in the **History** tab.</span></span>
+<span data-ttu-id="d54df-109">在 [ **記錄** ] 索引標籤中，透過一段時間來查看組織的分數圖表。</span><span class="sxs-lookup"><span data-stu-id="d54df-109">View a graph of your organization's score over time in the **History** tab.</span></span>
 
-<span data-ttu-id="d8703-110">在圖形下方，會列出所選時間範圍內所執行的所有動作及其屬性，例如結果點和類別。</span><span class="sxs-lookup"><span data-stu-id="d8703-110">Below the graph is a list of all the actions taken in the selected time range and their attributes, such as resulting points and category.</span></span> <span data-ttu-id="d8703-111">您可以自訂日期範圍及依類別篩選。</span><span class="sxs-lookup"><span data-stu-id="d8703-111">You can customize a date range and filter by category.</span></span>
+<span data-ttu-id="d54df-110">在圖形下方，會列出所選時間範圍內所執行的所有動作及其屬性，例如結果點和類別。</span><span class="sxs-lookup"><span data-stu-id="d54df-110">Below the graph is a list of all the actions taken in the selected time range and their attributes, such as resulting points and category.</span></span> <span data-ttu-id="d54df-111">您可以自訂日期範圍及依類別篩選。</span><span class="sxs-lookup"><span data-stu-id="d54df-111">You can customize a date range and filter by category.</span></span>
 
 ![活動歷程記錄](../../media/secure-score/secure-score-history-activity.png)
 
-<span data-ttu-id="d8703-113">如果您選取與活動相關聯的 [改進] 動作，就會出現 [完整的「改進動作」快顯視窗。</span><span class="sxs-lookup"><span data-stu-id="d8703-113">If you select the improvement action associated with an activity, the full improvement action flyout will appear.</span></span>
+<span data-ttu-id="d54df-113">如果您選取與活動相關聯的 [改進] 動作，就會出現 [完整的「改進動作」快顯視窗。</span><span class="sxs-lookup"><span data-stu-id="d54df-113">If you select the improvement action associated with an activity, the full improvement action flyout will appear.</span></span>
 
-<span data-ttu-id="d8703-114">若要查看該特定 [改進] 動作的所有歷史記錄，請選取浮出控制項中的 [歷程記錄] 連結。</span><span class="sxs-lookup"><span data-stu-id="d8703-114">To view all history for that specific improvement action, select the history link in the flyout.</span></span>
+<span data-ttu-id="d54df-114">若要查看該特定 [改進] 動作的所有歷史記錄，請選取浮出控制項中的 [歷程記錄] 連結。</span><span class="sxs-lookup"><span data-stu-id="d54df-114">To view all history for that specific improvement action, select the history link in the flyout.</span></span>
 
 ![改進動作歷程記錄](../../media/secure-score/secure-score-history-flyout.png)
 
-## <a name="discover-trends-and-set-goals"></a><span data-ttu-id="d8703-116">探索趨勢及設定目標</span><span class="sxs-lookup"><span data-stu-id="d8703-116">Discover trends and set goals</span></span>
+## <a name="discover-trends-and-set-goals"></a><span data-ttu-id="d54df-116">探索趨勢及設定目標</span><span class="sxs-lookup"><span data-stu-id="d54df-116">Discover trends and set goals</span></span>
 
-<span data-ttu-id="d8703-117">在 [ **度量 & 趨勢** ] 索引標籤中，有數個圖形可讓您更深入的趨勢及設定目標。</span><span class="sxs-lookup"><span data-stu-id="d8703-117">In the **Metrics & trends** tab, there are several graphs and charts to give you more visibility into trends and set goals.</span></span> <span data-ttu-id="d8703-118">您可以設定整個視覺效果頁面的日期範圍。</span><span class="sxs-lookup"><span data-stu-id="d8703-118">You can set the date range for the whole page of visualizations.</span></span> <span data-ttu-id="d8703-119">視覺化效果包括：</span><span class="sxs-lookup"><span data-stu-id="d8703-119">The visualizations include:</span></span>
+<span data-ttu-id="d54df-117">在 [ **度量 & 趨勢** ] 索引標籤中，有數個圖形可讓您更深入的趨勢及設定目標。</span><span class="sxs-lookup"><span data-stu-id="d54df-117">In the **Metrics & trends** tab, there are several graphs and charts to give you more visibility into trends and set goals.</span></span> <span data-ttu-id="d54df-118">您可以設定整個視覺效果頁面的日期範圍。</span><span class="sxs-lookup"><span data-stu-id="d54df-118">You can set the date range for the whole page of visualizations.</span></span> <span data-ttu-id="d54df-119">視覺化效果包括：</span><span class="sxs-lookup"><span data-stu-id="d54df-119">The visualizations include:</span></span>
 
-* <span data-ttu-id="d8703-120">**您的安全分數區域** 自訂取決於您組織的目標和「良好」、「良好」和「不良得分」範圍的定義。</span><span class="sxs-lookup"><span data-stu-id="d8703-120">**Your Secure Score zone** - Customized based on your organization's goals and definitions of good, okay, and bad score ranges.</span></span>
-* <span data-ttu-id="d8703-121">**回歸趨勢** -因設定、使用者或裝置變更而 regressed 之點的時程表。</span><span class="sxs-lookup"><span data-stu-id="d8703-121">**Regression trend** - A timeline of points that have regressed because of configuration, user, or device changes.</span></span>  
-* <span data-ttu-id="d8703-122">**比較趨勢** -組織的安全分數與其他時間的比較方式。</span><span class="sxs-lookup"><span data-stu-id="d8703-122">**Comparison trend** - How your organization's Secure Score compares to others' over time.</span></span> <span data-ttu-id="d8703-123">此視圖可以包含表示具有類似座位元數目之組織之分數平均的行，以及您可以設定的自訂比較視圖。</span><span class="sxs-lookup"><span data-stu-id="d8703-123">This view can include lines representing the score average of organizations with similar seat count and a custom comparison view that you can set.</span></span>
-* <span data-ttu-id="d8703-124">**風險接受趨勢** -標示為「風險已接受」之改進動作的時程表。</span><span class="sxs-lookup"><span data-stu-id="d8703-124">**Risk acceptance trend** - Timeline of improvement actions marked as "risk accepted."</span></span>
-* <span data-ttu-id="d8703-125">**得分變更** -在指定的日期範圍內，已取得的點數，點 regressed，以及後續得分變更。</span><span class="sxs-lookup"><span data-stu-id="d8703-125">**Score changes** - The number of points achieved, points regressed, along with the subsequent score change, in the specified date range.</span></span>
+* <span data-ttu-id="d54df-120">**您的安全分數區域** 自訂取決於您組織的目標和「良好」、「良好」和「不良得分」範圍的定義。</span><span class="sxs-lookup"><span data-stu-id="d54df-120">**Your Secure Score zone** - Customized based on your organization's goals and definitions of good, okay, and bad score ranges.</span></span>
+* <span data-ttu-id="d54df-121">**回歸趨勢** -因設定、使用者或裝置變更而 regressed 之點的時程表。</span><span class="sxs-lookup"><span data-stu-id="d54df-121">**Regression trend** - A timeline of points that have regressed because of configuration, user, or device changes.</span></span>  
+* <span data-ttu-id="d54df-122">**比較趨勢** -組織的安全分數與其他時間的比較方式。</span><span class="sxs-lookup"><span data-stu-id="d54df-122">**Comparison trend** - How your organization's Secure Score compares to others' over time.</span></span> <span data-ttu-id="d54df-123">此視圖可以包含表示具有類似座位元數目之組織之分數平均的行，以及您可以設定的自訂比較視圖。</span><span class="sxs-lookup"><span data-stu-id="d54df-123">This view can include lines representing the score average of organizations with similar seat count and a custom comparison view that you can set.</span></span>
+* <span data-ttu-id="d54df-124">**風險接受趨勢** -標示為「風險已接受」之改進動作的時程表。</span><span class="sxs-lookup"><span data-stu-id="d54df-124">**Risk acceptance trend** - Timeline of improvement actions marked as "risk accepted."</span></span>
+* <span data-ttu-id="d54df-125">**得分變更** -在指定的日期範圍內，已取得的點數，點 regressed，以及後續得分變更。</span><span class="sxs-lookup"><span data-stu-id="d54df-125">**Score changes** - The number of points achieved, points regressed, along with the subsequent score change, in the specified date range.</span></span>
 
-### <a name="compare-your-score-to-organizations-like-yours"></a><span data-ttu-id="d8703-126">比較您的分數與您的組織</span><span class="sxs-lookup"><span data-stu-id="d8703-126">Compare your score to organizations like yours</span></span>
+### <a name="compare-your-score-to-organizations-like-yours"></a><span data-ttu-id="d54df-126">比較您的分數與您的組織</span><span class="sxs-lookup"><span data-stu-id="d54df-126">Compare your score to organizations like yours</span></span>
 
-<span data-ttu-id="d8703-127">有兩個地方可以查看您的分數如何與您的組織類似。</span><span class="sxs-lookup"><span data-stu-id="d8703-127">There are two places to see how your score compares to organizations that are similar to you.</span></span>
+<span data-ttu-id="d54df-127">有兩個地方可以查看您的分數如何與您的組織類似。</span><span class="sxs-lookup"><span data-stu-id="d54df-127">There are two places to see how your score compares to organizations that are similar to you.</span></span>
 
-<span data-ttu-id="d8703-128">第一個位置是在 [ **一覽** ] 索引標籤中，您可以在其中看到比較柱狀圖圖表。</span><span class="sxs-lookup"><span data-stu-id="d8703-128">The first place is in the **Overview** tab, where you can see a comparison bar graph.</span></span> <span data-ttu-id="d8703-129">將游標移至圖表上方，以查看分數和排名機會。</span><span class="sxs-lookup"><span data-stu-id="d8703-129">Hover over the chart to view the score and score opportunity.</span></span>
+<span data-ttu-id="d54df-128">第一個位置是在 [ **一覽** ] 索引標籤中，您可以在其中看到比較柱狀圖圖表。</span><span class="sxs-lookup"><span data-stu-id="d54df-128">The first place is in the **Overview** tab, where you can see a comparison bar graph.</span></span> <span data-ttu-id="d54df-129">將游標移至圖表上方，以查看分數和排名機會。</span><span class="sxs-lookup"><span data-stu-id="d54df-129">Hover over the chart to view the score and score opportunity.</span></span>
 
 ![類似組織分數的柱狀圖圖表](../../media/secure-score/secure-score-comparison-bar.png)
 
-<span data-ttu-id="d8703-131">第二個地方是在 [ **度量 & 趨勢** ] 索引標籤中，您可以在其中查看組織的安全分數與其他時間的比較方式。</span><span class="sxs-lookup"><span data-stu-id="d8703-131">The second place is in the **Metrics & trends** tab, where you can view how your organization's Secure Score compares to others' over time.</span></span>
+<span data-ttu-id="d54df-131">第二個地方是在 [ **度量 & 趨勢** ] 索引標籤中，您可以在其中查看組織的安全分數與其他時間的比較方式。</span><span class="sxs-lookup"><span data-stu-id="d54df-131">The second place is in the **Metrics & trends** tab, where you can view how your organization's Secure Score compares to others' over time.</span></span>
 
 ![隨時間的類似組織分數的折線圖](../../media/secure-score/secure-score-comparison-trend.png)
 
-<span data-ttu-id="d8703-133">在這兩個圖表中，您可以選取 [ **管理比較** ]，以查看及編輯組織的資訊。</span><span class="sxs-lookup"><span data-stu-id="d8703-133">In both charts, you can select **Manage comparisons** to view and edit your organization's information.</span></span> <span data-ttu-id="d8703-134">您也可以根據行業、組織大小、授權及地區建立自訂比較。</span><span class="sxs-lookup"><span data-stu-id="d8703-134">You can also create a custom comparison based on industry, organization size, licenses, and regions.</span></span>
+<span data-ttu-id="d54df-133">在這兩個圖表中，您可以選取 [ **管理比較** ]，以查看及編輯組織的資訊。</span><span class="sxs-lookup"><span data-stu-id="d54df-133">In both charts, you can select **Manage comparisons** to view and edit your organization's information.</span></span> <span data-ttu-id="d54df-134">您也可以根據行業、組織大小、授權及地區建立自訂比較。</span><span class="sxs-lookup"><span data-stu-id="d54df-134">You can also create a custom comparison based on industry, organization size, licenses, and regions.</span></span>
 
-## <a name="we-want-to-hear-from-you"></a><span data-ttu-id="d8703-135">我們想要聽到您的來信</span><span class="sxs-lookup"><span data-stu-id="d8703-135">We want to hear from you</span></span>
+## <a name="we-want-to-hear-from-you"></a><span data-ttu-id="d54df-135">我們想要聽到您的來信</span><span class="sxs-lookup"><span data-stu-id="d54df-135">We want to hear from you</span></span>
 
-<span data-ttu-id="d8703-136">如果您有任何問題，請在 [安全性、隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社區中發佈以告知我們。</span><span class="sxs-lookup"><span data-stu-id="d8703-136">If you have any issues, let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community.</span></span> <span data-ttu-id="d8703-137">我們正在監視社區，並會提供協助。</span><span class="sxs-lookup"><span data-stu-id="d8703-137">We're monitoring the community and will provide help.</span></span>
+<span data-ttu-id="d54df-136">如果您有任何問題，請在 [安全性、隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社區中發佈以告知我們。</span><span class="sxs-lookup"><span data-stu-id="d54df-136">If you have any issues, let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community.</span></span> <span data-ttu-id="d54df-137">我們正在監視社區，並會提供協助。</span><span class="sxs-lookup"><span data-stu-id="d54df-137">We're monitoring the community and will provide help.</span></span>
 
-## <a name="related-resources"></a><span data-ttu-id="d8703-138">相關資源</span><span class="sxs-lookup"><span data-stu-id="d8703-138">Related resources</span></span>
+## <a name="related-resources"></a><span data-ttu-id="d54df-138">相關資源</span><span class="sxs-lookup"><span data-stu-id="d54df-138">Related resources</span></span>
 
-- [<span data-ttu-id="d8703-139">Microsoft 安全評分概述</span><span class="sxs-lookup"><span data-stu-id="d8703-139">Microsoft Secure Score overview</span></span>](microsoft-secure-score.md)
-- [<span data-ttu-id="d8703-140">評估您的安全性狀態</span><span class="sxs-lookup"><span data-stu-id="d8703-140">Assess your security posture</span></span>](microsoft-secure-score-improvement-actions.md)
-- [<span data-ttu-id="d8703-141">即將推出的功能</span><span class="sxs-lookup"><span data-stu-id="d8703-141">What's coming</span></span>](microsoft-secure-score-whats-coming.md)
-- [<span data-ttu-id="d8703-142">新功能</span><span class="sxs-lookup"><span data-stu-id="d8703-142">What's new</span></span>](microsoft-secure-score-whats-new.md)
+- [<span data-ttu-id="d54df-139">Microsoft 安全評分概述</span><span class="sxs-lookup"><span data-stu-id="d54df-139">Microsoft Secure Score overview</span></span>](microsoft-secure-score.md)
+- [<span data-ttu-id="d54df-140">評估您的安全性狀態</span><span class="sxs-lookup"><span data-stu-id="d54df-140">Assess your security posture</span></span>](microsoft-secure-score-improvement-actions.md)
+- [<span data-ttu-id="d54df-141">即將推出的功能</span><span class="sxs-lookup"><span data-stu-id="d54df-141">What's coming</span></span>](microsoft-secure-score-whats-coming.md)
+- [<span data-ttu-id="d54df-142">新功能</span><span class="sxs-lookup"><span data-stu-id="d54df-142">What's new</span></span>](microsoft-secure-score-whats-new.md)

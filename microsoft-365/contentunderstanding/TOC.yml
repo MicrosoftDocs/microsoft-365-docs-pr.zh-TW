@@ -1,22 +1,44 @@
 - name: 開始使用內容瞭解
   items:
+    - name: Microsoft SharePoint Syntex 簡介
+      href: microsoft-sharepoint-syntex-overview.md
     - name: 檔理解概述
       href: document-understanding-overview.md
     - name: 表單處理概覽
       href: form-processing-overview.md
     - name: 檔瞭解和表單處理模型之間的差異
       href: difference-between-document-understanding-and-form-processing-model.md
+    - name: 透過範例模型瞭解模型
+      href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: 建立內容中心
       href: create-a-content-center.md
     - name: 建立分類器
       href: create-a-classifier.md
     - name: 建立提取程式
       href: create-an-extractor.md
+    - name: 說明類型概述
+      href: explanation-types-overview.md
     - name: 套用模型
       href: apply-a-model.md
     - name: 建立表單處理模型
       href: create-a-form-processing-model.md
-- name: 開始使用安裝程式
+    - name: 套用保留標籤
+      href: apply-a-retention-label-to-a-model.md
+    - name: 模型流量分析
+      href: model-usage-analytics.md
+- name: 安裝和管理
   items:
     - name: 設定內容瞭解
       href: set-up-content-understanding.md
+    - name: 影像標記
+      href: image-tagging.md
+- name: 內容服務
+  items:
+    - name: 使用 SKOS 匯入
+      href: import-term-set-skos.md
+    - name: SKOS 格式化參照
+      href: skos-format-reference.md
+    - name: 將內容類型推入 hub
+      href: push-content-type-to-hub.md
+    - name: 字詞存放區報告
+      href: term-store-analytics.md
