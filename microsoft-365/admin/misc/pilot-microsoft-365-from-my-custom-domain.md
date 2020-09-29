@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何只用兩個測試帳戶來試驗自訂365網域的電子郵件功能。
-ms.openlocfilehash: bfcb2bda4d560ab629ddebed88ac1d55e6224c05
-ms.sourcegitcommit: 5f980a9eb5aca61cf3662ef0bc65dec215e21656
+ms.openlocfilehash: 8bb04edc9a7879edc2094f1fed667d5956174ea3
+ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "45186038"
+ms.lasthandoff: 09/28/2020
+ms.locfileid: "48295031"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>從我的自訂網域試驗 Microsoft 365
 
@@ -101,7 +101,48 @@ Microsoft 365 使用 Exchange Online Protection （EOP）來保護垃圾郵件�
 
 5. 選取 **[建立]** > **[關閉]**。
 
-### <a name="step-6-update-dns-records-at-your-dns-hosting-provider"></a>步驟 6：在 DNS 主機服務提供方上更新您 DNS 記錄
+### <a name="step-6-configure-mail-to-flow-from-microsoft-365-or-office-365-to-email-server"></a>步驟 6：將郵件設定為從 Microsoft 365 或 Office 365 流向電子郵件伺服器
+
+要執行此作業有兩個步驟：
+
+1. 設定您的 Microsoft 365 或 Office 365 環境。
+
+2. 設定從 Microsoft 365 或 Office 365 到您的電子郵件伺服器的連接器。
+
+### <a name="1-configure-your-microsoft-365-or-office-365-environment"></a>1. 設定您的 Microsoft 365 或 Office 365 環境
+
+確認您已在 Microsoft 365 或 Office 365 中完成下列作業：
+
+1. 若要設定連接器，您需要指派的權限才可以開始。 若要檢查所需的權限，請參閱 [EOP 中的功能權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop)主題中的 Microsoft 365 和 Office 365 連接器項目。
+
+2. 如果您想要 EOP 或 Exchange Online，將您電子郵件伺服器的電子郵件轉送至網際網路，請執行下列其中一項：
+
+   - 使用主體名稱設定的憑證，該主體名稱符合 Microsoft 365 或 Office 365 中公認的網域。 我們建議憑證的一般名稱或主體別名要符合組織的主要 SMTP 網域。 如需詳細資訊，請參閱[內部部署電子郵件環境的先決條件](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment)。
+
+   -或-
+
+   - 確定您的所有組織寄件者網域與子網域均設定為 Microsoft 365 或 Office 365 中公認的網域。
+
+   如需有關定義接受的網域的詳細資訊，請參閱[管理 Exchange Online 中公認的網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)和[啟用 Exchange Online 中子網域的郵件流程](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)。
+
+3. 決定您是否要使用郵件流程規則 (也稱為「傳輸規則」) 或網域名稱來將郵件從 Microsoft 365 或 Office 365 傳遞到您的電子郵件伺服器。 大部分的公司選擇將郵件傳遞給所有公認的網域。 如需詳細資訊，請參閱[案例：條件式郵件路由](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing)。
+
+> [!NOTE]
+> 您可以如 [Exchange Online 中的郵件流程規則動作](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)中所述設定郵件流程規則。 例如，如果您目前是透過通訊群組清單將郵件導向至多個網站，您可能會想要搭配郵件流程規則來使用連接器。
+
+### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. 設定從 Microsoft 365 或 Office 365 到您的電子郵件伺服器的連接器
+
+若要在 Microsoft 365 或 Office 365 中建立連接器，請按一下 **[系統管理員]**，然後按一下 **[Exchange]** 以移至 [Exchange 系統管理中心]。 接下來，請按一下 **[郵件流程]**，然後按一下 **[連接器]**。
+
+使用精靈設定連接器。
+
+若要啟動精靈，請按一下加號 **+**。 在第一個畫面上，選擇 **[自]** Office 365 和 **[至]** 貴組織的郵件伺服器。
+
+按 [**下一步**]，並遵循精靈中的指示。 如果需要詳細資訊，請按一下 [**說明**] 或 [**深入了解**] 連結。 精靈會引導您完成設定。 結束時，請確定您的連接器通過驗證。 如果連接器沒有通過驗證，請按兩下顯示的訊息以取得詳細資訊，並參閱[驗證連接器](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors)來協助解決問題。
+
+
+
+### <a name="step-7-update-dns-records-at-your-dns-hosting-provider"></a>步驟 7：在 DNS 主機服務提供方上更新您 DNS 記錄
 
 登入您的 DNS 主機服務提供方的網站，然後依照 [[新增 DNS 記錄以連結您的網域]](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) 指示進行操作。
 
@@ -115,7 +156,7 @@ Microsoft 365 使用 Exchange Online Protection （EOP）來保護垃圾郵件�
 
     如果您還沒有 SPF 記錄，請修改 Microsoft 365 所建議的記錄，以包含您目前電子郵件提供方的網域，並新增 spf.protection.outlook.com。 這會從兩個電子郵件系統授權外寄郵件。
 
-### <a name="step-7-set-up-email-forwarding-at-your-current-provider"></a>步驟 7：設定目前提供方的電子郵件轉寄功能
+### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>步驟 8：設定目前提供方的電子郵件轉寄功能
 
 在目前的電子郵件提供方中，為您的使用者電子郵件帳戶設定轉寄至 onmicrosoft.com 網域：
 
@@ -130,7 +171,7 @@ Microsoft 365 使用 Exchange Online Protection （EOP）來保護垃圾郵件�
 > 您不需要在目前的電子郵件提供方中保留郵件複本。<br/>
 > 大部分提供方轉寄的電子郵件都會原封不動地保留寄件者的 [回覆] 地址，因此回覆會寄給原始寄件者。
 
-### <a name="step-8-test-mail-flow"></a>步驟 8：測試郵件流程
+### <a name="step-9-test-mail-flow"></a>步驟 9：測試郵件流程
 
 1. 使用使用者 A 的認證登入 Outlook 網頁應用程式。
 
@@ -142,10 +183,10 @@ Microsoft 365 使用 Exchange Online Protection （EOP）來保護垃圾郵件�
 
     - 請確認已從外部帳戶或從現有電子郵件系統的員工電子郵件帳戶正確設定轉寄。 例如，從使用者 C 或 Hotmail 帳戶的原始伺服器帳戶，向使用者 A 傳送電子郵件，並確認該電子郵件有到達使用者 A 的 Microsoft 365 信箱。
 
-### <a name="step-9-move-mailbox-contents"></a>步驟 9：移動信箱內容
+### <a name="step-10-move-mailbox-contents"></a>步驟 10：移動信箱內容
 
 由於您只會移動兩個測試使用者，而使用者 A 和使用者 B 都使用 Outlook，因此您可以在新 Outlook 設定檔中開啟舊的 .PST 檔案，並複製其中郵件、行事曆專案、聯絡人等等，以移動電子郵件。 如需深入了解，請參閱[從 Outlook 的 .pst 檔案匯入電子郵件、連絡人和行事曆](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac)。
 
 將檔案匯入至 Microsoft 365 信箱中的適當位置之後，您就可以從任何裝置隨時隨地存取這些專案。
 
-當涉及更多信箱，或如果員工並未使用 Outlook 的話，您可以使用 Exchange 系統管理中心提供的遷移工具。 若要開始使用，請移至 Exchange 系統管理中心，並依照 [將電子郵件從 IMAP 伺服器遷移到 Exchange Online 信箱] 中的指示進行 - 我們需要新的文章資源]。
+當涉及更多信箱，或如果員工並未使用 Outlook 的話，您可以使用 Exchange 系統管理中心提供的遷移工具。 若要開始使用，請移至 Exchange 系統管理中心，並依照[將電子郵件從 IMAP 伺服器遷移到 Exchange Online 信箱](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)中的指示進行。
