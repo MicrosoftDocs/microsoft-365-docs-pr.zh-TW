@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d18b3d8ede271cb0d9611d6210a3d1d32849581a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a52ba30aa9b89dc78e9bd5a538cb530cd7bf6e00
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195648"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305363"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>規劃試驗 Microsoft 威脅防護專案 
 
@@ -78,7 +78,7 @@ ms.locfileid: "48195648"
 
 |**使用案例**|**需求**|**設定需求**|**測試計劃**|**預期的結果**|**測試狀態**|**分數**|**附註**|
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|事件管理|-Microsoft 威脅防護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud App Security (optional) |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作 |[類比攻擊](mtp-pilot-simulate.md) <br></br>[調查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#investigate-an-incident) |調查人員可以瞭解該事件的範圍與影響，並管理該事件||||
+|事件管理|-Microsoft 威脅防護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud App Security (optional) |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作 |[類比攻擊](mtp-pilot-simulate.md) <br></br>[調查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |調查人員可以瞭解該事件的範圍與影響，並管理該事件||||
 |AutoIR|-Microsoft 威脅防護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作 <br>啟用 AutoIR  |[類比攻擊](mtp-pilot-simulate.md) <br></br>[自動調查](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Microsoft 威脅防護會自動修正警示和事件||||
 |進階搜捕|-Microsoft 威脅防護 </br></br>-Microsoft Defender ATP </br></br>-Office 365 ATP   |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作|[高級搜尋案例](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#advanced-hunting-scenario) |調查人員可以透過高級搜尋、切換至受影響的實體，以及建立自訂的偵測，尋找資料||||
 

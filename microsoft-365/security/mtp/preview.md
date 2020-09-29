@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f01f76ac591b4c2be9873fa87ec416939158acd3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
-ms.translationtype: HT
+ms.openlocfilehash: 51b764e660ae36ae3476809b5fe6dae1c4ca0891
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195500"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304959"
 ---
 # <a name="microsoft-threat-protection-preview-features"></a>Microsoft 威脅防護預覽功能
 
@@ -42,7 +42,7 @@ Microsoft 威脅防護服務會持續更新以包含最新功能增強與特性�
 如需更多公開推出的全新功能資訊，請查看 [Microsoft 威脅防護新增功能](whats-new.md)。
 
 ## <a name="turn-on-preview-features"></a>開啟預覽功能
-您將能存取即將推出的功能，以在該功能全面可供使用之前，提供意見反應，協助改善整體體驗。
+您將可以存取即將推出的功能，您可以在其中提供意見反應，以協助改善整體體驗，使其成為一般可用功能。
 
 開啟預覽體驗設定，成為第一批嘗試即將推出的功能的人。
 
@@ -61,7 +61,6 @@ Microsoft 威脅防護服務會持續更新以包含最新功能增強與特性�
 目前預覽版提供下列功能和增強功能：
 
 - **[Microsoft 威脅防護 API](api-overview.md)** lop層級 Microsoft 威脅防護 API 可讓您根據共用事件和進階搜捕資料表自動化工作流程。 
-- **[進階搜捕中的 IdentityDirectoryEvents 資料表](advanced-hunting-identitydirectoryevents-table.md)**：尋找涉及內部部署網域控制器執行 Active Directory (AD) 的事件。 此資料表涵蓋一系列身分識別相關事件，以及網域控制器上的系統事件。
-- **[在 [進階搜捕] 中採取行動](advanced-hunting-take-action.md)**：迅速包含您在 [進階搜捕](advanced-hunting-overview.md)中找到的威脅或位址遭到洩漏的資產。
-- **[入口網站結構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**：直接在安全性中心中取得進階搜捕結構資料表的資訊。 除了資料表和資料行描述，這個方便的參考資料還提供支援的事件種類 (`ActionType` 值) 和範例查詢的相關資訊。
+- **[在高級搜尋中採取動作](advanced-hunting-take-action.md)**：快速包含威脅或您在 [ [高級搜尋](advanced-hunting-overview.md)] 中找到的受損資產。
+- **[In 入口架構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**-直接在「安全性中心」中取得高級搜尋架構表格的相關資訊。 除了資料表和欄描述之外，此參考還包含支援的事件種類 (`ActionType` 值) 和範例查詢。
 

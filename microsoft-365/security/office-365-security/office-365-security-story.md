@@ -6,6 +6,7 @@ manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
 ms.topic: overview
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -13,12 +14,12 @@ search.appverid:
 ms.collection:
 - microsoft-365-docs-pr
 description: Office 365 中的安全性（從 EOP 到 ATP 方案1和2）、標準與嚴格的安全性設定等等，因此您可以瞭解您擁有的內容，以及如何保護您的屬性。
-ms.openlocfilehash: 66a83d99197b8af98ef191b348b1303a8233a990
-ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
+ms.openlocfilehash: 680066f58850f59523ae6fb8a8168459dd813fc1
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299297"
+ms.locfileid: "48304843"
 ---
 # <a name="office-365-security-outline"></a>Office 365 安全性大綱
 
@@ -50,7 +51,7 @@ Office 365 的安全性是以 EOP 提供的核心保護為基礎。 EOP 位於�
 
 <!--:::image type="content" source="../../media/tp-EOPATPStack.PNG" alt-text="Placeholder graphic":::-->
 
-:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="EOP 和 ATP，並以服務強調為彼此的關聯性，包括電子郵件驗證的附注。":::
+:::image type="content" source="../../media/tp_EOPandATPGraphic.png" alt-text="Placeholder graphic":::
 
 雖然每個服務都會著重強調「保護」、「偵測」、「調查」及「回應」中的特定目標， ***所有*** 服務都可以執行 ***任何*** 保護、偵測、調查及回應的目標。
 
@@ -65,7 +66,7 @@ Office 365 的核心安全性是 EOP protection。 ATP P1 包含 EOP。 ATP P2 �
 
 ## <a name="the-office-365-security-ladder-from-eop-to-atp"></a>從 EOP 到 ATP 的 Office 365 安全性階梯
 
-:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="EOP 和 ATP 及其特定強度，分別來自「保護」和「偵測」以調查和回應。此外，電子郵件驗證設定會視需要 EOP 向上顯示。":::
+:::image type="content" source="../../media/tp_EOPATPEmailAuth4.gif" alt-text="Placeholder graphic":::
 
 > [!IMPORTANT]
 > 瞭解這些頁面的詳細資料： [Exchange Online Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview?view=o365-worldwide)及 [高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)。

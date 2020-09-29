@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 4a698bc0d6a7c1ebadec44357b932e9b56dc0a3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 118d96b797e9d46b4a9912f919cafbba680a9609
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196842"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305279"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -31,8 +31,6 @@ ms.locfileid: "48196842"
 
 適用於：****
 - Microsoft 威脅防護
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 `IdentityDirectoryEvents` [Advanced 搜尋](advanced-hunting-overview.md)架構中的表格包含的事件包括內部部署網域控制站執行 ACTIVE Directory (AD) 。 此表格會捕獲各種身分識別相關的事件，例如密碼變更、密碼到期和使用者主要名稱 (UPN) 變更。 它也會在網域控制站上捕獲系統事件，例如排程任務和 PowerShell 活動。 使用這個參考來建立從此表格取回之資訊的查詢。
 
@@ -57,7 +55,7 @@ ms.locfileid: "48196842"
 | `AccountDomain` | string | 帳戶的網域 |
 | `AccountUpn` | string | 帳戶的使用者主要名稱 (UPN)  |
 | `AccountSid` | string | 帳戶的安全性識別碼 (SID)  |
-| `AccountObjectId` | string | Azure AD 中帳戶的唯一識別碼 |
+| `AccountObjectId` | string | Azure Active Directory 中帳戶的唯一識別碼 |
 | `AccountDisplayName` | string | 顯示在通訊錄中之帳戶使用者的名稱。 通常是指定的名稱或名字、中間初始名稱或姓氏的組合。 |
 | `DeviceName` | string | 裝置的完整功能變數名稱 (FQDN)  |
 | `IPAddress` | string | 通訊期間指派給裝置的 IP 位址 |

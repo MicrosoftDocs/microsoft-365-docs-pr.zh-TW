@@ -10,12 +10,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 設定專案 Cortex 中的內容瞭解
-ms.openlocfilehash: f0a26f0044e578928730cf4930f1524e86dff9f3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 31c6b6dd31b3f1bc47deb8424dd847cc0af6d429
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294840"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304777"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -107,27 +107,7 @@ ms.locfileid: "48294840"
 
 您可以使用 Ai 產生器 [計算機](https://powerapps.microsoft.com/ai-builder-calculator)估計最適合您的 ai 產生器容量。
 
-1. 請移至 [Power Platform 系統管理中心](https://admin.powerplatform.microsoft.com/resources/capacity) ，檢查您的學分和使用方式。
-
-    > [!NOTE]
-    > 在 SharePoint 文件庫上啟用此設定，不會影響已套用至程式庫的現有模型，也不會影響將檔理解模型套用至文件庫的功能。 
-    
-2. 在 [ **建立內容中心** ] 頁面中，您可以建立 SharePoint 內容中心網站，讓使用者可以建立及管理檔理解模型。 </br>
-    a. 在 [ **網站名稱**] 中，輸入您要用於內容中心網站的名稱。</br>
-    b. **網站位址**會根據網站名稱顯示網站的 URL。</br>
-
-    > [!NOTE] 
-    > 雖然您可以選擇任何支援的語言，但內容瞭解模型只能為英文建立。</br>
-
-      ![建立內容中心](../media/content-understanding/admin-cu-create-cc.png)</br>
-
-3. 選取 [下一步]****。
-
-4. 在 [ **完成與複查]** 頁面上，查看您選取的設定，然後選擇進行變更。 如果您對選擇滿意，請選取 [ **啟動**]。
-
-5. 隨即會顯示 [ **內容瞭解** 已啟動] 頁面，確認系統已新增您的表單處理喜好設定，並建立內容中心網站。 選取 **[完成]**。
-
-6. 您將會傳回 [ **自動化內容瞭解** ] 頁面。 您可以從這個頁面，選取 [ **管理** ]，對您的設定設定進行任何變更。 
+請移至 [Power Platform 系統管理中心](https://admin.powerplatform.microsoft.com/resources/capacity) ，檢查您的學分和使用方式。
 
 ## <a name="see-also"></a>請參閱
 

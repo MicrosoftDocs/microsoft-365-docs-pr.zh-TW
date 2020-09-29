@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: d5a7cc491b0a8547848f4e341a605ae0c4b87cc9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8b9176fea67583fbdce647b2a3c37cf1d6fde7ed
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201276"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304855"
 ---
 # <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft 威脅防護的新增功能
 
@@ -34,12 +34,13 @@ RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此�
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
 ## <a name="september-2020"></a>2020 年 9 月
-- [AssignedIPAddresses ( # A1 函數](advanced-hunting-assignedipaddresses-function.md) <br> 在您的 [高級搜尋](advanced-hunting-overview.md) 查詢中使用此功能，可快速取得從指定時間點指派給裝置或最近的 ip 位址的最新 ip 位址。
+- [IdentityDirectoryEvents 表格](advanced-hunting-identitydirectoryevents-table.md) <br> 尋找與執行 Active Directory (AD) 之內部部署網域控制站有關的事件。 這個 [高級搜尋](advanced-hunting-overview.md) 架構表涵蓋網域控制站上的身分識別相關事件及系統事件範圍。
+- [AssignedIPAddresses ( # A1 函數](advanced-hunting-assignedipaddresses-function.md) <br> 您可以在您的高級搜尋查詢中使用此功能，快速取得指派給裝置的最新 IP 位址，或從特定時間取得最近的 IP 位址。
 
 ## <a name="july-2020"></a>2020 年 7 月
 - [FileProfile ( # A1 函數](advanced-hunting-fileprofile-function.md) <br> 在您的高級搜尋查詢中使用此功能，以豐富包含完整檔案資訊的結果。
 - [身分識別和應用程式表格](advanced-hunting-schema-tables.md)<br> 使用高級搜尋架構中的 [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)、 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)及 [AppFileEvents](advanced-hunting-appfileevents-table.md) 表格，可以深入瞭解驗證事件、Active Directory 查詢及應用程式相關的活動。
-- [開始搜補](advanced-hunting-go-hunt.md)<br> 使用查詢式的高級搜尋功能，快速從調查事件，以檢查特定事件、使用者、裝置或其他實體類型。
+- [開始搜補](advanced-hunting-go-hunt.md)<br> 快速從調查事件，以在高級搜尋中檢查特定事件、使用者、裝置或其他實體類型。
 
 ## <a name="june-2020"></a>2020 年 6 月
 - Twitter 摘要 <br> 深入瞭解儀表板內的最新安全性調查、威脅情報、產品新聞及其他。

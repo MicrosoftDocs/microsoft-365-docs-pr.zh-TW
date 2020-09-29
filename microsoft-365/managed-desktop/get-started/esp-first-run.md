@@ -1,6 +1,6 @@
 ---
 title: 使用 Autopilot 和 [註冊狀態] 頁面的初次執行體驗
-description: 如何部署 ESP 經驗、使用的設定和例外狀況
+description: 如何部署 ESP 體驗、使用的設定，以及設定變更
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 84656e2f0ae9d148c61c27af2a53e157cd44c171
-ms.sourcegitcommit: e6283e7c32ba9628fc45e9abc5cd4d21fb3f7ca9
+ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 09/29/2020
-ms.locfileid: "48299236"
+ms.locfileid: "48305267"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>使用 Autopilot 和 [註冊狀態] 頁面的初次執行體驗
 
@@ -49,7 +49,7 @@ Microsoft 受管理的桌面會在用於使用者裝置的 Autopilot 設定檔�
 |輸入名稱     | MMD-% RAND：11%        |
 
 > [!NOTE]
-> [白色 glove] rovisioning 僅針對已開啟 ESP 的客戶啟用時，Microsoft 受管理的電腦目前不支援此功能。
+> [白色 glove] 布建只對已開啟 ESP 的客戶啟用時，Microsoft 受管理的電腦目前不支援此功能。
 
 ## <a name="enrollment-status-page-settings"></a>註冊狀態頁面設定
 
@@ -89,15 +89,15 @@ Microsoft 受管理的桌面會使用這些設定的註冊狀態頁面體驗：
 
 Microsoft 受管理的桌面目前不支援 Windows Autopilot 的「白色 glove」功能。
 
-## <a name="exceptions"></a>例外狀況
+## <a name="change-to-autopilot-and-enrollment-status-page-settings"></a>變更為 Autopilot 和註冊狀態頁面設定
 
-如果 Microsoft 受管理的桌面所用的安裝程式不完全符合您的需求，您可以將例外要求歸檔。 若要執行此動作，請參閱 [要求例外](../service-description/customizing.md#request-an-exception)狀況的詳細資料。 以下是您可能需要的一些例外類型範例：
+如果 Microsoft 受管理的桌面所用的安裝程式不完全符合您的需求，您可以透過 [管理入口網站](https://portal.azure.com/)來提供支援票證。 以下是您可能需要的設定類型的一些範例：
 
-### <a name="autopilot-exception"></a>Autopilot 例外狀況
+### <a name="autopilot-settings-change"></a>Autopilot 設定變更
 
 您可能想要要求其他的裝置名稱範本。 不過，您無法變更部署模式，請以隱私權設定或使用者帳戶類型的身分加入 Azure。
 
-### <a name="enrollment-status-page-exception"></a>註冊狀態頁面例外
+### <a name="enrollment-status-page-settings-change"></a>註冊狀態頁面設定變更
 
 - [當安裝時間超過指定的分鐘數] 設定時，會顯示 [錯誤] 的較長分鐘數。
 - 顯示的錯誤訊息
