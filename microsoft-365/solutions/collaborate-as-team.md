@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解設定小組以與小組中的客人共同作業所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: f22404ea412085ed697f76219509c1382318e7d4
-ms.sourcegitcommit: 445b249a6f0420b32e49742fd7744006c7090b2b
+ms.openlocfilehash: e8d1c75c6172168fc2b0a4b351591289c893869a
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46797767"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322174"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在小組中與來賓共同作業
 
@@ -47,7 +47,7 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 
 1. 登入 Microsoft Azure，網址為 [https://portal.azure.com](https://portal.azure.com) 。
 2. 在左側導覽中，按一下 [ **Azure Active Directory**]。
-3. 在 [ **一覽** ] 窗格中，按一下 [ **外部識別碼**]。
+3. 在 [概觀]**** 窗格中，點選 [外部身分識別]****。
 4. 在 [ **組織** 識別] 窗格中，按一下 [ **外部協同] 設定**。
 5. 確定 **guest 和 guest inviter role 中的系統管理員和使用者都可以邀請** 和 **成員可以邀請** 皆設定為 **[是]**。
 6. 如果您做了任何變更，請按一下 [儲存]****。
@@ -105,7 +105,7 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 設定 SharePoint 組織層級共用設定
 
 1. 在 Microsoft 365 系統管理中心的左側導覽中，按一下 [系統 **管理中心**] 底下的 [ **SharePoint**]。
-2. 在 SharePoint 管理中心中，按一下左側導覽窗格中的 [共用]****。
+2. 在 SharePoint 系統管理中心的左側流覽窗格中，展開 [ **原則** ]，然後按一下 [ **共用**]。
 3. 確定 SharePoint 的外部共用已設定為 **任何人** 或 **新的和現有的客人**。
 4. 如果您做了任何變更，請按一下 [儲存]****。
 

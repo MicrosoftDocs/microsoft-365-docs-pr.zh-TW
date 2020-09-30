@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 系統管理中心的網路連線能力 (預覽) '
-ms.openlocfilehash: 52d1995572a3ae0220ac8529862ba69d5bca8cdb
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 91c931eba5c9f5bdb9f45185581019cc9c754ed2
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235535"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48322196"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Microsoft 365 系統管理中心的網路連線 (預覽) 
 
@@ -157,8 +157,8 @@ Microsoft 已從數個 Office 桌面和網頁用戶端，提供支援 Microsoft 
    1. **Address** (必要) ： office 的實體位址
    1. **Latitude** (選用) ：以 Bing 地圖（如果空白）的查閱來填入。
    1. **經度** (選用) ：填入的 Bing 地圖中的位址若為空白
-   1. **出局 IP 位址範圍 1-5** (選用) ：針對每個範圍，請輸入電路名稱，後面接著是以空格分隔的有效 IPv4 或 IPv6 CIDR 地址清單。 這些值是用來區分您使用相同 LAN 子網 IP 位址的多個辦公室位置。
-   1. **LanIps** (必要) ：列出此辦公室位置所使用的局域網子網範圍。
+   1. **出局 IP 位址範圍 1-5** (選用) ：針對每個範圍，請輸入電路名稱，後面接著是以空格分隔的有效 IPv4 或 IPv6 CIDR 地址清單。 這些值是用來區分您使用相同 LAN 子網 IP 位址的多個辦公室位置。 出局 IP 位址範圍全部必須為/24 網路大小，且輸入中不包含/24。
+   1. **LanIps** (必要) ：列出此辦公室位置所使用的局域網子網範圍。 LAN 子網 IDs 需要包含 CIDR 網路大小，網路大小可以介於/8 和/29 之間。 多個 LAN 子網範圍可以以逗號或分號分隔。
 1. 當您已新增辦公室位置並儲存檔案後，請按一下 [**上傳完成**] 欄位旁邊的 [**流覽]** 按鈕，然後選取儲存的 CSV 檔案。
 1. 檔案將會自動驗證。 如果有驗證錯誤，您會看到錯誤訊息在匯 _入檔案中有一些錯誤。請複查錯誤，修正匯入檔，然後再試一次。_ 按一下 [連結] 中的 [ **開啟錯誤詳細資料** ]，以取得特定欄位驗證錯誤的清單。
 

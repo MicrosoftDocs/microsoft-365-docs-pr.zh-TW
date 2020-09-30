@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。
+description: 您可以使用 Office 365 安全性與合規性中心或 [Microsoft 365 合規性中心] 以搜尋整合的稽核記錄，檢視貴組織中的使用者和系統管理員活動。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7051e03ca4751d6e97d9af9228765be9e1af6ebe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
+ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197346"
+ms.lasthandoff: 09/26/2020
+ms.locfileid: "48286039"
 ---
-# <a name="search-the-audit-log-in-the-security--compliance-center"></a>在安全性與合規性中心搜尋稽核記錄
+# <a name="search-the-audit-log-in-the-compliance-center"></a>在合規性中心搜尋稽核記錄
 
-需要了解是否有使用者已檢視特定文件或清除信箱中的項目嗎？ 如果是，您可以使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 為什麼使用整合的稽核記錄？ 因為您可以在 Office 365 中搜尋下列類型的[使用者和系統管理員活動](#audited-activities)：
+需要了解是否有使用者已檢視特定文件或清除信箱中的項目嗎？ 如果是，您可以使用安全性與合規性中心來搜尋統一的稽核記錄，檢視組織中的使用者和系統管理員活動。 為什麼使用整合的稽核記錄？ 因為您可以在 Microsoft 365 中搜尋下列類型的[使用者和系統管理員活動](#audited-activities)：
 
 - SharePoint Online 和商務用 OneDrive 中的使用者活動
 
@@ -36,7 +36,7 @@ ms.locfileid: "48197346"
 
 - SharePoint Online 中的系統管理員活動
 
-- Azure Active Directory (適用於 Office 365 的目錄服務) 中的系統管理員活動
+- Azure Active Directory 中的系統管理員活動 (適用於 Microsoft 365 的目錄服務) 
 
 - Exchange Online 中的系統管理員活動 (Exchange 系統管理員稽核記錄)
 
