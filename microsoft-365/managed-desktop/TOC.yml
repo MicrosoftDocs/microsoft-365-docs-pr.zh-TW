@@ -95,6 +95,8 @@
               href: get-started/register-reused-devices-self.md
         - name: 讓您的使用者準備好使用裝置
           href: get-started/get-started-devices.md
+        - name: '使用 Autopilot 和 [註冊狀態] 頁面的初次執行體驗'
+          href: get-started/esp-first-run.md
         - name: 開始使用應用程式控制
           href: get-started/get-started-app-control.md
         - name: 部署應用程式

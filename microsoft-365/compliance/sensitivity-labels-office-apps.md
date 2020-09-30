@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7ad340d84297c716edcfbb39ea7f3aa75c093523
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: 5207d0e3e7e6272ab4a498d1cd68ad1fe3865c39
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962630"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309205"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -63,7 +63,7 @@ ms.locfileid: "47962630"
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [目前通道](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 +)  | 16.35 +   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
-|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 推出目前的 [頻道](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2006 +)                                   | Word 和 PowerPoint 的預覽：向裡 [ (預覽的現有頻道) ](https://office.com/insider) | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | [目前的通道](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2006 +)                                   | Word 和 PowerPoint 的預覽：向裡 [ (預覽的現有頻道) ](https://office.com/insider) | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |支援標籤和受保護檔上的[AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)和[合著](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
