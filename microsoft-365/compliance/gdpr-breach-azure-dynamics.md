@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 838e2ee09ea80f07c637eeebd1229b63f01ad00b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: c262e496313ec5f59e9e369d8622f4698a9a585a
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415897"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305197"
 ---
 # <a name="azure-and-dynamics-365-breach-notification-under-the-gdpr"></a>GDPR 規定的 Azure 和 Dynamics 365 外洩通知
 
@@ -38,7 +38,7 @@ Microsoft 不會監視或回應客戶責任領域範圍內的安全性事件。�
 
 Azure 會根據安全性事件回應程序 (也就是 Microsoft Azure 事件管理計劃的子集) 回應潛在的資料外洩。系統會使用以下五個階段程序來實作 Azure 安全性事件回應：偵測、評估、診斷、穩定，及關閉。安全性事件回應小組可能會隨著調查進度輪流進行診斷和穩定。安全性事件回應程序的概觀說明如下：
 
-|**階段**|**描述**|
+|**Stage**|**描述**|
 | ------- | ------------- |
 | ***1 — 偵測*** | 潛在事件的第一個徵兆。 |
 | ***2 — 評估*** | 待命事件回應小組成員會評估事件的影響和嚴重性。取決於證據，可能會也可能不會進一步向安全性回應小組呈報評估。 |

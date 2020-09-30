@@ -14,18 +14,18 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 775a3d21697103d6ed0b891aef605197741d3dbd
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 1c12618b92a84cb7861d1df243a689cd1cf8a17c
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208115"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304833"
 ---
 # <a name="trusted-information-security-assessment-exchange-tisax-germany"></a>可信資訊安全評估交換體系 (TISAX) 德國
 
 ## <a name="about-tisax"></a>關於 TISAX
 
-為了協助確保汽車產業中日益提高的連線能力，德國汽車工業協會 ([Verband der Automobilindustrie](https://www.dict.cc/deutsch-englisch/Verband.html)，VDA) 開發了一份關於評估資訊安全性的準則目錄。 VDA 資訊安全性評定 ([德文](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html)和[英文](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) 是根據適用於汽車產業的國際 ISO/IEC 27001 和 27002 標準基礎。 在 2017 年，它已更新為涵蓋用於雲端服務的控制。
+為了協助確保汽車產業中日益提高的連線能力，德國汽車工業協會 ([Verband der Automobilindustrie](https://www.vda.de)，VDA) 開發了一份關於評估資訊安全性的準則目錄。 VDA 資訊安全性評定 ([德文](https://www.vda.de/de/themen/sicherheit-und-standards/informationssicherheit/informationssicherheit-sicherheitsanforderungen.html)和[英文](https://www.vda.de/en/topics/safety-and-standards/information-security/information-security-requirements)) 是根據適用於汽車產業的國際 ISO/IEC 27001 和 27002 標準基礎。 在 2017 年，它已更新為涵蓋用於雲端服務的控制。
 
 VDA 成員公司使用這種檢測來進行內部安全性評定以及供應商、服務提供者和其他合作夥伴 (代表他們處理敏感性資訊) 的評定。 不過，因為這些評估是由每家公司個別處理，所以它會為合作夥伴帶來負擔，且 VDA 成員會重複工作。
 

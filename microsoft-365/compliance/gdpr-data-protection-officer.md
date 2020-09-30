@@ -16,12 +16,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 140d66c48feed0534c377fb03673bb575e62527d
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 440d8756e68b022b3b5e7bb4513e2cb3c199f335
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417937"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305043"
 ---
 # <a name="microsofts-data-protection-officer"></a>Microsoft 的資料保護長
 
@@ -33,7 +33,7 @@ DPO 角色要求合格人選須具備至少七年的專業資料保護經驗，�
 
 ## <a name="nature-of-the-role"></a>角色的性質
 
-DPO 需適當且即時負責處理與個人資料保護相關的所有主要問題。這在某種程度上由 DPO 的角色實行，以檢閱及建議由 Microsoft 產生的所有資料保護影響評估 (DPIA)。由於 DPIA 程式是設計用於擷取所有在 Microsoft 的個人資料處理，DPO 將可跨公司進行檢視，並根據 GDPR 就 Microsoft 個人資料處理通知及建議 Microsoft 其義務。此相同機制也允許 DPO 監視 Microsoft 與適用資料保護法規的合規性，包括 GDPR，以及 Microsoft 的內部原則與控制。 
+DPO 需適當且即時負責處理與個人資料保護相關的所有主要問題。這動作在某種程度上由 DPO 的角色實行，以檢閱及建議由 Microsoft 產生的所有資料保護影響評估 (DPIA)。由於 DPIA 程式是設計用於擷取所有在 Microsoft 的個人資料處理，DPO 將可跨公司進行檢視，並根據 GDPR 就 Microsoft 個人資料處理通知及建議 Microsoft 其義務。此相同機制也允許 DPO 監視 Microsoft 與適用資料保護法規的合規性，包括 GDPR，以及 Microsoft 的內部原則與控制。 
 
 ## <a name="position-of-the-data-protection-officer"></a>資料保護長的職位
 

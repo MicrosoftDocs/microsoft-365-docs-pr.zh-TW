@@ -17,12 +17,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 9e7853fb44cc9ccd8c233cc2fee71eaef91a5c1c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: e4750e063c0f049c5f3faa1667aafb7f1afa6586
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415877"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305177"
 ---
 # <a name="gdpr-breach-notification"></a>GDPR 外洩通知
 
@@ -30,7 +30,7 @@ ms.locfileid: "47415877"
 
 ## <a name="what-constitute-a-breach-of-personal-data-under-the-gdpr"></a>GDPR 規定的個人資料是由什麼所構成？
 
-個人資料表示與個人相關的任何資訊，可用來直接或間接識別他們。 個人資料外洩是「導致意外或非法損毀、遺失、變更、未經授權洩漏或存取所傳輸、儲存或處理的個人資料之安全性缺口。
+個人資料表示與個人相關的任何資訊，可用來直接或間接識別他們。 個人資料外洩是「導致意外或非法損毀、遺失、變更、未經授權洩漏或存取所傳輸、儲存或處理的個人資料之安全性缺口」。
 
 ## <a name="terminology"></a>術語
 
