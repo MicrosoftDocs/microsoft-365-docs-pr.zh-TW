@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: fcf3aff200d65c71538975533cb110c89f3bb92d
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 6fc99048a4a60991b9ba098249692584f596545b
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417947"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305113"
 ---
 # <a name="data-processor-service-for-windows-enterprise-breach-notification-under-the-gdpr"></a>適用於 GDPR 的 Windows 企業版資料處理者服務違反通知
 
@@ -62,8 +62,8 @@ Microsoft 的 Windows 企業版資料處理者服務使用的偵測程序旨在�
 安全性回應小組會與 Microsoft 的 Windows 企業版資料處理者服務安全性工程師及主題專家 (SME) 合作，根據證據的事實資料將事件分類。 安全性事件可以歸類為： 
 
  - **誤判：** 事件符合偵測準則，但經查明其實是正常商業活動的一部分，且可能需要進行篩選。 服務小組會找出誤判的根本原因，並以系統化的方式視需要運用偵測來源和進行微調，來解決這些問題。 
- - **安全性事件：** 有人非法存取任何儲存在 Microsoft 設備或 Microsoft 設施上的客戶資料或支援資料，或未經授權存取這類設備或設施，進而造成客戶資料或支援資料遺失、洩漏，或變更的事件。 
- - **須向客戶報告的安全性事件 (CRSI)**: 有人非法或未經授權存取或使用 Microsoft 系統、設備或設施，導致客戶資料洩漏、修改或遺失。 
+ - **安全性事件**：有人非法存取任何儲存在 Microsoft 設備或 Microsoft 設施上的客戶資料或支援資料，或未經授權存取這類設備或設施，進而造成客戶資料或支援資料遺失、洩漏，或變更的事件。 
+ - **須向客戶報告的安全性事件 (CRSI)**：有人非法或未經授權存取或使用 Microsoft 系統、設備或設施，導致客戶資料洩漏、修改或遺失。 
  - **隱私權外洩：** 涉及個人資料安全性事件的子類型。 處理流程與安全性事件並無不同。 
 
  若要宣告 CRSI，Microsoft 必須先判斷客戶資料已遭到或很有可能已遭到未經授權的存取，且 (或) 有必須通知客戶的法律或合約承諾。雖然並非必要，但您最好了解對特定客戶的影響、資源存取與修復步驟。通常要等到安全性事件的診斷階段結束後，才會宣告事件屬於 CRSI。不過，在所有直接相關的資訊都可供使用時，也可能會隨時宣告。安全性事件管理員必須找出確鑿的證據，足以支持的確發生了須向客戶報告的事件，以開始執行客戶事件通知程序。 

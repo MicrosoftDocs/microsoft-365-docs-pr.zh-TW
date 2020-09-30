@@ -15,12 +15,12 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 87f956e0c9ae80610a61a7ed9496e2aa8b52ebb4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 51abfe03db57a838cbf5e132027cce7927db439c
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416836"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305217"
 ---
 # <a name="microsoft-support-and-professional-services-and-breach-notification-under-the-gdpr"></a>GDPR 規定的 Microsoft 支援服務與專業服務以及外洩通知
 
@@ -65,7 +65,7 @@ Microsoft 專業服務所用的偵測程序主要用來探索資料保護事件�
 
 ### <a name="data-protection-incident-response-drills-testing-of-data-protection-incident-response-plan"></a>資料保護事件回應演練、資料保護事件回應計劃測試
 
-除了持續訓練，專業服務每年還會執行與相關內部部門合作的演練，以將資料保護事件呈報程序、角色及責任傳達給所有安定小組成員。這可讓重要利害關係人準備好面對真實世界的資料保護事件—不論是屬於安全性、實體或隱私權性質。其中包括與資料保護事件回應小組、安全性小組、法務小組和通訊小組的代表進行演練。
+除了持續訓練，專業服務每年還會執行與相關內部部門合作的演練，以將資料保護事件呈報程序、角色及責任傳達給所有安定小組成員。此訓練可讓重要利害關係人準備好面對真實世界的資料保護事件—不論是屬於安全性、實體或隱私權性質。此訓練包括與資料保護事件回應小組、安全性小組、法務小組和通訊小組的代表進行演練。
 
 在演練之後，我們會記載結果以及我們已決定要使用的補救方法。
 

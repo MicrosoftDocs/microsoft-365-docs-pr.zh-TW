@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: b113935ce31aa7992eab1d57f78b6cdec5919cc4
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 916ee45dae92d14c78b92bb16b6dca7c455bf803
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416899"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304897"
 ---
 # <a name="data-processor-service-for-windows-enterprise-data-subject-requests-for-the-gdpr-and-ccpa"></a>適用於 GDPR 和 CCPA 的 Windows 企業版資料主體要求的資料處理者服務 
 
@@ -28,7 +28,7 @@ ms.locfileid: "47416899"
 >本主題適用於 Windows 企業版預覽計畫的資料處理者服務中的參與者，且需要接受特定使用條款。 若要深入了解該計畫並同意使用條款，請參閱 [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
 
 ## <a name="introduction-to-data-subject-requests-dsrs"></a>資料主體要求 (DSR) 簡介 
-歐盟一般資料保護規定 (GDPR) 賦予人們 (在此法規中稱為_資料主體_) 權利來管理雇主或其他類型的代理機構或組織 (稱為_資料控制者_或僅稱為_控制者_) 所收集的個人資料。 依據 GDPR，個人資料的定義非常廣泛，舉凡與已識別或可識別自然人相關的任何資料皆屬之。 GDPR 為資料主體提供其個人資料的特定權限；這些權限包括取得個人資料副本、要求對該資料進行更正、限制對該資料的處理、刪除該資料，或是以電子格式接收該資料以移至另一個控制者。 由資料主體向控制者提出以對其個人資料採取行動的正式要求，稱為_資料主體要求_或 DSR。 
+歐盟一般資料保護規定 (GDPR) 賦予人們 (在此法規中稱為_資料主體_) 權利來管理雇主或其他類型的代理機構或組織 (稱為_資料控制者_或僅稱為_控制者_) 所收集的個人資料。 依據 GDPR，個人資料的定義很廣泛，舉凡與已識別或可識別自然人相關的任何資料皆屬之。 GDPR 為資料主體提供其個人資料的特定權限；這些權限包括取得個人資料副本、要求對該資料進行更正、限制對該資料的處理、刪除該資料，或是以電子格式接收該資料以移至另一個控制者。 由資料主體向控制者提出以對其個人資料採取行動的正式要求，稱為_資料主體要求_或 DSR。 
 
 同樣地，加州消費者隱私法 (CCPA) 為加州客戶提供隱私權和義務，包括與 GDPR 資料主體權利相似的權利，例如有權刪除、存取和接收 (可攜性) 其個人資訊。 CCPA 也提供特定接露、針對選擇行使權時的歧視提供保護，以及特定資料傳輸的「選擇退出/選擇加入」需求分類為「銷售」。 銷售的廣泛定義，包括出於有價值的考量而共用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa)和[常見問題集](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq)。
 
@@ -38,18 +38,19 @@ ms.locfileid: "47416899"
 2. **刪除**—將會永久移除 Microsoft 雲端中常駐的個人資料。 
 3. **匯出**—將個人資料的電子副本 (以機器可讀取的格式) 提供給資料主體。 CCPA 中的個人資訊是任何與已識別或可識別個人相關的資訊。
 
-CCPA 中的個人資訊是任何與已識別或可識別個人相關的資訊。 個人的私人、公開或公司角色之間沒有區別。 定義的「個人資訊」一詞在 GDPR 下，大致與「個人資料」相符。 不過，CCPA 也包含家庭和家用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa)和[常見問題集](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq)。
+CCPA 中的個人資訊是任何與已識別或可識別個人相關的資訊。 個人的私人、公開或公司角色之間沒有區別。 定義的「個人資訊」一詞大致與 GDPR 下的「個人資料」對應。 不過，CCPA 也包含家庭和家用資料。 如需 CCPA 的詳細資訊，請參閱[加州消費者隱私法](https://docs.microsoft.com/microsoft-365/compliance/offering-ccpa)和[常見問題集](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq)。
 
 本指南中的每一節說明資料控制者組織可以採取的程序，以回應對 Microsoft 雲端中個人資料的 DSR。 
 
-## <a name="terminology"></a>術語 
-以下提供與本指南相關的詞彙定義。 
+## <a name="terminology"></a>術語
 
-* _控制者—_ 自然人或法人、公家機關、公司或其他主體，不論單獨或與其他單位聯合，會判斷處理個人資料的用途以及方式，其中此類處理的用途以及方式的判斷是根據聯盟與成員國法律，控制者人選或提名控制者的特定準則可由聯盟與成員國法律提供。 
+以下清單提供與本指南相關的詞彙定義。 
 
-* _個人資料和 資料主體—_ 表示與已識別或可識別之自然人 (以下稱為「資料主體」) 相關的任何資訊；可識別的自然人是可以直接或間接識別的人員，尤其是藉由參照如名稱、身分證號碼、位置資料、線上識別碼，或特定於該自然人的身體、生理、基因、心理、經濟、文化或社會身份等一個或多個識別碼來識別。 
+* _控制者_：自然人或法人、公家機關、公司或其他主體，不論單獨或與其他單位聯合，會判斷處理個人資料的用途以及方式，其中此類處理的用途以及方式的判斷是根據聯盟與成員國法律，控制者人選或提名控制者的特定準則可由聯盟與成員國法律提供。 
 
-* _處理者—_ 自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。 
+* _個人資料和資料主體_：表示與已識別或可識別之自然人 (以下稱為「資料主體」) 相關的任何資訊；可識別的自然人是可以直接或間接識別的人員，尤其是藉由參照如名稱、身分證號碼、位置資料、線上識別碼，或特定於該自然人的身體、生理、基因、心理、經濟、文化或社會身分等一個或多個識別碼來識別。 
+
+* _處理者_：代表控管者處理個人資料的自然人或法人、公務機關、局處或其他機構。 
 
 * _客戶資料_：由客戶本身或客戶代表，透過企業服務所提供給 Microsoft 的所有資料，包括所有文字、音訊、視訊或影像檔案和軟體。 
 
