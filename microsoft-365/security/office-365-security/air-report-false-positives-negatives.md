@@ -1,6 +1,6 @@
 ---
-title: 如何在 Office 365 自動化調查和回應中報告誤報或漏報
-description: Office 365 的高級威脅防護是否已錯過或錯誤地偵測到什麼？ 瞭解如何將誤報或錯誤否定提交給 Microsoft 進行分析。
+title: 如何在 Microsoft Defender for Office 365 中報告自動調查的誤報或漏報
+description: Microsoft Defender for Office 365 中的 AIR 是否已錯過或錯誤地偵測到什麼？ 瞭解如何將誤報或錯誤否定提交給 Microsoft 進行分析。
 keywords: 自動化，調查，警示，觸發器，動作，修正，誤報，誤報，false 負數
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -11,20 +11,21 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-ms.date: 05/15/2020
+ms.date: 09/29/2020
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.custom: autoir
-ms.openlocfilehash: 66b81a474ff81df57c0b2a59672b17061f7235cb
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.custom:
+- autoir
+ms.openlocfilehash: fa6b4ae03a3cf62398a270d65a29e6b4c955173a
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196071"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308929"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自動化調查和回應功能中報告誤報/負片
 
@@ -32,7 +33,7 @@ ms.locfileid: "48196071"
 
 
 適用於：****
-- Office 365 進階威脅防護
+- Microsoft Defender for Office 365
 
 [自動調查和回應 (Office 365 中的 AIR) 功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)是否漏掉或錯誤地偵測到某項功能？ 您可以採取一些步驟加以修正。 您可以：
 - [向 Microsoft 報告誤報/負數](#report-a-false-positivenegative-to-microsoft-for-analysis)
@@ -43,7 +44,7 @@ ms.locfileid: "48196071"
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>將誤報報告給 Microsoft 進行分析
 
-如果 Office 365 AIR 錯過電子郵件、電子郵件附件、電子郵件訊息中的 URL 或 Office 檔案中的 URL，您可以 [將可疑的垃圾郵件、網路釣魚程式、URLs 和檔案提交給 Microsoft For office 365 掃描](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)。
+如果 Microsoft Defender for Office 365 中的 AIR 錯過電子郵件、電子郵件附件、電子郵件中的 URL 或 Office 檔案中的 URL，您可以 [將可疑的垃圾郵件、網路釣魚程式、URLs 和檔案提交給 Microsoft For office 365 掃描](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)。
 
 您也可以 [將檔案提交給 Microsoft 以進行惡意程式碼分析](https://www.microsoft.com/wdsi/filesubmission)。
 
@@ -51,7 +52,7 @@ ms.locfileid: "48196071"
 
 如果透過合法的使用觸發警示，或警示不准確，您可以 [在雲端 App 安全性入口網站中管理提醒](https://docs.microsoft.com/cloud-app-security/managing-alerts)。
 
-如果您的組織使用的是 [Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection) ，除了 Office 365 之外，在裝置上也會將檔案、IP 位址、URL 或網域視為惡意程式碼，即使它是安全的，您還是可以 [使用裝置的「允許」動作來建立自訂指示器](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)。
+如果您的組織使用的是 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection) ，除了 Office 365 之外，在裝置上會將檔案、IP 位址、URL 或網域視為惡意程式碼，即使它是安全的，您還是可以 [使用裝置的「允許」動作來建立自訂指示器](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)。
 
 ## <a name="undo-a-remediation-action"></a>復原修正動作
 
@@ -90,6 +91,6 @@ ms.locfileid: "48196071"
 
 ## <a name="related-articles"></a>相關文章
 
-[Office 365 進階威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
 
-[開始使用 Office 365 中的自動調查和回應 (AIR) ](office-365-air.md)
+[Microsoft Defender for Office 365 中的空氣](office-365-air.md)

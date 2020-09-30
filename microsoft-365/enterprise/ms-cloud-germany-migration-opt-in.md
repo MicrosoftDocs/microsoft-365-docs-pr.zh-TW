@@ -19,22 +19,22 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '摘要： '
-ms.openlocfilehash: a4252a357891fc978d8b40747c5ad5741786b290
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2e5e5053ff1539b3fa92175115c8c9db3abc81ce
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688227"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48309044"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何選擇加入從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 到新德國資料中心區域中的 Office 365 服務的移轉。
 
 >[!Note]
->本文僅適用於符合資格的 Microsoft Cloud Germany/Deutschland 客戶。
+>本文僅適用于 Microsoft cloud 德國 (Microsoft cloud Deutschland) 客戶。
 >
 
 ## <a name="how-to-request-migration"></a>如何要求移轉
 
-使用以 Microsoft Cloud Germany 佈建之服務的的合格客戶，將會在 Microsoft 365 系統管理中心看到一個頁面，可讓客戶租用戶系統管理員選擇加入移轉。
+具有在 Microsoft 雲端德國提供服務的合格客戶 (Microsoft Cloud Deutschland) 會顯示 Microsoft 365 系統管理中心的頁面，讓客戶租使用者管理員加入宣告以進行遷移。
 
 若要在 Microsoft 365 系統管理中心中存取該頁面，請在左側的 [功能窗格] 中展開 [設定]****，然後按一下 [組織設定檔]****。
 
@@ -54,7 +54,13 @@ ms.locfileid: "46688227"
 
 ## <a name="what-happens-after-opting-in-for-migration"></a>選擇加入移轉後，會發生什麼情況？
 
-如果組織選擇加入由 Microsoft 主導的方式，預期會在 2020 年進行移轉。  移轉之後，核心客戶資料和訂閱都會移至新的德國區域。  在移轉程序期間，Microsoft 會於訊息中心傳送最新資訊。
+針對加入宣告 Microsoft 導向方法的組織，遷移將會從舊版2021開始2021，且會在 Microsoft Cloud 德國 (Microsoft Cloud Deutschland) 退休日期於年10月29日為止完成。  移轉之後，核心客戶資料和訂閱都會移至新的德國區域。  在移轉程序期間，Microsoft 會於訊息中心傳送最新資訊。  請參閱下列文章，以深入瞭解。
+
+## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>如果客戶租使用者管理員不選擇在系統管理中心進行遷移，會發生什麼情況？
+
+線上服務條款已變更，包含可讓 Microsoft 將您的 Microsoft 365、Dynamics 365 及 Power BI 資料和訂閱從 Microsoft Cloud Deutschland 遷移至新資料中心的字詞。 這些字詞會在任何 Microsoft Cloud 德國 (Microsoft cloud Deutschland) 訂閱從2020年5月1日起更新。  客戶租使用者管理員會在電子郵件和訊息中心收到通知，告知遷移將會自動加入宣告 Microsoft 輔助遷移。 在自動加入宣告之前，至少會傳送30天的通知。  在遷移後選擇將所有通訊和狀態更新傳送給郵件中心的客戶租使用者系統管理員。
+
+客戶與合作夥伴租使用者系統管理員可以在系統管理中心內選擇是否要進行遷移，讓遷移程式可以儘早開始。
 
 ## <a name="more-information"></a>詳細資訊
 

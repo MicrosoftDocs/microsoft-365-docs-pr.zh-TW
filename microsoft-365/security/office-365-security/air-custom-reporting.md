@@ -1,6 +1,6 @@
 ---
 title: 使用自訂報表解決方案與自動調查和回應
-keywords: AIR, autoIR, ATP, 自動化, 調查, 回應, 修正, 威脅, 進階, 威脅, 保護
+keywords: SIEM，API，AIR，autoIR，ATP，自動化調查，整合，自訂報告
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,19 +15,22 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 瞭解如何使用自訂或協力廠商報表解決方案來整合自動調查和回應。
-ms.openlocfilehash: 2ff0ef995fc8418c3d57895f00ea96f05b0aaa97
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.date: 09/29/2020
+ms.custom:
+- air
+ms.openlocfilehash: 08502516ae03dc7c6e7b58aa77939723e7532ef0
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195602"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308917"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>使用自訂或協力廠商報表解決方案的管理活動 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-使用 [Office 365 的高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，您可以取得 [有關自動化調查的詳細資訊](air-view-investigation-results.md)。 不過，部分組織也會使用自訂或協力廠商報表解決方案。 如果您的組織想要整合利用這類方案進行的自動調查資訊，您可以使用 Office 365 管理活動 API。
+使用 [Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，您可以取得 [有關自動化調查的詳細資訊](air-view-investigation-results.md)。 不過，部分組織也會使用自訂或協力廠商報表解決方案。 如果您的組織想要整合利用這類方案進行的自動調查資訊，您可以使用 Office 365 管理活動 API。
 
 使用下列資源進行設定：
 
@@ -41,8 +44,8 @@ ms.locfileid: "48195602"
 |[Office 365 管理活動 API 架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema) (英文)|取得[常見架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#common-schema) (英文) 和 [Office 365 ATP 和威脅調查和回應架構](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (英文) 的概觀，以深入了解 Office 365 管理活動 API 中可用的特定類型資料。|
 |
 
-## <a name="related-articles"></a>相關文章
+## <a name="see-also"></a>請參閱
 
-- [Office 365 進階威脅防護](office-365-atp.md)
+- [Microsoft Defender for Office 365](office-365-atp.md)
 
-- [深入瞭解 Microsoft 威脅防護中的自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Microsoft 365 Defender 的自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

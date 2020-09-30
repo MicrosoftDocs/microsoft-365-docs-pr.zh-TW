@@ -8,27 +8,29 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.date: 09/29/2020
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: 開始使用 Office 365 進階威脅防護方案 2 中的自動化調查及回應功能
-ms.custom: air - seo-marvel-mar2020
-ms.openlocfilehash: adee64461d06b46f467682835a493a7eebe89aef
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: 開始使用 Microsoft Defender for Office 365 中的自動調查和回應功能。
+ms.custom:
+- air
+- seo-marvel-mar2020
+ms.openlocfilehash: b844e4817bc77d7f6f4e99df53fc4b14c7e7110c
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202648"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308884"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>開始使用 Office 365 中的自動調查和回應 (AIR) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-[Office 365 Advanced 威脅防護](office-365-atp.md) (OFFICE 365 ATP) 計畫2包含強大的自動化調查和回應 (空氣) 功能，可節約您的安全性運作小組時間和精力。 當觸發警示時，您的安全性作業小組會檢查、優先順序及回應這些警示。 保持傳入提醒的數量非常驚人。 自動化某些部分可提供協助。 透過 AIR，您的安全性運作小組可以專注于優先順序較高的工作，而不會失去所觸發之警示的視線。
+[Microsoft Defender For Office 365](office-365-atp.md) 包含強大的自動化調查和回應 (空氣) 功能，可節約您的安全性運作小組時間和工作。 當觸發警示時，您的安全性作業小組會檢查、優先順序及回應這些警示。 保持傳入提醒的數量非常驚人。 自動化某些部分可提供協助。 透過 AIR，您的安全性運作小組可以專注于優先順序較高的工作，而不會失去所觸發之警示的視線。
 
 本文包括：
 - 空氣的 [整體流向](#the-overall-flow-of-air) ;
@@ -73,7 +75,7 @@ ms.locfileid: "48202648"
 
 ## <a name="how-to-get-air"></a>如何取得空中
 
-Office 365 的 AIR 功能包含在 [office 365 高級威脅防護方案 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)。 不過，您 [應設定 Office 365 ATP 原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) ，讓 AIR 如預期般運作。 此外，請務必複查並可能設定組織的 [警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)。 
+AIR 功能包含在 [適用于 Office 365 的 Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)中。 不過，您 [必須設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats) 您的原則，AIR 才能如期運作。 此外，請務必複查並可能設定組織的 [警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)。 
 
 Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系統管理員許可權濫用、惡意程式碼活動、潛在的外部和內部威脅，以及資訊控管風險。 某些預設的 [報警原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) 可以觸發自動調查。 包括下列各項：
 
@@ -100,12 +102,12 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 |設定 AIR 功能 |下列其中一個角色： <br/>-全域管理員<br/>-安全性管理員 <br/>您可以在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)指派這些角色。 |
 |核准或拒絕建議的動作|在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) 內指派的下列其中一個角色) ：<br/>-全域管理員 <br/>-安全性管理員<br/>-安全性讀取器 <br/>--- 且 ---<br/>-搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。 ) 
 
-[Office 365 ATP 計畫 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2) 授權應指派給：
+若要將[Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)授權指派給：
 - 安全性管理員 (包括全域管理員) 
 - 組織的安全性運作小組 (包括安全性讀者和具有搜尋和清除角色的使用者) 
 - 終端使用者
 
-此外，必須定義及套用 [Office 365 ATP 原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) ，才能進行保護。
+此外，必須定義及套用 [Microsoft Defender For Office 365 原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) ，才能進行保護。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -115,6 +117,6 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 
 ## <a name="related-articles"></a>相關文章
 
-- [Microsoft Defender 高級威脅防護中的自動化調查和修復](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Microsoft Defender for Endpoint 中的自動調查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Microsoft 威脅防護的自動化調查及回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Microsoft 365 Defender 的自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
