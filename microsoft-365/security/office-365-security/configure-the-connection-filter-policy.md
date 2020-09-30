@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中設定連線篩選，以允許或封鎖電子郵件伺服器的電子郵件。
-ms.openlocfilehash: d69ec30c9d6d812bf3bbcc6dc5b6df332d9dd0b5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203368"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318249"
 ---
 # <a name="configure-connection-filtering"></a>設定連線篩選
 
@@ -203,7 +203,6 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 ## <a name="new-to-microsoft-365"></a>Microsoft 365 的新功能？
 
-|<!-- a -->|
-|---|
-|![LinkedIn 學習 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增至 Microsoft 365**的簡短圖示？ 探索免費的影片課程，以供 **系統管理員和 IT 專業人員**使用，LinkedIn 的知識。|
-|
+****
+
+![LinkedIn 學習 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增至 Microsoft 365**的簡短圖示？ 探索適用于 **Microsoft 365 系統管理員和 IT 專業人員**的免費影片課程，並 LinkedIn 的知識。

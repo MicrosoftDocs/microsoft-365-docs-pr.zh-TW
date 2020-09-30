@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解在 Exchange Online Protection (EOP) 中套用至郵件的垃圾郵件信賴等級 (SCL) 。
-ms.openlocfilehash: fbd892b0171cee71f516d7ca3b26b91da664af79
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 51d00b36ae826676f436c0a74617ddbbadf7a30a
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202230"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318237"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP 中的垃圾郵件信賴等級 (SCL) 
 
@@ -50,6 +50,6 @@ ms.locfileid: "48202230"
 
 類似 SCL，大量投訴層級 (BCL) 識別錯誤的大量電子郵件 (也稱為 _灰色郵件_) 。 BCL 高，表示大量郵件訊息更容易引發抱怨 (因此更可能是垃圾郵件)。 您可以在反垃圾郵件原則中設定 BCL 閾值。 如需詳細資訊，請參閱 [設定 EOP 中的反垃圾郵件原則](configure-your-spam-filter-policies.md)、 [大量投訴層級 (BCL) ) ](bulk-complaint-level-values.md)，以及 [垃圾郵件和大量電子郵件有什麼不同？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
-|<!-- -->|
-|---|
-|![LinkedIn 學習 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增至 Microsoft 365**的簡短圖示？ 探索適用于 **Microsoft 365 系統管理員和 IT 專業人員**的免費影片課程，並 LinkedIn 的知識。|
+****
+
+![LinkedIn 學習 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增至 Microsoft 365**的簡短圖示？ 探索適用于 **Microsoft 365 系統管理員和 IT 專業人員**的免費影片課程，並 LinkedIn 的知識。

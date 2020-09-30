@@ -16,17 +16,16 @@ ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 中所用的大量規范層級 (BCL) 數值。
-ms.openlocfilehash: d59bb152de075bb807e3cae72839fe459d7da40f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 53d0ae5fb23fb68ef970a07b2b5d8c4220775de7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203524"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318210"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>EOP 中的大量投訴層級 (BCL) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 組織沒有 Exchange Online 信箱時，EOP 會指派大量相容層級 (BCL) 至來自大宗郵件寄件者的輸入郵件。 BCL 會新增至 X 標頭中的郵件，類似于 [垃圾郵件信賴等級 (SCL) ](spam-confidence-levels.md) ，用來識別郵件為垃圾郵件。 較高的 BCL 表示大宗郵件可能會產生抱怨 (，因此很可能是) 的垃圾郵件。 Microsoft 會同時使用內部和協力廠商來源來識別大宗郵件，並決定適當的 BCL。
 
@@ -42,6 +41,8 @@ ms.locfileid: "48203524"
 |:---:|---|
 |0|郵件並非來自大量寄件者。|
 |1、2、3|郵件來自產生少量投訴的大量寄件者。|
-|4、5、6、7|郵件來自大量寄件者，該寄件者會產生混和數目的投訴。|
+|4、5、6、7<sup>\*</sup>|郵件來自大量寄件者，該寄件者會產生混和數目的投訴。|
 |8, 9|郵件來自大量寄件者，其會產生大量的投訴。|
 |
+
+<sup>\*</sup> 這是反垃圾郵件原則中使用的預設臨界值。

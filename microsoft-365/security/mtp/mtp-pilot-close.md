@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 0a0c0c1dae1d7f03aa9c8328b3fb1b4bae587b9e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dbd20263fce059bc57b6a19b58f15e3f5223b4e7
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199706"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318200"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>關閉及摘要您的 Microsoft 威脅防護試驗  
 
@@ -37,6 +37,7 @@ ms.locfileid: "48199706"
 所有測試結束之後，您已到達程式的結束。
 
 最後一個輸出應該是：
+
 - 完成計分卡
 - 試驗結果的詳細報告
 - 如何繼續進行決策
@@ -45,9 +46,8 @@ ms.locfileid: "48199706"
 
 我們希望您可以享受這種模擬，並且鼓勵您開始實施所學的功能。
 
-
 ## <a name="next-step"></a>下一步
-||
-|:-------|
-|流覽 [Microsoft 365 解決方案和架構中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) ，瞭解如何設計適合貴組織的解決方案和架構。
 
+****
+
+流覽 [Microsoft 365 解決方案和架構中心](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) ，瞭解如何設計適合貴組織的解決方案和架構。

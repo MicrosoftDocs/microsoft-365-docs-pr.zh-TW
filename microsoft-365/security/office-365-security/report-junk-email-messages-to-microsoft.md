@@ -16,17 +16,16 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解不同的方式，向 Microsoft 報告好的和壞的訊息和檔案，以進行分析。
-ms.openlocfilehash: 040f998b09f280fc2b6bdfdac327313f9cc65c3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aeaf7a779ac9ba2d879a88dd72f4a457a26096ca
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203648"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318179"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>回報訊息和檔案至 Microsoft。
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 在使用 Exchange Online 中的信箱或獨立 Exchange Online (Protection 中的 Microsoft 365 組織中，使用者與系統管理員都有數種不同的方法，可將電子郵件和檔案報告給 Microsoft，) EOP 不需要 Exchange Online 信箱的組織。
 
@@ -43,6 +42,5 @@ ms.locfileid: "48203648"
 |[使用郵件流程規則來查看您的使用者回報給 Microsoft 哪些內容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|瞭解如何建立郵件流程規則 (也稱為傳輸規則) ，當使用者將郵件報告給 Microsoft 進行分析時，會通知您。
 |||
 |[將惡意程式碼和非惡意程式碼提交給 Microsoft 進行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|使用 Microsoft 安全性情報網站送出附件及其他檔案。|
-|
 
 如果已隔離垃圾郵件或網路釣魚郵件，而不是傳遞郵件，則使用者可以從 Security & 合規性中心的隔離入口網站，將郵件報告給 Microsoft。 如需詳細資訊，請參閱 [在 Microsoft 365 中尋找及發行隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。

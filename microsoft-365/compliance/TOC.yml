@@ -151,8 +151,10 @@
       items:
         - name: 瞭解加密
           href: encryption.md
-        - name: 雙重金鑰加密 (預覽)
+        - name: 雙重金鑰加密 (DKE)
           href: double-key-encryption.md
+        - name: 雙重金鑰加密常見問題集
+          href: double-key-encryption-overview.md
         - name: Office 365 服務加密
           href: office-365-service-encryption.md
         - name: 客戶金鑰
@@ -340,10 +342,6 @@
               href: archive-workplacefromfacebook-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
-            - name: Slack
-              href: archive-slack-data.md
-            - name: Zoom Meetings
-              href: archive-zoommeetings-data.md
         - name: TeleMessage 資料連接器
           items:
             - name: Android
@@ -425,7 +423,7 @@
               href: configure-edge-to-export-search-results.md
             - name: 搜尋並刪除電子郵件訊息
               href: search-for-and-delete-messages-in-your-organization.md
-            - name: 搜尋內部部署使用者的雲端式信箱
+            - name: 搜尋內部部署使用者的 Teams 聊天資料
               href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: 大量編輯多個內容搜尋
               href: bulk-edit-content-searches.md
