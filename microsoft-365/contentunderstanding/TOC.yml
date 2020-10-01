@@ -28,6 +28,10 @@
       href: model-usage-analytics.md
     - name: 建立提取程式時利用字詞存放區分類
       href: leverage-term-store-taxonomy.md
+- name: 採用
+  items:
+    - name: 開始使用
+      href: adoption-getstarted.md
 - name: 安裝和管理
   items:
     - name: 設定內容瞭解
