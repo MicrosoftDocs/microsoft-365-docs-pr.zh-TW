@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e1e1677c929ef0de5d47dbb98ef8987a8fba548d
-ms.sourcegitcommit: 1522a6471e0c5254a6d0f592e1f4dfacd1dd473a
+ms.openlocfilehash: e2fba7a5cf83838c440cdea8436b5bbdd360885b
+ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48245900"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48318172"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -113,7 +113,7 @@ ms.locfileid: "48245900"
     - 若**要讓小組與混合式電子郵件環境交談，** 請執行下列動作：通訊相容性可以針對具有 Exchange 內部部署部署的組織，或已啟用 Microsoft 小組的外部電子郵件提供者，監視其使用者的聊天訊息。 您必須為具有內部部署或外部信箱的使用者建立通訊群組，以進行監視。 建立通訊相容性原則時，您會將此通訊群組指派為 [原則嚮導] 中的 [ **監督使用者和群組** ] 選擇。
 
     >[!IMPORTANT]
-    >您必須將 Microsoft 支援檔的要求記錄為可讓您的組織在安全性 & 合規性中心使用圖形使用者介面，針對內部部署使用者搜尋小組聊天資料。 如需詳細資訊，請參閱針對 [內部部署使用者搜尋雲端架構信箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
+    >您必須向 Microsoft 支援服務提交要求，才能讓組織使用安全性與合規性中心的圖形化使用者介面來搜尋內部部署使用者的 Teams 聊天資料。 如需詳細資訊，請參閱針對 [內部部署使用者搜尋雲端架構信箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 您必須向 Microsoft 支援服務提交要求，才能讓貴組織使用安全性與合規性中心的圖形使用者介面來搜尋內部部署使用者雲端式信箱中的 Teams 聊天資料。
 
@@ -194,7 +194,7 @@ ms.locfileid: "48245900"
 ### <a name="conditional-settings"></a>設定條件設定
 <a name="ConditionalSettings"> </a>
 
-您針對原則所選擇的條件，會套用到來自于您組織中的電子郵件和協力廠商來源的通訊 (例如從立即 Bloomberg 或 DropBox) 。
+您針對原則所選擇的條件，會套用到來自于您組織中的電子郵件和協力廠商來源的通訊 (例如從立即 Bloomberg) 。
 
 下表說明每個條件的詳細資訊。
   
