@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 9d1f259894fff720452de52c45424f086a31a6bb
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: f4394a66242a981ab179b07f45e82132f68968d7
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208175"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305353"
 ---
 # <a name="north-american-electric-reliability-corporation-nerc"></a>北美電力可靠性公司 (NERC)
 
@@ -88,6 +88,7 @@ NERC ERO 企業[發佈](https://www.nerc.com/pa/comp/guidance/Pages/default.aspx
 ## <a name="resources"></a>資源
 
 - [NERC 合規性指導](https://www.nerc.com/pa/comp/guidance/)
+- [NERC 網路安全性 - 供應鏈風險管理](https://www.nerc.com/pa/Stand/Pages/CIP0131RI.aspx)
 - [NERC 合規性和強制性](https://www.nerc.com/pa/comp/Pages/default.aspx)
 - [NERC 組織和認證](https://www.nerc.com/pa/comp/Pages/Registration.aspx)
 - [Microsoft 和 FedRAMP](offering-fedramp.md)

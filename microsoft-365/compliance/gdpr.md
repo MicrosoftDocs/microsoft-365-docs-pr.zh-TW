@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1c04718c1ebb798319a83155a6c70f72b0847de
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 0310226bba62995a6e72178fcf1fd2e96f462944
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208809"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48304813"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般資料保護摘要
 
@@ -129,7 +129,7 @@ GDPR 強制需要 DPIA 的包含項目：
 在 GDPR 下，您必須在可能會對使用者權限和自由造成高風險的資料處理之前以控制者身分進行 DPIA，尤其是使用新的技術處理。 GDPR 提供下列必須在其中執行 DPIA 的非完整清單：
 
 - 就分析和具有法律效力或同樣會大幅影響資料主題的類似活動的目的自動處理；  
-- 處理大規模的特殊類別個人資料處理大規模的特殊類別個人資料 – 顯示種族或種族來源、政治意見等的資料 — 或與刑事定罪和犯罪相關的資料；  
+- 處理大規模的特殊類別個人資料 – 顯示種族或種族來源、政治意見等的資料 — 或與刑事定罪和犯罪相關的資料；  
 - 系統化監視大規模的公開區域。  
 
 如果您無法找出足夠的程序將資料主題的高度風險降到最低，GDPR 也會要求您在開始任何處理之前，必須洽詢資料保護授權單位 (DPA)。
