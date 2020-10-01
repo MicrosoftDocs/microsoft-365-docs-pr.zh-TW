@@ -1,13 +1,12 @@
 ---
-title: 設定 Office 365 ATP 安全附件原則
+title: 設定 Office 365 ATP 中的安全附件原則
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: article
-ms.date: 02/06/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -18,101 +17,431 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何定義安全附件原則，以利用電子郵件中的惡意檔來保護組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5f9f1a6cc250fdd336e48c19c6cb5d73e9a05800
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: e50e5e961e1a45b0b6535995727029222539ff03
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197220"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326958"
 ---
-# <a name="set-up-office-365-atp-safe-attachments-policies"></a>設定 Office 365 ATP 安全附件原則
+# <a name="set-up-safe-attachments-policies-in-office-365-atp"></a>設定 Office 365 ATP 中的安全附件原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
 > [!IMPORTANT]
-> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是家用版使用者且正在尋找 Outlook 中安全附件的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用于具有 [Office 365 高級威脅防護 (ATP) ](office-365-atp.md)的商務客戶。 如果您是尋找 Outlook 中附件掃描相關資訊的家用使用者，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-人們經常傳送、接收及共用附件，例如文件、簡報和試算表等等。 只查看電子郵件訊息，不一定可輕易知道附件是否安全或有危害。 最糟糕的就是打開惡意附件，讓您的組織遭受重大災害。 幸好，[Office 365 進階威脅防護](office-365-atp.md) (ATP) 幫得上忙。 您可以設定 [ATP 安全附件](atp-safe-attachments.md)原則，協助確保您組織不會因為不安全的電子郵件附件而遭到攻擊。
+安全附件是 [Office 365 的「高級威脅防護 ](office-365-atp.md) 」中的功能 (ATP) 使用虛擬環境來檢查輸入電子郵件中的附件，在 [Exchange ONLINE protection (EOP) ](anti-malware-protection.md)之後，但在傳送給收件者之前。 如需詳細資訊，請參閱 [Office 365 ATP 中的安全附件](atp-safe-attachments.md)。
 
-## <a name="what-to-do"></a>處理方式
+沒有內建或預設的安全附件原則。 若要取得安全附件掃描電子郵件附件，您需要建立一個或多個安全附件原則，如本文所述。
 
-1. 檢閱必要條件
+您可以使用 Exchange Online 中的信箱，在安全性 & 合規性中心或 PowerShell (Exchange Online 365 PowerShell 中設定安全附件原則;獨立 EOP PowerShell 適用于沒有 Exchange Online 信箱的組織，但使用 Office 365 ATP 附加元件訂閱) 。
 
-2. 設定 ATP 安全附件原則
+安全附件原則的基本元素如下：
 
-3. 了解 ATP 安全附件原則選項
+- **安全附件原則**：指定未知惡意程式碼偵測的動作，是否要將具有惡意軟體附件的郵件傳送至指定的電子郵件地址，以及是否要在無法完成安全附件掃描時傳遞郵件。
+- **安全附件規則**：指定原則套用至) 的優先順序和收件者篩選 (。
 
-## <a name="step-1-review-the-prerequisites"></a>步驟 1：檢閱必要條件
+當您在安全性 & 合規性中心管理安全附件原則時，這兩個元素之間的差異並不明顯：
 
-- 請確認您組織有 [Office 365 進階威脅防護](office-365-atp.md)。
+- 當您建立安全附件原則時，實際上是同時建立安全附件規則和相關聯的安全附件原則，同時為這兩者使用相同的名稱。
+- 當您修改安全附件原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改安全附件規則。 所有其他設定會修改關聯的安全附件原則。
+- 當您移除安全附件原則時，會移除安全附件規則和相關聯的安全附件原則。
 
-- 請確定您具有必要權限。 若要定義 (或編輯) ATP 原則，您必須指派 Exchange Online 組織管理角色， (全域管理員會指派給此角色，但預設) 或兩者皆為 Exchange Online 衛生管理及安全性系統管理員角色。 如需詳細資訊，請參閱下表：
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的 [使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全附件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) 一節。
 
-  ****
+> [!NOTE]
+> 在 [安全附件設定] 的 [全域設定] 區域中，設定不會相依于安全附件原則的功能。 如需相關指示，請參閱在[microsoft 365 E5 中](safe-docs.md)[開啟 SharePoint、OneDrive 和 Microsoft 小組](turn-on-atp-for-spo-odb-and-teams.md)和安全檔的 ATP。
 
-  |角色|指派位置/條件|
-  |---|---|
-  |全域管理員 |簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱 [關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) 以深入瞭解。 ) |
-  |安全性系統管理員 |Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-  |Exchange Online 組織管理，Exchange Online 的清理管理 |Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
-  |
+## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-  若要深入瞭解角色和許可權，請參閱 [安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **ATP 安全附件** ] 頁面，請使用 <https://protection.office.com/safeattachmentv2> 。
 
-- [了解 ATP 安全附件原則選項](#step-3-learn-about-atp-safe-attachments-policy-options) (在本文中)。 某些選項 (例如監視或取代選項) 可能會造成電子郵件延遲，因為要掃描附件。 若要避免郵件延遲，請考慮使用[動態傳遞和預覽](dynamic-delivery-and-previewing.md)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 最多可允許30分鐘，以將新的或更新的原則散佈至所有 Microsoft 365 資料中心。
+- 若要查看、建立、修改及刪除安全附件原則，您必須是下列其中一個角色群組的成員：
 
-## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>步驟 2：設定 (或編輯) ATP 安全附件原則
+  - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**。
 
-1. 移至 [https://protection.office.com](https://protection.office.com) 然後以您的公司或學校帳戶當入。
+- 如需安全附件原則的建議設定，請參閱 [安全附件設定](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)。
 
-2. 在安全性與 &amp; 合規性中心的左功能窗格中，選擇 [ **威脅管理**] 底下的 [ **原則** \> **安全附件**]。
+- 最多允許30分鐘，以套用新的或更新的原則。
 
-3. 如果您看到 [開啟適用於 SharePoint、OneDrive 和 Microsoft Teams 的 ATP]****，我們建議您選取此選項。 這將為您的 Microsoft 365 環境啟用 [SharePoint、OneDrive 和 Microsoft 小組的 Office 365 高級威脅防護](atp-for-spo-odb-and-teams.md) 。
+## <a name="use-the-security--compliance-center-to-create-safe-attachments-policies"></a>使用安全性 & 規範中心建立安全附件原則
 
-4. 選擇 [新增]**** \([新增] 按鈕類似加號 (**+**))，以開始建立您的原則。
+在安全性 & 合規性中心建立自訂安全附件原則，會同時使用相同的名稱建立安全附件規則和相關聯的安全附件原則。
 
-5. 指定原則的名稱、描述及設定。<br/><br/>**範例：** 若要設定名為「無延遲」的原則，以便立即傳送所有人的郵件，然後在其經過掃描之後重新附加附件，您可以指定下列設定：
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **ATP 安全附件**。
 
-   - 在 [名稱]**** 方塊中輸入「無延遲」。
+2. 在 [ **安全附件** ] 頁面上，按一下 [ **建立**]。
 
-   - 在 [描述]**** 方塊中輸入您的描述，例如 [立即傳送郵件並在掃描後重新附加附件]。
+3. [ **新增安全附件原則** ] 嚮導隨即開啟。 在 [ **命名您的原則** ] 頁面上，設定下列設定：
 
-   - 在 [回復] 區段中，選擇 [動態傳遞]**** 選項。 ([深入了解 ATP 安全附件的動態傳遞和預覽](dynamic-delivery-and-previewing.md)。)
+   - **名稱**：輸入原則的唯一描述性名稱。
 
-   - 在 [重新 **導向附件** ] 區段中，選取 [啟用重新導向] 選項，然後輸入您的全域系統管理員、安全性管理員或將調查惡意附件的安全性分析員的電子郵件地址。
+   - **說明**：輸入原則的選擇性說明。
 
-   - 在 [套用至]**** 區段中，選擇 [收件者網域]****，然後選取您的網域。 選擇 [新增]****，然後選擇 [確認]****。
+   完成後，按 [下一步]****。
 
-6. 選擇 [儲存]****。
+4. 在顯示的 [ **設定** ] 頁面上，設定下列設定：
 
-考慮為您的組織設定多個 ATP 安全附件原則。 這些原則會按照其在 **ATP 安全附件**頁面中的順序套用。 在定義或編輯原則之後，至少需 30 分鐘的時間，原則才能在整個 Microsoft 資料中心內生效。
+   - **安全附件未知的惡意程式碼回應**：選取下列其中一個值：
 
-## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>步驟 3：了解 ATP 安全附件原則選項
+     - **Off**：一般而言，我們不建議此值。
+     - **監視**
+     - **封鎖**：這是預設值，以及標準及嚴格的預設 [安全性原則](preset-security-policies.md)中的建議值。
+     - **Replace**
+     - **動態傳遞 (預覽功能) **
 
-當您設定 ATP 安全附件原則時，您可以從許多選項中選擇，包括監視、封鎖、取代和動態傳遞等等。 如果您想知道這些選項的功能，下表中有每個選項及其效用的摘要。
+     這些值會在 [安全附件原則設定](atp-safe-attachments.md#safe-attachments-policy-settings)中說明。
 
-****
+   - **將附件傳送至下列電子郵件地址**：針對動作值 **封鎖**、 **監視**或 **取代**，您可以選取 [ **啟用重新導向** ] 以傳送包含惡意軟體附件的郵件，以進行分析和調查的指定內部或外部電子郵件地址。
 
-|選項|Effect|使用時機：|
-|---|---|---|
-|**關閉**|不掃描附件的惡意程式碼  <br/> 不會延遲郵件傳遞|為選取的收件者關閉掃描。  <br/> 避免路由內部郵件的非必要延遲。  <br/> **大多數使用者不建議使用此選項。您應只使用此選項，關閉只從信任寄件者取得電子郵件之收件者的 ATP 安全附件掃描。**|
-|**監視**|傳送含有附件的郵件，然後追蹤偵測到的惡意程式碼會發生什麼情況|查看偵測到的惡意程式碼會在組織中哪個位置|
-|**封鎖**|防止偵測到惡意程式碼附件的郵件繼續進行  <br/> 將偵測到惡意程式碼的郵件傳送到 [Office 365 中的隔離區](manage-quarantined-messages-and-files.md)，安全性系統管理員或分析者可以在此檢視並釋放 (或刪除) 這些郵件  <br/> 自動封鎖未來的郵件和附件|避免組織遭受相同惡意程式碼附件的重複攻擊|
-|**取代**|移除偵測到的惡意程式碼附件  <br/> 通知收件者附件已移除  <br/> 將偵測到惡意程式碼的郵件傳送到 [Office 365 中的隔離區](manage-quarantined-messages-and-files.md)，安全性系統管理員或分析者可以在此檢視並釋放 (或刪除) 這些郵件|提高收件者看到附件因為偵測到惡意程式碼而遭移除的可能性|
-|**動態傳遞**|立即傳送郵件  <br/> 將附件取代為預留檔案，直到掃描完成，然後在未偵測到惡意程式碼的情況下重新附加附件  <br/> 掃描期間會保留大部分 PDF 和 Office 檔案的預覽功能  <br/> 將偵測到惡意程式碼的郵件傳送到隔離區，安全性系統管理員或分析者可以在此檢視並釋放 (或刪除) 這些郵件  <br/> [了解 ATP 安全附件的動態傳遞和預覽](dynamic-delivery-and-previewing.md) <br/> |避免郵件延遲，同時為收件者抵禦惡意檔案  <br/> 執行掃描時，讓收件者以安全模式預覽附件|
-|**啟用重新導向**|當選取 [監視]、[封鎖] 或 [取代] 選項時套用  <br/> 將附件傳送到安全性系統管理員或分析者可以查看的特定電子郵件地址|讓安全性系統管理員和分析者調查可疑附件|
-|**如果惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。**|將不安全附件所設定的動作套用至無法掃描的附件， (因超時或錯誤) |
-|
+     標準和嚴格原則設定的建議是啟用重新定向。 如需詳細資訊，請參閱 [安全附件設定](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)。
 
-## <a name="next-steps"></a>後續步驟
+   - **若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取專案**。安全附件所指定的動作會對郵件採取 **未知惡意程式碼回應** ，即使無法完成安全附件掃描也是一樣。 如果您選取 [ **已啟用重新導向**]，一定要選取此選項。 否則，郵件可能會遺失。
 
-當您的 ATP 安全附件原則就緒之後，您就可以藉由檢視報告，了解 ATP 如何為您的組織運作。 請參閱下列資源，以深入了解詳細資訊：
+   完成後，按 [下一步]****。
 
-- [檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md)
+5. 在出現的 [套用 **至** ] 頁面上，識別套用原則的內部收件者。
 
-- [使用安全性與合規性中心中的 Explorer](threat-explorer.md)
+   您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<member of group 1\>_)。
 
-隨時掌握最新的 ATP 功能。 瀏覽 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)，並了解[即將新增至 ATP 的新功能](office-365-atp.md#new-features-in-office-365-atp)。
+   按一下 [ **新增條件**]。 在出現的下拉式清單中，選取 [ **適用于**下列條件的條件：
+
+   - **收件者是**：指定您組織中的一或多個信箱、郵件使用者或郵件連絡人。
+   - **收件者以成員的身分存在於**：指定您組織中的一或多個群組。
+   - **收件者網域為**：指定組織中一或多個已設定公認網域中的收件者。
+
+   選取條件後，會出現對應的下拉式清單，其中有 **其中** 一個方塊。
+
+   - 在方塊中按一下，並在值清單中向內移動，以選取。
+   - 按一下方塊中的 [開始輸入]，以篩選清單並選取值。
+   - 若要新增其他值，請按一下方塊中的空白區域。
+   - 若要移除個別專案， **Remove**請按一下 ![ ](../../media/scc-remove-icon.png) 值上的 [移除移除圖示]。
+   - 若要移除整個條件，請**Remove**按一下 ![ ](../../media/scc-remove-icon.png) 條件上的 [移除移除圖示]。
+
+   若要新增其他條件，請按一下 [ **新增條件** ]，然後選取 [套用 **于 if**中的剩餘值]。
+
+   若要新增例外狀況，請按一下 [ **新增條件** ]，然後選取 [ **除外 if**] 底下的例外狀況。 設定和行為就像是條件。
+
+   完成後，按 [下一步]****。
+
+6. 在 [ **複查您的設定** ] 頁面上，複查您的設定。 您可以按一下每個設定的 [ **編輯** ] 進行修改。
+
+   完成後，請按一下 **[完成]**。
+
+## <a name="use-the-security--compliance-center-to-view-safe-attachments-policies"></a>使用安全性 & 規範中心來查看安全附件原則
+
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **ATP 安全附件**。
+
+2. 在 [ **安全附件** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
+
+   「即時」顯示原則詳細資料
+
+## <a name="use-the-security--compliance-center-to-modify-safe-attachments-policies"></a>使用安全性 & 規範中心來修改安全附件原則
+
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **ATP 安全附件**。
+
+2. 在 [ **安全附件** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
+
+3. 在 [原則詳細資料] 顯示的 [飛出] 中，按一下 [ **編輯原則**]。
+
+[飛出] 中的可用設定與 [ [使用安全性 & 規範中心] 建立安全附件原則](#use-the-security--compliance-center-to-create-safe-attachments-policies) 一節中所述的相同。
+
+若要啟用或停用原則或設定原則優先順序順序，請參閱下列各節。
+
+### <a name="enable-or-disable-safe-attachments-policies"></a>啟用或停用安全附件原則
+
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **ATP 安全附件**。
+
+2. 請注意 [ **狀態** ] 欄中的值：
+
+   - 將切換向左移動 ![關閉原則](../../media/scc-toggle-off.png) 停用原則。
+
+   - 向右移動切換 ![開啟原則](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 以啟用原則。
+
+### <a name="set-the-priority-of-safe-attachments-policies"></a>設定安全附件原則的優先順序
+
+根據預設，安全附件原則的優先順序會根據它們在 (較舊的原則中所建立的順序而降低優先順序) 。 較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。 不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。
+
+如需更多有關優先的排序及如何評估和應用多項原則，請參照 [電子郵件保護的順序和優先順序](how-policies-and-protections-are-combined.md)。
+
+安全附件原則會以處理的順序顯示， (第一個原則的 **Priority** 值為 0) 。
+
+**附注**：在 [安全性 & 規範中心] 中，您只能在建立安全附件原則之後變更其優先順序。 在 PowerShell 中，您可以在建立安全附件規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。
+
+若要變更原則的優先順序，請在清單中將原則上移或下移 (您無法在安全性與合規性中心直接修改 [優先順序]**** 數字)。
+
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **ATP 安全附件**。
+
+2. 在 [ **安全附件** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
+
+3. 在顯示的 [原則詳細資料] 中，按一下 [可用的優先順序] 按鈕。
+
+   - **優先順序**值為**0**的安全附件原則只有「**降低優先順序**」按鈕可用。
+
+   - 具有最低 **優先順序** 值的安全附件原則 (例如， **3**) 只有 [ **增加優先順序** ] 按鈕可用。
+
+   - 如果您有三個或更多安全附件原則，則最高和最低優先順序值之間的原則都有可用的 [ **增加優先順序** ] 和 [ **降低優先順序** ] 按鈕。
+
+4. 按一下 [ **增加優先順序** ] 或 [ **降低優先順序** ] 以變更 [ **優先順序** ] 值。
+
+5. 完成時，請按一下 [關閉]****。
+
+## <a name="use-the-security--compliance-center-to-remove-safe-attachments-policies"></a>使用安全性 & 規範中心移除安全附件原則
+
+1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **ATP 安全附件**。
+
+2. 在 [ **安全附件** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
+
+3. 在顯示的 [原則詳細資料] 中，按一下 [ **刪除原則**]，然後在出現的警告對話方塊中按一下 [ **是]** 。
+
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全附件原則
+
+如先前所述，安全附件原則是由安全附件原則和安全附件規則所組成。
+
+在 PowerShell 中，安全附件原則與安全附件規則之間的差異很明顯。 您可以使用** \* -SafeAttachmentPolicy** Cmdlet 來管理安全附件原則，也可以使用** \* -SafeAttachmentRule** Cmdlet 來管理安全附件規則。
+
+- 在 PowerShell 中，您先建立安全附件原則，然後建立可識別套用規則之原則的安全附件規則。
+- 在 PowerShell 中，您可以分別修改安全附件原則和安全附件規則中的設定。
+- 當您從 PowerShell 中移除安全附件原則時，不會自動移除對應的安全附件規則，反之亦然。
+
+### <a name="use-powershell-to-create-safe-attachments-policies"></a>使用 PowerShell 建立安全附件原則
+
+在 PowerShell 中建立安全附件原則的過程包括兩個步驟：
+
+1. 建立安全附件原則。
+2. 建立安全附件規則，以指定套用規則的安全附件原則。
+
+ **附註**：
+
+- 您可以建立新的安全附件規則，並將現有的、未關聯的安全附件原則指派給它。 安全附件規則無法與一個以上的安全附件原則相關聯。
+
+- 您可以在 PowerShell 中的新安全附件原則上設定下列設定，而這些原則在安全性 & 合規性中心內無法使用，直到您建立原則為止：
+  - _在_ `$false` **New-SafeAttachmentRule** Cmdlet) 上，建立新原則做為已停用 (。
+  - 在_Priority_ _\<Number\>_ **New-SafeAttachmentRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。
+
+- 在您將原則指派至安全附件規則之前，您在 PowerShell 中建立的新安全附件原則不會顯示在安全性 & 規範中心。
+
+#### <a name="step-1-use-powershell-to-create-a-safe-attachment-policy"></a>步驟1：使用 PowerShell 建立安全附件原則
+
+若要建立安全附件原則，請使用下列語法：
+
+```PowerShell
+New-SafeAttachmentPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Action <Allow | Block | Replace | DynamicDelivery>] [-Redirect <$true | $false>] [-RedirectAddress <SMTPEmailAddress>] [-ActionOnError <$true | $false>]
+```
+
+此範例會建立名為 Contoso 的安全附件原則，並提供下列值：
+
+- 封鎖透過安全檔所找到之惡意程式碼的郵件掃描 (我們不會使用 _Action_ 參數，而且預設值是 `Block`) 。
+- 已啟用重新導向，而且找到包含惡意程式碼的郵件會傳送至 sec-ops@contoso.com 進行分析和調查。
+- 如果安全附件掃描無法使用或遇到錯誤，請勿傳遞郵件 (不是使用 _ActionOnError_ 參數，預設值則是 `$true`) 。
+
+```PowerShell
+New-SafeAttachmentPolicy -Name "Contoso All" -Redirect $true -RedirectAddress sec-ops@contoso.com
+```
+
+如需詳細的語法及參數資訊，請參閱 [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy)。
+
+#### <a name="step-2-use-powershell-to-create-a-safe-attachment-rule"></a>步驟2：使用 PowerShell 建立安全附件規則
+
+若要建立安全附件規則，請使用下列語法：
+
+```PowerShell
+New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>]
+```
+
+此範例會建立名為 Contoso 的安全附件規則，且具有下列條件：
+
+- 此規則會與名為 Contoso All 的安全附件原則相關聯。
+- 此規則會套用至 contoso.com 網域中的所有收件者。
+- 因為我們沒有使用 _priority_ 參數，所以會使用預設的優先順序。
+-  (未使用 _enabled_ 參數時，也會啟用該規則，且預設值為 `$true`) 。
+
+```powershell
+New-SafeAttachmentRule -Name "Contoso All" -SafeAttachmentPolicy "Contoso All" -RecipientDomainIs contoso.com
+```
+
+如需詳細的語法及參數資訊，請參閱 [New-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentrule)。
+
+### <a name="use-powershell-to-view-safe-attachment-policies"></a>使用 PowerShell 來查看安全附件原則
+
+若要查看現有的安全附件原則，請使用下列語法：
+
+```PowerShell
+Get-SafeAttachmentPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+本範例會傳回所有安全附件原則的摘要清單。
+
+```PowerShell
+Get-SafeAttachmentPolicy
+```
+
+此範例會傳回名為 Contoso 主管的安全附件原則的詳細資訊。
+
+```PowerShell
+Get-SafeAttachmentPolicy -Identity "Contoso Executives" | Format-List
+```
+
+如需詳細的語法及參數資訊，請參閱 [Get-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentpolicy)。
+
+### <a name="use-powershell-to-view-safe-attachment-rules"></a>使用 PowerShell 來查看安全附件規則
+
+若要查看現有的安全附件規則，請使用下列語法：
+
+```PowerShell
+Get-SafeAttachmentRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled>] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+本範例會傳回所有安全附件規則的摘要清單。
+
+```PowerShell
+Get-SafeAttachmentRule
+```
+
+若要依啟用或停用篩選規則的清單，請執行下列命令：
+
+```PowerShell
+Get-SafeAttachmentRule -State Disabled
+```
+
+```PowerShell
+Get-SafeAttachmentRule -State Enabled
+```
+
+此範例會傳回名為 Contoso 主管的安全附件規則的詳細資訊。
+
+```PowerShell
+Get-SafeAttachmentRule -Identity "Contoso Executives" | Format-List
+```
+
+如需詳細的語法及參數資訊，請參閱 [Get-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/get-safeattachmentrule)。
+
+### <a name="use-powershell-to-modify-safe-attachment-policies"></a>使用 PowerShell 修改安全附件原則
+
+您無法在 PowerShell 中重新命名安全附件原則 (**Set-SafeAttachmentPolicy** Cmdlet 沒有 _Name_ 參數) 。 當您在安全性 & 規範中心重新命名安全附件原則時，您只是重新命名安全附件 _規則_。
+
+否則，當您建立安全附件原則時，就會使用相同的設定，如本文稍早 [使用 [步驟1：使用 PowerShell 來建立安全附件原則](#step-1-use-powershell-to-create-a-safe-attachment-policy) ] 區段所述。
+
+若要修改安全附件原則，請使用下列語法：
+
+```PowerShell
+Set-SafeAttachmentPolicy -Identity "<PolicyName>" <Settings>
+```
+
+如需詳細的語法及參數資訊，請參閱 [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentpolicy)。
+
+### <a name="use-powershell-to-modify-safe-attachment-rules"></a>使用 PowerShell 修改安全附件規則
+
+當您在 PowerShell 中修改安全附件規則時，唯一無法使用的設定是 _Enabled_ 參數，可讓您建立已停用的規則。 若要啟用或停用現有的安全附件規則，請參閱下一節。
+
+否則，當您建立一個規則時，當您在本文稍早 [使用 [步驟2：使用 PowerShell 建立安全附件規則](#step-2-use-powershell-to-create-a-safe-attachment-rule) ] 區段所述時，就可以使用相同的設定。
+
+若要修改安全附件規則，請使用下列語法：
+
+```PowerShell
+Set-SafeAttachmentRule -Identity "<RuleName>" <Settings>
+```
+
+如需詳細的語法及參數資訊，請參閱 [Set-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule)。
+
+### <a name="use-powershell-to-enable-or-disable-safe-attachment-rules"></a>使用 PowerShell 來啟用或停用安全附件規則
+
+啟用或停用 PowerShell 中的安全附件規則可啟用或停用安全附件規則和指派的安全附件原則)  (的整個安全附件原則。
+
+若要啟用或停用 PowerShell 中的安全附件規則，請使用下列語法：
+
+```PowerShell
+<Enable-SafeAttachmentRule | Disable-SafeAttachmentRule> -Identity "<RuleName>"
+```
+
+本範例會停用名為「行銷部門」的安全附件規則。
+
+```PowerShell
+Disable-SafeAttachmentRule -Identity "Marketing Department"
+```
+
+此範例會啟用相同規則。
+
+```PowerShell
+Enable-SafeAttachmentRule -Identity "Marketing Department"
+```
+
+如需詳細的語法及參數資訊，請參閱 [Enable-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/enable-safeattachmentrule) 和 [Disable-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/disable-safeattachmentrule)。
+
+### <a name="use-powershell-to-set-the-priority-of-safe-attachment-rules"></a>使用 PowerShell 設定安全附件規則的優先順序
+
+您可以對規則設定的最高優先順序值為 0。 您可以設定的最低值則取決於規則的數目。 例如，如果您有五個規則，則您可以使用 0 到 4 的優先順序值。 變更現有規則的優先順序會對其他規則造成階層式影響。 例如，如果您有五個自訂規則 (優先順序 0 到 4)，而您將規則的優先順序變更為 2，則優先順序為 2 的現有規則會變更為優先順序 3，優先順序 3 的規則會變更為優先順序 4。
+
+若要設定 PowerShell 中安全附件規則的優先順序，請使用下列語法：
+
+```PowerShell
+Set-SafeAttachmentRule -Identity "<RuleName>" -Priority <Number>
+```
+
+此範例會將規則 (名稱為 Marketing Department) 的優先順序設定為 2。 優先順序小於或等於 2 的所有現有規則會減 1 (它們的優先順序數字會加 1)。
+
+```PowerShell
+Set-SafeAttachmentRule -Identity "Marketing Department" -Priority 2
+```
+
+**附注**：若要在建立新規則時設定其優先順序，請改為在**New-SafeAttachmentRule** Cmdlet 上使用_priority_參數。
+
+如需詳細的語法及參數資訊，請參閱 [Set-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/set-safeattachmentrule)。
+
+### <a name="use-powershell-to-remove-safe-attachment-policies"></a>使用 PowerShell 移除安全附件原則
+
+當您使用 PowerShell 來移除安全附件原則時，並不會移除對應的安全附件規則。
+
+若要移除 PowerShell 中的安全附件原則，請使用下列語法：
+
+```PowerShell
+Remove-SafeAttachmentPolicy -Identity "<PolicyName>"
+```
+
+此範例會移除名為 Marketing 部門的安全附件原則。
+
+```PowerShell
+Remove-SafeAttachmentPolicy -Identity "Marketing Department"
+```
+
+如需詳細的語法及參數資訊，請參閱 [Remove-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safeattachmentpolicy)。
+
+### <a name="use-powershell-to-remove-safe-attachment-rules"></a>使用 PowerShell 移除安全附件規則
+
+當您使用 PowerShell 來移除安全附件規則時，並不會移除對應的安全附件原則。
+
+若要在 PowerShell 中移除安全附件規則，請使用下列語法：
+
+```PowerShell
+Remove-SafeAttachmentRule -Identity "<PolicyName>"
+```
+
+本範例會移除名為 Marketing 部門的安全附件規則。
+
+```PowerShell
+Remove-SafeAttachmentRule -Identity "Marketing Department"
+```
+
+如需詳細的語法及參數資訊，請參閱 [Remove-SafeAttachmentRule](https://docs.microsoft.com/powershell/module/exchange/remove-safeattachmentrule)。
+
+## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
+
+若要確認您是否已成功建立、修改或移除安全附件原則，請執行下列任一步驟：
+
+- 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **ATP 安全附件**。 請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。 若要查看更多詳細資料，請從清單中選取原則，然後在 [飛出] 中查看詳細資料。
+
+- 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中， \<Name\> 以原則或規則的名稱取代，執行下列命令，然後確認設定：
+
+  ```PowerShell
+  Get-SafeAttachmentPolicy -Identity "<Name>" | Format-List
+  ```
+
+  ```PowerShell
+  Get-SafeAttachmentRule -Identity "<Name>" | Format-List
+  ```
+
+若要驗證安全附件是否正在掃描郵件，請檢查可用的高級威脅防護報告。 如需詳細資訊，請參閱在[安全性 & 規範中心中](threat-explorer.md)[查看 Office 365 ATP 的報表](view-reports-for-atp.md)和使用 Explorer。

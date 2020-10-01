@@ -6,7 +6,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
-ms.date: 09/14/2020
+ms.date: 09/29/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -17,22 +17,22 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: cef17142d90a15f10e82fd51c4c22202bf7ecf00
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: b6e961dc8e7de6bfaf16508fa6c70f8a90fa4080
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131575"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327435"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
 組織目前的安全性周邊環境會延伸至您的網路以外，以包含從各種裝置的任何位置存取雲端架構應用程式的使用者。 您的安全性基礎結構需要判斷是否應授與指定的存取要求，以及在哪些條件下。 
 
-這項判斷應該是根據登入的使用者帳戶、正在使用的裝置、使用者正在使用的應用程式、建立存取要求的位置，以及要求的風險評估。 這項功能可協助確保只有核准的使用者和裝置可以存取您的重要資源。
+這項判斷應該是根據登入的使用者帳戶、正在使用的裝置、使用者正在使用的應用程式、建立存取要求的位置，以及要求的風險評估。 這項功能有助於確保，只有經核准的使用者與裝置才可存取重要的資源。
 
 本系列文章說明一組身分識別與裝置存取的必要條件設定，以及一組 Azure Active Directory (Azure AD) 條件式存取、Microsoft Intune 及其他原則，以保護對 Microsoft 365 for enterprise cloud app 和服務、其他 SaaS 服務，以及使用 Azure AD 應用程式 Proxy 發佈的內部部署應用程式的存取。
 
-身分識別與裝置存取設定和原則，可在三個層級中使用：基準保護、機密保護，以及針對具有高管制或保密資料之環境的保護。 這些階層及其對應的設定會在您的資料、身分識別及裝置中提供一致的保護層級。
+身分識別與裝置存取設定和原則，可在三個層級中使用：基準保護、機密保護，以及針對具有高管制或保密資料之環境的保護。 這些層級及其對應的設定，可針對所有資料、身分識別和裝置，提供一致的保護層級。
 
 這些功能及其建議：
 
@@ -115,7 +115,7 @@ Azure AD 提供完整的身分識別管理功能套件。 我們建議使用這�
 | [裝置註冊](/azure/active-directory/devices/overview) | 您可以在 Azure AD 中註冊裝置，以建立裝置的身分識別。 此身分識別是用來在使用者登入並套用需要加入網域或合規的電腦的條件式存取原則時，用來驗證裝置。 針對此指南，我們使用裝置註冊功能自動註冊加入網域的 Windows 電腦。 裝置註冊是使用 Intune 管理裝置的必要條件。 | Microsoft 365 E3 或 E5 |
 | [Azure AD Identity Protection](/azure/active-directory/identity-protection/overview) | 可讓您偵測影響組織之身分識別的潛在弱點，並設定自動修正原則為低、中、高的登入風險和使用者風險。 本指南取決於此風險評估，針對多重要素驗證套用條件式存取原則。 本指南也包含條件式存取原則，需要使用者在其帳戶中偵測到高風險的活動時變更其密碼。 | Microsoft 365 E5，使用 Identity & 威脅防護附加元件、EMS E5 或 Azure Premium P2 授權的 Microsoft 365 E3 |
 | [自助式密碼重設 (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks) | 可讓您的使用者安全地重設其密碼，而不需要協助桌面的干預，只要提供系統管理員可控制的多個驗證方法的驗證。 | Microsoft 365 E3 或 E5 |
-| [Azure AD 密碼保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | 偵測並封鎖已知弱密碼和其變種，以及組織特有的其他弱字詞。 預設全域禁止密碼清單會自動套用至 Azure AD 租使用者中的所有使用者。 您可以在 [自訂禁止的密碼] 清單中定義其他專案。 當使用者變更或重設其密碼時，會檢查這些禁止的密碼清單，以強制使用強式密碼。 |  Microsoft 365 E3 或 E5 |
+| [Azure AD 密碼保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | 偵測並封鎖已知弱密碼和其變種，以及組織特有的其他弱字詞。 預設全域禁用密碼清單會自動套用至 Azure AD 租用戶中的所有使用者。 您可以在自訂禁用密碼清單中定義其他條目。 使用者變更或重設密碼時，系統會檢查這些禁用密碼清單，以強制使用強式密碼。 |  Microsoft 365 E3 或 E5 |
 ||||
 
 ![身分識別與裝置存取的元件。](../media/microsoft-365-policies-configurations/identity-device-access-components.png)
@@ -163,6 +163,25 @@ Windows 10 搭配使用 Microsoft 365 應用程式的企業版是電腦的建議
 
 建議以 Intune 或加入網域的方式管理組織擁有的裝置，以套用其他的保護和控制。 根據資料敏感度，您的組織可以選擇不允許特定使用者人口或特定應用程式的 BYODs。
 
+## <a name="deployment-and-your-apps"></a>部署和您的應用程式
+
+在設定及推出 Azure AD 整合應用程式的身分識別與裝置存取設定之前，您必須： 
+
+- 決定您要保護組織中使用的應用程式。 
+- 分析此應用程式清單，以決定提供適當保護等級的原則集合。 
+
+  您不應為應用程式建立個別的原則集合，因為其管理可能會變得麻煩。 Microsoft 建議您將相同使用者的相同保護需求群組為您的應用程式。 
+
+  例如，您可以使用一組原則，其中包括所有使用者的基準保護的所有 Microsoft 365 應用程式，以及所有機密應用程式的第二組原則，例如人力資源或財務部門所使用的原則，並將它們套用到這些群組。 
+
+一旦您已決定要保護之應用程式的原則集，請逐步向您的使用者推廣原則，以解決問題的方式。  
+
+例如，設定將用於所有 Microsoft 365 應用程式的原則，僅限 exchange Online 與 Exchange 的其他變更。 請向您的使用者推出這些原則，並處理任何問題。 然後，新增小組的其他變更，並將其推廣給您的使用者。 然後，新增包含其他變更的 SharePoint。 繼續新增應用程式的其餘部分，直到您可以自信地設定這些基準原則，以包含所有的 Microsoft 365 應用程式。 
+
+同樣地，針對您的敏感應用程式，建立一組原則，並一次加入一個應用程式，直到所有的問題都包含在機密應用程式原則集中為止。 
+
+Microsoft 建議您不要建立適用于所有應用程式的原則集，因為這可能會造成某些未預期的設定。 例如，封鎖所有應用程式的原則可能會鎖定您的系統管理員無法從 Azure 入口網站，且無法為 Microsoft Graph 等重要端點設定排除。 
+
 ## <a name="steps-in-the-process-of-configuring-identity-and-device-access"></a>設定身分識別與裝置存取之程式中的步驟
 
 ![設定身分識別與裝置存取的步驟。](../media/microsoft-365-policies-configurations/identity-device-access-steps.png)
@@ -172,6 +191,6 @@ Windows 10 搭配使用 Microsoft 365 應用程式的企業版是電腦的建議
 3. 為來賓和外部使用者設定條件式存取原則。
 4. 針對 microsoft 團隊、Exchange Online 和 SharePoint，設定 Microsoft 365 雲端 app 的條件式存取原則。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [實施身分識別與裝置存取原則的必要條件工作](identity-access-prerequisites.md)

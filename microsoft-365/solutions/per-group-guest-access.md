@@ -14,16 +14,16 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 從特定群組封鎖來賓使用者
-ms.openlocfilehash: 923a9e5cd09d232f377f55fd6a9f499f8f536a84
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 2e9c9cae13932a33b8c486148f93901904e80006
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662535"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328014"
 ---
-# <a name="block-guest-users-from-a-specific-group"></a>從特定群組封鎖來賓使用者
+# <a name="block-guest-users-from-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>從特定 Microsoft 365 群組或 Microsoft 團隊小組封鎖來賓使用者
 
-如果您想要允許來賓存取大多數群組，但要讓某些地方禁止來賓存取，您可以封鎖個別群組的「來賓存取」。
+如果您想要允許來賓存取大多數群組和小組，但要讓某些地方禁止來賓存取，您可以封鎖個別群組和小組的「來賓存取」。  (封鎖來賓存取權，必須封鎖關聯的群組的 guest 存取權。 ) 
 
 如果您在組織中使用敏感度標籤，我們建議您在每個群組的基礎上使用敏感度標籤來控制訪客存取。 如需如何執行此動作的詳細資訊，請 [使用敏感度標籤來保護 Microsoft 團隊、microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。 這是建議方式。
 

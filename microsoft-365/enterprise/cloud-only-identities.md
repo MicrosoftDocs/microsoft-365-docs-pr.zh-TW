@@ -3,7 +3,7 @@ title: 僅限 Microsoft 365 雲端身分識別
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 說明當您的 Microsoft 365 訂閱使用僅限雲端身分識別時，如何建立使用者和群組。
-ms.openlocfilehash: 6ec727ea3648f1daa3af42763e5f497715b987a2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 111c42e644913a8f7f6e41d4e8bf65685263f757
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547755"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327924"
 ---
 # <a name="microsoft-365-cloud-only-identity"></a>僅限 Microsoft 365 雲端身分識別
 
@@ -58,17 +58,9 @@ ms.locfileid: "47547755"
 - 自動將軟體的使用者布建為服務 (SaaS) 的應用程式，並使用多重要素驗證 (MFA) 和其他條件式存取原則，來保護這些應用程式的存取權。
 - 為 SharePoint Online 小組網站提供許可權和存取層級。
 
-您可以使用下列方式建立新的 ***使用者*** ：
+## <a name="next-steps-for-cloud-only-identity"></a>僅限雲端身分識別的後續步驟
 
-- [Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/add-users/add-users)
-- [適用於 Microsoft 365 的 PowerShell](create-user-accounts-with-microsoft-365-powershell.md)
-
-您可以使用下列方式建立新的 ***群組*** ：
-
-- [Microsoft 365 系統管理中心](https://docs.microsoft.com/office365/admin/create-groups/create-groups)
-- [適用於 Microsoft 365 的 PowerShell](manage-microsoft-365-groups-with-powershell.md)
-
-
-## <a name="next-step-for-cloud-only-identity"></a>僅限雲端身分識別的下一個步驟
-
-[將授權指派給使用者帳戶](assign-licenses-to-user-accounts.md)
+- [管理使用者帳戶](manage-microsoft-365-accounts.md)
+- [將授權指派給使用者帳戶](assign-licenses-to-user-accounts.md)
+- [管理群組和群組成員資格](manage-microsoft-365-groups.md)
+- [管理使用者帳戶密碼](manage-microsoft-365-passwords.md)

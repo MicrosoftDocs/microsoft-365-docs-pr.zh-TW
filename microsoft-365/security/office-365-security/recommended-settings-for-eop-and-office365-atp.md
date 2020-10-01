@@ -16,17 +16,16 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Exchange Online Protection (EOP) 和高級威脅防護 (ATP) 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用高級威脅防護 (ATP) ，您也會得到哪些額外功能？
-ms.openlocfilehash: 78dc1673d20affdfab9228883dbce3b08e8efbb5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 012bccb265f6b587176eec8f8bed94ce4bf4f211
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202708"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328008"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建議設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 **Exchange Online Protection (EOP) ** 是 Microsoft 365 訂閱的安全性核心，可協助阻止惡意電子郵件到達您員工的收件匣。 不過，每天都會有新的更複雜的攻擊，但通常需要改進的保護。 **Office 365 高級威脅防護 (ATP) ** ATP Plan 1 或 ATP 方案2包含其他功能，可提供系統管理員更多層的安全性、控制和調查。
 
@@ -153,7 +152,7 @@ Office 365 ATP 包含安全附件和安全連結原則，可防止電子郵件�
 
 如果您已將 Office 365 ATP 訂閱新增至您的 EOP，請設定下列設定。
 
-### <a name="office-atp-anti-phishing-policy-settings"></a>Office ATP 反網路釣魚原則設定
+### <a name="atp-anti-phishing-policy-settings"></a>ATP 反網路釣魚原則設定
 
 EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 ATP 包含更多的功能和控制，可協助防範、偵測和修正攻擊。 若要建立及設定這些原則，請參閱 [在 Office 365 中設定 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
@@ -203,27 +202,31 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 |---|---|---|---|
 |**高級網路釣魚臨界值** <br/><br/> _PhishThresholdLevel_|**2-嚴格** <br/><br/> `2`|**3-更嚴格** <br/><br/> `3`||
 
-### <a name="atp-safe-links-policy-settings"></a>ATP 安全連結原則設定
+### <a name="safe-links-settings"></a>安全連結設定
 
-若要設定這些設定，請參閱 [設定 Office 365 ATP 安全連結原則](set-up-atp-safe-links-policies.md)。
+Office 365 中的安全連結包含全域設定，這些設定適用于所有包含在使用中安全連結原則中的使用者，以及每個安全連結原則特有的設定。 如需詳細資訊，請參閱 [Office 365 ATP 中的安全連結](atp-safe-links.md)。
 
-#### <a name="safe-links-policy-settings-in-the-default-policy-for-all-users"></a>所有使用者之預設原則中的安全連結原則設定
+#### <a name="global-settings-for-safe-links"></a>安全連結的通用設定
 
-**附注**：在 PowerShell 中，您會使用這些 [設定的 AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
+若要設定這些設定，請參閱 [設定 Office 365 ATP 中安全連結的通用設定](configure-global-settings-for-safe-links.md)。
+
+在 PowerShell 中，您可以使用這些 [設定的 AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
 
 ****
 
 |安全性功能名稱|標準版|嚴格|留言|
 |---|---|---|---|
-|**使用下列專案中的安全連結： Office 365 應用程式** <br/><br/> _EnableSafeLinksForO365Clients_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|使用 Office 365 desktop 和 mobile (iOS 和 Android) 用戶端中的 ATP 安全連結。|
-|**使用下列專案中的安全連結： Office Web Access 分享元件** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|使用 Office Web Apps 中的 ATP 安全連結。 請注意，此設定不是可設定的。|
-|**使用者按一下安全連結時請勿追蹤** <br/><br/> _TrackClicks_|關閉 <br/><br/> `$true`|關閉 <br/><br/> `$true`||
-|**不要讓使用者點擊至原始 URL 的安全連結** <br/><br/> _AllowClickThrough_|開啟 <br/><br/> `$false`|開啟 <br/><br/> `$false`||
+|**使用下列專案中的安全連結： Office 365 應用程式** <br/><br/> _EnableSafeLinksForO365Clients_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|在支援的 Office 365 desktop 和 mobile (iOS 和 Android) app 中使用 ATP 安全連結。 如需詳細資訊，請參閱 [Office 365 應用程式的安全連結設定](atp-safe-links.md#safe-links-settings-for-office-365-apps)。|
+|**使用者按一下安全連結時請勿追蹤** <br/><br/> _TrackClicks_|關閉 <br/><br/> `$true`|關閉 <br/><br/> `$true`|此設定與追蹤使用者在支援的 Office 365 應用程式中的按一下動作相關。|
+|**不要讓使用者點擊至原始 URL 的安全連結** <br/><br/> _AllowClickThrough_|開啟 <br/><br/> `$false`|開啟 <br/><br/> `$false`|此設定與按一下支援的 Office 365 應用程式中的透過。|
+|使用下列專案中的安全連結： Office Web Access 分享元件 <br/><br/> _EnableSafeLinksForWebAccessCompanion_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|使用 Office Web Apps 中的安全連結。 請注意，此設定不是可設定的。|
 |
 
-#### <a name="safe-links-policy-settings-in-custom-policies-for-specific-users"></a>特定使用者之自訂原則中的安全連結原則設定
+#### <a name="safe-links-policy-settings"></a>安全連結原則設定
 
-**附注**：在 PowerShell 中，您會使用 [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) 和 [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) Cmdlet 進行這些設定。
+若要設定這些設定，請參閱 [設定 Office 365 ATP 中的安全連結原則](set-up-atp-safe-links-policies.md)。
+
+在 PowerShell 中，您可以使用這些設定的 [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) 和 [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) Cmdlet。
 
 ****
 
@@ -238,13 +241,15 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 |**不要讓使用者點擊至原始 URL 的安全連結** <br/><br/> _DoNotAllowClickThrough_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
 |
 
-### <a name="atp-safe-attachments-policy-settings"></a>ATP 安全附件原則設定
+### <a name="safe-attachments-settings"></a>安全附件設定
 
-若要設定這些設定，請參閱 [設定 Office 365 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)。
+Office 365 中的安全附件包含全域設定，這些設定適用于所有包含在使用中安全附件原則中的使用者，以及每個安全連結原則特有的設定。 如需詳細資訊，請參閱 [Office 365 ATP 中的安全附件](atp-safe-attachments.md)。
 
-#### <a name="safe-attachments-policy-settings-in-the-default-policy-for-all-users"></a>所有使用者之預設原則中的安全附件原則設定
+#### <a name="global-settings-for-safe-attachments"></a>安全附件的通用設定
 
-**附注**：在 PowerShell 中，您會使用這些 [設定的 AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
+若要設定這些設定，請參閱在[microsoft 365 E5 中](safe-docs.md)[開啟 SharePoint、OneDrive 和 Microsoft 小組](turn-on-atp-for-spo-odb-and-teams.md)和安全檔的 ATP。
+
+在 PowerShell 中，您可以使用這些 [設定的 AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) Cmdlet。
 
 ****
 
@@ -252,12 +257,14 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但是 Office 365 A
 |---|---|---|---|
 |**開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP** <br/><br/> _EnableATPForSPOTeamsODB_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
 |**開啟 Office 用戶端的安全檔**<bt/><br/> _EnableSafeDocs_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||此設定僅適用于 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權。 如需詳細資訊，請參閱 [Office 365 中的安全檔 [高級威脅防護](safe-docs.md)]。|
-|**即使安全檔識別為惡意檔案，也允許人員按一下受保護的檢視**<bt/><br/> _AllowSafeDocsOpen_|關閉 <br/><br/> `$false`|關閉 <br/><br/> `$false`||
+|**即使安全檔識別為惡意檔案，也允許人員按一下受保護的檢視**<bt/><br/> _AllowSafeDocsOpen_|關閉 <br/><br/> `$false`|關閉 <br/><br/> `$false`|此設定與安全檔相關。|
 |
 
-#### <a name="safe-attachments-policy-settings-in-custom-policies-for-specific-users"></a>特定使用者之自訂原則中的安全附件原則設定
+#### <a name="safe-attachments-policy-settings"></a>安全附件原則設定
 
-**附注**：在 PowerShell 中，您會使用 [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) 和 [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) Cmdlet 進行這些設定。
+若要設定這些設定，請參閱 [設定 Office 365 ATP 中的安全附件原則](set-up-atp-safe-attachments-policies.md)。
+
+在 PowerShell 中，您可以使用這些設定的 [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) 和 [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) Cmdlet。
 
 ****
 

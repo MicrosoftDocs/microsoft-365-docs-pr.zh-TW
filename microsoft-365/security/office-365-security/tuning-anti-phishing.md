@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: 系統管理員可以瞭解如何在 Microsoft 365 中識別網頁仿冒郵件的原因，以及如何防止未來的更多網路釣魚郵件。
-ms.openlocfilehash: c62d09a1cf8b586b5c1d4393d7316d6d6d0cc96d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 813a9c263d9cc620606c7a5e272e47bdaf1ff7a7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201672"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328056"
 ---
 # <a name="tune-anti-phishing-protection"></a>調整防網路釣魚保護
 
@@ -32,11 +32,11 @@ ms.locfileid: "48201672"
 
 如果您的訂閱包含高級威脅防護 (ATP) ，您可以使用 [Office 365 威脅情報](office-365-ti.md) 來識別也收到網路釣魚郵件的其他使用者。 您可以使用其他選項封鎖網路釣魚郵件：
 
-- [ATP 安全連結](set-up-atp-safe-links-policies.md)
+- [Office 365 ATP 中的安全連結](set-up-atp-safe-links-policies.md)
 
-- [ATP 安全附件](set-up-atp-safe-attachments-policies.md)
+- [Office 365 ATP 中的安全附件](set-up-atp-safe-attachments-policies.md)
 
-- [Microsoft 365 中的 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。 請注意，您可以暫時將原則中的 **高級網路釣魚閥** 值從 **Standard** 增加為 **積極**、 **更積極**或 **最積極**的。
+- [Office 365 ATP 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。 請注意，您可以暫時將原則中的 **高級網路釣魚閥** 值從 **Standard** 增加為 **積極**、 **更積極**或 **最積極**的。
 
 確認已開啟這些 ATP 功能。
 

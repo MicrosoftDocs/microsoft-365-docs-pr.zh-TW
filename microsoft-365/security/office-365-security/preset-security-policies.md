@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 和 Office 365 高級威脅防護 (ATP) 中，套用標準和嚴格的原則設定
-ms.openlocfilehash: 35be2b1ebfcf7ef8b7aad5cc2d4b3dd7032806b2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 8431d36779069b0b289a2533fbd6b85abee24536
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202600"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326540"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>EOP 和 Office 365 ATP 中的預先設定安全性原則
 
@@ -75,9 +75,9 @@ ms.locfileid: "48202600"
     - [類比設定](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [高級網路釣魚臨界值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - 名為**Standard Standard Security policy** and Strict Standard **Security Policy**的[安全連結原則](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings-in-custom-policies-for-specific-users)。
+  - 名為**Standard Standard Security policy** and Strict Standard **Security Policy**的[安全連結原則](set-up-atp-safe-links-policies.md)。
 
-  - 名為**Standard Standard Security policy** and Strict Standard **Security Policy**的[安全附件原則](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-policy-settings-in-custom-policies-for-specific-users)。
+  - 名為**Standard Standard Security policy** and Strict Standard **Security Policy**的[安全附件原則](set-up-atp-safe-attachments-policies.md)。
 
 請注意，您可以將 EOP 防護套用至不同的使用者，而不是 ATP 防護。
 

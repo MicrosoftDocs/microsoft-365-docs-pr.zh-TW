@@ -3,7 +3,7 @@ title: 設定 Microsoft 365 的目錄同步處理
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: 瞭解如何在 Microsoft 365 和您的內部部署 Active Directory 之間設定目錄同步處理。
-ms.openlocfilehash: 3a846a6c558f221c1869dce6da27e3d34680f75d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 308774dcdbaffc1096ab6ad144484e6920accdfa
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688313"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327090"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>設定 Microsoft 365 的目錄同步處理
 
@@ -35,7 +35,7 @@ ms.locfileid: "46688313"
 
 Microsoft 365 使用 Azure Active Directory (Azure AD) 租使用者來儲存和管理身分驗證的身分識別，以及存取雲端架構資源的許可權。 
 
-如果您有內部部署 Active Directory 網域服務 (AD DS) ，您可以使用 Microsoft 365 訂閱的 Azure AD 租使用者來同步處理您的 AD DS 使用者帳戶、群組和連絡人。 這是 Microsoft 365 的混合式身分識別。 以下是其元件。
+如果您有內部部署 Active Directory 網域服務 (AD DS) 網域或樹系，您可以使用 Microsoft 365 訂閱的 Azure AD 租使用者來同步處理您的 AD DS 使用者帳戶、群組和連絡人。 這是 Microsoft 365 的混合式身分識別。 以下是其元件。
 
 ![Microsoft 365 的目錄同步處理元件](../media/about-microsoft-365-identity/hybrid-identity.png)
 
@@ -51,7 +51,7 @@ Azure AD Connect 會在內部部署伺服器上執行，並與 Azure AD 租使�
 
 - 同盟驗證
 
-  Azure AD 重新導向要求驗證的用戶端電腦，以與另一個身分識別提供者聯繫。
+  Azure AD 是指向另一個身分識別提供者要求驗證的用戶端電腦。
 
 如需詳細資訊，請參閱 [混合式識別碼](plan-for-directory-synchronization.md) 。
   

@@ -3,7 +3,7 @@ title: 混合式解決方案
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/20/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: e9b8e065-2750-4534-9d39-aafd51a2a4e2
 description: 提供在 Microsoft Azure 中部署 Office Server 工作負載時有用資訊的連結清單。
-ms.openlocfilehash: bb43b2cc72a8f314b9f3ded007f126f41c5ebffc
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ba294b437d815c81c7747f60b2a82ca0bef05e7a
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688822"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327912"
 ---
 # <a name="hybrid-solutions"></a>混合式解決方案
 
@@ -52,8 +52,6 @@ Azure 中的 Microsoft 365 身分識別基礎結構：
 
 [Microsoft 365 解決方案與架構中心](../solutions/solution-architecture-center.md)
   
-[Microsoft cloud for enterprise 架構設計圖例](../solutions/cloud-architecture-models.md)
-  
-[適用于企業測試實驗室指南 (Tlg) 的 Microsoft 365 ](m365-enterprise-test-lab-guides.md)
+[Microsoft Cloud for Enterprise Architects 圖例](../solutions/cloud-architecture-models.md)
   
 [適用於 SharePoint、Exchange、商務用 Skype 和 Lync 的架構模型](architectural-models-for-sharepoint-exchange-skype-for-business-and-lync.md)

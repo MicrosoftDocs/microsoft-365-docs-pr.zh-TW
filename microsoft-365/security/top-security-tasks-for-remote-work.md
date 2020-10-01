@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: 6643228a3f71ba3c0c993577ba60b8e365b3d3df
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: 754f3eac884128e0707a02c15d4d3766f5fa4ca5
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318225"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327792"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -100,14 +100,13 @@ Office 365 ATP：
 
 您的全域系統管理員可以設定下列保護：
 
-- [設定 ATP 安全連結](office-365-security/set-up-atp-safe-links-policies.md)
-- [設定 ATP 安全附件原則](office-365-security/set-up-atp-safe-attachments-policies.md)
-- [設定自訂「不要重寫」URL 清單](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [設定自訂封鎖 URL 清單](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
+- [設定安全連結原則](office-365-security/set-up-atp-safe-links-policies.md)
+- [設定安全連結的通用設定](office-365-security/configure-global-settings-for-safe-links.md)
+- [設定安全附件原則](office-365-security/set-up-atp-safe-attachments-policies.md)
 
 您必須與 Exchange Online 系統管理員和 SharePoint Online 系統管理員合作，才能設定下列工作負載的 ATP：
 
-- [開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
+- [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](office-365-security/atp-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-azure-advanced-threat-protection"></a>4：設定 Azure 高級威脅防護
 

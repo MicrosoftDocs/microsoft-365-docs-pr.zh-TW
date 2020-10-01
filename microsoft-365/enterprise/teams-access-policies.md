@@ -8,7 +8,7 @@ ms.topic: article
 f1.keywords:
 - NOCSH
 ms.author: heidip
-ms.date: 09/18/2020
+ms.date: 09/30/2020
 ms.reviewer: anmorgan
 ms.custom:
 - it-pro
@@ -16,12 +16,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 570ef098a3989bf42d641b78e325414350b8e5a5
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: b9a9044a063c01724710679682e1edbe458dec0f
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132109"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327129"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保護小組聊天、群組和檔案的原則建議
 
@@ -66,7 +66,6 @@ ms.locfileid: "48132109"
 |        |[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在雲應用程式的指派中包含小組和相依服務。|
 |        |[高風險使用者必須變更密碼](identity-access-policies.md#high-risk-users-must-change-password)|強制小組使用者在登入時，在其帳戶中偵測到高風險活動時變更其密碼。 請確定小組和相依服務均包含在應用程式清單中。|
 |        |[套用應用程式資料保護原則](identity-access-policies.md#apply-app-data-protection-policies)|請確定小組和相依服務均包含在應用程式清單中。 更新每個平臺 (iOS、Android、Windows) 的原則。|
-|        |[需要核准的應用程式和應用程式保護](identity-access-policies.md#require-approved-apps-and-app-protection)|在此原則中包括小組和相依服務。|
 |        |[定義裝置合規性原則](identity-access-policies.md#define-device-compliance-policies)|在此原則中包括小組和相依服務。|
 |        |[需要相容的電腦](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在此原則中包括小組和相依服務。|
 |**敏感度**|[當登入風險為*低*、*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|小組也會考慮訪客存取和外部存取規則，您將在本文稍後深入瞭解這些規則。 在此原則中包括小組和相依服務。|

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 在安全性與合規性中心尋找及使用 Office 365 的「高級威脅防護」報告 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90da02c8aa3d50f62bdf4be8c466962da828b23d
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 16fef101f722a23b3a64d91c85c2f946c67036f0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196582"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328026"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>檢視 Office 365 進階威脅防護的報告
 
@@ -36,7 +36,7 @@ Office 365 Advanced 威脅防護 (ATP) 組織 (例如，Microsoft 365 E5 訂閱�
 
 ## <a name="advanced-threat-protection-file-types-report"></a>進階威脅防護檔案類型報告
 
-「 **高級威脅防護檔案類型報告** 」報告會顯示由 [ATP 安全附件](atp-safe-attachments.md)偵測為惡意的檔案類型。
+「 **高級威脅防護檔案類型報告** 」報告會向您顯示以 [安全附件](atp-safe-attachments.md)偵測到的檔案類型。
 
  報表的匯總視圖允許90天的篩選，而詳細資料檢視只允許10天的篩選。
 
@@ -62,7 +62,7 @@ Office 365 Advanced 威脅防護 (ATP) 組織 (例如，Microsoft 365 E5 訂閱�
   - **惡意可執行附件**
   - **別人**
 
-  當您將滑鼠停留在特定日期 (資料點) 時，您可以看到 [ATP 安全附件](atp-safe-attachments.md) 和 [EOP 中的反惡意程式碼保護](anti-malware-protection.md)所偵測到的惡意檔案類型細目。
+  當您將滑鼠停留在特定日期 (資料點) 時，您可以看到 EOP 中 [安全附件](atp-safe-attachments.md) 和 [反惡意程式碼保護](anti-malware-protection.md)偵測到的惡意檔案類型細目。
 
   ![ATP 檔案類型報告中的檔查看](../../media/atp-file-types-report-file-view.png)
 
@@ -76,7 +76,7 @@ Office 365 Advanced 威脅防護 (ATP) 組織 (例如，Microsoft 365 E5 訂閱�
   - **封鎖存取**
   - **取代郵件**
   - **監控的郵件**
-  - 以**動態電子郵件傳遞取代**：如需詳細資訊，請參閱[使用 ATP 安全附件動態傳遞和預覽](dynamic-delivery-and-previewing.md)。
+  - 以**動態電子郵件傳遞取代**：如需詳細資訊，請參閱[在安全附件原則中傳遞](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。
 
   ![ATP 檔案類型報告中的郵件視圖](../../media/atp-file-types-report-message-view.png)
 
@@ -138,7 +138,7 @@ Office 365 Advanced 威脅防護 (ATP) 組織 (例如，Microsoft 365 E5 訂閱�
   - **封鎖存取**
   - **取代郵件**
   - **監控的郵件**
-  - 以**動態電子郵件傳遞取代**：如需詳細資訊，請參閱[使用 ATP 安全附件動態傳遞和預覽](dynamic-delivery-and-previewing.md)。
+  - 以**動態電子郵件傳遞取代**：如需詳細資訊，請參閱[在安全附件原則中傳遞](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies)。
 
   ![ATP 檔案類型報告中的郵件視圖](../../media/atp-file-types-report-message-view.png)
 
@@ -158,7 +158,7 @@ Office 365 Advanced 威脅防護 (ATP) 組織 (例如，Microsoft 365 E5 訂閱�
   - **惡意可執行附件**
   - **別人**
 
-  當您將滑鼠停留在特定日期 (資料點) 時，您可以看到 [ATP 安全附件](atp-safe-attachments.md) 和 [EOP 中的反惡意程式碼保護](anti-malware-protection.md)所偵測到的惡意檔案類型細目。
+  當您將滑鼠停留在特定日期 (資料點) 時，您可以看到 EOP 中 [安全附件](atp-safe-attachments.md) 和 [反惡意程式碼保護](anti-malware-protection.md)偵測到的惡意檔案類型細目。
 
   ![ATP 檔案類型報告中的檔查看](../../media/atp-file-types-report-file-view.png)
 
@@ -206,7 +206,7 @@ Office 365 Advanced 威脅防護 (ATP) 組織 (例如，Microsoft 365 E5 訂閱�
 
 ## <a name="url-threat-protection-report"></a>URL 威脅防護報告
 
-**Url 威脅防護報告**可提供偵測威脅的摘要和趨勢視圖，以及在 URL 按一下上進行的動作，做為[ATP 安全連結](atp-safe-links.md)的一部分。 若已套用安全連結原則的使用者沒有選取 [不 **追蹤使用者點擊** ] 選項，則此報告將不會有按一下其資料的使用者。
+**Url 威脅防護報告**可提供偵測到之威脅的摘要和趨勢視圖，以及在 URL 按一下上做為[安全連結](atp-safe-links.md)的一部分所採取的動作。 若已套用安全連結原則的使用者沒有選取 [不 **追蹤使用者點擊** ] 選項，則此報告將不會有按一下其資料的使用者。
 
 若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **URL 保護報告**]。 若要直接前往報表，請開啟 <https://protection.office.com/reportv2?id=URLProtectionActionReport> 。
 
@@ -234,7 +234,7 @@ Office 365 Advanced 威脅防護 (ATP) 組織 (例如，Microsoft 365 E5 訂閱�
 
   ![Url 威脅防護報告中的 URL 按一下保護動作視圖](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 
-- **依應用程式按一下 url**：會顯示支援 OFFICE 365 ATP 安全連結之應用程式的 url 按一下數目。
+- **依應用程式按一下 url**：會顯示支援安全連結之應用程式的 url 按一下數目：
 
   - **電子郵件用戶端**
   - **PowerPoint**
@@ -275,7 +275,7 @@ Office 365 Advanced 威脅防護 (ATP) 組織 (例如，Microsoft 365 E5 訂閱�
 |**Explorer** (atp 方案 2) 或 **即時** 偵測 (ATP plan 1) |[威脅總管 (及即時偵測)](threat-explorer.md)|
 |**電子郵件安全性報告**，例如主要寄件者和收件者報告、冒名郵件報告和垃圾郵件偵測報告。|[檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)|
 |**郵件流程報告**，例如轉寄報告、郵件流程狀態報表，以及主要寄件者和收件者報告。|[在安全性 & 規範中心內，查看郵件流程報告](view-mail-flow-reports.md)|
-|**ATP 安全連結的 URL 追蹤** (只 PowerShell) 。 此 Cmdlet 的輸出會顯示在過去7天內 ATP 安全連結動作的結果。|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**安全連結的 URL 追蹤** (僅 PowerShell) 。 此 Cmdlet 的輸出會顯示過去7天中安全連結動作的結果。|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
 |**EOP 和 ATP (的郵件流量結果** 只 PowerShell) 。 此 Cmdlet 的輸出包含網域、日期、事件種類、方向、動作和郵件數目的相關資訊。|[MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
 |**EOP 和 ATP 偵測的郵件詳細資料包告** (僅 PowerShell) 。 此 Cmdlet 的輸出包含有關電子郵件或檔案中惡意檔案或 URLs、網路釣魚企圖、模仿及其他潛在威脅的詳細資料。|[MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 |
@@ -306,7 +306,7 @@ Office 365 Advanced 威脅防護 (ATP) 組織 (例如，Microsoft 365 E5 訂閱�
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報告未顯示資料，該怎麼辦？
 
-如果您未看到 ATP 報告中的資料，請仔細檢查您的原則設定是否正確。 您的組織必須已定義 [Atp 安全連結原則](set-up-atp-safe-links-policies.md) 和 [atp 安全附件原則](set-up-atp-safe-attachments-policies.md) ，才能進行 atp 保護。 另請參閱 [Office 365 中的反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)。
+如果您未看到 ATP 報告中的資料，請仔細檢查您的原則設定是否正確。 您的組織必須定義 [安全連結原則](set-up-atp-safe-links-policies.md) 及 [安全附件原則](set-up-atp-safe-attachments-policies.md) ，才能進行 ATP 保護。 另請參閱 [反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md)。
 
 ## <a name="related-topics"></a>相關主題
 

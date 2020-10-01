@@ -15,12 +15,12 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: 6d6562f528b36acdfbc28da9647d3356a0f585af
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 3afc818f9461ad0cc5ca65ea86d5e90f61f64d9b
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132155"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327864"
 ---
 # <a name="policies-for-allowing-guest-and-external-b2b-access"></a>允許來賓和外部 B2B 存取的原則
 
@@ -60,21 +60,11 @@ Microsoft 小組定義下列專案：
 
 - **外部存取** 適用于沒有 B2B 帳戶的外部使用者。 外部存取可以包含邀請，並參與通話、聊天和會議，但不包括小組成員資格和對小組資源的存取。
 
-如需詳細資訊，請參閱對 [小組來賓和外部存取所進行的比較](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)。
+如需詳細資訊，請參閱「 [來賓」和「外部存取」小組之間的比較](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)。
 
 條件式存取原則只適用于小組中的來賓存取，因為有對應的 Azure AD B2B 帳戶。
 
 請參閱 [保護小組聊天、群組和檔案的原則建議](teams-access-policies.md) ，以取得安全小組身分識別與裝置存取原則的詳細資訊。
-
-<!--
-ount treats guest and external users that have an Azure AD B2B account differently than external access  .
-
-
-to a meeting, call, or chat with
-
-
-differentiates between guest users and external users within the app. Guest users have Azure AD B2B accounts and can be added to teams. External users can only participate in calls, chats, and meetings. 
---> 
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>需要對來賓和外部使用者永遠進行 MFA
 此原則會提示客人在您的租使用者中註冊 MFA，不論他們是否已在其主承租人中為 MFA 註冊。 當存取您租使用者中的資源時，來賓和外部使用者必須針對每個要求使用 MFA。 
@@ -87,7 +77,7 @@ differentiates between guest users and external users within the app. Guest user
 ### <a name="excluding-guest-and-external-users-from-device-management"></a>從裝置管理排除來賓和外部使用者 
 只有一個組織可以管理裝置。 如果您未從需要裝置規範的原則中排除來賓和外部使用者，這些原則將會封鎖這些使用者。 
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 ![步驟4： Microsoft 365 雲端應用程式的原則](../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 

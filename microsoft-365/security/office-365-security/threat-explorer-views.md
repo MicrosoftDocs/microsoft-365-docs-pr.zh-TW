@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何使用威脅瀏覽器和即時偵測報告，調查和回應安全規範中心中的威脅 &amp; 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5500a7bff0766159384604e9973b5ad81b3dbc6f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1310baec402d9053e93b7166ca38cfcab11d73b2
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200104"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326982"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測中的視圖
 
@@ -140,7 +140,7 @@ ms.locfileid: "48200104"
 
 ![瀏覽器篩選為只顯示 ATP 引爆結果](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-在此視圖中，我們現在查看 [Office 365 ATP 安全附件](atp-safe-attachments.md)所引爆之檔案的資料。 在圖表下方，我們可以看到具有 ATP 安全附件所偵測到之附件的特定電子郵件的詳細資料。
+在此視圖中，我們現在查看以 [安全附件](atp-safe-attachments.md)引爆之檔案的資料。 在圖表下方，我們可以看到具有安全附件所偵測到之附件的特定電子郵件的詳細資料。
 
 ![包含偵測到的附件之電子郵件的特定詳細資料](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

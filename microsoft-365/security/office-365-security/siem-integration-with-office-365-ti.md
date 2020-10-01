@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 將組織的 SIEM 伺服器與 office 365 的高級威脅防護和相關威脅事件，與 Office 365 活動管理 API 整合。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cfb76485fec8eca2f2b62da59fa2d18a56177bba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203637"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327162"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>SIEM 與高級威脅防護的整合
 
@@ -46,7 +46,6 @@ Office 365 活動管理 API 會從您組織的 Microsoft 365 和 Azure Active Di
 
 SIEM server 或其他類似系統會輪詢此 **審核。一般** 工作負載來存取偵測事件。 若要深入瞭解，請參閱 [Office 365 管理 APIs 快速入門](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis)。 
 
-
 ## <a name="enum-auditlogrecordtype---type-edmint32"></a>列舉： AuditLogRecordType-類型： Edm
 
 ### <a name="auditlogrecordtype"></a>AuditLogRecordType
@@ -56,7 +55,7 @@ SIEM server 或其他類似系統會輪詢此 **審核。一般** 工作負載�
 |值|成員名稱|描述|
 |---|---|---|
 |日|ThreatIntelligence|Exchange Online Protection 和 Office 365 ATP 中的網路釣魚和惡意程式碼事件。|
-|41|ThreatIntelligenceUrl|ATP 安全連結從 Office 365 ATP 的封鎖時間與封鎖覆寫事件。|
+|41|ThreatIntelligenceUrl|安全連結來自 Office 365 ATP 的封鎖時間與封鎖覆寫事件。|
 |47|ThreatIntelligenceAtpContent|來自 Office 365 ATP 的 SharePoint Online 中的檔案、商務 OneDrive 商務和 Microsoft 小組檔案的網路釣魚和惡意程式碼事件。|
 |64|AirInvestigation|自動調查和回應事件，例如從 Office 365 ATP 方案2調查詳細資料和相關的偽像。|
 |

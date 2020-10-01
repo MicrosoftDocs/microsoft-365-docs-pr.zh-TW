@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 audience: Admin
 ms.topic: conceptual
-ms.date: 06/09/2020
+ms.date: 09/30/2020
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d3577c90-dda5-45ca-afb0-370d2889b10f
 description: 說明與 Microsoft 365、Active Directory 網域服務清理和 Azure Active Directory Connect 工具的目錄同步處理。
-ms.openlocfilehash: 2d3161fb835073a22743ea4f3b00ac508479f0f2
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 02b594f9db02df7e855a20dfc65b21ab2dbe91c0
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688507"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327376"
 ---
 # <a name="hybrid-identity-and-directory-synchronization-for-microsoft-365"></a>Microsoft 365 的混合式身分識別及目錄同步處理
 
@@ -143,9 +143,5 @@ PTA 也適用于具有安全性需求的組織，以立即強制執行內部部�
 
 ## <a name="next-step"></a>下一步
 
-當您準備好部署混合式身分識別時，請參閱 [prepare to](prepare-for-directory-synchronization.md)布建使用者。
+當您準備好部署混合式身分識別時，請參閱 [prepare for 目錄同步](prepare-for-directory-synchronization.md)處理。
   
-## <a name="see-also"></a>另請參閱
-
-[Microsoft 365 企業版概觀](microsoft-365-overview.md)
-

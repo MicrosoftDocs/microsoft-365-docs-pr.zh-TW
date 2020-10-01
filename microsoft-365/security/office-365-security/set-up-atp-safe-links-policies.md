@@ -1,9 +1,9 @@
 ---
-title: 設定 Office 365 ATP 安全連結原則
+title: 設定 Office 365 ATP 中的安全連結原則
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -16,157 +16,460 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
-description: 設定安全連結原則來保護貴組織，以防範 Word、Excel、PowerPoint 和 Visio 檔案，以及電子郵件中的惡意連結。
-ms.openlocfilehash: 76d0aba026b96251a64163ef7d7f518fe0b1e1b1
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+description: 系統管理員可以瞭解如何在 Office 365 Advanced 威脅防護 (ATP) 中，查看、建立、修改及刪除安全連結原則及全域安全連結設定。
+ms.openlocfilehash: 58088955a6909238c1fe5202688e0b8d1ab8e6c6
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279581"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327222"
 ---
-# <a name="set-up-office-365-atp-safe-links-policies"></a>設定 Office 365 ATP 安全連結原則
+# <a name="set-up-safe-links-policies-in-office-365-atp"></a>設定 Office 365 ATP 中的安全連結原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是家用版使用者且正在尋找 Outlook 中安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。 如果您是尋找 Outlook 中 Safelinks 相關資訊的家用使用者，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-[Atp 安全連結](atp-safe-links.md) 是 [Office 365 的「高級威脅](office-365-atp.md))  (防護」中的一項功能，可協助您保護組織免受網路釣魚和其他攻擊中所使用的惡意連結。 如果您擁有 [安全性 & 合規性中心](permissions-in-the-security-and-compliance-center.md)的必要許可權，您可以設定 ATP 安全連結原則，以協助確保當使用者按一下網址 (URLs) 時，您的組織受到保護。 您可以將 ATP 安全連結原則設定為掃描電子郵件中的 URL 和 Office 文件中的 URL。 ATP 安全連結會掃描內送的電子郵件中是否有已知的惡意超連結和包含惡意程式碼的附件。 此功能會將掃描的 URLs 寫入 Microsoft 的標準 URL 格式首碼 <https://nam01.safelinks.protection.outlook.com> 。 在重新寫入連結後，會針對任何可能的惡意內容進行分析。 啟用 ATP 安全連結後，如果使用者按一下電子郵件中的連結，且該 URL 已被組織的自訂封鎖 URL 清單封鎖，或是該 URL 已確定為惡意的，就會開啟警告頁面。
+安全連結是 [Office 365 的「高級威脅防護 ](office-365-atp.md) 」中的功能 (ATP) ，可在郵件流程中提供輸入電子郵件的 URL 掃描，並在電子郵件和其他位置中，按一下驗證 URLs 和連結的時間。 如需詳細資訊，請參閱 [Office 365 ATP 中的安全連結](atp-safe-links.md)。
 
-當 ATP 安全連結重新寫入 URL 後，如果郵件是轉寄或回復的，該 URL 就會繼續重新寫入。 新增至正在回復或轉寄之郵件的其他連結將不會被重新寫入。
+沒有內建或預設的安全連結原則。 若要取得 URLs 的安全連結掃描，您必須建立一個或多個安全連結原則，如本文所述。
 
-[我們會持續將新功能新增至 ATP](office-365-atp.md#new-features-in-office-365-atp)。 新增新功能後，您可能需要調整現有的 ATP 安全連結原則。
+您可以使用 Exchange Online 中的信箱，設定安全性 & 合規性中心或 PowerShell (Exchange Online 365 PowerShell 中的安全連結原則;獨立 EOP PowerShell 適用于沒有 Exchange Online 信箱的組織，但使用 Office 365 ATP 附加元件訂閱) 。
 
-## <a name="what-to-do"></a>處理方式
+安全連結原則的基本元素如下：
 
-1. 檢閱必要條件。
+- **安全連結原則**：開啟安全連結保護，開啟即時 URL 掃描，指定在傳遞郵件之前是否等候即時掃描，請開啟 [內部郵件的掃描]，指定是否要在 URLs 追蹤使用者按一下，並指定是否允許使用者按一下原始 URL 的 trough。
+- **安全連結規則**：指定原則套用至) 的優先順序和收件者篩選 (。
 
-2. 檢閱和編輯每個人都適用的預設 ATP 安全連結原則。 例如，您可以[設定 ATP 安全連結的自訂封鎖 URL 清單](set-up-a-custom-blocked-urls-list-atp.md)。
+當您在安全性 & 合規性中心管理安全連結原則時，這兩個元素之間的差異並不明顯：
 
-3. 新增或編輯特定電子郵件收件者的原則，包括[針對 ATP 安全連結設定自訂「不要重寫」URL 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。
+- 當您建立安全連結原則時，實際上是建立安全連結規則和關聯的安全連結原則，同時為這兩者使用相同的名稱。
+- 當您修改安全連結原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改安全連結規則。 所有其他設定都會修改相關聯的安全連結原則。
+- 當您移除安全連結原則時，會移除安全連結規則和相關聯的安全連結原則。
 
-4. 了解 ATP 安全連結原則選項 (在本文中)，包括最近變更的設定。
-
-## <a name="step-1-review-the-prerequisites"></a>步驟 1：檢閱必要條件
-
-- 請確認您組織有 [Office 365 進階威脅防護](office-365-atp.md)。
-
-- 請確定您具有必要權限。 若要定義 (或編輯) ATP 原則，您必須獲派適當的角色。 下表中有一些範例描述：
-
-    |角色|指派位置/條件|
-    |---|---|
-    |全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱 [關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) 以深入瞭解。 ) |
-    |安全性系統管理員|Azure Active Directory 系統管理中心 (<https://aad.portal.azure.com>)|
-    |Exchange Online 組織管理|Exchange 系統管理中心 (<https://outlook.office365.com/ecp>) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
-
-    若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
-
-- 確定 Office 用戶端已設定為使用[新式驗證](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) (這會用於 Office 文件中的 ATP 安全連結保護)。
-
-- [了解 ATP 安全連結原則選項](#step-4-learn-about-atp-safe-links-policy-options) (在本文中)。
-
-- 最多可允許30分鐘，以將新的或更新的原則散佈至所有 Microsoft 365 資料中心。
-
-## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>步驟2：定義 (或檢閱) 每個人都適用的 ATP 安全連結原則
-
-當您擁有 [Office 365 進階威脅防護](office-365-atp.md)時，您會有貴組織中每個人都適用的預設 ATP 安全連結原則。 請務必檢閱，並視需要編輯預設原則。
-
-1. 移至 <https://protection.office.com> 然後以您的公司或學校帳戶當入。
-
-2. 在左側導覽中，選擇 [威脅管理]**** 下方的 [原則]** \> [安全連結]******。
-
-3. 在 **套用於整個組織的原則**區段中，選取 [預設] ****，然後選擇 [編輯] **** (編輯按鈕類似鉛筆)。
-
-   ![按一下 [編輯] 已編輯安全連結防護預設原則](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
-
-4. 在 [封鎖下列 URL]**** 區段中，指定您想要防止貴組織中的人員造訪的一或多個 URL。 (請參閱[使用 ATP 安全連結來設定自訂的封鎖 URL 清單](set-up-a-custom-blocked-urls-list-atp.md)。)
-
-5. 在 [套用到電子郵件以外內容的設定]**** 區段中，選取 (或清除) 您要使用的選項。 (建議您選取所有選項。)
-
-6. 選擇 [儲存]****。
-    
-## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients"></a>步驟3：新增 (或編輯適用于所有或特定電子郵件收件者的) ATP 安全連結原則
-
-在您已複查 (或編輯) 適用于每個人的預設 ATP 安全連結原則之後，下一步是定義適用于所有或特定電子郵件收件者的其他原則。 例如，您可以定義其他原則，或為所有員工建立更多細微限制，以指定預設原則的例外狀況。
-  
-1. 移至 <https://protection.office.com> 然後以您的公司或學校帳戶當入。 
-    
-2. 在左側導覽中，選擇 [威脅管理]**** 下方的 [原則]****。
-
-3. 選擇 [安全連結]****。
-
-4. 在 [適用於特定收件者的原則]**** 區段中，選擇 [新增]**** ([新增] 按鈕類似加號 (**+**))。
-
-   ![選擇 [新增] 以新增特定電子郵件收件者的安全連結原則](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
-
-5. 指定原則的名稱、描述及設定。
-
-   **範例：** 若要設定名為「禁止直接點選」的原則，該原則不允許貴組織中特定群組的人員在沒有 ATP 安全連結保護的情況下點選特定網站，您可以指定下列建議設定：
-
-   - 在 [名稱]**** 方塊中，鍵入「禁止直接點選」。
-
-   - 在 [描述]**** 方塊中，鍵入類似以下的描述：禁止特定群組中的人員在未經 ATP 安全連結驗證的情況下點選網站。
-
-   - 在 [選取動作]**** 區段中，選擇 [開啟]****。
-
-   - 如果您想要為可疑和指向檔案的 URL 啟用 URL 引爆功能 (建議使用)，請選取 [針對可疑的連結和指向檔案的連結套用即時 URL 掃描]****。 如果您希望只有在完全掃描 URL 之後才讓使用者接收郵件，則選取 [等到 URL 掃描完成再傳遞郵件]****。
-
-   - 如果您想要針對在組織內使用者間傳送的郵件啟用安全連結 (建議使用)，請選取 [將安全連結套用至組織內傳送的郵件]****。
-
-   - 如果您不希望個別使用者覆寫「進行中的掃描」** 或「已封鎖 URL」** 通知頁面，請選取 [不允許使用者點選原始 URL]****。
-
-   - (選用) 在 [不要重寫下列 URL]**** 區段中，指定一或多個被認為對貴組織很安全的 URL。 (請參閱[使用 ATP 安全連結來設定自訂「不要重寫」URL 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
-
-   - 在 [套用至]**** 區段中，選擇 [收件者是以下的成員]****，然後選擇您想要包含在原則中的群組。 選擇 [新增]****，然後選擇 [確認]****。
-
-6. 選擇 [儲存]****。
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的 [使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全連結原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) 一節。
 
 > [!NOTE]
-> 具有較高優先順序的 ATP 安全連結原則將優先執行。 如果使用者受制于兩個或多個原則，則只有較高優先順序的原則才能生效。 若要讓客戶原則優先順序，您必須提高原則的優先順序。
+> 您可以在安全連結原則 **以外** 的安全連結保護中，設定全域設定。 如需相關指示，請參閱 [設定 Office 365 ATP 中安全連結的通用設定](configure-global-settings-for-safe-links.md)。
 
-## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>步驟 4：了解 ATP 安全連結原則選項
+## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-當您設定或編輯 ATP 安全連結原則時，會看到幾個可用的選項。 如果您想知道這些選項的功能，下表會說明有每個選項及其效用。 請記住，要定義或編輯的主要 ATP 安全連結原則有兩種：
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **ATP 安全連結** ] 頁面，請使用 <https://protection.office.com/safelinksv2> 。
 
-- 每個人都適用的[預設原則](#default-policy-options)；以及
-- [特定收件者的其他原則](#policies-that-apply-to-specific-email-recipients)
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-### <a name="default-policy-options"></a>預設原則選項
+- 若要查看、建立、修改及刪除安全連結原則，您必須是下列其中一個角色群組的成員：
 
-預設原則選項適用於貴組織中的每個人。
+  - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**。
 
-****
+- 如需安全連結原則的建議設定，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)。
 
-|此選項|執行此動作|
-|---|---|
-|**封鎖下列 URL**|可讓貴組織擁有自動封鎖的自訂 URL 清單。 使用者按一下此清單中的 URL 後，就會前往說明 URL 為何遭到封鎖的[警告頁面](atp-safe-links-warning-pages.md)。 若要深入了解，請參閱[使用 Office 365 ATP 安全連結來設定自訂封鎖的 URL 清單](set-up-a-custom-blocked-urls-list-atp.md)。|
-|**適用于企業的 Microsoft 365 應用程式、Office for iOS 和 Android**| 選取此選項時，ATP 安全連結保護適用于 Word、Excel URLs 及 PowerPoint 檔案中的 Windows 或 Mac 作業系統、Outlook 中的電子郵件、iOS 或 Android 裝置上的 Office 檔、Windows 上的 Visio 2016 檔案，以及在 Office app 的 web 版本中 PowerPoint (開啟的檔案（前提是使用者已登入 Office 365）。|
-|**當使用者按一下 ATP 安全連結時不要追蹤**|選取此選項時，不會儲存 [Word]、[Excel]、[PowerPoint]、[Visio 檔] 及 [Outlook 電子郵件訊息] 中 URLs 的資料。|
-|**不要讓使用者點選原始 URL 的 ATP 安全連結**|若選取此選項，使用者就無法繼續將[警告頁面](atp-safe-links-warning-pages.md)傳送到被判定是惡意的 URL。|
-|
+- 最多允許30分鐘，以套用新的或更新的原則。
 
-### <a name="policies-that-apply-to-specific-email-recipients"></a>適用於特定電子郵件收件者的原則
+- [我們會持續將新功能新增至 ATP](office-365-atp.md#new-features-in-office-365-atp)。 新增新功能時，您可能需要調整現有的安全連結原則。
 
-****
+## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a>使用安全性 & 規範中心建立安全連結原則
 
-|此選項|執行此動作|
-|---|---|
-|**關閉**|不要掃描電子郵件中的 URL。  <br/> 可讓您定義例外狀況規則，例如以下規則：不要掃描特定收件者群組的電子郵件中的 URL。|
-|**開啟**|當使用者按一下電子郵件中的 URL 並啟用 Windows 上 Outlook (C2R) 中的 ATP 安全連結時，重寫 URL 以透過 ATP 安全連結防護路由傳送使用者。  <br/> 如果 URL 沒有令人信服的信譽，則在點選已封鎖或惡意的 URL 清單時檢查 URL，並以非同步方式在背景觸發 URL 引爆。|
-|**針對可疑的連結和指向檔案的連結套用即時 URL 掃描**|若選取此選項，則會掃描指向可下載內容的可疑 URL 和連結。|
-|**等待 URL 掃描完成再傳遞郵件**|若選取此選項，則會保留包含要掃描 URL 的郵件，直到 URL 完成掃描且確認是安全的，才會傳遞這些郵件。|
-|**將安全連結套用至組織內傳送的郵件** <br/> | 此選項若可使用並已選取，假設電子郵件帳戶託管於 Office 365，則 ATP 安全連結保護就會套用至在貴組織中的人員間傳送的電子郵件。|
-|**不要追蹤使用者點選**|若選取此選項，則不會儲存來自外部寄件者的電子郵件中 URL 的點選資料。 目前不支援追蹤組織內傳送的電子郵件中連結的 URL 點選。|
-|**不允許使用者點選原始 URL**|若選取此選項，使用者就無法繼續將[警告頁面](atp-safe-links-warning-pages.md)傳送到被判定是惡意的 URL。|
-|**不要重寫下列 URL**|將 URL 保留原樣。 保留不需要掃描貴組織中特定電子郵件收件者群組的自訂安全 URL 清單。 如需詳細資料 (包括支援萬用字元星號 (\*) 的近期變更)，請參閱[使用 ATP 安全連結來設定自訂「不要重寫」URL 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。|
-|
+在安全性 & 合規性中心建立自訂安全連結原則，會同時使用相同的名稱建立安全連結規則及相關聯的安全連結原則。
 
-## <a name="next-steps"></a>後續步驟
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
 
-在您的 ATP 安全連結原則就緒後，您就可以透過查看報告，查看 ATP 對您的組織的運作方式。 請參閱下列資源，以深入了解詳細資訊：
+2. 在 [ **安全連結** ] 頁面上，按一下 [ **建立**]。
 
-- [檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md)
+3. [ **新增安全連結原則** ] 嚮導隨即開啟。 在 [ **命名您的原則** ] 頁面上，設定下列設定：
 
-- [使用安全性與合規性中心中的 Explorer](threat-explorer.md)
+   - **名稱**：輸入原則的唯一描述性名稱。
 
-隨時掌握最新的 ATP 功能。 瀏覽 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)。
+   - **說明**：輸入原則的選擇性說明。
+
+   完成後，按 [下一步]****。
+
+4. 在顯示的 [ **設定** ] 頁面上，設定下列設定：
+
+   - **在郵件中選取未知可能惡意 URLs 的動作**：選取 [ **開啟**]。
+
+   - **在郵件中選取未知可能惡意 URLs 的動作**：選取 [ **開啟** ] 或 [保留 **預設值]** [選取]。
+
+   - **對指向檔案的可疑連結和連結套用即時 URL 掃描**：選取此設定可在電子郵件訊息中啟用連結的即時掃描。
+
+   - **等候 URL 掃描完成後，才能傳遞郵件**：選取此設定可等到即時 URL 掃描完成之後，才會傳遞郵件。
+
+   - 套用**安全連結至組織內傳送的電子郵件**：選取此設定可將安全連結原則套用至內部寄件者和內部收件者之間的郵件。
+
+   - **請勿追蹤使用者點擊：請**將此設定保留為未選取狀態，以啟用追蹤使用者按一下電子郵件中的 URLs。
+
+   - **不允許使用者依序按一下原始 url**：選取此設定可在 [警告頁面](atp-safe-links.md#warning-pages-from-safe-links)中，禁止使用者按一下原始 url。
+
+   - **請勿重新寫入下列 URLs**：允許存取以安全連結封鎖的指定 URLs。
+
+     在方塊中，輸入您想要的 URL 或值，然後按一下 ![新增按鈕圖示](../../media/ITPro-EAC-AddIcon.png).
+
+     若要移除現有的專案，請選取該專案，然後按一下 ![刪除按鈕圖示](../../media/ITPro-EAC-DeleteIcon.png).
+
+     如需輸入語法，請參閱「 [不要重新寫入下列 URLs 的輸入語法」清單](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。
+
+   如需這些設定的詳細資訊，請參閱 Microsoft 小組的電子郵件訊息和[安全連結設定](atp-safe-links.md#safe-links-settings-for-microsoft-teams)[的安全連結設定](atp-safe-links.md#safe-links-settings-for-email-messages)。
+
+   如需標準和嚴格原則設定的建議值，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)。
+
+   完成後，按 [下一步]****。
+
+5. 在出現的 [套用 **至** ] 頁面上，識別套用原則的內部收件者。
+
+   您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<member of group 1\>_)。
+
+   按一下 [ **新增條件**]。 在出現的下拉式清單中，選取 [ **適用于**下列條件的條件：
+
+   - **收件者是**：指定您組織中的一或多個信箱、郵件使用者或郵件連絡人。
+   - **收件者以成員的身分存在於**：指定您組織中的一或多個群組。
+   - **收件者網域為**：指定組織中一或多個已設定公認網域中的收件者。
+
+   選取條件後，會出現對應的下拉式清單，其中有 **其中** 一個方塊。
+
+   - 在方塊中按一下，並在值清單中向內移動，以選取。
+   - 按一下方塊中的 [開始輸入]，以篩選清單並選取值。
+   - 若要新增其他值，請按一下方塊中的空白區域。
+   - 若要移除個別專案， **Remove**請按一下 ![ ](../../media/scc-remove-icon.png) 值上的 [移除移除圖示]。
+   - 若要移除整個條件，請**Remove**按一下 ![ ](../../media/scc-remove-icon.png) 條件上的 [移除移除圖示]。
+
+   若要新增其他條件，請按一下 [ **新增條件** ]，然後選取 [套用 **于 if**中的剩餘值]。
+
+   若要新增例外狀況，請按一下 [ **新增條件** ]，然後選取 [ **除外 if**] 底下的例外狀況。 設定和行為就像是條件。
+
+   完成後，按 [下一步]****。
+
+6. 在 [ **複查您的設定** ] 頁面上，複查您的設定。 您可以按一下每個設定的 [ **編輯** ] 進行修改。
+
+   完成後，請按一下 **[完成]**。
+
+## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a>使用安全性 & 規範中心來查看安全連結原則
+
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
+
+2. 在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
+
+   「即時」顯示原則詳細資料
+
+## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a>使用安全性 & 規範中心來修改安全連結原則
+
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
+
+2. 在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
+
+3. 在 [原則詳細資料] 顯示的 [飛出] 中，按一下 [ **編輯原則**]。
+
+[飛出] 中的可用設定與 [ [使用安全性 & 規範中心] 建立安全連結原則](#use-the-security--compliance-center-to-create-safe-links-policies) 一節中所述。
+
+若要啟用或停用原則或設定原則優先順序順序，請參閱下列各節。
+
+### <a name="enable-or-disable-safe-links-policies"></a>啟用或停用安全連結原則
+
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
+
+2. 請注意 [ **狀態** ] 欄中的值：
+
+   - 將切換開關向左移動以停用原則： ![關閉原則](../../media/scc-toggle-off.png).
+
+   - 將切換開關向右移動以啟用原則： ![開啟原則](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+
+### <a name="set-the-priority-of-safe-links-policies"></a>設定安全連結原則的優先順序
+
+根據預設，安全連結原則的優先順序會根據在 (較舊的原則中所建立的順序，優先順序低於舊版的原則) 。 較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。 不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。
+
+如需更多有關優先的排序及如何評估和應用多項原則，請參照 [電子郵件保護的順序和優先順序](how-policies-and-protections-are-combined.md)。
+
+安全連結原則會以處理的順序顯示， (第一個原則的 **Priority** 值為 0) 。
+
+**附注**：在 [安全性 & 規範中心] 中，您只能在建立安全連結原則之後變更其優先順序。 在 PowerShell 中，您可以在建立安全連結規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。
+
+若要變更原則的優先順序，請在清單中將原則上移或下移 (您無法在安全性與合規性中心直接修改 [優先順序]**** 數字)。
+
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
+
+2. 在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
+
+3. 在顯示的 [原則詳細資料] 中，按一下 [可用優先順序] 按鈕：
+
+   - **優先順序**值為**0**的安全連結原則只有「**降低優先順序**」按鈕可用。
+
+   - 具有最低 **優先順序** 值的安全連結原則 (例如， **3**) 只有 [ **增加優先順序** ] 按鈕可用。
+
+   - 如果您有三個或更多的安全連結原則，則最高和最低優先順序值之間的原則都有可用的 [ **增加優先順序** ] 和 [ **降低優先順序** ] 按鈕。
+
+4. 按一下 [ **增加優先順序** ] 或 [ **降低優先順序** ] 以變更 [ **優先順序** ] 值。
+
+5. 完成時，請按一下 [關閉]****。
+
+## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a>使用安全性 & 規範中心移除安全連結原則
+
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。
+
+2. 在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。
+
+3. 在顯示的 [原則詳細資料] 中，按一下 [ **刪除原則**]，然後在出現的警告對話方塊中按一下 [ **是]** 。
+
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全連結原則
+
+如先前所述，安全連結原則包含安全連結原則和安全連結規則。
+
+在 PowerShell 中，安全連結原則與安全連結規則之間的差異很明顯。 您可以使用** \* -SafeLinksPolicy** Cmdlet 來管理安全連結原則，也可以使用** \* -SafeLinksRule** Cmdlet 來管理安全連結規則。
+
+- 在 PowerShell 中，您必須先建立安全連結原則，然後建立安全連結規則，識別套用規則的原則。
+- 在 PowerShell 中，您可以分別修改 [安全連結原則] 和 [安全連結] 規則中的設定。
+- 當您移除 PowerShell 的安全連結原則時，不會自動移除對應的安全連結規則，反之亦然。
+
+### <a name="use-powershell-to-create-safe-links-policies"></a>使用 PowerShell 建立安全連結原則
+
+在 PowerShell 中建立安全連結原則的過程包括兩個步驟：
+
+1. 建立安全連結原則。
+2. 建立安全連結規則，以指定套用規則的安全連結原則。
+
+ **附註**：
+
+- 您可以建立新的安全連結規則，並將現有的未關聯的安全連結原則指派給它。 安全連結規則無法與一個以上的安全連結原則相關聯。
+
+- 您可以在 [安全性 & 規範中心] PowerShell 中的新安全連結原則上設定下列設定，直到您建立原則為止：
+
+  - _在_ `$false` **New-SafeLinksRule** Cmdlet) 上，建立新原則做為已停用 (。
+  - 在_Priority_ _\<Number\>_ **New-SafeLinksRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。
+
+- 您在 PowerShell 中建立的新安全連結原則不會顯示在安全性 & 規範中心，除非您將原則指派至安全連結規則。
+
+#### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>步驟1：使用 PowerShell 建立安全連結原則
+
+若要建立安全連結原則，請使用下列語法：
+
+```PowerShell
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+```
+
+**附註**：
+
+- 如需 _DoNotRewriteUrls_ 參數所使用之專案語法的詳細資訊，請參閱 [[不要重新寫入下列 URLs] 清單中的輸入語法](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。
+
+- 如需使用**Set-SafeLinksPolicy** Cmdlet 修改現有的安全連結原則時可用於_DoNotRewriteUrls_參數的其他語法，請參閱本文稍後的[使用 PowerShell 修改安全連結原則](#use-powershell-to-modify-safe-links-policies)一節。
+
+此範例會建立名為 Contoso 的安全連結原則，並提供下列值：
+
+- 開啟電子郵件訊息中的 URL 掃描和重新寫入。
+- 開啟小組中的 URL 掃描 (點擊 [只供預覽]) 。
+- 開啟已按一下的即時掃描 URLs，包括指向檔案的按一下連結。
+- 等候 URL 掃描完成後，才能傳遞郵件。
+- 開啟內部郵件的 URL 掃描及重新寫入。
+- 追蹤與安全連結保護 (相關的使用者按一下。我們不會使用 _DoNotTrackUserClicks_ 參數，而預設值則是 $false，這表示會追蹤) 的使用者按一下。
+- 不允許使用者依序按一下原始 URL。
+
+```PowerShell
+New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
+```
+
+如需詳細的語法及參數資訊，請參閱 [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy)。
+
+#### <a name="step-2-use-powershell-to-create-a-safe-links-rule"></a>步驟2：使用 PowerShell 建立安全連結規則
+
+若要建立安全連結規則，請使用下列語法：
+
+```PowerShell
+New-SafeLinksRule -Name "<RuleName>" -SafeLinksPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>]
+```
+
+此範例會建立名為 Contoso 的安全連結規則，且具有下列條件：
+
+- 此規則會與名為 Contoso All 的安全連結原則相關聯。
+- 此規則會套用至 contoso.com 網域中的所有收件者。
+- 因為我們沒有使用 _priority_ 參數，所以會使用預設的優先順序。
+-  (未使用 _enabled_ 參數時，也會啟用該規則，且預設值為 `$true`) 。
+
+```powershell
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
+```
+
+如需詳細的語法及參數資訊，請參閱 [New-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/new-safelinksrule)。
+
+### <a name="use-powershell-to-view-safe-links-policies"></a>使用 PowerShell 來查看安全連結原則
+
+若要查看現有的安全連結原則，請使用下列語法：
+
+```PowerShell
+Get-SafeLinksPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+本範例會傳回所有安全連結原則的摘要清單。
+
+```PowerShell
+Get-SafeLinksPolicy | Format-Table Name
+```
+
+此範例會傳回名為 Contoso 主管的安全連結原則的詳細資訊。
+
+```PowerShell
+Get-SafeLinksPolicy -Identity "Contoso Executives"
+```
+
+如需詳細的語法及參數資訊，請參閱 [Get-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safelinkspolicy)。
+
+### <a name="use-powershell-to-view-safe-links-rules"></a>使用 PowerShell 來查看安全連結規則
+
+若要查看現有的安全連結規則，請使用下列語法：
+
+```PowerShell
+Get-SafeLinksRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+本範例會傳回所有安全連結規則的摘要清單。
+
+```PowerShell
+Get-SafeLinksRule | Format-Table Name,State
+```
+
+若要依啟用或停用篩選規則的清單，請執行下列命令：
+
+```PowerShell
+Get-SafeLinksRule -State Disabled
+```
+
+```PowerShell
+Get-SafeLinksRule -State Enabled
+```
+
+此範例會傳回名為 Contoso 主管的安全連結規則的詳細資訊。
+
+```PowerShell
+Get-SafeLinksRule -Identity "Contoso Executives"
+```
+
+如需詳細的語法及參數資訊，請參閱 [Get-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/get-safelinksrule)。
+
+### <a name="use-powershell-to-modify-safe-links-policies"></a>使用 PowerShell 修改安全連結原則
+
+您無法在 PowerShell 中重新命名安全連結原則 (**Set-SafeLinksPolicy** 指令程式沒有 _Name_ 參數) 。 當您在安全性 & 合規性中心重新命名安全連結原則時，您只會重新命名安全連結 _規則_。
+
+在 PowerShell 中修改安全連結原則的唯一進一步考慮，就是 (「[不要重新寫入下列 URLs」清單](atp-safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)) 的_DoNotRewriteUrls_參數可用語法：
+
+- 若要新增將取代任何現有專案的值，請使用下列語法： `"Entry1","Entry2,..."EntryN"` 。
+- 若要新增或移除值，而不影響其他現有的專案，請使用下列語法： `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`
+
+否則，當您建立安全連結原則時，可以使用相同的設定，如本文稍早的 [步驟1：使用 PowerShell 建立安全連結原則](#step-1-use-powershell-to-create-a-safe-links-policy) 一節所述。
+
+若要修改安全連結原則，請使用下列語法：
+
+```PowerShell
+Set-SafeLinksPolicy -Identity "<PolicyName>" <Settings>
+```
+
+如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy)。
+
+### <a name="use-powershell-to-modify-safe-links-rules"></a>使用 PowerShell 修改安全連結規則
+
+當您在 PowerShell 中修改安全連結規則時，唯一可用的設定是 _Enabled_ 參數，可讓您建立已停用的規則。 若要啟用或停用現有的安全連結規則，請參閱下一節。
+
+否則，當您建立一個規則時，當您在本文稍早 [使用 [步驟2：使用 PowerShell 建立安全連結規則](#step-2-use-powershell-to-create-a-safe-links-rule) ] 區段所述時，就可以使用相同的設定。
+
+若要修改安全連結規則，請使用下列語法：
+
+```PowerShell
+Set-SafeLinksRule -Identity "<RuleName>" <Settings>
+```
+
+如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule)。
+
+### <a name="use-powershell-to-enable-or-disable-safe-links-rules"></a>使用 PowerShell 來啟用或停用安全連結規則
+
+啟用或停用 PowerShell 中的安全連結規則可啟用或停用安全連結規則和指派的安全連結原則)  (的整體安全連結原則。
+
+若要啟用或停用 PowerShell 中的安全連結規則，請使用下列語法：
+
+```PowerShell
+<Enable-SafeLinksRule | Disable-SafeLinksRule> -Identity "<RuleName>"
+```
+
+本範例會停用名為「行銷部門」的安全連結規則。
+
+```PowerShell
+Disable-SafeLinksRule -Identity "Marketing Department"
+```
+
+此範例會啟用相同規則。
+
+```PowerShell
+Enable-SafeLinksRule -Identity "Marketing Department"
+```
+
+如需詳細的語法及參數資訊，請參閱 [Enable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/enable-safelinksrule) 和 [Disable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/disable-safelinksrule)。
+
+### <a name="use-powershell-to-set-the-priority-of-safe-links-rules"></a>使用 PowerShell 設定安全連結規則的優先順序
+
+您可以對規則設定的最高優先順序值為 0。 您可以設定的最低值則取決於規則的數目。 例如，如果您有五個規則，則您可以使用 0 到 4 的優先順序值。 變更現有規則的優先順序會對其他規則造成階層式影響。 例如，如果您有五個自訂規則 (優先順序 0 到 4)，而您將規則的優先順序變更為 2，則優先順序為 2 的現有規則會變更為優先順序 3，優先順序 3 的規則會變更為優先順序 4。
+
+若要設定 PowerShell 中安全連結規則的優先順序，請使用下列語法：
+
+```PowerShell
+Set-SafeLinksRule -Identity "<RuleName>" -Priority <Number>
+```
+
+此範例會將規則 (名稱為 Marketing Department) 的優先順序設定為 2。 優先順序小於或等於 2 的所有現有規則會減 1 (它們的優先順序數字會加 1)。
+
+```PowerShell
+Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
+```
+
+**附注**：若要在建立新規則時設定其優先順序，請改為在**New-SafeLinksRule** Cmdlet 上使用_priority_參數。
+
+如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule)。
+
+### <a name="use-powershell-to-remove-safe-links-policies"></a>使用 PowerShell 移除安全連結原則
+
+當您使用 PowerShell 來移除安全連結原則時，並不會移除對應的安全連結規則。
+
+若要移除 PowerShell 中的安全連結原則，請使用下列語法：
+
+```PowerShell
+Remove-SafeLinksPolicy -Identity "<PolicyName>"
+```
+
+此範例會移除名為「行銷部門」的安全連結原則。
+
+```PowerShell
+Remove-SafeLinksPolicy -Identity "Marketing Department"
+```
+
+如需詳細的語法及參數資訊，請參閱 [Remove-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safelinkspolicy)。
+
+### <a name="use-powershell-to-remove-safe-links-rules"></a>使用 PowerShell 移除安全連結規則
+
+當您使用 PowerShell 來移除安全連結規則時，並不會移除對應的安全連結原則。
+
+若要移除 PowerShell 中的安全連結規則，請使用下列語法：
+
+```PowerShell
+Remove-SafeLinksRule -Identity "<PolicyName>"
+```
+
+此範例會移除名為「行銷部門」的安全連結規則。
+
+```PowerShell
+Remove-SafeLinksRule -Identity "Marketing Department"
+```
+
+如需詳細的語法及參數資訊，請參閱 [Remove-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/remove-safelinksrule)。
+
+若要確認安全連結正在掃描郵件，請檢查可用的高級威脅防護報告。 如需詳細資訊，請參閱在[安全性 & 規範中心中](threat-explorer.md)[查看 Office 365 ATP 的報表](view-reports-for-atp.md)和使用 Explorer。
+
+## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
+
+若要確認您是否已成功建立、修改或移除安全連結原則，請執行下列任一步驟：
+
+- 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。 請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。 若要查看更多詳細資料，請從清單中選取原則，然後在 [飛出] 中查看詳細資料。
+
+- 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中， \<Name\> 以原則或規則的名稱取代，執行下列命令，然後確認設定：
+
+  ```PowerShell
+  Get-SafeLinksPolicy -Identity "<Name>"
+  ```
+
+  ```PowerShell
+  Get-SafeLinksRule -Identity "<Name>"
+  ```

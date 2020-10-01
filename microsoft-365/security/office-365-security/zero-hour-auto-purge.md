@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解零小時自動清除 (ZAP) 是否可以 retroactively 將 Exchange Online 信箱中已傳遞的郵件移至 [垃圾郵件] 資料夾，或 retroactively 發現為垃圾郵件或網路釣魚的隔離區。
-ms.openlocfilehash: 66df614700dc5f9b9938200d384cc293a51e2f3c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 31e546ddf6e93ed0a265aef3737182cf30ae5a95
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202636"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327972"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>在 Exchange Online 中，以零小時自動清除 (ZAP) 
 
@@ -83,7 +83,7 @@ ZAP 無法在獨立 Exchange Online Protection (EOP 中運作) 保護內部部�
 
 ### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Office 365 Advanced 威脅防護 (的 ZAP 考慮（Office 365 ATP) 
 
-ZAP 不會隔離 [動態傳遞](dynamic-delivery-and-previewing.md) 掃描之程式中的任何郵件，或者惡意程式碼篩選已使用 **惡意軟體警示 ** 取代附件 Text.txt檔案。 如果針對這些類型的郵件接收網路釣魚或垃圾郵件信號，而且反垃圾郵件原則中的篩選判定會設定為對郵件採取某些動作 (移至 [垃圾郵件]、[重新導向]、[刪除] 隔離) 然後，ZAP 會預設為「移至垃圾郵件」動作。
+在安全附件掃描中，ZAP 不會隔離 [動態傳遞](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) 的處理常式中的任何郵件，或者 EOP 惡意程式碼篩選已以 **惡意程式碼 Text.txt警示 ** 取代附件的郵件。 如果針對這些類型的郵件接收網路釣魚或垃圾郵件信號，而且反垃圾郵件原則中的篩選判定會設定為對郵件採取某些動作 (移至 [垃圾郵件]、[重新導向]、[刪除] 或 [隔離]) 然後，ZAP 會預設為「移至垃圾郵件」動作。
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>如何查看 ZAP 是否已移動您的郵件
 

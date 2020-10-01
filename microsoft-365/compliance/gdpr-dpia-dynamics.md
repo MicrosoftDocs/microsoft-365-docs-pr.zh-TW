@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft GDPR
-ms.openlocfilehash: 3352483f87c12996f00e8a75dfcba19581fdaf0c
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 29da829ddf20a24776ef40b7aefb02cdf1546669
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417907"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305053"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-dynamics-365"></a>資料保護影響評估：資料控制者使用 Dynamics 365 的指引
 
@@ -30,7 +30,7 @@ ms.locfileid: "47417907"
 
 本文件旨在提供資料控制者有關 Dynamics 365 的資訊，協助他們判斷是否需要 DPIA，以及若需要，應包含哪些詳細資料。
 
-## <a name="part-1--determining-whether-a-dpia-is-needed"></a>第 1 部分 — 判斷是否需要 DPIA
+## <a name="part-1-determining-whether-a-dpia-is-needed"></a>第 1 部分：判斷是否需要 DPIA
 
 GDPR 第 35 條規定，「如果某種處理，特別是使用新技術，並考慮到處理的性質、範圍、背景和目的，可能會對自然人的權利和自由造成高度風險」，資料控制者需要建立資料保護影響評估。它進一步闡述會發生這類高風險的特定因素，如下表所述。判斷是否需要 DPIA 時，資料控制者應根據控制者的特定 Dynamics 365 實作和使用，考慮這些因素，以及任何其他相關因素。
 
@@ -44,7 +44,7 @@ GDPR 第 35 條規定，「如果某種處理，特別是使用新技術，並�
 >[!Note]
 ><sup>1</sup> 關於「大規模」處理的準則，GDPR 第 91 條闡明：「如果處理是有關於個別醫生、其他醫療保健專業人員或律師之病患或客戶的個人資料，則處理個人資料不應視為大規模。 在此類情況下，資料保護影響評估不應強制」。
 
-## <a name="part-2--contents-of-a-dpia"></a>第 2 部分：DPIA 的內容
+## <a name="part-2-contents-of-a-dpia"></a>第 2 部分：DPIA 的內容
 
 第 35(7) 條要求資料保護影響評估需指出處理的目的，以及構想處理程序之有系統的描述。 完整的 DPIA 系統描述可能包含像是處理的資料類型、資料會保留多久、資料位置和傳輸目的地，以及哪些第三方可以存取資料。 此外，DPIA 也必須包含：
 

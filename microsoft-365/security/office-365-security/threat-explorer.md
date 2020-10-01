@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6df9ce21f29cdeaf4943ba930668420a24344ca
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 32ff9f2c8d009b4c9b05c12ba4e785e59cb182e7
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201862"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48328080"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -86,18 +86,18 @@ ms.locfileid: "48201862"
 ### <a name="top-targeted-users"></a>主要目標使用者
 
 如今，我們會在惡意程式碼系列 (內的主要惡意程式碼) 區段中，公開主要目標使用者的清單。 我們也會在網路釣魚和所有電子郵件視圖中擴充此視圖，您可以在其中看到前五個目標使用者，以及每位使用者對對應 (view 的嘗試次數。例如，針對 [網路釣魚視圖]，您將能夠看到) 的網路釣魚嘗試次數。
-您也可以將目標使用者的清單匯出為3000的限制，以及每個電子郵件 view 的離線分析嘗試次數。 除此之外，選取 [否]。 嘗試 (例如，下列 13) 會在威脅瀏覽器中開啟篩選的視圖，這樣您就可以深入瞭解該使用者的電子郵件和威脅。 
+您也可以將目標使用者的清單匯出為3000的限制，以及每個電子郵件 view 的離線分析嘗試次數。 除此之外，選取 [否]。 嘗試 (例如，下列 13) 會在威脅瀏覽器中開啟篩選的視圖，這樣您就可以深入瞭解該使用者的電子郵件和威脅。
 
 ![主要目標使用者](../../media/Top_Targeted_Users.png)
 
 
 ### <a name="exchange-transport-rules"></a>Exchange 傳輸規則
 在資料豐富中，您也應該可以查看已套用至郵件的所有不同傳輸規則。 此資訊將會出現在 [電子郵件格線] 視圖中 (以進行查看，請選取 [格線] 中的 [欄選項]，然後在 [格線] 的 [欄] 選項中新增 Exchange Transport Rule) 以及電子郵件中的詳細資訊。
-您可以同時看到 GUID，以及已套用至郵件的傳輸規則名稱。 此外，您也可以使用傳輸規則的名稱來搜尋郵件。 這會是「包含」搜尋，這表示您也可以使用部分搜尋進行搜尋。 
+您可以同時看到 GUID，以及已套用至郵件的傳輸規則名稱。 此外，您也可以使用傳輸規則的名稱來搜尋郵件。 這會是「包含」搜尋，這表示您也可以使用部分搜尋進行搜尋。
 
-#### <a name="important-note"></a>重要注意事項： 
-ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具有下列其中一個角色/許可權，才能查看 ETR 名稱和搜尋。  如果您未指派任何下列角色，您將無法看到傳輸規則的名稱，並使用 ETR 名稱來搜尋郵件。。 不過，您將可以在電子郵件詳細資料中看到 ETR 標籤及 GUID 資訊。 在電子郵件網格、電子郵件 flyouts、篩選和匯出等中查看記錄的其他體驗不會受到影響。 
- 
+#### <a name="important-note"></a>重要注意事項：
+ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具有下列其中一個角色/許可權，才能查看 ETR 名稱和搜尋。  如果您未指派任何下列角色，您將無法看到傳輸規則的名稱，並使用 ETR 名稱來搜尋郵件。。 不過，您將可以在電子郵件詳細資料中看到 ETR 標籤及 GUID 資訊。 在電子郵件網格、電子郵件 flyouts、篩選和匯出等中查看記錄的其他體驗不會受到影響。
+
 - 僅限 EXO-資料遺失防護：全部
 - 僅限 EXO-O365SupportViewConfig： All
 - AAD 或 EXO-安全性系統管理員： All
@@ -105,13 +105,15 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 - 僅限 EXO-Transport Rules： All
 - 僅限 EXO-View-Only 設定： All
 
-在電子郵件格線、詳細資料浮出和匯出的 CSV 中，ETRs 會以如下所示的名稱/GUID 呈現。 
+在電子郵件格線、詳細資料浮出和匯出的 CSV 中，ETRs 會以如下所示的名稱/GUID 呈現。
 
 ![Exchange 傳輸規則](../../media/ETR_Details.png)
 
-### <a name="inbound-connectors"></a>輸入連接器 
+### <a name="inbound-connectors"></a>輸入連接器
 
-連接器是一組指示，可自訂您的電子郵件流向和來源於您的 Microsoft 365 或 Office 365 組織的方式，以及套用任何安全性限制或控制措施的功能。 在威脅瀏覽器內，您現在可以查看與電子郵件相關的連接器，也能使用連接器名稱搜尋電子郵件。 連接器的搜尋是「包含」，其性質表示部分關鍵字搜尋應該也會運作。 在主格線視圖中，[詳細資料] 飛入和匯出的 CSV，連接器會以如下所示的名稱/GUID 格式顯示： 
+連接器是一組指示，可自訂您的電子郵件流向和來源於您的 Microsoft 365 或 Office 365 組織的方式，以及套用任何安全性限制或控制措施的功能。 在威脅瀏覽器內，您現在可以查看與電子郵件相關的連接器，也能使用連接器名稱搜尋電子郵件。
+連接器的搜尋是「包含」，其性質表示部分關鍵字搜尋應該也會運作。
+在主格線視圖中，[詳細資料] 飛入和匯出的 CSV，連接器會以如下所示的名稱/GUID 格式顯示：
 
 ![連接器詳細資料](../../media/Connector_Details.png)
 
@@ -185,7 +187,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 > [!TIP]
 > 當您透過網路郵件識別碼在總管或關聯的協力廠商工具中進行搜尋時，網路郵件識別碼會將點擊返回對應到特定的郵件。 搜尋網路郵件識別碼時，系統會提供系統管理員與點擊結果相關聯的特定電子郵件。 匯出時，網路郵件識別碼的關聯識別可提供更快且更強大的分析。
 
-![tp_ExportClickResultAndNetworkID.png](../../media/tp_ExportClickResultAndNetworkID.png)
+![瀏覽器中的按一下 tab 鍵](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看透過技術在電子郵件中偵測到的惡意程式碼
 
@@ -211,7 +213,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 ## <a name="view-data-about-phishing-urls-and-click-verdict"></a>檢視網路釣魚 URL 並按一下結果
 
-假設您想要查看透過電子郵件中的 URL 進行的網路釣魚攻擊，包括允許、封鎖及覆寫的 URL 清單。 若要識別已按過的 URL，則必須設定 [ATP 安全連結](atp-safe-links.md)。 請確認您已針對點擊時保護和 ATP 安全連結的按一下結果記錄設定 [ATP 安全連結原則](set-up-atp-safe-links-policies.md)。
+假設您想要查看透過電子郵件中的 URL 進行的網路釣魚攻擊，包括允許、封鎖及覆寫的 URL 清單。 識別所按一下的 URLs 需要設定 [安全連結](atp-safe-links.md) 。 確定您已設定 [安全連結原則](set-up-atp-safe-links-policies.md) ，以供按一下時的保護和記錄按一下 [安全連結] 的 [verdicts]。
 
 若要檢閱郵件中的網路釣魚 URL 和網路釣魚郵件中的 URL 點擊，請使用總管 (或即時偵測) 的 [[電子郵件] > [網路釣魚]](threat-explorer-views.md#email--phish) 檢視。
 
@@ -242,8 +244,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
    > [!NOTE]
    > 在 [URL 飛入] 對話方塊中，會移除電子郵件上的篩選，以顯示您環境中 URL 公開的完整視圖。 這能讓您在總管中篩選出擔心的電子郵件訊息，找出具有潛在威脅的特定 URL，然後了解暴露於環境 (經由 URL 詳細資料對話方塊) 中的 URL，而不需要將 URL 篩選新增至總管檢視本身。
 
-
-**不同按一下 verdicts 的轉譯**
+### <a name="interpretation-of-different-click-verdicts"></a>不同按一下 verdicts 的轉譯
 
 在電子郵件或 URL flyouts 中，按一下上方和篩選體驗內，您會在搜尋體驗的一部分看到不同的按一下值。 以下是按一下 Verdicts 及其轉譯的可能值：
 
@@ -254,7 +255,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 - **封鎖已封鎖**：已封鎖使用者流覽至 URL;不過，使用者 overrode 區塊以流覽至 URL。
 - **擱置的判定略過**：使用者呈現的是引爆頁面;不過，使用者 overrode 頁面以流覽至 URL。
 - **錯誤**：使用者已呈現錯誤頁面。 這也可能表示在捕獲判定時發生錯誤。
-- **失敗**：捕獲判定時，發生未知的例外狀況。 使用者可能已按一下透過 URL。 
+- **失敗**：捕獲判定時，發生未知的例外狀況。 使用者可能已按一下透過 URL。
 
 ## <a name="review-email-messages-reported-by-users"></a>檢閱使用者回報的電子郵件訊息
 
@@ -288,7 +289,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 除了這篇文章所述的案例，總管 (或即時偵測) 還有更多回報選項。
 
 - [尋找並調查傳送的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)
-- [檢視在 SharePoint Online、OneDrive 和 Microsoft Teams 中偵測到的惡意檔案](malicious-files-detected-in-spo-odb-or-teams.md)
+- [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
 - [取得威脅總管 (和即時偵測) 檢視的概觀](threat-explorer-views.md)
 - [Microsoft 威脅防護的自動化調查及回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
 

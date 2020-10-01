@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b26dd18754a96d1879a2f57ae9742ae1d1a36ce4
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295535"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327006"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -270,9 +270,9 @@ ms.locfileid: "48295535"
 
 ## <a name="threat-protection-status-report"></a>威脅防護狀態報告
 
-「 **威脅防護狀態** 」報告可用於 EOP 和 OFFICE 365 ATP;不過，報告包含不同的資料。 例如，EOP 客戶可以查看在電子郵件中偵測到惡意程式碼的相關資訊，但不會 [發現 SharePoint 線上、OneDrive 或 Microsoft 小組中偵測到之惡意](atp-for-spo-odb-and-teams.md)檔案的相關資訊。
+「 **威脅防護狀態** 」報告可用於 EOP 和 OFFICE 365 ATP;不過，報告包含不同的資料。 例如，EOP 客戶可以查看在電子郵件中偵測到惡意程式碼的相關資訊，但不 [是有關 SharePoint、OneDrive 或 Microsoft 小組的 ATP 所偵測到之惡意](atp-for-spo-odb-and-teams.md)檔案的資訊。
 
-該報告提供包含惡意內容的電子郵件統計，例如檔案或網站位址 (URLs 反惡意程式碼引擎封鎖的) 、 [零小時自動清除 (ZAP) ](zero-hour-auto-purge.md)，以及 atp 功能（如 [atp 安全連結](atp-safe-links.md)、 [atp 安全附件](atp-safe-attachments.md)及 [atp 反網路釣魚](set-up-anti-phishing-policies.md)）。 您可以使用此資訊來識別趨勢，或判斷組織原則是否需要調整。 請務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。
+該報告提供包含惡意內容的電子郵件統計，例如檔案或網站位址 (URLs 反惡意程式碼引擎封鎖的) 、 [零小時自動清除 (ZAP) ](zero-hour-auto-purge.md)，以及 atp 功能（如 [安全連結](atp-safe-links.md)、 [安全附件](atp-safe-attachments.md)及 [atp 反網路釣魚](set-up-anti-phishing-policies.md)）。 您可以使用此資訊來識別趨勢，或判斷組織原則是否需要調整。 請務必瞭解，如果郵件傳送給五位收件者，我們會將其統計為五個不同的郵件，而不是一封郵件。
 
 若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **威脅防護狀態**]。 若要直接前往報告，請開啟下列其中一個 URLs：
 
@@ -366,7 +366,7 @@ ms.locfileid: "48295535"
 - **開始日期** 和 **結束日期**
 - **偵測**
 - **保護者**： **ATP** 或 **EOP**
-- **Tag**：以標籤篩選，以傳回已套用特定標記的使用者或群組。 如需使用者標記的相關資訊，請參閱 [user tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)。
+- **Tag**：以標籤篩選，以傳回已套用特定標記的使用者或群組。 如需使用者標記的相關資訊，請參閱 [user tags](user-tags.md)。
 - **網域**
 
 > [!NOTE]
@@ -406,7 +406,7 @@ ms.locfileid: "48295535"
 - **開始日期** 和 **結束日期**
 - **偵測**
 - **受** 限於 (OFFICE 365 ATP) ： **ATP** 或 **EOP**
-- **Tag**：以標籤篩選，以傳回已套用特定標記的使用者或群組。 如需使用者標記的相關資訊，請參閱 [user tags](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)。
+- **Tag**：以標籤篩選，以傳回已套用特定標記的使用者或群組。 如需使用者標記的相關資訊，請參閱 [user tags](user-tags.md)。
 - **網域**
 - 收件**者 (請**注意，[詳細資料] 表格視圖中只提供此可篩選的屬性) 
 

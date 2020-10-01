@@ -16,12 +16,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: 在 Microsoft 365 中的自動調查期間和之後，您可以查看結果和重要結果。
 ms.date: 09/29/2020
-ms.openlocfilehash: df0eaa54d8bc1c9cd6c91b6b36958e1eb0d2bfd6
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 4be5f3814ed798a0e7fd42285ed2884a5cc29461
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309103"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327696"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中自動調查的詳細資料和結果
 
@@ -247,7 +247,7 @@ ms.locfileid: "48309103"
 |輸出惡意程式碼和垃圾郵件反常情況調查|偵測來自組織中使用者的組織內和輸出惡意程式碼、網路釣魚詐騙或垃圾郵件|
 |寄件者網域調查|從 [Microsoft 智慧型 Security Graph](https://www.microsoft.com/security/operations/intelligence) 和外部威脅情報來源對網域信譽的要求檢查|
 |寄件者 IP 調查| 從 [Microsoft 智慧型 Security Graph](https://www.microsoft.com/security/operations/intelligence) 和外部威脅情報來源對 IP 信譽的要求檢查|
-|URL 按一下調查| 調查組織中的 [Office 365 ATP 安全連結](atp-safe-links.md) 所保護的使用者按一下|
+|URL 按一下調查| 調查組織 [中的 Office 365 ATP 中的安全連結](atp-safe-links.md) 所保護的使用者按一下|
 |URL 信譽調查|對來自 [Microsoft 智慧型 Security Graph](https://www.microsoft.com/security/operations/intelligence) 和外部威脅情報來源之 URL 信譽的要求檢查|
 |使用者活動調查|分析[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)中的使用者活動異常|
 |使用者報告的電子郵件指示器解壓縮|從 [使用者報告的郵件](enable-the-report-message-add-in.md) 頭、內文和內容提取指示器，以進行調查|
@@ -271,6 +271,6 @@ ms.locfileid: "48309103"
 
 ## <a name="next-steps"></a>後續步驟
 
-- [審閱及核准擱置的動作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
+- [審閱及核准擱置的動作](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
 - [深入瞭解 Microsoft 威脅防護中的自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

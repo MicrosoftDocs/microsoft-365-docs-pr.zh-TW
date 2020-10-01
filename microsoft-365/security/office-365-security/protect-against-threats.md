@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護，並設定如何將它用於您的組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ad74e9bdcd7b937873108d2ba049c16db8c235b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 624646461efe7131b2479e003b23a9e659e0a779
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202576"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326552"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -54,7 +54,7 @@ ms.locfileid: "48202576"
 |反垃圾郵件保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |電子郵件的零小時自動清除 () |[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |保護電子郵件和 Office 檔中的惡意 URLs 和檔案 (安全連結和安全附件) |[Office 365 高級威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (**ATP**) |
-|開啟 SharePoint、OneDrive 和 Microsoft 小組工作負載的 ATP| [Atp](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)|
+|開啟 SharePoint、OneDrive 和 Microsoft 小組工作負載的 ATP|[Atp](atp-for-spo-odb-and-teams.md)|
 |高級反網路釣魚保護|[Atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色及權限
@@ -90,7 +90,7 @@ ms.locfileid: "48202576"
 
     - 在 [ **一般附件類型篩選** ] 區段中，選擇 [ **開啟**]。
 
-4. 按一下 **[儲存]**。
+4. 按一下 [儲存 **]**。
 
 若要深入瞭解反惡意程式碼原則選項，請參閱 [設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
@@ -146,94 +146,82 @@ ms.locfileid: "48202576"
 
    - 在 [ **允許清單** ] 區段中，複查 (和/或編輯) 允許的寄件者和網域。
 
-4. 按一下 **[儲存]**。
+4. 按一下 [儲存 **]**。
 
 若要深入瞭解您的反垃圾郵件原則選項，請參閱 [在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments"></a>第4部分-防範惡意 URLs 和檔案 (安全連結和安全附件) 
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-office-365-atp"></a>第4部分-防範惡意 URLs 和檔案 (安全連結和 Office 365 ATP 中的安全附件) 
 
-在包含 [Office 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (atp) 的訂閱中，可使用從惡意 URLs 和檔案進行的點擊時間防護。 它是透過 [Atp 安全附件](atp-safe-attachments.md) 和 [atp 安全連結](atp-safe-links.md) 原則進行設定。
+在包含 [Office 365 高級威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP) 的訂閱中，可使用從惡意 URLs 和檔案進行時間的防護。 它是透過 [安全附件](atp-safe-attachments.md) 和 [安全連結](atp-safe-links.md) 原則來設定。
 
-### <a name="atp-safe-attachments-policies"></a>ATP 安全附件原則
+### <a name="safe-attachments-policies-in-office-365-atp"></a>Office 365 ATP 中的安全附件原則
 
-若要設定 [Atp 安全附件](atp-safe-attachments.md)，您必須至少定義一個 Atp 安全附件原則。
+若要設定 [安全附件](atp-safe-attachments.md)，請至少建立一個安全連結原則。
 
-1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 安全附件**]。
+1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 安全附件**]，然後按一下 [**建立**]。
 
-2. 選取 [為 **SharePoint、OneDrive 和 Microsoft 團隊開啟 ATP**] 選項。
+2. 在出現的 [ **新增安全附件原則** ] 嚮導中，設定下列設定：
 
-3. 在 [ **保護電子郵件附件** ] 區段中，按一下加號 (**+**) 。
+   - 在 [ **名稱** ] 方塊中，輸入 `Block malware` ，然後按 **[下一步]**。
 
-4. 指定下列設定：
+   - 在 [ **設定** ] 頁面上，設定下列設定：
+     - 在 [ **安全附件未知惡意程式碼回應** ] 區段中，選擇 [ **封鎖**]。
+     - 在 [重新 **導向附件** ] 區段中，選取 [ **啟用重新導向**] 選項。 指定組織的安全性系統管理員或操作員的電子郵件地址，誰會檢查偵測到的檔案。
 
-   - 在 [ **名稱** ] 方塊中，輸入 `Block malware` 。
+     按 **[下一步]**。
 
-   - 在 [回應] 區段中，選擇 [ **封鎖**]。
+3. 在 [套用**至**] 頁面上，按一下 [**新增條件**]，然後選擇 [套用者 **：收件者網域是**]，按一下 [**新增**]，選取您的網域，按一下 [**新增**]，按一下 [**完成**]，然後按 **[下一步**
 
-   - 在 [重新 **導向附件** ] 區段中，選取 [ **啟用重新導向**] 選項。 指定組織的安全性系統管理員或操作員的電子郵件地址，誰會檢查偵測到的檔案。
+4. 請複查您的設定，然後按一下 **[完成]**。
 
-   - 在 [套用 **于** ] 區段中，選擇 **[收件者網域是**]。 然後，選取您的網域，選擇 [ **新增**]，然後選擇 **[確定]**。
+### <a name="safe-links-policies-in-office-365-atp"></a>Office 365 ATP 中的安全連結原則
 
-5. **儲存**。
+若要設定 [安全連結](atp-safe-links.md)，請複查及編輯安全連結的全域設定，並至少建立一個安全連結原則。
 
-6.  (**建議的其他步驟**) 為全域系統管理員或 SharePoint Online 管理員，請針對您的 Microsoft 365 環境，以**DisallowInfectedFileDownload**參數設定為*true* ，以執行**[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** Cmdlet。  (此方式可防止使用者開啟、移動、複製或共用偵測為惡意的檔案。 ) 
+1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 安全連結**]，然後按一下 [**通用設定**]，然後設定下列設定：
 
-若要深入瞭解，請參閱 [設定 office 365 Atp 安全附件原則](set-up-atp-safe-attachments-policies.md) ，並 [為 SharePoint、OneDrive 和 Microsoft 團隊開啟 office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
+   - 驗證 **使用下列安全連結： Office 365 應用程式** 已開啟： ![ 開啟開啟] ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
+   - **當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
+   - **不要讓使用者點擊 [安全連結至原始 URL**]：確認已開啟此設定： ![ 開啟開啟 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
 
-### <a name="atp-safe-links-policies"></a>ATP 安全連結原則
+   完成後，按一下 [儲存]****。
 
-若要設定 [ATP 安全連結](atp-safe-links.md)，請複查和編輯您的預設原則，並新增特定使用者的原則。
+2. 回到 [主要安全連結] 頁面上，按一下 [ **建立**]。
 
-1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 安全連結**]。
+3. 在出現的 [ **建立安全連結原則** ] 嚮導中，設定下列設定：
 
-2. 連按兩下 **預設** 原則。
+   - 在 [ **名稱** ] 方塊中，輸入名稱，例如 `Safe Links` ]，然後按 **[下一步]**。
 
-3. 在 [ **使用安全連結** ] 區段中，選取 [ **Microsoft 365 應用程式適用于企業，Office iOS 和 Android**]，然後按一下 [ **儲存**]。
-
-4. 在 [套用 **至特定** 收件者的原則] 區段中，按一下加號 (**+**) 。
-
-5. 指定下列設定：
-
-   - 在 [ **名稱** ] 方塊中，輸入名稱，例如 `Safe Links` 。
-
-   - 在 [選取動作]**** 區段中，選擇 [開啟]****。
-
-   - 選取下列選項：
-
-     - **使用安全附件掃描可下載的內容**
-
+   - 在 [ **設定** ] 頁面上，設定下列設定：
+     - **在郵件中選取未知可能惡意 URLs 的動作**：選擇 [ **開啟**]。
+     - **選取 Microsoft 小組中未知或可能惡意 URLs 的動作**：選擇 [ **開啟**]。
      - **對組織內傳送的電子郵件套用安全連結**
+     - **等待 URL 掃描完成再傳遞郵件**
+     - **對組織內傳送的電子郵件套用安全連結**
+     - **不允許使用者點選原始 URL**
 
-     - **不要讓使用者點擊至原始 URL 的安全連結**
+     按一下 **[下一步]**。
 
-   - 在 [套用 **于** ] 區段中，選擇 **[收件者網域是**]。 然後，選取您的網域，選擇 [ **新增**]，然後選擇 **[確定]**。
+4. 在 [套用**至**] 頁面上，按一下 [**新增條件**]，然後選擇 [套用者 **：收件者網域是**]，按一下 [**新增**]，選取您的網域，按一下 [**新增**]，按一下 [**完成**]，然後按 **[下一步**
 
-6. **儲存**。
+5. 請複查您的設定，然後按一下 **[完成]**。
 
-若要深入了解，請參閱[設定 Office 365 ATP 安全連結原則](set-up-atp-safe-links-policies.md)。
+若要深入瞭解，請參閱 [設定安全連結原則](set-up-atp-safe-links-policies.md)。
 
-## <a name="part-5---turn-on-atp-for-sharepoint-onedrive-and-microsoft-teams-workloads"></a>第5部分-開啟 SharePoint、OneDrive 和 Microsoft 小組工作負載的 ATP
+## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>第5部分-確認 SharePoint、OneDrive 和 Microsoft 團隊的 ATP 已開啟
 
-SharePoint、OneDrive 和小組等工作負載都是為了共同作業而建立的。 使用 ATP 可協助封鎖和偵測小組網站和文件庫中識別為惡意的檔案。 您可以在 [這裡](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams?view=o365-worldwide)進一步閱讀該功能的詳細資訊。
+SharePoint、OneDrive 和小組等工作負載都是為了共同作業而建立的。 使用 ATP 可協助封鎖和偵測小組網站和文件庫中識別為惡意的檔案。 您可以在 [這裡](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)進一步閱讀該功能的詳細資訊。
 
 > [!IMPORTANT]
 > **開始此程式之前，請確定已為您的 Microsoft 365 環境開啟了審核記錄**。 這項工作通常是由在 Exchange Online 中獲派稽核記錄角色的人員完成。 如需詳細資訊，請參閱 [開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)！
 
-1. 移至 <https://protection.office.com> 然後以您的公司或學校帳戶登入。
+1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 安全附件**]，然後按一下 [**通用設定**]。
 
-2. 在 [安全性 & 規範中心] 的左功能窗格中，選擇 [ **威脅管理**] 底下的 [ **原則** \> **安全附件**]。
+2. 驗證 **SharePoint、OneDrive 和 Microsoft 團隊** 切換功能的開啟 ATP 是否為右對齊： ![ 切換開啟]，然後按一下 [ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) **儲存**]。
 
-   ![在 [安全性 & 規範中心] 中，選擇 [威脅管理 \> 原則]](../../media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+3. 檢閱 (並視需要編輯) 組織的 [[安全附件原則]](set-up-atp-safe-attachments-policies.md) 和 [[安全連結原則]](set-up-atp-safe-links-policies.md)。
 
-3. 選取 **[開啟適用於 SharePoint、OneDrive 與 Microsoft Teams 的 ATP]**。
-
-   ![開啟適用於 SharePoint Online、商務用 OneDrive 與 Microsoft Teams 的進階威脅防護](../../media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
-
-4. **儲存**。
-
-5. 檢閱 (並視需要編輯) 組織的 [[安全附件原則]](set-up-atp-safe-attachments-policies.md) 和 [[安全連結原則]](set-up-atp-safe-links-policies.md)。
-
-6.  (建議) 成為全域系統管理員或 SharePoint Online 管理員，請執行 **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** Cmdlet，並將 _DisallowInfectedFileDownload_ 參數設定為 `$true` 。
+4.  (建議) 成為全域系統管理員或 SharePoint Online 管理員，請執行 **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)** Cmdlet，並將 _DisallowInfectedFileDownload_ 參數設定為 `$true` 。
 
    - `$true` 封鎖針對偵測到的檔案 (刪除) 以外的所有動作。 使用者將無法開啟、移動、複製或共用偵測到的檔案。
    - `$false` 封鎖除 Delete 和下載中心以外的所有動作。 使用者可以選擇接受風險並下載偵測到的檔案。
@@ -241,7 +229,7 @@ SharePoint、OneDrive 和小組等工作負載都是為了共同作業而建立�
    > [!TIP]
    > 若要深入瞭解搭配 Microsoft 365 使用 PowerShell，請參閱使用 [PowerShell 管理 Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)。
 
-7. 允許最多30分鐘的變更，以散佈至所有 Microsoft 365 資料中心。
+5. 允許最多30分鐘的變更，以散佈至所有 Microsoft 365 資料中心。
 
 ### <a name="now-set-up-alerts-for-detected-files"></a>現在，設定偵測到檔案的警示
 
@@ -270,9 +258,10 @@ SharePoint、OneDrive 和小組等工作負載都是為了共同作業而建立�
 > [!NOTE]
 > 當您完成設定時，請使用下列連結來開始工作負載調查：
 >
-> - [檢視在 SharePoint、OneDrive 或 Microsoft Teams 中偵測到的惡意檔案資訊](malicious-files-detected-in-spo-odb-or-teams.md)
-> - [在 SharePoint 線上、OneDrive 或 Microsoft 小組中找到惡意檔案時，要執行的動作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
-> - [在 Microsoft 365 中以系統管理員身分管理被隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
+>- [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
+>- [使用安全性 & 規範中心管理隔離的檔案](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)
+>- [在 SharePoint 線上、OneDrive 或 Microsoft 小組中找到惡意檔案時，要執行的動作](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
+>- [在 Microsoft 365 中以系統管理員身分管理被隔離的郵件和檔案](manage-quarantined-messages-and-files.md)
 
 ## <a name="part-6---additional-settings-to-configure"></a>第6部分-要設定的其他設定
 
@@ -299,4 +288,4 @@ SharePoint、OneDrive 和小組等工作負載都是為了共同作業而建立�
 |查看您的組織如何使用威脅防護功能，以查看報告|[安全性儀表板](security-dashboard.md)<br/>[電子郵件安全性報告](view-email-security-reports.md)<br/>[Office 365 ATP 報告](view-reports-for-atp.md)<br/>[威脅總管](threat-explorer.md)|
 |視需要定期複查和修正威脅防護原則|[安全分數](../mtp/microsoft-secure-score.md)<br/>[智慧報告和洞察力](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 威脅調查和回應功能](keep-users-safe-with-office-365-ti.md)|
 |監視新功能和服務更新|[標準及目標發行選項](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[訊息中心](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
-|深入瞭解 EOP 和 ATP 的建議標準和嚴格安全設定的詳細資料 | [EOP 和 Office 365 ATP 安全性的建議設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) |
+|深入瞭解 EOP 和 ATP 的建議標準和嚴格安全設定的詳細資料|[EOP 和 Office 365 ATP 安全性的建議設定](recommended-settings-for-eop-and-office365-atp.md)|

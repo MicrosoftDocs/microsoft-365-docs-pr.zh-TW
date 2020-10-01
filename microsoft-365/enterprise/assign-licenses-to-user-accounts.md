@@ -3,7 +3,7 @@ title: 將 Microsoft 365 授權指派給使用者帳戶
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 說明如何將 Microsoft 365 授權指派給使用者帳戶（個別或根據群組成員資格）。
-ms.openlocfilehash: e132a8c2d65c401899624b9d255050385f2cb721
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: a2eed7b3597dcc2531834456a9b05f5aa1b07a23
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417095"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326504"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts"></a>將 Microsoft 365 授權指派給使用者帳戶
 
@@ -39,7 +39,7 @@ ms.locfileid: "47417095"
 
 針對僅限雲端的身分識別模型，您可以根據建立的方式，將 Microsoft 365 授權指派給使用者帳戶。
 
-針對混合式身分識別模型，當第一次同步處理 Active Directory 網域服務 (AD DS) 使用者帳戶時，系統不會自動將其指派給 Microsoft 365 授權。 您必須先設定使用者位置的每個使用者帳戶。
+針對混合式識別模型，當第一次同步處理 Active Directory 網域服務 (AD DS) 使用者帳戶時，系統不會自動指派位置或 Microsoft 365 授權。 **您必須在指派授權之前或之前，設定每個使用者帳戶的使用者位置。**
 
 在這兩種情況下，您必須指派授權給使用者帳戶，讓您的使用者能夠存取 Microsoft 365 服務，例如電子郵件和 Microsoft 團隊。
 
@@ -48,15 +48,26 @@ ms.locfileid: "47417095"
 若要將 Microsoft 365 授權指派給個別使用者帳戶，您可以使用：
 
 - [Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
-- [適用於 Microsoft 365 的 PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
+- [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)
+- Azure AD 系統管理中心
 
-若要進行自動授權指派，請參閱 [在 AZURE AD 中以群組為基礎的授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
+## <a name="group-based-licensing"></a>群組型授權
+
+您可以在 Azure AD 中設定安全性群組，以自動將一組訂閱的授權指派給群組的所有成員。 這稱為*群組型授權*。 如果在群組中新增或移除使用者帳戶，則將自動指派或從使用者帳戶中取消指派群組訂閱的授權。
+
+請確定您有足夠的授權可供所有群組成員使用。 如果您用完了授權，除非有授權可供使用，否則將不會對新使用者指派授權。
+
+>[!Note]
+>您不應為包含 Azure 企業對企業 (B2B) 帳戶的群組設定以群組為基礎的授權。
+>
+
+如需更多 informaion，請參閱 [在 AZURE AD 中以群組為基礎的授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)。
 
 ## <a name="next-steps"></a>後續步驟
 
-透過已獲指派授權的完整使用者帳戶，您現在可以：
+使用已獲指派授權的適當使用者帳戶集，您現在可以：
 
 - [實施安全性](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 - [部署用戶端軟體，例如 Microsoft 365 應用程式](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
-- [在 Microsoft 365 中設定基本行動性和安全性](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
+- [設定裝置管理](device-management-roadmap-microsoft-365.md)
 - [設定服務和應用程式](configure-services-and-applications.md)

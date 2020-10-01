@@ -12,16 +12,17 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - remotework
+- M365initiative-CoreDeploy
 search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: 本文提供針對全球 Microsoft 365 承租人的中國使用者優化網路效能的指導方針。
-ms.openlocfilehash: 94de83a94bf6cdf5470b66970efb62094bdc4343
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1f5f51991c5950d46c9d835a98bea86bcb354366
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688392"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327506"
 ---
 # <a name="microsoft-365-global-tenant-performance-optimization-for-china-users"></a>適用于中國使用者的 Microsoft 365 全域租使用者效能優化
 
@@ -72,7 +73,7 @@ Microsoft 正致力於改善 Microsoft 365 使用者經驗，並透過最廣泛�
 
 [Microsoft 365 的網路規劃和效能調整](https://aka.ms/tune)
 
-[Microsoft 365 網路連接原則](microsoft-365-network-connectivity-principles.md)
+[Microsoft 365 網路連線原則](microsoft-365-network-connectivity-principles.md)
 
 [管理 Office 365 端點](managing-office-365-endpoints.md)
 

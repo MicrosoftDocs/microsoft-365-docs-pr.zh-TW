@@ -3,7 +3,7 @@ title: 準備將目錄同步處理至 Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/25/2019
+ms.date: 09/30/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 說明如何準備使用目錄同步處理將使用者布建至 Microsoft 365，以及使用此方法的長期優點。
-ms.openlocfilehash: c9d4368d1939b9c6feedf5146f9d168f18d5d5b1
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: a70f49dd5656da996912173690dc2b21b4288023
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269414"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327282"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>準備將目錄同步處理至 Microsoft 365
 
@@ -43,9 +43,9 @@ ms.locfileid: "48269414"
 - 選擇性啟用單一登入案例
 - 自動化 Microsoft 365 中的帳戶變更
 
-如需使用目錄同步處理之優點的詳細資訊，請參閱[Microsoft 365](plan-for-directory-synchronization.md)的[目錄同步處理藍圖]( https://go.microsoft.com/fwlink/p/?LinkId=525398)和混合身分識別。
+如需使用目錄同步處理之優點的詳細資訊，請參閱 [混合身分識別搭配 Azure Active directory (AZURE AD) ](https://go.microsoft.com/fwlink/p/?LinkId=525398) 和 [Microsoft 365 的混合身分識別](plan-for-directory-synchronization.md)。
 
-不過，目錄同步處理需要規劃及準備，以確保您的 Active Directory 網域服務 (AD DS) 會同步處理至您的 Microsoft 365 訂閱的 Azure Active Directory (Azure AD) 租使用者，至少有錯誤。
+不過，目錄同步處理需要規劃及準備，以確保您的 Active Directory 網域服務 (AD DS) 同步處理至您的 Microsoft 365 訂閱的 Azure AD 租使用者，但錯誤最低。
 
 請遵循下列步驟，以取得最佳結果。
 
@@ -54,7 +54,7 @@ ms.locfileid: "48269414"
 將 AD DS 同步處理到 Azure AD 租使用者之前，您需要清理您的 AD DS。
 
 > [!IMPORTANT]
-> 如果您在同步處理之前未執行 AD DS 清除，則部署程式可能會有嚴重的負面影響。 可能需要數天甚至數周才能完成目錄同步處理的週期、識別錯誤，以及重新同步處理。
+> 若您在同步處理之前未執行 AD DS 清除，則可能會對部署程式造成嚴重的負面影響。 可能需要數天甚至數周才能完成目錄同步處理的週期、識別錯誤，以及重新同步處理。
 
 在您的 AD DS 中，針對每個將指派 Microsoft 365 授權的使用者帳戶，完成下列清理工作：
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 建立 Microsoft 365 環境以測試身分識別與裝置存取。
-ms.openlocfilehash: c5bc0fbbb3ae3839cb7aa71e8c840784ae4a4cad
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 84af7747fc1d0e80e933397f4f0f96018ed246c3
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685851"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327804"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>您的 Microsoft 365 測試環境的身分識別與裝置存取
 
@@ -28,15 +28,15 @@ ms.locfileid: "46685851"
 
 身分[識別與裝置存取](microsoft-365-policies-configurations.md)設定是一組功能和條件式存取原則，可保護與 Azure Active Directory (azure AD) 整合的所有服務存取權。
 
-若要建立具備這些原則的測試環境：
+若要建立具備通用身分識別和裝置存取設定的測試環境：
 
 1. 根據您所選擇的身分識別模型以及驗證方法，設定您的測試環境使其具備身分識別和安全性功能的先決條件：
 
   - [僅限雲端](cloud-only-prereqs-m365-test-environment.md)
-  - [密碼雜湊同步處理 (PHS)](phs-prereqs-m365-test-environment.md)
+  - [密碼雜湊同步處理 (PHS) ](phs-prereqs-m365-test-environment.md)
   - [傳遞驗證 (PTA)](pta-prereqs-m365-test-environment.md)
 
-2. 使用[一般身分識別與裝置存取原則](identity-access-policies.md)來設定根據先決條件建置的原則，並測試身分識別與裝置的保護。
+2. 使用 [通用身分識別和裝置存取原則](identity-access-policies.md) ，設定針對測試環境所設定的必要條件建立的原則，並探索及驗證身分識別及裝置的保護。
 
 ## <a name="see-also"></a>請參閱
 

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Exchange Online Protection (EOP) 和 Office 365 的高級威脅防護 (Office 365 ATP) 中可用的反網路釣魚原則。
-ms.openlocfilehash: 945b346a5ebd4a85776d87c019ee1a06aec73635
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 498b6e27b3fca66e388eaa27ba7895056ef7f0fc
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195912"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326934"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -220,4 +220,4 @@ ATP 反網路釣魚原則僅可用於具有 Office 365 ATP 的組織。 例如�
 
 - **4-最主動**：以低、中或高置信度識別為網路釣魚的郵件，視為以極高的置信度識別。
 
-誤報的機率 (，標記為壞) 會隨著您增加此設定而增加。 如需建議設定的詳細資訊，請參閱 [OFFICE ATP 反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings)。
+誤報的機率 (，標記為壞) 會隨著您增加此設定而增加。 如需建議設定的詳細資訊，請參閱 [ATP 反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#atp-anti-phishing-policy-settings)。

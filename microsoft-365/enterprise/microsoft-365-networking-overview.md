@@ -13,15 +13,16 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365initiative-CoreDeploy
 f1.keywords:
 - NOCSH
 description: 討論為何網路優化對 SaaS 服務、Microsoft 365 網路的目標，以及 SaaS 需要不同的網路與其他工作負載的意義。
-ms.openlocfilehash: 4fea7364dc79717583ebca8ce0dbe333ee818f1f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: acc55868e47ea89cd2357487838a88032dc8538d
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688434"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327482"
 ---
 # <a name="microsoft-365-network-connectivity-overview"></a>Microsoft 365 網路連線能力一覽
 

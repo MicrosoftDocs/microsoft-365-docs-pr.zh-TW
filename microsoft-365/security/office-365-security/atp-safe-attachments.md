@@ -1,12 +1,12 @@
 ---
-title: ATP 安全附件
+title: 安全附件
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
-ms.date: 05/17/2019
+ms.date: ''
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,63 +17,119 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
-description: 在本文中，您將瞭解 Office 365 的 ATP 安全附件功能及如何取得您訂閱的功能。
-ms.openlocfilehash: 1ff7021f1c9fa64d3f04cbcac7231733399ad2b8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: 系統管理員可以深入瞭解 Office 365 Advanced 威脅防護 (ATP) 中的安全附件功能。
+ms.openlocfilehash: 6ff356f34f3e44752b5ad7f5fa433a8c72cd5083
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198772"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326528"
 ---
-# <a name="atp-safe-attachments"></a>ATP 安全附件
+# <a name="safe-attachments-in-office-365-atp"></a>Office 365 ATP 中的安全附件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+Office 365 中的安全附件「 [高級威脅防護」 (ATP) ](office-365-atp.md) 針對已 [在 Exchange ONLINE protection (EOP) 中的反惡意程式碼保護 ](anti-malware-protection.md)掃描的電子郵件附件，提供額外的保護層級。 具體而言，安全附件會在電子郵件傳送至收件者 (程式（稱為 _引爆_) ）之前，使用虛擬環境檢查電子郵件中的附件。
 
-## <a name="overview-of-office-365-atp-safe-attachments"></a>Office 365 ATP 安全附件的概觀
+電子郵件訊息的安全附件保護是由安全附件原則所控制。 沒有預設的安全附件原則， **因此若要取得安全附件的保護，您必須建立一或多個安全附件原則**。 如需相關指示，請參閱 [設定 ATP 中的安全附件原則](set-up-atp-safe-attachments-policies.md)。
 
-ATP 安全附件 (隨附於 [ATP 安全連結](atp-safe-links.md)) 是 [Office 365 進階威脅防護](office-365-atp.md) (ATP) 的一部分。 「ATP 安全附件」功能會檢查電子郵件附件是否為惡意，然後採取行動來保護貴組織。 ATP 安全附件功能會根據全域管理員或安全性系統管理員所設定的 [Atp 安全附件原則](set-up-atp-safe-attachments-policies.md) ，來保護您的組織。
-
-ATP 保護也會延伸到 SharePoint Online、商務用 OneDrive 和 Microsoft Teams 中的檔案。 若要深入了解，請參閱[為 SharePoint、OneDrive 和 Microsoft Teams 啟用了 Office 365 進階威脅防護](atp-for-spo-odb-and-teams.md)。
-
-## <a name="how-to-get-atp-safe-attachments"></a>如何取得 ATP 安全附件
-
-首先，請確定您的訂用帳戶包含[進階威脅防護](office-365-atp.md)。 在訂閱中包含 ATP，例如 [microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/home)、 [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)、Office 365 E5、office 365 A5 等等。如果您的組織有未包含 Office 365 ATP 的 Microsoft 365 訂閱，您可以將 ATP 購買為附加元件。 如需詳細資訊，請參閱 [Office 365 進階威脅防護方案和定價](https://products.office.com/exchange/advance-threat-protection)和 [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (部分機器翻譯)。
-
-接下來，請確定您的 ATP 安全附件原則已定義。 (請參閱[設定 Office 365 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md))。ATP 安全附件功能會在下列情況中運作：
-
-- 已設定 ATP 安全附件原則。 (請參閱[在 Office 365 中設定 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)。)
-
-- 使用者已使用公司或學校帳戶登入。  (請參閱登 [入 Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)。 ) 
-
-若要定義 (或編輯) ATP 原則，您必須獲派適當的角色。 下表中有一些範例描述：
-
-|角色|指派位置/條件|
-|---|---|
-|全域管理員|簽署購買 Microsoft 365 的人員預設為全域系統管理員。  (請參閱 [關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) 以深入瞭解。 ) |
-|安全性系統管理員|Azure Active Directory 系統管理中心 ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online 組織管理|Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>或 <br>  PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
-|
-
-## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>如何得知 ATP 安全附件保護已實作
-
-在您[定義 (或檢閱) 您的 ATP 安全附件原則](set-up-atp-safe-attachments-policies.md)之後，若要了解服務的運作方式，請[檢閱進階威脅防護的報告](view-reports-for-atp.md)。
-
-下表將列舉幾個案例。 在上述所有情況下，我們假設組織擁有包含「高級威脅防護」的 Microsoft 365 訂閱。
+下表說明 Microsoft 365 和 Office 365 組織中包含 ATP (的安全附件案例，也就是說，缺乏授權不是範例) 中的問題。
 
 ****
 
-|範例案例|此案例中是否套用 ATP 安全附件保護？|
+|案例|結果|
 |---|---|
-|Pat 的組織擁有 Office 365 E5，但尚未為 ATP 安全附件定義任何原則。|否。 雖然功能可供使用，但是必須定義至少一個 ATP 安全附件原則，才能使用「ATP 安全附件」保護。|
-|Lee 是 Contoso 銷售部門的員工。 Lee 的組織已實作 ATP 安全附件原則，僅套用至財務部門員工。|否。 在此情況下，財務部門員工將擁有 ATP 安全附件保護，但是其他員工 (包括銷售部門) 在定義包含這些群組的原則之前沒有保護。|
-|昨天，Jean-francois 組織的系統管理員會設定適用于所有員工的 ATP 安全附件原則。 Jean 在今天稍早收到包含附件的電子郵件訊息。|是。 在此範例中，Jean 有「進階威脅防護」的授權，且包含 Jean 的 ATP 安全附件原則已定義。 新原則通常需要 30 分鐘的時間才會在資料中心之間生效；在此案例中已經過了一天，所以原則應該會生效。|
-|Chris 的組織擁有 Office 365 E5，並且已針對組織中的所有人實作 ATP 安全附件原則。 Chris 會收到包含附件的電子郵件，並將郵件轉寄給組織外部的其他人。|ATP 安全附件保護已針對 Chris 所收到的訊息實作。 如果收件者的組織還實作了「ATP 安全附件」原則，則 Chris 轉寄的郵件在抵達時受限於這些原則。|
-|Jamie 的組織已實作 ATP 安全附件原則，並且已開啟 [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)。 Jamie 假設 SharePoint Online 中的每個檔案都已掃描，並且可以安全開啟或下載。|ATP 安全附件保護已根據定義的原則進行實作，但是這並非表示 SharePoint Online、商務用 OneDrive 或 Microsoft Teams 中的每個個別檔案都已經過掃描。 (若要深入了解，請參閱[適用於 SharePoint、OneDrive 和 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)。)|
+|Pat 的 Microsoft 365 E5 組織未設定安全附件原則。|Pat 未受到安全附件的保護。 <br/><br/> 管理員至少必須建立一個安全附件原則，安全附件保護才能使用。 此外，如果 Pat 是以安全附件保護，則原則的條件必須包含 Pat。|
+|「他的組織」具有僅適用于財務員工的安全附件原則。 「銷售部門」是「銷售部門」的成員。|「我的安全附件不受保護。 <br/><br/> 財務員工會受到安全附件的保護，但銷售員工 (和其他員工) 不受保護。|
+|昨天，Jean-francois 組織中的系統管理員建立了套用至所有員工的安全附件原則。 在今天的早期，Jean-francois 收到包含附件的電子郵件。|Jean-francois 受安全附件保護。 <br/><br/> 通常，新的原則大約需要30分鐘的時間才會生效。|
+|Chris 的組織為組織中的每個人提供了長期安全的附件原則。 Chris 收到包含附件的電子郵件，然後將郵件轉寄給外部收件者。|Chis 受安全附件保護。 <br/><br/> 如果外部收件者在其組織中也有安全附件原則，則轉寄的郵件會受到這些原則的制約。|
 |
+
+安全附件掃描會在 Microsoft 365 資料所在的相同區域中進行。 如需資料中心地理位置的詳細資訊，請參閱 [您的資料位於何處？](https://products.office.com/where-is-your-data-located?geo=All)
+
+> [!NOTE]
+> 下列功能位於全域設定中的安全性 & 合規性中心內的安全附件原則，但這些設定會全域性啟用或停用，但不需要安全附件原則：
+>
+> - [SharePoint、OneDrive 和 Microsoft 小組的 ATP](atp-for-spo-odb-and-teams.md)。
+>
+> - [Microsoft 365 E5 中的安全檔](safe-docs.md)
+
+## <a name="safe-attachments-policy-settings"></a>安全附件原則設定
+
+本節說明安全附件原則中的設定：
+
+- **安全附件未知的惡意程式碼回應**：此設定會控制在電子郵件訊息中，以安全附件進行惡意程式碼掃描的動作。 下表說明可用的選項：
+
+  ****
+
+  |選項|Effect|使用時機：|
+  |---|---|---|
+  |**關閉**|安全附件不會掃描附件是否有惡意程式碼。 [EOP 中的反惡意程式碼保護](anti-malware-protection.md)仍然會掃描郵件是否有惡意程式碼。|為選取的收件者關閉掃描。 <br/><br/> 避免路由內部郵件的非必要延遲。 <br/><br/> **大多數使用者不建議使用此選項。您應該只使用此選項，關閉只接收來自信任寄件者郵件之收件者的安全附件掃描。**|
+  |**監視**|傳送包含附件的郵件，然後追蹤偵測到的惡意程式碼會發生什麼事。 <br/><br/> 傳遞安全郵件可能會因為安全附件掃描而延遲。|查看您的組織中偵測到惡意程式碼的位置。|
+  |**封鎖**|防止傳遞偵測到惡意軟體附件的郵件。 <br/><br/> 只會在系統管理員 (非使用者) 可以查看、發行或刪除郵件的地方 [隔離](manage-quarantined-messages-and-files.md) 郵件。 <br/><br/> 自動封鎖未來的郵件和附件實例。 <br/><br/> 傳遞安全郵件可能會因為安全附件掃描而延遲。|保護您的組織，避免使用相同惡意程式碼附件的重複攻擊。 <br/><br/> 此為預設值，以及標準及嚴格的預設 [安全性原則](preset-security-policies.md)中的建議值。|
+  |**Replace**|移除偵測到的惡意程式碼附件。 <br/><br/> 通知收件者已移除附件。 <br/><br/>  只會在系統管理員 (非使用者) 可以查看、發行或刪除郵件的地方 [隔離](manage-quarantined-messages-and-files.md) 郵件。 <br/><br/> 傳遞安全郵件可能會因為安全附件掃描而延遲。|對收件者提高知名度，因為偵測到惡意程式碼已移除附件。|
+  |**動態傳遞**|立即傳遞郵件，但是會以預留位置取代附件，直到安全附件掃描完成為止。 <br/><br/> 如需詳細資訊，請參閱本主題稍後的「 [安全附件原則中的動態傳遞](#dynamic-delivery-in-safe-attachments-policies) 」一節。|避免郵件延遲，同時為收件者抵禦惡意檔案 <br/> <br/> 執行掃描時，讓收件者以安全模式預覽附件|
+  |
+
+- 重新**導向附件的偵測： Enable 重新導向**並**將附件傳送至下列電子郵件地址**：針對**封鎖**、**監視器**或**取代**動作，將包含惡意程式碼附件的郵件傳送至指定的內部或外部電子郵件地址，以進行分析和調查。
+
+  標準和嚴格原則設定的建議是啟用重新定向。 如需詳細資訊，請參閱 [安全附件設定](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)。
+
+- **若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取專案**。安全附件所指定的動作會對郵件採取 **未知惡意程式碼回應** ，即使無法完成安全附件掃描也是一樣。 如果您選取 [ **啟用重新導向**]，則無條件選取此選項。 否則，郵件可能會遺失。
+
+- **收件者篩選器**：您必須指定收件者條件和例外狀況，以決定要套用的原則。 您可以使用這些屬性做為條件和例外狀況：
+
+  - **收件者是**
+  - **收件者網域是**
+  - **收件者是以下的成員**
+
+  您只可以使用條件或例外狀況，但條件或例外狀況可以包含多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<member of group 1\>_)。
+
+- **Priority**：如果您建立多個原則，您可以指定要套用的順序。 不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。
+
+  如需更多有關優先的排序及如何評估和應用多項原則，請參照 [電子郵件保護的順序和優先順序](how-policies-and-protections-are-combined.md)。
+
+### <a name="dynamic-delivery-in-safe-attachments-policies"></a>安全附件原則中的動態傳遞
+
+> [!NOTE]
+> 動態傳遞只適用于 Exchange Online 信箱。
+
+安全附件原則中的動態傳遞動作可搜尋安全附件掃描可能造成的任何電子郵件傳遞延遲。 電子郵件的本文會傳送給收件者，並提供每個附件的預留位置。 在附件找到安全後，就會保留預留位置，然後即可開啟或下載附件。
+
+若發現有惡意的附件，就會隔離郵件。 只有系統管理員 (並非使用者) 可以查看、發行或刪除以安全附件掃描隔離的郵件。 如需詳細資訊，請參閱 [以系統管理員身分管理被隔離的郵件和](manage-quarantined-messages-and-files.md)檔案。
+
+在安全的附件掃描進行過程中，大部分的 Pdf 和 Office 檔都可以在安全模式中預覽。 如果附件與動態傳遞預覽程式不相容，收件者將會看到附件的預留位置，直到安全附件掃描完成為止。
+
+如果您使用行動裝置，但無法在行動裝置上的動態傳遞預覽程式中呈現 Pdf，請嘗試使用行動裝置瀏覽器，嘗試在 (Outlook 網頁版（先前稱為 Outlook Web App) ）中開啟郵件。
+
+以下是動態傳遞和轉寄郵件的一些考慮：
+
+- 如果轉寄的收件者是以使用動態傳遞選項的安全附件原則保護，則收件者會看到該預留位置，而且能夠預覽相容的檔案。
+
+- 如果轉寄的收件者不是由安全附件原則保護，將會傳遞郵件和附件，而不需要任何安全附件掃描或附件預留位置。
+
+## <a name="scenarios-where-safe-attachments-doesnt-scan-messages"></a>安全附件不會掃描郵件的情況
+
+在某些情況下，安全附件無法掃描郵件：
+
+- 公用資料夾中的郵件。
+
+- 使用自訂規則，然後再移至使用者信箱的郵件。
+
+-  (會自動或手動將) 雲端信箱移至其他位置（包括封存資料夾）的郵件。
+
+- 刪除的郵件。
+
+- 使用者的信箱搜尋資料夾處於錯誤狀態。
+
+- 啟用 Exclaimer 的 Exchange Online 組織。 若要解決此問題，請參閱 [KB4014438](https://support.microsoft.com/help/4014438)。
+
+- [S/MIME) ](s-mime-for-message-signing-and-encryption.md) 加密郵件。
+
+- 您已在安全附件原則中設定動態傳送動作，但收件者不支援動態傳遞 (例如，收件者是內部部署 Exchange 組織中的信箱) 。 不過， [office 365 ATP 中的安全連結](set-up-atp-safe-links-policies.md) 可以掃描包含 URLs (的 office 檔案附件，視安全連結) 設定方式而定。
 
 ## <a name="submitting-files-for-malware-analysis"></a>提交檔案以進行惡意程式碼分析
 
-- 如果您想要對收到的檔案要求 Microsoft 進行分析，請造訪[提交檔案以進行惡意程式碼分析](https://aka.ms/wdsi/submit) (英文)。
+- 如果您收到要傳送給 Microsoft 進行分析的檔案，請參閱將 [惡意程式碼和非惡意程式碼提交給 microsoft](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)進行分析。
 
 - 如果您收到的電子郵件訊息 (包含或沒有要提交給 Microsoft 進行分析的附件) ，請參閱 [將郵件和檔案報告給 microsoft](report-junk-email-messages-to-microsoft.md)。
