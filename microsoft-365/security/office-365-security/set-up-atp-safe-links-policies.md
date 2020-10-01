@@ -1,9 +1,9 @@
 ---
-title: 設定 Office 365 ATP 安全連結原則
+title: 設定 Office 365 ATP 中的安全連結原則
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -16,157 +16,460 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
-description: 設定安全連結原則來保護貴組織，以防範 Word、Excel、PowerPoint 和 Visio 檔案，以及電子郵件中的惡意連結。
-ms.openlocfilehash: 76d0aba026b96251a64163ef7d7f518fe0b1e1b1
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+description: 系統管理員可以瞭解如何在 Office 365 Advanced 威脅防護 (ATP) 中，查看、建立、修改及刪除安全連結原則及全域安全連結設定。
+ms.openlocfilehash: 58088955a6909238c1fe5202688e0b8d1ab8e6c6
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279581"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327222"
 ---
-# <a name="set-up-office-365-atp-safe-links-policies"></a><span data-ttu-id="aeaa8-103">設定 Office 365 ATP 安全連結原則</span><span class="sxs-lookup"><span data-stu-id="aeaa8-103">Set up Office 365 ATP Safe Links policies</span></span>
+# <a name="set-up-safe-links-policies-in-office-365-atp"></a><span data-ttu-id="b6152-103">設定 Office 365 ATP 中的安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-103">Set up Safe Links policies in Office 365 ATP</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> <span data-ttu-id="aeaa8-104">本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-104">This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span> <span data-ttu-id="aeaa8-105">如果您是家用版使用者且正在尋找 Outlook 中安全連結的相關資訊，請參閱[進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-105">If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).</span></span>
+> <span data-ttu-id="b6152-104">本文適用於擁有 [Office 365 進階威脅防護](office-365-atp.md)的企業客戶。</span><span class="sxs-lookup"><span data-stu-id="b6152-104">This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span> <span data-ttu-id="b6152-105">如果您是尋找 Outlook 中 Safelinks 相關資訊的家用使用者，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。</span><span class="sxs-lookup"><span data-stu-id="b6152-105">If you are a home user looking for information about Safelinks in Outlook, see [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).</span></span>
 
-<span data-ttu-id="aeaa8-106">[Atp 安全連結](atp-safe-links.md) 是 [Office 365 的「高級威脅](office-365-atp.md))  (防護」中的一項功能，可協助您保護組織免受網路釣魚和其他攻擊中所使用的惡意連結。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-106">[ATP Safe Links](atp-safe-links.md) is a feature in [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) that can help protect your organization from malicious links used in phishing and other attacks.</span></span> <span data-ttu-id="aeaa8-107">如果您擁有 [安全性 & 合規性中心](permissions-in-the-security-and-compliance-center.md)的必要許可權，您可以設定 ATP 安全連結原則，以協助確保當使用者按一下網址 (URLs) 時，您的組織受到保護。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-107">If you have the necessary [permissions for the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md), you can set up ATP Safe Links policies to help ensure that when people click web addresses (URLs), your organization is protected.</span></span> <span data-ttu-id="aeaa8-108">您可以將 ATP 安全連結原則設定為掃描電子郵件中的 URL 和 Office 文件中的 URL。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-108">Your ATP Safe Links policies can be configured to scan URLs in email and URLs in Office documents.</span></span> <span data-ttu-id="aeaa8-109">ATP 安全連結會掃描內送的電子郵件中是否有已知的惡意超連結和包含惡意程式碼的附件。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-109">ATP Safe Links scans incoming email for known malicious hyperlinks and for attachments containing malware.</span></span> <span data-ttu-id="aeaa8-110">此功能會將掃描的 URLs 寫入 Microsoft 的標準 URL 格式首碼 <https://nam01.safelinks.protection.outlook.com> 。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-110">This feature rewrites scanned URLs to Microsoft’s standard URL format prefix <https://nam01.safelinks.protection.outlook.com>.</span></span> <span data-ttu-id="aeaa8-111">在重新寫入連結後，會針對任何可能的惡意內容進行分析。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-111">Once a link is rewritten, it is analyzed for any potential malicious content.</span></span> <span data-ttu-id="aeaa8-112">啟用 ATP 安全連結後，如果使用者按一下電子郵件中的連結，且該 URL 已被組織的自訂封鎖 URL 清單封鎖，或是該 URL 已確定為惡意的，就會開啟警告頁面。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-112">With ATP Safe Links enabled, if a user clicks on a link in an email and the URL has been blocked by your organization's custom blocked URL list or if the URL is determined to be malicious, a warning page will open.</span></span>
+<span data-ttu-id="b6152-106">安全連結是 [Office 365 的「高級威脅防護 ](office-365-atp.md) 」中的功能 (ATP) ，可在郵件流程中提供輸入電子郵件的 URL 掃描，並在電子郵件和其他位置中，按一下驗證 URLs 和連結的時間。</span><span class="sxs-lookup"><span data-stu-id="b6152-106">Safe Links is a feature in [Office 365 Advanced Threat Protection (ATP)](office-365-atp.md) that provides URL scanning of inbound email messages in mail flow, and time of click verification of URLs and links in email messages and in other locations.</span></span> <span data-ttu-id="b6152-107">如需詳細資訊，請參閱 [Office 365 ATP 中的安全連結](atp-safe-links.md)。</span><span class="sxs-lookup"><span data-stu-id="b6152-107">For more information, see [Safe Links in Office 365 ATP](atp-safe-links.md).</span></span>
 
-<span data-ttu-id="aeaa8-113">當 ATP 安全連結重新寫入 URL 後，如果郵件是轉寄或回復的，該 URL 就會繼續重新寫入。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-113">Once ATP Safe Links has rewritten a URL, if the message is forwarded or replied to, the URL will remain rewritten.</span></span> <span data-ttu-id="aeaa8-114">新增至正在回復或轉寄之郵件的其他連結將不會被重新寫入。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-114">Additional links added to the message being replied to or forwarded will not be rewritten.</span></span>
+<span data-ttu-id="b6152-108">沒有內建或預設的安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-108">There's no built-in or default Safe Links policy.</span></span> <span data-ttu-id="b6152-109">若要取得 URLs 的安全連結掃描，您必須建立一個或多個安全連結原則，如本文所述。</span><span class="sxs-lookup"><span data-stu-id="b6152-109">To get Safe Links scanning of URLs, you need to create one or more Safe Links policies as described in this article.</span></span>
 
-<span data-ttu-id="aeaa8-115">[我們會持續將新功能新增至 ATP](office-365-atp.md#new-features-in-office-365-atp)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-115">[New features are continually being added to ATP](office-365-atp.md#new-features-in-office-365-atp).</span></span> <span data-ttu-id="aeaa8-116">新增新功能後，您可能需要調整現有的 ATP 安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-116">As new features are added, you may need to make adjustments to your existing ATP Safe Links policies.</span></span>
+<span data-ttu-id="b6152-110">您可以使用 Exchange Online 中的信箱，設定安全性 & 合規性中心或 PowerShell (Exchange Online 365 PowerShell 中的安全連結原則;獨立 EOP PowerShell 適用于沒有 Exchange Online 信箱的組織，但使用 Office 365 ATP 附加元件訂閱) 。</span><span class="sxs-lookup"><span data-stu-id="b6152-110">You can configure Safe Links policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for eligible Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes, but with Office 365 ATP add-on subscriptions).</span></span>
 
-## <a name="what-to-do"></a><span data-ttu-id="aeaa8-117">處理方式</span><span class="sxs-lookup"><span data-stu-id="aeaa8-117">What to do</span></span>
+<span data-ttu-id="b6152-111">安全連結原則的基本元素如下：</span><span class="sxs-lookup"><span data-stu-id="b6152-111">The basic elements of a Safe Links policy are:</span></span>
 
-1. <span data-ttu-id="aeaa8-118">檢閱必要條件。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-118">Review the prerequisites.</span></span>
+- <span data-ttu-id="b6152-112">**安全連結原則**：開啟安全連結保護，開啟即時 URL 掃描，指定在傳遞郵件之前是否等候即時掃描，請開啟 [內部郵件的掃描]，指定是否要在 URLs 追蹤使用者按一下，並指定是否允許使用者按一下原始 URL 的 trough。</span><span class="sxs-lookup"><span data-stu-id="b6152-112">**The safe links policy**: Turn on Safe Links protection, turn on real-time URL scanning, specify whether to wait for real-time scanning to complete before delivering the message, turn on scanning for internal messages, specify whether to track user clicks on URLs, and specify whether to allow users to click trough to the original URL.</span></span>
+- <span data-ttu-id="b6152-113">**安全連結規則**：指定原則套用至) 的優先順序和收件者篩選 (。</span><span class="sxs-lookup"><span data-stu-id="b6152-113">**The safe links rule**: Specifies the priority and recipient filters (who the policy applies to).</span></span>
 
-2. <span data-ttu-id="aeaa8-119">檢閱和編輯每個人都適用的預設 ATP 安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-119">Review and edit the default ATP Safe Links policy that applies to everyone.</span></span> <span data-ttu-id="aeaa8-120">例如，您可以[設定 ATP 安全連結的自訂封鎖 URL 清單](set-up-a-custom-blocked-urls-list-atp.md)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-120">For example, you can [set up your custom blocked URLs list for ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).</span></span>
+<span data-ttu-id="b6152-114">當您在安全性 & 合規性中心管理安全連結原則時，這兩個元素之間的差異並不明顯：</span><span class="sxs-lookup"><span data-stu-id="b6152-114">The difference between these two elements isn't obvious when you manage Safe Links polices in the Security & Compliance Center:</span></span>
 
-3. <span data-ttu-id="aeaa8-121">新增或編輯特定電子郵件收件者的原則，包括[針對 ATP 安全連結設定自訂「不要重寫」URL 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-121">Add or edit policies for specific email recipients, including [setting up your custom "Do not rewrite" URLs list for ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).</span></span>
+- <span data-ttu-id="b6152-115">當您建立安全連結原則時，實際上是建立安全連結規則和關聯的安全連結原則，同時為這兩者使用相同的名稱。</span><span class="sxs-lookup"><span data-stu-id="b6152-115">When you create a Safe Links policy, you're actually creating a safe links rule and the associated safe links policy at the same time using the same name for both.</span></span>
+- <span data-ttu-id="b6152-116">當您修改安全連結原則時，與名稱、優先順序、啟用或停用的設定或收件者篩選器相關的設定會修改安全連結規則。</span><span class="sxs-lookup"><span data-stu-id="b6152-116">When you modify a Safe Links policy, settings related to the name, priority, enabled or disabled, and recipient filters modify the safe links rule.</span></span> <span data-ttu-id="b6152-117">所有其他設定都會修改相關聯的安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-117">All other settings modify the associated safe links policy.</span></span>
+- <span data-ttu-id="b6152-118">當您移除安全連結原則時，會移除安全連結規則和相關聯的安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-118">When you remove a Safe Links policy, the safe links rule and the associated safe links policy are removed.</span></span>
 
-4. <span data-ttu-id="aeaa8-122">了解 ATP 安全連結原則選項 (在本文中)，包括最近變更的設定。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-122">Learn about ATP Safe Links policy options (in this article), including settings for recent changes.</span></span>
-
-## <a name="step-1-review-the-prerequisites"></a><span data-ttu-id="aeaa8-123">步驟 1：檢閱必要條件</span><span class="sxs-lookup"><span data-stu-id="aeaa8-123">Step 1: Review the prerequisites</span></span>
-
-- <span data-ttu-id="aeaa8-124">請確認您組織有 [Office 365 進階威脅防護](office-365-atp.md)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-124">Make sure that your organization has [Office 365 Advanced Threat Protection](office-365-atp.md).</span></span>
-
-- <span data-ttu-id="aeaa8-125">請確定您具有必要權限。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-125">Make sure that you have the necessary permissions.</span></span> <span data-ttu-id="aeaa8-126">若要定義 (或編輯) ATP 原則，您必須獲派適當的角色。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-126">To define (or edit) ATP policies, you must be assigned an appropriate role.</span></span> <span data-ttu-id="aeaa8-127">下表中有一些範例描述：</span><span class="sxs-lookup"><span data-stu-id="aeaa8-127">Some examples are described in the following table:</span></span>
-
-    |<span data-ttu-id="aeaa8-128">角色</span><span class="sxs-lookup"><span data-stu-id="aeaa8-128">Role</span></span>|<span data-ttu-id="aeaa8-129">指派位置/條件</span><span class="sxs-lookup"><span data-stu-id="aeaa8-129">Where/how assigned</span></span>|
-    |---|---|
-    |<span data-ttu-id="aeaa8-130">全域管理員</span><span class="sxs-lookup"><span data-stu-id="aeaa8-130">global administrator</span></span>|<span data-ttu-id="aeaa8-131">簽署購買 Microsoft 365 的人員預設為全域系統管理員。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-131">The person who signs up to buy Microsoft 365 is a global admin by default.</span></span> <span data-ttu-id="aeaa8-132"> (請參閱 [關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) 以深入瞭解。 ) </span><span class="sxs-lookup"><span data-stu-id="aeaa8-132">(See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)</span></span>|
-    |<span data-ttu-id="aeaa8-133">安全性系統管理員</span><span class="sxs-lookup"><span data-stu-id="aeaa8-133">Security Administrator</span></span>|<span data-ttu-id="aeaa8-134">Azure Active Directory 系統管理中心 (<https://aad.portal.azure.com>)</span><span class="sxs-lookup"><span data-stu-id="aeaa8-134">Azure Active Directory admin center (<https://aad.portal.azure.com>)</span></span>|
-    |<span data-ttu-id="aeaa8-135">Exchange Online 組織管理</span><span class="sxs-lookup"><span data-stu-id="aeaa8-135">Exchange Online Organization Management</span></span>|<span data-ttu-id="aeaa8-136">Exchange 系統管理中心 (<https://outlook.office365.com/ecp>)</span><span class="sxs-lookup"><span data-stu-id="aeaa8-136">Exchange admin center (<https://outlook.office365.com/ecp>)</span></span> <br><span data-ttu-id="aeaa8-137">或</span><span class="sxs-lookup"><span data-stu-id="aeaa8-137">or</span></span> <br>  <span data-ttu-id="aeaa8-138">PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))</span><span class="sxs-lookup"><span data-stu-id="aeaa8-138">PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))</span></span>|
-
-    <span data-ttu-id="aeaa8-139">若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-139">To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
-
-- <span data-ttu-id="aeaa8-140">確定 Office 用戶端已設定為使用[新式驗證](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) (這會用於 Office 文件中的 ATP 安全連結保護)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-140">Make sure that Office clients are configured to use [Modern Authentication](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016) (this is for ATP Safe Links protection in Office documents).</span></span>
-
-- <span data-ttu-id="aeaa8-141">[了解 ATP 安全連結原則選項](#step-4-learn-about-atp-safe-links-policy-options) (在本文中)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-141">[Learn about ATP Safe Links policy options](#step-4-learn-about-atp-safe-links-policy-options) (in this article).</span></span>
-
-- <span data-ttu-id="aeaa8-142">最多可允許30分鐘，以將新的或更新的原則散佈至所有 Microsoft 365 資料中心。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-142">Allow up to 30 minutes for your new or updated policy to spread to all Microsoft 365 datacenters.</span></span>
-
-## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a><span data-ttu-id="aeaa8-143">步驟2：定義 (或檢閱) 每個人都適用的 ATP 安全連結原則</span><span class="sxs-lookup"><span data-stu-id="aeaa8-143">Step 2: Define (or review) the ATP Safe Links policy that applies to everyone</span></span>
-
-<span data-ttu-id="aeaa8-144">當您擁有 [Office 365 進階威脅防護](office-365-atp.md)時，您會有貴組織中每個人都適用的預設 ATP 安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-144">When you have [Office 365 Advanced Threat Protection](office-365-atp.md), you will have a default ATP Safe Links policy that applies to everyone in your organization.</span></span> <span data-ttu-id="aeaa8-145">請務必檢閱，並視需要編輯預設原則。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-145">Make sure to review, and if needed, edit your default policy.</span></span>
-
-1. <span data-ttu-id="aeaa8-146">移至 <https://protection.office.com> 然後以您的公司或學校帳戶當入。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-146">Go to <https://protection.office.com> and sign in with your work or school account.</span></span>
-
-2. <span data-ttu-id="aeaa8-147">在左側導覽中，選擇 [威脅管理]\*\*\*\* 下方的 [原則]\*\* \> [安全連結]\*\*\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-147">In the left navigation, under **Threat management**, choose **Policy \>** **Safe Links**.</span></span>
-
-3. <span data-ttu-id="aeaa8-148">在 **套用於整個組織的原則**區段中，選取 [預設] \*\*\*\*，然後選擇 [編輯] \*\*\*\* (編輯按鈕類似鉛筆)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-148">In the **Policies that apply to the entire organization** section, select **Default**, and then choose **Edit** (the Edit button resembles a pencil).</span></span>
-
-   ![按一下 [編輯] 已編輯安全連結防護預設原則](../../media/d08f9615-d947-4033-813a-d310ec2c8cca.png)
-
-4. <span data-ttu-id="aeaa8-150">在 [封鎖下列 URL]\*\*\*\* 區段中，指定您想要防止貴組織中的人員造訪的一或多個 URL。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-150">In the **Block the following URLs** section, specify one or more URLs that you want to prevent people in your organization from visiting.</span></span> <span data-ttu-id="aeaa8-151">(請參閱[使用 ATP 安全連結來設定自訂的封鎖 URL 清單](set-up-a-custom-blocked-urls-list-atp.md)。)</span><span class="sxs-lookup"><span data-stu-id="aeaa8-151">(See [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).)</span></span>
-
-5. <span data-ttu-id="aeaa8-152">在 [套用到電子郵件以外內容的設定]\*\*\*\* 區段中，選取 (或清除) 您要使用的選項。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-152">In the **Settings that apply to content except email** section, select (or clear) the options you want to use.</span></span> <span data-ttu-id="aeaa8-153">(建議您選取所有選項。)</span><span class="sxs-lookup"><span data-stu-id="aeaa8-153">(We recommend that you select all the options.)</span></span>
-
-6. <span data-ttu-id="aeaa8-154">選擇 [儲存]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-154">Choose **Save**.</span></span>
-    
-## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients"></a><span data-ttu-id="aeaa8-155">步驟3：新增 (或編輯適用于所有或特定電子郵件收件者的) ATP 安全連結原則</span><span class="sxs-lookup"><span data-stu-id="aeaa8-155">Step 3: Add (or edit) ATP Safe Links policies that apply to all or specific email recipients</span></span>
-
-<span data-ttu-id="aeaa8-156">在您已複查 (或編輯) 適用于每個人的預設 ATP 安全連結原則之後，下一步是定義適用于所有或特定電子郵件收件者的其他原則。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-156">After you have reviewed (or edited) the default ATP Safe Links policy that applies to everyone, your next step is to define additional policies that would apply to all or specific email recipients.</span></span> <span data-ttu-id="aeaa8-157">例如，您可以定義其他原則，或為所有員工建立更多細微限制，以指定預設原則的例外狀況。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-157">For example, you can specify exceptions to your default policy by defining an additional policy or create more granular restrictions for all employees.</span></span>
-  
-1. <span data-ttu-id="aeaa8-158">移至 <https://protection.office.com> 然後以您的公司或學校帳戶當入。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-158">Go to <https://protection.office.com> and sign in with your work or school account.</span></span> 
-    
-2. <span data-ttu-id="aeaa8-159">在左側導覽中，選擇 [威脅管理]\*\*\*\* 下方的 [原則]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-159">In the left navigation, under **Threat management**, choose **Policy**.</span></span>
-
-3. <span data-ttu-id="aeaa8-160">選擇 [安全連結]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-160">Choose **Safe Links**.</span></span>
-
-4. <span data-ttu-id="aeaa8-161">在 [適用於特定收件者的原則]\*\*\*\* 區段中，選擇 [新增]\*\*\*\* ([新增] 按鈕類似加號 (**+**))。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-161">In the **Policies that apply to specific recipients** section, choose **New** (the New button resembles a plus sign ( **+**)).</span></span>
-
-   ![選擇 [新增] 以新增特定電子郵件收件者的安全連結原則](../../media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
-
-5. <span data-ttu-id="aeaa8-163">指定原則的名稱、描述及設定。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-163">Specify the name, description, and settings for your policy.</span></span>
-
-   <span data-ttu-id="aeaa8-164">**範例：** 若要設定名為「禁止直接點選」的原則，該原則不允許貴組織中特定群組的人員在沒有 ATP 安全連結保護的情況下點選特定網站，您可以指定下列建議設定：</span><span class="sxs-lookup"><span data-stu-id="aeaa8-164">**Example:** To set up a policy called "no direct click through" that does not allow people in a certain group in your organization to click through to a specific website without ATP Safe Links protection, you might specify the following recommended settings:</span></span>
-
-   - <span data-ttu-id="aeaa8-165">在 [名稱]\*\*\*\* 方塊中，鍵入「禁止直接點選」。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-165">In the **Name** box, type no direct click through.</span></span>
-
-   - <span data-ttu-id="aeaa8-166">在 [描述]\*\*\*\* 方塊中，鍵入類似以下的描述：禁止特定群組中的人員在未經 ATP 安全連結驗證的情況下點選網站。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-166">In the **Description** box, type a description like, Prevents people in certain groups from clicking through to a website without ATP Safe Links verification.</span></span>
-
-   - <span data-ttu-id="aeaa8-167">在 [選取動作]\*\*\*\* 區段中，選擇 [開啟]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-167">In the **Select the action** section, choose **On**.</span></span>
-
-   - <span data-ttu-id="aeaa8-168">如果您想要為可疑和指向檔案的 URL 啟用 URL 引爆功能 (建議使用)，請選取 [針對可疑的連結和指向檔案的連結套用即時 URL 掃描]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-168">Select **Apply real-time URL scanning for suspicious links and links that point to files** if you would like to enable URL detonation for suspicious and file-pointing URLs (recommended).</span></span> <span data-ttu-id="aeaa8-169">如果您希望只有在完全掃描 URL 之後才讓使用者接收郵件，則選取 [等到 URL 掃描完成再傳遞郵件]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-169">And select **Wait for URL scanning to complete before delivering the message** if you wish to only have users receive messages after the URLs have been fully scanned.</span></span>
-
-   - <span data-ttu-id="aeaa8-170">如果您想要針對在組織內使用者間傳送的郵件啟用安全連結 (建議使用)，請選取 [將安全連結套用至組織內傳送的郵件]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-170">Select **Apply Safe Links to messages sent within the organization** if you would like to enable Safe Links for messages sent between users within your organization (recommended).</span></span>
-
-   - <span data-ttu-id="aeaa8-171">如果您不希望個別使用者覆寫「進行中的掃描」\*\* 或「已封鎖 URL」\*\* 通知頁面，請選取 [不允許使用者點選原始 URL]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-171">Select **Do not allow user to click through to original URL** if you do not wish the individual users to override a *scan in progress* or *URL blocked* notification pages.</span></span>
-
-   - <span data-ttu-id="aeaa8-172">(選用) 在 [不要重寫下列 URL]\*\*\*\* 區段中，指定一或多個被認為對貴組織很安全的 URL。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-172">(This is optional) In the **Do not rewrite the following URLs** section, specify one or more URLs that are considered to be safe for your organization.</span></span> <span data-ttu-id="aeaa8-173">(請參閱[使用 ATP 安全連結來設定自訂「不要重寫」URL 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))</span><span class="sxs-lookup"><span data-stu-id="aeaa8-173">(See [Set up a custom "Do not rewrite" URLs list using ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))</span></span>
-
-   - <span data-ttu-id="aeaa8-174">在 [套用至]\*\*\*\* 區段中，選擇 [收件者是以下的成員]\*\*\*\*，然後選擇您想要包含在原則中的群組。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-174">In the **Applied To** section, choose **The recipient is a member of**, and then choose the group(s) you want to include in your policy.</span></span> <span data-ttu-id="aeaa8-175">選擇 [新增]\*\*\*\*，然後選擇 [確認]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-175">Choose **Add**, and then choose **OK**.</span></span>
-
-6. <span data-ttu-id="aeaa8-176">選擇 [儲存]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-176">Choose **Save**.</span></span>
+<span data-ttu-id="b6152-119">在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。</span><span class="sxs-lookup"><span data-stu-id="b6152-119">In Exchange Online PowerShell or standalone EOP PowerShell, you manage the policy and the rule separately.</span></span> <span data-ttu-id="b6152-120">如需詳細資訊，請參閱本文稍後的 [使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全連結原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) 一節。</span><span class="sxs-lookup"><span data-stu-id="b6152-120">For more information, see the [Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies) section later in this article.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="aeaa8-177">具有較高優先順序的 ATP 安全連結原則將優先執行。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-177">ATP Safe Links policies with higher priority will take precedence.</span></span> <span data-ttu-id="aeaa8-178">如果使用者受制于兩個或多個原則，則只有較高優先順序的原則才能生效。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-178">If a user is subject to two or more policies, only the higher priority policy will take effect.</span></span> <span data-ttu-id="aeaa8-179">若要讓客戶原則優先順序，您必須提高原則的優先順序。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-179">If you want the customer policy to take precedence, you need to raise the priority of the policy.</span></span>
+> <span data-ttu-id="b6152-121">您可以在安全連結原則 **以外** 的安全連結保護中，設定全域設定。</span><span class="sxs-lookup"><span data-stu-id="b6152-121">You configure the global settings for Safe Links protection **outside** of Safe Links policies.</span></span> <span data-ttu-id="b6152-122">如需相關指示，請參閱 [設定 Office 365 ATP 中安全連結的通用設定](configure-global-settings-for-safe-links.md)。</span><span class="sxs-lookup"><span data-stu-id="b6152-122">For instructions, see [Configure global settings for Safe Links in Office 365 ATP](configure-global-settings-for-safe-links.md).</span></span>
 
-## <a name="step-4-learn-about-atp-safe-links-policy-options"></a><span data-ttu-id="aeaa8-180">步驟 4：了解 ATP 安全連結原則選項</span><span class="sxs-lookup"><span data-stu-id="aeaa8-180">Step 4: Learn about ATP Safe Links policy options</span></span>
+## <a name="what-do-you-need-to-know-before-you-begin"></a><span data-ttu-id="b6152-123">開始之前有哪些須知？</span><span class="sxs-lookup"><span data-stu-id="b6152-123">What do you need to know before you begin?</span></span>
 
-<span data-ttu-id="aeaa8-181">當您設定或編輯 ATP 安全連結原則時，會看到幾個可用的選項。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-181">As you set up or edit your ATP Safe Links policies, will see several options available.</span></span> <span data-ttu-id="aeaa8-182">如果您想知道這些選項的功能，下表會說明有每個選項及其效用。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-182">In case you are wondering what these options are, the following table describes each one and its effect.</span></span> <span data-ttu-id="aeaa8-183">請記住，要定義或編輯的主要 ATP 安全連結原則有兩種：</span><span class="sxs-lookup"><span data-stu-id="aeaa8-183">Remember that there are two main kinds of ATP Safe Links policies to define or edit:</span></span>
+- <span data-ttu-id="b6152-124">您要在 <https://protection.office.com/> 開啟安全性與合規性中心。</span><span class="sxs-lookup"><span data-stu-id="b6152-124">You open the Security & Compliance Center at <https://protection.office.com/>.</span></span> <span data-ttu-id="b6152-125">若要直接移至 [ **ATP 安全連結** ] 頁面，請使用 <https://protection.office.com/safelinksv2> 。</span><span class="sxs-lookup"><span data-stu-id="b6152-125">To go directly to the **ATP Safe Links** page, use <https://protection.office.com/safelinksv2>.</span></span>
 
-- <span data-ttu-id="aeaa8-184">每個人都適用的[預設原則](#default-policy-options)；以及</span><span class="sxs-lookup"><span data-stu-id="aeaa8-184">a [default policy](#default-policy-options) that applies to everyone; and</span></span>
-- <span data-ttu-id="aeaa8-185">[特定收件者的其他原則](#policies-that-apply-to-specific-email-recipients)</span><span class="sxs-lookup"><span data-stu-id="aeaa8-185">additional [policies for specific recipients](#policies-that-apply-to-specific-email-recipients)</span></span>
+- <span data-ttu-id="b6152-126">若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。</span><span class="sxs-lookup"><span data-stu-id="b6152-126">To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).</span></span> <span data-ttu-id="b6152-127">若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。</span><span class="sxs-lookup"><span data-stu-id="b6152-127">To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).</span></span>
 
-### <a name="default-policy-options"></a><span data-ttu-id="aeaa8-186">預設原則選項</span><span class="sxs-lookup"><span data-stu-id="aeaa8-186">Default policy options</span></span>
+- <span data-ttu-id="b6152-128">若要查看、建立、修改及刪除安全連結原則，您必須是下列其中一個角色群組的成員：</span><span class="sxs-lookup"><span data-stu-id="b6152-128">To view, create, modify, and delete Safe Links policies, you need to be a member of one of the following role groups:</span></span>
 
-<span data-ttu-id="aeaa8-187">預設原則選項適用於貴組織中的每個人。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-187">Default policy options apply to everyone in your organization.</span></span>
+  - <span data-ttu-id="b6152-129">**組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 </span><span class="sxs-lookup"><span data-stu-id="b6152-129">**Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).</span></span>
+  - <span data-ttu-id="b6152-130">[Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的**組織管理**。</span><span class="sxs-lookup"><span data-stu-id="b6152-130">**Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).</span></span>
 
-****
+- <span data-ttu-id="b6152-131">如需安全連結原則的建議設定，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)。</span><span class="sxs-lookup"><span data-stu-id="b6152-131">For our recommended settings for Safe Links policies, see [Safe Links policy settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).</span></span>
 
-|<span data-ttu-id="aeaa8-188">此選項</span><span class="sxs-lookup"><span data-stu-id="aeaa8-188">This option</span></span>|<span data-ttu-id="aeaa8-189">執行此動作</span><span class="sxs-lookup"><span data-stu-id="aeaa8-189">Does this</span></span>|
-|---|---|
-|<span data-ttu-id="aeaa8-190">**封鎖下列 URL**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-190">**Block the following URLs**</span></span>|<span data-ttu-id="aeaa8-191">可讓貴組織擁有自動封鎖的自訂 URL 清單。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-191">Enables your organization to have a custom list of URLs that are automatically blocked.</span></span> <span data-ttu-id="aeaa8-192">使用者按一下此清單中的 URL 後，就會前往說明 URL 為何遭到封鎖的[警告頁面](atp-safe-links-warning-pages.md)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-192">When users click a URL in this list, they'll be taken to a [warning page](atp-safe-links-warning-pages.md) that explains why the URL is blocked.</span></span> <span data-ttu-id="aeaa8-193">若要深入了解，請參閱[使用 Office 365 ATP 安全連結來設定自訂封鎖的 URL 清單](set-up-a-custom-blocked-urls-list-atp.md)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-193">To learn more, see [Set up a custom blocked URLs list using Office 365 ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).</span></span>|
-|<span data-ttu-id="aeaa8-194">**適用于企業的 Microsoft 365 應用程式、Office for iOS 和 Android**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-194">**Microsoft 365 Apps for enterprise, Office for iOS and Android**</span></span>| <span data-ttu-id="aeaa8-195">選取此選項時，ATP 安全連結保護適用于 Word、Excel URLs 及 PowerPoint 檔案中的 Windows 或 Mac 作業系統、Outlook 中的電子郵件、iOS 或 Android 裝置上的 Office 檔、Windows 上的 Visio 2016 檔案，以及在 Office app 的 web 版本中 PowerPoint (開啟的檔案（前提是使用者已登入 Office 365）。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-195">When this option is selected, ATP Safe Links protection is applied to URLs in Word, Excel, and PowerPoint files on Windows or Mac OS, email messages in Outlook, Office documents on iOS or Android devices, Visio 2016 files on Windows, and files open in the web versions of Office apps (Word, PowerPoint, Excel, Outlook, and OneNote), provided the user has signed in to Office 365.</span></span>|
-|<span data-ttu-id="aeaa8-196">**當使用者按一下 ATP 安全連結時不要追蹤**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-196">**Don't track when users click ATP Safe Links**</span></span>|<span data-ttu-id="aeaa8-197">選取此選項時，不會儲存 [Word]、[Excel]、[PowerPoint]、[Visio 檔] 及 [Outlook 電子郵件訊息] 中 URLs 的資料。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-197">When this option is selected, click data for URLs in Word, Excel, PowerPoint, Visio documents, and Outlook email messages is not stored.</span></span>|
-|<span data-ttu-id="aeaa8-198">**不要讓使用者點選原始 URL 的 ATP 安全連結**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-198">**Don't let users click through ATP Safe Links to original URL**</span></span>|<span data-ttu-id="aeaa8-199">若選取此選項，使用者就無法繼續將[警告頁面](atp-safe-links-warning-pages.md)傳送到被判定是惡意的 URL。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-199">When this option is selected, users cannot proceed past a [warning page](atp-safe-links-warning-pages.md) to a URL that is determined to be malicious.</span></span>|
-|
+- <span data-ttu-id="b6152-132">最多允許30分鐘，以套用新的或更新的原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-132">Allow up to 30 minutes for a new or updated policy to be applied.</span></span>
 
-### <a name="policies-that-apply-to-specific-email-recipients"></a><span data-ttu-id="aeaa8-200">適用於特定電子郵件收件者的原則</span><span class="sxs-lookup"><span data-stu-id="aeaa8-200">Policies that apply to specific email recipients</span></span>
+- <span data-ttu-id="b6152-133">[我們會持續將新功能新增至 ATP](office-365-atp.md#new-features-in-office-365-atp)。</span><span class="sxs-lookup"><span data-stu-id="b6152-133">[New features are continually being added to ATP](office-365-atp.md#new-features-in-office-365-atp).</span></span> <span data-ttu-id="b6152-134">新增新功能時，您可能需要調整現有的安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-134">As new features are added, you may need to make adjustments to your existing Safe Links policies.</span></span>
 
-****
+## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a><span data-ttu-id="b6152-135">使用安全性 & 規範中心建立安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-135">Use the Security & Compliance Center to create Safe Links policies</span></span>
 
-|<span data-ttu-id="aeaa8-201">此選項</span><span class="sxs-lookup"><span data-stu-id="aeaa8-201">This option</span></span>|<span data-ttu-id="aeaa8-202">執行此動作</span><span class="sxs-lookup"><span data-stu-id="aeaa8-202">Does this</span></span>|
-|---|---|
-|<span data-ttu-id="aeaa8-203">**關閉**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-203">**Off**</span></span>|<span data-ttu-id="aeaa8-204">不要掃描電子郵件中的 URL。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-204">Does not scan URLs in email messages.</span></span>  <br/> <span data-ttu-id="aeaa8-205">可讓您定義例外狀況規則，例如以下規則：不要掃描特定收件者群組的電子郵件中的 URL。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-205">Enables you to define an exception rule, such as a rule that does not scan URLs in email messages for a specific group of recipients.</span></span>|
-|<span data-ttu-id="aeaa8-206">**開啟**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-206">**On**</span></span>|<span data-ttu-id="aeaa8-207">當使用者按一下電子郵件中的 URL 並啟用 Windows 上 Outlook (C2R) 中的 ATP 安全連結時，重寫 URL 以透過 ATP 安全連結防護路由傳送使用者。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-207">Rewrites URLs to route users through ATP Safe Links protection when the users click URLs in email messages and enables ATP Safe Links within Outlook (C2R) on Windows.</span></span>  <br/> <span data-ttu-id="aeaa8-208">如果 URL 沒有令人信服的信譽，則在點選已封鎖或惡意的 URL 清單時檢查 URL，並以非同步方式在背景觸發 URL 引爆。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-208">Checks a URL when clicked against a list of blocked or malicious URLs and triggers a detonation of the URL in the background asynchronously if the URL does not have a valid reputation.</span></span>|
-|<span data-ttu-id="aeaa8-209">**針對可疑的連結和指向檔案的連結套用即時 URL 掃描**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-209">**Apply real-time URL scanning for suspicious links and links that point to files**</span></span>|<span data-ttu-id="aeaa8-210">若選取此選項，則會掃描指向可下載內容的可疑 URL 和連結。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-210">When this option is selected, suspicious URLs and links that point to downloadable content are scanned.</span></span>|
-|<span data-ttu-id="aeaa8-211">**等待 URL 掃描完成再傳遞郵件**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-211">**Wait for URL scanning to complete before delivering the message**</span></span>|<span data-ttu-id="aeaa8-212">若選取此選項，則會保留包含要掃描 URL 的郵件，直到 URL 完成掃描且確認是安全的，才會傳遞這些郵件。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-212">When this option is selected, messages that contain URLs to be scanned will be held until the URLs finish scanning and are confirmed to be safe before the messages are delivered.</span></span>|
-|<span data-ttu-id="aeaa8-213">**將安全連結套用至組織內傳送的郵件**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-213">**Apply Safe Links to messages sent within the organization**</span></span> <br/> | <span data-ttu-id="aeaa8-214">此選項若可使用並已選取，假設電子郵件帳戶託管於 Office 365，則 ATP 安全連結保護就會套用至在貴組織中的人員間傳送的電子郵件。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-214">When this option is available and selected, ATP Safe Links protection is applied to email messages sent between people in your organization, provided the email accounts are hosted in Office 365.</span></span>|
-|<span data-ttu-id="aeaa8-215">**不要追蹤使用者點選**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-215">**Do not track user clicks**</span></span>|<span data-ttu-id="aeaa8-216">若選取此選項，則不會儲存來自外部寄件者的電子郵件中 URL 的點選資料。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-216">When this option is selected, click data for URLs in email from external senders is not stored.</span></span> <span data-ttu-id="aeaa8-217">目前不支援追蹤組織內傳送的電子郵件中連結的 URL 點選。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-217">URL click tracking for links within email messages sent within the organization is currently not supported.</span></span>|
-|<span data-ttu-id="aeaa8-218">**不允許使用者點選原始 URL**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-218">**Do not allow users to click through to original URL**</span></span>|<span data-ttu-id="aeaa8-219">若選取此選項，使用者就無法繼續將[警告頁面](atp-safe-links-warning-pages.md)傳送到被判定是惡意的 URL。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-219">When this option is selected, users cannot proceed past a [warning page](atp-safe-links-warning-pages.md) to a URL that is determined to be malicious.</span></span>|
-|<span data-ttu-id="aeaa8-220">**不要重寫下列 URL**</span><span class="sxs-lookup"><span data-stu-id="aeaa8-220">**Do not rewrite the following URLs**</span></span>|<span data-ttu-id="aeaa8-221">將 URL 保留原樣。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-221">Leaves URLs as they are.</span></span> <span data-ttu-id="aeaa8-222">保留不需要掃描貴組織中特定電子郵件收件者群組的自訂安全 URL 清單。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-222">Keeps a custom list of safe URLs that don't need scanning for a specific group of email recipients in your organization.</span></span> <span data-ttu-id="aeaa8-223">如需詳細資料 (包括支援萬用字元星號 (\*) 的近期變更)，請參閱[使用 ATP 安全連結來設定自訂「不要重寫」URL 清單](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-223">See [Set up a custom "Do not rewrite" URLs list using ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) for more details, including recent changes to support for wildcard asterisks (\*).</span></span>|
-|
+<span data-ttu-id="b6152-136">在安全性 & 合規性中心建立自訂安全連結原則，會同時使用相同的名稱建立安全連結規則及相關聯的安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-136">Creating a custom Safe Links policy in the Security & Compliance Center creates the safe links rule and the associated safe links policy at the same time using the same name for both.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="aeaa8-224">後續步驟</span><span class="sxs-lookup"><span data-stu-id="aeaa8-224">Next steps</span></span>
+1. <span data-ttu-id="b6152-137">在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。</span><span class="sxs-lookup"><span data-stu-id="b6152-137">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
 
-<span data-ttu-id="aeaa8-225">在您的 ATP 安全連結原則就緒後，您就可以透過查看報告，查看 ATP 對您的組織的運作方式。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-225">Once your ATP Safe Links policies are in place, you can see how ATP is working for your organization by viewing reports.</span></span> <span data-ttu-id="aeaa8-226">請參閱下列資源，以深入了解詳細資訊：</span><span class="sxs-lookup"><span data-stu-id="aeaa8-226">See the following resources to learn more:</span></span>
+2. <span data-ttu-id="b6152-138">在 [ **安全連結** ] 頁面上，按一下 [ **建立**]。</span><span class="sxs-lookup"><span data-stu-id="b6152-138">On the **Safe Links** page, click **Create**.</span></span>
 
-- [<span data-ttu-id="aeaa8-227">檢視 Office 365 進階威脅防護的報告</span><span class="sxs-lookup"><span data-stu-id="aeaa8-227">View reports for Office 365 Advanced Threat Protection</span></span>](view-reports-for-atp.md)
+3. <span data-ttu-id="b6152-139">[ **新增安全連結原則** ] 嚮導隨即開啟。</span><span class="sxs-lookup"><span data-stu-id="b6152-139">The **New Safe Links policy** wizard opens.</span></span> <span data-ttu-id="b6152-140">在 [ **命名您的原則** ] 頁面上，設定下列設定：</span><span class="sxs-lookup"><span data-stu-id="b6152-140">On the **Name your policy** page, configure the following settings:</span></span>
 
-- [<span data-ttu-id="aeaa8-228">使用安全性與合規性中心中的 Explorer</span><span class="sxs-lookup"><span data-stu-id="aeaa8-228">Use Explorer in the Security & Compliance Center</span></span>](threat-explorer.md)
+   - <span data-ttu-id="b6152-141">**名稱**：輸入原則的唯一描述性名稱。</span><span class="sxs-lookup"><span data-stu-id="b6152-141">**Name**: Enter a unique, descriptive name for the policy.</span></span>
 
-<span data-ttu-id="aeaa8-229">隨時掌握最新的 ATP 功能。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-229">Stay on top of new features coming to ATP.</span></span> <span data-ttu-id="aeaa8-230">瀏覽 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=O365)。</span><span class="sxs-lookup"><span data-stu-id="aeaa8-230">visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365).</span></span>
+   - <span data-ttu-id="b6152-142">**說明**：輸入原則的選擇性說明。</span><span class="sxs-lookup"><span data-stu-id="b6152-142">**Description**: Enter an optional description for the policy.</span></span>
+
+   <span data-ttu-id="b6152-143">完成後，按 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="b6152-143">When you're finished, click **Next**.</span></span>
+
+4. <span data-ttu-id="b6152-144">在顯示的 [ **設定** ] 頁面上，設定下列設定：</span><span class="sxs-lookup"><span data-stu-id="b6152-144">On the **Settings** page that appears, configure the following settings:</span></span>
+
+   - <span data-ttu-id="b6152-145">**在郵件中選取未知可能惡意 URLs 的動作**：選取 [ **開啟**]。</span><span class="sxs-lookup"><span data-stu-id="b6152-145">**Select the action for unknown potentially malicious URLs in messages**: Select **On**.</span></span>
+
+   - <span data-ttu-id="b6152-146">**在郵件中選取未知可能惡意 URLs 的動作**：選取 [ **開啟** ] 或 [保留 **預設值]** [選取]。</span><span class="sxs-lookup"><span data-stu-id="b6152-146">**Select the action for unknown potentially malicious URLs in messages**: Select **On** or leave the default value **Off** selected.</span></span>
+
+   - <span data-ttu-id="b6152-147">**對指向檔案的可疑連結和連結套用即時 URL 掃描**：選取此設定可在電子郵件訊息中啟用連結的即時掃描。</span><span class="sxs-lookup"><span data-stu-id="b6152-147">**Apply real-time URL scanning for suspicious links and links that point to files**: Select this setting to enable real-time scanning of links in email messages.</span></span>
+
+   - <span data-ttu-id="b6152-148">**等候 URL 掃描完成後，才能傳遞郵件**：選取此設定可等到即時 URL 掃描完成之後，才會傳遞郵件。</span><span class="sxs-lookup"><span data-stu-id="b6152-148">**Wait for URL scanning to complete before delivering the message**: Select this setting to wait for real-time URL scanning to complete before delivering the message.</span></span>
+
+   - <span data-ttu-id="b6152-149">套用**安全連結至組織內傳送的電子郵件**：選取此設定可將安全連結原則套用至內部寄件者和內部收件者之間的郵件。</span><span class="sxs-lookup"><span data-stu-id="b6152-149">**Apply safe links to email messages sent within the organization**: Select this setting to apply the Safe Links policy to messages between internal senders and internal recipients.</span></span>
+
+   - <span data-ttu-id="b6152-150">**請勿追蹤使用者點擊：請**將此設定保留為未選取狀態，以啟用追蹤使用者按一下電子郵件中的 URLs。</span><span class="sxs-lookup"><span data-stu-id="b6152-150">**Do not track user clicks**: Leave this setting unselected to enable the tracking user clicks on URLs in email messages.</span></span>
+
+   - <span data-ttu-id="b6152-151">**不允許使用者依序按一下原始 url**：選取此設定可在 [警告頁面](atp-safe-links.md#warning-pages-from-safe-links)中，禁止使用者按一下原始 url。</span><span class="sxs-lookup"><span data-stu-id="b6152-151">**Do not allow users to click through to original URL**: Select this setting to block users from clicking through to the original URL in [warning pages](atp-safe-links.md#warning-pages-from-safe-links).</span></span>
+
+   - <span data-ttu-id="b6152-152">**請勿重新寫入下列 URLs**：允許存取以安全連結封鎖的指定 URLs。</span><span class="sxs-lookup"><span data-stu-id="b6152-152">**Do not rewrite the following URLs**: Allows access the specified URLs that would otherwise be blocked by Safe Links.</span></span>
+
+     <span data-ttu-id="b6152-153">在方塊中，輸入您想要的 URL 或值，然後按一下</span><span class="sxs-lookup"><span data-stu-id="b6152-153">In the box, type the URL or value that you want, and then click</span></span> ![新增按鈕圖示](../../media/ITPro-EAC-AddIcon.png)<span data-ttu-id="b6152-155">.</span><span class="sxs-lookup"><span data-stu-id="b6152-155">.</span></span>
+
+     <span data-ttu-id="b6152-156">若要移除現有的專案，請選取該專案，然後按一下</span><span class="sxs-lookup"><span data-stu-id="b6152-156">To remove an existing entry, select it and then click</span></span> ![刪除按鈕圖示](../../media/ITPro-EAC-DeleteIcon.png)<span data-ttu-id="b6152-158">.</span><span class="sxs-lookup"><span data-stu-id="b6152-158">.</span></span>
+
+     <span data-ttu-id="b6152-159">如需輸入語法，請參閱「 [不要重新寫入下列 URLs 的輸入語法」清單](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。</span><span class="sxs-lookup"><span data-stu-id="b6152-159">For entry syntax, see [Entry syntax for the "Do not rewrite the following URLs" list](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).</span></span>
+
+   <span data-ttu-id="b6152-160">如需這些設定的詳細資訊，請參閱 Microsoft 小組的電子郵件訊息和[安全連結設定](atp-safe-links.md#safe-links-settings-for-microsoft-teams)[的安全連結設定](atp-safe-links.md#safe-links-settings-for-email-messages)。</span><span class="sxs-lookup"><span data-stu-id="b6152-160">For detailed information about these settings, see [Safe Links settings for email messages](atp-safe-links.md#safe-links-settings-for-email-messages) and [Safe Links settings for Microsoft Teams](atp-safe-links.md#safe-links-settings-for-microsoft-teams).</span></span>
+
+   <span data-ttu-id="b6152-161">如需標準和嚴格原則設定的建議值，請參閱 [安全連結原則設定](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings)。</span><span class="sxs-lookup"><span data-stu-id="b6152-161">For more the recommended values for Standard and Strict policy settings, see [Safe Links policy settings](recommended-settings-for-eop-and-office365-atp.md#safe-links-policy-settings).</span></span>
+
+   <span data-ttu-id="b6152-162">完成後，按 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="b6152-162">When you're finished, click **Next**.</span></span>
+
+5. <span data-ttu-id="b6152-163">在出現的 [套用 **至** ] 頁面上，識別套用原則的內部收件者。</span><span class="sxs-lookup"><span data-stu-id="b6152-163">On the **Applied to** page that appears, identify the internal recipients that the policy applies to.</span></span>
+
+   <span data-ttu-id="b6152-164">您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。</span><span class="sxs-lookup"><span data-stu-id="b6152-164">You can only use a condition or exception once, but you can specify multiple values for the condition or exception.</span></span> <span data-ttu-id="b6152-165">相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。</span><span class="sxs-lookup"><span data-stu-id="b6152-165">Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_).</span></span> <span data-ttu-id="b6152-166">不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<member of group 1\>_)。</span><span class="sxs-lookup"><span data-stu-id="b6152-166">Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).</span></span>
+
+   <span data-ttu-id="b6152-167">按一下 [ **新增條件**]。</span><span class="sxs-lookup"><span data-stu-id="b6152-167">Click **Add a condition**.</span></span> <span data-ttu-id="b6152-168">在出現的下拉式清單中，選取 [ **適用于**下列條件的條件：</span><span class="sxs-lookup"><span data-stu-id="b6152-168">In the dropdown that appears, select a condition under **Applied if**:</span></span>
+
+   - <span data-ttu-id="b6152-169">**收件者是**：指定您組織中的一或多個信箱、郵件使用者或郵件連絡人。</span><span class="sxs-lookup"><span data-stu-id="b6152-169">**The recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization.</span></span>
+   - <span data-ttu-id="b6152-170">**收件者以成員的身分存在於**：指定您組織中的一或多個群組。</span><span class="sxs-lookup"><span data-stu-id="b6152-170">**The recipient is a member of**: Specifies one or more groups in your organization.</span></span>
+   - <span data-ttu-id="b6152-171">**收件者網域為**：指定組織中一或多個已設定公認網域中的收件者。</span><span class="sxs-lookup"><span data-stu-id="b6152-171">**The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in your organization.</span></span>
+
+   <span data-ttu-id="b6152-172">選取條件後，會出現對應的下拉式清單，其中有 **其中** 一個方塊。</span><span class="sxs-lookup"><span data-stu-id="b6152-172">After you select the condition, a corresponding dropdown appears with an **Any of these** box.</span></span>
+
+   - <span data-ttu-id="b6152-173">在方塊中按一下，並在值清單中向內移動，以選取。</span><span class="sxs-lookup"><span data-stu-id="b6152-173">Click in the box and scroll through the list of values to select.</span></span>
+   - <span data-ttu-id="b6152-174">按一下方塊中的 [開始輸入]，以篩選清單並選取值。</span><span class="sxs-lookup"><span data-stu-id="b6152-174">Click in the box and start typing to filter the list and select a value.</span></span>
+   - <span data-ttu-id="b6152-175">若要新增其他值，請按一下方塊中的空白區域。</span><span class="sxs-lookup"><span data-stu-id="b6152-175">To add additional values, click in an empty area in the box.</span></span>
+   - <span data-ttu-id="b6152-176">若要移除個別專案， **Remove**請按一下 ![ ](../../media/scc-remove-icon.png) 值上的 [移除移除圖示]。</span><span class="sxs-lookup"><span data-stu-id="b6152-176">To remove individual entries, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the value.</span></span>
+   - <span data-ttu-id="b6152-177">若要移除整個條件，請**Remove**按一下 ![ ](../../media/scc-remove-icon.png) 條件上的 [移除移除圖示]。</span><span class="sxs-lookup"><span data-stu-id="b6152-177">To remove the whole condition, click **Remove** ![Remove icon](../../media/scc-remove-icon.png) on the condition.</span></span>
+
+   <span data-ttu-id="b6152-178">若要新增其他條件，請按一下 [ **新增條件** ]，然後選取 [套用 **于 if**中的剩餘值]。</span><span class="sxs-lookup"><span data-stu-id="b6152-178">To add an additional condition, click **Add a condition** and select a remaining value under **Applied if**.</span></span>
+
+   <span data-ttu-id="b6152-179">若要新增例外狀況，請按一下 [ **新增條件** ]，然後選取 [ **除外 if**] 底下的例外狀況。</span><span class="sxs-lookup"><span data-stu-id="b6152-179">To add exceptions, click **Add a condition** and select an exception under **Except if**.</span></span> <span data-ttu-id="b6152-180">設定和行為就像是條件。</span><span class="sxs-lookup"><span data-stu-id="b6152-180">The settings and behavior are exactly like the conditions.</span></span>
+
+   <span data-ttu-id="b6152-181">完成後，按 [下一步]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="b6152-181">When you're finished, click **Next**.</span></span>
+
+6. <span data-ttu-id="b6152-182">在 [ **複查您的設定** ] 頁面上，複查您的設定。</span><span class="sxs-lookup"><span data-stu-id="b6152-182">On the **Review your settings** page that appears, review your settings.</span></span> <span data-ttu-id="b6152-183">您可以按一下每個設定的 [ **編輯** ] 進行修改。</span><span class="sxs-lookup"><span data-stu-id="b6152-183">You can click **Edit** on each setting to modify it.</span></span>
+
+   <span data-ttu-id="b6152-184">完成後，請按一下 **[完成]**。</span><span class="sxs-lookup"><span data-stu-id="b6152-184">When you're finished, click **Finish**.</span></span>
+
+## <a name="use-the-security--compliance-center-to-view-safe-links-policies"></a><span data-ttu-id="b6152-185">使用安全性 & 規範中心來查看安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-185">Use the Security & Compliance Center to view Safe Links policies</span></span>
+
+1. <span data-ttu-id="b6152-186">在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。</span><span class="sxs-lookup"><span data-stu-id="b6152-186">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
+
+2. <span data-ttu-id="b6152-187">在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。</span><span class="sxs-lookup"><span data-stu-id="b6152-187">On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+   <span data-ttu-id="b6152-188">「即時」顯示原則詳細資料</span><span class="sxs-lookup"><span data-stu-id="b6152-188">The policy details appear in a fly out</span></span>
+
+## <a name="use-the-security--compliance-center-to-modify-safe-links-policies"></a><span data-ttu-id="b6152-189">使用安全性 & 規範中心來修改安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-189">Use the Security & Compliance Center to modify Safe Links policies</span></span>
+
+1. <span data-ttu-id="b6152-190">在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。</span><span class="sxs-lookup"><span data-stu-id="b6152-190">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
+
+2. <span data-ttu-id="b6152-191">在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。</span><span class="sxs-lookup"><span data-stu-id="b6152-191">On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+3. <span data-ttu-id="b6152-192">在 [原則詳細資料] 顯示的 [飛出] 中，按一下 [ **編輯原則**]。</span><span class="sxs-lookup"><span data-stu-id="b6152-192">In the policy details fly out that appears, click **Edit policy**.</span></span>
+
+<span data-ttu-id="b6152-193">[飛出] 中的可用設定與 [ [使用安全性 & 規範中心] 建立安全連結原則](#use-the-security--compliance-center-to-create-safe-links-policies) 一節中所述。</span><span class="sxs-lookup"><span data-stu-id="b6152-193">The available settings in the fly out that appears are identical to those described in the [Use the Security & Compliance Center to create Safe Links policies](#use-the-security--compliance-center-to-create-safe-links-policies) section.</span></span>
+
+<span data-ttu-id="b6152-194">若要啟用或停用原則或設定原則優先順序順序，請參閱下列各節。</span><span class="sxs-lookup"><span data-stu-id="b6152-194">To enable or disable a policy or set the policy priority order, see the following sections.</span></span>
+
+### <a name="enable-or-disable-safe-links-policies"></a><span data-ttu-id="b6152-195">啟用或停用安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-195">Enable or disable Safe Links policies</span></span>
+
+1. <span data-ttu-id="b6152-196">在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。</span><span class="sxs-lookup"><span data-stu-id="b6152-196">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
+
+2. <span data-ttu-id="b6152-197">請注意 [ **狀態** ] 欄中的值：</span><span class="sxs-lookup"><span data-stu-id="b6152-197">Notice the value in the **Status** column:</span></span>
+
+   - <span data-ttu-id="b6152-198">將切換開關向左移動以停用原則：</span><span class="sxs-lookup"><span data-stu-id="b6152-198">Move the toggle to the left to disable the policy:</span></span> ![關閉原則](../../media/scc-toggle-off.png)<span data-ttu-id="b6152-200">.</span><span class="sxs-lookup"><span data-stu-id="b6152-200">.</span></span>
+
+   - <span data-ttu-id="b6152-201">將切換開關向右移動以啟用原則：</span><span class="sxs-lookup"><span data-stu-id="b6152-201">Move the toggle to the right to enable the policy:</span></span> ![開啟原則](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)<span data-ttu-id="b6152-203">.</span><span class="sxs-lookup"><span data-stu-id="b6152-203">.</span></span>
+
+### <a name="set-the-priority-of-safe-links-policies"></a><span data-ttu-id="b6152-204">設定安全連結原則的優先順序</span><span class="sxs-lookup"><span data-stu-id="b6152-204">Set the priority of Safe Links policies</span></span>
+
+<span data-ttu-id="b6152-205">根據預設，安全連結原則的優先順序會根據在 (較舊的原則中所建立的順序，優先順序低於舊版的原則) 。</span><span class="sxs-lookup"><span data-stu-id="b6152-205">By default, Safe Links policies are given a priority that's based on the order they were created in (newer polices are lower priority than older policies).</span></span> <span data-ttu-id="b6152-206">較小的優先順序數字表示原則的優先順序較高 (0 最高)，原則是依據優先順序進行處理，較高優先順序的原則會在較低優先順序的原則前面進行處理。</span><span class="sxs-lookup"><span data-stu-id="b6152-206">A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies).</span></span> <span data-ttu-id="b6152-207">不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。</span><span class="sxs-lookup"><span data-stu-id="b6152-207">No two policies can have the same priority, and policy processing stops after the first policy is applied.</span></span>
+
+<span data-ttu-id="b6152-208">如需更多有關優先的排序及如何評估和應用多項原則，請參照 [電子郵件保護的順序和優先順序](how-policies-and-protections-are-combined.md)。</span><span class="sxs-lookup"><span data-stu-id="b6152-208">For more information about the order of precedence and how multiple policies are evaluated and applied, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).</span></span>
+
+<span data-ttu-id="b6152-209">安全連結原則會以處理的順序顯示， (第一個原則的 **Priority** 值為 0) 。</span><span class="sxs-lookup"><span data-stu-id="b6152-209">Safe Links policies are displayed in the order they're processed (the first policy has the **Priority** value 0).</span></span>
+
+<span data-ttu-id="b6152-210">**附注**：在 [安全性 & 規範中心] 中，您只能在建立安全連結原則之後變更其優先順序。</span><span class="sxs-lookup"><span data-stu-id="b6152-210">**Note**: In the Security & Compliance Center, you can only change the priority of the Safe Links policy after you create it.</span></span> <span data-ttu-id="b6152-211">在 PowerShell 中，您可以在建立安全連結規則時覆寫預設優先順序 (這會影響現有規則) 的優先順序。</span><span class="sxs-lookup"><span data-stu-id="b6152-211">In PowerShell, you can override the default priority when you create the safe links rule (which can affect the priority of existing rules).</span></span>
+
+<span data-ttu-id="b6152-212">若要變更原則的優先順序，請在清單中將原則上移或下移 (您無法在安全性與合規性中心直接修改 [優先順序]\*\*\*\* 數字)。</span><span class="sxs-lookup"><span data-stu-id="b6152-212">To change the priority of a policy, move the policy up or down in the list (you can't directly modify the **Priority** number in the Security & Compliance Center).</span></span>
+
+1. <span data-ttu-id="b6152-213">在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。</span><span class="sxs-lookup"><span data-stu-id="b6152-213">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
+
+2. <span data-ttu-id="b6152-214">在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。</span><span class="sxs-lookup"><span data-stu-id="b6152-214">On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+3. <span data-ttu-id="b6152-215">在顯示的 [原則詳細資料] 中，按一下 [可用優先順序] 按鈕：</span><span class="sxs-lookup"><span data-stu-id="b6152-215">In the policy details fly out that appears, click the available priority button:</span></span>
+
+   - <span data-ttu-id="b6152-216">**優先順序**值為**0**的安全連結原則只有「**降低優先順序**」按鈕可用。</span><span class="sxs-lookup"><span data-stu-id="b6152-216">The Safe Links policy with the **Priority** value **0** has only the **Decrease priority** button available.</span></span>
+
+   - <span data-ttu-id="b6152-217">具有最低 **優先順序** 值的安全連結原則 (例如， **3**) 只有 [ **增加優先順序** ] 按鈕可用。</span><span class="sxs-lookup"><span data-stu-id="b6152-217">The Safe Links policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** button available.</span></span>
+
+   - <span data-ttu-id="b6152-218">如果您有三個或更多的安全連結原則，則最高和最低優先順序值之間的原則都有可用的 [ **增加優先順序** ] 和 [ **降低優先順序** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="b6152-218">If you have three or more Safe Links policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** buttons available.</span></span>
+
+4. <span data-ttu-id="b6152-219">按一下 [ **增加優先順序** ] 或 [ **降低優先順序** ] 以變更 [ **優先順序** ] 值。</span><span class="sxs-lookup"><span data-stu-id="b6152-219">Click **Increase priority** or **Decrease priority** to change the **Priority** value.</span></span>
+
+5. <span data-ttu-id="b6152-220">完成時，請按一下 [關閉]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="b6152-220">When you're finished, click **Close**.</span></span>
+
+## <a name="use-the-security--compliance-center-to-remove-safe-links-policies"></a><span data-ttu-id="b6152-221">使用安全性 & 規範中心移除安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-221">Use the Security & Compliance Center to remove Safe Links policies</span></span>
+
+1. <span data-ttu-id="b6152-222">在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。</span><span class="sxs-lookup"><span data-stu-id="b6152-222">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span>
+
+2. <span data-ttu-id="b6152-223">在 [ **安全連結** ] 頁面上，從清單中選取一個原則，並按一下該原則 (不要) 選取此核取方塊。</span><span class="sxs-lookup"><span data-stu-id="b6152-223">On the **Safe Links** page, select a policy from the list and click on it (don't select the check box).</span></span>
+
+3. <span data-ttu-id="b6152-224">在顯示的 [原則詳細資料] 中，按一下 [ **刪除原則**]，然後在出現的警告對話方塊中按一下 [ **是]** 。</span><span class="sxs-lookup"><span data-stu-id="b6152-224">In the policy details fly out that appears, click **Delete policy**, and then click **Yes** in the warning dialog that appears.</span></span>
+
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a><span data-ttu-id="b6152-225">使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-225">Use Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Links policies</span></span>
+
+<span data-ttu-id="b6152-226">如先前所述，安全連結原則包含安全連結原則和安全連結規則。</span><span class="sxs-lookup"><span data-stu-id="b6152-226">As previously described, a Safe Links policy consists of a safe links policy and a safe links rule.</span></span>
+
+<span data-ttu-id="b6152-227">在 PowerShell 中，安全連結原則與安全連結規則之間的差異很明顯。</span><span class="sxs-lookup"><span data-stu-id="b6152-227">In PowerShell, the difference between safe links policies and safe links rules is apparent.</span></span> <span data-ttu-id="b6152-228">您可以使用\*\* \* -SafeLinksPolicy\*\* Cmdlet 來管理安全連結原則，也可以使用\*\* \* -SafeLinksRule\*\* Cmdlet 來管理安全連結規則。</span><span class="sxs-lookup"><span data-stu-id="b6152-228">You manage safe links policies by using the **\*-SafeLinksPolicy** cmdlets, and you manage safe links rules by using the **\*-SafeLinksRule** cmdlets.</span></span>
+
+- <span data-ttu-id="b6152-229">在 PowerShell 中，您必須先建立安全連結原則，然後建立安全連結規則，識別套用規則的原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-229">In PowerShell, you create the safe links policy first, then you create the safe links rule that identifies the policy that the rule applies to.</span></span>
+- <span data-ttu-id="b6152-230">在 PowerShell 中，您可以分別修改 [安全連結原則] 和 [安全連結] 規則中的設定。</span><span class="sxs-lookup"><span data-stu-id="b6152-230">In PowerShell, you modify the settings in the safe links policy and the safe links rule separately.</span></span>
+- <span data-ttu-id="b6152-231">當您移除 PowerShell 的安全連結原則時，不會自動移除對應的安全連結規則，反之亦然。</span><span class="sxs-lookup"><span data-stu-id="b6152-231">When you remove a safe links policy from PowerShell, the corresponding safe links rule isn't automatically removed, and vice versa.</span></span>
+
+### <a name="use-powershell-to-create-safe-links-policies"></a><span data-ttu-id="b6152-232">使用 PowerShell 建立安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-232">Use PowerShell to create Safe Links policies</span></span>
+
+<span data-ttu-id="b6152-233">在 PowerShell 中建立安全連結原則的過程包括兩個步驟：</span><span class="sxs-lookup"><span data-stu-id="b6152-233">Creating a Safe Links policy in PowerShell is a two-step process:</span></span>
+
+1. <span data-ttu-id="b6152-234">建立安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-234">Create the safe links policy.</span></span>
+2. <span data-ttu-id="b6152-235">建立安全連結規則，以指定套用規則的安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-235">Create the safe links rule that specifies the safe links policy that the rule applies to.</span></span>
+
+ <span data-ttu-id="b6152-236">**附註**：</span><span class="sxs-lookup"><span data-stu-id="b6152-236">**Notes**:</span></span>
+
+- <span data-ttu-id="b6152-237">您可以建立新的安全連結規則，並將現有的未關聯的安全連結原則指派給它。</span><span class="sxs-lookup"><span data-stu-id="b6152-237">You can create a new safe links rule and assign an existing, unassociated safe links policy to it.</span></span> <span data-ttu-id="b6152-238">安全連結規則無法與一個以上的安全連結原則相關聯。</span><span class="sxs-lookup"><span data-stu-id="b6152-238">A safe links rule can't be associated with more than one safe links policy.</span></span>
+
+- <span data-ttu-id="b6152-239">您可以在 [安全性 & 規範中心] PowerShell 中的新安全連結原則上設定下列設定，直到您建立原則為止：</span><span class="sxs-lookup"><span data-stu-id="b6152-239">You can configure the following settings on new safe links policies in PowerShell that aren't available in the Security & Compliance Center until after you create the policy:</span></span>
+
+  - <span data-ttu-id="b6152-240">_在_ `$false` **New-SafeLinksRule** Cmdlet) 上，建立新原則做為已停用 (。</span><span class="sxs-lookup"><span data-stu-id="b6152-240">Create the new policy as disabled (_Enabled_ `$false` on the **New-SafeLinksRule** cmdlet).</span></span>
+  - <span data-ttu-id="b6152-241">在_Priority_ _\<Number\>_ **New-SafeLinksRule** Cmdlet) 上建立 (優先順序) 時，設定原則的優先順序。</span><span class="sxs-lookup"><span data-stu-id="b6152-241">Set the priority of the policy during creation (_Priority_ _\<Number\>_) on the **New-SafeLinksRule** cmdlet).</span></span>
+
+- <span data-ttu-id="b6152-242">您在 PowerShell 中建立的新安全連結原則不會顯示在安全性 & 規範中心，除非您將原則指派至安全連結規則。</span><span class="sxs-lookup"><span data-stu-id="b6152-242">A new safe links policy that you create in PowerShell isn't visible in the Security & Compliance Center until you assign the policy to a safe links rule.</span></span>
+
+#### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a><span data-ttu-id="b6152-243">步驟1：使用 PowerShell 建立安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-243">Step 1: Use PowerShell to create a safe links policy</span></span>
+
+<span data-ttu-id="b6152-244">若要建立安全連結原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b6152-244">To create a safe links policy, use this syntax:</span></span>
+
+```PowerShell
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEnabled <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-DoNotAllowClickThrough <$true | $false>] [-DoNotTrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+```
+
+<span data-ttu-id="b6152-245">**附註**：</span><span class="sxs-lookup"><span data-stu-id="b6152-245">**Notes**:</span></span>
+
+- <span data-ttu-id="b6152-246">如需 _DoNotRewriteUrls_ 參數所使用之專案語法的詳細資訊，請參閱 [[不要重新寫入下列 URLs] 清單中的輸入語法](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。</span><span class="sxs-lookup"><span data-stu-id="b6152-246">For details about the entry syntax to use for the _DoNotRewriteUrls_ parameter, see [Entry syntax for the "Do not rewrite the following URLs" list](atp-safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).</span></span>
+
+- <span data-ttu-id="b6152-247">如需使用**Set-SafeLinksPolicy** Cmdlet 修改現有的安全連結原則時可用於_DoNotRewriteUrls_參數的其他語法，請參閱本文稍後的[使用 PowerShell 修改安全連結原則](#use-powershell-to-modify-safe-links-policies)一節。</span><span class="sxs-lookup"><span data-stu-id="b6152-247">For additional syntax that you can use for the _DoNotRewriteUrls_ parameter when you modify existing safe links policies by using the **Set-SafeLinksPolicy** cmdlet, see the [Use PowerShell to modify safe links policies](#use-powershell-to-modify-safe-links-policies) section later in this article.</span></span>
+
+<span data-ttu-id="b6152-248">此範例會建立名為 Contoso 的安全連結原則，並提供下列值：</span><span class="sxs-lookup"><span data-stu-id="b6152-248">This example creates a safe links policy named Contoso All with the following values:</span></span>
+
+- <span data-ttu-id="b6152-249">開啟電子郵件訊息中的 URL 掃描和重新寫入。</span><span class="sxs-lookup"><span data-stu-id="b6152-249">Turn on URL scanning and rewriting in email messages.</span></span>
+- <span data-ttu-id="b6152-250">開啟小組中的 URL 掃描 (點擊 [只供預覽]) 。</span><span class="sxs-lookup"><span data-stu-id="b6152-250">Turn on URL scanning in Teams (TAP Preview only).</span></span>
+- <span data-ttu-id="b6152-251">開啟已按一下的即時掃描 URLs，包括指向檔案的按一下連結。</span><span class="sxs-lookup"><span data-stu-id="b6152-251">Turn on real-time scanning of clicked URLs, including clicked links that point to files.</span></span>
+- <span data-ttu-id="b6152-252">等候 URL 掃描完成後，才能傳遞郵件。</span><span class="sxs-lookup"><span data-stu-id="b6152-252">Wait for URL scanning to complete before delivering the message.</span></span>
+- <span data-ttu-id="b6152-253">開啟內部郵件的 URL 掃描及重新寫入。</span><span class="sxs-lookup"><span data-stu-id="b6152-253">Turn on URL scanning and rewriting for internal messages.</span></span>
+- <span data-ttu-id="b6152-254">追蹤與安全連結保護 (相關的使用者按一下。我們不會使用 _DoNotTrackUserClicks_ 參數，而預設值則是 $false，這表示會追蹤) 的使用者按一下。</span><span class="sxs-lookup"><span data-stu-id="b6152-254">Track user clicks related to Safe Links protection (we aren't using the _DoNotTrackUserClicks_ parameter, and the default value is $false, which means user clicks are tracked).</span></span>
+- <span data-ttu-id="b6152-255">不允許使用者依序按一下原始 URL。</span><span class="sxs-lookup"><span data-stu-id="b6152-255">Do not allow users to click through to the original URL.</span></span>
+
+```PowerShell
+New-SafeLinksPolicy -Name "Contoso All" -IsEnabled $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -DoNotAllowClickThrough $true
+```
+
+<span data-ttu-id="b6152-256">如需詳細的語法及參數資訊，請參閱 [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy)。</span><span class="sxs-lookup"><span data-stu-id="b6152-256">For detailed syntax and parameter information, see [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy).</span></span>
+
+#### <a name="step-2-use-powershell-to-create-a-safe-links-rule"></a><span data-ttu-id="b6152-257">步驟2：使用 PowerShell 建立安全連結規則</span><span class="sxs-lookup"><span data-stu-id="b6152-257">Step 2: Use PowerShell to create a safe links rule</span></span>
+
+<span data-ttu-id="b6152-258">若要建立安全連結規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b6152-258">To create a safe links rule, use this syntax:</span></span>
+
+```PowerShell
+New-SafeLinksRule -Name "<RuleName>" -SafeLinksPolicy "<PolicyName>" <Recipient filters> [<Recipient filter exceptions>] [-Comments "<OptionalComments>"] [-Enabled <$true | $false>]
+```
+
+<span data-ttu-id="b6152-259">此範例會建立名為 Contoso 的安全連結規則，且具有下列條件：</span><span class="sxs-lookup"><span data-stu-id="b6152-259">This example creates a safe links rule named Contoso All with the following conditions:</span></span>
+
+- <span data-ttu-id="b6152-260">此規則會與名為 Contoso All 的安全連結原則相關聯。</span><span class="sxs-lookup"><span data-stu-id="b6152-260">The rule is associated with the safe links policy named Contoso All.</span></span>
+- <span data-ttu-id="b6152-261">此規則會套用至 contoso.com 網域中的所有收件者。</span><span class="sxs-lookup"><span data-stu-id="b6152-261">The rule applies to all recipients in the contoso.com domain.</span></span>
+- <span data-ttu-id="b6152-262">因為我們沒有使用 _priority_ 參數，所以會使用預設的優先順序。</span><span class="sxs-lookup"><span data-stu-id="b6152-262">Because we aren't using the _Priority_ parameter, the default priority is used.</span></span>
+- <span data-ttu-id="b6152-263"> (未使用 _enabled_ 參數時，也會啟用該規則，且預設值為 `$true`) 。</span><span class="sxs-lookup"><span data-stu-id="b6152-263">The rule is enabled (we aren't using the _Enabled_ parameter, and the default value is `$true`).</span></span>
+
+```powershell
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
+```
+
+<span data-ttu-id="b6152-264">如需詳細的語法及參數資訊，請參閱 [New-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/new-safelinksrule)。</span><span class="sxs-lookup"><span data-stu-id="b6152-264">For detailed syntax and parameter information, see [New-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/new-safelinksrule).</span></span>
+
+### <a name="use-powershell-to-view-safe-links-policies"></a><span data-ttu-id="b6152-265">使用 PowerShell 來查看安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-265">Use PowerShell to view safe links policies</span></span>
+
+<span data-ttu-id="b6152-266">若要查看現有的安全連結原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b6152-266">To view existing safe links policies, use the following syntax:</span></span>
+
+```PowerShell
+Get-SafeLinksPolicy [-Identity "<PolicyIdentity>"] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+<span data-ttu-id="b6152-267">本範例會傳回所有安全連結原則的摘要清單。</span><span class="sxs-lookup"><span data-stu-id="b6152-267">This example returns a summary list of all safe links policies.</span></span>
+
+```PowerShell
+Get-SafeLinksPolicy | Format-Table Name
+```
+
+<span data-ttu-id="b6152-268">此範例會傳回名為 Contoso 主管的安全連結原則的詳細資訊。</span><span class="sxs-lookup"><span data-stu-id="b6152-268">This example returns detailed information for the safe links policy named Contoso Executives.</span></span>
+
+```PowerShell
+Get-SafeLinksPolicy -Identity "Contoso Executives"
+```
+
+<span data-ttu-id="b6152-269">如需詳細的語法及參數資訊，請參閱 [Get-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safelinkspolicy)。</span><span class="sxs-lookup"><span data-stu-id="b6152-269">For detailed syntax and parameter information, see [Get-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/get-safelinkspolicy).</span></span>
+
+### <a name="use-powershell-to-view-safe-links-rules"></a><span data-ttu-id="b6152-270">使用 PowerShell 來查看安全連結規則</span><span class="sxs-lookup"><span data-stu-id="b6152-270">Use PowerShell to view safe links rules</span></span>
+
+<span data-ttu-id="b6152-271">若要查看現有的安全連結規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b6152-271">To view existing safe links rules, use the following syntax:</span></span>
+
+```PowerShell
+Get-SafeLinksRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled] [| <Format-Table | Format-List> <Property1,Property2,...>]
+```
+
+<span data-ttu-id="b6152-272">本範例會傳回所有安全連結規則的摘要清單。</span><span class="sxs-lookup"><span data-stu-id="b6152-272">This example returns a summary list of all safe links rules.</span></span>
+
+```PowerShell
+Get-SafeLinksRule | Format-Table Name,State
+```
+
+<span data-ttu-id="b6152-273">若要依啟用或停用篩選規則的清單，請執行下列命令：</span><span class="sxs-lookup"><span data-stu-id="b6152-273">To filter the list by enabled or disabled rules, run the following commands:</span></span>
+
+```PowerShell
+Get-SafeLinksRule -State Disabled
+```
+
+```PowerShell
+Get-SafeLinksRule -State Enabled
+```
+
+<span data-ttu-id="b6152-274">此範例會傳回名為 Contoso 主管的安全連結規則的詳細資訊。</span><span class="sxs-lookup"><span data-stu-id="b6152-274">This example returns detailed information for the safe links rule named Contoso Executives.</span></span>
+
+```PowerShell
+Get-SafeLinksRule -Identity "Contoso Executives"
+```
+
+<span data-ttu-id="b6152-275">如需詳細的語法及參數資訊，請參閱 [Get-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/get-safelinksrule)。</span><span class="sxs-lookup"><span data-stu-id="b6152-275">For detailed syntax and parameter information, see [Get-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/get-safelinksrule).</span></span>
+
+### <a name="use-powershell-to-modify-safe-links-policies"></a><span data-ttu-id="b6152-276">使用 PowerShell 修改安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-276">Use PowerShell to modify safe links policies</span></span>
+
+<span data-ttu-id="b6152-277">您無法在 PowerShell 中重新命名安全連結原則 (**Set-SafeLinksPolicy** 指令程式沒有 _Name_ 參數) 。</span><span class="sxs-lookup"><span data-stu-id="b6152-277">You can't rename a safe links policy in PowerShell (the **Set-SafeLinksPolicy** cmdlet has no _Name_ parameter).</span></span> <span data-ttu-id="b6152-278">當您在安全性 & 合規性中心重新命名安全連結原則時，您只會重新命名安全連結 _規則_。</span><span class="sxs-lookup"><span data-stu-id="b6152-278">When you rename a Safe Links policy in the Security & Compliance Center, you're only renaming the safe links _rule_.</span></span>
+
+<span data-ttu-id="b6152-279">在 PowerShell 中修改安全連結原則的唯一進一步考慮，就是 (「[不要重新寫入下列 URLs」清單](atp-safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)) 的_DoNotRewriteUrls_參數可用語法：</span><span class="sxs-lookup"><span data-stu-id="b6152-279">The only additional consideration for modifying safe links policies in PowerShell is the available syntax for the _DoNotRewriteUrls_ parameter (the ["Do not rewrite the following URLs" list](atp-safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)):</span></span>
+
+- <span data-ttu-id="b6152-280">若要新增將取代任何現有專案的值，請使用下列語法： `"Entry1","Entry2,..."EntryN"` 。</span><span class="sxs-lookup"><span data-stu-id="b6152-280">To add values that will replace any existing entries, use the following syntax: `"Entry1","Entry2,..."EntryN"`.</span></span>
+- <span data-ttu-id="b6152-281">若要新增或移除值，而不影響其他現有的專案，請使用下列語法： `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`</span><span class="sxs-lookup"><span data-stu-id="b6152-281">To add or remove values without affecting other existing entries, use the following syntax: `@{Add="Entry1","Entry2"...; Remove="Entry3","Entry4"...}`</span></span>
+
+<span data-ttu-id="b6152-282">否則，當您建立安全連結原則時，可以使用相同的設定，如本文稍早的 [步驟1：使用 PowerShell 建立安全連結原則](#step-1-use-powershell-to-create-a-safe-links-policy) 一節所述。</span><span class="sxs-lookup"><span data-stu-id="b6152-282">Otherwise, the same settings are available when you create a safe links policy as described in the [Step 1: Use PowerShell to create a safe links policy](#step-1-use-powershell-to-create-a-safe-links-policy) section earlier in this article.</span></span>
+
+<span data-ttu-id="b6152-283">若要修改安全連結原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b6152-283">To modify a safe links policy, use this syntax:</span></span>
+
+```PowerShell
+Set-SafeLinksPolicy -Identity "<PolicyName>" <Settings>
+```
+
+<span data-ttu-id="b6152-284">如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy)。</span><span class="sxs-lookup"><span data-stu-id="b6152-284">For detailed syntax and parameter information, see [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy).</span></span>
+
+### <a name="use-powershell-to-modify-safe-links-rules"></a><span data-ttu-id="b6152-285">使用 PowerShell 修改安全連結規則</span><span class="sxs-lookup"><span data-stu-id="b6152-285">Use PowerShell to modify safe links rules</span></span>
+
+<span data-ttu-id="b6152-286">當您在 PowerShell 中修改安全連結規則時，唯一可用的設定是 _Enabled_ 參數，可讓您建立已停用的規則。</span><span class="sxs-lookup"><span data-stu-id="b6152-286">The only setting that's not available when you modify a safe links rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule.</span></span> <span data-ttu-id="b6152-287">若要啟用或停用現有的安全連結規則，請參閱下一節。</span><span class="sxs-lookup"><span data-stu-id="b6152-287">To enable or disable existing safe links rules, see the next section.</span></span>
+
+<span data-ttu-id="b6152-288">否則，當您建立一個規則時，當您在本文稍早 [使用 [步驟2：使用 PowerShell 建立安全連結規則](#step-2-use-powershell-to-create-a-safe-links-rule) ] 區段所述時，就可以使用相同的設定。</span><span class="sxs-lookup"><span data-stu-id="b6152-288">Otherwise, the same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create a safe links rule](#step-2-use-powershell-to-create-a-safe-links-rule) section earlier in this article.</span></span>
+
+<span data-ttu-id="b6152-289">若要修改安全連結規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b6152-289">To modify a safe links rule, use this syntax:</span></span>
+
+```PowerShell
+Set-SafeLinksRule -Identity "<RuleName>" <Settings>
+```
+
+<span data-ttu-id="b6152-290">如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule)。</span><span class="sxs-lookup"><span data-stu-id="b6152-290">For detailed syntax and parameter information, see [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).</span></span>
+
+### <a name="use-powershell-to-enable-or-disable-safe-links-rules"></a><span data-ttu-id="b6152-291">使用 PowerShell 來啟用或停用安全連結規則</span><span class="sxs-lookup"><span data-stu-id="b6152-291">Use PowerShell to enable or disable safe links rules</span></span>
+
+<span data-ttu-id="b6152-292">啟用或停用 PowerShell 中的安全連結規則可啟用或停用安全連結規則和指派的安全連結原則)  (的整體安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-292">Enabling or disabling a safe links rule in PowerShell enables or disables the whole Safe Links policy (the safe links rule and the assigned safe links policy).</span></span>
+
+<span data-ttu-id="b6152-293">若要啟用或停用 PowerShell 中的安全連結規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b6152-293">To enable or disable a safe links rule in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+<Enable-SafeLinksRule | Disable-SafeLinksRule> -Identity "<RuleName>"
+```
+
+<span data-ttu-id="b6152-294">本範例會停用名為「行銷部門」的安全連結規則。</span><span class="sxs-lookup"><span data-stu-id="b6152-294">This example disables the safe links rule named Marketing Department.</span></span>
+
+```PowerShell
+Disable-SafeLinksRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="b6152-295">此範例會啟用相同規則。</span><span class="sxs-lookup"><span data-stu-id="b6152-295">This example enables same rule.</span></span>
+
+```PowerShell
+Enable-SafeLinksRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="b6152-296">如需詳細的語法及參數資訊，請參閱 [Enable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/enable-safelinksrule) 和 [Disable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/disable-safelinksrule)。</span><span class="sxs-lookup"><span data-stu-id="b6152-296">For detailed syntax and parameter information, see [Enable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/enable-safelinksrule) and [Disable-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/disable-safelinksrule).</span></span>
+
+### <a name="use-powershell-to-set-the-priority-of-safe-links-rules"></a><span data-ttu-id="b6152-297">使用 PowerShell 設定安全連結規則的優先順序</span><span class="sxs-lookup"><span data-stu-id="b6152-297">Use PowerShell to set the priority of safe links rules</span></span>
+
+<span data-ttu-id="b6152-298">您可以對規則設定的最高優先順序值為 0。</span><span class="sxs-lookup"><span data-stu-id="b6152-298">The highest priority value you can set on a rule is 0.</span></span> <span data-ttu-id="b6152-299">您可以設定的最低值則取決於規則的數目。</span><span class="sxs-lookup"><span data-stu-id="b6152-299">The lowest value you can set depends on the number of rules.</span></span> <span data-ttu-id="b6152-300">例如，如果您有五個規則，則您可以使用 0 到 4 的優先順序值。</span><span class="sxs-lookup"><span data-stu-id="b6152-300">For example, if you have five rules, you can use the priority values 0 through 4.</span></span> <span data-ttu-id="b6152-301">變更現有規則的優先順序會對其他規則造成階層式影響。</span><span class="sxs-lookup"><span data-stu-id="b6152-301">Changing the priority of an existing rule can have a cascading effect on other rules.</span></span> <span data-ttu-id="b6152-302">例如，如果您有五個自訂規則 (優先順序 0 到 4)，而您將規則的優先順序變更為 2，則優先順序為 2 的現有規則會變更為優先順序 3，優先順序 3 的規則會變更為優先順序 4。</span><span class="sxs-lookup"><span data-stu-id="b6152-302">For example, if you have five custom rules (priorities 0 through 4), and you change the priority of a rule to 2, the existing rule with priority 2 is changed to priority 3, and the rule with priority 3 is changed to priority 4.</span></span>
+
+<span data-ttu-id="b6152-303">若要設定 PowerShell 中安全連結規則的優先順序，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b6152-303">To set the priority of a safe links rule in PowerShell, use the following syntax:</span></span>
+
+```PowerShell
+Set-SafeLinksRule -Identity "<RuleName>" -Priority <Number>
+```
+
+<span data-ttu-id="b6152-304">此範例會將規則 (名稱為 Marketing Department) 的優先順序設定為 2。</span><span class="sxs-lookup"><span data-stu-id="b6152-304">This example sets the priority of the rule named Marketing Department to 2.</span></span> <span data-ttu-id="b6152-305">優先順序小於或等於 2 的所有現有規則會減 1 (它們的優先順序數字會加 1)。</span><span class="sxs-lookup"><span data-stu-id="b6152-305">All existing rules that have a priority less than or equal to 2 are decreased by 1 (their priority numbers are increased by 1).</span></span>
+
+```PowerShell
+Set-SafeLinksRule -Identity "Marketing Department" -Priority 2
+```
+
+<span data-ttu-id="b6152-306">**附注**：若要在建立新規則時設定其優先順序，請改為在**New-SafeLinksRule** Cmdlet 上使用_priority_參數。</span><span class="sxs-lookup"><span data-stu-id="b6152-306">**Note**: To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-SafeLinksRule** cmdlet instead.</span></span>
+
+<span data-ttu-id="b6152-307">如需詳細的語法及參數資訊，請參閱 [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule)。</span><span class="sxs-lookup"><span data-stu-id="b6152-307">For detailed syntax and parameter information, see [Set-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/set-safelinksrule).</span></span>
+
+### <a name="use-powershell-to-remove-safe-links-policies"></a><span data-ttu-id="b6152-308">使用 PowerShell 移除安全連結原則</span><span class="sxs-lookup"><span data-stu-id="b6152-308">Use PowerShell to remove safe links policies</span></span>
+
+<span data-ttu-id="b6152-309">當您使用 PowerShell 來移除安全連結原則時，並不會移除對應的安全連結規則。</span><span class="sxs-lookup"><span data-stu-id="b6152-309">When you use PowerShell to remove a safe links policy, the corresponding safe links rule isn't removed.</span></span>
+
+<span data-ttu-id="b6152-310">若要移除 PowerShell 中的安全連結原則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b6152-310">To remove a safe links policy in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+Remove-SafeLinksPolicy -Identity "<PolicyName>"
+```
+
+<span data-ttu-id="b6152-311">此範例會移除名為「行銷部門」的安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-311">This example removes the safe links policy named Marketing Department.</span></span>
+
+```PowerShell
+Remove-SafeLinksPolicy -Identity "Marketing Department"
+```
+
+<span data-ttu-id="b6152-312">如需詳細的語法及參數資訊，請參閱 [Remove-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safelinkspolicy)。</span><span class="sxs-lookup"><span data-stu-id="b6152-312">For detailed syntax and parameter information, see [Remove-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-safelinkspolicy).</span></span>
+
+### <a name="use-powershell-to-remove-safe-links-rules"></a><span data-ttu-id="b6152-313">使用 PowerShell 移除安全連結規則</span><span class="sxs-lookup"><span data-stu-id="b6152-313">Use PowerShell to remove safe links rules</span></span>
+
+<span data-ttu-id="b6152-314">當您使用 PowerShell 來移除安全連結規則時，並不會移除對應的安全連結原則。</span><span class="sxs-lookup"><span data-stu-id="b6152-314">When you use PowerShell to remove a safe links rule, the corresponding safe links policy isn't removed.</span></span>
+
+<span data-ttu-id="b6152-315">若要移除 PowerShell 中的安全連結規則，請使用下列語法：</span><span class="sxs-lookup"><span data-stu-id="b6152-315">To remove a safe links rule in PowerShell, use this syntax:</span></span>
+
+```PowerShell
+Remove-SafeLinksRule -Identity "<PolicyName>"
+```
+
+<span data-ttu-id="b6152-316">此範例會移除名為「行銷部門」的安全連結規則。</span><span class="sxs-lookup"><span data-stu-id="b6152-316">This example removes the safe links rule named Marketing Department.</span></span>
+
+```PowerShell
+Remove-SafeLinksRule -Identity "Marketing Department"
+```
+
+<span data-ttu-id="b6152-317">如需詳細的語法及參數資訊，請參閱 [Remove-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/remove-safelinksrule)。</span><span class="sxs-lookup"><span data-stu-id="b6152-317">For detailed syntax and parameter information, see [Remove-SafeLinksRule](https://docs.microsoft.com/powershell/module/exchange/remove-safelinksrule).</span></span>
+
+<span data-ttu-id="b6152-318">若要確認安全連結正在掃描郵件，請檢查可用的高級威脅防護報告。</span><span class="sxs-lookup"><span data-stu-id="b6152-318">To verify that Safe Links is scanning messages, check the available Advanced Threat Protection reports.</span></span> <span data-ttu-id="b6152-319">如需詳細資訊，請參閱在[安全性 & 規範中心中](threat-explorer.md)[查看 Office 365 ATP 的報表](view-reports-for-atp.md)和使用 Explorer。</span><span class="sxs-lookup"><span data-stu-id="b6152-319">For more information, see [View reports for Office 365 ATP](view-reports-for-atp.md) and [Use Explorer in the Security & Compliance Center](threat-explorer.md).</span></span>
+
+## <a name="how-do-you-know-these-procedures-worked"></a><span data-ttu-id="b6152-320">如何知道這些程序是否正常運作？</span><span class="sxs-lookup"><span data-stu-id="b6152-320">How do you know these procedures worked?</span></span>
+
+<span data-ttu-id="b6152-321">若要確認您是否已成功建立、修改或移除安全連結原則，請執行下列任一步驟：</span><span class="sxs-lookup"><span data-stu-id="b6152-321">To verify that you've successfully created, modified, or removed Safe Links policies, do any of the following steps:</span></span>
+
+- <span data-ttu-id="b6152-322">在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]。</span><span class="sxs-lookup"><span data-stu-id="b6152-322">In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP Safe Links**.</span></span> <span data-ttu-id="b6152-323">請確認原則的清單、其 **狀態** 值，以及其 **優先順序** 值。</span><span class="sxs-lookup"><span data-stu-id="b6152-323">Verify the list of policies, their **Status** values, and their **Priority** values.</span></span> <span data-ttu-id="b6152-324">若要查看更多詳細資料，請從清單中選取原則，然後在 [飛出] 中查看詳細資料。</span><span class="sxs-lookup"><span data-stu-id="b6152-324">To view more details, select the policy from the list, and view the details in the fly out.</span></span>
+
+- <span data-ttu-id="b6152-325">在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中， \<Name\> 以原則或規則的名稱取代，執行下列命令，然後確認設定：</span><span class="sxs-lookup"><span data-stu-id="b6152-325">In Exchange Online PowerShell or Exchange Online Protection PowerShell, replace \<Name\> with the name of the policy or rule, run the following command, and verify the settings:</span></span>
+
+  ```PowerShell
+  Get-SafeLinksPolicy -Identity "<Name>"
+  ```
+
+  ```PowerShell
+  Get-SafeLinksRule -Identity "<Name>"
+  ```
