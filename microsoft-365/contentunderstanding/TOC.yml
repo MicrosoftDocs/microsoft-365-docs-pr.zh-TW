@@ -1,13 +1,15 @@
-- name: 開始使用 Microsoft SharePoint Syntex
+- name: 深入瞭解 Microsoft SharePoint Syntex
   items:
-    - name: Microsoft SharePoint Syntex 簡介
-      href: microsoft-sharepoint-syntex-overview.md
+    - name: SharePoint Syntex 簡介
+      href: index.md
     - name: 檔理解概述
       href: document-understanding-overview.md
     - name: 表單處理概覽
       href: form-processing-overview.md
     - name: 檔瞭解和表單處理模型之間的差異
       href: difference-between-document-understanding-and-form-processing-model.md
+- name: 快速入門模型
+  items:
     - name: 透過範例模型瞭解模型
       href: learn-about-document-understanding-models-through-the-sample-model.md
     - name: 建立內容中心

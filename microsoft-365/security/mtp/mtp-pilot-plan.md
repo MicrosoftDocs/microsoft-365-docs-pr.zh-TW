@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: a52ba30aa9b89dc78e9bd5a538cb530cd7bf6e00
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 21e6e3294b8fe722214d567963223b9e62737e34
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305363"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333675"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>規劃試驗 Microsoft 威脅防護專案 
 
@@ -31,8 +31,49 @@ ms.locfileid: "48305363"
 
 適用於：****
 - Microsoft 威脅防護
+<br>
+<table border="0" width="100%" align="center">
+  <tr style="text-align:center;">
+    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
+        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft Threat Protection project" title="規劃試驗 Microsoft 威脅防護專案" />
+      <br/>方案</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
+        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="準備您的 Microsoft 威脅防護試用實驗室或試驗環境" />
+      <br/>準備</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
+        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft Threat Protection attack simulations" title="執行 Microsoft 威脅防護攻擊模擬" />
+     <br/>類比攻擊</a><br>
+    </td>
+    <td align="center">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
+        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft Threat Protection pilot" title="關閉並摘要您的 Microsoft 威脅防護試驗" />
+     <br/>結束和摘要</a><br>
+    </td>
+  </tr>
+  <tr>
+    <td style="width:25%; border:0;">
+   
+    </td>
+    <td valign="top" style="width:25%; border:0;">
+    
+</td>
+    <td valign="top" style="width:25%; border:0;">
 
-為了確保您的試驗專案順利完成，您必須在開始時充分規劃並取得您的利益關係人的核准。 規劃的元素包含識別範圍、使用案例、需求及成功準則。 
+</td>    
+    <td valign="top" style="width:25%; border:0;">
+
+</td>
+  </tr>
+</table>
+
+您目前正在規劃階段。
+
+為了確保您的試驗專案順利完成，您必須在開始時充分規劃並取得您的利益關係人的核准。 規劃的元素包括識別範圍、使用案例、需求及成功準則。
 
 本指南會引導您瞭解如何規劃試驗專案。 
 
@@ -85,5 +126,5 @@ ms.locfileid: "48305363"
 
 
 ## <a name="next-step"></a>下一步
-|![準備階段](../../media/prepare.png) <br>[準備階段](prepare-mtpeval.md) | 準備您的 Microsoft 威脅防護試驗環境
+|![準備階段](../../media/mtp/prep.png) <br>[準備階段](prepare-mtpeval.md) | 準備您的 Microsoft 威脅防護試驗環境
 |:-------|:-----|

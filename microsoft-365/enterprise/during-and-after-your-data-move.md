@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 資料移動是指 Microsoft 將租使用者的服務和相關資料移至新的資料中心地理位置時，會發生後端作業。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: acd2601d32617c56019ca8b4bf8688ce40f5d76a
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2e63dd046f62f07e367b3632f96bf7261b99c9c
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950269"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333697"
 ---
 # <a name="during-and-after-your-data-move"></a>資料移動期間和之後
 
@@ -30,8 +30,7 @@ ms.locfileid: "47950269"
 > [!NOTE]
 > 每個服務的移動發生在不同的時間。 因此，您會在不同的時間看到每個服務所述的簡化功能。 
   
-觀賞 Microsoft 365 訊息中心，以在每個 Exchange Online 移動時進行確認（SharePoint 線上、小組和商務用 Skype 皆已完成）。 如下表所示，在註冊期間結束後，最多可能需要24個月才能完成所有要求的資料移動，以供特定地理位置的所有客戶使用。 如果您在移動之後看到您的承租人發生任何問題，請聯繫我們 [技術支援](https://go.microsoft.com/fwlink/p/?LinkID=522459) 以取得協助。 
-  
+觀賞 Microsoft 365 訊息中心，以在每個 Exchange Online、SharePoint 線上及小組聊天服務都移動時進行確認。 如下表所示，在註冊期間結束時，最多可能需要24個月的時間來完成實際執行的核心客戶資料移至新的資料中心地理位置。   
 
 |**在中使用註冊國家/地區的客戶**|**所有移動完成者**|
 |:-----|:-----|
@@ -46,7 +45,7 @@ ms.locfileid: "47950269"
 |南非  <br/> |2022年7月1日  <br/> |
 |瑞士，列支敦斯登  <br/> |2022年7月1日  <br/> |
 |挪威  <br/> |2022年11月1日  <br/> |
-|德國  <br/> |計畫  <br/> |
+|德國  <br/> |2023年4月1日  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -66,10 +65,6 @@ ms.locfileid: "47950269"
 移動 SharePoint 線上時，也會移動下列服務的資料：
   
 - 商務用 OneDrive
-    
-- Project Online
-    
-- Microsoft 365 的專案
     
 - Microsoft 365 影片服務
     
@@ -109,7 +104,7 @@ ms.locfileid: "47950269"
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-除了 Exchange Online、SharePoint Online 和商務 OneDrive，Microsoft 也會將小組資料移轉至本機資料中心。
+除了 Exchange Online、SharePoint Online 和商務 OneDrive，Microsoft 也會將小組聊天服務資料移轉至本機資料中心。
 
 - 小組會聊天訊息，包括私人郵件和通道訊息。
 - 在聊天中使用的小組圖像。
@@ -118,20 +113,7 @@ ms.locfileid: "47950269"
 
 ## <a name="skype-for-business"></a>商務用 Skype
 
-商務用 Skype 移動可用於澳大利亞、日本、印度、加拿大、英國和韓國。
-
-在剪下時，所有使用者都將從商務用 Skype 用戶端軟體登出。 自動登入會在兩分鐘內重新連線使用者。
-  
-|**在整個移動期間可運作的功能**|**移動部分期間可能會限制的功能**|
-|:-----|:-----|
-| 立即訊息和語音通話  <br/>  使用者可以新增連絡人、新增連絡人群組、新增會議、設定其位置，以及變更「今天所發生的情形」。  <br/>  音訊會議提供者 (ACP) 設定會複製到目標資料中心地理位置。 如果目標資料中心存在 ACP 提供者，則會運作。 否則，它將不會。  <br/> | 承租人 Admin TRPS (承租人 Remote PowerShell) 將無法供系統管理員建立會話。  <br/>  租使用者系統管理員 LAC 將無法供系統管理員登入和變更使用者設定。  <br/> |
-   
-|**移動後**|
-|:-----|
-| 會議資料 (上傳的簡報等 ) 不會移動，也不需要重新上傳。  <br/>  舊版的 Lync 用戶端（例如 Lync 2010 用戶端和 Lync for Mac 2011 用戶端）會被稱為快取 DNS 資訊至導致登入問題的服務。 如果使用者不在最新的商務用 Skype Windows 用戶端，則可能需要清除 DNS 快取。 請參閱 [Office 365 中的商務用 Skype ONLINE DNS 設定問題疑難排解](https://docs.microsoft.com/skypeforbusiness/troubleshoot/online-configuration/dns-configuration-issue)。 Lync for Mac 用戶端使用者應遵循 [這些指示](https://support.microsoft.com/kb/2629861)。  <br/> |
-   
-### <a name="skype-for-business-moves-that-involve-a-third-party-audio-conferencing-provider"></a>涉及協力廠商音訊會議提供者的商務用 Skype 移動
-適用于商務用 Skype 的協力廠商音訊會議提供者附加元件服務，不適用於位於新地理位置特定資料中心的使用者。  使用協力廠商音訊會議提供者服務的現有客戶不應要求移至新的地理特定資料中心。  新的特定地理位置資料中心部署的新客戶必須要求移至地區資料中心，才能使用協力廠商音訊會議提供者。
+商務用 Skype 移動已不再可用。  2021年7月31日，[商務用 Skype Online 將會停用](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement)。 在這段時間之後，就無法再存取服務。 
   
 ## <a name="related-topics"></a>相關主題 
  

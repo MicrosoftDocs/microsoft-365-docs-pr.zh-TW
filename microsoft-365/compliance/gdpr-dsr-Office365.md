@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0053d4b467ec0b03a158ef411c0a0643ff64292e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 9b78de38bed453b89a70323f197270fc3a1cf72b
+ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547421"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "48305385"
 ---
 # <a name="office-365-data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR 和 CCPA 的 Office 365 資料主體要求
 
@@ -615,8 +615,8 @@ Microsoft To-Do 中的工作 (稱為*待辦事項*，儲存在*待辦事項清�
 
 刪除使用者時要了解的一件事情，就是使用者的 Exchange Online 信箱會發生什麼情況。 在實刪除使用者帳戶 (在上述程序中的步驟 3) 之後，已刪除的使用者信箱並不會從 Office 365 中自動清除。 在使用者帳戶實刪除之後，最多需要 60 天，才會從 Office 365 中永久移除。 以下是在刪除使用者帳戶之後的信箱生命週期，以及在這段時間信箱資料狀態的描述：
 
-- **第 1 天 — 第 30 天** — 可以還原虛刪除的使用者帳戶來完全還原信箱。
-- **第 31 天 — 第 60 天** — 在實刪除使用者帳戶後的 30 天內，貴組織中的系統管理員可以復原信箱中的資料，並將其匯入不同的信箱中。 這可讓組織在必要時復原信箱資料。
+- **第 1 天 - 第 30 天** — 可以還原虛刪除的使用者帳戶來完全還原信箱。
+- **第 31 天 - 第 60 天** — 在實刪除使用者帳戶後的 30 天內，貴組織中的系統管理員可以復原信箱中的資料，並將其匯入不同的信箱中。 這可讓組織在必要時復原信箱資料。
 - **第 61 天 - 第 90 天** - 系統管理員再也無法復原信箱中的資料。 信箱資料將標示為永久移除，並且最多 30 天，信箱資料就會從 Office 365 中清除。
 
 若您判斷此信箱的生命週期不符合貴組織回應 DSR 刪除要求的需求，則在實刪除使用者帳戶「之後**」，您可以[連絡 Microsoft 支援服務](https://support.microsoft.com/)，並要求 Microsoft 手動啟動程序來永久移除信箱資料。 這會永久移除信箱資料的這個程序會在生命週期的第 61 天之後自動啟動，因此在生命週期的這個時間點之後，就沒有理由與 Microsoft 連絡。

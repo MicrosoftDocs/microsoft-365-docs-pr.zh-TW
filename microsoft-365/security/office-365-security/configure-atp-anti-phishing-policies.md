@@ -14,17 +14,16 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何建立、修改及刪除組織中可用的高級防網路釣魚原則，以及 Office 365 的高級威脅防護 (Office 365 ATP) 。
-ms.openlocfilehash: 2986102b549b7302a7a4ac533f80846d832aeb41
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c08046bdc9e72bc824dc28acdf2443c9071236a0
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328068"
+ms.locfileid: "48333543"
 ---
 # <a name="configure-atp-anti-phishing-policies"></a>設定 ATP 防網路釣魚原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 ATP 反網路釣魚原則是 [Office 365 Advanced 威脅防護](office-365-atp.md)的一部分。 ATP 反網路釣魚原則可協助保護您的組織免受惡意模擬型網路釣魚攻擊和其他類型的網路釣魚攻擊。 如需 Exchange Online Protection 中防網路釣魚原則 (EOP) 和 ATP 反網路釣魚原則之間差異的詳細資訊，請參閱 [反網路釣魚防護](anti-phishing-protection.md)。
 
@@ -63,7 +62,7 @@ ATP 反網路釣魚原則的基本元素如下：
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您必須已獲派權限，才能進行此主題中的程序:
+- 您必須已獲指派許可權，才能執行本文中的程式：
 
   - 若要新增、修改和刪除 ATP 反網路釣魚原則，您必須是下列其中一個角色群組的成員：
 
@@ -176,6 +175,8 @@ ATP 反網路釣魚原則的基本元素如下：
 
      - **自動包含我擁有的網域**：預設值為 **Off**。 若要將其開啟，請將開關滑動至 [ **開啟**]。
      - **包含自訂網域**：預設值為 **Off**。 若要開啟它，請將開關滑動至 [ **開啟**]，然後在 [ **新增網域** ] 方塊中，輸入功能變數名稱 (例如，CONTOSO.COM) ，按 enter，然後視需要重複。
+
+       **附注**：在安全性 & 規範中心，您最多可以輸入20個網域。 在 Exchange Online PowerShell 中，您最多可以輸入50個網域。
 
    - **動作**：按一下 [**編輯**]
 
