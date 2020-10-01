@@ -388,8 +388,6 @@
           href: restore-an-inactive-mailbox.md
         - name: 刪除非作用中的信箱
           href: delete-an-inactive-mailbox.md
-    - name: 資料控管小組的影片
-      href: 'https://go.microsoft.com/fwlink/?linkid=867039'
     - name: 記錄管理
       items:
         - name: 了解記錄管理
