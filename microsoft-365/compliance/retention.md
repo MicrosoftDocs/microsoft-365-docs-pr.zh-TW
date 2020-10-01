@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: d8b9ff7bea32f489a5cce5f64626908e8ec56fa1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 49d61a7bbc376121f5a91c1692f292b83abea779
+ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197336"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48308941"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 
@@ -230,7 +230,7 @@ Exchange 公用資料夾、Skype、Teams 和 Yammer 訊息不支援保留標籤�
     
 - 如果內容已指派已發佈的保留標籤，則自動套用標籤不能取代之。
     
-- 如果有多項規則會指派自動套用標籤，且內容符合多項規則的條件，則會指派最舊規則的保留標籤。
+- 如果有多項規則會指派自動套用標籤，且內容符合多項規則的條件，則會指派最舊規則 ( 依照建立日期) 的保留標籤。
     
 若要了解如何以及為何套用某個保留標籤 (而非其他標籤)，請務必了解明確指派標籤與隱含指派標籤之間的差異：
 
