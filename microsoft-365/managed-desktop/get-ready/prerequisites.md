@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1c03d9028205ea392bade15e6dec354bff0be96e
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: d5aaba3d1f8606ab69b360d5916a5c9a8a653a14
+ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235391"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48343280"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的先決條件
 
@@ -26,7 +26,7 @@ ms.locfileid: "48235391"
 
 範圍 | 必要條件詳細資料
 --- | ---
-授權 |Microsoft 受管理的桌面需要下列其中一個 Microsoft 365 授權 (或對應) ：<br>-Microsoft 365 E5<br>-使用 Microsoft 365 E5 安全性附加元件的 microsoft 365 E3<br><br>如需 Microsoft Managed Desktop 中特定服務方案及其角色的詳細資訊，請參閱本主題中的 [相關授權](#more-about-licenses) 。<br>如需可用授權的詳細資訊，請參閱 [Microsoft 365 授權](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
+授權 |Microsoft 受管理的桌面需要 Microsoft 365 E3 授權搭配 Microsoft Defender for Endpoint 和 Azure Active Directory Premium 2 (或視) 。<br>如需特定服務方案的詳細資訊，請參閱本主題中 [有關授權的詳細](#more-about-licenses) 資訊。<br>如需可用授權的詳細資訊，請參閱 [Microsoft 365 授權](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)。
 連線能力 |  所有 Microsoft 受管理的桌面裝置都需要從公司網路連接至眾多的 Microsoft 服務端點。<br><br>如需必要 IPs 和 URLs 的完整清單，請參閱 [Network configuration](../get-ready/network.md)。 
 Azure Active Directory |    Azure Active Directory (Azure AD) 必須是所有使用者帳戶的授權來源，或是必須使用最新版的 Azure AD Connect 從內部部署 Active Directory 同步處理使用者帳戶。<br><br>必須對 Microsoft 受管理的桌面使用者啟用[企業狀態漫遊](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)。<br><br>如需詳細資訊，請參閱 [AZURE AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect)。<br><br>如需支援的 Azure AD Connect 版本的詳細資訊，請參閱 [AZURE Ad connect：版本發行歷程記錄](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history)。
 驗證 |    如果 Azure AD 不是使用者帳戶的主要驗證來源，您必須在 Azure AD Connect 中設定下列其中一項：<br>-密碼雜湊同步處理<br>傳遞驗證<br>-外部身分識別提供者 (，包括 Windows Server ADFS 和非 Microsoft IDPs) 設定為符合 Azure AD 整合需求。 如需詳細資訊，請參閱 [指導方針](https://www.microsoft.com/download/details.aspx?id=56843) 。 <br><br>使用 Azure AD Connect 設定驗證選項時，也建議使用密碼回寫。 如需詳細資訊，請參閱 [密碼回寫](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-writeback)。 <br><br>如果已執行外部身分識別提供者，則必須驗證解決方案：<br>-符合 Azure AD 整合需求<br>-支援 Azure AD 條件式存取，這是為了啟用設定 MMD 裝置合規性原則<br>-啟用裝置註冊，並使用 microsoft 365 服務或 Microsoft 受管理桌面的一部分所需功能 <br><br>如需 Azure AD 驗證選項的詳細資訊，請參閱 [AZURE Ad Connect 使用者登入選項](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-user-signin)。
@@ -38,20 +38,20 @@ Microsoft 365 | 必須為 Microsoft 受管理的桌面使用者啟用商務 OneD
 
 ## <a name="more-about-licenses"></a>有關授權的詳細資訊
 
-Microsoft 受管理的桌面需要某些授權選項才能正常運作。 這些選項可用於許多不同的授權捆綁，有些您可能已經擁有。 下表顯示哪些授權可使用哪些授權，以及如何在 Microsoft 受管理的電腦中匯總其角色。
+Microsoft 受管理的桌面需要某些授權選項才能正常運作。 如需如何使用這些授權的相關資訊，請參閱 [Microsoft Managed Desktop 技術](../intro/technologies.md) 。
 
 > [!TIP]
 > 若要將這些授權選項指派給特定使用者，建議您利用 Azure Active Directory 的 [群組型授權功能](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal) 。
 
+- Azure Active Directory Premium P2
+- Microsoft Intune 
+- Windows 10 企業版  
+- Microsoft Defender for Endpoint
+- Microsoft 365 Apps 企業版
+- Microsoft Teams
+- [SharePoint Online 計劃 2](https://www.microsoft.com/microsoft-365/sharepoint/compare-sharepoint-plans)
+- [Exchange Online 方案 2](https://www.microsoft.com/microsoft-365/exchange/compare-microsoft-exchange-online-plans) 
 
-
-|授權選項 |可在 *這些* 許可證產品中使用 |Microsoft 受管理的桌面如何使用它|
-|-------------|-------------|-------------|
-|Azure Active Directory Premium P2     |-Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* 安全性附加元件<br>-企業行動 + 安全性 E5<br>-Enterprise 可移動性 + Security E3<br>-Azure Active Directory Premium P2|  提供 Microsoft Cloud Services 的存取權;允許 AutoPilot 註冊裝置      |
-|Microsoft Intune | -Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* 安全性附加元件<br>-企業行動 + 安全性 E5<br>-Enterprise 可移動性 + Security E3<br>-Microsoft Intune  |  註冊裝置、部署更新及管理裝置所需       |
-|Windows 10 企業版  |-Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* 安全性附加元件<br>-Windows 10 企業版 E3<br>-Windows 10 企業版 E5 | 提供 Windows 10 的企業版功能       |
-|Microsoft Defender 進階威脅防護 | -Microsoft 365 E5<br>-Microsoft 365 E3 + Microsoft 365 *E5* 安全性附加元件<br>-Windows 10 企業版 E5<br>-Microsoft Defender 高級威脅防護   |  提供偵測、監控、對威脅的警示和回應  |
-|Microsoft 365 Apps 企業版  |-Microsoft 365 E5<br>-Microsoft 365 E3<br>-Office 365 E5<br>-Office 365 E3| 啟用 Office 和生產力與共同作業工具    |
 
 > [!TIP]
 > 您的 Microsoft 帳戶管理員會協助您檢查目前的授權和服務方案，並尋找最有效率的路徑，讓您能取得任何其他可能需要的授權或服務方案，同時避免重複。

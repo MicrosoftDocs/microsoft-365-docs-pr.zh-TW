@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 瞭解如何管理 Microsoft 365 群組，包括新增移除群組成員、編輯電子郵件地址、組名或描述，以及自訂群組的運作方式。
-ms.openlocfilehash: 26c6c064e454351366c326e665bacdcc9bb855fb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 29eaa762116498799d4156b58c8f9bf466f04073
+ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307298"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48343268"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中管理群組
 
@@ -122,7 +122,7 @@ ms.locfileid: "47307298"
 
 3. 在 [ **設定** ] 索引標籤上，如果您想要讓成員在自己的收件匣接收群組郵件和行事曆專案的副本，請選取 [ **將群組交談和事件的副本傳送至群組成員** ]
 
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -134,7 +134,7 @@ ms.locfileid: "47307298"
 
 3. 如果您想要讓成員在自己的收件匣中接收群組郵件和行事曆專案的副本，請將 [ **群組交談和事件的副本** ] **轉換為 [** 群組] 的 [收件者]。
 
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -146,7 +146,7 @@ ms.locfileid: "47307298"
 
 3. 如果您想要讓成員在自己的收件匣中接收群組郵件和行事曆專案的副本，請將 [ **群組交談和事件的副本** ] **轉換為 [** 群組] 的 [收件者]。
 
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -162,7 +162,7 @@ ms.locfileid: "47307298"
 
 3. 在 [系統管理中心群組] 清單中，選取您要變更之群組的名稱，然後在 [ **設定** ] 索引標籤上，選取 [ **允許外部寄件者以電子郵件傳送此群組**]。
     
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ ms.locfileid: "47307298"
     
 3. 設定 **讓組織外部的人員可將群組** 切換為 [ **開啟**]。
     
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -186,7 +186,7 @@ ms.locfileid: "47307298"
     
 3. 設定 **讓組織外部的人員可將群組** 切換為 [ **開啟**]。
     
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
 
 ::: moniker-end
 
@@ -196,10 +196,10 @@ ms.locfileid: "47307298"
 
 [管理 Microsoft 365 群組的來賓存取權](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
-[選擇建立 Microsoft 365 群組時要使用的網域](choose-domain-to-create-groups.md)
+[選擇建立 Microsoft 365 群組時要使用的網域](../../solutions/choose-domain-to-create-groups.md)
 
-[允許成員以 Microsoft 365 群組的身分傳送或傳送](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[允許成員以 Microsoft 365 群組的身分傳送或傳送](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
 [將通訊群組清單升級至 Microsoft 365 群組](../manage/upgrade-distribution-lists.md)
 
-[使用 PowerShell 管理 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/enterprise/powershell/manage-office-365-groups-with-powershell)
+[使用 PowerShell 管理 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
