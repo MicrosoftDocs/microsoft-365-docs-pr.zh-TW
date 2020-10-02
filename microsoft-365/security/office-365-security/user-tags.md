@@ -1,5 +1,5 @@
 ---
-title: 使用者標記
+title: Office 365 ATP 中的使用者標記
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解如何在 Oiffce 365 ATP 方案2中識別具有使用者標記的特定使用者群組。 標記篩選可用於 Office 365 ATP 中的提醒、報告和調查，以快速識別已標記的使用者。
-ms.openlocfilehash: d47c5c00e3cf0362c44aebc18d11db4bba68a149
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+description: 系統管理員可以瞭解如何在 Office 365 ATP 方案2中識別具有使用者標記的特定使用者群組。 標記篩選可用於 Office 365 ATP 中的提醒、報告和調查，以快速識別已標記的使用者。
+ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48210021"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337250"
 ---
-# <a name="user-tags-in-the-microsoft-security-center"></a>Microsoft Security Center 中的使用者標記
+# <a name="user-tags-in-office-365-atp"></a>Office 365 ATP 中的使用者標記
 
 使用者標記是 [Office 365 Advanced 威脅防護 (ATP) ](office-365-atp.md)中的特定使用者群組識別碼。 [優先順序帳戶](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 是一種使用者標記。 如果您的組織有 Office 365 ATP 方案 2 (包含在您的訂閱中，或作為附加元件) ，除了使用 [優先順序帳戶] 標記之外，您還可以建立自訂使用者標記。
 
@@ -33,11 +33,11 @@ ms.locfileid: "48210021"
 - [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
 - [行銷活動檢視](campaigns.md)
 
-本文說明如何在 [安全性中心] 中設定使用者標記。
+本文說明如何在安全性 & 規範中心內設定使用者標記。 安全性 & 合規性中心內沒有 Cmdlet 可管理使用者標記。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您可以在中開啟 [安全性中心] <https://security.microsoft.com/> 。 若要直接移至 [ **使用者標記** ] 頁面，請開啟] <https://security.microsoft.com/securitysettings/userTags> 。
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **使用者標記** ] 頁面，請開啟] <https://protection.office.com/userTags> 。
 
 - 若要建立、修改或移除使用者標記，您必須是 Security & 合規性中心內「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
@@ -45,7 +45,7 @@ ms.locfileid: "48210021"
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>使用安全中心建立使用者標記
 
-1. 在 [安全性中心] 中，移至 [ **設定** \> **電子郵件 & 協同**] \> **使用者標記**。
+1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
 2. 在開啟的 [ **使用者標記** ] 頁面上，按一下 [ **建立標記**]。
 
@@ -79,7 +79,7 @@ ms.locfileid: "48210021"
 
 ## <a name="use-the-security-center-to-view-user-tags"></a>使用安全中心來查看使用者標記
 
-1. 在 [安全性中心] 中，移至 [ **設定** \> **電子郵件 & 協同**] \> **使用者標記**。
+1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
 2. 在開啟的 [ **使用者標記** ] 頁面上，選取您要查看的使用者標籤 (不要按一下核取方塊) 。
 
@@ -89,7 +89,7 @@ ms.locfileid: "48210021"
 
 ## <a name="use-the-security-center-to-modify-user-tags"></a>使用 [安全性中心] 修改使用者標記
 
-1. 在 [安全性中心] 中，移至 [ **設定** \> **電子郵件 & 協同**] \> **使用者標記**。
+1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
 2. 在開啟的 [ **使用者標記** ] 頁面上，選取您要查看的使用者標記，然後按一下 [ **編輯標記**]。
 
@@ -101,6 +101,6 @@ ms.locfileid: "48210021"
 
 **附注**：您無法移除內建的 [ **優先順序] 帳戶** 標記。
 
-1. 在 [安全性中心] 中，移至 [ **設定** \> **電子郵件 & 協同**] \> **使用者標記**。
+1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
 2. 在開啟的 [ **使用者標記** ] 頁面上，選取您要移除的使用者標籤，按一下 [ **刪除**標籤]，然後選取 [ **是]，** 然後在顯示的警告中移除。

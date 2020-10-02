@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Office 365 Advanced 威脅防護 (ATP) 中的安全附件功能。
-ms.openlocfilehash: 6ff356f34f3e44752b5ad7f5fa433a8c72cd5083
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c3dd64ce6f1d50cf30dfcc33f17021904791912c
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326528"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337202"
 ---
 # <a name="safe-attachments-in-office-365-atp"></a>Office 365 ATP 中的安全附件
 
@@ -108,9 +108,7 @@ Office 365 中的安全附件「 [高級威脅防護」 (ATP) ](office-365-atp.m
 
 - 如果轉寄的收件者不是由安全附件原則保護，將會傳遞郵件和附件，而不需要任何安全附件掃描或附件預留位置。
 
-## <a name="scenarios-where-safe-attachments-doesnt-scan-messages"></a>安全附件不會掃描郵件的情況
-
-在某些情況下，安全附件無法掃描郵件：
+在某些情況下，動態傳遞無法取代郵件中的附件。 這些情況包括：
 
 - 公用資料夾中的郵件。
 
@@ -126,7 +124,7 @@ Office 365 中的安全附件「 [高級威脅防護」 (ATP) ](office-365-atp.m
 
 - [S/MIME) ](s-mime-for-message-signing-and-encryption.md) 加密郵件。
 
-- 您已在安全附件原則中設定動態傳送動作，但收件者不支援動態傳遞 (例如，收件者是內部部署 Exchange 組織中的信箱) 。 不過， [office 365 ATP 中的安全連結](set-up-atp-safe-links-policies.md) 可以掃描包含 URLs (的 office 檔案附件，視安全連結) 設定方式而定。
+- 您已在安全附件原則中設定動態傳送動作，但收件者不支援動態傳遞 (例如，收件者是內部部署 Exchange 組織中的信箱) 。 不過， [office 365 ATP 中的安全連結](set-up-atp-safe-links-policies.md) 可掃描包含 URLs (的 office 檔案附件，具體取決於如何) 設定 [安全連結的通用設定](configure-global-settings-for-safe-links.md) 。
 
 ## <a name="submitting-files-for-malware-analysis"></a>提交檔案以進行惡意程式碼分析
 

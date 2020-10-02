@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 深入瞭解 Microsoft 365 群組。
-ms.openlocfilehash: 711ab7e7818b266d7cbdbe076e30355d29bc3eeb
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 5d85204687641e74f9a705162df01cebd7eeee26
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307262"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337166"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>系統管理員的 Microsoft 365 群組概觀 (部分機器翻譯)
 
@@ -76,7 +76,7 @@ Microsoft 365 群組是一種基礎成員資格服務，可促進整個 Microsof
 |Groups a user can create|250|
 |管理員可以建立的群組|最高預設租使用者有500000位|
 |Number of members |超過1000，但只有1000可以同時存取群組交談。 <br>使用者可能會注意到當存取 Outlook 中大量群組的行事曆和交談時，會發生延遲。|
-|使用者可以是其成員的群組數目|1,000|
+|使用者可以是其成員的群組數目|7000|
 |檔存放區|每個訂閱的使用者需要 1 tb + 10 GB + 購買的任何額外儲存空間。 您可以購買無限量的額外儲存空間。|
 |群組信箱大小|50 GB|
 

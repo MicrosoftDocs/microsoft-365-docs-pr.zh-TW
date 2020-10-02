@@ -11,22 +11,22 @@ ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 83da50b3772b6adcb7977425bfcaa1b437bc6a68
-ms.sourcegitcommit: bf21a4caae0c01d93281744838f0aa50e1fb2a22
+ms.openlocfilehash: f6bb4f5e09adcb1be6323a5d3d182cc3d1bc6017
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48324258"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337226"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex 採用：快速入門
 
-請將 Microsoft SharePoint Syntex 中可用的智慧內容服務，看作有三個部分：
+請將 SharePoint Syntex 中可用的智慧內容服務看作有三個部分：
 
 - **內容瞭解：** 建立無程式碼 AI 模型，以分類及提取內容中的資訊，以自動套用中繼資料以進行知識探索和重複使用。 深入瞭解 [內容瞭解](document-understanding-overview.md)。
 - **內容處理：** 自動化內容的捕獲、攝取和分類，並使用 Power 自動化簡化以內容為中心的程式。 深入瞭解 [內容處理](form-processing-overview.md)。
 - **內容規範：** 控制和管理內容，以改進安全性和管理與 Microsoft 資訊保護的整合。
 
-透過全新的 AI 服務和功能，您可以使用 Microsoft SharePoint Syntex，將內容瞭解和分類應用程式直接建立到內容管理流程中：
+透過全新的 AI 服務和功能，您可以使用 SharePoint Syntex，將內容瞭解和分類應用程式直接建立到內容管理流程中：
 
 |手動輸入| 表單處理 | 檔瞭解 |
 |:-------|:--------|:--------|
@@ -34,7 +34,7 @@ ms.locfileid: "48324258"
 | Interactive   | 預先構建、自動化   | 自訂、協助   | 自訂、相容性 |
 | 工作中的人員 | 由主題專家教授 (Sme) 。 從合約、簡歷、其他非結構化檔捕獲內容類型和中繼資料。 | Sme 的相關程度較低。 從採購訂單、應用程式、其他半結構化及結構化檔 |
 
-下表說明當您使用 Microsoft SharePoint Syntex 時所獲得的功能：
+下表說明當您使用 SharePoint Syntex 時所獲得的功能：
 
 | 表單處理 | 檔瞭解 |
 |:-------|:-------|
@@ -46,14 +46,14 @@ ms.locfileid: "48324258"
 
 | 表單處理 | 檔瞭解 |
 |:-------|:-------|
-| 從文件庫建立 | 在內容中心建立，Microsoft SharePoint 的一部分 Syntex |
+| 從文件庫建立 | 在內容中心建立，SharePoint Syntex 的一部分 |
 | 在 AI 產生器中建立的模型 | 在原生介面中建立的模型 |
 | 用於半結構化檔案格式 | 用於非結構化檔案格式 |
 | 可設定的分類器 | Trainable 具有選用擷取器的分類器 |
 | 限制于單一文件庫 | 可套用至多個文件庫 |
 | 在 PDF，JPG，PNG 格式，總 50 MB/500 pp 進行訓練 | 5-10 PDF、Office 或電子郵件檔案的火車，包含消極的範例 |
 
-Microsoft SharePoint Syntex 與 Microsoft 365 相容性功能整合，例如：
+SharePoint Syntex 與 Microsoft 365 規範功能整合，例如：
 
 - 根據檔保留或外來事件定義記錄原則的保留標籤。
 - 敏感度標籤，可設定 DLP、加密、共用及條件式存取原則。
@@ -62,12 +62,12 @@ Microsoft SharePoint Syntex 與 Microsoft 365 相容性功能整合，例如：
 
 ## <a name="identify-pilot-business-scenarios-to-optimize"></a>識別試驗性商務案例以進行優化
 
-若要準備在組織中使用 Microsoft SharePoint Syntex，您必須先瞭解其有用的案例。 原因可協助決定所需的模型，以及如何根據要套用模型的位置來組織組織。 以下是一些檔理解可協助貴組織的案例：
+若要準備在組織中使用 SharePoint Syntex，您必須先瞭解其有用的案例。 原因可協助決定所需的模型，以及如何根據要套用模型的位置來組織組織。 以下是一些檔理解可協助貴組織的案例：
 
 - 內容處理：處理合約、工作說明及其他類似表單的檔。 使用表單，訓練模型以瞭解和對應欄位，然後執行表單以自動收集資料。 如需詳細資訊，請參閱 [表單處理一覽](form-processing-overview.md)。
 - 發票分析：從發票拔出相關的詳細資料，確定他們遵循原則或進行適當處理。
 
-請思考 Microsoft SharePoint Syntex 可如何協助您的組織的方式：
+請思考 SharePoint Syntex 可如何協助您的組織的方式：
 
 - 自動化商務程式
 - 提高搜尋精確度
@@ -75,7 +75,7 @@ Microsoft SharePoint Syntex 與 Microsoft 365 相容性功能整合，例如：
 
 ### <a name="form-processing-scenario-example"></a>表單處理案例範例
 
-例如，您可以使用 Microsoft SharePoint Syntex 和電源自動化功能來設定處理常式，以追蹤和監控發票。
+例如，您可以使用 SharePoint Syntex 和電源自動化功能來設定處理常式，以追蹤和監控發票。
 
 1. 設定儲存發票檔的文件庫。
 1. 訓練模型，以辨識檔中的欄位。
@@ -85,7 +85,7 @@ Microsoft SharePoint Syntex 與 Microsoft 365 相容性功能整合，例如：
     - 發票超過其到期日。
     - 發票的數量大於您的自動核准金額。
 
-![使用 Microsoft SharePoint Syntex 和電源自動化來追蹤和監控發票](../media/content-understanding/process-invoices-flow.png)
+![使用 SharePoint Syntex 和電源自動化來追蹤和監控發票](../media/content-understanding/process-invoices-flow.png)
 
 當您自動化此案例時，您可以：
 
@@ -102,7 +102,7 @@ Microsoft SharePoint Syntex 與 Microsoft 365 相容性功能整合，例如：
 1. 模型完成時，將模型套用至您可以上傳合同的文件庫。
 1. 將保留標籤套用至 date 功能變數，以便在您的組織需要合同時，將合同保留在文件庫中。
 
-![使用 Microsoft SharePoint Syntex 和保留標籤追蹤和監視合約](../media/content-understanding/process-contracts-flow.png)
+![使用 SharePoint Syntex 和保留標籤來追蹤和監控合約](../media/content-understanding/process-contracts-flow.png)
 
 當您自動化此案例時，您可以：
 
@@ -140,7 +140,7 @@ Microsoft SharePoint Syntex 與 Microsoft 365 相容性功能整合，例如：
 
 ## <a name="strategic-positioning"></a>戰略定位
 
-與相關者合作，確定他們已對準使用 Microsoft SharePoint Syntex 的策略。 調查並提供下列資源，以協助此位置：
+與相關者合作，確定他們已對齊使用 SharePoint Syntex 的策略。 調查並提供下列資源，以協助此位置：
 
 - 商務成果：
   - 潛在的會計結果
@@ -170,7 +170,7 @@ Microsoft SharePoint Syntex 與 Microsoft 365 相容性功能整合，例如：
 
 ## <a name="readiness-checklist"></a>準備工作表
 
-若要準備好執行 Microsoft SharePoint Syntex (Preview) ，您必須：
+若要準備好執行 SharePoint Syntex，您必須執行下列作業：
 
 ![內容瞭解的準備工作](../media/content-understanding/cu-adoption-readinesschecklist.png)
 

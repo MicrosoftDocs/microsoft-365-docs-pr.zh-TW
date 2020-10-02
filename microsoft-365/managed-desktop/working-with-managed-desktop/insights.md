@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6b19c5cd1766c07e106897cefeb495f1b98bb548
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104385"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337178"
 ---
 # <a name="work-with-insights"></a>具備深入解析的工作
 
@@ -31,9 +31,9 @@ Microsoft 受管理的桌面提供許多儀表板，供您承租人中的系統�
 - 目前在裝置上安全性更新的狀態為何？
 - 95% 的裝置要多久才能獲得最新的安全性更新？
 
-若要從[Microsoft Endopint 管理員](https://endpoint.microsoft.com/)存取這些視圖，請 nvaigate 至主頁上的 [Microsoft 受管理的桌面] 索引標籤，然後選取 [**報告**] 區域中的 [**查看詳細資料**]：
+若要從[Microsoft 端點管理員](https://endpoint.microsoft.com/)存取這些視圖，請流覽至主頁上的 [Microsoft 受管理的桌面] 索引標籤，然後選取 [**報告**] 區域中的 [**查看詳細資料**]：
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->!
+<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
 
 
 ## <a name="usage-insights"></a>使用情況深入解析
@@ -54,7 +54,6 @@ Microsoft 受管理的桌面提供許多儀表板，供您承租人中的系統�
 深入瞭解 [電池洞察力](battery-insights.md)。
 
 ## <a name="windows-security-update-insights"></a>Windows 安全性更新深入解析
-
-此視圖顯示 Microsoft 受管理桌面裝置之安全性更新狀態的相關資訊。 若要查看此資訊，請選取 [ **Windows 安全性 udates** ] 索引標籤。
+此視圖顯示 Microsoft 受管理桌面裝置之安全性更新狀態的相關資訊。 若要查看此資訊，請選取 [ **Windows 安全性更新** ] 索引標籤。
 
 深入瞭解 [安全性更新真知灼見](security-update-insights.md)。
