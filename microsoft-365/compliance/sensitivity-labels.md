@@ -16,16 +16,18 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+- m365solution-mip
+- m365initiative-compliance
 description: 使用 Microsoft 資訊保護架構中的敏感度標籤，以透過加密和浮水印來分類及保護機密內容。
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 55f3f9a37d8ce51c263c3b83cf31d838204c285a
-ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+ms.openlocfilehash: 349adfd181a86d04b8188d8bf76df8ae9dc5c3a6
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46564044"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338554"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 

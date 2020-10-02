@@ -17,13 +17,15 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
+- m365solution-mig
+- m365initiative-compliance
 description: 使用 Microsoft 365 中的記錄管理，您可以將保留時間表套用到管理保留、記錄聲明和處置的檔案計畫中。
-ms.openlocfilehash: 677196f23430ec19f23c50e05fcc193fde420ca0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: baf03fd5c9f58101454f5f2132700c7e078b3107
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200490"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338338"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的記錄管理
 

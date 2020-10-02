@@ -16,13 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+- m365solution-mig
+- m365initiative-compliance
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 49d61a7bbc376121f5a91c1692f292b83abea779
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: be7fc75d9992ba288c29d1bc4783ac00b41a768c
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48308941"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338682"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 

@@ -16,13 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
+- m365solution-mip
+- m365initiative-compliance
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 94edcb2e430b01ca423e6bb2a7baf51a407a52df
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 80149170fad47366178e9b899bbd5355c1d9e7db
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295217"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338404"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
