@@ -6,29 +6,33 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-search.appverid: ''
+search.appverid: MET150
 localization_priority: Priority
 description: 了解 SharePoint Syntex 中的影像標記
-ms.openlocfilehash: 38b9ad6823aa5f63a4ddec87bab7fec52a37f163
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 7b41422633934593de881bdb0c04f0a845a3fe5f
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295801"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321250"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>SharePoint Syntex 中的影像標記
 
-預設會對 SharePoint 和 OneDrive 開啟基本的影像標記。 上傳到兩個位置之一的影像會經過自動掃描，並從 37 個基本標記的清單套用適用的標記 (如果可用的話)。 使用者可以搜尋影像上的標記，透過搜尋來尋找影像。
+透過 SharePoint Syntex 的影像標籤，使用者可以搜尋影像標籤找出影像，並根據影像標籤建立工作流程。 預設會對 SharePoint 和 OneDrive 開啟基本的影像標記。 上傳到兩個位置之一的影像會經過自動掃描，並從 37 個基本標記的清單套用適用的標記 (如果可用的話)。 使用者可以搜尋影像上的標記，透過搜尋來尋找影像。
 
 當使用者上傳影像時，標記程序會自動執行。 如果影像已經過編輯，標記程序會再次執行以更新標記。
 
-擁有影像權限的使用者可以在檔案資訊面板或搜尋結果頁面中查看及編輯標記。 一旦使用者編輯影像的標記，系統就不再會於該影像上執行自動標記，即使該影像已經過編輯。
+擁有影像權限的使用者可以在檔案資訊面板或搜尋結果頁面中查看及編輯標記。 一旦使用者編輯影像的標記，系統就不再會於該影像上執行自動標記，即使該影像已經編輯過。
 
 如果您關閉標記，將不會再自動為影像加標記。 將不會移除現有的標記。
 
+> [!NOTE]
+> 系統產生的標記可能會隨著影像或標記技術的更新而變更。
+
+
 ## <a name="configure-image-tagging"></a>設定影像標記
 
-您可以在 Microsoft 365 系統管理中心設定影像標記。  
+在您[設定 SharePoint Syntex ](set-up-content-understanding.md)之後，您可以在 Microsoft 365 系統管理中心設定影像標記。  
 
 開啟或關閉影像標記
 
@@ -45,7 +49,3 @@ ms.locfileid: "48295801"
 6. 按一下 [儲存 **]**。
 
     ![影像標記控制項的螢幕擷取畫面](../media/content-understanding/sharepoint-syntex-image-tagging-control.png)
-
-## <a name="see-also"></a>請參閱
-
-[設定內容瞭解](set-up-content-understanding.md)

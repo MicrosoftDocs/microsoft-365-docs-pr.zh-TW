@@ -1,53 +1,49 @@
 ---
-title: 深入瞭解透過範例模型瞭解模型
+title: 透過範例模型深入瞭解文件瞭解模型
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: 深入瞭解透過範例模型瞭解模型
-ms.openlocfilehash: c27d50df69c2555b1720e3e919f786076ab1e3fb
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: 透過範例模型深入瞭解文件瞭解模型
+ms.openlocfilehash: 75e17c8075fa381c68b6f85e0dfbe96e5d2ad557
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295809"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321262"
 ---
-# <a name="learn-about-document-understanding-models-through-a-sample-model"></a>深入瞭解透過範例模型瞭解模型
+# <a name="learn-about-document-understanding-models-through-a-sample-model"></a>透過範例模型深入瞭解文件瞭解模型
 
-Microsoft SharePoint Syntex 提供您可用於檢查的範例模型，讓您更深入瞭解如何建立您自己的模型。 範例模型也可讓您檢查模型元件，例如它的分類器、擷取器及說明。 您也可以使用範例檔案訓練模型。
+Microsoft SharePoint Syntex 為您提供了一個您可用來檢查的範例模型，讓您更加瞭解如何建立您自己的模型。 範例模型也可讓您檢查模型元件，例如其分類器、擷取器和說明。 您還可以使用範例檔案來訓練模型。
 
 ## <a name="import-the-sample-model"></a>匯入範例模型
 
-若要存取範例模型，您必須先將模型匯入內容中心。
+若要存取範例模型，您必須先將模型匯入您的內容中心。
 
-1. 從內容中心選取 [ **模型** ]，以查看您的模型清單。</br>
-2. 在 [ **模型** ] 頁面上，選取 [匯 **入範例模型**]。</br>
+1. 從內容中心選取 **[模型]** 查看您的模型清單。</br>
+2. 在**模型**頁面上，選取 **[匯入範例模型]**。</br>
 
     ![匯入範例模型](../media/content-understanding/import-sample-model.png) </br>
 
-3. 尋找顯示在模型清單中的範例模型，其標題為*BenefitsChangeNotice。*</br>
+3. 匯入完成後，**BenefitsChangeNotice** 模型的首頁會隨即開啟。 如果您日後需要開啟範例模型，您可以在內容中心的模型清單中執行此操作。 </br>
 
-    ![範例模型](../media/content-understanding/sample-model.png) </br>
+     ![範例首頁](../media/content-understanding/sample-home-page.png)</br>
 
-4. 選取 [ *BenefitsChangeNotice] （分類器*）來開啟模型首頁。</br>
-  
-     ![首頁範例](../media/content-understanding/sample-home-page.png)
+您不僅可以流覽分析範例模型，進一步瞭解模型的構造方式，作爲一個工作模型，還可以更進一步執行例如以下的操作：
 
-5. 從模型首頁，仔細檢查模型，以查看其建立方式。
- 
-- 查看用於訓練模型的範例檔案。
-- 請仔細檢查模型的實體擷取器，以查看樣本模型如何設定說明。
+- 新增另一個擷取器。 例如，新增一個*折扣費用*的擷取器。
+- 將模型套用到文件庫，並將部分訓練檔案上傳到文件庫，以查看模型如何分類檔案，以及如何從中擷取資料。
 
-   ![範例模型擷取器](../media/content-understanding/entity-extractors.png)  
 
 ## <a name="see-also"></a>另請參閱
-[建立分類器](create-a-classifier.md)</br>
-[建立提取程式](create-an-extractor.md)</br>
-[檔理解概述](document-understanding-overview.md)</br>
+[建立分類器](create-a-classifier.md)
+
+[建立擷取器](create-an-extractor.md)
+
+[文件瞭解概觀](document-understanding-overview.md)
+
 [建立表單處理模型](create-a-form-processing-model.md)  

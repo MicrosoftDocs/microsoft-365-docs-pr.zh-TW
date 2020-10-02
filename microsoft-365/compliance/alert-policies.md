@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全性與合規性中心建立警示原則，以監視潛在威脅、資料遺失和許可權問題。
-ms.openlocfilehash: 4b12457b051b19aa1eaca0d92b342ab8a7b34134
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9f05fe464b4945d739c5920282e45e07f9fcb344
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200582"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338426"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全性與合規性中心的警示原則
 
@@ -109,10 +109,11 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 
 此表格也指出每個 Office 365 企業版和 Office 365 美國政府方案的必要條件。 如果您的組織除了 E1/F1/G1 或 E3/G3 訂閱之外，還有一些預設的警示原則可供使用。
 
-|**預設警示原則**|**說明**|**Category**|**Office 365 企業版訂閱**|
+| 預設警示原則 | 說明 | 類別 | Office 365 企業版訂閱 |
 |:-----|:-----|:-----|:-----|
 |**偵測到可能的惡意 URL 按一下**|當您組織中的 [Office 365 ATP 安全連結](../security/office-365-security/atp-safe-links.md) 所保護的使用者按一下惡意連結時，會產生警示。 此事件會在下列情況觸發：透過組織的 Microsoft 365 商務 ATP 安全連結原則) ，在 Office 365 ATP 識別 URL 判定變更時，或使用者覆寫 Office 365 ATP 安全連結頁面 (。 此警示原則具有 **高** 嚴重性設定。 若為 Office 365 ATP P2，E5，G5 客戶，此提醒會自動觸發 [Office 365 中的自動調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 如需觸發此警示之事件的詳細資訊，請參閱 [設定 Office 365 ATP 安全連結原則](../security/office-365-security/set-up-atp-safe-links-policies.md)。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|
 |**已完成系統管理員提交結果**|當系統 [管理員提交](../security/office-365-security/admin-submission.md) 完成已送出之實體的重新掃描時產生警示。 每當系統管理員提交轉譯重新掃描結果時，就會觸發警示。 這些提醒會提醒您 [複查先前提交的結果](https://protection.office.com/reportsubmission)、提交使用者報告的郵件以取得最新的原則檢查和重新掃描 verdicts，以及協助您判斷組織中的篩選原則是否有預期的影響。 這個原則的嚴重性設定 **低** 。|威脅管理|E1/F1、E3 或 E5|
+|**管理員已觸發手動調查電子郵件**|當系統管理員觸發手動調查來自威脅瀏覽器的電子郵件時產生警示。 如需詳細資訊，請參閱 [範例：安全性管理員會觸發從威脅瀏覽器進行的調查] (https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) 。 此警示會通知您的組織已開始調查。 警示會提供觸發它之人員的相關資訊，並包含調查的連結。 這個原則有 **資訊性** 嚴重性設定。|威脅管理| E5/G5 或 Office 365 ATP P2 附加元件訂閱| 
 |**建立轉送/重新導向規則**|當您組織中的人員建立信箱的收件匣規則，將郵件轉寄或重新導向至另一個電子郵件帳戶時，會產生警示。 這個原則只追蹤在先前稱為 Outlook Web App) 或 Exchange Online PowerShell 上，使用 Outlook 在 (網頁上建立的收件匣規則。 這個原則的嚴重性設定 **低** 。 如需使用收件匣規則來轉寄及重新導向 web 上 Outlook 中電子郵件的詳細資訊，請參閱 [使用 outlook 網頁版中的規則，將郵件自動轉寄至另一個帳戶](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)。|威脅管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**已啟動或匯出 eDiscovery 搜尋**|當有人在安全性與合規性中心使用內容搜尋工具時產生警示。 執行下列內容搜尋活動時，會觸發警示： <br/><br/>* 已啟動內容搜尋<br/>* 匯出內容搜尋的結果<br/>* 內容搜尋報告已匯出<br/><br/>在與 eDiscovery 案例關聯的先前內容搜尋活動執行時，也會觸發警示。 這個原則的嚴重性設定是「 **中** 」。 如需內容搜尋活動的詳細資訊，請參閱在 [審核記錄中搜尋 eDiscovery 活動](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)。|威脅管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**提升 Exchange 系統管理員許可權**|在您的 Exchange Online 組織中有指派系統管理許可權的人時產生警示。 例如，當使用者新增至 Exchange Online 中的「組織管理」角色群組時。 這個原則的嚴重性設定 **低** 。|權限|E1/F1/G1、E3/G3 或 E5/G5|
@@ -238,17 +239,18 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 |僅限檢視保留管理|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
 |||||||
 
-**秘訣：** 若要查看指派給每個預設角色群組的角色，請在安全性 & 合規性中心內執行下列命令 PowerShell:
-
-```PowerShell
-$RoleGroups = Get-RoleGroup
-```
-
-```PowerShell
-$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
-```
-
-您也可以在 [安全性 & 規範中心] 中查看指派給角色群組的角色。 移至 [ **許可權** ] 頁面，然後選取角色群組。 所指派的角色會列在飛入頁面上。
+> [!TIP]
+> 若要查看指派給每個預設角色群組的角色，請在安全性 & 合規性中心內執行下列命令 PowerShell:
+> 
+> ```powershell
+> $RoleGroups = Get-RoleGroup
+> ```
+> 
+> ```powershell
+> $RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+> ```
+> 
+> 您也可以在 [安全性 & 規範中心] 中查看指派給角色群組的角色。 移至 [ **許可權** ] 頁面，然後選取角色群組。 所指派的角色會列在飛入頁面上。
 
 ## <a name="managing-alerts"></a>管理提醒
 
