@@ -1,5 +1,5 @@
 ---
-title: 為使用者提交的垃圾郵件和網路釣魚郵件指定信箱
+title: 使用者提交原則
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: 6ae534278f4471f98f2d3bdd2318c687cea9f1d3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: bffa70184a9307869ce6170ba1ea05ae3f084ccf
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195804"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350268"
 ---
-# <a name="specify-a-mailbox-for-user-submissions-of-spam-and-phishing-messages-in-exchange-online"></a>在 Exchange Online 中指定使用者提交垃圾郵件和網路釣魚郵件的信箱
+# <a name="user-submissions-policies"></a>使用者提交原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -41,6 +41,24 @@ ms.locfileid: "48195804"
 您也可以設定協力廠商郵件報告工具，將郵件轉寄至您指定的信箱。
 
 將使用者報告的郵件傳送至自訂信箱，而不直接傳送至 Microsoft，可讓您的系統管理員選擇性地使用系統 [管理員提交](admin-submission.md)將郵件報告給 Microsoft。
+
+## <a name="custom-mailbox-prerequisites"></a>自訂信箱必要條件
+
+使用下列文章來設定必要的必要條件，讓使用者報告的郵件進入您的自訂信箱：
+
+- 透過建立 exchange 郵件流程規則來設定垃圾郵件信賴等級，以略過垃圾郵件篩選。 請參閱 [使用 EAC 建立郵件流程規則，將郵件的 scl](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) 設定為將 scl 設定為 **-1**。
+
+- 關閉掃描附件的惡意程式碼。 使用 [Set up (或 edit) ATP 安全附件原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) ，以建立安全附件原則，而不會 **掃描啟用惡意** 代碼的設定。
+
+- 關閉郵件上的 URL 掃描。 使用 [ [新增 (] 或 [編輯) ATP 安全連結原則套用至所有或特定的電子郵件](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) 收件者若要建立安全連結原則， **請選取 [將郵件中的未知潛在惡意 URLs 的動作** ] 設定為 [ **關閉**]。
+
+- 建立反惡意程式碼原則，關閉惡意程式碼零小時自動清除。 請參閱[使用安全性 & 規範中心建立反惡意程式碼原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies)，將**惡意軟體設定為零小時自動清除** **。**
+
+- 建立垃圾郵件篩選原則，以停用以零小時自動清除 (用於垃圾郵件 ZAP 和網路釣魚 ZAP 的 ZAP) 。 請參閱 [使用安全性 & 規範中心建立反垃圾郵件原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) ，並清除垃圾郵件 Zap 和網路釣魚 Zap 的 **On** 核取方塊。
+
+- 停用垃圾郵件規則。 使用 [ [設定 Exchange Online 信箱上的垃圾郵件設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) ] 以停用垃圾郵件規則。 停用之後，EOP 無法根據垃圾郵件篩選判定動作將郵件移至垃圾郵件資料夾。 **將郵件移至垃圾郵件資料夾** 或信箱上的安全清單集合。
+
+在您確認您的信箱符合所有適用的先決條件後，請 [使用安全性 & 合規性中心，設定本文中的使用者提交信箱](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) () 。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 

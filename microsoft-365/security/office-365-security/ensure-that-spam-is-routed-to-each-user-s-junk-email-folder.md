@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: chrisda
 ms.date: ''
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何將垃圾郵件路由傳送至 Exchange Online Protection 混合式環境中的使用者垃圾郵件資料夾。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4c01ad0e8efa4d28e1b5d1e72b3daa87bb01b619
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 76003f18009ebf9159f01d916cdaf38b50a213d1
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196590"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350336"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>設定獨立 EOP，將垃圾郵件傳遞至混合式環境中的 [垃圾郵件] 資料夾
 
@@ -51,7 +51,7 @@ ms.locfileid: "48196590"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您必須在內部部署 Exchange 環境中指派許可權，才能執行這些程式。 具體而言，您必須被指派 **傳輸規則** 角色，預設會指派給 **組織管理**、 **規範管理**及 **記錄管理** 角色。 如需詳細資訊，請參閱 [將成員新增至角色群組](https://docs.microsoft.com/Exchange/permissions/role-group-members?view=exchserver-2019#add-members-to-a-role-group)。
+- 您必須在內部部署 Exchange 環境中指派許可權，才能執行這些程式。 具體而言，您必須被指派 **傳輸規則** 角色，預設會指派給 **組織管理**、 **規範管理**及 **記錄管理** 角色。 如需詳細資訊，請參閱 [將成員新增至角色群組](https://docs.microsoft.com/Exchange/permissions/role-group-members#add-members-to-a-role-group)。
 
 - 當郵件傳遞至內部部署 Exchange 組織中的 [垃圾郵件] 資料夾時，由下列設定的組合來控制：
 

@@ -7,7 +7,7 @@ author: MSFTTracyP
 manager: dansimp
 ms.date: 11/21/2019
 audience: ITPro
-ms.topic: article
+ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何更新網域名稱服務 (DNS) 記錄，以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。
-ms.openlocfilehash: e53facc12ed8ad2b702d2d0514aebe0068c097b7
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: 20943f38dab436b48ff734753e951db4342d24ac
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318169"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350684"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>設定 SPF 以協助防止詐騙
 

@@ -1,6 +1,6 @@
 ---
 title: 具備深入解析的工作
-description: ''
+description: Microsoft 受管理的電腦中可用的真知灼見概述
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b3ed56dd3e669dbd5a2c3f09d87dfd87fe680aff
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: ba91a33da9f4d2187938c27398d5ef7c1cacebcd
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337178"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350819"
 ---
 # <a name="work-with-insights"></a>具備深入解析的工作
 
@@ -31,9 +31,11 @@ Microsoft 受管理的桌面提供許多儀表板，供您承租人中的系統�
 - 目前在裝置上安全性更新的狀態為何？
 - 95% 的裝置要多久才能獲得最新的安全性更新？
 
-若要從[Microsoft 端點管理員](https://endpoint.microsoft.com/)存取這些視圖，請流覽至主頁上的 [Microsoft 受管理的桌面] 索引標籤，然後選取 [**報告**] 區域中的 [**查看詳細資料**]：
 
-<!--Update picture to show in MEM [Admin center with Reports area in the upper right including the device reports card and the "view details" link.](../../media/insights_overview.png)-->
+若要從[Microsoft 端點管理員](https://endpoint.microsoft.com/)存取這些視圖，請流覽至主頁上的 [Microsoft 受管理的桌面] 索引標籤，然後在 [**報告**] 區域中選取 [**查看詳細資料**]：
+
+
+![具有左下方報表區域的系統管理中心主頁面和 [查看詳細資料] 連結](../../media/insights-main.png)
 
 
 ## <a name="usage-insights"></a>使用情況深入解析
