@@ -38,7 +38,7 @@
       items:
         - name: 概觀
           items:
-            - name: 什麼是 Microsoft 威脅防護？
+            - name: 什麼是 Microsoft 威脅防護?
               href: mtp/microsoft-threat-protection.md
             - name: Microsoft 威脅防護的新增功能
               href: mtp/whats-new.md
@@ -439,8 +439,6 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: 安全性儀表板概觀
               href: ./office-365-security/security-dashboard.md
-            - name: 檢視惡意檔案的相關資訊
-              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Office 365 進階威脅防護
           href: ./office-365-security/office-365-atp.md
           items:
@@ -452,19 +450,23 @@
               items:
                 - name: 全域系統管理員設定工作
                   items:
-                    - name: 設定 ATP 安全連結原則
-                      href: ./office-365-security/set-up-atp-safe-links-policies.md
-                    - name: 設定 ATP 安全附件原則
+                    - name: 在 Office 365 ATP 中設定安全附件原則
                       href: ./office-365-security/set-up-atp-safe-attachments-policies.md
-                    - name: 設定自訂「不要重寫」URL 清單
-                      href: ./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md
-                    - name: 設定自訂封鎖 URL 清單
-                      href: ./office-365-security/set-up-a-custom-blocked-urls-list-atp.md
+                    - name: 在 Office 365 ATP 中設定安全連結原則
+                      href: ./office-365-security/set-up-atp-safe-links-policies.md
+                    - name: 在 Office 365 ATP 中設定安全連結的全域設定
+                      href: ./office-365-security/configure-global-settings-for-safe-links.md
                 - name: 角色系統管理員設定工作
                   items:
                     - name: 開啟適用於 SharePoint、OneDrive 與 Microsoft Teams 的 ATP
                       href: ./office-365-security/turn-on-atp-for-spo-odb-and-teams.md
-            - name: 行銷活動檢視
+            - name: Office 365 ATP 安全附件
+              href: ./office-365-security/atp-safe-attachments.md
+            - name: 適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP
+              href: ./office-365-security/atp-for-spo-odb-and-teams.md
+            - name: Office 365 ATP 安全連結
+              href: ./office-365-security/atp-safe-links.md
+            - name: Office 365 ATP 中的行銷活動檢視
               href: ./office-365-security/campaigns.md
             - name: 自動調查及回應
               items:
@@ -490,8 +492,6 @@
               href: ./office-365-security/view-reports-for-atp.md
             - name: 使用威脅分析了解最新的攻擊
               href: ./mtp/latest-attack-campaigns.md
-            - name: ATP 安全連結警告頁面的意義
-              href: ./office-365-security/atp-safe-links-warning-pages.md
             - name: 使用威脅追蹤工具
               href: ./office-365-security/threat-trackers.md
             - name: Office 365 ATP 中的攻擊模擬器
@@ -515,14 +515,6 @@
               items:
                 - name: 自動調查及回應的運作方式
                   href: ./office-365-security/automated-investigation-response-office.md
-                - name: ATP 安全連結的運作方式
-                  href: ./office-365-security/how-atp-safe-links-works.md
-                - name: ATP 安全附件的運作方式
-                  href: ./office-365-security/how-atp-safe-attachments-works.md
-                - name: 動態傳遞和預覽詳細資料
-                  href: ./office-365-security/dynamic-delivery-and-previewing.md
-                - name: 適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP
-                  href: ./office-365-security/atp-for-spo-odb-and-teams.md
                 - name: 威脅調查及回應的運作方式
                   href: ./office-365-security/office-365-ti.md
         - name: 安全性事件管理
