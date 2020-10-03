@@ -11,13 +11,16 @@ ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
-ms.collection: m365-security-compliance
-ms.openlocfilehash: 8c56b7b597ea76c74412f49afa896a0d2f1b69a1
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.collection:
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
+ms.openlocfilehash: 5a1bd06e76564750c7b080182ac8ab93fc8d60de
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214902"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341221"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>開始使用「內幕風險管理」設定
 
@@ -176,7 +179,7 @@ ms.locfileid: "48214902"
 | 類別 | 警示的類別是 *InsiderRiskManagement*。 此類別可用於辨別來自其他安全性 & 合規性警示的警示。 |
 | 註解 | 警示的預設批註。 值是在建立警示時所記錄的 *新警示* () 並在更新警示) 時， (記錄 *警示更新* 。 使用 AlertID 來關聯警示的更新。 |
 | 資料 | 警示的資料，包含使用者的唯一識別碼、使用者主體名稱，以及在使用者被觸發到原則時 (UTC) 的日期和時間。 |
-| 名稱 | 產生警示之有問必答風險管理原則的原則名稱。 |
+| 姓名 | 產生警示之有問必答風險管理原則的原則名稱。 |
 | PolicyId | 觸發警示的「有問必答風險管理」原則的 GUID。 |
 | 嚴重性 | 警示的嚴重性。 值為 *高*、 *中*或 *低*。 |
 | 來源 | 警示的來源。 其值為 *Office 365 的安全性 & 符合性*。 |

@@ -14,22 +14,24 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
-- M365-security-compliance
+- m365-security-compliance
+- m365solution-insiderrisk
+- m365initiative-compliance
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 361e20129e67832c21631ebf1dbf0031319489ed
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 262cb34bbe7f2923ecf8dce88208c70ba0b5b7f7
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289114"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341409"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
 使用通訊相容性原則，識別內部或外部檢閱者進行檢查的使用者通訊。 如需通訊相容性原則如何協助您監視組織中的通訊的詳細資訊，請參閱 [Microsoft 365 中的通訊相容性原則](communication-compliance.md)。 如果您想要查看 Contoso 如何快速設定通訊相容性原則，以監視 Microsoft 小組、Exchange Online 和 Yammer 通訊中的冒犯性語言，請參閱此 [案例研究](communication-compliance-case-study.md)。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 在您開始進行通訊相容性之前，您應該先確認您的 [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) 和任何附加元件。 若要存取及使用通訊相容性，您的組織必須具備下列其中一項訂閱或附加元件：
 
@@ -133,7 +135,7 @@ ms.locfileid: "47289114"
 如果您是具有 Exchange 內部部署或外部電子郵件提供者的組織，且您想要為使用者監視 Microsoft 團隊聊天，您必須為使用內部部署或外部信箱進行監視的使用者建立通訊群組。 在上述步驟中，您會將此通訊群組指派為 [原則嚮導] 中的 [授與 **群組** ] 選擇。
 
 >[!IMPORTANT]
->您必須將 Microsoft 支援檔的要求記錄為可讓您的組織在安全性 & 合規性中心使用圖形使用者介面，針對內部部署使用者搜尋小組聊天資料。 如需詳細資訊，請參閱針對 [內部部署使用者搜尋雲端架構信箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
+>您必須向 Microsoft 支援服務提交要求，才能讓組織使用安全性與合規性中心的圖形化使用者介面來搜尋內部部署使用者的 Teams 聊天資料。 如需詳細資訊，請參閱針對 [內部部署使用者搜尋雲端架構信箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
 
 如需設定群組的詳細資訊，請參閱：
 
@@ -204,7 +206,7 @@ ms.locfileid: "47289114"
 
 4. 若要啟用匿名，請選取 [ **顯示匿名版本的使用者名**]。
 
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
 
 6. 流覽至 [ **公告範本** ] 索引標籤，然後選取 [ **建立公告範本**]。
 

@@ -9,15 +9,16 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
-- M365-security-compliance
+- m365-security-compliance
+- m365initiative-compliance
 localization_priority: Normal
 description: 深入瞭解將協助您快速開始使用 Microsoft 365 中的合規性的工作。
-ms.openlocfilehash: d2399b65e6f8d2765d3fc8691b0e395f113092f1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 98526104d2ced7b86315b24bd2843701047a097c
+ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200836"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48341179"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>開始使用 Microsoft 365 合規性的快速工作
 
