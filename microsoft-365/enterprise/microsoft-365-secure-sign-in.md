@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 09/16/2020
+ms.date: 09/30/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,20 +15,29 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 規定使用者以多重要素驗證 (MFA) 和其他功能安全登入。
-ms.openlocfilehash: 6c8f58e54ae21b4a5e1566dc72673e1d69152863
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 2e6c564e3179d0847710e2bef071dcc9e1cdbdaf
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132236"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48327423"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>保護 Microsoft 365 租用戶的使用者登入
 
 若要加強使用者登入的安全性：
 
+- 使用 Windows Hello 企業版
 - 使用 Azure Active Directory (Azure AD) 密碼保護
 - 使用多重要素驗證 (MFA)
-- 部署身分識別與裝置存取原則
+- 部署身分識別與裝置存取設定
+- 使用 Azure AD Identity Protection 來防止認證洩露
+
+## <a name="windows-hello-for-business"></a>Windows Hello 企業版
+
+Windows 10 企業版的 Windows Hello 企業版在登入 Windows 裝置時，會使用加強雙因素驗證取代密碼。 雙因素是一種新的使用者認證類型，可與裝置和生物特徵或 PIN 相繫結。
+
+如需詳細資訊，請參閱 [ Windows Hello 企業版概觀](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview)。
+
 
 ## <a name="azure-ad-password-protection"></a>Azure AD 密碼保護
 
@@ -44,7 +53,7 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 
 使用 MFA 的第一步是***要求所有系統管理員帳戶 (亦即授權帳戶) 都使用 MFA***。
 
-除了這個第一步，Microsoft 強烈建議要求所有使用者都使用 MFA。
+除了這個第一步，Microsoft 建議要求所有使用者都使用 MFA。
 
 根據您的 Microsoft 365 方案，有三種方法可以要求系統管理員或使用者使用 MFA。
 
@@ -96,7 +105,7 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 | **條件式存取原則** | 如果已啟用任何原則，則無法啟用安全性預設 | 如果已停用所有原則，則可啟用安全性預設  | 在 MFA 註冊期間由使用者指定  |
 ||||
 
-## <a name="identity-and-device-access-policies"></a>身分識別與裝置存取原則
+## <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
 建議採用身分識別和裝置存取設定和原則這類先決條件功能，其設定結合了條件式存取、Intune 和 Azure Active Directory Identity Protection 原則，決定是否應授予特定存取權要求及其授予條件。 這項決定的依據是登入的使用者帳戶、使用的裝置、使用者存取時使用的應用程式、建立存取要求的位置，以及對要求的風險評估。 這項功能有助於確保，只有經核准的使用者與裝置才可存取重要的資源。
 
@@ -114,27 +123,22 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 
 Microsoft 強烈建議您在組織設定並推出身分識別和裝置存取原則，包括 Microsoft Teams、Exchange Online 和 SharePoint 專有的設定。 如需詳細資訊，請參閱[身分識別與裝置存取設定](microsoft-365-policies-configurations.md)。
 
-<!--
+## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-## Let your users reset their own passwords
+在這一節中，您將學習如何設定原則以防護認證洩露，避免攻擊者判斷出使用者的帳戶名稱和密碼並存取組織的雲端服務和資料。 Azure AD 身分識別保護提供多種方法，可協助防止攻擊者危及使用者帳戶的認證。
 
-Self-Service Password Reset (SSPR) enables users to reset their own passwords without impacting IT staff. Users can quickly reset their passwords at any time and from any place. Watch [this video](https://go.microsoft.com/fwlink/?linkid=2128524) to set up SSPR.
+使用 Azure AD Identity Protection，您可以：
 
-## Sign in to SaaS apps with Azure AD
+|功能|描述|
+|:---------|:---------|
+| 判斷並處理組織身分識別中潛在的弱點 | Azure AD 使用機器學習來偵測異常和可疑活動，例如登入和登入後的活動。 Azure AD Identity Protection 可使用此資料來產生報告和警示，協助您評估問題及採取行動。|
+|偵測與組織身分識別相關的可疑活動，並自動進行回應處理|您可以設定以風險為基礎的原則，當達到指定風險層級時自動回應偵測到的問題。 除了由 Azure AD 和 Microsoft Intune 提供的其他條件式存取控制項之外，這些原則還可以自動封鎖存取權，或採取更正動作，包括密碼重設以及對後續登入要求 Azure Multi-Factor Authentication。 |
+| 調查可疑事件，並使用系統管理動作加以解決 | 您可以使用安全性事件的相關資訊來調查風險事件。基本工作流程可用於追蹤調查及啟動修復動作，例如密碼重設。 |
+|||
 
-In addition to providing cloud authentication for users, Azure AD can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for your users to discover the applications they need and sign into them securely.
+請參閱 [Azure AD Identity Protection 的相關詳細資訊](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection)。
 
-## Results of deployment of secure sign-ins
-
-After deployment of MFA, your users:
-
-- Are required to use MFA for sign-ins.
-- Have completed the MFA registration process and are using MFA for all sign-ins.
-- Can use SSPR to reset their own passwords.
-
-- [Plan an Azure AD self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
-
---> 
+請參閱[啟用 Azure AD Identity Protection 的步驟](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable)。
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>適用於 MFA 和身分識別登入的系統管理員技術資源
 
@@ -144,3 +148,6 @@ After deployment of MFA, your users:
 - [設定 Azure Multi-Factor Authentication 註冊原則](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [身分識別與裝置存取設定](microsoft-365-policies-configurations.md)
 
+## <a name="next-step"></a>下一步
+
+[管理您的使用者帳戶](manage-microsoft-365-accounts.md)
