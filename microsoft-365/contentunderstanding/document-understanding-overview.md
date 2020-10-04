@@ -1,24 +1,22 @@
 ---
-title: 檔理解概述
+title: 文件瞭解概觀
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 08/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: 深入瞭解 Microsoft SharePoint Syntex 中的檔瞭解。
-ms.openlocfilehash: dd8731759d8f1cbea57d171fa7a803ffc4f1baa7
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: 取得 Microsoft SharePoint Syntex 中文件瞭解的概覽。
+ms.openlocfilehash: 1265dfa06db323e23d63a044a1a95a6b67c525cf
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294757"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333555"
 ---
-# <a name="document-understanding-overview"></a>檔理解概述
+# <a name="document-understanding-overview"></a>文件瞭解概觀
 
 
 </br>
@@ -27,26 +25,36 @@ ms.locfileid: "48294757"
 
 </br>
 
-檔瞭解使用智慧 (AI) 模型，以自動化檔案的分類和資訊提取。 它最適合使用非結構化檔，例如信件或合約。 這些檔必須具有可根據片語或模式識別的文字。 識別的文字會同時指定它所 (分類的檔案類型) 以及您想要 (其擷取器) 提取的內容。
+文件瞭解使用人工智慧 (AI) 模型來自動分類檔案及擷取資訊。 它最適用於非結構化文件，如信件或合约。 這些文件必須具有可根據片語或模式識別的文字。 所識別的文字指定了檔案的類型（它的分類）和您想要擷取的內容（它的擷取器）。
 
-檔理解模型是在一種稱為 *內容中心*的 SharePoint 網站中建立及管理。 套用至 SharePoint 文件庫時，模型與內容類型相關聯時，會有欄，用來儲存所提取的資訊。 您建立的內容類型會儲存在 SharePoint 內容類型庫中。 您也可以選擇使用現有的內容類型以使用其架構。
+> [!NOTE]
+> 如需有關文件瞭解案例範例的詳細資訊，請參閱 [SharePoint Syntex 採用：入門指南](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#document-understanding-scenario-example)。
 
-將 *分類* 程式和 *擷取器* 新增至檔理解模型，以執行下列作業： 
+文件瞭解模型是在一種稱為*内容中心*的 SharePoint 網站中建立和管理的。 當套用至 SharePoint 文件庫時，模型與一個具有存儲所擷取資訊的欄的內容類型相關聯。 您建立的內容類型儲存在 SharePoint 內容類型庫中。 您也可以選擇使用現有內容類型來使用其架構。
 
-- 分類器是用來識別和分類上傳至文件庫的檔。 例如，分類器可以「訓練」，識別所有上傳至文件庫的 *合約更新* 檔。 當您建立分類器時，即會定義「合約更新」內容類型。
+將*分類器*和*擷取器*新增至文件瞭解模型中，以執行以下動作： 
 
-- 從這些檔中擷取器提取資訊。 例如，針對文件庫中識別的所有合約更新檔，欄會顯示在您的視圖中，也會顯示每個合約更新檔的 *服務開始日期* 和  *用戶端* 。 
+- 分類器用來識別和分類上傳至文件庫的文件。 例如，可以「訓練」分類器來識別上傳到文件庫的所有*合同續約*文件。 合同續約內容類型由您在建立分類器時定義。
 
-您可以使用範例檔案訓練及測試您的模型中的分類器和擷取器。 範例檔案會提供您的模型範例，說明當您嘗試識別及解壓縮檔中的資料時，應尋找哪些專案。 例如，您可以使用貴公司所用的合約更新檔範例，訓練您的合約更新分類程式和擷取器。 您也可以使用範例檔來測試模型的效能。
+- 擷取器從這些文件中選取資訊。 例如，對於文件庫中識別的所有合同續約文件，檢視中顯示的欄也顯示每個合同續約文件的*服務開始日期*和*客戶*。 
 
-在發佈模型之後，請使用內容中心將其套用至您具有存取權的任何 SharePoint 文件庫。  
+您可以在模型中使用範例檔案來訓練和測試分類器和擷取器。 範例檔案向您的模型範例提供在嘗試從檔案中識別和擷取資料時要查找的內容。 例如，您會以貴公司使用的合同續約文件範例來訓練您的合同續約分類器和擷取器。 您也可以使用範例檔案來測試模型的有效性。
+
+發佈模型之後，請使用內容中心將它套用到您有權存取的任何 SharePoint 文件庫。  
+
 
 
 ## <a name="see-also"></a>另請參閱
-[建立分類器](create-a-classifier.md)</br>
-[建立提取程式](create-an-extractor.md)</br>
-[建立內容中心](create-a-content-center.md) 
-[建立表單處理模型](create-a-form-processing-model.md)</br>
+[建立分類器](create-a-classifier.md)
+
+[建立擷取器](create-an-extractor.md)
+
+[建立內容中心](create-a-content-center.md)
+
+[建立表單處理模型](create-a-form-processing-model.md)
+
 [套用模型](apply-a-model.md)   
-[檔瞭解和表單處理模型之間的差異](difference-between-document-understanding-and-form-processing-model.md)  
-[表單處理概覽](form-processing-overview.md)
+
+[文件瞭解和表單處理模型之間的差異](difference-between-document-understanding-and-form-processing-model.md)
+  
+[表單處理概觀](form-processing-overview.md)

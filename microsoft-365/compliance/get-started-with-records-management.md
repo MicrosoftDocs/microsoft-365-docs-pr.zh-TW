@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要適用于 Microsoft 365 的記錄管理解決方案，以管理法律、企業或法規責任的高價值內容，但不確定要從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: 1983aca82bdab2ca7bb63d5a508dc3843ac1e322
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: fd3e3368b7a23cb31a8df4953268576de2419f89
+ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868898"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48333849"
 ---
 # <a name="get-started-with-records-management"></a>開始使用記錄管理
 
@@ -70,15 +70,16 @@ ms.locfileid: "46868898"
 |----------------|---------------|
 |聲明記錄 |[使用保留標籤聲明記錄](declare-records.md)|
 |更新記錄 |[使用記錄版本設定來更新儲存在 SharePoint 或 OneDrive 中的記錄](record-versioning.md)|
-|讓系統管理員和使用者手動為文件和電子郵件套用一組保留和刪除動作： <br />- SharePoint <br />- OneDrive <br />- Outlook 和 Outlook 網頁版|[建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)|
-|讓網站系統管理員為 SharePoint 文件庫、資料夾或文件集的所有內容設定預設保留標籤|[建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)|
-|讓使用者使用 Outlook 規則自動將保留標籤套用至電子郵件|[建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)|
-|自動為文件和電子郵件套用一組保留和刪除動作 |[自動將保留標籤套用到內容](apply-retention-labels-automatically.md)|
+|讓系統管理員和使用者手動為文件和電子郵件套用保留和刪除動作： <br />- SharePoint <br />- OneDrive <br />- Outlook 和 Outlook 網頁版|[建立保留標籤，並在應用程式中套用這些標籤](create-apply-retention-labels.md)|
+|讓網站系統管理員為 SharePoint 文件庫、資料夾或文件集的所有內容設定預設保留和刪除動作|[建立保留標籤，並在應用程式中套用這些標籤](create-apply-retention-labels.md)|
+|讓使用者使用 Outlook 規則自動對電子郵件套用保留和刪除動作|[建立保留標籤，並在應用程式中套用這些標籤](create-apply-retention-labels.md)|
+|讓系統管理員對文件瞭解模型套用保留和刪除動作，以便將這些動作自動套用至 SharePoint 文件庫中已識別的文件。|[建立保留標籤，並在應用程式中套用這些標籤](create-apply-retention-labels.md)|
+|自動對文件和電子郵件套用保留和刪除動作 |[自動將保留標籤套用到內容](apply-retention-labels-automatically.md)|
 |當事件發生時，請啟動保留時間，例如:  <br />- 員工離開組織 <br />- 合約到期 <br />- 產品生命週期完結| [事件發生時開始保留](event-driven-retention.md)|
 |管理 SharePoint 中不同文件類型的生命週期| [使用保留標籤來管理儲存在 SharePoint 中的文件生命週期](auto-apply-retention-labels-scenario.md)|
-|請確認在內容在保留期結束被刪除前，有人對內容進行檢查並核准|[處置檢閱](disposition.md#disposition-reviews) |
-|對於在保留期結束時被刪除的內容是否有處理證明|[記錄處置](disposition.md#disposition-of-records) |
-| 監視保留標籤的套用方式和位置 | [監視保留標籤](retention.md#monitoring-retention-labels) |
+|請確認在內容在保留期結束被永久刪除前，有人對內容進行檢查並核准|[處置檢閱](disposition.md#disposition-reviews) |
+|在保留期結束時被永久刪除的內容有處置證明|[記錄處置](disposition.md#disposition-of-records) |
+|監控保留和刪除設定如何套用至項目 | [監視保留標籤](retention.md#monitoring-retention-labels) |
 
 ## <a name="end-user-documentation-for-records"></a>記錄的終端使用者文件
 

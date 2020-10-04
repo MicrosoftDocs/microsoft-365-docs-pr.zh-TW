@@ -1,56 +1,58 @@
 ---
-title: 檔瞭解模型流量分析
+title: 文件瞭解模型使用情況分析
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 10/1/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: 瞭解如何將保留標籤套用至檔理解模型
-ms.openlocfilehash: a07e60d575e616b3a2765011a4fba84b4cff21ff
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
-ms.translationtype: MT
+localization_priority: Priority
+description: 瞭解如何將保留標籤套用至文件瞭解模型
+ms.openlocfilehash: 6f616dc3d2ebd87bcc70ee01c9f3a88db60b6f17
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295943"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337238"
 ---
-# <a name="document-understanding-model-usage-analytics"></a>檔瞭解模型流量分析
+# <a name="document-understanding-model-usage-analytics"></a>文件瞭解模型使用情況分析
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJY]  
 
 </br>
 
-您的 Microsoft SharePoint Syntex content center 為您提供模型流量分析，提供如何使用從內容中心發行的模型的詳細資訊。 這包括下列資訊的匯總：
 
-- 在何處套用您的模型
-- 一段時間處理的檔數目
+您的 Microsoft SharePoint Syntex 內容中心可提供有關您的模型使用情況分析，以便提供您更多有關從內容中心發佈之模型的使用情況詳細資訊。 這包括下列資訊的整合資訊：
+
+- 正在套用模型的位置
+- 一段時間內所處理的檔案數量
 
  ![模型分析](../media/content-understanding/model-analytics.png) </br>
 
-## <a name="total-model-percentage"></a>模型總百分比
+## <a name="total-model-percentage"></a>總計模型百分比
 
-   ![模型總百分比](../media/content-understanding/total-model-percentage.png) </br>
+   ![總計模型百分比](../media/content-understanding/total-model-percentage.png) </br>
 
-[ **總模型百分比** ] 圓形圖會顯示每個發行的模型，都是內容中心內所有已發佈模型所處理之總檔的百分比。
+**總計模型百分比** 的圓形圖會顯示在內容中心所有已發佈模型中，每個已發佈的模型佔所有已處理之檔案總數的所佔百分比。
 
-每個模型也會顯示 **完整的速度**（已由模型成功分析的上載檔案百分比）。 低完整性比率可能表示正在分析的模型或檔案發生問題。
+每個模型也會顯示 **完整性比率**，即經該模型成功分析且已上傳檔案的百分比。 低完整性比率可能表示正在分析的模型或檔案有問題。
 
-## <a name="files-processed-over-time"></a>隨時間處理的檔案
+## <a name="files-processed-over-time"></a>一段時間內所處理的檔案
 
-   ![已處理檔案](../media/content-understanding/files-processed-over-time.png) </br>
+   ![已處理的檔案](../media/content-understanding/files-processed-over-time.png) </br>
 
-透過 **時間** 列圖表處理的檔案，不僅會顯示每個模型所處理的檔案數目，還會顯示已套用模型的文件庫。
+**一段時間內所處理的檔案** 橫條圖 可顯示除了每個模型所處理的檔案數目，也同時顯示已套用該模型的文件庫。
 
    ![橫條圖](../media/content-understanding/bar-chart-models.png) </br>
 
 ## <a name="see-also"></a>另請參閱
-[建立分類器](create-a-classifier.md)</br>
-[建立提取程式](create-an-extractor.md)</br>
-[檔理解概述](document-understanding-overview.md)</br>
+[建立分類器](create-a-classifier.md)
+
+[建立擷取器](create-an-extractor.md)
+
+[文件瞭解概觀](document-understanding-overview.md)
+
 [建立表單處理模型](create-a-form-processing-model.md)  

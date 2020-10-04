@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: e28c3866ad674b4bf933bd83e0ebccc19657ca7b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c4f00c0a11b172671da456b27e0e33c081728614
+ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131801"
+ms.lasthandoff: 10/01/2020
+ms.locfileid: "48326744"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -75,7 +75,7 @@ ms.locfileid: "48131801"
 
 |功能或行為|標籤設定：適用於 Office 應用程式的自動套用標籤 |原則：自動套用標籤|
 |:-----|:-----|:-----|
-|應用程式相依性|[是](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |否 |
+|應用程式相依性|[是](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |否\* |
 |依位置限制|否 |是 |
 |條件：可訓練分類器|是 |否 |
 |條件：共用選項和電子郵件的其他選項|否 |是 |
@@ -85,6 +85,8 @@ ms.locfileid: "48131801"
 |套用視覺標記 |是 |是 (僅限電子郵件) |
 |已套用覆寫 IRM 加密但沒有標籤|如果使用者只有匯出的最小使用權限，則為是。 |是 (僅限電子郵件) |
 |將內送電子郵件套用標籤|否 |是 (未套用加密) |
+
+\* 目前並非所有地區都提供自動套用標籤功能。 如果您的租用戶無法支援這項功能，[系統管理標籤中心] 就不會顯示 [自動套用標籤] 索引標籤。
 
 > [!NOTE]
 > 手動將內容套用標籤時，該標籤永遠不會被自動套用標籤取代。 不過，自動套用標籤原則可取代使用 Office 應用程式自動套用標籤所套用的[低優先順序標籤](sensitivity-labels.md#label-priority-order-matters)。
@@ -242,6 +244,8 @@ ms.locfileid: "48131801"
     
     ![自動套用標籤](../media/auto-labeling-tab.png)
     
+    > [!NOTE]
+    > 如果您沒有看到 **[自動套用標籤]** 索引標籤，就代表您的區域目前無法使用此功能。
 
 3. 選取 **+ 建立自動套用標籤原則**。 這會啟動 [新原則] 精靈：
     
