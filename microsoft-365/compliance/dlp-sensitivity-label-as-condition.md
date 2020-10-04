@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解您可以在 DLP 原則中使用敏感度標籤做為條件的服務和項目類型
-ms.openlocfilehash: bb06ed6919a396bef1e5d1f1cb04731fa11267ae
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
+ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235715"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "48321108"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>使用敏感度標籤作為 DLP 原則中的條件 (預覽)
 
@@ -59,7 +59,7 @@ ms.locfileid: "48235715"
 
 \* 支援電子郵件上敏感度標籤的 DLP 偵測。 不支援標示敏感度電子郵件附件的 DLP 偵測。
 
-\** 在 Teams 中透過 1 對 1 聊天或頻道傳送於附件，會自動上傳至商務用 OneDrive 和 SharePoint。 因此，如果將 SharePoint Online 或商務用 OneDrive 包含在您的 DLP 原則做為位置，則會在此條件的範圍中自動包含於 Teams 傳送、標示的附件。 您不需要在 DLP 原則中選取 Teams 做為位置。
+\** 在 Teams 中透過 1 對 1 聊天或頻道傳送的附件，會自動上傳至 [商務用 OneDrive] 和 SharePoint。 因此，如果將 SharePoint Online 或 [商務用 OneDrive] 包含在您的 DLP 原則做為位置，則會在此條件的範圍中會自動包含於 Teams 中傳送的已標示附件。 您不需要在 DLP 原則中選取 Teams 做為位置。
 
 ### <a name="supported-scenarios"></a>支援的案例
 

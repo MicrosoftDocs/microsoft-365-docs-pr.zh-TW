@@ -17,12 +17,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：Microsoft 365 資料位置
-ms.openlocfilehash: 125d58b0565bf0380a4b2578aea4db6b26596f14
-ms.sourcegitcommit: 96b4593becc9450af136c528844e858c6e88b5a9
+ms.openlocfilehash: 7a2fb85d0d7320770a1ab32efcd024a9e348795e
+ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48269538"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48337154"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -41,7 +41,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 針對相關的 Azure Active Directory 資料位置，請瀏覽 [AAD 資料地圖](https://go.microsoft.com/fwlink/p/?linkid=2092972)。
 
 
-由於 COVID-19 危機所造成的空前情況和管理線上服務的需求，如果貴組織是歐洲的教育機構，我們可以佈建您的 Office 365 租用戶、移轉您的資料並將靜態資料儲存至歐盟。  如果貴組織是印度的教育機構，我們可以佈建您的 Office 365 租用戶、移轉您的資料並將靜態資料儲存至印度、歐洲或美國。  如果貴組織是南非的教育機構，我們可以佈建您的 Office 365 租用戶、移轉您的資料並將靜態資料儲存至南非或歐洲。 在我們實施必要且謹慎的措施來維護服務可用性的同時，我們對合規性、隱私權和安全性的承諾將保持不變。 我們將遵守資料傳輸相關的所有適用法律。
+如果客戶的帳單位址不在歐盟地區，而客戶擁有 Office 365 教育版的訂閱，然後儘管 OST 中的章節「核心線上服務的客戶待用資料位置」有規定，但 Microsoft 得在北美地區或歐盟區域內的任何地方提供客戶的 Office 365 租用戶，傳輸客戶資料，並儲存客戶的待用資料。  如果客戶的帳單位址是在歐盟區域，且客戶擁有 Office 365 教育版的訂閱，然後儘管 OST 中的章節「核心線上服務的客戶待用資料位置」有規定，但 Microsoft 得在歐盟區域內的任何地方提供客戶的 Office 365 租用戶，傳輸客戶資料，並儲存客戶的待用資料。
 
 
 
@@ -2283,7 +2283,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 ## <a name="guadeloupe"></a>瓜地洛普
 <details><summary>按一下以展開</summary><p>
 
-| 服務 | 位置 |
+| 服務 | Location |
 | --- | --- |
 | Exchange Online | 美國 |
 | 商務用 OneDrive | 美國 |
