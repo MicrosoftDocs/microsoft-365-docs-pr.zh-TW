@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 了解如何在 Microsoft SharePoint Syntex 中建立擷取器。
-ms.openlocfilehash: d68cc8b8c337c1ae6740eb5775576a54279b8389
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 260486c128ce76c31fe5f4a0994b4e103687b829
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321806"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338646"
 ---
-# <a name="create-an-extractor-preview"></a>建立擷取器 (預覽)
+# <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中建立擷取器
 
 
 </br>
@@ -122,9 +122,20 @@ ms.locfileid: "48321806"
 
 ## <a name="test-your-model"></a>測試您的模型
 
-如果您在標籤的範例檔案上收到 [相符]，您現在可以在剩餘未標籤的範例檔案上測試模型。 這是一個有用的步驟，可透過在模型以前從未見過的檔案中進行測試來評估模型的「適合性」或就緒狀態。
+如果您在標籤的範例檔案上收到 [相符]，您現在可以在剩餘未標籤的範例檔案上測試模型。 這是一個選用但有用的步驟，可透過在模型以前從未見過的檔案中進行測試來評估模型的「適合性」或就緒狀態。
 
 1. 從模型首頁中，按一下 **[測試]** 索引標籤。這會在未標籤的範例檔案上執行模型。
 2. 如果模型可以擷取所需的資訊，就會在 **[測試檔案]** 清單中顯示您的範例檔案。 使用這項資訊可協助您判斷分類器識別文件的效能。
 
     ![測試您的檔案](../media/content-understanding/test-filies-extractor.png) 
+
+## <a name="see-also"></a>另請參閱
+[建立分類器](create-a-classifier.md)
+
+[說明類型](explanation-types-overview.md)
+
+[在建立擷取器時運用字詞庫分類法](leverage-term-store-taxonomy.md)
+
+[文件了解概觀](document-understanding-overview.md)
+
+[套用模型](apply-a-model.md) 
