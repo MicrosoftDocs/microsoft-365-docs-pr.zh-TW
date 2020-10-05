@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 了解如何建立分類器
-ms.openlocfilehash: 1225a4e57969b507ddd2ca7260050605c0db955e
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 948ece1a19b7e6049167c373b3200efd316a60cd
+ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321854"
+ms.lasthandoff: 10/02/2020
+ms.locfileid: "48338634"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中建立分類器
 
@@ -131,7 +131,7 @@ ms.locfileid: "48321854"
 
 ## <a name="test-your-model"></a>測試您的模型
 
-如果您在已標記的範例檔案上收到符合，您現在可以在尚未顯示模型的剩餘未標記範例檔案上測試模型。  這是選擇性的步驟。
+如果您在已標記的範例檔案上收到符合，您現在可以在尚未顯示模型的剩餘未標記範例檔案上測試模型。  這是一個選用但有用的步驟，可透過在模型以前從未見過的檔案中進行測試來評估模型的「適合性」或就緒狀態。
 
 1. 從模型首頁中，選取 **[測試]** 索引標籤。這會在未標記的範例檔案上執行模型。
 2. 在 **[測試檔案]** 清單中，您的範例檔案會呈現並顯示模型預測其為正面或負面範例。 使用這項資訊可協助您判斷分類器的效能，以找出您的文件。
@@ -143,6 +143,6 @@ ms.locfileid: "48321854"
 
 [文件瞭解概觀](document-understanding-overview.md)
 
-[建立表單處理模型](create-a-form-processing-model.md)
+[說明類型](explanation-types-overview.md)
 
 [套用模型](apply-a-model.md) 
