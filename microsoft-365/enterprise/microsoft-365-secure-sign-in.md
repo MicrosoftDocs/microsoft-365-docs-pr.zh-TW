@@ -13,14 +13,15 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
+- M365initiative-coredeploy
 ms.custom: ''
 description: 規定使用者以多重要素驗證 (MFA) 和其他功能安全登入。
-ms.openlocfilehash: 2e6c564e3179d0847710e2bef071dcc9e1cdbdaf
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: f2302a6affa64db221916108003225f835799d5b
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327423"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357815"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>保護 Microsoft 365 租用戶的使用者登入
 

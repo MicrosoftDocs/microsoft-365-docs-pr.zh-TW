@@ -14,6 +14,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
+- M365initiative-coredeploy
 f1.keywords:
 - CSH
 ms.assetid: c720cffc-f9b5-4f43-9100-422f86a1027c
@@ -21,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: 了解所有 Microsoft 雲端產品上的組織、訂閱、授權、使用者帳戶、租用戶之間的關係。
-ms.openlocfilehash: 7b19c2d6a870f53642d37ee98276f7b6a9e1febf
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e79189ac4c95f735597352d115038e994710852b
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688373"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357955"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Microsoft 雲端供應項目的訂用帳戶、授權、帳戶及租用戶
 

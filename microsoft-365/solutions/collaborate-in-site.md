@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 深入瞭解設定 SharePoint 網站與來賓共同作業所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: cb3cfc52191be4bacfb9d84672131149082ee80e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 4f4b87a02c3ff3a1a7997aee69e3e1e95e4b2ed5
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277564"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357991"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在網站中與來賓共同作業
 
@@ -146,3 +146,5 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 [建立安全的來賓共用環境](create-secure-guest-sharing-environment.md)
 
 [使用受管理來賓建立 B2B 外部網路](b2b-extranet.md)
+
+[與 Azure AD B2B 的 SharePoint 和 OneDrive 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)

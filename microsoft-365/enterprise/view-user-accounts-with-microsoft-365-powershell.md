@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: bb12f49d-a85d-4f3b-ada2-5c4e33977b10
 description: 瞭解如何使用 PowerShell 以不同方式來查看、列出或顯示 Microsoft 365 使用者帳戶。
-ms.openlocfilehash: ea631d12a95ca813ebf9da3286e36d724d51a2f7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 4dba05ce440ec0d395fda58a12df3e9f751bb469
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695667"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357895"
 ---
 # <a name="view-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 來查看 Microsoft 365 使用者帳戶
 
@@ -99,6 +99,21 @@ Get-AzureADUser -ObjectID BelindaN@litwareinc.onmicosoft.com | Select *
 ```powershell
 Get-AzureADUser -ObjectID <sign-in name of the user account> | Select DisplayName,UserPrincipalName,AccountEnabled
 ```
+
+### <a name="view-account-synchronization-status"></a>查看帳戶同步處理狀態
+
+使用者帳戶有兩個來源;Windows Server Active Directory (AD) 是指從內部部署 AD 同步處理至雲端和 Azure AD 的帳戶，而這些帳戶是在雲端中直接建立的帳戶。
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -eq $true}
+```
+這個命令會指示 PowerShell 取得屬性 **DirSyncEnabled** 設定為 True 的所有使用者。 可用於提取從內部部署 AD 同步處理的帳戶。
+
+
+```powershell
+Get-AzureADUser | Where {$_.DirSyncEnabled -ne $true}
+```
+這個命令會指示 PowerShell 取得屬性 **DirSyncEnabled** 設定為 False 的所有使用者。 可用於提取僅限雲端的帳戶。
 
 ### <a name="view-some-accounts-based-on-a-common-property"></a>根據共同屬性查看部分帳戶
 
@@ -298,11 +313,10 @@ Scott Wallace            Operations
 Get-ADUser ([guid][System.Convert]::FromBase64String((Get-MsolUser -UserPrincipalName <UPN of user account>).ImmutableID)).guid
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [開始使用適用於 Microsoft 365 的 PowerShell](getting-started-with-microsoft-365-powershell.md)
-

@@ -10,15 +10,17 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 localization_priority: Normal
-ms.collection: M365-subscription-management
+ms.collection:
+- M365-subscription-management
+- M365initiative-coredeploy
 ms.custom: it-pro
 description: 設定 Microsoft 365 承租人的藍圖。
-ms.openlocfilehash: 7834e8b7f9ff8a1b33f2f2a7ccc4a499e4da7c69
-ms.sourcegitcommit: 13ae76220b4ad688438a5d1031a6e1b5300ffa23
+ms.openlocfilehash: e4b2af9143070caa1ebd8fd66ef9f367f85d3bb9
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47775144"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357907"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 租使用者藍圖
 
@@ -34,7 +36,6 @@ ms.locfileid: "47775144"
 
 - [瞭解訂閱、授權和 Azure Active Directory (Azure AD) 承租人](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
 - [瞭解如何使用協力廠商 SSL 憑證](plan-for-third-party-ssl-certificates.md)
-- [Microsoft 365 系統管理中心的 Access 安裝指南](setup-guides-for-microsoft-365.md)
 - [瞭解 Microsoft 365 租使用者與 Azure AD 服務的整合方式](integrated-apps-and-azure-ads.md)
 - [規劃用戶端應用程式的支援](microsoft-365-client-support-certificate-based-authentication.md)
 - [決定如何使用混合式新式驗證](hybrid-modern-auth-overview.md)
@@ -44,7 +45,7 @@ ms.locfileid: "47775144"
 
 ## <a name="deploy"></a>部署
 
-若要部署您的租使用者，請為您 [的組織新增 DNS 網域](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 。
+若要部署租使用者，請 [新增組織的 DNS 網域](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) ，並使用 [Microsoft 365 系統管理中心中的設定指南](setup-guides-for-microsoft-365.md)。
 
 ## <a name="tenants-with-multiple-geographic-locations"></a>具有多個地理位置的承租人
 
@@ -58,7 +59,7 @@ Microsoft 會繼續開啟新的資料中心地理位置， (geos) Microsoft 365 
 
 如需 Microsoft 365 資料中心地理位置的詳細資訊，包括如何要求地區資料移動，請 [從這裡開始](moving-data-to-new-datacenter-geos.md)。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 以 [訂閱、授權、帳戶及](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)租使用者的方式開始規劃承租人。
 

@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f462e6018f03080b41e46f45629dc4bfe44b3ef9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c9b495b70c8b61188b4db3175b54e406feb87fc8
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200014"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357839"
 ---
 # <a name="incidents-overview-in-microsoft-threat-protection"></a>Microsoft 威脅防護中的事件概觀
 
@@ -36,23 +36,26 @@ ms.locfileid: "48200014"
 
 
 
-基本上，每個事件代表一個警示。 當在您的網路上發現惡意事件或活動時，系統會產生警示。 個別的警示可提供個別事件或實體發生事件的寶貴線索。 不過，攻擊通常會利用各種攻擊媒介來造成侵害。 將各個線索拼湊在一起可能是一項艱鉅而耗時的工作。 
+事件是以相關的警示為基礎。 當在您的網路上發現惡意事件或活動時，系統會產生警示。 個別警示提供有關進行中攻擊的重要線索。 不過，攻擊通常會使用各種向量和技術來執行破壞。 將個別的線索 Piecing 在一起可能會非常困難而且耗時。
 
-Microsoft 威脅防護可將個別警示的關鍵點串連起來。 下列實體的惡意事件會在 Microsoft 365 安全性中心內呈現：
-- 裝置
-- 使用者
-- 信箱
+這段影片可讓您瞭解 Microsoft 威脅防護中的事件。
+<br>
 
-顯示出屬於較大型攻擊的特徵的可疑事件被歸類為事件。 
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-您會知道攻擊的確切開始位置，以及其他可協助您查看攻擊程度的詳細資料。
+事件是組成攻擊之故事的相關警示集合。 在網路中不同裝置、使用者和信箱實體中找到的惡意和可疑事件，會自動依 Microsoft 威脅防護來匯總。 將相關警示分組到事件中，可讓安全性 defenders 整個攻擊的觀點。 
 
-這個平台提供安全性防禦程式，並具有適當的視覺效果和資料呈現方式，能讓您了解並處理複雜的跨實體威脅。 
+例如，安全性 defenders 可查看攻擊的開始位置、使用的戰術，以及攻擊進入網路的程度。 他們也可以查看受影響的範圍、影響的裝置、使用者和信箱數目、影響的程度，以及受影響實體的其他詳細資料。
 
-您不僅可以洞悉攻擊範圍，還能存取服務，讓您採取策略性步驟來控制事件。
+若啟用，Microsoft 威脅防護便可透過自動化和人工智慧，自動調查和解決個別的提醒。 安全性 defenders 也可以執行其他修復步驟，以直接從事件檢視解決攻擊。 
+
+過去30天的事件會顯示在事件佇列中。 從這裡，安全性 defenders 可根據風險層級及其他因素，查看應優先考慮哪些事件。 
+
+[安全性 defenders] 也可以重新命名事件，並將其指派給個別分析員、分類，並將標記新增至事件，以獲得更佳和更多自訂的事件管理體驗。
 
 
-## <a name="related-topics"></a>相關主題
+
+## <a name="see-also"></a>另請參閱
 - [設定事件優先順序](incident-queue.md)
 - [調查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)

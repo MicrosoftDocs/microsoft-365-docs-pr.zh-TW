@@ -13,14 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
+- M365initiative-coredeploy
 ms.custom: ''
 description: Microsoft 365 的身分識別藍圖。
-ms.openlocfilehash: 997df19ca71b67d3fa579b9feaf3e1a61bc7a358
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 82c2adc753a3446b9ca4f070d8655f526465de55
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327768"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357827"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的身分識別藍圖
 

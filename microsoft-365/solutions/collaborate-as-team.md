@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解設定小組以與小組中的客人共同作業所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: e8d1c75c6172168fc2b0a4b351591289c893869a
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: e92397c7b8d4a4192fb36a52a76679269be53b3b
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322174"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357791"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在小組中與來賓共同作業
 
@@ -184,3 +184,5 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 [建立安全的來賓共用環境](create-secure-guest-sharing-environment.md)
 
 [使用受管理來賓建立 B2B 外部網路](b2b-extranet.md)
+
+[與 Azure AD B2B 的 SharePoint 和 OneDrive 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)

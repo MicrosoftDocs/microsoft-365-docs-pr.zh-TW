@@ -8,7 +8,9 @@ audience: Admin
 ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365initiative-coredeploy
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: 本文提供保護 Microsoft 365 訂閱之全域管理員存取的相關資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b234c0e5c0ca352f26ff30213f22d59e07de274
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: bcc1a09ca8e7c57d4d6c69400925df3531c53c4f
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327246"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357803"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>保護您的 Microsoft 365 全域管理員帳戶
 
@@ -178,6 +180,6 @@ PIM 可與 Azure Active Directory Premium P2 搭配使用，隨附於 Microsoft 
 - 如果您使用的是混合身分識別，[準備目錄同步](prepare-for-directory-synchronization.md)處理
 
   
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 安全性藍圖](https://docs.microsoft.com/office365/securitycompliance/security-roadmap)
