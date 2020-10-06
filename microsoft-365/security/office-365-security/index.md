@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Office 365 中的安全性（從 EOP 到 ATP 方案1和2）、標準與嚴格的安全性設定等等，因此您可以瞭解您擁有的內容，以及如何保護您的屬性。
-ms.openlocfilehash: bfce840aa05eaebecc1ec227c6c29bd11cb0a823
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+description: Office 365 的安全性，從 EOP 到 ATP 方案1和2、Standard 與 Strict 安全性設定等等。 瞭解您擁有的內容，以及如何保護您的屬性。
+ms.openlocfilehash: c5b357dc7a08eeef099b25172169d04cdb81e8c4
+ms.sourcegitcommit: 5abd5ef8c2903b4c3bd875da68049fde26768dcf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338709"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48359150"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全性概述
 
@@ -53,9 +53,9 @@ Office 365 的安全性是以 EOP 提供的核心保護為基礎。 EOP 位於�
 
 :::image type="content" source="../../media/tp_GraphicEOPATPP1P2_2.png" alt-text="Placeholder graphic":::
 
-雖然每個服務都會著重強調「保護」、「偵測」、「調查」及「回應」中的特定目標， ***所有*** 服務都可以執行 ***任何*** 保護、偵測、調查及回應的目標。
+雖然每個服務都強調保護、偵測、調查和回應的目標，但 ***所有*** 服務都可以執行 ***任何*** 保護、偵測、調查及回應的目標。
 
-Office 365 的核心安全性是 EOP protection。 ATP P1 包含 EOP。 ATP P2 包含 P1 和 EOP。 結構為累計的。 如此一來，設定 ATP 時，應該會從 EOP 開始，並在各層中工作。
+Office 365 的核心安全性是 EOP protection。 ATP P1 包含 EOP。 ATP P2 包含 P1 和 EOP。 結構為累計的。 如此一來，設定此產品時，應從 EOP 開始，並使用 ATP。
 
 雖然電子郵件驗證設定會在公用 DNS 中進行，但必須設定此功能，以協助防禦欺騙。 *如果您有 EOP，* ***則應該 [設定電子郵件驗證](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)***。
 
@@ -83,7 +83,7 @@ Office 365 的核心安全性是 EOP protection。 ATP P1 包含 EOP。 ATP P2 �
 從 **Exchange Online Protection**開始：
 <p>
 
-|防止/偵測  |調查  |回應  |
+|防止/偵測  |調查  |回覆  |
 |---------|---------|---------|
 | 技術包括：<ul><li>垃圾郵件</li><li>釣魚</li><li>惡意 軟體</li><li>大宗郵件</li><li>假冒情報</li><li>類比偵測</li><li>系統管理員隔離</li><li>系統管理員和使用者送出的誤報和漏報</li><li>URLs 和檔案的允許/封鎖</li><li>報告</li></u1>|<li>稽核記錄檔搜尋</li><li>郵件追蹤</li>|<li>零小時自動清除 (ZAP) </li><li>精簡及測試允許和封鎖清單</li>|
 
@@ -94,7 +94,7 @@ Office 365 的核心安全性是 EOP protection。 ATP P1 包含 EOP。 ATP P2 �
 透過「 **高級威脅防護」取得，Plan 1** (至日期) ：
 <p>
 
-|防止/偵測  |調查  |回應  |
+|防止/偵測  |調查  |回覆  |
 |---------|---------|---------|
 | 技術包括 EOP 中的所有專案，以及：<u1><li>安全附件</li><li>安全連結<li>工作負載的 ATP 保護 (ex。 SharePoint 商務) 的線上、小組 OneDrive</li><li>電子郵件、Office 用戶端和小組中的時間點擊保護</li><li>ATP 反網路釣魚</li><li>使用者和網域類比保護</li><li>警示和 SIEM 整合 API 的警示</li>|<li>SIEM 的整合 API</li><li>**即時偵測工具**</li><li>URL 追蹤</li>|<li>相同</li></u1>
 
@@ -105,7 +105,7 @@ ATP P1 也會新增 **即時** 偵測以進行調查。 這項威脅搜尋工具
 透過「 **高級威脅防護」取得，Plan 2** (至日期) ：
 <p>
 
-|防止/偵測  |調查  |回應  |
+|防止/偵測  |調查  |回覆  |
 |---------|---------|---------|
 | 技術包括 EOP 中的所有專案，以及 ATP P1 加上：<u1><li>相同</li>|<li>**威脅總管**</li><li>威脅追蹤工具</li><li>市場即時檢視</li>|<li>自動調查和回應 (AIR) </li><li>來自威脅瀏覽器的空氣</li><li>受損使用者的空氣</li><li>SIEM 整合 API 以進行自動化調查</li>
 
@@ -138,11 +138,11 @@ ATP P1 也會新增 **即時** 偵測以進行調查。 這項威脅搜尋工具
 - 如果您目前的訂閱不包含 Office 365 ATP，且您想要，請與銷售人員合作， [以開始試用版](https://go.microsoft.com/fwlink/p/?LinkId=518644)，並瞭解在您的組織中 ATP 的運作方式。
 
 > [!TIP]
-> ***有問必答提示***。 您可以使用 [docs.microsoft.com] 目錄來瞭解 EOP 和 ATP。 流覽至 [Office 365 的安全性](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap) 文章，您會注意到，目錄組織會從評估與部署 (開始，包含遷移) ，然後繼續進行防護、偵測、調查和回應。 <p> 這種結構會加以分割，以便 **安全性管理** 主題遵循 **安全性操作** 主題。 如果您是工作角色的新成員，請使用此秘訣中的連結和您的目錄知識，協助您瞭解空間。 請記得使用反應 *連結* ，並在旅途中 *評價文章* 。 意見反應可協助我們改進我們為您提供的功能。
+> ***有問必答提示***。 您可以使用 [docs.microsoft.com] 目錄來瞭解 EOP 和 ATP。 向後流覽至此頁面， [Office 365 安全性簡介](https://docs.microsoft.com/microsoft-365/security/office-365-security/?view=o365-worldwide)，您會注意到 [目錄] 組織位於側面列中。 其開始的部署 (包括遷移) ，然後繼續進行防護、偵測、調查和回應。 <p> 這種結構會加以分割，以便 **安全性管理** 主題遵循 **安全性操作** 主題。 如果您是工作角色的新成員，請使用此秘訣中的連結和您的目錄知識，協助您瞭解空間。 請記得使用反應 *連結* ，並在旅途中 *評價文章* 。 意見反應可協助我們改進我們為您提供的功能。
 
 ## <a name="where-to-go-next"></a>下一步
 
-如果您是安全性管理員，您可能需要為您的郵件設定 DKIM 或 DMARC、為優先順序使用者推出「嚴格」安全性預設，或者您可能想要尋找產品的新功能。 如果您使用安全運算元，您可能想要利用即時的偵測或威脅瀏覽器來調查和回應，或使用攻擊模擬器訓練使用者偵測。 以下是一些額外的建議，供您參考下一步。
+如果您是安全性管理員，您可能需要為您的郵件設定 DKIM 或 DMARC。 您可能想要為優先順序使用者推出「嚴格」安全性預設，或尋找產品的新功能。 或者，如果您是使用安全性運算元，您可能想要利用即時的偵測或威脅瀏覽器來調查和回應，或使用攻擊模擬器訓練使用者偵測。 無論是哪一種方式，以下都有一些額外的建議，供您參考。
 
 [電子郵件驗證，包含 SPF、DKIM 及 DMARC (，具有全部三個) 設定的連結 ](https://docs.microsoft.com/microsoft-365/security/office-365-security/email-validation-and-authentication)
 
