@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 深入了解 Microsoft SharePoint Syntex 中的說明類型
-ms.openlocfilehash: 7d78337fd91bc7e5a71bccd4867f019ae663417a
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 43272504912451e4690cb8b7fe351462371bb252
+ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321794"
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "48350300"
 ---
 # <a name="introduction-to-explanation-types"></a>說明類型簡介
 
@@ -68,7 +68,7 @@ ms.locfileid: "48321794"
    ![僅完全符合大寫](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> 不要手動建立模式清單說明，而是使用[說明文件庫]()來使用針對常見模式清單的預先製作的模式清單範本，例如*日期*、*電話號碼*、*信用卡號碼*等等。 
+> 不要手動建立模式清單說明，而是使用[說明文件庫](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates)來使用針對常見模式清單的預先製作的模式清單範本，例如*日期*、*電話號碼*、*信用卡號碼*等等。 
 
 ## <a name="proximity"></a>鄰近 
 
@@ -87,7 +87,7 @@ Redmond, WA 98034<br>
 
 #### <a name="what-are-tokens"></a>什麼是權杖？
 
-若要使用鄰近說明類型，請了解權杖的含義，因為權杖的編號是鄰近說明測量一個說明與另一個說明之間距離的方式。  
+若要使用鄰近說明類型，您需要瞭解權杖的含義，因為權杖的編號是鄰近說明測量一個說明與另一個說明之間距離的方式。  
 
 權杖是字母和數字的連續範圍 (不含空格或標點符號)。 空格「不是」權杖。 每個標點符號字元都是權杖。 下表顯示如何判斷片語中權杖數目的一些範例。
 
