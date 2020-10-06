@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/15/2020
+ms.date: 08/25/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將深入瞭解混合式新式驗證和使用內部部署商務用 Skype 和 Exchange 伺服器的必要條件。
-ms.openlocfilehash: 1e0330bd62d9098f11a12b44b46e9ace30b59420
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546441"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361924"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式驗證概述和使用內部部署商務用 Skype 和 Exchange 伺服器的必要條件
 
@@ -143,18 +143,22 @@ Get-CSOAuthConfiguration
   - 如果您使用的是 Exchange Server 2013，至少有一部伺服器必須已安裝信箱和用戶端存取伺服器角色。 雖然您可以在不同的伺服器上安裝信箱和用戶端存取角色，我們強烈建議您在同一部伺服器上安裝這兩種角色，以提供額外的可靠性並改善效能。
   - 如果您使用的是 Exchange server 2016 或更新版本，至少有一部伺服器必須已安裝信箱伺服器角色。
   - 混合式環境中沒有 Exchange server 2007 或2010。
-  - 所有 Exchange 伺服器都必須已安裝最新的累計更新，請參閱 [升級 Exchange 至最新的累計更新](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates?view=exchserver-2019) ，以尋找並管理所有可用的更新。
+  - 所有 Exchange 伺服器都必須已安裝最新的累計更新，請參閱 [升級 Exchange 至最新的累計更新](https://docs.microsoft.com/exchange/plan-and-deploy/install-cumulative-updates) ，以尋找並管理所有可用的更新。
 
 - **Exchange 用戶端和通訊協定需求**
 
-  - 下列用戶端支援新式驗證：
+    新式驗證的可用性是由用戶端、通訊協定和設定的組合所決定。 如果用戶端、通訊協定及（或）設定不支援新式驗證，則用戶端將繼續利用舊版驗證。
+  
+    在環境中啟用新式驗證時，下列用戶端和通訊協定支援搭配內部部署 Exchange 的新式驗證：
 
   |**用戶端**|**主要通訊協定**|**附註**|
   |:-----|:-----|:-----|
-  |Outlook 2013 與 Outlook 2016  <br/> |MAPI over HTTP  <br/> |必須在 Exchange 內啟用 MAPI over HTTP，以利用這些用戶端的新式驗證 (通常會啟用或為 Exchange 2013 Service Pack 1 和更新版本的新安裝啟用或設為 True) ;如需詳細資訊，請參閱 [office 2013 和 office 2016 用戶端應用程式的新式驗證的運作方式](modern-auth-for-office-2013-and-2016.md)。  <br/> 確定您執行的是最小必要組建的 Outlook;請查看 [使用 Windows Installer (MSI) 的 Outlook 版本最新更新 ](https://docs.microsoft.com/officeupdates/outlook-updates-msi)。  <br/> |
-  |Mac 版 Outlook 2016  <br/> |Exchange Web 服務  <br/> |  <br/> |
-  |iOS 和 Android 版 Outlook  <br/> |  <br/> |如需詳細資訊，請參閱 [使用 Outlook 適用于 Outlook 的混合新式驗證 iOS 和 Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) 。  <br/> |
+  |Outlook 2013 和更新版本  <br/> |MAPI over HTTP  <br/> |必須在 Exchange 內啟用 MAPI over HTTP，以利用這些用戶端的新式驗證 (通常會啟用或為 Exchange 2013 Service Pack 1 和更新版本的新安裝啟用或設為 True) ;如需詳細資訊，請參閱 [office 2013 和 office 2016 用戶端應用程式的新式驗證的運作方式](modern-auth-for-office-2013-and-2016.md)。  <br/> 確定您執行的是最小必要組建的 Outlook;請查看 [使用 Windows Installer (MSI) 的 Outlook 版本最新更新 ](https://docs.microsoft.com/officeupdates/outlook-updates-msi)。  <br/> |
+  |適用于 Mac 的 Outlook 2016 和更新版本  <br/> |Exchange Web 服務  <br/> |  <br/> |
+  |iOS 和 Android 版 Outlook  <br/> | Microsoft sync 技術 <br/> |如需詳細資訊，請參閱 [使用 Outlook 適用于 Outlook 的混合新式驗證 iOS 和 Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) 。  <br/> |
   |Exchange ActiveSync 用戶端 (例如，iOS11 Mail)   <br/> |Exchange ActiveSync  <br/> |針對支援新式驗證的 Exchange ActiveSync 用戶端，您必須重新建立設定檔，才能從基本驗證切換至新式驗證。  <br/> |
+
+    未列出的用戶端和（或）通訊協定 (例如，POP3) 不支援搭配內部部署 Exchange 的新式驗證，而且繼續利用舊版驗證機制，即使在環境中啟用新式驗證之後也是一樣。
 
 - **一般必要條件**
   - 如果您使用 AD FS，則同盟必須具有 Windows 2012 R2 AD FS 3.0 和更新版本。

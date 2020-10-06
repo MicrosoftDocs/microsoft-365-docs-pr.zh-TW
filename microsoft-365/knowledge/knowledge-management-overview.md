@@ -11,17 +11,17 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在 Project Cortex 中瞭解知識管理。
-ms.openlocfilehash: 80750ee94248b21b8ac7bd3869830a7986de34b9
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c4f7ff7d65ec08740dc14f717712731d839bd903
+ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949369"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48361948"
 ---
-# <a name="knowledge-management-0verview-preview"></a>知識管理 0verview (預覽) 
+# <a name="knowledge-management-overview-preview"></a> (預覽的知識管理概述) 
 
 > [!Note] 
-> 本文內容適用于 Project Cortex 私人預覽。 [進一步瞭解專案 Cortex](https://aka.ms/projectcortex) 
+> 本文內容適用于 Project Cortex 私人預覽。 [如需詳細資訊，請參閱 Project Cortex](https://aka.ms/projectcortex)。
 
 知識管理使用 Microsoft AI 技術、Microsoft 365、Delve、搜尋及其他元件和服務，在您的 Microsoft 365 環境中建立知識網路。 
 
@@ -81,6 +81,6 @@ AI 會持續運作，提供您在環境中發生變更時改進主題的建議�
 
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 [設定知識管理](set-up-knowledge-network.md)</br>
 [主題中心概述](topic-center-overview.md)

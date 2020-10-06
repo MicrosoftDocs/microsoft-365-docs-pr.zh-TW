@@ -46,11 +46,11 @@ CCPA 中的個人資訊是任何與已識別或可識別個人相關的資訊。
 
 以下清單提供與本指南相關的詞彙定義。 
 
-* _控制者_：自然人或法人、公家機關、公司或其他主體，不論單獨或與其他單位聯合，會判斷處理個人資料的用途以及方式，其中此類處理的用途以及方式的判斷是根據聯盟與成員國法律，控制者人選或提名控制者的特定準則可由聯盟與成員國法律提供。 
+* _控制者_：自然人或法人、公家機關、局處或其他機構，不論單獨或與其他單位聯合，會決定處理個人資料的用途以及方式，其中此類處理的用途以及方式的判斷是根據聯盟與成員國法律，控制者人選或提名控制者的特定準則可由聯盟與成員國法律提供。 
 
 * _個人資料和資料主體_：表示與已識別或可識別之自然人 (以下稱為「資料主體」) 相關的任何資訊；可識別的自然人是可以直接或間接識別的人員，尤其是藉由參照如名稱、身分證號碼、位置資料、線上識別碼，或特定於該自然人的身體、生理、基因、心理、經濟、文化或社會身分等一個或多個識別碼來識別。 
 
-* _處理者_：代表控管者處理個人資料的自然人或法人、公務機關、局處或其他機構。 
+* _處理者_：代表控制者處理個人資料的自然人或法人、公務機關、局處或其他機構。 
 
 * _客戶資料_：由客戶本身或客戶代表，透過企業服務所提供給 Microsoft 的所有資料，包括所有文字、音訊、視訊或影像檔案和軟體。 
 
@@ -75,13 +75,13 @@ Microsoft 透過 Azure 入口網站以及直接透過現有的應用程式開發
 
 租用戶系統管理員是組織中唯一能夠存取 Windows 診斷資料的人，該資料與特定使用者對 Windows 企業版註冊裝置的資料處理者服務的使用狀況有關。 針對存取要求所擷取的資料會透過匯出，以機器可讀取的格式提供；且會以檔案的形式提供，讓使用者知道與資料相關聯的是哪些裝置與服務。 如上所述，所擷取的資料不會包含可能造成 Windows 裝置安全性或穩定性受損的資料。 
 
-Microsoft 提供入口網站體驗，讓企業客戶的租用戶系統管理員能夠管理 DSR 存取要求。 [Azure DSR，第 2 部分，步驟3：匯出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)說明如何透過匯出在 Azure 入口網站中執行 DSR 存取要求。
+Microsoft 提供入口網站體驗，讓企業客戶的租用戶系統管理員能夠管理 DSR 存取要求。 [Azure DSR，第 2 部分，步驟 3：匯出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)說明如何透過匯出在 Azure 入口網站中執行 DSR 存取要求。
 
 ### <a name="step-2-delete"></a>步驟 2：刪除 
 
 Microsoft 提供了一種根據特定使用者的 Azure Active Directory 物件，執行基於使用者的 DSR 刪除要求的方法。
 
-針對基於使用者的刪除要求，Microsoft 提供入口網站，讓企業客戶的租用戶系統管理員能夠管理 DSR 刪除要求。 [Azure DSR，第 1 部分，步驟5：刪除](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-5-delete)說明如何透過 Azure 入口網站執行 DSR 刪除要求。 
+針對基於使用者的刪除要求，Microsoft 提供入口網站，讓企業客戶的租用戶系統管理員能夠管理 DSR 刪除要求。 [Azure DSR，第 1 部分，步驟 5：刪除](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-5-delete)說明如何透過 Azure 入口網站執行 DSR 刪除要求。 
 
 Microsoft 能夠直接透過現有的應用程式開發介面 (API) 刪除使用者，進而刪除客戶資料。 詳細資料請參閱 [API 參考文件](https://docs.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-beta)。 
 
@@ -92,7 +92,7 @@ Microsoft 能夠直接透過現有的應用程式開發介面 (API) 刪除使用
 
 ### <a name="step-3-export"></a>步驟 3：匯出 
 
-租用戶系統管理員是組織中唯一能夠存取 Windows 診斷資料的人，該資料與特定使用者對 Windows 企業版註冊裝置的資料處理者服務的使用狀況有關。 針對匯出要求所擷取的資料會以機器可讀取的格式提供；且會以檔案的形式提供，讓使用者知道與資料相關聯的是哪些裝置與服務。 如上所述，所擷取的資料不會包含可能造成 Windows 裝置安全性或穩定性受損的資料。 [Azure DSR，第 2 部分，步驟3：匯出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)說明如何透過 Azure 入口網站執行 DSR 匯出要求。 
+租用戶系統管理員是組織中唯一能夠存取 Windows 診斷資料的人，該資料與特定使用者對 Windows 企業版註冊裝置的資料處理者服務的使用狀況有關。 針對匯出要求所擷取的資料會以機器可讀取的格式提供；且會以檔案的形式提供，讓使用者知道與資料相關聯的是哪些裝置與服務。 如上所述，所擷取的資料不會包含可能造成 Windows 裝置安全性或穩定性受損的資料。 [Azure DSR，第 2 部分，步驟 3：匯出](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export)說明如何透過 Azure 入口網站執行 DSR 匯出要求。 
 
 Microsoft 能夠直接透過現有的應用程式開發介面 (API) 匯出客戶資料。 詳細資料請參閱 [API 參考文件](https://docs.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0)。
 
