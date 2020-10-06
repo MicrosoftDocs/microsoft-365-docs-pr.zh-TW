@@ -13,14 +13,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: a0997c107e78104619e1e05b8d1073e8690a3667
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 94045834f63569bc2910b1faa02f47ebfebead19
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195556"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368078"
 ---
 # <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>設定您的 Microsoft 威脅防護試用實驗室環境 
 
@@ -146,7 +148,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 7. 再次選取全域管理員帳戶，然後按一下 [ **管理使用者名稱**]。
 <br>![Image of_Microsoft 365 系統管理中心] 頁面，您可以在其中選取 [帳戶]，然後管理使用者名稱](../../media/mtp-eval-29.png) <br>
 
-8. 選根據您在先前步驟中選取的專案，將網域從 *onmicrosoft.com* 變更為您自己的網域。 按一下 [儲存變更]****。
+8. 選根據您在先前步驟中選取的專案，將網域從 *onmicrosoft.com* 變更為您自己的網域。 按一下 **[儲存變更]**。
 <br>![Image of_Microsoft 365 系統管理中心] 頁面，您可以在其中變更您的網域偏好設定](../../media/mtp-eval-30.png) <br>
 
 

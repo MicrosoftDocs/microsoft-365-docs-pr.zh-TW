@@ -15,14 +15,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 250c125648f734a13899a58dd22ee3bffb0921a9
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 3d7156dfe65e9479f2505d196790800c6afd1f2a
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333721"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367962"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>執行試驗 Microsoft 威脅防護專案 
 
@@ -53,7 +55,7 @@ ms.locfileid: "48333721"
 
 執行 Microsoft 威脅防護試驗有四個階段：
 
-|階段 | 說明 | 
+|階段 | 描述 | 
 |:-------|:-----|
 | ![規劃](../../media/mtp/plan.png)<br>[規劃](mtp-pilot-plan.md)| 深入瞭解在執行 Microsoft 威脅防護試驗專案之前，您需要考慮的事項： <br><br>-範圍 <br> -使用案例 <br>- 需求： <br>-測試計劃 <br> -成功準則 <br> -計分卡 
 | ![製備](../../media/mtp/prep.png) <br>[製備](mtp-evaluation.md)|  存取 Microsoft 365 的安全性中心以設定您的 Microsoft 威脅防護試驗環境。 您將會得到指導：<br><br>-識別利益關係人，並尋找您試驗的登出 <br> -環境考慮 <br>-Access <br>-Azure Active Directory 安裝程式 <br> -設定順序 <br> -註冊 Microsoft 365 E5 試用版 <br> -設定網域 <br>-指派 Microsoft 365 E5 授權 <br> -完成入口網站中的設定向導|

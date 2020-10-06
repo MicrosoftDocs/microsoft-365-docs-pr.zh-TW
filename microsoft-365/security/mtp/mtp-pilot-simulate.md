@@ -15,14 +15,16 @@ author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: be6bf277926cffb77dfcde425ef08a688fb0cf34
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: e6cf01f5540e383fb56e387cd07b455741221dc5
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333975"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48368090"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>執行 Microsoft 威脅防護攻擊模擬  
 
@@ -458,7 +460,7 @@ EmailEvents
 
 在此試驗中，您可能會想要將此規則限制在實際執行環境中的測試裝置子集。
 
-6.  選取 [建立]****。 然後，選取導覽窗格中的 **自訂偵測規則** 。
+6.  選取 **[建立]**。 然後，選取導覽窗格中的 **自訂偵測規則** 。
  
     ![功能表中自訂偵測規則選項的螢幕擷取畫面](../../media/mtp/fig27a.png) 
 
