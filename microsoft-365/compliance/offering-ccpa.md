@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e279d8e075538582ea282e1c6d1493685a817b2a
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 5294b63744ec64f9be566a4a447c56ccd7456136
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208123"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370299"
 ---
 # <a name="california-consumer-privacy-act-ccpa"></a>加州消費者隱私法 (CCPA)
 
@@ -53,7 +53,7 @@ CCPA 會在 2020 年 1 月 1 日生效。 不過，加州律師一般 (AG) 會�
 
 以下是您準備 CCPA 時所採取的幾個步驟：
 
-- 請在 CCPA 隱私權計畫中開始利用 [合規性分數](compliance-score.md) 中的 GDPR 評估。
+- 開始利用 [合規性管理員](compliance-manager.md) 中的 GDPR 評估做為 CCPA 隱私權計畫的一部分。
 - 使用「資料主體要求」工具，建立處理常式，以有效地回應資料主體存取要求 (DSARs) 。
 - 設定標籤和原則以探索、分類並加上標籤，以及使用 Microsoft 資訊保護來保護敏感性資料。
 - 使用電子郵件加密功能進一步控制敏感性資訊。
@@ -93,9 +93,9 @@ CCPA 需要將個人資訊收集、轉移及銷售的管制企業，還有其他
 - CCPA 針對未滿 13 歲的兒童，採用符合兒童線上隱私權保護法 (The Children's Online Privacy Protection Act，COPPA) 的家長同意義務。
 - 若為13歲到16歲之間的子女，CCPA 會依據孩子的同意取得新的義務。
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評定風險
 
-[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性態勢，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評定。 可在合規性管理員的 [評定範本]**** 頁面尋找範本。 了解如何[在合規性管理員中建立評定](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

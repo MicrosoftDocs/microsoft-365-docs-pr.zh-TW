@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全性與合規性中心建立警示原則，以監視潛在威脅、資料遺失和許可權問題。
-ms.openlocfilehash: 9f05fe464b4945d739c5920282e45e07f9fcb344
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: dbe97b207e9683e719155f5dfd94d6f6a0427940
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338426"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370441"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全性與合規性中心的警示原則
 
@@ -109,7 +109,7 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 
 此表格也指出每個 Office 365 企業版和 Office 365 美國政府方案的必要條件。 如果您的組織除了 E1/F1/G1 或 E3/G3 訂閱之外，還有一些預設的警示原則可供使用。
 
-| 預設警示原則 | 說明 | 類別 | Office 365 企業版訂閱 |
+| 預設警示原則 | 描述 | 類別 | Office 365 企業版訂閱 |
 |:-----|:-----|:-----|:-----|
 |**偵測到可能的惡意 URL 按一下**|當您組織中的 [Office 365 ATP 安全連結](../security/office-365-security/atp-safe-links.md) 所保護的使用者按一下惡意連結時，會產生警示。 此事件會在下列情況觸發：透過組織的 Microsoft 365 商務 ATP 安全連結原則) ，在 Office 365 ATP 識別 URL 判定變更時，或使用者覆寫 Office 365 ATP 安全連結頁面 (。 此警示原則具有 **高** 嚴重性設定。 若為 Office 365 ATP P2，E5，G5 客戶，此提醒會自動觸發 [Office 365 中的自動調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 如需觸發此警示之事件的詳細資訊，請參閱 [設定 Office 365 ATP 安全連結原則](../security/office-365-security/set-up-atp-safe-links-policies.md)。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|
 |**已完成系統管理員提交結果**|當系統 [管理員提交](../security/office-365-security/admin-submission.md) 完成已送出之實體的重新掃描時產生警示。 每當系統管理員提交轉譯重新掃描結果時，就會觸發警示。 這些提醒會提醒您 [複查先前提交的結果](https://protection.office.com/reportsubmission)、提交使用者報告的郵件以取得最新的原則檢查和重新掃描 verdicts，以及協助您判斷組織中的篩選原則是否有預期的影響。 這個原則的嚴重性設定 **低** 。|威脅管理|E1/F1、E3 或 E5|
@@ -126,6 +126,7 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 |**偵測到惡意程式碼並封鎖惡意程式碼**|當有人企圖傳送大量包含特定惡意程式碼類型的電子郵件訊息給組織中的使用者時，會產生警示。 如果發生此事件，受感染的郵件會受到 Microsoft 封鎖，而且不會傳送至信箱。 這個原則的嚴重性設定 **低** 。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|
 |**在 SharePoint 和 OneDrive 中偵測到惡意軟體活動**|當位於 SharePoint 網站中的檔案或組織中的 OneDrive 帳戶中偵測到大量的惡意程式碼或病毒時，會產生警示。 這個原則具有 **高** 嚴重性設定。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|
 |**由於租使用者或使用者覆寫1，網路釣魚詐騙已傳送**<sup> </sup>|當 Microsoft 偵測到系統管理員或使用者覆寫，允許將網路釣魚郵件傳遞至信箱時，會產生警示。 覆寫的範例包括允許來自特定寄件者或網域之郵件的收件匣或郵件流程規則，或是允許來自特定寄件者或網域之郵件的反垃圾郵件原則。 這個原則具有 **高** 嚴重性設定。|威脅管理|E5/G5 或 Office 365 ATP P2 附加元件訂閱|
+|**可疑的電子郵件轉送活動**|當您組織中的人員將電子郵件自動轉寄至可疑的外部帳戶時，會產生警示。 這是一種針對可能會指出帳戶已遭破壞，但不足以限制使用者之行為的早期警告。 這個原則的嚴重性設定是「 **中** 」。 雖然這種情況很少見，但由此原則產生的警示可能是反常的。 最好 [檢查使用者帳戶是否受損](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威脅管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**偵測到電子郵件傳送模式**|當貴組織中的某人傳送了可疑的電子郵件，並有限制傳送電子郵件的風險時，會產生警示。 這是一種針對可能表示帳戶已遭到破壞，但不足以限制使用者之行為的早期警告。 這個原則的嚴重性設定是「 **中** 」。 雖然這種情況很少見，但由此原則產生的警示可能是反常的。 不過，最好 [檢查使用者帳戶是否受損](../security/office-365-security/responding-to-a-compromised-email-account.md)。|威脅管理|E1/F1/G1、E3/G3 或 E5/G5  |
 |**受限制的租使用者傳送電子郵件**|當您組織中的大部分電子郵件流量偵測到可疑，而且 Microsoft 已限制您的組織傳送電子郵件時，會產生警示。 調查任何可能遭到破壞的使用者和系統管理員帳戶、新連接器或開啟的中繼，然後聯繫 Microsoft 支援部門以解除封鎖您的組織。 這個原則具有 **高** 嚴重性設定。 如需有關組織遭到封鎖原因的詳細資訊，請參閱 [在 Exchange Online 中修正錯誤碼為 5.7.7 xx 的電子郵件傳遞問題](https://go.microsoft.com/fwlink/?linkid=2022138)。|威脅管理|E1/F1/G1、E3/G3 或 E5/G5|
 |**不尋常的外部使用者檔案活動**|當您組織外部的使用者在 SharePoint 或 OneDrive 中執行大量的活動時，會產生警示。 這包括存取檔、下載檔案和刪除檔案等活動。 這個原則具有 **高** 嚴重性設定。|資訊管理|E5/G5、Office 365 ATP P2 或 Microsoft 365 E5 附加元件訂閱|

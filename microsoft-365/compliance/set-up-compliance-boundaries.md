@@ -19,18 +19,18 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 瞭解如何使用規範界限來建立邏輯界限，以控制 eDiscovery 管理員可在 Microsoft 365 中搜尋的使用者內容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 19165af60d7813134952589831bf94a91bfe7f40
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: c57689cc6e626b62ae976bac9f9771205431bc8a
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277108"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370399"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
 使用核心 eDiscovery 或高級 eDiscovery 來管理調查時，可以套用本文中的指導方針。
 
-規範界限會在組織內建立邏輯界限，以控制使用者內容位置 (例如，可 eDiscovery 管理員可搜尋的信箱、SharePoint 網站和 OneDrive 帳戶) 。 此外，合規性界限控制誰可以存取 eDiscovery 案例，以用於管理組織內的法律、人力資源或其他調查。 對於必須遵守地理 boarders 及法規及政府（通常分為不同的代理商）的跨國公司，必須使用規範界限。 在 Microsoft 365 中，相容性界限可協助您在使用 eDiscovery 案例執行內容搜尋及管理調查時符合這些需求。
+規範界限在組織內建立邏輯界限，以控制使用者內容位置 (例如，信箱、OneDrive 帳戶，以及 eDiscovery 管理員可搜尋) 的 SharePoint 網站。 此外，合規性界限控制誰可以存取 eDiscovery 案例，以用於管理組織內的法律、人力資源或其他調查。 對於必須遵守地理 boarders 及法規及政府（通常分為不同的代理商）的跨國公司，必須使用規範界限。 在 Microsoft 365 中，相容性界限可協助您在使用 eDiscovery 案例執行內容搜尋及管理調查時符合這些需求。
   
 我們會使用下圖中的範例，說明規範界限的運作方式。
   
@@ -56,11 +56,21 @@ ms.locfileid: "48277108"
 
 [步驟5：建立內部公司調查的 eDiscovery 案例](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
 
+## <a name="before-you-set-up-compliance-boundaries"></a>設定規范界限之前
+
+您必須先滿足下列必要條件，您才能在步驟 1) 中身分識別 (的 Azure Active Directory (Azure AD) 屬性能夠順利同步到步驟 2 OneDrive 中的使用者 (帳戶) ：
+
+- 使用者必須被指派 Exchange Online 授權和 SharePoint 線上授權。
+
+- 使用者信箱的大小必須至少為 10 MB。 如果使用者的信箱小於 10 MB，用來定義您的組織的屬性不會同步到使用者的 OneDrive 帳戶。
+
+- 規範界限和用來建立搜尋許可權篩選的屬性，需要將 Azure Active Directory (Azure AD) 屬性同步處理至使用者信箱。 若要確認您要使用的屬性已同步處理，請在 Exchange Online PowerShell 中執行 [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) Cmdlet。 此 Cmdlet 的輸出會顯示同步到 Exchange Online 的 Azure AD 屬性。
+
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>步驟1：識別使用者屬性以定義您的機構
 
-第一步是選擇要使用的 Azure Active Directory 屬性，以定義您的機構。 此屬性是用來建立「搜尋許可權」篩選，它會限制 eDiscovery 管理員只搜尋指派此屬性之特定值之使用者的內容位置。 例如，假設 Contoso 決定使用 [ **部門** ] 屬性。 此屬性的值為第四個咖啡分公司中的使用者，則為  `FourthCoffee`  Coho Winery 子公司中的使用者的值 `CohoWinery` 。 在步驟4中，您可以使用這一  `attribute:value`  對 (例如， *部門： FourthCoffee*) 來限制 eDiscovery 管理員可搜尋的使用者內容位置。 
+第一步是選擇要使用的 Azure AD 屬性，以定義您的機構。 此屬性是用來建立「搜尋許可權」篩選，它會限制 eDiscovery 管理員只搜尋指派此屬性之特定值之使用者的內容位置。 例如，假設 Contoso 決定使用 [ **部門** ] 屬性。 此屬性的值為第四個咖啡分公司中的使用者，則為  `FourthCoffee`  Coho Winery 子公司中的使用者的值 `CohoWinery` 。 在步驟4中，您可以使用這一  `attribute:value`  對 (例如， *部門： FourthCoffee*) 來限制 eDiscovery 管理員可搜尋的使用者內容位置。 
   
-以下是 Azure Active Directory 使用者屬性的清單，您可以用於符合性界限：
+以下是您可以用於規範界限的 Azure AD 使用者屬性清單：
   
 - Company
 
@@ -79,20 +89,20 @@ ms.locfileid: "48277108"
   
 ## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>步驟2：以 Microsoft 支援檔作為要求來同步處理使用者屬性與 OneDrive 帳戶
 
-下一步是以 Microsoft 支援檔為要求，將您在步驟1中所選擇的 Azure Active Directory 屬性同步處理至組織中的所有 OneDrive 帳戶。 進行此同步處理之後，您在步驟1中所選擇的屬性 (及其值) 會對應至名為的隱藏 managed 屬性 `ComplianceAttribute` 。 您可以在步驟4中使用此屬性為 OneDrive 建立搜尋許可權篩選。
+下一步是以 Microsoft 支援檔為要求，將您在步驟1中所選擇的 Azure AD 屬性同步處理至組織中的所有 OneDrive 帳戶。 進行此同步處理之後，您在步驟1中所選擇的屬性 (及其值) 會對應至名為的隱藏 managed 屬性 `ComplianceAttribute` 。 您可以在步驟4中使用此屬性為 OneDrive 建立搜尋許可權篩選。
   
 當您將要求提交給 Microsoft 支援時包含下列資訊：
   
 - 組織的預設網功能變數名稱稱
 
-- 步驟1中 (的 Azure Active Directory 屬性名稱) 
+- 步驟1中 (的 Azure AD 屬性名稱) 
 
-- 以下是支援要求目的的標題或描述：「啟用相容性安全性篩選器的商務同步處理與 Azure Active Directory 的 OneDrive。 這有助於將要求路由傳送至實現要求的 eDiscovery 工程團隊。
+- 下列為支援要求之用途的標題或描述：「啟用商務用 OneDrive 以使用相容性安全性篩選器的 Azure AD」）。 這有助於將要求路由傳送至實現要求的 eDiscovery 工程團隊。
 
 在進行工程變更，並將屬性同步處理至 OneDrive 後，Microsoft 支援將會向您傳送所做變更的組建編號，以及預估的部署日期。 在您提交支援要求後，部署程式通常需要4–6周。
   
 > [!IMPORTANT]
-> 您可以在部署此屬性變更之前，先完成步驟3到步驟5。 但是執行內容搜尋時，將不會從搜尋許可權篩選中指定的 OneDrive 網站傳回檔，直到部署變更為止。
+> 您可以在部署此屬性變更之前，先完成步驟3到步驟5。 但是執行內容搜尋時，不會從搜尋許可權篩選中指定的 OneDrive 帳戶傳回檔，直到部署屬性同步處理之後。
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>步驟3：建立每個代理人的角色群組
 
@@ -211,12 +221,12 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     |議員  <br/> |我們  <br/> |
     |||
 
-   如果您未指定「搜尋許可權」篩選的 **Region** 參數，則會搜尋該組織的預設 SharePoint 區域。 搜尋結果會匯出至最接近的資料中心。
+   如果您未指定「搜尋許可權」篩選的 **Region** 參數，則會搜尋該組織的主要 SharePoint 區域。 搜尋結果會匯出至最接近的資料中心。
 
    為了簡化概念， **Region** 參數會控制用來搜尋 SharePoint 和 OneDrive 中內容的資料中心。 這不適用於搜尋 Exchange 中的內容，因為 Exchange 內容搜尋不會受資料中心地理位置的限制。 此外，相同的 **Region** 參數值也可能會規定匯出所傳送的資料中心。 這通常是必要的方式，以跨地理 boarders 控制資料的移動。
 
 > [!NOTE]
-> 如果您使用的是 Advanced eDiscovery，則 **region** 參數不會控制匯出資料的區域。 此外，搜尋 SharePoint 和 OneDrive 中的內容並不受資料中心地理位置的限制。 會搜尋所有資料中心。 如需有關高級 eDiscovery 的詳細資訊，請參閱 [Microsoft 365 中的 [高級 eDiscovery 解決方案一覽](overview-ediscovery-20.md)。
+> 如果您使用的是 Advanced eDiscovery，則 **region** 參數不會控制匯出資料的區域。 資料是從組織的主要資料中心匯出。 此外，搜尋 SharePoint 和 OneDrive 中的內容並不受資料中心地理位置的限制。 會搜尋所有資料中心。 如需有關高級 eDiscovery 的詳細資訊，請參閱 [Microsoft 365 中的 [高級 eDiscovery 解決方案一覽](overview-ediscovery-20.md)。
 
 以下是在建立規範界限之搜尋許可權篩選時使用 **Region** 參數的範例。 這假設第四個咖啡分公司位於北美，且 Coho Winery 位於歐洲。 
   
@@ -230,13 +240,13 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 在多地理位置環境中搜尋和匯出內容時，請牢記下列事項。
   
-- **[地區]** 參數不會控制 Exchange 信箱的搜尋。 當您搜尋信箱時，將會搜尋所有資料中心。 若要限制搜尋的 Exchange 信箱範圍，請在建立或變更搜尋許可權篩選時使用 **Filters** 參數。 
+- **[地區]** 參數不會控制 Exchange 信箱的搜尋。 當您搜尋信箱時，會搜尋所有資料中心。 若要限制搜尋的 Exchange 信箱範圍，請在建立或變更搜尋許可權篩選時使用 **Filters** 參數。 
 
 - 若要讓 eDiscovery 管理員在多個 SharePoint 區域中進行搜尋，您需要為該 eDiscovery 管理員建立不同的使用者帳戶，以在「搜尋許可權」篩選中使用，以指定 SharePoint 網站或 OneDrive 帳戶所在的地區。 如需有關設定此功能的詳細資訊，請參閱 [內容搜尋](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment)中的「搜尋 SharePoint 多地理位置環境中的內容」一節。
 
-- 當您在 SharePoint 和 OneDrive 中搜尋內容時， **Region** 參數會將搜尋指引至 ediscovery Manager 執行 ediscovery 調查的主要或衛星位置。 [！注意] 如果 eDiscovery 管理員搜尋 SharePoint 和 OneDrive 「搜尋許可權」篩選中指定之區域以外的網站，將不會傳回任何搜尋結果。
+- 在 SharePoint 和 OneDrive 中搜尋內容時， **Region** 參數會將搜尋導向主要或衛星位置，以 ediscovery 管理員進行 ediscovery 調查。 [！注意] 如果 eDiscovery 管理員搜尋 SharePoint 和 OneDrive 「搜尋許可權」篩選中指定之區域以外的網站，將不會傳回任何搜尋結果。
 
-- 當您匯出搜尋結果時，所有內容 (位置的內容（包括 Exchange、商務用 Skype、SharePoint、OneDrive，以及您可以使用內容搜尋工具進行搜尋) 的其他服務）都會上傳至 **Region** 參數所指定的資料中心內的 Azure 儲存位置。 這可協助組織在法規遵從性的情況中，不允許透過可控框線匯出內容。 如果 [搜尋許可權] 篩選中未指定任何區域，則會將內容上傳至組織的預設區域。
+- 當您匯出搜尋結果時，所有內容 (位置的內容（包括 Exchange、商務用 Skype、SharePoint、OneDrive，以及您可以使用內容搜尋工具進行搜尋) 的其他服務）都會上傳至 **Region** 參數所指定的資料中心內的 Azure 儲存位置。 這可協助組織在法規遵從性的情況中，不允許透過可控框線匯出內容。 如果 [搜尋許可權] 篩選中未指定任何區域，則會將內容上傳至組織的主要資料中心。
 
 - 您可以執行下列命令來編輯現有的「搜尋許可權」篩選，以新增或變更區域：
 
@@ -271,6 +281,22 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
     此外，保留統計資料只會套用至代理人中的內容位置。
 
 - 搜尋許可權篩選不適用於 Exchange 公用資料夾。
+
+## <a name="more-information"></a>詳細資訊
+
+- 如果信箱是取消授權或虛刪除的，Azure AD 屬性就不再同步處理至信箱。 如果信箱已被刪除時保留在信箱上，則保留在信箱中的內容仍受限於符合性界限或搜尋許可權篩選器（根據上次在刪除信箱前同步處理 Azure AD 屬性的時間）。 
+
+    此外，如果信箱是解除授權或虛刪除，使用者的信箱與 OneDrive 帳戶之間的同步處理會停止。 OneDrive 帳戶之符合性屬性的最後一個衝壓值會保持有效。
+
+- 符合性屬性每7天從使用者的 Exchange 信箱同步處理至其 OneDrive 帳戶。 如先前所述，此同步處理只會在使用者同時被指派 Exchange Online 和 SharePoint 線上授權，而且使用者的信箱至少為 10 MB 時發生。
+
+- 如果針對使用者的信箱和 OneDrive 帳戶執行規范界限和搜尋許可權篩選，則建議您不要刪除使用者的信箱，而不是刪除其 OneDrive 帳戶。 換句話說，如果您刪除使用者的信箱，您也應該移除該使用者的 OneDrive 帳戶。
+
+- 在某些情況下 (例如退回員工) ，而使用者可能會有兩個或多個 OneDrive 帳戶。 在這些情況下，只會同步處理 Azure AD 中的使用者相關的主要 OneDrive 帳戶。
+
+- 規範界限和搜尋許可權篩選器，取決於在 Exchange、OneDrive 和 SharePoint 中的內容上加蓋的屬性，以及此衝壓內容的後續編制索引。 
+
+- 建議您不要使用排除篩選 (例如 `-not()` 在搜尋許可權篩選) 中使用以內容為基礎的規範界限。 若最近更新之屬性的內容尚未編制索引，使用排除篩選可能會產生意外的結果。 
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
