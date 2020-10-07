@@ -12,17 +12,17 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
+- m365solution-collabgovernance
 search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: 瞭解如何允許成員以 Microsoft 365 群組形式傳送電子郵件，或代表 Microsoft 365 群組傳送電子郵件。
-ms.openlocfilehash: b660131798e60182435a69f479411cdec948bc99
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 9ccaeff49914dd5b510beb80f40a3a3b790ce831
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662527"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377590"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允許成員傳送為或代表群組傳送
 
@@ -50,7 +50,7 @@ ms.locfileid: "46662527"
     
 4. 在 [ **傳送方式** ] 區段中，選取要 **+** 新增為群組傳送之使用者的符號。 
     
-    ![選取加號，以新增您要以 Microsoft 365 群組形式傳送的使用者。](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
+    ![[傳送為] 對話方塊的螢幕擷取畫面](../media/1df167f6-1eff-4f98-9ecd-4230fab46557.png)
   
 5. 若要從清單中搜尋或挑選使用者的類型。 選取 **[確定]** 並 **儲存**。
     
@@ -68,7 +68,7 @@ ms.locfileid: "46662527"
     
 4. 在 [代理傳送者] 區段中，選取要 **+** 新增為群組傳送之使用者的符號。 
     
-    ![選取加號，以新增您要以 Microsoft 365 群組形式傳送的使用者。](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
+    ![[代理傳送者] 對話方塊的螢幕擷取畫面](../media/2bae0579-8907-4d6b-8920-ddd6555897b4.png)
   
 5. 若要從清單中搜尋或挑選使用者的類型。 選取 **[確定]** 並 **儲存**。
     

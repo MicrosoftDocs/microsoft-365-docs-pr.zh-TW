@@ -10,16 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
+- m365solution-collabgovernance
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 深入瞭解 Microsoft 365 群組、小組和 SharePoint 共同作業的規範選項。
-ms.openlocfilehash: cc8f7391b03cc65ba66cca6cf010137e3843ab05
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662541"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377530"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 群組、小組和 SharePoint 共同作業的相容性選項
 
@@ -37,7 +38,7 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 ||自動分類敏感內容|[自動將敏感度標籤套用到內容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)|
 ||加密敏感內容|[使用敏感度標籤來套用加密以限制存取內容](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)|
 |資訊保護|||
-||避免機密資訊遺失|[資料外洩防護概觀](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)|
+||避免機密資訊遺失|[資料外洩防護概觀](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) (英文)|
 ||保護聊天中的機密資訊。|[資料遺失防護和 Microsoft 團隊](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)|
 ||定義組織的機密資訊|[自訂敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)|
 |使用者區隔|||
@@ -90,7 +91,7 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 DLP 原則可以防止在 SharePoint、Exchange 及小組之間意外共用敏感資訊。 您可以建立原則，指定要採取的動作 (例如依一組規則封鎖存取) 。
 
-- [資料外洩防護概觀](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)
+- [資料外洩防護概觀](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) (英文)
 
 當小組中的機密資訊包含機密資訊的郵件時，該小組可以協助保護小組聊天和通道郵件中的機密資訊。
 

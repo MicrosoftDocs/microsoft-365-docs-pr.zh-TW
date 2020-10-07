@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: 部署 Microsoft 365 安全性和合規性功能，並保護您的個人資訊。
-ms.openlocfilehash: 87057d7c823fc9808169efd254300f2b2f5e0487
-ms.sourcegitcommit: c76c025fe75cd9c06eccbf9c7fc887b09da36659
+ms.openlocfilehash: 97c34ca236ea4be98b9412518788630732259d5a
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "46903892"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377148"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>保護受資料隱私權法規制約的資訊
 
@@ -144,7 +145,7 @@ Microsoft 資訊保護架構中的靈敏度標籤可讓您分類及保護組織�
 
 - Microsoft 365 群組連線的小組網站的隱私權 (公開或私人) 
 - 外部使用者存取
-- 從未受控裝置存取
+- 從未受管理的裝置存取
 
 針對資料隱私權，若要避免將用來儲存具有敏感個人資料之內容的容器的外部共用，請將包含資料的檔案標記為私密，並需要受管理的裝置。
 

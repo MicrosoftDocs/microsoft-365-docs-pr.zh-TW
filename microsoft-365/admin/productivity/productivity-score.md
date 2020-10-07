@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生產力分數的概覽。
-ms.openlocfilehash: 7c323d51bcd8a1bead28677e399891ccd0a22950
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 82dc26aea5c573b63bb66d087b332e3301e71409
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285186"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48376970"
 ---
 # <a name="microsoft-productivity-score-preview"></a>Microsoft (預覽的工作效率分數) 
 
-生產力分數可協助組織轉換工作如何使用 Microsoft 365 的相關資訊，以及支援這些功能的技術體驗。 分數會反映貴組織對於員工和技術經驗的效能，並將您的分數與像您的組織相比較。
+生產力分數可協助組織轉換工作如何使用 Microsoft 365 的相關資訊，以及支援這些功能的技術體驗。 分數會反映貴組織對於人員和技術經驗的效能，並與您的組織（如您的組織）比較您的分數。
 
 分數包括：
 
@@ -39,7 +39,7 @@ ms.locfileid: "48285186"
 
 我們提供兩個區域的資料、洞察力和建議： 
 
-- **員工經驗：** 我們會測量人員如何共同處理內容，如何使用 Microsoft 365 產品進行通訊，以及是否在平臺上使用 Microsoft 365。 
+- **人員體驗：** 我們會測量人員如何共同處理內容，如何使用 Microsoft 365 產品進行通訊，以及是否在平臺上使用 Microsoft 365。 
 
     我們提供這些真知灼見，是因為當人們線上共同作業時，他們會節省時間。 在任何裝置上都可以自由運作，其效率更高且滿足您的要求。 以一種靈活的方式進行通訊，可讓人員更有效率、形成更好的關聯性，以及組織更具整合的方式。 如需證據，請參閱 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
 
@@ -50,7 +50,7 @@ ms.locfileid: "48285186"
 
 ## <a name="how-the-score-is-calculated"></a>計算分數的方式
 
-您的生產力分數是以員工和技術經驗類別的綜合分數為基礎。 每個類別平均加權，每個類別總100點數。 生產力分數的可能點數總為500。
+您的生產力分數是以人員和技術經驗類別的綜合分數為基礎。 每個類別平均加權，每個類別總100點數。 生產力分數的可能點數總為500。
 
 ### <a name="score-categories"></a>分數類別 
 
@@ -72,7 +72,7 @@ ms.locfileid: "48285186"
 
 ## <a name="pre-requisites"></a>先決條件 
 
-您需要 Microsoft 365 for business 或 Office 365 for enterprise 訂閱才能取得員工經驗資料，您必須使用多承租人雲端服務。 若要取得租使用者的端點分析資料，您必須將 Microsoft Intune 新增至您的訂閱。 Intune 可協助您保護組織的資料，方法是管理裝置和應用程式。       當您有 Intune 之後，您可以在 Intune 體驗中開啟端點分析。 深入瞭解 Microsoft Intune。 
+您需要 Microsoft 365 for business 或 Office 365 for enterprise 訂閱才能讓人員體驗資料，而且您必須使用多承租人雲端服務。 若要取得租使用者的端點分析資料，您必須將 Microsoft Intune 新增至您的訂閱。 Intune 可協助您保護組織的資料，方法是管理裝置和應用程式。       當您有 Intune 之後，您可以在 Intune 體驗中開啟端點分析。 深入瞭解 Microsoft Intune。 
 
 若要查看組織的生產力評分，您必須具有下列其中一個角色： 
 
@@ -94,17 +94,17 @@ ms.locfileid: "48285186"
 
 **您的分數** 會顯示為百分比值以及點，因此您可以看到 (分子) 和最大可能的點數 (分母) 。
 
-**對等基準** 可讓您將您的分數與像您的組織比較。 針對員工經驗類別，對等的基準量值會計算為一組類似組織內的平均量值。 此集合是由您地區中的組織所組成，其授權的使用者數目、授權類型、行業和 tenure，以及 Microsoft 365。 
+**對等基準** 可讓您將您的分數與像您的組織比較。 針對人員經驗類別，對等基準量值會計算為一組類似組織內的平均量值。 此集合是由您地區中的組織所組成，其授權的使用者數目、授權類型、行業和 tenure，以及 Microsoft 365。 
 
 端點分析對等基準包括裝置啟動效能的目標，以及根據整個承租人中匯總的中線值進行建議的軟體設定。
 
 若為網路連線，建議的基準是80點。
 
-**分數細分**區段利用員工和技術經驗方面的基準，提供您的生產力分數明細。
+**分數細分**區段利用人員和技術經驗方面的基準，提供您的生產力分數明細。
 
 分數記錄會顯示過去6個月內，每個類別中的分數變更的方式。
 
-「 **員工經驗** 」和「 **技術經驗** 」區域包含這些區域中的類別的主要洞察力。 您可以按一下每個類別以查看更深入的見解。
+「 **人員經驗** 」和「 **技術經驗** 」區域包含這些區域的類別的主要洞察力。 您可以按一下每個類別以查看更深入的見解。
 
 ## <a name="category-details-pages"></a>類別詳細資料頁面
 

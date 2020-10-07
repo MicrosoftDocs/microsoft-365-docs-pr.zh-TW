@@ -14,14 +14,15 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365solution-infoprotection
+- m365solution-scenario
 ms.custom: ''
 description: 決定 Microsoft 365 環境中的資料隱私權法規、相關案例、準備工作和機密資訊類型。
-ms.openlocfilehash: 237039bfd853c0f58276926f29bda26981df6b8c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c2f8bd6587e399fd1e928575b3cd9dfb2a4565eb
+ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195744"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48377112"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>使用 Microsoft 365 評估資料隱私權風險及識別敏感專案
 
@@ -59,7 +60,7 @@ GDPR 是資料隱私權規定中最著名且所提及的，它會調節收集、
 
 | 調節 | 文章/區段 | 節錄 | 適用的技術控制項類別 |
 |:-------|:-----|:-------|:-------|
-| GDPR | 第5篇 (1) # B2 f)  | 個人資料的處理方式是為了確保個人資料的適當安全性，包括防止未經授權或非法處理的保護，以及防止意外損毀、損毀或損毀，使用適當的技術或組織量值 ( ' 誠信和機密性」。  |   (全部)  <br> 身分識別 <br> 裝置 <br> 威脅防護 <br> 保護資訊 <br> 管理資訊 <br> 探索和回應 |
+| GDPR | 第5篇 (1) # B2 f)  | 個人資料的處理方式是為了確保個人資料的適當安全性，包括防止未經授權或非法處理的保護，以及防止意外損毀、損毀或損毀，使用適當的技術或組織量值 ( ' 誠信和機密性」。  |   (全部)  <br> Identity <br> 裝置 <br> 威脅防護 <br> 保護資訊 <br> 管理資訊 <br> 探索和回應 |
 |  | 專案 (32) # B2 1) # B4 a)  | 考慮美工的狀態、實施成本和性質、範圍、內容及處理目的，以及自然人員的權力和嚴重性變化可能性和嚴重性的風險，控制者及處理器應執行適當的技術和組織量值，以確保符合風險的安全性層級，包括適當的 alia： () 假名和加密的個人資料。 | 保護資訊 |
 |  | 專案 (13) # B2 2) # B4 a)  | "...審計員會在取得個人資料的時間，提供下列進一步資訊的資料，以確保一般和透明的處理： () 儲存個人資料的期間，或是不可能的情況，用來判斷該期間的準則。 | 管理資訊 |
 |  | 專案 (15) # B2 1) # B4 e)  | 資料主體應具備從控制器確認取得的權利，如是否正在處理其相關的個人資料。在此情況下，您可以存取個人資料及下列資訊： (e) 是否有權利可以要求從控制者修正或擦除個人資料，或將有關資料主旨或物件處理的個人資料的處理限制在處理中。 | 探索和回應 |
