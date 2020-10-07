@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: 4ae0491699f2ffa60245d502bb691b2c79b34133
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 6c8ca07cc0da826be23bcee79dbc4e3824b00695
+ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305375"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "48357878"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -76,7 +76,7 @@ ms.locfileid: "48305375"
 
 在這個新的**網站和群組設定**頁面上，設定以下設定：
 
-- **Office 365 群組連線團隊網站的隱私權**：如果您希望組織中所有人都能存取套用此標籤的團隊網站或群組，請保留預設值 [公用 - 組織中的任何人都可以存取網站]****。
+- **Microsoft 365 群組連線團隊網站的隱私權**：如果您希望組織中所有人都能存取套用此標籤的團隊網站或群組，請保留預設值 **[公用 - 組織中的任何人都可以存取網站]**。
 
   如果您希望僅限組織中經核准的成員能存取，請選取 [私人]****。
 
