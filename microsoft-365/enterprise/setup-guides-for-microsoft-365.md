@@ -3,7 +3,6 @@ title: Microsoft 365 和 Office 365 服務的設定指南
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/15/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,22 +21,22 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 使用設定指南，加速規劃和設定 Microsoft 365 或 Office 365。
-ms.openlocfilehash: 106a659dd75ae14d38c393a9547b84630e458337
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 67e24ae41806b4dc112387526177cb4bd84d0779
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357979"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384917"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服務的設定指南
 
-Microsoft 365 和 Office 365 安裝指南提供管理員針對部署應用程式和服務而量身定制的指導方針和資源。 這些指南使用 FastTrack 上架專家在個別互動中共用的最佳作法來建立，而且可供 Microsoft 365 系統管理中心內的所有系統管理員使用。 其提供產品設定的資訊、啟用安全性功能、部署共同作業工具，並提供腳本以加速高級部署。
+Microsoft 365 和 Office 365 安裝指南為您提供有關規劃及部署租使用者、應用程式及服務的專門指導方針和資源。 這些指南是使用 [microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) 上架專家在個別互動中分享的最佳作法建立，而且可供 microsoft 365 系統管理中心內的所有系統管理員使用。 其提供產品設定的資訊、啟用安全性功能、部署共同作業工具，並提供腳本以加速高級部署。
 
 ## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>如何在 Microsoft 365 系統管理中心中存取安裝指南
 
 您可以從 Microsoft 365 系統管理中心的「 [安裝指導](https://aka.ms/setupguidance) 方針」頁面存取安裝指南。 您可以追蹤進度的狀態，而且您可以隨時退回以完成指南。 若要到達 **安裝指導** 頁面：
 
-1. 在系統[管理中心](https://admin.microsoft.com/)中，移**至首頁。**
+1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com/)中，移**至首頁。**
 
 2. 找到 **訓練 & 輔助** 卡。 
 
@@ -52,11 +51,11 @@ Microsoft 365 和 Office 365 安裝指南提供管理員針對部署應用程式
 
 ## <a name="how-do-setup-guides-work-in-the-microsoft-365-admin-center"></a>安裝指南在 Microsoft 365 系統管理中心內的運作方式為何？
 
-每個指南都會提供逐步指示、資源、文章，以及在需要時使用的腳本，以進行設定變更。 這些指南為您提供各種選擇，以反映小型和大型組織的特定需求。 此外，提供的指導方針包括對新的和更有經驗的系統管理員的協助。
+每個指南都會提供逐步指示、資源、文章，以及在需要時使用的腳本，以進行設定變更。 這些指南為您提供各種選擇，以反映小型和大型組織的特定需求。 此外，指導方針也包含對新的和更有經驗之系統管理員的協助。
 
 ![安裝指南的範例](../media/setup-guides-for-microsoft-365/m365-setupguide-example.png)
 
-在規劃階段，您可以使用指南深入瞭解特定 Microsoft 365 和 Office 365 的功能，或在完成部署以修改設定之後重新執行這些功能。
+您可以使用指南深入瞭解在規劃階段期間、部署和部署期間的特定 Microsoft 365 和 Office 365 功能，或在您完成部署以修改設定之後重新執行這些功能。
 
 ## <a name="guides-for-initial-setup"></a>初始設定輔助線
 
@@ -74,7 +73,7 @@ Microsoft 365 和 Office 365 安裝指南提供管理員針對部署應用程式
 
 ### <a name="microsoft-365-deployment-advisor"></a>Microsoft 365 部署顧問
 
-[Microsoft 365 部署顧問](https://aka.ms/microsoft365setupguide)會在設定生產力工具、安全性原則及裝置管理功能時，為商業客戶提供指導方針。 使用 Microsoft 365 商務版或 Microsoft 365 企業版訂閱，您可以使用此顧問來設定和設定組織的裝置。 
+[Microsoft 365 部署顧問](https://aka.ms/microsoft365setupguide)會在設定生產力工具、安全性原則及裝置管理功能時，為您提供指導方針。 使用 Microsoft 365 商務版 Premium 或 Microsoft 365 for enterprise 訂閱，您可以使用此顧問來設定和設定組織的裝置。 
 
 您將會收到對資源的指導和存取權，讓您的雲端服務、更新裝置至最新支援的 Windows 10 版本，以及將裝置加入 Azure Active Directory (Azure AD) ，所有功能都位於一個中央位置。
 
@@ -83,7 +82,7 @@ Microsoft 365 和 Office 365 安裝指南提供管理員針對部署應用程式
 
 「 [遠端工作」設定指南](https://aka.ms/remoteworksetup) 為組織提供的秘訣和資源所需，以確保您的使用者能夠遠端順利運作，您的資料是安全的，而且會保護使用者的認證。 
 
-您將會收到指導，可將遠端工作者的裝置流量優化為雲端和組織網路中的 Microsoft 365 資源，這會降低 VPN 基礎結構的壓力。 
+您將會收到指導，可將遠端工作者的裝置流量優化為雲端和組織網路中的 Microsoft 365 資源，這會降低遠端存取 VPN 基礎結構的壓力。 
 
 ### <a name="windows-virtual-desktop-setup-guide"></a>Windows Virtual Desktop 安裝指南
 
@@ -97,15 +96,19 @@ Windows 虛擬機器是雲端中執行的綜合桌面和應用程式虛擬化服
 
 [AZURE AD 安裝指南](https://aka.ms/aadpguidance)提供資訊，以確保您的組織具備強大的安全性基礎。 在此指南中，您將會設定初始功能，例如 Azure 角色型存取控制 (Azure RBAC) （適用于系統管理員的 azure RBAC）和 Azure AD Connect Health，這樣您就可以在自動同步處理期間監控混合式身分識別的健康情況。 
 
-此外，它也包含啟用自助密碼重設、條件式存取和整合協力廠商登錄（包括選用的高級識別碼保護）和使用者布建自動化等基本資訊。
+此外，它也包含啟用自助密碼重設、條件式存取和整合協力廠商登錄（包括選用的高級身分識別保護和使用者布建自動化）的重要資訊。
 
 ### <a name="plan-your-passwordless-deployment"></a>規劃 passwordless 部署
 
-升級至替代登入方法，可讓使用者使用下列其中一個 passwordless 驗證方法，安全地存取其裝置： Windows Hello 企業版、Microsoft 驗證者應用程式或安全性參數。 
+升級至替代登入方法，可讓使用者使用下列其中一個 passwordless 驗證方法，安全地存取其裝置： 
+
+- Windows Hello 企業版
+- Microsoft Authenticator 應用程式
+- 安全性參數 
 
 使用 [ [規劃您的 passwordless 部署] 嚮導](https://aka.ms/passwordlesssetup) 來探索最佳的 passwordless 驗證方法，以使用和接收如何部署這些方法的指導方針。 
 
-### <a name="plan-your-self-service-password-reset-deployment"></a>規劃自助密碼重設部署
+### <a name="plan-your-self-service-password-reset-sspr-deployment"></a>規劃自助密碼重設 (SSPR) 部署
 
 讓使用者可以獨立變更或重設其密碼，如果其帳戶已鎖定，或忘記其密碼，而不需要與服務台工程師聯繫。 
 
@@ -187,4 +190,3 @@ Microsoft Exchange Online Protection (EOP) 是雲端式電子郵件篩選服務�
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>使用 Configuration Manager 部署及更新 Microsoft 365 應用程式
 
 針對使用 Configuration Manager 的組織，您可以使用「使用 [Configuration manager Advisor 部署和更新 microsoft 365 應用程式](https://aka.ms/oppinstall) 」產生腳本，以使用 FastTrack 工程師的最佳作法來自動設定您的 Microsoft 365 應用程式部署。 使用此指南可建立您的部署群組、自訂您的 Office 應用程式和功能、設定動態或精益安裝，然後執行腳本以建立以您的部署為目標的應用程式、自動部署規則和裝置集合。 
-

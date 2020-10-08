@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 description: 在本文中，尋找有關以憑證為基礎之驗證的 Microsoft 365 用戶端應用程式支援的詳細資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac48305d634baa436eab7f2d9eeb520897f2a3d8
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 55d3fa4db6abcd7589cf9fadb9084144cd26c8d7
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47548007"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384943"
 ---
 # <a name="microsoft-365-client-app-support--certificate-based-authentication"></a>Microsoft 365 用戶端應用程式支援-憑證型驗證
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-憑證型驗證可讓您使用 Windows、Android 或 iOS 裝置上的用戶端憑證，對 Azure Active Directory 進行驗證。 設定此功能後，您就不需要在行動裝置上的某些郵件和 Microsoft Office 應用程式中輸入使用者名稱和密碼組合。
+憑證型驗證可讓您使用 Windows、Android 或 iOS 裝置上的用戶端憑證，對 Azure Active Directory (Azure AD) 進行驗證。 設定此功能後，您就不需要在行動裝置上的某些郵件和 Microsoft Office 應用程式中輸入使用者名稱和密碼組合。
 
 深入瞭解 [憑證型驗證](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "47548007"
  - iOS
  - macOS<sup>1</sup> <sup>2</sup>
 
-如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](https://products.office.com/office-system-requirements)。
+如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)。
 
 ## <a name="supported-clients"></a>支援的用戶端
 

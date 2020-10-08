@@ -3,7 +3,6 @@ title: Microsoft 365 內部租使用者共同作業
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/21/2020
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: 深入瞭解 Microsoft 365 共同作業如何跨承租人和組織運作，允許不同的組織安全地協同運作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8064543f771927f539d09e3136663bb0df56d5be
-ms.sourcegitcommit: 4ee683c18442386f6fc5c76ffabfad2c28b81d42
+ms.openlocfilehash: 00eacfc21d3223b5b9a1ad420cd5d1d85bf4ea8e
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48214796"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384823"
 ---
 # <a name="microsoft-365-inter-tenant-collaboration"></a>Microsoft 365 內部租使用者共同作業
 
@@ -78,7 +77,7 @@ Microsoft 365 內部租使用者共同作業選項包括針對檔案和交談使
 |共用目標|管理動作|How to 資訊|
 |:-----|:-----|:-----|
 |在小組中與組織外部的使用者共同作業 | 邀請 Microsoft 365 租使用者的全域管理員需要啟用小組中的外部共同作業。 全域管理員及小組擁有者現在可以邀請具有電子郵件地址的任何人，以在小組中共同作業。  <br/> 系統管理員也可以管理和編輯其承租人中已存在的客人。 |  <ul><li> [授權來賓存取](https://docs.microsoft.com/microsoftteams/teams-dependencies) </li><li> [在小組中開啟或關閉來賓存取](https://docs.microsoft.com/microsoftteams/set-up-guests) </li><li> [使用 PowerShell 控制來賓存取](https://docs.microsoft.com/microsoftteams/guest-access-powershell) </li><li> [來賓存取檢查清單](https://docs.microsoft.com/microsoftteams/guest-access-checklist) </li><li> [查看來賓使用者](https://docs.microsoft.com/microsoftteams/view-guests) </li><li> [編輯來賓使用者資訊](https://docs.microsoft.com/microsoftteams/edit-guests-information) </li></ul> |
-|小組擁有者可以邀請和管理來賓在其團隊中共同作業的方式。  </li><li> |小組擁有人可在其小組中對來賓的工作進行其他控制。 |  <ul><li> [新增來賓](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [將來賓新增至團隊](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [管理小組中的來賓存取](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [查看團隊成員或管道中的人員](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
+|小組擁有者可以邀請和管理來賓在其團隊中共同作業的方式。  |小組擁有人可在其小組中對來賓的工作進行其他控制。 |  <ul><li> [新增來賓](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_addingguests&amp;ID0EAABAAA=Add_guests) </li><li> [將來賓新增至團隊](https://docs.microsoft.com/microsoftteams/add-guests) </li><li> [管理小組中的來賓存取](https://docs.microsoft.com/microsoftteams/manage-guests) </li><li> [查看團隊成員或管道中的人員](https://support.office.com/article/see-who-s-on-a-team-or-in-a-channel-5c6be9be-9c45-4a0f-a1a0-f332b23cb6b7?ui=en-US&amp;rs=en-US&amp;ad=US) </li></ul> |
 |其他承租人的客人可以查看小組的內容，以及與其他成員共同作業 | 無。 | [來賓存取體驗](https://docs.microsoft.com/microsoftteams/guest-experience)| 
 
 ## <a name="power-bi-collaboration-options"></a>Power BI 協同作業選項
@@ -93,18 +92,18 @@ Microsoft 365 內部租使用者共同作業選項包括針對檔案和交談使
 
 每個組織都維護自己的使用者帳戶、身分識別、安全性群組、訂閱、授權和儲存區。 人員可使用 Microsoft 365 中的共同作業功能和共用原則及安全性設定，在維護公司資產的控制權時，提供必要資訊的存取權。
   
-- **使用者帳戶：** 在內部部署 Active Directory 目錄服務中的承租人或分割區之間，無法共用帳戶，帳戶無法重複。 
+- **使用者帳戶：** 在內部部署 Active Directory 網域服務中的承租人或磁碟分割之間，無法共用或重複帳戶。 
     
 - **授權 &amp; 訂閱：** 在 Microsoft 365 中，授權計畫中的授權 (也稱為 SKUs 或 Microsoft 365 方案) 讓使用者能夠存取為這些計畫定義的 Microsoft 365 服務。 
     
-- **儲存區：** 在 Microsoft 365 方案中，SharePoint Online 的軟體界限和限制會與信箱儲存限制分開管理。 信箱儲存限制是使用 Exchange Online 來設定和管理。 在這兩種情況下，儲存體都無法共用跨承租人。 
+- **儲存區：** 在 Microsoft 365 授權方案中，SharePoint Online 的軟體界限和限制，會與信箱儲存限制分開管理。 信箱儲存限制是使用 Exchange Online 來設定和管理。 在這兩種情況下，無法在承租人間共用儲存區。 
     
 ### <a name="can-we-share-domain-namespaces-across-microsoft-365-tenants"></a>我們是否可以跨 Microsoft 365 承租人共用網域命名空間？
 
-否。 虛名網域（例如 fabrikam.com 或 tailspintoys.com）每次只能與一個承租人關聯並使用。 每個租使用者都必須有自己的命名空間;UPN、SMTP 和 SIP 命名空間無法在承租人間共用。
+否。 組織的功能變數名稱（例如 fabrikam.com 或 tailspintoys.com）只能與單一 Microsoft 365 租使用者相關聯且可搭配使用。 每個租使用者都必須有自己的命名空間。 無法在承租人間共用 UPN、SMTP 及 SIP 命名空間。
   
 ### <a name="what-about-hybrid-components-and-microsoft-365-inter-tenant-collaboration"></a>混合式元件和 Microsoft 365 內部租使用者共同作業的情況為何？
 
 內部部署混合式元件（例如 Exchange 組織和 Azure AD Connect）無法在多個承租人間分割。
-  
+ 
 

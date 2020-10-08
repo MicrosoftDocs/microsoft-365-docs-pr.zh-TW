@@ -7,19 +7,19 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 09/17/2020
+ms.date: 10/07/2020
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: M365-security-compliance.
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: f7bcfa4f08bee51408de33964f1dfd1e1db3bd33
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f904512f9fd07e2065f3d27a5bd5adc56a3565d5
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199742"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384797"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-threat-protection"></a>在 Microsoft 威脅防護中設定自動化調查和回應功能
 
@@ -52,8 +52,6 @@ Microsoft 威脅防護包含強大的 [自動化調查和回應功能](mtp-autoi
 
 是否要執行自動調查，以及是否自動採取或只在您的裝置核准時採取補救措施，取決於特定設定，例如組織的裝置群組原則。 檢查您的裝置群組原則的自動化層級集。
 
-### <a name="to-review-or-change-your-device-group-policies"></a>若要複查或變更您的裝置群組原則
-
 1. 請移至 Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。
 
 2. 移至 [**設定**  >  **許可權**]  >  **裝置群組**。 
@@ -69,8 +67,6 @@ Microsoft 威脅防護包含強大的 [自動化調查和回應功能](mtp-autoi
 Microsoft 提供內建的 [警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) ，可協助識別特定風險。 這些風險包括 Exchange 系統管理員許可權濫用、惡意程式碼活動、潛在的外部和內部威脅，以及資訊控管風險。 某些警示可觸發 [Office 365 中的自動調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 請確定您的 [Office 365 高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 功能已正確設定。
 
 雖然某些警示和安全性原則可以觸發自動調查，但電子郵件和內容不會自動採取任何修正動作。 相反地，電子郵件和電子郵件內容等候的所有修正動作，都是由您的安全操作小組在重要訊息 [中心](mtp-action-center.md)進行核准。
-
-### <a name="to-view-or-change-your-security-and-alert-policies-in-office-365"></a>在 Office 365 中查看或變更您的安全性和警示原則
 
 Office 365 中的安全性設定可協助保護電子郵件和內容。 若要查看或變更這些設定，請遵循 [防範威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)的指導方針。
 
@@ -88,13 +84,15 @@ Office 365 中的安全性設定可協助保護電子郵件和內容。 若要�
 
 5. 請確定 [電子郵件保護的零小時自動清除](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop) 有效。 
 
-8.  (此為選用) 請在 Microsoft 365 規範中心 () 複查您的 [Office 365 警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) 。 「威脅管理」類別中有許多預設的警示原則。 其中一些警示可以觸發自動調查和回應。 若要深入瞭解，請參閱 [預設警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies)。
+8.  (這是選用的。 ) 在 Microsoft 365 規範中心 () 中檢查您的 [Office 365 警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) [https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) 。 「威脅管理」類別中有許多預設的警示原則。 其中一些警示可以觸發自動調查和回應。 若要深入瞭解，請參閱 [預設警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?#default-alert-policies)。
  
 ## <a name="make-sure-microsoft-threat-protection-is-turned-on"></a>確定已開啟 Microsoft 威脅防護
 
 1. 請移至 Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) 並登入。
 
-2. 在功能窗格中，尋找 **事件**、 **動作中心**及 **搜尋**，如下列影像所示：<br/> :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP 開啟":::
+2. 在功能窗格中，尋找 **事件**、 **動作中心**及 **搜尋**，如下列影像所示：
+
+   :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP 開啟":::
 
    - 如果您看到 **事件**、 **動作中心**及 **搜尋**，則會開啟 Microsoft 威脅防護。 繼續下一個程式， [複查或變更裝置群組的自動化層級](#review-or-change-the-automation-level-for-device-groups)。
 

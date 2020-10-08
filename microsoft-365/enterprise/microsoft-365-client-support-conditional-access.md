@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 在本文中，瞭解哪些平臺、用戶端和 Powershell 模組支援 Microsoft 365 的條件式存取。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fd4dcaeda27f12427f3175b7ec52e2fdb0c153da
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d44dffd6da91be9e64953d1b744043114ba68183
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546509"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384929"
 ---
 # <a name="microsoft-365-client-app-support--conditional-access"></a>Microsoft 365 用戶端應用程式支援-條件式存取
 
@@ -40,7 +40,7 @@ ms.locfileid: "47546509"
  - iOS
  - macOS<sup>1</sup>
 
-如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](https://products.office.com/office-system-requirements)。
+如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)。
 
 ## <a name="supported-clients"></a>支援的用戶端
 

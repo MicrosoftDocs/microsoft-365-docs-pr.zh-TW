@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 本文摘要說明 Microsoft 如何在雲端服務（如 Microsoft 365）中強制執行租使用者隔離。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7aca35fc61d03e94225375fcf67970e13dd691c9
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: c9af522c71f3b089c8f2f198f861bcac8a0011a2
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332685"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384932"
 ---
 # <a name="tenant-isolation-in-microsoft-365"></a>Microsoft 365 中的租使用者隔離
 
@@ -39,7 +39,7 @@ ms.locfileid: "47332685"
 - Microsoft 365 服務各租使用者中的客戶內容邏輯隔離，是透過 Azure Active Directory 授權和以角色為基礎的存取控制來實現。
 - SharePoint 線上在儲存層級提供資料隔離機制。
 - Microsoft 使用嚴謹的實體安全性、背景篩選和多層次的加密策略，以保護客戶內容的機密性和完整性。 所有 Microsoft 365 資料中心都具有生物識別存取控制，大多數需要 palm 列印才能獲得實體存取權。 此外，所有以美國為基礎的 Microsoft 員工都必須在聘用過程中成功完成標準背景檢查。 如需 Microsoft 365 中用於管理存取之控制項的詳細資訊，請參閱 [microsoft 365 管理存取控制](microsoft-365-administrative-access-controls-overview.md)。
-- Microsoft 365 使用服務端技術，在靜止和傳輸中加密客戶內容，包括 BitLocker、每個檔案加密、傳輸層安全性 (TLS) 和網際網路通訊協定安全性 (IPsec) 。 如需 Microsoft 365 中加密的特定詳細資料，請參閱 [microsoft 365 中的資料加密技術](https://docs.microsoft.com/microsoft-365/compliance/office-365-encryption-in-the-microsoft-cloud-overview)。
+- Microsoft 365 使用服務端技術，在靜止和傳輸中加密客戶內容，包括 BitLocker、每個檔案加密、傳輸層安全性 (TLS) 和網際網路通訊協定安全性 (IPsec) 。 如需 Microsoft 365 中加密的特定詳細資料，請參閱 [microsoft 365 中的資料加密技術](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md)。
 
 以上所列的保護功能提供了可靠的邏輯隔離控制，可提供與獨立實體隔離所提供之威脅防護和緩解同等的威脅。
 

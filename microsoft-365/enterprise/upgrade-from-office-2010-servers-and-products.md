@@ -3,7 +3,6 @@ title: 可幫助您從 Office 2010 伺服器和用戶端升級的資源
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 04/14/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -24,12 +23,12 @@ f1.keywords:
 - NOCSH
 description: 開始規劃從 Office 2010 伺服器和用戶端應用程式進行的升級，因為支援即將結束，且無法使用自訂支援協定。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: da45f18c0cf39c06ea19dd348cbd77286152a885
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 7d45075431e23bf3aae0b6052b1db708e704134f
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949523"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384852"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>可幫助您從 Office 2010 伺服器和用戶端升級的資源
 

@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 description: 在本文中，瞭解哪些平臺、用戶端和 Powershell 模組支援 Microsoft 365 的單一登入。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f6398736c8ead072374fbc14ee04eec63d3ad18
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d0a45c30ffe736cf67e811bce6eb029d6fb50674
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546407"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384799"
 ---
 # <a name="microsoft-365-client-app-support--single-sign-on"></a>Microsoft 365 用戶端應用程式支援-單一 Sign-On
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-單一登入 (SSO) 會在使用者登入 Azure Active Directory (Azure AD) 中的應用程式時，新增安全性和便利性。 使用單一登入時，使用者可以使用一個帳戶登入一次，以存取加入網域的裝置、公司資源、軟體 (SaaS) 應用程式和 web 應用程式。
+單一登入 (SSO) 會在使用者登入 Azure Active Directory (Azure AD) 中的應用程式時，新增安全性和便利性。 使用單一登入時，使用者可以使用一個帳戶登入一次，以存取內部部署 Active Directory 網域服務 (AD DS) 加入網域的裝置、軟體為服務 (SaaS) 應用程式和 web 應用程式。
 
 深入瞭解 [單一登入](https://docs.microsoft.com/azure/active-directory/manage-apps/what-is-single-sign-on)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "47546407"
  - iOS<sup>1</sup>
  - macOS<sup>4</sup>
 
-如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](https://products.office.com/office-system-requirements)。
+如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)。
 
 ## <a name="supported-clients"></a>支援的用戶端
 

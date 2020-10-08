@@ -3,7 +3,6 @@ title: 規劃從 Office 2007 或 2010 伺服器和用戶端升級
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/15/2020
 audience: ITPro
 ms.topic: overview
 ms.service: o365-solutions
@@ -17,25 +16,25 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含使用 Office 2007 或 Office 2010 的使用者的資源，可協助他們規劃升級。
-ms.openlocfilehash: 0ad90235bf7ad862a1f0162f87dca7ee2df3d799
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0b137b39d671b9746445f9e41a5859732574dbe4
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688503"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384567"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>規劃從 Office 2007 或 Office 2010 伺服器和用戶端升級
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-如果貴組織使用的是舊版 Office 產品和伺服器，現在是開始規劃升級的絕佳時機。 Office 2007 產品和服務已[終止支援](upgrade-from-office-2007-servers-and-products.md)。 
+如果貴組織使用的是舊版 Office 產品和伺服器，現在是開始規劃升級的絕佳時機。 Office 2007 產品和服務已[終止支援](upgrade-from-office-2007-servers-and-products.md)。 針對 Office 2010 產品和服務：
 
 - Office 2010 和 Exchange 2010 將于 **2020年10月13日** 終止支援。 
 - SharePoint 2010 和 Project Server 2010 將於 **2021 年 4月 13日**終止支援。 
 
-請使用本文中的資源開始著手。
+如需詳細資訊，請參閱 [從 Office 2010 伺服器及用戶端升級](upgrade-from-office-2010-servers-and-products.md)。
 
-如需詳細資料，請參閱[從 Office 2010 伺服器和用戶端升級](upgrade-from-office-2010-servers-and-products.md)。
+請使用本文中的資源開始進行升級。
 
 ## <a name="what-is-microsoft-365"></a>什麼是 Microsoft 365？
 
@@ -44,13 +43,14 @@ ms.locfileid: "46688503"
 Microsoft 365 包含授權和功能，可協助確保您的組織在最新的 Windows 作業系統上運作，而且您的裝置（包括 Windows、iOS 和 Android）已使用需要驗證和資料保護的原則進行註冊並保持安全。 此外，Windows 10 和您的 Microsoft 365 應用程式 enterprise (先前名為 Office 365 ProPlus) 用戶端軟體會繼續更新，以包含最新的功能和安全性更新。
   
 Microsoft 365 是一種由 Microsoft 雲端提供及保護，且具備不斷改善的裝置和生產力體驗的數位商務轉換方式。
-  
-|**資源**|**描述**|
+ 
+| 資源 | 描述 |
 |:-----|:-----|
-|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> |取得不同 Microsoft 365 版本的相關資訊。  <br/> |
-|[Microsoft 365 商務版文件](https://docs.microsoft.com/microsoft-365/business/) <br/> |取得適用於中小企業的 Microsoft 365 版本的詳細資訊。  <br/> |
-|[Microsoft 365 教育版文件](https://docs.microsoft.com/microsoft-365/education/) <br/> |取得適用於教育組織的 Microsoft 365 版本的詳細資訊。  <br/> |
-|[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> |取得適用於企業組織的 Microsoft 365 版本的詳細資訊。  <br/> |
+|[Microsoft 365](https://www.microsoft.com/microsoft-365) <br/> | 取得不同 Microsoft 365 版本的相關資訊。  <br/> |
+|[Microsoft 365 商務版文件](https://docs.microsoft.com/microsoft-365/business/) <br/> | 取得適用於中小企業的 Microsoft 365 版本的詳細資訊。  <br/> |
+|[Microsoft 365 教育版文件](https://docs.microsoft.com/microsoft-365/education/) <br/> | 取得適用於教育組織的 Microsoft 365 版本的詳細資訊。  <br/> |
+|[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365/enterprise/) <br/> | 取得適用於企業組織的 Microsoft 365 版本的詳細資訊。  <br/> |
+|||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>如果我不升級，會發生什麼事？
 
@@ -94,7 +94,7 @@ Microsoft 365 是一種由 Microsoft 雲端提供及保護，且具備不斷改�
 
 - **請試用 Microsoft 365，供家用使用。** 使用 [Microsoft 365 系列家庭](https://www.microsoft.com/microsoft-365/p/microsoft-365-family/cfq7ttc0k5dm?rtc=2&activetab=pivot:overviewtab) 版。 開始試用版，查看 Microsoft 365 系列如何適合您運作。 使用 Microsoft 365 系列時，您將享有 OneDrive 的雲端儲存空間。
 
-   由於 [Windows 7 將於 2020 年 1 月 14 日終止支援](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support)，在 Windows 7 裝置上執行的 Office 365 家用版或 Office 365 個人版提供的 Word、Excel、PowerPoint、Outlook、Publisher 和 Access版本會收到安全性更新，但不會收到功能更新。 若要繼續接收這些應用程式的功能更新，請[將 Windows 7 裝置升級為 Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)。
+   [在2020年1月14日對 Windows 7 的支援結束](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support)時，在 windows 7 裝置上執行的 Office 365 家用或 Office 365 個人所提供的 Word、Excel、PowerPoint、Outlook、Publisher 和 Access 的版本，都將會收到安全性更新，但不會有功能更新。 若要繼續接收這些應用程式的功能更新，請[將 Windows 7 裝置升級為 Windows 10](https://support.microsoft.com/help/12435/windows-10-upgrade-faq)。
     
 - **購買 Office 家用版 &amp; 學生版。** 如果您選擇此選項，便會在您的 Windows 電腦或 Mac 上一次購買 Office。 這不是訂閱，而是提供一部電腦的一次性永久使用授權。 請檢視[需求](https://office.com/systemrequirements)，然後選擇您要使用的版本。
 
@@ -102,9 +102,9 @@ Microsoft 365 是一種由 Microsoft 雲端提供及保護，且具備不斷改�
 
     - 如果您的 Windows 電腦執行 Windows 7、8或 8.1，而目前未升級為 Windows 10，請考慮從授權轉銷商取得 Office 家用版及學生版 2016 (或其他 Microsoft Office 版本)。
      
-     - Windows 7 的支援已 [于2020年1月14日結束](https://www.microsoft.com/windowsforbusiness/end-of-windows-7-support)，但 Microsoft 將不會提供安全性更新或支援。 請將 Windows 7 裝置升級為 Windows 10，以取得持續的安全性和功能更新及後續支援。
+     - Windows 7 的支援已 [于2020年1月14日結束](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support)，但 Microsoft 將不會提供安全性更新或支援。 請將 Windows 7 裝置升級為 Windows 10，以取得持續的安全性和功能更新及後續支援。
 
-您也可以選擇不要在這時候升級， 您的 Office 應用程式將繼續執行。 您可以在[這裡](https://go.microsoft.com/fwlink/p/?linkid=2085724)取得 Office 支援日期的時間表。 不過，升級能提供您安全性更新或新增功能與改良功能。
+您也可以選擇不要在這時候升級， 您的 Office 應用程式將繼續執行。 您可以在[這裡](https://support.microsoft.com/lifecycle/search/13615)取得 Office 支援日期的時間表。 不過，升級能提供您安全性更新或新增功能與改良功能。
    
 ## <a name="next-step"></a>下一步
 

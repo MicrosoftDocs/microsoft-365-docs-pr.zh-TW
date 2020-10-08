@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 description: 在本文中，瞭解哪些平臺、用戶端和 Powershell 模組支援 Microsoft 365 的新式驗證。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d38b5c11a77af8691aaa5e14d288918b39c0d847
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: eee0e9009f7e6a74f25ebf0315b2772ac3e98814
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546299"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384817"
 ---
 # <a name="microsoft-365-client-app-support---modern-authentication"></a>Microsoft 365 用戶端應用程式支援-新式驗證
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-新式驗證可讓 Active Directory 驗證程式庫 (ADAL) 型登入跨不同平臺的 Office 用戶端應用程式。 這可讓登入功能（例如 Multi-Factor 驗證） (MFA) 、智慧卡和憑證型驗證。
+新式驗證可讓 Active Directory 驗證程式庫 (ADAL) 型登入跨不同平臺的 Office 用戶端應用程式。 這可讓登入功能（例如多重要素驗證 (MFA) 、智慧卡和憑證型驗證）。
 
 深入瞭解 [多重要素驗證](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication) 和 [憑證型驗證](https://docs.microsoft.com/azure/active-directory/active-directory-certificate-based-authentication-get-started)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "47546299"
  - iOS
  - macOS
 
-如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](https://products.office.com/office-system-requirements)。
+如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)。
 
 ## <a name="supported-clients"></a>支援的用戶端
 
