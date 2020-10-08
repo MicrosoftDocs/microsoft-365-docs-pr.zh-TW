@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 說明如何準備使用目錄同步處理將使用者布建至 Microsoft 365，以及使用此方法的長期優點。
-ms.openlocfilehash: a70f49dd5656da996912173690dc2b21b4288023
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 79d2a7932867531849ce75f8452b91e8c7ddd7b1
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327282"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390170"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>準備將目錄同步處理至 Microsoft 365
 
@@ -158,6 +158,7 @@ ms.locfileid: "48327282"
   - 在 sign ( @ ) 前面的使用者名稱字元數上限：64
   - At 符號 ( @ ) 所遵循的功能變數名稱字元數上限：48
   - 無效字元： \% &amp; \* +/=？ { } | \< \> ( ) ; : , [ ] " '
+  - 允許的字元： A–Z，a-z，0–9，'。 - _ ! # ^ ~
   - 母音變音符也是不正確字元。
   - 每個 **userPrincipalName** 值都需要 @ 字元。
   - 每個 **userPrincipalName** 值中不能是 @ 字元的第一個字元。

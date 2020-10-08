@@ -9,15 +9,20 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 在 Microsoft SharePoint Syntex 中建立表單處理模型。
-ms.openlocfilehash: 27e80a7b3626170e45ceaa55f1269e50d8fdab9e
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 784a3e0a918424e599e87852d2a36b613867f62e
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337262"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390182"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中建立表單處理模型
 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
+
+</br>
 
 使用 [AI Builder](https://docs.microsoft.com/ai-builder/overview) - Microsoft PowerApps 中的功能- SharePoint Syntex 使用者可以直接從 SharePoint 文件庫建立[表單處理模型](form-processing-overview.md)。 
 
@@ -30,13 +35,6 @@ ms.locfileid: "48337262"
  - 步驟 6：使用您的模型
 
 ## <a name="requirements"></a>需求
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhN]  
-
-</br>
-
 
 您只能在啟用此表單的 SharePoint 文件庫中建立表單處理模型。 如果已啟用表單處理，您可在文件庫的 **[自動執行]** 功能表底下看到 **AI Builder****「建立表單處理模型」**。  如果您需要在文件庫啟用處理，您必須聯繫您的 SharePoint 系統管理員。
 
