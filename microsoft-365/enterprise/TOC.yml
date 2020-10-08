@@ -113,8 +113,6 @@
               href: azure-integration.md
             - name: Azure ExpressRoute
               href: azure-expressroute.md
-            - name: Office 2013 和 Office 2016 用戶端應用程式的新式驗證方式
-              href: modern-auth-for-office-2013-and-2016.md
         - name: 客戶端應用程式支援
           items:
             - name: 憑證型驗證
@@ -137,6 +135,8 @@
               href: configure-skype-for-business-for-hybrid-modern-authentication.md
             - name: 商務用 Skype 和Exchange 的移除或停用
               href: remove-or-disable-hybrid-modern-authentication-from-skype-for-business-and-excha.md
+            - name: 'Office 2013, Office 2016 和 Office 2019 用戶端應用程式'
+              href: modern-auth-for-office-2013-and-2016.md
         - name: 規劃您的升級
           href: plan-upgrade-previous-versions-office.md
           items:
