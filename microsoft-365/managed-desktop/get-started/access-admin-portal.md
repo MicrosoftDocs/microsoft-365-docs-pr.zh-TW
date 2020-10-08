@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: f57911276d74c6945027077404e1f83c2f5072fd
-ms.sourcegitcommit: eb905c5b4d7e71fc930a207357295b0160c4f065
+ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48137032"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379298"
 ---
 # <a name="access-the-admin-portal"></a>存取管理員入口網站
 
@@ -34,12 +34,12 @@ ms.locfileid: "48137032"
 
 |Azure AD 角色  |Microsoft 受管理的桌面許可權  |
 |---------|---------|
-|全域系統管理員     | 具有此角色的系統管理員具有 Microsoft Managed Desktop Admin 入口網站中所有功能的 **讀取和寫入權限** 。         |
-|全域讀取者     | 具有此角色的系統管理員對 Microsoft Managed Desktop Admin 入口網站中的所有功能具有 **唯讀許可權** 。         |
-|Intune 服務系統管理員     |  具有此角色的系統管理員具有 Microsoft Managed Desktop Admin 入口網站中所有功能的 **讀取和寫入權限** 。 **變更：** 在9月2020日的系統管理員中，此角色將無法存取 Microsoft 受管理的桌面安全性功能。       |
-|服務支援系統管理員     | 具有此角色的系統管理員具有 Microsoft Managed Desktop Admin 入口網站中所有功能的 **讀取和寫入權限** 。 **變更：** 在9月2020日的系統管理員中，此角色將無法存取 Microsoft 受管理的桌面安全性功能。         |
-|安全性系統管理員 | ** 預覽2020年9月 () ** 具有此角色的系統管理員對管理員入口網站中 Microsoft 受管理的電腦具有安全性相關功能的所有功能和寫入權限，具有唯讀許可權。 |
-|安全性讀取者 | ** 預覽2020年9月 () **  具有此角色的系統管理員對 Microsoft Managed Desktop Admin 入口網站中的所有功能具有唯讀許可權。|
+|全域系統管理員     | 具有此角色的系統管理員具有 Microsoft Managed Desktop Admin 入口網站中 **所有功能的讀取和寫入權限** 。         |
+|全域讀取者     | 具有此角色的系統管理員對 Microsoft Managed Desktop Admin 入口網站中的 **所有功能具有唯讀許可權** 。         |
+|Intune 服務系統管理員     |  具有此角色的系統管理員具有與 Microsoft Managed Desktop Admin 入口網站中的 **安全性無關的功能的讀取和寫入權限** 。       |
+|服務支援系統管理員     | 具有此角色的系統管理員具有與 Microsoft Managed Desktop Admin 入口網站中的 **安全性無關的功能的讀取和寫入權限** 。         |
+|安全性系統管理員 | 具有此角色的系統管理員對管理員入口網站中 Microsoft 受管理的電腦具有**安全性相關功能的**所有功能和寫入權限，具有**唯讀許可權**。 |
+|安全性讀取者 |具有此角色的系統管理員對 Microsoft Managed Desktop Admin 入口網站中的 **所有功能具有唯讀許可權** 。|
 
 > [!IMPORTANT]
 > 只有全域系統管理員角色具有在 Microsoft Managed Desktop 中 *註冊* 您的組織所需的許可權。 請注意，Azure Active Directory 角色將會在各種 Microsoft 服務中提供使用者帳戶的許可權。 在 Microsoft 受管理的桌面完成註冊後，您應該永遠使用該角色，以完成其他工作所需的 *最低* 許可權。
@@ -47,9 +47,9 @@ ms.locfileid: "48137032"
  
 |自訂角色  |Microsoft 受管理的桌面許可權  |
 |---------|---------|
-|Microsoft 受管理的桌面服務管理員  | ** 預覽2020年9月 () ** 指派給使用者時，此角色可讓系統管理員讀取與 Microsoft Managed Desktop Admin 入口網站中的安全性無關的 **功能 & 寫入權限** 。  |
-|Microsoft 受管理的桌面服務讀取器 | ** 預覽2020年9月 () ** 指派給使用者時，此角色會將「管理員唯讀」許可權授與 Microsoft Managed Desktop Admin 入口網站中 **與安全性** 無關的功能。 |
-|Microsoft 受管理的桌面安全性管理員 | ** 預覽2020年9月 () ** 指派給使用者時，此角色可讓系統管理員讀取權限，只對 Microsoft Managed Desktop Admin 入口網站中的 **安全性相關功能 & 寫入權限** 。   |
+|Microsoft 受管理的桌面服務管理員  | 指派給使用者時，此角色可讓系統管理員 **讀取和寫入權限給** 與 Microsoft Managed Desktop admin 入口網站中的安全性無關的功能。  |
+|Microsoft 受管理的桌面服務讀取器 | 指派給使用者時，此角色可讓系統管理員對與 Microsoft Managed Desktop Admin 入口網站中的安全性無關的 **功能具有唯讀許可權** 。 |
+|Microsoft 受管理的桌面安全性管理員 |指派給使用者時，此角色只會讓系統管理員 **讀取和寫入權限，只會針對** Microsoft Managed Desktop admin 入口網站中的安全性相關功能。   |
 
 > [!NOTE]
 > 安全性功能包括安全性相關的通訊、安全性連絡人的管理、安全性相關支援要求的管理，以及與安全性相關的報表存取。 
