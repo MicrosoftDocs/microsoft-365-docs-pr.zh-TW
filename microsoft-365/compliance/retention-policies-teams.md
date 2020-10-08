@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: 04ca027b9ce8ad1b36e0d4e60c4e10308a822a63
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 40e68116c24622fd21bd35531ef7821d8c4b7c62
+ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816736"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48370367"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
@@ -51,18 +51,18 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 
 針對圖表中的兩個路徑：
 
-1. 如果在保留期間有使用者**編輯或刪除某個聊天或頻道訊息**，系統就立即複製原始訊息 (如果是編輯) 或將其移動 (如果是刪除) 到 [SubstrateHolds] 資料夾。 訊息會在那裡儲存到保留期間到期為止，然後在 24 小時內永久刪除訊息。
+1. 如果在保留期間有使用者**編輯或刪除某個聊天或頻道訊息**，系統就會在 21 天内複製原始訊息 (如果是編輯) 或將其移動 (如果是刪除) 到 [SubstrateHolds] 資料夾。 訊息會在那裡儲存到保留期間到期為止，然後在 24 小時內永久刪除訊息。
 
-2. **如果不刪除聊天或頻道訊息**，以及目前訊息經過編輯後，則會在保留期間到期後，將訊息移至 [SubstrateHolds] 資料夾。 此動作最多可在到期日起七天內完成。 當訊息位於 [SubstrateHolds] 資料夾時，其會在 24 小時內永久刪除。 
+2. **如果不刪除聊天或頻道訊息**，以及目前訊息經過編輯後，則會在保留期間到期後，將訊息移至 [SubstrateHolds] 資料夾。 此動作最多可在到期日起 7 天內完成。 當訊息位於 [SubstrateHolds] 資料夾時，其會在 24 小時內永久刪除。 
 
 > [!NOTE]
-> SubstrateHolds 資料夾中的訊息可供電子文件探索工具搜尋。 在訊息遭到永久刪除 (在 [SubstrateHolds] 資料夾中) 前，電子文件探索工具都可以搜尋到這些訊息。
+> SubstrateHolds 資料夾中的訊息可供電子文件探索工具搜尋。 在 [SubstrateHolds] 資料夾中訊息遭到永久刪除前，電子文件探索工具都可以搜尋到這些訊息。
 
 當保留原則為僅保留或僅刪除時，內容路徑為保留和刪除的變化。
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>「僅保留」保留原則的內容路徑
 
-1. **如果聊天或頻道訊息為 [已編輯] 或 [已刪除]**：系統會在 [SubstrateHolds] 資料夾中立即建立原始訊息的複本，並保留在該處，直到保留期間到期為止。 然後訊息會在 24 小時內從 [SubstrateHolds] 資料夾中永久刪除。
+1. **如果聊天或頻道訊息為 [已編輯] 或 [已刪除]**：系統會在 21 天内在 [SubstrateHolds] 資料夾中建立原始訊息的複本，並保留在該處，直到保留期間到期為止。 然後訊息會在 24 小時內從 [SubstrateHolds] 資料夾中永久刪除。
 
 2. **如果未在保留期間修改或刪除項目**，以及目前訊息經過編輯後：保留期間前後沒有任何變化；訊息仍會保留在其原始位置。
 
@@ -70,7 +70,7 @@ Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留�
 
 1. **如果未在保留期間刪除訊息**：在保留期間結束時，系統會將訊息移至 SubstrateHolds 資料夾。 此動作最多可在到期日起七天內完成。 然後訊息會在 24 小時內從 [SubstrateHolds] 資料夾中永久刪除。
 
-2. **如果使用者在保留期間刪除項目**，系統會立即將項目移至 [SubstrateHolds] 資料夾，並在 24 小時內永久刪除該項目。
+2. **如果使用者在保留期間刪除項目**，系統會在 21 天内將項目移至 [SubstrateHolds] 資料夾，並在 24 小時內永久刪除該項目。
 
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>商務用 Skype 和 Teams Interop 聊天
