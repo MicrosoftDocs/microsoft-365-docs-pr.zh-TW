@@ -12,16 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 活動總管透過讓您查看和篩選使用者對套用標籤的內容執行的操作，來完善資料分類功能。
-ms.openlocfilehash: 63ecb84c0ae658b0fd3463dba10d56059352910b
-ms.sourcegitcommit: e8b9a4f18330bc09f665aa941f1286436057eb28
+ms.openlocfilehash: 0175f41ca3fbcfc685acf933cc0cd97af6aa61ad
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45126642"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379208"
 ---
 # <a name="get-started-with-activity-explorer"></a>開始使用活動總管
 
@@ -76,6 +78,6 @@ Microsoft 365 會監視和報告 SharePoint Online 和 OneDrive 中的下列活�
 
 ## <a name="see-also"></a>另請參閱
 - [了解敏感度標籤](sensitivity-labels.md)
-- [瞭解保留原則和保留標記](retention.md)
+- [瞭解保留原則和保留標籤](retention.md)
 - [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 

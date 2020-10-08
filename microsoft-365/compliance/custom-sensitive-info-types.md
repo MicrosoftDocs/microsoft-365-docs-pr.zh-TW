@@ -12,17 +12,19 @@ ms.date: 04/23/2019
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: 取得資料遺失防護（DLP）的自訂機密資訊類型概覽，例如 [主要模式]、[字元近似] 和 [信任等級]。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3b3e30c75641dde16726e1d98c8f12c4437b0df6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d21d0be23847a8fbd27b6082ca28cdca2d4eed05
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685473"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379170"
 ---
 # <a name="custom-sensitive-information-types"></a>自訂敏感性資訊類型
 

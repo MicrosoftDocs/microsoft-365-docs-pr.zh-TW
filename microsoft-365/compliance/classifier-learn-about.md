@@ -10,17 +10,20 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是將它肯定和否定的範例，以查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護 (DLP) 或保留原則。
-ms.openlocfilehash: 8b086690faba23e1331e02d8844503c44e7617c0
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 7abfbe101508d24e58464ff38b14ab87447001f0
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322186"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379306"
 ---
 # <a name="learn-about-classifiers-preview"></a>瞭解 (預覽的分類器) 
 
@@ -126,7 +129,7 @@ Microsoft 365 隨附五個預先訓練的分類器：
 
 ![分類器重新培訓工作流程](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [保留標籤](retention.md)
 - [資料外洩防護 (DLP)](data-loss-prevention-policies.md)

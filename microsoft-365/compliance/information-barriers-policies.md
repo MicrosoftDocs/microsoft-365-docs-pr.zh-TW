@@ -11,15 +11,17 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
+- m365solution-mip
+- m365initiative-compliance
 localization_priority: None
 description: 瞭解如何在 Microsoft 小組中定義資訊障礙的原則。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcf7fd496098032bad075c1679f0081ddf29caef
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f7e1fbb0f1d468f8e1b79f9cc414fdb87a224283
+ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547441"
+ms.lasthandoff: 10/07/2020
+ms.locfileid: "48379188"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -55,7 +57,7 @@ ms.locfileid: "47547441"
 | (視需要) [編輯區段或原則](information-barriers-edit-segments-policies.md)    |-編輯區段<br/>-編輯或移除原則<br/>-重新執行原則應用程式<br/>-查看原則狀態         |
 | (視需要) [疑難排解](information-barriers-troubleshooting.md)|-當事情沒有如預期的運作時採取動作|
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 除了 [必要的授權和許可權](information-barriers.md#required-licenses-and-permissions)之外，請確定符合下列需求： 
      

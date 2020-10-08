@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: 7fb5998729c9f11902f8fdfaffa62b160928077c
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 0d66076c93eb46ca11977cea12417c0816e0d11b
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321346"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367928"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -43,11 +43,9 @@ ms.locfileid: "48321346"
 
 ## <a name="to-set-up-sharepoint-syntex"></a>若要設定 SharePoint Syntex
 
-1. 在 Microsoft 365 系統管理中心中，選取 **[設定]**，然後查看 **[組織知識]** 區段。
+1. 在 [Microsoft 365 系統管理中心] 中，選取 **[設定]**，然後查看 **[檔案和內容]** 區段。
 
-2. 在 **[組織知識]** 區段中，按一下 **[自動化內容瞭解]**。<br/>
-
-    ![組織知識設定頁面](../media/content-understanding/admin-org-knowledge-options.png)</br>
+2. 在 **[檔案和內容]** 區段中，選取 **[自動化內容瞭解]**。<br/>
 
 3. 在 **[自動化內容瞭解]** 頁面上，按一下 **[開始使用]** 逐步執行設定流程。<br/>
 

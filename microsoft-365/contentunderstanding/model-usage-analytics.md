@@ -9,18 +9,18 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 瞭解如何將保留標籤套用至文件瞭解模型
-ms.openlocfilehash: 6f616dc3d2ebd87bcc70ee01c9f3a88db60b6f17
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 052c137a419c0185010fbd152e73615a4bb093af
+ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337238"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "48367950"
 ---
 # <a name="document-understanding-model-usage-analytics"></a>文件瞭解模型使用情況分析
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GpJY]  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GnhX]  
 
 </br>
 
@@ -28,7 +28,7 @@ ms.locfileid: "48337238"
 您的 Microsoft SharePoint Syntex 內容中心可提供有關您的模型使用情況分析，以便提供您更多有關從內容中心發佈之模型的使用情況詳細資訊。 這包括下列資訊的整合資訊：
 
 - 正在套用模型的位置
-- 一段時間內所處理的檔案數量
+- 一段時間內已處理的檔案數量
 
  ![模型分析](../media/content-understanding/model-analytics.png) </br>
 
