@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: ad215b1b5115faaaf82f01488aaf864f4b2de392
-  ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+  ms.openlocfilehash: 2b25d2b290723378f0e7ec286a0928add997ea39
+  ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/03/2020
-  ms.locfileid: "48350244"
+  ms.lasthandoff: 10/09/2020
+  ms.locfileid: "48398700"
 highlightedContent:
   items:
   - title: 強化遠端工作人員
@@ -93,7 +93,7 @@ productDirectory:
       text: 部署 Microsoft Defender 進階威脅防護
     - url: security/office-365-security/office-365-atp.md
       text: 部屬 Office 365 進階威脅防護
-    - url: enterprise/microsoft-365-policies-configurations.md
+    - url: security/office-365-security/microsoft-365-policies-configurations.md
       text: 設定身分識別和裝置存取防護
   - title: 保護您的資訊並遵守法規
     imageSrc: https://docs.microsoft.com/office/media/icons/certificate-blue.svg
@@ -247,9 +247,12 @@ additionalContent:
     - title: 終端使用者
       summary: 在 support.microsoft.com 上尋找適用於 Microsoft 365 使用者的訓練、操作說明及說明內容。
       url: https://support.microsoft.com/microsoft-365
-    - title: 教育者
+    - title: 教育 IT
       summary: 瞭解如何使用 Microsoft 365 教育版，輕鬆地開展創新、促進團隊合作，並擁有安全且簡單的體驗。
       url: /education
+    - title: 教育人員
+      summary: 使用 Microsoft 365 教育版，為教育人員尋找訓練、操作說明及說明內容。
+      url: https://support.microsoft.com/education
     - title: '[技術] 社群'
       summary: 加入 Microsoft 365 [技術] 社群，以交流體驗、接洽並向專家學習。
       url: https://techcommunity.microsoft.com/t5/Microsoft-365/ct-p/microsoft365
