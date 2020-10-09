@@ -17,16 +17,16 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: 此登陸頁面提供 Office 365 的安全性和合規性的連結及規劃資訊。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e4eae4dddb90983b811e0856a09dae79af83d226
-ms.sourcegitcommit: 41bc923bb31598cea8f02923792c1cd786e39616
+ms.openlocfilehash: 3684506b458ea2d40d3ff8b022bfb9e8154accf3
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086654"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399032"
 ---
 # <a name="plan-for-security-amp-compliance"></a>規劃安全性 &amp; 合規性
 
-管理安全性與合規性是一種合作關係。 您負責保護您的資料、身分識別及裝置，但 Microsoft vigorously 會保護 Microsoft 365 服務。 您可以將 Microsoft 365 和 Enterprise 可移動性 + Security （EMS）搭配使用，以協助您為組織達成適當的保護層級。
+管理安全性與合規性是一種合作關係。 您負責保護您的資料、身分識別及裝置，但 Microsoft vigorously 會保護 Microsoft 365 服務。 您可以使用 Microsoft 365 和 Enterprise 可移動性 + Security (EMS) 搭配一起，以協助您為組織達成適當的保護層級。
   
 ## <a name="step-1-review-capabilities"></a>步驟1：審閱功能
 
@@ -46,7 +46,7 @@ ms.locfileid: "45086654"
   
 - [保護 Office 365 中的資料與服務存取權](protect-access-to-data-and-services.md)
     
-- [安全的電子郵件原則和設定](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [安全的電子郵件原則和設定](../security/office-365-security/secure-email-recommended-policies.md)
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [更多語言](https://www.microsoft.com/download/details.aspx?id=55032)
   
@@ -70,9 +70,9 @@ ms.locfileid: "45086654"
 
 使用這些建議的設定作為企業規模或複雜的 access 安全性案例的起點。
   
-- [安全的電子郵件原則和設定](https://docs.microsoft.com/microsoft-365/enterprise/secure-email-recommended-policies)
+- [安全的電子郵件原則和設定](../security/office-365-security/secure-email-recommended-policies.md)
     
-- [Microsoft 雲端中的 Contoso](https://aka.ms/cloudarchcontoso)
+- [Microsoft 雲端中的 Contoso](../enterprise/contoso-case-study.md)
     
 ## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 系統管理中心及儀表板
 

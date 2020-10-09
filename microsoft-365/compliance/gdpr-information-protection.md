@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8716af366e2ec75775f3e34cbd121fe14fbb11f1
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416797"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398482"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>使用 Microsoft 365 功能實現 GDPR 資訊保護
 
@@ -49,7 +49,7 @@ Azure Active Directory 和其他 Microsoft 365 功能提供了豐富的功能組
 
 Microsoft 提供下列建議設定，可作為起點設定：
 
-- [身分識別與裝置存取設定](../enterprise/microsoft-365-policies-configurations.md)：可達成三層保護 (基本、機密、高度管制) 的建議原則設定。本指導包含 Exchange Online 和 SharePoint Online (包含商務用 OneDrive) 的建議原則。
+- [身分識別與裝置存取設定](../security/office-365-security/microsoft-365-policies-configurations.md)：可達成三層保護 (基本、機密、高度管制) 的建議原則設定。本指導包含 Exchange Online 和 SharePoint Online (包含商務用 OneDrive) 的建議原則。
 - [政治活動、非營利組織及其他敏捷組織的安全性指導](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)：這包含同一組原則，但提供 BYOD 環境及 B2B 帳戶的額外指導。
 
 ## <a name="threat-protection"></a>威脅防護

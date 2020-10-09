@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 262cb34bbe7f2923ecf8dce88208c70ba0b5b7f7
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 20f1a0cc38338bb054618726b5a399d237a979d2
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341409"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399498"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
@@ -57,7 +57,7 @@ ms.locfileid: "48341409"
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步驟 1 (必要) ：啟用通訊相容性的許可權
 
 >[!Important]
->根據預設，全域管理員無法存取通訊規範功能。 在此步驟中所指派的角色是必要的通訊相容性功能才能存取。
+>根據預設，全域管理員無法存取通訊規範功能。 在此步驟中所指派的角色是必要的通訊相容性功能才能存取。 設定角色群組之後，最多可能需要30分鐘的時間，才能將角色群組許可權套用至組織中指派給指派的使用者。
 
 有五個角色群組可用來設定管理通訊符合性功能的許可權。 若要在 Microsoft 365 規範中心中以功能表選項的方式提供 **通訊相容性** ，並繼續這些設定步驟，您必須指派給 *通訊合規性* 或 *通訊合規性系統管理員* 角色群組。 若要在初始設定之後存取及管理通訊相容性功能，使用者必須是至少一個通訊合規性角色群組的成員。
 

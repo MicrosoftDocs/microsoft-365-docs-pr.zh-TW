@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 瞭解如何保護使用者和裝置存取 Microsoft 365 的資料和服務，並防止資料遺失。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 90fd902f0ccd8589fa413a2b06b9d5ccf74ab1fd
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: 64baa2c9e49a9b24841ec50db3e5592ba3d7d55d
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44036026"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399022"
 ---
 # <a name="protect-user-and-device-access"></a>保護使用者和裝置存取權
 
@@ -38,32 +38,32 @@ ms.locfileid: "44036026"
 
 僅使用管理員帳戶來開始。 系統管理員應該要有個別的使用者帳戶，以進行一般的非系統管理，而且只有在必要時才使用系統管理帳戶，才可完成與工作職能相關聯的工作。
 
-使用多重要素驗證和條件式存取來保護您的系統管理員帳戶。 如需詳細資訊，請參閱[保護系統管理員帳戶](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts)。 
+使用多重要素驗證和條件式存取來保護您的系統管理員帳戶。 如需詳細資訊，請參閱 [保護系統管理員帳戶](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts)。 
 
 接下來，在 Office 365 中設定特殊許可權存取管理。 「特權存取管理」可讓您透過 Office 365 中的版權管理工作進行精細存取控制。 它可以協助保護您的組織不會因可能使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。
 
 - [特殊許可權存取管理的概述](privileged-access-management-overview.md)
 - [設定特殊權限存取管理](privileged-access-management-configuration.md)
 
-另一個主要建議是使用專門設定管理工作的工作站。 這些是僅供管理工作使用的專用裝置。 請參閱[保護特殊許可權存取](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access)。
+另一個主要建議是使用專門設定管理工作的工作站。 這些是僅供管理工作使用的專用裝置。 請參閱 [保護特殊許可權存取](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access)。
 
-最後，您可以在您的租使用者中建立兩個或多個緊急存取帳戶，以減輕意外缺乏管理存取的影響。 請參閱[管理 AZURE AD 中的緊急存取帳戶](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)。 
+最後，您可以在您的租使用者中建立兩個或多個緊急存取帳戶，以減輕意外缺乏管理存取的影響。 請參閱 [管理 AZURE AD 中的緊急存取帳戶](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access)。 
 
 ## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>步驟3：設定建議的身分識別和裝置存取原則
-多重要素驗證（MFA）和條件式存取原則都是強大的工具，可減少遭到損害的帳戶和未經授權的存取。 建議您實施一組已一起測試的原則。 如需詳細資訊，包括部署步驟，請參閱[Identity and device access](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-policies-configurations)設定。
+多重要素驗證 (MFA) 和條件式存取原則，都是一些強大的工具，可減輕受到損害的帳戶和未經授權的存取。 建議您實施一組已一起測試的原則。 如需詳細資訊，包括部署步驟，請參閱 [Identity and device access](../security/office-365-security/microsoft-365-policies-configurations.md)設定。
 
  這些原則會執行下列功能：
 - 單行因素驗證
 - 條件式存取
-- Intune 應用程式保護（裝置的應用程式和資料保護）
+- Intune app protection (裝置的應用程式和資料保護) 
 - Intune 裝置合規性
 - Azure AD Identity Protection
 
-實施 Intune 裝置合規性需要裝置註冊。 管理裝置可讓您在允許存取您環境中的資源之前，確定這些裝置的健康和相容性。 請參閱[在 Intune 中註冊裝置以進行管理](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+實施 Intune 裝置合規性需要裝置註冊。 管理裝置可讓您在允許存取您環境中的資源之前，確定這些裝置的健康和相容性。 請參閱 [在 Intune 中註冊裝置以進行管理](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>步驟4：設定 SharePoint 裝置存取原則
 
-Microsoft 建議您使用裝置存取控制，以機密和高管制內容來保護 SharePoint 網站中的內容。 如需詳細資訊，請參閱[保護 SharePoint 網站和檔案的原則建議](https://docs.microsoft.com/microsoft-365/enterprise/sharepoint-file-access-policies)。
+Microsoft 建議您使用裝置存取控制，以機密和高管制內容來保護 SharePoint 網站中的內容。 如需詳細資訊，請參閱 [保護 SharePoint 網站和檔案的原則建議](../security/office-365-security/sharepoint-file-access-policies.md)。
 
 
 

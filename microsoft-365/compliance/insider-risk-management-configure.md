@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 4fcfec889b4b5005a172037a0df674b45a9e7281
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: 707f2b260ff9d4a452cdb65d75a1a8fe6a13af3f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341431"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399168"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -47,6 +47,9 @@ ms.locfileid: "48341431"
 如果您沒有現有的 Microsoft 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以 [將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 至現有的訂閱，或註冊 Microsoft 365 Enterprise E5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>步驟1：啟用內部人員風險管理的許可權
+
+>[!Important]
+>設定角色群組之後，最多可能需要30分鐘的時間，才能將角色群組許可權套用至組織中指派給指派的使用者。
 
 有四個角色群組，用來設定許可權以管理「內幕風險管理」功能。 若要繼續這些設定步驟，您的租使用者管理員必須先將您指派給「 **內幕人員風險管理** 」或「 **內幕風險管理** 」管理角色群組。 若要在初始設定之後存取及管理有問必答風險管理功能，使用者必須是至少一個「內幕風險管理」角色群組的成員。
 

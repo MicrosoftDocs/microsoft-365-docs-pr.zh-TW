@@ -18,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案新增至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7d5e1bb67d6adc1b3c25aea8f468a23ed5c1019a
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: c33e136be55ea60f1e5954d4713b219045b1f0eb
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132033"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398524"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
-是否要將新的解決方案加入至 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)、根據您的意見來更新現有的功能，或推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請參閱下列內容，以查看目前的 Microsoft 365 合規性的新功能。 
+無論是將新的解決方案加入至 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)、根據您的意見反應更新現有的功能，或是推出全新和更新的檔，Microsoft 365 都會協助您不斷掌握不斷變化的相容性形勢。 請參閱下列內容，以查看目前的 Microsoft 365 合規性的新功能。 
 
 > [!NOTE]
 > 有些規範功能會以不同的速度向客戶推出。 如果您還沒有看到功能，請嘗試將您新增至 [目標版本](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365)。
@@ -36,6 +36,63 @@ ms.locfileid: "48132033"
 > [!TIP]
 > 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 威脅防護的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 請造訪 [microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，以瞭解已啟動、已開發、已取消或先前發佈的 microsoft 365 功能。
+
+## <a name="august-2020"></a>2020年 8月
+
+### <a name="spotlight-insider-risk-and-communication-compliance-updates"></a>聚光燈：有問必答風險和通訊相容性更新
+
+這個月的公開預覽的一些新增及增強功能：
+
+**有問必答風險管理**
+
+- 查看我們的六個新 [原則範本](insider-risk-management-policies.md#policy-templates)：
+    - 依優先使用者的資料洩漏
+    - 因不滿使用者的資料洩漏
+    - 一般安全性原則違規
+    - 脫離使用者的安全性原則違規
+    - 依優先順序的使用者所破壞的安全性原則
+    - 不滿的使用者違反安全性原則
+
+- 與 [Microsoft DEFENDER atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 的整合可讓您匯入並篩選 MICROSOFT defender atp 警示，以供從新的安全性違規原則範本所建立的原則所偵測到的活動。 此外，也有相關的 [內幕使用者風險設定](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview) ，您可以選擇根據 MICROSOFT Defender ATP 警示會審狀態，將安全性警示匯入「內幕人員風險管理」。
+
+    > [!NOTE]
+    > 若要利用 Microsoft Defender ATP 整合 (包括新的安全性原則違規模板) ，您必須在組織中設定 Microsoft Defender ATP。 您也需要透過 [在 Microsoft DEFENDER atp 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)來啟用內部的內幕程式風險管理整合的 MICROSOFT Defender ATP。
+ 
+- 自訂 [建立原則時的](insider-risk-management-policies.md#create-a-new-policy)指示器閾值。
+- 設定 [優先順序的使用者群組](insider-risk-management-settings.md#priority-user-groups-preview) ，以定義組織中的使用者，其活動需要根據其位置、敏感資訊存取權或風險歷程等因素進行深入檢查。
+- 使用 Office 365 管理活動 APIs，將 [內幕電腦風險警示詳細資料匯出](insider-risk-management-settings.md#export-alerts-preview) 至組織可能用來管理或匯總「有問必答風險」資料的其他應用程式。
+- 新的 [網域設定](insider-risk-management-settings.md#domains-preview) 可協助您定義及控制特定網域中活動的風險層級。
+
+**通訊合規性**
+
+- 當您 [在警示中檢查郵件](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)時，您現在可以在 Microsoft 小組頻道、1:1 和群組聊天中移除不適當的郵件。 移除的郵件和內容會被取代，以解釋因敏感內容而被移除的原則提示。
+- 新的 [通訊角色](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) (也會包含在) 年9月發行的新通訊符合性角色群組中。
+- 新的通訊相容性設定經驗包括 [隱私權](communication-compliance-feature-reference.md#privacy-preview) 和 [注意事項範本](communication-compliance-feature-reference.md#notice-templates)的設定。
+- 新的 [分類](communication-compliance-feature-reference.md#classifiers) 器協助偵測成人、racy 及 gory 影像。
+- 在 [提醒中檢查郵件](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) 時出現新的「模式偵測」通知，可讓您瞭解使用者對相同行為的重複實例。
+
+### <a name="sensitivity-labels"></a>敏感度標籤
+
+- 針對美國政府租使用者（GCC、GCC-H，和DoD），目前僅支援 Azure 資訊保護統一標籤用戶端和掃描器的敏感標籤。 如需詳細資訊，請參閱 [Azure 資訊保護進階版政府服務描述](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
+- 您現在可以 [使用「安全性 & 規範中心」 PowerShell](create-sensitivity-labels.md#use-powershell-for-sensitivity-labels-and-their-policies) 建立及設定您在標記系統管理中心中看到的所有設定。 這表示，除了使用 PowerShell 以用於標籤 admin center 以外的設定，您現在可以完全編寫敏感度標籤和敏感度標籤原則的建立及維護功能。
+
+### <a name="records-management-content-overhaul"></a>記錄管理：內容徹底檢修
+
+涵蓋部署步驟、將內容標示為記錄及記錄版本的新檔：
+
+- [開始使用記錄管理](get-started-with-records-management.md)
+- [使用保留標籤聲明記錄](declare-records.md)
+- [使用記錄版本設定來更新儲存在 SharePoint 或 OneDrive 中的記錄](record-versioning.md)
+
+### <a name="retention-labels--policies"></a>保留標籤 & 原則
+
+保留相關的系統管理員活動現在已記錄下來，可在審核記錄中查看。 如需完整清單，請參閱[保留原則和保留標籤活動](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities)。
+
+### <a name="advanced-ediscovery"></a>進階電子文件探索
+
+- 在 [將集合新增至審閱集](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review)時，您現在可以包含新式附件 (也稱為「雲端附件」 ) 及 SharePoint 檔版本。
+- 新的 [直接下載匯出體驗](export-documents-from-review-set.md)，不再需要使用 Azure 存放區瀏覽器來下載案例內容。
+
 
 ## <a name="july-2020"></a>2020 年 7 月
 
@@ -269,7 +326,7 @@ ms.locfileid: "48132033"
 |方案目錄 (預覽)  <br/>|方案目錄是一種可讓您探索、深入瞭解及快速開始使用我們的合規性和風險管理解決方案的單一停止車間。 目錄會組織成三個符合性類別，每個類別包含組成該類別之解決方案的詳細資料。 類別包括資訊保護 & 控管、內幕風險管理，以及探索 & 回應 <br/>|[方案目錄 (預覽的概述) ](microsoft-365-solution-catalog.md)|
 |通訊合規性 (預覽)  <br/>|通訊相容性是新的有問必答風險管理類別的一部分，可協助您針對組織中的不適當郵件偵測、捕獲和採取補救措施，以協助將通訊風險降到最低。 此方案透過引進一些新的增強功能（如智慧範本、彈性修復工作流程及可行動的觀點），擴充 Office 365 中監管原則的功能。 <br/>|[Microsoft 365 (預覽中的通訊法規遵從性) ](communication-compliance.md)|
 |資料分類 (預覽)  <br/>|我們新的資料分類頁面包含強大的洞察力和工具，可協助您探索和評估敏感資訊和標籤在組織中的內容中使用 (保留和敏感度) 。 回顧包含機密資訊或已套用標籤的內容、探索各個 Microsoft 365 位置的標籤活動、建立自訂機密資訊類型，以及更多。<br/>|[資料分類概觀 (預覽)](data-classification-overview.md)|
-|Trainable 分類 (預覽)  <br/>|這個強大的新工具使用我們的機器學習引擎，協助識別您的組織中的內容類別別，例如法規檔或員工合約。 建立後，可使用多個規範方案中的分類器來偵測相關的內容，並加以分類、保護、保留，等等。<br/>|[深入瞭解 trainable 的分類器 (預覽) ](classifier-learn-about.md)|
+|Trainable 分類 (預覽)  <br/>|這個強大的新工具使用我們的機器學習引擎，協助識別您的組織中的內容類別別，例如法規檔或員工合約。 建立後，可使用多個規範方案中的分類器來偵測相關的內容，並加以分類、保護、保留，等等。<br/>|[深入瞭解可訓練分類器（預覽版）](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>更新的規範解決方案
 
@@ -291,7 +348,7 @@ ms.locfileid: "48132033"
 |資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md) (英文)|
 |資料主體要求 |資料隱私權 > 資料主體要求 <br/> https://protection.office.com/dsrcases |資料主體要求 <br/> https://compliance.microsoft.com/datasubjectrequest |[使用 DSR 案例工具管理 GDPR 資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |電子文件探索|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
-|Events|記錄管理 > 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件發生時開始保留](event-driven-retention.md)|
+|事件|記錄管理 > 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件發生時開始保留](event-driven-retention.md)|
 |檔案計畫|記錄管理 > 檔計畫 <br/> https://protection.office.com/fileplan |記錄管理 > 檔計畫] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=fileplan |[使用檔案計畫來管理保留標籤](file-plan-manager.md)|
 |匯入 PST 檔案|資訊管理 > 匯入 PST 檔案 <br/> https://protection.office.com/importV2 |資訊控管 > 匯入] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=import |[將組織的 PST 檔案匯入的概觀](importing-pst-files-to-office-365.md)|
 |標籤活動瀏覽器|資訊控管 > 標籤活動瀏覽器 <br/> https://protection.office.com/labelexplorer |資料分類 > 活動流覽] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[檢視套用標籤的內容上的活動 (預覽)](data-classification-activity-explorer.md)|
@@ -313,9 +370,3 @@ ms.locfileid: "48132033"
 - 將標籤套用至 **Word、PowerPoint 及 Excel**檔案時，系統會提示使用者將存取權限指派給特定的使用者和群組。
 
 移至 [ [使用敏感度標籤來限制存取內容](encryption-sensitivity-labels.md#let-users-assign-permissions) ] 以深入瞭解內容。
-
-## <a name="august-2019"></a>2019 年 8 月
-
-### <a name="update-to-data-investigations"></a>更新資料調查
-
-在執行資料調查時，您現在可以從原始位置刪除專案。 這表示您可以在組織內刪除 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶中的專案。 因為您已將專案收集為證據，所以您可以在證據集中保留這些專案的副本，以進行進一步調查或只保留為參考。 [深入瞭解](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 在執行資料調查時，您現在可以從原始位置刪除專案。 這表示您可以在組織內刪除 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶中的專案。 因為您已將專案收集為證據，所以您可以在證據集中保留這些專案的副本，以進行進一步調查或只保留為參考。 移至 [ [管理 Microsoft 365 中的資料外泄事件](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) ] 以深入瞭解。 

@@ -13,16 +13,17 @@ localization_priority: High
 search.appverid:
 - MOE150
 - MET150
+ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: 實施 Microsoft 資訊保護 (MIP) 功能，方法是使用 Microsoft 365 符合性，協助您探索、分類及保護任何地方生活或傳播的敏感資訊。
-ms.openlocfilehash: b421cf0b81c5ad52282302626b93064f9cd83ce8
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 78aadbba5442d7ec3cdc1beeac6d290a11325861
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338348"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399042"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft 365 中的 microsoft 資訊保護
 
@@ -44,7 +45,7 @@ MIP 功能隨附于 Microsoft 365 規範中，並提供您用來 [瞭解資料](
 |:------|:------------|:--------------------|:-----------------------------|
 |[敏感資訊類型](sensitive-information-type-entity-definitions.md)| 使用內建或自訂正則運算式或函數來識別敏感性資料，以及包含關鍵字、信賴層級及鄰近性的確切證據。| [自訂內建的敏感性資訊類型](customize-a-built-in-sensitive-information-type.md)|
 |[Trainable 分類 (預覽) ](classifier-learn-about.md)| 使用內建的分類器之一為您分類資料，或使用您自己的內容訓練分類器 | [開始使用可訓練分類器（預覽版）](classifier-get-started-with.md) |
-|[資料分類](data-classification-overview.md) | 識別具有敏感度標籤、保留標籤，或已分類為組織中機密資訊類型的專案，以及您的使用者所採取的動作  | [開始使用內容總管](data-classification-content-explorer.md)<br /><br /> [開始使用活動總管](data-classification-activity-explorer.md) |
+|[資料分類](data-classification-overview.md) | 識別具有敏感度標籤、保留標籤，或已分類為組織中機密資訊類型的專案，以及您的使用者所採取的動作  | [開始使用內容總管](data-classification-content-explorer.md)<br /><br /> [開始使用活動瀏覽器](data-classification-activity-explorer.md) |
 
 ## <a name="protect-your-data"></a>保護您的資料
 

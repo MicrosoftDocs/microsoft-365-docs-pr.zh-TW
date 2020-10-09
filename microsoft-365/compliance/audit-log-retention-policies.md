@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 稽核記錄保留原則是 Microsoft 365 中新增的「進階稽核」功能的一部分。 稽核記錄保留原則可讓您指定要在組織中保留稽核記錄的時間長度。
-ms.openlocfilehash: 62d6fa47d19eaa9ae12e84879b5bf19a81afe8ae
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dba14d5a4132bc9c883c531ceeb83a2a8ff3c6cd
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199536"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398724"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理稽核記錄保留原則
 
@@ -82,8 +82,6 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
    6. **優先順序：** 此值會決定組織中稽核記錄保留原則的處理順序。 較高的值表示優先順序較高。 例如，優先順序值為 **5** 的原則會優先於優先順序值為 **0** 的原則。 如先前所述，任何自訂稽核記錄保留原則的優先順序都會高於組織的預設原則。
 
 4. 按一下 [儲存]**** 建立新的稽核記錄保留原則。
-
-新的稽核保留原則會列在 [稽核保留原則 **]** 索引標籤上。
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>在 PowerShell 中建立稽核記錄保留原則
 
