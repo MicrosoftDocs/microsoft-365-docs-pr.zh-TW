@@ -16,12 +16,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: 規定使用者以多重要素驗證 (MFA) 和其他功能安全登入。
-ms.openlocfilehash: f2302a6affa64db221916108003225f835799d5b
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 64b873a243d0ce86ee3700d5150076f88031a483
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357815"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399132"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>保護 Microsoft 365 租用戶的使用者登入
 
@@ -62,7 +62,7 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 |---------|---------|
 |所有的 Microsoft 365 方案（不含 Azure AD Premium P1 或 P2 授權）     |[在 Azure AD 中啟用安全性預設](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設包含了適用於使用者和系統管理員的 MFA。   |
 |Microsoft 365 E3 （含 Azure AD Premium P1 授權）     | 使用[常見的條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則： <br>- [要求系統管理員使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求所有使用者使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 （含 Azure AD Premium P2 授權）     | 利用 Azure AD Identity Protection，藉由建立下列兩種原則來開始實作 Microsoft [建議的一組條件式存取和相關原則](../enterprise/identity-access-policies.md)：<br> - [登入風險為中或高時，需要 MFA](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [高風險使用者必須變更密碼](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 （含 Azure AD Premium P2 授權）     | 利用 Azure AD Identity Protection，藉由建立下列兩種原則來開始實作 Microsoft [建議的一組條件式存取和相關原則](../security/office-365-security/identity-access-policies.md)：<br> - [登入風險為中或高時，需要 MFA](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [高風險使用者必須變更密碼](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ### <a name="security-defaults"></a>安全性預設
@@ -122,7 +122,7 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 
 這些層級及其對應的設定，可針對所有資料、身分識別和裝置，提供一致的保護層級。
 
-Microsoft 強烈建議您在組織設定並推出身分識別和裝置存取原則，包括 Microsoft Teams、Exchange Online 和 SharePoint 專有的設定。 如需詳細資訊，請參閱[身分識別與裝置存取設定](microsoft-365-policies-configurations.md)。
+Microsoft 強烈建議您在組織設定並推出身分識別和裝置存取原則，包括 Microsoft Teams、Exchange Online 和 SharePoint 專有的設定。 如需詳細資訊，請參閱[身分識別與裝置存取設定](../security/office-365-security/microsoft-365-policies-configurations.md)。
 
 ## <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
@@ -147,7 +147,7 @@ Microsoft 強烈建議您在組織設定並推出身分識別和裝置存取原�
 - [Microsoft 365 的身分識別藍圖](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD 訓練影片](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [設定 Azure Multi-Factor Authentication 註冊原則](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [身分識別與裝置存取設定](microsoft-365-policies-configurations.md)
+- [身分識別與裝置存取設定](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>下一步
 

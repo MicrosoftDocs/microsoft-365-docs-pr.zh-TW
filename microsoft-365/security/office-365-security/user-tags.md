@@ -15,18 +15,23 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Office 365 ATP 方案2中識別具有使用者標記的特定使用者群組。 標記篩選可用於 Office 365 ATP 中的提醒、報告和調查，以快速識別已標記的使用者。
-ms.openlocfilehash: 9522499b3861f0f0e44fcbf09896a5c93feed95d
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337250"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399382"
 ---
 # <a name="user-tags-in-office-365-atp"></a>Office 365 ATP 中的使用者標記
 
-使用者標記是 [Office 365 Advanced 威脅防護 (ATP) ](office-365-atp.md)中的特定使用者群組識別碼。 [優先順序帳戶](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 是一種使用者標記。 如果您的組織有 Office 365 ATP 方案 2 (包含在您的訂閱中，或作為附加元件) ，除了使用 [優先順序帳戶] 標記之外，您還可以建立自訂使用者標記。
+使用者標記是 [Office 365 Advanced 威脅防護 (ATP) ](office-365-atp.md)中的特定使用者群組識別碼。 使用者標記有兩種類型：
 
-在您對特定使用者套用標記之後，您可以使用這些標記做為警示、報告和調查中的篩選器：
+- **系統標記**：目前， [優先順序帳戶](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 是唯一的系統標記類型。
+- **自訂標記**：您可以自行建立這些使用者標記。
+
+如果您的組織有 Office 365 ATP 方案 2 (包含在您的訂閱中，或作為附加元件) ，除了使用 [優先順序帳戶] 標記之外，您還可以建立自訂使用者標記。
+
+在您將系統標記或自訂標記套用至使用者後，您可以使用這些標記做為預警、報告和調查中的篩選器：
 
 - [安全性 & 規範中心的警示](alerts.md)
 - [威脅瀏覽器和即時偵測](threat-explorer.md)
@@ -39,9 +44,11 @@ ms.locfileid: "48337250"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **使用者標記** ] 頁面，請開啟] <https://protection.office.com/userTags> 。
 
-- 若要建立、修改或移除使用者標記，您必須是 Security & 合規性中心內「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+- 若要建立、修改或移除 **自訂使用者標記**，您必須是 Security & 合規性中心內「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-- 您也可以在 Microsoft 365 admin center 中管理及監視優先順序帳戶。 如需相關指示，請參閱 [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。
+- 若要 (系統磁碟區標) 設定優先順序帳戶，您必須是 [全域系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 或 [Exchange 系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)。
+
+  您也可以在 Microsoft 365 admin center 中管理及監視優先順序帳戶。 如需相關指示，請參閱 [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>使用安全中心建立使用者標記
 

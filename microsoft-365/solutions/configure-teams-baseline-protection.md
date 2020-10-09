@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用基準層級的保護來部署小組。
-ms.openlocfilehash: 4a1843b687155cefd48bf3800be68c3e01abd7f5
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527857"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398862"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>為小組設定基準保護
 
@@ -31,7 +31,7 @@ ms.locfileid: "46527857"
 
 ## <a name="initial-protections"></a>初始保護
 
-我們所建議的第一個步驟是設定基本身分識別和裝置存取原則。 如需詳細資訊，請參閱[用來保護 Teams 聊天、群組和檔案的原則建議](https://docs.microsoft.com/microsoft-365/enterprise/teams-access-policies)。
+我們所建議的第一個步驟是設定基本身分識別和裝置存取原則。 如需詳細資訊，請參閱[用來保護 Teams 聊天、群組和檔案的原則建議](../security/office-365-security/teams-access-policies.md)。
 
 我們也建議您開啟基本的進階威脅防護功能，以防範文件、附件和連結中的惡意程式碼。 建議您開啟下表中的每個選項。
 

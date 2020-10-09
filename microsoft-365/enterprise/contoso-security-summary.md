@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用整個 Microsoft 365 for enterprise 的安全性功能。
-ms.openlocfilehash: 2244f13f8e8f56edbadd40d1e85cb309d70f7744
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fbbf8dfc1de831c2ef949b71f1cbdf4e97a02baa
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686437"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399474"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 之 Microsoft 365 for enterprise security 的摘要
 
@@ -73,7 +73,7 @@ Contoso 使用下列步驟來準備好其安全性，以供其 Microsoft 365 for
 
 - 使用條件式存取原則獲得更安全的裝置和應用程式存取
 
-  Contoso 針對身分識別、裝置、Exchange Online 和 SharePoint 使用[條件式存取原則](microsoft-365-policies-configurations.md)。身分識別條件式存取原則包含針對高風險使用者要求密碼變更，並且阻止用戶端使用未支援新式驗證的應用程式。裝置存取原則包含已核准應用程式的定義，會要求相容的電腦和行動裝置。Exchange Online 條件式存取原則包含封鎖 ActiveSync 用戶端並設定 Office 365 訊息加密。SharePoint 條件式存取原則包含機密和高管制網站的額外保護。
+  Contoso 針對身分識別、裝置、Exchange Online 和 SharePoint 使用[條件式存取原則](../security/office-365-security/microsoft-365-policies-configurations.md)。身分識別條件式存取原則包含針對高風險使用者要求密碼變更，並且阻止用戶端使用未支援新式驗證的應用程式。裝置存取原則包含已核准應用程式的定義，會要求相容的電腦和行動裝置。Exchange Online 條件式存取原則包含封鎖 ActiveSync 用戶端並設定 Office 365 訊息加密。SharePoint 條件式存取原則包含機密和高管制網站的額外保護。
 
 - Windows Hello 企業版
 

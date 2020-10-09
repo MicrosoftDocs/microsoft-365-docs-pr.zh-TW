@@ -19,12 +19,12 @@ ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 ms.custom:
 - seo-marvel-apr2020
 description: 本主題將針對影響 Microsoft 365 環境安全性的全租使用者設定，引導您進行建議的設定。
-ms.openlocfilehash: 9e36c85b74a237a8b14904839aad55ac676dcaf4
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 3ef4fb00ca1e4a3e61cf0176308024b54baa287d
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326922"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399418"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>設定您的 Microsoft 365 租使用者以提高安全性
 
@@ -47,8 +47,8 @@ Microsoft 365 安全性中心包含的功能能夠保護您的環境。 同時�
 |---|---|---|
 |**防網路釣魚**|是|如果您有自訂網域，請設定預設的反網路釣魚原則，以保護您最有價值之使用者的電子郵件帳戶，例如 CEO，並保護您的網域。 [在 office 365 中查看反網路釣魚原則](set-up-anti-phishing-policies.md)，並參閱[設定 EOP 中的反網路釣魚原則](configure-anti-phishing-policies-eop.md)，或[設定 Office 365 中的 ATP 反網路釣魚原則](configure-atp-anti-phishing-policies.md)。|
 |**反惡意程式碼引擎**|是| 編輯預設原則： <br/> &ensp;&ensp;* 常見附件類型篩選—選取 [開啟] <br/><br/> 您也可以建立自訂的惡意程式碼篩選原則，並將其套用至貴組織中的指定使用者、群組或網域。 <br/><br/> 詳細資訊： <br/> &ensp;&ensp;* [反惡意程式碼保護](anti-malware-protection.md) <br/> &ensp;&ensp;* [設定反惡意程式碼原則](configure-anti-malware-policies.md)|
-|**Office 365 ATP 中的安全附件**|否|在 [安全附件] 的主要頁面上，按一下 [ **通用設定** ]，然後開啟此設定： <br/> &ensp;&ensp;**為 SharePoint、OneDrive 和 Microsoft 團隊開啟 ATP** <br/><br/> 使用下列設定來建立安全附件原則： <br/> &ensp;&ensp;* **封鎖**：選取 [ **封鎖** ] 作為未知的惡意程式碼回應。 <br/> &ensp;&ensp;* **啟用重新導向**：請選取此方塊並輸入電子郵件地址，例如系統管理員或隔離帳戶。 <br/> &ensp;&ensp;* **若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍**：請選取此方塊。 <br/> &ensp;&ensp;* **適用**于： **收件者網域是** \> 選取您的網域。 <br/><br/> 詳細資訊： [SharePoint、OneDrive 和 Microsoft 小組的 ATP](atp-for-spo-odb-and-teams.md) ，以及 [設定安全附件原則](set-up-atp-safe-attachments-policies.md)|
-|**Office 365 ATP 中的安全連結**|是|在 [安全連結] 的主要頁面上，按一下 [ **通用設定**]。 <br/> &ensp;&ensp;* **使用下列專案中的安全連結： Office 365 應用程式**：確認已開啟此設定。 <br/> &ensp;&ensp;* **當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者按一下。<br/><br/>使用下列設定建立安全連結原則： <br/> &ensp;&ensp;* **在郵件中選取未知可能惡意 URLs 的動作**：確認此設定為 **開啟**。 <br/> &ensp;&ensp;* **選取 Microsoft 小組中未知或可能惡意的 URLs 的動作**：確認此設定已 **開啟**。 <br/> &ensp;&ensp;* **對指向檔案的可疑連結和連結套用即時 URL 掃描**：請選取此方塊。 <br/> &ensp;&ensp;&ensp;&ensp;* **等候 URL 掃描完成後，才能傳遞郵件**：請選取此方塊。 <br/> &ensp;&ensp;* 套用**安全連結至組織內傳送的電子郵件**：複選此方塊。 <br/> &ensp;&ensp;* **不允許使用者依序按一下原始 URL**：請選取此方塊。 <br/> &ensp;&ensp;* **適用**于： **收件者網域是** \> 選取您的網域。 <br/><br/> 詳細資訊： [設定安全連結原則](set-up-atp-safe-links-policies.md)。|
+|**Office 365 ATP 安全附件**|否|在 [安全附件] 的主要頁面上，按一下 [ **通用設定** ]，然後開啟此設定： <br/> &ensp;&ensp;**為 SharePoint、OneDrive 和 Microsoft 團隊開啟 ATP** <br/><br/> 使用下列設定來建立安全附件原則： <br/> &ensp;&ensp;* **封鎖**：選取 [ **封鎖** ] 作為未知的惡意程式碼回應。 <br/> &ensp;&ensp;* **啟用重新導向**：請選取此方塊並輸入電子郵件地址，例如系統管理員或隔離帳戶。 <br/> &ensp;&ensp;* **若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍**：請選取此方塊。 <br/> &ensp;&ensp;* **適用**于： **收件者網域是** \> 選取您的網域。 <br/><br/> 詳細資訊： [SharePoint、OneDrive 和 Microsoft 小組的 ATP](atp-for-spo-odb-and-teams.md) ，以及 [設定安全附件原則](set-up-atp-safe-attachments-policies.md)|
+|**Office 365 ATP 安全連結**|是|在 [安全連結] 的主要頁面上，按一下 [ **通用設定**]。 <br/> &ensp;&ensp;* **使用下列專案中的安全連結： Office 365 應用程式**：確認已開啟此設定。 <br/> &ensp;&ensp;* **當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者按一下。<br/><br/>使用下列設定建立安全連結原則： <br/> &ensp;&ensp;* **在郵件中選取未知可能惡意 URLs 的動作**：確認此設定為 **開啟**。 <br/> &ensp;&ensp;* **選取 Microsoft 小組中未知或可能惡意的 URLs 的動作**：確認此設定已 **開啟**。 <br/> &ensp;&ensp;* **對指向檔案的可疑連結和連結套用即時 URL 掃描**：請選取此方塊。 <br/> &ensp;&ensp;&ensp;&ensp;* **等候 URL 掃描完成後，才能傳遞郵件**：請選取此方塊。 <br/> &ensp;&ensp;* 套用**安全連結至組織內傳送的電子郵件**：複選此方塊。 <br/> &ensp;&ensp;* **不允許使用者依序按一下原始 URL**：請選取此方塊。 <br/> &ensp;&ensp;* **適用**于： **收件者網域是** \> 選取您的網域。 <br/><br/> 詳細資訊： [設定安全連結原則](set-up-atp-safe-links-policies.md)。|
 |**反垃圾郵件 (郵件篩選)**|是| 想要處理的情況： <br/> &ensp;&ensp;* 垃圾郵件太多-選擇 [自訂設定]，然後編輯預設垃圾郵件篩選原則。 <br/> &ensp;&ensp;* 欺騙性智慧-查看哄騙您網域的寄件者。 封鎖或允許這些寄件者。 <br/><br/>詳細資訊： [Microsoft 365 電子郵件 Anti-Spam 保護](anti-spam-protection.md)。|
 |***電子郵件驗證***|是|電子郵件驗證使用網域名稱系統 (DNS) 將可驗證的資訊新增到某電子郵件寄件者的電子郵件。 Microsoft 365 會為其預設網域 (onmicrosoft.com) 設定電子郵件驗證，但 Microsoft 365 系統管理員也可以使用自訂網域的電子郵件驗證。 使用的三種驗證方法： <br/><br/> &ensp;&ensp;* 寄件者原則框架 (或 SPF) 。<br/>&ensp;&ensp;&ensp;&ensp;-如需安裝，請參閱 [在 Microsoft 365 中設定 SPF 以協助防止欺騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 <br/> &ensp;&ensp;* DomainKeys 識別的郵件 (DKIM) 。 <br/> &ensp;&ensp;&ensp;&ensp;-請參閱 [USE DKIM 以驗證從您的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)。 <br/>&ensp;&ensp;&ensp;&ensp;- 設定完成 DKIM 後，請在安全性中心中啟用。<br/> &ensp;&ensp;* 以網域為基礎的郵件驗證、報告及符合性 (DMARC) 。 <br/> &ensp;&ensp;&ensp;&ensp;-適用于 DMARC 安裝程式 [使用 DMARC 驗證 Microsoft 365 中的電子郵件](use-dmarc-to-validate-email.md)。|
 |
@@ -146,4 +146,4 @@ SharePoint 系統管理中心與商務用 OneDrive 系統管理中心包含同�
 
 - [適用於政治活動、非營利組織和其他彈性組織的 Microsoft 安全性指南](https://docs.microsoft.com/microsoft-365/security/office-365-security/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o) (您可以在任何環境中使用這些建議，特別是僅使用雲端的環境)
 
-- [適用於身分識別與裝置的建議安全原則與設定](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-365-policies-configurations) (這些建議包括 AD FS 環境說明)
+- [適用於身分識別與裝置的建議安全原則與設定](microsoft-365-policies-configurations.md) (這些建議包括 AD FS 環境說明)

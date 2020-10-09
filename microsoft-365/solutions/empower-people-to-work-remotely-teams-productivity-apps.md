@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 讓您的使用者透過 Teams、Exchange、SharePoint 和其他 Microsoft 365 服務提高生產力。
-ms.openlocfilehash: a001bb748a9b6e0431c75c0a23637fd47e460a6e
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a873c003537b98d10db5fc8a660b9d15ac0bcc23
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377614"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399298"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步驟 5： 部署遠端工作者生產力應用程式和服務
 
@@ -66,7 +66,7 @@ Teams 為應用程式和工作流程提供一個平台，您可以從電腦版�
 
 遠端工作者可以透過 Outlook，在同一個地方使用電子郵件、行事曆、連絡人、工作等等，隨時保持聯繫並井井有條。 Outlook 可以根據與您相關的內容，協助您隨時掌握進度並排列優先順序。 Outlook 可讓您直接從 OneDrive 共用附件、規劃並加入 Teams 會議、查看和共用行事曆，以及為其他人提供委派權限。 了解公司和個人承諾中接下來將要發生的事情，以及需要注意的事情，可以協助遠端工作者將重點放在重要的工作上。 Outlook 可為遠端工作者提供實用的方式來管理其時間，並能輕鬆地找到所需的資訊，包括檔案、組織中的人員等等。 
 
-請參閱 [本文](../enterprise/secure-email-recommended-policies.md) 以了解資料存取原則所建議使用的身分識別和裝置，並保護支援新式驗證和 [限制存取] 的組織的電子郵件和電子郵件用戶。
+請參閱 [本文](../security/office-365-security/secure-email-recommended-policies.md) 以了解資料存取原則所建議使用的身分識別和裝置，並保護支援新式驗證和 [限制存取] 的組織的電子郵件和電子郵件用戶。
 
 ## <a name="store-and-collaborate-on-files-with-sharepoint-and-onedrive"></a>使用 SharePoint 和 OneDrive 儲存和共同處理檔案
 
@@ -79,7 +79,7 @@ Teams 為應用程式和工作流程提供一個平台，您可以從電腦版�
 - [檔案共用](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
 - [Box](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
-若要保護 SharePoint 和 OneDrive，請參閱[此文章](../enterprise/sharepoint-file-access-policies.md)的建議身分識別和裝置存取原則。
+若要保護 SharePoint 和 OneDrive，請參閱[此文章](../security/office-365-security/sharepoint-file-access-policies.md)的建議身分識別和裝置存取原則。
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>使用 Microsoft 365 Apps 建立並共同處理內容
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 瞭解 Contoso 如何使用 Microsoft 365 for enterprise 中的資訊保護功能，在雲端中保護其數位資產。
-ms.openlocfilehash: 67404df9bb2056c226eeb9370190519fc0cc8f3b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1966fdec3de246ca54fd99ab018485b9ee817281
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686019"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399238"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的資訊保護
 
@@ -76,9 +76,9 @@ Contoso 使用下列步驟來準備 Microsoft 365 for enterprise 以滿足其資
 
 搭配其身分識別和行動裝置管理基礎結構，以及作為推出 Exchange Online 和 SharePoint 的一部分，Contoso 設定下列條件式存取原則集合，並且將該集合套用至適當的群組：
 
-- [裝置原則的受控和非受控應用程式存取](identity-access-policies.md)
-- [Exchange Online 存取原則](secure-email-recommended-policies.md)
-- [SharePoint 存取原則](sharepoint-file-access-policies.md)
+- [裝置原則的受控和非受控應用程式存取](../security/office-365-security/identity-access-policies.md)
+- [Exchange Online 存取原則](../security/office-365-security/secure-email-recommended-policies.md)
+- [SharePoint 存取原則](../security/office-365-security/sharepoint-file-access-policies.md)
 
 以下是 Contoso 的資訊保護原則結果集合。
 

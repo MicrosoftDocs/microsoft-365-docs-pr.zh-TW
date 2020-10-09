@@ -17,12 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 8c66ee39d9c7f90142a564c61b13f68e6b4b481e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: de8a2c3d55d887a28500bb82a97e4453861aef46
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197770"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399214"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 
@@ -32,7 +32,7 @@ ms.locfileid: "48197770"
 適用於：****
 - Microsoft 威脅防護
 
-進階搜捕是以 [Kusto 查詢語言](https://docs.microsoft.com/azure/kusto/query/)為基礎。 您可以使用 Kusto 語法和運算子來建立查詢，以在特別為進階搜捕而建構的[結構描述](advanced-hunting-schema-tables.md)中尋找的資訊。 若要深入了解這些概念，請執行您的第一個查詢。
+進階搜捕是以 [Kusto 查詢語言](https://docs.microsoft.com/azure/kusto/query/)為基礎。 您可以使用 Kusto 語法和運算子來建立查詢，以在特定 [架構](advanced-hunting-schema-tables.md)中尋找資訊。 若要深入了解這些概念，請執行您的第一個查詢。
 
 ## <a name="try-your-first-query"></a>嘗試您的第一個查詢
 
@@ -58,24 +58,22 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-這是它在進階搜捕中看起來的樣子。
-
-![Microsoft 威脅防護高級搜尋查詢的影像](../../media/advanced-hunting-query-example-2.png)
+**[在高級搜尋中執行此查詢](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>描述查詢，並指定要搜尋的表格
-已將簡短批註新增至查詢的開頭，以描述其用途。 這可協助您稍後決定要儲存查詢，並與組織中的其他人共用。 
+已將簡短批註新增至查詢的開頭，以描述其用途。 此批註可協助您稍後決定要儲存查詢，並與組織中的其他人共用。 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
 ```
 
-查詢本身通常會以資料表名稱開頭，後面接著管道 (`|`) 開始的一系列元素。 在此範例中，我們會從建立兩個表格的同盟開始，並  `DeviceProcessEvents` `DeviceNetworkEvents` 視需要新增管線元素。
+查詢本身通常會從資料表名稱開始，並以管道 () 開始數個元素 `|` 。 在此範例中，我們會從建立兩個表格的同盟開始，並  `DeviceProcessEvents` `DeviceNetworkEvents` 視需要新增管線元素。
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>設定時間範圍
-第一個輸送的元素是一種範圍設定為前七天的時間篩選器。 盡可能讓時間範圍越小越好，以確保查詢能順利執行、傳回可管理的結果，且不會逾時。
+第一個輸送的元素是一種範圍設定為前七天的時間篩選器。 限制時間範圍可協助確保查詢順利執行、傳回可管理的結果，而且不會超時。
 
 ```kusto
 | where Timestamp > ago(7d)
@@ -105,7 +103,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="customize-result-columns-and-length"></a>自訂結果欄及長度 
-現在您的查詢已清楚識別出您要尋找的資料，您可以新增元素來定義結果。 `project` 會傳回特定的欄，並 `top` 限制結果的數目。 這些運算子可協助確保結果具有適當的格式，且易於處理。
+現在，您的查詢會明確識別您想要尋找的資料，您可以定義結果的外觀。 `project` 會傳回特定的欄，並 `top` 限制結果的數目。 這些運算子可協助確保結果具有適當的格式，且易於處理。
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -113,7 +111,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-按一下 [執行查詢]**** 以查看結果。 選取查詢編輯器右上角的展開圖示，以著重于搜尋查詢和結果。 
+選取 [ **執行查詢** ] 以查看結果。 使用查詢編輯器右上角的展開圖示，以著重于搜尋查詢和結果。 
 
 ![高級搜尋查詢編輯器中的展開控制項影像](../../media/advanced-hunting-expand.png)
 
@@ -122,7 +120,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ## <a name="learn-common-query-operators"></a>瞭解一般查詢運算子
 
-您已執行了第一個查詢，並對其組成元素有一點了解了，現在可以開始追蹤一些基本概念。 進階搜捕所使用的 Kusto 查詢語言支援一系列運算子，包括下列常見運算子。
+您剛剛執行第一個查詢，並大致瞭解其元件。 請稍微進行回溯，並瞭解一些基礎知識。 進階搜捕所使用的 Kusto 查詢語言支援一系列運算子，包括下列常見運算子。
 
 | 運算子 | 描述及用法 |
 |--|--|
@@ -141,26 +139,26 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ## <a name="understand-data-types"></a>瞭解資料類型
 
-進階搜捕資料表中的資料通常會分類為以下資料類型。
+「高級搜尋」支援 Kusto 資料類型，包括下列通用類型：
 
 | 資料類型 | 描述與查詢含意 |
 |--|--|
-| `datetime` | 通常代表事件時間戳記的資料和時間資訊 |
-| `string` | 字元字串 |
-| `bool` | True 或 False |
-| `int` | 32 位元數值  |
-| `long` | 64 位元數值 |
+| `datetime` | 通常代表事件時間戳記的資料和時間資訊。 [請參閱支援的 datetime 格式](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | UTF-8 以單引號括住的字元字串 (`'`) 或雙引號 (`"`) 。 [閱讀更多關於字串的資訊](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | 這種資料類型支援 `true` 或 `false` 狀態。 [請參閱支援的文字及運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `int` | 32位整數  |
+| `long` | 64位整數 |
 
-若要深入瞭解這些資料類型及其含意，請 [閱讀 Kusto 的純量資料型別](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/)。
+若要深入瞭解這些資料類型，請 [參閱 Kusto 純量資料型別](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/)。
 
 ## <a name="get-help-as-you-write-queries"></a>編寫查詢時取得協助
 運用下列功能更快速地編寫查詢：
-- **Autosuggest** --當您撰寫查詢時，高級搜尋會提供 IntelliSense 的建議。 
-- **架構樹** 系-您的工作區域旁會提供包含資料表清單和其欄的架構標記法。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
-- **[架構參考（Schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** ）包含資料表和欄描述的入口網站內參照，以及支援的事件種類 (`ActionType` 值) 和範例查詢
+- **Autosuggest**--當您撰寫查詢時，高級搜尋會提供 IntelliSense 的建議。 
+- **架構樹**系-您的工作區域旁會提供包含資料表清單和其欄的架構標記法。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
+- **[架構參考（Schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**）包含資料表和欄描述的入口網站內參照，以及支援的事件種類 (`ActionType` 值) 和範例查詢
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>在編輯器中使用多個查詢
-查詢編輯器可以做為您用來試驗多個查詢的草稿墊。 若要使用多個查詢：
+您可以使用查詢編輯器來試驗多個查詢。 若要使用多個查詢：
 
 - 以空行分隔每個查詢。
 - 將游標放在查詢的任何部分，以選取該查詢，然後再執行它。 這只會執行選取的查詢。 若要執行另一個查詢，請據以移動游標，然後選取 [ **執行查詢**]。
@@ -174,7 +172,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ![進階搜捕視窗的影像](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->除了基本查詢範例以外，您也可以取得適用於特定威脅搜捕案例的[共用查詢](advanced-hunting-shared-queries.md)。 探索頁面左側或 GitHub 查詢儲存庫的共用查詢。
+>除了基本查詢範例以外，您也可以取得適用於特定威脅搜捕案例的[共用查詢](advanced-hunting-shared-queries.md)。 流覽頁面左側的共用查詢或 [GitHub 查詢存放庫](https://aka.ms/hunting-queries)。
 
 ## <a name="access-query-language-documentation"></a>Access 查詢語言說明文件
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: ''
 description: Microsoft 365 的身分識別藍圖。
-ms.openlocfilehash: 82c2adc753a3446b9ca4f070d8655f526465de55
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 4daf673a35505652bdb8105f304dde8166512660
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357827"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398768"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的身分識別藍圖
 
@@ -60,10 +60,10 @@ ms.locfileid: "48357827"
 
 ### <a name="identity-and-device-access-recommendations"></a>身分識別與裝置存取建議
 
-為了協助確保安全且有效的工作力，Microsoft 會為身分 [識別與裝置存取](microsoft-365-policies-configurations.md)提供一組建議。 若為身分識別，請使用下列文章中的建議與設定：
+為了協助確保安全且有效的工作力，Microsoft 會為身分 [識別與裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md)提供一組建議。 若為身分識別，請使用下列文章中的建議與設定：
 
-- [必要條件](identity-access-prerequisites.md)
-- [一般身分識別與裝置存取原則](identity-access-policies.md)
+- [必要條件](../security/office-365-security/identity-access-prerequisites.md)
+- [一般身分識別與裝置存取原則](../security/office-365-security/identity-access-policies.md)
 
 ## <a name="manage"></a>管理
 

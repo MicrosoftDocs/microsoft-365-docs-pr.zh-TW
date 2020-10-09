@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: c6e973e05f9a73736410c9bfedfa2ef73bb583ce
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 5183e6f60d825ff523db4da165d16752b3aa3cc8
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377398"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399346"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 設定威脅防護功能
 
@@ -40,13 +40,13 @@ Microsoft 已測試並建議一組特定的條件式存取和相關原則，以�
 
 ![部署基準保護的程式](../media/solutions-architecture-center/deploy-threat-protection-identity-access-steps.png) 
 
-1. [設定必要條件，包含 Azure Identity Protection](../enterprise/identity-access-prerequisites.md)。
-2. [設定一般身分識別和裝置存取原則](../enterprise/identity-access-policies.md) ，以進行基準保護。
-3. 設定 [來賓使用者](../enterprise/identity-access-policies-guest-access.md)、 [Microsoft 團隊](../enterprise/teams-access-policies.md)、 [Exchange online](../enterprise/secure-email-recommended-policies.md)和 [SharePoint 線上及 OneDrive](../enterprise/sharepoint-file-access-policies.md)的原則。
+1. [設定必要條件，包含 Azure Identity Protection](../security/office-365-security/identity-access-prerequisites.md)。
+2. [設定一般身分識別和裝置存取原則](../security/office-365-security/identity-access-policies.md) ，以進行基準保護。
+3. 設定 [來賓使用者](../security/office-365-security/identity-access-policies-guest-access.md)、 [Microsoft 團隊](../security/office-365-security/teams-access-policies.md)、 [Exchange online](../security/office-365-security/secure-email-recommended-policies.md)和 [SharePoint 線上及 OneDrive](../security/office-365-security/sharepoint-file-access-policies.md)的原則。
 
 ### <a name="more-information-about-protecting-identities"></a>保護身分識別的詳細資訊
 
-- [身分識別與裝置存取設定](../enterprise/microsoft-365-policies-configurations.md)
+- [身分識別與裝置存取設定](../security/office-365-security/microsoft-365-policies-configurations.md)
 - [Azure MFA 的安全性指導方針](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-azure-advanced-threat-protection"></a>步驟2：設定 Azure 高級威脅防護

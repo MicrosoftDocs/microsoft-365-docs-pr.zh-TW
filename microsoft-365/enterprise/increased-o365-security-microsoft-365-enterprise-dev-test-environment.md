@@ -14,12 +14,12 @@ ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南來啟用 Microsoft 365 for enterprise 測試環境中的其他 Microsoft 365 安全性設定。
-ms.openlocfilehash: 06273bda00635a65ed9821b2bac23c3a3ee1366a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 09a613261bc173cd71e9cc2dd58a32a9547ece21
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686799"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48398946"
 ---
 # <a name="increased-microsoft-365-security-for-your-microsoft-365-for-enterprise-test-environment"></a>提高您的 Microsoft 365 for enterprise 測試環境的 Microsoft 365 安全性
 
@@ -47,7 +47,7 @@ ms.locfileid: "46686799"
 
 ### <a name="configure-sharepoint-online-to-block-apps-that-dont-support-modern-authentication"></a>設定線上 SharePoint 封鎖不支援新式驗證的應用程式
 
-不支援新式驗證的應用程式不能有套用身分 [識別和裝置存取](microsoft-365-policies-configurations.md) 設定，這是保護您的 Microsoft 365 訂閱及其數位資產的重要元素。 
+不支援新式驗證的應用程式不能有套用身分 [識別和裝置存取](../security/office-365-security/microsoft-365-policies-configurations.md) 設定，這是保護您的 Microsoft 365 訂閱及其數位資產的重要元素。 
 
 1. 移至 Microsoft 365 系統管理中心 ([https://portal.microsoft.com](https://portal.microsoft.com)) 並以全域系統管理員帳戶登入您的 microsoft 365 測試實驗室訂閱。
     
