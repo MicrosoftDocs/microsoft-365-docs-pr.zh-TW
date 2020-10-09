@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以非常有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: f9c8ff4287f0970f8571d3ced7d612515b03c08e
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 40e405a8ab3ac2159b9a3c5ab8f633bb690d5c24
+ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198490"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48384558"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -259,9 +259,7 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>具有特定包含或排除的原則
 
-您也可以將保留原則套用至特定使用者、特定 Microsoft 365 群組或特定網站。 若要這麼做，請確保該位置的 **[狀態]** 為** [開啟]**，然後使用連結來包含或排除特定使用者、Microsoft 365 群組或網站。
-
-不過，使用此設定時，如果您的保留原則包含或排除超過 1,000 個特定物件，則會有一些限制：
+只有當您使用選用設定將保留設定限定為特定使用者、特定 Microsoft 365 群組或特定網站時，需要主要以下限制： 
 
 - 保留原則的數目上限：
   - 1000 個信箱
@@ -269,9 +267,11 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
   - 1000 個 Teams 私人聊天使用者
   - 100 個網站 (OneDrive 或 SharePoint)
 
-針對一個租用戶支援的原則數目上限：10,000 個。 這些項目包括保留原則、保留標籤原則，以及自動套用保留原則。
+針對一個租用戶支援的原則也有數目上限：10,000 個。 這些項目包括保留原則、保留標籤原則，以及自動套用保留原則。
 
-如果您的保留原則可能受限於這些限制，請選擇適用於整個位置的設定選項。
+如果您的保留原則可能受這些限制制約，請使用適用於整個位置的預設設定，因為這些原則沒有任何限制。
+
+若要使用選用設定限定保留設定範圍，請確保該位置的 **[狀態]** 為** [開啟]**，然後使用連結來包含或排除特定使用者、Microsoft 365 群組或網站。
 
 > [!WARNING]
 > 如果您設定 [包含] 然後移除最後一個，則設定會還原為該位置的 **[全部]**。  儲存原則前，請確定這是您想要的設定。

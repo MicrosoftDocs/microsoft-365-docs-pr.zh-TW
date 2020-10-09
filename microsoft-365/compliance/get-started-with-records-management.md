@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要適用于 Microsoft 365 的記錄管理解決方案，以管理法律、企業或法規責任的高價值內容，但不確定要從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: fd3e3368b7a23cb31a8df4953268576de2419f89
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: b7fc33e8a58857d839598cc74cdddc5247fd4a0d
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333849"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390160"
 ---
 # <a name="get-started-with-records-management"></a>開始使用記錄管理
 
@@ -85,6 +85,6 @@ ms.locfileid: "48333849"
 
 記錄管理的保留標籤會在 Microsoft 365 應用程式中顯示為 UI。 在您將保留標籤部署到生產網路前，請務必為使用者和您的技術支援部門提供指導方針。
 
-最有效的使用者文件會是您為所選的保留標籤名稱和組態提供的自訂指導方針和指示。 不過，您可以使用下列資訊來取得基本指示：
+最有效的使用者文件會是您為所選的保留標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 保留標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861) (英文)。
 
-- [手動套用保留標籤](create-apply-retention-labels.md#manually-apply-retention-labels)
+您也會在以下章節中找到基本的使用者指示：[手動套用保留標籤](create-apply-retention-labels.md#manually-apply-retention-labels)。
