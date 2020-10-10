@@ -11,19 +11,19 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: acdca0a70fb28b10f053da8f79b4e37c9c7632f5
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 4bfda869972c5650a99395a5fd16c6ad7ddb4f11
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529920"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409021"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 管理的桌面封存裝置
 
 為保證最佳的使用者體驗，Microsoft 受管理的桌面機在特定點對裝置的淘汰支援。 本主題列出未來幾年中臨近退休的裝置，我們稱為「封存」。 如果您是使用已有的裝置開始使用 Microsoft 受管理的桌面，您應該仔細檢查此清單。
 
 >[!IMPORTANT]
->您現在仍然可以註冊這些裝置，但是使用 Microsoft 受管理的電腦時，其服務週期會比較短。 如果您要購買新的裝置，則應該從使用中[裝置清單](./device-list.md)中使用模型。
+>您現在仍然可以註冊這些裝置，但是使用 Microsoft 受管理的電腦時，其服務週期會比較短。 如果您要購買新的裝置，則應該從使用中 [裝置清單](./device-list.md)中使用模型。
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
@@ -42,13 +42,17 @@ ms.locfileid: "46529920"
 | Dell Latitude 5490| 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | **2023年1月9日** |
 | Dell Latitude 7390 7390 2-1/7490 | 256 GB/Intel i5/8 GB RAM   | 需要 IR 相機 | **2023年1月9日** |
 |HP EliteBook 830/840/850 G5| 128 GB/Intel i5/8 GB RAM | 需要5VS01AV、紅外線相機或指紋感應器的 SKU  | **2023年2月15日** |
+|HP EliteBook 830/840/850 G6| 128 GB/Intel i5/8 GB RAM | 需要5VS01AV、紅外線相機或指紋感應器的 SKU  | **2023年11月30日** |
 |HP 精英 x2 1013 G3| 256 GB/Intel i5/8 GB RAM | SKU 與5VS03AV，需要 IR 相機 |**2023年5月14日** |
-|HP EliteBook x360 1030 G3| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 |**2023年5月14日** |
+|HP EliteBook x360 1030 G5| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 |**2023年5月14日** |
+|HP EliteBook x360 1030 G6| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 |**2023年11月30日** |
 |HP EliteBook x360 1040 G5| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 | **2023年10月23日** |
+|HP EliteBook x360 1040 G6| 256 GB/Intel i5/8 GB RAM | SKU 與5VS01AV，需要 IR 相機 | **2023年11月30日** |
 |HP ProBook x360 440 G1| 128 GB/Intel i3/8 GB RAM | 需要5VS04AV、紅外線相機或指紋辨識器的 SKU | **2023年6月6日** |
 |HP EliteDesk 800 G4 DM | 128 GB/Intel i3/8 GB RAM | 具有5VS04AV 的 SKU | **2023年7月18日** |
 |HP EliteDesk 800 G4 SFF | 128 GB/Intel i3/8 GB RAM | 具有5VS04AV 的 SKU | **2023年7月18日** |
 |AIO 中的 HP EliteOne 800 G4 23。8 |128 GB/Intel i3/8 GB RAM |具有5VS04AV 的 SKU| **2023年7月18日** |
+|HP ZBook 14u/15u G6 移動工作站 |256 GB/Intel i5/8 GB RAM |SKU 與5VS04AV，需要 IR 相機| **2023年11月30日** |
 |Surface Book 2| 256 GB/Intel i5/8 GB RAM | 無 | **2022年11月16日** |
 |移至表面| 128 GB/Intel 4415Y/8GB RAM | 無 | **2023年8月2日** |
 |Surface 膝上型電腦| 256 GB/Intel i5/8 GB RAM | 無 | **2022年5月20日** |
@@ -59,12 +63,12 @@ ms.locfileid: "46529920"
 
 - 使用 Microsoft 受管理的電腦核准的影像。 當您定購裝置時，請確定您指定的是與 Microsoft 受管理的電腦搭配使用。
 - 尚未完成 Windows 第一次執行體驗。
-- 使用[Device Registration](https://aka.ms/mmddrhelp)功能向 Microsoft Managed Desktop 註冊
+- 使用 [Device Registration](https://aka.ms/mmddrhelp) 功能向 Microsoft Managed Desktop 註冊
 
 #### <a name="additional-help"></a>其他協助
 
 這些資源可協助您回答可能有關特定裝置的問題：
 
-- 如需 Dell 裝置的相關問題，請與[MMD_at_dell@dell.com](mailto:MMD_at_dell@dell.com)聯繫。
+- 如需 Dell 裝置的相關問題，請與 [MMD_at_dell@dell.com](mailto:MMD_at_dell@dell.com)聯繫。
 
-- 如需 HP 裝置的相關問題，請與我們聯繫：美洲（[mmd-americas@hp.com](mailto:mmd-americas@hp.com)）;歐洲/中東/非洲（[mmd-emea@hp.com](mailto:mmd-emea@hp.com)）;亞太地區/日本（[mmd-apj@hp.com](mailto:mmd-apj@hp.com)）;Global （[mmd@hp.com](mailto:mmd@hp.com)）
+- 如需 HP 裝置的相關問題，請與我們聯繫：美洲 ([mmd-americas@hp.com](mailto:mmd-americas@hp.com)) ;歐洲/中東東部/非洲 ([mmd-emea@hp.com](mailto:mmd-emea@hp.com)) ;亞太地區/日本 ([mmd-apj@hp.com](mailto:mmd-apj@hp.com)) ;全域 ([mmd@hp.com](mailto:mmd@hp.com)) 

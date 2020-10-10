@@ -16,16 +16,17 @@ search.appverid:
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Office 365 Advanced 威脅防護 (ATP) 中的安全附件功能。
-ms.openlocfilehash: c3dd64ce6f1d50cf30dfcc33f17021904791912c
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 634302c6e648dbad6e41026e374b382c25f3d34b
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337202"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48411683"
 ---
-# <a name="safe-attachments-in-office-365-atp"></a>Office 365 ATP 中的安全附件
+# <a name="safe-attachments-in-office-365-atp"></a>Office 365 ATP 安全附件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -52,7 +53,7 @@ Office 365 中的安全附件「 [高級威脅防護」 (ATP) ](office-365-atp.m
 >
 > - [SharePoint、OneDrive 和 Microsoft 小組的 ATP](atp-for-spo-odb-and-teams.md)。
 >
-> - [Microsoft 365 E5 中的安全檔](safe-docs.md)
+> - [Microsoft 365 E5 中的安全文件](safe-docs.md)
 
 ## <a name="safe-attachments-policy-settings"></a>安全附件原則設定
 

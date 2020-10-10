@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f22a046dc5289405aaf59086ed535016cc46bae9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 916f86cf9536101bdbb2650bf7381682203d343f
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197664"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412427"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>了解進階搜捕結構描述
 
@@ -75,7 +77,7 @@ ms.locfileid: "48197664"
 | **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 電子郵件事件，包括電子郵件傳遞和封鎖事件 |
 | **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Microsoft 365 將電子郵件傳遞至收件者信箱之後，進行傳遞後的安全性事件 |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | 有關電子郵件 URLs 的資訊 |
-| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 與執行 Active Directory (AD) 的內部部署網域控制站相關的事件。 此表格涵蓋 identity 相關事件的範圍，以及網域控制站上的系統事件。 |
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | 與執行 Active Directory (AD) 的內部部署網域控制站相關的事件。 此資料表涵蓋一系列身分識別相關事件，以及網域控制器上的系統事件。 |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | 各來源的帳戶資訊，包括 Azure Active Directory |
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Active Directory 和 Microsoft online services 上的驗證事件 |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | 對 Active Directory 物件（例如使用者、群組、裝置和網域）執行的查詢活動 |

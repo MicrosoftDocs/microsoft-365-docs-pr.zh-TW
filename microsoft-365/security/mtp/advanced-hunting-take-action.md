@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 14785e032d6e4a7a0868308f4029df623456af2a
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3d2df325198c420cb2444a74b6c3507657355012
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197890"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412091"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>對高級搜尋查詢結果採取動作
 

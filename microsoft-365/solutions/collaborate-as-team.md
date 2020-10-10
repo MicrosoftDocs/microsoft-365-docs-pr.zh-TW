@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解設定小組以與小組中的客人共同作業所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: e92397c7b8d4a4192fb36a52a76679269be53b3b
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 7a2259358d6976184d393980b2b7c0320c3bb171
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357791"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409045"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在小組中與來賓共同作業
 
@@ -37,7 +37,7 @@ ms.locfileid: "48357791"
 
 ## <a name="azure-organizational-relationships-settings"></a>Azure 組織關聯性設定
 
-Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯設定](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)受到最高層級的制約。 如果 Azure AD 中已停用來賓共用或已限制來賓共用，這會覆寫您在 Microsoft 365 中設定的任何共用設定。
+Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯設定](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)受到最高層級的制約。 如果 Azure AD 中已停用或限制來賓共用，此設定會覆寫您在 Microsoft 365 中設定的任何共用設定。
 
 檢查 [組織關聯] 設定，以確保未封鎖與來賓共用。
 
@@ -45,10 +45,10 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 
 設定組織關聯設定
 
-1. 登入 Microsoft Azure，網址為 [https://portal.azure.com](https://portal.azure.com) 。
-2. 在左側導覽中，按一下 [ **Azure Active Directory**]。
-3. 在 [概觀]**** 窗格中，點選 [外部身分識別]****。
-4. 在 [ **組織** 識別] 窗格中，按一下 [ **外部協同] 設定**。
+1. 登入 Azure Active Directory at [https://aad.portal.azure.com](https://aad.portal.azure.com) 。
+2. 在左功能窗格中，按一下 [ **Azure Active Directory**]。
+3. 按一下 [ **外部**身分識別]。
+4. 在 [ **快速入門** ] 畫面上，按一下左功能窗格中的 [ **外部協同作業設定**]。
 5. 確定 **guest 和 guest inviter role 中的系統管理員和使用者都可以邀請** 和 **成員可以邀請** 皆設定為 **[是]**。
 6. 如果您做了任何變更，請按一下 [儲存]****。
 
@@ -67,14 +67,14 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 設定 Teams 來賓存取設定
 
 1. 登入 [https://admin.microsoft.com](https://admin.microsoft.com) 的 Microsoft 365 系統管理中心。
-2. 在左側導覽窗格中，按一下 [顯示全部]****。
+2. 在左功能窗格中，按一下 [ **全部顯示**]。
 3. 在 [系統管理中心]**** 底下，按一下 [Teams]****。
-4. 在 Teams 系統管理中心的左側導覽中展開 [全組織設定]****，然後按一下 [來賓存取]****。
+4. 在團隊系統管理中心的左功能窗格中，展開 [ **整個組織的設定** ]，然後按一下 [ **來賓存取**]。
 5. 確定 [在 Teams 中允許來賓存取]**** 已設定為 [開啟]****。
 6. 對其他來賓設定進行所需的變更，然後按一下 [儲存]****。
 
 > [!NOTE]
-> Teams 來賓設定在開啟後，最慢可能需要 24 小時才會生效。
+> 「小組訪客」設定在開啟後，可能需要長達24小時的時間才會變成作用中。
 
 ## <a name="microsoft-365-groups-guest-settings"></a>Microsoft 365 群組來賓設定
 
@@ -84,10 +84,10 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 
 設定 Microsoft 365 群組來賓設定
 
-1. 在 Microsoft 365 系統管理中心的左側流覽窗格中，展開 [ **設定**]。
+1. 在 Microsoft 365 系統管理中心的左功能窗格中，展開 [ **設定**]。
 2. 按一下 [ **組織設定**]。
 3. 在清單中，按一下 [ **Microsoft 365 群組**]。
-4. 確定 [ **讓組織外部的成員存取群組內容** ] 和 [ **允許群組擁有者將組織外部人員新增至群組** ] 核取方塊皆已勾選。
+4. 確定 **允許群組擁有者將組織外部的人員新增至 Microsoft 365 群組做為來賓** ，並 **讓 [允許來賓群組成員存取群組內容** ] 核取方塊皆已勾選。
 5. 如果您進行變更，請按一下 [ **儲存變更**]。
 
 
@@ -102,21 +102,21 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 ![SharePoint 組織層級共用設定的螢幕擷取畫面](../media/sharepoint-organization-external-sharing-controls.png)
 
 
-設定 SharePoint 組織層級共用設定
+設定 SharePoint 組織層級的共用設定
 
-1. 在 Microsoft 365 系統管理中心的左側導覽中，按一下 [系統 **管理中心**] 底下的 [ **SharePoint**]。
-2. 在 SharePoint 系統管理中心的左側流覽窗格中，展開 [ **原則** ]，然後按一下 [ **共用**]。
+1. 在 Microsoft 365 系統管理中心的左功能窗格中，按一下 [系統 **管理中心**] 底下的 [ **SharePoint**]。
+2. 在 [SharePoint 系統管理中心] 的左功能窗格中，展開 [ **原則** ]，然後按一下 [ **共用**]。
 3. 確定 SharePoint 的外部共用已設定為 **任何人** 或 **新的和現有的客人**。
 4. 如果您做了任何變更，請按一下 [儲存]****。
 
 
 ## <a name="sharepoint-organization-level-default-link-settings"></a>SharePoint 組織層級的預設連結設定
 
-預設的檔案和資料夾連結設定會決定使用者在共用檔案或資料夾時，預設會向使用者顯示的連結選項。 如有需要，使用者可以在共用之前將連結類型變更為其他選項之一。
+預設的檔案和資料夾連結設定會決定在使用者共用檔案或資料夾時，預設會向使用者顯示的連結選項。 如有需要，使用者可以在共用之前將連結類型變更為其他選項之一。
 
 請記住，此設定會影響組織中的所有小組和 SharePoint 網站。
 
-選擇當使用者共用檔案和資料夾時，預設會選取的連結類型：
+選擇下列任一連結類型：使用者共用檔案和資料夾時預設會選取下列其中一種連結類型：
 
 - **任何具有連結的使用者** -如果您想要對檔案和資料夾進行許多未驗證的共用，請選擇此選項。 如果您想要允許 *任何人* 的連結，但擔心意外的共用驗證，請將其中一個其他選項視為預設值。 只有在您已啟用 **任何** 共用時，才可使用此連結類型。
 - **僅限貴組織中的人員** -如果您預期大多數的檔案和資料夾共用與組織內的人員有關，請選擇此選項。
@@ -145,7 +145,7 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 
 我們稍後會邀請使用者。 接下來，請務必檢查與小組相關聯之 SharePoint 網站的網站層級共用設定。
 
-## <a name="sharepoint-site-level-sharing-settings"></a>網站層級共用設定 SharePoint
+## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 網站層級共用設定
 
 檢查網站層級的共用設定，確定其允許此小組的訪問類型。 例如，如果您將組織層級設定設定為 [ **任何人**]，但您希望所有來賓都對此小組進行驗證，請確定網站層級共用設定已設定為 [ **新增] 和 [現有來賓**]。
 
@@ -153,9 +153,9 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 
 
 設定網站層級共用設定
-1. 在 SharePoint 管理中心中，在左側導覽窗格中展開 [網站]****，然後按一下 [使用中網站]****。
+1. 在 SharePoint 系統管理中心的左功能窗格中，展開 [ **網站** ]，然後按一下 [作用中的 **網站**]。
 2. 為您剛建立的小組選取網站。
-3. 在功能區中，按一下 [共用]****。
+3. 點擊。。。，然後選擇 [ **共用**]。
 4. 確定 [共用] 設定為 [ **任何人** ] 或 [ **現有來賓**]。
 5. 如果您做了任何變更，請按一下 [儲存]****。
 
@@ -170,12 +170,12 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 
 邀請客人加入小組
 1. 在團隊中，按一下 [ **更多選項** ] (**\*\*\***) ]，然後按一下 [ **新增成員**]。
-2. 輸入您要邀請之來賓的電子郵件地址。
+2. 輸入您要邀請之客人的電子郵件地址。
 3. 按一下 [ **編輯來賓資訊**]。
 4. 輸入來賓的完整名稱，然後按一下核取記號。
 5. Click **Add**, and then click **Close**.
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [與未驗證使用者共用檔案和資料夾的最佳做法](best-practices-anonymous-sharing.md)
 

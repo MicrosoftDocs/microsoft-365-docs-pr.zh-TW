@@ -15,14 +15,16 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e3388bd0d3a7ac6afff0109eb80945d3ddc362fd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a0fb30915cac875e1e5278ecec2b3a1c65685f37
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198894"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412523"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>建立及管理自訂的偵測規則
 
@@ -69,7 +71,7 @@ ms.locfileid: "48198894"
     - `DeviceName`
     - `RemoteDeviceName`
     - `RecipientEmailAddress`
-    - `SenderFromAddress` (信封寄件者或回信路徑位址) 
+    - `SenderFromAddress` (信封寄件者或 Return-Path 位址) 
     - `SenderMailFromAddress` 電子郵件客戶程式顯示的 (寄件者位址) 
     - `RecipientObjectId`
     - `AccountObjectId`

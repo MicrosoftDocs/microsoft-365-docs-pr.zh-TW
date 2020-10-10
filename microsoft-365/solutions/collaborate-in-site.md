@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 深入瞭解設定 SharePoint 網站與來賓共同作業所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: 4f4b87a02c3ff3a1a7997aee69e3e1e95e4b2ed5
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: dbbf84539c1bef239abc76e142922976902a01ed
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357991"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48409033"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>在網站中與來賓共同作業
 
@@ -37,20 +37,20 @@ ms.locfileid: "48357991"
 
 ## <a name="azure-external-collaboration-settings"></a>Azure 外部協同作業設定
 
-Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯設定](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)受到最高層級的制約。 如果 Azure AD 中已停用來賓共用或已限制來賓共用，這會覆寫您在 Microsoft 365 中設定的任何共用設定。
+Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯設定](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)受到最高層級的制約。 如果 Azure AD 中已停用或限制來賓共用，此設定會覆寫您在 Microsoft 365 中設定的任何共用設定。
 
 檢查外部共同作業設定，以確保未封鎖與來賓共用。
 
 ![Azure Active Directory 外部協同作業設定頁面的螢幕擷取畫面](../media/azure-ad-organizational-relationships-settings.png)
 
-若要設定外部協同作業設定：
+設定外部協同作業設定
 
-
-1. 登入 Microsoft Azure，網址為 [https://portal.azure.com](https://portal.azure.com) 。
-2. 在左側導覽中，按一下 [ **Azure Active Directory**]。
-3. 選取 [ **外部** 身分識別]，然後按一下 [ **外部協同作業設定**]。
-4. 在 [ **來賓邀請設定** ] 窗格中，確定 **來賓和來賓 inviter 角色中的系統管理員和使用者可以** 邀請和 **成員** 都已設定為 **[是]**。
-5. 如果您做了任何變更，請按一下 [儲存]****。
+1. 登入 Azure Active Directory at [https://aad.portal.azure.com](https://aad.portal.azure.com) 。
+2. 在左功能窗格中，按一下 [ **Azure Active Directory**]。
+3. 按一下 [ **外部**身分識別]。
+4. 在 [ **快速入門** ] 畫面上，按一下左功能窗格中的 [ **外部協同作業設定**]。
+5. 確定 **guest 和 guest inviter role 中的系統管理員和使用者都可以邀請** 和 **成員可以邀請** 皆設定為 **[是]**。
+6. 如果您做了任何變更，請按一下 [儲存]****。
 
 請記下 [ **協同限制** ] 區段中的設定。 確定您要與之來賓進行共同作業的網域不會遭到封鎖。
 
@@ -64,28 +64,27 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 
 設定 Microsoft 365 群組來賓設定
 
-1. 在 Microsoft 365 系統管理中心的左側流覽窗格中，展開 [ **設定**]。
-2. 按一下 [ **服務] & 增益集**。
+1. 在 Microsoft 365 系統管理中心的左功能窗格中，展開 [ **設定**]。
+2. 按一下 [ **組織設定**]。
 3. 在清單中，按一下 [ **Microsoft 365 群組**]。
-4. 確定 [ **讓組織外部的成員存取群組內容** ] 和 [ **允許群組擁有者將組織外部人員新增至群組** ] 核取方塊皆已勾選。
+4. 確定 **允許群組擁有者將組織外部的人員新增至 Microsoft 365 群組做為來賓** ，並 **讓 [允許來賓群組成員存取群組內容** ] 核取方塊皆已勾選。
 5. 如果您進行變更，請按一下 [ **儲存變更**]。
 
-
-## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 組織層級共用設定
+## <a name="sharepoint-organization-level-sharing-settings"></a>SharePoint 組織層級的共用設定
 
 為了讓來賓能夠存取 SharePoint 網站，SharePoint 組織層級的共用設定必須允許與來賓共用。
 
-組織層級設定會決定個別網站可使用的設定。 網站設定不能超過組織層級設定的許可。
+組織層級設定會決定可用於個別網站的設定。 網站設定不能超過組織層級設定的許可。
 
 如果您想要允許未驗證的檔案和資料夾共用，請選擇 [ **任何人**]。 若要確定您組織外部的人員必須進行驗證，請選擇 [ **新增] 和 [現有來賓**]。 選擇您的組織中的任何網站所需的功能最寬鬆設定。
 
 ![SharePoint 組織層級共用設定的螢幕擷取畫面](../media/sharepoint-organization-external-sharing-controls.png)
 
 
-設定 SharePoint 組織層級共用設定
+設定 SharePoint 組織層級的共用設定
 
-1. 在 Microsoft 365 系統管理中心的左側導覽中，按一下 [系統 **管理中心**] 底下的 [ **SharePoint**]。
-2. 在 SharePoint 管理中心中，按一下左側導覽窗格中的 [共用]****。
+1. 在 Microsoft 365 系統管理中心的左功能窗格中，按一下 [系統 **管理中心**] 底下的 [ **SharePoint**]。
+2. 在 [SharePoint 系統管理中心] 的左功能窗格中，按一下 [ **原則**] 底下的 [ **共用**]。
 3. 確定 SharePoint 的外部共用已設定為 **任何人** 或 **新的和現有的客人**。
 4. 如果您做了任何變更，請按一下 [儲存]****。
 
@@ -98,13 +97,13 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 2. 按一下 **[建立]**。
 3. 按一下 [ **小組網站**]。
 4. 輸入網站名稱，並為群組擁有者 (網站擁有者) 輸入名稱。
-5. 在 [ **高級設定**] 底下，選擇您要讓它成為公用或私人網站。
+5. 在 [ **高級設定**] 底下，選擇您是否要將此網站設為公用或私人網站。
 6. 按 [下一步]****。
 7. 按一下 **[完成]**。
 
 我們稍後會邀請使用者。 接下來，請務必檢查此網站的網站層級共用設定。
 
-## <a name="sharepoint-site-level-sharing-settings"></a>網站層級共用設定 SharePoint
+## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 網站層級共用設定
 
 請檢查網站層級的共用設定，以確定其允許您要用於此網站的訪問類型。 例如，如果您將組織層級設定設定為 [ **任何人**]，但您希望所有來賓都對此網站進行驗證，請確定網站層級共用設定已設定為 [ **新增] 和 [現有來賓**]。
 
@@ -114,8 +113,8 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 
 設定網站層級共用設定
 1. 在 SharePoint 管理中心中，在左側導覽窗格中展開 [網站]****，然後按一下 [使用中網站]****。
-2. 選取您剛建立的網站。
-3. 在功能區中，按一下 [共用]****。
+2. 選取您要共用的網站。
+3. 按一下 [...]，然後按一下 [ **共用**]。
 4. 確定 [共用] 設定為 [ **任何人** ] 或 [ **現有來賓**]。
 5. 如果您做了任何變更，請按一下 [儲存]****。
 
@@ -125,19 +124,21 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 
 邀請內部使用者加入群組
 1. 流覽至您要新增使用者的網站。
-2. 按一下右上角的 [ **成員** ]。
+2. 按一下右上方的 [ **成員** ] 連結，表示成員計數。
 3. 按一下 [新增成員]****。
 4. 輸入您要邀請加入網站之使用者的名稱或電子郵件地址，然後按一下 [ **儲存**]。
 
-無法從網站新增來賓使用者。 您必須使用 Outlook 網頁版來新增這些檔案。
+無法從網站新增來賓使用者。 您必須使用 Outlook 網頁版來新增這些檔案。 因此，若要新增並邀請來賓至群組，請按一下 [ **url**  ] 欄中的網站 url，以流覽至網站特有的頁面。 在此頁面上，按一下 **應用程式啟動器** 圖示，然後選取 [ **Outlook**]。 您可以從該畫面邀請客人加入群組，其程式如下所述。
 
 若要邀請客人加入群組
-1. 在網頁版的 Outlook 中的 [ **群組**] 下，按一下您要新增成員的群組。
-2. 開啟群組連絡人卡片，然後在 [ **其他選項** ( ) ...] 下，按一下 [ **新增成員**]。
-3. 輸入您要邀請之來賓的電子郵件地址，然後按一下 [ **新增**]。
-4. 按一下 **[關閉]**。
+1. 在 [ **群組**] 下，按一下您要邀請來賓的群組。
+2. 開啟群組連絡人卡片，按一下右上方的 [ **成員** ] 連結 (表示成員計數) 的連結。
+3. 按一下 [ **新增成員**]。
+4. 輸入您要邀請之來賓的電子郵件地址，然後按一下 [ **新增**]。
+5. 按一下 **[關閉]**。
+請注意，只有當您不是群組的擁有者時，才需要按一下 [ **關閉** ]，因此不允許將來賓新增至群組。 在這種情況下，將來賓加入群組的要求會轉給群組擁有者以供核准。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [與未驗證使用者共用檔案和資料夾的最佳做法](best-practices-anonymous-sharing.md)
 
