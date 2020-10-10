@@ -15,14 +15,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
+- m365-initiative-defender-office365
 description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32ff9f2c8d009b4c9b05c12ba4e785e59cb182e7
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 20b13e177a69d981a4c6793d4810256e33158a35
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48328080"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414259"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -47,9 +48,9 @@ ms.locfileid: "48328080"
 - [從總管中的檢視啟動自動化的調查和回應程序](#start-automated-investigation-and-response) (僅限 ATP 方案 2)
 - ... [調查惡意電子郵件等功能](#more-ways-to-use-explorer-or-real-time-detections)！
 
-## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>豐富威脅瀏覽器和即時偵測的增強功能
+## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>豐富威脅瀏覽器和 Real-Time 偵測的增強功能
 
-在改進搜尋程式的過程中，我們對威脅瀏覽器和即時偵測進行一些更新。 這些是「經驗」的改善，其重點是讓搜尋體驗更為一致。 這些變更如下所示：
+在改進搜尋程式的過程中，我們對威脅瀏覽器進行一些更新，並 Real-Time 偵測。 這些是「經驗」的改善，其重點是讓搜尋體驗更為一致。 這些變更如下所示：
 
 - [時區改進](#timezone-improvements)
 - [重新整理程式中的更新](#update-in-the-refresh-process)

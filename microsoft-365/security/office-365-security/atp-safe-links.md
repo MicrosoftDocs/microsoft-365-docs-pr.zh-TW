@@ -14,6 +14,7 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- m365-initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 search.appverid:
@@ -25,14 +26,14 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護 (ATP) ，以保護其組織免受使用惡意 URLs 之網路釣魚和其他攻擊的威脅。
-ms.openlocfilehash: 742ccc82fe5c6fafa4e6c3463cb471b674b77fa9
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c933ce48483f0263650d0af2994023dfcb24fadf
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326631"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48414115"
 ---
-# <a name="safe-links-in-office-365-atp"></a>Office 365 ATP 中的安全連結
+# <a name="safe-links-in-office-365-atp"></a>Office 365 ATP 安全連結
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

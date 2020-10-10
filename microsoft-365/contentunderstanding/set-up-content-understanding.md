@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: 0d66076c93eb46ca11977cea12417c0816e0d11b
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 8217630d66a097fcc714be80bd4d3dcceb623370
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367928"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413707"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -51,11 +51,7 @@ ms.locfileid: "48367928"
 
     ![開始設定](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. 在 [開啟影像標記] 頁面上，選擇是否允許 [[影像標記]](image-tagging.md)。
-
-    ![影像標記選項的螢幕擷取畫面](../media/content-understanding/admin-content-understanding-setup-image-tagging.png)</br>
-
-5. 在 **[設定表單處理]** 頁面上，您可以選擇是否要讓使用者能夠在特定 SharePoint 文件庫中建立表單處理模型。 您可以在 [文件庫] 功能區中使用功能表選項，在啟用此功能的 SharePoint 文件庫中 **[建立表單處理模型]**。
+4. 在 **[設定表單處理]** 頁面上，您可以選擇是否要讓使用者能夠在特定 SharePoint 文件庫中建立表單處理模型。 您可以在 [文件庫] 功能區中使用功能表選項，在啟用此功能的 SharePoint 文件庫中 **[建立表單處理模型]**。
  
      針對**哪個 SharePoint 文件庫應顯示建立表單處理模型的選項**，您可以選取：</br>
       - **所有 SharePoint 文件庫**，讓組織中的所有 SharePoint 文件庫皆可使用。</br>
@@ -67,7 +63,7 @@ ms.locfileid: "48367928"
    > [!Note]
    > 當網站被包含之後移除網站，並不會影響該網站中文件庫套用的現有模型，或將文件理解模型套用至文件庫的功能。 
     
-6. 在 **[建立內容中心]** 頁面上，您可以建立 SharePoint 內容中心網站，讓使用者建立及管理文件理解模型。 </br>
+5. 在 **[建立內容中心]** 頁面上，您可以建立 SharePoint 內容中心網站，讓使用者建立及管理文件理解模型。 </br>
     a. 在 **[網站名稱]** 中，輸入您要給予內容中心網站的名稱。</br>
     b. **[網站位址]** 會根據您為網站名稱所選取的內容，顯示網站的 URL。 如果您想要變更，請按一下 **[編輯]**。</br>
 
@@ -75,11 +71,11 @@ ms.locfileid: "48367928"
 
     選取 **[下一步]**。
 
-7. 在 **[檢閱並完成]** 頁面上，您可以查看您選取的設定，並選擇進行變更。 如果您對您的選擇感到滿意，請選取 **[啟用]**。
+6. 在 **[檢閱並完成]** 頁面上，您可以查看您選取的設定，並選擇進行變更。 如果您對您的選擇感到滿意，請選取 **[啟用]**。
 
-8. 在 [確認] 頁面上，按一下 **[完成]**。
+7. 在 [確認] 頁面上，按一下 **[完成]**。
 
-9. 您將會回到 **[自動化內容瞭解]** 頁面。 在此頁面上，您可以選取 **[管理]**，以對設定進行任何變更。 
+8. 您將會回到 **[自動化內容瞭解]** 頁面。 在此頁面上，您可以選取 **[管理]**，以對設定進行任何變更。 
 
 ## <a name="assign-licenses"></a>指派授權
 

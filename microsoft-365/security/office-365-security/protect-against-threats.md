@@ -16,14 +16,15 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
+- m365-initiative-m365-defender
 description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護，並設定如何將它用於您的組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 624646461efe7131b2479e003b23a9e659e0a779
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: bb28decf459035c238c61b12f65abf45128e527c
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326552"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413587"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -90,7 +91,7 @@ ms.locfileid: "48326552"
 
     - 在 [ **一般附件類型篩選** ] 區段中，選擇 [ **開啟**]。
 
-4. 按一下 [儲存 **]**。
+4. 按一下 **[儲存]**。
 
 若要深入瞭解反惡意程式碼原則選項，請參閱 [設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
@@ -146,7 +147,7 @@ ms.locfileid: "48326552"
 
    - 在 [ **允許清單** ] 區段中，複查 (和/或編輯) 允許的寄件者和網域。
 
-4. 按一下 [儲存 **]**。
+4. 按一下 **[儲存]**。
 
 若要深入瞭解您的反垃圾郵件原則選項，請參閱 [在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
@@ -206,7 +207,7 @@ ms.locfileid: "48326552"
 
 5. 請複查您的設定，然後按一下 **[完成]**。
 
-若要深入瞭解，請參閱 [設定安全連結原則](set-up-atp-safe-links-policies.md)。
+若要深入了解，請參閱[設定安全連結原則](set-up-atp-safe-links-policies.md)。
 
 ## <a name="part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>第5部分-確認 SharePoint、OneDrive 和 Microsoft 團隊的 ATP 已開啟
 
