@@ -15,48 +15,50 @@ author: lomayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 3960d877ed1807d2e8ac13512f9bdbb1625fc371
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f2642a46f952d3324cec4936aeb813d4ee5507d1
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198118"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412991"
 ---
-# <a name="devicetvmsecureconfigurationassessmentkb"></a><span data-ttu-id="2171b-104">DeviceTvmSecureConfigurationAssessmentKB</span><span class="sxs-lookup"><span data-stu-id="2171b-104">DeviceTvmSecureConfigurationAssessmentKB</span></span>
+# <a name="devicetvmsecureconfigurationassessmentkb"></a><span data-ttu-id="6048c-104">DeviceTvmSecureConfigurationAssessmentKB</span><span class="sxs-lookup"><span data-stu-id="6048c-104">DeviceTvmSecureConfigurationAssessmentKB</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="2171b-105">**適用範圍：**</span><span class="sxs-lookup"><span data-stu-id="2171b-105">**Applies to:**</span></span>
-- <span data-ttu-id="2171b-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="2171b-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="6048c-105">**適用範圍：**</span><span class="sxs-lookup"><span data-stu-id="6048c-105">**Applies to:**</span></span>
+- <span data-ttu-id="6048c-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="6048c-106">Microsoft Threat Protection</span></span>
 
 
 
-<span data-ttu-id="2171b-107">在進階搜捕結構描述中的 `DeviceTvmSecureConfigurationAssessmentKB` 表格包含各種安全性設定的資訊 (如裝置是否已開啟自動更新)，是由[威脅與弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)進行檢查。</span><span class="sxs-lookup"><span data-stu-id="2171b-107">The `DeviceTvmSecureConfigurationAssessmentKB` table in the advanced hunting schema contains information about the various secure configurations — such as whether a device has automatic updates on — checked by [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt).</span></span> <span data-ttu-id="2171b-108">其中也包含風險資訊、相關的行業效能評定，以及適用的 MITRE ATT&CK 技術和技巧。</span><span class="sxs-lookup"><span data-stu-id="2171b-108">It also includes risk information, related industry benchmarks, and applicable MITRE ATT&CK techniques and tactics.</span></span> <span data-ttu-id="2171b-109">使用這個參考來建立從表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="2171b-109">Use this reference to construct queries that return information from the table.</span></span>
+<span data-ttu-id="6048c-107">在進階搜捕結構描述中的 `DeviceTvmSecureConfigurationAssessmentKB` 表格包含各種安全性設定的資訊 (如裝置是否已開啟自動更新)，是由[威脅與弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)進行檢查。</span><span class="sxs-lookup"><span data-stu-id="6048c-107">The `DeviceTvmSecureConfigurationAssessmentKB` table in the advanced hunting schema contains information about the various secure configurations — such as whether a device has automatic updates on — checked by [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt).</span></span> <span data-ttu-id="6048c-108">其中也包含風險資訊、相關的行業效能評定，以及適用的 MITRE ATT&CK 技術和技巧。</span><span class="sxs-lookup"><span data-stu-id="6048c-108">It also includes risk information, related industry benchmarks, and applicable MITRE ATT&CK techniques and tactics.</span></span> <span data-ttu-id="6048c-109">使用這個參考來建立從表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="6048c-109">Use this reference to construct queries that return information from the table.</span></span>
 
-<span data-ttu-id="2171b-110">如需進階搜捕結構描述中其他表格的資訊，請參閱 [進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="2171b-110">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="6048c-110">如需進階搜捕結構描述中其他表格的資訊，請參閱 [進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="6048c-110">For information on other tables in the advanced hunting schema, see [the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="2171b-111">資料行名稱</span><span class="sxs-lookup"><span data-stu-id="2171b-111">Column name</span></span> | <span data-ttu-id="2171b-112">資料類型</span><span class="sxs-lookup"><span data-stu-id="2171b-112">Data type</span></span> | <span data-ttu-id="2171b-113">描述</span><span class="sxs-lookup"><span data-stu-id="2171b-113">Description</span></span> |
+| <span data-ttu-id="6048c-111">資料行名稱</span><span class="sxs-lookup"><span data-stu-id="6048c-111">Column name</span></span> | <span data-ttu-id="6048c-112">資料類型</span><span class="sxs-lookup"><span data-stu-id="6048c-112">Data type</span></span> | <span data-ttu-id="6048c-113">描述</span><span class="sxs-lookup"><span data-stu-id="6048c-113">Description</span></span> |
 |-------------|-----------|-------------|
-| `ConfigurationId` | <span data-ttu-id="2171b-114">string</span><span class="sxs-lookup"><span data-stu-id="2171b-114">string</span></span> | <span data-ttu-id="2171b-115">特定設定的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="2171b-115">Unique identifier for a specific configuration</span></span> |
-| `ConfigurationImpact` | <span data-ttu-id="2171b-116">string</span><span class="sxs-lookup"><span data-stu-id="2171b-116">string</span></span> | <span data-ttu-id="2171b-117">設定對整個組態分數 (1-10) 的評分影響</span><span class="sxs-lookup"><span data-stu-id="2171b-117">Rated impact of the configuration to the overall configuration score (1-10)</span></span> |
-| `ConfigurationName` | <span data-ttu-id="2171b-118">字串</span><span class="sxs-lookup"><span data-stu-id="2171b-118">string</span></span> | <span data-ttu-id="2171b-119">組態的顯示名稱</span><span class="sxs-lookup"><span data-stu-id="2171b-119">Display name of the configuration</span></span> |
-| `ConfigurationDescription` | <span data-ttu-id="2171b-120">字串</span><span class="sxs-lookup"><span data-stu-id="2171b-120">string</span></span> | <span data-ttu-id="2171b-121">組態的描述</span><span class="sxs-lookup"><span data-stu-id="2171b-121">Description of the configuration</span></span> |
-| `RiskDescription` | <span data-ttu-id="2171b-122">字串</span><span class="sxs-lookup"><span data-stu-id="2171b-122">string</span></span> | <span data-ttu-id="2171b-123">相關風險的描述</span><span class="sxs-lookup"><span data-stu-id="2171b-123">Description of the associated risk</span></span> |
-| `ConfigurationCategory` | <span data-ttu-id="2171b-124">字串</span><span class="sxs-lookup"><span data-stu-id="2171b-124">string</span></span> | <span data-ttu-id="2171b-125">設定所屬的類別或群組：應用程式、作業系統、網路、帳戶、安全性控制</span><span class="sxs-lookup"><span data-stu-id="2171b-125">Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls</span></span>|
-| `ConfigurationSubcategory` | <span data-ttu-id="2171b-126">string</span><span class="sxs-lookup"><span data-stu-id="2171b-126">string</span></span> |<span data-ttu-id="2171b-127">設定所屬的子類別或子群組。</span><span class="sxs-lookup"><span data-stu-id="2171b-127">Subcategory or subgrouping to which the configuration belongs.</span></span> <span data-ttu-id="2171b-128">在許多情況下，這會描述特定性能或功能。</span><span class="sxs-lookup"><span data-stu-id="2171b-128">In many cases, this describes specific capabilities or features.</span></span> |
-| `ConfigurationBenchmarks` | <span data-ttu-id="2171b-129">字串</span><span class="sxs-lookup"><span data-stu-id="2171b-129">string</span></span> | <span data-ttu-id="2171b-130">行業效能評定清單建議相同或類似的設定</span><span class="sxs-lookup"><span data-stu-id="2171b-130">List of industry benchmarks recommending the same or similar configuration</span></span> |
-| `RelatedMitreTechniques` | <span data-ttu-id="2171b-131">字串</span><span class="sxs-lookup"><span data-stu-id="2171b-131">string</span></span> | <span data-ttu-id="2171b-132">與設定相關的 Mitre ATT&CK 架構技術清單</span><span class="sxs-lookup"><span data-stu-id="2171b-132">List of Mitre ATT&CK framework techniques related to the configuration</span></span> |
-| `RelatedMitreTactics ` | <span data-ttu-id="2171b-133">字串</span><span class="sxs-lookup"><span data-stu-id="2171b-133">string</span></span> | <span data-ttu-id="2171b-134">與設定相關的 Mitre ATT&CK 架構技巧清單</span><span class="sxs-lookup"><span data-stu-id="2171b-134">List of Mitre ATT&CK framework tactics related to the configuration</span></span> |
+| `ConfigurationId` | <span data-ttu-id="6048c-114">string</span><span class="sxs-lookup"><span data-stu-id="6048c-114">string</span></span> | <span data-ttu-id="6048c-115">特定設定的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="6048c-115">Unique identifier for a specific configuration</span></span> |
+| `ConfigurationImpact` | <span data-ttu-id="6048c-116">string</span><span class="sxs-lookup"><span data-stu-id="6048c-116">string</span></span> | <span data-ttu-id="6048c-117">設定對整個組態分數 (1-10) 的評分影響</span><span class="sxs-lookup"><span data-stu-id="6048c-117">Rated impact of the configuration to the overall configuration score (1-10)</span></span> |
+| `ConfigurationName` | <span data-ttu-id="6048c-118">字串</span><span class="sxs-lookup"><span data-stu-id="6048c-118">string</span></span> | <span data-ttu-id="6048c-119">組態的顯示名稱</span><span class="sxs-lookup"><span data-stu-id="6048c-119">Display name of the configuration</span></span> |
+| `ConfigurationDescription` | <span data-ttu-id="6048c-120">字串</span><span class="sxs-lookup"><span data-stu-id="6048c-120">string</span></span> | <span data-ttu-id="6048c-121">組態的描述</span><span class="sxs-lookup"><span data-stu-id="6048c-121">Description of the configuration</span></span> |
+| `RiskDescription` | <span data-ttu-id="6048c-122">字串</span><span class="sxs-lookup"><span data-stu-id="6048c-122">string</span></span> | <span data-ttu-id="6048c-123">相關風險的描述</span><span class="sxs-lookup"><span data-stu-id="6048c-123">Description of the associated risk</span></span> |
+| `ConfigurationCategory` | <span data-ttu-id="6048c-124">字串</span><span class="sxs-lookup"><span data-stu-id="6048c-124">string</span></span> | <span data-ttu-id="6048c-125">設定所屬的類別或群組：應用程式、作業系統、網路、帳戶、安全性控制</span><span class="sxs-lookup"><span data-stu-id="6048c-125">Category or grouping to which the configuration belongs: Application, OS, Network, Accounts, Security controls</span></span>|
+| `ConfigurationSubcategory` | <span data-ttu-id="6048c-126">string</span><span class="sxs-lookup"><span data-stu-id="6048c-126">string</span></span> |<span data-ttu-id="6048c-127">設定所屬的子類別或子群組。</span><span class="sxs-lookup"><span data-stu-id="6048c-127">Subcategory or subgrouping to which the configuration belongs.</span></span> <span data-ttu-id="6048c-128">在許多情況下，這會描述特定性能或功能。</span><span class="sxs-lookup"><span data-stu-id="6048c-128">In many cases, this describes specific capabilities or features.</span></span> |
+| `ConfigurationBenchmarks` | <span data-ttu-id="6048c-129">字串</span><span class="sxs-lookup"><span data-stu-id="6048c-129">string</span></span> | <span data-ttu-id="6048c-130">行業效能評定清單建議相同或類似的設定</span><span class="sxs-lookup"><span data-stu-id="6048c-130">List of industry benchmarks recommending the same or similar configuration</span></span> |
+| `RelatedMitreTechniques` | <span data-ttu-id="6048c-131">字串</span><span class="sxs-lookup"><span data-stu-id="6048c-131">string</span></span> | <span data-ttu-id="6048c-132">與設定相關的 Mitre ATT&CK 架構技術清單</span><span class="sxs-lookup"><span data-stu-id="6048c-132">List of Mitre ATT&CK framework techniques related to the configuration</span></span> |
+| `RelatedMitreTactics ` | <span data-ttu-id="6048c-133">字串</span><span class="sxs-lookup"><span data-stu-id="6048c-133">string</span></span> | <span data-ttu-id="6048c-134">與設定相關的 Mitre ATT&CK 架構技巧清單</span><span class="sxs-lookup"><span data-stu-id="6048c-134">List of Mitre ATT&CK framework tactics related to the configuration</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="2171b-135">相關主題</span><span class="sxs-lookup"><span data-stu-id="2171b-135">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="6048c-135">相關主題</span><span class="sxs-lookup"><span data-stu-id="6048c-135">Related topics</span></span>
 
-- [<span data-ttu-id="2171b-136">主動威脅搜捕</span><span class="sxs-lookup"><span data-stu-id="2171b-136">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="2171b-137">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="2171b-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="2171b-138">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="2171b-138">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="2171b-139">搜捕裝置、電子郵件、應用程式和身分識別</span><span class="sxs-lookup"><span data-stu-id="2171b-139">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="2171b-140">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="2171b-140">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="2171b-141">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="2171b-141">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
-- [<span data-ttu-id="2171b-142">威脅與弱點管理的概觀</span><span class="sxs-lookup"><span data-stu-id="2171b-142">Overview of Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [<span data-ttu-id="6048c-136">主動威脅搜捕</span><span class="sxs-lookup"><span data-stu-id="6048c-136">Proactively hunt for threats</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="6048c-137">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="6048c-137">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="6048c-138">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="6048c-138">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="6048c-139">搜捕裝置、電子郵件、應用程式和身分識別</span><span class="sxs-lookup"><span data-stu-id="6048c-139">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="6048c-140">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="6048c-140">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="6048c-141">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="6048c-141">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+- [<span data-ttu-id="6048c-142">威脅與弱點管理的概觀</span><span class="sxs-lookup"><span data-stu-id="6048c-142">Overview of Threat & Vulnerability Management</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

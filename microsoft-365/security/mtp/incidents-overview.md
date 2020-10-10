@@ -14,48 +14,50 @@ author: mjcaparas
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c9b495b70c8b61188b4db3175b54e406feb87fc8
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: b0cfa6ed4af6ef9c5686cb25d5b2f0522d818860
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357839"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48412895"
 ---
-# <a name="incidents-overview-in-microsoft-threat-protection"></a><span data-ttu-id="ffadd-104">Microsoft 威脅防護中的事件概觀</span><span class="sxs-lookup"><span data-stu-id="ffadd-104">Incidents overview in Microsoft Threat Protection</span></span>
+# <a name="incidents-overview-in-microsoft-threat-protection"></a><span data-ttu-id="cd934-104">Microsoft 威脅防護中的事件概觀</span><span class="sxs-lookup"><span data-stu-id="cd934-104">Incidents overview in Microsoft Threat Protection</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="ffadd-105">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="ffadd-105">**Applies to:**</span></span>
-- <span data-ttu-id="ffadd-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="ffadd-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="cd934-105">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="cd934-105">**Applies to:**</span></span>
+- <span data-ttu-id="cd934-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="cd934-106">Microsoft Threat Protection</span></span>
 
 
 
-<span data-ttu-id="ffadd-107">事件是以相關的警示為基礎。</span><span class="sxs-lookup"><span data-stu-id="ffadd-107">Incidents are based on related alerts.</span></span> <span data-ttu-id="ffadd-108">當在您的網路上發現惡意事件或活動時，系統會產生警示。</span><span class="sxs-lookup"><span data-stu-id="ffadd-108">Alerts are created when a malicious event or activity is seen on your network.</span></span> <span data-ttu-id="ffadd-109">個別警示提供有關進行中攻擊的重要線索。</span><span class="sxs-lookup"><span data-stu-id="ffadd-109">Individual alerts provide valuable clues about an on-going attack.</span></span> <span data-ttu-id="ffadd-110">不過，攻擊通常會使用各種向量和技術來執行破壞。</span><span class="sxs-lookup"><span data-stu-id="ffadd-110">However, attacks typically employ various vectors and techniques to carry out a breach.</span></span> <span data-ttu-id="ffadd-111">將個別的線索 Piecing 在一起可能會非常困難而且耗時。</span><span class="sxs-lookup"><span data-stu-id="ffadd-111">Piecing individual clues together can be challenging and time-consuming.</span></span>
+<span data-ttu-id="cd934-107">事件是以相關的警示為基礎。</span><span class="sxs-lookup"><span data-stu-id="cd934-107">Incidents are based on related alerts.</span></span> <span data-ttu-id="cd934-108">當在您的網路上發現惡意事件或活動時，系統會產生警示。</span><span class="sxs-lookup"><span data-stu-id="cd934-108">Alerts are created when a malicious event or activity is seen on your network.</span></span> <span data-ttu-id="cd934-109">個別警示提供有關進行中攻擊的重要線索。</span><span class="sxs-lookup"><span data-stu-id="cd934-109">Individual alerts provide valuable clues about an on-going attack.</span></span> <span data-ttu-id="cd934-110">不過，攻擊通常會使用各種向量和技術來執行破壞。</span><span class="sxs-lookup"><span data-stu-id="cd934-110">However, attacks typically employ various vectors and techniques to carry out a breach.</span></span> <span data-ttu-id="cd934-111">將個別的線索 Piecing 在一起可能會非常困難而且耗時。</span><span class="sxs-lookup"><span data-stu-id="cd934-111">Piecing individual clues together can be challenging and time-consuming.</span></span>
 
-<span data-ttu-id="ffadd-112">這段影片可讓您瞭解 Microsoft 威脅防護中的事件。</span><span class="sxs-lookup"><span data-stu-id="ffadd-112">This short video gives an overview of incidents in Microsoft Threat Protection.</span></span>
+<span data-ttu-id="cd934-112">這段影片可讓您瞭解 Microsoft 威脅防護中的事件。</span><span class="sxs-lookup"><span data-stu-id="cd934-112">This short video gives an overview of incidents in Microsoft Threat Protection.</span></span>
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-<span data-ttu-id="ffadd-113">事件是組成攻擊之故事的相關警示集合。</span><span class="sxs-lookup"><span data-stu-id="ffadd-113">An incident is a collection of correlated alerts that make up the story of an attack.</span></span> <span data-ttu-id="ffadd-114">在網路中不同裝置、使用者和信箱實體中找到的惡意和可疑事件，會自動依 Microsoft 威脅防護來匯總。</span><span class="sxs-lookup"><span data-stu-id="ffadd-114">Malicious and suspicious events that are found in different device, user, and mailbox entities in the network are automatically aggregated by Microsoft Threat Protection.</span></span> <span data-ttu-id="ffadd-115">將相關警示分組到事件中，可讓安全性 defenders 整個攻擊的觀點。</span><span class="sxs-lookup"><span data-stu-id="ffadd-115">Grouping related alerts into an incident gives security defenders a comprehensive view of an attack.</span></span> 
+<span data-ttu-id="cd934-113">事件是組成攻擊之故事的相關警示集合。</span><span class="sxs-lookup"><span data-stu-id="cd934-113">An incident is a collection of correlated alerts that make up the story of an attack.</span></span> <span data-ttu-id="cd934-114">在網路中不同裝置、使用者和信箱實體中找到的惡意和可疑事件，會自動依 Microsoft 威脅防護來匯總。</span><span class="sxs-lookup"><span data-stu-id="cd934-114">Malicious and suspicious events that are found in different device, user, and mailbox entities in the network are automatically aggregated by Microsoft Threat Protection.</span></span> <span data-ttu-id="cd934-115">將相關警示分組到事件中，可讓安全性 defenders 整個攻擊的觀點。</span><span class="sxs-lookup"><span data-stu-id="cd934-115">Grouping related alerts into an incident gives security defenders a comprehensive view of an attack.</span></span> 
 
-<span data-ttu-id="ffadd-116">例如，安全性 defenders 可查看攻擊的開始位置、使用的戰術，以及攻擊進入網路的程度。</span><span class="sxs-lookup"><span data-stu-id="ffadd-116">For instance, security defenders can see where the attack started, what tactics were used, and how far the attack has gone into the network.</span></span> <span data-ttu-id="ffadd-117">他們也可以查看受影響的範圍、影響的裝置、使用者和信箱數目、影響的程度，以及受影響實體的其他詳細資料。</span><span class="sxs-lookup"><span data-stu-id="ffadd-117">They can also see the scope of the attack, like how many devices, users, and mailboxes were impacted, how severe the impact was, and other details about affected entities.</span></span>
+<span data-ttu-id="cd934-116">例如，安全性 defenders 可查看攻擊的開始位置、使用的戰術，以及攻擊進入網路的程度。</span><span class="sxs-lookup"><span data-stu-id="cd934-116">For instance, security defenders can see where the attack started, what tactics were used, and how far the attack has gone into the network.</span></span> <span data-ttu-id="cd934-117">他們也可以查看受影響的範圍、影響的裝置、使用者和信箱數目、影響的程度，以及受影響實體的其他詳細資料。</span><span class="sxs-lookup"><span data-stu-id="cd934-117">They can also see the scope of the attack, like how many devices, users, and mailboxes were impacted, how severe the impact was, and other details about affected entities.</span></span>
 
-<span data-ttu-id="ffadd-118">若啟用，Microsoft 威脅防護便可透過自動化和人工智慧，自動調查和解決個別的提醒。</span><span class="sxs-lookup"><span data-stu-id="ffadd-118">If enabled, Microsoft Threat Protection can automatically investigate and resolve the individual alerts through automation and artificial intelligence.</span></span> <span data-ttu-id="ffadd-119">安全性 defenders 也可以執行其他修復步驟，以直接從事件檢視解決攻擊。</span><span class="sxs-lookup"><span data-stu-id="ffadd-119">Security defenders can also perform additional remediation steps to resolve the attack straight from the incidents view.</span></span> 
+<span data-ttu-id="cd934-118">若啟用，Microsoft 威脅防護便可透過自動化和人工智慧，自動調查和解決個別的提醒。</span><span class="sxs-lookup"><span data-stu-id="cd934-118">If enabled, Microsoft Threat Protection can automatically investigate and resolve the individual alerts through automation and artificial intelligence.</span></span> <span data-ttu-id="cd934-119">安全性 defenders 也可以執行其他修復步驟，以直接從事件檢視解決攻擊。</span><span class="sxs-lookup"><span data-stu-id="cd934-119">Security defenders can also perform additional remediation steps to resolve the attack straight from the incidents view.</span></span> 
 
-<span data-ttu-id="ffadd-120">過去30天的事件會顯示在事件佇列中。</span><span class="sxs-lookup"><span data-stu-id="ffadd-120">Incidents from the last 30 days are shown in the incident queue.</span></span> <span data-ttu-id="ffadd-121">從這裡，安全性 defenders 可根據風險層級及其他因素，查看應優先考慮哪些事件。</span><span class="sxs-lookup"><span data-stu-id="ffadd-121">From here, security defenders can see which incidents should be prioritized based on risk level and other factors.</span></span> 
+<span data-ttu-id="cd934-120">過去30天的事件會顯示在事件佇列中。</span><span class="sxs-lookup"><span data-stu-id="cd934-120">Incidents from the last 30 days are shown in the incident queue.</span></span> <span data-ttu-id="cd934-121">從這裡，安全性 defenders 可根據風險層級及其他因素，查看應優先考慮哪些事件。</span><span class="sxs-lookup"><span data-stu-id="cd934-121">From here, security defenders can see which incidents should be prioritized based on risk level and other factors.</span></span> 
 
-<span data-ttu-id="ffadd-122">[安全性 defenders] 也可以重新命名事件，並將其指派給個別分析員、分類，並將標記新增至事件，以獲得更佳和更多自訂的事件管理體驗。</span><span class="sxs-lookup"><span data-stu-id="ffadd-122">Security defenders can also rename incidents, assign them to individual analysts, classify, and add tags to incidents for a better and more customized incident management experience.</span></span>
+<span data-ttu-id="cd934-122">[安全性 defenders] 也可以重新命名事件，並將其指派給個別分析員、分類，並將標記新增至事件，以獲得更佳和更多自訂的事件管理體驗。</span><span class="sxs-lookup"><span data-stu-id="cd934-122">Security defenders can also rename incidents, assign them to individual analysts, classify, and add tags to incidents for a better and more customized incident management experience.</span></span>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="ffadd-123">另請參閱</span><span class="sxs-lookup"><span data-stu-id="ffadd-123">See also</span></span>
-- [<span data-ttu-id="ffadd-124">設定事件優先順序</span><span class="sxs-lookup"><span data-stu-id="ffadd-124">Prioritize incidents</span></span>](incident-queue.md)
-- [<span data-ttu-id="ffadd-125">調查事件</span><span class="sxs-lookup"><span data-stu-id="ffadd-125">Investigate incidents</span></span>](investigate-incidents.md)
-- [<span data-ttu-id="ffadd-126">管理事件</span><span class="sxs-lookup"><span data-stu-id="ffadd-126">Manage incidents</span></span>](manage-incidents.md)
+## <a name="see-also"></a><span data-ttu-id="cd934-123">請參閱</span><span class="sxs-lookup"><span data-stu-id="cd934-123">See also</span></span>
+- [<span data-ttu-id="cd934-124">設定事件優先順序</span><span class="sxs-lookup"><span data-stu-id="cd934-124">Prioritize incidents</span></span>](incident-queue.md)
+- [<span data-ttu-id="cd934-125">調查事件</span><span class="sxs-lookup"><span data-stu-id="cd934-125">Investigate incidents</span></span>](investigate-incidents.md)
+- [<span data-ttu-id="cd934-126">管理事件</span><span class="sxs-lookup"><span data-stu-id="cd934-126">Manage incidents</span></span>](manage-incidents.md)

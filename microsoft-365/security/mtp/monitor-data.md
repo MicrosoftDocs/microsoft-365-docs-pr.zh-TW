@@ -11,29 +11,31 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365-initiative-m365-defender
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 861ee8a01f9fba7daeec7375ebb6f33ffcae1fcd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 76b70f20a8bbeb3b79fa8f6b3847245449cb8823
+ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199814"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48413159"
 ---
-# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a><span data-ttu-id="35ae6-104">Microsoft 365 security center 中的資料監控與報告</span><span class="sxs-lookup"><span data-stu-id="35ae6-104">Data monitoring and reporting in the Microsoft 365 security center</span></span>
+# <a name="data-monitoring-and-reporting-in-the-microsoft-365-security-center"></a><span data-ttu-id="d1005-104">Microsoft 365 security center 中的資料監控與報告</span><span class="sxs-lookup"><span data-stu-id="d1005-104">Data monitoring and reporting in the Microsoft 365 security center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="35ae6-105">**[資料]** 類別可協助追蹤可能導致未經授權就外洩資料的使用者活動。</span><span class="sxs-lookup"><span data-stu-id="35ae6-105">The **Data** category helps track user activity that could lead to unauthorized data disclosure.</span></span> <span data-ttu-id="35ae6-106">它們是現有 DLP 原則報告和協力廠商 DLP 原則相符報告的返工。</span><span class="sxs-lookup"><span data-stu-id="35ae6-106">They are the rework of existing DLP policy reports plus a third-party DLP policy match report.</span></span>
+<span data-ttu-id="d1005-105">**[資料]** 類別可協助追蹤可能導致未經授權就外洩資料的使用者活動。</span><span class="sxs-lookup"><span data-stu-id="d1005-105">The **Data** category helps track user activity that could lead to unauthorized data disclosure.</span></span> <span data-ttu-id="d1005-106">它們是現有 DLP 原則報告和協力廠商 DLP 原則相符報告的返工。</span><span class="sxs-lookup"><span data-stu-id="d1005-106">They are the rework of existing DLP policy reports plus a third-party DLP policy match report.</span></span>
 
-<span data-ttu-id="35ae6-107">您可以看到：</span><span class="sxs-lookup"><span data-stu-id="35ae6-107">You can see:</span></span>
+<span data-ttu-id="d1005-107">您可以看到：</span><span class="sxs-lookup"><span data-stu-id="d1005-107">You can see:</span></span>
 
-- <span data-ttu-id="35ae6-108">從雲端應用程式共用最多檔案的使用者</span><span class="sxs-lookup"><span data-stu-id="35ae6-108">Users who share the most files from cloud apps</span></span>
-- <span data-ttu-id="35ae6-109">已發生的 DLP 原則相符數目</span><span class="sxs-lookup"><span data-stu-id="35ae6-109">How many DLP policy matches occurred</span></span>
-- <span data-ttu-id="35ae6-110">報告了多少 DLP 原則覆寫或誤判</span><span class="sxs-lookup"><span data-stu-id="35ae6-110">How many DLP policies overrides or false positives are reported</span></span>
-- <span data-ttu-id="35ae6-111">透過 Microsoft Cloud App Security 在協力廠商雲端服務中發生的 DLP 原則數目的多少</span><span class="sxs-lookup"><span data-stu-id="35ae6-111">How many DLP policy matches happened in third-party cloud services via Microsoft Cloud App Security</span></span>
+- <span data-ttu-id="d1005-108">從雲端應用程式共用最多檔案的使用者</span><span class="sxs-lookup"><span data-stu-id="d1005-108">Users who share the most files from cloud apps</span></span>
+- <span data-ttu-id="d1005-109">已發生的 DLP 原則相符數目</span><span class="sxs-lookup"><span data-stu-id="d1005-109">How many DLP policy matches occurred</span></span>
+- <span data-ttu-id="d1005-110">報告了多少 DLP 原則覆寫或誤判</span><span class="sxs-lookup"><span data-stu-id="d1005-110">How many DLP policies overrides or false positives are reported</span></span>
+- <span data-ttu-id="d1005-111">透過 Microsoft Cloud App Security 在協力廠商雲端服務中發生的 DLP 原則數目的多少</span><span class="sxs-lookup"><span data-stu-id="d1005-111">How many DLP policy matches happened in third-party cloud services via Microsoft Cloud App Security</span></span>
 
 ![報表的資料類別頁面](../../media/data.png)
