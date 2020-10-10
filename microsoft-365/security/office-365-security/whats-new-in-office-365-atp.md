@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 ms.topic: conceptual
-ms.date: 09/10/2020
+ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5bbbda8b2fb13351d0b86d1670910cbaa52ad8cb
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab987652082c93a82fa5bcbd4667f26291c6e9d7
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413255"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417290"
 ---
 # <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新增功能
 
@@ -47,7 +47,8 @@ ms.locfileid: "48413255"
 - [使用承租人允許/封鎖清單手動覆寫篩選 verdicts](tenant-allow-block-list.md)
 - [威脅瀏覽器中的擴充功能，包括主要目標使用者、傳輸規則和連接器](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (OFFICE 365 ATP 方案 2) 
 - 呈現在 [威脅瀏覽器](threat-explorer.md) 中的覆寫資訊 (允許/封鎖承租人/使用者原則的電子郵件) 
-- 在 [威脅 Explorer](threat-explorer.md) 中呈現 URL 威脅 (惡意程式碼、網路釣魚詐騙、垃圾郵件或無)  
+- 在 [威脅 Explorer](threat-explorer.md#threats-in-urls) 中呈現 URL 威脅 (惡意程式碼、網路釣魚詐騙、垃圾郵件或無)  
+- [改進搜尋體驗威脅 Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) ，包含威脅的更新、其他動作、傳遞位置和更新的時程表視圖
 
 ## <a name="julyaugust-2020"></a>2020年7月/8 月 
 

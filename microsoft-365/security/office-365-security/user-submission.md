@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-office365
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: 8347463a4c3f41b6b6333d35c5b4207d1b94aabe
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ab7f25c456a9321977721113c1e98d67d1529feb
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412559"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417242"
 ---
 # <a name="user-submissions-policies"></a>使用者提交原則
 
@@ -47,17 +47,17 @@ ms.locfileid: "48412559"
 
 使用下列文章來設定必要的必要條件，讓使用者報告的郵件進入您的自訂信箱：
 
-- 透過建立 exchange 郵件流程規則來設定垃圾郵件信賴等級，以略過垃圾郵件篩選。 請參閱 [使用 EAC 建立郵件流程規則，將郵件的 scl](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages?view=o365-worldwide#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) 設定為將 scl 設定為 **-1**。
+- 建立 exchange 郵件流程規則以設定垃圾郵件信賴等級，以略過自訂信箱上的垃圾郵件篩選。 請參閱 [使用 EAC 建立郵件流程規則，將郵件的 scl](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) 設定為將 scl 設定為 **-1**。
 
-- 關閉掃描附件的惡意程式碼。 使用 [Set up (或 edit) ATP 安全附件原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide#step-2-set-up-or-edit-an-atp-safe-attachments-policy) ，以建立安全附件原則，而不會 **掃描啟用惡意** 代碼的設定。
+- 關閉自訂信箱中的惡意程式碼的掃描附件。 使用[設定 Office 365 ATP 中的安全附件原則](set-up-atp-safe-attachments-policies.md)，以建立安全附件原則，**關閉****安全附件未知惡意程式碼回應**。
 
-- 關閉郵件上的 URL 掃描。 使用 [ [新增 (] 或 [編輯) ATP 安全連結原則套用至所有或特定的電子郵件](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-links-policies?view=o365-worldwide#step-3-add-or-edit-atp-safe-links-policies-that-apply-to-all-or-specific-email-recipients) 收件者若要建立安全連結原則， **請選取 [將郵件中的未知潛在惡意 URLs 的動作** ] 設定為 [ **關閉**]。
+- 在自訂信箱的郵件上關閉 URL 掃描。 使用 [ [設定 Office 365 ATP 中的安全連結原則](set-up-atp-safe-links-policies.md) ] 以建立安全連結原則，設定為 [關閉] 時，請選取 [ **關閉** ]，以 **在郵件中選取未知的潛在惡意 URLs 動作**。
 
-- 建立反惡意程式碼原則，關閉惡意程式碼零小時自動清除。 請參閱[使用安全性 & 規範中心建立反惡意程式碼原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies)，將**惡意軟體設定為零小時自動清除** **。**
+- 建立反惡意程式碼原則，關閉惡意程式碼零小時自動清除。 請參閱[使用安全性 & 規範中心建立反惡意程式碼原則](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)，將**惡意軟體設定為零小時自動清除** **。**
 
-- 建立垃圾郵件篩選原則，以停用以零小時自動清除 (用於垃圾郵件 ZAP 和網路釣魚 ZAP 的 ZAP) 。 請參閱 [使用安全性 & 規範中心建立反垃圾郵件原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide#use-the-security--compliance-center-to-create-anti-spam-policies) ，並清除垃圾郵件 Zap 和網路釣魚 Zap 的 **On** 核取方塊。
+- 建立垃圾郵件篩選原則，以停用自訂信箱中垃圾郵件和網路釣魚的零小時自動清除 (ZAP) 。 請參閱[使用安全性 & 規範中心建立反垃圾郵件原則](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies)，並清除**垃圾郵件 Zap**和**網路釣魚 zap**的**On**核取方塊。
 
-- 停用垃圾郵件規則。 使用 [ [設定 Exchange Online 信箱上的垃圾郵件設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes?view=o365-worldwide) ] 以停用垃圾郵件規則。 停用之後，EOP 無法根據垃圾郵件篩選判定動作將郵件移至垃圾郵件資料夾。 **將郵件移至垃圾郵件資料夾** 或信箱上的安全清單集合。
+- 停用自訂信箱中的垃圾郵件規則。 使用 [ [設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md) ] 以停用垃圾郵件規則。 停用之後，EOP 無法根據垃圾郵件篩選判定動作將郵件移至垃圾郵件資料夾。 **將郵件移至垃圾郵件資料夾** 或信箱上的安全清單集合。
 
 在您確認您的信箱符合所有適用的先決條件後，請 [使用安全性 & 合規性中心，設定本文中的使用者提交信箱](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) () 。
 
@@ -118,7 +118,7 @@ ms.locfileid: "48412559"
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
-SafetyAPIAction 為下列其中一個整數值：
+其中，SafetyAPIAction 是下列其中一個整數值：
 
 - 1：垃圾郵件
 - 2： NotJunk

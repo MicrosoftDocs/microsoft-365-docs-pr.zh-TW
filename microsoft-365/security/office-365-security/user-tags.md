@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP 中的使用者標記
+title: Office 365 ATP 中的使用者標籤
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,14 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Office 365 ATP 方案2中識別具有使用者標記的特定使用者群組。 標記篩選可用於 Office 365 ATP 中的提醒、報告和調查，以快速識別已標記的使用者。
-ms.openlocfilehash: 16e756b95e16e40f4df738e825e842681c67e22c
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 475bf976a71fb688df8db9ac25f3b397c078d79a
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399382"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417272"
 ---
-# <a name="user-tags-in-office-365-atp"></a>Office 365 ATP 中的使用者標記
+# <a name="user-tags-in-office-365-atp"></a>Office 365 ATP 中的使用者標籤
+
+> [!NOTE]
+> 使用者標記功能是在預覽中，並非所有人都可以使用，而且可能會變更。 如需發行排程的相關資訊，請參閱 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)。
 
 使用者標記是 [Office 365 Advanced 威脅防護 (ATP) ](office-365-atp.md)中的特定使用者群組識別碼。 使用者標記有兩種類型：
 

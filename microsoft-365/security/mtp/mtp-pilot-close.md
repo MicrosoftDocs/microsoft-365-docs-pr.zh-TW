@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: ec8e630c3669b3eb7af8cb012a0ca361f8c77f1e
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 1a7b87432ce1eb16c29f462fb4865bfa5c5e2201
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368010"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418094"
 ---
 # <a name="closing-and-summarizing-your-microsoft-threat-protection-pilot"></a>關閉及摘要您的 Microsoft 威脅防護試驗  
 
@@ -76,7 +77,7 @@ ms.locfileid: "48368010"
 
 您目前正在結束和摘要階段。
 
-您剛剛模擬的是僅限記憶體的高級攻擊，可在網域控制站上遠端執行程式碼。 您已瞭解 Microsoft Defender ATP 和 Azure ATP 如何偵測及警示 stealthy 惡意活動。 您也瞭解如何將不同來源的警示，與其他上下文資訊一起傳遞至 Microsoft 365 安全性中心入口網站中的單一事件，讓 SOC 分析人員能夠調查並採取必要的動作。 您也已經建立高級搜尋查詢，識別輸入電子郵件，使用者已開啟或儲存附件，並根據該查詢建立偵測。
+您已執行的是僅限記憶體的高級攻擊模擬，可在網域控制站上遠端執行程式碼。 您已瞭解 Microsoft Defender ATP 和 Azure ATP 如何偵測並建立 stealthy 惡意活動的警示。 您也瞭解如何將不同來源的警示，與其他上下文資訊一起傳遞至 Microsoft 365 安全性中心入口網站中的單一事件。 遇到這類整合，可讓 SOC 分析員調查並採取必要的動作。 您也已經建立高級搜尋查詢，識別輸入電子郵件，使用者已開啟或儲存附件，並根據該查詢建立偵測。
 
 所有測試結束之後，您已到達程式的結束。
 
@@ -86,9 +87,9 @@ ms.locfileid: "48368010"
 - 試驗結果的詳細報告
 - 如何繼續進行決策
 
-這項資訊應顯示在 [準備](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) 階段) 與 Microsoft 連絡人的 (的內部利益關係人。 這可確保任何意見反應都可以用來改善產品及檔。
+針對您在準備階段) 和 Microsoft 連絡人的 [準備](https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval) 階段中識別的內部利益關係人 (，向您的最終輸出呈現報告。 這類工作可確保任何意見反應都可以用來改善產品及檔。
 
-我們希望您可以享受這種模擬，並且鼓勵您開始實施所學的功能。
+我們希望您可以享受這種模擬。 開始執行您在組織中較大規模所學的專案，以充分利用整合安全性解決方案。
 
 ## <a name="next-step"></a>下一步
 透過下列互動式指南深入瞭解 Microsoft 威脅防護支柱：

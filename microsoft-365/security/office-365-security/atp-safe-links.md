@@ -26,12 +26,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護 (ATP) ，以保護其組織免受使用惡意 URLs 之網路釣魚和其他攻擊的威脅。
-ms.openlocfilehash: c933ce48483f0263650d0af2994023dfcb24fadf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 7b10a941d63fd654a61c6d6ec78869f4bafb3edd
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414115"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417270"
 ---
 # <a name="safe-links-in-office-365-atp"></a>Office 365 ATP 安全連結
 
@@ -150,7 +150,7 @@ ms.locfileid: "48414115"
 ## <a name="safe-links-settings-for-microsoft-teams"></a>Microsoft 小組的安全連結設定
 
 > [!IMPORTANT]
-> 從3月2020，這項功能只是在預覽中，僅供 Microsoft 小組技術採用計畫的成員使用 (點擊) 。
+> 從3月2020，這項功能只是在預覽中，僅供 Microsoft 小組技術採用計畫的成員使用 (點擊) 。 如需發行排程的相關資訊，請參閱 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=&searchterms=Safe%2CLinks%2CProtection%2Cfor%2CMicrosoft%2CTeams)。
 
 您可以在安全連結原則中啟用或停用 Microsoft 小組的安全連結保護。 具體說來，您可以在 **Microsoft 小組設定中，針對未知或可能惡意的 URLs** ，使用 [選取] 動作。 建議值為 **On**。
 

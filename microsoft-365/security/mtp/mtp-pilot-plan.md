@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 7d1870d1b8972009bed657f476810ca011dc2621
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: e62b4ec0ee6c9d05321accf269406e8127019f5b
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367974"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418106"
 ---
 # <a name="planning-your-pilot-microsoft-threat-protection-project"></a>規劃試驗 Microsoft 威脅防護專案 
 
@@ -119,7 +120,7 @@ ms.locfileid: "48367974"
 
 讓方案的所有元素一起使用的一種方式，也可以建立計分卡。 請參閱下方的範例計分卡：
 
-|**使用案例**|**需求**|**設定需求**|**測試計劃**|**預期的結果**|**測試狀態**|**分數**|**附註**|
+| 使用案例 | 需求 | 設定需求 | 測試計劃 | 預期的結果 | 測試狀態 | 分數 | 附註 |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |事件管理|-Microsoft 威脅防護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP </br></br>-Microsoft Cloud App Security (optional) |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作 |[類比攻擊](mtp-pilot-simulate.md) <br></br>[調查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |調查人員可以瞭解該事件的範圍與影響，並管理該事件||||
 |AutoIR|-Microsoft 威脅防護 </br></br>-Azure ATP </br></br>-Microsoft Defender ATP |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作 <br>啟用 AutoIR  |[類比攻擊](mtp-pilot-simulate.md) <br></br>[自動調查](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate.md#automated-investigation-and-remediation) |Microsoft 威脅防護會自動修正警示和事件||||

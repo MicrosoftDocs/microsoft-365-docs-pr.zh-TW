@@ -1,5 +1,5 @@
 ---
-title: 設定 Office 365 ATP 中的安全連結原則
+title: 在 Office 365 ATP 中設定安全連結原則
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,14 +17,14 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Office 365 Advanced 威脅防護 (ATP) 中，查看、建立、修改及刪除安全連結原則及全域安全連結設定。
-ms.openlocfilehash: b6b013364fc763450ac8bef0d06bd2fad8d55daa
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: cf60820297401de92781a48f22f70d1f503e3097
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350716"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417250"
 ---
-# <a name="set-up-safe-links-policies-in-office-365-atp"></a>設定 Office 365 ATP 中的安全連結原則
+# <a name="set-up-safe-links-policies-in-office-365-atp"></a>在 Office 365 ATP 中設定安全連結原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -88,9 +88,9 @@ ms.locfileid: "48350716"
 
 4. 在顯示的 [ **設定** ] 頁面上，設定下列設定：
 
-   - **在郵件中選取未知可能惡意 URLs 的動作**：選取 [ **開啟**]。
+   - **在郵件中選取未知可能惡意 URLs 的動作**：選取 [ **開啟** ]，可對電子郵件中的連結啟用安全連結保護。
 
-   - **在郵件中選取未知可能惡意 URLs 的動作**：選取 [ **開啟** ] 或 [保留 **預設值]** [選取]。
+   - **選取 Microsoft 小組中未知或可能惡意的 URLs 的動作**：選擇 [ **開啟** ]，可對小組中的連結啟用安全連結保護。
 
    - **對指向檔案的可疑連結和連結套用即時 URL 掃描**：選取此設定可在電子郵件訊息中啟用連結的即時掃描。
 

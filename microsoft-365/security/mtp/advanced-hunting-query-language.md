@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: ffa5e6abf7fb1cb0f93fe1c233ef7e3f0b023faf
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 35de1504d4d7ddd3512b6cc3e478b138c1f43c29
+ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412619"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48418118"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 
@@ -34,7 +34,7 @@ ms.locfileid: "48412619"
 適用於：****
 - Microsoft 威脅防護
 
-進階搜捕是以 [Kusto 查詢語言](https://docs.microsoft.com/azure/kusto/query/)為基礎。 您可以使用 Kusto 語法和運算子來建立查詢，以在特定 [架構](advanced-hunting-schema-tables.md)中尋找資訊。 若要深入了解這些概念，請執行您的第一個查詢。
+進階搜捕是以 [Kusto 查詢語言](https://docs.microsoft.com/azure/kusto/query/)為基礎。 您可以使用 Kusto 運算子和語句來建立在特定 [架構](advanced-hunting-schema-tables.md)中尋找資訊的查詢。 若要深入了解這些概念，請執行您的第一個查詢。
 
 ## <a name="try-your-first-query"></a>嘗試您的第一個查詢
 

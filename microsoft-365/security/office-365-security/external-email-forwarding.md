@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: f729aa816caf8fb07499037ee27fbfc37b7205b3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
+ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202876"
+ms.lasthandoff: 10/10/2020
+ms.locfileid: "48417224"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>在 Office 365 中設定外部電子郵件轉發功能
 
@@ -28,7 +28,7 @@ ms.locfileid: "48202876"
 
 外部轉送是由 *輸出反垃圾郵件原則* 所控制，並根據設定的設定範圍限定為使用者。 目前支援的設定如下：
 
-- **自動** –在這種模式下，系統負責決定是否允許轉寄的郵件。  這是預設模式，在這種模式下，系統會封鎖自動外部轉送。
+- **自動** –這是系統控制的：可讓輸出垃圾郵件篩選控制自動外部電子郵件轉發。 這是預設設定。
 
 - **開啟** -允許和不限制自動外部轉送。
 
@@ -37,7 +37,7 @@ ms.locfileid: "48202876"
 如需如何設定這些設定的詳細資訊，請參閱 [設定 EOP 中的外寄垃圾郵件篩選](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) 。
 
 > [!NOTE]
-> 停用自動轉送也會 dsable 將郵件重新導向至外部地址的收件匣規則。
+> 停用自動轉送也會停用將郵件重新導向至外部地址的收件匣規則。
 
 ## <a name="controlling-external-email-forwarding"></a>控制外部電子郵件轉發
 
