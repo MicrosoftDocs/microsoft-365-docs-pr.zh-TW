@@ -13,18 +13,18 @@ localization_priority: Priority
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+- m365solution-mig
+- m365initiative-compliance
 search.appverid:
 - MOE150
 - MET150
-- m365solution-mig
-- m365initiative-compliance
 description: 準備開始實作保留原則及保留標籤來管理貴組織的資料，但不確定從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: 8ff6b05a675053009c3d42587e296ab240b2740d
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: ea5ccdbe0267c2b894e6b69cf8b048925af1b409
+ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338382"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48399508"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>開始使用保留原則和保留標籤
 
@@ -81,6 +81,6 @@ ms.locfileid: "48338382"
 
 不同于保留原則，保留標籤在 Microsoft 365 應用程式中具有 UI。 在您將保留標籤部署到生產網路前，請務必為使用者和您的技術支援部門提供指導方針。
 
-最有效的使用者文件會是您為所選的保留標籤名稱和組態提供的自訂指導方針和指示。 不過，您可以使用下列資訊來取得基本指示：
+最有效的使用者文件會是您為所選的保留標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 保留標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861) (英文)。
 
-- [手動套用保留標籤](create-apply-retention-labels.md#manually-apply-retention-labels)
+您也會在以下章節中找到基本的使用者指示：[手動套用保留標籤](create-apply-retention-labels.md#manually-apply-retention-labels)。
