@@ -16,22 +16,18 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 判斷 Microsoft 365 客戶資料的全球儲存位置
-ms.openlocfilehash: 9f651cf2bf042a59efcfc9b76fd4349c839e7423
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: da58b5e322190e61d72dc30ac6e1ea075e8f48b4
+ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384774"
+ms.lasthandoff: 10/12/2020
+ms.locfileid: "48422626"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
 -->
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客戶資料的儲存位置
-
->[!Note]
->對本文章的更新受到 Microsoft 嚴格控制。 將不會發佈所進行的直接編輯。 如果您有要建議的變更，請在本文章結尾以意見反應形式提交。
->
 
 下表顯示針對所有 Microsoft 的全球雲端位置的 Microsoft 365 服務，客戶資料待用儲存的所在位置。 展開您的帳單地址所在國家/地區的位置，以找出每個服務的客戶資料將儲存的位置。
 
@@ -109,10 +105,6 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
   - 預覽版、Beta 版或其他搶鮮版服務，其一般會將客戶資料儲存在美國，但也可能會將其儲存在全球。
 
 儘管如此，Microsoft 不會控制或限制客戶或其使用者可能從中存取客戶資料的地理位置。 
-
-### <a name="can-i-edit-the-information-in-this-article"></a>我可以編輯本文章中的資訊嗎？
-
-不行。 對本文章的更新受到 Microsoft 嚴格控制。 將不會發佈所進行的直接編輯。 如果您有要建議的變更，請在本文章結尾以意見反應形式提交。
 
 ## <a name="data-center-locations"></a>資料中心位置
 
