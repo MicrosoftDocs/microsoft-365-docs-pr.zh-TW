@@ -10,12 +10,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 了解如何尋找 Microsoft SharePoint Syntex 的資源。
-ms.openlocfilehash: 5d375b27fe3cd58069851f12c459460ac605da83
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 9580a2db62fc8ddef16e79817498eebe9feef6bb
+ms.sourcegitcommit: 7e8151ff74cb1cfc0dd59fadcac423c338415d77
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350770"
+ms.lasthandoff: 10/08/2020
+ms.locfileid: "48390116"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 簡介
 
@@ -26,6 +26,12 @@ Microsoft SharePoint Syntex 是 Office 365 服務，可協助組織：
 - 將內容轉化為知識
 
 此頁上的資源旨在協助您開始了解和使用您組織中的 SharePoint Syntex。
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4GJXS] 
+
+</br>
 
 ## <a name="get-started"></a>快速入門
 
@@ -64,7 +70,7 @@ Microsoft SharePoint Syntex 是 Office 365 服務，可協助組織：
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
 |了解如何使用模型|[建立內容中心](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[建立分類器](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[建立擷取器](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[建立表單處理模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[說明類型](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>[套用文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[透過範例模型深入了解文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
-|將保留標籤套用至模型|[文件瞭解和表單處理模型之間的差異](https://docs.microsoft.com/microsoft-365/contentunderstanding/difference-between-document-understanding-and-form-processing-model)|
+|將保留標籤套用至模型|[將保留標籤套用至文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |在建立擷取器時使用受管理的中繼資料服務字詞庫分類法|[在建立擷取器時運用字詞庫分類法](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |了解如何查看您模型的資料|[模型流量分析](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|
 

@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1be64f98def6676e27e1e0c1b3f7e031b31cba
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a734d6f71a943964775477199025180d1a41426e
+ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196618"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "48408623"
 ---
-# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容 
+# <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
@@ -68,7 +68,6 @@ ms.locfileid: "48196618"
 
 ![用於加密的敏感度標籤選項](../media/encrytion-options-sensitivity-label.png)
 
-
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>套用標籤時，現有的加密會發生什麼情況
 
 如果您將敏感度標籤套用到未加密的內容，您可以選取的加密選項結果會一目了然。 例如，如果將加密設定為 [無]****，則內容會保持未加密。
@@ -88,6 +87,7 @@ ms.locfileid: "48196618"
 |**具有系統管理員定義權限的標籤**|原始加密已移除|新標籤加密已套用|原始加密已移除|
 
 請注意，在套用新標籤加密或移除原始加密的情況下，只有在套用標籤的使用者有支援此動作的使用權利或角色時，才會發生這種情況：
+
 - [使用權限](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions)匯出或完全控制。
 - [版權管理簽發者或版權管理擁有者](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)的角色，或[超級使用者](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
 
@@ -99,7 +99,7 @@ ms.locfileid: "48196618"
 
 當電子郵件以任何方法加密時，任何附加至電子郵件的未加密 Office 文件都會自動繼承相同的加密設定。
 
-已加密然後新增為附件的文件，一律會保留其原始加密。 
+已加密然後新增為附件的文件，一律會保留其原始加密。
 
 ## <a name="configure-encryption-settings"></a>設定加密設定
 
@@ -112,10 +112,9 @@ ms.locfileid: "48196618"
 
 或者，如果您有一個名為 [商業合約]**** 的敏感度標籤，並且貴組織的工作流程要求人員隨機與不同人員共同處理此內容，則您可能會希望讓使用者在指派標籤時決定可存取的人員。 這種靈活性既可以幫助您提高使用者的工作效率，又可以減少管理員更新或建立新敏感度標籤以滿足特定案例的要求。
 
-選擇 [立即指派權限] 或 [讓使用者指派權限]： 
+選擇 [立即指派權限] 或 [讓使用者指派權限]：
 
 ![新增使用者或系統管理員定義權限的選項](../media/sensitivity-label-user-or-admin-defined-permissions.png)
-
 
 ## <a name="assign-permissions-now"></a>立即指派權限
 
@@ -162,7 +161,7 @@ ms.locfileid: "48196618"
 - Azure AD 中特定使用者或啟用電子郵件功能的安全性群組、通訊群組或 Microsoft 365 群組 ([先前的 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) (英文)。 Microsoft 365 群組可以有靜態或[動態的成員資格](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) (部分機器翻譯)。 請注意，您無法使用 [Exchange 的 動態通訊群組](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) (部分機器翻譯)，因為此群組類型不會同步處理到 Azure AD，且您無法使用未啟用電子郵件功能的安全性群組。
 
 - 任何電子郵件地址或網域。 使用此選項來指定另一個組織中使用 Azure AD 的所有使用者，方法是輸入來自該組織的任何網域名稱。 您也可以針對社交提供者使用此選項，方法是輸入其網域名稱，例如 **gmail.com**、**hotmail.com** 或 **outlook.com**。
-    
+
     > [!NOTE]
     > 如果您指定的網域來自使用 Azure AD 的組織，則無法限制對該特定網域的存取。 相反地，系統會為擁有您指定網域名稱的租用戶自動包含 Azure AD 中的所有經驗證網域。
 
@@ -175,6 +174,7 @@ ms.locfileid: "48196618"
 此設定不會限制能夠存取標籤所加密內容的人員，同時仍會加密內容，並提供限制內容使用方式 (權限) 和存取方式 (到期和離線存取) 的選項。 不過，開啟加密內容的應用程式必須能夠支援所使用的驗證。 因此，同盟社交提供者 (例如 Google) 和一次性密碼驗證僅對電子郵件有效，且僅在您使用 Exchange Online 時才有效。 您可以將 Microsoft 帳戶與 Office 365 應用程式和 [Azure 資訊保護檢視器](https://portal.azurerms.com/#/download)搭配使用。
 
 任何已驗證使用者設定的某些典型案例如下:
+
 - 您不在意檢視內容的是誰，但想要限制其使用方式。 例如，您不希望編輯、複製或列印內容。
 - 您不需要限制存取內容的是誰，但想要能夠確認誰開啟了該內容。
 - 您必須將靜態內容和在傳輸中的內容加密，但不要求存取控制。
@@ -223,10 +223,11 @@ ms.locfileid: "48196618"
 
 - 在 Outlook 中，使用者可以針對所選的收件者選取等同於[不可轉寄](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails)選項的限制。
 
-- 在 Word、PowerPoint 和 Excel 中，系統會提示使用者為特定使用者、群組或組織選取其自己的權限。 
+- 在 Word、PowerPoint 和 Excel 中，系統會提示使用者為特定使用者、群組或組織選取其自己的權限。
+
     > [!NOTE]
     > 適用於 Word、PowerPoint 和 Excel 的此選項，是由 Azure 資訊保護整合標籤用戶端支援。 如需使用內建標記的應用程式，請 [查看哪些應用程式提供支援](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)。
-    > 
+    >
     > 如果已選取此選項，但使用者的應用程式不支援此選項，表示該標籤未顯示給使用者，或為顯示一致的標籤，但無法在套用時為使用者提供說明訊息。
 
 支援這些選項時，請使用下表來識別使用者何時可看到敏感度標籤：
@@ -272,7 +273,6 @@ ms.locfileid: "48196618"
 
 - MacOS：[校閱]**** 索引標籤 > [保護]****  >  [權限]****  >  [限制存取]****
 
-
 ## <a name="example-configurations-for-the-encryption-settings"></a>加密設定的範例組態
 
 針對後續的各個範例，當您[建立或編輯敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)時，請從精靈的 **[加密]** 頁面執行組態。 首先，請確認 **[加密]** 設定為 **[套用]**：
@@ -281,18 +281,17 @@ ms.locfileid: "48196618"
 
 ### <a name="example-1-label-that-applies-do-not-forward-to-send-an-encrypted-email-to-a-gmail-account"></a>範例 1：套用 [不可轉寄] 標籤，以傳送加密的電子郵件傳送至 Gmail 帳戶
 
-此標籤只會在 Outlook 和 Outlook 網頁版中顯示，因此您必須使用 Exchange Online。 當使用者需要傳送加密的電子郵件給使用 Gmail 帳戶 (或您組織外部的任何其他電子郵件帳戶)的人員時，指示使用者選取此標籤。 
+此標籤只會在 Outlook 和 Outlook 網頁版中顯示，因此您必須使用 Exchange Online。 當使用者需要傳送加密的電子郵件給使用 Gmail 帳戶 (或您組織外部的任何其他電子郵件帳戶)的人員時，指示使用者選取此標籤。
 
-您的使用者在 **[收件者]** 方塊中輸入 Gmail 電子郵件地址。  然後選取標籤，而 [不可轉寄] 選項會自動新增至電子郵件中。 結果會是收件者無法轉寄電子郵件、列印它、複製其內容，或使用 **[另存新檔]** 選項將電子郵件儲存在信箱外部。 
+您的使用者在 **[收件者]** 方塊中輸入 Gmail 電子郵件地址。  然後選取標籤，而 [不可轉寄] 選項會自動新增至電子郵件中。 結果會是收件者無法轉寄電子郵件、列印它、複製其內容，或使用 **[另存新檔]** 選項將電子郵件儲存在信箱外部。
 
 1. 在 **[加密]** 頁面上：針對 **[立即指派權限，或讓使用者決定?]**，選取 **[當使用者套用標籤時，讓他們指派權限]**。
 
-3. 選取核取方塊：**[在 Outlook 中，強制限制等於 [不可轉寄] 選項]**。
+2. 選取核取方塊：**[在 Outlook 中，強制限制等於 [不可轉寄] 選項]**。
 
-4. 如果已選取，請清除此核取方塊：**[在 Word、PowerPoint 與 Excel 中提示使用者指定權限]**。
+3. 如果已選取，請清除此核取方塊：**[在 Word、PowerPoint 與 Excel 中提示使用者指定權限]**。
 
-5. 選取 **[下一步]** 並完成精靈。
-
+4. 選取 **[下一步]** 並完成精靈。
 
 ### <a name="example-2-label-that-restricts-read-only-permission-to-all-users-in-another-organization"></a>範例 2：會對其他組織中的所有使用者限制唯讀權限的標籤
 
@@ -302,22 +301,21 @@ ms.locfileid: "48196618"
 
 1. 在 **[加密]** 頁面上：針對 **[立即指派權限，或讓使用者決定?]**，選取 **[立即指派權限]**。
 
-3. 針對 **[允許離線存取]**，選取 **[從不]**。
+2. 針對 **[允許離線存取]**，選取 **[從不]**。
 
-4. 選取 [指派權限]****。
+3. 選取 [指派權限]****。
 
-3. 在 **[指派權限]** 窗格中，選取 **[新增特定電子郵件地址或網域]**。
+4. 在 **[指派權限]** 窗格中，選取 **[新增特定電子郵件地址或網域]**。
 
-4. 在文字方塊中，輸入來自另一個組織的網域名稱，例如，**fabrikam.com**。 然後選取 **[新增]**。
+5. 在文字方塊中，輸入來自另一個組織的網域名稱，例如，**fabrikam.com**。 然後選取 **[新增]**。
 
-5. 選取 **[選擇許可權]**。
+6. 選取 **[選擇許可權]**。
 
-6. 在 **[選擇權限]** 窗格中，選取下拉式方塊，選取 **[檢視器]**，然後選取 **[儲存]**。
+7. 在 **[選擇權限]** 窗格中，選取下拉式方塊，選取 **[檢視器]**，然後選取 **[儲存]**。
 
-6. 回到 **[指派權限]** 窗格，選取 **[儲存]**。
+8. 回到 **[指派權限]** 窗格，選取 **[儲存]**。
 
-7. 在 **[加密]** 頁面上，選取 **[下一步]** 並完成精靈。
-
+9. 在 **[加密]** 頁面上，選取 **[下一步]** 並完成精靈。
 
 ### <a name="example-3-add-external-users-to-an-existing-label-that-encrypts-content"></a>範例 3：將外部使用者新增至可加密內容的現有標籤
 
@@ -339,10 +337,9 @@ ms.locfileid: "48196618"
 
 8. 在 **[加密]** 頁面上，選取 **[下一步]** 並完成精靈。
 
-
 ### <a name="example-4-label-that-encrypts-content-but-doesnt-restrict-who-can-access-it"></a>範例 4：加密內容但不會限制能夠存取內容人員的標籤
 
-此組態的優點在於您不需要指定使用者、群組或網域來加密電子郵件或文件。 內容仍會加密，您仍然可以指定使用權限、到期日期和離線存取。 
+此組態的優點在於您不需要指定使用者、群組或網域來加密電子郵件或文件。 內容仍會加密，您仍然可以指定使用權限、到期日期和離線存取。
 
 僅當您不需要限制能開啟受保護文件或電子郵件的人員時，才使用此組態。 [此設定的詳細資訊](#requirements-and-limitations-for-add-any-authenticated-users)
 
@@ -352,8 +349,8 @@ ms.locfileid: "48196618"
 
 3. 選取 [指派權限]****。
 
-4. 在 **[指派權限]** 窗格中，選取 **[新增所有經過驗證的使用者]**。 
-    
+4. 在 **[指派權限]** 窗格中，選取 **[新增所有經過驗證的使用者]**。
+
     針對 **[使用者和群組]**，您會看到 **[授權的使用者]** 已自動新增。 您無法變更此值，只能刪除它，這會取消 **[新增所有經過驗證的使用者]** 選取範圍。
 
 5. 選取 **[選擇許可權]**。
@@ -369,26 +366,26 @@ ms.locfileid: "48196618"
 加密您最機密的文件和電子郵件，可協助確保只有獲授權的人員可以存取此資料。 不過，有一些事項需要納入考量：
 
 - 如果您的組織尚未[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)：
-    
-    - 搜尋、電子文件探索和 Delve 對加密的檔案將不適用。
-    - DLP 原則對這些加密檔案的中繼資料 (包括保留標籤資訊) 有效，但對這些檔案的內容 (例如檔案中的信用卡號碼) 沒有效用。
-    - 使用者無法使用 Office 網頁版開啟加密的檔案。 啟用 SharePoint 和 OneDrive 中的 Office 檔案敏感度標籤時，使用者可以使用 Office 網頁版來開啟加密的檔案，但有一些[限制](sensitivity-labels-sharepoint-onedrive-files.md#limitations)，其中包括已使用內部部署金鑰 (稱為「保存您自己的金鑰」或 HYOK)、[雙重金鑰加密](#double-key-encryption)，以及已獨立於敏感度標籤套用的加密。
+
+  - 搜尋、電子文件探索和 Delve 對加密的檔案將不適用。
+  - DLP 原則對這些加密檔案的中繼資料 (包括保留標籤資訊) 有效，但對這些檔案的內容 (例如檔案中的信用卡號碼) 沒有效用。
+  - 使用者無法使用 Office 網頁版開啟加密的檔案。 啟用 SharePoint 和 OneDrive 中的 Office 檔案敏感度標籤時，使用者可以使用 Office 網頁版來開啟加密的檔案，但有一些[限制](sensitivity-labels-sharepoint-onedrive-files.md#limitations)，其中包括已使用內部部署金鑰 (稱為「保存您自己的金鑰」或 HYOK)、[雙重金鑰加密](#double-key-encryption)，以及已獨立於敏感度標籤套用的加密。
 
 - 若要讓多個使用者同時編輯加密的檔案，他們都必須使用 Office 網頁版。 如果未這麼做，而且檔案已經開啟：
-    
-    - 在 Office 應用程式 (Windows、Mac、Android 和 iOS) 中，使用者會看到 [檔案使用中]**** 訊息，其中包含已簽出檔案的人員名稱。 然後，他們可以檢視唯讀複本，或儲存並編輯檔案的複本，並在檔案可用時收到通知。
-    - 在 Office 網頁版中，使用者會看到錯誤訊息，指出他們無法與其他人一起編輯該文件。 然後他們可以選取 [在閱讀檢視中開啟]****。
+
+  - 在 Office 應用程式 (Windows、Mac、Android 和 iOS) 中，使用者會看到 [檔案使用中]**** 訊息，其中包含已簽出檔案的人員名稱。 然後，他們可以檢視唯讀複本，或儲存並編輯檔案的複本，並在檔案可用時收到通知。
+  - 在 Office 網頁版中，使用者會看到錯誤訊息，指出他們無法與其他人一起編輯該文件。 然後他們可以選取 [在閱讀檢視中開啟]****。
 
 - Office 應用程式 (Windows、Mac、Android 和 iOS) 中的[自動儲存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)功能已對加密的檔案停用。 使用者會看到一則訊息，指出檔案具有必須移除的權限限制，之後才可以開啟「自動儲存」。
 
 - 在 Office 應用程式 (Windows、Mac、Android 和 iOS) 中開啟加密的檔案可能需要較長的時間才能開啟。
 
 - 用於已加密檔案的下列動作在 Office 應用程式 (Windows、Mac、Android 和 iOS) 中不受支援，因此使用者會看到錯誤訊息，指出發生錯誤。 不過，您可以使用 SharePoint 功能做為替代：
-    
-    - 檢視、還原和儲存舊版的複本。 或者，當您[為清單或文件庫啟用和設定版本設定](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)時，使用者可以使用 Office 網頁版執行這些動作。 
-    - 變更檔案的名稱或位置。 或者，使用者可以在 SharePoint 中[重新命名文件庫中的檔案、資料夾或連結](https://support.microsoft.com/zh-TW/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。
 
-若要獲得使用敏感度標籤加密之檔案的最佳共同作業體驗，建議您[為 SharePoint 和 OneDrive 中的 Office 檔案中使用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)和 Office 網頁版。 
+  - 檢視、還原和儲存舊版的複本。 或者，當您[為清單或文件庫啟用和設定版本設定](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37)時，使用者可以使用 Office 網頁版執行這些動作。
+  - 變更檔案的名稱或位置。 或者，使用者可以在 SharePoint 中[重新命名文件庫中的檔案、資料夾或連結](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185)。
+
+若要獲得使用敏感度標籤加密之檔案的最佳共同作業體驗，建議您[為 SharePoint 和 OneDrive 中的 Office 檔案中使用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)和 Office 網頁版。
 
 ## <a name="important-prerequisites"></a>重要的先決條件
 
@@ -401,10 +398,10 @@ ms.locfileid: "48196618"
 ### <a name="configure-exchange-for-azure-information-protection"></a>設定 Exchange 進行 Azure 資訊保護
 
 不需要先設定 Exchange 來使用 Azure 資訊保護，使用者就能在 Outlook 中套用標籤來加密電子郵件。 不過，在設定 Exchange 使用 Azure 資訊保護之前，您無法獲得使用 Exchange 的 Azure 版權管理保護的完整功能。
- 
-例如，使用者無法在行動電話或 Outlook 網頁版上檢視加密的電子郵件，無法為加密的電子郵件編製索引供搜尋，而且您無法設定 Exchange Online DLP 使用版權管理保護。 
+
+例如，使用者無法在行動電話或 Outlook 網頁版上檢視加密的電子郵件，無法為加密的電子郵件編製索引供搜尋，而且您無法設定 Exchange Online DLP 使用版權管理保護。
 
 若要確保 Exchange 可以支援這些額外情節，請參閱下列內容：
 
 - 針對 Exchange Online，請參閱 [Exchange Online：IRM 設定](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的指示。
-- 針對 Exchange 內部部署，您必須部署 [RMS 連接器和設定您的 Exchange Server](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。 
+- 針對 Exchange 內部部署，您必須部署 [RMS 連接器和設定您的 Exchange Server](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。
