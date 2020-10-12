@@ -324,22 +324,32 @@
               href: archive-twitter-data-with-sample-connector.md
         - name: Globanet 資料連接器
           items:
+            - name: Cisco Jabber
+              href: archive-ciscojabberonmssql-data.md
             - name: EML
               href: archive-eml-data.md
             - name: FX Connect
               href: archive-fxconnect-data.md
+            - name: Jive
+              href: archive-jive-data.md
+            - name: Pivot
+              href: archive-pivot-data.md
             - name: Reuters Eikon
               href: archive-reuterseikon-data.md
-            - name: Slack
+            - name: Slack eDiscovery
               href: archive-slack-data.md
             - name: Symphony
               href: archive-symphony-data.md
-            - name: 文字分隔
+            - name: 文字分隔符號
               href: archive-text-delimited-data.md
+            - name: 網頁
+              href: archive-webpagecapture-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
             - name: Facebook Workplace
               href: archive-workplacefromfacebook-data.md
+            - name: XSLT/XML
+              href: archive-xslt-xml-data.md
             - name: Zoom Meetings
               href: archive-zoommeetings-data.md
         - name: TeleMessage 資料連接器
@@ -824,8 +834,14 @@
           href: auditing-troubleshooting-scenarios.md
         - name: 使用稽核記錄中的共用稽核
           href: use-sharing-auditing.md
-        - name: 在稽核記錄中搜尋電子文件探索活動
-          href: search-for-ediscovery-activities-in-the-audit-log.md
+        - name: Office 365 管理活動 API
+          items:
+            - name: Office 365 管理活動 API 參考 (英文)
+              href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference'
+            - name: Office 365 管理活動 API 架構 (英文)
+              href: 'https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema'
+            - name: Office 365 管理活動 API 常見問題和疑難排解 (英文)
+              href: 'https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api'
     - name: 信箱稽核
       href: enable-mailbox-auditing.md
     - name: 進階稽核
