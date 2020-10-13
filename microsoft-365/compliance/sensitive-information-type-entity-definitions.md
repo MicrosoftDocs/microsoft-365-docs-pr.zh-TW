@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: 8ee871ccde30d3ab71dbcb2d5183aafdf11482bd
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235569"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430430"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -146,7 +146,7 @@ ms.locfileid: "48235569"
 
 ### <a name="format"></a>格式
 
-六個到 twn 的位數，含或不含銀行狀態分公司編號
+具有或不含銀行狀態分公司號碼的六到十位數
 
 ### <a name="pattern"></a>模式
 
@@ -807,7 +807,7 @@ OR
 
 - reisepassnummer
 - reisepasse
-- 非 Reisepass 
+- No-Reisepass 
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
@@ -1455,7 +1455,7 @@ OR
 
 ### <a name="format"></a>格式
 
-任何86的小寫字母或大寫字母、數位、正 )  ( 斜線 (+) 的任何組合，前面或後面接著所列模式中所述的字元。
+任何86的小寫字母或大寫字母、數位、正 )  (斜線 (+) 的任何組合，前面或後面接著所列模式中所述的字元。
 
 ### <a name="pattern"></a>模式
 
@@ -1697,7 +1697,7 @@ OR
 - paspoortnummers
 - Passeport 購買
 - Passeport livre
-- 傳遞-Nr
+- Pass-Nr
 - Passnummer
 - reisepass kein
 
@@ -5935,18 +5935,18 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - Nr-Führerschein 
 - Nr-Fuhrerschein 
 - Nr-Fuehrerschein 
-- 非 Führerschein 
-- 非 Fuhrerschein 
-- 非 Fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-Fuehrerschein 
 - N-Führerschein 
 - N-Fuhrerschein 
 - N-Fuehrerschein
 - Nr-Führerschein 
 - Nr-Fuhrerschein 
 - Nr-Fuehrerschein 
-- 非 Führerschein 
-- 非 Fuhrerschein 
-- 非 Fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-Fuehrerschein 
 - N-Führerschein 
 - N-Fuhrerschein 
 - N-Fuehrerschein 
@@ -6067,7 +6067,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 - reisepasse
 - reisepassnummer
-- 非 Reisepass 
+- No-Reisepass 
 - Nr-Reisepass
 - Reisepass-Nr
 - Passnummer
