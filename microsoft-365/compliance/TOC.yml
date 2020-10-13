@@ -250,6 +250,8 @@
           href: how-dlp-works-between-admin-centers.md
         - name: 使用敏感度標籤作為 DLP 原則中的條件 (預覽)
           href: dlp-sensitivity-label-as-condition.md
+        - name: 針對非 Microsoft 雲端應用程式使用資料外洩防護原則
+          href: dlp-use-policies-non-microsoft-cloud-apps.md
 - name: 管理資訊控管
   items:
     - name: 監管您的資料

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 端點資料遺失防護以監視檔案活動，並對這些端點的文件實作保護動作。
-ms.openlocfilehash: e0b9ba6afcad0c683aaa7386998a621f279aa9eb
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: c579d0bbfdc72e56d99558ffa7e6812d00098c0d
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379245"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430678"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>開始使用端點資料外洩防護 (預覽版)
 
@@ -81,7 +81,7 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 
 請確認您計畫部署端點 DLP 的 Windows 10 裝置符合這些需求。
 
-1. 必須執行 Windows 10 組建 1809 或更新版本。
+1. 必須執行 Windows 10 x64 組建 1809 或更新版本。
 2. 所有裝置都必須[加入 Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或加入混合式 Azure AD。
 3. 在端點裝置上安裝 Microsoft Chromium Edge 瀏覽器，以強制執行上傳至雲端活動的原則動作。 請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
