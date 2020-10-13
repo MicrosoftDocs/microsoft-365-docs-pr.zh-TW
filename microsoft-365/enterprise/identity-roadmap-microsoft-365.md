@@ -13,15 +13,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - Strat_O365_Enterprise
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 ms.custom: ''
 description: Microsoft 365 的身分識別藍圖。
-ms.openlocfilehash: 4daf673a35505652bdb8105f304dde8166512660
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: c79b7babbfbd97a13979de1ed23052ac572d9ded
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398768"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446284"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Microsoft 365 的身分識別藍圖
 
@@ -41,7 +41,7 @@ ms.locfileid: "48398768"
 
 您也可以 [下載此標牌](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) ，並以 letter、法律或卡片 (11 x 17) 格式來列印。
 
-## <a name="plan"></a>方案
+## <a name="plan"></a>規劃
 
 若要規劃您的身分識別實現：
 

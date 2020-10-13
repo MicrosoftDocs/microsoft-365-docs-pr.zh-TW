@@ -2,8 +2,8 @@
 title: 從共用信箱中移除授權
 f1.keywords:
 - NOCSH
-ms.author: pebaum
-author: pebaum
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '從共用信箱中移除授權，將其指派給其他使用者。 '
-ms.openlocfilehash: 401b334efeccf6d7c4caca20be3cc9767b2df945
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432216"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445492"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>從共用信箱移除授權
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 
@@ -58,13 +58,13 @@ ms.locfileid: "44432216"
   
 2. 選取共用信箱。
 
-3. 一個 [**授權與應用程式**] 索引標籤，展開 [**授權**]，然後取消選取您要移除之授權的方塊。
+3. 一個 [ **授權與應用程式** ] 索引標籤，展開 [ **授權** ]，然後取消選取您要移除之授權的方塊。
 
 4. 選取 **[儲存變更]**。
 
-5. 當您回到 [作用中**使用者**] 頁面時，共用信箱的狀態將會是 [未**授權**]。
+5. 當您回到 [作用中 **使用者** ] 頁面時，共用信箱的狀態將會是 [未 **授權**]。
 
-6. 您仍在支付授權。 若要停止付費，請[從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
 
 ::: moniker-end
 
@@ -72,18 +72,18 @@ ms.locfileid: "44432216"
 
  1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">[作用中使用者]</a> 頁面。
 
-   > [!NOTE]
-   > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
+    > [!NOTE]
+    > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
 
 2. 選取 [共用信箱]，然後選取 [**產品授權**] 旁的 [**編輯**]。
 
-3. [**產品授權**] 頁面上，針對您想要移除的授權，將切換設定為 [**關閉**]。
+3. [ **產品授權** ] 頁面上，針對您想要移除的授權，將切換設定為 [ **關閉** ]。
 
 4. 選取 **[儲存]**。
 
-5. 當您回到 [作用中**使用者**] 頁面時，共用信箱的狀態將會是 [未**授權**]。
+5. 當您回到 [作用中 **使用者** ] 頁面時，共用信箱的狀態將會是 [未 **授權**]。
 
-6. 您仍在支付授權。 若要停止付費，請[從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
 
 ::: moniker-end
 
@@ -91,18 +91,18 @@ ms.locfileid: "44432216"
 
  1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
-   > [!NOTE]
-   > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
+    > [!NOTE]
+    > 您必須從 [作用中使用者] 頁面中移除授權。 您無法從共用信箱頁面移除授權，因為授權是使用者設定。
 
 2. 選取 [共用信箱]，然後選取 [**產品授權**] 旁的 [**編輯**]。
 
-3. [**產品授權**] 頁面上，針對您想要移除的授權，將切換設定為 [**關閉**]。
+3. [ **產品授權** ] 頁面上，針對您想要移除的授權，將切換設定為 [ **關閉** ]。
 
 4. 選取 **[儲存]**。
 
-5. 當您回到 [作用中**使用者**] 頁面時，共用信箱的狀態將會是 [未**授權**]。
+5. 當您回到 [作用中 **使用者** ] 頁面時，共用信箱的狀態將會是 [未 **授權**]。
 
-6. 您仍在支付授權。 若要停止付費，請[從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
+6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
 
 ::: moniker-end 
 

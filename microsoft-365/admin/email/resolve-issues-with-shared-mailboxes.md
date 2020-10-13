@@ -2,9 +2,9 @@
 title: 解決共用信箱的問題
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
-manager: mnirkhe
+ms.author: sharik
+author: SKjerland
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 如果您遇到共用信箱的問題，請嘗試這些解決方案。
-ms.openlocfilehash: 5d6de9ac66b11f0e50b259cdca0b1bb50b8326ee
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c889d3aa2fab8c2dce4cc2a8a00ef49a905363a1
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400013"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445504"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>解決共用信箱的問題
 
@@ -35,9 +35,9 @@ ms.locfileid: "44400013"
 ## <a name="error-when-creating-shared-mailboxes"></a>建立共用信箱時發生錯誤
 <a name="bkmk_Fix"> </a>
 
-如果您看到錯誤訊息，**表示 proxy 位址 "smtp： <共用信箱名稱 \> " 已由 "" 的 proxy 位址或 LegacyExchangeDN 使用 \<name> 。請選擇另一個 proxy 位址**，這表示您嘗試將已在使用中的名稱提供給共用信箱。 舉例來說，假設您想將共用信箱命名為 info@domain1 和 info@domain2。 方法有兩種：
+如果您看到錯誤訊息， **表示 proxy 位址 "smtp： <共用信箱名稱 \> " 已由 "" 的 proxy 位址或 LegacyExchangeDN 使用 \<name> 。請選擇另一個 proxy 位址**，這表示您嘗試將已在使用中的名稱提供給共用信箱。 舉例來說，假設您想將共用信箱命名為 info@domain1 和 info@domain2。 方法有兩種：
 
-  - 使用 Windows PowerShell。 如需相關指示，請參閱這篇博客文章：[在不同的網域建立具有相同別名的共用信箱](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - 使用 Windows PowerShell。 如需相關指示，請參閱這篇博客文章： [在不同的網域建立具有相同別名的共用信箱](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
   - 將第二個共用信箱命名為不同于「開始」以避免錯誤的地方。 然後在系統管理中心，將共用信箱重新命名為您想要的內容。
 
@@ -47,7 +47,7 @@ ms.locfileid: "44400013"
 
 **無法傳送此郵件。您沒有代表指定使用者傳送郵件的許可權。**
 
-當 Microsoft 365 遇到複寫延遲問題時，就會出現此訊息。 當您在所有的資料中心之間複寫新共用信箱（或新增使用者）的相關資訊時，它應該會在一小時內消失。 請等候一小時後再試一次，再傳送一封郵件。
+當 Microsoft 365 遇到複寫延遲問題時，就會出現此訊息。 當您的新共用信箱的相關資訊 (或新增的使用者) 會在所有資料中心之間複寫時，它應該會移出一小時。 請等候一小時後再試一次，再傳送一封郵件。
 
 ## <a name="related-articles"></a>相關文章
 

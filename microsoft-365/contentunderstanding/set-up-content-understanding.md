@@ -9,16 +9,16 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: 8217630d66a097fcc714be80bd4d3dcceb623370
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: 410dd9550974ec7b5c1c5b4ae151bc92bf376544
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413707"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446320"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
-系統管理員可以使用 Microsoft 365 系統管理中心來設定 [Microsoft SharePoint Syntex](document-understanding-overview.md)。 
+系統管理員可以使用 Microsoft 365 系統管理中心來設定 [Microsoft SharePoint Syntex](index.md)。 
 
 開始之前，請先考慮下列事項：
 
@@ -26,8 +26,6 @@ ms.locfileid: "48413707"
 - 您的預設內容中心名稱為何？
 
 您可以在 Microsoft 365 系統管理中心初次設定之後變更您的設定。
-
-本文內容適用於 Project Cortex 個人預覽版。 [如需詳細資訊，請參閱 Project Cortex](https://aka.ms/projectcortex)。
 
 設定之前，請務必針對您環境中的設定和設定內容理解的最佳方式進行規劃。 例如，您需要考慮下列名稱：
 

@@ -12,15 +12,15 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- M365initiative-coredeploy
+- m365initiative-coredeploy
 ms.custom: it-pro
 description: 設定 Microsoft 365 承租人的藍圖。
-ms.openlocfilehash: e4b2af9143070caa1ebd8fd66ef9f367f85d3bb9
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: 0f1fa91bb81fd6cc87820f2b2d48e00e1b75a0c4
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357907"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446004"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 租使用者藍圖
 
@@ -30,7 +30,7 @@ ms.locfileid: "48357907"
 
 若要讓您的租使用者準備好用於網路和身分識別的基礎服務，請務必謹慎規劃並執行您的租使用者設定。
 
-## <a name="plan"></a>方案
+## <a name="plan"></a>規劃
 
 若要規劃租使用者的執行：
 

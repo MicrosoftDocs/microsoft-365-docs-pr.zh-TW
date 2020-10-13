@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection 中的反網路釣魚防護功能 (EOP) 和 Office 365 Advanced 威脅防護 (Office 365 ATP) 。
-ms.openlocfilehash: 9297b241122a3aa316da1594c6b30111bfead308
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: ca8b41c46a2d903edf0beae1de2334bd8c8d1e78
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48411774"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446951"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚保護
 

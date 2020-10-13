@@ -17,12 +17,12 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - m365solution-identitydevice
-ms.openlocfilehash: 502ceb47a110dd7cd743281d518e542451413672
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e07c1455cc2799481bc31871d2c3ee07b10492b9
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399653"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446180"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -118,7 +118,9 @@ Azure AD 提供完整的身分識別管理功能套件。 我們建議使用這�
 | [Azure AD 密碼保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | 偵測並封鎖已知弱密碼和其變種，以及組織特有的其他弱字詞。 預設全域禁用密碼清單會自動套用至 Azure AD 租用戶中的所有使用者。 您可以在自訂禁用密碼清單中定義其他條目。 使用者變更或重設密碼時，系統會檢查這些禁用密碼清單，以強制使用強式密碼。 |  Microsoft 365 E3 或 E5 |
 ||||
 
-![身分識別與裝置存取的元件。](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
+以下是身分識別與裝置存取的元件，包括 Intune 和 Azure AD 物件、設定和 subservices。
+
+![身分識別與裝置存取的元件](../../media/microsoft-365-policies-configurations/identity-device-access-components.png)
 
 ### <a name="microsoft-intune"></a>Microsoft Intune
 

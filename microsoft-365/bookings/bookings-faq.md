@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft 預定常見問題。
-ms.openlocfilehash: ee0de2d1412aa5ec38759a3a2512de05b9e02621
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545713"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445448"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 預定常見問題
 
@@ -21,7 +21,7 @@ ms.locfileid: "47545713"
 
 ### <a name="what-is-microsoft-bookings"></a>何謂 Microsoft 預約？
 
-Microsoft 預約是 Microsoft 365 應用程式，可讓排程和管理約會變得更輕鬆。 預定 incudes 網路型預約行事曆，並與 Outlook 整合，以優化員工的行事曆，讓您的客戶可以靈活地預定最適合他們的時間。 自動化的通知電子郵件會減少非展示的電子郵件，並減少重複排程任務的時間。 預約可協助您透過 Skype 或 Microsoft 小組輕鬆執行虛擬約會，並協助您透過小組中的預約應用程式來管理日常排程。 利用內建的自訂功能，預約設計可滿足任何組織的多個部分的需求。
+Microsoft 預約是 Microsoft 365 應用程式，可讓排程和管理約會變得更輕鬆。 預約包含 Web 型預約行事曆，並與 Outlook 整合，以優化員工的行事曆，讓您的客戶可以靈活地預定最適合他們的時間。 自動化的通知電子郵件會減少非展示的電子郵件，並減少重複排程任務的時間。 預約可協助您透過 Skype 或 Microsoft 小組輕鬆執行虛擬約會，並協助您透過小組中的預約應用程式來管理日常排程。 利用內建的自訂功能，預約設計可滿足任何組織的多個部分的需求。
 
 ### <a name="how-do-i-use-microsoft-bookings"></a>如何使用 Microsoft 預定？
 
@@ -174,7 +174,7 @@ Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的�
 
 所有時間皆位於商務時區中 (當地時區) 預設。 這表示您為預約行事曆中設定的任何設定，例如工作時間，將會出現在這個時區。 「自助」頁面能夠在使用者時區內顯示所有約會時間，如果需要，可以關閉此功能。如果 [預約] 頁面索引標籤上的 [ **永遠在上班時間中顯示時段** ]，則在 [預約] 頁面] 索引標籤上會保持未勾選的時間段
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="預定地區和時區設定":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="排程預定":::
 
 沒有任何規定可為預約中的人員設定時區。 員工時區（上班時間）將會在上班時間區域中。
 
@@ -202,7 +202,7 @@ Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的�
 
 是。 Web 應用程式中的 [預約頁面] 索引標籤上有核取方塊： **需要從「我的組織」到預訂的 Microsoft 365 或 Office 365 帳戶**。 選取此核取方塊會使自助頁面存取只會限制在您租使用者中的頁面。 位於 Web 應用程式建立和管理中的預約行事曆，只能由以系統管理員或檢視器角色新增為頁面人員的人員存取。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="預定中的預約頁面存取控制":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="排程預定":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>首頁更新的頻率如何？
 
@@ -214,7 +214,7 @@ Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的�
 
 ### <a name="can-bookings-calendars-be-cloned-or-duplicated-and-can-they-be-templatized-for-easy-scaling"></a>預定的行事曆是否可以複製或重複，是否可以 templatized 以方便擴充？
 
-現在可以透過 PowerShell 取得重複頁面的功能。 處理常式是使用圖形 API 來取得信箱詳細資料，然後使用這些詳細資料來建立新的信箱。 API 檔位於 [這裡](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
+處理常式是使用圖形 API 來取得信箱詳細資料，然後使用這些詳細資料來建立新的信箱。 API 檔位於 [這裡](https://docs.microsoft.com/graph/api/resources/booking-api-overview?view=graph-rest-beta)。
 
 ### <a name="what-reporting-is-available-in-bookings"></a>哪些報表可用於預定？
 
@@ -250,7 +250,7 @@ Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的�
 
 存取預約 Web app 涉及透過一般 Azure Active Directory (AAD) 驗證進行驗證。 您可以使用 [自助預約] 頁面，讓每位使用者都能使用網頁連結。 不過，如果選取了 [從我的組織傳送給圖書的 **microsoft 365 或 Office 365 帳戶** ] 設定，則頁面僅限在 Microsoft 365 租使用者 (使用 AAD 驗證) 時使用。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="預定中的預約頁面存取控制":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="排程預定":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>客戶資料是否因任何原因而留出生產系統？
 

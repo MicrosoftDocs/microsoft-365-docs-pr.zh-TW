@@ -15,14 +15,15 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
+- m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: ac60415f38644c4630a181b1c8d696acced57ded
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: 79e30ee6fd68148543a63377d89fe2955f276f24
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48367998"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446728"
 ---
 # <a name="prepare-your-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>準備您的 Microsoft 威脅防護試用實驗室或試驗環境
 
@@ -75,7 +76,7 @@ ms.locfileid: "48367998"
 瞭解授權、硬體和軟體需求，以及其他設定，以提供和使用 Microsoft 威脅防護。 請參閱 [Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites)的最低需求， [microsoft Defender atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)， [OFFICE 365 atp](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)， [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)， [microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)。
 
 ## <a name="stakeholders-and-sign-off"></a>利益關係人和簽署
-您可以在下列區段中找出專案中相關的所有利益關係人，以及可能需要登入、審查或通知的所有利益關係人，是否要評估或執行試驗。
+找出專案中相關的所有利益關係人，以及可能需要登入、審查或通知的所有利益關係人，不論評估或執行試驗專案。
 
 >[!NOTE]
 >並非所有組織都可能具有這類角色的安全性組織成熟度。 在這種情況下，請與您的領導團隊聯繫，以複查和核准職責。
@@ -88,13 +89,13 @@ ms.locfileid: "48367998"
 
 -   I = 此專案的通知
 
-| 姓名                 | 角色                                                                                                                                                                                                          | 動作 |
+| Name                 | 角色                                                                                                                                                                                                          | 動作 |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | 輸入名稱和電子郵件 | **首席資訊安全性監察官 (CISO) ** *成為新技術部署之組織內充當主管的執行代表。*                                                  | 所以     |
 | 輸入名稱和電子郵件 | **網路防護運作中心的 Head (CDOC) ** *CDOC 小組的代表，以定義如何將此變更與客戶的安全性作業小組中的處理常式對齊。*       | 所以     |
 | 輸入名稱和電子郵件 | **安全性***小組中的代表負責定義如何將此變更與組織中的核心安全性架構對應。*                         | R      |
 | 輸入名稱和電子郵件 | **工作場所***會為 IT 小組設計代表，以定義如何將此變更與組織中的核心工作區架構對齊。*                             | R      |
-| 輸入名稱和電子郵件 | **安全性分析員***來自 CDOC 小組的代表，可提供偵測功能、使用者經驗和安全性作業的整體有用性。* | I      |
+| 輸入名稱和電子郵件 | **安全性分析員***來自 CDOC 小組的代表，可提供偵測功能、使用者經驗，以及安全性作業觀點之變更的整體有用性的意見反應。* | I      |
 
 ## <a name="prepare-your-azure-active-directory"></a>準備您的 Azure Active Directory
 如果您已啟用 Active Directory 和 Azure Active Directory 內部部署之間的同步處理，請略過此步驟。 從 Azure Active Directory 複查現有的最佳作法檔。 下列步驟經過優化，可以評估或執行試驗 Microsoft 威脅防護專案。

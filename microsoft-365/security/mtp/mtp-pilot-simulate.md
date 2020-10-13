@@ -1,6 +1,6 @@
 ---
 title: 執行 Microsoft 威脅防護攻擊模擬
-description: 針對您的 Microsoft 威脅防護試驗專案執行攻擊模擬，以查看其展開及快速的解決方式。
+description: 針對您的 Microsoft 威脅防護試驗專案執行攻擊模擬，以查看其展開及快速修正的方式。
 keywords: Microsoft 威脅防護試驗攻擊類比，執行 Microsoft 威脅防護試驗攻擊類比，模擬 Microsoft 威脅防護、Microsoft 威脅防護試驗專案、網路安全性、高級持續威脅、企業安全性、裝置、裝置、身分識別、使用者、資料、應用程式、事件、自動化調查和修正，以及高級搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: f165a34d5e9df2f3502a9d9c6230fed9b73b758b
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: 50b74cf46999c3ad52f536ba0dfe07508c993a39
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418142"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447080"
 ---
 # <a name="run-your-microsoft-threat-protection-attack-simulations"></a>執行 Microsoft 威脅防護攻擊模擬  
 
@@ -76,13 +76,13 @@ ms.locfileid: "48418142"
 
 您目前是在攻擊模擬階段。
 
-在準備您的試驗環境之後，請及時測試 Microsoft 威脅防護事件管理，以及自動化調查和修正功能。 我們將協助您模擬複雜的攻擊，利用高級技術從偵測中隱藏。 攻擊會在網域控制站上列舉已開啟的伺服器消息區塊 (SMB) 會話，並檢索使用者裝置的最近 IP 位址。 這種攻擊類別通常不會包含放在受害者裝置上的檔案，而只是在記憶體中。 他們會使用現有的系統和系統管理工具，並將其程式碼插入系統進程中，以隱藏其執行，讓他們避開偵測，並在裝置上持續運作。
+在準備您的試驗環境之後，請及時測試 Microsoft 威脅防護事件管理，以及自動化調查和修正功能。 我們將協助您模擬複雜的攻擊，利用高級技術從偵測中隱藏。 攻擊會在網域控制站上列舉已開啟的伺服器消息區塊 (SMB) 會話，並檢索使用者裝置的最近 IP 位址。 這種攻擊類別通常不會包含放在受害者裝置上的檔案，而只是在記憶體中。 他們會使用現有的系統和系統管理工具，並將其程式碼插入系統進程，以隱藏其執行，這類行為可讓他們避開偵測，並在裝置上持續運作。
 
 在此模擬中，我們的範例案例會從 PowerShell 腳本開始。 使用者可能會欺騙執行腳本。 或者，腳本可能從先前感染的裝置遠端連線至另一部電腦，企圖在網路中移動橫向。 偵測到這些腳本可能很困難，因為系統管理員也經常會以遠端方式執行腳本，以執行各種管理活動。
 
 ![Fileless PowerShell 攻擊，處理常式植入和 SMB reconnaisance 攻擊圖表](../../media/mtp/mtpdiydiagram.png)
 
-在模擬過程中，攻擊會將程式碼插入看似合法的程式。 在此案例中，我們將使用 notepad.exe。 我們為模擬選擇此程式，但攻擊者很可能會以長期執行的系統進程為目標，例如 svchost.exe。 然後，命令介面會繼續聯繫攻擊者的命令和控制項 (C2) server，以接收如何繼續的指示。 此外，腳本會嘗試對網域控制站執行偵測查詢 (DC) 。 這可讓攻擊者取得最近使用者登入資訊的相關資訊。 一旦攻擊者取得這項資訊，他們就可以在網路中移動橫向，以取得特定的機密帳戶。
+在模擬過程中，攻擊會將程式碼插入看似合法的程式。 此案例需要使用 notepad.exe。 我們為模擬選擇此程式，但攻擊者很可能是以長期執行的系統進程為目標，例如 svchost.exe。 然後，命令介面會繼續聯繫攻擊者的命令和控制項 (C2) server，以接收如何繼續的指示。 腳本會嘗試對網域控制站執行偵測查詢 (DC) 。 偵測允許攻擊者取得最近使用者登入資訊的相關資訊。 一旦攻擊者取得這項資訊，他們就可以在網路中移動橫向，以取得特定的機密帳戶。
 
 >[!IMPORTANT]
 >為了獲得最佳結果，請盡可能遵循攻擊模擬指示。
@@ -150,7 +150,7 @@ ms.locfileid: "48418142"
 ran NetSessionEnum against [DC Name] with return code result 0      
 ```
 
-若要查看自動事件和回應功能的動作，請保持 notepad.exe 處理常式開啟。 您將會看到自動化的事件和回應停止 [記事本] 處理常式。
+若要查看自動事件和回應功能的動作，請保持 notepad.exe 處理常式開啟。 您會看到自動化的事件和回應停止 [記事本] 處理常式。
 
 
 ## <a name="investigate-an-incident"></a>調查事件
@@ -189,11 +189,11 @@ Microsoft 威脅防護會將不同產品的分析和匯總全部關聯至一個�
 
     ![類比期間匯總產生之警示的事件頁面的螢幕擷取畫面](../../media/mtp/fig4.png)
 
-    儀表板中顯示的提醒可根據服務資源進行篩選： Azure ATP、Microsoft Cloud App Security、Microsoft Defender ATP、Microsoft 威脅防護和 Office ATP。  
+    儀表板中顯示的警示可根據服務資源進行篩選： Azure ATP、Microsoft Cloud App Security、Microsoft Defender ATP、Microsoft 威脅防護和 Office ATP。  
 
 3.  選取 [ **開啟事件] 頁面** ，以取得有關事件的詳細資訊。
 
-    在 [ **事件** ] 頁面中，您可以看到與該事件相關的所有警示和資訊。 這包括警示中所涉及的實體和資產、警示的偵測來源 (Azure ATP、EDR) ，以及連結在一起的原因。 檢查事件警示清單會顯示攻擊的進展。 您可以從這個視圖，查看並調查個別提醒。
+    在 [ **事件** ] 頁面中，您可以看到與該事件相關的所有警示和資訊。 此資訊包含警示中所涉及的實體和資產、警示的偵測來源 (Azure ATP、EDR) ，以及連結在一起的原因。 檢查事件警示清單會顯示攻擊的進展。 您可以從這個視圖，查看並調查個別提醒。
 
     您也可以按一下右側功能表中的 [ **管理事件** ]，以標記事件、將其指派給您並新增批註。
 
@@ -221,11 +221,11 @@ Microsoft 威脅防護會將不同產品的分析和匯總全部關聯至一個�
 ![注入潛在惡意程式碼之警示的螢幕擷取畫面](../../media/mtp/fig7.png) 
 
 
-**警示：以無命令列引數執行程式所觀察到的意外行為 (來源： Microsoft Defender ATP EDR) **
+**警示：以無命令列引數執行過程所觀察到的意外行為 (來源： Microsoft Defender ATP EDR) **
 
-Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標。 這可確保持續性，並引發使攻擊者切換至更新的戰術的條碼。
+Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標。 此方法可確保持續性並引發此列，以供攻擊者切換至更新的戰術。
 
-我們採用大規模的學習演算法，在組織內和世界範圍內建立一般處理常式的正常行為，並在這些程式顯示反常行為時加以監視。 這些反常行為通常表示已引進無關的程式碼，並在其他受信任的程式中執行。
+我們採用大規模的學習演算法，在組織和全球範圍內建立一般程式的正常行為，並在這些程式顯示反常行為時加以監視。 這些反常行為通常表示已引進無關的程式碼，並在其他受信任的程式中執行。
 
 在此案例中，處理 <i>notepad.exe</i> 會顯示反常的行為，包括與外部位置的通訊。 這項結果獨立于用於引入及執行惡意程式碼的特定方法。
 
@@ -234,7 +234,7 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 
 請注意，警示詳細資料包含外部 IP 位址（即您可以做為資料透視以展開調查的指標）。
 
-按一下 [警示處理常式] 樹狀目錄中的 IP 位址，以查看 [IP 位址詳細資料] 頁面。
+選取 [警示處理常式] 樹狀目錄中的 IP 位址，以查看 [IP 位址詳細資料] 頁面。
 
 ![以無命令列引數執行程式時，未預期行為之警示的螢幕擷取畫面](../../media/mtp/fig8.png) 
 
@@ -252,25 +252,25 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 
 
 ### <a name="review-the-device-timeline-microsoft-defender-atp"></a>複查裝置時程表 [Microsoft Defender ATP]
-在探索此事件中的各種警示後，請移回先前所調查的 [事件] 頁面。 在 [事件] 頁面中，按一下 [ **裝置** ] 索引標籤，以查看 MICROSOFT Defender ATP 和 Azure ATP 所報告之事件中的裝置。
+在探索此事件中的各種警示後，請移回先前所調查的 [事件] 頁面。 在 [事件] 頁面中，選取 [ **裝置** ] 索引標籤，以查看 MICROSOFT Defender ATP 和 Azure ATP 所報告之事件中的裝置。
 
-按一下已執行攻擊之裝置的名稱，以開啟該特定裝置的實體頁面。 在該頁面中，您可以看到觸發和相關事件的警示。
+選取實施攻擊的裝置名稱，以開啟該特定裝置的實體頁面。 在該頁面中，您可以看到觸發和相關事件的警示。
 
-按一下 [ **時程表** ] 索引標籤以開啟裝置時程表，並以時間順序查看裝置上觀測到的所有事件和行為，並與所引發的警示交錯。
+選取 [ **時程表** ] 索引標籤以開啟裝置時程表，並以時間順序查看裝置上觀測到的所有事件和行為，並與所引發的警示交錯。
 
 ![裝置時程表與行為的螢幕擷取畫面](../../media/mtp/fig11.png) 
 
 展開一些較為有趣的行為，可提供有用的詳細資料，例如處理樹。
 
-例如，向下滾動，直到發現出現警示事件 **可疑程式注入**。 按一下 ** 插入的powershell.exe，以 notepad.exe** 它底下的處理程式事件，在側邊窗格的 [ **事件實體** ] 圖表下，顯示此行為的完整處理樹狀結構。 如有必要，請使用搜尋列進行篩選。
+例如，向下滾動，直到發現出現警示事件 **可疑程式注入**。 選取 ** 插入的powershell.exe** ，以 notepad.exe 它底下的處理程式事件，在側邊窗格的 [ **事件實體** ] 圖表下，顯示此行為的完整處理樹狀結構。 如有必要，請使用搜尋列進行篩選。
 
 ![選取的 PowerShell 檔案建立行為之進程樹狀結構的螢幕擷取畫面](../../media/mtp/fig12.png)
 
 ### <a name="review-the-user-information-microsoft-cloud-app-security"></a>審閱使用者資訊 [Microsoft Cloud App Security]
 
-在 [事件] 頁面上，按一下 [ **使用者** ] 索引標籤，以顯示攻擊相關的使用者清單。 該表包含每個使用者的詳細資訊，包括每個使用者的 **調查優先順序** 分數。
+在 [事件] 頁面上，選取 [ **使用者** ] 索引標籤，以顯示攻擊相關的使用者清單。 該表包含每個使用者的詳細資訊，包括每個使用者的 **調查優先順序** 分數。
 
-按一下使用者名稱開啟使用者的設定檔頁面面，以進行進一步調查。 [閱讀有關調查危險使用者的詳細資訊](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#identify)。
+選取 [使用者名稱]，以開啟可以進行進一步調查的使用者設定檔頁面。 [閱讀有關調查危險使用者的詳細資訊](https://docs.microsoft.com/cloud-app-security/tutorial-ueba#identify)。
 <br>
 ![Cloud App Security 使用者頁面的螢幕擷取畫面](../../media/mtp/fig13.png)
 
@@ -281,11 +281,11 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-在 Microsoft 365 的安全性中心入口網站中，向後流覽至該事件。 [**事件**] 頁面中的 [**調查**] 索引標籤會顯示 Azure ATP 和 Microsoft Defender atp 所觸發的自動調查。 下列螢幕擷取畫面只會顯示 Microsoft Defender ATP 所觸發的自動調查。 根據預設，Microsoft Defender ATP 會自動 remediates 佇列中找到的專案，而這些專案需要進行修復。
+在 Microsoft 365 的安全性中心入口網站中，向後流覽至該事件。 [**事件**] 頁面中的 [**調查**] 索引標籤會顯示 Azure ATP 和 Microsoft Defender atp 所觸發的自動調查。 下列螢幕擷取畫面只會顯示 Microsoft Defender ATP 所觸發的自動調查。 根據預設，Microsoft Defender ATP 會自動 remediates 在佇列中找到的專案，這需要進行修復。
 
 ![與事件相關之自動調查的螢幕擷取畫面](../../media/mtp/fig14.png)
 
-按一下觸發調查的警示，以開啟 [ **調查詳細資料** ] 頁面。 您將會看到下列專案：
+選取觸發調查的警示，以開啟 [ **調查詳細資料** ] 頁面。 您將會看到下列詳細資料：
 - 觸發自動調查的警示 (s) 。
 - 受影響的使用者和裝置。 如果在其他裝置上找到指示器，也會列出這些額外裝置。
 - 證據清單。 找到並分析的實體，例如檔案、進程、服務、驅動程式和網路位址。 這些實體會進行分析，以取得警示的可能關係，並評為良性或惡意。
@@ -304,14 +304,14 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 
 調查完成並確認待修正之後，請關閉該事件。
 
-按一下 [ **管理事件**]。 將狀態設定為 [ **解決事件** ]，然後選取相關的分類。
+選取 [ **管理事件**]。 將狀態設定為 [ **解決事件** ]，然後選取相關的分類。
 
-一旦解決該事件，它就會在 Microsoft 365 的安全性中心和相關的入口網站中關閉所有相關聯的警示。
+當事件解決時，它會在 Microsoft 365 的安全性中心和相關的入口網站中關閉所有相關聯的警示。
 
 ![[事件] 頁面的螢幕擷取畫面，其中包含「開啟的管理事件」面板，您可以在其中按一下參數來解決事件。](../../media/mtp/fig16.png) 
 
 <br>
-這可讓事件管理和自動化調查和修正案例的攻擊類比。 下一個類比會透過主動威脅搜尋潛在的惡意檔案。 
+這可讓事件管理和自動化調查和修正案例的攻擊類比。 下一個模擬會透過主動威脅搜尋潛在的惡意檔案，將您引導。 
 
 ## <a name="advanced-hunting-scenario"></a>高級搜尋案例
 
@@ -321,7 +321,7 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
 ### <a name="hunting-environment-requirements"></a>搜尋環境需求
-此案例有一個內部信箱和裝置需要。 您也需要外部電子郵件帳戶來傳送測試郵件。
+此案例需要單一內部信箱和裝置。 您也需要外部電子郵件帳戶來傳送測試郵件。
 
 1.  確認您的租使用者已 [啟用 Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable#starting-the-service)。
 2.  識別要用於接收電子郵件的目標信箱。
@@ -369,9 +369,9 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 
     1.  查看結果，查看是否可以識別您開啟的電子郵件。  最多可能需要2個小時的時間，郵件才會顯示在高級搜尋中。 如果電子郵件環境很大，而且有許多結果，您可能想要使用 [ **顯示篩選] 選項** 來尋找郵件。 
 
-        在範例中，電子郵件是從 Yahoo 帳戶傳送。 按一下 [SenderFromDomain] 區段底下的 [ **+** **yahoo.com** ] 旁的圖示，然後按一下 [套用 **]，** 將選取的網域新增至查詢。  在執行類比以篩選結果的步驟1中，您應該使用傳送測試郵件所用的網域或電子郵件帳戶。  再次執行查詢以取得較小的結果集，以確認您看到類比中的郵件。
+   在範例中，電子郵件是從 Yahoo 帳戶傳送。 按一下 [SenderFromDomain] 區段底下的 [ **+** **yahoo.com** ] 旁的圖示，然後按一下 [套用 **]，** 將選取的網域新增至查詢。  在執行模擬以篩選結果的步驟1中，使用用於傳送測試郵件的網域或電子郵件帳戶。  再次執行查詢以取得較小的結果集，以確認您看到類比中的郵件。
    
-        ![篩選器的螢幕擷取畫面。 請使用篩選器縮小搜尋範圍，並尋找您要更快速的搜尋。](../../media/mtp/fig20.png) 
+        ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
 
         ```console
         EmailEvents 
@@ -394,7 +394,7 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 
 5.  接下來，包含附件的相關資訊 (例如：檔案名、雜湊) 結果集。 若要這麼做，請加入 **EmailAttachmentInfo** 表格。 在此情況下，要用於加入的一般欄位是 **NetworkMessageId** 和 **RecipientObjectId**。
 
-    下列查詢也包含其他行 "| **project-Rename EmailTimestamp = Timestamp**"，可協助識別與您將在下一個步驟中新增之檔案動作相關的電子郵件與時間戳記有關的時間戳記。
+下列查詢也包含其他行 "| **project-Rename EmailTimestamp = Timestamp**"，可協助識別與您將在下一個步驟中新增之檔案動作相關的電子郵件與時間戳記有關的時間戳記。
 
     ```console
     EmailEvents 
@@ -416,9 +416,9 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
     | where ActionType == "FileCreated"
     ```
 
-    您現在已經建立了一個查詢，它會識別所有使用者開啟或儲存附件的輸入電子郵件。 您也可以精煉此查詢，以篩選特定寄件者網域、檔案大小、檔案類型等等。
+您現在已經建立了一個查詢，它會識別所有使用者開啟或儲存附件的輸入電子郵件。 您也可以精煉此查詢，以篩選特定寄件者網域、檔案大小、檔案類型等等。
 
-7.  函數是一種特殊的加入方式，可讓您提取有關檔案的更多 TI 資料，如檔傳播、簽署者資訊等等。 若要取得檔案的詳細資料，請使用 **FileProfile ( # B1 ** 函數豐富：
+7.  函數是一種特殊的聯接方式，可讓您將更多的 TI 資料（如其流行、簽署者資訊等等）提取到更多的檔。 若要取得檔案的詳細資料，請使用 **FileProfile ( # B1 ** 函數豐富：
 
     ```console
     EmailEvents 
@@ -434,7 +434,7 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 
 **建立偵測**
 
-當您建立一個查詢，識別您想要收到 **警示** 的資訊如果日後發生，您可以從查詢中建立自訂偵測。 
+當您建立一個查詢，識別您想要針對未來的情況收到 **警示** 的資訊時，您可以從查詢建立自訂偵測。 
 
 自訂偵測會根據您設定的頻率執行查詢，而查詢的結果會根據您所選擇的受影響資產，建立安全性警示。 這些警示會與事件相關聯，而且可以被會審為其中一項產品所產生的任何其他安全性警示。
 
@@ -473,9 +473,9 @@ Microsoft Defender ATP 偵測通常是以最常見的攻擊技術屬性為目標
 
     ![顯示規則和執行詳細資料之 [偵測規則] 頁面的螢幕擷取畫面](../../media/mtp/fig27b.png) 
 
-    在此頁面中，您可以選取要開啟詳細資料頁面的偵測規則。 
+在此頁面中，您可以選取將會開啟詳細資料頁面的偵測規則。 
 
-    ![[電子郵件附件] 頁面的螢幕擷取畫面，您可以在其中看到規則執行、觸發的警示和動作狀態、編輯偵測等等。](../../media/mtp/fig28.png) 
+    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>其他的高級搜尋指導-透過練習
 

@@ -1,6 +1,6 @@
 ---
 title: 評估 Microsoft 威脅防護
-description: 設定您的 Microsoft 威脅防護試用實驗室或試驗環境，以嘗試如何設計用來保護裝置、身分識別、資料和應用程式的協同威脅防護解決方案，可協助您的組織
+description: 設定您的 Microsoft 威脅防護試用實驗室或試驗環境，以嘗試用來保護組織中裝置、身分識別、資料和應用程式的安全性解決方案。
 keywords: Microsoft 威脅防護試用版，請嘗試 Microsoft 威脅防護，評估 Microsoft 威脅防護，Microsoft 威脅防護實驗，Microsoft 威脅防護試驗，網路安全性，高級持續性威脅，企業安全性，裝置，裝置，身分識別，使用者，資料，應用程式，事件，自動化調查和修正，高級搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: 489ce48be4d995d7e91e2559311d7e619530ba4c
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: d3f63c8ac4ba82a80c365dce564bbd8d3dd4da4b
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418082"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447116"
 ---
 # <a name="create-a-microsoft-threat-protection-trial-lab-or-pilot-environment"></a>建立 Microsoft 威脅防護試用實驗室或試驗環境 
 
@@ -35,9 +35,9 @@ ms.locfileid: "48418082"
 適用於：****
 - Microsoft 威脅防護
 
-建立此試用實驗室或試驗環境的目的，是為了示範 Microsoft 威脅防護的綜合、整合及智慧功能，可在組織中使用偵測、防護、調查和回應。 
+建立此試用實驗室或試驗環境的目的是為了示範綜合和整合的 Microsoft 威脅防護功能。 體驗這種聰明的安全性解決方案如何偵測、避免、自動調查，並回應貴組織的高級威脅。 
 
-本指南會逐步引導您逐步開始 Microsoft 威脅防護評估，以建議的部署路徑為基礎。 目標是在使用試用帳戶時，或在使用完整授權時在實際執行環境中，協助您設定實驗室環境中的整合式 Microsoft 威脅防護服務。 在您的組織中提供安全性作業使用案例給安全性解決方案決策者時，其結果將十分有用。 當您執行攻擊模擬後，如果結果符合，您可以使用 Microsoft 技術銷售人員或組織中的專家的協助，在組織中完整部署及 operationalize。 
+本指南會逐步引導您逐步開始 Microsoft 威脅防護評估，以建議的部署路徑為基礎。 其目標是協助您在實驗環境中設定安全性解決方案，以試用帳戶，或在實際執行環境中使用完整授權。 準備您的試用實驗室或試驗環境可協助您向組織中的決策者展示安全性運作案例。 當您執行攻擊模擬並符合結果時，您可以使用 Microsoft 技術銷售人員或組織中的專家的說明，在組織中完整部署及 operationalize。 
 
 本指南將協助您：
 - 設定實驗室服務器和電腦

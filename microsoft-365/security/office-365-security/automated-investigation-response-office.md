@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365-initiative-defender-office365
+- m365initiative-defender-office365
 keywords: 自動化的事件回應、調查、修正及威脅防護
 ms.date: 09/29/2020
 description: 深入瞭解 Microsoft Defender for Office 365 中的自動化調查和回應功能
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 850291966c2f2da51782d8e70de23ff4f06d6136
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: d63ba8a6d3ffb653b30448a973e1cd862631d350
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48413959"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48447104"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自動化調查和回應 (AIR) 的概覽
 
