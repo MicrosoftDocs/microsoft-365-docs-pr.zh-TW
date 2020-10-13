@@ -17,14 +17,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365-initiative-m365-defender
+- m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: a89622206917c6b343ce47638c443b789513367b
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: e99e545b5578b5eff8c19345dc672f735e4f7bd2
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48412175"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430582"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -52,7 +52,7 @@ ms.locfileid: "48412175"
 | IsRootSignerMicrosoft | 布林值 | 會指出根憑證的簽署者是否為 Microsoft |
 | IsExecutable | 布林值 | 檔案是否為可遷移的可執行檔 (PE) file |
 | ThreatName | string | 找到的任何惡意程式碼或其他威脅的偵測名稱 |
-| Publisher | string | 發佈檔的組織名稱 |
+| 發行者 | string | 發佈檔的組織名稱 |
 | SoftwareName | 字串 | 軟體產品名稱 |
 
 ## <a name="syntax"></a>語法
