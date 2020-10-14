@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - SPO_Content
-- M365initiative-CoreDeploy
+- m365initiative-coredeploy
 f1.keywords:
 - CSH
 ms.custom: Adm_O365
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - SPO160
 description: Office 365 內容傳遞網路 (CDN) 快速入門
-ms.openlocfilehash: e9975721b5cfaaed2c9ad7562c47f12c7a5a5bc3
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: e541b2ea63a69644de22329c45bd6963749964f7
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326886"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456408"
 ---
 # <a name="office-365-content-delivery-network-cdn-quickstart"></a>Office 365 內容傳遞網路 (CDN) 快速入門
 
@@ -78,9 +78,9 @@ Set-SPOTenantCdnEnabled -CdnType Both -Enable $true
 
 這些 Cmdlet 的輸出應該如下所示：
 
-![SPOTenantCdnEnabled 的輸出](../media/O365-CDN/o365-cdn-enable-output.png)
+![Set-SPOTenantCdnEnabled 的輸出](../media/O365-CDN/o365-cdn-enable-output.png)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 Sharepoint Online 網頁診斷工具](https://aka.ms/perftool)
 

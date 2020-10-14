@@ -20,18 +20,18 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: 瞭解如何將使用者升級至最新的 Office 用戶端。
-ms.openlocfilehash: 7cddf1554a5892ddac510fc77238529194c1a2a0
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 40160dc5590144a1132971368da70c6f36ed460c
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545725"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456315"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>將您的 Microsoft 365 for business 使用者升級至最新的 Office 用戶端
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 到達支援終止
 
-Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 2010 達到其支援的終止時，Microsoft 將不再提供下列專案：
+Office 2010 在10月13日，2020已到達支援的結束。 Microsoft 將無法再提供下列專案：
 
 - 問題的技術支援
 
@@ -39,7 +39,7 @@ Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 201
 
 - 已探索之弱點的安全性修正程式
 
-如需詳細資訊，請參閱 [Office 2010 終止支援藍圖](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap) 。
+如需詳細資訊，請參閱 [Office 2010 終止支援藍圖](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap) 。
 
  **這個主題是正確的嗎？**
   
@@ -57,7 +57,7 @@ Office 2010 會在10月13日在2020上達到其支援的終止。 當 Office 201
   
 ## <a name="step-1---check-system-requirements"></a>步驟 1-檢查系統需求
 
-[檢查 office 的系統需求](https://products.office.com/office-system-requirements) ，以確保您的裝置與最新版的 Office 相容。 例如，更新版本的 Office 無法安裝在執行 Windows XP 或 Windows Vista 的電腦上。
+[檢查 office 的系統需求](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) ，以確保您的裝置與最新版的 Office 相容。 例如，更新版本的 Office 無法安裝在執行 Windows XP 或 Windows Vista 的電腦上。
   
 > [!TIP]
 > 如果您的組織中有使用者在其電腦或膝上型電腦上執行舊版 Windows，建議您升級至 Windows 10。 Windows 7 已到達支援終止。 如需詳細資訊，請參閱 [Windows 7 的讀取支援結束于2020年1月](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) 。

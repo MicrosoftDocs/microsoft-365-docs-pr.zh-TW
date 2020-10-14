@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: 在 Microsoft 預約應用程式中變更預約頁面的色彩主題。
-ms.openlocfilehash: b33be0cb71998d45e50a66f89f98daa4af175865
-ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
+ms.openlocfilehash: c930c06300a83ee17f1efdaaf42761ddfdebdd7b
+ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "47962510"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48456372"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>自訂併發布您的預約頁面
 
@@ -36,7 +36,7 @@ ms.locfileid: "47962510"
 
 - **預約頁面存取控制：需要從我的組織到預訂的 Microsoft 365 帳戶**  選取此選項只會允許組織內的人員查看您的頁面或圖書任何服務。 可透過認證檢查取得頁面存取權，以確保訪客隸屬于租使用者內的帳戶。
 
-- **預約頁面存取控制：停用預約頁面的直接搜尋引擎索引** 這項設定可防止您的頁面出現在 Google、Bing 或其他搜尋引擎的搜尋結果中。 取消選擇此方塊可確保頁面存取權僅限於產生的頁面連結。
+- **預約頁面存取控制：停用預約頁面的直接搜尋引擎索引** 這項設定可防止您的頁面出現在 Google、Bing 或其他搜尋引擎的搜尋結果中。 選取此方塊可確保頁面存取權僅限於產生的頁面連結。
 
 - **客戶資料使用量同意** 選取此選項時，要求使用者或客戶對您組織使用其資料的同意的文字會顯示在 [Self-Service] 頁面上。 為了完成預約，使用者必須先檢查方框。
 
@@ -48,9 +48,9 @@ ms.locfileid: "47962510"
 
 - **地區和時區設定** 您可以在這裡設定 Self-Service 頁面的時區及語言喜好設定。 建議您設定本機時區。 針對您的 Self-Service 頁面的訪客，預約會自動偵測他們的當地時區，並在自己的時區中顯示其可用性。 例如，如果約會是在1： 00pm PST 上提供，當 CST 中的某人會看到可用時間顯示為3： 00pm CST。
 
-一旦您發佈預約頁面後，客戶就會看到您的預約頁面，可供他們預訂約會。 客戶對的預約 pag 如下所示：
+一旦您發佈預約頁面後，客戶就會看到您的預約頁面，可供他們預訂約會。 [客戶面向預約] 頁面如下所示：
 
-:::image type="content" source="media/bookings-self-service.jpg" alt-text="客戶面向預約頁面":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="預定頁面":::
 
 ## <a name="publish-the-booking-page"></a>發佈預約頁面
 
@@ -70,4 +70,4 @@ ms.locfileid: "47962510"
 
 ## <a name="unpublish-the-booking-page"></a>取消發佈預約頁面
 
-1. 若要取消發佈預約頁面，請移至 [預約] 頁面，然後選取 [ **取消發佈**]。
+ - 若要取消發佈預約頁面，請移至 [預約] 頁面，然後選取 [ **取消發佈**]。
