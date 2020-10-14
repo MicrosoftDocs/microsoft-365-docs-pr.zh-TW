@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: 6c8ca07cc0da826be23bcee79dbc4e3824b00695
-ms.sourcegitcommit: 8589323c1b4ab43aab30597ee66303b0a0eb71ed
+ms.openlocfilehash: e8d9b3c4928172ace2bc63d5aa31d65c4145ad6a
+ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "48357878"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48430312"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -86,9 +86,9 @@ ms.locfileid: "48357878"
 
 - **外部使用者存取**：控制群組擁有者是否可以[將來賓新增至群組](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
-- **未受管理的裝置**：此選項透過使用 Azure AD 條件式存取的 SharePoint 功能，以封鎖或限制存取未受管理裝置的 SharePoint 和 OneDrive 內容。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](/sharepoint/control-access-from-unmanaged-devices)。 您為此標籤設定所指定的選項相當於執行網站的 PowerShell 命令，如[封鎖或限制特定 SharePoint 網站或 OneDrive 的存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)中的步驟 7-9 所述。
+- **未受管理的裝置**：此選項透過使用 Azure AD 條件式存取的 SharePoint 功能，以封鎖或限制存取未受管理裝置的 SharePoint 和 OneDrive 內容。 如需詳細資訊，請參閱[控制未受管理裝置的存取權](/sharepoint/control-access-from-unmanaged-devices)。 您為此標籤設定所指定的選項相當於執行網站的 PowerShell 命令，如[封鎖或限制特定 SharePoint 網站或 OneDrive 的存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive)中的步驟 2-4 所述。
     
-    如果您未設定相關條件式存取原則 (如 SharePoint 指示的步驟 1-6 中所述)，您在此處指定的選項將不會產生任何影響。 此外，如果其限制低於租用戶層級所設定的設定，則不會產生任何影響。 如果您已為非受管理的裝置設定全組織的設定，請選擇相同或具有更多限制的標籤設定。
+    如果您未設定 SharePoint 相關條件式存取原則如 [使用應用程式強制限制](https://docs.microsoft.com/sharepoint/app-enforced-restrictions) 中所述，您在此處指定的選項將不會產生任何影響。 此外，如果其限制低於租用戶層級所設定的設定，則不會產生任何影響。 如果您已為非受管理的裝置設定全組織的設定，請選擇相同或具有更多限制的標籤設定。
     
     例如，如果您的租使用者設定為 **允許有限的、僅限網頁存取**，則允許完全存取的標籤設定將不會產生任何影響，因為其限制較少。 針對此租使用者層級設定，請選擇標籤設定，以封鎖存取 {具有更多限制} 或限制存取 (與租使用者設定相同) 的標籤設定。
     
