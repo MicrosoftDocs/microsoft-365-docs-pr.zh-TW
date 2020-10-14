@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案新增至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c33e136be55ea60f1e5954d4713b219045b1f0eb
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398524"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446556"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
@@ -43,7 +43,7 @@ ms.locfileid: "48398524"
 
 這個月的公開預覽的一些新增及增強功能：
 
-**有問必答風險管理**
+**測試人員風險管理**
 
 - 查看我們的六個新 [原則範本](insider-risk-management-policies.md#policy-templates)：
     - 依優先使用者的資料洩漏
@@ -170,7 +170,7 @@ ms.locfileid: "48398524"
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>敏感度標籤：新增隱私權選項
 
-設定標籤的 [網站和群組設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) 時，您現在可以設定隱私權選項為 **None-讓使用者選擇誰可以存取網站**。 當您想要使用敏感度標籤保護容器中的內容，但仍可讓使用者自行設定隱私權設定時，這會很有用。
+設定標籤的 [網站和群組設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) 時，您現在可以設定隱私權選項為 **None-讓使用者選擇誰可以存取網站**。 當您想要使用敏感度標籤保護容器中的內容，但仍可讓使用者自行設定隱私權設定時，這會很有用。
 
 ## <a name="april-2020"></a>2020 年 4 月
 

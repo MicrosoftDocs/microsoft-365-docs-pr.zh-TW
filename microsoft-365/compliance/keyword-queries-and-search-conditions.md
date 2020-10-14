@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解您可以在 Office 365 安全性 & 規範中心搜尋的電子郵件和檔案屬性。
-ms.openlocfilehash: fb3d0b9d941658f2613344d00984dbe7846565a6
-ms.sourcegitcommit: 66f1f430b3dcae5f46cb362a32d6fb7da4cff5c1
+ms.openlocfilehash: 5445c9485d7076b3819c796028a311a523a92dde
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46662297"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446192"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
 
@@ -54,9 +54,9 @@ ms.locfileid: "46662297"
   
 |**屬性**|**屬性描述**|**範例**|**範例所傳回的搜尋結果**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|附加至電子郵件的檔案名稱。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:.pptx|具有名為 annualreport.ppt 的附加檔案的郵件。 在第二個範例中，使用萬用字元會傳回附件的檔案名中包含 "年曆" 一詞的郵件。 第三個範例會傳回所有包含 .pptx 副檔名的附件。|
+|AttachmentNames|附加至電子郵件的檔案名稱。|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |具有名為 annualreport.ppt 的附加檔案的郵件。 在第二個範例中，使用萬用字元會傳回附件的檔案名中包含 "年曆" 一詞的郵件。 第三個範例會傳回所有包含 .pptx 副檔名的附件。|
 |密件副本|電子郵件訊息的 [密件副本] 欄位。<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|所有範例都傳回具有 Pilar Pinilla 的郵件，包含在 [密件副本] 欄位中。|
-|類別| 要搜尋的類別。 使用者可以使用先前稱為 Outlook Web App) 上 (的 Outlook 或 Outlook 來定義類別。 可能的值如下：  <br/><br/>  藍色  <br/>  綠色  <br/>  橙  <br/>  紫色  <br/>  紅  <br/>  黃色|`category:"Red Category"`|來源信箱中已指派紅色類別的郵件。|
+|類別| 要搜尋的類別。 使用者可以使用先前稱為 Outlook Web App) 上 (的 Outlook 或 Outlook 來定義類別。 可能的值為：  <br/><br/>  藍色  <br/>  綠色  <br/>  橙  <br/>  紫色  <br/>  紅  <br/>  黃色|`category:"Red Category"`|來源信箱中已指派紅色類別的郵件。|
 |副本|電子郵件訊息的 [副本] 欄位。<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|在這兩個範例中，在 [副本] 欄位中指定 Pilar Pinilla 的郵件。|
 |Folderid|特定信箱資料夾 (GUID) 的資料夾識別碼。 如果您使用此屬性，請務必搜尋指定資料夾所在的信箱。 只會搜尋指定的資料夾。 不會搜尋資料夾中的任何子資料夾。 若要搜尋子資料夾，您必須使用 Folderid 屬性做為您想要搜尋的子資料夾。  <br/> 如需搜尋 Folderid 屬性和使用腳本來取得特定信箱之資料夾 IDs 的詳細資訊，請參閱 [使用內容搜尋來尋找目標集合](use-content-search-for-targeted-collections.md)。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|第一個範例會傳回指定之信箱資料夾中的所有專案。 第二個範例會傳回 garthf@contoso.com 所傳送或接收的指定信箱資料夾中的所有專案。|
 |寄件者|電子郵件的寄件者。<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|指定的使用者所傳送或從指定的網域傳送的郵件。|
@@ -64,7 +64,7 @@ ms.locfileid: "46662297"
 |Importance|電子郵件訊息的重要性，寄件者可在傳送郵件時指定。 根據預設，郵件會以一般重要性傳送，除非寄件者將重要性設定為 **高** 或 **低**。|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|標示為高重要性、中度重要性或低重要性的郵件。|
 |IsRead|會指出是否已讀取郵件。 使用值 **true** 或 **false**。|`isread:true`  <br/> `isread:false`|第一個範例會傳回 IsRead 屬性設定為 **True**的郵件。 第二個範例會傳回 IsRead 屬性設定為 **False**的郵件。|
 |ItemClass|使用此屬性可搜尋您的組織匯入 Office 365 的特定協力廠商資料類型。 請對此屬性使用下列語法：  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|第一個範例會傳回 Facebook 專案，包含在 Subject 屬性中包含 "contoso" 一詞。 第二個範例會傳回由王小姐 Beebe （包含關鍵字片語 "Northwind 商貿"）所張貼的 Twitter 專案。  <br/> 如需使用 ItemClass 屬性之協力廠商資料類型的完整值清單，請參閱 [使用內容搜尋來搜尋匯入至 Office 365 的協力廠商資料](use-content-search-to-search-third-party-data-that-was-imported.md)。|
-|類型| 要搜尋的電子郵件類型。 可能的值：  <br/>  接觸  <br/>  文檔  <br/>  email  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams (會從 Microsoft 團隊中的研討、會議及通話傳回專案)   <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一個範例會傳回符合搜尋準則的電子郵件訊息。 第二個範例會傳回電子郵件、立即訊息交談 (，包括 Microsoft 團隊中的商務用 Skype 交談和聊天) ，以及符合搜尋準則的語音訊息。 第三個範例會傳回從協力廠商資料來源（如 Twitter、Facebook 和 Cisco Jabber) ）匯入至 Microsoft 365 信箱的專案，這些專案會符合搜尋準則。 如需詳細資訊，請參閱在 [Office 365 中封存協力廠商資料](https://www.microsoft.com/?ref=go)。|
+|類型| 要搜尋的電子郵件類型。 可能的值：  <br/>  接觸  <br/>  文檔  <br/>  電子郵件  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams (會從 Microsoft 團隊中的研討、會議及通話傳回專案)   <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|第一個範例會傳回符合搜尋準則的電子郵件訊息。 第二個範例會傳回電子郵件、立即訊息交談 (，包括 Microsoft 團隊中的商務用 Skype 交談和聊天) ，以及符合搜尋準則的語音訊息。 第三個範例會傳回從協力廠商資料來源（如 Twitter、Facebook 和 Cisco Jabber) ）匯入至 Microsoft 365 信箱的專案，這些專案會符合搜尋準則。 如需詳細資訊，請參閱在 [Office 365 中封存協力廠商資料](https://www.microsoft.com/?ref=go)。|
 |參與者|電子郵件訊息中的所有 [人員] 欄位。 這些欄位是寄件者、To、Cc 和 Bcc。<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|傳送或傳送至 garthf@contoso.com 的郵件。 第二個範例會傳回 contoso.com 網域中的使用者所傳送或傳送的所有郵件。|
 |Received|收件者接收到電子郵件的日期。|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|2016年4月15日收到的郵件。 第二個範例會傳回所有在2016年1月1日（2016年3月31日）收到的郵件。|
 |收件者|電子郵件訊息中的所有收件者欄位。 這些欄位是 To、Cc 和 Bcc。<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|傳送至 garthf@contoso.com 的郵件。 第二個範例會傳回傳送至 contoso.com 網域中的任何收件者的郵件。|
@@ -75,7 +75,18 @@ ms.locfileid: "46662297"
 |||||
    
 > [!NOTE]
-> <sup>1</sup> 在收件者屬性值中，您可以使用電子郵件地址 (也稱為「 *使用者主體名稱* 」或「UPN」) 、[顯示名稱] 或 [別名] 以指定使用者。 例如，您可以使用 annb@contoso.com、annb 或 "王 Beebe" 來指定使用者王小姐 Beebe。<br/><br/>當搜尋任何收件者屬性 (From、To、Cc、Bcc、參與者和收件者) 時，Microsoft 365 會嘗試在 Azure Active Directory 中查看每位使用者的身分識別。  如果使用者在 Azure Active Directory 中找到，則查詢會展開以包含使用者的電子郵件地址 (或 UPN) 、別名、顯示名稱和 LegacyExchangeDN。<br/><br/>例如， `participants:ronnie@contoso.com` 展開 to 的查詢 `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` 。<br/><br/>若要防止收件者展開，您可以將萬用字元 (星號) 新增至搜尋查詢中的電子郵件地址結尾。例如， `participants:ronnie@contoso.com*` 。
+> <sup>1</sup> 在收件者屬性值中，您可以使用電子郵件地址 (也稱為「 *使用者主體名稱* 」或「UPN」) 、[顯示名稱] 或 [別名] 以指定使用者。 例如，您可以使用 annb@contoso.com、annb 或 "王 Beebe" 來指定使用者王小姐 Beebe。
+
+### <a name="recipient-expansion"></a>收件者擴充
+
+當搜尋任何收件者屬性 (From、To、Cc、Bcc、參與者和收件者) 時，Microsoft 365 會嘗試在 Azure Active Directory (Azure AD) 中查看每位使用者的身分識別。  如果使用者在 Azure AD 中找到，該查詢就會展開，以包含使用者的電子郵件地址 (或 UPN) 、別名、顯示名稱和 LegacyExchangeDN。 例如， `participants:ronnie@contoso.com` 展開 to 的查詢 `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"` 。
+
+若要防止收件者展開，請將萬用字元 (星號) 新增至電子郵件地址的結尾，並使用減少的功能變數名稱;例如，請 `participants:"ronnie@contoso*"` 務必使用雙引號括住電子郵件地址。
+
+不過，請注意防止搜尋查詢中的收件者擴充，可能會導致搜尋結果中未傳回相關的專案。 Exchange 中的電子郵件可以以不同的文字格式儲存在收件者欄位中。 收件者擴充的目的在於傳回可能包含不同文字格式的郵件，以協助緩解此事實。 因此，防止收件者展開可能會導致搜尋查詢不會傳回所有與調查相關的專案。
+
+> [!NOTE]
+> 如果您需要查看或減少因收件者擴充的搜尋查詢所傳回的專案，請考慮使用高級 eDiscovery。 您可以搜尋郵件 (利用收件者擴充) 、將它們新增至審閱集，然後使用「複查集合」查詢或篩選，以複查或縮小結果。 如需詳細資訊，請參閱 [收集案例的資料](collecting-data-for-ediscovery.md) 和 [查詢審閱集中的資料](review-set-search.md)。
 
 ## <a name="searchable-site-properties"></a>可搜尋的網站屬性
 
@@ -195,7 +206,7 @@ ms.locfileid: "46662297"
 |寄件者/作者|電子郵件，是指傳送訊息的人員。 對於檔，為 [author] 欄位中的 Office 檔中所述的人員。 您可以輸入一個以上的名稱，以逗號分隔。 **Or**運算子會以邏輯方式連接兩個或多個值。|
 |大小 (位元組) |電子郵件和檔的專案大小 (以位元組) 。|
 |主旨/職稱|電子郵件，郵件的主旨行中的文字。 檔的標題。 如先前所述，Title 屬性是 Microsoft Office 檔中指定的中繼資料。 您可以輸入多個主體/標題的名稱，以逗號分隔。 **Or**運算子會以邏輯方式連接兩個或多個值。|
-|規範標籤|針對電子郵件和檔，自動標記原則或已手動指派給使用者的保留標籤，會自動指派給郵件和檔的保留標籤。 保留標籤可用來分類電子郵件和檔以進行資訊控管，並根據標籤定義的設定來強制執行保留規則。 您可以輸入部分保留標籤名稱，並使用萬用字元或輸入完整的標籤名稱。 如需保留標籤的詳細資訊，請參閱 [瞭解保留原則和保留標籤](retention.md)。|
+|規範標籤|針對電子郵件和檔，autolabel 由使用者手動指派的原則或保留標籤自動指派給郵件和檔的保留標籤。 保留標籤可用來分類電子郵件和檔以進行資訊控管，並根據標籤定義的設定來強制執行保留規則。 您可以輸入部分保留標籤名稱，並使用萬用字元或輸入完整的標籤名稱。 如需保留標籤的詳細資訊，請參閱 [瞭解保留原則和保留標籤](retention.md)。|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>郵件屬性的條件
@@ -204,7 +215,7 @@ ms.locfileid: "46662297"
   
 |**條件**|**描述**|
 |:-----|:-----|
-|郵件類型| 要搜尋的郵件類型。 此屬性與 Kind 電子郵件屬性相同。 可能的值：  <br/><br/>  接觸  <br/>  文檔  <br/>  email  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams  <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|
+|郵件類型| 要搜尋的郵件類型。 此屬性與 Kind 電子郵件屬性相同。 可能的值：  <br/><br/>  接觸  <br/>  文檔  <br/>  電子郵件  <br/>  externaldata  <br/>  傳真  <br/>  我  <br/>  期刊  <br/>  會議  <br/>  microsoftteams  <br/>  筆記  <br/>  職位  <br/>  rssfeeds  <br/>  任務  <br/>  語音 信箱|
 |參與者|電子郵件訊息中的所有 [人員] 欄位。 這些欄位是從、To、Cc 和 Bcc。|
 |類型|電子郵件專案的郵件類別屬性。 這是 ItemClass 電子郵件屬性的相同屬性。 也是多值的條件。 因此，若要選取多個郵件類別，請按住 **CTRL** 鍵，然後在下拉式清單中，按一下您要新增至條件的兩個或多個郵件類別。 您在清單中選取的每個郵件類別將會在對應的搜尋查詢中以 **OR** 運算子邏輯連接。  <br/> 如需 Exchange 所使用的郵件 (類別和其對應的郵件類別識別碼) 清單，而您可以在 **郵件類別** 清單中選取，請參閱 [專案類型和郵件類別](https://go.microsoft.com/fwlink/?linkid=848143)。|
 |Received|收件者接收到電子郵件的日期。 此屬性與接收的電子郵件屬性相同。|
