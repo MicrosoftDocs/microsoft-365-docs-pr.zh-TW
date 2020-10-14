@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 判斷您的承租人和使用者是否符合需求，讓您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: c3e306789f5b1c09e835d8d2c5ebea668bf14874
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: c89cb801a5b2fcad87227feaf4228b0dcabcf609
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235415"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464047"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷集中式部署的增益集是否適用于您的組織
 
@@ -46,7 +46,7 @@ ms.locfileid: "48235415"
 ## <a name="requirements"></a>需求
 
 [！重要] 增益集的集中式部署需要使用者使用 Microsoft 365 Apps for enterprise 或 Microsoft 365 Business Premium (，並使用組織識別碼) 登入 Office，並擁有 Exchange Online 和 active Exchange Online 信箱。 您的訂閱目錄必須是 in 或同盟至 Azure Active Directory。
-您可以在下面查看 Office 和 Exchange 的特定需求，或使用[集中式部署相容性檢查](#centralized-deployment-compatibility-checker)程式。
+您可以在下面查看 Office 和 Exchange 的特定需求，或使用 [集中式部署相容性檢查](#centralized-deployment-compatibility-checker)程式。
 
 [集中式部署] 不支援下列項目：
   
@@ -134,7 +134,8 @@ Microsoft Exchange 會將增益集資訊清單儲存在貴組織的租用戶中�
     
 - 支援的信箱 (如果該使用者擁有啟用 OAuth 的信箱)
 
-
+> [!NOTE]
+> 使用集中式部署 PowerShell 模組時，不支援多重要素驗證。
   
 ## <a name="user-and-group-assignments"></a>使用者和群組指派
 
@@ -171,4 +172,3 @@ You can do the opposite query by resolving the group to see if it's a member of 
 |辦公室  <br/> | Charles/Fiddler 記錄檔  <br/>  租用戶識別碼 ( [了解做法](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID。 查看其中一個 office 頁面的來源，並尋找 [相關性識別碼] 值並傳送給支援：  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |豐富型用戶端 (Windows、Mac)  <br/> | Charles/Fiddler 記錄檔  <br/>  用戶端應用程式的組建編號 (最好是檔案 **/帳戶** 的螢幕擷取畫面)   <br/> |
    
-

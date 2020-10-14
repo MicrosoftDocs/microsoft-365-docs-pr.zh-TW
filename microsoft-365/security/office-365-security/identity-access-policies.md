@@ -16,12 +16,14 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 - remotework
-ms.openlocfilehash: 1ad8f643741626c4cbb8534b4ed5ed7591010fe0
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+- m365solution-identitydevice
+- m365solution-scenario
+ms.openlocfilehash: 28d4fc196e75a1a7a27cbe2a0f6804646002354f
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399641"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464071"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 
@@ -48,7 +50,7 @@ ms.locfileid: "48399641"
 
 為了讓您有時間完成這些工作，建議您依照此表中所列的順序實施基準原則。 不過，針對敏感和高管制保護層級的 MFA 原則，可在任何時候實施。
 
-|保護層級|原則|詳細資訊|
+|保護層級|原則|其他相關資訊|
 |:---------------|:-------|:----------------|
 |**Baseline**|[當登入風險為*中*或*高*時，需要 MFA](#require-mfa-based-on-sign-in-risk)| |
 |        |[封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-modern-authentication)|未使用新式驗證的用戶端可以略過條件式存取原則，因此請務必封鎖這些設定。|
@@ -216,7 +218,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 使用身分 [識別與裝置存取](microsoft-365-policies-configurations.md)設定中所述的原則，比較基準和機密保護階層與第2級企業增強型資料保護設定緊密對應。 高度管制防護階層密切對應于第3級企業高資料保護設定。
 
-|保護層級 |應用程式保護原則  |詳細資訊  |
+|保護層級 |應用程式保護原則  |其他相關資訊  |
 |---------|---------|---------|
 |基準     | [第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | 在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。         |
 |敏感性     | [第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)        | 在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。        |

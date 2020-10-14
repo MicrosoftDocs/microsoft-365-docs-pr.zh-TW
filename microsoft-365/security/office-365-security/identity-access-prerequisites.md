@@ -16,18 +16,20 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.openlocfilehash: a5a9e6f5d1eb5188a6370cda0c988d2f1dda84cc
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+- m365solution-identitydevice
+- m365solution-scenario
+ms.openlocfilehash: d57709d78cd8b64b740c88362cb99653f6dec681
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399621"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48463987"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
 本文說明在部署建議的身分識別和裝置存取原則之前，必須先執行的必要條件。 本文也會討論推薦的預設平臺用戶端設定，以提供最佳單一登入 (SSO) 使用者經驗，以及條件式存取的技術必要條件。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 在執行建議的身分識別和裝置存取原則之前，您的組織必須符合 Microsoft 365 和 Office 365 的這些身分識別和驗證模型：
 

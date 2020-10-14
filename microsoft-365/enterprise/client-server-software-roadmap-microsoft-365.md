@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 設定 Microsoft 365 用戶端和伺服器軟體的藍圖。
-ms.openlocfilehash: 898464222b8296cee3ab12fe7351295f39a23736
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d3401baa09d27ff9753f9a45ecb537c67701c0e9
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950565"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464405"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365 的用戶端與伺服器軟體藍圖
 
@@ -60,7 +60,7 @@ Microsoft 365 App 企業版會自動安裝更新，可以充分利用以雲端�
 
 ### <a name="office-2010"></a>Office 2010
 
-針對 Office 2010 發行版本中的 Office 版本，終止支援為 **2020 年 10 月 13 日**。 如需詳細資訊，請參閱 [Office 2010 終止支援藍圖](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)。
+若為 Office 2010 版本中的 Office 版本，支援已于 **2020 年10月13日**結束。 如需詳細資訊，請參閱 [Office 2010 終止支援藍圖](https://docs.microsoft.com/deployoffice/office-2010-end-support-roadmap)。
 
 若不使用 Office 2013 或 Office 2016 (這兩者都必須手動更新) 來升級您執行 Office 2010 的電腦，請考慮：
 
@@ -117,7 +117,7 @@ Microsoft 365 for enterprise 包含雲端架構版本的 Office server 服務，
 
 ### <a name="office-server-2010"></a>Office Server 2010
 
-[Exchange Server 2010](exchange-2010-end-of-support.md) 的支援終止日期為 **2020 年 10 月 13 日**。
+[Exchange Server 2010](exchange-2010-end-of-support.md)的支援已于**2020 年10月13日**結束。
 
 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 的支援終止日期為 **2021 年 4 月 13 日**。
 

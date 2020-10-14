@@ -3,7 +3,6 @@ title: Exchange 2010 終止支援藍圖
 ms.author: dstrome
 author: dstrome
 manager: laurawi
-ms.date: 09/16/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,22 +12,22 @@ ms.assetid: e150e7b9-c432-4c8d-a0ae-c11847129a7d
 f1.keywords:
 - NOCSH
 description: Exchange 2010 即將終止支援。 使用此規劃藍圖做為準備升級到 Exchange Online 或 Exchange Server 內部部署更新版本的指南。
-ms.openlocfilehash: 128abd1e98c3e9d1ec4dd8a58683ee0ab019af18
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: dbae3fba3ddbff016e0e9434db4af6ca0a046b0d
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950817"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464249"
 ---
 # <a name="exchange-2010-end-of-support-roadmap"></a>Exchange 2010 終止支援藍圖
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-Exchange Server 2010 將於 **2020 年 10 月 13 日**終止支援。 若尚未開始從 Exchange 2010 遷移至 Microsoft 365、Office 365 或 Exchange 2016，現在是開始規劃的時間。
+Exchange Server 2010 在 **10 月13日，2020**已到達其支援的結束。 若尚未開始從 Exchange 2010 遷移至 Microsoft 365、Office 365 或 Exchange 2016，現在是開始規劃的時間。
 
 ## <a name="what-does-end-of-support-mean"></a>終止支援是什麼意思？
 
-和所有 Microsoft 產品一樣，Exchange Server 也擁有支援生命週期，我們會在這段期間提供新功能、錯誤修正、安全性修正等支援。 產品的生命週期從首次發行日期算起，通常會持續 10 年，而這個生命週期的結束就稱為產品支援結束。 在 2020 年 10 月 13 日 Exchange 2010 終止支援後，Microsoft 將不再提供：
+和所有 Microsoft 產品一樣，Exchange Server 也擁有支援生命週期，我們會在這段期間提供新功能、錯誤修正、安全性修正等支援。 產品的生命週期從首次發行日期算起，通常會持續 10 年，而這個生命週期的結束就稱為產品支援結束。 因為 Exchange 2010 在2020年10月13日到達其支援的結束時間，所以 Microsoft 將不再提供：
 
 - 可能發生問題的技術支援。
 - 針對所探索之問題的錯誤修正，而且可能會影響伺服器的穩定性和可用性。

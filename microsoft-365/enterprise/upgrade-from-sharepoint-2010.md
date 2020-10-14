@@ -18,14 +18,14 @@ search.appverid:
 ms.assetid: 985a357f-6db7-401f-bf7a-1bafdf1f312c
 f1.keywords:
 - NOCSH
-description: 尋找要從 SharePoint 2010 和 Sharepoint Server 2010 升級的資訊和資源，以支援在10月13日2020上進行。
+description: 尋找要從 SharePoint 2010 和 Sharepoint Server 2010 升級的資訊和資源，以支援在4月13日2021上的兩方面。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 88970c83f2497f029635cb987b6b613ea662dc07
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: f406c30befbd1202fa6590352bd32f6d3102ae60
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948017"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464273"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>從 SharePoint 2010 升級
 

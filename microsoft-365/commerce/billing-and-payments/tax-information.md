@@ -20,24 +20,32 @@ description: '瞭解在不同地區，您要對 Microsoft 365 for business 訂�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: de5f05b50138606cd60e8c6ab1999a7ed2090dce
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434058"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464093"
 ---
 # <a name="tax-information"></a>稅務資訊
 
-您透過 Microsoft 購買的 Microsoft 365 系統管理中心的稅金取決於您的營業地址，或者如果不同，則取決於您的收貨地址。 如果您是在美國，您必須提供聯邦雇主身分識別號碼（FEIN）。
+當您購買 Microsoft 365 產品和服務時，所支付的稅費是由以下兩件事之一所決定：您的公司位址或您的運送位址（如果不同）。 如果您的組織屬於美國，您必須提供聯邦雇主身分識別號碼 (FEIN) 。
 
-這些國家/地區的企業可提供其 加值稅 編號：
+下列國家/地區的企業可提供其 加值稅 號碼或當地對等專案：
 
 :::row:::
     :::column:::
+- 亞美尼亞
+- 澳洲
 - 奧地利
+- 巴哈馬
+- 孟加拉
+- 白俄羅斯
 - 比利時
+- 亞
 - 保加利亞
+- 智利
+- 哥倫比亞
 - 克羅埃西亞
 - 賽普勒斯
 - 捷克共和國
@@ -48,112 +56,90 @@ ms.locfileid: "45434058"
 - 德國
 - 希臘
 - 匈牙利
+- 印度
+- 印尼
 - 愛爾蘭
+- 曼島
 - 義大利
-- 拉脫維亞
     :::column-end:::
     :::column:::
+- 韓國
+- 拉脫維亞
 - 列支敦斯登
 - 立陶宛
 - 盧森堡
+- 馬來西亞
 - 馬爾他
+- 墨西哥
 - 摩納哥
 - 荷蘭
+- 紐西蘭
 - 挪威
 - 波蘭
 - 葡萄牙
 - 羅馬尼亞
+- 沙烏地阿拉伯
 - 斯洛伐克
+- 斯洛維尼亞
 - 南非
 - 西班牙
 - 瑞典
 - 瑞士
+- 台灣
+- 土耳其
+- 阿拉伯聯合大公國
 - 英國
     :::column-end:::
 :::row-end:::
 
-這兩個國家/地區可以在其帳單帳戶資訊中提供其 加值稅 號碼或當地對等專案。
-
-|市場| 納稅識別碼 |
-|------|----------------|
-| 澳洲 | ABN （選用） |
-| 巴西 | CNPJ （必要） |
-| 印度 | GSTIN （選用）、PAN ID （必要） |
-| 曼島 | 加值稅識別碼（選用） |
-| 紐西蘭 | GST 註冊號碼（選用） |
-| 摩納哥 | 加值稅識別碼（選用） |
-| 台灣 | 加值稅識別碼（選用） |
+* 針對所列的大部分國家/地區，提供加值稅號碼或當地對等專案是選用的。 若為巴西和印度，則需要納稅識別碼編號。
 
 > [!Note]
 > 如果您需要聯繫支援人員，請讓您的 FEIN、加值稅 號碼或當地的對等專案準備好，以提供支援代理人。
 
-## <a name="what-tax-will-i-be-charged"></a>我需要支付哪些稅金？
+## <a name="europe-the-middle-east-and-africa-emea"></a>歐洲、中東及非洲 (EMEA)
 
-查看下列地區收取的稅金。您也可以提供適當的文件給支援人員以[申請免稅資格](tax-information.md#apply-for-tax-exempt-status)。
+當您在歐盟購買 Microsoft 365 服務時，此款產品須 Value-Added 加值稅 (加值稅) 。
   
-### <a name="europe-the-middle-east-and-africa-emea"></a>歐洲、中東及非洲 (EMEA)
-
-當您在歐盟購買 Microsoft 365 服務時，這項採購須繳納加值稅（加值稅）。
-  
-- 如果您位於歐盟會員國，並且未提供您的有效當地 VAT 識別碼，Microsoft Ireland Operations Ltd. 就會根據您帳戶設定的帳單國家/地區套用目前的當地 VAT 稅率。
+- 如果您位於歐盟成員狀態，而您沒有提供有效的當地 加值稅 ID，則 Microsoft 愛爾蘭運作公司會根據您帳戶設定的計費國家/地區，套用目前的本機 加值稅 率。
 
 - 如果您位於瑞士或列支敦斯登，則不論您是否提供 VAT 識別碼，都會套用瑞士 VAT 稅率。
 
-- 一般而言，如果您是位於歐盟及瑞士/列支敦斯登以外的 EMEA 國家/地區，Microsoft Ireland Operations Ltd. 就不會課徵 VAT。
+- 一般而言，如果您位於歐盟和瑞士/列支敦斯登以外的 EMEA 國家/地區，則不是 Microsoft 愛爾蘭運作公司所徵收的 加值稅。
 
-- 您的 VAT ID 必須先能夠在 VAT Information Exchange System (VIES) 中驗證，我們才能驗證它。如果您的 VAT ID 無法驗證，請連絡您當地的稅務機關。
+- 您的 VAT ID 必須先能夠在 VAT Information Exchange System (VIES) 中驗證，我們才能驗證它。 如果您無法驗證您的 加值稅 ID，請與當地的稅務機關聯繫。
 
-您可能符合零 VAT 稅率的資格：
+在下列情況中，您可能會有資格取得 加值稅 零分級：
   
-- **如果您處在位於愛爾蘭境外的歐盟成員狀態：** 您可以提供有效的當地 加值稅 識別碼。 這會 entitle Microsoft 愛爾蘭運作公司。對交易進行加值稅零比率。 不過，您可能會有當地的 加值稅 會計義務，如果您有任何問題，請與您的稅收 advisers 核實。 如需相關指示，請參閱下方的「新增您的 加值稅 ID （僅限歐盟各國）」。
+- **您處在愛爾蘭境外的歐盟成員狀態：** 您可以提供有效的當地 加值稅 識別碼。 這可讓 Microsoft 愛爾蘭運作公司對交易進行加值稅零比率。 不過，您可能會有當地的 加值稅 會計義務。 如果您有任何問題，請與您的稅收 advisers。 如需相關指示，請參閱 [Add a 加值稅 ID](#add-your-vat-id)。
 
-- **如果您在愛爾蘭，且有相關的有效 加值稅 豁免認證：** Microsoft 愛爾蘭運作公司可能有權將交易從 加值稅 中免除。 如果您不是，Microsoft 愛爾蘭運作公司會套用目前的愛爾蘭加值稅匯率（不論您是否提供加值稅識別碼）。
+- **您在愛爾蘭，具有相關的有效 加值稅 免除憑證：** Microsoft 愛爾蘭運作公司可能有權將交易從 加值稅 中免除。 如果您不是，Microsoft 愛爾蘭運作公司會套用目前的愛爾蘭加值稅匯率（不論您是否提供加值稅識別碼）。
 
-::: moniker range="o365-worldwide"
+## <a name="asia-pacific-countries-apac"></a>亞太地區的國家/地區 (APAC)
 
-#### <a name="add-your-vat-id-eu-countries-only"></a>新增您的 VAT 識別碼 (僅限歐盟國家/地區)
+如果您是由 Microsoft 地區銷售 office，「Microsoft 地區銷售 Pte」收費。 有限公司 "。 會出現在您的發票上，您可能需要支付任何適用的增值、銷售或類似稅收。
+  
+如果您是從下列其中一個位置計費，則會套用目前的當地稅收。 該位置包含 [在您的發票上](view-your-bill-or-invoice.md)：
+  
+- 印度
+- 日本
+- 韓國
+- 新加坡
+- 台灣
+
+## <a name="north-central-and-south-america"></a>北、中、南美洲
+
+在美國、加拿大、墨西哥、智利和哥倫比亞，各稅率的套用取決於產品性質和您的位置。
+  
+如果您的帳單是由 Microsoft Corporation 執行 ([請參閱您的發票](view-your-bill-or-invoice.md)) ，且您已註冊美國、加拿大、波多黎各、智利和哥倫比亞的 Microsoft 365，否則稅收一般不會收費。
+
+## <a name="add-your-vat-id"></a>新增您的 加值稅 ID
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
-
-2. 尋找您要更新之訂閱的訂閱卡。
-
-3. 在 [**設定 & 動作**] 區段中，選取 [**編輯服務使用位址**]。
-
-4. 在 [**編輯服務使用位址**] 頁面的 [**加值稅 號碼**] 方塊中，輸入您的 加值稅 ID （包括前置詞），且不含任何空格。 選取 **[儲存]**。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-#### <a name="add-your-vat-id-eu-countries-only"></a>新增您的 VAT 識別碼 (僅限歐盟國家/地區)
-  
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
-
-2. 選取訂閱名稱，然後選取 [**其他動作**] [ \> **編輯加值稅號碼**]。
-  
-3. 在 [**編輯服務使用位址**] 頁面的 [**加值稅 號碼**] 方塊中，輸入您的 加值稅 ID （包括前置詞），且不含任何空格。 選取 **[儲存]**。
-
-::: moniker-end
-
-### <a name="asia-pacific-countries-apac"></a>亞太地區的國家/地區 (APAC)
-
-如果是由 Microsoft 地區銷售辦公室向您收費，您的發票上就會顯示「Microsoft 地區銷售」，而且通常不會向您徵收消費稅或加值稅 (VAT)，除非是國內銷售。
-  
-如果是從另一個地點向您收費，則會套用目前的當地稅率。您將會[在發票上](view-your-bill-or-invoice.md)看到下列明細：
-  
-- 新加坡對新加坡
-
-- 韓國對韓國
-
-- 日本對日本
-
-- 台灣對台灣
-
-### <a name="north-central-and-south-america"></a>北、中、南美洲
-
-在美國及加拿大，會根據您所在地點適用各種稅率。 在波多黎各，則採用當地加值稅 (VAT) 費率。
-  
-如果您的帳單是由 Microsoft Corporation （[請參閱您的發票](view-your-bill-or-invoice.md)）所完成，而且您已在美國、加拿大及波多黎各之外註冊 Microsoft 365，則納稅一般不會收費。
+2. 在 [ **產品** ] 索引標籤上，選取您要更新的訂閱。
+3. 在 [訂閱詳細資料] 頁面上，選取 [ **服務使用位址** ] 區段中的 [ **編輯服務使用位址**]。
+4. 在 [ **編輯服務使用位址** ] 窗格的 [ **加值稅 號碼** ] 方塊中，輸入您的 加值稅 ID （包括前置詞），且不含任何空格。
+5. 選取 **[儲存]**。
 
 ## <a name="how-taxes-are-calculated"></a>如何計算稅金
 
@@ -161,27 +147,27 @@ ms.locfileid: "45434058"
 
 例如：
 
->*（單價 X 稅率）X 數量 = 總銷售稅*
+>* (單位價格 X 稅率) X 數量 = 總銷售稅*
 
--或-
+- 或 -
 
->（$1.29 X 0.095）X 100 = $12.25
+> ($1.29 X 0.095) X 100 = $12.25
 
 ## <a name="apply-for-tax-exempt-status"></a>申請免稅狀態
 
-如果您在市場上有資格享受免稅狀態，請[啟動服務要求](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)，為您的組織建立免稅狀態。
-
-準備好下列檔：
+如果您在市場上有資格享受免稅狀態，請 [啟動服務要求](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) ，為您的組織建立免稅狀態。
 
 |國家或地區 | 文件 |
 |------------------|----------------|
-| 美國 | 銷售稅免除憑證 |
-| 加拿大 | 豁免憑證（或對應的授權字母） |
-| 愛爾蘭 | 13B/56A 稅收豁免憑證|
+| 加拿大 | 豁免的憑證 (或對等字母的授權)  |
+| 智利 | IVA status/RUT (Registro Unico Tributario)  |
+| 哥倫比亞 | IVA status/RUT (Registro Unico Tributario)  |
 | 保留免除稅款的國際組織 | 來自當地稅務主管機構的憑證/字母確認 |
+| 愛爾蘭 | 13B/56A 稅收豁免憑證|
+| 美國 | 銷售稅免除憑證 |
 | 波多黎各 | Certificado de Compras Exentas |
   
 ## <a name="related-content"></a>相關內容
   
-[查看您的帳單或發票](view-your-bill-or-invoice.md)（文章） \
-[瞭解您的帳單或發票](understand-your-invoice.md)（文章）
+[查看您的帳單或發票](view-your-bill-or-invoice.md) (文章) \
+[瞭解您的帳單或發票](understand-your-invoice.md) (文章) 

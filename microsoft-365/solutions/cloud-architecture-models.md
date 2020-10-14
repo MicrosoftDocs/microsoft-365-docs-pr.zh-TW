@@ -12,12 +12,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 355d933c98bba284302c94e0dc9f54ba7ca52762
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9988a822880db43feebb6ef007c39bd59c5ce6c7
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446508"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464453"
 ---
 # <a name="microsoft-cloud-for-enterprise-architects-illustrations"></a>Microsoft Cloud for Enterprise Architects 圖例
 
@@ -59,7 +59,7 @@ IT 結構設計師在使用 Microsoft 服務和平台時，有關混合雲端需
 
 |**Item**|**描述**|
 |:-----|:-----|
-|[![Teams 邏輯架構海報的縮圖影像](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>2019年7月更新    |此模型包含： <ul><li>商務案例與架構方法的對應</li><li>設計考量</li><li>單一事件移轉流程</li><li>分階段移轉流程</li><li>租用戶移動或分割流程</li></ul>|
+|[![Teams 邏輯架構海報的縮圖影像](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>2020年10月更新    |此模型包含： <ul><li>商務案例與架構方法的對應</li><li>設計考量</li><li>單一事件遷移流程範例</li><li>逐步遷移流程範例</li><li>承租人移動或分割流程範例</li></ul>|
 
 <a name="security"></a>
 ### <a name="microsoft-cloud-security-for-enterprise-architects"></a>Microsoft cloud security for enterprise architects

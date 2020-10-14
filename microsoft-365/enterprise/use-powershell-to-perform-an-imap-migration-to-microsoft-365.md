@@ -1,5 +1,5 @@
 ---
-title: 使用 PowerShell 將 IMAP 移轉至 Microsoft 365
+title: 使用 PowerShell 以網際網路訊息存取通訊設定移轉至 Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,14 +16,14 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.assetid: c28de4a5-1e8e-4491-9421-af066cde7cdd
 description: 瞭解如何使用 PowerShell 來執行網際網路郵件存取通訊協定 (IMAP) 遷移至 Microsoft 365。
-ms.openlocfilehash: 6eb422455d0bdf31fa1859bd0231b68e5568748c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 67621ecfca7ec323a73b91a530f848dd7571f9b2
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688674"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464441"
 ---
-# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>使用 PowerShell 將 IMAP 移轉至 Microsoft 365
+# <a name="use-powershell-to-perform-an-imap-migration-to-microsoft-365"></a>使用 PowerShell 以網際網路訊息存取通訊設定移轉至 Microsoft 365
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
@@ -103,7 +103,7 @@ paulc@contoso.edu,paul.cannon,3281986
   
  **Microsoft Exchange：**
   
-如果您要從 Microsoft Exchange 的 IMAP 實作中移轉電子郵件，請針對 CSV 檔案中的 **UserName** 屬性使用 **Domain/Admin_UserName/User_UserName** 格式。假設您要從 Exchange 中移轉 Terry Adams、Ann Beebe 和 Paul Cannon 的電子郵件。您具有郵件系統管理員帳戶，其使用者名稱為 **mailadmin** ，而密碼為 **P@ssw0rd** 。以下是您 CSV 檔的外觀：
+如果您要從 Microsoft Exchange 的 IMAP 實作中移轉電子郵件，請針對 CSV 檔案中的 **UserName** 屬性使用 **Domain/Admin_UserName/User_UserName** 格式。 假設您要從 Exchange 移轉 Terry Adams、Ann Beebe 及 Paul Cannon 的電子郵件。 您有郵件系統管理員帳戶，其中使用者名稱是 **mailadmin** ，密碼是 **P \@ ssw0rd**。 以下是您 CSV 檔的外觀：
   
 ```powershell
 EmailAddress,UserName,Password
@@ -114,7 +114,7 @@ paulc@contoso.edu,contoso-students/mailadmin/paul.cannon,P@ssw0rd
 
  **Dovecot：**
   
-若為支援簡單驗證及安全性階層 (SASL) 的 IMAP 伺服器 (例如 Dovecot IMAP 伺服器)，請使用 **User_UserName*Admin_UserName** 格式，其中星號 (*) 是可設定的分隔字元。假設您要使用系統管理員認證 **mailadmin** 和 **P@ssw0rd** ，從 Dovecot IMAP 伺服器中移轉相同使用者的電子郵件。以下是您 CSV 檔的外觀：
+若為支援簡單驗證及安全性階層 (SASL) 的 IMAP 伺服器 (例如 Dovecot IMAP 伺服器)，請使用 **User_UserName*Admin_UserName** 格式，其中星號 (*) 是可設定的分隔字元。 假設您要使用系統管理員認證 **mailadmin** 和 **P \@ SSW0RD**，從 Dovecot IMAP 伺服器遷移這些相同使用者的電子郵件。 以下是您 CSV 檔的外觀：
   
 ```powershell
 EmailAddress,UserName,Password
@@ -125,7 +125,7 @@ paulc@contoso.edu,paul.cannon*mailadmin,P@ssw0rd
 
  **Mirapoint：**
   
-如果您要從 Mirapoint Message Server 中移轉電子郵件，請針對系統管理員認證使用 **#user@domain#Admin_UserName#** 格式。若要使用系統管理員認證 **mailadmin** 和 **P@ssw0rd** ，從 Mirapoint 中移轉電子郵件，您 CSV 檔的外觀如下：
+如果您要從 Mirapoint 郵件伺服器遷移電子郵件，請使用 format **#user \@ domain # Admin_UserName #** 以取得系統管理員認證。 若要使用系統管理員認證 **mailadmin** 和 **P \@ ssw0rd**從 Mirapoint 遷移電子郵件，您的 CSV 檔如下所示：
   
 ```powershell
 EmailAddress,UserName,Password
