@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: 43ce7809237d32fb9d2da73e9e00bed9b9a8193e
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 6078b41f8911301d343925c5bf895e881abddffe
+ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464059"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48469718"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -41,13 +41,14 @@ ms.locfileid: "48464059"
 
 ## <a name="to-set-up-sharepoint-syntex"></a>若要設定 SharePoint Syntex
 
-1. 在 Microsoft 365 系統管理中心中，選取 **[設定]**，然後查看 **[組織知識]** 區段。
+1. 在 [Microsoft 365 系統管理中心] 中，選取 **[設定]**，然後查看 **[檔案和內容]** 區段。
 
 2. 在 **[檔案和內容]** 區段中，選取 **[自動化內容瞭解]**。<br/>
 
 3. 在 **[自動化內容瞭解]** 頁面上，按一下 **[開始使用]** 逐步執行設定流程。<br/>
 
-    ![開始設定](../media/content-understanding/admin-content-understanding-get-started.png)</br>
+    > [!div class="mx-imgBorder"]
+    > ![開始設定](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 4. 在 **[設定表單處理]** 頁面上，您可以選擇是否要讓使用者能夠在特定 SharePoint 文件庫中建立表單處理模型。 您可以在 [文件庫] 功能區中使用功能表選項，在啟用此功能的 SharePoint 文件庫中 **[建立表單處理模型]**。
  
@@ -56,18 +57,22 @@ ms.locfileid: "48464059"
       - **僅限選取網站中的文件庫**，然後選取您要讓其可供使用的網站，或上傳最多 50 個網站的清單。</br>
       - **不使用 SharePoint 文件庫**，如果您不想讓任何網站都能使用 SharePoint 文件庫 (您可以在設定後變更)。
 
-   ![設定表單處理](../media/content-understanding/admin-configforms.png)
+   > [!div class="mx-imgBorder"]
+   > ![設定表單處理](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > 當網站被包含之後移除網站，並不會影響該網站中文件庫套用的現有模型，或將文件理解模型套用至文件庫的功能。 
     
-5. 在 **[建立內容中心]** 頁面上，您可以建立 SharePoint 內容中心網站，讓使用者建立及管理文件理解模型。 </br>
-    a. 在 **[網站名稱]** 中，輸入您要給予內容中心網站的名稱。</br>
-    b. **[網站位址]** 會根據您為網站名稱所選取的內容，顯示網站的 URL。 如果您想要變更，請按一下 **[編輯]**。</br>
+5. 在 **[建立內容中心]** 頁面上，您可以建立 SharePoint 內容中心網站，讓使用者建立及管理文件理解模型。
 
-      ![建立內容中心](../media/content-understanding/admin-cu-create-cc.png)</br>
+    1. 在 **[網站名稱]** 中，輸入您要給予內容中心網站的名稱。
+    
+    1. **[網站位址]** 會根據您為網站名稱所選取的內容，顯示網站的 URL。 如果您想要變更，請按一下 **[編輯]**。
 
-    選取 **[下一步]**。
+       > [!div class="mx-imgBorder"]
+       > ![建立內容中心](../media/content-understanding/admin-cu-create-cc.png)</br>
+
+       選取 **[下一步]**。
 
 6. 在 **[檢閱並完成]** 頁面上，您可以查看您選取的設定，並選擇進行變更。 如果您對您的選擇感到滿意，請選取 **[啟用]**。
 
@@ -89,7 +94,8 @@ ms.locfileid: "48464059"
 
 4. 選取 **[智慧型內容服務]**。 在 **[應用程式]** 底下，確定 **[智慧型內容服務的一般資料服務]** 和 **[智慧型內容服務]** 皆已選取。
 
-    ![Microsoft 365 系統管理中心中的 SharePoint Syntex 授權。](../media/content-understanding/sharepoint-syntex-licenses.png)
+    > [!div class="mx-imgBorder"]
+    > ![Microsoft 365 系統管理中心中的 SharePoint Syntex 授權](../media/content-understanding/sharepoint-syntex-licenses.png)
 
 5. 按一下 **[儲存變更]**。
 

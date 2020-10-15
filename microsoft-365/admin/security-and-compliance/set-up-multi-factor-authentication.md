@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 了解如何為您的組織設定多重要素驗證。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 34133f4204c1ee305b0a249a0ff8e0e9edaf5599
-ms.sourcegitcommit: e891c7c25f351f10f250af3f483f68594976ddc9
+ms.openlocfilehash: 320c66e6c9db7827c22cab67df57d75375f009d4
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45153674"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464011"
 ---
 # <a name="set-up-multi-factor-authentication"></a>設定多重要素驗證
   
@@ -76,7 +76,7 @@ ms.locfileid: "45153674"
 
 購買 Azure AD Premium P1 的客戶或含此授權的授權（例如 Microsoft 365 商務版 Premium）和 Microsoft 365 E3 皆可使用條件式存取。 如需詳細資訊，請參閱[建立 [條件式存取] 原則](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa)。
 
-透過 Azure AD Premium P2 授權或含此授權的授權（例如 Microsoft 365 E5）可使用風險型條件式存取。 如需詳細資訊，請參閱 [風險型 [條件式存取]](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)。
+透過 Azure AD Premium P2 授權或含此授權的授權 (例如 Microsoft 365 E5) 可使用風險型條件式存取。 如需詳細資訊，請參閱 [風險型 [條件式存取]](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)。
 
 如需有關 Azure AD P1 和 P2 的詳細資訊，請參閱 [Azure Active Directory 定價](https://azure.microsoft.com/pricing/details/active-directory/)。
 
@@ -96,12 +96,11 @@ ms.locfileid: "45153674"
 1. 在多重要素驗證頁面上，選取每個使用者並將其 [多重要素驗證] 狀態設為 **停用**。
 
 ## <a name="next-steps"></a>後續步驟
-
 - [如何註冊以取得其他驗證方法](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [什麼是多重要素驗證](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [註冊之後如何登入](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [如何變更其他驗證方法](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
-- [如何處理新智慧型手機等狀況](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
-- [疑難排解 MFA 登入](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
+
 
 
 

@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: Priority
 description: 描述文件瞭解和表單處理模型之間的差異
-ms.openlocfilehash: 71887aeeb66699b3d756317b33d52607f480aa7d
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 98d5e9463dedda96c02ed7c3ed80576638941816
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333869"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464225"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文件瞭解和表單處理模型之間的差異 
 
@@ -55,8 +55,6 @@ Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 
 
 當您建立文件瞭解模型時，將建立儲存在 SharePoint 內容類型庫中的 [新 SharePoint 內容類型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)。 或者，您可以視需要使用現有內容類型來定義模型。
 
-表單處理模型是在 PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview)中建立，但建立是直接從 SharePoint 文件庫發起。 需要在文件庫上啟用表單處理模型建立，以便使用者為其建立表單處理模型。 或者管理員可以在內容瞭解管理設定中執行此動作。 表單處理模型使用 PowerAutomate 流程在文件上傳到文件庫時處理這些檔案。
-
 表單處理模型也會建立 [新 SharePoint 內容類型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)，而且也會儲存在 SharePoint 內容類型庫中。
 
 ## <a name="where-they-can-be-applied"></a>可以套用的位置
@@ -68,10 +66,10 @@ Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 
  ## <a name="see-also"></a>另請參閱
 [訓練：使用 AI Builder 改善商務效能](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
-[建立分類器](create-a-classifier.md)
 
-[建立擷取器](create-an-extractor.md)
 
-[套用文件瞭解模型](apply-a-model.md)
+[文件瞭解概觀](document-understanding-overview.md)
 
-[建立表單處理模型](create-a-form-processing-model.md)
+[表單處理概觀](form-processing-overview.md)
+
+[SharePoint Syntex 簡介](index.md)

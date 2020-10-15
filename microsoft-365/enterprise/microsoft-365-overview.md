@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 企業版的元件、方案和部署路徑的簡介。
-ms.openlocfilehash: fa076517b071efbe3a5002d6a48418a796e38ca4
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 53cc91a2b5e756fcf4ec8fcc5371795bcfb8342c
+ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327470"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "48464345"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -87,7 +87,7 @@ Microsoft 365 E3 使用者可以使用這些附加元件來利用 Microsoft 365 
 
 [Windows 7](https://aka.ms/win7upgrade) 已於 **2020 年 1 月 14 日**進入終止支援。
 
-這些產品將於 **2020 年 10 月 13 日**到達終止支援：
+這些產品已於 **2020 年 10 月 13 日**進入終止支援：
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
