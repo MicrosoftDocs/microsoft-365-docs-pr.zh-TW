@@ -19,16 +19,18 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 瞭解如何管理 Microsoft 365 群組，包括新增移除群組成員、編輯電子郵件地址、組名或描述，以及自訂群組的運作方式。
-ms.openlocfilehash: 29eaa762116498799d4156b58c8f9bf466f04073
-ms.sourcegitcommit: e87015bf29ad15688137c785d93f2c79ca3208f4
+ms.openlocfilehash: 7cc9bc6eb79b305c7d20d8075b6dc287e4f8b5d7
+ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48343268"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48469706"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中管理群組
 
-[建立 Microsoft 365 群組](create-groups.md)並新增群組成員之後，您可以設定群組。 您可以編輯群組名稱或描述、管理擁有者或成員，並指定外部寄件者是否可以寄出群組，以及是否要將群組交談的複本傳送給成員。 
+[建立 Microsoft 365 群組](create-groups.md)並新增群組成員之後，您可以設定群組。 您可以編輯群組名稱或描述、管理擁有者或成員，並指定外部寄件者是否可以寄出群組，以及是否要將群組交談的複本傳送給成員。
+
+移至 Microsoft 365 系統管理中心，網址為 [https://admin.microsoft.com](https://admin.microsoft.com) 。
 
 ## <a name="edit-the-group-name-or-description"></a>編輯群組名稱或描述
 
