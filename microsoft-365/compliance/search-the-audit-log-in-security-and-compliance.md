@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 您可以使用 Office 365 安全性與合規性中心或 [Microsoft 365 合規性中心] 以搜尋整合的稽核記錄，檢視貴組織中的使用者和系統管理員活動。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48d40cff907480f05dff8ba1c5c1584fc8289b1b
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f1f2201d847001a5a9df4a367268f1f764367574
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48286039"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446636"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合規性中心搜尋稽核記錄
 
@@ -456,6 +456,24 @@ ms.locfileid: "48286039"
 |用戶端發出的檢視訊號|ClientViewSignaled|使用者的用戶端 (例如網站或行動應用程式) 已發出訊號，指出使用者已檢視指示的頁面。 此活動通常會在頁面的 PagePrefetched 事件之後進行記錄。 <br/><br/>**請注意**：由於 ClientViewSignaled 事件會由用戶端發出訊號，而不是由伺服器，所以伺服器可能不會記錄事件，因此事件可能也不會出現在稽核記錄中。 稽核記錄中的資訊也可能不可靠。 不過，因為用來建立訊號的權杖會驗證使用者的身分識別，因此對應稽核記錄中所列的使用者身分識別會是正確的。 |
 |(無)|PagePrefetched|使用者的用戶端 (例如網站或行動應用程式) 已要求指示的頁面在使用者瀏覽至此時，協助改善效能。 記錄此事件的目的是指出頁面內容已對使用者的用戶端提供服務。 此事件並非明確指示使用者已瀏覽到此頁面。 <br/><br/> 當用戶端呈現頁面內容時 (根據使用者的要求)，應該會隨即產生 ClientViewSignaled 事件。 並非所有用戶端都支援指出預先擷取活動，因此某些預先擷取的活動可能會記錄為 PageViewed 事件。|
 ||||
+
+#### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>FileAccessed 和 FilePreviewed 事件的常見問題集
+
+**任何非使用者事件是否能觸發包含使用者代理程式 (如 "OneDriveMpc-Transform_Thumbnail") 的 FilePreviewed 稽核記錄？**
+
+我們不知道有什麼案例可使得非使用者動作產生類似這樣的事件。 開啟使用者個人檔案卡片 (在 Outlook 網頁版的郵件中按一下其名稱或電子郵件地址) 之類的使用者動作會產生類似事件。
+
+**對 OneDriveMpc-Transform_Thumbnail 的呼叫是否一律為使用者故意觸發？**
+
+不是。 但類似事件可能由於瀏覽器預先擷取而加以記錄。
+
+**如果我們看到來自 Microsoft 註冊 IP 位址的 FilePreviewed 事件，則表示該預覽已在使用者裝置的螢幕上顯示了嗎？**
+
+不是。 該事件可能由於瀏覽器預先擷取而加以記錄。
+
+**是否有使用者預覽文件會產生 FileAccessed 事件的案例？**
+
+FilePreviewed 和 FileAccessed 事件都表示使用者的呼叫導致讀取檔案 (或讀取檔案的縮圖呈現)。 雖然這些事件旨在配合預覽與存取意圖，但事件差異並非使用者意圖的保證。
 
 #### <a name="the-appsharepoint-user-in-audit-records"></a>稽核記錄中的 app\@sharepoint 使用者
 

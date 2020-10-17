@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: 在本文中，您將瞭解如何使用 PowerShell 將 Microsoft 365 授權指派給未授權的使用者。
-ms.openlocfilehash: f042f8109bf9ac9b634bc66509c60a5181fb1af6
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 8c3165b99477afa14e6d2b0da927b5f64c416ef1
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235615"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580937"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>使用 PowerShell 將 Microsoft 365 授權指派給使用者帳戶
 
@@ -34,9 +34,13 @@ ms.locfileid: "48235615"
 
 使用者必須先將授權方案的授權指派給他們的帳戶，才可使用任何 Microsoft 365 服務。 您可以使用 PowerShell 快速將授權指派給未授權的帳戶。 
 
->[!Note]
->必須為使用者帳戶指派位置。 您可以從 Microsoft 365 系統管理中心的使用者帳戶屬性或從 PowerShell 執行此動作。
->
+使用者帳戶必須先指派位置。 若要在 [Microsoft 365 系統管理中心](../admin/add-users/add-users.md)中建立新的使用者帳戶，必須指定位置。 
+
+從您的內部部署 Active Directory 網域服務同步處理的帳戶預設不會有指定的位置。 您可以從下列位置設定這些帳戶的位置：
+
+- Microsoft 365 系統管理中心
+ - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
+ - [Azure 入口網站](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory**  >  **使用者**> 使用者帳戶 >**設定檔**  >  **連絡人資訊**  > ) 的**國家或地區**。
 
 >[!Note]
 >瞭解如何使用 Microsoft 365 系統管理中心[指派授權給使用者帳戶](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
@@ -207,7 +211,7 @@ $userList = Get-AzureADUser -ObjectID $userUPN | Select -ExpandProperty Assigned
 $userList | ForEach { $sku=$_.SkuId ; $licensePlanList | ForEach { If ( $sku -eq $_.ObjectId.substring($_.ObjectId.length - 36, 36) ) { Write-Host $_.SkuPartNumber } } }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>也請參閱
 
 [以 PowerShell 管理使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

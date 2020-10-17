@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f18a98b19b6a1920d1e4d2094ba0bab74f10035e
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430136"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477002"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>進階搜捕查詢最佳做法
 
@@ -56,7 +56,7 @@ ms.locfileid: "48430136"
 
 - **具有節拍**：若要避免在非必要字詞中搜尋子字串，請使用 `has` 運算子，而不要使用 `contains` 。 [瞭解字串運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
 - **在特定欄中查看**--查看特定欄，而不是在所有欄中執行完整的文字搜尋。 請勿使用 `*` 以檢查所有欄。
-- **以區分大小寫的速度**-區分大小寫的搜尋更為具體，而且通常更為具性能。 區分大小寫的 [字串運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)（例如 `has_cs` 和）的名稱 `contains_cs` 一般為 `_cs` 。 您也可以使用區分大小寫的 equals 運算子， `==` 而不要使用 `~=` 。
+- **以區分大小寫的速度**-區分大小寫的搜尋更為具體，而且通常更為具性能。 區分大小寫的 [字串運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)（例如 `has_cs` 和）的名稱 `contains_cs` 一般為 `_cs` 。 您也可以使用區分大小寫的 equals 運算子， `==` 而不要使用 `=~` 。
 - **剖析：請**盡可能使用 [parse 運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) 或類似 [parse_json ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)的分析函數。 避免 `matches regex` 使用正則運算式的字串運算子或 [析取 ( # A1 函數](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction)。 保留使用正則運算式以取得更複雜的案例。 [閱讀有關分析函數的詳細資訊](#parse-strings)
 - **篩選資料表不是運算式**-如果您可以在資料表欄上篩選，請勿在計算欄上篩選。
 - **無三個字元的字詞**，避免使用包含三個字元或更少的字詞來比較或篩選。 這些字詞不會編制索引，而且符合這些字詞將需要更多資源。

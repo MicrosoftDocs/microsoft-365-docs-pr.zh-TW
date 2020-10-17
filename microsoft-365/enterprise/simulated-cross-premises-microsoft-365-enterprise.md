@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 摘要：在 Microsoft Azure 中建立模擬的跨單位部署虛擬網路，以作為 Microsoft 365 測試環境。
-ms.openlocfilehash: afbf294d0637c3454cedadec3268e74411a3c399
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ce8b1963e97decc58820bff7b563bb835a843772
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685721"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487645"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Microsoft 365 測試環境中模擬的跨單位部署虛擬網路
 
@@ -64,7 +64,7 @@ ms.locfileid: "46685721"
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 移至 [microsoft 365 for Enterprise Test Lab Guide 堆疊](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) ，以顯示 microsoft 365 For Enterprise Test lab guide 堆疊中所有文章的視覺對應。
+> 移至 [microsoft 365 for Enterprise Test Lab Guide 堆疊](../downloads/Microsoft365EnterpriseTLGStack.pdf) ，以顯示 microsoft 365 For Enterprise Test lab guide 堆疊中所有文章的視覺對應。
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>階段 1：設定 TestLab 虛擬網路
 

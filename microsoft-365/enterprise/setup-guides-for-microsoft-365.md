@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 使用設定指南，加速規劃和設定 Microsoft 365 或 Office 365。
-ms.openlocfilehash: fd9d9a3b65f3a4e47604299c47a85d8c5e551149
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446936"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493694"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服務的設定指南
 
@@ -90,6 +90,17 @@ Windows 虛擬機器是雲端中執行的綜合桌面和應用程式虛擬化服
 
 [Windows Virtual Desktop 安裝指南](https://aka.ms/wvdsetupguide)為系統管理員提供規劃資源和必要條件，以進行部署、安裝指導及其他資源。 
 
+### <a name="microsoft-edge-deployment-advisor"></a>Microsoft Edge 部署顧問
+
+Microsoft Edge 已從頭開始重建，讓您具備世界一流的相容性和效能、您所享有的安全性和隱私權，以及專為您提供最適合您的網站的新功能。
+
+[Microsoft Edge 部署顧問](https://aka.ms/edgeadvisor)將協助您設定企業網站探索，以查看您的組織中存取的網站可能需要使用 IE 模式、複查及設定重要的安全性功能、設定隱私權原則及其他原則，以符合組織的需求，以及管理裝置上的 web access。 您可以將 Microsoft Edge 下載至個別裝置，也可以使用 Configuration Manager 或 Microsoft Intune 示範如何在您的組織中部署多位使用者。
+Windows 虛擬機器是雲端中執行的綜合桌面和應用程式虛擬化服務。 這是唯一的虛擬桌面基礎結構 (VDI) ，可提供簡化的管理、多會話 Windows 10、Microsoft 365 應用程式的優化，以及支援遠端桌面服務 (RDS) 環境。 在幾分鐘內部署並縮放您的 Windows 桌面和應用程式至 Azure，以取得內建的安全性和合規性功能。 
+
+### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager 共同管理安裝指南
+
+針對現有的 Configuration Manager 用戶端裝置以及您的組織想要與 Microsoft Intune 及 Configuration Manager 共同管理的新 internet 裝置，使用 [Intune Configuration Manager 共同管理安裝指南](https://aka.ms/comanagementsetup) 。 這項共同管理部署指南可讓您管理 Windows 10 裝置，並將新功能新增至您組織的裝置，同時接收這兩種解決方案的優點。
+
 ## <a name="guides-for-authentication-and-access"></a>驗證和存取指南
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD 安裝指南
@@ -97,6 +108,10 @@ Windows 虛擬機器是雲端中執行的綜合桌面和應用程式虛擬化服
 [AZURE AD 安裝指南](https://aka.ms/aadpguidance)提供資訊，以確保您的組織具備強大的安全性基礎。 在此指南中，您將會設定初始功能，例如 Azure 角色型存取控制 (Azure RBAC) （適用于系統管理員的 azure RBAC）和 Azure AD Connect Health，這樣您就可以在自動同步處理期間監控混合式身分識別的健康情況。 
 
 此外，它也包含啟用自助密碼重設、條件式存取和整合協力廠商登錄（包括選用的高級身分識別保護和使用者布建自動化）的重要資訊。
+
+### <a name="sync-users-from-your-orgs-directory"></a>從您的組織目錄同步處理使用者
+
+[您的組織目錄中的同步處理使用者](https://aka.ms/directorysyncsetup)會引導您完成目錄同步處理的開啟。 這會將您的內部部署和雲端身分識別帶入一起，以方便存取和簡化管理。 解除鎖定新功能，例如單一登入、自助服務選項、自動帳戶布建、條件式存取控制及符合性原則。 這可確保您的使用者可以從任何位置存取所需的資源。
 
 ### <a name="plan-your-passwordless-deployment"></a>規劃 passwordless 部署
 

@@ -4,7 +4,7 @@ ms.author: kvice
 ms.reviewer: smithre4
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 08/25/2020
+ms.date: 10/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將深入瞭解混合式新式驗證和使用內部部署商務用 Skype 和 Exchange 伺服器的必要條件。
-ms.openlocfilehash: 82cd4203e2e9dc53c6add542c5f0ba90530b6548
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: dbd108d9b04445838ce8e88a921af717ebd763be
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361924"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487717"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式驗證概述和使用內部部署商務用 Skype 和 Exchange 伺服器的必要條件
 
@@ -161,6 +161,7 @@ Get-CSOAuthConfiguration
     未列出的用戶端和（或）通訊協定 (例如，POP3) 不支援搭配內部部署 Exchange 的新式驗證，而且繼續利用舊版驗證機制，即使在環境中啟用新式驗證之後也是一樣。
 
 - **一般必要條件**
+  - 資源樹系案例會需要與帳戶樹系進行雙向信任，以確保混合式新式驗證要求期間執行適當的 SID 查閱。 
   - 如果您使用 AD FS，則同盟必須具有 Windows 2012 R2 AD FS 3.0 和更新版本。
   - 您的身分識別設定是 Azure AD Connect 支援的任何類型，例如密碼雜湊同步處理、傳遞驗證，以及 Office 365 支援的內部部署 STS。
   - 您已設定 Azure AD Connect，以供使用者複寫及同步處理。

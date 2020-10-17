@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bd437141f80b80370abeec7585596892f2434655
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 89708efa6a34b5ca7a302ba0ad331a2dac99f5d9
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446566"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477133"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測
 
@@ -48,6 +48,38 @@ ms.locfileid: "48446566"
 - [從總管中的檢視啟動自動化的調查和回應程序](#start-automated-investigation-and-response) (僅限 ATP 方案 2)
 - ... [調查惡意電子郵件等功能](#more-ways-to-use-explorer-or-real-time-detections)！
 
+## <a name="tags-in-threat-explorer"></a>威脅瀏覽器中的標記
+
+> [!NOTE] 
+> 使用者標記功能是在預覽中，並非所有人都可以使用，而且可能會變更。 如需發行排程的相關資訊，請參閱 Microsoft 365 藍圖。
+
+使用者標記是 Microsoft Defender for Office 365 中特定使用者群組的識別碼。 如需有關標記、授權和設定標記的詳細資訊，請參閱下列網址： [Office 365 ATP 中的使用者標記](user-tags.md)。
+
+在威脅瀏覽器內，您可以在下列體驗中看到使用者標記的資訊：
+
+#### <a name="email-grid-view"></a>電子郵件格線視圖
+
+在 [電子郵件] 窗格中顯示的 [標記] 欄會包含已套用至寄件者或收件者信箱的所有標記。 依預設，會先顯示「優先順序」帳戶之類的系統標記。
+
+![篩選標記](../../media/tags-grid.png)
+
+#### <a name="filtering"></a>篩選
+現在我們有標記為篩選，因此您可以只搜尋優先順序帳戶或特定使用者標記案例 (，甚至在此體驗) 中排除包含某些標記的結果。 結合使用我們提供的多個其他篩選器，可協助您縮小調查範圍
+
+![篩選標記](../../media/tags-filter-normal.png)
+
+![不篩選標記](../../media/tags-filter-not.png)
+
+#### <a name="email-detail-flyout"></a>電子郵件詳細資料快顯視窗
+若要查看寄件者和收件者的個別標記，請按一下 [主旨]。 它會開啟 [郵件詳細資料] 浮出。 在 [摘要] 索引標籤中，[寄件者] 和 [收件者] 標記會分開顯示（如果它們存在於電子郵件
+寄件者和收件者個別標記的相關資訊也會延伸至匯出的 CSV，您可以在兩個不同的欄中查看這些詳細資料。 
+
+![電子郵件詳細資料標記](../../media/tags-flyout.png)
+
+標記資訊也會顯示在 URL 中按一下 [飛入]。 若要取得 URL，請按一下 [飛入]，您將需要移至 [網路釣魚] 或 [所有電子郵件] 視圖，然後 URLs 或 URL 按一下索引標籤。按一下個別的 [URL]，會顯示有關該 URL 之按一下動作的詳細資料，並有與該按一下關聯的標記。 
+
+![URL 標記](../../media/tags-urls.png)
+
 ## <a name="improvements-to-threat-hunting-experience-upcoming"></a> (即將開始的威脅搜尋體驗的增強功能) 
 
 ### <a name="updated-threat-information-for-emails"></a>更新的電子郵件威脅資訊
@@ -58,24 +90,27 @@ ms.locfileid: "48446566"
 
 除了顯示惡意程式碼和網路釣魚威脅之外，您現在還可以查看與電子郵件相關聯的垃圾郵件結論。 在電子郵件中，您將能夠看到與對應偵測技術相關的電子郵件相關威脅。 每封電子郵件可以有0個、1個或多個威脅。 您會在 [電子郵件] 浮出控制項的 [詳細資料] 區段中看到目前的威脅。 此外，如果有多個威脅 (例如，具有惡意程式碼和網路釣魚) 的電子郵件，偵測技術人員將會提供 Threat-Detection 對應，表示哪些偵測技術會導致威脅識別。
 
-這組偵測技術已更新，以包含新的偵測方法和垃圾郵件偵測技術，並 aross 所有不同的電子郵件視圖 (惡意程式碼、網路釣魚程式、所有電子郵件) 中，您將擁有相同且一致的偵測技術集合，以篩選結果。 
+這組偵測技術已更新，以包含新的偵測方法、垃圾郵件偵測技術，以及跨所有不同的電子郵件視圖 (惡意程式碼、網路釣魚程式、所有電子郵件) ，您將擁有相同且一致的偵測技術集合，以篩選結果。 
 
-**附注**：判定分析可能不一定要與實體關聯。 舉例來說，電子郵件可能會分類為網路釣魚或垃圾郵件，但沒有任何 URLs，其上有任何網路釣魚/垃圾郵件的標記。 這是因為在指派判定之前，我們的篩選也會評估電子郵件的內容和其他詳細資料。 
+> [!NOTE]
+> 判定分析可能不一定要與實體關聯。 舉例來說，電子郵件可能會分類為網路釣魚或垃圾郵件，但沒有任何 URLs，其上有任何網路釣魚/垃圾郵件的標記。 這是因為在指派判定之前，我們的篩選也會評估電子郵件的內容和其他詳細資料。 
  
 #### <a name="threats-in-urls"></a>URLs 中的威脅
 
 在 [電子郵件飛出] 中 > 詳細資料] 索引標籤，您現在可以查看 url 的特定威脅。 URL 的威脅 (威脅可以是惡意程式碼、網路釣魚、垃圾郵件或無) 
 
-![URL 威脅](../../media/URL_Threats.png)
+> [!div class="mx-imgBorder"]
+> ![URL 威脅](../../media/URL_Threats.png)
 
 ### <a name="updated-timeline-view-upcoming"></a> (即將開始的時程表視圖更新) 
 
-![更新時程表視圖](../../media/Email_Timeline.png)
+> [!div class="mx-imgBorder"]
+> ![更新時程表視圖](../../media/Email_Timeline.png)
 
-除了識別所有傳遞和傳遞後事件以外，[時程表] 視圖也提供這些事件子集合在該時間點所識別之威脅的相關資訊。 此外，它還提供其他動作的詳細資訊 (例如，.ZAP、手動修正) 以及該動作的結果。 時程表視圖包含原始傳遞的相關資訊，以及後續對電子郵件執行的後續傳遞事件。
+除了識別所有傳遞和傳遞後事件以外，[時程表] 視圖也提供這些事件子集合在該時間點所識別之威脅的相關資訊。 此外，它還提供其他動作的詳細資訊 (例如，ZAP、手動修正) 以及該動作的結果。 時程表視圖包含原始傳遞的相關資訊，以及後續對電子郵件執行的後續傳遞事件。
 
 -   來源：這可以是以系統管理員/系統/使用者為基礎的事件來源。
--   事件：這包括上一層級的事件，例如原始傳遞、手動修正、ZAP、報送及動態傳遞。
+-   Event：這包括最上層的事件，例如原始傳遞、手動修正、ZAP、報送及動態傳遞。
 -   動作：這涵蓋做為 ZAP 或 Admin 動作一部分所採取的特定動作 (例如，Soft Delete) 。
 -   威脅：涵蓋該時間點 (惡意程式碼、網路釣魚詐騙、垃圾郵件) 所識別的威脅。
 -   Result/Details：涵蓋動作結果的詳細資訊，不論它是在 ZAP/系統管理動作中執行。
@@ -86,27 +121,31 @@ ms.locfileid: "48446566"
 
 原始傳遞位置可提供有關最初傳送電子郵件的位置的詳細資訊。 最新的傳遞位置包含的位置，電子郵件可能會在進入後的系統動作（如 **移至 [已刪除的專案**]）之後，將執行。 最新的傳遞位置是用來通知系統管理員郵件的最後一個已知位置送達後或任何系統/系統管理員動作。 根據設計，它不會在電子郵件上包含任何使用者相關的動作。 例如：如果使用者刪除郵件或將郵件移至封存/pst，將不會更新郵件的 [傳遞] 位置。 不過，如果系統動作更新了位置 (例如，ZAP 產生的電子郵件移至隔離區) ，您會看到最新的傳遞位置作為隔離區。 
 
-![更新的傳遞位置](../../media/Updated_Delivery_Location.png)
+> [!div class="mx-imgBorder"]
+> ![更新的傳遞位置](../../media/Updated_Delivery_Location.png)
 
-**附注**：在下列情況下，傳遞位置和傳遞動作可能會顯示「未知」為值：
+> [!NOTE]
+> 在某些情況下，傳遞位置和傳遞動作可能會顯示「未知」為下列值：
+> 
+> - 您可能會看到傳遞位置為 [已傳遞]，而傳遞位置是未知的。 當郵件已傳遞，但是收件匣規則會將郵件移至預設資料夾 (草稿、封存等等 ) ，而不是收件匣或垃圾郵件資料夾。 
+> 
+> - 如果系統管理員/系統動作 (（例如，ZAP、Admin 動作) 會嘗試，但找不到該郵件），則最新的傳遞位置可能是未知的。 通常動作會在使用者移動或刪除郵件之後發生。 在這種情況下，請在時程表視圖中驗證 [結果/詳細資料] 欄位。 尋找郵件：使用者已移動或刪除的郵件。
 
-- 您可能會看到傳遞位置為 [已傳遞]，而傳遞位置是未知的。 當郵件已傳遞，但是收件匣規則會將郵件移至預設資料夾 (草稿、封存等等 ) ，而不是收件匣或垃圾郵件資料夾。 
-
-- 如果系統管理員/系統動作 (（例如，ZAP、Admin 動作) 會嘗試，但找不到該郵件），則最新的傳遞位置可能是未知的。 通常動作會在使用者移動或刪除郵件之後發生。 在這種情況下，請在時程表視圖中驗證 [結果/詳細資料] 欄位。 尋找郵件：使用者已移動或刪除的郵件。
-
-![時程表的傳遞位置](../../media/Updated_Timeline_Delivery_Location.png)
+> [!div class="mx-imgBorder"]
+> ![時程表的傳遞位置](../../media/Updated_Timeline_Delivery_Location.png)
 
 ### <a name="additional-actions"></a>其他動作 
 
-其他動作包含已套用的電子郵件傳送後所套用的動作，而且可以包含由 Admi 執行的 ZAP、手動修正 (動作; 例如，Soft Delete) 、動態傳遞和重新處理 (偵測到 retroactively 的電子郵件為良好的) 。 
+其他動作包含已套用的電子郵件傳遞發佈的動作，而且可以包含 ZAP、手動修正 (系統管理員採取的動作，例如，Soft Delete) 、動態傳遞，以及重新處理 (電子郵件被 retroactively 為良好) 。 
 
 > [!NOTE]
 >
 > - 做為此變更的一部分，目前在傳遞動作篩選中所移除的 ZAP 值會變得不復存在。 您可以使用此方法，透過其他動作來搜尋所有 ZAP 嘗試的電子郵件。
 >
-> -將會有新的欄位和值用於偵測技術，其他動作 (尤其是對 ZAP 案例) 。 評估您現有的已儲存查詢和追蹤的查詢，以確定其使用新的值。 
+> - 偵測技術和其他動作會有新的欄位和值，尤其是針對 ZAP 案例) 所做的 (。 評估您現有的已儲存查詢和追蹤的查詢，以確定其使用新的值。 
 
-![Additional_Actions](../../media/Additional_Actions.png)
+> [!div class="mx-imgBorder"]
+> ![Additional_Actions](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>系統覆寫 
 
@@ -120,18 +159,23 @@ ms.locfileid: "48446566"
 
 ![System_Overrides](../../media/System_Overrides.png)
 
-![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> [!div class="mx-imgBorder"]
+> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>URL 和點擊體驗的增強功能
 
-Focussed URL 和 URL 的增強功能組按一下 [資料] 包含：
+針對 URL 及 URL 按一下 [資料] 的一組增強功能包括：
 
--   顯示已完全按一下的 URL (包括 URL 內飛入的 [點擊] 區段中，任何屬於 URL) 的查詢參數。 目前，我們會在標題列中顯示 URL 網域和路徑。 我們正在擴充該資訊以顯示完整的 URL。
--   跨 URL 篩選器的修正 (URL 與 URL 網域 vs URL 網域和路徑) ：我們已在搜尋包含 URL/按一下判定的郵件時，進行了一些更新。 在此情況下，我們已啟用通訊協定不可知搜尋的支援 (含義，您可以直接搜尋沒有 HTTP) 的 URL。 根據預設，除非明確指定，否則 URL 搜尋會對應至 HTTP。 例如：
+ - 顯示已完全按一下的 URL (包括 URL 內飛入的 [點擊] 區段中，任何屬於 URL) 的查詢參數。 目前，我們會在標題列中顯示 URL 網域和路徑。 我們正在擴充該資訊以顯示完整的 URL。
+ 
+ - 跨 URL 篩選器的修正 (URL 與 URL 網域 vs URL 網域和路徑) ：我們已在搜尋包含 URL/按一下判定的郵件時，進行了一些更新。 在此情況下，我們已啟用通訊協定不可知搜尋的支援 (含義，您可以直接搜尋沒有 HTTP) 的 URL。 根據預設，除非明確指定，否則 URL 搜尋會對應至 HTTP。 例如：
 
-  a.    `http://`在「url」、「Url 網域」和「Url 網域及路徑」篩選欄位中，以不含前置詞的方式進行搜尋。 這種行為是一致的，且應該顯示相同的結果。
-  b.    `https://`在「URL」中搜尋前置詞。 如果不存在，則 `http://` 會假設首碼。
-  c.     `/` 忽略 "URL 路徑"、"URL 網域"、"URL 網域和路徑" 欄位的開頭和結尾。 `/` 在 [URL] 欄位結束時忽略。 
+   1. `http://`在「url」、「Url 網域」和「Url 網域及路徑」篩選欄位中，以不含前置詞的方式進行搜尋。 這種行為是一致的，且應該顯示相同的結果。
+   
+   1. `https://`在「URL」中搜尋前置詞。 如果不存在，則 `http://` 會假設首碼。
+   
+   1. `/` 忽略 "URL 路徑"、"URL 網域"、"URL 網域和路徑" 欄位的開頭和結尾。 `/` 在 [URL] 欄位結束時忽略。 
 
 ### <a name="phish-confidence-level"></a>網路釣魚信賴等級
 
@@ -141,7 +185,7 @@ Focussed URL 和 URL 的增強功能組按一下 [資料] 包含：
 
 ### <a name="zap-url-signal"></a>ZAP URL 信號 
 
-通常用於「曾經」為電子郵件的 ZAP 網路釣魚警報案例，並在傳送後移除。 這是用來在瀏覽器中使用對應的結果來連接警示。 這是警示的其中一個 IOCs。 
+通常用於將電子郵件識別為網路釣魚並在傳送後移除的 ZAP 網路釣魚警報案例。 這是用來在瀏覽器中使用對應的結果來連接警示。 這是警示的其中一個 IOCs。 
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>豐富威脅瀏覽器和 Real-Time 偵測的增強功能
 
@@ -156,7 +200,8 @@ Focussed URL 和 URL 的增強功能組按一下 [資料] 包含：
 
 您會看到入口網站中的電子郵件記錄以及匯出資料的時區。 您可以透過電子郵件格線、詳細資料行中的電子郵件時程表及類似的電子郵件，在體驗上看到時區，這樣就不會為使用者提供明確的結果集時區。
 
-![在瀏覽器中查看時區](../../media/TimezoneImprovements.png)
+> [!div class="mx-imgBorder"]
+> ![在瀏覽器中查看時區](../../media/TimezoneImprovements.png)
 
 ### <a name="update-in-the-refresh-process"></a>重新整理程式中的更新
 
@@ -164,19 +209,22 @@ Focussed URL 和 URL 的增強功能組按一下 [資料] 包含：
 
 從經驗的觀點來看，使用者可以從 filter set 和 date) 套用及移除不同的篩選範圍 (，然後按下 [重新整理] 按鈕，以在完成定義查詢之後篩選結果。 重新整理按鈕也已更新，可在螢幕上清晰地呼叫。 我們也針對這項變更，更新工具提示及產品中的檔。
 
-![按一下 [重新整理] 以篩選結果](../../media/ManualRefresh.png)
+> [!div class="mx-imgBorder"]
+> ![按一下 [重新整理] 以篩選結果](../../media/ManualRefresh.png)
 
 ### <a name="chart-drilldown-to-add-to-filters"></a>新增至篩選的圖表深入分析
 
 您現在可以按一下圖表圖例值，將該值新增為篩選。 請注意，您仍然需要按一下 [重新整理] 按鈕，以在上述變更中篩選結果。
 
-![透過圖表深入篩選](../../media/ChartDrilldown.png)
+> [!div class="mx-imgBorder"]
+> ![透過圖表深入篩選](../../media/ChartDrilldown.png)
 
 ### <a name="in-product-information-updates"></a>在產品資訊更新
 
 您也應該會看到產品中的其他詳細資料。 例如，在 [格線] 中的搜尋結果總數 (請參閱下列) ，以及標籤、錯誤訊息及工具提示等方面的增強功能，以提供有關篩選、搜尋經驗及結果集的詳細資訊。
 
-![View In 產品資訊](../../media/ProductInfo.png)
+> [!div class="mx-imgBorder"]
+> ![View In 產品資訊](../../media/ProductInfo.png)
 
 ## <a name="extended-capabilities-in-threat-explorer"></a>威脅瀏覽器中的延伸功能
 
@@ -185,7 +233,8 @@ Focussed URL 和 URL 的增強功能組按一下 [資料] 包含：
 如今，我們會在惡意程式碼系列 (內的主要惡意程式碼) 區段中，公開主要目標使用者的清單。 我們也會在網路釣魚和所有電子郵件視圖中擴充此視圖，您可以在其中看到前五個目標使用者，以及每位使用者對對應 (view 的嘗試次數。例如，針對 [網路釣魚視圖]，您將能夠看到) 的網路釣魚嘗試次數。
 您也可以將目標使用者的清單匯出為3000的限制，以及每個電子郵件 view 的離線分析嘗試次數。 除此之外，選取 [否]。 嘗試 (例如，下列 13) 會在威脅瀏覽器中開啟篩選的視圖，這樣您就可以深入瞭解該使用者的電子郵件和威脅。
 
-![主要目標使用者](../../media/Top_Targeted_Users.png)
+> [!div class="mx-imgBorder"]
+> ![主要目標使用者](../../media/Top_Targeted_Users.png)
 
 
 ### <a name="exchange-transport-rules"></a>Exchange 傳輸規則
@@ -204,7 +253,8 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 在電子郵件格線、詳細資料浮出和匯出的 CSV 中，ETRs 會以如下所示的名稱/GUID 呈現。
 
-![Exchange 傳輸規則](../../media/ETR_Details.png)
+> [!div class="mx-imgBorder"]
+> ![Exchange 傳輸規則](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>輸入連接器
 
@@ -212,7 +262,8 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 連接器的搜尋是「包含」，其性質表示部分關鍵字搜尋應該也會運作。
 在主格線視圖中，[詳細資料] 飛入和匯出的 CSV，連接器會以如下所示的名稱/GUID 格式顯示：
 
-![連接器詳細資料](../../media/Connector_Details.png)
+> [!div class="mx-imgBorder"]
+> ![連接器詳細資料](../../media/Connector_Details.png)
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>威脅總管和即時偵測的新功能
 
@@ -284,7 +335,8 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 > [!TIP]
 > 當您透過網路郵件識別碼在總管或關聯的協力廠商工具中進行搜尋時，網路郵件識別碼會將點擊返回對應到特定的郵件。 搜尋網路郵件識別碼時，系統會提供系統管理員與點擊結果相關聯的特定電子郵件。 匯出時，網路郵件識別碼的關聯識別可提供更快且更強大的分析。
 
-![瀏覽器中的按一下 tab 鍵](../../media/tp_ExportClickResultAndNetworkID.png)
+> [!div class="mx-imgBorder"]
+> ![瀏覽器中的按一下 tab 鍵](../../media/tp_ExportClickResultAndNetworkID.png)
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>查看透過技術在電子郵件中偵測到的惡意程式碼
 
@@ -294,17 +346,20 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[惡意程式碼 ]**。
 
-   ![總管的檢視功能表](../../media/ExplorerViewEmailMalwareMenu.png)
+   > [!div class="mx-imgBorder"]
+   > ![總管的檢視功能表](../../media/ExplorerViewEmailMalwareMenu.png)
 
 3. 按一下 **[寄件者]**，然後選擇 **[基本]** > **[偵測技術]**。
 
    您的偵測技術現在可做為報告的篩選器。
 
-   ![惡意程式碼偵測技術](../../media/ExplorerEmailMalwareDetectionTech.png)
+   > [!div class="mx-imgBorder"]
+   > ![惡意程式碼偵測技術](../../media/ExplorerEmailMalwareDetectionTech.png)
 
 4. 選取一個選項，然後按一下 **[重新整理]** 按鈕來套用該篩選器。
 
-   ![選取的偵測技術](../../media/ExplorerEmailMalwareDetectionTechATP.png)
+   > [!div class="mx-imgBorder"]
+   > ![選取的偵測技術](../../media/ExplorerEmailMalwareDetectionTechATP.png)
 
 報告會使用您所選取的技術選項重新整理，以顯示在電子郵件中偵測到的惡意程式碼。 您可以從這裡進行進一步分析。
 
@@ -318,15 +373,17 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[網路釣魚]**。
 
-   ![總管的檢視功能表](../../media/ExplorerViewEmailPhishMenu.png)
+   > [!div class="mx-imgBorder"]
+   > ![總管的檢視功能表](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. 按一下 **[寄件者]**，然後選擇 **[URL]** > **按一下結果**。
 
 4. 選取一或多個選項，例如 **[已封鎖]** 和 **[封鎖覆寫]**，然後按一下要套用該篩選器的選項同一行上的 **[重新整理]** 按鈕。 (請勿重新整理瀏覽器視窗。)
 
-   ![URL 和按一下結果](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
+   > [!div class="mx-imgBorder"]
+   > ![URL 和按一下結果](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
 
-    報告會重新整理以在報告下的 [URL] 索引標籤上顯示兩個不同的 URL 表格：
+   報告會重新整理以在報告下的 [URL] 索引標籤上顯示兩個不同的 URL 表格：
 
    - **[熱門 URL]** 為已篩選的郵件中的 URL，而電子郵件傳送動作會計算每個 URL。 在網路釣魚電子郵件檢視中，此清單通常會包含合法的 URL。 攻擊者會在這些郵件中混雜善意和惡意的 URL，以試圖傳遞這些郵件，但他們會讓惡意連結看起來更加有趣，以誘使使用者點擊。 URLs 的表格依電子郵件總數 (排序，但是請注意，此欄位是隱藏的，可簡化 view) 。
 
@@ -334,7 +391,8 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
    兩個 URL 表格依傳遞動作和位置顯示網路釣魚電子郵件訊息熱門 URL，並顯示已封鎖的 URL 點擊 (或儘管已警告卻仍造訪的 URL)，讓您了解使用者接收到及互動的潛在惡意連結。 您可以從這裡進行進一步分析。 例如，在圖表的下方，您可以查看貴組織環境中封鎖的電子郵件訊息熱門 URL。
 
-   ![已封鎖的總管 URL](../../media/ExplorerPhishClickVerdictURLs.png)
+   > [!div class="mx-imgBorder"]
+   > ![已封鎖的總管 URL](../../media/ExplorerPhishClickVerdictURLs.png)
 
    選取 URL 以檢視更多詳細資訊。
 
@@ -362,13 +420,15 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]**。
 
-   ![總管的檢視功能表](../../media/explorer-view-menu-email-user-reported.png)
+   > [!div class="mx-imgBorder"]
+   > ![總管的檢視功能表](../../media/explorer-view-menu-email-user-reported.png)
 
 3. 按一下 **[寄件者]**，然後選擇 **[基本]** > **[回報類型]**。
 
 4. 選取一個選項，例如 **[網路釣魚]**，然後按一下 **[重新整理]** 按鈕。
 
-   ![使用者回報的網路釣魚](../../media/EmailUserReportedReportType.png)
+   > [!div class="mx-imgBorder"]
+   > ![使用者回報的網路釣魚](../../media/EmailUserReportedReportType.png)
 
 報告會重新整理，顯示貴組織中的人員回報為網路釣魚攻擊的電子郵件相關資料。 您可以使用此資訊來進行進一步分析，並視需要調整 [ATP 防網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
@@ -421,7 +481,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>威脅瀏覽器與即時偵測的某些差異
 
 - Office 365 ATP 方案 1 提供**即時偵測**報告，而 Office 365 ATP 方案 2 提供**威脅總管**。
-- **即時偵測**報告可讓您即時檢視偵測。 **威脅總管**也有這個功能，但也能讓您檢視特定攻擊的其他詳細資料。
+- **即時**偵測報告可讓您即時查看偵測。 **威脅總管**也有這個功能，但也能讓您檢視特定攻擊的其他詳細資料。
 - **所有的電子郵件**view 均可在**威脅瀏覽器**中 (，而不會在**即時**偵測報告) 中。
 - **威脅瀏覽器**中包含更多篩選功能和可用的動作。
 

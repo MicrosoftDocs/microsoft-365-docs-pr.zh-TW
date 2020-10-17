@@ -3,7 +3,6 @@ title: 維護使用 PowerShell 的 Microsoft 365 群組成員資格
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,21 +18,18 @@ ms.custom:
 - O365ITProTrain
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
 description: 瞭解如何使用 PowerShell 維護 Microsoft 365 群組中的成員資格。
-ms.openlocfilehash: 464ebcebe87fcd7ce081de85e75acf76cd6d5a46
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: 7763f4275ff31f3dc26aa7fecba93e545f7c7644
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235627"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580971"
 ---
 # <a name="maintain-microsoft-365-group-membership-with-powershell"></a>維護使用 PowerShell 的 Microsoft 365 群組成員資格
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
 您可以使用 Microsoft 365 的 PowerShell 代替 microsoft 365 系統管理中心，以維護 Microsoft 365 中的群組成員資格。 
-
-> [!TIP]
-> 若要透過指定使用者帳戶和群組名稱來產生現成的 PowerShell 命令，請使用此 [群組維護 Microsoft Excel 活頁簿](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/media/maintain-group-membership-with-microsoft-365-powershell/GroupMaintPowerShellGenerator.xlsx)。 
 
 >[!Note]
 >瞭解如何使用 Microsoft 365 admin center[維護 microsoft 365 群組成員資格](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)。 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
@@ -155,7 +151,7 @@ $groupName="<display name of the group contains the member group>"
 Remove-MsolGroupMember -GroupMemberObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupMemberName }).ObjectID -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $groupName }).ObjectID -GroupMemberType Group
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>也請參閱
 
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

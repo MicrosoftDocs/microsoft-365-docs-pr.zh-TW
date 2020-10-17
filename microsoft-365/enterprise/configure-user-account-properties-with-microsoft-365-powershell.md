@@ -3,7 +3,6 @@ title: 使用 PowerShell 設定 Microsoft 365 使用者帳戶屬性
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 07/16/2020
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +18,12 @@ ms.custom:
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
 description: 摘要：使用 Microsoft 365 PowerShell，設定您的 Microsoft 365 租使用者中個別或多個使用者帳戶的屬性。
-ms.openlocfilehash: 6a435b3981efa8d8c2be7f6d983a1d062237f0db
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: ae797d67b47c637dc95176b92fad8090f8a7ab37
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688218"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580925"
 ---
 # <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>使用 PowerShell 設定 Microsoft 365 使用者帳戶屬性
 
@@ -34,7 +33,7 @@ ms.locfileid: "46688218"
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
 
-若要使用適用于 Graph 模組的 Azure Active Directory PowerShell，設定使用者帳戶的屬性，您可以使用 [AzureADUser 指令程式](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) ，並指定要設定或變更的屬性。 
+若要使用適用于 Graph 模組的 Azure Active Directory PowerShell，設定使用者帳戶的屬性，您可以使用 [AzureADUser 指令程式](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) ，並指定要設定或變更的屬性。 
 
 首先，連線 [至您的 Microsoft 365 租使用者](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)。
    
@@ -74,8 +73,11 @@ ms.locfileid: "46688218"
     
     這是 ISO 3166-1 Alpha-2 (A2) 雙字母國家或地區碼。
     
-請參閱 [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) for 其他參數。
+請參閱 [Set-AzureADUser](https://docs.microsoft.com/powershell/module/azuread/set-azureaduser) for 其他參數。
 
+>[!Note]
+>在您指派授權給使用者帳戶之前，您必須指派使用位置。
+>
 
 若要為您的使用者帳戶顯示使用者主要名稱，請執行下列命令。
   
@@ -264,9 +266,9 @@ Get-MsolUser | Where {$_.Department -eq "Accounting"} | Set-MsolUser -UsageLocat
 - 尋找其部門屬性設定為 "記帳" (的所有使用者帳戶， **其中 {$ _。部門-eq "記帳"}**) ，並將產生的資訊傳送至下一個命令 (**|**) 。
     
 - 將使用者位置設定為法國 (**Set-MsolUser UsageLocation "FR"**) 。
-    
 
-## <a name="see-also"></a>請參閱
+
+## <a name="see-also"></a>也請參閱
 
 [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
   

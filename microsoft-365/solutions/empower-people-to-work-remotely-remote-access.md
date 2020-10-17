@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 請確保您的遠端工作者能夠存取內部部署資源，同時將 Microsoft 365 雲端服務的存取最佳化。
-ms.openlocfilehash: 52a338822c28f6ae044f13f60664d66816d6ce5c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 0e44dad5172672cbe06c0690bcfee27ea153c6c3
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377244"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445982"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步驟 2： 可遠端存取內部部署應用程式和服務
 
@@ -61,7 +60,7 @@ Microsoft 365 流量必須透過貴組織進行間接路由，這可能是從距
 
 如此可讓 VPN 用戶端直接透過網際網路傳送和接收重要的 Microsoft 365 雲端服務流量，並透過最接近的進入點到 Microsoft 網路。
 
-如需詳細資訊和指導方針，請參閱[使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)。
+如需詳細資訊和指導方針，請參閱[使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel??)。
 
 ## <a name="deploy-remote-access-when-all-your-apps-are-web-apps-and-you-have-hybrid-identity"></a>當您的所有應用程式都為 Web 應用程式且您擁有混合式身分識別時，部署遠端存取
 
@@ -117,7 +116,7 @@ P2S VPN 連線會透過 Azure 虛擬網路，建立遠端工作者裝置到貴�
 ## <a name="admin-technical-resources-for-remote-access"></a>適用於遠端存取的系統管理技術資源
 
 - [如何快速優化遠端員工的 Office 365 流量，並降低基礎結構負載](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571) (英文)
-- [使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel)
+- [使用 VPN 分割通道將遠端使用者的 Office 365 連線能力最佳化](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-vpn-split-tunnel?)
 
 ## <a name="results-of-step-2"></a>步驟 2 的結果
 
@@ -134,4 +133,7 @@ P2S VPN 連線會透過 Azure 虛擬網路，建立遠端工作者裝置到貴�
 
 ## <a name="next-step"></a>下一步
 
+[![步驟 3：部署 Microsoft 365 安全性與合規性服務](../media/empower-people-to-work-remotely/remote-workers-step-grid-3.png)](empower-people-to-work-remotely-security-compliance.md)
+
 繼續進行[步驟 3](empower-people-to-work-remotely-security-compliance.md) 部署 Microsoft 365 安全性與合規性服務，以保護您的應用程式、資料和裝置。
+

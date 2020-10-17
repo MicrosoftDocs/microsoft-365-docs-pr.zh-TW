@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: 摘要：使用 PowerShell，使用原則來管理商務用 Skype Online 使用者帳戶屬性。
-ms.openlocfilehash: 7657dae6fa1b27299e4cbc0cf6a311380cb90e9e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 20a75fa1c131f693fcf30d20477af5c9ee7aed35
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688710"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477038"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>使用 PowerShell 管理商務用 Skype Online 原則
 
@@ -27,22 +27,25 @@ ms.locfileid: "46688710"
 
 若要管理商務用 Skype Online 之使用者帳戶的許多屬性，您必須使用 Microsoft 365 的 PowerShell，將其指定為原則的屬性。
   
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 使用下列指示設定執行命令 (略過已完成的步驟) ：
-  
-1. 下載及安裝 [商務用 Skype Online 連接器模組](https://www.microsoft.com/download/details.aspx?id=39366)。
+
+  > [!Note]
+  > 商務用 Skype Online 連接器目前是最新小組 PowerShell 模組的一部分。 如果您使用的是最新的小組 PowerShell 公開發行，您不需要安裝商務用 Skype Online 連接器。
+
+1. 安裝 [團隊 PowerShell 模組](https://docs.microsoft.com/microsoftteams/teams-powershell-install)。
     
 2. 開啟 Windows PowerShell 命令提示字元，然後執行下列命令： 
-    
-```powershell
-Import-Module SkypeOnlineConnector
-$userCredential = Get-Credential
-$sfbSession = New-CsOnlineSession -Credential $userCredential
-Import-PSSession $sfbSession
-  ```
 
-出現提示時，請輸入您的商務用 Skype Online 系統管理員帳戶名稱和密碼。
+   ```powershell
+   Import-Module MicrosoftTeams
+   $userCredential = Get-Credential
+   $sfbSession = New-CsOnlineSession -Credential $userCredential
+   Import-PSSession $sfbSession
+   ```
+
+   出現提示時，請輸入您的商務用 Skype Online 系統管理員帳戶名稱和密碼。
     
 ## <a name="manage-user-account-policies"></a>管理使用者帳戶原則
 
@@ -122,7 +125,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 Get-CsClientPolicy -Identity "Global"
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [使用 PowerShell 管理商務用 Skype Online](manage-skype-for-business-online-with-microsoft-365-powershell.md)
   

@@ -18,53 +18,56 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: 使用此測試實驗室指南來建立適用于企業的 Microsoft 365 模擬企業測試環境。
-ms.openlocfilehash: 9f4cbb300946109368759d6ec8f1120332e1ed92
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: e66ec8c48e309daeb15aad5fcc475edcb2b8bb35
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46685673"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487651"
 ---
 # <a name="the-simulated-enterprise-base-configuration"></a>模擬企業基本設定
 
 *此測試實驗室指南可用於 enterprise 和 Office 365 企業測試環境的 Microsoft 365。*
 
-本文提供逐步指示，可為適用于企業的 Microsoft 365 建立簡化的環境，其中包括：
+本文說明如何為適用于企業的 Microsoft 365 建立簡化的環境，其中包括：
 
 - Microsoft 365 E5 試用版或付費訂閱。
-- 簡化的組織內部網域與網際網路的連線，由 Azure 虛擬網路上的三部虛擬機器 (DC1、APP1 及 CLIENT1) 組成。
+- 簡化的組織內部網路連接至網際網路，由 Azure 虛擬網路上的三個虛擬機器所組成 (DC1、APP1 和 CLIENT1) 。
  
 ![模擬企業基本設定](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
+
+建立簡化的測試環境包括兩個階段：
+- [階段 1：建立模擬的內部網路](#phase-1-create-a-simulated-intranet)
+- [階段 2：建立您的 Microsoft 365 E5 訂閱](#phase-2-create-your-microsoft-365-e5-subscription)
 
 您可以使用所產生的環境，利用其他[測試實驗室指南](m365-enterprise-test-lab-guides.md)或您自己的方式，測試[適用于 enterprise 的 Microsoft 365](https://www.microsoft.com/microsoft-365/enterprise)的功能。
 
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> 移至 [microsoft 365 for Enterprise Test Lab Guide 堆疊](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) ，以顯示 microsoft 365 For Enterprise Test lab guide 堆疊中所有文章的視覺對應。
+> 如需 Microsoft 365 for enterprise 測試實驗室指南堆疊中所有文章的視覺對應，請移至 [microsoft 365 for Enterprise Test Lab Guide 堆疊](../downloads/Microsoft365EnterpriseTLGStack.pdf)。
 
 ## <a name="phase-1-create-a-simulated-intranet"></a>階段 1：建立模擬的內部網路
 
-在這個階段，您可以在 Azure 基礎結構服務中建立模擬內部網路，其中包含 Active Directory Domain Services (AD DS) 網域控制站、應用程式伺服器和用戶端電腦。 
+在此階段中，請在 Azure 基礎結構服務中建立模擬的內部網路，其中包含 Active Directory 網域服務 (AD DS) 網域控制站、應用程式伺服器及用戶端電腦。
 
 您將在其他 [Microsoft 365 for Enterprise 測試實驗室指南](m365-enterprise-test-lab-guides.md) 中使用這些電腦，以設定並示範混合式身分識別和其他功能。
 
 ### <a name="method-1-build-your-simulated-intranet-with-an-azure-resource-manager-template"></a>方法 1：使用 Azure Resource Manager 範本建立模擬內部網路
 
-在這個方法中，您可以使用 Azure Resource Manager (ARM) 範本來建立模擬內部網路。ARM 範本包含建立 Azure 網路基礎結構、虛擬機器及其設定的所有指示。
+在此方法中，您可以使用 Azure 資源管理員範本來組建模擬的內部網路。 Azure 資源管理員範本包含建立 Azure 網路基礎結構、虛擬機器及其設定的所有指示。
 
-部署範本之前，請先閱讀[範本讀我檔案頁面](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems)並準備好下列資訊：
+部署範本之前，請先閱讀 [範本的自述頁面](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems) ，並準備好下列資訊：
 
-- 測試環境的公用 DNS 網域名稱 (testlab.\<your public domain>)。您必須在 **[自訂部署]** 頁面的 **[網域名稱]欄位** 中輸入此名稱。
+- 測試環境的公用 DNS 功能變數名稱 (testlab。 \<*your public domain*>) 。 您會在 [**自訂部署**] 頁面的 [**功能變數名稱**] 欄位中輸入此名稱。
 - 虛擬機器公用 IP 位址 URL 上的 DNS 標籤前置詞。您必須在 **[自訂部署]** 頁面的 **[Dns 標籤前置詞]** 欄位中輸入此標籤。
 
-閱讀指示之後，請在[範本讀我檔案頁面](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems)上按一下 [部署至 Azure]**** 以開始使用。
+在您閱讀指示之後，請選取 [[範本 README] 頁面](https://github.com/maxskunkworks/TLG/tree/master/tlg-base-config_3-vm.m365-ems)上的 [**部署到 Azure** ] 以開始使用。
 
 >[!Note]
->ARM 範本所建立的模擬內部網路需要 Azure 付費訂用帳戶。
->
+>Azure 資源管理員範本所建立的模擬內部網路需要付費的 Azure 訂閱。
 
-範本完成後，您的設定如下。
+範本完成後，您的設定會如下所示：
 
 ![Azure 基礎結構服務中的模擬內部網路](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
 
@@ -76,7 +79,7 @@ ms.locfileid: "46685673"
 
 #### <a name="step-1-create-dc1"></a>步驟 1：建立 DC1
 
-在這個步驟，我們會建立 Azure 虛擬網路並新增 DC1 (這部虛擬機器是 AD DS 網域的網域控制站)。
+在這個步驟中，您會建立 Azure 虛擬網路並新增 DC1，這是 AD DS 網域的網域控制站的虛擬機器。
 
 首先，在本機電腦上啟動 Windows PowerShell 命令提示字元。
   
@@ -95,7 +98,7 @@ Connect-AzAccount
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-設定 Azure 訂用帳戶。以正確的名稱取代括號中的所有項目 (包括 < 和 > 字元)。
+設定 Azure 訂用帳戶。 以正確的名稱取代引號內的所有專案，包括角括弧 ( "<" 和 ">" ) 。
   
 ```powershell
 $subscr="<subscription name>"
@@ -108,7 +111,7 @@ Get-AzSubscription -SubscriptionName $subscr | Select-AzSubscription
 Get-AzResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
 ```
 
-使用這些命令建立新的資源群組。以正確的名稱取代引號內的所有項目 (包括 < 和 > 字元)。
+使用這些命令建立新的資源群組。 以正確的名稱取代引號內的所有專案（包括角括弧）。
   
 ```powershell
 $rgName="<resource group name>"
@@ -116,7 +119,7 @@ $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-接下來，您會建立 TestLab 虛擬網路，該虛擬網路會裝載模擬企業環境的 Corpnet 子網路以及利用網路安全性群組來保護它。填入您的資源群組名稱，並且在本機電腦上的 PowerShell 命令提示字元執行這些命令。
+接下來，建立會主控模擬企業環境之公司網路子網的 TestLab 虛擬網路，並以網路安全性群組來保護它。 填入您的資源群組名稱，並在本機電腦的 PowerShell 命令提示字元執行這些命令。
   
 ```powershell
 $rgName="<name of your new resource group>"
@@ -155,25 +158,25 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 系統會提示您輸入 DC1 上本機系統管理員帳戶的使用者名稱和密碼。使用強式密碼，並將名稱和密碼記錄於安全的位置。
   
-接下來，連線到 DC1 虛擬機器。
+接下來，連接至 DC1 虛擬機器：
   
-1. 在 [Azure 入口網站](https://portal.azure.com)中，按一下 **[資源群組] >** [新的資源群組名稱] **> [DC1] > [連線]**。
+1. 在[Azure 入口網站](https://portal.azure.com)中，選取 [**資源群組** > <***新資源群組的名稱***> > **DC1**  >  **Connect]**。
     
-2. 在開啟的窗格中，按一下 [下載 RDP 檔案]****。開啟所下載的 DC1.rdp 檔案，然後按一下 [連線]****。
+2. 在 [開啟] 窗格中，選取 [ **下載 RDP 檔**]。 開啟所下載的 DC1.rdp 檔案，然後選取 [連線 **]**。
     
 3. 指定 DC1 本機系統管理員帳戶名稱：
     
    - 對於 Windows 7：
     
-     在 [Windows 安全性]**** 對話方塊中，按一下 [使用其他帳戶]****。在 [使用者名稱]**** 中，輸入 **DC1\\**[本機系統管理員帳戶名稱]。
+     在 [ **Windows 安全性** ] 對話方塊中，選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入**DC1 \\ ** < *本機系統管理員帳戶名稱*>。
     
    - 對於 Windows 8 或 Windows 10：
     
-     在 [Windows 安全性]**** 對話方塊中，按一下 [更多選項]****，然後按 [使用不同帳戶]****。在 [使用者名稱]**** 中，輸入 **DC1\\**[本機系統管理員帳戶名稱]。
+     在 [ **Windows 安全性** ] 對話方塊中，選取 [ **更多選項**]，然後選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入**DC1 \\ ** < *本機系統管理員帳戶名稱*>。
     
-4. 在 [密碼]**** 中，輸入本機系統管理員帳戶的密碼，然後按一下 [確定]****。
+4. 在 [ **密碼**] 中，輸入本機系統管理員帳戶的密碼，然後選取 **[確定]**。
     
-5. 出現提示時，按一下 [是]****。
+5. 出現提示時，請選取 **[是]**。
     
 接著，使用此命令在 DC1 上系統管理員層級 Windows PowerShell 命令提示字元將額外的資料磁碟新增為新的磁碟區 (磁碟機代號 F:)。
   
@@ -181,7 +184,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
 ```
 
-接下來，將 DC1 設定為網域控制站，並將 DNS 伺服器設定為 **testlab。**\<your public domain> 網域。 指定您的公用功能變數名稱、移除 \< and > 字元，然後在 DC1 的系統管理員層級 Windows PowerShell 命令提示字元中執行這些命令。
+接下來，將 DC1 設定為網域控制站，並將 DNS 伺服器設定為 **testlab。**\<*your public domain*> 網域。 指定您的公用功能變數名稱、移除角括弧，然後在系統管理員層級的 Windows 上執行這些命令。 DC1 上 PowerShell 命令提示字元。
   
 ```powershell
 $yourDomain="<your public domain>"
@@ -194,23 +197,23 @@ Install-ADDSForest -DomainName testlab.$yourDomain -DatabasePath "F:\NTDS" -Sysv
   
 DC1 重新啟動後，重新連線到 DC1 虛擬機器。
   
-1. 在 [Azure 入口網站](https://portal.azure.com)中，按一下 **[資源群組] >** [您的資源群組名稱] **> [DC1] > [連線]**。
+1. 在[Azure 入口網站](https://portal.azure.com)中，選取 [**資源群組** > <*您的資源群組名稱*> > **DC1**  >  **Connect]**。
     
-2. 執行所下載的 DC1.rdp 檔案，然後按一下 [連線]****。
+2. 執行已下載的 DC1.rdp 檔案，然後選取 [連線 **]**。
     
-3. 在 [Windows 安全性]**** 中，按一下 [使用其他帳戶]****。在 [使用者名稱]**** 中，輸入 **TESTLAB\\**[本機系統管理員帳戶名稱]。
+3. 在 [ **Windows 安全性**] 中，選取 [ **使用另一個帳戶**]。 在 [**使用者名稱**] 中，輸入**TESTLAB \\ ** < 的*本機系統管理員帳戶名稱*>。
     
-4. 在 [密碼]**** 中，輸入本機系統管理員帳戶的密碼，然後按一下 [確定]****。
+4. 在 [ **密碼** ] 方塊中，輸入本機系統管理員帳戶的密碼，然後選取 **[確定]**。
     
-5. 出現提示時，按一下 [是]****。
+5. 出現提示時，請選取 **[是]**。
     
-接下來，建立 Active Directory 中的使用者帳戶，可在登入 TESTLAB 網域成員電腦時使用。在系統管理員層級 Windows PowerShell 命令提示字元執行此命令。
+接下來，在 Active Directory 中建立登入 TESTLAB 網域成員電腦時所使用的使用者帳戶。 在系統管理員層級的 Windows PowerShell 命令提示字元中執行此命令。
   
 ```powershell
 New-ADUser -SamAccountName User1 -AccountPassword (read-host "Set user password" -assecurestring) -name "User1" -enabled $true -PasswordNeverExpires $true -ChangePasswordAtLogon $false
 ```
 
-請注意，此命令會提示您提供 User1 帳戶密碼。由於這個帳戶將會用於所有 TESTLAB 網域成員電腦的遠端桌面連線，請選擇強式密碼。記錄 User1 帳戶密碼，並將它儲存在安全的位置。
+請注意，此命令會提示您提供 User1 帳戶密碼。 此帳戶將用於所有 TESTLAB 網域成員電腦的遠端桌面連線，因此請選擇強式密碼。 記錄 User1 帳戶密碼，並將其儲存在安全的位置。
   
 接下來，將新的 User1 帳戶設定為網域、企業和結構描述管理員。在系統管理員層級 Windows PowerShell 命令提示字元執行此命令。
   
@@ -231,7 +234,7 @@ ForEach ($name in $groupNames) {Add-ADPrincipalGroupMembership -Identity $userSI
 Set-NetFirewallRule -DisplayName "File and Printer Sharing (Echo Request - ICMPv4-In)" -enabled True
 ```
 
-這是您目前的設定。
+您目前的設定如下所示：
   
 ![模擬企業基本設定步驟 1](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase1.png)
   
@@ -258,7 +261,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 接下來，使用 APP1 本機系統管理員帳戶名稱和密碼連線到 APP1 虛擬機器，然後開啟 Windows PowerShell 命令提示字元。
   
-若要檢查 APP1 和 DC1 之間的名稱解析和網路通訊，請執行 **ping DC1.testlab。**\<your public domain name> 命令，並確認有四個回復。
+若要檢查 APP1 和 DC1 之間的名稱解析和網路通訊，請執行 **ping DC1.testlab。**\<*your public domain name*> 命令，並確認有四個回復。
   
 接下來在 Windows PowerShell 命令提示字元使用以下命令將 APP1 虛擬機器加入 TESTLAB 網域。
   
@@ -268,7 +271,7 @@ Add-Computer -DomainName ("testlab." + $yourDomain)
 Restart-Computer
 ```
 
-請注意，您必須在執行 **Add-Computer** 命令之後，提供 TESTLAB\\User1 網域帳戶認證。
+請注意，在您執行 **Add-Computer** 命令之後，您必須提供 TESTLAB \\ User1 網域帳號憑證。
   
 APP1 重新啟動之後，使用 TESTLAB\\User1 帳戶連線至 APP1，然後開啟系統管理員層級 Windows PowerShell 命令提示字元。
   
@@ -286,7 +289,7 @@ Write-Output "This is a shared file." | out-file c:\files\example.txt
 New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 ```
 
-這是您目前的設定。
+您目前的設定如下所示：
   
 ![模擬企業基本設定步驟 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -295,9 +298,9 @@ New-SmbShare -name files -path c:\files -changeaccess TESTLAB\User1
 在這個步驟中，建立及設定 CLIENT1，其可在內部網路上作為一般的膝上型電腦、平板電腦或桌上型電腦。
 
 > [!NOTE]  
-> 下列命令集可建立執行 Windows Server 2016 資料中心的 CLIENT1，其適用於所有類型的 Azure 訂閱。如果您有以 Visual Studio 為基礎的 Azure 訂閱，則可以使用 [Azure 入口網站](https://portal.azure.com)建立執行 Windows 10 的 CLIENT1。 
+> 下列命令集可建立執行 Windows Server 2016 資料中心的 CLIENT1，其適用於所有類型的 Azure 訂閱。如果您有以 Visual Studio 為基礎的 Azure 訂閱，則可以使用 [Azure 入口網站](https://portal.azure.com)建立執行 Windows 10 的 CLIENT1。
   
-若要建立 CLIENT1 的 Azure 虛擬機器，請填入您的資源群組，並在本機電腦上的命令提示字元執行這些命令。
+若要建立 CLIENT1 的 Azure 虛擬機器，請填入您的資源群組的名稱，並在本機電腦上的命令提示字元中執行這些命令。
   
 ```powershell
 $rgName="<resource group name>"
@@ -316,7 +319,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 接下來，使用 CLIENT1 本機系統管理員帳戶名稱和密碼連線到 CLIENT1 虛擬機器，然後開啟系統管理員層級 Windows PowerShell 命令提示字元。
   
-若要檢 CLIENT1 和 DC1 之間的名稱解析和網路通訊，請執行 **ping DC1.testlab。**\<your public domain name> 命令 Windows PowerShell 命令提示字元，並確認有四個回復。
+若要檢 CLIENT1 和 DC1 之間的名稱解析和網路通訊，請執行 **ping DC1.testlab。**\<*your public domain name*> 命令 Windows PowerShell 命令提示字元，並確認有四個回復。
   
 接下來在 Windows PowerShell 命令提示字元使用以下命令將 CLIENT1 虛擬機器加入 TESTLAB 網域。
   
@@ -332,44 +335,43 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
   
 接下來，確認您可以從 CLIENT1 存取 APP1 上的 Web 及檔案共用資源。
   
-1. 在 [伺服器管理員] 的樹狀窗格中，按一下 [本機伺服器]****。
+1. 在 [伺服器管理員] 的樹狀窗格中，選取 [ **本機伺服器**]。
     
-2. 在 [CLIENT1 的屬性]**** 中，按一下 [IE 增強式安全性設定]**** 旁邊的 [開啟]****。
+2. 在 [ **CLIENT1 的屬性**] 中，選取 [ **IE 增強式安全性**設定] 旁的 [**開啟**]。
     
-3. 在 [Internet Explorer 增強式安全性設定]**** 中，為 [管理員]**** 和 [使用者]**** 按一下 [關閉]****，然後按 [確定]****。
+3. 在**Internet Explorer 增強式安全性**設定中，為系統**管理員**和**使用者**選取 [**關閉**]，然後選取 **[確定]**。
     
-4. 從 [開始] 畫面，按一下 [Internet Explorer]****，然後按 [確定]****。
+4. 從 [開始] 畫面中，選取 [ **Internet Explorer**]，然後選取 **[確定]**。
     
-5. 在網址列中，輸入 **http<span>://</span>app1.testab**\<your public domain name>**/**，然後按 [ENTER] 鍵。 您應該會看到 APP1 的預設網際網路資訊服務網頁。
+5. 在 [位址] 列中，輸入 [ **HTTP：<span>//</span>app1] testab。** \<*your public domain name*> **/** ，然後按**enter**。 您應該會看到 APP1 的預設網際網路資訊服務網頁。
     
-6. 在桌面工作列中，按一下 [檔案總管] 圖示。
+6. 在桌面工作列上，選取 [檔案瀏覽器] 圖示。
     
-7. 在網址列中，輸入 **\\\\app1\\檔案**，然後按 ENTER 鍵。您應該會看到資料夾視窗中的檔案共用資料夾內容。
+7. 在位址列中，輸入** \\ \\ app1 \\ Files**，然後按**enter**鍵。 您應該會看到資料夾視窗中的 [檔案] 共用資料夾的內容。
     
 8. 在 [檔案]**** 共用資料夾視窗中，按兩下 **Example.txt** 檔案。您應該會看到 Example.txt 檔案的內容。
     
 9. 關閉 **example.txt - 記事本**以及 [檔案]**** 共用資料夾視窗。
     
-這是您目前的設定。
+您目前的設定如下所示：
   
 ![模擬企業基本設定步驟 3](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase3.png)
-
 
 ## <a name="phase-2-create-your-microsoft-365-e5-subscription"></a>階段 2：建立您的 Microsoft 365 E5 訂閱
 
 您可以在這個階段建立新的 Microsoft 365 E5 訂閱，其使用全新的 Azure AD 租用戶，亦即與您生產訂用帳戶不同。有兩種方法可完成：
 
-- 使用 Microsoft 365 E5 的試用版訂閱。 
+- 使用 Microsoft 365 E5 的試用版訂閱。
 
   Microsoft 365 E5 試用版訂閱期限是 30 天，也可以輕鬆地延長到 60 天。試用版訂閱到期時，您必須將它轉換為付費訂閱，或建立新的試用版訂閱。建立新的試用版訂閱表示您將失去之前的設定，這可能會留下複雜的情況。  
 
 - 使用具少數授權數的不同 Microsoft 365 E5 生產訂用帳戶。
 
-  這會產生額外的成本，但可確保您有運作中的測試環境可嘗試不會過期的功能、組態和案例。您可以長期使用相同的測試環境進行概念性驗證、同儕示範和管理，以及應用程式開發和測試。這是建議的方法。
+  這是額外成本，但可確保您的測試環境未到期;在此情況下，您可以嘗試功能、設定及案例。 您可以針對概念證明、對等與管理的示範，以及應用程式開發和測試，使用長期的相同測試環境。 這是建議的方法。
 
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>註冊 Office 365 E5 試用訂閱
 
-使用 CORP\User1 帳戶透過 Azure 入口網站連線至 CLIENT1。
+從 Azure 入口網站，使用 CORP\User1 帳戶連接至 CLIENT1。
 
 若要建立新的 Office 365 E5 試用訂閱，請執行輕量型基本組態測試實驗室指南的[階段 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-microsoft-365-e5-subscription) 中的指示。
 
@@ -377,13 +379,13 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
 
 #### <a name="using-an-office-365-e5-test-environment"></a>使用 Office 365 E5 測試環境
 
-如果您只需要 Office 365 測試環境，您可以在這裡停止。 
+如果您只需要 Office 365 測試環境，您不需要閱讀本文的其餘部分。
 
-如需同時適用于 Microsoft 365 和 Office 365 的其他測試實驗室指南，請參閱 [Microsoft 365 for Enterprise Test Lab 指南](m365-enterprise-test-lab-guides.md) 。
+如需同時適用于 Microsoft 365 和 Office 365 的其他測試實驗室指南，請參閱 [Microsoft 365 for Enterprise Test Lab 指南](m365-enterprise-test-lab-guides.md)。
 
 ### <a name="add-a-microsoft-365-e5-trial-subscription"></a>新增 Microsoft 365 E5 試用版訂閱
 
-若要取得 Microsoft 365 E5 試用訂閱，並設定您的使用者帳戶使用授權，請執行輕量型基本組態測試實驗室指南的[階段 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) 中的指示。
+若要新增 Microsoft 365 E5 試用訂閱，並為您的使用者帳戶設定授權，請執行「輕量基本設定測試實驗室指南」的 [階段 3](lightweight-base-configuration-microsoft-365-enterprise.md#phase-3-add-a-microsoft-365-e5-trial-subscription) 中的指示。
 
   
 ## <a name="results"></a>結果
@@ -394,7 +396,7 @@ CLIENT1 重新啟動之後，使用 TESTLAB\\User1 帳戶名稱和密碼連線�
 - 您的所有適用使用者帳戶皆可使用 Microsoft 365 E5。
 - 模擬且簡化的內部網路。
     
-這是您的最終設定。
+您的最後設定如下所示：
   
 ![模擬企業基本設定階段 2](../media/simulated-ent-base-configuration-microsoft-365-enterprise/Phase4.png)
   

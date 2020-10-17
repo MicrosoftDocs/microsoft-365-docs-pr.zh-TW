@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: adc1006628b8b4f13d30f2001fee0871b51b18ca
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430430"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487491"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -670,36 +670,152 @@ OR
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
 - 正則運算式會  `Regex_austria_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_austria_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_austria_eu_driver's_license_number` 。 
     
 ```xml
-<!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Austria Driver's License Number -->
+      <Entity id="682f18ce-44eb-482b-8198-2bcb96a0761e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_austria_eu_driver's_license_number" />
-          <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_austria_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-    </Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驅動程式許可證
+- 驅動程式 lics
+- 駕照
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
+- 駕駛執照
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
+- dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
 #### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
-- 驅動程式許可證
-- 驅動程式 .lic。
-- 驅動程式授權
-- 駕駛執照
-- 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
-- dlno#
 - fuhrerschein
-- fuhrerschein republik osterreich
+- führerschein
+- Führerscheine
+- Führerscheinnummer
+- Führerscheinnummern
 
 ## <a name="austria-identity-card"></a>奧地利身分識別卡
 此機密資訊類型僅可用於下列專案：
@@ -1499,41 +1615,159 @@ OR
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_belgium_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_belgium_eu_driver's_license_number` 。
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_belgium_eu_driver's_license_number` 。
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Belgium Driver's License Number -->
+      <Entity id="d89fd329-9324-433c-b687-2c37bd5166f3" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_belgium_eu_driver's_license_number" />
-          <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-**Keywords__belgium_eu_driver ' s_license_number**
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver ' s_license_number
+
 - rijbewijs
 - rijbewijsnummer
+- führerschein
 - führerscheinnummer
+- füehrerscheinnummer
+- fuhrerschein
+- fuehrerschein
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein-nr
-- fuehrerschein-Nr
-- fuehrerschein-nr
+- permis de conduire
+- numéro permis conduire
+
 
 ## <a name="belgium-national-number"></a>比利時國號碼
 
@@ -2051,38 +2285,152 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_bulgaria_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_bulgaria_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_bulgaria_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-             <Pattern confidenceLevel="75">
+      <!-- Bulgaria Driver's License Number -->
+      <Entity id="66d39258-94c2-43b2-804b-aa312258e54b" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_bulgaria_eu_driver's_license_number" />
-          <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
-        </Pattern> 
-</Entity>    
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+      </Entity>    
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
-- Dl#
-- 駕照
-- 駕駛執照號碼
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
+
 - свидетелство за управление на мпс
 - свидетелство за управление на моторно превозно средство
 - сумпс
 - шофьорска книжка
-
+- шофьорски книжки
 
 ## <a name="bulgaria-uniform-civil-number"></a>保加利亞統一的民事編號
 此機密資訊類型僅可用於下列專案：
@@ -3238,35 +3586,149 @@ Registro de Identidade (RIC)  (新格式) ：
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
 - 正則運算式會  `Regex_croatia_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_croatia_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_croatia_eu_driver's_license_number` 。 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Croatia Driver's License Number -->
+      <Entity id="005b3ef1-47dd-4e68-bb02-c6db484d00f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_croatia_eu_driver's_license_number" />
-          <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver ' s_license_number
+
 - vozačka dozvola
+- vozačke dozvole
 
 
 ## <a name="croatia-identity-card-number"></a>克羅地亞身分識別卡號碼
@@ -3542,34 +4004,149 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_cyprus_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_cyprus_eu_driver's_license_number` 。
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_cyprus_eu_driver's_license_number` 。
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Cyprus Driver's License Number -->
+      <Entity id="356fa104-f9ac-4aff-a0e4-2e6e65ea06c4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_cyprus_eu_driver's_license_number" />
-          <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_cyprus_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
+- 駕駛執照
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver ' s_license_number
+
 - άδεια οδήγησης
+- αριθμό άδειας οδήγησης
+- άδειες οδήγησης
 
 
 ## <a name="cyprus-identity-card"></a>賽普勒斯身分識別卡片
@@ -3771,7 +4348,8 @@ Registro de Identidade (RIC)  (新格式) ：
 
 8個字母和數位：
   
-- 兩個字母 (不區分大小寫) 
+- 字母 ' E ' (不區分大小寫) 
+- 一個字母
 - 空格 (選用) 
 - 六位數
 
@@ -3783,37 +4361,150 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_czech_republic_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_czech_republic_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_czech_republic_eu_driver's_license_number` 。 
 
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_czech_republic_eu_driver's_license_number" />
-          <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver ' s_license_number
+
 - řidičský prúkaz
+- řidičské průkazy
+- číslo řidičského průkazu
+- čísla řidičských průkazů
 
 
 ## <a name="czech-passport-number"></a>捷克護照號碼
@@ -4049,40 +4740,152 @@ Registro de Identidade (RIC)  (新格式) ：
   
 ### <a name="checksum"></a>校驗
 
-是
+否
   
 ### <a name="definition"></a>定義
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_denmark_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_denmark_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_denmark_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Denmark Driver's License Number -->
+      <Entity id="98a95812-6203-451a-a220-d39870ebef0e" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_denmark_eu_driver's_license_number" />
-          <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_denmark_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- | dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver ' s_license_number
+
 - kørekort
 - kørekortnummer
 
@@ -4377,35 +5180,150 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_estonia_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_estonia_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_estonia_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Estonia Driver's License Number -->
+      <Entity id="51da8171-da70-4cc1-9d65-055a59ca4f83" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_estonia_eu_driver's_license_number" />
-          <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_estonia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
-- permis de conduire
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+#### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver ' s_license_number
+
+--permis de conduire
+- juhilubade numbrid
+- juhiloa 編號
+- juhiluba
 
 
 ## <a name="estonia-personal-identification-code"></a>愛沙尼亞個人識別碼
@@ -5057,15 +5975,16 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 ### <a name="format"></a>格式
 
-10位數包含連字號
+包含連字號的10位數和字母
   
 ### <a name="pattern"></a>模式
 
-10位數包含連字號：
+包含連字號的10位數和字母：
   
 - 六位數 
 - 連字號
-- 四位數 
+- 三位數 
+- 一個數位或字母
     
 ### <a name="checksum"></a>校驗
 
@@ -5075,35 +5994,156 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_finland_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_finland_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_finland_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Finland Driver's License Number -->
+      <Entity id="bb3b27a3-79bd-4ac4-81a7-f9fca3c7d1a7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_finland_eu_driver's_license_number" />
-          <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_finland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver ' s_license_number
+
 - ajokortti
+- permis de conduire
+- ajokortin numero
+- kuljettaja 許可證。
+- körkort
+- körkortnummer
+- förare 許可證。
+- ajokortit
+- ajokortin numerot
 
 
 ## <a name="finland-european-health-insurance-number"></a>芬蘭歐洲健康情況保險業號碼
@@ -5409,36 +6449,146 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 函數 Func_french_drivers_license 找到符合模式的內容。
-- 下列專案中至少有一個為真：
 - 會找到來自 Keyword_french_drivers_license 的關鍵字。
-- 函數 Func_eu_date 會找到正確日期格式的日期。
 
 ```xml
-<!-- France Driver's License Number -->
-<Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- France Driver's License Number -->
+    <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_french_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_french_drivers_license" />
-          <Match idRef="Func_eu_date" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_french_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
 #### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驅動程式許可證
+- 驅動程式 lics
+- 駕照
+- 驅動程式授權
 - 驅動程式許可證
 - 驅動程式授權
-- 駕駛許可證
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
+- 駕駛執照
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
 - 駕照
+- dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
 - permis de conduire
 - 許可號碼
 - 授權號碼
 - 許可證號碼
 - 授權號碼
+- numéros 解除許可證
 
 
 ## <a name="france-health-insurance-number"></a>法國健康保險業號碼
@@ -5840,124 +6990,169 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 函數 Func_german_drivers_license 找到符合模式的內容。
-- 下列專案中至少有一個為真：
-    - 會找到來自 Keyword_german_drivers_license_number 的關鍵字。
-    - 會找到來自 Keyword_german_drivers_license_collaborative 的關鍵字。
-    - 會找到來自 Keyword_german_drivers_license 的關鍵字。
+- 會找到來自 Keyword_german_drivers_license_number 的關鍵字。
 - 校驗和通過。
 
 ```xml
-<!-- Germany Driver's License Number -->
-<Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
-  <Pattern confidenceLevel="75">
+    <!-- German Driver's License Number -->
+    <Entity id="91da9335-1edb-45b7-a95f-5fe41a16c63c" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_german_drivers_license" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_german_drivers_license_number" />
-          <Match idRef="Keyword_german_drivers_license_collaborative" />
-          <Match idRef="Keyword_german_drivers_license" />
-        </Any>
-  </Pattern>
-</Entity>
+        <Match idRef="Keyword_german_drivers_license" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
 #### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
-- Führerschein
-- Fuhrerschein
-- Fuehrerschein
-- Führerscheinnummer
-- Fuhrerscheinnummer
-- Fuehrerscheinnummer
-- Führerschein- 
-- Fuhrerschein- 
-- Fuehrerschein- 
-- FührerscheinnummerNr
-- FuhrerscheinnummerNr
-- FuehrerscheinnummerNr
-- FührerscheinnummerKlasse
-- FuhrerscheinnummerKlasse
-- FuehrerscheinnummerKlasse
-- Führerschein-Nr
-- Fuhrerschein-Nr
-- Fuehrerschein-Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse
-- FührerscheinnummerNr 
-- FuhrerscheinnummerNr 
-- FuehrerscheinnummerNr 
-- FührerscheinnummerKlasse 
-- FuhrerscheinnummerKlasse 
-- FuehrerscheinnummerKlasse 
-- Führerschein-Nr 
-- Fuhrerschein-Nr 
-- Fuehrerschein-Nr 
-- Führerschein- Klasse 
-- Fuhrerschein- Klasse 
-- Fuehrerschein- Klasse 
-- Dl 
-- Dls
-- Driv 許可證 
-- Driv Licen 
-- Driv 授權
-- Driv 授權 
-- Driv 許可證 
-- Driv 許可證 
-- Driv 許可證 
-- 驅動程式 Licen 
-- 駕照 
-- 驅動程式授權 
-- 驅動程式許可證 
-- 驅動程式授權 
-- 驅動程式 .Lic 
-- 驅動程式 Licen 
-- 驅動程式授權 
-- 驅動程式授權 
-- 驅動程式許可證 
-- 驅動程式授權 
-- 驅動程式的 .Lic 
-- 驅動程式的 Licen 
-- 駕駛執照 
-- 駕駛執照 
-- 駕駛執照 
-- 駕駛執照 
-- 駕駛許可證 
-- 驅車 Licen 
-- 駕照 
-- 駕駛授權 
-- 駕駛許可證 
-- 駕駛許可證
-
-#### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
-
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-Fuehrerschein
-- Nr-Führerschein 
-- Nr-Fuhrerschein 
-- Nr-Fuehrerschein 
-- No-Führerschein 
-- No-Fuhrerschein 
-- No-Fuehrerschein 
-- N-Führerschein 
-- N-Fuhrerschein 
-- N-Fuehrerschein 
-
-#### <a name="keyword_german_drivers_license"></a>Keyword_german_drivers_license
-
 - ausstellungsdatum
 - ausstellungsort
-- ausstellende behöde
-- ausstellende behorde
-- ausstellende behoerde
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
+- führerschein
+- fuhrerschein
+- fuehrerschein
+- führerscheinnummer
+- fuhrerscheinnummer
+- fuehrerscheinnummer
+- führerschein- 
+- fuhrerschein- 
+- fuehrerschein- 
+- führerscheinnummernr
+- fuhrerscheinnummernr
+- fuehrerscheinnummernr
+- führerscheinnummerklasse
+- fuhrerscheinnummerklasse
+- fuehrerscheinnummerklasse
+- nr-führerschein
+- nr-fuhrerschein
+- nr-fuehrerschein
+- 非 führerschein
+- 非 fuhrerschein
+- 非 fuehrerschein
+- n-führerschein
+- n-fuhrerschein
+- n-fuehrerschein
+- permis de conduire
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- 驅動程式許可證
+- 驅動程式 lics
+- 駕照
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
+- 駕駛執照
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
+- dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dlno
 
 
 ## <a name="germany-identity-card-number"></a>德國身分識別卡號碼
@@ -6231,36 +7426,151 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_greece_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_greece_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_greece_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Greece Driver's License Number -->
+      <Entity id="7a2200b5-aacf-4e3c-ab36-136d3e68b7da" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_greece_eu_driver's_license_number" />
-          <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_greece_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dll#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver ' s_license_number
+
 - δεια οδήγησης
 - Adeia odigisis
+- Άδεια οδήγησης
+- Δίπλωμα οδήγησης
 
 
 ## <a name="greece-national-id-card"></a>希臘國身分識別卡
@@ -6555,35 +7865,149 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
 - 正則運算式會  `Regex_hungary_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_hungary_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_hungary_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_hungary_eu_driver's_license_number" />
-          <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_hungary_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver ' s_license_number
+
 - vezetoi engedely
+- vezetői engedély
+- vezetői engedélyek
 
 
 ## <a name="hungary-personal-identification-number"></a>匈牙利個人身分識別號碼
@@ -7269,36 +8693,149 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
   
 - 正則運算式會  `Regex_ireland_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_ireland_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_ireland_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Ireland Driver's License Number -->
+      <Entity id="e01bccd9-eb4d-414f-ace1-e9b6a4c4a2ca" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_ireland_eu_driver's_license_number" />
-          <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
-- ceadúnas tiomána
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
 
+
+#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver ' s_license_number
+
+- ceadúnas tiomána
+- ceadúnais tiomána
 
 ## <a name="ireland-passport-number"></a>愛爾蘭護照號碼
 
@@ -7559,10 +9096,10 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 ### <a name="pattern"></a>模式
 
-- 10個字母和數位的組合：
+10個字母和數位的組合：
 - 一個字母 (不區分大小寫)  
 - 字母 "A" 或 "V" (不區分大小寫)  
-- 七個字母 (不區分大小寫) 、數位或底線字元 
+- 七位數
 - 一個字母 (不區分大小寫) 
 
 ### <a name="checksum"></a>校驗
@@ -7591,8 +9128,11 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
-- numero di patente di guida 
+- numero di patente
 - patente di guida 
+- patente guida
+- patenti di guida
+- patenti guida
 
 ## <a name="italy-fiscal-code"></a>義大利會計代碼
 此機密資訊類型僅可用於下列專案：
@@ -7885,36 +9425,24 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 借方帳戶# 
 - 借方帳戶編號 
 - 借方科目編號 
-- 口座番號を當座預金口座の確認 
-- #アカウントの確認、勘定番號の確認 
-- #勘定の確認 
-- 勘定番號の確認 
-- 口座番號の確認 
-- 銀行口座番號 
-- 銀行口座 
-- 銀行口座＃ 
-- 銀行の勘定番號 
-- 銀行のacct＃ 
-- 銀行の勘定いいえ 
+- 口座番號
+- 銀行口座
 - 銀行口座番號
-- 普通預金口座番號 
-- 預金口座 
-- 貯蓄口座＃ 
-- 貯蓄勘定の數 
-- 貯蓄勘定＃ 
-- 貯蓄勘定番號 
-- 普通預金口座番號 
-- 引き落とし口座番號 
-- 口座番號 
-- 口座番號＃ 
-- デビットのacct番號 
-- デビット勘定＃ 
-- デビットACCTの番號 
-- デビット口座番號 
+- 総合口座
+- 普通預金口座
+- 普通口座
+- 當座預金口座
+- 當座口座
+- 預金口座
+- 振替口座
+- 銀行
+- バンク
 
 #### <a name="keyword_jp_bank_branch_code"></a>Keyword_jp_bank_branch_code
 
-Otemachi
+- 支店番號
+- 支店コード
+- 店番號
 
 ## <a name="japan-drivers-license-number"></a>日本駕照編號
 
@@ -7950,31 +9478,41 @@ Otemachi
 
 #### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
-- Dl# 
-- DL 
-- Dls# 
-- DL 
-- 駕照 
-- 驅動程式授權 
-- 驅動程式授權 
-- 駕駛執照 
-- 驅動程式授權 
-- 駕駛執照 
-- 駕駛許可證 
-- 許可證# 
-- 許可證 
-- lics# 
-- 狀態識別碼 
-- 狀態識別碼 
-- 狀態識別碼 
-- 低所得國＃ 
-- 免許証 
-- 狀態ID
-- 狀態の識別 
-- 狀態の識別番號 
-- 運転免許 
-- 運転免許証 
-- 運転免許証番號 
+- driverlicense
+- driverslicense
+- driver'slicense
+- driverslicenses
+- driver'slicenses
+- driverlicenses
+- Dl#
+- Dls#
+- 許可證#
+- lics#
+- 運転免許証
+- 運転免許
+- 免許証
+- 免許
+- 運転免許証番號
+- 運転免許番號
+- 免許証番號
+- 免許番號
+- 運転免許証ナンバー
+- 運転免許ナンバー
+- 免許証ナンバー
+- 運転免許証no
+- 運転免許no
+- 免許証no
+- 免許no
+- 運転経歴証明書番號
+- 運転経歴証明書
+- 運転免許証No.
+- 運転免許No.
+- 免許証No.
+- 免許No.
+- 運転免許証#
+- 運転免許#
+- 免許証#
+- 免許#
 
 
 ## <a name="japan-my-number---corporate"></a>日本我的號碼-公司
@@ -8136,10 +9674,21 @@ Otemachi
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- パスポート 
-- パスポート番號 
-- パスポートのNum 
-- パスポート＃ 
+- 護照
+- 護照號碼
+- 護照編號
+- 護照#
+- パスポート
+- パスポート番號
+- パスポートナンバー
+- パスポート＃
+- パスポート#
+- パスポートNo.
+- 旅券番號
+- 旅券番號＃
+- 旅券番號♯
+- 旅券ナンバー
+
 
 ## <a name="japan-residence-card-number"></a>日本住家電話卡號碼
 
@@ -8182,6 +9731,8 @@ Otemachi
 - 不含住宅卡片
 - 住宅卡片#
 - 在留カード番號
+- 在留カード
+- 在留番號
 
 ## <a name="japan-resident-registration-number"></a>日本居民登記號碼
 
@@ -8218,16 +9769,15 @@ Otemachi
 #### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - 常駐登記編號
-- 常駐寄存器號碼 
 - 居民基本登錄號碼 
 - 常駐登記編號 
 - 居民收銀機否。 
 - 居民基本登錄否。 
 - 基本居民收銀機 No。 
-- 住民登録番號、登録番號をレジデント 
-- 住民基本登録番號、登録番號 
-- 住民基本レジストリ番號を常駐 
-- 登録番號を常駐住民基本台帳登録番號 
+- 外國人登録証明書番號
+- 証明書番號
+- 登録番號
+- 外國人登録証
 
    
 ## <a name="japan-social-insurance-number-sin"></a>日本社交保險號碼 (SIN) 
@@ -8279,8 +9829,22 @@ Otemachi
 - 社交保險保險編號 
 - 社交保險編號 
 - 社交保險號碼 
-- 社會保険のテンキー 
-- 社會保険番號 
+- 健康保険被保険者番號
+- 健保番號
+- 基礎年金番號
+- 雇用保険被保険者番號
+- 雇用保険番號
+- 保険証番號
+- 社會保険番號
+- 社會保険No.
+- 社會保険
+- 介護保険
+- 介護保険被保険者番號
+- 健康保険被保険者整理番號
+- 雇用保険被保険者整理番號
+- 厚生年金
+- 厚生年金被保険者整理番號
+
 
 ## <a name="latvia-drivers-license-number"></a>拉脫維亞駕駛執照號碼
 這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
@@ -8304,35 +9868,150 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_latvia_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_latvia_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_latvia_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Latvia Driver's License Number -->
+      <Entity id="ec996de0-30f2-46b1-b192-4d2ff8805fa7" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_latvia_eu_driver's_license_number" />
-          <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver ' s_license_number
+
 - autovadītāja apliecība
+- autovadītāja apliecības
+- vadītāja apliecība
 
 ## <a name="latvia-personal-code"></a>拉脫維亞個人程式碼
 
@@ -8545,35 +10224,150 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_lithuania_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_lithuania_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_lithuania_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Lithuania Driver's License Number -->
+      <Entity id="86f7628b-e0f4-4dc3-9fbc-e4300e4c7d78" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_lithuania_eu_driver's_license_number" />
-          <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver ' s_license_number
+
 - vairuotojo pažymėjimas
+- vairuotojo pažymėjimo numeris
+- vairuotojo pažymėjimo numeriai
 
 ## <a name="lithuania-personal-code"></a>立陶宛個人程式碼
 此機密資訊類型僅可用於下列專案：
@@ -8737,35 +10531,149 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_luxemburg_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_luxemburg_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_luxemburg_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Luxemburg Driver's License Number -->
+      <Entity id="89daf717-1544-4860-9a2e-fc9166dd8852" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_luxemburg_eu_driver's_license_number" />
-          <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_luxemburg_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver ' s_license_number
+
 - fahrerlaubnis
+- Führerschäin
 
 ## <a name="luxemburg-national-identification-number-natural-persons"></a>Luxemburg (自然個人的國家識別號碼) 
 此機密資訊類型僅可用於下列專案：
@@ -9065,35 +10973,150 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_malta_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_malta_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_malta_eu_driver's_license_number` 。 
     
 ```xml
-<!-- EU Driver's License Number -->
- <Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Malta Driver's License Number -->
+      <Entity id="a3bdaa4a-8371-4735-8fa5-56ee0fb4afc4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_malta_eu_driver's_license_number" />
-          <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_malta_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver ' s_license_number
+
 - liċenzja tas-sewqan
+- liċenzji tas-sewwieq
+
 
 ## <a name="malta-identity-card-number"></a>馬爾他身分識別卡號碼
 此機密資訊類型僅可用於下列專案：
@@ -9385,37 +11408,153 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_netherlands_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_netherlands_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_netherlands_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Netherlands Driver's License Number -->
+      <Entity id="6247fbea-ab80-4be5-8233-308b7c031401" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_netherlands_eu_driver's_license_number" />
-          <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_netherlands_eu_driver's_license_number" />
+            </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver ' s_license_number
+
 - permis de conduire
 - rijbewijs
 - rijbewijsnummer
+- rijbewijzen
+- rijbewijs nummer
+- rijbewijsnummers
 
 
 ## <a name="netherlands-passport-number"></a>荷蘭護照號碼
@@ -9649,7 +11788,7 @@ Otemachi
       <Entity id="1a97fc2b-dd2f-48f1-bc4e-2ddf25813956" patternsProximity="300" recommendedConfidence="85">
         <Pattern confidenceLevel="85">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
-          <Match idRef="Keywords_new_zealand_bank_account_number" />
+          <Match idRef="Keywords_new_zFealand_bank_account_number" />
         </Pattern>
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Func_new_zealand_bank_account_number" />
@@ -10068,35 +12207,149 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_poland_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_poland_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_poland_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Poland Driver's License Number -->
+      <Entity id="24d51f99-ee9e-4060-a077-cae58cab1ee4" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_poland_eu_driver's_license_number" />
-          <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_poland_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver ' s_license_number
+
 - prawo jazdy
+- prawa jazdy
 
 ## <a name="poland-identity-card"></a>波蘭身分識別卡片
 
@@ -10432,17 +12685,24 @@ Otemachi
 
 ### <a name="format"></a>格式
 
-兩個字母后接指定的模式中的七個數字
+兩個模式：兩個字母，後面加上以特殊字元顯示的5-8 位數
   
 ### <a name="pattern"></a>模式
 
-兩個字母后接7個含特殊字元的數位：
-  
-- 兩個字母 (不區分大小寫)  
+模式1：兩個字母后接以特殊字元的5/6：
+- 兩個字母 (不區分大小寫) 
 - 連字號
-- 六位數
+- 五或六位數
 - 一個空格
 - 一個數位
+
+模式2：一個字母后接6/8 位數，含特殊字元：
+- 一個字母 (不區分大小寫) 
+- 連字號
+- 六位數或八位數
+- 一個空格
+- 一個數位
+
     
 ### <a name="checksum"></a>校驗
 
@@ -10452,35 +12712,157 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_portugal_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_portugal_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_portugal_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Portugal Driver's License Number -->
+      <Entity id="977f1e5a-2c33-4bcc-b516-95bb275cff23" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_portugal_eu_driver's_license_number" />
-          <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver ' s_license_number
+
 - carteira de motorista
+- carteira motorista
+- carteira de habilitação
+- carteira habilitação
+- número de licença
+- número licença
+- permissão de condução
+- permissão condução
+- Licença condução 葡萄牙
+- carta de condução
 
 ## <a name="portugal-passport-number"></a>葡萄牙護照號碼
 這個敏感資訊類型實體只適用于歐盟護照號碼機密資訊類型。
@@ -10625,7 +13007,6 @@ Otemachi
 ### <a name="pattern"></a>模式
 
 一個字元後接八位數：
-  
 - 一個字母 (不區分大小寫) 或數位 
 - 八位數
     
@@ -10637,35 +13018,153 @@ Otemachi
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_romania_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_romania_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_romania_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Romania Driver's License Number -->
+      <Entity id="b5511ace-2fd8-4ae4-b6fc-c7c6e4689e3c" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_romania_eu_driver's_license_number" />
-          <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_romania_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver ' s_license_number
+
 - permis de conducere
+- permisului de conducere
+- permisului conducere
+- permisele de conducere
+- permisele conducere
+- permis conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>羅馬尼亞個人數位代碼 (CNP) 
 此機密資訊類型僅可用於下列專案：
@@ -11058,35 +13557,151 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_slovakia_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_slovakia_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_slovakia_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovakia Driver's License Number -->
+      <Entity id="14240c22-b6de-4ce5-a90b-137f74252513" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_slovaknia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          <IdMatch idRef="Regex_slovakia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver ' s_license_number
+
 - vodičský preukaz
+- vodičské preukazy
+- vodičského preukazu
+- vodičských preukazov
 
 ## <a name="slovakia-personal-number"></a>斯洛伐克個人號碼
 此機密資訊類型僅可用於下列專案：
@@ -11259,35 +13874,152 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_slovenia_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_slovenia_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_slovenia_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Slovenia Driver's License Number -->
+      <Entity id="d5bc089a-f2ee-433d-a6b1-5c253051d6f2" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_slovenia_eu_driver's_license_number" />
-          <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
-- 駕駛執照 
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
+- 駕駛執照
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver ' s_license_number
+
 - vozniško dovoljenje
+- vozniška številka 許可證
+- vozniških dovoljenj
+- številka vozniškega dovoljenja
+- številke vozniških dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>斯洛維尼亞唯一主公民號碼
 此機密資訊類型僅可用於下列專案：
@@ -11617,58 +14349,177 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
   
 ### <a name="definition"></a>定義
 
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
+- 函數  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 找到符合模式的內容。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_spain_eu_driver's_license_number` 。 
+
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
-- 函數  `Func_spain_eu_driver's_license_number` 會找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_spain_eu_driver's_license_number` 。 
+- 函數  `Func_spain_eu_DL_and_NI_number_citizen` 或 `Func_spain_eu_DL_and_NI_number_foreigner` 找到符合模式的內容。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_spain_eu_driver's_license_number" />
-          <Match idRef="Keywords_spain_eu_driver's_license_number" />
+      <!-- Spain Driver's License Number -->
+      <Entity id="d5a82922-b501-4f40-8868-341321146aa2" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_citizen" />
+        </Pattern>
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_spain_eu_driver's_license_number" />
+          </Any>
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_DL_and_NI_number_foreigner" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- dlno#
-- Dl#
-- 驅動程式 .lic。
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
+- 驅動程式 lics
 - 駕照
+- 驅動程式授權
 - 驅動程式許可證
 - 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
+- 駕駛執照
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
 - 駕駛執照
 - 駕駛執照
-- 駕駛許可證
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
 - 駕照
-- 驅動程式許可證號碼
-- 駕駛執照號碼
-- 驅動程式許可證數目
-- 驅動程式授權號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛許可證號碼
-- 駕駛執照號碼
+- dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
 - 駕駛允許
-- 駕駛允許號碼
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver ' s_license_number
+
 - permiso de conducción
 - permiso conducción
-- número licencia conducir
-- número de carnet de conducir
-- número carnet conducir
+- licencia de conducir
 - licencia conducir
-- número de permiso de conducir
-- número de permiso conducir
-- número permiso conducir
 - permiso conducir
-- licencia de manejo
-- el carnet de conducir
+- permiso de conducir
+- permisos de conducir
+- permisos conducir
 - carnet conducir
+- carnet de conducir
+- licencia de manejo
+- licencia manejo
 
 ## <a name="spain-dni"></a>西班牙 DNI
 此機密資訊類型僅可用於下列專案：
@@ -12067,35 +14918,158 @@ Foreigners 與 Foreigner 的識別號碼
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 正則運算式會  `Regex_sweden_eu_driver's_license_number` 找到符合模式的內容。 
-- 找到來自的關鍵字  `Keywords_sweden_eu_driver's_license_number` 。 
+- `Keywords_eu_driver's_license_number`找到或的關鍵字 `Keywords_sweden_eu_driver's_license_number` 。 
     
 ```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+      <!-- Sweden Driver's License Number -->
+      <Entity id="70088720-90dd-47f5-805e-5525f3567391" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="75">
           <IdMatch idRef="Regex_sweden_eu_driver's_license_number" />
-          <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          <Any minMatches="1">
+            <Match idRef="Keywords_eu_driver's_license_number" />
+            <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+          </Any>
         </Pattern>
-</Entity> 
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-**Keywords_sweden_eu_driver ' s_license_number**
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
 
-- Dl#
-- 駕照
-- 駕駛執照號碼
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
 - 驅動程式許可證
-- 驅動程式 .lic。
+- 驅動程式 lics
+- 駕照
 - 驅動程式授權
 - 驅動程式許可證
+- 驅動程式授權
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- 驅動程式 .lic
+- 驅動程式 lics
+- 驅動程式授權
+- 驅動程式授權
+- 驅動程式許可證
+- 驅動程式授權
+- driver'lic
+- driver'lics
+- driver'license
+- driver'licenses
+- driver'licence
+- driver'licences
+- 驅動程式「.lic
+- 驅動程式 ' lics
 - 駕駛執照
-- 駕駛執照號碼
-- 駕駛執照號碼
-- 駕駛執照號碼
+- 驅動程式的授權
+- 驅動程式 ' 許可證
+- 驅動程式 ' 授權
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- 驅動程式的 .lic
+- 驅動程式的 lics
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- 駕駛執照
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- 驅動程式許可證#
+- 驅動程式 lics#
+- 駕照#
+- 驅動程式授權#
+- 驅動程式授權#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- 驅動程式 .lic#
+- 驅動程式 lics#
+- 驅動程式授權#
+- 驅動程式授權#
+- 驅動程式許可證#
+- 驅動程式授權#
+- driver'lic#
+- driver'lics#
+- driver'license#
+- driver'licenses#
+- driver'licence#
+- driver'licences#
+- 驅動程式「.lic#
+- 驅動程式 ' lics#
+- 駕駛執照#
+- 驅動程式的授權#
+- 驅動程式 ' 許可證#
+- 驅動程式 ' 授權#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- 驅動程式的 .lic#
+- 驅動程式的 lics#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛執照#
+- 駕駛許可證 
+- 駕照
 - dlno#
+- driv 許可證
+- driv licen
+- driv 授權
+- driv 授權
+- driv 許可證
+- driv 許可證
+- 驅動程式 licen
+- 驅動程式 licen
+- 驅動程式的 licen
+- 駕駛許可證
+- 驅車 licen
+- 駕駛授權
+- 駕駛許可證
+- 駕駛許可證
+- 駕駛允許
+- dl no
+- dlno
+- dl 編號
+
+
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver ' s_license_number
+
+- ajokortti
+- permis de conducere
+- ajokortin numero
+- kuljettajat 許可證。
+- drivere 許可證。
 - körkort
+- numărul permisului de conducere
+-  שאָפער דערלויבעניש נומער
+- förare 許可證。
+-  דריווערס דערלויבעניש
+- körkortsnummer
 
 ## <a name="sweden-national-id"></a>瑞典國家識別碼
 
@@ -12413,38 +15387,40 @@ Foreigners 與 Foreigner 的識別號碼
    
 #### <a name="keyword_swift"></a>Keyword_swift
 
-- 標準化9362的國際組織 
-- iso 9362 
-- iso9362 
-- 迅速\# 
-- swiftcode 
-- swiftnumber 
-- swiftroutingnumber 
-- swift 程式碼 
-- swift 號碼# 
-- swift 路由編號 
-- bic 編號 
-- bic 程式碼 
-- bic \# 
-- bic\# 
-- 銀行識別碼代碼 
-- 標準化9362 
-- 迅速＃ 
-- SWIFTコード 
-- SWIFT番號 
-- 迅速なルーティング番號 
-- BIC番號 
-- BICコード 
-- 銀行識別コードのための國際組織 
-- 組織 internationale de normalisation 9362 
-- rapide \# 
-- 程式碼 SWIFT 
-- le numéro 解除的 swift 
-- swift numéro d'acheminement 
-- le numéro BIC 
-- \# BIC 
-- 程式碼 identificateur de banque 
-
+- 標準化9362的國際組織
+- iso 9362
+- iso9362
+- 迅速#
+- swiftcode
+- swiftnumber
+- swiftroutingnumber
+- swift 程式碼
+- swift 號碼#
+- swift 路由編號
+- bic 編號
+- bic 程式碼
+- bic#
+- bic#
+- 銀行識別碼代碼
+- 組織 internationale de normalisation 9362
+- rapide#
+- 程式碼 SWIFT
+- le numéro 解除的 swift
+- swift numéro d'acheminement
+- le numéro BIC
+- # <a name="bic"></a>BIC
+- 程式碼 identificateur de banque
+- SWIFTコード
+- SWIFT番號
+- BIC番號
+- BICコード
+- SWIFT コード
+- SWIFT 番號
+- BIC 番號
+- BIC コード
+- 金融機関識別コード
+- 金融機関コード
+- 銀行コード
 
 ## <a name="switzerland-ssn-ahv-number"></a>瑞士 SSN AHV 號碼
 此機密資訊類型僅可用於下列專案：
@@ -12975,24 +15951,18 @@ OR
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 函數 Func_uk_nino 找到符合模式的內容。
-- 找不到 Keyword_uk_nino 的關鍵字。
 
 ```xml
-<!-- U.K. NINO -->
-<Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.K. NINO -->
+    <Entity id="16c07343-c26f-49d2-a987-3daf717e94cc" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>    
-     <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_uk_nino" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_uk_nino" />
-        <Any minMatches="0" maxMatches="0">
-          <Match idRef="Keyword_uk_nino" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字

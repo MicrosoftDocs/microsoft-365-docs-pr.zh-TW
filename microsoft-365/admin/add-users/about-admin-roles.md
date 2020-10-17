@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員可以透過系統管理中心開啟支援票證。
-ms.openlocfilehash: 35fee24a2e9de6c00f37e93c59851b7e760baa19
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 5ee8f5732d67ee3913ac7de5bcb7328065b0c8ba
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131779"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445460"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
@@ -77,7 +77,7 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
 |群組系統管理員     |   將群組管理員角色指派給需要跨系統管理中心管理所有群組設定的使用者，包括 Microsoft 365 系統管理中心和 Azure Active Directory 入口網站。 <br><br> 群組系統管理員可以：<br> - 建立、編輯、刪除及還原 Microsoft 365 群組 <br> - 建立並更新群組建立、到期及命名原則 <br> - 建立、編輯、刪除及還原 Azure Active Directory 安全性群組| 
 |服務台系統管理員     |   將服務台系統管理員角色指派給需要執行下列動作的使用者：<br> - 重設密碼 <br> - 強制使用者登出 <br> - 管理服務要求 <br> - 監視服務健康情況 <br> <br> **附註**：服務台系統管理員只能協助非系統管理員使用者和獲指派下列角色的使用者：目錄讀取者、來賓邀請者、服務台系統管理員、訊息中心讀取者和報告讀取者。      |
 |Office應用程式系統管理員    |   將 Office 應用程式系統管理員角色指派給需要執行下列動作的使用者： <br> - 使用 Office 雲端原則服務來建立及管理 Office 的雲端式原則 <br> - 建立和管理服務要求 <br> - 管理使用者在 Office 應用程式中看到的新功能內容   <br> - 監視服務健康情況  |
-|服務系統管理員    |   將服務系統管理員角色以額外角色形式指派給其角色不包含下列但仍需執行下列動作的管理員或使用者： <br> - 開啟和管理服務要求 <br> - 檢視和共用訊息中心文章   |
+|服務支援系統管理員   |   將服務支援系統管理員角色以額外角色形式指派給其角色不包含下列但仍需執行下列動作的管理員或使用者： <br> - 開啟和管理服務要求 <br> - 檢視和共用訊息中心文章   |
 |SharePoint 系統管理員    |   將 SharePoint 系統管理員角色指派給需要存取和管理 SharePoint Online 系統管理中心的使用者。 <br><br>SharePoint 系統管理員也可以： <br> - 建立和刪除網站 <br> - 管理網站集合和全域 SharePoint 設定   |
 |Teams 服務管理員    |   將 Teams 服務管理員角色指派給需要存取和管理 Teams 系統管理中心的使用者。 <br><br>Teams 服務管理員也可以： <br> - 管理會議 <br> - 管理會議橋接器 <br> - 管理所有的全組織設定，包括同盟、Teams 升級和 Teams 用戶端設定   |
 |使用者系統管理員     |    將使用者系統管理員角色指派給需要為所有使用者執行下列動作的使用者： <br> - 新增使用者和群組 <br> - 指派授權 <br> - 管理最多使用者屬性 <br> - 建立與管理使用者檢視 <br> - 設定密碼到期原則 <br> - 管理服務要求 <br> - 監視服務健康情況 <br><br>  使用者系統管理員也可以針對非系統管理員和獲指派下列角色的使用者執行下列動作：目錄讀取者、來賓邀請者、服務台系統管理員、訊息中心讀取者、報告讀取者： <br> - 管理使用者名稱<br> - 刪除和還原使用者<br> - 重設密碼 <br> - 強制使用者登出 <br> - 更新 (FIDO) 裝置金鑰   |

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為文件或電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: c4f00c0a11b172671da456b27e0e33c081728614
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 87b1078462d6315e6cf4ddeb95832f20eae67375
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326744"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445481"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -107,7 +107,11 @@ ms.locfileid: "48326744"
 
 在 Windows 版 Office 應用程式中的自動標籤，是由 Azure 資訊保護整合標籤用戶端支援。 對於 Office 應用程式中的內建標籤，此功能 [ 對不同的應用程式，處於不同的可用性階段 ](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)。
 
-當您[建立或編輯敏感度標籤](create-sensitivity-labels.md)時，可使用適用於 Office 應用程式的自動套用標籤設定。 當偵測到敏感資訊時，您可以選擇自動將敏感度標籤套用到內容。 從敏感度資訊類型或可訓練分類器清單中選擇：
+當您[建立或編輯敏感度標籤](create-sensitivity-labels.md)時，可使用適用於 Office 應用程式的自動套用標籤設定。 請確定已針對標籤的範圍選取 [檔案和電子郵件 **]**： 
+
+![檔案和電子郵件的敏感度標籤範圍選項](../media/filesandemails-scope-options-sensitivity-label.png)
+
+當您在精靈中移動時，您會看到 [適用於 Office 應用程式的自動套用標籤 **]** 頁面，您可以在其中從敏感性資訊類型或可訓練分類器清單中選擇：
 
 ![在 Office 應用程式中自動套用標籤的標籤條件](../media/sensitivity-labels-conditions.png)
 
@@ -202,7 +206,7 @@ ms.locfileid: "48326744"
     - 當自動套用標籤原則執行時，檔案不能由其他程序或使用者開啟。 簽出以編輯的檔案屬於這個類別。
 
 - 如果您計劃使用[自訂敏感性資訊類型](custom-sensitive-info-types.md)，而不是內建的敏感性類型： 
-    - 針對在自訂敏感性資訊類型儲存之後所建立的內容，會評估自訂敏感性資訊類型。 
+    - 針對在儲存自訂敏感度資訊類型之後新增至 SharePoint 或 OneDrive 的內容，會評估該內容的自訂敏感度資訊類型。 
     - 若要測試新的自訂敏感性資訊類型，請在建立您的自動套用標籤原則之前建立，然後建立含有範例資料的新文件以進行測試。
 
 - 一或多個敏感性標籤[已建立和已發佈](create-sensitivity-labels.md) (給至少一個使用者)，這些標籤可供您針對自動套用標籤原則選取。 針對這些標籤：

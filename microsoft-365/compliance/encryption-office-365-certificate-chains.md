@@ -1,11 +1,11 @@
 ---
-title: 加密鏈
+title: Microsoft 365 加密鏈
 f1.keywords:
 - NOCSH
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/3/2020
+ms.date: 10/16/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,33 +16,35 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: 在 Office 365 中查看完整的根憑證和憑證授權 (CAs) 清單。
-ms.openlocfilehash: c0f63f6e4ebc288f8b06d608af81a485e5f71e8a
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+description: 在 Microsoft 365 中查看完整的根憑證和憑證授權 (CAs) 清單。
+ms.openlocfilehash: c2a623d1e52318e954efbc843b036f99314a2feb
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307442"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580961"
 ---
-# <a name="encryption-chains"></a>加密鏈
+# <a name="microsoft-365-encryption-chains"></a>Microsoft 365 加密鏈
 
-Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 365 時，使用者可能會遇到的已知 Office 365 根憑證的完整清單。 如需您可能需要在自己的基礎結構中安裝之憑證的詳細資訊，請參閱 [Plan For Office 365 的協力廠商 SSL 憑證](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates)。 下列憑證資訊適用于 Office 365 的所有全球和國內雲端實例。
+Microsoft 365 利用許多不同的憑證提供者。 下列說明當存取 Microsoft 365 時，客戶可能會遇到的已知 Microsoft 365 根憑證的完整清單。 如需您可能需要在自己的基礎結構中安裝之憑證的詳細資訊，請參閱 [Plan For Microsoft 365 的協力廠商 SSL 憑證](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates)。 下列憑證資訊適用于 Microsoft 365 的所有全球和國內雲端實例。
+
+上次更新： **10/16/2020**
 
 >[!NOTE]
->如需適用于 **DOD 和 Gcc 高級** 客戶的憑證資訊，請參閱 [Office 365 加密鏈-DOD 和 gcc high](encryption-office-365-certificate-chains-itar.md)。
+>如需適用于 **DOD 和 Gcc 高級** 客戶的憑證資訊，請參閱 [Microsoft 365 加密鏈-DOD 和 gcc high](encryption-office-365-certificate-chains-itar.md)。
 
 | **憑證類型** | **P7b 下載** | **CRL 端點** | **OCSP 端點** | **AIA 端點** |
 | --- | --- | --- | --- | --- |
-| 公開信任的根憑證 | [Office 365 根憑證捆綁 (P7B) ](https://download.microsoft.com/download/A/5/A/A5AE01F3-D19B-4A11-9407-801263CEF72C/O365_Root_Certs_20170321.p7b) | crl.globalsign.net<br>www.d-trust.net | 不適用 | 不適用 |
-| 公開信任的中級憑證 | [Office 365 中級憑證捆綁 (P7B) ](https://download.microsoft.com/download/4/D/5/4D5339A4-0A4A-46AB-AE52-B179DEDA4BEC/O365_Intermediate_Certs_20170321.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
+| 公開信任的根憑證 | [Microsoft 365 的根憑證捆綁 (P7B) ](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20201012.p7b) | crl.globalsign.net<br>www.d-trust.net | 不適用 | 不適用 |
+| 公開信任的中級憑證 | [Microsoft 365 中級憑證捆綁 (P7B) ](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
 
 展開下列的根及中間部分，以查看憑證提供者的其他詳細資料。
 
-## <a name="office-365-root-certificate-details"></a>**Office 365 的根憑證詳細資料**
+## <a name="microsoft-365-root-certificate-details"></a>**Microsoft 365 的根憑證詳細資料**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **主旨** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
+| **Subject** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | --- | --- |
 | **序號** | 02：00：00： B9 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -56,7 +58,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="cnnic-root"></a>**CNNIC 根**
 
-| **主旨** | CN = CNNIC ROOT<br>O = CNNIC<br>C = CN |
+| **Subject** | CN = CNNIC ROOT<br>O = CNNIC<br>C = CN |
 | --- | --- |
 | **序號** | 49:33:00:01 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -71,7 +73,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="digicert-global-root-ca"></a>**DigiCert 通用根 CA**
 
-| **主旨** | CN = DigiCert 通用根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert 通用根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **序號** | 08：3B： E0：56：90：42：46： B1： A1：75：6A： C9：59：91： C7：4A |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -84,9 +86,24 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 | **指紋 (SHA-256) ** | 4348A0E9444C78CB265E058D5E8944B4D84F9662BD26DB257F8934A443C70161 |
 | **Pin (SHA-256) ** | r/mIkG3eEpVdm + u/ko/cwxzOMo1bk4TyHIlByibiA5E = |
 
+### <a name="digicert-global-root-g2"></a>**DigiCert 全域根 G2**
+
+| **Subject** | CN = DigiCert 全域根 G2<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
+| --- | --- |
+| **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
+| **序號** | 03：3A： F1： E6： A7：11： A9： A0： BB：28：64： B1：1D：09： FA： E5 |
+| **公開金鑰長度** | RSA 2048 bits |
+| **簽名演算法** | sha256RSA |
+| **不早的合法性** | 5:00 2013 年8月1日（星期四） |
+| **有效期不到** | 4:00 2038 年1月15日（星期五） |
+| **主體金鑰識別碼** | 4E2254201895E6E36EE60FFAFAB912ED06178F39 |
+| **授權機碼識別碼** | KeyID：4e：22：54：20：18：95： e6： e3：6e： e6：0f： fa： fa： b9：12： ed：06：17：8f：39 |
+| **指紋 (SHA-1) ** | DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 |
+| **指紋 (SHA-256) ** | CB3CCBB76031E5E0138F8DD39A23F9DE47FFC35E43C1144CEA27D46A5AB1CB5F |
+
 ### <a name="digicert-high-assurance-ev-root-ca"></a>**DigiCert 高確定性 EV 根 CA**
 
-| **主旨** | CN = DigiCert 高確定性 EV 根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert 高確定性 EV 根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **序號** | 02： AC：5C：26：6A：0B：40：9B：8F：0B：79： F2： AE：46：25：77 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -101,7 +118,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="d-trust-root-class-3-ca-2-2009"></a>**D-信任的根類別 3 CA 2 2009**
 
-| **主旨** | CN = D-根信任類別 3 CA 2 2009<br>O = D 信任 GmbH<br>C = DE |
+| **Subject** | CN = D-根信任類別 3 CA 2 2009<br>O = D 信任 GmbH<br>C = DE |
 | --- | --- |
 | **序號** | 09：83： F3 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -116,7 +133,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="d-trust-root-class-3-ca-2-ev-2009"></a>**D-信任的根類別 3 CA 2 EV 2009**
 
-| **主旨** | CN = D 根信任類別 3 CA 2 EV 2009<br>O = D 信任 GmbH<br>C = DE |
+| **Subject** | CN = D 根信任類別 3 CA 2 EV 2009<br>O = D 信任 GmbH<br>C = DE |
 | --- | --- |
 | **序號** | 09：83： F4 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -131,7 +148,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="dst-root-ca-x3"></a>**DST 根 CA X3**
 
-| **主旨** | CN = DST 根 CA X3<br>O = 數位簽章信任 Co。 |
+| **Subject** | CN = DST 根 CA X3<br>O = 數位簽章信任 Co。 |
 | --- | --- |
 | **序號** | 44： AF： B0：80： D6： A3：27： BA：89：30：39：86：2E： F8：40：6B |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -145,7 +162,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="entrust-root-certification-authority---g2"></a>**Entrust 根憑證授權單位單位-G2**
 
-| **主旨** | CN = Entrust 根憑證授權單位單位-G2<br>OU = &quot; (c) 2009 Entrust，inc. 供授權使用&quot;<br>OU = 請參閱 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
+| **Subject** | CN = Entrust 根憑證授權單位單位-G2<br>OU = &quot; (c) 2009 Entrust，inc. 供授權使用&quot;<br>OU = 請參閱 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
 | --- | --- |
 | **序號** | 4A：53：8C：28 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -159,7 +176,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **主旨** | CN = Entrust) 網路憑證授權單位 (2048<br>OU = (c) 1999 Entrust.net 限制<br>OU = entrust net/CPS \_ 2048 包含。  (限制 s liab。 ) <br>O = Entrust |
+| **Subject** | CN = Entrust) 網路憑證授權單位 (2048<br>OU = (c) 1999 Entrust.net 限制<br>OU = entrust net/CPS \_ 2048 包含。  (限制 s liab。 ) <br>O = Entrust |
 | --- | --- |
 | **序號** | 38：63： DE： F8 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -173,7 +190,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="globalsign"></a>**GlobalSign**
 
-| **主旨** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R2 |
+| **Subject** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R2 |
 | --- | --- |
 | **序號** | 04：00：00：00：00：01：0F：86：26： E6：0D |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -187,9 +204,24 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 | **Pin (SHA-256) ** | iie1VXtL7HzAMF +/PVPR9xzT80kQxdZeJ + zduCB3uj0 = |
 | **CRL URLs** | http://crl.globalsign.net/root-r2.crl |
 
+### <a name="globalsign"></a>**GlobalSign**
+
+| **Subject** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R3 |
+| --- | --- |
+| **發行者** | CN = GlobalSign，O = GlobalSign，OU = GlobalSign 根 CA-R3 |
+| **序號** | 04：00：00：00：00：01：21：58：53：08： A2 |
+| **公開金鑰長度** | RSA 2048 bits |
+| **簽名演算法** | sha256RSA |
+| **不早的合法性** | 2009年3月18日，星期三，3:00 AM |
+| **有效期不到** | 星期天，2029年3月18日，3:00 AM |
+| **主體金鑰識別碼** | 8FF04B7FA82E4524AE4D50FA639A8BDEE2DD1BBC |
+| **授權機碼識別碼** | KeyID：8f： f0：4b：7f： a8：2e：45：24： ae：4d：50： fa：63：9a：8b： de： e2： dd：1b： bc |
+| **指紋 (SHA-1) ** | D69B561148F01C77C54578C10926DF5B856976AD |
+| **指紋 (SHA-256) ** | CBB522D7B7F127AD6A0113865BDF1CD4102E7D0759AF635A7CF4720DC963C53B |
+
 ### <a name="globalsign-root-ca"></a>**GlobalSign Root CA**
 
-| **主旨** | CN = GlobalSign 根 CA<br>OU = 根 CA<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 根 CA<br>OU = 根 CA<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **序號** | 04：00：00：00：00：01：15：4B：5A： C3：94 |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -203,7 +235,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="thawte-primary-root-ca---g3"></a>**thawte Primary Root CA-G3**
 
-| **主旨** | CN = thawte Primary Root CA-G3<br>OU = &quot; (c) 2008 thawte，Inc. 供授權使用&quot;<br>OU = 認證服務部門<br>O = &quot; thawte，inc.。&quot;<br>C=US |
+| **Subject** | CN = thawte Primary Root CA-G3<br>OU = &quot; (c) 2008 thawte，Inc. 供授權使用&quot;<br>OU = 認證服務部門<br>O = &quot; thawte，inc.。&quot;<br>C=US |
 | --- | --- |
 | **序號** | 60：01：97： B7：46： A7： EA： B4： B4：9A： D6：4B：2F： F7：90： FB |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -217,7 +249,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**VeriSign 類別3公用主要憑證授權單位-G5**
 
-| **主旨** | CN = VeriSign Class 3 Public Primary Primary 核證機關-G5<br>OU = &quot; (c) 2006 VeriSign，Inc. 供授權使用&quot;<br>OU = VeriSign 信任網路<br>O = &quot; VeriSign，inc.。&quot;<br>C=US |
+| **Subject** | CN = VeriSign Class 3 Public Primary Primary 核證機關-G5<br>OU = &quot; (c) 2006 VeriSign，Inc. 供授權使用&quot;<br>OU = VeriSign 信任網路<br>O = &quot; VeriSign，inc.。&quot;<br>C=US |
 | --- | --- |
 | **序號** | 18： DA： D1：9E：26：7D： E8： BB：4A：21：58： CD： CC：6B：3B：4A |
 | **公開金鑰長度** | RSA 2048 bits (e 65537)  |
@@ -229,11 +261,11 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 | **指紋 (SHA-256) ** | 9ACFAB7E43C8D880D06B262A94DEEEE4B4659989C3D0CAF19BAF6405E41AB7DF |
 | **Pin (SHA-256) ** | JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg = |
 
-## <a name="office-365-intermediate-certificate-details"></a>**Office 365 中級憑證詳細資料**
+## <a name="microsoft-365-intermediate-certificate-details"></a>**Microsoft 365 中級憑證詳細資料**
 
 ### <a name="cnnic-sha256-ssl"></a>**CNNIC SHA256 SSL**
 
-| **主旨** | CN = CNNIC SHA256 SSL <br>O = CNNIC SHA256 SSL <br>C = CN |
+| **Subject** | CN = CNNIC SHA256 SSL <br>O = CNNIC SHA256 SSL <br>C = CN |
 | --- | --- |
 | **發行者** | CN = CNNIC ROOT <br>O = CNNIC <br>C = CN |
 | **序號** | 49：33：00：7C |
@@ -252,7 +284,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="d-trust-ssl-class-3-ca-1-2009"></a>**D-信任 SSL 類別 3 CA 1 2009**
 
-| **主旨** | CN = D-信任 SSL 類別 3 CA 1 2009<br>O = D 信任 GmbH<br>C = DE |
+| **Subject** | CN = D-信任 SSL 類別 3 CA 1 2009<br>O = D 信任 GmbH<br>C = DE |
 | --- | --- |
 | **發行者** | CN = D-根信任類別 3 CA 2 2009<br>O = D 信任 GmbH<br>C = DE |
 | **主體替代名稱** | /RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
@@ -271,7 +303,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="d-trust-ssl-class-3-ca-1-ev-2009"></a>**D-信任 SSL 類別 3 CA 1 EV 2009**
 
-| **主旨** | CN = D-信任 SSL 類別 3 CA 1 EV 2009<br>O = D 信任 GmbH<br>C = DE |
+| **Subject** | CN = D-信任 SSL 類別 3 CA 1 EV 2009<br>O = D 信任 GmbH<br>C = DE |
 | --- | --- |
 | **發行者** | CN = D 根信任類別 3 CA 2 EV 2009<br>O = D 信任 GmbH<br>C = DE |
 | **主體替代名稱** | /RFC822 Name=info@d-trust.net<br>URL=http://www.d-trust.net |
@@ -288,9 +320,26 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 | **CRL URLs** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
 | **OCSP URLs** | http://root-c3-ca2-ev-2009.ocsp.d-trust.net |
 
+### <a name="digicert-basic-rsa-cn-ca-g2"></a>**DigiCert 基本 RSA CN CA G2**
+
+| **Subject** | CN = DigiCert 基本的 RSA CN CA G2<br>O = DigiCert Inc。<br>C=US |
+| --- | --- |
+| **發行者** | CN = DigiCert Global Root CA，OU = DigiCert，O = DigiCert Inc.，C=US |
+| **序號** | 02： F7： E1： F9：82： BA： D0：09： AF： F4：7D： C9：57：41： B2： F6 |
+| **公開金鑰長度** | RSA 2048 bits |
+| **簽名演算法** | sha256RSA |
+| **不早的合法性** | 星期三，2020月4日，4:04 AM |
+| **有效期不到** | 星期一，3月4日，2030 4:04 AM |
+| **主體金鑰識別碼** | 06BDA69B60795031BED5A9024AA0D095538B2F34 |
+| **授權機碼識別碼** | KeyID：03： de：50：35：56： d1：4c： bb：66： f0： a3： e2：1b：1b： c3：97： b2：3d： d1：55 |
+| **指紋 (SHA-1) ** | 4D1FA5D1FB1AC3917C08E43F65015E6AEA571179 |
+| **指紋 (SHA-256) ** | CB57B3FF2040CB269497625BC90FA9D7B4ED4938C6F60F42F69AFDF508AC2993 |
+| **CRL URLs** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.cn |
+
 ### <a name="digicert-cloud-services-ca-1"></a>**DigiCert 雲端服務 CA-1**
 
-| **主旨** | CN = DigiCert 雲端服務 CA-1<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert 雲端服務 CA-1<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 通用根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | **序號** | 01：9E： C1： C6： BD：3F：59：7B： B2：0C：33：38： E5：51： D8：77 |
@@ -306,9 +355,43 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 | **CRL URLs** | http://crl4.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl3.digicert.com/DigiCertGlobalRootCA.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
+### <a name="digicert-cloud-services-ca-1"></a>**DigiCert 雲端服務 CA-1**
+
+| **Subject** | CN = DigiCert 雲端服務 CA-1<br>O = DigiCert Inc。<br>C=US |
+| --- | --- |
+| **發行者** | CN = DigiCert Global Root CA，OU = DigiCert，O = DigiCert Inc.，C=US |
+| **序號** | 0F：17：1A：48： C6： F2：23：80：92：18： CD：2E： D6： DD： C0： E8 |
+| **公開金鑰長度** | RSA 2048 bits |
+| **簽名演算法** | sha256RSA |
+| **不早的合法性** | 星期四，9月24日，2020 5:00 PM |
+| **有效期不到** | 星期二，9月24日，2030 4:59 PM |
+| **主體金鑰識別碼** | DD51D0A23173A973AE8FB4017E5D8C57CB9FF0F7 |
+| **授權機碼識別碼** | KeyID：03： de：50：35：56： d1：4c： bb：66： f0： a3： e2：1b：1b： c3：97： b2：3d： d1：55 |
+| **指紋 (SHA-1) ** | B3F6B64A07BB9611F47174407841F564FB991F29 |
+| **指紋 (SHA-256) ** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
+
+### <a name="digicert-sha2-extended-validation-server-ca"></a>**DigiCert SHA2 擴充驗證服務器 CA**
+
+| **Subject** | CN = DigiCert SHA2 擴充驗證服務器 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
+| --- | --- |
+| **發行者** | CN = DigiCert 高確定性 EV 根 CA，OU = DigiCert，O = DigiCert Inc.，C=US |
+| **序號** | 0C：79： A9：44： B0：8C：11：95：20：92：61：5F： E2：6B：1D：83 |
+| **公開金鑰長度** | RSA 2048 bits |
+| **簽名演算法** | sha256RSA |
+| **不早的合法性** | 星期二，10月22日，2013 5:00 AM |
+| **有效期不到** | 星期天，十月22，2028 5:00 AM |
+| **主體金鑰識別碼** | 3DD350A5D6A0ADEEF34A600A65D321D4F8F8D60F |
+| **授權機碼識別碼** | KeyID： b1：3e： c3：69：03： f8： bf：47：01： d4：02：26：1a：64：2b： c3 |
+| **指紋 (SHA-1) ** | 7E2F3A4F8FE8FA8A5730AECA029696637E986F3F |
+| **指紋 (SHA-256) ** | 403E062A2653059113285BAF80A0D4AE422C848C9F78FAD01FC94BC5B87FEF1A |
+| **CRL URLs** | http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
+
 ### <a name="digicert-sha2-high-assurance-server-ca"></a>**DigiCert SHA2 高確定性伺服器 CA**
 
-| **主旨** | CN = DigiCert SHA2 高確定性伺服器 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert SHA2 高確定性伺服器 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 高確定性 EV 根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | **序號** | 04： E1： E7： A4： DC：5C： F2： F3：6D： C0：2B：42： B8：5D：15：9F |
@@ -326,7 +409,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 Secure Server CA**
 
-| **主旨** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc。<br>C=US |
+| **Subject** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc。<br>C=US |
 | --- | --- |
 | **發行者** | CN = DigiCert 通用根 CA<br>OU = digicert<br>O = DigiCert Inc。<br>C=US |
 | **序號** | 01： FD： A3：：6E： CA：75： C8：88：43：8B：72：4B： CF： BC：91 |
@@ -342,9 +425,43 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 | **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
+### <a name="digicert-sha2-secure-server-ca"></a>**DigiCert SHA2 Secure Server CA**
+
+| **Subject** | CN = DigiCert SHA2 Secure Server CA<br>O = DigiCert Inc。<br>C=US |
+| --- | --- |
+| **發行者** | CN = DigiCert Global Root CA，OU = DigiCert，O = DigiCert Inc.，C=US |
+| **序號** | 02：74：2E： AA：17： CA：8E：21： C7：17： BB：1F： FC： FD：0C： A0 |
+| **公開金鑰長度** | RSA 2048 bits |
+| **簽名演算法** | sha256RSA |
+| **不早的合法性** | 星期二，9月22日，2020 5:00 PM |
+| **有效期不到** | 星期日，9月22日，2030 4:59 PM |
+| **主體金鑰識別碼** | 0F80611C823161D52F28E78D4638B42CE1C6D9E2 |
+| **授權機碼識別碼** | KeyID：03： de：50：35：56： d1：4c： bb：66： f0： a3： e2：1b：1b： c3：97： b2：3d： d1：55 |
+| **指紋 (SHA-1) ** | 626D44E704D1CEABE3BF0D53397464AC8080142C |
+| **指紋 (SHA-256) ** | C1AD7778796D20BCA65C889A2655021156528BB62FF5FA43E1B8E5A83E3D2EAA |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
+
+### <a name="digicert-tls-rsa-sha256-2020-ca1"></a>**DigiCert TLS RSA SHA256 2020 CA1**
+
+| **Subject** | CN = DigiCert TLS RSA SHA256 2020 CA1<br>O = DigiCert Inc。<br>C=US |
+| --- | --- |
+| **發行者** | CN = DigiCert Global Root CA，OU = DigiCert，O = DigiCert Inc.，C=US |
+| **序號** | 0A：35：08： D5：5C：29：2B：01：7D： F8： AD：65： C0：0F： F7： E4 |
+| **公開金鑰長度** | RSA 2048 bits |
+| **簽名演算法** | sha256RSA |
+| **不早的合法性** | 星期三，9月23日，2020 5:00 PM |
+| **有效期不到** | 星期一，9月23日，2030 4:59 PM |
+| **主體金鑰識別碼** | B76BA2EAA8AA848C79EAB4DA0F98B2C59576B9F4 |
+| **授權機碼識別碼** | KeyID：03： de：50：35：56： d1：4c： bb：66： f0： a3： e2：1b：1b： c3：97： b2：3d： d1：55 |
+| **指紋 (SHA-1) ** | 6938FD4D98BAB03FAADB97B34396831E3780AEA1 |
+| **指紋 (SHA-256) ** | 25768713D3B459F9382D2A594F85F34709FD2A8930731542A4146FFB246BEC69 |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
+
 ### <a name="entrust-certification-authority---l1c"></a>**Entrust 憑證授權單位單位-L1C**
 
-| **主旨** | CN = Entrust 憑證授權單位單位-L1C<br>OU = &quot; (c) 2009 Entrust，inc.。&quot;<br>OU = entrust/rpa 是以參考合併<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
+| **Subject** | CN = Entrust 憑證授權單位單位-L1C<br>OU = &quot; (c) 2009 Entrust，inc.。&quot;<br>OU = entrust/rpa 是以參考合併<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
 | --- | --- |
 | **發行者** | CN = Entrust) 網路憑證授權單位 (2048<br>OU = (c) 1999 Entrust.net 限制<br>OU = entrust net/CPS \_ 2048 包含。  (限制 liab。 ) <br>O = Entrust |
 | **序號** | 4C：0E：8C：39 |
@@ -362,7 +479,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="entrust-certification-authority---l1k"></a>**Entrust 憑證授權單位單位-L1K**
 
-| **主旨** | CN = Entrust 憑證授權單位單位-L1K<br>OU = &quot; (c) 2012 Entrust，inc. 供授權使用&quot;<br>OU = 請參閱 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
+| **Subject** | CN = Entrust 憑證授權單位單位-L1K<br>OU = &quot; (c) 2012 Entrust，inc. 供授權使用&quot;<br>OU = 請參閱 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
 | --- | --- |
 | **發行者** | CN = Entrust 根憑證授權單位單位-G2<br>OU = &quot; (c) 2009 Entrust，inc. 供授權使用&quot;<br>OU = 請參閱 www.entrust.net/legal-terms<br>O = &quot; Entrust，inc.。&quot;<br>C=US |
 | **序號** | 0E： E9：4C： C3：00：00：00：00：51： D3：77：85 |
@@ -378,27 +495,9 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 | **CRL URLs** | http://crl.entrust.net/g2ca.crl |
 | **OCSP URLs** | http://ocsp.entrust.net |
 
-### <a name="globalsign"></a>**GlobalSign**
-
-| **主旨** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R3 |
-| --- | --- |
-| **發行者** | CN = GlobalSign 根 CA<br>OU = Root CAO = GlobalSign nv-sa<br>C = 是 |
-| **序號** | 04：00：00：00：00：01：25：07：1D： F9： AF |
-| **公開金鑰長度** | RSA 2048 bits (e 65537)  |
-| **簽名演算法** | sha256RSA |
-| **不早的合法性** | 18 10:00:00 2009 年11月 |
-| **不晚的合法性** | Mar 18 10:00:00 2019 UTC |
-| **主體金鑰識別碼** | 8f： f0：4b：7f： a8：2e：45：24： ae：4d：50： fa：63：9a：8b： de： e2： dd：1b： bc |
-| **授權機碼識別碼** | keyid：60：7b：66：1a：45：0d：97： ca：89：50：2f：7d：04： cd：34： a8： ff： fc： fd：4b |
-| **指紋 (SHA-1) ** | 4765557AF418C68A641199146A7E556AA8242996 |
-| **指紋 (SHA-256) ** | FDFC6560B09C237F468B8130EB90996FF85FA13FA266239B8D5863798D6AB898 |
-| **Pin (SHA-256) ** | cGuxAXyFXFkWm61cF4HPWX8S0srS9j0aSqN0k4AP + 4A = |
-| **CRL URLs** | http://crl.globalsign.net/root.crl |
-| **OCSP URLs** | http://ocsp.globalsign.com/ExtendedSSLSHA256CACross |
-
 ### <a name="globalsign-extended-validation-ca---sha256---g2"></a>**GlobalSign 擴充驗證 CA-SHA256-G2**
 
-| **主旨** | CN = GlobalSign 擴充驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 擴充驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **發行者** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R2 |
 | **序號** | 04：00：00：00：00：01：44：4E： F0：4A：55 |
@@ -416,7 +515,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="globalsign-extended-validation-ca---sha256---g3"></a>**GlobalSign 擴充驗證 CA-SHA256-G3**
 
-| **主旨** | CN = GlobalSign 擴充驗證 CA-SHA256-G3<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 擴充驗證 CA-SHA256-G3<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **發行者** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R3 |
 | **序號** | 48： A4：02： DD：27：92：0D： A2：08：34：9D： D1：99：7B |
@@ -434,7 +533,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 組織驗證 CA-SHA256-G2**
 
-| **主旨** | CN = GlobalSign 組織驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 組織驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **發行者** | CN = GlobalSign<br>O = GlobalSign<br>OU = GlobalSign 的根 CA-R3 |
 | **序號** | 04：00：00：00：00：01：31：89： C6：44： C9 |
@@ -452,7 +551,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 組織驗證 CA-SHA256-G2**
 
-| **主旨** | CN = GlobalSign 組織驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 組織驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
 | **發行者** | CN = GlobalSign 根 CA<br>OU = 根 CA<br>O = GlobalSign nv-sa<br>C = 是 |
 | **序號** | 04：00：00：00：00：01：44：4E： F0：42：47 |
@@ -468,27 +567,43 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 | **CRL URLs** | http://crl.globalsign.net/root.crl |
 | **OCSP URLs** | http://ocsp.globalsign.com/rootr1 |
 
-### <a name="globalsign-organization-validation-ca---sha256---g2"></a>**GlobalSign 組織驗證 CA-SHA256-G2**
+### <a name="globalsign-organization-validation-ca---sha256---g3"></a>**GlobalSign 組織驗證 CA-SHA256-G3**
 
-| **主旨** | CN = GlobalSign 組織驗證 CA-SHA256-G2<br>O = GlobalSign nv-sa<br>C = 是 |
+| **Subject** | CN = GlobalSign 組織驗證 CA-SHA256-G3<br>O = GlobalSign nv-sa<br>C = 是 |
 | --- | --- |
-| **發行者** | CN = GlobalSign 根 CA<br>OU = 根 CA<br>O = GlobalSign nv-sa<br>C = 是 |
-| **序號** | 04：00：00：00：00：01：44：4E： F0：42：47 |
-| **公開金鑰長度** | RSA 2048 bits (e 65537)  |
+| **發行者** | CN = GlobalSign Root CA，OU = Root CA，O = GlobalSign nv-sa，C = 是 |
+| **序號** | 47：07： B1：01：9A：0C：57： AD：39： B3： E1：7D： A9： F9 |
+| **公開金鑰長度** | RSA 2048 bits |
 | **簽名演算法** | sha256RSA |
-| **不早的合法性** | 2003年2月 20 10:00:00 2014 UTC |
-| **不晚的合法性** | 2003年2月 20 10:00:00 2024 UTC |
-| **主體金鑰識別碼** | 96：取消：61： f1： bd：1c：16：29：53：1c： c0： cc：7d：3b：83：00：40： e6：1a：7c |
-| **授權機碼識別碼** | keyid：60：7b：66：1a：45：0d：97： ca：89：50：2f：7d：04： cd：34： a8： ff： fc： fd：4b |
-| **指紋 (SHA-1) ** | 902EF2DEEB3C5B13EA4C3D5193629309E231AE55 |
-| **指紋 (SHA-256) ** | 74EF335E5E18788307FB9D89CB704BEC112ABD23487DBFF41C4DED5070F241D9 |
-| **Pin (SHA-256) ** | IQBnNBEiFuhj + 8x6X8XLgh01V9Ic5/V3IRQLNFFc7v4 = |
-| **CRL URLs** | http://crl.globalsign.net/root.crl |
+| **不早的合法性** | 2015 5:00 PM，星期四 |
+| **有效期不到** | 星期三、9月3日 2025 5:00 PM |
+| **主體金鑰識別碼** | 6886B87D7AD96D496B872F188B15346CD7B47A0E |
+| **授權機碼識別碼** | KeyID：60：7b：66：1a：45：0d：97： ca：89：50：2f：7d：04： cd：34： a8： ff： fc： fd：4b |
+| **指紋 (SHA-1) ** | 20D1EBAB5A71587B9116E4C74415D1A85B0DDDA5 |
+| **指紋 (SHA-256) ** | 699D54B7482A5D329331EA0415CC2EDCD60FDA01D19E71D054196BCE0677735C |
+| **CRL URLs** | http://crl.globalsign.com/root.crl |
 | **OCSP URLs** | http://ocsp.globalsign.com/rootr1 |
+
+### <a name="globalsign-rsa-ov-ssl-ca-2018"></a>**GlobalSign RSA OV SSL CA 2018**
+
+| **Subject** | CN = GlobalSign RSA OV SSL CA 2018<br>O = GlobalSign nv-sa<br>C = 是 |
+| --- | --- |
+| **發行者** | CN = GlobalSign，O = GlobalSign，OU = GlobalSign 根 CA-R3 |
+| **序號** | 01： EE：5F：22：1D： FC：62：3B： D4：33：3A：85：57 |
+| **公開金鑰長度** | RSA 2048 bits |
+| **簽名演算法** | sha256RSA |
+| **不早的合法性** | 星期二，11月20日 2018 4:00 下午 |
+| **有效期不到** | 星期一，11月20日 2028 4:00 PM |
+| **主體金鑰識別碼** | F8EF7FF2CD7867A8DE6F8F248D88F1870302B3EB |
+| **授權機碼識別碼** | KeyID：8f： f0：4b：7f： a8：2e：45：24： ae：4d：50： fa：63：9a：8b： de： e2： dd：1b： bc |
+| **指紋 (SHA-1) ** | DFE83023062B997682708B4EAB8E819AFF5D9775 |
+| **指紋 (SHA-256) ** | B676FFA3179E8812093A1B5EAFEE876AE7A6AAF231078DAD1BFB21CD2893764A |
+| **CRL URLs** | http://crl.globalsign.com/root-r3.crl |
+| **OCSP URLs** | http://ocsp2.globalsign.com/rootr3 |
 
 ### <a name="lets-encrypt-authority-x3"></a>**讓我們加密授權 X3**
 
-| **主旨** | CN = 讓我們加密授權 X3<br>O = 讓我們加密<br>C=US |
+| **Subject** | CN = 讓我們加密授權 X3<br>O = 讓我們加密<br>C=US |
 | --- | --- |
 | **發行者** | CN = DST 根 CA X3<br>O = 數位簽章信任 Co。 |
 | **序號** | 0A：01：41：42：00：00：01：53：85：73：6A：0B：85： EC：的 A7：08 |
@@ -505,44 +620,77 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 | **CRL URLs** | http://crl.identrust.com/DSTROOTCAX3CRL.crl |
 | **OCSP URLs** | http://isrg.trustid.ocsp.identrust.com |
 
-### <a name="microsoft-it-ssl-sha2"></a>**Microsoft IT SSL SHA2**
+### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft Azure TLS 發證 CA 01**
 
-| **主旨** | CN=Microsoft IT SSL SHA2<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
+| **Subject** | Azure TLS 發證 CA 01 CN=Microsoft<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
-| **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
-| **序號** | 07：27：9A： A9 |
-| **公開金鑰長度** | RSA 4096 bits (e 65537)  |
-| **簽名演算法** | sha256RSA |
-| **不早的合法性** | Dec 19 20:07:32 2013 UTC |
-| **不晚的合法性** | Dec 19 20:06:55 2017 UTC |
-| **主體金鑰識別碼** | 51： af：24：26：9c： f4：68：22：57：80：26：2b：3b：46：以下：15：7b：1e： cc： a5 |
-| **授權機碼識別碼** | keyid： e5：9d：59：30：82：47：58： cc： ac： fa：08：54： b5：04：4d：3a： f0 |
-| **指紋 (SHA-1) ** | 948E1652586240D453287AB69CAEB8F2F4F02117 |
-| **指紋 (SHA-256) ** | 34BD941A06ED10E2FAC8459F79E4748C1EA08F142C6DE5E557884D0D3CE249FA |
-| **Pin (SHA-256) ** | CzdPous1hY3sIkO55pUH7vklXyIHVZAl/UnprSQvpEI = |
-| **CRL URLs** | http://cdp1.public-trust.com/CRL/Omniroot2025.crl |
+| **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
+| **序號** | 0A： AF： A6： C5：下列 CA：63： C4：51：41： EA：3B： E1： F7： C7：53：17 |
+| **公開金鑰長度** | RSA 4096 bits |
+| **簽名演算法** | sha384RSA |
+| **不早的合法性** | 2020年7月29日，星期三，5:30 AM |
+| **有效期不到** | 4:59 2024 年6月27日（星期四）下午 |
+| **主體金鑰識別碼** | 0F205DD7A15795DB92CF2BD0C7C27704CE728076 |
+| **授權機碼識別碼** | KeyID：4e：22：54：20：18：95： e6： e3：6e： e6：0f： fa： fa： b9：12： ed：06：17：8f：39 |
+| **指紋 (SHA-1) ** | 2F2877C5D778C31E0F29C7E371DF5471BD673173 |
+| **指紋 (SHA-256) ** | 24C7299864E0A2A6964F551C0E8DF2461532FA8C48E4DBBB6080716691F190E5 |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
-### <a name="microsoft-it-ssl-sha2"></a>**Microsoft IT SSL SHA2**
+### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft Azure TLS 發證 CA 02**
 
-| **主旨** | CN=Microsoft IT SSL SHA2<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
+| **Subject** | Azure TLS 發證 CA 02 CN=Microsoft<br>O=Microsoft 公司<br>C=US |
 | --- | --- |
-| **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
-| **序號** | 07：27： AA：47 |
-| **公開金鑰長度** | RSA 4096 bits (e 65537)  |
-| **簽名演算法** | sha256RSA |
-| **不早的合法性** | 5月 07 17:04:09 2014 UTC |
-| **不晚的合法性** | 5月 07 17:03:30 2018 UTC |
-| **主體金鑰識別碼** | 51： af：24：26：9c： f4：68：22：57：80：26：2b：3b：46：以下：15：7b：1e： cc： a5 |
-| **授權機碼識別碼** | keyid： e5：9d：59：30：82：47：58： cc： ac： fa：08：54： b5：04：4d：3a： f0 |
-| **指紋 (SHA-1) ** | 97EFF3028677894BDD4F9AC53F789BEE5DF4AD86 |
-| **指紋 (SHA-256) ** | 2399983E99703EBD01CEA466C10799810C4BA62A8D61B88170A334DCD61BB20F |
-| **Pin (SHA-256) ** | CzdPous1hY3sIkO55pUH7vklXyIHVZAl/UnprSQvpEI = |
-| **CRL URLs** | http://cdp1.public-trust.com/CRL/Omniroot2025.crl |
-| **OCSP URLs** | http://ocsp.omniroot.com/baltimoreroot |
+| **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
+| **序號** | 0C：6A： E9：7C： CE： D5：99：83：86：90： A0：0A：9E： A5：32：14 |
+| **公開金鑰長度** | RSA 4096 bits |
+| **簽名演算法** | sha384RSA |
+| **不早的合法性** | 2020年7月29日，星期三，5:30 AM |
+| **有效期不到** | 4:59 2024 年6月27日（星期四）下午 |
+| **主體金鑰識別碼** | 00AB91FC216226979AA8791B61419060A96267FD |
+| **授權機碼識別碼** | KeyID：4e：22：54：20：18：95： e6： e3：6e： e6：0f： fa： fa： b9：12： ed：06：17：8f：39 |
+| **指紋 (SHA-1) ** | E7EEA674CA718E3BEFD90858E09F8372AD0AE2AA |
+| **指紋 (SHA-256) ** | 15A98761EBE011554DA3A46D206B0812CB2EB69AE87AAA11A6DD4CB84ED5142A |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
+
+### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft Azure TLS 發證 CA 05**
+
+| **Subject** | Azure TLS 發證 CA 05 CN=Microsoft<br>O=Microsoft 公司<br>C=US |
+| --- | --- |
+| **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
+| **序號** | 0D：7B： ED： E9：7D：82：09：96：7A：52：63：1B：8B： DD：18： BD |
+| **公開金鑰長度** | RSA 4096 bits |
+| **簽名演算法** | sha384RSA |
+| **不早的合法性** | 2020年7月29日，星期三，5:30 AM |
+| **有效期不到** | 4:59 2024 年6月27日（星期四）下午 |
+| **主體金鑰識別碼** | C7B29C7F1CE3B85AEFE9681AA85D94C126526A68 |
+| **授權機碼識別碼** | KeyID：4e：22：54：20：18：95： e6： e3：6e： e6：0f： fa： fa： b9：12： ed：06：17：8f：39 |
+| **指紋 (SHA-1) ** | 6C3AF02E7F269AA73AFD0EFF2A88A4A1F04ED1E5 |
+| **指紋 (SHA-256) ** | D6831BA43607F5AC19778D627531562AF55145F191CAB5EFAFA0E0005442B302 |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
+
+### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS 發證 CA 06**
+
+| **Subject** | Azure TLS 發證 CA 06 CN=Microsoft<br>O=Microsoft 公司<br>C=US |
+| --- | --- |
+| **發行者** | CN = DigiCert 全域根 G2，OU = DigiCert，O = DigiCert Inc.，C=US |
+| **序號** | 02： E7：91：71： FB：80：21： E9：3F： E2： D9：83：83：4C：50： C0 |
+| **公開金鑰長度** | RSA 4096 bits |
+| **簽名演算法** | sha384RSA |
+| **不早的合法性** | 2020年7月29日，星期三，5:30 AM |
+| **有效期不到** | 4:59 2024 年6月27日（星期四）下午 |
+| **主體金鑰識別碼** | D5C1673AC2A39DF477525B59123829E65568BBA5 |
+| **授權機碼識別碼** | KeyID：4e：22：54：20：18：95： e6： e3：6e： e6：0f： fa： fa： b9：12： ed：06：17：8f：39 |
+| **指紋 (SHA-1) ** | 30E01761AB97E59A06B41EF20AF6F2DE7EF4F7B0 |
+| **指紋 (SHA-256) ** | 48FF8B494668C752304B48BFE818758987DEF6582E5F09B921F4B60BB3D6A8DD |
+| **CRL URLs** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
 
 ### <a name="microsoft-it-tls-ca-1"></a>**Microsoft IT TLS CA 1**
 
-| **主旨** | CN=Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
+| **Subject** | CN=Microsoft IT TLS CA 1<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | **序號** | 08： B8：7A：50：1B：是：9C： DA：2D：16：4D：3E：39：51： BF：55 |
@@ -560,7 +708,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="microsoft-it-tls-ca-2"></a>**Microsoft IT TLS CA 2**
 
-| **主旨** | CN=Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
+| **Subject** | CN=Microsoft IT TLS CA 2<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | **序號** | 0F：2C：10： C9：5B：06： C0：93：7F： B8： D4：49： F8：3E：85：69 |
@@ -578,7 +726,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="microsoft-it-tls-ca-4"></a>**Microsoft IT TLS CA 4**
 
-| **主旨** | CN=Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
+| **Subject** | CN=Microsoft IT TLS CA 4<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | **序號** | 0B：6A： B3： B0：3E： B1： A9： F6： C4：60：92：6A： A8： CD： FE： B3 |
@@ -596,7 +744,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="microsoft-it-tls-ca-5"></a>**Microsoft IT TLS CA 5**
 
-| **主旨** | CN=Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
+| **Subject** | CN=Microsoft IT TLS CA 5<br>OU = Microsoft IT<br>O=Microsoft 公司<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | **序號** | 08：88： CD：52：5F：19：24：44：4D：14： A5：82：91： DE： B9：52 |
@@ -612,9 +760,43 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 | **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
 | **OCSP URLs** | http://ocsp.digicert.com |
 
+### <a name="microsoft-rsa-tls-ca-01"></a>**Microsoft RSA TLS CA 01**
+
+| **Subject** | CN=Microsoft RSA TLS CA 01<br>O=Microsoft 公司<br>C=US |
+| --- | --- |
+| **發行者** | CN = 巴爾的摩 CyberTrust Root，OU = CyberTrust，O = 巴爾的摩，C = IE |
+| **序號** | 0F：14：96：5F：二十：20：69：99：4F： D5： C7： AC：78：89：41： E2 |
+| **公開金鑰長度** | RSA 4096 bits |
+| **簽名演算法** | sha256RSA |
+| **不早的合法性** | 2020年7月21日星期二，4:00 下午 |
+| **有效期不到** | 星期二，10月8日，2024 12:00 AM |
+| **主體金鑰識別碼** | B5760C3011CEC792424D4CC75C2CC8A90CE80B64 |
+| **授權機碼識別碼** | KeyID： e5：9d：59：30：82：47：58： cc： ac： fa：08：54： b5：04：4d：3a： f0 |
+| **指紋 (SHA-1) ** | 703D7A8F0EBF55AAA59F98EAF4A206004EB2516A |
+| **指紋 (SHA-256) ** | 04EEEA8E50B4775B3C24797262917EE50002EC4C75B56CDF3EE1C18CFCA5BA52 |
+| **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
+
+### <a name="microsoft-rsa-tls-ca-02"></a>**Microsoft RSA TLS CA 02**
+
+| **Subject** | CN=Microsoft RSA TLS CA 02<br>O=Microsoft 公司<br>C=US |
+| --- | --- |
+| **發行者** | CN = 巴爾的摩 CyberTrust Root，OU = CyberTrust，O = 巴爾的摩，C = IE |
+| **序號** | 0F： A7：47：22： C5：3D：88： C8：0F：58：9E： FB：1F：9D：4A：3A |
+| **公開金鑰長度** | RSA 4096 bits |
+| **簽名演算法** | sha256RSA |
+| **不早的合法性** | 2020年7月21日星期二，4:00 下午 |
+| **有效期不到** | 星期二，10月8日，2024 12:00 AM |
+| **主體金鑰識別碼** | FF2F7FE106F438F32DED258D98C2FE0EF66CFCFA |
+| **授權機碼識別碼** | KeyID： e5：9d：59：30：82：47：58： cc： ac： fa：08：54： b5：04：4d：3a： f0 |
+| **指紋 (SHA-1) ** | B0C2D2D13CDD56CDAA6AB6E2C04440BE4A429C75 |
+| **指紋 (SHA-256) ** | 05E4005DB0C382F3BD66B47729E9011577601BF6F7B287E9A52CED710D258346 |
+| **CRL URLs** | http://crl3.digicert.com/Omniroot2025.crl |
+| **OCSP URLs** | http://ocsp.digicert.com |
+
 ### <a name="symantec-class-3-ev-ssl-ca---g3"></a>**Symantec 類別 3 EV SSL CA-G3**
 
-| **主旨** | CN = Symantec 類別 3 EV SSL CA-G3<br>OU = Symantec 信任網路<br>O = Symantec 公司<br>C=US |
+| **Subject** | CN = Symantec 類別 3 EV SSL CA-G3<br>OU = Symantec 信任網路<br>O = Symantec 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = VeriSign Class 3 Public Primary Primary 核證機關-G5<br>OU = &quot; (c) 2006 VeriSign，Inc. 供授權使用&quot;<br>OU = VeriSign 信任網路<br>O = &quot; VeriSign，inc.。&quot;<br>C=US |
 | **主體替代名稱** | 目錄位址： CN = SymantecPKI-1-533 |
@@ -633,7 +815,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="symantec-class-3-secure-server-ca---g4"></a>**Symantec 類別 3 Secure Server CA-G4**
 
-| **主旨** | CN = Symantec Class 3 Secure Server CA-G4<br>OU = Symantec 信任網路<br>O = Symantec 公司<br>C=US |
+| **Subject** | CN = Symantec Class 3 Secure Server CA-G4<br>OU = Symantec 信任網路<br>O = Symantec 公司<br>C=US |
 | --- | --- |
 | **發行者** | CN = VeriSign Class 3 Public Primary Primary 核證機關-G5<br>OU = &quot; (c) 2006 VeriSign，Inc. 供授權使用&quot;<br>OU = VeriSign 信任網路<br>O = &quot; VeriSign，inc.。&quot;<br>C=US |
 | **主體替代名稱** | 目錄位址： CN = SymantecPKI-1-534 |
@@ -652,7 +834,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="thawte-sha256-ssl-ca"></a>**thawte SHA256 SSL CA**
 
-| **主旨** | CN = thawte SHA256 SSL CA<br>O = &quot; thawte，inc.。&quot;<br>C=US |
+| **Subject** | CN = thawte SHA256 SSL CA<br>O = &quot; thawte，inc.。&quot;<br>C=US |
 | --- | --- |
 | **發行者** | CN = thawte Primary Root CA-G3<br>OU = &quot; (c) 2008 thawte，Inc. 供授權使用&quot;<br>OU = 認證服務部門<br>O = &quot; thawte，inc.。&quot;<br>C=US |
 | **主體替代名稱** | 目錄位址： CN = VeriSignMPKI-2-415 |
@@ -671,7 +853,7 @@ Office 365 利用許多不同的憑證提供者。 下列說明當存取 Office 
 
 ### <a name="verizon-akamai-sureserver-ca-g14-sha2"></a>**Verizon Akamai SureServer CA G14-SHA2**
 
-| **主旨** | CN = Verizon Akamai SureServer CA G14-SHA2<br>OU = Cybertrust<br>O = Verizon 企業解決方案<br>L = 阿姆斯特丹<br>C = NL-NL |
+| **Subject** | CN = Verizon Akamai SureServer CA G14-SHA2<br>OU = Cybertrust<br>O = Verizon 企業解決方案<br>L = 阿姆斯特丹<br>C = NL-NL |
 | --- | --- |
 | **發行者** | CN = 巴爾的摩 CyberTrust Root<br>OU = CyberTrust<br>O = 巴爾的摩<br>C = IE |
 | **序號** | 07：27： A4：6B |

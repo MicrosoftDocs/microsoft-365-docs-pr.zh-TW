@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 端點管理員來管理受管理的裝置、電腦及其他端點。
-ms.openlocfilehash: 5c6e433918709a55f03d786891ec0fd7ac62a26b
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: b50279166b313742dbfbe8e75dd9788aac6b1daa
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377232"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445958"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步驟 4： 為您的裝置、電腦和其他端點部署端點管理
 
@@ -95,5 +94,7 @@ Windows Autopilot 能讓 IT 部門透過簡單易行的流程，幾乎不需要�
 您正在使用端點管理員功能套件來管理行動裝置、電腦、虛擬機器、嵌入式裝置及伺服器。
 
 ## <a name="next-step"></a>下一步
+
+[![步驟 5：部署遠端工作者生產力應用程式和服務](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
 繼續進行[步驟 5](empower-people-to-work-remotely-teams-productivity-apps.md)，讓您的遠端工作者能使用 Microsoft 365 生產力應用程式，例如 Microsoft Teams。

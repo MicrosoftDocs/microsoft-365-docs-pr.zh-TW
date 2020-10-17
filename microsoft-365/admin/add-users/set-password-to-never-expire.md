@@ -2,8 +2,8 @@
 title: 設定個別使用者的密碼永不過期
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: mnirkhe
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
 description: 瞭解如何使用 Windows PowerShell 將部分個人的使用者密碼設為永不過期。
-ms.openlocfilehash: 01817aba0de1f5ca5f0b9bdf7feb1d03d72f6a24
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: e778ad8a020a6767934d51f8bc227bfc39b13a9b
+ms.sourcegitcommit: 3165329d1fb5a7fd866ff287bea3b6354ea2be18
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47361746"
+ms.lasthandoff: 10/17/2020
+ms.locfileid: "48580913"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>設定個別使用者的密碼永不過期
 
@@ -35,7 +35,7 @@ ms.locfileid: "47361746"
 
 ## <a name="before-you-begin"></a>在您開始之前
 
-本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶？](../admin-overview/admin-overview.md)。 
+本文適用於為公司、學校或非營利組織設定密碼到期原則的人員。 若要完成這些步驟，您必須使用 Microsoft 365 系統管理員帳戶登入。 [何謂系統管理員帳戶?](../admin-overview/admin-overview.md) 
 
 您必須是 [全域系統管理員或密碼系統管理員](about-admin-roles.md) ，才可執行這些步驟。
 
@@ -48,7 +48,7 @@ Microsoft cloud service 的全域系統管理員可以使用 [ [Azure Active Dir
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>如何檢查密碼的到期原則
 
-如需 AzureAD 模組中 AzureADUser 命令的詳細資訊，請參閱參考文章 [AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)。
+如需 AzureAD 模組中 Get-AzureADUser 命令的詳細資訊，請參閱參考文章 [AzureADUser](https://docs.microsoft.com/powershell/module/Azuread/Get-AzureADUser?view=azureadps-2.0)。
 
 執行下列其中一個命令：
 

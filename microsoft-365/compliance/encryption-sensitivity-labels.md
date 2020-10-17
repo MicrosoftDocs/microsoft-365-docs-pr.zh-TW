@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a734d6f71a943964775477199025180d1a41426e
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408623"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48446128"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容
 
@@ -43,34 +43,39 @@ ms.locfileid: "48408623"
 最後，身為系統管理員的您，在設定一個敏感度標籤來套用加密時，可以選擇以下兩者之一：
 
 - **立即指派權限**，這樣您就能確實決定哪個使用者能夠存取該標籤的內容。
-- 當使用者將標籤套用到內容時，**讓使用者指派權限**。 如此一來，您就可以讓組織中的人員靈活地共同作業並完成工作。
+- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
 
 當您在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或是安全性與合規性中心中[建立敏感性標籤](create-sensitivity-labels.md)時，可以使用加密設定。
 
 ## <a name="understand-how-the-encryption-works"></a>了解加密的運作方式
 
-加密使用來自 Azure 資訊保護的 Azure 版權管理服務 (Azure RMS)。 此保護解決方案使用加密、身分識別及授權原則。 若要深入了解，請參閱 Azure 資訊保護文件中的[什麼是 Azure 版權管理？](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)。 
+Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
 
-使用此加密解決方案時，**超級使用者**功能可確保獲授權的人員和服務一律可以讀取和檢查已為組織加密的資料。 如有需要，您可以接著將加密移除或變更。 如需詳細資訊，請參閱[為 Azure 資訊保護和探索服務或資料復原設定超級使用者](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
+When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>如何設定用於加密的標籤
 
-[建立或編輯敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，並在精靈的 [加密]**** 頁面上選取下列其中一個選項：
+1. 遵循一般指示以[建立或編輯敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)標籤，並確認已針對標籤的範圍選取 [檔案和電子郵件 **]**： 
+    
+    ![檔案和電子郵件的敏感度標籤範圍選項](../media/filesandemails-scope-options-sensitivity-label.png)
 
-- **無**：新標籤的預設設定。 不會套用新的加密。
-- **套用**：開啟加密，然後指定加密設定。
-- **移除**：如果文件或電子郵件已加密，則會移除加密。
+2. 然後，在 [選擇檔案和電子郵件的保護設定 **]** 頁面上，確認您已選取 [加密檔案和電子郵件 **]**
+    
+    ![檔案和電子郵件的敏感度標籤保護選項](../media/protection-options-sensitivity-label.png)
 
-> [!NOTE]
-> 只有 Azure 資訊保護整合標籤用戶端才支援 [移除]**** 選項。 當您使用內建標籤時，具有此選項的標籤會在 Office 應用程式和服務中顯示，並且若已選取該選項，則加密行為會與 [無]**** 相同。
-
-設定加密選項：
-
-![用於加密的敏感度標籤選項](../media/encrytion-options-sensitivity-label.png)
+4.  在精靈的 [加密 **]** 頁面上，選取下列其中一個選項：
+    
+    - **如果檔案已加密，則移除加密**：如需有關此案例的詳細資訊，請參閱[套用標籤時，現有的加密會發生什麼情況](#what-happens-to-existing-encryption-when-a-labels-applied)小節。 請注意，此設定可能會導致使用者沒有足夠權限時無法套用的敏感度標籤。
+    
+    - **設定加密設定**：開啟加密功能，並顯示加密設定：
+        
+        ![用於加密的敏感度標籤選項](../media/encrytion-options-sensitivity-label.png)
+        
+        在下列[設定加密設定](#configure-encryption-settings)一節中可以取得這些設定的指示。
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>套用標籤時，現有的加密會發生什麼情況
 
-如果您將敏感度標籤套用到未加密的內容，您可以選取的加密選項結果會一目了然。 例如，如果將加密設定為 [無]****，則內容會保持未加密。
+如果您將敏感度標籤套用到未加密的內容，您可以選取的加密選項結果會一目了然。 例如，如果您未選取 [加密檔案和電子郵件 **]**，則內容會保持未加密。
 
 不過，內容可能已加密。 例如，其他使用者可能已套用：
 
@@ -80,7 +85,7 @@ ms.locfileid: "48408623"
 
 下表說明對該內容套用敏感度標籤時，現有的加密會發生的情況：
 
-| |**加密：無**|**加密：套用**|**加密：移除**|
+| |**加密：未選取**|**加密：已設定**|**加密：移除**|
 |:-----|:-----|:-----|:-----|
 |**使用者指定的權限**|原始加密已保留|新標籤加密已套用|原始加密已移除|
 |**保護範本**|原始加密已保留|新標籤加密已套用|原始加密已移除|
@@ -103,7 +108,7 @@ ms.locfileid: "48408623"
 
 ## <a name="configure-encryption-settings"></a>設定加密設定
 
-當您在精靈的 [加密]**** 頁面上選取 [套用]**** 來建立或編輯敏感度標籤時，請選擇是否要：
+當您在精靈 [加密 **]** 頁面上選取 [設定加密設定 **]**，以建立或編輯敏感度標籤，請選擇下列其中一個選項：
 
 - **立即指派權限**，這樣您就能決定哪些使用者確切能取得已套用標籤內容的權限。 如需詳細資訊，請參閱下一節的[立即指派權限](#assign-permissions-now)。
 - 當使用者將標籤套用到內容時，**讓使用者指派權限**。 利用此選項，您就可以讓組織中的人員靈活地共同作業並完成工作。 如需詳細資訊，請本頁的[讓使用者指派權限](#let-users-assign-permissions)章節。
@@ -275,7 +280,7 @@ ms.locfileid: "48408623"
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>加密設定的範例組態
 
-針對後續的各個範例，當您[建立或編輯敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)時，請從精靈的 **[加密]** 頁面執行組態。 首先，請確認 **[加密]** 設定為 **[套用]**：
+針對後續的各個範例，在選取 [設定加密設定 **]** 時，請從精靈的 [加密 **]** 頁面執行組態：
 
 ![敏感度標籤精靈中的套用加密選項](../media/apply-encryption-option.png)
 
@@ -391,17 +396,18 @@ ms.locfileid: "48408623"
 
 在您可以使用加密之前，您可能需要執行一些組態工作。
 
-### <a name="activate-protection-from-azure-information-protection"></a>啟用來自 Azure 資訊保護的保護
+- 啟用來自 Azure 資訊保護的保護
+    
+    若要讓敏感度標籤套用加密，必須為您的租用戶啟用來自 Azure 資訊保護的保護服務 (Azure 版權管理)。 在較新的租用戶中，這是預設設定，但您可能需要手動啟用該服務。 如需詳細資訊，請參閱[啟用來自 Azure 資訊保護的保護服務](https://docs.microsoft.com/azure/information-protection/activate-service)。
 
-若要讓敏感度標籤套用加密，必須為您的租用戶啟用來自 Azure 資訊保護的保護服務 (Azure 版權管理)。 在較新的租用戶中，這是預設設定，但您可能需要手動啟用該服務。 如需詳細資訊，請參閱[啟用來自 Azure 資訊保護的保護服務](https://docs.microsoft.com/azure/information-protection/activate-service)。
+- 設定 Exchange 進行 Azure 資訊保護
+    
+    不需要先設定 Exchange 來使用 Azure 資訊保護，使用者就能在 Outlook 中套用標籤來加密電子郵件。 不過，在設定 Exchange 使用 Azure 資訊保護之前，您無法獲得使用 Exchange 的 Azure 版權管理保護的完整功能。
+    
+    例如，使用者無法在行動電話或 Outlook 網頁版上檢視加密的電子郵件，無法為加密的電子郵件編製索引供搜尋，而且您無法設定 Exchange Online DLP 使用版權管理保護。 
+    
+    若要確保 Exchange 可以支援這些額外情節，請參閱下列內容：
+    
+    - 針對 Exchange Online，請參閱 [Exchange Online：IRM 設定](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的指示。
+    - 針對 Exchange 內部部署，您必須部署 [RMS 連接器和設定您的 Exchange Server](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。 
 
-### <a name="configure-exchange-for-azure-information-protection"></a>設定 Exchange 進行 Azure 資訊保護
-
-不需要先設定 Exchange 來使用 Azure 資訊保護，使用者就能在 Outlook 中套用標籤來加密電子郵件。 不過，在設定 Exchange 使用 Azure 資訊保護之前，您無法獲得使用 Exchange 的 Azure 版權管理保護的完整功能。
-
-例如，使用者無法在行動電話或 Outlook 網頁版上檢視加密的電子郵件，無法為加密的電子郵件編製索引供搜尋，而且您無法設定 Exchange Online DLP 使用版權管理保護。
-
-若要確保 Exchange 可以支援這些額外情節，請參閱下列內容：
-
-- 針對 Exchange Online，請參閱 [Exchange Online：IRM 設定](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的指示。
-- 針對 Exchange 內部部署，您必須部署 [RMS 連接器和設定您的 Exchange Server](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。

@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 4ec46891248c09f580b19d888573544ad2b4930f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: f49f1afe5461a4f2eff0a3049f1d14d1892f70ce
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446864"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477016"
 ---
 # <a name="run-your-pilot-microsoft-threat-protection-project"></a>執行試驗 Microsoft 威脅防護專案 
 
@@ -41,6 +41,16 @@ ms.locfileid: "48446864"
 ## <a name="how-to-use-this-pilot-playbook"></a>如何使用本次試驗行動手冊
 
 本指南提供 Microsoft 威脅防護的概述，以及如何設定試驗專案的逐步指示。 
+
+Microsoft 威脅防護是一種整合的後續企業防護套件，其可共同協調各端點、身分識別、電子郵件和應用程式的保護、偵測、防護、調查和回應，以提供複雜攻擊的整合式防護。 這樣做的方式是將下列功能結合到單一安全性解決方案中：
+  - Microsoft Defender for Endpoint，Microsoft Defender 高級威脅防護的新名稱 (端點) 
+  - Microsoft Defender for Office 365，新的 Office 365 ATP 名稱 (電子郵件)  
+  - Microsoft Defender 身分識別，Azure ATP (身分識別的新名稱)  
+  - Microsoft Cloud App Security (app) 
+
+![影像 of_Microsoft 威脅防護解決方案，適用于使用者、Azure 高級威脅防護、端點 Microsoft Defender 高級威脅防護、雲端應用程式、Microsoft Cloud App 安全性及資料，Office 365 高級威脅防護  ](../../media/mtp/m365pillars.png)
+
+透過整合的 Microsoft 威脅防護解決方案，安全性專業人員可以結合 Microsoft Defender 高級威脅防護、Office 365 ATP、Azure ATP 和 Microsoft Cloud App 安全性接收，以及決定威脅的完整範圍和影響、它如何進入環境、受影響的內容，以及目前對組織的影響。 Microsoft 威脅防護會自動採取動作，以防止或停止攻擊及自我修復受影響的信箱、端點和使用者身分識別。 如需詳細資訊，請參閱 [Microsoft 威脅防護綜述](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 。
 
 ![執行 Microsoft 威脅防護試驗的階段](../../media/pilotphases.png)
 

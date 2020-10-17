@@ -18,12 +18,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: 摘要：設定適用於 Microsoft 365 測試環境的傳遞驗證。
-ms.openlocfilehash: 1b5540f2e16ac0267bf33faf42defe6bca6d25cd
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d83de4ece4d1eaeddac882cf46a4fe85b8ba7cd4
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695191"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487443"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>適用於 Microsoft 365 測試環境的傳遞驗證
 
@@ -41,7 +41,7 @@ ms.locfileid: "46695191"
 ![Microsoft Cloud 的測試實驗室指南](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> 按一下[這裡](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)，可查看企業用 Microsoft 365 測試實驗室指南堆疊中所有文章的視覺對應。
+> 按一下[這裡](../downloads/Microsoft365EnterpriseTLGStack.pdf)，可查看企業用 Microsoft 365 測試實驗室指南堆疊中所有文章的視覺對應。
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>階段 1：設定適用於 Microsoft 365 測試環境的密碼雜湊同步處理
 

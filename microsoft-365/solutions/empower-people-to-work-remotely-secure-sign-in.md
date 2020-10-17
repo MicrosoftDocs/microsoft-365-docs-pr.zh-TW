@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 您的遠端工作者必須使用多重要素驗證 (MFA) 來登入。
-ms.openlocfilehash: a5977c1f4b5189f39623399f0b45a31e6edd4de7
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7f24402dcedd4b544c5e6d8af2a0e18d3b62da27
+ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399310"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "48445919"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步驟 1： 使用 MFA 提升遠端工作者的登入安全性
 
@@ -87,7 +86,7 @@ Azure AD Identity Protection 需有已附加在 Microsoft 365 E5 中的 Azure AD
 
 下表顯示啟用 MFA 與安全性預設和條件式存取原則的結果。
 
-| 方法 | 啟用 | 停用 | 額外驗證方法 |
+| Method | 啟用 | 停用 | 額外驗證方法 |
 |:-------|:-----|:-------|:-------|
 | **安全性預設**  | 無法使用條件式存取原則 | 可以使用條件式存取原則 | Microsoft Authenticator 應用程式 |
 | **條件式存取原則** | 如果已啟用任何原則，則無法啟用安全性預設 | 如果已停用所有原則，則可啟用安全性預設  | 在 MFA 註冊期間由使用者指定  |
@@ -119,5 +118,7 @@ Azure AD Identity Protection 需有已附加在 Microsoft 365 E5 中的 Azure AD
 - 可使用 SSPR 進行密碼重設。
 
 ## <a name="next-step"></a>下一步
+
+[![步驟 2：可遠端存取內部部署應用程式和服務](../media/empower-people-to-work-remotely/remote-workers-step-grid-2.png)](empower-people-to-work-remotely-remote-access.md)
 
 繼續[步驟 2](empower-people-to-work-remotely-remote-access.md)，以為內部部署應用程式和服務提供遠端存取。
