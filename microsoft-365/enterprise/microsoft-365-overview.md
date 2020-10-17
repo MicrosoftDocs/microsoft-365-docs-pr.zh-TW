@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 10/15/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 企業版的元件、方案和部署路徑的簡介。
-ms.openlocfilehash: 53cc91a2b5e756fcf4ec8fcc5371795bcfb8342c
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
+ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464345"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48487149"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -104,21 +104,21 @@ Microsoft 365 E3 使用者可以使用這些附加元件來利用 Microsoft 365 
 
 ## <a name="plan-for-and-deploy"></a>規劃和部署
 
-規劃 Microsoft 365 企業版產品、功能和元件的部署有三個方式：
+規劃和部署 Microsoft 365 企業版產品、功能和元件有三個方式：
 
-- 與 FastTrack 合作：
+- 與 FastTrack 合作
 
    透過 FastTrack，Microsoft 工程師可協助您以您自己的步調移至雲端。 請參閱[適用於 Microsoft 365 的 FastTrack](https://fasttrack.microsoft.com/microsoft365)。
 
-- 利用 Microsoft 諮詢服務或 [Microsoft 合作夥伴](https://partner.microsoft.com/)的協助：
+- 利用 Microsoft 諮詢服務或 [Microsoft 合作夥伴](https://partner.microsoft.com/)的協助
 
    顧問可以分析您目前的基礎架構，並協助您開發方案來納入 Microsoft 365 企業版的所有軟體和服務。
 
-- 自行完成：
+- 自行完成
 
    從[網路藍圖](networking-roadmap-microsoft-365.md)開始建置或驗證您現有的基礎結構和生產力工作負載。
 
-關於虛構但有代表性的跨國組織如何部署 Microsoft 365 企業版之案例，請參閱 [Contoso Corporation](contoso-overview.md)。
+關於虛構但有代表性的跨國組織如何部署 Microsoft 365 企業版之案例，請參閱 [Contoso Corporation 案例研究](contoso-overview.md)。
 
 ## <a name="additional-microsoft-365-products"></a>其他 Microsoft 365 產品
 

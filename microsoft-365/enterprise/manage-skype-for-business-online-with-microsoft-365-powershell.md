@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: 使用適用於 Microsoft 365 的 PowerShell 來管理商務用 Skype Online 原則、每一個使用者原則和會議的設定。
-ms.openlocfilehash: d50f35d7d5e81622eb8dfc3bbf8328a8c43e9676
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: ff35463dc0c2e16106432c393b10e31e6bf0a5d2
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430031"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48477098"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>使用 PowerShell 管理商務用 Skype Online
 
@@ -29,21 +29,24 @@ ms.locfileid: "47430031"
 
 ## <a name="before-you-start"></a>開始之前
 
-下載並安裝[商務用 Skype Online Windows PowerShell 模組](https://www.microsoft.com/download/details.aspx?id=39366)，然後重新啟動電腦。
+  > [!Note]
+   > 商務用 Skype Online 連接器目前是最新 Teams PowerShell 模組的一部分。 如果您使用的是最新的 Teams PowerShell 公開發行版本，則不需要安裝商務用 Skype Online 連接器。
+   
+安裝[Teams PowerShell 模組安裝](https://docs.microsoft.com/microsoftteams/teams-powershell-install)。
 
 
-## <a name="connect-using-skype-for-business-online-admin-credentials"></a>使用商務用 Skype Online 的系統管理員認證連線
+## <a name="connect-using-admin-credentials"></a>使用系統管理員認證連線
 
 1. 開啟 Windows PowerShell 命令提示視窗，然後執行下列命令：
     
    ```powershell
-   Import-Module SkypeOnlineConnector
+   Import-Module MicrosoftTeams
    $userCredential = Get-Credential
    $sfbSession = New-CsOnlineSession -Credential $userCredential
    Import-PSSession $sfbSession
    ```
 
-2. 在 **[Windows PowerShell 認證要求]** 對話方塊中，輸入您的商務用 Skype Online 系統管理員帳戶名稱和密碼，然後選取 **[確定]**。
+2. 在 **[Windows PowerShell 認證要求]** 對話方塊中，輸入您的系統管理員帳戶名稱和密碼，然後選取 **[確定]**。
 
 
 ## <a name="connect-using-an-admin-account-with-multi-factor-authentication"></a>使用具有多重要素驗證的系統管理員帳戶進行連線
@@ -51,7 +54,7 @@ ms.locfileid: "47430031"
 1. 開啟 Windows PowerShell 命令提示視頻，然後執行下列命令：
 
    ```powershell
-   Import-Module SkypeOnlineConnector
+   Import-Module MicrosoftTeams
    $sfbSession = New-CsOnlineSession
    Import-PSSession $sfbSession
    ```
