@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 1001b5b209204785221aef40631e91f904136b0b
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 2cb1c8071e72a8a60a8bac1dd13bb2ce038a8ac0
+ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47417477"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "48476980"
 ---
 # <a name="trusight"></a>TruSight
 
@@ -33,9 +33,9 @@ TruSight 是第三方風險評定公用程式，由美國銀行業龍頭所建�
 
 TruSight 方法的基礎相當穩固，將由 TruSight 創立銀行所建立的最佳做法問卷 (BPQ) 標準化，並且與他們的客戶和產業專家共同更新。 它的 27 個多元化控制領域的設計，旨在符合產業橫跨資訊和網路安全性、隱私權、企業復原及其他營運風險領域類別的評估需求。
 
-針對 Microsoft，TruSight 對 Microsoft Azure、Microsoft Dynamics 365 及 Microsoft Office 365 執行了嚴格且全面性的現場評定，根據 BPQ 需求來驗證控制的設計和實作。 全面性驗證程序包括結構化查詢、原則和程序檢查、支援證據的檢閱，以及現場動態控制觀察。
+針對 Microsoft，TruSight 對 Microsoft Azure、Microsoft Dynamics 365 Microsoft Power Platform 及 Microsoft 365 執行了嚴格且全面性的現場評定，根據 BPQ 需求來驗證控制的設計和實作。 全面性驗證程序包括結構化查詢、原則和程序檢查、支援證據的檢閱，以及現場動態控制觀察。
 
-在 2018 年 9 月，TruSight 發佈了它的第一份 Microsoft 雲端服務風險評定，「Microsoft 雲端全面性評定」**。 Microsoft 現在會進行年度 TruSight 檢閱，以確保評定維持最新狀態，並且反映 Microsoft 服務中的新法規需求和技術更新。 TruSight 預計在 2019 年秋季發行它的第一份報告擴充更新。
+在 2018 年 9 月，TruSight 發佈了它的第一份 Microsoft 雲端服務風險評定，「Microsoft 雲端全面性評定」**。 現在，Microsoft 在進行年度 TruSight 檢閱，以確保評定維持最新狀態，並且反映 Microsoft 服務中的新法規需求和技術更新。 TruSight 已于 2020 年 10月發佈最新的報告。
 
 由於這項嚴格的 TruSight 評估，金融服務客戶現在可根據標準化、業界支援的方法，依需求存取高品質 Microsoft 雲端服務評定，而不需要投入自行執行所需的可觀資源。
 
