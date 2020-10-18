@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 判斷 Microsoft 365 客戶資料的全球儲存位置
-ms.openlocfilehash: da58b5e322190e61d72dc30ac6e1ea075e8f48b4
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: e450468b54bdbce0e6c01dd3b935922836ab9f90
+ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422626"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "48493682"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -474,7 +474,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | Yammer | 美國 |
 | OneNote 服務 | 澳洲 |
 | Stream | 澳洲 |
-| Whiteboard | 美國 |
+| Whiteboard | 澳洲 |
 | Forms | 美國 |
 | 工作場所分析 | 美國 |
 </p></details>
@@ -2282,7 +2282,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 ## <a name="guadeloupe"></a>瓜地洛普
 <details><summary>按一下以展開</summary><p>
 
-| 服務 | 位置 |
+| 服務 | Location |
 | --- | --- |
 | Exchange Online | 美國 |
 | 商務用 OneDrive | 美國 |
