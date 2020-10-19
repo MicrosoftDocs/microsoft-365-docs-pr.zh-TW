@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
 description: 摘要：使用 PowerShell 建立新的 SharePoint Online 網站，然後將使用者和群組新增至這些網站。
-ms.openlocfilehash: 4c4edbd68343f0eaf3a25a8c60a2af1e83b058b6
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 28a51cc39fe838f6c7f9c50e9d750d28e5d830c4
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688409"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594915"
 ---
 # <a name="create-sharepoint-online-sites-and-add-users-with-powershell"></a>使用 PowerShell 建立 SharePoint Online 網站並新增使用者
 
@@ -43,6 +43,9 @@ ms.locfileid: "46688409"
 PowerShell Cmdlet 會匯入 .csv 檔案，並將其管線傳遞到大括弧中的迴圈，將檔案的第一行讀取為欄標頭。 PowerShell 指令程式會逐一查看餘下的記錄，為每個記錄建立新的網站集合，並根據欄標題指派網站集合的屬性。
 
 ### <a name="create-a-csv-file"></a>建立 .csv 檔案
+
+> [!NOTE]
+> 資源配額參數只能在傳統網站上運作。 如果您在新式網站上使用此參數，則可能會收到警告訊息，告知它已被取代。 
 
 1. 開啟 [記事本]，並在其中貼上下列文字區塊：<br/>
 
@@ -155,7 +158,7 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 5. 等待提示傳回後，再繼續進行。 您會先看到群組出現在建立時。 接著，當使用者新增時，您會看到 [群組] 清單重複。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [連線至 SharePoint 線上 PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
@@ -164,4 +167,3 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [開始使用適用於 Microsoft 365 的 PowerShell](getting-started-with-microsoft-365-powershell.md)
-

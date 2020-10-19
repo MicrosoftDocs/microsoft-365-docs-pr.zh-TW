@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7e594f758e0fb08b0b8718248466ecbc46903b82
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327006"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594817"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -276,8 +276,8 @@ ms.locfileid: "48327006"
 
 若要查看報告，請開啟 [安全性 & 合規性中心](https://protection.office.com)，移至 [ **報告**] \> **儀表板** ，然後選取 [ **威脅防護狀態**]。 若要直接前往報告，請開啟下列其中一個 URLs：
 
-- Office 365 ATP： <https://protection.office.com/reportv2?id=ATPV2AggregateReport> 。
-- EOP <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
+- Office 365 ATP： <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- EOP <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![報告儀表板中的威脅防護狀態構件](../../media/threat-protection-status-report-widget.png)
 
@@ -301,6 +301,20 @@ ms.locfileid: "48327006"
   - **檔引爆**
 
   ![威脅防護狀態報表中的內容惡意程式碼視圖](../../media/threat-protection-status-report-content-malware-view.png)
+
+- **查看資料：郵件覆寫**：下列的覆寫原因資訊如下：
+
+  - **內部部署略過**
+  - **IP 允許**
+  - **郵件流程規則**
+  - **寄件者允許**
+  - **網域允許**
+  - **未啟用的 ZAP**
+  - **未啟用垃圾郵件資料夾**
+  - **使用者安全寄件者**
+  - **使用者安全網域**
+
+  ![威脅防護狀態報表中的郵件覆寫視圖](../../media/threat-protection-status-report-message-override-view.png)
 
 - **分解方式：偵測技術** 和 **查看資料：電子郵件網路釣魚：電子郵件 \> 網路釣魚**：下列資訊會顯示：
 
@@ -361,16 +375,24 @@ ms.locfileid: "48327006"
 
 <sup>兩</sup> 個零小時自動清除 (ZAP) 無法在獨立 EOP 中使用 (它只適用于 Exchange Online 信箱) 。
 
-如果您按一下 [ **篩選**]，您可以使用下列篩選器修改報告：
+如果您按一下 [ **篩選**]，可用的篩選取決於您所查看的圖表：
+
+針對 **內容 \> 惡意**代碼，您可以依 **開始日期** 和 **結束日期**以及 **偵測** 值，修改報告。
+
+若為 **郵件覆寫**，您可以使用下列篩選器修改報告：
+
+- **開始日期** 和 **結束日期**
+- **覆寫原因**
+- **Tag**：以標籤篩選，以傳回已套用特定標記的使用者或群組。 如需使用者標記的相關資訊，請參閱 [user tags](user-tags.md)。
+- **網域**
+
+對於所有其他視圖，您可以使用下列篩選器修改報告：
 
 - **開始日期** 和 **結束日期**
 - **偵測**
 - **保護者**： **ATP** 或 **EOP**
 - **Tag**：以標籤篩選，以傳回已套用特定標記的使用者或群組。 如需使用者標記的相關資訊，請參閱 [user tags](user-tags.md)。
 - **網域**
-
-> [!NOTE]
-> **受保護者**、 **標記** 和 **網域** 只是 Office 365 ATP。 在 View 資料中無法使用下列可篩選 **的屬性：內容 \> 惡意程式碼**。
 
 ### <a name="details-table-view-for-the-threat-protection-status-report"></a>威脅防護狀態報表的詳細資料表格視圖
 
@@ -383,10 +405,26 @@ ms.locfileid: "48327006"
   - **導向者**
   - **惡意軟體名稱**
 
+如果您按一下此視圖中的 [ **篩選器** ]，您可以依 **開始日期** 和 **結束日期**以及 **偵測** 值，修改報告。
+
+- **查看資料：郵件覆寫**：
+
+  - **Date**
+  - **Subject**
+  - **Sender**
+  - **收件者**
+  - **偵測到**
+  - **覆寫原因**
+  - **受損來源**
+  - **標記**
+
 如果您按一下此視圖中的 **篩選器** ，您可以使用下列篩選器修改報告：
 
 - **開始日期** 和 **結束日期**
-- **偵測**
+- **覆寫原因**
+- **Tag**：以標籤篩選，以傳回已套用特定標記的使用者或群組。 如需使用者標記的相關資訊，請參閱 [user tags](user-tags.md)。
+- **網域**
+- 收件**者 (請**注意，[詳細資料] 表格視圖中只提供此可篩選的屬性) 
 
 **資料查看方式：一覽**：沒有可用的 **視圖詳細資料表格** 按鈕。
 
@@ -395,7 +433,7 @@ ms.locfileid: "48327006"
   - **Date**
   - **Subject**
   - **Sender**
-  - **Recipients**
+  - **收件者**
   - **偵測到**
   - **傳遞狀態**
   - **受損來源**
@@ -439,7 +477,7 @@ ms.locfileid: "48327006"
 
 詳細資料可用於每封郵件，包括傳遞原因、為您的組織設定的垃圾郵件原則例外狀況或郵件流程規則。 若要查看詳細資料，請選取 [使用者報告] 清單中的專案，然後查看 [ **摘要** ] 和 [ **詳細資料** ] 索引標籤上的資訊。
 
-![使用者報告的郵件報告會顯示使用者標示為垃圾郵件，而非垃圾郵件或網路釣魚企圖。](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
+![User-Reported 郵件報告顯示使用者標示為垃圾郵件，而非垃圾郵件或網路釣魚企圖。](../../media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
 
 若要查看此報告，請在 [ [安全性 & 規範中心](https://protection.office.com)] 中，執行下列其中一項操作：
 
