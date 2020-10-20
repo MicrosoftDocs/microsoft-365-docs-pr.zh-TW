@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用者可以了解如何在 Exchange Online Protection (EOP) 中查看和管理收到的隔離郵件。
-ms.openlocfilehash: 03bcb0518b75d9a35aae1b6664b410b521adf940
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2a8e37dc430af5b3d3c47179c721d83832f01184
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202840"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600342"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 尋找及釋出隔離的郵件
 
@@ -100,6 +100,11 @@ ms.locfileid: "48202840"
      - **垃圾郵件**
 
      - **網路釣魚**
+     
+   - **原則類型**：依原則類型篩選郵件：
+     - **反網路釣魚原則**
+     - **託管的內容篩選原則**
+     
 
    若要清除篩選，按一下 [清除]****。 若要隱藏 [篩選] 飛出視窗，再按一下 [篩選]****。
 
@@ -108,6 +113,8 @@ ms.locfileid: "48202840"
    - **郵件識別碼**：郵件的全域唯一識別碼。 如果您在清單中選取某個郵件，出現的 [詳細資料]**** 飛出窗格中就會出現 [郵件識別碼]**** 值。 系統管理員可以使用 [郵件追蹤][](message-trace-scc.md) 來尋找郵件及其對應的郵件識別碼值。
 
    - **寄件者電子郵件地址**：單一寄件者的電子郵件地址。
+   
+   - **原則名稱**：使用郵件的整個原則名稱。 搜尋時不會區分大小寫。
 
    - **收件者電子郵件地址**：單一收件者的電子郵件地址。
 

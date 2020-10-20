@@ -3,7 +3,7 @@ title: 為小組設定三層保護
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 在 Microsoft Teams 中保護檔案的設定建議。
-ms.openlocfilehash: 2e432c37642db7247f670dfd8d2d72da6df428bb
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ec598bede2419abc19db2dbe3fd3ff63d8f583
+ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377386"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "48594927"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>為小組設定三層保護
 
@@ -61,7 +61,7 @@ ms.locfileid: "48377386"
 
 高敏感度選項的變體[擁有安全性隔離的小組](secure-teams-security-isolation.md)會為一個小組使用唯一的敏感度標籤，以提供額外的安全性。 您可以使用此標籤來加密檔案，而且只有該小組的成員才能讀取這些檔案。
 
-基準保護包含公用和私人小組。 公開小組可供組織中的任何人探索及存取。 私人小組則僅供小組成員探索及存取。 這兩種設定都會將相關聯 SharePoint 網站的共用功能限制為只有小組擁有者能使用，以協助權限的管理。
+基準保護包含公開和私人小組。 公開小組可供組織中的任何人探索及存取。 私人小組則僅供小組成員探索及存取。 這兩種設定都會將相關聯 SharePoint 網站的共用功能限制為只有小組擁有者能使用，以協助權限的管理。
 
 敏感度和高敏感度保護的小組則是私人小組，其共用和要求相關聯網站存取權的功能會受到限制，而且會使用敏感度標籤來設定關於來賓共用、裝置存取和內容加密的原則。
 
