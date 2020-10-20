@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在 Exchange Online Protection (EOP) 中瞭解隔離郵件的使用者垃圾郵件通知。
-ms.openlocfilehash: 9d1da6c4db245ecb065a5a076f2bc6a9c275c494
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0440056e8e31d24e659f9d0ff6662f86f31a6189
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195816"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600294"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>使用使用者垃圾郵件通知來釋放及報告隔離的郵件
 
@@ -58,3 +58,6 @@ ms.locfileid: "48195816"
 - **檢查**：按一下此連結可移至 [安全性 & 規範中心] 中的 [隔離]，您 (可以根據郵件隔離的原因，按一下此連結) view、release、delete 或 report 您的隔離郵件。 如需詳細資訊，請參閱 [在 EOP 中尋找及發行隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。
 
 ![最終使用者垃圾郵件通知範例](../../media/end-user-spam-notification.png)
+
+> [!NOTE]
+> 封鎖的寄件者仍可傳送您的郵件。 此寄件者傳送給您信箱的任何郵件都會立即移至 [垃圾郵件] 資料夾。 來自此寄件者的未來郵件會移至您的 [垃圾郵件] 資料夾或使用者隔離區。 如果您想要在到達時刪除郵件，而不是隔離這些郵件，請使用 [郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也稱為 transport rules) 以在到達時刪除郵件。

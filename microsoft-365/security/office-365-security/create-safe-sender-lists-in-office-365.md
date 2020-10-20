@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解可用及慣用的選項，允許在 Exchange Online Protection (EOP) 中輸入郵件。
-ms.openlocfilehash: b1eda98e081338a981be1d1f5991578b49c574fd
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4009dcd506921b473e938828e5bdc10411c06ce2
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203164"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600318"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中建立安全的寄件者清單
 
@@ -71,7 +71,7 @@ Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來�
 
    > [!IMPORTANT]
    >
-   > - [永不設定郵件流程規則] *只* 會將寄件者網域設定為略過垃圾郵件篩選的條件。 這樣做會 *大幅* 增加攻擊者欺騙傳送網域的可能性 (或模擬完整的電子郵件地址) 、略過所有垃圾郵件篩選，並略過寄件者驗證檢查，使郵件會到達收件者的收件匣。
+   > - 永遠不 *會將發* 件人網域的郵件流程規則設定為略過垃圾郵件篩選的條件。 這樣做會 *大幅* 增加攻擊者欺騙傳送網域的可能性 (或模擬完整的電子郵件地址) 、略過所有垃圾郵件篩選，並略過寄件者驗證檢查，使郵件會到達收件者的收件匣。
    >
    > - 請勿使用您擁有的網域 (又稱為公認的網域) 或流行的網域 (例如，microsoft.com) 為郵件流程規則中的條件。 這樣做會將其視為高風險，因為它會產生機會讓攻擊者傳送本來會進行篩選的電子郵件。
    >
@@ -97,7 +97,7 @@ Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來�
 
 ## <a name="use-outlook-safe-senders"></a>使用 Outlook 安全寄件者
 
-使用者或系統管理員可以將寄件者電子郵件地址新增至信箱中的安全寄件者清單，而不是組織設定。 如需相關指示，請參閱 [在 Office 365 中設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。 在大多數情況下，這不是必要的，因為寄件者會略過部分的篩選堆疊。 雖然您信任寄件者，但是寄件者的罐也會遭到攻破，而且可以傳送惡意的內容。 您最好讓篩選器執行每封郵件檢查所需的動作，然後在篩選器有錯誤時， [向 Microsoft 報告 false 肯定/負數](report-junk-email-messages-to-microsoft.md) 。 略過篩選堆疊也會干擾 [ZAP](zero-hour-auto-purge.md)。
+使用者或系統管理員可以將寄件者電子郵件地址新增至信箱中的安全寄件者清單，而不是組織設定。 如需相關指示，請參閱 [在 Office 365 中設定 Exchange Online 信箱上的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。 在大多數情況下，這不是必要的，因為寄件者會略過部分的篩選堆疊。 雖然您信任寄件者，但仍然可以危及寄件者，並會傳送惡意內容。 您最好讓篩選器執行每封郵件檢查所需的動作，然後在篩選器有錯誤時， [向 Microsoft 報告 false 肯定/負數](report-junk-email-messages-to-microsoft.md) 。 略過篩選堆疊也會干擾 [ZAP](zero-hour-auto-purge.md)。
 
 當郵件因使用者的安全寄件者清單而略過垃圾郵件篩選時， **X-Forefront-Antispam-Report** 標頭欄位將會包含值 `SFV:SFE` ，表示略過垃圾郵件、欺騙和網路釣魚篩選。
 

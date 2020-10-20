@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: 將組織的 SIEM 伺服器與 office 365 的高級威脅防護和相關威脅事件，與 Office 365 活動管理 API 整合。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 544093960570fe0e68ac47dc7bf9965fba2d30a1
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: c4c92fc45546d3d8022a3925baa9c10f9bd0090b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327162"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600550"
 ---
 # <a name="siem-integration-with-advanced-threat-protection"></a>SIEM 與高級威脅防護的整合
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-如果您的組織使用安全性事件和事件管理 (SIEM) server，您可以將 365 Office 365 的「高級威脅防護」與 SIEM server 整合 (Office ATP) 。 您可以使用 [Office 365 活動管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)設定這種整合方式。 
+如果您的組織使用安全性資訊和事件管理 (SIEM) server，您可以將 365 Office 365 的「高級威脅防護」與 SIEM server 整合 (Office ATP) 。 您可以使用 [Office 365 活動管理 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)設定這種整合方式。 
 
 SIEM 整合可讓您在 SIEM 伺服器報告中查看 Office 365 ATP 所偵測到的惡意程式碼或網路釣魚資訊，例如惡意程式碼或網路釣魚。 
 
@@ -63,10 +63,9 @@ SIEM server 或其他類似系統會輪詢此 **審核。一般** 工作負載�
 > [!IMPORTANT]
 > 您必須是全域系統管理員或已指派安全性 & 規範中心的安全性系統管理員角色，才能設定與 Office 365 高級威脅防護的 SIEM 整合。<br/>您的 Microsoft 365 環境必須開啟審核記錄。 若要取得此相關協助，請參閱 [開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Office 365 威脅調查及回應](office-365-ti.md)
 
 [Office 365 中的自動調查和回應 (AIR) ](automated-investigation-response-office.md)
-
 

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: c0a3849d330b508630eb60c7ee24cd8b498a32b8
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417224"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600526"
 ---
 # <a name="configuring-external-email-forwarding-in-office-365"></a>在 Office 365 中設定外部電子郵件轉發功能
 
@@ -28,7 +28,7 @@ ms.locfileid: "48417224"
 
 外部轉送是由 *輸出反垃圾郵件原則* 所控制，並根據設定的設定範圍限定為使用者。 目前支援的設定如下：
 
-- **自動** –這是系統控制的：可讓輸出垃圾郵件篩選控制自動外部電子郵件轉發。 這是預設設定。
+- **自動** -封鎖自動外部轉送。 內部自動轉送郵件功能將繼續運作。 這是預設設定。
 
 - **開啟** -允許和不限制自動外部轉送。
 

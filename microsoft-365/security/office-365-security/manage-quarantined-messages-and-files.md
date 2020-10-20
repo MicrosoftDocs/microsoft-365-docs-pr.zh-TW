@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Office 365 Advanced 威脅防護的組織中的系統管理員 (Office 365 ATP) 也可管理 SharePoint 線上、OneDrive 商務和 Microsoft 小組的隔離檔案。
-ms.openlocfilehash: 7e9b49e7e7a90f5271a65bb26cecdd1a7ce2ab84
-ms.sourcegitcommit: 260c69fa31a898428d51cfdbd762c5f0213c403c
+ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48417218"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600538"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
@@ -95,6 +95,13 @@ ms.locfileid: "48417218"
      - **惡意程式碼**
      - **垃圾郵件**
      - **高信賴網路釣魚**
+     
+   - **原則類型**：依原則類型篩選郵件：
+     - **反惡意程式碼原則**
+     - **安全附件原則**
+     - **反網路釣魚原則**
+     - **主控內容篩選原則**
+     - **傳輸規則**
 
    - **電子郵件收件**者：所有使用者或僅傳送給您的郵件。 使用者只能管理傳送給他們的隔離郵件。
 
@@ -107,6 +114,8 @@ ms.locfileid: "48417218"
      例如，您使用 [郵件追蹤](message-trace-scc.md) 尋找傳送給組織中使用者的郵件，而您判斷郵件已被隔離而非傳遞。 請務必包含完整的郵件識別碼值，其中可能包含角括弧 (\<\>) 。 例如：`<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`。
 
    - **寄件者電子郵件地址**：單一寄件者的電子郵件地址。
+
+   - **原則名稱**：使用郵件的整個原則名稱。 搜尋時不會區分大小寫。
 
    - **收件者電子郵件地址**：單一收件者的電子郵件地址。
 

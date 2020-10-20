@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d83e86c77eb148c4c55be3f363966ac3c756e87
-ms.sourcegitcommit: 24ccb910ffac4d065c512a57c5decd9dd19ef4c1
+ms.openlocfilehash: 58c29d37d4f7deab17b2c24bfd7fb74e5ba9cb45
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "48594817"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600562"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -297,8 +297,8 @@ ms.locfileid: "48594817"
 
 - **資料查看方式：內容 \> 惡意軟體**<sup>1</sup>：針對 Office 365 ATP 組織顯示下列資訊：
 
-  - **反惡意程式碼引擎**
-  - **檔引爆**
+  - **反惡意程式碼引擎**：透過反惡意程式碼，在 Sharepoint Online、OneDrive 及小組中捕捉惡意檔案。
+  - 檔案**引爆**：透過安全附件在 Sharepoint Online、OneDrive 及小組中引爆惡意檔案。
 
   ![威脅防護狀態報表中的內容惡意程式碼視圖](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -318,28 +318,28 @@ ms.locfileid: "48594817"
 
 - **分解方式：偵測技術** 和 **查看資料：電子郵件網路釣魚：電子郵件 \> 網路釣魚**：下列資訊會顯示：
 
-  - **ATP-產生的 URL 信譽**<sup>1</sup>
-  - **高級網路釣魚篩選器**
-  - **反欺騙： DMARC 失敗**
-  - **反欺騙：組織內**
-  - **反欺騙：外部網域**
-  - **品牌模仿**
-  - **網域**模擬<sup>1</sup>
-  - **EOP URL 信譽**
-  - **一般網路釣魚篩選器**
+  - **Atp 產生的 url 信譽**<sup>1</sup>：從其他 ATP 客戶中的 atp DETONATIONS 產生的惡意 URL 信譽。
+  - **高級網路釣魚篩選**：以機器學習為基礎的網路釣魚信號。
+  - **反欺騙-DMARC 失敗**：郵件上的 DMARC 驗證失敗。
+  - **反欺騙-組織內**：寄件者正嘗試哄騙收件者網域。
+  - **反欺騙-外部網域**：寄件者正嘗試哄騙其他一些網域。
+  - **品牌**模擬：模擬以寄件者為基礎的知名品牌。
+  - **網域**模擬<sup>1</sup>：模仿客戶擁有或定義的網域。
+  - **EOP url 信譽**：惡意 url 信譽。
+  - **一般網路釣魚篩選器**：根據分析規則的網路釣魚信號。 
   - **別人**
-  - **網路釣魚 ZAP**<sup>2</sup>
+  - **網路釣魚 ZAP**<sup>2</sup>：零小時自動清除網路釣魚郵件。
   - **URL 引爆**<sup>1</sup>
-  - **使用者**模擬<sup>1</sup>
+  - **使用者**模擬<sup>1</sup>：模擬由系統管理員定義或透過信箱智慧學出的使用者。
 
   ![威脅防護狀態報表中網路釣魚電子郵件的偵測技術視圖](../../media/threat-protection-status-report-phishing-detection-tech-view.png)
 
 - **分解方式：偵測技術** 和 **View Data：電子郵件 \> 惡意**代碼：會顯示下列資訊：
 
-  - **ATP-產生的檔信譽**<sup>1</sup>
-  - **反惡意程式碼引擎**<sup>1</sup>
-  - **反惡意程式碼原則檔案類型區塊**
-  - **File 引爆**<sup>1</sup>
+  - **Atp 產生的檔信譽**<sup>1</sup>： atp detonations 所產生的所有惡意檔信譽。
+  - **反惡意程式碼引擎**<sup>1</sup>：偵測到反惡意程式碼引擎。
+  - **反惡意程式碼原則檔案類型封鎖**：由於郵件中所識別的惡意檔案類型，郵件會篩選掉這些電子郵件。
+  - 檔案**引爆**<sup>1</sup>：檔案引爆是由安全附件所捕獲。  
   - **惡意檔信譽**
   - **惡意程式碼 ZAP**<sup>2</sup>
   - **別人**
