@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 列出支援的檔案類型及可供查看以進行資料調查 (預覽) 的檢視器的表格。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ca4dab40f5c3098d05323edec0ddbab54ac29273
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 826ad69b1fb0074cd0c8bc1b3b0208bb8e77d528
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285269"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600412"
 ---
 # <a name="supported-file-types-in-data-investigations-preview"></a>資料調查 (預覽中支援的檔案類型) 
 
@@ -47,7 +47,7 @@ ms.locfileid: "48285269"
 |openxmlformats-officedocument presentationml。 vnd.ms-excel | 文件 | 是 | 是 | 是 | 否 | 。 potx |
 | apadsheetml | 文件 | 是 | 是 | 是 | 否 | .xlsx |
 |openxmlformats-officedocument spreadsheetml。 vnd.ms-excel | 文件 | 是 | 是 | 是 | 否 | 。 .xltx |
-|application/vnd.openxmlformats-officedocument.wordproessingml.document | 文件 | 是 | 是 | 是 | 否 | .docx |
+|application/vnd.openxmlformats-officedocument.wordprocessingml.document | 文件 | 是 | 是 | 是 | 否 | .docx |
 |openxmlformats-officedocument wordprocessingml。 vnd.ms-excel | 文件 | 是 | 是 | 是 | 否 | 。 dotx |
 |application/vnd.ms-excel。 visio | 文件 | 是 | 是 | 是 | 否 | .vsd |
 |application/x-7z-壓縮 | 封存/容器 | 否 | 否 | 否 | 是 | .7z |

@@ -21,33 +21,32 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: 深入瞭解您可以在 Office 365 安全性 & 規範中心搜尋的電子郵件和檔案屬性。
-ms.openlocfilehash: 5445c9485d7076b3819c796028a311a523a92dde
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: 深入瞭解您可以使用 Microsoft 365 中的搜尋和 eDiscovery 工具進行搜尋的電子郵件和檔案屬性。
+ms.openlocfilehash: 4ca444c7e1d7b90f76e8c3f1b23afc7edad8e44b
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446192"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600446"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search"></a>內容搜尋的關鍵字查詢和搜尋條件
+# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>內容搜尋和 eDiscovery 的關鍵字查詢和搜尋條件
 
-本主題說明電子郵件和檔內容，您可以使用安全性 & 合規性中心的內容搜尋功能，在 Exchange Online 中搜尋電子郵件專案，以及儲存在 SharePoint 和 OneDrive 供商務網站使用的檔。 您也可以在安全性 & 規範中心 PowerShell 中使用** \* -new-compliancesearch** Cmdlet 來搜尋這些屬性。 本主題也會說明下列事項：   
+本主題說明電子郵件和檔案屬性，您可以使用 Microsoft 365 規範中心的內容搜尋功能，在 Exchange Online 中搜尋電子郵件專案，以及儲存在 SharePoint 和 OneDrive 商務網站上的檔。 您也可以在安全性 & 規範中心 PowerShell 中使用** \* -new-compliancesearch** Cmdlet 來搜尋這些屬性。 本主題也會說明下列事項：
   
 - 使用布林值搜尋運算子、搜尋條件及其他搜尋查詢技術來精煉搜尋結果。
-    
-- 在 SharePoint 和商務 OneDrive 中搜尋敏感資料類型和自訂敏感資料類型。
-    
-- 搜尋與組織外部使用者共用的網站內容
-    
-如需如何建立內容搜尋的逐步指示，請參閱 [內容搜尋 In Office 365](content-search.md)。
 
-  
+- 在 SharePoint 和商務 OneDrive 中搜尋敏感資料類型和自訂敏感資料類型。
+
+- 搜尋與組織外部使用者共用的網站內容
+
+如需如何建立內容搜尋的逐步指示，請參閱 [內容搜尋](content-search.md)。
+
 > [!NOTE]
-> 內容搜尋在安全性 & 規範中心及安全性 & 規範中心的對應** \* new-compliancesearch** Cmdlet PowerShell 使用關鍵字查詢語言 (KQL) 。 如需詳細資訊，請參閱 [關鍵字查詢語言語法參考](https://go.microsoft.com/fwlink/?LinkId=269603)。 
+> Microsoft 365 規範中心的內容搜尋，以及安全性 & 合規性中心內的對應** \* new-compliancesearch** Cmdlet PowerShell 使用關鍵字查詢語言 (KQL) 。 如需詳細資訊，請參閱 [關鍵字查詢語言語法參考](https://go.microsoft.com/fwlink/?LinkId=269603)。 
   
 ## <a name="searchable-email-properties"></a>可搜尋的電子郵件屬性
 
-下表列出透過安全性 & 規範中心或使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** 指令程式，可搜尋的電子郵件內容屬性。 此表格包含每個屬性的  _值_ 語法的範例，以及範例所傳回之搜尋結果的描述。 您可以  `property:value` 在 [關鍵字] 方塊中輸入這些配對內容搜尋。 
+下表列出可使用 Microsoft 365 規範中心的內容搜尋功能，或使用 **New-ComplianceSearch** 或 **Set-ComplianceSearch** Cmdlet 來搜尋的電子郵件屬性。 此表格包含每個屬性的  _值_ 語法的範例，以及範例所傳回之搜尋結果的描述。 您可以  `property:value` 在 [關鍵字] 方塊中輸入這些配對內容搜尋。 
 
 > [!NOTE]
 > 在搜尋電子郵件屬性時，不可能搜尋指定屬性為空白或空白的專案。 例如，使用 [ *屬性：值* 一對主旨 **： "]** 搜尋具有空白主旨行的電子郵件會傳回零結果。 這也適用于搜尋網站和連絡人屬性。
@@ -112,13 +111,13 @@ ms.locfileid: "48446192"
 |大小|專案的大小（以位元組為單位）。|`size>=1`  <br/> `size:1..10000`|第一個範例會傳回大於1個位元組的專案。 第二個範例會傳回大小介於1到10000位元組的專案。|
 |職稱|檔的標題。 Title 屬性是 Microsoft Office 檔中所指定的中繼資料。 它與檔的檔案名不同。|`title:"communication plan"`|在 Office 檔的 Title metadata 屬性中包含 "communication plan" 片語的任何檔。|
 |||||
-   
+
 ## <a name="searchable-contact-properties"></a>可搜尋連絡人屬性
 
 下表列出已編制索引的連絡人內容，以及您可以搜尋使用內容搜尋的屬性。 這些是使用者可為連絡人設定的屬性， (也稱為個人連絡人) 位於使用者信箱的個人通訊錄中。 若要搜尋連絡人，您可以選取要搜尋的信箱，然後使用關鍵字查詢中的一或多個連絡人屬性。
   
 > [!TIP]
-> 若要搜尋包含空格或特殊字元的值，請使用雙引號 ( "" ) 以包含片語; 否則請使用雙引號。例如，  `businessaddress:"123 Main Street"` 。 
+> 若要搜尋包含空格或特殊字元的值，請使用雙引號 ( "" ) 以包含片語; 否則請使用雙引號。例如， `businessaddress:"123 Main Street"` 。
   
 |**屬性**|**屬性描述**|
 |:-----|:-----|
@@ -144,18 +143,19 @@ ms.locfileid: "48446192"
 
 ## <a name="searchable-sensitive-data-types"></a>可搜尋的敏感資料類型
 
-您可以使用 [安全性與合規性中心] 中的 [內容搜尋] 功能，搜尋儲存在 SharePoint 的檔或商務網站 OneDrive 的機密資料，例如信用卡號碼或社會保險號碼。 您可以使用  `SensitiveType` 關鍵字查詢中的屬性和機密資訊類型的名稱來執行此動作。 例如，查詢會傳回  `SensitiveType:"Credit Card Number"` 包含信用卡號碼的檔。 查詢  `SensitiveType:"U.S. Social Security Number (SSN)"` 會傳回包含 U.S. 社會保險號碼的檔。 若要查看您可以搜尋的敏感資料類型清單，請移至**Classifications** \> 安全性 & 規範中心的分類**機密資訊類型**。 或者，您可以在安全性 & 規範中心 PowerShell 中使用 **DlpSensitiveInformationType** Cmdlet，以顯示敏感資訊類型的清單。 
-  
-您也可以使用此  `SensitiveType` 屬性來搜尋您 (的自訂機密資訊類型的名稱，或為組織建立的其他系統管理員) 。 您可以使用 [安全性 & 規範中心] 中 [**敏感資訊類型**] 頁面上的 [**發行者]** 欄 (或 PowerShell) 中的**Publisher**屬性，區分內建和自訂的機密資訊類型。 如需詳細資訊，請參閱 [建立自訂機密資訊類型](create-a-custom-sensitive-information-type.md)。
+您可以使用規範中心的內容搜尋功能，搜尋儲存在 SharePoint 的檔或商務網站 OneDrive 的機密資料，例如信用卡號碼或社會保險號碼。 您可以使用 `SensitiveType` 關鍵字查詢中的屬性和機密資訊類型的名稱來執行此動作。 例如，查詢會傳回 `SensitiveType:"Credit Card Number"` 包含信用卡號碼的檔。 查詢  `SensitiveType:"U.S. Social Security Number (SSN)"` 會傳回包含 U.S. 社會保險號碼的檔。 若要查看您可以搜尋的敏感資料類型清單，請移至**Data classifications** \> Microsoft 365 規範中心內的「資料分類」的**敏感資訊類型**。 您也可以在安全性 & 相容性中心 PowerShell 中使用 **DlpSensitiveInformationType** Cmdlet，以顯示敏感資訊類型的清單。
   
 如需使用屬性建立查詢的詳細資訊  `SensitiveType` ，請參閱 [表單 a 查詢以尋找儲存在網站上的敏感性資料](form-a-query-to-find-sensitive-data-stored-on-sites.md)。
 
-> [!NOTE]
-> 您無法使用敏感資料類型和 `SensitiveType` 搜尋屬性來搜尋位於 Exchange Online 信箱中的機密資料。 不過，您可以使用資料遺失防護 (DLP) 原則，以保護傳輸中的機密 emaill 資料。 如需詳細資訊，請參閱 [資料遺失防護原則](data-loss-prevention-policies.md) 及 [搜尋及尋找個人資料](search-for-and-find-personal-data.md)的概述。
+### <a name="limitations-for-searching-sensitive-data-types"></a>搜尋敏感資料類型的限制
+
+- 您只能使用此 `SensitiveType` 屬性來搜尋內建的敏感資訊資料類型。 您無法搜尋您 (或其他系統管理員) 為組織建立的自訂機密資料類型。 使用 [規範中心] 中 [**敏感性資訊類型**] 索引標籤上的 [**發行者**] 欄 (或 PowerShell) 中的**Publisher**屬性，區分內建和自訂的機密資訊類型。 內建的敏感資料類型是由 [**發行者]** 欄中的**Microsoft Corporation**值所識別。
+  
+- 您無法使用敏感資訊資料類型和 `SensitiveType` 搜尋屬性，在 Exchange Online 信箱中搜尋機密資料。 不過，您可以使用資料遺失防護 (DLP) 原則，以保護傳輸中的敏感電子郵件資料。 如需詳細資訊，請參閱 [資料遺失防護原則](data-loss-prevention-policies.md) 及 [搜尋及尋找個人資料](search-for-and-find-personal-data.md)的概述。
   
 ## <a name="search-operators"></a>搜尋運算子
 
-布林值搜尋運算子（例如 **AND**、 **OR**、 **NOT**）可協助您在搜尋查詢中包含或排除特定的字詞，以定義更為精確的搜尋。 其他技術，如使用屬性運算子 (例如 \> = 或 ...。) 、引號、括弧及萬用字元，可協助您精煉搜尋查詢。 下表列出您可以用來縮小或拓寬搜尋結果的運算子。 
+布林值搜尋運算子（例如 **AND**、 **OR**、 **NOT**）可協助您在搜尋查詢中包含或排除特定的字詞，以定義更為精確的搜尋。 其他技術（如使用屬性運算子 (例如 `>=` or `..`) 、引號、括弧及萬用字元）可協助您精煉搜尋查詢。 下表列出您可以用來縮小或拓寬搜尋結果的運算子。 
   
 |**Operator**|**Usage**|**描述**|
 |:-----|:-----|:-----|

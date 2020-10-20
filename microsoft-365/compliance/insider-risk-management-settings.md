@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c98c0081d95da19e79db03dc4b4fdb823a14e42c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
+ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377268"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48600378"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>開始使用「內幕風險管理」設定
 
@@ -59,7 +59,7 @@ ms.locfileid: "48377268"
 原則指標分為下列方面。 您可以選擇在建立「內幕風險原則」時，為每個指示器層級啟動和自訂指示器事件限制的指示器：
 
 - **Office**指標：包括 SharePoint 網站、小組和電子郵件訊息的原則指示器。
-- **裝置**指標：包括透過網路或裝置共用檔案等活動的原則指示器。 標記包含 Microsoft Office 檔案所涉及的活動。CSV 檔案和。PDF 檔案。 如果您選取 [ **裝置**指標]，只會處理 Windows 10 組建1809或更新版本的裝置的活動。 如需設定裝置與內部人員風險整合的詳細資訊，請參閱 [使用端點 DLP 快速入門](endpoint-dlp-getting-started.md)。
+- **裝置**指標：包括透過網路或裝置共用檔案等活動的原則指示器。 標記包含 Microsoft Office 檔案所涉及的活動。CSV 檔案和。PDF 檔案。 如果您選取 [ **裝置**指標]，只會處理 Windows 10 組建1809或更新版本的裝置的活動。 如需設定裝置與內幕風險整合相關的詳細資訊，請參閱下列 [啟用裝置指示器和板載裝置](insider-risk-management-settings.md#OnboardDevices) 一節。
 - **違反安全性原則的指標**：包括來自 MICROSOFT Defender ATP 的標記，與未核准或惡意軟體安裝有關，或略過安全性控制。 若要在「內幕風險管理」中接收提醒，您必須啟用使用中的 Microsoft Defender ATP 授權和內部的「內部使用者風險整合」。 如需設定 Microsoft Defender ATP for 內幕風險管理整合的詳細資訊，請參閱 [在 Microsoft DEFENDER atp 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center)。
 - **風險分數 boosters**：這包括針對非尋常的活動或過去的原則違規，提高風險分數。 啟用風險分數 boosters 會增加風險分數，以及這些類型的活動提醒的可能性。 如果已選取上方的一個或多個指示器，則只能選取 [風險分數 boosters]。
 
@@ -71,6 +71,73 @@ ms.locfileid: "48377268"
 
 >[!NOTE]
 >新增手動新增的使用者可能需要數小時的時間，才能出現在 [ **使用者] 儀表板**中。 這些使用者過去90天的活動可能需要長達24小時才會顯示。 若要查看手動新增使用者的活動，請在 [ **使用者] 儀表板** 上選取使用者，然後在詳細資料窗格中開啟 [ **使用者活動** ] 索引標籤。
+
+### <a name="enable-device-indicators-and-onboard-devices"></a>啟用裝置指示器和板載裝置
+<a name="OnboardDevices"> </a>
+
+若要在裝置上監視風險活動，並包含這些活動的原則指示器，您的裝置必須符合下列需求，而且您必須完成下列上架步驟。
+
+#### <a name="step-1-prepare-your-endpoints"></a>步驟1：準備您的端點
+
+請確認您計畫在「內幕風險管理」中報告的 Windows 10 裝置符合這些需求。
+
+1. 必須執行 Windows 10 x64 組建 1809 或更新版本。
+2. 所有裝置都必須[加入 Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或加入混合式 Azure AD。
+3. 在端點裝置上安裝 Microsoft Chromium Edge browser，以監視雲端上傳活動的動作。 請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
+
+#### <a name="step-2-onboarding-devices"></a>步驟2：上架裝置
+<a name="OnboardStep2"> </a>
+
+您必須先啟用裝置監控並板載您的端點，才可在裝置上監視內部的風險管理活動。 這兩個動作都是在 Microsoft 365 合規性入口網站中完成。
+
+當您想要的板載裝置尚未架時，您可以下載適當的腳本，並依照下列步驟加以部署。
+
+如果您的裝置已上線至 [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)，這些裝置原本就會出現在 [受管理的裝置] 清單中。 遵循 [步驟3：如果您在下一節中有裝置架至 Microsoft Defender For Endpoint](insider-risk-management-settings.md#OnboardStep3) 。
+
+在此部署案例中，您將會有尚未架之裝置的板載裝置，而且您只想要在 Windows 10 裝置上監視「有問必答」風險活動。
+
+1. 開啟 [Microsoft 合規性中心](https://compliance.microsoft.com)。
+2. 開啟 [合規性中心] 設定頁面，然後選擇 **[上線裝置]**。
+
+   > [!NOTE]
+   > 通常啟用裝置上線需要 60 秒的時間，但請等候最多 30 分鐘的時間再與 Microsoft 支援服務聯絡以取得協助。
+
+3. 選擇 **[裝置管理]** 以開啟 **[裝置]** 清單。 在您的裝置上線之前，此清單會是空白。
+4. 選擇 **[上線]** 開始上線程序。
+5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]**。
+6. 按照 [Windows 10 電腦的上線工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會將您帶到一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
+    - 使用群組原則上線 Windows 10 電腦
+    - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
+    - 使用行動裝置管理工具上線 Windows 10 電腦
+    - 使用本機指令碼上線 Windows 10 電腦
+    - 上線非永續性 Virtual Desktop Infrastructure (VDI) 電腦。
+
+完成之後，架端點會顯示在 [裝置] 清單中，而且端點將會開始向「內幕人員風險管理」報告「審核」活動記錄檔。
+
+> [!NOTE]
+> 這項體驗屬於授權強制執行。 若無所需授權，資料將不會顯示或無法存取。
+
+#### <a name="step-3-if-you-have-devices-onboarded-into-microsoft-defender-for-endpoint"></a>步驟3：如果您有裝置架至 Microsoft Defender for Endpoint
+<a name="OnboardStep3"> </a>
+
+如果已部署 Microsoft Defender for Endpoint，且有端點報告，所有這些端點都會出現在受管理的裝置清單中。 您可以使用「 [步驟2：上架裝置](insider-risk-management-settings.md#OnboardStep2) 」區段，繼續將新裝置集成到「內幕風險管理」中，以展開覆蓋範圍。
+
+1. 開啟 [Microsoft 合規性中心](https://compliance.microsoft.com)。
+2. 開啟 [合規性中心] 設定頁面，然後選擇 **[啟用裝置監控]**。
+3. 選擇 **[裝置管理]** 以開啟 **[裝置]** 清單。 您應該會看到已向適用於端點的 Microsoft Defender 回報的裝置清單。
+4. 如果您需要上線其他裝置，請選擇 **[上線]**。
+5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]**。
+6. 按照 [Windows 10 電腦的上線工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會將您帶到一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
+    - 使用群組原則上線 Windows 10 電腦
+    - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
+    - 使用行動裝置管理工具上線 Windows 10 電腦
+    - 使用本機指令碼上線 Windows 10 電腦
+    - 上線非永續性 Virtual Desktop Infrastructure (VDI) 電腦。
+
+完成後，就會架端點，它應會顯示在 [ **裝置** ] 表格底下，端點會開始向「內幕人員風險管理」報告「審核」活動記錄檔。
+
+> [!NOTE]
+>這項體驗屬於授權強制執行。 若無所需授權，資料將不會顯示或無法存取。
 
 ### <a name="indicator-level-settings-preview"></a>標記層級設定 (預覽) 
 
@@ -179,7 +246,7 @@ ms.locfileid: "48377268"
 | 類別 | 警示的類別是 *InsiderRiskManagement*。 此類別可用於辨別來自其他安全性 & 合規性警示的警示。 |
 | 註解 | 警示的預設批註。 值是在建立警示時所記錄的 *新警示* () 並在更新警示) 時， (記錄 *警示更新* 。 使用 AlertID 來關聯警示的更新。 |
 | 資料 | 警示的資料，包含使用者的唯一識別碼、使用者主體名稱，以及在使用者被觸發到原則時 (UTC) 的日期和時間。 |
-| Name | 產生警示之有問必答風險管理原則的原則名稱。 |
+| 姓名 | 產生警示之有問必答風險管理原則的原則名稱。 |
 | PolicyId | 觸發警示的「有問必答風險管理」原則的 GUID。 |
 | 嚴重性 | 警示的嚴重性。 值為 *高*、 *中*或 *低*。 |
 | 來源 | 警示的來源。 其值為 *Office 365 的安全性 & 符合性*。 |
