@@ -1,5 +1,5 @@
 ---
-title: 從特定群組封鎖來賓使用者
+title: 防止來賓使用者新增至特定群組
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,21 +14,23 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 從特定群組封鎖來賓使用者
-ms.openlocfilehash: 17e5f8f9ab4107a12a0607dca3795d54b7be012c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+description: 瞭解如何防止來賓使用者新增至特定群組
+ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377302"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651347"
 ---
-# <a name="block-guest-users-from-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>從特定 Microsoft 365 群組或 Microsoft 團隊小組封鎖來賓使用者
+# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>防止來賓使用者新增至特定的 Microsoft 365 群組或 Microsoft 團隊小組
 
-如果您想要允許來賓存取大多數群組和小組，但要讓某些地方禁止來賓存取，您可以封鎖個別群組和小組的「來賓存取」。  (封鎖來賓存取權，必須封鎖關聯的群組的 guest 存取權。 ) 
+如果您想要允許來賓存取大多數群組和小組，但要讓某些地方禁止來賓存取，您可以封鎖個別群組和小組的「來賓存取」。  (封鎖來賓存取權，可透過封鎖關聯群組的 guest 存取來完成。 ) 這會防止新增來賓，但不會移除群組或小組中已存在的客人。
 
 如果您在組織中使用敏感度標籤，我們建議您在每個群組的基礎上使用敏感度標籤來控制訪客存取。 如需如何執行此動作的詳細資訊，請 [使用敏感度標籤來保護 Microsoft 團隊、microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。 這是建議方式。
 
-您也可以使用 Microsoft PowerShell，封鎖個別群組的 guest 存取權。
+## <a name="change-group-settings-using-microsoft-powershell"></a>使用 Microsoft PowerShell 變更群組設定
+
+您也可以使用 PowerShell，避免將新的客人加入個別群組。
 
 您必須使用預覽版本的 [Azure Active Directory PowerShell，以](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (模組名稱 **AzureADPreview**) 才能變更群組層級來賓存取設定：
 
