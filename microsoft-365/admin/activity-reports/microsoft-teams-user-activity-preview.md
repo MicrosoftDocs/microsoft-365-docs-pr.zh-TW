@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何取得 Microsoft 團隊使用者活動報告，並深入瞭解組織中的小組活動。
-ms.openlocfilehash: 32252ed89dd9447b5df59ee733088349c559a320
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 8ce29b43e6238883470d1159ad1d22fefca88792
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104507"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637064"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>系統管理中心的 microsoft 365 報告-Microsoft 團隊使用者活動
 
@@ -37,14 +37,14 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 
 1. 在系統管理中心中，移至 **[報告]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">[使用量]</a> 頁面。
 2. 在 [儀表板] 主頁上，按一下 [Microsoft 小組] 活動卡片上的 [ **View more** ] 按鈕。
-  
+
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>解讀 Microsoft Teams 使用者活動報告
 
 您可以選擇 [ **使用者活動** ] 索引標籤，以查看小組報表中的使用者活動。 <br/>![Microsoft 365 報告-Microsoft 團隊使用者活動。](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
 選取 **[選擇欄位** ]，以新增或移除報告中的欄。  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
 
-您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 **音訊時間**、**影片時間**和**螢幕共用時間**的匯出格式，會依照 ISO8601 日期格式。
+您也可以選取 [ **匯出** ] 連結，將報告資料匯出至 Excel .csv 檔案。 這會匯出所有使用者的資料，並可讓您進行簡單的排序和篩選，以便進一步分析。 如果您的使用者少於 2000 個，您可以直接在報告中的表格內進行排序和篩選。 如果您的使用者多於 2000 個，則需要匯出資料才能進行排序和篩選。 **音訊時間**、**影片時間**和**螢幕共用時間**的匯出格式會遵循 ISO8601 持續時間格式。
 
 |項目|描述|
 |:-----|:-----|

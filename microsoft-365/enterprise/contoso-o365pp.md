@@ -15,73 +15,73 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Microsoft 365 Apps 企業版。
-ms.openlocfilehash: de6a5348a49a490afa3c3ac632e66026966e2ef3
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 63993a27f23843fd2d75ef9bf08ae064ec46dc77
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695155"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637160"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>適用於 Contoso 的 Microsoft 365 Apps 企業版部署
 
-Contoso 將其電腦升級至 Windows 10 企業版和 Microsoft 365 Apps 企業版，讓協同合作更有效率、更佳的安全性，以及更現代化的桌面體驗。Contoso 在評估基礎架構和業務需求後，識別這些部署的關鍵需求：
+Contoso 將其電腦升級至 Windows 10 企業版和 Microsoft 365 應用程式的企業版，以啟用更有效率的共同作業、更好的安全性，以及更新式的桌面體驗。在評估其基礎結構和業務需求之後，Contoso 識別出下列部署的主要需求：
 
-- 所有電腦都應該執行 Microsoft 365 Apps 企業版
-- 部署應盡可能使用現有管理工具和基礎架構
-- 部署必須支援使用者裝置的多種語言及現有基礎架構
-- 電腦應在最低 IT 管理成本與對使用者影響最低的情況下，保持最新狀態及安全性
+- 所有的電腦都應該執行適用于 enterprise 的 Microsoft 365 應用程式。
+- 部署應盡可能使用現有的管理工具和基礎結構。
+- 在使用者的裝置上部署必須支援多種語言和現有的架構。
+- 電腦應該以最少的 IT 管理成本和對使用者的影響降至最低的方式，保持最新狀態及安全性。
 
 ## <a name="deployment-tools"></a>部署工具
 
-Contoso 根據自身需求，選擇以 Configuration Manager (最新分支) 部署 Windows 10 企業版和 Microsoft 365 Apps 企業版。Configuration Manager 可針對大型環境進行調整並提供安裝、更新及設定的全面控制，其內建功能更讓您可輕鬆且有效率地部署及管理 Office，包括：
+根據他們的需求，Contoso 選擇透過 Configuration Manager 來部署 Windows 10 企業版和 Microsoft 365 應用程式 (目前的分支) 。Configuration Manager 針對大型環境進行調整，並提供對安裝、更新及設定的廣泛控制。它也具有內建的功能，可讓您更輕鬆快捷地部署及管理 Office，包括：
 
-- 對等快取，可協助在部署至遠端位置裝置時限制網路流量
-- Office 用戶端管理儀表板，讓您更輕鬆地部署 Office 和監控更新，並可讓系統管理員存取最新的部署和管理功能
-- 智慧型語言套件部署，包括自動部署與作業系統相同的語言
-- 完整支援並有簡單好用的方法，在部署期間從用戶端移除現有的 Office 版本
+- 對等快取，可在部署至遠端位置的裝置時協助有限的網路容量。
+- Office 用戶端管理儀表板，可讓您輕鬆地部署 Office 和監控更新，並可讓系統管理員存取最新的部署和管理功能。
+- 智慧語言套件部署，包括自動部署與作業系統相同的語言。
+- 在部署期間，從用戶端移除 Office 的現有版本的完全支援和便於使用的方法。
 
-除了 Configuration Manager，Contoso 也使用「[整備工具組](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)」，此為 Microsoft 提供的免費工具，可用於評估 Office 巨集和增益集的相容性問題。
+除了 Configuration Manager 之外，Contoso 使用 [office 增益集的準備](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)人工具組和 VBA，也就是 Microsoft 的免費工具，以評估其 Office 宏及增益集的相容性問題。
 
-## <a name="managing-the-deployment-and-updates"></a>管理部署及更新
+## <a name="managing-deployment-and-updates"></a>管理部署和更新
 
-Microsoft 365 Apps 企業版有新的發行模式：Office 即服務。此服務模式能讓您輕鬆掌握最新功能，但通常需要 IT 部門變更新版本的部署和測試方式。為了將相容性問題降至最低並確保電腦為最新狀態，Contoso 以兩個階段部署 Windows 和 Office： 
+Microsoft 365 應用程式 enterprise 具有新的版本模型： Office 即服務。服務模型可讓您輕鬆掌握最新的功能。不過，它通常需要 IT 部門變更其部署與測試新版本的方式。若要將相容性問題降至最低，以確保其電腦維持在最新狀態，Contoso 會分兩個階段部署 Windows 和 Office：
 
-- 第一階段，他們將 Microsoft 365 Apps 企業版部署到組織中具代表性的一小群裝置。此試驗群組用於測試應用程式、增益集和 Microsoft 365 Apps 企業版的硬體
-- Contoso 在四個月後解決應用程式、增益集與硬體試驗群組中的所有重大問題， 並將 Microsoft 365 Apps 企業版部署至整個組織的裝置 (大型群組)。 
+- 首先，他們將 Microsoft 365 應用程式部署到整個組織中的一小小組代表裝置。 此試驗群組是用來測試應用程式、增益集及硬體與 Microsoft 365 應用程式企業版的應用程式。
+- Contoso 在四個月後解決應用程式、增益集與硬體試驗群組中的所有重大問題， 並將 Microsoft 365 Apps 企業版部署至整個組織的裝置 (大型群組)。
 
-Contoso 不使用 Configuration Manager 來管理 Office 的更新，而是啟用雲端自動更新。雲端式更新可在降低管理成本的同時，確保裝置維持最新版本。 
+Contoso 從雲端啟用自動更新，而不是使用 Configuration Manager 管理 Office 更新。 雲端式更新可減少管理負荷，同時確保裝置保持最新狀態。
 
-Contoso 遵循相同的兩階段方式進行功能更新和部署 Office：在試驗群組中的裝置會比其他組織中的裝置 (大型群組) 早四個月收到功能更新。為了在 Office 中啟用此功能，Contoso 使用兩個建議的[更新通道](https://docs.microsoft.com/DeployOffice/overview-update-channels)： 
+Contoso 已遵循用於部署 Office 的功能更新的兩階段方式：在試驗群組中的裝置接收到的功能更新，于組織的其餘部分中的裝置的兩個月之前， (廣泛的群組) 。 若要為 Office 啟用這項功能，Contoso 使用兩個建議的 [更新通道](https://docs.microsoft.com/DeployOffice/overview-update-channels)：
 
-- 對試驗群組更新的半年通道(預覽) 
-- 對大型群組更新的半年企業通道。 
+- 對試驗群組更新的半年通道(預覽)
+- 針對廣泛的群組更新 Semi-Annual Enterprise 通道
 
-由於半年企業通道 (預覽) 比半年企業通道早四個月發行 Microsoft 365 Apps 企業版，因此 Contoso 有時間在無需管理更新下，進型驗證更新。 
+由於半年企業通道 (預覽) 比半年企業通道早四個月發行 Microsoft 365 Apps 企業版，因此 Contoso 有時間在無需管理更新下，進型驗證更新。
 
 ## <a name="deployment-process"></a>部署程序
 
 為了完成 Office 部署，Contoso 實施了以下程序，包含 Microsoft 的最佳實務建議：
 
-1. 在部署之前，他們會使用「整備工具組」測試的應用程式和 Office 增益集，評估其與 Microsoft 365 Apps 企業版的相容性。
-2. Contoso 啟用 Configuration Manager 的用戶端對等快取，協助在部署至遠端位置的用戶端裝置時限制網路流量。 
-3. 他們在 Configuration Manager 中將兩個部署群組定義為裝置集合：試驗群組和大型群組。試驗群組包含整個組織中具代表性的一小群裝置，用來對 Windows 10 企業版和 Microsoft 365 Apps 企業版的應用程式、增益集及硬體執行額外測試。 
-4. 他們使用皆為 Configuration Manager 控制台一部分的 Office 用戶端管理儀表板和 Office 365 安裝精靈建立 Ofiiice 部署套件。建立的 Microsoft 365 Apps 企業版套件有兩個，一個用於試驗群組半年企業通道 (預覽)，另一個用於大型群組的半年企業通道。 
-5. 每個 Office 套件皆包含英文、法文及德文語言套件。如果裝置需要的語言不在 Office 套件中，則會從 Office 內容傳遞網路 (CDN) 自動下載。
-6. 他們先使用 Office 套件中的內建功能自動移除所有現有的 MSI 版本 Office，再安裝 Microsoft 365 Apps 企業版。
-7. 他們在 Configuration Manager 中將 Windows 和 Office 套件部署到內部網路中發佈點，然後執行 Configuration Manager 部署工作順序將試驗 Microsoft 365 Apps 企業版套件部署到試驗群組。
-8. Contoso 在試驗群組解決任何相容性問題後，即會執行工作順序將各種 Microsoft 365 Apps 企業版套件部署到大型群組。
+1. 部署之前，Contoso 使用 Office 增益集和 VBA 的準備工作工具組來測試其應用程式和 Office 增益集，以評估其與 Microsoft 365 應用程式的相容性。
+1. 在 Configuration Manager 中，他們會在其用戶端裝置上啟用對等快取，以在部署至遠端位置的用戶端裝置時，協助有限的網路容量。 
+1. Contoso 在 Configuration Manager 中將兩個部署群組定義為裝置集合：一個試驗群組和一個廣泛的群組。 試驗群組（包含整個組織中一小部分的代表裝置），用來進一步測試應用程式、增益集，以及 Windows 10 企業版和 Microsoft 365 應用程式的硬體。
+1. 他們會使用 Office 用戶端管理儀表板和 Office 365 Installer 嚮導（同時是 Configuration Manager 主控台的一部分）建立 Office 的部署套件。 他們會為企業套件建立兩個 Microsoft 365 應用程式，一個用於 Semi-Annual Enterprise 通道 (Preview) 上的試驗群組，另一個適用于 Semi-Annual Enterprise 通道上的廣泛群組。
+2. 每個 Office 套件都包含英文、法文和德文語言套件。 如果裝置所需的語言並未包含在 Office 套件中，該語言套件會從 Office 內容傳遞網路（ (CDN) 中自動下載）。
+3. 他們先使用 Office 套件中的內建功能自動移除所有現有的 MSI 版本 Office，再安裝 Microsoft 365 Apps 企業版。
+4. 在 Configuration Manager 中，他們會將 Windows 和 Office 套件部署到跨其網路的發佈點。 然後，他們會執行 Configuration Manager 部署工作順序，將 Microsoft 365 應用程式的試用版應用程式部署到試驗群組。
+5. 當使用者解決試驗群組的相容性問題之後，Contoso 執行工作順序，將 Microsoft 365 應用程式套件部署到廣泛的群組。
 
-因為 Contoso 選擇從雲端自動更新裝置，因此不需要管理 Configuration Manager 中的程序。 其裝置會根據初始部署時所定義的更新通道，直接從雲端自動進行更新。 
+因為 Contoso 選擇從雲端自動更新裝置，因此不需要管理 Configuration Manager 中的程序。 其裝置會根據初始部署中所定義的更新通道，直接從雲端自動更新。
 
-這是 Contoso Microsoft 365 Apps 企業版安裝和持續更新部署的基礎架構。
+以下是 Contoso Microsoft 365 Apps for enterprise 安裝和持續更新部署架構。
 
-![Contoso 的 Microsoft 365 Apps 企業版部署基礎結構](../media/contoso-o365pp/contoso-o365pp-fig1.png)
+![適用于企業的 Microsoft 365 應用程式的 Contoso 部署基礎結構](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
-[瞭解](contoso-mdm.md) Contoso 如何在 microsoft 365 for enterprise 中使用 microsoft Intune，以管理其裝置，以及其組織內執行的應用程式。
+[深入瞭解](contoso-mdm.md) Contoso 如何在 microsoft 365 for enterprise 中使用 microsoft Intune 來管理其裝置，以及他們在整個組織中執行的應用程式。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 Apps 企業版](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 

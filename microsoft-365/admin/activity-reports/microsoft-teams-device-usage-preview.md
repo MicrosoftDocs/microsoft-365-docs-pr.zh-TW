@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams 裝置使用量
+title: 系統管理中心的 microsoft 365 報告-Microsoft 團隊裝置使用量
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 從 Microsoft 365 報告取得 Microsoft 團隊應用程式使用方式報告，深入瞭解組織中所使用的 Microsoft 團隊應用程式。
-ms.openlocfilehash: 98b8d6241b94445c9cb47d2c464d47c5609efdfe
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: deda550b3ffc4209f718d36a3010605edbc1102b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47949073"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636970"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>系統管理中心的 microsoft 365 報告-Microsoft 團隊裝置使用量
 
@@ -51,7 +51,7 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |項目|描述|
 |:-----|:-----|
 |**計量**|**定義**|
-|使用者名稱  <br/> |使用者的顯示名稱。 您可以按一下顯示名稱，以移至 Microsoft 小組系統管理中心中的使用者設定頁面。  <br/> |
+|使用者名稱  <br/> |使用者的顯示名稱。  <br/> |
 |Windows  <br/> |如果使用者是在 Windows 電腦上的小組桌面用戶端中使用中，則選取此選項。  <br/> |
 |Mac  <br/> |如果使用者是在 macOS 電腦上的小組桌面用戶端使用中，則選取此選項。  <br/> |
 |iOS  <br/> |如果使用者在 iOS 的團隊行動用戶端使用中，則選取此選項。  <br/> |
@@ -61,4 +61,5 @@ Microsoft 365 **報告** 儀表板會向您顯示組織中各產品的活動概�
 |網址  <br/> |如果使用者是在裝置上的小組網頁用戶端使用中，則選取此選項。|
 |上次活動日期 (UTC)   <br/> |使用者參與小組活動的最後一個日期 (UTC) 。  <br/> |
 |已授權|如果使用者授權使用小組，則選取此選項。|
+|小組活動總數|在選取的時段內，小組的活動總數。 |
 |||

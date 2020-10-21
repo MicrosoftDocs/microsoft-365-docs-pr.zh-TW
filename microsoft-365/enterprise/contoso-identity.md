@@ -15,69 +15,69 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用身分識別即服務 (IDaaS)，為其員工提供雲端式驗證，為其合作夥伴和客戶提供同盟驗證。
-ms.openlocfilehash: 795fb7dcb886c792c80d3bb251c9cb5774f1bf97
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 10db0a35024595c4dba9a33ad83ae75bcad3870c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686031"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637244"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的身分識別
 
-Microsoft 在具有 Azure Active Directory (AD) 的雲端供應項目之間提供身分識別即服務 (IDaaS)。 為了採用 Microsoft 365 for enterprise，Contoso 的 IDaaS 解決方案必須利用其內部部署身分識別提供者，並與其現有的受信任的協力廠商身分識別提供者，仍然包含同盟驗證。
+Microsoft 透過 Azure Active Directory (Azure AD) ，以服務 (IDaaS) 所有雲端產品。 為了採用 Microsoft 365 for enterprise，Contoso IDaaS 解決方案必須使用內部部署身分識別提供者，並包含與其現有信任的協力廠商身分識別提供者的同盟驗證。
 
-## <a name="contosos-active-directory-domain-services-forest"></a>Contoso 的 Active Directory Domain Services 樹系
+## <a name="the-contoso-active-directory-domain-services-forest"></a>Contoso Active Directory 網域服務樹系
 
-Contoso 在 contoso.com 上會使用單一 Active Directory Domain Services (AD DS) 樹系，以及七個分屬全球各地區的子網域。 總部、地區中心辦公室和衛星辦公室包含用於本機驗證與授權的網域控制站。
+Contoso 會使用單一 Active Directory 網域服務，將 contoso com 的單一 Active Directory 網域 (服務) 樹系 \. 與7個子域搭配使用，一個用於世界各地區的一個。 總部、地區中心辦公室和衛星辦公室包含用於本機驗證與授權的網域控制站。
 
-這是 Contoso 樹系，具有包含區域中樞之不同世界各地的區域網域。
+以下是 Contoso 樹系，具有地區性網域，包含區域中樞的不同部分。
 
 ![Contoso 的樹系和世界各地的網域](../media/contoso-identity/contoso-identity-fig1.png)
  
-Contoso 希望在 contoso.com 樹系中使用帳戶和群組，以對其 Microsoft 365 工作負載和服務進行驗證及授權。
+Contoso 決定使用 contoso com 樹系中的帳戶和群組 \. ，以進行 Microsoft 365 工作負載和服務的驗證和授權。
 
-## <a name="contosos-federated-authentication-infrastructure"></a>Contoso 的同盟驗證基礎結構
+## <a name="the-contoso-federated-authentication-infrastructure"></a>Contoso 同盟驗證基礎結構
 
 Contoso 允許︰
 
-- 客戶使用自己的 Microsoft、Facebook 或 Google 郵件帳戶登入其公用網站。
-- 廠商及合作夥伴使用自己的 LinkedIn、Salesforce 或 Google 郵件帳戶登入外部網路。
+- 客戶可以使用其 Microsoft、Facebook 或 Google 郵件帳戶登入公司的公開網站。
+- 廠商和協力廠商使用其 LinkedIn、Salesforce 或 Google 郵件帳戶登入公司的外部網路。
 
-這是 Contoso DMZ，其中包含公用網站、合作夥伴外部網路，和一組 Active Directory 同盟服務 (AD FS) 伺服器。DMZ 會連線到網際網路，其中包含客戶、合作夥伴和網際網路服務。
+以下是 Contoso DMZ 包含的公用網站、協力廠商外部網路，以及一組 AD FS 伺服器。DMZ 會連線到包含客戶、合作夥伴和網際網路服務的網際網路。
 
-![Contoso 對於客戶和合作夥伴同盟驗證的支援](../media/contoso-identity/contoso-identity-fig2.png)
+![Contoso 支援客戶與合作夥伴的同盟驗證](../media/contoso-identity/contoso-identity-fig2.png)
  
-DMZ 中的 AD FS 伺服器可協助依其身分識別提供者來驗證客戶的認證以存取公用網站，以及驗證合作夥伴的認證以存取合作夥伴外部網路。
+在 DMZ 中的 AD FS 伺服器，可協助其身分識別提供者驗證客戶認證，以存取公用網站和夥伴驗證，以存取合作夥伴外部網路。
 
-Contoso 決定要保留此基礎結構，並讓它專屬於客戶和合作夥伴驗證。Contoso 的身分識別架構師會調查此基礎結構到 Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) 與 [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) 解決方案的轉換。
+Contoso 決定保留這種基礎結構，並將其專用於客戶及夥伴驗證。Contoso 身分識別架構師正在調查此基礎結構對 Azure AD [B2B](https://docs.microsoft.com/azure/active-directory/b2b/hybrid-organizations) 和 [B2C](https://docs.microsoft.com/azure/active-directory-b2c/solution-articles) 方案的轉換。
 
 ## <a name="hybrid-identity-with-password-hash-synchronization-for-cloud-based-authentication"></a>用於雲端式驗證的混合式身分識別和密碼雜湊同步
 
-Contoso 公司想要使用其內部部署 AD DS 樹系來對 Microsoft 365 雲端資源進行驗證。 其決定使用密碼雜湊同步 (PHS)。
+Contoso 想要將其內部部署 AD DS 樹系用於 Microsoft 365 雲端資源的驗證。 它決定使用密碼雜湊同步處理 (PHS) 。
 
-PHS 會同步處理內部部署 AD DS 樹系與其 Microsoft 365 for enterprise 訂閱的 Azure AD 租使用者，並複製使用者和群組帳戶，以及散列版本的使用者帳戶密碼。 
+PHS 會同步處理內部部署 AD DS 樹系與其 Microsoft 365 for enterprise 訂閱的 Azure AD 租使用者，並複製使用者和群組帳戶，以及散列版本的使用者帳戶密碼。
 
-為了執行後續的目錄同步處理，Contoso 已在巴黎資料中心的伺服器上部署 Azure AD Connect 工具。 
+為了進行目錄同步處理，Contoso 已在其巴黎 datacenter 中的伺服器上部署 Azure AD Connect 工具。
 
-這是執行 Azure AD Connect 的伺服器正在輪詢 Contoso AD 樹系是否有變更，然後將這些變更與 Azure AD 租用戶進行同步。
+以下是執行 Azure AD Connect 的伺服器輪詢 Contoso AD DS 樹系的變更，然後與 Azure AD 租使用者同步處理這些變更。
 
-![Contoso 的 PHS 目錄同步處理基礎結構](../media/contoso-identity/contoso-identity-fig4.png)
+![Contoso PHS 目錄同步處理基礎結構](../media/contoso-identity/contoso-identity-fig4.png)
  
 ## <a name="conditional-access-policies-for-identity-and-device-access"></a>身分識別和裝置存取的條件式存取原則
 
 Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件式存取原則](identity-access-policies.md)：
 
-- **基本**保護適用於所有使用者帳戶
-- **機密**保護適用於高階領導人和主管人員
-- **高管制**保護適用於財務、法務和研究部門中的特定使用者，他們需存取高管制的資料
+- *基準* 保護適用于所有使用者帳戶。
+- *機密* 保護適用于資深領導人和高層人員。
+- 「*高管制*防護」適用于財務、法律和研究部門中具有高管制資料存取權的特定使用者。
 
-這是 Contoso 身分識別及裝置條件式存取原則的結果集合。
+以下是 Contoso 身分識別和裝置條件式存取原則的結果集合。
 
 ![Contoso 的身分識別及裝置條件式存取原則](../media/contoso-identity/contoso-identity-fig5.png)
  
 ## <a name="next-step"></a>下一步
 
-[了解](contoso-win10.md) Contoso 如何使用 Microsoft Endpoint Configuration Manager 基礎結構，在整個組織部署及保留目前的 Windows 10 企業版。
+[瞭解](contoso-win10.md) Contoso 如何使用其 Microsoft 端點 Configuration Manager 基礎結構，在其整個組織中部署及保留目前的 Windows 10 企業版。
 
 ## <a name="see-also"></a>另請參閱
 

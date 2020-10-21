@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
-ms.openlocfilehash: baf09d87f6229cb530c328d570fa70dc25729a11
-ms.sourcegitcommit: b95e958df130b5fbbe5d8a8882d1bbf20b27a285
+ms.openlocfilehash: 778906219c03e8cc79ccebb368b84642639a8467
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407953"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638432"
 ---
 # <a name="pay-for-your-subscription"></a>支付訂閱費用
 
@@ -48,7 +48,7 @@ ms.locfileid: "44407953"
 
 ## <a name="pay-by-credit-card-or-bank-account"></a>以信用卡或銀行帳戶付款
 
-若以信用卡或銀行帳戶付款，系統將會在發票日期隔天自動向您收取訂閱的款項，直到您的訂閱期結束為止。 您可以隨時[管理支付方式](manage-payment-methods.md)。 您也可以選擇[透過電子郵件接收帳單明細的複本](#receive-a-copy-of-your-billing-statement-in-email)。
+若以信用卡或銀行帳戶付款，系統將會在發票日期隔天自動向您收取訂閱的款項，直到您的訂閱期結束為止。 您可以隨時[管理付款方式](manage-payment-methods.md)。 您也可以選擇[透過電子郵件接收帳單明細的複本](#receive-a-copy-of-your-billing-statement-in-email)。
 
 ### <a name="what-if-my-credit-card-was-declined-and-my-payment-is-past-due"></a>如果我的信用卡被拒絕且款項逾期，該怎麼辦？
 
@@ -108,7 +108,7 @@ ms.locfileid: "44407953"
 抱歉，如果您的訂閱設為以發票支付，就無法直接線上付款。不過，您可以[將您的付款方式改為信用卡或銀行帳戶](change-payment-method.md)，供系統在每次服務期間過後，自動從您的卡片或帳戶扣取應付金額。若您購買的是 Azure，請參閱[如何變更用來支付 Azure 訂閱的信用卡](https://go.microsoft.com/fwlink/p/?LinkId=718057)。
 
 > [!NOTE]
-> 如果您改用信用卡自動扣款來付費，請務必先支付所有未付餘額。 檢查帳單的付款選項和指示。 如需詳細資訊，請參閱[瞭解您的帳單或發票](understand-your-invoice2.md)。
+> 如果您改用信用卡自動扣款來付費，請務必先支付所有未付餘額。 檢查帳單的付款選項和指示。 如需詳細資訊，請參閱 [瞭解您的帳單或發票](understand-your-invoice2.md)。
 
 ### <a name="where-do-i-send-my-check-or-eft-payment"></a>我要在哪裡送出我的支票或是 EFT 付款？
 

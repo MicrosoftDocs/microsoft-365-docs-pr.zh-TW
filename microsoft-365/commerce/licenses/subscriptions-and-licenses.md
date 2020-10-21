@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: 深入瞭解 Microsoft 365 for business 中的訂閱與授權。
 ms.date: 07/01/2020
-ms.openlocfilehash: 9f8576b00b942c4b38d6192770bd2128afb4b104
-ms.sourcegitcommit: 0650da0e54a2b484a3156b3aabe44397fbb38e00
+ms.openlocfilehash: 51d07e777fd5a9e44c864ea11bb00ddc8c1c70d1
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45015956"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638192"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>瞭解 Microsoft 365 for business 中的訂閱與授權
 
-當您為商務用 Microsoft 365 購買訂閱時，您會註冊一組應用程式和服務，以每月或每年的頻率支付。 您在訂閱中所收到的應用程式和服務，取決於您購買的是哪一種產品，例如 Microsoft 365 Apps for business Standard 或 Microsoft 365 Business Standard。 您可以在適用于中小型 [企業的 Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)頁面上，看到每個產品隨附的各項產品。
+當您為商務用 Microsoft 365 購買訂閱時，您會註冊一組應用程式和服務，以每月或每年的頻率支付。 您在訂閱中所收到的應用程式和服務，取決於您購買的是哪一種產品，例如 Microsoft 365 Apps for business Standard 或 Microsoft 365 Business Standard。 您可以在適用于中小型 [企業的 Microsoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) 頁面上，看到每個產品隨附的各項產品。
 
 購買訂閱時，您會依據貴組織中的人數，指定您所需的「授權」數目。 購買訂閱後，您會為組織中的人員建立帳戶，然後將授權指派給每個人。 當您的組織需要變更時，您可以購買更多授權，以容納新人員，或在某人離開您的組織時，將授權重新指派給其他使用者。
 
@@ -55,7 +55,7 @@ ms.locfileid: "45015956"
   
 |**如果訂閱含有此服務**|**會自動發生以下情況**|
 |:-----|:-----|
-|Exchange Online  <br/> |系統會為該人員建立信箱。 <br/> 若要瞭解此工作完成的 SLA，請參閱「[設定 ...」Microsoft 365 系統管理中心中的郵件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
+|Exchange Online  <br/> |系統會為該人員建立信箱。 <br/> 若要瞭解此工作完成的 SLA，請參閱「 [設定 ...」Microsoft 365 系統管理中心中的郵件](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
 |SharePoint Online  <br/> |系統會指派預設 SharePoint Online 小組網站的編輯權限給該人員。  <br/> |
 |商務用 Skype Online  <br/> |人員可以存取與授權相關聯的功能。  <br/> |
 |Microsoft 365 Apps 企業版  <br/> |使用者最多可以將 Office 應用程式下載到五台 Mac 或電腦、五台平板電腦和五部 smartphone。  <br/> |
@@ -66,7 +66,7 @@ ms.locfileid: "45015956"
   
 - [建立共用信箱](../../admin/email/create-a-shared-mailbox.md)
 - [從共用信箱中移除授權](../../admin/email/remove-license-from-shared-mailbox.md)
-- [Exchange Online 中的共用信箱](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes)，適用于所有其他 Microsoft 365 方案。
+- [Exchange Online 中的共用信箱](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes) ，適用于所有其他 Microsoft 365 方案。
 - [建立及管理會議室信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-room-mailboxes)
 - [管理設備信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-equipment-mailboxes) (機器翻譯)
 
@@ -84,7 +84,7 @@ ms.locfileid: "45015956"
 
 ## <a name="related-content"></a>相關內容
 
-[購買或移除商務用訂閱的授權](buy-licenses.md)（文章） \
-[將授權指派給使用者](../../admin/manage/assign-licenses-to-users.md)（文章） \
-[從使用者取消指派授權](../../admin/manage/remove-licenses-from-users.md)（文章） \
-[從共用信箱中移除授權](../../admin/email/remove-license-from-shared-mailbox.md)（文章）
+[購買或移除商務用訂閱的授權](buy-licenses.md) (文章) \
+ (篇文章) \[中指派授權給使用者](../../admin/manage/assign-licenses-to-users.md)
+[取消指派給使用者的授權](../../admin/manage/remove-licenses-from-users.md) (文章)\
+[從共用信箱中移除授權](../../admin/email/remove-license-from-shared-mailbox.md) (文章) 

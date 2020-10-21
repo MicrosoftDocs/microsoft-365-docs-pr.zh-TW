@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -16,18 +16,18 @@ search.appverid:
 - MET150
 description: 從2019年9月14日開始，您必須先確認進行線上購買之人員的身分識別，才能處理付款。
 keywords: 付款服務指令程式2、強客戶驗證、多重要素驗證
-ms.openlocfilehash: 571664736ac4c6e825398a076597bf4b69ec31a8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fc8784949cdacea10957660c99795b4ade0f9f7a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402211"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638420"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>適用于商業客戶的支付服務指令2和強客戶驗證
 
 從2019年9月14日開始，您必須先確認進行線上購買之人員的身分識別，才能處理付款。 這種驗證需要多重要素驗證，以協助確保您的線上購買安全且受到保護。 某些國家/地區的此驗證要求的日期會延遲。 
 
-如需詳細資訊，請參閱[Microsoft 有關付款服務指令程式的常見問題解答2和強客戶驗證](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)。
+如需詳細資訊，請參閱 [Microsoft 有關付款服務指令程式的常見問題解答2和強客戶驗證](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)。
 
 ## <a name="when-is-multi-factor-authentication-required"></a>需要多重要素驗證時？
 

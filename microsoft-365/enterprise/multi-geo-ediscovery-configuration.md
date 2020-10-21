@@ -13,16 +13,18 @@ ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 ms.collection: Strat_SP_gtc
 description: 瞭解如何使用 Region 參數，設定電子檔探索，以用於 Microsoft 365 多地理位置的衛星位置。
-ms.openlocfilehash: 216012791473776395d27821293e8fc565568c2c
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d1d66a9e7953b540e318c8364bdcb8d72654b482
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547947"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48636802"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 多地理位置電子文件探索設定
 
-依預設，電子文件探索管理員或多地理位置租用戶的系統管理員僅能在該租用戶的中央位置中進行電子文件探索。若要支援對衛星位置進行電子文件探索的能力，則可透過 PowerShell 取得名為「地區」的新合規性安全性篩選參數。
+「[高級 ediscovery」功能](https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20)可讓多地理位置 ediscovery 管理員搜尋所有的 geos，而不需要使用「地區」安全性篩選器。 資料會匯出至多地理位置承租人的中央位置 Azure 實例。 
+
+若沒有任何高級電子檔探索能力，多地理位置租使用者的 eDiscovery 管理員或管理員將只能在該租使用者的中央位置執行 eDiscovery。 若要支援進行電子檔探索的功能，請透過 PowerShell 使用名為 "Region" 的新合規性安全性篩選參數。 此參數可供核心位置位於北美、歐洲或亞太地區的承租人使用。 建議使用高級 eDiscovery，以供核心位置不在北美、歐洲或亞太地區的承租人，以及需要跨衛星地理位置執行 eDiscovery 的使用者。 
 
 Microsoft 365 全域系統管理員必須指派電子文件探索管理員權限，以允許其他人執行電子文件探索，並在其適用的合規性安全性篩選中指派「地區」參數，以將進行電子文件探索的區域指定為衛星位置，否則將不會為該衛星位置執行任何電子文件探索。
 

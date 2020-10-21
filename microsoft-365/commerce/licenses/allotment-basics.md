@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 description: 深入瞭解新的服務配額功能。
-ms.openlocfilehash: c8c472fbf30bb898f9a10eca778ee7c668c8c388
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2ab8efd637bb278faf6065559cab26cb7016975b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402411"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48638228"
 ---
 # <a name="allotment-basics"></a>服務配額基礎
 
@@ -31,7 +31,7 @@ ms.locfileid: "44402411"
 
 ## <a name="prerequisites"></a>必要條件
 
-您必須符合以[群組為基礎之授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)的授權需求。
+您必須符合以 [群組為基礎之授權](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements)的授權需求。
 
 您可以搭配任何可供使用者使用的產品配額：
 
