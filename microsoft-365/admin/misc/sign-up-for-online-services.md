@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
 description: '瞭解如何使用工作或學校電子郵件來註冊 Microsoft online 服務，而不需納入其 IT 部門。 '
-ms.openlocfilehash: c602ba52e3cca1b031e2e772355a84c06b779b5d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ad46d698398da32d88d0c1617499b326e8fcb163
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399263"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644864"
 ---
 # <a name="your-domain-may-be-in-use-if-someone-else-signed-up-with-it"></a>您的網域可能正在使用中（如果其他人已簽署）
 

@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a60d588d638d1389366a6883f4b8f3fd20e189e8
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f7708c64c4be2578ef35b85bcbc1cc6ea1bd183b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398051"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48642932"
 ---
 # <a name="contact-support-for-dominican-republic"></a>以多明尼加共和國聯繫支援人員
 
@@ -32,9 +32,9 @@ ms.locfileid: "44398051"
 輸入程式碼7007
 
 ## <a name="hours"></a>小時
-### <a name="billing-support"></a>帳單支援：
+### <a name="billing-support"></a>帳單支援︰
 
-西班牙文：週一至週五上午9點-下午5點
+西班牙文： Mon-Fri 上午9點-下午5點
 
 ### <a name="technical-support"></a>技術支援：
 
@@ -42,4 +42,4 @@ ms.locfileid: "44398051"
 
 替代電話號碼： 1 809 200 8794
 
-（行動電話免費）
+ (蜂窩電話免費) 

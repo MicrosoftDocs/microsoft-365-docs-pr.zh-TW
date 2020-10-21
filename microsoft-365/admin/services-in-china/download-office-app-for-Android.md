@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 深入瞭解 Microsoft Office 應用程式（適用于中國運作的 Office 365），以及如何在中國為客戶下載。
 monikerRange: o365-21vianet
-ms.openlocfilehash: b2c35c2f9b4ea8e10ace3c9426aed7aadefe0b1d
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 6cabe2e9769f7cebf9d128f78773f8014fd004e2
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545793"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644804"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>由世紀運作之 Office 365 的 office 應用程式（適用于 Android）
 

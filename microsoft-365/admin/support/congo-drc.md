@@ -1,10 +1,10 @@
 ---
-title: 剛果（金）的支援資訊
+title: 剛果民主共和國 (金) 的支援資訊
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,14 +13,14 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 448d428089f56bacf366da133c4931caca56b387
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7d68770afcf6eb781fe5a0ab6e09d4893eb3482b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44398195"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48643208"
 ---
-# <a name="contact-support-for-congo-drc"></a>剛果（金）的支援人員
+# <a name="contact-support-for-congo-drc"></a> (金) 聯繫支援
 
 [尋找其他國家或地區](../contact-support-for-business-products.md)。
 
@@ -28,16 +28,16 @@ ms.locfileid: "44398195"
 + 1 312 843 5147
 
 ## <a name="hours"></a>小時
-### <a name="billing-support"></a>帳單支援：
+### <a name="billing-support"></a>帳單支援︰
 
-法文：週一至週五上午9點-下午5點
+法文： Mon-Fri 上午9點-下午5點
 
-英文：週一至週五上午9點-下午5點
+英文： Mon-Fri 上午9點-下午5點
 
 ### <a name="technical-support"></a>技術支援：
 
-法文：週一至週五上午9點-晚上9點
+法文： Mon-Fri 8 AM-9 PM
 
-英文：每週7天、每天24小時
+英文：全年無休
 
 國際通話費用適用
