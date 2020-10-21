@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7845ca966f13c88b9795bd7ff4044ae0db81b8c1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5bfc02d6a004cef192c428d9a62e0992c570a9d5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44392206"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640340"
 ---
 # <a name="contact-support-for-peru"></a>秘魯的技術支援人員
 
@@ -28,9 +28,9 @@ ms.locfileid: "44392206"
 0800 77 464
 
 ## <a name="hours"></a>小時
-### <a name="billing-support"></a>帳單支援：
+### <a name="billing-support"></a>帳單支援︰
 
-西班牙文：週一至週五上午9點-下午5點
+西班牙文： Mon-Fri 上午9點-下午5點
 
 ### <a name="technical-support"></a>技術支援：
 

@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e0c4cebd1119ef9d5389940a6cfbeb49f40bfa32
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d4c24aafe01beb17bc8368453d32b4ec4b8e9611
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44390922"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640148"
 ---
 # <a name="contact-support-for-reunion"></a>對留尼旺島的支援聯繫
 
@@ -28,16 +28,16 @@ ms.locfileid: "44390922"
 + 1 312 843 5147
 
 ## <a name="hours"></a>小時
-### <a name="billing-support"></a>帳單支援：
+### <a name="billing-support"></a>帳單支援︰
 
-法文：週一至週五下午9點
+法文： Mon-Fri noon-8 PM
 
-英文：週一至週五下午9點
+英文： Mon-Fri noon-8 PM
 
 ### <a name="technical-support"></a>技術支援：
 
-法文：週一至週五上午11點-11 PM
+法文： Mon-Fri 11 AM-11 PM
 
-英文：每週7天、每天24小時
+英文：全年無休
 
 適用本機通話費用

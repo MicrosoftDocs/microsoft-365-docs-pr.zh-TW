@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 730c55ce9884054f12271e6ed2d6aa03232375d6
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 40aad7a0b9102662d241914eecac9ad4fd0e5022
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44389778"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640052"
 ---
 # <a name="contact-support-for-saint-martin"></a>聖聖馬丁的連絡人支援
 
@@ -28,16 +28,16 @@ ms.locfileid: "44389778"
 + 1 312 843 5147
 
 ## <a name="hours"></a>小時
-### <a name="billing-support"></a>帳單支援：
+### <a name="billing-support"></a>帳單支援︰
 
-法文：週一至週五上午4點-中午
+法文： Mon-Fri 4 AM-中午
 
-英文：週一至週五上午4點–中午
+英文： Mon-Fri 4 AM-中午
 
 ### <a name="technical-support"></a>技術支援：
 
-法文：週一至週五下午4點-4 點
+法文： Mon-Fri 3 AM-4 PM
 
-英文：每週7天、每天24小時
+英文：全年無休
 
 國際通話費用適用

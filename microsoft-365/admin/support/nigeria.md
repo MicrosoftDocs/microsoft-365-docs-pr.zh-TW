@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: adce3f2525c92b8cee565f759a94081bc2f75231
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c96c46edbd746eb5a4c53cea38fc033c6f2e31ef
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306512"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48640604"
 ---
 # <a name="contact-support-for-nigeria"></a>奈及利亞的連絡人支援
 
@@ -34,7 +34,7 @@ ms.locfileid: "47306512"
 ## <a name="hours"></a>小時
 ### <a name="billing-support"></a>帳單支援︰
 
-英文：週一至週五上午9點-下午5點
+英文： Mon-Fri 上午9點-下午5點
 
 ### <a name="technical-support"></a>技術支援：
 
