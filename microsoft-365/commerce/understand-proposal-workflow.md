@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解方案，以協助您購買 Microsoft 產品和服務。
 ROBOTS: NOINDEX
-ms.openlocfilehash: 6de3f116b9266ad8f2d4d245cc0ac4b7422bbf4d
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: d0e8c6fd9973573d4e49f7512e4394f7534bd97c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419109"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646796"
 ---
 # <a name="understand-the-proposal-workflow"></a>瞭解提案工作流程
 
@@ -43,17 +43,17 @@ Microsoft 代表草稿包含您和您的代表所討論之專案的提案。 代
 計費帳戶的許可權是由計費帳戶擁有者所管理。
 全域管理員可以將自己指派給帳單帳戶擁有者角色，然後將其他人員計費帳戶擁有者。
 
-如需計費帳戶的詳細資訊，請參閱[管理帳單帳戶](manage-billing-accounts.md)。
+如需計費帳戶的詳細資訊，請參閱 [管理帳單帳戶](manage-billing-accounts.md)。
 
 ### <a name="microsoft-customer-agreement"></a>Microsoft 客戶合約
 
-Microsoft 客戶合約（MCA）可讓組織購買 Microsoft 產品和服務。 如需詳細資訊，請參閱[Microsoft 客戶合約](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement)。
+Microsoft 客戶合約 (MCA) 可讓組織購買 Microsoft 產品和服務。 如需詳細資訊，請參閱 [Microsoft 客戶合約](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement)。
 
 ## <a name="permissions-needed-to-sign-an-agreement-or-pay-for-items"></a>簽署合同或支付專案所需的許可權
 
 如果您在帳單帳戶中沒有指派的角色，當您查看提案時，系統會指派基本讀者角色。 此角色可讓您查看，但不能對提案採取任何動作。 在簽署合約或購買產品及服務之前，您必須獲指派計費帳戶擁有者角色或計費帳戶參與者角色。 您的帳單帳戶擁有者可以指派此角色給您。
 
-如需計費帳戶角色的詳細資訊，請參閱[瞭解對計費帳戶的存取](manage-billing-accounts.md#understand-access-to-billing-accounts)。
+如需計費帳戶角色的詳細資訊，請參閱 [瞭解對計費帳戶的存取](manage-billing-accounts.md#understand-access-to-billing-accounts)。
 
 如果這是新的帳單帳戶，但沒有人接受某項合約，您會自動成為帳單帳戶擁有者，前提是您：
 
@@ -87,7 +87,7 @@ Microsoft 客戶合約（MCA）可讓組織購買 Microsoft 產品和服務。 �
 | 計費帳戶 | 用來管理帳戶設定、發票、支付方式及產品的帳戶。 |
 | 計費設定檔 | 您的組織的相關資訊，可讓您自訂發票上包含哪些專案，以及您為發票付款的方式。 計費設定檔包括計費帳戶名稱、用於特定計費設定檔的付款條件、連絡人資訊、發票設定，以及可讓您變更帳單設定檔、支付票據和購買產品及服務的許可權。 |
 | 現有的協定 | 您的組織已與 Microsoft 搭配使用的任何合約。 這可能包括（但不限於）企業合約、Microsoft 產品 & 服務合約或 Microsoft 客戶合約。 |
-| Microsoft 客戶合約（MCA） | 概述您的組織與 Microsoft 所持有之帳戶的條款及條件的合約。 |
+| Microsoft 客戶合約 (MCA)  | 概述您的組織與 Microsoft 所持有之帳戶的條款及條件的合約。 |
 | Microsoft 代表 | 為您和您的組織準備提案的授權 Microsoft 代表。 |
 | 組織 | 使用 Microsoft 產品、技術或服務的法律實體。 |
 | 準備者 | 準備提案之 Microsoft 代表的電子郵件地址。 |
@@ -99,15 +99,15 @@ Microsoft 客戶合約（MCA）可讓組織購買 Microsoft 產品和服務。 �
 
 ### <a name="your-organization"></a>您的組織
 
-**您的組織**區段會顯示與其相關聯的帳單帳戶。 計費帳戶資訊會從現有的帳單帳戶提取，或是由 Microsoft 代表為您建立。 如果您的組織隸屬于另一個組織，您也會看到具有該組織名稱和位址的**潛在客戶組織**區段。
+**您的組織**區段會顯示與其相關聯的帳單帳戶。 計費帳戶資訊會從現有的帳單帳戶提取，或是由 Microsoft 代表為您建立。 如果您的組織隸屬于另一個組織，您也會看到具有該組織名稱和位址的 **潛在客戶組織** 區段。
 
-如果這是您的組織第一次建立與 Microsoft 的商業關係，而且您尚未簽署 MCA，如果**組織**或**潛在客戶組織**底下的資訊不正確，請與代表聯繫以進行變更。 在您接受某項 MCA 後，您可以在 Microsoft 365 系統管理中心的 [[帳單帳戶](https://go.microsoft.com/fwlink/p/?linkid=2084771)] 頁面上複查和變更組織的位址和連絡人資訊。 如果您的組織名稱變更，請開啟服務要求以更新它。 [瞭解如何開啟服務要求](../admin/contact-support-for-business-products.md)
+如果這是您的組織第一次建立與 Microsoft 的商業關係，而且您尚未簽署 MCA，如果 **組織** 或 **潛在客戶組織** 底下的資訊不正確，請與代表聯繫以進行變更。 在您接受某項 MCA 後，您可以在 Microsoft 365 系統管理中心的 [ [帳單帳戶](https://go.microsoft.com/fwlink/p/?linkid=2084771) ] 頁面上複查和變更組織的位址和連絡人資訊。 如果您的組織名稱變更，請開啟服務要求以更新它。 [瞭解如何開啟服務要求](../admin/contact-support-for-business-products.md)
 
 ### <a name="your-information"></a>您的資訊
 
-如果您是新的客戶，請在**您的資訊**底下輸入您的姓名、電子郵件地址和電話號碼，然後選取 [**儲存**]。 如果您是現有的客戶，請確認您的資訊正確無誤。 若要進行更正，請選取 [**編輯**]，進行必要的變更，然後選取 [**儲存**]。
+如果您是新的客戶，請在 **您的資訊**底下輸入您的姓名、電子郵件地址和電話號碼，然後選取 [ **儲存**]。 如果您是現有的客戶，請確認您的資訊正確無誤。 若要進行更正，請選取 [ **編輯**]，進行必要的變更，然後選取 [ **儲存**]。
 
-當您準備好時，請選取 [**繼續**] 移至下一個步驟。
+當您準備好時，請選取 [ **繼續** ] 移至下一個步驟。
 
 ## <a name="step-2-review-proposal"></a>步驟2：審閱提案
 
@@ -119,20 +119,20 @@ Microsoft 客戶合約（MCA）可讓組織購買 Microsoft 產品和服務。 �
 
 提案包含下列資訊：
 
-| 區段 | 說明 |
+| 區段 | 描述 |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 組織名稱 | 準備提案之組織的名稱。 |
 | 有效截止日期 | 提案提供到期的日期。 如果您錯過這項到期日，請與您的 Microsoft 代表聯繫，讓他們知道您仍然對提案感興趣。 |
 | 貨幣 | 用於計算方案中的專案成本的貨幣。 |
 | 準備好 | 要求提案之人員的帳單帳戶名稱、位址、連絡人電子郵件地址和電話號碼。 |
 | 準備者 | 準備提案之 Microsoft 代表的電子郵件地址。 |
-| 摘要 | 顯示與提案相關聯的小計。 如有必要，它也會顯示用來計算成本的外部 exchange （FX）率。 |
+| 摘要 | 顯示與提案相關聯的小計。 如有必要，它也會顯示外部 exchange (FX 用於計算成本的) 率。 |
 | 提案行專案 | 此區段包含提案中包含的所有專案的數量、單價及小計。 |
-| 下一步 | 本節指出您必須採取的必要動作。 |
+| 後續步驟 | 本節指出您必須採取的必要動作。 |
 
 若要簽署 MCA，請選取 **[下一步]** 下的按鈕。 如果您必須簽署補充字詞，您可以使用連結的 DocuSign 網站，您可以在其中依照步驟簽署檔。
 
-簽署任何必要的協定或附加條款之後，請選取 [**移至結帳**]。
+簽署任何必要的協定或附加條款之後，請選取 [ **移至結帳**]。
 
 ## <a name="step-3-checkout"></a>步驟3：結帳
 
@@ -140,44 +140,44 @@ Microsoft 客戶合約（MCA）可讓組織購買 Microsoft 產品和服務。 �
 
 ### <a name="sold-to"></a>銷售至
 
-本節顯示提案所使用的計費帳戶。 如果您需要變更任何資訊，請選取 [**編輯**] 連結。 您也可以使用 [**編輯**] 連結，新增您組織的稅號。 納稅識別碼必須與「**銷售至**」區段中所列的國家/地區相關。 如果您有免稅，您必須開啟支援票證以要求免稅狀態。
+本節顯示提案所使用的計費帳戶。 如果您需要變更任何資訊，請選取 [ **編輯** ] 連結。 您也可以使用 [ **編輯** ] 連結，新增您組織的稅號。 納稅識別碼必須與「 **銷售至** 」區段中所列的國家/地區相關。 如果您有免稅，您必須開啟支援票證以要求免稅狀態。
 
-若要深入瞭解納稅 IDs，以及如何套用稅收的狀態，請參閱[稅務資訊](billing-and-payments/tax-information.md)。
+若要深入瞭解納稅 IDs，以及如何套用稅收的狀態，請參閱 [稅務資訊](billing-and-payments/tax-information.md)。
 
 ### <a name="billed-to"></a>收費
 
 本節會顯示用來判斷發票上包含哪些專案，以及您支付發票的方式的計費設定檔。 每個計費週期，您會收到每個帳單設定檔的個別發票。 您可以使用支票或電匯轉帳或 Azure 預付款來支付發票款項。 如果您還沒有帳單設定檔，您的 Microsoft 代表會為您建立一個。 在結帳時，您可以選取不同的帳單設定檔（若有的話），然後變更帳單設定檔的名稱，或新增郵政 數量。 您也可以建立新的帳單設定檔。
 
-如需計費設定檔的詳細資訊，請參閱[管理帳單設定檔](billing-and-payments/manage-billing-profiles.md)。
+如需計費設定檔的詳細資訊，請參閱 [管理帳單設定檔](billing-and-payments/manage-billing-profiles.md)。
 
 ### <a name="proposal-items-in-this-order"></a>依此順序的提案專案
 
 本節顯示提案中包含的所有專案清單。 清單可以包含下列一或多個類別：
 
-- **補充字詞**在 MCA 中包含組織條款的任何修正修正清單。 例如，此清單可能包含 HIPAA 或 GDPR 字詞。
+- **補充字詞** 在 MCA 中包含組織條款的任何修正修正清單。 例如，此清單可能包含 HIPAA 或 GDPR 字詞。
 
-- **立即購買**在提案驗收工作流程結束時結帳時所支付的專案清單。
+- **立即購買** 在提案驗收工作流程結束時結帳時所支付的專案清單。
 
-- **折扣（適用于未來的費用）** 您在提案中所收到的折扣清單。
+- **適用于未來費用的折扣 () ** 您在提案中所收到的折扣清單。
 
-- **包含**建議套件中包含的專案清單，而不會另外收費。 有些專案可能會有相關的成本。
+- **包含** 建議套件中包含的專案清單，而不會另外收費。 有些專案可能會有相關的成本。
 
 ### <a name="summary"></a>摘要
 
 本節顯示針對訂單支付的專案數目、估計的稅金及總金額。
 
-若要進行訂單，請選取 [**下訂單**] 或 [**接受合約 & 下訂單**]。
+若要進行訂單，請選取 [ **下訂單** ] 或 [ **接受合約 & 下訂單**]。
 
 在您放置訂單後，您會收到進行後續步驟的確認。 如果您購買的是 Azure 方案，下一步是在 Azure 入口網站中設定您的帳單帳戶。
 
-## <a name="step-4-set-up-your-new-billing-account-azure-customers-only"></a>步驟4：設定新的帳單帳戶（僅限 Azure 客戶）
+## <a name="step-4-set-up-your-new-billing-account-azure-customers-only"></a>步驟4：設定您的新帳單帳戶 (僅限 Azure 客戶) 
 
-如果您是新的客戶，而且已購買 Azure 產品做為提案的一部分，下一步是設定新的帳單帳戶。 若要深入瞭解，請參閱[設定您的帳單帳戶的 Microsoft 客戶合約](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-setup-account)。
+如果您是新的客戶，而且已購買 Azure 產品做為提案的一部分，下一步是設定新的帳單帳戶。 若要深入瞭解，請參閱 [設定您的帳單帳戶的 Microsoft 客戶合約](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-setup-account)。
 
-如果您是具有企業合約的現有 Azure 客戶，而且您是第一次簽署 MCA，您下一步是瞭解各協定之間的變更，以及如何使用新的計費帳戶完成工作。 若要深入瞭解，請參閱[您的帳單帳戶中的完整企業合約任務，以取得 Microsoft 客戶合約](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-enterprise-operations)。
+如果您是具有企業合約的現有 Azure 客戶，而且您是第一次簽署 MCA，您下一步是瞭解各協定之間的變更，以及如何使用新的計費帳戶完成工作。 若要深入瞭解，請參閱 [您的帳單帳戶中的完整企業合約任務，以取得 Microsoft 客戶合約](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-enterprise-operations)。
 
 ## <a name="understand-invoicing"></a>瞭解開票
 
 在您取出並完成訂單後，會在24-48 小時內傳送原始發票。 之後，您會收到每月之第五個的發票。 月度發票包含上個月的費用。 如果您有任何信用用於您的帳戶，他們會從您的記帳設定檔的貨幣點數中扣減，並套用到您的發票餘額。 套用貸記後剩餘餘額是 [餘額到期]。 您從帳單日起起30天以支付發票款項。
 
-發票的 PDF 副本中包含傳送支票或電線轉接的付款指示。 若要查看或下載您的發票，請參閱[查看您的帳單或發票](billing-and-payments/view-your-bill-or-invoice.md)。
+發票的 PDF 副本中包含傳送支票或電線轉接的付款指示。 若要查看或下載您的發票，請參閱 [查看您的帳單或發票](billing-and-payments/view-your-bill-or-invoice.md)。

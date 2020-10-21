@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -24,21 +24,21 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: 瞭解有時切換方案必須手動完成或通過呼叫支援的原因。
-ms.openlocfilehash: 9f48ed56f230802ebd305d9b79e8ad694fadcc4c
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8e217ad59e6436641af3b2f0151a760da5239839
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403147"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646748"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>為什麼我無法切換商務方案的 Microsoft 365？
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> 本文適用于舊版系統管理中心。 若要查看有關系統管理中心（預覽）的文章，請參閱[為何無法升級計畫？](upgrade-to-different-plan.md#why-cant-i-upgrade-plans)。 預覽可供所有 Microsoft 365 系統管理員使用，您可以選取 [嘗試使用位於首頁頂端的**預覽**切換] 進行選擇。 如需詳細資訊，請參閱[關於新的 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md)。
+> 本文適用于舊版系統管理中心。 若要查看有關系統管理中心的 (預覽) 的相關文章，請參閱 [為什麼無法升級方案？](upgrade-to-different-plan.md#why-cant-i-upgrade-plans)。 預覽可供所有 Microsoft 365 系統管理員使用，您可以選取 [嘗試使用位於首頁頂端的 **預覽** 切換] 進行選擇。 如需詳細資訊，請參閱[關於新的 Microsoft 365 系統管理中心](../../admin/microsoft-365-admin-center-preview.md)。
 ::: moniker-end
 
-如果您看不到 [**切換方案**] 按鈕，就無法自動切換您的計畫。 在某些情況下，您可能能夠解決問題，使您可以使用 [**切換方案**] 按鈕，否則您也可以改為[手動切換方案](switch-plans-manually.md)。 將滑鼠移到 info 圖示上，以查看訊息，說明 [**切換方案**] 按鈕無法使用的原因。 您可以使用本文中的資訊以解決問題。
+如果您看不到 [ **切換方案** ] 按鈕，就無法自動切換您的計畫。 在某些情況下，您可能能夠解決問題，使您可以使用 [ **切換方案** ] 按鈕，否則您也可以改為 [手動切換方案](switch-plans-manually.md)。 將滑鼠移到 info 圖示上，以查看訊息，說明 [ **切換方案** ] 按鈕無法使用的原因。 您可以使用本文中的資訊以解決問題。
   
 ::: moniker range="o365-worldwide"
 
@@ -63,19 +63,19 @@ ms.locfileid: "44403147"
 
 ::: moniker range="o365-worldwide"
 
-若要使用 [**切換方案**] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">解決的授權</a>衝突。 [深入瞭解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 解決任何授權衝突後，您應該會看到 [**切換方案**] 按鈕。 如果不是，您可以[手動切換方案](switch-plans-manually.md)，或[致電支援人員](../../admin/contact-support-for-business-products.md)。
+若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-若要使用 [**切換方案**] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要<a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">解決的授權</a>衝突。 [深入瞭解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 解決任何授權衝突後，您應該會看到 [**切換方案**] 按鈕。 如果不是，您可以[手動切換方案](switch-plans-manually.md)，或[致電支援人員](../../admin/contact-support-for-business-products.md)。
+若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-若要使用 [**切換方案**] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要<a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">解決的授權</a>衝突。 [深入瞭解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 解決任何授權衝突後，您應該會看到 [**切換方案**] 按鈕。 如果不是，您可以[手動切換方案](switch-plans-manually.md)，或[致電支援人員](../../admin/contact-support-for-business-products.md)。
+若要使用 [ **切換方案** ] 按鈕自動切換方案，您的所有使用者都必須獲指派有效的授權。 如果您已指派超過您購買的授權，您會在 [授權] 頁面上看到警示，表明您有需要 <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">解決的授權</a> 衝突。 [深入瞭解如何解決授權衝突](../../admin/manage/resolve-license-conflicts.md)。 解決任何授權衝突後，您應該會看到 [ **切換方案** ] 按鈕。 如果不是，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
 
 ::: moniker-end
 
@@ -84,23 +84,23 @@ ms.locfileid: "44403147"
 
 ::: moniker range="o365-worldwide"
 
-若要查看是否有提供或服務健康情況問題，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">服務健康</a>情況] 頁面，或選取 [**狀況** \> **服務健康情況**]。
+若要查看是否有提供或服務健康情況問題，請移至 [ <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">服務健康</a> 情況] 頁面，或選取 [ **狀況** \> **服務健康情況**]。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-若要查看是否有提供或服務健康情況問題365，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">服務健康</a>情況] 頁面，或選取 [**狀況** \> **服務健康情況**]。
+若要查看是否有提供或服務健康情況問題365，請移至 [ <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">服務健康</a> 情況] 頁面，或選取 [ **狀況** \> **服務健康情況**]。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-若要查看是否有提供或服務健康情況問題365，請移至 [<a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">服務健康</a>情況] 頁面，或選取 [**狀況** \> **服務健康情況**]。
+若要查看是否有提供或服務健康情況問題365，請移至 [ <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">服務健康</a> 情況] 頁面，或選取 [ **狀況** \> **服務健康情況**]。
 
 ::: moniker-end
 
-如果您發現有服務尚未佈建完畢，或是有服務健康情況的問題，請稍候數小時，待服務正常提供後再試。 如果仍有問題，請[致電支援人員](../../admin/contact-support-for-business-products.md)。
+如果您發現有服務尚未佈建完畢，或是有服務健康情況的問題，請稍候數小時，待服務正常提供後再試。 如果仍有問題，請 [致電支援人員](../../admin/contact-support-for-business-products.md)。
   
 ### <a name="you-cant-switch-plans-because-another-plan-is-in-the-process-of-being-switched-and-is-pending-a-credit-check"></a>另一個方案正在切換中，並且正待信用查核，因此無法切換方案。
 
@@ -108,11 +108,11 @@ ms.locfileid: "44403147"
   
 ### <a name="currently-this-subscription-is-not-eligible-to-switch-plans"></a>此訂閱目前不符合切換方案的資格。
 
-您可以[手動切換方案](switch-plans-manually.md)，或[致電支援人員](../../admin/contact-support-for-business-products.md)。
+您可以 [手動切換方案](switch-plans-manually.md) ，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
   
 ### <a name="i-see-a-different-message-than-whats-listed-here"></a>我看到的訊息與此處所列的都不一樣。
 
-您可以[手動切換方案](switch-plans-manually.md)，或[致電支援人員](../../admin/contact-support-for-business-products.md)。
+您可以 [手動切換方案](switch-plans-manually.md) ，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。
   
 ## <a name="additional-reasons-the-switch-plans-button-is-unavailable"></a>[切換方案] 按鈕無法使用的其他原因
 
@@ -120,25 +120,25 @@ ms.locfileid: "44403147"
 
 如果您已預先為訂閱付費，可能需要[手動切換方案](switch-plans-manually.md)。不過，若您在目前方案過期前切換方案，將不會針對您現有訂閱的剩餘時間計費。
   
-您也可以尋求協助的[支援](../../admin/contact-support-for-business-products.md)。
+您也可以尋求協助的 [支援](../../admin/contact-support-for-business-products.md) 。
   
 ### <a name="you-have-a-government-or-non-profit-plan"></a>您具備的是政府或非營利機構方案
 
-如果您有政府或非盈利計畫，您可以[手動切換方案](switch-plans-manually.md)，或[致電支援人員](../../admin/contact-support-for-business-products.md)以取得協助。
+如果您有政府或非盈利計畫，您可以 [手動切換方案](switch-plans-manually.md) ，或 [致電支援人員](../../admin/contact-support-for-business-products.md) 以取得協助。
   
 ### <a name="3000-or-more-licenses-have-been-purchased-and-assigned-for-the-subscription"></a>此訂閱已購買並且指派 3,000 個以上的授權。
 
-對於已指派給使用者的3000或更多授權的訂閱，[**切換方案**] 按鈕無法使用。 不過，您或許可以[手動切換方案](switch-plans-manually.md)。 您也可以尋求協助的[支援](../../admin/contact-support-for-business-products.md)。
+對於已指派給使用者的3000或更多授權的訂閱，[ **切換方案** ] 按鈕無法使用。 不過，您或許可以[手動切換方案](switch-plans-manually.md)。 您也可以尋求協助的 [支援](../../admin/contact-support-for-business-products.md) 。
   
 ### <a name="the-subscription-that-you-want-to-switch-from-has-a-temporary-issue"></a>您想要切換的舊訂閱暫時發生問題
 
-[**切換方案**] 按鈕可能暫時無法使用，因為服務正處於切換大量計畫的過程中。 請在第一次嘗試後大約等候一個小時再試。
+[ **切換方案** ] 按鈕可能暫時無法使用，因為服務正處於切換大量計畫的過程中。 請在第一次嘗試後大約等候一個小時再試。
   
 ### <a name="the-plan-that-you-want-to-switch-to-isnt-a-supported-option"></a>您想要切換到的新方案選項不受支援
 
 當您切換訂閱時，系統會根據您目前方案所提供的服務，顯示您所能切換的訂閱。您只能切換到具有相同資料相關服務 (例如 Exchange Online 或 SharePoint Online) 或其更新版本的的方案。這可確保在切換過程中使用者不會遺失與這些服務相關的資料。
   
-如果您的方案不符合自動切換方案的資格，您或許可以改以[手動切換方案](switch-plans-manually.md)。 您也可以尋求協助的[支援](../../admin/contact-support-for-business-products.md)。
+如果您的方案不符合自動切換方案的資格，您或許可以改以[手動切換方案](switch-plans-manually.md)。 您也可以尋求協助的 [支援](../../admin/contact-support-for-business-products.md) 。
   
 > [!NOTE]
 > Office 365 小型企業版、Office 365 小型企業進階版或 Office 365 中型企業版方案不支援手動切換到其他方案。

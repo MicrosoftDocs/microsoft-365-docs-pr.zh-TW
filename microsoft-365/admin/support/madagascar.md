@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 798de146a2f721e1b251eacb74a624b263f2482d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 778bb635c4b5a3442006a45459eb298ca8bfca7c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397235"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48641384"
 ---
 # <a name="contact-support-for-madagascar"></a>針對馬達加斯加的技術支援人員
 
@@ -28,16 +28,16 @@ ms.locfileid: "44397235"
 + 1 312 843 5147
 
 ## <a name="hours"></a>小時
-### <a name="billing-support"></a>帳單支援：
+### <a name="billing-support"></a>帳單支援︰
 
-法文：週一至週五上午11點–下午7點
+法文： Mon-Fri 11 AM-7 PM
 
-英文：週一至週五上午11點–下午7點
+英文： Mon-Fri 11 AM-7 PM
 
 ### <a name="technical-support"></a>技術支援：
 
-法文：週一至週五上午10點到下午11點
+法文： Mon-Fri 10 AM-11 PM
 
-英文：每週7天、每天24小時
+英文：全年無休
 
 國際通話費用適用

@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,18 +13,18 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 274fb21138cb8ee7649f410181f0461687194daf
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 5d491c6b9a3cce3a2506645672e1cfc405cfa989
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403487"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647168"
 ---
 # <a name="payment-information-for-iraq"></a>伊拉克的付款資訊
 
 [尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
-請在您的付款匯款中支付 [僅限 USD] 和 [參考發票號碼]。
+請在您的付款匯款中 (s) ，只支付 USD 且參考發票編號。
 
 ## <a name="electronic-funds-transfer"></a>電子基金轉移
 

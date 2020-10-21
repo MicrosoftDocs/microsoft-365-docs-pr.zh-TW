@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: 瞭解如何還原已刪除的使用者帳戶和所有相關聯的資料。
-ms.openlocfilehash: 27b3f4a0077b5ef0dcfaef1dbe5019a5d69652f2
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 905113c40f49f433a3d84810e04abc5f26724ecb
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386996"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646664"
 ---
 # <a name="restore-a-user"></a>還原使用者
 
@@ -54,28 +54,28 @@ ms.locfileid: "44386996"
  
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**使用者** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">刪除的使用者</a>] 頁面。
+1. 在系統管理中心中，移至 [ **使用者** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">刪除的使用者</a> ] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 移至 [系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)]，然後選取 [**使用者** \> **刪除的使用者**]。
+1. 移至 [系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)]，然後選取 [ **使用者** \> **刪除的使用者**]。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 移至 [系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)]，然後選取 [**使用者** \> **刪除的使用者**]。
+1. 移至 [系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)]，然後選取 [ **使用者** \> **刪除的使用者**]。
 
 ::: moniker-end
 
-2. 在 [**刪除的使用者**] 頁面上，選取您要還原的使用者名稱，然後選取 [**還原**]。
+2. 在 [ **刪除的使用者** ] 頁面上，選取您要還原的使用者名稱，然後選取 [ **還原**]。
     
  
-3. 依照提示設定密碼，然後選取 [**還原**]。
+3. 依照提示設定密碼，然後選取 [ **還原**]。
     
-4. 若使用者成功還原，請選取 [**傳送電子郵件並關閉**]。 如果您遇到名稱衝突或 Proxy 位址衝突，請參閱下方說明，了解如何還原這類帳戶。
+4. 若使用者成功還原，請選取 [ **傳送電子郵件並關閉**]。 如果您遇到名稱衝突或 Proxy 位址衝突，請參閱下方說明，了解如何還原這類帳戶。
     
 還原使用者後，請確定通知他們密碼已變更，並追蹤這些密碼。
   
@@ -89,68 +89,68 @@ ms.locfileid: "44386996"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**使用者** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">刪除的使用者</a>] 頁面。
+1. 在系統管理中心中，移至 [ **使用者** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">刪除的使用者</a> ] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 移至 [系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)]，然後選取 [**使用者** \> **刪除的使用者**]。
+1. 移至 [系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)]，然後選取 [ **使用者** \> **刪除的使用者**]。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 移至 [系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)]，然後選取 [**使用者** \> **刪除的使用者**]。
+1. 移至 [系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)]，然後選取 [ **使用者** \> **刪除的使用者**]。
 
 ::: moniker-end
 
   
-2. 在 [**刪除的使用者**] 頁面上，選取您要還原的使用者名稱，然後選取 [**還原**]。
+2. 在 [ **刪除的使用者** ] 頁面上，選取您要還原的使用者名稱，然後選取 [ **還原**]。
     
     > [!NOTE]
     > 若無法還原兩名或多名使用者，一則錯誤訊息會通知您某些使用者的還原作業失敗。請檢視記錄，了解哪些使用者無法順利還原，接著逐一對這些帳戶進行還原作業。 
   
-3. 依照提示設定密碼，然後選取 [**還原**]。
+3. 依照提示設定密碼，然後選取 [ **還原**]。
     
 4. 隨即會跳出一則訊息，提示您還原帳戶時發生問題。請執行下列其中一項操作：
     
   - 取消還原並重新命名目前作用中的使用者，然後再次嘗試還原。
     
-  - 或者，輸入使用者的新主要電子郵件地址，然後選取 [**還原**]。
+  - 或者，輸入使用者的新主要電子郵件地址，然後選取 [ **還原**]。
     
-5. 檢查結果，然後選取 [**關閉**]。
+5. 檢查結果，然後選取 [ **關閉**]。
     
 ## <a name="restore-a-user-that-has-a-proxy-address-conflict"></a>還原 Proxy 位址衝突的使用者
 
 當您刪除包含 Proxy 位址的使用者帳戶、將相同的 Proxy 位址指派給另一個帳戶，然後試圖還原已刪除的帳戶時，會發生 Proxy 位址衝突的情形。請依照下列步驟操作以修正此問題。
   
-您必須具有 Microsoft 365 的系統[管理員許可權](about-admin-roles.md)，才可執行此動作。 
+您必須具有 Microsoft 365 的系統 [管理員許可權](about-admin-roles.md) ，才可執行此動作。 
   
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心中，移至 [**使用者** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">刪除的使用者</a>] 頁面。
+1. 在系統管理中心中，移至 [ **使用者** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">刪除的使用者</a> ] 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-移至 [系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)]，然後選取 [**使用者** \> **刪除的使用者**]。
+移至 [系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)]，然後選取 [ **使用者** \> **刪除的使用者**]。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 移至 [系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)]，然後選取 [**使用者** \> **刪除的使用者**]。
+1. 移至 [系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)]，然後選取 [ **使用者** \> **刪除的使用者**]。
 
 ::: moniker-end
 
-2. 在 [**刪除的使用者**] 頁面上，選取您要還原的使用者，然後選取 [**還原**]。 
+2. 在 [ **刪除的使用者** ] 頁面上，選取您要還原的使用者，然後選取 [ **還原**]。 
     
-3. 在 [**還原**] 頁面上，依照指示設定密碼，然後選取 [**還原**]。 所有衝突的 Proxy 位址都會自動從您要還原的使用者移除。
+3. 在 [ **還原** ] 頁面上，依照指示設定密碼，然後選取 [ **還原**]。 所有衝突的 Proxy 位址都會自動從您要還原的使用者移除。
     
-4. 檢查結果，然後選取 [**關閉**]。
+4. 檢查結果，然後選取 [ **關閉**]。
 
 ## <a name="related-articles"></a>相關文章
 
