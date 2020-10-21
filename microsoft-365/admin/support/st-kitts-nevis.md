@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,25 +13,25 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 34da45a39f74589886351d8bfc5ab7b50d111c25
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f96b4aca45363af34088cd54b997cc3a9e8e2109
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401163"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48639404"
 ---
-# <a name="contact-support-for-st-kitts--nevis"></a><span data-ttu-id="f4f43-103">& 尼維斯的 St 島的支援聯繫</span><span class="sxs-lookup"><span data-stu-id="f4f43-103">Contact support for St Kitts & Nevis</span></span>
+# <a name="contact-support-for-st-kitts--nevis"></a><span data-ttu-id="3bb67-103">& 尼維斯的 St 島的支援聯繫</span><span class="sxs-lookup"><span data-stu-id="3bb67-103">Contact support for St Kitts & Nevis</span></span>
 
-<span data-ttu-id="f4f43-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="f4f43-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="3bb67-104">[尋找其他國家或地區](../contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="3bb67-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f4f43-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="f4f43-105">Phone number</span></span>
-<span data-ttu-id="f4f43-106">1 877 302 1308</span><span class="sxs-lookup"><span data-stu-id="f4f43-106">1 877 302 1308</span></span>
+## <a name="phone-number"></a><span data-ttu-id="3bb67-105">電話號碼</span><span class="sxs-lookup"><span data-stu-id="3bb67-105">Phone number</span></span>
+<span data-ttu-id="3bb67-106">1 877 302 1308</span><span class="sxs-lookup"><span data-stu-id="3bb67-106">1 877 302 1308</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f4f43-107">小時</span><span class="sxs-lookup"><span data-stu-id="f4f43-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f4f43-108">帳單支援：</span><span class="sxs-lookup"><span data-stu-id="f4f43-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="3bb67-107">小時</span><span class="sxs-lookup"><span data-stu-id="3bb67-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="3bb67-108">帳單支援︰</span><span class="sxs-lookup"><span data-stu-id="3bb67-108">Billing Support:</span></span>
 
-<span data-ttu-id="f4f43-109">英文：週一至週五上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="f4f43-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="3bb67-109">英文： Mon-Fri 上午9點-下午5點</span><span class="sxs-lookup"><span data-stu-id="3bb67-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f4f43-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="f4f43-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="3bb67-110">技術支援：</span><span class="sxs-lookup"><span data-stu-id="3bb67-110">Technical Support:</span></span>
 
-<span data-ttu-id="f4f43-111">英文：每週7天、每天24小時</span><span class="sxs-lookup"><span data-stu-id="f4f43-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="3bb67-111">英文：全年無休</span><span class="sxs-lookup"><span data-stu-id="3bb67-111">English: 24 hours a day, 7 days a week</span></span>
