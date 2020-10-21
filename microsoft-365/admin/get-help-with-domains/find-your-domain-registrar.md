@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,46 +22,46 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: 瞭解如何使用 InterNIC 搜尋來尋找您的網域註冊機構和 DNS 主機服務提供者。
-ms.openlocfilehash: ac405a2aa6a4595c301dae16c27025cfe97c9902
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 8fa75800125179f046f3af76eea490d760b9f6cd
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399929"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645320"
 ---
-# <a name="find-your-domain-registrar"></a><span data-ttu-id="84694-103">尋找您的網域註冊機構</span><span class="sxs-lookup"><span data-stu-id="84694-103">Find your domain registrar</span></span>
+# <a name="find-your-domain-registrar"></a><span data-ttu-id="b0034-103">尋找您的網域註冊機構</span><span class="sxs-lookup"><span data-stu-id="b0034-103">Find your domain registrar</span></span>
 
- <span data-ttu-id="84694-104">若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。</span><span class="sxs-lookup"><span data-stu-id="84694-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
+ <span data-ttu-id="b0034-104">若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。</span><span class="sxs-lookup"><span data-stu-id="b0034-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
   
-## <a name="domain-registrar"></a><span data-ttu-id="84694-105">網域註冊機構</span><span class="sxs-lookup"><span data-stu-id="84694-105">Domain registrar</span></span>
+## <a name="domain-registrar"></a><span data-ttu-id="b0034-105">網域註冊機構</span><span class="sxs-lookup"><span data-stu-id="b0034-105">Domain registrar</span></span>
   
-### <a name="find-your-domain-name-registrar"></a><span data-ttu-id="84694-106">尋找您的網域名稱註冊機構</span><span class="sxs-lookup"><span data-stu-id="84694-106">Find your domain name registrar</span></span>
-
->[!NOTE]
-> <span data-ttu-id="84694-107">只有以 *.COM*、*.NET*和 *.EDU* 結尾的網域才能使用這個工具。</span><span class="sxs-lookup"><span data-stu-id="84694-107">Only domains ending in *.COM*, *.NET*, and *.EDU* work with this tool.</span></span>
-  
-1. <span data-ttu-id="84694-108">在 [InterNIC 搜尋頁面](https://go.microsoft.com/fwlink/p/?LinkId=402770)的 **[Whois Search]** (Whois 搜尋) 方塊中，輸入您的網域。</span><span class="sxs-lookup"><span data-stu-id="84694-108">On the [InterNIC search page](https://go.microsoft.com/fwlink/p/?LinkId=402770), in the **Whois Search** box, type your domain.</span></span> <span data-ttu-id="84694-109">例如，*contoso.com*。</span><span class="sxs-lookup"><span data-stu-id="84694-109">For example,  *contoso.com.*</span></span> 
-    
-2. <span data-ttu-id="84694-110">選取 **[Domain]** (網域) 選項，然後選取 **[Submit]** (提交)。</span><span class="sxs-lookup"><span data-stu-id="84694-110">Select the **Domain** option, and then select **Submit**.</span></span>
-    
-3. <span data-ttu-id="84694-111">在 **[Whois Search Results]** (Whois 搜尋結果) 頁面，尋找 **[Registrar]** (註冊機構) 項目。</span><span class="sxs-lookup"><span data-stu-id="84694-111">On the **Whois Search Results** page, locate the **Registrar** entry.</span></span> <span data-ttu-id="84694-112">此項目會列出為您的網域提供註冊機構服務的組織。</span><span class="sxs-lookup"><span data-stu-id="84694-112">This entry lists the organization that provides registrar service for your domain.</span></span> 
-    
-## <a name="dns-hosting-provider"></a><span data-ttu-id="84694-113">DNS 主機服務提供者</span><span class="sxs-lookup"><span data-stu-id="84694-113">DNS hosting provider</span></span>
-  
-### <a name="find-your-dns-hosting-provider"></a><span data-ttu-id="84694-114">尋找您的 DNS 主機服務提供者</span><span class="sxs-lookup"><span data-stu-id="84694-114">Find your DNS hosting provider</span></span>
+### <a name="find-your-domain-name-registrar"></a><span data-ttu-id="b0034-106">尋找您的網域名稱註冊機構</span><span class="sxs-lookup"><span data-stu-id="b0034-106">Find your domain name registrar</span></span>
 
 >[!NOTE]
-> <span data-ttu-id="84694-115">只有以 *.COM*、*.NET*和 *.EDU* 結尾的網域才能使用這個工具。</span><span class="sxs-lookup"><span data-stu-id="84694-115">Only domains ending in *.COM*, *.NET*, and *.EDU* work with this tool.</span></span>
+> <span data-ttu-id="b0034-107">只有以 *.COM*、*.NET*和 *.EDU* 結尾的網域才能使用這個工具。</span><span class="sxs-lookup"><span data-stu-id="b0034-107">Only domains ending in *.COM*, *.NET*, and *.EDU* work with this tool.</span></span>
   
-1. <span data-ttu-id="84694-116">在 [InterNIC 搜尋頁面]( https://go.microsoft.com/fwlink/p/?LinkId=402770)的 **[Whois Search]** (Whois 搜尋) 方塊中，輸入您的網域。</span><span class="sxs-lookup"><span data-stu-id="84694-116">On the [InterNIC search page]( https://go.microsoft.com/fwlink/p/?LinkId=402770), in the **Whois Search** box, type your domain.</span></span> <span data-ttu-id="84694-117">例如，contoso.com。</span><span class="sxs-lookup"><span data-stu-id="84694-117">For example, contoso.com.</span></span> 
+1. <span data-ttu-id="b0034-108">在 [InterNIC 搜尋頁面](https://go.microsoft.com/fwlink/p/?LinkId=402770)的 **[Whois Search]** (Whois 搜尋) 方塊中，輸入您的網域。</span><span class="sxs-lookup"><span data-stu-id="b0034-108">On the [InterNIC search page](https://go.microsoft.com/fwlink/p/?LinkId=402770), in the **Whois Search** box, type your domain.</span></span> <span data-ttu-id="b0034-109">例如，*contoso.com*。</span><span class="sxs-lookup"><span data-stu-id="b0034-109">For example,  *contoso.com.*</span></span> 
     
-2. <span data-ttu-id="84694-118">選取 **[Domain]** (網域) 選項，然後選取 **[Submit]** (提交)。</span><span class="sxs-lookup"><span data-stu-id="84694-118">Select the **Domain** option, and then select **Submit**.</span></span>
+2. <span data-ttu-id="b0034-110">選取 **[Domain]** (網域) 選項，然後選取 **[Submit]** (提交)。</span><span class="sxs-lookup"><span data-stu-id="b0034-110">Select the **Domain** option, and then select **Submit**.</span></span>
     
-3. <span data-ttu-id="84694-119">在 **[Whois Search Results]** (Whois 搜尋結果) 頁面，尋找 **[Name Server]** (名稱伺服器) 項目。</span><span class="sxs-lookup"><span data-stu-id="84694-119">On the **Whois Search Results** page, locate the first **Name Server** entry.</span></span> 
+3. <span data-ttu-id="b0034-111">在 **[Whois Search Results]** (Whois 搜尋結果) 頁面，尋找 **[Registrar]** (註冊機構) 項目。</span><span class="sxs-lookup"><span data-stu-id="b0034-111">On the **Whois Search Results** page, locate the **Registrar** entry.</span></span> <span data-ttu-id="b0034-112">此項目會列出為您的網域提供註冊機構服務的組織。</span><span class="sxs-lookup"><span data-stu-id="b0034-112">This entry lists the organization that provides registrar service for your domain.</span></span> 
     
-4. <span data-ttu-id="84694-120">複製出現在冒號 (:) 之後的名稱伺服器 (NS) 資訊，然後貼到頁面上方的 **[Search]** (搜尋) 方塊中。</span><span class="sxs-lookup"><span data-stu-id="84694-120">Copy the name server (NS) information that appears after the colon (:), and then paste it into the **Search** box at the top of the page.</span></span> <span data-ttu-id="84694-121">選取 **[Nameserver]** (名稱伺服器)，然後選取 **[Submit]** (提交)。</span><span class="sxs-lookup"><span data-stu-id="84694-121">Select **Nameserver**, and then select **Submit**.</span></span>
+## <a name="dns-hosting-provider"></a><span data-ttu-id="b0034-113">DNS 主機服務提供者</span><span class="sxs-lookup"><span data-stu-id="b0034-113">DNS hosting provider</span></span>
+  
+### <a name="find-your-dns-hosting-provider"></a><span data-ttu-id="b0034-114">尋找您的 DNS 主機服務提供者</span><span class="sxs-lookup"><span data-stu-id="b0034-114">Find your DNS hosting provider</span></span>
+
+>[!NOTE]
+> <span data-ttu-id="b0034-115">只有以 *.COM*、*.NET*和 *.EDU* 結尾的網域才能使用這個工具。</span><span class="sxs-lookup"><span data-stu-id="b0034-115">Only domains ending in *.COM*, *.NET*, and *.EDU* work with this tool.</span></span>
+  
+1. <span data-ttu-id="b0034-116">在 [InterNIC 搜尋頁面]( https://go.microsoft.com/fwlink/p/?LinkId=402770)的 **[Whois Search]** (Whois 搜尋) 方塊中，輸入您的網域。</span><span class="sxs-lookup"><span data-stu-id="b0034-116">On the [InterNIC search page]( https://go.microsoft.com/fwlink/p/?LinkId=402770), in the **Whois Search** box, type your domain.</span></span> <span data-ttu-id="b0034-117">例如，contoso.com。</span><span class="sxs-lookup"><span data-stu-id="b0034-117">For example, contoso.com.</span></span> 
     
-5. <span data-ttu-id="84694-122">在 **[Whois Search Results]** (Whois 搜尋結果) 頁面，尋找 **[Registrar]** (註冊機構) 項目。</span><span class="sxs-lookup"><span data-stu-id="84694-122">On the **Whois Search Results** page, locate the **Registrar** entry.</span></span> <span data-ttu-id="84694-123">此項目會列出您的 DNS 主機服務提供者，此 DNS 提供者擁有您網域的名稱伺服器。</span><span class="sxs-lookup"><span data-stu-id="84694-123">This entry lists your DNS hosting provider, the DNS provider who owns the name server for your domain.</span></span> 
+2. <span data-ttu-id="b0034-118">選取 **[Domain]** (網域) 選項，然後選取 **[Submit]** (提交)。</span><span class="sxs-lookup"><span data-stu-id="b0034-118">Select the **Domain** option, and then select **Submit**.</span></span>
+    
+3. <span data-ttu-id="b0034-119">在 **[Whois Search Results]** (Whois 搜尋結果) 頁面，尋找 **[Name Server]** (名稱伺服器) 項目。</span><span class="sxs-lookup"><span data-stu-id="b0034-119">On the **Whois Search Results** page, locate the first **Name Server** entry.</span></span> 
+    
+4. <span data-ttu-id="b0034-120">複製出現在冒號 (:) 之後的名稱伺服器 (NS) 資訊，然後貼到頁面上方的 **[Search]** (搜尋) 方塊中。</span><span class="sxs-lookup"><span data-stu-id="b0034-120">Copy the name server (NS) information that appears after the colon (:), and then paste it into the **Search** box at the top of the page.</span></span> <span data-ttu-id="b0034-121">選取 **[Nameserver]** (名稱伺服器)，然後選取 **[Submit]** (提交)。</span><span class="sxs-lookup"><span data-stu-id="b0034-121">Select **Nameserver**, and then select **Submit**.</span></span>
+    
+5. <span data-ttu-id="b0034-122">在 **[Whois Search Results]** (Whois 搜尋結果) 頁面，尋找 **[Registrar]** (註冊機構) 項目。</span><span class="sxs-lookup"><span data-stu-id="b0034-122">On the **Whois Search Results** page, locate the **Registrar** entry.</span></span> <span data-ttu-id="b0034-123">此項目會列出您的 DNS 主機服務提供者，此 DNS 提供者擁有您網域的名稱伺服器。</span><span class="sxs-lookup"><span data-stu-id="b0034-123">This entry lists your DNS hosting provider, the DNS provider who owns the name server for your domain.</span></span> 
     
 ---
 

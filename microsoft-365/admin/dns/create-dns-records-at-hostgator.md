@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,230 +21,230 @@ search.appverid:
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Hostgator。
-ms.openlocfilehash: 103da87956beae868cda84b727a3401dfd9991d9
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: f8cfc417a7ff9821fd40b33c8dfe9932dd454d18
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306968"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645992"
 ---
-# <a name="create-dns-records-at-hostgator-for-microsoft"></a>在 Hostgator 建立 Microsoft 的 DNS 記錄
+# <a name="create-dns-records-at-hostgator-for-microsoft"></a><span data-ttu-id="9acdc-103">在 Hostgator 建立 Microsoft 的 DNS 記錄</span><span class="sxs-lookup"><span data-stu-id="9acdc-103">Create DNS records at Hostgator for Microsoft</span></span>
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ <span data-ttu-id="9acdc-104">若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。</span><span class="sxs-lookup"><span data-stu-id="9acdc-104">**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for.</span></span> 
   
-如果 Hostgator 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
+<span data-ttu-id="9acdc-105">如果 Hostgator 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-105">If Hostgator is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.</span></span>
   
 > [!IMPORTANT]
-> 您必須先執行第一個 procedurebelow，將 [您的網域指向您的託管帳戶](#point-your-domain-to-your-hosting-account)，再使用本文中的任何其他程式新增 DNS 記錄。 
+> <span data-ttu-id="9acdc-106">您必須先執行第一個 procedurebelow，將 [您的網域指向您的託管帳戶](#point-your-domain-to-your-hosting-account)，再使用本文中的任何其他程式新增 DNS 記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-106">You must perform the first procedurebelow, [Point your domain to your hosting account](#point-your-domain-to-your-hosting-account), before you add DNS records by using any of the other procedures in this article.</span></span> 
 
-在 Hostgator 進行上述所有變更之後，您的網域就會設定為與 Microsoft 服務搭配使用。
+<span data-ttu-id="9acdc-107">在 Hostgator 進行上述所有變更之後，您的網域就會設定為與 Microsoft 服務搭配使用。</span><span class="sxs-lookup"><span data-stu-id="9acdc-107">After you make all of these changes at Hostgator, your domain will be set up to work with Microsoft services.</span></span>
   
 
   
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> <span data-ttu-id="9acdc-108">Typically it takes about 15 minutes for DNS changes to take effect.</span><span class="sxs-lookup"><span data-stu-id="9acdc-108">Typically it takes about 15 minutes for DNS changes to take effect.</span></span> <span data-ttu-id="9acdc-109">然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。</span><span class="sxs-lookup"><span data-stu-id="9acdc-109">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span></span> <span data-ttu-id="9acdc-110">在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-110">If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
   
-## <a name="point-your-domain-to-your-hosting-account"></a>將您的網域指向您的託管帳戶
-<a name="BKMK_PointDomain"> </a>
+## <a name="point-your-domain-to-your-hosting-account"></a><span data-ttu-id="9acdc-111">將您的網域指向您的託管帳戶</span><span class="sxs-lookup"><span data-stu-id="9acdc-111">Point your domain to your hosting account</span></span>
+<span data-ttu-id="9acdc-112"><a name="BKMK_PointDomain"> </a></span><span class="sxs-lookup"><span data-stu-id="9acdc-112"><a name="BKMK_PointDomain"> </a></span></span>
 
 > [!IMPORTANT]
-> 您必須先執行此程式，再執行本文中的任何其他程式。 
+> <span data-ttu-id="9acdc-113">您必須先執行此程式，再執行本文中的任何其他程式。</span><span class="sxs-lookup"><span data-stu-id="9acdc-113">You must perform this procedure before you perform any of the other procedures in this article.</span></span> 
   
-請遵循下列步驟，建立您的網域和代管帳戶的關聯。
+<span data-ttu-id="9acdc-114">請遵循下列步驟，建立您的網域和代管帳戶的關聯。</span><span class="sxs-lookup"><span data-stu-id="9acdc-114">Follow these steps to associate your domain and hosting accounts.</span></span>
   
-1. 若要開始使用，請移至您的網域管理頁面 Hostgator，方法是使用 [此連結](https://portal.hostgator.com/)。 You'll be prompted to log in.
+1. <span data-ttu-id="9acdc-115">若要開始使用，請移至您的網域管理頁面 Hostgator，方法是使用 [此連結](https://portal.hostgator.com/)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-115">To get started, go to your domain management page at Hostgator by using [this link](https://portal.hostgator.com/).</span></span> <span data-ttu-id="9acdc-116">You'll be prompted to log in.</span><span class="sxs-lookup"><span data-stu-id="9acdc-116">You'll be prompted to log in.</span></span>
     
-2. 選取左側的 [ **網域** ]。
+2. <span data-ttu-id="9acdc-117">選取左側的 [ **網域** ]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-117">Select **Domains** on the left.</span></span>
   
-3. 在 [ **管理網域** ] 頁面上，選取您要更新的網域。 
+3. <span data-ttu-id="9acdc-118">在 [ **管理網域** ] 頁面上，選取您要更新的網域。</span><span class="sxs-lookup"><span data-stu-id="9acdc-118">On the **Manage Domains** page, select the domain you want to update.</span></span> 
   
-4. 在左側的快顯功能表上，選取 [ **名稱伺服器**]。
+4. <span data-ttu-id="9acdc-119">在左側的快顯功能表上，選取 [ **名稱伺服器**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-119">On the pop-out menu on the left, select **Name Servers**.</span></span>
   
-5. 在您網域的 [ **名稱伺服器** ] 頁面上，在 [ **自動將此網域指向我的主機帳戶** ] 下拉式清單中，選擇與您的網域相關聯的主控帳戶。 
+5. <span data-ttu-id="9acdc-120">在您網域的 [ **名稱伺服器** ] 頁面上，在 [ **自動將此網域指向我的主機帳戶** ] 下拉式清單中，選擇與您的網域相關聯的主控帳戶。</span><span class="sxs-lookup"><span data-stu-id="9acdc-120">On the **Name Servers** page for your domain, in the **Automatically point this domain to my hosting account** drop-down list, choose the hosting account that is associated with your domain.</span></span> 
   
-6. 選取 [ **儲存名稱伺服器**]。
+6. <span data-ttu-id="9acdc-121">選取 [ **儲存名稱伺服器**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-121">Select **Save Name Servers**.</span></span>
     
   
-## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
-<a name="BKMK_verify"> </a>
+## <a name="add-a-txt-record-for-verification"></a><span data-ttu-id="9acdc-122">新增 TXT 記錄以供驗證</span><span class="sxs-lookup"><span data-stu-id="9acdc-122">Add a TXT record for verification</span></span>
+<span data-ttu-id="9acdc-123"><a name="BKMK_verify"> </a></span><span class="sxs-lookup"><span data-stu-id="9acdc-123"><a name="BKMK_verify"> </a></span></span>
 
 > [!IMPORTANT]
-> 執行此程序之前，您必須先執行本文中第一節的程序[＜將您的網域指向您的代管帳戶＞](#point-your-domain-to-your-hosting-account)。 
+> <span data-ttu-id="9acdc-124">執行此程序之前，您必須先執行本文中第一節的程序[＜將您的網域指向您的代管帳戶＞](#point-your-domain-to-your-hosting-account)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-124">Before you perform this procedure, you must first perform the procedure in the first section of this article, [Point your domain to your hosting account](#point-your-domain-to-your-hosting-account).</span></span> 
   
-在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。
+<span data-ttu-id="9acdc-p103">在您將自己的網域用於 Microsoft 之前，我們必須先確認您擁有該網域。如果您能在自己的網域註冊機構登入自己的帳戶並能建立 DNS 記錄，Microsoft 就能確信您擁有該網域。</span><span class="sxs-lookup"><span data-stu-id="9acdc-p103">Before you use your domain with Microsoft, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft that you own the domain.</span></span>
   
 > [!NOTE]
-> 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
+> <span data-ttu-id="9acdc-p104">這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-p104">This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like.</span></span> 
   
-1. 若要開始使用，請移至您位於 Hostgator 的 cPanel 頁面。系統會提示您先登入。
+1. <span data-ttu-id="9acdc-p105">若要開始使用，請移至您位於 Hostgator 的 cPanel 頁面。系統會提示您先登入。</span><span class="sxs-lookup"><span data-stu-id="9acdc-p105">To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.</span></span>
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且 **主控** 頁面也可以使用 nm-server-w15-cpanel-short 連結。 ) 
+    <span data-ttu-id="9acdc-131">(Each hosted account at Hostgator is assigned a unique cPanel address.</span><span class="sxs-lookup"><span data-stu-id="9acdc-131">(Each hosted account at Hostgator is assigned a unique cPanel address.</span></span> <span data-ttu-id="9acdc-132">您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。</span><span class="sxs-lookup"><span data-stu-id="9acdc-132">Your cPanel address should look like this: https://YourSiteAddress:secure-port-number.</span></span> <span data-ttu-id="9acdc-133">您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且 **主控** 頁面也可以使用 nm-server-w15-cpanel-short 連結。 ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-133">The sign-up email you received from Hostgator will specify that address, and a cPanel link is also available on the **Hosting** page.)</span></span>
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶， [以指向 Microsoft](change-nameservers-at-hostgator.md)。 
+    > <span data-ttu-id="9acdc-134">To have a cPanel associated with your domain, you need a hosting account with Hostgator.</span><span class="sxs-lookup"><span data-stu-id="9acdc-134">To have a cPanel associated with your domain, you need a hosting account with Hostgator.</span></span> <span data-ttu-id="9acdc-135">若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶， [以指向 Microsoft](change-nameservers-at-hostgator.md)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-135">To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md).</span></span> 
   
-2. 在 [ **控制台** ] 頁面的 [ **網域** ] 區域中，選取 [ **高級區域編輯器**]。
+2. <span data-ttu-id="9acdc-136">在 [ **控制台** ] 頁面的 [ **網域** ] 區域中，選取 [ **高級區域編輯器**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-136">On the **Control Panel** page, in the **Domains** area, select **Advanced Zone Editor**.</span></span>
     
-3. 在 [ **高級區域編輯器** ] 頁面的 [新增 **記錄** ] 區域，于新記錄的方塊中，輸入或複製並貼上下表中的值。 
+3. <span data-ttu-id="9acdc-137">在 [ **高級區域編輯器** ] 頁面的 [新增 **記錄** ] 區域，于新記錄的方塊中，輸入或複製並貼上下表中的值。</span><span class="sxs-lookup"><span data-stu-id="9acdc-137">On the **Advanced Zone Editor** page, in the **Add a Record** area, in the boxes for the new record, type or copy and paste the values from the following table.</span></span> 
     
-    (從下拉式清單中選擇 [Type] (類型) 值。) 
+    <span data-ttu-id="9acdc-138">(從下拉式清單中選擇 [Type] (類型) 值。)</span><span class="sxs-lookup"><span data-stu-id="9acdc-138">(Choose the **Type** value from the drop-down list.)</span></span> 
     
     |||||
     |:-----|:-----|:-----|:-----|
-    |**Name** <br/> |**TTL** <br/> |**類型** <br/> |**TXT Data** <br/> |
-    |使用您的  *domain_name*。 (for example, fourthcoffee.com.)  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |<span data-ttu-id="9acdc-139">**Name**</span><span class="sxs-lookup"><span data-stu-id="9acdc-139">**Name**</span></span> <br/> |<span data-ttu-id="9acdc-140">**TTL**</span><span class="sxs-lookup"><span data-stu-id="9acdc-140">**TTL**</span></span> <br/> |<span data-ttu-id="9acdc-141">**類型**</span><span class="sxs-lookup"><span data-stu-id="9acdc-141">**Type**</span></span> <br/> |<span data-ttu-id="9acdc-142">**TXT Data**</span><span class="sxs-lookup"><span data-stu-id="9acdc-142">**TXT Data**</span></span> <br/> |
+    |<span data-ttu-id="9acdc-143">使用您的  *domain_name*。</span><span class="sxs-lookup"><span data-stu-id="9acdc-143">Use your  *domain_name*.</span></span> <span data-ttu-id="9acdc-144">(for example, fourthcoffee.com.)</span><span class="sxs-lookup"><span data-stu-id="9acdc-144">(for example, fourthcoffee.com.)</span></span>  <br/> <span data-ttu-id="9acdc-145">**此值必須以英文句點 (.) 結尾。**</span><span class="sxs-lookup"><span data-stu-id="9acdc-145">**This value MUST end with a period (.)**</span></span> <br/> |<span data-ttu-id="9acdc-146">1 </span><span class="sxs-lookup"><span data-stu-id="9acdc-146">1</span></span>  <br/> |<span data-ttu-id="9acdc-147">TXT</span><span class="sxs-lookup"><span data-stu-id="9acdc-147">TXT</span></span>  <br/> |<span data-ttu-id="9acdc-148">MS=ms *XXXXXXXX*</span><span class="sxs-lookup"><span data-stu-id="9acdc-148">MS=ms *XXXXXXXX*</span></span>  <br/> <span data-ttu-id="9acdc-149">**附註：** 這是範例。</span><span class="sxs-lookup"><span data-stu-id="9acdc-149">**Note:** This is an example.</span></span> <span data-ttu-id="9acdc-150">在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。</span><span class="sxs-lookup"><span data-stu-id="9acdc-150">Use your specific **Destination or Points to Address** value here, from the table.</span></span> [<span data-ttu-id="9acdc-151">如何找到呢？</span><span class="sxs-lookup"><span data-stu-id="9acdc-151">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)          |
    
-4. 選取 [ **新增記錄**]。
+4. <span data-ttu-id="9acdc-152">選取 [ **新增記錄**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-152">Select **Add Record**.</span></span>
     
-5. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
+5. <span data-ttu-id="9acdc-153">繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。</span><span class="sxs-lookup"><span data-stu-id="9acdc-153">Wait a few minutes before you continue, so that the record you just created can update across the Internet.</span></span>
     
-現在您已在網域註冊機構網站新增記錄，請返回 Microsoft 並要求該記錄。
+<span data-ttu-id="9acdc-154">現在您已在網域註冊機構網站新增記錄，請返回 Microsoft 並要求該記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-154">Now that you've added the record at your domain registrar's site, you'll go back to Microsoft and request the record.</span></span>
   
-在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。
+<span data-ttu-id="9acdc-155">在 Microsoft 找到正確的 TXT 記錄後，您的網域就完成驗證了。</span><span class="sxs-lookup"><span data-stu-id="9acdc-155">When Microsoft finds the correct TXT record, your domain is verified.</span></span>
   
-1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。
+1. <span data-ttu-id="9acdc-156">在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[網域]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="9acdc-156">In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.</span></span>
     
-2. 在 **[網域]** 頁面上，選取您要驗證的網域。 
+2. <span data-ttu-id="9acdc-157">在 **[網域]** 頁面上，選取您要驗證的網域。</span><span class="sxs-lookup"><span data-stu-id="9acdc-157">On the **Domains** page, select the domain that you are verifying.</span></span> 
     
-3. 在 **[設定]** 頁面上，選取 **[開始設定]**。
+3. <span data-ttu-id="9acdc-158">在 **[設定]** 頁面上，選取 **[開始設定]**。</span><span class="sxs-lookup"><span data-stu-id="9acdc-158">On the **Setup** page, select **Start setup**.</span></span>
     
-4. 在 **[驗證網域]** 頁面上，選取 **[驗證]**。
+4. <span data-ttu-id="9acdc-159">在 **[驗證網域]** 頁面上，選取 **[驗證]**。</span><span class="sxs-lookup"><span data-stu-id="9acdc-159">On the **Verify domain** page, select **Verify**.</span></span>
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> <span data-ttu-id="9acdc-160">Typically it takes about 15 minutes for DNS changes to take effect.</span><span class="sxs-lookup"><span data-stu-id="9acdc-160">Typically it takes about 15 minutes for DNS changes to take effect.</span></span> <span data-ttu-id="9acdc-161">然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。</span><span class="sxs-lookup"><span data-stu-id="9acdc-161">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span></span> <span data-ttu-id="9acdc-162">在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-162">If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
   
-## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft
-<a name="BKMK_add_MX"> </a>
+## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a><span data-ttu-id="9acdc-163">新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft</span><span class="sxs-lookup"><span data-stu-id="9acdc-163">Add an MX record so email for your domain will come to Microsoft</span></span>
+<span data-ttu-id="9acdc-164"><a name="BKMK_add_MX"> </a></span><span class="sxs-lookup"><span data-stu-id="9acdc-164"><a name="BKMK_add_MX"> </a></span></span>
 
 > [!IMPORTANT]
-> 執行此程序之前，您必須先執行本文中第一節的程序[＜將您的網域指向您的代管帳戶＞](#point-your-domain-to-your-hosting-account)。 
+> <span data-ttu-id="9acdc-165">執行此程序之前，您必須先執行本文中第一節的程序[＜將您的網域指向您的代管帳戶＞](#point-your-domain-to-your-hosting-account)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-165">Before you perform this procedure, you must first perform the procedure in the first section of this article, [Point your domain to your hosting account](#point-your-domain-to-your-hosting-account).</span></span> 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. <span data-ttu-id="9acdc-166">To get started, go to your cPanel page at Hostgator.</span><span class="sxs-lookup"><span data-stu-id="9acdc-166">To get started, go to your cPanel page at Hostgator.</span></span> <span data-ttu-id="9acdc-167">You'll be prompted to log in first.</span><span class="sxs-lookup"><span data-stu-id="9acdc-167">You'll be prompted to log in first.</span></span>
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且 **主控** 頁面也可以使用 nm-server-w15-cpanel-short 連結。 ) 
+    <span data-ttu-id="9acdc-168">(Each hosted account at Hostgator is assigned a unique cPanel address.</span><span class="sxs-lookup"><span data-stu-id="9acdc-168">(Each hosted account at Hostgator is assigned a unique cPanel address.</span></span> <span data-ttu-id="9acdc-169">您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。</span><span class="sxs-lookup"><span data-stu-id="9acdc-169">Your cPanel address should look like this: https://YourSiteAddress:secure-port-number.</span></span> <span data-ttu-id="9acdc-170">您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且 **主控** 頁面也可以使用 nm-server-w15-cpanel-short 連結。 ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-170">The sign-up email you received from Hostgator will specify that address, and a cPanel link is also available on the **Hosting** page.)</span></span>
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶， [以指向 Microsoft](change-nameservers-at-hostgator.md)。 
+    > <span data-ttu-id="9acdc-171">To have a cPanel associated with your domain, you need a hosting account with Hostgator.</span><span class="sxs-lookup"><span data-stu-id="9acdc-171">To have a cPanel associated with your domain, you need a hosting account with Hostgator.</span></span> <span data-ttu-id="9acdc-172">若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶， [以指向 Microsoft](change-nameservers-at-hostgator.md)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-172">To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md).</span></span> 
   
-2. 在 [ **控制台** ] 頁面的 [ **電子郵件** ] 區域中，選取 [ **MX 專案**]。
+2. <span data-ttu-id="9acdc-173">在 [ **控制台** ] 頁面的 [ **電子郵件** ] 區域中，選取 [ **MX 專案**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-173">On the **Control Panel** page, in the **Email** area, select **MX Entry**.</span></span>
     
  
-3. 在 [ **電子郵件路由** ] 區域中，選取 [ **遠端郵件交換器**]。
+3. <span data-ttu-id="9acdc-174">在 [ **電子郵件路由** ] 區域中，選取 [ **遠端郵件交換器**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-174">In the **Email Routing** area, select **Remote Mail Exchanger**.</span></span>
 
-4. 選取 [變更]****。
+4. <span data-ttu-id="9acdc-175">選取 [變更]\*\*\*\*。</span><span class="sxs-lookup"><span data-stu-id="9acdc-175">Select **Change**.</span></span>
   
-5. 在 [新增 **記錄** ] 區域的新記錄方塊中，輸入或複製並貼上下表中的值。 
+5. <span data-ttu-id="9acdc-176">在 [新增 **記錄** ] 區域的新記錄方塊中，輸入或複製並貼上下表中的值。</span><span class="sxs-lookup"><span data-stu-id="9acdc-176">In the **Add a New Record** area, in the boxes for the new record, type or copy and paste the values from the following table.</span></span> 
     
-    |**優先順序**|**目的地**|
+    |<span data-ttu-id="9acdc-177">**優先順序**</span><span class="sxs-lookup"><span data-stu-id="9acdc-177">**Priority**</span></span>|<span data-ttu-id="9acdc-178">**目的地**</span><span class="sxs-lookup"><span data-stu-id="9acdc-178">**Destination**</span></span>|
     |:-----|:-----|
-    |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **注意：** 從您的 Microsoft 帳戶取得您的 \< *domain-key*  \>。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |<span data-ttu-id="9acdc-179">0</span><span class="sxs-lookup"><span data-stu-id="9acdc-179">0</span></span>  <br/> <span data-ttu-id="9acdc-180">如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)</span><span class="sxs-lookup"><span data-stu-id="9acdc-180">For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)</span></span> <br/> | <span data-ttu-id="9acdc-181">*\<domain-key\>*  .mail.protection.outlook.com</span><span class="sxs-lookup"><span data-stu-id="9acdc-181">*\<domain-key\>*  .mail.protection.outlook.com</span></span>  <br/> <span data-ttu-id="9acdc-182">**注意：** 從您的 Microsoft 帳戶取得您的 \< *domain-key*  \>。</span><span class="sxs-lookup"><span data-stu-id="9acdc-182">**Note:** Get your \< *domain-key*  \> from your Microsoft account.</span></span>  [<span data-ttu-id="9acdc-183">如何找到呢？</span><span class="sxs-lookup"><span data-stu-id="9acdc-183">How do I find this?</span></span>](../get-help-with-domains/information-for-dns-records.md)          |
   
-6. 選取 [ **新增記錄**]。
+6. <span data-ttu-id="9acdc-184">選取 [ **新增記錄**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-184">Select **Add New Record**.</span></span>
    
  
-7. 如果 [ **Mx 記錄** ] 區段中有任何其他 MX 記錄，請移除每個記錄。 
+7. <span data-ttu-id="9acdc-185">如果 [ **Mx 記錄** ] 區段中有任何其他 MX 記錄，請移除每個記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-185">If there are any other MX records in the **MX Records** section, remove each of them.</span></span> 
 
     
-## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的六筆 CNAME 記錄
-<a name="BKMK_add_CNAME"> </a>
+## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a><span data-ttu-id="9acdc-186">新增 Microsoft 所需的六筆 CNAME 記錄</span><span class="sxs-lookup"><span data-stu-id="9acdc-186">Add the six CNAME records that are required for Microsoft</span></span>
+<span data-ttu-id="9acdc-187"><a name="BKMK_add_CNAME"> </a></span><span class="sxs-lookup"><span data-stu-id="9acdc-187"><a name="BKMK_add_CNAME"> </a></span></span>
 
 > [!IMPORTANT]
-> 執行此程序之前，您必須先執行本文中第一節的程序[＜將您的網域指向您的代管帳戶＞](#point-your-domain-to-your-hosting-account)。 
+> <span data-ttu-id="9acdc-188">執行此程序之前，您必須先執行本文中第一節的程序[＜將您的網域指向您的代管帳戶＞](#point-your-domain-to-your-hosting-account)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-188">Before you perform this procedure, you must first perform the procedure in the first section of this article, [Point your domain to your hosting account](#point-your-domain-to-your-hosting-account).</span></span> 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. <span data-ttu-id="9acdc-189">To get started, go to your cPanel page at Hostgator.</span><span class="sxs-lookup"><span data-stu-id="9acdc-189">To get started, go to your cPanel page at Hostgator.</span></span> <span data-ttu-id="9acdc-190">You'll be prompted to log in first.</span><span class="sxs-lookup"><span data-stu-id="9acdc-190">You'll be prompted to log in first.</span></span>
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且 **主控** 頁面也可以使用 nm-server-w15-cpanel-short 連結。 ) 
+    <span data-ttu-id="9acdc-191">(Each hosted account at Hostgator is assigned a unique cPanel address.</span><span class="sxs-lookup"><span data-stu-id="9acdc-191">(Each hosted account at Hostgator is assigned a unique cPanel address.</span></span> <span data-ttu-id="9acdc-192">您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。</span><span class="sxs-lookup"><span data-stu-id="9acdc-192">Your cPanel address should look like this: https://YourSiteAddress:secure-port-number.</span></span> <span data-ttu-id="9acdc-193">您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且 **主控** 頁面也可以使用 nm-server-w15-cpanel-short 連結。 ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-193">The sign-up email you received from Hostgator will specify that address, and a cPanel link is also available on the **Hosting** page.)</span></span>
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶， [以指向 Microsoft](change-nameservers-at-hostgator.md)。 
+    > <span data-ttu-id="9acdc-194">To have a cPanel associated with your domain, you need a hosting account with Hostgator.</span><span class="sxs-lookup"><span data-stu-id="9acdc-194">To have a cPanel associated with your domain, you need a hosting account with Hostgator.</span></span> <span data-ttu-id="9acdc-195">若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶， [以指向 Microsoft](change-nameservers-at-hostgator.md)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-195">To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md).</span></span> 
   
-2. 在 [ **控制台** ] 頁面的 [ **網域** ] 區域中，選取 [ **高級區域編輯器**]。
+2. <span data-ttu-id="9acdc-196">在 [ **控制台** ] 頁面的 [ **網域** ] 區域中，選取 [ **高級區域編輯器**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-196">On the **Control Panel** page, in the **Domains** area, select **Advanced Zone Editor**.</span></span>
     
-3. 新增六筆 CNAME 記錄的第一筆。
+3. <span data-ttu-id="9acdc-197">新增六筆 CNAME 記錄的第一筆。</span><span class="sxs-lookup"><span data-stu-id="9acdc-197">Add the first of the six CNAME records.</span></span>
     
-    在 [ **高級區域編輯器** ] 頁面的 [新增 **記錄** ] 區域，于新記錄的方塊中，輸入或複製並貼上下表中第一列的值。 
+    <span data-ttu-id="9acdc-198">在 [ **高級區域編輯器** ] 頁面的 [新增 **記錄** ] 區域，于新記錄的方塊中，輸入或複製並貼上下表中第一列的值。</span><span class="sxs-lookup"><span data-stu-id="9acdc-198">On the **Advanced Zone Editor** page, in the **Add a Record** area, in the boxes for the new record, type or copy and paste the values from the first row in the following table.</span></span> 
     
-    (從下拉式清單中選擇 [Type] (類型) 值。) 
+    <span data-ttu-id="9acdc-199">(從下拉式清單中選擇 [Type] (類型) 值。)</span><span class="sxs-lookup"><span data-stu-id="9acdc-199">(Choose the **Type** value from the drop-down list.)</span></span> 
     
-    |**Name**|**TTL**|**類型**|**CNAME**|
+    |<span data-ttu-id="9acdc-200">**Name**</span><span class="sxs-lookup"><span data-stu-id="9acdc-200">**Name**</span></span>|<span data-ttu-id="9acdc-201">**TTL**</span><span class="sxs-lookup"><span data-stu-id="9acdc-201">**TTL**</span></span>|<span data-ttu-id="9acdc-202">**類型**</span><span class="sxs-lookup"><span data-stu-id="9acdc-202">**Type**</span></span>|<span data-ttu-id="9acdc-203">**CNAME**</span><span class="sxs-lookup"><span data-stu-id="9acdc-203">**CNAME**</span></span>|
     |:-----|:-----|:-----|:-----|
-    |autodiscover. *domain_name*。  (例如，autodiscover.fourthcoffee.com。 )   <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
-    |sip. *domain_name*。  (例如，sip.fourthcoffee.com。 )   <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover. *domain_name*。  (例如，lyncdiscover.fourthcoffee.com。 )   <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |CNAME  <br/> |webdir.online.lync.com  <br/> |
-    |enterpriseregistration. *domain_name*。  (例如，enterpriseregistration.fourthcoffee.com。 )   <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
-    |enterpriseenrollment. *domain_name*。  (例如，enterpriseregistration.fourthcoffee.com。 )   <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+    |<span data-ttu-id="9acdc-204">autodiscover.</span><span class="sxs-lookup"><span data-stu-id="9acdc-204">autodiscover.</span></span> <span data-ttu-id="9acdc-205">*domain_name*。</span><span class="sxs-lookup"><span data-stu-id="9acdc-205">*domain_name*.</span></span> <span data-ttu-id="9acdc-206"> (例如，autodiscover.fourthcoffee.com。 ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-206">(for example, autodiscover.fourthcoffee.com.)</span></span>  <br/> <span data-ttu-id="9acdc-207">**此值必須以英文句點 (.) 結尾。**</span><span class="sxs-lookup"><span data-stu-id="9acdc-207">**This value MUST end with a period (.)**</span></span> <br/> |<span data-ttu-id="9acdc-208">3600</span><span class="sxs-lookup"><span data-stu-id="9acdc-208">3600</span></span>  <br/> |<span data-ttu-id="9acdc-209">CNAME</span><span class="sxs-lookup"><span data-stu-id="9acdc-209">CNAME</span></span>  <br/> |<span data-ttu-id="9acdc-210">autodiscover.outlook.com</span><span class="sxs-lookup"><span data-stu-id="9acdc-210">autodiscover.outlook.com</span></span>  <br/> |
+    |<span data-ttu-id="9acdc-211">sip.</span><span class="sxs-lookup"><span data-stu-id="9acdc-211">sip.</span></span> <span data-ttu-id="9acdc-212">*domain_name*。</span><span class="sxs-lookup"><span data-stu-id="9acdc-212">*domain_name*.</span></span> <span data-ttu-id="9acdc-213"> (例如，sip.fourthcoffee.com。 ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-213">(for example, sip.fourthcoffee.com.)</span></span>  <br/> <span data-ttu-id="9acdc-214">**此值必須以英文句點 (.) 結尾。**</span><span class="sxs-lookup"><span data-stu-id="9acdc-214">**This value MUST end with a period (.)**</span></span> <br/> |<span data-ttu-id="9acdc-215">3600</span><span class="sxs-lookup"><span data-stu-id="9acdc-215">3600</span></span>  <br/> |<span data-ttu-id="9acdc-216">CNAME</span><span class="sxs-lookup"><span data-stu-id="9acdc-216">CNAME</span></span>  <br/> |<span data-ttu-id="9acdc-217">sipdir.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="9acdc-217">sipdir.online.lync.com</span></span>  <br/> |
+    |<span data-ttu-id="9acdc-218">lyncdiscover.</span><span class="sxs-lookup"><span data-stu-id="9acdc-218">lyncdiscover.</span></span> <span data-ttu-id="9acdc-219">*domain_name*。</span><span class="sxs-lookup"><span data-stu-id="9acdc-219">*domain_name*.</span></span> <span data-ttu-id="9acdc-220"> (例如，lyncdiscover.fourthcoffee.com。 ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-220">(for example, lyncdiscover.fourthcoffee.com.)</span></span>  <br/> <span data-ttu-id="9acdc-221">**此值必須以英文句點 (.) 結尾。**</span><span class="sxs-lookup"><span data-stu-id="9acdc-221">**This value MUST end with a period (.)**</span></span> <br/> |<span data-ttu-id="9acdc-222">3600</span><span class="sxs-lookup"><span data-stu-id="9acdc-222">3600</span></span>  <br/> |<span data-ttu-id="9acdc-223">CNAME</span><span class="sxs-lookup"><span data-stu-id="9acdc-223">CNAME</span></span>  <br/> |<span data-ttu-id="9acdc-224">webdir.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="9acdc-224">webdir.online.lync.com</span></span>  <br/> |
+    |<span data-ttu-id="9acdc-225">enterpriseregistration.</span><span class="sxs-lookup"><span data-stu-id="9acdc-225">enterpriseregistration.</span></span> <span data-ttu-id="9acdc-226">*domain_name*。</span><span class="sxs-lookup"><span data-stu-id="9acdc-226">*domain_name*.</span></span> <span data-ttu-id="9acdc-227"> (例如，enterpriseregistration.fourthcoffee.com。 ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-227">(for example, enterpriseregistration.fourthcoffee.com.)</span></span>  <br/> <span data-ttu-id="9acdc-228">**此值必須以英文句點 (.) 結尾。**</span><span class="sxs-lookup"><span data-stu-id="9acdc-228">**This value MUST end with a period (.)**</span></span> <br/> |<span data-ttu-id="9acdc-229">3600</span><span class="sxs-lookup"><span data-stu-id="9acdc-229">3600</span></span>  <br/> |<span data-ttu-id="9acdc-230">CNAME</span><span class="sxs-lookup"><span data-stu-id="9acdc-230">CNAME</span></span>  <br/> |<span data-ttu-id="9acdc-231">enterpriseregistration.windows.net</span><span class="sxs-lookup"><span data-stu-id="9acdc-231">enterpriseregistration.windows.net</span></span>  <br/> |
+    |<span data-ttu-id="9acdc-232">enterpriseenrollment.</span><span class="sxs-lookup"><span data-stu-id="9acdc-232">enterpriseenrollment.</span></span> <span data-ttu-id="9acdc-233">*domain_name*。</span><span class="sxs-lookup"><span data-stu-id="9acdc-233">*domain_name*.</span></span> <span data-ttu-id="9acdc-234"> (例如，enterpriseregistration.fourthcoffee.com。 ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-234">(for example, enterpriseregistration.fourthcoffee.com.)</span></span>  <br/> <span data-ttu-id="9acdc-235">**此值必須以英文句點 (.) 結尾。**</span><span class="sxs-lookup"><span data-stu-id="9acdc-235">**This value MUST end with a period (.)**</span></span> <br/> |<span data-ttu-id="9acdc-236">3600</span><span class="sxs-lookup"><span data-stu-id="9acdc-236">3600</span></span>  <br/> |<span data-ttu-id="9acdc-237">CNAME</span><span class="sxs-lookup"><span data-stu-id="9acdc-237">CNAME</span></span>  <br/> |<span data-ttu-id="9acdc-238">enterpriseenrollment-s.manage.microsoft.com</span><span class="sxs-lookup"><span data-stu-id="9acdc-238">enterpriseenrollment-s.manage.microsoft.com</span></span>  <br/> |
 
   
-4. 選取 [ **新增記錄**]。
+4. <span data-ttu-id="9acdc-239">選取 [ **新增記錄**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-239">Select **Add Record**.</span></span>
 
-5. 逐一新增其餘五筆 CNAME 記錄。
+5. <span data-ttu-id="9acdc-240">逐一新增其餘五筆 CNAME 記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-240">Add each of the other five CNAME records.</span></span>
     
-    在 [ **Add a record] （新增記錄** ）區段中，使用表格中下一列的值來建立記錄，然後再選取 [ **新增記錄** ] 以完成記錄。 
+    <span data-ttu-id="9acdc-241">在 [ **Add a record] （新增記錄** ）區段中，使用表格中下一列的值來建立記錄，然後再選取 [ **新增記錄** ] 以完成記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-241">In the **Add a Record** section, create a record by using the values from the next row in the table, and then again select **Add Record** to complete that record.</span></span> 
     
-    重複這個程序，直到六筆 CNAME 記錄全部建立完畢。
+    <span data-ttu-id="9acdc-242">重複這個程序，直到六筆 CNAME 記錄全部建立完畢。</span><span class="sxs-lookup"><span data-stu-id="9acdc-242">Repeat this process until you have created all six CNAME records.</span></span>
     
-## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
-<a name="BKMK_add_TXT"> </a>
+## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a><span data-ttu-id="9acdc-243">新增 SPF 的 TXT 記錄以協助防範垃圾郵件</span><span class="sxs-lookup"><span data-stu-id="9acdc-243">Add a TXT record for SPF to help prevent email spam</span></span>
+<span data-ttu-id="9acdc-244"><a name="BKMK_add_TXT"> </a></span><span class="sxs-lookup"><span data-stu-id="9acdc-244"><a name="BKMK_add_TXT"> </a></span></span>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 而是，請將必要的 Microsoft 值新增到目前的記錄，以便擁有包含這兩組值的單一 SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.md)。 
+> <span data-ttu-id="9acdc-245">網域的 SPF 不得擁有一個以上的 TXT 記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-245">You cannot have more than one TXT record for SPF for a domain.</span></span> <span data-ttu-id="9acdc-246">如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。</span><span class="sxs-lookup"><span data-stu-id="9acdc-246">If your domain has more than one SPF record, you'll get email errors, as well as delivery and spam classification issues.</span></span> <span data-ttu-id="9acdc-247">如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-247">If you already have an SPF record for your domain, don't create a new one for Microsoft.</span></span> <span data-ttu-id="9acdc-248">而是，請將必要的 Microsoft 值新增到目前的記錄，以便擁有包含這兩組值的單一 SPF 記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-248">Instead, add the required Microsoft values to the current record so that you have a single SPF record that includes both sets of values.</span></span> <span data-ttu-id="9acdc-249">需要範例？</span><span class="sxs-lookup"><span data-stu-id="9acdc-249">Need examples?</span></span> <span data-ttu-id="9acdc-250">請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-250">Check out these [External Domain Name System records for Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#bkmk_spfrecords).</span></span> <span data-ttu-id="9acdc-251">若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.md)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-251">To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.md).</span></span> 
   
 > [!IMPORTANT]
-> 執行此程序之前，您必須先執行本文中第一節的程序[＜將您的網域指向您的代管帳戶＞](#point-your-domain-to-your-hosting-account)。 
+> <span data-ttu-id="9acdc-252">執行此程序之前，您必須先執行本文中第一節的程序[＜將您的網域指向您的代管帳戶＞](#point-your-domain-to-your-hosting-account)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-252">Before you perform this procedure, you must first perform the procedure in the first section of this article, [Point your domain to your hosting account](#point-your-domain-to-your-hosting-account).</span></span> 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. <span data-ttu-id="9acdc-253">To get started, go to your cPanel page at Hostgator.</span><span class="sxs-lookup"><span data-stu-id="9acdc-253">To get started, go to your cPanel page at Hostgator.</span></span> <span data-ttu-id="9acdc-254">You'll be prompted to log in first.</span><span class="sxs-lookup"><span data-stu-id="9acdc-254">You'll be prompted to log in first.</span></span>
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且 **主控** 頁面也可以使用 nm-server-w15-cpanel-short 連結。 ) 
+    <span data-ttu-id="9acdc-255">(Each hosted account at Hostgator is assigned a unique cPanel address.</span><span class="sxs-lookup"><span data-stu-id="9acdc-255">(Each hosted account at Hostgator is assigned a unique cPanel address.</span></span> <span data-ttu-id="9acdc-256">您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。</span><span class="sxs-lookup"><span data-stu-id="9acdc-256">Your cPanel address should look like this: https://YourSiteAddress:secure-port-number.</span></span> <span data-ttu-id="9acdc-257">您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且 **主控** 頁面也可以使用 nm-server-w15-cpanel-short 連結。 ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-257">The sign-up email you received from Hostgator will specify that address, and a cPanel link is also available on the **Hosting** page.)</span></span>
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶， [以指向 Microsoft](change-nameservers-at-hostgator.md)。 
+    > <span data-ttu-id="9acdc-258">To have a cPanel associated with your domain, you need a hosting account with Hostgator.</span><span class="sxs-lookup"><span data-stu-id="9acdc-258">To have a cPanel associated with your domain, you need a hosting account with Hostgator.</span></span> <span data-ttu-id="9acdc-259">若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶， [以指向 Microsoft](change-nameservers-at-hostgator.md)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-259">To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md).</span></span> 
   
-2. 在 [ **控制台** ] 頁面的 [ **網域** ] 區域中，選取 [ **高級區域編輯器**]。
+2. <span data-ttu-id="9acdc-260">在 [ **控制台** ] 頁面的 [ **網域** ] 區域中，選取 [ **高級區域編輯器**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-260">On the **Control Panel** page, in the **Domains** area, select **Advanced Zone Editor**.</span></span>
     
-3. On the **Advanced DNS Zone Editor** page, in the **Add a Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
+3. <span data-ttu-id="9acdc-261">On the **Advanced DNS Zone Editor** page, in the **Add a Record** area, in the boxes for the new record, type or copy and paste the values from the following table.</span><span class="sxs-lookup"><span data-stu-id="9acdc-261">On the **Advanced DNS Zone Editor** page, in the **Add a Record** area, in the boxes for the new record, type or copy and paste the values from the following table.</span></span> 
     
-    (從下拉式清單中選擇 [Type] (類型) 值。) 
+    <span data-ttu-id="9acdc-262">(從下拉式清單中選擇 [Type] (類型) 值。)</span><span class="sxs-lookup"><span data-stu-id="9acdc-262">(Choose the **Type** value from the drop-down list.)</span></span> 
     
-    |**Name**|**TTL**|**類型**|**TXT Data**|
+    |<span data-ttu-id="9acdc-263">**Name**</span><span class="sxs-lookup"><span data-stu-id="9acdc-263">**Name**</span></span>|<span data-ttu-id="9acdc-264">**TTL**</span><span class="sxs-lookup"><span data-stu-id="9acdc-264">**TTL**</span></span>|<span data-ttu-id="9acdc-265">**類型**</span><span class="sxs-lookup"><span data-stu-id="9acdc-265">**Type**</span></span>|<span data-ttu-id="9acdc-266">**TXT Data**</span><span class="sxs-lookup"><span data-stu-id="9acdc-266">**TXT Data**</span></span>|
     |:-----|:-----|:-----|:-----|
-    |使用您的  *domain_name*。 (for example, fourthcoffee.com.)  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |<span data-ttu-id="9acdc-267">使用您的  *domain_name*。</span><span class="sxs-lookup"><span data-stu-id="9acdc-267">Use your  *domain_name*.</span></span> <span data-ttu-id="9acdc-268">(for example, fourthcoffee.com.)</span><span class="sxs-lookup"><span data-stu-id="9acdc-268">(for example, fourthcoffee.com.)</span></span>  <br/> <span data-ttu-id="9acdc-269">**此值必須以英文句點 (.) 結尾。**</span><span class="sxs-lookup"><span data-stu-id="9acdc-269">**This value MUST end with a period (.)**</span></span> <br/> |<span data-ttu-id="9acdc-270">3600</span><span class="sxs-lookup"><span data-stu-id="9acdc-270">3600</span></span>  <br/> |<span data-ttu-id="9acdc-271">TXT</span><span class="sxs-lookup"><span data-stu-id="9acdc-271">TXT</span></span>  <br/> |<span data-ttu-id="9acdc-272">v=spf1 include:spf.protection.outlook.com -all</span><span class="sxs-lookup"><span data-stu-id="9acdc-272">v=spf1 include:spf.protection.outlook.com -all</span></span>  <br/> <span data-ttu-id="9acdc-273">**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。</span><span class="sxs-lookup"><span data-stu-id="9acdc-273">**Note:** We recommend copying and pasting this entry, so that all of the spacing stays correct.</span></span>           |
   
-4. 選取 [ **新增記錄**]。
+4. <span data-ttu-id="9acdc-274">選取 [ **新增記錄**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-274">Select **Add Record**.</span></span>
     
-## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
-<a name="BKMK_add_SRV"> </a>
+## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a><span data-ttu-id="9acdc-275">新增兩筆 Microsoft 所需的 SRV 記錄</span><span class="sxs-lookup"><span data-stu-id="9acdc-275">Add the two SRV records that are required for Microsoft</span></span>
+<span data-ttu-id="9acdc-276"><a name="BKMK_add_SRV"> </a></span><span class="sxs-lookup"><span data-stu-id="9acdc-276"><a name="BKMK_add_SRV"> </a></span></span>
 
 > [!IMPORTANT]
-> 執行此程序之前，您必須先執行本文中第一節的程序[＜將您的網域指向您的代管帳戶＞](#point-your-domain-to-your-hosting-account)。 
+> <span data-ttu-id="9acdc-277">執行此程序之前，您必須先執行本文中第一節的程序[＜將您的網域指向您的代管帳戶＞](#point-your-domain-to-your-hosting-account)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-277">Before you perform this procedure, you must first perform the procedure in the first section of this article, [Point your domain to your hosting account](#point-your-domain-to-your-hosting-account).</span></span> 
   
-1. To get started, go to your cPanel page at Hostgator. You'll be prompted to log in first.
+1. <span data-ttu-id="9acdc-278">To get started, go to your cPanel page at Hostgator.</span><span class="sxs-lookup"><span data-stu-id="9acdc-278">To get started, go to your cPanel page at Hostgator.</span></span> <span data-ttu-id="9acdc-279">You'll be prompted to log in first.</span><span class="sxs-lookup"><span data-stu-id="9acdc-279">You'll be prompted to log in first.</span></span>
     
-    (Each hosted account at Hostgator is assigned a unique cPanel address. 您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。 您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且 **主控** 頁面也可以使用 nm-server-w15-cpanel-short 連結。 ) 
+    <span data-ttu-id="9acdc-280">(Each hosted account at Hostgator is assigned a unique cPanel address.</span><span class="sxs-lookup"><span data-stu-id="9acdc-280">(Each hosted account at Hostgator is assigned a unique cPanel address.</span></span> <span data-ttu-id="9acdc-281">您的 Nm-server-w15-cpanel-short 位址應該如下所示： https://YourSiteAddress:secure-port-number 。</span><span class="sxs-lookup"><span data-stu-id="9acdc-281">Your cPanel address should look like this: https://YourSiteAddress:secure-port-number.</span></span> <span data-ttu-id="9acdc-282">您從 Hostgator 收到的註冊電子郵件將會指定該位址，而且 **主控** 頁面也可以使用 nm-server-w15-cpanel-short 連結。 ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-282">The sign-up email you received from Hostgator will specify that address, and a cPanel link is also available on the **Hosting** page.)</span></span>
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. 若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶， [以指向 Microsoft](change-nameservers-at-hostgator.md)。 
+    > <span data-ttu-id="9acdc-283">To have a cPanel associated with your domain, you need a hosting account with Hostgator.</span><span class="sxs-lookup"><span data-stu-id="9acdc-283">To have a cPanel associated with your domain, you need a hosting account with Hostgator.</span></span> <span data-ttu-id="9acdc-284">若要開始使用 Microsoft，您可以從 Hostgator 或重新委派名稱伺服器購買主控帳戶， [以指向 Microsoft](change-nameservers-at-hostgator.md)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-284">To get started with Microsoft, you can either purchase a hosting account from Hostgator or [redelegate your nameservers to point to Microsoft](change-nameservers-at-hostgator.md).</span></span> 
   
-2. 在 [ **控制台** ] 頁面的 [ **網域** ] 區域中，選取 [ **高級區域編輯器**]。
+2. <span data-ttu-id="9acdc-285">在 [ **控制台** ] 頁面的 [ **網域** ] 區域中，選取 [ **高級區域編輯器**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-285">On the **Control Panel** page, in the **Domains** area, select **Advanced Zone Editor**.</span></span>
 
     
-3. 新增兩筆 SRV 記錄中的第一筆。
+3. <span data-ttu-id="9acdc-286">新增兩筆 SRV 記錄中的第一筆。</span><span class="sxs-lookup"><span data-stu-id="9acdc-286">Add the first of the two SRV records.</span></span>
     
-    在 [ **ADVANCED DNS 區域編輯器** ] 頁面上的 [ **新增記錄** ] 區域，于新記錄的方塊中，輸入或複製並貼上下表中第一列的值。 
+    <span data-ttu-id="9acdc-287">在 [ **ADVANCED DNS 區域編輯器** ] 頁面上的 [ **新增記錄** ] 區域，于新記錄的方塊中，輸入或複製並貼上下表中第一列的值。</span><span class="sxs-lookup"><span data-stu-id="9acdc-287">On the **Advanced DNS Zone Editor** page, in the **Add a Record** area, in the boxes for the new record, type or copy and paste the values from the first row in the following table.</span></span> 
     
-    (從下拉式清單中選擇 [Type] (類型) 值。) 
+    <span data-ttu-id="9acdc-288">(從下拉式清單中選擇 [Type] (類型) 值。)</span><span class="sxs-lookup"><span data-stu-id="9acdc-288">(Choose the **Type** value from the drop-down list.)</span></span> 
     
-    |**Name**|**TTL**|**類型**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
+    |<span data-ttu-id="9acdc-289">**Name**</span><span class="sxs-lookup"><span data-stu-id="9acdc-289">**Name**</span></span>|<span data-ttu-id="9acdc-290">**TTL**</span><span class="sxs-lookup"><span data-stu-id="9acdc-290">**TTL**</span></span>|<span data-ttu-id="9acdc-291">**類型**</span><span class="sxs-lookup"><span data-stu-id="9acdc-291">**Type**</span></span>|<span data-ttu-id="9acdc-292">**Priority** (優先順序)</span><span class="sxs-lookup"><span data-stu-id="9acdc-292">**Priority**</span></span>|<span data-ttu-id="9acdc-293">**Weight** (權數)</span><span class="sxs-lookup"><span data-stu-id="9acdc-293">**Weight**</span></span>|<span data-ttu-id="9acdc-294">**Port** (連接埠)</span><span class="sxs-lookup"><span data-stu-id="9acdc-294">**Port**</span></span>|<span data-ttu-id="9acdc-295">**Target**</span><span class="sxs-lookup"><span data-stu-id="9acdc-295">**Target**</span></span>|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _sip._tls。 *domain_name*。  (，例如，_tls )   <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _sipfederationtls._tcp。 *domain_name*。  (，例如，_tcp )   <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |<span data-ttu-id="9acdc-296">_sip _sip._tls。</span><span class="sxs-lookup"><span data-stu-id="9acdc-296">_sip._tls.</span></span> <span data-ttu-id="9acdc-297">*domain_name*。</span><span class="sxs-lookup"><span data-stu-id="9acdc-297">*domain_name*.</span></span> <span data-ttu-id="9acdc-298"> (，例如，_tls ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-298">(for example, _sip._tls.fourthcoffee.com.)</span></span>  <br/> <span data-ttu-id="9acdc-299">**此值必須以英文句點 (.) 結尾。**</span><span class="sxs-lookup"><span data-stu-id="9acdc-299">**This value MUST end with a period (.)**</span></span> <br/> |<span data-ttu-id="9acdc-300">3600</span><span class="sxs-lookup"><span data-stu-id="9acdc-300">3600</span></span>  <br/> |<span data-ttu-id="9acdc-301">SRV</span><span class="sxs-lookup"><span data-stu-id="9acdc-301">SRV</span></span>  <br/> |<span data-ttu-id="9acdc-302">100</span><span class="sxs-lookup"><span data-stu-id="9acdc-302">100</span></span>  <br/> |<span data-ttu-id="9acdc-303">1 </span><span class="sxs-lookup"><span data-stu-id="9acdc-303">1</span></span>  <br/> |<span data-ttu-id="9acdc-304">443</span><span class="sxs-lookup"><span data-stu-id="9acdc-304">443</span></span>  <br/> |<span data-ttu-id="9acdc-305">sipdir.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="9acdc-305">sipdir.online.lync.com</span></span>  <br/> |
+    |<span data-ttu-id="9acdc-306">_sipfederationtls _sipfederationtls._tcp。</span><span class="sxs-lookup"><span data-stu-id="9acdc-306">_sipfederationtls._tcp.</span></span> <span data-ttu-id="9acdc-307">*domain_name*。</span><span class="sxs-lookup"><span data-stu-id="9acdc-307">*domain_name*.</span></span> <span data-ttu-id="9acdc-308"> (，例如，_tcp ) </span><span class="sxs-lookup"><span data-stu-id="9acdc-308">(for example, _sipfederationtls._tcp.fourthcoffee.com.)</span></span>  <br/> <span data-ttu-id="9acdc-309">**此值必須以英文句點 (.) 結尾。**</span><span class="sxs-lookup"><span data-stu-id="9acdc-309">**This value MUST end with a period (.)**</span></span> <br/> |<span data-ttu-id="9acdc-310">3600</span><span class="sxs-lookup"><span data-stu-id="9acdc-310">3600</span></span>  <br/> |<span data-ttu-id="9acdc-311">SRV</span><span class="sxs-lookup"><span data-stu-id="9acdc-311">SRV</span></span>  <br/> |<span data-ttu-id="9acdc-312">100</span><span class="sxs-lookup"><span data-stu-id="9acdc-312">100</span></span>  <br/> |<span data-ttu-id="9acdc-313">1 </span><span class="sxs-lookup"><span data-stu-id="9acdc-313">1</span></span>  <br/> |<span data-ttu-id="9acdc-314">5061</span><span class="sxs-lookup"><span data-stu-id="9acdc-314">5061</span></span>  <br/> |<span data-ttu-id="9acdc-315">sipfed.online.lync.com</span><span class="sxs-lookup"><span data-stu-id="9acdc-315">sipfed.online.lync.com</span></span>  <br/> |
    
 
-4. 選取 [ **新增記錄**]。
+4. <span data-ttu-id="9acdc-316">選取 [ **新增記錄**]。</span><span class="sxs-lookup"><span data-stu-id="9acdc-316">Select **Add Record**.</span></span>
 
   
-5. 新增另一筆 SRV 記錄。
+5. <span data-ttu-id="9acdc-317">新增另一筆 SRV 記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-317">Add the other SRV record.</span></span>
     
-    在 [ **Add a record] （新增記錄** ）區段中，使用表格中下一列的值來建立記錄，然後再選取 [ **新增記錄** ] 以完成記錄。 
+    <span data-ttu-id="9acdc-318">在 [ **Add a record] （新增記錄** ）區段中，使用表格中下一列的值來建立記錄，然後再選取 [ **新增記錄** ] 以完成記錄。</span><span class="sxs-lookup"><span data-stu-id="9acdc-318">In the **Add a Record** section, create a record by using the values from the next row in the table, and then again select **Add Record** to complete that record.</span></span> 
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 
+> <span data-ttu-id="9acdc-319">Typically it takes about 15 minutes for DNS changes to take effect.</span><span class="sxs-lookup"><span data-stu-id="9acdc-319">Typically it takes about 15 minutes for DNS changes to take effect.</span></span> <span data-ttu-id="9acdc-320">然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。</span><span class="sxs-lookup"><span data-stu-id="9acdc-320">However, it can occasionally take longer for a change you've made to update across the Internet's DNS system.</span></span> <span data-ttu-id="9acdc-321">在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。</span><span class="sxs-lookup"><span data-stu-id="9acdc-321">If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md).</span></span> 
