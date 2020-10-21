@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,23 +13,23 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a8fcca51130584b7cd92f35cbd731be7744da633
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c54cb0c502889ddd8d5b32ea8578d89e625bd1d8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400819"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637400"
 ---
-# <a name="payment-information-for-curacao"></a><span data-ttu-id="9c011-103">Curacao 的付款資訊</span><span class="sxs-lookup"><span data-stu-id="9c011-103">Payment information for Curacao</span></span>
+# <a name="payment-information-for-curacao"></a><span data-ttu-id="e0e6e-103">Curacao 的付款資訊</span><span class="sxs-lookup"><span data-stu-id="e0e6e-103">Payment information for Curacao</span></span>
 
-<span data-ttu-id="9c011-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="9c011-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="e0e6e-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="e0e6e-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="9c011-105">請在您的付款匯款中支付 [僅限 USD] 和 [參考發票號碼]。</span><span class="sxs-lookup"><span data-stu-id="9c011-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="e0e6e-105">請在您的付款匯款中 (s) ，只支付 USD 且參考發票編號。</span><span class="sxs-lookup"><span data-stu-id="e0e6e-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="9c011-106">電子基金轉移</span><span class="sxs-lookup"><span data-stu-id="9c011-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="e0e6e-106">電子基金轉移</span><span class="sxs-lookup"><span data-stu-id="e0e6e-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="9c011-107">**銀行：** 美洲銀行</span><span class="sxs-lookup"><span data-stu-id="9c011-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="9c011-108">**Branch：** 達拉斯</span><span class="sxs-lookup"><span data-stu-id="9c011-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="9c011-109">**SWIFT 程式碼：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="9c011-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="9c011-110">**帳戶號碼：** 4426587954</span><span class="sxs-lookup"><span data-stu-id="9c011-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="9c011-111">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="9c011-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="e0e6e-107">**銀行：** 美洲銀行</span><span class="sxs-lookup"><span data-stu-id="e0e6e-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="e0e6e-108">**Branch：** 達拉斯</span><span class="sxs-lookup"><span data-stu-id="e0e6e-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="e0e6e-109">**SWIFT 程式碼：** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="e0e6e-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="e0e6e-110">**帳戶號碼：** 4426587954</span><span class="sxs-lookup"><span data-stu-id="e0e6e-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="e0e6e-111">**帳戶名稱：** 微軟</span><span class="sxs-lookup"><span data-stu-id="e0e6e-111">**Account Name:** Microsoft</span></span>  

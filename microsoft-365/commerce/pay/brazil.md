@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,15 +13,15 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e9369bf6c345f6d25c5bd618530e1600288a97ab
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 9cf6c9052147571c4892d34420a44b2583f3e3d3
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44404187"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637674"
 ---
-# <a name="payment-information-for-brazil"></a><span data-ttu-id="cdeff-103">巴西的付款資訊</span><span class="sxs-lookup"><span data-stu-id="cdeff-103">Payment information for Brazil</span></span>
+# <a name="payment-information-for-brazil"></a><span data-ttu-id="b53c1-103">巴西的付款資訊</span><span class="sxs-lookup"><span data-stu-id="b53c1-103">Payment information for Brazil</span></span>
 
-<span data-ttu-id="cdeff-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="cdeff-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="b53c1-104">[尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="b53c1-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="cdeff-105">請遵循發票上的付款指示，以及付款匯款上的參考發票號碼。</span><span class="sxs-lookup"><span data-stu-id="cdeff-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  
+<span data-ttu-id="b53c1-105">請遵循發票上的付款指示及參考發票編號 (s) 上的付款匯款。</span><span class="sxs-lookup"><span data-stu-id="b53c1-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  
