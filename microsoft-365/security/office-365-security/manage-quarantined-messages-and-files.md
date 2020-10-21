@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Office 365 Advanced 威脅防護的組織中的系統管理員 (Office 365 ATP) 也可管理 SharePoint 線上、OneDrive 商務和 Microsoft 小組的隔離檔案。
-ms.openlocfilehash: 5e1115157ef7d67bc7a3f626eb61d01ecc0986cb
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 65cf0a116dbed3dce93db8e34fa96d6ab68a9c9e
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600538"
+ms.locfileid: "48626164"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
@@ -70,6 +70,7 @@ ms.locfileid: "48600538"
    - **隔離原因**<sup>\*</sup>
    - **已釋出？**<sup>\*</sup>
    - **原則類型**<sup>\*</sup>
+   - **到期**
    - **收件者**
    - **郵件識別碼**
    - **原則名稱**
@@ -95,12 +96,12 @@ ms.locfileid: "48600538"
      - **惡意程式碼**
      - **垃圾郵件**
      - **高信賴網路釣魚**
-     
+
    - **原則類型**：依原則類型篩選郵件：
      - **反惡意程式碼原則**
      - **安全附件原則**
      - **反網路釣魚原則**
-     - **主控內容篩選原則**
+     - **主控內容篩選原則** (反垃圾郵件原則) 
      - **傳輸規則**
 
    - **電子郵件收件**者：所有使用者或僅傳送給您的郵件。 使用者只能管理傳送給他們的隔離郵件。
@@ -120,6 +121,8 @@ ms.locfileid: "48600538"
    - **收件者電子郵件地址**：單一收件者的電子郵件地址。
 
    - **主旨**：使用郵件的完整主旨。 搜尋時不會區分大小寫。
+  
+   - **原則名稱**：負責隔離郵件的原則名稱。
 
    輸入搜尋準則後，請按一下![重新整理按鈕](../../media/scc-quarantine-refresh.png) [重新整理]**** 來篩選結果。
 
@@ -147,6 +150,8 @@ ms.locfileid: "48600538"
 
 - **隔離原因**：顯示郵件是否已識別為 **垃圾**郵件、 **大量**、 **網路釣魚詐騙**、符合郵件流程規則 (**傳輸規則**) 或已識別為包含 **惡意**代碼。
 
+- **收件者計數**
+
 - **收件者**：如果郵件包含多個收件者，則必須按一下 [預覽郵件]**** 或 [檢視郵件標頭]**** 以查看完整的收件者清單。
 
 - **到期**：郵件會自動從隔離區永久刪除的日期/時間。
@@ -173,7 +178,6 @@ ms.locfileid: "48600538"
   關於釋放郵件的附注：
 
   - 您無法將郵件多次發佈到相同的收件者。
-
   - 只有尚未收到郵件的收件者會出現在可能的收件者清單中。
 
 - **檢視郵件標頭**：選擇此連結來查看郵件標頭文字。 若要深入分析標頭欄位和值，請將郵件標頭文字複製到您的剪貼簿，然後選擇 [Microsoft 郵件標頭分析器]**** 來移至遠端連線分析程式 (如果您想在不離開 Microsoft 365 的情況下完成這項工作，請按一下滑鼠右鍵並選擇 [在新索引標籤中開啟]****)。 將郵件標頭貼至 [郵件標頭分析器] 區段的頁面上，並選擇 [分析標頭]****：
@@ -219,13 +223,13 @@ ms.locfileid: "48600538"
 > [!NOTE]
 > 本節中隔離檔的程式僅適用于 ATP 方案1和 Plan 2 訂閱者。
 
-在具有 ATP 的組織中，系統管理員可以在 SharePoint Online、商務 OneDrive 商務和 Microsoft 小組中管理隔離的檔案。
+在具有 ATP 的組織中，系統管理員可以在 SharePoint Online、商務 OneDrive 商務和 Microsoft 小組中管理隔離的檔案。 若要啟用這些檔案的保護，請參閱 [開啟 ATP 的 SharePoint、OneDrive 和 Microsoft 團隊](turn-on-atp-for-spo-odb-and-teams.md)。
 
 ### <a name="view-quarantined-files"></a>查看隔離的檔案
 
 1. 在「安全性與合規性中心」內，移至 [威脅管理]**** \> [檢閱]**** \> [隔離]****。
 
-2. 變更 **隔離** 為 **預設值檔的**視圖。 您可以按一下可用的欄標題，依序排序欄位。
+2. 變更**隔離****至值檔的**視圖。 您可以按一下可用的欄標題，依序排序欄位。
 
 3. 您可以按一下可用資料行標題來排序結果。 按一下 [修改資料行]**** 可顯示最多七個資料行。 預設的欄會以星號 () 標示 <sup>\*</sup> ：
 
@@ -248,6 +252,7 @@ ms.locfileid: "48600538"
      - 自訂的日期/時間範圍。
    - **接收時間**
    - **隔離原因**：唯一可用的值為 **惡意**代碼。
+   - **原則類型**
 
 找到特定隔離的檔案之後，請選取檔案以查看其詳細資料，並對其採取動作 (例如，view、release、下載中心或 delete message) 。
 
@@ -293,8 +298,6 @@ ms.locfileid: "48600538"
 
 - **發行檔**
 - **刪除**檔案：在出現的警告中，按一下 [ **是]** 後，就會立即刪除檔案。
-
-1. 使用具有全域管理員許可權的工作或學校帳戶 (或適當的安全性 & 合規性中心角色) 在組織中，登入並 [移至安全性 & 規範中心](../../compliance/go-to-the-securitycompliance-center.md)。
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>使用 Exchange Online PowerShell 或獨立 EOP PowerShell 來查看及管理隔離的郵件和檔案
 

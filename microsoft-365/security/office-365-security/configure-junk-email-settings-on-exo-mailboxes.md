@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Exchange Online 信箱中設定垃圾郵件設定。 在 Outlook 或 web 上的 Outlook 中，使用者可以使用許多這些設定。
-ms.openlocfilehash: 632c6f37b80cdc38b513f66ad42e4a5c25b41f25
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ed1513dc16caa25edfe0acd62db59304d90e76c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203344"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626152"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>設定 Exchange Online 信箱上的垃圾郵件設定
 
@@ -42,7 +42,7 @@ ms.locfileid: "48203344"
 
  當信箱上的垃圾郵件規則停用時，EOP 無法根據垃圾郵件篩選判定動作將郵件移至垃圾郵件資料夾。 **將郵件移至垃圾郵件資料夾** 或信箱上的安全清單集合。
 
-系統管理員可以使用 Exchange Online PowerShell 來停用、啟用和查看信箱上垃圾郵件規則的狀態。 系統管理員也可以使用 Exchange Online PowerShell，在 [安全寄件者] 清單、[安全的收件者] 清單和 [封鎖寄件者] 清單) 的 (信箱上，設定安全清單集合中的專案
+系統管理員可以使用 Exchange Online PowerShell 來停用、啟用和查看信箱上垃圾郵件規則的狀態。 系統管理員也可以使用 Exchange Online PowerShell，在 [安全的寄件者] 清單、[安全的收件者] 清單和 [封鎖的寄件者] 清單) 中，設定 (信箱上的安全清單集合
 
 > [!NOTE]
 > 來自使用者已新增到自己安全寄件者清單中的寄件者的郵件，將會略過連線篩選做為 EOP (SCL 為-1) 的一部分。 若要防止使用者將專案新增至 Outlook 的安全寄件者清單，請使用本主題稍後的 [  [關於 Outlook 中的垃圾郵件設定](#about-junk-email-settings-in-outlook) ] 區段中所述的群組原則。 原則篩選、內容篩選和高級威脅防護 (ATP) 檢查仍會套用到郵件。
