@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: e2fba7a5cf83838c440cdea8436b5bbdd360885b
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: 7f1d3e13aebe7c7924732922bbbfc7417622d8c5
+ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318172"
+ms.lasthandoff: 10/20/2020
+ms.locfileid: "48626186"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -125,13 +125,9 @@ ms.locfileid: "48318172"
 
     - 若**為商務用 Skype Online 聊天通訊**：指派個別使用者或指派[通訊群組](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE)至通訊相容性原則。 此設定適用于一對一或一對多的使用者/聊天關聯。
 
-- **協力廠商來源**：您可以掃描來自協力廠商來源的通訊，以用於將資料匯入至 Microsoft 365 組織中的信箱。 連接器支援下列協力廠商資源：
+- **協力廠商來源**：您可以掃描 Bloomberg 中的資料匯365入的通訊，從協力廠商來源（如 [立即](archive-instant-bloomberg-data.md)、 [時差](archive-slack-data.md)、 [縮放](archive-zoommeetings-data.md)性、SMS 及許多其他專案）。 如需通訊相容性所支援之連接器的完整清單，請參閱封存 [協力廠商資料](archiving-third-party-data.md)。
 
-    - [Instant Bloomberg](archive-instant-bloomberg-data.md)
-    - [Bloomberg Message](archive-bloomberg-message-data.md)
-    - [ICE Chat](archive-icechat-data.md)
-
-您必須先為 Microsoft 365 組織設定協力廠商連接器，才能將連接器指派給通訊相容性原則。 通訊相容性原則嚮導的 [ **Third-Party 來源** ] 區段只會顯示目前設定的協力廠商連接器。
+    您必須先為 Microsoft 365 組織設定協力廠商連接器，才能將連接器指派給通訊相容性原則。 通訊相容性原則嚮導的 [ **Third-Party 來源** ] 區段只會顯示目前設定的協力廠商連接器。
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>從 Office 365 的監察過渡
 
@@ -256,7 +252,7 @@ ms.locfileid: "48318172"
 |**範本名稱** | 是 | 您將在修正期間于通知工作流程中選取之公告範本的易記名稱，會支援文字字元。 |
 | **寄件者位址** | 是 | 一或多個使用者或群組的位址，會將郵件傳送給具有原則相符的使用者，並從 Active Directory 中為您的訂閱選取。 |
 | **抄送和 BCC 位址** | 否 | 選取的使用者或群組，以取得您訂閱之 Active Directory 的原則相符的通知。 |
-| **Subject** | 是 | 顯示在郵件主旨行中的資訊，支援文字字元。 |
+| **主旨** | 是 | 顯示在郵件主旨行中的資訊，支援文字字元。 |
 | **郵件內文** | 是 | 出現在郵件內文中的資訊支援文字或 HTML 值。 |
 
 ### <a name="html-for-notices"></a>用於通知的 HTML
