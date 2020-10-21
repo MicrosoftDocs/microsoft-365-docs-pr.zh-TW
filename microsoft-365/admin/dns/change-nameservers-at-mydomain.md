@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
 description: 瞭解如何設定 Microsoft，以在 MyDomain 管理自訂網域的 DNS 記錄。
-ms.openlocfilehash: d8fc61c3adbe8b5b865bd82b8c4e0944198921e7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 44d36f872ddbeeba1948ee8a7a4db029895fcb8c
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400626"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646412"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-mydomain"></a>使用 MyDomain 變更名稱伺服器以設定 Microsoft
 
  若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
   
-如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。 （如果您願意，您可以[在 MyDomain 管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-mydomain.md)。）
+如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。  (如果您願意，您可以 [在 MyDomain 管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-mydomain.md)。 ) 
   
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 
@@ -83,7 +83,7 @@ ms.locfileid: "44400626"
 若要使用 Microsoft 設定您的網域，請在您的網域註冊機構變更網域的 NS 記錄，以指向 Microsoft 主要和次要名稱伺服器。 這會將 Microsoft 設定為您為您更新網域的 DNS 記錄。 我們會新增所有記錄，好讓電子郵件、商務用 Skype Online 和您的公用網站都能使用您的網域，為您做好一切準備。
   
 > [!CAUTION]
-> 當您將網域的 NS 記錄變更為指向 Microsoft 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，所有傳送至您網域的電子郵件（如 rob@ *your_domain。* com）在您進行此變更之後，將會開始進行 Microsoft。 
+> 當您將網域的 NS 記錄變更為指向 Microsoft 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，所有傳送至您網域的電子郵件 (如 rob@ *your_domain。* 在您進行此變更之後，com) 會從 Microsoft 開始。 
   
 > [!IMPORTANT]
 > The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already in the list. <br/> When you have completed the steps in this section, the only nameservers that should be listed are these four:
@@ -94,11 +94,11 @@ ms.locfileid: "44400626"
     
 3. 在 **[網域]** 下方，選取要編輯的網域名稱。
     
-4. 在 [**一覽**] 列中，選取 [**名稱伺服器**]。
+4. 在 [ **一覽** ] 列中，選取 [ **名稱伺服器**]。
     
     ![MyDomain-重新委派-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
   
-5. 在 [**更新名稱伺服器**] 區段中，選取 [**使用不同的名稱伺服器**]。
+5. 在 [ **更新名稱伺服器** ] 區段中，選取 [ **使用不同的名稱伺服器**]。
     
     ![MyDomain-重新委派-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
   
@@ -113,13 +113,13 @@ ms.locfileid: "44400626"
 ### <a name="if-the-correct-nameservers-are-not-already-listed"></a>如果列表上「沒有」正確的名稱伺服器
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers. （也就是說，只刪除所有*未*命名為**ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或**ns4.bdm.microsoftonline.com**的目前名稱伺服器。） 
+> Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的目前名稱伺服器。 )  
   
-1. 選取 [名稱伺服器 **：** ] 欄位中的每個專案，然後按下鍵盤上的**Delete**鍵，以刪除現有的名稱伺服器。 
+1. 選取 [名稱伺服器 **：** ] 欄位中的每個專案，然後按下鍵盤上的 **Delete** 鍵，以刪除現有的名稱伺服器。 
     
     ![MyDomain-重新委派-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
   
-2. 選取 [**增加其他**兩項]，以新增兩個新的名稱伺服器列。 
+2. 選取 [ **增加其他** 兩項]，以新增兩個新的名稱伺服器列。 
     
     ![MyDomain-重新委派-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
   
@@ -134,7 +134,7 @@ ms.locfileid: "44400626"
    
    ![MyDomain-重新委派-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
     ![MyDomain-重新委派-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
   

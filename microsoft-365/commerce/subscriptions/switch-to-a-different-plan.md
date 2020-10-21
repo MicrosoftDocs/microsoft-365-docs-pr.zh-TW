@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,18 +25,18 @@ search.appverid:
 - GEA150
 ms.assetid: 73318661-8f33-478b-bcc7-fb8d69dbb22a
 description: 瞭解如何切換至新的 Microsoft 365 for business 訂閱。
-ms.openlocfilehash: 299de3618046d7bbf4f9e852f9c623bc02638715
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 1cbdcafc2ef337546f31d2d8f8fc9ef0bf7722f8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818632"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647744"
 ---
 # <a name="switch-to-a-different-microsoft-365-for-business-plan"></a>切換到其他的商務用 Microsoft 365 方案
 
 當您的業務變更時，或需要更多功能時，您可以切換方案。  
 
-切換方案最簡單的方法是使用系統管理中心中的 **[切換方案]** 按鈕。 不過，並非所有情況都支援使用 [**切換方案**] 按鈕。 在某些情況下，您可能可以手動切換方案。
+切換方案最簡單的方法是使用系統管理中心中的 **[切換方案]** 按鈕。 不過，並非所有情況都支援使用 [ **切換方案** ] 按鈕。 在某些情況下，您可能可以手動切換方案。
 
 
 **需要其他內容嗎？**
@@ -46,7 +46,7 @@ ms.locfileid: "44818632"
 
 ## <a name="use-the-switch-plans-button"></a>使用 [切換方案] 按鈕
 
-當您使用 [**切換方案**] 按鈕時，會逐步完成購買新方案的程式，您可以將目前的計畫切換成，所有使用者都會自動在新方案中指派授權，而且舊的計畫會為您取消。
+當您使用 [ **切換方案** ] 按鈕時，會逐步完成購買新方案的程式，您可以將目前的計畫切換成，所有使用者都會自動在新方案中指派授權，而且舊的計畫會為您取消。
 
 ::: moniker range="o365-worldwide"
 
@@ -66,11 +66,11 @@ ms.locfileid: "44818632"
 
 ::: moniker-end
 
-2. 選取 [**切換方案**]，以查看可用的新方案清單。
+2. 選取 [ **切換方案** ]，以查看可用的新方案清單。
 
     [[切換方案] 按鈕不存在](#the-switch-plans-button-isnt-there)  | [我看不到想要的計畫](#i-dont-see-the-plan-i-want)
 
-3. 選取計畫，以查看每月的新總成本。 請務必閱讀**重要資訊**，然後選取 **[下一步]** 以取出。
+3. 選取計畫，以查看每月的新總成本。 請務必閱讀 **重要資訊**，然後選取 **[下一步]** 以取出。
 
     [協助我選擇新的計畫](https://go.microsoft.com/fwlink/p/?linkid=842056)。
 
@@ -80,21 +80,21 @@ ms.locfileid: "44818632"
 
 ## <a name="the-switch-plans-button-isnt-there"></a>[切換方案] 按鈕不存在
 
-如果 [**切換方案**] 按鈕無法使用，您可以嘗試[手動切換方案](switch-plans-manually.md)，或[致電支援人員](../../admin/contact-support-for-business-products.md)。 如需詳細資訊，請參閱[為什麼我無法切換方案？](why-can-t-i-switch-plans.md)
+如果 [ **切換方案** ] 按鈕無法使用，您可以嘗試 [手動切換方案](switch-plans-manually.md) ，或 [致電支援人員](../../admin/contact-support-for-business-products.md)。 如需詳細資訊，請參閱 [為什麼我無法切換方案？](why-can-t-i-switch-plans.md)
   
 以下是可能發生這種情況的原因：
   
-- 您正在使用一個以上的 Microsoft 365 方案。 若所有使用者都訂閱相同的計畫，您就只能使用 [**切換方案**] 按鈕。
+- 您正在使用一個以上的 Microsoft 365 方案。 若所有使用者都訂閱相同的計畫，您就只能使用 [ **切換方案** ] 按鈕。
 
 - 您已在使用 Office 365 企業版 E5，所以您已具備 Office 365 中所有的功能。
 
 ## <a name="i-dont-see-the-plan-i-want"></a>我看不到想要的計畫
 
-當您使用 [**切換方案**] 按鈕時，您可以切換的計畫會根據目前計畫中的服務來顯示。 您只能使用 [**切換方案**] 按鈕來切換至具有相同資料相關服務的計畫，或切換至較高的版本。 這可確保在切換過程中使用者不會遺失與這些服務相關的資料。
+當您使用 [ **切換方案** ] 按鈕時，您可以切換的計畫會根據目前計畫中的服務來顯示。 您只能使用 [ **切換方案** ] 按鈕來切換至具有相同資料相關服務的計畫，或切換至較高的版本。 這可確保在切換過程中使用者不會遺失與這些服務相關的資料。
   
-若要在切換之前比較方案，請參閱[Microsoft 365 for business 產品比較](https://go.microsoft.com/fwlink/p/?linkid=842056)頁面。 如需技術規格，請參閱[Microsoft 365 服務描述](https://go.microsoft.com/fwlink/p/?linkid=842275)。
+若要在切換之前比較方案，請參閱 [Microsoft 365 for business 產品比較](https://go.microsoft.com/fwlink/p/?linkid=842056) 頁面。 如需技術規格，請參閱 [Microsoft 365 服務描述](https://go.microsoft.com/fwlink/p/?linkid=842275)。
   
-如果您想要使用較少的服務切換到方案，您可以[手動切換方案](switch-plans-manually.md)，或[致電 Microsoft 支援部門](../../admin/contact-support-for-business-products.md)以尋求協助。
+如果您想要使用較少的服務切換到方案，您可以 [手動切換方案](switch-plans-manually.md)，或 [致電 Microsoft 支援部門](../../admin/contact-support-for-business-products.md) 以尋求協助。
   
 ## <a name="why-some-switches-take-longer"></a>為何有些參數需要一些時間
 

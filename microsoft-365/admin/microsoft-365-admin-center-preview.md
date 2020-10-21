@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: 深入瞭解 Microsoft 365 系統管理中心。
-ms.openlocfilehash: 720130f01000e1f8845d2fa28dbc2d278a258ebf
-ms.sourcegitcommit: 9195c83c725a7e6ed395ce0253304da54e2195f0
+ms.openlocfilehash: 2e54ad576b944153332aaec2012538e84c444db1
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44560420"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645068"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>關於 Microsoft 365 系統管理中心
 
@@ -31,7 +31,7 @@ ms.locfileid: "44560420"
 
 Microsoft 365 系統管理中心專為 IT 小組建立，以簡化您的 Microsoft 365 服務的管理方法。 系統管理中心會根據您角色或組織的獨特需求，提供量身定制的經驗，提高日常工作的效率，並提供可行動的觀點，以協助您進行資料導向，以提供更佳的使用者體驗。
 
-Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般進入點，可供存取 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。 專業工作區（如安全性或裝置管理），允許更細微的控制。 如需系統管理中心如何一起運作的詳細資訊，請參閱本文稍後[的特定類型的 IT 角色及其他工作區（如安全性、裝置管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。
+Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般進入點，可供存取 [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) 。 專業工作區（如安全性或裝置管理），允許更細微的控制。 如需系統管理中心如何一起運作的詳細資訊，請參閱本文稍後 [的特定類型的 IT 角色及其他工作區（如安全性、裝置管理或 Exchange）](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) 。
 
 ::: moniker-end
 
@@ -53,15 +53,15 @@ Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般
 
 ### <a name="turn-on-targeted-release"></a>開啟目標版本
 
-1. 在[admin.microsoft.com](https://admin.microsoft.com)中登入，移至功能窗格，然後選取 [**設定** \> **組織設定檔**]。
+1. 在 [admin.microsoft.com](https://admin.microsoft.com)中登入，移至功能窗格，然後選取 [ **設定** \> **組織設定檔**]。
 
-2. 移至 [**發行偏好**設定卡]，然後選取 [**編輯**]。 
+2. 移至 [ **發行偏好** 設定卡]，然後選取 [ **編輯**]。 
     
-3. **為所選使用者**選取 [所有人] 或 [目標版本]**的 [目標版本**]。 如果您為選取的使用者選擇 [目標版本]，請確定您將系統管理員帳戶（以及您組織中要加入的任何其他系統管理員）新增至選取的使用者清單。
+3. **為所選使用者**選取 [所有人] 或 [目標版本]**的 [目標版本**]。 如果您為選取的使用者選擇 [目標版本]，請務必在您的組織中新增您的系統管理員帳戶 (和任何其他系統管理員，以加入) 至選取的使用者清單。
     
 ### <a name="admin-center-feedback"></a>系統管理員中心意見反應
 
-[！附注] 在系統管理中心中，您可以在每一頁底部的 [**需要協助 ...** ] 按鈕上，選取 [**提供意見**反應]，以提供有關您的體驗的 Microsoft 意見反應。 請告訴我們您喜歡的專案，以及我們能夠做什麼。 此外，您還可以從向下取得整體印象或新發佈之特定經驗的時間，取得彈出的調查。 您也可以在本文結束時提供意見反應，請選取 [**此資訊是否有説明？**
+[！附注] 在系統管理中心中，您可以在每一頁底部的 [**需要協助 ...** ] 按鈕上，選取 [**提供意見**反應]，以提供有關您的體驗的 Microsoft 意見反應。 請告訴我們您喜歡的專案，以及我們能夠做什麼。 此外，您還可以從向下取得整體印象或新發佈之特定經驗的時間，取得彈出的調查。 您也可以在本文結束時提供意見反應，請選取 [ **此資訊是否有説明？**
   
 ::: moniker-end
 
@@ -71,9 +71,9 @@ Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般
 
 當新的系統管理中心位於預覽中時，您可以使用位於系統管理中心首頁頂端的 [切換]，來回切換新的系統管理中心和舊的系統管理中心。 新的系統管理中心完全正常運作，且具有舊版系統管理中心的所有功能。
 
-若要嘗試新的系統管理中心，請開啟切換以<b>嘗試預覽</b>。 然後切換會顯示<b>預覽</b>。 當您下次登入系統管理中心時，我們會記住您的選取範圍，並登入新的系統管理中心。
+若要嘗試新的系統管理中心，請開啟切換以 <b>嘗試預覽</b>。 然後切換會顯示 <b>預覽</b>。 當您下次登入系統管理中心時，我們會記住您的選取範圍，並登入新的系統管理中心。
 
-若要回到使用舊的系統管理中心，請開啟 [從<b>預覽</b>切換] 至 [關閉] 位置。 當您下次登入系統管理中心時，我們會登入舊的系統管理中心。
+若要回到使用舊的系統管理中心，請開啟 [從 <b>預覽</b> 切換] 至 [關閉] 位置。 當您下次登入系統管理中心時，我們會登入舊的系統管理中心。
 
 ::: moniker-end
 
@@ -81,7 +81,7 @@ Microsoft 365 系統管理中心是所有 Microsoft 365 系統管理員的一般
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-您不會在這裡看到您的問題答案？ 請移至此頁面底部的 [**意見**反應] 區段，並詢問您的問題。 
+您不會在這裡看到您的問題答案？ 請移至此頁面底部的 [ **意見** 反應] 區段，並詢問您的問題。 
   
 ## <a name="can-i-do-everything-in-the-new-admin-center-that-i-can-do-in-the-old-admin-center"></a>我可以在新的系統管理中心執行所有可執行檔系統管理中心嗎？
 
@@ -95,13 +95,13 @@ Microsoft 365 是完整的智慧解決方案，包括 Office 365、Windows 10 �
 - Microsoft 365 企業版 E3
 - Microsoft 365 企業版 E5
     
-如需詳細資訊，請參閱[嘗試或購買 Microsoft 365 訂閱](../commerce/try-or-buy-microsoft-365.md)。
+如需詳細資訊，請參閱 [嘗試或購買 Microsoft 365 訂閱](../commerce/try-or-buy-microsoft-365.md)。
 
 ## <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>我發現 bug 或我想要要求功能增強功能。 如何讓 Microsoft 知道？
 
-我們喜歡聽到您的來信！ 報告錯誤和共用意見反應可協助我們改善 Microsoft 365 系統管理中心。 若要提供意見反應，請選取頁面底部的 [**意見**反應] 按鈕，並使用表單將您的想法傳送給我們。 如果您希望 Microsoft 365 系統管理中心小組的人員追蹤您的意見，請選取核取方塊，並確認您的電子郵件地址。 我們無法承諾跟進每一項意見反應，但我們要嘗試！ 
+我們喜歡聽到您的來信！ 報告錯誤和共用意見反應可協助我們改善 Microsoft 365 系統管理中心。 若要提供意見反應，請選取頁面底部的 [ **意見** 反應] 按鈕，並使用表單將您的想法傳送給我們。 如果您希望 Microsoft 365 系統管理中心小組的人員追蹤您的意見，請選取核取方塊，並確認您的電子郵件地址。 我們無法承諾跟進每一項意見反應，但我們要嘗試！ 
   
-您也可以從系統管理中心以外的 UserVoice 論壇中提供意見反應。 您可以使用此頁面來進行其他論壇使用者可投票的功能建議：[新系統管理中心的 UserVoice 論壇](https://go.microsoft.com/fwlink/?linkid=2024994)。
+您也可以從系統管理中心以外的 UserVoice 論壇中提供意見反應。 您可以使用此頁面來進行其他論壇使用者可投票的功能建議： [新系統管理中心的 UserVoice 論壇](https://go.microsoft.com/fwlink/?linkid=2024994)。
 
 ## <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>IT 角色的特定類型及其他工作區（如安全性、裝置管理或 Exchange）的情況為何？
 

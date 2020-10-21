@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以在 Microsoft 的 Windows 基礎 DNS 上進行。
-ms.openlocfilehash: f0c2b8c4aaaa1012e0f11e3778c7ca6b092c053f
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 471aa0323bd59b09c672431ef39bb33f5c89b555
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47306944"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645572"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用以 Windows 為基礎的 DNS 建立 Microsoft 的 DNS 記錄
 
@@ -76,14 +76,14 @@ ms.locfileid: "47306944"
     - 主機名稱： sip
     - 類型： CNAME
     - 位址： sipdir.online.lync.com
-- 選取 **[確定]**。
+- 選取 [確定]****。
 
 新增商務用 Skype Online 自動探索 CNAME 記錄。  
 - 在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname) **]。 在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     - 主機名稱： lyncdiscover
     - 類型： CNAME
     - 位址： webdir.online.lync.com
-- 選取 **[確定]**。
+- 選取 [確定]****。
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>為 Microsoft 的 (MDM) 新增兩個適用于行動裝置管理的 CNAME 記錄。
 
@@ -97,7 +97,7 @@ ms.locfileid: "47306944"
 - 主機名稱： enterpriseregistration
 - 類型： CNAME
 - 位址： enterpriseregistration.windows.net
-- 選取 **[確定]**。 
+- 選取 [確定]****。 
 
 新增 MDM Enterpriseenrollment CNAME 記錄。 
 -  在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname) **]。 
@@ -105,7 +105,7 @@ ms.locfileid: "47306944"
     - 主機名稱： enterpriseenrollment
     - 類型： CNAME
     - 位址： enterpriseenrollment-s.manage.microsoft.com
-- 選取 **[確定]**。
+- 選取 [確定]****。
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 <a name="BKMK_add_TXT"> </a>
@@ -125,7 +125,7 @@ ms.locfileid: "47306944"
 -  記錄類型： TXT
 -  Address： v = spf1 包含: spf.protection.outlook.com。 .com-all 
          
--  選取 **[確定]**。
+-  選取 [確定]****。
    
 ## <a name="add-srv-records"></a>新增 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
@@ -142,7 +142,7 @@ ms.locfileid: "47306944"
     -  加權：1
     -  連接埠：443
     -  目標 (主機名稱) ： sipdir.online.lync.com
--  選取 **[確定]**。 
+-  選取 [確定]****。 
 
 
 為商務用 Skype Online 同盟新增 SIP SRV 記錄。  
@@ -155,7 +155,7 @@ ms.locfileid: "47306944"
     -  加權：1
     -  連接埠：5061
     -  目標 (主機名稱) ： sipfed.online.lync.com
--  選取 **[確定]**。 
+-  選取 [確定]****。 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>新增記錄以驗證您擁有網域 (若您尚未這麼做)
 <a name="BKMK_verify"> </a>

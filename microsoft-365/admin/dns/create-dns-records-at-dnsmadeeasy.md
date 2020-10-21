@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft DNSMadeEasy。
-ms.openlocfilehash: 07cf79b86e02fa79d59882fa51402cccc922c2b6
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 266f5e8460395ae10b9c430cf66e1f443126ff64
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307100"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646208"
 ---
 # <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>在 Microsoft 的 DNSMadeEasy 建立 DNS 記錄
 
@@ -64,7 +64,7 @@ ms.locfileid: "47307100"
     
     ||||
     |:-----|:-----|:-----|
-    |**名稱** <br/> |**值** <br/> |**TTL** <br/> |
+    |**名稱** <br/> |**Value** <br/> |**TTL** <br/> |
     |(將此欄位保留空白。)  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |1800  <br/> |
    
 5. 選取 **[提交]**。
@@ -185,7 +185,7 @@ ms.locfileid: "47307100"
   
 4. In the **Add TXT Records** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    |**名稱**|**值**|**TTL**|
+    |**名稱**|**Value**|**TTL**|
     |:-----|:-----|:-----|
     |(將此欄位保留空白。)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |1800  <br/> |
    

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Names.co.uk。
-ms.openlocfilehash: 1b519393e70483aa311354b96ebb11ad0feaa933
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: d3a3e68558efc3857d343b3298c3c01f0e8d8802
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400373"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645860"
 ---
 # <a name="create-dns-records-at-namescouk-for-microsoft"></a>在 Names.co.uk 建立 Microsoft 的 DNS 記錄
 
@@ -61,21 +61,21 @@ ms.locfileid: "44400373"
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
-    （如果您需要新增一列，請選取 **[新增 A/CNAME 記錄] （+）**。）
+     (如果您需要新增一列，請選取 [ **新增 A/CNAME 記錄 (+) **。 ) 
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
         
-    |**主機名稱**|**類型**|**結果**|
+    |**主機名稱**|**Type**|**結果**|
     |:-----|:-----|:-----|
     |(Leave this field empty.)  <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)    |
        
     ![NamesUK-BP-Verify-1-1](../../media/91ed1f22-a796-418d-bbb0-345e2cd99bde.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
     ![NamesUK-BP-Verify-1-2](../../media/40e991f9-2209-4210-8762-981cca670d70.png)
   
@@ -115,29 +115,29 @@ ms.locfileid: "44400373"
     
     ![NamesUK-BP-Configure-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. 在 [ **ADD/MODIFY DNS 區域**] 頁面的 [**郵件交換記錄**] 區段中，于新記錄的方塊中，輸入或複製並貼上下表中的值。 
+3. 在 [ **ADD/MODIFY DNS 區域** ] 頁面的 [ **郵件交換記錄** ] 區段中，于新記錄的方塊中，輸入或複製並貼上下表中的值。 
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
     |**主機名稱**|**優先順序**|**結果**|
     |:-----|:-----|:-----|
-    |(將此欄位保留空白。)  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> > [!NOTE]> *\<domain-key\>* 從您的 Microsoft 帳戶取得。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |(將此欄位保留空白。)  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]>  *\<domain-key\>*  從您的 Microsoft 帳戶取得。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-Configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
     ![NamesUK-BP-Configure-2-2](../../media/01e6c801-daa2-40ca-84f9-dcac6422257c.png)
   
-5. 如果 [**郵件交換記錄**] 區段中列出任何其他 MX 記錄，請選取它，然後按鍵盤上的**delete**鍵，逐一刪除。 
+5. 如果 [ **郵件交換記錄** ] 區段中列出任何其他 MX 記錄，請選取它，然後按鍵盤上的 **delete** 鍵，逐一刪除。 
     
     ![NamesUK-BP-Configure-2-3](../../media/f8e43926-b724-4690-94e7-ec4b8d7a8da5.png)
   
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
     ![NamesUK-BP-Configure-2-4](../../media/cd705919-d0bd-408f-82be-b54e732cb05c.png)
   
@@ -156,13 +156,13 @@ ms.locfileid: "44400373"
   
 3. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
-    （如果您需要新增一列，請選取 **[新增 A/CNAME 記錄] （+）**。）
+     (如果您需要新增一列，請選取 [ **新增 A/CNAME 記錄 (+) **。 ) 
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
-    |**Host Name**|**類型**|**結果**|
+    |**Host Name**|**Type**|**結果**|
     |:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
@@ -172,7 +172,7 @@ ms.locfileid: "44400373"
        
     ![NamesUK-BP-Configure-3-1](../../media/392772bf-2ed3-4959-9a9a-bb1611905e86.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
     ![NamesUK-BP-Configure-3-2](../../media/c009795e-7eef-4804-bf23-556f498306cc.png)
   
@@ -180,7 +180,7 @@ ms.locfileid: "44400373"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。
   
 1. 首先請用[這個連結](https://account.names.co.uk/dashboard#/)移至 Names.co.uk 上您的網域頁面。系統會提示您先登入。
     
@@ -192,27 +192,27 @@ ms.locfileid: "44400373"
     
     ![NamesUK-BP-Configure-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. 在 [**帳戶的 DNS 區域**] 頁面上的 [**功能變數名稱**] 欄中，選取您要更新的網功能變數名稱稱。 
+3. 在 [ **帳戶的 DNS 區域** ] 頁面上的 [ **功能變數名稱** ] 欄中，選取您要更新的網功能變數名稱稱。 
     
     ![NamesUK-BP-Configure-1-2-1](../../media/20254eec-6952-47ba-b12b-da32860ee7ef.png)
   
 4. On the **Add/Modify DNS Zone** page, in the **A, CNAME, AAAA, TXT and NS records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
-    （如果您需要新增一列，請選取 **[新增 A/CNAME 記錄] （+）**。）
+     (如果您需要新增一列，請選取 [ **新增 A/CNAME 記錄 (+) **。 ) 
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
-    |**主機名稱**|**類型**|**結果**|
+    |**主機名稱**|**Type**|**結果**|
     |:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |(Leave this field empty.)  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
        
     ![NamesUK-BP-Configure-4-1](../../media/cfc61387-630e-4aa0-8762-ef36eaeda44a.png)
   
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
     ![NamesUK-BP-Configure-4-2](../../media/b4d445a1-09c0-46c3-8141-672cc2831a9b.png)
   
@@ -229,18 +229,18 @@ ms.locfileid: "44400373"
     
     ![NamesUK-BP-Configure-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. 在 [ **ADD/MODIFY DNS 區域**] 頁面的 [**服務記錄**] 區段中，于新記錄的方塊中，輸入或複製並貼上下表中的值。 
+3. 在 [ **ADD/MODIFY DNS 區域** ] 頁面的 [ **服務記錄** ] 區段中，于新記錄的方塊中，輸入或複製並貼上下表中的值。 
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
-    |**Name**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**結果**|
+    |**名稱**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**結果**|
     |:-----|:-----|:-----|:-----|:-----|
-    |_sip。 _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls。 _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![NamesUK-BP-Configure-5-1](../../media/97a96523-005a-4058-9e12-19f6c3bf9b3b.png)
   
-4. 選取 [儲存]****。
+4. 選取 **[儲存]**。
     
     (您可能需要向下捲動。)
     

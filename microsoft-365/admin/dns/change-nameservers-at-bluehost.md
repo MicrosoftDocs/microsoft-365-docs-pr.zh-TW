@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 7712b6af-329c-43a0-af7b-c4e4c1befb0e
 description: '瞭解如何設定 Microsoft 以在 Bluehost 管理您的 DNS 記錄。 '
-ms.openlocfilehash: 56ebeab025984f0ecfefa579c8060578a2299073
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: c15ba11e0df57deaef61309f5bc6d1b2a60645b8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400662"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646460"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-bluehost"></a>使用 Bluehost 變更名稱伺服器以設定 Microsoft
 
  若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
   
-如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。 （如果您願意，您可以[管理 Bluehost 中的所有 DNS 記錄](create-dns-records-at-bluehost.md)。）
+如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。  (如果您願意，您可以 [管理 Bluehost 中的所有 DNS 記錄](create-dns-records-at-bluehost.md)。 ) 
   
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 
@@ -43,15 +43,15 @@ ms.locfileid: "44400662"
   
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面的 [**網域**] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
+2. 在 [ **網域** ] 頁面的 [ **網域** ] 區域中，尋找您要變更之網域的列，然後選取該網域的核取方塊。 
     
-    (You may have to scroll down.) 
+    (您可能需要向下捲動。) 
     
-3. 在 [ **domain_name** ] 區域的 [ **DNS 區域編輯器**] 列中，選取 [**管理 DNS 記錄**]。
+3. 在 [ **domain_name** ] 區域的 [ **DNS 區域編輯器** ] 列中，選取 [ **管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the Add DNS Record area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
 |||||
 |:-----|:-----|:-----|:-----|
@@ -59,7 +59,7 @@ ms.locfileid: "44400662"
 |@  <br/> |14400  <br/> |TXT  <br/> |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
 6. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
@@ -84,30 +84,30 @@ ms.locfileid: "44400662"
 若要使用 Microsoft 設定您的網域，請在您的網域註冊機構變更網域的 NS 記錄，以指向主要和次要名稱伺服器。 這會將 Microsoft 設定為您為您更新網域的 DNS 記錄。 我們會新增所有記錄，好讓電子郵件、商務用 Skype Online 和您的公用網站都能使用您的網域，為您做好一切準備。
   
 > [!CAUTION]
-> 當您將網域的 NS 記錄變更為指向 Microsoft 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，在您進行此變更之後，所有傳送至您網域的電子郵件（如 rob@ *your_domain* .com）都會開始向 Microsoft。 
+> 當您將網域的 NS 記錄變更為指向 Microsoft 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，所有傳送至您網域的電子郵件 (例如 rob@ *your_domain*  .com) 會在您進行此變更之後，從 Microsoft 開始。 
   
 > [!IMPORTANT]
 >  下列程式將告訴您如何刪除清單中的任何其他、不想要的名稱伺服器，以及如何新增正確的名稱伺服器（如果尚未列出）。 > 完成本節中的步驟之後，應該會列出的唯一名稱伺服器為下列四種： > ns1.bdm.microsoftonline.com > ns2.bdm.microsoftonline.com > ns3.bdm.microsoftonline.com > ns4.bdm.microsoftonline.com 
   
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
-2. 在 [**網域**] 頁面上的 [ **domain_name** ] 區域中，選取您網域的核取方塊，然後選取 [**名稱伺服器**]。
+2. 在 [ **網域** ] 頁面上的 [ **domain_name** ] 區域中，選取您網域的核取方塊，然後選取 [ **名稱伺服器**]。
     
     ![Bluehost-BP-Redelegate-1-1](../../media/8f384386-197c-4272-9675-82037922dac4.png)
   
-3. 在 [ **domain_name** ] 區域中，選取 [**使用自訂名稱伺服器**]。
+3. 在 [ **domain_name** ] 區域中，選取 [ **使用自訂名稱伺服器**]。
     
     ![Bluehost-BP-Redelegate-1-2](../../media/9fb47d21-c4ce-4eee-af90-c9569870a329.png)
   
 4. 請根據現在顯示頁面上是否列出名稱伺服器，來選擇下列兩個程序其中一項繼續︰
     
-  - 如果沒有列出**任何**名稱伺服器，[則未列出任何名稱伺服器](#if-there-are-no-nameservers-already-listed)。
+  - 如果沒有列出 **任何** 名稱伺服器， [則未列出任何名稱伺服器](#if-there-are-no-nameservers-already-listed)。
     
-  - 如果已**列出名稱伺服器，** 如果已[列出名稱伺服器](#if-there-are-nameservers-already-listed)。
+  - 如果已 **列出名稱伺服器，** 如果已 [列出名稱伺服器](#if-there-are-nameservers-already-listed)。
     
 ### <a name="if-there-are-no-nameservers-already-listed"></a>如果列表上「沒有」名稱伺服器
 
-1. 在 [**使用自訂名稱伺服器**] 區段中，輸入或複製並貼上下清單格中的值。 
+1. 在 [ **使用自訂名稱伺服器** ] 區段中，輸入或複製並貼上下清單格中的值。 
     
 |||
 |:-----|:-----|
@@ -116,20 +116,20 @@ ms.locfileid: "44400662"
    
    ![Bluehost-BP-重新委派-1-3-1](../../media/07b13d6d-a34e-45b5-afd5-48ebd4c1344f.png)
   
-2. 選取 [**新增列**]。
+2. 選取 [ **新增列**]。
     
     ![Bluehost-BP-Redelegate-1-3-2](../../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
   
-3. 仍在 [**使用自訂名稱伺服器**] 區段中，輸入或複製並貼上下表第一列中的值至新的空白列。 
+3. 仍在 [ **使用自訂名稱伺服器** ] 區段中，輸入或複製並貼上下表第一列中的值至新的空白列。 
     
 |||
 |:-----|:-----|
 |**第三個空白列** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**第四個空白列** <br/> |ns4.bdm.microsoftonline.com  <br/> |
   
-4. 若要新增第四個名稱伺服器記錄，請再次選取 [**新增列**]，然後使用上表最後一列的值來建立記錄。 
+4. 若要新增第四個名稱伺服器記錄，請再次選取 [ **新增列** ]，然後使用上表最後一列的值來建立記錄。 
     
-5. 選取 [儲存名稱伺服器**設定**]。
+5. 選取 [儲存名稱伺服器 **設定**]。
     
     ![Bluehost-BP-Redelegate-1-4](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   
@@ -139,13 +139,13 @@ ms.locfileid: "44400662"
 ### <a name="if-there-are-nameservers-already-listed"></a>如果列表上「有」名稱伺服器
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers. （也就是說，只刪除所有*未*命名為**ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或**ns4.bdm.microsoftonline.com**的目前名稱伺服器。） 
+> Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的目前名稱伺服器。 )  
   
-1. 如果有列出任何其他名稱伺服器，請選取每個伺服器，然後按鍵盤上的**delete**鍵將其刪除。 
+1. 如果有列出任何其他名稱伺服器，請選取每個伺服器，然後按鍵盤上的 **delete** 鍵將其刪除。 
     
     ![Bluehost-BP-Redelegate-1-5](../../media/d1051c43-f8ff-46d7-af26-3975d3f0f621.png)
   
-2. 仍在 [**使用自訂名稱伺服器**] 區段中，輸入或複製並貼上下表中的值。 
+2. 仍在 [ **使用自訂名稱伺服器** ] 區段中，輸入或複製並貼上下表中的值。 
     
 |||
 |:-----|:-----|
@@ -154,11 +154,11 @@ ms.locfileid: "44400662"
    
    ![Bluehost-BP-重新委派-1-3](../../media/1523debf-5eb0-4765-8e05-bcd56e375c20.png)
   
-3. 選取 [**新增列**]。
+3. 選取 [ **新增列**]。
     
     ![Bluehost-BP-Redelegate-1-3-2](../../media/db34b632-1d10-44b7-aa1f-44bd27bf09e3.png)
   
-4. 仍在 [**使用自訂名稱伺服器**] 區段中，輸入或複製並貼上下表第一列中的值至新的空白列。 
+4. 仍在 [ **使用自訂名稱伺服器** ] 區段中，輸入或複製並貼上下表第一列中的值至新的空白列。 
     
 |||
 |:-----|:-----|
@@ -167,9 +167,9 @@ ms.locfileid: "44400662"
    
    ![Bluehost-BP-重新委派-1-3-3](../../media/480b32bb-af27-40a5-90c5-5617ed02bb41.png)
   
-5. 若要新增第四個名稱伺服器記錄，請再次選取 [**新增列**]，然後使用上表最後一列的值來建立記錄。 
+5. 若要新增第四個名稱伺服器記錄，請再次選取 [ **新增列** ]，然後使用上表最後一列的值來建立記錄。 
     
-6. 選取 [儲存名稱伺服器**設定**]。
+6. 選取 [儲存名稱伺服器 **設定**]。
     
     ![Bluehost-BP-Redelegate-1-4](../../media/b24a4cfd-924b-4b6d-ad3d-2dea148fc77f.png)
   

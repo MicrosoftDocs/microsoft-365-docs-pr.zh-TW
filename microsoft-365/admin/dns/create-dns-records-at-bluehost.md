@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Bluehost。
-ms.openlocfilehash: c0db0a00b48e6a460b8e21c95b8d8852914ab87b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: c0ba1b876c939632bc6c43a6e0004fbbe23a7723
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307040"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646232"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>在 Bluehost 建立 Microsoft 的 DNS 記錄
 
@@ -53,7 +53,7 @@ ms.locfileid: "47307040"
     
     (您可能需要向下捲動。)
     
-3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器** ] 列中，選取 [ **管理 DNS 記錄**]。
+3. 在 [ ** _domain_name__] 區域中，選取 [dns 區域編輯器] 列*上的 [* ** **管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -93,7 +93,7 @@ ms.locfileid: "47307040"
     
     (您可能需要向下捲動。)
     
-3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器** ] 列中，選取 [ **管理 DNS 記錄**]。
+3. 在 [ ** _domain_name__] 區域中，選取 [dns 區域編輯器] 列*上的 [* ** **管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -130,7 +130,7 @@ ms.locfileid: "47307040"
     
     (您可能需要向下捲動。)
     
-3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器** ] 列中，選取 [ **管理 DNS 記錄**]。
+3. 在 [ ** _domain_name__] 區域中，選取 [dns 區域編輯器] 列*上的 [* ** **管理 DNS 記錄**]。
     
 4. 在 [ ** (主機) ** 記錄] 區段中，找出 **自動** 探索記錄的列，然後針對該資料列選取 [ **刪除** ]。 
     
@@ -139,7 +139,7 @@ ms.locfileid: "47307040"
   
     ![選取 [刪除]](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
-5. 選取 **[確定]**。
+5. 選取 [確定]****。
     
     ![選取 [確定]](../../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
   
@@ -181,7 +181,7 @@ ms.locfileid: "47307040"
     
     (您可能需要向下捲動。)
     
-3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器** ] 列中，選取 [ **管理 DNS 記錄**]。
+3. 在 [ ** _domain_name__] 區域中，選取 [dns 區域編輯器] 列*上的 [* ** **管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -206,7 +206,7 @@ ms.locfileid: "47307040"
     
     (您可能需要向下捲動。)
     
-3. 在 [ ***domain_name*** ] 區域的 [ **DNS 區域編輯器** ] 列中，選取 [ **管理 DNS 記錄**]。
+3. 在 [ ** _domain_name__] 區域中，選取 [dns 區域編輯器] 列*上的 [* ** **管理 DNS 記錄**]。
     
 4. 建立兩筆 SRV 記錄的第一筆。
     

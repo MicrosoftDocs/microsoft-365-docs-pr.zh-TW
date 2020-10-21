@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft eNomCentral。
-ms.openlocfilehash: 94b0648e03d756f429094a6d35f03d5596a272f4
-ms.sourcegitcommit: 50526f81ce3f57d58f0a7c0df4fe21685c5a0236
+ms.openlocfilehash: c60c33f4be94e2f7719fdfc583500c6d1164991d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "45434188"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646160"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>在 Microsoft 的 eNomCentral 建立 DNS 記錄
 
@@ -53,7 +53,7 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. 在 [**我的網域**] 底下，選取您要編輯的網功能變數名稱稱。
+2. 在 [ **我的網域**] 底下，選取您要編輯的網功能變數名稱稱。
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -61,9 +61,9 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Verify-1-1](../../media/6e4184a1-9525-47a6-8a8a-9600126c0db4.png)
 
-4. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
+4. 在每一筆新記錄的方塊中，輸入或複製並貼上下表中的值。
 
-   從下拉式清單中選擇 [**記錄類型**] 值。
+   從下拉式清單中選擇 [ **記錄類型** ] 值。
 
    |主機名稱|Record Type|位址|
    |---|---|---|
@@ -71,7 +71,7 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Verify-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
 
-5. 選取 [**儲存**]。
+5. 選取 [ **儲存**]。
 
    ![eNom-BP-Verify-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
 
@@ -101,27 +101,27 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. 在 [**我的網域**] 底下，選取您要編輯的網功能變數名稱稱。
+2. 在 [ **我的網域**] 底下，選取您要編輯的網功能變數名稱稱。
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
-3. 在 [**管理網域**] 下拉式清單中，選擇 [**電子郵件設定**]。
+3. 在 [ **管理網域** ] 下拉式清單中，選擇 [ **電子郵件設定**]。
 
    ![eNom-BP-Configure-1-3](../../media/4b438629-afdf-4a47-ab11-56644cdb6158.png)
 
-4. 在 [**服務選擇**] 下拉式清單中，選擇 [**使用者] （MX）**。
+4. 在 [ **服務選擇** ] 下拉式清單中，選擇 [ **使用者 (MX]) **。
 
    ![eNom-BP-Configure-1-4](../../media/7680ab48-b8d1-4573-b20f-4745a5d7c079.png)
 
 5. In the boxes for the new record, type or copy and paste the values from the following table.
 
-   |主機名稱|位址|Pref|
+   |主機名稱|Address (位址)|Pref|
    |---|---|---|
-   |@| *\<domain-key\>* mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)|
+   |@| *\<domain-key\>*  mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)|10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)|
 
    ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
-6. 選取 [**儲存**]。
+6. 選取 [ **儲存**]。
 
    ![eNom-BP-Configure-2-2](../../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
 
@@ -129,7 +129,7 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Configure-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
 
-8. 選取 [**刪除] 複選**框。
+8. 選取 [ **刪除] 複選**框。
 
    ![eNom-BP-Configure-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
 
@@ -142,7 +142,7 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. 在 [**我的網域**] 底下，選取您要編輯的網功能變數名稱稱。
+2. 在 [ **我的網域**] 底下，選取您要編輯的網功能變數名稱稱。
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -150,15 +150,15 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. 選取 [**新增列**]。
+4. 選取 [ **新增列**]。
 
    ![eNom-BP-Configure-3-1](../../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
 
 5. 在六筆新記錄的方塊中，輸入或複製並貼上下列的值。
 
-   從下拉式清單中選擇 [**記錄類型**] 值。
+   從下拉式清單中選擇 [ **記錄類型** ] 值。
 
-   |主機名稱|Record Type|位址|
+   |主機名稱|Record Type|Address (位址)|
    |---|---|---|
    |autodiscover (自動探索)|CNAME (Alias) (CNAME (別名))|autodiscover.outlook.com.  <br/> **此值必須以英文句點 (.) 結尾。**|
    |sip|CNAME (Alias) (CNAME (別名))|sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。**|
@@ -168,7 +168,7 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
 
-6. 選取 [**儲存**]。
+6. 選取 [ **儲存**]。
 
    ![eNom-BP-Configure-3-3](../../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
 
@@ -176,7 +176,7 @@ ms.locfileid: "45434188"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。
 
 請依照下列步驟操作或[觀看影片 (從 5:12 處開始)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d)。
 
@@ -184,7 +184,7 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. 在 [**我的網域**] 底下，選取您要編輯的網功能變數名稱稱。
+2. 在 [ **我的網域**] 底下，選取您要編輯的網功能變數名稱稱。
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -194,7 +194,7 @@ ms.locfileid: "45434188"
 
 4. 在每一筆新記錄的方塊中，輸入或複製並貼上下表中的值。
 
-   從下拉式清單中選擇 [**記錄類型**] 值。
+   從下拉式清單中選擇 [ **記錄類型** ] 值。
 
    |主機名稱|Record Type|位址|
    |---|---|---|
@@ -202,7 +202,7 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Configure-4-1](../../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
 
-5. 選取 [**儲存**]。
+5. 選取 [ **儲存**]。
 
    ![eNom-BP-Configure-4-2](../../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
 
@@ -215,7 +215,7 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Configure-1-1](../../media/6f754710-fd29-4a0a-b362-fa7a5c5ff74f.png)
 
-2. 在 [**我的網域**] 底下，選取您要編輯的網功能變數名稱稱。
+2. 在 [ **我的網域**] 底下，選取您要編輯的網功能變數名稱稱。
 
    ![eNom-BP-Configure-1-2](../../media/09d53e84-371c-4704-a8ce-e429ce9e133a.png)
 
@@ -223,13 +223,13 @@ ms.locfileid: "45434188"
 
    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. 在 [**新增列**] 右邊，選取 [新增**SRV 或 SPF 記錄**]。
+4. 在 [ **新增列**] 右邊，選取 [新增 **SRV 或 SPF 記錄**]。
 
    ![eNom-BP-Configure-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
 
 5. 在這兩筆新記錄的方塊中，輸入或複製並貼上下表中的值。
 
-   |Service (服務)|Protocol (通訊協定)|Priority (優先順序)|Weight (權數)|Port (連接埠)|目標（主機名稱）|
+   |Service (服務)|Protocol (通訊協定)|Priority (優先順序)|Weight (權數)|Port (連接埠)|目標 (主機名稱) |
    |---|---|---|---|---|---|
    |_sip|_tls|100|1 |443|sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。**|
    |_sipfederationtls|_tcp|100|1 |5061|sipfed.online.lync.com。  <br/> **此值必須以英文句點 (.) 結尾。**|

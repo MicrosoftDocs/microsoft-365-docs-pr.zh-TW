@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: '在這裡尋找將網域從 Microsoft 轉接至另一個註冊機構的步驟。 '
-ms.openlocfilehash: d960b57a2c82b804d61ead1c672c00f0543b3ae8
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 1fb1fa50bd919bddb620a39d9edb46abb6710ba4
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370321"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645272"
 ---
 # <a name="transfer-a-domain-from-microsoft-to-another-host"></a>將網域從 Microsoft 轉接至其他主機
 

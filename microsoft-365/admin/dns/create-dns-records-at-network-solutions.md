@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: 瞭解如何驗證您的網域，並在 Microsoft 的網路解決方案中設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄。
-ms.openlocfilehash: 25e85bf30527b49ada711af9ba5c418409acd24c
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: f488ad3511c9901eae70691f616dcff52036c71d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780334"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645944"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>在 Microsoft 的網路解決方案中建立 DNS 記錄
 
@@ -63,7 +63,7 @@ ms.locfileid: "44780334"
   
 請依照下列步驟操作或[觀看影片 (從 0:47 處開始)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)。
   
-1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。 系統會提示您先登入。
+1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。系統會提示您先登入。
     
     > [!IMPORTANT]
     > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
@@ -74,33 +74,33 @@ ms.locfileid: "44780334"
     
     ![針對您的網域選取核取方塊](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. 選取 [**編輯 DNS**]。
+3. 選取 [ **編輯 DNS**]。
     
     ![選取 [編輯 DNS]](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. 選取 [**管理 ADVANCED DNS 記錄**]。
+4. 選取 [ **管理 ADVANCED DNS 記錄**]。
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
     ![選取 [管理 Advanced DNS 記錄]](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下滾動至 [**文字（TXT 記錄）** ] 區段，然後選取 [**編輯 TXT 記錄**]。
+5. 向下 ** (TXT 記錄) ** ] 區段中向下滾動至文字，然後選取 [ **編輯 TXT 記錄**]。
     
     ![選取 [編輯 TXT 記錄]](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
 6. In the boxes for the new record, type or copy and paste the values in the following table.
     
-    |**Host** (主機)|**TTL**|**Text**|
+    |**Host**|**TTL**|**Text**|
     |:-----|:-----|:-----|
     |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)   |
        
     ![在新記錄的方塊中輸入或貼上值](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. 選取 [**繼續**]。
+7. 選取 [ **繼續**]。
     
     ![選取 [繼續]](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
-8. 選取 [**儲存變更**]。
+8. 選取 [ **儲存變更**]。
     
     ![選取 [儲存變更]](../../media/bd4d7cd0-c8a3-497a-b080-cfd5a5c60dc5.png)
   
@@ -132,7 +132,7 @@ ms.locfileid: "44780334"
 
 請依照下列步驟操作或[觀看影片 (從 3:51 處開始)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)。
   
-1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。 系統會提示您先登入。
+1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。系統會提示您先登入。
     
     > [!IMPORTANT]
     > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
@@ -143,17 +143,17 @@ ms.locfileid: "44780334"
     
     ![針對您的網域選取核取方塊](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. 選取 [**編輯 DNS**]。
+3. 選取 [ **編輯 DNS**]。
     
     ![選取 [編輯 DNS]](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. 選取 [**管理 ADVANCED DNS 記錄**]。
+4. 選取 [ **管理 ADVANCED DNS 記錄**]。
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
     ![選取 [管理 Advanced DNS 記錄]](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下滾動至 [**郵件伺服器（MX 記錄）** ] 區段，然後選取 [**編輯 MX 記錄**]。
+5. 向下 ** (MX 記錄) ** ] 區段中向下滾動至 [郵件伺服器]，然後選取 [ **編輯 MX 記錄**]。
     
     ![選取 [編輯 MX 記錄]](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
   
@@ -161,27 +161,27 @@ ms.locfileid: "44780334"
     
     |**優先順序**|**TTL**|**Mail server (郵件伺服器)**|
     |:-----|:-----|:-----|
-    |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> | *\<domain-key\>* mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> | *\<domain-key\>*  mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![在新記錄的方塊中輸入或貼上值](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
-7. 選取 [**繼續**]。
+7. 選取 [ **繼續**]。
     
     ![選取 [繼續]](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
   
-8. 選取 [**儲存變更**]。
+8. 選取 [ **儲存變更**]。
     
     ![選取 [儲存變更]](../../media/7c2f784a-6dee-4364-866c-ad7202ef1fc2.png)
   
-9. 如果有任何其他 MX 記錄，請選取每一筆記錄的 [**刪除**] 以刪除所有記錄。 
+9. 如果有任何其他 MX 記錄，請選取每一筆記錄的 [ **刪除** ] 以刪除所有記錄。 
     
     ![Select the Delete check box for other MX records](../../media/709d6133-9f5d-490a-a91e-95e21ca94695.png)
   
-10. 選取所有選項時，請選取 [**繼續**]。
+10. 選取所有選項時，請選取 [ **繼續**]。
     
     ![選取 [繼續]](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
   
-11. 選取 [**儲存變更**]。
+11. 選取 [ **儲存變更**]。
     
     ![選取 [儲存變更]](../../media/24432ec6-666b-4612-9488-37c06437959b.png)
   
@@ -190,7 +190,7 @@ ms.locfileid: "44780334"
 
 請依照下列步驟操作或[觀看影片 (從 4:43 處開始)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)。
   
-1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。 系統會提示您先登入。
+1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。系統會提示您先登入。
     
     > [!IMPORTANT]
     > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
@@ -201,37 +201,37 @@ ms.locfileid: "44780334"
     
     ![針對您的網域選取核取方塊](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. 選取 [**編輯 DNS**]。
+3. 選取 [ **編輯 DNS**]。
     
     ![選取 [編輯 DNS]](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. 選取 [**管理 ADVANCED DNS 記錄**]。
+4. 選取 [ **管理 ADVANCED DNS 記錄**]。
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
     ![選取 [管理 Advanced DNS 記錄]](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下滾動至 [**主機別名（CNAME 記錄）** ] 區段，然後選取 [**編輯 CNAME 記錄**]。
+5. 向下滾動至 [ ** (CNAME 記錄) ** ] 區段中的 [主機別名]，然後選取 [ **編輯 CNAME 記錄**]。
     
     ![選取 [主機別名] 底下的 [編輯 CNAME 記錄]](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
   
 6. 在這四筆新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    |**Alias**|**TTL**|**參照的主機名稱**|**其他主機（選取 [**其他主機**] 選項按鈕）**|
+    |**Alias**|**TTL**|**參照的主機名稱**|**其他主機 (選取 [ **其他主機** ] 選項按鈕) **|
     |:-----|:-----|:-----|:-----|
-    |autodiscover (自動探索)  <br/> |3600  <br/> |(沒有設定)  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |sip  <br/> |3600  <br/> |(沒有設定)  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |lyncdiscover  <br/> |3600  <br/> |(沒有設定)  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseregistration  <br/> |3600  <br/> |(沒有設定)  <br/> |enterpriseregistration.windows.net  <br/> **This value MUST end with a period (.)** <br/> |
-    |enterpriseenrollment  <br/> |3600  <br/> |(沒有設定)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **This value MUST end with a period (.)** <br/> |
+    |autodiscover (自動探索)  <br/> |3600  <br/> |(沒有設定)  <br/> |autodiscover.outlook.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
+    |sip  <br/> |3600  <br/> |(沒有設定)  <br/> |sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
+    |lyncdiscover  <br/> |3600  <br/> |(沒有設定)  <br/> |webdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
+    |enterpriseregistration  <br/> |3600  <br/> |(沒有設定)  <br/> |enterpriseregistration.windows.net  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
+    |enterpriseenrollment  <br/> |3600  <br/> |(沒有設定)  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
     
     ![輸入或貼上新記錄的值](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
-7. 當您已新增所需的所有 CNAME 記錄後，請選取 [**繼續**]。
+7. 當您已新增所需的所有 CNAME 記錄後，請選取 [ **繼續**]。
     
     ![選取 [繼續]](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
   
-8. 選取 [**儲存變更**]。
+8. 選取 [ **儲存變更**]。
     
     ![選取 [儲存變更]](../../media/f005c38a-0d8d-4c61-bec6-15e60c89aa5a.png)
   
@@ -239,11 +239,11 @@ ms.locfileid: "44780334"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 
   
 請依照下列步驟操作或[觀看影片 (從 5:35 處開始)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099)。
   
-1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。 系統會提示您先登入。
+1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。系統會提示您先登入。
     
     > [!IMPORTANT]
     > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
@@ -254,33 +254,33 @@ ms.locfileid: "44780334"
     
     ![針對您的網域選取核取方塊](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. 選取 [**編輯 DNS**]。
+3. 選取 [ **編輯 DNS**]。
     
     ![選取 [編輯 DNS]](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. 選取 [**管理 ADVANCED DNS 記錄**]。
+4. 選取 [ **管理 ADVANCED DNS 記錄**]。
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
     ![選取 [管理 Advanced DNS 記錄]](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下滾動至 [**文字（TXT 記錄）** ] 區段，然後選取 [**編輯 TXT 記錄**]。
+5. 向下 ** (TXT 記錄) ** ] 區段中向下滾動至文字，然後選取 [ **編輯 TXT 記錄**]。
     
     ![選取 [文字] 底下的 [編輯 TXT 記錄]](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
   
 6. In the boxes for the new record, type or copy and paste the following values.
     
-    |**Host** (主機)|**TTL**|**Text**|
+    |**Host**|**TTL**|**Text**|
     |:-----|:-----|:-----|
-    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。 |
+    |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。 |
        
     ![輸入或貼上新記錄的值](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
   
-7. 選取 [**繼續**]。
+7. 選取 [ **繼續**]。
     
     ![選取 [繼續]](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
   
-8. 選取 [**儲存變更**]。
+8. 選取 [ **儲存變更**]。
     
     ![選取 [儲存變更]](../../media/600b8c6d-184f-4213-a50e-8f119ebf3ff0.png)
   
@@ -300,36 +300,36 @@ ms.locfileid: "44780334"
     
     ![針對您的網域選取核取方塊](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. 選取 [**編輯 DNS**]。
+3. 選取 [ **編輯 DNS**]。
     
     ![選取 [編輯 DNS]](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
-4. 選取 [**管理 ADVANCED DNS 記錄**]。
+4. 選取 [ **管理 ADVANCED DNS 記錄**]。
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
     ![選取 [管理 Advanced DNS 記錄]](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下滾動至 [**服務（SRV 記錄）** ] 區段，然後選取 [**編輯 SRV 記錄**]。
+5. 向下 ** (SRV 記錄) ** ] 區段中向下滾動至服務，然後選取 [ **編輯 SRV 記錄**]。
     
     ![選取 [服務] 下的 [編輯 SRV 記錄]](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   
 6. 在這兩筆新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    （從下拉式清單中選擇 [**服務**] 和 [**通訊協定**] 值。） 
+     (從下拉式清單中選擇 [ **服務** ] 和 [ **通訊協定** ] 值。 )  
     
     |**服務**|**Protocol** (通訊協定)|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
        
     ![輸入或貼上新記錄的值](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   
-7. 選取 [**繼續**]。
+7. 選取 [ **繼續**]。
     
     ![選取 [繼續]](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
   
-8. 選取 [**儲存變更**]。
+8. 選取 [ **儲存變更**]。
     
     ![選取 [儲存變更]](../../media/6d323126-0ebe-45ab-8567-c234711d84c7.png)
   

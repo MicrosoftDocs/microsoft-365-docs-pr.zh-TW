@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: 深入瞭解 Power BI，以及組織中的使用者可以如何使用此商務 analytics 服務。
-ms.openlocfilehash: 5a5e7516800b2010f79296d758aeaeef80194bfd
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+ms.openlocfilehash: 633052889a2ca5c5c4db4c3b3c9334b396148e2a
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432168"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644924"
 ---
 # <a name="power-bi-in-your-organization"></a>貴組織中的 Power BI
 
@@ -36,7 +36,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
   
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Power BI 是否符合全國、地區和特定行業的合規性需求？
 
-若要深入瞭解 Power BI 合規性，請參閱[Microsoft 信任中心](https://go.microsoft.com/fwlink/?LinkId=785324)。
+若要深入瞭解 Power BI 合規性，請參閱 [Microsoft 信任中心](https://go.microsoft.com/fwlink/?LinkId=785324)。
   
 ## <a name="how-do-users-sign-up-for-power-bi"></a>使用者如何註冊 Power BI？
 
@@ -54,14 +54,14 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
   
 ### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-an-microsoft-365-account"></a>案例2：您的組織有現有的 Microsoft 365 環境，而註冊 Power BI 的使用者沒有 Microsoft 365 帳戶。
 
-在此案例中，使用者在您組織的網域中有電子郵件地址（例如，contoso.com），但是還沒有 Microsoft 365 帳戶。 在這種情況下，使用者可以註冊 Power BI，而且會自動獲得指定帳戶。 這能讓使用者存取 Power BI 服務。 例如，如果名為張穎的員工使用她的工作電子郵件地址（例如，Nancy@contoso.com）進行註冊，Microsoft 會自動將張穎新增為 Contoso Microsoft 365 環境中的使用者，並為該帳戶啟用 Power BI。
+在此案例中，使用者在您組織的網域中有電子郵件地址 (例如，contoso.com) ，但還沒有 Microsoft 365 帳戶。 在這種情況下，使用者可以註冊 Power BI，而且會自動獲得指定帳戶。 這能讓使用者存取 Power BI 服務。 例如，如果名為張穎的員工使用她的工作電子郵件地址 (例如，Nancy@contoso.com) 進行註冊，則 Microsoft 會自動將張穎新增為 Contoso Microsoft 365 環境中的使用者，並為該帳戶啟用 Power BI。
   
 ### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>案例3：您的組織沒有連線至您電子郵件網域的 Microsoft 365 環境。
 
 貴組織不需要採取任何管理動作，即可享有 Power BI 的優點。
   
 > [!IMPORTANT]
-> 如果您的組織有多個電子郵件網域，而且您喜歡所有的電子郵件地址分機都位於相同的承租人中，則在任何使用者建立主要租使用者之前，請先將所有電子郵件地址網域新增至該租使用者，然後再建立主要租使用者。 建立使用者後，就不會自動將使用者移至不同的機制。 如需此程式的詳細資訊，請參閱本文稍後的[[如果我有多個網域，我可以控制使用者新增至的承租人](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to)]，[將網域新增至 Office 365](../setup/add-domain.md) online。 
+> 如果您的組織有多個電子郵件網域，而且您喜歡所有的電子郵件地址分機都位於相同的承租人中，則在任何使用者建立主要租使用者之前，請先將所有電子郵件地址網域新增至該租使用者，然後再建立主要租使用者。 建立使用者後，就不會自動將使用者移至不同的機制。 如需此程式的詳細資訊，請參閱本文稍後的 [[如果我有多個網域，我可以控制使用者新增至的承租人](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) ]， [將網域新增至 Office 365](../setup/add-domain.md) online。 
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>這對於我目前管理組織使用者身分識別的方式有何影響？
 
@@ -105,7 +105,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
     
     ![已反白顯示系統管理應用程式的應用程式啟動器](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
-5. 閱讀 [**成為系統管理**] 頁面上的指示，然後選取 **[是，我要成為系統管理員]**。
+5. 閱讀 [ **成為系統管理** ] 頁面上的指示，然後選取 **[是，我要成為系統管理員]**。
     
     > [!NOTE]
     >  如果未顯示此選項，則表示已有系統管理員。 
@@ -119,20 +119,20 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 - 提前建立目標租用戶或使用現有租用戶，並新增您要在該租用戶內合併的所有現有網域與子網域。這麼一來，電子郵件地址以這些網域和子網域結尾的所有使用者，都會在註冊時自動加入目標租用戶。
     
 > [!IMPORTANT]
-> 沒有任何支援的自動化機制，可讓使用者在租用戶建立之後於其間移動。 若要瞭解如何將網域新增至單一 Microsoft 365 租使用者，請參閱[Add a domain To Office 365](../setup/add-domain.md)。 
+> 沒有任何支援的自動化機制，可讓使用者在租用戶建立之後於其間移動。 若要瞭解如何將網域新增至單一 Microsoft 365 租使用者，請參閱 [Add a domain To Office 365](../setup/add-domain.md)。 
   
 > [!IMPORTANT]
-> 如需有關管理承租人的其他資訊和指導方針，請參閱[何謂 POWER BI administration？](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization)。 
+> 如需有關管理承租人的其他資訊和指導方針，請參閱 [何謂 POWER BI administration？](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization)。 
   
 ## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>如何防止使用者加入我的現有租使用者？
 
-您可以做為系統管理員採取的步驟，以避免使用者加入您的現有租使用者。 如果您確實阻止這種情況，則使用者的登入嘗試會失敗，並會指示他們聯繫其組織的系統管理員。如果您以前已停用自動授權發佈，則不需要重複此程式（例如，學生和教職員工的 Office 365 教育版）。
+您可以做為系統管理員採取的步驟，以避免使用者加入您的現有租使用者。 如果您確實阻止這種情況，則使用者的登入嘗試會失敗，並會指示他們聯繫其組織的系統管理員。如果您已停用自動授權發佈 (之前，您不需要重複此程式（例如，Office 365 教育課程、教職員和員工) ）。
   
 執行這些步驟必須使用 Windows PowerShell。 若要開始使用 Windows PowerShell，請參閱 [PowerShell 快速入門指南](https://go.microsoft.com/fwlink/p/?LinkID=286814)。
   
-若要執行下列步驟，您必須安裝最新的64位版本的[Azure Active Directory V2 PowerShell Module](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)。
+若要執行下列步驟，您必須安裝最新的64位版本的 [Azure Active Directory V2 PowerShell Module](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)。
   
-選取連結後，請選取 [**執行**] 以執行安裝程式套件。 
+選取連結後，請選取 [ **執行** ] 以執行安裝程式套件。 
   
  **停用自動租用戶加入**：使用這個 Windows PowerShell 命令可防止新使用者加入受管理的租用戶：
   
@@ -141,7 +141,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 啟用新使用者的自動租用戶加入： `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
 > [!NOTE]
-> 這項封鎖可防止您組織中的新使用者註冊 Power BI。 為您的組織停用新 signups 之前，註冊 Power BI 的使用者仍會保留其授權。 請參閱[如何為已註冊的使用者移除 POWER bi？](#how-do-i-remove-power-bi-for-users-that-already-signed-up)如需如何為先前註冊服務的使用者移除 power bi 存取權的指示。 
+> 這項封鎖可防止您組織中的新使用者註冊 Power BI。 為您的組織停用新 signups 之前，註冊 Power BI 的使用者仍會保留其授權。 請參閱 [如何為已註冊的使用者移除 POWER bi？](#how-do-i-remove-power-bi-for-users-that-already-signed-up) 如需如何為先前註冊服務的使用者移除 power bi 存取權的指示。 
   
 ## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>如何允許使用者加入我的現有租使用者？
 
@@ -153,7 +153,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
   
 ## <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>如何防止現有使用者開始使用 Power BI？
 
- **停用自動授權散佈：** 您可以使用這個 Windows PowerShell 指令碼，停用現有使用者的自動授權散佈。 如果您以前已停用自動授權發佈，則不需要重複此程式（例如，學生和教職員工的 Office 365 教育版）。 
+ **停用自動授權散佈：** 您可以使用這個 Windows PowerShell 指令碼，停用現有使用者的自動授權散佈。 如果您已停用自動授權發佈 (之前，您不需要重複此程式（例如，Office 365 教育課程、教職員和員工) ）。 
   
 停用現有使用者的自動授權散佈： `Set-MsolCompanySettings -AllowAdHocSubscriptions $false`
   
@@ -176,7 +176,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
     
 2. 尋找您要移除授權的使用者，然後選取其名稱。
     
-3. 在 [**授權與應用程式**] 索引標籤上，清除 [ **Microsoft Power BI** ] 核取方塊。
+3. 在 [ **授權與應用程式** ] 索引標籤上，清除 [ **Microsoft Power BI** ] 核取方塊。
     
 4. 選取 **[儲存變更]**。
 
@@ -189,7 +189,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 
 2. 尋找您要移除授權的使用者，然後選取其名稱。
     
-3. 在 [**產品授權**] 旁，選取 [**編輯**]。 
+3. 在 [ **產品授權**] 旁，選取 [ **編輯**]。 
     
 4. 開啟 [ **Microsoft POWER BI** ] 選項。
     
@@ -199,11 +199,11 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">作用中使用者</a>頁面。
+1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[作用中使用者]</a> 頁面。
 
 2. 尋找您要移除授權的使用者，然後選取其名稱。
     
-3. 在 [**產品授權**] 旁，選取 [**編輯**]。 
+3. 在 [ **產品授權**] 旁，選取 [ **編輯**]。 
     
 4. 開啟 [ **Microsoft POWER BI** ] 選項。
     
@@ -216,7 +216,7 @@ Microsoft Power BI 可讓使用者以視覺化的方式呈現資料、共用所�
 
 已在本方案中加入您租用戶的使用者，會獲得專屬授權的指派，您可以在管理員儀表板的 [作用中的使用者] 窗格內篩選這項授權。
   
-若要建立這個新的視圖，請在系統管理中心，依照 [[建立自訂使用者視圖](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view)] 中的步驟進行。 在 [**已指派產品授權**] 底下，選取 [ **Microsoft Power BI**]。 在建立新的視圖後，您就可以看到您租使用者中已註冊此程式的所有使用者。
+若要建立這個新的視圖，請在系統管理中心，依照 [ [建立自訂使用者視圖](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view)] 中的步驟進行。 在 [ **已指派產品授權**] 底下，選取 [ **Microsoft Power BI**]。 在建立新的視圖後，您就可以看到您租使用者中已註冊此程式的所有使用者。
   
 ## <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>我還需要準備其他任何事項嗎？
 

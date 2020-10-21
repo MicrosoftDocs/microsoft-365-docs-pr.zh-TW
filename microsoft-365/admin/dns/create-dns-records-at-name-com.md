@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft name.com。
-ms.openlocfilehash: 646f486e73705f4b1e1bab63866fc7601d34cf92
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: ce465e06b3bc18c824d741ee4cba4b9f4f410d90
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400397"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645884"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>在 name.com 建立 Microsoft 的 DNS 記錄
 
@@ -52,26 +52,26 @@ ms.locfileid: "44400397"
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. 在 [**我的網域**] 底下，選取您要修改的網功能變數名稱稱。
+2. 在 [ **我的網域**] 底下，選取您要修改的網功能變數名稱稱。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 [**詳細資料**] 欄中，選取 [ **DNS 記錄**]。 
+3. 在 [ **詳細資料** ] 欄中，選取 [ **DNS 記錄**]。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. 在每一筆新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
     |||||
     |:-----|:-----|:-----|:-----|
     |**類型** <br/> |**主機** <br/> |**答案** <br/> |**TTL** <br/> |
-    |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |
+    |TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |使用預設值 (300)。  <br/> |
    
     ![Name-BP-Verify-1-1](../../media/0c352fd3-cf84-439f-a481-0705e225cc54.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
     ![Name-BP-Verify-1-2](../../media/816fc60b-17ab-4982-8849-6c3fcf3ca3d6.png)
   
@@ -105,25 +105,25 @@ ms.locfileid: "44400397"
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. 在 [**我的網域**] 底下，選取您要修改的網功能變數名稱稱。
+2. 在 [ **我的網域**] 底下，選取您要修改的網功能變數名稱稱。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 [**詳細資料**] 欄中，選取 [ **DNS 記錄**]。 
+3. 在 [ **詳細資料** ] 欄中，選取 [ **DNS 記錄**]。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. 在每一筆新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
     |**類型**|**主機**|**答案**|**TTL**|**Prio (優先順序)**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(將此欄位保留空白。)  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |Use the default value (300).  <br/> |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |MX  <br/> |(將此欄位保留空白。)  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |使用預設值 (300)。  <br/> |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
    ![Name-BP-Configure-2-1](../../media/11ba2160-fc8e-4196-bb15-2b7c6d49c8fc.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
     ![名稱-BP-設定-2-2](../../media/fd09f161-7cc4-4723-aec2-5fa801bd19e9.png)
   
@@ -146,11 +146,11 @@ ms.locfileid: "44400397"
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. 在 [**我的網域**] 底下，選取您要修改的網功能變數名稱稱。
+2. 在 [ **我的網域**] 底下，選取您要修改的網功能變數名稱稱。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 [**詳細資料**] 欄中，選取 [ **DNS 記錄**]。 
+3. 在 [ **詳細資料** ] 欄中，選取 [ **DNS 記錄**]。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -158,7 +158,7 @@ ms.locfileid: "44400397"
     
     在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
     |**類型**|**主機**|**答案**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -176,7 +176,7 @@ ms.locfileid: "44400397"
   
 6. 新增第二筆 CNAME 記錄。
     
-    使用上表中第二列的值，然後選取 [**新增記錄**] 以新增第二筆記錄。 
+    使用上表中第二列的值，然後選取 [ **新增記錄** ] 以新增第二筆記錄。 
     
     以此類推，使用表格中第三、四、五、六列的值新增其他記錄。
     
@@ -184,31 +184,31 @@ ms.locfileid: "44400397"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 
   
 1. 首先請用[這個連結](https://www.name.com/account/domain)移至 name.com 上您的網域頁面。系統會提示您先登入。
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. 在 [**我的網域**] 底下，選取您要修改的網功能變數名稱稱。
+2. 在 [ **我的網域**] 底下，選取您要修改的網功能變數名稱稱。
 
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 [**詳細資料**] 欄中，選取 [ **DNS 記錄**]。 
+3. 在 [ **詳細資料** ] 欄中，選取 [ **DNS 記錄**]。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
 4. 在每一筆新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
     |**類型**|**主機**|**答案**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |Use the default value (300).  <br/> |
+    |TXT  <br/> |(Leave this field empty.)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |Use the default value (300).  <br/> |
    
    ![Name-BP-Configure-4-1](../../media/cbbfc071-840a-4ffa-a59e-0dfce03063cc.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
     ![名稱-BP-設定-4-2](../../media/db1e0e09-2b95-4fc1-88bd-e86da536921f.png)
   
@@ -219,11 +219,11 @@ ms.locfileid: "44400397"
     
     ![Name-BP-Configure-1-1](../../media/1869b416-1d3f-4fb1-99c6-62b74ca7a4c7.png)
   
-2. 在 [**我的網域**] 底下，選取您要修改的網功能變數名稱稱。
+2. 在 [ **我的網域**] 底下，選取您要修改的網功能變數名稱稱。
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. 在 [**詳細資料**] 欄中，選取 [ **DNS 記錄 +**]。 
+3. 在 [ **詳細資料** ] 欄中，選取 [ **DNS 記錄 +**]。 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   
@@ -231,22 +231,22 @@ ms.locfileid: "44400397"
     
     在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。
     
-    (Choose the **Type** value from the drop-down list.) 
+    (從下拉式清單中選擇 [Type] (類型) 值。) 
     
-    |**類型**|**Service** (服務)|**Weight**|**TTL**|**Prio (優先順序)**|**Protocol** (通訊協定)|**Port**|**Target**|
+    |**Type**|**服務**|**Weight**|**TTL**|**Prio (優先順序)**|**Protocol** (通訊協定)|**Port**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|sip|1 |使用預設值 (300)。|100|tls|443|sipdir.online.lync.com <br> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
-    |SRV|sipfederationtls|1 |使用預設值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |SRV|sip|1 |使用預設值 (300)。|100|tls|443|sipdir.online.lync.com <br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |SRV|sipfederationtls|1 |使用預設值 (300)。|100|tcp|5061|sipfed.online.lync.com <br>**注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
    ![Name-BP-Configure-5-1](../../media/d9a885fd-7300-45b6-ad4c-0b4bf1067560.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
 
     ![名稱-BP-設定-5-2](../../media/a804d51d-8f57-4b0b-8bd6-a52eb1c87a97.png)
   
 6. 新增第二筆 SRV 記錄：
 
-使用上表中的下一列的值，然後選取 [**新增記錄**] 以新增第二筆記錄。
+使用上表中的下一列的值，然後選取 [ **新增記錄** ] 以新增第二筆記錄。
 
 >[!NOTE]
 >DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。

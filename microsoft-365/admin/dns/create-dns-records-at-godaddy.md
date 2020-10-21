@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft GoDaddy。
-ms.openlocfilehash: 95bc9e1ca522796111bbf5146c93686bbbac1a3d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 995e579e21a185084d9ee64a7ee462930d845844
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400458"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646124"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>在 Microsoft 的 GoDaddy 建立 DNS 記錄
 
@@ -55,7 +55,7 @@ ms.locfileid: "44400458"
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 [**網域**] 底下，選取您要編輯之網域底下的 [DNS]。
+2. 在 [ **網域**] 底下，選取您要編輯之網域底下的 [DNS]。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -67,11 +67,11 @@ ms.locfileid: "44400458"
 
     |**記錄類型** |**Host** (主機)|**TXT Value** (TXT 值)|**TTL** |
     |:-----|:-----|:-----|:-----|
-    |TXT (文字)|@|MS=ms *XXXXXXXX*<br>**請注意**：這是一個範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)|1 小時  <br>（從下拉式清單中選取值）。|
+    |TXT (文字)|@|MS=ms *XXXXXXXX*<br>**請注意**：這是一個範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)|1 小時  <br> (從下拉式清單中選取值。 ) |
 
       ![GoDaddy-BP-Verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
 
 6. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
 
@@ -106,7 +106,7 @@ ms.locfileid: "44400458"
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 [**網域**] 底下，選取您要編輯之網域底下的 [DNS]。
+2. 在 [ **網域**] 底下，選取您要編輯之網域底下的 [DNS]。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -114,19 +114,19 @@ ms.locfileid: "44400458"
 
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
-4. 從下拉式清單中選擇 [ **MX] （郵件交換器）** 。
+4. 從下拉式清單中選擇 [ **MX (郵件交換器]) ** 。
 
     ![GoDaddy-BP-Configure-2-0](../../media/dns/56528642-85842e00-651d-11e9-8dd8-217f468f9a18.png)
 
 5. 在每一筆新記錄的方塊中，輸入或複製並貼上下表中的值。
 
-    （從下拉式清單中選擇 [ **TTL** ] 值。）
+     (從下拉式清單中選取 [ **TTL** ] 值。 ) 
 
     |**記錄類型**|**Host** (主機)|**Points to** (指向)|**Priority** (優先順序)|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (郵件交換程式)  <br/> |@  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 小時  <br/> |
+    |MX (郵件交換程式)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |1 小時  <br/> |
 
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
 
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的 CNAME 記錄
 <a name="BKMK_add_CNAME"> </a>
@@ -137,7 +137,7 @@ ms.locfileid: "44400458"
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 [**網域**] 底下，選取您要編輯之網域底下的 [DNS]。
+2. 在 [ **網域**] 底下，選取您要編輯之網域底下的 [DNS]。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -146,7 +146,7 @@ ms.locfileid: "44400458"
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
 
-4. 從下拉式清單中選擇 [ **CNAME （別名）** ]。
+4. 從下拉式清單中選擇 [ **CNAME (別名]) ** 。
 
     ![GoDaddy-BP-Configure-3-0](../../media/dns/56528891-e7449800-651d-11e9-8eac-112285b8e38c.png)
 
@@ -154,11 +154,11 @@ ms.locfileid: "44400458"
 
     在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。
 
-    （從下拉式清單中選擇 [ **TTL** ] 值。）
+     (從下拉式清單中選取 [ **TTL** ] 值。 ) 
 
     |**記錄類型**|**Host** (主機)|**Points to** (指向)|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |CNAME (Alias)  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 小時  <br/> |
+    |CNAME (Alias) (CNAME (別名))  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |1 小時  <br/> |
     |CNAME (Alias) (CNAME (別名))  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 小時  <br/> |
     |CNAME (Alias) (CNAME (別名))  <br/> |lyncdiscover  <br/> |webdir.online.lync.com  <br/> |1 小時  <br/> |
     |CNAME (Alias) (CNAME (別名))  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 小時  <br/> |
@@ -172,7 +172,7 @@ ms.locfileid: "44400458"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。
 
 請依照下列步驟操作。
 
@@ -180,7 +180,7 @@ ms.locfileid: "44400458"
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 [**網域**] 底下，選取您要編輯之網域底下的 [DNS]。
+2. 在 [ **網域**] 底下，選取您要編輯之網域底下的 [DNS]。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -194,7 +194,7 @@ ms.locfileid: "44400458"
 
 5. 在每一筆新記錄的方塊中，輸入或複製並貼上下列的值。
 
-    （從下拉式清單中選擇 [ **TTL** ] 值。）
+     (從下拉式清單中選擇 **TTL** 值。 ) 
 
     |**記錄類型**|**Host** (主機)|**TXT Value** (TXT 值)|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -202,7 +202,7 @@ ms.locfileid: "44400458"
 
     ![GoDaddy-BP-Configure-4-1](../../media/7c724f02-c9b3-42ab-b9c0-78959fa6ffad.png)
 
-6. 選取 [儲存]****。
+6. 選取 **[儲存]**。
 
 
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
@@ -214,7 +214,7 @@ ms.locfileid: "44400458"
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. 在 [**網域**] 底下，選取您要編輯之網域底下的 [DNS]。
+2. 在 [ **網域**] 底下，選取您要編輯之網域底下的 [DNS]。
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -222,7 +222,7 @@ ms.locfileid: "44400458"
 
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
-4. 從下拉式清單中選擇 [ **SRV （服務）** ]。
+4. 從下拉式清單中選擇 [ **SRV (服務]) ** 。
 
     ![GoDaddy-BP-Configure-5-0](../../media/dns/56529669-1dcee280-651f-11e9-8ba2-ecf4fc2f6dca.png)
 
@@ -230,7 +230,7 @@ ms.locfileid: "44400458"
 
     在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。
 
-    （從下拉式清單中選擇 [**記錄類型**] 和 [ **TTL** ] 值。）
+     (從下拉式清單中選擇 [ **記錄類型** ] 和 [ **TTL** ] 值。 ) 
 
     |**記錄類型**|**Name** (名稱)|**Target** (目標)|**Protocol** (通訊協定)|**Service** (服務)|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -240,9 +240,9 @@ ms.locfileid: "44400458"
     ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 
 
-6. 重複**步驟 5**以建立其他 SRV 記錄。
+6. 重複 **步驟 5** 以建立其他 SRV 記錄。
 
-7. 選取 [儲存]****。
+7. 選取 **[儲存]**。
 
 > [!NOTE]
 > DNS 變更生效通常約需 15 分鐘的時間。而如果您所做的變更要在整個網際網路 DNS 系統中生效，有時可能需要更久的時間。在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[變更網域名稱或 DNS 記錄之後所發生問題的疑難排解](../get-help-with-domains/find-and-fix-issues.md)。

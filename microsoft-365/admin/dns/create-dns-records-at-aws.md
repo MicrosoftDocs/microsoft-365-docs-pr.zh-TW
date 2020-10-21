@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: 瞭解如何驗證您的網域，以及如何在 Amazon Web 服務上設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft AWS)  (。
-ms.openlocfilehash: dbbf82c9c776108c4d5e34e2eb639f9c36e9f28b
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 6fa791db7b1782b14092769c5d9ef911474d63eb
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307064"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646357"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>在 Amazon Web 服務 (AWS) Microsoft 中建立 DNS 記錄
 
@@ -66,10 +66,10 @@ ms.locfileid: "47307064"
   
     |||||||
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |**名稱** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**值** <br/> |**Routing Policy** <br/> |
+    |**名稱** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
     |(Leave this field empty.)  <br/> |TXT - Text  <br/> |否  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址]**** 值，請參閱 Microsoft 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |簡易  <br/> |
    
-6. 選取 [建立]****。
+6. 選取 **[建立]**。
     
 7. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
@@ -104,13 +104,13 @@ ms.locfileid: "47307064"
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**值**|**Routing Policy**|
+    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |(將此欄位保留空白。)  <br/> |MX - 郵件交換  <br/> |無  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> 0 是指 MX 優先順序值。請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **附注：**\<*domain-key*\>從您的 Microsoft 365 帳戶取得。 [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |簡易  <br/> |
        
     ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
-6. 選取 [建立]****。
+6. 選取 **[建立]**。
     
     ![AWS-BP-設定-2-2](../../media/1c050c72-c04f-48d5-a8e9-44cd83ddd33e.png)
   
@@ -148,7 +148,7 @@ ms.locfileid: "47307064"
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**值**|**Routing Policy**|
+    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |autodiscover.outlook.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |簡易  <br/> |
     |sip  <br/> |CNAME - 正式名稱  <br/> |無  <br/> |300  <br/> |sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |簡易  <br/> |
@@ -158,7 +158,7 @@ ms.locfileid: "47307064"
    
     ![AWS-BP-Configure-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
   
-6. 選取 [建立]****。
+6. 選取 **[建立]**。
     
     ![AWS-BP-設定-3-2](../../media/33964846-5282-44a4-b241-62ce02b96735.png)
   
@@ -213,14 +213,14 @@ ms.locfileid: "47307064"
     
     (Choose the **Type** and **Routing Policy** values from the drop-down lists.) 
     
-    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**值**|**Routing Policy**|
+    |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip._tls|SRV - 服務定位器|無|300|100 1 443 sipdir.online.lync.com. **此值必須以句點 ( 結束。 ) **><br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡易|
     |_sipfederationtls._tcp|SRV - 服務定位器|無|300|100 1 5061 sipfed.online.lync.com. **此值必須以英文句點 (.) 結尾。**<br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡單|
    
     ![AWS-BP-Configure-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
   
-6. 選取 [建立]****。
+6. 選取 **[建立]**。
     
     ![AWS-BP-設定-5-2](../../media/1bf5dc58-a46b-47a5-bd69-7c2147dd4e50.png)
   

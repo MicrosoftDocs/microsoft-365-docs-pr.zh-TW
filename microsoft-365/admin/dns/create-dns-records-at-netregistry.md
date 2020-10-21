@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Netregistry。
-ms.openlocfilehash: c4e81e92b9f86d0a2974e6f95e397f3584c9a01e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 016df6c61fd6934c1bc46b55c7e110d8442cf1d5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400361"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645968"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>在 Netregistry 建立 Microsoft 的 DNS 記錄
 
@@ -61,34 +61,34 @@ ms.locfileid: "44400361"
 > [!NOTE]
 > 這筆記錄只會用於驗證您擁有自己的網域，不會影響其他項目。您可以選擇稍後再刪除記錄。 
   
-1. 若要開始使用，請使用[此連結](https://theconsole.netregistry.com.au/)移至 Netregistry 中您的網域頁面。 You'll be prompted to log in.
+1. 若要開始使用，請使用 [此連結](https://theconsole.netregistry.com.au/)移至 Netregistry 中您的網域頁面。 You'll be prompted to log in.
     
     ![Netregistry_login](../../media/ed3c785f-01c3-49e7-affd-c04637c0ffe9.png)
   
-2. 在您要管理的網域旁，選取 [**管理**]。
+2. 在您要管理的網域旁，選取 [ **管理**]。
     
     ![Netregistry_Manage](../../media/64ad542a-5ec4-4148-96f8-d6e163449352.png)
   
-3. 選取 [**區域管理員**]。
+3. 選取 [ **區域管理員**]。
     
     ![Netregistry_selectZoneManager](../../media/e18c32f9-c1e7-4aa2-9aa6-8dc9c5ea44af.png)
   
-4. 在 [**新增區域記錄**] 底下的清單中，選擇 [ **TXT 記錄**]，然後選取 [**建立新的記錄**]。
+4. 在 [ **新增區域記錄**] 底下的清單中，選擇 [ **TXT 記錄** ]，然後選取 [ **建立新的記錄**]。
     
     ![Netregistry_TXT_select](../../media/eb1761e6-9deb-4631-8deb-bc5d09926722.png)
   
     > [!NOTE]
     > 您必須在 TXT 方塊中的專案前後使用引號。 
   
-    在 [**新增 TXT 記錄**] 表單中，輸入或複製並貼上下清單格中的值。 
+    在 [ **新增 TXT 記錄** ] 表單中，輸入或複製並貼上下清單格中的值。 
     
-    |**Name**|**TTL （秒）**|**TXT （指向 address 或 value）**|
+    |**名稱**|**TTL (秒) **|**TXT (指向 address 或 value) **|
     |:-----|:-----|:-----|
-    |(保留空白)  <br/> |3600（秒）  <br/> |"MS=msXXXXXXXX"  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  |
+    |(保留空白)  <br/> |3600 (秒)   <br/> |"MS=msXXXXXXXX"  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  |
        
     ![Netregistry_verificationTXTvalues](../../media/cfe8b05a-fa8b-4dba-9554-7a3466e6c012.png)
   
-6. 選取 [**新增記錄**]。
+6. 選取 [ **新增記錄**]。
     
 現在您已在網域註冊機構網站新增記錄，請返回 Microsoft 並要求該記錄。
   
@@ -114,70 +114,70 @@ ms.locfileid: "44400361"
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>新增 MX 記錄，以將寄往您網域的電子郵件轉至 Microsoft
 <a name="bkmk_mx"> </a>
 
-1. 若要開始使用，請使用[此連結](https://theconsole.netregistry.com.au/)移至 Netregistry 中您的網域頁面。 You'll be prompted to log in.
+1. 若要開始使用，請使用 [此連結](https://theconsole.netregistry.com.au/)移至 Netregistry 中您的網域頁面。 You'll be prompted to log in.
     
     ![Netregistry_login](../../media/80277b0e-547e-4635-aa6a-5d8ebe3fba85.png)
   
-2. 在您要管理的網域旁，選取 [**管理**]。
+2. 在您要管理的網域旁，選取 [ **管理**]。
     
     ![Netregistry_Manage](../../media/96e2c6e4-21fd-4405-a4fe-b1188400b985.png)
   
-3. 選取 [**區域管理員**]。
+3. 選取 [ **區域管理員**]。
     
     ![Netregistry_selectZoneManager](../../media/914021f6-dff3-4640-84d6-b83cf8f61cf1.png)
   
-4. 在 [**目前區域記錄**] 底下，選取清單中每個 MX 記錄旁邊的 [**移除**]，以移除預設的 mx 記錄。 
+4. 在 [ **目前區域記錄**] 底下，選取清單中每個 MX 記錄旁邊的 [ **移除** ]，以移除預設的 mx 記錄。 
     
     ![Netregistry_MX_remove](../../media/494670a9-8b8d-46e5-8136-05e82212a115.png)
   
-5. 在 [**新增區域記錄**] 底下的清單中，選擇 [ **MX 記錄**]，然後選取 [**建立新的記錄**]。
+5. 在 [ **新增區域記錄**] 底下的清單中，選擇 [ **MX 記錄** ]，然後選取 [ **建立新的記錄**]。
     
     ![Netregistry_MX_select](../../media/29b60eb9-6c40-490f-9669-e65b65962f37.png)
   
-6. 在 [**新增 MX 記錄**] 表單中，輸入或複製並貼上下清單格中的值。 
+6. 在 [ **新增 MX 記錄** ] 表單中，輸入或複製並貼上下清單格中的值。 
     
-    |**Name**|**TTL （秒）**|**Exchange （指向 address 或 value）**|**主機是否已完全合格？**|**喜好設定（優先順序）**|
+    |**名稱**|**TTL (秒) **|**Exchange (指向 address 或 value) **|**主機是否已完全合格？**|**喜好設定 (優先順序) **|
     |:-----|:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |3600（秒）  <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)      |（選取核取方塊）  <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
+    |(保留空白)  <br/> |3600 (秒)   <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)      | (選取此核取方塊)   <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
        
     ![Netregistry_MX_values](../../media/518b3da6-4055-4e2d-b5ce-44a0fee25419.png)
   
-7. 選取 [**新增記錄**]。
+7. 選取 [ **新增記錄**]。
     
     ![Netregistry_MX_values_AddRecord](../../media/8194cb38-afa0-48ac-831c-fd34b6ad652e.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>新增 Microsoft 所需的 CNAME 記錄
 <a name="bkmk_cname"> </a>
 
-1. 若要開始使用，請使用[此連結](https://theconsole.netregistry.com.au/)移至 Netregistry 中您的網域頁面。 You'll be prompted to log in.
+1. 若要開始使用，請使用 [此連結](https://theconsole.netregistry.com.au/)移至 Netregistry 中您的網域頁面。 You'll be prompted to log in.
     
     ![Netregistry_login](../../media/cbf83dce-86d2-4008-9400-56def4b6fcd7.png)
   
-2. 在您要管理的網域旁，選取 [**管理**]。
+2. 在您要管理的網域旁，選取 [ **管理**]。
     
     ![Netregistry_Manage](../../media/7bee4b0f-2c1d-43ca-b1bb-9b889ca0c5e4.png)
   
-3. 選取 [**區域管理員**]。
+3. 選取 [ **區域管理員**]。
     
     ![Netregistry_selectZoneManager](../../media/58384add-0a9d-472b-a5d0-51ec8155fd41.png)
   
-4. 在 [**新增區域記錄**] 底下的清單中，選擇 [ **CNAME 記錄**]，然後選取 [**建立新的記錄**]。
+4. 在 [  **新增區域記錄**] 底下的清單中，選擇 [ **CNAME 記錄** ]，然後選取 [ **建立新的記錄**]。
     
     ![Netregistry_CNAME_CreateNewRecord](../../media/7b4f133f-45da-48da-93c0-62f57c786165.png)
   
 5. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    |**Name**|**Type**|**TTL**|**主機（指向或位址值）**|
+    |**名稱**|**類型**|**TTL**|**主機 (指向或位址值) **|
     |:-----|:-----|:-----|:-----|
-    |autodiscover  <br/> |CNAME  <br/> |3600（秒）  <br/> |autodiscover.outlook.com  <br/> |
-    |sip  <br/> |CNAME  <br/> |3600（秒）  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover  <br/> |CNAME  <br/> |3600（秒）  <br/> |webdir.online.lync.com  <br/> |
-    |enterpriseregistration  <br/> |CNAME  <br/> |3600（秒）  <br/> |enterpriseregistration.windows.net  <br/> |
-    |enterpriseenrollment  <br/> |CNAME  <br/> |3600（秒）  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+    |autodiscover  <br/> |CNAME  <br/> |3600 (秒)   <br/> |autodiscover.outlook.com  <br/> |
+    |sip  <br/> |CNAME  <br/> |3600 (秒)   <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover  <br/> |CNAME  <br/> |3600 (秒)   <br/> |webdir.online.lync.com  <br/> |
+    |enterpriseregistration  <br/> |CNAME  <br/> |3600 (秒)   <br/> |enterpriseregistration.windows.net  <br/> |
+    |enterpriseenrollment  <br/> |CNAME  <br/> |3600 (秒)   <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
        
     ![Netregistry_CNAME_values](../../media/93c479f0-3ce2-491a-9113-6dde1cd7131b.png)
       
-6. 選取 [**新增記錄**]。
+6. 選取 [ **新增記錄**]。
     
     ![Netregistry_CNAME_values_AddRecord](../../media/046c8c64-ea71-4530-9fc6-69f0c70993b6.png)
   
@@ -189,21 +189,21 @@ ms.locfileid: "44400361"
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。
   
-1. 若要開始使用，請使用[此連結](https://theconsole.netregistry.com.au/)移至 Netregistry 中您的網域頁面。 You'll be prompted to log in.
+1. 若要開始使用，請使用 [此連結](https://theconsole.netregistry.com.au/)移至 Netregistry 中您的網域頁面。 You'll be prompted to log in.
     
     ![Netregistry_login](../../media/a841f11f-1c0f-4926-acea-a2b8bb083984.png)
   
-2. 在您要管理的網域旁，選取 [**管理**]。
+2. 在您要管理的網域旁，選取 [ **管理**]。
     
     ![Netregistry_Manage](../../media/4245bbbb-4e2d-49e7-a89c-679949aa3d18.png)
   
-3. 選取 [**區域管理員**]。
+3. 選取 [ **區域管理員**]。
     
     ![Netregistry_selectZoneManager](../../media/372e5918-b6dc-4268-8f9a-0aa71d65deef.png)
   
-4. 在 [**新增區域記錄**] 底下的清單中，選擇 [ **TXT 記錄**]，然後選取 [**建立新的記錄**]。
+4. 在 [ **新增區域記錄**] 底下的清單中，選擇 [ **TXT 記錄** ]，然後選取 [ **建立新的記錄**]。
     
     ![Netregistry_TXT_select](../../media/a2930d03-853a-4f1e-9205-d00f25bed35f.png)
   
@@ -212,48 +212,48 @@ ms.locfileid: "44400361"
     > [!NOTE]
     > 您必須在 TXT 方塊中的專案前後使用引號。 
   
-    |**Name**|**Type**|**TTL**|**TXT 資料（目標）**|
+    |**名稱**|**類型**|**TTL**|**TXT 資料 (目標) **|
     |:-----|:-----|:-----|:-----|
-    |(保留空白)  <br/> |TXT  <br/> |3600（秒）  <br/> |"v = spf1 包含: spf.protection.outlook.com. .com-all"  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |(保留空白)  <br/> |TXT  <br/> |3600 (秒)   <br/> |"v = spf1 包含: spf.protection.outlook.com. .com-all"  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
-    ![Netregistry_SPF TXTvalues](../../media/a369345a-d774-48bc-8160-b628ab8247f9.png)
+    ![Netregistry_SPF-TXTvalues](../../media/a369345a-d774-48bc-8160-b628ab8247f9.png)
   
-6. 選取 [**新增記錄**]。
+6. 選取 [ **新增記錄**]。
     
-    ![Netregistry_SPF TXTvalues_AddRecord](../../media/063bfbaf-940a-489f-970f-29c026b4b312.png)
+    ![Netregistry_SPF-TXTvalues_AddRecord](../../media/063bfbaf-940a-489f-970f-29c026b4b312.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 <a name="bkmk_srv"> </a>
 
-1. 若要開始使用，請使用[此連結](https://theconsole.netregistry.com.au/)移至 Netregistry 中您的網域頁面。 You'll be prompted to log in.
+1. 若要開始使用，請使用 [此連結](https://theconsole.netregistry.com.au/)移至 Netregistry 中您的網域頁面。 You'll be prompted to log in.
     
     ![Netregistry_login](../../media/accf6584-e5f4-4d68-a641-0f8847f8370f.png)
   
-2. 在您要管理的網域旁，選取 [**管理**]。
+2. 在您要管理的網域旁，選取 [  **管理**]。
     
     ![Netregistry_Manage](../../media/e0ddc79e-0123-4e24-8380-9645bdb41aac.png)
   
-3. 選取 [**區域管理員**]。
+3. 選取 [ **區域管理員**]。
     
     ![Netregistry_selectZoneManager](../../media/f122888b-3cc5-40ec-adac-0ede04799d9a.png)
   
-4. 在 [**新增區域記錄**] 底下的清單中，選擇 [ **SRV 記錄**]，然後選取 [**建立新的記錄**]。
+4. 在 [  **新增區域記錄**] 底下的清單中，選擇 [ **SRV 記錄** ]，然後選取 [ **建立新的記錄**]。
     
     ![Netregistry_SRV_select](../../media/e5dab850-acd1-48b8-8b4a-e3b9777cf508.png)
   
 5. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
     
     > [!NOTE]
-    > Name 欄位是服務的組合（例如，_sip）和通訊協定（例如，_tls）。 
+    > Name 欄位是服務 (的組合，例如 _sip) 和通訊協定 (例如 _tls) 。 
   
-    |**類型**|**名稱**|**TTL （秒）**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
+    |**類型**|**名稱**|**TTL (秒) **|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV （服務）  <br/> |_sip。 _tls  <br/> |3600（秒）  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV （服務）  <br/> |_sipfederationtls。 _tcp  <br/> |3600（秒）  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV (服務)   <br/> |_sip._tls  <br/> |3600 (秒)   <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV (服務)   <br/> |_sipfederationtls._tcp  <br/> |3600 (秒)   <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
        
     ![Netregistry_SRV_values](../../media/49292846-1598-4b8c-9940-db6e10675753.png)
   
-6. 選取 [**新增記錄**]。
+6. 選取 [ **新增記錄**]。
     
     ![Netregistry_SRV_values_AddRecord](../../media/abc82061-939f-4757-87e4-0e8f9e43ebcb.png)
   

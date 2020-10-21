@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Register.com。
-ms.openlocfilehash: 7a11fa248f2602eb02fe1242234d26584bd33fd2
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 96ec44875d5bc86f46e4945d4021deb0ca427fed
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780322"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645800"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>在 Register.com 建立 Microsoft 的 DNS 記錄
 
@@ -63,15 +63,15 @@ ms.locfileid: "44780322"
   
 請依照下列步驟操作或[觀看影片 (從 0:44 處開始)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
-1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。 系統會提示您先登入。
+1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。系統會提示您先登入。
     
 2. Select **Domains**.
     
-3. 選取 [**管理**]。
+3. 選取 [ **管理**]。
     
-4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [**管理**]。
+4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [ **管理**]。
     
-5. 向下滾動至 [**高級技術設定**] 區段，然後選取 [**編輯 TXT 記錄（SPF）**]。
+5. 向下滾動至 [ **高級技術設定** ] 區段，然後選取 [ **編輯 TXT 記錄 (SPF) **]。
     
 6. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -80,9 +80,9 @@ ms.locfileid: "44780322"
     |**Host Name** <br/> |**TXT Record** <br/> |
     |@  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. 選取 [**繼續**]。
+7. 選取 [ **繼續**]。
     
-8. 在下一個頁面上，選取 [**繼續**]，以確認您的變更。 
+8. 在下一個頁面上，選取 [ **繼續** ]，以確認您的變更。 
     
 9. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
@@ -106,25 +106,25 @@ ms.locfileid: "44780322"
 
 請依照下列步驟操作或[觀看影片 (從 3:32 處開始)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
-1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。 系統會提示您先登入。
+1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。系統會提示您先登入。
     
 2. Select **Domains**.
     
-3. 選取 [**管理**]。
+3. 選取 [ **管理**]。
     
-4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [**管理**]。
+4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [ **管理**]。
     
-5. 流覽至 [**高級技術設定**] 區段，然後選取 [**編輯郵件交換器記錄**]。
+5. 流覽至 [ **高級技術設定** ] 區段，然後選取 [ **編輯郵件交換器記錄**]。
     
     ![選取 [編輯郵件交換器] 記錄](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
   
 6. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    （從下拉式清單中選擇 [**優先順序**] 值。） 
+     (從下拉式清單中選擇 [ **優先順序** ] 值。 )  
     
     |主機名稱 * * * *|優先順序 * * * *|郵件伺服器 * * * *|
     |:-----|:-----|:-----|
-    |@  <br/> |High (高)  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/>  <br/>**附注：**\<*domain-key*\>從您的 Microsoft 帳戶取得。 <br> [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High (高)  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**注意：** 從您的 Microsoft 帳戶取得您的 \<*domain-key*\>。 <br> [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![複製並貼上表格中的值](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -132,11 +132,11 @@ ms.locfileid: "44780322"
     
     ![Select each record to delete](../../media/0708d03e-346f-4ae7-8cc4-01589efc00ce.png)
   
-8. 選取 [**繼續**]。
+8. 選取 [ **繼續**]。
     
     ![選取 [繼續]](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
   
-9. 在下一個頁面上，選取 [**繼續**] 以確認並儲存您的變更。 
+9. 在下一個頁面上，選取 [ **繼續** ] 以確認並儲存您的變更。 
     
     ![選取 [繼續]](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
   
@@ -145,19 +145,19 @@ ms.locfileid: "44780322"
 
 請依照下列步驟操作或[觀看影片 (從 4:23 處開始)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
-1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。 系統會提示您先登入。
+1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。系統會提示您先登入。
     
 2. Select **Domains**.
     
-3. 選取 [**管理**]。
+3. 選取 [ **管理**]。
     
-4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [**管理**]。
+4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [ **管理**]。
     
-5. 流覽至 [**高級技術設定**] 區段，然後選取 [**編輯網域別名記錄**]。
+5. 流覽至 [ **高級技術設定** ] 區段，然後選取 [ **編輯網域別名記錄**]。
     
     ![選取 [編輯網域別名記錄]](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
   
-6. 選取 [**新增更多網域別名**]。
+6. 選取 [ **新增更多網域別名**]。
     
     ![選取 [新增更多網域別名]](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
   
@@ -165,7 +165,7 @@ ms.locfileid: "44780322"
     
     在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。
     
-    |第一個欄位（未標記） * * * *|指向 * * * *|
+    |第一個欄位 (未標記) * * * * *|指向 * * * *|
     |:-----|:-----|
     |autodiscover  <br/> |autodiscover.outlook.com  <br/>  <br/> |
     |sip  <br/> |sipdir.online.lync.com  <br/>  <br/> |
@@ -175,11 +175,11 @@ ms.locfileid: "44780322"
    
      ![複製並貼上表格中的 DNS 值](../../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
   
-8. 當您已新增所需的所有 CNAME 記錄後，請選取 [**繼續**]。
+8. 當您已新增所需的所有 CNAME 記錄後，請選取 [ **繼續**]。
     
     ![選取 [繼續]](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
   
-9. 在下一個頁面上，選取 [**繼續**] 以確認並儲存您的變更。 
+9. 在下一個頁面上，選取 [ **繼續** ] 以確認並儲存您的變更。 
     
     ![選取 [繼續]](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
   
@@ -191,31 +191,31 @@ ms.locfileid: "44780322"
   
 請依照下列步驟操作或[觀看影片 (從 5:12 處開始)](https://support.microsoft.com/office/7448dd9e-c0e7-4d5e-a7e9-f0e4715433c4)。
   
-1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。 系統會提示您先登入。
+1. 首先請用[這個連結](https://www.register.com/myaccount/)移至 Register.com 上您的網域頁面。系統會提示您先登入。
     
 2. Select **Domains**.
     
-3. 選取 [**管理**]。
+3. 選取 [ **管理**]。
     
-4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [**管理**]。
+4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [ **管理**]。
     
-5. 滾動至 [**高級技術設定**] 區段，然後選取 **[編輯 TXT 記錄（SPF）**]。
+5. 滾動至 [ **高級技術設定** ] 區段，然後選取 [ **編輯 TXT 記錄 (SPF) **]。
     
-    ![選取 [編輯 TXT 記錄（SPF）]](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
+    ![選取 [編輯 TXT 記錄 (SPF) ](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
   
 6. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
     
     |主機名稱 * * * *|TXT 記錄 * * * *|
     |:-----|:-----|
-    |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。  |
+    |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。  |
    
      ![複製並貼上表格中的值](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
   
-7. 選取 [**繼續**]。
+7. 選取 [ **繼續**]。
     
     ![選取 [繼續]](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
   
-8. 在下一個頁面上，選取 [**繼續**] 以確認並儲存您的變更。 
+8. 在下一個頁面上，選取 [ **繼續** ] 以確認並儲存您的變更。 
     
     ![選取 [繼續]](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
   
@@ -228,11 +228,11 @@ ms.locfileid: "44780322"
     
 2. Select **Domains**.
     
-3. 選取 [**管理**]。
+3. 選取 [ **管理**]。
     
-4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [**管理**]。
+4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [ **管理**]。
     
-5. 滾動至 [**高級技術設定**] 區段，然後選取 [**編輯 SRV 記錄**]。
+5. 滾動至 [ **高級技術設定** ] 區段，然後選取 [ **編輯 SRV 記錄**]。
     
     ![選取 [編輯 SRV 記錄]](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
   
@@ -240,7 +240,7 @@ ms.locfileid: "44780322"
     
     在每一筆新記錄的方塊中，輸入或複製並貼上下表第一列中的值。
     
-    （從下拉式清單中選擇 [**優先順序**] 值。） 
+     (從下拉式清單中選擇 [ **優先順序** ] 值。 )  
     
     |服務 * * * *|Proto * * * *|****名稱****|優先順序 * * * *|體重 * * * *|埠 * * * *|目標 * * * *|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -249,7 +249,7 @@ ms.locfileid: "44780322"
    
     ![複製並貼上表格中的值](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   
-7. 選取 [**新增更多 SRV 記錄**]。
+7. 選取 [ **新增更多 SRV 記錄**]。
     
     ![選取 [新增更多 SRV 記錄]](../../media/823c6bd2-4af7-4079-bf8c-8d35a5c6730f.png)
   
@@ -257,11 +257,11 @@ ms.locfileid: "44780322"
     
     在第二筆記錄的方塊中，輸入或複製並貼上表格中第二列的值。
     
-9. 當您新增這兩個 SRV 記錄時，請選取 [**繼續**]。
+9. 當您新增這兩個 SRV 記錄時，請選取 [ **繼續**]。
     
     ![選取 [繼續]](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
   
-10. 在下一個頁面上，選取 [**繼續**] 以確認並儲存您的變更。 
+10. 在下一個頁面上，選取 [ **繼續** ] 以確認並儲存您的變更。 
     
     ![選取 [繼續]](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
   

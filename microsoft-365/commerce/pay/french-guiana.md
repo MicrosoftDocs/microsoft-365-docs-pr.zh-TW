@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,23 +13,23 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 583d006af2e7055e20192c58549b15a652bc5ec1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f9867088abafc9412105e889993db569f00f8d07
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401735"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48647588"
 ---
 # <a name="payment-information-for-french-guiana"></a>法國蓋亞納的付款資訊
 
 [尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
-請只以 USD 支付，並且在您的發票匯款上參照您的發票號碼。
+請只以 USD 支付，並參照您發票匯款 (s) 中的發票編號。
 
 ## <a name="electronic-funds-transfer"></a>電子基金轉移
 
 **銀行：** 美洲銀行  
-**分支**達拉斯  
+**分支** 達拉斯  
 **SWIFT 程式碼：** BOFAUS3N  
 **帳戶號碼：** 4426587954  
 **帳戶名稱：** 微軟  

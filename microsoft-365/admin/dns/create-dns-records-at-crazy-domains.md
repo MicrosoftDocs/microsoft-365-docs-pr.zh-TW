@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft 用的網域。
-ms.openlocfilehash: af154db43f486f71443497180fe64cff89e11b5f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: cf65173873affdc66e4e6d03764a3d6c842b7642
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400530"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646220"
 ---
 # <a name="create-dns-records-at-crazy-domains-for-microsoft"></a>在 Microsoft 的古怪網域建立 DNS 記錄
 
@@ -53,19 +53,19 @@ ms.locfileid: "44400530"
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. 在 [**我的帳戶**] 區段中，選取 [**網域**]。
+2. 在 [ **我的帳戶** ] 區段中，選取 [ **網域**]。
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. 在 [**網功能變數名稱稱**] 頁面上的 [**網域**] 區段中，選取您要更新的網功能變數名稱稱。 
+3. 在 [ **網功能變數名稱稱** ] 頁面上的 [ **網域** ] 區段中，選取您要更新的網功能變數名稱稱。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. 在 [ **DNS 設定**] 區段中，選取下拉式清單圖示。 
+4. 在 [ **DNS 設定** ] 區段中，選取下拉式清單圖示。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
     ![CrazyDomains-BP-Configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
@@ -81,11 +81,11 @@ ms.locfileid: "44400530"
     
     |**Sub Domain**|**Text Record**|
     |:-----|:-----|
-    |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |(將此欄位保留空白。)  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![CrazyDomains-BP-Verify-1-3](../../media/3867de97-6a98-4475-9bda-470bac75d483.png)
   
-9. 選取 [**更新**]。
+9. 選取 [ **更新**]。
     
     ![CrazyDomains-BP-Verify-1-4](../../media/0e416df6-b7a2-4dd7-971c-f1cc31df30da.png)
   
@@ -120,19 +120,19 @@ ms.locfileid: "44400530"
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. 在 [**我的帳戶**] 區段中，選取 [**網域**]。
+2. 在 [ **我的帳戶** ] 區段中，選取 [ **網域**]。
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. 在 [**網功能變數名稱稱**] 頁面上的 [**網域**] 區段中，選取您要更新的網功能變數名稱稱。 
+3. 在 [ **網功能變數名稱稱** ] 頁面上的 [ **網域** ] 區段中，選取您要更新的網功能變數名稱稱。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. 在 [ **DNS 設定**] 區段中，選取下拉式清單圖示。 
+4. 在 [ **DNS 設定** ] 區段中，選取下拉式清單圖示。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
     ![CrazyDomains-BP-Configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
@@ -146,19 +146,19 @@ ms.locfileid: "44400530"
   
 8. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    （從下拉式清單中選擇 [**優先順序**] 值。） 
+     (從下拉式清單中選擇 [ **優先順序** ] 值。 )  
     
     |**Mail For Zone (區域郵件)**|**優先順序**|**Assigned To Server (指派給伺服器)**|
     |:-----|:-----|:-----|
-    |(將此欄位保留空白。)  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*。 mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
+    |(將此欄位保留空白。)  <br/> |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
        
    ![CrazyDomains-BP-Configure-2-3](../../media/e27df6a6-19a6-4e58-9716-a74be1c3f8da.png)
   
-9. 選取 [**更新**]。
+9. 選取 [ **更新**]。
     
     ![CrazyDomains-BP-Configure-2-4](../../media/ba25cdef-a436-48bf-b0e9-5dffd03234a4.png)
   
-10. 如果 [ **Mx 記錄**] 區段中列出任何其他 MX 記錄，請針對其中一個記錄選取 [**修改**]。 
+10. 如果 [ **Mx 記錄** ] 區段中列出任何其他 MX 記錄，請針對其中一個記錄選取 [ **修改** ]。 
     
     ![CrazyDomains-BP-Configure-2-5](../../media/9acdda39-33ec-4b24-ad83-91c26f9c599b.png)
   
@@ -166,7 +166,7 @@ ms.locfileid: "44400530"
     
     ![CrazyDomains-BP-Configure-2-6](../../media/50b0e263-6f21-41b3-8fa0-7dd55dbe6c2e.png)
   
-12. 選取 [**更新**] 以確認刪除。 
+12. 選取 [ **更新** ] 以確認刪除。 
     
     ![CrazyDomains-BP-Configure-2-7](../../media/db751bfe-31c2-4632-a491-6893eda38a51.png)
   
@@ -179,19 +179,19 @@ ms.locfileid: "44400530"
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. 在 [**我的帳戶**] 區段中，選取 [**網域**]。
+2. 在 [ **我的帳戶** ] 區段中，選取 [ **網域**]。
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. 在 [**網功能變數名稱稱**] 頁面上的 [**網域**] 區段中，選取您要更新的網功能變數名稱稱。 
+3. 在 [ **網功能變數名稱稱** ] 頁面上的 [ **網域** ] 區段中，選取您要更新的網功能變數名稱稱。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. 在 [ **DNS 設定**] 區段中，選取下拉式清單圖示。 
+4. 在 [ **DNS 設定** ] 區段中，選取下拉式清單圖示。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
     ![CrazyDomains-BP-Configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
@@ -217,17 +217,17 @@ ms.locfileid: "44400530"
    
     ![CrazyDomains-BP-Configure-3-3](../../media/81a7b837-3f4d-4565-89a9-380e4d318acf.png)
   
-9. 選取 [**新增 CNAME 記錄**]。
+9. 選取 [ **新增 CNAME 記錄**]。
     
     ![CrazyDomains-BP-Configure-3-4](../../media/9bcba729-7085-4ebc-8183-ecde82f5c364.png)
   
 10. 新增第二筆 CNAME 記錄。
     
-    在新記錄的方塊中，使用表格中下一列的值，然後再選取 [**新增 CNAME 記錄**]。
+    在新記錄的方塊中，使用表格中下一列的值，然後再選取 [ **新增 CNAME 記錄**]。
     
     重複這個程序，直到六筆 CNAME 記錄全部建立完畢。
     
-11. 選取 [**更新**] 以儲存變更。 
+11. 選取 [ **更新** ] 以儲存變更。 
     
     ![CrazyDomains-BP-Configure-3-5](../../media/dbe578f6-359c-428c-b296-ca624cecfc3c.png)
   
@@ -235,25 +235,25 @@ ms.locfileid: "44400530"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 
   
 1. 首先請用[這個連結](https://manage.crazydomains.com/members/domains/)移至 Crazy Domains 上您的網域頁面。系統會提示您先登入。
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. 在 [**我的帳戶**] 區段中，選取 [**網域**]。
+2. 在 [ **我的帳戶** ] 區段中，選取 [ **網域**]。
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. 在 [**網功能變數名稱稱**] 頁面上的 [**網域**] 區段中，選取您要更新的網功能變數名稱稱。 
+3. 在 [ **網功能變數名稱稱** ] 頁面上的 [ **網域** ] 區段中，選取您要更新的網功能變數名稱稱。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. 在 [ **DNS 設定**] 區段中，選取下拉式清單圖示。 
+4. 在 [ **DNS 設定** ] 區段中，選取下拉式清單圖示。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
     ![CrazyDomains-BP-Configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
@@ -269,11 +269,11 @@ ms.locfileid: "44400530"
     
     |**Sub Domain**|**Text Record**|
     |:-----|:-----|
-    |(將此欄位保留空白。)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
+    |(將此欄位保留空白。)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
     ![CrazyDomains-BP-Configure-4-3](../../media/e7fd524a-c94b-4cdd-b264-67abb532a71b.png)
   
-9. 選取 [**更新**]。
+9. 選取 [ **更新**]。
     
     ![CrazyDomains-BP-Configure-4-4](../../media/d4f378ee-0f14-46ae-ba32-1596660ecf91.png)
   
@@ -284,19 +284,19 @@ ms.locfileid: "44400530"
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. 在 [**我的帳戶**] 區段中，選取 [**網域**]。
+2. 在 [ **我的帳戶** ] 區段中，選取 [ **網域**]。
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. 在 [**網功能變數名稱稱**] 頁面上的 [**網域**] 區段中，選取您要更新的網功能變數名稱稱。 
+3. 在 [ **網功能變數名稱稱** ] 頁面上的 [ **網域** ] 區段中，選取您要更新的網功能變數名稱稱。 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. 在 [ **DNS 設定**] 區段中，選取下拉式清單圖示。 
+4. 在 [ **DNS 設定** ] 區段中，選取下拉式清單圖示。 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
-5. 選取 [**新增記錄**]。
+5. 選取 [ **新增記錄**]。
     
     ![CrazyDomains-BP-Configure-1-4-2](../../media/7bef31f5-f180-4b61-a462-9326789e770f.png)
   
@@ -314,12 +314,12 @@ ms.locfileid: "44400530"
     
     |**Record Type** (記錄類型)|**Sub Domain**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV Record (SRV 記錄)  <br/> |_sip。 _tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |SRV Record (SRV 記錄)  <br/> |_sipfederationtls。 _tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |SRV Record (SRV 記錄)  <br/> |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |SRV Record (SRV 記錄)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![CrazyDomains-BP-Configure-5-3](../../media/cc0ea6eb-7358-434e-bd1a-2737725c6d41.png)
   
-9. 選取 [**新增 SRV 記錄**]。
+9. 選取 [ **新增 SRV 記錄**]。
     
     ![CrazyDomains-BP-Configure-5-4](../../media/de4ec312-6833-469a-b23a-f376140a35ca.png)
   
@@ -327,7 +327,7 @@ ms.locfileid: "44400530"
     
     在新記錄的方塊中，使用下表第二列中的值。
     
-11. 選取 [**更新**] 以儲存變更。 
+11. 選取 [ **更新** ] 以儲存變更。 
     
     ![CrazyDomains-BP-Configure-5-5](../../media/f0bb1dd6-3772-4293-bf74-710f635e0658.png)
   

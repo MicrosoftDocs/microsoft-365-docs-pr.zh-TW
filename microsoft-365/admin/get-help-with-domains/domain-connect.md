@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: 瞭解如何使用啟用網域連線的註冊機構，並將您的網域新增至 Microsoft 365。
-ms.openlocfilehash: fb3f9315ed8ae056cadd2fd6a83f13f6713347f3
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+ms.openlocfilehash: e907317ec5b606c2fe73232a73c9abdfce26feea
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45079976"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645344"
 ---
 # <a name="using-domain-connect"></a>使用網域連接
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
   
 已啟用[網域](https://www.domainconnect.org/)連線註冊機構可讓您將網域新增至 Microsoft 365，並以三個步驟為單位，以分鐘為單位。 
   
@@ -48,7 +48,7 @@ ms.locfileid: "45079976"
 - [Wordpress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer 或 WildWestDomains （使用 SecureServer DNS 主控的 GoDaddy 轉銷商）
+- 使用 SecureServer DNS 主機的 SecureServer 或 WildWestDomains (GoDaddy 轉銷商) 
     - [MadDog 網域](https://www.maddogdomains.com/)
     - [CheapNames](https://www.cheapnames.com)
 

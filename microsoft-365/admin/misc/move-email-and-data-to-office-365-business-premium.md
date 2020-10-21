@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 瞭解如何將資料移至新的商務身分識別。
-ms.openlocfilehash: ebbb680baf36386d7f2dafae61fb262bf0220e69
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 4f105e00ab6496a5d1d3edfc0e0f1abd4eced412
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44779998"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645032"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>將電子郵件和資料移至 Microsoft 365 商務標準
 
-當您升級至 Microsoft 365 商務標準時，我們會為您提供一種新的*商業身分識別*。 You get a new email account, and a separate OneDrive account for your business data. 
+當您升級至 Microsoft 365 商務標準時，我們會為您提供一種新的  *商業身分識別*。 You get a new email account, and a separate OneDrive account for your business data. 
   
 如果您想要將某些個人資料移至新的商務身分識別中，請遵循下列指示：
   
@@ -45,16 +45,16 @@ ms.locfileid: "44779998"
 3. 將您想要用於商務用 Microsoft 365 的檔案複製到您在步驟1中建立的本機資料夾。
     
  **將 OneDrive 檔案匯入至 Microsoft 365 for business**
-1. 移至[admin.microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) ，並使用您的 Microsoft 365 應用程式的使用者名稱和密碼登入。 
+1. 移至 [admin.microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) ，並使用您的 Microsoft 365 應用程式的使用者名稱和密碼登入。 
     
-2. 選取左上角的**應用程式啟動器**圖示，然後選擇 [ **OneDrive**]。
+2. 選取左上角的 **應用程式啟動器** 圖示，然後選擇 [ **OneDrive**]。
   
     > [!TIP]
-    > 首次開啟商務用 OneDrive 時，您必須設定 OneDrive。 如果發生這種情況，在 [**歡迎使用商務用 OneDrive** ] 頁面上，選取 **[下一步]**。 在設定 OneDrive 後，請選取**您的 OneDrive 準備就緒**。 
+    > 首次開啟商務用 OneDrive 時，您必須設定 OneDrive。 如果發生這種情況，在 [ **歡迎使用商務用 OneDrive** ] 頁面上，選取 **[下一步]**。 在設定 OneDrive 後，請選取 **您的 OneDrive 準備就緒**。 
   
-3. 您會進入空白的 OneDrive 資料夾。 如果您想要建立子資料夾，請選取 [**新增** \> **資料夾**]。
+3. 您會進入空白的 OneDrive 資料夾。 如果您想要建立子資料夾，請選取 [ **新增** \> **資料夾**]。
 
-4. 選取 **[上傳**]，將檔案從您複製 OneDrive 檔案的硬碟上複製。 
+4. 選取 **[上傳** ]，將檔案從您複製 OneDrive 檔案的硬碟上複製。 
   
     > [!NOTE]
     >  您可以上傳個別檔案，也可以一次上傳一組檔案 (例如特定資料夾中的所有檔案)，但您無法將資料夾複製到商務用 OneDrive。您必須改為在商務用 OneDrive 中建立需要的資料夾結構。 >  如果您想將檔案複製到步驟 4 中建立的資料夾，請在上傳檔案前開啟該資料夾，否則檔案將會上傳到根資料夾。上傳檔案之後，您也可以在商務用 OneDrive 中的資料夾之間移動檔案。 
@@ -74,7 +74,7 @@ ms.locfileid: "44779998"
  **從 Outlook 資料檔匯入資訊**
 1. 這會將儲存在 PST 檔案中的電子郵件、行事曆、工作和連絡人，合併成您的商務用 Microsoft 365 電子郵件帳戶。
     
-2. 若要將儲存在 PST 檔案中的資訊匯入至 Microsoft 365 的商務電子郵件帳戶，請讓每位使用者完成[從 Outlook .pst 檔案匯入電子郵件、連絡人和行事曆](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)中的步驟。
+2. 若要將儲存在 PST 檔案中的資訊匯入至 Microsoft 365 的商務電子郵件帳戶，請讓每位使用者完成 [從 Outlook .pst 檔案匯入電子郵件、連絡人和行事曆](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)中的步驟。
     
 ---
 

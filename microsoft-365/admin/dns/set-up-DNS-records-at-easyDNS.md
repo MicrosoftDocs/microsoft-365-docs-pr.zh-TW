@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft easyDNS。
-ms.openlocfilehash: 24f477d240af936975141c53d382e114a24c0ac5
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400229"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645548"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>在 Microsoft 的 easyDNS 建立 DNS 記錄
 
@@ -39,19 +39,19 @@ ms.locfileid: "44400229"
 
 1. 移至 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 並以您的認證登入。 
     
-2. 在 [**所有網域**] 標題下，選取 [ **dns]。**
+2. 在 [ **所有網域** ] 標題下，選取 [ **dns]。**
     
-3. 在 [ **TXT 記錄**] 標題下，選取 [編輯] 按鈕（扳手圖示）。 
+3. 在 [ **TXT 記錄** ] 標題下，選取 [編輯] 按鈕 (扳手圖示) 。 
     
 4. 在 [文字] 欄位中輸入下列記錄：
     
-    |**Host** (主機)|**Text**|
+    |**Host**|**Text**|
     |:-----|:-----|
-    |@  <br/> |MS=msXXXXXXXX （在系統管理中心的 [網域] 頁面上，使用您提供的值）  <br/> |
+    |@  <br/> |MS=msXXXXXXXX (使用您在系統管理中心的 [網域] 頁面上提供的值)   <br/> |
    
 5. 選取 **[下一步]**。 
     
-6. 請確認記錄是否正確，然後選取 [**確認**]。 
+6. 請確認記錄是否正確，然後選取 [ **確認**]。 
     
 7. 請等候幾分鐘，再繼續進行，這樣您剛才建立的記錄便可以傳播到網際網路，並由 Microsoft 偵測到。
     
@@ -61,7 +61,7 @@ ms.locfileid: "44400229"
     
 10. 在 **[網域]** 頁面上，選取您要驗證的網域。 
     
-11. 在 [**安裝**] 頁面上，選取 [**啟動安裝程式]。**
+11. 在 [ **安裝** ] 頁面上，選取 [ **啟動安裝程式]。**
     
 12. 在 **[驗證網域]** 頁面上，選取 **[驗證]**。 
     
@@ -69,62 +69,62 @@ ms.locfileid: "44400229"
 
 1. 移至 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 並以您的認證登入。 
     
-2. 在 [**所有網域**] 標題下，選取 [ **dns]。**
+2. 在 [ **所有網域** ] 標題下，選取 [ **dns]。**
     
-3. 在 [ **MX 記錄**] 標題下，選取 [編輯] 按鈕（扳手圖示）。 
+3. 在 [ **MX 記錄** ] 標題下，選取 [編輯] 按鈕 (扳手圖示) 。 
     
 4. 在 [文字] 欄位中輸入下列記錄：
     
     |**區域的郵件**|**郵件伺服器**|**PREF**|
     |:-----|:-----|:-----|
-    |@  <br/> |\<domain-key\>。 mail.protection.outlook.com （從系統 \<domain-key\> 管理中心的 [網域] 頁面取得您的價值）  <br/> |0  <br/> |
+    |@  <br/> |\<domain-key\>mail.protection.outlook.com (\<domain-key\> 從系統管理中心的 [網域] 頁面取得您的價值)   <br/> |0  <br/> |
    
 2. 如果您想要儲存其他的 MX 記錄以用於備份目的，請將其複製到某個地方。 在移動之前，請在這裡移除所有其他 MX 記錄。
     
 5. 選取 **[下一步]**。 
     
-6. 請確認記錄是否正確，然後選取 [**確認**]。 
+6. 請確認記錄是否正確，然後選取 [ **確認**]。 
     
 ## <a name="add-the-required-cname-records"></a>新增必要的 CNAME 記錄
 
 1. 移至 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 並以您的認證登入。 
     
-2. 在 [**所有網域**] 標題下，選取 [ **dns]。**
+2. 在 [ **所有網域** ] 標題下，選取 [ **dns]。**
     
-3. 在 [ **CNAME/別名記錄**] 標題下，選取 [編輯] 按鈕（扳手圖示）。 
+3. 在 [ **CNAME/別名記錄** ] 標題下，選取 [編輯] 按鈕 (扳手圖示) 。 
     
 4. 在 [文字] 欄位中輸入下列記錄：
 
 
-    |**主機**|**Address （必須以 "." 結尾）**|
+    |**主機**|**Address (必須以 "." 結尾。) **|
     |:-----|:-----|
-    |autodiscover  <br/> |autodiscover.outlook.com。  <br/> |
-    |sip  <br/> |sipdir.online.lync.com。  <br/> |
-    |lyncdiscover  <br/> |webdir.online.lync.com。  <br/> |
-    |enterpriseregistration  <br/> |enterpriseregistration.windows.net。  <br/> |
-    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> |
+    |autodiscover  <br/> |autodiscover.outlook.com.  <br/> |
+    |sip  <br/> |sipdir.online.lync.com.  <br/> |
+    |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> |
+    |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> |
+    |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> |
    
 5. 選取 **[下一步]**。 
     
-6. 請確認記錄是否正確，然後選取 [**確認**]。 
+6. 請確認記錄是否正確，然後選取 [ **確認**]。 
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 
 1. 移至 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 並以您的認證登入。 
     
-2. 在 [**所有網域**] 標題下，選取 [ **dns]。**
+2. 在 [ **所有網域** ] 標題下，選取 [ **dns]。**
     
-3. 在 [ **TXT 記錄**] 標題下，選取 [編輯] 按鈕（扳手圖示）。 
+3. 在 [ **TXT 記錄** ] 標題下，選取 [編輯] 按鈕 (扳手圖示) 。 
     
 4. 在 [文字] 欄位中輸入下列記錄：
     
-    |**Host** (主機)|**Text**|
+    |**Host**|**Text**|
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> |
    
 5. 選取 **[下一步]**。 
     
-6. 請確認記錄是否正確，然後選取 [**確認**]。 
+6. 請確認記錄是否正確，然後選取 [ **確認**]。 
     
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 
@@ -132,19 +132,19 @@ ms.locfileid: "44400229"
   
 1. 移至 [https://cp.easydns.com/manage/domains/](https://cp.easydns.com/manage/domains/) 並以您的認證登入。 
     
-2. 在 [**所有網域**] 標題下，選取 [ **dns]。**
+2. 在 [ **所有網域** ] 標題下，選取 [ **dns]。**
     
-3. 在 [ **SRV 記錄**] 標題下，選取 [編輯] 按鈕（扳手圖示）。 
+3. 在 [ **SRV 記錄** ] 標題下，選取 [編輯] 按鈕 (扳手圖示) 。 
     
 4. 在 [文字] 欄位中輸入下列記錄：
     
-    |**服務**|**原**|**主機**|**Pri**|**WGT**|**港口**|**TARGET （必須以 "." 結尾）**|**TTL**|
+    |**服務**|**原**|**主機**|**Pri**|**WGT**|**港口**|**目標 (必須以 "." 結尾) **|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> |1800  <br/> |
+    |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
     |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> |1800  <br/> |
    
 5. 選取 **[下一步]**。 
     
-6. 請確認記錄是否正確，然後選取 [**確認**]。 
+6. 請確認記錄是否正確，然後選取 [ **確認**]。 
     
 

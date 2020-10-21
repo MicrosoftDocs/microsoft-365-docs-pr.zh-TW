@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -20,17 +20,17 @@ search.appverid:
 - MOE150
 ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: 深入瞭解 Microsoft 365 系統管理中心：如何登入、您的系統管理員是誰，以及觀看影片的相關簡介。
-ms.openlocfilehash: 84c8ef52c4cd3bf687a0849e1e3b1a25f9b31f4d
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6db1ea88d9a9aeb003f16c746a8fe0a5b4d87a42
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44386934"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646592"
 ---
 # <a name="admin-center-overview"></a>系統管理中心概觀 
 
   
-當您購買[商務用 microsoft 365 應用程式方案](https://go.microsoft.com/fwlink/?linkid=856886)或[microsoft 365 for business plan](https://www.microsoft.com/microsoft-365/business)時，我們提供了具有系統管理員許可權的特殊帳戶。 這個帳戶稱為系統管理員帳戶。
+當您購買 [商務用 microsoft 365 應用程式方案](https://go.microsoft.com/fwlink/?linkid=856886) 或 [microsoft 365 for business plan](https://www.microsoft.com/microsoft-365/business)時，我們提供了具有系統管理員許可權的特殊帳戶。 這個帳戶稱為系統管理員帳戶。
   
 您可以使用此帳戶存取 Microsoft 365 系統管理中心，以管理您的業務：新增使用者、管理訂閱、重設密碼等等。 試試看吧！
   

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,31 +21,31 @@ search.appverid:
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
 description: '若要讓 Microsoft 管理您的 DNS 記錄，請瞭解如何使用 Namecheap 設定您的 Microsoft 自訂網域。 '
-ms.openlocfilehash: 55fde3b0db960d78ad77c9f9189c5367de16c73f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: e305abb7768b286dbd24336c1dab39d919f9a0ac
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400614"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48646448"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a>使用 Namecheap 變更名稱伺服器以設定 Microsoft
 
  若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
   
-如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。 （如果您願意，您可以[在 Namecheap 管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-namecheap.md)。）
+如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。  (如果您願意，您可以 [在 Namecheap 管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-namecheap.md)。 ) 
   
     
 ## <a name="add-a-txt-record-for-verification"></a>新增 TXT 記錄以供驗證
 
-1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用[此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
+1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用 [此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在 [**登陸**] 頁面的 [**帳戶**] 下，從下拉式清單中選擇 [**網域清單**]。 
+2. 在 [ **登陸** ] 頁面的 [ **帳戶**] 下，從下拉式清單中選擇 [ **網域清單** ]。 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 [**網域清單**] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [**管理**]。
+3. 在 [ **網域清單** ] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [ **管理**]。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -53,11 +53,11 @@ ms.locfileid: "44400614"
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 [**主機記錄**] 區段中，選取 [**新增記錄**]。
+5. 在 [ **主機記錄** ] 區段中，選取 [ **新增記錄**]。
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在 [**類型**] 下拉式清單中，選取 [ **TXT 記錄**]。
+6. 在 [ **類型** ] 下拉式清單中，選取 [ **TXT 記錄**]。
     
     > [!NOTE]
     > 當您選取 [**新增記錄**] 時，會自動顯示 [**類型**] 下拉式清單。
@@ -66,7 +66,7 @@ ms.locfileid: "44400614"
   
 7. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    （從下拉式清單中選擇 [ **TTL** ] 值。） 
+     (從下拉式清單中選取 [ **TTL** ] 值。 )  
     
 |**類型**|**主機**|**Value** (值)|**TTL**|
 |:-----|:-----|:-----|:-----|
@@ -74,7 +74,7 @@ ms.locfileid: "44400614"
    
    ![Namecheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
-8. 選取 [**儲存變更**] （核取記號）控制。 
+8. 選取 [ **儲存變更** ] (核取記號) 控制項。 
     
     ![Namecheap-BP-Verify-1-3](../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
   
@@ -107,24 +107,24 @@ ms.locfileid: "44400614"
 若要使用 Microsoft 設定您的網域，請在您的網域註冊機構變更網域的 NS 記錄，以指向 Microsoft 主要和次要名稱伺服器。 這會將 Microsoft 設定為您為您更新網域的 DNS 記錄。 我們會新增所有記錄，好讓電子郵件、商務用 Skype Online 和您的公用網站都能使用您的網域，為您做好一切準備。
   
 > [!CAUTION]
-> 當您將網域的 NS 記錄變更為指向 Microsoft 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，在您進行此變更之後，所有傳送至您網域的電子郵件（如 rob@ *your_domain* .com）都會開始向 Microsoft。 
+> 當您將網域的 NS 記錄變更為指向 Microsoft 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，所有傳送至您網域的電子郵件 (例如 rob@ *your_domain*  .com) 會在您進行此變更之後，從 Microsoft 開始。 
   
 > [!IMPORTANT]
 >  When you have completed the steps in this section, the  *only*  nameservers that should be listed are these four: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com >  The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the  *correct*  nameservers if they are not already in the list. 
   
-1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用[此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
+1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用 [此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在 [**登陸**] 頁面的 [**帳戶**] 下，從下拉式清單中選擇 [**網域清單**]。 
+2. 在 [ **登陸** ] 頁面的 [ **帳戶**] 下，從下拉式清單中選擇 [ **網域清單** ]。 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 [**網域清單**] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [**管理**]。
+3. 在 [ **網域清單** ] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [ **管理**]。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. 選取 [**網域**]。
+4. 選取 [ **網域**]。
     
     ![Namecheap-BP-重新委派-1-1](../../media/59588406-794e-4ae4-8526-35e3111b5791.png)
   
@@ -137,11 +137,11 @@ ms.locfileid: "44400614"
 ### <a name="if-there-are-no-nameservers-already-listed"></a>如果列表上「沒有」名稱伺服器
 <a name="BKMK_ProcedureWithOUT"> </a>
 
-1. 選取 [**新增**名稱伺服器] 兩次，以新增兩個新列。
+1. 選取 [ **新增** 名稱伺服器] 兩次，以新增兩個新列。
     
     ![Namecheap-BP-重新委派-1-3-1](../../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
   
-2. 在 [名稱伺服器 **] 方塊中**，輸入或複製並貼上下清單格中的值。
+2. 在 [名稱伺服器 **] 方塊中** ，輸入或複製並貼上下清單格中的值。
     
 |||
 |:-----|:-----|
@@ -152,7 +152,7 @@ ms.locfileid: "44400614"
    
    ![Namecheap-BP-重新委派-1-3-2](../../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
   
-3. 選取 [**儲存**] （核取記號）控制項。 
+3. 選取 [ **儲存** (] 核取記號) 控制項。 
     
     ![Namecheap-BP-重新委派-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   
@@ -162,17 +162,17 @@ ms.locfileid: "44400614"
 ### <a name="if-there-are-nameservers-already-listed"></a>如果列表上「有」名稱伺服器
 
 > [!CAUTION]
-> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers. （也就是說，*只*刪除所有*未*命名為**ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或**ns4.bdm.microsoftonline.com**的目前名稱伺服器。） 
+> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers.  (也就是說，  *只*  刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的目前名稱伺服器。 )  
   
-1. 如果名稱**伺服器方塊中**列出任何其他名稱伺服器，請選取它，然後按鍵盤上的**delete**鍵，逐一刪除。 
+1. 如果名稱 **伺服器方塊中** 列出任何其他名稱伺服器，請選取它，然後按鍵盤上的 **delete** 鍵，逐一刪除。 
     
     ![Namecheap-BP-重新委派-1-4](../../media/3270603a-c4f4-40b7-acad-733d56e2f53c.png)
   
-2. 選取 [**新增**名稱伺服器] 兩次，以新增兩個新列。 
+2. 選取 [ **新增** 名稱伺服器] 兩次，以新增兩個新列。 
     
     ![Namecheap-BP-重新委派-1-3-1](../../media/e8816bf5-bb59-49d5-bfca-43e502242dc3.png)
   
-3. 在 [名稱伺服器 **] 方塊中**，輸入或複製並貼上下清單格中的值。
+3. 在 [名稱伺服器 **] 方塊中** ，輸入或複製並貼上下清單格中的值。
  
     
 |||
@@ -184,7 +184,7 @@ ms.locfileid: "44400614"
    
    ![Namecheap-BP-重新委派-1-3-2](../../media/21d681b7-4f96-4e96-ac27-9534c388537c.png)
   
-4. 選取 [**儲存**] （核取記號）控制項。 
+4. 選取 [ **儲存** (] 核取記號) 控制項。 
     
     ![Namecheap-BP-重新委派-1-5](../../media/07aaf1e5-c24f-4c51-bfe0-f99868b3bf35.png)
   

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Wix。
-ms.openlocfilehash: fcc0f8e8187e22dde68149e0f2a80073312bff7f
-ms.sourcegitcommit: 167c05cc6a776f62f0a0c2de5f3ffeb68c4a27ac
+ms.openlocfilehash: ee236a9178092bb8fd14a9615c2ac5911b1ecc87
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "46814441"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645656"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>在 Wix 建立 Microsoft 的 DNS 記錄
 
@@ -180,8 +180,8 @@ ms.locfileid: "46814441"
     
    | Service (服務) | Protocol (通訊協定) | Name (名稱) | Weight (權數) | Port (連接埠) | Target (目標) | Priority (優先順序) | TTL |
    |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-   |sip  |tls  |自動填入 |1  |443   |sipdir.online.lync.com |100 |1 Hour |
-   |sipfed|tcp |自動填入|1 |5061 |sipfed.online.lync.com|100 | 1 Hour |
+   |sip  |tls  |自動填入 |1   |443   |sipdir.online.lync.com |100 |1 Hour |
+   |sipfed|tcp |自動填入|1  |5061 |sipfed.online.lync.com|100 | 1 Hour |
    
 5. 選取 [DNS 編輯器] 頂端的 [ **儲存 DNS** ] 按鈕。 
     

@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Namecheap。
-ms.openlocfilehash: 2aae667428aba5ea22ab210c47aa9c994a9acf14
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 25b40dad0eb47c190df9496d5df4f061d8fdba6d
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400385"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48645920"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>在 Namecheap 建立 Microsoft 的 DNS 記錄
 
@@ -49,15 +49,15 @@ ms.locfileid: "44400385"
   
 請依照下列步驟操作。
   
-1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用[此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
+1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用 [此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在 [**登陸**] 頁面的 [**帳戶**] 下，從下拉式清單中選擇 [**網域清單**]。 
+2. 在 [ **登陸** ] 頁面的 [ **帳戶**] 下，從下拉式清單中選擇 [ **網域清單** ]。 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 [**網域清單**] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [**管理**]。
+3. 在 [ **網域清單** ] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [ **管理**]。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -65,11 +65,11 @@ ms.locfileid: "44400385"
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 [**主機記錄**] 區段中，選取 [**新增記錄**]。
+5. 在 [ **主機記錄** ] 區段中，選取 [ **新增記錄**]。
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在 [**類型**] 下拉式清單中，選取 [ **TXT 記錄**]。
+6. 在 [ **類型** ] 下拉式清單中，選取 [ **TXT 記錄**]。
     
     > [!NOTE]
     > 當您選取 [**新增記錄**] 時，會自動顯示 [**類型**] 下拉式清單。 
@@ -78,7 +78,7 @@ ms.locfileid: "44400385"
   
 7. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    （從下拉式清單中選擇 [ **TTL** ] 值。） 
+     (從下拉式清單中選取 [ **TTL** ] 值。 )  
     
     |**類型**|**主機**|**Value** (值)|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -86,7 +86,7 @@ ms.locfileid: "44400385"
        
     ![Namecheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
-8. 選取 [**儲存變更**] （核取記號）控制。 
+8. 選取 [ **儲存變更** ] (核取記號) 控制項。 
     
     ![Namecheap-BP-Verify-1-3](../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
   
@@ -119,15 +119,15 @@ ms.locfileid: "44400385"
 
 請依照下列步驟進行。
   
-1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用[此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
+1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用 [此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在 [**登陸**] 頁面的 [**帳戶**] 下，從下拉式清單中選擇 [**網域清單**]。 
+2. 在 [ **登陸** ] 頁面的 [ **帳戶**] 下，從下拉式清單中選擇 [ **網域清單** ]。 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 [**網域清單**] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [**管理**]。
+3. 在 [ **網域清單** ] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [ **管理**]。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -137,31 +137,31 @@ ms.locfileid: "44400385"
   
 5. 在 [**郵件設定**] 區段中，從 [**電子郵件轉發**] 下拉式清單中選取 [**自訂 MX** ]。 
     
-    (You may have to scroll down.)
+    (您可能需要向下捲動。)
     
     ![Namecheap-BP-Configure-2-1](../../media/40199e2c-42cf-4c3f-9936-3cbe5d4e81a4.png)
   
-6. 選取 [**新增記錄**]。
+6. 選取 [ **新增記錄**]。
     
     ![Namecheap-BP-Configure-2-2-1](../../media/8d169b81-ba48-4d51-84ea-a08fa1616457.png)
   
 7. 在新記錄的方塊中，輸入或複製並貼上下清單格中的值。
     
-    （[**優先順序**] 方塊是 [**值**] 方塊右側的未命名方塊。 從下拉式清單中選擇 [ **TTL** ] 值。 
+     ([ **優先順序** ] 方塊是 [ **值** ] 方塊右側的未命名方塊。 從下拉式清單中選擇 [ **TTL** ] 值。 )  
     
     |**類型**|**主機**|**Value** (值)|**Priority** (優先順序)|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX 記錄  <br/> |@  <br/> |\<*domain-key*\>mail.protection.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |30分鐘  <br/> |
+    |MX 記錄  <br/> |@  <br/> |\<*domain-key*\>mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。  [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |30分鐘  <br/> |
        
     ![Namecheap-BP-Configure-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
-8. 選取 [**儲存變更**] （核取記號）控制。 
+8. 選取 [ **儲存變更** ] (核取記號) 控制項。 
     
     ![Namecheap-BP-Configure-2-3](../../media/ef4e3112-36d2-47c8-a478-136a565dd71d.png)
   
 9. 如果有任何其他 MX 記錄，請使用下列兩個步驟的處理程序來逐一移除：
     
-    首先，針對您想要移除的記錄選取**刪除圖示**（垃圾桶）。 
+    首先，選取 [ **刪除] 圖示** (垃圾桶) 您要移除的記錄。 
     
     ![Namecheap-BP-Configure-2-4](../../media/7a7a751f-29c2-495f-8f55-98ca37ce555a.png)
   
@@ -177,15 +177,15 @@ ms.locfileid: "44400385"
 
 請依照下列步驟進行。
   
-1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用[此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
+1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用 [此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在 [**登陸**] 頁面的 [**帳戶**] 下，從下拉式清單中選擇 [**網域清單**]。 
+2. 在 [ **登陸** ] 頁面的 [ **帳戶**] 下，從下拉式清單中選擇 [ **網域清單** ]。 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 [**網域清單**] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [**管理**]。
+3. 在 [ **網域清單** ] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [ **管理**]。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -193,11 +193,11 @@ ms.locfileid: "44400385"
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 [**主機記錄**] 區段中，選取 [**新增記錄**]。
+5. 在 [ **主機記錄** ] 區段中，選取 [ **新增記錄**]。
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在 [**類型**] 下拉式清單中，選取 [ **CNAME 記錄**]。
+6. 在 [ **類型** ] 下拉式清單中，選取 [ **CNAME 記錄**]。
     
     > [!NOTE]
     > 當您選取 [**新增記錄**] 時，會自動顯示 [**類型**] 下拉式清單。 
@@ -208,15 +208,15 @@ ms.locfileid: "44400385"
     
     |**類型**|**主機**|**Value** (值)|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com。  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net。  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
-    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com。  <br/> **This value MUST end with a period (.)** <br/> |3600  <br/> |
+    |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |
+    |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |
+    |CNAME  <br/> |lyncdiscover  <br/> |webdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |
+    |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |3600  <br/> |
        
     ![Namecheap-BP-Configure-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
   
-8. 選取 [**儲存變更**] （核取記號）控制。 
+8. 選取 [ **儲存變更** ] (核取記號) 控制項。 
     
     ![Namecheap-BP-Configure-3-3](../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
   
@@ -227,17 +227,17 @@ ms.locfileid: "44400385"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的*單一*SPF 記錄。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 
 
 請依照下列步驟操作。
   
-1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用[此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
+1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用 [此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 系統會提示您登入並繼續。
     
-2. 在 [**登陸**] 頁面的 [**帳戶**] 下，從下拉式清單中選擇 [**網域清單**]。 
+2. 在 [ **登陸** ] 頁面的 [ **帳戶**] 下，從下拉式清單中選擇 [ **網域清單** ]。 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 [**網域清單**] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [**管理**]。
+3. 在 [ **網域清單** ] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [ **管理**]。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -245,11 +245,11 @@ ms.locfileid: "44400385"
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 [**主機記錄**] 區段中，選取 [**新增記錄**]。
+5. 在 [ **主機記錄** ] 區段中，選取 [ **新增記錄**]。
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在 [**類型**] 下拉式清單中，選取 [ **TXT 記錄**]。
+6. 在 [ **類型** ] 下拉式清單中，選取 [ **TXT 記錄**]。
     
     > [!NOTE]
     > 當您選取 [**新增記錄**] 時，會自動顯示 [**類型**] 下拉式清單。 
@@ -258,30 +258,30 @@ ms.locfileid: "44400385"
   
 7. 在新記錄的方塊中，輸入或複製並貼上下清單格中的值。
     
-    （從下拉式清單中選擇 [ **TTL** ] 值。） 
+     (從下拉式清單中選取 [ **TTL** ] 值。 )  
     
     |**類型**|**主機**|**Value** (值)|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |TXT  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **附註：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |30分鐘  <br/> |
+    |TXT  <br/> |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |30分鐘  <br/> |
        
     ![Namecheap-BP-Configure-4-2](../../media/ea0829f1-990b-424b-b26e-9859468318dd.png)
   
-8. 選取 [**儲存變更**] （核取記號）控制。 
+8. 選取 [ **儲存變更** ] (核取記號) 控制項。 
     
     ![Namecheap-BP-Configure-4-3](../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>新增兩筆 Microsoft 所需的 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
 
-1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用[此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 You'll be prompted to sign in.
+1. 若要開始使用，請移至您的網域頁面 Namecheap，方法是使用 [此連結](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f)。 You'll be prompted to sign in.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. 在 [**登陸**] 頁面的 [**帳戶**] 下，從下拉式清單中選擇 [**網域清單**]。 
+2. 在 [ **登陸** ] 頁面的 [ **帳戶**] 下，從下拉式清單中選擇 [ **網域清單** ]。 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. 在 [**網域清單**] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [**管理**]。
+3. 在 [ **網域清單** ] 頁面上，尋找您要編輯的網功能變數名稱稱，然後選取 [ **管理**]。
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
@@ -289,11 +289,11 @@ ms.locfileid: "44400385"
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. 在 [**主機記錄**] 區段中，選取 [**新增記錄**]。
+5. 在 [ **主機記錄** ] 區段中，選取 [ **新增記錄**]。
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
-6. 在 [**類型**] 下拉式清單中，選取 [ **SRV 記錄**]。
+6. 在 [ **類型** ] 下拉式清單中，選取 [ **SRV 記錄**]。
     
     > [!NOTE]
     > 當您選取 [**新增記錄**] 時，會自動顯示 [**類型**] 下拉式清單。 
@@ -302,14 +302,14 @@ ms.locfileid: "44400385"
   
 7. 在新記錄的空白方塊中，輸入或複製並貼上下表中第一列的值。
     
-    |**Service** (服務)|**Protocol** (通訊協定)|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|**TTL**|
+    |**服務**|**Protocol** (通訊協定)|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |30分鐘  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **This value MUST end with a period (.)** <br/> |30分鐘  <br/> |
+    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |30分鐘  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |30分鐘  <br/> |
        
     ![Namecheap-BP-Configure-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
   
-8. 選取 [**儲存變更**] （核取記號）控制。 
+8. 選取 [ **儲存變更** ] (核取記號) 控制項。 
     
     ![Namecheap-BP-Configure-5-3](../../media/48a8dee4-c66d-449d-8759-9e9784c82b13.png)
   
