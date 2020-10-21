@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,18 +13,18 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何傳送您訂閱的付款。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0c26fe99423890f5821af9dbdc80960890c81559
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: f8fbe40237e4ec9eec7eaf242b98df9f677b08cf
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402091"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649052"
 ---
 # <a name="payment-information-for-netherlands"></a>荷蘭的付款資訊
 
 [尋找其他國家或地區](../billing-and-payments/pay-for-your-subscription.md)。
 
-請只在您的付款匯款中付款並參考發票號碼。
+請只在您的付款匯款上的 (s) 中支付金額，並參考發票編號。
 
 ## <a name="electronic-funds-transfer"></a>電子基金轉移
 

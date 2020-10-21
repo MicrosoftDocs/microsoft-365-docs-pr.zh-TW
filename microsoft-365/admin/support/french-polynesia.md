@@ -4,7 +4,7 @@ author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +13,12 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 37f2fadfa73be3d2093d6cf34380a667572b7729
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: fff0648fcf1744dfe65eea12efe2cf04fd7c67b1
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44397883"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48642668"
 ---
 # <a name="contact-support-for-french-polynesia"></a>法國波利尼西亞的支援聯繫
 
@@ -28,16 +28,16 @@ ms.locfileid: "44397883"
 + 1 312 843 5147
 
 ## <a name="hours"></a>小時
-### <a name="billing-support"></a>帳單支援：
+### <a name="billing-support"></a>帳單支援︰
 
-法文： Sun-週五下午 10：00-6 點
+法文： Sun-Fri 10 PM-6 AM
 
-英文： Sun-週五下午 10：00-6 點
+英文： Sun-Fri 10 PM-6 AM
 
 ### <a name="technical-support"></a>技術支援：
 
-法文：週一至週五下午9點-10 點
+法文： Mon-Fri 晚上9點-10 AM
 
-英文：每週7天、每天24小時
+英文：全年無休
 
 國際通話費用適用

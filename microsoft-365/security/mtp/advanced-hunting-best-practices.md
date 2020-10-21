@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e3b29a8182e38fa05e5f791478157c978632fb13
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 29e5eb64445c6c5c45b8e1fd1633c030b5f32b86
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477002"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649664"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>進階搜捕查詢最佳做法
 
@@ -36,10 +36,10 @@ ms.locfileid: "48477002"
 
 套用這些建議以快速取得結果，並避免執行複雜的查詢時發生超時。 如需提高查詢效能的更多指導方針，請參閱 [Kusto 查詢最佳做法](https://docs.microsoft.com/azure/kusto/query/best-practices)。
 
-## <a name="understand-cpu-resource-limits"></a>瞭解 CPU 資源限制
-視其大小而定，每個租使用者都有權存取一組為執行高級搜尋查詢所指派的 CPU 資源量。 如需各種服務限制的詳細資訊，請 [閱讀相關的高級搜尋限制](advanced-hunting-limits.md)。
+## <a name="understand-cpu-resource-quotas"></a>瞭解 CPU 資源配額
+視其大小而定，每個租使用者都有權存取一組為執行高級搜尋查詢所指派的 CPU 資源量。 如需各種服務限制的詳細資訊，請 [閱讀相關的高級搜尋配額和使用參數](advanced-hunting-limits.md)。
 
-定期執行多個查詢的客戶應追蹤工作量，並套用本文中的優化指導，以將超出限制的中斷降至最低。
+定期執行多個查詢的客戶應追蹤工作量，並套用本文中的優化指導，以盡可能減少超出配額或使用參數所產生的中斷。
 
 ## <a name="general-optimization-tips"></a>一般優化秘訣
 
@@ -265,7 +265,7 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 
 ## <a name="related-topics"></a>相關主題
 - [Kusto 查詢語言檔](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
-- [服務限制](advanced-hunting-limits.md)
+- [配額和使用參數](advanced-hunting-limits.md)
 - [處理高級搜尋錯誤](advanced-hunting-errors.md)
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
