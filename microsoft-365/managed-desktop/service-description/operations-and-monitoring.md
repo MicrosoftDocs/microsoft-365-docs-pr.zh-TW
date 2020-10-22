@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0ed10b7088e38cbf5a2d9196508eae5cdc522a74
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 01a43b35d272aaebce4c6866e3edfb04664b1801
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529442"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655720"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 受管理的桌面作業和監控
 
@@ -62,7 +62,7 @@ ms.locfileid: "46529442"
 
 定期對服務進行多種類型的變更。 這些變更與客戶負責之動作的通訊通道有所不同。
 
-並非所有變更對使用者或必要動作都會造成相同的影響。 有些人依其性質進行規劃及部分計畫（非安全性更新和安全性更新通常不會規劃）。 根據變更的類型而定，通訊通道可能會有所不同。 下表列出 Microsoft Managed Desktop service 可以預期的變更類型。
+並非所有變更對使用者或必要動作都會造成相同的影響。 有些人會根據其性質來規劃和部分計畫 (非安全性更新和安全性更新通常不會) 計畫。 根據變更的類型而定，通訊通道可能會有所不同。 下表列出 Microsoft Managed Desktop service 可以預期的變更類型。
 
 |   | 功能 |   非安全性更新 |  安全性
 --- | --- | --- | ---
@@ -72,7 +72,7 @@ ms.locfileid: "46529442"
 **需要全域系統管理員動作** | 有時候 |  很少 |    很少 
 **動作類型** | 變更設定 | 向使用者傳達變更 | 變更系統管理員設定     
 **需要測試** | 檢查商務應用程式，包括遠端存取服務 |  有時候 - 測試程序或自訂的修正程式 |   很少 
-**變更範例** | -功能更新： IT 系統管理入口網站簡化支援票據提交和審閱<br>-新功能或應用程式： Windows 10 功能更新的半年版本 | 根據客戶報告的錯誤的 Hotfix  |  
+**變更範例** | -功能更新： IT 系統管理入口網站簡化支援票據提交和審閱<br>-新功能或應用程式： Windows 10 功能更新的 Semi-Annual 版本 | 根據客戶報告的錯誤的 Hotfix  |  
 
 
 ## <a name="standard-operating-procedures"></a>標準運作程式
@@ -81,13 +81,13 @@ Microsoft 受管理的桌面服務是由 Microsoft 在您可以執行其他系�
 
 在內部部署產品中，您的組織會承擔管理安裝程式的所有責任，以及設定和操作活動。
 
-類別 |    Microsoft 會 | 客戶將
+Categories |    Microsoft 會 | 客戶將
 --- | --- | ---
-網路（proxy、封包檢查、VPN）  | 建議並與客戶一起規劃，以將企業使用者的風險降至最低。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。
+網路 (proxy、封包檢查、VPN)   | 建議並與客戶一起規劃，以將企業使用者的風險降至最低。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。
 服務帳戶 |-實施、安全地儲存和管理認證。<br> -對您的安全性作業小組進行未經授權的存取或使用這些認證。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不指派原則、多重要素驗證、條件式存取或應用程式部署至 Microsoft Managed Desktop Service 帳戶。<br>-不要重設密碼或使用認證。<br>-如果在 Intune 或 Azure 審核記錄檔中看到與這些服務帳戶相關的可疑活動，請開啟嚴重度 C 支援要求至 Microsoft Managed Desktop Operations。
 裝置群組 | -在 Microsoft 受管理的桌面群組中實施及管理裝置的成員資格。<br>-使用 Microsoft 受管理的桌面群組，管理裝置的設定和更新的指派及發行。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不修改任何 Microsoft 受管理的桌面群組的成員資格。<br>-僅使用群組為服務（如 VPN、Windows Hello 企業版或電子郵件加密）或公司 Wi-Fi 設定檔設定指派公司憑證。<br>-存在共同管理，請在部署 Configuration Manager 用戶端時，明確排除所有 Microsoft 受管理的桌面群組。
 原則 |  -實施及管理 Microsoft 受管理的桌面原則，以控制服務內裝置的設定狀態。<br>-將更新部署至原則或 Windows，以增量方式使用裝置群組。<br> -明確排除針對非 Microsoft 受管理的桌面群組。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不編輯或指派 Microsoft 受管理的桌面原則給未由 Microsoft Managed Desktop 服務管理的裝置或使用者。
-Windows Defender 進階威脅防護   | 在 Microsoft 受管理的桌面服務範圍內監視和調查裝置。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更
+Microsoft Defender 進階威脅防護   | 在 Microsoft 受管理的桌面服務範圍內監視和調查裝置。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更
 商務用 Microsoft Store |  設定及維護 Microsoft Managed Desktop service 的 Windows Autopilot 設定檔。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不修改 Microsoft Managed Desktop Windows Autopilot 設定檔的設定，或新增/移除指派的裝置。
 憑證 | | -在憑證到期之前建立支援60要求，要求資訊以取得計畫的設定變更，包括設定詳細資料、範圍、時程表及其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-更新所有必要的憑證，以設定憑證設定檔、VPN 設定檔，以及 Wi-Fi 設定檔。
 
@@ -116,6 +116,6 @@ Microsoft 受管理的桌面作業團隊可在必要時，對服務中已登記�
 
 裝置重設後，您可以將其提供給組織中的其他人。 任何先前的使用者資料或企業資料都將會在裝置上。 下一個使用者會進行與新的 Microsoft 受管理的桌面裝置相同的處理常式。
 
-BitLocker 是在此程式中的資料安全性重要元件。 在 Microsoft 受管理的桌面裝置上使用 BitLocker 加密，即使在裝置重設後，磁片磁碟機上的資料仍是安全的。 磁片磁碟機上的所有資料將無法供下一個裝置的使用者使用。 如需詳細資訊，請參閱[BitLocker 概述](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)。
+BitLocker 是在此程式中的資料安全性重要元件。 在 Microsoft 受管理的桌面裝置上使用 BitLocker 加密，即使在裝置重設後，磁片磁碟機上的資料仍是安全的。 磁片磁碟機上的所有資料將無法供下一個裝置的使用者使用。 如需詳細資訊，請參閱 [BitLocker 概述](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview)。
 
-如需詳細資訊，請參閱[Factory reset a device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device)。 
+如需詳細資訊，請參閱 [Factory reset a device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device)。 

@@ -1,5 +1,5 @@
 ---
-title: 為使用者設定強式密碼需求
+title: 關閉使用者的強式密碼需求
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何使用 Windows PowerShell 為使用者設定強式密碼需求。
-ms.openlocfilehash: 9f6fd61396d99245ffeabf757d3cb65c5d5cb85e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f9a0b76d024cc18552657144e4ccf8de8a72f0d9
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646616"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655732"
 ---
-# <a name="set-strong-password-requirement-for-users"></a>為使用者設定強式密碼需求
+# <a name="turn-off-strong-password-requirements-for-users"></a>關閉使用者的強式密碼需求
 
 本文說明如何為您的使用者關閉強式密碼需求。 在您的 Microsoft 365 for business 組織中，預設會開啟強式密碼需求。 您的組織可能會有停用強式密碼的需求。 請遵循下列步驟關閉強式密碼需求。 您必須使用 PowerShell 來完成這些步驟。
 

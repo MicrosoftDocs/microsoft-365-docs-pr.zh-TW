@@ -19,22 +19,22 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ede7598c-b5d5-4e3e-a488-195f02f26d93
-description: 在本文中，瞭解如何使用 Microsoft 365 將角色指派給使用者帳戶，以快速且輕鬆地使用 PowerShell。
-ms.openlocfilehash: 9df1b018cf3e89e0afbd5265fdd1ec9f92b34aec
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+description: 在本文中，瞭解如何將系統管理員角色指派給使用者帳戶，以快速輕鬆地使用 PowerShell Microsoft 365。
+ms.openlocfilehash: 1486c86172cd34e6e88f8cd02d003967518bcdb7
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235427"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655944"
 ---
-# <a name="assign-roles-to-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 將角色指派給 Microsoft 365 使用者帳戶
+# <a name="assign-admin-roles-to-microsoft-365-user-accounts-with-powershell"></a>使用 PowerShell 將系統管理員角色指派給 Microsoft 365 使用者帳戶
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-您可以使用 Microsoft 365 PowerShell，快速且輕鬆地將角色指派給使用者帳戶。
+您可以使用 Microsoft 365 的 PowerShell，快速且輕鬆地將系統管理員角色指派給使用者帳戶。
 
 >[!Note]
->瞭解如何使用 Microsoft 365 系統管理中心[指派角色給使用者帳戶](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)。 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
+>瞭解如何使用 Microsoft 365 系統管理中心，[將系統管理員角色指派給使用者帳戶](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)。 如需其他資源的清單，請參閱 [管理使用者和群組](https://docs.microsoft.com/microsoft-365/admin/add-users/)。
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>針對 Graph 模組，請使用 Azure Active Directory PowerShell
@@ -43,7 +43,7 @@ ms.locfileid: "48235427"
   
 接下來，決定要新增至角色的使用者帳戶登入名稱 (例如： fredsm@contoso.com) 。 這也稱為使用者主要名稱 (UPN) 。
 
-接下來，決定角色的名稱。 使用 [Azure Active Directory 中的系統管理員角色許可權清單](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
+接下來，決定系統管理員角色的名稱。 使用 [Azure Active Directory 中的系統管理員角色許可權清單](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 
 >[!Note]
 >請注意本文中的記事。 Azure AD PowerShell 的某些角色名稱是不同的。 例如，Microsoft 365 系統管理中心的「SharePoint 系統管理員」角色稱為「SharePoint 服務管理員」，以供 Azure AD PowerShell。
@@ -53,7 +53,7 @@ ms.locfileid: "48235427"
   
 ```powershell
 $userName="<sign-in name of the account>"
-$roleName="<role name>"
+$roleName="<admin role name>"
 $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 if ($role -eq $null) {
 $roleTemplate = Get-AzureADDirectoryRoleTemplate | Where {$_.displayName -eq $roleName}
@@ -63,7 +63,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-以下是將「SharePoint 服務管理員」角色指派給 belindan@contoso.com 帳戶的完整命令集範例：
+以下是將 SharePoint 服務管理員系統管理員角色指派給 belindan@contoso.com 帳戶的已完成命令集範例：
   
 ```powershell
 $userName="belindan@contoso.com"
@@ -77,7 +77,7 @@ $role = Get-AzureADDirectoryRole | Where {$_.displayName -eq $roleName}
 Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId (Get-AzureADUser | Where {$_.UserPrincipalName -eq $userName}).ObjectID
 ```
 
-若要顯示特定角色的使用者名稱清單，請使用下列命令。
+若要顯示特定系統管理員角色的使用者名稱清單，請使用下列命令。
 
 ```powershell
 $roleName="<role name>"
@@ -118,17 +118,17 @@ Get-AzureADDirectoryRole | Where { $_.DisplayName -eq $roleName } | Get-AzureADD
     
 - 您要指派的角色。
     
-    若要顯示可指派給使用者帳戶的可用角色清單，請使用下列命令：
+    若要顯示可指派給使用者帳戶的可用系統管理員角色清單，請使用下列命令：
     
   ```powershell
   Get-MsolRole | Sort Name | Select Name,Description
   ```
 
-一旦您決定帳戶的顯示名稱和角色名稱，請使用下列命令將角色指派給帳戶：
+一旦您決定帳戶的顯示名稱和系統管理員角色的名稱，請使用下列命令將角色指派給帳戶：
   
 ```powershell
 $dispName="<The Display Name of the account>"
-$roleName="<The role name you want to assign to the account>"
+$roleName="<The admin role name you want to assign to the account>"
 Add-MsolRoleMember -RoleMemberEmailAddress (Get-MsolUser -All | Where DisplayName -eq $dispName).UserPrincipalName -RoleName $roleName
 ```
 
@@ -236,7 +236,7 @@ $roleChanges=Import-Csv $fileName | ForEach { Add-MsolRoleMember -RoleMemberEmai
 
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)
 - [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)

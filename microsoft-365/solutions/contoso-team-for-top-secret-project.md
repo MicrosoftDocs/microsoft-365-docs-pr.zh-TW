@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: Ent_Architecture
 description: 摘要： Contoso 如何使用具有安全性隔離的小組進行重要專案，以開發新的產品和服務套件。
-ms.openlocfilehash: 16d10f5d6e5b5939172c02746c9324eb20b6987e
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: b8794502afcb77a8e597a1b05dfc92acd093f23a
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399486"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656064"
 ---
 # <a name="isolated-team-for-a-top-secret-project-of-the-contoso-corporation"></a>Contoso Corporation 的最大機密專案的隔離團隊
 
@@ -77,7 +77,7 @@ Contoso admins 建立一個名為「 **專案 2** 」的新敏感度標籤：
 
 以下是具有安全性隔離之專案2小組所產生的設定。
 
-![專案2小組的產生設定](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project.png)
+![專案2小組的產生設定](../media/contoso-team-for-top-secret-project.png)
 
  ## <a name="step-4-trained-project-2x-team-members"></a>步驟4：訓練有素的專案2小組成員
 
@@ -92,7 +92,7 @@ Contoso 安全性人員會在必要課程中訓練專案2小組成員：
 
 以下是儲存在基礎專案2網站中的檔案範例，並指派 Project 2 敏感度標籤。
 
-![儲存在基準專案2網站中的檔案範例](../media/contoso-team-for-top-secret-project/contoso-team-for-top-secret-project-example.png)
+![儲存在基準專案2網站中的檔案範例](../media/contoso-team-for-top-secret-project-example.png)
 
 在幾個實例中，Project 2 小組成員會將專案2標籤所保護的檔案下載到本機磁片磁碟機，以供離線工作使用。 
 
@@ -100,7 +100,7 @@ Contoso 安全性人員會在必要課程中訓練專案2小組成員：
 
 由於小組的共同作業環境和 Microsoft 365 的安全性功能，Project 2X 的詳細資料會在專案期間內保密。 Contoso 宣告其計畫，而且正在將新產品及服務推出給其客戶和投資者的愉悅感，以及其競爭者的 chagrin。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 在您的組織中[部署具有安全性隔離的團隊](secure-teams-security-isolation.md)。
 

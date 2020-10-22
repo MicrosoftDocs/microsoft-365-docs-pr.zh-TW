@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 企業版的元件、方案和部署路徑的簡介。
-ms.openlocfilehash: d34ddd9b577f4baff4ebb77f84f48bf2b779c93c
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487149"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48655968"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -75,13 +75,11 @@ Microsoft 365 E3 使用者可以使用這些附加元件來利用 Microsoft 365 
 
 ## <a name="transition-your-entire-organization"></a>轉換整個組織
 
-若要更全面地掌握關於如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請參閱[轉換海報](../downloads/transition-org-to-m365.pdf)。
+若要更全面地掌握關於如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請參閱[轉換海報](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)。
 
-[![轉換至 Microsoft 365 海報的影像](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
+[![轉換至 Microsoft 365 海報的影像](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
 這份雙頁海報是清查現有基礎結構的快速方式。 可協助您尋找指導方針，並移至 Microsoft 365 企業版中對應的產品或服務。 包含 Windows 和 Office 產品和其他基礎結構與安全性元素，例如裝置管理、身分識別以及資訊和威脅防護。
-
-您也可以[下載此海報](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf)，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Windows 7 和 Office 2010 用戶端與伺服器的終止支援
 
