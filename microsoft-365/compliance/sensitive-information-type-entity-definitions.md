@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: 8482501dc978433587c431d18ec93b9e78fb8e03
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 288c53d5e9264942e12d5634cec172a65ee79ca6
+ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487491"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48656050"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -60,14 +60,20 @@ ms.locfileid: "48487491"
 - 函數 Func_aba_routing 找到符合模式的內容。
 - 會找到來自 Keyword_ABA_Routing 的關鍵字。
 
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是65%：
+- 函數 Func_aba_routing 找到符合模式的內容。
+
 ```xml
-<!-- ABA Routing Number -->
-<Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
+    <!-- ABA Routing Number -->
+    <Entity id="cb353f78-2b72-4c3c-8827-92ebe4f69fdf" patternsProximity="300" recommendedConfidence="75">
       <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_aba_routing" />
         <Match idRef="Keyword_ABA_Routing" />
       </Pattern>
- </Entity>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_aba_routing" />
+      </Pattern>
+    </Entity>
 ```
 
 
@@ -75,37 +81,36 @@ ms.locfileid: "48487491"
 
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
-- 阿壩
-- 阿壩#
-- aba 路由#
-- aba 路由號碼
-- 阿壩#
-- abarouting#
 - aba 編號
+- 阿壩#
+- 阿壩
+- abarouting#
 - abaroutingnumber
-- 美洲銀行協會路由#
-- 美洲銀行關聯性路由編號
 - americanbankassociationrouting#
 - americanbankassociationroutingnumber
-- 銀行路由編號
 - bankrouting#
 - bankroutingnumber
+- 路由#
+- 路由編號
+- 路由編號
 - 路由轉口號碼
-- RTN 
-   
+- 路由#
+- RTN
+
+
 ## <a name="argentina-national-identity-dni-number"></a>阿根廷國家身分識別 (DNI) 號碼
 
 ### <a name="format"></a>格式
 
-以句點隔開的八位數
+包含或不含句點的八位數
 
 ### <a name="pattern"></a>模式
 
 八位數：
 - 兩位數
-- 一個句點
+- 選用期間
 - 三位數
-- 一個句點
+- 選用期間
 - 三位數
 
 ### <a name="checksum"></a>校驗
@@ -133,14 +138,14 @@ ms.locfileid: "48487491"
 #### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - 阿根廷國內身分識別號碼 
-- 身分識別 
-- 身分識別的國內身分識別卡片 
-- DNI 
-- 個人的 NIC 註冊人員 
-- Documento Nacional de Identidad 
-- Registro Nacional de 拉斯維加斯角色 
-- Identidad 
-- Identificación 
+- cedula 
+- cédula 
+- dni 
+- documento nacional de identidad 
+- documento número 
+- documento numero 
+- registro nacional de 拉斯維加斯角色 
+- rnp 
    
 ## <a name="australia-bank-account-number"></a>澳大利亞銀行帳戶號碼
 
@@ -786,11 +791,11 @@ OR
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -864,7 +869,7 @@ OR
 
 - 身分識別號碼
 - 國家識別碼
-- personalausweis republik österreich
+- personalausweis republik österreich
 
 ## <a name="austria-passport-number"></a>奧地利護照號碼
 這個敏感資訊類型實體只適用于歐盟護照號碼 sensitiveinformation type。
@@ -1732,11 +1737,11 @@ OR
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -1766,7 +1771,7 @@ OR
 - fuhrerscheinnummer
 - fuehrerscheinnummer
 - permis de conduire
-- numéro permis conduire
+- numéro permis conduire
 
 
 ## <a name="belgium-national-number"></a>比利時國號碼
@@ -1816,7 +1821,7 @@ OR
 
 #### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
-- belasting aantal
+- belasting aantal
 - 安娜#
 - 安娜
 - 購買 d'identité
@@ -1838,11 +1843,11 @@ OR
 - nationalnumber
 - Nif#
 - Nif
-- numéro d'assuré
+- numéro d'assuré
 - numéro de registre （本國）
 - numéro de sécurité
-- numéro d'identification
-- numéro d'immatriculation
+- numéro d'identification
+- numéro d'immatriculation
 - 本國 numéro
 - numéronational#
 - 個人號碼
@@ -2401,11 +2406,11 @@ Registro de Identidade (RIC)  (新格式) ：
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -2491,7 +2496,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - 安娜
 - bucn#
 - bucn
-- edinen grazhdanski nomer
+- edinen grazhdanski nomer
 - egn#
 - egn
 - 識別號碼
@@ -2516,17 +2521,17 @@ Registro de Identidade (RIC)  (新格式) ：
 - 獨特的公民人數
 - егн#
 - егн
-- единен граждански номер
-- идентификационен номер
-- личен номер
-- лична идентификация
-- лично не
-- национален номер
-- номер на гражданството
+- единен граждански номер
+- идентификационен номер
+- личен номер
+- лична идентификация
+- лично не
+- национален номер
+- номер на гражданството
 - униформ識別碼
 - униформграждански id
-- униформ граждански не
-- униформ граждански номер
+- униформ граждански не
+- униформ граждански номер
 - униформгражданскиid#
 - униформгражданскине.#
 
@@ -3336,30 +3341,30 @@ Registro de Identidade (RIC)  (新格式) ：
 - kreditkartenprufnummer
 - prüfziffer
 - prufziffer
-- sicherheits Kode
+- sicherheits Kode
 - sicherheitscode
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- Cod。sicurezza
+- Cod。 sicurezza
 - 貨至 sicurezza
 - n autorizzazione
 - código
 - codigo
-- Cod。Seg
+- Cod。 Seg
 - 貨至 seg
 - código de segurança
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód.segurança
-- Cod。seguranca
-- Cod。segurança
-- cód.seguranca
-- cód segurança
+- cód. segurança
+- Cod。 seguranca
+- Cod。 segurança
+- cód. seguranca
+- cód segurança
 - 貨至 seguranca
 - 貨至 segurança
-- cód seguranca
+- cód seguranca
 - número de verificação
 - numero de verificacao
 - ablauf
@@ -3372,8 +3377,8 @@ Registro de Identidade (RIC)  (新格式) ：
 - fecha de expiracion
 - fecha de venc
 - vencimiento
-- válido hasta
-- valido hasta
+- válido hasta
+- valido hasta
 - vto
 - 資料 de expiração
 - 資料 de expiracao
@@ -3385,9 +3390,9 @@ Registro de Identidade (RIC)  (新格式) ：
 - 交易編號
 - 參考編號
 - セキュリティコード
-- セキュリティ コード
+- セキュリティ コード
 - セキュリティナンバー
-- セキュリティ ナンバー
+- セキュリティ ナンバー
 - セキュリティ番號
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
@@ -3395,7 +3400,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - amex
 - 美洲 express
 - americanexpress
-- americano espresso
+- americano espresso
 - 簽證
 - 萬事 達
 - 主卡
@@ -3485,26 +3490,26 @@ Registro de Identidade (RIC)  (新格式) ：
 - kreditkartennummer
 - kreditkarten-nummer
 - carta di credito
-- carta credito
-- \r\n.憲章
+- carta credito
+- \r\n. 憲章
 - n carta
-- 星期日。憲章
+- 星期日。 憲章
 - nr carta
-- numero carta
-- numero della carta
+- numero carta
+- numero della carta
 - numero di carta
-- tarjeta credito
+- tarjeta credito
 - tarjeta de credito
-- tarjeta crédito
+- tarjeta crédito
 - tarjeta de crédito
 - tarjeta de atm
 - tarjeta atm
-- tarjeta debito
+- tarjeta debito
 - tarjeta de debito
-- tarjeta débito
+- tarjeta débito
 - tarjeta de débito
 - 消除 tarjeta 的 n º
-- 不。de tarjeta
+- 不。 de tarjeta
 - 無 de tarjeta
 - numero de tarjeta
 - número de tarjeta
@@ -3518,8 +3523,8 @@ Registro de Identidade (RIC)  (新格式) ：
 - cartao de débito
 - cartão de debito
 - cartao de debito
-- débito automático
-- debito automatico
+- débito automático
+- debito automatico
 - número 執行 cartão
 - numero 執行 cartão
 - número 執行 cartao
@@ -3530,11 +3535,11 @@ Registro de Identidade (RIC)  (新格式) ：
 - numero de cartao
 - n º do cartão
 - n º do cartao
-- n º。執行 cartão
+- n º。 執行 cartão
 - 無 do cartão
 - 無 do cartao
-- 不。執行 cartão
-- 不。執行 cartao
+- 不。 執行 cartão
+- 不。 執行 cartao
 - クレジットカード番號
 - クレジットカードナンバー
 - クレジットカード＃
@@ -3546,23 +3551,23 @@ Registro de Identidade (RIC)  (新格式) ：
 - カード＃
 - アメックス
 - アメリカンエクスプレス
-- アメリカン エクスプレス
+- アメリカン エクスプレス
 - Visaカード
 - 簽證カード
 - マスターカード
-- マスター カード
+- マスター カード
 - マスター
 - ダイナースクラブ
-- ダイナース クラブ
+- ダイナース クラブ
 - ダイナース
 - 有効期限
 - 期限
 - キャッシュカード
-- キャッシュ カード
+- キャッシュ カード
 - カード名義人
 - カードの名義人
 - カードの名義
-- デビット カード
+- デビット カード
 - デビットカード
 
 
@@ -3702,11 +3707,11 @@ Registro de Identidade (RIC)  (新格式) ：
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -3766,18 +3771,18 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
-- majstorski broj građana
+- majstorski broj građana
 - 主機公民號碼
-- nacionalni identifikacijski broj
+- nacionalni identifikacijski broj
 - 國家識別號碼
 - oib#
 - oib
-- osobna iskaznica
+- osobna iskaznica
 - osobni 識別碼
-- osobni identifikacijski broj
+- osobni identifikacijski broj
 - 個人身分識別號碼
-- porezni broj
-- porezni identifikacijski broj
+- porezni broj
+- porezni identifikacijski broj
 - 納稅識別碼
 - 納稅識別碼否
 - 納稅識別號碼
@@ -3894,18 +3899,18 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
-- majstorski broj građana
+- majstorski broj građana
 - 主機公民號碼
-- nacionalni identifikacijski broj
+- nacionalni identifikacijski broj
 - 國家識別號碼
 - oib#
 - oib
-- osobna iskaznica
+- osobna iskaznica
 - osobni 識別碼
-- osobni identifikacijski broj
+- osobni identifikacijski broj
 - 個人身分識別號碼
-- porezni broj
-- porezni identifikacijski broj
+- porezni broj
+- porezni identifikacijski broj
 - 納稅識別碼
 - 納稅識別碼否
 - 納稅識別號碼
@@ -4120,11 +4125,11 @@ Registro de Identidade (RIC)  (新格式) ：
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -4191,7 +4196,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 - id 卡號碼
 - 身分識別卡號碼
-- kimlik karti
+- kimlik karti
 - 國家識別號碼
 - 個人號碼
 - ταυτοτητασ
@@ -4329,12 +4334,12 @@ Registro de Identidade (RIC)  (新格式) ：
 - 納稅人識別碼
 - tin no
 - 錫#
-- vergi kimlik kodu
-- vergi kimlik numarası
-- αριθμός φορολογικού μητρώου
-- κωδικός φορολογικού μητρώου
-- φορολογική ταυτότητα
-- φορολογικού κωδικού
+- vergi kimlik kodu
+- vergi kimlik numarası
+- αριθμός φορολογικού μητρώου
+- κωδικός φορολογικού μητρώου
+- φορολογική ταυτότητα
+- φορολογικού κωδικού
 
 
 ## <a name="czech-drivers-license-number"></a>捷克文駕駛執照號碼
@@ -4477,11 +4482,11 @@ Registro de Identidade (RIC)  (新格式) ：
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -4622,8 +4627,8 @@ Registro de Identidade (RIC)  (新格式) ：
 - 出生號碼
 - 捷克共和國識別碼
 - czechidno#
-- daňové číslo
-- identifikační číslo
+- daňové číslo
+- identifikační číslo
 - identity no
 - 身分識別號碼
 - identityno#
@@ -4632,17 +4637,17 @@ Registro de Identidade (RIC)  (新格式) ：
 - 國家識別號碼
 - nationalnumber#
 - 國家/地區號碼
-- osobní číslo
+- osobní číslo
 - personalidnumber#
 - 個人號碼
 - 個人身分識別號碼
 - 個人號碼
 - Pid#
 - PID
-- pojištění číslo
+- pojištění číslo
 - rč
-- rodne cislo
-- rodné číslo
+- rodne cislo
+- rodné číslo
 - Ssn
 - Ssn#
 - 社會安全號碼
@@ -4862,11 +4867,11 @@ Registro de Identidade (RIC)  (新格式) ：
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -4992,12 +4997,12 @@ Registro de Identidade (RIC)  (新格式) ：
 
 #### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
-- centrale personregister
-- civilt registreringssystem
+- centrale personregister
+- civilt registreringssystem
 - Cpr
 - Cpr#
-- gesundheitskarte nummer
-- gesundheitsversicherungkarte nummer
+- gesundheitskarte nummer
+- gesundheitsversicherungkarte nummer
 - 健康情況卡片
 - 健康情況保險卡號碼
 - 健康情況保險號碼
@@ -5019,8 +5024,8 @@ Registro de Identidade (RIC)  (新格式) ：
 - Ssn
 - Ssn#
 - skat 識別碼
-- skat kode
-- skat nummer
+- skat kode
+- skat nummer
 - skattenummer
 - 社會安全號碼
 - sundhedsforsikringskort
@@ -5131,7 +5136,7 @@ Registro de Identidade (RIC)  (新格式) ：
 
 模式必須包含下列各項：
 - 一個字母 (不區分大小寫) 這組可能的字母： abcdefghjklmnprstux，也就是報名者程式碼 
-- 一個字母 (不區分大小寫) ，也就是報名者姓氏的第一個字母 
+- 一個字母 (不區分大小寫) ，也就是報名者姓氏或數位 ' 9 ' 的第一個字母。
 - 七位數，最後一個是檢查碼
 
 ### <a name="checksum"></a>校驗
@@ -5142,20 +5147,41 @@ Registro de Identidade (RIC)  (新格式) ：
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
 - 函數 Func_dea_number 找到符合模式的內容。
+- 找到來自的關鍵字 `Keyword_dea_number`
+- 校驗和通過。
+
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
+- 函數 Func_dea_number 找到符合模式的內容。
 - 校驗和通過。
 
 ```xml
-<!-- DEA Number -->
-<Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_dea_number"/>
-  </Pattern>
-</Entity>
+    <!-- DEA Number -->
+    <Entity id="9a5445ad-406e-43eb-8bd7-cac17ab6d0e4" patternsProximity="300" recommendedConfidence="85">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_dea_number" />
+      </Pattern>
+      <Version minEngineVersion="15.20.1207.000" maxEngineVersion="15.20.3134.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+        </Pattern>
+      </Version>
+      <Version minEngineVersion="15.20.3135.000">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_dea_number" />
+          <Match idRef="Keyword_dea_number" />
+        </Pattern>
+      </Version>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
 
-無
+#### <a name="keyword_dea_number"></a>Keyword_dea_number
+
+- Dea
+- Dea#
+- 藥物強制管理
+- 藥品強制代理人
 
 
 ## <a name="estonia-drivers-license-number"></a>愛沙尼亞駕照編號
@@ -5296,11 +5322,11 @@ Registro de Identidade (RIC)  (新格式) ：
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -5386,7 +5412,7 @@ Registro de Identidade (RIC)  (新格式) ：
 - isikukood#
 - isikukood
 - maksu 識別碼
-- maksukohustuslase identifitseerimisnumber
+- maksukohustuslase identifitseerimisnumber
 - maksunumber
 - 國家識別號碼
 - 國家/地區號碼
@@ -6110,11 +6136,11 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -6192,7 +6218,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - ehic#
 - ehic
 - finlandehicnumber#
-- finska sjukförsäkringskort
+- finska sjukförsäkringskort
 - 健康情況卡片
 - 健康情況保險卡
 - 健康情況保險號碼
@@ -6200,9 +6226,9 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - sairaanhoitokortin
 - sairausvakuutuskortti
 - sairausvakuutusnumero
-- sjukförsäkring nummer
+- sjukförsäkring nummer
 - sjukförsäkringskort
-- suomen sairausvakuutuskortti
+- suomen sairausvakuutuskortti
 - terveyskortti
 
 
@@ -6250,8 +6276,8 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 ### <a name="keywords"></a>關鍵字
 
-- ainutlaatuinen henkilökohtainen tunnus
-- henkilökohtainen tunnus
+- ainutlaatuinen henkilökohtainen tunnus
+- henkilökohtainen tunnus
 - henkilötunnus
 - henkilötunnusnumero#
 - henkilötunnusnumero
@@ -6259,11 +6285,11 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 識別碼 no
 - 識別碼號碼
 - 識別號碼
-- identiteetti numero
+- identiteetti numero
 - 身分識別號碼
 - idnumber
-- kansallinen henkilötunnus
-- kansallisen henkilökortin
+- kansallinen henkilötunnus
+- kansallisen henkilökortin
 - 國際身分識別卡
 - 國家識別碼
 - 個人識別碼
@@ -6290,7 +6316,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - tin no
 - 錫#
 - tunnistenumero
-- tunnus numero
+- tunnus numero
 - tunnusluku
 - tunnusnumero
 - verokortti
@@ -6562,11 +6588,11 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -6681,11 +6707,11 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - nationale d'idenite 否
 - Cni#
 - Cni
-- compte bancaire
+- compte bancaire
 - 國家識別號碼
 - 本國身分識別
 - nationalidno#
-- numéro d'assurance maladie
+- numéro d'assurance maladie
 - numéro 購買 vitale
 
    
@@ -6880,7 +6906,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 #### <a name="keywords_france_eu_tax_file_number"></a>Keywords_france_eu_tax_file_number
 
-- numéro d'identification fiscale
+- numéro d'identification fiscale
 - 納稅識別碼
 - 納稅識別碼否
 - 納稅識別號碼
@@ -6959,7 +6985,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 加值稅#
 - 加值稅
 - siren 識別碼 no numéro d'identification taxe sur valeur ajoutée
-- taxe valeur ajoutée
+- taxe valeur ajoutée
 - taxe sur la valeur ajoutée
 - n ° tva
 - numéro de tva
@@ -7009,18 +7035,18 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 - ausstellungsdatum
 - ausstellungsort
-- ausstellende behöde
-- ausstellende behorde
-- ausstellende behoerde
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
 - führerschein
 - fuhrerschein
 - fuehrerschein
 - führerscheinnummer
 - fuhrerscheinnummer
 - fuehrerscheinnummer
-- führerschein- 
-- fuhrerschein- 
-- fuehrerschein- 
+- führerschein- 
+- fuhrerschein- 
+- fuehrerschein- 
 - führerscheinnummernr
 - fuhrerscheinnummernr
 - fuehrerscheinnummernr
@@ -7134,11 +7160,11 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -7207,7 +7233,7 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 個人識別碼
 - personalausweis
 - persönliche 識別碼 nummer
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - persönliche-識別碼-nummer
 
 
@@ -7403,8 +7429,8 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 加值稅#
 - 加值稅 # mehrwertsteuer
 - mwst
-- mehrwertsteuer identifikationsnummer
-- mehrwertsteuer nummer
+- mehrwertsteuer identifikationsnummer
+- mehrwertsteuer nummer
 
 
 ## <a name="greece-drivers-license-number"></a>希臘駕駛執照號碼
@@ -7542,11 +7568,11 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -7752,9 +7778,9 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 納稅人識別碼
 - tin no
 - 錫#
-- αριθμός φορολογικού μητρώου
-- τον αριθμό φορολογικού μητρώου
-- φορολογικού μητρώου νο
+- αριθμός φορολογικού μητρώου
+- τον αριθμό φορολογικού μητρώου
+- φορολογικού μητρώου νο
 
 
 ## <a name="hong-kong-identity-card-hkid-number"></a>香港身分識別卡 (HKID) 號碼
@@ -7980,11 +8006,11 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -8070,10 +8096,10 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - 識別碼號碼
 - 識別號碼
 - sz ig
-- 深圳。ig.
+- 深圳。 ig.
 - ig。
-- személyazonosító igazolvány
-- személyi igazolvány
+- személyazonosító igazolvány
+- személyi igazolvány
 
 
 ## <a name="hungary-passport-number"></a>匈牙利護照號碼
@@ -8251,8 +8277,8 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 #### <a name="keywords_hungary_eu_tax_file_number"></a>Keywords_hungary_eu_tax_file_number
 
-- adóazonosító szám
-- adóhatóság szám
+- adóazonosító szám
+- adóhatóság szám
 - adószám
 - 匈牙利文 tin
 - hungatiantin#
@@ -8335,10 +8361,10 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 - hungarianvatno#
 - 納稅編號
 - 加值稅收áfa
-- közösségi adószám
-- általános forgalmi adó szám
-- hozzáadottérték adó
-- áfa szám
+- közösségi adószám
+- általános forgalmi adó szám
+- hozzáadottérték adó
+- áfa szám
 
 
 ## <a name="india-permanent-account-number-pan"></a> (平移) 的印度永久帳戶號碼
@@ -8350,29 +8376,39 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 ### <a name="pattern"></a>模式
 
 10個字母或數位：
-- 有五個字母 (不區分大小寫)  
+- 不區分大小寫的 (三個字母)  
+- C、P、H、F、A、T、B、L、J、G (不區分大小寫的字母) 
+- 一個字母
 - 四位數 
-- 以字母檢查碼表示的字母
+-  (不區分大小寫的字母) 
 
 ### <a name="checksum"></a>校驗
 
-是
+否
 
 ### <a name="definition"></a>定義
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
 - 正則運算式 Regex_india_permanent_account_number 找到符合模式的內容。
 - 會找到來自 Keyword_india_permanent_account_number 的關鍵字。
-- 校驗和通過。
+
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是65%：
+- 正則運算式 Regex_india_permanent_account_number 找到符合模式的內容。
+
 
 ```xml
-<!-- India Permanent Account Number -->
-<Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Regex_india_permanent_account_number"/>
-     <Match idRef="Keyword_india_permanent_account_number"/>
-  </Pattern>
-</Entity>
+      <!-- India Permanent Account Number -->
+      <Entity id="2602bfee-9bb0-47a5-a7a6-2bf3053e2804" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_india_permanent_account_number" />
+          <Match idRef="Keyword_india_permanent_account_number" />
+        </Pattern>
+        <Version minEngineVersion="15.20.3520.000">
+          <Pattern confidenceLevel="65">
+            <IdMatch idRef="Regex_india_permanent_account_number" />
+          </Pattern>
+        </Version>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -8391,7 +8427,8 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 ### <a name="pattern"></a>模式
 
 12位數：
-- 四位數 
+- 不是0或1的數位
+- 三位數 
 - 選擇性的空格或破折號 
 - 四位數 
 - 選擇性的空格或破折號 
@@ -8428,10 +8465,12 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 ### <a name="keywords"></a>關鍵字
    
 #### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
-- Aadhar
-- Aadhaar
+- aadhaar
+- aadhar
+- aadhar#
 - Uid
 - आधार
+- uidai
    
 ## <a name="indonesia-identity-card-ktp-number"></a>印尼身分識別卡 (KTP) 號碼
 
@@ -8809,11 +8848,11 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -8959,7 +8998,7 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 個人號碼
 - 個人公開服務號碼
 - 個人服務否
-- phearsanta seirbhíse poiblí
+- phearsanta seirbhíse poiblí
 - pps 否
 - pps 號碼
 - pps 數位
@@ -8977,9 +9016,9 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - rsin
 - seirbhís aitheantais 用戶端
 - uimh
-- uimhir aitheantais chánach
-- uimhir aitheantais phearsanta
-- uimhir phearsanta seirbhíse poiblí
+- uimhir aitheantais chánach
+- uimhir aitheantais phearsanta
+- uimhir phearsanta seirbhíse poiblí
 - 納稅識別碼
 - 納稅識別碼否
 - 納稅識別號碼
@@ -9084,8 +9123,23 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 #### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
-- מספר זהות 
-- 本國識別碼
+-   מספר זהות
+-   מספר זיה וי
+-   מספר זיהוי ישר אלי      
+-   זהותישר אלית
+-   هو ية اسرائيل ية عدد
+-   هوية إسرائ يلية
+-   رقم الهوية
+-   عدد هوية فريدة من نوعها
+-   idnumber#
+-   識別碼號碼
+-   identity no        
+-   identitynumber#
+-   身分識別號碼
+-   israeliidentitynumber       
+-   個人識別碼
+-   唯一識別碼  
+
    
 ## <a name="italy-drivers-license-number"></a>義大利駕照編號
 這種敏感資訊類型的實體包含在歐盟駕駛執照號碼的敏感資訊類型中，可作為獨立的敏感資訊類型實體。
@@ -9188,14 +9242,14 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 #### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
 - codice 會計
-- codice fiscale
+- codice fiscale
 - codice 識別碼 personale
-- codice personale
+- codice personale
 - 會計代碼
-- numero certificato personale
+- numero certificato personale
 - numero di identificazione fiscale
 - numero 識別碼 personale
-- numero personale
+- numero personale
 - 個人憑證號碼
 - 個人程式碼
 - 個人識別碼代碼
@@ -9984,11 +10038,11 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -10084,7 +10138,7 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 - 管理號碼
-- alvas nē
+- alvas nē
 - 出生號碼
 - 公民編號
 - 民事號碼
@@ -10095,19 +10149,19 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - Id#
 - 識別碼-程式碼
 - 識別號碼
-- identifikācijas numurs
+- identifikācijas numurs
 - 識別碼-號碼
 - 個別號碼
-- latvija alva
+- latvija alva
 - nacionālais 識別碼
 - 國家識別碼
 - 本國識別號碼
 - 本國身分識別號碼
 - 本國保險號碼
 - 本國收銀機號碼
-- nodokļa numurs
+- nodokļa numurs
 - nodokļu 識別碼
-- nodokļu identifikācija numurs
+- nodokļu identifikācija numurs
 - 個人憑證號碼
 - 個人程式碼
 - 個人識別碼代碼
@@ -10340,11 +10394,11 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -10424,17 +10478,17 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 #### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
-- asmeninis skaitmeninis kodas
-- asmens kodas
+- asmeninis skaitmeninis kodas
+- asmens kodas
 - 公民服務號碼
 - mokesčių識別碼
-- mokesčių identifikavimas numeris
-- mokesčių identifikavimo numeris
-- mokesčių numeris
+- mokesčių identifikavimas numeris
+- mokesčių identifikavimo numeris
+- mokesčių numeris
 - 國家識別號碼
 - 個人程式碼
 - 個人數位代碼
-- piliečio paslaugos numeris
+- piliečio paslaugos numeris
 - 納稅識別碼
 - 納稅識別碼否
 - 納稅識別號碼
@@ -10451,8 +10505,8 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 納稅人識別碼
 - tin no
 - 錫#
-- unikalus identifikavimo kodas
-- unikalus identifikavimo numeris
+- unikalus identifikavimo kodas
+- unikalus identifikavimo numeris
 - 唯一識別碼
 - 唯一的身分識別號碼
 - uniqueidentityno#
@@ -10647,11 +10701,11 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -10745,7 +10799,7 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 個人身分識別
 - personalidno#
 - personalidnumber#
-- persönliche identifikationsnummer
+- persönliche identifikationsnummer
 - 唯一識別碼
 - 唯一身分識別
 - uniqueidkey#
@@ -10846,18 +10900,18 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - sécurité sociale 的回收
 - étain 非
 - étain#
-- identifiant d'impôt
+- identifiant d'impôt
 - 盧森堡稅收 identifikatiounsnummer
-- numéro d'étain
+- numéro d'étain
 - numéro d'identification 會計 luxembourgeois
-- numéro d'identification fiscale
+- numéro d'identification fiscale
 - 社會保障
 - sozialunterstützung
 - sozialversécherung
 - sozialversicherungsausweis
 - steier 識別碼
-- steier identifikatiounsnummer
-- steier nummer
+- steier identifikatiounsnummer
+- steier nummer
 - steuer 識別碼
 - steueridentifikationsnummer
 - steuernummer
@@ -11089,11 +11143,11 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -11169,14 +11223,14 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 - 公民服務號碼
 - 識別碼 tat-taxxa
-- identifika numru tal-biljett
-- kodiċi numerali personali
+- identifika numru tal-biljett
+- kodiċi numerali personali
 - numru ta ' identifikazzjoni personali
 - numru ta ' identifikazzjoni tat-taxxa
 - numru ta ' identifikazzjoni uniku
 - numru ta ' identità uniku
 - numru tas-servizz taċ-ċittadin
-- numru tat-taxxa
+- numru tat-taxxa
 - 個人數位代碼
 - 唯一識別碼
 - 唯一的身分識別號碼
@@ -11298,14 +11352,14 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 - 公民服務號碼
 - 識別碼 tat-taxxa
-- identifika numru tal-biljett
-- kodiċi numerali personali
+- identifika numru tal-biljett
+- kodiċi numerali personali
 - numru ta ' identifikazzjoni personali
 - numru ta ' identifikazzjoni tat-taxxa
 - numru ta ' identifikazzjoni uniku
 - numru ta ' identità uniku
 - numru tas-servizz taċ-ċittadin
-- numru tat-taxxa
+- numru tat-taxxa
 - 個人數位代碼
 - 納稅識別碼
 - 納稅識別碼否
@@ -11375,16 +11429,16 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 個人號碼
 - 個人數位代碼
 - 人員相關號碼
-- persoonlijk nummer
+- persoonlijk nummer
 - persoonlijke numerieke 程式碼
 - persoonsgebonden
 - persoonsnummer
-- sociaal-fiscaal nummer
+- sociaal-fiscaal nummer
 - 社交會計編號
 - sofi
 - sofinummer
-- uniek identificatienummer
-- uniek identiteitsnummer
+- uniek identificatienummer
+- uniek identiteitsnummer
 - 唯一識別碼
 - 唯一的身分識別號碼
 - uniqueidentityno#
@@ -11524,11 +11578,11 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -11646,19 +11700,19 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
-- btw nummer
+- btw nummer
 - hollânske 納稅識別
 - hulandes impuesto id 號碼
 - hulandes impuesto 識別
-- identificatienummer belasting
-- identificatienummer van belasting
+- identificatienummer belasting
+- identificatienummer van belasting
 - impuesto 識別碼
 - impuesto 編號
 - nederlands belasting id nummer
-- nederlands belasting identificatie
-- nederlands belasting identificatienummer
-- nederlands belastingnummer
-- nederlandse belasting identificatie
+- nederlands belasting identificatie
+- nederlands belasting identificatienummer
+- nederlands belastingnummer
+- nederlandse belasting identificatie
 - 荷蘭稅務識別
 - netherland 的納稅識別
 - 荷屬安的納稅人
@@ -11741,7 +11795,7 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 加值稅否
 - 加值稅#
 - wearde tafoege 稅收 getal
-- btw nûmer
+- btw nûmer
 - btw-nummer
 
 
@@ -12323,11 +12377,11 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -12552,7 +12606,7 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - companyid#
 - companyidno#
 - 轉寄 statystyczny
-- numeru regon
+- numeru regon
 - numerstatystyczny#
 - numeruregon#
 
@@ -12828,11 +12882,11 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -13134,11 +13188,11 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -13230,7 +13284,7 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 國家識別碼
 - 國家識別號碼
 - număr identificare 個人
-- număr identitate
+- număr identitate
 - număr 個人 unic
 - număridentitate#
 - număridentitate
@@ -13369,13 +13423,13 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 護照識別碼
 - passportno#
 - passportnumber#
-- паспорт нет
+- паспорт нет
 - паспорт識別碼
-- pоссийской паспорт
-- pусский номер паспорта
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт#
 - паспортid#
-- номер паспорта
+- номер паспорта
 - номерпаспорта#
 
 
@@ -13429,13 +13483,13 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 護照識別碼
 - passportno#
 - passportnumber#
-- паспорт нет
+- паспорт нет
 - паспорт識別碼
-- pоссийской паспорт
-- pусский номер паспорта
+- pоссийской паспорт
+- pусский номер паспорта
 - паспорт#
 - паспортid#
-- номер паспорта
+- номер паспорта
 - номерпаспорта#
 
 
@@ -13673,11 +13727,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -13753,32 +13807,32 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
-- azonosító szám
+- azonosító szám
 - 出生號碼
-- číslo národnej identifikačnej karty
-- číslo občianského preukazu
-- daňové číslo
+- číslo národnej identifikačnej karty
+- číslo občianského preukazu
+- daňové číslo
 - 識別碼號碼
 - 識別碼否
 - 識別號碼
-- identifikačná karta č
-- identifikačné číslo
+- identifikačná karta č
+- identifikačné číslo
 - 身分識別卡
 - 身分識別卡號碼
-- národná identifikačná značka č
+- národná identifikačná značka č
 - 國家/地區號碼
 - nationalnumber#
-- nemzeti személyazonosító igazolvány
+- nemzeti személyazonosító igazolvány
 - personalidnumber#
 - rč
-- rodne cislo
-- rodné číslo
+- rodne cislo
+- rodné číslo
 - 社會安全號碼
 - Ssn#
 - Ssn
-- személyi igazolvány szám
-- személyi igazolvány száma
-- személyigazolvány szám
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
 - 納稅檔案編號
 - 稅收檔案編號
 - 納稅識別碼
@@ -13990,11 +14044,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -14072,24 +14126,24 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
-- edinstvena številka glavnega državljana
+- edinstvena številka glavnega državljana
 - emšo
-- enotna maticna številka obcana
+- enotna maticna številka obcana
 - 身份證
 - 識別號碼
-- identifikacijska številka
+- identifikacijska številka
 - 身份證
 - nacionalna 識別碼
 - nacionalni potni 清單
 - 國家識別碼
-- osebna izkaznica
-- osebni koda
+- osebna izkaznica
+- osebni koda
 - osebni ne
-- osebni številka
+- osebni številka
 - 個人程式碼
 - 個人號碼
 - 個人數位代碼
-- številka državljana
+- številka državljana
 - 唯一公民編號
 - 唯一識別碼
 - 唯一的身分識別號碼
@@ -14208,9 +14262,9 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 
 #### <a name="keywords_slovenia_eu_tax_file_number"></a>Keywords_slovenia_eu_tax_file_number
 
-- davčna številka
-- identifikacijska številka davka
-- številka davčne datoteke
+- davčna številka
+- identifikacijska številka davka
+- številka davčne datoteke
 - 納稅檔案編號
 - 稅收檔案編號
 - 納稅識別碼
@@ -14483,11 +14537,11 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -14584,7 +14638,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - dni
 - dninúmero#
 - documento nacional de identidad
-- identidad único
+- identidad único
 - identidadúnico#
 - 保險號碼
 - 國家識別號碼
@@ -14595,7 +14649,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 聶
 - nienúmero#
 - número de identificación
-- número nacional identidad
+- número nacional identidad
 - 個人身分識別號碼
 - 個人身分識別
 - 唯一的身分識別號碼
@@ -15034,11 +15088,11 @@ Foreigners 與 Foreigner 的識別號碼
 - 駕駛執照#
 - 駕駛執照#
 - 駕駛執照#
-- 駕駛許可證 
+- 駕駛許可證 
 - 駕照
 - dlno#
 - driv 許可證
-- driv licen
+- driv licen
 - driv 授權
 - driv 授權
 - driv 許可證
@@ -15327,8 +15381,8 @@ Foreigners 與 Foreigner 的識別號碼
 - 個人號碼
 - personnummer
 - skatt 識別碼 nummer
-- skatt identifikation
-- skatteBetalarens identifikationsnummer
+- skatt identifikation
+- skatteBetalarens identifikationsnummer
 - sverige tin
 - 納稅檔案
 - 納稅識別碼
@@ -15408,7 +15462,7 @@ Foreigners 與 Foreigner 的識別號碼
 - le numéro 解除的 swift
 - swift numéro d'acheminement
 - le numéro BIC
-- # <a name="bic"></a>BIC
+- # <a name="bic"></a>BIC
 - 程式碼 identificateur de banque
 - SWIFTコード
 - SWIFT番號
@@ -15416,8 +15470,8 @@ Foreigners 與 Foreigner 的識別號碼
 - BICコード
 - SWIFT コード
 - SWIFT 番號
-- BIC 番號
-- BIC コード
+- BIC 番號
+- BIC コード
 - 金融機関識別コード
 - 金融機関コード
 - 銀行コード
@@ -15490,7 +15544,7 @@ Foreigners 與 Foreigner 的識別號碼
 - avs 號碼
 - 個人身分識別不 versicherungsnummer
 - identifikationsnummer
-- einzigartige identität nicht
+- einzigartige identität nicht
 - sozialversicherungsnummer
 - 識別碼 personnelle 識別碼
 - numéro de sécurité sociale
@@ -16053,11 +16107,11 @@ OR
 
 ### <a name="format"></a>格式
 
-8-17 位數
+6-17 位數
 
 ### <a name="pattern"></a>模式
 
-8-17 連續位數
+6-17 連續位數
 
 ### <a name="checksum"></a>校驗
 
@@ -16294,41 +16348,33 @@ OR
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是85%：
 - 函數 Func_formatted_itin 找到符合模式的內容。
-- 下列專案中至少有一個為真：
-    - 會找到來自 Keyword_itin 的關鍵字。
-    - 函數 Func_us_address 會找到正確日期格式的位址。
-    - 函數 Func_us_date 會找到正確日期格式的日期。
-    - 會找到來自 Keyword_itin_collaborative 的關鍵字。
+- 會找到來自 Keyword_itin 的關鍵字。
 
 如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是75%：
 - 函數 Func_unformatted_itin 找到符合模式的內容。
-- 下列專案中至少有一個為真：
-    - 會找到來自 Keyword_itin_collaborative 的關鍵字。
-    - 函數 Func_us_address 會找到正確日期格式的位址。
-    - 函數 Func_us_date 會找到正確日期格式的日期。
+- 會找到來自 Keyword_itin 的關鍵字。
+
+如果接近300個字元以內，則 DLP 原則偵測到此敏感資訊類型的置信量是65%：
+- 函數 Func_formatted_itin 或 Func_unformatted_itin 找到符合模式的內容。
 
 ```xml
-<!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
-<Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="85">
+    <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
+    <Entity id="e55e2a32-f92d-4985-a35d-a0b269eb687b" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_formatted_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-          <Match idRef="Keyword_itin_collaborative" />
-        </Any>
-    </Pattern>
-    <Pattern confidenceLevel="75">
+        <Match idRef="Keyword_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_unformatted_itin" />
         <Match idRef="Keyword_itin" />
-        <Any minMatches="1">
-          <Match idRef="Keyword_itin_collaborative" />
-          <Match idRef="Func_us_address" />
-          <Match idRef="Func_us_date" />
-        </Any>
-    </Pattern>
-</Entity>
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_formatted_itin" />
+      </Pattern>
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_unformatted_itin" />
+      </Pattern>
+    </Entity>
 ```
 
 ### <a name="keywords"></a>關鍵字
@@ -16339,6 +16385,7 @@ OR
 - 納稅識別碼 
 - 納稅識別 
 - itin 
+- i.t.i.n.
 - Ssn 
 - 錫 
 - 社會保障 
@@ -16347,14 +16394,6 @@ OR
 - taxid 
 - 個別納稅人 
 
-#### <a name="keyword_itin_collaborative"></a>Keyword_itin_collaborative
-
-- License 
-- Dl 
-- DOB 
-- 出生日期 
-- 生日 
-- 出生日期 
 
 ## <a name="us-social-security-number-ssn"></a> (SSN) 的 U.S. 社會安全號碼
 
@@ -16532,8 +16571,8 @@ OR
 - 烏克蘭護照
 - 護照號碼
 - 護照否
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта
 - персональний
 
 
@@ -16582,5 +16621,5 @@ OR
 - 烏克蘭護照
 - 護照號碼
 - 護照否
-- паспорт України
-- номер паспорта
+- паспорт України
+- номер паспорта

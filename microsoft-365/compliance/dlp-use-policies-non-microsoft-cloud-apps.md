@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何對非 Microsoft cloud app 使用 dlp 原則。
-ms.openlocfilehash: dd5a7a4bc0725d0785daec6b7635047cd91f20a2
-ms.sourcegitcommit: 39af527404cb06e05c5aa4550dbec39aec133016
+ms.openlocfilehash: 0b588bf27738a0f9a8078999311294f74e5193c0
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48422733"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649654"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>使用非 Microsoft cloud app 的資料遺失防護原則 (預覽) 
 
@@ -45,7 +45,7 @@ ms.locfileid: "48422733"
 
 ### <a name="prepare-your-cloud-app-security-environment"></a>準備 Cloud App Security 環境
 
-DLP 原則至非 Microsoft cloud App 使用雲端 App Security DLP 功能。 若要使用它，您應該準備 Cloud App Security 環境。 如需相關指示，請參閱 [Set isntant visibility、protection 和控管動作為您的應用程式](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)。
+DLP 原則至非 Microsoft cloud App 使用雲端 App Security DLP 功能。 若要使用它，您應該準備 Cloud App Security 環境。 如需相關指示，請參閱為 [您的應用程式設定立即可視性、保護和](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps)控管動作。
 
 ### <a name="connect-a-non-microsoft-cloud-app"></a>連接非 Microsoft cloud app
 

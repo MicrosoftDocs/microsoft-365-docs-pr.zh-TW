@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ffa2d54385249a22d672be0c2591c3b4171bd10d
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 5b0353546a9bb923559ebd125393890180257baf
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600378"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651437"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>開始使用「內幕風險管理」設定
 
@@ -81,7 +81,7 @@ ms.locfileid: "48600378"
 
 請確認您計畫在「內幕風險管理」中報告的 Windows 10 裝置符合這些需求。
 
-1. 必須執行 Windows 10 x64 組建 1809 或更新版本。
+1. 必須執行 Windows 10 x64 組建1809或更新版本，且必須已安裝 [windows 10 更新 (OS 組建 17763.1075) ](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) 從2月20日2020。
 2. 所有裝置都必須[加入 Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或加入混合式 Azure AD。
 3. 在端點裝置上安裝 Microsoft Chromium Edge browser，以監視雲端上傳活動的動作。 請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
@@ -364,6 +364,9 @@ ms.locfileid: "48600378"
 [Microsoft Power 自動化](https://docs.microsoft.com/power-automate/getting-started) 是一種工作流程服務，可在應用程式和服務間自動執行動作。 您可以使用來自範本或手動建立的流程，來自動化與這些應用程式和服務相關聯的常見工作。 當您為內幕風險管理啟用電源自動化流程時，您可以自動化案例和使用者的重要工作。 您可以設定 Power 自動化流程以取得使用者、警示及案例資訊，並與專案關係人和其他應用程式共用此資訊，以及自動化內幕程式風險管理中的動作，例如：發佈至案例記事。 電源自動化流程適用于案例及原則範圍中的任何使用者。
 
 客戶若使用包含「內幕風險管理」的 Microsoft 365 訂閱，則不需要額外的功率自動授權，即可使用建議的「內部使用者風險管理」功能自動化範本。 您可以自訂這些範本，以支援您的組織及涵蓋核心內部使用者風險管理案例。 如果您選擇使用這些範本中的 [高功耗自動功能] 功能，請使用 Microsoft 365 規範連接器建立自訂範本，或在 Microsoft 365 中使用其他法規遵從性區域的 Power templates 範本，您可能需要額外的電量自動授權。
+
+>[!IMPORTANT]
+>測試電源自動化流程時，是否收到其他授權驗證的提示？ 您的組織可能尚未收到此預覽功能的服務更新。 已部署更新，且所有包含「內幕風險管理」的 Microsoft 365 訂閱的組織，都應該具備在10月30日後2020，由建議的功耗自動範本所建立之流程的授權支援。
 
 下列電源自動化的範本可供客戶用來支援內部使用者風險管理使用者和案例的處理常式自動化：
 

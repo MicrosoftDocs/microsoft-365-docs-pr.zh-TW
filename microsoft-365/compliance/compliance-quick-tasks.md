@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: 深入瞭解將協助您快速開始使用 Microsoft 365 中的合規性的工作。
-ms.openlocfilehash: 98526104d2ced7b86315b24bd2843701047a097c
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: a8fd5d72fd87fdbf9c8c3c6da094a58544efd6e8
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341179"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651359"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>開始使用 Microsoft 365 合規性的快速工作
 
@@ -68,13 +68,7 @@ Microsoft 提供了數個內建的警示原則，可協助識別系統管理許�
 
 如需建立自訂報警原則的逐步指引，請參閱 [安全性與合規性中心中的警示原則](alert-policies.md)。
 
-## <a name="task-5-configure-just-in-time-access-for-your-administrators"></a>任務5：設定系統管理員的即時存取
-
-讓某些使用者對機密資訊或重要網路設定設定的存取權，對遭到損害的帳戶或內部威脅活動而言是可能的路徑。 「特殊設定[管理](privileged-access-management-overview.md)」可協助保護您的組織不會遭到破壞，並可限制存取機密資料或存取重要的設定設定，以協助滿足法規遵從性最佳作法。 不是具有持續存取權的系統管理員，需要提升許可權的工作才會執行即時存取規則。 啟用 Microsoft 365 中的「特殊許可權存取管理」可讓您的組織以零擁有的許可權運作，並提供防禦受影響的系統管理存取弱點。
-
-如需設定特殊許可權存取管理的逐步指引，請參閱 [入門的特殊許可權存取管理](privileged-access-management-configuration.md)。 如需特殊許可權存取管理授權資訊，請參閱 [Microsoft 365 的安全性授權指南以取得安全性 & 合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#privileged-access-management-in-office-365)。
-
-## <a name="task-6-classify-and-protect-sensitive-data"></a>任務6：分類及保護機密資料
+## <a name="task-5-classify-and-protect-sensitive-data"></a>任務5：分類及保護機密資料
 
 為了完成其工作，組織中的人員會與組織內外的其他人員共同合作。這表示內容不會停留在防火牆後，它會漫遊在裝置、應用程式和服務的各處。而您希望內容以符合組織的商務及合規性原則的安全、受保護的方式進行漫遊。
 
@@ -82,7 +76,7 @@ Microsoft 提供了數個內建的警示原則，可協助識別系統管理許�
 
 如需設定及使用敏感度標籤的逐步指引，請參閱 [開始使用敏感度標籤](get-started-with-sensitivity-labels.md)。 如需敏感度標籤授權資訊，請參閱 [Microsoft 365 授權指南以取得安全性 & 符合性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
-## <a name="task-7-configure-a-retention-policy"></a>任務7：設定保留原則
+## <a name="task-6-configure-a-retention-policy"></a>任務6：設定保留原則
 
 [保留原則](retention.md)可讓您主動決定是否要保留內容、刪除內容或兩者，保留，然後在指定的保留期間結束時刪除內容。 這些動作可能需要遵循行業法規和內部原則，以及在訴訟或違反安全性的情況下降低風險。
 
@@ -92,7 +86,7 @@ Microsoft 提供了數個內建的警示原則，可協助識別系統管理許�
 
 如需設定保留原則的逐步指引，請參閱 [建立及設定保留](create-retention-policies.md)原則。 如果您才剛開始在 Microsoft 365 中進行設定保留，請參閱 [開始使用保留原則及保留標籤](get-started-with-retention.md)。
 
-## <a name="task-8-configure-sensitive-information-and-offensive-language-policies"></a>工作8：設定機密資訊和冒犯性語言原則
+## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>工作7：設定機密資訊和冒犯性語言原則
 
 保護機密資訊和偵測和作用於工作場所騷擾的事件，是遵守內部原則和標準的重要部分。 Microsoft 365 中的[通訊法規遵從性](communication-compliance-feature-reference.md)協助您快速偵測、捕獲和採取電子郵件和 Microsoft 小組通訊的修正動作，協助將這些風險降至最低。 這包括不適當的通訊，包含與您組織內部和外部的敏感資訊共用的猥褻、威脅及騷擾和通訊。
 
@@ -102,7 +96,7 @@ Microsoft 提供了數個內建的警示原則，可協助識別系統管理許�
 
 如需規劃及設定通訊相容性的逐步指引，請參閱 [規劃通訊符合性](communication-compliance-plan.md) 及 [開始使用通訊相容性](communication-compliance-configure.md)。 如需通訊相容性授權資訊，請參閱 [Microsoft 365 授權指南以取得安全性 & 符合性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance)。
 
-## <a name="task-9-see-whats-happening-with-your-sensitive-items"></a>工作9：查看您的敏感專案發生的情況
+## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>任務8：查看您的敏感專案發生的情況
 
 敏感度標籤、機密資訊類型、保留標籤與原則及 trainable 分類器可用來分類及標記不同 Exchange、SharePoint 及 OneDrive 中的機密專案，如先前的工作所示。 您的快速任務旅程中的最後一個步驟是查看已標示哪些專案，以及您的使用者對這些敏感專案採取的動作。 [內容流覽](data-classification-content-explorer.md) 器和 [活動瀏覽器](data-classification-activity-explorer.md) 提供此可見度。
 

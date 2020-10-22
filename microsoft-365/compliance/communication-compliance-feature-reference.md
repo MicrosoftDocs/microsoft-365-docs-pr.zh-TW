@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7f1d3e13aebe7c7924732922bbbfc7417622d8c5
-ms.sourcegitcommit: e17fd18b01d70e6428263c20cbce4b92e2a97765
+ms.openlocfilehash: 4ede013a1c9a9bd054fc6965cbb12b5bbabb0b5e
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48626186"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651405"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -335,6 +335,9 @@ ms.locfileid: "48626186"
 [Microsoft Power 自動化](https://docs.microsoft.com/power-automate/getting-started) 是一種工作流程服務，可在應用程式和服務間自動執行動作。 您可以使用來自範本或手動建立的流程，來自動化與這些應用程式和服務相關聯的常見工作。 當您啟用電源自動化流程以進行通訊相容性時，您可以自動化提醒和使用者的重要工作。 您可以設定電源自動化流程，以在使用者有通訊符合性警示和其他應用程式時通知管理員。
 
 使用包含通訊法規遵從性之 Microsoft 365 訂閱的客戶，不需要額外的功率自動授權，即可使用建議的預設通訊相容性電源自動範本。 您可以自訂預設範本，以支援您的組織及涵蓋核心通訊相容性案例。 如果您選擇使用這些範本中的 [高功耗自動功能] 功能，請使用 Microsoft 365 規範連接器建立自訂範本，或在 Microsoft 365 中使用其他法規遵從性區域的 Power templates 範本，您可能需要額外的電量自動授權。
+
+>[!IMPORTANT]
+>測試電源自動化流程時，是否收到其他授權驗證的提示？ 您的組織可能尚未收到此預覽功能的服務更新。 已部署更新，且所有具有 Microsoft 365 訂閱（包含通訊法規遵從性）的組織，都應該具備在10月30日30月30日後2020，從建議的電源自動化範本所建立之流程的授權
 
 ![通訊相容性電源自動化](../media/communication-compliance-power-automate.png)
 
