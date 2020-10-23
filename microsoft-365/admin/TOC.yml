@@ -82,7 +82,7 @@
           href: services-in-china/apply-for-a-fapiao.md
         - name: Azure 資訊保護同位檢查
           href: services-in-china/parity-between-azure-information-protection.md
-    - name: 管理使用者和群組
+    - name: 管理使用者、群組和密碼
       href: add-users/index.yml
       items:
         - name: 使用者
@@ -109,14 +109,6 @@
               href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: 還原使用者
               href: add-users/restore-user.md
-            - name: 重設密碼
-              href: add-users/reset-passwords.md
-            - name: 將密碼設定為永遠不過期
-              href: add-users/set-password-to-never-expire.md
-            - name: 讓使用者重設密碼
-              href: add-users/let-users-reset-passwords.md
-            - name: 重新傳送使用者密碼
-              href: add-users/resend-user-password.md
             - name: 建立範本以新增使用者
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: 將使用者升級到最新的應用程式
@@ -137,6 +129,20 @@
               href: create-groups/restore-deleted-group.md
             - name: 管理群組的來賓存取
               href: create-groups/manage-guest-access-in-groups.md
+        - name: 密碼
+          items:
+            - name: 重設密碼
+              href: add-users/reset-passwords.md
+            - name: 讓使用者重設密碼
+              href: add-users/let-users-reset-passwords.md
+            - name: 將密碼設定為永遠不過期
+              href: add-users/set-password-to-never-expire.md
+            - name: 重新傳送使用者密碼
+              href: add-users/resend-user-password.md
+            - name: 關閉強式密碼
+              href: add-users/strong-password.md
+            - name: 設定密碼到期原則
+              href: manage/set-password-expiration-policy.md
     - name: 管理電子郵件和行事曆
       href: email/index.yml
       items:

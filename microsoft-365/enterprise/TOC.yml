@@ -269,6 +269,10 @@
       items:
         - name: 新增網域
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
+    - name: 管理
+      items:
+        - name: Microsoft 365 服務健全狀態
+          href: microsoft-365-service-health.md
         - name: 設定指南
           href: setup-guides-for-microsoft-365.md
     - name: 多個租用戶
@@ -571,7 +575,7 @@
               href: view-user-accounts-with-microsoft-365-powershell.md
             - name: 設定屬性
               href: configure-user-account-properties-with-microsoft-365-powershell.md
-            - name: 指派角色
+            - name: 指派系統管理員角色
               href: assign-roles-to-user-accounts-with-microsoft-365-powershell.md
             - name: 刪除和還原
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
@@ -719,8 +723,6 @@
       href: contoso-info-protect.md
     - name: 安全性摘要
       href: contoso-security-summary.md
-- name: Microsoft 365 服務健全狀態
-  href: microsoft-365-service-health.md
 - name: Microsoft 365 合規性
   href: ../compliance/index.yml
 - name: Microsoft 365 安全性
