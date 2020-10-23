@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 5183e6f60d825ff523db4da165d16752b3aa3cc8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7699b31052ecc1bda33630fcf97e9d43875f4ae3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399346"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681587"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 設定威脅防護功能
 
@@ -194,5 +194,5 @@ Microsoft 365 提供下列資源，協助您在組織中告知使用者：
 - 在 Windows 10 和 Mac 電腦上啟用非管理裝置的安全性功能 () 
     
 Microsoft 也建議您採取下列文章中建議的動作來保護其個人電子郵件帳戶：
-- [協助保護您的 Outlook.com 電子郵件帳戶](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [協助保護您的 Outlook.com 電子郵件帳戶](https://support.microsoft.com/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [使用2步驟驗證保護您的 Gmail 帳戶](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)

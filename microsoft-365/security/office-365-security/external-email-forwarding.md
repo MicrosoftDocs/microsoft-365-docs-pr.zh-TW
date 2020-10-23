@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 07/01/2020
+ms.date: ''
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,49 +14,57 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: 78ba5183667f4e5c6f713182969338f3ef2e7262
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: c1a7cd4d8f00c9e2433601903efd1fba7bb587f9
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600526"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681729"
 ---
-# <a name="configuring-external-email-forwarding-in-office-365"></a>在 Office 365 中設定外部電子郵件轉發功能
+# <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>在 Microsoft 365 中控制自動外部電子郵件轉接
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+身為系統管理員，您可能會有公司需求，以限制或控制自動轉寄的郵件至外部收件者 (組織外) 收件者。 電子郵件轉寄可能非常有用，但由於可能洩漏資訊，也可能會造成安全性風險。 攻擊者可能會利用此資訊來攻擊您的組織或合作夥伴。
 
-外部轉送是由 *輸出反垃圾郵件原則* 所控制，並根據設定的設定範圍限定為使用者。 目前支援的設定如下：
+Microsoft 365 提供下列自動轉送類型：
 
-- **自動** -封鎖自動外部轉送。 內部自動轉送郵件功能將繼續運作。 這是預設設定。
+- 使用者可以設定 [收件匣規則](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) ，自動將郵件轉寄給外部寄件者 (故意或因遭到破壞的帳戶) 。
 
-- **開啟** -允許和不限制自動外部轉送。
+- 系統管理員可以設定 [信箱轉送](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (又稱為 SMTP 轉送) ，以自動將郵件轉寄給外部收件者。
 
-- **Off** –會停用自動外部轉送，並且會產生未傳遞回報 (NDR) 給使用者。
+您可以使用輸出垃圾郵件篩選原則來控制自動轉寄給外部收件者。 有三個可用的設定：
 
-如需如何設定這些設定的詳細資訊，請參閱 [設定 EOP 中的外寄垃圾郵件篩選](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true) 。
+- **自動**：封鎖自動外部轉送。 內部自動轉送郵件功能將繼續運作。 這是預設設定。
+- **開啟**：允許和不限制自動外部轉送。
+- **Off**：停用自動外部轉寄，將會造成未傳遞回報 (也稱為 NDR 或退回的郵件) 傳送給寄件者。
 
-> [!NOTE]
-> 停用自動轉送也會停用將郵件重新導向至外部地址的收件匣規則。
+如需如何設定這些設定的指示，請參閱 [CONFIGURE EOP 中的外寄垃圾郵件篩選](configure-the-outbound-spam-policy.md)。
 
-## <a name="controlling-external-email-forwarding"></a>控制外部電子郵件轉發
+**附註**：
 
-做為組織的系統管理員，您可能需要限制或控制誰可以使用收件匣規則或在組織外部的 SMTP 轉寄功能，自動轉寄電子郵件。 電子郵件轉寄可能是一項非常實用的功能，但也可以透過可能披露的資訊來帶來風險，即使是提供可被攻擊者攻擊組織或其合作夥伴的資訊也是一樣的。
+- 停用自動轉送也會停用將郵件重新導向至外部地址的收件匣規則。
 
-Office 365 不允許由收件匣規則或信箱設定自動進行外部轉送，這會提供安全的預設原則。 不過，系統管理員可以針對組織中的所有使用者或部分使用者修改這些設定。 在內部使用者之間轉發郵件不會受到這類修改的影響。
+- 內部使用者之間的自動轉送郵件不會受到輸出垃圾郵件篩選原則中的設定。
 
-> [!NOTE]
-> 停用 Office 365 中的自動轉寄外部地址時，將會逐步顯示詳細資訊透過 [訊息中心](https://admin.microsoft.com/Adminportal/Home?source=applauncher&ref=/MessageCenter) 文章進行通訊。 若要協助系統管理員準備這些變更，請提前修改原則，以確保使用者沒有任何中斷。
+- 您可以在 [ [自動轉寄的郵件] 報告](mfi-auto-forwarded-messages-report.md)中看到自動轉送郵件至外部收件者之使用者的相關資訊。
 
-在您組織中使用自動轉寄 (收件匣規則或 SMTP 轉送) 使用者的詳細資訊，可以在 [ [自動轉寄的郵件] 報告](https://docs.microsoft.com/microsoft-365/security/office-365-security/mfi-auto-forwarded-messages-report?view=o365-worldwide&preserve-view=true)中找到。
+## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>輸出垃圾郵件篩選原則設定如何使用其他自動電子郵件轉接控制項
 
-## <a name="how-does-this-policy-work-with-other-automatic-forwarding-controls"></a>這個原則如何與其他自動轉寄控制項搭配使用
+若您是系統管理員，您可能已經設定其他控制項，以允許或封鎖自動電子郵件轉發。 例如：
 
-身為系統管理員，您可能已經有其他類型的控制項，例如封鎖 [遠端網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) 中的自動轉送，以及使用 Exchange Transport RULE (ETR) 。 這兩個控制項都獨立于此特定功能，例如，如果允許遠端網域的自動轉寄，但透過輸出垃圾郵件原則封鎖自動轉寄，結果將會封鎖自動轉寄的郵件。 同樣地，如果您允許在輸出垃圾郵件原則中自動轉寄，但在 ETR 或遠端網域中封鎖它，則這兩個控制項中的任何一個都會封鎖郵件。 例如，您可以讓您在輸出垃圾郵件原則中允許自動轉寄，並利用遠端網域來控制使用者可以自動轉寄郵件的網域。
+- 可允許或封鎖自動將電子郵件轉寄至部分或所有外部網域的[遠端網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains)。
+- Exchange [郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) 中的條件和動作 (也稱為傳輸規則) 偵測並封鎖自動轉寄的郵件至外部收件者。
 
+遠端網域設定和郵件流程規則獨立于輸出垃圾郵件篩選原則中的設定。 例如：
+
+- 您允許遠端網域的自動轉寄，但是會封鎖輸出垃圾郵件篩選原則中的自動轉送。 在此範例中，自動轉寄的郵件會遭到封鎖。
+- 您可以在輸出垃圾郵件篩選原則中允許自動轉寄，但您可以使用郵件流程規則或遠端網域設定封鎖自動轉寄的電子郵件。 在此範例中，郵件流程規則或遠端網域設定會封鎖自動轉寄的郵件。
+
+這種功能的獨立功能可讓您 (例如，) 允許在輸出垃圾郵件篩選原則中自動轉寄，但使用遠端網域來控制使用者可以轉寄郵件的外部網域。
 
 ## <a name="the-blocked-email-forwarding-message"></a>封鎖的電子郵件轉發郵件
 
-當以自動轉寄方式偵測到郵件 *時，如果* 有未傳遞回報的活動 ** (NDR) ** 會產生給使用者。 報告會指出郵件未傳遞。 NDR 會有下列格式： 
+當以自動轉寄方式偵測到郵件，而組織原則 *封鎖* 該活動時，郵件會在包含下列資訊的 NDR 中傳回給寄件者：
 
-`5.7.520 Access Denied – Your administrator has disabled external forwarding – AS(XXXX)`
+`5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`

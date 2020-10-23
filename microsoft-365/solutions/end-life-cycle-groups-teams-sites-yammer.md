@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 群組、小組和 Yammer 的生命週期選項結束。
-ms.openlocfilehash: 3720f63f99711a09d02675f10a7d639fe1bedc65
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 31383287f3288cbab68d6e249f98210dec62af2f
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377172"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681707"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>群組、小組和 Yammer 的生命週期選項結束
 
@@ -225,7 +225,7 @@ Power BI 資料和工作區可以獨立于群組和團隊運作，如其他工�
 **移動檔**
 
 此外，檔案也可以移至 SharePoint 中的另一個位置，例如在不同網站中的文件庫。
-參考： https://support.office.com/en-us/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
+參考： https://support.office.com/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
 
 **匯出清單** 儲存在 SharePoint 清單內的資料可 [匯出至 Excel 試算表](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)，並再次匯入至另一個網站中的清單。
 

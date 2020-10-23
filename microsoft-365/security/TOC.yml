@@ -151,7 +151,7 @@
                       href: mtp/advanced-hunting-best-practices.md
                     - name: 處理錯誤
                       href: mtp/advanced-hunting-errors.md
-                    - name: 服務限制
+                    - name: 配額和使用量參數
                       href: mtp/advanced-hunting-limits.md
                 - name: 延伸資料涵蓋範圍
                   href: mtp/advanced-hunting-extend-data.md
