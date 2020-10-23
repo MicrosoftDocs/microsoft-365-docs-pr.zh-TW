@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 針對雙位元組字元集支援的版本資訊。
-ms.openlocfilehash: 13bac873f2ba18bc166451ea73ec0d569fb30f68
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 1c2244c49a92aa2c00fad06caa8194cf7e32220e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695239"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681499"
 ---
 # <a name="support-for-double-byte-character-set-release-notes-preview"></a>支援雙位元組字元集的版本資訊 (預覽版)
 
@@ -29,15 +29,6 @@ ms.locfileid: "46695239"
 - 中文 (繁體)
 - 韓文
 - 日文
-
-此預覽僅限商愛業雲端中，且僅限部署至：
-
-- 日本
-- 韓國
-- 中國
-- 香港特別行政區
-- 澳門特別行政區
-- 台灣
 
 這項支援適用於敏感性資訊類型和關鍵字字典，並將反映在資料外洩防護、通訊合規性、Exchange Online、SharePoint Online、商務用 OneDrive 和 Teams 解決方案中。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何在安全性與合規性中心的圖形使用者介面中建立、修改、移除及測試 DLP 的自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c54cd9d4969c87bbd83b3048883d8a84dd9bc59
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 59d16ed662ff1b577bbb6c8388c5d27836832c1f
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686657"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681719"
 ---
 <!-- rename md file to match the display name -->
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>在安全性與合規性中心建立自訂敏感性資訊類型
@@ -39,14 +39,6 @@ ms.locfileid: "46686657"
 > - 中文 (繁體)
 > - 韓文
 > - 日文
-> 
->此預覽僅限用於商業雲端中，且僅在下列國家/地區推出：
-> - 日本
-> - 韓國
-> - 中國
-> - 香港特別行政區
-> - 澳門特別行政區
-> - 台灣
 >
 >這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
 

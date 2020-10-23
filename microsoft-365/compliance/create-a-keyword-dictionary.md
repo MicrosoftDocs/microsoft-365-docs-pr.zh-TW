@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解在 Office 365 安全性與合規性中心建立關鍵字字典的基本步驟。
-ms.openlocfilehash: 7fe425a1f8ac954c6c24752927b218fc7e6f37c7
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: e6f6043efd4c5f38b7e9fa2a92c4fcb7ceb91e45
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547007"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681633"
 ---
 # <a name="create-a-keyword-dictionary"></a>建立關鍵字字典
 
@@ -35,14 +35,6 @@ ms.locfileid: "47547007"
 > - 中文 (繁體)
 > - 韓文
 > - 日文
-> 
->此預覽僅限用於商業雲端中，且僅在下列國家/地區推出：
-> - 日本
-> - 韓國
-> - 中國
-> - 香港特別行政區
-> - 澳門特別行政區
-> - 台灣
 >
 >這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
 

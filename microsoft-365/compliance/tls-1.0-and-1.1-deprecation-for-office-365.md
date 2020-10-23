@@ -17,22 +17,22 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 270d04974cec9c36fa31a77bda401375fdac0471
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: ab3685883ac08522ab9ea1ee0cf194ba263d9166
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148145"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681687"
 ---
 # <a name="tls-10-and-11-deprecation-for-office-365"></a>適用於 Office 365 的 TLS 1.0 和 1.1 淘汰
 > [!IMPORTANT]
-> 由於 covid-19，我們會暫時停止對商業客戶執行 TLS 1.0 和1.1 的棄用，但隨著供貨鏈的調整和某些國家的開啟，我們會將 TLS 強制重設為開始 Oct 15，2020。 
+> 由於 covid-19，我們暫時停用 TLS 1.0 和1.1 對內部客戶的取代取代，但隨著供貨鏈的調整和某些國家/地區的開啟，我們正在重設 TLS 強制執行，以開始10月15日的2020，並在下列星期和月份繼續進行推廣。 
 
-從2018年10月31日到，Office 365 服務的傳輸層安全性（TLS）1.0 和1.1 通訊協定已被取代。 對使用者的影響預計會降至最低。 這項變更已于兩年內公佈，第一次公開宣告于12月2017。 本文僅適用于與 Office 365 服務相關的 Office 365 本地用戶端，但是也可以套用至 Office 和 Office Online Server/Office Web Apps 的內部部署 TLS 問題。
+從2018年10月31日到，Office 365 服務的傳輸層安全性 (TLS) 1.0 和1.1 通訊協定已被取代。 對使用者的影響預計會降至最低。 這項變更已于兩年內公佈，第一次公開宣告于12月2017。 本文僅適用于與 Office 365 服務相關的 Office 365 本地用戶端，但是也可以套用至 Office 和 Office Online Server/Office Web Apps 的內部部署 TLS 問題。
 
 ## <a name="office-and-tls-overview"></a>Office 和 TLS 概述
 
-Office 用戶端依靠 Windows web 服務（WINHTTP）來傳送和接收透過 TLS 通訊協定的流量。 如果本機電腦的 web 服務可以使用 TLS 1.2，則 Office 用戶端可以使用 TLS 1.2。 所有 Office 用戶端都可以使用 TLS 通訊協定，因為 TLS 和 SSL 通訊協定都是作業系統的一部分，而不是 Office 用戶端特有的。
+Office 用戶端依賴 Windows web 服務 (WINHTTP) 以透過 TLS 通訊協定傳送及接收流量。 如果本機電腦的 web 服務可以使用 TLS 1.2，則 Office 用戶端可以使用 TLS 1.2。 所有 Office 用戶端都可以使用 TLS 通訊協定，因為 TLS 和 SSL 通訊協定都是作業系統的一部分，而不是 Office 用戶端特有的。
 
 ### <a name="on-windows-8-and-later-versions"></a>在 Windows 8 和更新版本上
 
@@ -40,18 +40,18 @@ Office 用戶端依靠 Windows web 服務（WINHTTP）來傳送和接收透過 T
 
 ### <a name="on-windows-7"></a>在 Windows 7
 
-沒有[KB 3140245](https://support.microsoft.com/help/3140245)更新，TLS 1.1 和1.2 通訊協定無法使用。 此更新會解決此問題，並新增下列登錄子機碼：
+沒有 [KB 3140245](https://support.microsoft.com/help/3140245) 更新，TLS 1.1 和1.2 通訊協定無法使用。 此更新會解決此問題，並新增下列登錄子機碼：
 
 ```console
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp
 ```
 
 > [!NOTE]
-> 未安裝此更新的 Windows 7 使用者會受到2018年10月31日的影響。 [KB 3140245](https://support.microsoft.com/help/3140245)具有如何變更 WINHTTP 設定以啟用 TLS 通訊協定的詳細資料。
+> 未安裝此更新的 Windows 7 使用者會受到2018年10月31日的影響。 [KB 3140245](https://support.microsoft.com/help/3140245) 具有如何變更 WINHTTP 設定以啟用 TLS 通訊協定的詳細資料。
 
-#### <a name="more-information"></a>詳細資訊
+#### <a name="more-information"></a>其他相關資訊
 
-知識庫文章描述的**DefaultSecureProtocols**登錄機碼值，會決定可以使用的網路通訊協定：
+知識庫文章描述的 **DefaultSecureProtocols** 登錄機碼值，會決定可以使用的網路通訊協定：
 
 |DefaultSecureProtocols 值|已啟用通訊協定|
 |-|-|
@@ -63,7 +63,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 
 ## <a name="office-clients-and-tls-registry-keys"></a>Office 用戶端和 TLS 登錄機碼
 
-您可以參考[KB 4057306，準備在 Office 365 中對 TLS 1.2 的強制使用](https://support.microsoft.com/help/4057306)。 這是 IT 系統管理員的一般文章，也是有關 TLS 1.2 變更的官方檔。
+您可以參考 [KB 4057306，準備在 Office 365 中對 TLS 1.2 的強制使用](https://support.microsoft.com/help/4057306)。 這是 IT 系統管理員的一般文章，也是有關 TLS 1.2 變更的官方檔。
 
 下表顯示在 2018 10 月31日後，Office 365 用戶端中的適當登錄機碼值。
 
@@ -75,8 +75,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\W
 |TLS 1.2|0x00000800|
 
 > [!IMPORTANT]
-> 建議您不要使用 SSL 2.0 和3.0 通訊協定，也可以使用**DefaultSecureProtocols**機碼加以設定。 SSL 2.0 和3.0 被視為已被取代的通訊協定。 最佳作法是使用 SSL 2.0 和 SSL 3.0，但決定這項決策最後取決於最符合您產品需求的決策。 如需有關 SSL 3.0 弱點的詳細資訊，請參閱[KB 3009008](https://support.microsoft.com/help/3009008)。
+> 建議您不要使用 SSL 2.0 和3.0 通訊協定，也可以使用 **DefaultSecureProtocols** 機碼加以設定。 SSL 2.0 和3.0 被視為已被取代的通訊協定。 最佳作法是使用 SSL 2.0 和 SSL 3.0，但決定這項決策最後取決於最符合您產品需求的決策。 如需有關 SSL 3.0 弱點的詳細資訊，請參閱 [KB 3009008](https://support.microsoft.com/help/3009008)。
 
-您可以使用 [程式師模式] 中的預設 Windows 計算機設定相同的參照登錄機碼值。 如需詳細資訊，請參閱[KB 3140245 更新，以啟用 tls 1.1 和 tls 1.2 做為 Windows WinHTTP 中的預設安全通訊協定](https://support.microsoft.com/help/3140245)。
+您可以使用 [程式師模式] 中的預設 Windows 計算機設定相同的參照登錄機碼值。 如需詳細資訊，請參閱 [KB 3140245 更新，以啟用 tls 1.1 和 tls 1.2 做為 Windows WinHTTP 中的預設安全通訊協定](https://support.microsoft.com/help/3140245)。
 
-不論是否安裝 Windows 7 更新（[KB 3140245](https://support.microsoft.com/help/3140245)），DefaultSecureProtocols 登錄子系統都不存在，必須手動新增或透過群組原則物件（GPO）新增。 也就是說，除非您必須自訂已啟用或限制的安全通訊協定，否則不需要此機碼。 您只需要 Windows 7 SP1 （[KB 3140245](https://support.microsoft.com/help/3140245)）更新。
+不論 Windows 7 更新 ([KB 3140245](https://support.microsoft.com/help/3140245)) 是否已安裝，DefaultSecureProtocols 登錄子機碼都不存在，必須手動新增，或透過群組原則物件 (GPO) 。 也就是說，除非您必須自訂已啟用或限制的安全通訊協定，否則不需要此機碼。 您只需要 Windows 7 SP1 ([KB 3140245](https://support.microsoft.com/help/3140245)) 更新。

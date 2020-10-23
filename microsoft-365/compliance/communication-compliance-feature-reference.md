@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4ede013a1c9a9bd054fc6965cbb12b5bbabb0b5e
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+ms.openlocfilehash: c1ef7a765f61ee2231fd99c47f076855225de3fb
+ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651405"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48740257"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -183,7 +183,7 @@ ms.locfileid: "48651405"
 
 *成人*、 *Racy*及*Gory*影像分類器會掃描中的檔案。Jpeg。Png。GIF 和。BMP 格式。 影像檔案的大小必須小於 4 mb (MB) ，而且影像的尺寸必須大於50x50 圖元，且大於 50 kb (KB) ，以限定評估。 Exchange Online 電子郵件訊息和 Microsoft 小組通道和聊天支援影像識別。
 
-內建的 trainable 和全域分類器不會在這些區域中提供完整的字詞或圖像清單。 此外，語言和文化標準也會不斷變更，但在這些現實中，Microsoft 保留以其判斷來更新分類器的權利。 雖然分類程式可協助您的組織監控這些區域，但分類程式不是要提供您組織的唯一監視或定址這類語言或影像的方式。 您的組織，而非 Microsoft，仍然負責所有與掃描和封鎖語言和圖像在這些區域相關的決策。
+內建的 trainable 和全域分類器不會在這些區域中提供完整的字詞或圖像清單。 此外，語言和文化標準也會不斷變更，但在這些現實中，Microsoft 保留以其判斷來更新分類器的權利。 雖然分類程式可協助您的組織監控這些區域，但分類程式不是要提供您組織的唯一監視或定址這類語言或影像的方式。 您的組織，而不是 Microsoft，仍然負責在這些區域中監控、掃描和封鎖語言和圖像相關的所有決策，包括與當地隱私權及其他適用的法律相容性。 Microsoft 鼓勵法律顧問諮詢，再部署和使用。
 
 如需 Microsoft 365 中 trainable 分類程式的詳細資訊，請參閱 [trainable 分類器快速](classifier-get-started-with.md)入門。
 
