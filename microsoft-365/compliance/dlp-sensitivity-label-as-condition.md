@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解您可以在 DLP 原則中使用敏感度標籤做為條件的服務和項目類型
-ms.openlocfilehash: 561a6cbd7b8aeb9082862319c5cc6419fd79c896
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 2f8eb30e23d722a5e8faf7d0ddaca6b9a94e279b
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321108"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48649632"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>使用敏感度標籤作為 DLP 原則中的條件 (預覽)
 
@@ -38,7 +38,12 @@ ms.locfileid: "48321108"
 
 敏感度標籤會顯示為**內容包含**清單的選項。
 
-![敏感度標籤做為條件](../media/dlp-sensitivity-label-as-a-condition.png)
+> [!div class="mx-imgBorder"]
+> ![敏感度標籤做為條件](../media/dlp-sensitivity-label-as-a-condition.png)
+
+> [!IMPORTANT]
+> 若您選取 **Teams 聊天和頻道訊息** 為套用 DLP 原則的位置，將無法以 **敏感度標籤** 做為條件。
+
 
 ## <a name="supported-items-scenarios-and-policy-tips"></a>支援的項目、案例和原則提示
 
@@ -64,9 +69,13 @@ ms.locfileid: "48321108"
 ### <a name="supported-scenarios"></a>支援的案例
 
 - 選擇要將一或多個敏感度標籤做為條件時，DLP 系統管理員將看到租用戶中所有敏感度標籤的清單。
-- 如上前述的支援矩陣中所指出，所有工作負載均支援使用敏感度標籤做為條件
+
+- 如上前述的支援矩陣中所指出，所有工作負載均支援使用敏感度標籤做為條件。
+
 - 針對包含敏感度標籤做為條件的 DLP 原則，DLP 原則提示將持續針對各工作負載 (Outlook Win32 除外) 顯示。
+
 - 如果比對到使用敏感度標籤做為條件的 DLP 原則，則敏感度標籤也會隨著事件報告電子郵件顯示。
+
 - 也會在包含敏感度標籤做為條件的符合 DLP 原則比對的 DLP 規則稽核記錄中顯示敏感度標籤詳細資料。
 
 

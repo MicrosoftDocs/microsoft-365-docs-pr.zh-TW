@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 6dedb3209d16d5d9f18c1277821270f973cc16a6
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: fe28e51aa7d93872e5683c3682c110275ece3d54
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398980"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651427"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
 
@@ -276,7 +276,7 @@ Office 365 安全性與合規性中心具有來自**資訊控管** > **儀表板
 |根據條件套用保留 <br /> - 敏感資訊類型、KQL 查詢、可訓練分類器| 否 | 是 |
 |手動套用的保留 | 否 | 是 |
 |使用者的 UI 目前狀態 | 否 | 是 |
-|如果內容已移動，則會持續存在 | 否 | 是，在 Microsoft 365 中 |
+|如果內容已移動，則會持續存在 | 否 | 是，在您的 Microsoft 365 租用戶中 |
 |將項目宣告為記錄| 否 | 是 |
 |在加上標籤起或根據事件來開始保留期間 | 否 | 是 |
 |處置檢閱 | 否| 是 |
@@ -353,27 +353,50 @@ Office 365 安全性與合規性中心具有來自**資訊控管** > **儀表板
 
 - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
 
+## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>何時使用保留原則和保留標籤或電子文件探索保留？
+
+雖然您使用保留設定和[電子文件探索案例所建立的保留](create-ediscovery-holds.md)都可以防止資料永久刪除，但它們是為不同情況而設計的。 若要協助您瞭解差異及決定使用哪個，請使用下列指南：
+
+- 您在 [保留原則] 和 [保留標籤] 中指定的保留設定，是專為長期資訊控管而設計，以保留或刪除符合法規需求的資料。 範圍通常很廣，主要重點是位置和內容，而不是個別使用者。 保留期間的開始和結束是可設定的，可選擇自動刪除內容，而不需要其他系統管理員介入。
+
+- 電子文件探索的保留 (核心電子文件探索或進階電子文件探索案例) 是專為保留資料以供法律調查所設計。 該範圍是特定的，且重點是已識別使用者所擁有的內容。 保留期間的開始和結束不會進行設定，但與個別系統管理員的動作相關，沒有選項可在保留解除時自動刪除內容。
+
+比較保留與電子文件探索保留的摘要：
+
+|考量事項|保留 |電子文件探索保留|
+|:-----|:-----|:-----|:-----|
+|商務需求： |合規性 |法律資訊 |
+|時間範圍： |長期 |短期 |
+|焦點： |廣泛的、內容型 |特定的、使用者型 |
+|開始和結束日期可設定： |是 |否 |
+|內容刪除： |是 (選用) |否 |
+|系統管理開銷： |低 |高 |
+
+如果內容同時受制於保留設定和電子文件探索保留，則電子文件探索保留的內容保留永遠優先。 如此一來，[保留的原則](#the-principles-of-retention-or-what-takes-precedence)會擴充至電子文件探索保留，因為系統會在管理員手動解除保留之前，將資料保留。 不過，儘管這個優先順序，請不要將電子文件探索保留用於長期資訊控管。 如果您擔心自動刪除資料，您可以設定保留設定以永遠保留項目，或對保留標籤使用[處置評審](disposition.md#disposition-reviews)。
+
+如果您使用舊版電子文件探索工具來保留資料，請參閱下列資源：
+
+- Exchange： 
+    - [就地保留與訴訟資料暫留](https://go.microsoft.com/fwlink/?linkid=846124)
+    - [如何找出位於 Exchange Online 信箱的保留類型](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox) (英文)
+
+- SharePoint 和 OneDrive： 
+    - [在電子文件探索中心將內容新增至案例及保留來源](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (英文)
+
+- [舊版電子文件探索工具淘汰](legacy-ediscovery-retirement.md)
+
 ## <a name="use-retention-policies-and-retention-labels-instead-of-older-features"></a>請使用保留原則和保留標籤，而非舊版的功能
 
-如果您必要在 Microsoft 365 中預先主動保留或刪除內容，我們建議您使用保留原則和保留標籤，而非以下較舊的功能。 
-  
+如果您必要在 Microsoft 365 中預先主動保留或刪除內容，我們建議您使用保留原則和保留標籤，而非以下較舊的功能。
+
 如果您目前使用這些較舊的功能，這些功能會隨著保留原則和保留標籤繼續運作。 不過，建議您今後改為使用保留原則和保留標籤。 它們提供單一機制來集中管理 Microsoft 365 內容的保留與刪除。
 
 **來自 Exchange Online 的舊版功能：**
 
-- [就地保留與訴訟暫止](https://go.microsoft.com/fwlink/?linkid=846124) (電子文件探索保留) 
-
-- [如何找出位於 Exchange Online 信箱的保留類型](identify-a-hold-on-an-exchange-online-mailbox.md)
-    
 - [保留標記和保留原則](https://go.microsoft.com/fwlink/?linkid=846125)，又稱為[通訊記錄管理 (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (僅刪除)
-    
-另請參閱[舊版電子文件探索工具淘汰](legacy-ediscovery-retirement.md)。
-
 
 **來自 SharePoint 和 OneDrive 的舊版功能：**
 
-- [在電子文件探索中心將內容新增至案例及保留來源](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (電子文件探索保留) 
-    
 - [文件刪除原則](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (僅刪除)
     
 - [設定就地記錄管理](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (僅保留) 
@@ -382,10 +405,6 @@ Office 365 安全性與合規性中心具有來自**資訊控管** > **儀表板
     
 - [資訊管理原則](intro-to-info-mgmt-policies.md) (僅刪除)
      
-如果您之前曾為了資訊控管而使用任何電子文件探索保留，若要獲得主動合規性，請改為使用保留原則。 僅對保留使用電子文件探索。
-  
-### <a name="retention-policies-and-sharepoint-content-type-policies-or-information-management-policies"></a>保留原則和 SharePoint 內容類型原則或資訊管理原則
-
 如果您已設定 SharePoint 網站的內容類型原則或資訊管理原則，以保留清單或文件庫的內容，當保留原則生效時，會忽略這些原則。 
 
 ## <a name="related-information"></a>相關資訊
