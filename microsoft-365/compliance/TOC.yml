@@ -238,6 +238,8 @@
           href: create-test-tune-dlp-policy.md
         - name: 使用 DLP 原則中的通知和原則提示
           href: use-notifications-and-policy-tips.md
+        - name: 設定和檢視 DLP 原則的警示 (預覽)
+          href: dlp-configure-view-alerts-policies.md
         - name: DLP 原則範本包含哪些內容
           href: what-the-dlp-policy-templates-include.md
         - name: 建立 DLP 原則來保護具有 FCI 或其他屬性的文件
