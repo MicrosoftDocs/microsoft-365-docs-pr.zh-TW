@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5207d0e3e7e6272ab4a498d1cd68ad1fe3865c39
-ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+ms.openlocfilehash: 238dc5c0b54d09258f2f679bff5467052d3448f3
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48309205"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754561"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -59,6 +59,7 @@ ms.locfileid: "48309205"
 |[需要調整以變更標籤](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[提供自訂 [説明] 頁面的 [說明] 連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[包含變數的動態標記](#dynamic-markings-with-variables)                                              | 預覽： [Beta 通道和目前的頻道 (預覽) ](https://office.com/insider)           | 16.42 +     | 2.42 + | 16.0.13328 + | 在 [複查] 下 |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [目前通道](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003 +)  | 16.35 +   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
@@ -76,6 +77,7 @@ ms.locfileid: "48309205"
 |[需要調整以變更標籤](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[提供自訂 [説明] 頁面的 [說明] 連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[標記內容](sensitivity-labels.md#what-label-policies-can-do)                                              | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
+|[包含變數的動態標記](#dynamic-markings-with-variables)                                              | 在 [複查] 下                     | 在 [複查] 下                 | 在 [複查] 下         | 在 [複查] 下           | 在 [複查] 下               |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 在 [複查] 下               |
@@ -235,6 +237,27 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 - Microsoft Cloud App Security
 
 針對這些案例，使用內建標籤的使用者可以暫時移除或取代目前的標籤，然後重新應用原始標籤，以套用標籤的內容標記。
+
+### <a name="dynamic-markings-with-variables"></a>包含變數的動態標記
+
+> [!IMPORTANT]
+> 目前，並非所有平臺上的所有應用程式都支援您可以為頁首、頁尾和浮水印指定的動態內容標記。 針對不支援此功能的應用程式，它們會將標記套用為標籤設定中指定的原始文字，而不是解析變數。
+> 
+> Azure 資訊保護統一的標籤用戶端支援動態標記。 若要在 Office 內建標記，請參閱此頁面上 [ [功能](#support-for-sensitivity-label-capabilities-in-apps) ] 區段中的表格。
+
+當您為內容標記設定敏感度標籤時，您可以在您的頁首、頁尾或浮水印的文字字串中使用下列變數：
+
+| 變數 | 描述 | 套用標籤的範例 |
+| -------- | ----------- | ------- |
+| `${Item.Label}` | 目前的標籤顯示名稱 | **一般**|
+| `${Item.Name}` | 目前的檔案名或電子郵件主題 | **Sales.docx** |
+| `${Item.Location}` | 檔的目前路徑和檔案名，或電子郵件的電子郵件主題 | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | 目前的使用者顯示名稱  | **Richard Simone** |
+| `${User.PrincipalName}` | 目前的使用者 Azure AD 使用者主體名稱 (UPN)  | **rsimone \@ contoso.com** |
+| `${Event.DateTime}` | 本機時區的目前日期和時間 | **8/10/2020 1:30 PM** |
+
+> [!NOTE]
+> 這些變數的語法是區分大小寫的。
 
 ## <a name="end-user-documentation"></a>最終使用者檔
 

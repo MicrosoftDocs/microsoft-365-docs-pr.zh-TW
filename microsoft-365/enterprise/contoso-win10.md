@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Windows 10 企業版的就地升級。
-ms.openlocfilehash: a100eb07408053fd270c26f388265696549fff9f
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 0543f24665048d0679bc1b099fdd0a2d431c1e54
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686415"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754242"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Contoso 的 Windows 10 企業版部署
 
@@ -55,15 +54,7 @@ Contoso 已擁有 Configuration Manager (最新分支) 基礎架構。Configurat
 
 ## <a name="planning-process"></a>規劃程序
 
-在部署之前，Contoso 定義了以下週期：
-
-- 三個驗證及部署階段週期 
-  - 一個預覽組建週期 
-  - 一個全新發行週期
-  - 一個先前組建週期 
-- 一個根據驗證週期資料的廣泛部署 Windows 10 企業版週期
-
-Contoso 同時也使用 Windows Analytics 的「升級整備狀況」解決方案，判斷已安裝應用程式與 Windows 10 企業版的相容性。
+Contoso 使用 Windows Analytics 中的升級準備，判斷已安裝應用程式的集合，及其與 Windows 10 企業版的相容性。
 
 ## <a name="deployment-process"></a>部署程序
 
@@ -71,11 +62,11 @@ Contoso 同時也使用 Windows Analytics 的「升級整備狀況」解決方�
 
 1. 為 Configuration Manager 啟用對等快取。
 2. 根據大量授權服務中心建立自訂 Windows 套件。
-3. 使用 Configuration Manager 部署 Windows 套件以在內部網路發佈點，並將組建部署至三個驗證和部署執行週期。
+3. 使用 Configuration Manager 將 Windows 套件部署到跨網路的發佈點，並將其部署至三個驗證和部署過渡群組。
 4. 使用 Windows Analytics 的「裝置健全狀況」和「升級相容性」解決方案，對在三個驗證和部署執行週期中的電腦和裝置執行成功評估。
-5. Contoso 根據 Windows Analytics 資訊，判斷要部署至廣泛部署週期的 Windows 10 企業版版本。
-6. 執行 Configuration Manager 的部署工作順序，將指定的 Windows 套件部署至廣泛部署週期。
-7. 使用「裝置健康情況」和「更新合規性」解決方案，監控在廣泛部署週期中的電腦和裝置，以解決問題。
+5. 根據 Windows Analytics 資訊，Contoso 決定要部署至廣泛部署群組的 Windows 10 企業版版本。
+6. 執行 Configuration Manager 部署工作順序，將選取的 Windows 套件部署到廣泛的部署群組。
+7. 使用裝置健康情況和更新規範解決方案，在廣泛的部署群組中監控電腦和裝置，以解決問題。
 
 這是 Contoso 就地升級和持續更新部署的基礎架構。
 
@@ -87,11 +78,11 @@ Contoso 同時也使用 Windows Analytics 的「升級整備狀況」解決方�
   - 從 Microsoft 網路中的 Microsoft 大量授權取得取得 Windows 10 企業版套件的映像。
   - 部署套件的管理中心點。
 - 通常位於 Contoso 地區中心辦公室的地區發布點。
-- 在不同地點的 Windows 電腦和裝置會根據週期成員資格，收到並安裝就地升級部署或持續更新套件。
+- 在不同位置上的 Windows 電腦和裝置，會根據群組成員資格，針對就地升級或持續更新接收及安裝部署套件。
 
 ## <a name="next-step"></a>下一步
 
-[了解](contoso-o365pp.md) Contoso 如何使用 Configuration Manager 基礎結構，在整個組織部署及保留目前的 Microsoft 365 Apps 企業版。 
+瞭解 Contoso 如何利用其 Configuration Manager 基礎結構，在其整個組織中 [部署及保留目前的 Microsoft 365 應用程式](contoso-o365pp.md) 。 
 
 ## <a name="see-also"></a>請參閱
 

@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何利用身分識別即服務 (IDaaS)，為其員工提供雲端式驗證，為其合作夥伴和客戶提供同盟驗證。
-ms.openlocfilehash: 10db0a35024595c4dba9a33ad83ae75bcad3870c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dea0f53ef1c3fdc2ea32256303c6120c614c904d
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637244"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754633"
 ---
 # <a name="identity-for-the-contoso-corporation"></a>Contoso Corporation 的身分識別
 
@@ -43,7 +42,7 @@ Contoso 允許︰
 - 客戶可以使用其 Microsoft、Facebook 或 Google 郵件帳戶登入公司的公開網站。
 - 廠商和協力廠商使用其 LinkedIn、Salesforce 或 Google 郵件帳戶登入公司的外部網路。
 
-以下是 Contoso DMZ 包含的公用網站、協力廠商外部網路，以及一組 AD FS 伺服器。DMZ 會連線到包含客戶、合作夥伴和網際網路服務的網際網路。
+以下是包含公用網站、第三個外部網路，以及一組 Active Directory Federation Services (AD FS) 伺服器的 Contoso DMZ。DMZ 會連線到包含客戶、合作夥伴和網際網路服務的網際網路。
 
 ![Contoso 支援客戶與合作夥伴的同盟驗證](../media/contoso-identity/contoso-identity-fig2.png)
  
@@ -77,7 +76,7 @@ Contoso 已針對三個保護層級建立一組 Azure AD 和 Intune 的[條件�
  
 ## <a name="next-step"></a>下一步
 
-[瞭解](contoso-win10.md) Contoso 如何使用其 Microsoft 端點 Configuration Manager 基礎結構，在其整個組織中部署及保留目前的 Windows 10 企業版。
+瞭解 Contoso 如何使用其 Microsoft 端點 Configuration Manager 基礎結構，在其整個組織中 [部署及保留目前的 Windows 10 企業版](contoso-win10.md) 。
 
 ## <a name="see-also"></a>另請參閱
 

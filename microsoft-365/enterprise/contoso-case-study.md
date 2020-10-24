@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,14 +14,14 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虛構但具有代表性的全球組織如何採用 Microsoft 365 for enterprise。
-ms.openlocfilehash: 87dd725612ad3dfe422293b28d9643a50f9b1e05
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 980146a2a9c2a909d0b65c20e460841dce9fecee
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637220"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754665"
 ---
-# <a name="microsoft-365-for-enterprise-for-contoso-corporation"></a>適用于 Contoso Corporation 的 Microsoft 365 for enterprise
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>適用于 Contoso Corporation 的 Microsoft 365 for enterprise
 
 適用于企業的 microsoft 365 是 Microsoft premier 雲端服務，可結合使用 Windows 10 企業版和高級安全性功能的本機和雲端式生產力應用程式和服務。 這是一個完整的智慧解決方案，可讓所有人以創造性且安全的方式共同運作。
 
@@ -36,7 +35,9 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
   Contoso 為全球製造、銷售及支援組織，含100000以上的產品。
 
-- [CONTOSO IT 基礎結構和需求](contoso-infra-needs.md) Contoso 正從內部部署的集中式 IT 基礎結構轉換至包含雲端式個人生產力工作負載、應用程式及混合案例的雲端包含安裝程式
+- [Contoso 的 IT 基礎結構與需求](contoso-infra-needs.md)
+
+  Contoso 會從內部部署的集中式 IT 基礎結構轉換至包含雲端式個人生產力工作負載、應用程式和混合式案例的雲端包含安裝。
 
 - [網路功能](contoso-networking.md)
 
@@ -48,11 +49,11 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
 - [Windows 10 企業版](contoso-win10.md)
 
-  Contoso Windows 10 企業版基礎結構會部署並自動安裝執行公司主要電腦和裝置作業系統之裝置的更新。
+  Contoso 基礎結構 for Windows 10 Enterprise 部署並自動安裝執行公司主要電腦和裝置作業系統之裝置的更新。
 
 - [Microsoft 365 Apps 企業版](contoso-o365pp.md)
 
-  Contoso Microsoft 365 應用程式的企業版部署基礎結構，並自動安裝 Microsoft Office 套件之生產力軟體的更新。
+  Contoso 基礎結構，適用于企業的 Microsoft 365 應用程式進行部署，並自動安裝 Microsoft Office 套件之生產力軟體的更新。
 
 - [行動裝置管理](contoso-mdm.md)
 
@@ -74,12 +75,12 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
   瞭解 Contoso 如何將其內部部署使用者遷移至 Microsoft 小組，以進行統一通訊、共同作業和語音。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
-[深入瞭解](contoso-overview.md) Contoso 公司，以及在部署 Microsoft 365 for enterprise 時所解決的設計考慮。
+深入瞭解 [Contoso 公司](contoso-overview.md) ，以及在部署 Microsoft 365 for enterprise 時所解決的設計考慮。
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 

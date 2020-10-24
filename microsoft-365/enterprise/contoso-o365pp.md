@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 如何使用 Microsoft Endpoint Configuration Manager 來部署 Microsoft 365 Apps 企業版。
-ms.openlocfilehash: 63993a27f23843fd2d75ef9bf08ae064ec46dc77
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2c02c28ddba7c24592ce09d87bf6f5c9df700a2a
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637160"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754339"
 ---
 # <a name="microsoft-365-apps-for-enterprise-deployment-for-contoso"></a>適用於 Contoso 的 Microsoft 365 Apps 企業版部署
 
@@ -40,7 +39,7 @@ Contoso 將其電腦升級至 Windows 10 企業版和 Microsoft 365 應用程式
 - 智慧語言套件部署，包括自動部署與作業系統相同的語言。
 - 在部署期間，從用戶端移除 Office 的現有版本的完全支援和便於使用的方法。
 
-除了 Configuration Manager 之外，Contoso 使用 [office 增益集的準備](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)人工具組和 VBA，也就是 Microsoft 的免費工具，以評估其 Office 宏及增益集的相容性問題。
+除了 Configuration Manager 之外，Contoso 使用 [office 增益集和 VBA 的準備工作](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps)工具，可以從 Microsoft 取得免費工具，以評估其 Office 宏及增益集的相容性問題。
 
 ## <a name="managing-deployment-and-updates"></a>管理部署和更新
 
@@ -77,11 +76,11 @@ Contoso 已遵循用於部署 Office 的功能更新的兩階段方式：在試�
 
 ![適用于企業的 Microsoft 365 應用程式的 Contoso 部署基礎結構](../media/contoso-o365pp/contoso-o365pp-fig1.png)
  
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
-[深入瞭解](contoso-mdm.md) Contoso 如何在 microsoft 365 for enterprise 中使用 microsoft Intune 來管理其裝置，以及他們在整個組織中執行的應用程式。
+深入瞭解 Contoso 如何在 Microsoft 365 for enterprise 中 [使用 Microsoft Intune](contoso-mdm.md) 來管理其裝置，以及他們在整個組織中執行的應用程式。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 Apps 企業版](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 

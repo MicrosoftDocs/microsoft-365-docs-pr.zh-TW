@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用 Microsoft 365 for enterprise 的安全性功能。
-ms.openlocfilehash: 635336b70318acdd4ed013a2705691d160926e84
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649698"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754229"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 之 Microsoft 365 for enterprise security 的摘要
 
@@ -40,7 +40,7 @@ Contoso 遵循這些步驟來準備其安全性，以供部署 Microsoft 365 for
 
 1. 限制雲端的系統管理員帳戶
 
-   Contoso 已大量複查其現有的 Active Directory 網域服務 (AD DS) 系統管理員帳戶，並設定專用的雲端系統管理員帳戶和群組的系列。
+   Contoso 已大量複查其現有的 Active Directory 網域服務 (AD DS) 系統管理員帳戶，並設定專門的雲端系統管理員帳戶和群組的系列。
 
 2. 將資料分類至三個安全性層級
 

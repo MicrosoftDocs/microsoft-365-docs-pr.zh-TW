@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: e518f91b264680e3d356b1e6158f4b9740ed52a2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d2973bd3cc2da909d7129192f2b9f9a29226de34
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196092"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754489"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行業測試的最大得分
 
@@ -50,13 +50,15 @@ Microsoft Defender 防病毒是[Microsoft DEFENDER ATP Windows 10 安全性堆�
 
 ### <a name="av-test-protection-score-of-6060-in-the-latest-test"></a>AV-測試：最近測試的 6.0/6.0 Protection 得分
 
-AV 測試產品檢查和認證報告測試三個類別：保護、效能及可用性。 下列分數是針對有兩個分數的保護類別：實際測試和 AV 測試參考設定 (稱為「流行惡意程式碼」 ) 。
+AV 測試產品檢查和認證報告測試三個類別：保護、效能及可用性。 下列分數是針對有兩個分數的保護類別： Real-World 測試和 AV 測試參考設定 (稱為「流行惡意程式碼」 ) 。
 
-**下載最新的透明性報告： [檢查 AV-測試結果，2020年2月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
+**下載最新的透明性報告： [檢查 AV-測試結果，January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
 
-- 可能-6 月 2020 AV-TEST Business User test： [Protection 評分 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/) <sup>**最近**</sup>
+- 7月-2020--TEST-TEST Business User test： [Protection 總分 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/) <sup>**最近**</sup>
 
-    Microsoft Defender 防病毒已達到 6.0/6.0 的完美保護分數，在5月和6月內有100%。 22190惡意程式碼範例已使用。
+    Microsoft Defender 防病毒已達到 6.0/6.0 的完美保護分數，含100% 于7月和8月。 13941惡意程式碼範例已使用。
+
+- 可能-6 月 2020 AV-TEST Business User test： [Protection 得分 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
 
 - 三月份-2020 年4月的 AV-測試商務使用者測試： [保護分數 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
 
@@ -68,19 +70,15 @@ AV 測試產品檢查和認證報告測試三個類別：保護、效能及可�
 
 - 7月-2019 的 AV-測試商務使用者測試：[保護分數 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2019/microsoft-windows-defender-antivirus-4.18-193215/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
-- 可能-6 月 2019 AV-TEST Business User test： [Protection 評分 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2019/microsoft-windows-defender-antivirus-4.18-192415/)  |  [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
-
 ### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-比較級：在最新的測試中，99.7% 的保護評級
 
-Business Security Test 包含三個主要部分：模仿線上惡意程式碼攻擊的實際保護測試，惡意程式碼防護測試會從網際網路外進入系統 (例如，USB) ，以及會檢查系統效能影響的效能測試。
+Business Security Test 包含三個主要部分：模仿線上惡意程式碼攻擊的 Real-World 保護測試、惡意程式碼從網際網路外進入系統的惡意程式碼防護測試 (例如 USB) ，以及查看系統效能影響的效能測試。
 
 - Business Security Test 2020 (三月份) ：實際執行[防護率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) （<sup>**最新**</sup>）
 
-    在過去一年中，Microsoft Defender 防毒軟體的實際保護率已連續升高，在最新的測試中有99.7%。
+    在過去一年中，Microsoft Defender 防病毒已以不斷提高的 Real-World 保護速率，在最新的測試中有99.7% 的分數。
 
 - Business Security Test 2019 (月) 年11月： [實際保護率 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
-
-- Business Security Test 2019 Factsheet (年9月) ：[實際的保護率 99.9%](https://www.av-comparatives.org/tests/business-security-test-august-september-2019-factsheet/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
 - Business Security Test 2019 (三月份) ：[現實世界防護率 99.9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
@@ -88,11 +86,13 @@ Business Security Test 包含三個主要部分：模仿線上惡意程式碼攻
 
 SE 實驗會測試產品和服務所使用的解決方案範圍，以偵測和/或防範攻擊。 包含端點軟體、網路裝置和雲端服務。
 
-**下載最新的透明性報告： [檢查 SE 實驗測試結果，2020年3月](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
+**下載最新的透明性報告： [檢查 SE 實驗測試結果，January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
+
+- Enterprise Endpoint Protection （2020年9月）：<sup>**最新**</sup> [AAA 獎](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
+
+    Microsoft 的下一代保護產品已停止所有目標攻擊，但遺漏了少數公開威脅。
 
 - Enterprise Endpoint Protection-2020 年6月： [AAA 獎](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
-
-    Microsoft 的下一代保護是一種主流產品，其防禦所有的公開和目標攻擊。 Microsoft Defender 防病毒已取得這類良好結果，使其能夠封鎖惡意的 URLs、處理利用方式，以及正確地分類合法的應用程式和網站。
 
 - Enterprise Endpoint Protection 一月（2020年3月）： [AAA 獎](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
@@ -100,9 +100,6 @@ SE 實驗會測試產品和服務所使用的解決方案範圍，以偵測和/�
 
 - Enterprise Endpoint Protection （2019年9月）： [AAA 獎](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
-- Enterprise Endpoint Protection （2019年6月）： [AAA 獎](https://selabs.uk/download/enterprise/epp/2019/apr-jun-2019-enterprise.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
-
-- Enterprise Endpoint Protection 一月（2019年3月）： [AAA 獎](https://selabs.uk/download/enterprise/epp/2019/jan-mar-2019-enterprise.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
 ## <a name="endpoint-detection--response"></a>& 回應的端點偵測
 

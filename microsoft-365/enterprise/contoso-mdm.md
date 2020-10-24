@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 瞭解 Contoso 如何在 Microsoft 365 for enterprise 中使用 Microsoft Intune 來管理其裝置和在其上執行的應用程式。
-ms.openlocfilehash: d3f973827a9b05a415efe9225a2bdb3d83ccaf38
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6d7783e8c2d9b78b63bf9eefe761fbc52d0b280f
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649642"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753988"
 ---
 # <a name="mobile-device-management-for-contoso"></a>Contoso 的行動裝置管理
 
@@ -28,7 +27,7 @@ ms.locfileid: "48649642"
 
 Contoso 有許多啟用行動的員工。有些地方的辦事處位於 Contoso 位置，有些則沒有辦事處。Contoso 需要一種方式來啟用員工生產力，但保留裝置、儲存在這些裝置上的 Contoso 資料，以及應用程式行為的安全性。
 
-## <a name="plan"></a>計劃
+## <a name="plan"></a>方案
 
 Contoso 已針對企業版的行動裝置365管理，識別以下 Intune 使用案例：
 
@@ -69,11 +68,11 @@ Contoso 註冊的電腦及公司所擁有的 smartphone 和平板電腦，方法
 
 ![Contoso 行動裝置管理部署基礎結構](../media/contoso-mdm/contoso-mdm-fig1.png)
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
-[瞭解](contoso-info-protect.md) Contoso 如何使用 Microsoft 365 for enterprise 的資訊保護功能，在其整個組織中分類、識別及保護重要的數位資產。
+瞭解 Contoso 如何使用 Microsoft 365 for enterprise 的 [資訊保護功能](contoso-info-protect.md) ，在其整個組織中分類、識別及保護重要的數位資產。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 裝置管理](device-management-roadmap-microsoft-365.md)
 

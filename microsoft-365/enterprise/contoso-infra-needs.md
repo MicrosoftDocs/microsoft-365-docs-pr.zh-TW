@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 瞭解 Contoso 內部部署 IT 基礎結構的基本結構，以及 Microsoft 365 for enterprise 如何滿足公司的業務需求。
-ms.openlocfilehash: bc2b34254da01a3d49085082ab8ee8632df2d434
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637172"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754583"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT 基礎結構和業務需求
 
@@ -30,12 +29,10 @@ Contoso 會從內部部署的集中式 IT 基礎結構轉換至包含雲端式�
 
 Contoso 使用絕大部分屬於集中式的內部部署 IT 基礎結構，配合位於巴黎總部的應用程式資料中心。
 
-圖1顯示含應用程式資料中心、DMZ 和網際網路的總部辦公室。
+以下是具有應用程式資料中心、DMZ 和網際網路的總部辦公室。
 
 ![現有 Contoso IT 基礎結構](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
-**圖1： Contoso IT 的現有基礎結構**
- 
 內部部署應用程式資料中心裝載： 
 
 - 使用 SQL Server 及其他 Linux 資料庫的自訂企業營運應用程式。
@@ -135,12 +132,12 @@ Contoso IT 部門決定在部署之前，下列業務需求對應至 Microsoft 3
 | 合規性 |  |  |
 |  | 遵循地區性法規的需求 | Microsoft 365 中的 GDPR 功能 |
 | 管理 |  |  |
-|  | 降低安裝用戶端更新的 IT 負荷 | 部署通道 <BR> Windows 10 企業版更新 <BR> Microsoft 365 Apps 企業版更新 |
+|  | 降低安裝用戶端更新的 IT 負荷 | Windows 10 企業版更新 <BR> Microsoft 365 Apps 企業版更新 |
 ||||
 
 ## <a name="next-step"></a>下一步
 
-[深入瞭解](contoso-networking.md) Contoso Corporation 內部部署網路，以及其如何針對 Microsoft 365 雲端架構資源進行存取和延遲優化。
+深入瞭解 Contoso Corporation [內部部署網路](contoso-networking.md) ，以及其如何針對 Microsoft 365 雲端架構資源進行存取和延遲優化。
 
 ## <a name="see-also"></a>請參閱
 

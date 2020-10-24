@@ -1,5 +1,5 @@
 ---
-title: 郵件加密（OME）版本比較
+title: OME) 版本比較的郵件加密 (
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -17,20 +17,20 @@ search.appverid:
 - MET150
 description: 本文可協助說明不同版本的 Office 365 郵件加密之間的差異。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32895f8aae8c6c23ab7f0e3d70d4caa73285fa9e
-ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
+ms.openlocfilehash: a52d0c0164dfddb9f678bffa088760a271bc28e3
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44034873"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754127"
 ---
 # <a name="compare-versions-of-ome"></a>比較 OME 版本
 
-本文將舊版 Office 365 郵件加密（OME）與新的 OME 功能和 Office 365 的高級訊息加密進行比較。 新功能是 OME 和資訊版權管理（IRM）的合併和更新版本。 此外，還會概括說明部署為 GCC 高的獨特特性。 這兩個可以在您的組織中共存。 如需新功能運作方式的詳細資訊，請參閱[Office 365 Message Encryption （OME）](ome.md)。
+本文比較舊版 Office 365 郵件加密 (OME) 到新的 OME 功能和 Office 365 的高級郵件加密。 新功能是 OME 和 Information Rights Management (IRM) 的合併和更新版本。 此外，還會概括說明部署為 GCC 高的獨特特性。 這兩個可以在您的組織中共存。 如需新功能運作方式的詳細資訊，請參閱 [Office 365 Message Encryption (OME) ](ome.md)。
 
 ||
 |:-----|
-|本文是有關 Office 365 郵件加密的更多系列文章的一部分。 本文適用于系統管理員和 ITPros。 如果您只是尋找傳送或接收加密郵件的相關資訊，請參閱[Office 365 郵件加密（OME）](ome.md)中的文章清單，並找出最符合您需求的文章。 |
+|本文是有關 Office 365 郵件加密的更多系列文章的一部分。 本文適用于系統管理員和 ITPros。 如果您只是尋找傳送或接收加密郵件的相關資訊，請參閱 [Office 365 郵件加密 (OME ](ome.md) 中的文章清單) 並找出最符合您需求的文章。 |
 ||
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>功能和功能的並列比較
@@ -38,26 +38,26 @@ ms.locfileid: "44034873"
 |                                   |舊功能       |                   |新功能              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**功能**                     | **舊版 OME**    | **IRM**           | **新的 OME 功能** |
-|*傳送加密郵件*        |透過 Exchange 郵件流程規則|使用者從 Outlook desktop 或網頁型 Outlook 啟動;或透過 Exchange 郵件流程規則|使用者從 Outlook desktop、Mac 版 Outlook 或網頁型 Outlook 啟動;透過 Exchange 郵件流程規則（也稱為傳輸規則）和資料遺失防護（DLP）|
-|*Rights management 範本*       |   不適用      |[不要轉寄] 選項及自訂範本|[不要轉寄] 選項、[只供加密] 選項及自訂範本|
+|*傳送加密郵件*        |透過 Exchange 郵件流程規則|使用者從 Outlook desktop 或網頁型 Outlook 啟動;或透過 Exchange 郵件流程規則|使用者從 Outlook desktop、Mac 版 Outlook 或網頁型 Outlook 啟動;透過 Exchange 郵件流程規則 (也稱為傳輸規則) 和資料遺失防護 (DLP) |
+|*Rights management 範本*       |   不適用      |[不要轉寄] 選項及自訂範本|[不要轉寄] 選項、Encrypt-Only 選項及自訂範本|
 |*收件者類型*                   |內部和外部收件者|僅限內部收件者         |內部和外部收件者|
-|*內部收件者的經驗*|收件者會收到 HTML 郵件，其可在網頁瀏覽器或行動裝置應用程式中下載及開啟|Outlook 用戶端中的原生內嵌體驗|使用 Outlook 用戶端的相同組織中收件者的原生內嵌經驗。  收件者可以使用 Outlook 以外的用戶端（不需要下載或應用程式）讀取來自 OME 入口網站的郵件。|
-|*外部收件者的經驗*|收件者會收到 HTML 郵件，其可在網頁瀏覽器或行動裝置應用程式中下載及開啟|不適用|Microsoft 365 收件者的原生內聯體驗。 所有其他收件者都可以從 OME 入口網站讀取訊息（不需要下載或應用程式）。|
-|*附件許可權*           |不限制附件|附件受到保護|[不要轉寄] 選項及自訂範本會保護附件。 系統管理員可以選擇是否要保護只供加密之選項的附件。|
-|*帶您自己的金鑰（BYOK）支援*|無                |無               |支援 BYOK          |
+|*內部收件者的經驗*|收件者會收到 HTML 郵件，其可在網頁瀏覽器或行動裝置應用程式中下載及開啟|Outlook 用戶端中的原生內嵌體驗|使用 Outlook 用戶端的相同組織中收件者的原生內嵌經驗。  收件者可以使用 Outlook 以外的用戶端，從 OME 入口網站讀取郵件 () 不需要下載或應用程式。|
+|*外部收件者的經驗*|收件者會收到 HTML 郵件，其可在網頁瀏覽器或行動裝置應用程式中下載及開啟|不適用|Microsoft 365 收件者的原生內聯體驗。 所有其他收件者都可以從 OME 入口網站讀取訊息 (不需要下載或應用程式) 。|
+|*附件許可權*           |不限制附件|附件受到保護|[不要轉寄] 選項及自訂範本會保護附件。 系統管理員可以選擇是否要保護 Encrypt-Only 選項的附件。|
+|*在 BYOK) 支援中引入您自己的金鑰 (*|無                |無               |支援 BYOK          |
 ||
 
 ## <a name="advantages-of-the-new-ome-capabilities-over-legacy-ome"></a>透過舊版 OME 的新 OME 功能的優點
 
 新功能具有下列優點：
 
-- 可以使用僅限加密（啟用安全共同作業）、不轉寄及自訂限制。
+- 可以使用 Encrypt-Only (來啟用安全共同作業) 、不要轉寄及自訂限制。
 - 寄件者可以從 Outlook Desktop、Mac 版 Outlook 和 Outlook 網頁版用戶端上的新功能，以手動方式傳送郵件。
 - Microsoft 365 收件者可在支援的 Outlook 用戶端中使用內嵌經驗。 或者，系統管理員可以選擇顯示 Microsoft 365 收件者的署名體驗。
 - Microsoft 365 以外的帳戶（例如 Gmail、Yahoo 和 Microsoft 帳戶）與 OME 入口網站同盟，可提供更佳的使用者經驗給這些收件者。 所有其他身分識別使用一次性程式碼來存取加密的郵件。
 - 系統管理員可以自訂署名，以及建立多個品牌範本。
 - 系統管理員可以使用新功能撤銷加密的電子郵件。
-- 新功能透過安全性&amp;與合規性中心提供詳細的使用方式報告。
+- 新功能透過安全性與合規性中心提供詳細的使用方式報告 &amp; 。
 
 ## <a name="office-365-advanced-message-encryption-capabilities"></a>Office 365 Advanced Message Encryption 功能
 
@@ -71,44 +71,42 @@ Office 365 Advanced Message Encryption 在新的 OME 功能上提供其他功能
 
 在 GCC High 中不支援 Office 365 高級郵件加密。
 
-如需使用高級郵件加密的詳細資訊，請參閱[Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md)。
+如需使用高級郵件加密的詳細資訊，請參閱 [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md)。
 
 ## <a name="unique-characteristics-of-office-365-message-encryption-in-a-gcc-high-deployment"></a>在 GCC 高部署中，Office 365 郵件加密的獨特特性
 
-在 GCC 高環境中，Office 365 Advanced Message Encryption 無法使用。 您也可以在 GCC 高環境中使用和自訂單一品牌範本。
+如果您打算在 GCC 高環境中使用 Office 365 郵件加密，有一些有關收件者經驗的獨特特性。
 
-此外，如果您計畫在 GCC 高環境中使用 Office 365 郵件加密，有一些有關收件者經驗的獨特特性。
-
-### <a name="encrypted-email-from-gcc-high-to-gcc-high-recipients"></a>來自 GCC 高達 GCC 高收件者的加密電子郵件
+### <a name="encrypted-email-between-gcc-high-and-gcc-high-recipients"></a>在 GCC 高層和 GCC 高收件者之間加密的電子郵件
 
 寄件者可以手動加密 Outlook 中的電子郵件和 outlook 的 outlook 和 Mac 和 Outlook 網頁版，或組織可以設定使用 Exchange 郵件流程規則來加密電子郵件的原則。
 
 在相同的 Outlook 中，在 Outlook 中的收件者會收到與其他所有使用者相同的內嵌讀取體驗。電腦和 Mac 和 Outlook 網頁版。
 
-### <a name="encrypted-email-from-gcc-high-to-non-gcc-high-recipients"></a>來自 GCC 高達非 GCC 高收件者的加密電子郵件
+### <a name="encrypted-email-between-gcc-high-and-non-gcc-high-recipients"></a>在 GCC 高層和非 GCC 高收件者之間加密的電子郵件
 
-在 GCC 高界限內的寄件者可以傳送加密的電子郵件。
+在 GCC 高界限內的寄件者可以傳送加密的電子郵件，反之亦然。
 
-所有在 GCC （包括365商業性或 Yahoo 等電子郵件提供者的使用者）之外的收件者，都能接收包裝郵件。 此包裝郵件會將收件者重新導向至 OME 入口網站，以便收件者可以閱讀和回復郵件。
+所有在 GCC （包括365商業性或 Yahoo 等電子郵件提供者的使用者）之外的收件者，都能接收包裝郵件。 此包裝郵件會將收件者重新導向至 OME 入口網站，以便收件者可以讀取和回復郵件。 這種情況也適用于擁有 GCC 高 OME 加密郵件的寄件者高。
 
 ## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>舊版 OME 與相同承租人中的新功能的共存
 
 您可以在同一個承租人中使用這兩種舊版 OME 和新功能。 身為系統管理員，您可以在建立郵件流程規則時，選擇您要使用的 OME 版本來執行此動作。
 
-- 若要指定舊版的 OME，請使用 Exchange 郵件流程規則動作**Apply 舊版的 OME**。
+- 若要指定舊版的 OME，請使用 Exchange 郵件流程規則動作 **Apply 舊版的 OME**。
 
-- 若要指定新功能，請使用 Exchange 郵件流程規則動作**Apply Office 365 郵件加密和許可權保護**。
+- 若要指定新功能，請使用 Exchange 郵件流程規則動作 **Apply Office 365 郵件加密和許可權保護**。
 
 使用者可以使用 Outlook Desktop 中的新功能、Mac 版 Outlook 和網頁版的 Outlook，手動傳送已加密的郵件。
 
 ## <a name="migrate-from-legacy-ome-to-the-new-capabilities"></a>從舊版 OME 遷移至新功能
 
-雖然這兩個版本的 OME 可以共存，我們強烈建議您編輯舊的郵件流程規則，使用規則動作套用**舊版的 OME** ，以使用新功能。 更新這些規則若要使用郵件流程規則動作 **，請套用 Office 365 郵件加密和許可權保護**。 如需相關指示，請參閱[定義郵件流程規則，以加密 Office 365 中的電子郵件訊息](define-mail-flow-rules-to-encrypt-email.md)。
+雖然這兩個版本的 OME 可以共存，我們強烈建議您編輯舊的郵件流程規則，使用規則動作套用 **舊版的 OME** ，以使用新功能。 更新這些規則若要使用郵件流程規則動作 **，請套用 Office 365 郵件加密和許可權保護**。 如需相關指示，請參閱 [定義郵件流程規則，以加密 Office 365 中的電子郵件訊息](define-mail-flow-rules-to-encrypt-email.md)。
 
 ## <a name="get-started-with-ome"></a>開始使用 OME
 
-一般來說，您的組織會自動啟用新的 OME 功能。 如需組織內新 OME 功能的詳細資訊，請參閱[設定新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)。
+一般來說，您的組織會自動啟用新的 OME 功能。 如需組織內新 OME 功能的詳細資訊，請參閱 [設定新的 Office 365 郵件加密功能](set-up-new-message-encryption-capabilities.md)。
 
 如果您已啟用 Azure 資訊保護，系統就會自動為您的組織啟用舊版的 OME。 過去，即使未啟用 Azure 資訊保護，舊版 OME 也會正常運作。 這已不再是案例。
 
-若要開始使用舊版 OME，若您已啟用 Azure 資訊保護，請設定使用規則動作的郵件流程規則：套用**舊版的 OME**。 如需相關指示，請參閱[定義郵件流程規則以加密電子郵件訊息](define-mail-flow-rules-to-encrypt-email.md)。
+若要開始使用舊版 OME，若您已啟用 Azure 資訊保護，請設定使用規則動作的郵件流程規則：套用 **舊版的 OME**。 如需相關指示，請參閱 [定義郵件流程規則以加密電子郵件訊息](define-mail-flow-rules-to-encrypt-email.md)。

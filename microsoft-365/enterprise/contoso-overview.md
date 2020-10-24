@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,18 +14,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 深入了解 Contoso 公司的業務及其全球辦公室的分層架構。
-ms.openlocfilehash: 402c8c1cbb1484d8a0ad2ce4159b90107856167d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b0c00ed5657d914851f28278a2f4cf80660b53b0
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637076"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754265"
 ---
 # <a name="overview-of-contoso-corporation"></a>Contoso Corporation 的概覽
 
-![Contoso 公司](../media/contoso-overview/contoso-icon.png)
-
-Contoso Corporation 是其總部在巴黎的跨國企業。公司是含100000以上產品的製造業、sales 和 support 組織。
+Contoso Corporation 是其總部在巴黎的跨國企業。 公司是含100000以上產品的製造業、sales 和 support 組織。
 
 ## <a name="contoso-around-the-world"></a>世界各地的 Contoso
 
@@ -38,21 +35,21 @@ Contoso Corporation 是其總部在巴黎的跨國企業。公司是含100000以
  
 Contoso 有三個層級：
 
-- 總部
+- Headquarters
 
-  Contoso 總部是巴黎 outskirts 的公司校園，具有數十個大樓，以供管理、工程及製造設施使用。所有 Contoso 資料中心及其網際網路目前狀態皆位於巴黎總部。
+  Contoso 總部是巴黎 outskirts 的公司校園，具有數十個大樓，以供管理、工程及製造設施使用。 所有 Contoso 資料中心及其網際網路目前狀態皆位於巴黎總部。
 
   總部共有 25,000 名員工。
 
 - 地區中心
 
-  Hub 分公司使用60的銷售及支援人員，為全球的特定地區提供服務。每個區域中樞都透過高頻寬 WAN 連結連線至巴黎總部。
+  Hub 分公司使用60的銷售及支援人員，為全球的特定地區提供服務。 每個區域中樞都透過高頻寬 WAN 連結連線至巴黎總部。
 
   地區中心的平均人數為2000工作者。
 
 - 衛星辦公室
 
-  衛星辦公室包含80% 的銷售和支援人員。它們為 Contoso 客戶在重要城市或 subregions 中提供現場顯示狀態。每個衛星辦公室都透過高頻寬的 WAN 連結連線至區域中樞。
+  衛星辦公室包含80% 的銷售和支援人員。 它們為 Contoso 客戶在重要城市或 subregions 中提供現場顯示狀態。 每個衛星辦公室都透過高頻寬的 WAN 連結連線至區域中樞。
 
   衛星辦公室的平均為250工作者。
 
@@ -74,9 +71,9 @@ Contoso IT 架構師發現下列為企業版部署 Microsoft 365 的設計需求
 
 ## <a name="next-step"></a>下一步
 
-[深入瞭解](contoso-infra-needs.md) Contoso Corporation 的內部部署 IT 基礎結構，以及如何使用 Microsoft 365 for enterprise 來解決公司的業務需求。
+深入瞭解 Contoso Corporation 的 [內部部署 IT 基礎結構](contoso-infra-needs.md) ，以及如何使用 Microsoft 365 for enterprise 來解決公司的業務需求。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 

@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
 description: 本文提供群組資源，以連線至您的對等機，並取得 Microsoft 365 PowerShell 的說明。
-ms.openlocfilehash: 71900628a3870dc5d384fb5caa374b11d1e724d7
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 36130d3e0f32f73836698cfb276e2aca5d20de83
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46694963"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754689"
 ---
 # <a name="microsoft-365-community-resources-for-powershell"></a>適用於 PowerShell 的 Microsoft 365 社群資源
 
-使用這些社區可讓您連線至對等網路，以及快速且正確地取得 Microsoft 365 問題的 PowerShell。 
+連線至這些社區以取得對等專案的連線，並取得您 PowerShell Microsoft 365 問題的答案。 
   
 - [Microsoft 365 Microsoft 技術社區](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
@@ -36,4 +36,3 @@ ms.locfileid: "46694963"
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
   
 [開始使用適用於 Microsoft 365 的 PowerShell](getting-started-with-microsoft-365-powershell.md)
-

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 瞭解 Contoso 如何使用 Microsoft 365 for enterprise 中的資訊保護功能，在雲端中保護其數位資產。
-ms.openlocfilehash: 51740db9a0bb2e770e959fe8d9dcde15c042f5b8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a1aa08a20d284d3a003f4a406c37f2107ce19bd1
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637232"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754596"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Contoso Corporation 的資訊保護
 
@@ -54,7 +54,7 @@ Contoso 遵循這些步驟，針對其資訊保護需求準備 Microsoft 365 for
 
 1. 識別要保護的資訊
 
-   Contoso 對內部部署 SharePoint 網站和檔案共用上的現有數位資產進行全面的審查，並對每個資產進行分類。
+   Contoso 對內部部署 SharePoint 網站和檔案共用上的現有數位資產進行大量的複查，並分類每個資產。
 
 2. 決定資料層級的存取、保留和資訊保護原則
 
@@ -113,9 +113,9 @@ Contoso 遵循這些步驟，針對其資訊保護需求準備 Microsoft 365 for
 
 ## <a name="next-step"></a>下一步
 
-[請參閱](contoso-security-summary.md) Contoso 如何針對身分識別與存取管理、威脅防護、資訊保護和安全性管理，使用跨 Microsoft 365 的安全性功能。
+瞭解 Contoso 如何針對身分識別與存取管理、威脅防護、資訊保護和安全性管理，使用 [跨 Microsoft 365 的安全性功能](contoso-security-summary.md) 。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [安全性藍圖](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 

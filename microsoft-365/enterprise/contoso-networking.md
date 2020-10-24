@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 瞭解 Contoso 網路基礎結構，以及公司如何使用其 SD-WAN 技術，以取得適用于企業雲端服務之 Microsoft 365 的最佳網路效能。
-ms.openlocfilehash: ca673e6dcbf0f3db4bde33d388598e5f4ffac914
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d5f3581b81d33bdc200321692b82d57a96d09298
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637184"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754011"
 ---
 # <a name="networking-for-the-contoso-corporation"></a>Contoso Corporation 的網路
 
@@ -117,7 +116,7 @@ Contoso 使用者成功採用 Microsoft 365 的企業服務，取決於對網際
 
 ## <a name="next-step"></a>下一步
 
-[了解](contoso-identity.md) Contoso 如何針對員工在雲端中利用其內部部署 Active Directory Domain Services (AD DS)，以及如何針對客戶和商務合作夥伴利用同盟驗證。
+深入瞭解 Contoso 如何 [利用雲端的內部部署 Active Directory 網域服務](contoso-identity.md) ，針對員工和客戶及業務合作夥伴的同盟驗證。
 
 ## <a name="see-also"></a>請參閱
 
