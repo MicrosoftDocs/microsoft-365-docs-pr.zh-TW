@@ -5,7 +5,6 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -18,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 訓練您的使用者，並確保問題獲得快速處理。
-ms.openlocfilehash: b1dd55febcd23f6bb8413b0aa5c625f4b785babb
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a987a08b2ebd27f7a9cc299e5c8fbae0376437a3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377066"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681381"
 ---
 # <a name="step-6-train-remote-workers-and-address-usage-feedback"></a>步驟6：訓練遠端工作者和處理使用上的意見反應
 
 訓練您的遠端工作者：
 
 - 了解如何使用 MFA 進行正確的登入程序，包括註冊其他驗證方法。
-- 使用裝置，以及如何使用端點管理原則封鎖不合規裝置的存取。
-- 使用允許的應用程式，以及如何使用端點管理應用程式原則來封鎖應用程式的使用。
+- 使用裝置，以及如何使用端點管理原則來封鎖不合規或未受管理裝置的存取。
+- 使用允許的應用程式，以及如何使用端點管理應用程式原則來封鎖使用部分應用程式。
 - Windows 10 企業版安全性功能。
 - 如何使用 [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) 來聊天、視訊會議、共用文件和往來交談。
 - 如何使用 [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) 來傳送電子郵件和排程。
@@ -39,14 +38,16 @@ ms.locfileid: "48377066"
 
 此訓練應該包含實際操作練習，讓工作者可以體驗這些功能及其結果。
 
+為您的遠端工作者建立論壇，用來提出問題或解決問題，例如小組或 Yammer 群組。
+
 在訓練後的幾週內：
 
-- 快速處理遠端工作者的意見反應，並微調原則和設定。
-- 分析小組、電子郵件、SharePoint 網站和 OneDrive 資料夾的使用狀況，並比較其使用預期。
+- 在論壇中快速處理遠端工作者的意見反應，並視需要調整您的遠端工作者原則和設定。
+- 分析小組、電子郵件、SharePoint 網站和 OneDrive 資料夾的使用狀況，並將其與您對於使用者採用的預期比較。
 
 然後視需要重新訓練您的使用者。
 
 ## <a name="results-of-step-6"></a>步驟 6 的結果
 
-您的遠端工作者已受過訓練，其可以在會有人回應且公開的論壇中提供意見反應，並發表與遠端存取和生產力應用程式與服務有關的問題。
+您的遠端工作者已受過訓練，其可以在會有人回應且公開的論壇中提供意見反應，並發表與遠端存取和生產力應用程式有關的問題。
 

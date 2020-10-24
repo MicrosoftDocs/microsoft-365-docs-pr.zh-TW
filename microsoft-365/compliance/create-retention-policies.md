@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以非常有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 40e405a8ab3ac2159b9a3c5ab8f633bb690d5c24
-ms.sourcegitcommit: 11d1044c6600b1f568b6dc8a53db9b07f2f0ad1c
+ms.openlocfilehash: 848ed959b1ed728a5a193641d7df42a477604d30
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "48384558"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681781"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -181,9 +181,10 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 雖然保留原則可套用到網站層級，但只有文件會套用保留設定。 保留設定不適用於組織結構，包含像是文件庫、清單及網站內的資料夾。
 
-當您為 SharePoint 網站或 OneDrive 帳戶指定您的位置時，您不需要存取網站的權限，而當你在 **[編輯位置]** 頁面上指定 URL 時也不會需要進行任何的驗證。 不過，SharePoint 網站必須編制索引，而您指定的網站會在精靈結束時進行檢查，以確認這些網站是否存在。
+當您為 SharePoint 網站或 OneDrive 帳戶指定您的位置時，您不需要存取網站的權限，而當你在 **[編輯位置]** 頁面上指定 URL 時也不會需要進行任何的驗證。 不過，您指定的 SharePoint 網站會在精靈結束時進行檢查，以確認其存在。 如果此檢查失敗，您會看到一則訊息，指出您輸入的 URL 驗證失敗，且精靈不會建立保留原則，直到驗證檢查通過為止。 如果您看到這則訊息，請返回精靈並變更 URL 或從保留原則將網站移除。
 
-如果此檢查失敗，您會看到一則訊息，指出您輸入的 URL 驗證失敗，且精靈不會建立保留原則，直到驗證檢查通過為止。 如果您看到這則訊息，請返回精靈並變更 URL 或從保留原則將網站移除。
+> [!NOTE]
+> 必須為 SharePoint 網站編製索引，才能套用保留設定。 不過，如果 SharePoint 文件庫中的項目設定為不在搜尋結果中顯示，此設定就不會將這些項目從保留設定中排除。
 
 若要特別指定包含或排除某個 OneDrive 帳戶，URL 的格式要求如下：`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
@@ -253,7 +254,7 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 當您選擇位置時，除了商務用 Skype，預設設定是當位置的狀態為**開啟**時的**全部**。
 
-當保留原則套用於整個位置的任何組合時，原則可以包含的收件者、網站、帳戶、組等的數量沒有限制。
+將保留原則套用至整個位置的任何組合時，原則可以包含的收件者、網站、帳戶、群組等的數量沒有限制。
 
 例如，如果原則包含所有 Exchange 電子郵件和所有 SharePoint 網站，無論有多少個網站和收件者都會全部包含。 而對於 Exchange，在套用原則後建立的任何新信箱都會自動繼承原則。
 

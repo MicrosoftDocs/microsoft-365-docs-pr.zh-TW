@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 讓您的使用者透過 Teams、Exchange、SharePoint 和其他 Microsoft 365 服務提高生產力。
-ms.openlocfilehash: 879df16b379a82fcdc9478f8b3a787dd74384171
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445825"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681405"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步驟 5： 部署遠端工作者生產力應用程式和服務
 
@@ -30,7 +30,7 @@ ms.locfileid: "48445825"
 
 - 若要讓在不同地方工作的人員保持聯繫，請使用 Microsoft Teams，為組織、部門，以及小組和個人，提供適用於會議、交談和檔案儲存的共同交流中心。 
 - 若要交換電子郵件及管理行事曆、連絡人和工作，請使用 Exchange Online 和 Outlook 用戶端。
-- 若要儲存及共同處理檔案，請使用 SharePoint 和 OneDrive。 您可以搭配網頁瀏覽器或在 Teams 內使用這些服務。
+- 若要儲存及共同處理檔案，請使用 SharePoint 和 OneDrive。 您可以在網頁瀏覽器內或在 Teams 內使用它們。
 - 若要建立新內容或共同處理現有內容，Microsoft 365 App 是安裝在您本機電腦上的 Word、PowerPoint、Excel 和 Outlook 版本，而且會收到持續的功能和安全性更新。
 
 ![使用 Teams、Outlook、SharePoint、OneDrive 和 Microsoft 365 應用程式以保持生產力](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
@@ -39,9 +39,9 @@ ms.locfileid: "48445825"
 
 Teams 可讓您在同一個地方交談、開會、通話和共同作業。 數百萬個人每天都在 Teams 中完成自己的工作，因為此工具可將您從遠端工作所需的一切都整合到一個中樞，以進行團隊作業。 
 
-請將 [本文](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) 做為支援您遠端工作人員的 Teams 指導方針。 
+如需詳細指導方針，請參閱[支援使用 Microsoft Teams 的遠端工作者](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)。 
 
-若要瞭解如何使用適用於遠端工作的 Teams 指導方針和示範，請觀看 [第1部分影片](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)。
+觀看[使用 Microsoft Teams 啟用混合式工作網路廣播](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)，以取得將 Teams 用於遠端工作的指導方針和示範。
 
 ### <a name="chat-and-conversations"></a>聊天和交談
 
@@ -82,14 +82,14 @@ Teams 為應用程式和工作流程提供一個平台，您可以從電腦版�
 
 ## <a name="create-and-collaborate-on-content-with-microsoft-365-apps"></a>使用 Microsoft 365 Apps 建立並共同處理內容
 
-Microsoft 365 Apps 對於企業而言，是最具生產力且最安全的 Office 體驗，可讓使用者隨時隨地順利地共同作業。 遠端工作者可以同時與多人共同處理文件、即時查看編輯及變更，並與其他人在任何筆記型電腦、電腦或行動裝置上共同撰寫。
+Microsoft 365 Apps 對於企業而言，是最具生產力且安全的 Office 體驗，可讓使用者隨時隨地順利地共同作業。 遠端工作者可以同時與多人共同處理文件、即時查看編輯及變更，並與其他人在任何筆記型電腦、電腦或行動裝置上共同撰寫。
 
-請查閱 [本文](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps) 以在您的企業環境中進行規劃、部署及管理 Microsoft 365 Apps。
+如需詳細資訊，請參閱 [Microsoft 365 Apps 的部署指南](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)。
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>適用於生產力應用程式和服務的系統管理技術資源
 
 - [支援使用 Microsoft Teams 的遠端工作者](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
-- [第1部分 適合遠端工作人員的 Teams 影片](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
+- [使用 Microsoft Teams 啟用混合式工作網路廣播](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Teams 客戶成功套件下載](https://www.microsoft.com/download/details.aspx?id=54244)
 - [推動 Teams 採用的工具](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [建立 Microsoft Teams 的變更管理策略](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy) (部分機器翻譯)

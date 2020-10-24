@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: e1748cf25fd36787727b0f00f6ddf6553bd454ab
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104443"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48637004"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
@@ -102,15 +102,23 @@ ms.locfileid: "48104443"
   
 - [Microsoft 365 群組](office-365-groups.md)
   
-- [商務用 OneDrive 使用者活動](onedrive-for-business-activity.md)
-  
-- [商務用 OneDrive 使用量](onedrive-for-business-usage.md)
+- [商務用 OneDrive 使用者活動](onedrive-for-business-activity-ww.md)
+
+- [美國政府的商務用 OneDrive 使用者活動](onedrive-for-business-activity.md)
+
+- [商務用 OneDrive 使用量](onedrive-for-business-usage-ww.md)
+
+- [美國政府的商務用 OneDrive 使用量](onedrive-for-business-usage.md)
 
 - [Microsoft 365 應用程式使用量](microsoft365-apps-usage.md)
   
-- [SharePoint 網站使用量](sharepoint-site-usage.md)
+- [SharePoint 網站使用量](sharepoint-site-usage-ww.md)
+
+- [美國政府的 SharePoint 網站使用量](sharepoint-site-usage.md)
   
-- [SharePoint 活動](sharepoint-activity.md)
+- [SharePoint 活動](sharepoint-activity-ww.md)
+
+- [美國政府的 SharePoint 網站活動](sharepoint-activity.md)
   
 - [商務用 Skype Online 活動](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   

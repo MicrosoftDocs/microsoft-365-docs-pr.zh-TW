@@ -17,20 +17,20 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 端點管理員來管理受管理的裝置、電腦及其他端點。
-ms.openlocfilehash: b50279166b313742dbfbe8e75dd9788aac6b1daa
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445958"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681477"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步驟 4： 為您的裝置、電腦和其他端點部署端點管理
 
 若雇用遠端工作者，您必須支援日益增加的個人裝置。 端點管理是原則型的安全性方法，要求裝置必須符合特定準則，才能獲得存取資源的授權。 [Microsoft 端點管理員] 提供現代化管理功能，保護您的雲端資料及內部檔案的安全。 
 
-端點管理員提供可管理行動裝置、電腦、虛擬機器、嵌入式裝置及伺服器的服務和工具，並結合您可能已經知道且正在使用的服務。
+[Microsoft 端點管理員](https://docs.microsoft.com/mem/endpoint-manager-overview)提供可管理行動裝置、電腦、虛擬機器、嵌入式裝置及伺服器的服務和工具，並結合您可能已經知道且正在使用的服務。
 
-![端點管理元件](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+![Microsoft 365 的端點管理元件](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -58,13 +58,13 @@ Configuration Manager 是一種內部部署管理解決方案，可管理網路�
 
 ## <a name="desktop-analytics"></a>電腦分析
 
-桌面分析是與 Configuration Manager 整合的雲端型服務，可提供深入解析與情報，讓您對 Windows 用戶端做出正確決策。 它會結合組織的資料，與從連線到 Microsoft 雲端服務的上百萬裝置上彙總的資料。 
+桌面分析是與 Configuration Manager 整合的雲端型服務，可提供深入解析與情報，讓您對 Windows 用戶端做出正確決策。 它會結合組織的資料，與從連線到 Microsoft 雲端服務的上百萬其他裝置上彙總的資料。 
 
 使用電腦分析，您可以：
 
 - 建立組織中執行之應用程式的庫存。
 - 使用最新的 Windows 10 功能更新評估應用程式相容性。
-- 找出相容性問題，並根據啟用雲端的資料深入解析來接收緩解建議。
+- 找出相容性問題，並根據啟用雲端的資料深入解析來獲得緩解建議。
 - 建立試驗組，代表最少裝置集的整個應用程式和驅動程式資源。
 - 將 Windows 10 部署到試驗和生產管理的裝置。
 
@@ -83,9 +83,7 @@ Windows Autopilot 能讓 IT 部門透過簡單易行的流程，幾乎不需要�
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>適用於端點管理的系統管理技術資源
 
-- [第 3 部分影片，為遠端工作者適用的 Windows 10 裝置管理](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [第5部分影片，為遠端工作者適用的使用者桌面和瀏覽器管理](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security)
-- [為 Microsoft 365 部署移動性基礎結構](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure)
+- [Microsoft 365 的裝置管理藍圖](../enterprise/device-management-roadmap-microsoft-365.md)
 - [如何註冊不同的裝置類型以管理行動裝置](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 - [如何向使用者說明 Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
  

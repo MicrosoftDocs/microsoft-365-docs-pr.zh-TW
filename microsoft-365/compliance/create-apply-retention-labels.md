@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及發佈保留標籤的指示，以便您日後在應用程式中套用，用以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 8b43c225c6ea5ecd0de02250d341572704fb4482
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 0587e868d8e9d54d0e5025d02fdbd5a5dfc0f430
+ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477110"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48740277"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>建立保留標籤，並在應用程式中使用這些標籤
 
@@ -110,6 +110,16 @@ ms.locfileid: "48477110"
   
 ![手動標籤生效的圖](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
+
+如果標籤在七天之後未顯示，請在合規性中心的 [標籤原則 **]** 頁面中選取標籤原則，以檢查其 [狀態 **]**。 如果您看到**關閉 (錯誤)** 狀態，且在位置的詳細資料中，看到訊息說明部署原則 (針對 SharePoint) 或嘗試重新部署原則 (針對 OneDrive) 所耗費的時間超過預期，請嘗試執行 [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令以重試原則發佈：
+
+1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+
+2. 執行下列命令：
+    
+    ``` PowerShell
+    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+   ```
 
 ### <a name="how-to-check-on-the-status-of-retention-labels-published-to-exchange"></a>如何檢查發佈至 Exchange 之保留標籤的狀態
 
@@ -224,7 +234,7 @@ Then, create one or more label policies that contain the labels and policy setti
 
 This method requires retention labels to be published to a retention label policy.
 
-In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location get the default retention label.
+In addition to enabling people to apply a retention label to individual documents, you can also apply a default retention label to a SharePoint library, folder, or document set, so that all documents in that location inherit the default retention label.
   
 For a document library, this is done on the **Library settings** page for a document library. When you choose the default retention label, you can also choose to apply it to existing items in the library. 
   

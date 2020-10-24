@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: 瞭解如何將來賓新增至 Microsoft 365 群組、查看來賓使用者，以及使用 PowerShell 來控制來賓存取。
-ms.openlocfilehash: 640a35cbb1a3eb395453b224cadcf0d0db82fab8
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 3fba6b4498f275b07148c2d879d141474ddf4a13
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326516"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753274"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>在 Microsoft 365 群組中管理來賓存取
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 您的遠端工作者必須使用多重要素驗證 (MFA) 來登入。
-ms.openlocfilehash: 7f24402dcedd4b544c5e6d8af2a0e18d3b62da27
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: aa9b122ca18c4d8a8123914ee2d29d41c9ec789e
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445919"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681453"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>步驟 1： 使用 MFA 提升遠端工作者的登入安全性
 
@@ -38,12 +38,12 @@ Microsoft 強烈建議包括遠端工作者 (特別是系統管理員) 在內的
 |---------|---------|
 |所有的 Microsoft 365 方案（不含 Azure AD Premium P1 或 P2 授權）     |[在 Azure AD 中啟用安全性預設](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設包含了適用於使用者和系統管理員的 MFA。   |
 |Microsoft 365 E3 （含 Azure AD Premium P1 授權）     | 使用[常見的條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則： <br>- [要求系統管理員使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [要求所有使用者使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 （含 Azure AD Premium P2 授權）     | 利用 Azure AD Identity Protection，藉由建立下列兩種原則來開始實作 Microsoft [建議的一組條件式存取和相關原則](../security/office-365-security/identity-access-policies.md)：<br> - [登入風險為中或高時，需要 MFA](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [封鎖不支援新式驗證的用戶端](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高風險使用者必須變更密碼](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
+|Microsoft 365 E5 （含 Azure AD Premium P2 授權）     | 利用 Azure AD Identity Protection，藉由建立下列原則來開始實作 Microsoft [建議的一組條件式存取和相關原則](../security/office-365-security/identity-access-policies.md)：<br> - [登入風險為中或高時，需要 MFA](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [封鎖不支援新式驗證的用戶端](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [高風險使用者必須變更密碼](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ## <a name="security-defaults"></a>安全性預設
 
-安全性預設是 2019 年 10 月 21 日之後所建立 Microsoft 365 和 Office 365 付費或試用版訂用帳戶的新功能。 這些訂用帳戶會開啟安全性預設，而***要求所有使用者都必須使用 MFA 與 Microsoft Authenticator 應用程式***。
+安全性預設是 2019 年 10 月 21 日之後所建立 Microsoft 365 和 Office 365 付費或試用版訂用帳戶的新功能。 這些訂閱會開啟安全性預設，而***要求所有使用者都必須使用 MFA 與 Microsoft Authenticator 應用程式**_。
  
 使用者有 14 天的時間可以從其智慧型手機向 Microsoft Authenticator 應用程式註冊 MFA，時間從啟用安全性預設後使用者首次登入時起算。 14 天過後，使用者就無法登入，除非其完成 MFA 註冊。
 
@@ -75,6 +75,9 @@ Azure AD Identity Protection 需有已附加在 Microsoft 365 E5 中的 Azure AD
 
 如需詳細資訊，請參閱[風險型條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users)。
 
+利用 Azure AD Identity Protection，您也可以建立原則，以要求您的使用者註冊使用 MFA。 如需詳細資訊，請參閱[設定 Azure Multi-Factor Authentication 註冊原則](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+
+
 ## <a name="using-these-methods-together"></a>共同使用這些方法
 
 請記住下列事項：
@@ -88,13 +91,13 @@ Azure AD Identity Protection 需有已附加在 Microsoft 365 E5 中的 Azure AD
 
 | Method | 啟用 | 停用 | 額外驗證方法 |
 |:-------|:-----|:-------|:-------|
-| **安全性預設**  | 無法使用條件式存取原則 | 可以使用條件式存取原則 | Microsoft Authenticator 應用程式 |
+| _*安全性預設**  | 無法使用條件式存取原則 | 可以使用條件式存取原則 | Microsoft Authenticator 應用程式 |
 | **條件式存取原則** | 如果已啟用任何原則，則無法啟用安全性預設 | 如果已停用所有原則，則可啟用安全性預設  | 在 MFA 註冊期間由使用者指定  |
 ||||
 
 ## <a name="let-your-users-reset-their-own-passwords"></a>讓您的使用者重設自己的密碼
 
-自助式密碼重設（SSPR）可讓使用者自行重設自己的密碼，而不會影響到 IT 人員的工作。 使用者可隨時隨地快速重設自己的密碼。 請觀看 [這段影片](https://go.microsoft.com/fwlink/?linkid=2128524) 了解如何設定 SSPR。
+自助式密碼重設（SSPR）可讓使用者自行重設自己的密碼，而不會影響到 IT 人員的工作。 使用者可隨時隨地快速重設自己的密碼。 如需詳細資訊，請參閱[規劃 Azure AD 自助式密碼重設部署](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)。
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>使用 Azure AD 登入 SaaS 應用程式
 
@@ -102,12 +105,9 @@ Azure AD Identity Protection 需有已附加在 Microsoft 365 E5 中的 Azure AD
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>適用於 MFA 和身分識別的系統管理員技術資源
 
-- [ Microsoft 365 適用的 MFA](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
 - [Azure AD 可協助您啟用遠端工作的五大方法](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
 - [Microsoft 365 的身分識別藍圖](../enterprise/identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD 訓練影片](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [設定 Azure Multi-Factor Authentication 註冊原則](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-- [ 規劃 Azure AD 的自助式密碼重設部署](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
 
 ## <a name="results-of-step-1"></a>步驟 1 的結果
 

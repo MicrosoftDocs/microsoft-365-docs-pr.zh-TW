@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及自動發佈保留標籤，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 9ab456cd5b1f5f1bf47a1e24a3d7e58b7992ede0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cb8b6840085a1a044c0bcb7bf8b09c5776a31e0e
+ms.sourcegitcommit: 31f25790b37dfb740530017ef1701db0c5134829
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196376"
+ms.lasthandoff: 10/23/2020
+ms.locfileid: "48740267"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤來保留或刪除內容
 
@@ -213,7 +213,19 @@ ProgID:Media AND ProgID:Meeting
 當您自動套用保留標籤，可能需要最多 7 天，保留標籤才會套用至符合條件的所有現有內容。
   
 ![自動標籤生效時的圖表](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
-  
+
+如果預期的標籤在七天之後未顯示，請在合規性中心的 [標籤原則 **]** 頁面中選取自動套用原則，以檢查其 [狀態 **]**。 如果您看到**關閉 (錯誤)** 狀態，且在位置的詳細資料中，看到訊息說明部署原則 (針對 SharePoint) 或嘗試重新部署原則 (針對 OneDrive) 所耗費的時間超過預期，請嘗試執行 [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令以重試原則發佈：
+
+1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+
+2. 執行下列命令：
+    
+    ``` PowerShell
+    Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
+   ```
+
+
+
 ## <a name="updating-retention-labels-and-their-policies"></a>更新保留標籤及其原則
 
 當您編輯保留標籤或自動套用原則，且保留標籤已套用至內容時，除了新識別的內容以外，您更新的設定會自動套用到此內容。

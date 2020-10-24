@@ -16,12 +16,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 在本文中，您將了解在 Microsoft 365 中建立安全的來賓共用環境的可用選項。
-ms.openlocfilehash: 227c609329ae3cca4cc38e65984f1036bfe41068
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d80dd00369b851768849e846449799ff443957f3
+ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527927"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "48681556"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>建立安全的來賓共用環境
 
@@ -165,7 +165,7 @@ ms.locfileid: "46527927"
 9. 在 **[雲端應用程式或動作]** 刀鋒視窗中，按一下 **[完成]**。
 10. 按一下 **[指派]** 底下的 **[條件]**。
 11. 在 **[條件]** 刀鋒視窗中，按一下 **[用戶端應用程式]**。
-12. 在 **[用戶端應用程式]** 刀鋒視窗中，按一下 **[是]** 進行 **[設定]**，然後選取 **[行動裝置 App 及桌面用戶端]** 和 **[新式驗證用戶端]** 設定。</br>
+12. 在 [用戶端應用程式 **]** 刀鋒視窗中，對 [設定 **]** 按一下 [是 **]**，然後選取 [行動裝置應用程式和桌面用戶端 **]** 設定。</br>
     ![Azure AD 條件式存取用戶端應用程式設定的螢幕擷取畫面](../media/azure-ad-conditional-access-client-mobile.png)
 13. 按一下 **[完成]**，然後在 **[條件]** 刀鋒視窗中，再按一下 **[完成]**。
 14. 在 **[存取控制]** 底下，按一下 **[授與]**。

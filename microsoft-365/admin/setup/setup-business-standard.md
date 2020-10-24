@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sirkkuw
 author: sirkkuw
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: 瞭解如何設定 Microsoft 365 商務標準版訂閱。
-ms.openlocfilehash: cfc198c749cfcaa76bc3fa6323e1dba8a46e7388
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
+ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324443"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48644552"
 ---
 # <a name="set-up-microsoft-business-standard"></a>設定 Microsoft 商務標準版
 
@@ -40,7 +40,7 @@ ms.locfileid: "47324443"
 
 如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
   
- *這些步驟適用於擁有 **[Microsoft 365 商務標準版方案](https://go.microsoft.com/fwlink/p/?LinkId=627220)** 的公司和[非營利組織](https://go.microsoft.com/fwlink/p/?LinkId=627221)。*
+ *這些步驟適用於擁有 **[Microsoft 365 商務標準版方案](https://go.microsoft.com/fwlink/p/?LinkId=627220)** 的公司和[非營利組織](https://go.microsoft.com/fwlink/p/?LinkId=627221)。
 
 觀看有關設定 Microsoft 365 商務標準版（之前稱為 Office 365 商務進階版）的短片。<br><br>
 
@@ -56,7 +56,7 @@ ms.locfileid: "47324443"
 
 1. 使用您的全域系統管理員認證登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com)。 
 
-2. 請選擇 **[移至設定]** 來啟動精靈。
+2. 請選擇 *[移至設定]** 來啟動精靈。
 
 3. 在 **[安裝您的 Office 應用程式]** 頁面上，您可以選擇將應用程式安裝到自己的電腦上。
     

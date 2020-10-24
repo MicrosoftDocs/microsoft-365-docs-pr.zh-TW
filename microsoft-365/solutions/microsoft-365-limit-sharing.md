@@ -18,12 +18,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: 了解在 Microsoft 365 中限制或停用共用的選項。
-ms.openlocfilehash: 7397078b6f347858e4ca91a0deeb9a1cf2fb6911
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: 7ed9cc499e16de835c6ba96eb19bcc28a144b68b
+ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361902"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "48651415"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>在 Microsoft 365 中限制共用
 
@@ -64,7 +64,7 @@ ms.locfileid: "48361902"
 如果想要在 Microsoft 365 群組中防止來賓存取，您可以在 Microsoft 365 系統管理中心中關閉群組來賓存取設定。
 
 若要關閉 Microsoft 365 群組中的來賓共用
-1. 在 Microsoft 365 系統管理中心中，按一下 **[設定]**，然後按一下 **[設定]**。
+1. 在 Microsoft 365 系統管理中心中，按一下 **[設定]**，然後按一下 **[組織設定]**。
 2. 在 [服務]**** 索引標籤上，按一下 [Microsoft 365 群組]****。
 3. 清除 **[讓貴組織外部的群組成員存取群組內容]** 和 **[讓群組擁有者將貴組織外部的人員新增到群組]** 核取方塊。
 4. 按一下 [儲存變更]****。

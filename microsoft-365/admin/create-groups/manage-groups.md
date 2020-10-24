@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: 瞭解如何管理 Microsoft 365 群組，包括新增移除群組成員、編輯電子郵件地址、組名或描述，以及自訂群組的運作方式。
-ms.openlocfilehash: 7cc9bc6eb79b305c7d20d8075b6dc287e4f8b5d7
-ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
+ms.openlocfilehash: 8216b80ba6cd6bffe470f4fe4ace43307afba5f2
+ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48469706"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48753298"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心中管理群組
 
@@ -34,40 +34,14 @@ ms.locfileid: "48469706"
 
 ## <a name="edit-the-group-name-or-description"></a>編輯群組名稱或描述
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，展開 [ **群組**]，然後按一下 [ **群組**]。
 
 2. 選取您要編輯的群組，然後按一下 [ **編輯名稱與描述**]。
 
 3. 更新 [名稱] 和 [描述]，然後選取 [ **儲存**]。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在系統管理中心中，展開 [ **群組**]，然後按一下 [ **群組**]。
-
-2. 選取您要編輯的群組，然後按一下 [ **編輯名稱與描述**]。
-
-3. 更新 [名稱] 和 [描述]，然後選取 [ **儲存**]。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統管理中心中，展開 [ **群組**]，然後按一下 [ **群組**]。
-
-2. 選取您要編輯的群組，然後按一下 [ **編輯名稱與描述**]。
-
-3. 更新 [名稱] 和 [描述]，然後選取 [ **儲存**]。
-
-::: moniker-end
 
 ## <a name="manage-group-owners-and-members"></a>管理群組擁有者和成員
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，展開 [ **群組**]，然後按一下 [ **群組**]。
 
 2. 按一下您要管理的群組名稱，以開啟 [設定] 窗格。
@@ -77,36 +51,6 @@ ms.locfileid: "48469706"
 4. 選擇 [ **新增** ] 以新增人員，或按一下 **X** 以移除某人。
 
 5. 按一下 **[關閉]**。
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在系統管理中心中，展開 [ **群組**]，然後按一下 [ **群組**]。
-
-2. 按一下您要管理的群組名稱，以開啟 [設定] 窗格。
-
-3. 在 [ **成員** ] 索引標籤上，選擇您是否要管理擁有者或成員。
-
-4. 選擇 [ **新增** ] 以新增人員，或按一下 **X** 以移除某人。
-
-5. 按一下 **[關閉]**。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統管理中心中，展開 [ **群組**]，然後按一下 [ **群組**]。
-
-2. 按一下您要管理的群組名稱，以開啟 [設定] 窗格。
-
-3. 在 [ **成員** ] 索引標籤上，選擇您是否要管理擁有者或成員。
-
-4. 選擇 [ **新增** ] 以新增人員，或按一下 **X** 以移除某人。
-
-5. 按一下 **[關閉]**。
-
-::: moniker-end
 
 ## <a name="send-copies-of-conversations-to-group-members-inboxes"></a>將交談複本傳送至群組成員的收件匣
   
@@ -116,8 +60,6 @@ ms.locfileid: "48469706"
 
 群組成員可以選擇停止關注 Outlook 中的群組，以選擇不接收這些電子郵件。
 
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，展開 [ **群組**]，然後按一下 [ **群組**]。
 
 2. 按一下您要管理的群組名稱，以開啟 [設定] 窗格。
@@ -126,38 +68,10 @@ ms.locfileid: "48469706"
 
 4. 選取 **[儲存]**。
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. 在系統管理中心中，移至 [ **群組** \> **群組** ] 頁面，然後選取您要變更的群組。
-
-2. 選取 [ **名稱**] 旁的 [ **編輯**]。
-
-3. 如果您想要讓成員在自己的收件匣中接收群組郵件和行事曆專案的副本，請將 [ **群組交談和事件的副本** ] **轉換為 [** 群組] 的 [收件者]。
-
-4. 選取 **[儲存]**。
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. 在系統管理中心中，移至 [ **群組** \> **群組** ] 頁面，然後選取您要變更的群組。
-
-2. 選取 [ **名稱**] 旁的 [ **編輯**]。
-
-3. 如果您想要讓成員在自己的收件匣中接收群組郵件和行事曆專案的副本，請將 [ **群組交談和事件的副本** ] **轉換為 [** 群組] 的 [收件者]。
-
-4. 選取 **[儲存]**。
-
-::: moniker-end
-
 ## <a name="let-people-outside-the-organization-email-the-group"></a>讓組織外部的人員以電子郵件傳送群組
 
 如果您想要有公司的電子郵件地址（例如 info@contoso.com），則此選項非常好。
  
-::: moniker range="o365-worldwide"
-
 1. 在系統管理中心中，展開 [ **群組**]，然後按一下 [ **群組**]。
 
 2. 按一下您要管理的群組名稱，以開啟 [設定] 窗格。
@@ -166,32 +80,27 @@ ms.locfileid: "48469706"
     
 4. 選取 **[儲存]**。
 
-::: moniker-end
+## <a name="permanently-delete-a-microsoft-365-group"></a>永久刪除 Microsoft 365 群組
 
-::: moniker range="o365-germany"
+在某些情況下，您可能想要永久清除群組，而不需等待30天的虛刪除期限到期。 若要這麼做，請啟動 PowerShell 並執行下列命令以取得該群組的物件識別碼：
+ 
+ ```powershell
+`Get-AzureADMSDeletedGroup`
+```
 
-1. 重新整理您的系統管理中心頁面，讓新的群組出現。
-    
-2. 在 [系統管理中心群組] 清單中，選取您要變更的群組，然後在 [ **名稱**] 旁邊，選取 [ **編輯**]。 
-    
-3. 設定 **讓組織外部的人員可將群組** 切換為 [ **開啟**]。
-    
-4. 選取 **[儲存]**。
+記下您要永久刪除之群組或群組的物件識別碼。
+  
+> [!CAUTION]
+> 永久移除群組及其資料來清除該群組。 
+  
+若要清除該群組，請在 PowerShell 中執行下列命令：
 
-::: moniker-end
+```powershell
+`Remove-AzureADMSDeletedDirectoryObject -Id <objectId>`
+```
 
-::: moniker range="o365-21vianet"
-
-1. 重新整理您的系統管理中心頁面，讓新的群組出現。
-    
-2. 在 [系統管理中心群組] 清單中，選取您要變更的群組，然後在 [ **名稱**] 旁邊，選取 [ **編輯**]。 
-    
-3. 設定 **讓組織外部的人員可將群組** 切換為 [ **開啟**]。
-    
-4. 選取 **[儲存]**。
-
-::: moniker-end
-
+若要確認群組已成功清除，請再次執行  *Get-AzureADMSDeletedGroup*  Cmdlet 來確認該群組已不再顯示在虛刪除群組清單中。某些情況下，最多可能需要 24 小時才能永久刪除群組及其所有資料。 
+  
 ## <a name="related-articles"></a>相關文章
 
 [建立 Microsoft 365 群組](create-groups.md)
