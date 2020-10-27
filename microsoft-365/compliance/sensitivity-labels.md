@@ -22,12 +22,12 @@ description: 使用 Microsoft 資訊保護架構中的敏感度標籤，以透�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7b2eaf8bcfa7014e8c70f4c7efb7d859b32e5e7e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: de123c842623d709c9360652becc8c4604b0c234
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446749"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754093"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -37,7 +37,7 @@ ms.locfileid: "48446749"
 
 來自 Microsoft 資訊保護架構的敏感度標籤可讓您分類及保護組織的資料，同時確保使用者生產效率和共同作業能力不受影響。
 
-從功能區上的 [首頁]**** 索引標籤顯示 Excel 中可用敏感度標籤的範例。 在此範例中，已套用的標籤會顯示在狀態列上：
+從功能區上的 [首頁]  索引標籤顯示 Excel 中可用敏感度標籤的範例。 在此範例中，已套用的標籤會顯示在狀態列上：
 
 ![Excel 功能區和狀態列上的敏感度標籤](../media/Sensitivity-label-in-Excel.png)
 
@@ -54,9 +54,9 @@ ms.locfileid: "48446749"
 
 - **保護不同平台和裝置之間 Office 應用程式中的內容。** 如需受支援應用程式的清單，請參閱[在 Office 應用程式中使用敏感度標籤](sensitivity-labels-office-apps.md)。
 
-- 使用 Microsoft Cloud App Security **保護第三方應用程式和服務中的內容**。 使用 Cloud App Security，您可以偵測、分類、標記並保護協力廠商應用程式和服務中的內容，例如 SalesForce、Box 或 DropBox，即使協力廠商應用程式或服務無法讀取或支援敏感度標籤亦然。
+- 使用 Microsoft Cloud App Security **保護第三方應用程式和服務中的內容** 。 使用 Cloud App Security，您可以偵測、分類、標記並保護協力廠商應用程式和服務中的內容，例如 SalesForce、Box 或 DropBox，即使協力廠商應用程式或服務無法讀取或支援敏感度標籤亦然。
 
-- **保護容器**，其中包括 Teams、Microsoft 365 群組和 SharePoint 網站。 例如，設定隱私權設定、外部使用者存取和來自未受管理裝置的存取。
+- **保護容器** ，其中包括 Teams、Microsoft 365 群組和 SharePoint 網站。 例如，設定隱私權設定、外部使用者存取和來自未受管理裝置的存取。
 
 - **將敏感度標籤延伸至第三方應用程式和服務。** 使用 Microsoft 資訊保護 SDK，第三方應用程式就可以讀取敏感度標籤以及套用保護設定。
 
@@ -85,19 +85,21 @@ ms.locfileid: "48446749"
 
 將敏感度標籤套用至電子郵件或文件後，將會對內容強制執行為該標籤設定的保護設定。 您可以使用敏感度標籤：
 
-- 只**加密**電子郵件或電子郵件和文件。 您可以選擇哪些使用者或群組可以擁有權限來執行哪些動作，以及執行多久。 例如，您可以選擇允許另一個組織內特定群組中的使用者有權在標記內容後的七天內檢閱內容。 或者，可以讓使用者在套用標籤時，指派權限給內容，而不要使用系統管理員定義的權限。 
+- 只 **加密** 電子郵件或電子郵件和文件。 您可以選擇哪些使用者或群組可以擁有權限來執行哪些動作，以及執行多久。 例如，您可以選擇允許另一個組織內特定群組中的使用者有權在標記內容後的七天內檢閱內容。 或者，可以讓使用者在套用標籤時，指派權限給內容，而不要使用系統管理員定義的權限。 
     
-    如需建立或編輯敏感度標籤時**加密**設定的詳細資訊，請參閱[使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)。
+    如需建立或編輯敏感度標籤時 **加密** 設定的詳細資訊，請參閱 [使用敏感度標籤中的加密來限制內容的存取](encryption-sensitivity-labels.md)。
 
-- 將浮水印、頁首或頁尾新增至已套用標籤的電子郵件或文件，以在使用 Office 應用程式時**標記內容**。 浮水印可以套用至文件 (而非電子郵件)。 頁首和浮水印範例：
+- 將浮水印、頁首或頁尾新增至已套用標籤的電子郵件或文件，以在使用 Office 應用程式時 **標記內容** 。 浮水印可以套用至文件 (而非電子郵件)。 頁首和浮水印範例：
     
     ![套用至文件的浮水印和頁首](../media/Sensitivity-label-watermark-header.png)
     
     需要檢查何時套用內容標記？ 請參閱 [Office 應用程式何時套用內容標記和加密](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption)。
     
+    某些 (但並非全部) 應用程式會使用變數來支援動態標記。 例如，將標籤名稱或文件名稱插入頁首、頁尾或浮水印。 如需詳細資訊，請參閱[使用變數動態標記](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)。
+    
     字串長度：浮水印限制為 255 個字元。 頁首和頁尾均受限於 1024 個字元，但 Excel 除外。 對於頁首及頁尾，Excel 的總限制為 255 個字元，但此限制包含看不見的字元，例如格式代碼。 如果達到該限制，您輸入的字串就不會顯示在 Excel 中。
 
-- 當您啟用功能，以[在 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中使用敏感度標籤](sensitivity-labels-teams-groups-sites.md)時，**保護容器中的內容，例如網站和群組**。
+- 當您啟用功能，以 [在 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中使用敏感度標籤](sensitivity-labels-teams-groups-sites.md)時， **保護容器中的內容，例如網站和群組** 。
     
     您無法設定群組和網站的保護設定，除非您啟用此功能。 此標籤設定並不會導致文件或電子郵件自動加標籤，相反的，標籤設定會透過控制可儲存內容所在容器的存取權，以保護內容。 這些設定包括隱私權設定、外部使用者存取和來自未受管理裝置的存取。
 
@@ -105,7 +107,7 @@ ms.locfileid: "48446749"
     
     ![指派必要標籤的提示](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    如需有關當您建立或編輯敏感度標籤時 **Office 應用程式的自動標籤**設定的詳細資訊，請參閱[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)。
+    如需有關當您建立或編輯敏感度標籤時 **Office 應用程式的自動標籤** 設定的詳細資訊，請參閱 [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)。
 
 ### <a name="label-scopes"></a>標籤範圍
 
@@ -125,7 +127,7 @@ ms.locfileid: "48446749"
 
 ### <a name="label-priority-order-matters"></a>標籤優先順序 (順序很重要)
 
-在您的系統管理中心中建立敏感度標籤時，它們會顯示在 [標籤]**** 頁面的 [敏感度]**** 索引標籤上的清單中。 在此清單中，標籤的順序很重要，因為它反映的是其優先順序。 您想要讓最具限制性的敏感度標籤，例如 [高度機密性]，顯示在清單的最**底端**，以及最不具限制性的敏感度標籤，例如公用，顯示在最**上方**。
+在您的系統管理中心中建立敏感度標籤時，它們會顯示在 [標籤]  頁面的 [敏感度]  索引標籤上的清單中。 在此清單中，標籤的順序很重要，因為它反映的是其優先順序。 您想要讓最具限制性的敏感度標籤，例如 [高度機密性]，顯示在清單的最 **底端** ，以及最不具限制性的敏感度標籤，例如公用，顯示在最 **上方** 。
 
 您只能將一個敏感度標籤套用至一個項目，例如文件、電子郵件或容器。 如果您設定一個選項，要求使用者提供將標籤變更為較低分類的理由，則此清單的順序會識別分類下限。 不過，此選項不適用子標籤。
 
@@ -159,7 +161,7 @@ ms.locfileid: "48446749"
 
 - **選擇可看見標籤的使用者和群組。** 可以在 Azure AD 中將標籤發佈到任何特定的使用者或啟用電子郵件功能的安全性群組、通訊群組或 Microsoft 365 群組 (可以有 [動態成員資格](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule))。
 
-- **套用預設標籤**至由標籤原則中包含的所有使用者和群組所建立的新文件和電子郵件，以及將相同或不同的預設標籤套用至容器 (如果您[已為 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤](sensitivity-labels-teams-groups-sites.md))。 如果使用者的文件或電子郵件不是正確的標籤，使用者可以隨時變更預設標籤。 
+- **套用預設標籤** 至由標籤原則中包含的所有使用者和群組所建立的新文件和電子郵件，以及將相同或不同的預設標籤套用至容器 (如果您 [已為 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤](sensitivity-labels-teams-groups-sites.md))。 如果使用者的文件或電子郵件不是正確的標籤，使用者可以隨時變更預設標籤。 
     
     請考慮使用預設標籤來設定您想套用到所有內容中的基本保護設定等級。 不過，若沒有使用者訓練和其他控制項，這項設定也可能導致不正確的標記。 選取將套用加密作為對文件之預設標籤的標籤並不是個好主意。 例如，許多組織需要將文件傳送與共用給外部使用者，而這些使用者可能沒有支援加密的應用程式，或可能不會使用可授權的帳戶。 如需此案例的詳細資訊，請參閱 [與外部使用者共用加密檔](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。
 
@@ -167,7 +169,7 @@ ms.locfileid: "48446749"
 
     ![提示使用者輸入理由](../media/Sensitivity-label-justification-required.png)
 
-- **要求使用者套用標籤**，一個選項用於電子郵件和文件，另一個用於容器。 這些選項也稱為強制標記，可確保必須先套用標籤，使用者才能儲存文件和傳送電子郵件，以及建立新群組或網站。
+- **要求使用者套用標籤** ，一個選項用於電子郵件和文件，另一個用於容器。 這些選項也稱為強制標記，可確保必須先套用標籤，使用者才能儲存文件和傳送電子郵件，以及建立新群組或網站。
     
     若為文件和電子郵件，標籤可由使用者手動指派、由於您設定的條件而自動指派，或依預設指派 (如上所述的預設標籤選項)。 當使用者需要指派標籤時，Outlook 中顯示的提示範例：
 
@@ -190,7 +192,7 @@ ms.locfileid: "48446749"
 
 ### <a name="label-policy-priority-order-matters"></a>標籤原則優先順序 (順序很重要)
 
-您會在敏感度標籤原則中發佈敏感度標籤，以將其提供給使用者使用，而標籤會顯示在 [標籤原則]**** 頁面上 [敏感度原則]**** 索引標籤的清單中。 正如同敏感度標籤 (請參閱[標籤原則優先順序 (順序很重要)](#label-priority-order-matters))，敏感度標籤原則的順序非常重要，因為順序反映的是優先順序。 優先順序最低的標籤原則會顯示在**上方**，而優先順序最高的標籤原則會顯示在**下方**。
+您會在敏感度標籤原則中發佈敏感度標籤，以將其提供給使用者使用，而標籤會顯示在 [標籤原則]  頁面上 [敏感度原則]  索引標籤的清單中。 正如同敏感度標籤 (請參閱[標籤原則優先順序 (順序很重要)](#label-priority-order-matters))，敏感度標籤原則的順序非常重要，因為順序反映的是優先順序。 優先順序最低的標籤原則會顯示在 **上方** ，而優先順序最高的標籤原則會顯示在 **下方** 。
 
 標籤原則包含：
 
@@ -200,7 +202,7 @@ ms.locfileid: "48446749"
 
 您可以將使用者包含在多個標籤原則中，該使用者即會看到來自這些原則的所有敏感度標籤。 不過，使用者只會取得來自具有最高優先順序標籤原則的原則設定。
 
-如果您沒有看到使用者或群組應有的標籤或標籤原則設定，且已等待 30 分鐘，請檢查敏感度標籤原則的順序。 若要重新排序標籤原則，請選取 [敏感度標籤原則] > 選擇右側的省略符號 > **[下移]** 或 **[上移]**。
+如果您沒有看到使用者或群組應有的標籤或標籤原則設定，且已等待 30 分鐘，請檢查敏感度標籤原則的順序。 若要重新排序標籤原則，請選取 [敏感度標籤原則] > 選擇右側的省略符號 > **[下移]** 或 **[上移]** 。
 
 ![敏感度標籤原則頁面上的移動選項](../media/sensitivity-label-policy-priority.png)
 
@@ -213,7 +215,7 @@ ms.locfileid: "48446749"
 ### <a name="azure-information-protection-labels"></a>Azure 資訊保護標籤
 
 > [!NOTE]
-> Azure 入口網站中 Azure 資訊保護標籤的標籤管理功能即將在 **2021 年 3 月 31 日**淘汰。 請透過官方的[淘汰聲明](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)深入了解。
+> Azure 入口網站中 Azure 資訊保護標籤的標籤管理功能即將在 **2021 年 3 月 31 日** 淘汰。 請透過官方的[淘汰聲明](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)深入了解。
 
 如果您因為您的租用戶尚不在[整合標籤平台](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)中而使用 Azure 資訊保護標籤，建議您在您啟用整合標籤前，避免建立敏感度標籤。 在此情況下，您在 Azure 入口網站中看到的標籤是 Azure 資訊保護標籤，而不是敏感度標籤。 這些標籤可由 Windows 電腦上的 Azure 資訊保護用戶端 (傳統) 使用，但不能由執行 macOS、iOS 或 Android 的裝置使用。 若要解決此問題，請[將這些標籤遷移](/azure/information-protection/configure-policy-migrate-labels)至敏感度標籤。 
 

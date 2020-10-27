@@ -1,5 +1,5 @@
 ---
-title: 瞭解保留原則和標籤，以自動保留或刪除內容
+title: 了解保留原則和標籤，以自動保留或刪除內容
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,31 +18,31 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 瞭解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: fe28e51aa7d93872e5683c3682c110275ece3d54
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
+ms.openlocfilehash: 089a34d1e9a002bd61e688cd3f721c6e8249c5b7
+ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651427"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48755582"
 ---
-# <a name="learn-about-retention-policies-and-retention-labels"></a>瞭解保留原則和保留標籤
+# <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
 對大多數組織來說，其資料 (電子郵件、文件、即時訊息等) 的數量和複雜性日益增加。有效管理或控管此資訊至關重要，因為您需要：
   
-- **主動遵守產業規範和內部原則**，因此您需要將某些內容至少保留一段時間，例如，Sarbanes-Oxley 法案可能會要求您將某些類型的內容保留七年。 
+- **主動遵守產業規範和內部原則** ，因此您需要將某些內容至少保留一段時間，例如，Sarbanes-Oxley 法案可能會要求您將某些類型的內容保留七年。 
 
-- **降低發生訴訟或安全性漏洞的風險**，方法為永久刪除您不再需要保留的舊內容。 
+- **降低發生訴訟或安全性漏洞的風險** ，方法為永久刪除您不再需要保留的舊內容。 
     
-- **協助貴組織有效分享知識並提高靈活度**，方法為確保使用者只使用目前和相關的內容。 
+- **協助貴組織有效分享知識並提高靈活度** ，方法為確保使用者只使用目前和相關的內容。 
     
 您設定的保留設定可協助您實現所有目標。 管理內容通常需要以下兩個動作：
   
-- **保留**內容，以便無法在保留期間結束之前將其永久刪除。 
+- **保留** 內容，以便無法在保留期間結束之前將其永久刪除。 
     
-- 在保留期間結束之前，永久**刪除**內容。 
+- 在保留期間結束之前，永久 **刪除** 內容。 
     
 
 使用這兩個保留動作，您可以設定以下結果的保留設定：
@@ -57,7 +57,7 @@ ms.locfileid: "48651427"
 
 當內容有指派保留設定時，該內容會保留在其原始位置。 若未發生任何變更，人員可以繼續使用其文件或郵件。 但如果人員編輯或刪除保留原則中包含的內容，則會自動保留您套用保留設定時即存在的內容複本。
   
-- 對於 SharePoint 和 OneDrive 網站：複本會保留在**文件保留庫**中。
+- 對於 SharePoint 和 OneDrive 網站：複本會保留在 **文件保留庫** 中。
 
 - 針對 Exchange 信箱：複本會保留在 **[可復原的項目]** 資料夾中。 
 
@@ -70,7 +70,7 @@ ms.locfileid: "48651427"
 
 如需有關保留設定如何配合不同工作負載使用的詳細資訊，請參閱下列文章：
 
-- [瞭解 SharePoint 和 OneDrive 的保留功能](retention-policies-sharepoint.md)
+- [了解 SharePoint 和 OneDrive 的保留功能](retention-policies-sharepoint.md)
 - [了解 Microsoft Teams 保留](retention-policies-teams.md)
 - [了解 Yammer 的保留](retention-policies-yammer.md)
 - [了解 Exchange 的保留](retention-policies-exchange.md)
@@ -159,18 +159,18 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
   
 使用保留標籤，您可以：
   
-- **讓貴組織中的人員手動將保留標籤套用**至網頁上的 Outlook 和 Outlook、OneDrive、SharePoint 和 Microsoft 365 群組中的內容。 使用者通常都清楚知道自己處理的內容類型，因此可將內容分類並套用適當的保留設定。 
+- **讓貴組織中的人員手動將保留標籤套用** 至網頁上的 Outlook 和 Outlook、OneDrive、SharePoint 和 Microsoft 365 群組中的內容。 使用者通常都清楚知道自己處理的內容類型，因此可將內容分類並套用適當的保留設定。 
     
-- 在當內容符合特定條件時**自動將保留標籤套用到內容**，例如內容包含： 
+- 在當內容符合特定條件時 **自動將保留標籤套用到內容** ，例如內容包含： 
     - 特定類型的敏感資訊。
     - 特定關鍵字符合您建立的查詢。
     - 可訓練分類器的模式比對。
 
-- 針對 SharePoint 網站和 OneDrive 帳戶中的文件和電子郵件項目 (行事曆項除外)，**從內容加上標籤起就開始保留期間**。 如果您將具有此設定的保留標籤套用於行事曆項目，則保留期間從其傳送日期開始。
+- 針對 SharePoint 網站和 OneDrive 帳戶中的文件和電子郵件項目 (行事曆項除外)， **從內容加上標籤起就開始保留期間** 。 如果您將具有此設定的保留標籤套用於行事曆項目，則保留期間從其傳送日期開始。
 
-- **當事件發生時 (例如員工離開組織或合約到期)，開始保留期間**。
+- **當事件發生時 (例如員工離開組織或合約到期)，開始保留期間** 。
 
-- **將預設保留標籤套用至 SharePoint 中的文件庫、資料夾或文件集**，以便儲存在該位置中的所有文件都繼承預設保留標籤。
+- **將預設保留標籤套用至 SharePoint 中的文件庫、資料夾或文件集** ，以便儲存在該位置中的所有文件都繼承預設保留標籤。
 
 此外，保留標籤支援跨 Microsoft 365 應用程式和服務的電子郵件和文件[記錄管理](records-management.md)。 您可以使用保留標籤將內容標記為記錄。 發生此情況且內容仍保留在 Microsoft 365 中時，標籤會針對法規原因可能所需的內容施加進一步的限制。 如需詳細資訊，請參閱 [比較允許或封鎖動作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。
 
@@ -243,14 +243,14 @@ Exchange 公用資料夾、Skype、Teams 和 Yammer 訊息不支援保留標籤�
 
 #### <a name="monitoring-retention-labels"></a>監視保留標籤
 
-在 Microsoft 365 合規性中心中，使用**資料分類** > **概觀**來監視保留標籤在租用戶中的使用方式，並識別標籤項目的位置。 如需詳細資訊 (包括重要先決條件)，請參閱[了解您的資料 - 資料分類概觀](data-classification-overview.md)。
+在 Microsoft 365 合規性中心中，使用 **資料分類** > **概觀** 來監視保留標籤在租用戶中的使用方式，並識別標籤項目的位置。 如需詳細資訊 (包括重要先決條件)，請參閱[了解您的資料 - 資料分類概觀](data-classification-overview.md)。
 
 然後您可以使用[內容總管](data-classification-content-explorer.md)和[活動總管](data-classification-activity-explorer.md)深入探討詳細資料。
 
 > [!TIP]
 >請考慮使用一些其他的資料分類深入解析 (例如可訓練分類器和敏感性資訊類型)，協助您識別可能需要保留或刪除的內容，或管理記錄。
 
-Office 365 安全性與合規性中心具有來自**資訊控管** > **儀表板**的保留標籤同等概觀資訊，以及來自**資訊控管** > **標籤活動總管**的詳細資訊。 如需從此舊版系統管理中心監視保留標籤的詳細資訊，請參閱下列文件：
+Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表板** 的保留標籤同等概觀資訊，以及來自 **資訊控管** > **標籤活動總管** 的詳細資訊。 如需從此舊版系統管理中心監視保留標籤的詳細資訊，請參閱下列文件：
 - [檢視資料控管報告](view-the-data-governance-reports.md)
 - [利用標籤分析檢視標籤使用量](label-analytics.md)
 - [檢視文件的標籤活動](view-label-activity-for-documents.md)
@@ -278,7 +278,7 @@ Office 365 安全性與合規性中心具有來自**資訊控管** > **儀表板
 |使用者的 UI 目前狀態 | 否 | 是 |
 |如果內容已移動，則會持續存在 | 否 | 是，在您的 Microsoft 365 租用戶中 |
 |將項目宣告為記錄| 否 | 是 |
-|在加上標籤起或根據事件來開始保留期間 | 否 | 是 |
+|開始保留期間： <br /> - 建立或上次修改項目時<br /> - 加標籤時或基於事件 | <br />是 <br />否 | <br />是 <br /> 是 |
 |處置檢閱 | 否| 是 |
 |最高 7 年的處置證明 | 否 |是，當物料宣告為記錄時|
 |稽核系統管理員活動| 是 | 是|
@@ -355,7 +355,7 @@ Office 365 安全性與合規性中心具有來自**資訊控管** > **儀表板
 
 ## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>何時使用保留原則和保留標籤或電子文件探索保留？
 
-雖然您使用保留設定和[電子文件探索案例所建立的保留](create-ediscovery-holds.md)都可以防止資料永久刪除，但它們是為不同情況而設計的。 若要協助您瞭解差異及決定使用哪個，請使用下列指南：
+雖然您使用保留設定和[電子文件探索案例所建立的保留](create-ediscovery-holds.md)都可以防止資料永久刪除，但它們是為不同情況而設計的。 若要協助您了解差異及決定使用哪個，請使用下列指南：
 
 - 您在 [保留原則] 和 [保留標籤] 中指定的保留設定，是專為長期資訊控管而設計，以保留或刪除符合法規需求的資料。 範圍通常很廣，主要重點是位置和內容，而不是個別使用者。 保留期間的開始和結束是可設定的，可選擇自動刪除內容，而不需要其他系統管理員介入。
 

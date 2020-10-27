@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 系統管理員可以深入瞭解安全性 & 規範中心的郵件流程儀表板中提供的真知灼見和報告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 089c6351485712d841691d5b856b1ba28dfe4fc4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9ac8b8b0d346d78af252a9e427d0ef2b1a4c4ea
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198478"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769015"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
 
@@ -60,13 +60,13 @@ ms.locfileid: "48198478"
 
 ## <a name="permissions-required-to-view-the-mail-flow-dashboard"></a>查看郵件流程儀表板所需的許可權
 
-郵件流程儀表板可用於下列路由群組的成員：
+郵件流程儀表板可用於下列角色群組的成員：
 
-- 安全性 & 規範中心內的**組織管理** (全域管理員) 。
+- 安全性 & 規範中心內的 **組織管理** (全域管理員) 。
 
-- Azure AD 中的**[Exchange 系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)**。
+- Azure Active Directory 中的 **[Exchange 系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** 。
 
-- 郵件流程 Security & 合規性中心內的**系統管理員**：如果此角色群組的成員不是全域系統管理員或 Exchange 系統管理員角色群組的成員，請注意下列問題和需求：
+- 郵件流程 Security & 合規性中心內的 **系統管理員** ：如果此角色群組的成員不是全域系統管理員或 Exchange 系統管理員角色群組的成員，請注意下列問題和需求：
 
   - 使用者必須直接登入安全性 & 合規性中心 <https://protection.office.com> 。
   - 使用者只具有郵件流程儀表板的唯讀許可權。
@@ -76,6 +76,6 @@ ms.locfileid: "48198478"
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>哪裡可以找到郵件流程儀表板
 
-開啟安全性 & 合規性中心 <https://protection.office.com> ，展開 [ **郵件流程**]，然後選取 [ **儀表板**]。
+開啟安全性 & 合規性中心 <https://protection.office.com> ，展開 [ **郵件流程** ]，然後選取 [ **儀表板** ]。
 
 若要直接移至 [郵件流程] 儀表板，請開啟] <https://protection.office.com/mailflow/dashboard> 。

@@ -20,58 +20,24 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 964724ad92c1ae29095b7368167b771b1632b003
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 71316d6c53862b80178d06726f7c249a2491d659
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295067"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769027"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱 [Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)。
 
 ## <a name="august-2020"></a>2020年 8月
 
-### <a name="update-improvement-action-for-azure-active-directory"></a>Azure Active Directory 的更新改進動作
+### <a name="updated-improvement-action-for-azure-active-directory"></a>Azure Active Directory 的更新改進動作
 
 - 啟用原則以封鎖舊版驗證
-
-## <a name="july-2020"></a>2020 年 7 月
-
-### <a name="adding-improvement-actions-for-azure-advanced-threat-protection"></a>新增 Azure 高級威脅防護的改進動作
-
-- 有風險的側面移動路徑
-- 不安全的帳戶屬性
-- 在 Active Directory 信任上啟用安全性功能
-- 從實體中移除不安全的 SID 歷程記錄屬性
-
-## <a name="june-2020"></a>2020 年 6 月
-
-### <a name="removed-improvement-action-for-microsoft-defender-advanced-threat-protection"></a>已移除 Microsoft Defender 高級威脅防護的改進動作
-
-* 開啟攻擊面減少規則
-
-### <a name="added-improvement-actions-for-microsoft-defender-advanced-threat-protection"></a>新增 Microsoft Defender 高級威脅防護的改進動作
-
-* 封鎖 Adobe Reader，以建立子流程
-* 使用勒索軟體的高級防護
-* 封鎖所有 Office 應用程式以建立子流程
-* 封鎖 Office 應用程式建立可執行檔內容
-* 從啟動下載的可執行內容封鎖 JavaScript 或 VBScript
-* 封鎖可能混淆的腳本執行
-* 從電子郵件客戶程式和 web 郵件封鎖可執行檔內容
-* 封鎖 Office communication application 建立子流程
-* 封鎖從 USB 執行的不受信任和未簽署程式
-* 透過 WMI 事件訂閱封鎖持久性
-* 封鎖 Office 應用程式將程式碼注入其他程式
-* 封鎖可執行檔，除非符合流行、age 或受信任的清單準則
-* 封鎖來自 PSExec 和 WMI 命令的進程建立
-* 封鎖從 Windows local security 機關子系統進行的認證竊取 ( # A0) 
-* 封鎖 Office 宏的 WIN32 API 呼叫
 
 ## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>不相容身分識別安全分數與圖形 API
 

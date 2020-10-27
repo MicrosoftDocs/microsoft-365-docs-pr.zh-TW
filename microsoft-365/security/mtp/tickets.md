@@ -19,19 +19,20 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: ca13234a93ffcc226be45d337880692a3a39c28b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a2650efbac0966b84e6fbfd6ce78cb732f4933b3
+ms.sourcegitcommit: bd36c88e731e3fee2a3a5cb3564fdc94f11bab94
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196116"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769650"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>將 ServiceNow 票證整合至 Microsoft 365 的安全性中心和合規性中心
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
-[!include[Prerelease information](../includes/prerelease.md)]
+>[!CAUTION]
+>**ServiceNow 連接器的預覽期間結束**<br>
+>2020年11月之後，這項功能將無法再使用。 感謝您的意見反應，並在我們決定接下來的步驟時繼續支援。
 
 ServiceNow 是一個流行的雲端計算平臺，可協助公司管理企業作業的數位工作流程。 其 Now 平臺具有 IT 工作流程、員工工作流程和客戶工作流程。 [深入瞭解 ServiceNow](https://www.servicenow.com/)
 
@@ -40,7 +41,7 @@ Microsoft 已與 ServiceNow 合作，讓 IT 系統管理員可輕鬆管理這兩
 - [**管理安全性中心的 ServiceNow 票證**](tickets-security-center.md)
 - **在規範中心管理 ServiceNow 入場券** (即將推出) 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 可以存取 Microsoft 365 的「安全中心」或「合規性中心」和 ServiceNow 實例，其中包括：  
 
@@ -77,7 +78,7 @@ ServiceNow 建議使用者將預設設定保留在 ServiceNow 實例中。 在�
 
 ### <a name="you-receive-an-error-in-the-first-step-of-the-installation-checklist-oauth-creation"></a>您會在安裝檢查清單的第一個步驟中收到錯誤 (OAuth 建立) 
 
-**錯誤訊息**：從範圍 ' x_mioms_m365ticket ' 對「oauth_entity ' 進行的讀取作業已被拒絕，因為資料表的跨範圍存取原則
+**錯誤訊息** ：從範圍 ' x_mioms_m365ticket ' 對「oauth_entity ' 進行的讀取作業已被拒絕，因為資料表的跨範圍存取原則
 
 應用程式假設 ServiceNow 實例上的任何系統管理員都可以建立和讀取 OAuth 實體。 此錯誤可能是由您的 ServiceNow 實例中的自訂，用以限制誰可以建立或讀取 OAuth 實體。
 
@@ -92,7 +93,7 @@ ServiceNow 建議使用者將預設設定保留在 ServiceNow 實例中。 在�
 
 ### <a name="how-to-validate-the-oauth-entity-created-for-microsoft-365-security--compliance-connector"></a>如何驗證為 Microsoft 365 Security & 合規性連接器所建立的 OAuth 實體
 
-移至應用程式註冊表表 (**功能表 > 系統 OAuth > 應用程式** 登錄) ServiceNow。 使用您所指派的名稱，尋找您所建立的 OAuth 實體。
+移至應用程式註冊表表 ( **功能表 > 系統 OAuth > 應用程式** 登錄) ServiceNow。 使用您所指派的名稱，尋找您所建立的 OAuth 實體。
 
 ### <a name="signing-in-as-the-integration-user"></a>以整合使用者的身分登入
 
@@ -106,7 +107,7 @@ ServiceNow 建議使用者將預設設定保留在 ServiceNow 實例中。 在�
 
 ### <a name="how-to-validate-the-integration-user-created-with-the-installation-checklist-for-microsoft-365-security--compliance-connector"></a>如何驗證使用 Microsoft 365 Security & 合規性連接器安裝檢查清單所建立的整合使用者
 
-移至 [使用者] 表格 ** (功能表中 > 使用者管理 > 使用者**) 在 ServiceNow 中，並尋找您所指定的整合使用者名稱。
+移至 [使用者] 表格 **(功能表中 > 使用者管理 > 使用者** ) 在 ServiceNow 中，並尋找您所指定的整合使用者名稱。
 
 ### <a name="your-company-has-single-sign-on-enabled-which-prevents-you-from-connecting-to-servicenow-through-the-microsoft-365-security-center"></a>您的公司啟用單一登入，可防止您透過 Microsoft 365 安全中心連線到 ServiceNow。
 

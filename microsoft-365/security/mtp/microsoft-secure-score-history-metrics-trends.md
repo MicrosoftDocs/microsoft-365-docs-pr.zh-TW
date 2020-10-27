@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4f5d0a59372fb32b2802a094c247e45740ba3946
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4dfe1c9595db869a59474a030a5dd8673cf7db24
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295247"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769241"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>追蹤您的 Microsoft 安全分數記錄並符合目標
 
@@ -60,17 +60,36 @@ ms.locfileid: "48295247"
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>比較您的分數與您的組織
 
-有兩個地方可以查看您的分數如何與您的組織類似。
+有兩個地方可以查看您的分數如何與您的組織類似。 在這兩個圖表中，您可以選取 [ **管理比較** ]，以查看及編輯組織的資訊。 您也可以根據行業、組織大小、授權及地區建立自訂比較。
 
-第一個位置是在 [ **一覽** ] 索引標籤中，您可以在其中看到比較柱狀圖圖表。 將游標移至圖表上方，以查看分數和排名機會。
+#### <a name="comparison-bar-chart"></a>比較橫條圖
+
+比較橫條圖是 [ **一覽** ] 索引標籤。將游標移至圖表上方，以查看分數和排名機會。 比較資料是匿名，因此我們不會確切知道此組合中的其他租使用者。
 
 ![類似組織分數的柱狀圖圖表](../../media/secure-score/secure-score-comparison-bar.png)
 
-第二個地方是在 [ **度量 & 趨勢** ] 索引標籤中，您可以在其中查看組織的安全分數與其他時間的比較方式。
+- **像您這樣的組織** ：我們為您提供了其他承租人 (的平均分數，但前提是我們至少有5個以上的承租人，可比較符合下列準則的) ：
+    1. 相同的行業
+    2. 相同的組織規模
+    3. 所有地區
+    4. 使用的 Microsoft 產品的80% 類似
+    5. 在您的租使用者的20% 範圍內，目前的授權) 可取得的機會 (最大分數。
+
+- **自訂比較** ：只有在找到5個或更多承租人) 時，才需要先設定 [ **管理比較** (]，其依據如下的準則：
+    1. 選取的工業 (s) 
+    2. 選取的組織大小 (s) 
+    3. 選取的區域 (s) 
+    4. 選取的授權 (s) 
+    5. 使用的 Microsoft 產品的80% 類似
+    6. 在您的租使用者的20% 範圍內，目前的授權) 可取得的機會 (最大分數。
+
+如果您未選取 [自訂選取範圍] 做為選取範圍所產生的其他 tenant 小於5個其他租使用者，您將會看到「因數據有限而無法使用」。
+
+#### <a name="comparison-trend"></a>比較趨勢
+
+在 [ **度量 & 趨勢** ] 索引標籤上，查看組織的安全性分數如何與其他時間比較。
 
 ![隨時間的類似組織分數的折線圖](../../media/secure-score/secure-score-comparison-trend.png)
-
-在這兩個圖表中，您可以選取 [ **管理比較** ]，以查看及編輯組織的資訊。 您也可以根據行業、組織大小、授權及地區建立自訂比較。
 
 ## <a name="we-want-to-hear-from-you"></a>我們想要聽到您的來信
 
