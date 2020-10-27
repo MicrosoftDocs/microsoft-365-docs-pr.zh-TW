@@ -15,14 +15,14 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解 Microsoft 365 E5 或 Microsoft 365 E5 Security 中的安全檔。
-ms.openlocfilehash: cc63143d61065bc9528677ff4aec7d3433236ce0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: baa04f74388b702b42a0bdb83a7f0797ace09883
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195326"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48773946"
 ---
-# <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全檔
+# <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -32,6 +32,8 @@ ms.locfileid: "48195326"
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
 - 只有使用 *Microsoft 365 e5* 或 *Microsoft 365 e5 安全性* 授權的使用者才能使用安全檔。 這些授權不包含在 Office 365 Advanced 威脅防護 (ATP) 方案中。
+
+- Microsoft 365 Apps for enterprise (（以前稱為 Office 365 ProPlus) 版本2004或更新版本）支援安全檔。
 
 - 您要在 <https://protection.office.com> 開啟安全性與合規性中心。 若要直接移至 [ **ATP 安全附件** ] 頁面，請開啟] <https://protection.office.com/safeattachmentv2> 。
 
@@ -47,15 +49,15 @@ ms.locfileid: "48195326"
 
 ## <a name="use-the-security--compliance-center-to-configure-safe-documents"></a>使用安全性 & 規範中心設定安全檔
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，然後按一下 [ **通用設定**]。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全附件** ]，然後按一下 [ **通用設定** ]。
 
 2. 在顯示的 [ **全域設定** ] 中，設定下列設定：
 
-   - **開啟 Office 用戶端的安全檔**：向右移動切換以開啟功能： ![ 開啟開啟 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
+   - **開啟 Office 用戶端的安全檔** ：向右移動切換以開啟功能： ![ 開啟開啟 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
 
-   - **即使安全檔會將檔案識別為惡意，允許人員按一下 [受保護的檢視**]：建議您保留此選項關閉， (保持向左切換：請 ![ 關閉 ](../../media/scc-toggle-off.png)) 。
+   - **即使安全檔會將檔案識別為惡意，允許人員按一下 [受保護的檢視** ]：建議您保留此選項關閉， (保持向左切換：請 ![ 關閉 ](../../media/scc-toggle-off.png)) 。
 
-   完成後，按一下 [儲存]****。
+   完成後，按一下 [儲存]  。
 
    ![在 [ATP 安全附件] 頁面上選取全域設定後的 [安全檔] 設定。](../../media/safe-docs.png)
 
@@ -67,8 +69,8 @@ ms.locfileid: "48195326"
 Set-AtpPolicyForO365 -EnableSafeDocs <$true | $false> -AllowSafeDocsOpen <$true | $false>
 ```
 
-- _EnableSafeDocs_參數會啟用或停用整個組織的安全檔。
-- _AllowSafeDocsOpen_參數可允許或禁止使用者保留受保護的檢視 (也就是說，開啟檔) 如果檔已識別為惡意。
+- _EnableSafeDocs_ 參數會啟用或停用整個組織的安全檔。
+- _AllowSafeDocsOpen_ 參數可允許或禁止使用者保留受保護的檢視 (也就是說，開啟檔) 如果檔已識別為惡意。
 
 本範例會為整個組織啟用安全檔，並防止使用者開啟已從受保護的檢視識別為惡意的檔。
 
@@ -82,7 +84,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 
 若要確認您已啟用並設定安全檔，請執行下列任一步驟：
 
-- 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，按一下 [ **通用設定**]，然後確認 [ **開啟 Office 用戶端的安全檔** ]，而且 **即使安全檔識別為惡意設定，也可讓使用者依序按一下透過受保護的檢視** 。
+- 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全附件** ]，按一下 [ **通用設定** ]，然後確認 [ **開啟 Office 用戶端的安全檔** ]，而且 **即使安全檔識別為惡意設定，也可讓使用者依序按一下透過受保護的檢視** 。
 
 - 在 Exchange Online PowerShell 中執行下列命令，並確認屬性值：
 

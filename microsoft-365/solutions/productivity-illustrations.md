@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ae4a8b51111c53c2245005a5d863354737335ae2
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 01ee05c69a9b649ce3f0c3b93cbdb68bb7a87c69
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546179"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774111"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生產力圖例
 
@@ -64,7 +64,16 @@ Microsoft 365 企業解決方案系列提供實作 Microsoft 365 功能的指引
 |**Item**|**描述**|
 |:-----|:-----|
 |[![模型海報： Microsoft 365 的身分識別與裝置保護](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載為 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020年9月更新|請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。 此模型顯示哪些功能可比對身分識別和裝置的功能的相關資訊。  <br/> |
-   
+ 
+<a name="BKMK_ediscovery"></a>
+### <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Microsoft 365 中的高級 eDiscovery 架構
+
+高級 eDiscovery 端對端工作流程與資料流程，包含在 Microsoft 365 多地理位置環境中。 
+
+|**Item**|**描述**|
+|:-----|:-----|
+|[![模型海報： Microsoft 365 中的高級 eDiscovery 架構](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以影像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[以 PDF 格式下載](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下載為 Visio](https:download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 2020年10月更新|包括： <ul><li>  單一環境中的端對端工作流程</li><li>Microsoft 365 多地理位置環境中的端對端工作流程 </li><li>支援 EDRM 工作流程的端對端資料流程程</li> |
+  
 <!--
 
 <a name="BKMK_O365fileprotect"></a>
