@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 說明如何準備使用目錄同步處理將使用者布建至 Microsoft 365，以及使用此方法的長期優點。
-ms.openlocfilehash: 41c2ff08c8e2ae11079e82d378110d10bd7cab3e
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: b74310b0f444da118699c5ad5fbb68b15519b830
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464237"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48773982"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>準備將目錄同步處理至 Microsoft 365
 
@@ -62,7 +62,7 @@ ms.locfileid: "48464237"
 
 2. 移除 **proxyAddresses** 屬性中的任何重複值。
 
-3. 如果可能的話，請確認使用者**使用者**物件中**userPrincipalName**屬性的有效且唯一的值。 為了獲得最佳同步處理體驗，請確定 AD DS UPN 符合 Azure AD UPN。 如果使用者沒有 **userPrincipalName** 屬性的值，則 **user** 物件必須包含 **sAMAccountName** 屬性的有效且唯一的值。 移除 **userPrincipalName** 屬性中的任何重複值。
+3. 如果可能的話，請確認使用者 **使用者** 物件中 **userPrincipalName** 屬性的有效且唯一的值。 為了獲得最佳同步處理體驗，請確定 AD DS UPN 符合 Azure AD UPN。 如果使用者沒有 **userPrincipalName** 屬性的值，則 **user** 物件必須包含 **sAMAccountName** 屬性的有效且唯一的值。 移除 **userPrincipalName** 屬性中的任何重複值。
 
 4. 為 (GAL) 的全域通訊清單的最佳使用，請確定 AD DS 使用者帳戶的下列屬性資訊正確：
 
@@ -153,11 +153,11 @@ ms.locfileid: "48464237"
 
 - **userPrincipalName**
 
-  - **UserPrincipalName**屬性必須是網際網路樣式的登入格式，其中使用者名稱後面接 @ 符號 ( @ ) 和功能變數名稱：例如，user@contoso.com。 所有的簡易郵件傳輸通訊協定 (SMTP) 位址應該符合電子郵件訊息標準。
-  - **UserPrincipalName**屬性的字元數上限為113。 在 sign ( @ ) 之前和之後均可使用特定的字元數，如下所示：
+  - **UserPrincipalName** 屬性必須是網際網路樣式的登入格式，其中使用者名稱後面接 @ 符號 ( @ ) 和功能變數名稱：例如，user@contoso.com。 所有的簡易郵件傳輸通訊協定 (SMTP) 位址應該符合電子郵件訊息標準。
+  - **UserPrincipalName** 屬性的字元數上限為113。 在 sign ( @ ) 之前和之後均可使用特定的字元數，如下所示：
   - 在 sign ( @ ) 前面的使用者名稱字元數上限：64
   - At 符號 ( @ ) 所遵循的功能變數名稱字元數上限：48
-  - 無效字元： \% &amp; \* +/=？ { } | \< \> ( ) ; : , [ ] " '
+  - 無效字元： \% &amp; \* +/=？ { } | \< \> ( ) ; : , [ ] "
   - 允許的字元： A–Z，a-z，0–9，'。 - _ ! # ^ ~
   - 具有變音符的字母（例如，母音或重音）和否定符號，都是不正確字元。
   - 每個 **userPrincipalName** 值都需要 @ 字元。
@@ -170,7 +170,7 @@ ms.locfileid: "48464237"
 
 ## <a name="3-prepare-the-userprincipalname-attribute"></a>3. 準備 userPrincipalName 屬性
 
-Active Directory 的設計目的是讓您組織中的使用者可以使用 **sAMAccountName** 或 **userPrincipalName**登入您的目錄。 同樣地，使用者可以使用使用者主要名稱 (其工作或學校帳戶的 UPN) 登入 Microsoft 365。 目錄同步處理嘗試使用 AD DS 中的同一個 UPN，在 Azure Active Directory 中建立新的使用者。 UPN 的格式就像電子郵件地址。
+Active Directory 的設計目的是讓您組織中的使用者可以使用 **sAMAccountName** 或 **userPrincipalName** 登入您的目錄。 同樣地，使用者可以使用使用者主要名稱 (其工作或學校帳戶的 UPN) 登入 Microsoft 365。 目錄同步處理嘗試使用 AD DS 中的同一個 UPN，在 Azure Active Directory 中建立新的使用者。 UPN 的格式就像電子郵件地址。
 
 在 Microsoft 365 中，UPN 是用來產生電子郵件地址的預設屬性。 在 AD DS 和 Azure AD) 中取得 **userPrincipalName** (很容易，將 **proxyAddresses** 中的主要電子郵件地址設定為不同的值。 當其設定為不同值時，系統管理員和使用者可能會混淆。
 

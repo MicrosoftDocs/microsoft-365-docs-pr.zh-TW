@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: c1a7cd4d8f00c9e2433601903efd1fba7bb587f9
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: dff2ea4e144f8f8fcc0f42732141e110effe7e9e
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681729"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774090"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>在 Microsoft 365 中控制自動外部電子郵件轉接
 
@@ -35,30 +35,34 @@ Microsoft 365 提供下列自動轉送類型：
 
 您可以使用輸出垃圾郵件篩選原則來控制自動轉寄給外部收件者。 有三個可用的設定：
 
-- **自動**：封鎖自動外部轉送。 內部自動轉送郵件功能將繼續運作。 這是預設設定。
-- **開啟**：允許和不限制自動外部轉送。
-- **Off**：停用自動外部轉寄，將會造成未傳遞回報 (也稱為 NDR 或退回的郵件) 傳送給寄件者。
+- **自動** ：封鎖自動外部轉送。 內部自動轉送郵件功能將繼續運作。 這是預設設定。
+
+- **開啟** ：允許和不限制自動外部轉送。
+
+- **Off** ：停用自動外部轉寄，將會造成未傳遞回報 (也稱為 NDR 或退回的郵件) 傳送給寄件者。
 
 如需如何設定這些設定的指示，請參閱 [CONFIGURE EOP 中的外寄垃圾郵件篩選](configure-the-outbound-spam-policy.md)。
 
-**附註**：
-
-- 停用自動轉送也會停用將郵件重新導向至外部地址的收件匣規則。
-
-- 內部使用者之間的自動轉送郵件不會受到輸出垃圾郵件篩選原則中的設定。
-
-- 您可以在 [ [自動轉寄的郵件] 報告](mfi-auto-forwarded-messages-report.md)中看到自動轉送郵件至外部收件者之使用者的相關資訊。
+> [!NOTE]
+> 
+> - 停用自動轉送也會停用將郵件重新導向至外部地址的收件匣規則。
+> 
+>   Office 365 不允許由收件匣規則或信箱設定自動進行外部轉送，這會提供安全的預設原則。 不過，系統管理員可以針對組織中的所有使用者或部分使用者修改這些設定。 建立 [輸出垃圾郵件原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-outbound-spam-policy?view=o365-worldwide&preserve-view=true#use-the-security--compliance-center-to-create-outbound-spam-policies) ，並修改自動轉寄區段，以控制使用者自動將電子郵件轉送至外部寄件者。 這可以在以後套用到原則所套用的內部寄件者。 在內部使用者之間轉發郵件不會受到這類修改的影響。
+> 
+> - 您可以在 [ [自動轉寄的郵件] 報告](mfi-auto-forwarded-messages-report.md)中看到自動轉送郵件至外部收件者之使用者的相關資訊。
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>輸出垃圾郵件篩選原則設定如何使用其他自動電子郵件轉接控制項
 
 若您是系統管理員，您可能已經設定其他控制項，以允許或封鎖自動電子郵件轉發。 例如：
 
 - 可允許或封鎖自動將電子郵件轉寄至部分或所有外部網域的[遠端網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains)。
+
 - Exchange [郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) 中的條件和動作 (也稱為傳輸規則) 偵測並封鎖自動轉寄的郵件至外部收件者。
 
 遠端網域設定和郵件流程規則獨立于輸出垃圾郵件篩選原則中的設定。 例如：
 
 - 您允許遠端網域的自動轉寄，但是會封鎖輸出垃圾郵件篩選原則中的自動轉送。 在此範例中，自動轉寄的郵件會遭到封鎖。
+
 - 您可以在輸出垃圾郵件篩選原則中允許自動轉寄，但您可以使用郵件流程規則或遠端網域設定封鎖自動轉寄的電子郵件。 在此範例中，郵件流程規則或遠端網域設定會封鎖自動轉寄的郵件。
 
 這種功能的獨立功能可讓您 (例如，) 允許在輸出垃圾郵件篩選原則中自動轉寄，但使用遠端網域來控制使用者可以轉寄郵件的外部網域。
