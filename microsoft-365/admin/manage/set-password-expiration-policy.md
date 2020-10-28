@@ -21,19 +21,19 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解如何在 Microsoft 365 系統管理中心設定組織的密碼到期原則。
-ms.openlocfilehash: 59e9f4e36843d7c5d977a49d42ae0a11e9a2db25
-ms.sourcegitcommit: a6625f76e8f19eebd9353ed70c00d32496ec06eb
+ms.openlocfilehash: 39726846d591b2d1f72a89a7dc59038c726a8e80
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47362106"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787519"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>設定組織的密碼到期原則
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-worldwide) (英文)。
 
 ::: moniker-end
 
@@ -56,28 +56,24 @@ ms.locfileid: "47362106"
 > [!IMPORTANT]
 > 只有[全域系統管理員](../add-users/about-admin-roles.md)才能執行這些步驟。
   
-1. 在系統管理中心中，移至 [設定 **]** \> [組織設定 **]**。
+1. 在系統管理中心中，移至 [設定 **]** \> [組織設定 **]** 。
 
 2. 移至<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">安全性與隱私權</a>頁面。
  如果您不是全域系統管理員，就看不到 [安全性和隱私權] 選項。
   
-3. 選取 [密碼到期原則]****。
+3. 選取 [密碼到期原則]  。
   
-4. 如果您不希望使用者必須變更密碼，請選取 [將使用者密碼設定為在幾天後到期]**** 核取方塊。
+4. 如果您不希望使用者必須變更密碼，請選取 [將使用者密碼設定為在幾天後到期]  核取方塊。
   
 5. 輸入密碼應到期的頻率。 選擇介於 14 到 730 之間的天數。
   
-6. 在第二個方塊中，輸入使用者何時應收到其密碼到期的通知，然後選取 [儲存]****。 Choose a number of days from 1 to 30.
+6. 在第二個方塊中，輸入使用者何時應收到其密碼到期的通知，然後選取 [儲存]  。 Choose a number of days from 1 to 30.
 
 7. 使用者的密碼過期時，會收到通知 (顯示在其螢幕的右下角)。
   
 ## <a name="important-things-you-need-to-know-about-the-password-expiration-feature"></a>關於密碼到期功能，您應知道的重要事項
-
-有關這項功能截至 2018 年 1 月的運作情形，這裡是您需要了解的一些事項：
   
 - 在快取中的密碼過期之前，不會強制要求只使用 Outlook App 的使用者重設其 Microsoft 365 密碼。這可能會在實際到期日之後的數天發生。針對此問題，目前沒有系統管理員層級的因應措施。
-
-- 使用者不會收到其密碼即將在 X 天後過期的電子郵件通知。您想要這項功能嗎？ **[在這裡投票！](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
 
 ## <a name="prevent-last-password-from-being-used-again"></a>避免再次使用上次的密碼
 

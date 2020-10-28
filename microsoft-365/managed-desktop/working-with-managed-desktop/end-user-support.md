@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8af782095ada41f0472e1df338ced7ebe76c97fe
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 5b09b59efa6862782b04b7aa58d7c1fdc0383bb0
+ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104409"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48787531"
 ---
 # <a name="getting-help-for-users"></a>為使用者取得協助
 
@@ -25,7 +25,7 @@ ms.locfileid: "48104409"
 
 ## <a name="get-help-app"></a>取得協助應用程式
 
-為您的使用者提供支援的慣用方法，可 **協助**您在使用者裝置內建便於使用的介面。  
+為您的使用者提供支援的慣用方法，可 **協助** 您在使用者裝置內建便於使用的介面。  
 
 ![取得協助應用程式圖示](../../media/get-help.png)
 
@@ -34,7 +34,10 @@ ms.locfileid: "48104409"
 - 使用者可以要求來電回提供的電話號碼，或與服務代表線上交談。
 - 在 Microsoft 受管理桌面支援範圍之外的要求會透過電話重新導向至本機 IT 支援人員。
 
-### <a name="prerequisites"></a>必要條件
+> [!NOTE]
+> 「取得説明」應用程式的顯示語言只是英文，即使使用者在設定其裝置或裝置設定時選取了不同的語言。 
+
+### <a name="prerequisites"></a>先決條件
 為了讓您的使用者能夠透過應用程式取得協助，請確定符合下列必要條件：
 
 - 裝置必須使用 [設定 Microsoft 受管理的桌面裝置](../get-started/set-up-devices.md)中的其中一種方法，向 Microsoft managed desktop 註冊，例如 [自行註冊新裝置](../get-started/register-devices-self.md)。
@@ -71,4 +74,4 @@ ms.locfileid: "48104409"
 ## <a name="additional-resources"></a>其他資源
 - [Microsoft 受管理的電腦的系統管理員支援](admin-support.md)。 
 - [Microsoft 受管理電腦的支援](../service-description/support.md)。
-- 如果您已訂閱 Microsoft 受管理的電腦，您可以在 microsoft 管理的桌面系統管理指南中，[于 microsoft 的](https://endpoint.microsoft.com/)「**租**使用者管理」功能表的 [Microsoft 受管理的桌面] 區段**中，找到**相關的詳細程式、處理流程、工作指示及 FAQs。
+- 如果您已訂閱 Microsoft 受管理的電腦，您可以在 microsoft 管理的桌面系統管理指南中， [于 microsoft 的](https://endpoint.microsoft.com/)「 **租** 使用者管理」功能表的 [Microsoft 受管理的桌面] 區段 **中，找到** 相關的詳細程式、處理流程、工作指示及 FAQs。
