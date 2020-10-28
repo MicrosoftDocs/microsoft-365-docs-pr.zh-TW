@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6045adec673313514243b023dc6ab688387f78d8
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: c9b19066b57d40ad33ac8d50ee1bee1f4a828030
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341399"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774046"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的有問必答風險管理
 
@@ -48,10 +48,10 @@ ms.locfileid: "48341399"
 
 測試人員風險管理聚焦於以下原則：
 
-- **透明性**：透過隱私權架構，平衡使用者隱私權與組織風險。
-- **可設定的**：可根據業界、地理位置和商務群組進行設定的原則。
-- **整合**：跨 Microsoft 365 合規性解決方案的整合工作流程。
-- **可行**：提供深入瞭解使用者通知、資料調查和使用者調查。
+- **透明性** ：透過隱私權架構，平衡使用者隱私權與組織風險。
+- **可設定的** ：可根據業界、地理位置和商務群組進行設定的原則。
+- **整合** ：跨 Microsoft 365 合規性解決方案的整合工作流程。
+- **可行** ：提供深入瞭解使用者通知、資料調查和使用者調查。
 
 ## <a name="workflow"></a>工作流程
 
@@ -101,13 +101,13 @@ ms.locfileid: "48341399"
 
 ### <a name="investigate"></a>調查
 
-針對需要更深入檢查和調查原則相符的活動詳細資料及案例的提醒，會建立[案例](insider-risk-management-cases.md)。 [案例儀表板]**** 提供組織內所有使用中案例、一段時間後待處理以及案例統計資料的完整檢視。 檢閱者可以按照狀態、開啟案例的日期，以及上次更新案例的日期來快速篩選案例。
+針對需要更深入檢查和調查原則相符的活動詳細資料及案例的提醒，會建立[案例](insider-risk-management-cases.md)。 [案例儀表板]  提供組織內所有使用中案例、一段時間後待處理以及案例統計資料的完整檢視。 檢閱者可以按照狀態、開啟案例的日期，以及上次更新案例的日期來快速篩選案例。
 
 在案例儀表板上選取案例即可開啟要調查和檢閱的案例。 此步驟是測試人員風險管理工作流程的核心。 在此範圍內，風險活動、原則狀況、提醒詳細資料和使用者詳細資料會合成到檢閱者的整合式視圖中。 此區域中的主要調查工具如下：
 
-- **使用者活動**：使用者活動會自動顯示在互動式圖表中，此圖表會隨著時間及目前或過去的風險活動的風險層級來繪製活動。 檢閱者可以快速篩選和查看使用者的整個風險歷程記錄，並深入查看特定活動以取得詳細資訊。
-- **內容瀏覽器**：系統會自動捕獲與警示活動相關聯的所有資料檔案和電子郵件訊息，並將其顯示在內容瀏覽器中。 檢閱者可以依照資料來源、檔案類型、標記、交談和其他更多屬性篩選和查看檔案和郵件。
-- **案例附注**：檢閱者可以在案例記事區段中提供案例的附注。 此清單會整合集中檢視中的所有附註，並包括檢閱者和提交日期資訊。
+- **使用者活動** ：使用者活動會自動顯示在互動式圖表中，此圖表會隨著時間及目前或過去的風險活動的風險層級來繪製活動。 檢閱者可以快速篩選和查看使用者的整個風險歷程記錄，並深入查看特定活動以取得詳細資訊。
+- **內容瀏覽器** ：系統會自動捕獲與警示活動相關聯的所有資料檔案和電子郵件訊息，並將其顯示在內容瀏覽器中。 檢閱者可以依照資料來源、檔案類型、標記、交談和其他更多屬性篩選和查看檔案和郵件。
+- **案例附注** ：檢閱者可以在案例記事區段中提供案例的附注。 此清單會整合集中檢視中的所有附註，並包括檢閱者和提交日期資訊。
 
 ![測試人員風險調查](../media/insider-risk-investigate.png)
 
@@ -117,9 +117,12 @@ ms.locfileid: "48341399"
 
 在較嚴重的情況下，您可能需要與組織中的其他檢閱者或服務共用內部使用者風險管理案例資訊。 有問必答風險管理與其他 Microsoft 365 合規性解決方案緊密整合，以協助您進行端對端的風險解決。
 
-- **Advanced ediscovery**：上報調查案例可讓您將案例的資料和管理轉移至 Microsoft 365 中的「高級 eDiscovery」。 進階電子文件探索提供端對端工作流程，可讓您保留、收集、檢閱、分析及匯出您組織內部及外部調查所需的內容。 這可讓法務小組管理整個法務保存措施通知工作流程。 若要深入了解進階電子文件探索案例，請參閱[ Mcrosoft 365 中的進階電子文件探索概觀](overview-ediscovery-20.md)。
-- **ServiceNow (preview) **： ServiceNow 是一個流行的雲端計算平臺，可協助組織管理企業作業的數位工作流程。 有問必答風險管理支援與您的 ServiceNow 服務共用案例通知，並可讓您建立與個別內部使用者風險案例相關的事件及變更要求。 若要深入瞭解如何與 ServiceNow 共用提醒資訊，請參閱 [與 ServiceNow 共用案例](insider-risk-management-cases.md#share-the-case)。
-- **Office 365 Management APIs integration (preview) **：「內部人員風險管理」支援透過 Office 365 管理) 將警示資訊匯出至安全性資訊和事件管理 (SIEM APIs 服務。 在平臺中存取警示資訊最適合組織的風險流程，可讓您更靈活地處理風險活動。 若要深入瞭解使用 Office 365 管理 APIs 匯出提醒資訊，請參閱 [匯出警示](insider-risk-management-settings.md#export-alerts-preview)。
+- **Advanced ediscovery** ：上報調查案例可讓您將案例的資料和管理轉移至 Microsoft 365 中的「高級 eDiscovery」。 進階電子文件探索提供端對端工作流程，可讓您保留、收集、檢閱、分析及匯出您組織內部及外部調查所需的內容。 這可讓法務小組管理整個法務保存措施通知工作流程。 若要深入了解進階電子文件探索案例，請參閱[ Mcrosoft 365 中的進階電子文件探索概觀](overview-ediscovery-20.md)。
+- **ServiceNow (preview)** ： ServiceNow 是一個流行的雲端計算平臺，可協助組織管理企業作業的數位工作流程。 有問必答風險管理支援與您的 ServiceNow 服務共用案例通知，並可讓您建立與個別內部使用者風險案例相關的事件及變更要求。 若要深入瞭解如何與 ServiceNow 共用提醒資訊，請參閱 [與 ServiceNow 共用案例](insider-risk-management-cases.md#share-the-case)。
+- **Office 365 Management APIs integration (preview)** ：「內部人員風險管理」支援透過 Office 365 管理) 將警示資訊匯出至安全性資訊和事件管理 (SIEM APIs 服務。 在平臺中存取警示資訊最適合組織的風險流程，可讓您更靈活地處理風險活動。 若要深入瞭解使用 Office 365 管理 APIs 匯出提醒資訊，請參閱 [匯出警示](insider-risk-management-settings.md#export-alerts-preview)。
+
+>[!NOTE]
+>ServiceNow 預覽會在 30 2020 年11月結束，而且不會繼續進行。 感謝您的意見反應和支援，我們會決定接下來的步驟。
 
 ## <a name="scenarios"></a>案例
 

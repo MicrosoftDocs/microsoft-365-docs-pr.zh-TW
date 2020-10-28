@@ -17,20 +17,20 @@ ms.collection:
 - M365-security-compliance
 description: 使用 Office 365 Advanced Message Encryption，透過自訂的署名範本來設定電子郵件的到期日，以擴充電子郵件的安全性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0dcf9c82f9204f1357b49411d0ca87e87007eb96
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: bbd018e55592e5b17149edf1a4dc0907c0184417
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546157"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48769163"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-office-365-advanced-message-encryption"></a>為由 Office 365 進階郵件加密所加密的電子郵件設定到期日
 
 Office 365 Advanced Message Encryption 包含在 [Microsoft 365 企業版 e5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 E5 (非盈利性員工定價) 、Office 365 企業版 E5 (非盈利性員工定價) 和 Office 365 教育版 A5。 如果您的組織中有未包含 Office 365 Advanced Message Encryption 的訂閱，您可以使用 microsoft 365 E5 相容性 SKU 附加元件（適用于 Microsoft 365 E3）購買它; microsoft 365 E3 (非盈利性員工定價) ，或 Office 365 的高級合規性 SKU 附加元件（適用于 Microsoft 365 E3），Microsoft 365 E3 (非盈利性員工定價) 或 Office 365 SKUs。
 
-您可以使用郵件到期的電子郵件，讓使用者傳送給使用 OME 入口網站來存取加密電子郵件的外部收件者。 您可以使用 OME 入口網站，透過在 Windows Powershell 中指定到期日的自訂署名範本，以查看及回復組織所傳送的加密電子郵件。
+您可以使用郵件到期的電子郵件，讓使用者傳送給使用 OME 入口網站來存取加密電子郵件的外部收件者。 您可以使用 OME 入口網站，透過在 Windows PowerShell 中指定到期日的自訂署名範本，以查看及回復組織所傳送的加密電子郵件。
 
-作為 O365 全域管理員，當您套用公司品牌以自訂群組織的電子郵件訊息的外觀時，您也可以指定這些電子郵件的到期日期。 使用 Office 365 Advanced Message Encryption，您可以建立多個範本，以用於來自組織的加密電子郵件。 使用範本，您可以控制收件者存取使用者所傳送之郵件的時間長短。
+身為 Office 365 全域系統管理員，當您套用公司品牌以自訂群組織的電子郵件訊息的外觀時，您也可以指定這些電子郵件的到期日期。 使用 Office 365 Advanced Message Encryption，您可以建立多個範本，以用於來自組織的加密電子郵件。 使用範本，您可以控制收件者存取使用者所傳送之郵件的時間長短。
 
 當使用者收到具有到期日設定的郵件時，使用者會看到包裝電子郵件中的到期日。 如果使用者嘗試開啟到期的郵件，則會在 OME 入口網站中顯示錯誤。
 
@@ -42,11 +42,11 @@ Office 365 Advanced Message Encryption 包含在 [Microsoft 365 企業版 e5](ht
 
 1. 使用具備組織中全域系統管理員許可權的帳戶，連線[至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 。
 
-2. 執行 Set-omeconfiguration Cmdlet。
+2. 執行 New-OMEConfiguration Cmdlet。
 
-     ```powershell
-     New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
-     ```
+    ```powershell
+    New-OMEConfiguration -Identity "Expire in 7 days" -ExternalMailExpiryInDays 7
+    ```
 
 其中：
 
