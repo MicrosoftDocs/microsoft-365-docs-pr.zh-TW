@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 當您使用有效的工作或學校帳戶登入時，使用者可在 Microsoft 365 體驗中取得使用 Cortana 的雲端協助服務，以符合 Office 365 的企業級隱私權、安全性和合規性承諾。
-ms.openlocfilehash: e7464525774e15d5b54f1b2321948aef5d998558
-ms.sourcegitcommit: c692bdc186fb29499816e8bb2addcddef34d23d3
+ms.openlocfilehash: aaef43f33bb06bf43d5e68fbc2509686fc8dd371
+ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "46818298"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48785535"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -83,25 +83,25 @@ Windows 10 版本2004和更新版本中的 cortana，符合 Cortana enterprise �
 
 ### <a name="cortana-voice-assistance-in-teams"></a>小組中的 Cortana 語音協助
 
-「小組行動應用程式」中的 Cortana 語音協助可讓 Microsoft 365 企業使用者利用口述自然語言來簡化通訊、共同作業和會議相關的工作。 使用者可以按一下位於小組行動應用程式右上方的麥克風按鈕，對 Cortana 講話。 在旅途中，使用者可以進行語音查詢，例如「呼叫 Megan」或「將郵件傳送到我的下一個會議」，以與其他人進行連接。 使用者也可以說「加入我的後續會議」，並使用語音協助來共用檔案、檢查其行事曆等等，以加入會議。 這些語音協助經驗是使用 Cortana 企業級服務來提供，這些服務完全符合 Office 365 的隱私權、安全性和合規性承諾，反映在 [線上服務條款 (OST) ](https://www.microsoft.com/licensing/product-licensing/products)中。
+「小組行動應用程式」和 Microsoft 小組顯示裝置中的 Cortana 語音協助可讓 Microsoft 365 企業使用者利用口述自然語言來簡化通訊、共同作業和會議相關工作。 使用者可以透過選取位於小組行動應用程式右上方的麥克風按鈕，或是說 Microsoft 小組顯示中 &#8220;Cortana&#8221;，對 Cortana 講話。 若要快速地與其小組直接連線，使用者可以說 &#8220;呼叫 Megan&#8221; 或 &#8220;將郵件傳送至下一個會議&#8221;。 使用者也可以說 &#8220;加入我的下一個會議&#8221; 並使用語音協助來共用檔案、檢查其行事曆等等，以加入會議。 這些語音協助經驗是使用 Cortana 企業級服務來提供，這些服務完全符合 Office 365 的隱私權、安全性和合規性承諾，反映在 [線上服務條款 (OST) ](https://www.microsoft.com/licensing/product-licensing/products)中。
 
 **系統管理控制**
 
-預設會為承租人啟用 Cortana 語音協助。 系統管理員可以透過原則 (TeamsCortanaPolicy) ，控制其承租人中的使用者可以透過團體使用 Cortana 語音協助。 這個原則可以設定為使用者帳戶層級或租使用者層級。 系統管理員也可以使用此原則控制中的 [CortanaVoiceInvocationMode] 欄位，判斷 Cortana 是否已停用、只使用推入按鈕叫用，或使用喚醒字呼叫啟用（也就是透過喚醒字呼叫啟用），也 (適用于支援它) 的裝置 請注意，在 Microsoft 365 企業使用者的初次發行的初次發行時，小組行動應用程式不會支援喚醒 word 啟用，但未來會受到支援。
+預設會為承租人啟用 Cortana 語音協助。 系統管理員可以透過原則 (TeamsCortanaPolicy) ，控制其承租人中的使用者可以透過團體使用 Cortana 語音協助。 這個原則可以設定為使用者帳戶層級或租使用者層級。 系統管理員也可以使用此原則控制中的 CortanaVoiceInvocationMode 欄位，判斷 Cortana 是否已停用、只使用推入按鈕叫用，或透過喚醒字詞呼叫啟用（ (如 Microsoft 小組顯示) 所示）。 請注意，在 Microsoft 365 企業使用者的初次發行的初次發行時，小組行動應用程式不會支援喚醒 word 啟用，但未來會受到支援。
 
 **使用者控制項**
 
-個別使用者可以透過按一下 [麥克風] 按鈕，嘗試使用「小組行動應用程式」中的 Cortana 語音協助。 他們也可以透過小組行動應用程式中的設定，控制是否為其裝置啟用團體中的 Cortana。 
+個別使用者可以透過按一下 [麥克風] 按鈕，嘗試使用「小組行動應用程式」中的 Cortana 語音協助。 他們可以在 Microsoft 小組顯示裝置上嘗試使用 Cortana 語音協助，只是說 &#8220;Cortana。 &#8221; 使用者也可以透過 [小組行動應用程式] 或 [Microsoft 小組] 顯示中的設定，控制是否為其裝置啟用使用者的 Cortana： 
 
-1. 開啟小組行動應用程式。
+1. 開啟 [小組行動應用程式]，或移至 Microsoft 小組顯示幕的 [環境 (首頁) ] 畫面。
 
-2. 移至 [ **設定**]。
+2. 在小組行動應用程式中，移至 [ **設定** ]。 在 [Microsoft 小組] 顯示中，選取 [使用者頭像]，然後選取 [設定]。 如果已啟用 Cortana，請說 &#8220;Cortana，請移至 [設定]。 &#8221;
 
-3. 選取 [ **Cortana**]。
+3. 選取 [ **Cortana** ]。
 
-4. 將切換移至 [開啟] 或 [關閉]，取決於您是否要在此裝置上進行 Cortana 語音協助。
+4. 視您是否要在裝置上的小娜語音協助，將切換移至 [ **開啟** ] 或 [ **關閉** ]。
 
-[深入瞭解小組中的 Cortana 語音協助](https://support.microsoft.com/en-us/office/using-cortana-voice-assistance-in-teams-274bb2f0-d962-4182-b45d-307435cea256?ui=en-us&rs=en-us&ad=us)
+[深入瞭解小組中的 Cortana 語音協助](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
 
 ### <a name="play-my-emails"></a>播放我的電子郵件
 
@@ -115,9 +115,9 @@ Windows 10 版本2004和更新版本中的 cortana，符合 Cortana enterprise �
 
 1. 開啟 Outlook mobile。
 
-2. 移至 [ **設定**]。
+2. 移至 [ **設定** ]。
   
-3. 選取 [ **播放我的電子郵件**]。
+3. 選取 [ **播放我的電子郵件** ]。
 
 4. 在您要停用的帳戶上，將切換移至 [關閉]。
 
@@ -141,7 +141,7 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 以下是兩種方式來考慮 Cortana 在企業中的運作方式：
 
-**使用 cortana enterprise 服務之組織的新體驗**： cortana enterprise 服務的設計目的是為了符合組織的安全性和合規性需求： 
+**使用 cortana enterprise 服務之組織的新體驗** ： cortana enterprise 服務的設計目的是為了符合組織的安全性和合規性需求： 
 
 1. 這是一項新服務，在此檔中會加以討論。
 
@@ -151,7 +151,7 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 4. IT 系統管理員在使用 Office ProPlus 應用程式時，系統管理員一定會具有 Cortana 選用的連接體驗的控制項，類似選用的連線體驗。  
 
-**現有的消費者服務**： Cortana 選用聯機服務主要是針對使用者經驗所設計，目前是在 Windows 10 (版本1909和更舊版本) 以及 IOS 和 Android 上的 Cortana 應用程式中傳遞。
+**現有的消費者服務** ： Cortana 選用聯機服務主要是針對使用者經驗所設計，目前是在 Windows 10 (版本1909和更舊版本) 以及 IOS 和 Android 上的 Cortana 應用程式中傳遞。
 
 1. 這些經驗可以啟用天氣、新聞及流量等功能。
 
@@ -159,10 +159,10 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 關閉 Cortana 對您組織的 Microsoft 主控資料的存取
 
-1. 在 Microsoft 365 系統管理中心中，選取 [**設定**  >  **組織設定**]，然後選取 [ **Cortana**]。
+1. 在 Microsoft 365 系統管理中心中，選取 [ **設定**  >  **組織設定** ]，然後選取 [ **Cortana** ]。
 
 2. 取消選取 [ **允許 Windows 10 (版本1909和更) 舊版本中的 cortana] 的核取方塊，以及 iOS 和 Android 上的 cortana 應用程式，以在組織中代表人員，存取 Microsoft 主控的資料，** 以停用 Cortana 連線體驗。
 
-3. 選取 **[儲存變更]**。
+3. 選取 **[儲存變更]** 。
 
 針對 [Microsoft 服務合約](https://go.microsoft.com/fwlink/p/?LinkId=2109174) 和 [microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)所控制的服務，microsoft 是資料控制器。 就像資料控制者一樣，Microsoft 會使用資料，依照 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)來改進產品和服務。
