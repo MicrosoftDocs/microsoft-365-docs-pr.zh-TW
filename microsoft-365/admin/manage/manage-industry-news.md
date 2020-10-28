@@ -15,16 +15,16 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 為您的使用者提供有關您行業和組織資訊的最新資訊資訊，使用新聞服務可為您的組織啟用自訂的新聞摘要。
-ms.openlocfilehash: 003855e366e8ad4c9e7abdcf1a0c2a53ec49ec2f
-ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
+ms.openlocfilehash: 718e48c9db90ff7e598dd56c0228bb894b7a3a4d
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48770082"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779175"
 ---
 # <a name="manage-industry-news"></a>管理行業新聞
 
-若要為您的使用者提供有關您行業和組織資訊的最新新聞標題，請使用 [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 服務為您的組織啟用自訂的新聞摘要。您也可以管理 Bing 首頁的設定。
+若要為您的使用者提供有關您行業和組織資訊的最新新聞標題，請使用 [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 服務為您的組織啟用自訂的新聞摘要。您也可以從 Edge 87) 的版本開始，管理 Bing 首頁和 Microsoft Edge [新增] 索引標籤頁面的設定 (。
 
 ## <a name="what-your-users-will-see"></a>您的使用者將會看到的內容
 
@@ -40,23 +40,25 @@ ms.locfileid: "48770082"
 
 ## <a name="news-settings"></a>新聞設定
 
-身為系統管理員，您可以控制組織的新聞摘要設定，包括所選的行業及 Bing 首頁，以及 Microsoft Edge new tab 頁面。
-
-
+身為系統管理員，您可以控制組織的新聞摘要設定，包括所選的行業及 Bing 首頁，以及 Microsoft Edge 的 [新增] 索引標籤頁面 (從 Edge 87) 的版本開始。
 
 1. 在 Microsoft 365 系統管理中心中，移至 [ **設定** ] [  >  **組織設定**  >  **服務**  >  [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)]
 2. 在 [ **新聞** ] 面板中，按一下 [ **一般** ] 索引標籤
 3. 在 [ **行業** ] 清單中，選取您組織的行業。 這會決定出現在組織新摘要中的一般新聞。 Microsoft 可使用您帳戶中的資訊，預先選取一個行業。 您可以透過更新行業清單來移除或新增行業。
 4. 在 [ **主題** ] 欄位中，輸入您要查看有關的資訊相關主題。 您的使用者將無法變更這些主題。
-5. 您可以在 **排除內容** 欄位中封鎖文章及包含關鍵字。 例如，若要避免包含關鍵字 "bake" 的文章顯示在資訊摘要中，請在 Exclude 內容欄位中新增關鍵字 "bake"。 請避免將一般字詞（包括 (、it 和等等） ) ，以封鎖您的企業新聞摘要中顯示相關的內容。
+5. 您可以在 **排除內容** 欄位中封鎖包含關鍵字的文章。  例如，若要避免包含關鍵字 "bake" 的文章顯示在資訊摘要中，請在 Exclude 內容欄位中新增關鍵字 "bake"。 請避免將一般字詞（包括 (、it 和等等） ) ，以封鎖您的企業新聞摘要中顯示相關的內容。
 6. 選取 [儲存]  。 最多可能需要24小時的時間，才會顯示變更。
 
 ## <a name="bing-homepage"></a>Bing 首頁
 
-您可以自訂 Bing 首頁，以包含有關您行業的新聞。 在 Microsoft 365 系統管理中心中，移至 [ **設定** ] [  >  **組織設定**  >  **服務**  >  [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)]。 在 [ **新聞** ] 面板中，按一下 [ **bing 首頁** ] 索引標籤，然後選取 [ **納入 bing 首頁** ]。 行業資訊會出現在 Bing.com 中組織的個人化資訊底下。
+您可以自訂 Bing 首頁，以包含有關您行業的新聞。 
+
+1. 在 Microsoft 365 系統管理中心中，移至 [ **設定** ] [  >  **組織設定**  >  **服務**  >  [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)]。 
+2. 在 [ **新聞** ] 面板中，按一下 [ **bing 首頁** ] 索引標籤，然後選取 [ **納入 bing 首頁** ]。
+3. 行業資訊會出現在 Bing.com 中組織的個人化資訊底下。
 
 ## <a name="microsoft-edge-new-tab-page"></a>Microsoft Edge [新增] 索引標籤頁面 
-當您的使用者使用有效的工作或學校帳戶登入 Microsoft Edge 時，他們就能看到為您的組織量身定做的資訊。
+當您的使用者使用有效的工作或學校帳戶登入 Microsoft Edge (版本87或更高) 時，他們就能看到為您的組織量身定做的資訊。
 
 1. 在 Microsoft 365 系統管理中心中，移至 [ **設定** ] [  >  **組織設定**  >  **服務**  >  [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews)]。
 2. 在 [ **新聞** ] 面板中，按一下 [ **Microsoft Edge 新增]** 索引標籤頁面。
