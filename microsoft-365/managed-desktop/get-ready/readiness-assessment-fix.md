@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2c9638dc7b8c6d095b87cf81114f3812c8362597
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656130"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795114"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正準備工作評估工具所找到的問題
 
-針對每個檢查，該工具會報告三個可能結果中的其中一項：
+針對每個檢查，該工具會報告下列四個可能的結果之一：
 
 
 |結果  |意義  |
@@ -26,6 +26,7 @@ ms.locfileid: "48656130"
 |就緒     | 完成註冊之前，不需要執行任何動作。        |
 |諮詢    | 請遵循工具或本文中的步驟，以取得註冊和使用者的最佳體驗。 您 *可以* 完成註冊，但是必須先修正這些問題，再部署第一個裝置。        |
 |未就緒 | *如果您未修正這些問題，註冊將會失敗。* 請遵循工具或本文中的步驟加以解決。        |
+|錯誤 | 您所使用的 Azure Active Director (AD) 角色，沒有足夠的許可權可執行這種檢查。 |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 
@@ -70,7 +71,17 @@ Azure AD 組織中的條件式存取原則不得以任何 Microsoft 管理桌面
 
 **諮詢**
 
-請確定任何條件式存取原則都排除了 **現代的 Workplace Service 帳戶** Azure AD 群組。 如需步驟，請參閱 [調整條件式存取](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access)。 **新式的 Workplace Service 帳戶**Azure AD 群組是我們在您註冊時，為服務建立的動態群組。 註冊後，您必須回到以排除此群組。 如需這些服務帳戶的詳細資訊，請參閱 [標準運作程式](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+請確定任何條件式存取原則都排除了 **現代的 Workplace Service 帳戶** Azure AD 群組。 如需步驟，請參閱 [調整條件式存取](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access)。 **新式的 Workplace Service 帳戶** Azure AD 群組是我們在您註冊時，為服務建立的動態群組。 註冊後，您必須回到以排除此群組。 如需這些服務帳戶的詳細資訊，請參閱 [標準運作程式](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+
+**Error**
+
+Intune 系統管理員角色沒有足夠的許可權可進行這種檢查。 您也需要指派的任何 Azure AD 角色，以執行這項檢查：
+
+- 安全性讀取者
+- 安全性系統管理員
+- 條件式存取管理員
+- 全域讀取者
+- 裝置管理員
 
 
 ### <a name="device-compliance-policies"></a>裝置合規性原則
@@ -107,7 +118,7 @@ Microsoft 受管理的桌面裝置必須能夠在 Intune 中註冊。
 
 **未就緒**
 
-依照 [設定註冊限制](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) 中的步驟，將設定變更為 [ **允許**]。
+依照 [設定註冊限制](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) 中的步驟，將設定變更為 [ **允許** ]。
 
 
 ### <a name="enrollment-status-page"></a>註冊狀態頁面
@@ -116,7 +127,7 @@ Microsoft 受管理的桌面裝置必須能夠在 Intune 中註冊。
 
 **未就緒**
 
-您已設定 ESP 預設設定檔來 **顯示應用程式和設定檔設定進度**。 請遵循 [設定 [註冊狀態] 頁面](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步驟，停用此設定。
+您已設定 ESP 預設設定檔來 **顯示應用程式和設定檔設定進度** 。 請遵循 [設定 [註冊狀態] 頁面](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步驟，停用此設定。
 
 **諮詢**
 
@@ -128,7 +139,7 @@ Azure AD 組織中的 Windows 10 裝置必須在 Intune 中自動註冊。
 
 **未就緒**
 
-Azure AD 組織中的使用者不會在 Microsoft Intune 中自動註冊。 將 MDM 使用者範圍變更為 [ **部分** ] 或 [ **全部**]。 如果您選擇。 有些 * * 會在註冊後傳回，並選取 **新式的工作場所-** **群組**的所有 Azure AD 群組。
+Azure AD 組織中的使用者不會在 Microsoft Intune 中自動註冊。 將 MDM 使用者範圍變更為 [ **部分** ] 或 [ **全部** ]。 如果您選擇 [ **部分** ]，請在註冊後再進行註冊，然後選取 [ **現代工作場所-** **群組** 的所有 Azure AD 群組]。
 
 
 ### <a name="microsoft-store-for-business"></a>商務用 Microsoft Store
@@ -150,8 +161,17 @@ Azure AD 組織中的使用者不會在 Microsoft Intune 中自動註冊。 將 
 
 **諮詢**
 
-請確定任何需要 MFA 的條件式存取原則排除 **新式的 Workplace-所有** Azure AD 群組。 如需詳細資訊，請參閱 [條件式存取原則](#conditional-access-policies) 和 [條件式存取：針對所有使用者需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。 **新式的工作場所-所有**Azure AD 群組是我們在您註冊 Microsoft Managed Desktop 時所建立的動態群組，所以您必須在註冊後傳回排除此群組。
+請確定任何需要 MFA 的條件式存取原則排除 **新式的 Workplace-所有** Azure AD 群組。 如需詳細資訊，請參閱 [條件式存取原則](#conditional-access-policies) 和 [條件式存取：針對所有使用者需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。 **新式的工作場所-所有** Azure AD 群組是我們在您註冊 Microsoft Managed Desktop 時所建立的動態群組，所以您必須在註冊後傳回排除此群組。
 
+**Error**
+
+Intune 系統管理員角色沒有足夠的許可權可進行這種檢查。 您也需要指派的任何 Azure AD 角色，以執行這項檢查：
+
+- 安全性讀取者
+- 安全性系統管理員
+- 條件式存取管理員
+- 全域讀取者
+- 裝置管理員
 
 
 ### <a name="powershell-scripts"></a>PowerShell 腳本
@@ -185,7 +205,7 @@ Microsoft 受管理的電腦不支援 Azure AD 組織所在的一或多個國家
 
 **諮詢**
 
-請確定所有的安全性基準原則都排除 Microsoft 受管理的桌面裝置。 如需步驟，請參閱 [使用安全性基準在 Intune 中設定 Windows 10 裝置](https://docs.microsoft.com/mem/intune/protect/security-baselines)。 **新式的工作場所裝置-所有**Azure AD 群組是我們在您註冊 Microsoft Managed Desktop 時所建立的動態群組，所以您必須在註冊後傳回排除此群組。
+請確定所有的安全性基準原則都排除 Microsoft 受管理的桌面裝置。 如需步驟，請參閱 [使用安全性基準在 Intune 中設定 Windows 10 裝置](https://docs.microsoft.com/mem/intune/protect/security-baselines)。 **新式的工作場所裝置-所有** Azure AD 群組是我們在您註冊 Microsoft Managed Desktop 時所建立的動態群組，所以您必須在註冊後傳回排除此群組。
 
 
 ### <a name="windows-apps"></a>Windows 應用程式
@@ -222,7 +242,7 @@ Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的
 
 **諮詢**
 
-請確定任何更新環原則您已排除現代的 **工作場所-所有** Azure AD 群組。 如需步驟，請參閱 [在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 **新式的工作場所裝置-所有**Azure AD 群組是我們在您註冊 Microsoft Managed Desktop 時所建立的動態群組，所以您必須在註冊後傳回排除此群組。
+請確定任何更新環原則您已排除現代的 **工作場所-所有** Azure AD 群組。 如需步驟，請參閱 [在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 **新式的工作場所裝置-所有** Azure AD 群組是我們在您註冊 Microsoft Managed Desktop 時所建立的動態群組，所以您必須在註冊後傳回排除此群組。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 設定
@@ -234,7 +254,7 @@ Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的
 
 **諮詢**
 
-確定 **AllowAdHocSubscriptions** 設定為 **True**。 否則，企業狀態漫遊可能無法運作。 如需詳細資訊，請參閱 [MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
+確定 **AllowAdHocSubscriptions** 設定為 **True** 。 否則，企業狀態漫遊可能無法運作。 如需詳細資訊，請參閱 [MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
 
 
 ### <a name="enterprise-state-roaming"></a>企業狀態漫遊
@@ -297,6 +317,11 @@ Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的
 **諮詢**
 
 請確定 SSPR **選取** 的設定包括 Microsoft 受管理的桌面裝置。
+
+**Error**
+
+Intune 系統管理員角色沒有足夠的許可權可進行這種檢查。 您也需要指派給執行這種檢查的「報告讀取器 Azure AD」角色。
+
 
 ### <a name="standard-user-role"></a>標準使用者角色
 

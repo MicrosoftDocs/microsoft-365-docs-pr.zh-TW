@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ROBOTS: NOINDEX, NOFOLLOW
 description: 隱私權對生產力分數的保護方式。
-ms.openlocfilehash: 1af2553e67b4f14e9783c23d679a7ac96443512a
-ms.sourcegitcommit: e8b3855302fc34d09b6df6c737033a2f326d6eee
+ms.openlocfilehash: 62ff3a9f0434421cbe1115f13376e92bd9f3cac9
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48770026"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794974"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>生產力分數的隱私權控制
 
@@ -55,7 +55,21 @@ ms.locfileid: "48770026"
 
 將「報告讀取者」角色指派給負責變更管理和採用的任何人員。 此角色可讓他們存取完整的經驗，包括租使用者層級計量和每個使用者層級的詳細資料。
 
-人員經驗報告包含每一組使用者的活動詳細資料頁面。 指派名為流量摘要報告讀取器的自訂角色。 (可從29年10月 2020) 取得，只允許存取人員經驗的匯總度量。
+人員經驗報告包含每一組使用者的活動詳細資料頁面。 指派名為流量摘要報告讀取器的自訂角色。 (可從29年10月 2020) 取得，只允許存取人員經驗的匯總度量。 此角色必須透過 PowerShell Cmdlet 進行指派，直到它可從11/15/2020 上的 Microsoft 系統管理中心變為可指派。
+
+指派使用狀況摘要報告讀取器角色與 PowerShell:
+
+- 執行下列 PowerShell:
+
+```powershell
+Connect-AzureAD
+$role=Get-AzureADDirectoryRole -Filter "roleTemplateId eq '75934031-6c7e-415a-99d7-48dbd49e875e'"
+Get-AzureADDirectoryRoleMember -ObjectId $role.ObjectId
+$u=Get-AzureADUser -ObjectId <user upn>
+Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
+```
+
+</br>
 
 :::image type="content" source="../../media/communicationspage.jpg" alt-text="生產力報告中的通訊頁面。":::
 

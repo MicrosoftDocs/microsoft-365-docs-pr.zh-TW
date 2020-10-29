@@ -13,21 +13,23 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: 瞭解如何為您的國家或地區聯繫支援人員。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cd7790e51ae5c110b00739f608e7dd3e1bc560b2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 08f49d491de8079c9ea3373861f22ed6c4825db3
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641060"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794986"
 ---
 # <a name="contact-support-for-mexico"></a>針對墨西哥的支援聯繫
 
 [尋找其他國家或地區](../contact-support-for-business-products.md)。
 
 ## <a name="phone-number"></a>電話號碼
-01 800 563 0605
+
+800 563 0605
 
 ## <a name="hours"></a>小時
+
 ### <a name="billing-support"></a>帳單支援︰
 
 西班牙文： Mon-Fri 上午9點-下午5點
@@ -36,6 +38,6 @@ ms.locfileid: "48641060"
 
 西班牙文：每週7天，每天24小時
 
-替代電話號碼： 01 55 4738 6567
+替代電話號碼： 55 4738 6567
 
 適用本機通話費用

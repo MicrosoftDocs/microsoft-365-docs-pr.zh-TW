@@ -9,18 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c574be6d171a230479d8b6c96e2e0a1dec8a87ac
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48656133"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48795102"
 ---
 # <a name="readiness-assessment-tool"></a>準備工作評估工具
 
 若要在 Microsoft 受管理的電腦上登錄時產生最平滑的可能體驗，您必須預先設定許多設定及其他參數。 您可以使用此工具檢查這些設定，並取得修復任何非正確步驟的詳細步驟。
 
-工具會檢查 Microsoft 端點管理員中的設定 (具體地說，Microsoft Intune) ，Azure Active Directory (Azure AD) 和 Microsoft 365，以確保它們能夠與 Microsoft 受管理的電腦搭配使用。 在您上次於 Azure AD 組織 (租使用者) 中執行檢查後，Microsoft 受管理的桌面會保留與這些檢查相關的資料。  12個月後，我們會將它保留在解除識別的表單中。  您可以選擇刪除我們收集的資料。
+工具會檢查 Microsoft 端點管理員中的設定 (具體地說，Microsoft Intune) ，Azure Active Directory (Azure AD) 和 Microsoft 365，以確保它們能夠與 Microsoft 受管理的電腦搭配使用。 在您上次於 Azure AD 組織 (租使用者) 中執行檢查後，Microsoft 受管理的桌面會保留與這些檢查相關的資料。 12個月後，我們會將它保留在解除識別的表單中。  您可以選擇刪除我們收集的資料。
+
+任何至少具有 Intune 系統管理員角色的人員，都可以執行此工具，但有三個檢查 ([憑證連接器](readiness-assessment-fix.md#certificate-connectors)、 [多重要素驗證](readiness-assessment-fix.md#multi-factor-authentication)和 [自助密碼重設](readiness-assessment-fix.md#self-service-password-reset)) 需要其他許可權。
  
 評估工具會檢查下列專案：
 
@@ -31,7 +33,7 @@ ms.locfileid: "48656133"
 |Autopilot 部署設定檔     | 驗證 Autopilot 部署設定檔的指派是否不會套用到所有的裝置 (設定檔 *不應該指派* 給任何 Microsoft 受管理的桌面裝置。 )        |
 |憑證連接器     | 檢查憑證連接器的狀態，以確保它們為作用中狀態。   |
 |條件式存取     | 驗證是否 *未將條件* 式存取原則指派給所有使用者 (條件式存取原則不得指派給 Microsoft Managed Desktop 服務帳戶。 )     |
-|裝置合規性原則     | 檢查是否未將 Intune 規範原則指派給所有使用者 (*不* 應該將原則指派給任何 Microsoft 受管理的桌面裝置。 )     |
+|裝置合規性原則     | 檢查是否未將 Intune 規範原則指派給所有使用者 ( *不* 應該將原則指派給任何 Microsoft 受管理的桌面裝置。 )     |
 |裝置設定檔     | 確認設定設定檔並未指派給所有的使用者或所有裝置 (設定檔 *不* 應該指派給任何 Microsoft 受管理的桌面裝置。 )      |
 |裝置類型限制     | 檢查您組織中的 Windows 10 裝置是否可在 Intune 中註冊        |
 |註冊狀態頁面     | 確認未啟用 [註冊狀態] 頁面      |
@@ -68,11 +70,12 @@ ms.locfileid: "48656133"
 |商務用 OneDrive     | 檢查商務用 OneDrive 是否使用不支援的設定。        |
 
 
-針對每個檢查，該工具會報告三個可能結果中的其中一項：
+針對每個檢查，該工具會報告下列四個可能的結果之一：
 
 
 |結果  |意義  |
 |---------|---------|
 |就緒     | 完成註冊之前，不需要執行任何動作。        |
 |諮詢    | 請遵循工具中的步驟，以取得註冊和使用者的最佳體驗。 您 *可以* 完成註冊，但是必須先修正這些問題，再部署第一個裝置。        |
-|未就緒 | 如果您未修正這些問題，*註冊將會失敗*。 請遵循工具中的步驟加以解決。        |
+|未就緒 | 如果您未修正這些問題， *註冊將會失敗* 。 請遵循工具中的步驟加以解決。        |
+|錯誤 | 您所使用的 Azure Active Director (AD) 角色，沒有足夠的許可權可執行這種檢查。 |

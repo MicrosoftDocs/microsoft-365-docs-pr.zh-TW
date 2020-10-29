@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 瞭解如何使用 Microsoft 關閉您的帳戶。
-ms.openlocfilehash: 9545c43ee27fb000149776527030b04b5e807a5c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0fed7df54a21b3696e81915af78e377e855bfd12
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638372"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794894"
 ---
 # <a name="close-your-account"></a>關閉您的帳戶
 
@@ -51,9 +51,9 @@ ms.locfileid: "48638372"
 
 1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
 
-2. 如果 [訂閱] 清單位於 **表格** 視圖中，請在右側選取 [ **卡片**]。
+2. 如果 [訂閱] 清單位於 **表格** 視圖中，請在右側選取 [ **卡片** ]。
 
-3. 尋找作用中的訂閱，並在 [ **設定 & 動作** ] 區段中，選取 [ **取消訂閱**]。
+3. 尋找作用中的訂閱，並在 [ **設定 & 動作** ] 區段中，選取 [ **取消訂閱** ]。
 
 4. 遵循提示完成此程式。
 
@@ -63,21 +63,21 @@ ms.locfileid: "48638372"
 
 1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
 
-2. 如果 [訂閱] 清單位於 **表格** 視圖中，請在右側選取 [ **卡片**]。
+2. 如果 [訂閱] 清單位於 **表格** 視圖中，請在右側選取 [ **卡片** ]。
 
-3. 選取 [ **訂閱狀態**] 旁的 [ **停用**]。
+3. 選取 [ **訂閱狀態** ] 旁的 [ **停用** ]。
 
-4. 尋找停用的訂閱，然後在 [ **設定 & 動作** ] 區段中，選取 [ **刪除**]。
+4. 尋找停用的訂閱，然後在 [ **設定 & 動作** ] 區段中，選取 [ **刪除** ]。
 
-5. 在 [ **刪除訂閱** ] 對話方塊中，選取 [ **我瞭解影響** ] 核取方塊，然後選取 [ **刪除訂閱**]。
+5. 在 [ **刪除訂閱** ] 對話方塊中，選取 [ **我瞭解影響** ] 核取方塊，然後選取 [ **刪除訂閱** ]。
 
 6. 針對每個停用的訂閱重複步驟4和5，直到刪除所有訂閱為止。
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>步驟4：停用多重要素驗證
 
-1. 在系統管理中心中，移至 [**使用者**作用中  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>] 頁面。
+1. 在系統管理中心中，移至 [ **使用者** 作用中  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">使用者</a>] 頁面。
 
-2. 選擇 **多重要素驗證**。
+2. 選擇 **多重要素驗證** 。
 
 3. 在 [多重要素驗證] 頁面上，停用您目前所用全域系統管理員帳戶以外的所有帳戶。
 
@@ -87,12 +87,12 @@ ms.locfileid: "48638372"
 
 1. 使用全域系統管理員帳戶登入 <a href="https://aad.portal.azure.com/" target="_blank">AZURE AD 系統管理中心</a> 。
 
-2. 選取 [Azure Active Directory]****。
+2. 選取 [Azure Active Directory]  。
 
-3. 切換至您要刪除的目錄。
+3. 切換至您要刪除的組織。
 
-4. 選取 [ **刪除目錄**]。
+4. 選取 [ **刪除租** 使用者]。
 
-5. 如果您的目錄失敗一或多項檢查，您會看到有關如何傳遞檢查的詳細資訊連結。 傳遞所有檢查後，請選取 [ **刪除** ] 以完成程式。
+5. 如果您的組織未通過一或多項檢查，您會看到有關如何傳遞檢查的詳細資訊連結。 傳遞所有檢查後，請選取 [ **刪除** ] 以完成程式。
 
 完成此最後一個步驟之後，您的 Microsoft 帳戶會關閉並刪除。
