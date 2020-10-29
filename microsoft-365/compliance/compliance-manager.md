@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員可協助組織簡化及自動化風險評估，並建議採取的措施以協助解決風險。
-ms.openlocfilehash: d26d187277b021e278667b6e0ae19a0772b34f03
-ms.sourcegitcommit: 9d8d071659e662c266b101377e24549963e43fef
+ms.openlocfilehash: d7136368a1c9726d1a77a0c99e717b98e1920242
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48368126"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791801"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合規性管理員
 
@@ -83,9 +83,9 @@ ms.locfileid: "48368126"
 
 合規性管理員會追蹤下列類型的控制項：
 
-1. **Microsoft managed controls**： microsoft 雲端服務的控制項，microsoft 負責執行這種服務
-2. **您的控制項**：有時候稱為客戶管理控制項，這些是由您的組織所實施及管理的控制項。
-3. **共用控制項**：這些是您的組織和 Microsoft 共同共同執行的控制措施
+1. **Microsoft managed controls** ： microsoft 雲端服務的控制項，microsoft 負責執行這種服務
+2. **您的控制項** ：有時候稱為客戶管理控制項，這些是由您的組織所實施及管理的控制項。
+3. **共用控制項** ：這些是您的組織和 Microsoft 共同共同執行的控制措施
 
 ##### <a name="learn-more"></a>深入了解
 
@@ -99,11 +99,11 @@ ms.locfileid: "48368126"
 
 評估包含數個元件：
 
-- **範圍內的服務**：適用于評估的特定 Microsoft 服務集合
-- **Microsoft managed controls**： microsoft 雲端服務的控制項，microsoft 代表您執行的動作
-- **您的控制項**：有時候稱為客戶管理控制項，這些是由您的組織所實施及管理的控制項。
-- **共用控制項**：這些是您的組織和 Microsoft 共同共同執行的控制措施
-- **評估分數**：顯示從評估中的動作到您的組織及 Microsoft 所管理的所有可能分數的進度
+- **範圍內的服務** ：適用于評估的特定 Microsoft 服務集合
+- **Microsoft managed controls** ： microsoft 雲端服務的控制項，microsoft 代表您執行的動作
+- **您的控制項** ：有時候稱為客戶管理控制項，這些是由您的組織所實施及管理的控制項。
+- **共用控制項** ：這些是您的組織和 Microsoft 共同共同執行的控制措施
+- **評估分數** ：顯示從評估中的動作到您的組織及 Microsoft 所管理的所有可能分數的進度
 
 在建立評估時，您會將其指派給群組。 您可以以組織最具邏輯的任何方式來設定群組。 例如，您可以透過審計年、地區、解決方案、組織內的小組或其他方式來群組評估。 一旦您建立群組，您就可以 [篩選合規性管理員儀表板](compliance-manager-setup.md#filtering-your-dashboard-view) ，以查看一或多個群組的分數。
 

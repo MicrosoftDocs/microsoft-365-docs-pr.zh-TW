@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用合規性管理員快速入門手冊可協助您深入瞭解、取得設定，以及使用合規性管理員。
-ms.openlocfilehash: 9fd86550652860b1c89be414f4c0b55c28a817e5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f03482c0af9603aa96d907d7339a853ef5e9d
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204349"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791789"
 ---
 # <a name="compliance-manager-quickstart"></a>合規性管理員快速入門
 
@@ -33,13 +33,13 @@ ms.locfileid: "48204349"
 
 合規性管理員位於 Microsoft 365 規範中心 https://compliance.microsoft.com 。 在您開始使用合規性管理員之前，貴組織的全域系統管理員必須先 [設定使用者權限並指派角色](compliance-manager-setup.md#set-user-permissions-and-assign-roles) 。
 
-您第一次流覽合規性管理員時，您會看到組織的合規性分數。 合規性管理員已針對資料保護基準評估您目前的 Microsoft 365 環境。 開始熟悉合規性管理員的最佳方式，就是了解其所顯示的內容、主要元素，以及如何自訂儀表板。
+您第一次流覽合規性管理員時，您會看到組織的合規性分數。 合規性管理員已針對資料保護基準評估您目前的 Microsoft 365 環境。 開始熟悉合規性管理員的最佳方式，是瞭解它所顯示的功能、其主要元素，以及如何自訂儀表板。
 
 「 [合規性管理員概述」頁面](compliance-manager.md) 是完整審查合規性管理員及其運作方式的最佳第一個。 您也可以使用下列連結，直接跳至我們檔的主要區段：
 
 - [瞭解您的合規性分數](compliance-manager.md#understanding-your-compliance-score)
 - [主要元素概述：控制項、評估、範本及改進動作](compliance-manager.md#key-elements-controls-assessments-templates-improvement-actions)
-- [瞭解合規性管理員儀表板](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [瞭解合規性管理員儀表板](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [篩選儀表板視圖](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [深入瞭解改進動作](compliance-manager-setup.md#improvement-actions-page)
 - [瞭解評估](compliance-manager.md#assessments)

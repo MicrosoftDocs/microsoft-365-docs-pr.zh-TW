@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 尋找 Microsoft 合規性管理員的常見問題解答，協助組織簡化及自動化風險評估。
-ms.openlocfilehash: 3e1b6cdbcafd0cb4af4545cb258dab2ce082a2d8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 49886cba59cc486c4345e069a4b782951fed4c68
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48204353"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791779"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>合規性管理員常見問題
 
@@ -27,7 +27,7 @@ ms.locfileid: "48204353"
 
 現在只有一個解決方案：合規性管理員。 本節會引導您完成過渡，請從以下基本概述開始。 您也可能會發現直接跳至下列其中一個區段很有説明：
 
-- [您的組織主要使用合規性管理員 (傳統或公開預覽版本) （位於 Microsoft 服務信任入口網站中）](#your-organization-regularly-used-compliance-manger-in-the-service-trust-portal)
+- [您的組織主要使用合規性管理員 (傳統或公開預覽版本) （位於 Microsoft 服務信任入口網站中）](#your-organization-regularly-used-compliance-manager-in-the-service-trust-portal)
 
 - [您的組織主要使用相容性分數 (公開預覽) （位於 Microsoft 365 規範中心內）](#your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center)
 
@@ -41,7 +41,7 @@ Microsoft 365 規範中心內的合規性管理員一般可用，在9月2020完�
 
 請閱讀此 [博客文章](https://aka.ms/compliancemanager/GAblog) ，以深入瞭解相容性管理員的 GA 版本的新功能。
 
-#### <a name="your-organization-regularly-used-compliance-manger-in-the-service-trust-portal"></a>您的組織在服務信任入口網站中經常使用合規性管理器
+#### <a name="your-organization-regularly-used-compliance-manager-in-the-service-trust-portal"></a>您的組織在服務信任入口網站中經常使用合規性管理員
 
 如果您在服務信任入口網站中使用合規性管理員，則組織中的所有資料現在都會存在於 Microsoft 365 規範中心的合規性管理員中 https://compliance.microsoft.com/compliancemanager 。 您不需要執行任何動作，就能讓您的合規性管理員在其新位置上運作，而不是更新任何您的先前位置的書簽。 您已為您做了所有評估與其他資料。
 
@@ -51,7 +51,7 @@ Microsoft 365 規範中心內的合規性管理員一般可用，在9月2020完�
 
 以下是一些有用的資源：
 
-- [熟悉您的新的合規性管理員經驗](compliance-manager-setup.md#understand-the-compliance-manger-dashboard)
+- [熟悉您的新合規性管理員經驗](compliance-manager-setup.md#understand-the-compliance-manager-dashboard)
 - [在其新家中尋找合規性管理員的許可權及其他設定資訊](compliance-manager-setup.md#who-can-access-compliance-manager)
 - [深入瞭解 Microsoft 365 規範中心](microsoft-365-compliance-center.md)
 
