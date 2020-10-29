@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 瞭解如何使用合規性分數和合規性管理員，以提升個人資料的保護層級。
-ms.openlocfilehash: 5b41fa9fc52253d415a22aaa3422a87c4f1bda7c
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: f90826795197b392f629eb8eec71b7f27081b697
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377096"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48791879"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>使用合規性管理員管理改進動作
 
@@ -44,7 +44,7 @@ Microsoft 合規性管理員可以協助您管理資料隱私權法規（如歐�
 
 合規性管理員提供預先構建的範本，以建立與資料隱私權相關的法規（如 GDPR 和 HIPAA/高科技）對齊的 [評估](../compliance/compliance-manager-assessments.md) 。 範本具有內建的控制項對應，可協助您採取改進的動作來滿足規定的需求。 每項評估都提供有關特定于目標服務之每項法規要求的資訊，並由您管理和控制 Microsoft 管理的控制項所中斷。 
 
-使用預先建立的範本可協助您快速開始使用風險評估。 當您在使用合規性管理員時更熟練掌握時，您可以透過新增您自己的控制項和改進動作來自訂預先建立的範本，也可以建立您自己的自訂評估，以符合組織的需求。
+使用預先建立的範本可協助您快速開始使用風險評估。 隨著您在使用合規性管理員的熟練程度，您可以透過新增您自己的控制項和改進動作來自訂預先建立的範本，也可以建立您自己的自訂評估，以符合組織的需求。
 
 查看合規性管理員所提供 [之評估範本的完整清單](../compliance/compliance-manager-templates-list.md) 。
 

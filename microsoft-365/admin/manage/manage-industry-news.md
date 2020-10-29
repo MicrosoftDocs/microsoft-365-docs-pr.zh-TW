@@ -15,28 +15,26 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 為您的使用者提供有關您行業和組織資訊的最新資訊資訊，使用新聞服務可為您的組織啟用自訂的新聞摘要。
-ms.openlocfilehash: 718e48c9db90ff7e598dd56c0228bb894b7a3a4d
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: c0758c3a762c39534629095345d935456cb938e9
+ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779175"
+ms.locfileid: "48791819"
 ---
 # <a name="manage-industry-news"></a>管理行業新聞
 
 若要為您的使用者提供有關您行業和組織資訊的最新新聞標題，請使用 [新聞](https://admin.microsoft.com/adminportal/home?#/Settings/Services/:/Settings/L1/BingNews) 服務為您的組織啟用自訂的新聞摘要。您也可以從 Edge 87) 的版本開始，管理 Bing 首頁和 Microsoft Edge [新增] 索引標籤頁面的設定 (。
 
 ## <a name="what-your-users-will-see"></a>您的使用者將會看到的內容
-
-:::image type="content" source="../../media/manage-industry-news-1.png" alt-text="Microsoft 搜尋業更新彙總套件":::
  
 進入 Bing 首頁的登入使用者將會看到您組織中個人化資訊底下的資訊摘要。
 
-:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="Microsoft 搜尋業更新彙總套件":::
+:::image type="content" source="../../media/manage-industry-news-2.jpg" alt-text="從網頁到行業新聞的影像輪播螢幕擷取畫面":::
 
 他們也可以在 Microsoft Edge 的 [新增] 索引標籤頁面上，看到公司、行業和內部新聞或個人化的工作資訊。 
 
-:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="Microsoft 搜尋業更新彙總套件":::
+:::image type="content" source="../../media/manage-industry-news-3.png" alt-text="從網頁到行業新聞的影像輪播螢幕擷取畫面":::
 
 ## <a name="news-settings"></a>新聞設定
 
