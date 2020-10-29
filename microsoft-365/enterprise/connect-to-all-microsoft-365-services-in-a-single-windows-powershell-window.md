@@ -18,28 +18,27 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要：在單一 PowerShell 視窗中連線至所有 Microsoft 365 服務。
-ms.openlocfilehash: 36b16b491aa97e7329e440e2c1fb01b8a221a2b6
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: 04be916f745e2bde70554045340fc8ec03f87413
+ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477050"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "48754313"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>在單一 PowerShell 視窗中連線至所有 Microsoft 365 服務
 
-當您使用 PowerShell 來管理 Microsoft 365，可同時在不同 PowerShell 視窗中開啟與管理使用者帳戶、SharePoint Online、Exchange Online、商務用 Skype Online、Microsoft Teams 和安全性與合規性中心對應的多個 PowerShell 工作階段。&amp; 
+使用 PowerShell 管理 Microsoft 365 時，可以同時開啟多個 PowerShell 工作階段。 您可能有不同的 PowerShell 視窗來管理使用者帳戶、SharePoint Online、Exchange Online、Skype for Business Online、Microsoft Teams 和安全性 &amp; 合規性中心。
   
-這對於管理 Microsoft 365 而言並不理想，因為您無法在用於交叉服務管理的這些視窗之間交換資料。 本主題說明如何使用 PowerShell 的單一執行個體，您可以從中管理 Microsoft 365 帳戶、商務用 Skype Online、Exchange Online、SharePoint Online、Microsoft Teams 及安全性與合規性中心。&amp;
+此案例對於管理 Microsoft 365 而言並不理想，因為您無法在用於交叉服務管理的這些視窗之間交換資料。 本文章說明如何使用 PowerShell 的單一執行個體來管理 Microsoft 365 帳戶、商務用 Skype Online、Exchange Online、SharePoint Online、Microsoft Teams 及安全性 &amp; 合規性中心。
 
 >[!Note]
->本文目前僅包含用來連線至全球 (+GCC) 雲端的命令。 附註提供文章的連結，內含如何連線到其他 Microsoft 365 雲端的相關資訊。
->
+>本文目前僅包含用來連線至全球 (+GCC) 雲端的命令。 附註提供文章的連結，內含如何連線到其他 Microsoft 365 雲端。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 在您可以從 PowerShell 的單一執行個體管理所有 Microsoft 365 之前，請考慮下列先決條件：
   
-- 您用於這些程序的 Microsoft 365 公司或學校帳戶 必須是 Microsoft 365 系統管理員角色的成員。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。 這是對 Microsoft 365 的 PowerShell 需求，並非所有其他的 Microsoft 365 服務皆須滿足。
+- 您使用的 Microsoft 365 公司或學校帳戶必須是 Microsoft 365 系統管理員角色的成員。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。 這是對 Microsoft 365 的 PowerShell 需求，但並非所有其他的 Microsoft 365 服務皆須滿足。
     
 - 您可以使用下列 Windows 64 位元版本：
     
@@ -57,7 +56,7 @@ ms.locfileid: "48477050"
     
   - Windows Server 2008 R2 SP1*
     
-    \*您必須安裝 Microsoft .NET Framework 4.5.*x*，然後安裝 Windows Management Framework 3.0 或 Windows Management Framework 4.0。 如需詳細資訊，請參閱[安裝 .NET Framework](https://go.microsoft.com/fwlink/p/?LinkId=257868) 和 [Windows Management Framework 3.0](https://go.microsoft.com/fwlink/p/?LinkId=272757) 或 [Windows Management Framework 4.0](https://go.microsoft.com/fwlink/p/?LinkId=391344)。
+    \*您需要安裝 Microsoft .NET Framework 4.5. *x* 然後是 Windows Management Framework 3.0 或4.0。 如需詳細資訊，請參閱 [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview?view=powershell-7)。
     
     由於商務用 Skype Online 模組和其中一個 Microsoft 365 模組的需求，您需要使用 Windows 64 位元版本。
     
@@ -69,7 +68,7 @@ ms.locfileid: "48477050"
   - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
   - [Teams PowerShell 概觀](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
     
--  必須設定 PowerShell，才能執行商務用 Skype Online 及安全性與合規性中心的已簽署指令碼。&amp; 若要執行此動作，請在提高權限的 PowerShell 工作階段 (透過選取 [以系統管理員身分執行 **]** 而開啟的 PowerShell 視窗) 中執行下列命令。
+-  必須設定 PowerShell，才能執行商務用 Skype Online 及安全性 &amp; 合規性中心的已簽署指令碼。 在提高權限的 PowerShell 工作階段 ( **以管理員身份執行** 的 PowerShell 執行階段) 中執行以下命令。
     
    ```powershell
    Set-ExecutionPolicy RemoteSigned
@@ -77,13 +76,11 @@ ms.locfileid: "48477050"
 
 ## <a name="exchange-online-and-security-amp-compliance-center-with-the-exchange-online-powershell-v2-module"></a>Exchange Online 和安全性 &amp; 合規性中心與 Exchange Online PowerShell V2 模組
 
-本文章使用 Exchange Online PowerShell V2 模組連線 Exchange Online 和安全性 &amp; 合規性中心。 不過，您目前無法**在同一 PowerShell 視窗中連線到 Exchange Online 和安全性 &amp; 合規性中心**。
-
-因此，為多個 Microsoft 365 服務設定 PowerShell 視窗時，您必須選擇與 Exchange Online *或* 安全性 &amp; 合規性中心連線。
+本文章程序中使用 Exchange Online PowerShell V2 模組連線 Exchange Online 和安全性 &amp; 合規性中心。 但現時無法 *在同一個 PowerShell 視窗* 中同時連線到這兩處。 因此在為多個 Microsoft 365 服務設定 PowerShell 視窗時，必須選擇連線至其中一個。
 
 ## <a name="connection-steps-when-using-just-a-password"></a>只使用一組密碼時的連線步驟
 
-當您只使用一組密碼登入時，以下是在單一 PowerShell 視窗中連線至所有服務的步驟。
+僅使用密碼登入時，請按照以下步驟連接到單一 PowerShell 視窗中的所有服務。
   
 1. 開啟 [Windows PowerShell]。
     
@@ -93,29 +90,29 @@ ms.locfileid: "48477050"
    $credential = Get-Credential
    ```
 
-3. 執行此指令，以使用 Azure Active Directory PowerShell 的圖表模組連線到 Azure AD。
+3. 執行此指令，以透過使用 Azure Active Directory PowerShell 的圖表模組連線到 Azure AD。
     
    ```powershell
    Connect-AzureAD -Credential $credential
    ```
   
-   或者，如果您使用的是適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組，請執行此指令。
+   或者如果您使用的是適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組，請執行此指令。
       
    ```powershell
    Connect-MsolService -Credential $credential
    ```
 
    > [!Note]
-   > PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 **Msol** 的 Cmdlet。 若要繼續使用這些 Cmdlet，您必須從 PowerShell 執行它們。
+   > PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組和名稱有 *Msol* 的 Cmdlet。 您必須從 PowerShell 執行這些 Cmdlet。
 
-4. 執行這些指令，以連線到 SharePoint Online。 指定您網域的組織名稱。 例如，針對 "litwareinc.onmicrosoft.com"，組織名稱值為 "litwareinc"。
+4. 執行這些指令，以連線到 SharePoint Online。 指定您網域的組織名稱。 例如，針對 "litwareinc\.onmicrosoft.com"，組織名稱值為 "litwareinc"。
     
    ```powershell
    $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
    Connect-SPOService -Url https://$orgName-admin.sharepoint.com -Credential $userCredential
    ```
 
-5. 執行這些指令，以連線至商務用 Skype Online。 您第一次連線時，預期會有 `WSMan NetworkDelayms` 值增加的警告，而應該忽略。
+5. 執行這些指令，以連線至商務用 Skype Online。 首次連線時，將出現有關增加 `WSMan NetworkDelayms` 值的警告。 略過它。
      
    > [!Note]
    > 商務用 Skype Online 連接器目前是最新 Teams PowerShell 模組的一部分。 如果您使用的是最新的 Teams PowerShell 公開發行版本，則不需要安裝商務用 Skype Online 連接器。
@@ -136,7 +133,7 @@ ms.locfileid: "48477050"
    > [!Note]
    > 若要連線至 Microsoft 365 雲端 (而非 [Worldwide]) 的 Exchange Online，請參閱 [連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-7. 或者執行這些指令以連線至安全性 &amp; 合規性中心。
+   或者執行這些指令以連線至安全性 &amp; 合規性中心。
     
    ```powershell
    $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -147,7 +144,7 @@ ms.locfileid: "48477050"
    > [!Note]
    > 若要連線到 Microsoft 365 雲端 (而非 [Worldwide]) 安全性 &amp; 合規性中心，請參閱 [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
-8. 執行這些命令，以連線到 Teams PowerShell。
+   執行這些命令，以連線到 Teams PowerShell。
     
    ```powershell
    Import-Module MicrosoftTeams
@@ -155,12 +152,12 @@ ms.locfileid: "48477050"
    ```
   
    > [!Note]
-   > 若要連線到 Microsoft Teams 雲端 (而非 [ Worldwide])，請參閱 [MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams)。
+   > 若要連線到 Microsoft Teams 雲端 (而非 *[Worldwide]* )，請參閱 [MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams)。
 
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>針對 Graph 的 Azure Active Directory PowerShell 模組
 
-以下是使用適用於 Graph 的 Azure Active Directory PowerShell 模組時，*除安全性&amp;合規性中心*外的所有服務的命令。 指定您網域主機的名稱，然後一次執行它們全部。
+以下是使用適用於 Graph 的 Azure Active Directory PowerShell 模組時， *除安全性&amp;合規性中心* 外的單一文字區塊中所有服務的命令。 指定域主機的名稱並同時執行它們。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -177,7 +174,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-以下是使用適用於 Graph 的 Azure Active Directory PowerShell 模組時，*除 Exchange Online* 外的所有服務的命令。 指定您網域主機的名稱和用於登入的 UPN，然後一次執行它們全部。
+以下是使用適用於 Graph 的 Azure Active Directory PowerShell 模組時， *除 Exchange Online* 外的單一文字區塊中所有服務的命令。 指定您網域主機的名稱和用於登入的 UPN，並同時執行它們。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -197,7 +194,7 @@ Connect-MicrosoftTeams -Credential $credential
 
 ### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組
 
-以下是使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組時，*除安全性&amp;合規性中心*外的所有服務的命令。 指定您網域主機的名稱，然後一次執行它們全部。
+以下是使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組時， *除安全性&amp;合規性中心* 外的單一區塊中的所有服務的命令。 指定您網域主機的名稱，然後同時執行它們。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -214,7 +211,7 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams -Credential $credential
 ```
 
-以下是使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組時，*Exchange Online*外的所有服務的命令。 指定您網域主機的名稱和用於登入的 UPN，然後一次執行它們全部。
+以下是使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組時， *Exchange Online* 外的單一區塊中的所有服務命令。 為登入指定網域主機的名稱和 UPN，並同時運行它們。
   
 ```powershell
 $orgName="<for example, litwareinc for litwareinc.onmicrosoft.com>"
@@ -235,7 +232,7 @@ Connect-MicrosoftTeams -Credential $credential
 
 ### <a name="azure-active-directory-powershell-for-graph-module"></a>針對 Graph 的 Azure Active Directory PowerShell 模組
 
-以下是一個文字區塊中的所有命令，可讓您連線到多個 Microsoft 365 服務，除使用適用於 Graph 的 Azure Active Directory PowerShell 模組進行多重要素驗證的 *安全性 &amp; 合規性中心*。 
+以下是使用 [適用於 Graph 的 Azure Active Directory PowerShell] 模組時，在單一區塊中用於透過多重要素驗證連接到多個 Microsoft 365 服務 ( *安全性 &amp; 合規性中心除外* ) 的命令。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -255,7 +252,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-以下是一個文字區塊中的所有命令，可讓您連線到多個 Microsoft 365 服務，除使用適用於 Graph 的 Azure Active Directory PowerShell 模組進行多重要素驗證的 *Exchange Online*。
+以下是使用 [適用於 Graph 的 Azure Active Directory PowerShell 模組] 時，在單一區塊中用於透過多要素驗證連接到多個 Microsoft 365服務 ( *Exchange Online 除外* ) 的所有命令。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -277,7 +274,7 @@ Connect-MicrosoftTeams
 ```
 ### <a name="microsoft-azure-active-directory-module-for-windows-powershell-module"></a>適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組
 
-以下是一個文字區塊中的所有命令，可讓您連線到多個 Microsoft 365 服務，除使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組進行多重要素驗證的 *安全性 &amp; 合規性中心*。 
+以下是使用 [適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組] 模組時，在單一區塊中用於透過多要素驗證連接到多個 Microsoft 365 服務 ( *安全性 &amp; 合規中心除外* ) 的所有命令。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -297,7 +294,7 @@ Connect-ExchangeOnline -UserPrincipalName $acctName -ShowProgress $true
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
-以下是一個文字區塊中的所有命令，可讓您連線到多個 Microsoft 365 服務，除使用適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組進行多重要素驗證的 *Exchange Online*。 
+以下是使用 [適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組] 模組時，在單一區塊中用於透過多元素驗證連接到多個 Microsoft 365 服務 ( *Exchange Online 除外* ) 的所有命令。
 
 ```powershell
 $acctName="<UPN of the account, such as belindan@litwareinc.onmicrosoft.com>"
@@ -318,16 +315,15 @@ Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 ```
 
-## <a name="close-the-powershell-window"></a>關閉 PowerShell 視窗。
+## <a name="close-the-powershell-window"></a>關閉 PowerShell 視窗
 
-當您準備好關閉 PowerShell 視窗時，請執行此命令，以移除連線至商務用 Skype Online、SharePoint Online 及 Teams 的使用中工作階段：
+若要關閉 PowerShell 視窗，請執行此命令，以移除連線至商務用 Skype Online、SharePoint Online 及 Teams 的使用中工作階段：
   
 ```powershell
 Remove-PSSession $sfboSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
 ```
 
-
-## <a name="see-also"></a>也請參閱
+## <a name="see-also"></a>另請參閱
 
 - [使用 PowerShell 連線至 Microsoft 365](connect-to-microsoft-365-powershell.md)
 - [使用 PowerShell 管理 SharePoint Online](manage-sharepoint-online-with-microsoft-365-powershell.md)
