@@ -20,12 +20,12 @@ description: '瞭解在不同地區，您要對 Microsoft 365 for business 訂�
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: d3d1bc1239cb99da33f776e603356ccae95a2353
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: d3654dd307e15e58acdd06277cf7338da537e5c6
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464093"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806597"
 ---
 # <a name="tax-information"></a>稅務資訊
 
@@ -99,21 +99,21 @@ ms.locfileid: "48464093"
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>歐洲、中東及非洲 (EMEA)
 
-當您在歐盟購買 Microsoft 365 服務時，此款產品須 Value-Added 加值稅 (加值稅) 。
+當您在 EMEA 地區購買 Microsoft 365 服務時，這項採購可能會受到 Value-Added 加值稅 (加值稅) 的制約。
   
-- 如果您位於歐盟成員狀態，而您沒有提供有效的當地 加值稅 ID，則 Microsoft 愛爾蘭運作公司會根據您帳戶設定的計費國家/地區，套用目前的本機 加值稅 率。
+- 如果您位於歐盟成員狀態、亞美尼亞、白俄羅斯、挪威、土耳其或阿拉伯聯合大公國，但您不提供有效的當地 加值稅 ID，則 Microsoft 愛爾蘭運作公司會根據您帳戶所設定的計費國家/地區，套用目前的本機 加值稅 率。
 
-- 如果您位於瑞士或列支敦斯登，則不論您是否提供 VAT 識別碼，都會套用瑞士 VAT 稅率。
+- 如果您位於列支敦斯登、俄羅斯、塞爾維亞、南非或瑞士，就會套用加值稅，不論您是否提供您的 加值稅 ID 也是一樣。
 
-- 一般而言，如果您位於歐盟和瑞士/列支敦斯登以外的 EMEA 國家/地區，則不是 Microsoft 愛爾蘭運作公司所徵收的 加值稅。
-
-- 您的 VAT ID 必須先能夠在 VAT Information Exchange System (VIES) 中驗證，我們才能驗證它。 如果您無法驗證您的 加值稅 ID，請與當地的稅務機關聯繫。
+- 針對歐盟客戶，在驗證您的 加值稅 ID 之前，必須先在加值稅資訊 Exchange 系統 (VIES) 中進行驗證。 如果您無法驗證您的 加值稅 ID，請與當地的稅務機關聯繫。
 
 在下列情況中，您可能會有資格取得 加值稅 零分級：
   
 - **您處在愛爾蘭境外的歐盟成員狀態：** 您可以提供有效的當地 加值稅 識別碼。 這可讓 Microsoft 愛爾蘭運作公司對交易進行加值稅零比率。 不過，您可能會有當地的 加值稅 會計義務。 如果您有任何問題，請與您的稅收 advisers。 如需相關指示，請參閱 [Add a 加值稅 ID](#add-your-vat-id)。
 
 - **您在愛爾蘭，具有相關的有效 加值稅 免除憑證：** Microsoft 愛爾蘭運作公司可能有權將交易從 加值稅 中免除。 如果您不是，Microsoft 愛爾蘭運作公司會套用目前的愛爾蘭加值稅匯率（不論您是否提供加值稅識別碼）。
+
+- **您在亞美尼亞、白俄羅斯、挪威、土耳其或阿拉伯阿拉伯聯合大公國中：** 您可以提供您當地的 加值稅 ID。 這是 Microsoft 愛爾蘭運作公司公司。對交易的加值稅零比率。 不過，您可能會有當地的 加值稅 會計義務，如果您有任何問題，請與您的稅收 advisers 核實。 如需相關指示，請參閱 [Add a 加值稅 ID](#add-your-vat-id)。
 
 ## <a name="asia-pacific-countries-apac"></a>亞太地區的國家/地區 (APAC)
 
@@ -136,10 +136,10 @@ ms.locfileid: "48464093"
 ## <a name="add-your-vat-id"></a>新增您的 加值稅 ID
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
-2. 在 [ **產品** ] 索引標籤上，選取您要更新的訂閱。
-3. 在 [訂閱詳細資料] 頁面上，選取 [ **服務使用位址** ] 區段中的 [ **編輯服務使用位址**]。
+2. 在 **[產品]** 索引標籤上，選擇您想要更新的訂閱。
+3. 在 [訂閱詳細資料] 頁面上，選取 [ **服務使用位址** ] 區段中的 [ **編輯服務使用位址** ]。
 4. 在 [ **編輯服務使用位址** ] 窗格的 [ **加值稅 號碼** ] 方塊中，輸入您的 加值稅 ID （包括前置詞），且不含任何空格。
-5. 選取 **[儲存]**。
+5. 選取 **[儲存]** 。
 
 ## <a name="how-taxes-are-calculated"></a>如何計算稅金
 
@@ -147,7 +147,7 @@ ms.locfileid: "48464093"
 
 例如：
 
->* (單位價格 X 稅率) X 數量 = 總銷售稅*
+>*(單位價格 X 稅率) X 數量 = 總銷售稅*
 
 - 或 -
 

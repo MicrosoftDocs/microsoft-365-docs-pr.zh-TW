@@ -32,15 +32,15 @@ ms.locfileid: "48754059"
 
 若為其他工作負載，請參閱：
 
-- [瞭解 SharePoint 和 OneDrive 的保留功能](retention-policies-sharepoint.md)
+- [了解 SharePoint 和 OneDrive 的保留功能](retention-policies-sharepoint.md)
 - [了解 Yammer 的保留](retention-policies-yammer.md)
 - [了解 Exchange 的保留](retention-policies-exchange.md)
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保留與刪除包含的內容
 
-使用 Teams 的保留原則可以保留和删除以 Teams 下項目：聊天和頻道訊息。
+使用 Teams 的保留原則可以保留和删除下列 Teams 項目：聊天和頻道訊息。
 
-不包括私人頻道中的Teams 訊息，也不包括其他人以表情符號形式的反應。
+不包括私人頻道中的 Teams 訊息，也不包括其他人以表情符號形式傳送的回應。
 
 Teams 保留原則中不包括與 Teams 一起使用的電子郵件和檔案。 這些項目有各自的保留原則。
 

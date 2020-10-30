@@ -17,24 +17,25 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) 和高級威脅防護 (ATP) 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用高級威脅防護 (ATP) ，您也會得到哪些額外功能？
-ms.openlocfilehash: fd2d680e093289aa5fc2dbcac127e35caf50098b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 4afd662be28c047d5f738dc0f70f0254e7a7a83f
+ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430654"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48806769"
 ---
 # <a name="recommended-settings-for-eop-and-office-365-atp-security"></a>EOP 和 Office 365 ATP 安全性的建議設定
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Exchange Online Protection (EOP) ** 是 Microsoft 365 訂閱的安全性核心，可協助阻止惡意電子郵件到達您員工的收件匣。 不過，每天都會有新的更複雜的攻擊，但通常需要改進的保護。 **Office 365 高級威脅防護 (ATP) ** ATP Plan 1 或 ATP 方案2包含其他功能，可提供系統管理員更多層的安全性、控制和調查。
+**Exchange Online Protection (EOP)** 是 Microsoft 365 訂閱的安全性核心，可協助阻止惡意電子郵件到達您員工的收件匣。 不過，每天都會有新的更複雜的攻擊，但通常需要改進的保護。 **Office 365 高級威脅防護 (ATP)** ATP Plan 1 或 ATP 方案2包含其他功能，可提供系統管理員更多層的安全性、控制和調查。
 
-雖然我們可讓安全性管理員自訂其安全性設定，但我們建議的 EOP 和 Office 365 ATP 有兩個安全性層級： **Standard** 和 **Strict**。 每個客戶的環境和需求各不相同，但我們相信這些階層的篩選將有助於防止不想要的郵件在大多數情況下抵達員工的收件匣。
+雖然我們可讓安全性管理員自訂其安全性設定，但我們建議的 EOP 和 Office 365 ATP 有兩個安全性層級： **Standard** 和 **Strict** 。 每個客戶的環境和需求各不相同，但我們相信這些階層的篩選將有助於防止不想要的郵件在大多數情況下抵達員工的收件匣。
 
 若要自動將標準或嚴格設定套用至使用者，請參閱 [EOP 和 Office 365 ATP 中的預先設定安全性原則](preset-security-policies.md)。
 
-**附注**：必須在信箱上啟用垃圾郵件規則，篩選才能正常運作。 它預設為啟用，但是如果篩選似乎不在運作中，您應該加以檢查。 如需詳細資訊，請參閱[在 Office 365中設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+> [!NOTE]
+> 信箱必須啟用垃圾郵件規則，篩選才能正確運作。 它預設為啟用，但是如果篩選似乎不在運作中，您應該加以檢查。 如需詳細資訊，請參閱[在 Office 365中設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
 本文說明預設設定，也是建議的標準和嚴格設定，以協助保護您的使用者。
 
@@ -53,20 +54,20 @@ ms.locfileid: "48430654"
 
 |安全性功能名稱|預設|標準版|嚴格|留言|
 |---|:---:|:---:|:---:|---|
-|**垃圾郵件** 偵測動作 <br/><br/> _SpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
-|**高信賴的垃圾郵件** 偵測動作 <br/><br/> _HighConfidenceSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
-|**網路釣魚電子郵件** 偵測動作 <br/><br/> _PhishSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
-|**高信賴網路釣魚電子郵件** 偵測動作 <br/><br/> _HighConfidencePhishAction_|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
-|**大量電子郵件** 偵測動作 <br/><br/> _BulkSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
+|**垃圾郵件** 偵測動作 <br/><br/> _SpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
+|**高信賴的垃圾郵件** 偵測動作 <br/><br/> _HighConfidenceSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
+|**網路釣魚電子郵件** 偵測動作 <br/><br/> _PhishSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
+|**高信賴網路釣魚電子郵件** 偵測動作 <br/><br/> _HighConfidencePhishAction_|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
+|**大量電子郵件** 偵測動作 <br/><br/> _BulkSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
 |大量電子郵件閾值 <br/><br/> _BulkThreshold_|7 |6 |4 |如需詳細資訊，請參閱 [Office 365 中的大量投訴層級 (BCL) ](bulk-complaint-level-values.md)。|
 |隔離保留期間 <br/><br/> _QuarantineRetentionPeriod_|15 天|30 天|30 天||
 |**安全性秘訣** <br/><br/> _InlineSafetyTipsEnabled_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
 |允許的寄件者 <br/><br/> _AllowedSenders_|無|無|無||
-|允許的寄件者網域 <br/><br/> _AllowedSenderDomains_|無|無|無|在 [允許的寄件者] 清單) 新增您擁有 (_公認網域_ 的網域是一種非常糟糕的主意。 攻擊者可以傳送您本來會加以篩選的電子郵件。 <br/><br/> 在 [**反垃圾郵件設定**] 頁面的 [安全性 & 規範中心] 中，使用[哄騙智慧](learn-about-spoof-intelligence.md)，以查看組織的電子郵件網域中的所有收件者電子郵件地址或外部網域中的欺騙寄件者電子郵件地址。|
+|允許的寄件者網域 <br/><br/> _AllowedSenderDomains_|無|無|無|將網域新增至允許的寄件者清單是一種非常壞的主意。 攻擊者可以傳送您本來會加以篩選的電子郵件。 <br/><br/> 在 [ **反垃圾郵件設定** ] 頁面的 [安全性 & 規範中心] 中，使用 [哄騙智慧](learn-about-spoof-intelligence.md)，以查看組織的電子郵件網域中的所有收件者電子郵件地址或外部網域中的欺騙寄件者電子郵件地址。|
 |封鎖的寄件者 <br/><br/> _BlockedSenders_|無|無|無||
 |封鎖的寄件者網域 <br/><br/> _BlockedSenderDomains_|無|無|無||
 |**啟用使用者垃圾郵件通知** <br/><br/> _EnableEndUserSpamNotifications_|已停用 <br/><br/> `$false`|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`||
-|**每 (天傳送一次使用者垃圾郵件通知) ** <br/><br/> _EndUserSpamNotificationFrequency_|3天|3天|3天||
+|**每 (天傳送一次使用者垃圾郵件通知)** <br/><br/> _EndUserSpamNotificationFrequency_|3天|3天|3天||
 |**垃圾郵件 ZAP** <br/><br/> _SpamZapEnabled_|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`||
 |**網路釣魚 ZAP** <br/><br/> _PhishZapEnabled_|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`||
 |_MarkAsSpamBulkMail_|開啟|開啟|開啟|此設定僅適用于 PowerShell。|
@@ -74,27 +75,27 @@ ms.locfileid: "48430654"
 
 有些其他的高級垃圾郵件篩選 (反垃圾郵件原則中的 ASF) 設定，但不是已被取代。 有關這些功能之折舊時程表的詳細資訊，將在本文之外進行傳遞。
 
-建議您為**標準**和**嚴格**的層次 **，關閉這些**ASF 設定。 如需 ASF 設定的詳細資訊，請參閱 [Office 365 中的高級垃圾郵件篩選 (ASF) 設定](advanced-spam-filtering-asf-options.md)。
+建議您為 **標準** 和 **嚴格** 的層次 **，關閉這些** ASF 設定。 如需 ASF 設定的詳細資訊，請參閱 [Office 365 中的高級垃圾郵件篩選 (ASF) 設定](advanced-spam-filtering-asf-options.md)。
 
 ****
 
 |安全性功能名稱|留言|
 |---|---|
-| (_IncreaseScoreWithImageLinks_) **的遠端網站影像連結**||
-|URL (_IncreaseScoreWithNumericIps_ **中的數位 IP 位址**) ||
-|**UL 重新導向至其他埠** (_IncreaseScoreWithRedirectToOtherPort_) ||
-|**.Biz 或. info 網站的 URL** (_IncreaseScoreWithBizOrInfoUrls_) ||
-|**空郵件** (_MarkAsSpamEmptyMessages_) ||
-|**在 HTML (MarkAsSpamJavaScriptInHtml 中 JavaScript 或 VBScript**) _MarkAsSpamJavaScriptInHtml_||
-|HTML (_MarkAsSpamFramesInHtml_ **中的框架或 IFrame 標記**) ||
-|HTML (_MarkAsSpamObjectTagsInHtml_ **中的物件標記**) ||
-|**在 HTML (MarkAsSpamEmbedTagsInHtml 中嵌入標記**) _MarkAsSpamEmbedTagsInHtml_||
-|HTML (_MarkAsSpamFormTagsInHtml_ **中的表單標記**) ||
-|HTML (_MarkAsSpamWebBugsInHtml_ **中的 Web 臭蟲**) ||
-|套用**機密的單字清單** (_MarkAsSpamSensitiveWordList_) ||
-|**SPF 記錄： hard fail** (_MarkAsSpamSpfRecordHardFail_) ||
-|**條件式寄件者識別碼篩選： hard fail** (_MarkAsSpamFromAddressAuthFail_) ||
-|**NDR 退信攻擊** (_MarkAsSpamNdrBackscatter_) ||
+| ( _IncreaseScoreWithImageLinks_ ) **的遠端網站影像連結**||
+|URL ( _IncreaseScoreWithNumericIps_ **中的數位 IP 位址** ) ||
+|**UL 重新導向至其他埠** ( _IncreaseScoreWithRedirectToOtherPort_ ) ||
+|**.Biz 或. info 網站的 URL** ( _IncreaseScoreWithBizOrInfoUrls_ ) ||
+|**空郵件** ( _MarkAsSpamEmptyMessages_ ) ||
+|**在 HTML (MarkAsSpamJavaScriptInHtml 中 JavaScript 或 VBScript** ) _MarkAsSpamJavaScriptInHtml_||
+|HTML ( _MarkAsSpamFramesInHtml_ **中的框架或 IFrame 標記** ) ||
+|HTML ( _MarkAsSpamObjectTagsInHtml_ **中的物件標記** ) ||
+|**在 HTML (MarkAsSpamEmbedTagsInHtml 中嵌入標記** ) _MarkAsSpamEmbedTagsInHtml_||
+|HTML ( _MarkAsSpamFormTagsInHtml_ **中的表單標記** ) ||
+|HTML ( _MarkAsSpamWebBugsInHtml_ **中的 Web 臭蟲** ) ||
+|套用 **機密的單字清單** ( _MarkAsSpamSensitiveWordList_ ) ||
+|**SPF 記錄： hard fail** ( _MarkAsSpamSpfRecordHardFail_ ) ||
+|**條件式寄件者識別碼篩選： hard fail** ( _MarkAsSpamFromAddressAuthFail_ ) ||
+|**NDR 退信攻擊** ( _MarkAsSpamNdrBackscatter_ ) ||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EOP 輸出垃圾郵件原則設定
@@ -124,8 +125,8 @@ ms.locfileid: "48430654"
 |**您是否要在郵件被隔離時通知收件者？** <br/><br/> _Action_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
 |**常見附件類型篩選** <br/><br/> _EnableFileFilter_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
 |**惡意程式碼零小時自動清除** <br/><br/> _ZapEnabled_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|通知未傳遞郵件的**內部寄件者** <br/><br/> _EnableInternalSenderNotifications_|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`||
-|通知未傳遞郵件的**外部寄件者** <br/><br/> _EnableExternalSenderNotifications_|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`||
+|通知未傳遞郵件的 **內部寄件者** <br/><br/> _EnableInternalSenderNotifications_|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`||
+|通知未傳遞郵件的 **外部寄件者** <br/><br/> _EnableExternalSenderNotifications_|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP 預設的反網路釣魚原則設定
@@ -231,7 +232,8 @@ Office 365 中的安全連結包含全域設定，這些設定適用于所有包
 
 在 PowerShell 中，您可以使用這些設定的 [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) 和 [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) Cmdlet。
 
-**附注**：如前文所述，沒有預設的安全連結原則。 [預設] 欄中的值是您建立的新安全連結原則中的預設值。
+> [!NOTE]
+> 如先前所述，沒有預設的安全連結原則。 [預設] 欄中的值是您建立的新安全連結原則中的預設值。
 
 ****
 
@@ -271,7 +273,8 @@ Office 365 中的安全附件包括與安全附件原則無關聯的全域設定
 
 在 PowerShell 中，您可以使用這些設定的 [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) 和 [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) Cmdlet。
 
-**附注**：如前文所述，沒有預設的安全附件原則。 [預設] 欄中的值是您建立的新安全附件原則中的預設值。
+> [!NOTE]
+> 如先前所述，沒有預設的安全附件原則。 [預設] 欄中的值是您建立的新安全附件原則中的預設值。
 
 ****
 
@@ -284,10 +287,10 @@ Office 365 中的安全附件包括與安全附件原則無關聯的全域設定
 
 ## <a name="related-articles"></a>相關文章
 
-- 您在尋找 **Exchange 郵件流程規則的最佳作法 (又稱為傳輸規則**) ？ 請參閱 [在 Exchange Online 中設定郵件流程規則的最佳作法](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)。
+- 您在尋找 **Exchange 郵件流程規則的最佳作法 (又稱為傳輸規則** ) ？ 請參閱 [在 Exchange Online 中設定郵件流程規則的最佳作法](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)。
 
 - 系統管理員和使用者可以提交誤報 (已標示為錯誤) 和漏報的錯誤電子郵件， (錯誤的電子郵件) Microsoft 進行分析。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
-- 使用下列連結可取得如何設定[EOP 服務](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的**資訊，以及****設定** [Office 365 的高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 請不要忘記「[防範 Office 365 威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」中的有用指示。
+- 使用下列連結可取得如何設定 [EOP 服務](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的 **資訊，以及****設定** [Office 365 的高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 請不要忘記「[防範 Office 365 威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」中的有用指示。
 
-- 您可以在[這裡](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)的 GPO/內部部署選項上找到**Windows 的安全性基準**，[以取得 Intune](https://docs.microsoft.com/intune/protect/security-baselines)型安全性。 最後， [您可以在](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)Microsoft Defender 高級威脅防護 (ATP) 與 microsoft Intune 安全性基準之間進行比較。
+- 您可以在以下位置找到 **適用于 Windows 的安全性基準** ：您 [可以在何處取得安全性基準？](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)針對 GPO/內部部署選項，以及 [使用安全性基線，在 intune 中為 intune 型安全性設定 Windows 10 裝置](https://docs.microsoft.com/intune/protect/security-baselines)。 最後，比較 [Microsoft DEFENDER ATP 和 Windows intune 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)時，Microsoft Defender 高級威脅防護 (ATP) 和 microsoft intune 安全性基準之間比較可用。
