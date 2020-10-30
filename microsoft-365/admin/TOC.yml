@@ -210,6 +210,8 @@
       items:
         - name: 使用報告來監視使用者活動
           href: activity-reports/activity-reports.md
+        - name: '使用 [生產力分數] 監視使用者生產力'
+          href: productivity/productivity-score.md
         - name: 變更您的組織連絡人資訊
           href: manage/change-address-contact-and-more.md
         - name: 更新您的系統管理員連絡資訊

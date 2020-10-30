@@ -89,8 +89,6 @@
           href: sensitive-information-type-entity-definitions.md
         - name: DLP 功能所尋找的項目
           href: what-the-dlp-functions-look-for.md
-        - name: 觀看自訂的 DLP 延伸概觀
-          href: 'https://go.microsoft.com/fwlink/?linkid=852306'
         - name: 自訂內建機密資訊類型
           href: customize-a-built-in-sensitive-information-type.md
         - name: 自訂敏感性資訊類型
@@ -222,12 +220,26 @@
           href: data-loss-prevention-policies.md
         - name: DLP 和 Microsoft Teams
           href: dlp-microsoft-teams.md
-        - name: 深入了解端點資料外洩防護 (預覽版)
+        - name: 深入了解端點資料外洩防護
           href: endpoint-dlp-learn-about.md
-        - name: 開始使用端點資料外洩防護 (預覽版)
+        - name: 開始使用端點資料外洩防護
           href: endpoint-dlp-getting-started.md
-        - name: 使用端點資料外洩防護 (預覽版)
+        - name: 使用端點資料外洩防護
           href: endpoint-dlp-using.md
+        - name: Windows 10 裝置的端點 DLP 上線工具及方法
+          items:
+            - name: Windows 10 裝置的上線工具及方法
+              href: dlp-configure-endpoints.md
+            - name: 透過群組原則上線 Windows 10 裝置
+              href: dlp-configure-endpoints-gp.md
+            - name: 使用行動裝置管理工具上線 Windows 10 電腦
+              href: dlp-configure-endpoints-mdm.md
+            - name: 使用 Configuration Manager 上線 Windows 10 裝置
+              href: dlp-configure-endpoints-sccm.md
+            - name: 使用本機指令碼上線 Windows 10 裝置
+              href: dlp-configure-endpoints-script.md
+            - name: 上線非持續 Virtual Desktop Infrastructure (VDI) 裝置
+              href: dlp-configure-endpoints-vdi.md
         - name: 開始使用 DLP 原則建議
           href: get-started-with-dlp-policy-recommendations.md
         - name: 開始使用預設的 DLP 原則
