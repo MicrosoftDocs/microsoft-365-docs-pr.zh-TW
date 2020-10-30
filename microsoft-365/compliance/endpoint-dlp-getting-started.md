@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 端點資料遺失防護以監視檔案活動，並對這些端點的文件實作保護動作。
-ms.openlocfilehash: c579d0bbfdc72e56d99558ffa7e6812d00098c0d
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 82ba434d1874ce57abcf0bcc4b60858e0e2ccbf8
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430678"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779211"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>開始使用端點資料外洩防護 (預覽版)
 
@@ -82,12 +82,23 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 請確認您計畫部署端點 DLP 的 Windows 10 裝置符合這些需求。
 
 1. 必須執行 Windows 10 x64 組建 1809 或更新版本。
-2. 所有裝置都必須[加入 Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或加入混合式 Azure AD。
-3. 在端點裝置上安裝 Microsoft Chromium Edge 瀏覽器，以強制執行上傳至雲端活動的原則動作。 請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
+
+2. 反惡意程式碼用戶端版本為 4.18.2009.7 或更新版本。 開啟 Windows 安全性應用程式，選取 [設定] 圖示，然後選取 [關於]，以查看您目前的版本。 版本號碼會列在 [反惡意程式碼用戶端版本] 底下。 安裝 Windows Update KB4052623 以更新至最新的反惡意程式碼用戶端版本。 附註：Windows 安全性元件不需為作用中，您即可以不依賴 Windows 安全性狀態而執行端點 DLP。
+
+3. 已安裝下列 Windows 更新。 附註：這些更新不是將裝置上線至端點 DLP 的先決條件，但包含重要問題的修正，因此必須先安裝，才能使用產品。
+
+    - 若為 Windows 10 1809 - KB4559003、KB4577069、KB4580390
+    - 若為 Windows 10 1903 或 1909 - KB4559004、KB4577062、KB4580386
+    - 若為 Windows 10 2004 - KB4568831、KB4577063
+    - 若為執行 Office 2016 的裝置 (不是任何其他 Office 版本) - KB4577063 
+
+4. 所有裝置都必須[加入 Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或加入混合式 Azure AD。
+
+5. 在端點裝置上安裝 Microsoft Chromium Edge 瀏覽器，以強制執行上傳至雲端活動的原則動作。 請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
 ## <a name="onboarding-devices-into-device-management"></a>將裝置上線至裝置管理
 
- 您必須先啟用裝置監控與上線端點，才能監視與防護裝置上的敏感性項目。 這兩個動作都是在 Microsoft 365 合規性入口網站中完成。
+您必須先啟用裝置監控與上線端點，才能監視與防護裝置上的敏感性項目。 這兩個動作都是在 Microsoft 365 合規性入口網站中完成。
 
 當您想要將尚未上線的的裝置進行上線時，您將會下載適當的指令碼，並將它部署到這些裝置。 請按照[上線裝置程序](endpoint-dlp-getting-started.md#onboarding-devices)。
 
@@ -98,19 +109,26 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 在此部署案例中，您將上線尚未上線的裝置，且您只要監視並保護來自 Windows 10 裝置上無意間共用的敏感性項目。
 
 1. 開啟 [Microsoft 合規性中心](https://compliance.microsoft.com)。
-2. 開啟 [合規性中心] 設定頁面，然後選擇 **[上線裝置]**。 
 
-   ![啟用裝置管理](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. 開啟 [合規性中心] 設定頁面，然後選擇 **[上線裝置]** 。 
+
+   > [!div class="mx-imgBorder"]
+   > ![啟用裝置管理](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
    > 通常啟用裝置上線需要 60 秒的時間，但請等候最多 30 分鐘的時間再與 Microsoft 支援服務聯絡以取得協助。
 
 3. 選擇 **[裝置管理]** 以開啟 **[裝置]** 清單。 在您的裝置上線之前，此清單會是空白。
-4. 選擇 **[上線]** 開始上線程序。
-5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]**。
 
-   ![部署方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+4. 選擇 **[上線]** 開始上線程序。
+
+5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]** 。
+
+   > [!div class="mx-imgBorder"]
+   > ![部署方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+   
 6. 按照 [Windows 10 電腦的上線工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會將您帶到一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
+
     - 使用群組原則上線 Windows 10 電腦
     - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
     - 使用行動裝置管理工具上線 Windows 10 電腦
@@ -127,11 +145,20 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 在這種情況下，適用於端點的 Microsoft Defender 已經部署，且已有回報中的端點。 所有這些端點都會出現在 [受管理的裝置] 清單中。 您可以繼續使用 [[上線裝置程序]](endpoint-dlp-getting-started.md#onboarding-devices) 將新裝置上線至端點 DLP 中，以拓展涵蓋範圍。
 
 1. 開啟 [Microsoft 合規性中心](https://compliance.microsoft.com)。
-2. 開啟 [合規性中心] 設定頁面，然後選擇 **[啟用裝置監控]**。
-3. 選擇 **[裝置管理]** 以開啟 **[裝置]** 清單。 您應該會看到已向適用於端點的 Microsoft Defender 回報的裝置清單。 ![裝置管理](../media/endpoint-dlp-getting-started-2-device-management.png)
-4. 如果您需要上線其他裝置，請選擇 **[上線]**。
-5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]**。
+
+2. 開啟 [合規性中心] 設定頁面，然後選擇 **[啟用裝置監控]** 。
+
+3. 選擇 **[裝置管理]** 以開啟 **[裝置]** 清單。 您應該會看到已向適用於端點的 Microsoft Defender 回報的裝置清單。
+
+   > [!div class="mx-imgBorder"]
+   > ![裝置管理](../media/endpoint-dlp-getting-started-2-device-management.png)
+   
+4. 如果您需要上線其他裝置，請選擇 **[上線]** 。
+
+5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]** 。
+
 6. 按照 [Windows 10 電腦的上線工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會將您帶到一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
+
     - 使用群組原則上線 Windows 10 電腦
     - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
     - 使用行動裝置管理工具上線 Windows 10 電腦
@@ -146,9 +173,11 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>檢視 [活動總管] 中的端點 DLP 資料
 
 1. 在 Microsoft 365 合規性中心開啟您網域的 [[資料分類] 頁面](https://compliance.microsoft.com/dataclassification?viewid=overview)，然後選擇 [活動總管]。
+
 2. 請參閱 [開始使用活動總管](data-classification-activity-explorer.md) (英文) 中的程序，以存取及篩選您端裝置的所有資料。
 
-![端點裝置的活動總管篩選](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
+   > [!div class="mx-imgBorder"]
+   > ![端點裝置的活動總管篩選](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
 
 ## <a name="next-steps"></a>後續步驟
 現在您擁有已上線的裝置，且可以在 [活動總管] 中檢視活動資料，您已準備好開始建立可保護您敏感性項目之 DLP 原則的下一個步驟。
@@ -165,5 +194,5 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 - [Microsoft Defender 進階威脅防護 (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Windows 10 電腦上線的工具及方法 ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 - [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [已加入 Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [加入 Azure AD 的裝置](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
 - [下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: 4356b287afa56201da7cb644a4056d4c975964e5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dee0f3e586c49c25daafe999d065e743babf020e
+ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637004"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "48779117"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
@@ -48,13 +48,13 @@ ms.locfileid: "48637004"
 
 ::: moniker range="o365-germany"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">系統管理中心</a>中，移至 **[報告]** \> **[使用量]** 頁面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">系統管理中心</a>中，移至 **[報告]** \> **[使用量]** 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. 在<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">系統管理中心</a>中，移至 **[報告]** \> **[使用量]** 頁面。
+1. 在 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">系統管理中心</a>中，移至 **[報告]** \> **[使用量]** 頁面。
 
 ::: moniker-end
 
@@ -130,19 +130,37 @@ ms.locfileid: "48637004"
   
 ::: moniker range="o365-worldwide"
 
-- [Yammer 活動](yammer-activity-report.md)
+- [Yammer 活動](yammer-activity-report-ww.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer 裝置使用量](yammer-device-usage-report.md)
+- [美國政府的 Yammer 活動](yammer-activity-report.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-- [Yammer 群組活動報告](yammer-groups-activity-report.md)
+- [Yammer 裝置使用量](yammer-device-usage-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [美國政府的 Yammer 裝置使用量](yammer-device-usage-report.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [Yammer 群組活動報告](yammer-groups-activity-report-ww.md)
+
+::: moniker-end
+
+::: moniker range="o365-worldwide"
+
+- [美國政府的 Yammer 群組活動報告](yammer-groups-activity-report.md)
 
 ::: moniker-end
 
@@ -188,7 +206,7 @@ ms.locfileid: "48637004"
   
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">[服務與增益集]</a> 頁面。
 
-2. 選取 **[報告]**。 
+2. 選取 **[報告]** 。 
   
 3. 在 **[報告]** 窗格中，選取您想要的選項，然後儲存變更。
   

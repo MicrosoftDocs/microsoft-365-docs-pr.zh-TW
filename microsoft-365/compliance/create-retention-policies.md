@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以非常有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 43bfe1b51b730dd41342f95a069645ff15a03437
-ms.sourcegitcommit: 095b1f52f2e73e8d44195916984efeb0908c2ad8
+ms.openlocfilehash: 6b30c5689981adaf3eb7f4893a8acf0398ca2339
+ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48755572"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48774028"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -83,7 +83,7 @@ ms.locfileid: "48755572"
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>支援 Teams 所需的其他保留原則
 
-Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果您有透過 Microsoft 365 群組 (之前稱為 Office 365 群組) 建立的團隊，您應該額外使用 **Office 365 群組** 位置來設定包含該 Microsoft 365 群組的保留原則。 此保留原則適用於群組的信箱、網站和檔案中的內容。
+Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果您有透過 Microsoft 365 群組 (之前稱為 Office 365 群組) 建立的小組，您應該額外使用 [Microsoft 365 群組 **]** 位置來設定包含該 Microsoft 365 群組的保留原則。 此保留原則適用於群組的信箱、網站和檔案中的內容。
 
 如果您有未與 Microsoft 365 群組連線的 Teams 位置，您需要有可以包含 **SharePoint 網站** 或 **OneDrive 帳戶** 位置的保留原則，用以保留及刪除 Teams 中的檔案：
 
@@ -127,7 +127,7 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。 如果�
 
 #### <a name="additional-retention-policies-needed-to-support-yammer"></a>支援 Yammer 所需的額外保留原則
 
-Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 若要保留及刪除您 Yammer 網路的電子郵件，請使用 **Office 365 群組** 位置來設定額外的保留原則，其中包括用於 Yammer 的任何 Microsoft 365 群組。 
+Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 若要保留及刪除您 Yammer 網路的電子郵件訊息，請使用 [Microsoft 365 群組 **]** 位置來設定包含用於 Yammer 的任何 Microsoft 365 群組的額外保留原則。 
 
 若要保留及刪除 Yammer 中儲存的檔案，您需要包含 **SharePoint 網站** 或 **OneDrive 帳戶** 位置的保留原則：
 
@@ -156,7 +156,7 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
     位置專用資訊：
     - [Exchange 電子郵件和 Exchange 公用資料夾](#configuration-information-for-exchange-email-and-exchange-public-folders)
     - [SharePoint 網站和 OneDrive 帳戶](#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
-    - [Office 365 群組](#configuration-information-for-microsoft-365-groups)
+    - [Microsoft 365 群組](#configuration-information-for-microsoft-365-groups)
     - [商務用 Skype](#configuration-information-for-skype-for-business)
 
 4. 在精靈的頁面上，如需 **決定是否要保留內容、刪除內容，或兩者皆可** ，請指定保留及刪除內容的設定選項。
@@ -171,13 +171,13 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 包含了以下的電子郵件項目：郵件訊息（包括草稿）具有任何的附件檔案、工作和行事曆項目（具有結束日期），以及備註。 不包含沒有結束日期標示的連絡人、任何工作和行事曆項目。 儲存在信箱中（例如 Skype 和 Teams 儲存的訊息）的其他項目不會包含在此位置。 這些項目有各自具備的保留原則。
 
-即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件** 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。 若要保留這些信箱中的內容，請選取 **[Office 365 群組]** 位置。
+即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件** 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。 若要保留這些信箱中的內容，請選取 [Microsoft 365 群組 **]** 位置。
 
 **Exchange 公用資料夾** 位置會將保留設定套用至所有的公用資料夾，且無法在資料夾或信箱層級套用。
 
 #### <a name="configuration-information-for-sharepoint-sites-and-onedrive-accounts"></a>SharePoint 網站和 OneDrive 帳戶的配置資訊
 
-當您選擇 **SharePoint 網站** 位置時，保留原則即可保留和刪除在 SharePoint 通訊網站中的文件、未與 Office 365 群組連結的小組網站，以及傳統網站。 此選項不支援由 Office 365 群組所連結的小組網站，而是使用套用倒群組信箱、網站和檔案中的內容的 **Office 365 群組** 位置。
+當您選擇 [SharePoint 網站 **]** 位置時，保留原則即可保留及刪除在 SharePoint 通訊網站中的文件、未由 Microsoft 365 群組連結的小組網站，以及傳統網站。 此選項不支援由 Microsoft 365 群組所連線的小組網站，而是會使用套用至群組信箱、網站和檔案中內容的 [Microsoft 365 群組 **]** 位置。
 
 雖然保留原則可套用到網站層級，但只有文件會套用保留設定。 保留設定不適用於組織結構，包含像是文件庫、清單及網站內的資料夾。
 
@@ -194,7 +194,7 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 群組的設定資訊
 
-若要保留或刪除一個 Microsoft 365 群組（之前稱為 Office 365 群組）的內容，請使用 **Office 365 群組** 的位置。 即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件** 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。 此外，雖然 **Exchange 電子郵件** 位置一開始會允許您指定要包含或排除的群組信箱，但是當您嘗試儲存保留原則時，您會收到 "RemoteGroupMailbox" 不是Exchange 位置的有效選項錯誤訊息。
+若要保留或刪除一個 Microsoft 365 群組 (之前稱為 Office 365 群組) 的內容，請使用 [Microsoft 365 群組 **]** 位置。 即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件** 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。 此外，雖然 **Exchange 電子郵件** 位置一開始會允許您指定要包含或排除的群組信箱，但是當您嘗試儲存保留原則時，您會收到 "RemoteGroupMailbox" 不是Exchange 位置的有效選項錯誤訊息。
 
 如果建立群組時或稍後將小組網站新增至群組時已選取小組網站，則套用到 Microsoft 365 群組的保留策略包含群組信箱與小組網站。 此位置涵蓋儲存在小組網站中的檔案，但不涵蓋有自己的保留原則位置的小組聊天或小組頻道訊息。
 

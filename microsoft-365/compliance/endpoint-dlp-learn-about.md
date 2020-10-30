@@ -1,5 +1,5 @@
 ---
-title: 深入瞭解 Microsoft 365 端點資料外洩防護（預覽版）
+title: 深入了解 Microsoft 365 端點資料外洩防護
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 端點資料外洩防護擴充監視檔案活動，和針對這些端點的檔案保護動作。 在 Microsoft 365 合規性中心解決方案中可看到檔案 '
-ms.openlocfilehash: fe4ce05c1f9dd0ebce9a6c3be6fffbecfb36c2af
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: d9260da3e007885821441c8217e01650823eb8b4
+ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379231"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "48768961"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>深入瞭解 Microsoft 365 端點資料外洩防護（預覽版）
+# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>深入了解 Microsoft 365 端點資料外洩防護
 
 您可以使用 Microsoft 365 資料外洩防護（DLP）來監視正在進行的動作，這些動作會受到您認為敏感性的專案影響，並協助防止意外共用這些專案。 如需 DLP 的詳細資訊，請參閱[資料外洩防護概觀](data-loss-prevention-policies.md)。
 
