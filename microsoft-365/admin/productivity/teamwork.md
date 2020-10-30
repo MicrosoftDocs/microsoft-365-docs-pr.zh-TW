@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 團隊合作的詳細資料-人員體驗生產力分數。
-ms.openlocfilehash: d76447a187003aa3d3e87ec293cf4550ced2fc74
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: d7edd5685c8e818e08faf4ac227f3eb1a416c94c
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795271"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804790"
 ---
 # <a name="teamwork--people-experiences"></a>團隊合作–人員經驗
 
@@ -193,3 +192,12 @@ ms.locfileid: "48795271"
 - 團隊合作衡量組織內人員的參與。 它不會&#39;捕獲外部成員的活動。
 - 合作中的通道郵件不包含透過 Microsoft 小組行動用戶端所傳送的郵件。
 - 在我們所進行的通訊和團隊合作的類別之間，電子郵件計量與通道郵件之間可能會有細微的差異。
+
+## <a name="related-content"></a>相關內容
+
+[Microsoft 365 應用程式健康情況–技術經驗](apps-health.md) (文章) \
+[通訊–人員經驗](communication.md) (文章) \
+[內容共同作業–人員體驗](content-collaboration.md) (文章) \
+[會議–人員經驗](meetings.md) (文章) \
+[行動–人員體驗](mobility.md) (文章) \
+ (文章) [的生產力分數控制](privacy.md)

@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 會議的詳細資料-人員體驗生產力分數。
-ms.openlocfilehash: 09869d92b093304e070d669db7d0e7dea825441f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: cdb83000e176fb2a88d848a1b7f114499362672a
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795285"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804582"
 ---
 # <a name="meetings--people-experiences"></a>會議–人員經驗
 
@@ -166,3 +165,12 @@ Microsoft 團隊會與 Outlook 行事曆整合，並提供一種功能，讓您�
 - 只有具有 Microsoft 團隊存取權的人員才會考慮任何評估。
 - 我們排除廣播事件和某些未標記為會議或通話的事件。
 - 在參與者之間以螢幕共用開始的事件，可以分類為1:1 通話 (2 位參與者) 或群組通話 (3 個以上的參與者) 。
+
+## <a name="related-content"></a>相關內容
+
+[Microsoft 365 應用程式健康情況–技術經驗](apps-health.md) (文章) \
+[通訊–人員經驗](communication.md) (文章) \
+[內容共同作業–人員體驗](content-collaboration.md) (文章) \
+[行動–人員體驗](mobility.md) (文章) \
+) \ 中 (篇文章[的隱私權控制措施分數](privacy.md)
+[團隊合作–人員經驗](teamwork.md) (文章) 

@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 通訊人員經驗的詳細資料。
-ms.openlocfilehash: 071621759a922e6dda28a5a18f531a0f01d2f88f
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795020"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804652"
 ---
 # <a name="communication--people-experiences"></a>通訊–人員經驗
 
@@ -160,3 +159,12 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 - **在電子郵件中 @mention 使用的天數：** 使用者在過去28天內，傳送包含 @mention 的電子郵件的天數。
 
 您也可以選取 [匯出] **按鈕** 連結，將報告資料匯出至 Excel .csv 檔案。 請注意，您可以在按一下 **[選擇欄** 後選取必要的欄，以自訂視圖中的一組欄。
+
+## <a name="related-content"></a>相關內容
+
+[Microsoft 365 應用程式健康情況–技術經驗](apps-health.md) (文章) \
+[內容共同作業–人員體驗](content-collaboration.md) (文章) \
+[會議–人員經驗](meetings.md) (文章) \
+[行動–人員體驗](mobility.md) (文章) \
+) \ 中 (篇文章[的隱私權控制措施分數](privacy.md)
+[團隊合作–人員經驗](teamwork.md) (文章) 

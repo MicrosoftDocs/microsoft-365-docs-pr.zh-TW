@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 應用程式健康情況技術經驗的詳細資料。
-ms.openlocfilehash: bb6454b336caa9ac1e7b8f6049ea46c681c8bd77
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795264"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804766"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 應用程式健康情況–技術經驗
 
@@ -112,3 +111,12 @@ Microsoft 365 應用程式健康情況分數會測量裝置是否正在建議的
 - **狀態：**   Microsoft 365 應用程式支援以目前通道和版本為基礎的裝置狀態。
 - **版本：**  裝置上目前的 Microsoft 365 應用程式版本。
 - **裝置數目：**  裝置數目。
+
+## <a name="related-content"></a>相關內容
+
+[通訊–人員經驗](communication.md) (文章) \
+[內容共同作業–人員體驗](content-collaboration.md) (文章) \
+[會議–人員經驗](meetings.md) (文章) \
+[行動–人員體驗](mobility.md) (文章) \
+) \ 中 (篇文章[的隱私權控制措施分數](privacy.md)
+[團隊合作–人員經驗](teamwork.md) (文章) 

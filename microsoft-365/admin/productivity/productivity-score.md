@@ -18,14 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 生產力分數的概覽。
-ms.openlocfilehash: 3d014cd0eb3a3ceed3b3f3b48f126453e4ced193
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 3808583429c78460483cd7193d38810a7e189040
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794962"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804722"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生產力分數 
 
@@ -43,25 +42,28 @@ ms.locfileid: "48794962"
 
     我們提供這些洞察力，是因為當人們線上合作時，他們可節省時間，而且可在任何裝置上自由運作，這樣就能更有效率和滿意。 以靈活的方式進行通訊的功能可讓人員更有效率，能更好地建立更好的關聯性，進而使您的組織更具整合。 如需證據，請參閱 [Forrester report](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
 
-- **技術經驗：** 生產力取決於可靠且性能良好的技術，以及 Microsoft 365 的有效使用方式。 我們提供 [端點分析](https://aka.ms/endpointanalytics)，可協助您瞭解使用者的生產力對您的端點硬體和軟體的效能與狀況問題有何影響。 我們也為您的組織提供建議的動作，以進行修正，以及適用于您組織的 Microsoft 365 network connectivity insights。
+- **技術經驗：** 您的小組生產力取決於可靠且完善的技術，以及 Microsoft 365 的有效使用方式。 [端點分析](https://aka.ms/endpointanalytics) 可協助您瞭解使用者的生產力對您的硬體和軟體的效能與狀況問題有何影響。建議的動作可協助您修正這些問題。 Microsoft 365 network connectivity insights 可協助您疑難排解組織的 connectivty 問題。
 
 如需概述和必要條件詳細資料，請參閱 [何謂「端點分析](https://docs.microsoft.com/mem/analytics/overview) 」。 若要深入瞭解 Microsoft 365 network connectivity insights，請參閱 [network connectivity 一覽](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview)。
   
 
 ## <a name="how-the-score-is-calculated"></a>計算分數的方式
 
-您的生產力分數是以人員和技術經驗類別的綜合分數為基礎。 每個類別平均加權，總100點數。 最高的可能生產力分數為500。
+您的生產力分數是以人員和技術經驗類別的綜合分數為基礎。 每個類別平均加權，總100點數。 最高的可能生產力分數為800。
 
 ### <a name="score-categories"></a>分數類別 
 
-- 內容共同作業 (100 點) 
 -  (100 點的通訊) 
+- 會議 (100 點) 
+- 內容共同作業 (100 點) 
+- 團隊合作 (100 點) 
 - 行動性 (100 點) 
 - 端點分析 (100 點) 
 - 網路連通性 (100 點) 
-- **總可能 = 500 點**
+- Microsoft 365 App Health (100 點) 
+- **總可能 = 800 點**
  
- 在每個類別中，我們都會識別重要活動的模式，以瞭解人員如何使用 Microsoft 365 產品來共同作業、溝通，以及跨平臺工作。 我們提供28天和180天的主要即時檢視。 我們也提供支援的度量值，但不是分數計算的一部分，但很重要的一點是協助您識別您可以採取的基準行為和設定。
+ 在每個分數類別中，我們會識別重要活動的模式，以瞭解人員如何使用 Microsoft 365 產品來共同作業、溝通，以及跨平臺工作。 我們提供28天和180天的主要即時檢視。 我們也提供不屬於分數計算的支援度量，但對於協助您識別您可以解決的基本行為和設定很重要。
 
 ### <a name="products-included-in-productivity-score"></a>產品包含在生產力分數中的產品 
 
@@ -72,7 +74,9 @@ ms.locfileid: "48794962"
 
 ## <a name="pre-requisites"></a>先決條件 
 
-若要讓人員經歷資料，您需要 Microsoft 365 for business 或 Office 365 for enterprise 訂閱，且您必須使用多承租人雲端服務。 若要取得租使用者的端點分析資料，您必須將 Microsoft Intune 新增至您的訂閱。 Intune 可協助您保護組織的資料，方法是管理裝置和應用程式。       當您有 Intune 之後，您可以在 Intune 體驗中開啟端點分析。 深入瞭解 Microsoft Intune。 
+若要讓人員體驗資料，您需要使用 Microsoft 365 for business 或 Office 365 for enterprise 訂閱。 針對您租使用者的端點分析資料，您必須將 Microsoft Intune 新增至您的訂閱。 Intune 可協助您保護組織的資料，方法是管理裝置和應用程式。 當您有 Intune 之後，您可以在 Intune 體驗中開啟端點分析。 深入瞭解 Microsoft Intune。 
+> [!NOTE]
+> 若要取得生產力評分功能，不需要使用工作場所分析的授權。
 
 若要查看組織的生產力評分，您必須具有下列其中一個角色： 
 
@@ -90,11 +94,11 @@ ms.locfileid: "48794962"
 
 [生產力分數] 首頁會顯示每個類別的總分和總分記錄以及主要洞察力。
 
-![生產力排名首頁](../../media/pslanding.png)
+:::image type="content" source="../../media/prodscore-landing.png" alt-text="報表中的 [生產力分數] 頁面。":::
 
 **您的分數** 會顯示為百分比值，以點為單位。 您可以在分子中看到您的點，而分母中的可能點數上限。
 
-**對等基準** 可讓您將您的分數與像您的組織比較。 針對人員經驗類別，對等基準量值會計算為一組類似組織內的平均量值。 此集合是由您地區中的組織所組成，其授權的使用者數目、授權類型、行業和 tenure，以及 Microsoft 365。 
+**對等基準** 可讓您將您的分數與像您的組織比較。 人員經驗類別的對等基準計算是一組類似組織內的平均量值。 組織的集合是由您地區中的組織所組成，這些組織的授權使用者數目、授權類型、行業，以及使用 Microsoft 365 的 tenure。 
 
 端點分析對等基準包括裝置啟動效能的目標，以及根據整個承租人中匯總的中線值進行建議的軟體設定。
 

@@ -18,14 +18,13 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-ROBOTS: NOINDEX, NOFOLLOW
 description: 內容共同作業的詳細資訊-人員體驗生產力分數。
-ms.openlocfilehash: 6e8f3113d2f35e6af268e4a8088bef34f529a676
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795284"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804594"
 ---
 # <a name="content-collaboration--people-experiences"></a>內容共同作業–人員經驗
 
@@ -202,4 +201,13 @@ ms.locfileid: "48795284"
 - **外部共用** 的檔案：在過去28天內，OneDrive 或 SharePoint 與組織外部其他人員共用的人員的線上檔案數目。
 - **電子郵件傳送的附件：** 布林值，指出使用者是否已傳送含檔案的電子郵件 (不在 OneDrive 上，或在過去的28天內 SharePoint) 做為附件。
 - 以 **電子郵件傳送的線上檔附件：** 布林值，指出在過去28天內，是否要使用 OneDrive 或 SharePoint) 附件的方式傳送電子郵件，以連結到或上的線上檔案 (。
-- **嵌入線上檔案的連結：** 布林值，指出是否要在過去28天內，在電子郵件內文中 OneDrive 或 SharePoint) 嵌入的電子郵件，以顯示線上檔案的連結 (
+- **嵌入線上檔案的連結：** 布林值，指出在過去28天內，在電子郵件內文中 OneDrive 或 SharePoint) 嵌入的電子郵件中，是否有線上檔案的連結 (。
+
+## <a name="related-content"></a>相關內容
+
+[Microsoft 365 應用程式健康情況–技術經驗](apps-health.md) (文章) \
+[通訊–人員經驗](communication.md) (文章) \
+[會議–人員經驗](meetings.md) (文章) \
+[行動–人員體驗](mobility.md) (文章) \
+) \ 中 (篇文章[的隱私權控制措施分數](privacy.md)
+[團隊合作–人員經驗](teamwork.md) (文章) 
