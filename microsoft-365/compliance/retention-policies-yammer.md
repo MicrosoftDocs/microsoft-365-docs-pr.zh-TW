@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Yammer 的保留原則。
-ms.openlocfilehash: 84db671b475a9dade039136380cef0bc5bde7282
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 3e4cfd5c9e5ef8c28ecd069f3474764b966d6c9a
+ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754701"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "48794998"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解 Yammer 的保留
 
@@ -61,7 +61,7 @@ Yammer 訊息不受針對使用者或群組信箱設定的保留原則影響。 
 
 針對圖表中的兩個路徑：
 
-1. 如果在保留期間使用者 **編輯或刪除某個 Yammer 訊息** ，系統就立即複製原始訊息 (如果是編輯) 或將其移動 (如果是刪除) 到 SubstrateHolds 資料夾。 訊息會儲存在那裡直到保留期間到期為止，然後永久刪除訊息。
+1. 如果在保留期間使用者 **編輯或刪除某個 Yammer 訊息** ，系統會複製原始訊息 (如果是編輯) 或將其移動 (如果是刪除) 到 SubstrateHolds 資料夾。 訊息會儲存在那裡直到保留期間到期為止，然後永久刪除訊息。
 
 2. **如果未刪除 Yammer 訊息** ，以及目前訊息經過編輯後，則會在保留期間到期後，將訊息移至 SubstrateHolds 資料夾。 此動作從到期日起最多需要七天才會完成。 當訊息位於 SubstrateHolds 資料夾，即會立即永久刪除。 
 
@@ -72,7 +72,7 @@ Yammer 訊息不受針對使用者或群組信箱設定的保留原則影響。 
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>「僅保留」保留原則的內容路徑
 
-1. **如果已編輯或刪除 Yammer 訊息** ：系統會立即在 SubstrateHolds 資料夾中建立原始訊息的複本，並保留在該處，直到保留期間到期。 然後訊息會從立即從 SubstrateHolds 資料夾中永久刪除。
+1. **如果已編輯或刪除 Yammer 訊息** ：系統會在 SubstrateHolds 資料夾中建立原始訊息的複本，並保留在該處，直到保留期間到期。 然後訊息會從立即從 SubstrateHolds 資料夾中永久刪除。
 
 2. **如果未修改或刪除 Yammer 訊息** ，以及針對在保留期間經過編輯的目前訊息：保留期間前後不會有任何變化；訊息仍會保留在其原始位置。
 
@@ -80,12 +80,12 @@ Yammer 訊息不受針對使用者或群組信箱設定的保留原則影響。 
 
 1. **如果未在保留期間刪除 Yammer 訊息** ：在保留期間結束時，系統會將訊息移至 SubstrateHolds 資料夾。 此動作從到期日起最多需要七天才會完成。 然後訊息會從立即從 SubstrateHolds 資料夾中永久刪除。
 
-2. **如果使用者在保留期間刪除 Yammer 訊息** ，系統會立即將該項目移至 SubstrateHolds 資料夾，在其中會立即永久刪除該項目。
+2. **如果使用者在保留期間刪除 Yammer 訊息** ，系統會將該項目移至 SubstrateHolds 資料夾，在其中會立即永久刪除該項目。
 
 
 ## <a name="messages-and-external-users"></a>訊息和外部使用者
 
-根據預設，Yammer 私人訊息的保留原則會套用至組織中的所有使用者，但不會套用至外部使用者。 如果您使用 [選擇使用者 **]** 並指定其帳戶，則可以將保留原則套用至外部使用者。 
+根據預設，Yammer 私人訊息的保留原則會套用至貴組織中的所有使用者，但不會套用至外部使用者。 如果您使用 [選擇使用者 **]** 並指定其帳戶，則可以將保留原則套用至外部使用者。 
 
 目前不支援 Azure B2B 來賓使用者。
 
