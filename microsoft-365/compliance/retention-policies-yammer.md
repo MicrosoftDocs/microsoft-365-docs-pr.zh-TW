@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Yammer 的保留原則。
-ms.openlocfilehash: 3e4cfd5c9e5ef8c28ecd069f3474764b966d6c9a
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: b23161f57aedec062e155586f2e20d2791d02d3f
+ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48794998"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48804572"
 ---
 # <a name="learn-about-retention-for-yammer"></a>了解 Yammer 的保留
 
@@ -61,7 +61,7 @@ Yammer 訊息不受針對使用者或群組信箱設定的保留原則影響。 
 
 針對圖表中的兩個路徑：
 
-1. 如果在保留期間使用者 **編輯或刪除某個 Yammer 訊息** ，系統會複製原始訊息 (如果是編輯) 或將其移動 (如果是刪除) 到 SubstrateHolds 資料夾。 訊息會儲存在那裡直到保留期間到期為止，然後永久刪除訊息。
+1. 如果在保留期間使用者 **編輯或刪除某個 Yammer 訊息** ，系統就立即複製原始訊息 (如果是編輯) 或將其移動 (如果是刪除) 到 SubstrateHolds 資料夾。 訊息會儲存在那裡直到保留期間到期為止，然後永久刪除訊息。
 
 2. **如果未刪除 Yammer 訊息** ，以及目前訊息經過編輯後，則會在保留期間到期後，將訊息移至 SubstrateHolds 資料夾。 此動作從到期日起最多需要七天才會完成。 當訊息位於 SubstrateHolds 資料夾，即會立即永久刪除。 
 
@@ -72,7 +72,7 @@ Yammer 訊息不受針對使用者或群組信箱設定的保留原則影響。 
 
 ### <a name="content-paths-for-retain-only-retention-policy"></a>「僅保留」保留原則的內容路徑
 
-1. **如果已編輯或刪除 Yammer 訊息** ：系統會在 SubstrateHolds 資料夾中建立原始訊息的複本，並保留在該處，直到保留期間到期。 然後訊息會從立即從 SubstrateHolds 資料夾中永久刪除。
+1. **如果已編輯或刪除 Yammer 訊息** ：系統會立即在 SubstrateHolds 資料夾中建立原始訊息的複本，並保留在該處，直到保留期間到期。 然後訊息會從立即從 SubstrateHolds 資料夾中永久刪除。
 
 2. **如果未修改或刪除 Yammer 訊息** ，以及針對在保留期間經過編輯的目前訊息：保留期間前後不會有任何變化；訊息仍會保留在其原始位置。
 
@@ -80,7 +80,7 @@ Yammer 訊息不受針對使用者或群組信箱設定的保留原則影響。 
 
 1. **如果未在保留期間刪除 Yammer 訊息** ：在保留期間結束時，系統會將訊息移至 SubstrateHolds 資料夾。 此動作從到期日起最多需要七天才會完成。 然後訊息會從立即從 SubstrateHolds 資料夾中永久刪除。
 
-2. **如果使用者在保留期間刪除 Yammer 訊息** ，系統會將該項目移至 SubstrateHolds 資料夾，在其中會立即永久刪除該項目。
+2. **如果使用者在保留期間刪除 Yammer 訊息** ，系統會立即將該項目移至 SubstrateHolds 資料夾，在其中會立即永久刪除該項目。
 
 
 ## <a name="messages-and-external-users"></a>訊息和外部使用者
