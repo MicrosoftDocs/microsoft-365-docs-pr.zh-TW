@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 7709bf9a3063863d802e8c36a09ea10d287d0e34
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: 9c4898f6ecf17ad57da9ecd54499764c7efc2a6c
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779269"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816870"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 生產力圖例
 
@@ -27,7 +27,7 @@ Microsoft 365 企業解決方案系列提供實作 Microsoft 365 功能的指引
 ### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>適用於 IT 結構設計師的 Microsoft 365 中的Microsoft Teams 和相關生產力服務
 使用 Microsoft Teams 領導，Microsoft 365 中生產力服務的邏輯架構。
 
-|**項目**|**描述**|
+| 項目 | 描述 |
 |:-----|:-----|
 |[![Teams 邏輯架構海報的縮圖影像](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>更新日期：2019 年 4 月   |Microsoft 提供一套生產力服務，共同合作來提供資料管理、安全性和法規遵循功能的共同作業體驗。 <br/> <br/>這系列的圖例可為企業結構設計師提供生產力服務邏輯架構使用 Microsoft Teams 引導的檢視。|
 
@@ -35,14 +35,26 @@ Microsoft 365 企業解決方案系列提供實作 Microsoft 365 功能的指引
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>適用於 IT 結構設計師的 Microsoft 365 中的群組
 對於 Microsoft 365 中的群組，IT 結構設計師需要知道的事項
 
-|**項目**|**描述**|
+| 項目 | 描述 |
 |:-----|:-----|
 |[![群組資訊圖的縮圖影像](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> 更新可能的2020|這些圖例會詳細說明不同類型的群組、如何建立及管理群組，以及一些控管建議。|
+
+### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 資訊保護和合規性功能
+
+Microsoft 365 包括一組廣泛的資訊保護和合規性功能。 這些功能搭配 Microsoft 的生產力工具，可協助組織即時協同合作，同時遵循嚴格的法規遵從性框架。 
+
+這組插圖使用最受管制的行業（財務服務）之一，示範如何套用這些功能以滿足一般法規需求。 您可以隨意使用這些圖例，以供您自行使用。 
+
+
+| 項目 | 描述 |
+|:-----|:-----|
+|[![模型海報： Microsoft 365 資訊保護和合規性功能](../media/solutions-architecture-center/m365-compliance-illustrations-thumb.png)](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) <br/> [以 PDF 格式下載](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.pdf) \|[下載為 Visio](https://download.microsoft.com/download/3/a/6/3a6ab1a3-feb0-4ee2-8e77-62415a772e53/m365-compliance-illustrations.vsdx)   <br/> 2020年10月更新|包括： <ul><li>  Microsoft 資訊保護和資料遺失防護</li><li>保留原則和保留標籤 </li><li>資訊屏障</li><li>通訊合規性</li><li>內幕用風險</li><li>協力廠商資料攝取</li>|
+
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>適用於多區域組織的安全性與資訊保護
 適用於多區域組織，且具有單一 Microsoft 365 租用戶的安全性與資訊保護
 
-|**項目**|**描述**|
+| 項目 | 描述 |
 |:-----|:-----|
 |[![多區域資訊圖表的縮圖](../media/solutions-architecture-center/multi-region-single-tenant-security-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-security-info-protect-multi-region.vsdx)<br>更新日期：2020 年 3 月 |基於多種原因，為您的全球組織使用單一 Microsoft 365 租用戶是最佳選擇和最佳體驗。 不過，許多架構設計人員為達到不同地區的安全性與資訊保護目標，面臨許多掙扎。 本主題提供許多建議。 |
 
@@ -51,7 +63,7 @@ Microsoft 365 企業解決方案系列提供實作 Microsoft 365 功能的指引
 根據您的環境而定，有些工具更適合特定架構。
 
 
-|**項目**|**描述**|
+| 項目 | 描述 |
 |:-----|:-----|
 |[![Microsoft Defender ATP 部署策略的縮圖](../media/solutions-architecture-center/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-deployment-strategy.vsdx) <br>更新日期：2020 年 2 月| 架構材料可協助您規劃下列架構的部署： <ul><li> 雲端-原生 </li><li> 共同管理 </li><li> 內部部署</li><li>評估與本機上架</li>
 
@@ -61,7 +73,7 @@ Microsoft 365 企業解決方案系列提供實作 Microsoft 365 功能的指引
 
 針對使用 Azure AD 應用程式 Proxy 所發佈的 Microsoft 365、其他 SaaS 服務和內部部署應用程式，來保護身分識別和裝置的建議功能。
 
-|**Item**|**描述**|
+| 項目 | 描述 |
 |:-----|:-----|
 |[![模型海報： Microsoft 365 的身分識別與裝置保護](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF 格式查看](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載為 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> 2020年9月更新|請務必在您的資料、身分識別和裝置之間，使用一致層級的保護。 此模型顯示哪些功能可比對身分識別和裝置的功能的相關資訊。  <br/> |
  
@@ -70,7 +82,7 @@ Microsoft 365 企業解決方案系列提供實作 Microsoft 365 功能的指引
 
 高級 eDiscovery 端對端工作流程與資料流程，包含在 Microsoft 365 多地理位置環境中。 
 
-|**Item**|**描述**|
+| 項目 | 描述 |
 |:-----|:-----|
 |[![模型海報： Microsoft 365 中的高級 eDiscovery 架構](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) <br/> [以影像](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png) \| 形式查看[以 PDF 格式下載](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf) \|[下載為 Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)   <br/> 2020年10月更新|包括： <ul><li>  單一環境中的端對端工作流程</li><li>Microsoft 365 多地理位置環境中的端對端工作流程 </li><li>支援 EDRM 工作流程的端對端資料流程程</li> |
   
@@ -81,7 +93,7 @@ Microsoft 365 企業解決方案系列提供實作 Microsoft 365 功能的指引
 
 Recommended capabilities for protecting files in Office 365 based on three different sensitivity levels.
   
-|**Item**|**Description**|
+| Item | Description |
 |:-----|:-----|
 |[![Thumbnail for File Protection Solutions in Office 365 mini poster set](media/24be68b5-d852-4fdb-94ad-94491a19edd8.png)          ](https://www.microsoft.com/download/details.aspx?id=55523) <br/> [PDF](https://go.microsoft.com/fwlink/?linkid=2004320)  \| [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx) <br/> |It's important to use consistent levels of protection across your data, identities, and devices. This document shows you which capabilities are comparable with more information on capabilities to protect files in Office 365.  <br/> |
    
@@ -90,7 +102,7 @@ Recommended capabilities for protecting files in Office 365 based on three diffe
 
 Prescriptive recommendations for discovering, classifying, protecting, and monitoring personal data. This solution uses General Data Protection Regulation (GDPR) as an example, but you can apply the same process to achieve compliance with many other regulations.
 
-|**Item**|**Description**|
+| Item | Description |
 |:-----|:-----|
 |![Thumbnail for Office 365 Information Protection for GDPR](media/o365infoprotectforgdpr-thumb.png)  <br/> [PDF](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf) \| [Visio](https://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)    |To see this content in article format, see [Office 365 Information Protection for GDPR](https://docs.microsoft.com/Office365/SecurityCompliance/office-365-information-protection-for-gdpr).      |
 
@@ -99,7 +111,7 @@ Prescriptive recommendations for discovering, classifying, protecting, and monit
 This guidance describes how to implement a secure cloud environment. The solution guidance can be used by any organization. It includes extra help for agile organizations with BYOD access and guest accounts. You can use this guidance as a starting-point for designing your own environment.
 
 
-|**Item**|**Description**|
+| Item | Description |
 |:-----|:-----|
 |**Microsoft Security Guidance for Political Campaigns** <br/> [![Thumb nail for mini poster set.](media/d370ce28-ca40-4930-9a2c-907312aa06c8.png)          ](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf) <br/> [PDF](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.pdf)  \| [Visio](https://download.microsoft.com/download/B/4/D/B4D520C3-4D0C-4B4D-BFB9-09F0651C2775/MSFT_Cloud_architecture_security%20for%20political%20campaigns.vsdx) <br/> |This guidance uses a political campaign organization as an example. Use this guidance as a starting point for any environment.  <br/> |
 |**Microsoft Security Guidance for Nonprofits** <br/> [![Thumnail image for downloadable file](media/e4784889-1c69-4067-9a8f-31d31d1eceea.png)          ](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf) <br/> [PDF](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.pdf)  \| [Visio](https://download.microsoft.com/download/9/4/3/94389612-C679-4061-8DF2-D9A15D72B65F/Microsoft_Cloud%20Architecture_Security%20for%20Nonprofits.vsdx) <br/> |This guide is slightly revised for nonprofit organizations. For example, it references Office 365 Nonprofit plans. The technical guidance is the same as the political campaign solution guide.  <br/> |
