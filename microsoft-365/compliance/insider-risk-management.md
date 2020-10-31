@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: c9b19066b57d40ad33ac8d50ee1bee1f4a828030
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 289f0763d6a7e887946a5672fde5341f79f96855
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774046"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816858"
 ---
 # <a name="insider-risk-management-in-microsoft-365"></a>Microsoft 365 中的有問必答風險管理
 
@@ -122,7 +122,7 @@ ms.locfileid: "48774046"
 - **Office 365 Management APIs integration (preview)** ：「內部人員風險管理」支援透過 Office 365 管理) 將警示資訊匯出至安全性資訊和事件管理 (SIEM APIs 服務。 在平臺中存取警示資訊最適合組織的風險流程，可讓您更靈活地處理風險活動。 若要深入瞭解使用 Office 365 管理 APIs 匯出提醒資訊，請參閱 [匯出警示](insider-risk-management-settings.md#export-alerts-preview)。
 
 >[!NOTE]
->ServiceNow 預覽會在 30 2020 年11月結束，而且不會繼續進行。 感謝您的意見反應和支援，我們會決定接下來的步驟。
+>感謝您在 ServiceNow 連接器預覽期間進行意見反應和支援。 我們決定在2020年11月30日的「內幕人員風險管理」中結束支援 ServiceNow 連接器的預覽。 我們正在積極評估替代方法，讓客戶在內幕風險管理中 ServiceNow 整合。
 
 ## <a name="scenarios"></a>案例
 

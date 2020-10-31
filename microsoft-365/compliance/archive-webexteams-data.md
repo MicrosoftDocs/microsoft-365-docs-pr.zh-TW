@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 管理員可以設定連接器，以在 Microsoft 365 中從 Globanet 的 Webex 小組連接器匯入及封存資料。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 72698f7dea3cb3714270291669500091f411b102
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 76ea8ebc7ce263cf063e619cc5d794501e79c9c3
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408673"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816818"
 ---
 # <a name="set-up-a-connector-to-archive-webex-teams-data"></a>設定連接器以封存 Webex 小組資料
 
@@ -41,25 +41,25 @@ ms.locfileid: "48408673"
 
 ## <a name="before-you-begin"></a>在您開始之前
 
-- 為 Microsoft connector 建立 Globanet Merge1 帳戶。 若要這麼做，請與 [Globanet 客戶支援](https://globanet.com/ms-connectors-contact)部門聯繫。 當您在步驟1中建立連接器時，您必須登入此帳戶。
+- 為 Microsoft connector 建立 Globanet Merge1 帳戶。 若要建立此帳戶，請與 [Globanet 客戶支援](https://globanet.com/ms-connectors-contact)人員聯繫。 當您在步驟1中建立連接器時，您會登入此帳戶。
 
 - 在中建立應用程式 [https://developer.webex.com/](https://developer.webex.com) ，以從 Webex 小群組帳戶提取資料。 如需建立應用程式的逐步指示，請參閱[Merge1 Third-Party Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf) 。
 
    當您建立此應用程式時，Webex 平臺會產生一組唯一的認證。 當您設定全域 Merge1 網站上的 Webex 小組連接器時，會在步驟2中使用這些認證。
 
-- 在步驟1中建立 Webex 小組連接器所 (，並在步驟 3) 中完成的使用者，必須將其指派給 Exchange Online 中的信箱匯入匯出角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面上新增連接器時，此角色是必要的。 根據預設，此角色不會指派給 Exchange Online 中的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 在步驟1中建立 Webex 小組連接器所 (，並在步驟 3) 中完成的使用者，必須將其指派給 Exchange Online 中的信箱匯入匯出角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面上新增連接器時，此角色是必要的。 根據預設，此角色不會指派給 Exchange Online 中的角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 ## <a name="step-1-set-up-the-webex-teams-connector"></a>步驟1：設定 Webex 小組連接器
 
 第一步是取得 **資料連線器** 的存取權，並設定 [Webex 小組](https://globanet.com/webex-teams/) 連接器。
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [**資料連線器**  >  **Webex 小組**]。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [ **資料連線器**  >  **Webex 小組** ]。
 
-2. 在 [ **Webex 小組** 產品描述] 頁面上，按一下 [ **新增連接器**]。
+2. 在 [ **Webex 小組** 產品描述] 頁面上，按一下 [ **新增連接器** ]。
 
-3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受**]。
+3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受** ]。
 
-4. 輸入識別連接器的唯一名稱，然後按 **[下一步]**。
+4. 輸入識別連接器的唯一名稱，然後按 **[下一步]** 。
 
 5. 登入您的 Merge1 帳戶以設定連接器。
 
@@ -67,19 +67,19 @@ ms.locfileid: "48408673"
 
 第二個步驟是設定 Merge1 網站上的 Webex 小組連接器。 如需如何設定 Webex 小組連接器的詳細資訊，請參閱 [Merge1 Third-Party Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Webex%20Teams%20User%20Guide%20.pdf)。
 
-在您按一下 **[儲存] & 完成**之後，您會回到 Microsoft 365 規範中心，移至 [連接器] 嚮導中的 [ **使用者對應** ] 頁面。
+按一下 **[儲存] & 完成** 之後，就會顯示 Microsoft 365 規範中心內 [連接器] 嚮導中的 [ **使用者對應** ] 頁面。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>步驟3：對應使用者並完成連接器設定
 
 若要對應使用者，並完成 Microsoft 365 規範中心內的連接器設定，請遵循下列步驟：
 
-1. 在 [將 **Webex 團隊使用者對應至 Microsoft 365 使用者** ] 頁面上，啟用自動使用者對應。 Webex 團隊專案包括稱為「 *電子郵件*」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
+1. 在 [將 **Webex 團隊使用者對應至 Microsoft 365 使用者** ] 頁面上，啟用自動使用者對應。 Webex 團隊專案包括稱為「 *電子郵件* 」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
 
-2. 在 [系統 **管理員同意** ] 頁面上，按一下 [ **提供同意**]。 您將會重新導向至 Microsoft 網站。 按一下 [ **接受** ] 以提供同意。
+2. 在 [系統 **管理員同意** ] 頁面上，按一下 [ **提供同意** ]。 您將會重新導向至 Microsoft 網站。 按一下 [ **接受** ] 以提供同意。
   
    您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要提供系統管理員同意，您必須使用 Microsoft 365 全域管理員的認證登入，然後接受同意要求。 如果您未以全域系統管理員身分登入，您可以移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，並使用全域系統管理員認證登入，以接受要求。
 
-3. 按 **[下一步]**，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
+3. 按 **[下一步]** ，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
 
 ## <a name="step-4-monitor-the-webex-teams-connector"></a>步驟4：監控 Webex 小組連接器
 
@@ -87,9 +87,9 @@ ms.locfileid: "48408673"
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並按一下左側導覽中的 [ **資料連線器** ]。
 
-2. 按一下 [ **連接器** ] 索引標籤，然後選取 [ **Webex 小組** 連接器]，以顯示 [飛出] 頁面，該頁面包含連接器的屬性和資訊。
+2. 按一下 [ **連接器** ] 索引標籤，然後選取 [ **Webex 小組** 連接器] 以顯示飛出頁面。 此頁面包含連接器的屬性和資訊。
 
-3. 在 [ **連接器狀態與來源**] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含已匯入至 Microsoft 雲端之資料的相關資訊。
+3. 在 [ **連接器狀態與來源** ] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含已匯入至 Microsoft 雲端之資料的相關資訊。
 
 ## <a name="known-issues"></a>已知問題
 

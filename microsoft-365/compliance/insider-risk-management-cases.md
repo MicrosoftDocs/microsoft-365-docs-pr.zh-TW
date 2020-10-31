@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f0251f783aebd1264facfcbaa23a9b7afa286833
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e790dfa986e6132295279e64321bda71a736a4b2
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48774016"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816848"
 ---
 # <a name="insider-risk-management-cases"></a>內部人員風險管理案例
 
@@ -241,7 +241,7 @@ ms.locfileid: "48774016"
 共用內部使用者風險管理案例，可讓風險調查人員和分析員輕鬆與組織中的其他合規性專案關係人進行共同作業。 您可以使用「案例管理」區域中的外部利益關係人，快速分享內部使用者風險管理案例的連結。 若要從連結存取「內部使用者風險管理案例」，必須在任何「內幕風險管理」角色群組中包含專案關係人。
 
 >[!NOTE]
->ServiceNow 預覽會在 30 2020 年11月結束，而且不會繼續進行。 感謝您的意見反應和支援，我們會決定接下來的步驟。
+>感謝您在 ServiceNow 連接器預覽期間進行意見反應和支援。 我們決定在2020年11月30日的「內幕人員風險管理」中結束支援 ServiceNow 連接器的預覽。 我們正在積極評估替代方法，讓客戶在內幕風險管理中 ServiceNow 整合。
 
 可使用的共用選項如下：
 

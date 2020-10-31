@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，以從 Microsoft 365 的 Globanet 匯入及封存 Jive 資料。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 0838273baa86da043b57554a1f0e63bc3cb92917
-ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
+ms.openlocfilehash: 9017e6a7e26c823243abe188328cf62a22ea91c6
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48785515"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816556"
 ---
 # <a name="set-up-a-connector-to-archive-jive-data"></a>設定連接器以封存 Jive 資料
 
@@ -41,9 +41,9 @@ ms.locfileid: "48785515"
 
 ## <a name="before-you-begin"></a>在您開始之前
 
-- 為 Microsoft connector 建立 Globanet Merge1 帳戶。 若要這麼做，請與 [globanet 客戶支援](https://globanet.com/ms-connectors-contact/)部門聯繫。 當您在步驟1中建立連接器時，您必須登入此帳戶。
+- 為 Microsoft connector 建立 Globanet Merge1 帳戶。 若要建立此帳戶，請與 [globanet 客戶支援](https://globanet.com/ms-connectors-contact/)人員聯繫。 當您在步驟1中建立連接器時，您會登入此帳戶。
 
-- 在步驟1中建立 Jive 連接器的使用者 (，並在步驟 3) 中完成，必須將其指派給 Exchange Online 中的信箱匯入匯出角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面上新增連接器時，此角色是必要的。 根據預設，此角色不會指派給 Exchange Online 中的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
+- 在步驟1中建立 Jive 連接器的使用者 (，並在步驟 3) 中完成，必須將其指派給 Exchange Online 中的信箱匯入匯出角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面上新增連接器時，此角色是必要的。 根據預設，此角色不會指派給 Exchange Online 中的角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 ## <a name="step-1-set-up-the-jive-connector"></a>步驟1：設定 Jive 連接器
 
@@ -63,7 +63,7 @@ ms.locfileid: "48785515"
 
 第二個步驟是設定 Merge1 網站上的 Jive 連接器。 如需如何設定 Jive 連接器的詳細資訊，請參閱 [Merge1 Third-Party Connector User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Jive%20User%20Guide.pdf)。
 
-在您按一下 **[儲存] & 完成** 之後，您會回到 Microsoft 365 規範中心，移至 [連接器] 嚮導中的 [ **使用者對應** ] 頁面。
+按一下 **[儲存] & 完成** 之後，就會顯示 Microsoft 365 規範中心內 [連接器] 嚮導中的 [ **使用者對應** ] 頁面。
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>步驟3：對應使用者並完成連接器設定
 
@@ -83,7 +83,7 @@ ms.locfileid: "48785515"
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並按一下左側導覽中的 [ **資料連線器** ]。
 
-2. 按一下 [ **連接器** ] 索引標籤，然後選取 [ **Jive** ] 連接器以顯示飛出頁面，該頁面包含連接器的屬性和資訊。
+2. 按一下 [ **連接器** ] 索引標籤，然後選取 [ **Jive** 連接器] 以顯示飛出頁面。 此頁面包含連接器的屬性和資訊。
 
 3. 在 [ **連接器狀態與來源** ] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含已匯入至 Microsoft 雲端之資料的相關資訊。
 

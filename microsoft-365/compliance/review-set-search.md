@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何在評審集中建立及執行查詢，以在高級 eDiscovery 案例中組織資料，以進行更有效率的審閱。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 508e8e9fdb4a558a998a33aa561dc3755edcc40d
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 1ead897d412af2356d8b57ab8494539a5ed9a019
+ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47816716"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "48816566"
 ---
 # <a name="query-the-data-in-a-review-set"></a>查詢檢視集中的資料
 
@@ -36,25 +36,25 @@ ms.locfileid: "47816716"
 
 ## <a name="building-a-review-set-query"></a>建立審閱集查詢
 
-您可以使用關鍵字條件卡中的條件卡和查詢語言組合，建立查詢。 您也可以將條件卡片組合在一起，當作稱為 *條件群組* 的封鎖 () 建立更複雜的查詢。 如需您可以搜尋之中繼資料屬性的清單和描述，請參閱 [Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md)。
+您可以使用關鍵字條件中的關鍵字、屬性和條件的組合來建立查詢。 您也可以將條件分組為封鎖 (稱為 *condition group* ) ，以建立更複雜的查詢。 如需您可以搜尋之中繼資料屬性的清單和描述，請參閱 [Advanced eDiscovery 中的檔元資料欄位](document-metadata-fields-in-Advanced-eDiscovery.md)。
 
-### <a name="condition-cards"></a>條件卡片
+### <a name="conditions"></a>條件
 
-每個審閱集中的可搜尋欄位都有對應的條件卡，可供您用來建立查詢。
+每個審閱集中的可搜尋欄位都有對應的條件，可供您用來建立查詢。
 
-有多種狀況卡片類型：
+有多種類型的條件：
 
-- Freetext：透過文字欄位（例如 subject）使用 freetext 條件卡。 您可以將多個搜尋字詞以逗號分隔，以加以列出。
+- Freetext： freetext 條件是用於文字欄位（例如 subject）。 您可以將多個搜尋字詞以逗號分隔，以加以列出。
 
-- 日期：日期功能卡片用於日期欄位（例如「上次修改日期」）。
+- Date：日期條件是用於日期欄位（例如「上次修改日期」）。
 
-- 搜尋選項：「搜尋選項」條件卡會為您的考核集中的特定欄位提供可能的值清單。 這適用于在您的考核集中，具有有限數目的可能值的欄位（例如寄件者）。
+- 搜尋選項：「搜尋選項」條件會為您的考核集中的特定欄位提供可能的值清單。 這適用于在您的考核集中，具有有限數目的可能值的欄位（例如寄件者）。
 
-- 關鍵字：關鍵字條件卡片是 freetext 條件卡的特定實例，可供您用來搜尋字詞，或使用 KQL 類似的查詢語言。 如需詳細資訊，請參閱下一節。
+- 關鍵字：關鍵字條件是 freetext 條件的特定實例，您可以用來搜尋字詞，或在中使用類似 KQL 的查詢語言。 如需詳細資訊，請參閱下一節。
 
 ### <a name="query-language"></a>查詢語言
 
-除了條件卡片之外，您還可以使用關鍵字智慧卡中的類似 KQL 的查詢語言來建立您的查詢。 「檢查的複查集」查詢語言支援標準 Boolean 運算子，例如 **and**、 **OR**、 **NOT**和 **NEAR**。 它也支援單一字元萬用字元 (？ ) 和多字元萬用字元 ( * ) 。
+除了條件之外，您還可以使用關鍵字條件中的類似 KQL 的查詢語言來建立您的查詢。 「檢查的複查集」查詢語言支援標準 Boolean 運算子，例如 **and** 、 **OR** 、 **NOT** 和 **NEAR** 。 它也支援單一字元萬用字元 (？ ) 和多字元萬用字元 ( * ) 。
 
 ## <a name="filters"></a>篩選
 
