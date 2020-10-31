@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 系統管理員可以瞭解如何使用隔離標記來控制使用者可對其隔離郵件執行的動作。
-ms.openlocfilehash: 557a6832807c1768f482e76c76c0e92b027e49a7
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: 89f03795d8f12b3df3e5090648c5a6c8b64c322a
+ms.sourcegitcommit: 676479f1e65492b44c4d0316a765f55ae9fae374
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819175"
+ms.locfileid: "48819737"
 ---
 # <a name="quarantine-tags"></a>隔離標記
 
@@ -477,7 +477,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 如需安全寄件者清單的詳細資訊，請參閱 [防止受信任的寄件者遭到封鎖](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) ，並 [使用 Exchange Online PowerShell 來設定信箱上的安全清單集合](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
 
-### <a name="block-sender-permission"></a>封鎖寄件者許可權
+#### <a name="block-sender-permission"></a>封鎖寄件者許可權
 
 **Block sender** 許可權 ( _PermissionToBlockSender_ ) 控制對按鈕的存取權，讓使用者可以輕鬆地將隔離的郵件寄件者新增至其封鎖的寄件者清單。
 
@@ -491,7 +491,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 如需有關封鎖的寄件者清單的詳細資訊，請參閱 [封鎖來自某人的郵件](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) ，並 [使用 Exchange Online PowerShell 來設定信箱上的安全清單集合](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
 
-### <a name="delete-permission"></a>刪除權限
+#### <a name="delete-permission"></a>刪除權限
 
 「 **刪除** 」許可權 ( _PermissionToDelete_ ) 會控制使用者對其郵件的功能 (郵件的收件者) 從隔離區。
 
@@ -501,7 +501,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 - **使用者垃圾郵件通知** ：沒有作用。
 
-### <a name="preview-permission"></a>預覽許可權
+#### <a name="preview-permission"></a>預覽許可權
 
 **預覽** 許可權 ( _PermissionToPreview_ ) 控制使用者的功能，以在隔離區中預覽其郵件。
 
