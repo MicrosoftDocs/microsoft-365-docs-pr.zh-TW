@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a83bfef591c0e4baa2a24f0218999189dba7dba7
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 8e7dfcad68dc56e071072124c02c7e1346ddcde8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208285"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843349"
 ---
 # <a name="isoiec-27018-code-of-practice-for-protecting-personal-data-in-the-cloud"></a>保護雲端中個人資料的 ISO/IEC 27018 工作條例規定
 
@@ -61,7 +61,7 @@ Microsoft 和 ISO/IEC 27018
 - Power Virtual Agent
 - Microsoft 威脅專家
 - Microsoft Stream
-- Windows Defender ATP - 端點偵測與回應、自動調查與補救、安全分數
+- Microsoft Defender 進階威脅防護 - 端點偵測與回應、自動調查與補救、安全分數
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
@@ -109,9 +109,9 @@ Microsoft 雲端和商業技術支援服務會一年根據 ISO/IEC 27018 工作�
 
 不過，您有責任確保處理者有參與評估合規性的實作，以及組織中的控制和程序。
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評定風險
 
-[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的**評估範本**頁面尋找範本。 了解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性態勢，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評定。 可在合規性管理員的 [評定範本] 頁面尋找範本。 了解如何[在合規性管理員中建立評定](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

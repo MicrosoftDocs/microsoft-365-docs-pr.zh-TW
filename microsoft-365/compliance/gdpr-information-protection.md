@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2c9f0a97869f27cbcf5829a15f50bf2905472c28
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 547d79093b65fba37a020781fbfce938d122c943
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398482"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846375"
 ---
 # <a name="information-protection-for-gdpr-with-microsoft-365-capabilities"></a>使用 Microsoft 365 功能實現 GDPR 資訊保護
 
@@ -57,8 +57,8 @@ Microsoft 提供下列建議設定，可作為起點設定：
 威脅防護是跨 Microsoft 365 服務所建置。您可以從以下幾個資源開始著手：
 
 - [Office 365 安全性藍圖：前 30 天、前 90 天和之後的最高優先順序](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)。此藍圖包含實作功能的建議。 
-- [防範 Office 365 中的威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。 深入了解您可以在 Microsoft 365 資訊安全中心採取的保護動作。
-- [Windows 威脅防護](https://docs.microsoft.com/windows/security/threat-protection/)。深入了解 Windows Defender 進階威脅防護與 Windows 10 的其他功能。
+- [防範 Office 365 中的威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。 深入了解您可以在 Microsoft 365 安全性中心採取的保護動作。
+- [Microsoft Defender 進階威脅防護](https://docs.microsoft.com/windows/security/threat-protection/)。 在 Windows 10 中深入了解 Microsoft Defender 進階威脅防護及其他功能。
 
 ## <a name="learn-more"></a>深入了解
 

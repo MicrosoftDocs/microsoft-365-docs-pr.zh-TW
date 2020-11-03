@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: b4767b9cc3d267020fee1c44876bf47442d0cea2
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 61744c9c9d8bd5a7bb94cf9ab3599be0c2889efc
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47415491"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843105"
 ---
 # <a name="european-union-model-clauses"></a>歐盟示範條款
 
@@ -51,9 +51,9 @@ Microsoft 為歐盟的資料保護工作小組提供其標準合約條款，以�
 - PowerApps 雲端服務可作為獨立服務或包含在 Office 365 或 Dynamics 365 品牌方案或套件中
 - Power BI 雲端服務可作為獨立服務或包含在 Office 365 品牌方案或套件中
 - Azure DevOps Services
-- 適用於下列雲端服務部分的 Windows Defender 進階威脅防護：端點偵測與回應、自動調查與修復、安全分數。
+- 適用於下列雲端服務部分的 Microsoft Defender 進階威脅防護 ：端點偵測與回應、自動調查與修復、安全分數。
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 Microsoft 會持續評估歐盟標準，並視需要更新服務。
 
