@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a44c52c31377e0644a817affe068c11b19d006f5
-ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
+ms.openlocfilehash: 623b78946eae36849da8e1b139e2df4a9dff7742
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47416221"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845145"
 ---
 # <a name="title-23-nycrr-part-500"></a>第 23 號 NYCRR 第 500 編
 
@@ -35,19 +35,19 @@ Microsoft 針對受標題 23 NYCRR 第 500 部分管制的金融服務，提供�
 
 紐約法規要求每個金融機構：
 
-- 從評估機構的特定風險狀況開始，然後設計解決方案，以**開發並維護強大的網路安全性計劃**。 [Microsoft 雲端財務服務合規性計畫](https://www.microsoft.com/download/confirmation.aspx?id=55332)旨在協助金融機構使用 Microsoft 雲端服務評估風險。 這包括直接與我們的工程師和企業風險主管互動，並與我們的合規性與安全性專家聯繫。
-- **實作全方位網路安全性原則**，以解決資訊安全性、資料控管和分類、存取控制、商務持續性等問題。 Microsoft 透過有關我們認證與風險評估、商務持續性和災害復原指標和記錄與稽核診斷的深入資訊，提供此原則的指導方針。
-- **指定首席資訊安全官** (CISO) 以管理網路安全性計劃和執行原則。 為協助您的 CISO，Microsoft 透過 [Azure 資訊安全中心](https://azure.microsoft.com/services/security-center/?v=17.23h)、[Office 365 進階威脅分析](https://docs.microsoft.com/advanced-threat-analytics/)和 [Power BI Security](https://go.microsoft.com/fwlink/?LinkId=829185)，提供有關 Microsoft 雲端部署的深入網路安全性資訊。
-- **監控並測試其網路安全性計劃的有效性**：Microsoft 從其網路安全性做法的稽核提供資訊，其中包含持續監控、週期滲透測試和弱點評定。 客戶可以在未經 Microsoft 預先授權的情況下進行自己的測試。
+- 從評估機構的特定風險狀況開始，然後設計解決方案，以 **開發並維護強大的網路安全性計劃** 。 [Microsoft 雲端財務服務合規性計畫](https://www.microsoft.com/download/confirmation.aspx?id=55332)旨在協助金融機構使用 Microsoft 雲端服務評估風險。 這包括直接與我們的工程師和企業風險主管互動，並與我們的合規性與安全性專家聯繫。
+- **實作全方位網路安全性原則** ，以解決資訊安全性、資料控管和分類、存取控制、商務持續性等問題。 Microsoft 透過有關我們認證與風險評估、商務持續性和災害復原指標和記錄與稽核診斷的深入資訊，提供此原則的指導方針。
+- **指定首席資訊安全官** (CISO) 以管理網路安全性計劃和執行原則。 為協助您的 CISO，Microsoft 透過 [Azure Defender*](https://azure.microsoft.com/services/security-center/?v=17.23h)、[Office 365 進階威脅分析](https://docs.microsoft.com/advanced-threat-analytics/)和 [Power BI Security](https://go.microsoft.com/fwlink/?LinkId=829185)，提供有關 Microsoft 雲端部署的深入網路安全性資訊。
+- **監控並測試其網路安全性計劃的有效性** ：Microsoft 從其網路安全性做法的稽核提供資訊，其中包含持續監控、週期滲透測試和弱點評定。 客戶可以在未經 Microsoft 預先授權的情況下進行自己的測試。
 - **維護稽核線索** Azure、Office 365 和 Power BI 客戶的內建稽核功能可產生可用於重新建立金融交易和開發稽核線索資訊。
-- **限制存取包含非公開資訊的資訊系統**：Azure、Office 365 和 Power BI 提供針對每個服務原生的角色型存取控制 (RBAC) 程序，針對每個 Microsoft 系統管理員的嚴格安全性和存取需求，以及對每項提升權限要求之稽核的量值。
-- **制定評估和測試外部開發應用程式安全性的程序**：針對使用 Visual Studio 的開發人員，受管理程式碼的[安全性規則](https://docs.microsoft.com/visualstudio/code-quality/security-rules-rule-set-for-managed-code)可協助確保在部署程式碼之前可檢測並減輕應用程式網路安全性威脅。
-- **使用週期風險評估來設計並擴展網路安全性計劃**：針對客戶，Microsoft 彙總了有關安全性威脅的資訊，提供變更管理的藍圖，以及有關轉包商的定期更新資訊。 Microsoft 也會定期執行自有服務的風險評估，評估結果可供客戶瀏覽。
-- **使用合格人員來管理網路安全風險和監督網路安全性功能**：Microsoft 針對我們的員工採用嚴密程序存取您的客戶資料。 如果我們雇用轉包商，我們仍負責服務傳遞，並確保轉包商完全遵守 Microsoft 隱私權和安全性承諾，包括處理敏感性資料的需求、背景調查和保密合約。
-- **實作原則和程序以確保協力廠商服務提供者持有資訊安全性**：Azure、Office 365 和 Power BI 讓多重要素驗證可供所有傳入公司網路的連結使用；實作控制措施 (包括加密) 以保護傳輸到外部網路和待用的非公開資訊，並提供 [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)，可為客戶提供通知、事件調查和安全性事件的風險減輕。
-- **實作資料保留和刪除原則與程序**：您永遠可以存取和擷取儲存在 Azure、Office 365 和 Power BI 的客戶資料。
-- **監控已授權使用者的活動、偵測未授權的存取，以及為員工提供一般網路安全性認知訓練**：Azure、Office 365 和 Power BI 包括由外而內的監控以引發有關事件的警示，以及記錄和稽核的大量診斷。 [Microsoft Virtual Academy](https://mva.microsoft.com/) 提供的線上訓練涵蓋 Microsoft 雲端服務的網路安全性。
-- **制定計劃以應對網路安全性事件和從中復原**：Microsoft 使用防禦策略來偵測、預測和在發生前避免安全性漏洞。 當制定您的計劃時，您可以利用我們的事件管理計劃來應對網路安全漏洞。
+- **限制存取包含非公開資訊的資訊系統** ：Azure、Office 365 和 Power BI 提供針對每個服務原生的角色型存取控制 (RBAC) 程序，針對每個 Microsoft 系統管理員的嚴格安全性和存取需求，以及對每項提升權限要求之稽核的量值。
+- **制定評估和測試外部開發應用程式安全性的程序** ：針對使用 Visual Studio 的開發人員，受管理程式碼的 [安全性規則](https://docs.microsoft.com/visualstudio/code-quality/security-rules-rule-set-for-managed-code)可協助確保在部署程式碼之前可檢測並減輕應用程式網路安全性威脅。
+- **使用週期風險評估來設計並擴展網路安全性計劃** ：針對客戶，Microsoft 彙總了有關安全性威脅的資訊，提供變更管理的藍圖，以及有關轉包商的定期更新資訊。 Microsoft 也會定期執行自有服務的風險評估，評估結果可供客戶瀏覽。
+- **使用合格人員來管理網路安全風險和監督網路安全性功能** ：Microsoft 針對我們的員工採用嚴密程序存取您的客戶資料。 如果我們雇用轉包商，我們仍負責服務傳遞，並確保轉包商完全遵守 Microsoft 隱私權和安全性承諾，包括處理敏感性資料的需求、背景調查和保密合約。
+- **實作原則和程序以確保協力廠商服務提供者持有資訊安全性** ：Azure、Office 365 和 Power BI 讓多重要素驗證可供所有傳入公司網路的連結使用；實作控制措施 (包括加密) 以保護傳輸到外部網路和待用的非公開資訊，並提供 [Microsoft Online Services 條款](https://aka.ms/Online-Services-Terms)，可為客戶提供通知、事件調查和安全性事件的風險減輕。
+- **實作資料保留和刪除原則與程序** ：您永遠可以存取和擷取儲存在 Azure、Office 365 和 Power BI 的客戶資料。
+- **監控已授權使用者的活動、偵測未授權的存取，以及為員工提供一般網路安全性認知訓練** ：Azure、Office 365 和 Power BI 包括由外而內的監控以引發有關事件的警示，以及記錄和稽核的大量診斷。 [Microsoft Virtual Academy](https://mva.microsoft.com/) 提供的線上訓練涵蓋 Microsoft 雲端服務的網路安全性。
+- **制定計劃以應對網路安全性事件和從中復原** ：Microsoft 使用防禦策略來偵測、預測和在發生前避免安全性漏洞。 當制定您的計劃時，您可以利用我們的事件管理計劃來應對網路安全漏洞。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
