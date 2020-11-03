@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 瞭解如何將您的企業從 Microsoft 365 商務版移至 Microsoft 365 E3。
-ms.openlocfilehash: fbd5c0710bffa92cfc17447094bb9b2683641d5f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 874da0d35759c8af4c3ee2ca4a1bdfa90a91627c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48195512"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842193"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>從 Microsoft 365 商務進階版移轉至 Microsoft 365 E3
 
@@ -40,7 +40,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 升級非常簡單：您可以 [從系統管理中心](../commerce/subscriptions/upgrade-to-different-plan.md)開始升級。 您目前訂閱中的所有資料和設定均會維護。 您不需要做為遷移準備，也不需要執行任何動作，只會利用新功能。
 
 >[!Note]
->您也可以使用 Microsoft 365 商務版特優訂閱來獲得最高300的席位，並取得 Microsoft 365 E3 訂閱，以供超過300的席位使用。 不過，Office 365 ATP 並未包含在 Microsoft 365 E3 中。 針對持續威脅防護，您應該新增額外的 Office 365 ATP 授權，以便授權您的 Office 365 ATP 原則範圍內的所有使用者。
+>您也可以使用 Microsoft 365 商務版特優訂閱來獲得最高300的席位，並取得 Microsoft 365 E3 訂閱，以供超過300的席位使用。 不過，microsoft Defender for Office 365 並未包含在 Microsoft 365 E3 中。 針對持續威脅防護，您應該針對 Office 365 授權新增額外的 Defender，以便授權您的 Office 365 原則範圍中的所有使用者。
 >
 
 ## <a name="differences-between-microsoft-365-business-premium-and-microsoft-365-enterprise"></a>Microsoft 365 商務版和 Microsoft 365 企業版之間的差異
@@ -60,7 +60,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 | Outlook 客戶經理，MileIQ    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | | 
 | **威脅防護**        | | | 
 | 攻擊面降減功能    | [請參閱此清單](#threat-protection) | Microsoft Edge 的硬體隔離的企業管理 | 
-| Office 365 高級威脅防護 (ATP) 方案1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
+| 適用于 Office 的 Defender 365 方案1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
 | **身分識別管理**        | | | 
 | 混合式 Azure Active Directory 的自助密碼重設 (Azure AD) 帳戶，Azure 多重要素驗證 (MFA) ，條件式存取，針對內部部署身分識別的密碼回寫功能|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
 | 雲端應用程式探索，Azure AD Connect Health    |     | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
@@ -75,7 +75,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 | **資訊保護**        | | | 
 | Office 365 資料遺失防護，Azure 資訊保護方案1    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
 | Endpoint DLP 的視窗資訊保護    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
-| **用戶端存取許可證 (CAL 許可權) **    | | |     
+| **用戶端存取許可證 (CAL 許可權)**    | | |     
 | Enterprise CAL 套件 (Exchange、SharePoint、Skype、Windows、Microsoft Endpoint Configuration 管理員、Windows Rights Management) | |         ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
 | **合規性**        | | | 
 | 無限制的電子郵件封存    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
@@ -129,7 +129,7 @@ Windows 10 商務版包含下列保護：
 Windows 10 企業版 E3 也包含以硬體為基礎的 Microsoft Edge 隔離的企業管理。
 
 >[!Note]
->遷移至 Microsoft 365 E3 的使用者，每個使用者都需要 Office 365 ATP 授權，以繼續威脅防護。 請務必購買其他 Office 365 ATP 授權，以便授權您的 Office 365 ATP 原則範圍內的所有使用者。 
+>遷移至 Microsoft 365 E3 的使用者，每個使用者都需要 Microsoft Defender for Office 365 授權，以進行持續威脅防護。 請務必購買其他適用于 Office 365 授權的 Defender，以便授權您的 Office 365 範圍中的所有使用者。 
 >
 
 ### <a name="device-management-with-intune"></a>使用 Intune 的裝置管理

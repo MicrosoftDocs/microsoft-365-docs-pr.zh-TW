@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 description: 瞭解如何根據敏感度設定小組以保護您的資料
-ms.openlocfilehash: ef49e788805139bf82fa5b1b43d2a87323640820
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527705"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843537"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全的共同作業
 
@@ -41,7 +41,7 @@ ms.locfileid: "46527705"
 
 如果資訊未適當共用，大部分的組織都有各種資訊，但敏感度程度不同，而且業務影響程度也會不同。 根據特定資訊的敏感度，您可能想要允許與共享：
 
-- 任何人（未驗證）
+- 任何人 (未驗證) 
 - 組織內的人員
 - 組織內的特定人員
 - 組織內部和外部的特定人員
@@ -54,7 +54,7 @@ ms.locfileid: "46527705"
 
 對貴組織成功與否重要的資訊，或具有嚴格的安全性或規範需求可能需要更高的保護等級。
 
-![從低（已發行的摺頁冊）到高（機密商務資料）的風險規模](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
+![從低 (發行的摺頁冊) 到高 (敏感商務資料) ](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
 
 針對上述所有案例，您可以使用 Microsoft 團隊中的團隊來儲存、共用及共同作業資訊。 
 
@@ -62,25 +62,25 @@ ms.locfileid: "46527705"
 
 | 產品或元件 | 功能 | 授權 |
 |:-------|:-----|:-------|
-| Office 365 進階威脅防護 | SPO、OneDrive 及小組的 ATP 安全附件;ATP 安全檔;小組的 ATP 安全連結    | Microsoft 365 E1，E3 和 E5 |
+| Microsoft Defender for Office 365 | SPO、OneDrive 及小組的安全附件;安全檔;小組的安全連結    | Microsoft 365 E1，E3 和 E5 |
 | SharePoint    | 網站與檔案共用原則、網站共用許可權、共用連結、存取要求、網站來賓共用設定 | Microsoft 365 E1，E3 和 E5 |
 | Microsoft Teams   | 來賓存取、私人團隊、專用通道 | Microsoft 365 E1，E3 和 E5 |
 | Microsoft 365 合規性  | 敏感度標籤    | Microsoft 365 E3 和 E5 |
 
 ### <a name="using-teams-for-all-kinds-of-data"></a>針對所有種類的資料使用團隊
 
-若要使用不同的 sensitivities 管理資訊存取，我們[為小組開發了三個不同的保護層級](configure-teams-three-tiers-protection.md)。 您可以自訂這些層級，以更好地解決需求或您的業務。 
+若要使用不同的 sensitivities 管理資訊存取，我們 [為小組開發了三個不同的保護層級](configure-teams-three-tiers-protection.md)。 您可以自訂這些層級，以更好地解決需求或您的業務。 
 
 ![Teams 邏輯架構海報的縮圖影像](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-這些層級-*基準*、*敏感*和*高敏感度*-逐步增加保護，協助避免 oversharing 和潛在的資訊洩漏，如下表所示。
+這些層級- *基準* 、 *敏感* 和 *高敏感度* -逐步增加保護，協助避免 oversharing 和潛在的資訊洩漏，如下表所示。
 
 ||**基準層**|**機密層**|**高度機密層**|
 |:--|:-----------|:------------|:-------------------|
 |公用或私人團隊|兩者之一|Private|Private|
 |未經驗證的共用|已封鎖|已封鎖|已封鎖|
-|檔案共用|已允許|已允許|只有小組擁有者可以共用。|
+|檔案共用|已允許|允許|只有小組擁有者可以共用。|
 |小組成員資格|任何人都可以加入 public 團隊。<br>加入私人團隊所需的小組擁有者核准。|加入所需的小組擁有者核准。|加入所需的小組擁有者核准。|
 |檔加密|||可用於敏感度標籤|
 |來賓共用|允許|可以允許或封鎖|可以允許或封鎖|
@@ -90,26 +90,26 @@ ms.locfileid: "46527705"
 
 - 為來賓存取和專用通道設定小組中的設定
 - 為內部及來賓共用、存取要求和共用連結設定小組相關 SharePoint 網站中的設定
-- 針對*敏感*和*高敏感度*的層級，設定敏感度標籤來分類小組，以及控制來賓共用和非管理裝置的存取
-- 針對*高度敏感*的層級，設定靈敏度標籤以加密其所套用的檔
+- 針對 *敏感* 和 *高敏感度* 的層級，設定敏感度標籤來分類小組，以及控制來賓共用和非管理裝置的存取
+- 針對 *高度敏感* 的層級，設定靈敏度標籤以加密其所套用的檔
 
-從基準層開始，然後根據需要新增使用*敏感*和*高度機密*階層的團隊，以協助保護組織中的資訊。 請參閱下列資源以開始執行：
+從基準層開始，然後根據需要新增使用 *敏感* 和 *高度機密* 階層的團隊，以協助保護組織中的資訊。 請參閱下列資源以開始執行：
 
 - [為小組設定基準保護](configure-teams-baseline-protection.md)
 - [為團隊設定高敏感性資料保護](configure-teams-sensitive-protection.md)
 - [為小組設定高敏感度資料保護](configure-teams-highly-sensitive-protection.md)
 
-如果您有高度機密的專案需要在組織內共用額外的保護，您可以設定一個小組，該小組使用自己的敏感度標籤來加密檔案，只有小組成員可以讀取這些檔案。 如需詳細資訊，請參閱[Configure a team with security 隔離](secure-teams-security-isolation.md)。
+如果您有高度機密的專案需要在組織內共用額外的保護，您可以設定一個小組，該小組使用自己的敏感度標籤來加密檔案，只有小組成員可以讀取這些檔案。 如需詳細資訊，請參閱 [Configure a team with security 隔離](secure-teams-security-isolation.md) 。
 
 ### <a name="sharing-with-people-outside-your-organization"></a>與組織外部的人員共用
 
-您可能需要[與組織外部的人員共用任何敏感度的資訊](collaborate-with-people-outside-your-organization.md)。 這可能包括與單一人員共用單一檔，以從世界各地的大型夥伴組織或兼職處理主要專案。 在 Microsoft 365 中，您可以輕鬆執行這種外部共用，並提供適當的防範措施，協助保護您的敏感資訊。
+您可能需要 [與組織外部的人員共用任何敏感度的資訊](collaborate-with-people-outside-your-organization.md)。 這可能包括與單一人員共用單一檔，以從世界各地的大型夥伴組織或兼職處理主要專案。 在 Microsoft 365 中，您可以輕鬆執行這種外部共用，並提供適當的防範措施，協助保護您的敏感資訊。
 
 這些資源會協助您開始設定您的環境，以與組織外部的人員進行合作：
 
-- [在檔上共同](collaborate-on-documents.md)作業，以共用個別的資料夾檔案。
-- [在網站中共同](collaborate-in-site.md)作業，以與在 SharePoint 網站中的客人進行合作。
-- [以](collaborate-as-team.md)團隊方式共同作業，以與小組中的客人合作。
+- [在檔上共同](collaborate-on-documents.md) 作業，以共用個別的資料夾檔案。
+- [在網站中共同](collaborate-in-site.md) 作業，以與在 SharePoint 網站中的客人進行合作。
+- [以](collaborate-as-team.md) 團隊方式共同作業，以與小組中的客人合作。
 
 根據所共用資訊的敏感度，您可以新增安全保護，以協助防止 oversharing。 這些資源將協助您設定組織所需的保護：
 
@@ -117,15 +117,15 @@ ms.locfileid: "46527705"
 - [在與組織外的人員共用檔案時，限制資訊意外暴露](share-limit-accidental-exposure.md)
 - [建立安全的來賓共用環境](create-secure-guest-sharing-environment.md)
 
-如果您有一個主要專案與一個夥伴組織，您可以使用 Azure 權利管理，在您為專案設定的小組中管理該組織的客人。 如需詳細資訊，請參閱[Create a B2B extranet with managed guests](b2b-extranet.md) 。
+如果您有一個主要專案與一個夥伴組織，您可以使用 Azure 權利管理，在您為專案設定的小組中管理該組織的客人。 如需詳細資訊，請參閱 [Create a B2B extranet with managed guests](b2b-extranet.md) 。
 
 ## <a name="deploy-the-secure-collaboration-solution"></a>部署安全的共同作業解決方案
 
 當您準備好部署此方案時，請繼續執行下列步驟：
 1. [為小組設定三種不同的保護層級](configure-teams-three-tiers-protection.md)。
-2. 設定[與組織外部人員共用任何敏感度資訊的](collaborate-with-people-outside-your-organization.md)設定。
+2. 設定 [與組織外部人員共用任何敏感度資訊的](collaborate-with-people-outside-your-organization.md)設定。
 
-## <a name="see-also"></a>也請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 安全性文件](https://docs.microsoft.com/microsoft-365/security)
 

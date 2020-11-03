@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 63f12aaa84415b354fd257558612dbbe28e41360
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 86cc32cf395f2216eb3e167e372d1225734c4c28
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429452"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842629"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -32,11 +32,11 @@ ms.locfileid: "48429452"
 
 
 **適用範圍：**
-- Microsoft 威脅防護
+- Microsoft 365 Defender
 
 
 
-[進階搜捕](advanced-hunting-overview.md)結構描述中的 `EmailEvents` 表格包含有關在 Office 365 ATP 處理電子郵件的事件相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `EmailEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含有關在 Microsoft Defender for Office 365 上處理電子郵件之事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!TIP]
 > 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
@@ -62,9 +62,9 @@ ms.locfileid: "48429452"
 | `DeliveryAction` | 字串 | 電子郵件的傳遞動作：已傳送、已標示為垃圾郵件、已封鎖或已取代 |
 | `DeliveryLocation` | 字串 | 傳送電子郵件的位置：收件匣/資料夾、內部部署/外部、垃圾郵件、隔離、失敗、已中斷、刪除的郵件 |
 | `PhishFilterVerdict` | 字串 | 決定電子郵件是否為網路釣魚的電子郵件篩選堆疊：網路釣魚或非網路釣魚 |
-| `PhishDetectionMethod` | 字串 | 用於將電子郵件偵測為網路釣魚的方法：惡意 URL 信譽、ATP 安全連結 URL 引爆、進階網路釣魚篩選、一般網路釣魚篩選、防詐騙：組織內部、防詐騙：外部網域、網域模擬、使用者模擬、品牌模擬 |
+| `PhishDetectionMethod` | 字串 | 用於偵測電子郵件為網路釣魚網路的方法：惡意 URL 信譽、安全連結 URL 引爆、高級網路釣魚篩選、一般網路釣魚篩選器、反欺騙性：組織內、反欺騙性：外部網域、網域模擬、使用者模擬、品牌模仿 |
 | `MalwareFilterVerdict` | 字串 | 決定電子郵件是否包含惡意程式碼的電子郵件篩選堆疊：惡意程式碼或非惡意程式碼 |
-| `MalwareDetectionMethod` | 字串 | 用於偵測電子郵件惡意程式碼的方法：反惡意程式碼引擎、檔案信譽、ATP 安全附件 |
+| `MalwareDetectionMethod` | 字串 | 用於偵測電子郵件中惡意程式碼的方法：反惡意程式碼引擎、檔信譽、安全附件 |
 | `FinalEmailAction` | 字串 | 以篩選決策、原則和使用者動作為基礎的最終電子郵件執行動作：將郵件移至垃圾郵件資料夾、新增 X 標頭、修改主旨、重新導向郵件、刪除郵件、傳送至隔離、未採取任何動作、密件副本郵件 |
 | `FinalEmailActionPolicy` | 字串 | 生效的動作原則：反垃圾郵件 - 高信賴度、反垃圾郵件、反垃圾郵件 - 大宗郵件、反垃圾郵件 - 網路釣魚、反網路釣魚網域模擬、反網路釣魚使用者模擬、反網路釣魚詐騙、反網路釣魚圖形模擬、反惡意程式碼、安全附件、企業傳輸規則 (ETR) |
 | `FinalEmailActionPolicyGuid` | 字串 | 決定最終郵件動作的原則的唯一識別碼 |

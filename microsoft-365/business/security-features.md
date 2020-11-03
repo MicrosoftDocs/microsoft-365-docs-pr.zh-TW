@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 深入瞭解 Microsoft 365 商務版 Premium 隨附的安全性功能，協助保護電腦、電話和平板電腦上的資料。
-ms.openlocfilehash: 5e16d4bf297d363b6f9b44ce854c857e7e5464ed
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 587d80c27f867a387c901d23f4ec05f3c5905bf6
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357311"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843481"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商務版安全性和合規性功能
 
@@ -63,9 +63,9 @@ Microsoft 365 商務版特優提供簡化的安全性功能，以協助保護電
 
 Microsoft 365 商務版中的高級功能可協助您保護您的公司免受網路威脅，並保護機密資訊。
   
-- **[Office 365 進階威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
+- **[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
-    「高級威脅防護 (ATP) 會協助您的企業防禦複雜的網路釣魚和勒索軟體攻擊，以損臔員工或客戶資訊。 功能包括：
+    Microsoft Defender for Office 365 可協助您的企業防禦複雜的網路釣魚和勒索軟體攻擊，其設計是為了損害員工或客戶資訊。 功能包括：
     
   - 複雜的附件掃描及 AI 功能的分析，可偵測並捨棄危險的郵件。
     
@@ -74,7 +74,7 @@ Microsoft 365 商務版中的高級功能可協助您保護您的公司免受網
 - **[Azure 入口網站中 Intune 的完整功能](https://go.microsoft.com/fwlink/p/?linkid=871403)**
     
     存取 Azure 入口網站中的 Intune 系統管理中心，可讓您設定其他安全性功能，例如管理 MacOS 裝置、iPhone 和 Android 裝置，以及 Windows 的高級裝置管理，但無法透過 Microsoft 365 系統管理中心取得。
-- **與 Azure AD Premium P1 方案相同的[條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
+- **與 Azure AD Premium P1 方案相同的 [條件式存取](https://docs.microsoft.com/azure/active-directory/conditional-access/overview)**
 
 
     條件式存取可協助您保護組織避免登入風險、存取意外網路或地區的企圖、存取危險裝置類型的企圖，等等。 在第一個驗證完成後，會強制執行條件式存取原則，並使用第一個驗證事件中的信號，判斷嘗試的存取是否應獲得核准、拒絕，或是需要更多證明 (例如，例如識別) 的第二種格式）。
@@ -106,7 +106,7 @@ Microsoft 365 商務版中的高級功能可協助您保護您的公司免受網
     
 - **[敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 商務版 Premium 包含 [Azure 資訊保護方案 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 透過這項計畫，您可以建立 **靈敏度標籤** ，讓您在電子郵件和檔中控制敏感資訊的存取權，例如「不要轉寄」和「不要複製」控制項。 您也可以將機密資訊分類為「機密」，並指定保密資訊在公司外及公司內部共用的方式。 企業級加密易於套用至電子郵件和檔，以將資訊保密。 您也可以安裝 Office 應用程式的 Azure 資訊保護用戶端增益集。 如需詳細資訊，請參閱 [Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若為敏感度標籤，請安裝 **AzInfoProtection_UL.exe**。
+   Microsoft 365 商務版 Premium 包含 [Azure 資訊保護方案 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 透過這項計畫，您可以建立 **靈敏度標籤** ，讓您在電子郵件和檔中控制敏感資訊的存取權，例如「不要轉寄」和「不要複製」控制項。 您也可以將機密資訊分類為「機密」，並指定保密資訊在公司外及公司內部共用的方式。 企業級加密易於套用至電子郵件和檔，以將資訊保密。 您也可以安裝 Office 應用程式的 Azure 資訊保護用戶端增益集。 如需詳細資訊，請參閱 [Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若為敏感度標籤，請安裝 **AzInfoProtection_UL.exe** 。
 
 您可以在安全性與 &amp; 合規性中心及 Intune 系統管理中心中管理這些功能。 經過一段時間後，簡化的控制項會新增至 Microsoft 365 系統管理中心。
   

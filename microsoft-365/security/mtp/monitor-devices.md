@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b84ca774e1b9bd0bca51b8ee21f6a06f2fde5b4
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 92760ef14fb1192e4462bab656e22f3595f9b449
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430618"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843861"
 ---
 # <a name="device-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的裝置監控與報告
 
@@ -33,11 +33,11 @@ ms.locfileid: "48430618"
 
 ## <a name="view-device-alerts"></a>View device alerts
 
-使用具有 E5 授權) 的 Microsoft Defender ATP (，取得您裝置上的侵犯行為和其他威脅的最新警示。 Microsoft 365 的安全性中心會使用您偏好的工作流程，以較高的層次來監視這些警示。
+取得來自 Microsoft Defender for Endpoint (裝置的破壞性活動和其他威脅的最新警示，) 使用 E5 授權。 Microsoft 365 的安全性中心會使用您偏好的工作流程，以較高的層次來監視這些警示。
 
 ### <a name="monitor-high-impact-alerts"></a>監視高影響警示
 
-每個 Microsoft Defender ATP 警示都有相對應的嚴重性 (高、中、低或資訊性) 。 它指出網路對網路的潛在影響（如果是以無人照看）。  
+每個 Microsoft Defender for Endpoint alert 都有對應的嚴重性 (高、中、低或資訊性) 。 它指出網路對網路的潛在影響（如果是以無人照看）。  
 
 使用 **裝置警示嚴重性** 卡片，特別針對較嚴重的提醒，而且可能需要立即回應。 您可以從這張卡片中查看 Microsoft Defender 安全中心入口網站的詳細資訊。
 
@@ -45,9 +45,9 @@ ms.locfileid: "48430618"
 
 ### <a name="understand-sources-of-alerts"></a>瞭解警示來源
 
-Microsoft Defender ATP 利用各種安全性感應器和智慧來源中的資料來產生警示。 例如，它可以從 Microsoft Defender 防病毒和協力廠商反惡意軟體使用偵測資訊。 它也可以使用您自己的自訂威脅情報（透過 web 服務 API 提供）。
+Microsoft Defender for Endpoint 會利用一系列的安全性感應器和智慧來源中的資料來產生警示。 例如，它可以從 Microsoft Defender 防病毒和協力廠商反惡意軟體使用偵測資訊。 它也可以使用您自己的自訂威脅情報（透過 web 服務 API 提供）。
 
-**裝置警示偵測**"來源卡] 顯示依來源散佈的報警。 追蹤與特定來源相關的活動，尤其是自訂來源。 您也可以使用該卡，將未設定為自動封鎖惡意活動或元件的感應器上的警示集中在一起。
+**裝置警示偵測** "來源卡] 顯示依來源散佈的報警。 追蹤與特定來源相關的活動，尤其是自訂來源。 您也可以使用該卡，將未設定為自動封鎖惡意活動或元件的感應器上的警示集中在一起。
 
 ![裝置警示偵測來源卡](../../media/device-alert-detection-sources.png)
 
@@ -55,26 +55,26 @@ Microsoft Defender ATP 利用各種安全性感應器和智慧來源中的資料
 
 ### <a name="understand-the-types-of-threats-that-trigger-alerts"></a>瞭解觸發警示的威脅類型
 
-Microsoft Defender ATP 會將每個警示排序為代表攻擊鏈或威脅元件類型中某一階段的類別。 例如，偵測到的威脅活動可能會分類為「橫向移動」，表示有嘗試聯繫網路上的其他裝置。 攻擊者取得初始 foothold 後，可能會發生此事件。 當偵測到威脅元件時，可能會廣泛歸類為惡意程式碼或特殊威脅類型。 具體細節包括勒索軟體、認證偷竊或其他類型的惡意或不需要的軟體。
+Microsoft Defender for Endpoint 會將每個警示排序為代表攻擊鏈或威脅元件類型中某一階段的類別。 例如，偵測到的威脅活動可能會分類為「橫向移動」，表示有嘗試聯繫網路上的其他裝置。 攻擊者取得初始 foothold 後，可能會發生此事件。 當偵測到威脅元件時，可能會廣泛歸類為惡意程式碼或特殊威脅類型。 具體細節包括勒索軟體、認證偷竊或其他類型的惡意或不需要的軟體。
 
-**裝置威脅類別**卡片顯示這些類別的警示散佈。 使用此資訊來識別威脅活動，例如認證盜竊嘗試，通常會比社交工程嘗試更高的影響。 您也可以監視與勒索軟體類似的潛在破壞性威脅。
+**裝置威脅類別** 卡片顯示這些類別的警示散佈。 使用此資訊來識別威脅活動，例如認證盜竊嘗試，通常會比社交工程嘗試更高的影響。 您也可以監視與勒索軟體類似的潛在破壞性威脅。
 
 ![裝置威脅類別卡片](../../media/device-threat-categories.png)
 
 ### <a name="monitor-active-alerts"></a>監視主動警示
 
-**裝置警示狀態**卡片會指出尚未解決而且可能需要注意的警示數目。 您可以從這張卡片中查看 Microsoft Defender 安全中心入口網站的詳細資訊。
+**裝置警示狀態** 卡片會指出尚未解決而且可能需要注意的警示數目。 您可以從這張卡片中查看 Microsoft Defender 安全中心入口網站的詳細資訊。
 
 ![裝置警示狀態卡片](../../media/device-alert-status.png)
 
 ### <a name="monitor-classification-of-resolved-alerts"></a>監視已解析之警示的分類
 
-當您解決 Microsoft Defender ATP 警示時，您的安全性人員可以指定警示是否已驗證為：
+當您解決 Microsoft Defender for Endpoint alert 時，您的安全性人員可以指定警示是否已驗證為下列專案：
 
 * 可識別實際違規活動或威脅元件的真正警示
 * 偵測到正常活動的錯誤警示
 
-**裝置警示分類**卡會顯示您已解決的警示是否已分類為 true 或 false 警示。 您可以從這張卡片中查看 Microsoft Defender 安全中心入口網站的詳細資訊。
+**裝置警示分類** 卡會顯示您已解決的警示是否已分類為 true 或 false 警示。 您可以從這張卡片中查看 Microsoft Defender 安全中心入口網站的詳細資訊。
 
 附注：在某些情況下，無法使用特定警示的分類資訊。
 
@@ -84,14 +84,14 @@ Microsoft Defender ATP 會將每個警示排序為代表攻擊鏈或威脅元件
 
 在解決時，除了分類警示是否為 true 或 false 之外，您的安全性人員仍可提供決定。 決定表示在驗證提醒時，所找到的一般或惡意的活動類型。
 
-**裝置警示決定**卡片顯示針對每個警示所提供的決定。
+**裝置警示決定** 卡片顯示針對每個警示所提供的決定。
 
-* **APT**： advanced persistent 威脅，表示偵測到的活動或威脅元件屬於複雜的破壞性之一，其設計目的是在受影響的網路中取得 foothold  
-* **惡意**代碼：惡意檔或程式碼
-* **安全性人員**：安全性人員所執行的一般活動
-* **安全性測試**：設計用來模擬實際威脅的活動或元件，以及預期觸發安全性感應器及產生警示
-* 不**需要的軟體**：不會被視為惡意的應用程式和其他軟體，但也違反原則或可接受的使用標準
-* **其他**：不屬於所提供類型的任何其他決定
+* **APT** ： advanced persistent 威脅，表示偵測到的活動或威脅元件屬於複雜的破壞性之一，其設計目的是在受影響的網路中取得 foothold  
+* **惡意** 代碼：惡意檔或程式碼
+* **安全性人員** ：安全性人員所執行的一般活動
+* **安全性測試** ：設計用來模擬實際威脅的活動或元件，以及預期觸發安全性感應器及產生警示
+* 不 **需要的軟體** ：不會被視為惡意的應用程式和其他軟體，但也違反原則或可接受的使用標準
+* **其他** ：不屬於所提供類型的任何其他決定
 
 您可以從此卡片中查看 Microsoft Defender Security Center 中的詳細資訊。
 
@@ -158,42 +158,42 @@ Intune 註冊的裝置資料包括：
 
 ![攻擊面縮減卡](../../media/attack-surface-reduction-rules.png)
 
-**受攻擊面縮小規則**卡提供在您的裝置之間部署規則的概觀。
+**受攻擊面縮小規則** 卡提供在您的裝置之間部署規則的概觀。
 
 卡片上的頂端列顯示在下列部署模式中的裝置總數：
 
-* **封鎖模式**：已設定至少一個規則的裝置，以封鎖偵測到的活動
-* **稽核模式**：沒有設定規則的裝置封鎖偵測活動，但至少有一個規則集來審核偵測到的活動  
-* **Off**：關閉所有 ASR 規則的裝置
+* **封鎖模式** ：已設定至少一個規則的裝置，以封鎖偵測到的活動
+* **稽核模式** ：沒有設定規則的裝置封鎖偵測活動，但至少有一個規則集來審核偵測到的活動  
+* **Off** ：關閉所有 ASR 規則的裝置
 
 這個卡片的下半部會依每個裝置的規則來顯示設定。 每個條碼會指出設定為封鎖、審核偵測或已完全關閉規則的裝置數目。
 
 ### <a name="view-asr-detections"></a>查看 ASR 偵測
 
-若要查看您網路中的 ASR 規則偵測的詳細資訊，請選取 [在**攻擊面減少規則**卡片上**查看**偵測]。 將會 **開啟 [詳細報告] 頁面** 中的 [偵測到] 索引標籤。
+若要查看您網路中的 ASR 規則偵測的詳細資訊，請選取 [在 **攻擊面減少規則** 卡片上 **查看** 偵測]。 將會 **開啟 [詳細報告] 頁面** 中的 [偵測到] 索引標籤。
 
 ![偵測] 索引標籤](../../media/detections-tab.png)
 
 頁面頂端的圖表會顯示已封鎖或已審核之時間堆疊偵測偵測的偵測結果。 底部的資料表列出最近的偵測。 使用資料表上的下列資訊以了解偵測的性質：
 
-* 偵測**到**檔案：檔案（通常為腳本或檔），其內容會觸發可疑的攻擊活動
-* **規則**：名稱描述規則所設計的攻擊活動。 閱讀現有的 ASR 規則
-* **來源應用**程式：載入或執行的內容，會觸發可疑的攻擊活動。 它可能是合法的應用程式，例如網頁瀏覽器、Office 應用程式或類似 PowerShell 的系統工具
-* **發行者**：發行來源應用程式的廠商
+* 偵測 **到** 檔案：檔案（通常為腳本或檔），其內容會觸發可疑的攻擊活動
+* **規則** ：名稱描述規則所設計的攻擊活動。 閱讀現有的 ASR 規則
+* **來源應用** 程式：載入或執行的內容，會觸發可疑的攻擊活動。 它可能是合法的應用程式，例如網頁瀏覽器、Office 應用程式或類似 PowerShell 的系統工具
+* **發行者** ：發行來源應用程式的廠商
 
 ### <a name="review-device-asr-rule-settings"></a>複查裝置 ASR 規則設定
 
-在 [**攻擊面減少規則****報告] 頁面**中，移至 [設定] 索引標籤，以查看個別裝置的規則設定。 選取裝置以取得每個規則是否為封鎖模式、稽核模式或完全關閉的詳細資訊。
+在 [ **攻擊面減少規則****報告] 頁面** 中，移至 [設定] 索引標籤，以查看個別裝置的規則設定。 選取裝置以取得每個規則是否為封鎖模式、稽核模式或完全關閉的詳細資訊。
 
 ![設定] 索引標籤](../../media/configuration-tab.png)
 
-Microsoft Intune 提供您之 ASR 規則的管理功能。 如果您想要更新您的設定，請在 [**設定裝置**] 索引標籤中選取 [**啟動**]，以在 Intune 上開啟裝置管理。
+Microsoft Intune 提供您之 ASR 規則的管理功能。 如果您想要更新您的設定，請在 [ **設定裝置** ] 索引標籤中選取 [ **啟動** ]，以在 Intune 上開啟裝置管理。
 
 ### <a name="exclude-files-from-asr-rules"></a>排除來自 ASR 規則的檔案
 
 Microsoft 365 security center 會從偵測中收集 [您可能想](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-attack-surface-reduction#exclude-files-and-folders-from-asr-rules) 要從偵測中排除的檔案名稱。 透過排除檔案，您可以減少誤報的錯誤偵測，並更自信地在封鎖模式中部署攻擊面降低規則。
 
-排除專案是在 Microsoft Intune 上進行管理，但 Microsoft 365 的安全性中心提供分析工具，可協助您瞭解檔案。 若要開始收集排除的檔案，請移至**攻擊面減少規則**報告頁面中的 [**新增排除**] 索引標籤。
+排除專案是在 Microsoft Intune 上進行管理，但 Microsoft 365 的安全性中心提供分析工具，可協助您瞭解檔案。 若要開始收集排除的檔案，請移至 **攻擊面減少規則** 報告頁面中的 [ **新增排除** ] 索引標籤。
 
 >[!NOTE]  
 >工具會依據所有攻擊面降低規則來分析偵測，但 [只有某些規則支援排除](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-asr)。
@@ -205,9 +205,9 @@ Microsoft 365 security center 會從偵測中收集 [您可能想](https://docs.
 * 偵測數目越少
 * 數量較少的裝置報告偵測
 
-若要取得選取檔案的完整路徑，以供排除的清單，請選取 [ **取得排除路徑**]。
+若要取得選取檔案的完整路徑，以供排除的清單，請選取 [ **取得排除路徑** ]。
 
-**從 Windows local security 機關子系統偷竊的 ASR 規則封鎖認證的記錄檔 ( # A0) **捕獲來源應用程式**lsass.exe**。 它是一般系統檔案，但會以偵測到的檔案形式捕獲。 因此，產生的排除路徑清單會包含此檔案。 若要排除觸發此規則的檔案，而不是 **lsass.exe**，請使用來源應用程式的路徑，而不是偵測到的檔案。
+**從 Windows local security 機關子系統偷竊的 ASR 規則封鎖認證的記錄檔 ( # A0)** 捕獲來源應用程式 **lsass.exe** 。 它是一般系統檔案，但會以偵測到的檔案形式捕獲。 因此，產生的排除路徑清單會包含此檔案。 若要排除觸發此規則的檔案，而不是 **lsass.exe** ，請使用來源應用程式的路徑，而不是偵測到的檔案。
 
 若要尋找來源應用程式，請針對此特定規則執行下列 [高級搜尋查詢](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) ， (依規則識別碼 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2) 識別：
 

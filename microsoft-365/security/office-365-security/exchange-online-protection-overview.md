@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解 Exchange Online Protection (EOP) 如何協助保護您的內部部署電子郵件組織，以進行獨立和混合式環境。
-ms.openlocfilehash: f99954ec280eeb8c84e6183cea9ad0b9fee63507
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a8b30a475e6865916c74f08c4d927662f658a096
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202900"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842401"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概觀
 
@@ -28,9 +28,9 @@ ms.locfileid: "48202900"
 
 Exchange Online Protection (EOP) 是雲端架構篩選服務，可協助您的組織抵禦垃圾郵件和惡意程式碼。 EOP 包含 Exchange Online 信箱的所有 Microsoft 365 組織。 不過，下列內部部署案例也提供 EOP：
 
-- **在獨立案例中**：EOP 會為您的內部部署、Exchange 組織，或任何其他內部部署 SMTP 電子郵件解決方案，提供雲端式電子郵件保護。
+- **在獨立案例中** ：EOP 會為您的內部部署、Exchange 組織，或任何其他內部部署 SMTP 電子郵件解決方案，提供雲端式電子郵件保護。
 
-- **在混合式部署中**：當您混合使用內部部署和雲端信箱時，可以設定 EOP 來保護您的電子郵件環境，並控制郵件路由傳送。
+- **在混合式部署中** ：當您混合使用內部部署和雲端信箱時，可以設定 EOP 來保護您的電子郵件環境，並控制郵件路由傳送。
 
 在這些案例中，EOP 可以簡化電子郵件環境的管理，並減輕維護內部部署硬體和軟體帶來的許多負擔。
 
@@ -58,11 +58,11 @@ Exchange Online Protection (EOP) 是雲端架構篩選服務，可協助您的�
 
 以下是可用的 EOP 訂閱方案：
 
-- **獨立 EOP**：您可以註冊 EOP 以保護內部部署的電子郵件組織。
+- **獨立 EOP** ：您可以註冊 EOP 以保護內部部署的電子郵件組織。
 
-- **Exchange online 中的 EOP 功能**：包含 exchange online (獨立的任何訂閱，或 Microsoft 365 的一部分) 使用 EOP 來保護您的 Exchange Online 信箱。
+- **Exchange online 中的 EOP 功能** ：包含 exchange online (獨立的任何訂閱，或 Microsoft 365 的一部分) 使用 EOP 來保護您的 Exchange Online 信箱。
 
-- **Exchange Enterprise CAL (含服務) **：如果您有內部部署的 Exchange 組織，且您已購買額外的 Exchange Enterprise CAL (含服務) 授權，EOP 會包含在服務中。
+- **Exchange Enterprise CAL (含服務)** ：如果您有內部部署的 Exchange 組織，且您已購買額外的 Exchange Enterprise CAL (含服務) 授權，EOP 會包含在服務中。
 
 如需所有 EOP 訂閱方案之需求、重要限制和功能可用性的相關資訊，請參閱 [Exchange Online Protection 服務描述](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
@@ -96,7 +96,7 @@ EOP 會在資料中心之間執行負載平衡，但只在一個區域內。如�
 
 適用於 EOP 系統管理員的幫助內容由下列頂層類別組成：
 
-- [設定 EOP，Day 1，For office 365 ATP admins：設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)Office 365 高級威脅防護核心的 EOP 保護和偵測工具。
+- [設定 EOP，Day 1，適用于 Microsoft defender For office 365 admins：設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)EOP 保護和偵測工具，以 microsoft Defender for office 365 為核心。
 
 - [EOP 功能](eop-features.md)：提供一份 EOP 中可用的功能清單。
 

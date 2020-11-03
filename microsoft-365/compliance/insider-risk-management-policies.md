@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9ff029904a34291f4131f2013ffe30b73aa3233c
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 722f0bfe18e5e7375da17f6fc6ebdb7f32676488
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208779"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842807"
 ---
 # <a name="insider-risk-management-policies"></a>有問必答風險管理原則
 
@@ -25,14 +25,14 @@ ms.locfileid: "48208779"
 
 ## <a name="policy-dashboard"></a>原則儀表板
 
-**原則儀表板**可讓您快速查看組織中的原則，以及與每個原則相關聯之警示的目前狀態。
+**原則儀表板** 可讓您快速查看組織中的原則，以及與每個原則相關聯之警示的目前狀態。
 
-- **原則名稱**：指派給原則嚮導中之原則的名稱。
-- **主動警示**：每個原則的作用中警示數目。
-- 已**確認的警示**：過去365天內從原則產生案例的警示總數。
-- **對提醒採取的動作**：過去365天內已確認或已解除的警示總數。
-- **原則有效性**：已確認的警示總數取決於警示 (所進行的全部動作，也就是過去一年內已確認或消除的警示總數) 。
-- **Active**：案例的狀態為 *[是]* 或 [ *否*]。
+- **原則名稱** ：指派給原則嚮導中之原則的名稱。
+- **主動警示** ：每個原則的作用中警示數目。
+- 已 **確認的警示** ：過去365天內從原則產生案例的警示總數。
+- **對提醒採取的動作** ：過去365天內已確認或已解除的警示總數。
+- **原則有效性** ：已確認的警示總數取決於警示 (所進行的全部動作，也就是過去一年內已確認或消除的警示總數) 。
+- **Active** ：案例的狀態為 *[是]* 或 [ *否* ]。
 
 ![測試人員風險管理原則儀表板](../media/insider-risk-policy-dashboard.png)
 
@@ -57,17 +57,17 @@ ms.locfileid: "48208779"
 
 在建立或修改 DLP 原則以用於「內幕風險管理原則」時，請考慮下列指導方針：
 
-- 當您設定 DLP 原則中的規則時，在指派 **附隨報告** 設定為 [ *高* ] 時，設定資料 exfiltration 事件的優先順序並加以選擇性。 例如，電子郵件敏感檔至已知的競爭對手應該是 *高* 警示等級 exfiltration 事件。 在其他 DLP 原則規則的 [**附隨報告**] 中，以 [高] 指派*高*層次，可增加「內幕風險管理」提醒工作流程中的噪音，並使資料調查人員和分析員更難於正確評估這些警示。 例如，指派 *高* 警示等級來存取 DLP 原則中的 [拒絕] 活動，可使評估真正危險的使用者行為和活動變得更困難。
+- 當您設定 DLP 原則中的規則時，在指派 **附隨報告** 設定為 [ *高* ] 時，設定資料 exfiltration 事件的優先順序並加以選擇性。 例如，電子郵件敏感檔至已知的競爭對手應該是 *高* 警示等級 exfiltration 事件。 在其他 DLP 原則規則的 [ **附隨報告** ] 中，以 [高] 指派 *高* 層次，可增加「內幕風險管理」提醒工作流程中的噪音，並使資料調查人員和分析員更難於正確評估這些警示。 例如，指派 *高* 警示等級來存取 DLP 原則中的 [拒絕] 活動，可使評估真正危險的使用者行為和活動變得更困難。
 - 請確定您瞭解並正確設定 DLP 和有問必答風險管理原則中的範圍內使用者。 只有在使用 **資料洩漏** 範本的情況中，定義為內部的內幕風險管理原則的使用者，才能處理高嚴重性原則警示。 此外，在高嚴重性的 DLP 警示中，只有定義為內部範圍的使用者，才能考慮使用「內幕風險管理」原則。 您不會以衝突的方式，在您的 DLP 和內幕郵件原則原則中，無意設定範圍內的使用者，這一點很重要。
 
      例如，如果您的 DLP 原則規則的適用範圍只是 Sales 小組的使用者，而從 **資料洩漏** 範本所建立的有問必答風險原則，已將所有使用者定義為範圍內，則「內部使用者風險原則」只會對 Sales 小組的使用者實際處理高嚴重性的 DLP 警示。 內幕郵件原則不會收到任何高優先順序 DLP 警示，供使用者在此範例中未定義的 DLP 規則中進行處理。 相反地，如果您從 **資料洩漏** 範本所建立的會員風險管理原則僅限銷售小組的使用者，且指派的 DLP 原則的範圍限定為所有使用者，則「有問必答風險原則」只會處理 sales 團隊成員的高嚴重性 DLP 警示。 「內部使用者風險管理」原則會忽視所有不在 Sales 團隊之使用者的高嚴重性 DLP 警示。
 
-- 請確定針對此內部人員風險管理範本使用的 DLP 原則中的 [ **附隨報告** ] 規則設定設定 *高* 嚴重性等級警示。 *高*嚴重性層級是不會從 DLP 原則中的規則產生觸發事件和內部的風險管理提醒，其 [**附隨報告**] 欄位設定為 [*低*] 或「*中*」。
+- 請確定針對此內部人員風險管理範本使用的 DLP 原則中的 [ **附隨報告** ] 規則設定設定 *高* 嚴重性等級警示。 *高* 嚴重性層級是不會從 DLP 原則中的規則產生觸發事件和內部的風險管理提醒，其 [ **附隨報告** ] 欄位設定為 [ *低* ] 或「 *中* 」。
 
     ![DLP 原則警示設定](../media/insider-risk-DLP-policy-high-severity.png)
 
      >[!NOTE]
-     >使用內建範本建立新的 DLP 原則時，您需要選取 [**建立或自訂 ADVANCED DLP 規則**] 選項，才能設定*高*嚴重性層級的「**附隨報告**」設定。
+     >使用內建範本建立新的 DLP 原則時，您需要選取 [ **建立或自訂 ADVANCED DLP 規則** ] 選項，才能設定 *高* 嚴重性層級的「 **附隨報告** 」設定。
 
 從 **資料洩漏** 範本所建立的每個內幕人士風險管理原則，只能有一個指派的 DLP 原則。 請考慮建立專用的 DLP 原則，將您要偵測的不同活動和作用中的事件，當作使用 **資料洩漏** 範本的有問必答風險原則的觸發事件。
 
@@ -77,7 +77,7 @@ ms.locfileid: "48208779"
 
 保護資料和防止組織中使用者的資料洩漏可能取決於其位置、機密資訊的存取層級，或風險歷程記錄。 資料洩漏可能包括意外 oversharing 組織外部的高敏感度資訊，或有惡意目的的資料竊取。 與指派的資料遺失防護 (DLP) 原則，這個範本會開始計分可疑活動的即時偵測，並產生具有較高嚴重性層級的有問必答風險警示和警示的增加可能性。 優先順序使用者是在「內幕風險管理設定」區域中設定的 [優先順序使用者群組](insider-risk-management-settings.md#priority-user-groups-preview) 中定義。
 
-就像 **一般資料洩漏範本**一樣，您必須指派 DLP 原則，以在組織中高嚴重性警示的內幕風險原則中觸發指示器。 使用此範本建立原則時，請遵循上述資料洩漏原則指導方針。 此外，您必須將「內部使用者群組」原則**管理**  >  **設定**  >  **優先順序使用者群組**中所建立的優先順序使用者群組指派給原則。
+就像 **一般資料洩漏範本** 一樣，您必須指派 DLP 原則，以在組織中高嚴重性警示的內幕風險原則中觸發指示器。 使用此範本建立原則時，請遵循上述資料洩漏原則指導方針。 此外，您必須將「內部使用者群組」原則 **管理**  >  **設定**  >  **優先順序使用者群組** 中所建立的優先順序使用者群組指派給原則。
 
 ### <a name="data-leaks-by-disgruntled-users-preview"></a>因不滿使用者 (預覽的資料洩漏) 
 
@@ -87,23 +87,23 @@ ms.locfileid: "48208779"
 
 ### <a name="general-security-policy-violations-preview"></a> (預覽的一般安全性原則違規) 
 
-在許多組織中，使用者有權在其裝置上安裝軟體或修改裝置設定，以協助其工作。 不管是無意或惡意的目的，使用者可能會安裝惡意程式碼或停用重要的安全性功能，以協助保護其裝置或網路資源上的資訊。 這個原則範本使用來自 Microsoft Defender 高級威脅防護 (ATP) 的安全性警示，以開始計分這些活動，並將此風險區域的功能重點放在「偵測」和「警示」。 當使用者可能會有可能是「有問必答」風險的安全性原則違規記錄時，請使用此範本為案例中的安全性原則違規提供洞察力。
+在許多組織中，使用者有權在其裝置上安裝軟體或修改裝置設定，以協助其工作。 不管是無意或惡意的目的，使用者可能會安裝惡意程式碼或停用重要的安全性功能，以協助保護其裝置或網路資源上的資訊。 這個原則範本使用 Microsoft Defender for Endpoint 中的安全性警示，以開始計分這些活動，並將此風險區域的「聚焦偵測和提醒」。 當使用者可能會有可能是「有問必答」風險的安全性原則違規記錄時，請使用此範本為案例中的安全性原則違規提供洞察力。
 
-您需要在您的組織中設定 Microsoft Defender ATP，並在 Defender Security Center 中啟用 Microsoft Defender ATP，以取得內部的內幕風險管理整合，以匯入安全性侵犯警示。 如需設定 Microsoft Defender ATP for 內幕風險管理整合的詳細資訊，請參閱 [在 Microsoft DEFENDER atp 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
+您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="security-policy-violations-by-departing-users-preview"></a>由使用者 (預覽) 中的使用者進行安全性原則違規
 
-使用者不論是保留正負字詞，都可能會有較高的違反安全性原則的風險。 為了協助防止使用者遭受意外或惡意的安全性違規，此原則範本會使用 Microsoft Defender ATP 警示，以提供與安全性相關的活動的洞察力。 這些活動包含使用者安裝惡意程式碼或其他可能有害的應用程式，以及停用裝置上的安全性功能。 當使用者有讓步或終止日期匯入 Microsoft 365 HR Connector 做為觸發事件後，就會啟動原則指示器。
+使用者不論是保留正負字詞，都可能會有較高的違反安全性原則的風險。 為了協助防止使用者遭受無意或惡意的安全性違規，此原則範本使用 Defender 做為端點警示，以提供與安全性相關的活動的洞察力。 這些活動包含使用者安裝惡意程式碼或其他可能有害的應用程式，以及停用裝置上的安全性功能。 當使用者有讓步或終止日期匯入 Microsoft 365 HR Connector 做為觸發事件後，就會啟動原則指示器。
 
 使用此範本時，您必須設定 Microsoft 365 HR connector，定期為組織中的使用者匯入辭職及終止日期資訊。 如需為組織設定 Microsoft 365 HR connector 的逐步指引，請參閱 [Import data WITH HR connector](import-hr-data.md) 文章。
 
-您需要在您的組織中設定 Microsoft Defender ATP，並在 Defender Security Center 中啟用 Microsoft Defender ATP，以取得內部的內幕風險管理整合，以匯入安全性侵犯警示。 如需設定 Microsoft Defender ATP for 內幕風險管理整合的詳細資訊，請參閱 [在 Microsoft DEFENDER atp 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
+您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="security-policy-violations-by-priority-users-preview"></a>優先使用者 (預覽的安全性原則違規) 
 
-保護組織中使用者的安全性違規可能取決於其位置、機密資訊的存取層級，或風險歷程記錄。 由於優先順序使用者的安全性違規可能會對組織的重要區域產生 outsized 影響，因此這個原則範本會從這些指示器開始計分，並使用 Microsoft Defender ATP 警示，為這些使用者提供與安全性相關的活動的洞察力。 這可能包括安裝惡意程式碼或其他可能有害之應用程式的優先順序使用者，以及停用裝置上的安全性功能。 優先順序使用者是在「內幕風險管理設定」區域中設定的優先順序使用者群組中定義。
+保護組織中使用者的安全性違規可能取決於其位置、機密資訊的存取層級，或風險歷程記錄。 由於優先順序使用者的安全性違規可能會對組織的重要區域產生 outsized 影響，因此這個原則範本會從這些指示器開始計分，並使用 Microsoft Defender for Endpoint 警示，為這些使用者提供與安全性相關的活動的洞察力。 這可能包括安裝惡意程式碼或其他可能有害之應用程式的優先順序使用者，以及停用裝置上的安全性功能。 優先順序使用者是在「內幕風險管理設定」區域中設定的優先順序使用者群組中定義。
 
-您需要在您的組織中設定 Microsoft Defender ATP，並在 Defender Security Center 中啟用 Microsoft Defender ATP，以取得內部的內幕風險管理整合，以匯入安全性侵犯警示。 如需設定 Microsoft Defender ATP for 內幕風險管理整合的詳細資訊，請參閱 [在 Microsoft DEFENDER atp 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。 此外，您必須將「內部使用者群組」原則**管理**  >  **設定**  >  **優先順序使用者群組**中所建立的優先順序使用者群組指派給原則。
+您需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部使用者風險管理整合的 Endpoint Endpoint，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。 此外，您必須將「內部使用者群組」原則 **管理**  >  **設定**  >  **優先順序使用者群組** 中所建立的優先順序使用者群組指派給原則。
 
 ### <a name="security-policy-violations-by-disgruntled-users-preview"></a>因不滿使用者 (預覽所違反的安全性原則) 
 
@@ -111,7 +111,7 @@ ms.locfileid: "48208779"
 
 使用此範本時，您也必須設定 Microsoft 365 HR 連接器，以定期匯入效能改進通知、不良效能檢查狀態，或組織中使用者的工作層級變更資訊。 如需為組織設定 Microsoft 365 HR connector 的逐步指引，請參閱 [Import data WITH HR connector](import-hr-data.md) 文章。
 
-您也需要在您的組織中設定 Microsoft Defender ATP，並在 Defender Security Center 中啟用內部的內幕程式風險管理整合的 Microsoft Defender ATP，以匯入安全性侵犯警示。 如需設定 Microsoft Defender ATP for 內幕風險管理整合的詳細資訊，請參閱 [在 Microsoft DEFENDER atp 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
+您也需要在您的組織中設定 Microsoft Defender for Endpoint，並在 Defender Security Center 中啟用內部的「內部使用者風險管理整合」端點，以匯入安全性侵犯警示。 如需針對內部人員風險管理整合設定 Defender for Endpoint 的詳細資訊，請參閱 [在 Defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)。
 
 ### <a name="offensive-language-in-email"></a>電子郵件中的冒犯性語言
 
@@ -132,10 +132,10 @@ ms.locfileid: "48208779"
 | 一般資料洩漏 | 產生高嚴重性警示的資料洩漏原則活動 | 為高嚴重性警示設定的 DLP 原則 |
 | 依優先使用者的資料洩漏 | 產生高嚴重性警示的資料洩漏原則活動 | 為高嚴重性警示設定的 DLP 原則 <br><br> 在內部使用者風險設定中設定的優先順序使用者群組 |
 | 因不滿使用者的資料洩漏 | HR connector 的效能提高、效能不良或工作層級變更指示器 | 為 disgruntlement 指示器設定的 Microsoft 365 HR connector |
-| 一般安全性原則違規 | Microsoft Defender ATP 所偵測到的安全性控制或不需要軟體的防禦性規避 | 使用中的 Microsoft Defender ATP 訂閱 <br><br> Microsoft Defender ATP 已設定 Microsoft 365 規範中心整合 |
-| 脫離使用者的安全性原則違規 | 來自 HR 連接器的辭職或終止日期指示器 | 設定為終止和讓步日期指標的 Microsoft 365 HR connector <br><br> 使用中的 Microsoft Defender ATP 訂閱 <br><br> Microsoft Defender ATP 已設定 Microsoft 365 規範中心整合 |
-| 依優先順序的使用者所破壞的安全性原則 | Microsoft Defender ATP 所偵測到的安全性控制或不需要軟體的防禦性規避 | 使用中的 Microsoft Defender ATP 訂閱 <br><br> Microsoft Defender ATP 已設定 Microsoft 365 規範中心整合 <br><br> 在內部使用者風險設定中設定的優先順序使用者群組 |
-| 因不滿使用者所違反的安全性原則 | HR connector 的效能提高、效能不良或工作層級變更指示器 | 為 disgruntlement 指示器設定的 Microsoft 365 HR connector <br><br> 使用中的 Microsoft Defender ATP 訂閱 <br><br> Microsoft Defender ATP 已設定 Microsoft 365 規範中心整合 |
+| 一般安全性原則違規 | Microsoft Defender for Endpoint 所偵測到的安全性控制措施或不需要的軟體的防禦性規避 | 使用中 Microsoft Defender for Endpoint 訂閱 <br><br> Microsoft Defender for Endpoint integration （已設定 Microsoft 365 規範中心） |
+| 脫離使用者的安全性原則違規 | 來自 HR 連接器的辭職或終止日期指示器 | 設定為終止和讓步日期指標的 Microsoft 365 HR connector <br><br> 使用中 Microsoft Defender for Endpoint 訂閱 <br><br> Microsoft Defender for Endpoint integration （已設定 Microsoft 365 規範中心） |
+| 依優先順序的使用者所破壞的安全性原則 | Microsoft Defender for Endpoint 所偵測到的安全性控制措施或不需要的軟體的防禦性規避 | 使用中 Microsoft Defender for Endpoint 訂閱 <br><br> Microsoft Defender for Endpoint integration （已設定 Microsoft 365 規範中心） <br><br> 在內部使用者風險設定中設定的優先順序使用者群組 |
+| 因不滿使用者所違反的安全性原則 | HR connector 的效能提高、效能不良或工作層級變更指示器 | 為 disgruntlement 指示器設定的 Microsoft 365 HR connector <br><br> 使用中 Microsoft Defender for Endpoint 訂閱 <br><br> Microsoft Defender for Endpoint integration （已設定 Microsoft 365 規範中心） |
 | 電子郵件中的冒犯性語言 | 電子郵件訊息中的猥褻、威脅或 harassing 語言 | Active Exchange Online 訂閱 |
 
 ## <a name="prioritize-content-in-policies"></a>設定原則中內容的優先順序
@@ -146,9 +146,9 @@ ms.locfileid: "48208779"
 
 當您在原則嚮導中建立「有問必答風險管理」原則時，可以選擇下列優先順序：
 
-- **SharePoint 網站**：與定義 SharePoint 網站中的所有檔案類型相關聯的任何活動，都是以較高風險排名指派。 
-- **敏感資訊類型**：與包含 [機密資訊類型](sensitive-information-type-entity-definitions.md) 之內容相關聯的任何活動都會獲指派較高的風險分數。
-- **敏感度標籤**：與已套用特定 [敏感度標籤](sensitivity-labels.md) 之內容相關聯的任何活動，都是以較高的風險排名指派。
+- **SharePoint 網站** ：與定義 SharePoint 網站中的所有檔案類型相關聯的任何活動，都是以較高風險排名指派。 
+- **敏感資訊類型** ：與包含 [機密資訊類型](sensitive-information-type-entity-definitions.md) 之內容相關聯的任何活動都會獲指派較高的風險分數。
+- **敏感度標籤** ：與已套用特定 [敏感度標籤](sensitivity-labels.md) 之內容相關聯的任何活動，都是以較高的風險排名指派。
 
 ## <a name="create-a-new-policy"></a>建立新原則
 
@@ -156,32 +156,32 @@ ms.locfileid: "48208779"
 
 完成下列步驟以建立新的原則：
 
-1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)，移至 **[測試人員風險管理]**，然後選取 **[原則]** 索引標籤。
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)，移至 **[測試人員風險管理]** ，然後選取 **[原則]** 索引標籤。
 2. 選取 **[建立原則]** 以開啟原則精靈
 3. 在 **[新增測試人員風險原則]** 頁面上，完成下列欄位：
-    - **Name (必要) **：輸入原則的易記名稱。
-    - **說明 (選用)**：輸入原則的說明。
-    - **選擇原則範本 (必要)**：選取其中一個[原則範本](insider-risk-management-policies.md#policy-templates)，以定義受原則監視的風險指標類型。
+    - **Name (必要)** ：輸入原則的易記名稱。
+    - **說明 (選用)** ：輸入原則的說明。
+    - **選擇原則範本 (必要)** ：選取其中一個 [原則範本](insider-risk-management-policies.md#policy-templates)，以定義受原則監視的風險指標類型。
 
     >[!IMPORTANT]
     >大多數原則範本都具有必須針對原則進行設定以產生相關警示的必要條件。 若尚未設定適用的原則必要條件，請參閱「 [開始使用內部使用者風險管理](insider-risk-management-configure.md#step-3-configure-prerequisites-for-templates)」。
 
 4. 選取 **[下一步]** 繼續。
 5. 在 [ **使用者** ] 頁面上，選取 [ **新增使用者或群組** ] 或 **[選擇優先級使用者群組** ]，以根據您所選取的原則範本，定義納入原則中的使用者或優先順序使用者群組。 如果有 (的話，請選取 [ **所有使用者及擁有郵件功能的群組** ] 核取方塊（如果您尚未選取優先順序的使用者範本) ）。 選取 **[下一步]** 繼續。
-6. 在 [ **指定優先順序 () 選用的內容 ** ] 頁面上，您可以指派來源，以優先順序增加風險的分數。 不過，除非相關的內容包含內建或自訂的機密資訊類型，或是在此頁面上指定為優先順序，否則有些活動根本不會產生警示：
-    - **SharePoint 網站**：選取 **[新增 SharePoint 網站]**，然後選取要設定優先順序的 SharePoint 組織。 例如，*"group1@contoso.sharepoint.com/sites/group1"*。
-    - **敏感性資訊類型**：選取 **[新增敏感性資訊類型]**，然後選取要設定優先順序的敏感性類型。 例如，*[美國銀行帳戶號碼]* 和 *[信用卡號碼]*。
-    - **敏感度標籤**：選取 **[新增敏感度標籤]**，然後選取要設定優先順序的標籤。 例如，*[機密]* 和 *[密碼]*。
+6. 在 [ **指定優先順序 () 選用的內容** ] 頁面上，您可以指派來源，以優先順序增加風險的分數。 不過，除非相關的內容包含內建或自訂的機密資訊類型，或是在此頁面上指定為優先順序，否則有些活動根本不會產生警示：
+    - **SharePoint 網站** ：選取 **[新增 SharePoint 網站]** ，然後選取要設定優先順序的 SharePoint 組織。 例如， *"group1@contoso.sharepoint.com/sites/group1"* 。
+    - **敏感性資訊類型** ：選取 **[新增敏感性資訊類型]** ，然後選取要設定優先順序的敏感性類型。 例如， *[美國銀行帳戶號碼]* 和 *[信用卡號碼]* 。
+    - **敏感度標籤** ：選取 **[新增敏感度標籤]** ，然後選取要設定優先順序的標籤。 例如， *[機密]* 和 *[密碼]* 。
 7. 選取 **[下一步]** 繼續。
-8. 在 [**選取原則指示器**] 頁面上，您會看到您已在「**有問必答風險設定**指示器」頁面上定義為可用的[指示器](insider-risk-management-settings.md#indicators)  >  **Indicators** 。 如果您在嚮導的開頭選取 *資料洩漏* 範本，則必須從 [ **dlp 原則** ] 下拉式清單中選取 dlp 原則，才能啟用該原則的觸發指示器。 選取您要套用到原則的指示器。 如果您不想使用這些指標的預設原則閾值設定，請停用 [ **使用 Microsoft 建議的預設閾值** ]，然後為每個選取的指示器輸入臨界值。 如果您已選取至少一個 *辦公室* 或 *裝置* 指標，請視需要選取 [ **風險分數 boosters** ]。 風險分數 boosters 只適用于選取的指示器。
+8. 在 [ **選取原則指示器** ] 頁面上，您會看到您已在「 **有問必答風險設定** 指示器」頁面上定義為可用的 [指示器](insider-risk-management-settings.md#indicators)  >  **Indicators** 。 如果您在嚮導的開頭選取 *資料洩漏* 範本，則必須從 [ **dlp 原則** ] 下拉式清單中選取 dlp 原則，才能啟用該原則的觸發指示器。 選取您要套用到原則的指示器。 如果您不想使用這些指標的預設原則閾值設定，請停用 [ **使用 Microsoft 建議的預設閾值** ]，然後為每個選取的指示器輸入臨界值。 如果您已選取至少一個 *辦公室* 或 *裝置* 指標，請視需要選取 [ **風險分數 boosters** ]。 風險分數 boosters 只適用于選取的指示器。
 
     >[!IMPORTANT]
-    >如果無法選取此頁面上的指示器，您必須選取要對「**內幕人員風險管理**  >  **設定**  >  **原則指示器**」頁面上的所有原則啟用的指示器。
+    >如果無法選取此頁面上的指示器，您必須選取要對「 **內幕人員風險管理**  >  **設定**  >  **原則指示器** 」頁面上的所有原則啟用的指示器。
 
 9. 選取 **[下一步]** 繼續。
-10. 在 [**原則時段**] 頁面上，您會在 [**有問必答風險設定**原則時段] 頁面上看到 [原則] 的 [[啟用] 視窗條件](insider-risk-management-settings.md#policy-timeframes)  >  **Policy timeframes** 。
+10. 在 [ **原則時段** ] 頁面上，您會在 [ **有問必答風險設定** 原則時段] 頁面上看到 [原則] 的 [ [啟用] 視窗條件](insider-risk-management-settings.md#policy-timeframes)  >  **Policy timeframes** 。
 11. 選取 **[下一步]** 繼續。
-12. 在**檢閱**頁面上，檢閱您為原則選擇的設定。 選取 **[編輯]** 以變更任何原則值，或選取 **[提交]** 來建立並啟用原則。
+12. 在 **檢閱** 頁面上，檢閱您為原則選擇的設定。 選取 **[編輯]** 以變更任何原則值，或選取 **[提交]** 來建立並啟用原則。
 
 ## <a name="update-a-policy"></a>更新原則
 
@@ -189,27 +189,27 @@ ms.locfileid: "48208779"
 
 完成下列步驟以管理現有的原則：
 
-1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)，移至 **[測試人員風險管理]**，然後選取 **[原則]** 索引標籤。
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)，移至 **[測試人員風險管理]** ，然後選取 **[原則]** 索引標籤。
 2. 在 [原則] 儀表板上，選取您要管理的原則。
-3. 在 [原則詳細資料] 頁面上，選取 [**編輯原則**]
+3. 在 [原則詳細資料] 頁面上，選取 [ **編輯原則** ]
 4. 在 [原則嚮導] 中，您無法編輯下欄欄位：
-    - **名稱**：原則的易記名稱
-    - **選擇 [原則範本**]：用來定義原則所監控之風險指示器類型的範本。
+    - **名稱** ：原則的易記名稱
+    - **選擇 [原則範本** ]：用來定義原則所監控之風險指示器類型的範本。
 5. 在 [ **描述** ] 欄位中輸入原則的新描述。 
 6. 選取 **[下一步]** 繼續。
 7. 在 [ **使用者** ] 頁面上，選取 [ **新增使用者或群組** ] 或 **[選擇優先級使用者群組** ]，以根據您所選取的原則範本，定義納入原則中的使用者或優先順序使用者群組。 如果有 (的話，請選取 [ **所有使用者及擁有郵件功能的群組** ] 核取方塊（如果您尚未選取優先順序的使用者範本) ）。 選取 **[下一步]** 繼續。
-8. 在 [ **指定優先順序 () 選用的內容 ** ] 頁面上，您可以指派來源，以優先順序增加風險的分數。 不過，除非相關的內容包含內建或自訂的機密資訊類型，或是在此頁面上指定為優先順序，否則有些活動根本不會產生警示：
-    - **SharePoint 網站**：選取 **[新增 SharePoint 網站]**，然後選取要設定優先順序的 SharePoint 組織。 例如，*"group1@contoso.sharepoint.com/sites/group1"*。
-    - **敏感性資訊類型**：選取 **[新增敏感性資訊類型]**，然後選取要設定優先順序的敏感性類型。 例如，*[美國銀行帳戶號碼]* 和 *[信用卡號碼]*。
-    - **敏感度標籤**：選取 **[新增敏感度標籤]**，然後選取要設定優先順序的標籤。 例如，*[機密]* 和 *[密碼]*。
+8. 在 [ **指定優先順序 () 選用的內容** ] 頁面上，您可以指派來源，以優先順序增加風險的分數。 不過，除非相關的內容包含內建或自訂的機密資訊類型，或是在此頁面上指定為優先順序，否則有些活動根本不會產生警示：
+    - **SharePoint 網站** ：選取 **[新增 SharePoint 網站]** ，然後選取要設定優先順序的 SharePoint 組織。 例如， *"group1@contoso.sharepoint.com/sites/group1"* 。
+    - **敏感性資訊類型** ：選取 **[新增敏感性資訊類型]** ，然後選取要設定優先順序的敏感性類型。 例如， *[美國銀行帳戶號碼]* 和 *[信用卡號碼]* 。
+    - **敏感度標籤** ：選取 **[新增敏感度標籤]** ，然後選取要設定優先順序的標籤。 例如， *[機密]* 和 *[密碼]* 。
 9. 選取 **[下一步]** 繼續。
-10. 在 [**選取原則指示器**] 頁面上，您會看到您已在「**有問必答風險設定**指示器」頁面上定義為可用的[指示器](insider-risk-management-settings.md#indicators)  >  **Indicators** 。 如果您在嚮導的開頭選取 *資料洩漏* 範本，則必須從 [ **dlp 原則** ] 下拉式清單中選取 dlp 原則，才能啟用該原則的觸發指示器。 選取您要套用到原則的指示器。 如果您不想使用這些指標的預設原則閾值設定，請停用 [ **使用 Microsoft 建議的預設閾值** ]，然後為每個選取的指示器輸入臨界值。 如果您已選取至少一個 *辦公室* 或 *裝置* 指標，請視需要選取 [ **風險分數 boosters** ]。 風險分數 boosters 只適用于選取的指示器。
+10. 在 [ **選取原則指示器** ] 頁面上，您會看到您已在「 **有問必答風險設定** 指示器」頁面上定義為可用的 [指示器](insider-risk-management-settings.md#indicators)  >  **Indicators** 。 如果您在嚮導的開頭選取 *資料洩漏* 範本，則必須從 [ **dlp 原則** ] 下拉式清單中選取 dlp 原則，才能啟用該原則的觸發指示器。 選取您要套用到原則的指示器。 如果您不想使用這些指標的預設原則閾值設定，請停用 [ **使用 Microsoft 建議的預設閾值** ]，然後為每個選取的指示器輸入臨界值。 如果您已選取至少一個 *辦公室* 或 *裝置* 指標，請視需要選取 [ **風險分數 boosters** ]。 風險分數 boosters 只適用于選取的指示器。
 
     >[!IMPORTANT]
-    >如果無法選取此頁面上的指示器，您必須選取要對「**內幕人員風險管理**  >  **設定**  >  **原則指示器**」頁面上的所有原則啟用的指示器。
+    >如果無法選取此頁面上的指示器，您必須選取要對「 **內幕人員風險管理**  >  **設定**  >  **原則指示器** 」頁面上的所有原則啟用的指示器。
 
 11. 選取 **[下一步]** 繼續。
-12. 在 [**原則時段**] 頁面上，您會在 [**有問必答風險設定**原則時段] 頁面上看到 [原則] 的 [[啟用] 視窗條件](insider-risk-management-settings.md#policy-timeframes)  >  **Policy timeframes** 。
+12. 在 [ **原則時段** ] 頁面上，您會在 [ **有問必答風險設定** 原則時段] 頁面上看到 [原則] 的 [ [啟用] 視窗條件](insider-risk-management-settings.md#policy-timeframes)  >  **Policy timeframes** 。
 13. 選取 **[下一步]** 繼續。
 14. 在 [ **複查** ] 頁面上，複查您已針對原則更新的設定。 選取 [ **編輯** ] 以變更任何原則值，或選取 [ **提交** ] 以更新及啟用原則。
 
@@ -220,7 +220,7 @@ ms.locfileid: "48208779"
 
 若要刪除現有的有問必答風險管理原則，請完成下列步驟：
 
-1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)，移至 **[測試人員風險管理]**，然後選取 **[原則]** 索引標籤。
+1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com)，移至 **[測試人員風險管理]** ，然後選取 **[原則]** 索引標籤。
 2. 在 [原則] 儀表板上，選取您要刪除的原則。
 3. 選取儀表板工具列上的 [ **刪除** ]。
 4. 在 [ **刪除** ] 對話方塊中，選取 [是] 刪除原則，或選取 **[** **取消** ] 關閉對話方塊。

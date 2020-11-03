@@ -19,22 +19,22 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 223ef56d7d0d61cd4ae8d90bce974d4086227286
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 82faff2599cd61fa1a4deb3129e1e6780d3f529c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430375"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842473"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>以適當的設定擴充高級搜尋範圍
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
-[[高級搜尋](advanced-hunting-overview.md)] 取決於來自各種來源的資料，包括您的裝置、Office 365 工作區、Azure AD 和 azure ATP。 若要盡可能取得最完整的資料，請務必在對應的資料來源中具備正確的設定。
+[[高級搜尋](advanced-hunting-overview.md)] 取決於來自各種來源的資料，包括您的裝置、Office 365 工作區、Azure AD 及 Microsoft Defender 身分識別。 若要盡可能取得最完整的資料，請務必在對應的資料來源中具備正確的設定。
 
 ## <a name="advanced-security-auditing-on-windows-devices"></a>Windows 裝置上的高級安全性審核
 開啟這些高級審核設定，以確保您取得裝置上活動的相關資料，包括本機帳戶管理、本機安全性群組管理及服務建立。
@@ -45,12 +45,12 @@ ms.locfileid: "48430375"
 | 安全性群組管理 | 以各種值來捕獲的事件 `ActionType` ，表示本機安全性群組的建立和其他本地群組管理活動 | [DeviceEvents](advanced-hunting-deviceevents-table.md) | -部署高級安全性審核原則： [審核安全性群組管理](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-group-management)<br> - [深入瞭解高級安全性審核原則](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
 | 服務安裝 | 以值捕獲的 `ActionType` 事件 `ServiceInstalled` ，表示已建立服務 | [DeviceEvents](advanced-hunting-deviceevents-table.md) | -部署高級安全性審核原則： [審核安全性系統擴充](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-security-system-extension)<br> - [深入瞭解高級安全性審核原則](https://docs.microsoft.com/windows/security/threat-protection/auditing/advanced-security-auditing) |
 
-## <a name="azure-atp-sensor-on-the-domain-controller"></a>網域控制站上的 Azure ATP 感應器
-如果您正在內部部署中執行 Active Directory，您必須在網域控制站上安裝 Azure ATP 感應器，以取得 Azure ATP 的資料。 安裝並正確設定後，此資料也會透過 Azure ATP 進入高級搜尋，並提供網路中身分識別資訊和事件的整體功能。 這項資料也會增強 Azure ATP 產生相關警示的能力，這些警示也是由高級搜尋所涵蓋。 
+## <a name="microsoft-defender-for-identity-sensor-on-the-domain-controller"></a>網域控制站上的身分識別感應器的 Microsoft Defender
+如果您要在內部部署中執行 Active Directory，您必須在網域控制站上安裝 Microsoft Defender for Identity 感應器，以取得 Microsoft Defender 身分識別的資料。 安裝並正確設定後，此資料也會進入透過 Microsoft Defender 身分識別的高級搜尋，並提供網路中身分識別資訊和事件的整體功能。 這項資料也會增強 Microsoft Defender 身分識別產生相關警示的功能，這些警示也會在高級搜尋中涵蓋。 
 
 | 資料 | 描述 | 架構表格 | 如何設定 |
 | --- | --- | --- | --- |
-| 網域控制站 | 從內部部署 Active Directory 傳送至 Azure ATP 的資料，濃縮 identity 相關的資訊，例如帳戶詳細資料、登入活動和 Active Directory 查詢 | 多個資料表，包括 [IdentityInfo](advanced-hunting-identityinfo-table.md)、 [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)及 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [安裝 Azure ATP 感應器](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [開啟相關的 Windows 事件](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
+| 網域控制站 | 從內部部署 Active Directory 傳送至 Microsoft Defender 以進行身分識別的資料，濃縮身分識別相關的資訊，例如帳戶詳細資料、登入活動和 Active Directory 查詢 | 多個資料表，包括 [IdentityInfo](advanced-hunting-identityinfo-table.md)、 [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)及 [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [安裝 Microsoft Defender 的身分識別感應器](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step4)<br>- [開啟相關的 Windows 事件](https://docs.microsoft.com/azure-advanced-threat-protection/configure-event-collection) |
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)

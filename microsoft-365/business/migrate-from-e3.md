@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何將您的業務移至 Microsoft 365 商務版，從 Office 365 E3。
-ms.openlocfilehash: f3f3894a2a5cb69f9f91825d89db4f4b857fac5c
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295283"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842153"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>從 Office 365 E3 遷移至 Microsoft 365 商務版 Premium 
 
@@ -51,7 +51,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 | StaffHub    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png) | 
 | Outlook 客戶經理，MileIQ    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | | 
 | **威脅防護**        | | | 
-| Office 365 高級威脅防護 (ATP) 方案1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
+| 適用于 Office 的 Defender 365 方案1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
 | **身分識別管理**        | | | 
 | 混合式 Azure Active Directory 的自助密碼重設 (Azure AD) 帳戶，Azure 多重要素驗證 (MFA) ，條件式存取，針對內部部署身分識別的密碼回寫功能|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    |  | 
 | **裝置和應用程式管理**        | | |
@@ -62,7 +62,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 |Office 365 資料外洩防護|    ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)|![隨附于 Office 365 E3](../media/check-mark.png)|
 |Azure 資訊保護方案1，Bitlocker 強制執行|![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)||
 |Azure 資訊保護方案1，敏感度標籤|![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)||
-|**用戶端存取許可證 (CAL 許可權) **|||
+|**用戶端存取許可證 (CAL 許可權)**|||
 |Enterprise CAL 套件 (Exchange、SharePoint、Skype) ||![隨附于 Office 365 E3](../media/check-mark.png)|
 
 <sup>1</sup> Microsoft 365 商務版 Office 應用程式不包括透過群組原則、應用程式遙測、更新控制項、試算表比較和查詢或商務智慧的大量啟用。
@@ -95,9 +95,9 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 
 您也可以在 [裝置] 頁面上完成這些步驟：
   
-1. 在系統管理中心的左側導覽中，移至 [ **裝置** \> **原則**]。
+1. 在系統管理中心的左側導覽中，移至 [ **裝置** \> **原則** ]。
     
-2. 在 [ **裝置原則** ] 頁面上，選擇 [ **新增**]。
+2. 在 [ **裝置原則** ] 頁面上，選擇 [ **新增** ]。
     
 3. 在 [ **新增原則** ] 窗格中，將原則命名為 [名稱]，然後從下拉式清單中選擇 **原則類型** 。 
     
@@ -122,7 +122,7 @@ Microsoft 365 商務版 Premium 在使用 Exchange Online Plan 1 時，具有 50
 
 ### <a name="threat-protection"></a>威脅防護
 
-在遷移至 Microsoft 365 商務版 Premium 後，您有 Office 365 ATP。 如需概要，請參閱 [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要設定，請參閱 [設定 atp 安全連結](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)、 [設定 atp 安全附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，以及 [設定 atp 反網路釣魚](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
+在遷移至 Microsoft 365 商務版 Premium 後，您可以使用 Defender for Office 365。 如需概要，請參閱 [Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 。 若要設定，請參閱 [設定安全連結](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)， [設定安全附件](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)，並 [在 Office 365 的 Defender 中設定反網路釣魚](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)。
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 

@@ -1,6 +1,6 @@
 ---
-title: Office 365 Advanced 威脅防護的新功能
-description: 瞭解最新版 Microsoft Office 365 ATP 中可用的新功能和功能。
+title: Microsoft Defender for Office 365 的新功能
+description: 深入瞭解 Microsoft Defender for Office 365 的最新版本中可用的新功能。
 keywords: Office 365 atp 的新功能，ga，正式發行，可用，新功能
 search.appverid: met150
 ms.service: O365-seccomp
@@ -20,94 +20,93 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 55a5ec4a2bfd562b581be9565022483d227f68be
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: e0801fb26b0bc7c4d37ab9455d9fcd2630f0fe51
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600502"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842841"
 ---
-# <a name="whats-new-in-office-365-atp"></a>Office 365 ATP 中的新增功能
+# <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-適用於：****
+適用於：
 
-- [Office 365 的高級威脅防護 (Office 365 ATP) ](office-365-atp.md)
+- [Microsoft Defender for Office 365](office-365-atp.md)
 
-本文列出最新版本的 Office 365 ATP 中的新功能。 目前在預覽中的功能會以 ** (預覽) **表示。
+本文列出最新版本 Microsoft Defender for Office 365 的新功能。 目前在預覽中的功能會以 **(預覽)** 表示。
 
 > [!TIP]
-> 還沒有 Office 365 ATP？ [連絡人銷售人員開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
+> 還沒有 Microsoft Defender for Office 365 嗎？ [連絡人銷售人員開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
 
 ## <a name="septemberoctober-2020"></a>2020年9月/10 月 
 
 - [使用 Configuration Analyzer 檢查您的原則](configuration-analyzer-for-security-policies.md)
 - [使用承租人允許/封鎖清單手動覆寫篩選 verdicts](tenant-allow-block-list.md)
-- [威脅瀏覽器中的擴充功能，包括主要目標使用者、傳輸規則和連接器](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (OFFICE 365 ATP 方案 2) 
-- 呈現在 [威脅瀏覽器](threat-explorer.md) 中的覆寫資訊 (電子郵件是由承租人/使用者原則) 所允許/封鎖 (OFFICE 365 ATP Plan 2) 
-- 在 [威脅 Explorer](threat-explorer.md#threats-in-urls) 中呈現 URL 威脅 (惡意程式碼、網路釣魚、垃圾郵件或無)  (OFFICE 365 ATP Plan 2) 
-- [改進搜尋體驗威脅 Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) ，包含威脅的更新、其他動作、傳遞位置和更新的時程表視圖 (OFFICE 365 ATP Plan 2) 
+- [威脅瀏覽器中的延伸功能（包括主要目標使用者、傳輸規則，以及](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) 在 [威脅瀏覽器](threat-explorer.md) 中 (Defender for office 365 資訊） (電子郵件是由承租人/User policy)  (Defender for office 365 方案2所允許/封鎖) 
+- 在 [威脅 Explorer](threat-explorer.md#threats-in-urls) 中呈現 URL 威脅 (惡意程式碼、網路釣魚、垃圾郵件或無)  (Office 365 方案2的 Defender) 
+- [改進搜尋體驗威脅 Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) ，包含威脅的更新、其他動作、傳遞位置和更新的時程表視圖 (Defender for Office 365 方案 2) 
 
 ## <a name="julyaugust-2020"></a>2020年7月/8 月 
 
-- 體驗 Office 365 ATP Plan 1 或 Plan 2 ([搜尋體驗的增強功能](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)) 
+- 體驗 Microsoft Defender for Office 365 Plan 1 或 Plan 2) [的搜尋體驗改進功能的增強功能](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (
 - [使用預先設定的安全性原則輕鬆套用建議設定](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
 
-- [使用自動調查和回應來處理已遭破壞之使用者帳戶](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)的功能現在現已提供。  (Office 365 ATP 方案 2) 
+- [使用自動調查和回應來處理已遭破壞之使用者帳戶](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)的功能現在現已提供。  (Microsoft Defender for Office 365 方案 2) 
 
 ## <a name="januaryfebruary-2020"></a>2020年1月/2 月
 
-- [Office 365 atp 中的市場即時檢視的公開可用性](campaigns.md) (OFFICE 365 atp 方案 2) 
-- [威脅瀏覽器](threat-explorer.md)的增強功能，讓安全性作業小組能夠在[調查電子郵件](investigate-malicious-email-that-was-delivered.md)時，在多個欄位上搜尋及篩選： (Office 365 ATP Plan 2) 
+- [Microsoft defender For office 365 中的即時檢視的公開可用性](campaigns.md) (microsoft Defender for Office 365 方案 2) 
+- [威脅瀏覽器](threat-explorer.md)的增強功能，讓安全性作業小組能夠在[調查電子郵件](investigate-malicious-email-that-was-delivered.md)時，在多個欄位上搜尋及篩選： (Microsoft Defender for Office 365 Plan 2) 
     - 傳遞位置和特殊動作
     - 方向 (輸入、輸出或組織內) 
     - Advanced NOT 篩選 (這些是包含不包含、不包含等的高級篩選選項 ) 
     - 精確的時間篩選 (日、小時、半小時)  
 
-- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在安全性 & 規範中心中，移至「**威脅管理**」  >  ** **。 )  (Office 365 ATP 方案 2) 
+- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在安全性 & 規範中心中，移至「 **威脅管理** 」  >  **** 。 )  (Microsoft Defender for Office 365 方案 2) 
 
-- [Microsoft 365 中的安全檔](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) ** (預覽) **
+- [Microsoft 365 中的安全檔](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(預覽)**
 
 ## <a name="december-2019"></a>2019 年 12 月
 
-- [匯出 URL 按一下 [資料] 以供離線分析](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (OFFICE 365 ATP Plan 1 or Plan 2) 
+- [匯出 URL 按一下 [資料] 以供離線分析](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Microsoft Defender for Office 365 Plan 1 or Plan 2) 
 
-- [使用 office 365 atp (**預覽**) ](campaigns.md) (office 365 atp Plan 2) 
+- [使用 Microsoft defender For office 365 中的 [市場即時檢視] ( **預覽** )](campaigns.md) (Microsoft Defender for office 365 Plan 2) 
 
 ## <a name="november-2019"></a>2019 年 11 月
 
-- [查看新的已遭破壞的使用者偵測和回應功能](address-compromised-users-quickly.md) (**預覽**)  (Office 365 ATP Plan 2) 
+- [查看新的已遭破壞的使用者偵測和回應功能](address-compromised-users-quickly.md) ( **預覽** )  (Microsoft Defender for Office 365 Plan 2) 
 
 ## <a name="september-2019"></a>2019 年 9 月
 
-- [使用自動調查和回應功能](automated-investigation-response-office.md) (OFFICE 365 ATP 方案 2) 
+- 使用 Microsoft Defender for Office 365 Plan 2 (的[自動化調查和回應功能](automated-investigation-response-office.md)) 
 
-- [使用 office 365 管理活動 API 整合 office 365 atp 自動化調查和回應事件](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (OFFICE 365 ATP 方案 2) 
+- 使用 office 365 管理活動 API （ (Defender for Office 365 Plan 2）[整合 Microsoft defender For office 365 自動化調查和回應事件](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema)) 
 
-- [查看電子郵件標題，並下載電子郵件](investigate-malicious-email-that-was-delivered.md) 內文 (OFFICE 365 ATP Plan 1 或 Plan 2) 
+- [查看電子郵件頭，並下載](investigate-malicious-email-that-was-delivered.md) Microsoft Defender for Office 365 Plan 1 或 Plan 2 (的電子郵件內文) 
 
 ## <a name="august-2019"></a>2019 年 8 月
 
-- View (Office 365 ATP Plan 1 或 Plan 2) 的[電子郵件時程表](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email)
+- [查看電子郵件的時程表](investigate-malicious-email-that-was-delivered.md#view-the-timeline-of-your-email) (Microsoft Defender for Office 365 Plan 1 or plan 2) 
 
 ## <a name="july-2019"></a>2019 年 7 月
 
-- [檢查電子郵件的傳遞動作和位置](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (OFFICE 365 ATP 方案1或 2) 
+- [檢查電子郵件的傳遞動作和位置](investigate-malicious-email-that-was-delivered.md#check-the-delivery-action-and-location) (Microsoft Defender for Office 365 Plan 1 or 2) 
 
 ## <a name="june-2019"></a>2019 年 6 月
 
-- [View a 仿冒 URLs 的資料，然後按一下 [判定](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (OFFICE 365 ATP Plan 1 or Plan 2) 
+- [View a 仿冒 URLs 的資料，然後按一下 [判定](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender for Office 365 Plan 1 or Plan 2) 
 
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 方案 1 與方案 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 方案1和方案2
 
-您知道 Office 365 ATP 提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#office-365-atp-plan-1-and-plan-2)。
+您知道 Microsoft Defender for Office 365 可提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 
 ## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 
-[Office 365 ATP 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+[Microsoft Defender for Office 365 服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

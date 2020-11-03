@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: f6b79d3252084b298f94e01b18ebe3505f83b480
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3840a6beae3b586fc90420f7813ff6e9d3cc6c60
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196854"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843849"
 ---
 # <a name="device-profile-page"></a>裝置設定檔頁面面
 
@@ -27,9 +27,9 @@ ms.locfileid: "48196854"
 Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此您可以快速評估網路上裝置的健康情況和狀態。
 
 > [!IMPORTANT]
-> 裝置設定檔頁面面的顯示可能會稍有不同，這取決於裝置是否已在 Microsoft Defender ATP、Azure ATP 或兩者中註冊。
+> 裝置設定檔頁面面的顯示可能稍有不同，這取決於裝置是否已在 Microsoft Defender for Endpoint，Microsoft Defender 身分識別，或兩者皆已註冊。
 
-如果裝置已在 Microsoft Defender ATP 中註冊，您也可以使用 [裝置設定檔] 頁面執行某些常見的安全性工作。
+如果裝置已在 Microsoft Defender for Endpoint 中註冊，您也可以使用 [裝置設定檔] 頁面執行某些常見的安全性工作。
 
 ## <a name="navigating-the-device-profile-page"></a>流覽裝置設定檔頁面面
 
@@ -41,7 +41,7 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 
 主要內容區域 (2) 包含的索引標籤可供您切換以查看裝置的不同資訊類型。
 
-如果裝置註冊于 Microsoft Defender ATP，您也會看到 (3) 回應動作清單。 回應動作可讓您執行常見的安全性相關工作。
+如果裝置已在 Microsoft Defender for Endpoint 中註冊，您也會看到 (3) 回應動作清單。 回應動作可讓您執行常見的安全性相關工作。
 
 ## <a name="sidebar"></a>側 欄
 
@@ -51,15 +51,15 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 
 提要欄會列出裝置的完整名稱和暴露層級。 它也會在小型子小節中提供一些重要的基本資訊，這些資訊可切換為開啟或關閉，例如：
 
-* **標記** -任何與裝置相關聯的 MICROSOFT Defender ATP、Azure atp 或自訂標記。 來自 Azure ATP 的標記不可編輯。
-* **安全性資訊** -開啟的事件和主動警示。 在 Microsoft Defender ATP 中註冊的裝置也會顯示公開層級和風險層級。
+* **標記** -任何 microsoft Defender for Endpoint、microsoft Defender 身分識別，或與裝置相關聯的自訂標記。 Microsoft Defender for Identity 中的標記無法進行編輯。
+* **安全性資訊** -開啟的事件和主動警示。 在 Microsoft Defender for Endpoint 中註冊的裝置也會顯示公開層級和風險層級。
 
 > [!TIP]
 > 暴露層級與裝置遵循安全性建議的程度有關，而風險等級是根據因素的數目計算，包括作用中警示的類型和嚴重性。
 
-* **裝置詳細資料** -網域、OS、在第一次看到裝置時的時間戳記、IP 位址、資源。 在 Microsoft Defender ATP 中註冊的裝置也會顯示健康狀態。 在 Azure ATP 中註冊的裝置會顯示 SAM 名稱，以及在第一次建立裝置時的時間戳記。
+* **裝置詳細資料** -網域、OS、在第一次看到裝置時的時間戳記、IP 位址、資源。 在 Microsoft Defender for Endpoint 中註冊的裝置也會顯示健康狀態。 在 Microsoft Defender 身分識別中註冊的裝置會顯示 SAM 名稱，以及在第一次建立裝置時的時間戳記。
 * **網路活動** -在網路上第一次或最近一次看到裝置的時間戳記。
-* *僅適用于 AZURE ATP*) - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview)旗標、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)和群組成員資格中所註冊的裝置的**目錄資料** (。
+* **目錄資料** ( *僅針對身分識別* ) - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) 旗標、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)和群組成員資格的裝置註冊。
 
 ## <a name="response-actions"></a>回應動作
 
@@ -68,17 +68,17 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 ![裝置設定檔的動作欄圖像](../../media/mtp-device-profile/hybrid-device-long-action-bar.png)
 
 > [!IMPORTANT]
-> * 只有在裝置註冊于 Microsoft Defender ATP 時，才可使用[回應動作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)。
-> * 在 Microsoft Defender ATP 中註冊的裝置，視裝置的作業系統和版本編號而定，可能會顯示不同數目的回應動作。
+> * 只有在裝置註冊至 Microsoft Defender for Endpoint 時，才可使用[回應動作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)。
+> * 在 Microsoft Defender for Endpoint 中註冊的裝置可能會根據裝置的作業系統和版本號碼，顯示不同的回應動作數目。
 
 在裝置設定檔頁面面上可用的動作包括：
 
 * **Manage tags** -更新您已套用至此裝置的自訂標記。
-* **隔離裝置** -從組織網路隔離裝置，並使其連線至 Microsoft Defender 高級威脅防護。 您可以選擇在隔離裝置時，允許 Outlook、小組和商務用 Skype 執行，以進行通訊的目的。
+* **隔離裝置** -從組織網路隔離裝置，並使其連線至 Microsoft Defender for 端點。 您可以選擇在隔離裝置時，允許 Outlook、小組和商務用 Skype 執行，以進行通訊的目的。
 * **行動中心** -查看已提交動作的狀態。 只有在已選取另一個動作時才可用。
 * **限制應用程式執行** -防止未由 Microsoft 簽署的應用程式執行。
 * **執行防病毒掃描** -更新 Windows Defender 防病毒定義，並立即執行防病毒掃描。 選擇 [快速掃描] 或 [完全掃描]。
-* 收集有關裝置的**調查套件**收集資訊。 完成調查後，您可以下載。
+* 收集有關裝置的 **調查套件** 收集資訊。 完成調查後，您可以下載。
 * **Initiate Live Response Session** -在裝置上載入遠端命令介面，以進行 [深入的安全性調查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)。
 * **啟動自動化調查** -自動 [調查和 remediates 威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。 雖然您可以手動觸發從這個頁面執行的自動調查，但 [某些警示原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) 會自行觸發自動調查。
 * **動作中心** -顯示目前正在執行之回應動作的相關資訊。
@@ -87,21 +87,21 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 
 [裝置設定檔] 索引標籤可讓您切換有關裝置安全性詳細資訊，以及包含警示清單的表格。
 
-在 Microsoft Defender ATP 中註冊的裝置也會顯示功能標籤，該功能標籤會顯示時程表、安全性建議的清單、軟體清查、發現之弱點的清單，以及遺漏的 Kb (安全性更新) 。
+在 Microsoft Defender for Endpoint 中註冊的裝置也會顯示功能標籤的功能標籤、安全性建議的清單、軟體清查、發現之弱點的清單，以及遺漏的 Kb (安全性更新) 。
 
 ### <a name="overview-tab"></a>概覽] 索引標籤
 
-預設索引標籤為 **[一覽表**]。 它可快速查看有關裝置的最重要安全性事實。
+預設索引標籤為 **[一覽表** ]。 它可快速查看有關裝置的最重要安全性事實。
 
 ![裝置設定檔之 [簡介] 索引標籤的影像](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
 在這裡，您可以快速查看裝置的使用中警示及任何目前登入的使用者。
 
-如果裝置已在 Microsoft Defender ATP 中註冊，您也會看到裝置的風險等級及安全性評估上任何可用的資料。 安全性評估會說明裝置的暴露層級、提供安全性建議，並列出受影響的軟體及發現的弱點。
+如果裝置已在 Microsoft Defender for Endpoint 中註冊，您也會看到裝置的風險等級及安全性評估上任何可用的資料。 安全性評估會說明裝置的暴露層級、提供安全性建議，並列出受影響的軟體及發現的弱點。
 
 ### <a name="alerts-tab"></a>[通知] 索引標籤
 
-[ **警示** ] 索引標籤包含從 Azure ATP 和 MICROSOFT Defender atp 產生于裝置上的警示清單。
+[ **警示** ] 索引標籤包含從 Microsoft Defender for Identity 和 microsoft Defender for Endpoint，在裝置上引發的警示清單。
 
 ![裝置設定檔的 [警示] 索引標籤](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
@@ -179,7 +179,7 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 
 ## <a name="related-topics"></a>相關主題
 
-* [Microsoft 威脅防護概觀](microsoft-threat-protection.md)
-* [開啟 Microsoft 威脅防護](mtp-enable.md)
+* [Microsoft 365 Defender 概述](microsoft-threat-protection.md)
+* [開啟 Microsoft 365 Defender](mtp-enable.md)
 * [使用即時回應調查裝置上的實體](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * [Office 365 中的自動調查和回應 (AIR) ](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 取得 Microsoft 365 的行銷活動，讓您可以保護您的活動，使您的 cybersecurity 威脅成為電子郵件、資料和通訊。
-ms.openlocfilehash: fcb28ba7ca52ee3498afd12cf93157fa90d0d80b
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 6fe67f8e5723a272643c7980bf1744f80c612188
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131973"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843231"
 ---
 # <a name="get-microsoft-365-for-campaigns"></a>取得 Microsoft 365 的行銷活動
 
@@ -43,11 +43,11 @@ ms.locfileid: "48131973"
 
 ## <a name="what-does-microsoft-365-for-campaigns-include"></a>Microsoft 365 的行銷活動包含哪些專案？
 Microsoft 365 商務版 Premium 的此設定包括可協助您和您的員工安全地共同運作的簡單控制項： 
-- **保護使用者身分識別**：請確定使用者是登入傳送電子郵件或存取檔案 (多重因素驗證) 的使用者。
-- **保護機密資訊**：保護機密資訊以監控組織外共用的資訊 (資料遺失防護) 。
-- **保護行動裝置**：保護行動裝置上的資料 (行動應用程式保護原則) 。
-- 防止**惡意內容**：透過掃描電子郵件附件 (高級威脅防護) ，來防止對惡意內容的存取。
-- **保護密碼**：將密碼設為永不過期，這會更安全，並可協助避免工作 stoppages (密碼原則) 。 
+- **保護使用者身分識別** ：請確定使用者是登入傳送電子郵件或存取檔案 (多重因素驗證) 的使用者。
+- **保護機密資訊** ：保護機密資訊以監控組織外共用的資訊 (資料遺失防護) 。
+- **保護行動裝置** ：保護行動裝置上的資料 (行動應用程式保護原則) 。
+- 防止 **惡意內容** ：掃描電子郵件附件 (Defender for Office 365) ，以防止對惡意內容的存取。
+- **保護密碼** ：將密碼設為永不過期，這會更安全，並可協助避免工作 stoppages (密碼原則) 。 
 
 
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>其成本是多少，誰需要它，什麼是承諾？

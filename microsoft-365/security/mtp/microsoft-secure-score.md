@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ea580ad6b7bb7cc905a299e473f23a4c74fb289e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48294781"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843837"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -76,7 +76,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 ### <a name="products-included-in-secure-score"></a>安全分數中包含的產品
 
-目前有 Microsoft 365 (的建議，包括 Exchange Online) 、Azure Active Directory、Microsoft Defender ATP、Azure ATP 和 Cloud App Security。 即將推出其他安全性產品的建議。 建議不涵蓋每項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商或替代範圍的緩解。
+目前有 Microsoft 365 (的建議，包括 Exchange Online) 、Azure Active Directory、Microsoft Defender for Endpoint、Microsoft Defender 身分識別及 Cloud App Security。 即將推出其他安全性產品的建議。 建議不涵蓋每項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商或替代範圍的緩解。
 
 ### <a name="security-defaults"></a>安全性預設
 

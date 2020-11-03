@@ -19,20 +19,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 966f329d1d3ce374cc3eed9eccb6c337071f4ee1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 1bb48b4332bc9d60de15bb513f04a503d6a6913b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430076"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842711"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 
 
@@ -46,7 +46,7 @@ ms.locfileid: "48430076"
 | `DeviceId` | string | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
 | `ClientVersion` | string | 電腦上執行的端點代理程式或感應器版本 |
-| `PublicIP` | string | 架電腦用來連接至 Microsoft Defender ATP 服務的公用 IP 位址。 這可以是電腦本身、NAT 裝置或 proxy 的 IP 位址 |
+| `PublicIP` | string | 架電腦用來連接至 Microsoft Defender for Endpoint service 的公用 IP 位址。 這可以是電腦本身、NAT 裝置或 proxy 的 IP 位址 |
 | `OSArchitecture` | 字串 | 電腦上執行的作業系統架構。 |
 | `OSPlatform` | 字串 | 電腦上執行的作業系統平台。 這表示特定作業系統（包括相同家族內的變化，例如 Windows 10 和 Windows 7） |
 | `OSBuild` | string | 電腦上所執行作業系統的組建版本 |

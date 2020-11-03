@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 分類器是一種工具，可讓您訓練以辨識各種類型的內容，其範例可供您查看。 本文說明如何建立及訓練自訂的分類器，以及如何重新導流以提高精確度。
-ms.openlocfilehash: 4c9f5dae702c71fe7f2da1ccbc0364e7bdd15b0e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4475456e7116acbc705a3121079391a571fcca8a
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636982"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841230"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>開始使用可訓練分類器（預覽版）
 
@@ -33,7 +33,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 
 若要深入瞭解不同類型的分類器，請參閱 [瞭解如何 trainable 的分類器 (預覽) ](classifier-learn-about.md)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 ### <a name="licensing-requirements"></a>授權需求
 
@@ -44,7 +44,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 在 UI 中存取分類器： 
 
 - 全域管理員必須加入宣告租使用者，才能建立自訂分類符。
-- 合規性管理員角色或符合性資料管理員是訓練分類器所需的。
+- 合規性管理員角色、資料調查角色或符合性資料管理員是訓練分類器所需的。
 
 在下列情況下，您將需要具有這些許可權的帳戶才能使用分類器：
 
@@ -74,7 +74,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 
 ### <a name="seed-content"></a>Seed 內容
 
-當您想要 trainable 的分類器獨立且準確地將專案識別為屬於特定類別的內容時，您必須先呈現該類別中內容類型的許多範例。 Trainable 分類器的此樣本饋送稱為「 *植*入」。 Seed content 是由人類選取，並會判斷代表內容的類別。
+當您想要 trainable 的分類器獨立且準確地將專案識別為屬於特定類別的內容時，您必須先呈現該類別中內容類型的許多範例。 Trainable 分類器的此樣本饋送稱為「 *植* 入」。 Seed content 是由人類選取，並會判斷代表內容的類別。
 
 > [!TIP]
 > 您必須具有至少50的肯定範例，以及多達500。 Trainable 分類程式會處理最多500最近建立的範例 (按檔建立的日期/時間戳記) 。 您提供的範例越多，分類器所做的預測就越精確。
@@ -96,16 +96,16 @@ Trainable 分類器處理足夠的肯定樣本來建立預測模型之後，您�
    > [!IMPORTANT]
    > 請確定 seed 集合中的專案是類別的 **強** 範例。 Trainable 分類器最初會根據您植入的模型來建立模型。 分類器假設所有種子範例都是強陽性的，而且沒有任何方式知道樣本是否與類別弱或消極。
 
-2. 將 seed 內容放在專為 *只保留 seed 內容*的 SharePoint Online 資料夾中。 請記下網站、文件庫和資料夾 URL。
+2. 將 seed 內容放在專為 *只保留 seed 內容* 的 SharePoint Online 資料夾中。 請記下網站、文件庫和資料夾 URL。
 
    > [!TIP]
    > 如果您為種子資料建立新的網站和資料夾，至少要有一個小時的時間進行索引，才可建立會使用該植入資料的 trainable 分類器。
 
-3. 使用合規性管理員或安全性系統管理員角色存取，登入 microsoft 365 合規性中心，並開啟**microsoft 365 規範中心**或**microsoft 365 的安全性中心**  >  **資料分類**。
+3. 使用合規性管理員或安全性系統管理員角色存取，登入 microsoft 365 合規性中心，並開啟 **microsoft 365 規範中心** 或 **microsoft 365 的安全性中心**  >  **資料分類** 。
 
 4. 選擇 [ **Trainable 類元** ] 索引標籤。
 
-5. 選擇 [ **建立 trainable 的分類器**]。
+5. 選擇 [ **建立 trainable 的分類器** ]。
 
 6. 針對 `Name` `Description` 您想要此 trainable 的分類器識別之專案類別的 [和] 欄位填入適當的值。
 
@@ -125,7 +125,7 @@ Trainable 分類器處理足夠的肯定樣本來建立預測模型之後，您�
     > [!IMPORTANT]
     > 範例專案不能加密，必須是英文。
 
-12. 將測試內容放入專用於 *只保留測試內容*的 SharePoint Online 資料夾中。 請記下 SharePoint 線上網站、文件庫和資料夾 URL。
+12. 將測試內容放入專用於 *只保留測試內容* 的 SharePoint Online 資料夾中。 請記下 SharePoint 線上網站、文件庫和資料夾 URL。
 
     > [!TIP]
     > 如果您為測試資料建立新的網站和資料夾，至少要有一個小時的時間，才能建立會使用該植入資料的 trainable 分類程式。

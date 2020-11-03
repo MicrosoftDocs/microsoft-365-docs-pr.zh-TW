@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 563972c458e77d96cf075f048dcee027bf29bc95
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 9a1a0204f1c79ad1eab7d62adf45022d1d5bc035
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399394"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842795"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>您可以 sail 的安全性障礙（一個架構師的視點）
 
@@ -55,7 +55,7 @@ Sail 超過這些障礙的客戶都有良好的作業與控管與安全性與風
 
 許多安全性小組仍然使用為所有內部部署世界所建立的傳統安全性最佳作法，包括維護「網路周邊安全性」，並嘗試將部署安全性工具和控制項「強制」為雲端解決方案。 這類控制項不是專為雲端設計，不是低效，也不會妨礙採用新式雲端功能。 可用於網路周邊安全性方法的程式及工具，已證實其效率低下，obstructive 到雲端功能，且不允許利用新式和自動化的安全性功能。
 
-您可以將防護策略移至雲端管理的保護、自動化調查和修正、自動化的鋼筆測試、高級威脅防護，以及事件分析，以 sail 此障礙。 使用新式裝置管理解決方案的客戶已在所有裝置中執行自動管理、標準化修補、防毒軟體、原則強制執行和應用程式保護 (不論是 smartphone、個人電腦、膝上型電腦或平板電腦) 。 這樣就不需要 VPN、Microsoft System Center Configuration Manager (SCCM) 和 Active Directory 群組原則。 這會結合條件式存取原則，提供強大的控制項和可視性，並可簡化存取資源，不論使用者的運作位置為何。
+您可以將防護策略移至雲端管理的保護、自動化調查和修正、自動化的筆測試、Office 365 的 Defender 和事件分析，以 sail 至此功能。 使用新式裝置管理解決方案的客戶已在所有裝置中執行自動管理、標準化修補、防毒軟體、原則強制執行和應用程式保護 (不論是 smartphone、個人電腦、膝上型電腦或平板電腦) 。 這樣就不需要 VPN、Microsoft System Center Configuration Manager (SCCM) 和 Active Directory 群組原則。 這會結合條件式存取原則，提供強大的控制項和可視性，並可簡化存取資源，不論使用者的運作位置為何。
 
 ## <a name="strive-for-best-together-security-tools"></a>盡力搭配「最佳」安全性工具
 
@@ -77,7 +77,7 @@ Sail 超過這些障礙的客戶都有良好的作業與控管與安全性與風
 為了協助您清除這些障礙，Microsoft 已策劃數個資源，以協助您採取一種安全性原則與實施方式。 
 
 
-|資源   |詳細資訊  |
+|資源   |其他資訊  |
 |---------|---------|
 |[安全性團隊支援在家工作的最常見工作](../security/top-security-tasks-for-remote-work.md)      | 如果您覺得您突然支援大多數工作中的工作力，這篇文章可協助您快速提升安全性。 它包含根據您的授權方案的最大建議工作。    |
 |[Microsoft 365 商務決策人的安全性](../security/Microsoft-365-security-for-bdm.md)    | 當您有時間進行更全面的計畫時，本文會包含跨越 Microsoft 365 的建議，並依攻擊面劃分優先順序。 它甚至附帶一個試算表，您可以用來排序授權和區域 (例如身分識別、威脅防護和監控) 。  |

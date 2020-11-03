@@ -1,5 +1,5 @@
 ---
-title: 了解 Microsoft 威脅防護中的進階搜捕查詢語言
+title: 瞭解 Microsoft 365 Defender 中的高級搜尋查詢語言
 description: 建立您的第一個威脅搜捕查詢，並了解常用的運算子和進階搜捕查詢語言的其他概念
 keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，語言，學習，第一個查詢，遙測，事件，遙測，自訂偵測，架構，kusto，運算子，資料類型，powershell 下載，查詢範例
 search.product: eADQiWindows 10XVcnh
@@ -19,20 +19,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 09f0a5437c3ae3b54fa086d93e475e4881c2d4bf
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: bb3caff642e752cb6d3941b697820fbad69ae23c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431048"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841973"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 進階搜捕是以 [Kusto 查詢語言](https://docs.microsoft.com/azure/kusto/query/)為基礎。 您可以使用 Kusto 運算子和語句來建立在特定 [架構](advanced-hunting-schema-tables.md)中尋找資訊的查詢。 若要深入了解這些概念，請執行您的第一個查詢。
 
@@ -137,7 +137,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | `makeset` |  傳回 Expr 在群組中取得的獨特值集合的動態 (JSON) 陣列。 |
 | `find` | 在一組資料表中尋找符合述詞的資料列。 |
 
-若要查看這些運算子的實際範例，請從進階搜捕的 [開始使用]**** 區段中執行這些運算子。
+若要查看這些運算子的實際範例，請從進階搜捕的 [開始使用] 區段中執行這些運算子。
 
 ## <a name="understand-data-types"></a>瞭解資料類型
 
@@ -155,21 +155,21 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ## <a name="get-help-as-you-write-queries"></a>編寫查詢時取得協助
 運用下列功能更快速地編寫查詢：
-- **Autosuggest**--當您撰寫查詢時，高級搜尋會提供 IntelliSense 的建議。 
-- **架構樹**系-您的工作區域旁會提供包含資料表清單和其欄的架構標記法。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
-- **[架構參考（Schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**）包含資料表和欄描述的入口網站內參照，以及支援的事件種類 (`ActionType` 值) 和範例查詢
+- **Autosuggest** --當您撰寫查詢時，高級搜尋會提供 IntelliSense 的建議。 
+- **架構樹** 系-您的工作區域旁會提供包含資料表清單和其欄的架構標記法。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
+- **[架構參考（Schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** ）包含資料表和欄描述的入口網站內參照，以及支援的事件種類 (`ActionType` 值) 和範例查詢
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>在編輯器中使用多個查詢
 您可以使用查詢編輯器來試驗多個查詢。 若要使用多個查詢：
 
 - 以空行分隔每個查詢。
-- 將游標放在查詢的任何部分，以選取該查詢，然後再執行它。 這只會執行選取的查詢。 若要執行另一個查詢，請據以移動游標，然後選取 [ **執行查詢**]。
+- 將游標放在查詢的任何部分，以選取該查詢，然後再執行它。 這只會執行選取的查詢。 若要執行另一個查詢，請據以移動游標，然後選取 [ **執行查詢** ]。
 
 ![具有多個查詢的查詢編輯器影像](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>使用範例查詢
 
-[開始使用]**** 區段提供一些使用常用運算子的簡單查詢。 嘗試執行這些查詢，並對它們進行些微修改。
+[開始使用] 區段提供一些使用常用運算子的簡單查詢。 嘗試執行這些查詢，並對它們進行些微修改。
 
 ![進階搜捕視窗的影像](../../media/advanced-hunting-get-started.png)
 

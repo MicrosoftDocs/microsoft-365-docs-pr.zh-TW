@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a7d79684a085072e1af113bc0466ab26574ab904
-ms.sourcegitcommit: c51de5e1a4cb9c4a7a9854a4226b32453d9e73e0
+ms.openlocfilehash: d63994778762968962b2a32f026dbb81af39b664
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48779223"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843813"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
 
@@ -35,7 +35,7 @@ ms.locfileid: "48779223"
 
 ## <a name="october-2020"></a>2020 年 10 月
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-advanced-threat-protection"></a>移除與 Microsoft Defender 高級威脅防護相關的改進動作
+### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>移除與 Microsoft Defender for Endpoint 相關的改進動作
 
 - 設定 Microsoft Defender SmartScreen Windows 應用程式 web 內容檢查以警告
 
@@ -54,8 +54,8 @@ ms.locfileid: "48779223"
 ## <a name="updated-improvement-actions"></a>更新的改進動作
 
 - 新增 Azure Active Directory 改進動作
-- 新增 Azure 高級威脅防護改進動作
-- 支援 Microsoft Defender ATP [威脅 & 弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全性建議
+- 新增 Microsoft Defender 以進行身分識別改進動作
+- 支援 Microsoft Defender for Endpoint [威脅 & 弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全性建議
     - 現在提供 TVM 提供的所有發行安全性建議
 
 ## <a name="updated-interface-and-functionality"></a>更新的介面及功能

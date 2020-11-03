@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 取得最新的硬體隔離。 防止目前和新興的攻擊（如入侵或惡意連結）中斷員工生產力和企業安全性。
-ms.openlocfilehash: 3a20649338bbcd58ad86f70142c2bd9f1c2fd948
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3b31ef639667c7ef761d1d5fa0295f5d767e0c48
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197570"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843003"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>適用于系統管理員的 Office 的應用程式防護 (公開預覽) 
 
@@ -36,19 +36,19 @@ ms.locfileid: "48197570"
 
 Microsoft Defender Application Guard for office (Application Guard) 協助防止不可信的檔案存取受信任的資源，讓您的企業安全地抵禦新的和新興的攻擊。 本文指導管理員如何針對 Office 的應用程式防護，設定可預覽的裝置。 它提供有關系統需求和安裝步驟的資訊，以便在裝置上啟用 Office 的應用程式防護功能。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 ### <a name="minimum-hardware-requirements"></a>基本硬體需求
 
-* **CPU**：64位、4核心 (實體或虛擬) 、虛擬化擴充 (Intel VT-x 或 AMD-V) 、Core i5 對等建議或更高版本的建議
-* **實體記憶體**： 8 GB RAM
-* **硬碟**：系統磁片磁碟機上有 10 GB 的可用空間 (SSD 建議) 
+* **CPU** ：64位、4核心 (實體或虛擬) 、虛擬化擴充 (Intel VT-x 或 AMD-V) 、Core i5 對等建議或更高版本的建議
+* **實體記憶體** ： 8 GB RAM
+* **硬碟** ：系統磁片磁碟機上有 10 GB 的可用空間 (SSD 建議) 
 
 ### <a name="minimum-software-requirements"></a>基本軟體需求
 
-* **Windows 10**： Windows 10 Enterprise Edition，Client Build version 2004 (20H1) 組建19041
-* **Office**： Office Beta 通道組建版本 2008 16.0.13212 或更新版本
-* **更新套件**： Windows 10 累計每月安全性更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
+* **Windows 10** ： Windows 10 Enterprise Edition，Client Build version 2004 (20H1) 組建19041
+* **Office** ： Office Beta 通道組建版本 2008 16.0.13212 或更新版本
+* **更新套件** ： Windows 10 累計每月安全性更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756) 
 
 如需詳細的系統需求，請參閱 [Microsoft Defender Application Guard 的系統需求](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 若要深入瞭解 Office 測試人員預覽組建，請參閱 [部署 office 測試人員組建的快速入門](https://insider.office.com/business/deploy)。
 
@@ -59,9 +59,9 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
 
 ### <a name="enable-application-guard-for-office"></a>啟用適用于 Office 的應用程式防護
 
-1.  下載及安裝 **Windows 10 累計每月安全性更新 KB4571756**。 
+1.  下載及安裝 **Windows 10 累計每月安全性更新 KB4571756** 。 
 
-2.  選取 [Windows 功能] 底下的 [ **Microsoft Defender 應用程式防護** ] 並選取 **[確定]**。 啟用 Application Guard 功能時，會提示重新開機系統。 您可以選擇 [現在] 或 [在步驟3之後重新開機]。
+2.  選取 [Windows 功能] 底下的 [ **Microsoft Defender 應用程式防護** ] 並選取 **[確定]** 。 啟用 Application Guard 功能時，會提示重新開機系統。 您可以選擇 [現在] 或 [在步驟3之後重新開機]。
 
     ![顯示 AG 的 [Windows 功能] 對話方塊](../../media/ag03-deploy.png)
     
@@ -71,7 +71,7 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
     Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard 
     ```
 
-3.  在 [電腦設定] 系統管理範本的「管理模式」群組原則中尋找 Microsoft Defender Application Guard ** \\ \\ \\ microsoft defender application guard**。 在 [選項為**2**或**3**時設定值]，然後選取 **[確定] 或 [套用]** ，以開啟此**原則。**
+3.  在 [電腦設定] 系統管理範本的「管理模式」群組原則中尋找 Microsoft Defender Application Guard **\\ \\ \\ microsoft defender application guard** 。 在 [選項為 **2** 或 **3** 時設定值]，然後選取 **[確定] 或 [套用]** ，以開啟此 **原則。**
 
     ![在受管理的模式中開啟 AG](../../media/ag04-deploy.png)
   
@@ -92,11 +92,11 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
 
     ![[開始] 功能表](../../media/ag05-diagnostic.png)
 
-2.  在 [ **Windows 設定**] 上，選取 [ **隱私權**]。
+2.  在 [ **Windows 設定** ] 上，選取 [ **隱私權** ]。
 
     ![Windows 設定功能表](../../media/ag06-diagnostic.png)
 
-3.  在 [隱私權] 底下，選取 [ **診斷 & 回饋** ]，然後選取 [ **選用診斷資料**]。
+3.  在 [隱私權] 底下，選取 [ **診斷 & 回饋** ]，然後選取 [ **選用診斷資料** ]。
 
     ![診斷和回饋功能表](../../media/ag07a-diagnostic.png)
 
@@ -158,11 +158,11 @@ Office 支援下列原則，可讓您設定 Office 應用程式防護的功能�
 
 3.  若尚未填入您的意見反應摘要，請填入 **您的意見** 反應。
 
-4.  在 [ **詳細資料** ] 方塊中填入您所遇到問題的詳細描述以及您採取的步驟，然後選取 **[下一步]**。
+4.  在 [ **詳細資料** ] 方塊中填入您所遇到問題的詳細描述以及您採取的步驟，然後選取 **[下一步]** 。
 
-5.  選取 [問題] 旁邊的氣泡。 確定選取的類別為 **安全性和隱私權 \> Microsoft Defender 應用程式防護-Office**，然後選取 **[下一步]**。
+5.  選取 [問題] 旁邊的氣泡。 確定選取的類別為 **安全性和隱私權 \> Microsoft Defender 應用程式防護-Office** ，然後選取 **[下一步]** 。
 
-6.  選取 [ **新增**反應]，然後選取 **[下一步]**。
+6.  選取 [ **新增** 反應]，然後選取 **[下一步]** 。
 
 7.  收集有關問題的追蹤：
 
@@ -170,7 +170,7 @@ Office 支援下列原則，可讓您設定 Office 應用程式防護的功能�
 
     2.  如果您在執行應用程式防護時發生所遇到的問題，請開啟應用程式防護實例。 這樣做允許從應用程式防護容器內收集其他追蹤。
 
-    3.  選取 [ **開始錄製** ] 並等候磚停止旋轉，並說 [ *停止錄製*]。
+    3.  選取 [ **開始錄製** ] 並等候磚停止旋轉，並說 [ *停止錄製* ]。
 
     4.  使用應用程式防護完全再現問題。 這可能包括嘗試啟動應用程式防護實例並等候失敗，或在執行中的應用程式防護實例中再現問題。
 
@@ -180,7 +180,7 @@ Office 支援下列原則，可讓您設定 Office 應用程式防護的功能�
 
 8.  附加任何相關的螢幕擷取畫面或與問題相關的檔案。
 
-9.  選取 **[提交]**。
+9.  選取 **[提交]** 。
 
 
 
@@ -188,13 +188,13 @@ Office 支援下列原則，可讓您設定 Office 應用程式防護的功能�
 
 您也可以從 Office 提交意見，如果在應用程式防護中開啟 Office 檔時會發生問題。 請參閱 [Office 預覽人員手冊](https://insider.office.com/handbook) 以取得意見反應。
 
-## <a name="integration-with-microsoft-defender-atp-and-office-atp"></a>與 Microsoft Defender ATP 和 Office ATP 整合
+## <a name="integration-with-microsoft-defender-for-endpoint-and-microsoft-defender-for-office-365"></a>與 Microsoft Defender for Endpoint 和 Microsoft Defender for Office 365 整合
 
-適用于 Office 的應用程式防護會與 Microsoft Defender 高級威脅防護 (ATP) 整合，針對隔離環境中發生的惡意活動提供監控和警示。
+適用于 Office 的應用程式防護會與 Microsoft Defender for Endpoint 整合，以提供有關隔離環境中發生之惡意活動的監控和警示。
 
-Microsoft Defender ATP 是一種安全性平臺，旨在協助商業網路避免、偵測、調查和回應高級威脅。 如需此平臺的詳細資訊，請造訪 [Microsoft Defender 高級威脅防護](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) 頁面。 深入瞭解在板載裝置上的此平臺上 [的板載裝置至 Microsoft DEFENDER ATP 服務](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
+Microsoft Defender for Endpoint 是一種安全性平臺，旨在協助商業網路避免、偵測、調查和回應高級威脅。 如需此平臺的詳細資訊，請造訪 [Microsoft Defender For Endpoint](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp) 頁面。 深入瞭解在板載裝置上的此平臺上 [的板載裝置至 Microsoft Defender For Endpoint service](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)。
 
-您也可以將 Office 365 ATP 設定為與 Microsoft Defender ATP 搭配使用。 請參閱將 [Office 365 Atp 整合至 Microsoft DEFENDER atp](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide)。
+您也可以將 Microsoft Defender for Office 365 設定為搭配使用 Defender for Endpoint。 請參閱 [整合 Defender For Office 365 搭配 Microsoft Defender For Endpoint](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp?view=o365-worldwide)。
 
 ## <a name="limitations-and-considerations"></a>限制和考慮
 

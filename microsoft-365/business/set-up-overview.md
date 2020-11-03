@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 瞭解 Microsoft 365 商務版 Premium 的設定步驟，從訂閱、新增網域和使用者、設定安全性原則等等。
-ms.openlocfilehash: 8ec01a58d1a15d5c4aa1cef8b81518b474630d8b
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 46370166a9d5e8c9308b8947513e631c159f0b86
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841125"
+ms.locfileid: "48842123"
 ---
 # <a name="overview-of-setup"></a>步驟概觀
 
@@ -61,7 +61,7 @@ ms.locfileid: "48841125"
   除了安裝精靈中的安全性設定之外，您還可以新增下列設定來增加您的安全性：
 
 - **電子郵件惡意程式碼保護**
-- **ATP 反網路釣魚**
+- **Office 365 的 Defender 中的反網路釣魚**
 - **Exchange Online 封存**
 - **Azure 資訊保護 (Plan1** ) 
 
