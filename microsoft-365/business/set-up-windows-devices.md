@@ -26,18 +26,18 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: 瞭解如何設定執行 Windows 10 Pro for Microsoft 365 商務版使用者的 Windows 裝置，以啟用集中式管理及安全性控制。
-ms.openlocfilehash: 85ac3c964792a132d5699703e543289020e38f57
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: c95b9e51c7ec3c440509fe34084d2a030c7f2eec
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785845"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841252"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>為 Microsoft 365 商務版使用者設定 Windows 裝置
 
 ## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>為 Microsoft 365 商務版使用者設定 Windows 裝置的必要條件
 
-在您可以為 Microsoft 365 商務版使用者設定 Windows 裝置之前，請確定所有 Windows 裝置都執行 Windows 10 專業版，版本1703（創意者更新）。 Windows 10 專業版是部署 Windows 10 商務版的必要條件，也就是一組雲端服務和裝置管理功能，可補充 Windows 10 專業人員，並啟用 Microsoft 365 商務版的集中式管理及安全性控制。
+在您可以為 Microsoft 365 商務版使用者設定 Windows 裝置之前，請確定所有 Windows 裝置都執行 Windows 10 專業版，版本 1703 (建立者更新) 。 Windows 10 專業版是部署 Windows 10 商務版的必要條件，也就是一組雲端服務和裝置管理功能，可補充 Windows 10 專業人員，並啟用 Microsoft 365 商務版的集中式管理及安全性控制。
   
 如果您有執行 Windows 7 專業版、Windows 8 專業版或 Windows 8.1 Pro 的 Windows 裝置，您的 Microsoft 365 商務版特優訂閱可讓您執行 Windows 10 升級。
   
@@ -59,11 +59,11 @@ ms.locfileid: "44785845"
 
 針對執行 Windows 10 專業版 Creators Update 的全新裝置，或針對已升級到 Windows 10 專業版 Creators Update 但未完成 Windows 10 裝置設定的裝置，請按照這些步驟進行。
   
-1. 流覽 Windows 10 裝置安裝程式，直到您看到 [**您要如何設定？** ] 頁面。 
+1. 流覽 Windows 10 裝置安裝程式，直到您看到 [ **您要如何設定？** ] 頁面。 
     
     ![On the How would you like to set up page, choose Set up for an organization](../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
-2. 在這裡，選擇 [**為組織設定**]，然後輸入 Microsoft 365 商務版的使用者名稱和密碼。 
+2. 在這裡，選擇 [ **為組織設定** ]，然後輸入 Microsoft 365 商務版的使用者名稱和密碼。 
     
 3. 完成 Windows 10 裝置設定。
     
@@ -77,55 +77,55 @@ ms.locfileid: "44785845"
   
    ![In the Start menu, click Windows Settings icon](../media/74e1ce9a-1554-4761-beb9-330b176e9b9d.png)
   
-2. 在 [**設定**] 中，移至 [**帳戶**]。
+2. 在 [ **設定** ] 中，移至 [ **帳戶** ]。
   
    ![In Windows Settings, go to Accounts](../media/472fd688-d111-4788-9fbb-56a00fbdc24d.png)
   
-3. 在 [**資訊**] 頁面上，按一下 [**存取工作或 school** \> **Connect]**。
+3. 在 [ **資訊** ] 頁面上，按一下 [ **存取工作或 school** \> **Connect]** 。
   
    ![Choose Connect under Access work or school](../media/af3a4e3f-f9b9-4969-b3e2-4ef99308090c.png)
   
-4. 在 [**設定公司或學校帳戶**] 對話方塊的 [**替代動作**] 下，選擇 [將**此裝置加入 Azure Active Directory**]。
+4. 在 [ **設定公司或學校帳戶** ] 對話方塊的 [ **替代動作** ] 下，選擇 [將 **此裝置加入 Azure Active Directory** ]。
   
    ![Click Join this device to Azure Active Directory](../media/fb709a1b-05a9-4750-9cb9-e097f4412cba.png)
   
-5. 在 [**讓您登入**] 頁面上，輸入您 \> **下一個**工作或學校帳戶。
+5. 在 [ **讓您登入** ] 頁面上，輸入您 \> **下一個** 工作或學校帳戶。
   
-   在 [**輸入密碼**] 頁面上，輸入您的密碼登 \> **入**。
+   在 [ **輸入密碼** ] 頁面上，輸入您的密碼登 \> **入** 。
   
    ![Enter your work or school email on the Let's get you signed in page](../media/f70eb148-b1d2-4ba3-be38-7317eaf0321a.png)
   
-6. 在 [**確定這是您的組織**] 頁面上，確認資訊正確無誤，然後按一下 [**加入**]。
+6. 在 [ **確定這是您的組織** ] 頁面上，確認資訊正確無誤，然後選擇 [ **加入** ]。
   
-   已**全部設定！** 頁面上，按一下 [**完成**]。
+   已 **全部設定！** 頁面上，chosse **完成** 。
   
-   ![On the Make sure this is your organization screen, click Join](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
+   ![在 [確定這是您的組織] 畫面上，選擇 [加入]](../media/c749c0a2-5191-4347-a451-c062682aa1fb.png)
   
 如果您將檔案上傳至商務用 OneDrive，請將檔案同步回原處。 如果您使用協力廠商工具來遷移設定檔和檔案，也請將其同步處理至新的設定檔。
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>驗證裝置已連線到 Azure AD
 
-若要驗證您的同步處理狀態，請在 [**設定**] 中的 [**存取工作或學校**] 頁面上，按一下 [**已連線到**_ \<organization name\> _ **]** 區域，以公開按鈕**資訊**並中斷連線。 按一下 [**資訊**] 以取得同步處理狀態。 
+若要驗證您的同步處理狀態，請在 [ **設定** ] 中的 [ **存取工作或學校** ] 頁面上，選取 [ **連接到** _ \<organization name\> _] 區域，以顯示按鈕 **資訊** 並 **中斷連接** 。 選擇 [ **資訊** ] 以取得同步處理狀態。 
   
-在 [同步處理狀態] 頁面上，按一下 [同步處理] 將最新的行動裝置管理原則下載到 PC 上。
+在 [ **同步處理狀態** ] 頁面上，選擇 [ **同步** 處理]，以取得最新的行動裝置管理原則至電腦。
   
-若要開始使用 Microsoft 365 商務版帳戶，請移至 Windows [**開始**] 按鈕，以滑鼠右鍵按一下您目前的帳戶圖片，然後**切換帳戶**。 使用您的組織電子郵件和密碼登入。
+若要開始使用 Microsoft 365 商務版帳戶，請移至 Windows [ **開始** ] 按鈕，以滑鼠右鍵按一下您目前的帳戶圖片，然後 **切換帳戶** 。 使用您的組織電子郵件和密碼登入。
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
-## <a name="verify-the-device-is-upgraded-to-windows-10-business"></a>驗證裝置已升級到 Windows 10 商務版
+## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>確認電腦已升級到 Windows 10 商務版
 
-請確認您的 Azure AD 加入 Windows 10 裝置已升級到 Windows 10 商務版，成為 Microsoft 365 商務版 Premium 訂閱的一部分。
+請確認您的 Azure AD 加入的 Windows 10 裝置會在 Microsoft 365 商務版 Premium 訂閱中升級為 Windows 10 商務版。
   
-1. 移至 [**設定** \> **系統**] \> ** **。
+1. 移至 [  。
     
-2. 確認該版本顯示**Windows 10 商務****版**。
+2. 確認該版本顯示 **Windows 10 商務****版** 。
     
     ![Verify that Windows edition is Windows 10 Business.](../media/ff660fc8-d3ba-431b-89a5-f5abded96c4d.png)
   
 ## <a name="next-steps"></a>後續步驟
 
-若要設定行動裝置，請參閱為[microsoft 365 商務版使用者設定行動裝置](set-up-mobile-devices.md)。若要設定裝置保護或應用程式保護原則，請參閱[管理 Microsoft 365 for Business](manage.md)。
+若要設定行動裝置，請參閱為 [microsoft 365 商務版使用者設定行動裝置](set-up-mobile-devices.md)。若要設定裝置保護或應用程式保護原則，請參閱 [管理 Microsoft 365 for Business](manage.md)。
   
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>如需設定及使用 Microsoft 365 商務版 Premium 的詳細資訊
 

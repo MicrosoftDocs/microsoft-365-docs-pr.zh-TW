@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '瞭解流量分析如何連接至 API，並提供各種 Microsoft 365 服務的每月使用趨勢。  '
-ms.openlocfilehash: 1fa1cb842b603a920665ec1b59ca18f586b5d181
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 9d13d979e64a68aaffb3582ad6b09ab901843cd4
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560856"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841372"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情況分析資料模型
 
@@ -44,22 +44,22 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |**表格名稱**|**表格中的資訊**|**日期範圍**|
 |:-----|:-----|:-----|
 |租用戶產品使用情況  <br/> |包含啟用、作用中使用者、每月保留使用者、第一次使用者和累計使用中使用者的每月總數。  <br/> |包含 12 個月期間內每月彙總的資料，包括目前部分月份。  <br/> |
-|租用戶產品活動  <br/> |包含活動以及產品內各種活動之作用中使用者計數的每月總數。  <br/> 如需產品內此資料表格中傳回活動的相關資訊，請參閱[作用中使用者定義](active-user-in-usage-reports.md)。  <br/> |包含 12 個月期間內每月彙總的資料，包括目前部分月份。  <br/> |
+|租用戶產品活動  <br/> |包含各項活動的每月總數，以及產品內各種活動的活動使用者計數。  <br/> 如需產品內此資料表格中傳回活動的相關資訊，請參閱[作用中使用者定義](active-user-in-usage-reports.md)。  <br/> |包含 12 個月期間內每月彙總的資料，包括目前部分月份。  <br/> |
 |租用戶 Office 授權  <br/> |包含指派給使用者之 Microsoft Office 訂閱數的相關資料  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
-|租用戶信箱使用量  <br/> |包含使用者信箱的相關資料，也就是信箱總數及儲存空間使用方式。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
+|租用戶信箱使用量  <br/> |會包含使用者信箱的相關資料、信箱總數，以及使用儲存體的方式。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
 |租用戶用戶端使用量  <br/> |包含主動使用特定用戶端/裝置連線到 Exchange Online、商務用 Skype 和 Yammer 之使用者數目的相關資料。  <br/> |包含 12 個月期間內每月彙總的資料，包括目前部分月份。  <br/> |
 |租用戶 SharePoint Online 使用量  <br/> |包含 SharePoint 網站 (涵蓋小組或群組網站) 的相關資料，例如網站總數、網站上的文件數目、依活動類型計算的檔案計數，以及使用的儲存空間。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
 |租用戶商務用 OneDrive 使用量  <br/> |包含 OneDrive 帳戶的相關資料，例如帳戶數目、OneDrive 上的文件數目、使用的儲存空間、依活動類型計算的檔案計數。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
 |承租人 Microsoft 365 群組使用量  <br/> |包含有關 Microsoft 365 群組使用量（包括信箱、SharePoint 及 Yammer）的資料。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
 |租用戶 Office 啟用  <br/> |包含有關 Office 訂閱啟用數目、每個裝置的啟用計數 (Android/iOS/Mac/PC) 、依服務方案啟動的 Microsoft 365 應用程式，例如 Microsoft 應用程式（適用于企業、Visio、Project）的資料。  <br/> |包含第12個月期間內的月末狀態資料，包括目前部分月份。  <br/> |
-|使用者狀態  <br/> |包含使用者的相關中繼資料，包括使用者顯示名稱、指派的產品、地點、部門、職稱、公司。 此資料與上一個完整月份期間獲指派授權的使用者有關。 每個使用者都由使用者識別碼唯一表示。  <br/> |此資料與上一個完整月份期間指派授權的使用者有關。  <br/> |
+|使用者狀態  <br/> |包含使用者的相關中繼資料，包括使用者顯示名稱、指派的產品、地點、部門、職稱、公司。 此資料是關於在最後一個完整月份期間獲指派授權的使用者。 每個使用者都由使用者識別碼唯一表示。  <br/> |此資料與上一個完整月份期間指派授權的使用者有關。  <br/> |
 |使用者活動  <br/> |包含授權使用者執行活動的每個使用者層級資訊。  <br/> 如需產品內此資料表格中傳回活動的相關資訊，請參閱[作用中使用者定義](active-user-in-usage-reports.md)。  <br/> |此資料與上一個完整月份期間在任何服務中執行活動的使用者有關。  <br/> |
    
 展開下列各節，以查看每個資料表格的詳細資訊。
   
 ### <a name="data-table---user-state"></a>資料表格 - 使用者狀態
 
-此表格針對在上一個完整月份期間獲指派授權的所有使用者，提供使用者層級的詳細資料。它會從 Azure Active Directory 匯入資料。
+此表格會針對在最後一個完整月份期間指派授權的所有使用者，提供使用者層級的詳細資料。 它會從 Azure Active Directory 匯入資料。
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
@@ -67,7 +67,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |Timeframe  <br/> |此表格內含資料的月份值。  <br/> |
 |UPN  <br/> |使用者主體名稱，可唯一識別能夠使用其他外部資料來源加入的使用者。  <br/> |
 |DisplayName  <br/> |使用者的顯示名稱。  <br/> |
-|IDType  <br/> |如果使用者是使用其 Yammer 識別碼來連線的 Yammer 使用者，則識別碼類型設為 1; 如果使用者使用 Microsoft 365 識別碼連線到 Yammer，則為0。  <br/> 值為1，表示此使用者使用 Yammer 識別碼（而不是其 Microsoft 365 識別碼）連線至 Yammer  <br/> |
+|IDType  <br/> |如果使用者是使用其 Yammer 識別碼來連線的 Yammer 使用者，則識別碼類型設為 1; 如果使用者使用 Microsoft 365 識別碼連線到 Yammer，則為0。  <br/> 值為1表示此使用者使用 Yammer 識別碼（而不是其 Microsoft 365 識別碼）連線至 Yammer  <br/> |
 |HasLicenseEXO  <br/> |如果使用者有獲指派授權，而且可以使用 Exchange，則設為 true。  <br/> |
 |HasLicenseODB  <br/> |如果使用者有獲指派授權，而且可以使用商務用 OneDrive，則設為 true。  <br/> |
 |HasLicenseSPO  <br/> |如果使用者有獲指派授權，而且可以使用 SharePoint Online，則設為 true。  <br/> |
@@ -83,7 +83,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |Title  <br/> |在 Azure Active Directory 中表示此使用者的職稱資料。  <br/> |
 |Deleted  <br/> |True 是表示如果使用者已從 Microsoft 365 刪除最後一個完整月份的使用者。  <br/> |
 |DeletedDate  <br/> |從 Microsoft 365 刪除使用者的日期。  <br/> |
-|YAM_State  <br/> |使用者在 Yammer 系統中的狀態，可以是作用中、已刪除或已暫停。  <br/> |
+|YAM_State  <br/> |Yammer 系統中使用者的狀態，可為 active、deleted 或擱置狀態。  <br/> |
 |YAM_ActivationDate  <br/> |使用者在 Yammer 中進入作用中狀態的日期。  <br/> |
 |YAM_DeletionDate  <br/> |使用者在 Yammer 中進入已刪除狀態的日期。  <br/> |
 |YAM_SuspensionDate  <br/> |使用者在 Yammer 中進入已暫停狀態的日期。  <br/> |
@@ -94,12 +94,12 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
-|UserID  <br/> |代表使用者，而且可以使用資料集內的其他資料表格加入的唯一使用者識別碼。  <br/> |
-|IDType  <br/> |如果使用者是使用其 Yammer 識別碼來連線的 Yammer 使用者，則識別碼類型設為 1; 如果使用者使用 Microsoft 365 識別碼連線到 Yammer，則為0。  <br/> 值為1，表示此使用者使用 Yammer 識別碼（而不是其 Microsoft 365 識別碼）連線至 Yammer  <br/> |
+|UserID  <br/> |代表使用者的唯一使用者識別碼，可與資料集內的其他資料表格加入。  <br/> |
+|IDType  <br/> |如果使用者是使用其 Yammer 識別碼來連線的 Yammer 使用者，則識別碼類型設為 1; 如果使用者使用 Microsoft 365 識別碼連線到 Yammer，則為0。  <br/> 值為1表示此使用者使用 Yammer 識別碼（而不是其 Microsoft 365 識別碼）連線至 Yammer  <br/> |
 |Timeframe  <br/> |此表格表示有資料的月份值。  <br/> |
 |EXO_EmailSent  <br/> |已傳送的電子郵件數目。  <br/> |
 |EXO_EmailReceived  <br/> |已接收的電子郵件數目。  <br/> |
-|EXO_EmailRead  <br/> |使用者執行之已讀取電子郵件活動的次數，這可能是多次讀取已讀取的電子郵件，或先前收到的電子郵件。  <br/> |
+|EXO_EmailRead  <br/> |使用者執行的電子郵件讀取活動數目，可以多次讀取已讀取的電子郵件，或先前收到的電子郵件。  <br/> |
 |EXO_AppointmentCreated  <br/> |建立的約會數目。  <br/> |
 |EXO_MeetingAccepted  <br/> |已接受的會議數目。  <br/> |
 |EXO_MeetingCancelled  <br/> |取消的會議數目。  <br/> |
@@ -134,9 +134,9 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |Teams_CallParticipate  <br/> |使用者參與的通話數目。  <br/> |
 |Teams_MeetingParticipate  <br/> |使用者加入的會議數目。  <br/> |
 |Teams_HasOtherAction  <br/> |布林值，如果使用者在 Microsoft 小組中執行其他動作。  <br/> |
-|YAM_MessagePost  <br/> |此使用者張貼的 Yammer 訊息數目。  <br/> |
-|YAM_MessageLiked  <br/> |此使用者按讚的 Yammer 訊息數目。  <br/> |
-|YAM_MessageRead  <br/> |此使用者已讀取的 Yammer 訊息數目。  <br/> |
+|YAM_MessagePost  <br/> |此使用者投遞的 Yammer 訊息數目。  <br/> |
+|YAM_MessageLiked  <br/> |此使用者贊的 Yammer 訊息數目。  <br/> |
+|YAM_MessageRead  <br/> |此使用者讀取的 Yammer 郵件數目。  <br/> |
 |SFB_P2PSummary  <br/> |此使用者參與的對等工作階段數目。  <br/> |
 |SFB_ConfOrgSummary  <br/> |此使用者組織的會議工作階段數目。  <br/> |
 |SFB_ConfPartSummary  <br/> |此使用者參與的會議工作階段數目。  <br/> |
@@ -152,16 +152,16 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |:-----|:-----|
 |Product  <br/> |摘要說明其使用情況資訊的產品名稱。 [產品] 欄中的 Microsoft 365 值代表任何產品間的活動  <br/> |
 |Timeframe  <br/> |月份值。每個產品在過去 12 個月內，每個月都會有一列，包括目前部分月份。  <br/> |
-|EnabledUsers  <br/> |可在時間範圍值內使用產品的使用者數目，如果在月份中的部分啟用使用者，則仍會計算在內。  <br/> |
-|ActiveUsers  <br/> |在時間範圍值內，執行產品中刻意活動的使用者數目。  <br/> A user is counted as active for a product in a particular month, if they have performed one of the key activities in the product. The key activities are available in the **Tenant Product Activity** table.  <br/> |
+|EnabledUsers  <br/> |已啟用的使用者人數若要將產品用於時間框架值，如果使用者已啟用某月的一部分，仍然會計算這些使用者。  <br/> |
+|ActiveUsers  <br/> |在產品中執行「有意」活動的時間框架值的使用者人數。  <br/> A user is counted as active for a product in a particular month, if they have performed one of the key activities in the product. The key activities are available in the **Tenant Product Activity** table.  <br/> |
 |CumulativeActiveUsers  <br/> |可使用產品，而且自新的使用情況系統開始收集資料起，已在時間範圍月份內至少使用一次產品的使用者數目。  <br/> |
 |MoMReturningUsers  <br/> |在時間範圍月份內有效，且在上一個月也有效的使用者數目。  <br/> |
-|FirstTimeUsers  <br/> |自新的使用情況系統開始收集資料起，在時間範圍內第一次成為作用中使用者的使用者數目。  <br/> 如果我們自這個新的報告系統開始收集資料起，第一次偵測到使用者的活動，則會將該使用者計入特定月份的初次使用者。 即使此使用者在其活動中有很大的缺口，也不會再算作第一次使用者  <br/> |
+|FirstTimeUsers  <br/> |自新的使用情況系統開始收集資料起，在時間範圍內第一次成為作用中使用者的使用者數目。  <br/> 如果我們自這個新的報告系統開始收集資料起，第一次偵測到使用者的活動，則會將該使用者計入特定月份的初次使用者。 即使此使用者在其活動中有大量的缺口，也不會再次計算為第一次使用者  <br/> |
 |Content Date  <br/> |如果時間範圍顯示目前月份，此值將代表資料在目前月份可供使用的最晚日期。  <br/> 如果時間範圍顯示上個月，此值將代表時間範圍月份的最後一個日期。  <br/> |
    
 ### <a name="data-table---tenant-product-activity"></a>資料表格 - 租用戶產品活動
 
-此表格提供活動以及產品內各種活動之作用中使用者計數的每月總數。
+此表格提供各項活動的每月總數，以及各項活動的使用中使用者計數。
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
@@ -175,19 +175,19 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
    
 ### <a name="data-table---tenant-mailbox-usage"></a>資料表格 - 租用戶信箱使用量
 
-此表格是由擁有使用者信箱之所有授權 Exchange Online 使用者的摘要資料所組成。其中包含所有使用者信箱的月底狀態。此表格在多個月份內的資料不具有累計性。此表格中最新月份的資料代表最新的狀態。
+此表格是由具有使用者信箱之所有授權 Exchange Online 使用者的摘要資料所組成。 其中包含所有使用者信箱的月底狀態。 此表格在多個月份內的資料不具有累計性。 此表格中最新月份的資料代表最新的狀態。
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
 |TotalMailboxes  <br/> |Microsoft 365 訂閱的使用者信箱數目。  <br/> |
-|IssueWarningQuota  <br/> |在所有使用者信箱中發出警告的配額總計。  <br/> |
+|IssueWarningQuota  <br/> |在所有使用者信箱中發出警告的總配額。  <br/> |
 |ProhibitSendQuota  <br/> |在所有使用者信箱中禁止傳送的配額總計。  <br/> |
 |ProhibitSendReceiveQuota  <br/> |在所有使用者信箱中禁止傳送接收配額的配額總計。  <br/> |
 |TotalItemBytes  <br/> |所有使用者信箱所使用的儲存空間量 (以位元組為單位)。  <br/> |
 |MailboxesNoWarning  <br/> |在儲存空間警告限制之下的使用者信箱數目。  <br/> |
 |MailboxesIssueWarning  <br/> |針對儲存空間配額發出警告的使用者信箱數目。  <br/> |
 |MailboxesExceedSendQuota  <br/> |已超過傳送配額的使用者信箱數目。  <br/> |
-|MailboxesExceedSendReceiveQuota  <br/> |已超過傳送/接收配額的使用者信箱數目。  <br/> |
+|MailboxesExceedSendReceiveQuota  <br/> |超過傳送/接收配額的使用者信箱數目。  <br/> |
 |DeletedMailboxes  <br/> |在時間範圍內刪除的使用者信箱數目。  <br/> |
 |Timeframe  <br/> |月份值。  <br/> |
 |Content Date  <br/> |如果時間範圍顯示目前月份，此值將代表資料在目前月份可供使用的最晚日期。  <br/> 如果時間範圍顯示上個月，此值將代表時間範圍月份的最後一個日期。  <br/> |
@@ -198,7 +198,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
-|產品  <br/> |Microsoft 365 內可用用戶端使用方式資料的產品名稱。  <br/> |
+|Product  <br/> |Microsoft 365 內可用用戶端使用方式資料的產品名稱。  <br/> |
 |ClientId  <br/> |用來連線至產品之每個裝置的名稱。  <br/> |
 |UserCount  <br/> |使用每個產品適用之每個用戶端的使用者數目。  <br/> |
 |Timeframe  <br/> |月份值  <br/> |
@@ -206,7 +206,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
    
 ### <a name="data-table---tenant-sharepoint-online-usage"></a>資料表格 - 租用戶 SharePoint Online 使用量
 
-此表格包含 SharePoint Online 網站使用量或活動的每月相關摘要資料。這只涵蓋小組網站與群組網站。SharePoint Online 網站的月底狀態會在此欄中表示，例如，如果使用者建立了 5 個文件，並使用 10 MB 做為總儲存空間，然後刪除一些檔案，並新增其他檔案，如此檔案的月底狀態總計為 7 (使用 5 MB 的儲存空間)，則此表格中所表示的值就是月底狀態。系統會隱藏此表格以避免重複計算彙總，並當做建立兩個參照表格的來源使用。
+此表格包含 SharePoint Online 網站使用量或活動的每月相關摘要資料。 這只涵蓋小組網站與群組網站。 SharePoint Online 網站的 month 狀態的結束點會以此欄位表示，例如，如果使用者建立了五個檔，並使用 10 MB 來儲存總儲存體，然後刪除部分檔案，並新增更多的檔案，讓檔案的月末狀態為使用五 MB 儲存體的7個，則此表格中所表示的值就是月底的狀態。 系統會隱藏此表格以避免重複計算彙總，並當做建立兩個參照表格的來源使用。
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
@@ -214,7 +214,7 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |TotalSites  <br/> |在時間範圍結束時存在的網站數目。  <br/> |
 |DocumentCount  <br/> |在時間範圍結束時存在網站上的文件總數。  <br/> |
 |Diplansed  <br/> |在時間範圍結束時，所有網站上加總的已使用儲存空間總計。  <br/> |
-|ActivityType  <br/> |記錄各種類型檔案活動 (任何/作用中的檔案/共用 EXT 的檔案/INT/同步處理的檔案) 的網站數目。  <br/> 任何都可以代表所執行的任何檔案活動。  <br/> |
+|ActivityType  <br/> |記錄各種類型檔案活動 (任何/作用中的檔案/共用 EXT 的檔案/INT/同步處理的檔案) 的網站數目。  <br/> 代表所執行的任何檔案活動。  <br/> |
 |SitesWithOwnerActivities  <br/> |作用中網站的數目，其中網站擁有者會在自己的網站上執行特定的檔案活動。  <br/> |
 |SitesWithNonOwnerActivities  <br/> |整個月加總的作用中網站數目，其中網站擁有者以外的使用者會在網站上執行特定的檔案活動。  <br/> |
 |ActivityTotalSites  <br/> |在時間範圍期間記錄任何活動的網站數目。如果網站的活動在時間範圍內稍早的時候，而且在時間範圍結束時遭到刪除，則仍然會將該網站計入該時間範圍內的作用中網站總數。  <br/> |
@@ -223,14 +223,14 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
    
 ### <a name="data-table---tenant-onedrive-usage"></a>資料表格-租使用者 OneDrive 使用方式
 
-此表格提供 OneDrive 帳戶的相關資料，例如，帳戶數目、OneDrive 帳戶上的文件數目、所使用的儲存空間、依活動類型計算的檔案計數。商務用 OneDrive 帳戶的月底狀態會在此表格中表示。例如，如果使用者建立了使用 10 MB 儲存空間的 5 個文件，然後刪除一些檔案，並新增其他檔案，如此該使用者在月底有 7 個使用 5 MB 儲存空間的檔案，則此表格會在月底表示月底值。
+此表格提供 OneDrive 帳戶的相關資料，例如，帳戶數目、OneDrive 帳戶上的文件數目、所使用的儲存空間、依活動類型計算的檔案計數。 商務用 OneDrive 帳戶的月底狀態會在此表格中表示。 例如，如果使用者建立了五個使用 10 MB 儲存區的檔，然後刪除少量的檔案，然後再新增一些檔案，使其在月末會有七個使用五 MB 儲存空間的檔案，則在當月結束時，此表格中會呈現 month 值的結尾。
   
 |**欄名稱**|**欄描述**|
 |:-----|:-----|
 |SiteType  <br/> |值為 "OneDrive"。  <br/> |
 |TotalSites  <br/> |在時間範圍結束時存在的商務用 OneDrive 帳戶數目。  <br/> |
 |DocumentCount  <br/> |在時間範圍結束時，所有商務用 OneDrive 帳戶上存在的文件總數。  <br/> |
-|Diplansed  <br/> |在時間範圍結束時，所有 OneDrive 帳戶上加總的已使用儲存空間總計。  <br/> |
+|Diplansed  <br/> |在時間範圍結束時，所有 OneDrive 帳戶總使用的儲存空間總計。  <br/> |
 |ActivityType  <br/> |記錄各種類型檔案活動 (任何/作用中的檔案/共用 EXT 的檔案/INT/同步處理的檔案) 的帳戶數目。  <br/> 任何都可以代表所執行的任何檔案活動  <br/> |
 |SitesWithOwnerActivities  <br/> |作用中商務用 OneDrive 帳戶的數目，其中帳戶擁有者會在自己的帳戶上執行特定的檔案活動。  <br/> |
 |SitesWithNonOwnerActivities  <br/> |商務用 OneDrive 帳戶的計數，其中帳戶擁有者以外的使用者會在其上執行檔案活動。  <br/> |

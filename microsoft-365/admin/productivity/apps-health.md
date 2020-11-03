@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 應用程式健康情況技術經驗的詳細資料。
-ms.openlocfilehash: 4242a9b665bc7292232cc15ee0f1ec37915fb1ac
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 9497118f4ebfb1cb2b64670638ce939da21eb261
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804766"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841186"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 應用程式健康情況–技術經驗
 
-生產力分數可協助組織使用有關人員如何使用 Microsoft 365 應用程式和支援技術經驗的衡量方式，來變換工作的運作方式。 分數會反映您的組織&#39;人員和技術經驗類別的效能，並將您的分數與像您的組織相比較。 「團隊合作」類別是「人員經驗」的一部分度量。 若要深入瞭解，請參閱 [生產力評分一覽](productivity-score.md) 。
+生產力分數可協助組織使用有關人員如何使用 Microsoft 365 應用程式和支援技術經驗的衡量方式，來變換工作的運作方式。 分數會反映您的組織&#39;人員和技術經驗類別的效能，並將您的分數與像您的組織相比較。 [應用程式健康情況] 類別是位於 [人員經驗] 底下的度量部分。 若要深入瞭解，請參閱 [生產力評分一覽](productivity-score.md) 。
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>為什麼您的組織&#39;Microsoft 365 應用程式健康情況評分問題
 

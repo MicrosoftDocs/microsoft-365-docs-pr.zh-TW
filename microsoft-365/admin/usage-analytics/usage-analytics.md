@@ -19,21 +19,20 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 深入瞭解您的組織如何採用 Microsoft 365 服務來進行通訊及共同作業。
-ms.openlocfilehash: fecaed3aa9fc2d0990cb3e7b416cee1bfab21d7e
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d7e9e6cf945134df54221bb8a03ef83d1a8851cc
+ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948625"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841384"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析
----
 
 ## <a name="overview-of-microsoft-365-usage-analytics"></a>Microsoft 365 使用情況分析概觀
 
-使用 Power BI 中的 Microsoft 365 流量分析，深入瞭解貴組織如何採用 Microsoft 365 中的各種服務，以進行通訊及共同作業。 您可以視覺化和分析 Microsoft 365 使用狀況資料、建立自訂報告和分享組織內的洞察力，以及深入瞭解特定地區或部門如何利用 Microsoft 365。
+使用 Power BI 中的 Microsoft 365 流量分析，深入瞭解貴組織如何採用 Microsoft 365 中的各種服務。 您可以視覺化和分析 Microsoft 365 使用狀況資料、建立自訂報告，以及分享組織內的洞察力。 您也可以深入瞭解特定地區或部門如何使用 Microsoft 365。
   
-Microsoft 365 流量分析是一種範本應用程式，可讓您存取預先構建的儀表板，該儀表板提供最近12個月的叉積視圖，並包含許多預先建立的報告。 每個報告都可提供特定的使用情況深入解析。 可針對過去的完整曆月提供特定使用者的資訊。
+Microsoft 365 流量分析可讓您存取預先構建的儀表板，該儀表板提供最近12個月的叉積視圖，並包含許多預先建立的報告。 每個報告都可提供特定的使用情況深入解析。 使用者特有的資訊可用於最近的完整行事曆月份。
   
 為範本應用程式供電的 [資料模型](usage-analytics-data-model.md) 包含 Active Directory 中的使用者屬性，可讓您在特定報告中進行 pivot 的功能。 包含下列 Active Directory 屬性：位置、部門和組織。 
   
@@ -41,7 +40,7 @@ Microsoft 365 流量分析是一種範本應用程式，可讓您存取預先構
   
 Microsoft 365 流量分析包含下列各節所詳述的報表數目。 
 
-您可以選取資料表格，以存取每個區域的詳細報告。 您可以在查看報告之後，透過選取網站底部的索引標籤來查看所有預先建立的報告。 如需詳細指示，請參閱 [在 microsoft 365 流量分析中流覽及使用報告](navigate-and-utilize-reports.md) ，並 [在 microsoft 365 使用方式分析中自訂報告](customize-reports.md)。
+您可以選取資料表格，以存取每個區域的詳細報告。 您可以選取網站底部的索引標籤，以查看所有預先建立的報告。 如需詳細指示，請參閱 [流覽並使用報表](navigate-and-utilize-reports.md) 及 [自訂報告](customize-reports.md)。
 
 ## <a name="executive-summary"></a>摘要
 
@@ -61,7 +60,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 - **通訊** &ndash; 您可以立即查看組織中的人員是否喜歡使用團隊、Yammer、電子郵件或 Skype 通話保持聯繫。 您可以觀察您的員工在使用通訊工具時，是否有變化的模式。 
 
-- 共同作業**Collaboration** &ndash;請參閱貴組織中的人員如何使用 OneDrive 和 SharePoint 來儲存檔，以及彼此共同作業，以及這些趨勢如何隨月演變。 您也可以查看內部或外部共用的檔數量，以及正在使用的 SharePoint 網站或 OneDrive 帳戶數目，由擁有者及其他合作者分割。
+- 共同作業 **Collaboration** &ndash;請參閱貴組織中的人員如何使用 OneDrive 和 SharePoint 來儲存檔，以及彼此共同作業，以及這些趨勢如何隨月演變。 您也可以查看內部或外部共用的檔數量，以及正在使用的 SharePoint 網站或 OneDrive 帳戶數目，由擁有者及其他合作者分割。
 
 - **儲存空間** &ndash; 使用此報告可追蹤信箱、OneDrive 和 SharePoint 網站的雲端儲存空間。
 
@@ -93,7 +92,7 @@ Microsoft 365 綜述報告包含下列報告。 您可以選擇報表頁面上�
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>誰可以連線到 Microsoft 365 使用情況分析？
 
-您必須是 **全域系統管理員**、Exchange 系統 **管理員**、 **商務用 Skype**系統管理員、 **SharePoint 系統管理員**、 **全域讀取器** 或 **報告讀取器** ，才能建立與範本應用程式的連線。 如需詳細資訊，請參閱 [關於系統管理員角色](../add-users/about-admin-roles.md) 。
+您必須是 **全域系統管理員** 、Exchange 系統 **管理員** 、 **商務用 Skype** 系統管理員、 **SharePoint 系統管理員** 、 **全域讀取器** 或 **報告讀取器** ，才能建立與範本應用程式的連線。 如需詳細資訊，請參閱 [關於系統管理員角色](../add-users/about-admin-roles.md) 。
 
 ### <a name="who-can-customize-the-usage-analytics-reports"></a>誰可以自訂使用方式分析報告？
 
