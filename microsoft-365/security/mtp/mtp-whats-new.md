@@ -19,25 +19,25 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 82b79389420520c637b0b526c178e515c6c54cd1
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1765210cc9d67d66c7a1eb830b4dd79f9b2f1898
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201012"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843597"
 ---
-# <a name="whats-new-in-microsoft-365-security"></a><span data-ttu-id="22b47-104">Microsoft 365 安全性的新功能</span><span class="sxs-lookup"><span data-stu-id="22b47-104">What's new in Microsoft 365 Security</span></span>
+# <a name="whats-new-in-microsoft-365-security"></a><span data-ttu-id="76b4a-104">Microsoft 365 安全性的新功能</span><span class="sxs-lookup"><span data-stu-id="76b4a-104">What's new in Microsoft 365 Security</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="22b47-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="22b47-105">**Applies to:**</span></span>
-- <span data-ttu-id="22b47-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="22b47-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="76b4a-105">**適用於：**</span><span class="sxs-lookup"><span data-stu-id="76b4a-105">**Applies to:**</span></span>
+- <span data-ttu-id="76b4a-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="76b4a-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="22b47-107">本主題涵蓋最新版 Microsoft 365 安全性中正式提供 (GA) 的功能。</span><span class="sxs-lookup"><span data-stu-id="22b47-107">This topic will cover capabilities that are generally available (GA) in the latest release of Microsoft 365 Security.</span></span> 
+<span data-ttu-id="76b4a-107">本主題涵蓋最新版 Microsoft 365 安全性中正式提供 (GA) 的功能。</span><span class="sxs-lookup"><span data-stu-id="76b4a-107">This topic will cover capabilities that are generally available (GA) in the latest release of Microsoft 365 Security.</span></span> 
 
-<span data-ttu-id="22b47-108">如需預覽功能的詳細資訊，請參閱 [預覽功能](mtp-preview.md)</span><span class="sxs-lookup"><span data-stu-id="22b47-108">For more information on preview features, see [Preview features](mtp-preview.md)</span></span>
+<span data-ttu-id="76b4a-108">如需預覽功能的詳細資訊，請參閱 [預覽功能](mtp-preview.md)</span><span class="sxs-lookup"><span data-stu-id="76b4a-108">For more information on preview features, see [Preview features](mtp-preview.md)</span></span>
 
 

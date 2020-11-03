@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 威脅防護中對高級搜尋查詢結果採取動作
+title: 在 Microsoft 365 Defender 中對高級搜尋查詢結果採取動作
 description: 在您的高級搜尋查詢結果中快速處理威脅與受影響的資產
 keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、採取動作
 search.product: eADQiWindows 10XVcnh
@@ -19,68 +19,68 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7250feffa69cc1a6cc37908a599dff0fab6c5e6c
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 506af82ec08ad6cd8dbeece5c1c2741e09e4817a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429647"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48842461"
 ---
-# <a name="take-action-on-advanced-hunting-query-results"></a><span data-ttu-id="4ae0a-104">對高級搜尋查詢結果採取動作</span><span class="sxs-lookup"><span data-stu-id="4ae0a-104">Take action on advanced hunting query results</span></span>
+# <a name="take-action-on-advanced-hunting-query-results"></a><span data-ttu-id="c7d1d-104">對高級搜尋查詢結果採取動作</span><span class="sxs-lookup"><span data-stu-id="c7d1d-104">Take action on advanced hunting query results</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="4ae0a-105">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="4ae0a-105">**Applies to:**</span></span>
-- <span data-ttu-id="4ae0a-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="4ae0a-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="c7d1d-105">適用於：</span><span class="sxs-lookup"><span data-stu-id="c7d1d-105">**Applies to:**</span></span>
+- <span data-ttu-id="c7d1d-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c7d1d-106">Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-<span data-ttu-id="4ae0a-107">您可以使用強大且全面的動作選項，快速包含威脅或使用您在 [高級搜尋](advanced-hunting-overview.md) 中所發現的受損資產。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-107">You can quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md) using powerful and comprehensive action options.</span></span> <span data-ttu-id="4ae0a-108">使用這些選項，您可以：</span><span class="sxs-lookup"><span data-stu-id="4ae0a-108">With these options, you can:</span></span>
+<span data-ttu-id="c7d1d-107">您可以使用強大且全面的動作選項，快速包含威脅或使用您在 [高級搜尋](advanced-hunting-overview.md) 中所發現的受損資產。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-107">You can quickly contain threats or address compromised assets that you find in [advanced hunting](advanced-hunting-overview.md) using powerful and comprehensive action options.</span></span> <span data-ttu-id="c7d1d-108">使用這些選項，您可以：</span><span class="sxs-lookup"><span data-stu-id="c7d1d-108">With these options, you can:</span></span>
 
-- <span data-ttu-id="4ae0a-109">在裝置上執行各種動作</span><span class="sxs-lookup"><span data-stu-id="4ae0a-109">Take various actions on devices</span></span>
-- <span data-ttu-id="4ae0a-110">隔離檔</span><span class="sxs-lookup"><span data-stu-id="4ae0a-110">Quarantine files</span></span>
+- <span data-ttu-id="c7d1d-109">在裝置上執行各種動作</span><span class="sxs-lookup"><span data-stu-id="c7d1d-109">Take various actions on devices</span></span>
+- <span data-ttu-id="c7d1d-110">隔離檔</span><span class="sxs-lookup"><span data-stu-id="c7d1d-110">Quarantine files</span></span>
 
-## <a name="required-permissions"></a><span data-ttu-id="4ae0a-111">必要的權限</span><span class="sxs-lookup"><span data-stu-id="4ae0a-111">Required permissions</span></span>
-<span data-ttu-id="4ae0a-112">若要能夠透過「高級搜尋」採取行動，您必須在 Microsoft Defender ATP 中有一個角色，具有 [在裝置上提交修正動作的許可權](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-112">To be able to take action through advanced hunting, you need a role in Microsoft Defender ATP with [permissions to submit remediation actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options).</span></span> <span data-ttu-id="4ae0a-113">如果您無法採取行動，請洽詢全域管理員以取得下列許可權：</span><span class="sxs-lookup"><span data-stu-id="4ae0a-113">If you can't take action, contact a global administrator about getting the following permission:</span></span>
+## <a name="required-permissions"></a><span data-ttu-id="c7d1d-111">必要的權限</span><span class="sxs-lookup"><span data-stu-id="c7d1d-111">Required permissions</span></span>
+<span data-ttu-id="c7d1d-112">若要能夠透過「高級搜尋」採取行動，您必須在 Microsoft Defender for Endpoint 中有一個角色，具有 [在裝置上提交修正動作的許可權](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options)。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-112">To be able to take action through advanced hunting, you need a role in Microsoft Defender for Endpoint with [permissions to submit remediation actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options).</span></span> <span data-ttu-id="c7d1d-113">如果您無法採取行動，請洽詢全域管理員以取得下列許可權：</span><span class="sxs-lookup"><span data-stu-id="c7d1d-113">If you can't take action, contact a global administrator about getting the following permission:</span></span>
 
-<span data-ttu-id="4ae0a-114">*使用中修復的動作 > 威脅和弱點管理-修正處理*</span><span class="sxs-lookup"><span data-stu-id="4ae0a-114">*Active remediation actions > Threat and vulnerability management - Remediation handling*</span></span>
+<span data-ttu-id="c7d1d-114">*使用中修復的動作 > 威脅和弱點管理-修正處理*</span><span class="sxs-lookup"><span data-stu-id="c7d1d-114">*Active remediation actions > Threat and vulnerability management - Remediation handling*</span></span>
 
-## <a name="take-various-actions-on-devices"></a><span data-ttu-id="4ae0a-115">在裝置上執行各種動作</span><span class="sxs-lookup"><span data-stu-id="4ae0a-115">Take various actions on devices</span></span>
-<span data-ttu-id="4ae0a-116">您可以在查詢結果中對欄所識別的裝置採取下列動作 `DeviceId` ：</span><span class="sxs-lookup"><span data-stu-id="4ae0a-116">You can take the following actions on devices identified by the `DeviceId` column in you query results:</span></span>
+## <a name="take-various-actions-on-devices"></a><span data-ttu-id="c7d1d-115">在裝置上執行各種動作</span><span class="sxs-lookup"><span data-stu-id="c7d1d-115">Take various actions on devices</span></span>
+<span data-ttu-id="c7d1d-116">您可以在查詢結果中對欄所識別的裝置採取下列動作 `DeviceId` ：</span><span class="sxs-lookup"><span data-stu-id="c7d1d-116">You can take the following actions on devices identified by the `DeviceId` column in you query results:</span></span>
 
-- <span data-ttu-id="4ae0a-117">隔離受影響的裝置以包含感染或防止攻擊移動橫向</span><span class="sxs-lookup"><span data-stu-id="4ae0a-117">Isolate affected devices to contain an infection or prevent attacks from moving laterally</span></span>
-- <span data-ttu-id="4ae0a-118">收集調查套件以取得更多鑒證資訊</span><span class="sxs-lookup"><span data-stu-id="4ae0a-118">Collect investigation package to obtain more forensic information</span></span>
-- <span data-ttu-id="4ae0a-119">執行防病毒掃描，以利用最新的安全性情報更新來尋找並移除威脅</span><span class="sxs-lookup"><span data-stu-id="4ae0a-119">Run an antivirus scan to find and remove threats using the latest security intelligence updates</span></span>
-- <span data-ttu-id="4ae0a-120">啟動自動調查以檢查和修正裝置上的威脅，以及可能受影響的裝置</span><span class="sxs-lookup"><span data-stu-id="4ae0a-120">Initiate an automated investigation to check and remediate threats on the device and possibly other affected devices</span></span>
-- <span data-ttu-id="4ae0a-121">將應用程式執行限制為僅限 Microsoft 簽署的可執行檔，以透過惡意程式碼或其他不可信的可執行檔進行後續的威脅</span><span class="sxs-lookup"><span data-stu-id="4ae0a-121">Restrict app execution to only Microsoft-signed executable files, preventing subsequent threat activity through malware or other untrusted executables</span></span>
+- <span data-ttu-id="c7d1d-117">隔離受影響的裝置以包含感染或防止攻擊移動橫向</span><span class="sxs-lookup"><span data-stu-id="c7d1d-117">Isolate affected devices to contain an infection or prevent attacks from moving laterally</span></span>
+- <span data-ttu-id="c7d1d-118">收集調查套件以取得更多鑒證資訊</span><span class="sxs-lookup"><span data-stu-id="c7d1d-118">Collect investigation package to obtain more forensic information</span></span>
+- <span data-ttu-id="c7d1d-119">執行防病毒掃描，以利用最新的安全性情報更新來尋找並移除威脅</span><span class="sxs-lookup"><span data-stu-id="c7d1d-119">Run an antivirus scan to find and remove threats using the latest security intelligence updates</span></span>
+- <span data-ttu-id="c7d1d-120">啟動自動調查以檢查和修正裝置上的威脅，以及可能受影響的裝置</span><span class="sxs-lookup"><span data-stu-id="c7d1d-120">Initiate an automated investigation to check and remediate threats on the device and possibly other affected devices</span></span>
+- <span data-ttu-id="c7d1d-121">將應用程式執行限制為僅限 Microsoft 簽署的可執行檔，以透過惡意程式碼或其他不可信的可執行檔進行後續的威脅</span><span class="sxs-lookup"><span data-stu-id="c7d1d-121">Restrict app execution to only Microsoft-signed executable files, preventing subsequent threat activity through malware or other untrusted executables</span></span>
 
-<span data-ttu-id="4ae0a-122">若要深入瞭解這些回應動作如何透過 Microsoft Defender ATP 執行，請 [閱讀裝置上的回應動作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-122">To learn more about how these response actions are performed through Microsoft Defender ATP, [read about response actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).</span></span>
+<span data-ttu-id="c7d1d-122">若要深入瞭解如何透過 Microsoft Defender for Endpoint 執行這些回應動作，請 [閱讀裝置上的回應動作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-122">To learn more about how these response actions are performed through Microsoft Defender for Endpoint, [read about response actions on devices](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts).</span></span>
    
-## <a name="quarantine-files"></a><span data-ttu-id="4ae0a-123">隔離檔</span><span class="sxs-lookup"><span data-stu-id="4ae0a-123">Quarantine files</span></span>
-<span data-ttu-id="4ae0a-124">您可以在檔案上部署 *隔離* 動作，使其在遇到時自動隔離。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-124">You can deploy the *quarantine* action on files so that they are automatically quarantined when encountered.</span></span> <span data-ttu-id="4ae0a-125">選取此動作時，您可以選擇下列各欄，以識別要隔離的查詢結果中的檔案：</span><span class="sxs-lookup"><span data-stu-id="4ae0a-125">When selecting this action, you can choose between the following columns to identify which files in your query results to quarantine:</span></span>
+## <a name="quarantine-files"></a><span data-ttu-id="c7d1d-123">隔離檔</span><span class="sxs-lookup"><span data-stu-id="c7d1d-123">Quarantine files</span></span>
+<span data-ttu-id="c7d1d-124">您可以在檔案上部署 *隔離* 動作，使其在遇到時自動隔離。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-124">You can deploy the *quarantine* action on files so that they are automatically quarantined when encountered.</span></span> <span data-ttu-id="c7d1d-125">選取此動作時，您可以選擇下列各欄，以識別要隔離的查詢結果中的檔案：</span><span class="sxs-lookup"><span data-stu-id="c7d1d-125">When selecting this action, you can choose between the following columns to identify which files in your query results to quarantine:</span></span>
 
-- <span data-ttu-id="4ae0a-126">`SHA1` —在大多數高級搜尋表格中，這是受錄製動作所影響的檔案 SHA-1。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-126">`SHA1` — In most advanced hunting tables, this is the SHA-1 of the file that was affected by the recorded action.</span></span> <span data-ttu-id="4ae0a-127">例如，如果複製檔案，這會是複製的檔案。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-127">For example, if a file was copied, this would be the copied file.</span></span>
-- <span data-ttu-id="4ae0a-128">`InitiatingProcessSHA1` —在大多數高級搜尋表格中，這是負責初始化錄製的動作的檔案。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-128">`InitiatingProcessSHA1` — In most advanced hunting tables, this is the file responsible for initiating the recorded action.</span></span> <span data-ttu-id="4ae0a-129">例如，如果子流程已啟動，這會是父進程。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-129">For example, if a child process was launched, this would be the parent process.</span></span> 
-- <span data-ttu-id="4ae0a-130">`SHA256` -這是欄所識別之檔案的 SHA-256 對等專案 `SHA1` 。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-130">`SHA256` — This is the SHA-256 equivalent of the file identified by the `SHA1` column.</span></span>
-- <span data-ttu-id="4ae0a-131">`InitiatingProcessSHA256` -這是欄所識別之檔案的 SHA-256 對等專案 `InitiatingProcessSHA1` 。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-131">`InitiatingProcessSHA256` — This is the SHA-256 equivalent of the file identified by the `InitiatingProcessSHA1` column.</span></span>
+- <span data-ttu-id="c7d1d-126">`SHA1` —在大多數高級搜尋表格中，這是受錄製動作所影響的檔案 SHA-1。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-126">`SHA1` — In most advanced hunting tables, this is the SHA-1 of the file that was affected by the recorded action.</span></span> <span data-ttu-id="c7d1d-127">例如，如果複製檔案，這會是複製的檔案。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-127">For example, if a file was copied, this would be the copied file.</span></span>
+- <span data-ttu-id="c7d1d-128">`InitiatingProcessSHA1` —在大多數高級搜尋表格中，這是負責初始化錄製的動作的檔案。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-128">`InitiatingProcessSHA1` — In most advanced hunting tables, this is the file responsible for initiating the recorded action.</span></span> <span data-ttu-id="c7d1d-129">例如，如果子流程已啟動，這會是父進程。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-129">For example, if a child process was launched, this would be the parent process.</span></span> 
+- <span data-ttu-id="c7d1d-130">`SHA256` -這是欄所識別之檔案的 SHA-256 對等專案 `SHA1` 。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-130">`SHA256` — This is the SHA-256 equivalent of the file identified by the `SHA1` column.</span></span>
+- <span data-ttu-id="c7d1d-131">`InitiatingProcessSHA256` -這是欄所識別之檔案的 SHA-256 對等專案 `InitiatingProcessSHA1` 。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-131">`InitiatingProcessSHA256` — This is the SHA-256 equivalent of the file identified by the `InitiatingProcessSHA1` column.</span></span>
 
-<span data-ttu-id="4ae0a-132">若要深入瞭解如何採取隔離動作和還原檔案，請 [參閱檔案的回應動作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts)。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-132">To learn more about how quarantine actions are taken and how files can be restored, [read about response actions on files](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).</span></span>
+<span data-ttu-id="c7d1d-132">若要深入瞭解如何採取隔離動作和還原檔案，請 [參閱檔案的回應動作](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts)。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-132">To learn more about how quarantine actions are taken and how files can be restored, [read about response actions on files](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts).</span></span>
 
 >[!NOTE]
-><span data-ttu-id="4ae0a-133">若要尋找並隔離檔案，查詢結果也應包含 `DeviceId` 設備識別碼的值。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-133">To locate files and quarantine them, the query results should also include `DeviceId` values as device identifiers.</span></span>  
+><span data-ttu-id="c7d1d-133">若要尋找並隔離檔案，查詢結果也應包含 `DeviceId` 設備識別碼的值。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-133">To locate files and quarantine them, the query results should also include `DeviceId` values as device identifiers.</span></span>  
 
-## <a name="take-action"></a><span data-ttu-id="4ae0a-134">採取動作</span><span class="sxs-lookup"><span data-stu-id="4ae0a-134">Take action</span></span>
-<span data-ttu-id="4ae0a-135">若要採取任何說明的動作，請在查詢結果中選取一或多筆記錄，然後選取 [ **採取動作**]。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-135">To take any of the described actions, select one or more records in your query results and then select **Take actions**.</span></span> <span data-ttu-id="4ae0a-136">嚮導會引導您完成選取及提交您偏好動作的程式。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-136">A wizard will guide you through the process of selecting and then submitting your preferred actions.</span></span>
+## <a name="take-action"></a><span data-ttu-id="c7d1d-134">採取動作</span><span class="sxs-lookup"><span data-stu-id="c7d1d-134">Take action</span></span>
+<span data-ttu-id="c7d1d-135">若要採取任何說明的動作，請在查詢結果中選取一或多筆記錄，然後選取 [ **採取動作** ]。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-135">To take any of the described actions, select one or more records in your query results and then select **Take actions**.</span></span> <span data-ttu-id="c7d1d-136">嚮導會引導您完成選取及提交您偏好動作的程式。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-136">A wizard will guide you through the process of selecting and then submitting your preferred actions.</span></span>
 
 ![具有檢查記錄之面板之選取記錄的影像](../../media/mtp-ah/ah-take-actions.png)
 
-## <a name="review-actions-taken"></a><span data-ttu-id="4ae0a-138">審閱採取的動作</span><span class="sxs-lookup"><span data-stu-id="4ae0a-138">Review actions taken</span></span>
-<span data-ttu-id="4ae0a-139">每個動作會個別記錄在「**動作中心**」的「動作中心」下的「動作[中心](mtp-action-center.md)」  >  **History** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)) 。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-139">Each action is individually recorded in the [action center](mtp-action-center.md) under **Action center** > **History** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)).</span></span> <span data-ttu-id="4ae0a-140">移至 [行動中心]，檢查每個動作的狀態。</span><span class="sxs-lookup"><span data-stu-id="4ae0a-140">Go to the action center to check the status of each action.</span></span>
+## <a name="review-actions-taken"></a><span data-ttu-id="c7d1d-138">審閱採取的動作</span><span class="sxs-lookup"><span data-stu-id="c7d1d-138">Review actions taken</span></span>
+<span data-ttu-id="c7d1d-139">每個動作會個別記錄在「 **動作中心** 」的「動作中心」下的「動作 [中心](mtp-action-center.md)」  >  **History** ( [security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)) 。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-139">Each action is individually recorded in the [action center](mtp-action-center.md) under **Action center** > **History** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)).</span></span> <span data-ttu-id="c7d1d-140">移至 [行動中心]，檢查每個動作的狀態。</span><span class="sxs-lookup"><span data-stu-id="c7d1d-140">Go to the action center to check the status of each action.</span></span>
  
-## <a name="related-topics"></a><span data-ttu-id="4ae0a-141">相關主題</span><span class="sxs-lookup"><span data-stu-id="4ae0a-141">Related topics</span></span>
-- [<span data-ttu-id="4ae0a-142">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="4ae0a-142">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="4ae0a-143">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="4ae0a-143">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="4ae0a-144">使用查詢結果工作</span><span class="sxs-lookup"><span data-stu-id="4ae0a-144">Work with query results</span></span>](advanced-hunting-query-results.md)
-- [<span data-ttu-id="4ae0a-145">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="4ae0a-145">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="4ae0a-146">行動中心概述</span><span class="sxs-lookup"><span data-stu-id="4ae0a-146">Action center overview</span></span>](mtp-action-center.md)
+## <a name="related-topics"></a><span data-ttu-id="c7d1d-141">相關主題</span><span class="sxs-lookup"><span data-stu-id="c7d1d-141">Related topics</span></span>
+- [<span data-ttu-id="c7d1d-142">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="c7d1d-142">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="c7d1d-143">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="c7d1d-143">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="c7d1d-144">使用查詢結果工作</span><span class="sxs-lookup"><span data-stu-id="c7d1d-144">Work with query results</span></span>](advanced-hunting-query-results.md)
+- [<span data-ttu-id="c7d1d-145">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="c7d1d-145">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="c7d1d-146">行動中心概述</span><span class="sxs-lookup"><span data-stu-id="c7d1d-146">Action center overview</span></span>](mtp-action-center.md)
