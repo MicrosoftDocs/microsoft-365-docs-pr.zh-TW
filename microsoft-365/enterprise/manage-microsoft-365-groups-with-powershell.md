@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: 在本文中，您將瞭解如何在 PowerShell 中執行 Microsoft 365 群組的常見管理工作。
-ms.openlocfilehash: c1aa551597644b7f41c3445a791ea27579464f7b
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 1cad2aa39a6b106cbb4dbfbafa995899b2442ed1
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277471"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830612"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>使用 PowerShell 管理 Microsoft 365 群組
 
@@ -114,7 +114,7 @@ New-UnifiedGroup <HighImpactGroup@constoso.com> -Classification <HighImpact> -Ac
 ## <a name="hide-microsoft-365-groups-from-the-global-address-list"></a>從全域通訊清單中隱藏 Microsoft 365 群組。
 <a name="BKMK_CreateClassification"> </a>
 
-您可以指定 Microsoft 365 群組是否會出現在全域通訊清單中 (GAL) 和組織中的其他清單。 例如，如果您有一個您不想要顯示在通訊清單中的法律部門群組，您可以停止該群組出現在 GAL 中。 執行設定整合群組 Cmdlet，以從通訊清單中隱藏群組，如下所示：
+您可以指定 Microsoft 365 群組是否會出現在全域通訊清單中 (GAL) 和組織中的其他清單。 例如，如果您有一個您不想要顯示在通訊清單中的法律部門群組，您可以停止該群組出現在 GAL 中。 執行 Set-Unified Group 資訊清單，以在通訊清單中隱藏群組，如下所示：
 
 ```powershell
 Set-UnifiedGroup -Identity "Legal Department" -HiddenFromAddressListsEnabled $true
@@ -136,7 +136,7 @@ Set-UnifiedGroup -Identity "Internal senders only" -RequireSenderAuthenticationE
 
 當寄件者嘗試將電子郵件傳送至 Microsoft 365 群組時，可能會向他們顯示 MailTip。
 
-執行設定整合群組 Cmdlet，將郵件提示新增至群組：
+執行 Set-Unified Group 指令，將郵件提示新增至群組：
 
 ```powershell
 Set-UnifiedGroup -Identity "MailTip Group" -MailTip "This group has a MailTip"
@@ -184,7 +184,7 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 |[新 Set-unifiedgroup](https://go.microsoft.com/fwlink/p/?LinkId=616183) <br/> |建立新的 Microsoft 365 群組。 此 Cmdlet 提供一組基本的參數。 若要設定擴充屬性的值，請在建立新群組之後使用 Set-UnifiedGroup  <br/> |
 |[Remove-UnifiedGroup](https://go.microsoft.com/fwlink/p/?LinkId=616186) <br/> |刪除現有的 Microsoft 365 群組  <br/> |
 |[UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616194) <br/> |取得 Microsoft 365 群組的成員資格及擁有者資訊  <br/> |
-|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |將成百上千的使用者或新的擁有者新增至現有的 Microsoft 365 群組  <br/> |
+|[Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191) <br/> |新增現有 Microsoft 365 群組的成員、擁有者及訂戶 <br/> |
 |[Remove-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616195) <br/> |從現有的 Microsoft 365 群組中移除擁有者和成員  <br/> |
 |[UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536510) <br/> |用來查看與帳戶相關聯之使用者相片的相關資訊。 使用者相片儲存在 Active Directory 中  <br/> |
 |[UserPhoto](https://go.microsoft.com/fwlink/p/?LinkId=536511) <br/> |用於將使用者相片與帳戶產生關聯。 使用者相片儲存在 Active Directory 中  <br/> |
@@ -194,7 +194,7 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 
 [將通訊群組清單升級至 Microsoft 365 群組](https://docs.microsoft.com/office365/admin/manage/upgrade-distribution-lists)
 
-[管理可建立 Microsoft 365 群組的人員](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
+[管理能建立 Microsoft 365 群組的使用者](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups)
 
 [管理 Microsoft 365 群組的來賓存取權](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 

@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 和 Office 365 高級威脅防護 (ATP) 中，套用標準和嚴格的原則設定
-ms.openlocfilehash: 8431d36779069b0b289a2533fbd6b85abee24536
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: a624d48944965c217fb8547e4f09da0ec388e615
+ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48326540"
+ms.lasthandoff: 11/02/2020
+ms.locfileid: "48830534"
 ---
 # <a name="preset-security-policies-in-eop-and-office-365-atp"></a>EOP 和 Office 365 ATP 中的預先設定安全性原則
 
@@ -44,46 +44,46 @@ ms.locfileid: "48326540"
 
 設定檔決定保護的層級。 可供使用的設定檔如下：
 
-- **標準保護**：適用于大多數使用者的基準保護設定檔。
-- **嚴格保護**：針對所選使用者的更為嚴格的保護設定檔 (高值目標或優先順序使用者) 。
+- **標準保護** ：適用于大多數使用者的基準保護設定檔。
+- **嚴格保護** ：針對所選使用者的更為嚴格的保護設定檔 (高值目標或優先順序使用者) 。
 
 您可以使用符合條件和例外狀況的規則，判斷哪些是設定檔或未套用至哪一個。
 
-您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<member of group 1\>_)。
+您只能使用一個條件或一個例外狀況，但可以為條件或例外狀況指定多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如， _\<recipient1\>_ 或 _\<recipient2\>_ )。 不同的條件或例外狀況則使用 AND 邏輯 (例如， _\<recipient1\>_ 和 _\<member of group 1\>_ )。
 
 可用的條件和例外狀況如下：
 
-- 收件者**是**：信箱、郵件使用者或您組織中的郵件連絡人。
-- 收件者屬於：您組織中**的群組的成員**。
-- **收件者網域為**：已在 Microsoft 365 中設定的公認網域。
+- 收件者 **是** ：信箱、郵件使用者或您組織中的郵件連絡人。
+- 收件者屬於：您組織中 **的群組的成員** 。
+- **收件者網域為** ：已在 Microsoft 365 中設定的公認網域。
 
 ### <a name="policies-in-preset-security-policies"></a>預先設定安全性原則中的原則
 
-預設的安全性原則使用 EOP 和 Office 365 ATP 中各種保護功能的對應原則。 在您指派**標準保護**或**嚴格保護**的預設安全性原則給使用者_之後_，就會建立這些原則。 您無法修改這些原則。
+預設的安全性原則使用 EOP 和 Office 365 ATP 中各種保護功能的對應原則。 在您指派 **標準保護** 或 **嚴格保護** 的預設安全性原則給使用者 _之後_ ，就會建立這些原則。 您無法修改這些原則。
 
-- **Exchange Online Protection (EOP) 原則**：這包括使用 exchange online 信箱的 Microsoft 365 組織和獨立 EOP 組織，但沒有 exchange online 信箱：
+- **Exchange Online Protection (EOP) 原則** ：這包括使用 exchange online 信箱的 Microsoft 365 組織和獨立 EOP 組織，但沒有 exchange online 信箱：
   
-  - 名為**Standard Standard Security policy** And **Strict Standard Security policy**的[反垃圾郵件原則](configure-your-spam-filter-policies.md)。
-  - 名為**Standard Standard Security policy** And **Strict Standard Security policy**的[反惡意程式碼原則](configure-anti-malware-policies.md)。
-  - EOP 欺騙設定) 的「**標準預先設定安全性原則**」和「**嚴格預設安全性 (原則**」[的反網路釣魚原則](set-up-anti-phishing-policies.md#spoof-settings)。
+  - 名為 **Standard Standard Security policy** And **Strict Standard Security policy** 的 [反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+  - 名為 **Standard Standard Security policy** And **Strict Standard Security policy** 的 [反惡意程式碼原則](configure-anti-malware-policies.md)。
+  - EOP 欺騙設定) 的「 **標準預先設定安全性原則** 」和「 **嚴格預設安全性 (原則** 」 [的反網路釣魚原則](set-up-anti-phishing-policies.md#spoof-settings)。
 
-- **Office 365 Advanced 威脅防護 (ATP) 原則**：這包括使用 Microsoft 365 E5 或 OFFICE 365 ATP 附加元件訂閱的組織：
+- **Office 365 Advanced 威脅防護 (ATP) 原則** ：這包括使用 Microsoft 365 E5 或 OFFICE 365 ATP 附加元件訂閱的組織：
 
-  - 名為 **Standard Standard Security policy** And **Strict Standard SECURITY policy**的 ATP 反網路釣魚原則，其中包括：
+  - 名為 **Standard Standard Security policy** And **Strict Standard SECURITY policy** 的 ATP 反網路釣魚原則，其中包括：
 
     - EOP 反網路釣魚原則中提供的相同 [欺騙設定](set-up-anti-phishing-policies.md#spoof-settings) 。
     - [類比設定](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)
     - [高級網路釣魚臨界值](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies)
 
-  - 名為**Standard Standard Security policy** and Strict Standard **Security Policy**的[安全連結原則](set-up-atp-safe-links-policies.md)。
+  - 名為 **Standard Standard Security policy** and Strict Standard **Security Policy** 的 [安全連結原則](set-up-atp-safe-links-policies.md)。
 
-  - 名為**Standard Standard Security policy** and Strict Standard **Security Policy**的[安全附件原則](set-up-atp-safe-attachments-policies.md)。
+  - 名為 **Standard Standard Security policy** and Strict Standard **Security Policy** 的 [安全附件原則](set-up-atp-safe-attachments-policies.md)。
 
 請注意，您可以將 EOP 防護套用至不同的使用者，而不是 ATP 防護。
 
 ### <a name="policy-settings-in-preset-security-policies"></a>預設安全性原則中的原則設定
 
-您無法修改保護設定檔中的原則設定。 [EOP 和 Office 365 ATP security 的建議設定](recommended-settings-for-eop-and-office365-atp.md)會說明**標準**和**嚴格**的原則設定值。
+您無法修改保護設定檔中的原則設定。 [EOP 和 Office 365 ATP security 的建議設定](recommended-settings-for-eop-and-office365-atp.md)會說明 **標準** 和 **嚴格** 的原則設定值。
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>預先設定的安全性原則及其他原則的優先權順序
 
@@ -108,53 +108,54 @@ ms.locfileid: "48326540"
 
   - 若要設定預先設定的安全性原則，您必須是下列其中一個角色群組的成員：
 
-    - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
-    - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理**。
+    - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員** 。 
+    - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理** 。
 
   - 若要針對預設的安全性原則進行唯讀存取，您必須是下列其中一個角色群組的成員：
 
-    - [安全性與合規性中心](permissions-in-the-security-and-compliance-center.md) 中的 **安全讀者**。
-    - [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅檢視組織管理**。
+    - [安全性與合規性中心](permissions-in-the-security-and-compliance-center.md) 中的 **安全讀者** 。
+    - [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)內的 **全域讀取器** 。
+    - [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅檢視組織管理** 。
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>使用安全性 & 規範中心，將預先設定的安全性原則指派給使用者
 
-1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理**原則] 「預設 \> **Policy** \> **安全性原則**」。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** 原則] 「預設 \> **Policy** \> **安全性原則** 」。
 
-2. 在 [ **標準防護** ] 或 [ **嚴格防護**] 底下，按一下 [ **編輯**]。
+2. 在 [ **標準防護** ] 或 [ **嚴格防護** ] 底下，按一下 [ **編輯** ]。
 
 3. [套用 **標準保護** ] 或 [套用 **嚴格防護** ] 嚮導即會啟動。 在 [ **EOP 保護] 適用** 于步驟，識別 [EOP 防護](#policies-in-preset-security-policies) 適用的內部收件者：
 
-   1. 按一下 [ **新增條件**]。 在出現的下拉式清單中，選取 [ **適用于**下列條件的條件：
+   1. 按一下 [ **新增條件** ]。 在出現的下拉式清單中，選取 [ **適用于** 下列條件的條件：
 
       - **收件者是**
       - **收件者的成員屬於**
       - **收件者網域**
 
-      您只能使用一次條件，但是您可以指定條件的多個值。 相同條件使用或邏輯 (的多個值，例如 _\<recipient1\>_ 或 _\<recipient2\>_) 。
+      您只能使用一次條件，但是您可以指定條件的多個值。 相同條件使用或邏輯 (的多個值，例如 _\<recipient1\>_ 或 _\<recipient2\>_ ) 。
 
-   2. 您選取的條件會出現在陰影區段中。 在該區段中，按一下 [ **任何** ] 方塊。 如果您稍候片刻，便會出現一個清單，讓您可以選取值。 或者，您可以開始輸入值以篩選清單並選取值。 視需要重複此步驟多次。 若要移除個別值，請**Remove**按一下 ![ ](../../media/scc-remove-icon.png) 值上的 [移除移除圖示]。 若要移除整個條件，請**Remove**按一下 ![ ](../../media/scc-remove-icon.png) 條件上的 [移除移除圖示]。
+   2. 您選取的條件會出現在陰影區段中。 在該區段中，按一下 [ **任何** ] 方塊。 如果您稍候片刻，便會出現一個清單，讓您可以選取值。 或者，您可以開始輸入值以篩選清單並選取值。 視需要重複此步驟多次。 若要移除個別值，請 **Remove** 按一下 ![ ](../../media/scc-remove-icon.png) 值上的 [移除移除圖示]。 若要移除整個條件，請 **Remove** 按一下 ![ ](../../media/scc-remove-icon.png) 條件上的 [移除移除圖示]。
 
-   3. 若要新增其他條件，請按一下 [ **新增條件** ]，然後從其餘的條件中選取。 使用不同的條件和邏輯 (例如， _\<recipient1\>_ 及 _\<member of group 1\>_) 。
+   3. 若要新增其他條件，請按一下 [ **新增條件** ]，然後從其餘的條件中選取。 使用不同的條件和邏輯 (例如， _\<recipient1\>_ 及 _\<member of group 1\>_ ) 。
 
       重複上述步驟，將值加入條件，並視需要重複此步驟，或在條件不足時重複此步驟。
 
-   4. 若要新增例外狀況，請按一下 [ **新增條件**]。 在出現的下拉式清單中，選取 [ **除外**] 下的條件。 設定和行為就像是條件。
+   4. 若要新增例外狀況，請按一下 [ **新增條件** ]。 在出現的下拉式清單中，選取 [ **除外** ] 下的條件。 設定和行為就像是條件。
 
-   完成後，按 [下一步]****。
+   完成後，按 [下一步]  。
 
 4. 如果您的組織有 Office 365 ATP，您可以使用 **ATP 防護** ，以識別 [Office 365 ATP 防護](#policies-in-preset-security-policies) 適用的內部收件者。
 
    設定和行為完全像是 **EOP 保護套用至** 步驟。
 
-   完成後，按 [下一步]****。
+   完成後，按 [下一步]  。
 
-5. 在 [ **確認** ] 步驟中，確認您的選擇，然後按一下 [ **確認**]。
+5. 在 [ **確認** ] 步驟中，確認您的選擇，然後按一下 [ **確認** ]。
 
 ### <a name="use-the-security--compliance-center-to-modify-the-assignments-of-preset-security-policies"></a>使用安全性 & 合規性中心，修改預設安全性原則的指派
 
 修改 **標準保護** 或 **嚴格保護** 安全性原則指派的步驟，與初次 [指派預先設定的安全性原則給使用者](#use-the-security--compliance-center-to-assign-preset-security-policies-to-users)相同。
 
-若要停用 **標準保護** 或 **嚴格保護** 安全性原則，同時仍保留現有的條件和例外狀況，請將此切換滑動至 [ **停用**]。 若要啟用原則，請將開關滑動至 [ **啟用**]。
+若要停用 **標準保護** 或 **嚴格保護** 安全性原則，同時仍保留現有的條件和例外狀況，請將此切換滑動至 [ **停用** ]。 若要啟用原則，請將開關滑動至 [ **啟用** ]。
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 
