@@ -19,20 +19,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 21b8832010cab30f1834c4c6a94b4542c3b2b6a7
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: f63328992af95562688e644f68b8151eb09b9e0f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430088"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846145"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 [！附注] `DeviceFileEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含檔建立、修改及其他檔案系統事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 

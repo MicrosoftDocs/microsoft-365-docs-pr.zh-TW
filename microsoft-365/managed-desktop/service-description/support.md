@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 39209e81c380887d8a65e28f12ea00c6050e28fa
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 52bbbad5acac3b0407ffbf0cd78888d74cfb05d3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950327"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846189"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的支援
 
@@ -33,7 +33,7 @@ Microsoft 受管理的桌面支援包括：
 
 支援的產品：
 
-- Windows 10 搭配 Microsoft Defender 高級威脅防護 
+- Windows 10 搭配 Microsoft Defender for Endpoint
 - 下列 Microsoft 365 應用程式適用于企業應用程式： Outlook、Word、PowerPoint、Excel、商務用 Skype 用戶端、Microsoft 團隊 
 - 商務用 Microsoft Store 
 - 商務用戶端的 OneDrive 

@@ -1,6 +1,6 @@
 ---
-title: 常見的 Microsoft 威脅防護 REST API 錯誤代碼
-description: 深入瞭解常見的 Microsoft 威脅防護 REST API 錯誤代碼
+title: 常見的 Microsoft 365 Defender REST API 錯誤碼
+description: 深入瞭解常見的 Microsoft 365 Defender REST API 錯誤碼
 keywords: api、錯誤、代碼、常見錯誤、mtp、api 錯誤碼
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,25 +19,25 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 81375b919b52ff895e5ec7014feb747b1a0eae65
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: aceb376662f2b27397aa2332f8929a57d5a3ee03
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201336"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846005"
 ---
-# <a name="common-microsoft-threat-protection-rest-api-error-codes"></a>常見的 Microsoft 威脅防護 REST API 錯誤代碼
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常見的 Microsoft 365 Defender REST API 錯誤碼
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-下表所列的錯誤代碼可能會由任何 Microsoft 威脅防護 APIs 上的操作所傳回。
+下表所列的錯誤代碼可能會由任何 Microsoft 365 Defender APIs 上的操作所傳回。
 
 每個錯誤回應都會包含一則錯誤訊息，可協助您解決問題。
 

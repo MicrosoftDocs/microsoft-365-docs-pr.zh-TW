@@ -25,26 +25,26 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護 (ATP) ，以保護其組織免受使用惡意 URLs 之網路釣魚和其他攻擊的威脅。
-ms.openlocfilehash: 45936cabf012c5f40080f3bbfee224aec9593d30
-ms.sourcegitcommit: 04a43a146cb62a10b1a4555ec3bed49eb08fbb99
+description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護，以保護其組織免受使用惡意 URLs 的網路釣魚和其他攻擊。
+ms.openlocfilehash: 869cb2f330b81481a2a0a013564853274654d0ef
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48806723"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846053"
 ---
-# <a name="safe-links-in-office-365-atp"></a>Office 365 ATP 安全連結
+# <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全連結
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> 本文適用于具有 [Office 365 高級威脅防護 (ATP) ](office-365-atp.md)的商務客戶。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 個人版，且您在 Outlook 中尋找 Safelinks 的相關資訊，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用于具有 [Microsoft Defender For Office 365](office-365-atp.md)的商務客戶。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 個人版，且您在 Outlook 中尋找 Safelinks 的相關資訊，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-安全連結是 [Office 365 高級威脅防護](office-365-atp.md) 中的一項功能，可提供郵件流程中的輸入電子郵件訊息的 URL 掃描和修正，以及電子郵件和其他位置中 URLs 和連結的時間驗證。 在 Exchange Online Protection (EOP) 中，除了內送電子郵件訊息中的一般 [反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md) 之外，也會進行安全連結掃描。 安全連結掃描可協助保護您的組織免受網路釣魚和其他攻擊中所用的惡意連結。
+安全連結是 [Office 365 的 Defender](office-365-atp.md) 中的一項功能，可提供郵件流程中的輸入電子郵件訊息的 URL 掃描和修正，以及電子郵件及其他位置中 URLs 和連結的時間驗證。 在 Exchange Online Protection (EOP) 中，除了內送電子郵件訊息中的一般 [反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md) 之外，也會進行安全連結掃描。 安全連結掃描可協助保護您的組織免受網路釣魚和其他攻擊中所用的惡意連結。
 
 在下列位置可取得安全連結保護：
 
-- **電子郵件訊息** ：安全連結保護電子郵件訊息中的連結是由安全連結原則所控制。 沒有預設的安全連結原則， **因此若要在電子郵件中取得安全連結的保護，您必須建立一或多個安全連結原則** 。 如需相關指示，請參閱 [設定 ATP 中的安全連結原則](set-up-atp-safe-links-policies.md)。
+- **電子郵件訊息** ：安全連結保護電子郵件訊息中的連結是由安全連結原則所控制。 沒有預設的安全連結原則， **因此若要在電子郵件中取得安全連結的保護，您必須建立一或多個安全連結原則** 。 如需相關指示，請參閱 [設定 Microsoft Defender For Office 365 中的安全連結原則](set-up-atp-safe-links-policies.md)。
 
   如需電子郵件安全連結保護的詳細資訊，請參閱本文稍後的 [ [電子郵件的安全連結設定](#safe-links-settings-for-email-messages) ] 區段。
 
@@ -52,7 +52,7 @@ ms.locfileid: "48806723"
 
   如需小組中安全連結保護的詳細資訊，請參閱本主題稍後的「 [Microsoft 團隊的安全連結設定](#safe-links-settings-for-microsoft-teams) 」一節。
 
-- **Office 365 應用程式** ： office 365 應用程式的安全連結保護可在支援的桌面、行動裝置和網路 ap 中取得。 您可以在安全連結原則 **以外** 的全域設定中， **設定** Office 365 應用程式的安全連結保護。 如需相關指示，請參閱 [在 Office 365 ATP 中設定安全連結設定的通用設定](configure-global-settings-for-safe-links.md)。
+- **Office 365 應用程式** ： office 365 應用程式的安全連結保護可在支援的桌面、行動裝置和網路 ap 中取得。 您可以在安全連結原則 **以外** 的全域設定中， **設定** Office 365 應用程式的安全連結保護。 如需相關指示，請參閱 [在 Microsoft Defender For Office 365 中設定安全連結設定的全域設定](configure-global-settings-for-safe-links.md)。
 
   不過，Office 365 應用程式的安全連結保護只 **適用** 于包含在使用中安全連結原則中的使用者。 如果使用者未包含在使用中的安全連結原則中，使用者就不會在支援的 Office 365 應用程式中取得安全連結保護。
 
@@ -71,7 +71,7 @@ ms.locfileid: "48806723"
   - [Office 365 應用程式的安全連結設定](#safe-links-settings-for-office-365-apps)
   - [安全連結的「封鎖下列 URLs」清單](#block-the-following-urls-list-for-safe-links)
 
-下表說明 Microsoft 365 和 Office 365 組織中包含 ATP (的安全連結案例，也就是說，缺乏授權不是範例) 中的問題。
+下表說明 Microsoft 365 和 Office 365 組織中包含 Office 365 的 Defender 的安全連結案例 (換句話說，缺乏授權是) 範例中的問題。
 
 ****
 
@@ -180,7 +180,7 @@ ms.locfileid: "48806723"
 
 1. 使用者啟動小組應用程式。
 
-2. Microsoft 365 會驗證使用者的組織是否包含 Office 365 ATP，以及是否將使用者加入使用中的安全連結原則，以啟用 Microsoft 小組的保護功能。
+2. Microsoft 365 會驗證使用者的組織是否包含 Microsoft Defender for Office 365，以及是否將使用者加入使用中的安全連結原則，以啟用 Microsoft 小組的保護功能。
 
 3. 在聊天、群組聊天、頻道及標籤式中按一下使用者時，會驗證 URLs。
 

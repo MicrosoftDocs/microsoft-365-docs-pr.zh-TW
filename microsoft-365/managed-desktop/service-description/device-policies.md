@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a76bae70adeb07d9ea0574a25bac14f89a0a790d
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+ms.openlocfilehash: 5533284d4a3f55a51b3017a64e4c353b4ec71352
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262214"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846225"
 ---
 # <a name="device-configuration"></a>裝置設定
 
@@ -39,7 +39,7 @@ ms.locfileid: "48262214"
 安全性基準 | 為所有 Microsoft 受管理的桌面裝置設定 MDM 的[Microsoft 安全性基準](https://docs.microsoft.com/windows/device-security/windows-security-baselines)。 此基準為業界標準設定。 Microsoft 安全性專家已公開發行、經過測試，且已由 Microsoft 安全性專家檢查，以維護現代辦公裝置中的 Microsoft 受管理桌面裝置和應用程式的安全性。 <br><br>為了減輕不斷演變的安全性威脅環境中的威脅，使用每個 Windows 10 功能更新時，Microsoft 安全性基準將更新並部署至 Microsoft 受管理的桌面裝置。<br><br>如需詳細資訊，請參閱 [Windows 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)。
 Microsoft 受管理的桌面推薦的安全性範本 | 一組建議變更的安全性基準，可優化使用者體驗。  這些變更會記錄在 [安全性附錄](#security-addendum)中。 原則附錄更新會在必要時進行。  
 更新部署 | 使用 Windows Update for Business 執行軟體更新逐步部署。 IT 系統管理員無法修改部署群組原則的設定。 如需以群組為基礎的部署的詳細資訊，請參閱 [Microsoft Managed Desktop 中的更新的處理方式](updates.md)。
-流量計費連接 | 根據預設， **> 更新 > 高級選項**的 [設定] 中的「 (例如 LTE 網路) 等方式來更新。 如果您想要允許所有使用者透過流量計費連線啟用更新，請 [提交變更要求](../working-with-managed-desktop/admin-support.md)，它會針對所有裝置開啟此設定。
+流量計費連接 | 根據預設， **> 更新 > 高級選項** 的 [設定] 中的「 (例如 LTE 網路) 等方式來更新。 如果您想要允許所有使用者透過流量計費連線啟用更新，請 [提交變更要求](../working-with-managed-desktop/admin-support.md)，它會針對所有裝置開啟此設定。
 | 裝置合規性 | 這些原則是針對所有 Microsoft 受管理的桌面裝置進行設定。 從我們所需的安全性設定 drifts 時，裝置會報告為不相容。
 
 ## <a name="windows-diagnostic-data"></a>Windows 診斷資料
@@ -53,5 +53,5 @@ Microsoft 受管理的桌面推薦的安全性範本 | 一組建議變更的安�
  ### <a name="additional-security-policies"></a>其他安全性原則
 
  新增這些原則，以加強高管制行業的安全性。 
- - **安全性監視**： Microsoft 將使用 [Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)來監視裝置。 如果偵測到威脅，Microsoft 會通知客戶、隔離裝置，並以遠端方式修正問題。 
- - **停用 PowerShell v2**： Microsoft 已移除2017年8月的 PowerShell V2。 在所有 Microsoft 受管理的桌面裝置上，此功能已停用。 如需此變更的詳細資訊，請參閱 [Windows PowerShell 2.0 過時](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/)。
+ - **安全性監視** ： Microsoft 將使用 [Microsoft Defender for Endpoint 來](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)監視裝置。 如果偵測到威脅，Microsoft 會通知客戶、隔離裝置，並以遠端方式修正問題。 
+ - **停用 PowerShell v2** ： Microsoft 已移除2017年8月的 PowerShell V2。 在所有 Microsoft 受管理的桌面裝置上，此功能已停用。 如需此變更的詳細資訊，請參閱 [Windows PowerShell 2.0 過時](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/)。

@@ -21,22 +21,22 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 09/16/2020
-ms.openlocfilehash: 83a897438b9da88287574ff576fab9b2f6b30236
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 183435596706855479c49abc34358c85dccb0da4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430796"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846505"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調查的詳細資料和結果
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
-當您在 Microsoft 威脅防護中進行自動調查時，可在與自動調查處理期間以及處理完成後取得該調查的詳細資料。 如果您擁有[必要權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，您可以在調查詳細資料檢視中查看這些詳細資料。 調查詳細資料檢視可提供您最新的狀態，以及核准任何待核准動作的能力。 
+在 Microsoft 365 Defender 中進行自動調查時，在自動化調查程式期間和之後都會提供該調查的詳細資料。 如果您擁有[必要權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，您可以在調查詳細資料檢視中查看這些詳細資料。 調查詳細資料檢視可提供您最新的狀態，以及核准任何待核准動作的能力。 
 
 ![調查詳細資料](../../media/mtp-air-investdetails.png)
 
@@ -48,13 +48,13 @@ ms.locfileid: "48430796"
 
 ### <a name="select-an-item-in-the-action-center"></a>選取 [控制中心] 中的項目
 
-使用 [控制中心] 查看處於待核准狀態 (在 [待核准]**** 索引標籤上) 或已核准 (在 [歷史記錄]**** 索引標籤上) 的動作。 
+使用 [控制中心] 查看處於待核准狀態 (在 [待核准] 索引標籤上) 或已核准 (在 [歷史記錄] 索引標籤上) 的動作。 
 
 1. 移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。 
 
-2. 在功能窗格中，選擇 [控制中心]****。 
+2. 在功能窗格中，選擇 [控制中心]。 
 
-3. 在 [待核准]**** 或 [歷史記錄]**** 索引標籤上，選取一個項目。 如果您擁有[必要權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，您可以核准 (或拒絕) 待核准的動作。
+3. 在 [待核准] 或 [歷史記錄] 索引標籤上，選取一個項目。 如果您擁有[必要權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，您可以核准 (或拒絕) 待核准的動作。
 
 ### <a name="open-an-investigation-from-an-incident-details-page"></a>從事件詳細資料頁面開啟調查
 
@@ -62,11 +62,11 @@ ms.locfileid: "48430796"
 
 1. 移至 [https://security.microsoft.com](https://security.microsoft.com) 並登入。 
 
-2. 在功能窗格中，選擇 [事件]****。 
+2. 在功能窗格中，選擇 [事件]。 
 
 3. 選取清單中的項目以開啟事件詳細資料檢視。<br/>![事件詳細資料](../../media/mtp-incidentdetails-tabs.png)
 
-4. 在 [調查]**** 索引標籤上，選取清單中的調查。
+4. 在 [調查] 索引標籤上，選取清單中的調查。
 
 ## <a name="investigation-details"></a>調查詳細資料
 
@@ -74,11 +74,11 @@ ms.locfileid: "48430796"
 
 ![調查詳細資料](../../media/mtp-air-investdetails.png)
 
-在調查詳細資料檢視中，您可以在 [調查圖表]****、[警示]****、[裝置]****、[身分識別]****、[重要結果]****、[實體]****、**[記錄]**，以及 [待核准的動作]**** 索引標籤上查看資訊，如下表所述。
+在調查詳細資料檢視中，您可以在 [調查圖表]、[警示]、[裝置]、[身分識別]、[重要結果]、[實體]、 **[記錄]** ，以及 [待核准的動作] 索引標籤上查看資訊，如下表所述。
 
 |索引標籤    |描述 |
 |--------|--------|
-|調查圖表    |提供調查的視覺呈現。 描述實體並列出發現的威脅和警示，以及是否有任何待核准的動作。<br/>您可以按一下圖表上的項目來查看更多詳細資料。 例如，按一下 [找到的威脅] **** 圖示會帶您移至 [重要結果]**** 索引標籤。 |
+|調查圖表    |提供調查的視覺呈現。 描述實體並列出發現的威脅和警示，以及是否有任何待核准的動作。<br/>您可以按一下圖表上的項目來查看更多詳細資料。 例如，按一下 [找到的威脅] 圖示會帶您移至 [重要結果] 索引標籤。 |
 |警示 |列出與調查相關聯的警示。 警示可能來自使用者電腦上的威脅防護功能、Office 應用程式、雲端 App 安全性及其他 Microsoft 365 威脅防護功能。|
 |裝置|列出調查中包含的電腦及其修正等級。|
 |重要結果   |列出調查結果，以及狀態和已執行或待核准的動作。 您可以在這個索引標籤上核准裝置和身分識別的待核准動作。|

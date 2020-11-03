@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8787bf212db342c84f13f8522e8853310e00c0ce
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429404"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846625"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的應用程式監視與報告
 
@@ -53,7 +53,7 @@ ms.locfileid: "48429404"
 
 ## <a name="understand-which-cloud-apps-are-used"></a>瞭解使用的雲端應用程式
 
-已**探索 cloud app (類別) **顯示您的組織中所使用的應用程式類型。 它會連結至 Cloud App Security 中的雲端探索儀表板。 如需詳細資訊，請參閱 [快速入門：使用已探索的應用程式](https://docs.microsoft.com/cloud-app-security/discovered-apps)。  
+已 **探索 cloud app (類別)** 顯示您的組織中所使用的應用程式類型。 它會連結至 Cloud App Security 中的雲端探索儀表板。 如需詳細資訊，請參閱 [快速入門：使用已探索的應用程式](https://docs.microsoft.com/cloud-app-security/discovered-apps)。  
 
 ![探索的雲端應用程式類別卡片](../../media/discovered-cloud-apps-categories.png)
 
@@ -65,10 +65,10 @@ ms.locfileid: "48429404"
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>監視基礎結構工作負載的健康情況
 
-**基礎結構健康情況** 會顯示 Azure Security Center 中基礎結構工作負載的健康狀態警示。
+**基礎結構健康** 情況會顯示 Azure Defender 中基礎結構工作負載的健康狀態警示。
 
-Azure 安全性中心可提供跨內部部署和雲端工作負載的整合安全性管理和高級威脅防護。 您可以收集、搜尋及分析不同來源的安全性資料，包括防火牆和其他合作夥伴解決方案。
+Azure Defender * 跨內部部署和雲端工作負載提供 Office 365 的統一安全性管理和 Defender。 您可以收集、搜尋及分析不同來源的安全性資料，包括防火牆和其他合作夥伴解決方案。
 
-如需詳細資訊，請參閱 [Azure Security Center 檔](https://docs.microsoft.com/azure/security-center/)。
+如需詳細資訊，請參閱 [Azure Defender * 檔](https://docs.microsoft.com/azure/security-center/)。
 
 ![基礎結構健康卡](../../media/infrastructure-health.png)

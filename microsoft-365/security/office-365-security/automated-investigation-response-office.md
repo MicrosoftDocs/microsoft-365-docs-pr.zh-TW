@@ -21,12 +21,12 @@ description: 深入瞭解 Microsoft Defender for Office 365 中的自動化調�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: d63ba8a6d3ffb653b30448a973e1cd862631d350
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 316e2e30e5865e068f20d151cd0b081a96ee853f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447104"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845969"
 ---
 # <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自動化調查和回應 (AIR) 的概覽
 
@@ -62,7 +62,7 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 > [!NOTE]
 > 以星號 () 標示的警示 `*` 會在 Microsoft 365 安全性中心內的各項警示原則中指派 *資訊* 嚴重性，並關閉電子郵件通知。 您可以透過 [報警原則](../../compliance/alert-policies.md#alert-policy-settings)設定開啟電子郵件通知。 
 
-若要在安全性 & 規範中心中查看提醒，請選擇 [**提醒**] [  >  **查看提醒**]。 選取警示以查看其詳細資料，然後從那裡使用「 **查看調查** 」連結，以移至對應的 [調查](air-view-investigation-results.md#investigation-graph)。  
+若要在安全性 & 規範中心中查看提醒，請選擇 [ **提醒** ] [  >  **查看提醒** ]。 選取警示以查看其詳細資料，然後從那裡使用「 **查看調查** 」連結，以移至對應的 [調查](air-view-investigation-results.md#investigation-graph)。  
 
 > [!NOTE]
 > 預設會在提醒視圖中隱藏資訊警示。 若要查看，請變更警示篩選，以包含資訊性警示。
@@ -73,7 +73,7 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 
 ## <a name="security-playbooks"></a>安全性行動手冊
 
-安全性行動手冊是以 Microsoft Defender for Office 365 和 Microsoft 威脅防護為自動化的後端原則。 AIR 中所提供的安全性行動技巧是以常見的實際安全性案例為依據，並根據安全性運作小組的意見來開發。 當您的組織內觸發特定警示時，會自動啟動安全性行動手冊。 警示觸發後，會自動調查和回應系統執行相關聯的行動手冊。 調查步驟：透過該特定警示行動手冊分析提醒，查看所有相關聯的中繼資料 (包括電子郵件訊息、使用者、主題、寄件者等 ) 。 根據調查行動手冊的結果，AIR 建議您的組織安全小組可以採取的一組動作來控制及緩解威脅。 
+安全性行動手冊是可在 Microsoft Defender for Office 365 和 Microsoft 365 Defender 中實現自動化的後端原則。 AIR 中所提供的安全性行動技巧是以常見的實際安全性案例為依據，並根據安全性運作小組的意見來開發。 當您的組織內觸發特定警示時，會自動啟動安全性行動手冊。 警示觸發後，會自動調查和回應系統執行相關聯的行動手冊。 調查步驟：透過該特定警示行動手冊分析提醒，查看所有相關聯的中繼資料 (包括電子郵件訊息、使用者、主題、寄件者等 ) 。 根據調查行動手冊的結果，AIR 建議您的組織安全小組可以採取的一組動作來控制及緩解威脅。 
 
 您可以使用 AIR 的安全性行動方式，來處理目前的組織使用電子郵件所遇到的最常見威脅。 它們是以安全性作業和事件回應小組的輸入為基礎，包括協助保護 Microsoft 和客戶資產的人員。
 
@@ -118,7 +118,7 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 - 類似的電子郵件會透過電子郵件聚簇搜尋加以識別。
 - 此信號是與其他平臺（例如 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)）共用。
 - 決定是否任何使用者已透過可疑電子郵件訊息中的任何惡意連結進行按一下。
-- 在 Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) 和 Office 365 的高級威脅防護 ([ATP](office-365-atp.md)) 之間進行檢查，以查看使用者是否會報告其他類似的訊息。
+- 在 Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) 和 ([Microsoft Defender for Office 365](office-365-atp.md)) 中進行檢查，以查看使用者是否已報告任何其他類似的郵件。
 - 會執行檢查以查看使用者是否遭到破壞。 這種檢查會利用跨 Office 365、 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)和 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)的信號，以關聯任何相關的使用者活動異常。
 
 在搜尋階段中，會將風險和威脅指派給各種搜尋步驟。 
@@ -133,7 +133,7 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 
 ![具有選取郵件的 Explorer](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-您可以使用 [ **動作** ] 功能表，選取 [ **觸發調查**]。
+您可以使用 [ **動作** ] 功能表，選取 [ **觸發調查** ]。
 
 ![選取郵件的動作功能表](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
@@ -143,7 +143,7 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 
 Microsoft Defender for Office 365 中的 AIR 功能包括 [報告 & 詳細資料](air-view-investigation-results.md) ，安全性作業小組可用以監視和處理威脅。 不過，您也可以整合 AIR 功能與其他解決方案。 範例包括安全性資訊和事件管理 (SIEM) 系統、案例管理系統或自訂報告解決方案。 您可以使用 [Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)來完成這些類型的整合。 
 
-例如，在最近，組織會設定安全性作業小組的方式，以查看已由 AIR 處理的使用者報告網路釣魚警報。 其解決方案會將相關的警示與組織的 SIEM 伺服器及其案例管理系統整合在一起。 此解決方案大幅減少誤報的數目，讓他們的安全性運作小組能夠專注于實際威脅的時間和工作。 若要深入瞭解此自訂解決方案，請參閱 [技術社區博客：使用 Office 365 ATP 和 O365 管理 API，改善 SOC 的效能](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)。
+例如，在最近，組織會設定安全性作業小組的方式，以查看已由 AIR 處理的使用者報告網路釣魚警報。 其解決方案會將相關的警示與組織的 SIEM 伺服器及其案例管理系統整合在一起。 此解決方案大幅減少誤報的數目，讓他們的安全性運作小組能夠專注于實際威脅的時間和工作。 若要深入瞭解此自訂解決方案，請參閱 [技術社區博客：使用 Microsoft Defender For Office 365 和 O365 管理 API，改善 SOC 的效能](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)。
 
 ## <a name="next-steps"></a>後續步驟
 

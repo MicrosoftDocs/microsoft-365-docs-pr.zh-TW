@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 請遵循下列針對獨立 Exchange Online Protection (EOP) 的最佳作法建議，以便自行設定以取得成功，並避免常見的設定錯誤。
-ms.openlocfilehash: b734fe87b82c243531944bbd9cf53d22d5b42f53
-ms.sourcegitcommit: 5e1b8c959a081022826fb09358730096248507ed
+ms.openlocfilehash: abf68e361293b2a55cd0a382cc376cbfe21236e7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48414031"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845945"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>設定獨立 EOP 的最佳作法
 
@@ -35,7 +35,7 @@ ms.locfileid: "48414031"
 
 ## <a name="recommended-settings"></a>建議的設定
 
-我們可讓安全性管理員自訂其安全性設定，以滿足組織的需求。 雖然一般來說，在 EOP 和 Office 365 ATP 中也有兩個安全性層級，我們建議： Standard 和 Strict。 這些設定會列在 [EOP 和 Office 365 ATP 安全性的建議設定](recommended-settings-for-eop-and-office365-atp.md)中。
+我們可讓安全性管理員自訂其安全性設定，以滿足組織的需求。 雖然一般規則，EOP 和 Microsoft Defender for Office 365 有兩個安全性層級，我們建議： Standard 和 Strict。 這些設定會列在 [EOP 和 Microsoft Defender For Office 365 安全性的建議設定](recommended-settings-for-eop-and-office365-atp.md)中。
 
 ### <a name="miscellaneousnon-policy-settings"></a>雜項/非原則設定
 
@@ -45,7 +45,7 @@ ms.locfileid: "48414031"
 
 |安全性功能名稱|標準版|嚴格|留言|
 |---|---|---|---|
-|[設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
+|[設定 SPF 以協助防止詐騙 ](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
 |[使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)|是|是||
 |[在 Office 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)|是|是|使用 `action=quarantine` Standard 和 `action=reject` Strict。|
 |部署 [報告訊息增益集](enable-the-report-message-add-in.md) ，以改進使用者對可疑電子郵件的報告|是|是||
@@ -74,7 +74,7 @@ ms.locfileid: "48414031"
 
 建立郵件流程規則 (也稱為傳輸規則) 或自訂篩選以滿足您的業務需求。
 
-在實際執行環境中部署新規則時，請先選取其中一個測試模式，以查看規則的效果。 當您認為規則是以預期的方式運作後，請將規則模式變更為 [ **強制執行**]。
+在實際執行環境中部署新規則時，請先選取其中一個測試模式，以查看規則的效果。 當您認為規則是以預期的方式運作後，請將規則模式變更為 [ **強制執行** ]。
 
 當您部署新規則時，請考慮新增其他 [ **產生** 附隨報告] 動作，以監視規則採取的動作。
 

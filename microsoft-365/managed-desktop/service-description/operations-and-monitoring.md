@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 01a43b35d272aaebce4c6866e3edfb04664b1801
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 8355b1609746abee12e4ca02942a567fec940623
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655720"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846213"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 受管理的桌面作業和監控
 
@@ -87,7 +87,7 @@ Categories |    Microsoft 會 | 客戶將
 服務帳戶 |-實施、安全地儲存和管理認證。<br> -對您的安全性作業小組進行未經授權的存取或使用這些認證。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不指派原則、多重要素驗證、條件式存取或應用程式部署至 Microsoft Managed Desktop Service 帳戶。<br>-不要重設密碼或使用認證。<br>-如果在 Intune 或 Azure 審核記錄檔中看到與這些服務帳戶相關的可疑活動，請開啟嚴重度 C 支援要求至 Microsoft Managed Desktop Operations。
 裝置群組 | -在 Microsoft 受管理的桌面群組中實施及管理裝置的成員資格。<br>-使用 Microsoft 受管理的桌面群組，管理裝置的設定和更新的指派及發行。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不修改任何 Microsoft 受管理的桌面群組的成員資格。<br>-僅使用群組為服務（如 VPN、Windows Hello 企業版或電子郵件加密）或公司 Wi-Fi 設定檔設定指派公司憑證。<br>-存在共同管理，請在部署 Configuration Manager 用戶端時，明確排除所有 Microsoft 受管理的桌面群組。
 原則 |  -實施及管理 Microsoft 受管理的桌面原則，以控制服務內裝置的設定狀態。<br>-將更新部署至原則或 Windows，以增量方式使用裝置群組。<br> -明確排除針對非 Microsoft 受管理的桌面群組。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不編輯或指派 Microsoft 受管理的桌面原則給未由 Microsoft Managed Desktop 服務管理的裝置或使用者。
-Microsoft Defender 進階威脅防護   | 在 Microsoft 受管理的桌面服務範圍內監視和調查裝置。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更
+適用於端點的 Microsoft Defender | 在 Microsoft 受管理的桌面服務範圍內監視和調查裝置。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更
 商務用 Microsoft Store |  設定及維護 Microsoft Managed Desktop service 的 Windows Autopilot 設定檔。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不修改 Microsoft Managed Desktop Windows Autopilot 設定檔的設定，或新增/移除指派的裝置。
 憑證 | | -在憑證到期之前建立支援60要求，要求資訊以取得計畫的設定變更，包括設定詳細資料、範圍、時程表及其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-更新所有必要的憑證，以設定憑證設定檔、VPN 設定檔，以及 Wi-Fi 設定檔。
 

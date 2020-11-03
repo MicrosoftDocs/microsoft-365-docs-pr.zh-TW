@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: e8d30706895774986bc68936bd84c303a6460ece
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 684e21a8288aee72f6170d54ffc86af3bcb0ece0
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787509"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846261"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -57,7 +57,7 @@ ms.locfileid: "48787509"
 
 | **角色群組** | **角色權限** |
 | :---- | :---------------- |
-| **測試人員風險管理** | 使用此角色群組，在單一群組中管理組織的有問必答風險管理。 透過為指定的系統管理員、分析員和調查人員新增所有使用者帳戶，您可以在單一群組中設定「有問必答風險管理」許可權。 此角色群組包含所有測試人員風險管理權限角色。 這項設定是快速開始使用「內幕風險管理」的最簡單方法，而且很適合不需要個別使用者群組定義個別許可權的組織。|
+| **有問必答風險管理** | 使用此角色群組，在單一群組中管理組織的有問必答風險管理。 透過為指定的系統管理員、分析員和調查人員新增所有使用者帳戶，您可以在單一群組中設定「有問必答風險管理」許可權。 此角色群組包含所有測試人員風險管理權限角色。 這項設定是快速開始使用「內幕風險管理」的最簡單方法，而且很適合不需要個別使用者群組定義個別許可權的組織。|
 | **測試人員風險管理系統管理員** | 使用此角色群組開始設定「有問必答風險管理」和更新後的成員，以將內幕風險管理員與定義的群組隔離。  此角色群組中的使用者可以建立、讀取、更新和刪除內部使用者風險管理原則、全域設定和角色群組指派。 |
 | **測試人員風險管理分析員** | 使用此群組可將許可權指派給將擔當「有問必答風險案例分析」的使用者。 這個角色群組中的使用者可以存取所有的「內幕人員風險管理」提醒、案例及通知範本。 他們無法存取「內部使用者風險」內容瀏覽器。 |
 | **測試人員風險調查員** | 使用此群組可將許可權指派給將充當內部使用者風險資料調查人員的使用者。 這個角色群組中的使用者可以存取所有的內部使用者風險管理提醒、案例、通知範本及內容瀏覽器。 |
@@ -165,7 +165,7 @@ DLP 原則可協助識別使用者為敏感資訊的高嚴重性 DLP 警示啟�
     - [反常偵測](insider-risk-management-settings.md#anomaly-detections)
     - [冒犯性語言偵測](insider-risk-management-settings.md#offensive-language-detections)
     - [警示音量層級](insider-risk-management-settings.md#alert-volume)
-    - [Microsoft 365 Defender 高級威脅防護警示狀態](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
+    - [Microsoft Defender for Endpoint 警示狀態](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview)
     - [網域設定](insider-risk-management-settings.md#domains-preview)
 6. 在 [ **匯出提醒** ] 頁面上，根據需要，使用 Office 365 管理 APIs 啟用「匯出的會員風險警示資訊」。
 7. 在 [ **優先順序使用者群組** ] 頁面上，建立 [優先順序] 使用者群組，並在 **步驟 3** 中建立使用者時新增使用者。

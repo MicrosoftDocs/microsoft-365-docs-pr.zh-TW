@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f4af346877b41b03c07750508ff93661cc642ec4
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: b98cec62a018556bfbd31df0aa824acbd00b37b6
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289102"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846237"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 受管理的電腦技術
 
@@ -42,7 +42,7 @@ Web 應用程式 |  在瀏覽器中的 [Yammer]、「Delve」、「流程」、�
  |
  --- | ---
 Application Virtualization (App-V)  |    客戶可以使用 Intune Win32 應用程式管理用戶端部署 App-V 套件。
-Microsoft Defender 進階威脅防護 |  Microsoft 受管理的桌面用來監視裝置安全性。 
+適用於端點的 Microsoft Defender |    Microsoft 受管理的桌面用來監視裝置安全性。 
 
 ## <a name="enterprise-mobility--security-e5"></a>企業行動 + 安全性 E5
 

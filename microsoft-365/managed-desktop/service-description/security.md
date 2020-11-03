@@ -8,12 +8,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1e50b07208df46b199aada9c2ccbe04cc1c1ae72
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: e69656e13cd9a300cd56bdd5db7703f2387d23d4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289480"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846201"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的安全性技術
 
@@ -39,13 +39,13 @@ Service | 描述
 --- | ---
 防毒 | 已安裝並設定 Microsoft Defender AV<br>Microsoft Defender AV 定義是最新的
 整磁片區加密 |    Windows BitLocker 是 Microsoft 受管理桌面裝置的磁片區加密解決方案。<br><br>在將組織架至服務後，裝置會以內建信任平臺模組 (TPM) 進行 BitLocker 加密，以防止在裝置處於睡眠模式或關閉時未授權存取本機資料。 
-監視 |    Microsoft Defender 的「高級威脅防護」 (Microsoft Defender ATP) 用於所有 Microsoft 受管理的桌面裝置上的安全性威脅監控。 Microsoft Defender ATP 可讓企業客戶偵測、調查和回應公司網路中的高級威脅。 如需詳細資訊，請參閱 [Microsoft Defender 高級威脅防護。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
+監視 |    Microsoft Defender for Endpoint 用於跨所有 Microsoft 受管理的桌面裝置進行安全性威脅監控。 Defender for Endpoint 可讓企業客戶偵測、調查和回應公司網路中的高級威脅。 如需詳細資訊，請參閱 [Microsoft Defender For Endpoint。](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 
 作業系統更新 |  Microsoft 受管理的桌面裝置一定會以最新的安全性更新加以保護。
 安全裝置設定 |   Microsoft 受管理的桌面會實現 Microsoft 安全性基準。 如需詳細資訊，請參閱 [Windows 安全性基準。](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines)
 
 
 
-## <a name="identity-and-access-management"></a>身分識別與存取管理
+## <a name="identity-and-access-management"></a>身分識別和存取管理
 
 身分識別和存取管理可保護公司資產和業務關鍵型資料。 Microsoft Managed Desktop 會設定裝置，以確保與 Azure Active Directory (Azure AD) Managed identity 安全搭配使用。 客戶在其 Azure AD 租使用者中維護正確資訊的責任。 
 
