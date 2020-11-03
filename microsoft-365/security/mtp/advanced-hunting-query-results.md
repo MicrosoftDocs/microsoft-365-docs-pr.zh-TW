@@ -1,6 +1,6 @@
 ---
-title: 使用 Microsoft 威脅防護中的高級搜尋查詢結果
-description: 使用 Microsoft 威脅防護中的「高級搜尋傳回的查詢結果
+title: 使用 Microsoft 365 Defender 中的高級搜尋查詢結果
+description: 在 Microsoft 365 Defender 中使用高級搜尋所傳回的查詢結果
 keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，自訂偵測，schema，kusto，microsoft 365，Microsoft 威脅防護，視覺化，圖表，篩選器，向外鑽取
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,20 +19,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e19859189b57bbc9a6a4bbfb87fb224b2735331b
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: de26989b9092b783a45d27ad2a529720d21169f8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431072"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844125"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>使用高級搜尋查詢結果
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
@@ -86,7 +86,7 @@ AlertInfo
 這些結果是使用堆疊欄圖表的最佳顯示方式：
 
 ![高級搜尋查詢結果的圖像會顯示為 ](../../media/advanced-hunting-stacked-chart.jpg)
- *依作業系統及嚴重性顯示為堆疊*圖表的通知圖表查詢結果。
+ *依作業系統及嚴重性顯示為堆疊* 圖表的通知圖表查詢結果。
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>跨前十個寄件者網域的網路釣魚電子郵件
 如果您正在處理的值清單並不有限，您可以使用 `Top` 運算子，只繪製大多數實例的值。 例如，若要使用最多的網路釣魚電子郵件取得前10個寄件者的網域，請使用下列查詢：
@@ -146,7 +146,7 @@ AppFileEvents
 ## <a name="filter-the-query-results"></a>篩選查詢結果
 顯示在右側的篩選器可提供結果集的摘要。 每個資料行都有各自的區段，列出針對該資料行找到的獨特值和執行個體數量。
 
-`+` `-` 在您想要包含或排除的值上選取 [或] 按鈕，然後選取 [**執行查詢**]，以精煉您的查詢。
+`+` `-` 在您想要包含或排除的值上選取 [或] 按鈕，然後選取 [ **執行查詢** ]，以精煉您的查詢。
 
 ![進階搜捕篩選的影像](../../media/advanced-hunting-filter.png)
 

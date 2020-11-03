@@ -20,12 +20,12 @@ description: 深入瞭解 Microsoft Defender for Office 365 中的自動調查�
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: ffd0429d3dc85371e7b6bb1c2d1246d9820d0e2e
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: c178655d60b45e45680a86c3973317e63c354f17
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446704"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844533"
 ---
 # <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自動調查後續修正動作
 
@@ -53,7 +53,7 @@ ms.locfileid: "48446704"
 |類別|威脅/風險|修正動作 (s) |
 |---|---|---|
 |電子郵件|惡意程式碼|Soft delete email/cluster <br/><br/>如果叢集中的電子郵件超過少數幾個包含惡意程式碼，則該叢集會被視為惡意。|
-|電子郵件|惡意 URL<br/> ([Office 365 ATP 中的安全連結](atp-safe-links.md)偵測到惡意 URL。|Soft delete email/cluster <br/><br/>包含惡意 URL 的電子郵件被視為惡意的電子郵件。|
+|電子郵件|惡意 URL<br/> ([Microsoft Defender For Office 365 中的安全連結](atp-safe-links.md)偵測到惡意 URL。|Soft delete email/cluster <br/><br/>包含惡意 URL 的電子郵件被視為惡意的電子郵件。|
 |電子郵件|網路釣魚|Soft delete email/cluster <br/><br/>如果叢集中的電子郵件超過許多電子郵件中的網路嘗試次數，則會將該叢集視為網路釣魚。|
 |電子郵件|Zapped 網路釣魚 <br/> (電子郵件已傳遞和 [zapped](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge)。 ) |Soft delete email/cluster <br/><br/>報告可用於查看 zapped 訊息。 [查看 ZAP 是否移動了郵件和 FAQs](https://docs.microsoft.com/microsoft-365/security/office-365-security/zero-hour-auto-purge#how-to-see-if-zap-moved-your-message)。|
 |電子郵件|使用者 [報告](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) 未接的網路釣魚電子郵件|[使用者的報告所觸發的自動調查](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-user-reported-phish-message-launches-an-investigation-playbook)|

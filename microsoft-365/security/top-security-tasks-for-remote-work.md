@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: c72090bebe92ea61d99772eccde041d011c05580
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: e91d2c6fc3df7cbcd7fedc198747838d470ab7d8
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398644"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845417"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -41,10 +41,10 @@ ms.locfileid: "48398644"
 |步驟|工作|所有 Office 365 企業版方案|Microsoft 365 E3|Microsoft 365 E5|
 |---|---|---|---|---|
 |1 |[ (MFA) 啟用 Azure Multi-Factor 驗證 ](#1-enable-azure-multi-factor-authentication-mfa)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[防範威脅](#2-protect-against-threats)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[設定 Office 365 的高級威脅防護](#3-configure-office-365-advanced-threat-protection)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|4 |[設定 Azure 高級威脅防護 (ATP) ](#4-configure-azure-advanced-threat-protection)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|5 |[開啟 Microsoft 威脅防護](#5-turn-on-microsoft-threat-protection)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|第|[防範威脅](#2-protect-against-threats)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|個|[設定 Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|4 |[設定 Microsoft Defender 身分識別](#4-configure-microsoft-defender-for-identity)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|5 |[開啟 Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[設定電話和平板電腦的 Intune 行動裝置應用程式保護](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[設定來賓的 MFA 和條件式存取（包括 Intune 應用程式保護）](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[將電腦登記到裝置管理並要求相容的電腦](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -86,17 +86,17 @@ ms.locfileid: "48398644"
 
 請參閱 [防禦 Office 365 中的威脅](office-365-security/protect-against-threats.md) 以取得您可以做為起點的指導方針。
 
-## <a name="3-configure-office-365-advanced-threat-protection"></a>3：設定 Office 365 的高級威脅防護
+## <a name="3-configure-microsoft-defender-for-office-365"></a>3：設定 Microsoft Defender for Office 365
 
-Office 365 Advanced 威脅防護 (ATP) （隨附于 Microsoft 365 E5 和 Office 365 E5）會保護您的組織免受電子郵件訊息、連結 (URLs) 和共同作業工具帶來的惡意威脅。 這可能需要數小時才能完成設定。
+Microsoft Defender for Office 365，隨附于 Microsoft 365 E5 和 Office 365 E5，保護您的組織免受電子郵件訊息、連結 (URLs) 和共同作業工具帶來的惡意威脅。 這可能需要數小時才能完成設定。
 
-Office 365 ATP：
+Microsoft Defender for Office 365：
 
 - 使用可檢查附件和惡意內容連結的智慧系統，即時保護您的組織免受未知電子郵件威脅。 這些自動化的系統包括強健的引爆平臺、啟發式和機器學習模型。
 - 透過識別及封鎖小組網站和文件庫中的惡意檔案，在使用者共同作業及共用檔案時，保護您的組織。
 - 套用機器學習模型和高級模擬偵測演算法，以防止網路釣魚攻擊。
 
-如需概要，包含計畫的摘要，請參閱 [Office 365 Advanced 威脅防護](office-365-security/office-365-atp.md)。
+如需概要，包含計畫的摘要，請參閱 [Office 365 的 Defender](office-365-security/office-365-atp.md)。
 
 您的全域系統管理員可以設定下列保護：
 
@@ -104,25 +104,25 @@ Office 365 ATP：
 - [設定安全連結的通用設定](office-365-security/configure-global-settings-for-safe-links.md)
 - [設定安全附件原則](office-365-security/set-up-atp-safe-attachments-policies.md)
 
-您必須與 Exchange Online 系統管理員和 SharePoint Online 系統管理員合作，才能設定下列工作負載的 ATP：
+您需要與 Exchange Online 系統管理員和 SharePoint Online 管理員合作，為下列工作負載設定 Office 365 的 Defender：
 
 - [適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](office-365-security/atp-for-spo-odb-and-teams.md)
 
-## <a name="4-configure-azure-advanced-threat-protection"></a>4：設定 Azure 高級威脅防護
+## <a name="4-configure-microsoft-defender-for-identity"></a>4：設定 Microsoft Defender 身分識別
 
-[Azure Advanced 威脅防護](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (azure ATP) 是一個雲端式的安全性解決方案，可利用您的內部部署 Active Directory 信號來識別、偵測和調查組織中的高級威脅、受損身分識別和惡意有問必答動作。 請將重點放在下一個，因為它會保護您的部署和雲端基礎結構、沒有相依性或必要條件，而且可提供立即的益處。
+[Microsoft Defender For Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是雲端式的安全性解決方案，可利用您的內部部署 Active Directory 信號來識別、偵測和調查您組織中的高級威脅、遭到破壞的身分識別，以及惡意的內幕程式列動。 請將重點放在下一個，因為它會保護您的部署和雲端基礎結構、沒有相依性或必要條件，而且可提供立即的益處。
 
-- 請參閱 [AZURE ATP 快速入門](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) 以快速取得安裝程式
-- 觀賞 [影片： AZURE ATP 簡介](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
-- 檢查 [AZURE ATP 部署的三個階段](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
+- 請參閱 [Microsoft Defender For Identity 快速入門](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) 以快速取得設定
+- 觀賞 [影片： Microsoft Defender 身分識別簡介](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
+- 查看 [Microsoft Defender 進行身分識別部署的三個階段](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
-## <a name="5-turn-on-microsoft-threat-protection"></a>5：開啟 Microsoft 威脅防護
+## <a name="5-turn-on-microsoft-365-defender"></a>5：開啟 Microsoft 365 Defender
 
-現在，您已設定 Office 365 ATP 和 Azure ATP，您可以在一個儀表板中查看這些功能的合併信號。 [Microsoft 威脅防護](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) (MTP) 會將警示、事件、自動化調查和回應，以及跨工作負載的高級搜尋，結合 (Azure ATP、OFFICE 365 ATP、MICROSOFT Defender ATP 和 Microsoft Cloud App Security) 成單一窗格 [security.microsoft.com](https://security.microsoft.com)。
+現在，您已設定 Microsoft Defender for Office 365 和 Microsoft Defender 的身分識別，您可以在一個儀表板中查看這些功能的合併信號。 [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 彙集了警示、事件、自動化調查與回應，以及跨工作負載的高級搜尋 (Microsoft Defender for Identity，Defender for Office 365，microsoft Defender for Endpoint，以及 Microsoft Cloud App Security) 在 [security.microsoft.com](https://security.microsoft.com)中的單一窗格。
 
 ![MTP 儀表板圖例](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
-在您設定一或多個高級威脅防護服務後，開啟 MTP。 新功能會持續新增至 MTP;請考慮改為接收預覽功能。
+在您設定一或多個 Office 365 服務的 Defender 後，請開啟 MTP。 新功能會持續新增至 MTP;請考慮改為接收預覽功能。
 
 - [深入瞭解 MTP](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
 - [開啟 MTP](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)
@@ -173,7 +173,7 @@ Microsoft Intune 行動應用程式管理 (MAM) 可讓您在不管理這些裝�
 
 註冊裝置後，請使用一般身分 [識別和裝置存取原則](./office-365-security/identity-access-policies.md) 中的指導方針來建立下列原則：
 
-- [定義裝置相容性原則](./office-365-security/identity-access-policies.md#define-device-compliance-policies) -Windows 10 的建議設定包括要求病毒防護。 如果您有 Microsoft 365 E5，請使用 Microsoft Defender 高級威脅防護來監視員工裝置的健康情況。 請確定其他作業系統的相容性原則包括防防毒保護和端點保護軟體。
+- [定義裝置相容性原則](./office-365-security/identity-access-policies.md#define-device-compliance-policies) -Windows 10 的建議設定包括要求病毒防護。 如果您有 Microsoft 365 E5，請使用 Microsoft Defender for Endpoint 來監視員工裝置的健康情況。 請確定其他作業系統的相容性原則包括防防毒保護和端點保護軟體。
 - [需要相容的電腦](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) -這是 Azure AD 中強制執行裝置合規性原則的條件式存取規則。
 
 只有一個組織可以管理裝置，因此請務必從 Azure AD 中的條件式存取規則中排除來賓帳戶。 如果您未從需要裝置規範的原則中排除來賓和外部使用者，這些原則將會封鎖這些使用者。 如需詳細資訊，請參閱 [更新共同原則以允許及保護來賓和外部存取](./office-365-security/identity-access-policies-guest-access.md)。
@@ -247,6 +247,6 @@ Microsoft 365 包含數種監視狀態和採取適當動作的方式。 您最�
 
 ## <a name="next-steps"></a>後續步驟
 
-恭喜！ 您很快就會執行一些最重要的安全性保護，而且您的組織會有更安全的安全性。 現在，您已準備好繼續使用威脅防護功能 (包括 Microsoft Defender 高級威脅防護) 、資料分類和保護功能，以及保護系統管理帳戶。 如需 Microsoft 365 的更深層的安全性建議，請參閱 [microsoft 365 Business 決策者 (bdm) ](Microsoft-365-security-for-bdm.md)中的安全性。
+恭喜您！ 您很快就會執行一些最重要的安全性保護，而且您的組織會有更安全的安全性。 現在，您已準備好繼續進行威脅防護功能 (包括 Microsoft Defender for Endpoint) 、資料分類及保護功能，以及保護系統管理帳戶。 如需 Microsoft 365 的更深層的安全性建議，請參閱 [microsoft 365 Business 決策者 (bdm) ](Microsoft-365-security-for-bdm.md)中的安全性。
 
 另外，請 [docs.microsoft.com/security](https://docs.microsoft.com/security)中的 Microsoft 新的安全性中心。

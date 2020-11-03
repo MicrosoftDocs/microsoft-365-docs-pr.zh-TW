@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解安全性 & 規範中心提供的智慧報告和洞察力，以及如何使用它們來查看及流覽資料，並快速採取動作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f8094c46868118bb88858dab6cd12b2427382be
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d6a73e93de79f346fb1bce8da23e25194d202191
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196332"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845513"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的智慧型報告和深入解析
 
@@ -42,19 +42,19 @@ ms.locfileid: "48196332"
   
 ## <a name="types-of-reports-in-the-security--compliance-center"></a>安全性 & 規範中心內的報告類型
 
-安全性 & 規範中心提供各種各樣的報表。  (移至 [ **報告**] \> **儀表板** 以取得完整的視圖。 ) 下表列出可用的報表，其連結可深入瞭解：
+安全性 & 規範中心提供各種各樣的報表。  (移至 [ **報告** ] \> **儀表板** 以取得完整的視圖。 ) 下表列出可用的報表，其連結可深入瞭解：
 
 ****
 
 |資訊類型|如何到該處|移至何處以深入瞭解|
 |---|---|---|
-|**安全性 & 規範中心報告** (全部)   <br/> 熱門洞察力和建議，以及安全性 & 符合性報告的連結，包括資料遺失防護報告、標籤、電子郵件安全性報告、高級威脅防護報告等等|在安全性 & 規範中心內，移至 [ **報告**] \> **儀表板**|[在 Microsoft 365 的安全性中心監控和查看報告](../mtp/monitoring-and-reporting.md)|
+|**安全性 & 規範中心報告** (全部)   <br/> 熱門洞察力和建議，以及安全性 & 符合性報告的連結，包括資料遺失防護報告、標籤、電子郵件安全性報告、Office 365 報告的 Defender 等等|在安全性 & 規範中心內，移至 [ **報告** ] \> **儀表板**|[在 Microsoft 365 的安全性中心監控和查看報告](../mtp/monitoring-and-reporting.md)|
 |**資料外洩防護** <br/> 資料外洩防護原則符合項目、誤判和覆寫，以及建立或編輯原則的連結|在安全性 & 規範中心內，移至 **資料遺失防護** \> **原則**|[檢視資料外洩防護報告](../../compliance/view-the-dlp-reports.md)|
-|**資料管理** <br/> 如何套用標籤、分類為記錄的標籤、標籤趨勢等等相關資訊|在 [安全性 & 規範中心] 中，移至 [ **資訊管理**] \> **儀表板**|[檢視資料控管報告](../../compliance/view-the-data-governance-reports.md)|
-|**威脅管理儀表板** (這也稱為安全性儀表板)   <br/> 威脅偵測、惡意程式碼趨勢、主要目標使用者、傳送和接收電子郵件訊息的詳細資訊等等|在 [安全性 & 規範中心] 中，移至 [ **威脅管理**] \> **儀表板**|[檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md)|
-|**威脅瀏覽器** (也稱為 explorer) 或**即時**偵測 <br/> Microsoft 365 中的電子郵件和檔案中偵測到的可疑惡意程式碼|在 [安全性 & 規範中心] 中，移至 [**威脅管理**] \> **瀏覽器**或**即時**偵測<br/> |[威脅總管 (或即時偵測)](threat-explorer.md)|
-|**高級威脅防護和電子郵件安全性報告** <br/> 電子郵件安全性和威脅防護報告 (包括惡意程式碼、垃圾郵件、網路釣魚和欺騙性報告) |在安全性 & 規範中心內，移至 [ **報告**] \> **儀表板**|[檢視 Office 365 進階威脅防護的報告](view-reports-for-atp.md) <br/><br/> [檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)|
-|**郵件流程** <br/> 傳送和接收電子郵件訊息、最近的警示、排名最前面的寄件者及收件者、電子郵件轉寄報告等等相關資訊|在 [安全性 & 規範中心] 中，移至 [ **郵件流程**] \> **儀表板** 和 [ **報告**] \> **儀表板**|[安全性與合規性中心內的郵件流程深入解析](mail-flow-insights-v2.md) <br/><br/> [在安全性 & 規範中心內，查看郵件流程報告](view-mail-flow-reports.md)|
+|**資料管理** <br/> 如何套用標籤、分類為記錄的標籤、標籤趨勢等等相關資訊|在 [安全性 & 規範中心] 中，移至 [ **資訊管理** ] \> **儀表板**|[檢視資料控管報告](../../compliance/view-the-data-governance-reports.md)|
+|**威脅管理儀表板** (這也稱為安全性儀表板)   <br/> 威脅偵測、惡意程式碼趨勢、主要目標使用者、傳送和接收電子郵件訊息的詳細資訊等等|在 [安全性 & 規範中心] 中，移至 [ **威脅管理** ] \> **儀表板**|[查看 Office 365 的 Defender 報告](view-reports-for-atp.md)|
+|**威脅瀏覽器** (也稱為 explorer) 或 **即時** 偵測 <br/> Microsoft 365 中的電子郵件和檔案中偵測到的可疑惡意程式碼|在 [安全性 & 規範中心] 中，移至 [ **威脅管理** ] \> **瀏覽器** 或 **即時** 偵測<br/> |[威脅總管 (或即時偵測)](threat-explorer.md)|
+|**Office 365 和電子郵件安全性報告的 Defender** <br/> 電子郵件安全性和威脅防護報告 (包括惡意程式碼、垃圾郵件、網路釣魚和欺騙性報告) |在安全性 & 規範中心內，移至 [ **報告** ] \> **儀表板**|[查看 Office 365 的 Defender 報告](view-reports-for-atp.md) <br/><br/> [檢視安全性與合規性中心內的電子郵件安全性報告](view-email-security-reports.md)|
+|**郵件流程** <br/> 傳送和接收電子郵件訊息、最近的警示、排名最前面的寄件者及收件者、電子郵件轉寄報告等等相關資訊|在 [安全性 & 規範中心] 中，移至 [ **郵件流程** ] \> **儀表板** 和 [ **報告** ] \> **儀表板**|[安全性與合規性中心內的郵件流程深入解析](mail-flow-insights-v2.md) <br/><br/> [在安全性 & 規範中心內，查看郵件流程報告](view-mail-flow-reports.md)|
 |**GDPR 規範** <br/> GDPR 合規性的相關資訊，包括資料主體的連結、標籤趨勢，以及使用中 & 關閉的案例|在安全性 & 規範中心內，移至 **資料隱私權** \> **GDPR 儀表板**|[GDPR 的 Office 365 資訊保護](https://docs.microsoft.com/microsoft-365/compliance/office-365-information-protection-for-gdpr)|
 |**審核記錄** <br/> Microsoft 365 活動、使用者、檔案或資料夾等等相關資訊|在安全性 & 規範中心內，移至 **搜尋 & 調查** \> **審核記錄搜尋**|[在安全性 & 規範中心搜尋審核記錄檔](../../compliance/search-the-audit-log-in-security-and-compliance.md)|
 |**規範報告** <br/> FedRAMP 報告、控管、風險和合規性報告、ISO 資訊安全性管理報告及服務組織控制稽核與評定報告|在安全性 & 規範中心內，移至 **服務保證** \> **符合性報告**|[規劃 Office 365 的安全性 & 合規性](../../compliance/plan-for-security-and-compliance.md)|

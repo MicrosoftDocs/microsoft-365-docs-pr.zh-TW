@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ee93840cb6855d776d8fd3007bc6ec7c7f44fa29
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 28f438c80f2da5740f7fcd0a2927fede1af6eb50
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47308060"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844065"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路設定
 
@@ -60,7 +60,7 @@ Windows 10 企業版，包含 Windows 更新（商務） | [管理 Windows 10 �
 Microsoft 365 | [Microsoft 365 URL 與 IP 位址範圍](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [混合式識別所需的埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) 和 Active Directory [網域服務埠需求](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune 網路設定需求](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Microsoft Intune 的網路端點](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
-Microsoft Defender 進階威脅防護 (ATP) | [Microsoft Defender ATP 端點](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+適用於端點的 Microsoft Defender | [Microsoft Defender for Endpoint 需求](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 Windows Autopilot | [Windows Autopilot 網路需求](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 <!---

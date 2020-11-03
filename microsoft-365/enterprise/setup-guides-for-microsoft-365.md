@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 使用設定指南，加速規劃和設定 Microsoft 365 或 Office 365。
-ms.openlocfilehash: 215f51af1fc553ef0710565af0a7c25111de8328
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 7024494de231e5adcce4bb91414b5f7bb3349f88
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493694"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844089"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服務的設定指南
 
@@ -36,13 +36,13 @@ Microsoft 365 和 Office 365 安裝指南為您提供有關規劃及部署租使
 
 您可以從 Microsoft 365 系統管理中心的「 [安裝指導](https://aka.ms/setupguidance) 方針」頁面存取安裝指南。 您可以追蹤進度的狀態，而且您可以隨時退回以完成指南。 若要到達 **安裝指導** 頁面：
 
-1. 在[Microsoft 365 系統管理中心](https://admin.microsoft.com/)中，移**至首頁。**
+1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)中，移 **至首頁。**
 
 2. 找到 **訓練 & 輔助** 卡。 
 
    ![Microsoft 365 系統管理中心的訓練 & 指南卡片](../media/setup-guides-for-microsoft-365/adminportal-trainingandguides.png)
 
-3. 選取 [ **自訂安裝指導**方針]。
+3. 選取 [ **自訂安裝指導** 方針]。
 
    ![Microsoft 365 系統管理中心中安裝指導頁面的螢幕擷取畫面](../media/setup-guides-for-microsoft-365/adminportal-setupguidance.png)
 
@@ -135,12 +135,12 @@ Windows 虛擬機器是雲端中執行的綜合桌面和應用程式虛擬化服
 
 ## <a name="guides-for-security-and-compliance"></a>安全性與合規性指南
 
-### <a name="microsoft-defender-advanced-threat-protection-atp-advisor"></a>Microsoft Defender 高級威脅防護 (ATP) 顧問
+### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender for Endpoint advisor
 
-[Microsoft Defender 高級威脅防護顧問](https://aka.ms/mdatpsetup)提供說明，可協助您的商業網路避免、偵測、調查和回應高級威脅。 作出明智的組織弱點評估，並決定最佳的部署套件和設定方法。 
+[Microsoft Defender For Endpoint advisor](https://aka.ms/mdatpsetup)提供說明，可協助您的商業網路防止、偵測、調查和回應高級威脅。 作出明智的組織弱點評估，並決定最佳的部署套件和設定方法。 
 
 >[!NOTE]
->Microsoft Defender ATP 需要 Microsoft 大量授權。
+>Microsoft Defender for Endpoint 需要 Microsoft 大量授權。
 
 ### <a name="exchange-online-protection-setup-guide"></a>Exchange Online Protection 安裝指南
 
@@ -148,9 +148,9 @@ Microsoft Exchange Online Protection (EOP) 是雲端式電子郵件篩選服務�
 
 使用 [Exchange Online Protection 設定指南](https://aka.ms/EOPguidance) 來設定 EOP，方法是選取下列三個部署案例中的哪一個部署案例 &mdash; 、混合式 (混合使用內部部署和雲端) 信箱，或所有雲端信箱 &mdash; 符合您的組織。 本指南提供的資訊和資源可用於設定及審閱使用者的授權、在 Microsoft 365 系統管理中心中指派許可權，以及在安全性 & 規範中心內設定組織的反惡意程式碼和垃圾郵件原則。 
 
-### <a name="office-365-advanced-threat-protection-advisor"></a>Office 365 高級威脅防護顧問
+### <a name="microsoft-defender-for-office-365-advisor"></a>Microsoft Defender for Office 365 advisor
 
-[Office 365 Advanced 威脅防護顧問](https://aka.ms/oatpsetup)會保護您的組織免受您的環境可能透過電子郵件訊息、連結及協力廠商共同作業工具帶來的惡意威脅。 本指南為您提供資源及資訊，可協助您準備及識別符合組織需求的高級威脅防護計畫。 
+[Microsoft Defender For Office 365 advisor](https://aka.ms/oatpsetup)會針對您的環境所遭受的惡意威脅（透過電子郵件訊息、連結和協力廠商共同作業工具）加以保護。 本指南為您提供資源及資訊，可協助您準備及識別 Office 365 的 Defender，以符合組織的需求。 
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Microsoft 資訊保護安裝指南
 

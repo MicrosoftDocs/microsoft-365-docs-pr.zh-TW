@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a01a0599776c33d46850bcd0a5fbc6c3377056fa
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 3c57f608a8abdb9ce08efa663b7a88d9e4a684aa
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208295"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843359"
 ---
 # <a name="isoiec-270172015-code-of-practice-for-information-security-controls"></a>資訊安全性控制的 ISO/IEC 27017:2015 工作條例規定
 
@@ -46,7 +46,7 @@ ISO/IEC 27017 在為雲端服務提供者和雲端服務客戶提供指導方針
 - [Azure、Azure Government 和 Azure 德國](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
 - [Dynamics 365、Dynamics 365 和 Dynamics 365 德國](https://aka.ms/d365-compliance-list)
-- Microsoft Defender 進階威脅防護
+- 適用於端點的 Microsoft Defender
 - Microsoft Graph
 - Microsoft Healthcare Bot
 - Intune
@@ -87,7 +87,7 @@ Microsoft 雲端服務會每年隨著 ISO/IEC 27001:2013 的認證程序，針�
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
 
-[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評估。 可在合規性管理員的 **[評估範本]** 頁面尋找範本。 瞭解如何[在合規性管理員中建立評估](compliance-manager-assessments.md)。
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性態勢，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評定。 可在合規性管理員的 [評定範本] 頁面尋找範本。 了解如何[在合規性管理員中建立評定](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

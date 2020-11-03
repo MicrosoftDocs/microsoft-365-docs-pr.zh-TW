@@ -1,6 +1,6 @@
 ---
 title: 高級搜尋 APIs
-description: 瞭解如何使用 Microsoft 威脅防護 API 執行高級搜尋查詢
+description: 瞭解如何使用 Microsoft 365 Defender API 執行高級搜尋查詢
 keywords: 高級搜尋、APIs、api、MTP
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,20 +19,20 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: dd7b02200e370588bbb9470a3d7e897b30234ead
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197806"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844029"
 ---
 # <a name="advanced-hunting-apis"></a>高級搜尋 APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -46,7 +46,7 @@ ms.locfileid: "48197806"
 
 
 ## <a name="permissions"></a>權限
-需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [Access The Microsoft 威脅防護 APIs](api-access.md)
+需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [Access The Microsoft 365 Defender APIs](api-access.md)
 
 許可權類型 |   權限  |   許可權顯示名稱
 :---|:---|:---
@@ -67,7 +67,7 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 Header | 值 
 :---|:---
-授權 | 載荷 {token}。 **必要欄位**。
+授權 | 載荷 {token}。 **必要欄位** 。
 Content-Type    | application/json
 
 ## <a name="request-body"></a>要求正文
@@ -75,14 +75,14 @@ Content-Type    | application/json
 
 參數 | 類型    | 描述
 :---|:---|:---
-查詢 | 文字 |  要執行的查詢。 **必要欄位**。
+查詢 | 文字 |  要執行的查詢。 **必要欄位** 。
 
 ## <a name="response"></a>回應
 如果成功，這個方法會傳回 200 OK，並在回應內文中 _QueryResponse_ 物件。 <br><br>
 
 Response 物件會劃分成3個部分 (屬性) ：<br>
 1) ```Stats``` -查詢效能統計資料。<br>
-2) ```Schema``` -回應的架構，每個資料行的名稱類型組的清單。 <br>
+2) ```Schema``` -回應的架構，每一欄的 Name-Type 組的清單。 <br>
 3) ```Results``` -高級搜尋事件清單。
 
 ## <a name="example"></a>範例
@@ -168,4 +168,4 @@ Response 物件會劃分成3個部分 (屬性) ：<br>
 ```
 
 ## <a name="related-topic"></a>相關主題
-- [存取 Microsoft 威脅防護 APIs](api-access.md)
+- [存取 Microsoft 365 Defender APIs](api-access.md)

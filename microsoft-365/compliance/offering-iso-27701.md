@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: e156a8dc71dc9aca4a5d608b29307f4d36f0ec6b
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 697124400ab869825a0d7e46357566c82b1583b3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208135"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845041"
 ---
 # <a name="isoiec-27701-privacy-information-management-system-pims"></a>ISO/IEC 27701 隱私權資訊管理系統 (PIMS)
 
@@ -33,9 +33,9 @@ ms.locfileid: "48208135"
 
 無論貴組織的大小，預期要針對 PIMS 進行認證的廠商，都能由供應商和合作夥伴建立負責任的隱私權做法。 ISO/IEC 27701 解決三大合規性挑戰：
 
-- **要操控的法規需求太多**：透過使用一組通用的操作控制來協調多個法規需求，讓實作保持一致且有效。
-- **法規逐條稽核成本太高**：內部和第三方稽核員都可以在單一稽核週期內，使用一組通用的操作控制來評估法規合規性。
-- **承諾合規性但沒有證明具有潛在風險**：牽涉到移動個人資訊的商務合約要保證有合規性認證。
+- **要操控的法規需求太多** ：透過使用一組通用的操作控制來協調多個法規需求，讓實作保持一致且有效。
+- **法規逐條稽核成本太高** ：內部和第三方稽核員都可以在單一稽核週期內，使用一組通用的操作控制來評估法規合規性。
+- **承諾合規性但沒有證明具有潛在風險** ：牽涉到移動個人資訊的商務合約要保證有合規性認證。
 
 ## <a name="too-many-regulatory-requirements-to-juggle"></a>要操控的法規需求太多
 
@@ -84,7 +84,7 @@ ISO/IEC 27001 和 PIMS 的要點：
 - Power Virtual Agent
 - Microsoft Stream
 - Microsoft 威脅專家
-- Windows Defender 進階威脅防護
+- 適用於端點的 Microsoft Defender
 
 ## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
@@ -93,7 +93,7 @@ ISO/IEC 27001 和 PIMS 的要點：
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評定風險
 
-[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性態勢，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評定。 可在合規性管理員的 [評定範本]**** 頁面尋找範本。 了解如何[在合規性管理員中建立評定](compliance-manager-assessments.md)。
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性態勢，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評定。 可在合規性管理員的 [評定範本] 頁面尋找範本。 了解如何[在合規性管理員中建立評定](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

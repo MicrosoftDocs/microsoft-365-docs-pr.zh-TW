@@ -21,12 +21,12 @@ description: 開始使用 Microsoft Defender for Office 365 中的自動調查�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 340fc4851043ff917eaff6f237c3ad7d5810a4cb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 54dbd419380c18e23119887c93a71885c6f9ce7d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430916"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845801"
 ---
 # <a name="get-started-using-automated-investigation-and-response-air-in-office-365"></a>開始使用 Office 365 中的自動調查和回應 (AIR) 
 
@@ -62,7 +62,7 @@ ms.locfileid: "48430916"
     當擱置的修復動作獲批准 (或拒絕) 時，自動調查即完成。
 
 > [!NOTE]
-> 在 Office 365 ATP 中，不會自動採取任何修正動作。 在組織的安全性小組核准後才能採取補救動作。 
+> 在適用于 Office 365 的 Microsoft Defender 中，不會自動採取任何修正動作。 在組織的安全性小組核准後才能採取補救動作。 
 
 在自動化調查程序期間及之後，您的安全性小組可以執行下列動作：
 

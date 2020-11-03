@@ -1,6 +1,6 @@
 ---
-title: Microsoft 威脅防護的新增功能
-description: 列出 Microsoft 威脅防護中的新功能與功能
+title: Microsoft 365 Defender 的新功能
+description: 列出 Microsoft 365 Defender 中的新功能與功能
 keywords: microsoft 威脅防護中的新功能，ga，一般可用，功能，可用，新
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,19 +17,19 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 1b3cc273b61fcdff3c01b30c9ef64619a0e7a368
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 5214f7c399ab511ec16231e4dda97a2c33b37668
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430394"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844701"
 ---
-# <a name="whats-new-in-microsoft-threat-protection"></a>Microsoft 威脅防護的新增功能
+# <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-在最新版本的 Microsoft 威脅防護中， (GA) 一般都有下列功能可供使用。
+在最新版本的 Microsoft 365 Defender 中， (GA) 一般都有下列功能可供使用。
 
 RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此頁面的通知：
 ```http

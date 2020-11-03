@@ -1,6 +1,6 @@
 ---
-title: Hello World for Microsoft 威脅防護 REST API
-description: 瞭解如何建立應用程式，並使用權杖來存取 Microsoft 威脅防護 APIs
+title: Microsoft 365 Defender REST API 的 Hello World 版
+description: 瞭解如何建立應用程式，並使用權杖來存取 Microsoft 365 Defender APIs
 keywords: 應用程式、權杖、存取、aad、app、application registration、powershell、script、全域管理員、許可權
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,20 +19,20 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: cdf3f6a0c007763d2772233b1a299d59c931b2e5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: bd4f7e5485d67cf74477900ae2cc5c77f1a6ee41
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201324"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844041"
 ---
-# <a name="hello-world-for-microsoft-threat-protection-rest-api"></a>Hello World for Microsoft 威脅防護 REST API 
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Microsoft 365 Defender REST API 的 Hello World 版 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -50,24 +50,24 @@ ms.locfileid: "48201324"
 
 ### <a name="step-1---create-an-app-in-azure-active-directory"></a>步驟 1-在 Azure Active Directory 中建立應用程式
 
-1. 使用您的**全域系統管理員**使用者登入[Azure](https://portal.azure.com) 。
+1. 使用您的 **全域系統管理員** 使用者登入 [Azure](https://portal.azure.com) 。
 
-2. 流覽至 [ **Azure Active Directory**  >  **應用程式註冊**]  >  **新註冊**。 
+2. 流覽至 [ **Azure Active Directory**  >  **應用程式註冊** ]  >  **新註冊** 。 
 
    ![Microsoft Azure 的影像及應用程式註冊導覽](../../media/atp-azure-new-app2.png)
 
-3. 在 [註冊] 表單中，選擇應用程式的名稱，然後選取 [ **註冊**]。
+3. 在 [註冊] 表單中，選擇應用程式的名稱，然後選取 [ **註冊** ]。
 
-4. 讓您的應用程式能夠存取 Microsoft Defender ATP，並指派它 **讀取所有的事件** 許可權：
+4. 允許應用程式存取 Microsoft Defender for Endpoint，並指派它 **讀取所有的事件** 許可權：
 
-   - 在 [應用程式] 頁面上，選取 [ **API 許可權**  >  **新增許可權**]  >  **APIs 我的組織使用**> 輸入**microsoft 威脅防護**，並選取 [ **microsoft 威脅防護**]。
+   - 在 [應用程式] 頁面上，選取 [ **API 許可權**  >  **新增許可權** ]  >  **APIs 我的組織使用** > 輸入 **microsoft 365 defender** ，然後在 **microsoft 365 defender** 上選取。
 
    >[!NOTE]
-   >Microsoft 威脅防護不會出現在原始清單中。 您必須先在文字方塊中寫入其名稱，才能看到顯示的名稱。
+   >Microsoft 365 Defender 未出現在原始清單中。 您必須先在文字方塊中寫入其名稱，才能看到顯示的名稱。
 
    ![API 存取和 API 選取的影像](../../media/apis-in-my-org-tab.PNG)
 
-   - 選擇 [**應用程式許可權**]  >  **事件。讀取。所有**> 在 [**新增] 許可權**上選取
+   - 選擇 [ **應用程式許可權** ]  >  **事件。讀取。所有** > 在 [ **新增] 許可權** 上選取
 
    ![API 存取和 API 選取的影像](../../media/request-api-permissions.PNG)
 
@@ -78,7 +78,7 @@ ms.locfileid: "48201324"
 
      - 若要決定您需要的許可權，請參閱您想要呼叫之 API 中的 [ **許可權** ] 區段。
 
-5. 選取 **[授與系統管理員同意**]
+5. 選取 **[授與系統管理員同意** ]
 
     - >[!NOTE]
       > 每次您新增許可權時，您必須選取 **[授與同意** 才能讓新許可權同意] 生效。
@@ -87,10 +87,10 @@ ms.locfileid: "48201324"
 
 6. 將密碼新增至應用程式。
 
-    - 選取 [ **& 密碼的憑證**]，將 description 新增至 [密碼]，然後選取 [ **新增**]。
+    - 選取 [ **& 密碼的憑證** ]，將 description 新增至 [密碼]，然後選取 [ **新增** ]。
 
     >[!IMPORTANT]
-    > 選取 [ **新增**] 之後，請 **複製產生的密碼值**。 離開後，您將無法進行找回！
+    > 選取 [ **新增** ] 之後，請 **複製產生的密碼值** 。 離開後，您將無法進行找回！
 
     ![建立應用程式機碼的影像](../../media/webapp-create-key2.png)
 
@@ -105,8 +105,8 @@ ms.locfileid: "48201324"
 
 ### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>步驟 2-使用此應用程式取得權杖，並使用此權杖來存取 API。
 
--   將下列腳本複製到 PowerShell ISE 或文字編輯器，並將其儲存為 "**Get-Token.ps1**"
--   執行此腳本會產生權杖，並將其儲存在工作資料夾中，名稱為 "**Latest-token.txt**" 的資料夾。
+-   將下列腳本複製到 PowerShell ISE 或文字編輯器，並將其儲存為 " **Get-Token.ps1** "
+-   執行此腳本會產生權杖，並將其儲存在工作資料夾中，名稱為 " **Latest-token.txt** " 的資料夾。
 
 ```
 # That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
@@ -143,7 +143,7 @@ return $token
 ### <a name="lets-get-the-incidents"></a>讓我們能夠取得事件！
 
 -   下列腳本將使用 **Get-Token.ps1** 來存取 API，並在過去48小時內取得最後一次更新的事件。
--   將此腳本儲存在您儲存先前腳本 **Get-Token.ps1**的相同資料夾中。 
+-   將此腳本儲存在您儲存先前腳本 **Get-Token.ps1** 的相同資料夾中。 
 -   編寫 json 檔案的腳本，該檔案與腳本位於相同的資料夾中。
 
 ```
@@ -188,6 +188,6 @@ Out-File -FilePath $outputJsonPath -InputObject $incidents
 
 
 ## <a name="related-topic"></a>相關主題
-- [存取 Microsoft 威脅防護 APIs](api-access.md)
-- [使用應用程式內容存取 Microsoft 威脅防護](api-create-app-web.md)
-- [使用使用者內容存取 Microsoft 威脅防護](api-create-app-user-context.md)
+- [存取 Microsoft 365 Defender APIs](api-access.md)
+- [使用應用程式內容存取 Microsoft 365 Defender](api-create-app-web.md)
+- [使用使用者內容存取 Microsoft 365 Defender](api-create-app-user-context.md)

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 深入瞭解 SharePoint 線上如何在使用者上傳的檔案中偵測病毒，並防止使用者下載或同步處理檔案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 38d6111fe665e0af79cbd93f534b1058881ff76c
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: f774c9afd0988c504d6207b0e71ee9561312e6b4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327984"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844233"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive 和 Microsoft 團隊中內建的病毒防護
 
@@ -37,7 +37,7 @@ Microsoft 365 使用常見的病毒偵測引擎，掃描使用者上傳至 Share
 
 ## <a name="what-happens-when-an-infected-file-is-uploaded-to-sharepoint-online"></a>將感染的檔案上傳至 SharePoint 線上時，會發生什麼情況？
 
-Microsoft 365 病毒偵測引擎會在線上 SharePoint 內非同步執行。 **上載時不會自動掃描所有**檔案。 啟發式決定要掃描的檔案。 當發現檔案包含病毒時，會對該檔案進行標記，使其無法再次下載。 在4月2018，我們已移除已掃描檔案的 25 MB 限制。
+Microsoft 365 病毒偵測引擎會在線上 SharePoint 內非同步執行。 **上載時不會自動掃描所有** 檔案。 啟發式決定要掃描的檔案。 當發現檔案包含病毒時，會對該檔案進行標記，使其無法再次下載。 在4月2018，我們已移除已掃描檔案的 25 MB 限制。
 
 會發生下列情況：
 
@@ -57,7 +57,7 @@ Microsoft 365 病毒偵測引擎會在線上 SharePoint 內非同步執行。 **
 
 > [!NOTE]
 >
-> 系統管理員可以在 SharePoint 線上 PowerShell 的[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)指令程式上使用*DisallowInfectedFileDownload*參數，以防止使用者在未感染的檔案中下載感染的檔案，即使在反病毒警告視窗中也是一樣。 如需相關指示，請參閱 [使用 SharePoint 線上 PowerShell 以避免使用者下載惡意](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)檔案。
+> 系統管理員可以在 SharePoint 線上 PowerShell 的 [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant)指令程式上使用 *DisallowInfectedFileDownload* 參數，以防止使用者在未感染的檔案中下載感染的檔案，即使在反病毒警告視窗中也是一樣。 如需相關指示，請參閱 [使用 SharePoint 線上 PowerShell 以避免使用者下載惡意](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)檔案。
 >
 > 一旦您啟用 *DisallowInfectedFileDownload* 參數，就會完全封鎖使用者和系統管理員對偵測到的/封鎖檔案的存取。
 
@@ -65,10 +65,10 @@ Microsoft 365 病毒偵測引擎會在線上 SharePoint 內非同步執行。 **
 
 OneDrive 同步處理用戶端將不會下載含有病毒的檔案。 同步處理用戶端會顯示無法同步處理檔案的通知。
 
-## <a name="extended-capabilities-with-office-365-advanced-threat-protection"></a>使用 Office 365 高級威脅防護的延伸功能
+## <a name="extended-capabilities-with-microsoft-defender-for-office-365"></a>使用 Microsoft Defender for Office 365 的延伸功能
 
-具有 [Office 365 高級威脅防護 ](office-365-atp.md) 的 Microsoft 365 組織 (包含在其訂閱中的 atp) 或以附加元件形式購買，可為 SharePoint、OneDrive 和 Microsoft 團隊啟用 atp，以增強報表和保護。 如需詳細資訊，請參閱 [SharePoint、OneDrive 和 Microsoft 小組的 ATP](atp-for-spo-odb-and-teams.md)。
+包含 [Microsoft Defender For Office 365](office-365-atp.md) 的 microsoft 365 組織在其訂閱中或以附加元件形式購買，可為 SharePoint、OneDrive 和 Microsoft 團隊啟用 ATP，以增強報表與保護。 如需詳細資訊，請參閱 [SharePoint、OneDrive 和 Microsoft 小組的 ATP](atp-for-spo-odb-and-teams.md)。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 如需 SharePoint 線上、OneDrive 和 Microsoft 小組的防病毒相關資訊，請參閱 [防範威脅](protect-against-threats.md) 及 [開啟 SharePoint、OneDrive 及 MICROSOFT 小組的 ATP](turn-on-atp-for-spo-odb-and-teams.md)。

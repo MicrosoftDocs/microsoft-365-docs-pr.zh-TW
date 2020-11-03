@@ -1,6 +1,6 @@
 ---
-title: 受支援的 Microsoft 威脅防護 API
-description: 受支援的 Microsoft 威脅防護 API
+title: 支援的 Microsoft 365 Defender APIs
+description: 支援的 Microsoft 365 Defender APIs
 keywords: MTP、APIs、api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,19 +19,19 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: fda90945f09abfadfe56ea11469687130d88b2a7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b7c0accf2d649d4ad6177260294922ee17783f2c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203692"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844957"
 ---
-# <a name="supported-microsoft-threat-protection-apis"></a>受支援的 Microsoft 威脅防護 API 
+# <a name="supported-microsoft-365-defender-apis"></a>支援的 Microsoft 365 Defender APIs 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.

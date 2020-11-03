@@ -16,13 +16,13 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 深入瞭解 Office 365 Advanced 威脅防護方案2中自動化調查和回應功能的修復動作。
-ms.openlocfilehash: 1df963a77054e1adc9a290e976be5998d6298436
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: 深入瞭解 Microsoft Defender for Office 365 方案2中自動調查和回應功能的修復動作。
+ms.openlocfilehash: 7dc5c0ba2e320e3f140d26e79e5c2e4a8fde79d7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446624"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844557"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>在 Office 365 中進行自動調查後，查看擱置或已完成的修復動作
 
@@ -41,9 +41,9 @@ ms.locfileid: "48446624"
 
 1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這樣會帶您前往安全性與合規性中心。
 
-2. 移至 [威脅管理]****  >  [調查]****。
+2. 移至 [威脅管理]  >  [調查]。
 
-3. 在調查清單中，選取 [識別碼]**** 欄中的項目。 
+3. 在調查清單中，選取 [識別碼] 欄中的項目。 
 
 4. 選取 [ **動作** ] 索引標籤。
 

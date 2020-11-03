@@ -21,19 +21,19 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: 瞭解 Office 365 的高級威脅防護，以瞭解 SharePoint Online 中的檔案、商務 OneDrive 商務和 Microsoft 團隊。
-ms.openlocfilehash: e536809c74abbe87e1250acda3f3922180cfae97
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: 深入瞭解 Microsoft Defender for Office 365，以瞭解 SharePoint Online 中的檔案、商務 OneDrive，以及 Microsoft 團隊。
+ms.openlocfilehash: 7b007671a7fecb3ae074fd07ce38d17fb025f6b4
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446260"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844329"
 ---
 # <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-在 [Office 365 Advanced 威脅防護 ](office-365-atp.md) 中，SharePoint、OneDrive 和 Microsoft 小組的 ATP， (ATP) 為已在上載時已掃描的檔案，針對 [Microsoft 365 中的常見病毒偵測引擎](virus-detection-in-spo.md)，提供額外的保護層級。 SharePoint、OneDrive 和 Microsoft 團隊的 ATP 可協助偵測和封鎖在小組網站和文件庫中識別為惡意的現有檔案。
+[Microsoft Defender For Office 365](office-365-atp.md)中 SharePoint、OneDrive 和 Microsoft 小組的 ATP 為[microsoft 365 中的常見病毒偵測引擎](virus-detection-in-spo.md)，針對在上傳時已掃描的檔案，提供額外的保護層級。 SharePoint、OneDrive 和 Microsoft 團隊的 ATP 可協助偵測和封鎖在小組網站和文件庫中識別為惡意的現有檔案。
 
 預設不會啟用 SharePoint、OneDrive 和 Microsoft 團隊的 ATP。 若要將其開啟，請參閱 [開啟 ATP 的 SharePoint、OneDrive 和 Microsoft 團隊](turn-on-atp-for-spo-odb-and-teams.md)。
 
@@ -59,14 +59,14 @@ SharePoint Online admins 可防止使用者下載惡意檔案。 如需相關指
 
 ## <a name="view-information-about-malicious-files-detected-by-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>針對 SharePoint、OneDrive 和 Microsoft 小組，查看 ATP 所偵測到之惡意檔案的相關資訊。
 
-由 ATP 識別為惡意的檔案，會顯示在 [Office 365 Advanced 威脅防護](view-reports-for-atp.md) 和 [Explorer (和即時偵測) ](threat-explorer.md)中的報告。
+Microsoft Defender for Office 365 所識別為惡意的檔案，會顯示 [Microsoft defender For office 365](view-reports-for-atp.md) 及 [Explorer (和即時偵測) ](threat-explorer.md)中的報告。
 
-從5月2018日到5月，當檔案是由 ATP 識別為惡意時，檔案也會存在於隔離區中。 如需詳細資訊，請參閱 [使用安全性 & 合規性中心管理隔離](manage-quarantined-messages-and-files.md#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)的檔案。
+從5月2018，當檔案被 Microsoft Defender for Office 365 識別為惡意檔時，檔案也會存在於隔離區中。 如需詳細資訊，請參閱 [使用安全性 & 合規性中心管理隔離](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)的檔案。
 
 ## <a name="keep-these-points-in-mind"></a>請記住下列重點
 
-- ATP 不會掃描 SharePoint Online、商務用 OneDrive 或 Microsoft Teams 中的每個單一檔案。 原先的設計就是如此。 檔會以非同步方式掃描。 此程式會使用共用和來賓活動事件，以及智慧試探法和威脅信號，識別惡意檔案。
+- Office 365 的 Defender 不會掃描 SharePoint Online、商務 OneDrive 或 Microsoft 團隊中的每一個檔案。 這是原本設計的做法。 檔會以非同步方式掃描。 此程式會使用共用和來賓活動事件，以及智慧試探法和威脅信號，識別惡意檔案。
 
-- 請確認您的 SharePoint 網站已設定為使用[新式體驗](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)。 ATP 保護會套用是否使用新式經驗或傳統模式;不過，只有在新式的體驗中，才可使用已封鎖檔案的視覺指示器。
+- 請確認您的 SharePoint 網站已設定為使用[新式體驗](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience)。 Office 365 的 Defender 防護會套用是否使用新式經驗或傳統模式;不過，只有在新式的體驗中，才可使用已封鎖檔案的視覺指示器。
 
-- SharePoint、OneDrive 和 Microsoft 團隊的 ATP 是組織整體威脅防護策略的一部分，其中包括 Exchange Online Protection (EOP) 中的反垃圾郵件和反惡意程式碼保護，以及 Office 365 ATP 中的安全連結和安全附件。 若要深入了解，請參閱[防範 Office 365 中的威脅](protect-against-threats.md)。
+- SharePoint、OneDrive 和 Microsoft 團隊的 ATP 是組織整體威脅防護策略的一部分，其中包括 Exchange Online Protection (EOP) 中的反垃圾郵件和反惡意程式碼保護，以及 Microsoft Defender for Office 365 中的安全連結和安全附件。 若要深入了解，請參閱[防範 Office 365 中的威脅](protect-against-threats.md)。

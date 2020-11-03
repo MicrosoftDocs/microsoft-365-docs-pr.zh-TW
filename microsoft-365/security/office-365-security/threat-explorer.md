@@ -18,18 +18,18 @@ ms.collection:
 - m365initiative-defender-office365
 description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ae2c53f12465fd1d6ef5c5e4bd24309467be008
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769373"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845672"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
-如果您的組織具備 [office 365 的「高級威脅防護](office-365-atp.md) 」 (OFFICE 365 ATP) ，且您具有 [必要的許可權](#required-licenses-and-permissions)，您就會有 **瀏覽器** 或 **即時** 偵測 (先前的 *即時報告* -- [請參閱「新增功能](#new-features-in-threat-explorer-and-real-time-detections)！ ) 」。 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** ]，然後選擇 [ **Explorer** ] _或_ [ **即時** 偵測]。
+如果您的組織有 [Microsoft Defender For Office 365](office-365-atp.md)，而您具有 [必要的許可權](#required-licenses-and-permissions)，則您 **的 Explorer** 或 **即時** 偵測 (以前的 *即時報告* -- [請參閱](#new-features-in-threat-explorer-and-real-time-detections)最近更新！ ) 。 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** ]，然後選擇 [ **Explorer** ] _或_ [ **即時** 偵測]。
 
-|在 ATP 方案 2，您會看到：|在 ATP 方案 1，您會看到：|
+|使用 Microsoft Defender for Office 365 方案2，您會看到：|使用 Microsoft Defender for Office 365 方案1，您會看到：|
 |---|---|
 |![威脅總管](../../media/threatmgmt-explorer.png)|![即時偵測](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -42,18 +42,18 @@ ms.locfileid: "48769373"
 
 - [查看 Microsoft 365 的安全性功能偵測到的惡意程式碼](#see-malware-detected-in-email-by-technology)
 - [檢視網路釣魚 URL 並按一下結果](#view-data-about-phishing-urls-and-click-verdict)
-- [從總管中的檢視啟動自動化的調查和回應程序](#start-automated-investigation-and-response) (僅限 ATP 方案 2)
+- [從瀏覽器中的視圖開始自動調查和回應](#start-automated-investigation-and-response) 程式 (Office 365 的 Defender for Office 方案 2) 
 - ... [調查惡意電子郵件等功能](#more-ways-to-use-explorer-or-real-time-detections)！
 
 
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>豐富威脅瀏覽器和即時偵測的增強功能
 
-## <a name="tags-in-threat-explorer"></a>威脅瀏覽器中的標記
+### <a name="tags-in-threat-explorer"></a>威脅瀏覽器中的標記
 
 > [!NOTE]
 > 使用者標記功能是在預覽中，並非所有人都可以使用，而且可能會變更。 如需發行排程的相關資訊，請參閱 Microsoft 365 藍圖。
 
-使用者標記是 Microsoft Defender for Office 365 中特定使用者群組的識別碼。 如需有關標記、授權和設定標記的詳細資訊，請參閱下列網址： [Office 365 ATP 中的使用者標記](user-tags.md)。
+使用者標記是 Microsoft Defender for Office 365 中特定使用者群組的識別碼。 如需有關標記、授權和設定標記的詳細資訊，請參閱 [Office 365 的 Defender For User tags](user-tags.md)。
 
 在威脅瀏覽器內，您可以在下列體驗中看到使用者標記的資訊：
 
@@ -62,7 +62,7 @@ ms.locfileid: "48769373"
 在 [電子郵件] 窗格中顯示的 [標記] 欄會包含已套用至寄件者或收件者信箱的所有標記。 依預設，會先顯示「優先順序」帳戶之類的系統標記。
 
 > [!div class="mx-imgBorder"]
-> ![篩選標記](../../media/tags-grid.png)
+> ![在電子郵件格線視圖中篩選標記](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>篩選
 現在我們有標記為篩選，因此您可以只搜尋優先順序帳戶或特定使用者標記案例 (，甚至在此體驗) 中排除包含某些標記的結果。 結合使用我們提供的多個其他篩選器，可協助您縮小調查範圍
@@ -196,6 +196,16 @@ ms.locfileid: "48769373"
 - [重新整理程式中的更新](#update-in-the-refresh-process)
 - [新增至篩選的圖表深入分析](#chart-drilldown-to-add-to-filters)
 - [在產品資訊更新](#in-product-information-updates)
+
+### <a name="filter-by-user-tags"></a>依使用者標記篩選
+
+現在您可以使用系統或自訂使用者標記來排序及篩選，以快速抓住威脅的範圍。 請參閱 [Office 365 ATP 中的使用者標記](user-tags.md) 以深入瞭解。
+
+> [!IMPORTANT]
+> 依使用者標記篩選和排序目前是公開預覽。
+> 在正式發行之前，可能會充分修改它。 Microsoft 對本所提供的資訊不提供任何明示或默示的保證。
+
+![瀏覽器中的標記欄](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>時區改進
 
@@ -375,7 +385,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[網路釣魚]** 。
 
    > [!div class="mx-imgBorder"]
-   > ![總管的檢視功能表](../../media/ExplorerViewEmailPhishMenu.png)
+   > ![網路釣魚內容中瀏覽器的視圖功能表](../../media/ExplorerViewEmailPhishMenu.png)
 
 3. 按一下 **[寄件者]** ，然後選擇 **[URL]** > **按一下結果** 。
 
@@ -422,7 +432,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]** 。
 
    > [!div class="mx-imgBorder"]
-   > ![總管的檢視功能表](../../media/explorer-view-menu-email-user-reported.png)
+   > ![電子郵件瀏覽器的視圖功能表](../../media/explorer-view-menu-email-user-reported.png)
 
 3. 按一下 **[寄件者]** ，然後選擇 **[基本]** > **[回報類型]** 。
 
@@ -431,12 +441,12 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
    > [!div class="mx-imgBorder"]
    > ![使用者回報的網路釣魚](../../media/EmailUserReportedReportType.png)
 
-報告會重新整理，顯示貴組織中的人員回報為網路釣魚攻擊的電子郵件相關資料。 您可以使用此資訊來進行進一步分析，並視需要調整 [ATP 防網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+報告會重新整理，顯示貴組織中的人員回報為網路釣魚攻擊的電子郵件相關資料。 您可以使用這項資訊進行進一步的分析，必要時，調整 [Microsoft Defender For Office 365 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
 ## <a name="start-automated-investigation-and-response"></a>啟動自動調查及回應
 
 > [!NOTE]
-> **Office 365 ATP 方案 2** 和 **Office 365 E5** 提供自動化調查及回應功能。
+> **Microsoft Defender For Office 365 方案 2** 和 **Office 365 E5** 中提供自動調查和回應功能。
 
 (新增！) [自動化調查及回應](automated-investigation-response-office.md)能為您的安全性作業小組節省許多時間和精力來調查及降低網路攻擊。 除了設定會觸發安全性劇本的警示，您可以在總管中的檢視啟動自動化調查及回應程序。
 
@@ -454,11 +464,11 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 
-您必須具有 [Office 365 ATP](office-365-atp.md) ，才可取得 Explorer 或即時偵測。
+您必須擁有 [Microsoft Defender For Office 365](office-365-atp.md) 才能取得 Explorer 或即時偵測。
 
-- 總管會包含在 Office 365 ATP 方案 2。
-- 即時偵測報告包含在 Office 365 ATP 方案1中。
-- 請計劃指派授權給所有應受 Office 365 ATP 保護的使用者。  (Explorer 或即時偵測顯示已授權使用者的偵測資料。 ) 
+- Explorer 會包含在 Office 365 的 Defender for Office 中方案2。
+- Office 365 方案1中包含即時偵測報告。
+- 規劃為所有應受 Defender for Office 365 保護的使用者指派授權。  (Explorer 或即時偵測顯示已授權使用者的偵測資料。 ) 
 
 若要查看和使用 Explorer 或即時偵測，您必須具有適當的許可權，例如授與安全性管理員或安全性讀者的許可權。
 
@@ -482,9 +492,9 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>威脅瀏覽器與即時偵測的某些差異
 
-- Office 365 ATP 方案1提供 **即時** 的偵測報告，但是 **威脅瀏覽器** 可用於 office 365 atp 方案2。
+- Office 365 的 Defender for Office 方案1提供 **即時** 偵測報告，但是 **威脅瀏覽器** 可用於 Office 365 的 defender 方案2。
 - **即時** 偵測報告可讓您即時查看偵測。 **威脅總管** 也有這個功能，但也能讓您檢視特定攻擊的其他詳細資料。
 - **所有的電子郵件** view 均可在 **威脅瀏覽器** 中 (，而不會在 **即時** 偵測報告) 中。
 - **威脅瀏覽器** 中包含更多篩選功能和可用的動作。
 
-如需詳細資訊，請參閱 [Office 365 ATP 服務說明：各高級威脅防護的功能可用性 (ATP) 方案](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+如需詳細資訊，請參閱 [Microsoft defender For office 365 服務說明：每個 Defender For office 365 方案中可用的功能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。

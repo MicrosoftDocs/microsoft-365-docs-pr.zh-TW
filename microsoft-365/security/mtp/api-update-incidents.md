@@ -1,6 +1,6 @@
 ---
 title: 更新事件 API
-description: 瞭解如何使用 Microsoft 威脅防護 API 更新事件
+description: 瞭解如何使用 Microsoft 365 Defender API 更新事件
 keywords: update、api、incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,20 +19,20 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8ad47453c7163bfac99c17f42986b818cdca603f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3f77980863b0c232166d736a6b557444df98c8ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203623"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844833"
 ---
 # <a name="update-incidents-api"></a>更新事件 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -49,7 +49,7 @@ ms.locfileid: "48203623"
 
 
 ## <a name="permissions"></a>權限
-需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [Access The Microsoft 威脅防護 APIs](api-access.md)。
+需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [Access The Microsoft 365 Defender APIs](api-access.md)。
 
 許可權類型 |   權限  |   許可權顯示名稱
 :---|:---|:---
@@ -71,8 +71,8 @@ PATCH /api/incidents/{id}
 
 名稱 | 類型 | 描述
 :---|:---|:---
-授權 | 字串 | 載荷 {token}。 **必要欄位**。
-Content-Type | 字串 | application/json。 **必要欄位**。
+授權 | 字串 | 載荷 {token}。 **必要欄位** 。
+Content-Type | 字串 | application/json。 **必要欄位** 。
 
 
 ## <a name="request-body"></a>要求正文

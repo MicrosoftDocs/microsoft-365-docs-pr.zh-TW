@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解零小時自動清除 (ZAP) 是否可以 retroactively 將 Exchange Online 信箱中已傳遞的郵件移至 [垃圾郵件] 資料夾，或 retroactively 發現為垃圾郵件或網路釣魚的隔離區。
-ms.openlocfilehash: 31e546ddf6e93ed0a265aef3737182cf30ae5a95
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: e59d93285dd75a749739b8247c156c19533ce2b1
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327972"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845441"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>在 Exchange Online 中，以零小時自動清除 (ZAP) 
 
@@ -57,13 +57,13 @@ ZAP 無法在獨立 Exchange Online Protection (EOP 中運作) 保護內部部�
 
 針對傳送後識別為網路釣魚的 **讀取或未讀取郵件** ，ZAP 結果取決於針對網路釣魚電子郵件原則中設定的 **網路釣魚電子** 郵件篩選的動作。 下列清單說明網路釣魚和其可能的 ZAP 結果的可用篩選判定動作：
 
-- **新增 X-Header**， **並將主旨行前置文字**： ZAP 不會對郵件採取任何動作。
+- **新增 X-Header** ， **並將主旨行前置文字** ： ZAP 不會對郵件採取任何動作。
 
-- **將郵件移至垃圾郵件**：將郵件移至 [垃圾郵件] 資料夾，只要信箱上已啟用垃圾郵件規則 (預設會啟用該信箱) 。 如需詳細資訊，請參閱 [在 Microsoft 365 中的 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **將郵件移至垃圾郵件** ：將郵件移至 [垃圾郵件] 資料夾，只要信箱上已啟用垃圾郵件規則 (預設會啟用該信箱) 。 如需詳細資訊，請參閱 [在 Microsoft 365 中的 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-- **將郵件重新導向至電子郵件地址**、 **刪除郵件**、 **隔離訊息**： ZAP 會隔離郵件。
+- **將郵件重新導向至電子郵件地址** 、 **刪除郵件** 、 **隔離訊息** ： ZAP 會隔離郵件。
 
-根據預設，反垃圾郵件原則中已啟用網路釣魚 ZAP， **網路釣魚電子郵件** 篩選決定的預設動作為 **隔離訊息**，這表示網路釣魚網站預設會隔離郵件。
+根據預設，反垃圾郵件原則中已啟用網路釣魚 ZAP， **網路釣魚電子郵件** 篩選決定的預設動作為 **隔離訊息** ，這表示網路釣魚網站預設會隔離郵件。
 
 如需設定垃圾郵件篩選 verdicts 的詳細資訊，請參閱 [在 Microsoft 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
@@ -71,19 +71,19 @@ ZAP 無法在獨立 Exchange Online Protection (EOP 中運作) 保護內部部�
 
 針對傳送後被識別為垃圾郵件的 **未讀取郵件** ，ZAP 結果取決於針對 **垃圾** 郵件篩選決定在適用的反垃圾郵件原則中所設定的動作。 下列清單說明了垃圾郵件及其可能的 ZAP 結果的可用篩選：
 
-- **新增 X-Header**， **並將主旨行前置文字**： ZAP 不會對郵件採取任何動作。
+- **新增 X-Header** ， **並將主旨行前置文字** ： ZAP 不會對郵件採取任何動作。
 
-- **將郵件移至垃圾郵件**：將郵件移至 [垃圾郵件] 資料夾，只要信箱上已啟用垃圾郵件規則 (預設會啟用該信箱) 。 如需詳細資訊，請參閱 [在 Microsoft 365 中的 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+- **將郵件移至垃圾郵件** ：將郵件移至 [垃圾郵件] 資料夾，只要信箱上已啟用垃圾郵件規則 (預設會啟用該信箱) 。 如需詳細資訊，請參閱 [在 Microsoft 365 中的 Exchange Online 信箱上設定垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-- **將郵件重新導向至電子郵件地址**、 **刪除郵件**、 **隔離訊息**： ZAP 會隔離郵件。 使用者可以查看和管理自己的垃圾郵件隔離郵件。
+- **將郵件重新導向至電子郵件地址** 、 **刪除郵件** 、 **隔離訊息** ： ZAP 會隔離郵件。 使用者可以查看和管理自己的垃圾郵件隔離郵件。
 
-根據預設，反垃圾郵件原則中已啟用垃圾郵件 ZAP， **垃圾** 郵件篩選判定的預設動作是 **將郵件移至垃圾郵件資料夾**，這表示垃圾郵件 ZAP 預設會將 **未讀取** 的郵件移至 [垃圾郵件] 資料夾。
+根據預設，反垃圾郵件原則中已啟用垃圾郵件 ZAP， **垃圾** 郵件篩選判定的預設動作是 **將郵件移至垃圾郵件資料夾** ，這表示垃圾郵件 ZAP 預設會將 **未讀取** 的郵件移至 [垃圾郵件] 資料夾。
 
 如需設定垃圾郵件篩選 verdicts 的詳細資訊，請參閱 [在 Microsoft 365 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-### <a name="zap-considerations-for-office-365-advanced-threat-protection-office-365-atp"></a>Office 365 Advanced 威脅防護 (的 ZAP 考慮（Office 365 ATP) 
+### <a name="zap-considerations-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的 ZAP 考慮
 
-在安全附件掃描中，ZAP 不會隔離 [動態傳遞](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) 的處理常式中的任何郵件，或者 EOP 惡意程式碼篩選已以 **惡意程式碼 Text.txt警示 ** 取代附件的郵件。 如果針對這些類型的郵件接收網路釣魚或垃圾郵件信號，而且反垃圾郵件原則中的篩選判定會設定為對郵件採取某些動作 (移至 [垃圾郵件]、[重新導向]、[刪除] 或 [隔離]) 然後，ZAP 會預設為「移至垃圾郵件」動作。
+在安全附件掃描中，ZAP 不會隔離 [動態傳遞](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) 的處理常式中的任何郵件，或者 EOP 惡意程式碼篩選已以 **惡意程式碼 Text.txt警示** 取代附件的郵件。 如果針對這些類型的郵件接收網路釣魚或垃圾郵件信號，而且反垃圾郵件原則中的篩選判定會設定為對郵件採取某些動作 (移至 [垃圾郵件]、[重新導向]、[刪除] 或 [隔離]) 然後，ZAP 會預設為「移至垃圾郵件」動作。
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>如何查看 ZAP 是否已移動您的郵件
 

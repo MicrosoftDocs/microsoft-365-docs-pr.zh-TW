@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 威脅防護進階搜捕中使用共用查詢
+title: 在 Microsoft 365 Defender advanced 搜尋中使用共用查詢
 description: 立即開始威脅搜捕，並使用預先定義的共用查詢。 將您的查詢與大眾或您的組織共用。
 keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，自訂偵測，schema，kusto，github 儲存機制，我的查詢，共用查詢
 search.product: eADQiWindows 10XVcnh
@@ -19,20 +19,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 7cdb15be274c89bd92995b9e947489c62521c6bb
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 48da1a3a64926f44582e7872f0b0ee03240409ca
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429680"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844077"
 ---
 # <a name="use-shared-queries-in-advanced-hunting"></a>在進階搜捕中使用共用查詢
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 
 
@@ -45,7 +45,7 @@ ms.locfileid: "48429680"
 
 1. 建立或修改查詢。 
 
-2. 按一下 [儲存查詢]**** 下拉式按鈕，然後選取 [另存新檔]****。
+2. 按一下 [儲存查詢] 下拉式按鈕，然後選取 [另存新檔]。
     
 3. 輸入查詢的名稱。 
 
@@ -55,17 +55,17 @@ ms.locfileid: "48429680"
     - **共用的查詢** — 與組織的所有使用者共用
     - **我的查詢** —只有您可以存取
     
-5. 選取 [儲存]****。 
+5. 選取 [儲存]。 
 
 ## <a name="delete-or-rename-a-query"></a>刪除或重新命名查詢
 1. 以滑鼠右鍵按一下您要重新命名或刪除的查詢。
 
     ![刪除查詢的影像](../../media/advanced_hunting_delete_rename.png)
 
-2. 選取 [刪除]**** 並確認刪除。 或選取 [重新命名]****，並為查詢提供新名稱。
+2. 選取 [刪除] 並確認刪除。 或選取 [重新命名]，並為查詢提供新名稱。
 
 ## <a name="create-a-direct-link-to-a-query"></a>建立查詢的直接連結
-若要產生連結，以直接在高級搜尋查詢編輯器中開啟查詢，請完成查詢並選取 [ **共用] 連結**。
+若要產生連結，以直接在高級搜尋查詢編輯器中開啟查詢，請完成查詢並選取 [ **共用] 連結** 。
 
 ## <a name="access-queries-in-the-github-repository"></a>存取 GitHub 儲存庫中的查詢  
 Microsoft 安全研究人員會定期在 [GitHub 上的指定公開儲存庫](https://aka.ms/hunting-queries)中共用進階搜捕查詢。 這個儲存庫開放個人提出貢獻。 若要貢獻，請[免費加入 GitHub ](https://github.com/)。

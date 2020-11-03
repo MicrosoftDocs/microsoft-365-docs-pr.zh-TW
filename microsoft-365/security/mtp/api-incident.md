@@ -1,6 +1,6 @@
 ---
-title: Microsoft 威脅防護 API 中的事件資源類型
-description: 深入瞭解 Microsoft 威脅防護中的事件資源類型的方法和屬性
+title: Microsoft 365 Defender API 中的事件資源類型
+description: 深入瞭解 Microsoft 365 Defender 中的事件資源類型的方法和屬性
 keywords: 事件、事件、api
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -19,20 +19,20 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: ac149ca7263b8ef8bb37a7dd18bf0787a3114b37
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 68bee647cdd5687dbaad08ce3cd01b427dabf030
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201300"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844017"
 ---
 # <a name="incident-resource-type"></a>事件資源類型
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 >[!IMPORTANT] 
 >一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.

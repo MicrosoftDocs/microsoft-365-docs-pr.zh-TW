@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP 中的安全文件
+title: Microsoft Defender for Office 365 中的安全檔
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -15,23 +15,23 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解 Microsoft 365 E5 或 Microsoft 365 E5 Security 中的安全檔。
-ms.openlocfilehash: baa04f74388b702b42a0bdb83a7f0797ace09883
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: 7fbee440298aea3609665b62a946ae3ce2857e37
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773946"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845477"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Microsoft 365 E5 中的安全文件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-安全檔是 Microsoft 365 E5 或 Microsoft 365 E5 安全性中的一項功能，可使用 [Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 來掃描在 [受保護的檢視](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)中開啟的檔和檔案。
+安全檔是 Microsoft 365 E5 或 Microsoft 365 E5 安全性中的一項功能，可使用 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 來掃描在 [受保護的檢視](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)中開啟的檔和檔案。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 只有使用 *Microsoft 365 e5* 或 *Microsoft 365 e5 安全性* 授權的使用者才能使用安全檔。 這些授權不包含在 Office 365 Advanced 威脅防護 (ATP) 方案中。
+- 只有使用 *Microsoft 365 e5* 或 *Microsoft 365 e5 安全性* 授權的使用者才能使用安全檔。 Microsoft Defender for Office 365 方案中並未包含這些授權。
 
 - Microsoft 365 Apps for enterprise (（以前稱為 Office 365 ProPlus) 版本2004或更新版本）支援安全檔。
 
@@ -43,7 +43,7 @@ ms.locfileid: "48773946"
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Microsoft 如何處理您的資料？
 
-為了讓您受到保護，安全檔會將檔案傳送至 [Microsoft Defender 高級威脅防護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 雲端，以進行分析。 您可以在以下位置找到 Microsoft Defender ATP 如何處理資料的詳細資訊： [Microsoft DEFENDER atp 資料儲存區和隱私權](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。
+為了讓您受到保護，安全檔會將檔案傳送至 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) cloud 進行分析。 您可以在以下位置找到 Microsoft Defender for Endpoint handles 資料的詳細資料： [Microsoft defender For endpoint data storage and 隱私權](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。
 
 安全檔所傳送的檔案不會保留在分析所需的時間，而不會保留在進行分析 (，但通常不會超過24小時) 。
 
@@ -57,9 +57,9 @@ ms.locfileid: "48773946"
 
    - **即使安全檔會將檔案識別為惡意，允許人員按一下 [受保護的檢視** ]：建議您保留此選項關閉， (保持向左切換：請 ![ 關閉 ](../../media/scc-toggle-off.png)) 。
 
-   完成後，按一下 [儲存]  。
+   完成後，按一下 [儲存]。
 
-   ![在 [ATP 安全附件] 頁面上選取全域設定後的 [安全檔] 設定。](../../media/safe-docs.png)
+   ![在 [安全附件] 頁面上選取全域設定後的 [安全檔] 設定。](../../media/safe-docs.png)
 
 ### <a name="use-exchange-online-powershell-to-configure-safe-documents"></a>使用 Exchange Online PowerShell 設定安全檔
 

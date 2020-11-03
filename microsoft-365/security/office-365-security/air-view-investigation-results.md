@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-office365
 description: 在 Microsoft 365 中的自動調查期間和之後，您可以查看結果和重要結果。
 ms.date: 09/29/2020
-ms.openlocfilehash: 18da168615ce7e570bcdc9149ac14fe72b8eda4f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9640ec9429f1c8317c6526976b2fe24c1137115a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447056"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844569"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 中自動調查的詳細資料和結果
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-當[Office 365 的「高級威脅防護](office-365-atp.md)」會進行[自動調查](office-365-air.md)時，系統會在自動化調查程式期間和之後使用該調查的詳細資料。 如果您擁有必要權限，您可以在調查詳細資料檢視中查看這些詳細資料。 調查詳細資料檢視可提供您最新的狀態，以及核准任何待核准動作的能力。
+在[Office 365 的 Microsoft Defender](office-365-atp.md)中進行[自動調查](office-365-air.md)時，在自動化調查程式期間和之後都會提供該調查的詳細資料。 如果您擁有必要權限，您可以在調查詳細資料檢視中查看這些詳細資料。 調查詳細資料檢視可提供您最新的狀態，以及核准任何待核准動作的能力。
 
 ## <a name="investigation-status"></a>調查狀態
 
@@ -42,15 +42,15 @@ ms.locfileid: "48447056"
 |---|---|
 |啟動中| 調查已觸發並等候開始執行。|
 |正在執行| 調查過程已開始且正在進行中。 當 [待定的動作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) 獲得批准時，也會發生此狀態。|
-|找不到威脅| 調查已完成，但找不到任何威脅 (使用者帳戶、電子郵件訊息、URL 或檔案) 皆已識別。 <br/><br/>**提示**：如果您懷疑某項尚未錯過 (例如誤報) ，您可以使用 [威脅 Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)採取動作。|
-|發現威脅|自動調查發現問題，但沒有任何特定的修正動作可解決這些問題。<br/><br/> 發現某些類型的使用者活動時，可能會發生威脅已發現狀態，但沒有清除動作可供使用。 範例包括下列任何使用者活動： <br/>- (DLP) 事件的[資料遺失防護](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) <br/>-傳送反常的電子郵件 <br/>-傳送惡意程式碼 <br/>-傳送網路釣魚<br/>調查發現沒有惡意的 URLs、檔案或電子郵件訊息要修正，而且沒有要修正的信箱活動，例如關閉轉移規則或委派。 <br/><br/>**提示**：如果您懷疑某項尚未錯過 (例如誤報) ，您可以使用 [威脅 Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)來調查和採取動作。|
-|由系統終止| 調查已停止。 調查可能會因下列幾點原因而停止：<br/>-調查的擱置中動作已過期。 等候一周的核准，待處理的動作超時。 <br/>-動作太多。 例如，如果有太多使用者點擊惡意的 URLs，它可能會超出調查的執行所有分析器的能力，所以調查會暫停。 <br/><br/>**提示**：如果調查在採取動作之前暫停，請嘗試使用 [威脅瀏覽器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) 來尋找並處理威脅。|
+|找不到威脅| 調查已完成，但找不到任何威脅 (使用者帳戶、電子郵件訊息、URL 或檔案) 皆已識別。 <br/><br/>**提示** ：如果您懷疑某項尚未錯過 (例如誤報) ，您可以使用 [威脅 Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)採取動作。|
+|發現威脅|自動調查發現問題，但沒有任何特定的修正動作可解決這些問題。<br/><br/> 發現某些類型的使用者活動時，可能會發生威脅已發現狀態，但沒有清除動作可供使用。 範例包括下列任何使用者活動： <br/>- (DLP) 事件的[資料遺失防護](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) <br/>-傳送反常的電子郵件 <br/>-傳送惡意程式碼 <br/>-傳送網路釣魚<br/>調查發現沒有惡意的 URLs、檔案或電子郵件訊息要修正，而且沒有要修正的信箱活動，例如關閉轉移規則或委派。 <br/><br/>**提示** ：如果您懷疑某項尚未錯過 (例如誤報) ，您可以使用 [威脅 Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)來調查和採取動作。|
+|由系統終止| 調查已停止。 調查可能會因下列幾點原因而停止：<br/>-調查的擱置中動作已過期。 等候一周的核准，待處理的動作超時。 <br/>-動作太多。 例如，如果有太多使用者點擊惡意的 URLs，它可能會超出調查的執行所有分析器的能力，所以調查會暫停。 <br/><br/>**提示** ：如果調查在採取動作之前暫停，請嘗試使用 [威脅瀏覽器](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) 來尋找並處理威脅。|
 |擱置的動作| 調查發現威脅，例如惡意電子郵件、惡意 URL 或風險信箱設定，以及修正威脅等候 [核准](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)的動作。<br/><br/>當找到具有對應動作的任何威脅時，就會觸發擱置的動作狀態。 不過，擱置中的動作清單會隨著調查的執行而增加。 檢查 [調查記錄](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) 檔，查看是否有其他專案仍待完成。|
-|修復| 調查已完成且所有動作已獲核准 (已完全修正) 。<br/><br/>**附注**：核准的修復動作可能會有錯誤，導致無法採取動作。 不論是否成功完成修正動作，調查狀態不會變更。 檢查 [調查記錄](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) 檔中的詳細結果。|
+|修復| 調查已完成且所有動作已獲核准 (已完全修正) 。<br/><br/>**附注** ：核准的修復動作可能會有錯誤，導致無法採取動作。 不論是否成功完成修正動作，調查狀態不會變更。 檢查 [調查記錄](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) 檔中的詳細結果。|
 |部分修正| 調查產生修正動作，有些已經過核准和完成。 其他動作仍 [有待處理](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions)。|
-|失敗| 至少有一個調查分析器遇到問題，導致無法正確完成。 <br/><br/>**附注**：如果在已核准修正動作後，調查失敗，修正動作可能仍然會成功。 檢查 [調查記錄](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) 檔中的詳細結果。|
-|依節流佇列| 在佇列中保存調查。 當其他調查完成時，佇列調查便會開始。 節流可協助避免服務效能不良。 <br/><br/>**提示**：擱置的動作可能會限制可執行檔新調查數目。 請務必 [核准 (或拒絕) 擱置的動作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)。|
-|由節流終止| 如果佇列中的調查保持過長，它就會停止。 <br/><br/>**提示**：您可以 [從威脅瀏覽器開始調查](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。|
+|失敗| 至少有一個調查分析器遇到問題，導致無法正確完成。 <br/><br/>**附注** ：如果在已核准修正動作後，調查失敗，修正動作可能仍然會成功。 檢查 [調查記錄](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) 檔中的詳細結果。|
+|依節流佇列| 在佇列中保存調查。 當其他調查完成時，佇列調查便會開始。 節流可協助避免服務效能不良。 <br/><br/>**提示** ：擱置的動作可能會限制可執行檔新調查數目。 請務必 [核准 (或拒絕) 擱置的動作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions)。|
+|由節流終止| 如果佇列中的調查保持過長，它就會停止。 <br/><br/>**提示** ：您可以 [從威脅瀏覽器開始調查](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)。|
 |
 
 ## <a name="view-details-of-an-investigation"></a>檢視調查的詳細資料
@@ -59,15 +59,15 @@ ms.locfileid: "48447056"
 
 2. 執行下列其中一項動作：
 
-    - 移至 [威脅管理]****  >  [儀表板]**** 這樣會帶您前往[安全性儀表板](security-dashboard.md)。 您的 AIR 小工具會顯示在[安全性儀表板](security-dashboard.md)上方。 選取小工具，例如**調查摘要**。
+    - 移至 [威脅管理]  >  [儀表板] 這樣會帶您前往[安全性儀表板](security-dashboard.md)。 您的 AIR 小工具會顯示在[安全性儀表板](security-dashboard.md)上方。 選取小工具，例如 **調查摘要** 。
 
-    - 移至 [威脅管理]****  >  [調查]****。
+    - 移至 [威脅管理]  >  [調查]。
 
     這兩種方法都會帶您前往調查清單。
 
     ![AIR 的主要調查頁面](../../media/air-maininvestigationpage.png)
 
-3. 在調查清單中，選取 [識別碼]**** 欄中的項目。 這樣會開啟調查詳細資料頁面，從檢視中的調查圖形開始。
+3. 在調查清單中，選取 [識別碼] 欄中的項目。 這樣會開啟調查詳細資料頁面，從檢視中的調查圖形開始。
 
     ![AIR 調查圖形頁面](../../media/air-investigationgraphpage.png)
 
@@ -79,21 +79,21 @@ ms.locfileid: "48447056"
 
 1. 請移至安全性 & 規範中心 ([https://protection.office.com](https://protection.office.com)) 並登入。
 
-2. 移至 [威脅管理]****  >  [調查]****。
+2. 移至 [威脅管理]  >  [調查]。
 
-3. 在調查清單中，選取 [識別碼]**** 欄中的項目。
+3. 在調查清單中，選取 [識別碼] 欄中的項目。
 
-4. 開啟調查詳細資料時，選取 [警示]**** 索引標籤。觸發調查的任何警示都會列在此處。
+4. 開啟調查詳細資料時，選取 [警示] 索引標籤。觸發調查的任何警示都會列在此處。
 
 5. 選取清單中的項目。 隨即開啟一個飛出視窗，其中包含警示的詳細資料以及其他資訊和動作的連結。
 
-6. 檢閱飛出視窗中的資訊，並視特定警示採取動作，例如**解決**、**隱藏**，或**通知使用者**。
+6. 檢閱飛出視窗中的資訊，並視特定警示採取動作，例如 **解決** 、 **隱藏** ，或 **通知使用者** 。
 
-    - **解決**等同於關閉警示
+    - **解決** 等同於關閉警示
 
-    - **隱藏**會導致原則在指定時段不觸發警示
+    - **隱藏** 會導致原則在指定時段不觸發警示
 
-    - **通知使用者**會啟動電子郵件，並且已輸入使用者的電子郵件地址，讓您的安全性操作小組輸入要給這些使用者的訊息。 (這類似於使用[威脅總管](threat-explorer.md)將訊息傳送給收件者。)
+    - **通知使用者** 會啟動電子郵件，並且已輸入使用者的電子郵件地址，讓您的安全性操作小組輸入要給這些使用者的訊息。 (這類似於使用[威脅總管](threat-explorer.md)將訊息傳送給收件者。)
 
 ## <a name="how-to-use-the-various-tabs"></a>如何使用各種選項卡
 
@@ -107,8 +107,8 @@ ms.locfileid: "48447056"
 
 您可以：
 
-- 直接流覽至調查 (選取 **調查識別碼**) 。
-- 套用篩選器。 您可以選擇 **調查類型**、 **時間範圍**、 **狀態**或兩者的組合。
+- 直接流覽至調查 (選取 **調查識別碼** ) 。
+- 套用篩選器。 您可以選擇 **調查類型** 、 **時間範圍** 、 **狀態** 或兩者的組合。
 - 將資料匯出至 .csv 檔案。
 
 ### <a name="investigation-graph"></a>調查圖表
@@ -164,7 +164,7 @@ ms.locfileid: "48447056"
 
 根據每個收件者，Explorer 和 AIR 電子郵件都會以每個收件者為單位，因為安全性 verdicts、動作和傳遞位置會因每個收件者而異。 因此，傳送給三位使用者的原始電子郵件會算作三個電子郵件的總數，而不是一封電子郵件。 在某些情況下，電子郵件會被計算兩次以上的時間，例如當電子郵件有多個動作時，或當所有動作都發生時，有多個電子郵件副本。 例如，在傳遞時偵測到的惡意程式碼電子郵件可能會造成封鎖的 (隔離) 電子郵件，以及取代的電子郵件 (威脅檔案，以警告檔取代，然後傳遞至使用者的信箱) 。 因為系統中的電子郵件有逐字的兩個複本，所以兩者都可能會計入簇計數。
 
-電子郵件計數會在調查時進行計算，當您根據基礎查詢) 開啟調查 flyouts (時，會重新計算某些計數。 [電子郵件] 索引標籤上的電子郵件聚簇及 [叢集] 浮出控制項上顯示的電子郵件數量詞的電子郵件數目會在調查時進行計算，而且不會變更。 電子郵件的 [電子郵件] 索引標籤底部顯示的電子郵件計數，以及 Explorer 中所顯示之電子郵件的計數，會反映在調查的初始分析之後所收到的電子郵件。 因此，顯示原始數量10封電子郵件的電子郵件，會顯示在調查分析階段和系統管理員檢查調查時，會有5封以上的電子郵件訊息到貨的電子郵件清單總額15。  同樣的「調查」的計數可能會比 Explorer 查詢所顯示的計數大，因為 ATP P2 會在30天內的30天后到期資料，以及已收費授權的30天。  在不同的視圖中顯示計數歷史和目前的計數，都是為了指出調查時的電子郵件影響，以及目前的影響，直到執行補救的時間為止。
+電子郵件計數會在調查時進行計算，當您根據基礎查詢) 開啟調查 flyouts (時，會重新計算某些計數。 [電子郵件] 索引標籤上的電子郵件聚簇及 [叢集] 浮出控制項上顯示的電子郵件數量詞的電子郵件數目會在調查時進行計算，而且不會變更。 電子郵件的 [電子郵件] 索引標籤底部顯示的電子郵件計數，以及 Explorer 中所顯示之電子郵件的計數，會反映在調查的初始分析之後所收到的電子郵件。 因此，顯示原始數量10封電子郵件的電子郵件，會顯示在調查分析階段和系統管理員檢查調查時，會有5封以上的電子郵件訊息到貨的電子郵件清單總額15。  同樣的「調查」的計數可能會比 Explorer 查詢所顯示的計數大，因為 Office 365 的 Defender 為30天后到期的資料會到期，且已收費授權的30天。  在不同的視圖中顯示計數歷史和目前的計數，都是為了指出調查時的電子郵件影響，以及目前的影響，直到執行補救的時間為止。
 
 舉例來說，請考慮下列案例。 第三個電子郵件的第一個叢集已被視為網路釣魚。 會找到另一個具有相同 IP 和主體的類似郵件，並將其視為惡意網路，因為在初始偵測時，已將其中一部分識別為網路釣魚。
 
@@ -198,13 +198,13 @@ ms.locfileid: "48447056"
 
 ![AIR 調查電腦頁面](../../media/air-investigationmachinepage.png)
 
-在某些行動手冊中，AIR 會將電子郵件威脅與裝置 (例如，Zapped 惡意程式碼) 。 例如，調查會將惡意檔雜湊傳遞至 [Microsoft DEFENDER ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+在某些行動手冊中，AIR 會將電子郵件威脅與裝置 (例如，Zapped 惡意程式碼) 。 例如，調查會將惡意檔雜湊傳遞至 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
 ) 以進行調查。 這可讓您針對使用者自動調查相關的機器，以協助確保雲端和您的端點都有解決威脅。
 
 您可以：
 
 - 取得目前的電腦及發現威脅的視覺概況。
-- 選取機器，以開啟 Microsoft Defender Security Center 中相關 [Microsoft DEFENDER ATP 調查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 中的視圖。
+- 選取機器以開啟 Microsoft Defender Security Center 中相關 [Microsoft defender For Endpoint 調查](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) 的視圖。
 
 ### <a name="entity-investigation"></a>實體調查
 
@@ -249,7 +249,7 @@ ms.locfileid: "48447056"
 |輸出惡意程式碼和垃圾郵件反常情況調查|偵測來自組織中使用者的組織內和輸出惡意程式碼、網路釣魚詐騙或垃圾郵件|
 |寄件者網域調查|從 [Microsoft 智慧型 Security Graph](https://www.microsoft.com/security/operations/intelligence) 和外部威脅情報來源對網域信譽的要求檢查|
 |寄件者 IP 調查| 從 [Microsoft 智慧型 Security Graph](https://www.microsoft.com/security/operations/intelligence) 和外部威脅情報來源對 IP 信譽的要求檢查|
-|URL 按一下調查| 調查組織 [中的 Office 365 ATP 中的安全連結](atp-safe-links.md) 所保護的使用者按一下|
+|URL 按一下調查| 調查組織中 [Microsoft Defender For Office 365 的安全連結](atp-safe-links.md) 所保護的使用者按一下|
 |URL 信譽調查|對來自 [Microsoft 智慧型 Security Graph](https://www.microsoft.com/security/operations/intelligence) 和外部威脅情報來源之 URL 信譽的要求檢查|
 |使用者活動調查|分析[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)中的使用者活動異常|
 |使用者報告的電子郵件指示器解壓縮|從 [使用者報告的郵件](enable-the-report-message-add-in.md) 頭、內文和內容提取指示器，以進行調查|
@@ -275,4 +275,4 @@ ms.locfileid: "48447056"
 
 - [審閱及核准擱置的動作](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)
 
-- [深入瞭解 Microsoft 威脅防護中的自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [深入瞭解 Microsoft 365 Defender 中的自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

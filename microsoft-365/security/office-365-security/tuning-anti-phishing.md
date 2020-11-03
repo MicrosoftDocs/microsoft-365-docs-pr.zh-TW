@@ -15,33 +15,33 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: 系統管理員可以瞭解如何在 Microsoft 365 中識別網頁仿冒郵件的原因，以及如何防止未來的更多網路釣魚郵件。
-ms.openlocfilehash: ab7087355ce8ee41616f63a7b466a0d5d0fc7b0f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: e933769b6bce9eb10765fb2b58025445432bed18
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446462"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845465"
 ---
 # <a name="tune-anti-phishing-protection"></a>調整防網路釣魚保護
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-雖然 Microsoft 365 附帶預設已啟用的各種防網路釣魚功能，但某些網路釣魚郵件仍有可能會進入您的信箱。 本主題說明您可以執行哪些動作來探索網路釣魚郵件的原因，以及您可以如何調整 Microsoft 365 組織中的反網路釣魚設定， _而不會不慎使事情更糟_。
+雖然 Microsoft 365 附帶預設已啟用的各種防網路釣魚功能，但某些網路釣魚郵件仍有可能會進入您的信箱。 本主題說明您可以執行哪些動作來探索網路釣魚郵件的原因，以及您可以如何調整 Microsoft 365 組織中的反網路釣魚設定， _而不會不慎使事情更糟_ 。
 
 ## <a name="first-things-first-deal-with-any-compromised-accounts-and-make-sure-you-block-any-more-phishing-messages-from-getting-through"></a>第一件事是：處理任何已遭破壞的帳戶，並確定您封鎖其他網路釣魚郵件，讓
 
 如果寄件者的帳戶因網路釣魚郵件而遭到損害，請依照在 [Microsoft 365 中回應受損電子郵件帳戶](responding-to-a-compromised-email-account.md)的步驟進行。
 
-如果您的訂閱包含高級威脅防護 (ATP) ，您可以使用 [Office 365 威脅情報](office-365-ti.md) 來識別也收到網路釣魚郵件的其他使用者。 您可以使用其他選項封鎖網路釣魚郵件：
+如果您的訂閱包含 Microsoft Defender for Office 365，您可以使用 [office 365 威脅情報](office-365-ti.md) 來識別也收到網路釣魚郵件的其他使用者。 您可以使用其他選項封鎖網路釣魚郵件：
 
-- [Office 365 ATP 安全連結](set-up-atp-safe-links-policies.md)
+- [Microsoft Defender for Office 365 中的安全連結](set-up-atp-safe-links-policies.md)
 
-- [Office 365 ATP 安全附件](set-up-atp-safe-attachments-policies.md)
+- [Microsoft Defender for Office 365 中的安全附件](set-up-atp-safe-attachments-policies.md)
 
-- [Office 365 ATP 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。 請注意，您可以暫時將原則中的 **高級網路釣魚閥** 值從 **Standard** 增加為 **積極**、 **更積極**或 **最積極**的。
+- [Microsoft Defender For Office 365 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。 請注意，您可以暫時將原則中的 **高級網路釣魚閥** 值從 **Standard** 增加為 **積極** 、 **更積極** 或 **最積極** 的。
 
-確認已開啟這些 ATP 功能。
+確認已開啟這些適用于 Office 365 功能的 Defender。
 
 ## <a name="report-the-phishing-message-to-microsoft"></a>將網路釣魚郵件報告給 Microsoft
 
@@ -59,9 +59,9 @@ ms.locfileid: "48446462"
 
 - 針對因錯誤而導致隔離的郵件，或透過所允許的郵件，我們建議您在 [威脅瀏覽器和即時](threat-explorer.md)偵測中搜尋這些郵件。 您可以依寄件者、收件者或郵件識別碼進行搜尋。 找到訊息之後，按一下主旨以移至 [詳細資料]。 針對隔離的郵件，請查看「偵測技術」為何，這樣您就可以使用適當的方法來覆寫。 若為允許的郵件，請查看允許郵件使用的原則。 
 
-- 冒牌郵件會標記為 ATP 中的網路釣魚。 有時候欺騙是良性的，有時候使用者不想隔離。 若要將影響降至最低，請定期查看 [哄騙智慧報告](learn-about-spoof-intelligence.md)。 在您檢查並做任何必要的覆寫後，您就可以自信地 [設定假冒情報](set-up-anti-phishing-policies.md#spoof-settings) ，以 **隔離** 可疑郵件，而不是將其傳遞給使用者的 [垃圾郵件] 資料夾。
+- 您可以在 Office 365 的 Defender 中，將冒牌郵件標記為網路釣魚。 有時候欺騙是良性的，有時候使用者不想隔離。 若要將影響降至最低，請定期查看 [哄騙智慧報告](learn-about-spoof-intelligence.md)。 在您檢查並做任何必要的覆寫後，您就可以自信地 [設定假冒情報](set-up-anti-phishing-policies.md#spoof-settings) ，以 **隔離** 可疑郵件，而不是將其傳遞給使用者的 [垃圾郵件] 資料夾。
 
-- 您可以重複上述步驟， (網域或使用者) 進行類比。 模仿報告位於 **威脅管理** \> **儀表板** \> **Insights**底下。
+- 您可以重複上述步驟， (網域或使用者) 進行類比。 模仿報告位於 **威脅管理** \> **儀表板** \> **Insights** 底下。
 
 - 定期查看「 [威脅防護狀態」報告](view-reports-for-atp.md#threat-protection-status-report)。
 
@@ -75,7 +75,7 @@ ms.locfileid: "48446462"
 
   如需設定指示，請參閱：
   
-  - [設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [設定 SPF 以協助防止詐騙 ](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   - [使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)
 
@@ -87,4 +87,4 @@ ms.locfileid: "48446462"
 
 - 多重因素驗證 (MFA) 是防範已遭破壞之帳戶的最佳方式。 您應強烈考慮為您的所有使用者啟用 MFA。 針對分段的方法，在您為每個人啟用 MFA 之前，先為最機密的使用者啟用 MFA (系統管理員、行政人員等等 ) 。 如需相關指示，請參閱 [設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 
-- 將規則轉寄給外部收件者通常是被攻擊者用來提取資料。 使用[Microsoft Secure 得分](../mtp/microsoft-secure-score.md)中的 [**複查信箱轉寄規則**] 資訊，尋找甚至避免將轉寄規則轉接給外部收件者。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) (英文)。
+- 將規則轉寄給外部收件者通常是被攻擊者用來提取資料。 使用 [Microsoft Secure 得分](../mtp/microsoft-secure-score.md)中的 [ **複查信箱轉寄規則** ] 資訊，尋找甚至避免將轉寄規則轉接給外部收件者。 如需詳細資訊，請參閱[含有安全分數的用戶端外部轉寄降低風險規則](https://docs.microsoft.com/archive/blogs/office365security/mitigating-client-external-forwarding-rules-with-secure-score) (英文)。

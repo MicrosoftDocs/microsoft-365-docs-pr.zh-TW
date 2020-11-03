@@ -1,6 +1,6 @@
 ---
-title: 設定您的 Microsoft 威脅防護試用實驗室或試驗環境
-description: 存取 Microsoft 365 的安全性中心，然後設定您的 Microsoft 威脅防護試用實驗室環境
+title: 設定您的 Microsoft 365 Defender 試用實驗室或試驗環境
+description: 存取 Microsoft 365 的安全性中心，然後設定您的 Microsoft 365 Defender 試用實驗室環境
 keywords: Microsoft 威脅防護試用設定，Microsoft 威脅防護試驗設定，嘗試 Microsoft 威脅防護，Microsoft 威脅防護評估實驗室安裝程式
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,42 +18,42 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 53ff0842e73e275bf4a8fa8b18c1d08ad70a64ec
-ms.sourcegitcommit: a83acd5b9eeefd2e20e5bac916fe29d09fb53de9
+ms.openlocfilehash: 47f4ceeebd50784b1880a028ebe2698012c406da
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2020
-ms.locfileid: "48418130"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844821"
 ---
-# <a name="set-up-your-microsoft-threat-protection-trial-lab-environment"></a>設定您的 Microsoft 威脅防護試用實驗室環境 
+# <a name="set-up-your-microsoft-365-defender-trial-lab-environment"></a>設定您的 Microsoft 365 Defender 試用實驗室環境 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護 
+適用於：
+- Microsoft 365 Defender 
 
 
-建立 Microsoft 威脅防護試用實驗室或試驗環境並加以部署時，會有三個階段的處理常式：
+建立 Microsoft 365 Defender 試驗實驗室或試驗環境並加以部署時，會有三個階段的處理常式：
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab or pilot environment" title="準備 Microsoft 威脅防護評估實驗室或試驗環境" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="準備您的 Microsoft 365 Defender 評估實驗室或試驗環境" />
       <br/>階段1：準備 </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab or pilot environment" title="設定您的 Microsoft 威脅防護試用實驗室或試驗環境" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab or pilot environment" title="設定您的 Microsoft 365 Defender 試用實驗室或試驗環境" />
       <br/>階段2：設定 </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab or pilot environment and onboard your endpoints" title="
-針對您的 Microsoft 威脅防護試用實驗室或試驗環境和您的端點設定每個 Microsoft 威脅防護 pillar" />
+Configure each Microsoft 365 Defender pillar for your Microsoft 365 Defender trial lab or pilot environment and onboard your endpoints" title="
+為您的 Microsoft 365 Defender 試用實驗室或試驗環境和您的端點上架每個 Microsoft 365 Defender pillar" />
       <br/>階段3：設定板載 & </a><br>
 </td>
 
@@ -77,11 +77,11 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 >[!NOTE]
 >如果您已經有現有的 Office 365 或 Azure Active Directory 訂閱，您可以略過 Office 365 E5 試用租使用者建立步驟。
 
-1. 移至 [Office 365 E5 產品入口網站](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) ，然後選取 [ **免費試用版**]。
+1. 移至 [Office 365 E5 產品入口網站](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) ，然後選取 [ **免費試用版** ]。
 
    ![影像 of_Office 365 E5 免費試用版頁面](../../media/mtp-eval-9.png)
   
-2. 輸入您的電子郵件地址 (個人或公司) ，以完成試用註冊。 按一下 [ **設定帳戶**]。
+2. 輸入您的電子郵件地址 (個人或公司) ，以完成試用註冊。 按一下 [ **設定帳戶** ]。
 
    ![影像 of_Office 365 E5 試用版註冊設定] 頁面](../../media/mtp-eval-10.png)
 
@@ -92,15 +92,15 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
    > [!NOTE]
    > 您在這裡設定的國家或地區決定您的 Office 365 將主控的資料中心區域。
   
-4. 選擇您的驗證喜好設定：透過短信或來電。 按一下 [ **傳送驗證碼**]。 
+4. 選擇您的驗證喜好設定：透過短信或來電。 按一下 [ **傳送驗證碼** ]。 
 
    ![影像 of_Office 365 E5 試用註冊設定頁面要求驗證偏好設定](../../media/mtp-eval-12.png)
 
-5. 為您的租使用者設定自訂的功能變數名稱，然後按 **[下一步]**。
+5. 為您的租使用者設定自訂的功能變數名稱，然後按 **[下一步]** 。
 
    ![影像 of_Office 365 E5 試用註冊設定] 頁面，您可以在其中設定自訂功能變數名稱](../../media/mtp-eval-13.png)
  
-6. 設定第一個身分識別，這將是租使用者的全域管理員。 填入 **名稱** 和 **密碼**。 按一下 [ **註冊**]。
+6. 設定第一個身分識別，這將是租使用者的全域管理員。 填入 **名稱** 和 **密碼** 。 按一下 [ **註冊** ]。
 
    ![影像 of_Office 365 E5 試用註冊設定] 頁面，您可以在這裡設定您的商務身分識別](../../media/mtp-eval-14.png)
 
@@ -108,11 +108,11 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 
    ![Office 365 E5 試用註冊設定頁面的影像提示按一下 [前往設定] 按鈕](../../media/mtp-eval-15.png)
 
-8. 將公司網域連線到 Office 365 租使用者。 選選擇 **[連線您已擁有的網域]** ，然後輸入您的功能變數名稱。 按 **[下一步]**。
+8. 將公司網域連線到 Office 365 租使用者。 選選擇 **[連線您已擁有的網域]** ，然後輸入您的功能變數名稱。 按 [下一步 **]** 。
 
    ![影像 of_Office 365 E5 安裝頁面，您應該在其中個人化登入和電子郵件](../../media/mtp-eval-16.png)
  
-9. 新增 TXT 或 MX 記錄以驗證網域擁有權。 將 TXT 或 MX 記錄新增至您的網域後，請選取 [ **驗證**]。
+9. 新增 TXT 或 MX 記錄以驗證網域擁有權。 將 TXT 或 MX 記錄新增至您的網域後，請選取 [ **驗證** ]。
 
    ![影像 of_Office 365 E5 安裝頁面，您應該在這裡新增 TXT 的 MX 記錄以驗證您的網域](../../media/mtp-eval-17.png)
  
@@ -128,11 +128,11 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 
     ![影像 of_Office 365 E5，您可以在其中設定是否要遷移電子郵件訊息](../../media/mtp-eval-20.png)
  
-13. 選擇 [線上服務]。 選取 [ **Exchange** ] 並按 **[下一步]**。 
+13. 選擇 [線上服務]。 選取 [ **Exchange** ] 並按 **[下一步]** 。 
 
     ![影像 of_Office 365 E5，您可以在這裡選擇您的線上服務](../../media/mtp-eval-21.png)
 
-14. 將 MX、CNAME 及 TXT 記錄新增至您的網域。 完成時，選取 [ **驗證**]。
+14. 將 MX、CNAME 及 TXT 記錄新增至您的網域。 完成時，選取 [ **驗證** ]。
 
     ![影像 of_Office 365 E5 您可以在這裡加入您的 DNS 記錄](../../media/mtp-eval-22.png)
  
@@ -145,9 +145,9 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 >[!NOTE]
 >註冊試用版可提供25個使用者授權供一個月使用。 如需詳細資訊，請參閱 [Try Or 購買 M365 訂閱](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365#try-or-buy-a-microsoft-365-subscription-1) 。
 
-1. 從 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)，按一下 [ **帳單** ]，然後流覽至 [ **購買服務**]。
+1. 從 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)，按一下 [ **帳單** ]，然後流覽至 [ **購買服務** ]。
 
-2. 選取 [ **Microsoft 365 E5** ]，然後按一下 [ **開始免費試用**]。 
+2. 選取 [ **Microsoft 365 E5** ]，然後按一下 [ **開始免費試用** ]。 
 
    ![影像 of_Microsoft 365 E5 開始免費試用頁面](../../media/mtp-eval-24.png)
 
@@ -155,7 +155,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 
    ![Image of_Microsoft 365 E5 開始免費試用頁面，要求連絡人詳細資料傳送程式碼，以證明您不是機器人](../../media/mtp-eval-25.png)
  
-4. 輸入驗證碼，然後按一下 [ **開始免費試用**]。
+4. 輸入驗證碼，然後按一下 [ **開始免費試用** ]。
 
    ![影像 of_Microsoft 365 E5 開始免費試用頁面，您可以在此頁面上填寫驗證碼，以證明您不是機器人](../../media/mtp-eval-26.png)
 
@@ -163,20 +163,20 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 
    ![影像 of_Microsoft 365 E5 開始免費試用頁面，您應該在此頁面上時鐘立即試按鈕開始](../../media/mtp-eval-27.png)
  
-6. 移至**Microsoft 365 Admin Center**使用者作用中的  >  **Users**  >  **使用者**。 選取您的使用者帳戶，選取 [ **管理產品授權**]，然後將 Office 365 e5 的授權交換至 **Microsoft 365 E5**。 按一下 **[儲存]**。
+6. 移至 **Microsoft 365 Admin Center** 使用者作用中的  >  **Users**  >  **使用者** 。 選取您的使用者帳戶，選取 [ **管理產品授權** ]，然後將 Office 365 e5 的授權交換至 **Microsoft 365 E5** 。 按一下 **[儲存]** 。
 
    ![Image of_Microsoft 365 系統管理中心] 頁面，您可以在其中選取 [Microsoft 365 E5 授權]](../../media/mtp-eval-28.png)
  
-7. 再次選取全域管理員帳戶，然後按一下 [ **管理使用者名稱**]。
+7. 再次選取全域管理員帳戶，然後按一下 [ **管理使用者名稱** ]。
 
    ![Image of_Microsoft 365 系統管理中心] 頁面，您可以在其中選取 [帳戶]，然後管理使用者名稱](../../media/mtp-eval-29.png)
 
-8. 選根據您在先前步驟中選取的專案，將網域從 *onmicrosoft.com* 變更為您自己的網域。 按一下 **[儲存變更]**。
+8. 選根據您在先前步驟中選取的專案，將網域從 *onmicrosoft.com* 變更為您自己的網域。 按一下 [儲存變更]。
 
    ![Image of_Microsoft 365 系統管理中心] 頁面，您可以在其中變更您的網域偏好設定](../../media/mtp-eval-30.png)
 
 
 
 ## <a name="next-step"></a>下一步
-|![階段3：設定板載 &](../../media/config-onboard.png) <br>[階段3：設定板載 &](config-mtpeval.md) | 針對您的 Microsoft 威脅防護試用實驗室或試驗環境和您的端點，設定每個 Microsoft 威脅防護 pillar。
+|![階段3：設定板載 &](../../media/config-onboard.png) <br>[階段3：設定板載 &](config-mtpeval.md) | 針對您的 Microsoft 365 Defender 試用實驗室或試驗環境和您的端點上架每個 Microsoft 365 Defender pillar。
 |:-------|:-----|

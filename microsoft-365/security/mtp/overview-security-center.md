@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: ed91ca8a2300cf69cb78ae24ad61e9aebb4dcc85
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 9aaeb5323900e65de47015b8cb28abf967694ea3
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429416"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844797"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Microsoft 365 安全性中心概述
 
@@ -44,7 +44,7 @@ ms.locfileid: "48429416"
 
 ## <a name="lets-take-a-closer-look"></a>讓我們深入瞭解
 
-**首頁**會顯示許多安全小組需要的常見智慧卡。 名片和資料的組成取決於使用者角色。 因為 Microsoft 365 的安全性中心使用角色型存取控制，所以不同的角色會在日常工作中看到更有意義的卡片。  
+**首頁** 會顯示許多安全小組需要的常見智慧卡。 名片和資料的組成取決於使用者角色。 因為 Microsoft 365 的安全性中心使用角色型存取控制，所以不同的角色會在日常工作中看到更有意義的卡片。  
 
 這種一覽的資訊可協助您維持組織中的最新活動。 Microsoft 365 的安全性中心將不同來源的信號彙集在一起，以呈現您的 Microsoft 365 環境的整體視圖。
 
@@ -52,7 +52,7 @@ Microsoft 365 安全性中心包含：
 
 * **首頁** –深入瞭解您組織的整體安全性健康情況。
 * **事件** -透過在實體上連接個別警示所看到的點，查看攻擊的更大部分。 您會知道攻擊的開始位置、影響哪些裝置、哪些裝置受到影響，以及威脅已消失的位置。
-* **警示** –對您的所有 Microsoft 365 環境中的所有警示都有更深入的洞察力。 包括來自 Microsoft Cloud App Security、Office 365 ATP、Azure Active Directory、Azure ATP 和 Microsoft Defender ATP 的警示。 可供 E3 和 E5 客戶使用。  
+* **警示** –對您的所有 Microsoft 365 環境中的所有警示都有更深入的洞察力。 包含 Microsoft Cloud App Security、Microsoft Defender for Office 365、Azure Active Directory、Microsoft Defender 身分識別及 Microsoft Defender for Endpoint 的警示。 可供 E3 和 E5 客戶使用。  
 * **行動中心** -減少您的安全小組必須手動處理的警示數量，讓安全性作業小組能夠將重點放在更複雜的威脅及其他高價值的計畫上。
 * **報告** –取得您所需的詳細資料和資訊，以更好地保護您的使用者、裝置、應用程式等等。
 * **安全分數** – 使用 Microsoft 安全分數改善整體的安全性狀況。 此頁面提供您已啟用之不同安全性功能及功能的所有摘要摘要，並包含改進區域的建議。
@@ -73,6 +73,6 @@ Microsoft 365 安全性中心包含：
 - [主動搜尋](advanced-hunting-overview.md) 入侵嘗試的威脅，以及影響電子郵件、資料、裝置和帳戶的破壞活動
 - [瞭解最新的攻擊活動](latest-attack-campaigns.md) 和使用威脅分析的技術
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 - [Microsoft 安全性入口網站](portals.md)
