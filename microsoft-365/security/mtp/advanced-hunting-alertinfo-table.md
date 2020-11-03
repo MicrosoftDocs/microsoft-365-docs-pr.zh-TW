@@ -19,42 +19,42 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 739ee33b162c1e701603a17e59f0d0c2611c064c
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 7672d974666a381a48da15e0917a46c97df88895
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430172"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847665"
 ---
-# <a name="alertinfo"></a><span data-ttu-id="80167-104">AlertInfo</span><span class="sxs-lookup"><span data-stu-id="80167-104">AlertInfo</span></span>
+# <a name="alertinfo"></a><span data-ttu-id="2f72f-104">AlertInfo</span><span class="sxs-lookup"><span data-stu-id="2f72f-104">AlertInfo</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="80167-105">適用於：\*\*\*\*</span><span class="sxs-lookup"><span data-stu-id="80167-105">**Applies to:**</span></span>
-- <span data-ttu-id="80167-106">Microsoft 威脅防護</span><span class="sxs-lookup"><span data-stu-id="80167-106">Microsoft Threat Protection</span></span>
+<span data-ttu-id="2f72f-105">適用於：</span><span class="sxs-lookup"><span data-stu-id="2f72f-105">**Applies to:**</span></span>
+- <span data-ttu-id="2f72f-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="2f72f-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="80167-107">[！附注] `AlertInfo` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含來自 Microsoft Defender atp、Office 365 Atp、Microsoft Cloud App SECURITY 和 Azure atp 的提醒資訊。</span><span class="sxs-lookup"><span data-stu-id="80167-107">The `AlertInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about alerts from Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security, and Azure ATP.</span></span> <span data-ttu-id="80167-108">使用這個參考來建立從此表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="80167-108">Use this reference to construct queries that return information from this table.</span></span>
+<span data-ttu-id="2f72f-107">[！附注] `AlertInfo` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含 Microsoft defender For Endpoint、Microsoft defender for Office 365、Microsoft Cloud App Security 及 Microsoft defender for Identity 的警示相關資訊。</span><span class="sxs-lookup"><span data-stu-id="2f72f-107">The `AlertInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about alerts from Microsoft  Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Cloud App Security, and Microsoft Defender for Identity.</span></span> <span data-ttu-id="2f72f-108">使用這個參考來建立從此表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="2f72f-108">Use this reference to construct queries that return information from this table.</span></span>
 
-<span data-ttu-id="80167-109">如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="80167-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="2f72f-109">如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="2f72f-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="80167-110">欄名稱</span><span class="sxs-lookup"><span data-stu-id="80167-110">Column name</span></span> | <span data-ttu-id="80167-111">資料類型</span><span class="sxs-lookup"><span data-stu-id="80167-111">Data type</span></span> | <span data-ttu-id="80167-112">描述</span><span class="sxs-lookup"><span data-stu-id="80167-112">Description</span></span> |
+| <span data-ttu-id="2f72f-110">欄名稱</span><span class="sxs-lookup"><span data-stu-id="2f72f-110">Column name</span></span> | <span data-ttu-id="2f72f-111">資料類型</span><span class="sxs-lookup"><span data-stu-id="2f72f-111">Data type</span></span> | <span data-ttu-id="2f72f-112">描述</span><span class="sxs-lookup"><span data-stu-id="2f72f-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="80167-113">datetime</span><span class="sxs-lookup"><span data-stu-id="80167-113">datetime</span></span> | <span data-ttu-id="80167-114">事件記錄的日期和時間</span><span class="sxs-lookup"><span data-stu-id="80167-114">Date and time when the event was recorded</span></span> |
-| `AlertId` | <span data-ttu-id="80167-115">字串</span><span class="sxs-lookup"><span data-stu-id="80167-115">string</span></span> | <span data-ttu-id="80167-116">警示的唯一識別碼。</span><span class="sxs-lookup"><span data-stu-id="80167-116">Unique identifier for the alert</span></span> |
-| `Title` | <span data-ttu-id="80167-117">字串</span><span class="sxs-lookup"><span data-stu-id="80167-117">string</span></span> | <span data-ttu-id="80167-118">警示標題</span><span class="sxs-lookup"><span data-stu-id="80167-118">Title of the alert</span></span> |
-| `Category` | <span data-ttu-id="80167-119">字串</span><span class="sxs-lookup"><span data-stu-id="80167-119">string</span></span> | <span data-ttu-id="80167-120">輸入由警示所識別的威脅指示器或入侵活動類型</span><span class="sxs-lookup"><span data-stu-id="80167-120">Type of threat indicator or breach activity identified by the alert</span></span> |
-| `Severity` | <span data-ttu-id="80167-121">字串</span><span class="sxs-lookup"><span data-stu-id="80167-121">string</span></span> | <span data-ttu-id="80167-122">表示由警示所識別之威脅指示器或入侵活動的潛在影響 (高、中或低)</span><span class="sxs-lookup"><span data-stu-id="80167-122">Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert</span></span> |
-| `ServiceSource` | <span data-ttu-id="80167-123">字串</span><span class="sxs-lookup"><span data-stu-id="80167-123">string</span></span> | <span data-ttu-id="80167-124">提供提醒資訊的產品或服務</span><span class="sxs-lookup"><span data-stu-id="80167-124">Product or service that provided the alert information</span></span> |
-| `DetectionSource` | <span data-ttu-id="80167-125">string</span><span class="sxs-lookup"><span data-stu-id="80167-125">string</span></span> | <span data-ttu-id="80167-126">識別值得注意之元件或活動的偵測技術或感應器</span><span class="sxs-lookup"><span data-stu-id="80167-126">Detection technology or sensor that identified the notable component or activity</span></span> |
-| `AttackTechniques` | <span data-ttu-id="80167-127">string</span><span class="sxs-lookup"><span data-stu-id="80167-127">string</span></span> | <span data-ttu-id="80167-128">MITRE ATT&與觸發警示之活動相關聯的 CK 技術</span><span class="sxs-lookup"><span data-stu-id="80167-128">MITRE ATT&CK techniques associated with the activity that triggered the alert</span></span> |
+| `Timestamp` | <span data-ttu-id="2f72f-113">datetime</span><span class="sxs-lookup"><span data-stu-id="2f72f-113">datetime</span></span> | <span data-ttu-id="2f72f-114">事件記錄的日期和時間</span><span class="sxs-lookup"><span data-stu-id="2f72f-114">Date and time when the event was recorded</span></span> |
+| `AlertId` | <span data-ttu-id="2f72f-115">字串</span><span class="sxs-lookup"><span data-stu-id="2f72f-115">string</span></span> | <span data-ttu-id="2f72f-116">警示的唯一識別碼。</span><span class="sxs-lookup"><span data-stu-id="2f72f-116">Unique identifier for the alert</span></span> |
+| `Title` | <span data-ttu-id="2f72f-117">字串</span><span class="sxs-lookup"><span data-stu-id="2f72f-117">string</span></span> | <span data-ttu-id="2f72f-118">警示標題</span><span class="sxs-lookup"><span data-stu-id="2f72f-118">Title of the alert</span></span> |
+| `Category` | <span data-ttu-id="2f72f-119">字串</span><span class="sxs-lookup"><span data-stu-id="2f72f-119">string</span></span> | <span data-ttu-id="2f72f-120">輸入由警示所識別的威脅指示器或入侵活動類型</span><span class="sxs-lookup"><span data-stu-id="2f72f-120">Type of threat indicator or breach activity identified by the alert</span></span> |
+| `Severity` | <span data-ttu-id="2f72f-121">字串</span><span class="sxs-lookup"><span data-stu-id="2f72f-121">string</span></span> | <span data-ttu-id="2f72f-122">表示由警示所識別之威脅指示器或入侵活動的潛在影響 (高、中或低)</span><span class="sxs-lookup"><span data-stu-id="2f72f-122">Indicates the potential impact (high, medium, or low) of the threat indicator or breach activity identified by the alert</span></span> |
+| `ServiceSource` | <span data-ttu-id="2f72f-123">字串</span><span class="sxs-lookup"><span data-stu-id="2f72f-123">string</span></span> | <span data-ttu-id="2f72f-124">提供提醒資訊的產品或服務</span><span class="sxs-lookup"><span data-stu-id="2f72f-124">Product or service that provided the alert information</span></span> |
+| `DetectionSource` | <span data-ttu-id="2f72f-125">string</span><span class="sxs-lookup"><span data-stu-id="2f72f-125">string</span></span> | <span data-ttu-id="2f72f-126">識別值得注意之元件或活動的偵測技術或感應器</span><span class="sxs-lookup"><span data-stu-id="2f72f-126">Detection technology or sensor that identified the notable component or activity</span></span> |
+| `AttackTechniques` | <span data-ttu-id="2f72f-127">string</span><span class="sxs-lookup"><span data-stu-id="2f72f-127">string</span></span> | <span data-ttu-id="2f72f-128">MITRE ATT&與觸發警示之活動相關聯的 CK 技術</span><span class="sxs-lookup"><span data-stu-id="2f72f-128">MITRE ATT&CK techniques associated with the activity that triggered the alert</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="80167-129">相關主題</span><span class="sxs-lookup"><span data-stu-id="80167-129">Related topics</span></span>
-- [<span data-ttu-id="80167-130">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="80167-130">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="80167-131">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="80167-131">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="80167-132">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="80167-132">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="80167-133">搜捕裝置、電子郵件、應用程式和身分識別</span><span class="sxs-lookup"><span data-stu-id="80167-133">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="80167-134">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="80167-134">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="80167-135">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="80167-135">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="2f72f-129">相關主題</span><span class="sxs-lookup"><span data-stu-id="2f72f-129">Related topics</span></span>
+- [<span data-ttu-id="2f72f-130">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="2f72f-130">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="2f72f-131">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="2f72f-131">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="2f72f-132">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="2f72f-132">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="2f72f-133">搜捕裝置、電子郵件、應用程式和身分識別</span><span class="sxs-lookup"><span data-stu-id="2f72f-133">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="2f72f-134">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="2f72f-134">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="2f72f-135">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="2f72f-135">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
