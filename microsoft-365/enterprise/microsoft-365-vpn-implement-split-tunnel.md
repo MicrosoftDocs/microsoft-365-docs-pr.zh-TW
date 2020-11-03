@@ -17,12 +17,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: 如何實作 Office 365 的 VPN 分割通道
-ms.openlocfilehash: ff79138d44c98d76af1a3d9c374159b0fae4c7ed
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4a7c2a18ae5d4f275210ddeaea90eb1bb9bc1f16
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295271"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846985"
 ---
 # <a name="implementing-vpn-split-tunneling-for-office-365"></a>實作 Office 365 的 VPN 分割通道
 
@@ -33,7 +33,7 @@ ms.locfileid: "48295271"
 
 多年以來，企業一直使用 VPN 來支援其使用者的遠端體驗。 當核心工作負載保留於內部部署時，從遠端用戶端透過公司網路上資料中心路由傳送的 VPN 是遠端使用者存取企業資源的主要方法。 為了保護這些連線，企業會沿著 VPN 路徑建立數層的網路安全解決方案。 這是為了保護內部基礎結構，並將流量重新路由傳送到 VPN，然後透過內部部署網際網路周邊送出，以保護外部網站的行動流覽。 Vpn、網路週邊和相關的安全性基礎結構通常是專為定義的流量量而建立及調整，通常是從公司網路內部發起連線，而大部分連線都是在內部網路界限內進行。
 
-有好長一段時間，只要遠端使用者的並行規模適中，且周遊 VPN 的流量很低，將來自遠端使用者裝置的所有連線傳送回內部部署網路 (也稱為**強制通道**) 的 VPN 模型多半是永續的。  即使在應用程式從公司周邊內部移至公用 SaaS 雲端之後，有些客戶能會如同現狀持續使用 VPN 強制通道，Office 365 就是主要範例。
+有好長一段時間，只要遠端使用者的並行規模適中，且周遊 VPN 的流量很低，將來自遠端使用者裝置的所有連線傳送回內部部署網路 (也稱為 **強制通道** ) 的 VPN 模型多半是永續的。  即使在應用程式從公司周邊內部移至公用 SaaS 雲端之後，有些客戶能會如同現狀持續使用 VPN 強制通道，Office 365 就是主要範例。
 
 使用強制通道 VPN 來連線到分散式和效能敏感型雲端應用程式並不太好，但是從安全性的觀點來看，有些企業可能為了維持現狀而接受了其負面影響。 以下是這種情況的範例圖表：
 
@@ -49,7 +49,7 @@ Microsoft 建議用於最佳化遠端工作者連線的建議策略，著重於�
 
 ## <a name="common-vpn-scenarios"></a>常見 VPN 案例
 
-在下列清單中，您會看到企業環境中最常見的 VPN 案例。 大部分客戶通常採用模型 1 (VPN 強制通道)。 本節將協助您快速且安全地轉換至 **模型 2**，可透過相對的工作來獲得，並且具備網路效能和使用者經驗的大量優點。
+在下列清單中，您會看到企業環境中最常見的 VPN 案例。 大部分客戶通常採用模型 1 (VPN 強制通道)。 本節將協助您快速且安全地轉換至 **模型 2** ，可透過相對的工作來獲得，並且具備網路效能和使用者經驗的大量優點。
 
 | **模型** | **描述** |
 | --- | --- |
@@ -91,7 +91,7 @@ Microsoft 建議用於最佳化遠端工作者連線的建議策略，著重於�
 
 ## <a name="implement-vpn-split-tunneling"></a>實作 VPN 分割通道
 
-在本節中，您會找到將 VPN 用戶端架構從 _「VPN 強制通道」_ 遷移到 _「具有少量信任例外狀況的 VPN 強制通道」_ ([常見 VPN 案例](#common-vpn-scenarios)一節中的[VPN 分割通道模型 2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions)) 所需的簡單步驟。
+在本節中，您會找到將 VPN 用戶端架構從 _「VPN 強制通道」_ 遷移到 _「具有少量信任例外狀況的 VPN 強制通道」_ ( [常見 VPN 案例](#common-vpn-scenarios)一節中的 [VPN 分割通道模型 2](#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions)) 所需的簡單步驟。
 
 下圖說明建議 VPN 分割通道解決方案的運作方式：
 
@@ -99,7 +99,7 @@ Microsoft 建議用於最佳化遠端工作者連線的建議策略，著重於�
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. 找出要最佳化的端點
 
-在 [的 Office 365 URL 和 IP 位址範圍](urls-and-ip-address-ranges.md)主題中，Microsoft 清楚地找出需要最佳化的重要端點，並將其分類為 **[最佳化]**。 目前只有四個 URL 和二十個 IP 子網需要優化。 這一小組的端點會佔送至 Office 365 服務的 70%-80% 流量，其中包括 Teams 媒體等延遲敏感型端點的流量。 實質上，這是我們需要特別留意的流量，也是對傳統網路路徑和 VPN 基礎結構有驚人壓力的流量。
+在 [的 Office 365 URL 和 IP 位址範圍](urls-and-ip-address-ranges.md)主題中，Microsoft 清楚地找出需要最佳化的重要端點，並將其分類為 **[最佳化]** 。 目前只有四個 URL 和二十個 IP 子網需要優化。 這一小組的端點會佔送至 Office 365 服務的 70%-80% 流量，其中包括 Teams 媒體等延遲敏感型端點的流量。 實質上，這是我們需要特別留意的流量，也是對傳統網路路徑和 VPN 基礎結構有驚人壓力的流量。
 
 此類別中的 URL 具有下列特性：
 
@@ -124,11 +124,11 @@ Microsoft 建議用於最佳化遠端工作者連線的建議策略，著重於�
 | HTTPs:// \<tenant\> -my.sharepoint.com | TCP 443 | 這是商務用 OneDrive 的主要 URL，具有高頻寬使用量且可能有來自商務用 OneDrive 同步工具的高連線計數。 |
 | Teams 媒體 IP (無 URL) | UDP 3478、3479、3480 和 3481 | 轉送探索分配和即時流量 (3478) 、音訊 (3479) 、影片 (3480) 和影片畫面共用 (3481) 。 這兩個端點用於商務用 Skype 和 Microsoft 小組媒體流量 (通話、會議等等 ) 。 當 Microsoft Teams 用戶端建立通話 (且包含在針對服務所列的必要 IP 內) 時，就會提供大部分的端點。 使用 UDP 通訊協定才能達到最佳媒體品質。   |
 
-在上述範例中，應使用您的 Office 365 租用戶名稱取代 **tenant**。 例如，**contoso.onmicrosoft.com** 會使用 _contoso.sharepoint.com_ 和 _constoso-my.sharepoint.com_。
+在上述範例中，應使用您的 Office 365 租用戶名稱取代 **tenant** 。 例如， **contoso.onmicrosoft.com** 會使用 _contoso.sharepoint.com_ 和 _constoso-my.sharepoint.com_ 。
 
 #### <a name="optimize-ip-address-ranges"></a>最佳化 IP 位址範圍
 
-在撰寫這些端點對應的 IP 範圍時，如下所示。 **非常強烈**建議使用[指令碼 (例如此範例)](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category)、[Office 365 IP 和 URL Web 服務](microsoft-365-ip-web-service.md)或 [URL/IP 頁面](urls-and-ip-address-ranges.md)，在套用設定時檢查是否有任何更新，並將原則設定為定期執行。
+在撰寫這些端點對應的 IP 範圍時，如下所示。 **非常強烈** 建議使用 [指令碼 (例如此範例)](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category)、 [Office 365 IP 和 URL Web 服務](microsoft-365-ip-web-service.md)或 [URL/IP 頁面](urls-and-ip-address-ranges.md)，在套用設定時檢查是否有任何更新，並將原則設定為定期執行。
 
 ```
 104.146.128.0/17
@@ -169,13 +169,13 @@ $destPrefix = "52.120.0.0/14", "52.112.0.0/14", "13.107.64.0/18" # Teams Media e
 foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -InterfaceIndex $intIndex -NextHop $gateway}
 ```
 
-在上述指令碼中，_$intIndex_ 是連線至網際網路的介面索引 (藉由在 PowerShell 中執行 **get-netadapter** 來尋找；尋找 _ifIndex_的值)，而 _$gateway_ 是該介面的預設閘道 (藉由在命令提示字元中執行 **ipconfig** 或在 PowerShell 中執行 **(Get-NetIPConfiguration | Foreach IPv4DefaultGateway).NextHop** 來尋找)。
+在上述指令碼中， _$intIndex_ 是連線至網際網路的介面索引 (藉由在 PowerShell 中執行 **get-netadapter** 來尋找；尋找 _ifIndex_ 的值)，而 _$gateway_ 是該介面的預設閘道 (藉由在命令提示字元中執行 **ipconfig** 或在 PowerShell 中執行 **(Get-NetIPConfiguration | Foreach IPv4DefaultGateway).NextHop** 來尋找)。
 
-新增路由之後，您可以在命令提示字元或 PowerShell 中執行 **route print**，以確認路由表正確無誤。 輸出應包含您所新增的路由，並顯示介面索引 (在此範例中為 _22_) 和該介面的閘道 (在此範例中為 _192.168.1.1_)：
+新增路由之後，您可以在命令提示字元或 PowerShell 中執行 **route print** ，以確認路由表正確無誤。 輸出應包含您所新增的路由，並顯示介面索引 (在此範例中為 _22_ ) 和該介面的閘道 (在此範例中為 _192.168.1.1_ )：
 
 ![Route print 輸出](../media/vpn-split-tunneling/vpn-route-print.png)
 
-若要在 [最佳化] 類別中新增**所有**目前 IP 位址範圍的路由，您可使用下列指令碼變化形式來查詢 [Office 365 IP 和 URL Web 服務](microsoft-365-ip-web-service.md)，以取得目前的這組最佳化 IP 子網路並將其新增到路由表中。
+若要在 [最佳化] 類別中新增 **所有** 目前 IP 位址範圍的路由，您可使用下列指令碼變化形式來查詢 [Office 365 IP 和 URL Web 服務](microsoft-365-ip-web-service.md)，以取得目前的這組最佳化 IP 子網路並將其新增到路由表中。
 
 #### <a name="example-add-all-optimize-subnets-into-the-route-table"></a>範例：將所有最佳化子網路新增至路由表
 
@@ -238,7 +238,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 商務用 Skype Online 會產生使用者名稱/密碼，以便透過 _Traversal Using Relays around NAT (TURN)_ 安全存取媒體轉送。 媒體轉送會透過受 TLS 保護的 SIP 通道交換使用者名稱/密碼。 值得注意的是，即使 VPN 通道可用於將用戶端連線到公司網路，當流量離開公司網路以觸達服務時，仍然需要以其 SRTP 形式傳送。
 
-有關 Teams 如何降低常見安全性疑慮 (例如語音或 _Session Traversal Utilities for NAT (STUN)_ 放大攻擊) 的資訊，請參閱[這篇文章](https://docs.microsoft.com/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c)。
+有關 Teams 如何降低常見安全性疑慮 (例如語音或 _Session Traversal Utilities for NAT (STUN)_ 放大攻擊) 的資訊，請參閱 [這篇文章](https://docs.microsoft.com/openspecs/office_protocols/ms-ice2/69525351-8c68-4864-b8a6-04bfbc87785c)。
 
 若要了解遠距工作案例中的新式安全性控制項，也可參閱[在今日獨特的遠端工作情境中，安全專業人員與 IT 達到現代安全控制的另一種方法 (Microsoft 安全小組部落格)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/) (英文)。
 
@@ -266,13 +266,13 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 針對在這段期間內來自最常見合作夥伴的 Office 365 流量實作分割通道，本節會提供詳細指南的連結。 我們會在額外的指南可用時加以新增。
 
-- **Windows 10 VPN 用戶端**：[使用原生 Windows 10 VPN 用戶端最佳化遠端工作人員的 Office 365 流量](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
-- **Cisco Anyconnect**：[針對 Office365 最佳化 Anyconnect 分割通道](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
-- **Palo Alto GlobalProtect**：[透過 VPN 分割通道排除存取路由最佳化 Office 365 流量](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
-- **F5 Networks BIG-IP APM**：[使用 BIG-IP APM 時透過 VPN 最佳化遠端存取上的 Office 365 流量](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
-- **Citrix 閘道**：[針對 Office365 最佳化 Citrix 閘道的 VPN 分割通道](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
-- **Pulse Secure**：[VPN 通道：如何設定分割通道以排除 Office365 應用程式](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
-- **檢查點 VPN**： [如何設定 Office 365 和其他 SaaS 應用程式的分割隧道](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+- **Windows 10 VPN 用戶端** ： [使用原生 Windows 10 VPN 用戶端最佳化遠端工作人員的 Office 365 流量](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Cisco Anyconnect** ： [針對 Office365 最佳化 Anyconnect 分割通道](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
+- **Palo Alto GlobalProtect** ： [透過 VPN 分割通道排除存取路由最佳化 Office 365 流量](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
+- **F5 Networks BIG-IP APM** ： [使用 BIG-IP APM 時透過 VPN 最佳化遠端存取上的 Office 365 流量](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
+- **Citrix 閘道** ： [針對 Office365 最佳化 Citrix 閘道的 VPN 分割通道](https://docs.citrix.com/en-us/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Pulse Secure** ： [VPN 通道：如何設定分割通道以排除 Office365 應用程式](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
+- **檢查點 VPN** ： [如何設定 Office 365 和其他 SaaS 應用程式的分割隧道](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="faq"></a>常見問題集
 
@@ -306,7 +306,7 @@ Microsoft 安全小組已發佈概括安全性專業人員重要方式的 [文�
 
 同樣地，Office 365 會針對服務本身不同層中標示 [最佳化] 的端點提供保護 (如[本文件概述](https://docs.microsoft.com/office365/Enterprise/office-365-malware-and-ransomware-protection))。 如所述，在服務中提供這些安全性元素的效率會更高，而不是嘗試使用可能不會完全瞭解通訊協定/流量的裝置來執行。根據預設，SharePoint 線上 [會自動掃描](https://docs.microsoft.com/microsoft-365/security/office-365-security/virus-detection-in-spo) 檔案上傳的已知惡意程式碼
 
-針對以上所列的 Exchange 端點，[Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) 和 [Office 365 進階威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)都擅於提供送至服務的流量安全性。
+針對以上所列的 Exchange 端點， [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description) 和 [Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 執行極佳的工作，可提供服務的流量安全性。
 
 ### <a name="can-i-send-more-than-just-the-optimize-traffic-direct"></a>我可以直接傳送除了最佳化以外的流量？
 
@@ -324,11 +324,11 @@ Microsoft 安全小組已發佈概括安全性專業人員重要方式的 [文�
 
 ### <a name="does-this-advice-apply-to-users-in-china-using-a-worldwide-instance-of-office-365"></a>這項建議是否適用於使用全球 Office 365 執行個體的中國使用者？
 
-**否**，不適用。 對上述建議提供一項警告：PRC 中連線到全球 Office 365 執行個體的使用者。 由於區域中經常發生跨境網路擁塞情況，因此直接網際網路出口效能可能變化無常。 區域中的大部分客戶都使用 VPN 運作，將流量匯入公司網路，並利用其獲得授權的 MPLS 迴路或類似於透過最佳化路徑的國家/地區外部出口。 [Office 365 針對中國使用者的效能最佳化](microsoft-365-networking-china.md)這篇文章有進一步的概括說明。
+**否** ，不適用。 對上述建議提供一項警告：PRC 中連線到全球 Office 365 執行個體的使用者。 由於區域中經常發生跨境網路擁塞情況，因此直接網際網路出口效能可能變化無常。 區域中的大部分客戶都使用 VPN 運作，將流量匯入公司網路，並利用其獲得授權的 MPLS 迴路或類似於透過最佳化路徑的國家/地區外部出口。 [Office 365 針對中國使用者的效能最佳化](microsoft-365-networking-china.md)這篇文章有進一步的概括說明。
 
 ### <a name="does-split-tunnel-configuration-work-for-teams-running-in-a-browser"></a>分割通道設定是否適用于瀏覽器中執行的團隊？
 
-**否**，不適用。 它只適用于 Microsoft 團隊用戶端版本1.3.00.13565 或更高版本。 此版本包含用戶端偵測到可用網路路徑的方式的增強功能。
+**否** ，不適用。 它只適用于 Microsoft 團隊用戶端版本1.3.00.13565 或更高版本。 此版本包含用戶端偵測到可用網路路徑的方式的增強功能。
 
 ## <a name="related-topics"></a>相關主題
 

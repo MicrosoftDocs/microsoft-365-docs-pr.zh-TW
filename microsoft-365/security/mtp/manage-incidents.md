@@ -1,5 +1,5 @@
 ---
-title: 管理 Microsoft 威脅防護中的事件
+title: 在 Microsoft 365 Defender 中管理事件
 description: 了解如何指派及更新狀態
 keywords: 事件, 警示, 相關警示, 指派, 更新, 狀態, 管理, 分類, Microsoft, 365, m365
 search.product: eADQiWindows 10XVcnh
@@ -21,24 +21,24 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c599343233e7e29589bc4e3d1cda01da505b16f1
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 29f55d99dd3acd26ae305c03b533e2ca9bb61f2a
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430558"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846649"
 ---
-# <a name="manage-incidents-in-microsoft-threat-protection"></a>管理 Microsoft 威脅防護中的事件
+# <a name="manage-incidents-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中管理事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **適用於：**
-- Microsoft 威脅防護
+- Microsoft 365 Defender
 
 
 
-管理事件對確保控制及解決威脅至關重要。 在 Microsoft 威脅防護中，您可管理裝置、使用者和信箱的事件。 
+管理事件對確保控制及解決威脅至關重要。 在 Microsoft 365 Defender 中，您有權管理裝置、使用者和信箱上的事件。 
 
 
 您可以從 **[事件佇列]** 選取事件來管理事件。 
@@ -64,11 +64,11 @@ ms.locfileid: "48430558"
 
 ## <a name="set-status-and-classification"></a>設定狀態和分類
 ### <a name="incident-status"></a>事件狀態
-您可以在調查進行的過程中變更事件的狀態來將事件分類 (例如：**作用中**或**已解決**)。 這可協助您組織及管理小組回應事件的方式。
+您可以在調查進行的過程中變更事件的狀態來將事件分類 (例如： **作用中** 或 **已解決** )。 這可協助您組織及管理小組回應事件的方式。
 
-例如，您的 SOC 分析師可檢閱當天的緊急**作用中**事件，並決定是否將該事件指派給自己進行調查。
+例如，您的 SOC 分析師可檢閱當天的緊急 **作用中** 事件，並決定是否將該事件指派給自己進行調查。
 
-如果事件已修補，您的 SOC 分析師可將事件設為**已解決**。 解決事件將會自動關閉屬於該事件且仍開啟的所有警報。 
+如果事件已修補，您的 SOC 分析師可將事件設為 **已解決** 。 解決事件將會自動關閉屬於該事件且仍開啟的所有警報。 
 
 ### <a name="classification-and-determination"></a>分類及判斷
 您可以選擇不要設定分類，或決定將事件指定為 true 或 false。 這樣做可協助小組查看模式及深入瞭解。 

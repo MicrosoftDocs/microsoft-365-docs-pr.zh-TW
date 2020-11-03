@@ -1,5 +1,5 @@
 ---
-title: 'AssignedIPAddresses Microsoft 威脅防護的高級搜尋中的 ( # A1 函數'
+title: 'AssignedIPAddresses Microsoft 365 Defender 的高級搜尋中的 ( # A1 函數'
 description: '瞭解如何使用 AssignedIPAddresses ( # A1 函數來取得指派給裝置的最新 IP 位址'
 keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema reference，kusto，FileProfile，file profile，function，豐富
 search.product: eADQiWindows 10XVcnh
@@ -19,20 +19,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 462a4884e2b17f9ae75ea3bdc1531b180dcc5934
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: cb9dffca148c95f284a6a7e920f3a08a839b748d
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430124"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847641"
 ---
 # <a name="assignedipaddresses"></a>AssignedIPAddresses()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 使用 `AssignedIPAddresses()` 您的 [高級搜尋](advanced-hunting-overview.md) 查詢中的功能，快速取得指派給裝置的最新 IP 位址。 如果您指定的是 timestamp 引數，此函數會在指定的時間取得最近的 IP 位址。 
 
@@ -55,7 +55,7 @@ AssignedIPAddresses(x, y)
 ## <a name="arguments"></a>引數
 
 - **x** `DeviceId` 或 `DeviceName` 值，用以識別裝置
-- **y**- `Timestamp` (datetime) 值指示函數從特定時間取得最近指派的 IP 位址。 若未指定，該函數會傳回最新的 IP 位址。
+- **y** - `Timestamp` (datetime) 值指示函數從特定時間取得最近指派的 IP 位址。 若未指定，該函數會傳回最新的 IP 位址。
 
 ## <a name="examples"></a>範例
 

@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 威脅防護中建立及管理自訂偵測規則
+title: 在 Microsoft 365 Defender 中建立及管理自訂偵測規則
 description: 瞭解如何根據高級搜尋查詢建立及管理自訂偵測規則
 keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，自訂偵測，rules，schema，kusto，microsoft 365，Microsoft 威脅防護，RBAC，許可權，Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
@@ -19,20 +19,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 85bf980f87b640df0f3767294b3c5f2059ba0ac6
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 5de4532a1bba809cde16ba6033ab30773a832176
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430856"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846769"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>建立及管理自訂的偵測規則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 自訂偵測規則是您可以使用 [高級搜尋](advanced-hunting-overview.md) 查詢進行設計和調整的規則。 這些規則可讓您主動監視各種事件和系統狀態，包括可疑的侵犯活動和設定不當的端點。 您可以將其設定為定期執行，並在每個專案相符時產生提醒並採取回應動作。
 
@@ -40,17 +40,17 @@ ms.locfileid: "48430856"
 
 若要管理自訂偵測，您必須被指派其中一個角色：
 
-- **安全性管理員**：具有此 [Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理 Microsoft 365 安全性中心及其他入口網站和服務中的安全性設定。
+- **安全性管理員** ：具有此 [Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理 Microsoft 365 安全性中心及其他入口網站和服務中的安全性設定。
 
-- **安全操作員**-具有此 [Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理提醒，並具有安全相關功能的全域唯讀許可權，包括 Microsoft 365 Security center 中的所有資訊。 只有在 Microsoft Defender ATP 中關閉以角色為基礎的存取控制 (RBAC) 時，此角色才足以管理自訂偵測。 如果您已設定 RBAC，您也需要 Microsoft Defender ATP 的「 **管理安全性設定** 」許可權。
+- **安全操作員** -具有此 [Azure Active Directory 角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) 的使用者可以管理提醒，並具有安全相關功能的全域唯讀許可權，包括 Microsoft 365 Security center 中的所有資訊。 只有在 Microsoft Defender for Endpoint 中關閉以角色為基礎的存取控制 (RBAC) 時，此角色才足以管理自訂偵測。 如果您已設定 RBAC，您也需要使用 Defender for Endpoint 的「 **管理安全性設定** 」許可權。
 
 若要管理必要的許可權， **全域管理員** 可以：
 
-- 在 [ **role**security admin] 底下的[Microsoft 365 系統管理中心](https://admin.microsoft.com/)中指派**安全性管理員**或**安全性操作員**角色  >  ** **。
-- 在 [**設定**許可權角色] 底下的[microsoft defender Security Center](https://securitycenter.windows.com/)中檢查 microsoft defender ATP 的 RBAC 設定  >  **Permissions**  >  ** **。 選取對應的角色以指派「 **管理安全性設定** 」許可權。
+- 在 [ **role** security admin] 底下的 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)中指派 **安全性管理員** 或 **安全性操作員** 角色  >  **** 。
+- 在 [ **設定** 許可權角色] 底下的 [microsoft defender Security Center](https://securitycenter.windows.com/)中檢查 microsoft defender for Endpoint 的 RBAC 設定  >  **Permissions**  >  **** 。 選取對應的角色以指派「 **管理安全性設定** 」許可權。
 
 > [!NOTE]
-> 若要管理自訂的偵測，當已開啟 RBAC 時， **安全性操作員** 會需要 MICROSOFT Defender ATP 中的「 **管理安全性設定** 」許可權。
+> 若要管理自訂偵測，當已開啟 RBAC 時， **安全性操作員** 會需要 Microsoft Defender for Endpoint 中的「 **管理安全性設定** 」許可權。
 
 ## <a name="create-a-custom-detection-rule"></a>建立自訂偵測規則
 ### <a name="1-prepare-the-query"></a>1. 準備查詢。
@@ -99,28 +99,28 @@ DeviceEvents
 ```
 
 > [!TIP]
-> 為了獲得更佳的查詢效能，請設定符合規則之預定執行頻率的時間篩選。 由於頻率最低的執行是 _每24小時_，篩選過去一天會涵蓋所有新的資料。
+> 為了獲得更佳的查詢效能，請設定符合規則之預定執行頻率的時間篩選。 由於頻率最低的執行是 _每24小時_ ，篩選過去一天會涵蓋所有新的資料。
 
 ### <a name="2-create-new-rule-and-provide-alert-details"></a>2. 建立新的規則，並提供警示詳細資料。
 
 使用查詢編輯器中的查詢，選取 [ **建立偵測規則** ]，並指定下列警示詳細資料：
 
-- **偵測名稱**—偵測規則的名稱
-- **Frequency**：執行查詢和採取動作的間隔。 [請參閱以下其他指導方針](#rule-frequency)
-- **警示標題**—顯示規則所觸發警示的標題
-- **嚴重性**（由規則所識別之元件或活動的潛在風險）
-- **類別**：由規則識別的威脅元件或活動
-- **MITRE ATT&CK 技術**-由規則識別的一或多個攻擊技術（如 MITRE ATT 中所述） [&CK framework](https://attack.mitre.org/)。 此區段針對某些警示類別（包括惡意程式碼、勒索軟體、可疑活動和不需要的軟體）隱藏。
-- **描述**-規則所識別之元件或活動的詳細資訊 
-- **建議動作**-回應者可能會採取以回應警示的其他動作
+- **偵測名稱** —偵測規則的名稱
+- **Frequency** ：執行查詢和採取動作的間隔。 [請參閱以下其他指導方針](#rule-frequency)
+- **警示標題** —顯示規則所觸發警示的標題
+- **嚴重性** （由規則所識別之元件或活動的潛在風險）
+- **類別** ：由規則識別的威脅元件或活動
+- **MITRE ATT&CK 技術** -由規則識別的一或多個攻擊技術（如 MITRE ATT 中所述） [&CK framework](https://attack.mitre.org/)。 此區段針對某些警示類別（包括惡意程式碼、勒索軟體、可疑活動和不需要的軟體）隱藏。
+- **描述** -規則所識別之元件或活動的詳細資訊 
+- **建議動作** -回應者可能會採取以回應警示的其他動作
 
 #### <a name="rule-frequency"></a>規則頻率
 當您儲存或編輯新規則時，它會執行並檢查過去30天的資料是否相符。 然後，此規則會以固定間隔重新執行，並根據您選擇的頻率套用 lookback 持續時間：
 
-- **每24小時**-每24小時執行一次，檢查過去30天的資料
-- **每12小時**-每12小時執行一次，檢查過去24小時的資料
-- **每3小時**，每3小時執行一次，檢查過去6個小時的資料
-- **每小時-每小時執行一次**，檢查過去2個小時的資料
+- **每24小時** -每24小時執行一次，檢查過去30天的資料
+- **每12小時** -每12小時執行一次，檢查過去24小時的資料
+- **每3小時** ，每3小時執行一次，檢查過去6個小時的資料
+- **每小時-每小時執行一次** ，檢查過去2個小時的資料
 
 >[!TIP]
 > 使查詢中的時間篩選與 lookback 持續時間相符。 Lookback 持續時間以外的結果會被忽略。  
@@ -137,11 +137,11 @@ DeviceEvents
 
 #### <a name="actions-on-devices"></a>裝置上的動作
 這些動作會套用至 `DeviceId` 查詢結果欄中的裝置：
-- **隔離裝置**—使用 MICROSOFT Defender ATP 來套用完整網路隔離，以防止裝置連接至任何應用程式或服務。 [深入瞭解 Microsoft Defender ATP 電腦隔離](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
-- **收集調查套件**—收集 ZIP 檔案中的裝置資訊。 [深入瞭解 Microsoft Defender ATP 調查套件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **執行防病毒掃描**-在裝置上執行完整的 Windows Defender 防病毒掃描
-- **開始調查**--在裝置上開始[自動調查](mtp-autoir.md)
-- **限制應用程式執行**—設定裝置上的限制，只允許以 Microsoft 發行的憑證簽署的檔案執行。 [深入瞭解 Microsoft Defender ATP 的應用程式限制](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
+- **隔離裝置** —使用 Microsoft Defender for Endpoint 來套用完整網路隔離，以防止裝置連接至任何應用程式或服務。 [深入瞭解 Microsoft Defender for Endpoint machine 隔離](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **收集調查套件** —收集 ZIP 檔案中的裝置資訊。 [深入瞭解 Microsoft Defender for Endpoint 調查套件](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
+- **執行防病毒掃描** -在裝置上執行完整的 Windows Defender 防病毒掃描
+- **開始調查** --在裝置上開始 [自動調查](mtp-autoir.md)
+- **限制應用程式執行** —設定裝置上的限制，只允許以 Microsoft 發行的憑證簽署的檔案執行。 [深入瞭解 Microsoft Defender for Endpoint 的應用程式限制](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>檔上的動作
 選取此選項時，您可以選擇對查詢結果的、、或欄中的檔案套用 **隔離檔** 動作 `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` 。 此巨集指令會從目前的位置刪除檔案，並將複本放入隔離區。
@@ -150,7 +150,7 @@ DeviceEvents
 選取此選項時，會對使用者于、或欄中的查詢結果，對使用者採取「將 **使用者標示為受損** 」動作 `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` 。 此動作會在 Azure Active Directory 中將使用者風險層級設為「高」，以觸發對應的身分 [識別保護原則](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。
 
 > [!NOTE]
-> Microsoft 威脅防護目前不支援自訂偵測規則的 allow 或 block 動作。
+> Microsoft 365 Defender 目前不支援自訂偵測規則的 allow 或 block 動作。
 
 ### <a name="5-set-the-rule-scope"></a>5. 設定規則範圍。
 設定範圍以指定規則涵蓋哪些裝置。 此範圍會影響檢查裝置的規則，而不會影響僅檢查信箱和使用者帳戶或身分識別的規則。
@@ -170,38 +170,38 @@ DeviceEvents
 
 ### <a name="view-existing-rules"></a>查看現有規則
 
-若要查看所有現有的自訂偵測規則，請流覽至**搜尋**  >  **自訂**偵測。 頁面會列出具有下列執行資訊的所有規則：
+若要查看所有現有的自訂偵測規則，請流覽至 **搜尋**  >  **自訂** 偵測。 頁面會列出具有下列執行資訊的所有規則：
 
-- **上次執行**時間-最後一次執行規則以檢查查詢符合專案並產生警示
-- **上次執行狀態**—是否已成功執行規則
-- **下一次執行**（下一個排程的執行）
-- **狀態**—是否已開啟或關閉規則
+- **上次執行** 時間-最後一次執行規則以檢查查詢符合專案並產生警示
+- **上次執行狀態** —是否已成功執行規則
+- **下一次執行** （下一個排程的執行）
+- **狀態** —是否已開啟或關閉規則
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>View rule details、modify rule 及 run rule
 
-若要查看有關自訂偵測規則的完整資訊，請移至**搜尋**  >  **自訂**偵測，然後選取規則的名稱。 然後您就可以查看規則的一般資訊，包括資訊的執行狀態和範圍。 此頁面也會提供觸發警示和動作的清單。
+若要查看有關自訂偵測規則的完整資訊，請移至 **搜尋**  >  **自訂** 偵測，然後選取規則的名稱。 然後您就可以查看規則的一般資訊，包括資訊的執行狀態和範圍。 此頁面也會提供觸發警示和動作的清單。
 
 ![自訂偵測規則詳細資料頁面](../../media/custom-detection-details.png)<br>
 *自訂偵測規則詳細資料*
 
 您也可以在此頁面上對規則採取下列動作：
 
-- **Run**-立即執行規則。 這也會重設下一個執行的間隔。
-- **編輯**—修改規則但不變更查詢
-- **修改查詢**-在高級搜尋中編輯查詢
-- **開啟**  / **關閉**—啟用規則或停止執行
-- **刪除**—關閉規則並加以移除
+- **Run** -立即執行規則。 這也會重設下一個執行的間隔。
+- **編輯** —修改規則但不變更查詢
+- **修改查詢** -在高級搜尋中編輯查詢
+- **開啟**  / **關閉** —啟用規則或停止執行
+- **刪除** —關閉規則並加以移除
 
 ### <a name="view-and-manage-triggered-alerts"></a>查看及管理觸發的警示
 
-在 [規則詳細資料] 畫面中 (**搜尋**  >  **自訂**偵測  >  **[規則名稱]**) 中，移至 [**觸發警示**]，其中會列出與規則相符所產生的警示。 選取警示以查看與其相關的詳細資訊，並採取下列動作：
+在 [規則詳細資料] 畫面中 ( **搜尋**  >  **自訂** 偵測  >  **[規則名稱]** ) 中，移至 [ **觸發警示** ]，其中會列出與規則相符所產生的警示。 選取警示以查看與其相關的詳細資訊，並採取下列動作：
 
 - 透過設定其狀態和分類 (true 或 false 警示來管理提醒) 
 - 將警示連結到事件
 - 在高級搜尋中執行觸發警示的查詢
 
 ### <a name="review-actions"></a>審閱動作
-在 [規則詳細資料] 畫面中 (**搜尋**  >  **自訂**偵測  >  **[規則名稱]**) 中，移至 [**觸發的動作**]，其中會根據符合規則的相符，列出所採取的動作。
+在 [規則詳細資料] 畫面中 ( **搜尋**  >  **自訂** 偵測  >  **[規則名稱]** ) 中，移至 [ **觸發的動作** ]，其中會根據符合規則的相符，列出所採取的動作。
 
 >[!TIP]
 >若要快速查看資訊，並對表格中的專案採取動作，請使用表格左邊的選取範圍欄 [&#10003;]。

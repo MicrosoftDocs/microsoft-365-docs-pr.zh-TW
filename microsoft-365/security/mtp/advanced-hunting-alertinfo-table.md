@@ -19,24 +19,24 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 739ee33b162c1e701603a17e59f0d0c2611c064c
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 7672d974666a381a48da15e0917a46c97df88895
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430172"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847665"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 
 
-[！附注] `AlertInfo` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含來自 Microsoft Defender atp、Office 365 Atp、Microsoft Cloud App SECURITY 和 Azure atp 的提醒資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+[！附注] `AlertInfo` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含 Microsoft defender For Endpoint、Microsoft defender for Office 365、Microsoft Cloud App Security 及 Microsoft defender for Identity 的警示相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 

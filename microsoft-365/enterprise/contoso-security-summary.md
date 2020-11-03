@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用 Microsoft 365 for enterprise 的安全性功能。
-ms.openlocfilehash: d84b1423497a6a4358142902c4e159cc54b3500b
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754229"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847103"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 之 Microsoft 365 for enterprise security 的摘要
 
@@ -89,9 +89,9 @@ Contoso 遵循這些步驟來準備其安全性，以供部署 Microsoft 365 for
 
   Contoso 使用 [Windows Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/windows-defender-antivirus-in-windows-10)，針對執行 Windows 10 企業版的電腦和裝置執行惡意程式碼防護和反惡意程式碼管理。
 
-- 使用 Office 365 進階威脅防護來保護電子郵件流程和信箱稽核記錄 
+- 使用 Microsoft Defender for Office 365 保護電子郵件流程和信箱審核記錄 
 
-  Contoso 使用 Exchange Online Protection 和 [Office 365 進階威脅防護 (ATP)](https://docs.microsoft.com/office365/securitycompliance/office-365-atp)，來防護未知惡意程式碼、病毒及透過電子郵件傳輸的惡意 URL。
+  Contoso 使用 Exchange Online Protection 和 [Defender For Office 365](https://docs.microsoft.com/office365/securitycompliance/office-365-atp) ，以防禦透過電子郵件傳輸的未知惡意程式碼、病毒和惡意 URLs。
 
   Contoso 也啟用信箱審核記錄，以識別登入使用者信箱的人員、傳送郵件，以及由信箱擁有者、委派的使用者或系統管理員所執行的其他活動。
 
@@ -127,9 +127,9 @@ Contoso 遵循這些步驟來準備其安全性，以供部署 Microsoft 365 for
 
 ## <a name="security-management"></a>安全性管理
 
-- 具有 Azure 資訊安全中心的 IT 中央安全性儀表板
+- 使用 Azure Defender 的中央安全性儀表板
 
-  Contoso 使用 [Azure Security Center](https://azure.microsoft.com/services/security-center/) 呈現統一的安全性和威脅防護的觀點、管理其工作負載的安全性原則，以及回應 cyberattacks。
+  Contoso 使用 [Azure Defender *](https://azure.microsoft.com/services/security-center/) 來顯示安全和威脅防護的統一觀點，以管理其整個工作負載的安全性原則，以及回應 cyberattacks。
 
 - 適用於具有 Windows Defender 資訊安全中心之使用者的中央安全性儀表板
 

@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 瞭解 Contoso 內部部署 IT 基礎結構的基本結構，以及 Microsoft 365 for enterprise 如何滿足公司的業務需求。
-ms.openlocfilehash: 767374097efa116f116cff6f6ddf96d075eb71ed
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 0a837a457869fc579d94ee5e5f9bb114cb93f641
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754583"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847127"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT 基礎結構和業務需求
 
@@ -121,10 +121,10 @@ Contoso IT 部門決定在部署之前，下列業務需求對應至 Microsoft 3
 |  | 改善遠端和行動工作者的生產力 | Microsoft 365 工作負載和雲端式資料 |
 |  | 增加創意和創新 | Windows Ink、Cortana at Work、PowerPoint |
 | 安全性 |  |  |
-|  | 身分識別和存取管理 | 具備 Azure Multi-Factor 驗證 (MFA) 和 Azure Active Directory 特權身分識別管理 (PIM) 的專屬全域管理員帳戶。 <BR> 適用於所有使用者帳戶的 MFA <BR> 條件式存取 <BR> Windows Hello <BR> Windows Credential Guard |
-|  | 威脅防護 | 進階威脅分析 <BR> Windows Defender <BR> 進階威脅防護 <BR> Office 365 進階威脅防護 <BR> Microsoft 365 威脅調查和回應 <BR> |
+|  | 身分識別和存取管理 | 具有 Azure 多重要素驗證 (MFA) 與 Azure AD Privileged Identity Management (PIM) 的專用全域系統管理員帳戶 <BR> 適用於所有使用者帳戶的 MFA <BR> 條件式存取 <BR> Windows Hello <BR> Windows Credential Guard |
+|  | 威脅防護 | 進階威脅分析 <BR> Windows Defender <BR> 適用於 Office 365 的 Defender <BR> Microsoft Defender for Office 365 <BR> Microsoft 365 威脅調查和回應 <BR> |
 |  | 資訊保護 | Azure 資訊保護 <BR> 資料外洩防護 (DLP) <BR> Windows 資訊保護 (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
-|  | 安全性管理 | Azure 資訊安全中心  <BR> Windows Defender 資訊安全中心 |
+|  | 安全性管理 | Azure Defender *  <BR> Windows Defender 資訊安全中心 |
 | 遠端和行動裝置存取與商務合作夥伴 |  |  |
 |  | 更好的遠端和行動工作者安全性 | Microsoft Intune |
 |  | 減少員工的遠端存取基礎結構 | Microsoft 365 工作負載和雲端式資料 |
@@ -139,7 +139,7 @@ Contoso IT 部門決定在部署之前，下列業務需求對應至 Microsoft 3
 
 深入瞭解 Contoso Corporation [內部部署網路](contoso-networking.md) ，以及其如何針對 Microsoft 365 雲端架構資源進行存取和延遲優化。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 

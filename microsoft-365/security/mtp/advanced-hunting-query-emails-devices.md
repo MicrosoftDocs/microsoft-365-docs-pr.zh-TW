@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6c758c05a64cd7ce84a2b021fe32f9e5ce5c1090
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 97640c318908b87c211caed780624080508a255f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431060"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847341"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>尋找跨裝置、電子郵件、應用程式和身分識別的威脅
 
@@ -32,12 +32,12 @@ ms.locfileid: "48431060"
 
 
 **適用於：**
-- Microsoft 威脅防護
+- Microsoft 365 Defender
 
-Microsoft 威脅防護中的[高級搜尋](advanced-hunting-overview.md)可讓您主動搜尋整個威脅：
-- 由 Microsoft Defender ATP 管理的裝置
+Microsoft 365 Defender 中的[高級搜尋](advanced-hunting-overview.md)可讓您主動搜尋整個威脅：
+- Microsoft Defender for Endpoint 所管理的裝置
 - Microsoft 365 處理的電子郵件
-- Microsoft Cloud App Security 和 Azure ATP 追蹤的雲端應用程式活動、驗證事件和網域控制站活動
+- Microsoft Cloud App Security 和 Microsoft Defender 身分識別追蹤的雲端應用程式活動、驗證事件和網域控制站活動
 
 透過這種可視性層次，您可以快速尋找跨越網路各部分的威脅，包括抵達電子郵件或網頁的複雜入侵、提升本機許可權、取得許可權的網域認證，以及橫向移至您的裝置。 
 

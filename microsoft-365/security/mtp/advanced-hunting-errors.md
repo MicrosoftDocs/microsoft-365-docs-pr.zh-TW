@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 威脅防護的高級搜尋中處理錯誤
+title: 在 Microsoft 365 Defender 的高級搜尋中處理錯誤
 description: 瞭解使用高級搜尋時所顯示的錯誤
 keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema，kusto，timeout，資源，錯誤，未知錯誤，限制，配額，參數，配置
 search.product: eADQiWindows 10XVcnh
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 8b9c46e312d28c7a08efbfa74f96dc33b90fee0a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a5379db66034ecfe537f7d9effdd83f6c41bfd58
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636890"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846889"
 ---
 # <a name="handle-advanced-hunting-errors"></a>處理高級搜尋錯誤
 
@@ -45,6 +45,6 @@ ms.locfileid: "48636890"
 
 ## <a name="related-topics"></a>相關主題
 - [高級搜尋最佳作法](advanced-hunting-best-practices.md)
-- [配額和使用參數](advanced-hunting-limits.md)
+- [配額和使用量參數](advanced-hunting-limits.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [Kusto 查詢語言概述](https://docs.microsoft.com/azure/data-explorer/kusto/query/)

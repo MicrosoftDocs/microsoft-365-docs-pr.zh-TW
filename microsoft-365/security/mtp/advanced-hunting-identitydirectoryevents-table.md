@@ -19,20 +19,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: d93ef3eb3bbf6def0f633aa0f69032e37d10c4c9
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 41b429e32122d6cc58a746649c8a0428f0a90b0f
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430370"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847425"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 `IdentityDirectoryEvents` [Advanced 搜尋](advanced-hunting-overview.md)架構中的表格包含的事件包括內部部署網域控制站執行 ACTIVE Directory (AD) 。 此表格會捕獲各種身分識別相關的事件，例如密碼變更、密碼到期和使用者主要名稱 (UPN) 變更。 它也會在網域控制站上捕獲系統事件，例如排程任務和 PowerShell 活動。 使用這個參考來建立從此表格取回之資訊的查詢。
 

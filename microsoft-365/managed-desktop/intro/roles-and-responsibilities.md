@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8ced46ea30c7225fd3e5c8f1309ef482542e51b2
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: de0bc092c35c7f48c562da8d4218f7a638abe1d5
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445780"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847777"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft 受管理的電腦角色和責任
 
@@ -33,7 +33,7 @@ Microsoft 提供下列主要角色和責任：
 MDM 原則管理 | Microsoft 會根據最佳作法套用 MDM 原則，並考慮原則變更的要求。 我們也會依照 [裝置原則](../service-description/device-policies.md)中的規定，對租使用者進行變更。
 使用者支援 | 我們會透過預先安裝在所有 Microsoft 受管理的桌面裝置上的 Get Help 應用程式，針對所有已註冊的使用者，為裝置、Windows 和 Microsoft 365 應用程式的企業產品套件提供使用者支援。 
 Microsoft 受管理的桌面服務支援 | Microsoft 將透過 Microsoft 受管理的桌面作業小組為您的 IT 部門提供支援。 此小組將支援客戶的 Microsoft 受管理桌面環境的技術疑難排解、變更要求和事件管理。 如需詳細資訊，請參閱 [Microsoft Managed Desktop 的系統管理支援](../working-with-managed-desktop/admin-support.md)。
-安全性監控 | Microsoft 將使用 Microsoft Defender ATP 監控 Microsoft 受管理的桌面裝置。 如果 Microsoft Managed Desktop Security Operations Center (SOC) 偵測到威脅，我們會通知您、隔離裝置，並以遠端方式修正問題。 如需詳細資訊，請參閱 [安全性](../service-description/security.md)。
+安全性監控 | Microsoft 將使用 Microsoft Defender for Endpoint 來監視 Microsoft 受管理的桌面裝置。 如果 Microsoft Managed Desktop Security Operations Center (SOC) 偵測到威脅，我們會通知您、隔離裝置，並以遠端方式修正問題。 如需詳細資訊，請參閱 [安全性](../service-description/security.md)。
 更新監控與管理 | 我們會積極監控 Microsoft 受管理的桌面裝置，以確保為 Microsoft Windows 和 Microsoft Office 安裝最新的品質和功能更新。 如需詳細資訊，請參閱 [如何處理更新](../service-description/updates.md)。
 使用者和裝置群組 | Microsoft 受管理的桌面作業小組會建立及管理必要的裝置和使用者群組做為 IT 作業的一部分。 這些群組不允許任何成員資格或設定變更。 變更這些群組可能會造成裝置的意外設定和功能喪失。 如需在建立這些群組之後的任何問題或問題，IT 管理員可以與 Microsoft 受管理的桌面作業聯繫。 如需詳細資訊，請參閱 [Microsoft Managed Desktop 的系統管理支援](../working-with-managed-desktop/admin-support.md)。
 

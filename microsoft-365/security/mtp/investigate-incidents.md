@@ -1,5 +1,5 @@
 ---
-title: 調查 Microsoft 威脅防護中的事件
+title: 調查 Microsoft 365 Defender 中的事件
 description: 分析與裝置、使用者和信箱相關的事件。
 keywords: 事件,電腦,裝置,使用者,身分識別,郵件,電子郵件,信箱,調查,圖形,證據
 search.product: eADQiWindows 10XVcnh
@@ -21,33 +21,33 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 7a4e901c016d55115eb79001ff2fc42d2340f8f2
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: a6cdf55b33c91a33675bb4909c0cb08e8561d212
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430594"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846745"
 ---
-# <a name="investigate-incidents-in-microsoft-threat-protection"></a>調查 Microsoft 威脅防護中的事件
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>調查 Microsoft 365 Defender 中的事件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **適用於：**
 
-- Microsoft 威脅防護
+- Microsoft 365 Defender
 
-Microsoft 威脅防護可彙總各種裝置、使用者和信箱的所有相關警示、資產、調查和證據，讓您全面了解整個攻擊範圍。
+Microsoft 365 Defender 會將所有相關的警示、資產、調查和證據從您的裝置、使用者和信箱集中在一起，讓您全面瞭解攻擊的整體廣度。
 
 調查影響您網路的警示、了解其含義，並彙整與該事件相關聯的證據，以便設計有效的修復方案。
 
 ## <a name="investigate-an-incident"></a>調查事件
 
-1. 從事件佇列中選取事件。 <BR> 這會開啟側邊面板，並預覽重要資訊，例如狀態、嚴重性、類別和受影響的實體。
+1. 從事件佇列中選取事件。 <BR> 側邊面板隨即開啟，並預覽重要資訊（例如狀態、嚴重性、類別及受影響的實體）。
 
     ![事件側邊面板影像](../../media/incident-side-panel.png)
 
-2. 選取**開啟事件頁面**。 <BR> 這會開啟事件頁面，您可以在此找到更多資訊事件詳細資料、註解和動作、索引標籤 (概觀、警示、裝置、使用者、調查、證據)。
+2. 選取 **開啟事件頁面** 。 <BR> 這會開啟 [事件] 頁面，您可以在其中找到詳細資訊事件詳細資料、批註和動作、索引標籤 (總覽、警示、裝置、使用者、調查、證據) 。
 
 3. 檢閱涉及事件的警示、裝置、使用者和其他實體。
 
@@ -57,7 +57,7 @@ Microsoft 威脅防護可彙總各種裝置、使用者和信箱的所有相關�
 
 ![事件概觀頁面影像](../../media/incidents-overview.png)
 
-攻擊類別為您提供視覺和數字檢視，以了解這項攻擊對終止鏈的進展狀況。 如同其他 Microsoft 安全性產品，Microsoft 威脅防護保護與 [MITRE ATT&CK&trade;](https://attack.mitre.org/) 架構一致。
+「攻擊類別」可讓您直觀和數值的方式，顯示攻擊如何對 kill 鏈進行的進展。 與其他 Microsoft 安全性產品一樣，Microsoft 365 Defender 會對應至[MITRE ATT&CK &trade; ](https://attack.mitre.org/) framework。
 
 範圍區段會顯示屬於此事件中影響最大的資產清單。 如果關於此資產的特定資訊，例如風險層級、調查優先順序以及資產上的任何標記，本區段也將會顯示這項資訊。
 
@@ -69,11 +69,11 @@ Microsoft 威脅防護可彙總各種裝置、使用者和信箱的所有相關�
 
 ## <a name="alerts"></a>警示
 
-您可以檢視與該事件相關的所有警示，以及與該事件相關的其他資訊，例如嚴重性、涉及警示的實體、警示來源 (Azure ATP、Microsoft Defender ATP、Office 365 ATP)，以及連結在一起的原因。
+您可以查看與該事件相關的所有警示及其他相關資訊，例如警示中所涉及的嚴重性、實體、 (Microsoft Defender for Identity、Microsoft Defender for Endpoint、microsoft defender for Office 365) ，以及連結在一起的原因。
 
 ![事件警示頁面影像](../../media/incident-alerts.png)
 
-根據預設，警示會依時間順序排列，讓您首先檢視攻擊如何隨時間推移而進行。 按一下每個警示，就會引導您至相關警示頁面，您可以在該頁面中深入調查警示。
+根據預設，警示會依時間順序排列，讓您首先檢視攻擊如何隨時間推移而進行。 按一下每個警示會產生相關的警示頁面，您可以在其中對該警示進行深入調查。
 
 ## <a name="devices"></a>裝置
 
@@ -95,21 +95,21 @@ Microsoft 威脅防護可彙總各種裝置、使用者和信箱的所有相關�
 
 ## <a name="mailboxes"></a>信箱
 
-調查已識別為指定事件一部分或與相關的信箱。 若要執行進一步調查工作，選取與郵件相關的警示，將會開啟 Office 365 進階威脅防護，便可進行修復。
+調查已識別為指定事件一部分或與相關的信箱。 若要進行進一步的調查工作，選取郵件相關的警示會開啟 Microsoft Defender for Office 365，您可以採取修正動作。
 
 ![事件信箱索引標籤影像](../../media/incident-mailboxes.png)
 
 ## <a name="investigations"></a>調查
 
-選取 [ **調查** ]，以查看此事件中的警示所觸發的所有自動調查。 調查將執行修復動作或等待分析人員核准動作，具體取決於您如何設定自動化調查以在 Microsoft Defender ATP 和 Office 365 進階威脅防護中執行。
+選取 [ **調查** ]，以查看此事件中的警示所觸發的所有自動調查。 調查會執行修正動作，或等候分析員的動作批准，視您如何設定自動調查以在 Microsoft Defender for Endpoint 和 Defender for Office 365 中執行。
 
 ![事件調查索引標籤影像](../../media/incident-investigations.png)
 
-選取調查以瀏覽至 [調查詳細資料] 頁面，取得調查和修復狀態的完整資訊。 如果有任何待核准的動作為調查的一部分，將顯示在 [擱置中的動作] 索引標籤中。採取動作，作為事件修復的一部分。
+選取調查以瀏覽至 [調查詳細資料] 頁面，取得調查和修復狀態的完整資訊。 如果有任何動作出于調查的一部分而待核准，它們就會出現在 [擱置的動作] 索引標籤中。採取動作做為事件修復的一部分。
 
 ## <a name="evidence"></a>證據
 
-Microsoft 威脅防護會自動調查警示中所有事件支援活動和可疑實體，為您提供重要檔案、程序、服務、電子郵件等相關自動回應與資訊。 可協助您快速偵測並封鎖事件中的潛在威脅。
+Microsoft 365 Defender 會自動調查警示中的所有事件支援事件和可疑實體，以提供 autoresponse 及重要檔案、程式、服務、電子郵件等相關資訊。 可協助您快速偵測並封鎖事件中的潛在威脅。
 
 ![事件證據索引標籤影像](../../media/incident-evidence.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft 威脅防護中的自動調查遵循的修復動作
-description: 深入瞭解在 Microsoft 威脅防護中遵循自動調查的修復動作
+title: Microsoft 365 Defender 中的自動調查遵循的修復動作
+description: 深入瞭解 Microsoft 365 Defender 中遵循自動調查的修復動作
 keywords: automated, investigation, alert, trigger, action, remediation, 自動化, 調查, 警示, 觸發, 動作, 補救
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -21,27 +21,27 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.date: 09/16/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 5106ef34f11cb43d74fa993fcdb820d6a5dce86f
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 71cdf2d1b9a40e9cfbf487ca8596a0c2b09475d1
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48429465"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847209"
 ---
-# <a name="remediation-actions-following-automated-investigations-in-microsoft-threat-protection"></a>Microsoft 威脅防護中的自動調查遵循的修復動作
+# <a name="remediation-actions-following-automated-investigations-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自動調查遵循的修復動作
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 
 ## <a name="remediation-actions"></a>補救動作
 
-在 Microsoft 威脅防護中的自動調查期間和之後，會針對惡意或可疑專案識別修正動作。 對裝置（也稱為端點）採取某些類型的修復動作。 對電子郵件內容採取其他修復動作。 在採取修正動作、核准或拒絕時，自動調查會完成。
+在 Microsoft 365 Defender 中的自動調查期間和之後，會針對惡意或可疑專案識別修正動作。 對裝置（也稱為端點）採取某些類型的修復動作。 對電子郵件內容採取其他修復動作。 在採取修正動作、核准或拒絕時，自動調查會完成。
 
-下表摘要說明 Microsoft 威脅防護目前支援的修復動作： 
+下表摘要說明 Microsoft 365 Defender 目前支援的修復動作： 
 
 |裝置 (端點) 修正動作  |電子郵件補救動作  |
 |---------|---------|
@@ -64,7 +64,7 @@ ms.locfileid: "48429465"
 
 > [!IMPORTANT]
 > 是否自動採取修復動作，也取決於特定設定，例如組織的裝置群組原則。 若要深入瞭解，請參閱下列文章：
-> - [在 Microsoft 威脅防護中設定自動化調查和回應功能](mtp-configure-auto-investigation-response.md)
+> - [在 Microsoft 365 Defender 中設定自動調查和回應功能](mtp-configure-auto-investigation-response.md)
 > - [如何在裝置上修正威脅](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
 ## <a name="next-steps"></a>後續步驟

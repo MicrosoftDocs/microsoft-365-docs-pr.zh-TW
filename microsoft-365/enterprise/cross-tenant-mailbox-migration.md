@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 06a82fda31e602ed2feb53d00e8839daf801bf7e
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: a9f983cebfbed1482fca7e44b77c200cbd9574ac
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277496"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847115"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -43,7 +43,7 @@ ms.locfileid: "48277496"
 
 本節不包含準備目標目錄中 MailUser 使用者物件所需的特定步驟，也不會包含用於提交遷移批次的範例命令。 請參閱 [準備目標使用者物件以供遷移](#prepare-target-user-objects-for-migration) 以取得此資訊。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 跨承租人信箱移動功能需要 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) 才能建立租使用者對特定的 Azure 應用程式，以安全地儲存和存取憑證/機密，以供從一個租使用者對另一個租使用者進行驗證及授權，並移除在承租人間共用憑證/機密的任何需求。 
 
@@ -141,7 +141,7 @@ ms.locfileid: "48277496"
 
 7. 會在遠端 PowerShell 會話中顯示 URL。 複製為您的租使用者同意所提供的連結，並將其貼到網頁瀏覽器中。
 
-8. 使用您的全域系統管理員認證登入。 當顯示下列畫面時，請選取 [ **接受**]。
+8. 使用您的全域系統管理員認證登入。 當顯示下列畫面時，請選取 [ **接受** ]。
 
     :::image type="content" source="../media/tenant-to-tenant-mailbox-move/permissions-requested-dialog.png" alt-text="[接受許可權] 對話方塊":::
     
@@ -275,7 +275,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
 遷移的使用者必須存在於目標承租人和 Exchange Online 系統 (中，MailUsers) 會以特定屬性標示以啟用跨承租人的移動）。 系統會針對未在目標租使用者中正確設定的使用者，移動系統會失敗。 下列各節將詳細說明目標租使用者的 MailUser 物件需求。
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
   
 您必須確定在目標群組織中設定下列物件和屬性。  
 
@@ -291,7 +291,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
  
     範例 **目標** MailUser 物件：
  
-    | Attribute             | 值                                                                                                                    |
+    | 屬性             | 值                                                                                                                    |
     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
     | 別名                 | LaraN                                                                                                                    |
     | RecipientType         | MailUser                                                                                                                 |
@@ -308,9 +308,9 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
     |                       | SMTP： Lara \. Newton@northwind.com                                                                                           |
     |||
 
-   **來源**信箱物件範例：
+   **來源** 信箱物件範例：
 
-   | Attribute             | 值                                                                    |
+   | 屬性             | 值                                                                    |
    |-----------------------|--------------------------------------------------------------------------|
    | 別名                 | LaraN                                                                    |
    | RecipientType         | UserMailbox                                                              |
@@ -405,7 +405,7 @@ T2Tbatch-testforignitedemo Syncing ExchangeRemoteMove 1
  
 #### <a name="update-on-premises-mailusers"></a>更新內部部署 MailUsers
 
-當信箱從來源移至目標之後，您應該確定內部部署郵件使用者（包括來源和目標）已更新為新的 targetAddress。 在此範例中，移動中使用的 targetDeliveryDomain 是 **contoso \. onmicrosoft.com**。 使用此 targetAddress 更新郵件使用者。
+當信箱從來源移至目標之後，您應該確定內部部署郵件使用者（包括來源和目標）已更新為新的 targetAddress。 在此範例中，移動中使用的 targetDeliveryDomain 是 **contoso \. onmicrosoft.com** 。 使用此 targetAddress 更新郵件使用者。
  
 ## <a name="frequently-asked-questions"></a>常見問題集
  
@@ -542,7 +542,7 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
      ```
 
    > [!Note]
-   > *Name.onmicrosoft.com17 \. com*位址*不*存在於 EmailAddresses/proxyAddresses 陣列中。
+   > *Name.onmicrosoft.com17 \. com* 位址 *不* 存在於 EmailAddresses/proxyAddresses 陣列中。
 
 - **問題：將「外部」主要 SMTP 位址的 MailUser 物件修改/重設為「內部」公司所宣告的網域**
 
@@ -644,8 +644,8 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft 商務中心                         |
    | Microsoft MyAnalytics (完整)                       |
    | Office 365 進階電子文件探索                    |
-   | Office 365 Advanced 威脅防護 (方案 1)     |
-   | Office 365 高級威脅防護 (方案 2)     |
+   | Microsoft Defender for Office 365 (方案 1)     |
+   | Microsoft Defender for Office 365 (方案 2)     |
    | Office 365 的特殊許可權存取管理           |
    | Outlook Customer Manager                          |
    | Office 365 中的高級加密                  |

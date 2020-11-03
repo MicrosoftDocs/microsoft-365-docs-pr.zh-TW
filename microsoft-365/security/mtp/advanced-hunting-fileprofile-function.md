@@ -1,5 +1,5 @@
 ---
-title: 'FileProfile Microsoft 威脅防護的高級搜尋中的 ( # A1 函數'
+title: 'FileProfile Microsoft 365 Defender 的高級搜尋中的 ( # A1 函數'
 description: '瞭解如何使用 FileProfile ( # A1，以濃縮您的高級搜尋查詢結果中檔案的相關資訊。'
 keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema reference，kusto，FileProfile，file profile，function，豐富
 search.product: eADQiWindows 10XVcnh
@@ -19,20 +19,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: e99e545b5578b5eff8c19345dc672f735e4f7bd2
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 31959ed146df52aa6568f7aa60617b74ab8dd4db
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430582"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847449"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 `FileProfile()`函數是[高級搜尋](advanced-hunting-overview.md)中的豐富函數，可將下列資料新增至查詢所找到的檔案。
 
@@ -63,8 +63,8 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>引數
 
-- **x**-要使用的檔案識別碼欄： `SHA1` 、、 `SHA256` `InitiatingProcessSHA1` 、 `InitiatingProcessSHA256` 或; `SHA1` 如果未指定，則函數會使用
-- **y**-對要濃縮的記錄數目的限制，1-1000;函數使用100（若未指定）
+- **x** -要使用的檔案識別碼欄： `SHA1` 、、 `SHA256` `InitiatingProcessSHA1` 、 `InitiatingProcessSHA256` 或; `SHA1` 如果未指定，則函數會使用
+- **y** -對要濃縮的記錄數目的限制，1-1000;函數使用100（若未指定）
 
 ## <a name="examples"></a>範例
 

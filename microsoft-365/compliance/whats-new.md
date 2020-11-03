@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案新增至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b124e4c4d120d981766493034aba9bc6eefa7d9c
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1ebe91e94b286e7d9a1b46b7fd7abf625881a6a9
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446556"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847799"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
@@ -34,7 +34,7 @@ ms.locfileid: "48446556"
 
 
 > [!TIP]
-> 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 威脅防護的新增功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
+> 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 請造訪 [microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，以瞭解已啟動、已開發、已取消或先前發佈的 microsoft 365 功能。
 
 ## <a name="august-2020"></a>2020年 8月
@@ -53,10 +53,10 @@ ms.locfileid: "48446556"
     - 依優先順序的使用者所破壞的安全性原則
     - 不滿的使用者違反安全性原則
 
-- 與 [Microsoft DEFENDER atp](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 的整合可讓您匯入並篩選 MICROSOFT defender atp 警示，以供從新的安全性違規原則範本所建立的原則所偵測到的活動。 此外，也有相關的 [內幕使用者風險設定](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview) ，您可以選擇根據 MICROSOFT Defender ATP 警示會審狀態，將安全性警示匯入「內幕人員風險管理」。
+- 與 [Microsoft defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 整合可讓您匯入並篩選 microsoft defender，以取得從新的安全性違規原則範本所建立的原則所偵測到的活動的端點警示。 此外，還有相關的 [內幕使用者風險設定](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) ，您可以選擇根據 Microsoft Defender for Endpoint alert 會審狀態，選擇匯入「內幕風險管理」的安全性警示。
 
     > [!NOTE]
-    > 若要利用 Microsoft Defender ATP 整合 (包括新的安全性原則違規模板) ，您必須在組織中設定 Microsoft Defender ATP。 您也需要透過 [在 Microsoft DEFENDER atp 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)來啟用內部的內幕程式風險管理整合的 MICROSOFT Defender ATP。
+    > 若要利用 Microsoft Defender 做為端點整合 (包括新的安全性原則違規模板) ，您的組織中必須設定 Microsoft Defender for Endpoint。 您也必須 [在 Microsoft defender For endpoint 中設定高級功能](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)，以啟用內部使用者風險管理的 Microsoft defender 端點。
  
 - 自訂 [建立原則時的](insider-risk-management-policies.md#create-a-new-policy)指示器閾值。
 - 設定 [優先順序的使用者群組](insider-risk-management-settings.md#priority-user-groups-preview) ，以定義組織中的使用者，其活動需要根據其位置、敏感資訊存取權或風險歷程等因素進行深入檢查。
@@ -170,7 +170,7 @@ ms.locfileid: "48446556"
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>敏感度標籤：新增隱私權選項
 
-設定標籤的 [網站和群組設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) 時，您現在可以設定隱私權選項為 **None-讓使用者選擇誰可以存取網站**。 當您想要使用敏感度標籤保護容器中的內容，但仍可讓使用者自行設定隱私權設定時，這會很有用。
+設定標籤的 [網站和群組設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) 時，您現在可以設定隱私權選項為 **None-讓使用者選擇誰可以存取網站** 。 當您想要使用敏感度標籤保護容器中的內容，但仍可讓使用者自行設定隱私權設定時，這會很有用。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -255,7 +255,7 @@ ms.locfileid: "48446556"
 
 ### <a name="now-in-preview"></a>現在預覽
 
-**有問必答風險管理 (預覽) **
+**有問必答風險管理 (預覽)**
 
 我們很樂意宣告，我們的有問必答風險管理解決方案現在是公開預覽。 簡而言之，有問必答風險管理可協助您的組織，透過提供下列各項，以智慧識別並採取對內幕程式風險的動作：
 
@@ -289,7 +289,7 @@ ms.locfileid: "48446556"
 
 ### <a name="noteworthy-updates"></a>值得注意的更新
 
-** (預覽的合規性分數的新評估範本) **
+**(預覽的合規性分數的新評估範本)**
 
 永遠致力於協助您走出不斷發展的合規性形勢，我們的合規性分數小組已提供一組新的範本，協助您評估組織對最近法規的相容性狀況，並取得如何實施更有效率的控制的指導。 您會看到新的範本：
 
@@ -366,7 +366,7 @@ ms.locfileid: "48446556"
 ### <a name="new-encryption-options-for-sensitivity-labels"></a>敏感度標籤的新加密選項 
 
 設定敏感度標籤的加密時，您現在有兩個選項可讓使用者在手動將標籤套用至電子郵件及檔時，指派許可權：<br>
-- 將標籤套用至 **Outlook 電子郵件**時，使用者可強制執行與 [不要轉寄] 選項同等的限制。 收件者將可以讀取郵件，但不能轉寄、列印或複製內容。
-- 將標籤套用至 **Word、PowerPoint 及 Excel**檔案時，系統會提示使用者將存取權限指派給特定的使用者和群組。
+- 將標籤套用至 **Outlook 電子郵件** 時，使用者可強制執行與 [不要轉寄] 選項同等的限制。 收件者將可以讀取郵件，但不能轉寄、列印或複製內容。
+- 將標籤套用至 **Word、PowerPoint 及 Excel** 檔案時，系統會提示使用者將存取權限指派給特定的使用者和群組。
 
 移至 [ [使用敏感度標籤來限制存取內容](encryption-sensitivity-labels.md#let-users-assign-permissions) ] 以深入瞭解內容。

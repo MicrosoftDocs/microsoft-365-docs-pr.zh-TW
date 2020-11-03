@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 15a62da1222fc55d50dfd4c3b2f0e7ba4a0554eb
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 5698e2a88adf3d2bae84a82e0e001132293e36be
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778611"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847713"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的安全性作業
 
@@ -41,4 +41,4 @@ SOC 提供下列服務：
     - 恢復
     - 事件後活動
 - Microsoft 受管理的桌面客戶可以註冊 Microsoft 威脅專家服務。 使用此服務的 SOC liaises，可深入瞭解影響組織的複雜威脅，包括警示查詢、可能受損的裝置、可疑網路連線的根本原因，以及有關持續性的高級威脅活動的其他威脅情報。 如需詳細資訊，請參閱 [Microsoft 威脅專家](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)。
-- SOC 的威脅和弱點管理程式會使用 Microsoft 的部分服務，協助告知組織的建議，以防禦威脅。 SOC 使用來自 Microsoft Defender 高級威脅防護的安全性中心，以及來自 Microsoft 內部和外部的相關弱點資料來源，以探索安全性漏洞與錯誤配置，並提供可操作的報告。
+- SOC 的威脅和弱點管理程式會使用 Microsoft 的部分服務，協助告知組織的建議，以防禦威脅。 SOC 會使用 Microsoft Defender for Endpoint Security Center 中的資料，以及從 Microsoft 內外的相關弱點資料來源探索安全性漏洞與錯誤配置，並提供可操作的報告。

@@ -19,20 +19,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: bf1c57ee93c6f0e007c1b58e73fb9371799e75c6
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: 2b163dc39e56c82ef177b71d197c431c744b12d7
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431120"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847401"
 ---
 # <a name="identityqueryevents"></a>IdentityQueryEvents
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：****
-- Microsoft 威脅防護
+適用於：
+- Microsoft 365 Defender
 
 [！附注] `IdentityQueryEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含針對 Active Directory 物件（如使用者、群組、裝置和網域）所執行之查詢的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 

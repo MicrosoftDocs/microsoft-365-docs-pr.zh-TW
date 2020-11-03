@@ -1,6 +1,6 @@
 ---
-title: 設定 Microsoft 威脅防護事件的優先順序
-description: 瞭解如何在 Microsoft 威脅防護中依事件佇列設定事件優先順序
+title: 設定 Microsoft 365 Defender 中的事件優先順序
+description: 瞭解如何在 Microsoft 365 Defender 中排定事件佇列中的事件優先順序
 keywords: 事件, 佇列, 概覽, 裝置, 身分識別, 使用者, 信箱, 電子郵件, 事件
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,27 +21,27 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 382cfd374c40d0c5a0dd7d7705281bd56263d8b8
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: f681d02cc4af8bd56ba945a3d944798e545bf93c
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430820"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846709"
 ---
-# <a name="prioritize-incidents-in-microsoft-threat-protection"></a>設定 Microsoft 威脅防護事件的優先順序
+# <a name="prioritize-incidents-in-microsoft-365-defender"></a>設定 Microsoft 365 Defender 中的事件優先順序
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
 **適用於：**
-- Microsoft 威脅防護
+- Microsoft 365 Defender
 
 
 
-Microsoft 威脅防護會套用相關分析，並將來自不同產品的所有相關警示和調查匯總到單一事件。 Microsoft 威脅防護也會觸發活動的獨特警示，這些活動只會在 Microsoft 威脅防護對整個資產和產品套件有端對端可見度時識別為惡意。 如此一來，Microsoft 威脅防護能對攻擊案例進行更廣泛的描述，讓安全性作業分析師了解及處理組織中的複雜威脅。
+Microsoft 365 Defender 會套用關聯性分析，並將不同產品的所有相關警示和調查彙集到一個事件中。 Microsoft 365 defender 也會觸發唯一的警示，可在 Microsoft 365 Defender 跨整個房地產及產品套件的端對端可視性時，識別出惡意的活動。 如此一來，Microsoft 365 Defender narrates 更廣泛的攻擊案例，讓安全性作業分析員能夠瞭解並處理整個組織中的複雜威脅。
 
 
-**事件佇列**顯示由各裝置、使用者和信箱標示的事件集合。 可協助您設定事件優先順序及制定明智的網路安全回應決策。
+**事件佇列** 顯示由各裝置、使用者和信箱標示的事件集合。 可協助您設定事件優先順序及制定明智的網路安全回應決策。
 
 
 ![事件佇列的影像](../../media/incidents-queue.png) 
@@ -75,7 +75,7 @@ Microsoft 威脅防護會套用相關分析，並將來自不同產品的所有�
 
 
 ### <a name="multiple-service-sources"></a>多個服務來源 
-僅篩選查看包含來自不同來源的警示 (Microsoft Defender ATP、Microsoft Cloud App Security、Azure ATP、Office 365 ATP) 的事件
+篩選僅查看包含不同來源之警示的事件 (Microsoft Defender for Endpoint、Microsoft Cloud App Security、Microsoft Defender for Identity、Microsoft Defender for Office 365) 
 ### <a name="service-sources"></a>服務來源
 透過選擇特定來源，便可專注於包含來自至少一個所選來源警示的事件。 
 

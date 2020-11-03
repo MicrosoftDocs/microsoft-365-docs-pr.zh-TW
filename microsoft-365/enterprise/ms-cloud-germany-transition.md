@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務。
-ms.openlocfilehash: a77dc43c4c30992d2e50aad94878f9269573db52
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 23ccc30bab5d1045e4716cd637899e20362fc597
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327114"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846937"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>從 Microsoft Cloud Deutschland 遷移至新德文 datacenter 區域中的 Office 365 服務
 
@@ -133,7 +133,7 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 3. 群組 (新式群組)
 4. Delve 設定檔
 5. Exchange Online Protection
-6. 進階威脅防護 (ATP)
+6. 適用於 Office 365 的 Defender
 7. 進階電子文件探索
 8. 進階資料控管
 9. SharePoint Online
@@ -153,7 +153,7 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 5. MyAnalytics
 6. 工作場所分析
 7. Exchange Online Protection
-8. 進階威脅防護 (ATP)
+8. 適用於 Office 365 的 Defender
 9. 進階電子文件探索
 10. 進階安全性管理
 11. 資訊版權管理
@@ -221,7 +221,7 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 | Office 365 A1 供教員 \_ (STANDARDWOFFPACK \_ 教職員 \_ de)  | 適用于教職員工 (STANDARDWOFFPACK 教職員) 的 Office 365 A1 \_ |
 | Office 365 A1 學生版 de \_ (STANDARDWOFFPACK \_ 學生版 \_ de)  | Office 365 A1 學生版 (STANDARDWOFFPACK \_ 學生)  |
 | Office 365 Advanced 相容性 \_ de (EQUIVIO \_ 分析 \_ de)  | Microsoft 365 E5 規範 (資訊 \_ 保護 \_ 規範)  |
-| Office 365 Advanced 威脅防護 (方案 1) \_ DE (ATP \_ ENTERPRISE \_ DE)  | Office 365 Advanced 威脅防護 (方案 1)  (ATP \_ ENTERPRISE)  |
+|Microsoft Defender for Office 365 (方案 1) \_ DE (ATP \_ ENTERPRISE \_ DE)  |Microsoft Defender for Office 365 (方案 1)  (ATP \_ ENTERPRISE)  |
 | Office 365 商務基本版 \_ de (O365 \_ 商務 \_ 基本型 \_ de)  | Microsoft 365 商務版 (O365 \_ 商務基本版 \_)  |
 | Office 365 商務高級版 \_ de (O365 \_ 商務 \_ 優質 \_ de)  | Microsoft 365 Business Standard (O365 \_ 商務 \_ 版 PREMIUM)  |
 | Office 365 商務版 \_ de (O365 \_ 商務版 \_ de)  | Microsoft 365 應用程式商務用 (O365 \_ 商務)  |

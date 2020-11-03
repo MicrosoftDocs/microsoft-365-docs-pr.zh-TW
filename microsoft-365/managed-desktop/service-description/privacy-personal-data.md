@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 33a2bf0b85b9b8561a5dcf32eae6e4cd0cb53765
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 294a3c6c54e28fa03ff6264898e7763325f78c3e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950481"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48847765"
 ---
 # <a name="privacy-and-personal-data"></a>隱私權和個人資料
 
@@ -56,7 +56,7 @@ Microsoft 受管理的桌面會使用下列資料：
 |---------|---------|
 |Azure Active Directory 資料     | 用於租使用者系統管理員所建立的報表，可在 Microsoft Managed Desktop Admin 入口網站中使用。        |
 |Intune 資料     | 用於租使用者系統管理員所建立的報表，可在 Microsoft Managed Desktop Admin 入口網站中使用。        |
-|Microsoft Defender 進階威脅防護 (ATP)     |  用於解決 Microsoft Managed Desktop 的安全性作業中心在已註冊裝置上偵測到的安全性威脅 (SOC) 。  |
+|適用於端點的 Microsoft Defender     |  用於解決 Microsoft Managed Desktop 的安全性作業中心在已註冊裝置上偵測到的安全性威脅 (SOC) 。  |
 |Windows 診斷資料     |用來判斷受管理裝置的更新狀態，以及提供並改善 Microsoft 受管理的電腦即服務 (ITaaS) 產品。         |
 |系統管理員連絡人資料     | 由 Microsoft Managed Desktop 用來與租使用者系統管理員通訊。        |
 
@@ -73,7 +73,7 @@ Microsoft 受管理的桌面處理這些實體以提供服務：
 - 租使用者資料
 - Azure Active Directory 資源
 - 原則和設定資料
-- Microsoft Defender ATP 中繼資料
+- Microsoft Defender for Endpoint metadata
 - Windows 診斷資料
 - 產品和服務使用方式資料
 
@@ -87,9 +87,9 @@ Microsoft 受管理的桌面所用的身分識別資料，會根據組織在訂�
 
 Intune 資料可以儲存在一些不同的地區，例如歐洲北美 (愛爾蘭) 和歐洲西部 (荷蘭) 。 您的 IT 系統管理員會建立租使用者帳戶，並選擇當其初次登錄 Intune 服務時，將儲存資料的國家。 如需 Intune 使用的資料中心位置清單，請參閱 [Microsoft Intune-我的客戶資料在哪裡？](http://intunedatacentermap.azurewebsites.net/)。 如需有關 Intune 之資料儲存區和使用的詳細資訊，請參閱 [Intune 中的資料收集](https://docs.microsoft.com/intune/privacy-data-collect)。
 
-### <a name="microsoft-defender-advanced-threat-protection"></a>Microsoft Defender 進階威脅防護
+### <a name="microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender
 
-Microsoft Defender Advanced 威脅防護 (ATP) 資料可以儲存在數種不同的地區。 因此，Microsoft Azure 資料中心在歐洲同盟、英國和美國（如 [Microsoft DEFENDER atp）的資料儲存位置](http://intunedatacentermap.azurewebsites.net/)中所述，都是以 microsoft Azure 資料中心的方式運作。 如需 Microsoft Defender ATP 資料儲存區和使用的詳細資訊，請參閱 [Microsoft DEFENDER atp 收集的資料為何？](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
+Microsoft Defender for Endpoint data 可以儲存在幾個不同的地區。 基於此原因，當 microsoft Azure 資料中心在歐洲同盟、英國和美國（如 [Microsoft Defender For Endpoint）](http://intunedatacentermap.azurewebsites.net/)中所述，在 microsoft Azure 資料中心中進行端點的 endpoint 會在資料儲存位置上運作。 如需資料儲存區與 Defender for Endpoint 使用的詳細資訊，請參閱 [Microsoft Defender For endpoint 收集的資料為何？](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy#what-data-does-microsoft-defender-atp-collect)
 
 ### <a name="windows-10"></a>Windows 10
 
@@ -138,5 +138,5 @@ Microsoft 受管理的桌面不會使用任何收集的個人資料，做為進�
 
 - [Azure Active Directory](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure?view=o365-worldwide)
 - [Microsoft Intune](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-intune?view=o365-worldwide)
-- [Microsoft Defender ATP](https:/docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Microsoft Defender for Endpoint](https:/docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Windows 10](https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance)
