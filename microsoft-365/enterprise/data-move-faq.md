@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 尋找常見問題解答 (FAQs) 將核心資料移至新的 Office 365 datacenter geo。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 043c5ee5206b30cbbc656c8886c806c2b7c2361c
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 3eb3b7ec99da2cdca357f45eb4e71500a235fc61
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333567"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877822"
 ---
 # <a name="data-move-general-faq"></a>資料移動一般常見問題集
 
@@ -28,10 +28,10 @@ ms.locfileid: "48333567"
   
 ## <a name="what-customers-are-eligible-to-request-a-move"></a>哪些客戶適合要求移動？
   
-選取符合新資料中心地理位置之國家/地區的現有 Microsoft 365 商業客戶將可以要求移動。  此程式僅適用于具有合格國家/地區代碼的承租人指派給 Microsoft 365 租使用者，以便將適用工作負載的核心客戶資料移轉至對應的 Microsoft 365 資料中心地理位置。  請參閱 how [to 要求資料移動](request-your-data-move.md) 頁面以確認國家資格。   
+選取符合新資料中心地理位置之國家/地區的現有 Microsoft 365 商業客戶將可以要求移動。  此程式僅適用于具有合格國家/地區代碼的承租人指派給 Microsoft 365 租使用者，以便將適用工作負載的核心客戶資料移轉至對應的 Microsoft 365 資料中心地理位置。  請參閱 how [to 要求資料移動](request-your-data-move.md) 頁面以確認國家資格。   
 
 ## <a name="how-do-we-define-core-customer-data"></a>如何定義核心客戶資料？
- 
+ 
 核心客戶資料是指在 [Microsoft Online Services 條款](https://aka.ms/ost)中所定義之客戶資料的子集的字詞： 
 - Exchange Online 信箱內容 (電子郵件內文、行事曆專案和電子郵件附件的內容) 
 - SharePoint 線上網站內容和儲存在該網站中的檔案
@@ -43,7 +43,7 @@ ms.locfileid: "48333567"
 - 小組會聊天訊息，包括私人郵件和通道訊息。 
 - 在聊天中使用的小組圖像。 
 
-小組檔案會儲存在 SharePoint 線上中，小組聊天檔會儲存在商務 OneDrive 中。  語音信箱、行事曆、聊天記錄和連絡人會儲存在 Exchange Online 中。  在許多情況下，使用者已在本機資料中心地理位置中使用 Exchange Online、SharePoint 線上和商務 OneDrive，而且也是適用于合格客戶國家/地區的 Microsoft 365 遷移計畫的一部分。
+小組檔案會儲存在 SharePoint 線上中，小組聊天檔會儲存在商務 OneDrive 中。  語音信箱、行事曆和連絡人會儲存在 Exchange Online 中。  在許多情況下，使用者已在本機資料中心地理位置中使用 Exchange Online、SharePoint 線上和商務 OneDrive，而且也是適用于合格客戶國家/地區的 Microsoft 365 遷移計畫的一部分。
 
 ## <a name="at-what-point-is-my-migration-complete-so-that-my-tenants-core-customer-data-is-being-stored-at-rest-in-my-new-geo"></a>在我的遷移完成時，我的租使用者核心客戶資料已存放在我的新地理位置中？
 
@@ -57,11 +57,11 @@ ms.locfileid: "48333567"
   
 ## <a name="what-is-the-impact-of-having-different-services-located-in-different-geos"></a>不同的服務位於不同的 geos 會有什麼影響？
 
-有些 Microsoft 365 服務可能位於不同的 geos 中，供一些現有的客戶及在移動程式中間的客戶。 我們的服務彼此獨立執行，且在這種情況下不會影響使用者的體驗。不過，針對資料派駐服務的目的，在 Exchange Online 和 SharePoint 商務線上/OneDrive 皆遷移至相同的資料中心地理位置之前，無法將租使用者遷移視為完整。
+有些 Microsoft 365 服務可能位於不同的 geos 中，供一些現有的客戶及在移動程式中間的客戶。 我們的服務彼此獨立執行，且在這種情況下不會影響使用者的體驗。 不過，針對資料派駐服務的目的，在 Exchange Online 和 SharePoint 商務線上/OneDrive 皆遷移至相同的資料中心地理位置之前，無法將租使用者遷移視為完整。
 
  ## <a name="where-is-my-core-customer-data-located"></a>我的核心客戶資料位於何處？
 
-客戶租使用者系統管理員可以隨時查看系統管理中心的資料位置卡，以確認每個服務（特別是針對其租使用者）的核心客戶資料。我們也會將 [Microsoft 365 互動式資料中心 ](https://office.com/datamaps) 的資料中心 geos、資料中心和365位置的位置發佈，作為新承租人的目前預設核心客戶資料的參考。  您可以透過 Microsoft 365 系統管理中心中組織設定檔底下的 [資料位置] 區段，確認您的客戶資料在 rest 上的位置。  
+客戶租使用者系統管理員可以隨時查看系統管理中心的資料位置卡，以確認每個服務（特別是針對其租使用者）的核心客戶資料。  我們也會將 [Microsoft 365 互動式資料中心 ](https://office.com/datamaps) 的資料中心 geos、資料中心和365位置的位置發佈，作為新承租人的目前預設核心客戶資料的參考。  您可以透過 Microsoft 365 系統管理中心中組織設定檔底下的 [資料位置] 區段，確認您的客戶資料在 rest 上的位置。  
  
 ## <a name="when-will-i-be-able-to-request-a-move"></a>何時可以要求移動？
   
@@ -101,7 +101,7 @@ ms.locfileid: "48333567"
   
  ## <a name="how-do-i-know-the-move-is-complete"></a>如何知道移動已完成？
   
-觀賞 Microsoft 365 訊息中心，以確認每個服務資料的移動是否已完成。 當每個服務的資料移動時，我們會發佈一個完成通知，讓您可以取得三個完成通知：一個適用于 Exchange Online、SharePoint 線上和商務用 Skype Online。  您也可以透過 Microsoft 365 系統管理中心中組織設定檔底下的 [資料位置] 區段，確認 rest 上的客戶資料的位置。  
+觀賞 Microsoft 365 訊息中心，以確認每個服務資料的移動是否已完成。 當每個服務的資料移動時，我們會發佈一個完成通知，讓您可以取得三個完成通知：一個適用于 Exchange Online、SharePoint 線上和商務用 Skype Online。  您也可以透過 Microsoft 365 系統管理中心中組織設定檔底下的 [資料位置] 區段，確認 rest 上的客戶資料的位置。  
   
 ## <a name="i-am-a-microsoft-365-customer-in-one-of-the-new-datacenter-geos-but-when-i-signed-up-i-selected-a-different-country-how-can-i-be-moved-to-the-new-datacenter-geo"></a>我是在其中一個新的資料中心 geos 中的 Microsoft 365 客戶，但是當我註冊時，我選取不同的國家/地區。 我可以如何移至新的資料中心地理位置？
 
@@ -109,7 +109,7 @@ ms.locfileid: "48333567"
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>在 Exchange Online 移動期間，如果我們正在將電子郵件資料移轉至 Microsoft 365，會發生什麼情況？
 
-這是一種非常常見的案例，而且受到完全支援。  資料中心 geos 之間的雲端遷移不會干擾任何 on premisis 到雲端信箱遷移。
+這是一種非常常見的案例，而且受到完全支援。  資料中心 geos 之間的雲端遷移不會干擾任何內部部署至雲端信箱遷移。
   
  ## <a name="can-i-pilot-some-users"></a>我可以試驗部分使用者嗎？
   

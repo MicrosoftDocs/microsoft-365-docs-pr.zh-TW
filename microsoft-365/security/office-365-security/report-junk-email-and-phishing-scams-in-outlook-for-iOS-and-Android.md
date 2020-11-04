@@ -2,7 +2,7 @@
 title: 在 Outlook 中報告 iOS 和 Android 的垃圾郵件和網路釣魚電子郵件
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解 Outlook 中內建的垃圾郵件、非垃圾郵件和網路釣魚電子郵件報告選項，以供 iOS 和 Android。
-ms.openlocfilehash: 23668a762301ee442bc805e62863079ee7ae6076
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: 1c842ac5349f9c2804c637fa4c5598b06e8f489f
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350852"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877288"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>在適用于 Exchange Online 的 iOS 和 Android 的 Outlook 中報告垃圾郵件和網路釣魚電子郵件
 
@@ -50,11 +50,11 @@ ms.locfileid: "48350852"
 
    ![從 [動作] 功能表報告垃圾郵件或網路釣魚電子郵件](../../media/Android-report-as-junk-dialog.png)
 
-3. 點擊 [ **報告垃圾郵件** ]，然後選取 [ **垃圾郵件** 或 **網路釣魚**]。
+3. 點擊 [ **報告垃圾郵件** ]，然後選取 [ **垃圾郵件** 或 **網路釣魚** ]。
 
    ![報告垃圾郵件或網路釣魚電子郵件](../../media/Android-report-junk-or-phishing.png)
 
-4. 在出現的對話方塊中，您可以選擇 [ **報告** ] 或 [ **不是致謝**]。 在選擇 [ **不謝謝**] 的情況下，如果您已攻入 **垃圾** 郵件，則會將郵件移至 [垃圾郵件] 資料夾，如果您對郵件進行 **網路釣魚** 。 選取 [ **報告** ]，也可以將郵件複本傳送給 Microsoft。
+4. 在出現的對話方塊中，您可以選擇 [ **報告** ] 或 [ **不是致謝** ]。 在選擇 [ **不謝謝** ] 的情況下，如果您已攻入 **垃圾** 郵件，則會將郵件移至 [垃圾郵件] 資料夾，如果您對郵件進行 **網路釣魚** 。 選取 [ **報告** ]，也可以將郵件複本傳送給 Microsoft。
 
    ![報告垃圾郵件或網路釣魚電子郵件報告選項](../../media/Android-junk-email-reporting-options.png)
 
@@ -69,6 +69,6 @@ ms.locfileid: "48350852"
 
    ![從 [動作] 功能表報告非垃圾郵件](../../media/Android-not-junk-email.png)
 
-3. 點擊 [ **非垃圾郵件**]。
+3. 點擊 [ **非垃圾郵件** ]。
 
 Toast 通知會顯示電子郵件已移至您的收件匣。 如果您變更主意，請選取 toast 通知上的 [ **復原** ]。 電子郵件仍會保留在 [垃圾郵件] 資料夾中。

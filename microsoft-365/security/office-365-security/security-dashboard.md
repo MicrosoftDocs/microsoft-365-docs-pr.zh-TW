@@ -2,7 +2,7 @@
 title: 安全性儀表板概述
 f1.keywords:
 - NOCSH
-ms.author: deniseb
+ms.author: siosulli
 author: denisebmsft
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用新的安全性儀表板來查看 Office 365 威脅防護狀態，並查看並處理安全性警示。
-ms.openlocfilehash: f7576de9db1403c3c010b2fd826866ec11a7e20a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b49422621e70d597251cd342559e59ffa0e128f6
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843621"
+ms.locfileid: "48877322"
 ---
 # <a name="security-dashboard"></a>安全性儀表板
 

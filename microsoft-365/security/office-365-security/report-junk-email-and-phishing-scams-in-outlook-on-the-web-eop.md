@@ -2,7 +2,7 @@
 title: 在 web 上的 Outlook 中報告垃圾郵件和網路釣魚電子郵件
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -16,12 +16,12 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解 Outlook 網頁版 Outlook 中內建的垃圾郵件、非垃圾郵件和網路釣魚電子郵件報告選項，在 Exchange Online 中) 的 Outlook Web App (，以及如何為使用者停用這些報告選項。
-ms.openlocfilehash: 076f2858e84359d788714dc5d7e8bdb972b2c2ee
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+ms.openlocfilehash: ebf266f3bb825a5ef81a3cd2b5d2bceb270fc260
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48351074"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877370"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>在 Exchange Online 中，在 Outlook 網頁版中報告垃圾郵件和網路釣魚電子郵件
 
@@ -44,13 +44,13 @@ ms.locfileid: "48351074"
 
 1. 對於收件匣或任何其他電子郵件資料夾（除了垃圾郵件）以外的郵件，請使用下列其中一種方法來報告垃圾郵件和網路釣魚郵件：
 
-   - 選取郵件，按一下工具列上的 [ **垃圾** 郵件]，然後選取 [ **垃圾** 郵件] 或 [ **網路釣魚**]。
+   - 選取郵件，按一下工具列上的 [ **垃圾** 郵件]，然後選取 [ **垃圾** 郵件] 或 [ **網路釣魚** ]。
 
      ![從功能區報告垃圾郵件或網路釣魚電子郵件](../../media/owa-report-junk.png)
 
-   - 選取一或多封郵件、按一下滑鼠右鍵，然後選取 [ **標記為垃圾**郵件]。
+   - 選取一或多封郵件、按一下滑鼠右鍵，然後選取 [ **標記為垃圾** 郵件]。
 
-2. 在出現的對話方塊中，按一下 [ **報表**]。 如果您變更主意，請按一下 [ **不報告**]。
+2. 在出現的對話方塊中，按一下 [ **報表** ]。 如果您變更主意，請按一下 [ **不報告** ]。
 
    |垃圾|網路釣魚|
    |:---:|:---:|
@@ -62,13 +62,13 @@ ms.locfileid: "48351074"
 
 1. 在 [垃圾郵件] 資料夾中，使用下列其中一種方法來報告垃圾郵件誤報或網路釣魚郵件：
 
-   - 選取郵件，按一下工具列上的 [ **非垃圾** 郵件]，然後選取 [ **不是垃圾** 郵件或 **網路釣魚**]。
+   - 選取郵件，按一下工具列上的 [ **非垃圾** 郵件]，然後選取 [ **不是垃圾** 郵件或 **網路釣魚** ]。
 
      ![從功能區報告垃圾郵件或網路釣魚電子郵件](../../media/owa-report-not-junk.png)
 
-   - 選取一或多封郵件、按一下滑鼠右鍵，然後選取 [ **標記為非垃圾**郵件]。
+   - 選取一或多封郵件、按一下滑鼠右鍵，然後選取 [ **標記為非垃圾** 郵件]。
 
-2. 在出現的對話方塊中，閱讀資訊，然後按一下 [ **報告**]。 如果您變更主意，請按一下 [ **不報告**]。
+2. 在出現的對話方塊中，閱讀資訊，然後按一下 [ **報告** ]。 如果您變更主意，請按一下 [ **不報告** ]。
 
    |非垃圾郵件|網路釣魚|
    |:---:|:---:|
@@ -88,7 +88,7 @@ ms.locfileid: "48351074"
 
 - 每個組織都有一個名為 OwaMailboxPolicy-Default 的預設原則，但您可以建立自訂原則。 在預設原則之前，自訂原則會套用至範圍的使用者。 如需有關 Outlook 網頁信箱原則的詳細資訊，請參閱 [outlook On Exchange Online 中的 web 信箱原則](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/outlook-web-app-mailbox-policies)。
 
-- 停用垃圾郵件報告時，並不會移除將郵件標示為垃圾郵件的功能，也不會移除 Outlook 網頁版中的垃圾郵件。 選取 [垃圾郵件] 資料夾中的郵件，然後按一下 [不是垃圾郵件] 中的 [**不**是垃圾郵件] 會 \> **Not junk**將郵件傳回收件匣 在任何其他電子郵件資料夾中選取郵件，然後按一下 [**垃圾** \> **Junk**郵件]，仍然會將郵件移至 [垃圾郵件] 資料夾。 您無法再使用的是將郵件報告給 Microsoft 的選項。
+- 停用垃圾郵件報告時，並不會移除將郵件標示為垃圾郵件的功能，也不會移除 Outlook 網頁版中的垃圾郵件。 選取 [垃圾郵件] 資料夾中的郵件，然後按一下 [不是垃圾郵件] 中的 [ **不** 是垃圾郵件] 會 \> **Not junk** 將郵件傳回收件匣 在任何其他電子郵件資料夾中選取郵件，然後按一下 [ **垃圾** \> **Junk** 郵件]，仍然會將郵件移至 [垃圾郵件] 資料夾。 您無法再使用的是將郵件報告給 Microsoft 的選項。
 
 ### <a name="use-exchange-online-powershell-to-disable-or-enable-junk-email-reporting-in-outlook-on-the-web"></a>使用 Exchange Online PowerShell 在 web 上的 Outlook 中停用或啟用垃圾郵件報告
 
@@ -128,13 +128,13 @@ ms.locfileid: "48351074"
   Get-OwaMailboxPolicy | Format-Table Name,ReportJunkEmailEnabled
   ```
 
-- 在網頁上的 Outlook 中開啟受影響使用者的信箱，在 [收件匣] 中選取一封郵件，按一下 [**垃圾**郵件]， \> **Junk**然後確認提示您將郵件報告給 Microsoft （或不會顯示）。<sup>\*</sup>
+- 在網頁上的 Outlook 中開啟受影響使用者的信箱，在 [收件匣] 中選取一封郵件，按一下 [ **垃圾** 郵件]， \> **Junk** 然後確認提示您將郵件報告給 Microsoft （或不會顯示）。 <sup>\*</sup>
 
-- 在 web 上的 Outlook 中開啟受影響使用者的信箱，選取 [垃圾郵件] 資料夾中的郵件，按一下 [**垃圾**郵件]， \> **Junk**然後確認提示您將郵件報告給 Microsoft （或不會顯示）。<sup>\*</sup>
+- 在 web 上的 Outlook 中開啟受影響使用者的信箱，選取 [垃圾郵件] 資料夾中的郵件，按一下 [ **垃圾** 郵件]， \> **Junk** 然後確認提示您將郵件報告給 Microsoft （或不會顯示）。 <sup>\*</sup>
 
 <sup>\*</sup> 使用者可以在仍報告郵件時隱藏提示來報告郵件。 若要在 Outlook 網頁版中檢查此設定：
 
-1. 按一下 [ **設定** ![ 網頁上的 outlook] 圖示，以 ](../../media/owa-settings-icon.png) \> **查看所有 outlook 設定** \> **垃圾郵件**。
-2. 在 [ **報告** ] 區段中，確認值： [傳送 **報告前請先詢問我**]。
+1. 按一下 [ **設定** ![ 網頁上的 outlook] 圖示，以 ](../../media/owa-settings-icon.png) \> **查看所有 outlook 設定** \> **垃圾郵件** 。
+2. 在 [ **報告** ] 區段中，確認值： [傳送 **報告前請先詢問我** ]。
 
    ![網頁版 Outlook 垃圾郵件報告設定](../../media/owa-junk-email-reporting-options.png)

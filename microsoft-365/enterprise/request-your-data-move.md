@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 現有的 Office 365 客戶必須先提交要求，然後才將其 Microsoft 365 服務資料移至新的地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f8f25fcaf3e8beb59ca43ad260e2636cf0c4949
-ms.sourcegitcommit: d648356b27842e779921859480b1b405a1804c7c
+ms.openlocfilehash: b6ad699830389ef405b005bf8675a2bd0fb4f20b
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "48361936"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877252"
 ---
 # <a name="how-to-request-your-data-move"></a>如何要求資料移動
 
@@ -44,20 +44,20 @@ ms.locfileid: "48361936"
 |南非  <br/> |2019 年 7 月 25 日  <br/> |2020 年 6 月 30 日  <br/> |
 |瑞士，列支敦斯登  <br/> |2019 年 12 月 10 日  <br/> |2020 年 6 月 30 日  <br/> |
 |挪威  <br/> |2020 年 4 月 15 日  <br/> |2020年10月31日  <br/> |
-|德國  <br/> |計畫  <br/> |計畫  <br/> |
+|德國  <br/> |2020年11月1日  <br/> |2021年4月30日  <br/> |
 
 ## <a name="how-to-request-a-move"></a>如何要求移動
 
-合格的客戶會看到 [Microsoft 365 系統管理中心](https://aka.ms/365admin)的頁面，讓他們可以要求他們將核心客戶資料移至新的資料中心區域。  
+合格的客戶會看到 Microsoft 365 系統管理中心的頁面，讓他們可以要求他們將核心客戶資料移至新的資料中心區域。  
   
-若要存取 Microsoft 365 系統管理中心的頁面，請在左側的功能窗格中，展開 [ **設定**]，然後按一下 [ **組織設定**]。
-選取索引標籤 **組織設定檔**，然後選取 [ **資料常駐**] 選項。
+若要存取 Microsoft 365 系統管理中心的頁面，請在左側的功能窗格中，展開 [ **設定** ]，然後按一下 [ **組織設定** ]。
+選取索引標籤 **組織設定檔** ，然後選取 [ **資料常駐** ] 選項。
   
-如果您的租使用者不適用於 Microsoft 365 移動程式，您就不會看到此區段。  如果您的組織有資料常駐需求，而且您需要要求遷移，請標記核取方塊，然後再進行 **儲存**。
+如果您的租使用者不適用於 Microsoft 365 移動程式，您就不會看到此區段。  如果您的組織有資料常駐需求，而且您需要要求遷移，請標記核取方塊，然後再進行 **儲存** 。
   
 ![資料中心加入動作畫面](../media/dataresidencyflyoutae.jpg)
   
-**資料派駐服務**中的文字會變更，表示**您的組織已要求將其資料移**至適當的國家和日期。 您也會在訊息中心有確認訊息。 這會確認您已成功要求移動。 
+**資料派駐服務** 中的文字會變更，表示 **您的組織已要求將其資料移** 至適當的國家和日期。 您也會在訊息中心有確認訊息。 這會確認您已成功要求移動。 
   
 ## <a name="what-happens-after-requesting-a-move"></a>要求移動之後會發生什麼事？
 

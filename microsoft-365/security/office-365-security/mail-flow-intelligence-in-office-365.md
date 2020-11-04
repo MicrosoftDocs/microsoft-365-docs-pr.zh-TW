@@ -2,7 +2,7 @@
 title: 郵件流程智慧
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 系統管理員可以深入瞭解與使用 (連接器（也稱為「郵件流程情報」) ）相關聯之郵件傳遞的錯誤碼。
-ms.openlocfilehash: 0d73ea1fe64cda3c3f29f7bd437bba4e93f37529
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 461d9bfa91d88b8bbec52d5aad6ec7a2e534bc96
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198500"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877798"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>EOP 中的郵件流程情報
 
@@ -27,7 +27,7 @@ ms.locfileid: "48198500"
 
 在使用 Exchange Online 或獨立 Exchange online Protection 中信箱的 Microsoft 365 組織中 (EOP) 組織沒有 Exchange Online 信箱，您通常會使用連接器將電子郵件訊息從 EOP 路由傳送至您的內部部署電子郵件環境。 您也可以使用連接器將來自 Microsoft 365 的郵件路由傳送至夥伴組織。 當 Microsoft 365 無法透過連接器傳遞這些郵件時，他們就會在 Microsoft 365 中佇列。 Microsoft 365 會繼續重試每封郵件24小時的傳遞。 24小時後，佇列中的郵件會到期，而且郵件會傳回未傳遞回報的原始寄件者 (也稱為 NDR 或退回郵件) 。
 
-當無法使用連接器傳遞郵件時，Microsoft 365 會產生錯誤。 本主題說明最常見的錯誤及其解決方案。 透過連接器傳送的未傳遞郵件的排隊和通知錯誤，稱為「 _郵件流程智慧_」。
+當無法使用連接器傳遞郵件時，Microsoft 365 會產生錯誤。 本主題說明最常見的錯誤及其解決方案。 透過連接器傳送的未傳遞郵件的排隊和通知錯誤，稱為「 _郵件流程智慧_ 」。
 
 ## <a name="error-code-450-44312-dns-query-failed"></a>錯誤碼： 450 4.4.312 DNS 查詢失敗
 
@@ -71,17 +71,17 @@ ms.locfileid: "48198500"
 
   - 在 [Exchange 系統管理中心中 (EAC) ](https://docs.microsoft.com/Exchange/exchange-admin-center)中，停用或刪除將電子郵件從 Microsoft 365 傳送至您的內部部署電子郵件環境的連接器：
 
-    1. 在 EAC 中，移至 [ **郵件流程** \> **連接器**]。
+    1. 在 EAC 中，移至 [ **郵件流程** \> **連接器** ]。
 
-    2. 選取 [**寄件者**] 值為**Office 365**的連接器，並選取**您組織的電子郵件伺服器**的 [**到**] 值，然後執行下列其中一個步驟：
+    2. 選取 [ **寄件者** ] 值為 **Office 365** 的連接器，並選取 **您組織的電子郵件伺服器** 的 [ **到** ] 值，然後執行下列其中一個步驟：
 
-       - 按一下 [**刪除**移除圖示] 以刪除連接器 ![](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
+       - 按一下 [ **刪除** 移除圖示] 以刪除連接器 ![](../../media/adf01106-cc79-475c-8673-065371c1897b.gif)
 
-       - 按一下 [ **編輯** ![ 編輯圖示] ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 並清除 [ **關閉**] 以停用連接器。
+       - 按一下 [ **編輯** ![ 編輯圖示] ](../../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) 並清除 [ **關閉** ] 以停用連接器。
 
-  - 將與您的內部部署電子郵件環境關聯的 Microsoft 365 中公認的網域從 **內部轉送** 變更為 **權威性**。 如需相關指示，請參閱 [管理 Exchange Online 中公認的網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
+  - 將與您的內部部署電子郵件環境關聯的 Microsoft 365 中公認的網域從 **內部轉送** 變更為 **權威性** 。 如需相關指示，請參閱 [管理 Exchange Online 中公認的網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)。
 
-  **附注**：一般會有30分鐘到1小時的變更才會生效。 一小時後，請確認您不再收到錯誤。
+  **附注** ：一般會有30分鐘到1小時的變更才會生效。 一小時後，請確認您不再收到錯誤。
 
 - 如果錯誤來自您的夥伴組織 (例如，協力廠商雲端服務提供者) ，您必須聯繫您的合作夥伴以修正此問題。
 

@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: 了解什麼是 Microsoft 365 多地理位置、多地理位置的運作方式，以及哪些地理位置可用於儲存資料。
-ms.openlocfilehash: 1924141b86ba3e1c16e4760e0f40d61b6f47ce69
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a8eba731fac16e56ef66ac0a905de521dfa7a6c8
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688506"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877228"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>規劃 Microsoft 365 多地理位置
 
@@ -30,17 +30,17 @@ ms.locfileid: "46688506"
 
 以下是一些重要的多地理位置詞彙，可協助您了解設定的基本概念：
 
--   **租用戶** – 組織在 Microsoft 365 中的呈現方式，通常會有與其相關聯的一個或多個網域 (例如 https://contoso.sharepoint.com))。 
+-   **租用戶** – 組織在 Microsoft 365 中的呈現方式，通常會有與其相關聯的一個或多個網域 (例如 https://contoso.sharepoint.com))。 
 
 -   **地理位置** – 可用來裝載 Microsoft 365 租用戶中資料的地理位置。
 
--   **衛星位置**：您在 Microsoft 365 租用戶中設定來裝載資料的其他地理位置。 多地理位置租用戶橫跨多個地理位置，例如，北美洲和歐洲。
+-   **衛星位置** ：您在 Microsoft 365 租用戶中設定來裝載資料的其他地理位置。 多地理位置租用戶橫跨多個地理位置，例如，北美洲和歐洲。
 
 -   **慣用的資料位置 (PDL)** -個別使用者儲存 Exchange 和 OneDrive 資料的地理位置。 系統管理員可將此位置設定為已為租用戶設定的任何地理位置。 請注意，如果您變更已經擁有 OneDrive 網站的使用者的 PDL，他們的 OneDrive 資料將不會自動移動到新的地理位置。 如需詳細資訊，請參閱[將 OneDrive 文件庫移至不同的地理位置](move-onedrive-between-geo-locations.md)。 如果他們有 Exchange 信箱，則信箱會自動移至新的慣用資料位置。
 
 啟用多地理位置需要四個關鍵步驟：
 
-1.  與您的帳戶團隊合作來新增「Microsoft 365 多地理位置功能」__ 服務方案。
+1.  與您的帳戶團隊合作來新增「Microsoft 365 多地理位置功能」服務方案。
 
 2.  選擇您想要的衛星位置，並將其新增至您的租用戶。
 
@@ -65,7 +65,7 @@ ms.locfileid: "46688506"
 
 與測試使用者一起完成測試後，請選取一個試驗組 (可以是您的 IT 部門的人員)，成為第一批在新地理位置使用 OneDrive 和 Exchange 的人。 在第一批人員當中，選取還沒有 OneDrive 的使用者。 我們建議這個試驗組不要超過五個人，之後再透過批次推出方法來逐步擴展。
 
-每個使用者應具備*慣用的資料位置*(PDL) 設定，以便 Microsoft 365 判斷佈建其 OneDrive 的地理位置。使用者慣用的資料位置必須與您所選的某個衛星位置或您的中心位置相符。當 PDL 不是強制性欄位時，我們建議為所有使用者設定 PDL。沒有 PDL 的使用者工作負載會佈建在中心位置。
+每個使用者應具備 *慣用的資料位置* (PDL) 設定，以便 Microsoft 365 判斷佈建其 OneDrive 的地理位置。使用者慣用的資料位置必須與您所選的某個衛星位置或您的中心位置相符。當 PDL 不是強制性欄位時，我們建議為所有使用者設定 PDL。沒有 PDL 的使用者工作負載會佈建在中心位置。
 
 建立使用者清單，並包含使用者主體名稱 (UPN) 與適當慣用資料位置的位置代碼。包含測試使用者與您起始的試驗群組來開始進行。您將需要此清單來設定程序。
 
@@ -73,7 +73,7 @@ ms.locfileid: "46688506"
 
 多地理位置租用戶的管理可能與非多地理位置租用戶不同，因為許多 SharePoint 和 OneDrive 設定與服務具有多地理位置意識。我們建議您檢閱[管理多地理位置環境](administering-a-multi-geo-environment.md)，再繼續進行您的組態。
 
-請閱讀[在多地理位置環境中的使用者體驗](multi-geo-user-experience.md)，以詳細了解使用者在多地理環境中的體驗。
+在 [多地理位置環境中讀取使用者的經驗](multi-geo-user-experience.md) ，以取得使用者在多地理位置環境中的體驗的詳細資料。
 
 如需有關 Microsoft 365 多地理位置租用中 Teams 體驗的詳細資訊，請參閱[在 Microsoft 365 OneDrive 和 SharePoint Online 多地理位置租用中的 Teams 體驗](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo) (部分機器翻譯)。
 

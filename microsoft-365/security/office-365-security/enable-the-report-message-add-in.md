@@ -2,7 +2,7 @@
 title: 啟用報告訊息增益集
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: siosulli
 author: chrisda
 manager: dansimp
 audience: Admin
@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 網頁版的 [報告訊息] 增益集。
-ms.openlocfilehash: d760aa5d58e628872682131efae9d9c3b3c46734
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: baed46e500e58702b7031db5aa5ff376a4eafcb5
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842449"
+ms.locfileid: "48877750"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
