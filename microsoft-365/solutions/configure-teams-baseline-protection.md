@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用基準層級的保護來部署小組。
-ms.openlocfilehash: ac6974b5625a4eff0fcd11a17c4607a7c2caf97f
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 76b60a61812c4d30884825b41ee7220d6686b58b
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398862"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845297"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>為小組設定基準保護
 
@@ -33,13 +33,13 @@ ms.locfileid: "48398862"
 
 我們所建議的第一個步驟是設定基本身分識別和裝置存取原則。 如需詳細資訊，請參閱[用來保護 Teams 聊天、群組和檔案的原則建議](../security/office-365-security/teams-access-policies.md)。
 
-我們也建議您開啟基本的進階威脅防護功能，以防範文件、附件和連結中的惡意程式碼。 建議您開啟下表中的每個選項。
+我們也建議您開啟基本的適用於 Office 365 的 Defender 功能，以防範文件、附件和連結中的惡意程式碼。 建議您開啟下表中的每個選項。
 
 |選項|資訊|
 |:------|:-----------|
-|適用於 SPO、OneDrive 和 Teams 的 ATP 安全附件|[Office 365 ATP 安全附件](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|ATP 安全文件|[Office 365 進階威脅防護中的安全文件](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|Teams 的 ATP 安全連結|[Teams 中的 Office 365 安全連結](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Office 365 ATP 安全連結](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|適用於 SPO、OneDrive 和 Teams 的安全附件|[安全附件](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[適用於 Office 365 的 Defender - SharePoint、OneDrive 和 Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
+|安全文件|[適用於 Office 365 的 Microsoft Defender 中的安全文件](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
+|適用於 Teams 的安全連結|[Teams 中的 Office 365 安全連結](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[安全連結](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
 
 ## <a name="teams-guest-sharing"></a>Teams 來賓共用
 
@@ -50,11 +50,11 @@ ms.locfileid: "48398862"
 設定 Teams 來賓存取設定
 
 1. 登入 [https://admin.microsoft.com](https://admin.microsoft.com) 的 Microsoft 365 系統管理中心。
-2. 在左側導覽窗格中，按一下 [顯示全部]****。
-3. 在 [系統管理中心]**** 底下，按一下 [Teams]****。
-4. 在 Teams 系統管理中心的左側導覽中展開 [全組織設定]****，然後按一下 [來賓存取]****。
-5. 確定 [在 Teams 中允許來賓存取]**** 已設定為 [開啟]****。
-6. 對其他來賓設定進行所需的變更，然後按一下 [儲存]****。
+2. 在左側導覽窗格中，按一下 [顯示全部]。
+3. 在 [系統管理中心] 底下，按一下 [Teams]。
+4. 在 Teams 系統管理中心的左側導覽中展開 [全組織設定]，然後按一下 [來賓存取]。
+5. 確定 [在 Teams 中允許來賓存取] 已設定為 [開啟]。
+6. 對其他來賓設定進行所需的變更，然後按一下 [儲存]。
 
 > [!NOTE]
 > Teams 來賓設定在開啟後，最慢可能需要 24 小時才會生效。
@@ -63,13 +63,13 @@ Office 365 群組和 SharePoint 預設會開啟來賓共用功能，但是如果
 
 ## <a name="site-and-file-sharing"></a>網站和檔案共用
 
-為了降低不小心與組織外的人員共用檔案和資料夾的風險，建議您將 SharePoint 的預設共用連結變更為 [只有貴組織中的人員]**。 (如果使用者需要對外共用，且您已啟用來賓共用，其仍可在共用時變更連結類型)。
+為了降低不小心與組織外的人員共用檔案和資料夾的風險，建議您將 SharePoint 的預設共用連結變更為 [只有貴組織中的人員]。 (如果使用者需要對外共用，且您已啟用來賓共用，其仍可在共用時變更連結類型)。
 
 變更預設的共用連結
 1. 開啟 [SharePoint 系統管理中心](https://admin.microsoft.com/sharepoint)。
-2. 在 [原則]**** 底下，按一下 [共用]****。
-3. 在 [檔案與資料夾連結]**** 下，選取 [只有貴組織中的人員]****。
-4. 按一下 [儲存]****。
+2. 在 [原則] 底下，按一下 [共用]。
+3. 在 [檔案與資料夾連結] 下，選取 [只有貴組織中的人員]。
+4. 按一下 [儲存]。
 
 為了獲得最佳的來賓共用體驗，建議您啟用 [SharePoint 和 OneDrive 與 Azure AD B2B 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)。
 
@@ -84,11 +84,11 @@ Office 365 群組和 SharePoint 預設會開啟來賓共用功能，但是如果
 為了有助於管理權限，建議您將相關聯的網站設定為只允許擁有者可自行共用網站。 這可簡化權限管理工作，並有助於防止有人在小組擁有者不知情的情況下進行存取。 請為需要基準保護的每個小組執行此動作。
 
 更新網站共用設定
-1. 在小組的工具列中，按一下 [檔案]****。
-2. 按一下 [在 SharePoint 中開啟]****。
-3. 在 SharePoint 網站的工具列中，按一下設定圖示，然後按一下 [網站權限]****。
-4. 在 [網站權限]**** 窗格的 [共用設定]**** 之下，按一下 [變更共用設定]****。
-5. 在 [共用權限]**** 底下，選擇 [網站擁有者和成員，以及擁有編輯權限的人員可以共用檔案與資料夾，但只有網站擁有者可以共用網站]****，然後按一下 [儲存]****。
+1. 在小組的工具列中，按一下 [檔案]。
+2. 按一下 [在 SharePoint 中開啟]。
+3. 在 SharePoint 網站的工具列中，按一下設定圖示，然後按一下 [網站權限]。
+4. 在 [網站權限] 窗格的 [共用設定] 之下，按一下 [變更共用設定]。
+5. 在 [共用權限] 底下，選擇 [網站擁有者和成員，以及擁有編輯權限的人員可以共用檔案與資料夾，但只有網站擁有者可以共用網站]，然後按一下 [儲存]。
 
 ## <a name="additional-protections"></a>其他保護
 

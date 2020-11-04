@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 端點管理員來管理受管理的裝置、電腦及其他端點。
-ms.openlocfilehash: 72aa26c50f5d3c20409382f19d8beabb5d290023
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 291c1111bbfaf9a549c0d2ac22dab450a32a6a96
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681477"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845261"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>步驟 4： 為您的裝置、電腦和其他端點部署端點管理
 
@@ -44,7 +44,7 @@ Microsoft Intune 是一種雲端式服務，專門用於 Microsoft 365 隨附的
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
-Configuration Manager 是一種內部部署管理解決方案，可管理網路或網際網路上的桌上型電腦、伺服器和膝上型電腦。 使用 Configuration Manager 部署應用程式、軟體更新及作業系統。 您也可以即時監視合規性、查詢和操作用戶端，以及執行更多動作。 您可以在雲端啟用此功能，讓它與 Intune、Azure AD、Microsoft Defender ATP 和其他雲端服務整合。 
+Configuration Manager 是一種內部部署管理解決方案，可管理網路或網際網路上的桌上型電腦、伺服器和膝上型電腦。 使用 Configuration Manager 部署應用程式、軟體更新及作業系統。 您也可以即時監視合規性、查詢和操作用戶端，以及執行更多動作。 您可以在雲端啟用此功能，讓它與 Intune、Azure AD、適用於端點的 Microsoft Defender 和其他雲端服務整合。 
 
 如需詳細資訊，請參閱 [Configuration Manager 概觀](https://docs.microsoft.com/mem/configmgr/core/understand/introduction)。
 

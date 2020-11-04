@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 系統管理員可以了解 Exchange Online Protection (EOP) 中提供的反詐騙功能，可協助緩解來自詐騙寄件者和網域的網路釣魚攻擊。
-ms.openlocfilehash: 8ec81c5032c4e3a0d0e556c37dd293b13e382b05
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 631c38a49b3e1fa5217545449c522ccc9cf0d913
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446272"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844413"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP 中的反詐騙保護
 
@@ -35,17 +35,17 @@ ms.locfileid: "48446272"
 
 在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，EOP 所包含的功能可協助保護貴組織抵禦詐騙 (偽造) 寄件者。
 
-為保護使用者，Microsoft 嚴正看待網路釣魚攻擊。 詐騙是攻擊者所使用的常見技巧。 **詐騙訊息是來自實際來源以外的某人或某個位置**。 這是設計來取得使用者認證的網路釣魚攻擊的慣用伎倆。 EOP 中的反詐騙技術專門檢查郵件內文中的 [寄件者] 標頭(用於顯示電子郵件用戶端中的郵件寄件者)。 當 EOP 高度認為 [寄件者] 標頭為偽造時，會將該郵件視為詐騙。
+為保護使用者，Microsoft 嚴正看待網路釣魚攻擊。 詐騙是攻擊者所使用的常見技巧。 **詐騙訊息是來自實際來源以外的某人或某個位置** 。 這是設計來取得使用者認證的網路釣魚攻擊的慣用伎倆。 EOP 中的反詐騙技術專門檢查郵件內文中的 [寄件者] 標頭(用於顯示電子郵件用戶端中的郵件寄件者)。 當 EOP 高度認為 [寄件者] 標頭為偽造時，會將該郵件視為詐騙。
 
 EOP 中提供下列反詐騙技術：
 
-- **詐騙情報**：檢閱來自內部和外部網域中寄件者的詐騙郵件，並允許或封鎖那些寄件者。 如需詳細資訊，請參閱[在 Microsoft 365 中設定詐騙情報](learn-about-spoof-intelligence.md)。
+- **詐騙情報** ：檢閱來自內部和外部網域中寄件者的詐騙郵件，並允許或封鎖那些寄件者。 如需詳細資訊，請參閱[在 Microsoft 365 中設定詐騙情報](learn-about-spoof-intelligence.md)。
 
-- **防網路釣魚原則**：在 EOP 中，防網路釣魚原則可讓您開啟或關閉詐騙情報、開啟或關閉 Outlook 中未經驗證的寄件者識別碼，並針對已封鎖詐騙寄件者指定動作 (移至 [垃圾郵件] 資料夾或隔離)。 Office 365 進階威脅防護 (Office 365 ATP) 中提供的進階防網路釣魚原則，也包含防冒充設定 (受保護的寄件者和網域)、信箱情報設定，以及可調整的進階網路釣魚臨界值。 如需詳細資訊，請參閱 [Microsoft 365 中的防網路釣魚原則](set-up-anti-phishing-policies.md)。
+- **防網路釣魚原則** ：在 EOP 中，防網路釣魚原則可讓您開啟或關閉詐騙情報、開啟或關閉 Outlook 中未經驗證的寄件者識別碼，並針對已封鎖詐騙寄件者指定動作 (移至 [垃圾郵件] 資料夾或隔離)。 適用於 Office 365 的 Microsoft Defender 中提供的進階防網路釣魚原則，也包含防模擬設定 (受保護的寄件者和網域)、信箱智慧設定，以及可調整的進階網路釣魚臨界值。 如需詳細資訊，請參閱 [Microsoft 365 中的防網路釣魚原則](set-up-anti-phishing-policies.md)。
 
-- **電子郵件驗證**：任何反詐騙工作的整合部分就是在 DNS 中使用 SPF、DKIM 和 DMARC 記錄的電子郵件驗證 (Authentication) (也稱為電子郵件驗證 (Validation))。 您可以為網域設定這些記錄，這樣目的地電子郵件系統就能檢查您網域中寄件者所聲稱郵件的有效性。 針對內送郵件，Microsoft 365 需要寄件者網域的電子郵件驗證。 如需詳細資訊，請參閱 [Microsoft 365 中的電子郵件驗證](email-validation-and-authentication.md)。
+- **電子郵件驗證** ：任何反詐騙工作的整合部分就是在 DNS 中使用 SPF、DKIM 和 DMARC 記錄的電子郵件驗證 (Authentication) (也稱為電子郵件驗證 (Validation))。 您可以為網域設定這些記錄，這樣目的地電子郵件系統就能檢查您網域中寄件者所聲稱郵件的有效性。 針對內送郵件，Microsoft 365 需要寄件者網域的電子郵件驗證。 如需詳細資訊，請參閱 [Microsoft 365 中的電子郵件驗證](email-validation-and-authentication.md)。
 
-從 2018 年 10 月開始，EOP 中提供反詐騙防護功能。 在此之前，只有具有 Office 365 ATP 的組織才提供反詐騙防護功能。
+從 2018 年 10 月開始，EOP 中提供反詐騙防護功能。
 
 EOP 會分析並封鎖使用標準電子郵件驗證方法與寄件者信譽技術組合無法驗證的郵件。
 
@@ -55,13 +55,13 @@ EOP 會分析並封鎖使用標準電子郵件驗證方法與寄件者信譽技�
 
 詐騙郵件對使用者有下列負面影響：
 
-- **詐騙郵件會欺騙使用者**：詐騙郵件會誘騙收件者按下連結並給予其憑證，下載惡意程式碼或回覆具有敏感內容的郵件 (稱為商務電子郵件入侵或 BEC)。
+- **詐騙郵件會欺騙使用者** ：詐騙郵件會誘騙收件者按下連結並給予其憑證，下載惡意程式碼或回覆具有敏感內容的郵件 (稱為商務電子郵件入侵或 BEC)。
 
   以下郵件是使用詐騙寄件者 msoutlook94@service.outlook.com 的網路釣魚範例：
 
   ![冒充 service.outlook.com 的網路釣魚郵件](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
-  這封郵件並非來自 service.outlook.com，而是攻擊者偽造 [寄件者]**** 標頭欄位，使其看起來像是來自該處。 這是誘騙收件者按下**變更密碼**連結並給予其憑證的嘗試。
+  這封郵件並非來自 service.outlook.com，而是攻擊者偽造 [寄件者] 標頭欄位，使其看起來像是來自該處。 這是誘騙收件者按下 **變更密碼** 連結並給予其憑證的嘗試。
 
   以下郵件是使用詐騙電子郵件網域 contoso.com 的 BEC 範例：
 
@@ -69,7 +69,7 @@ EOP 會分析並封鎖使用標準電子郵件驗證方法與寄件者信譽技�
 
   郵件看起來合法，但寄件者卻是偽造的。
 
-- **使用者會對真實郵件與假冒郵件產生混淆**：即使是已經知道網路釣魚的使用者也可能難以看出真實郵件與詐騙郵件之間的差異。
+- **使用者會對真實郵件與假冒郵件產生混淆** ：即使是已經知道網路釣魚的使用者也可能難以看出真實郵件與詐騙郵件之間的差異。
 
   以下郵件是來自 Microsoft 安全性帳戶真實密碼重設郵件的範例：
 
@@ -81,7 +81,7 @@ EOP 會分析並封鎖使用標準電子郵件驗證方法與寄件者信譽技�
 
 Microsoft 將詐騙郵件區分為兩種類型：
 
-- **組織內部詐騙**：也稱為_自我_詐騙。 例如：
+- **組織內部詐騙** ：也稱為 _自我_ 詐騙。 例如：
 
   - 寄件者和收件者位於同一個網域：
     > 寄件者：chris@contoso.com <br/> 收件者：michelle@contoso.com
@@ -104,7 +104,7 @@ Microsoft 將詐騙郵件區分為兩種類型：
 
   - SFTY 是郵件的安全層級。 9 表示網路釣魚，11 表示組織內部詐騙。
 
-- **跨網域詐騙**：寄件者和收件者網域並不相同，且彼此之間沒有關係 (也稱為外部網域)。 例如：
+- **跨網域詐騙** ：寄件者和收件者網域並不相同，且彼此之間沒有關係 (也稱為外部網域)。 例如：
     > 寄件者：chris@contoso.com <br/> 收件者：michelle@tailspintoys.com
 
   因為跨網域詐騙包含下列標頭值，因此郵件不會通過[複合驗證](email-validation-and-authentication.md#composite-authentication)：
@@ -123,9 +123,9 @@ Microsoft 將詐騙郵件區分為兩種類型：
 
 ## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>關於有多少郵件被標示為詐騙郵件的報告
 
-EOP 組織可以在 [安全性與合規性中心] 的 [報告] 儀表板中使用**詐騙偵測**報告。 如需詳細資訊，請參閱[詐騙偵測報告](view-email-security-reports.md#spoof-detections-report)。
+EOP 組織可以在 [安全性與合規性中心] 的 [報告] 儀表板中使用 **詐騙偵測** 報告。 如需詳細資訊，請參閱[詐騙偵測報告](view-email-security-reports.md#spoof-detections-report)。
 
-Office 365 ATP 組織可以使用 [安全性與合規性中心] 中的 [威脅總管] 來檢視網路釣魚嘗試的相關資訊。 如需詳細資訊，請參閱 [Microsoft 365 威脅調查及回應](office-365-ti.md)。
+適用於 Office 365 的 Microsoft Defender 組織可以使用 [安全性與合規性中心] 中的 [威脅總管] 來檢視網路釣魚嘗試的相關資訊。 如需詳細資訊，請參閱 [Microsoft 365 威脅調查及回應](office-365-ti.md)。
 
 ## <a name="problems-with-anti-spoofing-protection"></a>反詐騙保護的問題
 
@@ -133,11 +133,11 @@ Office 365 ATP 組織可以使用 [安全性與合規性中心] 中的 [威脅�
 
 例如，Gabriela Laureano (glaureano@contoso.com) 對賞鳥有興趣，因此加入 birdwatchers@fabrikam.com 郵寄清單，並且將下列郵件傳送到清單：
 
-> **寄件者：**"Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件者：** 賞鳥的討論清單\<birdwatchers@fabrikam.com\> <br/> **主旨：** 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 <br/><br/>有人這週想要上雷尼爾山 賞景嗎？
+> **寄件者：** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件者：** 賞鳥的討論清單\<birdwatchers@fabrikam.com\> <br/> **主旨：** 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 <br/><br/>有人這週想要上雷尼爾山 賞景嗎？
 
 郵寄清單伺服器會接收郵件，修改其內容，並且對清單的成員重新播放。 重新播放的郵件具有相同的 [寄件者] 地址 (glaureano@contoso.com)，但是有標記新增至主旨行，頁尾新增至郵件底端。 這種類型的修改常見於郵寄清單中，且可能會導致詐騙的誤判。
 
-> **寄件者：**"Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件者：** 賞鳥的討論清單\<birdwatchers@fabrikam.com\> <br/> **主旨：**[賞鳥人士] 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 <br/><br/> 有人這週想要上雷尼爾山 賞景嗎？ <br/><br/> 此郵件已傳送給「賞鳥人士」討論清單。 您隨時可以取消訂閱。
+> **寄件者：** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **收件者：** 賞鳥的討論清單\<birdwatchers@fabrikam.com\> <br/> **主旨：** [賞鳥人士] 本週雷尼爾山頂 觀賞藍鳥的絕佳景點 <br/><br/> 有人這週想要上雷尼爾山 賞景嗎？ <br/><br/> 此郵件已傳送給「賞鳥人士」討論清單。 您隨時可以取消訂閱。
 
 為了協助郵寄清單郵件通過反詐騙檢查，請根據您是否控制郵寄清單來執行下列步驟：
 

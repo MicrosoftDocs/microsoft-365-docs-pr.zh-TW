@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: In-Place eDiscovery 和 In-Place 保留 (和 Exchange Online 中的對應 PowerShell Cmdlet) 會在2020的上半年內淘汰。 Search-Mailbox Cmdlet 及 Advanced eDiscovery 1.0 1.0 也會在相同的時段內淘汰。
-ms.openlocfilehash: 98e04ada0afa03404ba36da2004a9352a01f598a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: e8edda9436d62e07d0f64126a012791080766aba
+ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546279"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48877464"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>舊版電子文件探索工具淘汰
 
@@ -31,7 +31,7 @@ ms.locfileid: "47546279"
 
 - 在 Exchange 系統管理中心中[In-Place eDiscovery](https://docs.microsoft.com/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)和[In-Place 存放](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds)。
 
-- Exchange Online PowerShell Cmdlet，可支援 In-Place eDiscovery 和 In-Place 保留， (這些 Cmdlet 會共同識別為 **-get-mailboxsearch 程式* Cmdlet) 。 這包括下列 Cmdlet：
+- Exchange Online PowerShell Cmdlet，可支援 In-Place eDiscovery 和 In-Place 保留， (這些 Cmdlet 會共同識別為 * *-get-mailboxsearch 程式* Cmdlet) 。 這包括下列 Cmdlet：
 
   - [New-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/new-mailboxsearch)
 
@@ -42,7 +42,7 @@ ms.locfileid: "47546279"
   - [Set-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/set-mailboxsearch)
 
    > [!NOTE]
-   > 當其他 * *-MailboxSearch * * * * * 指令程式已停用之後，就可以使用 [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch) 和 [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) Cmdlet，這樣您就可以使用這些 Cmdlet 來協助您轉換至其他 eDiscovery 和保留工具。 不過，在下列 (所提及的特定日期之後) Microsoft 支援將不再支援這兩種 Cmdlet。
+   > 當其他 * *-MailboxSearch * * * * * 指令已撤銷後，即可使用 [Get-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/get-mailboxsearch) 和 [Remove-MailboxSearch](https://docs.microsoft.com/powershell/module/exchange/remove-mailboxsearch) Cmdlet，這樣您就可以使用這些 Cmdlet 來協助您轉換至其他 eDiscovery 和保留工具。 不過，在下列 (所提及的特定日期之後) Microsoft 支援將不再支援這兩種 Cmdlet。
 
 - Exchange Online PowerShell 中的 [Search-Mailbox](https://docs.microsoft.com/powershell/module/exchange/search-mailbox) Cmdlet。
 
@@ -92,9 +92,9 @@ ms.locfileid: "47546279"
 <table>
 <thead>
 <tr class="header">
-<th><strong>功能</strong></th>
-<th><strong>替代工具</strong></th>
-<th><strong>註解</strong></th>
+<th>功能</th>
+<th>替代工具</th>
+<th>註解</th>
 </tr>
 </thead>
 <tbody>
@@ -154,7 +154,7 @@ ms.locfileid: "47546279"
 
 ### <a name="faqs-about-in-place-ediscovery-and-in-place-holds"></a>有關 In-Place eDiscovery 和 In-Place 保留的 FAQs
 
-**我使用 In-Place eDiscovery & 的「副本搜尋結果」功能，將搜尋結果複製到探索信箱，以供律師審閱。我現在有哪些選項？**
+您 *可以使用 In-Place eDiscovery & 中的「副本搜尋結果」功能，將搜尋結果複製到探索信箱，以供律師審閱。我現在有哪些選項？**
 
 目前有兩種方法可以複製這項功能。 第一個用途是使用 [高級 eDiscovery 2.0 版中的複查集](https://docs.microsoft.com/microsoft-365/compliance/view-documents-in-review-set)。 「審閱」集中的功能，您可以在傳統的回顧工具中看到許多相同的功能，例如快速搜尋檔、標記、電子郵件執行緒、接近重複群組、主題分析和預測編碼。 如果您仍然想要使用探索信箱進行審閱，第二個選項是將搜尋結果匯出至 PST 檔案，然後使用 Microsoft 規範中心的 [Pst 匯入] [功能](use-network-upload-to-import-pst-files.md) ，將 pst 檔案匯入到探索信箱。
 
@@ -168,7 +168,7 @@ Microsoft 365 規範中心也會使用 [規範界限](set-up-compliance-boundari
 
 ## <a name="-mailboxsearch-cmdlets"></a>\*-Get-mailboxsearch 程式 Cmdlet
 
-根據在 Exchange 系統管理中心的2017年7月1日宣佈的原始宣告，In-Place eDiscovery & 保留功能和對應的** \* get-mailboxsearch 程式**Cmdlet 即將停用。 這些 Cmdlet 可讓使用者搜尋、保留及匯出法律、法規及公開要求的信箱內容。
+根據在 Exchange 系統管理中心的2017年7月1日宣佈的原始宣告，In-Place eDiscovery & 保留功能和對應的 **\* get-mailboxsearch 程式** Cmdlet 即將停用。 這些 Cmdlet 可讓使用者搜尋、保留及匯出法律、法規及公開要求的信箱內容。
 
 由於這些功能現在可在 [<span class="underline">Microsoft 365 規範中心</span>](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) 和 Office 365 安全性 & 合規性中心 PowerShell 取得，提高效能與擴充性，所以您應該使用這些改進的 Cmdlet。 這些 Cmdlet 包括[<span class="underline"> \* -get-compliancecase</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)、 [<span class="underline"> \* -new-compliancesearch</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)、 [<span class="underline"> \* -CaseHoldPolicy</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)、 [<span class="underline"> \* -new-caseholdrule</span>](https://docs.microsoft.com/powershell/module/exchange/get-caseholdrule)及[<span class="underline"> \* -new-compliancesearchaction</span>](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)。
 
@@ -186,7 +186,7 @@ Microsoft 365 規範中心也會使用 [規範界限](set-up-compliance-boundari
 
 - 2020年7月1日：您將無法使用 **New-MailboxSearch** 來建立新的 In-Place eDiscovery 搜尋和 In-Place 保留，但是您仍然可以使用 Cmdlet 來執行、編輯和刪除現有的搜尋，並以您自己的風險進行。 Microsoft 支援人員將不再為這些類型的搜尋和保留提供協助。
 
-- 2020年10月1日：如先前所述，將 EAC 中的 In-Place eDiscovery & 保留功能會置於唯讀模式。 這也表示您將無法使用 **New-MailboxSearch**、 **Start-MailboxSearch**或 **Set-MailboxSearch** Cmdlet。 您只可以取得及移除現有的搜尋和保留。
+- 2020年10月1日：如先前所述，將 EAC 中的 In-Place eDiscovery & 保留功能會置於唯讀模式。 這也表示您將無法使用 **New-MailboxSearch** 、 **Start-MailboxSearch** 或 **Set-MailboxSearch** Cmdlet。 您只可以取得及移除現有的搜尋和保留。
 
 ### <a name="alternative-tools"></a>替代工具
 
@@ -195,9 +195,9 @@ Microsoft 365 規範中心也會使用 [規範界限](set-up-compliance-boundari
 <table>
 <thead>
 <tr class="header">
-<th><strong>功能</strong></th>
-<th><strong>替代工具</strong></th>
-<th><strong>註解</strong></th>
+<th>功能</th>
+<th>替代工具</th>
+<th>註解</th>
 </tr>
 </thead>
 <tbody>
@@ -235,11 +235,11 @@ Microsoft 365 規範中心也會使用 [規範界限](set-up-compliance-boundari
 </tbody>
 </table>
 
-### <a name="faqs-about--mailboxsearch-cmdlets"></a>FAQs 關於 ***-get-mailboxsearch 程式** Cmdlet
+### <a name="faqs-about--mailboxsearch-cmdlets"></a>FAQs 關於 * **-get-mailboxsearch 程式** Cmdlet
 
 **我們使用「複製搜尋」來匯出電子郵件訊息或立即訊息，以供其他 eDiscovery 和法律調查之用。停用這些 Cmdlet 後，還有哪些其他選項？**
 
-[<span class="underline">Microsoft Graph APIs</span>](https://developer.microsoft.com/en-us/graph)提供許多方法，可讓您提取資料，以進行分析，以及與使用** \* -get-mailboxsearch 程式**指令程式相比更具彈性性及可擴充性的其他目的。
+[<span class="underline">Microsoft Graph APIs</span>](https://developer.microsoft.com/en-us/graph)提供許多方法，可讓您提取資料，以進行分析，以及與使用 **\* -get-mailboxsearch 程式** 指令程式相比更具彈性性及可擴充性的其他目的。
 
 **如何將搜尋遷移並保留至 Microsoft 365 規範中心？**
 
@@ -274,9 +274,9 @@ Exchange Online PowerShell 中的 **Search-Mailbox** Cmdlet 會在 [正在撤銷
 <table>
 <thead>
 <tr class="header">
-<th><strong>功能</strong></th>
-<th><strong>替代工具</strong></th>
-<th><strong>註解</strong></th>
+<th>功能</th>
+<th>替代工具</th>
+<th>註解</th>
 </tr>
 </thead>
 <tbody>
@@ -323,7 +323,7 @@ Exchange Online PowerShell 中的 **Search-Mailbox** Cmdlet 會在 [正在撤銷
 
 ## <a name="exchange-web-services-api-operations"></a>Exchange Web 服務 API 作業
 
-Exchange 系統管理中心的 In-Place eDiscovery & 保留功能，以及 Exchange Online PowerShell 中的對應** \* get-mailboxsearch 程式**Cmdlet 使用 EXCHANGE Web 服務 API 中的這些作業。 當您淘汰其他舊版 eDiscovery 工具時，也會將其淘汰。
+Exchange 系統管理中心的 In-Place eDiscovery & 保留功能，以及 Exchange Online PowerShell 中的對應 **\* get-mailboxsearch 程式** Cmdlet 使用 EXCHANGE Web 服務 API 中的這些作業。 當您淘汰其他舊版 eDiscovery 工具時，也會將其淘汰。
 
 ### <a name="scope-of-affected-organizations"></a>受影響組織的範圍
 
@@ -341,15 +341,15 @@ Exchange 系統管理中心的 In-Place eDiscovery & 保留功能，以及 Excha
 
 ## <a name="advanced-ediscovery-v10"></a>Advanced eDiscovery v 1。0
 
-Advanced ediscovery 1.0 版，也就是在核心 eDiscovery 案例中，您可以按一下 [ **切換至高級 ediscovery**]，將會停用此版本的高級 ediscovery。 其功能已由 Microsoft 365 規範中心內的新「 [高級 eDiscovery」解決方案](https://aka.ms/edisco) 所取代。
+Advanced ediscovery 1.0 版，也就是在核心 eDiscovery 案例中，您可以按一下 [ **切換至高級 ediscovery** ]，將會停用此版本的高級 ediscovery。 其功能已由 Microsoft 365 規範中心內的新「 [高級 eDiscovery」解決方案](https://aka.ms/edisco) 所取代。
 
 若要判斷您的組織是否使用 Advanced eDiscovery 1.0 版：
 
 1. 移至 [Office 365 的安全性 & 規範中心](https://protection.office.com)。
 
-2. 在安全性 & 規範中心的左功能窗格中，按一下 [ **ediscovery > ediscovery**，然後開啟核心 eDiscovery 案例。
+2. 在安全性 & 規範中心的左功能窗格中，按一下 [ **ediscovery > ediscovery** ，然後開啟核心 eDiscovery 案例。
 
-3. 如果您看到 [ **切換至「高級 ediscovery** 」按鈕，請按一下此按鈕將會帶您的1.0 版本的高級 ediscovery （即將淘汰）。 在核心 eDiscovery 中建立及管理案例的功能將不會受到影響。 只有透過按一下 [ **切換至高級 ediscovery**) ]，才能夠在高級 ediscovery 1.0 (中新增及分析案例資料。
+3. 如果您看到 [ **切換至「高級 ediscovery** 」按鈕，請按一下此按鈕將會帶您的1.0 版本的高級 ediscovery （即將淘汰）。 在核心 eDiscovery 中建立及管理案例的功能將不會受到影響。 只有透過按一下 [ **切換至高級 ediscovery** ) ]，才能夠在高級 ediscovery 1.0 (中新增及分析案例資料。
 
 Microsoft (365 中新的「Advanced eDiscovery 解決方案」（也稱為「 *Advanced ediscovery 2.0* 」）) 提供原始解決方案的所有功能，但現在包含以系統管理員身分的方式，識別其他 Microsoft 365 服務中的內容、收集該內容，然後將其新增至審閱集，讓檢閱者可以利用 fast search 查詢、標記和分析功能，以協助挑選相關的檔。 「高級 eDiscovery」現在包括 Microsoft 和非 Microsoft 檔案類型的增強的處理和原生檢視器、 [這裡](https://docs.microsoft.com/microsoft-365/compliance/supported-filetypes-ediscovery20) 是檔案類型的完整清單，以及支援的元資料欄位在 [這裡](https://docs.microsoft.com/microsoft-365/compliance/document-metadata-fields-in-advanced-ediscovery)。 此外，新的高級 eDiscovery 解決方案提供功能強大的保管人功能，可讓您將保留套用至不同服務中的內容、通知使用者保留，以及追蹤保管人回應，全部都是在高級 eDiscovery 案例內。
 
@@ -357,15 +357,17 @@ Microsoft (365 中新的「Advanced eDiscovery 解決方案」（也稱為「 *A
 
 1. 移至 [Microsoft 365 規範中心](https://compliance.microsoft.com)。
 
-2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [ **全部顯示**]，然後按一下 [ **eDiscovery > Advanced**]。
+2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [ **全部顯示** ]，然後按一下 [ **eDiscovery > Advanced** ]。
 
-此時，我們建議您開始將 eDiscovery 工作流程轉換為新的高級 eDiscovery 功能。 雖然您仍然可以存取現有案例中的 Advanced eDiscovery 1.0 版，但 Microsoft 支援不會在2020年10月1日之後提供支援。 如需詳細資訊，請參閱下列時程表。
+此時，我們建議您開始將 eDiscovery 工作流程轉換為新的高級 eDiscovery 功能。 如有需要，您可以匯出內容，並將其儲存在離線狀態，以封存您的高級 eDiscovery 1.0 案例。 雖然您仍然可以在現有案例中存取高級 eDiscovery 1.0 版，直到2020年12月31日為止，Microsoft 支援服務不會在 2020 10 月1日之後提供支援。 如需詳細資訊，請參閱下列時程表。
 
 ### <a name="scope-of-affected-organizations"></a>受影響組織的範圍
 
 - Office 365 和 Microsoft 365 企業組織
 
 - Office 365 和 Microsoft 365 教育組織
+
+- Office 365 和 Microsoft 365 政府組織;這包括 GCC、GCC High 和 DoD
 
 - Office 365 德國
 
@@ -374,6 +376,8 @@ Microsoft (365 中新的「Advanced eDiscovery 解決方案」（也稱為「 *A
 - 2020年7月1日：您將無法建立新的高級 eDiscovery 1.0 案例。
 
 - 2020年10月1日：您將無法新增資料 (針對高級 eDiscovery) 準備搜尋結果以進行任何案例。 您將能夠繼續使用現有案例中的資料，必須自行承擔。 Microsoft 支援將不再提供協助。 
+
+- 2020年12月31日：您將無法存取高級 eDiscovery 1.0 案例。
 
 ### <a name="alternative-tools"></a>替代工具
 

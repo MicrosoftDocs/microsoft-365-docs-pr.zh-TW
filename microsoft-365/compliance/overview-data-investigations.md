@@ -18,14 +18,19 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-mar2020
 description: 在本文中，您將深入瞭解 Microsoft 365 中的資料調查 (預覽) 工具。 「資料調查」工具可協助您評估和修正資料外泄。
-ms.openlocfilehash: 21241ad36278bc75a8363b9aeefeaf4caec783b5
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f3e08ca602d9d131cd25d234c96c660f0b9639aa
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285989"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906928"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Microsoft 365 (預覽) 中的資料調查綜述
+
+> [!IMPORTANT]
+> Deliberation 與我們的客戶進行大量的和討論後，我們決定不要將「資料調查」工具發佈到「一般」可用性。 因此，我們會移除此工具及與現有資料調查案例相關的任何資料，2020年12月31日。  若要管理組織中的資料調查，建議您使用核心 eDiscovery 案例。 如果您需要搜尋並清除 Microsoft 365 的內容，請參閱下列文章： 
+> - [eDiscovery 解決方案系列：資料外泄案例-搜尋和清除](data-spillage-scenariosearch-and-purge.md)
+> - [搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md)
 
 當包含機密、敏感或惡意內容的檔發佈至不受信任的環境時，就會發生資料溢出。 偵測到資料溢出時，必須快速包含環境、評估外泄的大小和位置、檢查其周圍的使用者活動，然後從服務中刪除濺入的資料。 使用新的資料調查 (預覽) 工具，您可以在 Office 365 中搜尋敏感、惡意或誤放的資料，調查發生的情況，並採取適當的動作來修正外泄。  
 
@@ -37,7 +42,7 @@ ms.locfileid: "48285989"
 
 ## <a name="data-investigations-preview-workflow"></a>資料調查 (預覽) 工作流程 
 
-下列各節將說明內建工作流程中的每個步驟 (預覽) 。 下列螢幕擷取畫面顯示名為「高風險」之調查的 [ **首頁** ] 索引標籤 *：「財務檔洩漏*」。 
+下列各節將說明內建工作流程中的每個步驟 (預覽) 。 下列螢幕擷取畫面顯示名為「高風險」之調查的 [ **首頁** ] 索引標籤 *：「財務檔洩漏* 」。 
 
 ![「資料調查」工具中的工作流程](../media/DataInvestigationsWorkflow.png)
 
@@ -62,7 +67,7 @@ ms.locfileid: "48285989"
 
 ## <a name="indexing-the-data-of-people-of-interest"></a>為相關人員的資料編制索引
 
-新增調查感興趣的人員會從人員的資料來源中重新索引任何已部分索引的專案。 此處理程式稱為「 *高級索引*」。 高級索引 reprocesses 資料（例如影像和不支援的檔案類型），這樣當您執行搜尋來收集調查的資料時，就可以充分探索此資料。 使用 [ **處理** ] 索引標籤來監控高級索引的狀態，並修正使用稱為「 *錯誤修正*」的處理常式可能發生的任何處理錯誤。 如需詳細資訊，請參閱 [在處理調查的資料時的錯誤修正](error-remediation.md)。
+新增調查感興趣的人員會從人員的資料來源中重新索引任何已部分索引的專案。 此處理程式稱為「 *高級索引* 」。 高級索引 reprocesses 資料（例如影像和不支援的檔案類型），這樣當您執行搜尋來收集調查的資料時，就可以充分探索此資料。 使用 [ **處理** ] 索引標籤來監控高級索引的狀態，並修正使用稱為「 *錯誤修正* 」的處理常式可能發生的任何處理錯誤。 如需詳細資訊，請參閱 [在處理調查的資料時的錯誤修正](error-remediation.md)。
 
 ## <a name="exporting-data"></a>匯出資料
 

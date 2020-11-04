@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 安全性與合規性服務，以保護遠端工作者的應用程式、資料和裝置。
-ms.openlocfilehash: 7607f3945d2e3c4e057162296df94dce4c611dbe
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 6c6c30e320068a6e97cf5fd2cd81b4bfeff1c49e
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681465"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845225"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>步驟 3：為遠端工作者部署安全性與合規性
 
@@ -49,9 +49,9 @@ ms.locfileid: "48681465"
 
 | 功能 | 描述 | 授權 |
 |:-------|:-----|:-------|
-| Office 365 進階威脅防護（ATP） | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 <br><br> Office ATP 會收集並分析來自應用程式的訊號，以進行偵測、調查，並修正安全風險，並抵禦電子郵件訊息、連結 (Url) 和共同作業工具所帶來的惡意威脅，以保護組織。 | Microsoft 365 E3 或 E5 | 
+| 適用於 Office 365 的 Microsoft Defender | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 <br><br> 適用於 Office 365 的 Microsoft Defender 會收集並分析來自應用程式的訊號，以進行偵測、調查，並修正安全風險，並抵禦電子郵件訊息、連結 (URL) 和共同作業工具所帶來的惡意威脅，以保護組織。 | Microsoft 365 E3 或 E5 | 
 | 惡意程式碼防護 | Microsoft Defender 防毒軟體和 Device Guard 提供裝置型惡意程式碼保護功能。 <br><br> SharePoint‎ Online 會自動掃描檔案上傳是否有已知的惡意程式碼。 ‎<br><br> Exchange Online Protection‎ (‎EOP‎) 可保護雲端信箱。 | Microsoft 365 E3 或 E5 |
-| Microsoft Defender ATP | 保護組織的裝置不受網路威脅和資料外洩，並偵測、調查及應變進階威脅。 | Microsoft 365 E5 |
+| 適用於端點的 Microsoft Defender | 保護組織的裝置不受網路威脅和資料外洩，並偵測、調查及因應進階威脅。 | Microsoft 365 E5 |
 | Cloud App Security | 保護您的雲端服務不受攻擊，包括 Microsoft 365 和其他 SaaS 應用程式。 | Microsoft 365 E5 或個別的 Cloud App Security 授權 |
 | Azure AD Identity Protection  | 自動化身分識別風險的偵測和修正。 <br><br>建立以風險為基礎的條件式存取原則，對於有風險的登入要求多重要素驗證 (MFA)。 | Microsoft 365 E5 或 E3 (含 Azure AD Premium P2 授權) |
 ||||

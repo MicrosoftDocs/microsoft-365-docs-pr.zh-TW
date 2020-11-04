@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規性中心，您可以集中管理與安全性或合規性相關的所有工作權限。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 43c98e0b710f5b88c17e089fd974e924728f27f3
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9ad17933592b860fb81e469fd55a454c90b71320
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202672"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845753"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
 
@@ -97,14 +97,14 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |---|---|
 |[**Microsoft 365 安全性中心**](https://security.microsoft.com/)|監視所有 Microsoft 365 服務的安全性相關原則。 <br/><br/>  管理安全性威脅和警示。 <br/><br/> 檢視報告。 <br/><br/> 管理敏感度標籤。|
 |**身分識別保護中心**|執行安全性讀取者角色可執行的所有動作，並執行所有身分識別保護中心的作業，除了重設密碼之外。|
-|[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 「無法」**** 管理 Azure AD 角色指派或設定。|
+|[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 「無法」管理 Azure AD 角色指派或設定。|
 |[**安全性與合規性中心**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|管理安全性原則。 <br/><br/> 檢視、調查及回應安全性威脅 <br/><br/> 檢視報告。 <br/><br/> 管理敏感度標籤。|
-|**Azure 進階威脅防護**|監視與回應可疑的安全性活動。|
-|**Windows Defender ATP 和 EDR**|指派角色。 <br/><br/> 管理電腦群組。 <br/><br/> 設定端點威脅偵測和自動補救。 <br/><br/> 檢視、調查及回應警示。|
-|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune****。|
+|**適用於身分識別的 Microsoft Defender**|監視與回應可疑的安全性活動。|
+|**適用於端點的 Microsoft Defender 和 EDR**|指派角色。 <br/><br/> 管理電腦群組。 <br/><br/> 設定端點威脅偵測和自動補救。 <br/><br/> 檢視、調查及回應警示。|
+|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|新增系統管理員、新增原則和設定、上傳記錄及執行控管動作。|
-|[**Azure 安全性中心**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (即將推出)|檢視安全性原則、檢視安全性狀態、編輯安全性原則、檢視警示和建議、關閉警示和建議。|
-|[**Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
+|[**Azure Defender** _](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (即將推出)|檢視安全性原則、檢視安全性狀態、編輯安全性原則、檢視警示和建議、關閉警示和建議。|
+|[_ *Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
 |
 
 ### <a name="security-operator"></a>安全性操作員
@@ -119,8 +119,8 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |**身分識別保護中心** (即將推出)|執行安全性讀取者角色可執行的所有動作。|
 |[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|執行安全性讀取者角色可執行的所有動作。|
 |[**安全性與合規性中心**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 檢視、調查及回應安全性威脅|
-|**Windows Defender ATP 和 EDR**|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 檢視、調查及回應警示。|
-|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune****。|
+|**適用於端點的 Microsoft Defender 和 EDR**|執行安全性讀取者角色可執行的所有動作。 <br/><br/> 檢視、調查及回應警示。|
+|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|執行安全性讀取者角色可執行的所有動作，以及檢視核取消警示。|
 |[**Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
 |
@@ -134,14 +134,14 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |在此服務中...|安全性讀取者可以...|
 |---|---|
 |[**Microsoft 365 安全性中心**](https://security.microsoft.com/)|檢視所有 Microsoft 365 服務的安全性相關原則。 <br/><br/> 檢視安全性威脅和警示。 <br/><br/> 檢視報告。|
-|**身分識別保護中心**|讀取有關安全性功能的所有安全性報告和設定資訊：反垃圾郵件、加密、資料遺失防護 (DLP)、反惡意程式碼、進階威脅防護 (ATP)、反網路釣魚和郵件流程規則 (也稱為傳輸規則)。|
-|[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|以唯讀方式存取 Azure AD PIM 中所顯示的一切資訊︰Azure AD 角色指派的原則和報告、安全性檢閱，以及在未來還可透過讀取來存取 Azure AD 角色指派以外案例的原則資料和報告。 <br/><br/> 「無法」**** 註冊 Azure AD PIM 或對它進行任何變更。 擔任此角色的人員可以在 PIM 的入口網站中或是透過 PowerShell，來啟用其他角色 (例如「全域管理員」或「特殊權限角色管理員」)，前提是該使用者必須有資格擔任該角色。|
+|**身分識別保護中心**|閱讀有關安全性功能的所有安全性報告和設定資訊：反垃圾郵件、加密、資料遺失防護 (DLP)、反惡意程式碼、適用於 Office 365 的 Defender、反網路釣魚和郵件流程規則 (也稱為傳輸規則)。|
+|[**Privileged Identity Management**](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)|以唯讀方式存取 Azure AD PIM 中所顯示的一切資訊︰Azure AD 角色指派的原則和報告、安全性檢閱，以及在未來還可透過讀取來存取 Azure AD 角色指派以外案例的原則資料和報告。 <br/><br/> 「無法」註冊 Azure AD PIM 或對它進行任何變更。 擔任此角色的人員可以在 PIM 的入口網站中或是透過 PowerShell，來啟用其他角色 (例如「全域管理員」或「特殊權限角色管理員」)，前提是該使用者必須有資格擔任該角色。|
 |[**安全性與合規性中心**](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|檢視安全性原則。 <br/><br/> 檢視及調查安全性威脅。 <br/><br/> 檢視報告。|
-|**Windows Defender ATP 和 EDR**|檢視和調查警示。|
-|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune****。|
+|**適用於端點的 Microsoft Defender 和 EDR**|檢視和調查警示。|
+|[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|使用唯讀權限來檢視資訊。 <br/><br/> 管理警示。|
-|[**Azure 安全性中心**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|檢視建議和警示。 <br/><br/> 檢視安全性原則。 <br/><br/> 檢視安全性狀態、但無法進行變更。|
-|[**Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
+|[**Azure Defender** _](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|檢視建議和警示。 <br/><br/> 檢視安全性原則。 <br/><br/> 檢視安全性狀態、但無法進行變更。|
+|[_ *Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
 |
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>全域管理員可在 Azure Active Directory 中管理角色
@@ -160,9 +160,9 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 
 ### <a name="breaking-inheritance"></a>打破繼承
 
-請務必了解，您在 Azure Active Directory 中管理這些角色時，您也是在為「所有」Microsoft 365 服務集中管理這些角色****。 但是，當您在特定服務中 (例如安全性與合規性中心) 中管理角色時，您只是管理「該特定服務」的角色****。 服務中角色的指派和權限會覆寫授予 Azure Active Directory 角色的任何權限。
+請務必了解，您在 Azure Active Directory 中管理這些角色時，您也是在為「所有」Microsoft 365 服務集中管理這些角色。 但是，當您在特定服務中 (例如安全性與合規性中心) 中管理角色時，您只是管理「該特定服務」的角色。 服務中角色的指派和權限會覆寫授予 Azure Active Directory 角色的任何權限。
 
-這可能很有用 - 例如，如果將某人指派為安全性系統管理員角色，則他們沒有管理事件的權限。 但是，您可以使用 Windows Defender 進階威脅防護中的權限授與他們該服務中事件管理的特定權限。
+這可能很有用 - 例如，如果將某人指派為安全性系統管理員角色，則他們沒有管理事件的權限。 但是，您可以使用適用於端點的 Microsoft Defender 中的權限來授與他們該服務中事件管理的特定權限。
 
 ## <a name="where-to-find-role-information-for-each-microsoft-365-service"></a>在哪裡可找到每個 Microsoft 365 服務的角色資訊
 
@@ -174,7 +174,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |---|---|
 |Office 365 與 Microsoft 365 商務方案中的系統管理員角色|[Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)|
 |Azure Active Directory (Azure AD) 與 Azure AD Identity Protection|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Azure 進階威脅防護|[Azure ATP 角色群組](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
+|適用於身分識別的 Microsoft Defender|[適用於身分識別的 Microsoft Defender 角色群組](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure 資訊保護|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |合規性管理員|[合規性管理員](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles) (英文)|
 |Exchange Online|[Exchange 角色型存取控制](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
@@ -186,7 +186,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |安全分數|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |SharePoint Online|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <br/><br/> [關於 Office 365 中的 SharePoint 系統管理員角色](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)|
 |Teams/商務用 Skype|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Windows Defender 進階威脅防護|[Windows Defender ATP 角色型存取控制](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)|
+|適用於端點的 Microsoft Defender|[適用於端點的 Microsoft Defender 角色式存取控制](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/rbac-windows-defender-advanced-threat-protection)|
 |
 
 ## <a name="what-is-coming-soon"></a>即將推出的內容

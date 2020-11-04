@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 分類器是一種工具，可讓您訓練以辨識各種類型的內容，其範例可供您查看。 本文說明如何建立及訓練自訂的分類器，以及如何重新導流以提高精確度。
-ms.openlocfilehash: 4475456e7116acbc705a3121079391a571fcca8a
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: f0d3659c1ee03fe69a5513f24d15b295400a24dc
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841230"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906344"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>開始使用可訓練分類器（預覽版）
 
@@ -33,7 +33,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 
 若要深入瞭解不同類型的分類器，請參閱 [瞭解如何 trainable 的分類器 (預覽) ](classifier-learn-about.md)。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 ### <a name="licensing-requirements"></a>授權需求
 
@@ -44,7 +44,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 在 UI 中存取分類器： 
 
 - 全域管理員必須加入宣告租使用者，才能建立自訂分類符。
-- 合規性管理員角色、資料調查角色或符合性資料管理員是訓練分類器所需的。
+- 需要合規性管理員或資料調查角色，才能訓練分類器。
 
 在下列情況下，您將需要具有這些許可權的帳戶才能使用分類器：
 

@@ -12,12 +12,12 @@ ms.custom: ''
 localization_priority: Priority
 description: 了解 Microsoft 365 如何協助將金融服務移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規
 f1.keywords: NOCSH
-ms.openlocfilehash: 19f8acc4a0d94c9fb4952a31a8e119a99a553bf0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ba8feb12dbd9e7b82a2c85b0a1d8d26110e10140
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197546"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844185"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 
@@ -72,9 +72,9 @@ Teams 可提供共同作業空間，以安全的方式儲存敏感性客戶資�
 
 Microsoft 365 透過將 Microsoft 365 群組作為基礎成員資格服務，為 Teams 提供其他一般原則功能。 這些原則可協助改善共同作業並達到合規性需求。
 
-**Microsoft 365 群組命名原則**能協助確保 Microsoft 365 群組及團隊按照公司原則來命名。 如果名稱不適當，便可能發生問題。 例如，如果名稱不適當，員工可能不知道該與哪些團隊合作或共用資訊。 群組命名原則 (包括支援首碼/尾碼型原則和自訂封鎖文字) 可強制執行良好的語言「衛生」，並防止使用特定字詞，例如保留字或不適當的術語。
+**Microsoft 365 群組命名原則** 能協助確保 Microsoft 365 群組及團隊按照公司原則來命名。 如果名稱不適當，便可能發生問題。 例如，如果名稱不適當，員工可能不知道該與哪些團隊合作或共用資訊。 群組命名原則 (包括支援首碼/尾碼型原則和自訂封鎖文字) 可強制執行良好的語言「衛生」，並防止使用特定字詞，例如保留字或不適當的術語。
   
-**Microsoft 365 群組到期原則**可協助確保 Microsoft 365 群組和團隊的保留期間不超過組織所需的時間。 此功能可協助防止下列兩個重要資訊管理問題：
+**Microsoft 365 群組到期原則** 可協助確保 Microsoft 365 群組和團隊的保留期間不超過組織所需的時間。 此功能可協助防止下列兩個重要資訊管理問題：
 
 * 不需要或不使用的團隊數量劇增。
 * 過度保留組織不再需要或使用的資料 (法務保存措施的情況除外)。
@@ -100,13 +100,13 @@ FINRA 建議的有效做法包括下列各項：
 
 FINRA 的數位通訊調查結果和觀測值與組織遵守 [SEC 細則 17a-4](https://www.law.cornell.edu/cfr/text/17/240.17a-4) 保留所有與業務相關的通訊、FINRA 細則 [3110](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3110) 和 [3120](https://www.finra.org/rules-guidance/rulebooks/finra-rules/3120) 監督及審查通訊，以及 Rule Series [4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4510) 保留記錄直接相關。 美國商品期貨交易委員會 (CFTC) 根據 17 CFR 131 頒布了類似的規定。 本文稍後將深入討論這些法規。
 
-***Teams 和 Microsoft 365 安全性與合規性方案的綜合性套件為金融服務機構提供企業數位通訊頻道，以便有效執行業務並遵守管理法規。*** 本文的其餘部分將說明 Microsoft 365 內建的記錄管理、資訊保護、資訊屏障和監督控制的功能如何為團隊提供強大的工具集，以協助滿足這些法規義務。
+***Teams 和 Microsoft 365 安全性與合規性方案的綜合性套件為金融服務機構提供企業數位通訊管道，以便有效執行業務並遵守管理法規。** _ 本文的其餘部分將說明 Microsoft 365 內建用於記錄管理、資訊保護、資訊屏障和監督控制的功能如何為 Teams 提供穩健的工具集，以協助滿足這些法規義務。
 
 ## <a name="protect-modern-collaboration-with-microsoft-365"></a>使用 Microsoft 365 保護新式共同作業
 
 ### <a name="secure-user-identities-and-control-access"></a>保護使用者身分識別及控制存取權
 
-***保護對客戶資訊，財務文件和應用程式的存取權始於嚴格加強使用者身分識別。*** 企業必須使用安全的平台來儲存及管理身分識別、提供信任的驗證方式，並動態控制這些應用程式的存取權。
+_*_保護對客戶資訊，財務文件和應用程式的存取權始於強化保護使用者身分識別。_*_ 企業必須使用安全的平台來儲存及管理身分識別、提供信任的驗證方式，並動態控制這些應用程式的存取權。
 
 員工工作時，他們可能會在應用程式之間移動，或在多個位置和裝置之間移動。 在此過程的每個步驟中，都必須驗證資料存取權。 驗證程序必須支援強大的通訊協定和多重要素驗證 (例如一次性 SMS 密碼、驗證器應用程式和認證)，以確保身分識別不遭到入侵。 實施風險式存取原則對保護財務資料和應用程式不受測試人員威脅、避免不慎資料洩漏和資料外流至關重要。
 
@@ -124,7 +124,7 @@ Microsoft 365 在 [Azure Active Directory (Azure AD)](https://docs.microsoft.com
 
 密碼是安全鏈中最弱的連結。 如果沒有其他驗證，密碼可能成為單一失敗點。 Microsoft 支援多種驗證選擇，以滿足金融機構的需求。
 
-*無密碼*方法可協助讓 MFA 更方便使用者使用。 並非所有 MFA 都無密碼，而無密碼技術採用多重要素驗證。 Microsoft、Google 及其他業界領袖已共同開發標準，以在稱為 Fast IDentity Online (FIDO) 的群組中實現跨 Web 和行動裝置的更簡單、更強大的驗證體驗。 最新開發的 FIDO2 標準讓使用者無需密碼，即可輕鬆且安全地驗證，以杜絕網路釣魚。
+_無密碼*方法可協助讓 MFA 更方便使用者使用。 並非所有 MFA 都無密碼，而無密碼技術採用多重要素驗證。 Microsoft、Google 及其他業界領袖已共同開發標準，以在稱為 Fast IDentity Online (FIDO) 的群組中實現跨 Web 和行動裝置的更簡單、更強大的驗證體驗。 最新開發的 FIDO2 標準讓使用者無需密碼，即可輕鬆且安全地驗證，以杜絕網路釣魚。
 
 無密碼的 Microsoft MFA 方法包括：
 * [Microsoft Authenticator](https://docs.microsoft.com/azure/active-directory/user-help/user-help-auth-app-overview)：考量靈活性、方便性和成本，我們建議使用 Microsoft Authenticator 行動裝置應用程式。 Microsoft Authenticator 為任何連線至 Azure AD 的應用程式支援生物識別技術、推播通知和一次性密碼。 可從 Apple 和 Android 應用程式市集取得。
@@ -161,8 +161,8 @@ Identity Protection 利用基於啟發學習法、使用者與實體行為分析
 ## <a name="identify-sensitive-data-and-prevent-data-loss"></a>識別敏感性資料並防止資料外洩
 Microsoft 365 讓所有組織都能透過強大的功能組合來識別組織內的敏感性資料，包括：
 
-* **Microsoft 資訊保護 (MIP)**，以使用者為基礎的分類和敏感性資料的自動化分類。
-* **Office 365 資料外洩防護 (DLP)**，以使用敏感性資料類型 (即規則運算式) 和關鍵字和原則強制執行來自動識別敏感性資料。
+* **Microsoft 資訊保護 (MIP)** ，以使用者為基礎的分類和敏感性資料的自動化分類。
+* **Office 365 資料外洩防護 (DLP)** ，以使用敏感性資料類型 (即規則運算式) 和關鍵字和原則強制執行來自動識別敏感性資料。
 
 **[Microsoft 資訊保護 (MIP)](../compliance/protect-information.md)** 可讓組織使用敏感度標籤，聰明地將文件和電子郵件分類。 使用者可以在 Microsoft Office 應用程式的文件和 Outlook 中的電子郵件手動套用敏感度標籤。 標籤可自動套用文件標記、加密保護，以及強制執行版權管理。 還可以透過設定使用關鍵字和敏感性資料類型 (例如信用卡號碼、社會保險號碼和身份證號) 的原則來自動套用敏感度標籤，以自動尋找及分類敏感性資料。
 
@@ -182,18 +182,18 @@ Identity Protection 利用基於啟發學習法、使用者與實體行為分析
 
 ## <a name="defend-the-fortress"></a>堅守堡壘
 
-Microsoft 最近推出了 Microsoft 威脅防護解決方案，旨在使現代組織免受不斷演化的威脅侵害。 透過利用 Intelligent Security Graph，威脅防護解決方案可針對多種攻擊媒介提供全面的整合安全性。
+Microsoft 最近推出 Microsoft 365 Defender 解決方案，旨在保護現代組織免受不斷演進的威脅侵害。 透過利用 Intelligent Security Graph，威脅防護解決方案可針對多種攻擊媒介提供全面的整合安全性。
 
 ### <a name="the-intelligent-security-graph"></a>[Intelligent Security Graph](https://www.microsoft.com/security/business/intelligence) 
 Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為了應對網路威脅，Intelligent Security Graph 使用進階分析來連結來自 Microsoft 及其合作夥伴的威脅情報和安全性信號。 Microsoft 大規模營運全球服務，並收集數以萬億計的安全性信號，以支援堆疊式防護層。 機器學習模型會評估此情報，並在我們的產品和服務中廣泛共用信號和威脅見解。 這可讓我們迅速偵測並回應威脅，並將可採取動作的警報和資訊提供給客戶，以進行修正。 我們的機器學習模型會不斷接受訓練並以新的見解進行更新，協助我們打造更安全的產品，並提供更主動的安全性。
 
-[Office 365 進階威脅防護 (OATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) 提供整合的 Microsoft 365 服務，可保護組織免受透過電子郵件和 Office 文件傳遞的惡意連結和惡意程式碼侵害。 當今影響使用者最常見的攻擊媒介之一是電子郵件網路釣魚攻擊。 這些攻擊可針對特定使用者，而且可能非常具有說服力，並帶有召喚行動，以提示使用者按下惡意連結或開啟含有惡意程式碼的附件。 電腦受到感染後，攻擊者就可以竊取使用者的認證，並在整個組織中移動，或竊取電子郵件和資料以尋找敏感性資訊。 OATP 在點擊時評估文件和連結是否存在潛在惡意意圖並封鎖存取，以支援安全附件和安全連結。 電子郵件附件會在受保護的沙箱中開啟，再傳送到使用者的信箱。 它也會評估 Office 文件中的連結是否為惡意 URL。 OATP 也能保護 SharePoint Online、商務用 OneDrive 及 Teams 中的連結和檔案。 如果偵測到惡意檔案，OATP 會自動鎖定該檔案，以降低潛在的破壞。
+[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) 提供整合的 Microsoft 365 服務，可保護組織免受透過電子郵件和 Office 文件傳遞的惡意連結和惡意程式碼侵害。 當今影響使用者最常見的攻擊媒介之一是電子郵件網路釣魚攻擊。 這些攻擊可針對特定使用者，而且可能非常具有說服力，並帶有召喚行動，以提示使用者按下惡意連結或開啟含有惡意程式碼的附件。 電腦受到感染後，攻擊者就可以竊取使用者的認證，並在整個組織中移動，或竊取電子郵件和資料以尋找敏感性資訊。 適用於 Office 365 的 Defender 會在按一下文件和連結時加以評估，以尋找潛在的惡意意圖並封鎖存取，以支援安全附件和安全連結。 電子郵件附件會在受保護的沙箱中開啟，再傳送到使用者的信箱。 它也會評估 Office 文件中的連結是否為惡意 URL。 適用於 Office 365 的 Defender 也能保護 SharePoint Online、商務用 OneDrive 及 Teams 中的連結和檔案。 如果偵測到惡意檔案，適用於 Office 365 的 Defender 會自動鎖定該檔案，以降低潛在的損壞。
 
-[Microsoft Defender 進階威脅防護 (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是預防保護、入侵後偵測、自動調查及回應的整合式端點安全性平台。 MDATP 提供內建功能，以在企業端點上探索及保護敏感性資料。
+[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 是預防性保護、入侵後偵測、自動調查及回應的整合式端點安全性平台。 適用於端點的 Defender 提供內建功能，以在企業端點上探索及保護敏感性資料。
 
 [Microsoft Cloud App Security (MCAS)](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) 可讓組織以精細的層級強制執行原則，並使用機器學習根據自動定義的個別使用者設定檔來偵測行為異常。 MCAS 原則可建立於 Azure 條件式存取原則，以透過評估與使用者行為和所存取文件的屬性有關的額外信號來保護敏感性公司資產。 一段時間後，MCAS 會了解每位員工在存取資料和使用的應用程式中的典型行為。 根據已知的行為模式，如果的行為超出該行為設定檔，原則便可自動強制執行安全性控制。 例如，如果某位員工通常從星期一至星期五上午 9 點到下午 5 點存取某應用程式，但突然開始在星期天晚上頻繁存取該應用程式，MCAS 可以動態強制執行原則，以要求使用者重新驗證。 這可協助確保使用者的認證不遭到入侵。 MCAS 也可協助識別組織中的「影子 IT」，以協助資訊安全團隊確保員工處理敏感性資料時使用批准的工具。 最後，MCAS 可以保護雲端中任何位置的敏感性資料，甚至是 Microsoft 365 平台以外的資料。 它可讓組織批准 (或取消批准) 特定外部雲端應用程式，並控制存取權及監控使用方式。
  
-[Azure 進階威脅防護 (AATP)](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是利用內部部署 Active Directory 信號的雲端型安全性解決方案，它會識別、偵測及調查貴組織中的進階威脅、遭入侵的身分識別，以及惡意內部攻擊動作。 AATP 可讓 SecOp 分析師和安全性專業人員偵測混合式環境中的進階攻擊，以達到以下目的：
+[適用於身分識別的 Microsoft Defender](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是利用內部部署 Active Directory 訊號的雲端型安全性解決方案，它會識別、偵測及調查貴組織中的進階威脅、遭入侵的身分識別，以及惡意內部攻擊動作。 AATP 可讓 SecOp 分析師和安全性專業人員偵測混合式環境中的進階攻擊，以達到以下目的：
 * 使用學習式分析來監控使用者、實體行為和活動。
 * 保護儲存在 Active Directory 中的使用者身分識別和認證。
 * 識別並調查整個狙殺鍊中的可疑使用者活動和進階攻擊。
@@ -209,7 +209,7 @@ Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為�
  
 金融機構管理大量資料。 而某些保留期間則由事件觸發，例如合約到期或員工離開組織。 在這種情況下，套用記錄保留原則可能會很困難。 在組織文件中正確指派記錄保留期間的方法可能會有所不同。 有些廣泛套用保留原則，或運用自動分類和機器學習技術。 有些則確定一種需要更精細的程序的方法，將保留期間專門指派給個別文件。
 
-***Microsoft 365 提供靈活的功能來定義保留標籤和原則，以聰明實作記錄管理需求。*** 記錄管理員定義保留標籤，該標籤代表傳統保留排程中的「記錄類型」。 保留標籤包含定義這些詳細資料的設定：
+***Microsoft 365 提供靈活的功能來定義保留標籤和原則，以明智地實作記錄管理需求。** _ 記錄管理員可定義保留標籤，其代表傳統保留排程中的「記錄類型」。 保留標籤包含定義這些詳細資料的設定：
 
 - 記錄保留的時間長度
 - 保留期間到期時，會發生什麼情況 (刪除文件、開始處置檢閱或不採取任何動作)。
@@ -217,7 +217,7 @@ Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為�
 
 保留標籤便會發佈到 SharePoint 或 OneDrive 網站、Exchange 信箱和 Microsoft 365 群組。 使用者可以手動將保留標籤套用到文件和電子郵件。 記錄管理員可以使用情報來自動套用標籤。 情報功能可根據[九十多種內建敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) (例如 ABA 匯款路徑編號、美國銀行帳號或美國社會安全號碼)。 也可以根據關鍵字或電子郵件中的敏感性資料 (例如信用卡號碼或其他個人辨識資訊) 或根據 SharePoint 中繼資料來自訂。 針對不容易透過手動或自動模式比對來識別的資料，可訓練的分類器可用於根據機器學習技術聰明分類文件。
  
-**美國證券交易委員會 (SEC)** 要求經紀商/自營商和其他受監管金融機構保留所有業務相關通訊。 這些要求適用於許多類型的通訊和資料，包括電子郵件、文件、立即訊息、傳真等。 **SEC 細則 17a-4** 定義這些組織在電子資料儲存系統中儲存記錄時必須符合的準則。 SEC 在 2003 年發行了闡明這些要求的版本。 其中包括下列準則：
+_ *美國證券交易委員會 (SEC)* * 要求經紀商/自營商和其他受監管金融機構保留所有業務相關通訊。 這些要求適用於許多類型的通訊和資料，包括電子郵件、文件、立即訊息、傳真等。 **SEC 細則 17a-4** 定義這些組織在電子資料儲存系統中儲存記錄時必須符合的準則。 SEC 在 2003 年發行了闡明這些要求的版本。 其中包括下列準則：
 
 * 電子儲存系統保留的資料必須為不可重複寫入且不可抹除。 這稱為 WORM 要求 (單寫多讀)。
 * 在傳票或其他法律命令的情況下，儲存系統必須能夠儲存超出法規要求的保留期間的資料。
@@ -247,7 +247,7 @@ Microsoft 365 的安全性服務是由 Intelligent Security Graph 提供。 為�
  
 若組織需要，Microsoft 將根據要求提供符合 SEC 17a-4 的證明書。
 
-此外，這些功能也可協助 Microsoft 365 符合**美國商品期貨交易委員會** [CFTC 細則 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) 的儲存要求和**美國金融業監管局**的 [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511)。 這些規則共同代表金融機構保留記錄全球最詳盡的指引。
+此外，這些功能也可協助 Microsoft 365 符合 **美國商品期貨交易委員會** [CFTC 細則 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) 的儲存要求和 **美國金融業監管局** 的 [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511)。 這些規則共同代表金融機構保留記錄全球最詳盡的指引。
 
 關於 Microsoft 365 如何符合 SEC 細則 17a-4 和其他法規的其他詳細資訊，請造訪：[評估 Office 365 Exchange Online SEC 細則 17a-4(f) / CFTC 1.31(c)-(d)，Cohasset Associates](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)。
 

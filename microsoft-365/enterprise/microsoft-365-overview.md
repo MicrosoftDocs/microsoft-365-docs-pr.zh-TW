@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 企業版的元件、方案和部署路徑的簡介。
-ms.openlocfilehash: 0cee9752ae21e08831b6a3df856452a7ca6aec71
-ms.sourcegitcommit: 3b1bd8aa1430bc9565743a446bbc27b199f30f73
+ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48655968"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48846961"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -44,7 +44,7 @@ Microsoft 365 企業版提供三個方案。
 |方案名稱|功能|
 |---|---|
 |E3|存取 Microsoft 365 核心產品和功能，以提高工作場所生產力並推動創新。|
-|E5|存取 Microsoft 365 最新產品和功能。 其中包括進階威脅防護、安全性工具和共同作業工具。 此方案包括所有 E3 的功能與進階安全性、語音和資料分析工具。|
+|E5|存取 Microsoft 365 最新產品和功能。 這些包括適用於 Office 365 的 Defender、安全性工具和共同作業工具。 此方案包括所有 E3 的功能與進階安全性、語音和資料分析工具。|
 |F3|透過專門打造的工具和資源與第一線員工交流，他們可以使用這些工具和資源來幫助展現最佳工作成效。|
 |||
 
@@ -83,14 +83,14 @@ Microsoft 365 E3 使用者可以使用這些附加元件來利用 Microsoft 365 
 
 ## <a name="end-of-support-for-windows-7-and-office-2010-clients-and-servers"></a>Windows 7 和 Office 2010 用戶端與伺服器的終止支援
 
-[Windows 7](https://aka.ms/win7upgrade) 已於 **2020 年 1 月 14 日**進入終止支援。
+[Windows 7](https://aka.ms/win7upgrade) 已於 **2020 年 1 月 14 日** 進入終止支援。
 
-這些產品已於 **2020 年 10 月 13 日**進入終止支援：
+這些產品已於 **2020 年 10 月 13 日** 進入終止支援：
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
-[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 將於 **2021 年 4 月 13 日**到達終止支援。
+[SharePoint Server 2010](upgrade-from-sharepoint-2010.md) 將於 **2021 年 4 月 13 日** 到達終止支援。
 
 如需適用於這些產品的升級、移轉和移至雲端選項的視覺摘要，請參閱[終止支援海報](../downloads/Office2010Windows7EndOfSupport.pdf)。
 

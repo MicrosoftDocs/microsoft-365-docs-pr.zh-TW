@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 系統管理員可以透過 Exchange Online Protection （EOP）瞭解新增至郵件的標題欄位。 這些標題欄位可提供訊息及其處理方式的相關資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5617353d291b6c7a98999c831107d8964dba6318
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: d7729915d4e9971c43d39842fcb4e1b93cb4c658
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754465"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48844473"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 的反垃圾郵件標頭
 
@@ -60,7 +60,7 @@ ms.locfileid: "48754465"
 |欄位|描述|
 |---|---|
 |`ARC`|`ARC` 通訊協定含有下列欄位： <ul><li>`AAR`：記錄來自 DMARC 的 **Authentication-results** 標頭的內容。</li><li>`AMS`：包含郵件的加密簽章。</li><li>`AS`：包含郵件標頭的加密簽章。 此欄位含有名為 `"cv="` 的鏈結驗證標籤，其中包含鏈結驗證結果為 **none** 、 **pass** 或 **fail** 。</li></ul>|
-|`CAT:`|郵件所套用的保護原則類別： <ul><li>`BULK`：大量</li><li>`DIMP`：網域模擬</li><li>`GIMP`：[以信箱情報為基礎的模擬](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)</li><li>`HPHSH` 或 `HPHISH`：高信賴度網路釣魚</li><li>`HSPM`：高信賴度垃圾郵件</li><li>`MALW`：惡意程式碼</li><li>`PHSH`：網路釣魚</li><li>`SPM`：垃圾郵件</li><li>`SPOOF`：詐騙</li><li>`UIMP`：使用者模擬</li><li>`AMP`：反惡意程式碼</li><li>`SAP`：安全附件</li><li>`OSPM`：輸出垃圾郵件</li></ul><br/>可以透過多種形式的保護和多次偵測掃描來標記輸入郵件。 原則具有不同的優先次序，將套用優先次序最高的原則。 如需詳細資訊，請參閱[在您的電子郵件上執行多種保護方法和偵測掃描時適用的原則](how-policies-and-protections-are-combined.md)。|
+|`CAT:`|郵件所套用的保護原則類別： <ul><li>`BULK`：大量</li><li>`DIMP`：網域模擬</li><li>`GIMP`：[以信箱情報為基礎的模擬](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` 或 `HPHISH`：高信賴度網路釣魚</li><li>`HSPM`：高信賴度垃圾郵件</li><li>`MALW`：惡意程式碼</li><li>`PHSH`：網路釣魚</li><li>`SPM`：垃圾郵件</li><li>`SPOOF`：詐騙</li><li>`UIMP`：使用者模擬</li><li>`AMP`：反惡意程式碼</li><li>`SAP`：安全附件</li><li>`OSPM`：輸出垃圾郵件</li></ul><br/>可以透過多種形式的保護和多次偵測掃描來標記輸入郵件。 原則具有不同的優先次序，將套用優先次序最高的原則。 如需詳細資訊，請參閱[在您的電子郵件上執行多種保護方法和偵測掃描時適用的原則](how-policies-and-protections-are-combined.md)。|
 |`CIP:[IP address]`|連接的 IP 位址。 您可以在 IP 允許清單或 IP 封鎖清單中使用這個 IP 位址。 如需詳細資訊，請參閱[設定連線篩選](configure-the-connection-filter-policy.md)。|
 |`CTRY`|來源國家/地區是由連線的 IP 位址來判斷，這可能與原始傳送的 IP 位址不同。|
 |`H:[helostring]`|連線電子郵件伺服器的 HELO 或 EHLO 字串。|
@@ -69,7 +69,7 @@ ms.locfileid: "48754465"
 |`LANG`|撰寫郵件所用的語言，如國碼所指定 (例如，ru_RU 代表俄文)。|
 |`PTR:[ReverseDNS]`|來源 IP 位址的 PTR 記錄 (又稱為反向 DNS 查閱)。|
 |`SCL`|郵件的垃圾郵件信賴等級 (SCL)。 此值越高，表示郵件越有可能是垃圾郵件。 如需詳細資訊，請參閱[垃圾郵件信賴等級 (SCL)](spam-confidence-levels.md)。|
-|`SFTY`|郵件已被識別為網路釣魚，並且也會標示為以下其中一個值： <ul><li>9.1：預設值。 郵件包含下列部分或所有元素：網路釣魚 URL、其他網路釣魚內容，或是由內部部署 Exchange 標記為網路釣魚。</li><li>9.11：[組織內部或自我詐騙](anti-spoofing-protection.md#different-types-of-spoofing)。 組織內部詐騙的安全提示會新增至郵件。</li><li>9.19：網域冒充。 傳送端網域嘗試[模擬受保護的網域](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies)。 網域模擬的安全提示會新增至郵件 (如果已啟用)。</li><li>9.20：使用者冒充。 寄件使用者嘗試冒充收件者組織中的使用者，或 ATP 防網路釣魚原則中指定的受保護使用者。 使用者模擬的安全提示會新增至郵件 (如果已啟用)。</li><li>9.21：[跨網域詐騙](anti-spoofing-protection.md#different-types-of-spoofing)。 郵件無法通過反詐騙檢查。 [寄件者] 標頭中的寄者件電子郵件網域未驗證，而且是外部網域。 結合[複合驗證](#authentication-results-message-header-fields)使用。</li><li>9.22：與 9.21 相同，唯一不同的是使用者的安全寄件者遭到覆寫。</li><li>9.23：與 9.22 相同，唯一不同的是組織允許遭到覆寫的寄件者或網域。</li><li>9.24：與 9.23 相同，唯一不同的是使用者的 Exchange 郵件流程規則 (又稱為傳輸規則) 遭到覆寫。</li></ul>|
+|`SFTY`|郵件已被識別為網路釣魚，並且也會標示為以下其中一個值： <ul><li>9.1：預設值。 郵件包含下列部分或所有元素：網路釣魚 URL、其他網路釣魚內容，或是由內部部署 Exchange 標記為網路釣魚。</li><li>9.11：[組織內部或自我詐騙](anti-spoofing-protection.md#different-types-of-spoofing)。 組織內部詐騙的安全提示會新增至郵件。</li><li>9.19：網域冒充。 傳送端網域嘗試[模擬受保護的網域](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)。 網域模擬的安全提示會新增至郵件 (如果已啟用)。</li><li>9.20：使用者冒充。 寄件端使用者嘗試冒充收件者組織中的使用者，或適用於 Office 365 的 Microsoft Defender 防網路釣魚原則中指定的受保護使用者。 使用者模擬的安全提示會新增至郵件 (如果已啟用)。</li><li>9.21：[跨網域詐騙](anti-spoofing-protection.md#different-types-of-spoofing)。 郵件無法通過反詐騙檢查。 [寄件者] 標頭中的寄者件電子郵件網域未驗證，而且是外部網域。 結合[複合驗證](#authentication-results-message-header-fields)使用。</li><li>9.22：與 9.21 相同，唯一不同的是使用者的安全寄件者遭到覆寫。</li><li>9.23：與 9.22 相同，唯一不同的是組織允許遭到覆寫的寄件者或網域。</li><li>9.24：與 9.23 相同，唯一不同的是使用者的 Exchange 郵件流程規則 (又稱為傳輸規則) 遭到覆寫。</li></ul>|
 |`SFV:BLK`|已略過篩選，但封鎖郵件，因為該郵件是從使用者的封鎖寄件者清單上的地址傳送。<br/></br> 如需系統管理員如何管理使用者的封鎖寄件者清單的詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。|
 |`SFV:NSPM`|垃圾郵件篩選已將郵件標示為非垃圾郵件，並將郵件傳送給預期的收件者。|
 |`SFV:SFE`|已略過篩選，但允許郵件，因為該郵件是從使用者的安全寄件者清單上的地址傳送。<br/></br> 如需系統管理員如何管理使用者的安全寄件者清單的詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。|

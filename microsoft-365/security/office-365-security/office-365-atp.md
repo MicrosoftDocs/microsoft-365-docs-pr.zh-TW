@@ -1,5 +1,5 @@
 ---
-title: Office 365 進階威脅防護
+title: 適用於 Office 365 的 Microsoft Defender
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -19,41 +19,41 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Office 365 進階威脅防護包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: 8acf38cc61f2789c407a80200b97269043bab95e
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+description: 適用於 Office 365 的 Microsoft Defender 包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
+ms.openlocfilehash: a822c3ab8e065d9349172731e2081799853be637
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600514"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845777"
 ---
-# <a name="office-365-advanced-threat-protection-atp"></a>Office 365 進階威脅防護（ATP）
+# <a name="microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
 > [!IMPORTANT]
-> 本文適用於擁有 [Office 365 進階威脅防護](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)的企業客戶。 如果您使用 Outlook.com、Microsoft 365 家用版或 Microsoft 365 個人版，並且在尋找 Outlook 中的安全連結或安全附件的相關資訊，請參閱[適用於 Microsoft 365 訂閱者的進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) 的商務客戶。 如果您使用 Outlook.com、Microsoft 365 家用版或 Microsoft 365 個人版，並且在尋找 Outlook 中的安全連結或安全附件的相關資訊，請參閱[適用於 Microsoft 365 訂閱者的進階 Outlook.com 安全性](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
-Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息、連結 (URL) 及共同作業工具所造成的惡意威脅。 ATP 包括：
+適用於 Office 365 的 Microsoft Defender 可保護組織防範由電子郵件訊息、連結 (URL) 及共同作業工具所造成的惡意威脅。 適用於 Office 365 的 Defender 包括：
 
-- **[威脅防護原則](#configure-atp-policies)**：定義威脅防護原則，用來為組織設定適當的保護層級。
+- **[威脅防護原則](#configure-microsoft-defender-for-office-365-policies)** ：定義威脅防護原則，用來為組織設定適當的保護層級。
 
-- **[報告](#view-office-365-atp-reports)**：檢視即時報告來監控組織中 ATP 的效能。
+- **[報告](#view-microsoft-defender-for-office-365-reports)** ：檢視即時報告來監控組織中適用於 Office 365 的 Defender 的效能。
 
-- **[威脅調查與回應功能](#use-threat-investigation-and-response-capabilities)**：使用先進的工具來調查、了解、模擬以及防止潛在威脅。
+- **[威脅調查與回應功能](#use-threat-investigation-and-response-capabilities)** ：使用先進的工具來調查、了解、模擬以及防止潛在威脅。
 
-- **[自動化調查及回應功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)**：節省調查和減輕威脅的時間和精力。
+- **[自動化調查及回應功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)** ：節省調查和減輕威脅的時間和精力。
 
 ## <a name="getting-started"></a>快速入門
 
-如果您剛開始使用 Office 365 進階威脅防護，或欲透過*實際操作* 來瞭解，則您可以使用本文作為參考資料，將初始 ATP 設定分成區塊、調查和查看報告，並從中受益。 以下是邏輯早期設定區塊:
+如果您剛開始使用適用於 Office 365 的 Microsoft Defender，或欲透過 *實際操作* 來了解，則您可以使用本文作為參考資料，將初始適用於 Office 365 的 Microsoft Defender 設定分成區塊、調查和檢視報告而從中受益。 以下是邏輯早期設定區塊:
 
-- 設定名稱中含有「*反*」的所有專案。
+- 設定名稱中含有「 *反* 」的所有專案。
     - 反惡意軟體
     - 反網路釣魚
     - 反垃圾郵件
-- 設定名稱中含有「*安全*」的所有專案。
+- 設定名稱中含有「 *安全* 」的所有專案。
     - 安全連結
     - 安全附件
 - 保護工作負載 (例如: SharePoint Online、OneDrive 和 Teams) 
@@ -62,51 +62,51 @@ Office 365 進階威脅防護 (ATP) 可保護組織防範由電子郵件訊息�
 若要透過實際操作來瞭解，請 [按一下這個連結](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide&preserve-view=true)。 
 
 > [!NOTE]
-> ATP 包含兩個不同的 [方案] 類型。 如果您有「即時偵測」，則您具有 **方案 1** ，而如果你有「威脅瀏覽器」，則您具有 **方案 2**。 您所看到的 [方案] 會影響您能看到的工具，因此請確定您瞭解您的 [方案]。
+> 適用於 Office 365 的 Microsoft Defender 有兩種不同類型的方案。 如果您有「即時偵測」，則您具有 **方案 1** ，而如果你有「威脅瀏覽器」，則您具有 **方案 2** 。 您所看到的 [方案] 會影響您能看到的工具，因此請確定您瞭解您的 [方案]。
 
-## <a name="office-365-atp-plan-1-and-plan-2"></a>Office 365 ATP 方案 1 與方案 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2
 
 下表摘要列出每個方案所包含的內容。
 
 ****
 
-|Office 365 ATP 方案 1|Office 365 ATP 方案 2|
+|適用於 Office 365 的 Microsoft Defender 方案 1|適用於 Office 365 的 Microsoft Defender 方案 2|
 |---|---|
-|<br/>設定、保護和偵測功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全連結](atp-safe-links.md)</li><li>[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)</li><li>[ATP 防網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)</li><li>[即時偵測](threat-explorer.md)</li></ul>|Office 365 ATP 方案 1 功能<br/>--- 以及 ---<br/>自動化、調查、補救和教育功能：</li><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[攻擊模擬器](attack-simulator.md)</li></ul>|
+|<br/>設定、保護和偵測功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全連結](atp-safe-links.md)</li><li>[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)</li><li>[適用於 Office 365 的 Defender 中的反網路釣魚防護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[即時偵測](threat-explorer.md)</li></ul>|適用於 Office 365 的 Microsoft Defender 方案 1 的功能<br/>--- 以及 ---<br/>自動化、調查、補救和教育功能：</li><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)</li><li>[攻擊模擬器](attack-simulator.md)</li></ul>|
 |
 
-- Office 365 E5、Office 365 A5、Microsoft 365 E5 安全性和 Microsoft 365 E5 中皆含有 Office 365 ATP 方案2。
+- 適用於 Office 365 的 Microsoft Defender 方案 2 隨附於 Office 365 E5、Office 365 A5、Microsoft 365 E5 安全性和 Microsoft 365 E5。
 
-- Office 365 ATP 方案 1 包含在 Microsoft 365 商務進階版中。
+- 適用於 Office 365 的 Microsoft Defender 方案 1 隨附於 Microsoft 365 商務進階版。
 
-- Office 365 ATP 方案 1 和 Office 365 ATP 方案 2 各以某些訂閱附加元件的形式提供使用。 若要深入了解，請參閱 [ATP 方案中功能的可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
+- 適用於 Office 365 的 Microsoft Defender 方案 1 和適用於 Office 365 的 Microsoft Defender 方案 2 均以附加元件形式為特定訂閱提供。 若要深入了解，請參閱[適用於 Office 365 的 Microsoft Defender 方案的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)。
 
-- 只有 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權的使用者才能使用[安全文件](safe-docs.md)功能 (不包含在 Office 365 ATP 方案中)。
+- [安全文件](safe-docs.md)功能僅可供具備 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權 (未包含在適用於 Office 365 的 Microsoft Defender 方案中) 的使用者使用。
 
-- 如果您目前的訂閱未包含 Office 365 ATP，請[與銷售人員連絡以開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，並了解 ATP 如何能幫助您的組織。
+- 如果您目前的訂閱未包含適用於 Office 365 的 Microsoft Defender，請[與銷售人員連絡以開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)，並了解適用於 Office 365 的 Defender 如何能幫助您的組織。
 
-## <a name="configure-atp-policies"></a>設定 ATP 原則
+## <a name="configure-microsoft-defender-for-office-365-policies"></a>設定適用於 Office 365 的 Microsoft Defender 原則
 
-有了 Office 365 ATP，貴組織的安全性小組就能在安全性與合規性中心中定義原則來設定防護 (請移至[https://protection.office.com](https://protection.office.com)  >  [威脅管理]****  >  [原則]****。)
+有了適用於 Office 365 的 Microsoft Defender，組織的安全性小組就能在安全性與合規性中心中定義原則來設定防護 (移至 [https://protection.office.com](https://protection.office.com) > **威脅管理** > **原則** 。)
 
 > [!TIP]
 > 如需定義的原則快速清單，請參閱[防範威脅](protect-against-threats.md)。
 
-## <a name="advanced-threat-protection-policies"></a>進階威脅防護原則
+## <a name="defender-for-office-365-policies"></a>適用於 Office 365 的 Defender 原則
 
 為您組織定義的原則會決定預先定義之威脅的行為和保護層級。 原則選項極具彈性。 例如，組織的安全性小組也可以在使用者、組織、收件者和網域層級設定微調的威脅防護。 因為新威脅及挑戰每天都會出現，請務必定期檢閱您的原則。
 
-- **[安全附件](atp-safe-attachments.md)**：透過檢查電子郵件附件中的惡意內容，提供零時差保護，以保護您的郵件系統。 它會將沒有病毒/惡意程式碼簽章的所有郵件與附件路由傳送至特殊的環境，然後使用機器學習和分析技術來偵測惡意意圖。 如果找不到任何可疑的活動，便會將郵件轉寄到信箱。 若要深入了解，請參閱[設定安全附件原則](set-up-atp-safe-attachments-policies.md)。
+- **[安全附件](atp-safe-attachments.md)** ：透過檢查電子郵件附件中的惡意內容，提供零時差保護，以保護您的郵件系統。 它會將沒有病毒/惡意程式碼簽章的所有郵件與附件路由傳送至特殊的環境，然後使用機器學習和分析技術來偵測惡意意圖。 如果找不到任何可疑的活動，便會將郵件轉寄到信箱。 若要深入了解，請參閱[設定安全附件原則](set-up-atp-safe-attachments-policies.md)。
 
-- **[安全連結](atp-safe-links.md)**：提供 URL 的點擊時驗證 (例如在電子郵件訊息和 Office 檔案中)。 保護會持續進行，並在您郵件和 Office 環境間套用。 每次按一下連結時掃描：安全連結仍保持可存取，並且以動態方式封鎖惡意連結。 若要深入了解，請參閱[設定安全連結原則](set-up-atp-safe-links-policies.md)。
+- **[安全連結](atp-safe-links.md)** ：提供 URL 的點擊時驗證 (例如在電子郵件訊息和 Office 檔案中)。 保護會持續進行，並在您郵件和 Office 環境間套用。 每次按一下連結時掃描：安全連結仍保持可存取，並且以動態方式封鎖惡意連結。 若要深入了解，請參閱[設定安全連結原則](set-up-atp-safe-links-policies.md)。
 
-- **[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)**：透過找出並封鎖小組網站和文件庫中的惡意檔案，在使用者共同作業及共用檔案時保護您的組織。 若要深入了解，請參閱[為 SharePoint、OneDrive 和 Microsoft Teams 開啟 Office 365 ATP](turn-on-atp-for-spo-odb-and-teams.md)。
+- **[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)** ：透過找出並封鎖小組網站和文件庫中的惡意檔案，在使用者共同作業及共用檔案時保護您的組織。 若要深入了解，請參閱[為 SharePoint、OneDrive 和 Microsoft Teams 開啟適用於 Office 365 的 Defender](turn-on-atp-for-spo-odb-and-teams.md)。
 
-- **[ATP 防網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)**：偵測模擬使用者和內部或自訂網域的嘗試。 適用於電腦學習模型和進階模擬偵測演算法，以避免網路釣魚攻擊。 若要深入了解，請參閱[在 Office 365 中設定 ATP 防網路釣魚原則](configure-atp-anti-phishing-policies.md)。
+- **[適用於 Office 365 的 Defender 中的防網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)** ：偵測模擬使用者和內部或自訂網域的嘗試。 適用於電腦學習模型和進階模擬偵測演算法，以避免網路釣魚攻擊。 若要深入了解，請參閱[在適用於 Office 365 的 Microsoft Defender 中設定防網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
-## <a name="view-office-365-atp-reports"></a>查看 Office 365 ATP 報告
+## <a name="view-microsoft-defender-for-office-365-reports"></a>檢視適用於 Office 365 的 Microsoft Defender 報告
 
-Office 365 ATP 包含進階的[報告儀表板](view-reports-for-atp.md)以監控 ATP 效能。 您可以在安全性與合規性中心的 [報告] **** >  [儀表板]**** 存取它。
+適用於 Office 365 的 Microsoft Defender 包括進階[報告儀表板](view-reports-for-atp.md)，用來監視您的 Office 365 效能。 您可以在安全性與合規性中心的 [報告]  >  [儀表板] 存取它。
 
 報告會即時更新，提供您最新的深入解析。 這些報告也提供建議並警示您即將發生的潛在威脅。 預先定義的報告包括下列：
 
@@ -114,15 +114,15 @@ Office 365 ATP 包含進階的[報告儀表板](view-reports-for-atp.md)以監�
 
 - [威脅防護狀態報告](view-reports-for-atp.md#threat-protection-status-report)
 
-- [進階威脅防護檔案類型報告](view-reports-for-atp.md#advanced-threat-protection-file-types-report)
+- [適用於 Office 365 的 Defender 檔案類型報告](view-reports-for-atp.md#defender-for-office-365-file-types-report)
 
-- [進階威脅防護郵件處置報告](view-reports-for-atp.md#advanced-threat-protection-message-disposition-report)
+- [適用於 Office 365 的 Defender 郵件處置報告](view-reports-for-atp.md#defender-for-office-365-message-disposition-report)
 
 - ... 還有更多功能。
 
 ## <a name="use-threat-investigation-and-response-capabilities"></a>使用威脅調查及回應功能
 
-Office 365 ATP 方案 2 中包含業界最佳[威脅調查及回應工具](office-365-ti.md)，可讓組織的安全性小組預期、了解和防止惡意攻擊。
+適用於 Office 365 的 Microsoft Defender 方案 2 包含業界最佳[威脅調查及回應工具](office-365-ti.md)，可讓組織的安全性小組預期、了解和防止惡意攻擊。
 
 - **[威脅追蹤工具](threat-trackers.md)** 提供有關戰勝網路安全性問題的最新情報。 例如，您可以檢視有關最新惡意程式碼的資訊，並在它成為組織的實際威脅之前便採取措施。 可用的追蹤器包括：[值得注意的追蹤器](threat-trackers.md#noteworthy-trackers)、[趨勢追蹤器](threat-trackers.md#trending-trackers)、[追蹤的查詢](threat-trackers.md#tracked-queries)和[已儲存的查詢](threat-trackers.md#saved-queries)。
 
@@ -132,11 +132,11 @@ Office 365 ATP 方案 2 中包含業界最佳[威脅調查及回應工具](offic
 
 ## <a name="save-time-with-automated-investigation-and-response"></a>利用自動調查及回應節省時間
 
-(**新增！**) 調查潛在的網路攻擊時，時間是關鍵。 愈快找出並減輕威脅，您組織的處境會愈好。 [自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) 功能包含一組可以自動啟動 (例如當警示觸發時) 或手動啟動 (例如從檔案總管中的檢視) 的安全性劇本。 AIR 可以在緩和威脅方面有效也有效率地節省您安全性作業小組的時間和精力。 若要深入了解，請參閱 [Office 365 中的AIR](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。
+( **新增！** ) 調查潛在的網路攻擊時，時間是關鍵。 愈快找出並減輕威脅，您組織的處境會愈好。 [自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) (AIR) 功能包含一組可以自動啟動 (例如當警示觸發時) 或手動啟動 (例如從檔案總管中的檢視) 的安全性劇本。 AIR 可以在緩和威脅方面有效也有效率地節省您安全性作業小組的時間和精力。 若要深入了解，請參閱 [Office 365 中的AIR](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)。
 
-## <a name="permissions-required-to-use-atp-features"></a>使用 ATP 功能所需的權限
+## <a name="permissions-required-to-use-microsoft-defender-for-office-365-features"></a>使用適用於 Office 365 的 Microsoft Defender 功能所需的權限
 
-若要存取安全性與合規性中心的 ATP 功能，您必須獲指派適當的角色。 下表包括一些範例：
+若要在安全性與合規性中心存取適用於 Office 365 的 Microsoft Defender 功能，您必須獲指派適當的角色。 下表包括一些範例：
 
 |角色或角色群組|可深入了解的資源|
 |---|---|
@@ -147,28 +147,28 @@ Office 365 ATP 方案 2 中包含業界最佳[威脅調查及回應工具](offic
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-## <a name="get-office-365-atp"></a>取得 Office 365 ATP
+## <a name="get-microsoft-defender-for-office-365"></a>取得適用於 Office 365 的 Microsoft Defender
 
-Office 365 ATP 包含在某些訂閱中，例如 Microsoft 365 E5、Office 365 E5、Office 365 A5 和 Microsoft 365 商務進階版。 如果您的訂閱不包含 Office 365 ATP，您可以以附加元件形式為特定訂閱購買 ATP 方案 1 或 ATP 方案 2。 若要深入了解，請參閱下列資源：
+適用於 Office 365 的 Microsoft Defender 包含在某些訂閱中，例如 Microsoft 365 E5、Office 365 E5、Office 365 A5 和 Microsoft 365 商務進階版。 如果您的訂閱不包含適用於 Office 365 的 Defender，您可以購買適用於 Office 365 的 Defender 方案 1 或適用於 Office 365 的 Defender 方案 2 做為特定訂閱的附加元件。 若要深入了解，請參閱下列資源：
 
-- [Office 365 進階威脅防護 (ATP) 可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)，以取得包含 ATP 方案的訂閱清單。
+- [適用於 Office 365 的 Microsoft Defender 可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability)，可取得包含適用於 Office 365 的 Defender 方案的訂閱清單。
 
-- [各進階威脅防護 (ATP) 計劃中可用的功能](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)，以取得方案 1 和 2 中包含的功能清單。
+- [適用於 Office 365 的 Microsoft Defender 方案的功能可用性](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)，可取得方案 1 和 2 中包含的功能清單。
 
-- [取得適合的 Office 365 進階威脅防護](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content)，以比較方案及購買 Office 365 ATP。
+- [取得合適的適用於 Office 365 的 Microsoft Defender](https://products.office.com/exchange/advance-threat-protection#pmg-allup-content)，可比較方案並購買適用於 Office 365 的 Defender。
 
 - [開始免費試用](https://go.microsoft.com/fwlink/p/?LinkID=698279)
 
-## <a name="new-features-in-office-365-atp"></a>Office 365 ATP 中的新功能
+## <a name="new-features-in-microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender 中的新功能
 
-新功能會持續新增至 Office 365 ATP。 若要深入了解，請參閱下列資源：
+我們會持續將新功能新增至適用於 Office 365 的 Microsoft Defender。 若要深入了解，請參閱下列資源：
 
 - [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)提供開發中和正在推出的新功能清單。
 
-- [Office 365 進階威脅防護服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)描述各 ATP 方案的功能和可用性。
+- [適用於 Office 365 的 Microsoft Defender 服務描述](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)會描述適用於 Office 365 的 Defender 方案的功能與可用性。
 
 ## <a name="see-also"></a>另請參閱
 
-- [Microsoft 威脅防護](../mtp/microsoft-threat-protection.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-- [Microsoft 威脅防護中的自動化調查及回應 (AIR)](../mtp/mtp-autoir.md)
+- [Microsoft 365 Defender 中的自動化調查及回應 (AIR)](../mtp/mtp-autoir.md)

@@ -266,6 +266,8 @@
           href: dlp-sensitivity-label-as-condition.md
         - name: 針對非 Microsoft 雲端應用程式使用資料外洩防護原則
           href: dlp-use-policies-non-microsoft-cloud-apps.md
+        - name: DLP 原則條件和例外 (預覽)
+          href: dlp-conditions-and-exceptions.md
 - name: 管理資訊控管
   items:
     - name: 監管您的資料
