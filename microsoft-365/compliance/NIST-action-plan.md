@@ -15,12 +15,12 @@ audience: itpro
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7b1f577cc17a1d8337441ddc13e079495d41c649
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 24c3199847f412600e7d11e863a987d409c22f50
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398502"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48843423"
 ---
 # <a name="microsoft-365-nist-800-53-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 NIST 800-53 行動計畫 — 前 30 天、90 天及過後的首要工作
 
@@ -38,7 +38,7 @@ Microsoft 被視為雲端安全性中的業界領導者。使用多年建置企�
 |:-----|:-----|
 |**階段**|**結果**|
 |30 天|*   了解您的 NIST 800-53 需求，並且考慮與 Microsoft 諮詢合作夥伴配合。<br>*   學習並了解 Microsoft 365 內建的深度防禦策略。  <br>*   保護使用者和系統管理員的 Office 365 存取權限。 <br>*   確定所有系統的存取權都可根據貴組織的稽核與責任原則進行稽核。|
-|90 天|*   加強反惡意程式碼、修補和設定管理計劃。<br>*   使用 Microsoft 365 安全性功能來控制對環境的存取，以及保護組織資訊和資產。<br>*   使用內建的稽核功能來監視 Office 365 內的機密或風險活動。<br>*   針對電子郵件和 Office 文件中的連結和附件部署進階威脅防護。|
+|90 天|*   加強反惡意程式碼、修補和設定管理計劃。<br>*   使用 Microsoft 365 安全性功能來控制對環境的存取，以及保護組織資訊和資產。<br>*   使用內建的稽核功能來監視 Office 365 內的敏感性或風險活動。<br>*   針對電子郵件和 Office 文件中的連結和附件部署適用於 Office 365 的 Defender。|
 |超過 90 天|*   使用 Microsoft 365 進階工具和資訊保護來實作裝置的進行中控制措施及公司資料保護。<br>*   在 Microsoft 365 及其他 Cloud 應用程式之間監視持續合規性。  <br>*   使用改良的威脅偵測和防護功能搭配進階的威脅分析為組織提供強大的層級式安全性策略。開發事件回應計劃以減少貴組織中遭入侵系統的影響。|
 
 ## <a name="30-days--powerful-quick-wins"></a>30 天 — 強力快速致勝
@@ -61,9 +61,9 @@ Microsoft 被視為雲端安全性中的業界領導者。使用多年建置企�
 |:-----|:-----|
 |**適用範圍**|**工作**|
 |加強反惡意程式碼、修補和設定管理計劃。|•   保護公司資產和電腦，方法是部署和啟用 [Windows Defender 防毒軟體](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/deploy-windows-defender-antivirus) 至組織及使用其與 Windows 10 的緊密整合。<br>•   追蹤隔離受感染的系統並避免進一步的損毀，直到採取補救步驟為止。<br>•   充滿自信地仰賴 Microsoft 365 嚴格的標準變更管理程序以取得受信任的更新、Hotfix 和修補程式。|
-|使用 Microsoft 365 安全性功能來控制對環境的存取，以及保護組織資訊和資產。|•   實作[建議的身分識別與裝置的存取原則](../security/office-365-security/microsoft-365-policies-configurations.md) 來保護使用者和系統管理員帳戶。 <br>• 實作 [Office 365 郵件加密 (OME)](ome.md) 功能，協助使用者在透過電子郵件傳送機密資料時，符合貴組織的原則。<br>•   將 [Windows Defender 進階威脅防護 (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 部署至所有桌上型電腦以防範惡意程式碼，以及資料外洩防護和回應。<br>•  設定、測試和部署原則，以識別，監視和[自動保護](apply-protection-to-personal-data-in-office-365.md)文件和電子郵件中，80 多種常見的敏感資料類型，包括財務、醫療和個人身分資訊。<br>•   藉由設定[原則提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)，自動向電子郵件寄件者通知，他們即將違反您的其中一個原則 — 即使在他們傳送違規郵件之前。原則提示可以設定為顯示簡短通知 (在 Outlook、Outlook 網頁版及適用於裝置的 OWA 上)，在建立郵件期間提供可能的原則違規資訊。<br>• 保護企業的機密資料並符合貴組織的資訊共用原則，方法是實作[在 SharePoint Online 和商務用 OneDrive 中外部共用](https://docs.microsoft.com/onedrive/manage-sharing) 的控制措施。確定只有已驗證的外部使用者可以存取公司資料。|
+|使用 Microsoft 365 安全性功能來控制對環境的存取，以及保護組織資訊和資產。|•   實作[建議的身分識別與裝置的存取原則](../security/office-365-security/microsoft-365-policies-configurations.md) 來保護使用者和系統管理員帳戶。 <br>• 實作 [Office 365 郵件加密 (OME)](ome.md) 功能，協助使用者在透過電子郵件傳送敏感性資料時，符合貴組織的原則。<br>•   將[適用於端點的 Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (部分機器翻譯) 部署至所有桌上型電腦以防範惡意程式碼，以及資料外洩防護和回應。<br>•  設定、測試和部署原則，以識別，監視和[自動保護](apply-protection-to-personal-data-in-office-365.md)文件和電子郵件中，80 多種常見的敏感性資料類型，包括財務、醫療和個人識別資訊。<br>•   藉由設定[原則提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)，自動向電子郵件寄件者通知，他們即將違反您的其中一個原則 — 即使在他們傳送違規郵件之前。原則提示可以設定為顯示簡短通知 (在 Outlook、Outlook 網頁版及適用於裝置的 OWA 上)，在建立郵件期間提供可能的原則違規資訊。<br>• 保護企業的機密資料並符合貴組織的資訊共用原則，方法是實作[在 SharePoint Online 和商務用 OneDrive 中外部共用](https://docs.microsoft.com/onedrive/manage-sharing) 的控制措施。確定只有已驗證的外部使用者可以存取公司資料。|
 |使用內建的稽核功能來監視 Office 365 內的機密或風險活動。|•   啟用 Microsoft 365 安全性或合規性中心內的[警示原則](alert-policies.md)，以在發生機密的活動 (例如當使用者的帳戶權限提高或當存取機密資料時) 時發出自動通知。 所有特殊權限功能都必須經過稽核及監視。<br>•  在安全性或合規性中心定期[搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)，以檢閱對租用戶組態設定所做的變更。<br>• 針對長期儲存稽核記錄資料，使用 Office 365 管理活動 API 參考以與安全性資訊和事件管理 (SIEM) 工具整合。|
-|針對電子郵件和 Office 文件中的連結和附件部署進階威脅防護。|實作 [Office 365 進階威脅防護 (ATP)](/security/office-365-security/office-365-atp)，協助防範最常見的攻擊，包括網路釣魚電子郵件和包含惡意連結和附件的 Office 文件。|
+|針對電子郵件和 Office 文件中的連結和附件部署適用於 Office 365 的 Defender。|實作[適用於 Office 365 的 Microsoft Defender](/security/office-365-security/office-365-atp)，協助防範最常見的攻擊，包括網路釣魚電子郵件和包含惡意連結和附件的 Office 文件。|
 |||
 
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>超過 90 天 – 持續的安全性、資料控管及報告
@@ -75,7 +75,7 @@ Microsoft 被視為雲端安全性中的業界領導者。使用多年建置企�
 |**適用範圍**|**工作**|
 |使用 Microsoft 365 進階工具和資訊保護來實作裝置的進行中控制措施及公司資料保護。|*   使用 [Microsoft Intune](https://docs.microsoft.com/intune/) 保護在行動裝置上儲存及存取的機密資料，並且確保對存取雲端服務使用符合公司規範的裝置。|
 |在 Microsoft 365 及其他 Cloud 應用程式之間監視持續合規性。|*   若要根據組織定義的原則和程序評估效能，請持續使用[合規性管理員](compliance-manager.md)，針對組織強制執行的資訊安全性原則執行定期評估。<br>*   使用 [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)，以高階權限 (例如，特殊權限或系統管理員使用者) 控制及執行所有使用者和群組的定期檢閱。<br>*   部署和設定[特殊權限的存取管理](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-overview)，對 Office 365 中特殊權限的系統管理工作提供細微的存取控制。  一旦啟用，使用者必須要求即時存取，透過範圍與時間高度受到限制的核准工作流程，完成提升權限和授與特殊權限的工作。<br>*   稽核[非擁有者信箱存取](https://docs.microsoft.com/Exchange/policy-and-compliance/non-owner-mailbox-access-reports) 以識別潛在的資訊外洩，以及主動檢閱所有 Exchange Online 信箱上的非擁有者存取。<br>*   使用 [Office 365 警示原則、資料外洩防護報告和 Microsoft Cloud App Security](https://docs.microsoft.com/Office365/SecurityCompliance/monitor-for-leaks-of-personal-data)，來監視貴組織的雲端應用程式使用方式，並且根據啟發學習法和使用者活動實作進階警示原則。<br>*   使用 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) 自動追蹤有風險的活動，以識別潛在惡意系統管理員、調查資料外洩，或確認是否符合要求的合規性。|
-|利用改良的威脅偵測和防護功能搭配進階的威脅分析為組織提供強大的層級式安全性策略。開發事件回應計劃以減少貴組織中遭入侵系統的影響。|*   部署及設定 [Windows 進階威脅分析](https://docs.microsoft.com/advanced-threat-analytics/)以運用豐富的分析和報告，來深入解析貴組織中的哪些使用者是攻擊目標，以及所利用的網路攻擊方法。<br>*   利用 [Office 365 進階威脅防護報告和分析](/security/office-365-security/view-reports-for-atp.md) 透過在貴組織內自動偵測到的惡意內容及惡意電子郵件的深入見解來分析威脅。利用內建報告與訊息追蹤功能來調查因未知病毒或惡意程式碼而遭到封鎖的電子郵件訊息。<br>*   使用 [Office 365 威脅情報](/security/office-365-security/office-365-ti.md)來彙總各種來源的見解和資訊，以取得您雲端安全性情況的完整檢視。<br>*    [整合 Office 365 威脅情報和 Windows Defender 進階威脅防護](/security/office-365-security/integrate-office-365-ti-with-wdatp.md)以在調查 Office 365 中的威脅時，快速了解使用者的裝置是否處於風險。<br>*   使用 [Office 365 攻擊模擬器](/security/office-365-security/attack-simulator.md)來模擬在 Office 365 環境內常見的攻擊方法。  檢閱攻擊模擬中的結果以找出使用者的訓練機會，並驗證組織的事件回應程序。<br>*   設定[安全性或合規性中心內的權限](/security/office-365-security/permissions-in-the-security-and-compliance-center.md)，以確保監視與稽核資料的存取權僅限於核准的使用者，且與組織的事件回應措施整合。|
+|利用改良的威脅偵測和防護功能搭配進階的威脅分析為組織提供強大的層級式安全性策略。開發事件回應計劃以減少貴組織中遭入侵系統的影響。|*   部署及設定 [Windows 進階威脅分析](https://docs.microsoft.com/advanced-threat-analytics/) (部分機器翻譯) 以運用豐富的分析和報告，來深入解析貴組織中的哪些使用者是攻擊目標，以及所利用的網路攻擊方法。<br>*   利用[適用於 Office 365 的 Defender 報告和分析](/security/office-365-security/view-reports-for-atp.md)，透過在貴組織內自動偵測到的惡意內容及惡意電子郵件的深入見解來分析威脅。利用內建報告與訊息追蹤功能，來調查因未知病毒或惡意程式碼而遭到封鎖的電子郵件訊息。<br>*   使用 [Office 365 威脅情報](/security/office-365-security/office-365-ti.md)來彙總各種來源的見解和資訊，以取得您雲端安全性情況的完整檢視。<br>*    [整合 Office 365 威脅情報和適用於端點的 Windows Defender](/security/office-365-security/integrate-office-365-ti-with-wdatp.md) 以在調查 Office 365 中的威脅時，快速了解使用者的裝置是否處於風險。<br>*   使用 [Office 365 攻擊模擬器](/security/office-365-security/attack-simulator.md)來模擬在 Office 365 環境內常見的攻擊方法。  檢閱攻擊模擬中的結果以找出使用者的訓練機會，並驗證組織的事件回應程序。<br>*   設定[安全性或合規性中心內的權限](/security/office-365-security/permissions-in-the-security-and-compliance-center.md)，以確保監視與稽核資料的存取權僅限於核准的使用者，且與組織的事件回應措施整合。|
 |||
 
 ## <a name="learn-more"></a>深入了解

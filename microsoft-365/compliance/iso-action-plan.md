@@ -14,12 +14,12 @@ audience: itpro
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f2aeb7bd56b81427a184a051e1dc11ba3a3ec932
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 49774f9ac3bbc422ddd60f123477d0e144cb3dce
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791947"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48845179"
 ---
 # <a name="microsoft-365-iso-27001-action-plan--top-priorities-for-your-first-30-days-90-days-and-beyond"></a>Microsoft 365 ISO 27001 行動計畫 — 前 30 天、90 天及過後的首要工作
 
@@ -59,7 +59,7 @@ ISO/IEC 27001 是用來實作資訊安全性管理系統 (ISMS) 的國際標準�
 |||
 |:-----|:-----|
 |**適用範圍**|**工作**|
-|使用 Microsoft 365 安全性功能來控制對環境的存取，以及根據您定義的標準作業程序 (SOP)，保護組織資訊和資產。|• 藉由實作[身分識別與裝置存取原則](../security/office-365-security/microsoft-365-policies-configurations.md) (部分機器翻譯) 來保護系統管理員和使用者帳戶，包括針對所有使用者帳戶啟用多重要素驗證 (MFA)，針對所有應用程式啟用新式驗證。<br>• 建立[強式密碼原則](https://www.microsoft.com/research/publication/password-guidance) (英文)，以管理與保護使用者帳戶認證。<br>• 設定 [Office 365 郵件加密 (OME)](https://docs.microsoft.com/microsoft-365/compliance/ome)，協助使用者在透過電子郵件傳送機密資料時，符合組織的 SOP。<br>• 將 [Windows Defender 進階威脅防護 (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) 部署至所有桌上型電腦以防範惡意程式碼，以及資料外洩防護和回應。<br>• 設定、測試及部署[資料外洩防護 (DLP) 原則](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) (部分機器翻譯)，以在文件和電子郵件內識別、監視及[自動保護](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365)超過 80 個常見的敏感性資料類型，包括財務、醫療及個人識別資訊。<br>• 藉由設定[原則提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips) (部分機器翻譯)，在電子郵件寄件者寄送違規郵件之前，通知他們可能會違反您的其中一項原則。 在 Outlook、Outlook 網頁版和適用於裝置的 OWA 中可以將原則提示設定為呈現簡短的通知，在建立郵件期間提供可能的原則違規資訊。<br>• 實作 [Office 365 進階威脅防護 (ATP)](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (部分機器翻譯)，協助防範最常見的攻擊，包括網路釣魚電子郵件和包含惡意連結和附件的 Office 文件。|
+|使用 Microsoft 365 安全性功能來控制對環境的存取，以及根據您定義的標準作業程序 (SOP)，保護組織資訊和資產。|• 藉由實作[身分識別與裝置存取原則](../security/office-365-security/microsoft-365-policies-configurations.md) (部分機器翻譯) 來保護系統管理員和使用者帳戶，包括針對所有使用者帳戶啟用多重要素驗證 (MFA)，針對所有應用程式啟用新式驗證。<br>• 建立[強式密碼原則](https://www.microsoft.com/research/publication/password-guidance) (英文)，以管理與保護使用者帳戶認證。<br>• 設定 [Office 365 郵件加密 (OME)](https://docs.microsoft.com/microsoft-365/compliance/ome) (部分機器翻譯)，協助使用者在透過電子郵件傳送敏感性資料時，符合貴組織的 SOP。<br>• 將[適用於端點的 Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) (部分機器翻譯) 部署至所有桌上型電腦以防範惡意程式碼，以及資料外洩防護和回應。<br>• 設定、測試及部署[資料外洩防護 (DLP) 原則](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/data-loss-prevention) (部分機器翻譯)，以在文件和電子郵件內識別、監視及[自動保護](https://docs.microsoft.com/microsoft-365/compliance/apply-protection-to-personal-data-in-office-365) 超過 80 個常見的敏感性資料類型，包括財務、醫療及個人識別資訊。<br>• 藉由設定[原則提示](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips) (部分機器翻譯)，在電子郵件寄件者寄送違規郵件之前，自動通知他們可能會違反您的其中一項原則。 在 Outlook、Outlook 網頁版和適用於裝置的 OWA 中可以將原則提示設定為呈現簡短的通知，在建立郵件期間提供可能的原則違規資訊。<br>• 實作[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，協助防範最常見的攻擊，包括網路釣魚電子郵件和包含惡意連結和附件的 Office 文件。|
 
 
 ## <a name="beyond-90-days--ongoing-security-data-governance-and-reporting"></a>超過 90 天 - 持續的安全性、資料控管及報告
