@@ -19,6 +19,7 @@ ms.custom:
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -27,27 +28,27 @@ search.appverid:
 - ODB150
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
-description: 瞭解如何使用 OneDrive 和小組網站進行檔案儲存與共享。
-ms.openlocfilehash: e6722dc7460a63878ba7fc6a15f6c384ca37e136
-ms.sourcegitcommit: 3a0accd616ca94d6ba7f50e502552b45e9661a95
+description: 瞭解如何使用 OneDrive 和小組網站進行 Microsoft 365 儲存區和 Microsoft 365 檔案共用。
+ms.openlocfilehash: cc6a7a45fda65073dc9b0cd15a844ec9aefca794
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "48350358"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906390"
 ---
-# <a name="set-up-file-storage-and-sharing"></a>設定檔案儲存與共用
+# <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>在 Microsoft 365 中設定檔儲存與共享
 
 為您的公司設定檔案存放區與共享的其中一個最佳方法，就是使用 OneDrive 和小組網站一起使用。 如果您擁有少數員工的小型企業，這是理想的方式。
 
-觀賞有關在 Microsoft 365 中儲存檔案的簡短影片。<br><br>
+觀賞有關在 Microsoft 365 雲端中儲存檔案的簡短影片。<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-## <a name="where-you-can-store-documents-in-microsoft-365"></a>您可以在 Microsoft 365 中儲存檔的位置
+## <a name="microsoft-365-document-storage-and-management"></a>「Microsoft 365 檔儲存與管理」
 
-- OneDrive 是專為個別用途所設計，且有偶然的檔案共用。 
+- OneDrive 是專為個別用途所設計，且有偶然的檔案共用。
 
 - 小組網站的設計是要定期共用和協同作業。 小組網站非常適合儲存具有共用擁有權的檔案，讓數個人員擁有該檔案，並可能共同作業這些檔案。 建立 Microsoft 小組以新增小組網站。 若要[深入瞭解，請參閱建立小組的團隊](https://support.microsoft.com/office/174adf5f-846b-4780-b765-de1a0a737e2b)。
 
@@ -72,19 +73,19 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
 
 您公司中的每個人都有指派 Microsoft 365 授權的 (和 SharePoint 線上) 取得 OneDrive 雲端儲存空間。 他們可以在這裡儲存商務相關檔案，以供任何裝置存取，而且只有該使用者可以使用這些檔案。 例如，他們可能會儲存草稿提案、其會議筆記或即將交付之示範的腳本。
   
-員工也可以共用 OneDrive 檔案和資料夾。 如果員工休假或離開公司，則其他人可以存取儲存在 OneDrive 中的共用檔案。
+員工也可以共用 OneDrive 檔案和資料夾。 如果員工休假或離開公司，其他人可以存取儲存在 OneDrive (OneDrive 小組資料夾共用) 中的共用檔案。
   
 以下是團隊中每個人如何設定 OneDrive 及共用檔案。
 
 1. 移至 <a href="https://portal.office.com/ " target="_blank">Microsoft 365 入口網站</a>，然後使用您的使用者名稱和密碼登入。
 
-2. 在應用程式啟動器中，選取 [ **OneDrive**]。
+2. 在應用程式啟動器中，選取 [ **OneDrive** ]。
 
-3. 在 OneDrive 中，小組成員可以儲存自己的與商務相關的檔。 您可以共用個別檔或整個資料夾。 挑選檔案或資料夾，以滑鼠右鍵按一下，然後選擇 [ **共用**]。
+3. 在 OneDrive 中，小組成員可以儲存自己的與商務相關的檔。 您可以共用個別檔或整個資料夾。 挑選檔案或資料夾，以滑鼠右鍵按一下，然後選擇 [ **共用** ]。
 
     ![共用資料夾](../../media/e8df9df3-aea5-404d-a320-92d7826c260c.png)
   
-4. 在 [ **傳送連結** ] 頁面上，保留 **具有連結的任何人都可以查看和編輯**的預設選項。
+4. 在 [ **傳送連結** ] 頁面上，保留 **具有連結的任何人都可以查看和編輯** 的預設選項。
 
     輸入您想要存取資料夾的小組成員的名稱或電子郵件地址，然後新增選用的郵件。
 
@@ -92,7 +93,7 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
 
     ![[共用連結] 對話方塊，顯示輸入並選取名稱。](../../media/877e6587-db9d-4903-a87b-11e570eee926.png)
   
-5. 當您完成輸入您要與其共用的人員時，請選取 [ **傳送**]。 電子郵件會立即傳送給您邀請的人員。
+5. 當您完成輸入您要與其共用的人員時，請選取 [ **傳送** ]。 電子郵件會立即傳送給您邀請的人員。
 
     ![共用連結，顯示名稱清單](../../media/e85625ea-7655-43f3-8623-72db68d0ea39.png)
   
@@ -106,11 +107,11 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
   
 新增檔案的步驟如下：
   
-1. 在小組網站的首頁上，選擇左側流覽功能表中的 [ **檔** ]。 這將會帶您前往您的 **文件庫**。
+1. 在小組網站的首頁上，選擇左側流覽功能表中的 [ **檔** ]。 這將會帶您前往您的 **文件庫** 。
   
 2. 當您仍然登入 Microsoft 365 時，請從工作列或其他位置開啟 Windows 檔案 **資源管理器** 。 移至您要上傳到小組網站的檔案。
 
-3. 選取您要上傳到小組網站的檔案，然後將其拖曳至 **文件庫**。
+3. 選取您要上傳到小組網站的檔案，然後將其拖曳至 **文件庫** 。
   
 4. 當您完成時，檔案會同時儲存在您的小組網站和您的電腦中。
   
@@ -135,13 +136,13 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
   
 2. 選擇 [ **同步** 處理] 以同步處理所有檔案。 或流覽至您要同步處理的特定資料夾。
 
-3. 如果系統提示您切換應用程式，請選擇 **[是]**。 OneDrive 是執行同步處理的程式。
+3. 如果系統提示您切換應用程式，請選擇 **[是]** 。 OneDrive 是執行同步處理的程式。
   
 4. 如果您已 **設定 OneDrive** 提示，請使用您的公司或學校帳戶登入。
 
     ![OneDrive 安裝畫面](../../media/82cbb1ac-2ac5-42bd-82de-ba710bf46145.png)
   
-5. 如果您還沒有同步處理 OneDrive，您可能會看到 [ **這是您的 OneDrive 資料夾** ] 畫面。 請檢查 **您 OneDrive 資料夾**下的路徑。 如果您想要使用不同的路徑，請選擇 [ **變更位置** ]，然後選取 **[下一步]**。
+5. 如果您還沒有同步處理 OneDrive，您可能會看到 [ **這是您的 OneDrive 資料夾** ] 畫面。 請檢查 **您 OneDrive 資料夾** 下的路徑。 如果您想要使用不同的路徑，請選擇 [ **變更位置** ]，然後選取 **[下一步]** 。
 
     ![在此畫面變更您的本機資料夾](../../media/6395485a-e729-4a9a-8e7d-b35e662435da.png)
   
@@ -149,7 +150,7 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
 
     ![在您的本機資料夾中查看已同步處理的專案](../../media/93e2ca9f-4b5b-4930-a94d-ebc5b95aca84.png)
   
-7. 在電腦上的小組資料夾中開啟檔案，以測試同步處理。 進行變更，然後選擇 [ **儲存**]。
+7. 在電腦上的小組資料夾中開啟檔案，以測試同步處理。 進行變更，然後選擇 [ **儲存** ]。
 
 ## <a name="best-practices-for-file-storage-and-sharing"></a>檔案儲存和共用的最佳作法
 
@@ -157,11 +158,11 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
   
 ### <a name="file-storage-and-collaboration-recommendations-for-other-types-of-small-businesses"></a>其他小型企業類型的檔案儲存和協同作業建議
 
-- **獨自 proprietorships**：使用 OneDrive 來儲存您自己的檔案，並以每個案例為客戶分享這些檔案。
+- **獨自 proprietorships** ：使用 OneDrive 來儲存您自己的檔案，並以每個案例為客戶分享這些檔案。
 
-- **共同 ownerships**：兩個擁有者都使用 OneDrive，並來回共用檔案。
+- **共同 ownerships** ：兩個擁有者都使用 OneDrive，並來回共用檔案。
 
-- **需要存取檔案的外部用戶端或合作夥伴的企業**：建立新的小組網站，以儲存及共用專為特定客戶的檔。 設定網站，只允許存取該客戶。 您無需擔心，一位客戶會意外取得其他客戶的資訊存取權。
+- **需要存取檔案的外部用戶端或合作夥伴的企業** ：建立新的小組網站，以儲存及共用專為特定客戶的檔。 設定網站，只允許存取該客戶。 您無需擔心，一位客戶會意外取得其他客戶的資訊存取權。
 
 ### <a name="keep-private-files-private"></a>保密私人檔案
 
@@ -188,9 +189,9 @@ OneDrive 和小組網站都為您和您的員工提供隨處存取。
 
 2. 移至 [ **設定** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**組織設定**</a> ] 頁面。
 
-3. 在 [ **服務** ] 索引標籤上，選取 **[網上] 的 [Office**]。
+3. 在 [ **服務** ] 索引標籤上，選取 **[網上] 的 [Office** ]。
 
-4. 選取或取消選取此核取方塊，以開啟或關閉協力廠商儲存體，然後選取 [ **儲存變更**]。
+4. 選取或取消選取此核取方塊，以開啟或關閉協力廠商儲存體，然後選取 [ **儲存變更** ]。
 
 ## <a name="next-steps"></a>後續步驟
 

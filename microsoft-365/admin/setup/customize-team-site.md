@@ -1,5 +1,5 @@
 ---
-title: 自訂小組網站以進行檔案儲存和共用-SharePoint 線上
+title: 自訂檔案儲存與共享的 SharePoint 小組網站
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,19 +17,20 @@ ms.collection:
 ms.custom:
 - IT_Networking
 - seo-marvel-apr2020
+- seo-marvel-may2020
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: 在本文中，您將瞭解如何自訂、組織和管理小組網站，以進行檔案儲存與共享。
-ms.openlocfilehash: f2c59607d006cd6e5529d9e5ffb3d2f6eead6edf
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 瞭解如何使用文件庫、清單和中樞來自訂、組織和管理您的 SharePoint 小組網站。
+ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644564"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906486"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自訂您的小組網站以進行檔案儲存與共享
 
@@ -39,7 +40,7 @@ ms.locfileid: "48644564"
   
 [在 SharePoint 中建立小組網站](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)
   
-以下是一些創意及連結，可協助您自訂、組織和管理小組網站。 
+以下是一些創意及連結，可協助您自訂、組織和管理小組網站。
   
  
 ## <a name="customize-your-team-site"></a>自訂您的小組網站
@@ -60,7 +61,7 @@ ms.locfileid: "48644564"
   
 ## <a name="work-with-document-libraries"></a>使用文件庫
 
-小組網站包含您可以立即開始使用的文件庫。 
+小組網站包含可以立即開始使用以進行檔案儲存和檔管理的文件庫。
 
 若要開始上傳，請參閱將 [資料夾或檔案上傳至文件庫](https://support.microsoft.com/office/eb18fcba-c953-4d45-8d90-8da66edeacdb)
    
@@ -70,7 +71,7 @@ ms.locfileid: "48644564"
   
 ## <a name="work-with-lists-to-organize-data"></a>使用清單來組織資料
 
-SharePoint 包含許多您可以新增至網站的清單範本，例如連結清單、行事曆、連絡人或任務。 
+SharePoint 包含許多您可以新增至網站的清單範本，例如連結清單、行事曆、連絡人或任務。
   
 瞭解如何 [在 SharePoint 中建立清單](https://support.microsoft.com/office/0D397414-D95F-41EB-ADDD-5E6EFF41B083#ID0EAAGAAA=Online)。
   
@@ -82,7 +83,7 @@ View a 錄影若要將行事曆新增至您的網站，請參閱 [建立共用�
 
 ## <a name="organize-sites-into-hubs"></a>將網站組織成中樞
 
-您的小組網站與網站相關聯之群組的所有成員幾乎都共用。 如果您想要有個別的網站給特定客戶，您可以建立其他小組網站，並使用 SharePoint hub 網站進行管理。 請參閱其他資訊。 
+您的小組網站與網站相關聯之群組的所有成員幾乎都共用。 如果您想要有個別的網站給特定客戶，您可以建立其他小組網站，並使用 SharePoint hub 網站進行管理。 請參閱其他資訊。
   
 中樞網站可讓您新增及關聯網站。 如需詳細資訊 [，請參閱何謂 SharePoint hub site？](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f)。
   
@@ -92,7 +93,7 @@ View a 錄影若要將行事曆新增至您的網站，請參閱 [建立共用�
   
 ## <a name="sharing-files-with-the-team"></a>與小組成員共用檔
 
-當儲存區和組織開始時，與您的小組和外部用戶端共用也很重要。 以下是一些主題的連結，可協助您管理使用者及共用您的資料。 
+當檔案儲存和檔管理開始時，與您的小組和外部用戶端共用也很重要。 以下是一些主題的連結，可協助您管理使用者及共用您的資料。
   
 如需與您的小組共用檔案，請參閱 [Share SharePoint files or folders In Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。
   
@@ -100,7 +101,7 @@ View a 錄影若要將行事曆新增至您的網站，請參閱 [建立共用�
   
 ## <a name="managing-users-and-groups"></a>管理使用者和群組
 
-當您管理小組網站時，您可能需要新增或移除使用者。 以下資訊可協助您瞭解、新增及管理小組網站上的使用者。 
+當您管理小組網站時，您可能需要新增或移除使用者。 以下資訊可協助您瞭解、新增及管理小組網站上的使用者。
   
 透過 [瞭解和管理群組](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d)的群組來查看影片。 
   
@@ -110,7 +111,7 @@ View a 錄影若要將行事曆新增至您的網站，請參閱 [建立共用�
   
 ## <a name="here-are-more-topics-you-might-be-interested-in"></a>以下是更多您可能感興趣的主題
 
-- **在平板電腦和手機上設定 Office 應用程式**。 您必須執行此操作，才能在平板電腦或手機上編輯儲存在小組網站上的檔案。 如果您的平板電腦或手機尚未安裝 Office App，則您只能檢視小組網站上的檔案，而無法編輯。 
+- **在平板電腦和手機上設定 Office 應用程式** 。 您必須執行此操作，才能在平板電腦或手機上編輯儲存在小組網站上的檔案。 如果您的平板電腦或手機尚未安裝 Office App，則您只能檢視小組網站上的檔案，而無法編輯。 
     
   - [使用 Microsoft 365 在 Android 上安裝及設定 Office](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     
@@ -119,6 +120,3 @@ View a 錄影若要將行事曆新增至您的網站，請參閱 [建立共用�
   - [在 Windows Phone 上使用 Microsoft 365 設定 Office](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [深入了解如何使用 OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458)。
-    
-
-

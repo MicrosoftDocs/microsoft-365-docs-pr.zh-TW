@@ -23,16 +23,16 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 瞭解當您的 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
-ms.openlocfilehash: 77b65931056ca504d6f3efd7ca86560496495f5d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646868"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906820"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>365 Microsoft 商務版訂閱結束時，我的資料與存取權會發生什麼情況？
 
-如果您的訂閱結束，原因是它已到期，或是因為您決定取消，您的 Microsoft 365 服務、應用程式及客戶資料的存取都會在訂閱完全關閉或 *deprovisioned*之前，先進行多種狀態。 如果您知道這項進展，您將會更好地將您的訂閱傳回使用中狀態過遲之前的狀態，或者，如果您離開 Microsoft 365，請先備份您的資料，再將其最後刪除。
+如果您的訂閱結束，原因是它已到期，或是因為您決定取消，您的 Microsoft 365 服務、應用程式及客戶資料的存取都會在訂閱完全關閉或 *deprovisioned* 之前，先進行多種狀態。 如果您知道這項進展，您將會更好地將您的訂閱傳回使用中狀態過遲之前的狀態，或者，如果您離開 Microsoft 365，請先備份您的資料，再將其最後刪除。
 
 請先閱讀重要資訊，再聯繫 [Microsoft 365 支援人員](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。
   
@@ -44,7 +44,7 @@ ms.locfileid: "48646868"
 
 下表說明當您付費的 Microsoft 365 for business 訂閱到期時，您可以預期的結果。
 
-| **Active**                                                             | **到期 <br/> (30 天 \*) **                                                | **停用 <br/> (90 天 \*) **                                               | **取消佈建**                                                                         |
+| **Active**                                                             | **到期 <br/> (30 天 \*)**                                                | **停用 <br/> (90 天 \*)**                                               | **取消佈建**                                                                         |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *所有可存取的資料*                                               | *所有可存取的資料*                                                     | *僅限系統管理員可存取的資料*                                             | **資料刪除的 <br/> Azure Active Directory 已移除，如果其他服務未使用該 Active Directory** |
 | 使用者具有對 Microsoft 365、檔案及應用程式的一般存取權   | 使用者具有對 Microsoft 365、檔案及應用程式的一般存取權              | 使用者無法存取 Microsoft 365、檔或應用程式                        | 使用者無法存取 Microsoft 365、檔或應用程式                                     |
@@ -62,7 +62,7 @@ ms.locfileid: "48646868"
   
 當您取消訂閱時，以下是您和您的使用者所期望的功能。
   
-- 系統**管理存取**管理員仍可登入並存取系統管理中心，並視需要購買其他訂閱。 若您是全球或計費系統管理員，您可以在90天內重新啟用所有資料都完好無損 [的訂閱](reactivate-your-subscription.md) 。
+- 系統 **管理存取** 管理員仍可登入並存取系統管理中心，並視需要購買其他訂閱。 若您是全球或計費系統管理員，您可以在90天內重新啟用所有資料都完好無損 [的訂閱](reactivate-your-subscription.md) 。
 
 - **使用者存取** 您的使用者將無法使用 OneDrive 商務版服務，或存取客戶資料（例如，小組網站上的電子郵件或檔）。 Word 和 Excel 等 Office 應用程式最後都會進入唯讀、精簡功能模式，並顯示[未授權產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
 
@@ -203,6 +203,10 @@ ms.locfileid: "48646868"
 > [!NOTE]
 > 新增已 deprovisioned 的相同類型的訂閱，不會還原與 deprovisioned 訂閱相關聯的資料。
 
+
+> [!NOTE]
+> 如果已暫停 CSP 授權，則沒有30天的寬限期，且服務會立即停用。 若租使用者未以新增授權重新啟用，則會在90天之後刪除資料。
+
 ### <a name="what-happens-when-my-trial-ends"></a>我的試用版結束時會發生什麼情況？
 
 當您的試用版結束時，您無法繼續使用 Microsoft 365 免費版。 您有幾個選項：
@@ -237,3 +241,4 @@ ms.locfileid: "48646868"
 [取消訂閱](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (篇) \
 [更新 Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (文章) \
 [重新開機訂閱](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (文章) 
+

@@ -1,5 +1,5 @@
 ---
-title: 深入了解 Microsoft 365 端點資料外洩防護
+title: 深入瞭解 Microsoft 365 端點資料外洩防護（預覽版）
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 端點資料外洩防護擴充監視檔案活動，和針對這些端點的檔案保護動作。 在 Microsoft 365 合規性中心解決方案中可看到檔案 '
-ms.openlocfilehash: d9260da3e007885821441c8217e01650823eb8b4
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: cbf4a53658885102226d2b874180f5cc5f264a91
+ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48768961"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "48841859"
 ---
-# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>深入了解 Microsoft 365 端點資料外洩防護
+# <a name="learn-about-microsoft-365-endpoint-data-loss-prevention-preview"></a>深入瞭解 Microsoft 365 端點資料外洩防護（預覽版）
 
 您可以使用 Microsoft 365 資料外洩防護（DLP）來監視正在進行的動作，這些動作會受到您認為敏感性的專案影響，並協助防止意外共用這些專案。 如需 DLP 的詳細資訊，請參閱[資料外洩防護概觀](data-loss-prevention-policies.md)。
 
@@ -69,7 +69,7 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 
  使用 [開始使用 Microsoft 365 端點 DLP](endpoint-dlp-getting-started.md) 的程式以登入程式。
 
-如果您透過 [Microsoft Defender 進階威脅防護（Microsoft Defender ATP）](https://docs.microsoft.com/windows/security/threat-protection/) 登入裝置，這些裝置會自動顯示在裝置清單中。
+如果您透過 [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/) 登入裝置，這些裝置會自動顯示在裝置清單中。
 
 ![受管理的裝置清單](../media/endpoint-dlp-learn-about-2-device-list.png)
 
@@ -142,5 +142,5 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 - [資料外洩防護概觀](data-loss-prevention-policies.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)
-- [Microsoft Defender 進階威脅防護 (Microsoft Defender ATP)](https://docs.microsoft.com/windows/security/threat-protection/)
+- [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)
 - [測試人員風險管理](insider-risk-management.md)

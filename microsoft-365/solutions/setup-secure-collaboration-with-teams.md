@@ -11,27 +11,29 @@ ms.collection:
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-overview
-ms.custom: ''
+ms.custom:
+- M365solutions
+- seo-marvel-jun2020
 f1.keywords: NOCSH
-description: 瞭解如何根據敏感度設定小組以保護您的資料
-ms.openlocfilehash: 5cf4937a79fdf33e160432c740504ec84d196585
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: 瞭解如何設定小組中的安全內容共同作業，以根據其敏感度來保護您的資料。
+ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843537"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906796"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全的共同作業
 
 能夠輕易與適當的人員分享資訊，同時避免 oversharing 是組織成功的關鍵。 這包括可以安全地與只有應有存取權的使用者共用機密資料。 視專案而定，這可能包括與組織外部人員共用機密資料。
 
-此方案指南包含兩個元件，可協助您：
+這個共同作業方案指南包含兩個元件，可協助您：
 - 以適當的保護層級，為每個專案部署 Microsoft 團隊
 - 針對每個專案設定具有適當安全性設定的外部共用
 
 ![以適當的安全性設定，以適當的保護和設定外部共用來部署團隊](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-如果您無法使用多功能和便於使用的共同作業工具，使用者通常會透過電子郵件檔進行共同作業。 這是一種單調乏味且容易出錯的共同作業方法，可增加不適當共用資訊的風險。 如果人員發現共用資訊過於困難，他們可能會回復為使用不受 IT 管理的消費產品。 這可能會帶來更大的風險。
+如果您無法使用多功能和便於使用的內容共同作業工具，使用者通常會透過電子郵件檔進行共同作業。 這是一種單調乏味且容易出錯的共同作業方法，可增加不適當共用資訊的風險。 如果人員發現共用資訊過於困難，他們可能會回復為使用不受 IT 管理的消費產品。 這可能會帶來更大的風險。
 
 使用 Microsoft 365，您可以使用各種設定來部署小組，以協助：
 

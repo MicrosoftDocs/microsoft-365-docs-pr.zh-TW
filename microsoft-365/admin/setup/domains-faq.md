@@ -1,5 +1,5 @@
 ---
-title: 網域常見問題集
+title: 網域常見提問
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - okr_smb
+- seo-marvel-may2020
 search.appverid:
 - BCS160
 - MET150
@@ -23,20 +24,20 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: 找到您常見問題的答案以深入瞭解網域。
-ms.openlocfilehash: b51b5fe56bbae56dd473dd831ec91e629d9233f3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: 若要深入瞭解網域 (name.onmicrosoft.com17 網域和傳輸網域) ，請在 FAQ 中尋找您問題的答案。
+ms.openlocfilehash: 8d504711f46383000697736d6825a813f01fbe69
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644576"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906474"
 ---
 # <a name="domains-faq"></a>網域常見問題集
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview) (英文)。
 
 ::: moniker-end
 
@@ -73,7 +74,7 @@ ms.locfileid: "48644576"
     
 ## <a name="how-can-i-validate-spf-records-for-my-domain"></a>如何驗證我的網域的 SPF 記錄？
 
-您必須具有或建立  **一個 SPF 的 TXT 記錄**，這一點很重要。 如果您已經有 SPF 記錄，應將新的 Microsoft 365 值附加到它，而不是建立新的記錄。 在您新增或更新 Microsoft 電子郵件的 SPF 記錄之後，您應該檢查下列其中一項工具，確定語法是否正確： 
+您必須具有或建立  **一個 SPF 的 TXT 記錄** ，這一點很重要。 如果您已經有 SPF 記錄，應將新的 Microsoft 365 值附加到它，而不是建立新的記錄。 在您新增或更新 Microsoft 電子郵件的 SPF 記錄之後，您應該檢查下列其中一項工具，確定語法是否正確： 
   
 - [SPF 記錄測試控管](http://www.kitterman.com/spf/validate.html)
     
@@ -85,7 +86,7 @@ ms.locfileid: "48644576"
 
 網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.** 後出現的唯一名稱。 它通常採用組織名稱和標準 Internet 尾碼的形式，例如  *yourbusiness.com*  或  *stateuniversity.edu。* 
   
-使用自訂網域（例如「可信性** \@ contoso.com**」）與 Microsoft 365，可協助您建立品牌的信譽及認可。 
+使用自訂網域（例如「可信性 **\@ contoso.com** 」）與 Microsoft 365，可協助您建立品牌的信譽及認可。 
   
 您可以 [在 Microsoft 365 中購買網域，我們會自動加以設定](../get-help-with-domains/buy-a-domain-name.md)，或者您可以從網域註冊機構購買或為您提供自己的現有功能。
     
@@ -143,7 +144,7 @@ ms.locfileid: "48644576"
     
 2. 在 [ **網域** ] 頁面上，選取您要設定為新電子郵件地址的預設網域。 
     
-3. 選取 [設定成預設值]****。
+3. 選取 [設定成預設值]。
     
 ::: moniker range="o365-worldwide"
 
@@ -206,9 +207,9 @@ ms.locfileid: "48644576"
 
 ## <a name="why-do-i-have-an-onmicrosoftcom-domain"></a>為什麼我有「onmicrosoft.com」網域？
 
-當您註冊服務時，Microsoft 365 會為您建立網域，例如 *contoso.onmicrosoft.com*。 您註冊時所建立的使用者識別碼包含網域，如 *alan@contoso.onmicrosoft.com*。 
+當您註冊服務時，Microsoft 365 會為您建立網域，例如 *contoso.onmicrosoft.com* 。 您註冊時所建立的使用者識別碼包含網域，如 *alan@contoso.onmicrosoft.com* 。 
   
- **如果您想要讓您的電子郵件看起來像是 *alan \@ contoso.com*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md) ，或是只要您擁有現有的使用者和網域中的步驟，即可執行 [ [將您的使用者與網域新增至 Microsoft 365](add-domain.md) ]。 
+ **如果您想要讓您的電子郵件看起來像是 *alan \@ contoso.com* ：** [購買網域](../get-help-with-domains/buy-a-domain-name.md) ，或是只要您擁有現有的使用者和網域中的步驟，即可執行 [ [將您的使用者與網域新增至 Microsoft 365](add-domain.md) ]。 
   
 - **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.com，您就無法將它變更為 fabrikam.onmicrosoft.com。 若要使用不同的 onmicrosoft.com 網域，您必須開始使用 Microsoft 365 的新訂閱。 
     
@@ -223,9 +224,9 @@ ms.locfileid: "48644576"
 ::: moniker range="o365-germany"
 ## <a name="why-do-i-have-an-onmicrosoftde-domain"></a>為什麼我有「onmicrosoft.de」網域？
 
-當您註冊服務時，Microsoft 365 會為您建立網域，例如 *contoso.onmicrosoft.de*。 您註冊時所建立的使用者識別碼包含網域，如 *alan@contoso.onmicrosoft.de*。 
+當您註冊服務時，Microsoft 365 會為您建立網域，例如 *contoso.onmicrosoft.de* 。 您註冊時所建立的使用者識別碼包含網域，如 *alan@contoso.onmicrosoft.de* 。 
   
- **如果您想要讓您的電子郵件看起來像是 *alan@contoso.de*：** [購買網域](../get-help-with-domains/buy-a-domain-name.md) ，或是只要 [將您的使用者與網域新增至 Microsoft 365](add-domain.md) ，便執行步驟。 
+ **如果您想要讓您的電子郵件看起來像是 *alan@contoso.de* ：** [購買網域](../get-help-with-domains/buy-a-domain-name.md) ，或是只要 [將您的使用者與網域新增至 Microsoft 365](add-domain.md) ，便執行步驟。 
   
 - **您無法在註冊後重新命名 name.onmicrosoft.com17 網域。** 例如，如果您所選擇的初始網域是 fourthcoffee.onmicrosoft.de，您就無法將它變更為 fabrikam.onmicrosoft.de。 若要使用不同的 onmicrosoft.de 網域，您必須開始使用 Microsoft 365 的新訂閱。 
     
@@ -239,7 +240,7 @@ ms.locfileid: "48644576"
 
 ## <a name="how-do-i-verify-my-nonprofit-or-education-status"></a>如何驗證我的非盈利性或教育狀態？
 
-1. 在系統[管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-home)選取 [**安裝**] 以啟動嚮導。  (請務必先登入 Microsoft 365。 )  
+1. 在系統 [管理中心](https://docs.microsoft.com/microsoft-365/admin/admin-home)選取 [ **安裝** ] 以啟動嚮導。  (請務必先登入 Microsoft 365。 )  
     
 2. 若要成為您的學校系統管理員，請在 Microsoft 365 中選取 [  **成為系統管理員** ] 選項。 
     

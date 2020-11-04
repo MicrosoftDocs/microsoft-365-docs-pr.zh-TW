@@ -1,6 +1,6 @@
 ---
-title: 您可以 sail 的安全性障礙（一個架構師的視點）
-description: 描述。
+title: Microsoft 365 企業資源規劃-Cybersecurity 架構
+description: 瞭解如何克服 Microsoft 企業架構中的安全性難題，從 Microsoft Kozeta Garrett，Cybersecurity 架構設計。
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 9a1a0204f1c79ad1eab7d62adf45022d1d5bc035
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 454db3da5c37035cb3146e437761eff0f953b642
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842795"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906974"
 ---
 # <a name="security-hurdles-you-can-sail-over--one-architects-viewpoint"></a>您可以 sail 的安全性障礙（一個架構師的視點）
 

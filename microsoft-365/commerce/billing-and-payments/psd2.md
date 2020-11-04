@@ -14,18 +14,18 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: 從2019年9月14日開始，您必須先確認進行線上購買之人員的身分識別，才能處理付款。
+description: 從2019年9月14日開始，您必須先在歐洲經濟區域的31個國家/地區中取得銀行，以確認進行線上購買之人員的身分識別，才能處理付款。
 keywords: 付款服務指令程式2、強客戶驗證、多重要素驗證
-ms.openlocfilehash: fc8784949cdacea10957660c99795b4ade0f9f7a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d6564a8c6d31bd0758f1084e7ee9b6857aed034e
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638420"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906606"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>適用于商業客戶的支付服務指令2和強客戶驗證
 
-從2019年9月14日開始，您必須先確認進行線上購買之人員的身分識別，才能處理付款。 這種驗證需要多重要素驗證，以協助確保您的線上購買安全且受到保護。 某些國家/地區的此驗證要求的日期會延遲。 
+從2019年9月14日開始，必須先在歐洲經濟區域的31個國家/地區中取得銀行，以確認進行線上購買之人員的身分識別，才能處理付款。 這種驗證需要多重要素驗證，以協助確保您的線上購買安全且受到保護。 某些國家/地區的此驗證要求的日期會延遲。
 
 如需詳細資訊，請參閱 [Microsoft 有關付款服務指令程式的常見問題解答2和強客戶驗證](https://support.microsoft.com/help/4517854/microsoft-account-open-banking-customer-authentication)。
 

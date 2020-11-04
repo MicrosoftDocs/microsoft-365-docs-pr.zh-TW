@@ -14,12 +14,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2d1316927124b1ce03910190922fa0804853ae4b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 1bf06c605290dc94f64da6c2aabca3683c234c9a
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845273"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906748"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365"></a>跨 Microsoft 365 部署威脅防護功能
 
@@ -77,5 +77,3 @@ Microsoft 的安全性解決方案已內置於我們的產品和服務中。 「
 您可以平行設定威脅防護功能，因此，如果您有多個網路安全小組負責不同的服務，則可以同時設定組織的保護功能。 下圖說明部署威脅防護功能的高層級流程。 
 
 ![部署威脅防護功能的程式](../media/solutions-architecture-center/deploy-threat-protection-across-m365-grid.png) 
-
-

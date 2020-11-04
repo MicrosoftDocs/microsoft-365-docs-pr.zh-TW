@@ -1,6 +1,6 @@
 ---
-title: 至身分識別和超過-一種架構師的視點
-description: 描述。
+title: Microsoft 365 企業資源規劃-安全性架構
+description: 深入瞭解 microsoft 企業架構的設計策略，來自 Microsoft 的 Alex Shteynberg，技術主要架構師。
 ms.author: bcarter
 author: brendacarter
 manager: bcarter
@@ -11,14 +11,15 @@ localization_priority: Normal
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: ''
+- M365solutions
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: fc975610e24980c6a552179359bb643eb9ac040c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e691b47a2d508064243886957ac491088df2f8ae
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845249"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906892"
 ---
 # <a name="to-identity-and-beyond--one-architects-viewpoint"></a>至身分識別和超過-一種架構師的視點
 
@@ -284,7 +285,7 @@ Office 365 具有 [統一的審計記錄](https://docs.microsoft.com/microsoft-3
 
 高層級圖表：
 
-![記錄流程的高層級圖表](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
+![安全性與合規性計畫的記錄來源圖表](../media/solutions-architecture-center/identity-beyond-illustration-4.png)  
 
 上圖代表將記錄傳送至事件 Hub 和/或 azure 存放區和/或 Azure 記錄分析的內建功能。 並非所有系統都包含此現成功能。 但是還有其他方法可將這些記錄傳送至相同的存放庫。 例如，請參閱 [使用 Azure Sentinel 保護您的小組](https://techcommunity.microsoft.com/t5/azure-sentinel/protecting-your-teams-with-azure-sentinel/ba-p/1265761)。
 

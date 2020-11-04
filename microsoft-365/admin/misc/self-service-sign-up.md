@@ -1,5 +1,5 @@
 ---
-title: 在組織中使用自助式註冊
+title: 在您的組織中使用自助註冊
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: 深入瞭解 Microsoft 365 自助註冊和可用自助服務程式，例如 Microsoft Power App、Microsoft Flow 及 Dynamics 365 （適用于融資）。
-ms.openlocfilehash: 8e8ed80cc24e3c6ec0a4a9d408d202495de52adb
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 21e41661141a817a1751c80608035d839d2e3952
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324477"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906570"
 ---
-# <a name="using-self-service-sign-up-in-your-organization"></a>在組織中使用自助式註冊
+# <a name="using-self-service-sign-up-in-your-organization"></a>在您的組織中使用自助註冊
 
-自助註冊可讓組織中的使用者更輕鬆地註冊 Microsoft 的線上服務。 我們呼叫這張註冊程式「自助註冊」，因為您的使用者可以註冊使用您訂閱所支付的服務，或是使用免費服務，而不需要代您採取動作。
+自助註冊可讓貴組織中的使用者更輕鬆地註冊 Microsoft 的線上服務。 我們呼叫這種註冊程式「自助註冊」，因為您的使用者可以註冊使用您訂閱所支付的服務，或是使用免費服務，而不需要代您採取動作。
   
-## <a name="how-self-service-sign-up-works"></a>自助服務註冊的運作方式
+## <a name="how-self-service-sign-up-works"></a>自助註冊的運作方式
 
 下列範例說明如何自行註冊學校運作。 在其承租人中已啟用自助程式的任何組織，都能使用相同的處理常式。
   
@@ -44,13 +44,12 @@ ms.locfileid: "47324477"
 
 以下是目前可用的自助服務程式。 新增新程式時，此清單會隨之更新。
   
-|||||
+| 程式 <br/> | 描述 <br/> | 其他資訊 <br/> | 自助註冊的網站 <br/> |
 |:-----|:-----|:-----|:-----|
-|**程式** <br/> |**描述** <br/> |**其他資訊** <br/> |自助註冊的網站 * * * * * <br/> |
 |Office 365 A1 * * * * <br/> |任何學生或教師都可以使用學校電子郵件地址來註冊免費的 Office 365，並取得 web 的 Office 應用程式、1 TB 的 OneDrive 雲端儲存空間，以及針對類別、小組和專案網站 SharePoint 線上。  <br/> |[Office 365 教育版技術常見問題](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 教育版](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Office 365 A1 Plus** <br/> |合格的學生和教師可以註冊 Office 365 A1 Plus （包括上述所述的專案，以及 Microsoft 365 應用程式的企業版）。 Microsoft 365 應用程式企業版是生產力軟體，包括在您的桌上型電腦或筆記本電腦上安裝的 Word、PowerPoint、Excel、Outlook、OneNote、Publisher、Access 和商務用 Skype。  <br/> |[Office 365 教育版技術常見問題](https://go.microsoft.com/fwlink/p/?LinkId=536625) <br/> |[Office 365 教育版](https://go.microsoft.com/fwlink/p/?linkid=140841) <br/> |
 |**Power BI** <br/> |Power BI 可讓使用者以直觀的新方式呈現資料、共用發現和共同作業。 <br/> 如果您的組織已訂閱，您也可能會看到「Power BI Pro 個人使用者試用」的授權，其可為使用者提供有限的高級功能存取權。  <br/> |[您組織中的 Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536626) <br/> |[Microsoft Power BI](https://go.microsoft.com/fwlink/p/?LinkId=536629) <br/> |
-|**Rights Management Services (RMS) ** <br/> |當組織中的使用者已傳送受 Azure Rights Management)  (azure Rights Management 保護的敏感檔案，但其 IT 部門尚未執行 Azure Rights Management (Azure RMS) ，或是 Active Directory Rights Management Services (AD RMS) 時，適用于個人的 RMS 是免費自助訂閱。  <br/> |[適用于個人和 Azure 版權管理的 RMS](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Microsoft Rights Management 入口網站](https://portal.azure.com/) ，讓您可以檢查是否可以開啟指定的許可權保護檔。  <br/> |
+|**Rights Management Services (RMS)** <br/> |當組織中的使用者已傳送受 Azure Rights Management)  (azure Rights Management 保護的敏感檔案，但其 IT 部門尚未執行 Azure Rights Management (Azure RMS) ，或是 Active Directory Rights Management Services (AD RMS) 時，適用于個人的 RMS 是免費自助訂閱。  <br/> |[適用于個人和 Azure 版權管理的 RMS](https://go.microsoft.com/fwlink/p/?LinkId=536627) <br/> |[Microsoft Rights Management 入口網站](https://portal.azure.com/) ，讓您可以檢查是否可以開啟指定的許可權保護檔。  <br/> |
 |**Microsoft Power Apps** <br/> |在 PowerApps 中，您可以執行您已建立的應用程式，或其他人建立並與您共用的應用程式，以管理組織資料。 在行動裝置（例如電話）上執行應用程式，也可以在瀏覽器中開啟 Dynamics 365，以執行這些應用程式。 您可以建立無限的應用程式-全部都不會瞭解程式設計語言（如 c #）。  <br/> |[自助服務註冊 PowerApps](https://go.microsoft.com/fwlink/p/?linkid=841461) <br/> |[Microsoft Power Apps](https://go.microsoft.com/fwlink/p/?linkid=841462) <br/> |
 |**針對財務的 Dynamics 365** <br/> |取得適用于中小型企業的完整商務和財務管理解決方案。 Dynamics 365 for 金融可從第一天開始，進行排序、銷售、開具發票及報表工作變得更簡單。  <br/> |[適用于財務的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |[適用于財務的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841466) <br/> |
 |**適用于 Operations 的 Microsoft Dynamics 365** <br/> |提升您的經營速度。 Operations in Dynamics 365 中的完整 ERP 工具可提供全球可擴充性和數位智慧，以協助您在您的節奏時成長。  <br/> |[適用于 Operations 的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |[適用于 Operations 的 Microsoft Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=841467) <br/> |
