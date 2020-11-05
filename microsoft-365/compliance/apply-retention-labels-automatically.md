@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及自動發佈保留標籤，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 9a4b19bd30201f5a5ff75b49ec384b451526b91b
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877300"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920017"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤來保留或刪除內容
 
@@ -224,8 +224,6 @@ ProgID:Media AND ProgID:Meeting
     Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
    ```
 
-
-
 ## <a name="updating-retention-labels-and-their-policies"></a>更新保留標籤及其原則
 
 當您編輯保留標籤或自動套用原則，且保留標籤已套用至內容時，除了新識別的內容以外，您更新的設定會自動套用到此內容。
@@ -233,6 +231,10 @@ ProgID:Media AND ProgID:Meeting
 在建立及儲存標籤或原則之後，部分設定無法變更，其中包括：
 - 保留期間以外的保留設定，除非您已將標籤設定為根據建立時間來保留或刪除內容。
 - 將項目標記為記錄的選項。
+
+## <a name="locking-the-policy-to-prevent-changes"></a>鎖定原則以防止變更
+
+如果您需要確保沒有人可以關閉原則、刪除原則或放寬限制，請參閱 [使用「保留鎖定」來限制變更保留原則和保留標籤原則](retention-preservation-lock.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
