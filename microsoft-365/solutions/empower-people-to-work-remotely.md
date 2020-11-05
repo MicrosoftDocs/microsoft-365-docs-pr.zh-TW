@@ -16,14 +16,14 @@ ms.collection:
 - m365solution-remotework
 - m365solution-overview
 - M365initiative-coredeploy
-ms.custom: ''
-description: 設定安全性和服務基礎結構，讓您的工作人員隨時隨地都能遠端工作。
-ms.openlocfilehash: 23ec0ef33294bb532229c8f736ab5b6a5d000d4e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.custom: seo-marvel-jun2020
+description: 請確認您已啟用 Microsoft 365 中的所有功能，以充分發揮遠端工作者的生產力，並維持伺服器、資料和雲端的安全存取。
+ms.openlocfilehash: b886341adc49ba728856dc39786e926ebfadd3ef
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845237"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906736"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 強化遠端工作者
 

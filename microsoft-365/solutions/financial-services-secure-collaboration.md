@@ -8,16 +8,16 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 ms.prod: microsoft-365-enterprise
-ms.custom: ''
+ms.custom: seo-marvel-jun2020
 localization_priority: Priority
-description: 了解 Microsoft 365 如何協助將金融服務移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規
+description: 了解金融服務機構如何使用 Microsoft 365 與 Teams 維護金融安全合規性並有效地共同作業。
 f1.keywords: NOCSH
-ms.openlocfilehash: ba8feb12dbd9e7b82a2c85b0a1d8d26110e10140
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8bc9e965029414dadc39757b926949f3f60afc16
+ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844185"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "48906904"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 

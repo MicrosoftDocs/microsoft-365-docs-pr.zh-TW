@@ -13,18 +13,18 @@ metadata:
   ms.author: macapara
   ms.date: 09/13/2019
   localization_priority: Priority
-  ms.openlocfilehash: 2f716c0220f9fb85dd52e214aabc0df02ca4b222
-  ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+  ms.openlocfilehash: be575abfe658c77c0346b20efe77e1d52bc49918
+  ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 11/03/2020
-  ms.locfileid: "48847689"
+  ms.lasthandoff: 11/04/2020
+  ms.locfileid: "48906808"
 landingContent:
-- title: Microsoft 威脅防護
+- title: Microsoft 365 Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: 什麼是 Microsoft 威脅防護?
+    - text: 什麼是 Microsoft 365 Defender？
       url: mtp/microsoft-threat-protection.md
     - text: Microsoft 365 安全性中心
       url: mtp/overview-security-center.md
@@ -50,27 +50,27 @@ landingContent:
       url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
     - text: 適用於身分識別的 Microsoft Defender 架構
       url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
-- title: Office 365 ATP
+- title: 適用於 Office 365 的 Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: 什麼是 Office 365 ATP?
+    - text: 什麼是適用於 Office 365 的 Defender？
       url: office-365-security/office-365-atp.md
-    - text: Office 365 ATP 服務描述
+    - text: 適用於 Office 365 的 Defender 服務描述
       url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-- title: Microsoft Defender ATP
+- title: 適用於端點的 Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: 什麼是 Microsoft Defender ATP?
+    - text: 什麼是適用於端點的 Microsoft Defender？
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-    - text: 功能概述
+    - text: 功能概觀
       url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
-- title: Azure 資訊安全中心
+- title: Azure Defender
   linkLists:
   - linkListType: overview
     links:
-    - text: 什麼是 Azure 資訊安全中心?
+    - text: 什麼是 Azure Defender？
       url: https://docs.microsoft.com/azure/security-center/security-center-intro
     - text: 支援的功能
       url: https://docs.microsoft.com/azure/security-center/security-center-services
