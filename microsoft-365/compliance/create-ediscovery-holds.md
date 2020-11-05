@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以建立與核心 eDiscovery 案例相關聯的保留，以保留可能與調查相關的內容。
-ms.openlocfilehash: bf04fd0f0637247e4637b5d3fce82f911ca51f0e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: d2c9c02f7530c58975ddf99289a3a0872788146a
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546879"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920327"
 ---
 # <a name="create-an-ediscovery-hold"></a>建立電子文件探索保留
 
@@ -42,44 +42,44 @@ ms.locfileid: "47546879"
   
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並登入使用已獲指派適當 eDiscovery 許可權之使用者帳戶的認證。
 
-2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [ **全部顯示**]，然後按一下 [ **eDiscovery > Core**]。
+2. 在 Microsoft 365 規範中心的左功能窗格中，按一下 [ **全部顯示** ]，然後按一下 [ **eDiscovery > Core** ]。
 
-3. 在 [ **核心電子** 檔探索] 頁面上，選取您要在其中建立保留的案例，然後按一下 [ **開啟案例**]。
+3. 在 [ **核心電子** 檔探索] 頁面上，選取您要在其中建立保留的案例，然後按一下 [ **開啟案例** ]。
 
 4. 在案例的 **首頁** 上，按一下 [ **保留** ] 索引標籤。
   
-5. 在 [ **保留** ] 頁面上，按一下 [ **建立**]。
+5. 在 [ **保留** ] 頁面上，按一下 [ **建立** ]。
 
-6. 在 [ **命名您的保留** 嚮導] 頁面上，提供 [保留名稱] 並新增選用描述，然後按 **[下一步]**。 [保留] 的名稱在您的組織中必須是唯一的。
+6. 在 [ **命名您的保留** 嚮導] 頁面上，提供 [保留名稱] 並新增選用描述，然後按 **[下一步]** 。 [保留] 的名稱在您的組織中必須是唯一的。
 
 7. 在 [ **內容位置** ] 頁面上，選擇您要保留的內容位置。 您可以將信箱、網站和公用資料夾放入暫止狀態。
 
     ![選擇要保留的內容位置](../media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **信箱位置** -按一下 **[選擇使用者、群組或小組** ]，然後按一下 **[選擇使用者、群組或小組** ]，以指定要置於保留狀態的信箱。 使用 [搜尋] 方塊來尋找使用者信箱和通訊群組 (將保留在群組成員的信箱上) 進行暫止。 您也可以在 Microsoft 小組、Office 365 群組或 Yammer 群組的相關信箱上放置保留。 選取 [使用者、群組、小組] 核取方塊，按一下 **[選擇**]，然後按一下 [ **完成**]。
+   1. **信箱位置** -按一下 **[選擇使用者、群組或小組** ]，然後按一下 **[選擇使用者、群組或小組** ]，以指定要置於保留狀態的信箱。 使用 [搜尋] 方塊來尋找使用者信箱和通訊群組 (將保留在群組成員的信箱上) 進行暫止。 您也可以在 Microsoft 小組、Office 365 群組或 Yammer 群組的相關信箱上放置保留。 選取 [使用者、群組、小組] 核取方塊，按一下 **[選擇** ]，然後按一下 [ **完成** ]。
 
-   b. **網站位置** -按一下 **[選擇網站** ]，然後按一下 **[選擇網站** ]，以指定要保留的 SharePoint 和 OneDrive 帳戶。 輸入您要保留之每個網站的 URL。 您也可以為 Microsoft 團隊、Office 365 群組或 Yammer 群組新增 SharePoint 網站的 URL。 按一下 **[選擇**]，然後按一下 [ **完成**]。
+   1. **網站位置** -按一下 **[選擇網站** ]，然後按一下 **[選擇網站** ]，以指定要保留的 SharePoint 和 OneDrive 帳戶。 輸入您要保留之每個網站的 URL。 您也可以為 Microsoft 團隊、Office 365 群組或 Yammer 群組新增 SharePoint 網站的 URL。 按一下 **[選擇** ]，然後按一下 [ **完成** ]。
   
-   c. **Exchange 公用資料夾。** 將切換切換切換 ![ 控制項移 ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 至 [ **全部** ] 位置，將 Exchange Online 組織中的所有公用資料夾保留。 您無法選擇要保留的特定公用資料夾。 如果您不想要保留公用資料夾，請將切換參數設為 [ **無** ]。
+   1. **Exchange 公用資料夾。** 將切換切換切換 ![ 控制項移 ](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 至 [ **全部** ] 位置，將 Exchange Online 組織中的所有公用資料夾保留。 您無法選擇要保留的特定公用資料夾。 如果您不想要保留公用資料夾，請將切換參數設為 [ **無** ]。
 
    > [!NOTE]
    > 您必須將至少一個內容位置新增至保留。 否則，eDiscovery 保留靜態會顯示沒有任何專案處於保留狀態。
 
-8. 當您完成將內容位置新增至保留狀態時，按 **[下一步]**。
+8. 當您完成將內容位置新增至保留狀態時，按 **[下一步]** 。
 
-9. 若要建立查詢式保留與條件，請完成下列。 否則，若要保留指定內容位置中的所有內容，請按 **[下一步]**。
+9. 若要建立查詢式保留與條件，請完成下列。 否則，若要保留指定內容位置中的所有內容，請按 **[下一步]** 。
 
     ![使用條件建立以查詢為基礎的保留](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
-    a. 在 [ **關鍵字**] 下方的方塊中，輸入搜尋查詢，只保留符合搜尋準則的內容。 您可以指定關鍵字、電子郵件訊息屬性或檔案屬性，例如檔案名。 您也可以使用更複雜的查詢，使用布林運算子，例如 **AND**、 **or**或 **NOT**。
+    1. 在 [ **關鍵字** ] 下方的方塊中，輸入搜尋查詢，只保留符合搜尋準則的內容。 您可以指定關鍵字、電子郵件訊息屬性或檔案屬性，例如檔案名。 您也可以使用更複雜的查詢，使用布林運算子，例如 **AND** 、 **or** 或 **NOT** 。
 
-    b. 按一下 [ **新增條件** ] 以新增一或多個條件，以縮小保留的搜尋查詢。 每個條件都會將子句新增至您建立保留時所建立並執行的 KQL 搜尋查詢。 例如，您可以指定日期範圍，讓在日期範圍內建立的電子郵件或網站檔處於暫止狀態。 條件會以邏輯方式連線至 [ **關鍵字** ] 方塊中指定的關鍵字查詢 () 由 **AND** 運算子。 這表示專案必須同時滿足關鍵字查詢和要保留的條件。
+    1. 按一下 [ **新增條件** ] 以新增一或多個條件，以縮小保留的搜尋查詢。 每個條件都會將子句新增至您建立保留時所建立並執行的 KQL 搜尋查詢。 例如，您可以指定日期範圍，讓在日期範圍內建立的電子郵件或網站檔處於暫止狀態。 條件會以邏輯方式連線至 [ **關鍵字** ] 方塊中指定的關鍵字查詢 () 由 **AND** 運算子。 這表示專案必須同時滿足關鍵字查詢和要保留的條件。
 
     如需建立搜尋查詢和使用條件的詳細資訊，請參閱 [內容搜尋的關鍵字查詢和搜尋條件](keyword-queries-and-search-conditions.md)。
 
-10. 設定查詢型保留後，請按 **[下一步]**。
+10. 設定查詢型保留後，請按 **[下一步]** 。
 
-11. 請複查您的設定 (並在必要時進行編輯) ，然後按一下 [ **建立此保留**]。
+11. 請複查您的設定 (並在必要時進行編輯) ，然後按一下 [ **建立此保留** ]。
 
 ## <a name="query-based-holds-placed-on-site-documents"></a>放在網站檔上的查詢式保留
 
@@ -123,7 +123,7 @@ ms.locfileid: "47546879"
 
 - 如果在 eDiscovery 案例中將多個 eDiscovery 保留置於單一位置，且您選擇搜尋保留的位置，則該搜尋查詢的關鍵字數目上限為500。 這是因為搜尋會結合使用 **OR** 運算子的所有查詢型保留。 如果合併保留查詢和搜尋查詢中的關鍵字超過500個，則會搜尋信箱中的所有內容，而不只是符合查詢架構案例的內容。
 
-- 如果 eDiscovery 保留狀態為 [ **開啟**]，則您仍然可以在保持開啟狀態時，搜尋保留的位置。
+- 如果 eDiscovery 保留狀態為 [ **開啟** ]，則您仍然可以在保持開啟狀態時，搜尋保留的位置。
 
 ## <a name="preserve-content-in-microsoft-teams"></a>保留 Microsoft 小組中的內容
 
@@ -151,7 +151,7 @@ ms.locfileid: "47546879"
 
 - 如先前所述，若要將位於小組和 Office 365 群組的內容保留，您必須指定與群組或小組相關聯的信箱和 SharePoint 網站。
 
-- 在[Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中執行**set-unifiedgroup 指令程式**，以查看小組和 Office 365 群組的屬性。 若要取得與小組或 Office 365 群組相關聯之網站的 URL，這是一種很好的方式。 例如，下列命令會顯示名為「資深領導團隊」的 Office 365 群組的所選屬性：
+- 在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中執行 **set-unifiedgroup 指令程式** ，以查看小組和 Office 365 群組的屬性。 若要取得與小組或 Office 365 群組相關聯之網站的 URL，這是一種很好的方式。 例如，下列命令會顯示名為「資深領導團隊」的 Office 365 群組的所選屬性：
 
     ```text
     Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -187,19 +187,19 @@ ms.locfileid: "47546879"
 
 將信箱、SharePoint 網站或 OneDrive 帳戶從 eDiscovery 保留中移除之後，會套用 *延遲保留* 。 這表示實際刪除保留的時間延遲30天，以防止資料被永久刪除 (從內容位置清除) 。 這可讓系統管理員搜尋或復原在移除 eDiscovery 保留後將會清除的內容。 信箱和網站的延遲保留運作方式的詳細資料會有所不同。
 
-- **信箱：** [延遲保留] 會在下次受管理的資料夾助理處理信箱及偵測移除 eDiscovery 暫止時，放在信箱上。 具體說來，當受管理的資料夾助理將下列其中一個信箱屬性設定為 **True**時，會將延遲保留套用至信箱：
+- **信箱：** [延遲保留] 會在下次受管理的資料夾助理處理信箱及偵測移除 eDiscovery 暫止時，放在信箱上。 具體說來，當受管理的資料夾助理將下列其中一個信箱屬性設定為 **True** 時，會將延遲保留套用至信箱：
 
    - **DelayHoldApplied：** 此屬性適用于使用 Outlook 的使用者所產生的電子郵件與 Outlook，以及儲存在使用者信箱中的 web) 上的 Outlook 所產生的內容 (。
 
    - **DelayReleaseHoldApplied：** 此屬性適用于由非 Outlook 應用程式（如 Microsoft 團隊、Microsoft Forms 及 Microsoft Yammer) 所產生）所產生的雲端式內容 (，這些應用程式儲存在使用者的信箱中。 Microsoft app 所產生的雲端資料通常會儲存在使用者信箱中的隱藏資料夾中。
 
-   當 [任何先前的屬性] 設定為 True 時，信箱 (上的 [延遲保留] 設定為) **True** 時，信箱仍會被視為無限期保留期間（如同信箱處於訴訟暫止狀態時）。 30天后，延遲保留會到期，而且 Microsoft 365 會嘗試將 DelayHoldApplied 或 DelayReleaseHoldApplied 屬性設定為 **False**) ，以移除延遲保留 (，使保留成為移除。 在上述任一屬性設定為 **False**之後，在下一次受管理的資料夾助理處理信箱時，會清除標示為待移除的對應專案。
+   當 [任何先前的屬性] 設定為 True 時，信箱 (上的 [延遲保留] 設定為) **True** 時，信箱仍會被視為無限期保留期間（如同信箱處於訴訟暫止狀態時）。 30天后，延遲保留會到期，而且 Microsoft 365 會嘗試將 DelayHoldApplied 或 DelayReleaseHoldApplied 屬性設定為 **False** ) ，以移除延遲保留 (，使保留成為移除。 在上述任一屬性設定為 **False** 之後，在下一次受管理的資料夾助理處理信箱時，會清除標示為待移除的對應專案。
 
    如需詳細資訊，請參閱[管理延遲保留信箱](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)。
 
 - **SharePoint 和 OneDrive 網站：** 從 eDiscovery 保留中移除網站後的30天延遲保留期間內，將不會刪除保留在保留文件庫中的任何 SharePoint 或 OneDrive 內容。 這與從保留原則發行網站時會發生什麼情況。 此外，您無法在30天的延遲保留期間內，以手動方式刪除保留文件庫中的內容。 
 
-   如需詳細資訊，請參閱 [發行保留原則](retention.md#releasing-a-retention-policy)。
+   如需詳細資訊，請參閱 [解除保留原則](retention.md#releasing-a-policy-for-retention)。
 
 當您關閉核心 eDiscovery 案例時，延遲保留也會套用至保留狀態，因為關閉案例時會關閉保留。 如需關閉案例的詳細資訊，請參閱 [關閉、重新開啟和刪除核心 eDiscovery 案例](close-reopen-delete-core-ediscovery-cases.md)。
 
@@ -207,7 +207,7 @@ ms.locfileid: "47546879"
 
 下表列出 eDiscovery 案例及案例保留的限制。
 
-  |**限制的描述**|**限制**|
+  | 限制的描述 | 限制 |
   |:-----|:-----|
   |組織的案例數目上限  <br/> |無限制  <br/> |
   |組織的 eDiscovery 保留數目上限  <br/> |10,000  <br/> |
@@ -217,4 +217,9 @@ ms.locfileid: "47546879"
   |||
 
    > [!NOTE]
-   > <sup>1</sup> 若要查看超過1000案例、保留、搜尋或匯出的清單，您可以使用對應的 Office 365 安全性 & 合規性 PowerShell Cmdlet：<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > <sup>1</sup> 若要查看超過1000案例、保留、搜尋或匯出的清單，您可以使用對應的 Office 365 安全性 & 合規性 PowerShell Cmdlet：
+   >
+   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)

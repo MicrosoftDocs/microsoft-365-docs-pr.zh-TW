@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 系統管理員可以深入瞭解安全性 & 規範中心的郵件流程儀表板中提供的真知灼見和報告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d252b9d898d4ee5a0df854a871f821c2b02bb482
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f7781dca48e1eae4716dbe6c7c3b40da4bae0cd8
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877774"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920005"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
 
@@ -66,13 +66,12 @@ ms.locfileid: "48877774"
 
 - Azure Active Directory 中的 **[Exchange 系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** 。
 
-- 郵件流程 Security & 合規性中心內的 **系統管理員** ：如果此角色群組的成員不是全域系統管理員或 Exchange 系統管理員角色群組的成員，請注意下列問題和需求：
-
+- 郵件流程安全性 & 規範中心的 **系統管理員** 。 如果該帳戶並非也是「組織管理」或「Exchange 管理員」角色群組的成員，請考慮下列問題：
   - 使用者必須直接登入安全性 & 合規性中心 <https://protection.office.com> 。
   - 使用者只具有郵件流程儀表板的唯讀許可權。
   - 使用者將無法存取 Microsoft 365 系統管理中心。
 
-如需安全性 & 規範中心中許可權的詳細資訊，請參閱 [安全性 & 規範中心中的許可權](permissions-in-the-security-and-compliance-center.md) ，並 [授與使用者對安全性 & 規範中心的存取權](grant-access-to-the-security-and-compliance-center.md)。
+如需許可權的詳細資訊，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md) ，並 [讓使用者能夠存取安全性 & 規範中心](grant-access-to-the-security-and-compliance-center.md)。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>哪裡可以找到郵件流程儀表板
 

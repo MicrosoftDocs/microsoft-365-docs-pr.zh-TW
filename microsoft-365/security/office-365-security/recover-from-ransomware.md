@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.topic: how-to
+ms.article: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -14,23 +14,27 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體的攻擊復原。
-ms.openlocfilehash: dd740b19abac9d30196c1ffd82c8a3f377b19dbf
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: de1cddbdf1c2b3ffeb8fd74a8f0d31e815eb1b70
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845537"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920605"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>從 Microsoft 365 復原勒索軟體攻擊
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-即使您採取每一種防範措施保護您的組織，您還是可以遭到 [勒索軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) 攻擊的受害人。 勒索軟體是很大的商務用，攻擊是以複雜的驗證。
+即使您採取每一種防範措施保護您的組織，您還是可以遭到 [勒索軟體](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) 攻擊的受害人。 勒索軟體是大型企業，攻擊非常複雜。
 
-本主題中的步驟可讓您最有可能復原由勒索軟體加密的資料，並將協助停止傳播組織中的感染。 在您開始之前，請考慮下列項目：
+本文中的步驟可讓您最有可能復原資料，並停止感染的內部傳播。 在您開始之前，請考慮下列項目：
 
-- 不保證支付 ransom 將會傳回檔案的存取權。 實際上，支付 ransom 可讓您成為更多勒索軟體的目標。 如果您已付費，但您已能夠順利復原檔案，而不需要使用攻擊者的解決方式，則應該撥打您的銀行以查看是否可以封鎖交易。 此外，我們也建議您向法律強制執行（如本主題稍後所述），向法律執行、詐騙報告網站和 Microsoft 報告勒索軟體攻擊。
+- 不保證支付 ransom 將會傳回檔案的存取權。 實際上，支付 ransom 可讓您成為更多勒索軟體的目標。
+
+  如果您已付費，但已復原但未使用攻擊者的解決方案，請與您的銀行聯繫以查看是否可以封鎖交易。
+
+  我們也建議您向法律強制執行、詐騙報告網站和 Microsoft 報告勒索軟體攻擊，如本文稍後所述。
 
 - 您必須快速回應攻擊及其結果，這一點很重要。 您等候的時間越長，您可以復原受影響資料的可能性也就越低。
 
@@ -40,13 +44,13 @@ ms.locfileid: "48845537"
 
 如果您沒有備份，或是您的備份也受到勒索軟體的影響，您可以略過此步驟。
 
-## <a name="step-2-disable-activesync-and-onedrive-sync"></a>步驟2：停用 ActiveSync 和 OneDrive 同步處理
+## <a name="step-2-disable-exchange-activesync-and-onedrive-sync"></a>步驟2：停用 Exchange ActiveSync 和 OneDrive 同步處理
 
 這裡的關鍵點是停止勒索軟體加密的資料加密。
 
-如果您懷疑電子郵件是目標，您應該暫時停用使用者對信箱的存取權。 Exchange ActiveSync 是由行動裝置用於同步裝置與 Exchange Online 信箱之間的資料。
+如果您懷疑電子郵件為勒索軟體加密的目標，請暫時停用使用者對信箱的存取。 Exchange ActiveSync 會同步處理裝置和 Exchange Online 信箱之間的資料。
 
-若要停用信箱的 ActiveSync，請參閱 [如何為 Exchange Online 中的使用者停用 exchange ActiveSync](https://support.microsoft.com/help/2795303)。
+若要停用信箱的 Exchange ActiveSync，請參閱 [如何為 Exchange Online 中的使用者停用 exchange ActiveSync](https://support.microsoft.com/help/2795303)。
 
 若要停用信箱的其他類型的存取，請參閱：
 
@@ -58,7 +62,9 @@ ms.locfileid: "48845537"
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>步驟3：從受影響的裝置移除惡意程式碼
 
-在所有可疑電腦和裝置上執行完整的防病毒掃描，並提供最新的更新，以偵測和移除與勒索軟體相關聯的負載。 請勿忘記正在同步處理資料的裝置，或對應網路磁碟機的目標 (那些電腦和裝置必須進行掃描，也就是) 。
+在所有置疑的電腦和裝置上執行完整、目前的防病毒掃描，以偵測和移除與勒索軟體相關聯的負載。
+
+請勿忘記掃描正在同步處理之資料的裝置，或對應網路磁碟機的目標。
 
 您可以將 [Windows Defender](https://www.microsoft.com/windows/comprehensive-security) 或 (用於舊版用戶端) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201)。
 
@@ -90,7 +96,7 @@ ms.locfileid: "48845537"
 
 ## <a name="step-7-re-enable-exchange-activesync-and-onedrive-sync"></a>步驟7：重新啟用 Exchange ActiveSync 和 OneDrive 同步處理
 
-在您清潔電腦和裝置並復原資料後，您可以重新啟用 ActiveSync，並 OneDrive 您先前在 [步驟 2](#step-2-disable-activesync-and-onedrive-sync)中停用的同步處理。
+在您清潔電腦和裝置並復原資料之後，您可以重新啟用 Exchange ActiveSync 和您先前在 [步驟 2](#step-2-disable-exchange-activesync-and-onedrive-sync)中停用 OneDrive 同步處理。
 
 ## <a name="step-8-optional-block-onedrive-sync-for-specific-file-extensions"></a>步驟 8 (選用) ：封鎖特定檔案副檔名 OneDrive 同步處理
 
@@ -126,7 +132,7 @@ ms.locfileid: "48845537"
 
 ### <a name="submit-email-messages-to-microsoft"></a>將電子郵件提交至 Microsoft
 
-您可以使用下列其中一種方法，報告包含勒索軟體的網路釣魚郵件。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
+您可以使用數種方法中的其中一種，報告包含勒索軟體的網路釣魚郵件。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 ## <a name="see-also"></a>另請參閱
 

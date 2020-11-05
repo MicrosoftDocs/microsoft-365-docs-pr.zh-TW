@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bfb58cb043f2bc641245814c41e389ddcdbfdefa
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3dae9f208f5bb08d694322eb9f7cff35986930da
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842413"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920487"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>開啟 Microsoft 365 Defender 時的常見提問
 
@@ -43,7 +43,7 @@ ms.locfileid: "48842413"
 具有下列非 E5 授權的客戶可以使用 Microsoft 365 Defender：
 
 - 適用於端點的 Microsoft Defender
-- 適用於身分識別的 Microsoft Defender 
+- 適用於身分識別的 Microsoft Defender
 - Microsoft Cloud App Security
 - 適用于 Office 的 Defender 365 (方案 2) 
  
@@ -59,7 +59,7 @@ ms.locfileid: "48842413"
 Microsoft 365 Defender 會自動選取資料中心的最佳位置，以進行合併資料的處理和儲存。 如果您有 Microsoft Defender for Endpoint，它會選取用來進行終結點的 Defender 所用的相同位置。
 
 >[!NOTE]
->Microsoft Defender for Endpoint 會在歐盟 (歐盟透過 Azure Defender * 開啟時) 資料中心。 Microsoft 365 Defender 會在相同的歐盟資料中心，針對以這種方式布建 Microsoft Defender for Endpoint 的客戶自動布建。 
+>Microsoft Defender for Endpoint 會在歐盟 (歐盟透過 Azure Defender 開啟時) 資料中心。 Microsoft 365 Defender 會在相同的歐盟資料中心，針對以這種方式布建 Microsoft Defender for Endpoint 的客戶自動布建。 
 
 在 microsoft **365 defender) >** 的 Microsoft 365 Defender (設定] 的 [設定] 頁面中布建服務之前和之後，就會顯示資料中心位置。 如果您想要使用另一個資料中心位置，請在 Microsoft 365 的安全性中心選取 [ **需要協助** ]，以與 Microsoft 支援人員聯繫。
 

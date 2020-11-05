@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft 以各種管道和方法提供 EOP 的協助，包括自我支援和協助支援。
-ms.openlocfilehash: c305f2e63d668a163bb82f5a4712cbdddc6f9259
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: dd68200b7a3723adc7ccba899c0cc88031891197
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202720"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920427"
 ---
 # <a name="help-and-support-for-eop"></a>EOP 的說明和支援
 
@@ -28,7 +28,7 @@ ms.locfileid: "48202720"
 
 ## <a name="self-support-options"></a>自我支援選項
 
-登入時，Microsoft 365 系統管理中心會提供您組織服務狀態的相關資訊。 此外，服務健康情況區段會顯示服務的目前狀態、中斷及中斷的詳細資料，並列出已計畫的維護時間。 Microsoft 365 系統管理中心還提供已知問題和預期解決方案的相關資訊。 如果您受到全服務事件的影響，您應該會看到通訊警示 (通常伴隨著鈴鐺圖示)。 建議您詳讀內容並採取適當的行動。 如需服務健康情況區域的詳細資訊，請參閱 [服務健康情況和持續性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您可以使用此處列出的工具、論壇和社群網站，以自行找到更多說明。
+登入時，Microsoft 365 系統管理中心會提供您組織服務狀態的相關資訊。 此外，服務健康情況區段會顯示服務的目前狀態、中斷及中斷的詳細資料，並列出已計畫的維護時間。 Microsoft 365 系統管理中心還提供已知問題和預期解決方案的相關資訊。 如果您受到全服務事件的影響，您應該會看到通訊警示 (通常伴隨著鈴鐺圖示)。 建議您詳讀內容並採取適當的行動。 如需服務健康情況區域的詳細資訊，請參閱 [服務健康情況和持續性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity)。 您也可以使用這裡所列的工具、論壇及社區網站，尋找您自己的其他協助。
 
 [Exchange Online Protection 產品概觀](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -42,7 +42,7 @@ ms.locfileid: "48202720"
 
 ## <a name="assisted-support-from-microsoft"></a>Microsoft 的協助支援
 
-您可以在 Microsoft 365 系統管理中心內提出新的服務要求，或撥打電話，以獲得 Microsoft 的協助。 Premier support 訂閱者有額外的支援選項。
+您可以在 Microsoft 365 系統管理中心內提出新的服務要求，或撥打電話，以獲得 Microsoft 的協助。 Premier Support 訂閱者有額外的支援選項。
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Microsoft Premier Support 訂閱者支援
 
@@ -52,7 +52,7 @@ ms.locfileid: "48202720"
 
 ### <a name="ask-for-help-on-the-web"></a>在網路上尋求協助
 
-1. 登入 [Microsoft 365 系統管理中心]。
+1. 登入 Microsoft 365 系統管理中心。
 
 2. 移至 **[支援]** \> **[要求客戶支援]** \> **[新增服務要求]**
 
@@ -60,11 +60,11 @@ ms.locfileid: "48202720"
 
 ### <a name="ask-for-help-on-the-telephone"></a>透過電話尋求協助
 
-1. 登入 [Microsoft 365 系統管理中心]。
+1. 登入 Microsoft 365 系統管理中心。
 
-2. 若為一般產品問題，請移至 **[支援]** \> **[要求客戶支援]** \> **[連絡技術支援]**。
+2. 如需一般產品問題，請移至 **支援人員** \> **要求客戶支援** \> **電話技術支援** 人員。
 
-   購買 EOP 之前如有疑問，或關於帳務和訂閱的問題，請移至 **[支援]** \> **[要求客戶支援]** \> **[連絡帳務和訂閱支援]**。
+   購買 EOP 之前如有疑問，或關於帳務和訂閱的問題，請移至 **[支援]** \> **[要求客戶支援]** \> **[連絡帳務和訂閱支援]** 。
 
 3. 使用虛擬代理程式來搜尋最新的適當電話號碼。
 

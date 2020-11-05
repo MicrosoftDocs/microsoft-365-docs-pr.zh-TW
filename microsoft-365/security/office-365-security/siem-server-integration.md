@@ -17,12 +17,12 @@ ms.custom:
 - SIEM
 - seo-marvel-apr2020
 description: 深入瞭解安全性資訊和事件管理 (SIEM) 伺服器與您的 Microsoft 365 雲端服務和應用程式整合
-ms.openlocfilehash: 0e582333615d11c500b114225435903cea386ade
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 17e21d19463187744afe855b2304ac71956545d2
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846397"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48919758"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>安全性資訊和事件管理 (SIEM) 伺服器與 Microsoft 365 服務和應用程式整合
 
@@ -52,7 +52,7 @@ SIEM server 可以從各種各樣的 Microsoft 365 服務和應用程式接收�
 
 |Microsoft 365 服務或應用程式|SIEM 伺服器的輸入/方法|可深入了解的資源|
 |---|---|---|
-|[Microsoft Defender for Office 365](office-365-atp.md)|稽核記錄|[SIEM 與 Microsoft Defender for Office 365 的整合](siem-integration-with-office-365-ti.md)|
+|[適用於 Office 365 的 Microsoft Defender](office-365-atp.md)|稽核記錄|[SIEM 與 Microsoft Defender for Office 365 的整合](siem-integration-with-office-365-ti.md)|
 |[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)|Azure 中主控的 HTTPS 端點 <br/>REST API|[將提醒納入您的 SIEM 工具](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem)|
 |[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|記錄整合|[SIEM 與 Microsoft Cloud App Security 的整合](https://docs.microsoft.com/cloud-app-security/siem)|
 |
@@ -70,6 +70,6 @@ SIEM server 可以從各種各樣的 Microsoft 365 服務和應用程式接收�
 
 ## <a name="more-resources"></a>其他資源
 
-[整合 Azure Defender 中的安全性解決方案 *](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
+[整合 Azure Defender 中的安全性解決方案](https://docs.microsoft.com/azure/security-center/security-center-partner-integration#exporting-data-to-a-siem)
 
 [整合 Microsoft Graph 安全性 API 警示與 SIEM](https://docs.microsoft.com/graph/security-integration)

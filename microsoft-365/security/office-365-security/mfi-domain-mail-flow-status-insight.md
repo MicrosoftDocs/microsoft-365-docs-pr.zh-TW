@@ -12,20 +12,22 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 系統管理員可以瞭解如何使用安全性 & 規範中心內郵件流程儀表板中的最上層網域郵件流程狀態，來疑難排解與電子郵件網域中的 MX 記錄相關的郵件流程問題。
-ms.openlocfilehash: d4abc311e96df87894d5f059328f1a16a00190b8
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+description: 系統管理員可以瞭解如何使用安全性 & 規範中心內郵件流程儀表板中的最上層網域郵件流程狀態，來疑難排解與其 MX 記錄相關的郵件流程問題。
+ms.openlocfilehash: 0d750ab4dbe5875796118086fae1d9119dc486f0
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877502"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920581"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>安全性 & 規範中心內的最上層網域郵件流程狀態洞察力
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[安全性 & 合規性中心](https://protection.office.com)內的 [郵件流程儀表板](mail-flow-insights-v2.md)中的 **最上層網域郵件流程狀態** ，可讓您在郵件流程方面，為您組織的網域提供目前的狀態。 這種洞察力可協助您識別及疑難排解發生 * *_郵件流程 (影響_* 的網域。例如，無法接收外部電子郵件) ，尤其是網域到期或具有不正確 MX 記錄的網域。
+[安全性 & 合規性中心](https://protection.office.com)內的 [郵件流程儀表板](mail-flow-insights-v2.md)中的 **最上層網域郵件流程狀態** ，可讓您在組織中取得目前的郵件流程狀態。
+
+這種洞察力可協助您識別及疑難排解出現 * *_郵件流程_* _ 問題的網域。 例如，網域無法接收外部電子郵件，因為網域已到期或網域的 MX 記錄不正確。
 
 ![安全性 & 規範中心內郵件流程儀表板中的上方網域流程狀態構件](../../media/mfi-top-domain-mail-flow-status-widget.png)
 
@@ -35,14 +37,14 @@ ms.locfileid: "48877502"
 - **先前的 MX 記錄**
 - **目前的 MX 記錄**
 - **電子郵件接收狀態**
-- **網域狀態** ：綠色核取記號表示在您按一下小工具時 (目前的 MX 記錄，) 符合我們記錄的值，而且該網域已于過去的兩個小時內收到電子郵件。
+- **網域狀態** ：綠色核取記號表示在您按下該小工具時 (的目前 MX 記錄，) 符合我們記錄的值，而且該網域已于過去的兩個小時內收到電子郵件。
 
-  紅色 X 表示 MX 記錄已變更，且在過去6小時內，該網域未收到任何電子郵件。 這可能表示您的網域已到期，或 MX 記錄的更新錯誤。 請洽詢網域註冊機構或 DNS 主機服務，以查看網域是否已過期，或網域的 MX 記錄是否不正確。
+  紅色 X 表示 MX 記錄已變更，而且在過去6個小時內，該網域未收到任何電子郵件。 這可能表示您的網域已到期，或 MX 記錄的更新錯誤。 請洽詢網域註冊機構或 DNS 主機服務，以查看網域是否已過期，或網域的 MX 記錄是否不正確。
 
 您可以按一下 [ **View more** ]，以查看更多網域的相同資訊。
 
 ![最上層網域郵件流程狀態洞察力中的詳細資料快顯視窗](../../media/mfi-top-domain-mail-flow-status-view-details.png)
 
-## <a name="related-topics"></a>相關主題
+## <a name="see-also"></a>另請參閱
 
 如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso 如何使用 Microsoft 365 for enterprise 的安全性功能。
-ms.openlocfilehash: 8d62dba96ecf19f0dc31af2cf5a2d85257ca19d5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a72a770029328eaddf76cbe1b2039386c50c2750
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847103"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920415"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Contoso Corporation 之 Microsoft 365 for enterprise security 的摘要
 
@@ -127,9 +127,9 @@ Contoso 遵循這些步驟來準備其安全性，以供部署 Microsoft 365 for
 
 ## <a name="security-management"></a>安全性管理
 
-- 使用 Azure Defender 的中央安全性儀表板
+- 使用 Azure Defender 時使用的中央安全性儀表板
 
-  Contoso 使用 [Azure Defender *](https://azure.microsoft.com/services/security-center/) 來顯示安全和威脅防護的統一觀點，以管理其整個工作負載的安全性原則，以及回應 cyberattacks。
+  Contoso 使用 [Azure Defender](https://azure.microsoft.com/services/security-center/) 來呈現安全和威脅防護的統一視圖、管理其工作負載的安全性原則，以及回應 cyberattacks。
 
 - 適用於具有 Windows Defender 資訊安全中心之使用者的中央安全性儀表板
 

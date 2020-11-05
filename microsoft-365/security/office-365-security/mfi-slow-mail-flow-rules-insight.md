@@ -14,12 +14,12 @@ ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用「修正慢速」郵件流程規則深入瞭解安全性 & 合規性中心，識別並修正低效或中斷的郵件流程規則， (也稱為其組織中) 的傳輸規則。
-ms.openlocfilehash: 6a2a3c42eadf3c621b34d2a21344eafd2618e669
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: f51c5a577fc6d9c52e35a5217cae4ae94c546c9d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877534"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920545"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>修正郵件流程規則安全 & 規範中心的洞察力
 
@@ -32,7 +32,9 @@ ms.locfileid: "48877534"
 - 使用複雜正則運算式 (RegEx) 模式比對的條件。
 - 在附件中使用內容檢查的條件。
 
-**修正慢速郵件流程規則** 會深入瞭解 [安全性 & 合規性中心](https://protection.office.com)的 [ [郵件流程] 儀表板](mail-flow-insights-v2.md)的 [ **建議** ] 區域，當郵件流程規則耗時過長時通知您。 這種洞察力只會在偵測到條件之後才會出現 (如果您沒有任何郵件迴圈，您就不會看到) 的洞察力。
+**修正慢速郵件流程規則** 會深入瞭解 [安全性 & 合規性中心](https://protection.office.com)的 [ [郵件流程] 儀表板](mail-flow-insights-v2.md)的 [ **建議** ] 區域，當郵件流程規則耗時過長時通知您。
+
+這種洞察力只會在偵測到條件之後才會出現 (如果您沒有任何郵件迴圈，您就不會看到) 的洞察力。
 
 您可以使用此通知來協助您識別及微調郵件流程規則，以協助減少郵件流程延遲。
 
@@ -47,8 +49,8 @@ ms.locfileid: "48877534"
 
 ![在修正慢速郵件流程規則真知灼見上，按一下 [查看詳細資料] 後出現的詳細資料浮出控制項](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
-如需 Exchange Online 中郵件流程規則的條件和例外狀況的相關資訊，請參閱 [郵件流程規則條件和例外狀況) 在 Exchange online 中的 (謂語](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
+如需郵件流程規則中的條件和例外狀況的相關資訊，請參閱 [郵件流程規則條件和例外狀況) 在 Exchange Online 中的 (謂語](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)。
 
-## <a name="related-topics"></a>相關主題
+## <a name="see-also"></a>另請參閱
 
 如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

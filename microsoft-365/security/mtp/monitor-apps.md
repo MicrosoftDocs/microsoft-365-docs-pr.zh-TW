@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcb7997c8c248c2b4e7d16902b6ebdd7756ccd0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: f73c6b010677cdc481655d1d5310872fd1a99126
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846625"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920511"
 ---
 # <a name="app-monitoring-and-reporting-in-the-microsoft-365-security-center"></a>Microsoft 365 security center 中的應用程式監視與報告
 
@@ -65,10 +65,10 @@ ms.locfileid: "48846625"
 
 ## <a name="monitor-health-for-infrastructure-workloads"></a>監視基礎結構工作負載的健康情況
 
-**基礎結構健康** 情況會顯示 Azure Defender 中基礎結構工作負載的健康狀態警示。
+**基礎結構健康情況** 會顯示 Azure Defender 中基礎結構工作負載的健康狀態警示。
 
-Azure Defender * 跨內部部署和雲端工作負載提供 Office 365 的統一安全性管理和 Defender。 您可以收集、搜尋及分析不同來源的安全性資料，包括防火牆和其他合作夥伴解決方案。
+Azure Defender 跨內部部署和雲端工作負載提供 Office 365 的統一安全性管理和 Defender。 您可以收集、搜尋及分析不同來源的安全性資料，包括防火牆和其他合作夥伴解決方案。
 
-如需詳細資訊，請參閱 [Azure Defender * 檔](https://docs.microsoft.com/azure/security-center/)。
+如需詳細資訊，請參閱 [Azure Defender 檔](https://docs.microsoft.com/azure/security-center/)。
 
 ![基礎結構健康卡](../../media/infrastructure-health.png)

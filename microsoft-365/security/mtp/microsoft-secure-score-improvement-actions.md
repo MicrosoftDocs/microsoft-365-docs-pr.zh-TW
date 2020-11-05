@@ -20,24 +20,23 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: ff81b6e1a290d928d68cb43b455713183d24f75b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846637"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920533"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分數評估安全性狀況
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。
 
 為了協助您更快速地取得所需資訊，Microsoft 改進的動作會組織成群組：
 
 *  (Azure Active Directory 帳戶 & 角色的身分識別) 
-* 資料 (Microsoft 資訊保護) 
+* 資料 (現在沒有任何改進動作) 
 * 裝置 (Microsoft Defender for Endpoint，稱為 [裝置的 Microsoft 安全評分](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)) 
 * App (電子郵件和雲端應用程式，包括 Office 365 和 Microsoft Cloud App Security) 
 * 基礎結構 (現在沒有任何改進動作) 

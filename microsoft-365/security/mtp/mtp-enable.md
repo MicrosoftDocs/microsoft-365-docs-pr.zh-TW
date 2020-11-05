@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b5bb99ed4b8cee7ea920679e20f69c7a0e002d26
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c5b8cae9e4eabcb2b3c6a7eb76971784193a221d
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843633"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920499"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>開啟 Microsoft 365 Defender
 
@@ -69,7 +69,7 @@ Microsoft 365 Defender 會將資料儲存並處理于 [Microsoft Defender For En
 在 Microsoft 365 的安全性中心中，選取 [ **需要協助** ]，以與 microsoft 支援部門聯繫，以在不同的資料中心位置布建 Microsoft 365 Defender。 
 
 >[!NOTE]
->Microsoft Defender for Endpoint 會在歐盟 (歐盟透過 Azure Defender * 開啟時) 資料中心。 Microsoft 365 Defender 會在相同的歐盟資料中心，針對以這種方式布建 Defender 的客戶自動布建。 
+>Microsoft Defender for Endpoint 會在歐盟 (歐盟透過 Azure Defender 開啟時) 資料中心。 Microsoft 365 Defender 會在相同的歐盟資料中心，針對以這種方式布建 Defender 的客戶自動布建。 
 
 ### <a name="confirm-that-the-service-is-on"></a>確認服務已開啟
 服務一旦佈建，它會新增：
