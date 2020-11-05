@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規性中心，您可以集中管理與安全性或合規性相關的所有工作權限。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9ad17933592b860fb81e469fd55a454c90b71320
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0f7dcddd7070f95ae61b17b9623dfcbab4a62e5f
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845753"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920629"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
 
@@ -103,8 +103,8 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |**適用於端點的 Microsoft Defender 和 EDR**|指派角色。 <br/><br/> 管理電腦群組。 <br/><br/> 設定端點威脅偵測和自動補救。 <br/><br/> 檢視、調查及回應警示。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|新增系統管理員、新增原則和設定、上傳記錄及執行控管動作。|
-|[**Azure Defender** _](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (即將推出)|檢視安全性原則、檢視安全性狀態、編輯安全性原則、檢視警示和建議、關閉警示和建議。|
-|[_ *Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
+|[**Azure Defender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles) (即將推出)|檢視安全性原則、檢視安全性狀態、編輯安全性原則、檢視警示和建議、關閉警示和建議。|
+|[**Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
 |
 
 ### <a name="security-operator"></a>安全性操作員
@@ -140,8 +140,8 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |**適用於端點的 Microsoft Defender 和 EDR**|檢視和調查警示。|
 |[**Intune**](https://docs.microsoft.com/intune/role-based-access-control)|檢視使用者、裝置、註冊、設定及應用程式資訊。 <br/><br/> 「無法」變更 Intune。|
 |[**雲端 App 安全性**](https://docs.microsoft.com/cloud-app-security/manage-admins)|使用唯讀權限來檢視資訊。 <br/><br/> 管理警示。|
-|[**Azure Defender** _](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|檢視建議和警示。 <br/><br/> 檢視安全性原則。 <br/><br/> 檢視安全性狀態、但無法進行變更。|
-|[_ *Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
+|[**Azure Defender**](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles)|檢視建議和警示。 <br/><br/> 檢視安全性原則。 <br/><br/> 檢視安全性狀態、但無法進行變更。|
+|[**Office 365 服務健康狀態**](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health)|檢視 Office 365 服務的健康狀態。|
 |
 
 ## <a name="global-administrators-can-manage-roles-in-azure-active-directory"></a>全域管理員可在 Azure Active Directory 中管理角色

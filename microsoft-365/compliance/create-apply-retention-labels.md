@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及發佈保留標籤的指示，以便您日後在應用程式中套用，用以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: e1504bf4dda8ee2e9f78f84c147bb4f3ebc22887
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e13da466e10a347270d4b1097d36476d974557a7
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773994"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920337"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>建立保留標籤，並在應用程式中使用這些標籤
 
@@ -60,12 +60,12 @@ ms.locfileid: "48773994"
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，瀏覽至下列其中一個位置：
     
     - 如果您使用記錄管理：
-        - [解決方案]   >  [記錄管理]   >  [檔案計劃]  索引標籤 > [+ 建立標籤]   >  [保留標籤] 
+        - [解決方案]  >  [記錄管理]  >  [檔案計劃] 索引標籤 > [+ 建立標籤]  >  [保留標籤]
         
     - 如果您未使用記錄管理：
-       - [解決方案]   >  [資訊控管]   >  [標籤]  索引標籤 > [+ 建立標籤] 
+       - [解決方案]  >  [資訊控管]  >  [標籤] 索引標籤 > [+ 建立標籤]
     
-    沒有立即看到您的選項？ 先選取 [顯示全部]  。 
+    沒有立即看到您的選項？ 先選取 [顯示全部]。 
 
 2. 遵循精靈中的提示進行。 如果您使用記錄管理：
     
@@ -86,12 +86,12 @@ ms.locfileid: "48773994"
 1. 在 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)，瀏覽至下列其中一個位置：
     
     - 如果您使用記錄管理：
-        - [解決方案]   >  [記錄管理]  > [標籤原則]  索引標籤 > [發佈標籤] 
+        - [解決方案]  >  [記錄管理] > [標籤原則] 索引標籤 > [發佈標籤]
     
     - 如果您未使用記錄管理：
-        - [解決方案]   >  [資訊控管]   >  [標籤原則]  索引標籤 > [發佈標籤] 
+        - [解決方案]  >  [資訊控管]  >  [標籤原則] 索引標籤 > [發佈標籤]
     
-    沒有立即看到您的選項？ 先選取 [顯示全部]  。 
+    沒有立即看到您的選項？ 先選取 [顯示全部]。 
 
 2. 遵循精靈中的提示進行。
     
@@ -272,7 +272,11 @@ When you edit a retention label or retention label policy, and the retention lab
 
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
-- The option to classify as a record.
+- The option to mark items as a record.
+
+## Locking the policy to prevent changes
+
+If you need to ensure that that no one can turn off the policy, delete the policy, or make it less restrictive, see [Use Preservation Lock to restrict changes to retention policies and retention label policies](retention-preservation-lock.md).
 
 ## Next steps
 
