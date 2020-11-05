@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 50bbe9d80b7b0a1b9fa346fd6e5abc8971dadcfb
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 0dfccef331c279354f066ebffa80143d43192472
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804756"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920523"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
@@ -55,7 +55,7 @@ ms.locfileid: "48804756"
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>保留設定如何與就地內容搭配使用
 
-當內容有指派保留設定時，該內容會保留在其原始位置。 若未發生任何變更，人員可以繼續使用其文件或郵件。 但如果人員編輯或刪除保留原則中包含的內容，則會自動保留您套用保留設定時即存在的內容複本。
+當內容有指派保留設定時，該內容會保留在其原始位置。 若未發生任何變更，人員可以繼續使用其文件或郵件。 但如果人員編輯或刪除保留原則中包含的內容，則會自動保留內容複本。
   
 - 對於 SharePoint 和 OneDrive 網站：複本會保留在 **文件保留庫** 中。
 
@@ -77,13 +77,13 @@ ms.locfileid: "48804756"
 
 ## <a name="retention-policies-and-retention-labels"></a>保留原則和保留標籤
 
-您可以同時使用保留原則和保留標籤，以將保留設定指派給內容。 
+您可以透過標籤原則同時使用保留原則和保留標籤，以將保留設定指派給內容。 
 
 使用保留原則為網站或信箱層級的內容指派相同的保留設定，並使用保留標籤來指派項目層級 (資料夾、文件、電子郵件) 的保留設定。
 
 例如，如果 SharePoint 網站中的所有文件都應該保留 5 年，使用保留原則比將相同的保留標籤套用至該網站中所有文件的方法更有效率。 不過，如果該網站中的部分文件應保留 5 年，而其他文件保留 10 年，一個保留原則就不夠用。 當您必須在項目層級指定保留設定時，請使用保留標籤。 
 
-不同於保留原則，保留標籤的保留設定會隨著內容複製或移至其他 Microsoft 365 位置而保留。 此外，保留標籤具有以下保留原則不支援的功能： 
+不同於保留原則，保留標籤的保留設定會隨著內容移至您 Microsoft 365 租用戶中不同的位置。 此外，保留標籤具有以下保留原則不支援的功能： 
  
 - 除了內容的年限或上次修改時間以外，還可選擇從為內容加上標籤的時間或根據事件來開始保留期間的選項。
 
@@ -110,38 +110,8 @@ ms.locfileid: "48804756"
 - Yammer 私人訊息
 
 您可以輕鬆地將單一原則套用到多個位置，或特定位置或使用者。
-    
-您也可以將原則套用到所有內容，或符合特定條件的內容 (例如包含關鍵字或[機密資訊類型](sensitive-information-type-entity-definitions.md))。
 
-#### <a name="use-preservation-lock-to-comply-with-regulatory-requirements"></a>使用保留鎖定以符合法規需求
-
-有些組織可能需要遵守由控管機構定義的法規，例如證券交易委員會 (SEC) 規定 17a-4，要求在保留原則開啟之後，不能關閉或執行較不嚴格的限制。 
-
-「保留鎖定」可確保您的組織能夠符合這類法規需求，因為它會鎖定保留原則，使得沒有任何人 (包括系統管理員) 可以關閉原則、刪除原則或降低限制。
-  
-鎖定保留原則時：
-
-- 沒有人可以將它關閉
-- 可以新增位置但不能移除位置
-- 不能在保留期間修改或刪除受限於原則的內容
-- 您可以延長保留期間，但不能減少保留期間
-
-總而言之，鎖定的保留原則可以增加或延長，但是不能減少或關閉。
-  
-> [!IMPORTANT]
-> 在您鎖定保留原則之前，務必了解影響，並確認您的組織是否需要符合法規需求。 套用保留鎖定之後，系統管理員將無法停用或刪除保留原則。
-
-建立保留原則之後，您可以使用 PowerShell 套用保留鎖定。 如需相關指示，請參閱 [建立及設定保留原則](create-retention-policies.md)。
-
-#### <a name="releasing-a-retention-policy"></a>釋出保留原則
-
-如果您的保留原則沒有保留鎖定，則可以隨時關閉或刪除保留原則。 
-
-當您這麼做時，保留在文件保留庫中的任何 SharePoint 或 OneDrive 的內容不會立即永久被刪除。 相反地，為了防止意外的資料遺失，我們有 30 天的寬限期，在這期間，保留文件庫中不會發生該原則的內容到期，因此，如有需要，您可以在這裡還原任何內容。 此外，您無法在寬限期期間手動刪除此內容。
-
-您可以在寬限期期間再次開啟保留原則，這麼一來，將不會刪除該原則的內容。
-
-SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延遲保留對應。 如需詳細資訊，請參閱[管理延遲保留信箱](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)。
+專案會從保留原則指定的容器繼承保留設定。 如果在爲了保留内容而設定原則時將專案移至容器外，則會在工作負荷的安全位置保留該專案的複本。 不過，保留設定不會隨著內容移至新的位置。 如有需要，請使用保留標籤，而非保留原則。
 
 ### <a name="retention-labels"></a>保留標籤
 
@@ -273,7 +243,7 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 |功能|保留原則 |保留標籤|
 |:-----|:-----|:-----|:-----|
 |可以保留然後刪除、僅保留或僅刪除的保留設定 |是 |是 |
-|支援的工作負載： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 群組 <br />- 商務用 Skype <br />- Teams<br />- Yammer|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，除了公用資料夾 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否 <br /> 否 |
+|支援的工作負載： <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 群組 <br />- 商務用 Skype <br />- Teams<br />- Yammer|<br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 <br /> 是 | <br /> 是，除了公用資料夾 <br /> 是 <br /> 是 <br /> 是 <br /> 否 <br /> 否 <br /> 否 |
 |自動套用的保留 | 是 | 是 |
 |根據條件套用保留 <br /> - 敏感資訊類型、KQL 查詢、可訓練分類器| 否 | 是 |
 |手動套用的保留 | 否 | 是 |
@@ -311,13 +281,31 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
     
 3. **明確包含優先於隱含包含。** 也就是說： 
     
-    1. 如果包含保留設定的保留標籤是由使用者手動指派至項目 (例如 Exchange 電子郵件或 OneDrive 文件)，則該保留標籤會優先於在網站或信箱層級指派的保留原則，以及指派給文件庫的預設保留標籤。 例如，如果明確保留標籤設定要保留內容十年，但對網站指派的保留原則設定為保留內容五年，則保留標籤會優先於原則。 自動套用的保留標籤會被視為隱含，而非明確，因為這類標籤是由 Microsoft 365 自動套用。
+    1. 如果包含保留設定的保留標籤是由使用者手動指派至項目 (例如 Exchange 電子郵件或 OneDrive 文件)，則該保留標籤會優先於在網站或信箱層級指派的保留原則，以及指派給文件庫的預設保留標籤。 例如，如果明確保留標籤設定要保留內容十年，但對網站指派的保留原則設定為保留內容五年，則保留標籤會優先於原則。
     
     2. 如果保留原則包含特定位置 (例如特定使用者的信箱或 OneDrive 帳戶)，則該保留原則會優先於其他套用至所有使用者信箱或 OneDrive 帳戶但未特地包含該使用者信箱的保留原則。
     
 4. **最短刪除期間優先。** 同樣地，如果內容受限於會刪除內容但不帶保留期間的多個保留設定，則會在最短刪除期間結束時刪除該內容。 
 
 最終，保留原則或保留標籤無法永久刪除任何電子文件探索保留的內容。 將保留釋出時，該內容會再次符合上述的清理程序資格，並在工作負載的受保護位置中進行。
+
+## <a name="use-preservation-lock-to-restrict-changes-to-policies"></a>使用「保留鎖定」來限制原則變更
+
+有些組織可能需要遵守由控管機構定義的規則，例如證券交易委員會 (SEC) 規定 17a-4，要求在保留原則開啟之後，不能關閉或執行較不嚴格的限制。 
+
+「保留鎖定」可確保您的組織能夠符合這類法規需求，因為它會鎖定保留原則或保留標籤原則，使得沒有任何人 (包括系統管理員) 可以關閉原則、刪除原則或降低限制。
+  
+建立保留原則或保留標籤原則之後，您可以套用「保留鎖定」。 如需更多資訊和指示，請參閲[使用保留鎖定來限制變更保留原則和保留標籤原則](retention-preservation-lock.md)。
+
+## <a name="releasing-a-policy-for-retention"></a>發佈保留原則
+
+如果您的保留原則沒有保留鎖定，您可以隨時刪除您的原則，以便有效地關閉先前套用的保留設定。 您也可以維持原有的保留原則，但將位置狀態變更為 [關閉]。
+ 
+當您這麼做時，保留在文件保留庫中的任何 SharePoint 或 OneDrive 的內容不會立即永久被刪除。 相反地，為了防止意外的資料遺失，我們有 30 天的寬限期，在這期間，保留文件庫中不會發生該原則的內容到期，因此，如有需要，您可以在這裡還原任何內容。 此外，您無法在寬限期期間手動刪除此內容。
+
+您可以在寬限期期間將位置狀態變更為 [開啟]，這麼一來，該原則的內容將不會被刪除。
+
+SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延遲保留對應。 如需詳細資訊，請參閱[管理延遲保留信箱](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold)。
 
 ## <a name="auditing-retention-configuration"></a>稽核保留設定
 
@@ -413,7 +401,7 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 
 - [SharePoint Online 限制](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Microsoft Teams 的限制和規格](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
-- [符合美國證券交易委員會 (SEC) 規定 17A-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+- [協助您符合資訊管理與記錄管理法規需求的資源](retention-regulatory-requirements.md)
 
 ## <a name="next-steps"></a>後續步驟
 
