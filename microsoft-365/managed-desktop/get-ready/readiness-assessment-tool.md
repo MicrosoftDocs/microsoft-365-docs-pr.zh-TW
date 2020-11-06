@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 56d849a7abcbe480d82200cc7841d42e9c189762
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: 347266f71dada3de1bbd9b1434cb1e6628249147
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795102"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931921"
 ---
 # <a name="readiness-assessment-tool"></a>準備工作評估工具
 
@@ -22,7 +22,7 @@ ms.locfileid: "48795102"
 
 工具會檢查 Microsoft 端點管理員中的設定 (具體地說，Microsoft Intune) ，Azure Active Directory (Azure AD) 和 Microsoft 365，以確保它們能夠與 Microsoft 受管理的電腦搭配使用。 在您上次於 Azure AD 組織 (租使用者) 中執行檢查後，Microsoft 受管理的桌面會保留與這些檢查相關的資料。 12個月後，我們會將它保留在解除識別的表單中。  您可以選擇刪除我們收集的資料。
 
-任何至少具有 Intune 系統管理員角色的人員，都可以執行此工具，但有三個檢查 ([憑證連接器](readiness-assessment-fix.md#certificate-connectors)、 [多重要素驗證](readiness-assessment-fix.md#multi-factor-authentication)和 [自助密碼重設](readiness-assessment-fix.md#self-service-password-reset)) 需要其他許可權。
+具有至少 Intune 系統管理員角色的任何人都可以執行此工具，但 ([憑證連接器](readiness-assessment-fix.md#certificate-connectors) 的兩個檢查和 [多重要素驗證](readiness-assessment-fix.md#multi-factor-authentication) 都需要額外的許可權。
  
 評估工具會檢查下列專案：
 

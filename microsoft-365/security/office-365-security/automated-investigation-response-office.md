@@ -1,5 +1,5 @@
 ---
-title: 自動調查和回應 (AIR) 概述
+title: Microsoft Defender for Office 365 的自動化調查和回應 (AIR) 的運作方式
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,86 +16,32 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 keywords: 自動化的事件回應、調查、修正及威脅防護
-ms.date: 09/29/2020
-description: 深入瞭解 Microsoft Defender for Office 365 中的自動化調查和回應功能
+ms.date: 11/05/2020
+description: 請參閱 Office 365 的 Microsoft Defender 中的自動化調查和回應功能的運作方式
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 316e2e30e5865e068f20d151cd0b081a96ee853f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6923e283e4ec62de9e4a9c1d9196eb032724798d
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845969"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931955"
 ---
-# <a name="an-overview-of-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自動化調查和回應 (AIR) 的概覽
+# <a name="how-automated-investigation-and-response-air-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自動化調查和回應 (AIR) 的運作方式
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 在某些情況下，安全性作業小組可能感覺到所觸發的警示數量所淹沒。 Microsoft Defender for Office 365 中 (AIR) 功能的自動化調查和回應可提供協助。
 
-在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 在某些情況下，安全性作業小組可能感覺到所觸發的警示數量所淹沒。 Microsoft Defender for Office 365 中 (AIR) 功能的自動化調查和回應可提供協助。 
+AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括自動調查處理程式，以回應目前存在的已知威脅。 適當的修正動作等待核准，讓您的安全性作業小組能夠回應偵測到的威脅。
 
-AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括自動調查處理程式，以回應目前存在的已知威脅。 適當的修正動作等待核准，讓您的安全性作業小組能夠回應偵測到的威脅。 
+本文說明 AIR 如何透過數個範例運作。 當您準備好開始使用 AIR 時，請參閱 [自動調查和回應威脅](office-365-air.md)。
 
-本文提供空中的概覽。 當您準備好開始使用 AIR 時，請參閱 [自動調查和回應威脅](office-365-air.md)。
+- [範例1：使用者報告的網路釣魚郵件啟動調查行動手冊](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
+- [範例2：安全性管理員會觸發來自威脅瀏覽器的調查](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
+- [範例3：安全操作小組使用 Office 365 管理活動 API，將 AIR 與其 SIEM 整合](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
 
-## <a name="at-a-high-level"></a>在高層級
-
-當觸發警示時，安全性行動行動會生效。 根據情況而定，可以開始進行 [自動化調查過程](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) 。 在自動調查期間和之後，建議進行 [修正動作](air-remediation-actions.md) 。 在 Microsoft Defender for Office 365 中不會自動採取任何動作。 您的安全性運作小組會評論，然後 [核准或拒絕每項修復動作](air-review-approve-pending-completed-actions.md)。 在調查中的所有動作經核准或拒絕時，調查都會完成。 您可以在 Microsoft 365 的安全性中心 () 中追蹤和查看所有這些活動 [https://security.microsoft.com](https://security.microsoft.com) 。  (若要深入瞭解，請參閱 [查看調查) 的詳細資料](air-view-investigation-results.md#view-details-of-an-investigation) 。
-
-下列各節提供有關警示、安全性行動手冊及動作中的空氣範例的詳細資訊。
-
-## <a name="alerts"></a>警示
-
-[警示](../../compliance/alert-policies.md#viewing-alerts) 代表事件回應的安全性作業小組工作流程的觸發器。 決定要調查的適當一組提醒，同時確保沒有威脅 unaddressed 面臨挑戰。 當手動調查何時會以手動方式執行提醒時，安全性作業小組必須搜尋和關聯實體 (例如內容、裝置和使用者) 威脅以外的風險。 這類工作和工作流程可能非常耗時且包含多個工具和系統。 透過利用關鍵安全性和威脅管理提醒自動觸發安全性回應行動手冊，透過 AIR、安全事件的調查和回應可自動進行。 
-
-目前對於 AIR，會自動調查從下列類型的報警原則產生的警示：  
-
-- 偵測到可能的惡意 URL 按一下
-- 使用者以網路釣魚方式舉報的電子郵件`*`
-- 傳遞後移除包含惡意程式碼的電子郵件`*`
-- 傳遞後移除包含網路釣魚 URLs 的電子郵件`*`
-- 偵測到電子郵件傳送模式
-- 使用者限制傳送電子郵件
-- 管理員已觸發手動調查電子郵件`*`
-
-> [!NOTE]
-> 以星號 () 標示的警示 `*` 會在 Microsoft 365 安全性中心內的各項警示原則中指派 *資訊* 嚴重性，並關閉電子郵件通知。 您可以透過 [報警原則](../../compliance/alert-policies.md#alert-policy-settings)設定開啟電子郵件通知。 
-
-若要在安全性 & 規範中心中查看提醒，請選擇 [ **提醒** ] [  >  **查看提醒** ]。 選取警示以查看其詳細資料，然後從那裡使用「 **查看調查** 」連結，以移至對應的 [調查](air-view-investigation-results.md#investigation-graph)。  
-
-> [!NOTE]
-> 預設會在提醒視圖中隱藏資訊警示。 若要查看，請變更警示篩選，以包含資訊性警示。
-
-如果您的組織透過警示管理系統、服務管理系統、安全性資訊和事件管理 (SIEM) 系統來管理安全性警示，您可以透過電子郵件通知或透過 [Office 365 管理活動 API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)，將提醒傳送給該系統。 透過電子郵件或 API 的調查警示通知包含的連結可存取 Microsoft 365 安全中心的警示，讓指派的安全性系統管理員可以快速流覽調查。
-
-![連結至調查的警示](../../media/air-alerts-page-details.png) 
-
-## <a name="security-playbooks"></a>安全性行動手冊
-
-安全性行動手冊是可在 Microsoft Defender for Office 365 和 Microsoft 365 Defender 中實現自動化的後端原則。 AIR 中所提供的安全性行動技巧是以常見的實際安全性案例為依據，並根據安全性運作小組的意見來開發。 當您的組織內觸發特定警示時，會自動啟動安全性行動手冊。 警示觸發後，會自動調查和回應系統執行相關聯的行動手冊。 調查步驟：透過該特定警示行動手冊分析提醒，查看所有相關聯的中繼資料 (包括電子郵件訊息、使用者、主題、寄件者等 ) 。 根據調查行動手冊的結果，AIR 建議您的組織安全小組可以採取的一組動作來控制及緩解威脅。 
-
-您可以使用 AIR 的安全性行動方式，來處理目前的組織使用電子郵件所遇到的最常見威脅。 它們是以安全性作業和事件回應小組的輸入為基礎，包括協助保護 Microsoft 和客戶資產的人員。
-
-- 使用者報告的網路釣魚郵件
-- URL-按一下判定變更
-- 惡意程式碼偵測到傳遞後 (惡意程式碼 ZAP) 
-- 網路釣魚程式偵測到傳遞後的 ZAP (網路釣魚 ZAP) 
-- 使用者報告為已遭破壞 
-- 管理員從瀏覽器惡意程式碼、網路釣魚或所有電子郵件視圖觸發的手動電子郵件調查 () 
-
-更多行動手冊和行動手冊更新會在完成時發佈。 請造訪 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap) ，以查看已計畫及即將推出的內容。
-
-### <a name="playbooks-include-investigation-and-recommendations"></a>行動行動包括調查和建議
-
-在 AIR 中，每個安全性行動手冊包括： 
-
-- 電子郵件實體的根調查 (例如檔案、URLs、收件者、IP 位址等) ）
-- 進一步搜尋組織所收到的類似電子郵件 
-- 識別和關聯其他潛在威脅所採取的步驟，以及 
-- 建議的威脅修復動作。
-
-每個高階步驟都包含一些執行的子步驟，以提供對威脅的深入、詳盡及詳盡的回應。
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>範例：使用者報告的網路釣魚郵件啟動調查行動手冊
 
@@ -151,4 +97,4 @@ Microsoft Defender for Office 365 中的 AIR 功能包括 [報告 & 詳細資料
 
 - [流覽 Microsoft 365 藍圖，以查看已計畫及即將發行的專案](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [深入瞭解 Microsoft 365 Defender 中的其他自動化調查和回應功能](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
+- [深入瞭解 Microsoft 365 Defender 中的自動化調查和回應功能](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)

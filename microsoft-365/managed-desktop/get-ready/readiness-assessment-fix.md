@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6dec9473ee632b74bb79e50156cedff53a3cba3
-ms.sourcegitcommit: fa26da0be667d4be0121c52b05488dc76c5d626c
+ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "48795114"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931909"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正準備工作評估工具所找到的問題
 
@@ -127,7 +127,7 @@ Microsoft 受管理的桌面裝置必須能夠在 Intune 中註冊。
 
 **未就緒**
 
-您已設定 ESP 預設設定檔來 **顯示應用程式和設定檔設定進度** 。 請遵循 [設定 [註冊狀態] 頁面](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步驟，停用此設定。
+您已設定 ESP 預設設定檔來 **顯示應用程式和設定檔設定進度** 。 停用此設定，或遵循 [設定 [註冊狀態] 頁面](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步驟，確定任何 Azure AD 群組的指派均未包含 Microsoft 受管理的桌面裝置。
 
 **諮詢**
 
@@ -137,9 +137,9 @@ Microsoft 受管理的桌面裝置必須能夠在 Intune 中註冊。
 
 Azure AD 組織中的 Windows 10 裝置必須在 Intune 中自動註冊。
 
-**未就緒**
+**諮詢**
 
-Azure AD 組織中的使用者不會在 Microsoft Intune 中自動註冊。 將 MDM 使用者範圍變更為 [ **部分** ] 或 [ **全部** ]。 如果您選擇 [ **部分** ]，請在註冊後再進行註冊，然後選取 [ **現代工作場所-** **群組** 的所有 Azure AD 群組]。
+確定 MDM 使用者範圍已設定為 **部分** 或 **全部** （非 **無** ）。 如果您選擇 [ **部分** ]，請在註冊後再進行註冊，然後選取 [ **現代工作場所-** **群組** 的所有 Azure AD 群組]。
 
 
 ### <a name="microsoft-store-for-business"></a>商務用 Microsoft Store
@@ -180,7 +180,7 @@ Windows PowerShell 腳本無法指派為以 Microsoft 受管理的桌面裝置�
 
 **諮詢**
 
-確定您的 Azure AD 組織中的 Windows PowerShell 腳本並未以任何 Microsoft 管理桌面裝置或使用者為目標。 如需詳細資訊，請參閱在 [Intune 中使用 Windows 10 裝置上的 PowerShell 腳本](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)。
+確定您的 Azure AD 組織中的 Windows PowerShell 腳本並未以任何 Microsoft 管理桌面裝置或使用者為目標。 請勿指派 PowerShell 腳本來設定所有使用者、所有裝置或兩者。 變更原則，以使用以特定 Azure AD 群組為目標的工作分派，但不包括任何 Microsoft 受管理的桌面裝置。 如需詳細資訊，請參閱在 [Intune 中使用 Windows 10 裝置上的 PowerShell 腳本](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)。
 
 ### <a name="region"></a>區域
 
@@ -308,19 +308,11 @@ Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的
 
 ### <a name="self-service-password-reset"></a>自助密碼重設
 
-必須啟用自助密碼重設 (SSPR) 。
-
-**未就緒**
-
-所有使用者都必須啟用 SSPR。 如果不是，則 Microsoft 管理的桌面服務帳戶無法運作。 如需詳細資訊，請參閱 [教學課程：讓使用者可以使用 Azure Active Directory 自助密碼重設來解除鎖定帳戶或重設密碼](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
+必須為所有使用者啟用自助密碼重設 (SSPR) 。 如果不是，則 Microsoft 管理的桌面服務帳戶無法運作。 如需詳細資訊，請參閱 [教學課程：讓使用者可以使用 Azure Active Directory 自助密碼重設來解除鎖定帳戶或重設密碼](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
 
 **諮詢**
 
 請確定 SSPR **選取** 的設定包括 Microsoft 受管理的桌面裝置。
-
-**Error**
-
-Intune 系統管理員角色沒有足夠的許可權可進行這種檢查。 您也需要指派給執行這種檢查的「報告讀取器 Azure AD」角色。
 
 
 ### <a name="standard-user-role"></a>標準使用者角色
