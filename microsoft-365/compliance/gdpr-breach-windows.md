@@ -15,42 +15,42 @@ audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 30fefe49dbbe1bffa0447d66695431d30342b843
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: dc921215ef8e1e1a1a187a5b8be46916c30d5f2c
+ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843137"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48920277"
 ---
 # <a name="data-processor-service-for-windows-enterprise-breach-notification-under-the-gdpr"></a>適用於 GDPR 的 Windows 企業版資料處理者服務違反通知
 
 >[!NOTE]
->本主題適用於 Windows 企業版預覽計畫的資料處理者服務中的參與者，且需要接受特定使用條款。 若要深入了解該計畫並同意使用條款，請參閱 [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
+>This topic is intended for participants in the data processor service for Windows Enterprise preview program and requires acceptance of specific terms of use. To learn more about the program and agree to the terms of use, see [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
 
-Microsoft 的 Windows 企業版資料處理者服務很認真地看待其在一般資料保護規定 (GDPR) 下所需承擔的責任。 Windows 的 Microsoft 企業版資料處理者服務採用大量的安全性措施來防範資料外洩。 這些包含專職的威脅管理小組會主動預測、預防和減少惡意存取。  內部安全性措施（例如埠掃描、周邊安全性漏洞掃描和入侵偵測）會偵測並防止惡意存取，以及自動化的安全性程式、全面的資訊安全性和隱私權原則，以及適用于所有人員的安全性與隱私權訓練。 
+Microsoft data processor service for Windows Enterprise takes its obligations under the General Data Protection Regulation (GDPR) seriously. Microsoft data processor service for Windows Enterprise takes extensive security measures to protect against data breaches. These include dedicated threat management teams that proactively anticipate, prevent, and mitigate malicious access.  Internal security measures such as port scanning, perimeter vulnerability scanning, and intrusion detection detect and prevent malicious access, as well as automated security processes, comprehensive information security and privacy policies, and security and privacy training for all personnel. 
 
-Windows 的 Microsoft 企業版資料處理者服務中內置了安全性，包含 [安全性開發週期](https://www.microsoft.com/sdl/)，這是一種強制執行的開發程式，其中包含隱私權的設計和隱私權預設的方法。 Microsoft 安全戰略的指導原則是「預設違犯」，這是縱深防禦策略的延伸。 透過不斷挑戰 Windows 企業版資料處理者服務的安全性功能，Microsoft 可以持續抵禦新興的威脅。 如需有關 Windows 企業版資料處理者服務安全性的詳細資訊，請參閱這些 [資源](https://www.microsoft.com/TrustCenter/Security/windows10-security) Windows 企業版資料處理者服務根據安全性事件回應程式，回應可能的資料外洩。 Windows 企業版資料處理者服務的安全事件回應是採用五階段程序來執行：偵測、評估、診斷、穩定和關閉。 當調查進度時，安全事件回應小組可能會交替診斷和穩定階段。 安全事件回應程式概述如下： 
+Security is built into the Microsoft data processor service for Windows Enterprise from the ground up, starting with the [Security Development Lifecycle](https://www.microsoft.com/sdl/), a mandatory development process that incorporates privacy-by-design and privacy-by-default methodologies. The guiding principle of Microsoft's security strategy is to 'assume breach', which is an extension of the defense-in-depth strategy. By constantly challenging the security capabilities of the data processor service for Windows Enterprise, Microsoft can stay ahead of emerging threats. For more information on the data processor service for Windows Enterprise security, please review these [resources](https://www.microsoft.com/TrustCenter/Security/windows10-security) the data processor service for Windows Enterprise responds to a potential data breach according to the security incident response process. The data processor service for Windows Enterprise security incident response is implemented using a five-stage process: Detect, Assess, Diagnose, Stabilize, and Close. The Security Incident Response Team may alternate between the diagnose and stabilize stages as the investigation progresses. An overview of the security incident response process is below: 
 
 |**Stage**|**描述**|
 | ------- | ------------- |
 | **_1 — 偵測_* _ | 潛在事件的第一個徵兆。 |
 | _*_2 — 評估_*_ | 待命事件回應小組成員會評估事件的影響和嚴重性。取決於證據，可能會也可能不會進一步向安全性回應小組呈報評估。 |
-| _*_3 — 診斷_*_ | 安全性回應專家進行技術或鑑定調查、找出內含項目、風險降低及因應措施策略。 若安全性小組相信客戶資料可能遭受非法或未經授權的人員存取，將會同步進行客戶事件通知程序。 |
+| _*_3 — 診斷_*_ | Security response experts conduct the technical or forensic investigation, identify containment, mitigation, and workaround strategies. If the security team believes that customer data may have become exposed to an unlawful or unauthorized individual, execution of the Customer Incident Notification process begins in parallel. |
 | _*_4 — 穩定及復原_*_ | 事件回應小組會建立復原計劃，以降低問題的風險。危機抑制步驟 (例如隔離受影響的系統) 可能會立即與診斷同步進行。長期風險降低預計要等到眼前的風險過後才會進行規劃。 |
 | _*_5 — 結案與檢討_*_ | 事件回應小組會建立概述事件詳細資訊的事後剖析，目的是修改原則、步驟和流程，以避免該事件再次發生。 |
 
-Microsoft 的 Windows 企業版資料處理者服務使用的偵測程序旨在探索會讓 Windows 企業版資料處理者服務的機密性、完整性和可用性遭受風險的事件。 有幾個事件可以觸發調查： 
+The detection processes used by Microsoft data processor service for Windows Enterprise are designed to discover events that risk the confidentiality, integrity, and availability of the data processor service for Windows Enterprise. Several events can trigger an investigation: 
 
- - 自動化系統透過內部監視和警示架構發出警示。 這些警示會以病毒碼式警訊 (例如反惡意程式碼軟體、入侵偵測)，或透過旨在分析預期活動並在異常時發出警示的演算法等方式提供。
+ - Automated system alerts via internal monitoring and alerting frameworks. These alerts could come in the way of signature-based alarms such as anti-malware, intrusion detection or via algorithms designed to profile expected activity and alert upon anomalies.
  - 來自 Microsoft Azure 和 Azure Government 上所執行 Microsoft 服務的第一方報告。
- - 系統會透過 [secure@microsoft.com] （mailto:secure@microsoft.com）將安全性漏洞回報給 [Microsoft 安全回應中心（MSRC）](https://technet.microsoft.com/security/dn440717)。 MSRC 會與合作夥伴及全球安全性研究人員合作來防止安全性事件，並進一步提升 Microsoft 產品的安全性。
+ - Security vulnerabilities are reported to the [Microsoft Security Response Center (MSRC)](https://technet.microsoft.com/security/dn440717) via [secure@microsoft.com] (mailto:secure@microsoft.com). MSRC works with partners and security researchers around the world to help prevent security incidents and to advance Microsoft product security.
  - 透過客戶支援入口網站或 Microsoft Azure 與 Azure Government 管理入口網站回報的客戶報告，其中說明了歸因於 Azure 基礎結構的可疑活動 (而非客戶責任範圍內所發生的活動)。
- - 安全性[紅隊和藍隊](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/)活動。 此策略利用由 Microsoft 攻擊性安全專家組成的高度技巧紅隊，來找出並攻擊在 Azure 中的潛在弱點。 負責安全性回應的藍隊必須偵測並防禦紅隊的活動。 我們會用紅隊和藍隊雙方的動作，來確認 Azure 所做的安全性回應是否能有效地因應安全性事件。 安全性紅隊和藍隊活動的執行皆符合參與規則，以協助確保對客戶資料的保護。
- - Azure 服務操作員的呈報。 Microsoft 員工都受過訓練，可找出潛在的安全性問題並向上呈報。
+ - Security [Red Team and Blue Team](https://azure.microsoft.com/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/) activity. This strategy uses a highly skilled Red Team of offensive Microsoft security experts to uncover and attack potential weaknesses in Azure. The security response Blue Team must detect and defend against the Red Team’s activity. Both Red and Blue Team actions are used to verify that Azure security response efforts are effectively managing security incidents. Security Red Team and Blue Team activities are operated under rules of engagement to help ensure the protection of customer data.
+ - Azure 服務作業員的呈報。Microsoft 員工都受過訓練，可找出潛在的安全性問題並向上呈報。
 
  ## <a name="data-processor-service-for-windows-enterprise-data-breach-response"></a>Windows 企業版資料處理者服務的資料外洩回應。 
 
- Microsoft 藉由判斷事件的功能影響、恢復能力和資訊影響，指派適當的調查優先順序和嚴重性層級。 優先順序和嚴重性可能會隨著調查的進行，根據新的發現結果和結論而變更。 涉及對客戶資料有迫切或經確認風險的安全性事件，我們會視為高嚴重性而不眠不休地設法解決。 Microsoft 的 Windows 企業版資料處理者服務將事件的資訊影響分成下列缺口類別： 
+ Microsoft assigns the investigation appropriate priority and severity levels by determining the functional impact, recoverability, and information impact of the incident. Both the priority and severity may change over the course of the investigation, based on new findings and conclusions. Security events involving imminent or confirmed risk to customer data are treated as high severity and worked around the clock to resolution. Microsoft data processor service for Windows Enterprise categorizes the information impact of the incident into the following breach categories: 
 
 | _ *類別**             | **定義**                                                                                                                   |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -59,12 +59,12 @@ Microsoft 的 Windows 企業版資料處理者服務使用的偵測程序旨在�
 | _*_專利缺口_*_ | 非機密專利資訊 (例如受保護的關鍵基礎結構資訊 (PCII) 等) 遭人存取或移除。 |
 | _*_完整性受損_*_     | 敏感性或專利資訊遭人變更或刪除。 |
 
-安全性回應小組會與 Microsoft 的 Windows 企業版資料處理者服務安全性工程師及主題專家 (SME) 合作，根據證據的事實資料將事件分類。 安全性事件可以歸類為： 
+The Security Response Team works with Microsoft data processor service for Windows Enterprise Security Engineers and SMEs to classify the event based on factual data from the evidence. A security event may be classified as: 
 
- - _*誤判**：事件符合偵測準則，但經查明其實是正常商業活動的一部分，且可能需要進行篩選。 服務小組會找出誤判的根本原因，並以系統化的方式視需要運用偵測來源和進行微調，來解決這些問題。 
+ - _*False Positive**: An event that meets detection criteria but is found to be part of a normal business practice and may need to be filtered. The service team will identify the root cause for false positives and will address them in a systematic way leveraging detection sources and fine-tuning them as needed. 
  - **安全性事件** ：有人非法存取任何儲存在 Microsoft 設備或 Microsoft 設施上的客戶資料或支援資料，或未經授權存取這類設備或設施，進而造成客戶資料或支援資料遺失、洩漏，或變更的事件。 
  - **須向客戶報告的安全性事件 (CRSI)** ：有人非法或未經授權存取或使用 Microsoft 系統、設備或設施，導致客戶資料洩漏、修改或遺失。 
- - **隱私權外洩：** 涉及個人資料安全性事件的子類型。 處理流程與安全性事件並無不同。 
+ - **Privacy Breach** : A subtype of Security Incident involving personal data. Handling procedures are no different than a security incident. 
 
  若要宣告 CRSI，Microsoft 必須先判斷客戶資料已遭到或很有可能已遭到未經授權的存取，且 (或) 有必須通知客戶的法律或合約承諾。雖然並非必要，但您最好了解對特定客戶的影響、資源存取與修復步驟。通常要等到安全性事件的診斷階段結束後，才會宣告事件屬於 CRSI。不過，在所有直接相關的資訊都可供使用時，也可能會隨時宣告。安全性事件管理員必須找出確鑿的證據，足以支持的確發生了須向客戶報告的事件，以開始執行客戶事件通知程序。 
 
@@ -72,20 +72,20 @@ Microsoft 的 Windows 企業版資料處理者服務使用的偵測程序旨在�
 
 Microsoft 會確認是否已成功遏制客戶和商業風險，並實施了矯正措施。如有需要，會進行緊急風險降低步驟，以解決與事件關聯的迫切安全性風險。 
 
-Microsoft 也會完成資料外洩的內部檢討。 在本練習當中，我們將評估回應效率和作業程序，找出安全性事件回應標準作業程序 (SOP) 或相關的程序所需的任何更新，然後執行。 資料外洩的內部檢討是不提供給客戶的高度機密記錄。 但是，檢討的摘要可包含在其他客戶活動的通知中。 這類報表會提供給外部稽核員檢核，這是屬於 Windows 企業版資料處理者服務例行稽核週期的一部分。 
+Microsoft also completes an internal post-mortem for data breaches. As a part of this exercise, sufficiency of response and operating procedures are evaluated, and any updates that may be necessary to the Security Incident Response SOP or related processes are identified and implemented. Internal postmortems for data breaches are highly confidential records not available to customers. Postmortems may, however, be summarized and included in other customer event notifications. These reports are provided to external auditors for review as part of the data processor service for Windows Enterprise routine audit cycle. 
 
 ## <a name="customer-notice"></a>客戶注意事項
 
-Microsoft 的 Windows 企業版資料處理者服務視需要通知客戶和監管單位有資料外洩。 Microsoft 在 Windows 企業版資料處理者服務執行中，採用大量內部劃分。 資料流程記錄也相當穩定。 在此設計中，大部分的事件都可限定特定客戶。 目標是在受影響的客戶之資料遭到損毀時，為其提供正確、可操作且及時的通知。 
+Microsoft data processor service for Windows Enterprise notifies customers and regulatory authorities of data breaches as required. Microsoft relies on heavy internal compartmentalization in the operation of the data processor service for Windows Enterprise. Data flow logs are also robust. As a benefit of this design, most incidents can be scoped to specific customers. The goal is to provide impacted customers with an accurate, actionable, and timely notice when their data has been breached. 
 
-聲明 CRSI 之後，通知流程將會盡快進行，但同時仍考慮快速行動的安全性風險。 通常，在事件調查進行中時，便會同時展開設計通知的流程。 客戶通知會在我們宣告外洩的 72 小時內傳遞，除了下列情況： 
+After the declaration of a CRSI, the notification process takes place as expeditiously as possible while still considering the security risks of moving quickly. Generally, the process of drafting notifications occurs as the incident investigation is ongoing. Customer notices are delivered in no more than 72 hours from the time we declared a breach except for the following circumstances: 
 
  - Microsoft 相信執行通知的動作會增加其他客戶的風險。比方說，通知的動作可能會驚動攻擊者，因而無法補救。 
  - 經 Microsoft 法務部門企業外部和法律事務 (CELA) 和事件執行經理審查過的其他不尋常或特殊情況。 
 
  Microsoft 的 Windows 企業版資料處理者服務可提供客戶詳細資訊，讓他們能執行內部調查，並協助他們符合對使用者的承諾，而不會過度延遲通知程序。 
 
-個人資料外洩的通知會經由 Microsoft 選擇的任何方式，包括透過電子郵件，傳送給客戶。 資料洩密通知會傳送到 Azure Defender *中提供的安全連絡人清單，可以依照[實施指導方針](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)來設定。如果 Azure Defender* 中並未提供連絡人資訊，則會將通知傳送給 Azure 訂用帳戶中的一或多個系統管理員。 為了確保通知能順利送達，客戶有責任確定每個適用之月租方案和線上服務入口網站上的管理連絡人資訊是正確的。
+系統會以 Microsoft 選擇的任何方式 (包括透過電子郵件) 將個人資料外洩的通知傳送給客戶。系統會將資料外洩的通知，傳送給 Azure 資訊安全中心所提供的安全性連絡人清單；您可遵循[實作方針](https://docs.microsoft.com/azure/security-center/security-center-provide-security-contact-details)來設定此清單。若 Azure Defender 未提供連絡人資訊，則會將通知傳送給 Azure 訂用帳戶中的一或多個系統管理員。為了確保可順利傳送通知，客戶有責任確保每個訂用帳戶和線上服務入口網站上的管理連絡人資訊是正確的。
 
 Windows 企業版資料處理者服務小組也可以選擇通知客服 (CSS) 和客戶專案經理 (AM)，或技術支援專案經理 (TAM) 等其他 Microsoft 人員。 這些人員通常與客戶有密切的關係，也有助於快速進行補救 
 
