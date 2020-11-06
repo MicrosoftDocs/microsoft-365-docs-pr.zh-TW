@@ -296,8 +296,8 @@
           href: create-apply-retention-labels.md
         - name: 自動將保留標籤套用到內容
           href: apply-retention-labels-automatically.md
-        - name: 符合美國證券交易委員會規定 17A-4
-          href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
+        - name: 鎖定原則以限制變更
+          href: retention-preservation-lock.md
         - name: 使用 PowerShell 建立保留標籤
           href: bulk-create-publish-labels-using-powershell.md
         - name: 事件發生時，開始保留
@@ -426,6 +426,8 @@
           href: declare-records.md
         - name: 使用記錄版本設定
           href: record-versioning.md
+        - name: 適用於法規需求的資源
+          href: retention-regulatory-requirements.md
 - name: 管理電子文件探索
   items:
     - name: Microsoft 365 中的電子文件探索
@@ -531,6 +533,8 @@
               href: data-spillage-scenariosearch-and-purge.md
             - name: 為搜尋保留密件副本收件者
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
+            - name: 電子文件探索工具的解密
+              href: ediscovery-decryption.md
             - name: 疑難排解常見的電子文件探索問題
               href: ediscovery-troubleshooting-common-issues.md
             - name: 重新嘗試失敗的搜尋
@@ -660,6 +664,8 @@
               href: permissions-filtering-for-content-search.md
             - name: 設定合規性界限
               href: set-up-compliance-boundaries.md
+            - name: 電子文件探索工具的解密
+              href: ediscovery-decryption.md
             - name: 在稽核記錄中搜尋電子文件探索活動
               href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: 疑難排解 AzCopy
