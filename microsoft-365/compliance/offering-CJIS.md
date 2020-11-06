@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: 4ca7654482251d86c44a3956c71f704a0cc3f2d4
-ms.sourcegitcommit: e5ac81132cc5fd248350627a3cc7b3c640f53b6e
+ms.openlocfilehash: 042555cfcbe231f370c07ee3887e6b7f6b3701b8
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48208615"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925588"
 ---
 # <a name="criminal-justice-information-services-cjis-security-policy"></a> (CJIS) 安全性原則的刑事審判資訊服務
 
@@ -56,11 +56,11 @@ FBI 不會提供符合 CJIS 需求的 Microsoft 認證。 相反地，microsoft 
 
 [Microsoft CJIS 雲端需求](https://aka.ms/MicrosoftCJISCloudRequirements)
 
-## <a name="cjis-status-in-the-united-states-current-as-of-9232019"></a>美國 (目前為9/23/2019 的州的 CJIS 狀態) 
+## <a name="cjis-status-in-the-united-states-current-as-of-1152020"></a>美國 (目前為11/5/2020 的州的 CJIS 狀態) 
 
-37州和哥倫比亞含管理合約的地區，在綠色地圖上以綠色反白顯示：
+44州和哥倫比亞含管理合約的地區，在綠色地圖上以綠色反白顯示：
 
-Alabama，阿拉斯加，Arkansas，亞利桑那，加州，科羅拉多，佛羅里達，格魯吉亞，夏威夷，Illinois，印地安，Iowa，Kansas，Kentucky，Maine，麻塞諸塞，密歇根，Minnesota，Missouri，Montana，New Jersey，紐約，Nevada，北卡羅萊納州，Oklahoma，佛吉尼亞，賓夕法尼亞，Rhode，南部卡羅萊納州，Tennessee，華盛頓，華盛頓特區，Vermont
+Alabama，阿拉斯加，亞利桑那，Arkansas，加州，科羅拉多，Connecticut，佛羅里達，格魯吉亞，夏威夷，Idaho，Illinois、印地安、Iowa、Kansas、Kentucky、Maine、麻塞諸塞州、密歇根州、Minnesota、Mississippi、Missouri、Montana、Nebraska、Nevada、Hampshire、Jersey、Dakota、Oklahoma、Rhode、Tennessee、Vermont、Wisconsin、、北卡羅萊納州、、德克薩斯、猶他州、、
 
 Microsoft 致力於會議適用的 CJIS 管制控制措施，允許刑事審判組織執行雲端式方案，並符合 CJIS 安全性原則 V 5.8。
 
@@ -78,9 +78,9 @@ Microsoft 會以州 CJIS 系統代理商 (CSA) 來簽署資訊協定;您可以�
 
 [CJIS 安全性原則](https://aka.ms/cjis-security-policy) 涵蓋您的代理人保護 CJI 所必須採取的防範措施。 此外，您的 Microsoft 帳戶代表可讓您與熟悉司法需求的人員保持聯繫
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員評估您的風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評定風險
 
-[Microsoft 合規性管理員](compliance-manager.md) 是 [microsoft 365 規範中心](microsoft-365-compliance-center.md) 的一項功能，可協助您瞭解組織的合規性狀況，並採取行動以協助降低風險。 合規性管理員提供為此法規建立評估的高級範本。 在 [合規性管理員] 的 [ **評估範本** ] 頁面中尋找範本。 瞭解如何 [在合規性管理員中建立評估](compliance-manager-assessments.md)。
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性態勢，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評定。 可在合規性管理員的 [評定範本] 頁面尋找範本。 了解如何[在合規性管理員中建立評定](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 
