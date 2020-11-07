@@ -68,6 +68,11 @@
           items:
             - name: 使用 Microsoft 諮詢服務
               href: get-ready/apps-MCS.md
+        - name: 使用整備評估工具
+          href: get-ready/readiness-assessment-tool.md
+          items:
+            - name: 修正由整備評估工具發現的問題
+              href: get-ready/readiness-assessment-fix.md
     - name: 開始使用 Microsoft 受管理的電腦
       href: get-started/index.md
       items:
