@@ -20,16 +20,16 @@ search.appverid:
 ms.assetid: ''
 description: 本文概要說明 Microsoft 365 中的高級 eDiscovery，以及內部及外部調查的工具。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d8a43d8a7f0b1803b374839d8ed0d7d82c6adace
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 95c864b9e2222000b1114ae42dbbb5705228d531
+ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399052"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "48944341"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高級 eDiscovery 解決方案概述
 
-Microsoft 365 中的「高級 eDiscovery 解決方案」是以 Office 365 中現有的 eDiscovery 和分析功能為基礎。 這個新的解決方案稱為「 *高級 eDiscovery*」，提供了端對端工作流程，可保留、收集、審閱、分析及匯出回應組織內部和外部調查的內容。 它也可讓法律團隊管理整個法律封存通知工作流程，以與案例中的保管人進行通訊。 
+Microsoft 365 中的「高級 eDiscovery 解決方案」是以 Office 365 中現有的 eDiscovery 和分析功能為基礎。 這個新的解決方案稱為「 *高級 eDiscovery* 」，提供了端對端工作流程，可保留、收集、審閱、分析及匯出回應組織內部和外部調查的內容。 它也可讓法律團隊管理整個法律封存通知工作流程，以與案例中的保管人進行通訊。 
 
 > [!NOTE]
 > 「高級 eDiscovery」需要 Office 365 或 Microsoft 365 E5 Enterprise 訂閱。 如需有關高級 eDiscovery 授權的詳細資訊，請參閱 [Microsoft 365 授權指南以取得安全性 & 合規性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery)。
@@ -44,27 +44,35 @@ Advanced eDiscovery 的內建工作流程會與「電子探索」參考模型 (E
 
 在高層次上，以下是 Advanced eDiscovery 如何支援 EDRM 工作流程的方式：
 
-- **識別。** 在您找出調查中潛在感興趣的人員之後，您可以將其新增為保管人 (也稱為「 *資料保管人*」，因為它們可能具有與調查) 相關的資訊，以供高級 eDiscovery 案例使用。 將使用者新增為保管人後，就很容易保留、收集和審查保管人檔。
+- **識別。** 在您找出調查中潛在感興趣的人員之後，您可以將其新增為保管人 (也稱為「 *資料保管人* 」，因為它們可能具有與調查) 相關的資訊，以供高級 eDiscovery 案例使用。 將使用者新增為保管人後，就很容易保留、收集和審查保管人檔。
 
 - **保存。** 為了保留及保護與調查相關的資料，「高級 eDiscovery」可讓您在案例中對保管人相關聯的資料來源進行合法保留。 您也可以將非 custodial 資料置於保留狀態。 Advanced eDiscovery 也有內建的通訊工作流程，因此您可以將法律封存通知傳送給保管人，並追蹤其確認。
 
 - **收集。** 在您識別 (和保留) 與調查相關的資料來源之後，您可以在高級 eDiscovery 搜尋中使用內建的搜尋工具，並從 custodial 資料來源中收集即時資料， (和非 custodial 的資料來源（如果適用) 可能與案例相關）。
 
 - **處理。** 在您收集所有與案例相關的資料之後，下一步是處理它以進一步複查和分析。 在 [Advanced eDiscovery] 中，您在集合階段中所識別的就地資料會複製到 Azure 存放位置， (稱為「 *複查集* 」) ，可為您提供案例資料的靜態視圖。 
- 
+
 - **檢討。** 將資料新增至審閱集後，您就可以查看特定的檔，並執行另一個查詢，將資料降至與案例最為相關的資料。 此外，還可以批註及標記特定檔。
- 
+
 - **分析。** 「高級 eDiscovery」提供整合式分析工具，可協助您進一步剔除您決定不與調查相關的複查集的資料。 除了減少相關資料的數量之外，高級 eDiscovery 也可協助您組織內容，讓審查程式更輕鬆且更有效率，以節省法律考評成本。
 
 - **生產** 及 **簡報。** 當您準備好時，您可以從審閱集中匯出檔，以進行法律考評。 您可以以原生格式或以 EDRM 指定的格式匯出檔，以便將其匯入協力廠商的審閱應用程式。
 
-## <a name="advanced-ediscovery-workflow"></a>高級 eDiscovery 工作流程
+## <a name="advanced-ediscovery-architecture"></a>高級 eDiscovery 架構
 
-下列各節將說明在高級 eDiscovery 中內建工作流程中的每個步驟。 下列螢幕擷取畫面顯示名為*Product 債務 2019002*之案例的 [**首頁**] 索引標籤。 附注頁面頂端的工作流程索引標籤會被排序，以與 EDRM 處理常式對齊。 
+以下是一種高級 eDiscovery 架構圖表，顯示單一地理位置環境和多地理位置環境中的端對端工作流程，以及與 EDRM 對齊的端對端資料流程。
+
+[![模型海報： Microsoft 365 中的高級 eDiscovery 架構](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[以影像形式查看](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[下載為 PDF 檔案](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+
+[下載為 Visio 檔案](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
 
 如需有關在高級 eDiscovery 中的端對端工作流程的詳細資訊，請參閱這段 [Microsoft 的機械影片](https://go.microsoft.com/fwlink/?linkid=2066133)。
 
-![Advanced eDiscovery 中的索引標籤追蹤 EDRM 工作流程](../media/aedisco-homepage-1.png)
+下列各節將說明在高級 eDiscovery 中內建工作流程中的每個步驟。
 
 ## <a name="managing-custodians-and-non-custodial-data-sources"></a>管理保管人和非 custodial 資料來源
 
@@ -80,7 +88,7 @@ Advanced eDiscovery 的內建工作流程會與「電子探索」參考模型 (E
 
 ## <a name="indexing-custodian-data"></a>索引保管人資料
 
-當您將保管人和對應的 custodial 資料來源新增至案例時，來自保管人資料來源的任何已編制索引的專案都會由稱為「 *高級索引*」的處理常式重新編制索引。 這可讓您執行搜尋來收集資料時，custodial 內容（如影像、不支援的檔案類型，以及其他可能未編制索引的內容，以完全可供搜尋）。 使用 [ **處理** ] 索引標籤，監控高級索引的狀態，並使用稱為「 *錯誤修正*」的處理常式修正處理錯誤。 如需詳細資訊，請參閱 [在高級 eDiscovery 中修正處理錯誤](processing-data-for-case.md)。
+當您將保管人和對應的 custodial 資料來源新增至案例時，來自保管人資料來源的任何已編制索引的專案都會由稱為「 *高級索引* 」的處理常式來重新編制索引。 這可讓您執行搜尋來收集資料時，custodial 內容（如影像、不支援的檔案類型，以及其他可能未編制索引的內容，以完全可供搜尋）。 使用 [ **處理** ] 索引標籤，監控高級索引的狀態，並使用稱為「 *錯誤修正* 」的處理常式修正處理錯誤。 如需詳細資訊，請參閱 [在高級 eDiscovery 中修正處理錯誤](processing-data-for-case.md)。
 
 ## <a name="collecting-case-data"></a>收集案例資料
 
