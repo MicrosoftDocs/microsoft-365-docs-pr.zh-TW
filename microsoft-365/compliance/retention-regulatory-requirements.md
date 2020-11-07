@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 協助您符合資訊管理與記錄管理法規需求的資源。
-ms.openlocfilehash: 2aa413400d9d60b759b35d04175b674cedb0a733
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: f8641af2ec839c9ed3f4d029b4f6de52fe7033e3
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930186"
+ms.locfileid: "48941418"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>適用於資訊管理與記錄管理的法規需求
 
@@ -36,7 +36,7 @@ ms.locfileid: "48930186"
 
 適用工作量：SharePoint、OneDrive、Teams、Exchange 及商務用 Skype
 
-此報告已於 2020 年 10 月發行，是與 Cohasset Associates, Inc.（Cohasset）合作編寫以評估 Microsoft 365 服務對於記錄、儲存及管理電子記錄需求的功能，具體如下：  
+此報告已於 2020 年 11 月發行，是與 Cohasset Associates, Inc.（Cohasset）合作編寫以評估 Microsoft 365 服務對於記錄、儲存及管理電子記錄需求的功能，具體如下：  
 
 - 在 17 CFR § 240.17a-4(f) 中的美國證券交易委員會（SEC），規定了 Exchange 成員、經紀人或轉銷商。  
 
