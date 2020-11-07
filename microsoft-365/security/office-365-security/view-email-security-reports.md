@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36d7fde77ae8a6280dae26e5a0f7a75537bf28d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fafb499e40c0014a85c9566b3e5aadf2751202a1
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841869"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941472"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -336,7 +336,7 @@ ms.locfileid: "48841869"
 
 - **分解方式：偵測技術** 和 **View Data：電子郵件 \> 惡意** 代碼：會顯示下列資訊：
 
-  - **Atp 產生的檔信譽**<sup>1</sup>： atp detonations 所產生的所有惡意檔信譽。
+  - **ATP 產生的檔案信譽**<sup>1</sup>：所有由 Defender for Office 365 detonations 所產生的惡意檔信譽。
   - **反惡意程式碼引擎**<sup>1</sup>：偵測到反惡意程式碼引擎。
   - **反惡意程式碼原則檔案類型封鎖** ：由於郵件中所識別的惡意檔案類型，郵件會篩選掉這些電子郵件。
   - 檔案 **引爆**<sup>1</sup>：檔案引爆是由安全附件所捕獲。  

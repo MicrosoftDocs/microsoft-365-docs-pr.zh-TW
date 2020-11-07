@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6123306c1d707a3eeab5c5dd67ed25bebb71965
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845672"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941484"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
@@ -53,7 +53,7 @@ ms.locfileid: "48845672"
 > [!NOTE]
 > 使用者標記功能是在預覽中，並非所有人都可以使用，而且可能會變更。 如需發行排程的相關資訊，請參閱 Microsoft 365 藍圖。
 
-使用者標記是 Microsoft Defender for Office 365 中特定使用者群組的識別碼。 如需有關標記、授權和設定標記的詳細資訊，請參閱 [Office 365 的 Defender For User tags](user-tags.md)。
+使用者標記是 Microsoft Defender for Office 365 中特定使用者群組的識別碼。 如需有關標記、授權和設定標記的詳細資訊，請參閱 [使用者標記](user-tags.md)。
 
 在威脅瀏覽器內，您可以在下列體驗中看到使用者標記的資訊：
 
@@ -199,7 +199,7 @@ ms.locfileid: "48845672"
 
 ### <a name="filter-by-user-tags"></a>依使用者標記篩選
 
-現在您可以使用系統或自訂使用者標記來排序及篩選，以快速抓住威脅的範圍。 請參閱 [Office 365 ATP 中的使用者標記](user-tags.md) 以深入瞭解。
+現在您可以使用系統或自訂使用者標記來排序及篩選，以快速抓住威脅的範圍。 請參閱 [使用者標記](user-tags.md) 以深入瞭解。
 
 > [!IMPORTANT]
 > 依使用者標記篩選和排序目前是公開預覽。

@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 772d1d52e977a067ff9bc3517de9cb2ae6c8c9a3
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: b3b1f43217b3be285f20925065bf9710a38f9606
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950364"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941438"
 ---
 # <a name="windows-security-update-insights"></a>Windows 安全性更新深入解析
 此視圖提供 Microsoft 受管理桌面裝置之安全性更新狀態的概覽。 
@@ -23,11 +23,11 @@ ms.locfileid: "47950364"
 
 ## <a name="device-status"></a>裝置狀態
 
-若要讓 Windows Update 更新裝置，必須將其連線至網際網路，而且至少需要六個小時才能進行休眠，其中兩個必須是連續。 只要裝置連線但未休眠，它就會被視為「使用中」。 雖然不符合這些需求的裝置可能會更新，但符合這些需求的裝置會更新最高的可能性。 
+若要讓 Windows Update 更新裝置，必須將其連線至網際網路，而且至少需要六個小時才能進行休眠，其中兩個必須是連續。 雖然不符合這些需求的裝置可能會更新，但符合這些需求的裝置會更新最高的可能性。 
 
 我們會使用下列條款，在 Windows Update 內容中歸類裝置活動：
 
-- <strong>Active：</strong> 符合最小使用量準則的裝置 (六個小時、兩個) 連續的安全性更新版本，以及 Microsoft Intune 至少每五天簽入
+- <strong>Active：</strong> 符合最低活動準則的裝置 (六個小時、兩個連續) 的安全性更新版本，並已在 Microsoft Intune 中至少每隔五天簽入。
 - 已<strong>同步處理：</strong>過去28天內，已使用 Intune 簽入的裝置
 - 不<strong>同步：</strong>過去28天內，<i>未</i>以 Intune 簽入的裝置
 

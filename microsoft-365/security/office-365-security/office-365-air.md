@@ -1,5 +1,5 @@
 ---
-title: 開始使用 Microsoft Defender for Office 365 中的自動調查和回應
+title: Microsoft Defender for Office 365 中的自動調查和回應
 keywords: AIR, autoIR, ATP, 自動化, 調查, 回應, 修正, 威脅, 進階, 威脅, 保護
 f1.keywords:
 - NOCSH
@@ -21,14 +21,14 @@ description: 開始使用 Microsoft Defender for Office 365 中的自動調查�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 5796cdf21f9dd12c35a2f84422f03503433755b0
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 5a7995e0aeba0f29efb1a085a04a299b1e709b1f
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931933"
+ms.locfileid: "48941460"
 ---
-# <a name="get-started-using-automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>開始使用 Microsoft Defender for Office 365 中的自動調查和回應 (AIR) 
+# <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自動調查和回應 (AIR) 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 

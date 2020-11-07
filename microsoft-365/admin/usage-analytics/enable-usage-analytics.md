@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 瞭解如何使用 Power BI 中的 Microsoft 365 流量分析範本應用程式，來開始收集租使用者的資料。
-ms.openlocfilehash: 0817e6441540086bf679c6533b1bad2e4087b4b9
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 347256fa7acaae18cd31f0c8c6b7eca20ad2e9dd
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841454"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48941328"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析
 
@@ -56,12 +56,7 @@ Microsoft 365 美國政府社區尚無可用的 microsoft 365 使用方式分析
   
 ### <a name="enable-the-template-app"></a>啟用範本應用程式
 
-若要啟用範本應用程式，您必須是下列其中一項： 
-- **全域管理員**
-- **報表讀取器**
-- **Exchange 系統管理員**
-- **商務用 Skype 系統管理員**
-- **SharePoint 系統管理員** 
+若要啟用範本應用程式，您必須是 **全域系統管理員** 。
   
 如需詳細資訊，請參閱 [關於系統管理員角色](../add-users/about-admin-roles.md) 。 
   

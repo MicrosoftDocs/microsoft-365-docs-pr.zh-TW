@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c28353698dd372e14d5ec51b92eb4c0c051c92a4
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
+ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931909"
+ms.locfileid: "48941406"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正準備工作評估工具所找到的問題
 
@@ -308,20 +308,20 @@ Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的
 
 ### <a name="self-service-password-reset"></a>自助密碼重設
 
-必須為所有使用者啟用自助密碼重設 (SSPR) 。 如果不是，則 Microsoft 管理的桌面服務帳戶無法運作。 如需詳細資訊，請參閱 [教學課程：讓使用者可以使用 Azure Active Directory 自助密碼重設來解除鎖定帳戶或重設密碼](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
+自助密碼重設 (SSPR) 應該針對所有不含 Microsoft Managed Desktop 服務帳戶的使用者啟用。 如需詳細資訊，請參閱 [教學課程：讓使用者可以使用 Azure Active Directory 自助密碼重設來解除鎖定帳戶或重設密碼](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
 
 **諮詢**
 
-請確定 SSPR **選取** 的設定包括 Microsoft 受管理的桌面裝置。
+請確定 [SSPR **選取** ] 設定包括 Microsoft 受管理的桌面裝置，但不包括 Microsoft 受管理的桌面服務帳戶。 SSPR 啟用時，Microsoft Managed Desktop service 帳戶無法如期運作。  
 
 
 ### <a name="standard-user-role"></a>標準使用者角色
 
-Microsoft 受管理的桌面使用者應是不具備本機系統管理員許可權的標準使用者。 當他們啟動 Microsoft 受管理的桌面裝置時，系統會將其指派為標準使用者角色。
+除了為全域系統管理員和裝置管理員指派 Azure AD 角色的使用者以外，Microsoft 受管理的桌面使用者將是不具備本機系統管理員許可權的標準使用者。 當其他使用者啟動其 Microsoft 受管理的桌面裝置時，系統會將其指派為標準使用者角色。
 
 **諮詢**
 
-Microsoft 受管理的桌面使用者在註冊之前，不應該具有本機系統管理員許可權。
+Microsoft 受管理的桌面使用者在註冊後，不會對其 Microsoft 受管理的桌面裝置具有本機系統管理員許可權。
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps 企業版
 
