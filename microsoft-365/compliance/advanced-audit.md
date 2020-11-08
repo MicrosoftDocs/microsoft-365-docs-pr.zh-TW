@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: c63280825c04d401c0cdc44d7128031c3b7ffdd8
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 6524eadfd1622771e0da5bb8bcec73e11c0cfcdf
+ms.sourcegitcommit: 751dc531f0410ee075c179efe409a01664483ee2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398554"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "48925613"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
@@ -36,7 +36,7 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
 
 ## <a name="long-term-retention-of-audit-logs"></a>長期保留稽核記錄
 
-進階稽核會保留所有 Exchange、SharePoint 和 Azure Active Directory 稽核記錄，時間為一年。 這是透過預設的稽核記錄保留原則完成，它會保留包含 **Workload** 屬性 (這指出發生活動所在的服務) 的 **Exchange**、**SharePoint** 或 **AzureActiveDirectory** 的值的任何稽核記錄一年。 保留稽核記錄的時間越長，可協助您進行深入的鑑定或合規性調查。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md#default-audit-log-retention-policy)中的「預設稽核記錄保留原則」章節。
+進階稽核會保留所有 Exchange、SharePoint 和 Azure Active Directory 稽核記錄，時間為一年。 這是透過預設的稽核記錄保留原則完成，它會保留包含 **Workload** 屬性 (這指出發生活動所在的服務) 的 **Exchange** 、 **SharePoint** 或 **AzureActiveDirectory** 的值的任何稽核記錄一年。 保留稽核記錄的時間越長，可協助您進行深入的鑑定或合規性調查。 如需詳細資訊，請參閱[管理稽核記錄保留原則](audit-log-retention-policies.md#default-audit-log-retention-policy)中的「預設稽核記錄保留原則」章節。
 
 我們也會發佈將稽核記錄保留 10 年的功能。 將稽核記錄保留 10 年可協助支援長期的調查，並回應法規、法律和內部責任。
 
@@ -81,7 +81,7 @@ MailItemsAccessed 信箱動作會取代 Exchange Online 中信箱稽核記錄的
 
 如需有關 MailItemsAccessed 活動的稽核記錄資訊，請參閱[使用進階稽核調查遭入侵帳戶](mailitemsaccessed-forensics-investigations.md)。
 
-若要搜尋 MailItemsAccessed 稽核記錄，您可以在 Microsoft 365 合規性中心的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[Exchange 信箱活動]** 下拉式清單中搜尋 **[已存取的信箱項目]** 活動。
+若要搜尋 MailItemsAccessed 稽核記錄，您可以在 Microsoft 365 合規性中心的 [稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[Exchange 信箱活動]** 下拉式清單中搜尋 **[已存取的信箱項目]** 活動。
 
 ![在稽核記錄搜尋工具中搜尋 MailItemsAccessed 動作](../media/AdvAudit_MailItemsAccessed.png)
 
@@ -99,7 +99,7 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 調查人員可以使用 Send 事件識別從遭入侵帳戶發送的電子郵件。 Send 事件的稽核記錄中包含郵件的相關資訊，例如郵件傳送的時間、InternetMessage 識別碼、主旨列，以及郵件是否包含附件。 這項稽核資訊可協助調查人員識別從遭入侵帳戶或攻擊者傳送的電子郵件訊息相關資訊。 此外，調查人員可以使用 Microsoft 365 或電子文件探索工具來搜尋郵件 (使用主旨列或郵件識別碼)，以找出傳送郵件的收件者，以及傳送郵件的實際內容。
 
-若要搜尋 Send 稽核記錄，您可以在 Microsoft 365 合規性中心的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[Exchange 信箱活動]** 下拉式清單中搜尋 **[傳送電子郵件]** 活動。
+若要搜尋 Send 稽核記錄，您可以在 Microsoft 365 合規性中心的 [稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[Exchange 信箱活動]** 下拉式清單中搜尋 **[傳送電子郵件]** 活動。
 
 ![在 [稽核記錄搜尋工具] 中搜尋 [傳送電子郵件] 動作](../media/AdvAudit_SentMessage.png)
 
@@ -107,9 +107,9 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-當某人在 Outlook 或 Outlook 網頁版中使用搜尋列來搜尋信箱中的項目時，就會觸發 SearchQueryInitiatedExchange 事件。 調查人員可以使用 SearchQueryInitiatedExchange 事件，來判斷可能有遭入侵帳號的攻擊者是否已查看或嘗試存取信箱中的機密資訊。 SearchQueryInitiatedExchange 事件的稽核記錄包含實際搜尋的查詢文字等資訊，以及搜尋是在 Outlook 電腦版用戶端或在 Outlook 網頁版中執行。 透過查看攻擊者可能執行的搜尋查詢，調查人員可以更能瞭解搜尋的電子郵件資料意圖。
+當某人在 Outlook 網頁版 (OWA) 中使用 [搜尋列] 來搜尋信箱中的項目時，就會觸發 SearchQueryInitiatedExchange 事件。 調查人員可以使用 SearchQueryInitiatedExchange 事件，來判斷可能已入侵帳號的攻擊者是否已查看或嘗試存取信箱中的敏感性資訊。 SearchQueryInitiatedExchange 事件的稽核記錄包含實際的搜尋查詢文字。 透過查看攻擊者可能已執行的搜尋查詢，調查人員可以更能了解他們搜尋電子郵件資料的意圖。
 
-若要搜尋 SearchQueryInitiatedExchange 稽核記錄，您可以在合規性中心的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[搜尋活動]** 下拉式清單中搜尋 **[執行電子郵件搜尋]** 活動。
+若要搜尋 SearchQueryInitiatedExchange 稽核記錄，您可以在合規性中心的 [稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[搜尋活動]** 下拉式清單中搜尋 **[執行電子郵件搜尋]** 活動。
 
 ![在 [稽核記錄搜尋工具] 中搜尋 [執行電子郵件搜尋] 動作](../media/AdvAudit_SearchExchange.png)
 
@@ -120,9 +120,9 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-與搜尋信箱項目類似，當某人搜尋貴組織中的 SharePoint 主網站、Teams 網站、共同作業網站和中樞網站中的項目時，就會觸發 SearchQueryInitiatedSharePoint 事件。 調查人員可以使用 SearchQueryInitiatedSharePoint 事件來判斷攻擊者是否嘗試在 SharePoint 中尋找 (且可能存取) 敏感性資訊。 SearchQueryInitiatedSharePoint 事件的稽核記錄也包含實際搜尋的查詢文字。 透過查看攻擊者可能執行的搜尋查詢，調查人員可以更能瞭解欲搜尋的檔案資料意圖和範圍。
+與搜尋信箱項目類似，當某人搜尋貴組織中 SharePoint 主網站中的項目時，就會觸發 SearchQueryInitiatedSharePoint 事件。 調查人員可以使用 SearchQueryInitiatedSharePoint 事件來判斷攻擊者是否嘗試在 SharePoint 中尋找 (且可能存取) 敏感性資訊。 SearchQueryInitiatedSharePoint 事件的稽核記錄也包含實際的搜尋查詢文字。 透過查看攻擊者可能已執行的搜尋查詢，調查人員可以更能了解他們搜尋檔案資料的意圖和範圍。
 
-若要搜尋 SearchQueryInitiatedSharePoint 稽核記錄，您可以在合規性中心的[稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[搜尋活動]** 下拉式清單中搜尋 **[執行 SharePoint 搜尋]** 活動。
+若要搜尋 SearchQueryInitiatedSharePoint 稽核記錄，您可以在合規性中心的 [稽核記錄搜尋工具](search-the-audit-log-in-security-and-compliance.md)中，在 **[搜尋活動]** 下拉式清單中搜尋 **[執行 SharePoint 搜尋]** 活動。
 
 ![在 [稽核記錄搜尋工具] 中搜尋 [執行 SharePoint 搜尋] 動作](../media/AdvAudit_SearchSharePoint.png)
 
