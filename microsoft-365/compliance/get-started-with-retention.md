@@ -54,7 +54,7 @@ ms.locfileid: "48919861"
 
 您的合規性團隊中負責建立和管理保留原則和保留標籤的成員，必須具備 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)的權限。 根據預設，租用戶系統管理員 (全域系統管理員) 能夠存取此位置，並可讓法務人員和其他人員存取，而不需要為其提供租用戶系統管理員的所有權限。若要授與此受限制的系統管理權限，建議您將使用者新增至 [合規性系統管理員] 系統管理員角色群組。 如需相關指示，請參閱[讓使用者能夠存取安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
-只有在建立、設定、和套用保留原則及保留標籤時，才需要求這些權限。 設定這些保留原則和標籤的人員毋須存取內容。
+只有在建立、設定、和套用保留原則及保留標籤時，才需要求這些權限。 設定這些保留原則和標籤的人員不需要內容的存取權。
 
 ## <a name="common-scenarios-for-retention-policies-and-retention-labels"></a>保留原則和保留標籤的常見案例
 
@@ -69,7 +69,7 @@ ms.locfileid: "48919861"
 |讓系統管理員對文件瞭解模型套用保留和刪除動作，以便將這些動作自動套用至 SharePoint 文件庫中已識別的文件。|[建立保留標籤，並在應用程式中套用這些標籤](create-apply-retention-labels.md)|
 |自動對文件和電子郵件套用保留和刪除動作 |[自動將保留標籤套用到內容](apply-retention-labels-automatically.md)|
 |當事件發生時，請啟動保留時間，例如:  <br />- 員工離開組織 <br />- 合約到期 <br />- 產品生命週期完結| [事件發生時開始保留](event-driven-retention.md)|
-|限制變更原則，有助於符合法規需求或防範惡意系統管理員| [使用「保留鎖定」來限制變更保留原則和保留標籤原則](retention-preservation-lock.md)
+|限制變更原則，以協助符合法規需求或防範惡意系統管理員| [使用「保留鎖定」來限制變更保留原則和保留標籤原則](retention-preservation-lock.md)
 |請確認在內容在保留期結束被刪除前，有人對內容進行檢查並核准|[處置檢閱](disposition.md#disposition-reviews) |
 | 監控保留和刪除設定如何套用至項目 | [監視保留標籤](retention.md#monitoring-retention-labels) |
 |針對文件和電子郵件使用單一記錄管理解決方案 |[了解記錄管理](records-management.md) |

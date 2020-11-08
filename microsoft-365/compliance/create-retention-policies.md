@@ -289,4 +289,4 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>鎖定原則以防止變更
 
-如果您需要確保沒有人可以關閉原則、刪除原則或放寬限制，請參閱 [使用「保留鎖定」來限制變更保留原則和保留標籤原則](retention-preservation-lock.md)。
+如果您需要確保沒有人可以關閉原則、刪除原則或放寬限制，請參閱[使用「保留鎖定」來限制變更保留原則和保留標籤原則](retention-preservation-lock.md)。

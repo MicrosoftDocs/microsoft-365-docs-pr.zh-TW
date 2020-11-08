@@ -76,7 +76,7 @@ ms.locfileid: "48919851"
 |讓系統管理員對文件瞭解模型套用保留和刪除動作，以便將這些動作自動套用至 SharePoint 文件庫中已識別的文件。|[建立保留標籤，並在應用程式中套用這些標籤](create-apply-retention-labels.md)|
 |自動對文件和電子郵件套用保留和刪除動作 |[自動將保留標籤套用到內容](apply-retention-labels-automatically.md)|
 |當事件發生時，請啟動保留時間，例如:  <br />- 員工離開組織 <br />- 合約到期 <br />- 產品生命週期完結| [事件發生時開始保留](event-driven-retention.md)|
-|限制變更原則，有助於符合法規需求或防範惡意系統管理員| [使用「保留鎖定」來限制變更保留原則和保留標籤原則](retention-preservation-lock.md)
+|限制變更原則，以協助符合法規需求或防範惡意系統管理員| [使用「保留鎖定」來限制變更保留原則和保留標籤原則](retention-preservation-lock.md)
 |管理 SharePoint 中不同文件類型的生命週期| [使用保留標籤來管理儲存在 SharePoint 中的文件生命週期](auto-apply-retention-labels-scenario.md)|
 |請確認在內容在保留期結束被刪除前，有人對內容進行檢查並核准|[處置檢閱](disposition.md#disposition-reviews) |
 |在保留期結束時被永久刪除的內容有處置證明|[記錄處置](disposition.md#disposition-of-records) |
