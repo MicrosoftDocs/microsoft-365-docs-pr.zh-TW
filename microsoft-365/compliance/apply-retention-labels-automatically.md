@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及自動發佈保留標籤，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 5833684c729876315ce3866a8af52d79b924caef
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: c1c18f5445b326ad7353d8c534940d3db69a3f24
+ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920017"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "48931977"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤來保留或刪除內容
 
@@ -180,17 +180,8 @@ ms.locfileid: "48920017"
 ProgID:Media AND ProgID:Meeting
 ```
 
-針對此保留標籤，您也必須透過建立標籤原則，將它發佈到相關使用者的 OneDrive 帳戶或 SharePoint 網站。 在多數時候，會議錄製都會儲存到 OneDrive，但針對頻道會議，則是將它們儲存在 SharePoint 中。
+大多數時候，會議錄製會儲存到 OneDrive。 但頻道會議會儲存在 SharePoint 中。
 
-儲存自動套用保留標籤原則後：
-
-1. 選取 [標籤原則 **]** 索引標籤 > [發佈標籤 **]**
-
-2. 當系統提示您選取標籤時，請選擇與您為自動應用原則選取的標籤，該原則識別 Teams 會議錄製。
-
-3. 當系統提示您輸入位置時，請選擇 [SharePoint 網站 **]** ，然後選擇 [OneDrive 帳戶 **]** 。 然後您可以保留預設值 **全部** ，或指定個別位置，例如，包含或排除特定 OneDrive 帳戶。
-
-4. 完成精靈並儲存此標籤原則。
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>使用可訓練分類器自動將標籤套用至內容
 
@@ -216,7 +207,7 @@ ProgID:Media AND ProgID:Meeting
 
 如果預期的標籤在七天之後未顯示，請在合規性中心的 [標籤原則 **]** 頁面中選取自動套用原則，以檢查其 [狀態 **]** 。 如果您看到 **關閉 (錯誤)** 狀態，且在位置的詳細資料中，看到訊息說明部署原則 (針對 SharePoint) 或嘗試重新部署原則 (針對 OneDrive) 所耗費的時間超過預期，請嘗試執行 [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令以重試原則發佈：
 
-1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
 2. 執行下列命令：
     
