@@ -1,5 +1,5 @@
 ---
-title: 修正準備工作評估工具所找到的問題
+title: 修正由整備評估工具發現的問題
 description: 針對每個工具找到的問題所採取的詳細動作
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 642de80e1a133f212b7afb6774d9aab2eeaabdbf
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941406"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948406"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正準備工作評估工具所找到的問題
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正由整備評估工具發現的問題
 
 針對每個檢查，該工具會報告下列四個可能的結果之一：
 
@@ -242,7 +242,7 @@ Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的
 
 **諮詢**
 
-請確定任何更新環原則您已排除現代的 **工作場所-所有** Azure AD 群組。 如需步驟，請參閱 [在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 **新式的工作場所裝置-所有** Azure AD 群組是我們在您註冊 Microsoft Managed Desktop 時所建立的動態群組，所以您必須在註冊後傳回排除此群組。
+請確定任何更新環原則您已排除現代的 **工作場所裝置-所有** Azure AD 群組。 如果您已將 Azure AD 使用者群組指派給這些原則，請確定任何更新環原則您也排除了 **新式的 Workplace-所有** 包含您的 Microsoft 受管理桌面使用者的 azure ad 群組。 如需步驟，請參閱 [在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 兩個 **新式的工作場所裝置-所有** 及 **現代的工作場所-所有** Azure AD 群組都是在您註冊 Microsoft Managed Desktop 時所建立的群組，所以您必須回到註冊後再排除此群組。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 設定

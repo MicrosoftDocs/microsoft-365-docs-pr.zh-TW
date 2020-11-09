@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: it-pro
 description: 設定 Microsoft 365 承租人的藍圖。
-ms.openlocfilehash: 038d9b0d94b84d184f0d9d9b250d0ee4d2c19de9
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: d2640a036eedda0b0962a15a03dcf0211ea0209b
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753963"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948394"
 ---
 # <a name="tenant-roadmap-for-microsoft-365"></a>Microsoft 365 租使用者藍圖
 
@@ -66,9 +66,9 @@ Microsoft 會繼續開啟新的資料中心地理位置， (geos) Microsoft 365 
 
 如需詳細資訊，請參閱 [Microsoft 365 多地理](microsoft-365-multi-geo.md)位置。
 
-## <a name="manage-multiple-microsoft-365-tenant"></a>管理多個 Microsoft 365 租使用者 
+## <a name="manage-multiple-microsoft-365-tenants"></a>管理多個 Microsoft 365 承租人 
 
-雖然為您的 oganization 使用單一租使用者是理想的，但您可以是具有多個租使用者的眾多組織之一。 原因包括合併和收購、您想要管理隔離，或您具有分散的方式。
+雖然為您的 oganization 使用單一租使用者是理想的，但您可以是具有多個承租人的眾多組織之一。 原因包括合併和收購、您想要管理隔離，或您具有分散的方式。
 
 如果您有多個 Microsoft 365 承租人，請參閱下列文章，以取得詳細資訊：
 
@@ -76,6 +76,6 @@ Microsoft 會繼續開啟新的資料中心地理位置， (geos) Microsoft 365 
 - [跨租用戶信箱移轉](cross-tenant-mailbox-migration.md)
 - [租用戶到租用戶的移轉](microsoft-365-tenant-to-tenant-migrations.md)
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 以 [訂閱、授權、帳戶及](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)租使用者的方式開始規劃承租人。

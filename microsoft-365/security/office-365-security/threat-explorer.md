@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a1aff37cc845e09be332b853aa938cb66fdb43f
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 561e4c62922a4da0789111de5c3be7844bb83692
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941484"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948490"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
@@ -45,7 +45,6 @@ ms.locfileid: "48941484"
 - [從瀏覽器中的視圖開始自動調查和回應](#start-automated-investigation-and-response) 程式 (Office 365 的 Defender for Office 方案 2) 
 - ... [調查惡意電子郵件等功能](#more-ways-to-use-explorer-or-real-time-detections)！
 
-
 ## <a name="experience-improvements-to-threat-explorer-and-real-time-detections"></a>豐富威脅瀏覽器和即時偵測的增強功能
 
 ### <a name="tags-in-threat-explorer"></a>威脅瀏覽器中的標記
@@ -65,6 +64,7 @@ ms.locfileid: "48941484"
 > ![在電子郵件格線視圖中篩選標記](../../media/tags-grid.png)
 
 #### <a name="filtering"></a>篩選
+
 現在我們有標記為篩選，因此您可以只搜尋優先順序帳戶或特定使用者標記案例 (，甚至在此體驗) 中排除包含某些標記的結果。 結合使用我們提供的多個其他篩選器，可協助您縮小調查範圍
 
 [![篩選標記 ](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
@@ -113,11 +113,11 @@ ms.locfileid: "48941484"
 
 除了識別所有傳遞和傳遞後事件以外，[時程表] 視圖也提供這些事件子集合在該時間點所識別之威脅的相關資訊。 此外，它還提供其他動作的詳細資訊 (例如，ZAP、手動修正) 以及該動作的結果。 時程表視圖包含原始傳遞的相關資訊，以及後續對電子郵件執行的後續傳遞事件。
 
--   來源：這可以是以系統管理員/系統/使用者為基礎的事件來源。
--   Event：這包括最上層的事件，例如原始傳遞、手動修正、ZAP、報送及動態傳遞。
--   動作：這涵蓋做為 ZAP 或 Admin 動作一部分所採取的特定動作 (例如，Soft Delete) 。
--   威脅：涵蓋該時間點 (惡意程式碼、網路釣魚詐騙、垃圾郵件) 所識別的威脅。
--   Result/Details：涵蓋動作結果的詳細資訊，不論它是在 ZAP/系統管理動作中執行。
+- 來源：這可以是以系統管理員/系統/使用者為基礎的事件來源。
+- Event：這包括最上層的事件，例如原始傳遞、手動修正、ZAP、報送及動態傳遞。
+- 動作：這涵蓋做為 ZAP 或 Admin 動作一部分所採取的特定動作 (例如，Soft Delete) 。
+- 威脅：涵蓋該時間點 (惡意程式碼、網路釣魚詐騙、垃圾郵件) 所識別的威脅。
+- Result/Details：涵蓋動作結果的詳細資訊，不論它是在 ZAP/系統管理動作中執行。
 
 ### <a name="original-and-latest-delivery-location"></a>原始及最近的傳遞位置
 
@@ -170,15 +170,15 @@ ms.locfileid: "48941484"
 
 針對 URL 及 URL 按一下 [資料] 的一組增強功能包括：
 
- - 顯示已完全按一下的 URL (包括 URL 內飛入的 [點擊] 區段中，任何屬於 URL) 的查詢參數。 目前，我們會在標題列中顯示 URL 網域和路徑。 我們正在擴充該資訊以顯示完整的 URL。
+- 顯示已完全按一下的 URL (包括 URL 內飛入的 [點擊] 區段中，任何屬於 URL) 的查詢參數。 目前，我們會在標題列中顯示 URL 網域和路徑。 我們正在擴充該資訊以顯示完整的 URL。
 
- - 跨 URL 篩選器的修正 (URL 與 URL 網域 vs URL 網域和路徑) ：我們已在搜尋包含 URL/按一下判定的郵件時，進行了一些更新。 在此情況下，我們已啟用通訊協定不可知搜尋的支援 (含義，您可以直接搜尋沒有 HTTP) 的 URL。 根據預設，除非明確指定，否則 URL 搜尋會對應至 HTTP。 例如：
+- 跨 URL 篩選器的修正 (URL 與 URL 網域 vs URL 網域和路徑) ：我們已在搜尋包含 URL/按一下判定的郵件時，進行了一些更新。 在此情況下，我們已啟用通訊協定不可知搜尋的支援 (含義，您可以直接搜尋沒有 HTTP) 的 URL。 根據預設，除非明確指定，否則 URL 搜尋會對應至 HTTP。 例如：
 
-   1. `http://`在「url」、「Url 網域」和「Url 網域及路徑」篩選欄位中，以不含前置詞的方式進行搜尋。 這種行為是一致的，且應該顯示相同的結果。
+  1. `http://`在「url」、「Url 網域」和「Url 網域及路徑」篩選欄位中，以不含前置詞的方式進行搜尋。 這種行為是一致的，且應該顯示相同的結果。
 
-   1. `https://`在「URL」中搜尋前置詞。 如果不存在，則 `http://` 會假設首碼。
+  1. `https://`在「URL」中搜尋前置詞。 如果不存在，則 `http://` 會假設首碼。
 
-   1. `/` 忽略 "URL 路徑"、"URL 網域"、"URL 網域和路徑" 欄位的開頭和結尾。 `/` 在 [URL] 欄位結束時忽略。
+  1. `/` 忽略 "URL 路徑"、"URL 網域"、"URL 網域和路徑" 欄位的開頭和結尾。 `/` 在 [URL] 欄位結束時忽略。
 
 ### <a name="phish-confidence-level"></a>網路釣魚信賴等級
 
@@ -247,12 +247,13 @@ ms.locfileid: "48941484"
 > [!div class="mx-imgBorder"]
 > ![主要目標使用者](../../media/Top_Targeted_Users.png)
 
-
 ### <a name="exchange-transport-rules"></a>Exchange 傳輸規則
+
 在資料豐富中，您也應該可以查看已套用至郵件的所有不同傳輸規則。 此資訊將會出現在 [電子郵件格線] 視圖中 (以進行查看，請選取 [格線] 中的 [欄選項]，然後在 [格線] 的 [欄] 選項中新增 Exchange Transport Rule) 以及電子郵件中的詳細資訊。
 您可以同時看到 GUID，以及已套用至郵件的傳輸規則名稱。 此外，您也可以使用傳輸規則的名稱來搜尋郵件。 這會是「包含」搜尋，這表示您也可以使用部分搜尋進行搜尋。
 
 #### <a name="important-note"></a>重要注意事項：
+
 ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具有下列其中一個角色/許可權，才能查看 ETR 名稱和搜尋。  如果您未指派任何下列角色，您將無法看到傳輸規則的名稱，並使用 ETR 名稱來搜尋郵件。。 不過，您將可以在電子郵件詳細資料中看到 ETR 標籤及 GUID 資訊。 在電子郵件網格、電子郵件 flyouts、篩選和匯出等中查看記錄的其他體驗不會受到影響。
 
 - 僅限 EXO-資料遺失防護：全部

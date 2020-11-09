@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: 深入瞭解 Microsoft Defender for Office 365 中的市場即時檢視。
-ms.openlocfilehash: 181b6ce5859dd5146512fe854c983b6b9096d8c6
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 1e5754e077d4c1b8f685b5dea1f8a59985e08a13
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941352"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948478"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的即時檢視
 
@@ -115,9 +115,9 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
 若要進一步篩選視圖，您可以使用多個值篩選的單一屬性，方法是按一下 [ **行銷活動類型** ] 按鈕，進行選取，然後按一下 [重新整理 **]。**
 
-下列清單說明可用的活動屬性：
+下列清單說明「 **行銷活動類型** 」按鈕中可用的可篩選的活動屬性：
 
-- Basic
+- **基本** ：
   - **行銷活動類型** ：選取 **惡意** 代碼或 **網路釣魚** 。 清除選取範圍與同時選取這兩者的結果相同。
   - **市場活動名稱**
   - **活動子類型**
@@ -127,23 +127,26 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
   - **主旨**
   - **附件檔名**
   - **惡意程式碼系列**
+  - **標記** ：已套用指定使用者標記的使用者或群組 (包含優先順序帳戶) 。 如需使用者標記的相關資訊，請參閱 [user tags](user-tags.md)。
+  - **系統覆寫**
   - **傳遞動作**
+  - **其他動作**
+  - **方向性**
   - **偵測技術**
-  - **標記**
+  - **原始傳遞位置**
+  - **最新傳遞位置**
   - **系統覆寫**
 
-- 進階
+- **Advanced** ：
   - **網際網路郵件識別碼** ：郵件頭的 **Message-ID** 標頭欄位中提供。 範例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (記下角括弧) 。
   - **網路消息識別碼** ：在郵件頭的 [ **X-MS-Exchange-Organization-網路 Message-Id** 標頭] 欄位中可用的 GUID 值。
   - **寄件者 IP**
   - **附件 SHA256** ：若要在 Windows 中尋找檔案的 SHA256 雜湊值，請在命令提示字元中執行下列命令： `certutil.exe -hashfile "<Path>\<Filename>" SHA256` 。
-
   - **叢集識別碼**
-
   - **警示原則識別碼**
+  - **ZAP URL 信號**
 
-- URL
-
+- **URLs** ：
   - **URL 網域**
   - **URL 網域和路徑**
   - **URL**

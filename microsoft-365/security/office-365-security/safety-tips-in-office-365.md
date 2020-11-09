@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 深入瞭解如何將安全性秘訣加入電子郵件，以瞭解 EOP 和 Office 365 如何保護您免受垃圾郵件、網路釣魚和惡意程式碼的防禦。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da52a8ef2913c30c281fec74f92142847e29792
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0e204021bfd79dabd4abdeefaa990da50915eaf0
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201980"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948442"
 ---
 # <a name="safety-tips-in-email-messages"></a>電子郵件訊息的安全提示
 
@@ -47,14 +47,6 @@ Outlook 中的安全性秘訣不一定取決於您所使用的 Outlook 版本，
     ![顯示綠色安全提示的螢幕擷取畫面。](../../media/acbc11d0-f626-4848-9fbf-66eeeda3f803.png)
 
     除了不安全的郵件之外，我們也會告訴您來自我們信任的寄件者的有效郵件，並以綠色的安全性提示。 電子郵件中的綠色安全提示是指我們會檢查郵件的寄件者，並驗證它是安全的。 Microsoft 會維護此信任的寄件者清單，其中包含金融組織及經常哄騙或模仿的人。
-
-- 未篩選的郵件 (灰色安全提示) 。
-
-    ![顯示灰色安全提示的螢幕擷取畫面。](../../media/c4d0cf8f-08e9-4c84-beee-1d9e0b022e0a.png)
-
-    我們也會告訴您，當我們略過檢查郵件時，因為郵件是來自您信任的 [安全寄件者] 清單上的寄件者，或是因為有郵件流程規則，而略過篩選。
-
-    當外部圖像遭到封鎖時，灰色的安全性提示也會顯示出來，也就是說，郵件會在您的收件匣中，而且不會顯示為垃圾郵件，但是會包含您未選擇下載的外部圖像。
 
 ## <a name="working-with-safety-tips"></a>使用安全提示
 

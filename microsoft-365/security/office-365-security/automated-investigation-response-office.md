@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Office 365 的自動化調查和回應 (AIR) 的運作方式
+title: Microsoft Defender for Office 365 的自動化調查和回應運作方式
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -21,14 +21,14 @@ description: 請參閱 Office 365 的 Microsoft Defender 中的自動化調查�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 6923e283e4ec62de9e4a9c1d9196eb032724798d
-ms.sourcegitcommit: 24826e1b61e7aace12fc9e8ae84ae3e760658b50
+ms.openlocfilehash: 039cca2f6f61d7c82f8c3e85f1fd147a68f84b68
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48931955"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948430"
 ---
-# <a name="how-automated-investigation-and-response-air-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自動化調查和回應 (AIR) 的運作方式
+# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自動化調查和回應運作方式
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
