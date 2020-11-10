@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: a6605f7d8561532121e54f02b579de26879baa1a
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 6e0f8e2661692930469aff85e0a7eeef2dd647e0
+ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305237"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "48948384"
 ---
 # <a name="health-insurance-portability-and-accountability-hipaa--hitech-acts"></a>健康保險流通與責任 (HIPAA) & 高科技的運作
 
@@ -55,6 +55,7 @@ Microsoft enterprise 雲端服務也涵蓋 FedRAMP 評估。 Microsoft Azure 和
 
 - [Azure 和 Azure Government](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
+- [Microsoft Cloud for Healthcare](https://aka.ms/MicrosoftCloudforHealthcareCompliance)
 - Microsoft Microsoft 保健 Bot 服務
 - Microsoft Stream
 - Microsoft 專業服務：Azure、Dynamics 365、Intune 及商務用 Microsoft 365 中型企業和企業客戶的頂級與內部部署
@@ -98,13 +99,13 @@ Microsoft 為合格的公司或其供應商提供涵蓋在 Microsoft 服務範�
 
 為了協助客戶執行這項工作，Microsoft 已發佈下列指南：
 
-- [Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)及[Dynamics 365 和 Office 365](https://go.microsoft.com/fwlink/?LinkID=257510)的*HIPAA/高科技法案實現指導*方針。 針對隱私權、安全性和合規性監察官，以及其他負責 HIPAA 和高科技法案實施的人員，描述您的組織可採取的具體步驟，以維護法規遵從性。
+- [Azure](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)及 [Dynamics 365 和 Office 365](https://go.microsoft.com/fwlink/?LinkID=257510)的 *HIPAA/高科技法案實現指導* 方針。 針對隱私權、安全性和合規性監察官，以及其他負責 HIPAA 和高科技法案實施的人員，描述您的組織可採取的具體步驟，以維護法規遵從性。
 - [使用 Microsoft Azure 設計安全狀況解決方案的實用指南](https://aka.ms/azureindustrysecurity) 可協助您更進一步瞭解以安全方式成功採用雲端服務所需的功能。
 - [在 Microsoft 雲端中處理 HIPAA 安全性和隱私權需求，](https://smb.blob.core.windows.net/smbproduction/Content/Microsoft_Cloud_Healthcare_HIPAA_Security_Privacy.pdf) 提供法規需求的簡短概述。 它也會詳細分析 Microsoft 的雲端服務是如何以對應至這些需求的方法來建立，以及如何建立規範準備解決方案的指導方針。
 
-## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評定風險
+## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評估風險
 
-[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性態勢，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評定。 可在合規性管理員的 [評定範本]**** 頁面尋找範本。 了解如何[在合規性管理員中建立評定](compliance-manager-assessments.md)。
+[Microsoft 合規性管理員](compliance-manager.md)是 [Microsoft 365 合規性中心](microsoft-365-compliance-center.md)的功能，可協助您了解組織的合規性態勢，並採取行動以協助降低風險。 合規性管理員會提供特優範本以為此法規建立評定。 可在合規性管理員的 [評定範本] 頁面尋找範本。 了解如何[在合規性管理員中建立評定](compliance-manager-assessments.md)。
 
 ## <a name="resources"></a>資源
 

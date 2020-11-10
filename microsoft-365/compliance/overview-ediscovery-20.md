@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: 本文概要說明 Microsoft 365 中的高級 eDiscovery，以及內部及外部調查的工具。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95c864b9e2222000b1114ae42dbbb5705228d531
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 2ef61c8c60cb2cd7114798969dce14c7dce0a2fd
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944341"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951150"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Microsoft 365 中的高級 eDiscovery 解決方案概述
 
@@ -72,11 +72,13 @@ Advanced eDiscovery 的內建工作流程會與「電子探索」參考模型 (E
 
 如需有關在高級 eDiscovery 中的端對端工作流程的詳細資訊，請參閱這段 [Microsoft 的機械影片](https://go.microsoft.com/fwlink/?linkid=2066133)。
 
-下列各節將說明在高級 eDiscovery 中內建工作流程中的每個步驟。
+下列各節將說明在高級 eDiscovery 中內建工作流程中的每個步驟。 下列螢幕擷取畫面顯示名為 *2020.11.03-Contoso v.* 案例的 [ **一覽表** ] 索引標籤。
+
+![內建的高級 eDiscovery 工作流程中的索引標籤](../media/AeD-Case-Screenshot1.png)
 
 ## <a name="managing-custodians-and-non-custodial-data-sources"></a>管理保管人和非 custodial 資料來源
 
-使用 [ **來源** ] 索引標籤，新增及管理您已在案例中識別為感興趣的人員，以及其他可能未與保管人相關聯的資料來源。 當您新增保管人或非 custodial 資料來源時，您可以快速執行諸如對保管人和非 custodial 資料來源進行合法保留、與保管人進行通訊，以及搜尋保管人和非 custodial 資料來源的動作，以收集與案例相關的內容。 隨著案例的進展，您可以輕鬆地新增保管人或非 custodial 日期來源，或從案例發行。 如需詳細資訊，請參閱 [Advanced eDiscovery 中的使用保管人](managing-custodians.md)。
+您可以使用 [ **資料來源** ] 索引標籤，新增及管理您已在案例中的利益人員，以及可能未與保管人相關聯之其他資料來源的人員。 當您新增保管人或非 custodial 資料來源時，您可以快速執行諸如對保管人和非 custodial 資料來源進行合法保留、與保管人進行通訊，以及搜尋保管人和非 custodial 資料來源的動作，以收集與案例相關的內容。 隨著案例的進展，您可以輕鬆地新增保管人或非 custodial 日期來源，或從案例發行。 如需詳細資訊，請參閱 [Advanced eDiscovery 中的使用保管人](managing-custodians.md)。
 
 ## <a name="managing-legal-hold-notifications"></a>管理合法保留通知
 
@@ -84,7 +86,7 @@ Advanced eDiscovery 的內建工作流程會與「電子探索」參考模型 (E
 
 ## <a name="managing-content-preservation"></a>管理內容保留
 
-當您將系統管理員新增至案例時，您可以在 custodial 資料上進行保留。 使用 [ **保留** ] 索引標籤可管理您新增保管人時所建立的保留，以及管理與案例相關聯的其他法律保留;例如，您可以識別並對非 custodial 資料來源進行保留。 您也可以編輯案例中的任何保留，並讓它成為查詢型保留，只保留符合查詢的內容。 例如，您可以將日期範圍新增至保留，只保留在特定日期範圍內建立的內容。 您也可以取得暫止內容的統計資料，並在不再與案例相關後移除保留，或加以刪除。 如需詳細資訊，請參閱 [Manage 封存 In Advanced eDiscovery](managing-holds.md)。
+當您將系統管理員新增至案例時，您可以在 custodial 資料上進行保留。 使用 [ **保留** ] 索引標籤可管理在您新增保管人時所建立的保留，以及管理與案例相關的其他法律保留;例如，您可以識別並對非 custodial 資料來源進行保留。 您也可以編輯案例中的任何保留，並讓它成為查詢型保留，只保留符合查詢的內容。 例如，您可以將日期範圍新增至保留，只保留在特定日期範圍內建立的內容。 您也可以取得暫止內容的統計資料，並在不再與案例相關後移除保留，或加以刪除。 如需詳細資訊，請參閱 [Manage 封存 In Advanced eDiscovery](managing-holds.md)。
 
 ## <a name="indexing-custodian-data"></a>索引保管人資料
 
