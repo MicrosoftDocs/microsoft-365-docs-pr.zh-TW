@@ -1,5 +1,5 @@
 ---
-title: 透過攻擊模擬訓練取得深入瞭解
+title: 透過攻擊模擬訓練取得深入解析
 ms.author: daniha
 author: danihalfin
 manager: dansimp
@@ -10,15 +10,15 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-description: 深入瞭解 Microsoft 365 的安全性中心中的攻擊模擬訓練如何影響員工，以及如何深入瞭解類比和訓練結果。
-ms.openlocfilehash: 180ddc773b5a299692e40ddc558d3b3a89f4093b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+description: 瞭解 Microsoft 365 security center 中的攻擊模擬訓練如何影響員工，以及如何深入瞭解類比和訓練結果。
+ms.openlocfilehash: 80b8c275d1d64dd3dbd6509309fb88cd641734e3
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944435"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950980"
 ---
-# <a name="gain-insights-through-attack-simulation-training"></a>透過攻擊模擬訓練取得深入瞭解
+# <a name="gain-insights-through-attack-simulation-training"></a>透過攻擊模擬訓練取得深入解析
 
 在攻擊模擬訓練中，Microsoft 會根據類比和員工的結果，為您提供真知灼見。 這些真知灼見會協助您告訴您員工在威脅準備時所進行的進度，以及建議的後續步驟，以更好地準備員工和您的環境以進行攻擊。
 
@@ -38,14 +38,20 @@ ms.locfileid: "48944435"
 
 此外，還 `<number> less susceptible to phishing` 反映實際的員工數目與受攻擊損害率和預測的折衷率之間的差異。 此員工人數會因未來的類似攻擊而遭到攻破，同時也會 `<percent%> better than predicted rate` 指出員工相對於預測的折衷率的整體效果。
 
-![攻擊類比訓練上的行為影響卡片](../../media/attack-sim-preview-behavior-impact-card.png)
+> [!div class="mx-imgBorder"]
+> ![攻擊類比訓練上的行為影響卡片](../../media/attack-sim-preview-behavior-impact-card.png)
 
 若要查看更詳細的報告，請按一下 [ **View 模擬和訓練 efficacy] 報告** ，它會提供與類比本身的其他內容相同的資訊，例如類比技術和目標使用者總數。
 
 ## <a name="recommended-actions"></a>建議的動作
 
-在 [ [**模擬** ]](https://security.microsoft.com/attacksimulator?viewid=simulations) 索引標籤上，選取任何類比將會帶您前往模擬的詳細資料。 在這裡您會看到 [ **建議的動作** ] 區段。
+在 [ [**模擬** ]](https://security.microsoft.com/attacksimulator?viewid=simulations)索引標籤上，選取任何模擬會將您帶到模擬的詳細資料。 在這裡您會看到 [ **建議的動作** ] 區段。
 
 建議的動作區段會詳細說明 [Microsoft 安全分數](../mtp/microsoft-secure-score.md)中提供的建議。 這些建議是以類比中所使用的負載為基礎，可協助您保護員工和您的環境。 按一下每個改進動作會將您帶到其詳細資料。
 
-![攻擊模擬訓練的建議動作區段](../../media/attack-sim-preview-recommended-actions.png)
+> [!div class="mx-imgBorder"]
+> ![攻擊模擬訓練的建議動作區段](../../media/attack-sim-preview-recommended-actions.png)
+
+## <a name="related-links"></a>相關連結
+
+**攻擊模擬** 程式 [建立網路釣魚攻擊模擬](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training?view=o365-worldwide) ，並 [建立用於訓練人員的負載](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulation-training-payloads?view=o365-worldwide)

@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 使用此藍圖設定 Microsoft 365 的用戶端和伺服器軟體。
-ms.openlocfilehash: 2fb63f73ad49c68cbeb6c92497835c36f9faf737
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 7ebb48eb474991feae325cab00ebc2a0e9348db8
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920439"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950953"
 ---
 # <a name="client-and-server-software-roadmap-for-microsoft-365"></a>Microsoft 365 的用戶端與伺服器軟體藍圖
 
-大多數的企業組織都有異構環境，包括多個版本的作業系統、用戶端軟體和伺服器軟體。 Microsoft 365 企業版包含您 IT 基礎結構最安全的主要元件版本。 此外，它也包含可讓您利用雲端技術的生產力功能。
+大多數的企業組織都有異構環境，包括多個版本的作業系統、用戶端軟體和伺服器軟體。 適用于企業的 Microsoft 365 包括 IT 基礎結構主要元件的最安全版本。 此外，它也包含可讓您利用雲端技術的生產力功能。
 
-若要充分發揮 Microsoft 365 企業版產品整合套件的商務價值，請開始規劃並實作策略以移轉以下版本：
+若要最大化 Microsoft 365 的企業整合套件的商業價值，請開始規劃及執行遷移版本的策略：
 
 - 您的電腦上安裝的 Office 用戶端至 Microsoft 365 應用程式 enterprise。
 - 在您的伺服器上安裝到其對等服務的 Office 伺服器至 Microsoft 365。
@@ -34,7 +34,7 @@ ms.locfileid: "48920439"
 >Windows 7 的支援已于 *2020 年1月14日* 結束。 如需詳細資訊，請參閱 [支援終止的詳細資料](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。
 >
 
-當您隨時間完成這些遷移時，您的組織會更接近 [現代辦公環境](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)的願景。 這種安全且整合的環境可協助您解除組織中的團隊合作和創造力。 Microsoft 365 企業版可讓您在所有的方式中，同時提供您。
+當您隨時間完成這些遷移時，您的組織會更接近 [現代辦公環境](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/)的願景。 這種安全且整合的環境可協助您解除組織中的團隊合作和創造力。 適用于企業的 Microsoft 365 可讓您在所有的方式中啟用和提供。
 
 ## <a name="migration-for-office-client-products"></a>Office 用戶端產品的遷移
 
@@ -44,7 +44,7 @@ ms.locfileid: "48920439"
 - 不會優化使用 Microsoft 雲端技術，協助您以數位方式轉換您的業務。
 - 不提供最新功能。
 
-Microsoft 365 企業版包含適用于企業的 Microsoft 365 應用程式。 此版本的 Office 用戶端產品可搭配 Microsoft 365 企業版授權使用。 它已從 Microsoft 雲端安裝並更新。 Microsoft 365 Apps 企業版授權包括安全性更新和最新功能。 如需詳細資訊，請參閱 [關於適用于企業的 Microsoft 365 應用程式](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)。
+適用于企業的 microsoft 365 包括適用于企業的 Microsoft 365 應用程式。 此版本的 Office 用戶端產品可搭配 Microsoft 365 for Enterprise 授權使用。 它已從 Microsoft 雲端安裝並更新。 Microsoft 365 Apps 企業版授權包括安全性更新和最新功能。 如需詳細資訊，請參閱 [關於適用于企業的 Microsoft 365 應用程式](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)。
 
 ### <a name="office-2007"></a>Office 2007
 
@@ -72,7 +72,7 @@ Microsoft 365 企業版包含適用于企業的 Microsoft 365 應用程式。 �
 
 ### <a name="office-2013-and-office-2016"></a>Office 2013 和 Office 2016
 
-Office 2013 和 Office 2016 的支援終止藍圖尚未決定。 在這些版本（如 Office 2010）中，您仍然必須 [安裝安全性更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)。 這項工作可能無法正常縮放，視組織的規模而定。
+請參閱 [Office 2013 的支援終止藍圖](https://docs.microsoft.com/lifecycle/products/microsoft-office-2013)。 尚未判斷 Office 2016 的支援結束。 在這些版本（如 Office 2010）中，您仍然必須 [安裝安全性更新](https://support.office.com/article/install-office-updates-2ab296f3-7f03-43a2-8e50-46de917611c5)。 這項工作可能無法正常縮放，視組織的規模而定。
 
 請不要使用 Office 2013 或 Office 2016 的最新安全性更新，或是將電腦從 Office 2013 更新為 Office 2016，而讓電腦保持最新的狀態，請考慮採取下列步驟：
 
@@ -91,7 +91,7 @@ Microsoft 365 應用程式 enterprise 會自動安裝安全性更新和新功能
 - 不要包含新的生產力應用程式，例如 Microsoft 團隊。
 - 不要包含最新的安全性功能，例如 Exchange 和 Defender for Office 365。
 
-Microsoft 365 Enterprise 包含雲端架構版本的 Office server 服務，其使用一些與 Office server 軟體內部部署版本（如網頁瀏覽器和 Outlook 用戶端）相同的工具。 這些服務會自動更新以取得安全性。 所以，您的 IT 人員可節省維護和更新內部部署伺服器所需的時間。 這些服務也提供 Office server 軟體中不存在的新功能增強功能。
+Microsoft 365 for Enterprise 包含雲端架構版本的 Office server 服務，其使用一些與 Office server 軟體內部部署版本（如網頁瀏覽器和 Outlook 用戶端）相同的工具。 這些服務會自動更新以取得安全性。 所以，您的 IT 人員可節省維護和更新內部部署伺服器所需的時間。 這些服務也提供 Office server 軟體中不存在的新功能增強功能。
 
 請使用下列資源，以取得針對特定 Microsoft 365 工作負載的使用者和資料進行遷移的相關資訊：
 
@@ -155,21 +155,21 @@ Windows 7 在 *2020 年1月14日* 已結束支援。 若要遷移執行 Windows 
 
 [![顯示 Office 2010 用戶端和伺服器及 Windows 7 支援終止選項的影像。](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-這個單頁標牌是一種快速瞭解可用於管理 Office 2010 用戶端和伺服器產品及 Windows 7 支援的路徑。 Microsoft 365 企業版支援偏好的路徑。
+這個單頁標牌是一種快速瞭解可用於管理 Office 2010 用戶端和伺服器產品及 Windows 7 支援的路徑。 Microsoft 365 for Enterprise 支援慣用路徑。
 
 您可以 [下載此標牌](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) ，並以 letter 大小、合法大小或 tabloid 列印它，) 大小 (11 x 17。
 
 ## <a name="transition-your-entire-organization"></a>轉換整個組織
 
-若要深入瞭解如何將整個組織移至 Microsoft 365 企業版中的產品和服務，請下載此轉換海報：
+若要深入瞭解如何將整個組織移至 Microsoft 365 for Enterprise 中的產品和服務，請下載此轉換海報：
 
 [![顯示轉換至 Microsoft 365 海報的圖像。](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 
-這份雙頁海報是清查現有基礎結構的快速方式。 使用它來取得移至 Microsoft 365 企業版產品或服務的指導方針。 它會顯示 Windows 和 Office 產品及其他基礎結構及安全性元素，例如裝置管理、身分識別和威脅防護，以及資訊和合規性防護。
+這份雙頁海報是清查現有基礎結構的快速方式。 使用此功能，取得在 Microsoft 365 for Enterprise 中移至產品或服務的指導方針。 它會顯示 Windows 和 Office 產品及其他基礎結構及安全性元素，例如裝置管理、身分識別和威脅防護，以及資訊和合規性防護。
 
-## <a name="how-microsoft-migrated-to-microsoft-365-enterprise"></a>Microsoft 如何遷移至 Microsoft 365 Enterprise
+## <a name="how-microsoft-migrated-to-microsoft-365-for-enterprise"></a>Microsoft 如何遷移至 Microsoft 365 for Enterprise
 
-請參閱 Microsoft IT 專家如何將公司遷移至 Microsoft 365 企業版：
+請參閱 Microsoft 的 IT 專家如何將公司遷移至 Microsoft 365 for Enterprise：
 
 - [部署和更新適用于企業的 Microsoft 365 應用程式](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft 會將 150000 個信箱移轉到 Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)

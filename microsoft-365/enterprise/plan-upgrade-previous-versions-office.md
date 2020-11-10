@@ -16,16 +16,16 @@ f1.keywords:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文包含使用 Office 2007 或 Office 2010 的使用者的資源，可協助他們規劃升級。
-ms.openlocfilehash: 4fa340f2dfa8091aba962da475f5ffb883ba4e3f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3193be0fb7b386f78ed4bdb9b80f2a2da72102b4
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920260"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951136"
 ---
 # <a name="plan-your-upgrade-from-office-2007-or-office-2010-servers-and-clients"></a>規劃從 Office 2007 或 Office 2010 伺服器和用戶端升級
 
-*本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
+*本文適用于企業的 Microsoft 365 和 Office 365 for Enterprise。*
 
 如果您的組織使用舊版本的 Office 產品和伺服器，現在開始規劃升級的時間很好。 Office 2007 產品和服務已[終止支援](upgrade-from-office-2007-servers-and-products.md)。 針對 Office 2010 產品和服務：
 
@@ -40,16 +40,16 @@ ms.locfileid: "48920260"
 
 [Microsoft 365](https://www.microsoft.com/microsoft-365) 是創新的 Office 應用程式、智慧雲端服務和世界類別安全性的組合，其設計目的是協助您進一步實現。
 
-Microsoft 365 包含授權和功能，可協助確保您的組織在最新的 Windows 作業系統上運作。 此外，它也可確保您的 Windows、iOS 及 Android 裝置都已註冊，並受需要驗證及資料保護的原則保護。 此外，Windows 10 和 Microsoft 365 應用程式的 enterprise (先前命名為 Office 365 ProPlus) 用戶端軟體會持續更新，以包含最新的功能和安全性更新。
+Microsoft 365 包含授權和功能，可協助確保您的組織在最新的 Windows 作業系統上運作。 此外，它也可確保您的 Windows、iOS 及 Android 裝置都已註冊，並受需要驗證及資料保護的原則保護。 此外，Windows 10 和 Microsoft 365 應用程式的 Enterprise (先前命名為 Office 365 ProPlus) 用戶端軟體會持續更新，以包含最新的功能和安全性更新。
   
 Microsoft 365 是一種以不斷提升的裝置和生產力經驗（由 Microsoft 雲端所啟用及保護）進行數位轉換的方式。
  
 |資源|描述|
 |---|---|
 |[Microsoft 365](https://www.microsoft.com/microsoft-365)|取得 Microsoft 365 版本的相關資訊。|
-|[Microsoft 365 商務版文件](https://docs.microsoft.com/microsoft-365/business/)|取得適用于中小型企業之 Microsoft 365 版本的詳細資訊。|
-|[Microsoft 365 教育版文件](https://docs.microsoft.com/microsoft-365/education/)|取得適用于教育組織之 Microsoft 365 版本的詳細資訊。|
-|[Microsoft 365 企業版文件](https://docs.microsoft.com/microsoft-365/enterprise/)|取得適用于企業組織之 Microsoft 365 版本的詳細資訊。|
+|[Microsoft 365 商務版檔](https://docs.microsoft.com/microsoft-365/business/)|取得適用于中小型企業之 Microsoft 365 版本的詳細資訊。|
+|[Microsoft 365 教育版檔](https://docs.microsoft.com/microsoft-365/education/)|取得適用于教育組織之 Microsoft 365 版本的詳細資訊。|
+|[適用于企業的 Microsoft 365 檔](https://docs.microsoft.com/microsoft-365/enterprise/)|取得適用于企業組織之 Microsoft 365 版本的詳細資訊。|
 |||
 
 ## <a name="what-happens-if-i-dont-upgrade"></a>如果我不升級，會發生什麼事？
