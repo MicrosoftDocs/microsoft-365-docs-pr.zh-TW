@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用攻擊模擬器，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 方案2組織中執行模擬網路釣魚和密碼攻擊。
-ms.openlocfilehash: b7d04b3c81791bfc107b48176373ffc84fc8f6c5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0698d5d97dcedec05e76728379971fad2ab669c6
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845993"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988561"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻擊模擬器
 
@@ -35,6 +35,9 @@ ms.locfileid: "48845993"
 
 > [!NOTE]
 > 攻擊類比和訓練相關的資料會與其他 Microsoft 365 服務的客戶資料一起儲存。 如需詳細資訊，請參閱 [Microsoft 365 資料位置](/microsoft-365/enterprise/o365-data-locations)。
+
+> [!TIP]
+> 攻擊模擬訓練可用於 Microsoft 365 的安全性中心的公開預覽。 請參閱 [使用 Microsoft Defender For Office 365 模擬網路釣魚攻擊](attack-simulation-training.md) 以深入瞭解。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 

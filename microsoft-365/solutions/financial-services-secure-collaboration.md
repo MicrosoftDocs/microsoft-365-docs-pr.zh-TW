@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服務機構如何使用 Microsoft 365 與 Teams 維護金融安全合規性並有效地共同作業。
 f1.keywords: NOCSH
-ms.openlocfilehash: 8bc9e965029414dadc39757b926949f3f60afc16
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 7192b29d09acb23df368e2458fac62c18bbbadb2
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906904"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988711"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 
@@ -164,7 +164,7 @@ Microsoft 365 讓所有組織都能透過強大的功能組合來識別組織內
 * **Microsoft 資訊保護 (MIP)** ，以使用者為基礎的分類和敏感性資料的自動化分類。
 * **Office 365 資料外洩防護 (DLP)** ，以使用敏感性資料類型 (即規則運算式) 和關鍵字和原則強制執行來自動識別敏感性資料。
 
-**[Microsoft 資訊保護 (MIP)](../compliance/protect-information.md)** 可讓組織使用敏感度標籤，聰明地將文件和電子郵件分類。 使用者可以在 Microsoft Office 應用程式的文件和 Outlook 中的電子郵件手動套用敏感度標籤。 標籤可自動套用文件標記、加密保護，以及強制執行版權管理。 還可以透過設定使用關鍵字和敏感性資料類型 (例如信用卡號碼、社會保險號碼和身份證號) 的原則來自動套用敏感度標籤，以自動尋找及分類敏感性資料。
+**[Microsoft 資訊保護 (MIP)](../compliance/information-protection.md)** 可讓組織使用敏感度標籤，聰明地將文件和電子郵件分類。 使用者可以在 Microsoft Office 應用程式的文件和 Outlook 中的電子郵件手動套用敏感度標籤。 標籤可自動套用文件標記、加密保護，以及強制執行版權管理。 還可以透過設定使用關鍵字和敏感性資料類型 (例如信用卡號碼、社會保險號碼和身份證號) 的原則來自動套用敏感度標籤，以自動尋找及分類敏感性資料。
 
 此外，Microsoft 也提供「可訓練的分類器」，它使用機器學習模型根據內容識別敏感性資料，而不只是透過模式比對或內容中的元素。 分類器透過查看大量要分類的內容範例來學習如何識別內容類型。 訓練分類器的第一步是為分類器提供特定類別內容的範例。 從這些範例學習後，透過提供模型相符和不相符範例的組合來測試模型。 分類器會預測指定範例是否屬於某類別。 然後，人員會確認結果，並排序陽性、陰性、誤判和漏報，以提高分類器預測的準確性。 發佈訓練的分類器後，分類器會處理 Microsoft SharePoint Online、Exchange Online 和商務用 OneDrive 中的內容，並自動將內容分類。
 

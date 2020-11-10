@@ -11,12 +11,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 在 Project Cortex 中瞭解知識管理。
-ms.openlocfilehash: d422b54bb7991fb5fd61465cd0428ab586d10bf5
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 27ce6457f2329ccaa4738d6868b4f2051c0c0a51
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906938"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988839"
 ---
 # <a name="knowledge-management-overview-preview"></a> (預覽的知識管理概述) 
 
@@ -75,7 +75,7 @@ Microsoft 365 系統管理中心中的管理控制可讓您管理您的知識網
 - 控制哪些使用者可以確認或拒絕主題中心中的主題。
 - 控制哪些使用者可以在主題中心建立及編輯主題。
 
-請參閱 [管理您的知識網路](manage-knowledge-network.md) 以取得詳細資訊。 
+請參閱 [管理您的知識網路](topic-experiences-discovery.md) 以取得詳細資訊。 
 
 ## <a name="topic-curation--feedback"></a>主題 curation & 意見反應
 
@@ -87,5 +87,5 @@ AI 會持續運作，提供您在環境中發生變更時改進主題的建議�
 
 
 ## <a name="see-also"></a>另請參閱
-[設定知識管理](set-up-knowledge-network.md)</br>
+[設定知識管理](set-up-topic-experiences.md)</br>
 [主題中心概述](topic-center-overview.md)

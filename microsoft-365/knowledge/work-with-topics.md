@@ -11,12 +11,12 @@ ms.service: o365-administration
 search.appverid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d2fd3df200ab350ca3e6595402bab17034d960a7
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 464a926b99cceeb652756ad6d1456c5e17d2a925
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906916"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988735"
 ---
 # <a name="work-with-topics-in-the-topic-center-preview"></a>使用主題中央 (預覽) 中的主題
 
@@ -28,7 +28,7 @@ ms.locfileid: "48906916"
 
 ## <a name="requirements"></a>需求
 
-若要在主題中心內運作，您必須具備必要的許可權。 您的系統管理員可以在您的 [知識管理安裝程式](set-up-knowledge-network.md)中新增您，也可以在 [以後新增](give-user-permissions-to-the-topic-center.md)新的使用者。
+若要在主題中心內運作，您必須具備必要的許可權。 您的系統管理員可以在您的 [知識管理安裝程式](set-up-topic-experiences.md)中新增您，也可以在 [以後新增](give-user-permissions-to-the-topic-center.md)新的使用者。
 
 主題中心使用者可獲得兩組許可權：
 
@@ -72,7 +72,7 @@ ms.locfileid: "48906916"
 3. 您也可以拒絕它
 
 ## <a name="review-published-topics"></a>審閱已發佈的主題
-已發佈的主題已經過編輯，讓 speific 資訊永遠會出現在頁面 encountrs 的任何處。 手動建立的主題會顯示在這裡。
+已發佈的主題已經過編輯，使特定資訊永遠會出現在頁面出現的任何處。 手動建立的主題會顯示在這裡。
 
    
 ## <a name="create-a-new-topic"></a>建立新的主題
@@ -101,7 +101,7 @@ ms.locfileid: "48906916"
 
     ![新增主題頁面](../media/content-understanding/k-new-topic-page.png)
     
-3. 如果您需要將其他元件新增至頁面（如文字、圖像、webpart、連結等等），請選取頁面中部的 [畫布] 圖示，以找出並新增。
+3. 如果您需要將其他元件新增至頁面（如文字、圖像、網頁元件、連結等等），請選取頁面中間的 [畫布] 圖示，以找出並加以新增。
 
     ![將專案新增至頁面](../media/content-understanding/static-icon.png)
 
