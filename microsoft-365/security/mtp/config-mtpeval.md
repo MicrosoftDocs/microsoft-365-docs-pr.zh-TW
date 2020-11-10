@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: 88db2182ec1a3250d2f4308858026fec97a2f91b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5259c7b74446ad273ff9b1ae0baccd339e34baa3
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844101"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984947"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>為您的試用實驗室或試驗環境設定 Microsoft 365 Defender 支柱
 
@@ -68,11 +68,11 @@ ms.locfileid: "48844101"
 ## <a name="microsoft-365-defender-pillars"></a>Microsoft 365 Defender 支柱
 Microsoft 365 Defender 包含四個支柱。 雖然一個 pillar 可以為您的網路組織的安全性提供價值，但是啟用四個 Microsoft 365 Defender 支柱會為組織提供最大的價值。
 
-![影像 of_Microsoft 365 Defender 解決方案，適用于使用者、Microsoft Defender 身分識別、端點 Microsoft Defender for Endpoint、雲端應用程式、Microsoft Cloud App Security 及 data、Microsoft Defender for Office 365](../../media/mtp-eval-31.png)
+![影像 of_Microsoft 365 Defender 解決方案，適用于使用者、Microsoft Defender 身分識別、端點 Microsoft Defender for Endpoint、雲端應用程式、Microsoft Cloud App Security 及 data、Microsoft Defender for Office 365](../../media/mtp/m365pillars.png)
 
 本節會引導您設定下列專案：
--   Microsoft Defender for Office 365
--   適用於身分識別的 Microsoft Defender  
+-   適用於 Office 365 的 Microsoft Defender
+-   適用於身分識別的 Microsoft Defender 
 -   Microsoft Cloud App Security
 -   適用於端點的 Microsoft Defender
 
@@ -107,19 +107,19 @@ Microsoft 365 Defender 包含四個支柱。 雖然一個 pillar 可以為您的
 
    ![Image of_Office 365 Security & 合規性中心] 頁面，您可以在其中開啟 SharePoint、OneDrive 及 Microsoft 小組的 ATP](../../media/mtp-eval-36.png)
 
-6. 按一下 [+] 圖示，以建立新的安全附件原則，並將其套用為網域的收件者網域。 按一下 **[儲存]** 。
+6. 按一下 [+] 圖示，以建立新的安全附件原則，並將其套用為網域的收件者網域。 按一下 [儲存]。
 
    ![Image of_Office 365 Security & 合規性中心] 頁面，您可以在此頁面上建立新的安全附件原則](../../media/mtp-eval-37.png)
  
 7. 接下來，選取 [ **安全連結** 原則]，然後按一下鉛筆圖示以編輯預設原則。
 
-8. 請確定未選取 [ **不要在使用者按一下安全連結時進行追蹤** ] 選項，而會選取其餘的選項。 如需詳細資訊，請參閱 [安全連結設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) 。 按一下 **[儲存]** 。 
+8. 請確定未選取 [ **不要在使用者按一下安全連結時進行追蹤** ] 選項，而會選取其餘的選項。 如需詳細資訊，請參閱 [安全連結設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp) 。 按一下 [儲存]。 
 
    ![Image of_Office 365 Security & 相容性中心] 頁面，顯示未選取 [使用者按一下安全時不會追蹤] 選項](../../media/mtp-eval-38.png)
 
 9. 接下來選取 **反惡意** 代碼原則，選取預設值，然後選擇 [鉛筆] 圖示。
 
-10. 按一下 [ **設定** ]，然後選取 **[是] 並使用預設通知文字** ，以啟用 **惡意程式碼偵測回應** 。 開啟 **通用附件類型 Filter** 。 按一下 **[儲存]** 。
+10. 按一下 [ **設定** ]，然後選取 **[是] 並使用預設通知文字** ，以啟用 **惡意程式碼偵測回應** 。 開啟 **通用附件類型 Filter** 。 按一下 [儲存]。
 
     ![Image of_Office 365 Security & 合規性中心] 頁面，顯示惡意程式碼偵測回應開啟時會啟用預設通知，而一般附件類型篩選已開啟](../../media/mtp-eval-39.png)
   
@@ -176,7 +176,7 @@ Microsoft 365 Defender 包含四個支柱。 雖然一個 pillar 可以為您的
 
     ![Image of_Microsoft 用於身分識別感應器的 Defender 安裝程式安裝完成，您應該按一下 [完成] 按鈕](../../media/mtp-eval-51.png)
  
-11. 在 [ [Microsoft defender 身分識別](https://go.microsoft.com/fwlink/?linkid=2040449) 設定] 區段中，選取 [* * microsoft Defender for Endpoint * *]，然後開啟切換。 按一下 **[儲存]** 。 
+11. 在 [ [Microsoft defender 身分識別](https://go.microsoft.com/fwlink/?linkid=2040449) 設定] 區段中，選取 [* * microsoft Defender for Endpoint * *]，然後開啟切換。 按一下 [儲存]。 
 
     ![Image of_the Microsoft Defender 身分識別設定] 頁面，您應該在此頁面上開啟 Microsoft Defender 的端點切換功能](../../media/mtp-eval-52.png)
 
@@ -207,7 +207,7 @@ Microsoft 365 Defender 包含四個支柱。 雖然一個 pillar 可以為您的
    > [!NOTE]
    > 針對新的 Microsoft Defender for Identity 實例，此整合切換功能會自動開啟。 在繼續進行下一個步驟之前，請確認已啟用 Microsoft Defender 的身分識別整合。
  
-4. 在 [雲端探索設定] 底下，選取 [ **Microsoft Defender For Endpoint integration** ]，然後啟用整合。 按一下 **[儲存]** 。
+4. 在 [雲端探索設定] 底下，選取 [ **Microsoft Defender For Endpoint integration** ]，然後啟用整合。 按一下 [儲存]。
 
    ![Image of_the Microsoft Defender for Endpoint] 頁面，選取 [Microsoft defender for Endpoint integration] 下的 [封鎖 unsanctioned 應用程式] 核取方塊。 按一下 [儲存]。](../../media/mtp-eval-56.png)
 
@@ -288,7 +288,7 @@ Microsoft 365 Defender 包含四個支柱。 雖然一個 pillar 可以為您的
 
     ![您需要按一下的影像 of_Save 偏好設定按鈕](../../media/mtp-eval-72.png)
 
-## <a name="start-the-microsoft-365-defender-service"></a>啟動 Microsoft 365 Defender 服務
+## <a name="start-the-microsoft-365-defender-service"></a>開始使用 Microsoft 365 Defender 服務
 
 >[!NOTE]
 >從2020年6月1日開始，Microsoft 會自動為所有合格的承租人啟用 Microsoft 365 Defender 功能。 如需詳細資訊，請參閱此 [Microsoft 技術小組文章](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) 。 
@@ -307,6 +307,6 @@ Microsoft 365 Defender 包含四個支柱。 雖然一個 pillar 可以為您的
 
 接下來，您可以模擬攻擊，並查看「向量積」功能如何偵測、建立提醒，以及自動回應端點上的 fileless 攻擊。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 |![攻擊模擬階段](../../media/mtp/run-sim.png) <br>[攻擊模擬階段](mtp-pilot-simulate.md) | 針對您的 Microsoft 365 Defender 試驗環境執行攻擊模擬。
 |:-------|:-----|

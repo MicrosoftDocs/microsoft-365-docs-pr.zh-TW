@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 瞭解如何使用 Office 365 安全性 & 規範中心中的 [提醒] 功能，以查看及管理提醒，包括管理高級提醒。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8867732611af275b45b14dc0894e24ed4c89d062
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a29da0a76ff1b681c87182ff55b787327a969607
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48447044"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984885"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>安全性 & 規範中心的警示
 
@@ -40,7 +40,7 @@ ms.locfileid: "48447044"
 
 ### <a name="to-go-directly-to-the-security--compliance-center"></a>直接前往安全性 & 規範中心
 
-1. 請移至 [https://protection.office.com](https://protection.office.com)。
+1. 移至<https://protection.office.com>。
 
 2. 使用您的公司或學校帳戶登入。
 
@@ -50,9 +50,9 @@ ms.locfileid: "48447044"
 
 1. 使用您的公司或學校帳戶登入。
 
-2. 按一下左上角的應用程式啟動器，然後按一下 [ **安全性 & 合規性**]。
+2. 按一下左上角的應用程式啟動器，然後按一下 [ **安全性 & 合規性** ]。
 
-    找不到您要的 App 嗎？請從應用程式啟動器選取 [所有 App]**** 以查看依字母順序排序的可用 Office 365 App 清單。您可從該處搜尋特定的 App。
+   找不到您要的 App 嗎？請從應用程式啟動器選取 [所有 App] 以查看依字母順序排序的可用 Office 365 App 清單。您可從該處搜尋特定的 App。
 
 3. 在左窗格中，按一下 [ **警示** ] 以查看警示功能。
 
@@ -64,6 +64,6 @@ ms.locfileid: "48447044"
 
 |工具|描述|
 |---|---|
-|[管理提醒](../../compliance/create-activity-alerts.md)|當使用者在 Office 365 中執行特定活動時，可使用活動提醒將電子郵件通知傳送給自己或其他管理員。 活動警示類似于搜尋審計記錄檔的事件，只是當您已建立警示的事件發生時，您會收到電子郵件。|
-|[管理高級提醒 ](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|使用 Office 365 Cloud App Security 的「 **管理高級提醒** 」功能，設定可在 Office 365 中提醒您可疑和反常活動的原則。 當您收到警示後，您可以調查可能有問題的情況，並視需要採取行動以解決安全性問題。|
+|[管理提醒](../../compliance/create-activity-alerts.md)|使用活動提醒，在使用者于 Microsoft 365 中執行特定活動時，將電子郵件通知傳送給自己或其他管理員。 活動警示類似于搜尋審計記錄檔的事件，只是當您已建立警示的事件發生時，您會收到電子郵件。|
+|[管理高級提醒](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|使用 Microsoft 365 Cloud App Security 的「 **管理高級提醒** 」功能，設定可在 Microsoft 365 中提醒您可疑和反常活動的原則。 當您收到警示後，您可以調查可能有問題的情況，並視需要採取行動以解決安全性問題。|
 |
