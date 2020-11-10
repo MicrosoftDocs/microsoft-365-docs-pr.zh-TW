@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留功能在 SharePoint 以及 OneDrive 中的運作方式。
-ms.openlocfilehash: 258cc8e777ca39d2528e520ff5634086bff302c7
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 84191cf7df1c8382b336ecce47c50ca24bc2aede
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804538"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48951106"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>瞭解 SharePoint 和 OneDrive 的保留功能
 
@@ -38,7 +38,7 @@ ms.locfileid: "48804538"
 
 ## <a name="whats-included-for-retention-and-deletion"></a>保留與刪除包含的內容
 
-透过應用保留原则或保留標籤，可以保留 SharePoint 或 OneDrive 網站中储存的所有檔案。
+透过應用保留原则或保留標籤，可以保留 SharePoint 或 OneDrive 網站中储存的所有檔案。 
 
 可以删除以下檔案：
 
@@ -46,12 +46,16 @@ ms.locfileid: "48804538"
     
 - 使用保留標籤時：所有文件庫中的所有檔案，以及根層級不在資料夾中的所有檔案。
     
-    當您將[帶有自動套用原則的 KQL 査詢用於保留標籤](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)時，可以使用以下項目排除文件庫：`NOT(DocumentLink:"<URL to document library>")`
+> [!TIP]
+> 當您將[帶有自動套用原則的査詢用於保留標籤](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)時，可以使用以下項目排除指定文件庫：`NOT(DocumentLink:"<URL to document library>")`
 
+保留設定不適用於組織結構，包含像是文件庫、清單及資料夾。 或系統清單中的項目，這是 SharePoint 用來管理系統的隱藏清單，並包括主版頁面目錄、解決方案目錄及資料來源。
+
+針對保留原則和自動套用標籤原則：SharePoint 網站必須編制索引，才能套用保留設定。 不過，如果 SharePoint 文件庫中的項目設定為不在搜尋結果中顯示，此設定就不會將這些檔案從保留設定中排除。
 
 ## <a name="how-retention-works-for-sharepoint-and-onedrive"></a>保留功能在 SharePoint 以及 [OneDrive] 中的運作方式。
 
-若要支援保留，SharePoint 和 OneDrive 會建立一個文件保留庫 (如果尚不存在)。 您可以在網站集合的頂層網站中的 [網站內容]  頁面上檢視此文件庫。 文件保留庫僅供網站集合系統管理員檢視，大部分的使用者都無法檢視。
+若要支援保留，SharePoint 和 OneDrive 會建立一個文件保留庫 (如果尚不存在)。 您可以在網站集合的頂層網站中的 [網站內容] 頁面上檢視此文件庫。 文件保留庫僅供網站集合系統管理員檢視，大部分的使用者都無法檢視。
   
 如果有人嘗試變更或刪除已受保留設置規範的文件檔案，在將保留設定套用到檔案時，不論檔案的內容是否已進行變更，都會進行檔案檢查。 如果這是套用原則後的第一次變更，檔案的內容會先被複製到 [文件保留庫]，然後允許使用者變更或刪除原始內容。 您可以將網站集合中的任何內容，複製到 [文件保留庫]，不需套用保留設定。
   

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以非常有效地控制使用者透過電子郵件、文件和交談生成的內容。 保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 4e4ced42424abe024a1230c24814c420a59ed3dc
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3b68de3594e4a31040a6ee0698c3c600490bd5d9
+ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919985"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48950948"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -167,11 +167,11 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 #### <a name="configuration-information-for-exchange-email-and-exchange-public-folders"></a>Exchange 電子郵件和 Exchange 公用資料夾的設定資訊
 
-**Exchange 電子郵件** 位置支援使用者的電子郵件、行事曆和其他信箱專案的保留，方法是套用信箱層級的保留設定。
+**Exchange 電子郵件** 位置透過套用信箱層級的保留設定，支援使用者的電子郵件、行事曆和其他信箱項目的保留。。
 
-包含了以下的電子郵件項目：郵件訊息（包括草稿）具有任何的附件檔案、工作和行事曆項目（具有結束日期），以及備註。 不包含沒有結束日期標示的連絡人、任何工作和行事曆項目。 儲存在信箱中（例如 Skype 和 Teams 儲存的訊息）的其他項目不會包含在此位置。 這些項目有各自具備的保留原則。
+如需有關在設定 Exchange 保留設定時包含和排除哪些項目的詳細資訊，請參閱 [保留與刪除所包含的內容](retention-policies-exchange.md#whats-included-for-retention-and-deletion)
 
-即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件** 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。 若要保留這些信箱中的內容，請選取 [Microsoft 365 群組 **]** 位置。
+請注意，即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件** 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。 若要保留這些信箱中的內容，請選取 [Microsoft 365 群組 **]** 位置。
 
 **Exchange 公用資料夾** 位置會將保留設定套用至所有的公用資料夾，且無法在資料夾或信箱層級套用。
 
@@ -179,12 +179,9 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 當您選擇 [SharePoint 網站 **]** 位置時，保留原則即可保留及刪除在 SharePoint 通訊網站中的文件、未由 Microsoft 365 群組連結的小組網站，以及傳統網站。 此選項不支援由 Microsoft 365 群組所連線的小組網站，而是會使用套用至群組信箱、網站和檔案中內容的 [Microsoft 365 群組 **]** 位置。
 
-雖然保留原則可套用到網站層級，但只有文件會套用保留設定。 保留設定不適用於組織結構，包含像是文件庫、清單及網站內的資料夾。
+雖然保留原則可套用到網站層級，但只有文件會套用保留設定。 如需有關在設定 SharePoint 和 OneDrive 保留設定時所包含和排除之內容的詳細資訊，請參閱 [保留與刪除所包含的內容](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion)。 
 
 當您為 SharePoint 網站或 OneDrive 帳戶指定您的位置時，您不需要存取網站的權限，而當你在 **[編輯位置]** 頁面上指定 URL 時也不會需要進行任何的驗證。 不過，您指定的 SharePoint 網站會在精靈結束時進行檢查，以確認其存在。 如果此檢查失敗，您會看到一則訊息，指出您輸入的 URL 驗證失敗，且精靈不會建立保留原則，直到驗證檢查通過為止。 如果您看到這則訊息，請返回精靈並變更 URL 或從保留原則將網站移除。
-
-> [!NOTE]
-> 必須為 SharePoint 網站編製索引，才能套用保留設定。 不過，如果 SharePoint 文件庫中的項目設定為不在搜尋結果中顯示，此設定就不會將這些項目從保留設定中排除。
 
 若要特別指定包含或排除某個 OneDrive 帳戶，URL 的格式要求如下：`https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
 
@@ -289,4 +286,4 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。 
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>鎖定原則以防止變更
 
-如果您需要確保沒有人可以關閉原則、刪除原則或放寬限制，請參閱[使用「保留鎖定」來限制變更保留原則和保留標籤原則](retention-preservation-lock.md)。
+如果您需要確保沒有人可以關閉原則、刪除原則或放寬限制，請參閱 [使用「保留鎖定」來限制變更保留原則和保留標籤原則](retention-preservation-lock.md)。
