@@ -469,8 +469,10 @@
               href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
-- name: 安全性與合規性
-  href: 'https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap'
+- name: 安全性
+  href: 'https://docs.microsoft.com/microsoft-365/security/'
+- name: 合規性
+  href: 'https://docs.microsoft.com/microsoft-365/compliance/'
 - name: 雲端服務
   items:
     - name: 藍圖
