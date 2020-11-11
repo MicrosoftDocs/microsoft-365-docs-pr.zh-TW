@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 深入瞭解 Microsoft 365 解決方案目錄（包括其包含的內容，以及如何進行）及後續的步驟。
 ms.collection: M365-security-compliance
-ms.openlocfilehash: a560193bf7ee2911b90332f84eef2d60027cbbf9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1cb707c47594b59bcb762aac5c25eaa03b33dbf1
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48198356"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988573"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365 解決方案目錄
 
@@ -46,7 +46,7 @@ Microsoft 365 的規範解決方案是整合功能的集合，您可以用來協
 
 - [資料遺失防護](data-loss-prevention-policies.md)：偵測機密內容在整個組織、雲端和裝置上都使用及共用，並協助防止意外的資料遺失。
 - [資訊](manage-information-governance.md)控管：使用解決方案來管理內容週期，以匯入、儲存和分類重要業務資料，這樣您就可以保留您所需要的專案，並刪除您不需要的專案。
-- [資訊保護](protect-information.md)：透過整個組織的整個生命週期探索、分類及保護機密和業務關鍵型內容。
+- [資訊保護](information-protection.md)：透過整個組織的整個生命週期探索、分類及保護機密和業務關鍵型內容。
 - [記錄管理](records-management.md)：使用智慧分類，以自動化和簡化組織中法規、法律和業務關鍵型記錄的保留排程。
 
 ## <a name="insider-risk-management-section"></a>「內幕人員風險管理」區段
@@ -93,14 +93,14 @@ Microsoft 365 的規範解決方案是整合功能的集合，您可以用來協
 
 ## <a name="next-steps"></a>後續步驟
 
-- **請造訪 Microsoft 合規性管理員**，協助您瞭解組織遵循重要標準和規定的狀態。 它提供您可以採取以加強整體符合性狀況的建議動作，並提供工作流程功能，協助您有效地執行這些動作。 若要深入瞭解，請參閱 [合規性管理員](compliance-manager.md)。
+- **請造訪 Microsoft 合規性管理員** ，協助您瞭解組織遵循重要標準和規定的狀態。 它提供您可以採取以加強整體符合性狀況的建議動作，並提供工作流程功能，協助您有效地執行這些動作。 若要深入瞭解，請參閱 [合規性管理員](compliance-manager.md)。
 
 - **設定「有問必答風險管理」原則** ，協助將內部風險降至最低，並讓您偵測、調查和採取行動，以應對組織中的危險活動。 請參閱「 [有問必答風險管理](insider-risk-management.md)」。
 
 - **深入瞭解及建立通訊相容性原則** ，以快速找出並修正公司行為準則原則違規。 請參閱 [通訊相容性](communication-compliance.md)。
 
-- **Microsoft 資訊保護**，請參閱 microsoft 365 解決方案如何協助您探索、分類及保護機密資訊的任何位置或傳播。
-    - **深入瞭解並設定 Microsoft Cloud App Security**。 請參閱 [快速入門： Microsoft Cloud App Security 快速入門](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。
-    - **立即開始使用類元**。 分類內容，然後將其標示，使其受到保護和正確處理是資訊保護訓練科目的開始位置。 請參閱 [瞭解 trainable 的分類 (預覽) ](classifier-learn-about.md)。
+- **Microsoft 資訊保護** ，請參閱 microsoft 365 解決方案如何協助您探索、分類及保護機密資訊的任何位置或傳播。
+    - **深入瞭解並設定 Microsoft Cloud App Security** 。 請參閱 [快速入門： Microsoft Cloud App Security 快速入門](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)。
+    - **立即開始使用類元** 。 分類內容，然後將其標示，使其受到保護和正確處理是資訊保護訓練科目的開始位置。 請參閱 [瞭解 trainable 的分類 (預覽) ](classifier-learn-about.md)。
 
-- 請**經常造訪您的 Microsoft 365 方案目錄**，並務必查看新的解決方案，以協助您符合規範的需求。 在 [https://compliance.microsoft.com](https://compliance.microsoft.com) 左功能窗格中登入，然後選取 [ **目錄** ]。
+- 請 **經常造訪您的 Microsoft 365 方案目錄** ，並務必查看新的解決方案，以協助您符合規範的需求。 在 [https://compliance.microsoft.com](https://compliance.microsoft.com) 左功能窗格中登入，然後選取 [ **目錄** ]。

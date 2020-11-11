@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 在 Microsoft 365 中實施 Microsoft 資訊管理功能，以管理法規遵從性或法規需求的資料。
-ms.openlocfilehash: b02c724ee812e622a45939d11b78f87245e2f194
-ms.sourcegitcommit: 787b198765565d54ee73972f664bdbd5023d666b
+ms.openlocfilehash: 7e516c42071272e9d38381dbf9d84e774271566c
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "46866942"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988423"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 microsoft 資訊管理
 
@@ -29,7 +29,7 @@ ms.locfileid: "46866942"
 
 ![管理資料資訊管理與記錄管理](../media/information-governance-records-management.png)
 
-想要保護您的資料嗎？ 請參閱 microsoft [365 中的 Microsoft 資訊保護](protect-information.md)。
+想要保護您的資料嗎？ 請參閱 microsoft [365 中的 Microsoft 資訊保護](information-protection.md)。
 
 ## <a name="information-governance"></a>資訊管理
 
