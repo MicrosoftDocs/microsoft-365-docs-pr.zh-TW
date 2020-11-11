@@ -21,12 +21,12 @@ search.appverid:
 - BEA160
 ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: 深入瞭解 Office 365 德國。
-ms.openlocfilehash: b0b370399cc7687f3c564903d01bd07f447dc16a
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8b999ecbd2e429ad8a60fa60de1ad3a06664f085
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843327"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995854"
 ---
 # <a name="learn-about-office-365-germany"></a>深入了解 Office 365 Germany
 
@@ -43,7 +43,7 @@ Office 365 德國是一種可在歐洲使用的 Office 365 服務的區別選項
 
 Office 365 德國計畫選項會在此孤立環境中盡可能搭配全球泛型服務。 例外情況包括 Yammer 相關方案、生命週期即將結束的方案，以及採非營利計畫方式提供的方案。 Office 365 E5、SPE 及其他服務會在 Office 365 德國正式供貨之後提供。 
   
-部分 [Office 365 Germany 訂閱方案](https://go.microsoft.com/fwlink/p/?linkid=839016)提供下列服務和功能。 此外，請參閱[線上服務條款](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46)。
+部分 [Office 365 Germany 訂閱方案](https://go.microsoft.com/fwlink/p/?linkid=839016)提供下列服務和功能。 此外，請參閱[線上服務條款](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=46)。
   
 - 適用于 enterprise、Office 2016 及 Office 2013<sup>1</sup>的 Microsoft 365 應用程式。 請注意，Office 2013 需要搭配 [office 用戶端使用 office 365 新式驗證](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)。
     
@@ -73,7 +73,7 @@ Office 365 德國計畫選項會在此孤立環境中盡可能搭配全球泛型
     
 - 進階電子文件探索
     
-- Microsoft Defender for Office 365
+- 適用於 Office 365 的 Microsoft Defender
     
 - Office 365 威脅防護智慧
     
@@ -85,7 +85,7 @@ Office 365 德國計畫選項會在此孤立環境中盡可能搭配全球泛型
     
 - Delve
     
-<sup>1</sup>Office 365 德國方案包括用戶端軟體應用程式，已在使用者的裝置上安裝及執行 ( 「用戶端軟體應用程式」 ) ，例如 Microsoft 365 Apps for enterprise、Office 2013 和 Office 2016。 用戶端軟體應用程式不僅在德國資料中心運作，它也可以讓使用者存取不屬於[德國線上服務](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的其他線上服務。 您與 Microsoft 簽訂本合約，表示用戶端軟體應用程式不是[德國線上服務](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德國資料信任者所管控的德國資料所在位置承諾及存取權，僅適用於[德國線上服務](http://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
+<sup>1</sup>Office 365 德國方案包括用戶端軟體應用程式，已在使用者的裝置上安裝及執行 ( 「用戶端軟體應用程式」 ) ，例如 Microsoft 365 Apps for enterprise、Office 2013 和 Office 2016。 用戶端軟體應用程式不僅在德國資料中心運作，它也可以讓使用者存取不屬於[德國線上服務](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)的其他線上服務。 您與 Microsoft 簽訂本合約，表示用戶端軟體應用程式不是[德國線上服務](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。 德國資料信任者所管控的德國資料所在位置承諾及存取權，僅適用於[德國線上服務](https://microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=58)。
   
 ## <a name="general-information"></a>一般資訊
 
