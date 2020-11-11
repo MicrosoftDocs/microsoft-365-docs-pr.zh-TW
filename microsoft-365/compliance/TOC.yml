@@ -82,7 +82,7 @@
 - name: 管理資訊保護
   items:
     - name: 瞭解您的資料、保護您的資料並防止資料遺失
-      href: protect-information.md
+      href: information-protection.md
     - name: 敏感性資訊類型
       items:
         - name: 敏感資訊類型實體定義
