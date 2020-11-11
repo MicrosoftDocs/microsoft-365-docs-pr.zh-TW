@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
-ms.openlocfilehash: c1254ccdc678bd25c2d3481b0a43cca5ff9816c0
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: b54f452fb984f61913f2ade53ad45ed169a43832
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919773"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993351"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -97,7 +97,7 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
   > [!NOTE]
   >
   > - 預設的反網路釣魚原則和您建立的任何新自訂反網路釣魚原則中，預設會啟用反欺騙保護。
-  > 
+  >
   > - 如果您的 MX 記錄未指向 Microsoft 365，您就不需要停用反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
   針對來自封鎖欺騙寄件者的郵件，您也可以指定要對郵件採取的動作：
@@ -158,7 +158,10 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
   您可以使用受保護的使用者加入內部和外部寄件者電子郵件地址，以防止模擬。 從使用者模擬中保護的 **寄件者** 清單，與原則所 **套用的收** 件者清單不同， (預設原則的所有收件者;在 [ [原則設定](#policy-settings)] 區段的 [套用 **至** ] 設定中設定的特定收件者) 。
 
   > [!NOTE]
-  > 您可以在所有反網路釣魚原則中定義的受保護使用者 (寄件者電子郵件地址) 數目上限為60。 換句話說，您可以在一個原則中有60個受保護的使用者、5個原則中有12個受保護的使用者等等。
+  >
+  > - 在每個反網路釣魚原則中，您可以指定最多60個受保護的使用者 (寄件者的電子郵件地址) 。 您無法在多個原則中指定同一個受保護的使用者。
+  >
+  > - 如果寄件者和收件者先前透過電子郵件進行通訊，使用者模擬保護便無法運作。 如果寄件者和收件者永不透過電子郵件進行通訊，郵件會被識別為類比嘗試。
 
   根據預設，不會將寄件者電子郵件地址設定為 **要保護的使用者** 類比保護。 因此，根據預設，在 [預設原則] 或 [自訂原則] 中，模擬保護不會涵蓋任何寄件者電子郵件地址。
 
@@ -167,7 +170,7 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
 - **要保護的網域** ：防止 **在郵件寄件者的網域中** 類比指定的網域。 例如，您擁有的所有網域 ([公認的網域](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) 或特定網域 (您擁有的網域或夥伴網域) 。 保護自模擬的 **寄件者網域** 清單不同于原則所 **套用的收** 件者清單，以 (預設原則的所有收件者;在 [ [原則設定](#policy-settings)] 區段的 [套用 **至** ] 設定中設定的特定收件者) 。
 
   > [!NOTE]
-  > 您可以在所有反網路釣魚原則中定義的受保護網域數目上限為50。 換句話說，您可以在一個原則中有50個受保護的網域，5個原則等10個受保護的網域等等。
+  > 您可以在所有反網路釣魚原則中定義的受保護網域數目上限為50。
 
   根據預設，不會將寄件者網域設定為 **要保護的網域** 中的類比保護。 因此，根據預設，在 [預設原則] 或 [自訂原則] 中，模擬保護不會涵蓋任何寄件者網域。
 

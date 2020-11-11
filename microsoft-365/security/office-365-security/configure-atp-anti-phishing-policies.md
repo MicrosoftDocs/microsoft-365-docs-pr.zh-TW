@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何建立、修改及刪除使用 Microsoft Defender for Office 365 的組織中可用的高級反網路釣魚原則。
-ms.openlocfilehash: ecc68a8dc050a5f08c6982b023861e0ea8976775
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 7665d0dc475909d04da209aa6c1cd6b12378f8a9
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920653"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993385"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中設定反網路釣魚原則
 
@@ -170,7 +170,10 @@ ms.locfileid: "48920653"
      若要編輯現有的專案，請在清單中選取受保護的使用者。
 
      > [!NOTE]
-     > 在所有的反網路釣魚原則中，最多可以有60位使用者。 換句話說，您可以在一個原則中有60個受保護的使用者、5個原則中有12個受保護的使用者等等。
+     >
+     > - 在每個反網路釣魚原則中，您可以指定最多60個受保護的使用者 (寄件者的電子郵件地址) 。 您無法在多個原則中指定同一個受保護的使用者。
+     >
+     > - 如果寄件者和收件者先前透過電子郵件進行通訊，使用者模擬保護便無法運作。 如果寄件者和收件者永不透過電子郵件進行通訊，郵件會被識別為類比嘗試。
 
    - **新增要保護的網域** ：設定下列其中一項或兩項設定：
 
@@ -178,7 +181,7 @@ ms.locfileid: "48920653"
      - **包含自訂網域** ：預設值為 **Off** 。 若要開啟它，請將開關滑動至 [ **開啟** ]，然後在 [ **新增網域** ] 方塊中，輸入功能變數名稱 (例如，CONTOSO.COM) ，按 enter，然後視需要重複。
 
      > [!NOTE]
-     > 在所有的反網路釣魚原則中，您最多可以有50個網域。 換句話說，您可以在一個原則中有50個受保護的使用者，在5個原則中有10個受保護的使用者等等。
+     > 在所有的反網路釣魚原則中，您最多可以有50個網域。
 
    - **動作** ：按一下 [ **編輯** ]
 

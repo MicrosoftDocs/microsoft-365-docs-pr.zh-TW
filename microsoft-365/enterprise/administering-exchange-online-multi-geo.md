@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: 瞭解如何使用 PowerShell 在您的 Microsoft 365 環境中管理 Exchange Online 多地理位置設定。
-ms.openlocfilehash: ea7090cd65634138f9677960beab7770825a6e86
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: c9219d29a1fdae68075d296404a6c2aeab30f1aa
+ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950673"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48993373"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>管理多地理位置環境中的 Exchange Online 信箱
 
@@ -65,7 +65,7 @@ Microsoft 365 或 Microsoft 365 GCC 客戶通常不需要使用 _ConnectionUri_ 
    $UserCredential = Get-Credential
    ```
 
-   在隨即出現的 **[Windows PowerShell 認證要求]** 對話方塊中，輸入您的公司或學校帳戶和密碼，然後按一下 **[確定]**。
+   在隨即出現的 **[Windows PowerShell 認證要求]** 對話方塊中，輸入您的公司或學校帳戶和密碼，然後按一下 **[確定]** 。
 
 3. 在下列範例中，目標地理位置是信箱 olga@contoso.onmicrosoft.com 所在的位置。
 
@@ -93,11 +93,11 @@ Get-OrganizationConfig | Select DefaultMailboxRegion
 
 Exchange Online PowerShell 中的 **Get-Mailbox** Cmdlet 會顯示信箱上的下列多地理位置相關屬性：
 
-- **資料庫**：與地理位置代碼對應的資料庫名稱前 3 個字母，它會告知您信箱目前所在的位置。 若為線上封存信箱，則應該使用 **ArchiveDatabase** 屬性。
+- **資料庫** ：與地理位置代碼對應的資料庫名稱前 3 個字母，它會告知您信箱目前所在的位置。 若為線上封存信箱，則應該使用 **ArchiveDatabase** 屬性。
 
-- **MailboxRegion**：指定系統管理員所設定的地理位置代碼 (從 Azure AD 中的 **PreferredDataLocation** 同步處理)。
+- **MailboxRegion** ：指定系統管理員所設定的地理位置代碼 (從 Azure AD 中的 **PreferredDataLocation** 同步處理)。
 
-- **MailboxRegionLastUpdateTime**：指出 MailboxRegion 的上次更新時間 (自動或手動)。
+- **MailboxRegionLastUpdateTime** ：指出 MailboxRegion 的上次更新時間 (自動或手動)。
 
 若要查看信箱的這些屬性，請使用下列語法：
 
@@ -160,21 +160,39 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 >   - 要移動的信箱數量。
 >   - 移動資源的可用性。
 
-### <a name="move-disabled-mailboxes-that-are-on-litigation-hold"></a>移動處於訴訟資料暫留的已停用信箱
+### <a name="move-an-inactive-mailbox-to-a-specific-geo"></a>將非使用中的信箱移至特定地理位置
 
-保留供電子文件探索用途、處於訴訟資料暫留的已停用信箱，無法透過在停用狀態中變更其 **PreferredDataLocation** 值來移動。 若要移動處於訴訟資料暫留的已停用信箱：
+您無法移動出於相容性目的所保留的非使用中信箱 (例如，使用訴訟暫止) 中的信箱變更其 **PreferredDataLocation** 值。 若要將非使用中的信箱移至不同的地理位置，請執行下列步驟：
 
-1. 暫時將授權指派給信箱。
+1. 復原非使用中的信箱。 如需相關指示，請參閱 [復原非使用中的信箱](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox)。
 
-2. 變更 **PreferredDataLocation**。
+2. 以信箱的名稱、別名、帳戶或電子郵件地址取代，以防止受管理的資料夾助理處理復原的信箱， \<MailboxIdentity\> 並在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令：
 
-3. 將它移動至所選地理位置之後，請從信箱移除授權，以讓它回到已停用狀態。
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
+    ```
+
+3. 將 **Exchange Online Plan 2** 授權指派給復原的信箱。 您必須執行此步驟，才能將信箱還原為訴訟暫止狀態。 如需相關指示，請參閱 [將授權指派給使用者](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)。
+
+4. 如前一節所述，在信箱上設定 **PreferredDataLocation** 值。
+
+5. 在您確認信箱已經移至新的地理位置之後，請將復原的信箱回復回訴訟暫止狀態。 如需相關指示，請參閱 [將信箱設為訴訟暫止狀態](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold)。
+
+6. 確認訴訟暫止已到位之後，讓受管理的資料夾助理以 \<MailboxIdentity\> 信箱的名稱、別名、帳戶或電子郵件地址取代，並在 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)中執行下列命令，以再次處理信箱：
+
+    ```powershell
+    Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
+    ```
+
+7. 移除與信箱相關聯的使用者帳戶，將信箱停用停用。 如需相關指示，請參閱 [刪除組織中的使用者](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)。 此步驟也會為其他用途發佈 Exchange Online Plan 2 授權。
+
+**附注** ：當您將非使用中的信箱移至不同的地理位置時，您可能會影響內容的搜尋結果，或從先前的地理位置搜尋該信箱的功能。 如需詳細資訊，請參閱 [在多地理位置環境中搜尋和匯出內容](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments)。
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>在特定地理位置建立新的雲端信箱
 
 若要在特定地理位置建立新的信箱，您必須執行下列其中一個步驟：
 
-- 如前一節在 Exchange Online 中建立信箱*之前*所述，設定 **PreferredDataLocation** 值。 例如，指派授權之前，先在使用者上設定 **PreferredDataLocation** 值。
+- 如先前所述，設定 **PreferredDataLocation** 值。在 Exchange Online 中建立信箱 *之前，先*[將現有的雲端信箱移至特定地理位置](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location)區段。 例如，在您指派授權之前，請先在使用者上設定 **PreferredDataLocation** 值。
 
 - 在設定 **PreferredDataLocation** 值的同時指派授權。
 
@@ -201,7 +219,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 如需建立新的使用者帳戶和在 Azure AD PowerShell 中尋找 LicenseAssignment 值的詳細資訊，請參閱[使用 PowerShell 建立使用者帳戶](create-user-accounts-with-microsoft-365-powershell.md)和[使用 PowerShell 檢視授權與服務](view-licenses-and-services-with-microsoft-365-powershell.md)。
 
 > [!NOTE]
-> 如果您使用 Exchange Online PowerShell 來啟用信箱，並且需要直接在 **PreferredDataLocation** 中指定的地理位置建立信箱，則必須直接對雲端服務使用 Exchange Online Cmdlet，例如 **Enable-Mailbox** 或 **New-Mailbox**。 如果您使用內部部署 Exchange PowerShell 中的 **Enable-RemoteMailbox** Cmdlet，則會在中央地理位置建立信箱。
+> 如果您使用 Exchange Online PowerShell 來啟用信箱，並且需要直接在 **PreferredDataLocation** 中指定的地理位置建立信箱，則必須直接對雲端服務使用 Exchange Online Cmdlet，例如 **Enable-Mailbox** 或 **New-Mailbox** 。 如果您使用內部部署 Exchange PowerShell 中的 **Enable-RemoteMailbox** Cmdlet，則會在中央地理位置建立信箱。
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>將特定地理位置中的現有內部部署信箱上線
 
@@ -221,7 +239,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
    $RC = Get-Credential
    ```
 
-4. 在 Exchange Online PowerShell 中，建立新的 **New-MoveRequest**，類似以下範例：
+4. 在 Exchange Online PowerShell 中，建立新的 **New-MoveRequest** ，類似以下範例：
 
    ```powershell
    New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>
@@ -233,7 +251,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 
 ## <a name="multi-geo-reporting"></a>多地理位置報告
 
-Microsoft 365 系統管理中心的**多地理位置使用報告**會依地理位置顯示使用者計數。 該報告會顯示目前月份的使用者分佈，並提供過去 6 個月的歷史資料。
+Microsoft 365 系統管理中心的 **多地理位置使用報告** 會依地理位置顯示使用者計數。 該報告會顯示目前月份的使用者分佈，並提供過去 6 個月的歷史資料。
 
 ## <a name="see-also"></a>另請參閱
 
