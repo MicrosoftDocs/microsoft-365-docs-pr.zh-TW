@@ -485,9 +485,11 @@
               href: investigating-partially-indexed-items-in-ediscovery.md
             - name: 搜尋結果中的重複資料刪除
               href: de-duplication-in-ediscovery-search-results.md
-            - name: 估計與實際搜尋結果之間的差異
+            - name: 預估與實際搜尋結果之間的差異
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
-        - name: 執行內容搜尋 PowerShell 指令碼
+            - name: 電子文件探索工具的解密
+              href: ediscovery-decryption.md
+        - name: 內容搜尋 PowerShell 指令碼
           items:
             - name: 對目標集合使用內容搜尋
               href: use-content-search-for-targeted-collections.md
@@ -1017,7 +1019,7 @@
           href: gdpr-information-protection.md
         - name: Microsoft 的資料保護長
           href: gdpr-data-protection-officer.md
-        - name: 匯出系統所產生記錄資料的其他步驟
+        - name: 匯出系統產生之記錄資料的其他步驟
           href: gdpr-system-generated-log-data.md
 - name: 混合式合規性功能
   items:
