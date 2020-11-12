@@ -13,23 +13,23 @@ metadata:
   ms.author: robmazz
   ms.date: 09/20/2019
   localization_priority: Priority
-  ms.openlocfilehash: e2f29cdb3604dd05e665cf326b7d9d014a94f3bf
-  ms.sourcegitcommit: 6b1d0bea86ced26cae51695c0077adce8bcff3c4
+  ms.openlocfilehash: 0bce37e2ad20ddde556608a72d7df3a1879ae427
+  ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 09/30/2020
-  ms.locfileid: "48308999"
+  ms.lasthandoff: 11/11/2020
+  ms.locfileid: "48993329"
 landingContent:
 - title: 管理資訊保護與管控
   linkLists:
   - linkListType: overview
     links:
     - text: 瞭解您的資料
-      url: protect-information.md#know-your-data
+      url: information-protection.md#know-your-data
     - text: 保護您的資料
-      url: protect-information.md#protect-your-data
+      url: information-protection.md#protect-your-data
     - text: 防止資料遺失
-      url: protect-information.md#prevent-data-loss
+      url: information-protection.md#prevent-data-loss
     - text: 管控您的資料
       url: manage-information-governance.md
     - text: '瞭解途徑: Microsoft 資訊保護和控管'
@@ -82,3 +82,5 @@ landingContent:
     links:
     - text: 為資料隱私權規定部署資訊保護
       url: ../solutions/information-protection-deploy.md
+    - text: 資訊保護和合規性圖例
+      url: ../solutions/productivity-illustrations.md#microsoft-365-information-protection-and-compliance-capabilities
