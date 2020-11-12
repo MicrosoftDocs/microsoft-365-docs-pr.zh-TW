@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 端點資料遺失防護以監視檔案活動，並對這些端點的文件實作保護動作。
-ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
-ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
+ms.openlocfilehash: 3f29d8e49daa6dd4f0900e0e92123306c799c6ee
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48990548"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999415"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>開始使用端點資料外洩防護
 
@@ -173,7 +173,14 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 > [!NOTE]
 >這項體驗屬於授權強制執行。 若無所需授權，資料將不會顯示或無法存取。
 
-### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>檢視 [活動總管] 中的端點 DLP 資料
+### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>在 DLP 警示管理儀表板中檢視端點 DLP 警示
+
+1. 在 Microsoft 365 安全性與合規性中心開啟 [資料外洩防護] 頁面，並選擇 [警示]。
+
+2. 請參閱[如何設定和檢視 DLP 原則的警示](dlp-configure-view-alerts-policies.md)中的程序，以檢視您的端點 DLP 原則的警示。
+
+
+### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>在活動總管中檢視端點 DLP 資料
 
 1. 在 Microsoft 365 合規性中心開啟您網域的 [[資料分類] 頁面](https://compliance.microsoft.com/dataclassification?viewid=overview)，然後選擇 [活動總管]。
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 您可以使用 Office 365 安全性與合規性中心或 [Microsoft 365 合規性中心] 以搜尋整合的稽核記錄，檢視貴組織中的使用者和系統管理員活動。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2254fb9fd47b1554064194b815ff4d19b2d33472
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: ded01bc262cd1bb2fbabcd237278447e486d109a
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941450"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999507"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合規性中心搜尋稽核記錄
 
@@ -140,9 +140,9 @@ ms.locfileid: "48941450"
 ## <a name="search-the-audit-log"></a>搜尋稽核記錄
 
 > [!NOTE]
-> 我們目前正在調查 [稽核記錄搜尋] 工具無法使用 Azure AD 活動的問題。 此問題約於 2020 年 10 月 26 日開始。 這些活動包括 Azure AD 使用者系統管理活動、群組系統管理活動、應用程式系統管理活動、角色管理活動和目錄系統管理活動。 問題解決後，我們將會提供更新。
+> 從 2020 年 10 月 22 日至 2020 年 11 月 6 日，稽核記錄搜尋工具中的 Azure AD 活動發生問題而無法提供使用。 這些活動包括 Azure AD 使用者系統管理活動、群組系統管理活動、應用程式系統管理活動、角色管理活動和目錄系統管理活動。 影響期間遺漏的事件將在未來幾天提供，且預期的完成時間不會晚於 2020 年 11 月 20 日。 在某些情況下，在 2020 年 10 月 26 日與 2020 年 11 月 5 日之間，客戶可能會注意到為事件產生的事件資料重複。
     
-下列是在 Office 365 中搜尋稽核記錄的流程。
+下列是在 Office 365 中搜尋稽核記錄的程序。
 
 [步驟 1：執行稽核記錄搜尋](#step-1-run-an-audit-log-search)
 

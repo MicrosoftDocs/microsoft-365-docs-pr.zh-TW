@@ -18,14 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何設定資料遺失防護（DLP）原則以使用 Microsoft 365 端點資料遺失防護（EPDLP）位置。
-ms.openlocfilehash: 95c470a3dfc90f9c7b9a36d282c016781e4e13a8
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6de6443dc0d276c862db43963ac28bd762e3756f
+ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847187"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48984917"
 ---
-# <a name="using-endpoint-data-loss-prevention-preview"></a>使用端點資料外洩防護 (預覽版)
+# <a name="using-endpoint-data-loss-prevention"></a>使用端點資料外洩防護
 
 本文將逐步引導您建立及修改使用裝置作為位置的 DLP 原則的三種案例。
 

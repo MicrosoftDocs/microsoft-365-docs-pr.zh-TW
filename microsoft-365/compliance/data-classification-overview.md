@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 資料分類儀表板可讓您深入了解貴組織所發現及分類的敏感性資料。
-ms.openlocfilehash: 503235ad2ee35760a03cb2427d1e84f5f3639b9f
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379227"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999393"
 ---
 # <a name="know-your-data---data-classification-overview"></a>了解您的資料 - 資料分類概觀
 
@@ -39,22 +39,17 @@ ms.locfileid: "48379227"
 - [可訓練分類器](classifier-learn-about.md)
 - [敏感性資訊類型](what-the-sensitive-information-types-look-for.md)
 
-您可以在 [Microsoft 365 合規性中心]**** 或 [Microsoft 365 安全性中心]**** > [分類]**** > [資料分析]**** 中找到資料分析。
+您可以在 [Microsoft 365 合規性中心] 或 [Microsoft 365 安全性中心] > [分類] > [資料分析] 中找到資料分析。
 
 觀看我們的資料分類功能影片。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
 
-在您建立任何原則之前，資料分類將會掃描您的敏感性內容和標籤內容。 這稱為**零變更管理**。 這可讓您查看所有保留和敏感度標籤對環境的影響，並協助您開始評估自己的保護和控管原則需求。
+在您建立任何原則之前，資料分類將會掃描您的敏感性內容和標籤內容。 這稱為 **零變更管理** 。 這可讓您查看所有保留和敏感度標籤對環境的影響，並協助您開始評估自己的保護和控管原則需求。
 
 ## <a name="prerequisites"></a>必要條件
 
-每個存取並使用資料分類的帳戶，都必須有從下列其中一個訂閱中指派的授權：
-
-- Microsoft 365 (E5/A5)
-- Office 365 (E5)
-- 進階合規性 (E5) 附加元件
-- 進階威脅情報 (E5) 附加元件
+許多不同的訂閱都支援端點 DLP。 若要查看端點 DLP 的授權選項，請參閱[資訊保護授權以取得指導方針](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。 
 
 ### <a name="permissions"></a>權限
 
