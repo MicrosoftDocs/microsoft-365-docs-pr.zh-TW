@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: bff804e726a62563621b11932e590ffcb631835a
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 3026c2490c88d03cda948e6da972d8663c4d6d5c
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920395"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995866"
 ---
 # <a name="commodity-futures-trading-commission-cftc-rule-131c-d-united-states"></a>商品先期傭金 (CFTC) 規則 1.31 (c-d) 美國
 
@@ -39,18 +39,16 @@ ms.locfileid: "48920395"
 
 若要評估 Azure 與 CFTC 規則1.31 的相容性 (3-d) 中，Microsoft 保留了專門從事記錄管理和資訊管理、Cohasset 關聯的獨立評估事務所。 在產生的報告中， [CFTC 1.31 (c) – (d) 法規遵從性評估： Microsoft Azure Storage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=19b08fd4-d276-43e8-9461-715981d0ea20&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_GRC_Assessment_Reports)，Cohasset 使用原則鎖定選項驗證 [Azure 不可變化的 blob 儲存區](https://docs.microsoft.com/azure/storage/blobs/storage-blob-immutable-storage) ，當用來保留以不可讀寫的 blob 和不可讀寫的 blob 儲存（ (格式）時，就會符合 CFTC 規則的原則型需求。 每個 Blob (記錄) 都會受到保護，無法進行修改、覆寫或刪除，直到必要的保留期間到期併發行任何關聯的合法保留期間為止。 具有敏感工作負載的軟體提供者和合作夥伴現在可以依靠 Azure 不可篡改的 Blob 存放區儲存為保留記錄的一個停止車間雲端方案。 金融機構現在可以組建自己的應用程式，利用這些功能，並保持不相容。
 
-### <a name="microsoft-office-365"></a>Microsoft Office 365
+### <a name="microsoft-365"></a>Microsoft 365
 
-若要評估 Office 365 與 CFTC 規則1.31 的相容性 (3-d) 中，Microsoft 涉嫌從事專門從事法規問題、Covington & Burling、LLP 的主要獨立法律事務所。 在產生的報告中， [在 Microsoft Office 365、資料保留和規則17A-4 規範](https://go.microsoft.com/fwlink/?linkid=830440)中進行封存，Covington 會驗證 [具有保留鎖定的 Office 365](retention-preservation-lock.md) 包含封存功能，讓受管制的客戶能夠以一種方式來儲存資料，以協助滿足記錄保留的 CFTC 需求。
-
-Office 365 中的封存可協助保留大量的資料，包括電子郵件、語音信箱、共用檔、立即訊息和協力廠商資料。 具體而言，Office 365 中的封存可讓客戶設定全域或細微的郵件保留原則，以儲存定義期間的資料，而不是以不可重寫、不可讀寫的格式使用。
+針對 [CFTC 1.31 (c)  (d) ](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d) 需求，Cohasset 驗證 Microsoft 365 包含封存功能，可讓受管制的客戶（包括經紀人代理商）儲存資料，以協助其符合每秒記錄保留的需求。 Microsoft 365 中的保留功能可協助保留大量的資料，包括電子郵件、語音信箱、共用檔、立即訊息和協力廠商資料。 具體說來，在 Microsoft 365 中的封存可讓客戶設定全域或細微的郵件保留原則，以儲存定義期間的資料，而不是以不可重寫、不可讀寫的格式使用。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Office 365](https://aka.ms/o365-compliance-framework)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 [Azure & CFTC 規則 1.31-SEC 17a-4 (f) & CFTC 1.31 (c-d) Azure Storage 的合規性評估
 

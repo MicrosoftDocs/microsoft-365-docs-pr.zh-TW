@@ -1,5 +1,5 @@
 ---
-title: 開始使用 Microsoft 365 端點資料外洩防護 (預覽版)
+title: 開始使用 Microsoft 365 端點資料外洩防護
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 端點資料遺失防護以監視檔案活動，並對這些端點的文件實作保護動作。
-ms.openlocfilehash: 95446e15e656e3c1aa658f897863608311b350e0
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8f4b1b04aadbb639f6c7daeeb564c10abd7737b2
+ms.sourcegitcommit: ca733da1ed919b286a93068b560608e82f8def05
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842037"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48990548"
 ---
-# <a name="get-started-with-endpoint-data-loss-prevention-preview"></a>開始使用端點資料外洩防護 (預覽版)
+# <a name="get-started-with-endpoint-data-loss-prevention"></a>開始使用端點資料外洩防護
 
 Microsoft 端點資料外洩防護 (端點 DLP) 是 Microsoft 365 資料外洩防護 (DLP) 套件的一部分，您可以使用這些功能探索並保護整個 Microsoft 365 服務的敏感性項目。 如需所有 Microsoft DLP 供應項目的詳細資訊，請參閱[資料外洩防護概觀](data-loss-prevention-policies.md) (英文)。 若要深入了解端點 DLP，請參閱[了解有關端點資料外洩防護 (預覽版)](endpoint-dlp-learn-about.md) (英文)
 
@@ -44,6 +44,7 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 - Microsoft 365 A5 合規性
 - Microsoft 365 E5 資訊保護和控管
 - Microsoft 365 A5 資訊保護和控管
+
 
 ### <a name="permissions"></a>權限
 
@@ -95,6 +96,8 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 4. 所有裝置都必須[加入 Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或加入混合式 Azure AD。
 
 5. 在端點裝置上安裝 Microsoft Chromium Edge 瀏覽器，以強制執行上傳至雲端活動的原則動作。 請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
+
+6. 如果您使用的是 Microsoft 365 Apps 版本 2004-2008 的每月企業頻道，則存在端點 DLP 對 Office 內容進行分類的已知問題，您需要更新到 2009 版或更高版本。 請參閲目前版本的 [Microsoft 365 Apps 的更新歷程記錄 (依日期列出)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。 深入了解有關此問題的更多資訊，請參閱 [2020 年目前通道版本的版本資訊](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27) 中的 Office 套件一節。
 
 ## <a name="onboarding-devices-into-device-management"></a>將裝置上線至裝置管理
 

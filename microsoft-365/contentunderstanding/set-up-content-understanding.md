@@ -9,12 +9,12 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: 6078b41f8911301d343925c5bf895e881abddffe
-ms.sourcegitcommit: 88c2461b14cd16f74979f4bcd0a9ad18e4422cb3
+ms.openlocfilehash: 8f1ebd70f932bce874efc19f525b549f6717f532
+ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48469718"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "48988677"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -41,21 +41,21 @@ ms.locfileid: "48469718"
 
 ## <a name="to-set-up-sharepoint-syntex"></a>若要設定 SharePoint Syntex
 
-1. 在 [Microsoft 365 系統管理中心] 中，選取 **[設定]**，然後查看 **[檔案和內容]** 區段。
+1. 在 [Microsoft 365 系統管理中心] 中，選取 **[設定]** ，然後查看 **[檔案和內容]** 區段。
 
-2. 在 **[檔案和內容]** 區段中，選取 **[自動化內容瞭解]**。<br/>
+2. 在 **[檔案和內容]** 區段中，選取 **[自動化內容瞭解]** 。<br/>
 
 3. 在 **[自動化內容瞭解]** 頁面上，按一下 **[開始使用]** 逐步執行設定流程。<br/>
 
     > [!div class="mx-imgBorder"]
     > ![開始設定](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. 在 **[設定表單處理]** 頁面上，您可以選擇是否要讓使用者能夠在特定 SharePoint 文件庫中建立表單處理模型。 您可以在 [文件庫] 功能區中使用功能表選項，在啟用此功能的 SharePoint 文件庫中 **[建立表單處理模型]**。
+4. 在 **[設定表單處理]** 頁面上，您可以選擇是否要讓使用者能夠在特定 SharePoint 文件庫中建立表單處理模型。 您可以在 [文件庫] 功能區中使用功能表選項，在啟用此功能的 SharePoint 文件庫中 **[建立表單處理模型]** 。
  
-     針對**哪個 SharePoint 文件庫應顯示建立表單處理模型的選項**，您可以選取：</br>
-      - **所有 SharePoint 文件庫**，讓組織中的所有 SharePoint 文件庫皆可使用。</br>
-      - **僅限選取網站中的文件庫**，然後選取您要讓其可供使用的網站，或上傳最多 50 個網站的清單。</br>
-      - **不使用 SharePoint 文件庫**，如果您不想讓任何網站都能使用 SharePoint 文件庫 (您可以在設定後變更)。
+     針對 **哪個 SharePoint 文件庫應顯示建立表單處理模型的選項** ，您可以選取：</br>
+      - **所有 SharePoint 文件庫** ，讓組織中的所有 SharePoint 文件庫皆可使用。</br>
+      - **僅限選取網站中的文件庫** ，然後選取您要讓其可供使用的網站，或上傳最多 50 個網站的清單。</br>
+      - **不使用 SharePoint 文件庫** ，如果您不想讓任何網站都能使用 SharePoint 文件庫 (您可以在設定後變更)。
 
    > [!div class="mx-imgBorder"]
    > ![設定表單處理](../media/content-understanding/admin-configforms.png)
@@ -67,18 +67,18 @@ ms.locfileid: "48469718"
 
     1. 在 **[網站名稱]** 中，輸入您要給予內容中心網站的名稱。
     
-    1. **[網站位址]** 會根據您為網站名稱所選取的內容，顯示網站的 URL。 如果您想要變更，請按一下 **[編輯]**。
+    1. **[網站位址]** 會根據您為網站名稱所選取的內容，顯示網站的 URL。 如果您想要變更，請按一下 **[編輯]** 。
 
        > [!div class="mx-imgBorder"]
        > ![建立內容中心](../media/content-understanding/admin-cu-create-cc.png)</br>
 
-       選取 **[下一步]**。
+       選取 **[下一步]** 。
 
-6. 在 **[檢閱並完成]** 頁面上，您可以查看您選取的設定，並選擇進行變更。 如果您對您的選擇感到滿意，請選取 **[啟用]**。
+6. 在 **[檢閱並完成]** 頁面上，您可以查看您選取的設定，並選擇進行變更。 如果您對您的選擇感到滿意，請選取 **[啟用]** 。
 
-7. 在 [確認] 頁面上，按一下 **[完成]**。
+7. 在 [確認] 頁面上，按一下 **[完成]** 。
 
-8. 您將會回到 **[自動化內容瞭解]** 頁面。 在此頁面上，您可以選取 **[管理]**，以對設定進行任何變更。 
+8. 您將會回到 **[自動化內容瞭解]** 頁面。 在此頁面上，您可以選取 **[管理]** ，以對設定進行任何變更。 
 
 ## <a name="assign-licenses"></a>指派授權
 
@@ -86,18 +86,18 @@ ms.locfileid: "48469718"
 
 若要指派授權：
 
-1. 在 Microsoft 365 系統管理中心中，在 **[使用者]** 底下，按一下 **[作用中使用者]**。
+1. 在 Microsoft 365 系統管理中心中，在 **[使用者]** 底下，按一下 **[作用中使用者]** 。
 
-2. 選取您要授權的使用者，然後按一下 **[管理產品授權]**。
+2. 選取您要授權的使用者，然後按一下 **[管理產品授權]** 。
 
-3. 選取 **[指派更多]**。
+3. 選取 **[指派更多]** 。
 
-4. 選取 **[智慧型內容服務]**。 在 **[應用程式]** 底下，確定 **[智慧型內容服務的一般資料服務]** 和 **[智慧型內容服務]** 皆已選取。
+4. 選取 **[SharePoint Server]** 。 在 **[應用程式]** 下，確定選取 **[Common Data Service for SharePoint Syntex]** 、 **[SharePoint Syntex]** 和 **[SharePoint Syntex - SPO 類型]** 。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 365 系統管理中心中的 SharePoint Syntex 授權](../media/content-understanding/sharepoint-syntex-licenses.png)
 
-5. 按一下 **[儲存變更]**。
+5. 按一下 **[儲存變更]** 。
 
 ## <a name="ai-builder-credits"></a>AI Builder 點數
 

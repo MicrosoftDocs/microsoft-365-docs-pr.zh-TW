@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0310226bba62995a6e72178fcf1fd2e96f462944
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 9a0878e513b48b7c6d5ca95cc9399918e1998af0
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48304813"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995896"
 ---
 # <a name="general-data-protection-regulation-summary"></a>一般資料保護摘要
 
@@ -31,10 +31,10 @@ ms.locfileid: "48304813"
 
 本文件中使用的 GDPR 術語的實用定義：
 
-- 資料控制者 (控制者)****：法律人員、公開授權單位、公司或其他實體，不論單獨或聯合其他單位，會決定個人資料處理方式的用途及方式。  
-- **個人資料和資料主體**：與已識別或可識別的自然人 (資料主體) 相關的任何資訊；可識別的自然人為可直接或間接識別的個人。  
-- 處理者：**** 自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。  
-- **客戶資料**：在公司運作的日常作業中產生並儲存的資料。
+- 資料控制者 (控制者)：法律人員、公開授權單位、公司或其他實體，不論單獨或聯合其他單位，會決定個人資料處理方式的用途及方式。  
+- **個人資料和資料主體** ：與已識別或可識別的自然人 (資料主體) 相關的任何資訊；可識別的自然人為可直接或間接識別的個人。  
+- 處理者：自然人或法人、公家機關、公司，或代表控制者處理個人資料的其他主體。  
+- **客戶資料** ：在公司運作的日常作業中產生並儲存的資料。
 
 ## <a name="what-is-the-gdpr"></a>GDPR 是什麼？
 
@@ -51,9 +51,9 @@ GDPR 提供人員管理組織中收集之個人資料的權限。 透過資料�
 
 以下任務與達成 GDPR 標準相關。 請跟隨清單中的連結來取得有關實作的詳細資料。  
 
-- **[資料主體要求 (DSR)](gdpr-data-subject-requests.md)**。 由資料主體向控制者提出以對其個人資料採取行動 (變更、限制、存取) 的正式要求。
-- **[外洩通知](gdpr-breach-notification.md)**。 在 GDPR 規範下，個人資料外洩是「導致意外或非法損毀、遺失、變更、未經授權洩漏或存取所傳輸、儲存或處理的個人資料之安全性缺口。」
-- **[資料保護影響評估](gdpr-data-protection-impact-assessments.md)**。 GDPR 規定資料控制者為「可能導致自然人之權利和自由高風險」的資料作業準備資料保護影響評估 (DPIA)。
+- **[資料主體要求 (DSR)](gdpr-data-subject-requests.md)** 。 由資料主體向控制者提出以對其個人資料採取行動 (變更、限制、存取) 的正式要求。
+- **[外洩通知](gdpr-breach-notification.md)** 。 在 GDPR 規範下，個人資料外洩是「導致意外或非法損毀、遺失、變更、未經授權洩漏或存取所傳輸、儲存或處理的個人資料之安全性缺口。」
+- **[資料保護影響評估](gdpr-data-protection-impact-assessments.md)** 。 GDPR 規定資料控制者為「可能導致自然人之權利和自由高風險」的資料作業準備資料保護影響評估 (DPIA)。
 
 如上所述，GDPR 的建議動作方案和責任整備檢查清單提供使用 Microsoft 產品和服務時，實作或評估 GDPR 合規性的指南。
 
@@ -209,7 +209,7 @@ Microsoft GDPR 條款反映第 28 條規定處理者應履行的承諾。 第 28
 
 **Microsoft 在什麼基礎下協助在歐盟以外傳輸個人資料？**
 
-Microsoft 長期以來一直使用標準合同條款 (也稱為示範條款) 作為其企業線上服務資料傳輸的基礎。 標準合約條款是歐洲委員會所提供的標準條款，可用來以合規方式在歐洲經濟區以外傳輸資料。 Microsoft 已透過[線上服務條款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)，將標準合約條款納入我們的所有大量授權合約中。 第 29 條工作方認為 Microsoft 遵守了標準合約條款。 當歐盟-美國隱私護盾推出時，微軟是第一家獲得認證的公司。 請參閱 [Microsoft 的隱私護盾認證](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active)，並閱讀[線上服務條款](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)。 歐盟-美國隱私護盾可協助想要將其資料慱輸至美國的客戶，採用與將其資料保護責任一致的方式。
+Microsoft 長期以來一直使用標準合同條款 (也稱為示範條款) 作為其企業線上服務資料傳輸的基礎。 標準合約條款是歐洲委員會所提供的標準條款，可用來以合規方式在歐洲經濟區以外傳輸資料。 Microsoft 已透過[線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)，將標準合約條款納入我們的所有大量授權合約中。 第 29 條工作方認為 Microsoft 遵守了標準合約條款。 當歐盟-美國隱私護盾推出時，微軟是第一家獲得認證的公司。 請參閱 [Microsoft 的隱私護盾認證](https://www.privacyshield.gov/participant?id=a2zt0000000KzNaAAK&status=Active)，並閱讀[線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)。 歐盟-美國隱私護盾可協助想要將其資料慱輸至美國的客戶，採用與將其資料保護責任一致的方式。
 
 **有哪些其他 Microsoft 合規性方案？**
 
@@ -219,12 +219,12 @@ Microsoft 長期以來一直使用標準合同條款 (也稱為示範條款) 作
 
 GDPR 會對收集或處理個人資料的組織施加多種要求，包括遵守六個關鍵原則的要求：
 
-- 處理和使用個人資料時*透明*、*公平*和*合法*。 您需要清楚了解使用個人資料的方式，而且也需要「依法」處理該資料。
-- 將個人資料的處理限制為*指定*、*明確*且*合法的目的*。 您將無法重複使用或揭露個人資料，因為這與當初收集資料的目的「抵觸」。
-- *儘量只收集和儲存夠用且與預期目的相關的個人資料*。
-- 確保*個人資料正確無誤* ，並讓其可以進行*清除或修正*。 您必須採取步驟，以確保您保留的個人資料正確無誤，並在錯誤發生時加以更正。
-- *限制個人資料的儲存*。 您必須確保只保留實現資料收集目的所需的個人資料。
-- 確保個人資料的*安全性*、*完整性*和*機密性*。 貴組織必須採取步驟，透過技術和組織安全措施保護個人資料的安全。
+- 處理和使用個人資料時 *透明* 、 *公平* 和 *合法* 。 您需要清楚了解使用個人資料的方式，而且也需要「依法」處理該資料。
+- 將個人資料的處理限制為 *指定* 、 *明確* 且 *合法的目的* 。 您將無法重複使用或揭露個人資料，因為這與當初收集資料的目的「抵觸」。
+- *儘量只收集和儲存夠用且與預期目的相關的個人資料* 。
+- 確保 *個人資料正確無誤* ，並讓其可以進行 *清除或修正* 。 您必須採取步驟，以確保您保留的個人資料正確無誤，並在錯誤發生時加以更正。
+- *限制個人資料的儲存* 。 您必須確保只保留實現資料收集目的所需的個人資料。
+- 確保個人資料的 *安全性* 、 *完整性* 和 *機密性* 。 貴組織必須採取步驟，透過技術和組織安全措施保護個人資料的安全。
 
 雖然 Microsoft 會隨時在您邁向 GDPR 旅程的過程中提供協助，但您需要了解貴組織對於 GDPR 有哪些具體義務，以及如何符合這些義務。
 

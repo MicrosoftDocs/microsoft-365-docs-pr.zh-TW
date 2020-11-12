@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: dc4adef382724ce4176f2b5f779218d62b6079e0
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 2ba5dc4726f359545d59de7387fc62a3fe897588
+ms.sourcegitcommit: 321610fd312e5c54ae8a757a71ab0c9fd2f1ac03
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919687"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "48995886"
 ---
 # <a name="financial-industry-regulatory-authority-finra-rule-4511c-united-states"></a>金融行業規章機關 (FINRA) 規則 4511 (c) 美國
 
@@ -45,18 +45,16 @@ Cohasset 使用原則鎖定選項驗證 [Azure 不可變化的 Blob 儲存](http
 
 具有敏感工作負載的軟體提供者和合作夥伴現在可以依靠 Azure 不可篡改的 Blob 存放區儲存為記錄保留和不可變化存放區的一個停止車間雲端方案。 金融機構現在可以組建自己的應用程式，利用這些功能，並保持不相容。
 
-## <a name="microsoft-office-365"></a>Microsoft Office 365
+## <a name="microsoft-365"></a>Microsoft 365
 
-為了評估 Office 365 與 FINRA 規則4511的相容性 (c) 中，Microsoft 保留了專門從事法規問題、Covington & Burling、LLP 的主要獨立法律事務所。 在產生的報告中，在 Microsoft Office 365、資料保留和規則17a-4 規範中進行封存，Covington 會驗證 [具有保留鎖定的 Office 365](retention-preservation-lock.md) 包含封存功能，可讓受管制客戶（包括經紀人代理商）以協助其符合記錄保留的 FINRA 需求的方式來儲存資料。
-
-Office 365 中的封存可協助保留大量的資料，包括電子郵件、語音信箱、共用檔、立即訊息和協力廠商資料。 具體而言，Office 365 中的封存可讓客戶設定全域或細微的郵件保留原則，以儲存定義期間的資料，而不是以不可重寫、不可讀寫的格式使用。
+針對 [FINRA 4511 (c) ](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d) 需求，Cohasset 驗證 Microsoft 365 包含的封存功能可讓受管制的客戶（包括經紀人代理商）儲存資料，以協助其遵守記錄保留的 SEC 需求。 Microsoft 365 中的保留功能可協助保留大量的資料，包括電子郵件、語音信箱、共用檔、立即訊息和協力廠商資料。 具體說來，在 Microsoft 365 中的封存可讓客戶設定全域或細微的郵件保留原則，以儲存定義期間的資料，而不是以不可重寫、不可讀寫的格式使用。
 
 ## <a name="microsoft-in-scope-cloud-services"></a>Microsoft 範圍內雲端服務
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
 - [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
-## <a name="audits-reports-and-certificates"></a>稽核、報告和認證
+## <a name="audits-reports-and-certificates"></a>稽核、報告和憑證
 
 ### <a name="azure--finra-rule-4511c"></a>Azure & FINRA 規則 4511 (c) 
 

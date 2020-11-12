@@ -47,16 +47,18 @@
               href: mtp/preview.md
             - name: Microsoft 365 安全性中心
               href: mtp/overview-security-center.md
+            - name: 針對問題進行疑難排解
+              href: ./mtp/troubleshoot.md
+            - name: 產業測試
+              href: ./mtp/top-scoring-industry-tests.md
+        - name: 規劃
+          items:
             - name: 必要條件
               href: mtp/prerequisites.md
             - name: 資料安全性及隱私權
               href: mtp/data-privacy.md
             - name: Microsoft 安全性入口網站
               href: mtp/portals.md
-            - name: 針對問題進行疑難排解
-              href: ./mtp/troubleshoot.md
-            - name: 產業測試
-              href: ./mtp/top-scoring-industry-tests.md
         - name: 評估功能
           items:
             - name: 試用實驗室簡介
@@ -71,28 +73,30 @@
               href: 'https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service'
             - name: 產生測試提醒
               href: mtp/generate-test-alert.md
-        - name: 在生產環境中執行試驗專案
+        - name: 部署
           items:
-            - name: 試驗概覽
-              href: mtp/mtp-pilot.md
-            - name: 方案
-              href: mtp/mtp-pilot-plan.md
-            - name: 準備
-              href: mtp/prepare-mtpeval.md
-            - name: 類比攻擊
-              href: mtp/mtp-pilot-simulate.md
-            - name: 結束和摘要
-              href: mtp/mtp-pilot-close.md
+            - name: 開啟 Microsoft 威脅防護
+              href: mtp/mtp-enable.md
+            - name: 在生產環境中執行試驗專案
+              items:
+                - name: 試驗概覽
+                  href: mtp/mtp-pilot.md
+                - name: 方案
+                  href: mtp/mtp-pilot-plan.md
+                - name: 準備
+                  href: mtp/prepare-mtpeval.md
+                - name: 類比攻擊
+                  href: mtp/mtp-pilot-simulate.md
+                - name: 結束和摘要
+                  href: mtp/mtp-pilot-close.md
+            - name: 部署支援服務
+              href: mtp/deploy-supported-services.md
         - name: 操作指南
           items:
             - name: 建立試用實驗室或試驗環境
               href: mtp/mtp-evaluation.md
             - name: 執行試驗劇本
               href: mtp/mtp-pilot.md
-            - name: 部署支援服務
-              href: mtp/deploy-supported-services.md
-            - name: 開啟 Microsoft 365 Defender
-              href: mtp/mtp-enable.md
             - name: 開啟常見問題集
               href: mtp/mtp-enable-faq.md
             - name: 事件
