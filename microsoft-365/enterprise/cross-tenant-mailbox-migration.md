@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: a9f983cebfbed1482fca7e44b77c200cbd9574ac
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a2065ac324acd0a4d5980bceb97f9f6b8ad73058
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847115"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002242"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -43,7 +43,7 @@ ms.locfileid: "48847115"
 
 本節不包含準備目標目錄中 MailUser 使用者物件所需的特定步驟，也不會包含用於提交遷移批次的範例命令。 請參閱 [準備目標使用者物件以供遷移](#prepare-target-user-objects-for-migration) 以取得此資訊。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 跨承租人信箱移動功能需要 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) 才能建立租使用者對特定的 Azure 應用程式，以安全地儲存和存取憑證/機密，以供從一個租使用者對另一個租使用者進行驗證及授權，並移除在承租人間共用憑證/機密的任何需求。 
 
@@ -275,7 +275,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
 遷移的使用者必須存在於目標承租人和 Exchange Online 系統 (中，MailUsers) 會以特定屬性標示以啟用跨承租人的移動）。 系統會針對未在目標租使用者中正確設定的使用者，移動系統會失敗。 下列各節將詳細說明目標租使用者的 MailUser 物件需求。
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
   
 您必須確定在目標群組織中設定下列物件和屬性。  
 
@@ -647,7 +647,5 @@ NT AUTHORITY\SELF                                {FullAccess, ReadPermission}   
    | Microsoft Defender for Office 365 (方案 1)     |
    | Microsoft Defender for Office 365 (方案 2)     |
    | Office 365 的特殊許可權存取管理           |
-   | Outlook Customer Manager                          |
    | Office 365 中的高級加密                  |
-   || 
- 
+    

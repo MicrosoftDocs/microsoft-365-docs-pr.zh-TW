@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b98cec62a018556bfbd31df0aa824acbd00b37b6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a6e3e7cc0404a56e4d69da69b95aa95fa6795dd5
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846237"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002218"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 受管理的電腦技術
 
@@ -31,9 +31,9 @@ ms.locfileid: "48846237"
  |
  --- | ---
 適用于企業的 Microsoft 365 應用程式 (64-位)  | 這些 Office 應用程式會隨裝置運送： Word、Excel、PowerPoint、Outlook、Publisher、Access、商務用 Skype、OneNote。<br><br>不包含 Microsoft Project 和 Microsoft Visio 的64位完整版本。 不過，由於安裝這些應用程式取決於 Microsoft 365 應用程式的 enterprise 安裝，因此 Microsoft Managed Desktop 已建立預設的 Microsoft Intune 部署和安全性群組，您可以用來將這些應用程式部署至授權的使用者。 如需詳細資訊，請參閱 [在 Microsoft 受管理的桌面裝置上安裝 Microsoft Project 或 Microsoft Visio](../get-started/project-visio.md)。
-商務用 OneDrive |在第一次登入商務用 OneDrive 時，會為使用者啟用 Azure Active Directory 單一登入。<br><br>包含「桌面」、「檔」及「圖片」資料夾的已知資料夾重新導向;由 Microsoft Managed Desktop 啟用和設定。 
+OneDrive |在第一次登入 OneDrive 時，會為使用者啟用 Azure Active Directory 單一登入。<br><br>包含「桌面」、「檔」及「圖片」資料夾的已知資料夾重新導向;由 Microsoft Managed Desktop 啟用和設定。
 儲存應用程式 |    Microsoft Sway 和 Power BI 未附帶裝置。 這些應用程式可從 Microsoft Store 下載。
-Win32 應用程式 |    小組未附帶裝置，但是會打包並由 Microsoft 提供給 Microsoft 受管理的桌面裝置。 Azure 資訊保護用戶端未附帶裝置，但是您可以將此裝置打包以進行部署。 
+Win32 應用程式 |    小組未附帶裝置，但是會打包並由 Microsoft 提供給 Microsoft 受管理的桌面裝置。 Azure 資訊保護用戶端未附帶裝置，但是您可以將此裝置打包以進行部署。
 Web 應用程式 |  在瀏覽器中的 [Yammer]、「Delve」、「流程」、「StaffHub」、「PowerApps」及「Planner」都不會隨裝置附帶。 使用者可以使用瀏覽器存取這些應用程式的 web 版本。
 
 

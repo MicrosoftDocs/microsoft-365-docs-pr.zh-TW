@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: c342ea9f662d883883755d2f67e5c25ffabddf83
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948406"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002414"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正由整備評估工具發現的問題
 
@@ -214,7 +214,7 @@ Microsoft 受管理的電腦不支援 Azure AD 組織所在的一或多個國家
 
 **諮詢**
 
-您應該準備要讓 Microsoft 受管理的桌面使用者擁有的應用程式清單。 請確定您可以透過 Intune 部署這些應用程式。 如需詳細資訊，請參閱 [Microsoft Managed Desktop 中的應用程式](apps.md)。
+您應該準備要讓 Microsoft 受管理的桌面使用者擁有的應用程式清單。 由於這些應用程式必須透過 Intune 部署，因此請評估重新使用現有的 Intune 應用程式。 考慮使用公司入口 (請參閱在裝置和註冊狀態頁面 [上安裝 Intune 公司入口網站](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) (ESP) ，將應用程式發佈至您的使用者。 如需詳細資訊，請參閱 [Microsoft 受管理的桌面](apps.md) 和初次執行體驗中的應用程式 [與 Autopilot 和註冊狀態頁面](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)。
 
 您可以要求 Microsoft 帳戶代表在 Microsoft 端點 Configuration Manager 中查詢，以識別準備好要遷移至 Intune 或需要調整的應用程式。
 
@@ -289,9 +289,8 @@ Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的
 
 **諮詢**
 
-如果您已在 Azure AD 組織中指派任何這些角色，請確定他們也在 Microsoft Defender for Endpoint 中指派這些角色。 否則，具有這些角色的系統管理員將無法存取管理員入口網站。
+如果您已將使用者指派至 Azure AD 組織中的任何角色，請確定他們也在 Microsoft Defender for Endpoint 中指派這些角色。 否則，具有這些角色的系統管理員將無法存取管理員入口網站。
 
-- 安全性讀取者
 - 安全性操作員
 - 全域讀取者
 
@@ -308,7 +307,7 @@ Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的
 
 ### <a name="self-service-password-reset"></a>自助密碼重設
 
-自助密碼重設 (SSPR) 應該針對所有不含 Microsoft Managed Desktop 服務帳戶的使用者啟用。 如需詳細資訊，請參閱 [教學課程：讓使用者可以使用 Azure Active Directory 自助密碼重設來解除鎖定帳戶或重設密碼](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
+自助密碼重設 (SSPR) 應該針對所有不含 Microsoft Managed Desktop 服務帳戶的 Microsoft 受管理的桌面使用者啟用。 如需詳細資訊，請參閱 [教學課程：讓使用者可以使用 Azure Active Directory 自助密碼重設來解除鎖定帳戶或重設密碼](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
 
 **諮詢**
 
@@ -325,11 +324,11 @@ Microsoft 受管理的桌面使用者在註冊後，不會對其 Microsoft 受�
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps 企業版
 
-### <a name="onedrive-for-business"></a>商務用 OneDrive
+### <a name="onedrive"></a>OneDrive
 
 [ **僅允許在加入特定網域的電腦上進行同步** 處理] 設定會與 Microsoft 受管理的桌面產生衝突。
 
 **諮詢**
 
-您正在使用 [ **僅允許在加入特定網域的電腦上同步** 處理] 設定。 此設定不會與 Microsoft 受管理的桌面搭配使用。 停用此設定，而不是設定為商務使用條件式存取原則的 OneDrive。 請參閱 [規劃設定條件式存取部署](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 以取得協助。
+您正在使用 [ **僅允許在加入特定網域的電腦上同步** 處理] 設定。 此設定不會與 Microsoft 受管理的桌面搭配使用。 停用此設定，而不是設定 OneDrive 使用條件式存取原則。 請參閱 [規劃設定條件式存取部署](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 以取得協助。
 

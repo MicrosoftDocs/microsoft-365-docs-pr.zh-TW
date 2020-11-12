@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: 如果您有與內部部署使用者相關聯的非 routale 網域，365您必須先將其與您的內部部署使用者相關聯，再瞭解如何進行。
-ms.openlocfilehash: 835beffb77c495179991fbb4388ecd9ee804ec91
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 21344cb0d495691a96867d401a5262fbbcfd02d4
+ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46695550"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49002378"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>準備無法路由傳送的網域，以用於目錄同步處理
 當您同步處理內部部署目錄與 Microsoft 365 時，您必須在 Azure Active Directory (Azure AD) 中有一個已驗證的網域。 只會同步處理與內部部署網域相關聯 (UPN) 的使用者主體名稱。 不過，任何包含無法路由之網域的 UPN，例如，像是本機 (（如 billa@contoso local) ）將同步處理至 onmicrosoft.com 域 (，如 billa@contoso.onmicrosoft.com) 。 
@@ -42,7 +42,7 @@ Azure AD Connect 會同步處理您的使用者的 UPN 和密碼，讓使用者�
   
 ### <a name="change-your-primary-domain"></a>**變更您的主要網域**
 
-將您的主要網域變更為您已在 Microsoft 365 中驗證的網域，例如，contoso.com。 每個具有網域 contoso 的使用者都會更新為 contoso.com。 如需相關指示，請參閱 [網域重新命名的運作方式](https://go.microsoft.com/fwlink/p/?LinkId=624174)。 不過，這是非常相關的程式，但下一節將說明更簡單的解決方案。
+將您的主要網域變更為您已在 Microsoft 365 中驗證的網域，例如，contoso.com。 每個具有網域 contoso 的使用者都會更新為 contoso.com。 不過，這是非常相關的程式，但下一節將說明更簡單的解決方案。
   
 ### <a name="add-upn-suffixes-and-update-your-users-to-them"></a>**新增 UPN 尾碼並更新您的使用者**
 
@@ -52,19 +52,19 @@ Azure AD Connect 會同步處理您的使用者的 UPN 和密碼，讓使用者�
   
  **步驟1：新增 UPN 尾碼**
   
-1. 在 AD DS 網域控制站的 [伺服器管理員] 中，選擇 [ **工具**] [ \> **Active Directory 網域及信任**]。
+1. 在 AD DS 網域控制站的 [伺服器管理員] 中，選擇 [ **工具** ] [ \> **Active Directory 網域及信任** ]。
     
     **或者，如果您沒有 Windows Server 2012**
     
-    按 **Windows 鍵 + R** 以開啟 [ **執行** ] 對話方塊，然後在 [services.msc] 中輸入，然後選擇 **[確定]**。
+    按 **Windows 鍵 + R** 以開啟 [ **執行** ] 對話方塊，然後在 [services.msc] 中輸入，然後選擇 **[確定]** 。
     
     ![選擇 [Active Directory 網域及信任]。](../media/46b6e007-9741-44af-8517-6f682e0ac974.png)
   
-2. 在 [ **Active Directory 網域及信任** ] 視窗中，以滑鼠右鍵按一下 [ **active Directory 網域及信任**]，然後選擇 [ **屬性**]。
+2. 在 [ **Active Directory 網域及信任** ] 視窗中，以滑鼠右鍵按一下 [ **active Directory 網域及信任** ]，然後選擇 [ **屬性** ]。
     
     ![以滑鼠右鍵按一下 [Active Directory 網域及信任]，然後選擇 [屬性]。](../media/39d20812-ffb5-4ba9-8d7b-477377ac360d.png)
   
-3. 在 [ **UPN 尾碼** ] 索引標籤的 [ **替代的 upn 尾碼** ] 方塊中，輸入新的 upn 尾碼或尾碼， **然後選擇 [新增]** \> ** **。
+3. 在 [ **UPN 尾碼** ] 索引標籤的 [ **替代的 upn 尾碼** ] 方塊中，輸入新的 upn 尾碼或尾碼， **然後選擇 [新增]** \> **** 。
     
     ![新增 UPN 尾碼](../media/a4aaf919-7adf-469a-b93f-83ef284c0915.PNG)
   
@@ -72,15 +72,15 @@ Azure AD Connect 會同步處理您的使用者的 UPN 和密碼，讓使用者�
     
  **步驟2：變更現有使用者的 UPN 尾碼**
   
-1. 在 AD DS 網域控制站的 [伺服器管理員] 中，選擇 [ **工具**] [ \> **Active Directory 使用者和電腦**]。
+1. 在 AD DS 網域控制站的 [伺服器管理員] 中，選擇 [ **工具** ] [ \> **Active Directory 使用者和電腦** ]。
     
     **或者，如果您沒有 Windows Server 2012**
     
-    按**Windows 鍵 + R**以開啟 [**執行**] 對話方塊，然後在 [dsa.msc] 中輸入，然後按一下 **[確定**]。
+    按 **Windows 鍵 + R** 以開啟 [ **執行** ] 對話方塊，然後在 [dsa.msc] 中輸入，然後按一下 **[確定** ]。
     
-2. 選取使用者，以滑鼠右鍵按一下，然後選擇 [ **屬性**]。
+2. 選取使用者，以滑鼠右鍵按一下，然後選擇 [ **屬性** ]。
     
-3. 在 [ **帳戶** ] 索引標籤的 [UPN 尾碼] 下拉式清單中，選擇新的 UPN 尾碼，然後選擇 **[確定]**。
+3. 在 [ **帳戶** ] 索引標籤的 [UPN 尾碼] 下拉式清單中，選擇新的 UPN 尾碼，然後選擇 **[確定]** 。
     
     ![為使用者新增 UPN 尾碼](../media/54876751-49f0-48cc-b864-2623c4835563.png)
   
