@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 內容共同作業的詳細資訊-人員體驗生產力分數。
-ms.openlocfilehash: 87f89af527e2a1b843a9b70fbef590b69d920f7d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 5cdbe0cbb683715a19b182d0781fe238d026a400
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804594"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999425"
 ---
 # <a name="content-collaboration--people-experiences"></a>內容共同作業–人員經驗
 
@@ -32,7 +32,7 @@ ms.locfileid: "48804594"
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>為什麼您的組織&#39;的內容共同作業分數很重要
 
-組織生產力的基本 pillar 是人們如何在檔案中共同作業。 透過 Microsoft 365 的內容，使用者存取、建立、修改和與其他人的內容共同作業。 「調查」顯示當人們使用線上檔案共同作業時，每個人每週平均會節約100分鐘。 請參閱 [證據](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
+組織生產力的基本 pillar 是人們如何在檔案中共同作業。 透過 Microsoft 365 的內容，使用者存取、建立、修改和與其他人的內容共同作業。 「調查」顯示當人們使用線上檔案共同作業時，每個人每週平均會節約100分鐘。 [請參閱證據](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf)。
 
 ## <a name="how-we-calculate-the-content-collaboration-score"></a>如何計算內容共同作業分數
 
@@ -81,7 +81,7 @@ ms.locfileid: "48804594"
 
 趨勢視覺化效果圖顯示讀取者、建立者和合作者的主要深入分析重要測量線趨勢線，在過去的180天。 圖表上的每個資料點都是過去28天的活動匯總。 每個建立者資料點都提供在 X 軸上的每個日期之過去28天內，標記為「建立者」的所有人員計數。
 
-:::image type="content" source="../../media/trendvisualization.jpg" alt-text="來自通訊共同作業分數的主要洞察力。":::
+:::image type="content" source="../../media/trendvisualization.jpg" alt-text="圖表顯示共同作業主要洞察力的趨勢。":::
 
 ### <a name="scoring-framework"></a>計分架構
 
@@ -93,7 +93,7 @@ ms.locfileid: "48804594"
 
 ### <a name="creating-files-to-onedrive-or-sharepoint"></a>建立檔案以 OneDrive 或 SharePoint
 
-:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="來自通訊共同作業分數的主要洞察力。":::
+:::image type="content" source="../../media/sharepointonedrivefiles.jpg" alt-text="顯示在 OneDrive 或 SharePoint 中建立檔案的人員人數的圖表":::
 
 1. **標頭：** 會強調在 Microsoft 365 Office 應用程式上，在 OneDrive 或 SharePoint 上建立檔案的活動人員所占的百分比。
 2. **Body：** 提供 OneDrive 和 SharePoint 中的內容建立值的相關資訊。
@@ -109,7 +109,7 @@ ms.locfileid: "48804594"
 
 ### <a name="use-of-attachments-in-email"></a>在電子郵件中使用附件
 
-:::image type="content" source="../../media/emailattachments.png" alt-text="來自通訊共同作業分數的主要洞察力。":::
+:::image type="content" source="../../media/emailattachments.png" alt-text="電子郵件附件的使用。":::
 
 1. **標頭：** 會強調在電子郵件中使用附件但未儲存至 OneDrive 或 SharePoint 之人員所占的百分比。
 2. **Body：** 提供從共同作業和安全性觀點共用線上檔案的連結值的相關資訊。
@@ -127,7 +127,7 @@ ms.locfileid: "48804594"
 
 ### <a name="sharing-of-online-files"></a>線上檔共用
 
-:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="來自通訊共同作業分數的主要洞察力。":::
+:::image type="content" source="../../media/sharingonlinefiles.png" alt-text="顯示線上共用檔人數的圖表。":::
 
 1. **標頭：** 會強調對從外部共用檔案 OneDrive 或 SharePoint 具有存取權的人員百分比。
 2. **Body：** 提供系統管理員&#39; 能夠變更組織中的檔案共用設定，以啟用最適合組織之共同作業層級的相關資訊。
@@ -142,7 +142,7 @@ ms.locfileid: "48804594"
 
 ### <a name="intensity-of-files-collaborated-on"></a>共同開啟的檔案密度
 
-:::image type="content" source="../../media/intensityofcollab.png" alt-text="來自通訊共同作業分數的主要洞察力。":::
+:::image type="content" source="../../media/intensityofcollab.png" alt-text="圖表顯示最具共同合作的檔案數目。":::
 
 1. **標頭：** 這會強調使用者有權存取 OneDrive 或 SharePoint 誰在4個以上的檔案上進行共同作業的使用者百分比。
 2. **Body：** 這會提供人員如何利用線上檔案以改善共同作業的相關資訊。
@@ -164,7 +164,7 @@ ms.locfileid: "48804594"
 
 ### <a name="network-performance-strength-for-onedrive-and-sharepoint"></a>OneDrive 和 SharePoint 的網路效能強度
 
-:::image type="content" source="../../media/networkperfstrength.png" alt-text="來自通訊共同作業分數的主要洞察力。":::
+:::image type="content" source="../../media/networkperfstrength.png" alt-text="顯示 OneDrive 和 SharePoint 之網路效能的圖表。":::
 
 1. **標頭：** 會強調所有測試的裝置所占的百分比，而這些裝置的網路連線速度 OneDrive 和 SharePoint 都不佳。 
 2. **Body：** 提供有關共同作業效能為何重要的資訊。 
