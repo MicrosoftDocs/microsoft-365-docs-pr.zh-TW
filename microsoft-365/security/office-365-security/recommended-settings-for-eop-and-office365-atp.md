@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用適用于 Office 365 的 Defender，您也會取得哪些額外功能？
-ms.openlocfilehash: ab8640574d15cc1950ac0873ef90c4d984553510
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 032cd6a50f56fd3e1e47faebfaea5f6665553a4b
+ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845645"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "49001522"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建議設定
 
@@ -52,24 +52,24 @@ ms.locfileid: "48845645"
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|留言|
+|安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**垃圾郵件** 偵測動作 <br/><br/> _SpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
-|**高信賴的垃圾郵件** 偵測動作 <br/><br/> _HighConfidenceSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
-|**網路釣魚電子郵件** 偵測動作 <br/><br/> _PhishSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
-|**高信賴網路釣魚電子郵件** 偵測動作 <br/><br/> _HighConfidencePhishAction_|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
-|**大量電子郵件** 偵測動作 <br/><br/> _BulkSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <br/><br/> `Quarantine`||
-|大量電子郵件閾值 <br/><br/> _BulkThreshold_|7 |6 |4 |如需詳細資訊，請參閱 [Office 365 中的大量投訴層級 (BCL) ](bulk-complaint-level-values.md)。|
-|隔離保留期間 <br/><br/> _QuarantineRetentionPeriod_|15 天|30 天|30 天||
-|**安全性秘訣** <br/><br/> _InlineSafetyTipsEnabled_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|允許的寄件者 <br/><br/> _AllowedSenders_|無|無|無||
-|允許的寄件者網域 <br/><br/> _AllowedSenderDomains_|無|無|無|將網域新增至允許的寄件者清單是一種非常壞的主意。 攻擊者可以傳送您本來會加以篩選的電子郵件。 <br/><br/> 在 [ **反垃圾郵件設定** ] 頁面的 [安全性 & 規範中心] 中，使用 [哄騙智慧](learn-about-spoof-intelligence.md)，以查看組織的電子郵件網域中的所有收件者電子郵件地址或外部網域中的欺騙寄件者電子郵件地址。|
-|封鎖的寄件者 <br/><br/> _BlockedSenders_|無|無|無||
-|封鎖的寄件者網域 <br/><br/> _BlockedSenderDomains_|無|無|無||
-|**啟用使用者垃圾郵件通知** <br/><br/> _EnableEndUserSpamNotifications_|已停用 <br/><br/> `$false`|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`||
-|**每 (天傳送一次使用者垃圾郵件通知)** <br/><br/> _EndUserSpamNotificationFrequency_|3天|3天|3天||
-|**垃圾郵件 ZAP** <br/><br/> _SpamZapEnabled_|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`||
-|**網路釣魚 ZAP** <br/><br/> _PhishZapEnabled_|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`|已啟用 <br/><br/> `$true`||
+|**垃圾郵件** 偵測動作 <p> _SpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**高信賴的垃圾郵件** 偵測動作 <p> _HighConfidenceSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**網路釣魚電子郵件** 偵測動作 <p> _PhishSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**高信賴網路釣魚電子郵件** 偵測動作 <p> _HighConfidencePhishAction_|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**大量電子郵件** 偵測動作 <p> _BulkSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|大量電子郵件閾值 <p> _BulkThreshold_|7 |6 |4 |如需詳細資訊，請參閱 [Office 365 中的大量投訴層級 (BCL) ](bulk-complaint-level-values.md)。|
+|隔離保留期間 <p> _QuarantineRetentionPeriod_|15 天|30 天|30 天||
+|**安全性秘訣** <p> _InlineSafetyTipsEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
+|允許的寄件者 <p> _AllowedSenders_|無|無|無||
+|允許的寄件者網域 <p> _AllowedSenderDomains_|無|無|無|將網域新增至允許的寄件者清單是一種非常壞的主意。 攻擊者可以傳送您本來會加以篩選的電子郵件。 <p> 在 [ **反垃圾郵件設定** ] 頁面的 [安全性 & 規範中心] 中，使用 [哄騙智慧](learn-about-spoof-intelligence.md)，以查看組織的電子郵件網域中的所有收件者電子郵件地址或外部網域中的欺騙寄件者電子郵件地址。|
+|封鎖的寄件者 <p> _BlockedSenders_|無|無|無||
+|封鎖的寄件者網域 <p> _BlockedSenderDomains_|無|無|無||
+|**啟用使用者垃圾郵件通知** <p> _EnableEndUserSpamNotifications_|已停用 <p> `$false`|已啟用 <p> `$true`|已啟用 <p> `$true`||
+|**每 (天傳送一次使用者垃圾郵件通知)** <p> _EndUserSpamNotificationFrequency_|3天|3天|3天||
+|**垃圾郵件 ZAP** <p> _SpamZapEnabled_|已啟用 <p> `$true`|已啟用 <p> `$true`|已啟用 <p> `$true`||
+|**網路釣魚 ZAP** <p> _PhishZapEnabled_|已啟用 <p> `$true`|已啟用 <p> `$true`|已啟用 <p> `$true`||
 |_MarkAsSpamBulkMail_|開啟|開啟|開啟|此設定僅適用于 PowerShell。|
 |
 
@@ -79,7 +79,7 @@ ms.locfileid: "48845645"
 
 ****
 
-|安全性功能名稱|留言|
+|安全性功能名稱|註解|
 |---|---|
 | ( _IncreaseScoreWithImageLinks_ ) **的遠端網站影像連結**||
 |URL ( _IncreaseScoreWithNumericIps_ **中的數位 IP 位址** ) ||
@@ -106,12 +106,12 @@ ms.locfileid: "48845645"
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|留言|
+|安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**每位使用者的收件者數目上限：外部每小時限制** <br/><br/> _RecipientLimitExternalPerHour_|0|500|400|預設值0表示使用服務預設值。|
-|**每位使用者的收件者數目上限：每小時內部的限制** <br/><br/> _RecipientLimitInternalPerHour_|0|1000|800|預設值0表示使用服務預設值。|
-|**每位使用者的收件者數目上限：每日限制** <br/><br/> _RecipientLimitPerDay_|0|1000|800|預設值0表示使用服務預設值。|
-|**使用者超過限制時的動作** <br/><br/> _ActionWhenThresholdReached_|**限制使用者傳送郵件，直到下列日期為止** <br/><br/> `BlockUserForToday`|**限制使用者傳送郵件** <br/><br/> `BlockUser`|**限制使用者傳送郵件** <br/><br/> `BlockUser`||
+|**每位使用者的收件者數目上限：外部每小時限制** <p> _RecipientLimitExternalPerHour_|0|500|400|預設值0表示使用服務預設值。|
+|**每位使用者的收件者數目上限：每小時內部的限制** <p> _RecipientLimitInternalPerHour_|0|1000|800|預設值0表示使用服務預設值。|
+|**每位使用者的收件者數目上限：每日限制** <p> _RecipientLimitPerDay_|0|1000|800|預設值0表示使用服務預設值。|
+|**使用者超過限制時的動作** <p> _ActionWhenThresholdReached_|**限制使用者傳送郵件，直到下列日期為止** <p> `BlockUserForToday`|**限制使用者傳送郵件** <p> `BlockUser`|**限制使用者傳送郵件** <p> `BlockUser`||
 |
 
 ### <a name="eop-anti-malware-policy-settings"></a>EOP 反惡意程式碼原則設定
@@ -120,13 +120,13 @@ ms.locfileid: "48845645"
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|留言|
+|安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**您是否要在郵件被隔離時通知收件者？** <br/><br/> _Action_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|否 <br/><br/> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
-|**常見附件類型篩選** <br/><br/> _EnableFileFilter_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
-|**惡意程式碼零小時自動清除** <br/><br/> _ZapEnabled_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|通知未傳遞郵件的 **內部寄件者** <br/><br/> _EnableInternalSenderNotifications_|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`||
-|通知未傳遞郵件的 **外部寄件者** <br/><br/> _EnableExternalSenderNotifications_|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`|停用 <br/><br/> `$false`||
+|**您是否要在郵件被隔離時通知收件者？** <p> _Action_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
+|**常見附件類型篩選** <p> _EnableFileFilter_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
+|**惡意程式碼零小時自動清除** <p> _ZapEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
+|通知未傳遞郵件的 **內部寄件者** <p> _EnableInternalSenderNotifications_|停用 <p> `$false`|停用 <p> `$false`|停用 <p> `$false`||
+|通知未傳遞郵件的 **外部寄件者** <p> _EnableExternalSenderNotifications_|停用 <p> `$false`|停用 <p> `$false`|停用 <p> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP 預設的反網路釣魚原則設定
@@ -135,11 +135,11 @@ ms.locfileid: "48845645"
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|留言|
+|安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**啟用反欺騙保護** <br/><br/> _EnableAntispoofEnforcement_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**啟用未經驗證的寄件者** <br/><br/> _EnableUnauthenticatedSender_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|會在 Outlook 中為未識別的欺騙寄件者將問號 (？ ) 加入寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
-|**如果電子郵件是由不允許哄騙您網域的人所傳送** <br/><br/> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**將郵件移至收件者的 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件** <br/><br/> `Quarantine`|此設定適用于 [欺騙性智慧](learn-about-spoof-intelligence.md)中封鎖的寄件者。|
+|**啟用反欺騙保護** <p> _EnableAntispoofEnforcement_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|會在 Outlook 中為未識別的欺騙寄件者將問號 (？ ) 加入寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
+|**如果電子郵件是由不允許哄騙您網域的人所傳送** <p> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件** <p> `Quarantine`|此設定適用于 [欺騙性智慧](learn-about-spoof-intelligence.md)中封鎖的寄件者。|
 |
 
 ## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender for Office 365 安全性
@@ -166,21 +166,21 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但 Office 365 的 
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|留言|
+|安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|受保護的使用者： **新增要保護的使用者** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|關閉 <br/><br/> `$false` <br/><br/> 無|開啟 <br/><br/> `$true` <br/><br/> \<list of users\>|開啟 <br/><br/> `$true` <br/><br/> \<list of users\>|根據您的組織，建議您將使用者新增 (郵件寄件者) 在重要角色中。 在內部，受保護的寄件者可能是 CEO、CFO 及其他資深領導人。 外部、受保護的寄件者可以包含理事會成員或董事會的董事。|
-|受保護的網域： **自動包含我擁有的網域** <br/><br/> _EnableOrganizationDomainsProtection_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|受保護的網域： **包括自訂網域** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|關閉 <br/><br/> `$false` <br/><br/> 無|開啟 <br/><br/> `$true` <br/><br/> \<list of domains\>|開啟 <br/><br/> `$true` <br/><br/> \<list of domains\>|根據您的組織，建議您將網域新增 (寄件者網域) ，但經常與您互動。|
-|受保護的使用者： **如果模仿的使用者傳送電子郵件** <br/><br/> _TargetedUserProtectionAction_|**不要套用任何動作** <br/><br/> `NoAction`|**隔離郵件** <br/><br/> `Quarantine`|**隔離郵件** <br/><br/> `Quarantine`||
-|受保護的網域： **如果類比網域傳送電子郵件** <br/><br/> _TargetedDomainProtectionAction_|**不要套用任何動作** <br/><br/> `NoAction`|**隔離郵件** <br/><br/> `Quarantine`|**隔離郵件** <br/><br/> `Quarantine`||
-|**顯示類比使用者的秘訣** <br/><br/> _EnableSimilarUsersSafetyTips_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**顯示類比網域的秘訣** <br/><br/> _EnableSimilarDomainsSafetyTips_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**顯示不尋常字元的秘訣** <br/><br/> _EnableUnusualCharactersSafetyTips_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**啟用信箱智慧？** <br/><br/> _EnableMailboxIntelligence_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**啟用信箱智慧型類比保護？** <br/><br/> _EnableMailboxIntelligenceProtection_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**如果由信箱智慧保護的類比使用者傳送電子郵件** <br/><br/> _MailboxIntelligenceProtectionAction_|**不要套用任何動作** <br/><br/> `NoAction`|**將郵件移至收件者的 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件** <br/><br/> `Quarantine`||
-|**受信任的寄件者** <br/><br/> _ExcludedSenders_|無|無|無|根據您的組織，我們建議新增因模擬而不正確地標示為網路釣魚的使用者，而不是其他篩選器。|
-|**信任的網域** <br/><br/> _ExcludedDomains_|無|無|無|根據您的組織，我們建議新增因模擬而不正確地標示為網路釣魚的網域，而不是其他篩選器。|
+|受保護的使用者： **新增要保護的使用者** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|關閉 <p> `$false` <p> 無|開啟 <p> `$true` <p> \<list of users\>|開啟 <p> `$true` <p> \<list of users\>|根據您的組織，建議您將使用者新增 (郵件寄件者) 在重要角色中。 在內部，受保護的寄件者可能是 CEO、CFO 及其他資深領導人。 外部、受保護的寄件者可以包含理事會成員或董事會的董事。|
+|受保護的網域： **自動包含我擁有的網域** <p> _EnableOrganizationDomainsProtection_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
+|受保護的網域： **包括自訂網域** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|關閉 <p> `$false` <p> 無|開啟 <p> `$true` <p> \<list of domains\>|開啟 <p> `$true` <p> \<list of domains\>|根據您的組織，建議您將網域新增 (寄件者網域) ，但經常與您互動。|
+|受保護的使用者： **如果模仿的使用者傳送電子郵件** <p> _TargetedUserProtectionAction_|**不要套用任何動作** <p> `NoAction`|**隔離郵件** <p> `Quarantine`|**隔離郵件** <p> `Quarantine`||
+|受保護的網域： **如果類比網域傳送電子郵件** <p> _TargetedDomainProtectionAction_|**不要套用任何動作** <p> `NoAction`|**隔離郵件** <p> `Quarantine`|**隔離郵件** <p> `Quarantine`||
+|**顯示類比使用者的秘訣** <p> _EnableSimilarUsersSafetyTips_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**顯示類比網域的秘訣** <p> _EnableSimilarDomainsSafetyTips_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**顯示不尋常字元的秘訣** <p> _EnableUnusualCharactersSafetyTips_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**啟用信箱智慧？** <p> _EnableMailboxIntelligence_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**啟用信箱智慧型類比保護？** <p> _EnableMailboxIntelligenceProtection_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**如果由信箱智慧保護的類比使用者傳送電子郵件** <p> _MailboxIntelligenceProtectionAction_|**不要套用任何動作** <p> `NoAction`|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件** <p> `Quarantine`||
+|**受信任的寄件者** <p> _ExcludedSenders_|無|無|無|根據您的組織，我們建議新增因模擬而不正確地標示為網路釣魚的使用者，而不是其他篩選器。|
+|**信任的網域** <p> _ExcludedDomains_|無|無|無|根據您的組織，我們建議新增因模擬而不正確地標示為網路釣魚的網域，而不是其他篩選器。|
 |
 
 #### <a name="spoof-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反網路釣魚原則中的欺騙設定
@@ -189,11 +189,11 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但 Office 365 的 
 
 ****
 
-|安全性功能名稱|標準版|嚴格|留言|
+|安全性功能名稱|標準版|嚴格|註解|
 |---|---|---|---|
-|**啟用反欺騙保護** <br/><br/> _EnableAntispoofEnforcement_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**啟用未經驗證的寄件者** <br/><br/> _EnableUnauthenticatedSender_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|會在 Outlook 中為未識別的欺騙寄件者將問號 (？ ) 加入寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
-|**如果電子郵件是由不允許哄騙您網域的人所傳送** <br/><br/> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <br/><br/> `MoveToJmf`|**隔離郵件** <br/><br/> `Quarantine`|此設定適用于 [欺騙性智慧](learn-about-spoof-intelligence.md)中封鎖的寄件者。|
+|**啟用反欺騙保護** <p> _EnableAntispoofEnforcement_|開啟 <p> `$true`|開啟 <p> `$true`||
+|**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|會在 Outlook 中為未識別的欺騙寄件者將問號 (？ ) 加入寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
+|**如果電子郵件是由不允許哄騙您網域的人所傳送** <p> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件** <p> `Quarantine`|此設定適用于 [欺騙性智慧](learn-about-spoof-intelligence.md)中封鎖的寄件者。|
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反網路釣魚原則中的高級設定
@@ -202,9 +202,9 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但 Office 365 的 
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|留言|
+|安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**高級網路釣魚臨界值** <br/><br/> _PhishThresholdLevel_|**1-標準** <br/><br/> `1`|**2-嚴格** <br/><br/> `2`|**3-更嚴格** <br/><br/> `3`||
+|**高級網路釣魚臨界值** <p> _PhishThresholdLevel_|**1-標準** <p> `1`|**2-嚴格** <p> `2`|**3-更嚴格** <p> `3`||
 |
 
 ### <a name="safe-links-settings"></a>安全連結設定
@@ -219,11 +219,11 @@ Office 的 Defender for Office 365 中的安全連結包括全域設定，這些
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|留言|
+|安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**使用下列專案中的安全連結： Office 365 應用程式** <br/><br/> _EnableSafeLinksForO365Clients_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|在支援的 Office 365 desktop 和 mobile (iOS 和 Android) app 中使用安全連結。 如需詳細資訊，請參閱 [Office 365 應用程式的安全連結設定](atp-safe-links.md#safe-links-settings-for-office-365-apps)。|
-|**使用者按一下安全連結時請勿追蹤** <br/><br/> _TrackClicks_|開啟 <br/><br/> `$false`|關閉 <br/><br/> `$true`|關閉 <br/><br/> `$true`|關閉此設定 (將 _TrackClicks_ 設定為 `$true`) 在支援的 Office 365 應用程式中追蹤使用者按一下。|
-|**不要讓使用者點擊至原始 URL 的安全連結** <br/><br/> _AllowClickThrough_|開啟 <br/><br/> `$false`|開啟 <br/><br/> `$false`|開啟 <br/><br/> `$false`|開啟此設定 (將 _AllowClickThrough_ 設定為 `$false`) ，可防止在支援的 Office 365 應用程式中，依序按一下至原始 URL。|
+|**使用下列專案中的安全連結： Office 365 應用程式** <p> _EnableSafeLinksForO365Clients_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|在支援的 Office 365 desktop 和 mobile (iOS 和 Android) app 中使用安全連結。 如需詳細資訊，請參閱 [Office 365 應用程式的安全連結設定](atp-safe-links.md#safe-links-settings-for-office-365-apps)。|
+|**使用者按一下安全連結時請勿追蹤** <p> _TrackClicks_|開啟 <p> `$false`|關閉 <p> `$true`|關閉 <p> `$true`|關閉此設定 (將 _TrackClicks_ 設定為 `$true`) 在支援的 Office 365 應用程式中追蹤使用者按一下。|
+|**不要讓使用者點擊至原始 URL 的安全連結** <p> _AllowClickThrough_|開啟 <p> `$false`|開啟 <p> `$false`|開啟 <p> `$false`|開啟此設定 (將 _AllowClickThrough_ 設定為 `$false`) ，可防止在支援的 Office 365 應用程式中，依序按一下至原始 URL。|
 |
 
 #### <a name="safe-links-policy-settings"></a>安全連結原則設定
@@ -237,15 +237,15 @@ Office 的 Defender for Office 365 中的安全連結包括全域設定，這些
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|留言|
+|安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**選取郵件中未知可能惡意 URLs 的動作** <br/><br/> _IsEnabled_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**選取 Microsoft 小組中未知或可能惡意的 URLs 的動作** <br/><br/> _EnableSafeLinksForTeams_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**針對可疑的連結和指向檔案的連結套用即時 URL 掃描** <br/><br/> _ScanUrls_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**等待 URL 掃描完成再傳遞郵件** <br/><br/> _DeliverMessageAfterScan_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**對組織內傳送的電子郵件套用安全連結** <br/><br/> _EnableForInternalSenders_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**不要追蹤使用者點選** <br/><br/> _DoNotTrackUserClicks_|關閉 <br/><br/> `$false`|關閉 <br/><br/> `$false`|關閉 <br/><br/> `$false`|關閉此設定 (將 _DoNotTrackUserClicks_ 設定為 `$false`) 追蹤使用者按一下。|
-|**不允許使用者點選原始 URL** <br/><br/> _DoNotAllowClickThrough_|關閉 <br/><br/> `$false`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|開啟此設定 (將 _DoNotAllowClickThrough_ 設定為 `$true`) ，可防止依序按一下原始 URL。|
+|**選取郵件中未知可能惡意 URLs 的動作** <p> _IsEnabled_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**選取 Microsoft 小組中未知或可能惡意的 URLs 的動作** <p> _EnableSafeLinksForTeams_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**針對可疑的連結和指向檔案的連結套用即時 URL 掃描** <p> _ScanUrls_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**等待 URL 掃描完成再傳遞郵件** <p> _DeliverMessageAfterScan_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**對組織內傳送的電子郵件套用安全連結** <p> _EnableForInternalSenders_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**不要追蹤使用者點選** <p> _DoNotTrackUserClicks_|關閉 <p> `$false`|關閉 <p> `$false`|關閉 <p> `$false`|關閉此設定 (將 _DoNotTrackUserClicks_ 設定為 `$false`) 追蹤使用者按一下。|
+|**不允許使用者點選原始 URL** <p> _DoNotAllowClickThrough_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`|開啟此設定 (將 _DoNotAllowClickThrough_ 設定為 `$true`) ，可防止依序按一下原始 URL。|
 |
 
 ### <a name="safe-attachments-settings"></a>安全附件設定
@@ -260,11 +260,11 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|留言|
+|安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP** <br/><br/> _EnableATPForSPOTeamsODB_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
-|**開啟 Office 用戶端的安全檔**<bt/><br/> _EnableSafeDocs_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|此設定僅適用于 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的安全檔](safe-docs.md)。|
-|**即使安全檔識別為惡意檔案，也允許人員按一下受保護的檢視**<bt/><br/> _AllowSafeDocsOpen_|關閉 <br/><br/> `$false`|關閉 <br/><br/> `$false`|此設定與安全檔相關。|
+|**開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP** <p> _EnableATPForSPOTeamsODB_|開啟 <p> `$true`|開啟 <p> `$true`||
+|**開啟 Office 用戶端的安全檔**<bt/><br/> _EnableSafeDocs_|開啟 <p> `$true`|開啟 <p> `$true`|此設定僅適用于 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的安全檔](safe-docs.md)。|
+|**即使安全檔識別為惡意檔案，也允許人員按一下受保護的檢視**<bt/><br/> _AllowSafeDocsOpen_|關閉 <p> `$false`|關閉 <p> `$false`|此設定與安全檔相關。|
 |
 
 #### <a name="safe-attachments-policy-settings"></a>安全附件原則設定
@@ -278,11 +278,11 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|留言|
+|安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**安全附件未知的惡意程式碼回應** <br/><br/> _Action_|封鎖 <br/><br/> `Block`|封鎖 <br/><br/> `Block`|封鎖 <br/><br/> `Block`||
-|**偵測時重新導向附件** ： **啟用重新導向** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|Off，但沒有指定電子郵件地址。 <br/><br/> `$true` <br/><br/> 無|，然後指定電子郵件地址。 <br/><br/> `$true` <br/><br/> 電子郵件地址|，然後指定電子郵件地址。 <br/><br/> `$true` <br/><br/> 電子郵件地址|將郵件重新導向至安全性管理員以進行審閱。|
-|**如果惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。** <br/><br/> _ActionOnError_|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`|開啟 <br/><br/> `$true`||
+|**安全附件未知的惡意程式碼回應** <p> _Action_|封鎖 <p> `Block`|封鎖 <p> `Block`|封鎖 <p> `Block`||
+|**偵測時重新導向附件** ： **啟用重新導向** <p> _Redirect_ <p> _RedirectAddress_|Off，但沒有指定電子郵件地址。 <p> `$true` <p> 無|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|將郵件重新導向至安全性管理員以進行審閱。|
+|**如果惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。** <p> _ActionOnError_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |
 
 ## <a name="related-articles"></a>相關文章
