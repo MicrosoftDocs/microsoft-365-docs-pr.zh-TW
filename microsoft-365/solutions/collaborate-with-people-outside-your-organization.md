@@ -11,18 +11,19 @@ ms.collection:
 - M365-collaboration
 - m365solution-securecollab
 - m365solution-scenario
+- m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 瞭解如何設定 Microsoft 365 應用程式，如小組、OneDrive 和 SharePoint，以與組織外部的人員進行共同作業。
-ms.openlocfilehash: 9a15ea06cec6982977ec88edf5ee95b35591a33c
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 60789041abca98769fa25e2f299ee2d7eebe0726
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906986"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49029978"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>與組織外部人員合作
 

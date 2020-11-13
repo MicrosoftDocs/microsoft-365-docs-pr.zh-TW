@@ -11,17 +11,18 @@ ms.collection:
 - M365-collaboration
 - m365solution-3tiersprotection
 - m365solution-securecollab
+- m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 深入瞭解為小組中的客人設定任務、交談及檔共同作業時，所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: b4eea473f03441144a0236ec53dcecde9080fc7a
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 7f00acb7b7b58169d6a66bfa4cabdc5a3035f67f
+ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906856"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49030026"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在小組中與來賓共同作業
 
@@ -131,7 +132,7 @@ Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯�
 2. 在 [檔案 **和資料夾連結** ] 底下，選取您要使用的預設共用連結。
 3. 如果您做了任何變更，請按一下 [儲存]。
 
-## <a name="create-a-team"></a>建立團隊
+## <a name="create-a-team"></a>建立小組
 
 下一步是建立您計畫用以與客人合作的小組。
 
