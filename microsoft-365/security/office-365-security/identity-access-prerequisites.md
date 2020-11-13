@@ -18,18 +18,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: d57709d78cd8b64b740c88362cb99653f6dec681
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: db0f001d20f46c5c248ec153238fe394b8e9721c
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48463987"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020970"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
 本文說明在部署建議的身分識別和裝置存取原則之前，必須先執行的必要條件。 本文也會討論推薦的預設平臺用戶端設定，以提供最佳單一登入 (SSO) 使用者經驗，以及條件式存取的技術必要條件。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 在執行建議的身分識別和裝置存取原則之前，您的組織必須符合 Microsoft 365 和 Office 365 的這些身分識別和驗證模型：
 
@@ -51,7 +51,7 @@ ms.locfileid: "48463987"
 | [將密碼回寫設定成內部部署 AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。 密碼回寫可讓 Azure AD 要求使用者在偵測到高風險帳戶時變更其內部部署密碼。 您可以使用下列兩種方式之一，使用 Azure AD Connect 來啟用此功能：在 Azure AD Connect 安裝精靈的 [選用功能] 畫面啟用 **密碼回寫** 功能，或透過 Windows PowerShell 加以啟用。 | 僅雲端 |
 | [設定 AZURE AD 密碼保護](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)。 Azure AD 密碼保護可偵測並封鎖已知的弱式密碼及其變體，也會封鎖貴組織特有的額外弱式詞彙。 預設全域禁用密碼清單會自動套用至 Azure AD 租用戶中的所有使用者。 您可以在自訂禁用密碼清單中定義其他條目。 使用者變更或重設密碼時，系統會檢查這些禁用密碼清單，以強制使用強式密碼。 |  |
 | [啟用 Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)。 Azure AD 身分識別保護可讓您偵測影響組織之身分識別的潛在弱點，並設定自動修正原則為低、中、高的登入風險和使用者風險。  | |
-| 為[Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)和[商務用 Skype Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)**啟用新式驗證**。 新式驗證是使用 MFA 的必要條件。 根據預設，Office 2016 和2019用戶端、SharePoint 和商務 OneDrive 都會啟用新式驗證。 |  |
+| 為 [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online)和 [商務用 Skype Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx)**啟用新式驗證** 。 新式驗證是使用 MFA 的必要條件。 根據預設，Office 2016 和2019用戶端、SharePoint 和商務 OneDrive 都會啟用新式驗證。 |  |
 |||
 
 ## <a name="recommended-client-configurations"></a>建議的用戶端設定
@@ -60,7 +60,7 @@ ms.locfileid: "48463987"
 ### <a name="windows-devices"></a>Windows 裝置
 建議您) Windows 10 (版本2004或更新版本，因為 Azure 是用來為內部部署和 Azure AD 提供盡可能最平滑的 SSO 體驗。 工作或學校發行的裝置應該設定成直接加入 Azure AD，或者如果組織使用內部部署 AD 網域加入，這些裝置應 [設定為自動和以無訊息方式註冊 AZURE ad](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)。
 
-在 BYOD Windows 裝置中，使用者可以使用 [ **新增工作] 或 [學校帳戶**]。 請注意，Windows 10 裝置上的 Google Chrome 瀏覽器使用者需要 [安裝分機](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) ，以取得與 Microsoft Edge 使用者相同的平滑登入體驗。 此外，如果您的組織已加入網域的 Windows 8 或8.1 裝置，您可以為非 Windows 10 電腦安裝 Microsoft Workplace Join。 [下載套件以](https://www.microsoft.com/download/details.aspx?id=53554) 使用 Azure AD 註冊裝置。
+在 BYOD Windows 裝置中，使用者可以使用 [ **新增工作] 或 [學校帳戶** ]。 請注意，Windows 10 裝置上的 Google Chrome 瀏覽器使用者需要 [安裝分機](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) ，以取得與 Microsoft Edge 使用者相同的平滑登入體驗。 此外，如果您的組織已加入網域的 Windows 8 或8.1 裝置，您可以為非 Windows 10 電腦安裝 Microsoft Workplace Join。 [下載套件以](https://www.microsoft.com/download/details.aspx?id=53554) 使用 Azure AD 註冊裝置。
 
 ### <a name="ios-devices"></a>iOS 裝置
 建議您先在使用者裝置上安裝 [Microsoft 驗證應用程式](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) ，然後再部署條件式存取或 MFA 原則。 至少，當使用者要求使用者使用 Azure AD 登錄其裝置時，應安裝應用程式，方法是新增工作或學校帳戶，或安裝 Intune 公司入口網站應用程式，以將其裝置登記到管理中。 這取決於設定的條件式存取原則。
@@ -113,10 +113,10 @@ ms.locfileid: "48463987"
 
 - 使用 [AZURE AD 特權身分識別管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) 來減少持久管理帳戶的數目。 
 - 使用「特殊許可權[存取管理](../../compliance/privileged-access-management-overview.md)」來保護您的組織不會因可能使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。 
-- 建立並使用個別帳戶，只指派給[Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*的管理*。 管理員應該擁有自己的使用者帳戶，以進行一般非系統管理，且只有在必要時才使用系統管理帳戶，才可完成與其角色或工作職能相關聯的工作。 
+- 建立並使用個別帳戶，只指派給 [Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*的管理* 。 管理員應該擁有自己的使用者帳戶，以進行一般非系統管理，且只有在必要時才使用系統管理帳戶，才可完成與其角色或工作職能相關聯的工作。 
 - 遵循在 Azure AD 中保護特權帳戶的 [最佳作法](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) 。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [![步驟2：設定一般身分識別和存取條件式存取原則](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 

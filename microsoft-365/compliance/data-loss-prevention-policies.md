@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何識別、監控和自動保護 Office 365 中貴組織中的敏感資訊。
-ms.openlocfilehash: d1b82f1e5581e1d24284a549f3c9572e0f8343a3
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: 0817d48879fccbefcda22d677c85a250dc017dd0
+ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984937"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "48999489"
 ---
 # <a name="overview-of-data-loss-prevention"></a>資料外洩防護概觀
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -55,11 +55,11 @@ ms.locfileid: "48984937"
     
     您可以讓使用者了解 DLP 原則，協助他們符合規範，而不會封鎖其工作。 例如，如果某個使用者嘗試共用含有敏感資訊的文件，DLP 原則可以傳送電子郵件通知給他們，同時在文件庫的內容中顯示原則提示，允許他們因為正當商務理由而覆寫原則。 相同原則提示也會顯示在 Outlook 網頁版、Outlook、Excel、PowerPoint 及 Word。
     
-- **檢視 DLP 報告以了解有哪些內容符合您的組織的 DLP 原則。**
+- **檢視 DLP 警示和報告以了解有哪些內容符合貴組織的 DLP 原則。**
     
-    若要評估貴組織遵守 DLP 原則的情形，您可以查看符合原則或規則的數量。 如果 DLP 原則允許使用者覆寫原則提示並回報誤判，您也可以查看使用者回報的內容。
+    若要檢視與您 DLP 原則相關的警示和中繼資料，您可以使用 [DLP 警示管理儀表板](dlp-configure-view-alerts-policies.md)。 您也可以檢視原則比對報告，以評估貴組織遵守 DLP 原則的方式。 如果 DLP 原則允許使用者覆寫原則提示並回報誤判，您也可以檢視使用者回報的內容
     
-您可以在 Microsoft 365 安全性與合規性中心的 [資料外洩防護] 頁面上建立及管理 DLP 原則。
+您可以在 Microsoft 365 合規性中心的 [資料外洩防護] 頁面上建立及管理 DLP 原則。
   
 ![Office 365 安全性 &amp; 合規性中心內的資料外洩防護頁面](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
   
@@ -194,15 +194,17 @@ DLP 原則在尋找信用卡號碼等敏感性資訊類型時，並不只是尋�
   
 ![OneDrive 帳戶中的文件原則提示](../media/f9834d35-94f0-4511-8555-0fe69855ce6d.png)
 
- 若要深入了解 DLP 原則中的使用者通知和原則提示，請參閱 [使用通知和原則提示](use-notifications-and-policy-tips.md)。
+ 若要深入了解 DLP 原則中的使用者通知和原則提示，請參閱[使用通知和原則提示](use-notifications-and-policy-tips.md)。
 
-#### <a name="incident-reports"></a>事件報告
+#### <a name="alerts-and-incident-reports"></a>警示和事件報告
 
-規則相符時，您可以將含有事件詳細資料的事件報告傳送給您的法務人員 (或是您選擇的任何人)。 這份報告包含相符項目的相關資訊、符合規則的實際內容，以及上次修改內容的人員名稱。 若是電子郵件訊息，報告則會以附件的方式提供與 DLP 原則相符的原始郵件。
+規則相符時，您可以將含有警示詳細資料的警示電子郵件傳送給您的法務人員 (或是您選擇的任何人)。 這份警示電子郵件將帶有 [DLP 警示管理儀表板](dlp-configure-view-alerts-policies.md)的連結，法務人員可以打開連結以檢視警示和活動的詳細資料。 儀表板包含觸發警示的事件詳細資料，以及相符的 DLP 原則詳細資料和已偵測到的敏感性內容。
+
+此外，您也可以傳送事件詳細資料的事件報告。 這份報告包含相符項目的相關資訊、符合規則的實際內容，以及上次修改內容的人員名稱。 若是電子郵件訊息，報告則會以附件的方式提供與 DLP 原則相符的原始郵件。
   
-![設定事件報告的頁面](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)
+![設定事件報告的頁面](../media/Alerts-and-incident-report.png)
 
-DLP 掃描電子郵件的方式不同於 SharePoint Online 或商務用 OneDrive 中的項目。 在 SharePoint Online 和商務用 OneDrive 中，DLP 會掃描現有項目以及新的項目，並在發現相符項目時產生事件報告。 在 Exchange Online 中，DLP 僅會掃描新的電子郵件訊息，並在原則相符時產生報告。 DLP *_不會_* 掃描或比對信箱或封存內儲存的既有電子郵件項目。
+DLP 掃描電子郵件的方式不同於 SharePoint Online 或商務用 OneDrive 中的項目。 在 SharePoint Online 和商務用 OneDrive 中，DLP 會掃描現有項目以及新的項目，並在發現相符項目時產生警示和事件報告。 在 Exchange Online 中，DLP 僅會掃描新的電子郵件訊息，並在原則相符時產生報告。 DLP *_不會_* 掃描或比對信箱或封存內儲存的既有電子郵件項目。
   
 ## <a name="grouping-and-logical-operators"></a>群組和邏輯運算子
 

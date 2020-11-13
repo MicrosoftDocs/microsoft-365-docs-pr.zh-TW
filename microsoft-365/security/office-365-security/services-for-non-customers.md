@@ -16,12 +16,12 @@ ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
 description: 為了協助維護使用者對電子郵件使用的信任，Microsoft 將各種原則和技術放在一起，以協助保護我們的使用者。
-ms.openlocfilehash: e9389d52ee1d6c1c0bbab8630778749a6ed6005f
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 478f94d2ed1a03253168486d48fb2b2df57a6a5e
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199574"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021022"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>將郵件傳送至 Microsoft 365 的非客戶服務
 
@@ -38,7 +38,7 @@ ms.locfileid: "48199574"
 
 |服務|效益|
 |---|---|
-|這個線上說明內容|提供： <br/> 與提供與 EOP 使用者通訊相關之任何問題的起點。 <br/><br/> 包含與我們的原則及需求有關的簡易線上指南。 <br/><br/> Microsoft 所採用的垃圾郵件篩選器和驗證技術的概述。|
+|這個線上說明內容|提供： <ul><li>與提供與 EOP 使用者通訊相關之任何問題的起點。</li><li>包含與我們的原則及需求有關的簡易線上指南。</li><li>Microsoft 所採用的垃圾郵件篩選器和驗證技術的概述。</li><ul>|
 |[Microsoft 支援](#microsoft-support)|提供傳送問題的自我協助和上報支援。|
 |[Anti-Spam IP 取消列出入口網站](#anti-spam-ip-delist-portal)|用於提交 IP 取消列出要求的工具。 在提交此要求之前，寄件者的責任是確保任何來自于問題的 IP 的後續郵件都不會遭到濫用或惡意。|
 |[來自 Exchange Online 的垃圾郵件的濫用和垃圾郵件報告](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|讓垃圾郵件和其他有害的郵件無法從 Exchange Online 傳送，並打亂網際網路和您的郵件系統。|

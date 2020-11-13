@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b77313a18a5744549e492de991e282bc34dbb6da
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002414"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49021082"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正由整備評估工具發現的問題
 
@@ -29,6 +29,8 @@ ms.locfileid: "49002414"
 |錯誤 | 您所使用的 Azure Active Director (AD) 角色，沒有足夠的許可權可執行這種檢查。 |
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
+
+您可以在 Microsoft 端點[管理員管理中心存取 Intune 設定。](https://endpoint.microsoft.com)
 
 ### <a name="autopilot-deployment-profile"></a>Autopilot 部署設定檔
 
@@ -214,7 +216,7 @@ Microsoft 受管理的電腦不支援 Azure AD 組織所在的一或多個國家
 
 **諮詢**
 
-您應該準備要讓 Microsoft 受管理的桌面使用者擁有的應用程式清單。 由於這些應用程式必須透過 Intune 部署，因此請評估重新使用現有的 Intune 應用程式。 考慮使用公司入口 (請參閱在裝置和註冊狀態頁面 [上安裝 Intune 公司入口網站](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) (ESP) ，將應用程式發佈至您的使用者。 如需詳細資訊，請參閱 [Microsoft 受管理的桌面](apps.md) 和初次執行體驗中的應用程式 [與 Autopilot 和註冊狀態頁面](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)。
+您應該準備要讓 Microsoft 受管理的桌面使用者擁有的應用程式清單。 因為這些應用程式必須透過 Intune 部署，所以請評估重新使用現有的 Intune 應用程式。 考慮使用公司入口 (請參閱在裝置和註冊狀態頁面 [上安裝 Intune 公司入口網站](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) (ESP) ，將應用程式發佈至您的使用者。 如需詳細資訊，請參閱 [Microsoft 受管理的桌面](apps.md) 和初次執行體驗中的應用程式 [與 Autopilot 和註冊狀態頁面](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)。
 
 您可以要求 Microsoft 帳戶代表在 Microsoft 端點 Configuration Manager 中查詢，以識別準備好要遷移至 Intune 或需要調整的應用程式。
 
@@ -247,6 +249,7 @@ Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 設定
 
+您可以在 [azure 入口網站](https://portal.azure.com)中存取 Azure Active Directory 設定。
 
 ### <a name="ad-hoc-subscriptions"></a>專用訂閱
 
@@ -326,7 +329,7 @@ Microsoft 受管理的桌面使用者在註冊後，不會對其 Microsoft 受�
 
 ### <a name="onedrive"></a>OneDrive
 
-[ **僅允許在加入特定網域的電腦上進行同步** 處理] 設定會與 Microsoft 受管理的桌面產生衝突。
+[ **僅允許在加入特定網域的電腦上進行同步** 處理] 設定會與 Microsoft 受管理的桌面產生衝突。 您可以在 OneDrive 系統 [管理中心](https://admin.onedrive.com)存取 OneDrive 設定。
 
 **諮詢**
 

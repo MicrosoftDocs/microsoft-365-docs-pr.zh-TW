@@ -14,12 +14,12 @@ ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解 Microsoft Exchange Online Protection (EOP) 系統管理員可以使用的報告和疑難排解工具。
-ms.openlocfilehash: 9a8eb8e35ef73eb27604eef4bf701982b1d51710
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 856e99e55e6b67d1d22a30e2f55f60857eb4fe75
+ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845549"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49020888"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>EOP 中的報告和郵件追蹤
 
@@ -83,8 +83,8 @@ ms.locfileid: "48845549"
 |報表類型|資料可用時間 (回顧期間)|延遲|
 |---|---|---|
 |郵件保護摘要報告|90 天|郵件資料彙總大部分會在 24 到 48 小時內完成。部分次要的增量彙總變更最多存在 5 天。|
-|郵件保護詳細資料包告|90 天|針對 7 天內的詳細資料，資料應於 24 小時內出現，但可能要等到 48 小時後才完成。部分次要的增量變更最多存在 5 天。 <br/><br/> 若要檢視超過 7 天之郵件的詳細資料報告，結果可能需要幾個小時。|
-|郵件追蹤資料|90 天|針對 7 天內的郵件執行郵件追蹤時，郵件應於 5 到 30 分鐘內出現。<br/><br/> 針對超過 7 天的郵件執行郵件追蹤時，結果可能需要幾個小時。|
+|郵件保護詳細資料包告|90 天|針對 7 天內的詳細資料，資料應於 24 小時內出現，但可能要等到 48 小時後才完成。部分次要的增量變更最多存在 5 天。 <p> 若要檢視超過 7 天之郵件的詳細資料報告，結果可能需要幾個小時。|
+|郵件追蹤資料|90 天|針對 7 天內的郵件執行郵件追蹤時，郵件應於 5 到 30 分鐘內出現。<p> 針對超過 7 天的郵件執行郵件追蹤時，結果可能需要幾個小時。|
 |
 
 > [!NOTE]
