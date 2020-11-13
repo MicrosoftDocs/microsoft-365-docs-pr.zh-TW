@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 瞭解如何將您的企業從 Microsoft 365 商務版移至 Microsoft 365 E3。
-ms.openlocfilehash: 874da0d35759c8af4c3ee2ca4a1bdfa90a91627c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2b15d20e3ae1ad0bef871b139e61abf3ba260729
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842193"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071420"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>從 Microsoft 365 商務進階版移轉至 Microsoft 365 E3
 
@@ -57,7 +57,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 | Teams    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
 | 商務用 OneDrive    | 每個使用者 1 TB 的儲存空間限制    | 無限制 | 
 | Yammer、SharePoint 線上、Planner、Stream    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
-| Outlook 客戶經理，MileIQ    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | | 
+| MileIQ    | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | | 
 | **威脅防護**        | | | 
 | 攻擊面降減功能    | [請參閱此清單](#threat-protection) | Microsoft Edge 的硬體隔離的企業管理 | 
 | 適用于 Office 的 Defender 365 方案1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
@@ -106,7 +106,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 您可以開始針對超過10個應用程式使用雲端應用程式探索、Azure AD Connect Health 和 SSO。
 
 >[!Note]
->遷移至 Microsoft 365 E3 的使用者無法再使用 Outlook 客戶主管和 MileIQ。
+>遷移至 Microsoft 365 E3 的使用者無法再使用 MileIQ。
 >
 
 <a name="threat-protection"></a>

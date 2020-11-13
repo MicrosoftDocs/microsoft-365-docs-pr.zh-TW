@@ -7,12 +7,12 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 225cb8b74a50fa8308cc14e8ad35283e6a7aa044
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+ms.openlocfilehash: 48c69a71a98e381123a8f87acc20a34eb6e99806
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279574"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071486"
 ---
 # <a name="register-new-devices-yourself"></a>自行註冊新裝置
 
@@ -47,13 +47,15 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 1.  以系統管理權限開啟 PowerShell 提示字元。
 2.  執行 `Install-Script -Name Get-WindowsAutoPilotInfo`
 3.  執行 `powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo -OutputFile <path>\hardwarehash.csv`
+4.  執行 `powershell -ExecutionPolicy restricted` 以防止後續的不受限制的腳本執行。
+
 
 #### <a name="flash-drive-method"></a>快閃磁碟機方法
 
 1. 在您要註冊的裝置以外的裝置上，插入 USB 磁碟機。
 2. 以系統管理權限開啟 PowerShell 提示字元。
 3. 執行 `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. 開啟您要註冊的裝置，但*請勿開始設定體驗*。 如果您不小心開始設定體驗，則必須重設裝置或重新製作其映像。
+4. 開啟您要註冊的裝置，但 *請勿開始設定體驗* 。 如果您不小心開始設定體驗，則必須重設裝置或重新製作其映像。
 5. 插入 USB 磁碟機，然後按 SHIFT + F10。
 6. 以系統管理權限開啟 PowerShell 提示字元，然後執行 `cd <pathToUsb>`。
 7. 執行 `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
@@ -73,7 +75,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
 
-在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的左導覽窗格中，選取 [ **裝置** ]。 尋找功能表中的 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 在 [Microsoft 受管理的電腦裝置] 工作區中，選取 [ **+ 註冊裝置** ]，以即時註冊新裝置。
+在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的左導覽窗格中，選取 [ **裝置** ]。 尋找功能表中的 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置** ]。 在 [Microsoft 受管理的電腦裝置] 工作區中，選取 [ **+ 註冊裝置** ]，以即時註冊新裝置。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -83,8 +85,8 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 請遵循下列步驟：
 
-1. 在 [檔案上傳]**** 中，提供您先前建立的 CSV 檔案路徑。
-3. 選取 [註冊裝置]****。 系統會將裝置新增至 [裝置] 刀鋒視窗**** 上標示為 [註冊擱置]**** 的裝置清單。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
+1. 在 [檔案上傳] 中，提供您先前建立的 CSV 檔案路徑。
+3. 選取 [註冊裝置]。 系統會將裝置新增至 [裝置] 刀鋒視窗上標示為 [註冊擱置]的裝置清單。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
 
 
 您可以在主頁面上監視裝置註冊的進度。 其回報的可能狀態包括：
@@ -119,7 +121,6 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 > 將裝置交給使用者之前，請確認您已取得並套用[適合該使用者的授權](../get-ready/prerequisites.md)。
 
 如果已套用所有授權，您可以[讓使用者準備好使用裝置](get-started-devices.md)，然後使用者即可啟動裝置並繼續進行 Windows 設定體驗。
-
 
 
 

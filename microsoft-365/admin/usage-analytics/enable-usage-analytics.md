@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: 瞭解如何使用 Power BI 中的 Microsoft 365 流量分析範本應用程式，來開始收集租使用者的資料。
-ms.openlocfilehash: 347256fa7acaae18cd31f0c8c6b7eca20ad2e9dd
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: cda5931e81f7ea13208825afa658f1c672a2f326
+ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941328"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071452"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>啟用 Microsoft 365 使用情況分析
 
@@ -92,7 +92,7 @@ Microsoft 365 美國政府社區尚無可用的 microsoft 365 使用方式分析
   
 8. 範本應用程式具現化後，Microsoft 365 流量分析儀表板會出現在 web 上的 Power BI 中。 儀表板的初次載入需要2到30分鐘。
   
-所有報告都提供租使用者層級匯總。 **使用者層級的詳細資料只會在 [行事曆] 月的第一天或第15天之後變為使用** 。 這會影響所有「使用者活動的報表。 如需如何查看和使用這些報告的秘訣，請參閱 [流覽並使用 Microsoft 365 使用方式分析中的報告](navigate-and-utilize-reports.md) 。
+在 [加入] 中的所有報告中，均提供租使用者層級匯總。 **使用者層級的詳細資料只會在下一個行事曆中的第五個月使用** 。 這會影響所有「使用者活動」下的報告 (請參閱 [流覽並利用 Microsoft 365 使用方式分析中的報告](navigate-and-utilize-reports.md) ，以取得如何查看和使用這些報告的秘訣) 。
     
 ## <a name="make-the-collected-data-anonymous"></a>將收集的資料匿名化
 
