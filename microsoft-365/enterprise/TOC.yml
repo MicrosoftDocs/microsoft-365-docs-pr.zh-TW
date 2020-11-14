@@ -415,8 +415,6 @@
           href: manage-microsoft-365-groups.md
         - name: 治理
           href: manage-microsoft-365-identity-governance.md
-        - name: 復原使用者信箱中刪除的郵件
-          href: recover-deleted-items-in-a-mailbox.md
         - name: 目錄同步處理
           items:
             - name: 檢視狀態
@@ -604,7 +602,7 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: 群組
           items:
-            - name: 維護群組成員資格
+            - name: 維護安全性群組成員資格
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: 管理 Microsoft 365 群組
               href: manage-microsoft-365-groups-with-powershell.md
