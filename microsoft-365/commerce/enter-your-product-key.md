@@ -15,38 +15,34 @@ ms.collection:
 - commerce
 - Adm_NonTOC
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
 description: 瞭解如何兌換在零售店購買的 Microsoft 365 商務標準產品金鑰。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 9dcf38937e6140f1b0b20688d1dac0a9f3962cbe
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1c647efaa880096a9fc7713aa28960d563eff69d
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638360"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072744"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>輸入 Microsoft 365 商務標準的產品金鑰
 
-如果您是從零售商店購買 Microsoft 365 商務標準，本文可協助您啟動訂閱。 
+如果您是從零售商店購買 Microsoft 365 商務標準，本文可協助您啟動訂閱。
   
  **需要其他內容嗎？**
- **如需 microsoft 365 系列或 microsoft 365 個人的協助**，請參閱搭配 [Office 使用產品金鑰](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
+ **如需 microsoft 365 系列或 microsoft 365 個人的協助** ，請參閱搭配 [Office 使用產品金鑰](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx)。  
  **大量授權客戶？** 如果您是透過 [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298)購買 microsoft 365 for business，請參閱文章， [輸入從 Microsoft 開放購買的產品金鑰](purchases-from-microsoft-open.md)。
   
 ## <a name="activate-a-new-subscription"></a>啟動新的訂閱
 
-1. 移至 <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">office.com/setupkey</a>。
+1. 請移至 <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">https://microsoft365.com/setupbusiness</a>。
 
-2. 輸入您的產品金鑰，然後選取 **[下一步]**。
+2. 輸入您的產品金鑰，然後選取 **[下一步]** 。
 
-3. 輸入您的姓名、工作電子郵件地址、商務電話號碼、公司名稱及國家或地區，然後選取 **[下一步]**。
+3. 輸入您的姓名、工作電子郵件地址、商務電話號碼、公司名稱及國家或地區，然後選取 **[下一步]** 。
 
 4. 輸入電話號碼，以接收文字或撥打驗證身分識別。
 
@@ -59,7 +55,7 @@ ms.locfileid: "48638360"
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>擴充到期日或新增授權至現有訂閱
 
-若要使用產品金鑰來擴充到期日或新增授權至現有的 Microsoft 365 商務標準訂閱，您需要同一個 Microsoft 365 方案的新的和未使用的金鑰。 輸入您原始的 Microsoft 365 產品金鑰將無法運作，因為已兌換的金鑰無法再使用。 請參閱 [新增授權給或擴充使用產品金鑰支付的訂閱](licenses/add-licenses-using-product-key.md)。
+若要將到期日或新增授權新增至現有的 Microsoft 365 商務標準訂閱，請針對相同的 Microsoft 365 方案，使用新的和未使用的金鑰。 輸入您原始的 Microsoft 365 產品金鑰將無法運作，因為已兌換的金鑰無法再使用。 請參閱 [新增授權給或擴充使用產品金鑰支付的訂閱](licenses/add-licenses-using-product-key.md)。
 
 ## <a name="whats-next"></a>下一步是什麼？
 
