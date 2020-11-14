@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用合規性管理員快速入門手冊可協助您深入瞭解、取得設定，以及使用合規性管理員。
-ms.openlocfilehash: 895f03482c0af9603aa96d907d7339a853ef5e9d
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: 9f24a0495b7d453b70a28ad54d76ccf835000ed6
+ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791789"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49071968"
 ---
 # <a name="compliance-manager-quickstart"></a>合規性管理員快速入門
 
@@ -43,6 +43,7 @@ ms.locfileid: "48791789"
 - [篩選儀表板視圖](compliance-manager-setup.md#filtering-your-dashboard-view)
 - [深入瞭解改進動作](compliance-manager-setup.md#improvement-actions-page)
 - [瞭解評估](compliance-manager.md#assessments)
+- [使用 Microsoft 規範設定管理員快速掃描環境](compliance-manager-mcca.md)
 
 ## <a name="ramping-up-configure-compliance-manager-to-manage-your-compliance-activities"></a>斜向向上：設定合規性管理員以管理您的相容性活動
 

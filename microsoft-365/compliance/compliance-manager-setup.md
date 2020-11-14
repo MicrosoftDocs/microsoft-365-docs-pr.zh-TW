@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 設定 Microsoft 合規性管理員使用者許可權和角色，以及設定自動的動作測試。 管理使用者記錄並篩選儀表板視圖。
-ms.openlocfilehash: 141ddc8ac371b1a36c69ee79b5438408f8da19e8
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: d6dd7263779ae7f3e9366c0984360c191a62d5e8
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791891"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072888"
 ---
 # <a name="get-started-with-compliance-manager"></a>開始使用 [合規性管理員]
 
@@ -30,9 +30,9 @@ ms.locfileid: "48791891"
 
 ## <a name="who-can-access-compliance-manager"></a>誰可以存取合規性管理員
 
-合規性管理員可供使用 Office 365 和 Microsoft 365 授權的組織使用。 評估可用性和管理功能取決於您的授權合約。  [查看服務說明的詳細資料](https://go.microsoft.com/fwlink/?linkid=2132371)。
+合規性管理員可供使用 Office 365 和 Microsoft 365 授權的組織使用，以及向美國政府社區雲端 (GCC) 適中的客戶。 評估可用性和管理功能取決於您的授權合約。  [查看服務說明的詳細資料](https://go.microsoft.com/fwlink/?linkid=2132371)。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 您組織的 Microsoft 365 全域管理員可能是第一個存取合規性管理員的使用者。 我們建議全域管理員登入，並設定第一次造訪合規性管理員時所述的使用者權限。
 
@@ -355,5 +355,5 @@ Microsoft 365 合規性中心的合規性管理員設定可讓您啟用及停用
 
 **深入瞭解：** 請 [參閱如何使用評估範本](compliance-manager-templates.md)。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 [設定評估](compliance-manager-assessments.md)，以自訂合規性管理員。

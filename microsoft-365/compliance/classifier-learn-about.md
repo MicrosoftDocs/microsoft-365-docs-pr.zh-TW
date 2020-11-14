@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是將它肯定和否定的範例，以查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護 (DLP) 或保留原則。
-ms.openlocfilehash: 7abfbe101508d24e58464ff38b14ab87447001f0
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: d26e33efea09c2afb33c2b5e5ade264cb8bfaee6
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379306"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072942"
 ---
 # <a name="learn-about-classifiers-preview"></a>瞭解 (預覽的分類器) 
 
@@ -68,10 +68,10 @@ ms.locfileid: "48379306"
 Microsoft 365 隨附五個預先訓練的分類器：
 
 > [!CAUTION]
-> 我們正在取代 **冒犯性語言** 的預先訓練分類符，因為它已經產生大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用 **威脅**、 **猥褻**和 **騷擾** 預先訓練的分類器。
+> 我們正在取代 **冒犯性語言** 的預先訓練分類符，因為它已經產生大量的誤報。 請勿使用它，如果您目前使用它，您應該將商務程式移出它。 建議您改為使用 **威脅** 、 **猥褻** 和 **騷擾** 預先訓練的分類器。
 
-- **簡歷**：偵測屬於申請人個人、教育、專業資格、工作經驗及其他個人識別資訊的文字帳戶的專案
-- **原始程式碼**：偵測包含一組指令和語句的專案，這些專案是以前25種使用的電腦程式設計語言所撰寫的 GitHub
+- **簡歷** ：偵測屬於申請人個人、教育、專業資格、工作經驗及其他個人識別資訊的文字帳戶的專案
+- **原始程式碼** ：偵測包含一組指令和語句的專案，這些專案是以前25種使用的電腦程式設計語言所撰寫的 GitHub
     - ActionScript
     - C
     - C#
@@ -99,11 +99,11 @@ Microsoft 365 隨附五個預先訓練的分類器：
 > [!NOTE]
 > 原始程式碼經過訓練，可在大量文字是原始程式碼時進行偵測。 它不會偵測到以純文字交錯的原始程式碼文字。
 
-- **騷擾**：偵測特定類別的冒犯性語言的文字專案，這些專案會根據下列特性，針對一或多個個人設定相關的冒犯性語言：種族、ethnicity、宗教、本國原產地、性別、性方向、年齡、傷殘
-- **猥褻**語言：偵測特定類別的冒犯性語言的文字專案，包含 embarrass 大部分人員的運算式
-- **威脅**：偵測特定類別的冒犯性語言的文字專案與威脅以認可暴力或對人員或財產造成實體損毀或損毀的威脅
+- **騷擾** ：偵測特定類別的冒犯性語言的文字專案，這些專案會根據下列特性，針對一或多個個人設定相關的冒犯性語言：種族、ethnicity、宗教、本國原產地、性別、性方向、年齡、傷殘
+- **猥褻** 語言：偵測特定類別的冒犯性語言的文字專案，包含 embarrass 大部分人員的運算式
+- **威脅** ：偵測特定類別的冒犯性語言的文字專案與威脅以認可暴力或對人員或財產造成實體損毀或損毀的威脅
 
-這些會出現在**Microsoft 365 規範中心**  >  **資料分類 (預覽) **  >  **Trainable 的分類**器視圖中，狀態為 `Ready to use` 。
+這些會出現在 **Microsoft 365 規範中心**  >  **資料分類 (預覽)**  >  **Trainable 的分類** 器視圖中，狀態為 `Ready to use` 。
 
 ![分類器-預先訓練的分類器](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -113,9 +113,6 @@ Microsoft 365 隨附五個預先訓練的分類器：
 ### <a name="custom-classifiers"></a>自訂分類器
 
 當預先訓練的分類器不符合您的需求時，您可以建立及訓練您自己的分類器。 建立您自己的工作會相當多，但他們會更適合組織的需求。
-
-> [!IMPORTANT]
-> 根據預設，只有建立自訂分類器的使用者可以訓練及審核該分類器所進行的預測。 如果您想要讓其他人訓練及審閱分類器預測，請參閱 [授與其他人訓練及審查許可權](classifier-get-started-with.md#give-others-train-and-review-rights)。
 
 #### <a name="process-flow-for-creating-custom-classifiers"></a>建立自訂分類程式的程式流程
 
@@ -129,11 +126,11 @@ Microsoft 365 隨附五個預先訓練的分類器：
 
 ![分類器重新培訓工作流程](../media/classifier-retraining-workflow.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [保留標籤](retention.md)
 - [資料外洩防護 (DLP)](data-loss-prevention-policies.md)
 - [敏感性標籤](sensitivity-labels.md)
-- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [檔指紋列印](document-fingerprinting.md)
 - [完全相符的資料](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

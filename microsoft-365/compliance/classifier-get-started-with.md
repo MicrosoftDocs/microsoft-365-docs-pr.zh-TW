@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 分類器是一種工具，可讓您訓練以辨識各種類型的內容，其範例可供您查看。 本文說明如何建立及訓練自訂的分類器，以及如何重新導流以提高精確度。
-ms.openlocfilehash: f0d3659c1ee03fe69a5513f24d15b295400a24dc
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 9fe50f7faada77492fd93a86d0c3549cc8e1d361
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906344"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072962"
 ---
 # <a name="get-started-with-trainable-classifiers-preview"></a>開始使用可訓練分類器（預覽版）
 
@@ -53,7 +53,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 - 通訊相容性原則案例：內幕人士風險管理管理員、主管審查管理員 
 
 > [!IMPORTANT]
-> 根據預設，只有建立自訂分類器的使用者可以訓練及審核該分類器所進行的預測。 如果您想要讓其他人訓練及審閱分類器預測，請參閱 [授與其他人訓練及審查許可權](#give-others-train-and-review-rights)。
+> 根據預設，只有建立自訂分類器的使用者可以訓練及審核該分類器所進行的預測。
 
 ## <a name="prepare-for-a-custom-trainable-classifier"></a>準備自訂 trainable 分類器 
 
@@ -156,21 +156,3 @@ Trainable 分類器處理足夠的肯定樣本來建立預測模型之後，您�
 20. 發佈分類器。
 
 21. 一旦發佈您的分類符，就會在[使用靈敏度標籤的 Office 自動標籤](apply-sensitivity-label-automatically.md)中提供條件，根據狀況和[通訊規範](communication-compliance.md)[自動套用保留標籤原則](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)。
-
-## <a name="give-others-train-and-review-rights"></a>讓其他人訓練和審閱許可權
-
-使用此程式可提供其他人訓練、審閱及調整自訂 trainable 分類器的許可權。  
- 
-1. 就像是分類器的建立者，全域系統管理員或 eDiscovery 系統管理員會使用 PowerShell，使用 [connect To Security & 規範中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps&preserve-view=true)中的程式來連接至規範中心。
-
-2. 執行此命令︰
-
-   ```powershell
-   Add-ComplianceCaseMember -Case "<classifier name>" -Member "<user or role group>"
-   ```
-   
-   例如：
-   
-   `Add-ComplianceCaseMember -Case "Financial Contract Classifier" -Member johnevans@contoso.com`
-
-   您可以多次執行此命令來新增多個使用者。 請注意，您只能將 Exchange Online Protection (EOP) 角色群組和 Azure 角色群組。
