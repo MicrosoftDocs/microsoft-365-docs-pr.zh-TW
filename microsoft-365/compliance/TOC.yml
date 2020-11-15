@@ -914,6 +914,8 @@
           href: compliance-manager-improvement-actions.md
         - name: 如何計算合規性分數
           href: compliance-score-calculation.md
+        - name: 合規性設定分析器工具
+          href: compliance-manager-mcca.md
         - name: 常見問題集 (FAQ)
           href: compliance-manager-faq.md
         - name: 合規性管理員 (傳統)
