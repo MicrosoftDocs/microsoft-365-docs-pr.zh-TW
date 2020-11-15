@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 端點資料外洩防護可擴充檔案活動的監視以及這些檔案到端點的保護動作。在 Microsoft 365 合規性中心解決方案中可看到檔案 '
-ms.openlocfilehash: 0f69261cb5617c7d6de7900b85a5a254a04bc45e
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: e469872dac19db08f7b525c8a5ada725c75bfa10
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999457"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49072972"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>深入了解 Microsoft 365 端點資料外洩防護
 
@@ -147,13 +147,13 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 
 現在您已經瞭解了端點 DLP，接下來的步驟如下：
 
-1) [Microsoft 端點資料外洩防護快速入門（預覽版）](endpoint-dlp-getting-started.md)
-2) [使用 Microsoft 端點資料外洩防護（預覽版）](endpoint-dlp-using.md)
+1) [Microsoft 端點資料外洩防護快速入門](endpoint-dlp-getting-started.md)
+2) [使用 Microsoft 端點資料外洩防護](endpoint-dlp-using.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [Microsoft 端點資料外洩防護快速入門（預覽版）](endpoint-dlp-getting-started.md)
-- [使用 Microsoft 端點資料外洩防護（預覽版）](endpoint-dlp-using.md)
+- [Microsoft 端點資料外洩防護快速入門](endpoint-dlp-getting-started.md)
+- [使用 Microsoft 端點資料外洩防護](endpoint-dlp-using.md)
 - [資料外洩防護概觀](data-loss-prevention-policies.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)

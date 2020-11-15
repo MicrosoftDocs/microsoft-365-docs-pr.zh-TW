@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 0dfccef331c279354f066ebffa80143d43192472
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: bedf82d9d53ef14755651d5994e6c5c269cf5d6e
+ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920523"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "49073134"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
@@ -204,14 +204,7 @@ Exchange 公用資料夾、Skype、Teams 和 Yammer 訊息不支援保留標籤�
     
 - 如果有多項規則會指派自動套用標籤，且內容符合多項規則的條件，則會指派最舊規則 ( 依照建立日期) 的保留標籤。
     
-若要了解如何以及為何套用某個保留標籤 (而非其他標籤)，請務必了解明確指派標籤與隱含指派標籤之間的差異：
-
-- 從標籤原則套用的保留標籤會明確指派
-- 從自動套用原則自動套用的保留標籤會被隱式指派
-
-明確指派的保留標籤會優先於隱式指派的保留標籤。 如需詳細資訊，請參閱此頁面上的[原則保留或何者優先？](retention.md#the-principles-of-retention-or-what-takes-precedence)一節。
-
-針對 SharePoint，當您為 SharePoint 文件庫、資料夾或文件集中的所有內容設定預設標籤時，也可以隱含指派保留標籤。 針對此案例，自動套用的標籤將優先於預設標籤，但若要完整了解使用預設標籤時的所有結果，請參閱[對 SharePoint 文件庫、資料夾或文件集中的所有內容套用預設保留標籤](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)一節中的資訊。 
+若要完整了解使用預設標籤時的所有結果，請參閱[對 SharePoint 文件庫、資料夾或文件集中的所有內容套用預設保留標籤](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)一節中的資訊。
 
 #### <a name="monitoring-retention-labels"></a>監視保留標籤
 

@@ -8,24 +8,24 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.author: daniha
+ms.author: siosulli
 author: DaniHalfin
 manager: dansimp
 audience: itpro
 ms.collection:
 - GDPR
 - M365-security-compliance
-ms.openlocfilehash: 5d30440d0051f4ec678effac657808853c7a6515
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: a31ccc8cab6995e0647e397be4b869e48da599b4
+ms.sourcegitcommit: e03bc2945e63f7f2638257e530056ae9283b45d9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305003"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "49070887"
 ---
 # <a name="data-protection-impact-assessments-guidance-for-data-controllers-using-microsoft-data-processor-service-for-windows-enterprise"></a>資料保護影響評估：給使用 Microsoft 企業版的 Windows 資料處理者服務之資料控制器的指引
 
 >[!NOTE]
->本主題適用於 Windows 企業版預覽計畫的資料處理者服務中的參與者，且需要接受特定使用條款。 若要深入了解該計畫並同意使用條款，請參閱 [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
+>本主題適用於 Windows 企業版預覽計畫的資料處理者服務中的參與者，且需要接受特定使用條款。如需計畫詳細資訊，並同意條款之使用，請參閱 [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview)。
 
 在一般資料保護法規 (GDPR) 規範下，資料控制者需要為「可能導致自然人之權利和自由高風險」的處理作業準備資料保護影響評估 (DPIA)。 Windows 企業版自身的資料處理者服務中沒有任何固有的功能，因此需要使用資料控制器建立 DPIA。 相反地，是否需要 DPIA 會視資料控制器部署、設定及使用 Windows 企業版資料處理者服務的方式而有所不同。 
 
@@ -64,7 +64,7 @@ GDPR 第 35 條規定，「如果某種處理，特別是使用新技術，並�
 |:---|:---|:--|
 |**DPIA 的要素**|**Windows 企業版資料處理者服務的相關資訊**| |
 | 處理的目的 | 使用 Windows 企業版資料處理者服務進行處理診斷資料的目的取決於進行實作、設定及使用的控制者。 <br><br> 根據[線上服務條款 (OST)](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46) 的規定，Microsoft 作為資料處理者，處理客戶資料僅為向我們的客戶 (資料控制者) 提供所要求的服務。 Microsoft 不會將客戶資料或任何衍生的資料用於廣告或類似的商業用途。 |
-| 處理的個人資料類別 | **客戶資料** - 由客戶本身或客戶代表，透過企業服務所提供給 Microsoft 的所有資料，包括所有文字、音訊、視訊或影像檔案和軟體。 客戶資料包含的可識別資訊 (例如：Azure Active Directory 中的使用者名稱和連絡人資訊，或透過 Windows 診斷資料提供的裝置資訊)。 <br><br> **系統產生的記錄** - 由 Microsoft 所產生，且協助 Microsoft 向使用者提供企業服務的資料。 系統產生的資料主要包含經過假名化處理的資料，例如唯一識別碼，由系統所產生，無法單獨用來識別個人，但可用來向使用者提供企業服務。 系統產生的資料也可能包含使用者的身分識別資訊 (例如使用者名稱)。 <br><br> **支援資料**：為了獲得線上服務的技術支援，由客戶或代表客戶 (或客戶授權 Microsoft 從線上服務取得) 透過與 Microsoft 的合作向 Microsoft 提供的資料。 <br><br> 如需有關 Windows 企業版資料處理者服務的處理資料詳細資訊，請參閱[線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)以及 [Microsoft 信任中心](https://www.microsoft.com/trustcenter)。 |
+| 處理的個人資料類別 | **客戶資料** - 由客戶本身或客戶代表，透過企業服務所提供給 Microsoft 的所有資料，包括所有文字、音訊、視訊或影像檔案和軟體。 客戶資料包含的可識別資訊 (例如：Azure Active Directory 中的使用者名稱和連絡人資訊，或透過 Windows 診斷資料提供的裝置資訊)。 <br><br> **系統產生的記錄** - 由 Microsoft 所產生，且協助 Microsoft 向使用者提供企業服務的資料。 系統產生的資料主要包含經過假名化處理的資料，例如唯一識別碼，由系統所產生，無法單獨用來識別個人，但可用來向使用者提供企業服務。 系統產生的資料也可能包含使用者的身分識別資訊 (例如使用者名稱)。 <br><br> **支援資料** ：為了獲得線上服務的技術支援，由客戶或代表客戶 (或客戶授權 Microsoft 從線上服務取得) 透過與 Microsoft 的合作向 Microsoft 提供的資料。 <br><br> 如需有關 Windows 企業版資料處理者服務的處理資料詳細資訊，請參閱[線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)以及 [Microsoft 信任中心](https://www.microsoft.com/trustcenter)。 |
 | 資料保留 | Microsoft 將在客戶使用線上服務的權利期間保留及處理客戶資料，直到客戶擷取資料或根據 OST 條款刪除客戶資料。 在客戶訂閱期間，客戶可隨時匯出儲存在 Windows 企業版資料處理者服務中的客戶資料。 客戶可以使用 [Windows 企業版資料處理者服務資料主體要求 GDPR 文件](https://servicetrust.microsoft.com/ViewPage/GDPRDSR) 中描述的功能，根據資料主體要求刪除個人資料。
 | 個人資料的位置和傳輸 | Windows 企業版資料處理者服務的客戶資料位於美國的 Microsoft 資料中心。 |
 | 與第三方共用資料 | Microsoft 與充當我們子處理者 (也就是處理個人資料的次承攬人) 的第三方共用資料，以支援客戶、技術支援、服務維護及其他操作等功能。接收 Microsoft 傳輸的客戶資料或支援資料的所有次承攬人，都會與 Microsoft 達成書面協議，提供的保護不低於[線上服務條款](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=46)中的資料保護條款。所有共用客戶資料或支援資料的第三方次承攬人都納入[次承攬人清單](https://www.microsoft.com/trustcenter/privacy/who-can-access-your-data-and-on-what-terms#subcontractors)中 (請參閱「我們限制次承攬人的存取」)。 <br><br> 針對執法機關和第三方對客戶資料和支援資料的要求，Microsoft 回應的相關資訊在線上服務條款中。除非法律禁止 Microsoft 這樣做，Microsoft 會嘗試引導執法機關或第三方直接向客戶提出要求。 |
