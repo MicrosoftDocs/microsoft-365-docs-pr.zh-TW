@@ -61,6 +61,8 @@
           href: get-ready/mapped-drives.md
         - name: 準備憑證和網路設定檔
           href: get-ready/certs-wifi-lan.md
+        - name: 來賓帳戶的先決條件
+          href: get-ready/guest-accounts.md
         - name: 準備列印資源
           href: get-ready/printing.md
         - name: 準備應用程式
