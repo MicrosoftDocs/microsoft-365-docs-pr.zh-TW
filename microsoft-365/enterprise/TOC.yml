@@ -467,10 +467,10 @@
               href: 'https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/upgrade'
             - name: Project Server 2010
               href: project-server-2010-end-of-support.md
-- name: 安全性
-  href: 'https://docs.microsoft.com/microsoft-365/security/'
 - name: 合規性
-  href: 'https://docs.microsoft.com/microsoft-365/compliance/'
+  href: ../compliance/index.yml
+- name: 安全性
+  href: ../security/index.yml
 - name: 雲端服務
   items:
     - name: 藍圖
@@ -564,7 +564,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: PowerShell 社群資源
           href: microsoft-365-powershell-community-resources.md
-    - name: 以 PowerShell 管理使用者帳戶、授權和群組
+    - name: 以 PowerShell 管理使用者帳戶、密碼、授權和群組
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items:
         - name: 使用者帳戶
@@ -581,6 +581,8 @@
               href: delete-and-restore-user-accounts-with-microsoft-365-powershell.md
             - name: 封鎖
               href: block-user-accounts-with-microsoft-365-powershell.md
+            - name: 密碼
+              href: manage-passwords-with-microsoft-365-powershell.md
         - name: 授權與服務
           items:
             - name: 檢視授權與服務
@@ -602,6 +604,8 @@
                   href: disable-access-to-services-while-assigning-user-licenses.md
         - name: 群組
           items:
+            - name: 管理安全性群組
+              href: manage-security-groups-with-microsoft-365-powershell.md
             - name: 維護安全性群組成員資格
               href: maintain-group-membership-with-microsoft-365-powershell.md
             - name: 管理 Microsoft 365 群組
@@ -723,10 +727,6 @@
       href: contoso-info-protect.md
     - name: 安全性摘要
       href: contoso-security-summary.md
-- name: Microsoft 365 合規性
-  href: ../compliance/index.yml
-- name: Microsoft 365 安全性
-  href: ../security/index.yml
 - name: Microsoft 365 架構與解決方案
   href: ../solutions/index.yml
 - name: 企業商務持續性管理 (EBCM) 與雲端服務
