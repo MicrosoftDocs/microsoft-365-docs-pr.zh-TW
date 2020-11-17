@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 在系統管理中心更新您的系統管理員電話號碼和電子郵件地址。 如果您想要重設自己的系統管理員密碼，您將需要此資訊。
-ms.openlocfilehash: 7387ffe693abf0e52d647e35827a9f55bd1d70df
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 06dc277fc408ab234dd51d9c8bec5f20226e3215
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456320"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126608"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>更新您的系統管理員電話號碼和電子郵件地址
 
@@ -39,15 +39,15 @@ ms.locfileid: "48456320"
   
 如果您想了解如何變更公司設定檔資訊 (如公司名稱與地址、公司電話號碼和技術連絡人資訊)，請參閱[變更貴組織地址、技術連絡人電子郵件和其他資訊](change-address-contact-and-more.md)。
   
-## <a name="to-update-your-name-phone-number-and-email-address"></a>更新您的姓名、電話號碼與電子郵件地址
+## <a name="to-update-your-phone-number-and-email-address"></a>若要更新您的電話號碼和電子郵件地址
 
-使用 [ **設定與隱私權** ] 頁面變更您的名稱、行動電話號碼和備用電子郵件地址。 備選電子郵件地址會用於重要通知，例如重設系統管理員密碼 (不) 電腦系統管理員密碼。 
+使用 [ **安全性資訊** ] 頁面變更您的行動電話號碼和備用電子郵件地址。 備選電子郵件地址會用於重要通知，例如重設系統管理員密碼 (不) 電腦系統管理員密碼。 
   
 1. 流覽至 Microsoft 365 系統管理中心。
 
-2. 在頁首中，選取您的設定檔圖示 [ \> **我的帳戶**] \> **設定和 [隱私權**]。
+2. 在頁首中，選取您的設定檔圖示 \> **My account** \> **Security Info**。
 
-3. 在 [**連絡人喜好**設定] 底下的 [**隱私權**] 索引標籤中，選取 [**僅限管理員的連絡人** 更新您的行動電話、電話和備用電子郵件地址。 請確認您使用的電子郵件地址與您的備選電子郵件地址不同。
+3. 在 [ **安全性資訊** ] 索引標籤中，選取 [ **新增方法** \> **電話** \> **替代電話** 或 **電子郵件** ]，以新增詳細資料。 若要更新您的行動裝置、電話和備選電子郵件地址詳細資料，請選取 [ **變更**]。 請務必使用 Microsoft 電子郵件地址以外的其他電子郵件地址。
 
     > [!IMPORTANT]
     > 備選電子郵件地址和行動電話號碼是用來重設系統管理員密碼 (不是) 的電腦系統管理員密碼。

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用適用于 Office 365 的 Defender，您也會取得哪些額外功能？
-ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: bcad3609f5f73ac538ae9d1a0964ecc8e176003e
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123465"
+ms.locfileid: "49126634"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建議設定
 
@@ -189,11 +189,11 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但 Office 365 的 
 
 ****
 
-|安全性功能名稱|標準版|嚴格|註解|
-|---|---|---|---|
-|**啟用反欺騙保護** <p> _EnableAntispoofEnforcement_|開啟 <p> `$true`|開啟 <p> `$true`||
-|**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|會在 Outlook 中為未識別的欺騙寄件者將問號 (？ ) 加入寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
-|**如果電子郵件是由不允許哄騙您網域的人所傳送** <p> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件** <p> `Quarantine`|此設定適用于 [欺騙性智慧](learn-about-spoof-intelligence.md)中封鎖的寄件者。|
+|安全性功能名稱|預設|標準版|嚴格|註解|
+|---|---|---|---|---|
+|**啟用反欺騙保護** <p> _EnableAntispoofEnforcement_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|會在 Outlook 中為未識別的欺騙寄件者將問號 (？ ) 加入寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
+|**如果電子郵件是由不允許哄騙您網域的人所傳送** <p> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件** <p> `Quarantine`|此設定適用于 [欺騙性智慧](learn-about-spoof-intelligence.md)中封鎖的寄件者。|
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的反網路釣魚原則中的高級設定

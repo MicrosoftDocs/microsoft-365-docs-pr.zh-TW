@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: '深入瞭解 Exchange Online Protection (EOP 中的安全性預設設定) '
-ms.openlocfilehash: 50d1c64e4d8343fdb9b25bfcbeee5d988ddc6b8a
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: d4345134e98ae204f73dfb51a0abf5136590a24c
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945327"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126658"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 中預設的安全性
 
@@ -49,18 +49,15 @@ ms.locfileid: "48945327"
 
 您可以在 [ [建立安全的寄件者清單](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365)] 中找到這些優先選項的詳細資訊。
 
-在下列情況下安全保護此設定不是一種可能開啟或關閉的設定，但是我們的篩選功能會從盒出的方式，讓您的信箱無法使用可能有害或有害的郵件。 惡意程式碼和高可信度網路釣魚網路應傳送至隔離區。 只有系統管理員可以管理被隔離為惡意程式碼或高可信度網路釣魚的郵件，也可以從那裡向 Microsoft 報告誤報。 如需詳細資訊，請參閱 [在 EOP 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)
+在下列情況下安全保護此設定不是一種可能開啟或關閉的設定，但是我們的篩選功能會從盒出的方式，讓您的信箱無法使用可能有害或有害的郵件。 惡意程式碼和高可信度網路釣魚應該傳送至隔離區。 只有系統管理員可以管理被隔離為惡意程式碼或高可信度網路釣魚的郵件，也可以從那裡向 Microsoft 報告誤報。 如需詳細資訊，請參閱 [在 EOP 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)
 
 ## <a name="exceptions"></a>例外狀況
 
-只會略過所有篩選的覆寫包括：
+只有「高可信度網路釣魚」郵件可以略過篩選的唯一覆寫，Exchange 郵件流程規則 (也稱為傳輸規則) 。 若要使用郵件流程規則來略過篩選，請參閱 [使用郵件流程規則設定郵件中的 SCL](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)。
 
-- Exchange Transport Rules (ETR) /mail 流程規則。 使用郵件流程規則來設定 EOP 中郵件中的垃圾郵件信賴等級 (SCL) 。
-- 承租人 Allow/封鎖清單：管理承租人 Allow/封鎖清單中的 URLs 和檔案。
+覆寫只應該用於下列專案：
 
-下列的覆寫類型適用于：
-
-- 網路釣魚模擬：模擬的攻擊可協助您識別遭到攻擊的使用者，在實際攻擊影響組織之前。
+- 網路釣魚模擬：模擬的攻擊可協助您在實際攻擊影響組織之前，識別有漏洞的使用者。
 - 安全性/SecOps 信箱：安全小組用來取得未篩選郵件 (良好且錯誤) 的專用信箱。 然後，小組可以查看是否包含惡意內容。
 - 協力廠商篩選器：部分協力廠商廠商會建議您關閉 EOP (SCL =-1) ，因為協力廠商篩選器會管理郵件篩選。 Microsoft 不建議關閉 EOP （適用于 Office 365 的 Defender 所需）。
 - 誤報：您可能想要允許由 Microsoft 透過系統 [管理員報送](admin-submission.md)進行的某些郵件仍在進行分析。 就像所有覆寫一樣，建議它們是臨時性的。

@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: 使用 Microsoft 365 系統管理中心或 Windows PowerShell 刪除預約行事曆。
-ms.openlocfilehash: 3a1cb1c54f60247ab72056b3e39b56b0981228b7
-ms.sourcegitcommit: eb3c30d53a5434d8bad7c8f48a5612f3e2675945
+ms.openlocfilehash: 2fcb92cee18d709ef0e1fa3faa0246e622a9f9db
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47422439"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126646"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>在預訂中刪除預約行事曆
 
@@ -46,7 +46,7 @@ ms.locfileid: "47422439"
 
 ## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>使用 Exchange Online PowerShell 刪除預約行事曆
 
-請參閱連線 [至 Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 以取得連線至 exchange online PowerShell 的必要條件和指引。
+請參閱連線 [至 Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) 以取得連線至 exchange online PowerShell 的必要條件和指引。
 
 若要執行這些步驟，您必須選擇 [以系統管理員身分執行] 選項，使用您所執行的 active Microsoft PowerShell 命令視窗。
 

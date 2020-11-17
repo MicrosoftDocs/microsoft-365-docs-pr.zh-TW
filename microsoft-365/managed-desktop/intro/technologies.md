@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6e3e7cc0404a56e4d69da69b95aa95fa6795dd5
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 9ec6f73996b2626ef62d33435ed88fb08dfc1a16
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002218"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126576"
 ---
 # <a name="microsoft-managed-desktop-technologies"></a>Microsoft 受管理的電腦技術
 
@@ -37,7 +37,7 @@ Win32 應用程式 |    小組未附帶裝置，但是會打包並由 Microsoft 
 Web 應用程式 |  在瀏覽器中的 [Yammer]、「Delve」、「流程」、「StaffHub」、「PowerApps」及「Planner」都不會隨裝置附帶。 使用者可以使用瀏覽器存取這些應用程式的 web 版本。
 
 
-## <a name="windows-10-enterprise-e3-or-e5"></a>Windows 10 企業版 E3 或 E5
+## <a name="windows-10-enterprise-e5-or-e3-with-microsoft-defender-for-endpoint"></a>Windows 10 企業版 E5 或 E3 （含 Microsoft Defender for Endpoint）
 
  |
  --- | ---

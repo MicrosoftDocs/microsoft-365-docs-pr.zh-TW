@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 7337dd28f7940256d1753cd4c0b6309406fab2d1
-ms.sourcegitcommit: 888b9355ef7b933c55ca6c18639c12426ff3fbde
+ms.openlocfilehash: 5e2340c7c0bf00165bb43740d3d095b5b0402fc0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "48305267"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126622"
 ---
 # <a name="first-run-experience-with-autopilot-and-the-enrollment-status-page"></a>使用 Autopilot 和 [註冊狀態] 頁面的初次執行體驗
 
@@ -77,7 +77,7 @@ Microsoft 受管理的桌面會使用這些設定的註冊狀態頁面體驗：
 
 1. Autopilot 體驗隨即啟動，且使用者輸入其認證。
 2. 裝置會開啟 [註冊狀態] 頁面，並繼續進行裝置準備和裝置安裝階段。 因為停用使用者 ESP，所以第三個步驟 (帳戶設定) *目前已略過* Microsoft Managed Desktop configuration。 裝置重新開機。
-3. 重新開機之後，裝置會開啟與 **其他使用者**的 Windows 登入頁面。
+3. 重新開機之後，裝置會開啟與 **其他使用者** 的 Windows 登入頁面。
 4. 使用者再次輸入他們的認證，桌面隨即開啟。
 
 > [!NOTE]
@@ -95,7 +95,7 @@ Microsoft 受管理的桌面目前不支援 Windows Autopilot 的「白色 glove
 
 ### <a name="autopilot-settings-change"></a>Autopilot 設定變更
 
-您可能想要要求其他的裝置名稱範本。 不過，您無法變更部署模式，請以隱私權設定或使用者帳戶類型的身分加入 Azure。
+您可能想要要求其他的裝置名稱範本。 不過，您無法變更部署模式、加入 Azure AD As、隱私權設定或使用者帳戶類型。
 
 ### <a name="enrollment-status-page-settings-change"></a>註冊狀態頁面設定變更
 

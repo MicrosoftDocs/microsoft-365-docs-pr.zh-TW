@@ -9,12 +9,12 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: 瞭解如何在 Microsoft 365 中取得 Microsoft 預約的存取權。
-ms.openlocfilehash: 815aa3a859db15364aa18d3550001a28d085b711
-ms.sourcegitcommit: 41fd71ec7175ea3b94f5d3ea1ae2c8fb8dc84227
+ms.openlocfilehash: 7e4eaa1e474f3f49807b842097c855193f028af0
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "47419361"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126588"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>開啟或關閉 Microsoft 預約
 
@@ -27,7 +27,7 @@ ms.locfileid: "47419361"
 
 1. 以全域系統管理員身分登入 Microsoft 365 系統管理中心。
 
-2. 在系統管理中心中，移至 [ **設定**] [設定]，   \> **Settings**然後選取 [**預定**]。
+2. 在系統管理中心中，移至 [ **設定**   \> **組織設定**]，然後選取 [**預定**]。
 
 3. 選取 [ **允許貴組織使用預定** 為您的組織啟用或停用預定] 的核取方塊。
 
@@ -38,7 +38,7 @@ ms.locfileid: "47419361"
 
 ## <a name="turn-bookings-on-or-off-for-your-organization-using-powershell"></a>使用 PowerShell 為您的組織開啟或關閉預定功能
 
-若要使用 PowerShell Cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)為您的組織開啟或關閉預約，請連線 [至 Exchange Online PowerShell]() ，並執行下列命令：
+若要使用 PowerShell Cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig)為您的組織開啟或關閉預約，請連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) ，並執行下列命令：
 
 ```PowerShell
    Set-OrganizationConfig -BookingsEnabled $false
