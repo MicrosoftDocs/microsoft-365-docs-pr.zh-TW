@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 了解 Microsoft SharePoint Syntex 中的表單處理
-ms.openlocfilehash: 7340e0c78db71fbb0acc05c2985b60f6bafbba80
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 6c2cb2ee3c1fc621e7814f4603ad2e6f0b891701
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493670"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087400"
 ---
 # <a name="form-processing-overview"></a>表單處理概觀
 
@@ -29,7 +30,7 @@ Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI Builder](https://docs
 > [!NOTE]
 > 如需有關表單處理案例範例的詳細資訊，請參閱 [SharePoint Syntex 採用：入門指南](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example)。
 
-例如，可以建立一個識別上傳到文件庫的所有採購訂單文件的表單處理模型。 然後，您可以從每個採購訂單中擷取並顯示對您很重要的特定資料，例如*採購單號*、*日期*或*總成本*。
+例如，可以建立一個識別上傳到文件庫的所有採購訂單文件的表單處理模型。 然後，您可以從每個採購訂單中擷取並顯示對您很重要的特定資料，例如 *採購單號*、*日期* 或 *總成本*。
 
 ![文件庫檢視](../media/content-understanding/doc-lib-done.png)</br>  
 

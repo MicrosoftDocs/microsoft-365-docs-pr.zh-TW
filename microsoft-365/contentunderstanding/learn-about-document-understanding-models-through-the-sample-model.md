@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 透過範例模型深入瞭解文件瞭解模型
-ms.openlocfilehash: 75e17c8075fa381c68b6f85e0dfbe96e5d2ad557
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: 664b0ad7cb00a4570fbe8a4bd8a2c6f319cf8800
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48321262"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087376"
 ---
 # <a name="learn-about-document-understanding-models-through-a-sample-model"></a>透過範例模型深入瞭解文件瞭解模型
 
@@ -25,7 +26,7 @@ Microsoft SharePoint Syntex 為您提供了一個您可用來檢查的範例模�
 若要存取範例模型，您必須先將模型匯入您的內容中心。
 
 1. 從內容中心選取 **[模型]** 查看您的模型清單。</br>
-2. 在**模型**頁面上，選取 **[匯入範例模型]**。</br>
+2. 在 **模型** 頁面上，選取 **[匯入範例模型]**。</br>
 
     ![匯入範例模型](../media/content-understanding/import-sample-model.png) </br>
 
@@ -35,7 +36,7 @@ Microsoft SharePoint Syntex 為您提供了一個您可用來檢查的範例模�
 
 您不僅可以流覽分析範例模型，進一步瞭解模型的構造方式，作爲一個工作模型，還可以更進一步執行例如以下的操作：
 
-- 新增另一個擷取器。 例如，新增一個*折扣費用*的擷取器。
+- 新增另一個擷取器。 例如，新增一個 *折扣費用* 的擷取器。
 - 將模型套用到文件庫，並將部分訓練檔案上傳到文件庫，以查看模型如何分類檔案，以及如何從中擷取資料。
 
 

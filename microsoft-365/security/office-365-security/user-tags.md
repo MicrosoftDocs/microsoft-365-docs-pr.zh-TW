@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 方案2中識別具有使用者標記的特定使用者群組。 標記篩選可用於 Office 365 的 Microsoft Defender 中的提醒、報告和調查，以快速識別已標記的使用者。
-ms.openlocfilehash: 9c83a323a3116b3da61a133c7fb449978ca13841
-ms.sourcegitcommit: 9dbc6a08177aaca112e84d30dbaa79a0a8e9dbf8
+ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48945315"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123616"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的使用者標記
 
@@ -29,8 +29,8 @@ ms.locfileid: "48945315"
 
 使用者標記是 [Microsoft Defender For Office 365](office-365-atp.md)中特定使用者群組的識別碼。 使用者標記有兩種類型：
 
-- **系統標記** ：目前， [優先順序帳戶](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 是唯一的系統標記類型。
-- **自訂標記** ：您可以自行建立這些使用者標記。
+- **系統標記**：目前， [優先順序帳戶](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) 是唯一的系統標記類型。
+- **自訂標記**：您可以自行建立這些使用者標記。
 
 如果您的組織擁有 Office 365 的 Defender for Office 方案 2 (包含在您的訂閱中或作為附加元件) ，除了使用 [優先順序帳戶] 標記之外，您還可以建立自訂使用者標記。
 
@@ -40,6 +40,7 @@ ms.locfileid: "48945315"
 - [威脅瀏覽器和即時偵測](threat-explorer.md)
 - [威脅防護狀態報告](view-email-security-reports.md#threat-protection-status-report)
 - [行銷活動檢視](campaigns.md)
+- 針對優先順序帳戶，您可以使用 Exchange 系統管理中心的 [優先順序帳戶] 報告 (EAC) 中的 [電子郵件問題](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) 。
 
 本文說明如何在安全性 & 規範中心內設定使用者標記。 安全性 & 合規性中心內沒有 Cmdlet 可管理使用者標記。
 
@@ -47,7 +48,7 @@ ms.locfileid: "48945315"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **使用者標記** ] 頁面，請開啟] <https://protection.office.com/userTags> 。
 
-- 若要建立、修改或移除 **自訂使用者標記** ，您必須是 Security & 合規性中心內「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+- 若要建立、修改或移除 **自訂使用者標記**，您必須是 Security & 合規性中心內「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 若要 (系統磁碟區標) 設定優先順序帳戶，您必須是 [全域系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 或 [Exchange 系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)。
 
@@ -55,29 +56,26 @@ ms.locfileid: "48945315"
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>使用安全中心建立使用者標記
 
-1. 在 [安全性中心] 中，移至 [ **威脅管理** ] \> **使用者標記** 。
+1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
-2. 在開啟的 [ **使用者標記** ] 頁面上，按一下 [ **建立標記** ]。
+2. 在開啟的 [ **使用者標記** ] 頁面上，按一下 [ **建立標記**]。
 
 3. [ **建立** 標籤] 嚮導會在新飛出時開啟。在 [ **定義標記** ] 頁面上，設定下列設定：
-
-   - **名稱** ：輸入標記的唯一描述性名稱。 這是您會看到和使用的值。
-
-   - **描述** ：輸入標記的選用描述。
+   - **名稱**：輸入標記的唯一描述性名稱。 這是您會看到和使用的值。
+   - **描述**：輸入標記的選用描述。
 
    完成後，按 [下一步]。
 
 4. 在 [ **指派信箱** ] 頁面上，執行下列其中一個步驟：
 
-   - 按一下 [ **新增信箱** ]。 在 [飛出顯示] 中，執行下列其中一個步驟，以新增個別使用者或群組：
-
+   - 按一下 [ **新增信箱**]。 在 [飛出顯示] 中，執行下列其中一個步驟，以新增個別使用者或群組：
      - 在方塊中按一下，然後在清單中向內移動，以選取使用者或群組。
      - 在方塊中按一下並輸入，以篩選清單並選取使用者或群組。
      - 若要新增其他值，請按一下方塊中的空白區域。
      - 若要從方塊中移除個別專案， **Remove** 請 ![ 在方塊中按一下使用者或群組上的 [移除移除圖示] ](../../media/scc-remove-icon.png) 核取方塊。
      - 若要從方塊下方的清單中移除現有的專案，請按一下 [ **移除** ![ 移除圖示] ](../../media/scc-remove-icon.png) 專案。
 
-     完成後，請按一下 [ **新增** ]。
+     完成後，請按一下 [ **新增**]。
 
    - 按一下 [匯 **入** ]，選取包含使用者或群組之電子郵件地址的文字檔。 請確定文字檔包含每行一個專案。
 
@@ -85,11 +83,11 @@ ms.locfileid: "48945315"
 
 5. 在 [ **複查標記** ] 頁面上，複查您的設定。 您可以按一下 [特定] 區段中的 [ **編輯** ]，以進行變更。
 
-   當您完成時，按一下 [ **提交** ]。
+   當您完成時，按一下 [ **提交**]。
 
 ## <a name="use-the-security-center-to-view-user-tags"></a>使用安全中心來查看使用者標記
 
-1. 在 [安全性中心] 中，移至 [ **威脅管理** ] \> **使用者標記** 。
+1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
 2. 在開啟的 [ **使用者標記** ] 頁面上，選取您要查看的使用者標籤 (不要按一下核取方塊) 。
 
@@ -99,18 +97,18 @@ ms.locfileid: "48945315"
 
 ## <a name="use-the-security-center-to-modify-user-tags"></a>使用 [安全性中心] 修改使用者標記
 
-1. 在 [安全性中心] 中，移至 [ **威脅管理** ] \> **使用者標記** 。
+1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
-2. 在開啟的 [ **使用者標記** ] 頁面上，選取您要查看的使用者標記，然後按一下 [ **編輯標記** ]。
+2. 在開啟的 [ **使用者標記** ] 頁面上，選取您要查看的使用者標記，然後按一下 [ **編輯標記**]。
 
 3. [原則] 嚮導會在 [ **編輯] 標記** 飛出的狀態中開啟。按 **[下一步]** 以複查及修改設定。
 
-   當您完成時，按一下 [ **提交** ]。
+   當您完成時，按一下 [ **提交**]。
 
 ## <a name="use-the-security-center-to-remove-user-tags"></a>使用安全中心來移除使用者標記
 
-**附注** ：您無法移除內建的 [ **優先順序] 帳戶** 標記。
+**附注**：您無法移除內建的 [ **優先順序] 帳戶** 標記。
 
-1. 在 [安全性中心] 中，移至 [ **威脅管理** ] \> **使用者標記** 。
+1. 在 [安全性中心] 中，移至 [ **威脅管理**] \> **使用者標記**。
 
 2. 在開啟的 [ **使用者標記** ] 頁面上，選取您要移除的使用者標籤，按一下 [ **刪除** 標籤]，然後選取 [ **是]，** 然後在顯示的警告中移除。

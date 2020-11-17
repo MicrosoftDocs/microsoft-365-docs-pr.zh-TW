@@ -8,17 +8,18 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
-ms.openlocfilehash: 75bd60aab424bdf391038a95055a6660ef2ceecc
-ms.sourcegitcommit: f7ca339bdcad38796c550064fb152ea09687d0f3
+ms.openlocfilehash: bd5d0b180a95239b1a3ac7b85ae0ada57f098293
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322208"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087272"
 ---
 # <a name="term-store-reports"></a>字詞庫報告
 
-您可以在 [SharePoint Online 系統管理中心] 存取字詞庫的報告。 展開 **報告 **，然後點擊 **內容服務**。
+您可以在 [SharePoint Online 系統管理中心] 存取字詞庫的報告。 展開 **報告**，然後點擊 **內容服務**。
 
 下列報告可供使用：
 

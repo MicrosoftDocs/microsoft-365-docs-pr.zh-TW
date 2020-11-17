@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生產力分數的概覽。
-ms.openlocfilehash: 3808583429c78460483cd7193d38810a7e189040
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: 49ae35d68b0d0ebf627e44e5912d4a1bb7b712c0
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804722"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123486"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生產力分數 
 
@@ -34,7 +34,7 @@ ms.locfileid: "48804722"
 
 - **度量** ，可協助您瞭解使用者如何使用 Microsoft 365 產品來共同作業、溝通及跨平臺工作。
 - 資料的 **深入** 瞭解，可協助您找出機會，以提升員工生產力及滿意度。
-- 您可以採取 **建議的動作** ，協助貴組織中的人員有效使用 Microsoft 365 產品，讓每個人都能進行最佳的工作。
+- 您可以採取 **建議的動作**，協助貴組織中的人員有效使用 Microsoft 365 產品，讓每個人都能進行最佳的工作。
 
 我們提供兩個區域的資料、洞察力和建議： 
 
@@ -88,7 +88,7 @@ ms.locfileid: "48804722"
 - 全域讀取者 
 - 報告讀取者 
 
-您可以從 [ **報表**  >  **生產力分數** ] 底下的 Microsoft 365 系統管理員那裡存取體驗。
+您可以從 [**報表**  >  **生產力分數**] 底下的 Microsoft 365 系統管理員那裡存取體驗。
 
 ## <a name="interpreting-productivity-score"></a>解讀生產力分數 
 

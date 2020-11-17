@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 瞭解如何將已發佈的模型套用至 SharePoint 文件庫
-ms.openlocfilehash: 771b0f451d404c6e90f62091ca466bfaf34bae39
-ms.sourcegitcommit: 0f48beaca3afa4df12d41847014975d50a4ebe7d
+ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48338670"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087484"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中套用文件瞭解模型。
 
@@ -43,9 +44,9 @@ ms.locfileid: "48338670"
     ![選取網站](../media/content-understanding/site-search.png)</br>
 
     > [!NOTE]
-    > 您必須要有您將套用模型的文件庫的*管理清單*權限或*編輯*權限。</br>
+    > 您必須要有您將套用模型的文件庫的 *管理清單* 權限或 *編輯* 權限。</br>
 
-3. 選取網站之後，選取您要套用模型的文件庫。 在範例中，從 *Contoso 案列追蹤*網站中選取*檔案* 文件庫。</br>
+3. 選取網站之後，選取您要套用模型的文件庫。 在範例中，從 *Contoso 案列追蹤* 網站中選取 *檔案* 文件庫。</br>
 
     ![選取文件庫](../media/content-understanding/select-doc-library.png)</br>
 

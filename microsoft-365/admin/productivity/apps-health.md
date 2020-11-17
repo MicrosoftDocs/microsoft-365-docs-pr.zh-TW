@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 應用程式健康情況技術經驗的詳細資料。
-ms.openlocfilehash: 9497118f4ebfb1cb2b64670638ce939da21eb261
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841186"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123508"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 應用程式健康情況–技術經驗
 
-生產力分數可協助組織使用有關人員如何使用 Microsoft 365 應用程式和支援技術經驗的衡量方式，來變換工作的運作方式。 分數會反映您的組織&#39;人員和技術經驗類別的效能，並將您的分數與像您的組織相比較。 [應用程式健康情況] 類別是位於 [人員經驗] 底下的度量部分。 若要深入瞭解，請參閱 [生產力評分一覽](productivity-score.md) 。
+生產力分數可協助組織使用有關人員如何使用 Microsoft 365 應用程式和支援技術經驗的衡量方式，來變換工作的運作方式。 分數會反映您的組織&#39;人員和技術經驗類別的效能，並將您的分數與像您的組織相比較。 應用程式健康情況類別是技術經驗範圍內的一部分度量。 若要深入瞭解，請參閱 [生產力評分一覽](productivity-score.md) 。
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>為什麼您的組織&#39;Microsoft 365 應用程式健康情況評分問題
 
@@ -59,7 +59,7 @@ ms.locfileid: "48841186"
 
 下圖顯示在過去180天中，建議的更新通道中的裝置數量。 折線圖上的資料點是過去28天的活動匯總。
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Microsoft 365 應用程式的主要視覺效果視覺化。":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="圖表，顯示執行建議更新通道之裝置的趨勢。":::
 
 ### <a name="scoring-framework"></a>計分架構
 
@@ -71,7 +71,7 @@ Microsoft 365 應用程式健康情況分數會測量裝置是否正在建議的
 
 ### <a name="devices-on-current-channel-and-running-supported-versions"></a>目前通道上的裝置，並執行支援的版本
 
-:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Microsoft 365 應用程式的主要視覺效果視覺化。":::
+:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="圖表顯示目前的支援通道中的裝置數目。":::
 
 1. **標頭：**  強調目前通道上裝置的百分比正在執行支援的 Microsoft 365 應用程式版本
 1. **Body：**  提供在建議的通道上執行 Microsoft 365 應用程式之裝置的值的相關資訊。
@@ -82,7 +82,7 @@ Microsoft 365 應用程式健康情況分數會測量裝置是否正在建議的
 
 ### <a name="devices-running-latest-and-supported-versions"></a>執行最新和支援之版本的裝置
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Microsoft 365 應用程式的主要視覺效果視覺化。":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="圖表顯示執行最新和支援之應用程式版本的裝置數量。":::
 
 1. **標頭：**  著重于執行最新版本的支援版本和裝置所執行的裝置所占的百分比。
 1. **Body：**  提供建議的通道和支援的/最新版本上執行裝置之值的相關資訊。
@@ -99,7 +99,7 @@ Microsoft 365 應用程式健康情況分數會測量裝置是否正在建議的
 
 此圖顯示在過去180天內，執行支援版本的裝置及最新版本的 Microsoft 365 應用程式的趨勢線。
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Microsoft 365 應用程式的主要視覺效果視覺化。":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="圖表，showa 支援的裝置數量，以及一段時間內的最新應用程式版本。":::
 
 ## <a name="people-in-your-organization"></a>組織中的人員
 

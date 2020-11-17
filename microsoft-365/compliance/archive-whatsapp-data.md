@@ -12,18 +12,18 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定 TeleMessage 連接器，以匯入和封存 Microsoft 365 中的 WhatsApp 資料。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: a8a3465ca3f728290b69cf9b6c5d0820daf00221
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 2600356fc2628d5832f93f7dbe4fc247d8812410
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199156"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087180"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>設定連接器以封存 WhatsApp 資料
 
 使用 Microsoft 365 規範中心內的 TeleMessage 連接器，匯入及封存 WhatsApp 通話、聊天、附件、檔案及已刪除的郵件。 在您設定及設定連接器之後，它每天會連線到您組織的 TeleMessage 帳戶，並將使用 TeleMessage WhatsApp Phone 歸檔器或 TeleMessage WhatsApp 雲端歸檔人員的員工行動通訊，匯入至 Microsoft 365 中的信箱。
 
-將 WhatsApp 資料儲存在使用者信箱之後，您可以套用 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋）和 Microsoft 365 保留原則，以 Verizon 資料。 例如，您可以使用內容搜尋來搜尋 WhatsApp 郵件，或在高級 eDiscovery 案例中，將包含 WhatsApp 郵件的信箱與保管人產生關聯。 在 Microsoft 365 中使用 WhatsApp 連接器匯入和封存資料，可協助您的組織遵守政府和法規原則。
+將 WhatsApp 資料儲存在使用者信箱之後，您可以套用 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋）和 Microsoft 365 保留原則，以 WhatsApp 資料。 例如，您可以使用內容搜尋來搜尋 WhatsApp 郵件，或在高級 eDiscovery 案例中，將包含 WhatsApp 郵件的信箱與保管人產生關聯。 在 Microsoft 365 中使用 WhatsApp 連接器匯入和封存資料，可協助您的組織遵守政府和法規原則。
 
 ## <a name="overview-of-archiving-whatsapp-data"></a>封存 WhatsApp 資料一覽
 
@@ -59,15 +59,15 @@ ms.locfileid: "48199156"
 
 在您完成上一節所述的必要條件之後，您可以在 Microsoft 365 規範中心建立 WhatsApp 連接器。 連接器會使用您提供的資訊來連線至 TeleMessage 網站，並將 WhatsApp 資料傳送至 Microsoft 365 中對應的使用者信箱方塊。
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [**資料連線器**  >  **WhatsApp 歸檔**器]。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [**資料連線器**  >  **WhatsApp 歸檔** 器]。
 
-2. 在 [ **WhatsApp 歸檔**器產品描述] 頁面上，按一下 [**新增連接器**]
+2. 在 [ **WhatsApp 歸檔** 器產品描述] 頁面上，按一下 [**新增連接器**]
 
 3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受**]。
 
 4. 在 [ **登入 TeleMessage** ] 頁面的 [步驟 3] 下，于下列方塊中輸入必要的資訊，然後按 **[下一步]**。
 
-   - 使用者**名稱：** 您的 TeleMessage 使用者名稱。
+   - 使用者 **名稱：** 您的 TeleMessage 使用者名稱。
 
    - **密碼：** 您的 TeleMessage 密碼。
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通訊人員經驗的詳細資料。
-ms.openlocfilehash: 6f79a636c24548586048adf0151ac5eefb98fffe
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804652"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123440"
 ---
 # <a name="communication--people-experiences"></a>通訊–人員經驗
 
@@ -57,8 +57,8 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 3. **目前狀態的視覺效果：**
     - 水準條，藍色部分代表標頭中所表示的百分比
     - 會強調用於計算標頭中所表達百分比的 (分子/分母) ：
-      - **分子** ：過去28天內使用一種以上通訊模式的人員人數
-      - **分母** ：在過去28天內，標記為啟用一種以上通訊產品的人員人數
+      - **分子**：過去28天內使用一種以上通訊模式的人員人數
+      - **分母**：在過去28天內，標記為啟用一種以上通訊產品的人員人數
     - 關鍵指標的 **對等基準** 值也會顯示為百分比
 
 1. **查看通訊資源：** 按一下這裡會以與通訊相關的影片/文章表單，徵用所有的支援內容。 從這些，您可以流覽至自訂的播放清單以進行通訊，然後針對所有生產力排名類別流覽。
@@ -67,7 +67,7 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 
  此圖提供主要洞察力中主要洞察力之主要衡量的趨勢，也就是在過去180天內使用一種以上通訊模式的人員人數。 在這裡，每日值是在過去28天內使用多種通訊形式之人員人數的集合。
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="主要深入瞭解通訊模式。":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="此圖表顯示使用一種以上的模式與時間進行通訊的使用者人數。":::
 
 ### <a name="scoring-model"></a>計分模型
 
@@ -79,17 +79,17 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 
 ### <a name="breakdown-of-communication-by-modes"></a>依模式的通訊細分
 
-:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="主要深入瞭解通訊模式。":::
+:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="![通訊模式明細]。":::
 
 1. **標頭：** 重點在於深入瞭解如何在通訊中所考慮的不同通訊模式之間提供詳細的細目分析
 2. **Body：** 提供使用不同模式共用知識的值資訊
 3. **視覺效果：** 細目分類代表每個模式的 ues。 每個條碼的色彩部分和分數都代表以該模式啟用之人員人數的百分比傳送電子郵件、郵件或社區帖子的人數：
       - **發電子郵件的人員：** 彩色部分和分數代表為傳送電子郵件之 Exchange 啟用的使用者百分比。 這個分數的構造來源如下：
-          - **分子** ：在過去28天內傳送電子郵件的人員
-          - **分母** ：在過去28天內為 Exchange 啟用人員
+          - **分子**：在過去28天內傳送電子郵件的人員
+          - **分母**：在過去28天內為 Exchange 啟用人員
       - **在 Microsoft 小組中傳送訊息的人員：** 彩色部分和分數代表為正在傳送郵件之 Microsoft 小組啟用的使用者百分比。 這個分數的構造來源如下：
-          - **分子** ：過去28天內，在 Microsoft 小組中傳送訊息的人員
-          - **分母** ：過去28天內為 Microsoft 小組啟用的人員
+          - **分子**：過去28天內，在 Microsoft 小組中傳送訊息的人員
+          - **分母**：過去28天內為 Microsoft 小組啟用的人員
       - **社區中的人員張貼：** 彩色部分和分數代表為在社區中張貼的 Yammer 啟用的使用者百分比。 這個分數的構造來源如下：
           - **分子：** 最近28天的 Yammer 社區中的人員張貼
           - **分母：** 過去28天內啟用 Yammer 的人員
@@ -97,15 +97,15 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 
 ### <a name="mentions-in-emails"></a>在電子郵件中 @mentions
 
-:::image type="content" source="../../media/emailmentions.png" alt-text="主要深入瞭解通訊模式。":::
+:::image type="content" source="../../media/emailmentions.png" alt-text="![包含提及的電子郵件]。":::
 
 1. **標頭：** 強調在過去28天內，新電子郵件執行緒在包含 @mentions 時所開始的回應率增加
 2. **Body：** 提供在電子郵件中使用 @mentions 之值的相關資訊。 此外，使用 @mentions 的人員會以過去28天內已傳送電子郵件的所有使用者的百分比表示。
 3. **視覺效果：** 根據新的電子郵件執行緒是否已 @mentions，打破其回應率。
-      - **使用 @mentions 的電子郵件回應：** 彩色部分和分數代表包含 @mentions 的新電子郵件執行緒的回應率。 這個分數的構造來源如下：
+      - **使用提及的電子郵件回應 \@ ：** 彩色部分和分數代表包含 @mentions 的新電子郵件執行緒的回應率。 這個分數的構造來源如下：
           - **分子：** 新的電子郵件執行緒包含已開始的 @mentions，也會在最後28天收到回應。
           - **分母：** 新的電子郵件執行緒包含最後28天內已開始的 @mentions
-      - **不 @mentions 的電子郵件回應：** 彩色部分和分數代表包含 @mentions 的新電子郵件執行緒的回應率。 這個分數的構造來源如下：
+      - **不含提及的電子郵件回應 \@ ：** 彩色部分和分數代表包含 @mentions 的新電子郵件執行緒的回應率。 這個分數的構造來源如下：
           - **分子：** 不含 @mentions 的新電子郵件執行緒，其已啟動，也會收到最後28天內的回應。
           - **分母：** 新的電子郵件執行緒不含過去28天內已開始的 @mentions。
 4. **查看相關內容：** 選取此連結可查看排序的影片及其他相關的說明內容。
@@ -113,7 +113,7 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 
 ### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>依類型分類的 Microsoft 小組中的訊息
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="主要深入瞭解通訊模式。":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="![小組郵件類型]。":::
 
 1. **標頭：** 強調以傳送任何類型郵件的人員所占的方式傳送通道郵件的人員，其 (包括) 在過去28天內的聊天和通道訊息
 2. **Body：** 提供在 Microsoft 小組內使用通道訊息的值資訊
@@ -128,7 +128,7 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 
 ### <a name="questions-and-answers-in-yammer"></a>Yammer 中的問題和解答
 
-:::image type="content" source="../../media/yammerqsandas.png" alt-text="主要深入瞭解通訊模式。":::
+:::image type="content" source="../../media/yammerqsandas.png" alt-text="[Yammer 中的問題和解答]":::
 
 1. **標頭：** 在 Yammer 上突出顯示標示為「問題」的帖子，而這些帖子已接收到 &quot; &quot; 最近28天的 yammer 上做為「Yammer 問題」之所有帖子的百分比，其為最佳答案。
 2. **Body：** 提供 Yammer 中使用問題和解答的值資訊，以共用知識。
@@ -141,9 +141,9 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 
 本節提供與頁面上所有真知灼見相關之活動的使用者層級詳細資料。 表格中的欄如下所述：
 
-- [使用者 **名稱** ] 是使用者的電子郵件地址。
-- [ **顯示名稱** ] 是使用者的完整名稱。
-- [ **上次活動日期** ] 使用者最後一次執行的活動，與過去28天內的任何通迅相關的任何深入瞭解。
+- [使用者 **名稱**] 是使用者的電子郵件地址。
+- [**顯示名稱**] 是使用者的完整名稱。
+- [**上次活動日期**] 使用者最後一次執行的活動，與過去28天內的任何通迅相關的任何深入瞭解。
 - **部門：** 在 Azure Active Directory (Azure AD) 中為使用者定義的部門。
 - **公司：** 在 Azure AD 中為使用者定義的公司。
 - **國家/地區：** 在 Azure AD 中為使用者定義的國家/地區。

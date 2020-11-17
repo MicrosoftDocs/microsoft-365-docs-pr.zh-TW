@@ -113,7 +113,7 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 
 1. 開啟 [Microsoft 合規性中心](https://compliance.microsoft.com)。
 
-2. 開啟 [合規性中心] 設定頁面，然後選擇 **[上線裝置]** 。 
+2. 開啟 [合規性中心] 設定頁面，然後選擇 **[上線裝置]**。 
 
    > [!div class="mx-imgBorder"]
    > ![啟用裝置管理](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
@@ -125,7 +125,7 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 
 4. 選擇 **[上線]** 開始上線程序。
 
-5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]** 。
+5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]**。
 
    > [!div class="mx-imgBorder"]
    > ![部署方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
@@ -149,16 +149,16 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 
 1. 開啟 [Microsoft 合規性中心](https://compliance.microsoft.com)。
 
-2. 開啟 [合規性中心] 設定頁面，然後選擇 **[啟用裝置監控]** 。
+2. 開啟 [合規性中心] 設定頁面，然後選擇 **[啟用裝置監控]**。
 
 3. 選擇 **[裝置管理]** 以開啟 **[裝置]** 清單。 您應該會看到已向適用於端點的 Microsoft Defender 回報的裝置清單。
 
    > [!div class="mx-imgBorder"]
    > ![裝置管理](../media/endpoint-dlp-getting-started-2-device-management.png)
    
-4. 如果您需要上線其他裝置，請選擇 **[上線]** 。
+4. 如果您需要上線其他裝置，請選擇 **[上線]**。
 
-5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]** 。
+5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]**。
 
 6. 按照 [Windows 10 電腦的上線工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會將您帶到一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
 
@@ -175,9 +175,9 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 
 ### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>在 DLP 警示管理儀表板中檢視端點 DLP 警示
 
-1. 在 Microsoft 365 安全性與合規性中心開啟 [資料外洩防護] 頁面，並選擇 [警示]。
+1. 在 Microsoft 365 合規性中心開啟 [資料外洩防護] 頁面，並選擇 [警示]。
 
-2. 請參閱[如何設定和檢視 DLP 原則的警示](dlp-configure-view-alerts-policies.md)中的程序，以檢視您的端點 DLP 原則的警示。
+2. 請參閱[如何設定和檢視 DLP 原則的警示](dlp-configure-view-alerts-policies.md)中的程序，以檢視您端點 DLP 原則的警示。
 
 
 ### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>在活動總管中檢視端點 DLP 資料

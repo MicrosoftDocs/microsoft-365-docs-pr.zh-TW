@@ -7,21 +7,22 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 描述文件瞭解和表單處理模型之間的差異
-ms.openlocfilehash: 98d5e9463dedda96c02ed7c3ed80576638941816
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: e847ed9b7a00e0ff0542ad3b9ba35c314070837d
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464225"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087628"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文件瞭解和表單處理模型之間的差異 
 
 
-Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 SharePoint 文件庫的文件，以及擷取每個檔案的相關資訊。  例如，當文件上傳到 SharePoint 文件庫時，所有識別為 *[採購單]* 的檔案都將被分類，然後顯示在自訂文件庫檢視中。 此外，還可以從每個檔案中提取特定資訊（例如，*PO 號*和*總額*），並將其作為欄顯示在文件庫檢視中。 
+Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 SharePoint 文件庫的文件，以及擷取每個檔案的相關資訊。  例如，當文件上傳到 SharePoint 文件庫時，所有識別為 *[採購單]* 的檔案都將被分類，然後顯示在自訂文件庫檢視中。 此外，還可以從每個檔案中提取特定資訊（例如，*PO 號* 和 *總額*），並將其作為欄顯示在文件庫檢視中。 
 
-內容瞭解讓您建立*模型*來識別和擷取所需的資訊。 模型在協助解決搜尋、業務流程、合規性和許多其他方面的業務問題方面具有價值。
+內容瞭解讓您建立 *模型* 來識別和擷取所需的資訊。 模型在協助解決搜尋、業務流程、合規性和許多其他方面的業務問題方面具有價值。
 
 您可以使用兩種模型類型：
 

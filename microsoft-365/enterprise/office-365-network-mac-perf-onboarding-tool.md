@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 network connectivity test 工具 (預覽) '
-ms.openlocfilehash: 2be48f42c8529334b55b311e6f202d9f3b25ff9e
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295523"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087076"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 network connectivity test 工具 (預覽) 
 
@@ -183,7 +183,7 @@ Exchange Online 服務前端的使用者辦公室位置的網路 TCP 延遲會�
 
 #### <a name="download-speed"></a>下載速度
 
-我們從 SharePoint 服務的前門，測量15Mb 檔案的下載速度。 結果會以每秒 mb 為單位顯示，以指出可以從 SharePoint 或 OneDrive 中的 **一秒**內的哪一個大小的檔案下載 mb。 此數目應類似于每秒百萬位元最小電路頻寬的十分之一。 例如，如果您有100mbps 網際網路連線，可能會預期每秒 10 mb (10MBps) 。
+我們從 SharePoint 服務的前門，測量15Mb 檔案的下載速度。 結果會以每秒 mb 為單位顯示，以指出可以從 SharePoint 或 OneDrive 中的 **一秒** 內的哪一個大小的檔案下載 mb。 此數目應類似于每秒百萬位元最小電路頻寬的十分之一。 例如，如果您有100mbps 網際網路連線，可能會預期每秒 10 mb (10MBps) 。
 
 #### <a name="buffer-bloat"></a>緩衝區膨脹
 
@@ -217,7 +217,7 @@ Exchange Online 服務前端的使用者辦公室位置的網路 TCP 延遲會�
 
 我們會將使用者辦公室位置的 HTTP 連線測試至所有必要的 Microsoft 365 網路端點。 這些是發佈于 [https://aka.ms/o365ip](https://aka.ms/o365ip) 。 對於任何無法連線的必要網路端點，都會顯示網路洞察力。
 
-在商業網路周邊或使用做為雲端 proxy 的 proxy 伺服器、防火牆或其他網路安全裝置封鎖連線能力 ay。
+在商業網路周邊的 proxy 伺服器、防火牆或其他網路安全裝置可能會封鎖連線能力。 以 HTTP 要求來測試與 TCP 埠80的連線，並使用 HTTPS 要求來測試 TCP 埠443的連線。 如果沒有任何回應，FQDN 會標示為失敗。 如果有 HTTP 回應碼407，FQDN 會標示為失敗。 如果有 HTTP 回應碼403，我們會檢查回應的 Server 屬性，如果它似乎是 proxy 伺服器，我們會將其標記為失敗。 您可以使用 Windows 命令列工具 curl.exe 來模擬我們所執行的測試。
 
 我們會在每個必要的 Microsoft 365 網路端點（已于所定義的 [優化] 或 [允許] 類別中）測試 SSL 憑證 [https://aka.ms/o365ip](https://aka.ms/o365ip) 。 如果任何測試未找到 Microsoft SSL 憑證，則所連接的加密網路必須已被仲介網路裝置截獲。 網路洞察力會顯示在任何截獲的加密網路端點上。
 

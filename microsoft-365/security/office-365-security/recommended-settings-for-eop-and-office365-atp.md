@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用適用于 Office 365 的 Defender，您也會取得哪些額外功能？
-ms.openlocfilehash: 032cd6a50f56fd3e1e47faebfaea5f6665553a4b
-ms.sourcegitcommit: 09518b7c9146cda7fd42839ee644ad418d48491a
+ms.openlocfilehash: bc91ba58c9dc14954f638853ad24fcf7a26684e3
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49001522"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123465"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建議設定
 
@@ -30,7 +30,7 @@ ms.locfileid: "49001522"
 
 **Exchange Online Protection (EOP)** 是 Microsoft 365 訂閱的安全性核心，可協助阻止惡意電子郵件到達您員工的收件匣。 不過，每天都會有新的更複雜的攻擊，但通常需要改進的保護。 **Microsoft Defender For Office 365** 方案1或計畫2包含其他可讓系統管理員更深入的安全性、控制和調查的功能。
 
-雖然我們可讓安全性管理員自訂其安全性設定，但 EOP 和 Microsoft Defender for Office 365 有兩個安全性層級，我們建議： **Standard** 和 **Strict** 。 每個客戶的環境和需求各不相同，但我們相信這些階層的篩選將有助於防止不想要的郵件在大多數情況下抵達員工的收件匣。
+雖然我們可讓安全性管理員自訂其安全性設定，但 EOP 和 Microsoft Defender for Office 365 有兩個安全性層級，我們建議： **Standard** 和 **Strict**。 每個客戶的環境和需求各不相同，但我們相信這些階層的篩選將有助於防止不想要的郵件在大多數情況下抵達員工的收件匣。
 
 若要自動將標準或嚴格設定套用至使用者，請參閱 [EOP 和 Microsoft Defender For Office 365 中的預先設定安全性原則](preset-security-policies.md)。
 
@@ -54,16 +54,16 @@ ms.locfileid: "49001522"
 
 |安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**垃圾郵件** 偵測動作 <p> _SpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
-|**高信賴的垃圾郵件** 偵測動作 <p> _HighConfidenceSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
-|**網路釣魚電子郵件** 偵測動作 <p> _PhishSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
-|**高信賴網路釣魚電子郵件** 偵測動作 <p> _HighConfidencePhishAction_|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
-|**大量電子郵件** 偵測動作 <p> _BulkSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**    將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**垃圾郵件** 偵測動作 <p> _SpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**高信賴的垃圾郵件** 偵測動作 <p> _HighConfidenceSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**網路釣魚電子郵件** 偵測動作 <p> _PhishSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**高信賴網路釣魚電子郵件** 偵測動作 <p> _HighConfidencePhishAction_|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
+|**大量電子郵件** 偵測動作 <p> _BulkSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
 |大量電子郵件閾值 <p> _BulkThreshold_|7 |6 |4 |如需詳細資訊，請參閱 [Office 365 中的大量投訴層級 (BCL) ](bulk-complaint-level-values.md)。|
 |隔離保留期間 <p> _QuarantineRetentionPeriod_|15 天|30 天|30 天||
 |**安全性秘訣** <p> _InlineSafetyTipsEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |允許的寄件者 <p> _AllowedSenders_|無|無|無||
-|允許的寄件者網域 <p> _AllowedSenderDomains_|無|無|無|將網域新增至允許的寄件者清單是一種非常壞的主意。 攻擊者可以傳送您本來會加以篩選的電子郵件。 <p> 在 [ **反垃圾郵件設定** ] 頁面的 [安全性 & 規範中心] 中，使用 [哄騙智慧](learn-about-spoof-intelligence.md)，以查看組織的電子郵件網域中的所有收件者電子郵件地址或外部網域中的欺騙寄件者電子郵件地址。|
+|允許的寄件者網域 <p> _AllowedSenderDomains_|無|無|無|將網域新增至允許的寄件者清單是一種非常壞的主意。 攻擊者可以傳送您本來會加以篩選的電子郵件。 <p> 在 [**反垃圾郵件設定**] 頁面的 [安全性 & 規範中心] 中，使用 [哄騙智慧](learn-about-spoof-intelligence.md)，以查看組織的電子郵件網域中的所有收件者電子郵件地址或外部網域中的欺騙寄件者電子郵件地址。|
 |封鎖的寄件者 <p> _BlockedSenders_|無|無|無||
 |封鎖的寄件者網域 <p> _BlockedSenderDomains_|無|無|無||
 |**啟用使用者垃圾郵件通知** <p> _EnableEndUserSpamNotifications_|已停用 <p> `$false`|已啟用 <p> `$true`|已啟用 <p> `$true`||
@@ -81,21 +81,21 @@ ms.locfileid: "49001522"
 
 |安全性功能名稱|註解|
 |---|---|
-| ( _IncreaseScoreWithImageLinks_ ) **的遠端網站影像連結**||
-|URL ( _IncreaseScoreWithNumericIps_ **中的數位 IP 位址** ) ||
-|**UL 重新導向至其他埠** ( _IncreaseScoreWithRedirectToOtherPort_ ) ||
-|**.Biz 或. info 網站的 URL** ( _IncreaseScoreWithBizOrInfoUrls_ ) ||
-|**空郵件** ( _MarkAsSpamEmptyMessages_ ) ||
-|**在 HTML (MarkAsSpamJavaScriptInHtml 中 JavaScript 或 VBScript** ) _MarkAsSpamJavaScriptInHtml_||
-|HTML ( _MarkAsSpamFramesInHtml_ **中的框架或 IFrame 標記** ) ||
-|HTML ( _MarkAsSpamObjectTagsInHtml_ **中的物件標記** ) ||
-|**在 HTML (MarkAsSpamEmbedTagsInHtml 中嵌入標記** ) _MarkAsSpamEmbedTagsInHtml_||
-|HTML ( _MarkAsSpamFormTagsInHtml_ **中的表單標記** ) ||
-|HTML ( _MarkAsSpamWebBugsInHtml_ **中的 Web 臭蟲** ) ||
-|套用 **機密的單字清單** ( _MarkAsSpamSensitiveWordList_ ) ||
-|**SPF 記錄： hard fail** ( _MarkAsSpamSpfRecordHardFail_ ) ||
-|**條件式寄件者識別碼篩選： hard fail** ( _MarkAsSpamFromAddressAuthFail_ ) ||
-|**NDR 退信攻擊** ( _MarkAsSpamNdrBackscatter_ ) ||
+| (_IncreaseScoreWithImageLinks_) **的遠端網站影像連結**||
+|URL (_IncreaseScoreWithNumericIps_ **中的數位 IP 位址**) ||
+|**UL 重新導向至其他埠** (_IncreaseScoreWithRedirectToOtherPort_) ||
+|**.Biz 或. info 網站的 URL** (_IncreaseScoreWithBizOrInfoUrls_) ||
+|**空郵件** (_MarkAsSpamEmptyMessages_) ||
+|**在 HTML (MarkAsSpamJavaScriptInHtml 中 JavaScript 或 VBScript**) _MarkAsSpamJavaScriptInHtml_||
+|HTML (_MarkAsSpamFramesInHtml_ **中的框架或 IFrame 標記**) ||
+|HTML (_MarkAsSpamObjectTagsInHtml_ **中的物件標記**) ||
+|**在 HTML (MarkAsSpamEmbedTagsInHtml 中嵌入標記**) _MarkAsSpamEmbedTagsInHtml_||
+|HTML (_MarkAsSpamFormTagsInHtml_ **中的表單標記**) ||
+|HTML (_MarkAsSpamWebBugsInHtml_ **中的 Web 臭蟲**) ||
+|套用 **機密的單字清單** (_MarkAsSpamSensitiveWordList_) ||
+|**SPF 記錄： hard fail** (_MarkAsSpamSpfRecordHardFail_) ||
+|**條件式寄件者識別碼篩選： hard fail** (_MarkAsSpamFromAddressAuthFail_) ||
+|**NDR 退信攻擊** (_MarkAsSpamNdrBackscatter_) ||
 |
 
 #### <a name="eop-outbound-spam-policy-settings"></a>EOP 輸出垃圾郵件原則設定
@@ -122,7 +122,7 @@ ms.locfileid: "49001522"
 
 |安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**您是否要在郵件被隔離時通知收件者？** <p> _Action_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
+|**您是否要在郵件被隔離時通知收件者？** <p> _動作_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
 |**常見附件類型篩選** <p> _EnableFileFilter_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
 |**惡意程式碼零小時自動清除** <p> _ZapEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |通知未傳遞郵件的 **內部寄件者** <p> _EnableInternalSenderNotifications_|停用 <p> `$false`|停用 <p> `$false`|停用 <p> `$false`||
@@ -148,7 +148,7 @@ Microsoft Defender for Office 365 訂閱附帶其他安全性權益。 如需最
 
 > [!IMPORTANT]
 >
-> - Microsoft Defender for Office 365 中的預設反網路釣魚原則為所有收件者提供 [欺騙保護](set-up-anti-phishing-policies.md#spoof-settings) 。 不過，預設原則中並未設定或啟用特定寄件者或寄件者網域的可用 [類比保護](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 設定。 若要啟用模擬保護，請在 Office 365 的 Defender 中，設定預設原則或建立其他的反網路釣魚原則。
+> - Microsoft Defender for Office 365 中的預設反網路釣魚原則為所有收件者提供 [欺騙保護](set-up-anti-phishing-policies.md#spoof-settings) 和信箱智慧。 不過，預設原則中並未設定或啟用其他可用的模擬 [保護](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 功能和 [高級設定](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 。 若要啟用所有保護功能，請修改預設的反網路釣魚原則，或建立其他的反網路釣魚原則。
 >
 > - 沒有預設的安全連結原則或安全附件原則，可自動保護組織中的所有收件者。 若要取得保護，您必須建立至少一個安全連結原則及安全附件原則。
 >
@@ -280,17 +280,17 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 |安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**安全附件未知的惡意程式碼回應** <p> _Action_|封鎖 <p> `Block`|封鎖 <p> `Block`|封鎖 <p> `Block`||
+|**安全附件未知的惡意程式碼回應** <p> _動作_|封鎖 <p> `Block`|封鎖 <p> `Block`|封鎖 <p> `Block`||
 |**偵測時重新導向附件** ： **啟用重新導向** <p> _Redirect_ <p> _RedirectAddress_|Off，但沒有指定電子郵件地址。 <p> `$true` <p> 無|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|將郵件重新導向至安全性管理員以進行審閱。|
 |**如果惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。** <p> _ActionOnError_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |
 
 ## <a name="related-articles"></a>相關文章
 
-- 您在尋找 **Exchange 郵件流程規則的最佳作法 (又稱為傳輸規則** ) ？ 請參閱 [在 Exchange Online 中設定郵件流程規則的最佳作法](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)。
+- 您在尋找 **Exchange 郵件流程規則的最佳作法 (又稱為傳輸規則**) ？ 請參閱 [在 Exchange Online 中設定郵件流程規則的最佳作法](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)。
 
 - 系統管理員和使用者可以提交誤報 (已標示為錯誤) 和漏報的錯誤電子郵件， (錯誤的電子郵件) Microsoft 進行分析。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
 - 請使用下列 **連結，以** 取得如何 **設定** [EOP 服務](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的資訊，以及設定 [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 請不要忘記「[防範 Office 365 威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」中的有用指示。
 
-- 您可以在以下位置找到 **適用于 Windows 的安全性基準** ：您 [可以在何處取得安全性基準？](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)針對 GPO/內部部署選項，以及 [使用安全性基線，在 intune 中為 intune 型安全性設定 Windows 10 裝置](https://docs.microsoft.com/intune/protect/security-baselines)。 最後，比較 microsoft defender [For endpoint 和 Windows intune 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)時，可使用 microsoft Defender for Endpoint 和 microsoft intune 安全性基準之間的比較。
+- 您可以在以下位置找到 **適用于 Windows 的安全性基準**：您 [可以在何處取得安全性基準？](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)針對 GPO/內部部署選項，以及 [使用安全性基線，在 intune 中為 intune 型安全性設定 Windows 10 裝置](https://docs.microsoft.com/intune/protect/security-baselines)。 最後，比較 microsoft defender [For endpoint 和 Windows intune 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)時，可使用 microsoft Defender for Endpoint 和 microsoft intune 安全性基準之間的比較。

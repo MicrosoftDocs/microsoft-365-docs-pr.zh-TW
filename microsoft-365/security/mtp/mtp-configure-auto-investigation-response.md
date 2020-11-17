@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 5ba17c414b6f6470d2e9af14d1f484b435cb4f51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846493"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49123604"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中設定自動調查和回應功能
 
@@ -55,9 +55,9 @@ Microsoft 365 Defender 包含強大的 [自動化調查和回應功能](mtp-auto
 
 1. 請移至 Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 並登入。
 
-2. 移至 [ **設定**  >  **許可權** ]  >  **裝置群組** 。 
+2. 移至 [**設定**  >  **許可權**]  >  **裝置群組**。 
 
-3. 檢查您的裝置群組原則。 具體說來，請查看 [ **修正層級** ] 欄。 建議您 **自動使用完整修正威脅** 。  您可能需要建立或編輯裝置群組，以取得您想要的自動化程度。 若要取得此工作的說明，請參閱下列文章：
+3. 檢查您的裝置群組原則。 具體說來，請查看 [ **修正層級** ] 欄。 建議您 **自動使用完整修正威脅**。  您可能需要建立或編輯裝置群組，以取得您想要的自動化程度。 若要取得此工作的說明，請參閱下列文章：
 
    - [如何修正威脅](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
    
@@ -71,7 +71,7 @@ Microsoft 提供內建的 [警示原則](https://docs.microsoft.com/microsoft-36
 
 Office 365 中的安全性設定可協助保護電子郵件和內容。 若要查看或變更這些設定，請遵循 [防範威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)的指導方針。
 
-1. 在 Microsoft 365 security center ( [https://security.microsoft.com/](https://security.microsoft.com/)) 中，移至 [ **原則** ] [  >  **威脅防護** ]。
+1. 在 Microsoft 365 security center ([https://security.microsoft.com/](https://security.microsoft.com/)) 中，移至 [**原則**] [  >  **威脅防護**]。
 
 2. 請確定已設定下列所有原則。 若要取得説明和建議，請參閱 [防止威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)。
 
@@ -91,15 +91,15 @@ Office 365 中的安全性設定可協助保護電子郵件和內容。 若要�
 
 1. 請移至 Microsoft 365 security center ([https://security.microsoft.com](https://security.microsoft.com)) 並登入。
 
-2. 在功能窗格中，尋找 **事件** 、 **動作中心** 及 **搜尋** ，如下列影像所示：
+2. 在功能窗格中，尋找 **事件**、 **動作中心** 及 **搜尋**，如下列影像所示：
 
    :::image type="content" source="../../media/mtp-enable/mtp-on.png" alt-text="MTP 開啟":::
 
-   - 如果您看到 **事件** 、 **動作中心** 及 **搜尋** ，則會開啟 Microsoft 365 Defender。 繼續下一個程式， [複查或變更裝置群組的自動化層級](#review-or-change-the-automation-level-for-device-groups)。
+   - 如果您看到 **事件**、 **動作中心** 及 **搜尋**，則會開啟 Microsoft 365 Defender。 請參閱本文中 () [的裝置群組，查看或變更其自動化層級](#review-or-change-the-automation-level-for-device-groups) 。
 
-   - 如果您 *未* 看到 **事件** 、 **動作中心** 或 **搜尋** ，則可能無法開啟 Microsoft 365 Defender。 在此情況下，請繼續進行下一個步驟。
+   - 如果您 *未* 看到 **事件**、 **動作中心** 或 **搜尋**，則可能無法開啟 Microsoft 365 Defender。 在此情況下，請繼續進行下一個步驟 (查看本文中的 [擱置和完成的動作](#review-pending-and-completed-actions-in-the-action-center)) 。
 
-3. 在功能窗格中，選擇 [ **設定**  >  **Microsoft 365 Defender** ]。 確認已開啟 Microsoft 365 Defender。 
+3. 在功能窗格中，選擇 [**設定**  >  **Microsoft 365 Defender**]。 確認已開啟 Microsoft 365 Defender。 
 
    需要協助？ 請參閱 [開啟 Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable)。
 

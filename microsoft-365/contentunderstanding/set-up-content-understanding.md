@@ -6,15 +6,16 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
+ms.collection: enabler-strategic
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: 8f1ebd70f932bce874efc19f525b549f6717f532
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: dfbcc8e41a28e3107b58ac6b8d471e3a2a08d036
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988677"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087568"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -22,12 +23,12 @@ ms.locfileid: "48988677"
 
 開始之前，請先考慮下列事項：
 
-- 哪些 SharePoint 網站會啟用表單處理？ 所有網站、部分或選取的網站嗎？
+- Which SharePoint sites will you enable form processing? All of them, some, or select sites?
 - 您的預設內容中心名稱為何？
 
 您可以在 Microsoft 365 系統管理中心初次設定之後變更您的設定。
 
-設定之前，請務必針對您環境中的設定和設定內容理解的最佳方式進行規劃。 例如，您需要考慮下列名稱：
+Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make considerations about the following names of:
 
 - 您想要啟用表單處理的 SharePoint 網站 - 所有網站、部分或選取的網站
 - 您的內容中心和主要網站系統管理員的名稱
@@ -41,21 +42,21 @@ ms.locfileid: "48988677"
 
 ## <a name="to-set-up-sharepoint-syntex"></a>若要設定 SharePoint Syntex
 
-1. 在 [Microsoft 365 系統管理中心] 中，選取 **[設定]** ，然後查看 **[檔案和內容]** 區段。
+1. 在 [Microsoft 365 系統管理中心] 中，選取 **[設定]**，然後查看 **[檔案和內容]** 區段。
 
-2. 在 **[檔案和內容]** 區段中，選取 **[自動化內容瞭解]** 。<br/>
+2. 在 **[檔案和內容]** 區段中，選取 **[自動化內容瞭解]**。<br/>
 
 3. 在 **[自動化內容瞭解]** 頁面上，按一下 **[開始使用]** 逐步執行設定流程。<br/>
 
     > [!div class="mx-imgBorder"]
     > ![開始設定](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. 在 **[設定表單處理]** 頁面上，您可以選擇是否要讓使用者能夠在特定 SharePoint 文件庫中建立表單處理模型。 您可以在 [文件庫] 功能區中使用功能表選項，在啟用此功能的 SharePoint 文件庫中 **[建立表單處理模型]** 。
+4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
-     針對 **哪個 SharePoint 文件庫應顯示建立表單處理模型的選項** ，您可以選取：</br>
-      - **所有 SharePoint 文件庫** ，讓組織中的所有 SharePoint 文件庫皆可使用。</br>
-      - **僅限選取網站中的文件庫** ，然後選取您要讓其可供使用的網站，或上傳最多 50 個網站的清單。</br>
-      - **不使用 SharePoint 文件庫** ，如果您不想讓任何網站都能使用 SharePoint 文件庫 (您可以在設定後變更)。
+     針對 **哪個 SharePoint 文件庫應顯示建立表單處理模型的選項**，您可以選取：</br>
+      - **所有 SharePoint 文件庫**，讓組織中的所有 SharePoint 文件庫皆可使用。</br>
+      - **僅限選取網站中的文件庫**，然後選取您要讓其可供使用的網站，或上傳最多 50 個網站的清單。</br>
+      - **不使用 SharePoint 文件庫**，如果您不想讓任何網站都能使用 SharePoint 文件庫 (您可以在設定後變更)。
 
    > [!div class="mx-imgBorder"]
    > ![設定表單處理](../media/content-understanding/admin-configforms.png)
@@ -67,18 +68,18 @@ ms.locfileid: "48988677"
 
     1. 在 **[網站名稱]** 中，輸入您要給予內容中心網站的名稱。
     
-    1. **[網站位址]** 會根據您為網站名稱所選取的內容，顯示網站的 URL。 如果您想要變更，請按一下 **[編輯]** 。
+    1. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.
 
        > [!div class="mx-imgBorder"]
        > ![建立內容中心](../media/content-understanding/admin-cu-create-cc.png)</br>
 
-       選取 **[下一步]** 。
+       選取 **[下一步]**。
 
-6. 在 **[檢閱並完成]** 頁面上，您可以查看您選取的設定，並選擇進行變更。 如果您對您的選擇感到滿意，請選取 **[啟用]** 。
+6. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
 
-7. 在 [確認] 頁面上，按一下 **[完成]** 。
+7. 在 [確認] 頁面上，按一下 **[完成]**。
 
-8. 您將會回到 **[自動化內容瞭解]** 頁面。 在此頁面上，您可以選取 **[管理]** ，以對設定進行任何變更。 
+8. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
 ## <a name="assign-licenses"></a>指派授權
 
@@ -86,22 +87,22 @@ ms.locfileid: "48988677"
 
 若要指派授權：
 
-1. 在 Microsoft 365 系統管理中心中，在 **[使用者]** 底下，按一下 **[作用中使用者]** 。
+1. 在 Microsoft 365 系統管理中心中，在 **[使用者]** 底下，按一下 **[作用中使用者]**。
 
-2. 選取您要授權的使用者，然後按一下 **[管理產品授權]** 。
+2. 選取您要授權的使用者，然後按一下 **[管理產品授權]**。
 
-3. 選取 **[指派更多]** 。
+3. 選取 **[指派更多]**。
 
-4. 選取 **[SharePoint Server]** 。 在 **[應用程式]** 下，確定選取 **[Common Data Service for SharePoint Syntex]** 、 **[SharePoint Syntex]** 和 **[SharePoint Syntex - SPO 類型]** 。
+4. Select **SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 365 系統管理中心中的 SharePoint Syntex 授權](../media/content-understanding/sharepoint-syntex-licenses.png)
 
-5. 按一下 **[儲存變更]** 。
+5. 按一下 **[儲存變更]**。
 
 ## <a name="ai-builder-credits"></a>AI Builder 點數
 
-如果貴組織中的 SharePoint Syntex 有 300 個或更多 SharePoint Syntex 授權，您將會獲一百萬的 AI Builder 點數。 如果您的授權少於 300 個，您必須購買 AI Builder 點數，才能使用表單處理。
+If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
 
 您可以使用 [AI Builder  計算機](https://powerapps.microsoft.com/ai-builder-calculator)，來估計最適合您的 AI Builder 容量。
 

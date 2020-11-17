@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 在 Microsoft SharePoint Syntex 中建立文件瞭解模型時，運用字詞庫分類法。
-ms.openlocfilehash: f7219f6facc1d29242f7bd52743da92e13de3b89
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 0008dd02ef46401e9f0c9414b8363cff034c18eb
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337274"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087318"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>在建立擷取器時運用字詞庫分類法
 
@@ -45,7 +46,7 @@ ms.locfileid: "48337274"
    ![合約服務](../media/content-understanding/contract-services.png)</br>
 
 
-將模型套用至文件庫後，當文件上載到庫時，當擷取器找到任何同義字值（*「設計」*、*「圖形」* 和 *「地形」*）時，*創意服務*欄將顯示首選字詞（*「創造性」*）。
+將模型套用至文件庫後，當文件上載到庫時，當擷取器找到任何同義字值（*「設計」*、*「圖形」* 和 *「地形」*）時，*創意服務* 欄將顯示首選字詞（*「創造性」*）。
 
    ![合約服務欄](../media/content-understanding/creative.png)</br>
 

@@ -7,14 +7,15 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
+ms.collection: enabler-strategic
 localization_priority: Priority
 description: 本文將討論如何將保留標籤套用至文件瞭解模型
-ms.openlocfilehash: 8f74187d14620f0c095b19c6f59b2dbd1b3f98d1
-ms.sourcegitcommit: 3f8e573244bc082518125e339a385c41ef6ee800
+ms.openlocfilehash: 2e6d300b63a173d01488406485cffa44fab4278e
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48337214"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087472"
 ---
 # <a name="apply-a-retention-label-to-a-document-understanding-model"></a>將保留標籤套用至文件瞭解模型
 
@@ -27,7 +28,7 @@ ms.locfileid: "48337214"
 
 您可以在 Microsoft SharePoint Syntex 中輕鬆套用 [保留標籤](https://docs.microsoft.com/microsoft-365/compliance/retention) 到文件瞭解模型。
 
-保留標籤讓您可以將保留設定套用至文件瞭解模型識別的文件。  例如，您希望您的模型不僅識別上傳到文件庫的任何*保險通知*文件，而且還要對其應用*商務*保留標記，以便在指定的時間段（例如，接下來的五個月）內無法從文件庫中删除這些檔案。
+保留標籤讓您可以將保留設定套用至文件瞭解模型識別的文件。  例如，您希望您的模型不僅識別上傳到文件庫的任何 *保險通知* 文件，而且還要對其應用 *商務* 保留標記，以便在指定的時間段（例如，接下來的五個月）內無法從文件庫中删除這些檔案。
 
 頭過模型首頁上的模型設定，可以將預存的保留標籤套用至文件瞭解模型。 
 
@@ -65,7 +66,7 @@ ms.locfileid: "48337214"
 在文件庫中模型的檢視頁面上，將顯示新的 **[保留標籤]** 欄。  當模型對其識別為屬於其內容類型的檔案進行分類並在庫視圖中列出這些檔案時，[保留標籤] 欄還將顯示透過模型套用至它的保留標籤的名稱。
 
 
-例如，您的模型識別的所有*保險通知*文件也將套用 *[商務]* 保留標籤，以防止它們在五個月內從文件庫中删除。 如果試圖從文件庫中删除該檔案，系統將顯示錯誤訊息，指出由於套用了保留標籤而不允許此動作。
+例如，您的模型識別的所有 *保險通知* 文件也將套用 *[商務]* 保留標籤，以防止它們在五個月內從文件庫中删除。 如果試圖從文件庫中删除該檔案，系統將顯示錯誤訊息，指出由於套用了保留標籤而不允許此動作。
 
 ## <a name="see-also"></a>另請參閱
 [建立分類器](create-a-classifier.md)
@@ -74,4 +75,4 @@ ms.locfileid: "48337214"
 
 [文件瞭解概觀](document-understanding-overview.md)
 
-[建立表單處理模型](create-a-form-processing-model.md)  
+
