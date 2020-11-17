@@ -17,18 +17,18 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: 6a191cf323e180fa77614eb09bae4185228a5029
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
+ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087664"
+ms.locfileid: "49123580"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>使用入口網站啟動計畫程式啟動入口網站
 
 入口網站是您內部網路上的 SharePoint 網站，擁有大量網站檢視者在該網站上取用內容。 以波形的式啟動入口網站是確保使用者能夠存取新 SharePoint 線上入口網站的流暢且具能力的經驗的重要部分。 
 
-以聲波發射是一種重要方式，可讓您在 [線上 SharePoint 中規劃入口網站發佈的計畫](https://docs.microsoft.com/en-us/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)，以逐步展示您的入口網站。 入口網站啟動排程程式的設計目的是為了協助您追蹤新入口網站的重新導向，以進行波形/逐步化方法。 在每個波形期間，您可以在每個部署浪潮期間收集使用者意見反應並監控效能。 這具有逐步引入入口網站的優勢，讓您可以選擇暫停及解決問題，再繼續進行下一個浪潮，最後確保使用者的取得積極的經驗。 
+以聲波發射是一種重要方式，可讓您在 [線上 SharePoint 中規劃入口網站發佈的計畫](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)，以逐步展示您的入口網站。 入口網站啟動排程程式的設計目的是為了協助您追蹤新入口網站的重新導向，以進行波形/逐步化方法。 在每個波形期間，您可以在每個部署浪潮期間收集使用者意見反應並監控效能。 這具有逐步引入入口網站的優勢，讓您可以選擇暫停及解決問題，再繼續進行下一個浪潮，最後確保使用者的取得積極的經驗。 
 
 重新導向的類型有兩種： 
 - 雙向：啟動新的現代 SharePoint 線上入口網站以取代現有的 SharePoint 傳統或新式入口網站 
