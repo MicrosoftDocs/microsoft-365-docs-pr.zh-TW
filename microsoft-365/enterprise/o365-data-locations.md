@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 判斷 Microsoft 365 客戶資料的全球儲存位置
-ms.openlocfilehash: e450468b54bdbce0e6c01dd3b935922836ab9f90
-ms.sourcegitcommit: 705915f8bf9b7c082d12a009523d8aa0670a74a1
+ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48493682"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135988"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -31,7 +31,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 下表顯示針對所有 Microsoft 的全球雲端位置的 Microsoft 365 服務，客戶資料待用儲存的所在位置。 展開您的帳單地址所在國家/地區的位置，以找出每個服務的客戶資料將儲存的位置。
 
-客戶應該在您的 Microsoft 365 系統管理中心的 [設定] | [組織設定] | [組織設定檔] | [資料位置]**** 檢視租用戶特定資料位置資訊。
+客戶應該在您的 Microsoft 365 系統管理中心的 [設定] | [組織設定] | [組織設定檔] | [資料位置] 檢視租用戶特定資料位置資訊。
 
 新 Microsoft 365 租用戶會預設為根據與該租用戶的第一個訂閱相關聯之交易上的國家/地區的地區。
 
@@ -127,6 +127,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | 國家/地區 | 城市 |
 | --- | --- |
 | 澳洲 | 雪梨、墨爾本 |
+| 巴西 | 里約、坎皮納斯 |
 | 加拿大 | 魁北克市、多倫多 |
 | 歐盟 | 奧地利 (維也納)、芬蘭 (赫爾辛基)、法國 (巴黎、馬賽)、愛爾蘭 (都柏林)、荷蘭 (阿姆斯特丹) |
 | 法國 | 巴黎、馬賽 |
@@ -892,19 +893,19 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 
 | 服務 | 位置 |
 | --- | --- |
-| Exchange Online | 全球地理位置 3 - 美洲地區 |
-| 商務用 OneDrive | 全球地理位置 3 - 美洲地區 |
-| SharePoint Online | 全球地理位置 3 - 美洲地區 |
+| Exchange Online | 巴西 |
+| 商務用 OneDrive | 巴西 |
+| SharePoint Online | 巴西 |
 | 商務用 Skype | 美國 |
-| Microsoft Teams | 美國 |
-| Office Online &amp; Mobile | 全球地理位置 3 - 美洲地區 |
-| EOP | 全球地理位置 3 - 美洲地區 |
+| Microsoft Teams | 巴西 |
+| Office Online &amp; 行動裝置 | 巴西 |
+| EOP | 巴西 |
 | Intune | 美國 |
-| MyAnalytics | 全球地理位置 3 - 美洲地區 |
+| MyAnalytics | 巴西 |
 | Planner | 美國 |
 | Sway | 美國 |
 | Yammer | 美國 |
-| OneNote 服務 | 全球地理位置 3 - 美洲地區 |
+| OneNote 服務 | 巴西 |
 | Stream | 美國 |
 | Whiteboard | 美國 |
 | Forms | 美國 |
@@ -2282,7 +2283,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 ## <a name="guadeloupe"></a>瓜地洛普
 <details><summary>按一下以展開</summary><p>
 
-| 服務 | Location |
+| 服務 | 位置 |
 | --- | --- |
 | Exchange Online | 美國 |
 | 商務用 OneDrive | 美國 |
