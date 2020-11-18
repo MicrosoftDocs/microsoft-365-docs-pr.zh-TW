@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
-ms.openlocfilehash: a2cf47d12d00eb2f4b4d58921ea09ddfaa91cece
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 7f9e33a6f117f5da592d875e40cefc6a0072fd4a
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446426"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126670"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -35,7 +35,7 @@ ms.locfileid: "48446426"
 
 除了 SPF 和 DMARC 以外，您也應使用 DKIM，以避免詐騙程式傳送看似來自您的網域的郵件。 DKIM 可讓您在郵件標頭中將數位簽章新增到外寄電子郵件訊息中。 聽起來可能很複雜，但實則不然。 在設定 DKIM 時，您會授權給網域，使其能夠使用密碼編譯驗證將其名稱簽署至電子郵件訊息，或建立關聯。 電子郵件系統在接收來自您網域的電子郵件時，可以利用此數位簽章來判斷所接收的內送電子郵件是否合法。
 
-基本上，您可以使用私密金鑰為網域的外寄電子郵件中的標頭加密。 您可以將公開金鑰發佈至網域的 DNS 記錄，讓接收端伺服器用來解碼簽章。 他們可以使用公開金鑰來確認郵件確實來自於您，而不是他人*冒充*您的網域寄來的。
+基本上，您可以使用私密金鑰為網域的外寄電子郵件中的標頭加密。 您可以將公開金鑰發佈至網域的 DNS 記錄，讓接收端伺服器用來解碼簽章。 他們可以使用公開金鑰來確認郵件確實來自於您，而不是他人 *冒充* 您的網域寄來的。
 
 Microsoft 365 會自動為其初始 'onmicrosoft.com' 網域設定 DKIM。 這表示您不需要執行任何操作，即可為任何初始網域名稱設定 DKIM (例如：litware.onmicrosoft.com)。 如需網域的詳細資訊，請參閱[網域常見問題集](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#why-do-i-have-an-onmicrosoftcom-domain)。
 
@@ -103,7 +103,7 @@ SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽�
       New-DkimSigningConfig -DomainName {Domain for which config is to be created} -KeySize 2048 -Enabled $True
       ```
 
-與 Microsoft 365 保持連線以「驗證」** 組態。
+與 Microsoft 365 保持連線以「驗證」組態。
 
 1. 執行下列命令：
 
@@ -199,13 +199,13 @@ TTL:                3600
 
 1. 請使用工作或學校帳戶[登入 Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
-2. 選取左上角的應用程式啟動器圖示，然後選擇 [管理員]****。
+2. 選取左上角的應用程式啟動器圖示，然後選擇 [管理員]。
 
-3. 在導覽的左下角展開 [管理員]****，然後選擇 [Exchange]****。
+3. 在導覽的左下角展開 [管理員]，然後選擇 [Exchange]。
 
-4. 移至 [保護]**** \> [dkim]****。
+4. 移至 [保護] \> [dkim]。
 
-5. 選取要啟用 DKIM 的網域，然後，針對 [使用 DKIM 簽章簽署此網域的郵件]****，選擇 [啟用]****。 對每個自訂網域重複此步驟。
+5. 選取要啟用 DKIM 的網域，然後，針對 [使用 DKIM 簽章簽署此網域的郵件]，選擇 [啟用]。 對每個自訂網域重複此步驟。
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>使用 PowerShell 為自訂網域啟用 DKIM 簽署
 
@@ -311,7 +311,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>設定 DKIM，讓第三方服務可代表您的自訂網域傳送 (或偽造) 電子郵件
 <a name="SetUp3rdPartyspoof"> </a>
 
-某些大量電子郵件服務提供者或軟體即服務提供者，會允許您為來自於其服務的電子郵件設定 DKIM 金鑰。 若要設定所需的 DNS 記錄，您必須與第三方提供者進行協調。 每個組織的設定方式都不盡相同。 具體程序完全取決於組織。
+某些大量電子郵件服務提供者或軟體即服務提供者，會允許您為來自於其服務的電子郵件設定 DKIM 金鑰。 若要設定所需的 DNS 記錄，您必須與第三方提供者進行協調。 部分第三方伺服器可以擁有不同選取器之自己的 CNAME 記錄。 每個組織的設定方式都不盡相同。 具體程序完全取決於組織。
 
 若已為 contoso.com 和 bulkemailprovider.com 正確設定 DKIM，郵件可能會如下列範例所示：
 
