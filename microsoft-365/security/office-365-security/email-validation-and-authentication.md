@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: 系統管理員現在可以了解 EOP 如何使用電子郵件驗證 (SPF、DKIM 和 DMARC) 來協助防止詐騙、網路釣魚和垃圾郵件。
-ms.openlocfilehash: d490caf600fef9d9caab79a1a97ec29637e10d66
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 7c196b68d88187da2890cc886f646c5416ef9a11
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202972"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131070"
 ---
 # <a name="email-authentication-in-eop"></a>EOP 中的電子郵件驗證
 
@@ -32,9 +32,9 @@ ms.locfileid: "48202972"
 
 電子郵件驗證 (又稱為電子郵件驗證) 是一組嘗試停止詐騙 (來自偽造寄件者的電子郵件訊息) 的標準。 在所有 Microsoft 365 組織中，EOP 會使用這些標準來驗證輸入電子郵件：
 
-- [SPF](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
+- [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-- [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide)
+- [DKIM](use-dkim-to-validate-outbound-email.md)
 
 - [DMARC](use-dmarc-to-validate-email.md)
 
@@ -44,7 +44,7 @@ ms.locfileid: "48202972"
 
 ## <a name="use-email-authentication-to-help-prevent-spoofing"></a>使用電子郵件驗證以協助避免詐騙
 
-DMARC 會透過檢查郵件中的**寄件者**位址來防止詐騙。 **寄件者**位址是使用者在其電子郵件用戶端中看到的寄件者電子郵件地址。 目的地電子郵件組織也可以驗證電子郵件網域是否已通過 SPF 或 DKIM。 換句話說，網域已經過驗證，因此寄件者的電子郵件地址不會詐騙。
+DMARC 會透過檢查郵件中的 **寄件者** 位址來防止詐騙。 **寄件者** 位址是使用者在其電子郵件用戶端中看到的寄件者電子郵件地址。 目的地電子郵件組織也可以驗證電子郵件網域是否已通過 SPF 或 DKIM。 換句話說，網域已經過驗證，因此寄件者的電子郵件地址不會詐騙。
 
 不過，SPF、DKIM 和 DMARC 的 DNS 記錄 (統稱為電子郵件驗證原則) 是選擇性的。 具有強式電子郵件驗證原則 (例如 microsoft.com 和 skype.com) 的網域會受到保護，避免遭受詐騙。 但是具有較弱式電子郵件驗證原則或完全沒有原則的網域，會是詐騙的主要目標。
 
@@ -54,7 +54,7 @@ DMARC 會透過檢查郵件中的**寄件者**位址來防止詐騙。 **寄件�
 
 發佈強式電子郵件驗證原則的中小型公司的比例較小。 而且在北美洲和歐洲西部以外的電子郵件網域，此數字甚至會更小。
 
-缺乏強式電子郵件驗證原則是個大問題。 組織可能不了解電子郵件驗證的運作方式，但攻擊者能夠完全了解並加以利用。 因為網路釣魚疑慮，以及強式電子郵件驗證原則的採用率有限，Microsoft 使用*隱含電子郵件驗證*來檢查輸入電子郵件。
+缺乏強式電子郵件驗證原則是個大問題。 組織可能不了解電子郵件驗證的運作方式，但攻擊者能夠完全了解並加以利用。 因為網路釣魚疑慮，以及強式電子郵件驗證原則的採用率有限，Microsoft 使用 *隱含電子郵件驗證* 來檢查輸入電子郵件。
 
 隱含電子郵件驗證是一般電子郵件驗證原則的延伸模組。 這些延伸模組包括：寄件者信譽、寄件者歷程記錄、收件者歷程記錄、行為分析，以及其他進階技術。 如果沒有來自這些延伸模組的其他信號，從未使用電子郵件驗證原則的網域傳送的郵件將被標示為詐騙。
 
@@ -62,7 +62,7 @@ DMARC 會透過檢查郵件中的**寄件者**位址來防止詐騙。 **寄件�
 
 ## <a name="composite-authentication"></a>複合驗證
 
-如果網域沒有傳統的 SPF、DKIM 和 DMARC 記錄，這些記錄檢查無法傳達足夠的驗證狀態資訊。 因此，Microsoft 開發了用於隱含電子郵件驗證的演算法。 此演算法會將多個訊號組合成單一值，稱為_複合驗證_，或簡稱為 `compauth`。 系統會在郵件標頭的 **Authentication-Results** 標頭中，加上 `compauth` 值戳記。
+如果網域沒有傳統的 SPF、DKIM 和 DMARC 記錄，這些記錄檢查無法傳達足夠的驗證狀態資訊。 因此，Microsoft 開發了用於隱含電子郵件驗證的演算法。 此演算法會將多個訊號組合成單一值，稱為 _複合驗證_，或簡稱為 `compauth`。 系統會在郵件標頭的 **Authentication-Results** 標頭中，加上 `compauth` 值戳記。
 
 ```text
 Authentication-Results:
@@ -169,7 +169,7 @@ Microsoft 365 會將來自您公司基礎結構的輸入電子郵件視為已驗
 
 在下方的螢幕擷取畫面中，來源 IP 是 131.107.18.4，PTR 記錄是 outbound.mail.protection.outlook.com。 這會針對傳送基礎結構顯示為 outlook.com。
 
-若要允許此寄件者傳送未經驗證的電子郵件，請將 [否] **** 變更為 [是]****。
+若要允許此寄件者傳送未經驗證的電子郵件，請將 [否] 變更為 [是]。
 
 ![設定反詐騙允許的寄件者](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
@@ -188,7 +188,7 @@ Microsoft 365 會將來自您公司基礎結構的輸入電子郵件視為已驗
 - 如果他們使用大量寄件者代表他們傳送電子郵件，則要確認 [寄件者] 地址中的網域 (如果屬於他們) 與通過 SPF 或 DMARC 的網域相符。
 
 - 確認下列位置 (如果他們使用這些位置) 包含在 SPF 記錄中：
-  
+
   - 內部部署電子郵件伺服器。
   - 軟體即服務 (SaaS) 提供者傳送的電子郵件。
   - 從雲端主控服務 (Microsoft Azure、GoDaddy、Rackspace、Amazon Web Services 等等) 傳送的電子郵件。
