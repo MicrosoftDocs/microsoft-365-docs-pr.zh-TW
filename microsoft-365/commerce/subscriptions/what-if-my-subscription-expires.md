@@ -23,28 +23,28 @@ search.appverid:
 - GEA150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: 瞭解當您的 Microsoft 365 訂閱到期、停用或取消時，您的資料會發生什麼情況。
-ms.openlocfilehash: b09f56fefb7791af012c9dab2ba4e5684b9bf89f
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: c191b2fa795614a272b28cedae8d23693933dc95
+ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906820"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49135976"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>365 Microsoft 商務版訂閱結束時，我的資料與存取權會發生什麼情況？
 
-如果您的訂閱結束，原因是它已到期，或是因為您決定取消，您的 Microsoft 365 服務、應用程式及客戶資料的存取都會在訂閱完全關閉或 *deprovisioned* 之前，先進行多種狀態。 如果您知道這項進展，您將會更好地將您的訂閱傳回使用中狀態過遲之前的狀態，或者，如果您離開 Microsoft 365，請先備份您的資料，再將其最後刪除。
+如果您的訂閱結束時（因為它已到期，或您決定取消），您的 Microsoft 365 服務、應用程式及客戶資料的存取會在訂閱完全關閉或 *刪除* 之前，先進行多種狀態。 如果您知道這項進展，您將會更好地將您的訂閱傳回使用中狀態過遲之前的狀態，或者，如果您離開 Microsoft 365，請先備份您的資料，再將其最後刪除。
 
 請先閱讀重要資訊，再聯繫 [Microsoft 365 支援人員](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)。
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>訂閱到期時資料會發生什麼事？
 
-- 如果您的訂閱已到期，它會經歷下列階段：已到期/已停用/Deprovisioned。 在訂閱到達其結束日期之後，到期的階段會立即開始。
+- 如果您的訂閱已到期，它會經歷下列階段：已到期/已停用/已刪除。 在訂閱到達其結束日期之後，到期的階段會立即開始。
 - 如果您關閉年度訂閱上的週期性帳單，它會與到期訂閱相同。 第一個階段的開始是年度訂閱的周年紀念，而不是在您關閉訂閱的週期性帳單設定的日期開始。
 - 如果您取消每月訂閱，則會立即停用 () 的取消日期。 這表示您的使用者會立即遺失 Microsoft 365 資產的存取權，且只有系統管理員才能存取未來90天的資料。
 
 下表說明當您付費的 Microsoft 365 for business 訂閱到期時，您可以預期的結果。
 
-| **Active**                                                             | **到期 <br/> (30 天 \*)**                                                | **停用 <br/> (90 天 \*)**                                               | **取消佈建**                                                                         |
+| 作用中 | 已到期 <br/> (30 天 \*)  | 停用 <br/> (90 天 \*)  | 刪除 |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *所有可存取的資料*                                               | *所有可存取的資料*                                                     | *僅限系統管理員可存取的資料*                                             | **資料刪除的 <br/> Azure Active Directory 已移除，如果其他服務未使用該 Active Directory** |
 | 使用者具有對 Microsoft 365、檔案及應用程式的一般存取權   | 使用者具有對 Microsoft 365、檔案及應用程式的一般存取權              | 使用者無法存取 Microsoft 365、檔或應用程式                        | 使用者無法存取 Microsoft 365、檔或應用程式                                     |
@@ -192,16 +192,16 @@ ms.locfileid: "48906820"
 
 以全域或計費系統管理員的身分，您可以 [重新啟用訂閱](reactivate-your-subscription.md) ，並以完整的客戶資料繼續使用 Microsoft 365。 如果您選擇不要重新啟用，請 [備份您的資料](back-up-data-before-switching-plans.md)。
 
-### <a name="state-deprovisioned"></a>狀態： Deprovisioned
+### <a name="state-deleted"></a>State：已刪除
   
- **預期的專案：** 如果您在寬限期或停用時未重新啟用您的訂閱，則訂閱是 deprovisioned。
+ **預期的專案：** 如果您在寬限期或停用時未重新啟用您的訂閱，則會刪除該訂閱。
   
 系統管理員和使用者不再可以存取訂閱隨附的服務或 Office 應用程式。 所有客戶資料（從使用者資料到檔和電子郵件）都會永久刪除，且無法復原。
   
 此時，您無法重新啟用訂閱。 不過，以全域或計費系統管理員的身分，您仍然可以存取系統管理中心，以管理其他訂閱，或購買新的訂閱以滿足您的業務需求。
   
 > [!NOTE]
-> 新增已 deprovisioned 的相同類型的訂閱，不會還原與 deprovisioned 訂閱相關聯的資料。
+> 新增已遭刪除的相同類型的訂閱，不會還原與已刪除之訂閱相關聯的資料。
 
 
 > [!NOTE]

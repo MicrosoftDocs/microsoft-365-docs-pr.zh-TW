@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 中的 Microsoft 資訊管控
+title: Microsoft 365 中的 Microsoft 資訊控管功能
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -13,23 +13,23 @@ localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
-description: 在 Microsoft 365 中實施 Microsoft 資訊控管功能來管控您的資料，以符合合規性或法規需求。
-ms.openlocfilehash: c85fd74f0e3259c40f16bc2faa766b3313239134
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+description: 實施 Microsoft 資訊控管功能以控管您的資料，以符合合規性或法規需求。
+ms.openlocfilehash: 6b06de54f18ce4081c3b13d108a5c0ceae6d24a7
+ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071464"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49087112"
 ---
-# <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 資訊管控
+# <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft 365 中的 Microsoft 資訊控管功能
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
 使用 Microsoft 資訊控管功能 (有時會縮寫為 MIG) 來管控您的資料，以符合合規性或法規需求。
 
-![管控您的資料 - 資訊管控與記錄管理](../media/information-governance-records-management.png)
+![管控您的資料 - 資訊控管與記錄管理](../media/information-governance-records-management.png)
 
-想要保護您的資料？ 請參閱 [Microsoft 365 中的 Microsoft 資訊保護。](information-protection.md)
+想要保護您的資料嗎？請參閱 [Microsoft 365 中的 Microsoft 資訊保護](information-protection.md)。
 
 ## <a name="information-governance"></a>資訊控管
 
