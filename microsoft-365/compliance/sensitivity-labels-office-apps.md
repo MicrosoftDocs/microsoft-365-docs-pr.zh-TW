@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a56ed063a639c0037102df8729362ebb4cca94f5
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: de005e40cf346c8dd6e02e0394272a97b186920f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087036"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131106"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -59,7 +59,7 @@ ms.locfileid: "49087036"
 |[需要調整以變更標籤](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[提供自訂 [説明] 頁面的 [說明] 連結](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[標記內容](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[包含變數的動態標記](#dynamic-markings-with-variables)                                              | 預覽： [Beta 通道和目前的頻道 (預覽) ](https://office.com/insider)           | 16.42 +     | 2.42 + | 16.0.13328 + | 在 [複查] 下 |
+|[包含變數的動態標記](#dynamic-markings-with-variables)                                              | 2010 +           | 16.42 +     | 2.42 + | 16.0.13328 + | 在 [複查] 下 |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |

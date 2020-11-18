@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 350904022ec86acdbebf109dd5946598643aea83
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 50f334a055a5bd974f9ea1f39c8fa38d44be9c26
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843657"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131231"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>執行您的試驗 Microsoft 365 Defender 專案 
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender 是一種整合的後續企業防護套件，其可共同
 
 下列範例時程表視您環境中的適當資源而異。 有些偵測和工作流程可能需要比其他的更多學習時間。
 
-![執行 Microsoft 365 Defender 試驗的範例時程表](../../media/pilotimeline.png)
+![執行 Microsoft 365 Defender 試驗的範例時程表](../../media/phase-diagrams/pilot-phases.png)
 
 >[!IMPORTANT]
 >為了獲得最佳結果，請盡可能請盡可能遵循試驗指示。
@@ -68,11 +68,11 @@ Microsoft 365 Defender 是一種整合的後續企業防護套件，其可共同
 
 |階段 | 描述 | 
 |:-------|:-----|
-| ![規劃](../../media/mtp/plan.png)<br>[規劃](mtp-pilot-plan.md)| 深入瞭解在執行 Microsoft 365 Defender 試驗專案之前，您需要考慮的事項： <br><br>-範圍 <br> -使用案例 <br>- 需求： <br>-測試計劃 <br> -成功準則 <br> -計分卡 
-| ![製備](../../media/mtp/prep.png) <br>[製備](mtp-evaluation.md)|  存取 Microsoft 365 的安全性中心以設定您的 Microsoft 365 Defender 試驗環境。 您將會指導您：<br><br>-識別利益關係人，並尋找您試驗的登出 <br> -環境考慮 <br>-Access <br>-Azure Active Directory 安裝程式 <br> -設定順序 <br> -註冊 Microsoft 365 E5 試用版 <br> -設定網域 <br>-指派 Microsoft 365 E5 授權 <br> -完成入口網站中的設定向導|
-| ![攻擊模擬](../../media/mtp/run-sim.png) <br>[攻擊模擬](mtp-pilot-simulate.md) | 若要模擬攻擊，您將會得到下列指導：<br><br>-確認測試環境需求 <br>-執行模擬 <br>-調查事件 <br>-解決事件 
-| ![關閉及摘要](../../media/mtp/close.png) <br>[關閉及摘要](mtp-pilot-close.md) | 當您到達程式的結尾時，系統會將您導向：<br><br>-流覽您的最後一個輸出<br>-向您的專案關係人呈現您的輸出 <br>-提供意見反應 <br>-執行後續步驟 
+| [規劃](mtp-pilot-plan.md)<br> 大約1天| 深入瞭解在執行 Microsoft 365 Defender 試驗專案之前，您需要考慮的事項： <br><br>-範圍 <br> -使用案例 <br>- 需求： <br>-測試計劃 <br> -成功準則 <br> -計分卡 
+| [製備](mtp-evaluation.md) <br>大約2天|  存取 Microsoft 365 的安全性中心以設定您的 Microsoft 365 Defender 試驗環境。 您將會指導您：<br><br>-識別利益關係人，並尋找您試驗的登出 <br> -環境考慮 <br>-Access <br>-Azure Active Directory 安裝程式 <br> -設定順序 <br> -註冊 Microsoft 365 E5 試用版 <br> -設定網域 <br>-指派 Microsoft 365 E5 授權 <br> -完成入口網站中的設定向導|
+| [攻擊模擬](mtp-pilot-simulate.md) <br>大約2天| 若要模擬攻擊，您將會得到下列指導：<br><br>-確認測試環境需求 <br>-執行模擬 <br>-調查事件 <br>-解決事件 
+| [關閉及摘要](mtp-pilot-close.md) <br>大約1天| 當您到達程式的結尾時，系統會將您導向：<br><br>-流覽您的最後一個輸出<br>-向您的專案關係人呈現您的輸出 <br>-提供意見反應 <br>-執行後續步驟 
 
-## <a name="next-step"></a>下一步
-|![規劃階段](../../media/mtp/plan.png) <br>[規劃階段](mtp-pilot-plan.md) | 規劃 Microsoft 365 Defender 試驗專案 
+## <a name="next-step"></a>後續步驟
+|[規劃階段](mtp-pilot-plan.md) | 規劃 Microsoft 365 Defender 試驗專案 
 |:-------|:-----|

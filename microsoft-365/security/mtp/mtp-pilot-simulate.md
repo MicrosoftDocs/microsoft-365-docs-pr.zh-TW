@@ -20,59 +20,21 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 700bd7a3f4ba8d152cf66a27c0f66aa375872698
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fac3a79f1522e5e7777b2b54bce2b8bd695f8d7a
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842059"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131342"
 ---
 # <a name="run-your-microsoft-365-defender-attack-simulations"></a>執行 Microsoft 365 Defender 攻擊模擬  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-適用於：
-- Microsoft 365 Defender
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="規劃您的試驗 Microsoft 365 Defender 專案" />
-      <br/>計畫 </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="準備您的 Microsoft 365 Defender 試用實驗室或試驗環境" />
-      <br/>準備 </a><br>
-    </td>
-    <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="執行 Microsoft 365 Defender 攻擊模擬" />
-      <br/>模擬攻擊 </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="關閉並摘要您的 Microsoft 365 Defender 試驗" />
-      <br/>關閉及摘要 </a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-    <td valign="top" style="width:25%; border:0;">
-
-</td>
-  </tr>
-</table>
+|[![規劃](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[規劃](mtp-pilot-plan.md) |[![準備](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[製備](prepare-mtpeval.md) | ![類比攻擊](../../media/phase-diagrams/3-simluate.png)<br/>類比攻擊| [![結束和摘要](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[結束和摘要](mtp-pilot-close.md)|
+|--|--|--|--|
+|| |*您在這裡！* | |
 
 您目前是在攻擊模擬階段。
 
@@ -262,7 +224,7 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 
 展開一些較為有趣的行為，可提供有用的詳細資料，例如處理樹。
 
-例如，向下滾動，直到發現出現警示事件 **可疑程式注入** 。 選取 **插入的powershell.exe** ，以 notepad.exe 它底下的處理程式事件，在側邊窗格的 [ **事件實體** ] 圖表下，顯示此行為的完整處理樹狀結構。 如有必要，請使用搜尋列進行篩選。
+例如，向下滾動，直到發現出現警示事件 **可疑程式注入**。 選取 **插入的powershell.exe** ，以 notepad.exe 它底下的處理程式事件，在側邊窗格的 [ **事件實體** ] 圖表下，顯示此行為的完整處理樹狀結構。 如有必要，請使用搜尋列進行篩選。
 
 ![選取的 PowerShell 檔案建立行為之進程樹狀結構的螢幕擷取畫面](../../media/mtp/fig12.png)
 
@@ -281,7 +243,7 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-在 Microsoft 365 的安全性中心入口網站中，向後流覽至該事件。 [ **事件** ] 頁面中的 [ **調查** ] 索引標籤會顯示 microsoft Defender 身分識別和 microsoft defender for Endpoint 所觸發的自動調查。 下列螢幕擷取畫面只會顯示由 Defender for Endpoint 所觸發的自動調查。 依預設，Defender for Endpoint 會自動 remediates 在佇列中找到的專案，這需要進行修復。
+在 Microsoft 365 的安全性中心入口網站中，向後流覽至該事件。 [**事件**] 頁面中的 [**調查**] 索引標籤會顯示 microsoft Defender 身分識別和 microsoft defender for Endpoint 所觸發的自動調查。 下列螢幕擷取畫面只會顯示由 Defender for Endpoint 所觸發的自動調查。 依預設，Defender for Endpoint 會自動 remediates 在佇列中找到的專案，這需要進行修復。
 
 ![與事件相關之自動調查的螢幕擷取畫面](../../media/mtp/fig14.png)
 
@@ -304,7 +266,7 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 
 調查完成並確認待修正之後，請關閉該事件。
 
-選取 [ **管理事件** ]。 將狀態設定為 [ **解決事件** ]，然後選取相關的分類。
+選取 [ **管理事件**]。 將狀態設定為 [ **解決事件** ]，然後選取相關的分類。
 
 當事件解決時，它會在 Microsoft 365 的安全性中心和相關的入口網站中關閉所有相關聯的警示。
 
@@ -339,7 +301,7 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 **開始搜尋**
 1.  開啟 security.microsoft.com 入口網站。
 
-2.  流覽至 **搜尋 > 高級搜尋** 。
+2.  流覽至 **搜尋 > 高級搜尋**。
 
     ![M365 安全性中心入口網站導覽列中高級搜尋的螢幕擷取畫面](../../media/mtp/fig17.png) 
 
@@ -369,9 +331,9 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 
     1.  查看結果，查看是否可以識別您開啟的電子郵件。  最多可能需要2個小時的時間，郵件才會顯示在高級搜尋中。 如果電子郵件環境很大，而且有許多結果，您可能想要使用 [ **顯示篩選] 選項** 來尋找郵件。 
 
-   在範例中，電子郵件是從 Yahoo 帳戶傳送。 按一下 [SenderFromDomain] 區段底下的 [ **+** **yahoo.com** ] 旁的圖示，然後按一下 [套用 **]，** 將選取的網域新增至查詢。  在執行模擬以篩選結果的步驟1中，使用用於傳送測試郵件的網域或電子郵件帳戶。  再次執行查詢以取得較小的結果集，以確認您看到類比中的郵件。
+           在範例中，電子郵件是從 Yahoo 帳戶傳送。 按一下 [SenderFromDomain] 區段底下的 [ **+** **yahoo.com** ] 旁的圖示，然後按一下 [套用 **]，** 將選取的網域新增至查詢。  在執行模擬以篩選結果的步驟1中，使用用於傳送測試郵件的網域或電子郵件帳戶。  再次執行查詢以取得較小的結果集，以確認您看到類比中的郵件。
    
-        ![Screenshot of the filters. Use filters to narrow down the search, and find what you’re looking for faster.](../../media/mtp/fig20.png) 
+        ![篩選器的螢幕擷取畫面。 請使用篩選器縮小搜尋範圍，並尋找您要更快速的搜尋。](../../media/mtp/fig20.png) 
 
         ```console
         EmailEvents 
@@ -392,9 +354,9 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 
     ```
 
-5.  接下來，包含附件的相關資訊 (例如：檔案名、雜湊) 結果集。 若要這麼做，請加入 **EmailAttachmentInfo** 表格。 在此情況下，要用於加入的一般欄位是 **NetworkMessageId** 和 **RecipientObjectId** 。
+5.  接下來，包含附件的相關資訊 (例如：檔案名、雜湊) 結果集。 若要這麼做，請加入 **EmailAttachmentInfo** 表格。 在此情況下，要用於加入的一般欄位是 **NetworkMessageId** 和 **RecipientObjectId**。
 
-下列查詢也包含其他行 "| **project-Rename EmailTimestamp = Timestamp** "，可協助識別與您將在下一個步驟中新增之檔案動作相關的電子郵件與時間戳記有關的時間戳記。
+    下列查詢也包含其他行 "| **project-Rename EmailTimestamp = Timestamp**"，可協助識別與您將在下一個步驟中新增之檔案動作相關的電子郵件與時間戳記有關的時間戳記。
 
     ```console
     EmailEvents 
@@ -438,7 +400,7 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 
 自訂偵測會根據您設定的頻率執行查詢，而查詢的結果會根據您所選擇的受影響資產，建立安全性警示。 這些警示會與事件相關聯，而且可以被會審為其中一項產品所產生的任何其他安全性警示。
 
-1.  在 [查詢] 頁面上，移除 [前往搜尋指示] 的步驟7中所新增的行7和8，然後按一下 [ **建立偵測規則** ]。 
+1.  在 [查詢] 頁面上，移除 [前往搜尋指示] 的步驟7中所新增的行7和8，然後按一下 [ **建立偵測規則**]。 
     
     ![可在 [高級搜尋] 頁面中按一下 [建立偵測規則] 的螢幕擷取畫面](../../media/mtp/fig22.png) 
 
@@ -452,7 +414,7 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 
     請務必以清晰的方式填寫欄位，以協助下一使用者對此偵測規則警示作出明智的決定。 
 
-3.  選取此警示會影響哪些實體。 在此情況下，請選取 [ **裝置** 和 **信箱** ]。
+3.  選取此警示會影響哪些實體。 在此情況下，請選取 [ **裝置** 和 **信箱**]。
 
     ![[建立偵測規則] 頁面的螢幕擷取畫面，您可以在其中選擇受影響實體的參數](../../media/mtp/fig24.png)
  
@@ -467,15 +429,15 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 
     在此試驗中，您可能會想要將此規則限制在實際執行環境中的測試裝置子集。
 
-6.  選取 [建立]。 然後，選取導覽窗格中的 **自訂偵測規則** 。
+6.  選取 [建立 **]**。 然後，選取導覽窗格中的 **自訂偵測規則** 。
  
     ![功能表中自訂偵測規則選項的螢幕擷取畫面](../../media/mtp/fig27a.png) 
 
     ![顯示規則和執行詳細資料之 [偵測規則] 頁面的螢幕擷取畫面](../../media/mtp/fig27b.png) 
 
-在此頁面中，您可以選取將會開啟詳細資料頁面的偵測規則。 
+    在此頁面中，您可以選取將會開啟詳細資料頁面的偵測規則。 
 
-    ![Screenshot of the email attachments page where you can see the status of the rule execution, triggered alerts and actions, edit the detection, and so on](../../media/mtp/fig28.png) 
+    ![[電子郵件附件] 頁面的螢幕擷取畫面，您可以在其中看到規則執行、觸發的警示和動作狀態、編輯偵測等等。](../../media/mtp/fig28.png) 
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>其他的高級搜尋指導-透過練習
 
@@ -491,7 +453,7 @@ Microsoft Defender for Endpoint 偵測通常是以最常見的攻擊技術屬性
 | 第3集：匯總、切換和視覺化資料|現在，我們可以篩選、處理及加入資料，這是時間開始摘要、量化、旋轉及形象。 在此過程中，我們將涵蓋匯總運算子和您可以執行的一些計算，同時深入探討高級搜尋架構中的其他表格。 我們會將資料集變成圖表，以協助改善分析。 | [時](https://aka.ms/MTP29JUL20_MP4) | [YouTube](https://youtu.be/UKnk9U1NH6Y) | [第3集： Git 中的 CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | 第4集：讓我們尋找！ 將 KQL 套用至事件追蹤|追蹤某些攻擊者活動的時間！ 在此期間，我們將使用 Microsoft 365 Defender 中深入瞭解的 KQL 和高級搜尋來追蹤攻擊。 深入瞭解此欄位中所用的部分秘訣，以追蹤攻擊者的活動，包括 cybersecurity 的 ABCs，以及如何將其套用至事件回應。 | [時](https://aka.ms/MTP5AUG20_MP4) | [YouTube](https://youtu.be/2EUxOc_LNd8) | [第4集： Git 中的 CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) |
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 |![關閉及摘要階段](../../media/mtp/close.png) <br>[關閉及摘要階段](mtp-pilot-close.md) | 分析您的 Microsoft 365 Defender 試驗結果，將其呈現給您的專案關係人，然後採取下一個步驟。
 |:-----|:-----|
 

@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: e0801fb26b0bc7c4d37ab9455d9fcd2630f0fe51
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5aa1d5fe14f6213931e089c2f97fcf06c96397b3
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842841"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131142"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新功能
 
@@ -34,12 +34,16 @@ ms.locfileid: "48842841"
 
 適用於：
 
-- [Microsoft Defender for Office 365](office-365-atp.md)
+- [適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
 
 本文列出最新版本 Microsoft Defender for Office 365 的新功能。 目前在預覽中的功能會以 **(預覽)** 表示。
 
 > [!TIP]
 > 還沒有 Microsoft Defender for Office 365 嗎？ [連絡人銷售人員開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
+
+## <a name="november-2020"></a>2020年11月 
+
+- 更新的匯出限制 > 重要訊息中心 > 修正從郵件提交和動作記錄檔 (Defender for Office 365 方案 2) 
 
 ## <a name="septemberoctober-2020"></a>2020年9月/10 月 
 
@@ -67,7 +71,7 @@ ms.locfileid: "48842841"
     - Advanced NOT 篩選 (這些是包含不包含、不包含等的高級篩選選項 ) 
     - 精確的時間篩選 (日、小時、半小時)  
 
-- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在安全性 & 規範中心中，移至「 **威脅管理** 」  >  **** 。 )  (Microsoft Defender for Office 365 方案 2) 
+- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在安全性 & 規範中心中，移至「**威脅管理**」  >  ****。 )  (Microsoft Defender for Office 365 方案 2) 
 
 - [Microsoft 365 中的安全檔](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(預覽)**
 
@@ -75,11 +79,11 @@ ms.locfileid: "48842841"
 
 - [匯出 URL 按一下 [資料] 以供離線分析](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Microsoft Defender for Office 365 Plan 1 or Plan 2) 
 
-- [使用 Microsoft defender For office 365 中的 [市場即時檢視] ( **預覽** )](campaigns.md) (Microsoft Defender for office 365 Plan 2) 
+- [使用 Microsoft defender For office 365 中的 [市場即時檢視] (**預覽**)](campaigns.md) (Microsoft Defender for office 365 Plan 2) 
 
 ## <a name="november-2019"></a>2019 年 11 月
 
-- [查看新的已遭破壞的使用者偵測和回應功能](address-compromised-users-quickly.md) ( **預覽** )  (Microsoft Defender for Office 365 Plan 2) 
+- [查看新的已遭破壞的使用者偵測和回應功能](address-compromised-users-quickly.md) (**預覽**)  (Microsoft Defender for Office 365 Plan 2) 
 
 ## <a name="september-2019"></a>2019 年 9 月
 
@@ -101,7 +105,7 @@ ms.locfileid: "48842841"
 
 - [View a 仿冒 URLs 的資料，然後按一下 [判定](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender for Office 365 Plan 1 or Plan 2) 
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 方案1和方案2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2
 
 您知道 Microsoft Defender for Office 365 可提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 

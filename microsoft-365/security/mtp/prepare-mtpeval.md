@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 ms.topic: article
-ms.openlocfilehash: a255c74db030325ba22c2095fba732a93b8c269c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7149524de868a3670807556f5f423ba0ee4a772a
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844845"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131236"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>準備您的 Microsoft 365 Defender 試用實驗室或試驗環境
 
@@ -35,44 +35,16 @@ ms.locfileid: "48844845"
 
 建立 Microsoft 365 Defender 試驗實驗室或試驗環境並加以部署時，會有三個階段的處理常式：
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft 365 Defender trial lab environment" title="準備您的 Microsoft 365 Defender 試用實驗室或試驗環境" />
-      <br/>階段1：準備 </a><br>
-    </td>
-     <td align="center"  >
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft 365 Defender trial lab environment" title="設定您的 Microsoft 365 Defender 試用實驗室或試驗環境" />
-      <br/>階段2：設定 </a><br>
-        </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
-        <img src="../../media/config-onboard.png" alt="Configure each Microsoft 365 Defender pillar" title="設定每個 Microsoft 365 Defender pillar 及您的端點板載" />
-      <br/>階段3：設定板載 &</a><br>
-</td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
-
-</td>    
-  </tr>
-</table>
+|![階段1：準備](../../media/phase-diagrams/prepare.png)<br/>階段1：準備 |[![階段2：設定](../../media/phase-diagrams/setup.png)](setup-mtpeval.md)<br/>[階段2：設定](setup-mtpeval.md) |[![階段3：板載](../../media/phase-diagrams/onboard.png)](config-mtpeval.md)<br/>[階段3：板載](config-mtpeval.md) | [![回到試驗](../../media/phase-diagrams/backtopilot.png)](mtp-pilot.md)<br/>[回到試驗行動手冊](mtp-pilot.md) |
+|--|--|--|--|
+|*您在這裡！* | || |
 
 您目前是在準備階段。
 
 
 準備工作是任何成功部署的關鍵。 本節會引導您在準備建立 Microsoft 365 Defender 部署的試用實驗室或試驗環境時，您需要考慮的事項。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 瞭解授權、硬體和軟體需求，以及其他設定，以提供和使用 Microsoft 365 Defender。 請參閱 [microsoft 365 defender](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites)、microsoft Defender for [Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements)、 [microsoft defender For Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)、 [Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)、 [microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites)的最低需求。
 
 ## <a name="stakeholders-and-sign-off"></a>利益關係人和簽署
@@ -100,7 +72,7 @@ ms.locfileid: "48844845"
 ## <a name="prepare-your-azure-active-directory"></a>準備您的 Azure Active Directory
 如果您已啟用 Active Directory 和 Azure Active Directory 內部部署之間的同步處理，請略過此步驟。 從 Azure Active Directory 複查現有的最佳作法檔。 下列步驟經過優化，可以評估或執行 Microsoft 365 Defender 專案的試用版。
 
-1. 移至 [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) 入口網站 > **azure AD Connect** 。 
+1. 移至 [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) 入口網站 > **azure AD Connect**。 
 ![Azure Active Directory 入口網站頁面的影像](../../media/mtp-eval-1.png) <br> 
 
 2. 按一下 **Download** [從 **Microsoft Azure Active Directory 連線]** ，然後將它轉接至您的網域控制站。
@@ -109,13 +81,13 @@ ms.locfileid: "48844845"
 3. 在網域控制站上，遵循 Azure Active Directory Connect 嚮導。 閱讀授權條款和隱私權通知，如果您同意，請選取此核取方塊。 按一下 [繼續]。
 ![Azure AD Connect 歡迎頁面的圖像](../../media/mtp-eval-3.png) <br>
 
-4. 流覽至 **Express 設定** 。
+4. 流覽至 **Express 設定**。
 ![快速設定頁面的圖像](../../media/mtp-eval-4.png) <br>
 
-5. 輸入您的全域系統管理員認證。 按 [下一步 **]** 。
+5. 輸入您的全域系統管理員認證。 按 [下一步 **]**。
 ![您應輸入全域系統管理員認證的 [連線到 Azure AD] 頁面影像](../../media/mtp-eval-5.png) <br>
 
-6. 輸入您的 Active Directory 網域服務企業系統管理員認證。 按 [下一步 **]** 。
+6. 輸入您的 Active Directory 網域服務企業系統管理員認證。 按 [下一步 **]**。
 ![您應輸入認證的 [連線到 AD DS] 頁面影像](../../media/mtp-eval-6.png) <br>
 
 7. 按一下 [ **安裝** ] 以確認設定。
@@ -132,12 +104,12 @@ ms.locfileid: "48844845"
 
 | 元件                               | 描述                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 設定順序排名 |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-|Microsoft Defender for Office 365|Microsoft Defender for Office 365 保護您的組織免受電子郵件訊息、連結 (URLs) 和共同作業工具所造成的惡意威脅。 <br> [瞭解更多資訊。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
-|適用於身分識別的 Microsoft Defender |Microsoft Defender for Identity 使用 Active Directory 信號來識別、偵測和調查您組織中的高級威脅、已遭破壞的身分識別，以及惡意的有問必答行為。 <br> [深入了解](https://docs.microsoft.com/azure-advanced-threat-protection/)。| 第 |
+|適用於 Office 365 的 Microsoft Defender|適用於 Office 365 的 Microsoft Defender 可保護組織防範由電子郵件訊息、連結 (URL) 及共同作業工具所造成的惡意威脅。 <br> [瞭解更多資訊。](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)                                                                                                                                                                                                                                             | 1                    |
+|適用於身分識別的 Microsoft Defender|Microsoft Defender for Identity 使用 Active Directory 信號來識別、偵測和調查您組織中的高級威脅、已遭破壞的身分識別，以及惡意的有問必答行為。 <br> [深入了解](https://docs.microsoft.com/azure-advanced-threat-protection/)。| 2  |
 |Microsoft Cloud App Security| Microsoft Cloud App Security 是雲端存取安全性經紀人 (CASB) ，可在多個雲端上運作。 它可提供豐富的知名度、控制資料旅行和複雜的分析，以在所有雲端服務之間識別及打擊 cyberthreats。 <br> [深入了解](https://docs.microsoft.com/cloud-app-security/)。                                                                                                                                                                                                                                                                                                                                                                       |個                   |
 |適用於端點的 Microsoft Defender | Microsoft Defender for Endpoint endpoint endpoint 偵測和回應功能提供接近即時及可行動的高級攻擊偵測。 安全性分析人員可以有效地排定警示的優先順序、深入了解入侵的全貌，並採取回應動作來補救威脅。 <br> [瞭解更多資訊。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 |![階段2：設定](../../media/setup.png) <br>[階段2：設定](setup-mtpeval.md) | 設定您的 Microsoft 365 Defender 試用實驗室或試驗環境
 |:-------|:-----|
 

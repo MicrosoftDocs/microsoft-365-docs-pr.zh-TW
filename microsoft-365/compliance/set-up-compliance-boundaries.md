@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 瞭解如何使用規範界限來建立邏輯界限，以控制 eDiscovery 管理員可在 Microsoft 365 中搜尋的使用者內容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c57689cc6e626b62ae976bac9f9771205431bc8a
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: afc01ea88e9a2de6550741dcaac105ef764a752f
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370399"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131128"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
@@ -142,7 +142,7 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
 
     - `Site`：指定參數中定義的角色群組可以搜尋的 OneDrive 帳戶 `Users` 。 若為 OneDrive 篩選，請使用實際的字串  `ComplianceAttribute` 。 這會對應至您在步驟1中所識別的相同屬性，而該屬性會因您在步驟2中提交的支援要求而同步處理至 OneDrive 帳戶; *AttributeValue*  指定的代理人。 此篩選器允許角色群組的成員只搜尋特定機構內的 OneDrive 帳戶;例如，  `"Site_ComplianceAttribute -eq 'FourthCoffee'"` 。
 
-    - `Site_Path`：指定參數中定義的角色群組  `Users` 可以進行搜尋的 SharePoint 網站。 *SharePointURL*會指定該角色群組的成員可以搜尋的代理人中的網站。 例如，  `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`。 請注意 `Site` ， `Site_Path` 篩選器是由 **-或** 運算子所連接。
+    - `Site_Path`：指定參數中定義的角色群組  `Users` 可以進行搜尋的 SharePoint 網站。 *SharePointURL* 會指定該角色群組的成員可以搜尋的代理人中的網站。 例如，  `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`。 請注意 `Site` ， `Site_Path` 篩選器是由 **-或** 運算子所連接。
 
      > [!NOTE]
      > 參數的語法 `Filters` 包含 *篩選器清單*。 篩選清單是一個包含信箱篩選器和以逗號分隔之網站篩選的篩選器。 在上面的範例中，請注意，逗號分隔 **Mailbox_ComplianceAttribute** 和 **Site_ComplianceAttribute**： `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"` 。 在執行內容搜尋時處理此篩選器時，會從 [篩選] 清單中建立兩個搜尋許可權篩選：一個信箱篩選器和一個網站篩選器。 使用篩選器清單的另一種方法是，為每個代理人建立兩個個別的「搜尋許可權」篩選：信箱屬性的單一搜尋許可權篩選，以及網站屬性的一個篩選器。 在任何情況下，結果都是相同的。 使用篩選清單或建立個別的「搜尋許可權」篩選是很重要的考慮。
@@ -193,7 +193,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
   
 - **匯出搜尋結果：** 您可以從特定資料中心的 Exchange 信箱、SharePoint 網站和 OneDrive 帳戶匯出搜尋結果。 這表示您可以指定要從中匯出搜尋結果的資料中心位置。
 
-    使用**New-ComplianceSecurityFilter**或**Set-ComplianceSecurityFilter** Cmdlet 的**Region**參數，來建立或變更匯出將透過哪一個資料中心進行路由傳送。
+    使用 **New-ComplianceSecurityFilter** 或 **Set-ComplianceSecurityFilter** Cmdlet 的 **Region** 參數，來建立或變更匯出將透過哪一個資料中心進行路由傳送。
   
     |**參數值**|**資料中心位置**|
     |:-----|:-----|
@@ -219,6 +219,8 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     |JPN  <br/> |亞太地區  <br/> |
     |IND  <br/> |亞太地區  <br/> |
     |議員  <br/> |我們  <br/> |
+    |也  <br/> |歐洲 |
+    |胸罩  <br/> |北美資料中心 |
     |||
 
    如果您未指定「搜尋許可權」篩選的 **Region** 參數，則會搜尋該組織的主要 SharePoint 區域。 搜尋結果會匯出至最接近的資料中心。

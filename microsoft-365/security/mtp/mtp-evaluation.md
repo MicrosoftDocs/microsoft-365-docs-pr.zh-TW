@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 ms.topic: conceptual
-ms.openlocfilehash: d6c96f7720344721bb2786dc130c490a5a8ea657
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: fe0a06dd104f0f0532363ee046f4bad1c03c5400
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846481"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130875"
 ---
 # <a name="create-a-microsoft-365-defender-trial-lab-or-pilot-environment"></a>建立 Microsoft 365 Defender 試用實驗室或試驗環境 
 
@@ -54,11 +54,13 @@ ms.locfileid: "48846481"
 
 建立 Microsoft 365 Defender 試用實驗室環境並部署它時，有三個階段：
 
+![部署階段：準備、安裝、板載](../../media/phase-diagrams/deployment-phases.png)
+
 |階段 | 描述 | 
 |:-------|:-----|
-| ![階段1：準備](../../media/prepare.png)<br>[階段1：準備](prepare-mtpeval.md)| 深入瞭解在試用實驗室或試驗環境中部署 Microsoft 365 Defender 時，需要考慮的事項： <br><br>-專案關係人和簽核關 <br> -環境考慮 <br>-Access <br>-Azure Active Directory 安裝程式 <br> -設定順序
-|  ![階段2：設定](../../media/setup.png) <br>[階段2：設定](setup-mtpeval.md)|  請先取得存取 Microsoft 365 安全中心的初始步驟，以設定您的 Microsoft 365 Defender 試用實驗室或試驗環境。 您將會指導您：<br><br>-註冊 Microsoft 365 E5 試用版 <br>  -設定網域<br>-指派 Microsoft 365 E5 授權<br>-完成入口網站中的設定向導|
-|  ![階段3：設定板載 &](../../media/config-onboard.png) <br>[階段3：設定板載 &](config-mtpeval.md) | 設定每個 Microsoft 365 Defender pillar 和板載端點。 您將會指導您：<br><br>-針對 Office 365 設定 Microsoft Defender<br>-設定 Microsoft Cloud App Security<br>-設定 Microsoft Defender 身分識別<br>-設定 Microsoft Defender for Endpoint
+|[階段1：準備](prepare-mtpeval.md)| 深入瞭解在試用實驗室或試驗環境中部署 Microsoft 365 Defender 時，需要考慮的事項： <br><br>-專案關係人和簽核關 <br> -環境考慮 <br>-Access <br>-Azure Active Directory 安裝程式 <br> -設定順序
+|[階段2：設定](setup-mtpeval.md)|  請先取得存取 Microsoft 365 安全中心的初始步驟，以設定您的 Microsoft 365 Defender 試用實驗室或試驗環境。 您將會指導您：<br><br>-註冊 Microsoft 365 E5 試用版 <br>  -設定網域<br>-指派 Microsoft 365 E5 授權<br>-完成入口網站中的設定向導|
+|[階段3：設定板載 &](config-mtpeval.md) | 設定每個 Microsoft 365 Defender pillar 和板載端點。 您將會指導您：<br><br>-針對 Office 365 設定 Microsoft Defender<br>-設定 Microsoft Cloud App Security<br>-設定 Microsoft Defender 身分識別<br>-設定 Microsoft Defender for Endpoint
 
 
 ## <a name="in-scope"></a>在範圍內
@@ -71,8 +73,8 @@ ms.locfileid: "48846481"
     -   指派 Microsoft 365 E5 授權
     -   在入口網站中完成安裝精靈
 -   根據最佳作法設定所有 Microsoft 365 Defender 支柱
-    -   Microsoft Defender for Office 365
-    -   適用於身分識別的 Microsoft Defender 
+    -   適用於 Office 365 的 Microsoft Defender
+    -   適用於身分識別的 Microsoft Defender
     -   Microsoft Cloud App Security
     -   適用於端點的 Microsoft Defender
 
@@ -83,6 +85,6 @@ ms.locfileid: "48846481"
 -   設定可能會與 Microsoft 365 Defender 整合的協力廠商解決方案
 -   實際執行環境中的滲透測試
 
-## <a name="next-step"></a>下一步
-![階段1：準備](../../media/prepare.png) <br>[階段1：準備](prepare-mtpeval.md) 
+## <a name="next-step"></a>後續步驟
+[階段1：準備](prepare-mtpeval.md) 
 <br> 準備您的 Microsoft 365 Defender 試用實驗室或試驗環境

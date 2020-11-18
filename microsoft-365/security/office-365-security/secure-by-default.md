@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: '深入瞭解 Exchange Online Protection (EOP 中的安全性預設設定) '
-ms.openlocfilehash: d4345134e98ae204f73dfb51a0abf5136590a24c
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126658"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49131094"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 中預設的安全性
 
@@ -41,7 +41,7 @@ ms.locfileid: "49126658"
 1. 具有可疑惡意軟體的電子郵件將會自動遭到隔離，並會通知收件者。 請參閱 [在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 1. 識別為「高信賴」的網路釣魚電子郵件會依照反垃圾郵件原則動作進行處理。 請參閱 [在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-因為 Microsoft 想要讓我們的客戶在預設情況下是安全的，所以部分承租人覆寫不會針對惡意程式碼或高可信度網路釣魚應用程式。 這些覆寫包括：
+因為 Microsoft 想要讓客戶保持安全，但在預設情況下，有些承租人覆寫不會套用到惡意程式碼或高可信度網路釣魚。 這些覆寫包括：
 
 -  (反垃圾郵件原則所允許的寄件者清單或允許的網域清單) 
 - Outlook 安全寄件者

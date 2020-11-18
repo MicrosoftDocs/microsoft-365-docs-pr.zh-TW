@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 1617e7b68346673785c72e90e6f5e94193d96488
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 3fe5bfdec566b0988d9f565595624fc8dd597788
+ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843015"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49130920"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>關閉及摘要您的 Microsoft 365 Defender 試驗  
 
@@ -35,45 +35,12 @@ ms.locfileid: "48843015"
 適用於：
 - Microsoft 365 Defender
 
-<br>
-<table border="0" width="100%" align="center">
-  <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-plan"> 
-        <img src="../../media/mtp/plan.png" alt="Plan your pilot Microsoft 365 Defender project" title="規劃您的試驗 Microsoft 365 Defender 專案" />
-      <br/>計畫 </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval">
-        <img src="../../media/mtp/prep.png" alt="Prepare your Microsoft 365 Defender trial lab or pilot environment" title="準備您的 Microsoft 365 Defender 試用實驗室或試驗環境" />
-      <br/>準備 </a><br>
-    </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate">
-        <img src="../../media/mtp/run-sim.png" alt="Run your Microsoft 365 Defender attack simulations" title="執行 Microsoft 365 Defender 攻擊模擬" />
-      <br/>模擬攻擊 </a><br>
-    </td>
-    <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-close">
-        <img src="../../media/mtp/close.png" alt="Close and summarize your Microsoft 365 Defender pilot" title="關閉並摘要您的 Microsoft 365 Defender 試驗" />
-      <br/>關閉及摘要 </a><br>
-    </td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
-    </td>
-    <td valign="top" style="width:25%; border:0;">
-    
-</td>
-    <td valign="top" style="width:25%; border:0;">
 
-</td>    
-    <td valign="top" style="width:25%; border:0;">
 
-</td>
-  </tr>
-</table>
+|[![規劃](../../media/phase-diagrams/1-planning.png)](mtp-pilot-plan.md)<br/>[規劃](mtp-pilot-plan.md) |[![準備](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[製備](prepare-mtpeval.md) | [![類比攻擊](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[類比攻擊](mtp-pilot-simulate.md) | ![結束和摘要](../../media/phase-diagrams/4-summary.png)<br/>結束和摘要|
+|--|--|--|--|
+|| | |*您在這裡！*|
+
 
 您目前正在結束和摘要階段。
 
@@ -91,7 +58,7 @@ ms.locfileid: "48843015"
 
 我們希望您可以享受這種模擬。 開始執行您在組織中較大規模所學的專案，以充分利用整合安全性解決方案。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 透過下列互動式指南深入瞭解 Microsoft 365 Defender 支柱：
 - [使用 Microsoft Defender for Office 365 保護您的組織](https://aka.ms/O365ATP-Interactive-Guide)
 - [使用適用於身分識別的 Microsoft Defender 偵測可疑活動和潛在攻擊](https://aka.ms/AATP-Interactive-Guide)
