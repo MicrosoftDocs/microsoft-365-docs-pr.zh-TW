@@ -14,12 +14,12 @@ audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
 titleSuffix: Microsoft Compliance
-ms.openlocfilehash: cb4d1a4c4632763506fd2d3b05431acb9233f744
-ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
+ms.openlocfilehash: 57164e08128080f90cb3985b3a3f887521f4c3d5
+ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071961"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "49126596"
 ---
 # <a name="payment-card-industry-pci-data-security-standard-dss"></a>支付卡行業 (PCI) 資料安全標準 (DSS)
 
@@ -90,9 +90,9 @@ PCI 安全標準協會提供的資訊可協助您了解特定合規性要求。�
 
 目前符合 PCI DSS 規範的商務用 OneDrive 和 SharePoint Online 僅限美國。Microsoft 會評估美國以外地區的需求和時間表，並在其他地區新增至藍圖時提供更新。
 
-**商務用 OneDrive 和 SharePoint Online 的適用範圍為何？**
+**[商務用 OneDrive] 和 [SharePoint Online] 的適用範圍為何？**
 
-目前，只有上傳至商務用 OneDrive 和 SharePoint Online 的檔案和文件會收到 PCI DSS 的投訴。
+目前，只有上傳至 [商務用 OneDrive] 和 [SharePoint Online] 的檔案和文件符合 PCI DSS 的要求。
 
 ## <a name="use-microsoft-compliance-manager-to-assess-your-risk"></a>使用 Microsoft 合規性管理員來評定風險
 
