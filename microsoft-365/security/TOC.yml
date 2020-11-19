@@ -169,6 +169,8 @@
                       href: mtp/advanced-hunting-alertinfo-table.md
                     - name: AppFileEvents
                       href: mtp/advanced-hunting-appfileevents-table.md
+                    - name: CloudAppEvents
+                      href: mtp/advanced-hunting-cloudappevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfo
@@ -430,8 +432,6 @@
               href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
             - name: 在政治活動開發/測試環境中建立小組網站
               href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: 適用於 Office 365 的 Defender 中的使用者標記
-              href: ./office-365-security/user-tags.md
             - name: S/MIME
               href: ./office-365-security/s-mime-for-message-signing-and-encryption.md
               items:
