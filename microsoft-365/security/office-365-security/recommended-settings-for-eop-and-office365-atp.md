@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用適用于 Office 365 的 Defender，您也會取得哪些額外功能？
-ms.openlocfilehash: bcad3609f5f73ac538ae9d1a0964ecc8e176003e
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: af741e1af412d535c53beb83c36c0cbe3fcd617b
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126634"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357118"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建議設定
 
@@ -52,7 +52,7 @@ ms.locfileid: "49126634"
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|註解|
+|安全性功能名稱|預設|Standard|嚴格|註解|
 |---|:---:|:---:|:---:|---|
 |**垃圾郵件** 偵測動作 <p> _SpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
 |**高信賴的垃圾郵件** 偵測動作 <p> _HighConfidenceSpamAction_|**將郵件移至 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`|**隔離郵件**   將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> `Quarantine`||
@@ -106,7 +106,7 @@ ms.locfileid: "49126634"
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|註解|
+|安全性功能名稱|預設|Standard|嚴格|註解|
 |---|:---:|:---:|:---:|---|
 |**每位使用者的收件者數目上限：外部每小時限制** <p> _RecipientLimitExternalPerHour_|0|500|400|預設值0表示使用服務預設值。|
 |**每位使用者的收件者數目上限：每小時內部的限制** <p> _RecipientLimitInternalPerHour_|0|1000|800|預設值0表示使用服務預設值。|
@@ -120,7 +120,7 @@ ms.locfileid: "49126634"
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|註解|
+|安全性功能名稱|預設|Standard|嚴格|註解|
 |---|:---:|:---:|:---:|---|
 |**您是否要在郵件被隔離時通知收件者？** <p> _動作_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
 |**常見附件類型篩選** <p> _EnableFileFilter_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
@@ -135,7 +135,7 @@ ms.locfileid: "49126634"
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|註解|
+|安全性功能名稱|預設|Standard|嚴格|註解|
 |---|:---:|:---:|:---:|---|
 |**啟用反欺騙保護** <p> _EnableAntispoofEnforcement_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|會在 Outlook 中為未識別的欺騙寄件者將問號 (？ ) 加入寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
@@ -166,7 +166,7 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但 Office 365 的 
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|註解|
+|安全性功能名稱|預設|Standard|嚴格|註解|
 |---|:---:|:---:|:---:|---|
 |受保護的使用者： **新增要保護的使用者** <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|關閉 <p> `$false` <p> 無|開啟 <p> `$true` <p> \<list of users\>|開啟 <p> `$true` <p> \<list of users\>|根據您的組織，建議您將使用者新增 (郵件寄件者) 在重要角色中。 在內部，受保護的寄件者可能是 CEO、CFO 及其他資深領導人。 外部、受保護的寄件者可以包含理事會成員或董事會的董事。|
 |受保護的網域： **自動包含我擁有的網域** <p> _EnableOrganizationDomainsProtection_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
@@ -189,7 +189,7 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但 Office 365 的 
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|註解|
+|安全性功能名稱|預設|Standard|嚴格|註解|
 |---|---|---|---|---|
 |**啟用反欺騙保護** <p> _EnableAntispoofEnforcement_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|會在 Outlook 中為未識別的欺騙寄件者將問號 (？ ) 加入寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
@@ -202,7 +202,7 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但 Office 365 的 
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|註解|
+|安全性功能名稱|預設|Standard|嚴格|註解|
 |---|:---:|:---:|:---:|---|
 |**高級網路釣魚臨界值** <p> _PhishThresholdLevel_|**1-標準** <p> `1`|**2-嚴格** <p> `2`|**3-更嚴格** <p> `3`||
 |
@@ -219,7 +219,7 @@ Office 的 Defender for Office 365 中的安全連結包括全域設定，這些
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|註解|
+|安全性功能名稱|預設|Standard|嚴格|註解|
 |---|:---:|:---:|:---:|---|
 |**使用下列專案中的安全連結： Office 365 應用程式** <p> _EnableSafeLinksForO365Clients_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|在支援的 Office 365 desktop 和 mobile (iOS 和 Android) app 中使用安全連結。 如需詳細資訊，請參閱 [Office 365 應用程式的安全連結設定](atp-safe-links.md#safe-links-settings-for-office-365-apps)。|
 |**使用者按一下安全連結時請勿追蹤** <p> _TrackClicks_|開啟 <p> `$false`|關閉 <p> `$true`|關閉 <p> `$true`|關閉此設定 (將 _TrackClicks_ 設定為 `$true`) 在支援的 Office 365 應用程式中追蹤使用者按一下。|
@@ -237,7 +237,7 @@ Office 的 Defender for Office 365 中的安全連結包括全域設定，這些
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|註解|
+|安全性功能名稱|預設|Standard|嚴格|註解|
 |---|:---:|:---:|:---:|---|
 |**選取郵件中未知可能惡意 URLs 的動作** <p> _IsEnabled_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
 |**選取 Microsoft 小組中未知或可能惡意的 URLs 的動作** <p> _EnableSafeLinksForTeams_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`||
@@ -260,7 +260,7 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|註解|
+|安全性功能名稱|預設|Standard|嚴格|註解|
 |---|:---:|:---:|:---:|---|
 |**開啟適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP** <p> _EnableATPForSPOTeamsODB_|開啟 <p> `$true`|開啟 <p> `$true`||
 |**開啟 Office 用戶端的安全檔**<bt/><br/> _EnableSafeDocs_|開啟 <p> `$true`|開啟 <p> `$true`|此設定僅適用于 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的安全檔](safe-docs.md)。|
@@ -278,7 +278,7 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 ****
 
-|安全性功能名稱|預設|標準版|嚴格|註解|
+|安全性功能名稱|預設|Standard|嚴格|註解|
 |---|:---:|:---:|:---:|---|
 |**安全附件未知的惡意程式碼回應** <p> _動作_|封鎖 <p> `Block`|封鎖 <p> `Block`|封鎖 <p> `Block`||
 |**偵測時重新導向附件** ： **啟用重新導向** <p> _Redirect_ <p> _RedirectAddress_|Off，但沒有指定電子郵件地址。 <p> `$true` <p> 無|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|將郵件重新導向至安全性管理員以進行審閱。|
@@ -291,6 +291,6 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 - 系統管理員和使用者可以提交誤報 (已標示為錯誤) 和漏報的錯誤電子郵件， (錯誤的電子郵件) Microsoft 進行分析。 如需詳細資訊，請參閱[回報訊息和檔案至 Microsoft](report-junk-email-messages-to-microsoft.md)。
 
-- 請使用下列 **連結，以** 取得如何 **設定** [EOP 服務](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service)的資訊，以及設定 [Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)。 請不要忘記「[防範 Office 365 威脅](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)」中的有用指示。
+- 請使用下列 **連結，以** 取得如何 **設定** [EOP 服務](set-up-your-eop-service.md)的資訊，以及設定 [Microsoft Defender for Office 365](office-365-atp.md)。 請不要忘記「[防範 Office 365 威脅](protect-against-threats.md)」中的有用指示。
 
 - 您可以在以下位置找到 **適用于 Windows 的安全性基準**：您 [可以在何處取得安全性基準？](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines)針對 GPO/內部部署選項，以及 [使用安全性基線，在 intune 中為 intune 型安全性設定 Windows 10 裝置](https://docs.microsoft.com/intune/protect/security-baselines)。 最後，比較 microsoft defender [For endpoint 和 Windows intune 安全性基準](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)時，可使用 microsoft Defender for Endpoint 和 microsoft intune 安全性基準之間的比較。

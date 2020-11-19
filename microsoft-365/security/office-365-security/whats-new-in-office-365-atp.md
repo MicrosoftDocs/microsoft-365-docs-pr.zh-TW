@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 5aa1d5fe14f6213931e089c2f97fcf06c96397b3
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131142"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357234"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新功能
 
@@ -41,11 +41,11 @@ ms.locfileid: "49131142"
 > [!TIP]
 > 還沒有 Microsoft Defender for Office 365 嗎？ [連絡人銷售人員開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
 
-## <a name="november-2020"></a>2020年11月 
+## <a name="november-2020"></a>2020年11月
 
 - 更新的匯出限制 > 重要訊息中心 > 修正從郵件提交和動作記錄檔 (Defender for Office 365 方案 2) 
 
-## <a name="septemberoctober-2020"></a>2020年9月/10 月 
+## <a name="septemberoctober-2020"></a>2020年9月/10 月
 
 - [使用 Configuration Analyzer 檢查您的原則](configuration-analyzer-for-security-policies.md)
 - [使用承租人允許/封鎖清單手動覆寫篩選 verdicts](tenant-allow-block-list.md)
@@ -53,27 +53,27 @@ ms.locfileid: "49131142"
 - 在 [威脅 Explorer](threat-explorer.md#threats-in-urls) 中呈現 URL 威脅 (惡意程式碼、網路釣魚、垃圾郵件或無)  (Office 365 方案2的 Defender) 
 - [改進搜尋體驗威脅 Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) ，包含威脅的更新、其他動作、傳遞位置和更新的時程表視圖 (Defender for Office 365 方案 2) 
 
-## <a name="julyaugust-2020"></a>2020年7月/8 月 
+## <a name="julyaugust-2020"></a>2020年7月/8 月
 
 - 體驗 Microsoft Defender for Office 365 Plan 1 或 Plan 2) [的搜尋體驗改進功能的增強功能](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (
 - [使用預先設定的安全性原則輕鬆套用建議設定](preset-security-policies.md) 
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
 
-- [使用自動調查和回應來處理已遭破壞之使用者帳戶](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide)的功能現在現已提供。  (Microsoft Defender for Office 365 方案 2) 
+- [使用自動調查和回應來處理已遭破壞之使用者帳戶](address-compromised-users-quickly.md)的功能現在現已提供。  (Microsoft Defender for Office 365 方案 2) 
 
 ## <a name="januaryfebruary-2020"></a>2020年1月/2 月
 
 - [Microsoft defender For office 365 中的即時檢視的公開可用性](campaigns.md) (microsoft Defender for Office 365 方案 2) 
 - [威脅瀏覽器](threat-explorer.md)的增強功能，讓安全性作業小組能夠在[調查電子郵件](investigate-malicious-email-that-was-delivered.md)時，在多個欄位上搜尋及篩選： (Microsoft Defender for Office 365 Plan 2) 
-    - 傳遞位置和特殊動作
-    - 方向 (輸入、輸出或組織內) 
-    - Advanced NOT 篩選 (這些是包含不包含、不包含等的高級篩選選項 ) 
-    - 精確的時間篩選 (日、小時、半小時)  
+  - 傳遞位置和特殊動作
+  - 方向 (輸入、輸出或組織內) 
+  - Advanced NOT 篩選 (這些是包含不包含、不包含等的高級篩選選項 ) 
+  - 精確的時間篩選 (日、小時、半小時) 
 
 - [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在安全性 & 規範中心中，移至「**威脅管理**」  >  ****。 )  (Microsoft Defender for Office 365 方案 2) 
 
-- [Microsoft 365 中的安全檔](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(預覽)**
+- [Microsoft 365 中的安全檔](safe-docs.md) **(預覽)**
 
 ## <a name="december-2019"></a>2019 年 12 月
 

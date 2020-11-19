@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: a7a007fdd95638109830a8e3689232060f2b9d8b
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: e5e5850fa7e74f3e3b342e9bb28d17f65b491664
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123580"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356664"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>使用入口網站啟動計畫程式啟動入口網站
 
@@ -34,7 +34,7 @@ ms.locfileid: "49123580"
 - 雙向：啟動新的現代 SharePoint 線上入口網站以取代現有的 SharePoint 傳統或新式入口網站 
 - 暫時頁面重新導向：使用沒有現有 SharePoint 入口網站的新新式 SharePoint 線上入口網站啟動
 
-入口網站啟動排程器僅可用於啟動新式 SharePoint 線上入口網站，例如通訊網站和現代小組網站。 啟動時間必須預先排程至少7天。 所需的無線電波數目取決於預期的使用者數目。 在排程入口網站之前，必須執行 [SharePoint 工具的頁面診斷](https://aka.ms/perftool) ，以驗證入口網站上的首頁狀況良好。 在入口網站的最後一開始，所有具有網站許可權的使用者都可以存取新網站。 
+入口網站啟動排程器僅可啟動新式 SharePoint Online 入口網站 (（例如，) 的通訊）。 啟動時間必須預先排程至少7天。 所需的無線電波數目取決於預期的使用者數目。 在排程入口網站之前，必須執行 [SharePoint 工具的頁面診斷](https://aka.ms/perftool) ，以驗證入口網站上的首頁狀況良好。 在入口網站的最後一開始，所有具有網站許可權的使用者都可以存取新網站。 
 
 如需有關啟動成功入口網站的詳細資訊，請遵循 [建立、啟動及維護健康入口網站](https://docs.microsoft.com/sharepoint/portal-health)的基本原則、作法和建議。 
 
@@ -45,7 +45,7 @@ ms.locfileid: "49123580"
 1. [下載最新的 SharePoint Online 管理命令介面](https://go.microsoft.com/fwlink/p/?LinkId=255251)。
 
     > [!NOTE]
-    > 如果您安裝的是舊版 SharePoint Online 管理命令介面，請移至 [新增或移除程式]，並解除安裝 [SharePoint Online 管理命令介面]。<br>在下載中心頁面上，選擇您的語言，然後按一下 [下載] 按鈕。 系統會請您選擇下載 x64 或 x86 .msi 檔案。 如果您執行的是 64 位元版本的 Windows，請下載 x64 檔案；或如果您執行的是 32 位元版本，請下載 x86 檔案。 如果您不知道，請參閱[我正在執行哪個版本的 Windows 作業系統？](https://support.microsoft.com/help/13443/windows-which-operating-system)。 下載檔案之後，請執行檔案，並按照安裝精靈中的步驟進行。
+    > 如果您安裝的是舊版 SharePoint Online 管理命令介面，請移至 [新增或移除程式]，並解除安裝 [SharePoint Online 管理命令介面]。 <br>在下載中心頁面上，選取您的語言，然後按一下 [下載] 按鈕。 系統會請您選擇下載 x64 或 x86 .msi 檔案。 如果您執行的是 64 位元版本的 Windows，請下載 x64 檔案；或如果您執行的是 32 位元版本，請下載 x86 檔案。 如果您不知道，請參閱[我正在執行哪個版本的 Windows 作業系統？](https://support.microsoft.com/help/13443/windows-which-operating-system)。 下載檔案之後，請執行檔案，並按照安裝精靈中的步驟進行。
 
 2. 在 Microsoft 365 以[全域系統管理員或 SharePoint 管理員](/sharepoint/sharepoint-admin-role)的身分登入。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 
@@ -66,9 +66,11 @@ ms.locfileid: "49123580"
 - 30k + 至100k 使用者：5無線電波
 - 超過100k 的使用者：5無線電波，並與您的 Microsoft 帳戶小組聯繫
 
-### <a name="steps-for-bi-directional-redirection"></a>雙向重新定向的步驟
+### <a name="steps-for-bidirectional-redirection"></a>雙向重新定向的步驟
 
-雙向重新導向包括啟動新的現代 SharePoint Online 入口網站取代現有的 SharePoint 傳統或新式入口網站。 主動波形中的使用者將會重新導向至新網站，不論其流覽的是舊的還是新的網站。 嘗試存取新網站的非啟動浪潮中的使用者，將會重新導向至舊網站，直到其 wave 啟動為止。 若要讓系統管理員或擁有者必須存取舊的和新的網站，而不重新導向，請確定它們是以 `WaveOverrideUsers` 參數列出。 
+雙向重新導向包括啟動新的現代 SharePoint Online 入口網站取代現有的 SharePoint 傳統或新式入口網站。 主動波形中的使用者將會重新導向至新網站，不論其流覽的是舊的還是新的網站。 嘗試存取新網站的非啟動浪潮中的使用者，將會重新導向至舊網站，直到其 wave 啟動為止。 
+
+若要讓系統管理員或擁有者必須存取舊的和新的網站，而不重新導向，請確定它們是以 `WaveOverrideUsers` 參數列出。 我們只支援舊網站上的預設首頁與新網站上的預設首頁之間的重定向。
 
 若要以分段方式將現有的 SharePoint 網站中的使用者遷移至新的 SharePoint 網站，請執行下列動作：
 

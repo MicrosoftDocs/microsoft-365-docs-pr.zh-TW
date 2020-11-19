@@ -17,17 +17,19 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: 5214f7c399ab511ec16231e4dda97a2c33b37668
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: ade93bf8c89077c117ada764478cc74f4a5f14cc
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844701"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357316"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender 的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)。
+>
 
 在最新版本的 Microsoft 365 Defender 中， (GA) 一般都有下列功能可供使用。
 
@@ -35,6 +37,9 @@ RSS 摘要：將下列 URL 複製並貼到您的摘要讀取器時，獲得此�
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)
+>
+
 ## <a name="september-2020"></a>2020 年 9 月
 - [IdentityDirectoryEvents 表格](advanced-hunting-identitydirectoryevents-table.md) <br> 尋找與執行 Active Directory (AD) 之內部部署網域控制站有關的事件。 這個 [高級搜尋](advanced-hunting-overview.md) 架構表涵蓋網域控制站上的身分識別相關事件及系統事件範圍。
 - [AssignedIPAddresses ( # A1 函數](advanced-hunting-assignedipaddresses-function.md) <br> 您可以在您的高級搜尋查詢中使用此功能，快速取得指派給裝置的最新 IP 位址，或從特定時間取得最近的 IP 位址。

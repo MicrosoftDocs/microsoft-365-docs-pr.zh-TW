@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以管理 SharePoint Online、商務 OneDrive 和 Microsoft 小組中的隔離檔案。
-ms.openlocfilehash: 94dfc8503d61c16aadc8e9d0ccfd295e2684fbba
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349277"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357130"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
@@ -165,7 +165,7 @@ ms.locfileid: "49349277"
   - 選擇下列其中一個選項：
     - **放開郵件給所有收件者**
     - **將郵件發佈給特定的收件者**
-    - **放開其他人員的訊息**
+    - **為其他人發行訊息**：請注意，不支援將惡意程式碼封發行給原始收件者以外的人員。 
 
   完成時，請按一下 [釋出郵件]。
 
@@ -208,7 +208,7 @@ ms.locfileid: "49349277"
   > [!NOTE]
   > 請考慮下列案例： john@gmail.com 會將郵件傳送至 faith@contoso.com 和 john@subsidiary.contoso.com。 Gmail 會將此郵件 bifurcates 成兩個副本，以在 Microsoft 中路由傳送至隔離區。 系統管理員會將這兩封郵件都發行至 admin@contoso.com。 傳遞到達系統管理員信箱的第一個已發佈郵件。 第二個發行的郵件會被識別為重複傳遞，而且會略過。 如果郵件有相同的郵件識別碼和接收時間，便會將它識別為重複郵件。
 
-- **刪除郵件**：在出現的警告中按一下 [是] 之後，郵件就會立即遭到刪除，而不會傳送給原始收件者。
+- **刪除郵件**：在出現的警告中，按一下 [ **是]** 之後，就會立即刪除郵件，而不會傳送至原始收件者。
 
 完成時，請按一下 [關閉]。
 

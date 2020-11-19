@@ -21,12 +21,12 @@ description: 請參閱 Office 365 的 Microsoft Defender 中的自動化調查�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 039cca2f6f61d7c82f8c3e85f1fd147a68f84b68
-ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
+ms.openlocfilehash: b901585f0a25c51c377e974c56faffe560eab5f3
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "48948430"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357668"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自動化調查和回應運作方式
 
@@ -79,7 +79,7 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 
 ![具有選取郵件的 Explorer](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-您可以使用 [ **動作** ] 功能表，選取 [ **觸發調查** ]。
+您可以使用 [ **動作** ] 功能表，選取 [ **觸發調查**]。
 
 ![選取郵件的動作功能表](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
@@ -97,4 +97,4 @@ Microsoft Defender for Office 365 中的 AIR 功能包括 [報告 & 詳細資料
 
 - [流覽 Microsoft 365 藍圖，以查看已計畫及即將發行的專案](https://www.microsoft.com/microsoft-365/roadmap?filters=)
 
-- [深入瞭解 Microsoft 365 Defender 中的自動化調查和回應功能](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir?view=o365-worldwide&preserve-view=true)
+- [深入瞭解 Microsoft 365 Defender 中的自動化調查和回應功能](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

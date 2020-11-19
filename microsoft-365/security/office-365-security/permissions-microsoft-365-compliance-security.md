@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規性中心，您可以集中管理與安全性或合規性相關的所有工作權限。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0f7dcddd7070f95ae61b17b9623dfcbab4a62e5f
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: a6c0ceee2b07dd93affc75fae1111aad9d7f5198
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920629"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357872"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
 
@@ -172,7 +172,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 
 |Microsoft 365 服務|角色資訊|
 |---|---|
-|Office 365 與 Microsoft 365 商務方案中的系統管理員角色|[Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)|
+|Office 365 與 Microsoft 365 商務方案中的系統管理員角色|[Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |Azure Active Directory (Azure AD) 與 Azure AD Identity Protection|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |適用於身分識別的 Microsoft Defender|[適用於身分識別的 Microsoft Defender 角色群組](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure 資訊保護|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

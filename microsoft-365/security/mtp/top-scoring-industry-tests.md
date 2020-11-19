@@ -14,17 +14,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: b88a06a61f1f7664f9c2e39ceba09df427f97454
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 824864ffd69a1f885c56a55957fc369fec4f640a
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844689"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357294"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行業測試的最大得分
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)。
+>
 
 [Microsoft 365 Defender](https://www.microsoft.com/security/business/threat-protection/integrated-threat-protection) 技術始終如一地在獨立測試中達成高分，展示其企業威脅防護功能的強度。 Microsoft 的目的是針對這些測試分數做為透明。 此頁面會摘要結果，並提供分析。
 
@@ -74,7 +76,7 @@ AV 測試產品檢查和認證報告測試三個類別：保護、效能及可�
 
 Business Security Test 包含三個主要部分：模仿線上惡意程式碼攻擊的 Real-World 保護測試、惡意程式碼從網際網路外進入系統的惡意程式碼防護測試 (例如 USB) ，以及查看系統效能影響的效能測試。
 
-- Business Security Test 2020 (三月份) ：實際執行 [防護率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) （ <sup>**最新**</sup>）
+- Business Security Test 2020 (三月份) ：實際執行 [防護率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) （<sup>**最新**</sup>）
 
     在過去一年中，Microsoft Defender 防病毒已以不斷提高的 Real-World 保護速率，在最新的測試中有99.7% 的分數。
 
@@ -88,7 +90,7 @@ SE 實驗會測試產品和服務所使用的解決方案範圍，以偵測和/�
 
 **下載最新的透明性報告： [檢查 SE 實驗測試結果，January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
 
-- Enterprise Endpoint Protection （2020年9月）： <sup>**最新**</sup> [AAA 獎](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
+- Enterprise Endpoint Protection （2020年9月）：<sup>**最新**</sup> [AAA 獎](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 
     Microsoft 的下一代保護產品已停止所有目標攻擊，但遺漏了少數公開威脅。
 

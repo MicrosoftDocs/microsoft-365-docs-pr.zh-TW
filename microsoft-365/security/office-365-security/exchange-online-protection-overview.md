@@ -14,12 +14,12 @@ ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解 Exchange Online Protection (EOP) 如何協助保護您的內部部署電子郵件組織，以進行獨立和混合式環境。
-ms.openlocfilehash: a8b30a475e6865916c74f08c4d927662f658a096
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 997f157432dced474ccc17bf47cf9af68f4b8c08
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842401"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356712"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection 概觀
 
@@ -28,9 +28,9 @@ ms.locfileid: "48842401"
 
 Exchange Online Protection (EOP) 是雲端架構篩選服務，可協助您的組織抵禦垃圾郵件和惡意程式碼。 EOP 包含 Exchange Online 信箱的所有 Microsoft 365 組織。 不過，下列內部部署案例也提供 EOP：
 
-- **在獨立案例中** ：EOP 會為您的內部部署、Exchange 組織，或任何其他內部部署 SMTP 電子郵件解決方案，提供雲端式電子郵件保護。
+- **在獨立案例中**：EOP 會為您的內部部署、Exchange 組織，或任何其他內部部署 SMTP 電子郵件解決方案，提供雲端式電子郵件保護。
 
-- **在混合式部署中** ：當您混合使用內部部署和雲端信箱時，可以設定 EOP 來保護您的電子郵件環境，並控制郵件路由傳送。
+- **在混合式部署中**：當您混合使用內部部署和雲端信箱時，可以設定 EOP 來保護您的電子郵件環境，並控制郵件路由傳送。
 
 在這些案例中，EOP 可以簡化電子郵件環境的管理，並減輕維護內部部署硬體和軟體帶來的許多負擔。
 
@@ -42,13 +42,13 @@ Exchange Online Protection (EOP) 是雲端架構篩選服務，可協助您的�
 
 :::image type="content" source="../../media/tp_emailprocessingineopt3.png" alt-text="從網際網路或客戶意見傳送至 EOP 的電子郵件圖形，以及透過連線、反惡意程式碼、郵件流程規則-反惡意程式碼、規則-反惡意程式碼，以及內容篩選的電子郵件，在垃圾郵件或隔離區或使用者郵件傳遞的最後一個之前。":::
 
-- 當傳入郵件進入 EOP 時，它最初會透過連線篩選來檢查寄件者的信譽。 大部分的垃圾郵件會在此點停止，並由 EOP 拒絕。 如需詳細資訊，請參閱[設定連線篩選](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-the-connection-filter-policy?view=o365-worldwide)。
+- 當傳入郵件進入 EOP 時，它最初會透過連線篩選來檢查寄件者的信譽。 大部分的垃圾郵件會在此點停止，並由 EOP 拒絕。 如需詳細資訊，請參閱[設定連線篩選](configure-the-connection-filter-policy.md)。
 
-- 然後檢查郵件是否有惡意程式碼的跡象。 如果在郵件中找到惡意程式碼或附件 (s) 郵件會路由傳送至僅限系統管理員的隔離存放區。 您可以在 [這裡](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-malware-policies?view=o365-worldwide)深入瞭解如何設定反惡意程式碼。
+- 然後檢查郵件是否有惡意程式碼的跡象。 如果在郵件中找到惡意程式碼或附件 (s) 郵件會路由傳送至僅限系統管理員的隔離存放區。 您可以在 [這裡](configure-anti-malware-policies.md)深入瞭解如何設定反惡意程式碼。
 
 - 郵件會繼續透過原則篩選，其評估來源為自訂郵件流程規則 (也稱為從範本建立或強制執行的傳輸規則) 。 例如，您可能有一個規則，會在特定寄件者的郵件送達時，傳送通知給管理員。 資料遺失防護 (DLP) 檢查也會在此 (Exchange Enterprise CAL with Services) 時發生。
 
-- 接下來，郵件會透過內容篩選 (也稱為反垃圾郵件) 。 此篩選器決定是垃圾郵件 *或網路釣魚網路* 的訊息，可以傳送至隔離區，或是傳送至使用者的垃圾郵件資料夾，以及其他選項。 如需詳細資訊，請參閱 [設定反垃圾郵件原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies?view=o365-worldwide) 及 [設定反網路釣魚原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-anti-phishing-policies-eop?view=o365-worldwide)。
+- 接下來，郵件會透過內容篩選 (也稱為反垃圾郵件) 。 此篩選器決定是垃圾郵件 *或網路釣魚網路* 的訊息，可以傳送至隔離區，或是傳送至使用者的垃圾郵件資料夾，以及其他選項。 如需詳細資訊，請參閱 [設定反垃圾郵件原則](configure-your-spam-filter-policies.md) 及 [設定反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
 
 所有傳遞這些保護層的郵件都會順利傳送給收件者。
 
@@ -58,11 +58,11 @@ Exchange Online Protection (EOP) 是雲端架構篩選服務，可協助您的�
 
 以下是可用的 EOP 訂閱方案：
 
-- **獨立 EOP** ：您可以註冊 EOP 以保護內部部署的電子郵件組織。
+- **獨立 EOP**：您可以註冊 EOP 以保護內部部署的電子郵件組織。
 
-- **Exchange online 中的 EOP 功能** ：包含 exchange online (獨立的任何訂閱，或 Microsoft 365 的一部分) 使用 EOP 來保護您的 Exchange Online 信箱。
+- **Exchange online 中的 EOP 功能**：包含 exchange online (獨立的任何訂閱，或 Microsoft 365 的一部分) 使用 EOP 來保護您的 Exchange Online 信箱。
 
-- **Exchange Enterprise CAL (含服務)** ：如果您有內部部署的 Exchange 組織，且您已購買額外的 Exchange Enterprise CAL (含服務) 授權，EOP 會包含在服務中。
+- **Exchange Enterprise CAL (含服務)**：如果您有內部部署的 Exchange 組織，且您已購買額外的 Exchange Enterprise CAL (含服務) 授權，EOP 會包含在服務中。
 
 如需所有 EOP 訂閱方案之需求、重要限制和功能可用性的相關資訊，請參閱 [Exchange Online Protection 服務描述](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)。
 
@@ -96,7 +96,7 @@ EOP 會在資料中心之間執行負載平衡，但只在一個區域內。如�
 
 適用於 EOP 系統管理員的幫助內容由下列頂層類別組成：
 
-- [設定 EOP，Day 1，適用于 Microsoft defender For office 365 admins：設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?view=o365-worldwide)EOP 保護和偵測工具，以 microsoft Defender for office 365 為核心。
+- [設定 EOP，Day 1，適用于 Microsoft defender For office 365 admins：設定](protect-against-threats.md)EOP 保護和偵測工具，以 microsoft Defender for office 365 為核心。
 
 - [EOP 功能](eop-features.md)：提供一份 EOP 中可用的功能清單。
 

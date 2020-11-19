@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 653bd90fb68eb42423d5f32633736bba4b5943b4
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: 7e8104e234bd1b724bc62fb1a9b401ab83a2bcb4
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464309"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357524"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>保護 SharePoint 網站和檔案的原則建議
 
 本文說明如何執行建議的身分識別和裝置存取原則，以保護 SharePoint 和 OneDrive 商務。 本指南是以 [通用身分識別和裝置存取原則](identity-access-policies.md)為基礎。
 
-這些建議是根據您的需求細微性，以三種不同的安全性和保護層級來保護 SharePoint 檔案： **基準**、 **機密**和 **高管制**。 您可以在 [ [概述](microsoft-365-policies-configurations.md)] 中深入瞭解這些安全性層，以及建議的用戶端作業系統。
+這些建議是根據您的需求細微性，以三種不同的安全性和保護層級來保護 SharePoint 檔案： **基準**、 **機密** 和 **高管制**。 您可以在 [ [概述](microsoft-365-policies-configurations.md)] 中深入瞭解這些安全性層，以及建議的用戶端作業系統。
 
 除了執行這項指導之外，請務必設定具有適當保護的 SharePoint 網站，包括為敏感和高管制內容設定適當的許可權。
 
@@ -46,18 +46,19 @@ ms.locfileid: "48464309"
 
 下表列出您需要複查和更新或為 SharePoint 建立新的原則。 通用身分 [識別與裝置存取原則](identity-access-policies.md) 文章中相關之設定指示的常見原則連結。
 
-|保護層級|原則|其他相關資訊|
-|:---------------|:-------|:----------------|
-|**Baseline**|[當登入風險為*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint。|
-|        |[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在雲端應用程式的指派中包含 SharePoint。|
-|        |[套用應用程式資料保護原則](identity-access-policies.md#apply-app-data-protection-policies)|請確定所有建議的應用程式都包含在應用程式清單中。 請務必更新每個平臺 (iOS、Android、Windows) 的原則。|
-|        |[需要相容的電腦](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在雲端應用程式的清單中包含 SharePoint。|
-|        |[在 SharePoint 中使用應用程式強制限制](#use-app-enforced-restrictions-in-sharepoint)|新增此新原則。 這會告訴 Azure Active Directory (Azure AD) 使用 SharePoint 中指定的設定。 這個原則會套用至所有使用者，但是只會影響 SharePoint 存取原則中所包含之網站的存取權。|
-|**敏感度**|[當登入風險為*低*、*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint。|
-|         |[需要相容 *的電腦和* 行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在雲端 app 清單中包含 SharePoint。|
+|保護層級|原則|詳細資訊|
+|---|---|---|
+|**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint。|
+||[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在雲端應用程式的指派中包含 SharePoint。|
+||[套用應用程式資料保護原則](identity-access-policies.md#apply-app-data-protection-policies)|請確定所有建議的應用程式都包含在應用程式清單中。 請務必更新每個平臺 (iOS、Android、Windows) 的原則。|
+||[需要相容的電腦](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在雲端應用程式的清單中包含 SharePoint。|
+||[在 SharePoint 中使用應用程式強制限制](#use-app-enforced-restrictions-in-sharepoint)|新增此新原則。 這會告訴 Azure Active Directory (Azure AD) 使用 SharePoint 中指定的設定。 這個原則會套用至所有使用者，但是只會影響 SharePoint 存取原則中所包含之網站的存取權。|
+|**敏感度**|[當登入風險為 *低*、*中* 或 *高* 時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint。|
+||[需要相容 *的電腦和* 行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在雲端 app 清單中包含 SharePoint。|
 ||[SharePoint 存取控制原則](#sharepoint-access-control-policies)：允許來自未受管理裝置之特定 SharePoint 網站的瀏覽器存取權。|這可避免檔案的編輯和下載。 使用 PowerShell 來指定網站。|
 |**高管制**|[*永遠* 需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲端應用程式的指派中包含 SharePoint。|
 ||[SharePoint 存取控制原則](#use-app-enforced-restrictions-in-sharepoint)：封鎖非管理裝置對特定 SharePoint 網站的存取權。|使用 PowerShell 來指定網站。|
+|
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>在 SharePoint 中使用應用程式強制限制
 
@@ -90,7 +91,7 @@ James 具有指派的基準條件式存取原則，但可獲得對具有敏感�
 - 如果 James 存取機密的網站，他是使用未受管理的電話的成員（允許基準使用者使用），他只會收到對機密網站的瀏覽器存取權（由於為此網站設定的裝置存取原則）。
 - 如果 James 存取高管制網站，他是使用非管理電話的成員，則會因此網站設定的存取原則而封鎖。 他只能使用受管理和相容的電腦來存取此網站。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 ![步驟4： Microsoft 365 雲端應用程式的原則](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
@@ -98,4 +99,3 @@ James 具有指派的基準條件式存取原則，但可獲得對具有敏感�
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
-

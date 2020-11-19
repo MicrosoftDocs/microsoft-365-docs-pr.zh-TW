@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在中國使用 Office 365 的系統管理員可以瞭解如何使用獨立 Exchange Online Protection (EOP) 來保護其內部部署信箱。
-ms.openlocfilehash: eb17b25db93aa50c6c390b5f79cdbd707762a0f9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 9b91abec8d258df2b549cee1d538d2f65d2974ab
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202480"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356892"
 ---
 # <a name="protect-on-premises-mailboxes-in-china-with-standalone-eop"></a>使用獨立版 EOP 保護中國的內部部署信箱
 
@@ -36,7 +36,7 @@ ms.locfileid: "48202480"
 > [!NOTE]
 > 本文僅適用於中國 21Vianet 所營運的 Office 365。
 
-即使您打算將部分或所有信箱裝載在內部部署，您仍然可以使用 Exchange Online Protection (EOP) 保護信箱。 若要設定連接器，您的帳戶必須是全域管理員或 Exchange 公司管理員 (組織管理角色群組) 。 如需 Office 365 權限與 Exchange 權限之關係的相關資訊，請參閱[由 21Vianet 營運的 Office 365 中指派系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet)。 如果您的 Exchange 信箱均為內部部署，請遵循以下步驟以設定 EOP 服務。
+即使您打算將部分或所有信箱裝載在內部部署，您仍然可以使用 Exchange Online Protection (EOP) 保護信箱。 若要設定連接器，您的帳戶必須是全域管理員或 Exchange 公司管理員 (組織管理角色群組) 。 如需 Office 365 權限與 Exchange 權限之關係的相關資訊，請參閱[由 21Vianet 營運的 Office 365 中指派系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles?view=o365-21vianet&preserve-view=true)。 如果您的 Exchange 信箱均為內部部署，請遵循以下步驟以設定 EOP 服務。
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>步驟 1：使用 Microsoft 365 系統管理中心新增及確認您的網域
 
@@ -45,7 +45,7 @@ ms.locfileid: "48202480"
 2. 請遵循入口網站的步驟，將適用的 DNS 記錄新增到 DNS 主機提供者，以便驗證網域擁有權。
 
 > [!TIP]
-> 當您新增網域至此服務並設定 DNS 時，[新增網域和使用者至 21Vianet 營運的 Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet) (部分機器翻譯) 和 [管理您的 DNS 記錄時建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) (部分機器翻譯)，是有用的參考資源。
+> 當您新增網域至此服務並設定 DNS 時，[新增網域和使用者至 21Vianet 營運的 Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain?view=o365-21vianet&preserve-view=true) (部分機器翻譯) 和 [管理您的 DNS 記錄時建立 Office 365 的 DNS 記錄](https://docs.microsoft.com/microsoft-365/admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet&preserve-view=true) (部分機器翻譯)，是有用的參考資源。
 
 ### <a name="step-2-add-recipients-and-configure-the-domain-type"></a>步驟 2：新增收件者和設定網域類型
 
@@ -88,7 +88,7 @@ ms.locfileid: "48202480"
 
 ## <a name="less-common-a-hybrid-setup-with-mailboxes-on-premises-and-in-the-cloud"></a>較不常見：具有內部部署和雲端信箱的混合式設定
 
-如果您擁有 Exchange 信箱內部部署和 Exchange Online 中一個或多個雲端信箱，則您具有*混合式*設定。 在混合式設定中，例如空閒/忙碌行事曆共用和郵件路由等功能可在您的內部部署和雲端環境中共同作業。 將信箱移轉到 Exchange Online 時，可能會啟用混合式設定。 混合式環境的設定不同於 EOP 獨立防護。
+如果您擁有 Exchange 信箱內部部署和 Exchange Online 中一個或多個雲端信箱，則您具有 *混合式* 設定。 在混合式設定中，例如空閒/忙碌行事曆共用和郵件路由等功能可在您的內部部署和雲端環境中共同作業。 將信箱移轉到 Exchange Online 時，可能會啟用混合式設定。 混合式環境的設定不同於 EOP 獨立防護。
 
 您可以選擇混合式案例，以利用雲端式電子郵件給大部分員工使用。 您可以在執行這項作業的同時，將部分信箱裝載在內部部署；例如，針對法務部門。
 

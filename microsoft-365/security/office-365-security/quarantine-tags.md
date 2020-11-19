@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 系統管理員可以瞭解如何使用隔離標記來控制使用者可對其隔離郵件執行的動作。
-ms.openlocfilehash: e50d7eea4cec3c87231dda855725b1e901f5fa33
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845693"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357644"
 ---
 # <a name="quarantine-tags"></a>隔離標記
 
@@ -44,12 +44,12 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
 
 |權限|沒有存取權|限制存取|完全存取|
 |---|:---:|:---:|:---:|
-|**允許寄件者** ( _PermissionToAllowSender_ ) |||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**封鎖寄件者** ( _PermissionToBlockSender_ ) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Delete** ( _PermissionToDelete_ ) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**預覽** ( _PermissionToPreview_ ) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**允許收件者從隔離區釋放郵件** ( _PermissionToRelease_ ) |||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**允許收件者要求從隔離區發行郵件** ( _PermissionToRequestRelease_ ) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**允許寄件者** (_PermissionToAllowSender_) |||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**封鎖寄件者** (_PermissionToBlockSender_) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Delete** (_PermissionToDelete_) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**預覽** (_PermissionToPreview_) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**允許收件者從隔離區釋放郵件** (_PermissionToRelease_) |||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**允許收件者要求從隔離區發行郵件** (_PermissionToRequestRelease_) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |
 
 如果您不喜歡預設許可權群組中的預設許可權，您可以在建立或修改自訂隔離標記時使用自訂許可權。 如需每個許可權的相關資訊，請參閱本文稍後的隔離標籤 [許可權詳細資料](#quarantine-tag-permission-details) 一節。
@@ -63,14 +63,14 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 若要查看、建立、修改或移除隔離標記，您必須是下列其中一個角色群組的成員：
-  - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員** 。 
-  - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理** 。
+  - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
+  - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理**。
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>步驟1：在安全性 & 規範中心建立隔離標記
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** ]，然後選取 [ **隔離標記** ]。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** ]，然後選取 [ **隔離標記**]。
 
-2. 在 [ **隔離標記** ] 頁面上，選取 [ **新增自訂標記** ]。
+2. 在 [ **隔離標記** ] 頁面上，選取 [ **新增自訂標記**]。
 
 3. [ **新增標記** ] 嚮導隨即開啟。 在 [ **標記名稱** ] 頁面上，于 [ **標記名稱** ] 欄位中輸入簡短但唯一的名稱。 您必須在後續步驟中以名稱識別並選取標記。 完成後，按 [下一步]。
 
@@ -84,11 +84,11 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
    若要指定自訂許可權，請選取 [ **設定特定 access (Advanced)** ]，然後設定下列設定：
 
      - **選取 [發行動作偏好** 設定]：選取下列其中一個值：
-       - **無發行動作** ：此為預設值。
+       - **無發行動作**：此為預設值。
        - **允許收件者從隔離區釋放郵件**
        - **允許收件者要求從隔離區釋放郵件**
 
-     - **選取其他動作收件者可對隔離郵件採取採取動作** ：選取 [部分]、[全部] 或 [無下列任何] 值：
+     - **選取其他動作收件者可對隔離郵件採取採取動作**：選取 [部分]、[全部] 或 [無下列任何] 值：
        - **Delete**
        - **預覽**
        - **允許寄件者**
@@ -100,7 +100,7 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
 
 5. 在出現的 [ **摘要** ] 頁面上，複查您的設定。 您可以按一下每個設定的 [ **編輯** ] 進行修改。
 
-   當您完成時，按一下 [ **提交** ]。
+   當您完成時，按一下 [ **提交**]。
 
 6. 在出現的確認頁面上，按一下 [ **完成** ]。
 
@@ -178,19 +178,19 @@ $<VariableName> = New-QuarantinePermissions [-PermissionToAllowSender <$true | $
 
 下列範例顯示如何建立與「預置」許可權群組相對應的權限物件：
 
-- **無存取權** ：
+- **無存取權**：
 
   ```powershell
   $NoAccess = New-QuarantinePermissions
   ```
 
-- **限制存取** ：
+- **限制存取**：
 
   ```powershell
   $LimitedAccess = New-QuarantinePermissions -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRequestRelease $true
   ```
 
-- **完全存取** ：
+- **完全存取**：
 
   ```powershell
   $FullAccess = New-QuarantinePermissions -PermissionToAllowSender $true -PermissionToBlockSender $true -PermissionToDelete $true -PermissionToPreview $true -PermissionToRelease $true
@@ -228,11 +228,11 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 |功能|支援隔離標記？|使用的預設隔離標記|
 |---|:---:|---|
-|[反垃圾郵件原則](configure-your-spam-filter-policies.md)： <ul><li>**垃圾郵件** ( _SpamAction_ ) </li><li>**高信賴垃圾郵件** ( _HighConfidenceSpamAction_ ) </li><li>**網路釣魚電子郵件** ( _PhishSpamAction_ ) </li><li>**高信賴網路釣魚電子郵件** ( _HighConfidencePhishAction_ ) </li><li>**大量電子郵件** ( _BulkSpamAction_ ) </li></ul>|是|<ul><li>DefaultSpamTag (完整存取) </li><li>DefaultHighConfSpamTag (完整存取) </li><li>DefaultPhishTag (完整存取) </li><li>DefaultHighConfPhishTag (無法存取) </li><li>DefaultBulkTag (完整存取) </li></ul>
-|反網路釣魚原則： <ul><li>_AuthenticationFailAction_ 的 [欺騙情報防護](set-up-anti-phishing-policies.md#spoof-settings) () </li><li>[類比保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)：<sup>\*</sup> <ul><li>**如果由類比的使用者傳送電子郵件** ( _TargetedUserProtectionAction_ ) </li><li>**如果模擬的網域傳送電子郵件** ( _TargetedDomainProtectionAction_ ) </li><li>**信箱智慧** \>**如果由類比的使用者傳送電子郵件** ( _MailboxIntelligenceProtectionAction_ ) </li></ul></li></ul></ul>|否|不適用|
+|[反垃圾郵件原則](configure-your-spam-filter-policies.md)： <ul><li>**垃圾郵件** (_SpamAction_) </li><li>**高信賴垃圾郵件** (_HighConfidenceSpamAction_) </li><li>**網路釣魚電子郵件** (_PhishSpamAction_) </li><li>**高信賴網路釣魚電子郵件** (_HighConfidencePhishAction_) </li><li>**大量電子郵件** (_BulkSpamAction_) </li></ul>|是|<ul><li>DefaultSpamTag (完整存取) </li><li>DefaultHighConfSpamTag (完整存取) </li><li>DefaultPhishTag (完整存取) </li><li>DefaultHighConfPhishTag (無法存取) </li><li>DefaultBulkTag (完整存取) </li></ul>
+|反網路釣魚原則： <ul><li>_AuthenticationFailAction_ 的 [欺騙情報防護](set-up-anti-phishing-policies.md#spoof-settings) () </li><li>[類比保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)：<sup>\*</sup> <ul><li>**如果由類比的使用者傳送電子郵件** (_TargetedUserProtectionAction_) </li><li>**如果模擬的網域傳送電子郵件** (_TargetedDomainProtectionAction_) </li><li>**信箱智慧** \>**如果由類比的使用者傳送電子郵件** (_MailboxIntelligenceProtectionAction_) </li></ul></li></ul></ul>|否|不適用|
 |[反惡意程式碼原則](configure-anti-malware-policies.md)：永遠會隔離所有偵測到的郵件。|否|不適用|
 |[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)|否|不適用|
-|[郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也稱為傳輸規則) 具有動作：將 **郵件傳遞至主控隔離** ( _隔離_ ) 。|否|不適用|
+|[郵件流程規則](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (也稱為傳輸規則) 具有動作：將 **郵件傳遞至主控隔離** (_隔離_) 。|否|不適用|
 |
 
 <sup>\*</sup> 模擬保護設定只適用于 Microsoft Defender for Office 365 中的反網路釣魚原則。
@@ -243,7 +243,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
 在 [EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)，說明建立及修改反垃圾郵件原則的完整指示。
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** ]， \> 然後選取 [ **反垃圾郵件** ]。 或者，開啟 <https://protection.office.com/antispam> 。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則**]， \> 然後選取 [ **反垃圾郵件**]。 或者，開啟 <https://protection.office.com/antispam> 。
 
 2. 尋找並選取要編輯的現有反垃圾郵件原則，或建立新的反垃圾郵件原則。
 
@@ -251,7 +251,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
   
 4. 如果您已針對可用垃圾郵件篩選判定的動作選取 [ **隔離郵件** ]，則可以使用 [套用 **隔離原則** 標籤] 方塊，為該判定選取隔離標記。
 
-   **附注** ：當您建立新的原則時，垃圾郵件篩選判定的空白隔離標籤值會指出使用該判定的預設隔離標籤。 當您後來編輯原則時，空白值會以實際的預設隔離標記名稱取代，如上表所述。
+   **附注**：當您建立新的原則時，垃圾郵件篩選判定的空白隔離標籤值會指出使用該判定的預設隔離標籤。 當您後來編輯原則時，空白值會以實際的預設隔離標記名稱取代，如上表所述。
   
    ![反垃圾郵件原則中的隔離標記選擇](../../media/quarantine-tags-in-anti-spam-policies.png)
 
@@ -265,7 +265,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
 ```
 
-**附註** ：
+**附註**：
 
 - _HighConfidencePhishAction_ 參數的預設值是「隔離」，所以您不需要為新反垃圾郵件原則中的高可信度網路釣魚偵測設定隔離動作。 針對新的或現有的反垃圾郵件原則中的所有其他垃圾郵件篩選 verdicts，隔離標籤只有在 action 值為「隔離」時才有效。 若要查看現有反垃圾郵件原則中的動作值，請執行下列命令：
 
@@ -304,25 +304,25 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 隔離標籤的通用設定可讓您自訂使用者的垃圾郵件通知，該通知會傳送給被隔離的郵件收件者。 如需這些通知的詳細資訊，請參閱 [使用者垃圾郵件通知](use-spam-notifications-to-release-and-report-quarantined-messages.md)。
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** ]，然後選取 [ **隔離標記** ]。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** ]，然後選取 [ **隔離標記**]。
 
-2. 在 [ **隔離標記** ] 頁面上，選取 [ **通用設定** ]。
+2. 在 [ **隔離標記** ] 頁面上，選取 [ **通用設定**]。
 
 3. 在開啟的 [ **隔離通知設定** ] 浮出控制項中，設定下列部分或所有設定：
 
-   - **使用我的公司徽標** ：選取此選項以取代在使用者垃圾郵件通知頂端使用的預設 Microsoft 標誌。 在執行這項作業之前，您必須依照 [自訂群組織的 Microsoft 365 主題](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) 中的指示，上傳自訂的徽標。
+   - **使用我的公司徽標**：選取此選項以取代在使用者垃圾郵件通知頂端使用的預設 Microsoft 標誌。 在執行這項作業之前，您必須依照 [自訂群組織的 Microsoft 365 主題](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) 中的指示，上傳自訂的徽標。
 
      下列螢幕擷取畫面顯示使用者垃圾郵件通知中的自訂標誌：
 
      ![最終使用者垃圾郵件通知中的自訂標誌](../../media/quarantine-tags-esn-customization-logo.png)
 
-   - **選擇語言** ：使用者垃圾郵件通知已根據收件者的語言設定進行當地語系化。 您可以針對 **顯示名稱** 和 **免責聲明** 值，以不同語言指定自訂的文字。
+   - **選擇語言**：使用者垃圾郵件通知已根據收件者的語言設定進行當地語系化。 您可以針對 **顯示名稱** 和 **免責聲明** 值，以不同語言指定自訂的文字。
 
-     選取 [第一個語言] 方塊中至少一種語言，然後按一下 [ **新增** ]。 您可以在每個語言之後按一下 [ **新增** ]，以選取多種語言。 [區段語言] 方塊會顯示您所選取的所有語言：
+     選取 [第一個語言] 方塊中至少一種語言，然後按一下 [ **新增**]。 您可以在每個語言之後按一下 [ **新增** ]，以選取多種語言。 [區段語言] 方塊會顯示您所選取的所有語言：
 
      ![隔離標籤全域隔離通知設定中的 [第二語言] 方塊中選取的語言](../../media/quarantine-tags-esn-customization-selected-languages.png)
 
-   - **顯示名稱** ：自訂在使用者垃圾郵件通知中使用的寄件者顯示名稱。
+   - **顯示名稱**：自訂在使用者垃圾郵件通知中使用的寄件者顯示名稱。
 
      針對您新增的每種語言，在 [第二語言] 方塊中選取語言 (不要按一下 X) ，然後在 [ **顯示名稱** ] 方塊中輸入您想要的文字值。
 
@@ -330,7 +330,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
      ![最終使用者垃圾郵件通知中的自訂寄件者顯示名稱](../../media/quarantine-tags-esn-customization-display-name.png)
 
-   - **免責聲明** ：將自訂免責聲明新增至使用者垃圾郵件通知的底部。 當地語系化的文字（ **來自您組織的免責聲明** ）永遠包含在第一列，接著您指定的文字。
+   - **免責聲明**：將自訂免責聲明新增至使用者垃圾郵件通知的底部。 當地語系化的文字（ **來自您組織的免責聲明** ）永遠包含在第一列，接著您指定的文字。
 
      針對您已新增的每種語言，選取 [第二語言] 方塊中的語言 (請勿按一下 X) ，然後在 [ **免責聲明** ] 方塊中輸入您想要的文字值。
 
@@ -340,11 +340,11 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 ## <a name="view-quarantine-tags-in-the-security--compliance-center"></a>在安全性 & 規範中心內查看隔離標記
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** ]，然後選取 [ **隔離標記** ]。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** ]，然後選取 [ **隔離標記**]。
 
 - 若要查看內建或自訂隔離標籤的設定，請從清單中選取 [隔離] 標記 (不要選取] 核取方塊) 。
 
-- 若要查看全域設定，請選取 [ **通用設定** ]
+- 若要查看全域設定，請選取 [**通用設定**]
 
 ### <a name="view-quarantine-tags-in-powershell"></a>在 PowerShell 中查看隔離標記
 
@@ -372,7 +372,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 ## <a name="remove-quarantine-tags-in-the-security--compliance-center"></a>移除安全性 & 規範中心內的隔離標記
 
-**附註** ：
+**附註**：
 
 - 您無法移除內建的隔離標記。
 
@@ -384,7 +384,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
   若要使用隔離標記，請 [取代指派的隔離標記](#step-2-assign-a-quarantine-tag-to-supported-features) ，然後再將其移除。
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** ]，然後選取 [ **隔離標記** ]。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** ]，然後選取 [ **隔離標記**]。
 
 2. 在 [ **隔離標記** ] 頁面上，選取您要移除的自訂隔離標記，然後按一下 [ **刪除** 標籤]。
 
@@ -412,11 +412,11 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 如果隔離標籤指派「 **無存取** 」許可權 (無許可權) ，使用者仍會取得某些基準功能：
 
-- **隔離的郵件詳細資料** ： [ **View message header** ] 按鈕永遠可供使用。
+- **隔離的郵件詳細資料**： [ **View message header** ] 按鈕永遠可供使用。
 
   ![隔離的郵件詳細資料中的可用按鈕如果隔離標籤提供給使用者「沒有存取」許可權](../../media/quarantine-tags-quarantined-message-details-no-access.png)
 
-- **使用者垃圾郵件通知** ：將使用者帶至隔離區中郵件的 [ **檢查** ] 按鈕永遠可供使用。
+- **使用者垃圾郵件通知**：將使用者帶至隔離區中郵件的 [ **檢查** ] 按鈕永遠可供使用。
 
   ![使用者沒有存取許可權時，使用者垃圾郵件通知中的可用按鈕](../../media/quarantine-tags-esn-no-access.png)
 
@@ -424,7 +424,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 如果隔離標籤指派「 **限制存取** 」許可權，使用者就可以取得下列功能：
 
-- **隔離的郵件詳細資料** ：下列按鈕可用：
+- **隔離的郵件詳細資料**：下列按鈕可用：
   - **要求版本**
   - **查看郵件頭**
   - **預覽郵件**
@@ -433,7 +433,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
   ![隔離郵件詳細資料中的可用按鈕（如果隔離標籤提供使用者限制存取權限）](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
-- **使用者垃圾郵件通知** ：下列按鈕可用：
+- **使用者垃圾郵件通知**：下列按鈕可用：
   - **封鎖寄件者**
   - **檢閱**
 
@@ -443,7 +443,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 如果隔離標籤會指派「 **完整存取** 」許可權 (所有可用的許可權) ，使用者會收到下列功能：
 
-- **隔離的郵件詳細資料** ：下列按鈕可用：
+- **隔離的郵件詳細資料**：下列按鈕可用：
   - **Release message**
   - **查看郵件頭**
   - **預覽郵件**
@@ -453,7 +453,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
   ![隔離的郵件詳細資料中的可用按鈕如果隔離標籤提供使用者「完整存取」許可權](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
-- **使用者垃圾郵件通知** ：下列按鈕可用：
+- **使用者垃圾郵件通知**：下列按鈕可用：
   - **封鎖寄件者**
   - **發行**
   - **檢閱**
@@ -467,68 +467,68 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 #### <a name="allow-sender-permission"></a>允許寄件者許可權
 
-[ **允許寄件者** ] 許可權 ( _PermissionToAllowSender_ ) 控制對按鈕的存取權，讓使用者可以輕鬆地將隔離的郵件寄件者新增至其安全的寄件者清單。
+[ **允許寄件者** ] 許可權 (_PermissionToAllowSender_) 控制對按鈕的存取權，讓使用者可以輕鬆地將隔離的郵件寄件者新增至其安全的寄件者清單。
 
-- **隔離的郵件詳細資料** ：
-  - 啟用 [ **允許寄件者** ] 許可權：可以使用 [ **允許寄件者** ] 按鈕。
+- **隔離的郵件詳細資料**：
+  - 啟用 [**允許寄件者**] 許可權：可以使用 [**允許寄件者**] 按鈕。
   - **允許停用寄件者** 許可權：無法使用 [ **允許寄件者** ] 按鈕。
 
-- **使用者垃圾郵件通知** ：沒有作用。
+- **使用者垃圾郵件通知**：沒有作用。
 
-如需安全寄件者清單的詳細資訊，請參閱 [防止受信任的寄件者遭到封鎖](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) ，並 [使用 Exchange Online PowerShell 來設定信箱上的安全清單集合](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
+如需安全寄件者清單的詳細資訊，請參閱 [防止受信任的寄件者遭到封鎖](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) ，並 [使用 Exchange Online PowerShell 來設定信箱上的安全清單集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
 
 #### <a name="block-sender-permission"></a>封鎖寄件者許可權
 
-**Block sender** 許可權 ( _PermissionToBlockSender_ ) 控制對按鈕的存取權，讓使用者可以輕鬆地將隔離的郵件寄件者新增至其封鎖的寄件者清單。
+**Block sender** 許可權 (_PermissionToBlockSender_) 控制對按鈕的存取權，讓使用者可以輕鬆地將隔離的郵件寄件者新增至其封鎖的寄件者清單。
 
-- **隔離的郵件詳細資料** ：
+- **隔離的郵件詳細資料**：
   - 已啟用 **封鎖寄件者** 許可權：可用的 **封鎖寄件者** 按鈕。
-  - 禁止 **封鎖寄件者** 許可權：無法使用 [ **封鎖寄件者** ] 按鈕。
+  - 禁止 **封鎖寄件者** 許可權：無法使用 [**封鎖寄件者**] 按鈕。
 
-- **使用者垃圾郵件通知** ：
-  - 禁止 **封鎖寄件者** 許可權：無法使用 [ **封鎖寄件者** ] 按鈕。
+- **使用者垃圾郵件通知**：
+  - 禁止 **封鎖寄件者** 許可權：無法使用 [**封鎖寄件者**] 按鈕。
   - 已啟用 **封鎖寄件者** 許可權：可用的 **封鎖寄件者** 按鈕。
 
-如需有關封鎖的寄件者清單的詳細資訊，請參閱 [封鎖來自某人的郵件](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) ，並 [使用 Exchange Online PowerShell 來設定信箱上的安全清單集合](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
+如需有關封鎖的寄件者清單的詳細資訊，請參閱 [封鎖來自某人的郵件](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) ，並 [使用 Exchange Online PowerShell 來設定信箱上的安全清單集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
 
 #### <a name="delete-permission"></a>刪除權限
 
-「 **刪除** 」許可權 ( _PermissionToDelete_ ) 會控制使用者對其郵件的功能 (郵件的收件者) 從隔離區。
+「 **刪除** 」許可權 (_PermissionToDelete_) 會控制使用者對其郵件的功能 (郵件的收件者) 從隔離區。
 
-- **隔離的郵件詳細資料** ：
-  - 已啟用 **刪除** 許可權：可以使用 [ **從隔離區移除** ] 按鈕。
-  - 已停用 **刪除** 許可權：無法使用 [ **從隔離區移除** ] 按鈕。
+- **隔離的郵件詳細資料**：
+  - 已啟用 **刪除** 許可權：可以使用 [**從隔離區移除**] 按鈕。
+  - 已停用 **刪除** 許可權：無法使用 [**從隔離區移除**] 按鈕。
 
-- **使用者垃圾郵件通知** ：沒有作用。
+- **使用者垃圾郵件通知**：沒有作用。
 
 #### <a name="preview-permission"></a>預覽許可權
 
-**預覽** 許可權 ( _PermissionToPreview_ ) 控制使用者的功能，以在隔離區中預覽其郵件。
+**預覽** 許可權 (_PermissionToPreview_) 控制使用者的功能，以在隔離區中預覽其郵件。
 
-- **隔離的郵件詳細資料** ：
-  - 已啟用 **預覽** 許可權： [ **預覽郵件** ] 按鈕可供使用。
+- **隔離的郵件詳細資料**：
+  - 已啟用 **預覽** 許可權： [**預覽郵件**] 按鈕可供使用。
   - 已停用 **預覽** 許可權：無法使用 **預覽郵件** 按鈕。
 
-- **使用者垃圾郵件通知** ：沒有作用。
+- **使用者垃圾郵件通知**：沒有作用。
 
 #### <a name="allow-recipients-to-release-a-message-from-quarantine-permission"></a>允許收件者從隔離許可權放開郵件
 
-[ **允許收件者從隔離許可權發行郵件** ] ( _PermissionToRelease_ ) 控制使用者在不核准系統管理員的情況下，直接釋放隔離郵件的能力。
+[ **允許收件者從隔離許可權發行郵件** ] (_PermissionToRelease_) 控制使用者在不核准系統管理員的情況下，直接釋放隔離郵件的能力。
 
-- **隔離的郵件詳細資料** ：
+- **隔離的郵件詳細資料**：
   - 已啟用許可權：「 **發行訊息** 」按鈕可用。
   - 已停用許可權：無法使用「 **發行訊息** 」按鈕。
   
-- **使用者垃圾郵件通知** ：
+- **使用者垃圾郵件通知**：
   - 已啟用許可權：「 **發行** 」按鈕可用。
   - 已停用許可權：無法使用「 **發行** 」按鈕。
 
 #### <a name="allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission"></a>允許收件者要求從隔離許可權發行郵件
 
-[ **允許收件者要求從隔離許可權發行郵件** ] ( _PermissionToRequestRelease_ ) 控制使用者 _要求_ 發行隔離郵件的能力。 只有在系統管理員核准要求之後，才會發佈郵件。
+[ **允許收件者要求從隔離許可權發行郵件** ] (_PermissionToRequestRelease_) 控制使用者 _要求_ 發行隔離郵件的能力。 只有在系統管理員核准要求之後，才會發佈郵件。
 
-- **隔離的郵件詳細資料** ：
+- **隔離的郵件詳細資料**：
   - 已啟用許可權： [ **要求版本** ] 按鈕可用。
   - 已停用許可權： [ **要求版本** ] 按鈕無法使用。
 
-- **使用者垃圾郵件通知** ：無法使用「 **發行** 」按鈕。
+- **使用者垃圾郵件通知**：無法使用「 **發行** 」按鈕。

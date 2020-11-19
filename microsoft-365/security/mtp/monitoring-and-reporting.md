@@ -17,17 +17,19 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e434f6088fa1cd08e6b14e3808007e89f32b83a3
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: d52c401c4b2e995e5ec18895c158f77ce0fce746
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48431036"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356880"
 ---
 # <a name="monitor-and-view-reports-in-the-microsoft-365-security-center"></a>在 Microsoft 365 的安全性中心監控和查看報告
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)。
+>
 
 Microsoft 365 的安全性中心提供整個 Microsoft 365 環境中保護和安全性狀態的摘要。
 
@@ -46,5 +48,5 @@ Microsoft 365 的安全性中心提供整個 Microsoft 365 環境中保護和安
 
 * **危險** 卡，可反白顯示可能有危險的實體（例如帳戶和裝置）。 這些卡片也會強調可能的風險來源，例如新的威脅活動和許可權的雲端應用程式  
 * **偵測趨勢** -重點是指出新威脅偵測、異常及違反原則的卡片
-* 包含安全性控制措施（包括裝置上架狀態至管理服務）的設定**與狀況**卡片
+* 包含安全性控制措施（包括裝置上架狀態至管理服務）的設定 **與狀況** 卡片
 * **其他-其他** 所有未依其他主題分類的卡片

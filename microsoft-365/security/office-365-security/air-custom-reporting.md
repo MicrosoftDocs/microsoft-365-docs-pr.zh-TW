@@ -20,19 +20,19 @@ description: 瞭解如何使用自訂或協力廠商報表解決方案來整合�
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 8b08b441ca468b5efa1c4c003c636de2a43b3e7d
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7b0b0570624b2e0dd40d40b178951a747698afe2
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844545"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357464"
 ---
 # <a name="use-the-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>使用自訂或協力廠商報表解決方案的管理活動 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-使用 [Microsoft Defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)，您可以取得 [有關自動化調查的詳細資訊](air-view-investigation-results.md)。 不過，部分組織也會使用自訂或協力廠商報表解決方案。 如果您的組織想要整合利用這類方案進行的自動調查資訊，您可以使用 Office 365 管理活動 API。
+使用 [Microsoft Defender For Office 365](office-365-atp.md)，您可以取得 [有關自動化調查的詳細資訊](air-view-investigation-results.md)。 不過，部分組織也會使用自訂或協力廠商報表解決方案。 如果您的組織想要整合利用這類方案進行的自動調查資訊，您可以使用 Office 365 管理活動 API。
 
 使用下列資源進行設定：
 
@@ -48,6 +48,6 @@ ms.locfileid: "48844545"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Microsoft Defender for Office 365](office-365-atp.md)
+- [適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
 
 - [Microsoft 365 Defender 的自動化調查和回應](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

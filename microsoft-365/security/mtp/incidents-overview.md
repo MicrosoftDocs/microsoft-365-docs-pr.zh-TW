@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e5ac3e9a02c333d3168c328aa6ad5532c48af99e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 6149b6f128b3c96d2338e325caa8df835c292b13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846685"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357608"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的事件概述
 
@@ -36,6 +36,8 @@ ms.locfileid: "48846685"
 適用於：
 - Microsoft 365 Defender
 
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)。
+>
 
 
 事件是以相關的警示為基礎。 當在您的網路上發現惡意事件或活動時，系統會產生警示。 個別警示提供有關進行中攻擊的重要線索。 不過，攻擊通常會使用各種向量和技術來執行破壞。 將個別的線索 Piecing 在一起可能會非常困難而且耗時。

@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體的攻擊復原。
-ms.openlocfilehash: de1cddbdf1c2b3ffeb8fd74a8f0d31e815eb1b70
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: a1369e64821902e3c2a3061acd1bbebeeb6c85ac
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920605"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357094"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>從 Microsoft 365 復原勒索軟體攻擊
 
@@ -76,7 +76,7 @@ ms.locfileid: "48920605"
 
 在您完成上述步驟以從環境中移除勒索軟體負載 (（該負載會使勒索軟體無法加密或移除) 您的檔案）之後，您可以使用 windows 10 和 Windows 8.1 中的檔案歷程 [記錄](https://support.microsoft.com/help/17128) ，或 windows 7 中的系統保護，以嘗試復原您的本機檔案和資料夾。
 
-**附註** ：
+**附註**：
 
 - 有些勒索軟體也會加密或刪除備份版本，因此您無法使用檔案記錄或系統保護來還原檔案。 如果發生這種情況，您需要在外部磁片磁碟機或未受勒索軟體或 OneDrive 的裝置上使用備份，如下一節所述。
 
@@ -148,7 +148,7 @@ ms.locfileid: "48920605"
 
 - [啟用或停用 Office 檔案中的宏](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
-- [EOP 和 Microsoft Defender for Office 365 安全性的建議設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
+- [EOP 和 Microsoft Defender for Office 365 安全性的建議設定](recommended-settings-for-eop-and-office365-atp.md)
 
 - [值得升級： Windows 10 上的下一代安全性會為2017中的勒索軟體的爆發，證實其可復原](https://www.microsoft.com/security/blog/2018/01/10/a-worthy-upgrade-next-gen-security-on-windows-10-proves-resilient-against-ransomware-outbreaks-in-2017/)
 

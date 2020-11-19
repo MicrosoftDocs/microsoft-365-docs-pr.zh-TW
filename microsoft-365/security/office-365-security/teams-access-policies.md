@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 56b712c73d63bfcb06d5d35d627facb229668c59
-ms.sourcegitcommit: bcb88a6171f9e7bdb5b2d8c03cd628d11c5e7bbf
+ms.openlocfilehash: fa22d445b0e4517bedd1c04378271e561ecb6703
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48464141"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357500"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保護小組聊天、群組和檔案的原則建議
 
@@ -63,17 +63,17 @@ ms.locfileid: "48464141"
 此表格列出必須針對 [一般身分識別和裝置存取原則](identity-access-policies.md)中的每個原則所進行的原則，以及所有 Office 應用程式的更大原則設定的連結。
 
 |保護層級|原則|小組實施的進一步資訊|
-|:---------------|:-------|:----------------|
-|**Baseline**|[當登入風險為*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|請確定小組和相依服務均包含在應用程式清單中。 小組也會考慮訪客存取和外部存取規則，您將在本文稍後深入瞭解這些規則。|
-|        |[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在雲應用程式的指派中包含小組和相依服務。|
-|        |[高風險使用者必須變更密碼](identity-access-policies.md#high-risk-users-must-change-password)|強制小組使用者在登入時，在其帳戶中偵測到高風險活動時變更其密碼。 請確定小組和相依服務均包含在應用程式清單中。|
-|        |[套用應用程式資料保護原則](identity-access-policies.md#apply-app-data-protection-policies)|請確定小組和相依服務均包含在應用程式清單中。 更新每個平臺 (iOS、Android、Windows) 的原則。|
-|        |[定義裝置合規性原則](identity-access-policies.md#define-device-compliance-policies)|在此原則中包括小組和相依服務。|
-|        |[需要相容的電腦](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在此原則中包括小組和相依服務。|
-|**敏感度**|[當登入風險為*低*、*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|小組也會考慮訪客存取和外部存取規則，您將在本文稍後深入瞭解這些規則。 在此原則中包括小組和相依服務。|
-|         |[需要相容 *的電腦和* 行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在此原則中包括小組和相依服務。|
+|---|---|---|
+|**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|請確定小組和相依服務均包含在應用程式清單中。 小組也會考慮訪客存取和外部存取規則，您將在本文稍後深入瞭解這些規則。|
+||[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在雲應用程式的指派中包含小組和相依服務。|
+||[高風險使用者必須變更密碼](identity-access-policies.md#high-risk-users-must-change-password)|強制小組使用者在登入時，在其帳戶中偵測到高風險活動時變更其密碼。 請確定小組和相依服務均包含在應用程式清單中。|
+||[套用應用程式資料保護原則](identity-access-policies.md#apply-app-data-protection-policies)|請確定小組和相依服務均包含在應用程式清單中。 更新每個平臺 (iOS、Android、Windows) 的原則。|
+||[定義裝置合規性原則](identity-access-policies.md#define-device-compliance-policies)|在此原則中包括小組和相依服務。|
+||[需要相容的電腦](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在此原則中包括小組和相依服務。|
+|**敏感度**|[當登入風險為 *低*、*中* 或 *高* 時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|小組也會考慮訪客存取和外部存取規則，您將在本文稍後深入瞭解這些規則。 在此原則中包括小組和相依服務。|
+||[需要相容 *的電腦和* 行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在此原則中包括小組和相依服務。|
 |**高管制**|[*永遠* 需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|不論使用者身分識別，您的組織都會使用 MFA。 在此原則中包括小組和相依服務。 |
-| | |
+|
 
 ## <a name="teams-dependent-services-architecture"></a>小組相依服務架構
 
@@ -94,27 +94,27 @@ Microsoft 小組定義下列專案：
 條件式存取原則只適用于小組中的來賓存取，因為有對應的 Azure AD B2B 帳戶。
 
 <!--
-In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both. 
+In Azure AD, guest and external users are the same. The user type for both of these is Guest. Guest users are B2B users. Microsoft Teams differentiates between guest users and external users in the app. While it's important to understand how each of these are treated in Teams, both types of users are B2B users in Azure AD and the recommended policies for B2B users apply to both.
 
---> 
+-->
 
 如需允許使用 Azure AD B2B 帳戶存取來賓和外部使用者的建議原則，請參閱 [允許來賓和外部 B2B 帳戶存取的原則](identity-access-policies-guest-access.md)。
 
 ### <a name="guest-access-in-teams"></a>Teams 中的來賓存取
 
-除了您公司或組織內部的使用者原則之外，管理員還可以讓來賓存取允許以使用者為基礎的使用者，在您的公司或組織外部的人員存取小組資源，並與內部人員（例如群組交談、聊天和會議）進行互動。 
+除了您公司或組織內部的使用者原則之外，管理員還可以讓來賓存取允許以使用者為基礎的使用者，在您的公司或組織外部的人員存取小組資源，並與內部人員（例如群組交談、聊天和會議）進行互動。
 
 如需來賓存取及其實施方式的詳細資訊，請參閱  [小組訪客存取](https://docs.microsoft.com/microsoftteams/guest-access)。
 
 ### <a name="external-access-in-teams"></a>小組中的外部存取
 
-外部存取有時候會與來賓存取混淆，所以請務必明確這兩個非內部存取機制的實際差別很大。 
+外部存取有時候會與來賓存取混淆，所以請務必明確這兩個非內部存取機制的實際差別很大。
 
 「外部存取」是一種方法，讓團隊使用者可以從整個外部網域尋找、呼叫、聊天及設定小組中的使用者的會議。 小組管理員會設定組織層級的外部存取。 如需詳細資訊，請參閱 [管理 Microsoft 團隊中的外部存取](https://docs.microsoft.com/microsoftteams/manage-external-access)。
 
 外部存取使用者與透過來賓存取新增的人員相比，具有較少的存取權和功能。 例如，外部存取使用者可以與內部使用者聊天，但無法存取小組通道、檔案或其他資源。
 
-外部存取不使用 Azure AD B2B 使用者帳戶，因此不會使用條件式存取原則。 
+外部存取不使用 Azure AD B2B 使用者帳戶，因此不會使用條件式存取原則。
 
 ## <a name="teams-policies"></a>小組原則
 
@@ -150,4 +150,3 @@ In Azure AD, guest and external users are the same. The user type for both of th
 
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
-

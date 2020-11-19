@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: '深入瞭解 Exchange Online Protection (EOP 中的安全性預設設定) '
-ms.openlocfilehash: 9f676dcd89f0322792bd40e06879b9758082d94e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 23c0cad2b96b3a2002f235db7739b903cf862366
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131094"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357860"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 中預設的安全性
 
@@ -47,7 +47,7 @@ ms.locfileid: "49131094"
 - Outlook 安全寄件者
 - IP 允許清單 (連線篩選) 
 
-您可以在 [ [建立安全的寄件者清單](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365)] 中找到這些優先選項的詳細資訊。
+您可以在 [ [建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)] 中找到這些優先選項的詳細資訊。
 
 在下列情況下安全保護此設定不是一種可能開啟或關閉的設定，但是我們的篩選功能會從盒出的方式，讓您的信箱無法使用可能有害或有害的郵件。 惡意程式碼和高可信度網路釣魚應該傳送至隔離區。 只有系統管理員可以管理被隔離為惡意程式碼或高可信度網路釣魚的郵件，也可以從那裡向 Microsoft 報告誤報。 如需詳細資訊，請參閱 [在 EOP 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)
 

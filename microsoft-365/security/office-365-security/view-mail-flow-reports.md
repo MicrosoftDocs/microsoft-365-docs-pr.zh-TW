@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解安全性 & 合規性中心的「報告」儀表板中提供的郵件流程報告。
 ms.custom: ''
-ms.openlocfilehash: 807166ea0c6ea8a26716bc7017387499382c9e7e
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 840b9920fc3f994140702eae0bf5ddbdeac4b465
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131330"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357920"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中查看郵件流程報告
 
@@ -541,7 +541,7 @@ ms.locfileid: "49131330"
 
   -組織管理-安全性管理員 (您也可以在 [Azure Active Directory 系統管理中心](https://aad.portal.azure.com) 進行此作業-安全性讀取器
 
-  如需詳細資訊，請參閱[安全性與合規性中心中的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
+  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 在 Exchange Online 中，您必須是下列其中一個角色群組的成員：
 

@@ -19,20 +19,20 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Microsoft Defender for Office 365 中的安全附件功能。
-ms.openlocfilehash: d758db46f53be46d8213794f90bf8c462f9135e8
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: da3949a4520c52c7f5685efd109f8c976305ea06
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49020948"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357204"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全附件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-[Microsoft Defender For Office 365](office-365-atp.md)中的安全附件為已[在 Exchange ONLINE protection (EOP) 中的反惡意程式碼保護](anti-malware-protection.md)掃描的電子郵件附件，提供額外的保護層級。 具體而言，安全附件會在電子郵件傳送至收件者 (程式（稱為 _引爆_ ) ）之前，使用虛擬環境檢查電子郵件中的附件。
+[Microsoft Defender For Office 365](office-365-atp.md)中的安全附件為已[在 Exchange ONLINE protection (EOP) 中的反惡意程式碼保護](anti-malware-protection.md)掃描的電子郵件附件，提供額外的保護層級。 具體而言，安全附件會在電子郵件傳送至收件者 (程式（稱為 _引爆_) ）之前，使用虛擬環境檢查電子郵件中的附件。
 
-電子郵件訊息的安全附件保護是由安全附件原則所控制。 沒有預設的安全附件原則， **因此若要取得安全附件的保護，您必須建立一或多個安全附件原則** 。 如需相關指示，請參閱 [在 Office 365 的 Defender 中設定安全附件原則](set-up-atp-safe-attachments-policies.md)。
+電子郵件訊息的安全附件保護是由安全附件原則所控制。 沒有預設的安全附件原則， **因此若要取得安全附件的保護，您必須建立一或多個安全附件原則**。 如需相關指示，請參閱 [在 Office 365 的 Defender 中設定安全附件原則](set-up-atp-safe-attachments-policies.md)。
 
 下表說明 Microsoft 365 和 Office 365 組織中包含 Microsoft Defender for Office 365 (的安全附件案例，也就是說，缺乏授權並不是範例) 中的問題。
 
@@ -59,7 +59,7 @@ ms.locfileid: "49020948"
 
 本節說明安全附件原則中的設定：
 
-- **安全附件未知的惡意程式碼回應** ：此設定會控制在電子郵件訊息中，以安全附件進行惡意程式碼掃描的動作。 下表說明可用的選項：
+- **安全附件未知的惡意程式碼回應**：此設定會控制在電子郵件訊息中，以安全附件進行惡意程式碼掃描的動作。 下表說明可用的選項：
 
   ****
 
@@ -69,24 +69,24 @@ ms.locfileid: "49020948"
   |**監視**|傳送包含附件的郵件，然後追蹤偵測到的惡意程式碼會發生什麼事。 <p> 傳遞安全郵件可能會因為安全附件掃描而延遲。|查看您的組織中偵測到惡意程式碼的位置。|
   |**封鎖**|防止傳遞偵測到惡意軟體附件的郵件。 <p> 只會在系統管理員 (非使用者) 可以查看、發行或刪除郵件的地方 [隔離](manage-quarantined-messages-and-files.md) 郵件。 <p> 自動封鎖未來的郵件和附件實例。 <p> 傳遞安全郵件可能會因為安全附件掃描而延遲。|保護您的組織，避免使用相同惡意程式碼附件的重複攻擊。 <p> 此為預設值，以及標準及嚴格的預設 [安全性原則](preset-security-policies.md)中的建議值。|
   |**Replace**|移除偵測到的惡意程式碼附件。 <p> 通知收件者已移除附件。 <p>  只會在系統管理員 (非使用者) 可以查看、發行或刪除郵件的地方 [隔離](manage-quarantined-messages-and-files.md) 郵件。 <p> 傳遞安全郵件可能會因為安全附件掃描而延遲。|對收件者提高知名度，因為偵測到惡意程式碼已移除附件。|
-  |**動態傳遞**|立即傳遞郵件，但是會以預留位置取代附件，直到安全附件掃描完成為止。 <p> 如需詳細資訊，請參閱本主題稍後的「 [安全附件原則中的動態傳遞](#dynamic-delivery-in-safe-attachments-policies) 」一節。|避免郵件延遲，同時為收件者抵禦惡意檔案 <br/> <br/> 執行掃描時，讓收件者以安全模式預覽附件|
+  |**動態傳遞**|立即傳遞郵件，但是會以預留位置取代附件，直到安全附件掃描完成為止。 <p> 如需詳細資訊，請參閱本主題稍後的「 [安全附件原則中的動態傳遞](#dynamic-delivery-in-safe-attachments-policies) 」一節。|避免郵件延遲，防止寄件者惡意的檔案。 <p> 讓收件者在進行掃描時以安全模式預覽附件。|
   |
 
-- 重新 **導向附件的偵測： Enable 重新導向** 並 **將附件傳送至下列電子郵件地址** ：針對 **封鎖** 、 **監視器** 或 **取代** 動作，將包含惡意程式碼附件的郵件傳送至指定的內部或外部電子郵件地址，以進行分析和調查。
+- 重新 **導向附件的偵測： Enable 重新導向** 並 **將附件傳送至下列電子郵件地址**：針對 **封鎖**、**監視器** 或 **取代** 動作，將包含惡意程式碼附件的郵件傳送至指定的內部或外部電子郵件地址，以進行分析和調查。
 
   標準和嚴格原則設定的建議是啟用重新定向。 如需詳細資訊，請參閱 [安全附件設定](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)。
 
-- **若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取專案** 。安全附件所指定的動作會對郵件採取 **未知惡意程式碼回應** ，即使無法完成安全附件掃描也是一樣。 如果您選取 [ **啟用重新導向** ]，則無條件選取此選項。 否則，郵件可能會遺失。
+- **若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取專案**。安全附件所指定的動作會對郵件採取 **未知惡意程式碼回應** ，即使無法完成安全附件掃描也是一樣。 如果您選取 [ **啟用重新導向**]，則無條件選取此選項。 否則，郵件可能會遺失。
 
-- **收件者篩選器** ：您必須指定收件者條件和例外狀況，以決定要套用的原則。 您可以使用這些屬性做為條件和例外狀況：
+- **收件者篩選器**：您必須指定收件者條件和例外狀況，以決定要套用的原則。 您可以使用這些屬性做為條件和例外狀況：
 
   - **收件者是**
   - **收件者網域是**
   - **收件者是以下的成員**
 
-  您只可以使用條件或例外狀況，但條件或例外狀況可以包含多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如， _\<recipient1\>_ 或 _\<recipient2\>_ )。 不同的條件或例外狀況則使用 AND 邏輯 (例如， _\<recipient1\>_ 和 _\<member of group 1\>_ )。
+  您只可以使用條件或例外狀況，但條件或例外狀況可以包含多個值。 相同條件或例外狀況的多個值使用 OR 邏輯 (例如，_\<recipient1\>_ 或 _\<recipient2\>_)。 不同的條件或例外狀況則使用 AND 邏輯 (例如，_\<recipient1\>_ 和 _\<member of group 1\>_)。
 
-- **Priority** ：如果您建立多個原則，您可以指定要套用的順序。 不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。
+- **Priority**：如果您建立多個原則，您可以指定要套用的順序。 不論有幾個原則，都不會具有相同的優先順序，且在套用第一個原則之後，原則處理就會停止。
 
   如需更多有關優先的排序及如何評估和應用多項原則，請參照 [電子郵件保護的順序和優先順序](how-policies-and-protections-are-combined.md)。
 

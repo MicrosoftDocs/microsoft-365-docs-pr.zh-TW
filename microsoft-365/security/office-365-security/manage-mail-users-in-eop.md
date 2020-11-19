@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 瞭解如何在 Exchange Online Protection (EOP) 中管理郵件使用者，包括使用目錄同步處理、EAC 和 PowerShell 來管理使用者。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56e6f8955b5993fb4b5064aa92cdde80a4c67ffe
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201780"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356724"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>在獨立版 EOP 中管理郵件使用者
 
@@ -71,7 +71,7 @@ ms.locfileid: "48201780"
 
    - <sup>\*</sup>**使用者識別碼**：輸入人員將用來登入服務的帳戶。 使用者識別碼包含在 ( @ ) 符號 ( @ ) 左邊的使用者名稱，以及右側的網域。
 
-   - <sup>\*</sup>**新增密碼**和 <sup>\*</sup> **確認密碼**：輸入並重新輸入帳戶密碼。 請確認密碼符合您組織的密碼長度、複雜性和歷程記錄需求。
+   - <sup>\*</sup>**新增密碼** 和 <sup>\*</sup> **確認密碼**：輸入並重新輸入帳戶密碼。 請確認密碼符合您組織的密碼長度、複雜性和歷程記錄需求。
 
 3. 完成作業後，按一下 [ **儲存** ] 以建立郵件使用者。
 
@@ -83,7 +83,7 @@ ms.locfileid: "48201780"
 
 3. 在開啟的 [郵件使用者屬性] 頁面上，按一下下列其中一個索引標籤以查看或變更屬性。
 
-   完成後，按一下 [儲存]****。
+   完成後，按一下 [儲存]。
 
 #### <a name="general"></a>一般
 
@@ -164,7 +164,7 @@ New-EOPMailUser -Name "<UniqueName>" -MicrosoftOnlineServicesID <Account> -Passw
 
 **附註**：
 
-- _Name_參數是必要的，最大長度為64個字元，且必須是唯一的。 如果您未使用 _DisplayName_ 參數，則 _Name_ 參數的值會用於顯示名稱。
+- _Name_ 參數是必要的，最大長度為64個字元，且必須是唯一的。 如果您未使用 _DisplayName_ 參數，則 _Name_ 參數的值會用於顯示名稱。
 - 如果您未使用 _alias_ 參數，則會使用 _MicrosoftOnlineServicesID_ 參數的左側作為別名。
 - 如果您未使用 _ExternalEmailAddress_ 參數， _MicrosoftOnlineServicesID_ 值會用於外部電子郵件地址。
 
@@ -258,13 +258,13 @@ Remove-EOPMailUser -Identity "Jeffrey Zeng"
 
 - 建議搭配下列功能一起使用目錄同步處理：
 
-  - **Outlook 安全寄件者清單和封鎖的寄件者清單**：同步處理至服務時，這些清單將優先于服務中的垃圾郵件篩選。 這可讓使用者管理其個人的安全寄件者清單和封鎖的寄件者清單和個別寄件者和網域專案。 如需詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes)。
+  - **Outlook 安全寄件者清單和封鎖的寄件者清單**：同步處理至服務時，這些清單將優先于服務中的垃圾郵件篩選。 這可讓使用者管理其個人的安全寄件者清單和封鎖的寄件者清單和個別寄件者和網域專案。 如需詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
 
-  - **目錄架構邊緣封鎖 (DBEB) **：如需 DBEB 的詳細資訊，請參閱 [使用目錄架構邊緣封鎖以拒絕傳送至無效收件](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)者的郵件。
+  - **目錄架構邊緣封鎖 (DBEB)**：如需 DBEB 的詳細資訊，請參閱 [使用目錄架構邊緣封鎖以拒絕傳送至無效收件](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)者的郵件。
 
-  - **使用者存取隔離**：若要存取隔離的郵件，收件者的服務中必須具有有效的使用者識別碼和密碼。 如需隔離的詳細資訊，請參閱 [尋找及發行隔離的郵件為使用者](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user)。
+  - **使用者存取隔離**：若要存取隔離的郵件，收件者的服務中必須具有有效的使用者識別碼和密碼。 如需隔離的詳細資訊，請參閱 [尋找及發行隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。
 
-  - **郵件流程規則 (也稱為傳輸規則) **：使用目錄同步處理時，您現有的 Active directory 使用者和群組會自動上傳至雲端，您也可以建立特定使用者和/或群組的郵件流程規則，而不必手動將其新增至服務中。 請注意， [動態通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)無法透過目錄同步作業進行同步處理。
+  - **郵件流程規則 (也稱為傳輸規則)**：使用目錄同步處理時，您現有的 Active directory 使用者和群組會自動上傳至雲端，您也可以建立特定使用者和/或群組的郵件流程規則，而不必手動將其新增至服務中。 請注意， [動態通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups)無法透過目錄同步作業進行同步處理。
 
 取得必要的許可權並準備目錄同步處理，如 [與 Azure Active directory 混合身分識別的功能](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity)所述。
 

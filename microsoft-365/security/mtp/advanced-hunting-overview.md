@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 627791e9dc3d4bf18047a05734a4e275152d19da
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: bab055036a8e7fdcf88329413c9fd86269af2aaa
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845029"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357218"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>使用 Microsoft 365 Defender 中的高級搜尋主動搜尋威脅
 
@@ -34,6 +34,9 @@ ms.locfileid: "48845029"
 
 **適用於：**
 - Microsoft 365 Defender
+
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)。
+>
 
 進階搜捕是一種查詢式威脅搜捕工具，可讓您探索最多 30 天的原始資料。 您可以主動檢查您網路中的事件，以找出威脅指示器和實體。 對資料的靈活存取可對已知和潛在的威脅進行無限制的搜尋。
 <p></p>
@@ -45,9 +48,9 @@ ms.locfileid: "48845029"
 這項功能類似于 [Microsoft Defender For Endpoint 中的高級搜尋](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)。 可在 Microsoft 365 的安全性中心使用此功能，可支援從下列專案中檢查更廣泛資料集的查詢：
 
 - 適用於端點的 Microsoft Defender
-- Microsoft Defender for Office 365
+- 適用於 Office 365 的 Microsoft Defender
 - Microsoft Cloud App Security
-- 適用於身分識別的 Microsoft Defender 
+- 適用於身分識別的 Microsoft Defender
 
 若要使用高級搜尋，請 [開啟 Microsoft 365 Defender](mtp-enable.md)。
 
@@ -70,8 +73,8 @@ ms.locfileid: "48845029"
 ## <a name="data-freshness-and-update-frequency"></a>資料新鮮度和更新頻率
 「高級搜尋」資料可以分類成兩種不同的類型，每個不同的合併。
 
-- **事件或活動資料** --填入有關警示、安全性事件、系統事件及例行評估的表格。 [！注意] 高級搜尋幾乎會在收集成功的感應器成功傳送至對應的雲端服務之後立即接收這類資料。 例如，您可以在工作站或網域控制站上的狀況良好的感應器上直接查詢事件資料，而這些資料在 Microsoft Defender for Endpoint 和 Microsoft Defender 身分識別後幾乎可以使用。
-- **實體資料** —以使用者和裝置的相關資訊填入資料表。 此資料來自相對靜態資料來源和動態來源，例如 Active Directory 專案和事件記錄。 若要提供全新的資料，每隔15分鐘更新一次所有新資訊的資料表，新增可能不會填滿的資料列。 每24小時都會合並資料，以插入記錄，其中包含每個實體的最新、最全面的資料集。
+- **事件或活動資料**--填入有關警示、安全性事件、系統事件及例行評估的表格。 [！注意] 高級搜尋幾乎會在收集成功的感應器成功傳送至對應的雲端服務之後立即接收這類資料。 例如，您可以在工作站或網域控制站上的狀況良好的感應器上直接查詢事件資料，而這些資料在 Microsoft Defender for Endpoint 和 Microsoft Defender 身分識別後幾乎可以使用。
+- **實體資料**—以使用者和裝置的相關資訊填入資料表。 此資料來自相對靜態資料來源和動態來源，例如 Active Directory 專案和事件記錄。 若要提供全新的資料，每隔15分鐘更新一次所有新資訊的資料表，新增可能不會填滿的資料列。 每24小時都會合並資料，以插入記錄，其中包含每個實體的最新、最全面的資料集。
 
 ## <a name="time-zone"></a>時區
 「高級搜尋」中的時間資訊是在 UTC 時區。

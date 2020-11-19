@@ -18,18 +18,18 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: c8a1609bed124789229c6ae6d1f80b7d9c70bb66
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f2d3b9180ad5ab58e92812ed7b2d4f7ba07e2971
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646808"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357106"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>保護電子郵件的原則建議
 
 本文說明如何執行建議的身分識別和裝置存取原則，以保護支援新式驗證和條件式存取的組織電子郵件和電子郵件客戶程式。 本指南是以 [通用身分識別和裝置存取原則](identity-access-policies.md) 為基礎，也包含一些額外的建議。
 
-這些建議是以三種不同的安全性和保護層級為基礎，可以根據您的需求細微性來套用： **基準**、 **機密**和 **高管制**。 您可以深入了解這些安全性層，以及[建議的安全性原則和設定簡介](microsoft-365-policies-configurations.md)中這些建議中所參考的建議用戶端作業系統。
+這些建議是以三種不同的安全性和保護層級為基礎，可以根據您的需求細微性來套用： **基準**、 **機密** 和 **高管制**。 您可以深入了解這些安全性層，以及[建議的安全性原則和設定簡介](microsoft-365-policies-configurations.md)中這些建議中所參考的建議用戶端作業系統。
 
 這些建議要求您的使用者使用現代電子郵件客戶程式，包括行動裝置上的 Outlook iOS 和 Android。 適用于 iOS 和 Android 的 Outlook 提供 Office 365 的最佳功能支援。 這些行動性 Outlook 應用程式也會使用支援行動使用的安全性功能，以及與其他 Microsoft cloud 安全性功能共同運作。 如需詳細資訊，請參閱 [Outlook for iOS 和 ANDROID 常見問題](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)。
 
@@ -45,17 +45,18 @@ ms.locfileid: "48646808"
 
 當您設定 Exchange Online 和 Outlook 時，如果您已在設定原則的範圍內包含 Exchange Online 和 Outlook，您只需要建立新原則來封鎖 ActiveSync 用戶端。 請查看下表所列的原則，並進行建議的新增，或確認是否已包含這些原則。 每個原則都連結至 [共同身分識別和裝置存取原則](identity-access-policies.md)中相關的設定指示。
 
-|保護層級|原則|其他相關資訊|
-|:---------------|:-------|:----------------|
-|**Baseline**|[當登入風險為*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲應用程式的指派中包含 Exchange Online|
-|        |[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在雲應用程式的指派中包含 Exchange Online|
-|        |[套用應用程式資料保護原則](identity-access-policies.md#apply-app-data-protection-policies)|請確定 Outlook 已包含在應用程式清單中。 請務必更新每個平臺 (iOS、Android、Windows) 的原則|
-|        |[需要核准的應用程式和應用程式保護](identity-access-policies.md#require-approved-apps-and-app-protection)|在雲端應用程式清單中包含 Exchange Online|
-|        |[需要相容的電腦](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在雲端 app 清單中包含 Exchange Online|
-|        |[封鎖 ActiveSync 用戶端](#block-activesync-clients)|新增此新原則| 
-|**敏感度**|[當登入風險為*低*、*中*或*高*時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)| 在雲應用程式的指派中包含 Exchange Online|
-|         |[需要相容 *的電腦和* 行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在雲端應用程式清單中包含 Exchange Online|
+|保護層級|原則|詳細資訊|
+|---|---|---|
+|**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲應用程式的指派中包含 Exchange Online|
+||[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在雲應用程式的指派中包含 Exchange Online|
+||[套用應用程式資料保護原則](identity-access-policies.md#apply-app-data-protection-policies)|請確定 Outlook 已包含在應用程式清單中。 請務必更新每個平臺 (iOS、Android、Windows) 的原則|
+||[需要核准的應用程式和應用程式保護](identity-access-policies.md#require-approved-apps-and-app-protection)|在雲端應用程式清單中包含 Exchange Online|
+||[需要相容的電腦](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|在雲端 app 清單中包含 Exchange Online|
+||[封鎖 ActiveSync 用戶端](#block-activesync-clients)|新增此新原則|
+|**敏感度**|[當登入風險為 *低*、*中* 或 *高* 時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲應用程式的指派中包含 Exchange Online|
+||[需要相容 *的電腦和* 行動裝置](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|在雲端應用程式清單中包含 Exchange Online|
 |**高管制**|[*永遠* 需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|在雲應用程式的指派中包含 Exchange Online|
+|
 
 ## <a name="block-activesync-clients"></a>封鎖 ActiveSync 用戶端
 
@@ -85,20 +86,19 @@ ms.locfileid: "48646808"
    Set-OwaMailboxPolicy -Identity Default -ConditionalAccessPolicy ReadOnlyPlusAttachmentsBlocked
    ```
 
-4. 在 Azure 入口網站中，使用下列設定來建立新的條件式存取原則：
+5. 在 Azure 入口網站中，使用下列設定來建立新的條件式存取原則：
 
-   **> 使用者和群組的工作分派**：選取適當的使用者和群組以包含及排除。
+   **工作分派** \>**使用者和群組**：選取適當的使用者和群組以加入及排除。
 
-   **> 雲端應用程式或動作 > cloud app 的工作分派 > 包含 > 的選取應用程式**：選取 **Office 365 Exchange Online**
+   **工作分派** \>**雲端應用程式或動作** \>**雲端應用程式** \>**包含** \>**選取應用程式**：選取 **Office 365 Exchange Online**
 
-   **存取控制 > 會話**：選取 [**使用 app 強制限制**]
+   **存取控制** \>**會話**：選取 [**使用 app 強制限制**]
 
 ## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>需要 iOS 和 Android 裝置必須使用 Outlook
 
 為了確保 iOS 和 Android 裝置的使用者只能使用 Outlook for iOS 和 Android 來存取工作或學校內容，您需要針對那些潛在使用者的條件式存取原則。
 
 若要 [使用 iOS 和 Android 的 Outlook 來管理通訊共同存取]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)，請參閱設定此原則的步驟。
-
 
 ## <a name="set-up-message-encryption"></a>設定郵件加密
 

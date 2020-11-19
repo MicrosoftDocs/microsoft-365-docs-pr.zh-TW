@@ -21,31 +21,32 @@ ms.collection:
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: 101747fa1121c675938610b9681f98c6e39b7d75
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 27edc44145e7b61768d9caf00a3f308e8561d708
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446612"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357396"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自動化調查和回應功能中報告誤報/負片
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-適用於：****
-- Microsoft Defender for Office 365
+適用於：
+- 適用於 Office 365 的 Microsoft Defender
 
-[自動調查和回應 (Office 365 中的 AIR) 功能](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office)是否漏掉或錯誤地偵測到某項功能？ 您可以採取一些步驟加以修正。 您可以：
+[自動調查和回應 (Office 365 中的 AIR) 功能](automated-investigation-response-office.md)是否漏掉或錯誤地偵測到某項功能？ 您可以採取一些步驟加以修正。 您可以：
+
 - [向 Microsoft 報告誤報/負數](#report-a-false-positivenegative-to-microsoft-for-analysis)
-- 視需要[調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring) () ;和 
-- [復原採取的修復動作](#undo-a-remediation-action)。 
+- 視需要[調整提醒](#adjust-an-alert-to-prevent-false-positives-from-recurring) () ;和
+- [復原採取的修復動作](#undo-a-remediation-action)。
 
-使用本文做為指南。 
+使用本文做為指南。
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>將誤報報告給 Microsoft 進行分析
 
-如果 Microsoft Defender for Office 365 中的 AIR 錯過電子郵件、電子郵件附件、電子郵件中的 URL 或 Office 檔案中的 URL，您可以 [將可疑的垃圾郵件、網路釣魚程式、URLs 和檔案提交給 Microsoft For office 365 掃描](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission)。
+如果 Microsoft Defender for Office 365 中的 AIR 錯過電子郵件、電子郵件附件、電子郵件中的 URL 或 Office 檔案中的 URL，您可以 [將可疑的垃圾郵件、網路釣魚程式、URLs 和檔案提交給 Microsoft For office 365 掃描](admin-submission.md)。
 
 您也可以 [將檔案提交給 Microsoft 以進行惡意程式碼分析](https://www.microsoft.com/wdsi/filesubmission)。
 
@@ -57,7 +58,7 @@ ms.locfileid: "48446612"
 
 ## <a name="undo-a-remediation-action"></a>復原修正動作
 
-在大多數情況下，如果對電子郵件訊息、電子郵件附件或 URL 採取修正動作，而該專案實際上不是威脅，則您的安全作業小組可以復原修正動作，並採取步驟以避免定期誤報。 您可以使用 [威脅瀏覽器](#undo-an-action-using-threat-explorer) 或 [ [動作]](#undo-an-action-using-the-actions-tab-for-an-investigation) 索引標籤進行調查，以復原動作。 
+在大多數情況下，如果對電子郵件訊息、電子郵件附件或 URL 採取修正動作，而該專案實際上不是威脅，則您的安全作業小組可以復原修正動作，並採取步驟以避免定期誤報。 您可以使用 [威脅瀏覽器](#undo-an-action-using-threat-explorer) 或 [ [動作]](#undo-an-action-using-the-actions-tab-for-an-investigation) 索引標籤進行調查，以復原動作。
 
 > [!IMPORTANT]
 > 在嘗試執行下列工作之前，請先確定您具備必要的許可權。
@@ -70,8 +71,8 @@ ms.locfileid: "48446612"
 
 |案例|復原選項|深入了解|
 |---|---|---|
-|將電子郵件路由傳送至使用者的 [垃圾郵件] 資料夾|-將郵件移至使用者的 [刪除的郵件] 資料夾<br/>-將郵件移至使用者的收件匣 <br/>-刪除郵件|[尋找並調查 Office 365 中傳遞的惡意電子郵件](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered)|
-|已隔離的電子郵件訊息或檔|-發行電子郵件或檔案 <br/>-刪除電子郵件或檔|[以 Office 365 系統管理員身分管理隔離的郵件和檔案](https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files)|
+|將電子郵件路由傳送至使用者的 [垃圾郵件] 資料夾|<ul><li>將郵件移至使用者的 [刪除的郵件] 資料夾</li><li>將郵件移至使用者的收件匣</li><li>刪除郵件</li></ul>|[尋找並調查 Office 365 中傳遞的惡意電子郵件](investigate-malicious-email-that-was-delivered.md)|
+|已隔離的電子郵件訊息或檔|<ul><li>發行電子郵件或檔案</li><li>刪除電子郵件或檔</li></ul>|[以系統管理員身分管理被隔離的郵件](manage-quarantined-messages-and-files.md)|
 |
 
 ### <a name="undo-an-action-using-the-actions-tab-for-an-investigation"></a>使用調查的 [動作] 索引標籤復原動作
@@ -80,7 +81,7 @@ ms.locfileid: "48446612"
 
 1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這會帶您前往安全性 & 規範中心。
 
-2. 移至 [威脅管理]****  >  [調查]****。
+2. 移至 [威脅管理]  >  [調查]。
 
 3. 在調查清單中，選取專案識別碼旁邊的 [ **在新視窗中開啟]** 圖示。
 
@@ -92,6 +93,6 @@ ms.locfileid: "48446612"
 
 ## <a name="related-articles"></a>相關文章
 
-[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)
+[適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
 
 [Microsoft Defender for Office 365 中的空氣](office-365-air.md)

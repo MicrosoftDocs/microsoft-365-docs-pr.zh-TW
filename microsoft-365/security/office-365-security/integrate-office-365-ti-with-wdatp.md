@@ -18,19 +18,19 @@ ms.collection:
 - M365-security-compliance
 description: 搭配使用 Microsoft Defender for Office 365 與 Microsoft Defender for Endpoint，以取得對您的裝置和電子郵件內容的威脅相關的詳細資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b8bec8d3ebe52de9b4e1b919b2aceee20b5b5b0
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7f668aa1234509789dacd2b018b94f1bfbc79e2c
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842353"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357776"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>使用適用于 Office 365 的 Microsoft Defender 搭配 Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[Microsoft defender For Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) 可以設定為搭配 [Microsoft defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)使用。
+[Microsoft defender For Office 365](office-365-atp.md) 可以設定為搭配 [Microsoft defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)使用。
 
 整合 Microsoft Defender for Office 365 搭配 Microsoft Defender for Endpoint 可協助您的安全性運作小組監視並快速採取行動（如果使用者的裝置面臨危險）。 例如，啟用整合後，您的安全性作業小組將能夠查看偵測到的電子郵件訊息可能影響的裝置，以及為 Microsoft Defender for Endpoint 中的裝置產生多少最近的提醒。 
 
@@ -57,15 +57,15 @@ ms.locfileid: "48842353"
   
 1. 以全域管理員或安全性管理員為單位，請移至 [https://protection.office.com](https://protection.office.com) 並登入。  (這會帶您前往 Office 365 安全性 & 相容性中心。 ) 
     
-2. 在功能窗格中，選擇 [ **威脅管理**  >  **瀏覽器** ]。<br>![威脅管理功能表中的 Explorer](../../media/ThreatMgmt-Explorer-nav.png)<br>
+2. 在功能窗格中，選擇 [**威脅管理**  >  **瀏覽器**]。<br>![威脅管理功能表中的 Explorer](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
-3. 在螢幕的右上角，選擇 [ **Defender For Endpoint] 設定** 。
+3. 在螢幕的右上角，選擇 [ **Defender For Endpoint] 設定**。
     
-4. 在 [Microsoft Defender for Endpoint connection] 對話方塊中，開啟 **[連線至 Microsoft defender For endpoint** ] 對話方塊。<br>![Microsoft Defender for Endpoint connection](../../media/Explorer-WDATPConnection-dialog.png)<br>
+4. 在 [Microsoft Defender for Endpoint connection] 對話方塊中，開啟 **[連線至 Microsoft defender For endpoint**] 對話方塊。<br>![Microsoft Defender for Endpoint connection](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
 5. 移至 Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)) 。
 
-6. 在導覽列中，選擇 [ **設定** ]。 然後，在 **[一般** ] 下，選擇 [ **高級功能** ]。
+6. 在導覽列中，選擇 [ **設定**]。 然後，在 **[一般**] 下，選擇 [ **高級功能**]。
 
 7. 向下滾動至 **Office 365 威脅情報** 連線，然後開啟連線。<br/>![Office 365 威脅情報連接](../../media/mdatp-oatptoggle.png)<br>
 
@@ -73,6 +73,6 @@ ms.locfileid: "48842353"
 
 [Office 365 中的威脅調查和回應功能](office-365-ti.md)
   
-[Microsoft Defender for Office 365](office-365-atp.md)
+[適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
   
 [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection)

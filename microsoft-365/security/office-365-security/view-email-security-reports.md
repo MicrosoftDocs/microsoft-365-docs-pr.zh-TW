@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1b2fd7a18589932d56ea39722b48462d2a6eac2f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 038f310d8690652a3aefb2eab5ac01f76986d210
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131198"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357932"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -479,7 +479,7 @@ Microsoft Defender for Office 365 提供 **URL 威脅防護報告** 。 如需�
 
 ## <a name="user-reported-messages-report"></a>使用者報告的訊息報告
 
-「 **使用者報告的訊息** 報告」顯示使用者已使用 [報告郵件增益集](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in)舉報為垃圾郵件、網路釣魚企圖或良好郵件的電子郵件資訊。
+「 **使用者報告的訊息** 報告」顯示使用者已使用 [報告郵件增益集](enable-the-report-message-add-in.md)舉報為垃圾郵件、網路釣魚企圖或良好郵件的電子郵件資訊。
 
 詳細資料可用於每封郵件，包括傳遞原因、為您的組織設定的垃圾郵件原則例外狀況或郵件流程規則。 若要查看詳細資料，請選取 [使用者報告] 清單中的專案，然後查看 [ **摘要** ] 和 [ **詳細資料** ] 索引標籤上的資訊。
 
@@ -504,7 +504,7 @@ Microsoft Defender for Office 365 提供 **URL 威脅防護報告** 。 如需�
 
   -組織管理-安全性管理員 (您也可以在 [Azure Active Directory 系統管理中心](https://aad.portal.azure.com) 進行此作業-安全性讀取器
 
-  如需詳細資訊，請參閱[安全性與合規性中心中的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)。
+  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
 - 在 Exchange Online 中，您必須是下列其中一個角色群組的成員：
 

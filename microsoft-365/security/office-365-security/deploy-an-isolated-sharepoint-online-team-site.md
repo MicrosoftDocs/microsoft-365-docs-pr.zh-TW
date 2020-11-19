@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 使用此逐步部署指南，在 Microsoft Office 365 中建立和設定隔離的 SharePoint Online 小組網站。
-ms.openlocfilehash: f2800e74149e79e5c3f0444799f454ab8b3caf69
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: f9e8482238c7da4d10b6299b0f8a997734edbb13
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203128"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356904"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>部署獨立的 SharePoint Online 小組網站
 
@@ -71,21 +71,21 @@ ms.locfileid: "48203128"
     
 1. 在您的瀏覽器中，移至 Azure 入口網站 ([https://portal.azure.com](https://portal.azure.com))，並以已獲派使用者管理管理員或公司系統管理員角色的帳戶認證登入。
     
-2. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [群組]****。
+2. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [群組]。
     
-3. 在 [群組 - 所有群組]**** 刀鋒視窗中，按一下 [+ 新增群組]****。
+3. 在 [群組 - 所有群組] 刀鋒視窗中，按一下 [+ 新增群組]。
     
-4. 在 [新增群組]**** 刀鋒視窗中：
+4. 在 [新增群組] 刀鋒視窗中：
     
-    - 在 [群組類型]**** 中選取 [安全性]****。
+    - 在 [群組類型] 中選取 [安全性]。
 
-    - 在 [名稱]**** 中鍵入群組名稱。
+    - 在 [名稱] 中鍵入群組名稱。
 
-    - 在 [群組描述]**** 中鍵入群組的描述。
+    - 在 [群組描述] 中鍵入群組的描述。
 
-    - 在 [成員資格類型]**** 中選取 [已指派]****。
+    - 在 [成員資格類型] 中選取 [已指派]。
     
-5. 按一下 [建立]****，然後關閉 [群組]**** 刀鋒視窗。
+5. 按一下 [建立]，然後關閉 [群組] 刀鋒視窗。
     
 6. 針對其他群組重複步驟 3 至 5。
     
@@ -112,7 +112,7 @@ ms.locfileid: "48203128"
   
 在 Microsoft 365 系統管理中心，使用已指派給使用者帳戶管理員或公司系統管理員角色的使用者帳戶登入，並使用群組將適當的使用者帳戶和群組新增至適當的存取群組。
   
-在 PowerShell 中，先 [與 Azure Active Directory PowerShell for Graph 模組連線](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-azure-active-directory-powershell-for-graph-module)。
+在 PowerShell 中，先 [與 Azure Active Directory PowerShell for Graph 模組連線](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)。
   
 接下來，使用下列命令區塊將個別的使用者帳戶新增到存取群組：
   
@@ -174,7 +174,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 5. 在 [ **選擇範本** ] 清單中，選擇 [ **小組網站**]。
    
-6. 在 [網站名稱]**** 中，鍵入小組網站的名稱。 
+6. 在 [網站名稱] 中，鍵入小組網站的名稱。 
     
 7. 在 [ **主要管理員**] 中，輸入您用來登入的帳戶。
  
@@ -182,7 +182,7 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
     
 接下來，從新的 SharePoint Online 小組網站，設定權限。
   
-1. 在工具列中，按一下設定圖示，然後按一下 [網站權限]****。
+1. 在工具列中，按一下設定圖示，然後按一下 [網站權限]。
 
 2. 在 [ **網站共用**] 底下，按一下 [ **變更成員可以共用的方式**]。
 
@@ -190,41 +190,41 @@ Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq 
 
 4. 將 [ **允許存取要求** 關閉] 設定為 [ **關閉**]。
 
-5. 按一下 **[儲存]**。
+5. 按一下 [儲存]。
     
 6. 在 [ **許可權** ] 窗格中，按一下 [ **高級許可權設定**]。
     
-7. 在瀏覽器的 [**許可權**] 索引標籤上，按一下清單中的 [ ** \<site name> 成員**]。
+7. 在瀏覽器的 [**許可權**] 索引標籤上，按一下清單中的 [ **\<site name> 成員**]。
     
-8. 在 [人員與群組]**** 中，按一下 [新增]****。
+8. 在 [人員與群組] 中，按一下 [新增]。
     
-9. 在 [共用]**** 對話方塊中，鍵入網站成員存取群組的名稱並加以選取，然後按一下 [共用]****。
+9. 在 [共用] 對話方塊中，鍵入網站成員存取群組的名稱並加以選取，然後按一下 [共用]。
     
 10. 按一下瀏覽器上的 [上一頁] 按鈕。
     
-11. 按一下清單中的 [ ** \<site name> 擁有**者]。
+11. 按一下清單中的 [ **\<site name> 擁有** 者]。
     
-12. 在 [人員與群組]**** 中，按一下 [新增]****。
+12. 在 [人員與群組] 中，按一下 [新增]。
     
-13. 在 [共用]**** 對話方塊中，鍵入網站管理員存取群組的名稱並加以選取，然後按一下 [共用]****。
+13. 在 [共用] 對話方塊中，鍵入網站管理員存取群組的名稱並加以選取，然後按一下 [共用]。
     
 14. 按一下瀏覽器上的 [上一頁] 按鈕。
     
-15. 按一下清單中的 [ ** \<site name> 訪客**]。
+15. 按一下清單中的 [ **\<site name> 訪客**]。
     
-16. 在 [人員與群組]**** 中，按一下 [新增]****。
+16. 在 [人員與群組] 中，按一下 [新增]。
     
-17. 在 [共用]**** 對話方塊中，鍵入網站檢視者存取群組的名稱並加以選取，然後按一下 [共用]****。
+17. 在 [共用] 對話方塊中，鍵入網站檢視者存取群組的名稱並加以選取，然後按一下 [共用]。
     
-18. 關閉 [權限]**** 瀏覽器索引標籤。
+18. 關閉 [權限] 瀏覽器索引標籤。
     
 這些使用權限設定的結果是：
   
-- [ ** \<site name> 擁有**者] SharePoint 群組包含網站管理員存取群組，其中的所有成員都具有「**完全控制**」許可權層級。
+- [ **\<site name> 擁有** 者] SharePoint 群組包含網站管理員存取群組，其中的所有成員都具有「**完全控制**」許可權層級。
     
-- ** \<site name> Members** SharePoint 群組包含網站成員存取群組，其中的所有成員都具有 [**編輯**] 許可權等級。
+- **\<site name> Members** SharePoint 群組包含網站成員存取群組，其中的所有成員都具有 [**編輯**] 許可權等級。
     
-- [ ** \<site name> 訪客**SharePoint] 群組包含「網站檢視器存取」群組，其中的所有成員都具有「**讀取**」許可權等級。
+- [ **\<site name> 訪客** SharePoint] 群組包含「網站檢視器存取」群組，其中的所有成員都具有「**讀取**」許可權等級。
     
 - 已停用成員邀請其他成員或非成員要求存取權的功能。
     

@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虛構但具有代表性的全球組織如何採用 Microsoft 365 for enterprise。
-ms.openlocfilehash: 980146a2a9c2a909d0b65c20e460841dce9fecee
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: eef22b372df36a4e5d14351df342268c195d04ce
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754665"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49356988"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>適用于 Contoso Corporation 的 Microsoft 365 for enterprise
 
@@ -67,6 +67,12 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
   Contoso 針對身分識別與存取管理、威脅防護、資訊保護和安全性管理，使用 Microsoft 365 的全套企業安全性功能。
 
+請參閱這些其他的 IT 案例及設定：
+
+- [COVID-19 混合式工作力的回應和基礎結構](../solutions/contoso-hybrid-workforce.md)
+
+  瞭解 Contoso 如何更新 COVID-19 pandemic 的遠端存取基礎結構，以及其新安裝及更新混合工作力的基礎結構。
+
 - [用於高度機密專案的團隊](../solutions/contoso-team-for-top-secret-project.md)
 
   若要為最大機密專案建立安全的共同作業環境，Contoso 使用了具有安全性隔離的團隊。
@@ -75,12 +81,12 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
   瞭解 Contoso 如何將其內部部署使用者遷移至 Microsoft 小組，以進行統一通訊、共同作業和語音。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 深入瞭解 [Contoso 公司](contoso-overview.md) ，以及在部署 Microsoft 365 for enterprise 時所解決的設計考慮。
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 企業版概觀](microsoft-365-overview.md)
 

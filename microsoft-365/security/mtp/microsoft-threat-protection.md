@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.openlocfilehash: a8d25ba0b36ad6ba1651ffe19e3e2f6e241548c7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 573f30dc3d8a43a337a4333dbaf05baf916857fa
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843801"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357896"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -34,7 +34,8 @@ ms.locfileid: "48843801"
 適用於：
 - Microsoft 365 Defender
 
-
+> 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)。
+>
 
 Microsoft 365 Defender 是一種整合的後續企業防護套件，其可在端點、身分識別、電子郵件和應用程式中共同協調偵測、預防、調查和回應，以提供複雜攻擊的整合式防護。
 
