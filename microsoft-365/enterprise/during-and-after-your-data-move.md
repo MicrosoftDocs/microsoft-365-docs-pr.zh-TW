@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 資料移動是指 Microsoft 將租使用者的服務和相關資料移至新的資料中心地理位置時，會發生後端作業。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 63536a46e28f264f49e8071710221b0847f62414
-ms.sourcegitcommit: 86e878849a8bdd456cee6a3f49939d26223fb626
+ms.openlocfilehash: ca3159aeb951fb0cb3bf3aba953979dabc6ba024
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48997788"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349253"
 ---
 # <a name="during-and-after-your-data-move"></a>資料移動期間和之後
 
@@ -46,6 +46,7 @@ ms.locfileid: "48997788"
 |瑞士，列支敦斯登  <br/> |2022年7月1日  <br/> |
 |挪威  <br/> |2022年11月1日  <br/> |
 |德國  <br/> |5月1日2023  <br/> |
+|巴西  <br/> |2023年6月1日  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
@@ -57,7 +58,7 @@ ms.locfileid: "48997788"
   
 |**設定**|**描述**|
 |:-----|:-----|
-|使用者擁有其他信箱的信箱資料夾許可權  <br/> |可能限制。  <br/> 如果使用者 a 和信箱 B 在租使用者移動期間不在相同的地理位置，使用者 A 只有信箱 B 中特定資料夾的許可權，才能在 Outlook Web Access 中開啟信箱 B 的資料夾。  <br/> 若要新增共用資料夾，請以滑鼠右鍵按一下左導覽面板中的使用者名稱，然後選取 [ **新增共用資料夾** ]。  <br/> |
+|使用者擁有其他信箱的信箱資料夾許可權  <br/> |可能限制。  <br/> 如果使用者 a 和信箱 B 在租使用者移動期間不在相同的地理位置，使用者 A 只有信箱 B 中特定資料夾的許可權，才能在 Outlook Web Access 中開啟信箱 B 的資料夾。  <br/> 若要新增共用資料夾，請以滑鼠右鍵按一下左導覽面板中的使用者名稱，然後選取 [ **新增共用資料夾**]。  <br/> |
 |具有其他信箱之完整信箱許可權的使用者  <br/> |完全支援。  <br/> 如果使用者 A 對信箱 B 具有「完整存取」許可權，則使用者 A 可以在 Outlook Web Access 的左導覽窗格中按一下共用資料夾，以開啟顯示信箱 B 的視窗。 使用者可以在移動期間使用 Outlook Web Access 開啟共用信箱，而不會有任何不良影響。 限制僅適用于信箱中的資料夾層級共用。           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online

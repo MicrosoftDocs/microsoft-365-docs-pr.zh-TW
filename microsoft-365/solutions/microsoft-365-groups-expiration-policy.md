@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 深入瞭解 Microsoft 365 群組到期原則。
-ms.openlocfilehash: 8fc9c48d5a86c68eabd4139ad0a2d0dc1e83da0f
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4b283bcc9f4e54462a71b9aee70d6312b9f127d6
+ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377220"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49350709"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 群組到期原則
 
@@ -34,7 +34,7 @@ ms.locfileid: "48377220"
 管理員可以指定到期期限及任何非作用中的群組，只要到達該期間結束，也不會被更新，將會被刪除。  (這包括已封存的團隊。 ) 到期期間會在建立群組時或在最後一次更新的日期時開始。 在到期之前，系統會自動將電子郵件傳送給群組擁有者，以允許使用者在其他到期間隔內更新群組。 小組使用者會在小組中看到持續的通知。
 
 主動使用中的群組會自動更新。 下列任何動作都會自動更新群組：
-- SharePoint-查看、編輯、下載、移動、共用或上傳檔案。
+- SharePoint-查看、編輯、下載、移動、共用或上傳檔案。  (查看 SharePoint 頁面不會算作自動更新的動作。 ) 
 - Outlook-加入群組，從群組讀取或寫入群組郵件，與郵件 (Outlook 網頁上) 。
 - 團隊-來訪小組頻道。
 
@@ -55,7 +55,7 @@ ms.locfileid: "48377220"
 
 ## <a name="how-to-set-the-expiration-policy"></a>如何設定到期原則
 
-如以上所述，到期會預設為關閉狀態。 管理員必須啟用到期原則，並將其設定為生效。 若要啟用此功能，請移至**Azure Active Directory**  >  **群組**  >  **到期**。 您可以在這裡設定預設的組生命週期，並指定您要提前多久的時間，將第一和第二個到期通知移至群組擁有者。
+如以上所述，到期會預設為關閉狀態。 管理員必須啟用到期原則，並將其設定為生效。 若要啟用此功能，請移至 **Azure Active Directory**  >  **群組**  >  **到期**。 您可以在這裡設定預設的組生命週期，並指定您要提前多久的時間，將第一和第二個到期通知移至群組擁有者。
 
 群組存留時間是以天數指定，可設定為180、365或您指定的自訂值。 自訂值至少必須是30天。
 

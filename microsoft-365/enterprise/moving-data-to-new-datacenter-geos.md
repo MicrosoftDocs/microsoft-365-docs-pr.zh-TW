@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 瞭解新的 Office 365 資料中心 geos，以及如何使用資料派駐選項，將核心資料要求移至新的地理位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 17b8d5c828a8c528aba180c260510345e77226d5
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333709"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349241"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>將核心資料移至新的 Microsoft 365 datacenter geos
 
@@ -48,6 +48,7 @@ ms.locfileid: "48333709"
 |**瑞士，列支敦斯登**| 歐盟 | 瑞士 | 2019 年 12 月 |
 |**德國**| 歐盟 | 德國 | 2019 年 12 月 |
 |**挪威**| 歐盟 | 挪威 | 2020 年 4 月 |
+|**巴西**| 美洲地區 | 巴西 | 2020年11月 |
 
 從10月 1 2020 日到1月1日，含租使用者之 Office 365 教育版訂閱的客戶不適合進行遷移。
 

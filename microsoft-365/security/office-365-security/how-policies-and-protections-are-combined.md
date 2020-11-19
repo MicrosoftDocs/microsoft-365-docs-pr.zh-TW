@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 中的保護應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
-ms.openlocfilehash: 9bff44a0c9964c60f5b8b5c0afdfe6d29ee6da93
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: c6a89e35f1cce0532f206b5ac5dbfd4a1aedda9d
+ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843604"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "49349265"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子郵件保護的順序和優先順序
 
@@ -34,36 +34,36 @@ ms.locfileid: "48843604"
 
 有兩個主要因素會決定要套用至郵件的原則：
 
-- **電子郵件保護類型的優先順序** ：此順序並不是可設定的，如下表所述：
+- **電子郵件保護類型的優先順序**：此順序並不是可設定的，如下表所述：
 
   ****
 
   |優先順序|電子郵件保護|類別|要管理的位置|
   |---|---|---|---|
   |1 |惡意程式碼|CAT： MALW|[在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)|
-  |第|網路釣魚|CAT： PHSH|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |2 |網路釣魚|CAT： PHSH|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |個|高信賴度的垃圾郵件|CAT： HSPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |4 |詐騙|CAT：欺騙|[在 EOP 中設定欺騙情報](learn-about-spoof-intelligence.md)|
-  |位<sup>\*</sup>|使用者模擬 (受保護的網域) |UIMP|[在 Microsoft Defender for Office 365 中設定反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|網域模擬 (受保護的使用者) |DIMP|[在 Microsoft Defender for Office 365 中設定反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
+  |位<sup>\*</sup>| (受保護的使用者模擬使用者模擬) |UIMP|[在 Microsoft Defender for Office 365 中設定反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|網域模擬 (受保護的網域) |DIMP|[在 Microsoft Defender for Office 365 中設定反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
   |7 |垃圾郵件|CAT： SPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |8 |大量|CAT：大量|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |
 
   <sup>\*</sup> 這些功能僅適用于 Office 365 的 Microsoft Defender 中的反網路釣魚原則。
 
-- **原則的優先順序** ：針對每個防護類型 (反垃圾郵件、反惡意程式碼、反網路釣魚等 ) ，都有一個適用于每個人的預設原則，但您可以建立適用于特定使用者的自訂原則。 每個自訂原則都有一個優先順序值，以決定原則的套用順序。 預設原則永遠套用於最後。
+- **原則的優先順序**：針對每個防護類型 (反垃圾郵件、反惡意程式碼、反網路釣魚等 ) ，都有一個適用于每個人的預設原則，但您可以建立適用于特定使用者的自訂原則。 每個自訂原則都有一個優先順序值，以決定原則的套用順序。 預設原則永遠套用於最後。
 
   如果使用者是在相同類型的多個原則中定義，則只有具有最高優先順序的原則適用于。 不會評估該類型的任何其餘原則 (包括預設原則) 。
 
-例如，請考慮下列 Microsoft Defender for Office 365 的反網路釣魚原則， **該原則套用至相同的使用者** ，以及識別為使用者模擬和欺騙的郵件：
+例如，請考慮下列 Microsoft Defender for Office 365 的反網路釣魚原則， **該原則套用至相同的使用者**，以及識別為使用者模擬和欺騙的郵件：
 
   ****
 
   |原則名稱|優先順序|使用者模擬|反詐騙|
   |---|---|---|---|
   |原則 A|1 |開啟|關閉|
-  |原則 B|第|關閉|開啟|
+  |原則 B|2 |關閉|開啟|
   |
 
 1. 郵件會標示及視為欺騙性，因為哄騙具有比使用者模擬 (8) 更高優先順序的 (4) 。
