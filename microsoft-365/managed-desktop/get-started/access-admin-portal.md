@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5adf57c2397c4de3c5ea8622a2a9be7207ebf152
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379298"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371667"
 ---
 # <a name="access-the-admin-portal"></a>存取管理員入口網站
 
@@ -37,8 +37,8 @@ ms.locfileid: "48379298"
 |全域系統管理員     | 具有此角色的系統管理員具有 Microsoft Managed Desktop Admin 入口網站中 **所有功能的讀取和寫入權限** 。         |
 |全域讀取者     | 具有此角色的系統管理員對 Microsoft Managed Desktop Admin 入口網站中的 **所有功能具有唯讀許可權** 。         |
 |Intune 服務系統管理員     |  具有此角色的系統管理員具有與 Microsoft Managed Desktop Admin 入口網站中的 **安全性無關的功能的讀取和寫入權限** 。       |
-|服務支援系統管理員     | 具有此角色的系統管理員具有與 Microsoft Managed Desktop Admin 入口網站中的 **安全性無關的功能的讀取和寫入權限** 。         |
-|安全性系統管理員 | 具有此角色的系統管理員對管理員入口網站中 Microsoft 受管理的電腦具有**安全性相關功能的**所有功能和寫入權限，具有**唯讀許可權**。 |
+|服務支援系統管理員     | 具有此角色的系統管理員對與安全性和寫入權限不相關的功能，對 Microsoft Managed Desktop Admin 入口網站中 **管理支援要求** 的 **功能具有唯讀許可權**。         |
+|安全性系統管理員 | 具有此角色的系統管理員對管理員入口網站中 Microsoft 受管理的電腦具有 **安全性相關功能的** 所有功能和寫入權限，具有 **唯讀許可權**。 |
 |安全性讀取者 |具有此角色的系統管理員對 Microsoft Managed Desktop Admin 入口網站中的 **所有功能具有唯讀許可權** 。|
 
 > [!IMPORTANT]

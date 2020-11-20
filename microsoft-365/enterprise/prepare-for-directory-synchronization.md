@@ -26,12 +26,12 @@ search.appverid:
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
 description: 說明如何準備使用目錄同步處理將使用者布建至 Microsoft 365，以及使用此方法的長期優點。
-ms.openlocfilehash: b74310b0f444da118699c5ad5fbb68b15519b830
-ms.sourcegitcommit: 45c0afcf958069c5c1b31f9b6c762d8dd806e1e9
+ms.openlocfilehash: e49cc4472b47320650d8a0ca90395b69ae5b6df7
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48773982"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371621"
 ---
 # <a name="prepare-for-directory-synchronization-to-microsoft-365"></a>準備將目錄同步處理至 Microsoft 365
 
@@ -127,7 +127,7 @@ ms.locfileid: "48773982"
     請注意，不正確字元會套用到類型分隔符號後的字元和 "："，因此允許 SMTP:User@contso.com，但 SMTP:user:M@contoso.com 不是。
 
     > [!IMPORTANT]
-    > 所有的簡易郵件傳輸通訊協定 (SMTP) 位址應該符合電子郵件訊息標準。 若存在重複或不需要的位址，請參閱協助主題 [移除 Exchange 中的重複和有害 proxy 位址](https://go.microsoft.com/fwlink/?LinkId=293860)。
+    > 所有的簡易郵件傳輸通訊協定 (SMTP) 位址應該符合電子郵件訊息標準。 移除重複或有害的位址（如果有的話）。
 
 - **sAMAccountName**
 

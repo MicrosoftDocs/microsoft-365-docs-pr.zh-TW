@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 26b9ff81-93b0-4251-beaf-3c9f1d7c80c8
 description: 瞭解如何使用 PowerShell 來管理 Microsoft 365 使用者帳戶、授權和群組。
-ms.openlocfilehash: ec60fcfe3c3d2c0e26cb2cca6a56741067d154c0
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: d3745b9365c67615efe32881408d1a717b8dbbed
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073122"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371533"
 ---
 # <a name="manage-microsoft-365-user-accounts-licenses-and-groups-with-powershell"></a>以 PowerShell 管理 Microsoft 365 使用者帳戶、授權和群組
 
@@ -53,5 +53,6 @@ Microsoft 365 管理員需要管理使用者帳戶、授權和群組。 雖然�
 - [從使用者帳戶移除授權](remove-licenses-from-user-accounts-with-microsoft-365-powershell.md)
 
 ## <a name="groups"></a>群組
-- [維護群組成員資格](maintain-group-membership-with-microsoft-365-powershell.md)
+- [管理安全性群組](manage-security-groups-with-microsoft-365-powershell.md)
+- [維護安全性群組成員資格](maintain-group-membership-with-microsoft-365-powershell.md)
 - [管理 Microsoft 365 群組](manage-microsoft-365-groups-with-powershell.md)
