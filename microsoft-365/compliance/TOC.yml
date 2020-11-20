@@ -860,7 +860,7 @@
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 管理稽核和警示原則
   items:
-    - name: 整合的稽核
+    - name: 基本稽核
       items:
         - name: 搜尋稽核記錄
           href: search-the-audit-log-in-security-and-compliance.md
