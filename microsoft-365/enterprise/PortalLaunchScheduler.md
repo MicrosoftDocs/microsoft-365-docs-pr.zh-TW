@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: e5e5850fa7e74f3e3b342e9bb28d17f65b491664
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 7e488caba5e4df47bb3f51f195e093891565d95c
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356664"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367198"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>使用入口網站啟動計畫程式啟動入口網站
 
@@ -34,7 +34,7 @@ ms.locfileid: "49356664"
 - 雙向：啟動新的現代 SharePoint 線上入口網站以取代現有的 SharePoint 傳統或新式入口網站 
 - 暫時頁面重新導向：使用沒有現有 SharePoint 入口網站的新新式 SharePoint 線上入口網站啟動
 
-入口網站啟動排程器僅可啟動新式 SharePoint Online 入口網站 (（例如，) 的通訊）。 啟動時間必須預先排程至少7天。 所需的無線電波數目取決於預期的使用者數目。 在排程入口網站之前，必須執行 [SharePoint 工具的頁面診斷](https://aka.ms/perftool) ，以驗證入口網站上的首頁狀況良好。 在入口網站的最後一開始，所有具有網站許可權的使用者都可以存取新網站。 
+入口網站啟動排程器僅可用於啟動新式 SharePoint Online 入口網站，亦即通訊網站和現代小組網站。 啟動時間必須預先排程至少7天。 所需的無線電波數目取決於預期的使用者數目。 在排程入口網站之前，必須執行 [SharePoint 工具的頁面診斷](https://aka.ms/perftool) ，以驗證入口網站上的首頁狀況良好。 在入口網站的最後一開始，所有具有網站許可權的使用者都可以存取新網站。 
 
 如需有關啟動成功入口網站的詳細資訊，請遵循 [建立、啟動及維護健康入口網站](https://docs.microsoft.com/sharepoint/portal-health)的基本原則、作法和建議。 
 
@@ -70,7 +70,7 @@ ms.locfileid: "49356664"
 
 雙向重新導向包括啟動新的現代 SharePoint Online 入口網站取代現有的 SharePoint 傳統或新式入口網站。 主動波形中的使用者將會重新導向至新網站，不論其流覽的是舊的還是新的網站。 嘗試存取新網站的非啟動浪潮中的使用者，將會重新導向至舊網站，直到其 wave 啟動為止。 
 
-若要讓系統管理員或擁有者必須存取舊的和新的網站，而不重新導向，請確定它們是以 `WaveOverrideUsers` 參數列出。 我們只支援舊網站上的預設首頁與新網站上的預設首頁之間的重定向。
+我們只支援舊網站上的預設首頁與新網站上的預設首頁之間的重定向。 若要讓系統管理員或擁有者必須存取舊的和新的網站，而不重新導向，請確定它們是以 `WaveOverrideUsers` 參數列出。 若要讓系統管理員或擁有者必須存取舊的和新的網站，而不重新導向，請確定它們是以 `WaveOverrideUsers` 參數列出。 我們只支援舊網站上的預設首頁與新網站上的預設首頁之間的重定向。
 
 若要以分段方式將現有的 SharePoint 網站中的使用者遷移至新的 SharePoint 網站，請執行下列動作：
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: 請確認您已啟用 Microsoft 365 中的所有功能，以充分發揮遠端工作者的生產力，並維持伺服器、資料和雲端的安全存取。
-ms.openlocfilehash: b886341adc49ba728856dc39786e926ebfadd3ef
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 6cf956d7d7e895dc328c8551f98e78d0fc42d86c
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906736"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357034"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 強化遠端工作者
 
@@ -113,3 +113,5 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 [![使用 Microsoft 365 強化遠端工作人員的步驟](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
 如需 Microsoft 所提供、有關支援遠端工作者的最新資訊，請參閱[使用 Microsoft Teams 啟用混合式工作網站](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)。
+
+若要瞭解虛構但代表性多國組織如何提升其遠端工作者的能力，請參閱 [針對混合式工作力的 Contoso COVID-19 回應和基礎架構](contoso-hybrid-workforce.md)。

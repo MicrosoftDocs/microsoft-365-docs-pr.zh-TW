@@ -20,18 +20,26 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: d63994778762968962b2a32f026dbb81af39b664
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0ba3d7a5e46f7e0f8677ce2844c5551bf70739e3
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843813"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367105"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱 [Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)。
+
+## <a name="november-2020"></a>2020年11月
+
+### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>在先前的 Microsoft Defender ATP) 中，為 Microsoft Defender for Endpoint (新增3個與服務相關的改進動作：
+
+- 修正 Windows 服務的未加引號服務路徑
+- 將服務可執行路徑變更為一般受保護的位置
+- 變更服務帳戶以避免在 windows 登錄中快取密碼
 
 ## <a name="october-2020"></a>2020 年 10 月
 

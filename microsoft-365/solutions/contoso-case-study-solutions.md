@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虛構但有代表性的全球組織如何部署 Microsoft 365 解決方案。
-ms.openlocfilehash: 8ee25baa9c412e51de7d70e35662d03d1c148369
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+ms.openlocfilehash: 8ba1661a2a4257409b7622b6d78dca4bcd103929
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521634"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357692"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>適用於 Contoso Corporation 的 Microsoft 365 解決方案
 
@@ -31,6 +31,8 @@ Contoso 對於 Microsoft 365 企業版的整體目標是藉由使用雲端服務
 首先，了解 [Contoso Corporation](../enterprise/contoso-overview.md)、其全球各地辦公室在部署 Microsoft 365 企業版時訂定的設計考量。
 
 接下來，請參閱 Contoso 如何使用 Microsoft 365 來因應這些解決方案和案例：
+
+- [針對混合式工作力的 COVID-19 回應和基礎架構](contoso-hybrid-workforce.md)
 
 - [用於高度機密專案的隔離團隊](contoso-team-for-top-secret-project.md)
 

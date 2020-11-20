@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 使用者可以瞭解如何管理其自助購買服務。
-ms.openlocfilehash: 7a5b52c0378e4d8f2a48ce7cdb56fb1901c25472
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a94a474bf2a5c506f4e6ed02659cd10d371fb779
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546603"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367152"
 ---
 # <a name="manage-self-service-purchases-users"></a>管理自助購買 (使用者)
 
@@ -39,12 +39,12 @@ ms.locfileid: "47546603"
 
 您可以查看您購買的所有自助服務購買的訂閱清單。
 
-1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取篩選圖示，然後選取 [ **自助**]。
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>如何購買更多或減少授權
 
-1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，選取您要為其購買更多或減少授權的訂閱。
 3. 選擇 [ **購買授權** ] 或 [ **移除授權**]。
 4. 在右窗格的 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數，然後選擇 [ **儲存**]。 例如，如果您有100授權，而您想要新增5個，請輸入105。
@@ -71,16 +71,16 @@ ms.locfileid: "47546603"
 
 ## <a name="cancel-a-subscription"></a>取消訂閱
 
-1. 在系統管理中心中，移至 [**帳單**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a>] 頁面。
-2. 在 [ **產品** ] 索引標籤上，尋找您要取消的訂閱。 選取 [ **更多動作** (三點) ]，然後選取 [ **取消訂閱**]。
-3. 在 [ **取消訂閱** ] 窗格中，選擇您要取消的原因。 （選用）提供您所擁有的任何意見反應。
-4. 選取 [儲存]****。
+1. 在系統管理中心，移至 **[帳單]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">您的產品</a> 頁面。
+2. 在 **[產品]** 索引標籤上，找出您要取消的訂閱。 選取 **[更多動作]** (三個點)，然後選取 **[取消訂閱]**。
+3. 在 **取消訂閱** 窗格中，選擇取消的原因。 （選用）提供您所擁有的任何意見反應。
+4. 選取 [儲存]。
 
 ## <a name="manage-your-payment-details"></a>管理您的付款詳細資料
 
-1. 在系統管理中心中，移至**帳單**  >  **& 付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">設定檔</a>] 頁面。
+1. 在系統管理中心中，移至 **帳單**  >  **& 付款**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">設定檔</a>] 頁面。
 2. 從清單中選取帳單設定檔。
-3. 在 [帳單設定檔詳細資料] 頁面的 [ **支付方式**] 底下，選擇下列其中一個選項： \
+3. 在 [帳單設定檔詳細資料] 頁面的 [ **支付方式**] 底下，選擇下列其中一個選項：
     - 如果您想要更新現有的支付方式，請選取 [ **編輯**]。
     - 如果您想要新增支付方式，請選取 [ **取代**]。
 4. 在右窗格中，輸入卡片詳細資料，然後選擇 [ **儲存**]。
@@ -100,7 +100,7 @@ ms.locfileid: "47546603"
 
 ## <a name="view-your-invoices"></a>查看您的發票
 
-1. 在系統管理中心中，移至 [**帳單**帳單  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& 付款</a>] 頁面。
+1. 在系統管理中心中，移至 [**帳單** 帳單  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">& 付款</a>] 頁面。
 2. 在 [ **發票** ] 索引標籤上，選取您要查看的發票。 若未顯示任何發票，請將 **過去3個月** 變更為 **過去6個月** 或 **指定日期範圍**。
 
 ## <a name="need-help-contact-us"></a>需要協助？ 聯繫我們。

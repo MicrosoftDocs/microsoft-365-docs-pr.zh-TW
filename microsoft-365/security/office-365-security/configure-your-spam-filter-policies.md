@@ -16,23 +16,23 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
-ms.openlocfilehash: 2bb6bff5fae661d755ea19dbb5af8ca62fbacbd8
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 34e0f3cf1ae382dcb256887557af18556d52a7df
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130860"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357884"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，EOP 會自動保護內送電子郵件，防止垃圾郵件。 EOP 使用反垃圾郵件原則 (也稱為垃圾郵件過篩選原則或內容篩選原則)，作為貴組織全面防範垃圾郵件的一環。 如需詳細資訊，請參閱[反垃圾郵件保護](anti-spam-protection.md)。
+在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，EOP 會自動保護內送電子郵件，防止垃圾郵件。EOP 使用反垃圾郵件原則 (也稱為垃圾郵件過篩選原則或內容篩選原則)，作為貴組織全面防範垃圾郵件的一環。如需詳細資訊，請參閱[反垃圾郵件保護](anti-spam-protection.md)。
 
-系統管理員可以檢視、編輯、設定 (但不能刪除) 預設的反垃圾郵件原則。 若要提高精確性，您也可以建立自訂的反垃圾郵件原則，並套用至貴組織中的特定使用者、群組或網域。 自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (執行順序)。
+系統管理員可以檢視、編輯、設定 (但不能刪除) 預設的反垃圾郵件原則。若要提高精確性，您也可以建立自訂的反垃圾郵件原則，並套用至貴組織中的特定使用者、群組或網域。自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (執行順序)。
 
-在擁有 Exchange Online 信箱的 Exchange Online PowerShell for Microsoft 365 組織中；沒有 Exchange Online 信箱的獨立 EOP PowerShell 組織中，您可以在 PowerShell 的 [安全性與合規性中心] 設定反垃圾郵件原則。
+您可以在安全性與合規性中心設定反垃圾郵件原則，或在 PowerShell 設定反垃圾郵件原則 (擁有 Exchange Online 信箱的 Microsoft 365 組織使用 Exchange Online PowerShell；沒有 Exchange Online 信箱的組織使用獨立的 EOP PowerShell)。
 
 反垃圾郵件原則的基本元素有：
 
@@ -42,24 +42,24 @@ ms.locfileid: "49130860"
 當您在安全性與合規性中心管理反垃圾郵件原則時，上述兩個元素的差異不大：
 
 - 當您建立ㄧ項反垃圾郵件原則時，其實只是以相同的名稱，同時建立垃圾郵件篩選規則和相關聯的垃圾郵件篩選原則。
-- 當您修改反垃圾郵件原則時，與名稱、優先順序、已啟用或已停用、收件者篩選相關的設定皆會修改垃圾郵件篩選規則。 所有其他設定都會修改相關聯的垃圾郵件篩選原則。
+- 當您修改反垃圾郵件原則時，與名稱、優先順序、已啟用或已停用、收件者篩選相關的設定皆會修改垃圾郵件篩選規則。所有其他設定都會修改相關聯的垃圾郵件篩選原則。
 - 當您移除反垃圾郵件原則時，也會一併移除垃圾郵件篩選規則和相關聯的垃圾郵件篩選原則。
 
-在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需其他更多資訊，請參照此主題之後的 [使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定反垃圾郵件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) 章節。
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。如需其他更多資訊，請參照此主題之後的[使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定反垃圾郵件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) 一節。
 
 每個組織都有一個名為「預設」的內建反垃圾郵件原則，且具有下列屬性：
 
 - 即使沒有與此原則相關聯的垃圾郵件篩選規則 (收件者篩選器)，此原則仍會套用至組織中的所有收件者。
-- 此原則的自訂優先順序值是 **最低的**，表示您無法進行任何修改（此原則ㄧ律到最後才會套用）。 任何您建立的自訂原則皆具有較高的優先順序。
+- 此原則的自訂優先順序值是 **最低的**，表示您無法進行任何修改 (此原則ㄧ律到最後才會套用)。任何您建立的自訂原則始終具有較高的優先順序。
 - 此原則是預設的 (**IsDefault** 屬性具有`True`值)，且您無法刪除此項預設原則。
 
 若要提高垃圾郵件篩選的效率，您可以建立自訂反垃圾郵件原則，以更嚴格的設定套用到特定使用者或使用者群組。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [反垃圾郵件設定] 頁面，請使用 <https://protection.office.com/antispam>。
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。若要直接移至 [反垃圾郵件 **]** 頁面，請使用 <https://protection.office.com/antispam>。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。若要連線至獨立的 EOP PowerShell，請參閱[連線至 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲派權限，才能進行此主題中的程序:
 
@@ -83,11 +83,11 @@ ms.locfileid: "49130860"
 
 2. 在 [反垃圾郵件設定] 頁面上，按一下 [建立原則]。
 
-3. 在隨即開啟的 [新增垃圾郵件篩選原則] 飛出視窗中進行下列設定：
+3. 在隨即開啟的 [新增垃圾郵件篩選原則 **]** 視窗中進行下列設定：
 
-   - **名稱**：輸入原則的唯一描述性名稱。 請勿使用下列字元：`\ % & * + / = ? { } | < > ( ) ; : , [ ] "`。
+   - **名稱**：輸入原則的唯一描述性名稱。請勿使用以下字元：`\ % & * + / = ? { } | < > ( ) ; : , [ ] "`。
 
-      如果您先前在 Exchange 系統管理中心 (EAC) 中建立的反垃圾郵件原則包含這些字元，您應用 PowerShell 重新命名該反垃圾郵件原則。 如需相關指示，請參閱本主題稍後的[使用 PowerShell 修改垃圾郵件篩選規則](#use-powershell-to-modify-spam-filter-rules)一節。
+      如果您先前在 Exchange 系統管理中心 (EAC) 中建立的反垃圾郵件原則包含這些字元，您應用 PowerShell 重新命名該反垃圾郵件原則。如需相關指示，請參閱本主題稍後的[使用 PowerShell 修改垃圾郵件篩選規則](#use-powershell-to-modify-spam-filter-rules)一節。
 
    - **說明**：輸入原則的選擇性說明。
 
@@ -104,11 +104,11 @@ ms.locfileid: "49130860"
      下表說明垃圾郵件篩選裁決可採取的動作。
 
      - 核取記號 ( ![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) 表示可採取的動作 (並非所有的垃圾郵件篩選裁決皆可採取所有動作)。
-     - 核取記號之後有星號 (<sup>\*</sup>) 表示垃圾郵件篩選裁決的預設動作。
+     - 核取記號之後有星號 (<sup>\*</sup>) 表示垃圾郵件篩選決策的預設動作。
 
      ****
 
-     |<span>|垃圾郵件|高<br/>信賴度<br/>垃圾郵件|網路釣魚<br/>電子郵件|高<br/>信賴度<br/>網路釣魚<br/>電子郵件|大量<br/>電子郵件|
+     |動作|垃圾郵件|高<br/>信賴度<br/>垃圾郵件|網路釣魚<br/>電子郵件|高<br/>信賴度<br/>網路釣魚<br/>電子郵件|大量<br/>電子郵件|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**將郵件移至 [垃圾郵件] 資料夾**：郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
      |**新增 X 標頭**：在郵件標頭中新增 X 標頭，並將郵件傳送到信箱。 <p> 您稍後可以在 [新增此 X 標頭文字] 方塊中輸入 X 標頭欄位的名稱 (不是值)。 <p> 裁決為 **垃圾郵件** 和 **高信賴度垃圾郵件** 的郵件會移至 [垃圾郵件] 資料夾。<sup>1,2</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/09/2019
+ms.date: 11/19/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,12 +14,12 @@ ms.collection: M365-identity-device-management
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
 description: 使用此測試實驗室指南，將 Intune 裝置相容性原則新增至您的 Microsoft 365 企業版測試環境。
-ms.openlocfilehash: c1de822e5a97416bd0c672d88f2902d8986638c8
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: d42c9a603ca581941cb5a8f30b9ecd9d6f780759
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487409"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367092"
 ---
 # <a name="device-compliance-policies-for-your-microsoft-365-for-enterprise-test-environment"></a>適用于 Microsoft 365 企業版測試環境的裝置合規性原則
 
@@ -48,36 +48,27 @@ ms.locfileid: "48487409"
 
 ## <a name="phase-2-create-a-device-compliance-policy-for-windows-10-devices"></a>階段2：建立 Windows 10 裝置的裝置合規性原則
 
-在這個階段中，為 Windows 10 裝置建立裝置符合性原則。
-  
-1. 移至 [microsoft 365 系統管理中心](https://admin.microsoft.com) ，並以全域系統管理員帳戶登入您的 microsoft 365 測試實驗室訂閱。
-1. 在您的瀏覽器的新索引標籤上，開啟 Azure 入口網站，網址為 [https://portal.azure.com](https://portal.azure.com) 。
-1. 在 Azure 入口網站的 [搜尋] 方塊中，輸入 **intune**，然後選取 [ **intune**]。
-1. 如果您看到 [ **Microsoft Intune** ] 窗格中**沒有啟用 [裝置管理**] 資訊，請選取它。 在 [行動 **裝置管理授權** ] 窗格中，選取 [ **Intune MDM 核證機關**]，然後選取 **[選擇**]。
-1. 重新整理瀏覽器索引標籤。
-1. 在左功能窗格中，選取 [ **群組**]。
-1. 在 [ **群組-所有群組** ] 窗格中，選取 [ **+ 新增群組**]。
-1. 在 [**群組**] 窗格中，選取 [ **Microsoft 365** ] 或 [**群組類型**的**安全性**？]，在 [**名稱**] 中輸入**受管理的 Windows 10 裝置使用者** **，選取 [** 在**成員資格類型**中**指派**]，然後選取 [
-1. 選取 [ **Microsoft Intune**]。
-1. 在 [ **Microsoft Intune** ] 窗格的 [ **快速作業** ] 清單中，選取 [ **建立符合性原則**]。
-1. 在 [ **合規性原則設定檔** ] 窗格中，選取 [ **建立原則**]。
-1. 在 [ **建立原則** ] 窗格的 [ **名稱**] 中，輸入 **Windows 10**。 在 [**平臺**] 中，選取 [windows **10 和更新版本**]，在 [ **windows 10 規範原則**] 窗格中選取 **[確定]** ，然後選取 [**建立**]。
-1. 選取 [ **相容性原則設定檔**]，然後選取 **Windows 10** 原則名稱。
-1. 在 [ **Windows 10** ] 窗格中，選取 [ **指派**]，然後選取 [ **選取要包含的群組**]。
-1. 在 [ **選取要包含的群組** ] 窗格中，選取 [ **受管理的 Windows 10 裝置使用者** ] 群組，然後選取 [ **選取**]。
-1. 選取 [ **儲存**]，選取 **[Microsoft Intune-簡介**]，然後選取左側導覽中的 [ **用戶端應用程式** ]。
-1. 在 [ **用戶端應用程式** ] 窗格中，選取 [ **應用程式**]，然後選取 [ **新增**]。
-1. 在 [**新增應用程式**] 窗格中，選取 [**應用程式類型**]，然後選取 [ **Microsoft 365 套件**] 底下的**Windows 10** 。
-1. 在 [ **新增應用程式** ] 窗格中，選取 [ **應用程式套件資訊**]。
-1. 在 [**應用程式套件資訊**] 窗格中，輸入 [適用于**套件名稱**和套件中的**Microsoft 365 應用程式**]**說明**，然後選取 **[確定]**。
-1. 在 [ **新增應用程式** ] 窗格中，選取 [ **設定應用程式套件**]，然後選取 **[確定]**。
-1. 在 [ **新增應用程式** ] 窗格中，選取 [ **應用程式套件設定**]。
-1. 在 [ **更新通道**] 中，選取 [ **半年 Enterprise**]，然後選取 **[確定]**。
-1. 在 [ **新增應用程式** ] 窗格中，選取 [ **新增**]。
+在此階段中，您會為 Windows 10 裝置建立裝置符合性原則。 此階段使用 Microsoft Intune 和 [Microsoft 端點](https://go.microsoft.com/fwlink/?linkid=2109431) 管理員系統管理中心新增群組，並建立符合性原則。
 
-現在，您已具備裝置符合性原則，可用於測試 **Windows 10** 裝置合規性原則中所選取的應用程式，以及 **受管理的 Windows 10 裝置使用者** 群組的成員。 請注意，選取 [ **Microsoft 365** ] 做為「群組類型」會建立其他資源。
+1. 移至 [microsoft 365 系統管理中心](https://admin.microsoft.com)，並以全域系統管理員帳戶登入您的 microsoft 365 測試實驗室訂閱。 選取 **端點** 管理員管理中心。 [端點管理員管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)隨即開啟。
+
+    如果已顯示類似 **您未啟用 [裝置管理** ] 的郵件，請選取 [Intune] 做為 MDM 授權。 如需特定步驟，請參閱 [Set the mobile device management 機關](/mem/intune/fundamentals/mdm-authority-set)。
+
+    端點管理員管理中心著重于裝置管理和應用程式管理。 如需此系統管理中心的教程，請參閱「 [教程：演練 Intune 中的 Microsoft 端點管理員](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)」。
+
+2. 在 **[群組**] 中，使用 **指派** 的成員資格類型，新增名為「**受管理的 Windows 10 裝置使用者**」的新 **Microsoft 365** 或 **安全** 組。 在後續步驟中，您會將您的相容性原則指派給此群組。 
+
+    如需特定步驟，以及 **Microsoft 365** 或 **安全** 組的詳細資訊，請參閱 [新增群組以組織使用者和裝置](/mem/intune/fundamentals/groups-add)。
+
+3. 在 [ **裝置**] 中，建立 Windows 10 合規性原則。 將此原則指派給您建立的 **受管理 Windows 10 裝置使用者** 群組。
+
+    在您的原則中，您可以封鎖簡單密碼、需要防火牆、需要執行 Microsoft Defender 反惡意程式碼服務，等等。 規範原則通常會包含基本設定或每個裝置應該具備的最低基本設定。
+
+    如需特定步驟，以及您可以設定之可用之相容性設定的資訊，請參閱 [Use 合規性原則設定您管理之裝置的規則](/mem/intune/protect/device-compliance-get-started)。
+
+完成後，您會在 **受管理的 Windows 10 裝置使用者** 群組中，測試成員的裝置合規性原則。
   
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 在您的測試環境中探索其他行動 [裝置管理](m365-enterprise-test-lab-guides.md#mobile-device-management) 功能和功能。
 
