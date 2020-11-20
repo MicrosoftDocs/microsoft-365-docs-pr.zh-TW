@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b2aa72dea55d4c75f6e73161e07cf0a9bb5ecf1c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e8bf55cf3c27170c471dd45a68fd1ec2fa4a615b
+ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846271"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "49357442"
 ---
 # <a name="plan-for-insider-risk-management"></a>測試人員風險管理計畫
 
@@ -57,7 +57,7 @@ ms.locfileid: "48846271"
 
 根據您計畫如何執行有問必答風險管理原則，您必須具備適當的 Microsoft 365 授權訂閱，並瞭解和規劃某些方案必要條件。
 
-**授權：** 在廣泛的 Microsoft 365 授權訂閱中，您可以使用「內幕風險管理」。 如需詳細資訊，請參閱《快速入門的 [內幕風險管理](insider-risk-management-configure.md#before-you-begin) 文章。
+**授權：** 在廣泛的 Microsoft 365 授權訂閱中，您可以使用「內幕風險管理」。 如需詳細資訊，請參閱《快速入門的 [內幕風險管理](insider-risk-management-configure.md#subscriptions-and-licensing) 文章。
 
 如果您沒有現有的 Microsoft 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以 [將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 至現有的訂閱，或註冊 Microsoft 365 Enterprise E5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
 

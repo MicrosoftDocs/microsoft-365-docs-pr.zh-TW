@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全性與合規性中心建立警示原則，以監視潛在威脅、資料遺失和許可權問題。
-ms.openlocfilehash: 7b2d5b380f71a31302a54cedb6076e6fca54fa86
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
+ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350743"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49367176"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全性與合規性中心的警示原則
 
@@ -33,7 +33,7 @@ ms.locfileid: "49350743"
 警示原則可讓您分類原則所觸發的警示、將原則套用至組織中的所有使用者、設定觸發警示時的閾值等級，以及決定是否要在觸發警示時收到電子郵件通知。 在 [安全性與合規性中心] 中也有一個「 **查看提醒** 」頁面，您可以在其中查看和篩選提醒、設定警示狀態，以協助您管理提醒，然後在您解決或解決基礎事件後關閉提醒。
 
 > [!NOTE]
-> 使用 Microsoft 365 Enterprise、Office 365 企業版或 Office 365 US 政府 E1/F1/G1、E3/G3 或 E5/G5 訂閱的組織可取得警示原則。 只有具有 E5/G5 訂閱的組織或具有 E1/F1/G1 或 E3/G3 訂閱的組織，以及 Microsoft Defender for Office 365 P2 或 Microsoft 365 E5 相容性或 Microsoft 365 E5 eDiscovery 及 Audit 附加元件訂閱，才可使用高級功能。 本主題中已反白顯示需要 E5/G5 或附加元件訂閱的功能。 另外請注意，Office 365 GCC、GCC High 及 DoD 美國政府環境中提供警示原則。
+> 使用 Microsoft 365 Enterprise、Office 365 企業版或 Office 365 US 政府 E1/F1/G1、E3/G3 或 E5/G5 訂閱的組織可取得警示原則。 只有具有 E5/G5 訂閱的組織或具有 E1/F1/G1 或 E3/G3 訂閱的組織，以及 Microsoft Defender for Office 365 P2 或 Microsoft 365 E5 規範或 E5 eDiscovery 和審核附加元件訂閱，才可使用高級功能。 本主題中已反白顯示需要 E5/G5 或附加元件訂閱的功能。 另外請注意，Office 365 GCC、GCC High 及 DoD 美國政府環境中提供警示原則。
 
 ## <a name="how-alert-policies-work"></a>警示原則的運作方式
 
@@ -76,7 +76,7 @@ ms.locfileid: "49350743"
     如果您根據不尋常的活動選取設定，Microsoft 會建立定義所選活動一般頻率的比較基準值。 建立此基準需要長達7天，而不會產生提醒。 建立基準之後，當警示原則追蹤的活動頻率超過基準值時，就會觸發警示。 針對與審核相關的活動 (例如檔案和資料夾活動) ，您可以根據單一使用者或組織中的所有使用者建立基準。針對惡意程式碼相關的活動，您可以根據單一惡意程式碼系列、單一收件者或組織中的所有郵件，建立基準。
 
     > [!NOTE]
-    > 根據臨界值或非使用中的活動來設定警示原則的功能，需要 E5/G5 訂閱，或具有 Microsoft Defender for Office 365 365 P2 的 E1/F1/G1 或 E3/G3 訂閱，或 Microsoft 365 eDiscovery 及 Audit 附加元件訂閱。 具有 E1/F1/G1 和 E3/G3 訂閱的組織，只會建立每次發生活動時觸發警示的警示原則。
+    > 若要根據臨界值或非使用中的活動來設定警示原則，需要 E5/G5 訂閱，或具有 Microsoft Defender for Office 365 365 P2 的 E1/F1/G1 或 E3/G3 訂閱，或 Microsoft 365 eDiscovery 及 Audit 附加元件訂閱。 具有 E1/F1/G1 和 E3/G3 訂閱的組織，只會建立每次發生活動時觸發警示的警示原則。
 
 - **警示類別** -若要協助追蹤和管理原則所產生的警示，您可以將下列其中一個類別指派給原則。
 
