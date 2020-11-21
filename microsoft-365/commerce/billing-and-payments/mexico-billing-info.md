@@ -20,12 +20,12 @@ ms.custom:
 - AdminSurgePortfolio
 - Commerce
 monikerRange: o365-worldwide
-ms.openlocfilehash: 279b41716a5d69c819330e0fbcadd04d0aa51fee
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: ea6a60d205c7fbe91b35b22b7ec7b3ee51715444
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374028"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376290"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>適用于墨西哥的 Microsoft 365 商務用帳單資訊
 
@@ -63,5 +63,5 @@ Microsoft Corporation （如美國的稅收居民）只能夠在司法轄區的�
 
 ## <a name="related-content"></a>相關內容
 
-[查看您的帳單或發票](view-your-bill-or-invoice.md)\
-[瞭解適用于商務用 Microsoft 365 的帳單或發票](understand-your-invoice2.md)
+[查看您的帳單或發票](view-your-bill-or-invoice.md) (文章) \
+[瞭解適用于商務用 Microsoft 365 的帳單或發票](understand-your-invoice2.md) (文章) 

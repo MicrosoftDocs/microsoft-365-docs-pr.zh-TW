@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何在設定 Microsoft 365 商務版 Premium 之後保護 Windows 10 電腦。
-ms.openlocfilehash: a70fcd330fe6ef330fac08512aded4d8913313d5
-ms.sourcegitcommit: 1780359234abdf081097c8064438d415da92fb85
+ms.openlocfilehash: 286393779eaa92d33432ff9ad4b21c0a1fb8612c
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "46778377"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376270"
 ---
 # <a name="secure-windows-10-computers"></a>保護 Windows 10 電腦
 
@@ -36,7 +36,7 @@ ms.locfileid: "46778377"
 
 [設定](set-up.md)Microsoft 365 商務版 Premium 後，就可以保護組織中的 Windows 10 電腦免受盜竊，以及惡意威脅（如病毒和惡意程式碼）。
 
-## <a name="to-secure-your-windows-10-pcs"></a>保護您的 Windows 10 電腦
+## <a name="to-secure-your-windows-10-computers"></a>保護您的 Windows 10 電腦
 
 1. 使用您的全域系統管理員認證登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com)。 
 2. 在左導覽上，選取 [ **安裝** ]，然後在 [登 **入和安全性**] 下，選擇 [ **保護您的 Windows 10 電腦**]。 選擇 [View] （ **查看** ）立即開始。

@@ -18,16 +18,16 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: 請確認您已啟用 Microsoft 365 中的所有功能，以充分發揮遠端工作者的生產力，並維持伺服器、資料和雲端的安全存取。
-ms.openlocfilehash: 6cf956d7d7e895dc328c8551f98e78d0fc42d86c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357034"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371499"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 強化遠端工作者
 
-貴組織可能必須讓工作人員能夠從家裡安全地存取貴組織的內部部署與雲端式資訊、工具及資源。 允許員工遠端辦公對許多組織達到以下目的非常重要:
+貴組織可能必須讓工作人員能夠從家裡安全地存取貴組織的內部部署與雲端式資訊、工具及資源。允許員工遠端辦公對許多組織達到以下目的非常重要：
 
 - 節省辦公室空間。
 - 聘用並留住不願意調派的工作人員。
@@ -69,9 +69,9 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
   - 共用工作和工作流程來劃分並完成工作。 
 
-若要取得無縫登入體驗，您的內部部署 Active Directory 網域服務 (AD DS) 使用者帳戶應與 Azure Active Directory (Azure AD) 同步處理。 為了保護您的 Windows 10 裝置，應在 Intune 中註冊。 以下是基礎結構的高階檢視。
+若要取得無縫登入體驗，您的內部部署 Active Directory 網域服務 (AD DS) 使用者帳戶應與 Azure Active Directory (Azure AD) 同步處理。為了保護您的 Windows 10 裝置，應在 Intune 中註冊。以下是基礎結構的高階檢視。
 
-![適用於使用 Microsoft 365 之遠端工作者的基本基礎結構](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![適用於使用 Microsoft 365 遠端工作者的基本基礎結構](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
 若要為您的遠端工作者啟用 Microsoft 365 的功能，請使用這些 Microsoft 365 功能。
 
@@ -112,6 +112,6 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
 [![使用 Microsoft 365 強化遠端工作人員的步驟](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-如需 Microsoft 所提供、有關支援遠端工作者的最新資訊，請參閱[使用 Microsoft Teams 啟用混合式工作網站](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)。
+如需 Microsoft 所提供、有關支援遠端工作者的最新資訊，請參閱[啟用 Microsoft Teams 混合式工作網站](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) (英文)。
 
-若要瞭解虛構但代表性多國組織如何提升其遠端工作者的能力，請參閱 [針對混合式工作力的 Contoso COVID-19 回應和基礎架構](contoso-hybrid-workforce.md)。
+若要瞭解虛構但代表性多國組織如何提升其遠端工作者的能力，請參閱 [針對遠端和辦公室工作的 Contoso COVID-19 回應和基礎架構](contoso-remote-onsite-work.md)。
