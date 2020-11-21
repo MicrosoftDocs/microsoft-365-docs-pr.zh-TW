@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 判斷 Microsoft 365 客戶資料的全球儲存位置
-ms.openlocfilehash: 4fd3f480ef2ad3389e9a959695b9654badbda27f
-ms.sourcegitcommit: 0badd6a7af803a52c7c46a4374211cb89307eacf
+ms.openlocfilehash: 6ad35082cbed602325e2a32edb825a17b5cb9f4a
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49135988"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376512"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -29,16 +29,17 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客戶資料的儲存位置
 
-下表顯示針對所有 Microsoft 的全球雲端位置的 Microsoft 365 服務，客戶資料待用儲存的所在位置。 展開您的帳單地址所在國家/地區的位置，以找出每個服務的客戶資料將儲存的位置。
+下表顯示 Microsoft 365 服務的待用客戶資料在所有 Microsoft 的全球雲端位置中所儲存的位置。展開您的帳單地址所在國家/地區的位置，以找出每項服務的客戶資料將儲存的位置。
 
-客戶應該在您的 Microsoft 365 系統管理中心的 [設定] | [組織設定] | [組織設定檔] | [資料位置] 檢視租用戶特定資料位置資訊。
+如果您的企業位於歐盟，請參閱 [歐盟的資料位置](EU-data-storage-locations.md) 以取得詳細資訊。 
+
+客戶應該在您的 Microsoft 365 系統管理中心的 **[設定] | [組織設定] | [組織設定檔] | [資料位置]** 檢視特定租用戶的資料位置資訊。
 
 新 Microsoft 365 租用戶會預設為根據與該租用戶的第一個訂閱相關聯之交易上的國家/地區的地區。
 
 在 [Microsoft Online Services 條款 (OST)](https://go.microsoft.com/fwlink/p/?LinkId=2098215) 中尋找有關客戶待用資料儲存位置契約承諾的相關資訊。
 
 針對相關的 Azure Active Directory 資料位置，請瀏覽 [AAD 資料地圖](https://go.microsoft.com/fwlink/p/?linkid=2092972)。
-
 
 如果客戶的帳單位址不在歐盟地區，而客戶擁有 Office 365 教育版的訂閱，然後儘管 OST 中的章節「核心線上服務的客戶待用資料位置」有規定，但 Microsoft 得在北美地區或歐盟區域內的任何地方提供客戶的 Office 365 租用戶，傳輸客戶資料，並儲存客戶的待用資料。  如果客戶的帳單位址是在歐盟區域，且客戶擁有 Office 365 教育版的訂閱，然後儘管 OST 中的章節「核心線上服務的客戶待用資料位置」有規定，但 Microsoft 得在歐盟區域內的任何地方提供客戶的 Office 365 租用戶，傳輸客戶資料，並儲存客戶的待用資料。
 
