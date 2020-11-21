@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: de005e40cf346c8dd6e02e0394272a97b186920f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 415f9345c3634adf62c42b9e13192be5ad7ea795
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131106"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371691"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -52,7 +52,7 @@ ms.locfileid: "49131106"
 
 若為 iOS 和 Android：其中列出了最低的版本，則 [Office 應用程式](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)也支援敏感性標籤功能。
 
-|功能                                                                                                        |Windows 桌面 |Mac 桌面 |iOS    |Android      |網址                                                         |
+|功能                                                                                                        |Windows 桌面 |Mac 桌面 |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[手動套用、變更或移除標籤](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[套用預設標籤](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
@@ -258,6 +258,41 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 > [!NOTE]
 > 這些變數的語法是區分大小寫的。
+
+#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>為 Word、Excel、PowerPoint 和 Outlook 設定不同的視覺標記
+
+做為其他變數，您可以在文字字串中使用 "If. App" variable 語句來設定每個 Office 應用程式類型的視覺標記，並使用 [ **Word**]、[ **Excel**]、[ **PowerPoint**] 或 [ **Outlook**] 的值來識別應用程式類型。 您也可以縮寫這些值，如果您想要在相同的 If App 語句中指定多個值，則這是必要的。
+
+> [!NOTE]
+> 為了完整，Outlook 的指示會包含在內，但目前只有 Azure 資訊保護整合的標籤用戶端支援。
+
+使用下列語法：
+
+```
+${If.App.<application type>}<your visual markings text> ${If.End}
+```
+
+與其他動態視覺標記一樣，語法也是區分大小寫的。
+
+範例：
+
+- **只為 Word 檔設定標頭文字：**
+
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+
+    只有在 Word 檔標題中，標籤會套用標頭文字「這個 Word 檔是保密的」。 沒有標頭文字會套用至其他 Office 應用程式。
+
+- **設定 Word、Excel 和 Outlook 的頁尾文字，以及 PowerPoint 的不同頁腳文字的頁腳文字：**
+
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+
+    在 Word、Excel 和 Outlook 中，標籤會套用頁腳文字「此內容是機密」。 在 PowerPoint 中，標籤會套用註腳文字「本簡報是機密」。
+
+- **設定 Word 和 PowerPoint 的特定浮水印文字，然後為 Word、Excel 及 PowerPoint 設定浮水印文字：**
+
+    `${If.App.WP}This content is ${If.End}Confidential`
+
+    在 Word 和 PowerPoint 中，標籤會套用浮水印文字「此內容是機密」。 在 Excel 中，標籤會套用浮水印文字「機密」。 在 Outlook 中，標籤不會套用任何浮水印文字，因為浮水印是不支援 Outlook 的視覺標記。
 
 ## <a name="end-user-documentation"></a>最終使用者檔
 

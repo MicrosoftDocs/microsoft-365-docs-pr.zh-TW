@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 尋找 Microsoft 合規性管理員的常見問題解答，協助組織簡化及自動化風險評估。
-ms.openlocfilehash: 91b5957d843a2e3fba22a1a9f1e630fbfede8713
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 9bf20b74e26f1231630d4a45856813177deb55c7
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087066"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376534"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>合規性管理員常見問題
 
@@ -73,7 +73,7 @@ Microsoft 365 規範中心內的合規性管理員一般可用，在9月2020完�
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>是否有使用合規性管理員的授權需求？
 
-是。 合規性管理員的公開發行版包含新的授權條款。 所有使用 Office 365 和 Microsoft 365 授權和美國政府社區 (GCC 的組織，都) 適中的客戶都可以存取合規性管理員。 不過，您的組織可以使用評估，以及如何管理評估範本，取決於您的授權合約。 如需詳細資訊，請造訪 [Microsoft 365 授權指南以取得安全性和合規性](https://go.microsoft.com/fwlink/?linkid=2132371) 。
+是。 合規性管理員的公開發行版包含新的授權條款。 所有使用 Office 365 和 Microsoft 365 授權的組織，以及美國政府社區 (GCC) 適中和擁有 GCC 的高客戶，都能存取合規性管理員。 不過，您的組織可以使用評估，以及如何管理評估範本，取決於您的授權合約。 如需詳細資訊，請造訪 [Microsoft 365 授權指南以取得安全性和合規性](https://go.microsoft.com/fwlink/?linkid=2132371) 。
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>如果我有高分，是否表示我完全相容？
 

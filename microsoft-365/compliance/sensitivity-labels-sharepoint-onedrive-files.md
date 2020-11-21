@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 84628cdf1e56bfcdf72bc5aca7aed61eba6a7782
-ms.sourcegitcommit: 2beefb695cead03cc21d6066f589572d3ae029aa
+ms.openlocfilehash: 0feb98c6a0040ad67b4607062abdf0be5b5fbdb8
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349689"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376326"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -218,6 +218,26 @@ ms.locfileid: "49349689"
     ``` 
 
 如需使用 managed 屬性的詳細資訊，請參閱 [管理 SharePoint 中的搜尋架構](https://docs.microsoft.com/sharepoint/manage-search-schema)。
+
+## <a name="remove-encryption-for-a-labeled-document"></a>移除標籤檔的加密
+
+當 SharePoint 管理員需要從 SharePoint 中儲存的檔中移除加密時，可能會發生極少的情況。 對該檔指派「匯出」或「完全控制」 [許可權](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) 的任何使用者，都可以移除 Azure Rights Management Service 從 Azure 資訊保護所套用的加密。 例如，使用任一種使用許可權的使用者都可以取代以未加密的標籤來套用加密的標籤。 或者， [超級使用者](https://docs.microsoft.com/azure/information-protection/configure-super-users) 可以下載檔案，並在不加密的情況下儲存本機副本。
+
+另外，全域管理員或 [SharePoint 管理員](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) 可以執行 [SPOSensitivityLabelEncryptedFile 指令程式](https://docs.microsoft.com/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) ，該 Cmdlet 會同時移除敏感度標籤和加密。 即使系統管理員沒有網站或檔案的存取權限，或 Azure Rights Management 服務無法使用，此 Cmdlet 也會執行。 
+
+例如：
+
+```powershell
+Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
+```
+
+需求：
+
+- SharePoint 線上管理命令介面版本16.0.20616.12000 或更新版本。
+
+- 加密已由具有系統管理員定義加密設定的靈敏度標籤所套用 ([指派許可權現在](encryption-sensitivity-labels.md#assign-permissions-now) 標籤設定) 。 此 Cmdlet 不支援[雙金鑰加密](encryption-sensitivity-labels.md#double-key-encryption)。
+
+調整文字會新增至 **已移除敏感度標籤從** 檔案中的「[審核」事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities)，解密動作也會記錄在 [Azure 資訊保護的保護使用方式記錄](https://docs.microsoft.com/azure/information-protection/log-analyze-usage)中。
 
 ## <a name="how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out"></a>如何停用 SharePoint 和 OneDrive (自願退出) 的敏感度標籤
 

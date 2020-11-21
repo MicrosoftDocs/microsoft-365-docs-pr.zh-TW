@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案新增至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cf019e15b1d5b915c58325c7d7c6f160acffe03e
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 27228f37673eee64ae44de9b88b7505d1958c05f
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988851"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376606"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
@@ -37,13 +37,84 @@ ms.locfileid: "48988851"
 > 對其他系統管理中心的進展感興趣嗎？ 請參閱下列文章：<br>[Microsoft 365 系統管理中心的新功能](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[SharePoint 系統管理中心的新功能](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Microsoft 365 Defender 的新功能](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 請造訪 [microsoft 365 藍圖](https://www.microsoft.com/en-us/microsoft-365/roadmap) ，以瞭解已啟動、已開發、已取消或先前發佈的 microsoft 365 功能。
 
+## <a name="october-2020"></a>2020 年 10 月
+
+### <a name="advanced-ediscovery"></a>進階電子文件探索
+
+[CJK 語言支援](ediscovery-cjk-support.md)。 「高級 eDiscovery」現在支援雙位元組字元集語言，統稱為 CJK 語言 (包含簡體中文版的繁體中文、繁體中文、日文和韓文) 。 這些可用於數種高級複查集案例。
+
+### <a name="sensitivity-labels"></a>敏感度標籤
+
+- [標籤範圍](sensitivity-labels.md#label-scopes)。 建立靈敏度標籤時，您會看到新的選項，可定義標籤的範圍。 此選項可讓您設定標籤與電子郵件、容器 (SharePoint 網站和團隊) 或兩者等的標籤。
+- [動態內容標示](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)。 在設定敏感度標籤的內容標示時，您現在可以 `${Item.Label}` `${Item.Location}` 在您的頁首、頁尾或浮水印的文字字串中使用動態變數。
+
+## <a name="september-2020"></a>2020 年 9 月
+
+### <a name="spotlight-compliance-manager"></a>聚光燈：合規性管理員
+
+Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](compliance-manager.md)。 此版本會在服務信任入口網站中完成從合規性管理員先前的首頁轉換，並在 Microsoft 365 規範中心引進端對端規範管理解決方案。
+
+觀看下列影片，瞭解合規性管理員如何協助簡化組織管理規範的方式。
+<br>
+<br>
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4FGYZ]
+
+### <a name="advanced-audit"></a>進階稽核
+
+- 新的10年保留審計記錄檔可協助支援長期執行調查，並回應法規、法律和內部責任。
+- [三個新的新重要事件](advanced-audit.md#access-to-crucial-events-for-investigations)。 下列新事件可協助您調查可能的破壞專案，並決定受損的範圍： Send、SearchQueryInitiatedExchange 及 SearchQueryInitiatedSharePoint。
+
+### <a name="communication-compliance"></a>通訊合規性
+
+- [更新的角色群組](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。 通訊相容性角色群組現在符合「內部使用者風險管理」解決方案可用的角色群組結構。
+- [報表儀表板](communication-compliance-feature-reference.md#reports-preview)。 用於查看所有通訊相容性報告的中央位置。 報告構件可讓您快速瞭解對通訊規範活動狀態的整體評估，最常用的洞察力。
+- [自動處理電源流程](communication-compliance-feature-reference.md#power-automate-flows-preview)。 設定流程以自動化警示和使用者的工作、在使用者觸發提醒時通知管理員等等。
+- 「[改進分類」修正動作](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)。 包含符合 trainable 分類程式之專案的警示可能會受益于意見反應，有助於減少組織中的誤報。 [ **提升分類** ] 選項可讓您提供偵測到的專案是否符合相關通訊遵循原則中設定的分類器的意見反應。 您甚至可以建議其他分類器與專案產生關聯，以提升未來警示的相符準確度。
+
+### <a name="data-connectors"></a>資料連線器
+
+- [新增協力廠商資料連線器](archiving-third-party-data.md#third-party-data-connectors)。 25個新的資料連線器，包含從 Globanet 到8的14個連接器，從 Telemessage。
+- [實體聲譽徽章授予連接器](import-physical-badging-data.md)。 匯入實體聲譽徽章授予資料，例如員工的原始實體存取事件，或是組織之聲譽徽章授予系統所產生的任何實體存取告警。 範例包括辦公樓、伺服器機房或資料中心的專案。 「內部使用者風險管理」解決方案可使用實體聲譽徽章授予資料，協助保護您的組織免受惡意活動或組織內的資料竊取。
+
+### <a name="insider-risk-management"></a>測試人員風險管理
+
+- [Microsoft 小組整合](insider-risk-management-settings.md#microsoft-teams-preview)。 當團隊整合在「內幕風險設定」中開啟時，您可以與工作小組中的其他專案關係人協調及共同作業，例如安全共用和儲存與個別案例相關的資料、追蹤及檢查分析員和調查人員的回應活動等等。
+- [自動處理電源流程](insider-risk-management-settings.md#power-automate-flows-preview)。 設定流程以自動化案例和使用者的重要工作，例如，檢索使用者、警示及案例資訊，以與專案關係人和其他應用程式共用、自動化動作（如張貼至案例記事）等等）。
+- [活動瀏覽器](insider-risk-management-alerts.md#activity-explorer-preview)。 可用於審閱提醒時，活動 explorer 會提供調查人員和分析工具，以深入查看每個警示的綜合分析工具。 快速查看偵測到風險的啟用時間表，並識別及篩選與提醒相關聯的所有風險活動。
+
+### <a name="retention-policies-and-retention-labels"></a>保留原則和保留標籤
+
+- [對 Yammer 的支援](retention-policies-yammer.md)。 您現在可以使用保留原則來保留和刪除 Yammer 社區郵件和私人郵件。
+- 對[小組會議錄製套用標籤](apply-retention-labels-automatically.md#microsoft-teams-meeting-recordings)。 建立自動標記原則時，請使用關鍵字查詢編輯器，識別儲存在使用者 OneDrive 帳戶或 SharePoint 中的小組會議錄製。
+
+### <a name="records-management"></a>記錄管理
+
+[支援法規記錄](declare-records.md#how-to-display-the-option-to-mark-content-as-a-regulatory-record)。 將標籤分類為法規記錄會增加標籤所套用的內容限制，並限制標籤本身可用的管理動作。 例如，在套用至內容之後，任何人（甚至全域系統管理員）都可以移除標籤。 [深入瞭解](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked) 針對法規記錄允許和封鎖的動作。
+
+### <a name="sensitivity-labels"></a>敏感度標籤
+
+[為美國政府客戶提供支援](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。 目前只有 Azure 資訊保護統一標籤用戶端和掃描器，才支援 GCC、GCC 高階及 DoD 客戶的靈敏度標籤。
+
+### <a name="trainable-classifiers"></a>可訓練分類器
+
+新的重新訓練和意見反應功能可協助提升精確度，並最小化所有自訂分類符和部分預先訓練的分類器的誤報。 這段流程可讓您針對專案是否符合特定的分類器、建議其他分類器與專案產生關聯，以及重新整理分類器以精煉和提高相符精確度。
+
+下列功能包含這項新功能：
+
+> [!NOTE]
+> 針對所有功能，如果您至少提供30項回饋回應，我們會建立該分類程式的 retrained 版本，您可以進行查看。 如果有改進，您可以重新發佈分類器。
+
+- [Trainable 分類](classifier-learn-about.md#retraining-classifiers)符。 若要改善發佈的分類程式的準確性，您可以提供偵測到的專案是否符合分類程式的意見反應。
+- [通訊相容性](classifier-how-to-retrain-comms-compliance.md)。 新增的「 **改進分類** 修復」動作可讓您提供意見，以徵求通訊相容性警示中的專案是否符合通訊合規性原則中設定的分類器。
+- [內容瀏覽器](classifier-how-to-retrain-content-explorer.md)。 如果您設定保留自動標記原則，以自動將標籤套用至符合 trainable 分類程式的電子郵件，您可以使用內容瀏覽器來查看已標示的專案，並提供專案是否符合分類器的意見反應。
+
 ## <a name="august-2020"></a>2020年 8月
 
 ### <a name="spotlight-insider-risk-and-communication-compliance-updates"></a>聚光燈：有問必答風險和通訊相容性更新
 
 這個月的公開預覽的一些新增及增強功能：
 
-**有問必答風險管理**
+**測試人員風險管理**
 
 - 查看我們的六個新 [原則範本](insider-risk-management-policies.md#policy-templates)：
     - 依優先使用者的資料洩漏
@@ -101,7 +172,7 @@ ms.locfileid: "48988851"
 為了協助您瞭解哪些相容性解決方案是用來保護和管理組織的機密資料，我們會建立兩個新的登陸頁面，並概述解決方案如何協同運作以達成這些目標，包括相關檔的連結，讓您可以進一步深入。
 
 [Microsoft 365 中的 microsoft 資訊保護](information-protection.md)<br>
-[Microsoft 365 中的 microsoft 資訊管理](manage-Information-governance.md)
+[Microsoft 365 中的 Microsoft 資訊控管功能](manage-Information-governance.md)
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Advanced eDiscovery：將非 custodial 資料來源新增至您的案例
 
@@ -170,7 +241,7 @@ ms.locfileid: "48988851"
 
 ### <a name="sensitivity-labels-new-privacy-option"></a>敏感度標籤：新增隱私權選項
 
-設定標籤的 [網站和群組設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) 時，您現在可以設定隱私權選項為 **None-讓使用者選擇誰可以存取網站** 。 當您想要使用敏感度標籤保護容器中的內容，但仍可讓使用者自行設定隱私權設定時，這會很有用。
+設定標籤的 [網站和群組設定](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) 時，您現在可以設定隱私權選項為 **None-讓使用者選擇誰可以存取網站**。 當您想要使用敏感度標籤保護容器中的內容，但仍可讓使用者自行設定隱私權設定時，這會很有用。
 
 ## <a name="april-2020"></a>2020 年 4 月
 
@@ -326,7 +397,7 @@ ms.locfileid: "48988851"
 |方案目錄 (預覽)  <br/>|方案目錄是一種可讓您探索、深入瞭解及快速開始使用我們的合規性和風險管理解決方案的單一停止車間。 目錄會組織成三個符合性類別，每個類別包含組成該類別之解決方案的詳細資料。 類別包括資訊保護 & 控管、內幕風險管理，以及探索 & 回應 <br/>|[方案目錄 (預覽的概述) ](microsoft-365-solution-catalog.md)|
 |通訊合規性 (預覽)  <br/>|通訊相容性是新的有問必答風險管理類別的一部分，可協助您針對組織中的不適當郵件偵測、捕獲和採取補救措施，以協助將通訊風險降到最低。 此方案透過引進一些新的增強功能（如智慧範本、彈性修復工作流程及可行動的觀點），擴充 Office 365 中監管原則的功能。 <br/>|[Microsoft 365 (預覽中的通訊法規遵從性) ](communication-compliance.md)|
 |資料分類 (預覽)  <br/>|我們新的資料分類頁面包含強大的洞察力和工具，可協助您探索和評估敏感資訊和標籤在組織中的內容中使用 (保留和敏感度) 。 回顧包含機密資訊或已套用標籤的內容、探索各個 Microsoft 365 位置的標籤活動、建立自訂機密資訊類型，以及更多。<br/>|[資料分類概觀 (預覽)](data-classification-overview.md)|
-|Trainable 分類 (預覽)  <br/>|這個強大的新工具使用我們的機器學習引擎，協助識別您的組織中的內容類別別，例如法規檔或員工合約。 建立後，可使用多個規範方案中的分類器來偵測相關的內容，並加以分類、保護、保留，等等。<br/>|[深入瞭解可訓練分類器（預覽版）](classifier-learn-about.md)|
+|可訓練分類器 (預覽) <br/>|這個強大的新工具使用我們的機器學習引擎，協助識別您的組織中的內容類別別，例如法規檔或員工合約。 建立後，可使用多個規範方案中的分類器來偵測相關的內容，並加以分類、保護、保留，等等。<br/>|[深入瞭解可訓練分類器（預覽版）](classifier-learn-about.md)|
 
 #### <a name="updated-compliance-solutions"></a>更新的規範解決方案
 
@@ -345,7 +416,7 @@ ms.locfileid: "48988851"
 |稽核記錄檔搜尋|搜尋 > 審計記錄搜尋 <br/> https://protection.office.com/unifiedauditlog |審計 <br/> https://compliance.microsoft.com/auditlogsearch | [在安全性 & 規範中心搜尋審核記錄檔](search-the-audit-log-in-security-and-compliance.md)|
 |內容搜尋|搜尋 > 內容搜尋 <br/> https://protection.office.com/contentsearchbeta?ContentOnly=1 | 內容搜尋 <br/> https://compliance.microsoft.com/contentsearch |[在 Office 365 中搜尋內容](search-for-content.md) |
 |資料連線器|資訊管理 > 封存協力廠商資料 <br/> https://protection.office.com/nativeconnector | 資料連線器 <br/> https://compliance.microsoft.com/connectorlanding |[封存第三方資料](archiving-third-party-data.md)|
-|資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md)|
+|資料外洩防護|資料外洩防護 <br/> https://protection.office.com/datalossprevention |資料外洩防護 <br/> https://compliance.microsoft.com/datalossprevention |[資料外洩防護概觀](data-loss-prevention-policies.md) (英文)|
 |資料主體要求 |資料隱私權 > 資料主體要求 <br/> https://protection.office.com/dsrcases |資料主體要求 <br/> https://compliance.microsoft.com/datasubjectrequest |[使用 DSR 案例工具管理 GDPR 資料主體要求](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)|
 |電子文件探索|eDiscovery > eDiscovery <br/> https://protection.office.com/ediscoveryv1 |eDiscovery > 核心 <br/> https://compliance.microsoft.com/classicediscovery |[管理電子文件探索案例](ediscovery-cases.md) |
 |事件|記錄管理 > 事件 <br/> https://protection.office.com/events |記錄管理 > 事件] 索引標籤 <br/> https://compliance.microsoft.com/recordsmanagement?viewid=events |[事件發生時開始保留](event-driven-retention.md)|
@@ -354,19 +425,7 @@ ms.locfileid: "48988851"
 |標籤活動瀏覽器|資訊控管 > 標籤活動瀏覽器 <br/> https://protection.office.com/labelexplorer |資料分類 > 活動流覽] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer |[檢視套用標籤的內容上的活動 (預覽)](data-classification-activity-explorer.md)|
 |保留標籤及標籤原則 |分類 > 保留標籤 > 標籤及標籤原則] 索引標籤 <br/> https://protection.office.com/retentionlabels |資訊控管 > 標籤及標籤原則] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [保留標籤概觀](retention.md)|
 |保留原則|資訊管理 > 保留 <br/> https://protection.office.com/retention |資訊管理 > 保留] 索引標籤 <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[瞭解保留原則和保留標籤](retention.md)|
-|敏感資訊類型|分類 > 敏感資訊類型 <br/> https://protection.office.com/sensitivetypes |資料分類 > 敏感度資訊類型] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)|
+|敏感資訊類型|分類 > 敏感資訊類型 <br/> https://protection.office.com/sensitivetypes |資料分類 > 敏感度資訊類型] 索引標籤 <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)|
 |敏感度標籤及標籤原則|分類 > 敏感度標籤 > 標籤及標籤原則] 索引標籤 <br/> https://protection.office.com/sensitivity |資訊保護 > 標籤及標籤原則] 索引標籤 <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[了解敏感度標籤](sensitivity-labels.md) |
 |服務保證|服務保證 <br/> https://protection.office.com/serviceassurance/dashboard |目前，服務保障資源只可在 Office 365 安全性 & 規範中心存取。 |[安全性與規範中心的服務保證](service-assurance.md)|
 |監督|監督 <br/> https://protection.office.com/supervisoryreviewv2 |通訊合規性 <br/> https://compliance.microsoft.com/supervisoryreview |[Microsoft 365 (預覽中的通訊法規遵從性) ](communication-compliance.md) |
-
-## <a name="september-2019"></a>2019 年 9 月
-
-想知道為何在這個月的發行前靜音？ 我們的頭部是建立新的創新規範解決方案，該解決方案會在11月 unveiled [Microsoft Ignite](https://www.microsoft.com/ignite) 。 敬請關注！
-
-### <a name="new-encryption-options-for-sensitivity-labels"></a>敏感度標籤的新加密選項 
-
-設定敏感度標籤的加密時，您現在有兩個選項可讓使用者在手動將標籤套用至電子郵件及檔時，指派許可權：<br>
-- 將標籤套用至 **Outlook 電子郵件** 時，使用者可強制執行與 [不要轉寄] 選項同等的限制。 收件者將可以讀取郵件，但不能轉寄、列印或複製內容。
-- 將標籤套用至 **Word、PowerPoint 及 Excel** 檔案時，系統會提示使用者將存取權限指派給特定的使用者和群組。
-
-移至 [ [使用敏感度標籤來限制存取內容](encryption-sensitivity-labels.md#let-users-assign-permissions) ] 以深入瞭解內容。

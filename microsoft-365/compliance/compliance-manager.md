@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 合規性管理員可協助組織簡化及自動化風險評估，並建議採取的措施以協助解決風險。
-ms.openlocfilehash: 4508f07b0077d409de1ac033de67d20d1c3f2a7e
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 7bff6a2a7a150a08b98fe7a92cd71d266df9fda7
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072932"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376544"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft 合規性管理員
 
@@ -30,7 +30,7 @@ ms.locfileid: "49072932"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>新功能：相容性管理員的公開發行版
 
-合規性管理員現在已 (GA) 成為 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)內的端對端規範管理解決方案。 在此版本中，合規性管理員會從 Microsoft 服務信任入口網站中的先前位置轉換。 合規性管理員現在也可供美國政府社區 (GCC) 適中的客戶。
+合規性管理員現在已 (GA) 成為 [Microsoft 365 規範中心](microsoft-365-compliance-center.md)內的端對端規範管理解決方案。 在此版本中，合規性管理員會從 Microsoft 服務信任入口網站中的先前位置轉換。 合規性管理員現在也可供美國政府社區 (GCC) 適中和 GCC 高的客戶。
 
 公開的合規性分數的公開預覽已演變成集中式工具，其具有增強的合規性管理功能和更輕鬆使用。  GA 發行版本提供了更大的預先構建評估集合，可協助您擴大合規性活動。
 
@@ -83,9 +83,9 @@ ms.locfileid: "49072932"
 
 合規性管理員會追蹤下列類型的控制項：
 
-1. **Microsoft managed controls** ： microsoft 雲端服務的控制項，microsoft 負責執行這種服務
-2. **您的控制項** ：有時候稱為客戶管理控制項，這些是由您的組織所實施及管理的控制項。
-3. **共用控制項** ：這些是您的組織和 Microsoft 共同共同執行的控制措施
+1. **Microsoft managed controls**： microsoft 雲端服務的控制項，microsoft 負責執行這種服務
+2. **您的控制項**：有時候稱為客戶管理控制項，這些是由您的組織所實施及管理的控制項。
+3. **共用控制項**：這些是您的組織和 Microsoft 共同共同執行的控制措施
 
 ##### <a name="learn-more"></a>深入了解
 
@@ -99,11 +99,11 @@ ms.locfileid: "49072932"
 
 評估包含數個元件：
 
-- **範圍內的服務** ：適用于評估的特定 Microsoft 服務集合
-- **Microsoft managed controls** ： microsoft 雲端服務的控制項，microsoft 代表您執行的動作
-- **您的控制項** ：有時候稱為客戶管理控制項，這些是由您的組織所實施及管理的控制項。
-- **共用控制項** ：這些是您的組織和 Microsoft 共同共同執行的控制措施
-- **評估分數** ：顯示從評估中的動作到您的組織及 Microsoft 所管理的所有可能分數的進度
+- **範圍內的服務**：適用于評估的特定 Microsoft 服務集合
+- **Microsoft managed controls**： microsoft 雲端服務的控制項，microsoft 代表您執行的動作
+- **您的控制項**：有時候稱為客戶管理控制項，這些是由您的組織所實施及管理的控制項。
+- **共用控制項**：這些是您的組織和 Microsoft 共同共同執行的控制措施
+- **評估分數**：顯示從評估中的動作到您的組織及 Microsoft 所管理的所有可能分數的進度
 
 在建立評估時，您會將其指派給群組。 您可以以組織最具邏輯的任何方式來設定群組。 例如，您可以透過審計年、地區、解決方案、組織內的小組或其他方式來群組評估。 一旦您建立群組，您就可以 [篩選合規性管理員儀表板](compliance-manager-setup.md#filtering-your-dashboard-view) ，以查看一或多個群組的分數。
 
