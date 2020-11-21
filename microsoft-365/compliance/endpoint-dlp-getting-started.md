@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 端點資料遺失防護以監視檔案活動，並對這些端點的文件實作保護動作。
-ms.openlocfilehash: 6ba3b83d634f946f818890a732a83166f346162d
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 8211ffbe3a84c0ee9fb4cb4c22d4dcea7f906a78
+ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073092"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "49371599"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>開始使用端點資料外洩防護
 
-Microsoft 端點資料外洩防護 (端點 DLP) 是 Microsoft 365 資料外洩防護 (DLP) 套件的一部分，您可以使用這些功能探索並保護整個 Microsoft 365 服務的敏感性項目。如需所有 Microsoft DLP 供應項目的詳細資訊，請參閱[資料外洩防護概觀](data-loss-prevention-policies.md)。若要深入了解端點 DLP，請參閱[深入了解端點資料外洩防護](endpoint-dlp-learn-about.md)
+Microsoft 端點資料外洩防護 (端點 DLP) 是 Microsoft 365 資料外洩防護 (DLP) 套件的一部分，您可以使用這些功能探索並保護整個 Microsoft 365 服務的敏感性項目。 如需所有 Microsoft DLP 供應項目的詳細資訊，請參閱 [資料外洩防護概觀](data-loss-prevention-policies.md)。 若要深入了解端點 DLP，請參閱 [深入了解端點資料外洩防護](endpoint-dlp-learn-about.md)
 
-Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項目使用和共用的時機。這可提供您所需的可見度和控制，以確保它們得到正確的使用與保護，並協助防止可能導致威脅入侵的風險行為。
+Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項目使用和共用的時間。這可提供您所需的可見度和控制權，以確保妥善使用與保護這些項目，並協助防止可能導致威脅入侵的風險行為。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -105,7 +105,7 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 
 當您想要將尚未上線的裝置進行上線時，您將會下載適當的指令碼，並將它部署到這些裝置。請遵循[上線裝置程序](endpoint-dlp-getting-started.md#onboarding-devices)。
 
-如果您的裝置已上線至[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)，這些裝置就會出現在受管理的裝置清單中。請遵循[若裝置已上線至適用於端點的 Microsoft Defender](endpoint-dlp-getting-started.md#with-devices-onboarded-into-microsoft-defender-for- endpoint)。
+如果您的裝置已上線至[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)，這些裝置就會出現在受管理的裝置清單中。請遵循[若裝置已上線至適用於端點的 Microsoft Defender](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide&source=docs#with-devices-onboarded-into-microsoft-defender-for-endpoint)。
 
 ### <a name="onboarding-devices"></a>上線裝置
 
