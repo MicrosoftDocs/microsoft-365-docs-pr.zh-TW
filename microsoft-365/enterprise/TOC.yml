@@ -342,6 +342,8 @@
           href: data-move-faq.md
         - name: 客戶資料儲存位置
           href: o365-data-locations.md
+        - name: 針對歐盟的資料位置
+          href: eu-data-storage-locations.md
         - name: Microsoft Cloud Deutschland
           items:
             - name: 概觀
@@ -564,7 +566,7 @@
           href: cmdlet-references-for-microsoft-365-services.md
         - name: PowerShell 社群資源
           href: microsoft-365-powershell-community-resources.md
-    - name: 以 PowerShell 管理使用者帳戶、密碼、授權和群組
+    - name: 使用者帳戶、密碼、授權和群組
       href: manage-user-accounts-and-licenses-with-microsoft-365-powershell.md
       items:
         - name: 使用者帳戶

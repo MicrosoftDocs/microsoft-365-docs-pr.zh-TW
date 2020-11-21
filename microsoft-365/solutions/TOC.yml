@@ -171,8 +171,8 @@
       items:
         - name: 適用於 Contoso Corporation 的 Microsoft 365 解決方案
           href: contoso-case-study-solutions.md
-        - name: 針對混合式工作團隊的 COVID-19 回應和支援
-          href: contoso-hybrid-workforce.md
+        - name: 適用於遠端和現場工作的 COVID-19 回應與支援
+          href: contoso-remote-onsite-work.md
         - name: 用於高度機密專案的隔離團隊
           href: contoso-team-for-top-secret-project.md
         - name: Teams 語音移轉

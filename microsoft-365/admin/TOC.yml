@@ -289,7 +289,7 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: 啟用適用於 Office 2013 的新式驗證
           href: security-and-compliance/enable-modern-authentication.md
-        - name: 保護 Microsoft 商務進階版的安全
+        - name: 保護 Microsoft 365 商務進階版
           items:
             - name: 資料保護的先決條件
               href: ../business/pre-requisites-for-data-protection.md
@@ -297,6 +297,10 @@
               href: ../business/security-features.md
             - name: 加強威脅防護
               href: ../business/increase-threat-protection.md
+            - name: Microsoft Defender 防毒軟體偵測到的威脅
+              href: ../business/threats-detected-defender-av.md
+            - name: 檢閱偵測到的威脅並採取動作
+              href: ../business/review-threats-take-action.md
             - name: 設定合規性功能
               href: ../business/set-up-compliance.md
         - name: 安全分數
