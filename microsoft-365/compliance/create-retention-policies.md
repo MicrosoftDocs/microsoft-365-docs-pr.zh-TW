@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用保留原則可以非常有效地控制使用者透過電子郵件、文件和交談所產生的內容。保留想要的內容，清除不想要的內容。
-ms.openlocfilehash: 83f438b6a32ad56f1f239858d2f3fad61875c460
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: bcf0ef5aa76113102013bc20fca02e6d516c3203
+ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357338"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "49376576"
 ---
 # <a name="create-and-configure-retention-policies"></a>建立及設定保留原則
 
@@ -99,7 +99,7 @@ Teams 不僅是提供聊天和頻道訊息功能，還有更多功能。如果�
 ### <a name="retention-policy-for-yammer-locations"></a>Yammer 位置的保留原則
 
 > [!NOTE]
-> Yammer 的保留原則已推出預覽版。如果您還沒有看到 Yammer 的新位置，請幾天後再試一次。
+> Yammer 的保留原則已推出預覽版。如果您還沒有看到 Yammer 的新位置，請幾週後再試一次。
 >
 > 若要使用此功能，您的 Yammer 網路必須處於[原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) (部分機器翻譯)，而非混合模式。
 
@@ -191,9 +191,9 @@ Yammer 不僅可提供社群訊息和私人訊息功能，還有更多功能。�
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 群組的設定資訊
 
-若要保留或刪除一個 Microsoft 365 群組 (之前稱為 Office 365 群組) 的內容，請使用 [Microsoft 365 群組 **]** 位置。即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件** 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。此外，雖然 **Exchange 電子郵件** 位置最初可讓您指定要包含或排除的群組信箱，但是當您嘗試儲存保留原則時，您會收到「RemoteGroupMailbox」不是 Exchange 位置的有效選取項目之錯誤。
+若要保留或刪除一個 Microsoft 365 群組 (之前稱為 Office 365 群組) 的內容，請使用 **[Microsoft 365 群組]** 位置。即使 Microsoft 365 群組有 Exchange 信箱，包含整個 **Exchange 電子郵件** 位置的保留原則並不會包含 Microsoft 365 群組信箱中的內容。此外，雖然 **Exchange 電子郵件** 位置最初可讓您指定要包含或排除的群組信箱，但是當您嘗試儲存保留原則時，您會收到「RemoteGroupMailbox」不是 Exchange 位置的有效選取項目之錯誤。
 
-套用至 Microsoft 365 群組的保留原則包括群組信箱和 SharePoint 小組網站。儲存在 SharePoint 小組網站中的檔案會涵蓋這個位置，但沒有 Teams 聊天或 Teams 頻道訊息，並擁有自己的保留原則位置。
+套用到 Microsoft 365 群組的保留原則包含群組信箱和 SharePoint 小組網站。 此位置涵蓋儲存在 SharePoint 小組網站中的檔案，但不涵蓋有自己的保留原則位置的小組聊天或小組頻道訊息。
 
 ### <a name="configuration-information-for-skype-for-business"></a>商務用 Skype 的設定資訊
 
