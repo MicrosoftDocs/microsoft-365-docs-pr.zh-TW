@@ -1,5 +1,5 @@
 ---
-title: 查看偵測到的威脅並採取動作
+title: 檢閱偵測到的威脅並採取動作
 f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 瞭解如何在 Windows 10 裝置上複查及管理 Microsoft Defender 防毒程式所偵測到的威脅。
-ms.openlocfilehash: 21830b91bfbb88fdd5d5139ee07c4dfb35f5b875
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376679"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385237"
 ---
-# <a name="review-detected-threats-and-take-action"></a>查看偵測到的威脅並採取動作
+# <a name="review-detected-threats-and-take-action"></a>檢閱偵測到的威脅並採取動作
 
 偵測到惡意檔或軟體之後，Microsoft Defender 防毒程式會封鎖它，並防止其執行。 而且，已開啟雲端提供的保護，新偵測到的威脅會新增至防毒軟體和反惡意程式碼引擎，讓其他裝置和使用者也受到保護。
 
@@ -58,7 +58,7 @@ Microsoft Defender 防病毒偵測並防護下列威脅類型：
 
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>在 [使用中 **威脅** ] 頁面上管理威脅偵測
 
-下列程式適用于具有 Microsoft 365 商務版的客戶。 [Windows 10 裝置必須](/microsoft-365/business/secure-win-10-pcs)[在 Intune 中](/mem/intune/enrollment/windows-enrollment-methods)安全且註冊。
+下列程式適用于具有 Microsoft 365 商務版 Premium 的客戶。 [Windows 10 裝置必須](/microsoft-365/business/secure-win-10-pcs)[在 Intune 中](/mem/intune/enrollment/windows-enrollment-methods)安全且註冊。
 
 > [!NOTE]
 > **Microsoft Defender 防毒軟體** 卡和作用中 **威脅** 頁面會以分階段的方式展開，所以您可能無法立即進行存取。
