@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立及發佈保留標籤的指示，以便您日後在應用程式中套用，用以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: e13da466e10a347270d4b1097d36476d974557a7
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: ea67d5942f5134e4e34c3add9bdfc48771201e2d
+ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920337"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "49385185"
 ---
 # <a name="create-retention-labels-and-apply-them-in-apps"></a>建立保留標籤，並在應用程式中使用這些標籤
 
@@ -71,9 +71,9 @@ ms.locfileid: "48920337"
     
     - 如需檔案計劃描述元的詳細資訊，請參閱[使用檔案計劃管理保留標籤](file-plan-manager.md)
     
-    - 若要使用保留標籤來宣告記錄，請選取 [將項目標記為記錄 **]** ，或 [將項目標記為法規記錄 **]** 。 如需詳細資訊，請參閱[設定保留標籤以宣告記錄](declare-records.md#configuring-retention-labels-to-declare-records)。
+    - 若要使用保留標籤來宣告記錄，請選取 [將項目標記為記錄 **]**，或 [將項目標記為法規記錄 **]**。 如需詳細資訊，請參閱[設定保留標籤以宣告記錄](declare-records.md#configuring-retention-labels-to-declare-records)。
 
-3. 建立標籤並看到發佈標籤、自動套用標籤或僅保存標籤的選項：選擇 **[立即儲存標籤]** ，然後選擇 **[完成]** 。
+3. 建立標籤並看到發佈標籤、自動套用標籤或僅保存標籤的選項：選擇 **[立即儲存標籤]**，然後選擇 **[完成]**。
 
 4. 重複這些步驟以建立更多標籤。
 
@@ -97,7 +97,7 @@ ms.locfileid: "48920337"
     
     如需保留標籤支援的位置詳細資訊，請參閱[保留標籤和位置](retention.md#retention-label-policies-and-locations)一節。 
 
-要編輯現有的保留標籤原則 (原則類型為 **[發佈]** )，請將其選中，然後選取 **[編輯]** 選項以啟動編輯保留原則。 此精靈讓您從步驟 2 更改原則描述和任何[合格設定](#updating-retention-labels-and-their-policies)。
+要編輯現有的保留標籤原則 (原則類型為 **[發佈]**)，請將其選中，然後選取 **[編輯]** 選項以啟動編輯保留原則。 此精靈讓您從步驟 2 更改原則描述和任何[合格設定](#updating-retention-labels-and-their-policies)。
 
 
 ## <a name="when-retention-labels-become-available-to-apply"></a>當保留標籤可以使用時
@@ -111,7 +111,7 @@ ms.locfileid: "48920337"
 ![手動標籤生效的圖](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-如果標籤在七天之後未顯示，請在合規性中心的 [標籤原則 **]** 頁面中選取標籤原則，以檢查其 [狀態 **]** 。 如果您看到 **關閉 (錯誤)** 狀態，且在位置的詳細資料中，看到訊息說明部署原則 (針對 SharePoint) 或嘗試重新部署原則 (針對 OneDrive) 所耗費的時間超過預期，請嘗試執行 [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令以重試原則發佈：
+如果標籤在七天之後未顯示，請在合規性中心的 [標籤原則 **]** 頁面中選取標籤原則，以檢查其 [狀態 **]**。 如果您看到 **關閉 (錯誤)** 狀態，且在位置的詳細資料中，看到訊息說明部署原則 (針對 SharePoint) 或嘗試重新部署原則 (針對 OneDrive) 所耗費的時間超過預期，請嘗試執行 [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell 命令以重試原則發佈：
 
 1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
@@ -271,7 +271,7 @@ Although the UI refers to retention policies, it's your retention labels that di
 When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
+- The retention label and policy name, and the retention settings except the retention period. However, you can't change the retention period when the retention period is based on when items were labeled.
 - The option to mark items as a record.
 
 ## Locking the policy to prevent changes
