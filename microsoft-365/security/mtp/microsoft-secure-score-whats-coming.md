@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3e9a8b34f8f112cadc0377dd73ba846c88b8604c
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49374004"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409220"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -33,6 +33,17 @@ Microsoft Secure 得分可在 https://security.microsoft.com/securescore [micros
 ## <a name="proposed-changes"></a>建議變更
 
 我們在近期進行一些變更，讓 [Microsoft 安全評分](microsoft-secure-score.md) 成為安全狀況的更好代表，並提高可用性。 您的分數和可能的最大分數可能會有所變更。
+
+### <a name="december-2020"></a>12月2020
+
+為 Microsoft Defender 的 Endpoint (先前的 Microsoft defender ATP) 新增6個與帳戶相關的改進動作：
+
+- 將 ' 密碼長度下限 ' 設定為 ' 14 或以上的字元」
+- 將 ' 強制密碼歷程記錄 ' 設定為 ' 24 或以上的密碼 (s) '
+- 將 ' 密碼最長存留期 ' 設定為 ' 60 或更少的天數，但不是 0 '
+- 將 ' 密碼最短保留天數 ' 設定為 ' 1 或以上的 (s) '
+- 停用內建管理員帳戶
+- 停用內建來賓帳戶
 
 ### <a name="november-2020"></a>2020年11月
 

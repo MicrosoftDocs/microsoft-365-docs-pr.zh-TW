@@ -1,6 +1,6 @@
 ---
 title: 設定 Microsoft 365 Defender 中的事件優先順序
-description: 瞭解如何在 Microsoft 365 Defender 中排定事件佇列中的事件優先順序
+description: 瞭解如何在 Microsoft 365 Defender 中篩選事件佇列中的事件
 keywords: 事件, 佇列, 概覽, 裝置, 身分識別, 使用者, 信箱, 電子郵件, 事件
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4369d51ed740af652be632ba0b8752c708d6c719
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: e587004fbb3bc6defab985cea9b427f64b3aab35
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877216"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409252"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>設定 Microsoft 365 Defender 中的事件優先順序
 
@@ -38,7 +38,7 @@ ms.locfileid: "48877216"
 
 
 
-Microsoft 365 Defender 會套用關聯性分析，並將不同產品的所有相關警示和調查彙集到一個事件中。 Microsoft 365 defender 也會觸發唯一的警示，可在 Microsoft 365 Defender 跨整個房地產及產品套件的端對端可視性時，識別出惡意的活動。 如此一來，Microsoft 365 Defender narrates 更廣泛的攻擊案例，讓安全性作業分析員能夠瞭解並處理整個組織中的複雜威脅。
+Microsoft 365 Defender 會套用關聯性分析，並將不同產品的所有相關警示和調查彙集到一個事件中。 Microsoft 365 defender 也會觸發唯一的警示，可在 Microsoft 365 Defender 跨整個房地產及產品套件的端對端可視性時，識別出惡意的活動。 此視圖讓安全性分析分析員成為廣泛的攻擊案例，可協助他們更好地瞭解及處理整個組織中的複雜威脅。
 
 
 **事件佇列** 顯示由各裝置、使用者和信箱標示的事件集合。 可協助您設定事件優先順序及制定明智的網路安全回應決策。
@@ -100,8 +100,7 @@ Microsoft 365 Defender 會套用關聯性分析，並將不同產品的所有相
 ### <a name="status"></a>狀態
 您可以根據事件狀態來限制顯示的事件清單，以查看哪些事件為作用中或已解決。
 
->[!IMPORTANT]
->分類、裝置群組、調查狀態及 OS 平臺篩選器目前僅適用于公開預覽。
+
 
 
 ## <a name="next-steps"></a>後續步驟
@@ -109,7 +108,7 @@ Microsoft 365 Defender 會套用關聯性分析，並將不同產品的所有相
 - [調查事件](investigate-incidents.md)
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [事件概觀](incidents-overview.md)
 - [調查事件](investigate-incidents.md)
 - [管理事件](manage-incidents.md)
