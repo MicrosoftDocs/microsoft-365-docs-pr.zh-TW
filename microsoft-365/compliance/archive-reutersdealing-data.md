@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，以匯入及封存 Reuters，將資料從 Globanet 處理至 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料。 封存此資料之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理協力廠商資料。
-ms.openlocfilehash: bd3eefb1054d8ef9302ffa6f94ddce740bd55a70
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 6b1b1421944e139b0e5051e99dafb4fba9e126ba
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002754"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407307"
 ---
-# <a name="set-up-a-connector-to-archive-reuters-dealing-data-preview"></a>設定連接器，封存 Reuters 處理資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-reuters-dealing-data"></a>設定連接器以封存處理資料的 Reuters
 
 使用 Microsoft 365 規範中心內的 Globanet 連接器，從處理 Microsoft 365 組織中的使用者信箱的 Reuters 匯入及封存資料。 Globanet 為您提供 [Reuters 處理](https://globanet.com/reuters-dealing/) 連接器，該連接器設定為定期從協力廠商資料來源捕獲專案 () ，然後將這些專案匯入至 Microsoft 365。 連接器會將 Reuters 處理帳戶的通訊，轉換為電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的使用者信箱。
 
@@ -49,13 +49,13 @@ Reuters 處理資料儲存在使用者信箱之後，您可以套用 Microsoft 3
 
 第一步是存取 Microsoft 365 中的 [ **資料連線器** ] 頁面，並建立 Reuters 處理資料的連接器。
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [ **資料連線器** ]  >  **Reuters 處理** 。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [**資料連線器**]  >  **Reuters 處理**。
 
-2. 在 [ **Reuters 處理** 產品描述] 頁面上，按一下 [ **新增連接器** ]。
+2. 在 [ **Reuters 處理** 產品描述] 頁面上，按一下 [ **新增連接器**]。
 
-3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受** ]。
+3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受**]。
 
-4. 輸入識別連接器的唯一名稱，然後按 **[下一步]** 。
+4. 輸入識別連接器的唯一名稱，然後按 **[下一步]**。
 
 5. 登入您的 Merge1 帳戶以設定連接器。
 
@@ -71,13 +71,13 @@ Reuters 處理資料儲存在使用者信箱之後，您可以套用 Microsoft 3
 
 1. 在 [將 **使用者處理為 Microsoft 365 使用者** ] 頁面上的 [對應] Reuters 中，啟用 [自動使用者對應]。
 
-   Reuters 處理的專案包括稱為「 *電子郵件* 」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
+   Reuters 處理的專案包括稱為「 *電子郵件*」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
 
 2. 在 [系統 **管理員同意** ] 頁面上，按一下 [ **提供同意** ] 按鈕。 您將會重新導向至 Microsoft 網站。 按一下 [ **接受** ] 以提供同意。
 
     您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要提供系統管理員同意，您必須使用 Microsoft 365 全域管理員的認證登入，然後接受同意要求。 如果您未以全域系統管理員身分登入，您可以移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，並使用全域系統管理員認證登入，以接受要求。
 
-3. 按 **[下一步]** ，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
+3. 按 **[下一步]**，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
 
 ## <a name="step-4-monitor-the-reuters-dealing-connector"></a>步驟4：監控 Reuters 處理連接器
 
@@ -87,7 +87,7 @@ Reuters 處理資料儲存在使用者信箱之後，您可以套用 Microsoft 3
 
 2. 按一下 [ **連接器** ] 索引標籤，然後選取 [ **Reuters 處理** 連接器] 以顯示飛出頁面，該頁面包含連接器的屬性和資訊。
 
-3. 在 [ **連接器狀態與來源** ] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含已匯入至 Microsoft 雲端的資料。
+3. 在 [ **連接器狀態與來源**] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含已匯入至 Microsoft 雲端的資料。
 
 ## <a name="known-issues"></a>已知問題
 

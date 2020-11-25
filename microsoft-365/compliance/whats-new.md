@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案新增至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 27228f37673eee64ae44de9b88b7505d1958c05f
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 1d4583e5216a369801c48a47b488a35fc4e62b37
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376606"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407337"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
@@ -93,7 +93,7 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
-[為美國政府客戶提供支援](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。 目前只有 Azure 資訊保護統一標籤用戶端和掃描器，才支援 GCC、GCC 高階及 DoD 客戶的靈敏度標籤。
+[為美國政府客戶提供支援](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。 目前只有 Azure 資訊保護統一標籤用戶端和掃描器，才支援 GCC、GCC 高階及 DoD 客戶的靈敏度標籤。
 
 ### <a name="trainable-classifiers"></a>可訓練分類器
 

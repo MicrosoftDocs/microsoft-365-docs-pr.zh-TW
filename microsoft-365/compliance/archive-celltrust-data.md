@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，將 CellTrust 資料從 Globanet 匯入至 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料。 封存此資料之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理協力廠商資料。
-ms.openlocfilehash: c5ed8af29ad3b81b19e80cfe98702b5e357d9815
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 2952e4e36a73b53fba61af9f38341a0b69136363
+ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002759"
+ms.lasthandoff: 11/24/2020
+ms.locfileid: "49407267"
 ---
-# <a name="set-up-a-connector-to-archive-celltrust-data-preview"></a>設定連接器以封存 CellTrust 資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-celltrust-data"></a>設定連接器以封存 CellTrust 資料
 
 使用 Microsoft 365 規範中心內的 Globanet 連接器，將 CellTrust 平臺的資料匯入和封存至您的 Microsoft 365 組織中的使用者信箱。 Globanet 提供 [CellTrust](https://globanet.com/celltrust/) 連接器，可設定為定期捕獲協力廠商資料來源中的專案 () 並將這些專案匯入至 Microsoft 365。 連接器會將 SMS 郵件的內容從 CellTrust 帳戶轉換成電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的使用者信箱。
 
@@ -49,13 +49,13 @@ CellTrust 資料儲存在使用者信箱之後，您可以套用 Microsoft 365 �
 
 第一步是存取 Microsoft 365 規範中心內的 **資料連線器** ，並建立 CellTrust 資料的連接器。
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [ **資料連線器** \> **CellTrust** ]。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [ **資料連線器** \> **CellTrust**]。
 
-2. 在 [ **CellTrust** 產品描述] 頁面上，按一下 [ **新增連接器** ]。
+2. 在 [ **CellTrust** 產品描述] 頁面上，按一下 [ **新增連接器**]。
 
-3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受** ]。
+3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受**]。
 
-4. 輸入識別連接器的唯一名稱，然後按 **[下一步]** 。
+4. 輸入識別連接器的唯一名稱，然後按 **[下一步]**。
 
 5. 登入您的 Merge1 帳戶以設定連接器。
 
@@ -69,13 +69,13 @@ CellTrust 資料儲存在使用者信箱之後，您可以套用 Microsoft 365 �
 
 若要在 Microsoft 365 規範中心內對應使用者並完成連接器設定，請遵循下列步驟：
 
-1. 在 [將 **CellTrust 使用者對應至 Microsoft 365 使用者** ] 頁面上，啟用 [自動使用者對應]。 CellTrust 專案包括稱為「 *電子郵件* 」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
+1. 在 [將 **CellTrust 使用者對應至 Microsoft 365 使用者** ] 頁面上，啟用 [自動使用者對應]。 CellTrust 專案包括稱為「 *電子郵件*」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
 
 2. 在 [系統 **管理員同意** ] 頁面上，按一下 [ **提供同意** ] 按鈕。 您將會重新導向至 Microsoft 網站。 按一下 [ **接受** ] 以提供同意。
 
    您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要提供系統管理員同意，您必須使用 Microsoft 365 全域管理員的認證登入，然後接受同意要求。 如果您未以全域系統管理員身分登入，您可以移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，並使用全域系統管理員認證登入，以接受要求。
 
-3. 按 **[下一步]** ，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
+3. 按 **[下一步]**，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
 
 ## <a name="step-4-monitor-the-celltrust-connector"></a>步驟4：監控 CellTrust 連接器
 
@@ -85,7 +85,7 @@ CellTrust 資料儲存在使用者信箱之後，您可以套用 Microsoft 365 �
 
 2. 按一下 [ **連接器** ] 索引標籤，然後選取 **CellTrust** 連接器以顯示飛出頁面，該頁面包含連接器的屬性和資訊。
 
-3. 在 [ **連接器狀態與來源** ] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含已匯入至 Microsoft 雲端的資料。
+3. 在 [ **連接器狀態與來源**] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含已匯入至 Microsoft 雲端的資料。
 
 ## <a name="known-issues"></a>已知問題
 

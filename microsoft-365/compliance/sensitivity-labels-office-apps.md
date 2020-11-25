@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 415f9345c3634adf62c42b9e13192be5ad7ea795
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: b616a25f4e130f7b73b82e80bf82136c229d5efd
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371691"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409200"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -62,11 +62,15 @@ ms.locfileid: "49371691"
 |[包含變數的動態標記](#dynamic-markings-with-variables)                                              | 2010 +           | 16.42 +     | 2.42 + | 16.0.13328 + | 在 [複查] 下 |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
-|使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
+|使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 是的 <sup>\*</sup>                                                        |
 |[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Word 和 PowerPoint 的預覽：向裡 [ (預覽的現有頻道) ](https://office.com/insider) | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |支援標籤和受保護檔上的[AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)和[合著](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
+
+**註腳：**
+
+<sup>\*</sup> 目前不包含調整文字可移除標籤或降低分類層級
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook 中的靈敏度標籤功能
 
@@ -80,10 +84,11 @@ ms.locfileid: "49371691"
 |[包含變數的動態標記](#dynamic-markings-with-variables)                                              | 在 [複查] 下                     | 在 [複查] 下                 | 在 [複查] 下         | 在 [複查] 下           | 在 [複查] 下               |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
-|使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 在 [複查] 下               |
+|使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 是               |
 |[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 在 [複查] 下                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 在 [複查] 下               |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
 |
+
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office 內建標籤用戶端和其他標記解決方案
 
@@ -199,7 +204,7 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 如果外部使用者在 Azure Active Directory 中沒有帳戶，您可以在租使用者中為這些使用者建立來賓帳戶。 若為其電子郵件地址，您可以指定任何已使用的電子郵件地址。 例如，其 Gmail 位址。 您也可以使用此來賓帳戶，存取 SharePoint 或 OneDrive 中的共用檔，以 [SharePoint 和 OneDrive 中的 Office 檔案已啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
 
-外部使用者也可以在使用 Microsoft 365 應用程式時，將 microsoft 帳戶用於加密檔，但在 Windows 上) [舊的 Office 365 應用程式](https://docs.microsoft.com/deployoffice/name-change) (之前，在 Android (版本 13029 +) 及 iOS (版本 1385219 +) 。 MacOS 尚不支援此功能。 例如，某人與他們共用加密檔，加密設定會指定其 Gmail 電子郵件地址。 此使用者可建立其自己的 Microsoft 帳戶，其使用 Gmail 電子郵件地址。 然後，使用此帳戶登入後，他們就可以開啟檔，並根據為該使用者指定的使用限制來進行編輯。 如需此案例的逐步範例，請參閱 [開啟和編輯受保護的檔](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
+外部使用者也可以使用 microsoft 帳戶來加密檔，當其使用 Microsoft 365 (應用程式時，在 Windows 上) 舊版本的 [Office 365 應用程式](https://docs.microsoft.com/deployoffice/name-change) ，以及 macOS (版本 16.42 +) ，Android (版本 13029 +) ，以及 iOS (版本 2.42 +) 。 例如，某人與他們共用加密檔，加密設定會指定其 Gmail 電子郵件地址。 此使用者可建立其自己的 Microsoft 帳戶，其使用 Gmail 電子郵件地址。 然後，使用此帳戶登入後，他們就可以開啟檔，並根據為該使用者指定的使用限制來進行編輯。 如需此案例的逐步範例，請參閱 [開啟和編輯受保護的檔](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
 
 > [!NOTE]
 > Microsoft 帳戶的電子郵件地址必須符合所指定的電子郵件地址，以限制加密設定的存取權。
