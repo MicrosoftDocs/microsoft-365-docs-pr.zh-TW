@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 您可以使用 Office 365 安全性與合規性中心或 Microsoft 365 合規性中心以搜尋整合的稽核記錄，檢視貴組織中的使用者和系統管理員活動。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: aa47cc0c460e77a6faadd5cb2ff7d46c62ed88ab
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: b27ba2ff9343599dc35b1bae8cd5656197497bea
+ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376652"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "49409264"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合規性中心搜尋稽核記錄
 
@@ -291,7 +291,7 @@ ms.locfileid: "49376652"
 
 - 當您從包含來自不同服務的事件之搜尋查詢下載所有結果時，CSV 檔案中的 **AuditData** 欄會包含不同的屬性，視在何種服務中執行動作而定。例如，來自 Exchange 和 Azure AD 稽核記錄的項目包括命名為 **ResultStatus** 的屬性，它會指出執行的動作是否成功。SharePoint 中的事件不包括此屬性。同樣地，SharePoint 事件有一個識別網站 URL 中的檔案和資料夾相關活動之屬性。若要減少此行為，請考慮使用不同的搜尋，以匯出來自單一服務的活動之結果。
 
-  如需下載所有結果時，CSV 檔案 **AuditData** 欄中列出的多個屬性描述，以及各個適用的服務，請參閱[稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)。
+  如需下載所有結果時，CSV 檔案 **AuditData** 欄中列出的多個屬性描述，以及各個適用的服務，請參閱 [稽核記錄中的詳細內容](detailed-properties-in-the-office-365-audit-log.md)。
 
 ## <a name="audited-activities"></a>已稽核活動
 
@@ -438,7 +438,7 @@ ms.locfileid: "49376652"
 |已刪除檔案|FileDeleted|使用者刪除網站中的文件。|
 |已刪除資源回收筒中的檔案|FileDeletedFirstStageRecycleBin|使用者從網站的資源回收筒中刪除檔案。|
 |已刪除第二階段資源回收筒中的檔案|FileDeletedSecondStageRecycleBin|使用者從網站的第二階段資源回收筒中刪除檔案。|
-|標示為記錄的已刪除檔案|RecordDelete|已刪除標示為記錄的文件。將會把內容標示為記錄的保留標籤套用至文件時，就會將文件視為記錄。|
+|標示為記錄的已刪除檔案|RecordDelete|已删除標示為記錄的文件或電子郵件。當將項目標示為記錄的保留標籤套用於內容時，項目被視為記錄。|
 |已偵測到文件敏感度不相符|DocumentSensitivityMismatchDetected|使用者將文件上傳到受敏感度標籤保護的網站，且文件的敏感度標籤優先於網站的敏感度標籤。例如，將套用「機密」標籤的文件上傳到套用「一般」標籤的網站。<br/><br/> 如果文件套用的敏感度標籤，其優先順序低於網站所套用的敏感度標籤，則不會觸發此事件。例如，將套用「一般」標籤的文件上傳到標記為「機密」的網站。如需敏感度標籤優先順序的詳細資訊，請參閱[標籤優先順序 (順序很重要)](sensitivity-labels.md#label-priority-order-matters)。|
 |已偵測到檔案中的惡意程式碼|FileMalwareDetected|SharePoint 防毒引擎在檔案中偵測到惡意程式碼。|
 |已捨棄檔案簽出|FileCheckOutDiscarded|使用者捨棄 (或復原) 已簽出的檔案。這表示會捨棄使用者在簽出時對檔案所做的任何變更，而且不會儲存至文件庫中的文件版本。|
