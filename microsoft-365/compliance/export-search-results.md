@@ -20,14 +20,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: '將安全性 & 合規性中心的內容搜尋中的搜尋結果匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 從 SharePoint 和 OneDrive 商務網站的內容會匯出為原生 Office 檔。 '
+description: 從 Microsoft 365 規範中心的內容搜尋中，將搜尋結果匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 從 SharePoint 和 OneDrive 商務網站的內容會匯出為原生 Office 檔。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d1d657c7dc004bc587a8934292b6117ac4e023a0
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087327"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422872"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -57,7 +57,9 @@ ms.locfileid: "49087327"
   > <sup>1</sup> Microsoft 不會製造協力廠商擴充模組或 ClickOnce 應用程式的附加元件。 使用不受支援的瀏覽器匯出搜尋結果時，不支援協力廠商分機或附加元件。<br/>
   > <sup>2</sup> 由於 Microsoft Edge 的最近變更，因此預設不再啟用 ClickOnce 支援。 如需在 Edge 中啟用 ClickOnce 支援的相關指示，請參閱 [使用 Microsoft Edge 中的 EDiscovery 匯出工具](configure-edge-to-export-search-results.md)。
   
-- 當您下載「步驟2」中所述 (搜尋結果時) ，您可以在用來匯出搜尋結果的電腦上設定 Windows 登錄設定，以提升下載速度。 如需詳細資訊，請參閱 [在從 Office 365 匯出 eDiscovery 搜尋結果時，提高下載速度](increase-download-speeds-when-exporting-ediscovery-results.md)。
+- 建議您將搜尋結果下載到本機電腦。 不過，為了避免公司的防火牆或 proxy 基礎結構在下載搜尋結果時導致問題，您可以考慮將搜尋結果下載至您的網路以外的虛擬桌面。 這可能會降低匯出大量檔案時，Azure 資料連線中發生的超時。 如需虛擬桌面的詳細資訊，請參閱 [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop)。 
+
+- 若要在下載搜尋結果時改善效能，請考慮將傳回一組大型結果的搜尋分割成較小的搜尋。 例如，您可以在搜尋查詢中使用日期範圍，以傳回較小的結果集，可更快速地下載。
   
 - 當您匯出搜尋結果時，資料會暫時儲存在 microsoft 雲端中的 Microsoft 所提供 Azure 存放區位置，然後再將其下載到本機電腦。 確定您的組織可以連線到 Azure 中的端點，也就是 **\* blob.core.windows.net** (此萬用字元代表匯出) 的唯一識別碼。 搜尋結果資料會從建立後的兩周從 Azure 存放區位置刪除。 
   
@@ -136,8 +138,6 @@ ms.locfileid: "49087327"
 
 下一步是從 Azure 存放位置將搜尋結果下載到本機電腦。
   
-如先前所述，您可以在用來匯出搜尋結果的電腦上設定 Windows 登錄設定，以提升下載速度。 如需詳細資訊，請參閱 [在從 Office 365 匯出 eDiscovery 搜尋結果時，提高下載速度](increase-download-speeds-when-exporting-ediscovery-results.md)。
-  
 1. 在 [ **內容搜尋** ] 頁面上，按一下 [ **匯出** ] 索引標籤。 
   
    您可能 **需要按一下 [** 重新整理] 以更新匯出工作清單，使其顯示您建立的匯出工作。 匯出工作與對應的搜尋同名， **_Export** 附加至搜尋名稱。
@@ -165,7 +165,7 @@ ms.locfileid: "49087327"
   
     **EDiscovery 匯出工具** 會顯示匯出程式的狀態資訊，包括估計要下載之其餘專案的數位 (和大小) 。 匯出程式完成後，您可以在下載檔案的位置存取檔案。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他相關資訊
 
 以下是匯出搜尋結果的詳細資訊。
   

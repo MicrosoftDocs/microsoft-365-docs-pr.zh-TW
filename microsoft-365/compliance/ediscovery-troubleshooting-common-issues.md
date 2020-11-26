@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 瞭解您可以採取的基本疑難排解步驟，以解決 Office 365 eDiscovery 中的常見問題。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5c9d917306c1a4ffd0dd1e11e1dd87c135e94f05
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a2db7fac04f29587f451b8feff5b641624e0cf45
+ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545951"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "49422862"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>調查、疑難排解及解決常見的 eDiscovery 問題
 
@@ -83,7 +83,7 @@ EDiscovery 或內容搜尋可能會產生下列錯誤：
 
 當執行的 eDiscovery 搜尋包含 SharePoint 線上及一個用於商務位置的硬碟磁碟機時，您可能會收到錯誤， `File Not Found` 但檔案位於網站上。 此錯誤會出現在 [匯出警告] 和 [errors.csv 或略過 items.csv 中。 如果無法在網站上找到檔案，或索引已過期，就可能會發生這種情況。 以下是具有強調新增) 之實際錯誤 (的文字。
 
-> 28.06.2019 10：02：19_FailedToExportItem_Failed 下載內容。 其他診斷資訊： ContentDownloadTemporaryFailure：無法從 content 6ea52149 ExportWorker-91cd-4965-b5bb-82ca6a3ec9be-類型的檔。 相關識別碼：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894---Microsoft.SharePoint > ***未找到***ServerException： File。 在 responseStream Microsoft.SharePoint ProcessResponseStream (Stream) at Microsoft.SharePoint。 ( # A3---內部例外狀況堆疊追蹤的結尾---
+> 28.06.2019 10：02：19_FailedToExportItem_Failed 下載內容。 其他診斷資訊： ContentDownloadTemporaryFailure：無法從 content 6ea52149 ExportWorker-91cd-4965-b5bb-82ca6a3ec9be-類型的檔。 相關識別碼：3bd84722-937b-4c23-b61b-08d6fba9ec32。 ServerErrorCode：-2147024894---Microsoft.SharePoint > ***未找到*** ServerException： File。 在 responseStream Microsoft.SharePoint ProcessResponseStream (Stream) at Microsoft.SharePoint。 ( # A3---內部例外狀況堆疊追蹤的結尾---
 
 ### <a name="resolution"></a>解決方案
 
@@ -113,25 +113,25 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 ### <a name="resolution"></a>解決方案
 
-1. 請嘗試使用本文所述的步驟， [增加下載速度](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results)。
-
-2. 如果仍有問題，請連接至 [安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 然後執行下列命令：
+1. 連線至 [安全性 & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 然後執行下列命令：
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
    ```
 
-3. 在 SearchResults 和 SearchStatistics 參數中尋找要下載的資料量。
+2. 在 SearchResults 和 SearchStatistics 參數中尋找要下載的資料量。
 
-4. 執行下列命令：
+3. 執行下列命令：
 
    ```powershell
    Get-ComplianceSearchAction | FL
    ```
 
-5. 在 [結果] 欄位中，尋找已匯出的資料，並查看任何發生的錯誤。
+4. 在 [結果] 欄位中，尋找已匯出的資料，並查看任何發生的錯誤。
 
-6. 檢查您將內容匯出到的目錄中的追蹤 .log 檔案，以查看是否有任何錯誤。
+5. 檢查您將內容匯出到的目錄中的追蹤 .log 檔案，以查看是否有任何錯誤。
+
+6. 如果仍有問題，請考慮將傳回一組大型結果的搜尋分割成較小的搜尋。 例如，您可以在搜尋查詢中使用日期範圍，以傳回較小的結果集，可更快速地下載。
 
 ## <a name="errorissue-internal-server-error-500-occurred"></a>錯誤/問題：「發生內部伺服器錯誤 (500) 
 
