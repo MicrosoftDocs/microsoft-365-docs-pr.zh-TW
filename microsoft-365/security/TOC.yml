@@ -139,9 +139,11 @@
                       href: mtp/advanced-hunting-expert-training.md
                     - name: 使用共用查詢
                       href: mtp/advanced-hunting-shared-queries.md
-                    - name: 搜捕裝置、電子郵件、應用程式和身分識別
+                    - name: 跨裝置、電子郵件、應用程式和身分識別搜捕
                       href: mtp/advanced-hunting-query-emails-devices.md
-                    - name: 轉換自適用於端點的 Defender
+                    - name: 搜捕勒索軟體
+                      href: mtp/advanced-hunting-find-ransomware.md
+                    - name: 自適用於端點的 Defender 轉換
                       href: mtp/advanced-hunting-migrate-from-mdatp.md
                 - name: 使用查詢結果工作
                   href: mtp/advanced-hunting-query-results.md
