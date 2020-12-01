@@ -23,34 +23,34 @@ f1.keywords:
 - NOCSH
 description: 開始規劃從 Office 2010 伺服器和用戶端應用程式進行的升級，因為支援即將結束，且無法使用自訂支援協定。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 879aae71f703d8a26b3d6e640eff6d30a81febac
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: b9dcf5c36cff5e14828b1a6540ed920577537c49
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456348"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519774"
 ---
 # <a name="resources-to-help-you-upgrade-from-office-2010-servers-and-clients"></a>可幫助您從 Office 2010 伺服器和用戶端升級的資源
 
 *本文適用於 Microsoft 365 企業版和 Office 365 企業版。*
 
-Office 2010 和 Exchange 2010 于 **10 月13日在 2020**上達到其支援的終止。
+Office 2010 和 Exchange 2010 于 **10 月13日在 2020** 上達到其支援的終止。
 
-SharePoint 2010 和 Project Server 2010 將於 **2021 年 4月 13日**終止支援。
+SharePoint 2010 和 Project Server 2010 將於 **2021 年 4月 13日** 終止支援。
 
-規劃升級時，便是考慮改用 Microsoft 365 的好時機。
+當您規劃升級時，請考慮移至 Microsoft 365。
 
-- Microsoft 365 具有適用于 Office 2010 伺服器產品 (例如 Exchange 伺服器和 SharePoint 伺服器) 與服務 (例如 Teams 和商務用 OneDrive) 的雲端型服務。
+- Microsoft 365 針對 Office 2010 伺服器產品（例如 Exchange Server 和 SharePoint Server）和服務（如商務用小組和 OneDrive）提供雲端式服務。
 
-- Microsoft 365 E3 和 E5 隨附的 Microsoft 365 Apps 企業版（之前名為 Office 365 專業增強版），是您在本機裝置上安裝的 Office 用戶端應用程式集。 它們從 Microsoft 雲端上，持續獲取新的生產力與安全性功能更新。
+- Microsoft 365 應用程式 for enterprise (先前命名為 *Office 365 ProPlus*) （隨附于 Microsoft 365 E3 和 E5）是您在本機裝置上安裝的 office 用戶端應用程式集。 他們會從 Microsoft 雲端定期更新新的生產力和安全性功能。
 
-如需適用於 Office 2010 用戶端與伺服器和 Windows 7 的升級、移轉和移至雲端選項的視覺摘要，請參閱[終止支援海報](../downloads/Office2010Windows7EndOfSupport.pdf)。
+如需 Office 2010 用戶端和伺服器及 Windows 7 之升級、遷移和移至雲端選項的視覺摘要，請參閱 [支援海報的結尾](../downloads/Office2010Windows7EndOfSupport.pdf)。
 
-[![Office 2010 用戶端與伺服器和 Windows 7 終止支援海報的影像](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Office 2010 用戶端和伺服器及 Windows 7 海報的支援終止](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-這張單頁海報可讓您快速了解可以採取的各種方法，以防止Office 2010 用戶端與伺服器產品以及 Windows 7 進入終止支援，而海報上也會強調顯示 Microsoft 365 企業版中慣用的方式和選項支援。
+這份單頁海報摘要說明您可以採取的各種途徑，以處理 Office 2010 用戶端和伺服器產品，以及 Windows 7，避免超出支援的支援。 Microsoft 365 企業版中的慣用路徑和選項支援會反白顯示。
 
-您可以[下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf)此海報，並以 Letter、Legal 或 Tabloid (11 x 17) 格式列印此海報。
+您也可以 [下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) 此標牌，並以 letter、法律或卡片 (11 x 17) 格式來列印。
 
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Office 2010 用戶端和伺服器升級規劃
 
@@ -64,7 +64,7 @@ SharePoint 2010 和 Project Server 2010 將於 **2021 年 4月 13日**終止支�
 
 ## <a name="im-a-home-user-what-do-i-do"></a>我是家用版的使用者。 我該怎麼辦？
 
-如果您使用的是 Office 2010 住家產品和應用程式，請參閱 [此資訊](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
+如果您在家使用 Office 2010 產品和應用程式，請參閱 [此資訊](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)。
 
 ## <a name="related-topics"></a>相關主題
 

@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 深入瞭解 Office 365 所運作的 Azure 資訊保護，以及如何在中國為客戶設定它。
 monikerRange: o365-21vianet
-ms.openlocfilehash: ad3420483701c83ffef65994996047de56a7085c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7be40466c43a49cf51a2a2c1c273cef035bee831
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644660"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519338"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>由世紀和商業版產品運作之 Office 365 的 Azure 資訊保護之間的奇偶性
 
@@ -42,8 +42,6 @@ ms.locfileid: "48644660"
 - 目前無法將檔和電子郵件附件共用給商業雲端中的使用者。 這包括由使用者在商業雲端中運作的 Office 365、由商業雲端中的世紀使用者運作的非 Office 365，以及具有 RMS for 個人授權的使用者。
   
 - 具有 SharePoint (IRM 保護的網站與文件庫) 的 IRM 目前無法使用。
-  
-- 目前無法使用 Rights Management 連接器。
   
 - 目前無法使用 AD RMS 的行動裝置分機。
 

@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: 了解 Microsoft SharePoint Syntex 中的表單處理
-ms.openlocfilehash: 6c2cb2ee3c1fc621e7814f4603ad2e6f0b891701
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a1429d93d6716fe5db31f0da2a77a68dcf98cd6e
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087400"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519667"
 ---
 # <a name="form-processing-overview"></a>表單處理概觀
 
@@ -35,8 +35,6 @@ Microsoft SharePoint Syntex 使用 Microsoft PowerApps [AI Builder](https://docs
 ![文件庫檢視](../media/content-understanding/doc-lib-done.png)</br>  
 
 您使用範例檔案訓練模型，並定義要從表單中擷取的資訊。 文件的版面配置是透過訓練模型來學習的。 您只需五份表單文件即可開始使用。 AI Builder 將分析您範例檔案中的機碼值對，您也可以手動識別那些可能沒有偵測到的項。  AI Builder 讓您在範例檔案上測試模型的正確性。
-
-您至少需要五份表單文件才能開始使用。 AI 建置會分析範例檔案中的機碼值對，然後手動識別可能沒有偵測到的檔案。  AI Builder 讓您在範例檔案上測試模型的正確性。
 
 訓練併發布模型之後，您的模型會建立 [Power Automate 流程](https://docs.microsoft.com/power-automate/getting-started)。 文件上傳至 SharePoint 文件庫時，將執行流程，並擷取在模型中識別的資料。 擷取的資料會顯示在模型文件庫檢視中的欄中。
 

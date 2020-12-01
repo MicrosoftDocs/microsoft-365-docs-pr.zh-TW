@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: 判斷您的承租人和使用者是否符合需求，讓您可以使用集中式部署來部署 Office 增益集。
-ms.openlocfilehash: af7a127d438e81d6ecd025b6a71b9d7e5df2ecc8
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: 04c5f9090ca788f00f2d17d3af59e8022195e9be
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681621"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519362"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>判斷集中式部署的增益集是否適用于您的組織
 
@@ -45,7 +45,7 @@ ms.locfileid: "48681621"
   
 ## <a name="requirements"></a>需求
 
-[！注意] 增益集的集中式部署需要使用者使用 Microsoft 365 Apps 365 for enterprise 或 Microsoft 365 for business (，並使用其組織識別碼) 登入 Office，並擁有 Exchange Online 和 active Exchange Online 信箱。 您的訂閱目錄必須是 in 或同盟至 Azure Active Directory。
+集中式載入增益集需要使用者使用 Microsoft 365 Enterprise SKUs： E3/E5/F3 或商務 SKUs：商務基本、商務標準、商務精品 (和使用組織識別碼) 登入 Office，並擁有 Exchange Online 和 active Exchange Online 信箱。 您的訂閱目錄必須是 in 或同盟至 Azure Active Directory。
 您可以在下面查看 Office 和 Exchange 的特定需求，或使用 [集中式部署相容性檢查](#centralized-deployment-compatibility-checker)程式。
 
 [集中式部署] 不支援下列項目：
@@ -55,17 +55,17 @@ ms.locfileid: "48681621"
 - 增益集部署至部署信箱的 Exchange
 - 將增益集部署到 SharePoint  
 - 小組應用程式
-- 部署元件物件模型 (COM) 或 Visual Studio Tools for Office (VSTO) 增益集
-- 不包含 Exchange 的 Microsoft 365 部署（例如 Microsoft 365 應用程式的企業版）
+- 部署元件物件模型 (COM) 或 Visual Studio Tools for Office (VSTO) 增益集。
+- 不包含 Exchange Online 的 Microsoft 365 部署 SKUs （例如，Microsoft 365 Apps for Business 和 Microsoft 365 Apps for Enterprise）。
 
 ### <a name="office-requirements"></a>Office 需求
 
 - 若為 Word、Excel 及 PowerPoint 增益集，您的使用者必須使用下列其中一項：
-  - 在 Windows 裝置上，microsoft 365 應用程式的1704或更新版本或更新版本，適用于 microsoft 365 for enterprise 或 Microsoft 365 for business。
+  - 在 Windows 裝置上，版本1704或更新版本的 Microsoft 365 Enterprise SKUs： E3/E5/F3 或商務 SKUs：商務用 Basic、商務標準、商務津貼。
   - 在 Mac 上，版本15.34 或更新版本。
 
 - 對於 Outlook，您的使用者必須使用下列其中一項： 
-  - Microsoft 365 應用程式版本1701或更新版本，適用于 microsoft 365 for enterprise 或 Microsoft 365 for business。
+  - 版本1701或更新版本的 Microsoft 365 Enterprise SKUs： E3/E5/F3 或商務 SKUs：商務用 Basic、商務標準、商務津貼。
   - Office Professional Plus 2019 或 Office Standard 2019 的版本1808或更新版本。
   - 16.0.4494.1000 或更新版本的 Office Professional Plus 2016 (MSI) 或 Office Standard 2016 (MSI) \*
   - 15.0.4937.1000 或更新版本的 Office Professional Plus 2013 (MSI) 或 Office Standard 2013 (MSI) \*
@@ -74,20 +74,6 @@ ms.locfileid: "48681621"
 - 2.2.145 或更新版本的 Outlook mobile for Android 
     
     * MSI 版本的 Outlook 會在適當的 Outlook 功能區中顯示系統管理員安裝的增益集，而不是「我的增益集」一節。
-    
-
-#### <a name="find-out-if-microsoft-365-apps-for-enterprise-is-installed"></a>確定是否已安裝適用于企業的 Microsoft 365 應用程式
-
-若要使用 Microsoft 365 應用程式的企業版，使用者必須擁有 Microsoft 365 帳戶，且必須已獲指派授權。 如需詳細資訊，請參閱適用 [于企業的 Microsoft 365 應用程式概述](https://go.microsoft.com/fwlink/p/?linkid=846328)。
-
-偵測使用者是否已安裝 Microsoft 365 應用程式並最近使用它的最簡單方法，就是使用 microsoft Office 啟用報告，該報告可在 Microsoft 365 系統管理中心中取得。 報告提供過去7天、30天、90天或180天內，已為企業版啟用 Microsoft 365 應用程式的所有使用者清單。 對於集中式部署用途而言，Windows 或 Mac 的電腦版啟用數是報告中的重要欄。 您可以將報告匯出到 Excel。 如需報告的詳細資訊，請參閱系統 [管理中心的 microsoft 365 報告-Microsoft Office](../activity-reports/microsoft-office-activations.md)啟用。
-  
-如果您不想使用啟用報告，您可以要求使用者在其電腦上開啟 Office 應用程式（如 Word），然後選擇 [ **檔** \> **帳戶**]。 在 [ **產品資訊**] 底下，您應該會看到 [ **訂閱產品** ] 和 [ **microsoft 365 For enterprise**] 或 [microsoft 365 商務版 Premium]，類似下圖中所示。
-
-![Office 應用程式中的產品資訊](../../media/product-information-microsoft-365-enterprise.png)
-  
-如需 Microsoft 365 應用程式 enterprise 的說明，請參閱適用于 [企業的 microsoft 365 應用程式疑難排解秘訣](https://go.microsoft.com/fwlink/p/?linkid=846339)。
-
 
 ### <a name="exchange-online-requirements"></a>Exchange Online 需求
 

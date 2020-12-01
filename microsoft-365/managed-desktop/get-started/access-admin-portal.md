@@ -9,12 +9,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 66e4e5c305947f90f935563a3baf0592ce42480a
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: deeced350ad867a374a486967c2cbd278ba91710
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371667"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519326"
 ---
 # <a name="access-the-admin-portal"></a>存取管理員入口網站
 
@@ -59,7 +59,7 @@ ms.locfileid: "49371667"
 如果您需要協助指派 Azure Active Directory 角色，請參閱 [在 Azure Active directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 
 為便於管理內建角色，已為每個自訂角色建立安全性群組 (例如「新式工作場所角色–安全性管理員」 ) 。 若要將使用者指派給其中一個安全性群組，請遵循下列步驟：
-1.  移至 Azure 入口網站，並流覽至 Azure Active Directory blade。
+1.  移至 Microsoft 端點管理員入口網站
 2.  在左側選取 [群組]。
 3.  搜尋新式的工作區角色，然後選取與您要指派之角色相關聯的群組。 
 4.  選取左側的 [成員]，然後選取 [+ 在命令列上新增成員]。

@@ -13,27 +13,39 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: 監視寄件者或寄件者對具有高業務影響之帳戶的失敗及延遲的電子郵件。
-ms.openlocfilehash: ce78316290f18f06337adc0e78a1b8992be7b425
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bc191873b3bbdcd84122a5430adeffe2b8c29fb1
+ms.sourcegitcommit: 5ce64d510b15c6e2df32b78e6086f77156731e3c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644581"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "49477610"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>管理及監視優先順序帳戶
 
-在 Microsoft 365 組織的系統管理員中，您現在可以監控傳送給使用者的失敗或延遲的電子郵件訊息，其具有高業務影響，例如 CEO。 您可以將使用者新增至您的優先順序帳戶清單以啟用此功能。 優先順序帳戶是執行組織時必不可少的帳戶。 新增具有敏感或高優先順序資訊存取權、主管、主管或其他使用者。
+在每個 Microsoft 365 組織中，有重要的人員，也就是主管、領導者、主管或其他具有敏感、專有或高優先順序資訊存取權的使用者。
 
-## <a name="access-priority-accounts"></a>存取優先順序帳戶
+為了協助您的組織保護這些帳戶，您現在可以將特定使用者指定為優先順序帳戶，並利用可提供額外保護的應用程式特定功能。 在未來，其他應用程式和功能將支援優先順序帳戶，若要開始，我們已宣告兩項功能： **優先順序帳戶保護** 和 **優質郵件流程監控**。
 
-本主題中所述的優先順序帳戶功能僅適用于符合下列兩項需求的組織：
+- **優先順序帳戶保護** -Microsoft Defender for office 365 (過去是 office 365 的「高級威脅防護」) 支援優先順序帳戶，作為可在警示、報告和調查篩選中使用的標記。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的使用者標記](https://docs.microsoft.com/microsoft-365/security/office-365-security/user-tags?view=o365-worldwide)。
+- **優質郵件流程監控** -狀況良好的郵件流程對商務成功來說可能很重要，且傳遞延遲或失敗可能對業務造成負面影響。 您可以針對失敗或延遲的電子郵件選擇臨界值，當超過該臨界值時接收通知，然後查看優先順序帳戶的電子郵件問題報告。 如需詳細資訊，請參閱 [新式 EAC 中「優先順序帳戶」報告的電子郵件問題](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。
 
-- Office 365 E3 或 Microsoft 365 E3，或 Office 365 E5 或 Microsoft 365 E5。
-- 至少10000個授權，以及至少50個每月使用中 Exchange Online 使用者。
+## <a name="before-you-begin"></a>開始之前
 
-## <a name="add-priority-accounts-from-the-setup-page"></a>從設定頁面新增優先順序帳戶
+本主題中所述的「 **優先順序帳戶保護** 」功能僅適用于符合下列需求的組織：
 
-在 [ **設定] 頁面**中新增優先順序帳戶。
+- Microsoft Defender for Office 365 方案2，包括具備 Office 365 E3 的 office 365 E5、Microsoft 365 E5 或 Microsoft 365 E5 Security。
+
+本主題中所述的 **高級郵件流程監控** 功能僅適用于符合下列需求的組織：
+
+- 您的組織必須具有至少10000的授權計數，也就是下列產品的其中一個或下列產品的組合： Office 365 E3，Microsoft 365 E3，Office 365 E5，Microsoft 365 E5。 例如，您的組織可以有 3000 Office 365 E3 授權和 8500 Microsoft 365 E5，以提供來自合格產品的全部11500授權。
+- 您的組織必須至少要有50個月的活動 Exchange Online 使用者。
+
+> [!NOTE]
+> 您可以監控最多250個優先順序的帳戶。
+
+### <a name="add-priority-accounts-from-the-setup-page"></a>從設定頁面新增優先順序帳戶
+
+在 [ **設定] 頁面** 中新增優先順序帳戶。
 
 1. 移至 Microsoft 365 系統管理中心，網址為 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 。
 
@@ -53,23 +65,11 @@ ms.locfileid: "48644581"
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
 
-2. 移至 [**使用者**作用  >  中**使用者**]，然後選擇頁面頂端的 **[...** ]。 選取 [ **管理優先順序帳戶**]。
+2. 移至 [**使用者** 作用中  >  **使用者**]，然後選擇頁面頂端 **的 [...** ]。 選取 [ **管理優先順序帳戶**]。
 
 3. 選取 [ **新增帳戶**]，然後在 [ **新增優先順序帳戶** ] 頁面的 [搜尋] 欄位中，輸入您要新增至 [優先順序帳戶] 清單的人員名稱。
 
 4. 選取使用者，然後選擇 [ **儲存**]。
-
-## <a name="monitor-your-priority-accounts"></a>監視您的優先順序帳戶
-
-您可以在 [ **設定** ] 頁面的 [Microsoft 365 系統管理中心] 中，監控優先順序帳戶的電子郵件狀態。 您可以主動監控最多250個帳戶。
-
-1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。
-
-2. 選取 [**安裝**]，然後選擇 [**高級監控**] 旁邊的 [**查看**]，以查看優先順序帳戶的狀態。
-
-## <a name="email-issues-for-priority-accounts"></a>優先順序帳戶的電子郵件問題
-
-您可以在 Exchange 系統管理中心中，移至優先順序帳戶報告的 **電子郵件問題** ，以追蹤優先順序帳戶的電子郵件問題。 如需詳細資訊，請參閱 [優先順序帳戶的電子郵件問題](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。
 
 ## <a name="remove-a-user-from-the-priority-accounts-list"></a>從 [優先順序帳戶] 清單中移除使用者
 
@@ -80,3 +80,7 @@ ms.locfileid: "48644581"
 3. 在 [**監視您的大部分帳戶**] 頁面上，選擇 [**管理此功能**] 底下的 [**優先順序帳戶**]。
 
 4. 在 [ **優先順序帳戶** ] 頁面上，選取您要從清單中移除的使用者，然後選擇 [ **移除帳戶**]。
+
+## <a name="related-topics"></a>相關主題
+
+[在 Microsoft 365 中使用優先順序帳戶](https://techcommunity.microsoft.com/t5/microsoft-365-blog/using-priority-accounts-in-microsoft-365/ba-p/1873314)

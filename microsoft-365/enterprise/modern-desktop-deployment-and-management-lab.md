@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 了解並得知何處可以存取 Windows 和 Office 部署的 Lab Kit。
-ms.openlocfilehash: bf49a815c0d3d952187f863120865ab3aa4674fc
-ms.sourcegitcommit: cd11588b47904c7d2ae899a9f5280f93d3850171
+ms.openlocfilehash: 65c251b2cd161687eb0a2e9c7ece29f453fcaae8
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "48171407"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519619"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows 和 Office 部署實驗室套件
 
@@ -34,9 +34,9 @@ ms.locfileid: "48171407"
 
 實驗室可讓您自動佈建虛擬實驗室環境，包括網域結合的桌面用戶端、網域控制站、網際網路閘道，以及完整設定的 Configuration Manager 執行個體。 實驗室包含下列產品的最新評估版本：
 
-  - 新增！ Windows 10 企業版 (版本 2004)
+  - 新增！ Windows 10 企業版，版本20H2
   - Windows 7 企業版
-  - 新增！ Microsoft Endpoint Configuration Manager，版本2002
+  - Microsoft Endpoint Configuration Manager，版本2002
   - Windows Assessment and Deployment Kit for Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -90,11 +90,11 @@ ms.locfileid: "48171407"
 ### <a name="deploy-windows-virtual-desktop"></a>部署 Windows 虛擬桌面  
 - Prepare、deploy、optimize
  
-### <a name="download-the-windows-and-office-deployment-lab-kit"></a>下載 Windows 和 Office 部署的 Lab Kit
+## <a name="download-the-windows-and-office-deployment-lab-kit"></a>下載 Windows 和 Office 部署的 Lab Kit
 
 [下載 Windows 和 Office 部署的 Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit)。
 
-*請使用廣泛的頻寬下載此內容，以增強您的下載體驗，並允許自動布建的30-45 分鐘。實驗室環境至少需要 16 GB 的可用記憶體和 150 GB 可用磁碟空間。為了達到最佳效能，建議使用 32 GB 的可用記憶體。實驗室到期2020年12月5日。在到期之前會發佈新的版本。*
+* 請使用廣泛的頻寬下載此內容，以增強下載體驗，並允許自動布建的30-45 分鐘。 實驗室環境至少需要 16 GB 的可用記憶體和 300 GB 可用磁碟空間。 為了達到最佳效能，建議使用 32 GB 的可用記憶體。 實驗室于2020年2月到期。 在到期之前會發佈新的版本。
 
 ## <a name="additional-guidance"></a>其他指引
 
