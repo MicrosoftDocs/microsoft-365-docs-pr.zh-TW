@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: 瞭解如何使用 PowerShell 在您的 Microsoft 365 環境中管理 Exchange Online 多地理位置設定。
-ms.openlocfilehash: c9219d29a1fdae68075d296404a6c2aeab30f1aa
-ms.sourcegitcommit: f941495e9257a0013b4a6a099b66c649e24ce8a1
+ms.openlocfilehash: 63eb1957611fd57e216012435188a6ddd1b232d3
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993373"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552004"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>管理多地理位置環境中的 Exchange Online 信箱
 
@@ -37,7 +37,9 @@ Exchange Online PowerShell 是在您的 Microsoft 365 環境中查看及設定�
 
 Microsoft 365 或 Microsoft 365 GCC 客戶通常不需要使用 _ConnectionUri_ 參數以連線至 Exchange Online PowerShell。 不過，若要連線至特定地理位置，您必須使用 _ConnectionUri_ 參數，這樣您就可以 `?email=<emailaddress>` 在值中使用。
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell-using-multi-factor-authentication-mfa"></a>使用多重要素驗證，在 Exchange Online 中連線到地理位置 PowerShell (MFA) 
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>連接至 Exchange Online 中的地理位置 PowerShell
+
+下列連線指示適用于已設定或未針對多重要素驗證 (MFA) 進行的帳戶。
 
 1. 在 Windows PowerShell 視窗中，執行下列命令來載入 EXO V2 模組：
 
@@ -47,31 +49,11 @@ Microsoft 365 或 Microsoft 365 GCC 客戶通常不需要使用 _ConnectionUri_ 
 
 2. 在下列範例中，admin@contoso.onmicrosoft.com 是系統管理員帳戶，而目標地理位置是信箱 olga@contoso.onmicrosoft.com 所在的位置。
 
-  ```powershell
-  Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-  ```
-
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell-without-using-mfa"></a>在未使用 MFA 的情況下，連線至 Exchange Online PowerShell 中的地理位置
-
-1. 在 Windows PowerShell 視窗中，執行下列命令來載入 EXO V2 模組：
-
    ```powershell
-   Import-Module ExchangeOnlineManagement
+   Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
 
-2. 執行下列命令：
-
-   ```powershell
-   $UserCredential = Get-Credential
-   ```
-
-   在隨即出現的 **[Windows PowerShell 認證要求]** 對話方塊中，輸入您的公司或學校帳戶和密碼，然後按一下 **[確定]** 。
-
-3. 在下列範例中，目標地理位置是信箱 olga@contoso.onmicrosoft.com 所在的位置。
-
-   ```powershell
-   Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
-   ```
+3. 在出現的提示中輸入 admin@contoso.onmicrosoft.com 的密碼。 如果為 MFA 設定帳戶，您也需要輸入安全性代碼。
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>檢視您的 Exchange Online 組織中設定的可用地理位置
 
@@ -93,11 +75,11 @@ Get-OrganizationConfig | Select DefaultMailboxRegion
 
 Exchange Online PowerShell 中的 **Get-Mailbox** Cmdlet 會顯示信箱上的下列多地理位置相關屬性：
 
-- **資料庫** ：與地理位置代碼對應的資料庫名稱前 3 個字母，它會告知您信箱目前所在的位置。 若為線上封存信箱，則應該使用 **ArchiveDatabase** 屬性。
+- **資料庫**：與地理位置代碼對應的資料庫名稱前 3 個字母，它會告知您信箱目前所在的位置。 若為線上封存信箱，則應該使用 **ArchiveDatabase** 屬性。
 
-- **MailboxRegion** ：指定系統管理員所設定的地理位置代碼 (從 Azure AD 中的 **PreferredDataLocation** 同步處理)。
+- **MailboxRegion**：指定系統管理員所設定的地理位置代碼 (從 Azure AD 中的 **PreferredDataLocation** 同步處理)。
 
-- **MailboxRegionLastUpdateTime** ：指出 MailboxRegion 的上次更新時間 (自動或手動)。
+- **MailboxRegionLastUpdateTime**：指出 MailboxRegion 的上次更新時間 (自動或手動)。
 
 若要查看信箱的這些屬性，請使用下列語法：
 
@@ -186,7 +168,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 7. 移除與信箱相關聯的使用者帳戶，將信箱停用停用。 如需相關指示，請參閱 [刪除組織中的使用者](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)。 此步驟也會為其他用途發佈 Exchange Online Plan 2 授權。
 
-**附注** ：當您將非使用中的信箱移至不同的地理位置時，您可能會影響內容的搜尋結果，或從先前的地理位置搜尋該信箱的功能。 如需詳細資訊，請參閱 [在多地理位置環境中搜尋和匯出內容](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments)。
+**附注**：當您將非使用中的信箱移至不同的地理位置時，您可能會影響內容的搜尋結果，或從先前的地理位置搜尋該信箱的功能。 如需詳細資訊，請參閱 [在多地理位置環境中搜尋和匯出內容](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments)。
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>在特定地理位置建立新的雲端信箱
 
@@ -219,7 +201,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
 如需建立新的使用者帳戶和在 Azure AD PowerShell 中尋找 LicenseAssignment 值的詳細資訊，請參閱[使用 PowerShell 建立使用者帳戶](create-user-accounts-with-microsoft-365-powershell.md)和[使用 PowerShell 檢視授權與服務](view-licenses-and-services-with-microsoft-365-powershell.md)。
 
 > [!NOTE]
-> 如果您使用 Exchange Online PowerShell 來啟用信箱，並且需要直接在 **PreferredDataLocation** 中指定的地理位置建立信箱，則必須直接對雲端服務使用 Exchange Online Cmdlet，例如 **Enable-Mailbox** 或 **New-Mailbox** 。 如果您使用內部部署 Exchange PowerShell 中的 **Enable-RemoteMailbox** Cmdlet，則會在中央地理位置建立信箱。
+> 如果您使用 Exchange Online PowerShell 來啟用信箱，並且需要直接在 **PreferredDataLocation** 中指定的地理位置建立信箱，則必須直接對雲端服務使用 Exchange Online Cmdlet，例如 **Enable-Mailbox** 或 **New-Mailbox**。 如果您使用內部部署 Exchange PowerShell 中的 **Enable-RemoteMailbox** Cmdlet，則會在中央地理位置建立信箱。
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>將特定地理位置中的現有內部部署信箱上線
 
@@ -239,7 +221,7 @@ New-MsolUser -UserPrincipalName ebrunner@contoso.onmicrosoft.com -DisplayName "E
    $RC = Get-Credential
    ```
 
-4. 在 Exchange Online PowerShell 中，建立新的 **New-MoveRequest** ，類似以下範例：
+4. 在 Exchange Online PowerShell 中，建立新的 **New-MoveRequest**，類似以下範例：
 
    ```powershell
    New-MoveRequest -Remote -RemoteHostName mail.contoso.com -RemoteCredential $RC -Identity user@contoso.com -TargetDeliveryDomain <YourAppropriateDomain>

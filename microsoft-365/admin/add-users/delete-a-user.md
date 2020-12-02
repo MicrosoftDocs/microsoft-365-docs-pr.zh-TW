@@ -2,8 +2,8 @@
 title: 刪除貴組織中的使用者
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: 瞭解如何刪除使用者帳戶。 決定要如何處理使用者的電子郵件和 OneDrive 內容。 並決定是否要保留產品授權或停止付款。
-ms.openlocfilehash: bcccaa13614114c9588c43d857336bce44a84147
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 45cf8b9173a3a4260fe664b809f47ab14b57d9fe
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324557"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551373"
 ---
 # <a name="delete-a-user-from-your-organization"></a>刪除貴組織中的使用者
   
@@ -54,7 +54,7 @@ ms.locfileid: "47324557"
 |電子郵件  <br/> | 授與另一個使用者對已刪除使用者之電子郵件的存取權，會將刪除的使用者信箱轉換成共用信箱。 然後新的信箱擁有者可以存取信箱，並監視新的電子郵件。 您也會有下列選項：  <br/>  <br/>變更顯示名稱-建議您變更顯示名稱，以便在作用中 **使用者** 清單中識別共用信箱。  <br/>  開啟自動回復-我們已經為您撰寫了禮貌的自動回復。 您可以將不同的自動回復傳送給組織內的人員，以及組織外的人員。  <br/> <br/> 清除別名-別名是使用者的其他電子郵件地址。 有些組織並未使用它們，否則您不需要在這裡做任何其他事情。 如果使用者確實有別名，我們建議您將其移除，這樣您就可以重複使用這些電子郵件地址。 否則，您無法重複使用這些電子郵件地址，直到已刪除信箱的保留期間已經過去為止。 根據預設，已刪除的信箱可復原30天。 如需詳細資訊，請參閱  [刪除或還原 Exchange Online 中的使用者信箱](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox)。 <br/> |
 |Active Directory  <br/> |如果您的公司使用與 Azure AD 同步處理的 **Active Directory** ，您必須從 Active Directory 中刪除使用者帳戶。 您無法透過 Office 365 執行這個動作。 如需相關指示，請參閱 [刪除使用者帳戶](https://go.microsoft.com/fwlink/p/?linkid=841808)。  <br/> |
 
-### <a name="get-started"></a>開始使用
+### <a name="get-started"></a>入門
 
 由於引導體驗逐步逐步完成刪除使用者的步驟，以下是如何開始的方式。
 
@@ -121,7 +121,7 @@ ms.locfileid: "47324557"
 
 4. 在 [ **移除授權** ] 窗格中的 [ **新數量**] 底下的 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數。 例如，如果您有100授權，而且想要移除五個，請輸入95。
 
-5. 選取 [儲存]****。
+5. 選取 **[儲存]**。
 
 稍後當您執行步驟以將其他人員新增至您的公司時，系統會提示您同時購買授權，只需一個步驟即可！
 

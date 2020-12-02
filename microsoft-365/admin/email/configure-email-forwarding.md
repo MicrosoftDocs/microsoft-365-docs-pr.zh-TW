@@ -2,8 +2,8 @@
 title: 設定電子郵件轉寄
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 使用 Office365 設定電子郵件轉寄至一或多個電子郵件帳戶。
-ms.openlocfilehash: d19e2c533be6fac927bdf2aa65d72acab9fad6f6
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645524"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551829"
 ---
 # <a name="configure-email-forwarding"></a>設定電子郵件轉寄
 
@@ -45,7 +45,7 @@ ms.locfileid: "48645524"
 
  在您設定電子郵件轉發之前，請注意下列事項： 
 
-- 一旦您設定了電子郵件轉寄功能，只會 fowarded 傳送給*寄件者*信箱的**新**電子郵件。 
+- 一旦您設定了電子郵件轉寄功能，就只會轉寄傳送給 *寄件者* 信箱的 **新** 電子郵件。 
     
 - 電子郵件轉寄要求 [  *寄件者*  ] 帳戶具有授權。 如果您正在設定電子郵件轉寄功能，因為使用者已離開您的組織，另一個選項是 [將其信箱轉換成共用信箱](convert-user-mailbox-to-shared-mailbox.md)。 這樣可以讓數個人員存取它。 不過，共用信箱不能超過50GB。 
     

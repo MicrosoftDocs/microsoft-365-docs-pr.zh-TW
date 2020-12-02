@@ -2,8 +2,8 @@
 title: 設定商務用 Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sirkkuw
+author: Sirkkuw
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,12 +26,12 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: 瞭解如何設定您的 Microsoft 商務進階版、Microsoft 365 商務標準版、Microsoft 365 商務基本版、Microsoft 365 Apps 商務版或 Office 365 教育版訂閱。
-ms.openlocfilehash: f832272aff5ba9c657eb8a6f58f3d9c330d7700c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c44f0046bc1f0a81ecee85de5c59ddbc854f33ac
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644444"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551805"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>設定商務用 Microsoft 365
 

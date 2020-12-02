@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 行動人員經歷生產力分數的詳細資料。
-ms.openlocfilehash: f40984b3c053dcb976c901830bf796e3b7297f2d
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: e37d5ff0377163bea270b1d16e8b4fddae9099b4
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804778"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551860"
 ---
 # <a name="mobility--people-experiences"></a>行動性–人員經驗
 
-生產力分數可協助組織使用有關人員如何使用 Microsoft 365 應用程式和支援技術經驗的衡量方式，來變換工作的運作方式。 分數會反映您的組織&#39;人員和技術經驗類別的效能，並將您的分數與像您的組織相比較。 「團隊合作」類別是「人員經驗」的一部分度量。 若要深入瞭解，請參閱 [生產力評分一覽](productivity-score.md) 。
+生產力分數可讓您的組織如何使用 Microsoft 365 及其技術，以取得數位轉換的經驗。 貴組織的分數反映人員和技術經驗度量，可與組織 emc 中大小類似的基準，進行比較。 行動性類別屬於人員經驗。 若要深入瞭解，請參閱 [生產力評分一覽](productivity-score.md) 。
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>為什麼您的組織&#39;的行動分數重要
 
@@ -56,19 +56,20 @@ Microsoft 365 可讓使用者跨應用程式（包括 Microsoft Outlook、Word�
 
 #### <a name="trend-visualization-of-the-primary-insight"></a>主要洞察力的趨勢視覺化
 
-:::image type="content" source="../../media/mobility-primary.png" alt-text="圖表顯示行動的主要洞察力-人員體驗生產力分數。":::
+:::image type="content" source="../../media/mobility-primary.png" alt-text="圖表顯示使用一或多個平臺與時間的人員人數。":::
 
 此圖顯示趨勢線，其中分子是使用應用程式的人數，在過去180天內。 折線圖上的每個資料點都是過去28天的活動匯總。 每個資料點都提供在 X 軸上的每個日期的最近28天內，所有使用應用程式的所有人員的計數。
 
 ### <a name="scoring-framework"></a>計分架構
 
-行動得分是指人員是否要使用 Microsoft 365 應用程式-Outlook、小組、Word、Excel、PowerPoint、OneNote、Yammer 及 Skype 的各個平臺-桌面、web 和行動裝置。
+組織的行動得分排名 (合計) 層級的人員是否正在使用 Microsoft 365 應用程式-Outlook、團隊、Word、Excel、PowerPoint、OneNote、Yammer 及 Skype 的各個平臺-桌面、web 和行動裝置。
+在個別使用者層級不提供分數。
 
 ## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>探索您的組織如何跨平臺和位置運作
 
 ### <a name="use-of-outlook-across-platforms"></a>跨平臺使用 Outlook
 
-:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="圖表顯示行動的主要洞察力-人員體驗生產力分數。":::
+:::image type="content" source="../../media/outlook-across-platforms.png" alt-text="顯示在多個平臺上使用 Outlook 的使用者數目的圖表。":::
 
 1. **標頭：** 顯示 Outlook 上使用 Outlook 的使用者在多個平臺上所占的百分比。
 2. **Body：** 提供在行動裝置上使用 Outlook 的值的相關資訊，以協助保持從電子郵件上任何地方連線。
@@ -89,7 +90,7 @@ Microsoft 365 可讓使用者跨應用程式（包括 Microsoft Outlook、Word�
 
 ### <a name="use-of-teams-across-platforms"></a>跨平臺使用團隊
 
-:::image type="content" source="../../media/teams-across-platforms.png" alt-text="圖表顯示行動的主要洞察力-人員體驗生產力分數。":::
+:::image type="content" source="../../media/teams-across-platforms.png" alt-text="顯示在多個或單一平臺上使用團隊之人數的圖表。":::
 
 1. **標頭：** 顯示 Microsoft 小組中的作用中，在多個平臺上使用此小組的人員的百分比。
 2. **Body：** 提供在行動裝置上使用團隊的價值相關資訊，以協助使用者在任何位置工作時，維持郵件的最新狀態。
@@ -110,7 +111,7 @@ Microsoft 365 可讓使用者跨應用程式（包括 Microsoft Outlook、Word�
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>跨平臺使用 Microsoft 365 應用程式
 
-:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="圖表顯示行動的主要洞察力-人員體驗生產力分數。":::
+:::image type="content" source="../../media/microsoft365apps-platforms.png" alt-text="此圖表顯示在多部或單一平臺上使用 Microsoft 365 應用程式的人員人數。":::
 
 1. **標頭：** 顯示多個平臺上的 Microsoft 365 應用程式 (Word、Excel、PowerPoint 及 OneNote) 的活動人員百分比。
 2. **Body：** 提供值的相關資訊，讓組織中的人員能夠靈活地從任何地方存取其檔案。
@@ -123,7 +124,7 @@ Microsoft 365 可讓使用者跨應用程式（包括 Microsoft Outlook、Word�
 
 ### <a name="remote-work"></a>遠端工作
 
-:::image type="content" source="../../media/remotework-trend.png" alt-text="圖表顯示行動的主要洞察力-人員體驗生產力分數。":::
+:::image type="content" source="../../media/remotework-trend.png" alt-text="圖表，顯示在遠端、網站或兩者上工作的人員數量。":::
 
 1. **標頭：** 顯示僅從公司&#39;網路以外的住宅或地點工作之人員所占的百分比。
 2. **Body：** 著重強調可讓人員進行遠端工作，而不需要存取組織&#39;的實體辦公室的重要性。

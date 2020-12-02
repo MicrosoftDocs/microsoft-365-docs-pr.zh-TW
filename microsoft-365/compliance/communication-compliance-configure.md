@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: d41965741bc02876cde7e99904194c9f5787202a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357188"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527522"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
@@ -45,6 +45,7 @@ ms.locfileid: "49357188"
 - Microsoft 365 G5 訂閱 + Microsoft 365 G5 合規性附加元件
 - Microsoft 365 G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
 - Office 365 企業版 E5 訂閱 (付費或試用版本) 
+- Office 365 A5 訂閱 (付費或試用版本) 
 - Office 365 企業版 E3 訂閱 + Office 365 Advanced 合規性附加元件 (已無法再供新訂閱使用，請參閱記事) 
 
 必須將上述其中一個授權指派給通訊符合性原則中所含的使用者。
@@ -52,7 +53,7 @@ ms.locfileid: "49357188"
 >[!IMPORTANT]
 >Office 365 Advanced 合規性不再銷售為獨立訂閱。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
 
-如果您沒有現有的 Office 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以 [將 Microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 至現有的訂閱，或註冊 Office 365 Enterprise E5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
+如果您沒有現有的 Office 365 企業版 E5 計畫，而且想要嘗試通訊相容性，您可以 [將 Microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 至現有的訂閱，或註冊 Office 365 Enterprise E5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步驟 1 (必要) ：啟用通訊相容性的許可權
 
@@ -125,10 +126,10 @@ ms.locfileid: "49357188"
 
 使用下列圖表可協助您設定組織中的通訊遵循原則的群組：
 
-| 原則成員 | 支援的群組 | 不支援的群組 |
+| **原則成員** | **支援的群組** | **不支援的群組** |
 |:-----|:-----|:-----|
-|監督的使用者 <br> 非監督的使用者 | 通訊群組 <br> Microsoft 365 群組 | 動態通訊群組 <br> 擁有郵件功能的安全性群組 |
-| 檢閱者 | 無 | 通訊群組 <br> 動態通訊群組 <br> 擁有郵件功能的安全性群組 |
+|監督的使用者 <br> 非監督的使用者 | 通訊群組 <br> Microsoft 365 群組 | 動態通訊群組 <br> 嵌套通訊群組 <br> 擁有郵件功能的安全性群組 |
+| 檢閱者 | 無 | 通訊群組 <br> 動態通訊群組 <br> 嵌套通訊群組 <br> 擁有郵件功能的安全性群組 |
   
 當您指派原則中的通訊群組時，該原則會監控通訊群組中每個使用者的所有電子郵件和團隊聊天。 當您在原則中指派 Microsoft 365 群組時，原則會監控傳送至該群組的所有電子郵件和團隊聊天，而不是每個群組成員所收到的個別電子郵件和聊天。
 
@@ -217,7 +218,7 @@ ms.locfileid: "49357188"
 
 4. 若要啟用匿名，請選取 [ **顯示匿名版本的使用者名**]。
 
-5. 選取 [儲存]。
+5. 選取 **[儲存]**。
 
 6. 流覽至 [ **公告範本** ] 索引標籤，然後選取 [ **建立公告範本**]。
 

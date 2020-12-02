@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通訊人員經驗的詳細資料。
-ms.openlocfilehash: ba2e69659f49c90d3b65e56e54b3026c7c9ff36a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a6fccdcc7f6440195bb83949ee294bbb4fe5ce7f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123440"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527498"
 ---
 # <a name="communication--people-experiences"></a>通訊–人員經驗
 
@@ -119,9 +119,9 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
 2. **Body：** 提供在 Microsoft 小組內使用通道訊息的值資訊
 3. **視覺效果：** 中斷聊天及通道訊息的使用：
       - 傳送 **聊天訊息的人員：** 彩色部分和分數代表在 Microsoft 小組傳送郵件的人內使用聊天訊息。 分數的構造來源如下：
-        - **分子：** 過去28天內，在 Microsoft 小組傳送聊天訊息的人員
-        - **分母：** 過去28天內，使用者已在 Microsoft 小組傳送訊息
-      - 傳送 **聊天訊息的人員：** 彩色部分和分數代表在 Microsoft 小組傳送郵件的人內使用通道訊息。 分數的構造來源如下：
+        - **分子：** 在過去28天內，由 Microsoft 小組傳送聊天訊息的人員。
+        - **分母：** 過去28天內，在 Microsoft 小組中傳送郵件的人員。
+      - 傳送 **通道郵件的人員：** 彩色部分和分數代表在 Microsoft 小組傳送郵件的人內使用通道訊息。 分數的構造來源如下：
         - **分子：** 在過去28天內，由 Microsoft 小組傳送聊天訊息的人員。
         - **分母：** 過去28天內，在 Microsoft 小組中傳送郵件的人員。
 4. **查看相關內容：** 選取此連結可查看排序的影片及其他相關的說明內容。

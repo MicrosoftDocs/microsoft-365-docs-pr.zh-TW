@@ -2,8 +2,8 @@
 title: 自訂檔案儲存與共享的 SharePoint 小組網站
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: 瞭解如何使用文件庫、清單和中樞來自訂、組織和管理您的 SharePoint 小組網站。
-ms.openlocfilehash: 3eb09f0b0160333e3b17ebc5f02424ba3d24a13c
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3ef82cecf22226380fbb18492a7630aa023b4036
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906486"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525530"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>自訂您的小組網站以進行檔案儲存與共享
 
@@ -85,7 +85,7 @@ View a 錄影若要將行事曆新增至您的網站，請參閱 [建立共用�
 
 您的小組網站與網站相關聯之群組的所有成員幾乎都共用。 如果您想要有個別的網站給特定客戶，您可以建立其他小組網站，並使用 SharePoint hub 網站進行管理。 請參閱其他資訊。
   
-中樞網站可讓您新增及關聯網站。 如需詳細資訊 [，請參閱何謂 SharePoint hub site？](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f)。
+中樞網站可讓您新增及關聯網站。 如需詳細資訊，請參閱 [何謂 SharePoint hub site？](https://support.microsoft.com/office/fe26ae84-14b7-45b6-a6d1-948b3966427f)。
   
 準備好建立中樞網站，請參閱 [在 SharePoint Online 中建立 hub 網站](/sharepoint/create-hub-site)。
   
@@ -93,11 +93,11 @@ View a 錄影若要將行事曆新增至您的網站，請參閱 [建立共用�
   
 ## <a name="sharing-files-with-the-team"></a>與小組成員共用檔
 
-當檔案儲存和檔管理開始時，與您的小組和外部用戶端共用也很重要。 以下是一些主題的連結，可協助您管理使用者及共用您的資料。
+當檔案儲存和檔管理開始時，與您的小組和外部用戶端共用也很重要。 下列文章可協助您管理使用者及共用您的資料：
   
-如需與您的小組共用檔案，請參閱 [Share SharePoint files or folders In Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。
+- 如需與您的小組共用檔案，請參閱 [Share SharePoint files or folders In Microsoft 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c)。
   
-若要瞭解小組外共用，請參閱 [外部共用一覽](/sharepoint/external-sharing-overview)。
+- 若要瞭解小組外共用，請參閱 [外部共用一覽](/sharepoint/external-sharing-overview)。
   
 ## <a name="managing-users-and-groups"></a>管理使用者和群組
 
@@ -109,9 +109,9 @@ View a 錄影若要將行事曆新增至您的網站，請參閱 [建立共用�
   
 瞭解如何處理 [設定和管理存取要求](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)的存取要求。
   
-## <a name="here-are-more-topics-you-might-be-interested-in"></a>以下是更多您可能感興趣的主題
+## <a name="here-are-more-articles-you-might-be-interested-in"></a>以下是您可能會感興趣的更多文章
 
-- **在平板電腦和手機上設定 Office 應用程式** 。 您必須執行此操作，才能在平板電腦或手機上編輯儲存在小組網站上的檔案。 如果您的平板電腦或手機尚未安裝 Office App，則您只能檢視小組網站上的檔案，而無法編輯。 
+- **在平板電腦和手機上設定 Office 應用程式**。 您必須這樣做才能從平板電腦或手機編輯儲存在小組網站上的檔案。 如果您的平板電腦或手機尚未安裝 Office App，則您只能檢視小組網站上的檔案，而無法編輯。 
     
   - [使用 Microsoft 365 在 Android 上安裝及設定 Office](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     

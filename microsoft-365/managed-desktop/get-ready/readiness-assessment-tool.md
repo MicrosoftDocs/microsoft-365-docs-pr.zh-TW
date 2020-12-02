@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e2d1c68c3fe963c957e4c3e18fce441b92c96bf1
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519818"
+ms.locfileid: "49527706"
 ---
 # <a name="readiness-assessment-tool"></a>準備工作評估工具
 
@@ -22,7 +22,7 @@ ms.locfileid: "49519818"
 
 工具會檢查 Microsoft 端點管理員中的設定 (具體地說，Microsoft Intune) ，Azure Active Directory (Azure AD) 和 Microsoft 365，以確保它們能夠與 Microsoft 受管理的電腦搭配使用。 在您上次於 Azure AD 組織 (租使用者) 中執行檢查後，Microsoft 受管理的桌面會保留與這些檢查相關的資料。 12個月後，我們會將它保留在解除識別的表單中。  您可以選擇刪除我們收集的資料。
 
-具有至少 Intune 系統管理員角色的任何人都可以執行此工具，但是兩個檢查 (條件式 [存取原則](readiness-assessment-fix.md#conditional-access-policies) 和 [多重要素驗證](readiness-assessment-fix.md#multi-factor-authentication) 都需要額外的許可權。
+具有至少 Intune 系統管理員角色的任何人都可以執行此工具，但有兩個檢查 ([條件式存取原則](readiness-assessment-fix.md#conditional-access-policies) 和多 [因素驗證](readiness-assessment-fix.md#multifactor-authentication) 都需要其他許可權。
  
 評估工具會檢查下列專案：
 
@@ -39,7 +39,7 @@ ms.locfileid: "49519818"
 |註冊狀態頁面     | 確認未啟用 [註冊狀態] 頁面      |
 |Intune 登記     | 驗證 Azure AD 組織中的 Windows 10 裝置是否已自動註冊于 Intune 中         |
 |商務用 Microsoft Store     | 確認已啟用商務用 Microsoft Store，且已與 Intune 同步處理        |
-|多重要素驗證 | 驗證是否對 Microsoft Managed Desktop service 帳戶套用多重要素驗證。
+|多重要素驗證 | 驗證未套用至 Microsoft Managed Desktop 服務帳戶的多重要素驗證。
 |PowerShell 腳本     | 檢查 Windows PowerShell 腳本的指派方式， *不* 是以 Microsoft 受管理的電腦裝置為目標    |
 |區域     | 檢查 Microsoft Managed Desktop 是否支援您的地區        |
 |安全性基準     | 檢查安全性基準設定檔不是以所有使用者或所有裝置為目標。 (安全性基準原則 *不* 應以任何 Microsoft 受管理的桌面裝置為目標。 )        |
@@ -55,7 +55,7 @@ ms.locfileid: "49519818"
 |企業狀態漫遊的「Ad hoc」訂閱     | 建議您如何檢查是否 (如果設定為 "false" ) 設定為 "false" 可使企業狀態漫遊無法正常運作  |
 |企業狀態漫遊     | 建議如何檢查是否已啟用企業狀態漫遊       |
 |授權     | 檢查您是否已取得必要的 [授權](prerequisites.md#more-about-licenses)         |
-|多重要素驗證     | 檢查多重要素驗證未套用至所有使用者 (多重要素驗證不得意外套用至 Microsoft Managed Desktop service 帳戶。 ) |
+|多重要素驗證     | 檢查是否所有使用者都未套用多重要素驗證 (多重因素驗證不得意外套用至 Microsoft Managed Desktop service 帳戶。 ) |
 |安全性帳戶名稱   | 檢查沒有任何使用者名稱與 Microsoft Managed 桌面保留以供自己使用的使用者名稱衝突        |
 |安全性管理員角色     | 確認具有安全性讀取者、安全性操作員或全域讀取者角色的使用者已在 Microsoft Defender for Endpoint 中指派這些角色。         |
 |安全性預設 | 檢查您的 Azure AD 組織是否已在 Azure Active Directory 中啟用安全性預設值 |
@@ -79,3 +79,7 @@ ms.locfileid: "49519818"
 |諮詢    | 請遵循工具中的步驟，以取得註冊和使用者的最佳體驗。 您 *可以* 完成註冊，但是必須先修正這些問題，再部署第一個裝置。        |
 |未就緒 | 如果您未修正這些問題，*註冊將會失敗*。 請遵循工具中的步驟加以解決。        |
 |錯誤 | 您所使用的 Azure Active Director (AD) 角色，沒有足夠的許可權可執行這種檢查。 |
+
+## <a name="after-enrollment"></a>註冊後
+
+在 Microsoft Managed Desktop 中完成註冊後，請記得回復並調整特定的 Intune 和 Azure AD 設定。 如需詳細資訊，請參閱 [在登記後調整設定](../get-started/conditional-access.md)。

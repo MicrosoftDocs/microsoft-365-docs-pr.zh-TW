@@ -1,5 +1,5 @@
 ---
-title: 修正由整備評估工具發現的問題
+title: 修正準備工作評估工具所找到的問題
 description: 針對每個工具找到的問題所採取的詳細動作
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0459de8974fe6bae98e6984fd7dc65afeb04b4e7
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021082"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527730"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正由整備評估工具發現的問題
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正準備工作評估工具所找到的問題
 
 針對每個檢查，該工具會報告下列四個可能的結果之一：
 
@@ -120,7 +120,7 @@ Microsoft 受管理的桌面裝置必須能夠在 Intune 中註冊。
 
 **未就緒**
 
-依照 [設定註冊限制](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) 中的步驟，將設定變更為 [ **允許** ]。
+依照 [設定註冊限制](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) 中的步驟，將設定變更為 [ **允許**]。
 
 
 ### <a name="enrollment-status-page"></a>註冊狀態頁面
@@ -129,7 +129,7 @@ Microsoft 受管理的桌面裝置必須能夠在 Intune 中註冊。
 
 **未就緒**
 
-您已設定 ESP 預設設定檔來 **顯示應用程式和設定檔設定進度** 。 停用此設定，或遵循 [設定 [註冊狀態] 頁面](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步驟，確定任何 Azure AD 群組的指派均未包含 Microsoft 受管理的桌面裝置。
+您已設定 ESP 預設設定檔來 **顯示應用程式和設定檔設定進度**。 停用此設定，或遵循 [設定 [註冊狀態] 頁面](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步驟，確定任何 Azure AD 群組的指派均未包含 Microsoft 受管理的桌面裝置。
 
 **諮詢**
 
@@ -141,7 +141,7 @@ Azure AD 組織中的 Windows 10 裝置必須在 Intune 中自動註冊。
 
 **諮詢**
 
-確定 MDM 使用者範圍已設定為 **部分** 或 **全部** （非 **無** ）。 如果您選擇 [ **部分** ]，請在註冊後再進行註冊，然後選取 [ **現代工作場所-** **群組** 的所有 Azure AD 群組]。
+確定 MDM 使用者範圍已設定為 **部分** 或 **全部**（非 **無**）。 如果您選擇 [ **部分**]，請在註冊後再進行註冊，然後選取 [ **現代工作場所-** **群組** 的所有 Azure AD 群組]。
 
 
 ### <a name="microsoft-store-for-business"></a>商務用 Microsoft Store
@@ -152,14 +152,14 @@ Azure AD 組織中的 Windows 10 裝置必須在 Intune 中自動註冊。
 
 商務用 Microsoft Store 未啟用或未與 Intune 同步。 如需詳細資訊，請參閱 how [to 使用 Microsoft Intune 管理大量購買的應用程式](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) ，以及 [在裝置上安裝 Intune 公司入口網站](../get-started/company-portal.md)。
 
-### <a name="multi-factor-authentication"></a>多重要素驗證
+### <a name="multifactor-authentication"></a>多重要素驗證
 
 多重要素驗證不得意外套用至 Microsoft Managed Desktop service 帳戶。
 
 
 **未就緒**
 
-您有部分多重要素驗證 (MFA) 原則，設定為指派給所有使用者的條件式存取原則的「必要」。 變更原則，以使用以特定 Azure AD 群組為目標的工作分派，但不包括任何 Microsoft 受管理的桌面裝置。 如需詳細資訊，請參閱 [條件式存取原則](#conditional-access-policies) 和 [條件式存取：針對所有使用者需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。
+您對指派給所有使用者的條件式存取原則，將 MFA) 原則設定為「必要」，以進行某些多重要素驗證 (。 變更原則，以使用以特定 Azure AD 群組為目標的工作分派，但不包括任何 Microsoft 受管理的桌面裝置。 如需詳細資訊，請參閱 [條件式存取原則](#conditional-access-policies) 和 [條件式存取：針對所有使用者需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。
 
 **諮詢**
 
@@ -257,7 +257,7 @@ Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的
 
 **諮詢**
 
-確定 **AllowAdHocSubscriptions** 設定為 **True** 。 否則，企業狀態漫遊可能無法運作。 如需詳細資訊，請參閱 [MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
+確定 **AllowAdHocSubscriptions** 設定為 **True**。 否則，企業狀態漫遊可能無法運作。 如需詳細資訊，請參閱 [MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
 
 
 ### <a name="enterprise-state-roaming"></a>企業狀態漫遊

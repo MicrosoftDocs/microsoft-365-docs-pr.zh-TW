@@ -3,7 +3,7 @@ title: 如何選擇加入從 Microsoft Cloud Germany (Microsoft Cloud Deutschlan
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 09/30/2020
+ms.date: 12/01/2020
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '摘要： '
-ms.openlocfilehash: 41f3e928bde0b366b17f698c30f33359a471e757
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: 76cad72d742f6bf7ab6ddd1f90bfe0e5a2435df1
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327186"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552083"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何選擇加入從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 到新德國資料中心區域中的 Office 365 服務的移轉。
 
@@ -36,15 +36,15 @@ ms.locfileid: "48327186"
 
 具有在 Microsoft 雲端德國提供服務的合格客戶 (Microsoft Cloud Deutschland) 會顯示 Microsoft 365 系統管理中心的頁面，讓客戶租使用者管理員加入宣告以進行遷移。
 
-若要在 Microsoft 365 系統管理中心中存取該頁面，請在左側的 [功能窗格] 中展開 [設定]****，然後按一下 [組織設定檔]****。
+若要在 Microsoft 365 系統管理中心中存取該頁面，請在左側的 [功能窗格] 中展開 [設定]，然後按一下 [組織設定檔]。
 
-在 [組織設定檔]**** 頁面上，往下捲動到 [從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務]**** 區段。
+在 [組織設定檔] 頁面上，往下捲動到 [從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務] 區段。
 
-如果您的組織想從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務，請按一下 [選擇加入]****。
+如果您的組織想從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務，請按一下 [選擇加入]。
  
 ![選擇加入簡介](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
-畫面右邊會顯示一個新區段，讓您接受確認。 選取切換按鈕為 [是]****，然後按一下 [儲存]****。
+畫面右邊會顯示一個新區段，讓您接受確認。 選取切換按鈕為 [是]，然後按一下 [儲存]。
  
 ![選擇加入接受](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
@@ -62,10 +62,27 @@ ms.locfileid: "48327186"
 
 客戶與合作夥伴租使用者系統管理員可以在系統管理中心內選擇是否要進行遷移，讓遷移程式可以儘早開始。
 
+
+## <a name="next-step"></a>下一步
+
+[瞭解遷移期間的客戶體驗](ms-cloud-germany-transition-experience.md)
+
 ## <a name="more-information"></a>詳細資訊
 
+開始：
+
+- [從 Microsoft Cloud Deutschland 遷移至新德文 datacenter 區域中的 Office 365 服務](ms-cloud-germany-transition.md)
 - [Microsoft Cloud Deutschland 移轉協助](https://aka.ms/germanymigrateassist)
-- [適用於 Microsoft Cloud Deutschland 客戶的 Office 365 移轉程式](https://aka.ms/office365germanymove)
-- [適用於 Microsoft Cloud Deutschland 客戶的 Dynamics 365 移轉程式](https://aka.ms/d365ceoptin)
-- [適用於 Microsoft Cloud Deutschland 客戶的 Power BI 移轉程式](https://aka.ms/pbioptin)
-- 使用「需要協助嗎？」連結來提交問題 (在 [Microsoft 365 系統管理中心](https://portal.office.de/)中)。
+- [遷移期間的客戶體驗](ms-cloud-germany-transition-experience.md)
+
+在轉換中移動：
+
+- [遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
+- [其他預備工作](ms-cloud-germany-transition-add-pre-work.md)
+- [服務](ms-cloud-germany-transition-add-general.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
+
+雲端應用程式：
+
+- [Dynamics 365 的移轉程式資訊](https://aka.ms/d365ceoptin)
+- [Power BI 移轉程式資訊](https://aka.ms/pbioptin)
+- [開始升級您的 Microsoft Teams](https://aka.ms/SkypeToTeams-Home)

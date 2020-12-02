@@ -1,5 +1,5 @@
 ---
-title: 使用腳本將使用者新增至保留在安全性 & 規範中心的核心 eDiscovery 案例中
+title: 使用腳本將使用者新增至核心 eDiscovery 案例中的保留
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
-description: 瞭解如何執行腳本，將商務網站的信箱 & OneDrive 新增至與安全性 & 合規性中心內的 eDiscovery 案例相關聯的新保留。
-ms.openlocfilehash: 454fd4ea4517a46410c9d0922cc83b141fdbd893
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+description: 瞭解如何執行腳本，將商務網站的信箱 & OneDrive 新增至與 Microsoft 365 規範中心內的 eDiscovery 案例相關聯的新保留。
+ms.openlocfilehash: 31c3bfef4eda4802618020f607bc7706780f3629
+ms.sourcegitcommit: 4a9e1b6851b988bcd31e87b184fc185be949840d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357673"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49525612"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>使用腳本將使用者新增至核心 eDiscovery 案例中的保留
 
-安全性 & 規範中心提供 PowerShell Cmdlet，可讓您自動化與建立及管理 eDiscovery 案例相關的耗時工作。 目前，使用安全性 & 合規性中心內的 eDiscovery 案例工具，將大量的保管人內容位置置於保留狀態，需要一些時間與準備工作。 例如，在您建立保留之前，您必須為想要保留的商務網站收集每個 OneDrive 的 URL。 然後，針對您想要保留的每位使用者，您必須將其信箱和其 OneDrive 的商務網站新增至保留狀態。 在未來的安全性 & 規範中心發行中，這將會變得更容易。 在此之前，您可以使用本文中的腳本來自動化此程式。
+安全性 & 合規性中心 PowerShell 提供 Cmdlet，可讓您自動化與建立及管理 eDiscovery 案例相關的耗時工作。 目前，使用安全性 & 合規性中心內的核心 eDiscovery 案例，將大量的保管人內容位置保留在暫止狀態，並準備好。 例如，在您建立保留之前，您必須為想要保留的商務網站收集每個 OneDrive 的 URL。 然後，針對您想要保留的每位使用者，您必須將其信箱和其 OneDrive 的商務網站新增至保留狀態。 您可以使用本文中的腳本來自動化此程式。
   
-腳本會提示您組織之「我的網站」網域的名稱 (例如， **contoso** in URL https://contoso-my.sharepoint.com) 、現有 eDiscovery 案例的名稱、與案例關聯之新保留的名稱、您想要保留之使用者的電子郵件地址清單，以及您想要建立查詢式保留的搜尋查詢。 然後，腳本會為清單中的每位使用者取得商務用網站 OneDrive 的 URL，並建立新的保留，然後針對清單中的每一位使用者，新增信箱及 OneDrive 的商務用網站。 腳本也會產生包含新保留相關資訊的記錄檔。
+腳本會提示您組織之「我的網站」網域的名稱 (例如， `contoso` 在 URL 中 https://contoso-my.sharepoint.com) ，現有 eDiscovery 案例的名稱、與案例關聯的新保留名稱、您想要保留之使用者的電子郵件地址清單，以及您想要建立查詢式保留的搜尋查詢。 然後，腳本會為清單中的每位使用者取得商務用網站 OneDrive 的 URL，並建立新的保留，然後針對清單中的每一位使用者，新增信箱及 OneDrive 的商務用網站。 腳本也會產生包含新保留相關資訊的記錄檔。
   
 以下是進行這種動作的步驟：
   
@@ -51,7 +51,9 @@ ms.locfileid: "47357673"
 
 - 腳本會將使用者清單新增至與現有案例關聯的新保留。 在執行腳本之前，請確定您要建立保留的大小寫與所建立的專案。
 
-- 每次執行腳本時，都會建立新的安全性 & 符合性 PowerShell 和 SharePoint 線上 PowerShell 會話。 您可以使用所有可用的 PowerShell 會話。 若要避免發生這種情況，您可以執行下列命令，以中斷使用中 PowerShell 會話的連線。
+- 本文中的腳本可在連線至安全性 & 合規性中心 PowerShell 時，支援新式驗證。 如果您是 Microsoft 365 或 Microsoft 365 GCC 組織，您可以將腳本當做-。 如果您是 Office 365 德國組織、Microsoft 365 GCC 高組織或 Microsoft 365 DoD 組織，您必須編輯腳本，以順利執行它。 具體而言，您必須編輯該行 `Connect-IPPSSession` 並使用 *ConnectionUri* 和 *AzureADAuthorizationEndpointUri* 參數 (以及組織類型的適當值) 才能連線至安全性 & 規範中心 PowerShell。 如需詳細資訊，請參閱 [Connect To Security & 合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)中的範例。
+
+- 每次執行腳本時，都會建立新的安全性 & 規範 PowerShell 和 SharePoint 線上管理命令介面會話。 您可以使用所有可用的 PowerShell 會話。 若要避免發生這種情況，您可以執行下列命令，以中斷使用中 PowerShell 會話的連線。
 
   ```powershell
   Get-PSSession | Remove-PSSession
@@ -115,21 +117,20 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
    ```powershell
    #script begin
-   " " 
+   " "
    write-host "***********************************************"
    write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
    write-host "   eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
    write-host "***********************************************"
-   " " 
-   # Get user credentials &amp; Connect to Office 365 SCC, SPO
-   $credentials = Get-Credential -Message "Specify your credentials to connect to the Security & Compliance Center and SharePoint Online"
-   $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
-   $a = Import-PSSession $s -AllowClobber
-       if (!$s)
-       {
-           Write-Error "Couldn't create PowerShell session."
-           return;
-       }
+   " "
+   # Connect to SCC PowerShell using modern authentication
+   if (!$SccSession)
+   {
+     Import-Module ExchangeOnlineManagement
+     Connect-IPPSSession
+   }
+   # Get user credentials to connect to SPO Management Shell
+   $credentials = Get-Credential -Message "Type your credentials again to connect to SharePoint Online Management Shell"
    # Load the SharePoint assemblies from the SharePoint Online Management Shell
    # To install, go to https://go.microsoft.com/fwlink/p/?LinkId=255251
    if (!$SharePointClient -or !$SPRuntime -or !$SPUserProfile)
@@ -296,7 +297,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 4. 輸入腳本提示您的資訊。
 
-   腳本會連線至安全性 & 合規性中心 PowerShell，然後在 eDiscovery 案例中建立新的保留，然後在清單中為使用者新增信箱和 OneDrive。 您可以移至安全性 & 合規性中心的 [ **eDiscovery** ] 頁面上的案例，以查看新的保留。 
+   腳本會連線至安全性 & 合規性中心 PowerShell，然後在 eDiscovery 案例中建立新的保留，然後在清單中為使用者新增信箱和 OneDrive。 您可以移至安全性 & 合規性中心的 [ **eDiscovery** ] 頁面上的案例，以查看新的保留。
 
 在腳本執行完畢後，它會建立下列記錄檔，並將其儲存至腳本所在的資料夾。
   

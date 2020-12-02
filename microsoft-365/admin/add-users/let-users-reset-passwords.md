@@ -2,8 +2,8 @@
 title: 讓使用者重設自己的密碼
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,18 +24,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: 瞭解如何使用自助密碼重設工具來重設密碼。
-ms.openlocfilehash: 7ecadaa42610e0b77dc1727c11140080bd7b1779
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bbde517858186d844412aca21f231620ed76496a
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646676"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551917"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>讓使用者重設自己的密碼
 
 做為 Microsoft 365 系統管理員，您可以讓使用者使用 [自助密碼重設工具](https://go.microsoft.com/fwlink/p/?LinkId=522677) ，這樣您就不需要重設密碼。 這可為您分擔一些工作！
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
   
 - 您可以使用任何 Microsoft 365 商務版、教育版或非 **盈利性的收費** 方案，為雲端使用者取得自助密碼重設。 它不會與 Microsoft 365 試用版搭配使用。
 
@@ -71,7 +71,7 @@ ms.locfileid: "48646676"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [**設定** \> **設定** \> **安全性 &amp; 隱私權**] 頁面。
+1. 在系統 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">管理中心</a>中，移至 [**設定** \> **設定** \> **安全性 &amp; 隱私權**] 頁面。
 
 ::: moniker-end
 

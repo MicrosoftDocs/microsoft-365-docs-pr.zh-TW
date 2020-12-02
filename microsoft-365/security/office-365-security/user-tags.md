@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 方案2中識別具有使用者標記的特定使用者群組。 標記篩選可用於 Office 365 的 Microsoft Defender 中的提醒、報告和調查，以快速識別已標記的使用者。
-ms.openlocfilehash: 14ebcebeb8081a2de341fd06facabd9f7d55b119
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123616"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49552016"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的使用者標記
 
@@ -66,9 +66,9 @@ ms.locfileid: "49123616"
 
    完成後，按 [下一步]。
 
-4. 在 [ **指派信箱** ] 頁面上，執行下列其中一個步驟：
+4. 在 [ **指派使用者** ] 頁面上，執行下列其中一個步驟：
 
-   - 按一下 [ **新增信箱**]。 在 [飛出顯示] 中，執行下列其中一個步驟，以新增個別使用者或群組：
+   - 按一下 [ **新增使用者**]。 在 [飛出顯示] 中，執行下列其中一個步驟，以新增個別使用者或群組：
      - 在方塊中按一下，然後在清單中向內移動，以選取使用者或群組。
      - 在方塊中按一下並輸入，以篩選清單並選取使用者或群組。
      - 若要新增其他值，請按一下方塊中的空白區域。

@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
 description: 'Exchange online 系統管理員會管理您組織的電子郵件和信箱。 例如，他們會在使用者的信箱中復原已刪除的郵件。 '
-ms.openlocfilehash: cd2c4c10554cbaf425fa6ae9156a8ceeb1a21503
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e332e886ca25221fefbbc5d1bb790bd4f513f00
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646700"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527510"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>關於 Exchange Online 系統管理員角色
 
@@ -34,7 +34,7 @@ ms.locfileid: "48646700"
   
  **提示**：當您將某人指派給 Exchange 系統管理員角色時，也會將其指派給服務系統管理員角色。 如此一來，他們就可以在 Microsoft 365 系統管理中心中看到重要資訊（例如 Exchange Online 服務的健康情況），以及變更和發佈通知。
   
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 以下是在指派給 Exchange 系統管理員角色時，使用者可以執行的一些主要工作：
   
@@ -44,7 +44,7 @@ ms.locfileid: "48646700"
 
 - 設定信箱功能，例如信箱共用原則：使用者如何與組織外的其他人共用行事曆和連絡人資訊。
 
-- 為某人的信箱設定「[傳送為](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)」和「[傳送 abehalf](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)」代理人。 例如，行政人員可能想要讓其助理能夠代您傳送郵件。
+- 為某人的信箱設定「[傳送為](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)」和「[代理傳送](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)者」代理人。 例如，行政人員可能想要讓其助理能夠代您傳送郵件。
 
 - [建立共用信箱](../email/create-a-shared-mailbox.md) ，讓一群組人員可以從共同的電子郵件地址監視及傳送電子郵件。
 
@@ -58,7 +58,7 @@ ms.locfileid: "48646700"
   
  例如，Exchange 系統管理員可能會將某個人員指派給「探索管理」角色群組，讓他們可以針對符合特定準則的資料執行信箱搜尋。 若要深入瞭解，請參閱 [Exchange Online 中的許可權](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) 和 [管理角色群組](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help)。
   
-## <a name="learn-about-other-admin-role"></a>深入瞭解其他系統管理員角色
+## <a name="learn-about-other-admin-roles"></a>深入瞭解其他系統管理員角色
 
 - [關於 Microsoft 365 系統管理員角色](about-admin-roles.md)
 
