@@ -14,14 +14,14 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 瞭解如何使用威脅瀏覽器和即時偵測報告，調查和回應安全規範中心中的威脅 &amp; 。
+description: 瞭解如何使用威脅瀏覽器和即時偵測報告，調查和回應安全性 & 規範中心內的威脅。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9412350384c0b2092c376db371e93fa5295c454
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 551425bf3e6b2c4fbb429dd6698b4f85e30d1ebe
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367186"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561228"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測中的視圖
 
@@ -30,7 +30,7 @@ ms.locfileid: "49367186"
 
 ![威脅總管](../../media/ThreatExplorerFirstOpened.png)
 
-[威脅瀏覽器](threat-explorer.md) (和即時偵測報告) 是強大的近即時工具，可協助安全性運作小組調查和回應安全性與 &amp; 合規性中心內的威脅。 Explorer (和即時偵測報告) 會顯示可疑惡意程式碼和網路釣魚詐騙在 Office 365 中的電子郵件和檔案中的相關資訊，以及組織的其他安全性威脅和風險。
+[威脅瀏覽器](threat-explorer.md) (和即時偵測報告) 是強大的近即時工具，可協助安全性運作小組調查和回應安全性 & 合規性中心內的威脅。 Explorer (和即時偵測報告) 會顯示可疑惡意程式碼和網路釣魚詐騙在 Office 365 中的電子郵件和檔案中的相關資訊，以及組織的其他安全性威脅和風險。
 
 - 如果您有 [Microsoft Defender For Office 365](office-365-atp.md) 方案2，則會有 Explorer。
 - 如果您有 Microsoft Defender for Office 365 方案1，則會進行即時偵測。

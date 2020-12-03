@@ -2,8 +2,8 @@
 title: 根據高級 eDiscovery 的結果決定
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 瞭解 [Advanced eDiscovery] 中的 [決定] 索引標籤可如何提供資料，以協助您決定正確的查看案例檔案集大小。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 04c6f0c8fede315f175e0ed6ae265c7463405a62
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 60213226bef1c04767d4be17a09b58d6940ac223
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528003"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562964"
 ---
-# <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>以 Advanced eDiscovery （古典）結果為基礎的決策
+# <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>以 Advanced eDiscovery (傳統) 中結果為基礎的決策
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -38,7 +38,7 @@ ms.locfileid: "46528003"
   
 - **問題**：在這裡，您可以從清單中選取感興趣的問題。 
     
-- **回顧-召回比率**：根據相關性分數，進行高級 eDiscovery 檢查的比較。 圖表中的截止點代表要檢查的檔百分比，對應至相關性分數。 這是用於相關性測試階段和用於剔除的匯出臨界值。 若要檢查的檔案數目是預設的截止點，表示重新開始和精確度之間的平衡是最佳的。 實際的截止點應該取決於目標及成本折衷（% 回顧）和風險（% 召回）等使用者。 使用此滑塊，您可以調整截止點，並查看圖表和參數的效果，調整要檢索的相關檔案的百分比，以及驗證決策之前。
+- **回顧-召回比率**：根據相關性分數，進行高級 eDiscovery 檢查的比較。 圖表中的截止點代表要檢查的檔百分比，對應至相關性分數。 這是用於相關性測試階段和用於剔除的匯出臨界值。 若要檢查的檔案數目是預設的截止點，表示重新開始和精確度之間的平衡是最佳的。 實際的截止點應該取決於目標及成本折衷 (% 考核) 和風險 (% 召回) 。 使用此滑塊，您可以調整截止點，並查看圖表和參數的效果，調整要檢索的相關檔案的百分比，以及驗證決策之前。
     
 - **參數**：檢查、召回、接下來的相關及總成本參數是與評審集相對於整個案例集合相關的累計計算統計資料。 這些參數的定義如下：
     
@@ -56,7 +56,7 @@ ms.locfileid: "46528003"
   
 ## <a name="related-topics"></a>相關主題
 
-[進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
+[Office 365 進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
   
 [瞭解相關評估](assessment-in-relevance-in-advanced-ediscovery.md)
   

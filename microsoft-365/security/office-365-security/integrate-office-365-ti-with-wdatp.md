@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 搭配使用 Microsoft Defender for Office 365 與 Microsoft Defender for Endpoint，以取得對您的裝置和電子郵件內容的威脅相關的詳細資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f668aa1234509789dacd2b018b94f1bfbc79e2c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8a598dce3a8049d97d43b742477ca8f7a2bfeadb
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357776"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561216"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>使用適用于 Office 365 的 Microsoft Defender 搭配 Microsoft Defender for Endpoint
 
@@ -47,7 +47,7 @@ ms.locfileid: "49357776"
 
 - 您的組織必須具有 Microsoft Defender for Office 365 (或 Office 365 E5) 和 Microsoft Defender for Endpoint。
     
-- 您必須是全域系統管理員，或具有安全性系統管理員角色 (例如安全 [ &amp; 規範中心](https://protection.office.com)中所指派的安全性系統管理員) 。  (參閱 [安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)) 
+- 您必須是全域系統管理員或具有安全性系統管理員角色 (例如，安全性系統管理員) 在 [安全性 & 合規性中心](https://protection.office.com)內指派。  (參閱 [安全性 & 規範中心的許可權](permissions-in-the-security-and-compliance-center.md)) 
     
 - 您必須能夠存取 [Explorer (或即時偵測) ](threat-explorer.md) 在安全性 & 規範中心和 Microsoft Defender Security center 中。
     
@@ -73,6 +73,6 @@ ms.locfileid: "49357776"
 
 [Office 365 中的威脅調查和回應功能](office-365-ti.md)
   
-[適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
+[Microsoft Defender for Office 365](office-365-atp.md)
   
-[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection)
+[Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection)

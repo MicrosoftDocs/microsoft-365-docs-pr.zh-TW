@@ -17,40 +17,41 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: 7f8337d368c5c9de7cf1d9ff90831777c0811b87
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 927b85a5c2ef14313acd5c1637f561342d71ccc0
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600468"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527568"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-In addition to using [sensitivity labels](sensitivity-labels.md) to classify and protect documents and emails, you can also use sensitivity labels to protect content in the following containers: Microsoft Teams sites, Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), and SharePoint sites. For this container-level classification and protection, use the following label settings:
+除了使用[敏感度標籤](sensitivity-labels.md)來分類及保護文件和電子郵件，您也可以使用敏感度標籤來保護下列容器中的內容：Microsoft Teams 網站、Microsoft 365 群組 ([之前的 Office 365 群組](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) 和 SharePoint 網站。 針對此容器層級分類和保護，使用下列標籤設定：
 
-- Teams 網站和 Microsoft 365 群組的隱私權 (公用或私人)
+- 小組網站和 Microsoft 365 群組的隱私權（公用或私人）
 - 外部使用者存取
+- 透過 SharePoint 網站進行外部共用 (預覽功能)
 - 從未受管理的裝置存取
 
 > [!IMPORTANT]
-> The **Access from unmanaged devices** setting works in conjunction with the SharePoint feature to [control access from unmanaged devices](/sharepoint/control-access-from-unmanaged-devices). You must configure this dependent SharePoint feature to use a sensitivity label that has this setting configured. Additional information is included in the instructions that follow.
+> **從未受管理的裝置存取** 設定可與 SharePoint 功能搭配使用以進行 [從未受管理的裝置控制存取](/sharepoint/control-access-from-unmanaged-devices)。 您必須設定這個相關的 SharePoint 功能，以使用已設定此設定的敏感度標籤。 下列指示中包含其他資訊。
 
-當您將此敏感度標籤套用至支援的容器時，標籤會自動將分類和設定的保護設定套用至網站或群組。
+當您將此敏感度標籤套用至支援的容器時，標籤會自動將分類和配置的保護設定套用至網站或群組。
 
-Content in these containers however, do not inherit the labels for the classification or settings for files and emails, such as visual markings and encryption. So that users can label their documents in SharePoint sites or team sites, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+不過，這些容器中的內容不會繼承分類的標籤或檔案和電子郵件的設定 (如視覺標記或加密)。 因此，使用者可以為其在 SharePoint 網站或小組網站中的文件加上標籤，請確定已[對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
 
 > [!NOTE]
 > 容器的敏感度標籤不支援使用 Office 365 內容傳遞網路 (CDN)。
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>在對 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站使用敏感度標籤時遇到問題嗎？
 
-Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users could see and apply sensitivity labels in their apps. For example, from Word:
+啟用容器的敏感度標籤並配置新設定的敏感度標籤前，使用者可在其應用程式中查看並套用敏感度標籤。 例如，在 Word 中：
 
 ![Word 傳統型應用程式中顯示的敏感度標籤](../media/sensitivity-label-word.png)
 
-After you enable and configure sensitivity labels for containers, users can additionally see and apply sensitivity labels to Microsoft team sites, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
+啟用並設定容器的敏感度標籤後，使用者可進一步查看並將敏感度標籤套用至 Microsoft 小組網站、Microsoft 365 群組和 SharePoint 網站。 例如，從 SharePoint 建立新的小組網站時：
 
 ![從 SharePoint 建立小組網站時的敏感度標籤](../media/sensitivity-labels-new-team-site.png)
 
@@ -58,7 +59,7 @@ After you enable and configure sensitivity labels for containers, users can addi
 
 1. 由於此功能使用 Azure AD 功能，請依照 Azure AD 文件中的指示來啟用敏感度標籤支援：[將敏感度標籤指派到 Azure Active Directory 中的 Microsoft 365 群組](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels)。
 
-2. You now need to synchronize your sensitivity labels to Azure AD. First, [connect to Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+2. 您現在需要將敏感度標籤同步處理至 Azure AD。 首先，[連線到安全性與合規性中心 PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
    例如，在您以系統管理員身分執行的 PowerShell 工作階段中，使用全域系統管理員帳戶登入。
 
@@ -68,24 +69,24 @@ After you enable and configure sensitivity labels for containers, users can addi
     Execute-AzureAdLabelSync
     ```
 
-## <a name="how-to-configure-groups-and-site-settings"></a>如何設定群組和網站設定
+## <a name="how-to-configure-groups-and-site-settings"></a>如何設定網站和群組設定
 
-Enabling sensitivity labels for containers means that you can now configure protection settings for groups and sites in the sensitivity labeling wizard. Until you enable this support, the settings are visible in the wizard but you can't configure them.
+啟用容器的 [敏感度] 標籤表示您現在可以在 [敏感度標籤] 精靈中設定群組和網站的保護設定。 直到您啟用此支援之前，您可以看到精靈中的設定但無法加以設定。
 
-1. 遵循一般指示以[建立或編輯敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，並確認已針對標籤的範圍選取 **[群組和網站]**： 
+1. 遵循一般指示以 [建立或編輯敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)，並確認已針對標籤的範圍選取 **[群組和網站]**： 
     
     ![檔案和電子郵件的敏感度標籤範圍選項](../media/groupsandsites-scope-options-sensitivity-label.png)
     
-    When only this scope is selected for the label, the label won't be displayed in Office apps that support sensitivity labels and can't be applied to files and emails. Having this separation of labels can be helpful for both users and administrators, but can also add to the complexity of your label deployment.
+    若標籤只選取這個範圍時，標籤就不會顯示在支援靈敏度標籤的 Office 應用程式中，且無法套用到檔案和電子郵件。 將標籤分開可讓使用者和系統管理員使用，但也會增加標籤部署的複雜程度。
     
-    For example, you need to carefully review your [label ordering](sensitivity-labels.md#label-priority-order-matters) because SharePoint detects when a labeled document is uploaded to a labeled site. In this sceanrio, an audit event and email is automatically generated when the document has a higher priority sensitivity label than the site's label. For more information, see the [Auditing sensitivity label activities](#auditing-sensitivity-label-activities) section on this page. 
+    例如，您必須仔細地檢查您的 [標籤排序](sensitivity-labels.md#label-priority-order-matters)，因為 SharePoint 會在標識的檔案上傳到標示的網站時加以偵測。 在此案例中，當檔案的優先順序敏感度標籤高於網站標籤時，系統會自動產生稽核活動和電子郵件。 如需詳細資訊，請參閱本頁面上的 [稽核敏感度標籤活動](#auditing-sensitivity-label-activities) 一節。 
 
 2. 然後，在 **定義群組和網站的保護設定** 頁面上，選取其中一個或兩個皆適用的可用選項：
     
-    - **隱私權和外部使用者存取設定**可設定 **[隱私權]** 和 **[外部使用者存取]** 設定。 
-    - **裝置存取和外部共用設定** 設定 **從未受管理的裝置存取** 的設定。
+    - [隱私權和外部使用者存取權設定 **]** 可設定 [隱私權 **]** 和 [外部使用者存取 **]** 設定。 
+    - [裝置存取和外部共用設定 **]** 可設定 [從已套用標籤的 SharePoint 網站控制外部共用 **]** 和 [從未受管理的裝置存取 **]** 設定。
 
-3. 如果您已選取 **[隱私權與外部使用者存取設定]**，請設置下列設定：
+3. 如果已選取 [隱私權和外部使用者存取權設定 **]**，請設定下列設定：
     
     - **隱私權**：如果您希望組織中的所有人都能存取套用此標籤的小組網站或群組，請保留 **公用** 的預設值。
         
@@ -93,28 +94,30 @@ Enabling sensitivity labels for containers means that you can now configure prot
         
         如果您想要使用敏感度標籤來保護容器中的內容，但仍讓使用者自行設定隱私權設定，則選取 **[無]**。
         
-        The settings of **Public** or **Private** set and lock the privacy setting when you apply this label to the container. Your chosen setting replaces any previous privacy setting that might be configured for the team or group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the container. After you remove the sensitivity label, the privacy setting from the label remains and users can now change it again.
+        將此標籤套用至容器時，請選取 **[公用]** 或 **[私人]** 設定以設定和鎖定隱私權設定。 您選擇的設定會取代先前為小組或群組設定的任何隱私權設定，並鎖定隱私權值，因此必須先移除容器的敏感度標籤才能變更隱私權設定。 移除敏感度標籤後，標籤的隱私權設定會保留，使用者現在便可再次變更隱私權設定。
     
-    - **外部使用者存取**：控制群組擁有者是否可以[將來賓新增至群組](/office365/admin/create-groups/manage-guest-access-in-groups)。
+    - **外部使用者存取權**：控制群組擁有者是否可以 [將來賓新增至群組](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
-4. 如果您已選取 **[裝置存取與外部使用者共用設定]**，請設置下列設定：
+4. 如果已選取 [裝置存取權和外部共用設定 **]**，請設定下列設定：
     
-    - **從未受管理的裝置存取**：此選項透過使用 Azure AD 條件式存取的 SharePoint 功能，以封鎖或限制從未受管理裝置存取 SharePoint 和 OneDrive 內容。如需詳細資訊，請參閱 SharePoint 文件中的[從未受管理的裝置控制存取](/sharepoint/control-access-from-unmanaged-devices)。您針對此標籤設定所指定的選項，相當於對網站執行 PowerShell 命令，如 SharePoint 指示的[封鎖或限制特定 SharePoint 網站或 OneDrive 的存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) \(部分機器翻譯\) 一節中的步驟 3-5 所述。
+    - **從已套用標籤的 SharePoint 網站控制外部共用**：目前處於預覽的功能，選取這個選項，然後為任何人、新的及現有的來賓、現有的來賓，或僅限您組織中的人員選取外部共用。 如需有關此組態和設定的詳細資訊，請參閱 SharePoint 文件：[開啟或關閉網站的外部共用](https://docs.microsoft.com/sharepoint/change-external-sharing-site)。
+    
+    - **從未受管理的裝置存取**：此選項透過使用 Azure AD 條件式存取的 SharePoint 功能，以封鎖或限制從未受管理裝置存取 SharePoint 和 OneDrive 內容。 如需詳細資訊，請參閱 SharePoint 文件中的[控制從未受管理的裝置存取](/sharepoint/control-access-from-unmanaged-devices)。 您為此標籤設定所指定的選項相當於執行網站的 PowerShell 命令，如 SharePoint 指示的[封鎖或限制存取特定 SharePoint 網站或 OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) 一節中的步驟 3-5 所述。
         
-        如需其他資訊，請參閱本節末尾的 [有關非管理裝置的依賴性的詳細資訊](#more-information-about-the-dependencies-for-the-unmanaged-devices-option)。
+        如需其他資訊，請參閱本節結尾的[有關未受管理裝置相依性的詳細資訊](#more-information-about-the-dependencies-for-the-unmanaged-devices-option)。
 
 > [!IMPORTANT]
-> Only these site and group settings take effect when you apply the label to a team, group, or site. If the [label's scope](sensitivity-labels.md#label-scopes) includes files and emails, other label settings such as encryption and content marking aren't applied to the content within the team, group, or site.
+> 將標籤套用至小組、群組或網站時，只有這些網站和群組設定會生效。 假如 [標籤範圍](sensitivity-labels.md#label-scopes) 包含檔案和電子郵件，其他標籤設定例如加密和內容標記，均不會套用至小組、群組或網站內的內容。
 
-If your sensitivity label isn't already published, now publish it by [adding it to a sensitivity label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). The users who are assigned a sensitivity label policy that includes this label will be able to select it for sites and groups.
+如果您的敏感度標籤尚未發佈，現在請以 [將標籤新增至敏感度標籤原則](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)進行發佈。 包含此標籤、獲指派敏感度標籤原則的使用者將可以為網站和群組選取它。
 
 ##### <a name="more-information-about-the-dependencies-for-the-unmanaged-devices-option"></a>關於 [未受管理裝置] 選項的詳細資訊
 
-If you don't configure the dependent conditional access policy for SharePoint as documented in [Use app-enforced restrictions](https://docs.microsoft.com/sharepoint/app-enforced-restrictions), the option you specify here will have no effect. Additionally, it will have no effect if it's less restrictive than a configured setting at the tenant level. If you have configured an organization-wide setting for unmanaged devices, choose a label setting that's either the same or more restrictive
+如果您未設定 SharePoint 相關條件式存取原則如 [使用應用程式強制性限制](https://docs.microsoft.com/sharepoint/app-enforced-restrictions) 中所述，您在此處指定的選項將不會產生任何影響。 此外，如果其限制低於租用戶層級所設定的設定，則不會產生任何影響。 如果您已為非受管理的裝置設定全組織的設定，請選擇相同或具有更多限制的標籤設定。
 
-For example, if your tenant is configured for **Allow limited, web-only access**, the label setting that allows full access will have no effect because it's less restrictive. For this tenant-level setting, choose the label setting to block access (more restrictive) or the label setting for limited access (the same as the tenant setting).
+例如，如果您的租使用者設定為 **允許有限的、僅限網頁存取**，則允許完全存取的標籤設定將不會產生任何影響，因為其限制較少。 針對此租使用者層級設定，請選擇標籤設定，以封鎖存取 {具有更多限制} 或限制存取 (與租使用者設定相同) 的標籤設定。
 
-Because you can configure the SharePoint settings separately from the label configuration, there's no check in the sensitivity label wizard that the dependencies are in place. These dependencies can be configured after the label is created and published, and even after the label is applied. However, if the label is already applied, the label setting won't take effect until after the user next authenticates.
+由於您可以在標籤設定外獨立設定 SharePoint 設定，因此在敏感度標籤精靈中依存關係部分不會顯示為勾選。 您可以在建立和發佈標籤之後，甚至在套用標籤之後設定這些相關性。 不過，如果已經套用標籤，在使用者下次驗證之前，標籤設定將不會生效。
 
 ## <a name="sensitivity-label-management"></a>敏感度標籤管理
 
@@ -122,7 +125,7 @@ Because you can configure the SharePoint settings separately from the label conf
 
 ### <a name="creating-and-publishing-labels-that-are-configured-for-sites-and-groups"></a>建立及發佈針對網站和群組設定的標籤
 
-When a new sensitivity label is created and published, it's visible for users in teams, groups, and sites within one hour. However, if you modify an existing label, allow up to 24 hours. Use the following guidance to publish a label for your users when that label is configured for site and group settings:
+建立並發佈新敏感度標籤後，在一個小時內小組、群組和網站中的使用者就會看到該標籤。 不過，如果您修改現有的標籤，最多需要等候 24 小時。 當標籤時是針對網站和群組進行設定時，請使用下列指導方針來為您的使用者發佈該標籤：
 
 1. 建立及設定敏感度標籤之後，請將此標籤新增至只適用一些測試使用者的標籤原則。
 
@@ -137,17 +140,17 @@ When a new sensitivity label is created and published, it's visible for users in
 
 ### <a name="modifying-published-labels-that-are-configured-for-sites-and-groups"></a>修改針對網站和群組設定的已發佈標籤
 
-As a best practice, don't change the site and group settings for a sensitivity label after the label has been applied to teams, groups, or sites. If you do, remember to wait for 24 hours for the changes to replicate to all containers that have the label applied.
+最佳做法是，不要在將標籤套用至小組、群組或網站之後，變更敏感度標籤的網站和群組設定。 如果您這麼做，請等候最多 24 小時的時間，讓變更複寫至已套用標籤的所有容器。
 
-此外，如果您的變更包括 [外部使用者存取]**** 設定：
+此外，如果您的變更包括 [外部使用者存取] 設定：
 
-- The new setting applies to new users but not to existing users. For example, if this setting was previously selected and as a result, guest users accessed the site, these guest users can still access the site after this setting is cleared in the label configuration.
+- 新設定會套用至新使用者，但不會套用至現有使用者。 例如，如果先前已選取此設定，且因此來賓使用者可存取網站，在標籤設定中清除此設定之後，這些來賓使用者仍然可以存取網站。
 
 - 群組屬性 hiddenMembership 和 roleEnabled 的隱私權設定不會更新。
 
 ### <a name="deleting-published-labels-that-are-configured-for-sites-and-groups"></a>刪除針對網站和群組設定的已發佈標籤
 
-If you delete a sensitivity label that has the site and group settings enabled, and that label is included in one or more label policies, this action can result in creation failures for new teams, groups, and sites. To avoid this situation, use the following guidance:
+如果您刪除已啟用網站和群組設定的敏感度標籤，且該標籤包含在一或多個標籤原則中，此動作可能會導致新小組、群組和網站建立失敗。 若要避免此情況，請使用下列指導方針：
 
 1. 從包含標籤的所有標籤原則中移除敏感度標籤。
 
@@ -170,7 +173,7 @@ If you delete a sensitivity label that has the site and group settings enabled, 
 
 ### <a name="apply-sensitivity-labels-to-microsoft-365-groups"></a>將敏感度標籤套用至 Microsoft 365 群組
 
-You're now ready to apply the sensitivity label or labels to Microsoft 365 groups. Return to the Azure AD documentation for instructions:
+您現在可以將敏感度標籤或標籤套用至 Microsoft 365 群組。 如需指示，請返回 Azure AD 文件：
 
 - [在 Azure 入口網站中將標籤指派至新群組](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#assign-a-label-to-a-new-group-in-azure-portal)
 
@@ -180,7 +183,7 @@ You're now ready to apply the sensitivity label or labels to Microsoft 365 group
 
 ### <a name="apply-a-sensitivity-label-to-a-new-team"></a>將敏感度標籤套用至新的小組
 
-Users can select sensitivity labels when they create new teams in Microsoft Teams. When they select the label from the **Sensitivity** dropdown, the privacy setting might change to reflect the label configuration. Depending on the external users access setting you selected for the label, users can or can't add people outside the organization to the team.
+當使用者在 Microsoft Teams 中建立新小組時，可選取敏感度標籤。 當使用者從 [敏感度] 下拉式功能表中選取標籤時，隱私權設定可能會變更以反映標籤設定。 根據您為標籤選取的外部使用者存取設定，使用者可以或無法將組織外部的人員新增至小組。
 
 [深入了解 Teams 的敏感度標籤](https://docs.microsoft.com/microsoftteams/sensitivity-labels)
 
@@ -194,29 +197,29 @@ Users can select sensitivity labels when they create new teams in Microsoft Team
 
 ### <a name="apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web"></a>在 Outlook 網頁版中將敏感度標籤套用至新的群組
 
-在 Outlook 網頁版中，當您建立新的群組時，您可以選取或變更已發佈標籤的**敏感度**選項：
+在 Outlook 網頁版中，當您建立新的群組時，您可以選取或變更已發佈標籤的 **敏感度** 選項：
 
 ![建立群組並選取 [敏感度] 底下的選項](../media/sensitivity-label-new-group.png)
 
 ### <a name="apply-a-sensitivity-label-to-a-new-site"></a>將敏感度標籤套用至新的網站
 
-系統管理員和使用者可以在[建立新式小組網站和通訊網站](/sharepoint/create-site-collection)時選取敏感度標籤，然後展開 [進階設定]****：
+系統管理員和使用者可以在[建立新式小組網站和通訊網站](/sharepoint/create-site-collection)時選取敏感度標籤，然後展開 [進階設定]：
 
 ![建立網站並選取 [敏感度] 底下的選項](../media/sensitivity-label-new-communication-site.png)
 
 下拉式方塊會顯示所選項目的標籤名稱，[說明] 圖示則會顯示所有標籤名稱及其工具提示，以協助使用者判斷所要套用的正確標籤。
 
-When the label is applied, and users browse to the site, they see the name of the label and applied policies. For example, this site has been labeled as **Confidential**, and the privacy setting is set to **Private**:
+當標籤已套用，且使用者瀏覽至網站時，其便可看到標籤的名稱和所套用的原則。 例如，此網站已加上 [機密] 標籤，且隱私權設定設為 [私人]：
 
 ![已套用敏感度標籤的網站](../media/sensitivity-label-site.png)
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>使用 PowerShell 將敏感度標籤套用至多個網站
 
-You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) cmdlet with the *SensitivityLabel* parameter from the current [SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) to apply a sensitivity label to many sites. The sites can be any SharePoint site collection, or a OneDrive site.
+您可以從目前的 [SharePoint Online 管理命令介面](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) 使用 [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 和 [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant) Cmdlet 搭配 *SensitivityLabel* 參數，將敏感度標籤套用至許多網站。 網站可以是任何 SharePoint 網站集合，或 OneDrive 網站。
 
 確定您有 SharePoint Online 管理命令介面的版本 16.0.19418.12000 或更新版本。
 
-1. 使用 [以系統管理員身分執行]**** 選項開啟 PowerShell 工作階段。
+1. 使用 [以系統管理員身分執行] 選項開啟 PowerShell 工作階段。
 
 2. 如果您不知道標籤 GUID：[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)，並取得敏感度標籤及其 GUID 清單。
 
@@ -224,19 +227,19 @@ You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 
    Get-Label |ft Name, Guid
    ```
 
-3. Now [connect to SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) and store your label GUID as a variable. For example:
+3. 現在[連線至 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)，並將標籤 GUID 儲存為變數。 例如：
 
    ```powershell
    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
    ```
 
-4. Create a new variable that identifies multiple sites that have an identifying string in common in their URL. For example:
+4. 建立可找出在其 URL 中有共同識別字串的多個網站的新變數。 例如：
 
    ```powershell
    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents"
    ```
 
-5. Run the following command to apply the label to these sites. Using our examples:
+5. 執行下列命令，將標籤套用至這些網站。 使用我們的範例：
 
    ```powershell
    $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
@@ -246,7 +249,7 @@ You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) 
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>在 SharePoint 系統管理中心檢視和管理敏感度標籤
 
-To view, sort, and search the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
+若要檢視、排序和搜尋套用的敏感度標籤，請使用新 SharePoint 系統管理中心的 [使用中網站] 頁面。 您可能需要先新增 **[敏感度]** 欄：
 
 ![[使用中網站] 頁面上的 [敏感度] 欄](../media/manage-site-sensitivity-labels.png)
 
@@ -256,9 +259,9 @@ To view, sort, and search the applied sensitivity labels, use the **Active sites
 
 1. 選取網站名稱以開啟詳細資料窗格。
 
-2. 選取 [原則]**** 索引標籤，然後選取 [敏感度]**** 設定的 [編輯]****。
+2. 選取 [原則] 索引標籤，然後選取 [敏感度] 設定的 [編輯]。
 
-3. 從 [編輯敏感度設定]**** 窗格中，選取您要套用至網站的敏感度標籤，然後選取 [儲存]****。
+3. 從 [編輯敏感度設定] 窗格中，選取您要套用至網站的敏感度標籤，然後選取 [儲存]。
 
 ## <a name="support-for-sensitivity-labels"></a>支援敏感度標籤
 
@@ -296,11 +299,11 @@ To view, sort, and search the applied sensitivity labels, use the **Active sites
 
 ## <a name="classic-azure-ad-group-classification"></a>傳統 Azure AD 群組分類
 
-Microsoft 365 no longer supports the old classifications for new Microsoft 365 groups and SharePoint sites after you enable sensitivity labels for containers. However, existing groups and sites that support sensitivity labels still display the old classification values until you convert them to use sensitivity labels.
+啟用容器的敏感度標籤之後，Microsoft 365 不再針對新的 Microsoft 365 群組和 SharePoint 網站支援舊分類。 不過，支援敏感度標籤的現有的群組和網站仍會顯示舊的分類值，直到您轉換它們以使用敏感度標籤為止。
 
 如需您先前可能使用的 SharePoint 舊群組分類範例，請參閱 [SharePoint 新式網站分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)。
 
-These classifications were configured by using Azure AD PowerShell or the PnP Core library and defining values for the `ClassificationList` setting. If your tenant has classification values defined, they are shown when you run the following command from the [AzureADPreview PowerShell module](https://www.powershellgallery.com/packages/AzureADPreview):
+這些分類是使用 Azure AD PowerShell 或 PnP 核心程式庫來設定，並定義 `ClassificationList` 設定的值。 如果您的租用戶已定義分類值，當您從 [AzureADPreview PowerShell 模組](https://www.powershellgallery.com/packages/AzureADPreview)執行下列命令時，會顯示這些值：
 
 ```powershell
 ($setting["ClassificationList"])
@@ -314,7 +317,7 @@ These classifications were configured by using Azure AD PowerShell or the PnP Co
 
 然後：
 
-1. Use PowerShell to apply the sensitivity labels to existing Microsoft 365 groups and SharePoint sites by using name mapping. See the next section for instructions.
+1. 使用 PowerShell，利用名稱對應將敏感度標籤套用至現有的 Microsoft 365 群組和 SharePoint 網站。 請參閱下一節的指示。
 
 2. 移除現有群組和網站的舊分類。
 
@@ -344,7 +347,7 @@ These classifications were configured by using Azure AD PowerShell or the PnP Co
    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
    ```
 
-6. For each group, add the new sensitivity label GUID. For example:
+6. 針對每個群組，新增新的敏感度標籤 GUID。 例如：
 
     ```PowerShell
     foreach ($g in $groups)
@@ -356,34 +359,34 @@ These classifications were configured by using Azure AD PowerShell or the PnP Co
 ## <a name="auditing-sensitivity-label-activities"></a>稽核敏感度標籤活動
 
 > [!IMPORTANT]
-> 如果您使用標籤分離，只選擇保護容器的 **群組和網站**標籤範圍：由於 **偵測到的檔案敏感度等級不符合** 本節內容所述的稽核活動及電子郵件，須 [將這些標籤排序](sensitivity-labels.md#label-priority-order-matters) 在具有 **檔案和電子郵件** 範圍的標籤之前。  
+> 如果您使用標籤分離，只選擇保護容器的 **群組和網站** 標籤範圍：由於 **偵測到的檔案敏感度等級不符合** 本節內容所述的稽核活動及電子郵件，須 [將這些標籤排序](sensitivity-labels.md#label-priority-order-matters) 在具有 **檔案和電子郵件** 範圍的標籤之前。  
 
-If somebody uploads a document to a site that's protected with a sensitivity label and their document has a [higher priority](sensitivity-labels.md#label-priority-order-matters) sensitivity label than the sensitivity label applied to the site, this action isn't blocked. For example, you've applied the **General** label to a SharePoint site, and somebody uploads to this site a document labeled **Confidential**. Because a sensitivity label with a higher priority identifies content that is more sensitivity than content that has a lower priority order, this situation could be a security concern.
+若某使用者將文件上傳到受敏感度標籤保護的網站，且文件的敏感度標籤[優先於](sensitivity-labels.md#label-priority-order-matters)網站的敏感度標籤，則不會封鎖此動作。 例如，您已將 **一般** 標籤套用至 SharePoint 網站，而某使用者上傳到此網站的文件標示為 **機密**。 由於優先順序較高的敏感度標籤會識別比優先順序較低的內容更具敏感度的內容，因此可能會造成安全性問題。
 
-Although the action isn't blocked, it is audited and automatically generates an email to the person who uploaded the document and the site administrator. As a result, both the user and administrators can identify documents that have this misalignment of label priority and take action if needed. For example, delete or move the uploaded document from the site.
+儘管系統不會封鎖該動作，但會稽核，且會產生電子郵件給上傳文件的人員和網站系統管理員。 因此使用者和系統管理員可以找出與標籤優先順序不一致的文件，並視需要採取行動。 例如，從網站刪除或移動已上傳的文件。
 
-It wouldn't be a security concern if the document has a lower priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled **General** is uploaded to a site labeled **Confidential**. In this scenario, an auditing event and email aren't generated.
+如果文件套用的敏感度標籤，其優先順序低於網站所套用的敏感度標籤，則不會造成安全性問題。 例如，套用 **「一般」** 標籤的文件上傳到標記為 **「機密」** 的網站。 在此案例中，不會產生稽核事件和電子郵件。
 
 若要搜尋此事件的稽核記錄，請尋找 **[檔案與頁面活動]** 類別中的 **[偵測到的文件敏感度不相符]**。
 
-The automatically generated email has the subject **Incompatible sensitivity label detected** and the email message explains the labeling mismatch with a link to the uploaded document and site. It also contains a documentation link that explains how users can change the sensitivity label. Currently, these automated emails cannot be disabled or customized.
+自動產生電子郵件的 [主旨] 為 **偵測到不相容敏感度標籤**，而電子郵件訊息則會有上傳文件和網站連結的標記不相符說明。 它也包含說明使用者可如何變更敏感度標籤的文件連結。 目前無法停用或自訂這些自動電子郵件。
 
 當某人在網站或群組間新增或移除敏感度標籤時，系統也會稽核這些活動，但不會自動產生電子郵件。
 
-All these auditing events can be found in the [Sensitivity label activities](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) category. For instructions to search the audit log, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
+您可以在 [[敏感度標籤活動]](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) 類別中找到所有這些稽核事件。 如需搜尋稽核記錄的指示，請參閱[在安全性與合規性中心搜尋稽核記錄](search-the-audit-log-in-security-and-compliance.md)。
 
 ## <a name="how-to-disable-sensitivity-labels-for-containers"></a>如何停用容器的敏感度標籤
 
-You can turn off sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites by using the same instructions from [Enable sensitivity label support in PowerShell](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell). However, to disable the feature, in step 5, specify `$setting["EnableMIPLabels"] = "False"`.
+您可以使用來自[啟用 PowerShell 中的敏感度標籤支援](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)中的相同指示來關閉 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤。 不過，若要停用此功能，請在步驟 5 中指定 `$setting["EnableMIPLabels"] = "False"`。
 
-In addition to making all the settings unavailable for groups and sites when you create or edit sensitivity labels, this action reverts which property the containers use for their configuration. Enabling sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites switches the property used from **Classification** (used for [Azure AD group classification](#classic-azure-ad-group-classification)) to **Sensitivity**. When you disable sensitivity labels for containers, the containers ignore the Sensitivity property and use the Classification property again.
+除了在建立或編輯敏感度標籤時隱藏所有的群組和網站設定 ，此動作會還原容器用於其設定的屬性。 為 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤，會將使用的屬性從 **[分類]** (用於 [Azure AD 群組分類](#classic-azure-ad-group-classification)) 切換為 **[敏感度]**。 停用容器的敏感度標籤時，容器會忽略 [敏感度] 屬性，並再次使用 [分類] 屬性。
 
 這表示來自網站和群組、先前套用至容器的任何標籤設定都不會強制執行，而容器則不再顯示標籤。
 
-If these containers have Azure AD classification values applied to them, the containers revert to using the classifications again. Be aware that any new sites or groups that were created after enabling the feature won't display a label or have a classification. For these containers, and any new containers, you can now apply classification values. For more information, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification) and [Create classifications for Office groups in your organization](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell).
+如果這些容器已套用 Azure AD 分類值，則容器會再次還原為使用分類。 請注意，啟用功能之後所建立的任何新網站或群組都不會顯示標籤或具有分類。 針對這些容器以及任何新容器，您現在可以套用分類值。 如需詳細資訊，請參閱 [SharePoint「新式」網站分類](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification)和[為組織中的 Office 群組建立分類](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)。
 
 ## <a name="additional-resources"></a>其他資源
 
 如需有關[透過 Microsoft Teams、O365 群組和 SharePoint Online 網站使用敏感度標籤](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380) (英文) 的資訊，請參閱網路研討會的記錄和回答的問題。
 
-This webinar was recorded when the feature was still in preview, so you might notice some discrepancies in the UI. However, the information for this feature is still accurate, with any new capabilities documented on this page.
+此網路研討會錄製時該功能仍處於預覽，因此您可能會發現 UI 中有部分差異。 不過，此功能的資訊仍會是正確的，且此頁面上會記載任何新功能。

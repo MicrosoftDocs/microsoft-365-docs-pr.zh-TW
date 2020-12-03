@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9c8d9dbc0087f1b7311863ea63e578bad3040249
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 793f51146dc85dc1c6750e82301d0e1206187ad9
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357432"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558197"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -92,8 +92,6 @@ ms.locfileid: "49357432"
 ## <a name="step-3-configure-prerequisites-for-templates"></a>步驟3：設定範本的必要條件
 
 大多數的內部風險管理範本都具有必須針對原則指示器所設定的必要條件，以產生相關的活動警示。 根據您計畫為組織設定的原則，設定適當的必要條件。
-
-如果您使用 *電子郵件原則範本中的冒犯語言* 來設定原則，則可以略過此步驟，直接移至 **步驟 4**。
 
 ### <a name="configure-microsoft-365-hr-connector"></a>設定 Microsoft 365 HR connector
 

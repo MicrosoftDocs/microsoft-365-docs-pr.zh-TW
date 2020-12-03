@@ -17,14 +17,14 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 在安全性與合規性中心尋找及使用 Microsoft Defender for Office 365 的報告 &amp; 。
+description: 在安全性 & 合規性中心尋找及使用 Microsoft Defender for Office 365 的報告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8885eea2168cc40c497f6fa1066ae020dda7fd7c
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5efaef018c78bd161c9cde81af36be92173479ae
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087702"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561724"
 ---
 # <a name="view-reports-for-microsoft-defender-for-office-365"></a>查看 Microsoft Defender for Office 365 的報告
 
@@ -35,7 +35,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 ![安全性 & 規範中心內的報告儀表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>適用於 Office 365 的 Defender 檔案類型報告
+## <a name="defender-for-office-365-file-types-report"></a>適用于 Office 365 檔案類型的 Defender 報告
 
 [ **Office 365 的 Defender] 檔案類型報告** 報告會顯示偵測為 [安全附件](atp-safe-attachments.md)的檔案類型。
 
@@ -110,7 +110,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
   - **寄件者位址**
   - **郵件識別碼**
   - **File**
-  - **主旨**
+  - **Subject**
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改結果：
 
@@ -119,7 +119,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 若要回到 [報表] 視圖，請按一下 [ **view report**]。
 
-## <a name="defender-for-office-365-message-disposition-report"></a>適用於 Office 365 的 Defender 郵件處置報告
+## <a name="defender-for-office-365-message-disposition-report"></a>Office 365 的 Defender 版郵件處理報告
 
 **ATP 郵件** 處理報告會顯示偵測到有惡意內容的電子郵件所採取的動作。
 
@@ -179,7 +179,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
   - **寄件者位址**
   - **郵件識別碼**
   - **File**
-  - **主旨**
+  - **Subject**
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改結果：
 
@@ -313,7 +313,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 - **按一下 [時間]**
 - **使用者**
 - **URL**
-- **動作**
+- **Action**
 - **App**
 
 如果您按一下 [詳細資料] 表格視圖中的 [**篩選器**]，可以篩選與報表檢視中相同的準則，**以及以逗號分隔的****網域** 或收件者。
@@ -338,7 +338,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>查看 Office 365 的 Defender 時，需要哪些許可權？
 
-若要查看和使用本主題中所述的報表， **您必須為安全性與 &amp; 合規性中心和 Exchange 系統管理中心指派適當的角色**。
+若要查看和使用本主題中所述的報表， **您必須同時為安全性 & 規範中心和 Exchange 系統管理中心指派適當的角色**。
 
 - 針對安全性 & 合規性中心，您必須已指派下列角色之一：
 

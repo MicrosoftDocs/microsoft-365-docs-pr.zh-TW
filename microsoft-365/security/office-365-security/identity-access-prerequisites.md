@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 4b354d124cfd9c1ae0eab19c8feee7e0fd59df25
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357800"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558547"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
@@ -45,7 +45,7 @@ ms.locfileid: "49357800"
 |[設定 PHS](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)。  這必須啟用以偵測已洩漏的認證，並針對風險型條件式存取採取行動。 **附注：** 不論您的組織是否使用同盟驗證，都是必要的。|僅雲端|
 |[啟用無縫單一登入](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso) ，當使用者位於連接至組織網路的組織裝置時，自動簽署使用者。|僅限雲端和同盟|
 |[設定具名網路](https://docs.microsoft.com/azure/active-directory/active-directory-known-networks-azure-portal)。 Azure AD Identity Protection 會收集和分析可產生風險分數的所有可用工作階段資料。 建議您在 Azure AD 命名為 [網路設定] 中，為您的網路指定您組織的公用 IP 範圍。 來自這些範圍的流量會獲得較低的風險分數，而來自組織環境以外的流量會獲得較高的風險排名。||
-|在[SSPR) 和多重要素驗證 (MFA) 時，註冊所有使用者的自助密碼重設 (](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)。 我們建議您提前註冊 Azure 使用者進行 Azure Multi-Factor 驗證。 Azure AD 身分識別保護會利用 Azure Multi-Factor 驗證，以執行其他安全性驗證。 此外，為了獲得最佳登入經驗，我們建議使用者在其裝置上安裝 [Microsoft 驗證者應用程式](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) 和 Microsoft 公司入口網站。 這些可從每個平臺的應用程式存放區安裝。||
+|在[SSPR) 和多重要素驗證 (MFA) 時，註冊所有使用者的自助密碼重設 (](https://docs.microsoft.com/azure/active-directory/authentication/concept-registration-mfa-sspr-converged)。 我們建議您提前註冊 Azure AD Multi-Factor 驗證的使用者。 Azure AD 身分識別保護會利用 Azure AD Multi-Factor 驗證，以執行其他安全性驗證。 此外，為了獲得最佳登入經驗，我們建議使用者在其裝置上安裝 [Microsoft 驗證者應用程式](https://docs.microsoft.com/azure/active-directory/user-help/microsoft-authenticator-app-how-to) 和 Microsoft 公司入口網站。 這些可從每個平臺的應用程式存放區安裝。||
 |[啟用已加入網域之 Windows 電腦的自動裝置註冊](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)。 條件式存取會確定連接至應用程式的裝置已加入網域或相容性。 若要在 Windows 電腦上支援這個作業，則必須使用 Azure AD 註冊裝置。  本文討論如何設定自動裝置註冊。|僅雲端|
 |**準備支援小組**. 已有針對無法完成 MFA 的使用者的計劃。 這可能會將其新增至原則排除群組，或為其註冊新的 MFA 資訊。 在進行其中一項安全性敏感性變更之前，您必須確定實際的使用者正在進行要求。 需要使用者的管理員協助進行核准是有效的步驟。||
 |[將密碼回寫設定成內部部署 AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。 密碼回寫可讓 Azure AD 要求使用者在偵測到高風險帳戶時變更其內部部署密碼。 您可以使用下列兩種方式之一，使用 Azure AD Connect 來啟用此功能：在 Azure AD Connect 安裝精靈的 [選用功能] 畫面啟用 **密碼回寫** 功能，或透過 Windows PowerShell 加以啟用。|僅雲端|
@@ -121,7 +121,7 @@ ms.locfileid: "49357800"
 - 建立並使用個別帳戶，只指派給 [Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*的管理*。 管理員應該擁有自己的使用者帳戶，以進行一般非系統管理，且只有在必要時才使用系統管理帳戶，才可完成與其角色或工作職能相關聯的工作。 
 - 遵循在 Azure AD 中保護特權帳戶的 [最佳作法](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) 。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [![步驟2：設定一般身分識別和存取條件式存取原則](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 

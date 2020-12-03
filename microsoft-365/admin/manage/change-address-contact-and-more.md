@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 瞭解如何對組織設定檔進行變更，例如組織名稱、位址、電話、技術連絡人及電子郵件。
-ms.openlocfilehash: 17202bb35e6d5e7d40b135f65467aef111aad070
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 19769c827284000e1ad0e86e3666d9980322b6a9
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645104"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560849"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>變更貴組織的地址、技術連絡人等等
 
@@ -73,14 +73,15 @@ ms.locfileid: "48645104"
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>。
 
-2. 在頁首中，選取您的設定檔圖示，然後選取 [ **我的帳戶**]。
+2. 在頁首中，選取您的設定檔圖示，然後選取 [ **View account**]。
 
-3. 在左邊，選取 [ **個人資訊**]。
+3. 在左邊，選取 [ **安全性資訊**]。
 
-4. 在 [ **連絡人詳細資料** 卡片] 中，選取 [ **編輯**]。
+4. 在 [電子郵件] 區段中，選取 [**變更**]
 
-5. 在 [ **備用電子郵件** ] 方塊中編輯位址，然後選取 [ **儲存**]。
+5. 在 [ **備用電子郵件** ] 方塊中編輯位址，然後選取 **[下一步]**。
 
+6. 輸入傳送至備選電子郵件地址的程式碼，然後選取 **[確定]** 以確認變更。
 若要瞭解變更其他設定檔資訊的相關資訊，請參閱 [變更您的連絡人喜好](change-contact-preferences.md) 設定或 [變更您的顯示語言](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx)。
   
 ### <a name="email-signatures"></a>電子郵件簽名

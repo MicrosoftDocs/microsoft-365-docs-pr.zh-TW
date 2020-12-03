@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud (德國移至 Microsoft 雲端 Deutschland 時，服務的其他一般資訊，) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: 6fa09165f8aaa68e0f9fc567d96a4e53baaa594e
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 93692200f2519dbc647bb4e81b4bd8c646815858
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551779"
+ms.locfileid: "49558427"
 ---
 # <a name="additional-general-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 遷移的其他一般資訊
 
@@ -49,14 +49,14 @@ ms.locfileid: "49551779"
 
 應用程式可能是下列其中一項：
 
-- 單一頁面應用程式 (SPA) 
-- 登入使用者的 Web 應用程式
-- 呼叫 web APIs 的 web 應用程式
-- 受保護的 web API
-- 呼叫 web APIs 的 web API
-- 桌面應用程式
-- 後臺應用程式
-- 行動應用程式
+- [單一頁面應用程式 (SPA) ](https://docs.microsoft.com/azure/active-directory/develop/scenario-spa-overview)
+- [登入使用者的 Web 應用程式](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [呼叫 web APIs 的 web 應用程式](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-app-call-api-overview)
+- [受保護的 web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-protected-web-api-overview)
+- [呼叫 web APIs 的 web API](https://docs.microsoft.com/azure/active-directory/develop/scenario-web-api-call-api-overview)
+- [桌面應用程式](https://docs.microsoft.com/azure/active-directory/develop/scenario-desktop-overview)
+- [後臺應用程式](https://docs.microsoft.com/azure/active-directory/develop/scenario-daemon-overview)
+- [行動應用程式](https://docs.microsoft.com/azure/active-directory/develop/scenario-mobile-overview)
  
 > [!NOTE] 
 > 當應用程式切換成您的授權使用時 `login.microsoftonline.com` ，會以這個新的授權單位簽署權杖。 如果您主控其他應用程式所撥打的任何資源應用程式，您將需要允許進行寬鬆的權杖驗證。 這表示您的應用程式必須允許 Azure AD 德國和 Azure AD 公用雲端所簽署的權杖。 除非所有呼叫您服務的用戶端應用程式都已完全遷移至 Azure AD public cloud，否則需要進行這種寬鬆的權杖驗證。 遷移之後，您的資源應用程式只需要接受由 Azure AD public 雲端簽署的權杖。
@@ -76,10 +76,10 @@ ms.locfileid: "49551779"
 
 5. 更新環境參數，使其 `AzurePublic` (，而不是 `AzureGermany`) 中的系統管理工具和腳本：
 
-    - Azure PowerShell
-    - Azure AD PowerShell (MSOnline) 
-    - Azure AD PowerShell (AzureAD) 
-    - Azure CLI
+    - [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.8.0&viewFallbackFrom=azurermps-5.6.0)
+    - [Azure AD PowerShell (MSOnline) ](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-1.0)
+    - [Azure AD PowerShell (AzureAD) ](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0)
+    - [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
  
 **我發佈的應用程式為何？**
 

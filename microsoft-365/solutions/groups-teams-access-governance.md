@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 瞭解如何在 Microsoft 365 群組、小組和 SharePoint 中管理存取。
-ms.openlocfilehash: ec4e62f4d77b9aadbdc7457631ac1c4b498221c3
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 2a3a5a126a340a8ec1036eaebd22a0a0a81cf6c3
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377566"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558219"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>管理 Microsoft 365 群組、小組和 SharePoint 中的存取權
 
@@ -35,7 +35,7 @@ ms.locfileid: "48377566"
 ||根據規則的動態群組成員資格|[在 Azure Active Directory 中建立或更新動態群組](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||控制誰可以共用檔案、資料夾及網站。|[設定及管理存取要求](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |條件式存取|||
-||Multi-Factor 驗證|[Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
+||Multi-Factor 驗證|[Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
 ||根據群組、小組或網站敏感度來控制裝置存取。|[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 ||限制未受管理裝置的網站存取。|[控制從非管理裝置 SharePoint 存取](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
 ||根據位置控制網站存取|[根據網路位置控制對 SharePoint 和 OneDrive 資料的存取](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
@@ -73,7 +73,7 @@ SharePoint 網站可讓您加入群組或小組成員資格以外的人員、成
 
 使用 Microsoft 365，您可以對組織內部和外部的人員要求多重要素驗證。 有許多選項會提示使用者輸入第二個驗證因素的情況。 強烈建議您為組織部署多重要素驗證：
 
-- [Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 如果您的某些群組和小組有機密資訊，您可以根據群組或小組的靈敏度標籤強制執行裝置管理原則。 您可以完全封鎖非受管理裝置的存取，或僅允許有限的 web 存取：
 
@@ -101,7 +101,7 @@ SharePoint 網站可讓您加入群組或小組成員資格以外的人員、成
 
 - [允許或封鎖從特定組織 B2B 使用者的邀請](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
 
-Microsoft 365 允許以共用連結的 *任何人* 匿名共用檔案和資料夾。 可以轉寄*任何人*的連結，且具有連結的任何人都可以存取共用專案。 視您的資料敏感度而定，請考慮如何使用 *任何使用任何* 連結的連結-包括完全關閉，將連結許可權限制為唯讀，或為其設定到期時間：
+Microsoft 365 允許以共用連結的 *任何人* 匿名共用檔案和資料夾。 可以轉寄 *任何人* 的連結，且具有連結的任何人都可以存取共用專案。 視您的資料敏感度而定，請考慮如何使用 *任何使用任何* 連結的連結-包括完全關閉，將連結許可權限制為唯讀，或為其設定到期時間：
 
 - [關閉 [任何人] 連結](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#turn-off-anyone-links)
 

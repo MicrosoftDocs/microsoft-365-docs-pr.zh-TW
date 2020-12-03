@@ -2,8 +2,8 @@
 title: 變更使用名稱和電子郵件地址
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-author: cmcatee-MSFT
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: '了解全域系統管理員如何變更使用者的電子郵件地址和顯示名稱。 '
-ms.openlocfilehash: 82284f653675ee4f8c89fe52d75bbc0a0efe2e2b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1672401e9a8e994b91804870130b659ad8724b5e
+ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646688"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49551505"
 ---
 # <a name="change-a-user-name-and-email-address"></a>變更使用名稱和電子郵件地址
 
@@ -40,13 +40,13 @@ ms.locfileid: "48646688"
 
 如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
-## <a name="change-a-users-email-address"></a>變更使用者的電子郵件地址
-
 您必須是[全域系統管理員](about-admin-roles.md)才能執行這些步驟。 
+
+## <a name="change-a-users-email-address"></a>變更使用者的電子郵件地址
 
 ::: moniker range="o365-worldwide"
  
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
+1. 在系統管理中心中，移至 [使用者 **]** \> [作用中使用者 <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">]</a> 頁面。
     
 2. 選取使用者名稱，然後在 **[帳戶]** 索引標籤上，選取 **[管理使用者名稱]**。
     
@@ -179,7 +179,7 @@ ms.locfileid: "48646688"
 
 3. 在 **[顯示名稱]** 方塊中，輸入該人員的新名稱，然後選取 **[儲存]**。
 
-    如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱[解決錯誤訊息](#resolve-error-messages)。
+    如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱 [解決錯誤訊息](#resolve-error-messages)。
 
 最多可能需要等候 24 小時，此變更才會在所有服務中生效。在變更生效之後，使用者將須以更新的使用者名稱登入 Outlook、商務用 Skype 和 SharePoint。
 
@@ -193,7 +193,7 @@ ms.locfileid: "48646688"
 
 3. 在 **[顯示名稱]** 方塊中，輸入該人員的新名稱，然後選取 **[儲存]**。
 
-    如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱[解決錯誤訊息](#resolve-error-messages)。
+    如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱 [解決錯誤訊息](#resolve-error-messages)。
 
 最多可能需要等候 24 小時，此變更才會在所有服務中生效。在變更生效之後，使用者將須以其更新的使用者名稱登入 Outlook、商務用 Skype 和 SharePoint，因此請務必向使用者告知此變更。
 
@@ -207,7 +207,7 @@ ms.locfileid: "48646688"
 
 3. 在 **[顯示名稱]** 方塊中，輸入該人員的新名稱，然後選取 **[儲存]**。
 
-    如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱[解決錯誤訊息](#resolve-error-messages)。
+    如果收到 **[很抱歉，無法編輯該使用者。請檢閱使用者資訊，然後再試一次]** 的錯誤訊息，請參閱 [解決錯誤訊息](#resolve-error-messages)。
 
 最多可能需要等候 24 小時，此變更才會在所有服務中生效。在變更生效之後，使用者將須以其更新的使用者名稱登入 Outlook、商務用 Skype 和 SharePoint，因此請務必向使用者告知此變更。
 

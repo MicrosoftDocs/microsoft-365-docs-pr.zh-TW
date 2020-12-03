@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: 瞭解如何將您的企業從 Microsoft 365 商務版移至 Microsoft 365 E3。
-ms.openlocfilehash: 3f840a27cdcf50bba7710681135f6c2e241ad14b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 3f1bb9591e1bd2bac49326325ce6c8c2d6778497
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367048"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558231"
 ---
 # <a name="migrate-from-microsoft-365-business-premium-to-microsoft-365-e3"></a>從 Microsoft 365 商務進階版移轉至 Microsoft 365 E3
 
@@ -62,7 +62,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 | 攻擊面降減功能    | [請參閱此清單](#threat-protection) | Microsoft Edge 的硬體隔離的企業管理 | 
 | 適用于 Office 的 Defender 365 方案1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
 | **身分識別管理**        | | | 
-| 混合式 Azure Active Directory 的自助密碼重設 (Azure AD) 帳戶，Azure 多重要素驗證 (MFA) ，條件式存取，針對內部部署身分識別的密碼回寫功能|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
+| 混合式 Azure Active Directory 的自助密碼重設 (Azure AD) 帳戶，Azure AD 多重要素驗證 (MFA) ，條件式存取，針對內部部署身分識別的密碼回寫。|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
 | 雲端應用程式探索，Azure AD Connect Health    |     | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Office 365 應用程式單一 Sign-On (SSO) ：每位使用者10個應用程式 (庫 SaaS 諸如 Salesforce) 等應用程式 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 
 | Azure AD Premium 1 SSO：透過 Azure AD 應用程式 Proxy 和非畫廊應用程式使用 Self-Service 應用程式整合範本 (的內部部署應用程式沒有限制)     |     | ![隨附于 Microsoft 365 E3](../media/check-mark.png) | 

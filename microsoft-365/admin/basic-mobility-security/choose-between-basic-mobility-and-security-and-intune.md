@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性是 Microsoft 365 方案的一部分。
-ms.openlocfilehash: b9568d0aad03fc3c8a5c81d02f98f5b238124a82
-ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+ms.openlocfilehash: 8724b3dccbdb5949190ceda4b804b9f1f2a5d4b2
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48930162"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561492"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>選擇基本行動性和安全性或 Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "48930162"
  
 基本行動性和安全性及 Intune 都包含在各種方案中，如下表所述。
 
-|**規劃**|**基本行動性和安全性**|**Microsoft Intune**|
+| 方案 | 基本行動性和安全性 | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|是|否|
 |Microsoft 365 商務基本版|是|否|
@@ -64,11 +64,11 @@ Microsoft Intune 和內建基本行動性及安全性兩者都能讓您在組織
 >[!NOTE]
 >您可以 *先設定基本行動性和安全性，然後再新增 Microsoft Intune，* 以在相同的 Microsoft 365 Business Standard 組織中使用 Intune 和基本行動性和安全性，管理使用者和其行動裝置。 這可讓您選擇基本行動性和安全性，或功能更豐富的 Intune 解決方案。 指派 Intune 授權以啟用 Intune 功能。
 
-|**功能範圍**|**功能重點**|**基本行動性和安全性**|**Microsoft Intune**|
+| 功能範圍 | 功能重點 | 基本行動性和安全性 | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |裝置類型|管理不同的作業系統平臺及主要管理模式變化。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS、iPad 作業系統|
 |裝置合規性|設定和管理安全性原則，如裝置層級 PIN 碼鎖定和 jailbreak 偵測。 |Android 9 和更新版本裝置的限制。 請參閱 [詳細資料](capabilities.md)。 |是|
-|根據裝置規範的條件式存取 |防止不相容的裝置從雲端存取公司的電子郵件和資料。 |在 Windows 10 上不受支援。<br/>限制控制對 Exchange Online、SharePoint 線上和 Outlook 的存取。 |否 |
+|根據裝置規範的條件式存取 |防止不相容的裝置從雲端存取公司的電子郵件和資料。 |在 Windows 10 上不受支援。<br/>限制控制對 Exchange Online、SharePoint 線上和 Outlook 的存取。 |是 |
 |裝置設定  |設定裝置設定 (例如，停用攝像頭) |裝置合規性|設定和管理安全性原則，如裝置層級 PIN 碼鎖定和 jailbreak 偵測。 |Android 9 和更新版本裝置的限制。 請參閱 [詳細資料](capabilities.md)。 |是|
  |有限的設定集。 |是|
 |電子郵件設定檔  |在裝置上布建原生電子郵件設定檔。 |是|是|

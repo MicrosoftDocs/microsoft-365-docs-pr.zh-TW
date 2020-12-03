@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: 使用 Office365 設定電子郵件轉寄至一或多個電子郵件帳戶。
-ms.openlocfilehash: acdca0b19eda70d7da34ce1093a4a1b11052fd79
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: c821d4363a053b432c4376d7b4fec4926df7b568
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551829"
+ms.locfileid: "49560789"
 ---
 # <a name="configure-email-forwarding"></a>設定電子郵件轉寄
 
@@ -39,6 +39,9 @@ ms.locfileid: "49551829"
 ::: moniker-end
   
 做為組織的系統管理員，您可能需要設定使用者信箱的電子郵件轉寄功能的公司需求。 電子郵件轉寄功能可讓您將傳送至使用者信箱的電子郵件轉寄至組織內部或外部的其他使用者信箱。
+
+> [!IMPORTANT]
+> 您可以使用輸出垃圾郵件篩選原則來控制自動轉寄給外部收件者。 如需詳細資訊，請參閱 [在 Microsoft 365 中控制自動外部電子郵件轉接](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls)。
 
   
 ## <a name="configure-email-forwarding"></a>設定電子郵件轉寄
@@ -102,5 +105,6 @@ ms.locfileid: "49551829"
      或者，在系統管理中心 [建立通訊群組](../setup/create-distribution-lists.md)， [新增位址](add-user-or-contact-to-distribution-list.md)，然後使用本文中的指示，將轉寄設定為指向 DL。
     
 5. 請勿刪除要轉寄電子郵件的使用者帳戶，或是移除其授權！  否則，電子郵件轉寄功能會停止。 
+
 
 ::: moniker-end 

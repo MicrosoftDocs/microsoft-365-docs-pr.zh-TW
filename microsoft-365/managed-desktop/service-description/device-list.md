@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 2af301fcac2f02a415972f8bf7857fa7b6ee0c1e
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 2cca4850227716fe5f7d7d21f3220b46e9761420
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919829"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561180"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的桌面裝置 
 
@@ -25,7 +25,7 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文概
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 若要在 Microsoft Managed Desktop 中註冊，裝置必須是下列其中一種模型，並符合或超過所列的 RAM、處理器系列和磁碟空間規格。 
 
-此處的裝置連結只供您參考。 如果您想要定購裝置，請與您的商業管道連絡人合作，以確保您選擇正確的設定。 在此表格中，「封存 *日期* 」是這些模型會受到較短 Microsoft 受管理桌面服務生命週期的日期;在此日期之後的任何這類裝置架，將不會從 Microsoft 受管理的電腦取得全三年的支援期限。 已封存裝置也會列在 [Microsoft 受管理的桌面封存裝置](archived-device-list.md)中。 「 *退休日期* 」是 Microsoft 受管理的桌面完全不會支援此模型的日期。 在該日期，此模型的所有已註冊裝置都會從 Microsoft 受管理的桌面移除，不論已註冊。
+此處的裝置連結只供您參考。 如果您想要定購裝置，請與您的商業管道連絡人合作，以確保您選擇正確的設定。 在此表格中，「封存 *日期* 」是這些模型會受到較短 Microsoft 受管理桌面服務生命週期的日期;在此日期之後的任何這類裝置架，將不會從 Microsoft 受管理的電腦取得全三年的支援期限。 已封存裝置也會列在 [Microsoft 受管理的桌面封存裝置](archived-device-list.md)中。 「*退休日期*」是 Microsoft 受管理的桌面完全不會支援此模型的日期。 在該日期，此模型的所有已註冊裝置都會從 Microsoft 受管理的桌面移除，不論已註冊。
 
 >[!NOTE]
 >您可以隨時將裝置加入至此表格，但是我們會針對影響封存或退休日期的變更，提供90天的通知。 最近新增的裝置會以 * _ 標示 *\** 。
@@ -37,16 +37,16 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文概
 
 | Model    | 最低規格  | 其他需求    | 封存日期   | 退休日期   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| _ *\* [戴爾精確度 5310 2-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年4月28日  | 2025年4月28日 |
-| **\*[Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop)** | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年4月28日 | 2025年4月28日  |
-| **\*[Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年4月28日 | 2025年4月28日 |
-| **\*[Dell Latitude 7310/7310 2-1-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年5月4日  | 2025年5月4日  |
+| [Dell Precision 5310 2-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年4月28日  | 2025年4月28日 |
+| [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年4月28日 | 2025年4月28日  |
+| [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)_ * | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年4月28日 | 2025年4月28日 |
+| [Dell Latitude 7310/7310 2-1-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年5月4日  | 2025年5月4日  |
 | [Dell Latitude 7410/7410 2-1-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 2022年5月19日  | 2025年5月19日  |
 | [Dell Latitude 9410 2-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 5月5日2022  | 5月5日2025  |
-| **\*[Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop)** | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 5月5日2022  | 5月5日2025  |
-| **\*[Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop)** | 128 GB/Intel i3/8 GB RAM | 無 | 2022年5月27日  | 2025年5月27日  |
-| **\*[Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio)** | 128 GB/Intel i3/8 GB RAM | 無 | 2022年5月15日  | 2025年5月15日  |
-| **\*[Dell 5550 工作站](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop)** | 256 GB/Intel i5/8 GB RAM | 無 | 2022年5月27日  | 2025年5月27日  |
+| [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 GB/Intel i5/8 GB RAM | 需要 IR 相機 | 5月5日2022  | 5月5日2025  |
+| [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB/Intel i3/8 GB RAM | 無 | 2022年5月27日  | 2025年5月27日  |
+| [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB/Intel i3/8 GB RAM | 無 | 2022年5月15日  | 2025年5月15日  |
+| [Dell 5550 工作站](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB/Intel i5/8 GB RAM | 無 | 2022年5月27日  | 2025年5月27日  |
 
 ### <a name="hp"></a>惠普
 
@@ -55,9 +55,10 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文概
 | [HP EliteBook 830/840/850 G7 筆記本電腦](https://store.hp.com/us/en/pdp/hp-elitebook-830-g7-notebook-pc-customizable-8pv71av-mb) | 256 GB/Intel i5/8 GB RAM | 具有9MZ21AV 的 SKU | 2021年11月30日 | 2024年11月30日 |
 | [HP EliteBook x360 830 G7 筆記本電腦](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g7-notebook-pc-p-1f6c0ut-aba-1) | 256 GB/Intel i5/8 GB RAM | 具有9MZ21AV 的 SKU | 2021年11月30日 | 2024年11月30日 |
 | [HP 精英 x2 G4 平板電腦](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 GB/Intel i5/8 GB RAM | 具有5VS03AV 的 SKU | 2021年7月31日 | 2024年7月31日 |
-| [HP EliteBook x360 1030 G7 筆記本電腦](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 GB/Intel i5/8 GB RAM | 具有8XW08AV 的 SKU | 2021年8月31日 | 2024年8月31日 |
-| [HP EliteBook x360 1040 G7](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1040-g7-notebook-pc-customizable-8wa57av-mb) | 256 GB/Intel i5/8 GB RAM | 具有8XW08AV 的 SKU| 2021年8月31日 | 2024年8月31日 |
+| [HP EliteBook x360 1030/1040 G7 筆記本電腦](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g7-notebook-pc-customizable-8vs68av-mb#!) | 256 GB/Intel i5/8 GB RAM | 具有8XW08AV 的 SKU | 2021年8月31日 | 2024年8月31日 |
 | [HP 精英 DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB/Intel i5/8 GB RAM | 具有9MZ21AV 的 SKU | 2021年3月31日 | 2024年3月31日 |
+| **\*[HP EliteOne 800 G6 24/27 多功能一體電腦](https://store.hp.com/us/en/pdp/hp-eliteone-800-g6-all-in-one-touch-pc)** | 256/Intel i5/8 GB RAM | 具有9XM14AV 的 SKU | 2022年6月30日 | 2025年6月30日 |
+| **\*[HP EliteDesk 800 G6 桌上型電腦迷你機](https://store.hp.com/us/en/pdp/hp-elitedesk-800-g6-desktop-mini-pc#!)** | 256/Intel i5/8 GB RAM | 具有9XM14AV 的 SKU | 2022年6月30日 | 2025年6月30日 |
 | [HP Z2 微型 G5 工作站](https://store.hp.com/us/en/pdp/hp-z2-mini-g5-workstation-customizable-9jd39av-mb) | 256 GB/Intel i5/8 GB RAM | 具有8QR48AV 的 SKU| 2021年12月31日 | 2024年12月31日 |
 | **\*[HP ZBook Firefly 14/15 G7 移動工作站](https://store.hp.com/us/en/mdp/laptops/hp-zbook-14u-mobile-workstation)** | 256 GB/Intel i5/8 GB RAM | SKU 與9MZ22AV，需要 IR 相機 | 2021年11月30日 | 2024年11月30日 |
 
@@ -65,8 +66,8 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文概
 
 | Model    | 最低規格  | 其他需求    | 封存日期   | 退休日期   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| **\*[Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab)** | 256 GB/Intel i5/8GB RAM | 無 | 2022年5月21日 | 2027年5月21日 |
-| **\*[曲面走向2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab)** | 128 GB/Intel 核心 M3/8GB RAM | 無 | 2022年5月21日 | 2027年5月21日 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8GB RAM | 無 | 2022年5月21日 | 2027年5月21日 |
+| [曲面走向2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB/Intel 核心 M3/8GB RAM | 無 | 2022年5月21日 | 2027年5月21日 |
 | [Surface 膝上型電腦旅途](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 12，2022 | Oct 12，2025 |
 | [Surface 膝上型電腦2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 16，2020 | Oct 16，2023 |
 | [Surface 膝上型電腦3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |

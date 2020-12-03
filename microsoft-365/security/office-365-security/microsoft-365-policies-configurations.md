@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 993dd1ed66ca5bc6635c0eadf2dc7345ab84b57d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0144e9478e74e252e0c4ccc0c902df376129c388
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356916"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558283"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -110,7 +110,7 @@ Azure AD 提供完整的身分識別管理功能套件。 我們建議使用這�
 
 |功能|描述|授權|
 |---|---|---|
-|[多重要素驗證 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA 要求使用者提供兩種形式的驗證，例如使用者密碼加上 Microsoft 驗證應用程式或電話的通知。 MFA 大幅降低可供盜竊之認證存取您環境的風險。 Microsoft 365 使用 Azure Multi-Factor 驗證服務進行 MFA 型登入。|Microsoft 365 E3 或 E5|
+|[多重要素驗證 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA 要求使用者提供兩種形式的驗證，例如使用者密碼加上 Microsoft 驗證應用程式或電話的通知。 MFA 大幅降低可供盜竊之認證存取您環境的風險。 Microsoft 365 使用 Azure AD Multi-Factor 驗證服務進行 MFA 型登入。|Microsoft 365 E3 或 E5|
 |[條件式存取](/azure/active-directory/conditional-access/overview)|Azure AD 評估使用者登入的條件，並使用條件式存取原則來決定允許的存取。 例如，在此指導中，我們會告訴您如何建立條件式存取原則，以要求存取機密資料的裝置合規性。 這會極大降低具有自身裝置和盜竊認證的駭客可以存取您機密資料的風險。 它也會保護裝置上的機密資料，因為裝置必須符合健康和安全性的特定需求。|Microsoft 365 E3 或 E5|
 |[Azure AD 群組](/azure/active-directory/fundamentals/active-directory-manage-groups)|條件式存取原則、具有 Intune 的裝置管理，以及對您組織中檔案和網站的許可權，都依賴指派給使用者帳戶或 Azure AD 群組。 建議您建立對應至您所實施之保護層級的 Azure AD 群組。 例如，您的 executive 人員很可能是駭客的高價值目標。 因此，您可以將這些員工的使用者帳戶新增至 Azure AD 群組，並將此群組指派給條件式存取原則及其他強制進行存取保護等級的原則。|Microsoft 365 E3 或 E5|
 |[裝置註冊](/azure/active-directory/devices/overview)|您可以在 Azure AD 中註冊裝置，以建立裝置的身分識別。 此身分識別是用來在使用者登入並套用需要加入網域或合規的電腦的條件式存取原則時，用來驗證裝置。 針對此指南，我們使用裝置註冊功能自動註冊加入網域的 Windows 電腦。 裝置註冊是使用 Intune 管理裝置的必要條件。|Microsoft 365 E3 或 E5|
@@ -197,6 +197,6 @@ Microsoft 建議您不要建立適用于所有應用程式的原則集，因為�
 
 在您設定身分識別與裝置存取後，請參閱 [AZURE ad 功能部署指南](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) ，以瞭解其他應考慮的功能和 [Azure AD 身分識別](https://docs.microsoft.com/azure/active-directory/governance/) 控管，以保護、監控和審核存取。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [實施身分識別與裝置存取原則的必要條件工作](identity-access-prerequisites.md)

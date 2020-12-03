@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時的其他客戶體驗資訊) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: b282a12966e7a6dc8a1a331409834322c5087a10
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 1eef8be624a92bf2dcaba8f0df2147697202be3a
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551872"
+ms.locfileid: "49560835"
 ---
 # <a name="additional-experience-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的其他經驗資訊 
 
@@ -101,7 +101,7 @@ ms.locfileid: "49551872"
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
-| 用戶端，office Online 在 Office 用戶端轉換時，Azure AD 已完成租使用者範圍以指向 Office 365 服務。<!--v-gmoor: What?--> | 這種設定變更可讓 Office 用戶端更新並指向 Office 365 服務端點。 | 所有 Office 客戶 | -從客戶擁有的 DNS 中移除 MSOID CName （若有的話）。 <br><br> -通知使用者關閉 _所有_ Office 應用程式，然後重新登入 (或強制用戶端重新開機，或強制使用者登入) ，以讓 Office 用戶端選擇變更。 <br><br> -通知使用者和問訊台人員使用者 *可能會* 看到 office 橫幅，提示他們在轉換的72小時內重新啟用 office 應用程式。 <br><br> -必須關閉個人電腦上的所有 Office 應用程式，且使用者必須登出後再登入。 在黃色啟用欄中，登入以重新啟用 Office 365 服務。 <br><br> -共用電腦需要與個人電腦類似的動作，而且不需要特殊的程式。 <br><br> -在行動裝置上，使用者必須登出應用程式，關閉它們，然後再次登入。 |
+| 用戶端，office Online 在 Office 用戶端轉換時，Azure AD 已完成租使用者範圍以指向 Office 365 服務。 | 這種設定變更可讓 Office 用戶端更新並指向 Office 365 服務端點。 | 所有 Office 客戶 | -從客戶擁有的 DNS 中移除 MSOID CName （若有的話）。 <br><br> -通知使用者關閉 _所有_ Office 應用程式，然後重新登入 (或強制用戶端重新開機，或強制使用者登入) ，以讓 Office 用戶端選擇變更。 <br><br> -通知使用者和問訊台人員使用者 *可能會* 看到 office 橫幅，提示他們在轉換的72小時內重新啟用 office 應用程式。 <br><br> -必須關閉個人電腦上的所有 Office 應用程式，且使用者必須登出後再登入。 在黃色啟用欄中，登入以重新啟用 Office 365 服務。 <br><br> -共用電腦需要與個人電腦類似的動作，而且不需要特殊的程式。 <br><br> -在行動裝置上，使用者必須登出應用程式，關閉它們，然後再次登入。 |
 |||||
 
 <!--
@@ -117,7 +117,7 @@ ms.locfileid: "49551872"
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
-| 在遷移期間，電子檔探索搜尋會失敗，或傳回0個結果，以供 SharePoint 線上、OneDrive 商務及已遷移的 Exchange Online 位置。 | 在遷移期間，客戶可以繼續在安全性 & 規範中心（包括內容搜尋）中建立案例、保留、搜尋和匯出。  不過，針對已遷移的 SharePoint 線上、OneDrive 商務和 Exchange Online 位置進行搜尋會傳回0個結果或產生錯誤。 如需修正，請參閱 _影響_ 欄。 | 所有使用 eDiscovery 的客戶 |  在遷移期間，如果搜尋傳回0個結果或發生錯誤，請在線上 SharePoint 執行下列動作： <br><br>  遵循 [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中的指示，直接從 SharePoint Online/OneDrive 取得商務網站下載網站。 此方法將需要 SharePoint 線上系統管理員許可權或網站的唯讀許可權。 <br><br> 若超出限制（ [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中所述），客戶可以遵循 [與電腦同步 SharePoint 及小組](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)檔案的指導方針，使用 OneDrive 進行商務同步處理用戶端。 <br><br> -Exchange Online <br><br> - [在 Exchange Server 中 In-Place eDiscovery](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
+| 在遷移期間，電子檔探索搜尋會失敗，或傳回0個結果，以供 SharePoint 線上、OneDrive 商務及已遷移的 Exchange Online 位置。 | 在遷移期間，客戶可以繼續在 [安全性 & 規範中心](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations)（包括 [內容搜尋](https://docs.microsoft.com/microsoft-365/compliance/search-for-content)）中建立案例、保留、搜尋和匯出。  不過，針對已遷移的 SharePoint 線上、OneDrive 商務和 Exchange Online 位置進行搜尋會傳回0個結果或產生錯誤。 如需修正，請參閱 _影響_ 欄。 | 所有使用 eDiscovery 的客戶 |  在遷移期間，如果搜尋傳回0個結果或發生錯誤，請在線上 SharePoint 執行下列動作： <br><br>  遵循 [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中的指示，直接從 SharePoint Online/OneDrive 取得商務網站下載網站。 此方法將需要 SharePoint 線上系統管理員許可權或網站的唯讀許可權。 <br><br> 若超出限制（ [從 OneDrive 或 SharePoint 下載檔案及資料夾](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05)中所述），客戶可以遵循 [與電腦同步 SharePoint 及小組](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88)檔案的指導方針，使用 OneDrive 進行商務同步處理用戶端。 <br><br> -Exchange Online <br><br> - [在 Exchange Server 中 In-Place eDiscovery](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery) |
 |||||
 
 <!--

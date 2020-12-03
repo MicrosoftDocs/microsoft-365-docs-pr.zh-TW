@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 應用程式健康情況技術經驗的詳細資料。
-ms.openlocfilehash: c38f2109ed41377cfccb9838c95dbfbebbfd322a
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
+ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123508"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49562940"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 應用程式健康情況–技術經驗
 
-生產力分數可協助組織使用有關人員如何使用 Microsoft 365 應用程式和支援技術經驗的衡量方式，來變換工作的運作方式。 分數會反映您的組織&#39;人員和技術經驗類別的效能，並將您的分數與像您的組織相比較。 應用程式健康情況類別是技術經驗範圍內的一部分度量。 若要深入瞭解，請參閱 [生產力評分一覽](productivity-score.md) 。
+生產力分數透過使用 Microsoft 365 和支援 it 的技術體驗，提供您組織的數位轉換旅程的洞察力。 組織的分數反映人員和技術經驗度量，可與類似組織的基準進行比較。 應用程式健康情況類別是技術經驗範圍內的一部分度量。 若要深入瞭解，請參閱 [生產力評分概述](productivity-score.md) ，並閱讀 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>為什麼您的組織&#39;Microsoft 365 應用程式健康情況評分問題
 
@@ -101,11 +101,11 @@ Microsoft 365 應用程式健康情況分數會測量裝置是否正在建議的
 
 :::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="圖表，showa 支援的裝置數量，以及一段時間內的最新應用程式版本。":::
 
-## <a name="people-in-your-organization"></a>組織中的人員
+## <a name="devices-in-your-organization"></a>組織中的裝置
 
 本節可將相關資訊提供給 Microsoft 365 應用程式健康情況技術經驗的所有度量，協助您採取行動的衡量標準。
 
-下列各欄是在使用者層級的表格中呈現：
+下表以通道/版本層級呈現在表格中：
 
 - **通道** ：裝置上目前的 Microsoft 365 應用程式通道。
 - **狀態：**   Microsoft 365 應用程式支援以目前通道和版本為基礎的裝置狀態。

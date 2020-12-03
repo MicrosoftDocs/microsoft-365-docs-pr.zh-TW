@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：新端點 Web 服務不包含特定案例的少量端點。
 hideEdit: true
-ms.openlocfilehash: 30d0c7af8420f85abf820839a26c989704860c0a
-ms.sourcegitcommit: c1ee4ed3c5826872b57339e1e1aa33b4d2209711
+ms.openlocfilehash: b94bd187eb0e450a2a85d4d156472e1f96420261
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "48235579"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558173"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 位址和 URL Web 服務中未包含的其他端點
 
@@ -66,7 +66,7 @@ ms.locfileid: "48235579"
 | 19  | 使用 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) 將內部部署使用者帳戶同步處理到 Azure AD。 | 請參閱[混合式身分識別所需的連接埠和通訊協定](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports)、[疑難排解 Azure AD 連線](https://docs.microsoft.com/azure/active-directory/hybrid/tshoot-connect-connectivity) 和 [Azure AD Connect Health 代理程式安裝](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)。 | 僅限外寄伺服器的流量 |
 | 共  | [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/) 與中國的 21 ViaNet 將內部部署使用者帳戶同步處理到 Azure AD。 | \*.digicert.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <BR> secure.aadcdn.partner.microsoftonline-p.cn:443 <BR>*.partner.microsoftonline.cn:443 <BR> <BR>另請參閱[針對 Azure AD Connect 的連線問題進行疑難排解](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity)。 | 僅限外寄伺服器的流量 |
 |  21  | Microsoft Stream (需要 Azure AD 使用者權杖)。 <BR> Office 365 全球 (包括 GCC) | \*.cloudapp.net <BR> \*.api.microsoftstream.com <BR> \*.notification.api.microsoftstream.com <BR> amp.azure.net <BR> api.microsoftstream.com <BR> az416426.vo.msecnd.net <BR> s0.assets-yammer.com <BR> vortex.data.microsoft.com <BR> web.microsoftstream.com <BR> TCP 通訊埠 443  | 內送伺服器流量 |
-| 22  | 在伺服器的新安裝以及使用Active Directory 網域服務 (AD DS) 進行設定時，將 MFA 伺服器用於多重要素驗證要求。 | 請參閱[開始使用 Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)。  | 僅限外寄伺服器的流量 |
+| 22  | 在伺服器的新安裝以及使用Active Directory 網域服務 (AD DS) 進行設定時，將 MFA 伺服器用於多重要素驗證要求。 | 請參閱 [AZURE AD Multi-Factor 驗證服務器快速入門](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)。  | 僅限外寄伺服器的流量 |
 | 至  | Microsoft Graph 變更通知 | 開發人員可以利用[變更通知](https://docs.microsoft.com/graph/webhooks?context=graph%2Fapi%2F1.0&view=graph-rest-1.0)來訂閱 Microsoft Graph 中的事件。 | *.cloudapp.net<BR> 104.43.130.21、137.116.169.230、13.79.38.63、104.214.39.228、Public Cloud：168.63.250.205、52.161.9.202、40.68.103.62、13.89.60.223、23.100.95.104、40.113.95.219、104.214.32.10、168.63.237.145、52.161.110.176、52.174.177.183、13.85.192.59、13.85.192.123、13.86.37.15、13.89.108.233、13.89.104.147、20.44.210.83、20.44.210.146、40.76.162.99、40.76.162.42、40.74.203.28、40.74.203.27、51.104.159.213、51.104.159.181、51.124.75.43、51.124.73.177、51.138.90.7、51.138.90.52、52.139.153.222、52.139.170.157、52.139.170.47、52.142.114.29、52.142.115.31、52.147.213.251、52.147.213.181、52.148.24.136、52.148.27.39、52.148.115.48、52.148.114.238、52.154.246.238、52.159.23.209、52.159.17.84、52.184.94.140 <BR> 適用于美國政府的 Microsoft 雲端：52.244.231.173、52.238.76.151、52.244.250.211、52.238.78.108、52.243.147.249、52.243.148.19、52.243.157.104、52.243.157.105、52.244.33.45、52.244.35.174、52.244.111.156、52.244.111.170 <BR> Microsoft Cloud 德國：51.4.231.136、51.5.243.223、51.4.226.154、51.5.244.215、51.4.150.206、51.4.150.235、51.5.147.130、51.5.148.103 <BR> 由世紀運作的 Microsoft 雲端中國：139.219.15.33、42.159.154.223、42.159.88.79、42.159.155.77、40.72.155.199、40.72.155.216、40.125.138.23、40.125.136.69、42.159.72.35、42.159.72.47、42.159.180.55、42.159.180.56<BR> TCP 通訊埠 443 <BR> 附註：開發人員可以在建立訂閱時指定不同的通訊埠。  | 內送伺服器流量 |
 |||||
 

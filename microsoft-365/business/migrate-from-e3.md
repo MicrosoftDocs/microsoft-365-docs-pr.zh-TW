@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 瞭解如何將您的業務移至 Microsoft 365 商務版，從 Office 365 E3。
-ms.openlocfilehash: b8aa58f1f050ec6247479ed02e142507a2df45fc
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: eebf78c24ed4bfd1a4fc2d843f37aebbe3d35e31
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842153"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558245"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>從 Office 365 E3 遷移至 Microsoft 365 商務版 Premium 
 
@@ -53,7 +53,7 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 | **威脅防護**        | | | 
 | 適用于 Office 的 Defender 365 方案1 | ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | 不包含，但可以新增于 | 
 | **身分識別管理**        | | | 
-| 混合式 Azure Active Directory 的自助密碼重設 (Azure AD) 帳戶，Azure 多重要素驗證 (MFA) ，條件式存取，針對內部部署身分識別的密碼回寫功能|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    |  | 
+| 混合式 Azure Active Directory 的自助密碼重設 (Azure AD) 帳戶，Azure AD 多重要素驗證 (MFA) ，條件式存取，針對內部部署身分識別的密碼回寫。|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    |  | 
 | **裝置和應用程式管理**        | | |
 | Microsoft Intune、Windows AutoPilot|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    |  |
 | 共用電腦啟用|     ![隨附于 Microsoft 365 商務版 Premium](../media/check-mark.png)    | ![隨附于 Office 365 E3](../media/check-mark.png)| 
@@ -95,9 +95,9 @@ Microsoft 365 商務版 Premium 具有您的小型企業所需的一切，結合
 
 您也可以在 [裝置] 頁面上完成這些步驟：
   
-1. 在系統管理中心的左側導覽中，移至 [ **裝置** \> **原則** ]。
+1. 在系統管理中心的左側導覽中，移至 [ **裝置** \> **原則**]。
     
-2. 在 [ **裝置原則** ] 頁面上，選擇 [ **新增** ]。
+2. 在 [ **裝置原則** ] 頁面上，選擇 [ **新增**]。
     
 3. 在 [ **新增原則** ] 窗格中，將原則命名為 [名稱]，然後從下拉式清單中選擇 **原則類型** 。 
     

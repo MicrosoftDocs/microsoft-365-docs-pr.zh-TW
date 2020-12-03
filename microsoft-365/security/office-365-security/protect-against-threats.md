@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護，並設定如何將它用於您的組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d80e81ab5648d186bb72f29acc010442877aba7c
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 98a20c8805ff9eb735ca880cfc24a0acf9698b3e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356676"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561198"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -54,9 +54,9 @@ ms.locfileid: "49356676"
 |防網路釣魚保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |反垃圾郵件保護|[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |電子郵件的零小時自動清除 () |[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|保護電子郵件和 Office 檔中的惡意 URLs 和檔案 (安全連結和安全附件) |[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|保護電子郵件和 Office 檔中的惡意 URLs 和檔案 (安全連結和安全附件) |[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |開啟 SharePoint、OneDrive 和 Microsoft 小組工作負載的 ATP|[適用于 Office 的 Defender 365 ](atp-for-spo-odb-and-teams.md)|
-|高級反網路釣魚保護|[適用於 Office 365 的 Defender](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|高級反網路釣魚保護|[適用于 Office 的 Defender 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色及權限
 
@@ -71,7 +71,7 @@ ms.locfileid: "49356676"
 |Exchange Online 組織管理|[Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>和<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
-若要深入瞭解，請參閱 [安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+若要深入瞭解，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>開始之前，請開啟報告和調查的審計記錄
 
@@ -91,7 +91,7 @@ ms.locfileid: "49356676"
 
     - 在 [ **一般附件類型篩選** ] 區段中，選擇 [ **開啟**]。
 
-4. 按一下 [儲存]。
+4. 按一下 **[儲存]**。
 
 若要深入瞭解反惡意程式碼原則選項，請參閱 [設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 
@@ -145,7 +145,7 @@ ms.locfileid: "49356676"
 
    - 在 [ **允許清單** ] 區段中，複查 (和/或編輯) 允許的寄件者和網域。
 
-4. 按一下 [儲存]。
+4. 按一下 **[儲存]**。
 
 若要深入瞭解您的反垃圾郵件原則選項，請參閱 [在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
@@ -167,7 +167,7 @@ ms.locfileid: "49356676"
      - 在 [ **安全附件未知惡意程式碼回應** ] 區段中，選擇 [ **封鎖**]。
      - 在 [重新 **導向附件** ] 區段中，選取 [ **啟用重新導向**] 選項。 指定組織的安全性系統管理員或操作員的電子郵件地址，誰會檢查偵測到的檔案。
 
-     按 [下一步 **]**。
+     按 **[下一步]**。
 
 3. 在 [套用 **至**] 頁面上，按一下 [**新增條件**]，然後選擇 [套用者 **：收件者網域是**]，按一下 [**新增**]，選取您的網域，按一下 [**新增**]，按一下 [**完成**]，然後按 **[下一步**
 

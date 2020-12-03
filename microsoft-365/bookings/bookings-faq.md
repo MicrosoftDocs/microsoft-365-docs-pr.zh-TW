@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft 預定常見問題。
-ms.openlocfilehash: 40605cfc7e5d30e12cd34a463a76e8d9c324efc7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445448"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561552"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 預定常見問題
 
@@ -29,7 +29,7 @@ Microsoft 預約是 Microsoft 365 應用程式，可讓排程和管理約會變�
 
 ### <a name="who-has-access-to-microsoft-bookings"></a>誰有權存取 Microsoft 預約？
 
-Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的預約。 您也可以在由世紀運作的 Office 365 中使用預定。
+Microsoft 365 商務高級版、Microsoft 365 Business Standard、A3、A5、E3 和 E5 客戶在全球皆可使用且預設為「預定」。 您也可以在由世紀運作的 Office 365 中使用預定。
 
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>我的客戶會看到我的個人或商務行事曆嗎？
 
@@ -37,7 +37,7 @@ Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的�
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>使用者如何存取預定應用程式？
 
-任何獲得 Microsoft 365 商務版特優、A3、A5、，或以系統管理員或檢視器角色為單位成員的人員，都可以在 Microsoft 365 Web 體驗中的應用程式選擇範圍記憶體取預定。 IOS 和 Android 也可以使用隨附的應用程式。
+Microsoft 365 商務版、Microsoft 365 Business Standard、A3、A5、E3、E5 或的任何人，都是以系統管理員或檢視器角色中的教職員工成員身分加入的任何人員，都可以在 Microsoft 365 Web 體驗中的應用程式選擇範圍記憶體取預定。 IOS 和 Android 也可以使用隨附的應用程式。
 
 ### <a name="can-i-use-bookings-in-my-own-web-site"></a>我是否可以在自己的網站中使用預定？
 
@@ -49,9 +49,9 @@ Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的�
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>我們的 IT 部門是否可以控制使用者是否可以存取預定？
 
-根據預設，預訂可用於商務津貼、M365 A3/A5 和 E3/E5 租使用者，但是管理員可以在 Microsoft 365 系統管理中心中將其關閉，如果他們選擇。 若要這麼做，請 [遵循下列指示](turn-bookings-on-or-off.md)。
+根據預設，可在 Microsoft 365 商務版、Microsoft 365 Business Standard、M365 A3/A5 和 E3/E5 租使用者中取得預約，但系統管理員可以選擇在 Microsoft 365 系統管理中心中將其關閉。 若要這麼做，請 [遵循下列指示](turn-bookings-on-or-off.md)。
 
-如果客戶想要對其承租人中的某些合格授權停用預約存取權，他們可以使用「群組原則」來限制授權或實施 OWA 信箱原則，以限制能夠建立新預約行事曆的使用者。
+若客戶想要對其承租人中的某些合格授權停用預約存取權，他們可以使用群組原則來限制授權或實施 OWA 信箱原則，以限制能夠建立新預約行事曆的人員。
 
 如果您使用 OWA 信箱原則來停用預約的存取權，則所有使用者都將擁有預約授權，但是當他們嘗試存取應用程式時，如果他們是原則的一部分，或已將其新增至現有的預約行事曆，則他們只會成功。 在 [這裡](turn-bookings-on-or-off.md) 的 [只允許選取的使用者建立預約行事曆] 區段中的詳細資料。
 
@@ -114,7 +114,7 @@ Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的�
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>如何取得 Microsoft 預定？
 
-可在 Microsoft 365 中取得預約，以供含商務津貼、A3、A5、E3 和 E5 授權的客戶使用，以及 iOS 和 Android 隨附的應用程式。 不能以獨立應用程式形式進行預訂。 必須啟用 outlook Web App 或 Web 上的 Outlook，才能使用預定，因為它會將資料儲存在 Outlook 內。
+可在 Microsoft 365 中提供預約，以供使用 Microsoft 365 商務版的客戶使用。 Microsoft 365 Business Standard、A3、A5、E3 和 E5 授權，以及 iOS 和 Android 一起使用的應用程式。 不能以獨立應用程式形式進行預訂。 必須啟用 outlook Web App 或 Web 上的 Outlook，才能使用預定，因為它會將資料儲存在 Outlook 內。
 
 預約授權為產品提供完整功能，包括建立及管理行事曆。 當使用者新增為系統管理員或查看者角色中的人員時，也可讓使用者查看及編輯現有的行事曆。
 
@@ -172,9 +172,9 @@ Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的�
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>預約如何在時區內運作？
 
-所有時間皆位於商務時區中 (當地時區) 預設。 這表示您為預約行事曆中設定的任何設定，例如工作時間，將會出現在這個時區。 「自助」頁面能夠在使用者時區內顯示所有約會時間，如果需要，可以關閉此功能。如果 [預約] 頁面索引標籤上的 [ **永遠在上班時間中顯示時段** ]，則在 [預約] 頁面] 索引標籤上會保持未勾選的時間段
+所有時間皆位於商務時區中 (當地時區) 預設。 這表示您為預約行事曆中設定的任何設定，例如工作時間，將會出現在這個時區。 「自助」頁面能夠在使用者時區內顯示所有約會時間，如果需要，可以關閉此功能。 如果 [預約] 頁面索引標籤上的 [ **永遠在上班時間中顯示時段** ]，則在 [預約] 頁面] 索引標籤上會保持未勾選的時間段
 
-:::image type="content" source="media/bookings-faq-region.png" alt-text="排程預定":::
+:::image type="content" source="media/bookings-faq-region.png" alt-text="預定地區和時區設定":::
 
 沒有任何規定可為預約中的人員設定時區。 員工時區（上班時間）將會在上班時間區域中。
 
@@ -202,7 +202,7 @@ Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的�
 
 是。 Web 應用程式中的 [預約頁面] 索引標籤上有核取方塊： **需要從「我的組織」到預訂的 Microsoft 365 或 Office 365 帳戶**。 選取此核取方塊會使自助頁面存取只會限制在您租使用者中的頁面。 位於 Web 應用程式建立和管理中的預約行事曆，只能由以系統管理員或檢視器角色新增為頁面人員的人員存取。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="排程預定":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="預定中的預約頁面存取控制":::
 
 ### <a name="how-frequently-does-the-home-page-update"></a>首頁更新的頻率如何？
 
@@ -250,7 +250,7 @@ Microsoft 365 商務版 Premium、A3、A5、E3 及 E5 客戶預設為全球的�
 
 存取預約 Web app 涉及透過一般 Azure Active Directory (AAD) 驗證進行驗證。 您可以使用 [自助預約] 頁面，讓每位使用者都能使用網頁連結。 不過，如果選取了 [從我的組織傳送給圖書的 **microsoft 365 或 Office 365 帳戶** ] 設定，則頁面僅限在 Microsoft 365 租使用者 (使用 AAD 驗證) 時使用。
 
-:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="排程預定":::
+:::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="預定中的預約頁面存取控制":::
 
 ### <a name="does-customer-data-leave-the-production-system-for-any-reason"></a>客戶資料是否因任何原因而留出生產系統？
 
@@ -303,18 +303,20 @@ GDPR 合規性已存在此功能。 「預約」頁面具有「自訂同意」�
 
 1. 登入 Microsoft 365，然後從應用程式啟動器中選取 [ **Outlook** ]。
 
-   ![在應用程式啟動器中的 Outlook 影像](../media/bookings-applauncher-outlook.png)
+   > [!div class="mx-imgBorder"]
+   > ![在應用程式啟動器中的 Outlook 影像](../media/bookings-applauncher-outlook.png)
 
-1. 在頁面頂端，選取 [共用行事**Share** \> **曆**]。
+1. 在頁面頂端，選取 [共用行事 **Share** \> **曆**]。
 
    ![「行事曆共用」功能表的影像](../media/bookings-share-calendar.png)
 
 1. 在 [ **組織內的人員** ] 區段中，選取 [ **我的組織**] 旁邊的下拉式方塊，然後選取 [ **在我忙碌時可以查看**]。
 
-> [!NOTE]
-> 此設定會與您的組織中的其他使用者共用空閒/忙碌資訊。 它不包含任何其他資訊，例如排程的約會類型、您排定約會的使用者，或位置。
+   > [!NOTE]
+   > 此設定會與您的組織中的其他使用者共用空閒/忙碌資訊。 它不包含任何其他資訊，例如排程的約會類型、您排定約會的使用者，或位置。
 
-   ![可查看何時啟用忙碌狀態的 [行事曆共用] 畫面影像](../media/bookings-view-busy.png)
+   > [!div class="mx-imgBorder"]
+   > ![可查看何時啟用忙碌狀態的 [行事曆共用] 畫面影像](../media/bookings-view-busy.png)
 
 1. 選取 **[完成]**。
 
@@ -324,7 +326,7 @@ GDPR 合規性已存在此功能。 「預約」頁面具有「自訂同意」�
 
 1. 登入 Microsoft 365，然後移至 **預定** \> **員工**。
 
-1. 將滑鼠游標懸停在教職員工成員的名稱上方。 [**編輯**和**刪除**] 圖示會出現在 [**電話**] 欄的右側。
+1. 將滑鼠游標懸停在教職員工成員的名稱上方。 [**編輯** 和 **刪除**] 圖示會出現在 [**電話**] 欄的右側。
 
 1. 選取 **刪除** 圖示。
 
@@ -335,7 +337,7 @@ GDPR 合規性已存在此功能。 「預約」頁面具有「自訂同意」�
 
 若要檢查您是否有一個以上的行事曆，請在左側的功能表中，選取公司名稱旁邊的下拉式箭頭，然後選取 [ **開啟**]。 如果您只有一個行事曆，您只會看到新增預約行事曆的選項。 此範例會顯示名為 "Contoso CO" 的第二個行事曆。
 
-   ![顯示第二個行事曆的 [行事曆] 畫面的影像](../media/bookings-choose-calendar.png)
+![顯示第二個行事曆的 [行事曆] 畫面的影像](../media/bookings-choose-calendar.png)
 
 ### <a name="theres-a-syncing-error-we-cant-identify"></a>發生同步錯誤無法識別
 

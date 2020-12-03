@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 行動人員經歷生產力分數的詳細資料。
-ms.openlocfilehash: e37d5ff0377163bea270b1d16e8b4fddae9099b4
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 04651cfee4ac2e67c4099c47bfe6d8c07b41ba83
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551860"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561574"
 ---
 # <a name="mobility--people-experiences"></a>行動性–人員經驗
 
-生產力分數可讓您的組織如何使用 Microsoft 365 及其技術，以取得數位轉換的經驗。 貴組織的分數反映人員和技術經驗度量，可與組織 emc 中大小類似的基準，進行比較。 行動性類別屬於人員經驗。 若要深入瞭解，請參閱 [生產力評分一覽](productivity-score.md) 。
+生產力分數透過使用 Microsoft 365 和支援 it 的技術體驗，提供您組織的數位轉換旅程的洞察力。 組織的分數反映人員和技術經驗度量，可與類似組織的基準進行比較。 行動性類別是「人員經驗」措施的一部分。 若要深入瞭解，請參閱 [生產力評分概述](productivity-score.md) ，並閱讀 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>為什麼您的組織&#39;的行動分數重要
 
@@ -36,20 +36,20 @@ ms.locfileid: "49551860"
 
 ## <a name="how-we-calculate-the-score"></a>如何計算分數
 
-我們會在經驗中提供此類別的主要計量。 然後，下列詳述的計分架構用於計算您的分數。
+我們會在經驗中提供此類別的主要計量。 然後，下列所詳述的計分架構用於計算組織的分數。
 
 ### <a name="primary-insight"></a>主要洞察力
 
-Microsoft 365 可讓使用者跨應用程式（包括 Microsoft Outlook、Word、Excel、PowerPoint、OneNote、Microsoft 團隊、Yammer 及 Skype）進行更靈活的工作。 人們也可以從任何地方使用跨桌面、web 及行動平臺的無縫體驗，也可以在任何地方運作。 主要的洞察力是查看為組織中的人員啟用的產品，以及這些人員中有多少人在至少兩個平臺上都有作用。
+Microsoft 365 可讓人員跨應用程式（包括 Microsoft Outlook、Word、Excel、PowerPoint、OneNote、Microsoft 團隊、Yammer 和商務用 Skype）靈活地運作。 人們也可以從任何地方使用跨桌面、web 及行動平臺的無縫體驗，也可以在任何地方運作。 主要的洞察力是查看為組織中的人員啟用的產品，以及這些人員中有多少人在至少兩個平臺上都有作用。
 
 :::image type="content" source="../../media/primary-mobility.png" alt-text="圖表顯示行動的主要洞察力-人員體驗生產力分數。":::
 
-1. **標頭：** 顯示有權存取任何 Microsoft 365 應用程式的人員的百分比，以及在多個平臺上至少有一個應用程式的作用中。
+1. **標頭：** 顯示您的組織中有權存取任何 Microsoft 365 應用程式的人員所占的百分比，以及在一部以上的應用程式中，至少要有一個以上的應用程式。
 2. **Body：** 提供如何在多個平臺上使用這些應用程式的詳細資訊，以提升效率及滿意度。
-3. **視覺效果 (目前狀態) ：** 顯示在桌面、行動和網路上，下列至少一個 Microsoft 365 (清單中使用多個平臺的人員，如下所示) ，如下所示：
+3. **視覺效果 (目前狀態) ：** 顯示在桌面機、行動和網路上，至少有一個 Microsoft 365 (清單的多少人會使用多個平臺) 如下所示：
     - **水準條** ，藍色 (彩色) 部分代表標頭中所表達的百分比。
     - 長條圖上 **的分數** 會強調用於計算頁首中百分比的 (分子/分母) 。
-        - 分子：過去28天內，在 Microsoft Outlook、Word、Excel、PowerPoint、OneNote 和 Microsoft 團隊、Yammer 及 Skype （含）以上平臺的使用任何應用程式的人數。
+        - 分子：您的組織中，使用 Microsoft Outlook、Word、Excel、PowerPoint、OneNote 和 Microsoft 團隊、Yammer 及 Skype 中的任何應用程式的人數，在過去28天內的桌面、web 和行動裝置。
         - 分母： Microsoft 365 應用程式、Exchange、Yammer、Microsoft 團隊或 Skype 的使用者人數，至少要有1天的最後28天。
     - 主要躍點的 **對等基準** 值也會顯示為百分比。
 4. **查看行動資源：** 選取此連結可查看 [說明] 內容。
@@ -58,14 +58,17 @@ Microsoft 365 可讓使用者跨應用程式（包括 Microsoft Outlook、Word�
 
 :::image type="content" source="../../media/mobility-primary.png" alt-text="圖表顯示使用一或多個平臺與時間的人員人數。":::
 
-此圖顯示趨勢線，其中分子是使用應用程式的人數，在過去180天內。 折線圖上的每個資料點都是過去28天的活動匯總。 每個資料點都提供在 X 軸上的每個日期的最近28天內，所有使用應用程式的所有人員的計數。
+此圖顯示趨勢線，其中分子是使用應用程式的人數，在過去180天內。 折線圖上的每個資料點都是過去28天的活動匯總。 每個資料點都提供您組織中所有人員的計數，該應用程式是在 X 軸上的每個日期的最後28天內，至少使用兩個平臺的應用程式。
 
 ### <a name="scoring-framework"></a>計分架構
 
 組織的行動得分排名 (合計) 層級的人員是否正在使用 Microsoft 365 應用程式-Outlook、團隊、Word、Excel、PowerPoint、OneNote、Yammer 及 Skype 的各個平臺-桌面、web 和行動裝置。
+
 在個別使用者層級不提供分數。
 
 ## <a name="explore-how-your-org-works-across-platforms-and-locations"></a>探索您的組織如何跨平臺和位置運作
+
+我們也會提供資訊，協助您深入瞭解組織中的人員如何在平臺上運作。 這些額外的計量不會直接對您的生產力評分產生貢獻，但可協助您建立行動計畫做為數位轉換的一部分。  
 
 ### <a name="use-of-outlook-across-platforms"></a>跨平臺使用 Outlook
 
@@ -75,7 +78,7 @@ Microsoft 365 可讓使用者跨應用程式（包括 Microsoft Outlook、Word�
 2. **Body：** 提供在行動裝置上使用 Outlook 的值的相關資訊，以協助保持從電子郵件上任何地方連線。
 3. **視覺效果：** 顯示在 Outlook 上使用中且使用一或多個平臺的人員百分比：
       - **多種平臺：**
-        - 分子：過去28天內，已使用 Outlook 在桌面、行動裝置或 web 上至少有兩個平臺的人員人數
+        - 分子：過去28天內，已在桌面、行動裝置或網站上使用 Outlook 的人員人數（至少是兩個）。
         - 分母：過去28天內，已使用 Outlook 至少一次的人員人數。
       - **僅限桌面：**
         - 分子：過去28天內，只在桌面平臺上使用 Outlook 的人員人數。
@@ -85,8 +88,7 @@ Microsoft 365 可讓使用者跨應用程式（包括 Microsoft Outlook、Word�
         - 分母：過去28天內，已使用 Outlook 至少一次的人員人數。
       - **僅限行動裝置：**
         - 分子：過去28天內，只在行動平臺上使用 Outlook 的人員人數。
-        - * 分母：過去28天內，已使用 Outlook 至少一次的人員人數
-4. **查看相關內容：** 選取此連結可查看 [說明] 內容。
+        - * 分母：過去28天內，已使用 Outlook 至少一次的人員人數。
 
 ### <a name="use-of-teams-across-platforms"></a>跨平臺使用團隊
 
@@ -107,7 +109,6 @@ Microsoft 365 可讓使用者跨應用程式（包括 Microsoft Outlook、Word�
     - **僅限行動裝置：**
         - 分子：過去28天內，僅在行動平臺上使用 Microsoft 團隊的人員人數
         - 分母：過去28天內，已使用團隊至少一次的人員人數
-1. **查看相關內容：** 選取此連結可查看 [說明] 內容。
 
 ### <a name="use-of-microsoft-365-apps-across-platforms"></a>跨平臺使用 Microsoft 365 應用程式
 
@@ -115,63 +116,19 @@ Microsoft 365 可讓使用者跨應用程式（包括 Microsoft Outlook、Word�
 
 1. **標頭：** 顯示多個平臺上的 Microsoft 365 應用程式 (Word、Excel、PowerPoint 及 OneNote) 的活動人員百分比。
 2. **Body：** 提供值的相關資訊，讓組織中的人員能夠靈活地從任何地方存取其檔案。
-3. **視覺效果：** 「分組垂直」是用來表示每個考慮每個應用程式（Word、Excel、PowerPoint，以及 OneNote 跨單一或多個平臺的人員人數。 針對上述每個應用程式，橫條圖代表下列各項：
-      - **多種平臺：** 過去28天內，在應用程式上的使用中至少有兩個平臺的使用者人數
-      - **僅限桌面：** 過去28天只有桌面平臺上的使用中應用程式的使用者 umber
-      - **僅限網頁：** 過去28天內，僅限網頁平臺上的使用中應用程式的使用者 umber
-      - **僅限** 行動裝置：過去28天內，在僅限行動平臺上的應用程式中使用中的使用者人數
-4. **查看相關內容：** 選取此連結可查看 [說明] 內容。
+3. **視覺效果：** 「群組垂直」是用來表示使用每個應用程式（Word、Excel、PowerPoint 及 OneNote）的人員人數，跨單一或多個平臺。 針對上述每個應用程式，橫條圖代表下列各項：
+      - **多種平臺：** 在過去28天內，在應用程式中，至少有兩個平臺的使用者人數。
+      - **僅限桌面：** 過去28天內，在僅限桌面平臺上的應用程式使用中的使用者人數。
+      - **僅限網頁：** 過去28天內，在僅限網頁平臺上的應用程式使用中的使用者人數。
+      - **僅限** 行動裝置：過去28天內，在僅限行動平臺上的應用程式使用中的使用者人數。
 
 ### <a name="remote-work"></a>遠端工作
 
 :::image type="content" source="../../media/remotework-trend.png" alt-text="圖表，顯示在遠端、網站或兩者上工作的人員數量。":::
 
-1. **標頭：** 顯示僅從公司&#39;網路以外的住宅或地點工作之人員所占的百分比。
-2. **Body：** 著重強調可讓人員進行遠端工作，而不需要存取組織&#39;的實體辦公室的重要性。
+1. **標頭：** 顯示只從公司網路以外的住宅或地點工作的人員百分比。
+2. **Body：** 強調可讓人員進行遠端工作，而不需要存取組織的實體辦公室的重要性。
 3. **視覺效果：** 顯示每日只有遠端工作的人員，以及同時在現場運作之人員的每日百分比的趨勢線。 若使用者一天內至少在 Microsoft 365 應用程式中執行三小時的活動，使用者就會被視為現場使用者。
-4. **查看相關內容：** 選取此連結可查看 [說明] 內容。
-
-## <a name="people-in-your-organization"></a>組織中的人員
-
-本節提供與頁面上所有真知灼見相關之活動的可操作使用者層級詳細資料。
-
-下列各欄是在使用者層級的表格中呈現：
-
-- 使用者 **名稱：** 使用者的電子郵件地址。
-- **顯示名稱：**  使用者的完整名稱。
-- **上次活動日期：**  使用者最後一次執行與過去28天內的任何行動得分相關之活動相關的活動。
-- **部門：** 在 Azure Active Directory (Azure AD) 中為使用者定義的部門。
-- **公司：** 在 Azure AD 中為使用者定義的公司。
-- **國家/地區：** 在 Azure AD 中為使用者定義的國家/地區。
-- **狀態：** 在 Azure AD 中為使用者定義的狀態。
-- **城市：** 在 Azure AD 中為使用者定義的城市。
-下列度量值是以前28天為基礎：
-- **Microsoft 365 應用程式：** 布林值，指出是否已啟用使用者的 Microsoft 365 應用程式– Outlook、Word、Excel、PowerPoint、OneNote 至少一天。
-- **Exchange：** 布林值，指出是否至少一天啟用人員的 Exchange。
-- **Yammer：** 布林值，指出是否至少有一天沒有啟用人員的 Yammer。
-- **Skype：** 布林值，指出是否已啟用人員的 Skype 至少一天。
-- **Microsoft 團隊：** 布林值，指出是否已為小組啟用人員至少一天。
-- **Outlook (桌面) 中的天數：** 使用者在桌面平臺上的 Outlook 中使用中的天數。
-- **Outlook (web) 中的天數：** 在網頁平臺的 Outlook 中，該人員處於使用中狀態的天數。
-- **Outlook (mobile) 中的天數：** 在行動平臺上的 Outlook 中，該人員處於使用中狀態的天數。
-- **Microsoft 團隊中 (桌面) 的天數：** 使用者在桌面平臺上的團隊作用中的天數。
-- **Microsoft 小組 (web) 中的天數：** 在網頁平臺中，該人員在團隊中使用中的天數。
-- **Microsoft 團隊中 (行動電話) 天數：** 行動裝置平臺上的團隊作用中的人員人數。
-- **Word (桌面) 中的日期：** 在桌面平臺中，該人員在 Word 上的使用中數目的天數。
-- **Word (web) 中的天數：** 在網頁平臺中，該人員在 Word 上的使用中天數。
-- **Word (mobile) 中的天數：** 在行動平臺中，該人員在 Word 上的使用中的天數。
-- **Excel (桌面) 中的日期：** 使用者在桌面平臺上的 Excel 中使用中的天數。
-- **Excel (web) 中的天數：** 在網頁平臺中，該人員在 Excel 中的使用中天數。
-- **Excel 中的工作日 (行動) ：** 在行動平臺上，在 Excel 中使用的人員人數。
-- **PowerPoint (桌面) 中的天數：** 在桌面平臺 PowerPoint 中，該人員使用中的天數。
-- **PowerPoint (網頁) 中的天數：** 在網頁平臺中 PowerPoint 人員在其上使用中的天數。
-- **PowerPoint (mobile) 中的天數：** 在行動平臺中 PowerPoint 人員使用中的天數。
-- **Yammer (桌面) 中的天數：** 在桌面平臺的 Yammer 中，該人員在 Yammer 上的使用中天數。
-- **Yammer (web) 中的天數：** 在 web 平臺中，該人員在 Yammer 上的使用中天數。
-- **Yammer 中的天數 (mobile) ：** 在行動平臺中，該人員在 Yammer 上的使用中天數。
-- **Skype (desktop) 中的天數：** 使用者在桌面平臺上的 Skype 中使用中的天數。
-- **Skype (web) 中的天數：** 在 web 平臺上的 Skype 中，該人員處於作用中狀態的天數。
-- **Skype (mobile) 中的天數：** 在行動平臺上啟用 Skype 之人員使用中的天數。
 
 ## <a name="related-content"></a>相關內容
 

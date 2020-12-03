@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時，服務的其他裝置資訊) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: da05a3c2eb6a8d579c53d403a1ef575c389eda12
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551950"
+ms.locfileid: "49560851"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 遷移的其他裝置資訊
 
@@ -136,6 +136,12 @@ Private key state : Okay
 
 
 ## <a name="windows-azure-ad-join"></a>Windows Azure AD 加入
+
+**重要：** 在商務用遷移後，將會啟用 Intune 服務主體，這表示 Azure AD Device Registration 的啟用。 如果您在遷移之前封鎖 Azure AD 裝置註冊，您必須使用 PowerShell 停用 Intune service 主體，以使用 Azure AD 入口網站停用 Azure AD 裝置註冊。 您可以在 [Graph] 模組的 [Azure Active Directory PowerShell 中使用此命令來停用 Intune 服務主體。
+
+```powershell
+Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
+```
 
 ### <a name="unjoin"></a>脫離
 

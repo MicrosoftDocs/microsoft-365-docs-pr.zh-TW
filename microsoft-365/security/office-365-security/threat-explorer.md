@@ -16,18 +16,18 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 瞭解如何在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效且有效地調查威脅並加以回應。
+description: 瞭解如何在安全性 & 規範中心使用 Explorer 和即時偵測，以有效且有效地調查威脅並作出回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bc137a7390961e2b6abe049aead2b238cb9d3a16
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021118"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561396"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
-如果您的組織有 [Microsoft Defender For Office 365](office-365-atp.md)，而您具有 [必要的許可權](#required-licenses-and-permissions)，則您 **的 Explorer** 或 **即時** 偵測 (以前的 *即時報告* -- [請參閱](#new-features-in-threat-explorer-and-real-time-detections)最近更新！ ) 。 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** ]，然後選擇 [ **Explorer** ] _或_ [ **即時** 偵測]。
+如果您的組織有 [Microsoft Defender For Office 365](office-365-atp.md)，而您具有 [必要的許可權](#required-licenses-and-permissions)，則您 **的 Explorer** 或 **即時** 偵測 (以前的 *即時報告* -- [請參閱](#new-features-in-threat-explorer-and-real-time-detections)最近更新！ ) 。 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**]，然後選擇 [ **Explorer** ] _或_[ **即時** 偵測]。
 
 |使用 Microsoft Defender for Office 365 方案2，您會看到：|使用 Microsoft Defender for Office 365 方案1，您會看到：|
 |---|---|
@@ -123,7 +123,7 @@ ms.locfileid: "49021118"
 
 目前，我們在電子郵件格線和電子郵件飛出範圍內呈現的位置。 接下來，[傳遞位置] 欄位將會重新命名為原始傳遞位置。 此外，我們也會引入另一個稱為 [最新傳遞位置] 的欄位。
 
-原始傳遞位置可提供有關最初傳送電子郵件的位置的詳細資訊。 最新的傳遞位置包含的位置，電子郵件可能會在進入後的系統動作（如 **移至 [已刪除的專案** ]）之後，將執行。 最新的傳遞位置是用來通知系統管理員郵件的最後一個已知位置送達後或任何系統/系統管理員動作。 根據設計，它不會在電子郵件上包含任何使用者相關的動作。 例如：如果使用者刪除郵件或將郵件移至封存/pst，將不會更新郵件的 [傳遞] 位置。 不過，如果系統動作更新了位置 (例如，ZAP 產生的電子郵件移至隔離區) ，您會看到最新的傳遞位置作為隔離區。
+原始傳遞位置可提供有關最初傳送電子郵件的位置的詳細資訊。 最新的傳遞位置包含的位置，電子郵件可能會在進入後的系統動作（如 **移至 [已刪除的專案**]）之後，將執行。 最新的傳遞位置是用來通知系統管理員郵件的最後一個已知位置送達後或任何系統/系統管理員動作。 根據設計，它不會在電子郵件上包含任何使用者相關的動作。 例如：如果使用者刪除郵件或將郵件移至封存/pst，將不會更新郵件的 [傳遞] 位置。 不過，如果系統動作更新了位置 (例如，ZAP 產生的電子郵件移至隔離區) ，您會看到最新的傳遞位置作為隔離區。
 
 > [!div class="mx-imgBorder"]
 > ![更新的傳遞位置](../../media/Updated_Delivery_Location.png)
@@ -318,13 +318,13 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 傳遞位置顯示原則和執行傳遞後偵測的結果。 其連結到「傳遞動作」。 已新增此欄位，以深入了解找到問題電子郵件時所採取的動作。 以下是傳遞位置可能的值：
 
-- **收件匣或資料夾** ：電子郵件位於收件匣或資料夾中 (根據您的電子郵件規則)。
-- **部署或外部** ：信箱不存在於雲端上，但為內部部署。
-- **垃圾郵件資料夾** ：電子郵件位於使用者的 [垃圾郵件] 資料夾中。
-- **刪除的郵件資料夾** ：電子郵件位於使用者的 [刪除的郵件] 資料夾中。
-- **隔離** ：隔離中的電子郵件，而不是使用者信箱中的電子郵件。
-- **失敗** ；電子郵件無法傳遞至信箱。
-- **已捨棄** ：電子郵件在郵件流程的某處遺失。
+- **收件匣或資料夾**：電子郵件位於收件匣或資料夾中 (根據您的電子郵件規則)。
+- **部署或外部**：信箱不存在於雲端上，但為內部部署。
+- **垃圾郵件資料夾**：電子郵件位於使用者的 [垃圾郵件] 資料夾中。
+- **刪除的郵件資料夾**：電子郵件位於使用者的 [刪除的郵件] 資料夾中。
+- **隔離**：隔離中的電子郵件，而不是使用者信箱中的電子郵件。
+- **失敗**；電子郵件無法傳遞至信箱。
+- **已捨棄**：電子郵件在郵件流程的某處遺失。
 
 ### <a name="email-timeline"></a>電子郵件時間表
 
@@ -354,14 +354,14 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 假設您想要查看 Microsoft 365 技術在電子郵件中偵測到惡意程式碼。 若要這麼做，請使用瀏覽器的 [電子郵件 > 惡意](threat-explorer-views.md#email--malware) 代碼視圖 (或即時偵測) 。
 
-1. 在安全性與合規性中心 ( [https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]** )。 (此範例使用總管。)
+1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
-2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[惡意程式碼 ]** 。
+2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[惡意程式碼 ]**。
 
    > [!div class="mx-imgBorder"]
    > ![總管的檢視功能表](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. 按一下 **[寄件者]** ，然後選擇 **[基本]** > **[偵測技術]** 。
+3. 按一下 **[寄件者]**，然後選擇 **[基本]** > **[偵測技術]**。
 
    您的偵測技術現在可做為報告的篩選器。
 
@@ -381,16 +381,16 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 若要查看郵件中的網路釣魚 URLs，並按一下網路釣魚郵件中 URLs，請使用 Explorer (或即時偵測) 的 [電子郵件 > 網路釣魚](threat-explorer-views.md#email--phish) 視圖。
 
-1. 在安全性與合規性中心 ( [https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]** )。 (此範例使用總管。)
+1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
-2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[網路釣魚]** 。
+2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[網路釣魚]**。
 
    > [!div class="mx-imgBorder"]
    > ![網路釣魚內容中瀏覽器的視圖功能表](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. 按一下 **[寄件者]** ，然後選擇 **[URL]** > **按一下結果** 。
+3. 按一下 **[寄件者]**，然後選擇 **[URL]** > **按一下結果**。
 
-4. 選取一或多個選項，例如 **[已封鎖]** 和 **[封鎖覆寫]** ，然後按一下要套用該篩選器的選項同一行上的 **[重新整理]** 按鈕。 (請勿重新整理瀏覽器視窗。)
+4. 選取一或多個選項，例如 **[已封鎖]** 和 **[封鎖覆寫]**，然後按一下要套用該篩選器的選項同一行上的 **[重新整理]** 按鈕。 (請勿重新整理瀏覽器視窗。)
 
    > [!div class="mx-imgBorder"]
    > ![URL 和按一下結果](../../media/ThreatExplorerEmailPhishClickVerdictOptions.png)
@@ -415,29 +415,29 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 在電子郵件或 URL flyouts 中，按一下上方和篩選體驗內，您會在搜尋體驗的一部分看到不同的按一下值。 以下是按一下 Verdicts 及其轉譯的可能值：
 
-- **無** ：我們無法捕獲 URL 的判定。 使用者可能已按一下透過 URL。
-- **允許** ：允許使用者流覽至 URL。
-- 已 **封鎖** ：已封鎖使用者流覽至 URL。
-- **擱置的判定** ：使用者已呈現「引爆擱置」頁面。
-- **封鎖已封鎖** ：已封鎖使用者流覽至 URL;不過，使用者 overrode 區塊以流覽至 URL。
-- **擱置的判定略過** ：使用者呈現的是引爆頁面;不過，使用者 overrode 頁面以流覽至 URL。
-- **錯誤** ：使用者已呈現錯誤頁面。 這也可能表示在捕獲判定時發生錯誤。
-- **失敗** ：捕獲判定時，發生未知的例外狀況。 使用者可能已按一下透過 URL。
+- **無**：我們無法捕獲 URL 的判定。 使用者可能已按一下透過 URL。
+- **允許**：允許使用者流覽至 URL。
+- 已 **封鎖**：已封鎖使用者流覽至 URL。
+- **擱置的判定**：使用者已呈現「引爆擱置」頁面。
+- **封鎖已封鎖**：已封鎖使用者流覽至 URL;不過，使用者 overrode 區塊以流覽至 URL。
+- **擱置的判定略過**：使用者呈現的是引爆頁面;不過，使用者 overrode 頁面以流覽至 URL。
+- **錯誤**：使用者已呈現錯誤頁面。 這也可能表示在捕獲判定時發生錯誤。
+- **失敗**：捕獲判定時，發生未知的例外狀況。 使用者可能已按一下透過 URL。
 
 ## <a name="review-email-messages-reported-by-users"></a>檢閱使用者回報的電子郵件訊息
 
 假設您想透過使用 [Outlook 和 Outlook 網頁版的回報郵件增益集](enable-the-report-message-add-in.md)來查看貴組織使用者回報為「垃圾郵件」、「非垃圾郵件」或「網路釣魚」的電子郵件。 若要這麼做，請使用瀏覽器的 [電子郵件 > 提交](threat-explorer-views.md#email--submissions) 視圖 (或即時偵測) 。
 
-1. 在安全性與合規性中心 ( [https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]** )。 (此範例使用總管。)
+1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
-2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]** 。
+2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]**。
 
    > [!div class="mx-imgBorder"]
    > ![電子郵件瀏覽器的視圖功能表](../../media/explorer-view-menu-email-user-reported.png)
 
-3. 按一下 **[寄件者]** ，然後選擇 **[基本]** > **[回報類型]** 。
+3. 按一下 **[寄件者]**，然後選擇 **[基本]** > **[回報類型]**。
 
-4. 選取一個選項，例如 **[網路釣魚]** ，然後按一下 **[重新整理]** 按鈕。
+4. 選取一個選項，例如 **[網路釣魚]**，然後按一下 **[重新整理]** 按鈕。
 
    > [!div class="mx-imgBorder"]
    > ![使用者回報的網路釣魚](../../media/EmailUserReportedReportType.png)
@@ -473,7 +473,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 若要查看和使用 Explorer 或即時偵測，您必須具有適當的許可權，例如授與安全性管理員或安全性讀者的許可權。
 
-- 針對「安全性與合規性中心」，您必須受指派下列其中一個角色：
+- 針對安全性 & 合規性中心，您必須已指派下列角色之一：
 
   - 組織管理
   - 安全性系統管理員 (這可以在 Azure Active Directory 系統管理中心指派 ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
@@ -488,7 +488,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 若要深入了解角色和權限，請參閱下列資源：
 
-- [安全性與 &amp; 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)
+- [安全性與合規性中心的權限](permissions-in-the-security-and-compliance-center.md)
 - [Exchange Online 中的功能權限](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## <a name="some-differences-between-threat-explorer-and-real-time-detections"></a>威脅瀏覽器與即時偵測的某些差異

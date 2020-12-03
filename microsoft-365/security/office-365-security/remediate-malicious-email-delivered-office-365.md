@@ -14,19 +14,19 @@ search.appverid: MET150
 description: 威脅修正
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 5568a296697c7cdbbada333d45f498a2876603f9
-ms.sourcegitcommit: 5480982967a90ca3060a59676a6b29155f2de861
+ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49350731"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561288"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修復 Office 365 中傳遞的惡意電子郵件
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-修正是指對威脅採取規定的動作。 傳送給您組織的惡意電子郵件可以由系統清除，不論是透過零小時自動清除 (ZAP) ，還是由安全小組透過修復動作（如 *移至 [收件* 匣]、[ *移至垃圾* 郵件]、[ *移至刪除的郵件*]、[ *虛刪除*] 或 [ *實刪除*]）來清除。 Microsoft Defender for Office 365 P2/E5 可讓安全小組透過手動和自動調查來修正電子郵件和共同作業功能的威脅。
+修正是指對威脅採取規定的動作。 傳送給您組織的惡意電子郵件可以由系統清除，不論是透過零小時自動清除 (ZAP) ，或是安全性小組透過修正動作（如 *移至收件* 匣 *、移至垃圾* 郵件、 *移至 [刪除的郵件*]、[ *虛刪除*] 或 [ *實刪除*]）。 Microsoft Defender for Office 365 P2/E5 可讓安全小組透過手動和自動調查來修正電子郵件和共同作業功能的威脅。
 
 > [!NOTE]
 > 若要修正惡意電子郵件，安全性小組需要指派的 *搜尋和清除* 角色。 角色指派是透過安全性與合規性中心的許可權來完成。
