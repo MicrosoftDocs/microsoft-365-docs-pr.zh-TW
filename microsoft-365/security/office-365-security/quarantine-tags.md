@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 系統管理員可以瞭解如何使用隔離標記來控制使用者可對其隔離郵件執行的動作。
-ms.openlocfilehash: e194aabf57a1a105f01d8d34815312d3c2fa153d
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357644"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572666"
 ---
 # <a name="quarantine-tags"></a>隔離標記
 
@@ -62,9 +62,7 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 若要查看、建立、修改或移除隔離標記，您必須是下列其中一個角色群組的成員：
-  - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
-  - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理**。
+- 若要查看、建立、修改或移除隔離標記，您必須是「[安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)」中「**組織管理**」或「**安全性管理員**」角色的成員。
 
 ## <a name="step-1-create-quarantine-tags-in-the-security--compliance-center"></a>步驟1：在安全性 & 規範中心建立隔離標記
 
@@ -491,7 +489,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 
 如需有關封鎖的寄件者清單的詳細資訊，請參閱 [封鎖來自某人的郵件](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) ，並 [使用 Exchange Online PowerShell 來設定信箱上的安全清單集合](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)。
 
-#### <a name="delete-permission"></a>刪除權限
+#### <a name="delete-permission"></a>刪除許可權
 
 「 **刪除** 」許可權 (_PermissionToDelete_) 會控制使用者對其郵件的功能 (郵件的收件者) 從隔離區。
 
