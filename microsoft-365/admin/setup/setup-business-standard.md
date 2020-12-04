@@ -25,28 +25,16 @@ search.appverid:
 - MOE150
 - BEA160
 description: 瞭解如何設定 Microsoft 365 商務標準版訂閱。
-ms.openlocfilehash: e69a3c75d77a8b4721558e72526a068df643f284
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 61ba3b0a8a753c9c441fc5a2ffa66b63da9af675
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644552"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572414"
 ---
 # <a name="set-up-microsoft-business-standard"></a>設定 Microsoft 商務標準版
 
-觀看有關設定 Microsoft 365 商務標準版的短片。<br><br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ELKR]
-
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
-  
- *這些步驟適用於擁有 **[Microsoft 365 商務標準版方案](https://go.microsoft.com/fwlink/p/?LinkId=627220)** 的公司和[非營利組織](https://go.microsoft.com/fwlink/p/?LinkId=627221)。
-
-觀看有關設定 Microsoft 365 商務標準版（之前稱為 Office 365 商務進階版）的短片。<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
-
-如果您覺得這段影片很有幫助，請查看[適用於小型企業和 Microsoft 365 新手的完整訓練系列](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)。
 
 ## <a name="add-your-domain-to-personalize-sign-in"></a>新增您的網域以個人化登入
 
@@ -56,7 +44,7 @@ ms.locfileid: "48644552"
 
 1. 使用您的全域系統管理員認證登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com)。 
 
-2. 請選擇 *[移至設定]** 來啟動精靈。
+2. 請選擇 **[移至設定]** 來啟動精靈。
 
 3. 在 **[安裝您的 Office 應用程式]** 頁面上，您可以選擇將應用程式安裝到自己的電腦上。
     
@@ -100,7 +88,7 @@ ms.locfileid: "48644552"
 
     註冊程序完成後，系統會將您導向系統管理中心，您可以在該處按照精靈來安裝 Office 應用程式、新增您的網域、新增使用者，以及指派授權。 完成初始安裝後，您可以使用系統管理中心的 **[設定]** 頁面繼續設定和設定訂閱隨附的服務。
 
-    如需有關安裝精靈和系統管理中心 **[設定]** 頁面的詳細資訊，請參閱[安裝精靈和設定頁面之間的差異](o365-setup-wizard-and-setup-page.md)。
+    如需有關安裝精靈和系統管理中心 **[設定]** 頁面的詳細資訊，請參閱 [安裝精靈和設定頁面之間的差異](o365-setup-wizard-and-setup-page.md)。
 
 ## <a name="finish-setting-up"></a>完成設定
 

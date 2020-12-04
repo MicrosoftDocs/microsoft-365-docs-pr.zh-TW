@@ -14,16 +14,19 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 network connectivity test 工具 (預覽) '
-ms.openlocfilehash: 4fc12645ccd6a022e4ef4ebe849ac91ba431129b
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b29eb29cd390c3febd0992e942cf8ab39f652fb2
+ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087076"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49569984"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool-preview"></a>Microsoft 365 network connectivity test 工具 (預覽) 
 
 Microsoft 365 network connectivity test 工具位於 <https://connectivity.office.com> 。 其為輔助工具，可在 Microsoft 365 系統管理中心的 [ **健康情況 |] 底下使用網路評估和網路洞察力資訊。連接** 功能表。
+
+> [!IMPORTANT]
+> 請務必登入您的 Microsoft 365 租使用者，因為在您登入時，所有的測試報告都會與您的系統管理員共用，並上傳至租使用者。
 
 ![Connectivity test 工具](../media/m365-mac-perf/m365-mac-perf-test-tool-page.png)
 

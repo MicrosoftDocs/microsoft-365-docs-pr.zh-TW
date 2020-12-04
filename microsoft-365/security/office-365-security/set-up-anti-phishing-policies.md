@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
-ms.openlocfilehash: a02d69b278420d814871df8eebdd6efcdf5d8e7f
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 839d76c1e07b457f671f1f0eccd0a9160e4039a3
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376339"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568566"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -200,11 +200,10 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
   - **類比網域**：寄件者位址包含受保護的網域。
   - 不 **尋常的字元**： From 位址包含不尋常的字元集 (例如數學符號和文字，或是混合的大小寫字母) 在受保護的寄件者或網域中。
 
-> [!IMPORTANT]
->
-> 即使已關閉模擬安全性秘訣，也 **建議** 您使用郵件流程規則 (也稱為傳輸規則) ，將名為 **X-MS-EnableFirstContactSafetyTip** 的郵件頭新增至郵件。 當收件者第一次從寄件者取得電子郵件時，系統會顯示特定的安全性秘訣，以通知收件者他們經常無法從寄件者取得電子郵件。
->:::image type="content" source="../../media/Urja_FirstContactEmail-Set-us-anti-phish-pol-safetyTip-ImpersonationProtection-MultipleRecipients.png" alt-text="具有多個收件者之類比保護的安全性秘訣文字。":::
-<p>
+  > [!IMPORTANT]
+  >
+  > 即使已關閉模擬安全性秘訣， **我們還是建議您使用** 郵件流程規則 (也稱為傳輸規則) ，以將名為 **X-MS-Exchange-EnableFirstContactSafetyTip** 的郵件頭新增為郵件的 [ **啟用** ] 值。 當收件者第一次從寄件者收到郵件時，或是不經常從寄件者取得郵件時，安全提示會通知收件者。
+  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="具有多個收件者之類比保護的安全性秘訣文字。":::
 
 - **信箱智慧**：啟用或停用使用者的智慧 (AI) ，可決定使用者的電子郵件模式與經常的連絡人。 此設定可協助 AI 區分合法和欺騙的電子郵件與這些連絡人。 信箱智慧只適用于 Exchange Online 信箱。
 

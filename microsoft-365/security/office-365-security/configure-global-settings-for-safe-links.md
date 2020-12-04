@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何查看和設定全域設定 (「封鎖下列 URLs」清單和 Office 365 應用程式的保護) ，以取得 Microsoft Defender for Office 365 中的安全連結。
-ms.openlocfilehash: 655fba35bf3675bfd571c8e4923a00fbeba85304
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 2793985e6289b26baad268925cbf9c5e9a89dce9
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842425"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572426"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>設定 Microsoft Defender for Office 365 中安全連結的全域設定
 
@@ -50,10 +50,16 @@ ms.locfileid: "48842425"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 若要查看及設定安全連結的全域設定，您必須是下列其中一個角色群組的成員：
+- 您必須在安全性 & 合規性中心指派許可權，才能執行本文中的程式：
+  - 若要設定安全連結的全域設定，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
+  - 若要對安全連結的全域設定進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員** 。 
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 **組織管理** 。
+  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+
+  **附註**：
+
+  - 將使用者新增至 Microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的「 **View-Only 組織管理**」角色群組也會提供該功能的唯讀存取權。
 
 - 如需安全連結之全域設定的建議值，請參閱 [安全連結設定](recommended-settings-for-eop-and-office365-atp.md#safe-links-settings)。
 
@@ -65,7 +71,7 @@ ms.locfileid: "48842425"
 
 **Block 下列 URLs** 清單會識別在支援的應用程式中，安全連結掃描時，應攔截的連結。 如需詳細資訊，請參閱 [安全連結的「封鎖下列 URLs」清單](atp-safe-links.md#block-the-following-urls-list-for-safe-links)。
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結** ]，然後按一下 [ **通用設定** ]。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]，然後按一下 [ **通用設定**]。
 
 2. 在 **您的組織的安全連結原則** 中，會出現 [飛出]，請移至 [ **封鎖下列 URLs] 方塊** 。
 
@@ -110,15 +116,15 @@ ms.locfileid: "48842425"
 
 Office 365 應用程式的安全連結保護適用于支援的 Office desktop、行動裝置和 web 應用程式中的檔。 如需詳細資訊，請參閱 [Office 365 應用程式的安全連結設定](atp-safe-links.md#safe-links-settings-for-office-365-apps)。
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結** ]，然後按一下 [ **通用設定** ]。
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]，然後按一下 [ **通用設定**]。
 
 2. 在已出現之 **組織的安全連結原則** 中，在 [ **電子郵件以外的內容設定** ] 區段中，設定下列設定：
 
-   - **Office 365 應用程式** ：驗證切換是否為支援的 office 365 應用程式的安全連結：開啟開啟 ![ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
+   - **Office 365 應用程式**：驗證切換是否為支援的 office 365 應用程式的安全連結：開啟開啟 ![ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
 
-   - **當使用者按一下安全連結時，請勿追蹤** ：在支援的 Office 365 應用程式中，將切換移至左側以追蹤與封鎖的 URLs 相關的使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
+   - **當使用者按一下安全連結時，請勿追蹤**：在支援的 Office 365 應用程式中，將切換移至左側以追蹤與封鎖的 URLs 相關的使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
 
-   - **不要讓使用者點擊 [安全連結] 原始 URL** ：確認切換是向右，以防止使用者在支援的 Office 365 應用程式中按一下原始的封鎖 URL： ![ 開啟 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
+   - **不要讓使用者點擊 [安全連結] 原始 URL**：確認切換是向右，以防止使用者在支援的 Office 365 應用程式中按一下原始的封鎖 URL： ![ 開啟 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
 
    完成後，按一下 [儲存]。
 
@@ -144,9 +150,9 @@ Set-AtpPolicyForO365 -TrackClicks $true
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>如何知道這些程序是否正常運作？
 
-若要確認您是否已成功設定安全連結的全域設定 ( **封鎖下列 URLs** 清單和 Office 365 app protection 設定) ，請執行下列任一步驟：
+若要確認您是否已成功設定安全連結的全域設定 (**封鎖下列 URLs** 清單和 Office 365 app protection 設定) ，請執行下列任一步驟：
 
-- 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結** ]，按一下 [ **通用設定** ]，然後確認 [飛出] 中顯示的設定。
+- 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **原則** \> **ATP 安全連結**]，按一下 [ **通用設定**]，然後確認 [飛出] 中顯示的設定。
 
 - 在 Exchange Online PowerShell 或 Exchange Online Protection PowerShell 中，執行下列命令，然後確認設定：
 

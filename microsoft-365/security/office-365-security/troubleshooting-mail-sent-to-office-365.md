@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文提供將電子郵件傳送至 Microsoft 365 收件匣之問題的疑難排解資訊 & 大量郵遞至 Microsoft 365 客戶的最佳作法。
-ms.openlocfilehash: 52b4bb333a92dcaa21f45977b3d59a96053a69c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201725"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568551"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>疑難排解傳送至 Microsoft 365 的郵件
 
@@ -51,9 +51,7 @@ EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exch
 我們可能不會接受寄件者的電子郵件，而不是寄件者進行反向 DNS 查閱。 在某些情況下，合法寄件者會在嘗試開啟與 EOP 的連線時，宣告自身，將其自我宣告為非網際網路可路由傳送的 IP。 保留用於私人 (不可路由傳送) 網路的 IP 位址包括：
 
 - 192.168.0.0/16 (或 192.168.0.0-192.168.255.255) 
-
 - 10.0.0.0/8 (或 10.0.0.0-10.255.255.255) 
-
 - 172.16.0.0/11 (或 172.16.0.0 172.31.255.255) 
 
 ## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>傳送電子郵件給 Office 365 中的使用者時，收到未傳遞回報 (NDR) 

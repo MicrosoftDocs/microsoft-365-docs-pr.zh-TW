@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中設定連線篩選，以允許或封鎖電子郵件伺服器的電子郵件。
-ms.openlocfilehash: 95e178e34c944c13cd99e4d4a0e9f30ed083842c
-ms.sourcegitcommit: 61ef32f802a1fb6d1e3a3aa005764ead32a7951e
+ms.openlocfilehash: a2a755516f029f5d72016e9ea8fcb87a997d5065
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48318249"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572822"
 ---
 # <a name="configure-connection-filtering"></a>設定連線篩選
 
@@ -45,21 +45,20 @@ ms.locfileid: "48318249"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [反垃圾郵件設定]**** 頁面，請使用 <https://protection.office.com/antispam>。
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [反垃圾郵件設定] 頁面，請使用 <https://protection.office.com/antispam>。
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲派權限，才能進行此主題中的程序:
+- 您必須在安全性 & 合規性中心指派許可權，才能執行本文中的程式：
+  - 若要修改預設連線篩選原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
+  - 若要對預設連線篩選原則進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取** 器角色群組的成員。
 
-  - 若要修改預設連線篩選原則，您必須是下列其中一個角色群組的成員：
+  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-    - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
-    - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理**。
+  **附註**：
 
-  - 若要對預設連線篩選原則進行唯讀存取，您必須是下列其中一個角色群組的成員：
-
-    - [安全性與合規性中心](permissions-in-the-security-and-compliance-center.md) 中的 **安全讀者**。
-    - [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅檢視組織管理**。
+  - 將使用者新增至 Microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的「 **View-Only 組織管理**」角色群組也會提供該功能的唯讀存取權。
 
 - 若要尋找電子郵件伺服器的來源 IP 位址 (您要允許或封鎖的寄件者) ，您可以檢查郵件頭中的 [連接 IP (**CIP**) 標頭欄位。 若要在不同的電子郵件客戶程式中查看郵件頭，請參閱在 [Outlook 中查看網際網路郵件頭](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)。
 
@@ -71,7 +70,7 @@ ms.locfileid: "48318249"
 
 1. 在安全性 & 合規性中心，然後移至 **威脅管理** \> **原則** \> **Anti-Spam**。
 
-2. 在 [**反垃圾郵件設定**] 頁面上，按一下 [展開圖示]，然後按一下 [編輯原則]，展開 [連線**篩選原則**] ![ ](../../media/scc-expand-icon.png) 。 **Edit policy**
+2. 在 [**反垃圾郵件設定**] 頁面上，按一下 [展開圖示]，然後按一下 [編輯原則]，展開 [連線 **篩選原則**] ![ ](../../media/scc-expand-icon.png) 。 **Edit policy**
 
 3. 在出現的 **預設** 浮出視窗中，設定下列任一設定：
 
@@ -85,21 +84,21 @@ ms.locfileid: "48318249"
 
      - CIDR IP：例如 192.168.0.1/25。 有效的網路遮罩值為/24 到/32。 若要略過 CIDR IP 遮罩值的垃圾郵件篩選，/1 到/23，請參閱本主題稍後的 [ [略過垃圾郵件篩選] （適用于可用範圍區段之外的 CIDR ip](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) ）。
 
-     若要新增 IP 位址或位址範圍，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 若要移除專案，請選取 [ **允許的 IP 位址** ] 中的專案，然後按一下 [ **移除**] ![ ](../../media/scc-remove-icon.png) 。 完成後，按一下 [儲存]****。
+     若要新增 IP 位址或位址範圍，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 若要移除專案，請選取 [ **允許的 IP 位址** ] 中的專案，然後按一下 [ **移除**] ![ ](../../media/scc-remove-icon.png) 。 完成後，按一下 [儲存]。
 
    - **IP 封鎖清單**：按一下 [ **編輯**]。 在出現的 [ **Ip 封鎖**] 快顯視窗中，在 [ **ip 允許清單**] 設定中先前所述的 [**位址] 或 [位址範圍**] 方塊中輸入單一 IP、ip 範圍或 CIDR IP。
 
-     若要新增 IP 位址或位址範圍，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 若要移除專案，請選取 [ **封鎖的 IP 位址** ] 中的專案，然後按一下 [ **移除**] ![ ](../../media/scc-remove-icon.png) 。 完成後，按一下 [儲存]****。
+     若要新增 IP 位址或位址範圍，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 若要移除專案，請選取 [ **封鎖的 IP 位址** ] 中的專案，然後按一下 [ **移除**] ![ ](../../media/scc-remove-icon.png) 。 完成後，按一下 [儲存]。
 
    - **開啟安全清單**：啟用或停用安全清單的使用，以找出將會略過垃圾郵件篩選的已知的良好寄件者。
 
-4. 完成後，按一下 [儲存]****。
+4. 完成後，按一下 [儲存]。
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>使用安全性 & 規範中心來查看預設連線篩選原則
 
 1. 在安全性 & 合規性中心，然後移至 **威脅管理** \> **原則** \> **Anti-Spam**。
 
-2. 在 [ **反垃圾郵件設定** ] 頁面上，按一下名為 **Connection filter policy**之預設原則旁的下拉式清單。
+2. 在 [ **反垃圾郵件設定** ] 頁面上，按一下名為 **Connection filter policy** 之預設原則旁的下拉式清單。
 
 3. 原則設定會顯示在開啟的下拉式功能表中。
 
@@ -165,7 +164,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 現在，您已完全瞭解潛在問題，您可以使用下列)  (設定來建立郵件流程規則，以確保這些 IP 位址的郵件會略過垃圾郵件篩選：
 
-- 規則條件： **如果** \> **寄件者**的 \> **IP 位址在任何這些範圍中或完全相符**，則套用此規則 \> (輸入具有 a/1 to/23 網路遮罩的 CIDR IP) 。
+- 規則條件： **如果** \> **寄件者** 的 \> **IP 位址在任何這些範圍中或完全相符**，則套用此規則 \> (輸入具有 a/1 to/23 網路遮罩的 CIDR IP) 。
 
 - 規則動作：**修改郵件屬性** \> **設定垃圾郵件信賴等級 (SCL)** \> **略過垃圾郵件篩選**。
 
@@ -181,9 +180,9 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 2. 使用下列設定來設定郵件流程規則 (至少) ：
 
-   - 規則條件： **如果** \> **寄件者** \> **IP 位址位於上述任何範圍中，或完全符合**192.168.1.25，則會套用此規則 \> 。) 中您新增至 ip 允許清單的 ip 位址或位址範圍 (相同。
+   - 規則條件： **如果** \> **寄件者** \> **IP 位址位於上述任何範圍中，或完全符合** 192.168.1.25，則會套用此規則 \> 。) 中您新增至 ip 允許清單的 ip 位址或位址範圍 (相同。
 
-   - 規則動作： **修改郵件屬性** \> **設定垃圾郵件信賴等級 (SCL) ** \> **0**。
+   - 規則動作： **修改郵件屬性** \> **設定垃圾郵件信賴等級 (SCL)** \> **0**。
 
    - 規則例外： **寄件者** \> **網域是** \> fabrikam.com，只 (您想要略過垃圾郵件篩選) 的網域。
 
@@ -205,4 +204,4 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 ****
 
-![LinkedIn 學習 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增至 Microsoft 365**的簡短圖示？ 探索適用于 **Microsoft 365 系統管理員和 IT 專業人員**的免費影片課程，並 LinkedIn 的知識。
+![LinkedIn 學習 ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **新增至 Microsoft 365** 的簡短圖示？ 探索適用于 **Microsoft 365 系統管理員和 IT 專業人員** 的免費影片課程，並 LinkedIn 的知識。

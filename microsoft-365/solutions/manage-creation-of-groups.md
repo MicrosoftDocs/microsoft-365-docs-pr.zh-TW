@@ -1,5 +1,5 @@
 ---
-title: 管理能建立 Microsoft 365 群組的使用者
+title: 管理可建立 Microsoft 365 群組的人員
 f1.keywords: NOCSH
 ms.author: mikeplum
 ms.reviewer: arvaradh
@@ -17,53 +17,40 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: 瞭解如何控制可建立 Microsoft 365 群組的使用者。
-ms.openlocfilehash: 44e858286377350f82050b8a1814f761dad9c2fd
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e3424a9cc916c9464478fbe4411bbbf7b971d989
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377309"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572618"
 ---
-# <a name="manage-who-can-create-microsoft-365-groups"></a>管理能建立 Microsoft 365 群組的使用者
+# <a name="manage-who-can-create-microsoft-365-groups"></a>管理可建立 Microsoft 365 群組的人員
 
 根據預設，所有使用者都可以建立 Microsoft 365 群組。 這是建議的方法，因為它可讓使用者在不需要協助的情況下開始合作。
 
 如果您的公司需要限制誰可以建立群組，您可以遵循本文所述的程式來執行。 當您限制誰可以建立群組時，它會影響依賴群組進行存取的所有服務，包括：
 
 - Outlook
-    
 - SharePoint
-    
 - Yammer
-    
 - Microsoft Teams
-
 - Microsoft Stream
-
 - Planner
-    
 - PowerBI (古典) 
-    
 - Web/藍圖的專案
-    
-您可以將 Microsoft 365 群組建立限制在特定安全性群組的成員。 若要設定此，您可以使用 Windows PowerShell。 本文將引導您完成必要的步驟。
-  
-本文中的步驟不會防止某些角色的成員建立群組。 Office 365 全域系統管理員可以透過任何方式建立群組，例如 Microsoft 365 系統管理中心、Planner、小組、Exchange 及 SharePoint 線上。 其他角色可以透過有限的方式建立群組，如下所列。
-        
-  - Exchange 管理員： Exchange Admin center，Azure AD
-    
-  - 合作夥伴第1層支援： Microsoft 365 系統管理中心、Exchange 系統管理中心、Azure AD
-    
-  - 合作夥伴第2層支援： Microsoft 365 系統管理中心、Exchange 系統管理中心、Azure AD
-    
-  - 目錄編寫者： Azure AD
 
-  - SharePoint 管理員： SharePoint Admin center，Azure AD
-  
-  - 小組服務管理員：小組系統管理中心，Azure AD
-  
-  - 使用者管理系統管理員： Microsoft 365 Admin center、Yammer、Azure AD
-     
+您可以將 Microsoft 365 群組建立限制在特定安全性群組的成員。 若要設定此，您可以使用 Windows PowerShell。 本文將引導您完成必要的步驟。
+
+本文中的步驟不會防止某些角色的成員建立群組。 Office 365 全域系統管理員可以透過任何方式建立群組，例如 Microsoft 365 系統管理中心、Planner、小組、Exchange 及 SharePoint 線上。 其他角色可以透過有限的方式建立群組，如下所列。
+
+- Exchange 管理員： Exchange Admin center，Azure AD
+- 合作夥伴第1層支援： Microsoft 365 系統管理中心、Exchange 系統管理中心、Azure AD
+- 合作夥伴第2層支援： Microsoft 365 系統管理中心、Exchange 系統管理中心、Azure AD
+- 目錄編寫者： Azure AD
+- SharePoint 管理員： SharePoint Admin center，Azure AD
+- 小組服務管理員：小組系統管理中心，Azure AD
+- 使用者管理系統管理員： Microsoft 365 Admin center、Yammer、Azure AD
+
 如果您是其中一個角色的成員，您可以為受限制的使用者建立 Microsoft 365 群組，然後將該使用者指派為群組的擁有者。
 
 ## <a name="licensing-requirements"></a>授權需求
@@ -72,7 +59,7 @@ ms.locfileid: "48377309"
 
 - 設定這些群組建立設定的系統管理員
 - 允許建立群組的安全性群組成員
- 
+
 > [!NOTE]
 > 如需如何指派 Azure 授權的詳細資訊，請參閱 [在 Azure Active Directory 入口網站中指派或移除授權](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) 。
 
@@ -87,21 +74,21 @@ ms.locfileid: "48377309"
 以上所列角色中的系統管理員不需要是此群組的成員：他們保留其建立群組的能力。
 
 > [!IMPORTANT]
-> 請務必使用 **安全性群組** 來限制誰可以建立群組。 不支援使用 Microsoft 365 群組。 
-    
+> 請務必使用 **安全性群組** 來限制誰可以建立群組。 不支援使用 Microsoft 365 群組。
+
 1. 在系統管理中心中，移至 [ [群組] 頁面](https://admin.microsoft.com/adminportal/home#/groups)。
 
 2. 按一下 [ **新增群組**]。
 
 3. 選擇 [ **安全性** ] 做為「群組類型」。 請記下群組名稱！ 以便後續步驟使用。
-  
+
 4. 完成設定安全性群組，新增您想要在您的組織中建立群組的人員或其他安全性群組。
-    
+
 如需詳細指示，請參閱 [建立、編輯或刪除 Microsoft 365 admin center 中的安全性群組](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group)。
- 
+
 ## <a name="step-2-run-powershell-commands"></a>步驟 2：執行 PowerShell 命令
 
-您必須使用預覽版本的 [ [Azure Active Directory PowerShell For Graph (AzureAD) ](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (模組名稱 **AzureADPreview**) ，以變更群組層級來賓存取設定：
+您必須使用預覽版本的 [ [Azure Active Directory PowerShell For Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (模組名稱 **AzureADPreview**) ，以變更群組層級來賓存取設定：
 
 - 如果您之前尚未安裝任何版本的 Azure AD PowerShell 模組，請參閱[安裝 Azure AD 模組](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true)，並遵循指示來安裝公開預覽版本。
 
@@ -115,7 +102,7 @@ ms.locfileid: "48377309"
 
 `$GroupName = "Group Creators"`
 
-將檔案儲存為 GroupCreators.ps1。 
+將檔案儲存為 GroupCreators.ps1。
 
 在 [PowerShell] 視窗中，流覽至您儲存檔案的位置， (輸入 "CD <FileLocation> " ) 。
 
@@ -127,14 +114,14 @@ ms.locfileid: "48377309"
 
 ```PowerShell
 $GroupName = "<SecurityGroupName>"
-$AllowGroupCreation = "False"
+$AllowGroupCreation = $False"
 
 Connect-AzureAD
 
 $settingsObjectID = (Get-AzureADDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
 if(!$settingsObjectID)
 {
-      $template = Get-AzureADDirectorySettingTemplate | Where-object {$_.displayname -eq "group.unified"}
+    $template = Get-AzureADDirectorySettingTemplate | Where-object {$_.displayname -eq "group.unified"}
     $settingsCopy = $template.CreateDirectorySetting()
     New-AzureADDirectorySetting -DirectorySetting $settingsCopy
     $settingsObjectID = (Get-AzureADDirectorySetting | Where-object -Property Displayname -Value "Group.Unified" -EQ).id
@@ -145,7 +132,7 @@ $settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
 
 if($GroupName)
 {
-    $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
+  $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
 }
  else {
 $settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
@@ -162,24 +149,24 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 如果您想要變更使用的安全性群組，您可以使用新安全性群組的名稱重新執行腳本。
 
 如果您想關閉群組建立限制，並再次允許所有使用者建立群組，請將 $GroupName 設定為 ""，並 $AllowGroupCreation 為 "True"，然後重新執行腳本。
-    
+
 ## <a name="step-3-verify-that-it-works"></a>步驟 3：驗證命令能正常運作
 
 變更可能需要30分鐘以上的時間才會生效。 您可以執行下列動作來驗證新的設定：
 
 1. 使用不具備建立群組功能之人員的使用者帳戶登入 Microsoft 365。 也就是說，它們不是您所建立之安全性群組的成員，或是管理員的成員。
-    
-2. 選取 [ **Planner** ] 磚。 
-    
-3. 在 Planner 中，選取左側導覽中的 [ **新增方案** ]，以建立計畫。 
-  
+
+2. 選取 [ **Planner** ] 磚。
+
+3. 在 Planner 中，選取左側導覽中的 [ **新增方案** ]，以建立計畫。
+
 4. 您應該會收到一則停用計畫和群組建立的訊息。
 
 請使用安全性群組的成員嘗試相同的程式。
 
 > [!NOTE]
 > 如果安全性群組的成員無法建立群組，請檢查他們未透過 [OWA 信箱原則](https://go.microsoft.com/fwlink/?linkid=852135)封鎖。
-    
+
 ## <a name="related-articles"></a>相關文章
 
 [開始使用 Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=808033)

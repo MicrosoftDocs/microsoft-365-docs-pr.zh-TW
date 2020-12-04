@@ -1,5 +1,5 @@
 ---
-title: 逐步解說 - 欺騙情報深入解析
+title: 逐步解說-欺騙性的智慧洞察力
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解欺騙性智慧洞察力的運作方式。 他們可以快速判斷哪些寄件者合法將電子郵件傳送至其組織，而不是透過電子郵件驗證檢查 (SPF、DKIM 或 DMARC) 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 89a31c6df7c9b6e02f52ea414ceb6334427feab1
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 6f5ebd0fd42d17354eeb1e03c946ac5446c3667c
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920475"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572738"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>逐步解說-Microsoft Defender for Office 365 中的欺騙智慧洞察力
 
@@ -44,12 +44,13 @@ ms.locfileid: "48920475"
 
   您可以在安全性 & 合規性中心的多個儀表板上查看哄騙智慧洞察力。 不論您所看到的儀表板為何，真知灼見都會提供相同的詳細資料，並可讓您快速執行相同的工作。
 
-- 您必須已獲指派許可權，才能執行本主題中的程式。 若要使用哄騙智慧洞察力，您必須是下列其中一個角色群組的成員：
+- 您必須在安全性 & 合規性中心指派許可權，才能執行本文中的程式：
+  - **組織管理**
+  - **安全性系統管理員**
+  - **安全性讀取者**
+  - **全域讀取者**
 
-  - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員** 。 
-  - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理** 。
-  - [安全性與合規性中心](permissions-in-the-security-and-compliance-center.md) 中的 **安全讀者** 。
-  - [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅檢視組織管理** 。
+  **附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 - 您可以在 Microsoft Defender for Office 365 中啟用和停用反網路釣魚原則中的欺騙智慧。 如需詳細資訊，請參閱 [Configure Microsoft Defender For Office 365 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。
 
@@ -57,12 +58,12 @@ ms.locfileid: "48920475"
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心開啟欺騙性智慧洞察力
 
-1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** ] \> **儀表板。**
+1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理**] \> **儀表板。**
 
 2. 在 [ **洞察力** ] 列中，尋找下列其中一個專案：
 
-   - **已啟用欺騙情報** ：此真知灼見稱為 **欺詐網域，其驗證過去30天失敗** 。 此為預設值。
-   - **已停用欺騙情報** ：以命名方式 **啟用欺騙保護** 的洞察力，並按一下該功能可讓您啟用欺騙智慧。
+   - **已啟用欺騙情報**：此真知灼見稱為 **欺詐網域，其驗證過去30天失敗**。 此為預設值。
+   - **已停用欺騙情報**：以命名方式 **啟用欺騙保護** 的洞察力，並按一下該功能可讓您啟用欺騙智慧。
 
 3. 儀表板上的洞察力顯示如下資訊：
 
@@ -70,11 +71,11 @@ ms.locfileid: "48920475"
 
    這兩種洞察力分為兩種模式：
 
-   - **洞察力模式** ：如果已啟用欺騙智慧，則真知灼見會顯示過去30天內，我們的欺騙智慧功能會影響的郵件數目。
+   - **洞察力模式**：如果已啟用欺騙智慧，則真知灼見會顯示過去30天內，我們的欺騙智慧功能會影響的郵件數目。
 
-   - **假設模式** ：如果已停用欺騙智慧，則真知灼見會顯示過去30天內，我們的欺騙智慧功能 *會* 影響的郵件數目。
+   - **假設模式**：如果已停用欺騙智慧，則真知灼見會顯示過去30天內，我們的欺騙智慧功能 *會* 影響的郵件數目。
 
-   無論是哪一種方式，顯示在真知灼見中的冒牌網域都會分為兩類： **可疑的網域配對** 和 **非可疑網域配對** 。 這些類別會進一步細分為三個不同的桶，供您審閱。
+   無論是哪一種方式，顯示在真知灼見中的冒牌網域都會分為兩類： **可疑的網域配對** 和 **非可疑網域配對**。 這些類別會進一步細分為三個不同的桶，供您審閱。
 
    **網域對** 是 [寄件者] 位址及傳送基礎結構的組合：
 
@@ -84,11 +85,11 @@ ms.locfileid: "48920475"
 
    **可疑的網域配對** 包括：
 
-   - **高度信賴性哄騙** ：根據電子郵件傳送模式和網域的信譽分數，我們強烈相信網域是哄騙的，而來自這些網域的郵件更可能是惡意的。
+   - **高度信賴性哄騙**：根據電子郵件傳送模式和網域的信譽分數，我們強烈相信網域是哄騙的，而來自這些網域的郵件更可能是惡意的。
 
    - **適中** 的信譽哄騙：根據歷史傳送模式和網域的信譽分數，我們適度相信網域是哄騙的，而從這些網域傳送的郵件是合法的。 在此類別中，誤報很可能超出高可信度的欺騙。
 
-   - **非可疑的網域配對** (包括 **rescued 欺騙** ) ：網域失敗明確的電子郵件驗證檢查 [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)及 [DMARC](use-dmarc-to-validate-email.md)) 。 不過，網域已通過我們的隱含電子郵件驗證檢查 ([複合驗證](email-validation-and-authentication.md#composite-authentication)) 。 因此，不會對郵件採取任何反欺詐動作。
+   - **非可疑的網域配對** (包括 **rescued 欺騙**) ：網域失敗明確的電子郵件驗證檢查 [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)及 [DMARC](use-dmarc-to-validate-email.md)) 。 不過，網域已通過我們的隱含電子郵件驗證檢查 ([複合驗證](email-validation-and-authentication.md#composite-authentication)) 。 因此，不會對郵件採取任何反欺詐動作。
 
 ### <a name="view-detailed-information-about-suspicious-domain-pairs-from-the-spoof-intelligence-insight"></a>從哄騙情報洞察力中查看有關可疑網域配對的詳細資訊。
 
@@ -119,7 +120,7 @@ ms.locfileid: "48920475"
 
 例如，您可以讓下列網域對傳送欺騙性郵件給您的組織：
 
-- *冒牌網域* ： gmail.com "
+- *冒牌網域*： gmail.com "
 - 傳送 *基礎結構* `tms.mx.com` ：
 
 只允許來自該網域對的電子郵件進行欺騙。 不允許其他企圖哄騙 gmail.com 的寄件者。 來自 tms.mx.com 的其他網域中的郵件會受到欺騙智慧的檢查。

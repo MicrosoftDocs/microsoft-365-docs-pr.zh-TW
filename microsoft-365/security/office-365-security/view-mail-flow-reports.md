@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解安全性 & 合規性中心的「報告」儀表板中提供的郵件流程報告。
 ms.custom: ''
-ms.openlocfilehash: 840b9920fc3f994140702eae0bf5ddbdeac4b465
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357920"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572798"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中查看郵件流程報告
 
@@ -134,22 +134,22 @@ ms.locfileid: "49357920"
 
   - **Date**
   - **傳輸規則**
-  - **主旨**
+  - **Subject**
   - **寄件者位址**
   - **收件者位址**
   - **嚴重性**
-  - **方向**
+  - **Direction**
 
 - 透過 **下列方式查看資料： DLP Exchange transport rules**：
 
   - **Date**
   - **DLP 原則**
   - **傳輸規則**
-  - **主旨**
+  - **Subject**
   - **寄件者位址**
   - **收件者位址**
   - **嚴重性**
-  - **方向**
+  - **Direction**
 
 如果您按一下 [詳細資料] 表格視圖中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
 
@@ -240,7 +240,7 @@ ms.locfileid: "49357920"
 
 此資料表包含下列資訊：
 
-- **方向**
+- **Direction**
 - **Type**
 - **24 小時**
 - **3天**
@@ -463,7 +463,7 @@ ms.locfileid: "49357920"
 
 - **日期 (UTC)**
 - **Type**
-- **方向**
+- **Direction**
 - **訊息計數**
 
 如果您按一下 [詳細資料] 表格視圖中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
@@ -535,19 +535,16 @@ ms.locfileid: "49357920"
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看這些報表所需的許可權為何？
 
-若要查看和使用報表，您必須是在安全性 & 規範中心 **和** Exchange Online 中所指定角色群組的成員。
+為了查看和使用本主題中所述的報表，您必須是安全性 & 合規性中心之一的下列其中一個角色群組的成員：
 
-- 在安全性 & 規範中心，您必須是下列其中一個角色群組的成員：
+- **組織管理**
+- **安全性系統管理員**
+- **安全性讀取者**
+- **全域讀取者**
 
-  -組織管理-安全性管理員 (您也可以在 [Azure Active Directory 系統管理中心](https://aad.portal.azure.com) 進行此作業-安全性讀取器
+如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
-
-- 在 Exchange Online 中，您必須是下列其中一個角色群組的成員：
-
-  -組織管理-僅限查看組織管理-View-Only 收件者-合規性管理
-
-如需詳細資訊，請參閱 exchange online 中的 [許可權](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) 和 [exchange Online 中的管理角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+**附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="related-topics"></a>相關主題
 

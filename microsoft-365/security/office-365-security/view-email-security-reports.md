@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 038f310d8690652a3aefb2eab5ac01f76986d210
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 1ab78f17cd5689f9110227762c149d3691433179
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357932"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572558"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -61,7 +61,7 @@ ms.locfileid: "49357932"
 
 - **建立時間**
 - **User ID**
-- **動作**
+- **Action**
 
 若要回到報表檢視，請按一下 [ **查看報告**]。
 
@@ -122,7 +122,7 @@ ms.locfileid: "49357932"
   - **加密範本**
   - **加密方法**
   - **收件者位址**
-  - **主旨**
+  - **Subject**
 
 - **資料查看依據：前5位收件者網域**：
 
@@ -166,7 +166,7 @@ ms.locfileid: "49357932"
 - **寄件者位址**
 - **收件者位址**
 - **郵件識別碼**：郵件頭的 **Message-ID** 標頭欄位中可用，且應該是唯一的。 範例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (記下角括弧) 。
-- **主旨**
+- **Subject**
 - **Filename**
 - **惡意軟體名稱**
 
@@ -228,8 +228,8 @@ ms.locfileid: "49357932"
 - **寄件者位址**
 - **收件者位址**
 - **事件類型**
-- **動作**
-- **主旨**
+- **Action**
+- **Subject**
 
 如果您按一下 [詳細資料] 表格中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
 
@@ -267,7 +267,7 @@ ms.locfileid: "49357932"
 - **欺騙寄件者**
 - **True 寄件者**
 - **寄件者 IP**
-- **動作**
+- **Action**
 - **訊息計數**
 
 若要回到報表檢視，請按一下 [ **查看報告**]。
@@ -418,7 +418,7 @@ ms.locfileid: "49357932"
 - **查看資料：郵件覆寫**：
 
   - **Date**
-  - **主旨**
+  - **Subject**
   - **Sender**
   - **收件者**
   - **偵測到**
@@ -437,7 +437,7 @@ ms.locfileid: "49357932"
 - 所有其他圖表：
 
   - **Date**
-  - **主旨**
+  - **Subject**
   - **Sender**
   - **收件者**
   - **偵測到**
@@ -498,19 +498,16 @@ Microsoft Defender for Office 365 提供 **URL 威脅防護報告** 。 如需�
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看這些報表所需的許可權為何？
 
-若要查看和使用報表，您必須是在安全性 & 規範中心 **和** Exchange Online 中所指定角色群組的成員。
+為了查看和使用本主題中所述的報表，您必須是安全性 & 合規性中心之一的下列其中一個角色群組的成員：
 
-- 在安全性 & 規範中心，您必須是下列其中一個角色群組的成員：
+- **組織管理**
+- **安全性系統管理員**
+- **安全性讀取者**
+- **全域讀取者**
 
-  -組織管理-安全性管理員 (您也可以在 [Azure Active Directory 系統管理中心](https://aad.portal.azure.com) 進行此作業-安全性讀取器
+如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
-
-- 在 Exchange Online 中，您必須是下列其中一個角色群組的成員：
-
-  -組織管理-僅限查看組織管理-View-Only 收件者-合規性管理
-
-如需詳細資訊，請參閱 exchange online 中的 [許可權](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) 和 [exchange Online 中的管理角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups)。
+**附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報告未顯示資料，該怎麼辦？
 
