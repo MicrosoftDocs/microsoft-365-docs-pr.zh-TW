@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 瞭解 Contoso Corporation 如何回應 COVID-19 pandemic，並將其軟體安裝和更新基礎結構用於遠端和現場工作。
-ms.openlocfilehash: 8e25b399d7acd2cb3486283623d29315eac9491e
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: d04b4efcdd4dd04315ad37311cdd2cfbc2e64e88
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371750"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580670"
 ---
 # <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contoso 的 COVID-19 回應，並支援遠端和現場工作
 
@@ -44,8 +44,8 @@ Contoso 也會更新安裝在膝上型電腦、平板電腦及智慧型電話上
 在地區鎖定期間，為了支援大多數的遠端工作者所做的初步變更之後，Contoso 所做的基礎結構變更可支援遠端和現場工作，而工作者可能是：
 
 - Always remote。
-- Always 內部部署。
-- 遠端和內部部署的組合。
+- 永遠在現場。
+- 現場和遠端的組合。
 
 Microsoft 365 身分識別、安全性和符合性功能是針對零信任而設計，不論使用者及其裝置的位置為何，都能運作。 如需詳細資訊，請參閱 [零信任](https://www.microsoft.com/security/business/zero-trust)。
 
@@ -85,6 +85,6 @@ Microsoft 365 身分識別、安全性和符合性功能是針對零信任而設
 
 針對發佈到新工作者的新遠端裝置，當工作者登入時，裝置會根據其在 RoamingDevices 群組中的成員資格，聯繫 Intune 雲端服務和其他服務，以及安裝最新的更新，以供 Windows 10、Microsoft 365 應用程式的企業版及 Edge 使用。 完成後，遠端裝置即可供使用，並使用已安裝的 VPN 用戶端來存取內部部署資源和 Microsoft 365 網路，以進行持續更新。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 在您的組織中提供[遠端工作者](empower-people-to-work-remotely.md)。

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fb1918d2d6b39d01cf6340276c8d8ee00a5e1670
-ms.sourcegitcommit: ad0a63aa94cbfa686bf1ecbfec0152bb8e0e35af
+ms.openlocfilehash: 685228823c87eff975fabd2dd398c1b67be8eeef
+ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49413051"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "49580736"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -52,7 +52,7 @@ ms.locfileid: "49413051"
 
 若為 iOS 和 Android：其中列出了最低的版本，則 [Office 應用程式](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)也支援敏感性標籤功能。
 
-|功能                                                                                                        |Windows 桌面 |Mac 桌面 |iOS    |Android      |Web                                                         |
+|功能                                                                                                        |Windows 桌面 |Mac 桌面 |iOS    |Android      |網址                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[手動套用、變更或移除標籤](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[套用預設標籤](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
@@ -63,7 +63,7 @@ ms.locfileid: "49413051"
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 是的 <sup>\*</sup>                                                        |
-|[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
+|[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 預覽： [Beta 通道](https://office.com/insider)             | 預覽： [Beta 通道](https://office.com/insider)         | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                            
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Word 和 PowerPoint 的預覽：向裡 [ (預覽的現有頻道) ](https://office.com/insider) | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |支援標籤和受保護檔上的[AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)和[合著](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -84,8 +84,8 @@ ms.locfileid: "49413051"
 |[包含變數的動態標記](#dynamic-markings-with-variables)                                              | 在 [複查] 下                     | 在 [複查] 下                 | 在 [複查] 下         | 在 [複查] 下           | 在 [複查] 下               |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
+|[要求使用者將標籤套用至電子郵件和檔](#require-users-to-apply-a-label-to-their-email-and-documents)   | 預覽： [Beta 通道](https://office.com/insider)                        | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | 是                |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 是               |
-|[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 在 [複查] 下                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 在 [複查] 下               |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
 |
 
@@ -239,7 +239,7 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 - 從 Power BI 匯出已標示及已加密的資料
 
-- Microsoft Cloud App Security
+- Microsoft 雲端 App 安全性
 
 針對這些案例，使用內建標籤的使用者可以暫時移除或取代目前的標籤，然後重新應用原始標籤，以套用標籤的內容標記。
 
@@ -263,6 +263,29 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 > [!NOTE]
 > 這些變數的語法是區分大小寫的。
+
+## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>要求使用者將標籤套用至電子郵件和檔
+
+> [!IMPORTANT]
+> 也稱為必要標籤，並非所有平臺上的所有應用程式目前都支援 **要求使用者將標籤套用至電子郵件和檔** 的原則設定。
+> 
+> [Azure 資訊保護整合的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app)支援必要的標記，以及針對 Office 應用程式內建的標記，請參閱此頁面上 [[功能](#support-for-sensitivity-label-capabilities-in-apps)] 區段中的表格。
+
+選取此原則設定時，已指派該原則的使用者必須在下列情況下選取並套用靈敏度標籤：
+
+- 針對 Azure 資訊保護的整合標籤用戶端：
+    - 若為檔 (Word、Excel PowerPoint) ：儲存未標記的檔時，或使用者關閉檔時。
+    - 電子郵件 (Outlook) ：在使用者傳送未標記的郵件時。
+
+- 針對內建至 Office app 的標籤：
+    - 若為檔 ( # B1 Word、Excel PowerPoint) ：開啟或儲存未標記的檔時。
+    - 電子郵件 (Outlook) ：在使用者傳送未標記的電子郵件訊息時。
+
+內建標示標籤的其他資訊：
+
+- 當使用者在開啟未標記的檔時，系統會提示使用者新增敏感度標籤，他們可以新增標籤，或選擇以唯讀模式開啟檔。
+
+- 當必要的標籤生效時，使用者就無法從檔中移除敏感度標籤，但是可以變更現有的標籤。
 
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>為 Word、Excel、PowerPoint 和 Outlook 設定不同的視覺標記
 
@@ -298,6 +321,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
     `${If.App.WP}This content is ${If.End}Confidential`
 
     在 Word 和 PowerPoint 中，標籤會套用浮水印文字「此內容是機密」。 在 Excel 中，標籤會套用浮水印文字「機密」。 在 Outlook 中，標籤不會套用任何浮水印文字，因為浮水印是不支援 Outlook 的視覺標記。
+>>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
 
 ## <a name="end-user-documentation"></a>最終使用者檔
 
