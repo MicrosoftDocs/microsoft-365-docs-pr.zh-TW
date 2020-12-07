@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3856b92126d660ed0cdbfd1280d778ac9f072424
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: b862cbffcc4268876444618f7c2708c04b63630e
+ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446128"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49561714"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容
 
@@ -43,27 +43,27 @@ ms.locfileid: "48446128"
 最後，身為系統管理員的您，在設定一個敏感度標籤來套用加密時，可以選擇以下兩者之一：
 
 - **立即指派權限**，這樣您就能確實決定哪個使用者能夠存取該標籤的內容。
-- **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
+- 當使用者將標籤套用到內容時，**讓使用者指派權限**。 如此一來，您就可以讓組織中的人員靈活地共同作業並完成工作。
 
 當您在 Microsoft 365 合規性中心、Microsoft 365 安全性中心或是安全性與合規性中心中[建立敏感性標籤](create-sensitivity-labels.md)時，可以使用加密設定。
 
 ## <a name="understand-how-the-encryption-works"></a>了解加密的運作方式
 
-Encryption uses the Azure Rights Management service (Azure RMS) from Azure Information Protection. This protection solution uses encryption, identity, and authorization policies. To learn more, see [What is Azure Rights Management?](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) from the Azure Information Protection documentation. 
+加密使用來自 Azure 資訊保護的 Azure 版權管理服務 (Azure RMS)。 此保護解決方案使用加密、身分識別及授權原則。 若要深入了解，請參閱 Azure 資訊保護文件中的[什麼是 Azure 版權管理？](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms)。 
 
-When you use this encryption solution, the **super user** feature ensures that authorized people and services can always read and inspect the data that has been encrypted for your organization. If necessary, the encryption can then be removed or changed. For more information, see [Configuring super users for Azure Information Protection and discovery services or data recovery](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+使用此加密解決方案時，**超級使用者** 功能可確保獲授權的人員和服務一律可以讀取和檢查已為組織加密的資料。 如有需要，您可以接著將加密移除或變更。 如需詳細資訊，請參閱[為 Azure 資訊保護和探索服務或資料復原設定超級使用者](https://docs.microsoft.com/azure/information-protection/configure-super-users)。
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>如何設定用於加密的標籤
 
-1. 遵循一般指示以[建立或編輯敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)標籤，並確認已針對標籤的範圍選取 [檔案和電子郵件 **]**： 
+1. 遵循一般指示以 [建立或編輯敏感度標籤](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)標籤，並確認已針對標籤的範圍選取 **[檔案和電子郵件]**： 
     
     ![檔案和電子郵件的敏感度標籤範圍選項](../media/filesandemails-scope-options-sensitivity-label.png)
 
-2. 然後，在 [選擇檔案和電子郵件的保護設定 **]** 頁面上，確認您已選取 [加密檔案和電子郵件 **]**
+2. 然後，在 **[選擇檔案和電子郵件的保護設定]** 頁面上，確認您已選取 **[加密檔案和電子郵件]**
     
     ![檔案和電子郵件的敏感度標籤保護選項](../media/protection-options-sensitivity-label.png)
 
-4.  在精靈的 [加密 **]** 頁面上，選取下列其中一個選項：
+4.  在精靈的 **[加密]** 頁面上，選取下列其中一個選項：
     
     - **如果檔案已加密，則移除加密**：如需有關此案例的詳細資訊，請參閱[套用標籤時，現有的加密會發生什麼情況](#what-happens-to-existing-encryption-when-a-labels-applied)小節。 請注意，此設定可能會導致使用者沒有足夠權限時無法套用的敏感度標籤。
     
@@ -75,17 +75,17 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>套用標籤時，現有的加密會發生什麼情況
 
-如果您將敏感度標籤套用到未加密的內容，您可以選取的加密選項結果會一目了然。 例如，如果您未選取 [加密檔案和電子郵件 **]**，則內容會保持未加密。
+如果您將敏感度標籤套用到未加密的內容，您可以選取的加密選項結果會一目了然。 例如，如果您未選取 **[加密檔案和電子郵件]**，則內容會保持未加密。
 
 不過，內容可能已加密。 例如，其他使用者可能已套用：
 
-- 其自己的權限，其中包括標籤提示時的使用者定義權限、Azure 資訊保護用戶端的自訂權限，以及來自 Office 應用程式內的**限制存取**文件保護。
+- 其自己的權限，其中包括標籤提示時的使用者定義權限、Azure 資訊保護用戶端的自訂權限，以及來自 Office 應用程式內的 **限制存取** 文件保護。
 - Azure 版權管理保護範本可獨立於標籤將內容加密。 此類別包括使用版權保護來套用加密的郵件流程規則。
 - 以系統管理員指派的權限套用加密的標籤。
 
 下表說明對該內容套用敏感度標籤時，現有的加密會發生的情況：
 
-| |**加密：未選取**|**加密：已設定**|**加密：移除**|
+| | 加密：未選取 | 加密：已設定 | 加密：移除 |
 |:-----|:-----|:-----|:-----|
 |**使用者指定的權限**|原始加密已保留|新標籤加密已套用|原始加密已移除|
 |**保護範本**|原始加密已保留|新標籤加密已套用|原始加密已移除|
@@ -108,14 +108,14 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 ## <a name="configure-encryption-settings"></a>設定加密設定
 
-當您在精靈 [加密 **]** 頁面上選取 [設定加密設定 **]**，以建立或編輯敏感度標籤，請選擇下列其中一個選項：
+當您在精靈 **[加密]** 頁面上選取 **[設定加密設定]**，以建立或編輯敏感度標籤，請選擇下列其中一個選項：
 
 - **立即指派權限**，這樣您就能決定哪些使用者確切能取得已套用標籤內容的權限。 如需詳細資訊，請參閱下一節的[立即指派權限](#assign-permissions-now)。
 - 當使用者將標籤套用到內容時，**讓使用者指派權限**。 利用此選項，您就可以讓組織中的人員靈活地共同作業並完成工作。 如需詳細資訊，請本頁的[讓使用者指派權限](#let-users-assign-permissions)章節。
 
-例如，如果您有一個名為 [高度機密] **** 的敏感度標籤，該標籤將套用至最敏感的內容，則您可能會希望立即決定誰能取得該內容的何種權限。
+例如，如果您有一個名為 **[高度機密]** 的敏感度標籤，該標籤將套用至最敏感的內容，則您可能會希望立即決定誰能取得該內容的何種權限。
 
-或者，如果您有一個名為 [商業合約]**** 的敏感度標籤，並且貴組織的工作流程要求人員隨機與不同人員共同處理此內容，則您可能會希望讓使用者在指派標籤時決定可存取的人員。 這種靈活性既可以幫助您提高使用者的工作效率，又可以減少管理員更新或建立新敏感度標籤以滿足特定案例的要求。
+或者，如果您有一個名為 **[商業合約]** 的敏感度標籤，並且貴組織的工作流程要求人員隨機與不同人員共同處理此內容，則您可能會希望讓使用者在指派標籤時決定可存取的人員。 這種靈活性既可以幫助您提高使用者的工作效率，又可以減少管理員更新或建立新敏感度標籤以滿足特定案例的要求。
 
 選擇 [立即指派權限] 或 [讓使用者指派權限]：
 
@@ -125,9 +125,9 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 使用下列選項來控制誰可以存取套用此標籤的電子郵件或文件。 您可以：
 
-- 在特定日期，或是在套用標籤之後的特定天數之後**允許具有標籤的內容的存取權到期**。在此時間後，使用者將無法開啟具有標籤的項目。如果指定日期，則會在目前時區中，該日期的午夜開始生效。(請注意，某些電子郵件用戶端可能因為其快取機制而無法強制執行到期，而顯示超過期限的電子郵件。)
+- 在特定日期，或是在套用標籤之後的特定天數之後 **允許具有標籤的內容的存取權到期**。在此時間後，使用者將無法開啟具有標籤的項目。如果指定日期，則會在目前時區中，該日期的午夜開始生效。(請注意，某些電子郵件用戶端可能因為其快取機制而無法強制執行到期，而顯示超過期限的電子郵件。)
 
-- 在套用標籤之後**允許離線存取**可為從不、一律或特定天數。如果您將離線存取限制為從不或天數，則達到該閾值時，必須重新驗證使用者，並記錄其存取。如需詳細資訊，請參閱關於 Rights Management 使用授權的下一節。
+- 在套用標籤之後 **允許離線存取** 可為從不、一律或特定天數。如果您將離線存取限制為從不或天數，則達到該閾值時，必須重新驗證使用者，並記錄其存取。如需詳細資訊，請參閱關於 Rights Management 使用授權的下一節。
 
 已加密內容的存取控制設定：
 
@@ -274,13 +274,13 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 針對內建標籤，使用者會在選取下列項目時看到相同的對話方塊：
 
-- Windows：[檔案]**** 索引標籤 > [資訊]****  >  [保護文件]****  >  [限制存取]****  >  [限制存取]****
+- Windows：**[檔案]** 索引標籤 > **[資訊]**  > **[保護文件]**  >  **[限制存取]**  >  **[限制存取]**
 
-- MacOS：[校閱]**** 索引標籤 > [保護]****  >  [權限]****  >  [限制存取]****
+- MacOS：**[校閱]** 索引標籤 > **[保護]**  > **[權限]**  >  **[限制存取]**
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>加密設定的範例組態
 
-針對後續的各個範例，在選取 [設定加密設定 **]** 時，請從精靈的 [加密 **]** 頁面執行組態：
+針對後續的各個範例，在選取 **[設定加密設定]** 時，請從精靈的 **[加密]** 頁面執行組態：
 
 ![敏感度標籤精靈中的套用加密選項](../media/apply-encryption-option.png)
 
@@ -308,7 +308,7 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 2. 針對 **[允許離線存取]**，選取 **[從不]**。
 
-3. 選取 [指派權限]****。
+3. 選取 **[指派權限]**。
 
 4. 在 **[指派權限]** 窗格中，選取 **[新增特定電子郵件地址或網域]**。
 
@@ -326,9 +326,9 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 您新增的新使用者將能夠開啟已使用此標籤保護的文件和電子郵件。 您授與這些使用者的權限可以與現有使用者所擁有的權限不同。
 
-1. 在 [加密]**** 頁面上：針對 [立即指派權限，或讓使用者決定?]****，確定已選取 [立即指派權限]****。
+1. 在 **[加密]** 頁面上：針對 **[立即指派權限，或讓使用者決定?]**，確定已選取 **[立即指派權限]**。
 
-2. 選取 [指派權限]****。
+2. 選取 **[指派權限]**。
 
 3. 在 **[指派權限]** 窗格中，選取 **[新增特定電子郵件地址或網域]**。
 
@@ -338,7 +338,7 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 6. 在 **[選擇權限]** 窗格中，選取此使用者 (或群組) 的權限，然後選取 **[儲存]**。
 
-7. 回到 **[指派權限]** 窗格，針對您要新增至此標籤的每個使用者 (或群組) 重複步驟 3 到 6。 然後按一下 [儲存]****。
+7. 回到 **[指派權限]** 窗格，針對您要新增至此標籤的每個使用者 (或群組) 重複步驟 3 到 6。 然後按一下 **[儲存]**。
 
 8. 在 **[加密]** 頁面上，選取 **[下一步]** 並完成精靈。
 
@@ -348,11 +348,11 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 僅當您不需要限制能開啟受保護文件或電子郵件的人員時，才使用此組態。 [此設定的詳細資訊](#requirements-and-limitations-for-add-any-authenticated-users)
 
-1. 在 [加密]**** 頁面上：針對 [立即指派權限，或讓使用者決定?]****，確定已選取 [立即指派權限]****。
+1. 在 **[加密]** 頁面上：針對 **[立即指派權限，或讓使用者決定?]**，確定已選取 **[立即指派權限]**。
 
 2. 視需要設定 **[使用者存取內容的期限]** 和 **[允許離線存取]** 設定。
 
-3. 選取 [指派權限]****。
+3. 選取 **[指派權限]**。
 
 4. 在 **[指派權限]** 窗格中，選取 **[新增所有經過驗證的使用者]**。
 
@@ -378,12 +378,14 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 - 若要讓多個使用者同時編輯加密的檔案，他們都必須使用 Office 網頁版。 如果未這麼做，而且檔案已經開啟：
 
-  - 在 Office 應用程式 (Windows、Mac、Android 和 iOS) 中，使用者會看到 [檔案使用中]**** 訊息，其中包含已簽出檔案的人員名稱。 然後，他們可以檢視唯讀複本，或儲存並編輯檔案的複本，並在檔案可用時收到通知。
-  - 在 Office 網頁版中，使用者會看到錯誤訊息，指出他們無法與其他人一起編輯該文件。 然後他們可以選取 [在閱讀檢視中開啟]****。
+  - 在 Office 應用程式 (Windows、Mac、Android 和 iOS) 中，使用者會看到 **[檔案使用中]** 訊息，其中包含已簽出檔案的人員名稱。 然後，他們可以檢視唯讀複本，或儲存並編輯檔案的複本，並在檔案可用時收到通知。
+  - 在 Office 網頁版中，使用者會看到錯誤訊息，指出他們無法與其他人一起編輯該文件。 然後他們可以選取 **[在閱讀檢視中開啟]**。
 
 - Office 應用程式 (Windows、Mac、Android 和 iOS) 中的[自動儲存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)功能已對加密的檔案停用。 使用者會看到一則訊息，指出檔案具有必須移除的權限限制，之後才可以開啟「自動儲存」。
 
 - 在 Office 應用程式 (Windows、Mac、Android 和 iOS) 中開啟加密的檔案可能需要較長的時間才能開啟。
+
+- 如果在 [SharePoint 中簽出](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)檔案時使用 Office 應用程式新增了套用了加密標籤，然後使用者放弃了簽出，則檔案將保持標記和加密狀態。
 
 - 用於已加密檔案的下列動作在 Office 應用程式 (Windows、Mac、Android 和 iOS) 中不受支援，因此使用者會看到錯誤訊息，指出發生錯誤。 不過，您可以使用 SharePoint 功能做為替代：
 
