@@ -527,7 +527,7 @@
               href: ./office-365-security/campaigns.md
             - name: 調查惡意電子郵件
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: 檢視安全與合規性中心內的報告
+            - name: 在安全性與合規性中心中檢視適用於 Office 365 的 Defender 報告
               href: ./office-365-security/view-reports-for-atp.md
             - name: 檢視自動調查的詳細資料和結果
               href: ./office-365-security/air-view-investigation-results.md
