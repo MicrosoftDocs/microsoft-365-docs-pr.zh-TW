@@ -11,24 +11,26 @@ metadata:
   ms.date: 04/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 821bfbac12e01f73fa3fbb52be9f95165bb3dd1b
-  ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+  ms.openlocfilehash: f9bb89aa0f42f487abcd0d44785c257184024941
+  ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/30/2020
-  ms.locfileid: "48804560"
+  ms.lasthandoff: 12/03/2020
+  ms.locfileid: "49562918"
 landingContent:
 - title: 監控服務的狀態
   linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft 365 使用狀況報告 - 概觀
+      url: ../activity-reports/activity-reports.md
+    - text: 生產力分數 - 概觀
+      url: ../productivity/productivity-score.md
+    - text: Microsoft 365 使用情況分析 - PowerBI
+      url: ../usage-analytics/usage-analytics.md
   - linkListType: how-to-guide
     links:
-    - text: 使用報告來監視使用者活動
-      url: ../activity-reports/activity-reports.md
-    - text: 使用 [生產力分數] 監視使用者生產力
-      url: ../productivity/productivity-score.md
-    - text: 監視使用情況分析
-      url: ../usage-analytics/usage-analytics.md
-    - text: 啟用使用情況分析
+    - text: 啟用流量分析
       url: ../usage-analytics/enable-usage-analytics.md
     - text: 變更您的組織連絡人資訊
       url: change-address-contact-and-more.md
