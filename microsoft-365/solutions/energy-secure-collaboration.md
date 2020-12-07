@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 能協助將能源組織移轉至現代共同作業平台，同時協助確保資料和系統安全性及遵循各種法規。
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 0fedb042d01814ef6cd53e9271f93b3c80b6babe
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 1e5acc09c72b47f583c2ee9330f78bf3e68aaa33
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906224"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558487"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>能源產業的重要合規性與安全性考量
 ![使用雲端的各種產業全球檢視的示意圖](../media/solution-arch-center/MSC17_global_016.png)
@@ -27,7 +27,7 @@ ms.locfileid: "48906224"
 
 能源產業中的組織可以在其一般營運中使用及交換許多類型的資訊，包括客戶資料、資本工程設計文件、資源位置地圖、專案管理成品、效能計量、現場服務報告、環境資料和效能計量。 當這些組織尋求將其營運和共同作業系統轉換成新式數位平台時，他們會將 Microsoft 視為信任的雲端服務提供者 (CSP)，將 Microsoft 365 視為其最佳共同作業平台。 由於 Microsoft 365 本質上是建置在 Microsoft Azure 平台上，因此組織應該在移動到雲端而考量其合規性與安全性控制時，同時檢查兩個平台。
 
-在北美洲，北美洲電氣可靠性公司 (North America Electric Reliability Corporation (NERC)) 會強制執行 NERC [重要基礎結構保護 (CIP) 標準](https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx) (英文) 中所述的可靠性標準。 NERC 受美國聯邦能源管理委員會 (FERC) 和加拿大政府機構的監督。 所有大量電力系統擁有者、操作員和使用者必須向 NERC 註冊，並且遵守 NERC CIP 標準。 雲端服務提供者和第三方廠商 (例如 Microsoft) 不受 NERC CIP 標準約束；不過 CIP 標準包含註冊實體在大量電力系統 (BES) 運行中使用廠商時應考慮的目標。 運行大量電力系統的 Microsoft 客戶對確保自己遵守 NERC CIP 標準負有全部責任。 
+在北美洲，北美洲電氣可靠性公司 (North America Electric Reliability Corporation (NERC)) 會強制執行 NERC [重要基礎結構保護 (CIP) 標準](https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx) 中所述的可靠性標準。 NERC 受美國聯邦能源管理委員會 (FERC) 和加拿大政府機構的監督。 所有大量電力系統擁有者、操作員和使用者必須向 NERC 註冊，並且遵守 NERC CIP 標準。 雲端服務提供者和第三方廠商 (例如 Microsoft) 不受 NERC CIP 標準約束；不過 CIP 標準包含註冊實體在大量電力系統 (BES) 運行中使用廠商時應考慮的目標。 運行大量電力系統的 Microsoft 客戶對確保自己遵守 NERC CIP 標準負有全部責任。 
 
 如需 Microsoft 雲端服務與 NERC 的相關資訊，請參閱下列資源：
 - [NERC CIP 標準和雲端運算](https://aka.ms/AzureNERC)
@@ -38,8 +38,8 @@ ms.locfileid: "48906224"
 - Azure 和 Azure Government 都獲得授與 FedRAMP High P-ATO (佈建授權可執行)，這是最高的 FedRAMP 授權層級。 
 
 如需 Microsoft 雲端服務與 FedRAMP 的相關資訊，請參閱下列資源：
-- [Microsoft FedRAMP 概觀](https://docs.microsoft.com/microsoft-365/compliance/offering-fedramp?view=o365-worldwide) (部分機器翻譯)
-- [Office 365 FedRAMP 報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports) (部分機器翻譯)
+- [Microsoft FedRAMP 概觀](https://docs.microsoft.com/microsoft-365/compliance/offering-fedramp?view=o365-worldwide)
+- [Office 365 FedRAMP 報告](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 
 這些成就對能源產業來說非常重要，因為 FedRAMP 中等控制集與 NERC CIP 需求之間的比較顯示，FedRAMP 中等控制涵蓋所有 NERC CIP 需求。 如需詳細資訊，Microsoft 已開發 [NERC 稽核的雲端實作指南](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=68df41b2-873d-4e4b-a7c8-8a0d4fdefb88&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)，其中包括目前 NERC CIP 標準集合和 FedRAMP 中等控制集之間的控制對應，如 NIST 800-53 修訂版 4 所述。
@@ -103,7 +103,7 @@ Microsoft Teams 預設會啟用自助建立 Teams。 不過，許多監管組織
 
 Microsoft 提供的關鍵工具可協助您監視一段時間內的法規合規性：
 
-- **Microsoft 合規性管理員** 可協助組織了解目前的合規性狀況，以及針對改善該狀況可採取的動作。 [合規性管理員] 會計算風險型分數，衡量完成動作的進度，協助降低資料保護和法規標準的風險。 [合規性管理員] 會依據 Microsoft 365 資料保護基準提供初始分數。 此基準是一組包含常見業界法規和標準的控制。 這個分數是很好的起點，而如果組織新增與其產業更加相關的評估，[合規性管理員] 就會變得更加強大。 [合規性管理員] 支援與 NERC CIP 合規性義務相關的許多法規標準，其中包括 [FedRAMP 中等控制集](https://www.fedramp.gov/documents/) (英文)、[NIST 800-53 修訂版 4](https://go.microsoft.com/fwlink/?linkid=2109075) (英文)，以及 [AICPA SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184) (英文)。 如果需要，能源產業組織也可以建立或匯入自訂控制集。
+- **Microsoft 合規性管理員** 可協助組織了解目前的合規性狀況，以及針對改善該狀況可採取的動作。 [合規性管理員] 會計算風險型分數，衡量完成動作的進度，協助降低資料保護和法規標準的風險。 [合規性管理員] 會依據 Microsoft 365 資料保護基準提供初始分數。 此基準是一組包含常見業界法規和標準的控制。 這個分數是很好的起點，而如果組織新增與其產業更加相關的評估，[合規性管理員] 就會變得更加強大。 [合規性管理員] 支援與 NERC CIP 合規性義務相關的許多法規標準，其中包括 [FedRAMP 中等控制集](https://www.fedramp.gov/documents/)、[NIST 800-53 修訂版 4](https://go.microsoft.com/fwlink/?linkid=2109075)、以及 [AICPA SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)。 如果需要，能源產業組織也可以建立或匯入自訂控制集。
 
 內建於 [合規性管理員] 的工作流程型功能，可讓能源組織轉換和數位化其法規合規性程序。 傳統上，能源產業合規性小組面臨的挑戰包括：
 - 補救動作的進度報告或追蹤不一致
@@ -115,14 +115,14 @@ Microsoft 提供的關鍵工具可協助您監視一段時間內的法規合規�
 
 [合規性管理員] 並不能用來代表組織合規性絕對符合某個特定的標準或法規。 這代表您採取的控制措施可降低個人資料和個人隱私權暴露在風險中的程度。 您不應將 [合規性管理員] 提供的建議視為合規性的保證。 「合規性管理員」中提供的客戶動作僅為建議，每個組織可於實作之前自行評估這些建議在其個別的法規環境中的有效性。 您不應將合規性管理員中找到的建議視為合規性的保證。
 
-許多網路安全性相關控制都包含在 [FedRAMP 中等控制集](https://www.fedramp.gov/documents/) (英文) 和 [NERC CIP 標準](https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx) (英文) 中。 不過，與 Microsoft 365 平台相關的關鍵控制包括安全性管理控制 (CIP-003-6)、帳戶與存取權管理/存取撤銷 (CIP-004-6)、電子安全性周邊 (CIP-005-5)、安全性事件監視和事件回應 (CIP-008-5)。 下列基本 Microsoft 365 功能可協助解決這些主題中所包含的風險和需求。
+許多網路安全性相關控制都包含在 [FedRAMP 中等控制集](https://www.fedramp.gov/documents/) 和 [NERC CIP 標準](https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx) 中。 不過，與 Microsoft 365 平台相關的關鍵控制包括安全性管理控制 (CIP-003-6)、帳戶與存取權管理/存取撤銷 (CIP-004-6)、電子安全性周邊 (CIP-005-5)、安全性事件監視和事件回應 (CIP-008-5)。 下列基本 Microsoft 365 功能可協助解決這些主題中所包含的風險和需求。
 
 ### <a name="secure-user-identities-and-control-access"></a>保護使用者身分識別及控制存取權
 保護對文件和應用程式的存取權始於嚴格加強使用者身分識別。 作為基礎，必須為企業提供安全的平台來儲存及管理身分識別，並且提供信任的驗證方式。 也需要動態控制這些應用程式的存取權。 員工工作時，他們可能會在應用程式之間移動，或在多個位置和裝置之間移動。 因此，在此過程的每個步驟中，都必須驗證資料存取權。 此外，驗證程序必須支援強大的通訊協定和多重要素驗證 (一次性 SMS 密碼、驗證器應用程式、認證等等)，讓我們得以確保身分識別不遭到入侵。 最後，實施風險式存取原則對保護資料和應用程式不受測試人員威脅、避免不慎資料洩漏和資料外流是關鍵的建議。
 
 Microsoft 365 提供 **Azure Active Directory (Azure AD)** 的安全身分識別平台，在其中集中儲存並安全管理身分識別。 Azure Active Directory 和許多相關的 Microsoft 365 安全性服務構成了為員工提供安全工作所需的存取權基礎，同時還保護組織免受威脅。
 
-**Azure Multi-Factor Authentication (MFA)** 內建在平台中，並提供額外的保護層，以在存取敏感性資料和應用程式時，協助確認使用者是他們所表明的身分。 Azure MFA 至少需要兩種形式的驗證，例如密碼和已知的行動裝置。 其支援數個次要因素驗證選項，包括：Microsoft Authenticator 應用程式、透過 SMS 傳遞的一次性密碼，接聽使用者必須輸入 PIN 的電話、智慧卡或憑證型驗證。 如果密碼遭入侵，潛在的駭客仍需要使用者的手機，才能存取組織資料。 此外，Microsoft 365 會使用新式驗證作為金鑰通訊協定，讓 Web 瀏覽器提供的強大驗證體驗，也能在共同作業工具中使用，包括 Microsoft Outlook 和其他 Microsoft Office 應用程式。
+**Azure AD Multi-Factor Authentication (MFA)** 內建在平台中，並提供額外的保護層，以在存取敏感性資料和應用程式時，協助確認使用者是他們所表明的身分。 Azure MFA 至少需要兩種形式的驗證，例如密碼和已知的行動裝置。 其支援數個次要因素驗證選項，包括：Microsoft Authenticator 應用程式、透過 SMS 傳遞的一次性密碼，接聽使用者必須輸入 PIN 的電話、智慧卡或憑證型驗證。 如果密碼遭入侵，潛在的駭客仍需要使用者的手機，才能存取組織資料。 此外，Microsoft 365 會使用新式驗證作為金鑰通訊協定，讓 Web 瀏覽器提供的強大驗證體驗，也能在共同作業工具中使用，包括 Microsoft Outlook 和其他 Microsoft Office 應用程式。
 
 **Azure AD 條件式存取** 提供強大的解決方案，以自動化存取控制決策，並強制執行原則以保護公司資產。 常見的範例是，員工想要存取含有敏感性客戶資料的應用程式，系統自動要求他們執行多重要素驗證，才能特別存取該應用程式。 Azure 條件式存取整合使用者存取要求的相關信號，例如使用者的屬性、裝置、位置和網路，以及使用者嘗試存取的應用程式或存放庫。 其可根據已設定的原則，對每次嘗試存取應用程式的動作進行動態評估。 如果使用者或裝置風險提高，或不符合其他條件，Azure AD 可自動強制實施原則，例如動態要求 MFA、限制或甚至封鎖存取權。 這可協助確保敏感性資產在不斷變更的環境中受到保護。 
 
@@ -144,9 +144,9 @@ FedRAMP 中等控制集和 NERC CIP 標準也包含可作為關鍵控制需求�
 
 Microsoft 365 讓組織內的敏感性資料都能透過強大的功能組合來識別和保護，包括：
 
-- **Microsoft 資訊保護 (MIP)** ，以使用者為基礎的分類和敏感性資料的自動化分類
+- **Microsoft 資訊保護 (MIP)**，以使用者為基礎的分類和敏感性資料的自動化分類
 
-- **Office 365 資料外洩防護 (DLP)** ，以使用敏感性資料類型 (即規則運算式) 和關鍵字和原則強制執行來自動識別敏感性資料
+- **Office 365 資料外洩防護 (DLP)**，以使用敏感性資料類型 (即規則運算式) 和關鍵字和原則強制執行來自動識別敏感性資料
 
 **Microsoft 資訊保護 (MIP)** 可讓員工使用敏感度標籤，將文件和電子郵件分類。 使用者可以在 Microsoft Office 應用程式的文件和 Microsoft Outlook 中的電子郵件手動套用敏感度標籤。 敏感度標籤可自動套用文件標記、加密保護，以及強制執行版權管理。 還可以透過設定使用關鍵字和敏感性資料類型 (信用卡號碼、社會安全號碼、身分證字號等等) 的原則來自動套用，以自動尋找及分類敏感性資料。 
 
@@ -176,7 +176,7 @@ FedRAMP 中等控制集和 NERC CIP 標準也包含可作為關鍵控制需求�
 在每個保留標籤上，Office 365 可讓記錄管理員判斷是否需要處置檢閱。 當這些記錄類型進行處置時，在其保留期間到期之後，必須由指定的處置檢閱者執行檢閱，才能刪除內容。 處置檢閱核准之後，就會繼續進行內容刪除，但是刪除的證據、執行刪除的使用者和發生日期/時間，仍會保留多年 (作為毀損憑證)。 如果組織需要更久或永久保留毀損憑證，Azure Sentinel 可用於長期雲端式記錄和稽核資料儲存。 Azure Sentinel 可讓組織完全控制活動資料、記錄資料及保留/處置資料的長期儲存和保留。
 
 ## <a name="comply-with-ferc-and-ftc-regulations-for-energy-markets"></a>符合 FERC 和 FTC 對於能源市場的法規要求
-美國聯邦能源管理委員會 (FERC) 會監督[與能源市場和電力能源與天然氣市場交易相關的法規](https://www.ferc.gov/CalendarFiles/20161117125529-WhitePaperCompliance.pdf) (英文)。 美國聯邦貿易委員會 (FTC) 會監督[石油市場中的法規](https://www.ftc.gov/sites/default/files/documents/rules/prohibition-energy-market-manipulation-rule/091113mmrguide.pdf) (英文)。 在這兩種情況下，這些監管機構會設定規定和指導方針，以禁止能源市場操縱。 例如，FERC 建議能源組織投資技術資源，以監視交易、交易員通訊及內部控制合規性。 他們會進一步建議能源組織定期評估組織合規性方案的持續效能。
+美國聯邦能源管理委員會 (FERC) 會監督[與能源市場和電力能源與天然氣市場交易相關的法規](https://www.ferc.gov/CalendarFiles/20161117125529-WhitePaperCompliance.pdf)。 美國聯邦貿易委員會 (FTC) 會監督[石油市場中的法規](https://www.ftc.gov/sites/default/files/documents/rules/prohibition-energy-market-manipulation-rule/091113mmrguide.pdf)。 在這兩種情況下，這些監管機構會設定規定和指導方針，以禁止能源市場操縱。 例如，FERC 建議能源組織投資技術資源，以監視交易、交易員通訊及內部控制合規性。 他們會進一步建議能源組織定期評估組織合規性方案的持續效能。
 
 傳統上，通訊監視解決方案成本高昂，而且設定及管理相當複雜。 此外，組織在監視員工可用的為數眾多、各有不同的通訊通道時，會遇到挑戰。 Microsoft 365 提供數個內建健全功能，可讓您監視員工通訊、監管員工活動，並協助遵循 FERC 對於能源市場的法規。
 

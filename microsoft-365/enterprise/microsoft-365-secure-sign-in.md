@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: 規定使用者以多重要素驗證 (MFA) 和其他功能安全登入。
-ms.openlocfilehash: a3a63dfc06f5470c2151cd2ff140ad5dee19b0ce
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 8426d902ff8be8541b5d770af6d34cdf71868047
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446074"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558523"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>保護 Microsoft 365 租用戶的使用者登入
 
@@ -52,7 +52,7 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 
 ![正確的密碼加上其他驗證則可導致順利登入](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-使用 MFA 的第一步是***要求所有系統管理員帳戶 (亦即授權帳戶) 都使用 MFA***。
+使用 MFA 的第一步是***要求所有系統管理員帳戶 (亦即授權帳戶) 都使用 MFA** _。
 
 除了這個第一步，Microsoft 建議要求所有使用者都使用 MFA。
 
@@ -67,7 +67,7 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 
 ### <a name="security-defaults"></a>安全性預設
 
-安全性預設是 2019 年 10 月 21 日之後所建立 Microsoft 365 和 Office 365 付費或試用版訂用帳戶的新功能。 這些訂用帳戶會開啟安全性預設，而***要求所有使用者都必須使用 MFA 與 Microsoft Authenticator 應用程式***。
+安全性預設是 2019 年 10 月 21 日之後所建立 Microsoft 365 和 Office 365 付費或試用版訂用帳戶的新功能。 這些訂用帳戶會開啟安全性預設，而 _*_要求所有使用者都必須使用 MFA 與 Microsoft Authenticator 應用程式_*_。
  
 使用者有 14 天的時間可以從其智慧型手機向 Microsoft Authenticator 應用程式註冊 MFA，時間從啟用安全性預設後使用者首次登入時起算。 14 天過後，使用者就無法登入，除非其完成 MFA 註冊。
 
@@ -102,7 +102,7 @@ MFA 會要求使用者登入程序另外遵守使用者帳戶密碼以外的驗�
 
 | Method | 啟用 | 停用 | 額外驗證方法 |
 |:-------|:-----|:-------|:-------|
-| **安全性預設**  | 無法使用條件式存取原則 | 可以使用條件式存取原則 | Microsoft Authenticator 應用程式 |
+| _ *安全性預設**  | 無法使用條件式存取原則 | 可以使用條件式存取原則 | Microsoft Authenticator 應用程式 |
 | **條件式存取原則** | 如果已啟用任何原則，則無法啟用安全性預設 | 如果已停用所有原則，則可啟用安全性預設  | 在 MFA 註冊期間由使用者指定  |
 ||||
 
@@ -133,7 +133,7 @@ Microsoft 強烈建議您在組織設定並推出身分識別和裝置存取原�
 |功能|描述|
 |:---------|:---------|
 | 判斷並處理組織身分識別中潛在的弱點 | Azure AD 使用機器學習來偵測異常和可疑活動，例如登入和登入後的活動。 Azure AD Identity Protection 可使用此資料來產生報告和警示，協助您評估問題及採取行動。|
-|偵測與組織身分識別相關的可疑活動，並自動進行回應處理|您可以設定以風險為基礎的原則，當達到指定風險層級時自動回應偵測到的問題。 除了由 Azure AD 和 Microsoft Intune 提供的其他條件式存取控制項之外，這些原則還可以自動封鎖存取權，或採取更正動作，包括密碼重設以及對後續登入要求 Azure Multi-Factor Authentication。 |
+|偵測與組織身分識別相關的可疑活動，並自動進行回應處理|您可以設定以風險為基礎的原則，當達到指定風險層級時自動回應偵測到的問題。 除了由 Azure AD 和 Microsoft Intune 提供的其他條件式存取控制項之外，這些原則還可以自動封鎖存取權，或採取更正動作，包括密碼重設以及對後續登入要求 Azure AD Multi-Factor Authentication。 |
 | 調查可疑事件，並使用系統管理動作加以解決 | 您可以使用安全性事件的相關資訊來調查風險事件。基本工作流程可用於追蹤調查及啟動修復動作，例如密碼重設。 |
 |||
 
@@ -146,7 +146,7 @@ Microsoft 強烈建議您在組織設定並推出身分識別和裝置存取原�
 - [Microsoft 365 適用的 MFA](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 - [Microsoft 365 的身分識別藍圖](identity-roadmap-microsoft-365.md)
 - [Azure Academy Azure AD 訓練影片](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [設定 Azure Multi-Factor Authentication 註冊原則](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+- [設定 Azure AD Multi-Factor Authentication 註冊原則](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [身分識別與裝置存取設定](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>下一步

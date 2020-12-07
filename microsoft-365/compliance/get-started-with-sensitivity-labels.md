@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 12da7f3dd5e6d0d4650d19a8cd5f6f41b51f2558
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 79dc57e545c3063cae641bab2603e3011c5a1769
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398840"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568599"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -40,7 +40,7 @@ ms.locfileid: "48398840"
 
 1. **建立標籤。** 根據貴組織用於不同內容敏感度層級的分類法，建立您的敏感度標籤並加以命名。 使用對您的使用者有意義的一般名稱或字詞。 如果您還沒有建立分類法，請考慮從 [個人]、[公用]、[一般]、[機密] 和 [高度機密] 等標籤名稱著手。 您可以接著使用子標籤，依類別將類似的標籤群組。 當您建立標籤時，請使用工具提示文字來協助使用者選取適當的標籤。
     
-    如需更廣泛的定義分類法指導方針，請從[服務信任入口網站](https://aka.ms/DataClassificationWhitepaper)下載白皮書《資料分類和敏感度標籤分類》(英文)。
+    如需更廣泛的定義分類法指導方針，請從[服務信任入口網站](https://aka.ms/DataClassificationWhitepaper)下載白皮書《資料分類和敏感度標籤分類》。
 
 2. **定義每個標籤的功能。** 設定您想要與每個標籤相關聯的保護設定。 例如，您可能希望將較低敏感度內容 (如「一般」標籤) 僅套用到頁首或頁尾，而較高敏感度內容 (如「機密」標籤) 則具有浮水印和加密。
 
@@ -60,9 +60,9 @@ ms.locfileid: "48398840"
 
 合規性小組成員會建立敏感度標籤，這些成員需要 Microsoft 365 合規性中心、Microsoft 365 安全性中心或安全性與合規性中心的權限。 
 
-根據預設，您的租用戶的全域系統管理員可以存取這些系統管理中心，並且授與法務人員和其他人員存取權限，而不需授與他們租用戶系統管理員的所有權限。如需這個委派的受限系統管理員存取權，請將使用者新增至 [合規性資料系統管理員]****、[合規性系統管理員]**** 或 [安全性系統系統管理員]**** 角色群組。 
+根據預設，您的租用戶的全域系統管理員可以存取這些系統管理中心，並且授與法務人員和其他人員存取權限，而不需授與他們租用戶系統管理員的所有權限。如需這個委派的受限系統管理員存取權，請將使用者新增至 [合規性資料系統管理員]、[合規性系統管理員] 或 [安全性系統系統管理員] 角色群組。 
 
-除了使用預設角色以外，您可以建立新的角色群組，並將 [敏感度標籤系統管理員]**** 或 [組織組態]**** 角色新增至此群組。 唯讀角色請使用 [敏感度標籤讀取器]****。 
+除了使用預設角色以外，您可以建立新的角色群組，並將 [敏感度標籤系統管理員] 或 [組織組態] 角色新增至此群組。 唯讀角色請使用 [敏感度標籤讀取器]。 
 
 如需將使用者新增至預設角色或建立您自己的角色群組的指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
@@ -73,7 +73,7 @@ ms.locfileid: "48398840"
 
 建議使用下一章的表格，確定與影響最大的業務需求對應的前兩種情況。 部署這些案例之後，請回到清單以確定下一個或下兩個部署的優先順序。
 
-您可以在可下載的《Microsoft 365 資訊保護與合規性部署加速指南》中找到其他一般部署指南。 如需詳細資訊，請參閱[Microsoft 資訊保護與合規性部署加速指南](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493) (英文) 部落格文章。
+您可以在可下載的《Microsoft 365 資訊保護與合規性部署加速指南》中找到其他一般部署指南。 如需詳細資訊，請參閱[Microsoft 資訊保護與合規性部署加速指南](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493) 部落格文章。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>敏感度標籤的常見案例
 
@@ -93,10 +93,12 @@ ms.locfileid: "48398840"
 |在 Power BI 中套用和檢視靈敏度標籤，並在匯出資料時加以保護|[如何在 Power BI 套用敏感度標籤](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|
 |監視並了解組織中使用敏感度標籤的方法|[了解您的資料 - 資料分類概觀](data-classification-overview.md) <br /><br /> [利用標籤分析檢視標籤使用量](label-analytics.md)|
 |將敏感度標籤延伸至第三方應用程式和服務|[Microsoft 資訊保護 SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|將敏感度標籤延伸至 Azure Blob 儲存體、Azure 檔案、Azure Data Lake Storage Gen1 和 Azure Data Lake Storage Gen12 中的內容|[在 Azure Purview 中自動為您的內容加上標籤](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
+
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>敏感度標籤的使用者文件
 
-最有效的使用者文件會是您為所選的標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 敏感度標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880) (英文)。 
+最有效的使用者文件會是您為所選的標籤名稱和組態提供的自訂指導方針和指示。 請參閱下列部落格文章，以取得可供您用來訓練使用者並推動採用的下載套件：[關於 M365 敏感度標籤的使用者訓練 – 瞭解如何加速採用](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880)。 
 
 您也可以使用下列資源來取得基本指示：
 

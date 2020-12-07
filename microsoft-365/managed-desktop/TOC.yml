@@ -82,7 +82,7 @@
           href: get-started/access-admin-portal.md
         - name: 在系統管理入口網站中新增和驗證系統管理連絡人
           href: get-started/add-admin-contacts.md
-        - name: 調整條件式存取
+        - name: 註冊之後調整設定
           href: get-started/conditional-access.md
         - name: 指派授權
           href: get-started/assign-licenses.md

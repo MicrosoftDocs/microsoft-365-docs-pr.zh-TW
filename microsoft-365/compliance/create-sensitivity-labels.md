@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: 9fc130a15229f7d464ed8336c3ae37d1af367ed3
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: 10d677eb328ee002e187b098fa44b09372b59f72
+ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49073112"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "49568327"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -53,7 +53,7 @@ ms.locfileid: "49073112"
     - 安全性與合規性中心：
         - **分類** > **敏感度標籤**
 
-2. 在 **[標籤]** 頁面上，選取 **[+ 建立標籤]** ，以啟動 [新增敏感度標籤] 精靈。 
+2. 在 **[標籤]** 頁面上，選取 **[+ 建立標籤]**，以啟動 [新增敏感度標籤] 精靈。 
     
     例如，從 Microsoft 365 合規性中心:
     
@@ -65,17 +65,19 @@ ms.locfileid: "49073112"
     
     ![敏感度標籤的範圍](../media/sensitivity-labels-scopes.png)
     
-    - 如果已選取 [檔案和電子郵件 **]** ，則可以在此精靈中進行設定，以套用至支援敏感度標籤的應用程式，例如 Office Word 和 Outlook。 如果未選取此選項，精靈會顯示這些設定的第一頁，但是您無法設定，而且使用者無法在這些應用程式中選取標籤。
+    - 如果已選取 [檔案和電子郵件 **]**，則可以在此精靈中進行設定，以套用至支援敏感度標籤的應用程式，例如 Office Word 和 Outlook。 如果未選取此選項，精靈會顯示這些設定的第一頁，但是您無法設定，而且使用者無法在這些應用程式中選取標籤。
     
-    - 如果已選取 [群組和網站 **]** ，則可以在此精靈中進行設定，以套用至 Microsoft 365 群組，以及 Teams 和 SharePoint 網站。 如果未選取此選項，精靈會顯示這些設定的第一頁，但是您無法設定，而且使用者無法為群組和網站選取標籤。
+    - 如果已選取 [群組和網站 **]**，則可以在此精靈中進行設定，以套用至 Microsoft 365 群組，以及 Teams 和 SharePoint 網站。 如果未選取此選項，精靈會顯示這些設定的第一頁，但是您無法設定，而且使用者無法為群組和網站選取標籤。
+    
+    如需 **Azure Purview 資產 (預覽)** 範圍的相關資訊，請參閱[在 Azure Purview 中自動為您的內容加上標籤](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
 
 4. 按照標籤設定精靈的提示進行。
     
     如需有關標籤設定的詳細資訊，請參閱概觀資訊中的[敏感度標籤功能](sensitivity-labels.md#what-sensitivity-labels-can-do) 並為個別設定套用精靈中的幫助。
 
-5. 重複這些步驟以建立更多標籤。 不過，如果您想要建立子標籤，請先選取父標籤，並選取 **[...]** 以取得 **[其他動作]** ，然後選取 **[新增子標籤]** 。
+5. 重複這些步驟以建立更多標籤。 不過，如果您想要建立子標籤，請先選取父標籤，並選取 **[...]** 以取得 **[其他動作]**，然後選取 **[新增子標籤]**。
 
-6. 建立好所有需要的標籤後，請檢查其順序，並視需要將它們上下移動。 若要變更標籤的順序，請選取 **...** 以取得 [其他動作]，然後選取 [上移] 或 [下移]。 如需詳細資訊，請參閱概覽資訊中的[標籤優先順序 (順序很重要)](sensitivity-labels.md#label-priority-order-matters) (英文)。
+6. 建立好所有需要的標籤後，請檢查其順序，並視需要將它們上下移動。 若要變更標籤的順序，請選取 **...** 以取得 [其他動作]，然後選取 [上移] 或 [下移]。 如需詳細資訊，請參閱概覽資訊中的[標籤優先順序 (順序很重要)](sensitivity-labels.md#label-priority-order-matters)。
 
 若要編輯現有的標籤，請將其選取，然後選取 **[編輯標籤]** 按鈕:
 
@@ -99,9 +101,9 @@ ms.locfileid: "49073112"
 
 例如：
 
-- 對跨國部署使用 *LocaleSettings* 參數，以便使用者能夠利用本地語言查看標籤名稱和工具提示。 [下列章節](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) 含有指定標籤名稱和法文、義大利文與德文工具提示文本設定範例。
+- 對跨國部署使用 *LocaleSettings* 參數，以便使用者能夠利用本地語言查看標籤名稱和工具提示。 [下列章節](#example-configuration-to-configure-a-sensitivity-label-for-different-languages)含有為法文、義大利文與德文指定標籤名稱和工具提示文字的範例設定。
 
-- 針對 Azure 資訊保護的整合式標籤用戶端，您可以指定 [[進階設定]](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，其中包括設定標籤色彩，以及在套用標籤時套用自訂屬性。 如需完整清單，請參閱本用戶端的系統管理指南中的[標籤可用的進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)。
+- 僅針對 Azure 資訊保護的整合式標籤用戶端，指定包括設定標籤色彩的[進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)，並在套用標籤時套用自訂屬性。 如需完整清單，請參閱本用戶端的系統管理指南中的[標籤可用的進階設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)。
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>設定不同語言敏感度標籤的設定範例
 
@@ -155,22 +157,24 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     
     注意：根據預設，租使用者沒有任何標籤原則，您必須建立它們。 
 
-3. 在精靈中，請選取 **[選擇要發佈的敏感度標籤]** 。 選取您要在應用程式和服務中提供使用的標籤，然後選取 **[新增]** 。
+3. 在精靈中，請選取 **[選擇要發佈的敏感度標籤]**。 選取您要在應用程式和服務中提供使用的標籤，然後選取 **[新增]**。
     
     > [!IMPORTANT]
     > 如果您選取子標籤，請確定您也選取其上層標籤。
     
-4. 檢閱選取的標籤，若要進行任何變更，請選取 **[編輯]** 。 否則請選取 **[下一步]** 。
+4. 檢閱選取的標籤，若要進行任何變更，請選取 **[編輯]**。 否則請選取 **[下一步]**。
 
 5. 遵循提示來設定原則設定。
     
-    您看到的原則設定會符您選取的標籤範圍。 例如，如果您選取的標籤只含有 [檔案和電子郵件 **]** 範圍，您就不會看到 [預設將此標籤套用到群組與網站 **]** 和 [要求使用者將標籤套用到群組與網站 **]** 。
+    您看到的原則設定會符您選取的標籤範圍。 例如，如果您選取的標籤只含有 [檔案和電子郵件 **]** 範圍，您就不會看到 [預設將此標籤套用到群組與網站 **]** 和 [要求使用者將標籤套用到群組與網站 **]**。
     
-    如需有關標籤設定的詳細資訊，請參閱概觀資訊中的[標籤原則的功能](sensitivity-labels.md#what-label-policies-can-do) 並為個別設定套用精靈中的幫助。
+    如需有關這些設定的詳細資訊，請參閱概觀資訊中的[標籤原則的功能](sensitivity-labels.md#what-label-policies-can-do)，並使用個別設定的精靈中的說明。
+    
+    針對為 **Azure Purview 資產 (預覽)** 設定的標籤：這些標籤沒有任何相關聯的原則設定。
 
 7. 如果不同的使用者或範圍需要不同的原則設定，請重複這些步驟。 例如，您需要一組使用者有額外的標籤，或使用者的子集有不同的預設標籤。 或者，如果您已將標籤設定為具有不同範圍。
 
-8. 如果您建立可能會導致使用者發生衝突的多個標籤原則，請檢閱原則順序，並視需要將它們上下移動。 若要變更標籤原則的順序，請選取 **...** 以取得 **[其他動作]** ，然後選取 **[上移]** 或 **[下移]** 。 如需詳細資訊，請參閱概觀資訊中的 [標籤原則優先順序 (順序很重要)](sensitivity-labels.md#label-policy-priority-order-matters) (英文)。
+8. 如果您建立可能會導致使用者發生衝突的多個標籤原則，請檢閱原則順序，並視需要將它們上下移動。 若要變更標籤原則的順序，請選取 **...** 以取得 **[其他動作]**，然後選取 **[上移]** 或 **[下移]**。 如需詳細資訊，請參閱概觀資訊中的 [標籤原則優先順序 (順序很重要)](sensitivity-labels.md#label-policy-priority-order-matters)。
 
 完成精靈即會自動發佈標籤原則。 若要對已發佈的原則進行變更，只要編輯即可。 沒有特定的發佈或重新發佈動作可供您選取。
 
@@ -194,10 +198,10 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 如需支援的參數和值，請參閱下列文件：
 
-- [新標籤](https://docs.microsoft.com/powershell/module/exchange/new-label)
-- [新標籤原則](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy)
-- [設定標籤](https://docs.microsoft.com/powershell/module/exchange/set-label)
-- [設定標籤原則](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy)
+- [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label)
+- [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy)
+- [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label)
+- [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy)
 
 如果您需要為刪除敏感度標籤或敏感度標籤原則編寫腳本，您也可以使用 [移除標籤](https://docs.microsoft.com/powershell/module/exchange/remove-label) 和 [移除標籤原則](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy)。 不過，在您刪除敏感度標籤前，請務必先閱讀下列章節。
 
@@ -233,4 +237,4 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 - [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)
 
-若要監視標籤的使用方式，請參閱[利用標籤分析檢視標籤使用量](label-analytics.md) (英文)。
+若要監視標籤的使用方式，請參閱[利用標籤分析檢視標籤使用量](label-analytics.md)。
