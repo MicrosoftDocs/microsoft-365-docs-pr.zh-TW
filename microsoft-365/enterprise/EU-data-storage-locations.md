@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 判斷 Microsoft 365 客戶資料在歐盟內儲存位置
-ms.openlocfilehash: 5a50600c123dad1a0e4d14fd8f47283f951d3edc
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
+ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376691"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49527682"
 ---
 # <a name="data-locations-for-the-european-union"></a>針對歐盟的資料位置
 
@@ -63,10 +63,12 @@ Microsoft 了解維護貴公司商務資料隱私權和機密性的重要性。 
 ||||| 
 
 >[!Note]
->如果您擁有的 Office 365 教育版訂閱之帳單地址位於法國或德國，您的資料可能會儲存在我們的地區性歐盟資料中心。 
+>如果您擁有的 Office 365 教育版訂閱之帳單地址位於法國或德國，您的資料可能會儲存在我們的地區性歐盟資料中心。 如需歐盟外部租使用者資料的位置，請參閱 [ Microsoft 365 客戶資料的儲存位置](o365-data-locations.md)。
 >
 
-### <a name="where-eu-data-is-computed"></a>歐盟資料在哪裡進行運算
+
+
+### <a name="where-eu-data-is-computed"></a>歐盟資料的運算位置
 
 當您啟動上述任何服務的使用時，為了將儲存在其中一個地區性歐洲資料中心 (或您所在的國家/地區) 中的資料提供服務所需的運算，將會在相同的地理邊界內進行，除非需要使用暫時資料傳輸，才會在更遠的 Microsoft 資料中心執行運算。 
 

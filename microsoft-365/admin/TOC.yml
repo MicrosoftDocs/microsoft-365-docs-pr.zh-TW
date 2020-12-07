@@ -121,6 +121,8 @@
               href: create-groups/compare-groups.md
             - name: 建立群組
               href: create-groups/create-groups.md
+            - name: 說明群組
+              href: create-groups/explain-groups-knowledge-worker.md
             - name: 管理群組
               href: create-groups/manage-groups.md
             - name: 新增或移除群組成員
@@ -208,9 +210,9 @@
     - name: 管理您的資料和服務
       href: manage/index.yml
       items:
-        - name: 使用報告來監視使用者活動
+        - name: 使用報告來監視 Microsoft 365 活動
           href: activity-reports/activity-reports.md
-        - name: 使用生產力分數監視使用者生產力
+        - name: Microsoft 生產力分數 - 概觀
           href: productivity/productivity-score.md
           items:
             - name: 內容共同作業
