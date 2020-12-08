@@ -99,24 +99,36 @@
       items:
         - name: Teams 架構海報
           href: 'https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
-        - name: 電話語音解決方案
+        - name: 在 Microsoft 365 中部署 Teams 語音
           items:
-            - name: 選擇您的 Teams 語音解決方案
+            - name: 概觀
+              href: deploy-voice.md
+            - name: 步驟 1. 選擇您的語音解決方案
               href: 'https://docs.microsoft.com/MicrosoftTeams/cloud-voice-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: 步驟 2. - 設定電話系統
+              href: 'https://docs.microsoft.com/microsoftteams/setting-up-your-phone-system?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+            - name: 步驟 3. - 設定 PSTN 連線
+              items:
+                - name: '[通話方案] 選項'
+                  href: 'https://docs.microsoft.com/microsoftteams/set-up-calling-plans?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
+                - name: 直接路由選項
+                  href: 'https://docs.microsoft.com/microsoftteams/direct-routing-configure?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
             - name: 跨國公司的案例研究
               href: 'https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json'
         - name: 共同作業控管
           items:
             - name: 概觀
               href: collaboration-governance-overview.md
-            - name: 控管優先
+            - name: 建立您的控管方案
               href: collaboration-governance-first.md
-            - name: 使用 SharePoint 的群组
-              href: groups-sharepoint-governance.md
-            - name: OneDrive、SharePoint 和 Teams
-              href: groups-sharepoint-teams-governance.md
-            - name: 服務互動參考
-              href: groups-services-interactions.md
+            - name: 服務中的設定
+              items:
+                - name: 使用 SharePoint 的群组
+                  href: groups-sharepoint-governance.md
+                - name: 群組、SharePoint 及 Teams
+                  href: groups-sharepoint-teams-governance.md
+                - name: 使用其他服務的群組
+                  href: groups-services-interactions.md
             - name: 存取
               href: groups-teams-access-governance.md
             - name: 合規性
