@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 瞭解如何在 Windows 10 裝置上複查及管理 Microsoft Defender 防毒程式所偵測到的威脅。
-ms.openlocfilehash: ffdf5cffb50d6145d6059233e0850839f4dfb582
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 41465cb81850415a7b490b6af7f0ec66c724ca68
+ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385237"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49588514"
 ---
 # <a name="review-detected-threats-and-take-action"></a>檢閱偵測到的威脅並採取動作
 
@@ -42,7 +42,7 @@ Microsoft Defender 防病毒偵測並防護下列威脅類型：
 
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>中的 [作用中 **裝置**] 頁面。 請參閱本文中 [作用中 [裝置] 頁面上的 [管理威脅](#manage-threat-detections-on-the-active-devices-page) 偵測]。
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 系統管理中心</a>中的 [作用中 **威脅**] 頁面。 請參閱本文的「作用中 [威脅」頁面上的管理威脅](#manage-threat-detections-on-the-active-threats-page) 偵測。
-- <a href="https://endpoint.microsoft.com" target="_blank">Microsoft 端點管理員</a>中的 [**防病毒**] 頁面。 請參閱本文中的 [管理 Microsoft 端點管理員](#manage-threat-detections-in-microsoft-endpoint-manager) 中的威脅偵測。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft 端點管理員</a>中的 [**防病毒**] 頁面。 請參閱本文中的 [管理 Microsoft 端點管理員](#manage-threat-detections-in-microsoft-endpoint-manager) 中的威脅偵測。
 
 若要深入瞭解，請參閱 [Microsoft Defender 防病毒偵測到的威脅](threats-detected-defender-av.md)。
 
@@ -88,7 +88,7 @@ Microsoft Defender 防病毒偵測並防護下列威脅類型：
 
 您可以使用 Microsoft 端點管理員來管理威脅偵測。 Windows 10 裝置必須在 Intune (部分的 Microsoft 端點管理員) [中註冊](/mem/intune/enrollment/windows-enrollment-methods) 。
 
-1. 移至 Microsoft 端點管理員管理中心 <a href="https://endpoint.microsoft.com" target="_blank">https://endpoint.microsoft.com</a> ，並登入。
+1. 移至 Microsoft 端點管理員管理中心 <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> ，並登入。
 
 2. 在功能窗格中，選取 [ **端點安全性**]。
 

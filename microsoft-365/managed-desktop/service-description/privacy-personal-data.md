@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 294a3c6c54e28fa03ff6264898e7763325f78c3e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8412c10416a4a131129eebd20d1b4f01228afaf3
+ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847765"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49586682"
 ---
 # <a name="privacy-and-personal-data"></a>隱私權和個人資料
 
@@ -46,6 +46,10 @@ Microsoft Managed Desktop 會將其資料儲存在下列一或多個 Microsoft s
 - Azure 儲存體
 
 Microsoft 受管理的桌面會將其資料儲存在美國。 Microsoft 受管理的桌面會保留最多30天的個人資料。
+
+### <a name="staff-location"></a>員工位置
+
+MMD Operations and MMD Security Operations 團隊位於美國和印度。
 
 ## <a name="data-usage-of-microsoft-managed-desktop"></a>Microsoft 受管理電腦的資料使用量
 
