@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a3c9aabd370117c085574144ff9450e74ae277c7
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: e88b26fcfbcc9cbb0c2c53ed8fdb6b875ef4adc9
+ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527522"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "49585303"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
@@ -68,7 +68,7 @@ ms.locfileid: "49527522"
 
 | 角色 | 角色權限 |
 |:-----|:-----|
-| **通訊相容性** | 使用此角色群組來管理單一群組中組織的通訊相容性。 新增指派管理員、分析員、調查人員和檢視器的所有使用者帳戶，您可以在單一群組中設定通訊合規性許可權。 此角色群組包含所有通訊符合性許可權角色。 這項設定是快速開始使用通訊相容性的最簡單方法，而且很適合不需要個別使用者群組定義個別許可權的組織。 |
+| **通訊合規性** | 使用此角色群組來管理單一群組中組織的通訊相容性。 新增指派管理員、分析員、調查人員和檢視器的所有使用者帳戶，您可以在單一群組中設定通訊合規性許可權。 此角色群組包含所有通訊符合性許可權角色。 這項設定是快速開始使用通訊相容性的最簡單方法，而且很適合不需要個別使用者群組定義個別許可權的組織。 |
 | **通訊合規性管理** | 使用此角色群組開始設定通訊相容性和更新後，以將通訊合規性管理員隔離成定義的群組。 指派給此角色群組的使用者，可以建立、讀取、更新和刪除通訊符合性原則、全域設定和角色群組指派。 指派給此角色群組的使用者無法查看郵件警示。 |
 | **通訊法規遵從性分析師** | 使用此群組可將許可權指派給將充當通訊相容性分析員的使用者。 指派給此角色群組的使用者可以查看其被指派為檢閱者的原則、查看郵件中繼資料 (非郵件內容) 、升級至其他檢閱者，或傳送通知給使用者。 分析員無法解析待處理的警示。 |
 | **通訊合規性調查員** | 使用此群組可將許可權指派給將充當通訊合規性調查人員的使用者。 指派給此角色群組的使用者可以查看郵件中繼資料和內容、升級至其他檢閱者、升級至高級 eDiscovery 案例、將通知傳送給使用者，以及解決警示。 |
@@ -137,6 +137,35 @@ ms.locfileid: "49527522"
 
 >[!IMPORTANT]
 >您必須向 Microsoft 支援服務提交要求，才能讓組織使用安全性與合規性中心的圖形化使用者介面來搜尋內部部署使用者的 Teams 聊天資料。 如需詳細資訊，請參閱針對 [內部部署使用者搜尋雲端架構信箱](search-cloud-based-mailboxes-for-on-premises-users.md)。
+
+若要管理大型企業組織中的監督使用者，您可能需要跨大型群組監控所有使用者。 您可以使用 PowerShell 為指派的群組設定全域通訊符合性原則的通訊群組。 這可讓您以單一原則監控成千上萬的使用者，並在新員工加入您的組織時，維持通訊相容性原則的更新。
+
+1. 使用下列屬性為您的全域通訊相容性原則建立專用的 [通訊群組](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) ：請確定此通訊群組並未用於其他用途或其他 Office 365 服務。
+
+    - **MemberDepartRestriction = 封閉式**。 確保使用者無法從通訊群組中移除自己。
+    - **MemberJoinRestriction = 封閉式**。 確保使用者無法將自己新增至通訊群組。
+    - **ModerationEnabled = True**。 確定所有傳送至此群組的郵件都會受到核准，而且此群組並未用於通訊相容性原則設定之外的通訊。
+
+    ```PowerShell
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+
+2. 選取未使用的 [Exchange 自訂屬性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) ，以追蹤新增至組織中通訊合規性原則的使用者。
+
+3. 在週期性排程上執行下列 PowerShell 腳本，以將使用者新增至通訊合規性原則：
+
+    ```PowerShell
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
 
 如需設定群組的詳細資訊，請參閱：
 
@@ -218,7 +247,7 @@ ms.locfileid: "49527522"
 
 4. 若要啟用匿名，請選取 [ **顯示匿名版本的使用者名**]。
 
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
 
 6. 流覽至 [ **公告範本** ] 索引標籤，然後選取 [ **建立公告範本**]。
 
