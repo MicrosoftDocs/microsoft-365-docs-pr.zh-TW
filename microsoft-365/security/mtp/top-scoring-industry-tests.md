@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 824864ffd69a1f885c56a55957fc369fec4f640a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a1e8c083c0769031fcc17cc799e7edc29fc9bc57
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357294"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604404"
 ---
 # <a name="top-scoring-in-industry-tests"></a>行業測試的最大得分
 
@@ -40,7 +40,7 @@ Microsoft 365 Defender 會將 [Microsoft defender For Endpoint](https://www.micr
 
 MITRE 測試方法的核心是模擬現實世界的攻擊，瞭解解決方案是否可以充分偵測及回應。 當測試著重于端點偵測和回應時，MITRE 模擬 APT29 攻擊可跨越多個受攻擊的網域，從而創造出除了端點保護以外的 defenders 的機會。 Microsoft 擴充 defenders ' 在使用 Microsoft 365 Defender 的端點之外的可見度。
 
-- ATT&以 CK 為基礎的 Microsoft 365 Defender 評估版（可能為2020）： [在實際偵測中的主要偵測](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
+- ATT&以 CK 為基礎的 Microsoft 365 Defender 評估：5月2020： [在實際偵測中進行](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
     Microsoft 365 Defender 提供整個攻擊鏈階段的大約100% 的覆蓋率。 已提供攻擊者活動的一流可見度。 視情況而定，針對安全性作業中心及廠商解決方案，其可視性會大幅減少手動運作，以進行特定的設定變更。 Microsoft 365 Defender 也具有可視性最少的缺口，使攻擊者無法順利運作。
 
@@ -56,31 +56,31 @@ AV 測試產品檢查和認證報告測試三個類別：保護、效能及可�
 
 **下載最新的透明性報告： [檢查 AV-測試結果，January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)**
 
-- 7月-2020--TEST-TEST Business User test： [Protection 總分 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/) <sup>**最近**</sup>
+- 2020年9月 AV-TEST Business User test： [Protection 總分 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/) <sup>**最近**</sup>
 
-    Microsoft Defender 防病毒已達到 6.0/6.0 的完美保護分數，含100% 于7月和8月。 13941惡意程式碼範例已使用。
+    Microsoft Defender 防病毒已達到 6.0/6.0 的完美保護分數，在九月份和十月的100%。 12650惡意程式碼範例已使用。
 
-- 可能-6 月 2020 AV-TEST Business User test： [Protection 得分 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
+- 2020年7月 AV-測試商務使用者測試： [保護分數 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2020/microsoft-defender-antivirus-4.18-203215/)
 
-- 三月份-2020 年4月的 AV-測試商務使用者測試： [保護分數 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
+- 5月 2020 AV-TEST Business User test： [Protection 得分 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/june-2020/microsoft-windows-defender-antivirus-4.18-202513/)
 
-- 一月份-2020 年2月的 AV-測試商務使用者測試：[保護分數 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
+- 2020年3月 AV-TEST Business User test： [Protection 得分 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)
+
+- 2020年2月 AV-TEST Business User test： [Protection 得分 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CflZ)
 
 - 11月-2019，AV-TEST Business User test： [Protection 計分 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2019/microsoft-windows-defender-antivirus-4.18-195015/)
 
-- 九月份-2019 年10月的 AV-測試商務使用者測試： [保護分數 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2019/microsoft-windows-defender-antivirus-4.18-194115/)
-
-- 7月-2019 的 AV-測試商務使用者測試：[保護分數 6.0/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/august-2019/microsoft-windows-defender-antivirus-4.18-193215/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
+- 十月-10 月 2019 AV-TEST Business User test： [Protection 得分 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2019/microsoft-windows-defender-antivirus-4.18-194115/)
 
 ### <a name="av-comparatives-protection-rating-of-997-in-the-latest-test"></a>AV-比較級：在最新的測試中，99.7% 的保護評級
 
 Business Security Test 包含三個主要部分：模仿線上惡意程式碼攻擊的 Real-World 保護測試、惡意程式碼從網際網路外進入系統的惡意程式碼防護測試 (例如 USB) ，以及查看系統效能影響的效能測試。
 
-- Business Security Test 2020 (三月份) ：實際執行 [防護率 99.7%](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) （<sup>**最新**</sup>）
+- Business Security Test 2020 (三月-六月) ：[實際執行的保護率99.7% （](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/) <sup>**最新**</sup>）
 
     在過去一年中，Microsoft Defender 防病毒已以不斷提高的 Real-World 保護速率，在最新的測試中有99.7% 的分數。
 
-- Business Security Test 2019 (月) 年11月： [實際保護率 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
+- Business Security Test 2019 (月-11 月) ： [實際執行防護率 99.6%](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
 
 - Business Security Test 2019 (三月份) ：[現實世界防護率 99.9%](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/)  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
@@ -90,17 +90,17 @@ SE 實驗會測試產品和服務所使用的解決方案範圍，以偵測和/�
 
 **下載最新的透明性報告： [檢查 SE 實驗測試結果，January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
 
-- Enterprise Endpoint Protection （2020年9月）：<sup>**最新**</sup> [AAA 獎](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
+- Enterprise Endpoint Protection，2020年7月：<sup>**最新**</sup>的 [AAA 獎](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 
     Microsoft 的下一代保護產品已停止所有目標攻擊，但遺漏了少數公開威脅。
 
-- Enterprise Endpoint Protection-2020 年6月： [AAA 獎](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
+- Enterprise Endpoint Protection 四月-六月2020： [AAA 獎](https://selabs.uk/reports/epp-ent-20q2-security-testing/)
 
-- Enterprise Endpoint Protection 一月（2020年3月）： [AAA 獎](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
+- Enterprise Endpoint Protection 2020 年1月： [AAA 獎](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
-- Enterprise Endpoint Protection 十月（2019年12月）： [AAA 獎](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) <sup>**pdf**</sup>
+- Enterprise Endpoint Protection 十月-十二月2019： [AAA 獎](https://selabs.uk/download/enterprise/epp/2019/oct-dec-2019-enterprise.pdf) <sup>**pdf**</sup>
 
-- Enterprise Endpoint Protection （2019年9月）： [AAA 獎](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
+- Enterprise Endpoint Protection，2019年7月-： [AAA 獎](https://selabs.uk/download/enterprise/epp/2019/jul-sep-2019-enterprise.pdf) <sup>**pdf**</sup>  |  [分析](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4kagp)
 
 
 ## <a name="endpoint-detection--response"></a>& 回應的端點偵測
@@ -113,7 +113,7 @@ Microsoft Defender for Endpoint 的 EDR 和 Endpoint protection 功能已經從�
 
 MITRE 已測試產品的能力，以偵測目標攻擊群組 APT3 (常用的技術（也稱為 Boron 或 UPS) ）。 若要隔離偵測功能，已關閉所有保護及防護功能。 Microsoft 非常高興于第一個 EDR 廠商註冊 MITRE 評估，並根據 ATT&CK framework。 架構現在已廣泛被視為攻擊者技術和戰術的最完整目錄。
 
-- ATT&以 CK 為基礎的 Microsoft Defender for Endpoint 評估（2018年12月）：[主要的光學器件和偵測功能](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)  |  [分析](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
+- ATT&以 CK 為基礎的 Microsoft Defender 2018 端點評估評估：[主要的光學器件和偵測功能](https://www.microsoft.com/security/blog/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)  |  [分析](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/MITRE-evaluation-highlights-industry-leading-EDR-capabilities-in/ba-p/369831)
 
     Microsoft Defender for Endpoint 提供整個攻擊鏈內廣泛的攻擊者技術涵蓋。 重點包括遙測的廣度、威脅智慧的強度，以及透過機器學習、啟發式和行為監控的高級、自動偵測。
 

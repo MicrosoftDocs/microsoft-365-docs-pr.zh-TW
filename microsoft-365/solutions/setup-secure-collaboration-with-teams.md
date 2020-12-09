@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: 瞭解如何設定小組中的安全內容共同作業，以根據其敏感度來保護您的資料。
-ms.openlocfilehash: 310605d0db84e33be1d5fdc925fadcfcdf9dddaf
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 4f2e157025f00660e77ba3377221368e37e45445
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906796"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602070"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>使用 Microsoft 365 設定安全的共同作業
 
@@ -60,7 +60,7 @@ ms.locfileid: "48906796"
 
 針對上述所有案例，您可以使用 Microsoft 團隊中的團隊來儲存、共用及共同作業資訊。 
 
-若要設定安全 collabration，您可以使用這些 Microsoft 365 功能。
+若要設定安全共同作業，您可以使用這些 Microsoft 365 功能和功能。
 
 | 產品或元件 | 功能 | 授權 |
 |:-------|:-----|:-------|
@@ -76,9 +76,9 @@ ms.locfileid: "48906796"
 ![Teams 邏輯架構海報的縮圖影像](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
-這些層級- *基準* 、 *敏感* 和 *高敏感度* -逐步增加保護，協助避免 oversharing 和潛在的資訊洩漏，如下表所示。
+這些層級- *基準*、 *敏感* 和 *高敏感度* -逐步增加保護，協助避免 oversharing 和潛在的資訊洩漏，如下表所示。
 
-||**基準層**|**機密層**|**高度機密層**|
+|-|**基準層**|**機密層**|**高度機密層**|
 |:--|:-----------|:------------|:-------------------|
 |公用或私人團隊|兩者之一|Private|Private|
 |未經驗證的共用|已封鎖|已封鎖|已封鎖|

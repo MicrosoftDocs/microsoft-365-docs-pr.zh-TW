@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: '深入瞭解 Exchange Online Protection (EOP 中的安全性預設設定) '
-ms.openlocfilehash: 54000d351463ba90751f1f27638fb52847cf05ce
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 758d2169d80630a38c0b498e8c1848568e5ec941
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558511"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602028"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 中預設的安全性
 
@@ -40,6 +40,8 @@ ms.locfileid: "49558511"
 
 - 具有可疑惡意軟體的電子郵件將會自動遭到隔離，並會通知收件者。 請參閱 [在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)。
 - 識別為高可信度網路釣魚的電子郵件會依照反垃圾郵件原則動作進行處理。 請參閱 [在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+
+如需 EOP 的詳細資訊，請參閱 [Exchange Online Protection 一覽](exchange-online-protection-overview.md)。
 
 因為 Microsoft 想要讓客戶保持安全，但在預設情況下，有些承租人覆寫不會套用到惡意程式碼或高可信度網路釣魚。 這些覆寫包括：
 
@@ -65,5 +67,5 @@ ms.locfileid: "49558511"
 
 - 網路釣魚模擬：模擬的攻擊可協助您在實際攻擊影響組織之前，識別有漏洞的使用者。
 - 安全性/SecOps 信箱：安全小組用來取得未篩選郵件 (良好且錯誤) 的專用信箱。 然後，小組可以查看是否包含惡意內容。
-- 協力廠商篩選器：部分協力廠商廠商建議關閉 EOP (SCL =-1) 因為協力廠商篩選器會管理郵件篩選。 Microsoft 不建議關閉 EOP （適用于 Office 365 的 Defender 所需）。 相反地，建議您先開啟 [連接器的增強篩選功能](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+- 協力廠商篩選器：部分協力廠商廠商建議關閉 EOP (SCL =-1) 因為協力廠商篩選器會管理郵件篩選。 Microsoft 不建議關閉 EOP，因為 [Microsoft Defender For Office 365](office-365-atp.md)需要 EOP。 相反地，建議您先開啟 [連接器的增強篩選功能](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 - 誤報：您可能想要暫時允許由 Microsoft 透過系統 [管理員報送](admin-submission.md)進行的某些郵件仍在進行分析。 就像所有覆寫一樣，建議它們是臨時性的。

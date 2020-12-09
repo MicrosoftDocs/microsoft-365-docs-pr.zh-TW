@@ -20,22 +20,26 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6d1358da465bd7e31ca7b234f140aa8e48bb7508
-ms.sourcegitcommit: aa8d2de6ffac0157fffd14d0ea7f51ef0c287607
+ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49373992"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604380"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱 [Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)。
+若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱 [Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure 得分可在 https://security.microsoft.com/securescore [microsoft 365 的安全性中心](overview-security-center.md)找到。
 
 ## <a name="november-2020"></a>2020年11月
+
+### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>移除透過安全分數建立 ServiceNow 票證的能力 
+
+無法再使用 **> ServiceNow** ，透過安全的分數建立 ServiceNow 入場券的功能。 感謝您的意見反應，並在我們決定接下來的步驟時繼續支援。
 
 ### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>在先前的 Microsoft Defender ATP) 中，為 Microsoft Defender for Endpoint (新增3個與服務相關的改進動作：
 
@@ -43,7 +47,7 @@ Microsoft Secure 得分可在 https://security.microsoft.com/securescore [micros
 - 將服務可執行路徑變更為一般受保護的位置
 - 變更服務帳戶以避免在 windows 登錄中快取密碼
 
-## <a name="october-2020"></a>2020 年 10 月
+## <a name="october-2020"></a>10月2020
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>移除與 Microsoft Defender for Endpoint 相關的改進動作
 
@@ -77,7 +81,7 @@ Microsoft Secure 得分可在 https://security.microsoft.com/securescore [micros
 * 使用分數預測和規劃的動作來管理您的未來目標
 * 還有更多！
 
-## <a name="we-want-to-hear-from-you"></a>我們想要聽到您的來信
+## <a name="we-want-to-hear-from-you"></a>我們想知道您的想法
 
 如果您有任何問題，請在 [安全性、隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社區中發佈以告知我們。 我們正在監視社區，並會提供協助。
 

@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e42c65fdb4d409c1da7b85fbe7eca13170b9b974
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 950daef315ef27fe5d6bc40528eb0104974c8c00
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409220"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604392"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -44,14 +44,6 @@ Microsoft Secure 得分可在 https://security.microsoft.com/securescore [micros
 - 將 ' 密碼最短保留天數 ' 設定為 ' 1 或以上的 (s) '
 - 停用內建管理員帳戶
 - 停用內建來賓帳戶
-
-### <a name="november-2020"></a>2020年11月
-
-#### <a name="removing-the-ability-to-create-servicenow-tickets-through-secure-score"></a>移除透過安全分數建立 ServiceNow 票證的能力 
-
-透過安全評分建立 ServiceNow 票證的功能，ServiceNow 將會移除 **>** 。
-
-ServiceNow 連接器的預覽期間結束。 2020的結尾將無法再使用此功能。 感謝您的意見反應，並在我們決定接下來的步驟時繼續支援。
 
 ## <a name="related-resources"></a>相關資源
 

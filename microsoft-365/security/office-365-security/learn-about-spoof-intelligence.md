@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 中的欺騙情報，您可以在其中允許或封鎖特定的欺騙寄件者。
-ms.openlocfilehash: 9168d43e6e5544ad3454729afc8140642deba0ef
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bc8ae2664acf96ea6cd4c20c2f9195db9b75b3da
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572726"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602118"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>在 EOP 中設定欺騙情報
 
@@ -65,8 +65,8 @@ ms.locfileid: "49572726"
 
   **附註**：
 
-  - 將使用者新增至 Microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的「 **View-Only 組織管理**」角色群組也會提供該功能的唯讀存取權。
+  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 - 如需適用于哄騙情報的建議設定，請參閱 [EOP 預設的反網路釣魚原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)。
 
@@ -103,7 +103,7 @@ ms.locfileid: "49572726"
 
      - 在 [ **外部網域** ] 索引標籤上，此值包含欺騙使用者的網域，而非完整的電子郵件地址。
 
-   - 傳送 **基礎結構**：反向 DNS 查閱 (PTR 記錄) 來源電子郵件伺服器的 IP 位址，或 IP 位址（如果來源沒有 PTR 記錄）中找到的網域。
+   - 傳送 **基礎結構**：) 來源電子郵件伺服器的 IP 位址的反向 DNS 查閱 (PTR 記錄中找到的網域。 如果來源 IP 位址沒有 PTR 記錄，則會將傳送基礎結構識別為 \<source IP\> /24 (例如，192.168.100.100/24) 。
 
      如需郵件來源和郵件寄件者的詳細資訊，請參閱 [電子郵件標準的概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
@@ -112,22 +112,18 @@ ms.locfileid: "49572726"
    - **使用者抱怨**：過去30天內，使用者對此寄件者所進行的投訴。 抱怨的形式通常為對 Microsoft 的垃圾郵件提交。
 
    - **驗證結果**：下列其中一個值：
-
       - **傳遞**：寄件者傳送寄件者電子郵件驗證檢查 (SPF 或 DKIM) 。
       - **失敗**：寄件者失敗 EOP 寄件者驗證檢查。
       - **未知**：這些檢查的結果是未知的。
 
    - **決策設定依據**：顯示誰決定了傳送基礎結構是否允許哄騙使用者：
-
        - **欺騙性智慧原則** (自動) 
        - **Admin** (手動) 
 
    - **上次看到**：從包含欺騙使用者之傳送基礎結構接收郵件的最後日期。
 
    - 是否 **允許哄騙？**：您在這裡看到的值包括：
-
      - **Yes**：允許虛假使用者和傳送基礎結構組合的郵件，也不會被視為欺騙電子郵件。
-
      - **No**：來自欺騙使用者和傳送基礎結構的郵件會標示為欺騙。 此巨集指令是由預設的反網路釣魚原則或自訂的反網路釣魚原則所控制 (預設值會將 **郵件移至 [垃圾郵件] 資料夾**) 。 如需詳細資訊，請參閱下一節。
 
      - **有些使用者** (**您的網域** ] 索引標籤只) ：傳送基礎結構是哄騙多個使用者，而某些欺騙使用者則是允許的，有些則不是。 使用 [詳細] 索引標籤來查看特定地址。

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 隱私權對生產力分數的保護方式。
-ms.openlocfilehash: db123042761b07ed64dd2dd94e783d65205e1460
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: ceb19fcb7bbf2f6a58e38684604ed3b0dac2a5d4
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561505"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604323"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>生產力分數的隱私權控制
 
@@ -73,7 +73,7 @@ Add-AzureADDirectoryRoleMember -ObjectId $role.ObjectId -RefObjectId $u.ObjectId
 
 ## <a name="capability-to-opt-out-of-people-experiences"></a>自願享受人員體驗的功能
 
-您也可以選擇 [人員經驗] 中的 [人員經驗] 區域。 如果您退出宣告，您組織中的任何人都無法查看這些計量，而且您的組織將會從任何涉及通訊、會議、團隊合作、內容共同作業及行動性的計算中移除。
+您也可以選擇 [人員經驗] 中的 [人員經驗] 區域。 如果您退出宣告，您組織中的任何人都無法查看這些計量，而且您的組織將會從任何涉及通訊、會議、團隊合作、內容共同作業及行動性的計算中移除。 您必須是全域系統管理員，才可選擇您的組織體驗報告。
 
 若要選擇 put：
 
