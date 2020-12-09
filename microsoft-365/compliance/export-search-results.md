@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 從 Microsoft 365 規範中心的內容搜尋中，將搜尋結果匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 從 SharePoint 和 OneDrive 商務網站的內容會匯出為原生 Office 檔。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48f5cab4c25199873c795cdfb9afac54f4f402a0
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: a697f5cf81022bf8d8122d0dd57c07ba8a578f0a
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422872"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602050"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -165,7 +165,7 @@ ms.locfileid: "49422872"
   
     **EDiscovery 匯出工具** 會顯示匯出程式的狀態資訊，包括估計要下載之其餘專案的數位 (和大小) 。 匯出程式完成後，您可以在下載檔案的位置存取檔案。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>詳細資訊
 
 以下是匯出搜尋結果的詳細資訊。
   
@@ -345,6 +345,8 @@ ms.locfileid: "49422872"
 
 ### <a name="miscellaneous"></a>雜項
   
+- 使用 eDiscovery 匯出工具下載搜尋結果時，可能會收到下列錯誤： `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 這是暫時性的錯誤，通常會發生于 Azure 儲存位置。 若要解決此問題，請重試 [下載搜尋結果](#step-2-download-the-search-results)，這將會重新開機 EDiscovery 匯出工具。
+
 - 所有搜尋結果和匯出報告都會包含在與內容搜尋同名的資料夾中。 匯出的電子郵件會位於名為 **Exchange** 的資料夾中。 檔位於名為 **SharePoint** 的資料夾中。
 
 - 當檔匯出至您的本機電腦時，系統會維護 SharePoint 和商務用 OneDrive 的檔案系統中繼資料。 這表示檔案屬性（如建立的和上次修改的日期）在匯出檔時不會變更。

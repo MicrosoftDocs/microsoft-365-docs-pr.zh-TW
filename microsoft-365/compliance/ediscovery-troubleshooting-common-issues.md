@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 瞭解您可以採取的基本疑難排解步驟，以解決 Office 365 eDiscovery 中的常見問題。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a2db7fac04f29587f451b8feff5b641624e0cf45
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: 4f1bad23705729c15976959a3902501f05da7600
+ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422862"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "49602034"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>調查、疑難排解及解決常見的 eDiscovery 問題
 
@@ -58,8 +58,7 @@ ms.locfileid: "49422862"
 
 ## <a name="errorissue-search-fails-on-specific-locations"></a>錯誤/問題：搜尋在特定位置失敗
 
-EDiscovery 或內容搜尋可能會產生下列錯誤：
->此搜尋已完成，但有 ( # ) 錯誤。  您想要重試失敗位置上的搜尋嗎？
+EDiscovery 或內容搜尋可能會產生下列錯誤： `This search completed with (#) errors.  Would you like to retry the search on the failed locations?`
 
 ![搜尋特定位置未通過錯誤螢幕擷取畫面](../media/edisc-tshoot-specific-location-search-fails.png)
 
@@ -194,6 +193,14 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
    ```
 
 4. 連絡 Microsoft 支援人員。
+
+## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>錯誤：「使用 HTTP 條件標頭 (指定的條件不符合) 
+
+使用 eDiscovery 匯出工具下載搜尋結果時，可能會收到下列錯誤： `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` 這是暫時性的錯誤，通常會發生于 Azure 儲存位置。
+
+### <a name="resolution"></a>解決方案
+
+若要解決此問題，請重試 [下載搜尋結果](export-search-results.md#step-2-download-the-search-results)，這將會重新開機 EDiscovery 匯出工具。
 
 ## <a name="see-also"></a>另請參閱
 
