@@ -193,7 +193,7 @@
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
     - name: 管理
       items:
-        - name: Microsoft 365 服務健全狀態
+        - name: Microsoft 365 服務健康情況
           href: microsoft-365-service-health.md
         - name: Exchange Online 監視
           href: microsoft-365-exchange-monitoring.md
