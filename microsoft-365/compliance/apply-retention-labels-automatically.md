@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立保留標籤及自動套用標籤原則，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: ebfd088dd6dc3205f02e563e31f6fb25372608ad
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: 766106e9c650047e37c9fa341bd2e78b390d814d
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385259"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519451"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤以保留或刪除內容
 
@@ -55,7 +55,7 @@ ms.locfileid: "49385259"
 > [!NOTE]
 > 自動原則會使用條件的服務端標籤來自動套用保留標籤。 當您執行下列動作時，您也可以使用標籤原則以自動套用保留標籤： 
 >
-> - 將預設保留標籤套用至 SharePoint 文件庫、資料夾或檔組，讓該容器中未標記的內容自動加上標籤
+> - 為 SharePoint 和 Outlook 套用預設的保留標籤，讓未標記的內容自動加上標籤
 >- 使用規則將保留標籤自動套用至電子郵件
 >
 > 在這些情況下，請參閱 [在應用程式中建立集套用保留標籤](create-apply-retention-labels.md)。
@@ -92,7 +92,6 @@ ms.locfileid: "49385259"
 
 若要編輯現有的標籤，請選取它，然後選取 **[編輯標籤]** 以啟動編輯保留精靈讓您變更標籤描述和步驟 2 的任何 [合格設定](#updating-retention-labels-and-their-policies)。
 
-
 ### <a name="step-2-create-an-auto-apply-policy"></a>步驟2：建立自動套用原則
 
 當您建立自動套用原則時，會根據您指定的條件，選取要自動套用至內容的保留標籤。
@@ -113,8 +112,9 @@ ms.locfileid: "49385259"
     
     如需保留標籤支援的位置詳細資訊，請參閱[保留標籤和位置](retention.md#retention-label-policies-and-locations)一節。
 
-若要編輯現有的自動套用原則，請選取該原則以啟動 [編輯保留原則] 精靈，該精靈允許您更改所選的保留標籤和步驟 2 中的任何[合格設定](#updating-retention-labels-and-their-policies)。
+若要編輯現有的自動套用原則，請選取該原則以啟動可讓您變更所選取保留標籤和來自步驟 2 的任何[合格設定](#updating-retention-labels-and-their-policies)的編輯保留原則精靈。
 
+使用自動套用標籤原則為內容加上標籤之後，您無法透過變更內容或原則或使用新的自動套用標籤原則來自動移除或變更已套用的標籤。 如需詳細資訊，請參閱[一次僅一個保留標籤](retention.md#only-one-retention-label-at-a-time)。
 
 ### <a name="configuring-conditions-for-auto-apply-retention-labels"></a>設定自動套用保留標籤的條件
 
@@ -170,7 +170,7 @@ ms.locfileid: "49385259"
 
 - 若要搜尋含有空格或特殊字元的值，請使用雙引號 (`" "`) 括住片語;例如，`subject:"Financial Statements"`。
 
-- 使用 *文件連結* 屬性取代 *Path* 並根據其 URL 比對項目。 
+- 使用 *DocumentLink* 屬性取代 *Path* 並根據其 URL 比對項目。 
 
 - 不支援尾碼萬用字元搜尋 (像是 `*cat`) 或子字串萬用字元搜尋 (像是 `*cat*`)。 不過，會支援前置萬用字元搜尋 (例如 `cat*`)。
 

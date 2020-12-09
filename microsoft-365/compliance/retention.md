@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 5ceec4ed45286afa14004dcfcb9476040df9a5ec
-ms.sourcegitcommit: 26b35012c42fef935d6c4a6509dde6c22a9b922a
+ms.openlocfilehash: e2833d966fb8a1fcc15cbeb02b781d9c0325b9c1
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "49385269"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519374"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
@@ -38,7 +38,7 @@ ms.locfileid: "49385269"
     
 - **協助貴組織有效分享知識並提高靈活度**，方法為確保使用者只使用目前和相關的內容。 
     
-您設定的保留設定可協助您實現所有目標。管理內容通常需要以下兩個動作：
+您設定的保留設定可協助您實現所有目標。 管理內容通常需要以下兩個動作：
   
 - **保留** 內容，以便無法在保留期間結束之前將其永久刪除。 
     
@@ -51,22 +51,22 @@ ms.locfileid: "49385269"
 - 僅刪除：指定一段時間後刪除內容。
 - 保留並刪除：將內容保留指定的時間，然後將其刪除。
 
-這些保留設定可以使用就地內容，從而在您基於合規性原因而必須保留內容時，節省建立和設定額外儲存體的額外負荷。此外，您不必執行自訂的程序來複製及同步處理這項資料。
+這些保留設定可以使用就地內容，從而在您基於合規性原因而必須保留內容時，節省建立和設定額外儲存體的額外負荷。 此外，您不必執行自訂的程序來複製及同步處理這項資料。
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>保留設定如何與就地內容搭配使用
 
-當內容有指派保留設定時，該內容會保留在其原始位置。人員可以繼續處理他們的文件或郵件，就好像什麼都沒改變一樣。但如果人員編輯或刪除保留原則中包含的內容，則會自動保留內容複本。
+當內容有指派保留設定時，該內容會保留在其原始位置。 若未發生任何變更，人員可以繼續使用其文件或郵件。 但如果人員編輯或刪除保留原則中包含的內容，則會自動保留內容複本。
   
 - 對於 SharePoint 和 OneDrive 網站：複本會保留在 **文件保留庫** 中。
 
 - 針對 Exchange 信箱：複本會保留在 **[可復原的項目]** 資料夾中。 
 
-- 針對 Teams 和 Yammer 訊息：複本會保留在名為 **SubstrateHolds** 的隱藏資料夾中，以作為 Exchange **[可復原的項目]** 資料夾中的子資料夾。
+- 針對 Teams 和 Yammer 訊息：複本會保留在名為 **SubstrateHolds** 的隱藏資料夾中，以作為 Exchange [可復原的項目 **]** 資料夾中的子資料夾。
 
 > [!NOTE]
-> [文件保留庫] 會佔用不能免除網站儲存空間配額限制的儲存空間。當您對 SharePoint 和 Microsoft 365 群組使用保留設定時，可能需要增加您的儲存空間。
+> [文件保留庫] 會佔用不受網站儲存空間配額限制的儲存空間。 當您對 SharePoint 和 Microsoft 365 群組使用保留設定時，可能需要增加您的儲存空間。
 > 
-大部分的人員無法檢視這些安全的位置和保留的內容。在大部分的情況下，使用者甚至不需要知道其內容受保留設定的限制。
+大部分的人員無法檢視這些安全的位置和保留的內容。 在大部分的情況下，使用者甚至不需要知道其內容受保留設定的限制。
 
 如需有關保留設定如何配合不同工作負載使用的詳細資訊，請參閱下列文章：
 
@@ -81,9 +81,9 @@ ms.locfileid: "49385269"
 
 使用保留原則為網站或信箱層級的內容指派相同的保留設定，並使用保留標籤來指派項目層級 (資料夾、文件、電子郵件) 的保留設定。
 
-例如，如果 SharePoint 網站中的所有文件都應該保留 5 年，使用保留原則比將相同的保留標籤套用至該網站中所有文件的方法更有效率。不過，如果該網站中的部分文件應保留 5 年，而其他文件保留 10 年，一個保留原則就不夠用。當您必須在項目層級指定保留設定時，請使用保留標籤。 
+例如，如果 SharePoint 網站中的所有文件都應該保留 5 年，使用保留原則比將相同的保留標籤套用至該網站中所有文件的方法更有效率。 不過，如果該網站中的部分文件應保留 5 年，而其他文件保留 10 年，一個保留原則就不夠用。 當您必須在項目層級指定保留設定時，請使用保留標籤。 
 
-不同於保留原則，保留標籤的保留設定會隨著內容移至您 Microsoft 365 租用戶中不同的位置。此外，保留標籤具有以下保留原則不支援的功能： 
+不同於保留原則，保留標籤的保留設定會隨著內容移至您 Microsoft 365 租用戶中不同的位置。 此外，保留標籤具有以下保留原則不支援的功能： 
  
 - 除了內容的年限或上次修改時間以外，還可選擇從為內容加上標籤的時間或根據事件來開始保留期間的選項。
 
@@ -196,17 +196,26 @@ Exchange 公用資料夾、Skype、Teams 和 Yammer 訊息不支援保留標籤�
 
 #### <a name="only-one-retention-label-at-a-time"></a>一次只能有一個保留標籤
 
-電子郵件或文件等內容一次只能指派一個保留標籤：
-  
-- 針對系統管理員或使用者手動指派的保留標籤，人員可以移除或變更獲指派的保留標籤。
+電子郵件或文件等內容一次只能套用一個保留標籤。 保留標籤可以由使用者或管理員[手動](create-apply-retention-labels.md#manually-apply-retention-labels)套用，也可以使用以下任一方法自動套用：
+
+- [自動套用標籤原則](apply-retention-labels-automatically.md)
+- [SharePoint Syntex 中的文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
+- [SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) 或 [Outlook 的預設標籤](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- [Outlook 規則](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
+
+對於標準保留標籤 (它們不會將項目標記為[記錄或監管記錄](records-management.md#records))：
+
+- 系統管理員和使用者可以手動變更或移除套用於內容的現有保留標籤。 
+
+- 當內容已套用保留標籤時，現有標籤不會自動移除或替換為另一個保留標籤，但有一個可能的例外：現有標籤已作為預設標籤套用。
     
-- 如果內容已指派自動套用標籤，這個標籤會由已發佈的保留標籤取代。
-    
-- 如果內容已指派已發佈的保留標籤，則自動套用標籤不能取代之。
-    
-- 如果有多項規則會指派自動套用標籤，且內容符合多項規則的條件，則會指派最舊規則 ( 依照建立日期) 的保留標籤。
-    
-若要完整了解使用預設標籤時的所有結果，請參閱[對 SharePoint 文件庫、資料夾或文件集中的所有內容套用預設保留標籤](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)一節中的資訊。
+    有關使用預設標籤套用標籤行為的詳細資訊，請執行以下操作：
+    - SharePoint 的預設標籤：[對 SharePoint 使用預設標籤時的標籤行為](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+    - Outlook 的預設標籤：[將預設保留標籤套用於 Outlook 資料夾](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+
+- 如果有多個自動套用標籤原則可以套用保留標籤，並且內容滿足多個原則的條件，則套用最舊的自動套用標籤原則 (按建立日期) 的保留標籤。
+
+當保留標籤將項目標記為記錄或監管記錄時，這些標籤不會自動變更。 只有容器的管理員才能手動變更或移除將項目標記為記錄而不是監管記錄的保留標籤。 如需詳細資訊，請參閱 [比較允許或封鎖動作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。
 
 #### <a name="monitoring-retention-labels"></a>監視保留標籤
 

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
-ms.openlocfilehash: 7f9e33a6f117f5da592d875e40cefc6a0072fd4a
-ms.sourcegitcommit: 0402d3275632fceda9137b6abc3ce48c8020172a
+ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
+ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49126670"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49560881"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -130,6 +130,9 @@ SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽�
 
 對於要在 DNS 中新增 DKIM 簽章的每個網域，您必須發佈兩個 CNAME 記錄。
 
+> [!NOTE]
+> 如果您還沒有閱讀完整的文章，則可能錯過了這份可節省時間的 PowerShell 連線資訊：[透過 PowerShell 連線至 Office 365 工作負載](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (該 Cmdlet 來自 Exchange Online。) 
+
 執行下列命令以建立選取器記錄：
 
 ```powershell
@@ -187,8 +190,6 @@ TTL:                3600
 > [!NOTE]
 > 建立第二筆記錄很重要，但建立時只能使用其中一個選取器。 基本上，第二個選取器可能會指向尚未建立的位址。 我們還是建議您建立第二筆 CNAME 記錄，因為您的金鑰輪換會較流暢。
 
-> [!CAUTION]
-> 由於我們針對建立金鑰的方式實作一些設計變更，因此已暫時停用自動金鑰輪替。 建議您擁有多個金鑰，以便您定期輪替。 雖然難以破解，但它仍然是防範模擬之類項目的實用緩解策略。 您可以遵循 [DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) 文件，協助您的組織執行此動作。 我們預期在 2020 年 8 月再次啟用自動變換。
 
 ### <a name="enable-dkim-signing-for-your-custom-domain"></a>為自訂網域啟用 DKIM 簽署
 <a name="EnableDKIMinO365"> </a>
@@ -349,4 +350,8 @@ Return-Path: <communication@bulkemailprovider.com>
 ## <a name="next-steps-after-you-set-up-dkim-for-microsoft-365"></a>後續步驟：為 Microsoft 365 設定 DKIM 之後
 <a name="DKIMNextSteps"> </a>
 
-雖然 DKIM 可協助您防範詐騙，但 DKIM 與 SPF 和 DMARC 搭配運作時，效果會更好。 設定 DKIM 之後，如果您尚未設定 SPF，應加以設定。 如需 SPF 的快速簡介並快速設定，請參閱[在 Microsoft 365 中設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 如需更深入了解 Microsoft 365 如何使用 SPF 或是進行疑難排解或非標準的部署 (例如混合式部署)，請先參閱 [ 365 如何使用寄件者原則架構 (SPF) 防止詐騙](how-office-365-uses-spf-to-prevent-spoofing.md)。 接下來，請參閱[使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)。 [反垃圾郵件訊息標頭](anti-spam-message-headers.md) 包含 Microsoft 365 針對 DKIM 檢查所使用的語法及標頭欄位。
+雖然 DKIM 可協助您防範詐騙，但 DKIM 與 SPF 和 DMARC 搭配運作時，效果會更好。 設定 DKIM 之後，如果您尚未設定 SPF，應加以設定。 如需 SPF 的快速簡介並快速設定，請參閱[在 Microsoft 365 中設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)。 如需更深入了解 Microsoft 365 如何使用 SPF 或是進行疑難排解或非標準的部署 (例如混合式部署)，請先參閱 [ 365 如何使用寄件者原則架構 (SPF) 防止詐騙](how-office-365-uses-spf-to-prevent-spoofing.md)。 接下來，請參閱[使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)。 [反垃圾郵件訊息標頭](anti-spam-message-headers.md)包含 Microsoft 365 針對 DKIM 檢查所使用的語法及標頭欄位。
+
+## <a name="more-information"></a>其他資訊
+
+透過 PowerShell 輪換金鑰 [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig)
