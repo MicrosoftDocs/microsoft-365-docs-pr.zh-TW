@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Microsoft 受管理的電腦文件
-summary: Microsoft 受管理的電腦將 Microsoft 365企業版、Microsoft 雲端式裝置管理和安全監控結合在一起，使您的 IT 團隊有時間得以專注於核心業務需求。
+summary: Microsoft 受管理的電腦是獨特的 ITaaS 解決方案，它將端點管理和安全性監視功能結合在一起，為使用者提供 IT 專業人員可信任的安全高效的裝置體驗。
 metadata:
   title: Microsoft 受管理的電腦文件
   description: Microsoft 受管理的電腦將 Microsoft 365企業版、Microsoft 雲端式裝置管理和安全監控結合在一起，使您的 IT 團隊有時間得以專注於核心業務需求。
@@ -9,13 +9,13 @@ metadata:
   ms.topic: landing-page
   author: jaimeo
   ms.author: jaimeo
-  ms.date: 07/13/2020
-  ms.openlocfilehash: 08ff51dcc2ecc7bb5f7a11616f011964d99287f2
-  ms.sourcegitcommit: 48f3c002678906189bfba079bbf055d67d08a60f
+  ms.date: 12/04/2020
+  ms.openlocfilehash: 59d8d4ae0986af58c086ea08f486feca5cb23f71
+  ms.sourcegitcommit: 9d5ddfc856926ce6919498c9c42a7421fef78328
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 08/05/2020
-  ms.locfileid: "46564140"
+  ms.lasthandoff: 12/04/2020
+  ms.locfileid: "49576772"
 landingContent:
 - title: 關於 Microsoft 受管理的電腦
   linkLists:
@@ -33,21 +33,33 @@ landingContent:
       url: get-started/index.md
     - text: 使用 Microsoft 受管理的電腦
       url: /microsoft-365/managed-desktop/working-with-managed-desktop/
-- title: 新文章和部落格文章
+- title: 文章和部落格文章
   linkLists:
-  - linkListType: whats-new
+  - linkListType: learn
     links:
-    - text: '[藍圖] 完整的 Microsoft 受管理電腦的使用藍圖'
-      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
-    - text: '[白皮書] 研究：對受管理電腦的服務需求增長'
-      url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
-    - text: '[電子書] 使用現代化工作場所為貴公司帶來驚喜'
-      url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
-- title: 影片
+    - text: '[部落格] 工作場所裝置是新的“免費小吃”'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/workplace-devices-are-the-new-free-snacks/ba-p/1675936
+    - text: '[白皮書] 研究：Microsoft 受管理的電腦節省時間和成本'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/study-microsoft-managed-desktop-saves-time-and-costs/ba-p/1403408
+    - text: '[白皮書] Microsoft 受管理的電腦可以協助提升參與度'
+      url: https://techcommunity.microsoft.com/t5/microsoft-managed-desktop/microsoft-managed-desktop-can-help-boost-engagement/ba-p/1031932
+    - text: '[白皮書] 南澳電網部署 Microsoft 受管理的電腦以滿足不斷變化的使用者需求'
+      url: https://customers.microsoft.com/story/832888-sa-power-networks-case-study-energy-microsoft-managed-desktop
+- title: 優點和亮點
   linkLists:
   - linkListType: video
     links:
-    - text: 透過 Lloyds Banking Group 的工程部門總監了解 Microsoft 受管理的電腦的優勢。
+    - text: Microsoft 受管理的電腦 - IT 系統管理體驗
+      url: https://www.youtube.com/watch?v=UQ8VRSysUXw&feature=youtu.be
+    - text: 企業對 Microsoft 受管理的電腦的喜愛
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4yjfL
+    - text: Microsoft 受管理的電腦 - 極棒的裝置體驗
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE41urx?autoplay=false
+    - text: Microsoft 受管理的電腦 - 安全性作業
+      url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+    - text: Microsoft 受管理的電腦 - 變更和發行程序
+      url: https://www.microsoft.com/videoplayer/embed/RE4COuk
+    - text: 船塢 / IGM / 第 29 集 - 在安全性方面優先考慮使用者體驗
+      url: https://www.youtube.com/watch?v=im11J9C1MTA&feature=youtu.be
+    - text: 船塢 / 駿懋銀行集團 / 第 25 集 - 快速轉型中的領導力
       url: https://www.youtube.com/watch?v=B9Gqj66qxNo&feature=youtu.be
-    - text: 每年 Ignite 會議中 Microsoft 受管理的電腦的焦點
-      url: /microsoft-365/managed-desktop/service-description
