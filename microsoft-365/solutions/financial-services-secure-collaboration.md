@@ -12,21 +12,21 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服務機構如何使用 Microsoft 365 與 Teams 維護金融安全合規性並有效地共同作業。
 f1.keywords: NOCSH
-ms.openlocfilehash: cf485ec673c2f53d1b088c24be950dfe98c71276
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: ff4ce29e42ea3a8a5619f514373041c1e8c3e138
+ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376640"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "49558475"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 
 ## <a name="introduction"></a>簡介
-金融服務機構對安全性、合規性和治理的嚴格控制要求幾乎超過了所有商業企業。保護資料、身分識別、裝置和應用程式不僅對業務至關重要，還須遵守監管機構的合規要求和準則，例如：美國證券交易委員會 (SEC)、美國金融業監管局 (FINRA)、美國聯邦金融機構檢查委員會 (FFIEC)，以及美國商品期貨交易委員會 (CFTC)。此外，金融機構還必須遵守《多德-弗蘭克法案》和2002年《薩班斯-奧克斯利法案》等法律。
+金融服務機構對嚴格安全性、合規性和管理控制的需求幾乎超越所有商業企業。 保護資料、身分識別、裝置和應用程式不僅對業務至關重要，還受限於法規遵循需求和監管機構的規定，例如：美國證券交易委員會 (SEC)、美國金融業監管局 (FINRA)、美國聯邦金融檢查委員會 (FFIEC)，以及美國商品期貨交易委員會 (CFTC)。 此外，金融機構也受到法律的制約，例如《多德-弗蘭克法案》和 2002 年簽署的《沙賓法案》。
 
-在當今日益高漲的安全警覺性、內部風險隱患和公共資料外洩的氣氛中，客戶也要求金融機構提供高水平的安全性，以將其個人資料和銀行資產託付給金融機構。
+在當今日益高漲的安全警覺性、測試人員風險關注和公用資料外洩的氣氛中，客戶也要求金融機構提供高水平的安全性，以將其個人資料和銀行資產託付給金融機構。
 
-在過去，全面控制的需要直接影響和限制了金融機構用來啟用內部及外部共同作業的 IT 系統和平台。如今，金融服務員工需要一種易於採用且容易操作的新式共同作業平台。但是金融服務不能因為强制實施原則以保護使用者和 IT 系統免受威脅的安全性和合規性控制，而犧牲使用者、小組和部門之間共同作業的靈活性。　　
+在過去，對全面控制的需求直接影響並限制了金融機構用來實現內部和外部共同作業的 IT 系統和平台。 如今，金融服務員工需要可輕鬆上手且易於使用的新式共同作業平台。 但是，金融服務無法犧牲強制實施原則以保護使用者和 IT 系統免受威脅的安全性和合規性控制，來換取使用者、團隊和部門之間共同作業的靈活性。
 
 在金融服務領域，需針對設定及部署共同作業工具和安全性控制而謹慎考慮，包括：
 - 常見組織共同作業和商務程序案例的風險評估
@@ -35,9 +35,9 @@ ms.locfileid: "49376640"
 - 法規遵循需求
 - 其他營運風險
 
-**Microsoft 365 是一種新式工作場所雲端環境，可以解決金融服務組織現今所面臨的挑戰。企業中安全且靈活的共同作業結合控制和原則執行，以因應嚴格的法規遵循架構。** 本文介紹了 Microsoft 365 平台如何幫助金融服務過渡到現代的共同作業平台，並同時保持資料和系統的安全以及遵循法規要求：
+**Microsoft 365 是一種新式工作場所雲端環境，可以解決金融服務組織面臨的當代挑戰。企業中安全且靈活的共同作業結合控制和原則執行，以因應嚴格的法規遵循架構。** 本文將說明 Microsoft 365 平台如何協助將金融服務移轉至新式共同作業平台，同時協助確保資料和系統安全性及遵循各種法規：
 
-* 使用 Microsoft 365 和 Microsoft Teams 啟用組織和員工的生產力
+* 使用 Microsoft 365 和 Microsoft Teams 提高組織和員工的生產力
 * 使用 Microsoft 365 保護新式共同作業 
 * 識別敏感性資料並防止資料外洩
 * 堅守堡壘
@@ -47,7 +47,7 @@ ms.locfileid: "49376640"
 
 Microsoft 的合作夥伴 Protiviti 參與撰寫本文，並協助提供實質意見反應。
 
-下列可下載的圖例可以補充說明本文。Woodgrove Bank 和 Contoso 是用來示範本文所述功能的套用方式，旨在解決金融服務的一般法規需求。您可以隨意使用這些圖。 
+下列可下載圖例補充說明本文。 Woodgrove Bank 和 Contoso 是用來示範本文所述功能的套用方式，旨在解決金融服務的一般法規需求。 您可以隨意使用這些圖。 
 
 **Microsoft 365 資訊保護和合規性圖例**
 
@@ -121,7 +121,7 @@ _*_保護對客戶資訊，財務文件和應用程式的存取權始於強化�
 
 Microsoft 365 在 [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/) 中提供集中儲存並安全管理身分識別的安全身分識別平台。 Azure AD 和許多相關的 Microsoft 365 安全性服務構成了為員工提供安全工作所需的存取權基礎，同時還保護組織免受威脅。
 
-[Azure Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) 內建在平台中，並提供額外的驗證證明，以協助確認使用者存取敏感性財務資料和應用程式時的使用者身分識別。 Azure MFA 至少需要兩種形式的驗證，例如密碼加上已知的行動裝置。 其支援多種第二要素驗證，包括：
+[Azure AD Multi-Factor Authentication (MFA)](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-mfa-get-started) 內建在平台中，並提供額外的驗證證明，以協助確認使用者存取敏感性財務資料和應用程式時的使用者身分識別。 Azure MFA 至少需要兩種形式的驗證，例如密碼加上已知的行動裝置。 其支援多種第二要素驗證，包括：
 
 - Microsoft Authenticator 應用程式
 - 透過 SMS 傳遞的一次性密碼
