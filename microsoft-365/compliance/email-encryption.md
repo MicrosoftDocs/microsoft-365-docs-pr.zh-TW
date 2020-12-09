@@ -30,7 +30,7 @@ ms.locfileid: "49580706"
 
 本文件會比較 Microsoft 365 中的加密選項，包括 Office 365 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並介紹傳輸層安全性 (TLS)。
   
-Microsoft 365 提供多個加密選項，可協助您符合電子郵件安全性的商務需求。 本文提供在 Office 365 中加密電子郵件的三個方式。 如果您想要深入了解 Office 365 中的所有安全性功能，請瀏覽 [Office 365 信任中心](https://go.microsoft.com/fwlink/p/?LinkID=282470)。 本文介紹三種加密類型，可供 Microsoft 365 系統管理員用於協助保護 Office 365 中的電子郵件：
+Microsoft 365 提供多種加密選項，有助於滿足您對電子郵件安全性的商務需求。 本文提供在 Office 365 中加密電子郵件的三個方式。 如果您想要深入了解 Office 365 中的所有安全性功能，請瀏覽 [Office 365 信任中心](https://go.microsoft.com/fwlink/p/?LinkID=282470)。 本文介紹三種加密類型，可供 Microsoft 365 系統管理員用於協助保護 Office 365 中的電子郵件：
   
 - Office 郵件加密 (OME)。
 
@@ -38,7 +38,7 @@ Microsoft 365 提供多個加密選項，可協助您符合電子郵件安全性
 
 - 資訊版權管理 (IRM)。
 
-## <a name="email-encryption-and-how-microsoft-365-uses-it"></a>電子郵件加密和 Microsoft 365 如何使用它
+## <a name="email-encryption-and-how-microsoft-365-uses-it"></a>電子郵件加密和 Microsoft 365 如何加以運用
 
 加密是將資訊編碼的程序，以便只有經過授權的收件者能解碼並使用資訊。 Microsoft 365 使用兩個方式來加密：在服務中，以及以自訂控制項的形式。 在服務中，Microsoft 365 會預設使用加密；您不需要進行任何設定。 例如，Microsoft 365 使用傳輸層安全性 (TLS) 來加密兩個伺服器間的連線或工作階段。 
   
