@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: 瞭解如何模擬網路釣魚攻擊，並使用 Microsoft Defender for Office 365 中的攻擊模擬訓練，訓練您的使用者網路釣魚防護。
-ms.openlocfilehash: b9b8a431fc28942f5e11bc7ce2e805ca082cf36b
-ms.sourcegitcommit: dab50e1cc5bba920720b80033c93457f5ca1c330
+ms.openlocfilehash: 8f5f457f60c81fe961282f33bb8c37f4d9e27aab
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "48944454"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616101"
 ---
 # <a name="simulate-a-phishing-attack"></a>模擬網路釣魚攻擊
 
@@ -26,7 +26,7 @@ ms.locfileid: "48944454"
 
 若要啟動模擬網路釣魚攻擊，請流覽至 [Microsoft 365 的安全性中心](https://security.microsoft.com/)。 在 [ **電子郵件 &** 共同作業] 底下，按一下 **攻擊模擬器** 上的 [ [**模擬**](https://security.microsoft.com/attacksimulator?viewid=simulations) ]，然後切換至 [
 
-在 [ **類比** ] 下，選取 [ **啟動類比** ]。
+在 [ **類比** ] 下，選取 [ **啟動類比**]。
 
 ![在 Microsoft 365 的安全性中心啟動模擬按鈕](../../media/attack-sim-preview-launch.png)
 
@@ -58,8 +58,8 @@ ms.locfileid: "48944454"
 - **按一下 [流量** 計數] 按此負載的人數。
 - **預測的折衷率** 會根據此負載在 Microsoft Defender for Office 365 客戶上的歷史資料，預測此負載會危及之人員的百分比。
 - **模擬已啟動** 計算此負載在其他類比中使用的次數。
-- 可透過 **篩選器** 使用的 **複雜性** ，是根據在其指示其為攻擊之目標的負載內的指標數目來計算。 更多指示器會導致較低的複雜性。
-- **來源** （透過 **篩選器** 提供）會指出是否已在您的租使用者上建立負載，或是 Microsoft 預先存在的負載目錄 (全域) 的一部分。
+- 可透過 **篩選器** 使用的 **複雜性**，是根據在其指示其為攻擊之目標的負載內的指標數目來計算。 更多指示器會導致較低的複雜性。
+- **來源**（透過 **篩選器** 提供）會指出是否已在您的租使用者上建立負載，或是 Microsoft 預先存在的負載目錄 (全域) 的一部分。
 
 ![Microsoft 365 security center 中的攻擊模擬訓練中所選的負載](../../media/attack-sim-preview-select-payload.png)
 
@@ -69,11 +69,11 @@ ms.locfileid: "48944454"
 
 ## <a name="audience-targeting"></a>對象目標
 
-現在請選擇此模擬的物件。 您可以選擇 **包含組織中的所有使用者** ，或 **只包含特定的使用者和群組** 。 
+現在請選擇此模擬的物件。 您可以選擇 **包含組織中的所有使用者** ，或 **只包含特定的使用者和群組**。
 
 當您選擇 **只包含特定的使用者和群組** 時，您可以執行下列其中一項：
 
-- **新增使用者** ，可讓您利用租使用者的搜尋功能，以及高級搜尋和篩選功能，例如以過去3個月內模擬的目標使用者為目標。
+- **新增使用者**，可讓您利用租使用者的搜尋功能，以及高級搜尋和篩選功能，例如以過去3個月內模擬的目標使用者為目標。
   ![Microsoft 365 安全中心的攻擊模擬訓練中的使用者篩選](../../media/attack-sim-preview-user-targeting.png)
 - **從 CSV 匯入** 可讓您為此模擬匯入一組預先定義的使用者。
 
@@ -94,8 +94,8 @@ ms.locfileid: "48944454"
 
 ## <a name="launch-details-and-review"></a>發佈詳細資料和評論
 
-現在已設定所有內容，您可以立即啟動這項類比，也可以在稍後的日期排程。 您也必須選擇何時結束此模擬。 在選取的時間之後，我們將停止與此模擬進行的捕捉互動。 
+現在已設定所有內容，您可以立即啟動這項類比，也可以在稍後的日期排程。 您也必須選擇何時結束此模擬。 在選取的時間之後，我們將停止與此模擬進行的捕捉互動。
 
 **啟用地區感知時區傳遞** ，以根據地區的工作時間，將模擬的攻擊訊息傳遞給您的員工。
 
-完成後，請按一下 **[下一步]** 並查看類比的詳細資料。 在任何要回復的元件上按一下 [ **編輯** ]，然後變更任何需要變更的詳細資料。 完成後，按一下 [ **提交** ]。
+完成後，請按一下 **[下一步]** 並查看類比的詳細資料。 在任何要回復的元件上按一下 [ **編輯** ]，然後變更任何需要變更的詳細資料。 完成後，按一下 [ **提交**]。

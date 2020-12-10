@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: 使用者必須先獲指派 Microsoft 365 Security & 合規性中心的許可權，才能管理任何安全性或規範功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d586684d44545f7aea94c30f5474b1fe5fa4651
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1bf8da85a0e090a9d74934ea5084f547d6a8794f
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202804"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616605"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>讓使用者能夠存取安全性與合規性中心
 
@@ -53,9 +53,9 @@ ms.locfileid: "48202804"
 
 3. 在 [**成員**] 底下的角色群組的 [內容] 頁面中，按一下 [**新增** ![ 新增] 圖示 ](../../media/ITPro-EAC-AddIcon.gif) ，然後選取您要新增的使用者 (名稱或使用者) 。
 
-4. 當您選取要新增至角色群組的所有使用者時，請按一下 [**新增- \> ** ]，然後按一下 **[確定]**。
+4. 當您選取要新增至角色群組的所有使用者時，請按一下 [**新增- \>** ]，然後按一下 **[確定]**。
 
-5. 完成後，按一下 [儲存]****。
+5. 完成後，按一下 **[儲存]**。
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>使用安全性 & 規範中心 PowerShell 授予另一個使用者存取安全性 & 規範中心的許可權
 
@@ -81,7 +81,7 @@ ms.locfileid: "48202804"
 
 若要確認您是否已成功授與安全性 & 規範中心的存取權，請執行下列其中一個步驟：
 
-- 在 [安全性 & 規範中心] 中，移至 [ **許可權** ]，然後選取角色群組。 在開啟的 [詳細資料] 浮出控制項中，驗證角色群組的成員。 
+- 在 [安全性 & 規範中心] 中，移至 [ **許可權** ]，然後選取角色群組。 在開啟的 [詳細資料] 浮出控制項中，驗證角色群組的成員。
 
 - 在 [安全性 & 規範中心] PowerShell 中， \<RoleGroupName\> 以角色群組的名稱取代，並執行下列命令：
 

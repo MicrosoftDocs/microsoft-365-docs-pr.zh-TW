@@ -1,5 +1,5 @@
 ---
-title: 防止來賓使用者新增至特定群組
+title: 防止來賓加入特定群組
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,15 +14,15 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: 瞭解如何防止來賓使用者新增至特定群組
-ms.openlocfilehash: 91c7560186fb0b954075e9ff9c997b34121951cd
-ms.sourcegitcommit: cdf2b8dad7db9e16afd339abaaa5397faf11807c
+description: 瞭解如何防止來賓新增至特定群組
+ms.openlocfilehash: 99e78932b29d25054922b56fcadb608a7dfca432
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48651347"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613053"
 ---
-# <a name="prevent-guest-users-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>防止來賓使用者新增至特定的 Microsoft 365 群組或 Microsoft 團隊小組
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>防止客人新增至特定的 Microsoft 365 群組或 Microsoft 團隊小組
 
 如果您想要允許來賓存取大多數群組和小組，但要讓某些地方禁止來賓存取，您可以封鎖個別群組和小組的「來賓存取」。  (封鎖來賓存取權，可透過封鎖關聯群組的 guest 存取來完成。 ) 這會防止新增來賓，但不會移除群組或小組中已存在的客人。
 
@@ -69,7 +69,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
   
 ## <a name="allow-or-block-guest-access-based-on-their-domain"></a>根據網域允許或封鎖來賓存取
 
-您可以允許或封鎖使用特定網域的來賓使用者。 例如，如果您的 business (Contoso) 與其他商務 (Fabrikam) 有合作關係，您可以將 Fabrikam 新增至您的允許清單，讓您的使用者可以將這些來賓新增至他們的群組。
+您可以允許或封鎖使用特定網域的客人。 例如，如果您的 business (Contoso) 與其他商務 (Fabrikam) 有合作關係，您可以將 Fabrikam 新增至您的允許清單，讓您的使用者可以將這些來賓新增至他們的群組。
 
 如需詳細資訊，請參閱 [允許或封鎖從特定組織 B2B 使用者的邀請](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)。
 
@@ -77,7 +77,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 根據預設，來賓在 Exchange 全域通訊清單中不會顯示。 使用下列步驟，讓來賓在全域通訊清單中可見。
 
-執行下列動作，尋找來賓使用者的 ObjectID：
+執行下列動作，尋找訪客的 ObjectID：
 
 ```PowerShell
 Get-AzureADUser -Filter "userType eq 'Guest'"
@@ -89,7 +89,11 @@ Get-AzureADUser -Filter "userType eq 'Guest'"
 Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressList $true -GivenName 'Megan' -Surname 'Bowen' -DisplayName 'Megan Bowen' -TelephoneNumber '555-555-5555'
 ```
 
-## <a name="related-articles"></a>相關文章
+## <a name="related-topics"></a>相關主題
+
+[共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[建立共同作業管理計畫](collaboration-governance-first.md)
 
 [管理 Microsoft 365 系統管理中心中的群組成員資格](https://docs.microsoft.com/microsoft-365/admin/create-groups/add-or-remove-members-from-groups)
   

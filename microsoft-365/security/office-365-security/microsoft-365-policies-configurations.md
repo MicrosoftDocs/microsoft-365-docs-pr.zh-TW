@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-overview
-ms.openlocfilehash: 0144e9478e74e252e0c4ccc0c902df376129c388
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c5c6dae49943aba4288ef2a0dfe9662b02d3b054
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558283"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616365"
 ---
 # <a name="identity-and-device-access-configurations"></a>身分識別與裝置存取設定
 
@@ -43,9 +43,8 @@ ms.locfileid: "49558283"
 
 如果您的組織有獨特的環境需求或複雜性，請使用這些建議做為開始點。 不過，大多陣列織可依照預定的方式來執行這些建議。
 
->[!Note]
->Microsoft 也會為 Office 365 訂閱銷售企業行動 + 安全性 (EMS) 授權。 EMS E3 和 EMS E5 功能相當於 Microsoft 365 E3 和 Microsoft 365 E5 中的功能。 如需詳細資訊，請參閱 [EMS 方案](https://www.microsoft.com/en-us/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 。
->
+> [!NOTE]
+> Microsoft 也會為 Office 365 訂閱銷售企業行動 + 安全性 (EMS) 授權。 EMS E3 和 EMS E5 功能相當於 Microsoft 365 E3 和 Microsoft 365 E5 中的功能。 如需詳細資訊，請參閱 [EMS 方案](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) 。
 
 ## <a name="intended-audience"></a>目標物件
 
@@ -83,7 +82,7 @@ ms.locfileid: "49558283"
 
 Microsoft 365 架構模型的身分 **識別與裝置保護** 會顯示哪些功能是可比較的。
 
-[![Microsoft 365 海報的身分識別和裝置保護的縮圖影像](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [以 PDF 格式查看](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載為 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![Microsoft 365 海報的身分識別和裝置保護的縮圖影像](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [以 PDF 格式查看](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \|[下載為 Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 此外，請參閱 [部署資訊保護以取得資料隱私權法規](../../solutions/information-protection-deploy.md) 解決方案，以保護儲存在 Microsoft 365 中的資訊。
 

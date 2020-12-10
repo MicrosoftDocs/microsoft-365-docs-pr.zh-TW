@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 深入瞭解 Microsoft Defender for Office 365 方案2中自動調查和回應功能的修復動作。
-ms.openlocfilehash: 7dc5c0ba2e320e3f140d26e79e5c2e4a8fde79d7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9a1fdb4bec5168dfcd816dbce7da01f930e38ae1
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844557"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615189"
 ---
 # <a name="view-pending-or-completed-remediation-actions-following-an-automated-investigation-in-office-365"></a>在 Office 365 中進行自動調查後，查看擱置或已完成的修復動作
 
@@ -39,17 +39,17 @@ ms.locfileid: "48844557"
 > [!IMPORTANT]
 > 核准或拒絕修正動作必須具有適當的許可權。 請參閱 [使用 AIR 功能所需的許可權](office-365-air.md#required-permissions-to-use-air-capabilities)。
 
-1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這樣會帶您前往安全性與合規性中心。
+1. 移至 <https://protection.office.com> 並登入。 這樣會帶您前往安全性與合規性中心。
 
-2. 移至 [威脅管理]  >  [調查]。
+2. 移至 **威脅管理** \> **調查**。
 
-3. 在調查清單中，選取 [識別碼] 欄中的項目。 
+3. 在調查清單中，選取 [識別碼] 欄中的項目。
 
 4. 選取 [ **動作** ] 索引標籤。
 
 5. 選取清單中的項目。  (這會啟用 [核准] 及 [拒絕] 按鈕。 ) 
 
-6. 查看您所選取之專案 () 可用資訊，然後核准或拒絕該動作 (s) 。 
+6. 查看您所選取之專案 () 可用資訊，然後核准或拒絕該動作 (s) 。
    - **核准** 允許開始修復。
    - **拒絕** 不再採取任何動作
 

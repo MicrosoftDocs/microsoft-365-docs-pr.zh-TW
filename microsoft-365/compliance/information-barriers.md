@@ -1,5 +1,5 @@
 ---
-title: 深入瞭解資訊障礙
+title: 深入瞭解 Microsoft 365 中的資訊障礙
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ ms.collection:
 localization_priority: None
 description: 使用資訊障礙，以確保您的組織內的 Microsoft 小組能夠進行通訊法規遵從性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0630dc607d6993598f356a7090a6be5890028499
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 08ec3b01258220a71ac02e5333143fb11b66655f
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636960"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613095"
 ---
-# <a name="information-barriers"></a>資訊屏障
+# <a name="learn-about-information-barriers-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的資訊障礙
 
 Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假設您想要限制兩個群組之間的通訊和共同作業，以避免組織中發生利益衝突。 或者，您可能想要限制組織內特定人員之間的通訊和共同作業，以保護內部資訊。 Microsoft 365 可跨群組和組織進行通訊及共同作業，所以有一種方式可以限制特定使用者群組之間的通訊和共同作業（必要時）？ 透過資訊障礙，您可以！ 
 
@@ -35,7 +35,7 @@ Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假
 - 調查小組應只通話或與產品開發小組線上交談
 
 > [!IMPORTANT]
-> 資訊障礙 ***只支援**_ 兩種方式限制。 一種方式限制，例如「行銷」可以與日商貿通訊，但_不支援_使用「行銷」通訊。
+> 資訊障礙 ***只支援** _ 兩種方式限制。 一種方式限制，例如「行銷」可以與日商貿通訊，但 _不支援_ 使用「行銷」通訊。
 
 在所有上述範例案例中 (和更) ，可定義資訊屏障原則，以防止或允許 Microsoft 小組中的通訊。 這類原則可以防止使用者不應該來電或與其聊天，或讓使用者只能與 Microsoft 小組中的特定群組進行通訊。 透過資訊屏障原則，當這些原則所涵蓋的使用者嘗試與 Microsoft 小組中的其他使用者通訊時，會進行檢查以避免 (或允許) 通訊 () 的資訊屏障原則所定義。 若要深入瞭解使用者對資訊障礙的經驗，請參閱 [Microsoft 小組中的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
 
@@ -78,7 +78,7 @@ Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假
 
 - Microsoft 365 全域系統管理員
 - Office 365 全域系統管理員
-- 合規性系統管理員
+- 合規性管理員
 - IB 相容性管理 (這是一個新的角色！ ) 
 
  (若要深入瞭解角色和許可權，請參閱 [Office 365 Security & 合規性中心的許可權](../security/office-365-security/protect-against-threats.md)。 ) 

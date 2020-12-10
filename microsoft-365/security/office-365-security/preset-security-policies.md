@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 的保護功能上套用標準和嚴格的原則設定
-ms.openlocfilehash: e968f7ea768ac8a0b402c28f3830a52b44afa342
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: fb613916ec375214b33b8b842c6817561920715d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572774"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616041"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中的預先設定安全性原則
 
@@ -62,7 +62,7 @@ ms.locfileid: "49572774"
 預設的安全性原則使用 EOP 和 Microsoft Defender for Office 365 中的各種保護功能對應的原則。 在您指派 **標準保護** 或 **嚴格保護** 的預設安全性原則給使用者 _之後_，就會建立這些原則。 您無法修改這些原則。
 
 - **Exchange Online Protection (EOP) 原則**：這包括使用 exchange online 信箱的 Microsoft 365 組織和獨立 EOP 組織，但沒有 exchange online 信箱：
-  
+
   - 名為 **Standard Standard Security policy** And **Strict Standard Security policy** 的 [反垃圾郵件原則](configure-your-spam-filter-policies.md)。
   - 名為 **Standard Standard Security policy** And **Strict Standard Security policy** 的 [反惡意程式碼原則](configure-anti-malware-policies.md)。
   - EOP 欺騙設定) 的「**標準預先設定安全性原則**」和「**嚴格預設安全性 (原則**」[的反網路釣魚原則](set-up-anti-phishing-policies.md#spoof-settings)。
@@ -112,7 +112,7 @@ ms.locfileid: "49572774"
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>使用安全性 & 規範中心，將預先設定的安全性原則指派給使用者
 
-1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** 原則] 「預設 \> **Policy** \> **安全性原則**」。
+1. 在 [安全性 & 規範中心] 中，移至 [**威脅管理** 原則] 「預設 \>  \> **安全性原則**」。
 
 2. 在 [ **標準防護** ] 或 [ **嚴格防護**] 底下，按一下 [ **編輯**]。
 
@@ -126,7 +126,7 @@ ms.locfileid: "49572774"
 
       您只能使用一次條件，但是您可以指定條件的多個值。 相同條件使用或邏輯 (的多個值，例如 _\<recipient1\>_ 或 _\<recipient2\>_) 。
 
-   2. 您選取的條件會出現在陰影區段中。 在該區段中，按一下 [ **任何** ] 方塊。 如果您稍候片刻，便會出現一個清單，讓您可以選取值。 或者，您可以開始輸入值以篩選清單並選取值。 視需要重複此步驟多次。 若要移除個別值，請 **Remove** 按一下 ![ ](../../media/scc-remove-icon.png) 值上的 [移除移除圖示]。 若要移除整個條件，請 **Remove** 按一下 ![ ](../../media/scc-remove-icon.png) 條件上的 [移除移除圖示]。
+   2. 您選取的條件會出現在陰影區段中。 在該區段中，按一下 [ **任何** ] 方塊。 如果您稍候片刻，便會出現一個清單，讓您可以選取值。 或者，您可以開始輸入值以篩選清單並選取值。 視需要重複此步驟多次。 若要移除個別值，請按一下 ![ ](../../media/scc-remove-icon.png) 值上的 [移除移除圖示]。 若要移除整個條件，請按一下 ![ ](../../media/scc-remove-icon.png) 條件上的 [移除移除圖示]。
 
    3. 若要新增其他條件，請按一下 [ **新增條件** ]，然後從其餘的條件中選取。 使用不同的條件和邏輯 (例如， _\<recipient1\>_ 及 _\<member of group 1\>_) 。
 

@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 摘要：設定與 Microsoft 365 開發/測試環境中組織的其他部分隔離的 SharePoint 線上小組網站。
-ms.openlocfilehash: e21dccb9ef535bb997d6e62b70e5576bf531041c
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 6e056cd1d930d13e1ae20f8f8d0cdc9aa886f17e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199658"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616485"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>獨立的 SharePoint Online 小組網站開發/測試環境
 
@@ -35,9 +35,7 @@ Microsoft 365 中的 SharePoint 線上小組網站是使用通用文件庫、One
 SharePoint 線上小組網站的存取權，以及使用者可以執行的工作是由 SharePoint 群組和許可權層級來控制。 根據預設，SharePoint 線上網站有三種存取層級：
 
 - **成員**，誰可以查看、建立及修改網站上的資源。
-
-- **擁有者，其**具有網站的完整控制權，包括變更許可權的功能。
-
+- **擁有者，其** 具有網站的完整控制權，包括變更許可權的功能。
 - **訪客**，誰只可以查看網站上的資源。
 
 本文將引導您逐步設定隔離的 SharePoint Online 小組網站，以尋找名為 ProjectX 的機密調研專案。 存取需求如下：
@@ -143,7 +141,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 圖1顯示存取群組及其成員資格。
 
-**圖1**
+**圖 1**：
 
 ![獨立 SharePoint 線上群組網站的 Microsoft 365 群組及其成員資格](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
@@ -151,9 +149,9 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 若要建立 ProjectX 的 SharePoint Online 小組網站，請執行下列操作：
 
-1. 使用本機電腦上的瀏覽器 (輕量設定) 或 CLIENT1 (模擬企業設定) 上， [https://admin.microsoft.com](https://admin.microsoft.com) 使用您的全域系統管理員帳戶登入 Microsoft 365 系統管理中心 () 。
+1. 使用本機電腦上的瀏覽器 (輕量設定) 或 CLIENT1 (模擬企業設定) 上， <https://admin.microsoft.com> 使用您的全域系統管理員帳戶登入 Microsoft 365 系統管理中心 () 。
 
-2. 在磚清單中，按一下 [SharePoint]****。
+2. 在磚清單中，按一下 [SharePoint]。
 
 3. 在瀏覽器的 [新增 SharePoint] 索引標籤上，按一下 [ **+ 建立網站**]。
 
@@ -165,7 +163,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 7. 在瀏覽器的 [新增 **ProjectX-Home** ] 索引標籤上，按一下工具列上的 [設定] 圖示，然後按一下 [ **網站許可權**]。
 
-8. 在 [網站權限]**** 窗格中，按一下 [進階權限設定]****。
+8. 在 [網站權限] 窗格中，按一下 [進階權限設定]。
 
 9. 在瀏覽器的 [新增 **許可權：專案 X** ] 索引標籤中，按一下 [ **存取要求設定**]。
 
@@ -173,7 +171,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 11. 按一下清單中 **ProjectX 成員** 。
 
-12. 在 [人員與群組]**** 頁面上，按一下 [新增]****。
+12. 在 [人員與群組] 頁面上，按一下 [新增]。
 
 13. 在 [ **共用** ] 對話方塊中，輸入 **ProjectX-Members**，選取它，然後按一下 [ **共用**]。
 
@@ -181,7 +179,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 15. 按一下清單中的 [ **ProjectX 擁有** 者]。
 
-16. 在 [人員與群組]**** 頁面上，按一下 [新增]****。
+16. 在 [人員與群組] 頁面上，按一下 [新增]。
 
 17. 在 [ **共用** ] 對話方塊中，輸入 **ProjectX-Admins**，選取它，然後按一下 [ **共用**]。
 
@@ -189,7 +187,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 19. 按一下清單中的 [ **ProjectX 訪客** ]。
 
-20. 在 [人員與群組]**** 頁面上，按一下 [新增]****。
+20. 在 [人員與群組] 頁面上，按一下 [新增]。
 
 21. 在 [ **共用** ] 對話方塊中，輸入 **ProjectX-Viewers**，選取它，然後按一下 [ **共用**]。
 
@@ -219,13 +217,13 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 2. 按一下您全域系統管理員的名稱，然後按一下 [ **登出**]。
 
-3. [https://admin.microsoft.com](https://admin.microsoft.com)使用 Lead Designer 帳戶名稱及其密碼登入 Microsoft 365 系統管理中心 () 。
+3. <https://admin.microsoft.com>使用 Lead Designer 帳戶名稱及其密碼登入 Microsoft 365 系統管理中心 () 。
 
-4. 在磚清單中，按一下 [SharePoint]****。
+4. 在磚清單中，按一下 [SharePoint]。
 
 5. 在瀏覽器的 [新增 **SharePoint** ] 索引標籤上，于 [搜尋] 方塊中輸入 **ProjectX** ，啟動搜尋，然後按一下 [ **ProjectX** 小組網站]。 您應該會在瀏覽器中看到 ProjectX 小組網站的新索引標籤。
 
-6. 按一下 [設定] 圖示。 請注意， **網站許可權**沒有任何選項。 這是正確的，因為只有 ProjectX-Admins 群組的成員可以修改網站的許可權。
+6. 按一下 [設定] 圖示。 請注意， **網站許可權** 沒有任何選項。 這是正確的，因為只有 ProjectX-Admins 群組的成員可以修改網站的許可權。
 
 7. 開啟 [記事本] 或您選擇的文字編輯器。
 
@@ -237,7 +235,7 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 11. 在瀏覽器的 [新增 **ProjectX-Documents** ] 索引標籤上，按一下 [ **新增 > Word 檔**]。
 
-12. 在頁面上輸入一些文字，等候狀態為 [ **已儲存**]，然後按一下瀏覽器上的 [上一步] 按鈕，再重新整理頁面。 您應該會在**Documents**資料夾中看到新的**Document.docx** 。
+12. 在頁面上輸入一些文字，等候狀態為 [ **已儲存**]，然後按一下瀏覽器上的 [上一步] 按鈕，再重新整理頁面。 您應該會在 **Documents** 資料夾中看到新的 **Document.docx** 。
 
 13. 按一下 **Document.docx** 檔的省略號，然後按一下 [ **取得連結**]。
 
@@ -245,13 +243,13 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 15. 關閉瀏覽器中的 [ **ProjectX-Documents** ] 和 [ **SharePoint** ] 索引標籤，然後按一下 [ **Microsoft Office 首頁** ] 索引標籤。
 
-16. 按一下 [**潛在客戶設計**工具名稱]，然後按一下 **[登出]。**
+16. 按一下 [**潛在客戶設計** 工具名稱]，然後按一下 **[登出]。**
 
 現在讓我們示範使用開發 VP 使用者帳戶來存取 access：
 
-1. [https://admin.microsoft.com](https://admin.microsoft.com)使用開發 VP 帳戶名稱及其密碼登入 Microsoft 365 系統管理中心 () 。
+1. <https://admin.microsoft.com>使用開發 VP 帳戶名稱及其密碼登入 Microsoft 365 系統管理中心 () 。
 
-2. 在磚清單中，按一下 [SharePoint]****。
+2. 在磚清單中，按一下 [SharePoint]。
 
 3. 在瀏覽器的 [新增 **SharePoint** ] 索引標籤上，于 [搜尋] 方塊中輸入 **ProjectX** ，啟動搜尋，然後按一下 [ **ProjectX** 小組網站]。 您應該會在瀏覽器中看到 ProjectX 小組網站的新索引標籤。
 
@@ -265,19 +263,19 @@ Add-MsolGroupMember -GroupObjectId (Get-MsolGroup | Where { $_.DisplayName -eq $
 
 現在讓我們示範沒有許可權的使用者帳戶的 access：
 
-1. [https://admin.microsoft.com](https://admin.microsoft.com)使用使用者3帳戶名稱及其密碼登入 Microsoft 365 系統管理中心 () 。
+1. <https://admin.microsoft.com>使用使用者3帳戶名稱及其密碼登入 Microsoft 365 系統管理中心 () 。
 
-2. 在磚清單中，按一下 [SharePoint]****。
+2. 在磚清單中，按一下 [SharePoint]。
 
 3. 在瀏覽器的 [新增 **SharePoint** ] 索引標籤上，于搜尋方塊中輸入 **ProjectX** ，然後啟動搜尋。 您應該會在這裡看到 [郵件] 不 **符合您的搜尋。**
 
 4. 從 [記事本] 的開啟實例或您的文字編輯器，將 ProjectX 網站的 URL 複製到瀏覽器的 [位址] 列中，然後按 **enter**。 您應該會看到「 **拒絕存取** 」頁面。
 
-5. 從 [記事本] 或您的文字編輯器，將 ProjectX 檔] 資料夾的 URL 複製到瀏覽器的 [位址] 列中，然後按 **enter**鍵。 您應該會看到「 **拒絕存取** 」頁面。
+5. 從 [記事本] 或您的文字編輯器，將 ProjectX 檔] 資料夾的 URL 複製到瀏覽器的 [位址] 列中，然後按 **enter** 鍵。 您應該會看到「 **拒絕存取** 」頁面。
 
-6. 從 [記事本] 或您的文字編輯器，將 Documents.docx 檔案的 URL 複製到瀏覽器的 [位址] 列中，然後按 **enter**鍵。 您應該會看到「 **拒絕存取** 」頁面。
+6. 從 [記事本] 或您的文字編輯器，將 Documents.docx 檔案的 URL 複製到瀏覽器的 [位址] 列中，然後按 **enter** 鍵。 您應該會看到「 **拒絕存取** 」頁面。
 
-7. 關閉瀏覽器中的 [ **SharePoint** ] 索引標籤，按一下 [ **Microsoft Office 首頁**] 索引標籤，按一下**使用者 3**名稱，然後按一下 **[登出]。**
+7. 關閉瀏覽器中的 [ **SharePoint** ] 索引標籤，按一下 [ **Microsoft Office 首頁**] 索引標籤，按一下 **使用者 3** 名稱，然後按一下 **[登出]。**
 
 您的隔離 SharePoint 線上網站現在已準備好進行其他實驗。
 

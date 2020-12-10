@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解可用及慣用的選項，允許在 Exchange Online Protection (EOP) 中輸入郵件。
-ms.openlocfilehash: 6d862f0ed6d6bbea56cb2bb79fee69a044e4fede
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 71c413cdf3f9a189420c33953d7bce41362ab6a9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130790"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616629"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中建立安全的寄件者清單
 
@@ -66,7 +66,7 @@ Exchange Online 和獨立 EOP 中的郵件流程規則使用條件和例外來�
      此條件會檢查傳送電子郵件網域的電子郵件驗證狀態，以確定傳送網域未遭到欺騙。 如需有關電子郵件驗證的詳細資訊，請參閱 [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、 [DKIM](use-dkim-to-validate-outbound-email.md)及 [DMARC](use-dmarc-to-validate-email.md)。
 
    - **IP 允許清單**：在連線篩選原則中指定來源 IP 位址或位址範圍。
-  
+
      若寄送網域未使用電子郵件驗證，請使用此設定。 在 IP 允許清單中的來源 IP 位址到來時，請盡可能具有限制性。 建議的 IP 位址範圍為/24 或更少 () 越好。 請勿使用屬於消費者服務的 IP 位址範圍 (例如，outlook.com) 或共用基礎結構。
 
    > [!IMPORTANT]

@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 系統管理員可以瞭解如何設定獨立 Exchange Online Protection (EOP) ，以保護內部部署的電子郵件環境。
-ms.openlocfilehash: 53386b700c2a2832cf16d47da0678dfb91c5b6d7
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48197164"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615669"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>設定您的獨立 EOP 服務
 
@@ -29,7 +29,9 @@ ms.locfileid: "48197164"
 本主題說明如何設定獨立 Exchange Online Protection (EOP) 。 如果您從 Office 365 網域精靈進入這裡，而您不希望使用 Exchange Online Protection 的話，請回到 Office 365 網域精靈。 如果您正在尋找如何設定連接器的詳細資訊，請參閱[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
 
 > [!NOTE]
-> 本主題假設您擁有內部部署信箱，且您想要使用 EOP 來保護這些信箱 (稱為「獨立」案例)。 如果您想要使用 Exchange Online 在雲端中裝載所有的信箱，並不需要完成本主題中所有的步驟。 移至[比較 Exchange Online 方案](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)以註冊及購買雲端信箱。 如果您想要將一部分信箱裝載在內部部署、一部分信箱裝載在雲端中，這稱為「混合」案例。 這需要更進階的郵件流程設定。 [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) 會說明混合郵件流程，並提供一些說明相關設定方式的連結。
+> 本主題假設您擁有內部部署信箱，且您想要使用 EOP 來保護這些信箱 (稱為「獨立」案例)。 如果您想要使用 Exchange Online 在雲端中裝載所有的信箱，並不需要完成本主題中所有的步驟。 移至[比較 Exchange Online 方案](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)以註冊及購買雲端信箱。
+>
+> 如果您想要將一部分信箱裝載在內部部署、一部分信箱裝載在雲端中，這稱為「混合」案例。 這需要更進階的郵件流程設定。 [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) 會說明混合郵件流程，並提供一些說明相關設定方式的連結。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -96,4 +98,6 @@ ms.locfileid: "48197164"
 - 如果您想要執行輸出電子郵件測試，可以從組織中的使用者傳送電子郵件到 Web 式電子郵件帳戶，再確認郵件是否已收到。
 
 > [!TIP]
-> 當您完成設定時，不需要執行額外步驟即可讓 EOP 移除垃圾郵件和惡意軟體。 EOP 會自動移除垃圾郵件和惡意軟體。 不過，您可以根據您的業務需求來微調設定。 如需詳細資訊，請參閱 [Office 365 中的反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md) ，並 [設定欺騙智慧](learn-about-spoof-intelligence.md)。 <br/><br/> 現在您的服務在執行中，建議您閱讀[設定 EOP 的最佳作法](best-practices-for-configuring-eop.md)，其中會說明設定好 EOP 後的建議設定和注意事項。
+> 當您完成設定時，不需要執行額外步驟即可讓 EOP 移除垃圾郵件和惡意軟體。 EOP 會自動移除垃圾郵件和惡意軟體。 不過，您可以根據您的業務需求來微調設定。 如需詳細資訊，請參閱 [Office 365 中的反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md) ，並 [設定欺騙智慧](learn-about-spoof-intelligence.md)。
+>
+> 現在您的服務在執行中，建議您閱讀[設定 EOP 的最佳作法](best-practices-for-configuring-eop.md)，其中會說明設定好 EOP 後的建議設定和注意事項。

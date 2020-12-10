@@ -14,12 +14,12 @@ search.appverid: MET150
 description: 威脅修正
 appliesto:
 - Microsoft 365 Defender
-ms.openlocfilehash: 4adabe3e85b2bff26167bfad92a9a7fcbf24e58e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 742f19c4051b2cab3311562f688da51975bd3c48
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561288"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615885"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>修復 Office 365 中傳遞的惡意電子郵件
 
@@ -40,7 +40,7 @@ ms.locfileid: "49561288"
 當安全性小組使用威脅瀏覽器中的搜尋和篩選功能手動識別威脅時，就會發生 *手動搜尋*。 在您識別出一組需要補救的電子郵件之後，就可以透過任何電子郵件 view (*惡意* 代碼、 *網路釣魚* 或 *所有電子郵件*) 來觸發手動電子郵件修復。
 
 > [!div class="mx-imgBorder"]
-> [![Office 365 威脅瀏覽器的手動搜尋依日期。 ](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![Office 365 威脅瀏覽器的手動搜尋依日期。](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 安全小組可以使用威脅瀏覽器，以多種方式選取電子郵件：
 
@@ -59,12 +59,12 @@ ms.locfileid: "49561288"
 **自動調查和回應** 動作會由警示或由威脅瀏覽器的安全性作業小組觸發。 這可能包括安全操作小組必須核准的建議修正動作。 這些動作會包含在自動調查的 [ **動作** ] 索引標籤中。
 
 > [!div class="mx-imgBorder"]
-> [![在「Zapped」頁面中包含惡意程式碼的郵件，顯示 Zap 執行的時間。 ](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
+> [![在「Zapped」頁面中包含惡意程式碼的郵件，顯示 Zap 執行的時間。](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
 
-所有 remediations (在威脅瀏覽器中建立的直接核准或兩步驟核准) ，以及來自自動調查的核准動作都會顯示在重要中心。 透過「**審閱**」  >  **動作中心** 下的左導覽面板存取這些功能。
+所有 remediations (在威脅瀏覽器中建立的直接核准或兩步驟核准) ，以及來自自動調查的核准動作都會顯示在重要中心。 透過「 **審閱**」 \> **動作中心** 下的左導覽面板存取這些功能。
 
 > [!div class="mx-imgBorder"]
-> [![依日期和嚴重性列出威脅清單的動作中心。 ](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
+> [![依日期和嚴重性列出威脅清單的動作中心。](../../media/tp-RemediationArticle4.png)](../../media/tp-RemediationArticle4.png#lightbox)
 
 「行動中心」顯示過去30天的所有修復動作。 透過威脅瀏覽器所採取的動作會以安全操作小組在建立修復時所提供的名稱列出。 透過自動調查採取的動作，其標題是以觸發調查的相關警示開始，例如「Zap 電子郵件叢集 ...」。
 
@@ -73,7 +73,7 @@ ms.locfileid: "49561288"
 - [**郵件提交**] 索引標籤：顯示透過威脅瀏覽器提交的電子郵件數目，或要補救的自動調查。 這些電子郵件可能可操作或無法採取行動。
 
   > [!div class="mx-imgBorder"]
-  > [![行動中心，具有可行動且不具可操作性的威脅。 ](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
+  > [![行動中心，具有可行動且不具可操作性的威脅。](../../media/tp-RemediationArticle5.png)](../../media/tp-RemediationArticle5.png#lightbox)
 
   - **可行**：下列雲端信箱位置中的電子郵件可以進行處理及移動：
     - 收件匣
@@ -108,7 +108,7 @@ ms.locfileid: "49561288"
   下圖顯示提交在重要訊息中心中的外觀。 修正可包含多個提交。 如果透過一次自動調查取得多個動作，則每個電子郵件或電子郵件叢集動作都會以不同提交的修復方式出現。
 
   > [!div class="mx-imgBorder"]
-  > [![ZAP 電子郵件叢集飛出面板。 ](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
+  > [![ZAP 電子郵件叢集飛出面板。](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
   選取 [郵件提交專案] 以顯示該修復程式的詳細資料，例如，在透過自動調查或威脅瀏覽器觸發修正時所進行的查詢 (，只要選取查詢) 以及修正的開始和結束時間。 它也會顯示已送出以進行修正的郵寄清單。 當郵件移出威脅瀏覽器保留期間時，郵件會從此清單消失。 清單中也會顯示 remediable 的個別郵件。
 
@@ -129,7 +129,7 @@ ms.locfileid: "49561288"
   - **失敗**：對 remediable 電子郵件所需的動作失敗。 例如：系統管理員想要移除信箱中的電子郵件，讓系統管理員採取虛刪除電子郵件的動作。 如果在採取動作後，在信箱中仍然會找到 remediable 電子郵件，則狀態會顯示為 [失敗]。
 
   選取動作記錄檔中的任何專案，以顯示修正詳細資料。 如果詳細資料說「成功」或「在信箱中找不到」，表示該專案已經從信箱中移除。 有時候，修復期間發生系統性錯誤。 在這種情況下，重試修正是一個不錯的做法。
-  
+
   在修正大量批次的情況下，您也可以透過郵件提交將郵件傳送給修正，以及透過動作記錄檔修正的郵件。 匯出限制已增加至100k 記錄。
 
   修正是一種強大的工具，可減輕威脅，並處理可疑的電子郵件。 這有助於維護組織的安全。

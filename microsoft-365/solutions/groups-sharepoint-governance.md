@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 深入瞭解 Microsoft 365 群組和 SharePoint 之間的設定互動
-ms.openlocfilehash: e8d4189c2d945d5a6d2aa78bd7ea980a77360ce0
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: a00e863fead8e74cf0f169471ebb36f9539ed103
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377554"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613487"
 ---
 # <a name="settings-interactions-between-microsoft-365-groups-and-sharepoint"></a>Microsoft 365 群組和 SharePoint 之間的設定互動
 
@@ -48,6 +48,10 @@ Microsoft 365 群組和 SharePoint Microsoft 365 中的某些設定，尤其與�
 |群組到期原則|指定一段時間，在此時間之後將會自動刪除未使用中的群組。|刪除群組時，也會刪除相關聯的 SharePoint 網站。 保留以保留原則保護的內容。|使用到期原則，避免未使用的群組和網站的大量增加。|
 
 ## <a name="related-topics"></a>相關主題
+
+[共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[建立共同作業管理計畫](collaboration-governance-first.md)
 
 [與組織外部人員合作](https://docs.microsoft.com/microsoft-365/solutions/collaborate-with-people-outside-your-organization)
 

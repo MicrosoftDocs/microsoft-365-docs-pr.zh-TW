@@ -14,12 +14,12 @@ ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何將網域和設定從一個 Microsoft Exchange Online Protection (EOP) 組織 (承租人) 移至另一個。
-ms.openlocfilehash: 141fb85bb7120f4e547c27f399d254847b19e3c2
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 485911ff7ac94c820d6f1e0f7cfa54da08943054
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200500"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614819"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>將網域及設定從某個 EOP 組織移到另一個
 
@@ -29,7 +29,10 @@ ms.locfileid: "48200500"
 隨時變更的商務需求有時需要將一個 Microsoft Exchange Online Protection (EOP) 組織 (租用戶) 分割成兩個個別的組織、將兩個組織合併成一個，或是將您的網域和 EOP 設定從一個組織移至另一個組織。從一個 EOP 組織移至第二個 EOP 組織並不容易，但是利用幾個基本遠端 Windows PowerShell 指令碼和少量的準備工作，就可以使用一個相當小的維護視窗達成此目地。
 
 > [!NOTE]
-> 設定可以只從一個 EOP 獨立 (標準) 組織可靠地移至另一個 EOP 標準組織或至具有服務 (EOP 進階) 的 Exchange 企業 CAL 組織，或是從 EOP 進階組織移至另一個 EOP 進階組織。 因為 EOP 標準組織中部支援部分進階功能，所以從 EOP 進階組織移至 EOP 標準組織可能會失敗。 <br><br> 這些指示適用於僅進行 EOP 篩選的組織。 從一個 Exchange Online 組織移至另一個 Exchange Online 組織有其他的考量。 Exchange Online 組織並不在這些指引的範圍內。
+>
+> - 設定可以只從一個 EOP 獨立 (標準) 組織可靠地移至另一個 EOP 標準組織或至具有服務 (EOP 進階) 的 Exchange 企業 CAL 組織，或是從 EOP 進階組織移至另一個 EOP 進階組織。 因為 EOP 標準組織中部支援部分進階功能，所以從 EOP 進階組織移至 EOP 標準組織可能會失敗。
+>
+> - 這些指示適用於僅進行 EOP 篩選的組織。 從一個 Exchange Online 組織移至另一個 Exchange Online 組織有其他的考量。 Exchange Online 組織並不在這些指引的範圍內。
 
 在下列範例中，Contoso, Ltd. 已經和 Contoso 套件合併。下圖顯示將網域、郵件使用者和群組以及設定從來源 EOP 組織 (contoso.onmicrosoft.com) 移至目標 EOP 組織 (contososuites.onmicrosoft.com) 的程序：
 
@@ -42,21 +45,14 @@ ms.locfileid: "48200500"
 若要在目標組織中重新建立來源組織，請務必收集和儲存關於來源組織的下列資訊：
 
 - 網域
-
 - 郵件使用者
-
 - 群組
-
 - 反垃圾郵件
-
   - 反垃圾郵件原則 (也稱為內容篩選原則) 
   - 輸出垃圾郵件篩選原則
   - 連接篩選原則
-
 - 反惡意程式碼原則
-
 - 連接器
-
 - 郵件流程規則（又稱為傳輸規則）
 
   > [!NOTE]
@@ -188,9 +184,9 @@ Foreach ($domain in $Domains) {
 
    如果您看不到網域，請按一下 [ **自訂導覽**]，選取 [ **設定**]，然後按一下 [ **儲存**]。
 
-3. 按一下每個**啟動安裝程式**連結，然後繼續執行安裝精靈。
+3. 按一下每個 **啟動安裝程式** 連結，然後繼續執行安裝精靈。
 
-4. 在 [**確認擁有權**] 頁面上，為**查看執行這個步驟的逐步指示**選取 [**一般指示**]。
+4. 在 [**確認擁有權**] 頁面上，為 **查看執行這個步驟的逐步指示** 選取 [**一般指示**]。
 
 5. 記錄您降用來驗證網域的 MX 記錄或 TXT 記錄，然後完成安裝精靈。
 
@@ -252,11 +248,11 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>步驟 5：驗證目標組織的網域
 
-1. 登入 [https://portal.office.com](https://portal.office.com) 的系統管理中心。
+1. 登入 <https://portal.office.com> 的系統管理中心。
 
 2. 按一下 **[網域]**。
 
-3. 按一下目標網域的每個**啟動安裝程式**連結，然後繼續執行安裝精靈。
+3. 按一下目標網域的每個 **啟動安裝程式** 連結，然後繼續執行安裝精靈。
 
 ## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>步驟 6：將郵件使用者和群組新增至目標組織
 

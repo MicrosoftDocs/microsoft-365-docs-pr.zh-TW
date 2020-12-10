@@ -21,12 +21,12 @@ description: 開始使用 Microsoft Defender for Office 365 中的自動調查�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 86414eaf0917a6cad7debc44e3f7aa604c55ae70
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8b6ef712e2e90e6798f16c54bc82f99590dbea42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357740"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614831"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自動調查和回應 (AIR) 
 
@@ -124,7 +124,7 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 |工作|需要) 角色 (|
 |---|---|
 |設定 AIR 功能|下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li></ul> <p> 您可以在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)指派這些角色。|
-|開始自動調查 <p> --- 或 --- <p> 核准或拒絕建議的動作|在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)內指派的下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li><li>安全性讀取者 <br/>--- 且 ---</li><li>搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。</li></ul>|
+|開始自動調查 <p> --- 或 --- <p> 核准或拒絕建議的動作|在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)內指派的下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li><li>安全性讀取者 <br> --- 且 --- </li><li>搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。</li></ul>|
 |
 
 ## <a name="required-licenses"></a>必要的授權
@@ -133,7 +133,7 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 
 - 安全性管理員 (包括全域管理員) 
 - 組織的安全性運作小組 (包括安全性讀者和具有 **搜尋和清除** 角色的使用者) 
-- 終端使用者
+- 使用者
 
 ## <a name="next-steps"></a>後續步驟
 

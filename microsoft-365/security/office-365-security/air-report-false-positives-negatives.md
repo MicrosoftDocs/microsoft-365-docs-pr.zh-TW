@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom:
 - autoir
-ms.openlocfilehash: 27edc44145e7b61768d9caf00a3f308e8561d708
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0fe8891f5ea6af215791c5f4321a93667a9d58f0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357396"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616173"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>如何在自動化調查和回應功能中報告誤報/負片
 
@@ -34,7 +34,7 @@ ms.locfileid: "49357396"
 
 
 適用於：
-- 適用於 Office 365 的 Microsoft Defender
+- Microsoft Defender for Office 365
 
 [自動調查和回應 (Office 365 中的 AIR) 功能](automated-investigation-response-office.md)是否漏掉或錯誤地偵測到某項功能？ 您可以採取一些步驟加以修正。 您可以：
 
@@ -79,9 +79,9 @@ ms.locfileid: "49357396"
 
 在「行動中心」中，您可以看到已採取的修復動作，並可能復原動作。
 
-1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。 這會帶您前往安全性 & 規範中心。
+1. 移至 <https://protection.office.com> 並登入。 這會帶您前往安全性 & 規範中心。
 
-2. 移至 [威脅管理]  >  [調查]。
+2. 移至 **威脅管理** \> **調查**。
 
 3. 在調查清單中，選取專案識別碼旁邊的 [ **在新視窗中開啟]** 圖示。
 
@@ -93,6 +93,6 @@ ms.locfileid: "49357396"
 
 ## <a name="related-articles"></a>相關文章
 
-[適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
+[Microsoft Defender for Office 365](office-365-atp.md)
 
 [Microsoft Defender for Office 365 中的空氣](office-365-air.md)

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 瞭解如何建立共同作業管理計畫
-ms.openlocfilehash: 2fb2db16df3c83347831f4ea3489835e5037bbec
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: c27ac401d06808d1a4337e9ec7ec0700bfba19ea
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568279"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613293"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>建立共同作業管理計畫
 
@@ -133,6 +133,8 @@ Microsoft 365 的控管不是 "一次，完成"。 有一個計畫可以維持�
 - 您可以為組織建立 Microsoft 365 冠軍計畫嗎？ 此外，請考慮加入全球的 [Microsoft 365 冠軍計畫](https://aka.ms/O365Champions) ，以取得您自己的冠軍的想法和方法，並與 Microsoft 的 minded 人員和思想負責人連線。
 
 ## <a name="related-topics"></a>相關主題
+
+[共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Microsoft Cloud 採用架構中用於 Azure 的管理](https://docs.microsoft.com/azure/cloud-adoption-framework/govern)
 

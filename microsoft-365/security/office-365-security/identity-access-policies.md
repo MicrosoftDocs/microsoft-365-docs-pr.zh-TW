@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: b4468bfc7ef4b6f76d44b328f4e5b6d61d7f06ac
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 0a9c09e33eb8fd5d03fcbdf44701544e656673d2
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357836"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615153"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 
@@ -41,7 +41,7 @@ ms.locfileid: "49357836"
 
 以下是單一頁面 PDF 摘要，具有個別原則的連結：
 
-[![Microsoft 365 講義的身分識別和裝置保護的縮圖影像](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br/>  [以 PDF 格式查看](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Microsoft 365 講義的身分識別和裝置保護的縮圖影像](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [以 PDF 格式查看](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \|[以 PDF 格式下載](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 本文的其餘部分將說明如何設定這些原則。
 
@@ -50,7 +50,7 @@ ms.locfileid: "49357836"
 
 為了讓您有時間完成這些工作，建議您依照此表中所列的順序實施基準原則。 不過，針對敏感和高管制保護層級的 MFA 原則，可在任何時候實施。
 
-|保護層級|原則|詳細資訊|
+|保護層級|原則|其他資訊|
 |---|---|---|
 |**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](#require-mfa-based-on-sign-in-risk)||
 ||[封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-modern-authentication)|未使用新式驗證的用戶端可以略過條件式存取原則，因此請務必封鎖這些設定。|
@@ -155,7 +155,7 @@ ms.locfileid: "49357836"
 |使用者和群組|Include|**選取 [使用者和群組] > 使用者和群組**：選取包含目標使用者帳戶的特定群組。|從包含試驗使用者帳戶的群組開始。|
 ||排除|**使用者和群組**：選取您的條件式存取例外狀況群組; (應用程式身分識別) 的服務帳戶。|成員資格應以所需的暫存方式來修改。|
 |雲端應用程式或動作|**雲端應用程式 > 包含**|**選取應用程式**：選取對應至不支援新式驗證之用戶端的應用程式。||
-|條件|**用戶端應用程式**|為 [**設定**] 選擇 [**是]** <br/> 清除 **瀏覽器** 和行動 **應用程式與桌面用戶端** 的核取記號||
+|條件|**用戶端應用程式**|為 [**設定**] 選擇 [**是]** <p> 清除 **瀏覽器** 和行動 **應用程式與桌面用戶端** 的核取記號||
 |
 
 在 [ **存取控制** ] 區段中：
@@ -192,7 +192,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 |類型|屬性|值|動作|
 |---|---|---|---|
-|Access|**允許存取**||Select|
+|存取|**允許存取**||Select|
 |||**需要密碼變更**|檢查|
 |
 
@@ -218,7 +218,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 使用身分 [識別與裝置存取](microsoft-365-policies-configurations.md)設定中所述的原則，比較基準和機密保護階層與第2級企業增強型資料保護設定緊密對應。 高度管制防護階層密切對應于第3級企業高資料保護設定。
 
-|保護層級|應用程式保護原則|詳細資訊|
+|保護層級|應用程式保護原則|其他資訊|
 |---|---|---|
 |基準|[第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
 |敏感性|[第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
@@ -275,7 +275,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 - Windows 8.1 和更新版本
 - Windows 10 和更新版本
 
-若要建立裝置規範原則，請使用您的系統管理員認證登入 [Microsoft 端點](https://endpoint.microsoft.com)管理員系統管理中心，然後流覽 **裝置**  >  **規範原則**  >  **原則**。 選取 [ **建立原則**]。
+若要建立裝置規範原則，請使用您的系統管理員認證登入 [Microsoft 端點](https://endpoint.microsoft.com) 管理員系統管理中心，然後流覽 **裝置** \> **規範原則** \> **原則**。 選取 [ **建立原則**]。
 
 若要部署裝置規範原則，必須將其指派給使用者群組。 您可以在建立並儲存原則之後加以指派。 在系統管理中心中，選取原則，然後選取 [ **工作分派**]。 選取您想要接收原則的群組之後，請選取 [ **儲存** ] 以儲存該群組指派並部署原則。
 
@@ -306,18 +306,18 @@ With Conditional Access, organizations can restrict access to approved (modern a
 ||簡單密碼|封鎖|Select|
 ||密碼類型|裝置預設值|Select|
 ||密碼最小長度|6 |類型|
-||需要密碼的最長空閒分鐘數|15 |類型 <br/> 此設定支援 Android 版本4.0 和更新版本，或在 KNOX 4.0 及以上版本。 IOS 裝置的支援 iOS 8.0 和更新版本。|
+||需要密碼的最長空閒分鐘數|15 |類型 <p> 此設定支援 Android 版本4.0 和更新版本，或在 KNOX 4.0 及以上版本。 IOS 裝置的支援 iOS 8.0 和更新版本。|
 ||密碼到期 (天) |41|類型|
 ||可避免重複使用的先前密碼數目|5 |類型|
 ||當裝置從空閒狀態傳回時，需要密碼 (Mobile 和全息) |需要|適用于 Windows 10 和更新版本|
 |加密|裝置上的資料儲存區加密|需要|Select|
 |裝置安全性|防火牆|需要|Select|
 ||防毒|需要|Select|
-||間諜|需要|Select <br/> 此設定需要使用 Windows Security Center 註冊的反間諜軟體方案。|
+||間諜|需要|Select <p> 此設定需要使用 Windows Security Center 註冊的反間諜軟體方案。|
 |後衛|Microsoft Defender 反惡意軟體|需要|Select|
-||Microsoft Defender 反惡意軟體最低版本||類型 <br/> 僅支援 Windows 10 desktop。 Microsoft 建議自最近的版本後的版本不超過五個。|
+||Microsoft Defender 反惡意軟體最低版本||類型 <p> 僅支援 Windows 10 desktop。 Microsoft 建議自最近的版本後的版本不超過五個。|
 ||最新的 Microsoft Defender 反惡意軟體簽名|需要|Select|
-||即時保護|需要|Select <br/> 僅支援 Windows 10 desktop|
+||即時保護|需要|Select <p> 僅支援 Windows 10 desktop|
 |
 
 #### <a name="microsoft-defender-for-endpoint"></a>適用於端點的 Microsoft Defender
@@ -344,7 +344,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 
 7. 針對 [ **包含**]，選擇 [ **選取應用程式] > 選取**]，然後從 [ **雲端應用程式** ] 清單中選取所需的應用程式。 例如，選取 [Exchange Online]。 完成後，選擇 [ **選取** ]。
 
-8. 若要要求相容的 Pc (但不相容的電話和平板) ，請在 [ **工作分派**] 底下，選擇 [ **> 裝置平臺**]。 為 **[設定] 選取 [是]** 。 **Configure** 選擇 [  **選取裝置平臺**]，然後選取 [ **Windows** 和 **macOS**]，然後選擇 [ **完成**]。
+8. 若要要求相容的 Pc (但不相容的電話和平板) ，請在 [ **工作分派**] 底下，選擇 [ **> 裝置平臺**]。 為 **[設定] 選取 [是]** 。  選擇 [  **選取裝置平臺**]，然後選取 [ **Windows** 和 **macOS**]，然後選擇 [ **完成**]。
 
 9. 在 [ **存取控制**] 底下，選擇 **[授** 與]。
 
@@ -379,7 +379,7 @@ With Conditional Access, organizations can restrict access to approved (modern a
 > [!NOTE]
 > 啟用此原則之前，請先確定您的裝置是否相容。 否則，您可能會收到鎖定，而且將無法變更此原則，直到您的使用者帳戶已新增至條件式存取排除群組為止。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [![步驟3：來賓和外部使用者的原則](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 

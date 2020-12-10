@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 瞭解如何在安全性 & 規範中心使用 Explorer 和即時偵測，以有效且有效地調查威脅並作出回應。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 021810a4d64dc3a8d9089a3b7174a1b5f536745a
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 4328bfc52497f911c57256f8366b3742523b17b0
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561396"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615561"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
@@ -67,7 +67,7 @@ ms.locfileid: "49561396"
 
 現在我們有標記為篩選，因此您可以只搜尋優先順序帳戶或特定使用者標記案例 (，甚至在此體驗) 中排除包含某些標記的結果。 結合使用我們提供的多個其他篩選器，可協助您縮小調查範圍
 
-[![篩選標記 ](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
+[![篩選標記](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
 > [!div class="mx-imgBorder"]
 > ![不篩選標記](../../media/tags-filter-not.png)
@@ -149,7 +149,7 @@ ms.locfileid: "49561396"
 > - 偵測技術和其他動作會有新的欄位和值，尤其是針對 ZAP 案例) 所做的 (。 評估您現有的已儲存查詢和追蹤的查詢，以確定其使用新的值。
 
 > [!div class="mx-imgBorder"]
-> ![Additional_Actions](../../media/Additional_Actions.png)
+> ![瀏覽器中的其他動作](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>系統覆寫
 
@@ -161,10 +161,10 @@ ms.locfileid: "49561396"
 - 由組織原則封鎖：這是組織的安全小組設定原則或郵件流程規則，以封鎖組織中使用者的寄件者、網域、郵件語言或來源 Ip。 這種情況也可以用於一組使用者或整個組織。
 - 組織原則封鎖的副檔名：這是由組織的安全性小組透過反惡意程式碼原則設定封鎖的檔案類型副檔名。 這些值現在會顯示在電子郵件詳細資料中，以協助調查。 Secops 小組也可以使用豐富型篩選功能，篩選封鎖的副檔名。
 
-[![System_Overrides ](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
+[![瀏覽器中的系統覆寫](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
 
 > [!div class="mx-imgBorder"]
-> ![System_Overrides_Grid](../../media/System_Overrides_Grid.png)
+> ![瀏覽器中的系統覆寫格線](../../media/System_Overrides_Grid.png)
 
 ### <a name="improvements-around-url-and-clicks-experience"></a>URL 和點擊體驗的增強功能
 
@@ -184,7 +184,7 @@ ms.locfileid: "49561396"
 
 網路釣魚信賴等級可協助識別置信度，以將電子郵件分類為網路釣魚。 這兩個可能的值為 High 和 Normal。 在初始階段中，此篩選器只會在威脅瀏覽器的網路釣魚視圖中使用。
 
-[![Phish_Confidence_Level ](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![瀏覽器中的網路釣魚信賴等級](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### <a name="zap-url-signal"></a>ZAP URL 信號
 
@@ -354,14 +354,14 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 假設您想要查看 Microsoft 365 技術在電子郵件中偵測到惡意程式碼。 若要這麼做，請使用瀏覽器的 [電子郵件 > 惡意](threat-explorer-views.md#email--malware) 代碼視圖 (或即時偵測) 。
 
-1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
+1. 在安全性與合規性中心 (<https://protection.office.com>) 選擇 **[威脅管理]** \> **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
-2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[惡意程式碼 ]**。
+2. 在 [ **視圖** ] 功能表中，選擇 [ **電子郵件** \> **惡意** 代碼]。
 
    > [!div class="mx-imgBorder"]
    > ![總管的檢視功能表](../../media/ExplorerViewEmailMalwareMenu.png)
 
-3. 按一下 **[寄件者]**，然後選擇 **[基本]** > **[偵測技術]**。
+3. 按一下 [ **寄件者**]，然後選擇 [ **基本** \> **偵測技術**]。
 
    您的偵測技術現在可做為報告的篩選器。
 
@@ -381,14 +381,14 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 若要查看郵件中的網路釣魚 URLs，並按一下網路釣魚郵件中 URLs，請使用 Explorer (或即時偵測) 的 [電子郵件 > 網路釣魚](threat-explorer-views.md#email--phish) 視圖。
 
-1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
+1. 在安全性與合規性中心 (<https://protection.office.com>) 選擇 **[威脅管理]** \> **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
-2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[網路釣魚]**。
+2. 在 [ **視圖** ] 功能表中，選擇 [ **電子郵件** \> **釣魚網絡**]。
 
    > [!div class="mx-imgBorder"]
    > ![網路釣魚內容中瀏覽器的視圖功能表](../../media/ExplorerViewEmailPhishMenu.png)
 
-3. 按一下 **[寄件者]**，然後選擇 **[URL]** > **按一下結果**。
+3. 按一下 [ **寄件者**]，然後選擇 **URLs** \> **按一下 [判定**]。
 
 4. 選取一或多個選項，例如 **[已封鎖]** 和 **[封鎖覆寫]**，然後按一下要套用該篩選器的選項同一行上的 **[重新整理]** 按鈕。 (請勿重新整理瀏覽器視窗。)
 
@@ -428,14 +428,14 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 假設您想透過使用 [Outlook 和 Outlook 網頁版的回報郵件增益集](enable-the-report-message-add-in.md)來查看貴組織使用者回報為「垃圾郵件」、「非垃圾郵件」或「網路釣魚」的電子郵件。 若要這麼做，請使用瀏覽器的 [電子郵件 > 提交](threat-explorer-views.md#email--submissions) 視圖 (或即時偵測) 。
 
-1. 在安全性與合規性中心 ([https://protection.office.com](https://protection.office.com)) 選擇 **[威脅管理]** > **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
+1. 在安全性與合規性中心 (<https://protection.office.com>) 選擇 **[威脅管理]** \> **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 
-2. 在 **[檢視]** 功能表中，選擇 **[電子郵件]** > **[提交]**。
+2. 在 [ **View** ] 功能表中，選擇 [ **電子郵件** \> **提交**]。
 
    > [!div class="mx-imgBorder"]
    > ![電子郵件瀏覽器的視圖功能表](../../media/explorer-view-menu-email-user-reported.png)
 
-3. 按一下 **[寄件者]**，然後選擇 **[基本]** > **[回報類型]**。
+3. 按一下 [ **寄件者**]，然後選擇 [ **基本** \> **報表類型**]。
 
 4. 選取一個選項，例如 **[網路釣魚]**，然後按一下 **[重新整理]** 按鈕。
 
@@ -476,14 +476,14 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 - 針對安全性 & 合規性中心，您必須已指派下列角色之一：
 
   - 組織管理
-  - 安全性系統管理員 (這可以在 Azure Active Directory 系統管理中心指派 ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
+  - 安全性管理員 (可以在 Azure Active Directory 系統管理中心 (中指派 <https://aad.portal.azure.com>) 
   - 安全性讀取者
 
-- 針對 Exchange Online，您必須在 Exchange 系統管理中心 ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) 或 PowerShell Cmdlet (請參閱 [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)) 受指派下列其中一個角色：
+- 若為 Exchange Online，您必須在 Exchange 系統管理中心中指派下列其中一個角色 (<https://admin.protection.outlook.com/ecp/>) 或 [exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)：
 
   - 組織管理
-  - 僅檢視組織管理
-  - 僅檢視收件者角色
+  - 僅限檢視組織管理
+  - 僅限檢視收件者
   - 合規性管理
 
 若要深入了解角色和權限，請參閱下列資源：

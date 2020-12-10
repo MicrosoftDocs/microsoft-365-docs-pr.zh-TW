@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡意的電子郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a411e221d49a30a103de6e0f169588d13c387443
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561325"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616521"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>調查 Office 365 中傳遞的惡意電子郵件
 
@@ -36,7 +36,7 @@ ms.locfileid: "49561325"
 > [!NOTE]
 > 在 [這裡](remediate-malicious-email-delivered-office-365.md)跳到修正文章。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 請確定符合下列需求：
 
@@ -62,7 +62,7 @@ ms.locfileid: "49561325"
 |
 
 > [!NOTE]
-> *Preview* 是角色，不是角色群組;預覽角色必須新增至 Office 365 的現有角色群組。 全域系統管理員角色會指派 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) ，而且安全性管理員和安全性讀取者角色會指派在安全性 & 規範中心 ([https://protection.office.com](https://protection.office.com)) 。 若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+> *Preview* 是角色，不是角色群組;預覽角色必須新增至 Office 365 的現有角色群組。 全域系統管理員角色會指派 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) ，而且安全性管理員和安全性讀取者角色會指派在安全性 & 規範中心 (<https://protection.office.com>) 。 若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>尋找已傳遞的可疑電子郵件
 
@@ -71,7 +71,7 @@ ms.locfileid: "49561325"
 > [!NOTE]
 > 瀏覽器中的預設搜尋目前不包含 Zapped 的專案。  這適用于所有的視圖，例如惡意程式碼或網路釣魚視圖。 若要包含 Zapped 的專案，您需要將 ' 傳遞動作 ' 設定為包含「包含」（由 ZAP 移除）。 如果您包括所有選項，您會看到所有傳遞動作結果，包括 Zapped 專案。
 
-1. **流覽至威脅瀏覽器**：移至 [https://protection.office.com](https://protection.office.com) 並使用您的 Office 365 的公司或學校帳戶登入。 這會帶您前往安全性 & 規範中心。
+1. **流覽至威脅瀏覽器**：移至 <https://protection.office.com> 並使用您的 Office 365 的公司或學校帳戶登入。 這會帶您前往安全性 & 規範中心。
 
 2. 在 [左導覽快速啟動] 中，選擇 [ **威脅管理** \> **瀏覽器**]。
 

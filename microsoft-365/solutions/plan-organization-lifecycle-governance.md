@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 有關 Microsoft 365 中的共同作業工具生命週期管理選項的精益
-ms.openlocfilehash: 706f1aaecf22c4088d4539c208fef68320c5e710
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 4d779701d241fc7178ab759063be1b8cdf2e960c
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377184"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613017"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>針對 Microsoft 365 群組和 Microsoft 團隊規劃組織和生命週期管理
 
@@ -74,3 +74,9 @@ Microsoft 365 群組具有一套豐富的工具，可實施組織所需的控管
 - 任何刪除的群組可在30天內由群組擁有人或系統管理員復原。
 
 到期原則是一種很好的方法，可確保刪除不再使用的群組，以限制群組大量蔓延。 如果您想要建立群組到期原則，請參閱 [Microsoft 365 群組到期原則](microsoft-365-groups-expiration-policy.md)。
+
+## <a name="related-topics"></a>相關主題
+
+[共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[建立共同作業管理計畫](collaboration-governance-first.md)

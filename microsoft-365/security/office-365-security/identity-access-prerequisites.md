@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 67835f4140179c69b5e0f2cd0287e656dd4c49ad
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: bd0b4efb1281d467a61e4aee792b507f0ca44181
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558547"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616557"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
@@ -38,7 +38,7 @@ ms.locfileid: "49558547"
 - 使用傳遞驗證混合 (PTA) 
 - 聯邦
 
-下表詳細說明適用于所有身分識別模型的必要條件功能及其設定，除非另有說明。 
+下表詳細說明適用于所有身分識別模型的必要條件功能及其設定，除非另有說明。
 
 |組態|例外狀況|
 |---|:---:|
@@ -76,7 +76,7 @@ ms.locfileid: "49558547"
 
 ### <a name="recommended-email-clients"></a>建議的電子郵件用戶端
 
-下列電子郵件用戶端支援新式驗證和條件式存取。 
+下列電子郵件用戶端支援新式驗證和條件式存取。
 
 |平台|用戶端|版本/附註|
 |---|---|---|
@@ -116,9 +116,9 @@ ms.locfileid: "49558547"
 
 以下是一些額外的建議：
 
-- 使用 [AZURE AD 特權身分識別管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) 來減少持久管理帳戶的數目。 
-- 使用「特殊許可權[存取管理](../../compliance/privileged-access-management-overview.md)」來保護您的組織不會因可能使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。 
-- 建立並使用個別帳戶，只指派給 [Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*的管理*。 管理員應該擁有自己的使用者帳戶，以進行一般非系統管理，且只有在必要時才使用系統管理帳戶，才可完成與其角色或工作職能相關聯的工作。 
+- 使用 [AZURE AD 特權身分識別管理](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) 來減少持久管理帳戶的數目。
+- 使用「特殊許可權[存取管理](../../compliance/privileged-access-management-overview.md)」來保護您的組織不會因可能使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。
+- 建立並使用個別帳戶，只指派給 [Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*的管理*。 管理員應該擁有自己的使用者帳戶，以進行一般非系統管理，且只有在必要時才使用系統管理帳戶，才可完成與其角色或工作職能相關聯的工作。
 - 遵循在 Azure AD 中保護特權帳戶的 [最佳作法](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) 。
 
 ## <a name="next-step"></a>下一步

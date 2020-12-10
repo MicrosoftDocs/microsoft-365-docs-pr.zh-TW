@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 深入瞭解如何向您的使用者說明 Microsoft 365 群組。
-ms.openlocfilehash: 179452800fb28c193622b47dce85dd6419ae5ac2
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 2f983d69f8b3138634739a82e35de9e62821d252
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49554781"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613005"
 ---
 # <a name="explaining-microsoft-365-groups-to-your-users"></a>向使用者說明 Microsoft 365 群組
 
@@ -38,6 +38,8 @@ Microsoft 365 群組可讓您設定共用資源的集合，包括共用信箱和
 [![影像 desc ](../../media/03.png)](../../media/03.png#lightbox)
 
 如果您訓練您的使用者永遠使用最符合其運作方式的群組建立方法，當他們需要空間來與其他人進行共同作業時，您可以協助避免混亂和重複的資源。 當使用者變得更豐富時，他們就能更好地瞭解群組所提供的服務集合，而不同的建立方法會導致相同的結果。
+
+您可以使用 [Microsoft 365 群組 For Business 使用者 PowerPoint 範本](https://www.microsoft.com/download/details.aspx?id=102396) 做為使用者訓練簡報的開始點。
 
 ## <a name="related-topics"></a>相關主題
 

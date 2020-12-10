@@ -20,12 +20,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 深入瞭解 Microsoft Defender for Office 365 方案中的威脅調查和回應功能。
-ms.openlocfilehash: 7ae61e7ea70d8be5c31ec12443c8943f6e54bcf4
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: cbda50dacd6b892c976ce55632c8fc35813839b7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561252"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614771"
 ---
 # <a name="threat-investigation-and-response"></a>威脅調查及回應
 
@@ -110,11 +110,11 @@ Microsoft Defender for Office 365 使用以角色為基礎的存取控制。 許
 
 |活動|角色及權限|
 |---|---|
-|使用威脅儀表板 (或新的 [安全性儀表板](security-dashboard.md)) <br/> <br/>查看最近或目前威脅的相關資訊|下列其中之一： <br/>- **全域管理員**  <br/> - **安全性管理員** <br/>- **安全性讀取器** <br/> <br/>您可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 () 中指派這些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
-|使用 [威脅瀏覽器 (和即時偵測) ](threat-explorer.md) 來分析威脅|下列其中之一： <br/>- **全域管理員**  <br/> - **安全性管理員** <br/>- **安全性讀取器** <br/> <br/>您可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 () 中指派這些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
-|View 事件 (也稱為「調查」)  <br/> 將電子郵件新增至事件|下列其中之一： <br/>- **全域管理員**  <br/> - **安全性管理員** <br/>- **安全性讀取器** <br/> <br/>您可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 () 中指派這些角色 [https://admin.microsoft.com](https://admin.microsoft.com) 。|
-|觸發事件中的電子郵件動作 <br/> <br/> 尋找和刪除可疑的電子郵件|下列其中之一： <br/>- **全域管理員**  <br/> - **安全性管理員** 和 **搜尋及清除** 角色<br/><br/>**全域管理員** 及 **安全性管理員** 角色可以在 Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 () 中指派 [https://admin.microsoft.com](https://admin.microsoft.com) 。 <br/><br/>您必須在安全性 & 規範中心 () 中指派 **搜尋和清除** 角色 [https://protection.office.com](https://protection.office.com) 。|
-|整合 Microsoft Defender for Office 365 方案2與 Microsoft Defender for Endpoint  <br/><br/> 整合 Microsoft Defender for Office 365 Plan 2 與 SIEM server|在任何 Azure Active Directory (中所指派的 **全域系統管理員** 或 **安全性管理員** 角色 [https://portal.azure.com](https://portal.azure.com)) 或 Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 。<br/>--- **加** ---<br/>在其他應用程式中指派的適當角色 (例如 [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) 或 SIEM server) |
+|使用威脅儀表板 (或新的 [安全性儀表板](security-dashboard.md))  <p> 查看最近或目前威脅的相關資訊|下列其中之一： <ul><li>**全域管理員**</li><li>**安全性系統管理員**</li><li>**安全性讀取者**</li></ul> <p> 您可以在 Azure Active Directory (<https://portal.azure.com>) 或 Microsoft 365 系統管理中心 () 中指派這些角色 <https://admin.microsoft.com> 。|
+|使用 [威脅瀏覽器 (和即時偵測) ](threat-explorer.md) 來分析威脅|下列其中之一： <ul><li>**全域管理員**</li><li>**安全性系統管理員**</li><li>**安全性讀取者**</li></ul> <p> 您可以在 Azure Active Directory (<https://portal.azure.com>) 或 Microsoft 365 系統管理中心 () 中指派這些角色 <https://admin.microsoft.com> 。|
+|View 事件 (也稱為「調查」)  <p> 將電子郵件新增至事件|下列其中之一： <ul><li>**全域管理員**</li><li>**安全性系統管理員**</li><li>**安全性讀取者**</li></ul> <p> 您可以在 Azure Active Directory (<https://portal.azure.com>) 或 Microsoft 365 系統管理中心 () 中指派這些角色 <https://admin.microsoft.com> 。|
+|觸發事件中的電子郵件動作 <p> 尋找和刪除可疑的電子郵件|下列其中之一： <ul><li>**全域管理員**</li><li>**安全性管理員** 和 **搜尋及清除** 角色</li></ul> <p> **全域管理員** 及 **安全性管理員** 角色可以在 Azure Active Directory (<https://portal.azure.com>) 或 Microsoft 365 系統管理中心 () 中指派 <https://admin.microsoft.com> 。 <p> 您必須在安全性 & 規範中心 () 中指派 **搜尋和清除** 角色 <https://protection.office.com> 。|
+|整合 Microsoft Defender for Office 365 方案2與 Microsoft Defender for Endpoint  <p> 整合 Microsoft Defender for Office 365 Plan 2 與 SIEM server|在任何 Azure Active Directory (中所指派的 **全域系統管理員** 或 **安全性管理員** 角色 <https://portal.azure.com>) 或 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) 。 <p> --- **加** --- <p> 在其他應用程式中指派的適當角色 (例如 [Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) 或您的 SIEM server) 。|
 |
 
 ## <a name="next-steps"></a>後續步驟

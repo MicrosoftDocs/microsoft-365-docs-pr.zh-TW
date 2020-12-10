@@ -17,19 +17,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12b6499822f8ed97ace8468054f219361d925332
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: b5b095a1d75ead0f963a71d816e7d879b7cd3697
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562985"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614795"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>評估 Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
->[!IMPORTANT]
->評估 Microsoft Defender for Office 365 不久會在公開預覽中提供此預覽版本，但沒有任何服務等級協定。 某些功能可能不受支援，或可能具有有限的功能。
+> [!IMPORTANT]
+> 評估 Microsoft Defender for Office 365 不久會是公開預覽。 在沒有服務等級協定的情況下提供此預覽版本。 某些功能可能不受支援，或可能具有有限的功能。
 
 進行完整的安全性產品評估，可協助您瞭解升級和購買的決策。 它可協助您嘗試安全性產品的功能，以評估其日常工作中的安全性操作小組的運作方式。
 
@@ -56,7 +56,7 @@ ms.locfileid: "49562985"
 - 分析動作報告
 - 展示評估結果
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 ### <a name="licensing"></a>授權
 
@@ -73,7 +73,7 @@ ms.locfileid: "49562985"
 
 若要取得 Microsoft Defender for Office 365 的試用版授權，您必須具有「 **帳單管理員」角色** 或「 **全域系統管理員」角色**。 向具有全域系統管理員角色的使用者要求許可權。 [深入瞭解訂閱與授權](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
 
-當您擁有適當的角色後，建議的路徑是取得 Microsoft Defender for Office 365 的試用版授權 (方案 2) 在 Microsoft 365 系統管理中心，請移至帳單 > 購買服務。 試用期包括30天的免費試用版，取得25個授權。 [取得 Microsoft Defender For Office 365 的試用版 (方案 2) ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)。 
+當您擁有適當的角色後，建議的路徑是取得 Microsoft Defender for Office 365 的試用版授權 (方案 2) 在 Microsoft 365 系統管理中心，請移至帳單 > 購買服務。 試用期包括30天的免費試用版，取得25個授權。 [取得 Microsoft Defender For Office 365 的試用版 (方案 2) ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)。
 
 您將會有30天的時段，其評估是用來監視和報告高級威脅。 如果您想要完整的 Office 365 功能，您也可以選擇購買付費訂閱。
 
@@ -81,13 +81,14 @@ ms.locfileid: "49562985"
 
 在評估模式中，需要有 Exchange Online 角色才能設定 Office 365 的 Defender。 下列角色是必要的：
 
-|工作 | 角色 |
-|-----| -----|
-| 取得免費試用版或購買 Microsoft Defender for Office 365 (方案 2) | 計費系統管理員角色或全域系統管理員角色|
-| 建立評估原則| 遠端和公認的網域角色;安全性系統管理員角色|
-| 編輯評估原則 | 遠端和公認的網域角色;安全性系統管理員角色 |
-| 刪除評估原則 | 遠端和公認的網域角色;安全性系統管理員角色 |
-|查看評估報告 | 安全性管理員角色或安全性讀者角色|
+|工作|角色|
+|---|---|
+|取得免費試用版或購買 Microsoft Defender for Office 365 (方案 2) |計費系統管理員角色或全域系統管理員角色|
+|建立評估原則|遠端和公認的網域角色;安全性系統管理員角色|
+|編輯評估原則|遠端和公認的網域角色;安全性系統管理員角色|
+|刪除評估原則|遠端和公認的網域角色;安全性系統管理員角色 |
+|查看評估報告|安全性管理員角色或安全性讀者角色|
+|
 
 ### <a name="enhanced-filtering"></a>增強型篩選
 
@@ -107,7 +108,7 @@ ms.locfileid: "49562985"
 
 支援的電子郵件路由案例包括：
 
-- **協力廠商的合作夥伴和/或內部部署服務提供者**：您要評估的輸入連接器使用協力廠商提供者和/或您正在使用內部部署電子郵件安全性的解決方案。  
+- **協力廠商的合作夥伴和/或內部部署服務提供者**：您要評估的輸入連接器使用協力廠商提供者和/或您正在使用內部部署電子郵件安全性的解決方案。
 - **僅限 Microsoft Exchange Online Protection**：您要評估的承租人使用 Office 365 進行電子郵件安全性和郵件交換 (MX) 記錄指向 Microsoft。
 
 ### <a name="email-security-gateway"></a>電子郵件安全性閘道
@@ -154,7 +155,7 @@ ms.locfileid: "49562985"
 
 ## <a name="evaluate-capabilities"></a>評估功能
 
-產生評估報告之後，請查看組織中的電子郵件和共同作業工作區中識別的高級威脅連結、高級威脅附件及可能的 impersonations 數目。  
+產生評估報告之後，請查看組織中的電子郵件和共同作業工作區中識別的高級威脅連結、高級威脅附件及可能的 impersonations 數目。
 
 試用期到期後，您可以繼續存取90天的報告。 不過，它不會收集任何其他資訊。 如果您想要在試用期到期後繼續使用 Microsoft Defender for Office 365，請確定您 [購買了適用于 office 365 的 Microsoft defender 訂閱 (方案 2) ](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)。
 

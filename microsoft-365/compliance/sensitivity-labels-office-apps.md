@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 685228823c87eff975fabd2dd398c1b67be8eeef
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: 3a8d0181b7a17922f788605953fc9af3ca450d6d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580736"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613617"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -64,7 +64,7 @@ ms.locfileid: "49580736"
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下            | 在 [複查] 下        | 在 [複查] 下   | 在 [複查] 下         | 是的 <sup>\*</sup>                                                        |
 |[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 預覽： [Beta 通道](https://office.com/insider)             | 預覽： [Beta 通道](https://office.com/insider)         | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                            
-|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Word 和 PowerPoint 的預覽：向裡 [ (預覽的現有頻道) ](https://office.com/insider) | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[自動將敏感性標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Word 和 PowerPoint 的預覽：向裡 [ (預覽的現有頻道) ](https://office.com/insider) | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |支援標籤和受保護檔上的[AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)和[合著](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -86,7 +86,7 @@ ms.locfileid: "49580736"
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[要求使用者將標籤套用至電子郵件和檔](#require-users-to-apply-a-label-to-their-email-and-documents)   | 預覽： [Beta 通道](https://office.com/insider)                        | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | 是                |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 在 [複查] 下                       | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 是               |
-|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
+|[自動將敏感性標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
 |
 
 
@@ -138,7 +138,7 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 您設定用來套用加密的敏感度標籤，可移除使用者的複雜性，以指定自己的加密設定。 在許多 Office 應用程式中，使用者仍然可以使用資訊版權管理 (IRM) 選項，手動設定這些個別加密設定。 例如，針對 Windows 應用程式：
 
-- 對於檔：檔案 **File**  >  **資訊**  >  **保護** 檔  >  **限制存取權**
+- 對於檔：檔案  >  **資訊**  >  **保護** 檔  >  **限制存取權**
 - 電子郵件：從 [ **選項** ] 索引標籤中 > **加密** 
   
 當使用者最初標記檔或電子郵件時，他們會永遠使用自己的加密設定覆寫標籤設定設定。 例如：
@@ -239,7 +239,7 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 - 從 Power BI 匯出已標示及已加密的資料
 
-- Microsoft 雲端 App 安全性
+- Microsoft 雲端應用程式安全性
 
 針對這些案例，使用內建標籤的使用者可以暫時移除或取代目前的標籤，然後重新應用原始標籤，以套用標籤的內容標記。
 
@@ -254,12 +254,12 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 | 變數 | 描述 | 套用標籤的範例 |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | 目前的標籤顯示名稱 | **一般**|
-| `${Item.Name}` | 目前的檔案名或電子郵件主題 | **Sales.docx** |
-| `${Item.Location}` | 檔的目前路徑和檔案名，或電子郵件的電子郵件主題 | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | 目前的使用者顯示名稱  | **Richard Simone** |
-| `${User.PrincipalName}` | 目前的使用者 Azure AD 使用者主體名稱 (UPN)  | **rsimone \@ contoso.com** |
-| `${Event.DateTime}` | 本機時區的目前日期和時間 | **8/10/2020 1:30 PM** |
+| `${Item.Label}` | 套用標籤的標籤顯示名稱| **一般**|
+| `${Item.Name}` | 所標示內容的檔案名或電子郵件主題 | **Sales.docx** |
+| `${Item.Location}` | 所標示之檔的路徑和檔案名，或是已標示之電子郵件的電子郵件主題 | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | 套用標籤的使用者顯示名稱| **Richard Simone** |
+| `${User.PrincipalName}` | 應用標籤之使用者的 Azure AD 使用者主體名稱 (UPN)  | **rsimone \@ contoso.com** |
+| `${Event.DateTime}` | 內容標示的日期和時間，在套用標籤的使用者當地時區中 | **8/10/2020 1:30 PM** |
 
 > [!NOTE]
 > 這些變數的語法是區分大小寫的。
@@ -321,7 +321,7 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
     `${If.App.WP}This content is ${If.End}Confidential`
 
     在 Word 和 PowerPoint 中，標籤會套用浮水印文字「此內容是機密」。 在 Excel 中，標籤會套用浮水印文字「機密」。 在 Outlook 中，標籤不會套用任何浮水印文字，因為浮水印是不支援 Outlook 的視覺標記。
->>>>>>> a51fef4b19dc23a23a161de3e8333dcd7527540b
+
 
 ## <a name="end-user-documentation"></a>最終使用者檔
 

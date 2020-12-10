@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 摘要：為政治活動開發/測試環境建立具備使用者與群組的 Office 365 和 Enterprise Mobility + Security (EMS) 之試用訂閱。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80454477bc55ab54ae7edf14ded5b4fa49fe1530
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 1fac15cc0b2a512745e0538ec689bd5f17555419
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203356"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614903"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>設定政治活動開發/測試環境的群組和使用者
 
@@ -38,27 +38,27 @@ ms.locfileid: "48203356"
 
 在這個階段中，您會為代表政治活動的虛構組織取得 Office 365 E5 與 Enterprise Mobility + Security (EMS) E5 試用訂閱。
 
-首先，請依照[輕量型基本組態](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)中「第 2 階段」**** 的指示進行。
+首先，請依照[輕量型基本組態](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)中「第 2 階段」的指示進行。
 
 接著，註冊 EMS E5 試用訂閱，並將它新增至與試用訂閱相同的組織。
 
 1. 如果需要，請使用試用訂閱的全域管理員帳戶認證登入系統管理中心。 如需說明，請參閱[在何處登入](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)。
 
-2. 按一下 [管理]**** 磚。
+2. 按一下 [管理] 磚。
 
-3. 在瀏覽器的 [Microsoft 365 系統管理中心]**** 索引標籤上，按一下左導覽中的 [計費] > [購買服務]****。
+3. 在瀏覽器的 [Microsoft 365 系統管理中心] 索引標籤上，按一下左導覽中的 [計費] > [購買服務]。
 
-4. 在 [購買服務]**** 頁面上，尋找 **Enterprise Mobility + Security E5** 項目。將滑鼠指標停留在上面，並且按一下 [開始免費試用]****。
+4. 在 [購買服務] 頁面上，尋找 **Enterprise Mobility + Security E5** 項目。將滑鼠指標停留在上面，並且按一下 [開始免費試用]。
 
-5. 在 [確認訂單]**** 頁面上，按一下 [立即試用]****。
+5. 在 [確認訂單] 頁面上，按一下 [立即試用]。
 
-6. 在 [訂單收據]**** 頁面上，按一下 [繼續]****。
+6. 在 [訂單收據] 頁面上，按一下 [繼續]。
 
 接下來，啟用全域管理員帳戶的 EMS E5 授權。
 
-1. 在瀏覽器的 [Microsoft 365 系統管理中心]**** 索引標籤上，按一下左導覽中的 [使用者] > [作用中使用者]****。
+1. 在瀏覽器的 [Microsoft 365 系統管理中心] 索引標籤上，按一下左導覽中的 [使用者] > [作用中使用者]。
 
-2. 按一下您的全域系統管理員帳戶，然後按一下 [產品授權]**** 的 [編輯]****。
+2. 按一下您的全域系統管理員帳戶，然後按一下 [產品授權] 的 [編輯]。
 
 3. 在 [產品授權]**** 窗格中，將 **Enterprise Mobility + Security E5** 的產品授權設為 [開啟]**，按一下 [儲存]，然後按兩次 [關閉]。
 
@@ -68,9 +68,9 @@ ms.locfileid: "48203356"
 
 首先，利用 Azure 入口網站建立一組典型政治活動的群組。
 
-1. 在瀏覽器中建立個別索引標籤，然後移至 Azure 入口網站 (網址為 [https://portal.azure.com](https://portal.azure.com))。若有需要，請使用 Office 365 E5 試用訂閱的全域管理員帳戶認證登入。
+1. 在瀏覽器中建立個別索引標籤，然後移至 Azure 入口網站 (網址為 <https://portal.azure.com>)。若有需要，請使用 Office 365 E5 試用訂閱的全域管理員帳戶認證登入。
 
-2. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [使用者和群組] > [所有群組]****。
+2. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [使用者和群組] > [所有群組]。
 
 3. 針對此清單中的每個群組名稱執行下列步驟：
 
@@ -86,33 +86,33 @@ ms.locfileid: "48203356"
 
    - 現場人員
 
-1. 在 [所有群組]**** 刀鋒視窗中，按一下 [+ 新增群組]****。
+1. 在 [所有群組] 刀鋒視窗中，按一下 [+ 新增群組]。
 
-2. 從**名稱**中的清單輸入群組名稱。
+2. 從 **名稱** 中的清單輸入群組名稱。
 
-3. 選取在 [成員資格] **** 中的 [動態使用者]****。
+3. 選取在 [成員資格] 中的 [動態使用者]。
 
-4. 對 [啟用 Office 功能]**** 按一下 [是]****。
+4. 對 [啟用 Office 功能] 按一下 [是]。
 
-5. 按一下 [新增動態查詢]****。
+5. 按一下 [新增動態查詢]。
 
-6. 在 [新增使用者位置]****，請選取 [部門]****。
+6. 在 [新增使用者位置]，請選取 [部門]。
 
-7. 在下一個欄位中，選取 [等於]****。
+7. 在下一個欄位中，選取 [等於]。
 
 8. 從下一個欄位中，從該清單中輸入群組名稱。
 
-9. 按一下 [新增查詢]****，然後按一下 [建立]****。
+9. 按一下 [新增查詢]，然後按一下 [建立]。
 
-10. 按一下 [使用者和群組 - 所有群組]****。
+10. 按一下 [使用者和群組 - 所有群組]。
 
 接下來，設定群組，以讓系統自動為成員指派 Office 365 E5 和 EMS E5 授權。
 
-1. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [授權] > [所有產品]****。
+1. 在 Azure 入口網站中，按一下 [Azure Active Directory] > [授權] > [所有產品]。
 
-2. 在清單中，選取 [Enterprise Mobility + Security E5]**** 和 [Office 365 企業版 E5]****，然後按一下 [+ 指派]****。
+2. 在清單中，選取 [Enterprise Mobility + Security E5] 和 [Office 365 企業版 E5]，然後按一下 [+ 指派]。
 
-3. 在 [指派授權]**** 刀鋒視窗中，按一下 [使用者和群組]****。
+3. 在 [指派授權] 刀鋒視窗中，按一下 [使用者和群組]。
 
 4. 在群組清單中，選取下列項目：
 
@@ -128,7 +128,7 @@ ms.locfileid: "48203356"
 
    - 資深和策略人員
 
-5. 按一下 [選取]****，然後按一下 [指派]****。
+5. 按一下 [選取]，然後按一下 [指派]。
 
 6. 關閉瀏覽器的 Azure 入口網站索引標籤。
 
@@ -173,19 +173,19 @@ foreach ($element in $userNames){ New-AzureADUser -DisplayName $element -Passwor
 
 使用這些步驟來確認動態群組成員資格和以群組為基礎之授權是否運作正常。
 
-1. 從瀏覽器的 [Microsoft Office 的首頁]**** 索引標籤中，按一下 [管理]**** 磚。
+1. 從瀏覽器的 [Microsoft Office 的首頁] 索引標籤中，按一下 [管理] 磚。
 
-2. 從瀏覽器的新 [Microsoft 365 系統管理中心]**** 索引標籤中，按一下 [使用者]****。
+2. 從瀏覽器的新 [Microsoft 365 系統管理中心] 索引標籤中，按一下 [使用者]。
 
-3. 在使用者清單中，按一下 [應徵者]****。
+3. 在使用者清單中，按一下 [應徵者]。
 
-4. 在列出 [應徵者]**** 使用者帳戶之內容的窗格中，請確認：
+4. 在列出 [應徵者] 使用者帳戶之內容的窗格中，請確認：
 
-   - 它屬於**資深和策略的人員**群組 (在**群組成員資格**)。
+   - 它屬於 **資深和策略的人員** 群組 (在 **群組成員資格**)。
 
-   - 他獲派 **Enterprise Mobility + Security E5** 與 **Office 365 企業版 E5** 授權 (在**產品授權**中)。
+   - 他獲派 **Enterprise Mobility + Security E5** 與 **Office 365 企業版 E5** 授權 (在 **產品授權** 中)。
 
-5. 關閉 [應徵者]**** 使用者帳戶窗格。
+5. 關閉 [應徵者] 使用者帳戶窗格。
 
 ## <a name="record-values-for-future-reference"></a>記錄值，以便日後參考
 

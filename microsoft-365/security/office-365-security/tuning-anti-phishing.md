@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: 系統管理員可以瞭解如何在 Microsoft 365 中識別網頁仿冒郵件的原因，以及如何防止未來的更多網路釣魚郵件。
-ms.openlocfilehash: c495be3f5a90ca96f9a7a05513df9438f88910ad
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 8a2c63d499317427b921d7786dd60b3ad4f18c42
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131318"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615381"
 ---
 # <a name="tune-anti-phishing-protection"></a>調整防網路釣魚保護
 
@@ -75,7 +75,7 @@ ms.locfileid: "49131318"
 
   如需設定指示，請參閱：
 
-  - [設定 SPF 以協助防止詐騙 ](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   - [使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)
 

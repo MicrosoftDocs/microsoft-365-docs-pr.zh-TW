@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以管理 SharePoint Online、商務 OneDrive 和 Microsoft 小組中的隔離檔案。
-ms.openlocfilehash: fed05ee202e4352200a80516e0ec1b62c8421178
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357130"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616773"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
@@ -103,12 +103,12 @@ ms.locfileid: "49357130"
      - **反惡意程式碼原則**
      - **安全附件原則**
      - **反網路釣魚原則**
-     - **託管的內容篩選原則** (反網路釣魚原則)
+     - **主控內容篩選原則** (反垃圾郵件原則) 
      - **傳輸規則**
 
    - **電子郵件收件** 者：所有使用者或僅傳送給您的郵件。 使用者只能管理傳送給他們的隔離郵件。
 
-   若要清除篩選，請按一下 [清除 **]**。 若要隱藏 [篩選] 飛出視窗，再按一下 [篩選]。
+   若要清除篩選，按一下 [清除]。 若要隱藏 [篩選] 飛出視窗，再按一下 [篩選]。
 
 5. 使用 [結果排序依據] (預設為 [郵件識別碼] 按鈕) 和對應值來尋找特定郵件。 不支援萬用字元。 您可以依下列值進行搜尋：
 
@@ -123,7 +123,7 @@ ms.locfileid: "49357130"
    - **收件者電子郵件地址**：單一收件者的電子郵件地址。
 
    - **主旨**：使用郵件的完整主旨。 搜尋時不會區分大小寫。
-  
+
    - **原則名稱**：負責隔離郵件的原則名稱。
 
    輸入搜尋準則後，請按一下![重新整理按鈕](../../media/scc-quarantine-refresh.png) [重新整理] 來篩選結果。
@@ -165,7 +165,7 @@ ms.locfileid: "49357130"
   - 選擇下列其中一個選項：
     - **放開郵件給所有收件者**
     - **將郵件發佈給特定的收件者**
-    - **為其他人發行訊息**：請注意，不支援將惡意程式碼封發行給原始收件者以外的人員。 
+    - **為其他人發行訊息**：請注意，不支援將惡意程式碼封發行給原始收件者以外的人員。
 
   完成時，請按一下 [釋出郵件]。
 

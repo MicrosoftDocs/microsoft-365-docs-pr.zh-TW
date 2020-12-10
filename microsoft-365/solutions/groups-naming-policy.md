@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: 瞭解如何為 Microsoft 365 群組建立命名原則。
-ms.openlocfilehash: 55faf5c61d577b35b34923efc7b65457fe46de29
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377602"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613499"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 群組命名原則
 
@@ -45,7 +45,7 @@ ms.locfileid: "48377602"
 
 這對於建立群組命名原則的系統管理員也是必要的。
 
-## <a name="prefix-suffix-naming-policy"></a>前置詞尾碼命名原則
+## <a name="prefix-suffix-naming-policy"></a>Prefix-Suffix 命名原則
 
 首碼和尾碼可以是固定字串或使用者屬性。
 
@@ -132,5 +132,9 @@ ms.locfileid: "48377602"
 ![Azure Active Directory 中群組命名原則設定的螢幕擷取畫面](../media/groups-naming-policy-azure.png)
 
 ## <a name="related-topics"></a>相關主題
+
+[共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[建立共同作業管理計畫](collaboration-governance-first.md)
 
 [用於設定群組設定的 Azure Active Directory Cmdlet](https://go.microsoft.com/fwlink/?linkid=868341)

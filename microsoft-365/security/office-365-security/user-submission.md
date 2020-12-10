@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: 31249ab930c44d84f27efac95d8e57bd88d9742f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 7064e2d26722c433d33fe2f983484a40fa33c1e6
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130896"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615621"
 ---
 # <a name="user-submissions-policy"></a>使用者提交原則
 
@@ -88,7 +88,7 @@ ms.locfileid: "49130896"
 
       - **提交後**：按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 。 在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用「報告訊息增益集」報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
 
-      完成後，請按一下 **[儲存]**。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原** 回來]。
+      完成後，按一下 **[儲存]**。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原** 回來]。
 
       - **將報告的郵件傳送至**：進行下列其中一項選擇：
 
@@ -99,7 +99,7 @@ ms.locfileid: "49130896"
         - **自訂信箱**：在出現的方塊中，輸入現有 Exchange Online 信箱的電子郵件地址。 不允許通訊群組。 如果您只想要將郵件移至系統管理員或安全性作業小組進行分析，請使用此選項。 除非系統管理員自行轉寄，否則郵件不會移至 Microsoft。
 
         > [!NOTE]
-        > 美國政府組織 (GCC、GCC 和 DoD) 只能設定 **自訂信箱**。 其他兩個選項會停用。 
+        > 美國政府組織 (GCC、GCC 和 DoD) 只能設定 **自訂信箱**。 其他兩個選項會停用。
 
       完成後，請按一下 [ **確認**]。
 

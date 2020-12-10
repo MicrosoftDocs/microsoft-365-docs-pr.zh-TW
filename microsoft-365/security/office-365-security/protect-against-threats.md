@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護，並設定如何將它用於您的組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 98a20c8805ff9eb735ca880cfc24a0acf9698b3e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 646fff4550de2e07342c0fef04952846db65a8eb
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561198"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615117"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -56,7 +56,7 @@ ms.locfileid: "49561198"
 |電子郵件的零小時自動清除 () |[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |保護電子郵件和 Office 檔中的惡意 URLs 和檔案 (安全連結和安全附件) |[Microsoft Defender for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 |開啟 SharePoint、OneDrive 和 Microsoft 小組工作負載的 ATP|[適用于 Office 的 Defender 365 ](atp-for-spo-odb-and-teams.md)|
-|高級反網路釣魚保護|[適用于 Office 的 Defender 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|高級反網路釣魚保護|[適用於 Office 365 的 Defender](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>角色及權限
 
@@ -68,7 +68,7 @@ ms.locfileid: "49561198"
 |---|---|
 |全域管理員|[關於 Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
 |安全性系統管理員|[Azure Active Directory 中的系統管理員角色權限](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Exchange Online 組織管理|[Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <br>和<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
+|Exchange Online 組織管理|[Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> 和 <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |
 
 若要深入瞭解，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
@@ -81,7 +81,7 @@ ms.locfileid: "49561198"
 
 在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)的訂閱中提供[反惡意程式碼保護](anti-malware-protection.md)。
 
-1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **反惡意** 代碼]。
+1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則** \> **反惡意** 代碼]。
 
 2. 按兩下 **預設** 原則，然後選擇 [ **設定**]。
 
@@ -101,7 +101,7 @@ ms.locfileid: "49561198"
 
 下列程式說明如何在 Microsoft Defender for Office 365 中設定反網路釣魚原則。 步驟與在 EOP 中設定反網路釣魚原則類似。
 
-1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 反網路釣魚**]。
+1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則** \> **ATP 反網路釣魚**]。
 
 2. 按一下 [ **預設原則**]。
 
@@ -135,7 +135,7 @@ ms.locfileid: "49561198"
 
 您可以在包含[EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)的訂閱中取得[反垃圾郵件保護](anti-spam-protection.md)。
 
-1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**]  >  **反垃圾郵件**。
+1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則**] \> **反垃圾郵件**。
 
 2. 在 [ **自訂** ] 索引標籤上，開啟 [自訂設定]。
 
@@ -157,7 +157,7 @@ ms.locfileid: "49561198"
 
 若要設定 [安全附件](atp-safe-attachments.md)，請至少建立一個安全連結原則。
 
-1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 安全附件**]，然後按一下 [**建立**]。
+1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，然後按一下 [ **建立**]。
 
 2. 在出現的 [ **新增安全附件原則** ] 嚮導中，設定下列設定：
 
@@ -167,7 +167,7 @@ ms.locfileid: "49561198"
      - 在 [ **安全附件未知惡意程式碼回應** ] 區段中，選擇 [ **封鎖**]。
      - 在 [重新 **導向附件** ] 區段中，選取 [ **啟用重新導向**] 選項。 指定組織的安全性系統管理員或操作員的電子郵件地址，誰會檢查偵測到的檔案。
 
-     按 **[下一步]**。
+     按 [下一步 **]**。
 
 3. 在 [套用 **至**] 頁面上，按一下 [**新增條件**]，然後選擇 [套用者 **：收件者網域是**]，按一下 [**新增**]，選取您的網域，按一下 [**新增**]，按一下 [**完成**]，然後按 **[下一步**
 
@@ -177,13 +177,13 @@ ms.locfileid: "49561198"
 
 若要設定 [安全連結](atp-safe-links.md)，請複查及編輯安全連結的全域設定，並至少建立一個安全連結原則。
 
-1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 安全連結**]，然後按一下 [**通用設定**]，然後設定下列設定：
+1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則** \> **ATP 安全連結**]，然後按一下 [ **通用設定**]，然後設定下列設定：
 
    - 驗證 **使用下列安全連結： Office 365 應用程式** 已開啟： ![ 開啟開啟] ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
    - **當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
    - **不要讓使用者點擊 [安全連結至原始 URL**]：確認已開啟此設定： ![ 開啟開啟 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) 。
 
-   完成後，按一下 [儲存]。
+   完成後，按一下 **[儲存]**。
 
 2. 回到 [主要安全連結] 頁面上，按一下 [ **建立**]。
 
@@ -214,7 +214,7 @@ SharePoint、OneDrive 和小組等工作負載都是為了共同作業而建立�
 > [!IMPORTANT]
 > **開始此程式之前，請確定已為您的 Microsoft 365 環境開啟了審核記錄**。 這項工作通常是由在 Exchange Online 中獲派稽核記錄角色的人員完成。 如需詳細資訊，請參閱 [開啟或關閉審核記錄搜尋](../../compliance/turn-audit-log-search-on-or-off.md)！
 
-1. 在 [[安全性 & 規範中心](https://protection.office.com)] 中，選擇 [**威脅管理**  >  **原則**  >  **ATP 安全附件**]，然後按一下 [**通用設定**]。
+1. 在 [ [安全性 & 規範中心](https://protection.office.com)] 中，選擇 [ **威脅管理** \> **原則** \> **ATP 安全附件**]，然後按一下 [ **通用設定**]。
 
 2. 驗證 **SharePoint、OneDrive 和 Microsoft 團隊** 切換功能的開啟 ATP 是否為右對齊： ![ 切換開啟]，然後按一下 [ ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) **儲存**]。
 
@@ -284,7 +284,7 @@ SharePoint、OneDrive 和小組等工作負載都是為了共同作業而建立�
 
 |處理方式|可深入了解的資源|
 |---|---|
-|查看您的組織如何使用威脅防護功能，以查看報告|[安全性儀表板](security-dashboard.md)<br/>[電子郵件安全性報告](view-email-security-reports.md)<br/>[Microsoft Defender for Office 365 的報告](view-reports-for-atp.md)<br/>[威脅總管](threat-explorer.md)|
-|視需要定期複查和修正威脅防護原則|[安全分數](../mtp/microsoft-secure-score.md)<br/>[智慧報告和洞察力](reports-and-insights-in-security-and-compliance.md)<br/>[Microsoft 365 威脅調查和回應功能](keep-users-safe-with-office-365-ti.md)|
-|監視新功能和服務更新|[標準及目標發行選項](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365)<br/>[訊息中心](https://docs.microsoft.com/microsoft-365/admin/manage/message-center)<br/>[Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
+|查看您的組織如何使用威脅防護功能，以查看報告|[安全性儀表板](security-dashboard.md) <p> [電子郵件安全性報告](view-email-security-reports.md) <p> [Microsoft Defender for Office 365 的報告](view-reports-for-atp.md) <p> [威脅總管](threat-explorer.md)|
+|視需要定期複查和修正威脅防護原則|[安全分數](../mtp/microsoft-secure-score.md) <p> [智慧報告和洞察力](reports-and-insights-in-security-and-compliance.md) <p> [Microsoft 365 威脅調查和回應功能](keep-users-safe-with-office-365-ti.md)|
+|監視新功能和服務更新|[標準及目標發行選項](https://docs.microsoft.com/microsoft-365/admin/manage/release-options-in-office-365) <p> [訊息中心](https://docs.microsoft.com/microsoft-365/admin/manage/message-center) <p> [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection) <p> [服務說明](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)|
 |瞭解適用于 EOP 和 Defender for Office 365 的建議標準和嚴格安全性設定的詳細資料|[EOP 和 Microsoft Defender for Office 365 安全性的建議設定](recommended-settings-for-eop-and-office365-atp.md)|

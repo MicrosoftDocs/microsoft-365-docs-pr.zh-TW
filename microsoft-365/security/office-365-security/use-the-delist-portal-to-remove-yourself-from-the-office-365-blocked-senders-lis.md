@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何使用取消列出入口網站，將您自己從 Microsoft 365 封鎖的寄件者清單中移除。
-ms.openlocfilehash: f4e7bcc13ac6c133880eb0ebe69ba3f724d0a84e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 0c87d467db004a50502402b05eb0fa3283aa46c5
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561420"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614759"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list"></a>使用取消列出入口網站，將您自己從封鎖寄件者清單中移除
 

@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何安裝和使用 Microsoft 垃圾郵件回報增益集來向 Microsoft 報告垃圾郵件、非垃圾郵件和網路釣魚郵件。
-ms.openlocfilehash: 6e4c16ed8efd781a6e8ecea422fe55fb6723209c
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 6f08c72ae797825695c443848429dcfd2cd485a2
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877546"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616425"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安裝和使用 Microsoft Outlook 的垃圾郵件回報增益集
 
@@ -48,19 +48,19 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 1. 對於收件匣或任何其他電子郵件資料夾（除了垃圾郵件）以外的郵件，請使用下列任何一種方法來報告垃圾郵件和網路釣魚郵件：
 
-   - 選取郵件或開啟郵件。 在功能區的 [ **首頁** ] 或 [ **訊息** ] 索引標籤中，按一下 [ **垃圾郵件** ]，然後選取 [ **報告為垃圾郵件** ] 或 [ **報表為網路**
+   - 選取郵件或開啟郵件。 在功能區的 [**首頁**] 或 [**訊息**] 索引標籤中，按一下 [**垃圾郵件**]，然後選取 [**報告為垃圾郵件**] 或 [**報表為網路**
 
      ![從功能區報告垃圾郵件或網路釣魚電子郵件](../../media/junk-email-reporting-ribbon.png)
 
-   - 在郵件上按一下滑鼠右鍵，選取 [ **垃圾** 郵件]，然後選取 [ **報告為垃圾** 郵件] 或 [ **報表為網路釣魚** ]。
+   - 在郵件上按一下滑鼠右鍵，選取 [ **垃圾** 郵件]，然後選取 [ **報告為垃圾** 郵件] 或 [ **報表為網路釣魚**]。
 
      ![從滑鼠右鍵按一下報告垃圾郵件或網路釣魚電子郵件](../../media/junk-email-reporting-right-click.png)
 
-   - 選取多封郵件，以滑鼠右鍵按一下，然後選取 [ **報告為垃圾** 郵件] 或 [ **報表為網路釣魚** ]。
+   - 選取多封郵件，以滑鼠右鍵按一下，然後選取 [ **報告為垃圾** 郵件] 或 [ **報表為網路釣魚**]。
 
      ![從右擊報告多個垃圾郵件或網路釣魚電子郵件](../../media/junk-email-reporting-right-click-multiple.png)
 
-2. 在出現的對話方塊中，閱讀資訊，然後按一下 [ **報告** ]。 如果您變更主意，請按一下 [ **不報告** ]。
+2. 在出現的對話方塊中，閱讀資訊，然後按一下 [ **報告**]。 如果您變更主意，請按一下 [ **不報告**]。
 
    ![報告為垃圾郵件對話方塊](../../media/junk-email-reporting-report-as-junk-dialog.png)
 
@@ -70,26 +70,26 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
    - 移至 [垃圾郵件] 資料夾（如果已舉報為垃圾郵件）。
    - 已刪除，如果已報告為網路釣魚。
-   
+
    若要確認郵件已提交，請開啟 **[寄件備份]** 資料夾，以檢視已提交的郵件。
 
 ## <a name="use-the-junk-email-reporting-add-in-to-report-non-spam-and-phishing-messages-from-the-junk-email-folder"></a>使用垃圾郵件回報增益集來報告垃圾郵件資料夾中的非垃圾郵件和網路釣魚郵件
 
 1. 在 [垃圾郵件] 資料夾中，使用下列任何一種方法來報告垃圾郵件誤報或網路釣魚郵件：
 
-   - 選取郵件或開啟郵件。 在功能區的 [ **首頁** ] 或 [ **訊息** ] 索引標籤中，按一下 [ **非垃圾郵件** ]，然後選取 [ **報告為非垃圾郵件** ] 或 [ **報表為網路**
+   - 選取郵件或開啟郵件。 在功能區的 [**首頁**] 或 [**訊息**] 索引標籤中，按一下 [**非垃圾郵件**]，然後選取 [**報告為非垃圾郵件**] 或 [**報表為網路**
 
      ![從 [垃圾郵件] 資料夾中的功能區報告不是垃圾郵件或網路釣魚電子郵件](../../media/junk-email-reporting-junk-folder-ribbon.png)
 
-   - 在郵件上按一下滑鼠右鍵，按一下 [ **垃圾** 郵件]，然後選取 [ **報告為非垃圾郵件** ] 或 [ **報表為網路釣魚** ]。
+   - 在郵件上按一下滑鼠右鍵，按一下 [ **垃圾** 郵件]，然後選取 [ **報告為非垃圾郵件** ] 或 [ **報表為網路釣魚**]。
 
      ![在 [垃圾郵件] 資料夾中，以滑鼠右鍵按一下不報告垃圾郵件或網路釣魚電子郵件](../../media/junk-email-reporting-junk-folder-right-click.png)
 
-   - 選取多封郵件，以滑鼠右鍵按一下，然後選取 [ **報告為非垃圾郵件** ] 或 [ **報表為網路釣魚** ]。
+   - 選取多封郵件，以滑鼠右鍵按一下，然後選取 [ **報告為非垃圾郵件** ] 或 [ **報表為網路釣魚**]。
 
      ![在 [垃圾郵件] 資料夾中，以滑鼠右鍵按一下不限垃圾郵件或網路釣魚電子郵件](../../media/junk-email-reporting-junk-folder-right-click-multiple.png)
 
-2. 在出現的對話方塊中，閱讀資訊，然後按一下 [ **報告** ]。 如果您變更主意，請按一下 [ **不報告** ]。
+2. 在出現的對話方塊中，閱讀資訊，然後按一下 [ **報告**]。 如果您變更主意，請按一下 [ **不報告**]。
 
    ![[報告為非垃圾郵件] 對話方塊](../../media/junk-email-reporting-report-as-not-junk-dialog.png)
 
@@ -121,17 +121,17 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 3. 找到您已下載的 .msi 檔案，然後按兩下它。
 
-4. 在 **[歡迎使用 Microsoft 垃圾郵件回報增益集安裝程式]** 頁面上，按 **[下一步]** 。
+4. 在 **[歡迎使用 Microsoft 垃圾郵件回報增益集安裝程式]** 頁面上，按 **[下一步]**。
 
-5. 閱讀授權合約，如果您同意條款，請按一下 [ **我接受授權合約中的條款** ]，然後按 **[下一步]** 。
+5. 閱讀授權合約，如果您同意條款，請按一下 [ **我接受授權合約中的條款** ]，然後按 **[下一步]**。
 
-6. 當精靈完成時，請按一下 **[完成]** 。
+6. 當精靈完成時，請按一下 **[完成]**。
 
 請啟動 Outlook。
 
 請在 Outlook 功能區上尋找 **[垃圾郵件]** 按鈕。您現在可以選取 [收件匣] 中的垃圾郵件並按一下 **[回報垃圾郵件]** 按鈕，即可向 Microsoft 回報垃圾郵件。
 
-選擇 **[垃圾郵件]** 旁的向下箭號取得更多選項，例如您要向 Microsoft 回報網路釣魚詐騙郵件時使用的 **[回報為網路釣魚]** 。在您的垃圾郵件資料夾中，如果電子郵件誤報為垃圾郵件，您也可以選取 **[回報非垃圾郵件]** 。
+選擇 **[垃圾郵件]** 旁的向下箭號取得更多選項，例如您要向 Microsoft 回報網路釣魚詐騙郵件時使用的 **[回報為網路釣魚]**。在您的垃圾郵件資料夾中，如果電子郵件誤報為垃圾郵件，您也可以選取 **[回報非垃圾郵件]**。
 
 ### <a name="install-the-junk-email-reporting-add-in-using-silent-mode"></a>使用無訊息模式安裝垃圾郵件回報增益集
 
@@ -172,7 +172,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 若要確認您是否已成功安裝垃圾郵件回報增益集，請在 Outlook 中執行下列任一步驟：
 
-- 選取郵件或開啟郵件。 在功能區的 [ **首頁** ] 或 [ **訊息** ] 索引標籤中，按一下 [ **垃圾郵件** ]，然後確認下列選項可供使用：
+- 選取郵件或開啟郵件。 在功能區的 [ **首頁** ] 或 [ **訊息** ] 索引標籤中，按一下 [ **垃圾郵件**]，然後確認下列選項可供使用：
 
   - **報告為垃圾郵件**
   - **以網路釣魚報告**
@@ -209,19 +209,19 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 在您關閉 Outlook 後，請使用下列任何程式卸載垃圾郵件回報增益集：
 
-- **控制台** ：按下 Windows 鍵 + R。在開啟的 [ **執行** ] 對話方塊中，輸入， `control appwiz.cpl` 然後按一下 **[確定]** 。
+- **控制台**：按下 Windows 鍵 + R。在開啟的 [ **執行** ] 對話方塊中，輸入， `control appwiz.cpl` 然後按一下 **[確定]**。
 
-  在清單中尋找並選取 **Microsoft 垃圾郵件回報增益集** ，然後按一下 [ **卸載** ]。
+  在清單中尋找並選取 **Microsoft 垃圾郵件回報增益集** ，然後按一下 [ **卸載**]。
 
-- **Windows Installer 封裝** ：尋找或下載適當的 .msi 檔案，然後按兩下該檔案。
+- **Windows Installer 封裝**：尋找或下載適當的 .msi 檔案，然後按兩下該檔案。
 
   - **32** 位： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
   - **64** 位： `Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  在出現的對話方塊中，選取 [ **移除 Outlook 的 Microsoft 垃圾郵件回報增益集** ]，然後按 **[下一步]** 。
+  在出現的對話方塊中，選取 [ **移除 Outlook 的 Microsoft 垃圾郵件回報增益集** ]，然後按 **[下一步]**。
 
-- **無訊息模式** ：尋找或下載適當的 .msi 檔案。 在 [命令提示字元] 視窗中，以 .msi 檔案的位置取代， \<PathToFile\> 並執行下列其中一個命令：
+- **無訊息模式**：尋找或下載適當的 .msi 檔案。 在 [命令提示字元] 視窗中，以 .msi 檔案的位置取代， \<PathToFile\> 並執行下列其中一個命令：
 
   - **32** 位：
 
@@ -263,7 +263,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 1. 驗證或將登錄機 `LoggingLevel` 碼設定為 "Verbose" 值：
 
-   - **32 位 Outlook on 32 Bit Windows** ：
+   - **32 位 Outlook on 32 Bit Windows**：
 
      ```text
      Windows Registry Editor Version 5.00
@@ -272,7 +272,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
      "LoggingLevel"="Verbose"
      ```
 
-   - **32 位 Outlook on 64 Bit Windows** ：
+   - **32 位 Outlook on 64 Bit Windows**：
 
      ```text
      Windows Registry Editor Version 5.00
@@ -281,7 +281,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
      "LoggingLevel"="Verbose"
      ```
 
-   - **64 位 Outlook** ：
+   - **64 位 Outlook**：
 
      ```text
      Windows Registry Editor Version 5.00

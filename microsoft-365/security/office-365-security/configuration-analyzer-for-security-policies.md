@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何使用設定分析器，找出並修正低於標準防護和嚴格保護預設安全性原則的安全性原則。
-ms.openlocfilehash: 7d02a6f83ceb06eb56039b449890fd90712c76e5
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 5a57e16dcac6afee910ce546d3a40c2c9c669f2d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572534"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616149"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中保護原則的設定分析器
 
@@ -37,7 +37,7 @@ Security & 合規性中心的設定分析器提供一個集中位置，以找出
 設定分析器會分析下列類型的原則：
 
 - **Exchange Online Protection (EOP) 原則**：這包括使用 exchange online 信箱的 Microsoft 365 組織和獨立 EOP 組織，但沒有 exchange online 信箱：
-  
+
   - [反垃圾郵件原則](configure-your-spam-filter-policies.md)。
   - [反惡意程式碼原則](configure-anti-malware-policies.md)。
   - [EOP 反網路釣魚原則](set-up-anti-phishing-policies.md#spoof-settings)。
@@ -70,8 +70,8 @@ Security & 合規性中心的設定分析器提供一個集中位置，以找出
 
   **附註**：
 
-  - 將使用者新增至 Microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的「 **View-Only 組織管理**」角色群組也會提供該功能的唯讀存取權。
+  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 ## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>在安全性 & 規範中心使用設定分析器
 

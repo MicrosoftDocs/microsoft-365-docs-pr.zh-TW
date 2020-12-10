@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何使用郵件流程規則 (傳輸規則) 來識別及篩選大宗郵件 (在 Exchange Online Protection (EOP) 中) 的灰色郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 82a93cdc7375468748f241e2d15d729811095330
-ms.sourcegitcommit: 153f413402f93b79be421741f3b9fed318d6d270
+ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "48600306"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615633"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>在 EOP 中使用郵件流程規則來篩選大量電子郵件
 
@@ -39,7 +39,7 @@ ms.locfileid: "48600306"
 - 您必須已獲指派許可權，才能執行這些程式：
 
   - 在 Exchange Online 中，請參閱在 [Exchange online 中的功能許可權中](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions)的「郵件流程」專案。
-  
+
   - 在獨立 EOP 中，您需要傳輸規則角色，預設會指派給 OrganizationManagement、ComplianceManagement 和 RecordsManagement 角色。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - 若要在 Exchange Online 中開啟 EAC，請參閱 exchange [online 中的 exchange admin center](https://docs.microsoft.com/Exchange/exchange-admin-center)。 若要在獨立 EOP 中開啟 EAC，請參閱 [Exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
@@ -56,13 +56,13 @@ ms.locfileid: "48600306"
 
 - 在範例中用來識別大宗郵件的單字和文字模式清單並不詳盡;您可以視需要新增及移除專案。 不過，它們是一個很好的起點。
 
-- 在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼*之後*，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。
+- 在主旨或郵件的其他標頭欄位中搜尋字詞或文字模式，會發生在郵件已從 MIME 內容傳輸編碼方法進行解碼 *之後*，該編碼方法用來在 SMTP 伺服器之間傳送 ASCII 文字二進位訊息。您無法使用條件或例外狀況來搜尋主旨或郵件中其他標頭欄位的原始 (通常是 Base64) 編碼值。
 
 - 下列程式會將大宗郵件標記為您整個組織的垃圾郵件。 不過，您可以新增另一個條件，只將這些規則套用至特定的收件者，這樣您就可以在一些高度具有目標的使用者上使用嚴格篩選，而其餘的使用者 (通常會取得已註冊) 大量電子郵件的使用者，不會受到影響。
 
 ## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a>使用 EAC 來建立郵件流程規則，以篩選大量電子郵件
 
-1. 在 EAC 中，移至 [郵件流程]**** \> [規則]****。
+1. 在 EAC 中，移至 [郵件流程] \> [規則]。
 
 2. 按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) ，然後選取 [ **建立新的規則**]。
 
@@ -91,7 +91,7 @@ ms.locfileid: "48600306"
 
       若要編輯專案，請選取它，然後按一下 [ **編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 。 若要移除專案，請選取它，然後按一下 [ **移除** ![ 移除圖示] ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
-       完成後，按一下 [確定]****。
+       完成後，按一下 [確定]。
 
      - **主語或** \> 本文主旨或內文 **包含下列任何文字**：在出現的 [ **指定字詞或片語** ] 對話方塊中，輸入下列其中一個值，按一下 [ **新增**] ![ 圖示 ](../../media/ITPro-EAC-AddIcon.png) ，然後重複，直到您輸入所有值為止。
 
@@ -111,17 +111,17 @@ ms.locfileid: "48600306"
 
       若要編輯專案，請選取它，然後按一下 [ **編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 。 若要移除專案，請選取它，然後按一下 [ **移除** ![ 移除圖示] ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
-       完成後，按一下 [確定]****。
+       完成後，按一下 [確定]。
 
-   - **請執行下列**動作：選取 **[修改郵件**內容] \> 。 ** (SCL) 設定垃圾郵件信賴等級 **。 在出現的 [ **指定 SCL** ] 對話方塊中，設定下列其中一個設定：
+   - **請執行下列** 動作：選取 **[修改郵件** 內容] \> 。 **(SCL) 設定垃圾郵件信賴等級**。 在出現的 [ **指定 SCL** ] 對話方塊中，設定下列其中一個設定：
 
-     - 若要將郵件標示為 **垃圾**郵件，請選取 [ **6**]。 您為反垃圾郵件原則中的 **垃圾** 郵件篩選 verdicts 設定的動作會套用至郵件 (預設值會將 **郵件移至 [垃圾郵件] 資料夾**) 。
+     - 若要將郵件標示為 **垃圾** 郵件，請選取 [ **6**]。 您為反垃圾郵件原則中的 **垃圾** 郵件篩選 verdicts 設定的動作會套用至郵件 (預設值會將 **郵件移至 [垃圾郵件] 資料夾**) 。
 
      - 將郵件標示為 **高信賴度垃圾郵件** 選取 **9**。 您為反垃圾郵件原則中已設定 **高信賴垃圾郵件** 篩選 verdicts 的動作會套用至郵件 (預設值會將 **郵件移至 [垃圾郵件] 資料夾**) 。
 
     如需 SCL 值的詳細資訊，請參閱 [垃圾郵件信賴等級 (scl) 在 EOP 中](spam-confidence-levels.md)。
 
-   完成後，請按一下 [儲存]****。
+   完成後，請按一下 [儲存]。
 
 ## <a name="use-powershell-to-create-mail-flow-rules-that-filter-bulk-email"></a>使用 PowerShell 建立郵件流程規則，以篩選大量電子郵件
 
@@ -131,7 +131,7 @@ ms.locfileid: "48600306"
 New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPhrase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
 ```
 
-本範例會建立名為「大量電子郵件篩選-RegEx」的新規則，該規則使用主題中早期的正則運算式清單，將郵件設定為 **垃圾**郵件。
+本範例會建立名為「大量電子郵件篩選-RegEx」的新規則，該規則使用主題中早期的正則運算式清單，將郵件設定為 **垃圾** 郵件。
 
 ```powershell
 New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? src=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6

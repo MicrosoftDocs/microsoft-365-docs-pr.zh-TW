@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Microsoft cybersecurity 小組的最佳建議，用以實施安全性功能，以保護您的 Microsoft 365 環境。 '
-ms.openlocfilehash: d62db9206a98078ae5adaad220a7c9b53ff116cd
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 452ce2a303f02cadfcdcbe12310f2538d33a24e7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561692"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615801"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>安全性藍圖-前30天、90天和之後的頭等大事
 
@@ -77,7 +77,7 @@ ms.locfileid: "49561692"
 
 |適用範圍|工作|
 |---|---|
-|安全性管理|<ul><li>檢查 () 環境的建議動作安全得分 [https://securescore.office.com](https://securescore.office.com) 。</li><li>繼續定期查看 Microsoft 365 安全性中心、雲端 App 安全性和 SIEM 工具中的儀表板和報告。</li><li>尋找並執行軟體更新。</li><li>使用[Office 365 威脅情報](office-365-ti.md)) 中包含的[攻擊模擬器](attack-simulator.md) (，進行攻擊模擬，以進行 spear 網路釣魚、密碼噴塗和暴力密碼攻擊。</li><li>在 [調查] 索引標籤) 上，查看 Cloud App Security (中的內建報告，以尋找共用風險。</li><li>檢查 [合規性管理員](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) 以查看適用于貴組織 (的規章狀態，例如 GDPR、NIST 800-171) 。</li></ul>|
+|安全性管理|<ul><li>檢查 () 環境的建議動作安全得分 <https://securescore.office.com> 。</li><li>繼續定期查看 Microsoft 365 安全性中心、雲端 App 安全性和 SIEM 工具中的儀表板和報告。</li><li>尋找並執行軟體更新。</li><li>使用[Office 365 威脅情報](office-365-ti.md)) 中包含的[攻擊模擬器](attack-simulator.md) (，進行攻擊模擬，以進行 spear 網路釣魚、密碼噴塗和暴力密碼攻擊。</li><li>在 [調查] 索引標籤) 上，查看 Cloud App Security (中的內建報告，以尋找共用風險。</li><li>檢查 [合規性管理員](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager) 以查看適用于貴組織 (的規章狀態，例如 GDPR、NIST 800-171) 。</li></ul>|
 |威脅防護|針對系統管理員帳戶實作增強型防護： <ul><li>設定 PAWs) 管理活動的特殊許可權 [存取 (工作站](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) 。</li><li>設定 [AZURE AD 特權身分識別管理](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)。</li><li>設定安全性資訊和事件管理 (SIEM) 工具，從 Office 365、雲端 App 安全性和其他服務（包括 AD FS）收集記錄資料。 「審核記錄」只會將資料儲存在90天。 在 SIEM 工具中擷取這項資料，可讓您將資料儲存更長的時間。</li></ul>|
 |身分識別和存取管理|<ul><li>為所有使用者啟用並強制執行 MFA。</li><li>實施一組 [條件式存取和相關原則](microsoft-365-policies-configurations.md)。</li></ul>|
 |資訊保護| 改編和實作資訊保護原則。 這些資源包括範例： <ul><li>[GDPR 的 Office 365 資訊保護](https://aka.ms/o365gdpr)</li><li>[為小組設定三層保護](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> 在 Microsoft 365 中使用資料遺失防護原則和監控工具，以取得 Microsoft 365 中儲存的資料，而不是 Cloud App Security)  (。 <p> 使用 Cloud App Security 搭配 Microsoft 365 來執行高級警示功能 (不是資料遺失防護) 。|

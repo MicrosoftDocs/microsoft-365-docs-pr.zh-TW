@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 description: 透過設定電子郵件地址原則使用 PowerShell，瞭解如何選擇建立 Microsoft 365 群組時所使用的網域。
-ms.openlocfilehash: bb6137a3dfce17bc9c94648e5ea9e12ec2776195
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 1e56268c3994b1ac822869d154be826326039bfc
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377434"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612937"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>選擇建立 Microsoft 365 群組時要使用的網域
 
@@ -65,7 +65,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- 教職員所建立的群組 (**使用者已設定** 為 **教職員或電子郵件地址 ** 的使用者，在 faculty.groups.contoso.com 網域中包含 faculty.contoso.com) ) 。 請使用下列命令：
+- 教職員所建立的群組 (**使用者已設定** 為 **教職員或電子郵件地址** 的使用者，在 faculty.groups.contoso.com 網域中包含 faculty.contoso.com) ) 。 請使用下列命令：
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
@@ -119,5 +119,9 @@ Remove-EmailAddressPolicy -Identity StudentsGroups
 - 您可以為組織設定100電子郵件地址原則的上限。
     
 ## <a name="related-articles"></a>相關文章
+
+[共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[建立共同作業管理計畫](collaboration-governance-first.md)
 
 [在系統管理中心建立 Microsoft 365 群組](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)

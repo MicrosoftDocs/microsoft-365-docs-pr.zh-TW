@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
 description: 瞭解如何使用 Microsoft Defender for Office 365 方案2中的自動調查和回應功能，以加速偵測和解決已遭破壞之使用者帳戶的處理常式。
-ms.openlocfilehash: 80e4529f864d83d2a1711007f0f095de39955e68
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 19c9bad33263178f92c6fe523b44497cf38ebd53
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357904"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616725"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>利用自動調查和回應來處理已遭破壞的使用者帳戶
 
@@ -63,11 +63,11 @@ ms.locfileid: "49357904"
 
 ### <a name="view-and-investigate-restricted-users"></a>查看和調查限制的使用者
 
-您有幾個選項可供您流覽至限制的使用者清單。 例如，在安全性 & 規範中心，您可以前往「**威脅管理**」  >  **查看**  >  **限制的使用者**。 下列程式說明如何使用「 **警示** 」儀表板進行流覽，這是查看可能已觸發的各種警示的好方法。
+您有幾個選項可供您流覽至限制的使用者清單。 例如，在安全性 & 規範中心，您可以前往「 **威脅管理**」 \> **查看** \> **限制的使用者**。 下列程式說明如何使用「 **警示** 」儀表板進行流覽，這是查看可能已觸發的各種警示的好方法。
 
-1. 移至 [https://protection.office.com](https://protection.office.com) 並登入。
+1. 移至 <https://protection.office.com> 並登入。
 
-2. 在功能窗格中，選擇 [**警示**  >  **儀表板**]。
+2. 在功能窗格中，選擇 [ **警示** \> **儀表板**]。
 
 3. 在 [ **其他警示** ] 小工具中，選擇 [ **受限制的使用者**]。
 
@@ -81,7 +81,7 @@ ms.locfileid: "49357904"
 
 ### <a name="view-details-about-automated-investigations"></a>查看有關自動化調查的詳細資料
 
-當自動調查開始時，您可以在安全性 & 規範中心中查看其詳細資料和結果。 移至 **威脅管理**  >  **調查**，然後選取調查以查看其詳細資料。
+當自動調查開始時，您可以在安全性 & 規範中心中查看其詳細資料和結果。 移至 **威脅管理** \> **調查**，然後選取調查以查看其詳細資料。
 
 若要深入瞭解，請參閱 [查看調查的詳細資料](air-view-investigation-results.md)。
 

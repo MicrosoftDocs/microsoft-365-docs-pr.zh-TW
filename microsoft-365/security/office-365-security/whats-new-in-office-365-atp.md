@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: 01a5e374396b1f7ef79dff436cd9ecc4e0c4abf1
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357234"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615549"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新功能
 
@@ -34,7 +34,7 @@ ms.locfileid: "49357234"
 
 適用於：
 
-- [適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
+- [Microsoft Defender for Office 365](office-365-atp.md)
 
 本文列出最新版本 Microsoft Defender for Office 365 的新功能。 目前在預覽中的功能會以 **(預覽)** 表示。
 
@@ -56,7 +56,7 @@ ms.locfileid: "49357234"
 ## <a name="julyaugust-2020"></a>2020年7月/8 月
 
 - 體驗 Microsoft Defender for Office 365 Plan 1 或 Plan 2) [的搜尋體驗改進功能的增強功能](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (
-- [使用預先設定的安全性原則輕鬆套用建議設定](preset-security-policies.md) 
+- [使用預先設定的安全性原則輕鬆套用建議設定](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
 
@@ -71,7 +71,7 @@ ms.locfileid: "49357234"
   - Advanced NOT 篩選 (這些是包含不包含、不包含等的高級篩選選項 ) 
   - 精確的時間篩選 (日、小時、半小時) 
 
-- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在安全性 & 規範中心中，移至「**威脅管理**」  >  ****。 )  (Microsoft Defender for Office 365 方案 2) 
+- [ **事件** ] 小工具現在是「 **動作中心** 」小工具。  (若要查看您的安全性小元件，請在安全性 & 規範中心中，移至「 **威脅管理**」 \> ****。 )  (Microsoft Defender for Office 365 方案 2) 
 
 - [Microsoft 365 中的安全檔](safe-docs.md) **(預覽)**
 
@@ -105,7 +105,7 @@ ms.locfileid: "49357234"
 
 - [View a 仿冒 URLs 的資料，然後按一下 [判定](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender for Office 365 Plan 1 or Plan 2) 
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 方案1和方案2
 
 您知道 Microsoft Defender for Office 365 可提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 

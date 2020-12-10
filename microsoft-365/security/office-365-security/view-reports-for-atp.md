@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 在安全性 & 合規性中心尋找及使用 Microsoft Defender for Office 365 的報告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a237049c9ebbccf1c01feeb21129496e16d437b2
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 2818362eea4071430bb2c784ceb0ce0eeb970a79
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572486"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615573"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中，查看 Office 365 報表的 Defender
 
@@ -347,7 +347,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-**附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+**附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報告未顯示資料，該怎麼辦？
 
@@ -356,5 +356,5 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 ## <a name="related-topics"></a>相關主題
 
 [安全性與合規性中心內的智慧型報表和深入解析](reports-and-insights-in-security-and-compliance.md)
-  
+
 [ (Azure Active Directory 的角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何搭配 Microsoft 365 中使用網域金鑰識別郵件 (DKIM)，以確保目的地電子郵件系統信任從您自訂網域傳送的郵件。
-ms.openlocfilehash: 66f352b6c3a5d3b3beff3043a3f0d1a435d1e5d1
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: f8ae6334a078d635de069d2fe7af351ad42d8df3
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560881"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615357"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件
 
@@ -90,7 +90,7 @@ SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽�
    1. [透過 PowerShell 連線至 Office 365 工作負載](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (該 Cmdlet 來自 Exchange Online。)
    1. 執行下列命令：
 
-      ```powershell 
+      ```powershell
       Rotate-DkimSigningConfig -KeySize 2048 -Identity {Guid of the existing Signing Config}
       ```
 
@@ -131,7 +131,7 @@ SPF 會在郵件信封中新增資訊，但 DKIM 則會為郵件標頭中的簽�
 對於要在 DNS 中新增 DKIM 簽章的每個網域，您必須發佈兩個 CNAME 記錄。
 
 > [!NOTE]
-> 如果您還沒有閱讀完整的文章，則可能錯過了這份可節省時間的 PowerShell 連線資訊：[透過 PowerShell 連線至 Office 365 工作負載](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (該 Cmdlet 來自 Exchange Online。) 
+> 如果您還沒有閱讀完整的文章，則可能錯過了這份可節省時間的 PowerShell 連線資訊：[透過 PowerShell 連線至 Office 365 工作負載](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window)。 (該 Cmdlet 來自 Exchange Online。)
 
 執行下列命令以建立選取器記錄：
 
@@ -254,7 +254,7 @@ TTL:                3600
 
 如果您日後決定要新增另一個自訂網域，且您想要為新的網域啟用 DKIM，您必須為每個網域完成本文所述的步驟。 明確而言，請完成[手動設定 DKIM 時需執行哪些作業](use-dkim-to-validate-outbound-email.md#SetUpDKIMO365)中的所有步驟。
 
-## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>停用自訂網域 DKIM 簽署原則 
+## <a name="disabling-the-dkim-signing-policy-for-a-custom-domain"></a>停用自訂網域 DKIM 簽署原則
 <a name="DisableDKIMSigningPolicy"> </a>
 
 停用簽署原則並不會完全停用 DKIM。 一段時間後，Microsoft 365 會自動為您的網域套用預設的原則。 如需詳細資訊，請參閱 [DKIM 與 Microsoft 365 的預設行為](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)。
@@ -336,7 +336,7 @@ Return-Path: <communication@bulkemailprovider.com>
    > sender@**contoso.com**
 
    > d=**contoso.com**
-   
+
 ## <a name="identify-domains-that-do-not-send-email"></a>辨識出無法傳送電子郵件的網域
 
 組織應明確聲明網域是否不會透過這些網域的 DKIM 記錄中指定的 `v=DKIM1; p=` 來傳送電子郵件。 這建議您收受電子郵件伺服器並沒有網域的有效公用金鑰，且所有聲稱來自該網域的電子郵件都會遭到拒絕。 您應使用萬用字元 DKIM 為每個網欲和子網域執行此動作。

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 深入瞭解 Microsoft 365 群組、小組和 SharePoint 共同作業的規範選項。
-ms.openlocfilehash: 0383b0728d9b8ea12ce75de8bf0e250932d14ae5
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377530"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613627"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Microsoft 365 群組、小組和 SharePoint 共同作業的相容性選項
 
@@ -35,10 +35,10 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 ||保留聊天和訊息|[了解 Microsoft Teams 的保留原則](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)|
 |資訊分類|||
 ||分類群組和團隊|[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
-||自動分類敏感內容|[自動將敏感度標籤套用到內容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)|
+||自動分類敏感內容|[自動將敏感性標籤套用到內容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)|
 ||加密敏感內容|[使用敏感度標籤來套用加密以限制存取內容](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)|
 |資訊保護|||
-||避免機密資訊遺失|[資料外洩防護概觀](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) (英文)|
+||避免機密資訊遺失|[資料外洩防護概觀](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)|
 ||保護聊天中的機密資訊。|[資料遺失防護和 Microsoft 團隊](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)|
 ||定義組織的機密資訊|[自訂敏感性資訊類型](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)|
 |使用者區隔|||
@@ -74,13 +74,13 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 您可以根據您指定的準則，將 Microsoft 365 設定為自動將敏感度標籤套用至檔案和電子郵件，包括偵測敏感資訊類型或與 trainable 的分類器相符的模式。
 
-- [自動將敏感度標籤套用到內容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+- [自動將敏感性標籤套用到內容](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
 
 您可以使用敏感度標籤加密檔案，只允許具有解密及讀取這些檔案的許可權。
 
 - [使用敏感度標籤來套用加密以限制存取內容](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
 
-- [為小組設定安全性隔離](https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation)
+- [為團隊設定安全性隔離](https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation)
 
 其他資源：
 
@@ -91,7 +91,7 @@ Microsoft 365 提供全套工具，以在您的使用者共同作業時維持法
 
 DLP 原則可以防止在 SharePoint、Exchange 及小組之間意外共用敏感資訊。 您可以建立原則，指定要採取的動作 (例如依一組規則封鎖存取) 。
 
-- [資料外洩防護概觀](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) (英文)
+- [資料外洩防護概觀](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)
 
 當小組中的機密資訊包含機密資訊的郵件時，該小組可以協助保護小組聊天和通道郵件中的機密資訊。
 
@@ -113,8 +113,10 @@ DLP 原則可以防止在 SharePoint、Exchange 及小組之間意外共用敏�
 
 ## <a name="related-topics"></a>相關主題
 
+[共同作業管理規劃逐步](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+
+[建立共同作業管理計畫](collaboration-governance-first.md)
+
 [Exchange Online 的安全性和合規性](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 
 [保護資訊](https://docs.microsoft.com/microsoft-365/compliance/protect-information)
-
-

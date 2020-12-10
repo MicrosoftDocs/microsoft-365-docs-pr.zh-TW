@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在 Exchange Online Protection (EOP) 中查看有關反垃圾郵件保護的常見問題及解答。
-ms.openlocfilehash: d2505eea572e512b306cf26c7a57d1dc1b705c0b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 21c70f1942703b8e5f3f4d96b136aff46afcc32b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844461"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615429"
 ---
 # <a name="anti-spam-protection-faq"></a>反垃圾郵件保護常見問題集
 
@@ -105,9 +105,9 @@ Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件�
 
 是。 雖然我們建議您將 MX 記錄指向 Microsoft，但我們意識到有正當的商業原因可將電子郵件路由傳送至 Microsoft first 以外的地方。
 
-- **輸入** ：變更您的 MX 記錄以指向協力廠商提供者，然後將郵件重新導向至 EOP 進行其他處理。 如需詳細資訊，請參閱 [在 Exchange Online 中針對連接器的增強型篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+- **輸入**：變更您的 MX 記錄以指向協力廠商提供者，然後將郵件重新導向至 EOP 進行其他處理。 如需詳細資訊，請參閱 [在 Exchange Online 中針對連接器的增強型篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-- **輸出** ：設定從 Microsoft 365 到目的地協力廠商提供者的智慧主機路由。
+- **輸出**：設定從 Microsoft 365 到目的地協力廠商提供者的智慧主機路由。
 
 ## <a name="does-microsoft-have-any-documentation-about-how-i-can-protect-myself-from-phishing-scams"></a>Microsoft 是否有任何有關如何保護自己免受網頁仿冒騙局的保護的檔？
 
@@ -124,7 +124,7 @@ Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件�
 - **來源電子郵件網域應在 DNS 中解析。**
 
   例如，如果寄件者為 user@fabrikam，網域 fabrikam 會解析為 IP 位址192.0.43.10。
-  
+
   如果傳送端網域在 DNS 中沒有 A 記錄與 MX 記錄，則無論郵件的內容是否為垃圾郵件訊息，此服務都會透過其較高風險傳遞集區來路由傳送郵件。 如需較高風險傳遞集區的詳細資訊，請參閱[高風險傳遞集區的外寄郵件](high-risk-delivery-pool-for-outbound-messages.md) (部分機器翻譯)。
 
 - **輸出郵件 eserver 應有反向 DNS (PTR) 專案。**
@@ -139,7 +139,7 @@ Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件�
 
   SPF 記錄是一項驗證機制，可驗證從某個網域傳送的郵件是否真的來自該網域而不是詐騙郵件。如需 SPF 記錄的詳細資訊，請參閱下列連結：
 
-  [設定 SPF 以協助防止詐騙 ](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  [設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   [網域常見問題集](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain) (部分機器翻譯)
 
@@ -155,11 +155,11 @@ Exchange Online 客戶：[在 Exchange Online 中監控、報告和執行郵件�
 
   郵件內文應明確指出所提供的優惠、服務或產品。 例如，如果寄件者為 Contoso 公司寄出大量郵件，其電子郵件的 [寄件者] 與 [主旨] 應類似如下：
 
-  > From:marketing@contoso.com <br/> 主旨：聖誕節商品最新型錄！
+  > From:marketing@contoso.com <br> 主旨：聖誕節商品最新型錄！
 
   以下是說明性不足的錯誤範例：
 
-  > From:user@hotmail.com <br/> 主旨：型錄
+  > From:user@hotmail.com <br> 主旨：型錄
 
 - **如果傳送大量郵件給眾多收件者，且郵件屬於電子報格式，則應於郵件的最下方提供取消訂閱的方式。**
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '瞭解流量分析如何連接至 API，並提供各種 Microsoft 365 服務的每月使用趨勢。  '
-ms.openlocfilehash: 9d13d979e64a68aaffb3582ad6b09ab901843cd4
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: d7b3e7e9467a57f913f069c48249e82b5958aabb
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841372"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611445"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 使用情況分析資料模型
 
@@ -215,8 +215,8 @@ Microsoft 365 流量分析會連接至公開多維度資料模型的 API。 APIs
 |DocumentCount  <br/> |在時間範圍結束時存在網站上的文件總數。  <br/> |
 |Diplansed  <br/> |在時間範圍結束時，所有網站上加總的已使用儲存空間總計。  <br/> |
 |ActivityType  <br/> |記錄各種類型檔案活動 (任何/作用中的檔案/共用 EXT 的檔案/INT/同步處理的檔案) 的網站數目。  <br/> 代表所執行的任何檔案活動。  <br/> |
-|SitesWithOwnerActivities  <br/> |作用中網站的數目，其中網站擁有者會在自己的網站上執行特定的檔案活動。  <br/> |
-|SitesWithNonOwnerActivities  <br/> |整個月加總的作用中網站數目，其中網站擁有者以外的使用者會在網站上執行特定的檔案活動。  <br/> |
+|SitesWithOwnerActivities  <br/> |作用中網站的數目，其中網站擁有者會在自己的網站上執行特定的檔案活動。 您可以從 PowerShell 命令 **get-sposite** 取得網站擁有者。 這是負責網站的人員。   <br/> |
+|SitesWithNonOwnerActivities  <br/> |整個月加總的作用中網站數目，其中網站擁有者以外的使用者會在網站上執行特定的檔案活動。 您可以從 PowerShell 命令 **get-sposite** 取得網站擁有者。 這是負責網站的人員。 <br/> |
 |ActivityTotalSites  <br/> |在時間範圍期間記錄任何活動的網站數目。如果網站的活動在時間範圍內稍早的時候，而且在時間範圍結束時遭到刪除，則仍然會將該網站計入該時間範圍內的作用中網站總數。  <br/> |
 |Timeframe  <br/> |此欄有日期值。當做行事曆表格的多對一關係使用。  <br/> |
 |Content Date  <br/> |如果時間範圍顯示目前月份，此值將代表資料在目前月份可供使用的最晚日期。  <br/> 如果時間範圍顯示上個月，此值將代表時間範圍月份的最後一個日期。  <br/> |

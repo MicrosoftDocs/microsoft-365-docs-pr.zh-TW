@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文提供將電子郵件傳送至 Microsoft 365 收件匣之問題的疑難排解資訊 & 大量郵遞至 Microsoft 365 客戶的最佳作法。
-ms.openlocfilehash: 895f2651529cd46968d053fefac10cb22b6a5d86
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568551"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615404"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>疑難排解傳送至 Microsoft 365 的郵件
 
@@ -92,11 +92,11 @@ EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exch
 
 正確：
 
-> 寄件者： marketing@shoppershandbag.com <br/> 主旨：耶誕節季節的更新目錄！
+> 寄件者： marketing@shoppershandbag.com <br> 主旨：耶誕節季節的更新目錄！
 
 不正確：
 
-> 寄件者： someone@outlook.com <br/> 主旨：型錄
+> 寄件者： someone@outlook.com <br> 主旨：型錄
 
 讓使用者更輕鬆地知道您是誰和您正在做什麼時，您將無法透過大多數垃圾郵件篩選器進行傳遞的難度。
 

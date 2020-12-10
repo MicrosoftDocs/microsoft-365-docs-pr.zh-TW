@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Office 365 的安全性，從 EOP 到 Defender for Office 365 方案1和2，Standard 與 Strict 安全性設定等等。 瞭解您擁有的內容，以及如何保護您的屬性。
-ms.openlocfilehash: 008488149a403fdafef9de0b0f64a9a43616debe
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 84d7dcfc68ce78bfde92f3d7096cd4104355ce94
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357752"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616245"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全性概述
 
@@ -124,16 +124,16 @@ Microsoft Defender for Office 365 P1 也會新增 [*即時* 偵測] *，以供�
 
 |適用于 Office 的 Defender 365 方案1|適用于 Office 的 Defender 365 方案2|
 |---|---|
-|設定、保護和偵測功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全連結](atp-safe-links.md)</li><li>[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)</li><li>[在 Office 365 的 Defender 中的反網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[即時偵測](threat-explorer.md)</li></ul>|Office 365 的 Defender 方案1功能<br/>--- 以及 ---<br/>自動化、調查、補救和教育功能：</li><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](office-365-air.md)</li><li>[攻擊模擬器](attack-simulator.md)</li></ul>|
+|設定、保護和偵測功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全連結](atp-safe-links.md)</li><li>[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)</li><li>[在 Office 365 的 Defender 中的反網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[即時偵測](threat-explorer.md)</li></ul>|Office 365 的 Defender 方案1功能 <p> --- 以及 --- <p> 自動化、調查、補救和教育功能： <ul><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](office-365-air.md)</li><li>[攻擊模擬器](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft Defender for Office 365 方案2隨附于 Office 365 E5、Office 365 A5 和 Microsoft 365 E5。
 
-- 適用於 Office 365 的 Microsoft Defender 方案 1 隨附於 Microsoft 365 商務進階版。
+- Microsoft Defender for Office 365 方案1隨附于 Microsoft 365 商務版 Premium。
 
 - Microsoft Defender for Office 365 Plan 1 和 Defender for Office 365 方案2每個功能都可作為特定訂閱的附加元件。 若要深入瞭解，您可以 [在 Microsoft Defender For Office 365 方案](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)中提供另一個連結功能可用性。
 
-- [安全文件](safe-docs.md)功能僅可供具備 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權 (未包含在適用於 Office 365 的 Microsoft Defender 方案中) 的使用者使用。
+- 「 [安全檔](safe-docs.md) 」功能僅適用于使用 Microsoft 365 E5 或 Microsoft 365 e5 安全性授權的使用者 (未包含在 microsoft Defender for Office 365 方案) 中。
 
 - 如果您目前的訂閱不包含 Microsoft Defender for Office 365，而您想要使用它，請 [聯繫我們的銷售人員開始試用版](https://go.microsoft.com/fwlink/p/?LinkId=518644)，並瞭解在您的組織中，microsoft Defender for office 365 如何運作。
 

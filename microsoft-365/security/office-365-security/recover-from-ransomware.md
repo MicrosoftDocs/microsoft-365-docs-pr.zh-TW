@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Microsoft 365 系統管理員可以瞭解如何從勒索軟體的攻擊復原。
-ms.openlocfilehash: a1369e64821902e3c2a3061acd1bbebeeb6c85ac
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: ad3f044e338abeb56046538bdda8df7b8510be0e
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357094"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615897"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>從 Microsoft 365 復原勒索軟體攻擊
 

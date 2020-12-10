@@ -1,12 +1,13 @@
 ---
-title: 特殊權限存取管理
-f1.keywords:
-- NOCSH
+title: 了解特殊權限存取管理
+description: 本文提供 Microsoft 365 中的「特權存取管理」（包括 (FAQs) 的常見問題解答）的概述。
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: overview
+f1.keywords:
+- NOCSH
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -19,16 +20,14 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
-ms.assetid: ''
-description: 本文提供 Microsoft 365 中的「特權存取管理」（包括 (FAQs) 的常見問題解答）的概述。
-ms.openlocfilehash: a1bcf1fbe767b4657be8a8ebcc8bf7b101c498d8
-ms.sourcegitcommit: 79a21583a52aedd06317bbcabd8be40663379dec
+ms.openlocfilehash: dc7c6807e8c89b4146784e5be7f57472777a4c84
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "48341231"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613327"
 ---
-# <a name="privileged-access-management"></a>特殊權限存取管理
+# <a name="learn-about-privileged-access-management"></a>了解特殊權限存取管理
 
 「特權存取管理」可讓您透過 Office 365 中的版權管理工作進行精細存取控制。 它可協助保護您的組織，避免因使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。 「特權存取管理」要求使用者要求即時存取，以透過高範圍和時間限制的核准工作流程來完成提升和特權的工作。 這項設定可讓使用者有足夠的存取權，而不會影響敏感性資料或關鍵設定設定的暴露。 啟用 Microsoft 365 中的「特殊許可權存取管理」可讓您的組織以零擁有的許可權運作，並提供防禦受影響的系統管理存取弱點。
 
@@ -40,7 +39,7 @@ ms.locfileid: "48341231"
 
 ![Microsoft 365 中的分層保護](../media/pam-layered-protection.png)
 
-**在工作層**級定義及設定限制的許可權，而 Azure AD 許可權身分識別管理會以執行多項工作的能力，在**角色**層級套用保護。 Azure AD 特權身分識別管理主要允許管理 AD 角色和角色群組的存取，而 Microsoft 365 中的特殊許可權存取管理則只適用于任務層級。
+**在工作層** 級定義及設定限制的許可權，而 Azure AD 許可權身分識別管理會以執行多項工作的能力，在 **角色** 層級套用保護。 Azure AD 特權身分識別管理主要允許管理 AD 角色和角色群組的存取，而 Microsoft 365 中的特殊許可權存取管理則只適用于任務層級。
 
 - **在已使用 AZURE AD 特權身分識別管理的情況下啟用特殊許可權存取管理：** 新增特殊許可權存取管理可提供另一個細微的保護和核查功能層級的許可權，以存取 Microsoft 365 資料。
 

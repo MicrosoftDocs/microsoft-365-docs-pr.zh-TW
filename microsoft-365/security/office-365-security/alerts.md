@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 瞭解如何使用 Office 365 安全性 & 規範中心中的 [提醒] 功能，以查看及管理提醒，包括管理高級提醒。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a29da0a76ff1b681c87182ff55b787327a969607
-ms.sourcegitcommit: 89f56c3e0b619a4700a75a21927d9ffc90658632
+ms.openlocfilehash: a40e880315b49620c372cf09416457c1bcaa00e7
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48984885"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615045"
 ---
 # <a name="alerts-in-the-security--compliance-center"></a>安全性 & 規範中心的警示
 
@@ -50,7 +50,7 @@ ms.locfileid: "48984885"
 
 1. 使用您的公司或學校帳戶登入。
 
-2. 按一下左上角的應用程式啟動器，然後按一下 [ **安全性 & 合規性** ]。
+2. 按一下左上角的應用程式啟動器，然後按一下 [ **安全性 & 合規性**]。
 
    找不到您要的 App 嗎？請從應用程式啟動器選取 [所有 App] 以查看依字母順序排序的可用 Office 365 App 清單。您可從該處搜尋特定的 App。
 

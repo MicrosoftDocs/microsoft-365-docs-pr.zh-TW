@@ -3,7 +3,7 @@ title: 為團隊設定高敏感性資料保護
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何為團隊部署高敏感性資料保護。
-ms.openlocfilehash: 3c68e6690d9fdab28a5dd1369876bec5b3fd9bc7
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: ad1cf437bdbe3bd7b25347bb49698314097462ab
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528191"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612949"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>為團隊設定高敏感性資料保護
 
@@ -58,7 +58,7 @@ ms.locfileid: "46528191"
 1. 開啟 [Microsoft 365 合規性中心](https://compliance.microsoft.com)。
 2. 在 **[解決方案]** 底下，按一下 **[資訊保護]**。
 3. 按一下 **[建立標籤]**。
-4. 為標籤命名。 我們建議命名為**敏感度**，但如果有已經使用的名稱，則可以選擇不同名稱。
+4. 為標籤命名。 我們建議命名為 **敏感度**，但如果有已經使用的名稱，則可以選擇不同名稱。
 5. 新增工具提示，然後按 **[下一步]**。
 6. 在 **[加密]** 頁面上，按 **[下一步]**。
 7. 如果您想要將頁首、頁尾或浮水印自動新增至以此標籤分類的檔案，請在 **[內容標記]** 頁面上開啟內容標記。
@@ -100,7 +100,7 @@ ms.locfileid: "46528191"
 
 每次使用敏感度標籤建立新的團隊時，都要在 SharePoint 中進行兩個步驟：
 
-- 在 SharePoint 系統管理中心內更新網站的來賓共用設定，使其符合您在建立標籤時所選擇的設定，並將預設的共用連結更新為*特定人員*。
+- 在 SharePoint 系統管理中心內更新網站的來賓共用設定，使其符合您在建立標籤時所選擇的設定，並將預設的共用連結更新為 *特定人員*。
 - 更新網站本身的網站共用設定以防止成員共用網站。
 
 ### <a name="site-guest-sharing-settings"></a>網站的來賓共用設定

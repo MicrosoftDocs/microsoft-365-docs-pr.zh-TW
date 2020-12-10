@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 系統管理員可以瞭解如何使用隔離標記來控制使用者可對其隔離郵件執行的動作。
-ms.openlocfilehash: 68f28e2dff3bdeada2685ef6806489f5e57f5daf
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572666"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616005"
 ---
 # <a name="quarantine-tags"></a>隔離標記
 
@@ -161,7 +161,9 @@ New-QuarantineTag -Name NoAccess -EndUserQuarantinePermissionsValue 0
 若要使用 _EndUserQuarantinePermissionsValue_ 參數建立隔離標記，請執行下列步驟：
 
 答： 使用 **QuarantinePermissions 指令程式** ，將隔離權限物件儲存在變數中。
-<br/>
+
+<p>
+
 B。 使用此變數做為 **QuarantineTag** 命令中的 _EndUserQuarantinePermissions_ 值。
 
 ##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>步驟 A：將隔離權限物件儲存在變數中
@@ -246,14 +248,14 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 2. 尋找並選取要編輯的現有反垃圾郵件原則，或建立新的反垃圾郵件原則。
 
 3. 在 [原則詳細資料] 浮出視窗中，展開 [ **垃圾郵件和大量動作** ] 區段。
-  
+
 4. 如果您已針對可用垃圾郵件篩選判定的動作選取 [ **隔離郵件** ]，則可以使用 [套用 **隔離原則** 標籤] 方塊，為該判定選取隔離標記。
 
    **附注**：當您建立新的原則時，垃圾郵件篩選判定的空白隔離標籤值會指出使用該判定的預設隔離標籤。 當您後來編輯原則時，空白值會以實際的預設隔離標記名稱取代，如上表所述。
-  
+
    ![反垃圾郵件原則中的隔離標記選擇](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. 完成後，按一下 [儲存]。
+5. 完成後，按一下 **[儲存]**。
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>在 PowerShell 中的反垃圾郵件原則中指派隔離標記
 
@@ -516,7 +518,7 @@ Remove-QuarantineTag -Identity "<TagName>"
 - **隔離的郵件詳細資料**：
   - 已啟用許可權：「 **發行訊息** 」按鈕可用。
   - 已停用許可權：無法使用「 **發行訊息** 」按鈕。
-  
+
 - **使用者垃圾郵件通知**：
   - 已啟用許可權：「 **發行** 」按鈕可用。
   - 已停用許可權：無法使用「 **發行** 」按鈕。

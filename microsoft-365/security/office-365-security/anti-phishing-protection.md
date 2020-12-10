@@ -20,12 +20,12 @@ ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection 中的反網路釣魚防護功能 (EOP) 和 Microsoft Defender for Office 365。
-ms.openlocfilehash: 51c539a47f1c137dbacbfaaf63212e1bb115860c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5b175a252f95c62a40348a78e694628ee58488bd
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844509"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614987"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚保護
 
@@ -48,21 +48,21 @@ ms.locfileid: "48844509"
 
 EOP (，也就是沒有 Microsoft Defender for Office 365) 的 Microsoft 365 組織，包含的功能可協助您保護您的組織免受網路釣魚威脅：
 
-- **詐騙情報** ：檢閱來自內部和外部網域中寄件者的詐騙郵件，並允許或封鎖那些寄件者。 如需詳細資訊，請參閱 [在 EOP 中設定欺騙智慧](learn-about-spoof-intelligence.md)。
+- **詐騙情報**：檢閱來自內部和外部網域中寄件者的詐騙郵件，並允許或封鎖那些寄件者。 如需詳細資訊，請參閱 [在 EOP 中設定欺騙智慧](learn-about-spoof-intelligence.md)。
 
-- **EOP 中的反網路釣魚原則** ：開啟或關閉哄騙情報、在 Outlook 中開啟或關閉未驗證的寄件者識別，以及指定封鎖的寄件者的動作， (移至 [垃圾郵件] 資料夾或隔離) 。 如需詳細資訊，請參閱 [CONFIGURE EOP 中的反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
+- **EOP 中的反網路釣魚原則**：開啟或關閉哄騙情報、在 Outlook 中開啟或關閉未驗證的寄件者識別，以及指定封鎖的寄件者的動作， (移至 [垃圾郵件] 資料夾或隔離) 。 如需詳細資訊，請參閱 [CONFIGURE EOP 中的反網路釣魚原則](configure-anti-phishing-policies-eop.md)。
 
-- **隱含電子郵件驗證** ： EOP 可增強內送)  (電子郵件的標準電子郵件 [DMARC](use-dmarc-to-validate-email.md) [驗證檢查](set-up-spf-in-office-365-to-help-prevent-spoofing.md)，包括發 [件人信譽](use-dkim-to-validate-outbound-email.md)、寄件者記錄、收件者記錄、行為分析和其他高級技巧，以協助識別偽造的寄件者。 如需詳細資訊，請參閱 [Microsoft 365 中的電子郵件驗證](email-validation-and-authentication.md)。
+- **隱含電子郵件驗證**： EOP 可增強內送)  (電子郵件的標準電子郵件 [](use-dmarc-to-validate-email.md) [驗證檢查](set-up-spf-in-office-365-to-help-prevent-spoofing.md)，包括發 [件人信譽](use-dkim-to-validate-outbound-email.md)、寄件者記錄、收件者記錄、行為分析和其他高級技巧，以協助識別偽造的寄件者。 如需詳細資訊，請參閱 [Microsoft 365 中的電子郵件驗證](email-validation-and-authentication.md)。
 
 ## <a name="additional-anti-phishing-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的其他反網路釣魚保護
 
 Microsoft Defender for Office 365 包含更多和更高級的反網路釣魚功能：
 
-- **Microsoft Defender For Office 365 中的反網路釣魚原則** ：建立新的自訂原則、設定反模仿設定 (保護使用者和網域不會受到模擬) 、信箱智慧設定，以及可調整的高級網路釣魚臨界值。 如需詳細資訊，請參閱 [Configure Microsoft Defender For Office 365 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。 如需 EOP 與 Office 365 的 Defender 中的反網路釣魚原則之間差異的詳細資訊，請參閱 [Microsoft 365 中的反網路釣魚原則](set-up-anti-phishing-policies.md)。
+- **Microsoft Defender For Office 365 中的反網路釣魚原則**：建立新的自訂原則、設定反模仿設定 (保護使用者和網域不會受到模擬) 、信箱智慧設定，以及可調整的高級網路釣魚臨界值。 如需詳細資訊，請參閱 [Configure Microsoft Defender For Office 365 中的反網路釣魚原則](configure-atp-anti-phishing-policies.md)。 如需 EOP 與 Office 365 的 Defender 中的反網路釣魚原則之間差異的詳細資訊，請參閱 [Microsoft 365 中的反網路釣魚原則](set-up-anti-phishing-policies.md)。
 
-- **即時檢視** ：機器學習和其他試探法識別及分析與整個服務和組織有關之協同網頁網路攻擊的相關訊息。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的 [市場即時檢視](campaigns.md)]。
+- **即時檢視**：機器學習和其他試探法識別及分析與整個服務和組織有關之協同網頁網路攻擊的相關訊息。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的 [市場即時檢視](campaigns.md)]。
 
-- **攻擊模擬器** ：系統管理員可以建立虛假的網路釣魚郵件，並以教育工具形式傳送給內部使用者。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的攻擊模擬器](attack-simulator.md)。
+- **攻擊模擬器**：系統管理員可以建立虛假的網路釣魚郵件，並以教育工具形式傳送給內部使用者。 如需詳細資訊，請參閱 [Microsoft Defender For Office 365 中的攻擊模擬器](attack-simulator.md)。
 
 ## <a name="other-anti-phishing-resources"></a>其他反網路釣魚資源
 
