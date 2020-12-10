@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 使用者可以了解如何在 Exchange Online Protection (EOP) 中查看和管理收到的隔離郵件。
-ms.openlocfilehash: 48c727c442ee6f861499f1a72c687f7b3457c594
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 038d3326df2572f792f1cfc7efa6ad6d03e0a602
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130848"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611361"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>在 EOP 尋找及釋出隔離的郵件
 
@@ -87,7 +87,7 @@ ms.locfileid: "49130848"
      - **反網路釣魚原則**
      - **託管的內容篩選原則** (反網路釣魚原則)
 
-   若要清除篩選，請按一下 [清除 **]**。 若要隱藏 [篩選] 飛出視窗，再按一下 [篩選]。
+   若要清除篩選，按一下 [清除]。 若要隱藏 [篩選] 飛出視窗，再按一下 [篩選]。
 
 4. 使用 [結果排序依據] (預設為 [郵件識別碼] 按鈕) 和對應值來尋找特定郵件。 不支援萬用字元。 您可以依下列值進行搜尋：
 
@@ -148,8 +148,6 @@ ms.locfileid: "49130848"
 - **預覽郵件**：在出現的飛出窗格中，選擇下列其中一個選項：
   - **原始碼檢視**：顯示已停用所有連結的郵件內文 HTML 版本。
   - **文字檢視**：以純文字顯示郵件內文。
-
-- **下載郵件**：在出現的飛出窗格中，選取 [我了解下載此郵件的風險] 以使用 .eml 格式儲存郵件的本機複本。
 
 - **從隔離區中移除**：當您在出現的警告中按一下 [是] 之後，郵件就會立即遭到刪除。
 

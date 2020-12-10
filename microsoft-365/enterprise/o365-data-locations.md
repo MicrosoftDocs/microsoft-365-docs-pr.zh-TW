@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 判斷 Microsoft 365 客戶資料的全球儲存位置
-ms.openlocfilehash: 6ad35082cbed602325e2a32edb825a17b5cb9f4a
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 4b1e0d30d37ec9bc7a333216854e8eb602e07cc1
+ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376512"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "49519724"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -29,7 +29,7 @@ Note to new owner: Links in the Notes and FAQ sections need to be added from the
 
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 客戶資料的儲存位置
 
-下表顯示 Microsoft 365 服務的待用客戶資料在所有 Microsoft 的全球雲端位置中所儲存的位置。展開您的帳單地址所在國家/地區的位置，以找出每項服務的客戶資料將儲存的位置。
+下表顯示針對所有 Microsoft 的全球雲端位置的 Microsoft 365 服務，客戶資料待用儲存的所在位置。 展開您的帳單地址所在國家/地區的位置，以找出每個服務的客戶資料將儲存的位置。
 
 如果您的企業位於歐盟，請參閱 [歐盟的資料位置](EU-data-storage-locations.md) 以取得詳細資訊。 
 
@@ -143,7 +143,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | 英國 | 杜倫、倫敦、卡地夫 |
 | 美國 |  博伊頓、夏安、芝加哥、德梅因、昆西、聖安東尼奧、聖塔克拉拉、聖荷西 |
 
-新 Microsoft 365 租用戶會預設為根據與該租用戶的第一個訂閱相關聯之帳單地址上的國家/地區的地區。 若要確認現有 Office 365 服務客戶資料的儲存位置，請在 Office 365 系統管理中心中檢視租用戶特定資料位置資訊，其位於 [設定] | [組織設定檔] | [資料位置] 卡。 或者，您可以從下列清單展開公司所在的國家/地區，以找出若您今天開始使用 Microsoft 365 服務，將會儲存客戶資料的位置。
+新 Microsoft 365 租用戶會預設為根據與該租用戶的第一個訂閱相關聯之帳單地址上的國家/地區的地區。 若要確認現有 Office 365 服務客戶資料的儲存位置，請在 Office 365 系統管理中心中檢視租用戶特定資料位置資訊，其位於 [設定] | [組織設定] | [組織設定檔] | [資料位置] 卡。 或者，您可以從下列清單展開公司所在的國家/地區，以找出若您今天開始使用 Microsoft 365 服務，將會儲存客戶資料的位置。
 
 ## <a name="afghanistan"></a>阿富汗
 <details><summary>按一下以展開</summary><p>
@@ -179,7 +179,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -203,7 +203,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -227,7 +227,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -275,7 +275,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -299,7 +299,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -563,7 +563,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -635,7 +635,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -707,7 +707,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -827,7 +827,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -851,7 +851,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1019,7 +1019,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1043,7 +1043,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1091,7 +1091,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1139,7 +1139,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1187,7 +1187,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1211,7 +1211,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1355,7 +1355,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1379,7 +1379,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1403,7 +1403,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1475,7 +1475,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1619,7 +1619,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1715,7 +1715,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1763,7 +1763,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1787,7 +1787,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1835,7 +1835,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -1883,7 +1883,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2075,7 +2075,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2099,7 +2099,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2171,7 +2171,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2195,7 +2195,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2363,7 +2363,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2387,7 +2387,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2411,7 +2411,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2507,7 +2507,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2531,7 +2531,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2627,7 +2627,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2699,7 +2699,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2747,7 +2747,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2771,7 +2771,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2867,7 +2867,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2891,7 +2891,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -2939,7 +2939,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3011,7 +3011,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3035,7 +3035,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3131,7 +3131,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3155,7 +3155,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3179,7 +3179,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3203,7 +3203,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3299,7 +3299,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3323,7 +3323,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3395,7 +3395,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3491,7 +3491,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3515,7 +3515,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3539,7 +3539,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3587,7 +3587,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3611,7 +3611,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3659,7 +3659,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3707,7 +3707,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3731,7 +3731,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3779,7 +3779,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3971,7 +3971,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -3995,7 +3995,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4115,7 +4115,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4427,7 +4427,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4475,7 +4475,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4523,7 +4523,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4547,7 +4547,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4571,7 +4571,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4763,7 +4763,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4787,7 +4787,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4811,7 +4811,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4835,7 +4835,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4859,7 +4859,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4883,7 +4883,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -4907,7 +4907,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5051,7 +5051,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5195,7 +5195,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5219,7 +5219,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5339,7 +5339,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5411,7 +5411,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5507,7 +5507,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5531,7 +5531,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5651,7 +5651,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5675,7 +5675,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5939,7 +5939,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5963,7 +5963,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -5987,7 +5987,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |
@@ -6011,7 +6011,7 @@ Microsoft 不會將 Intune 客戶待用資料儲存在所述的地理位置之�
 | SharePoint Online | 全球地理位置 1 - EMEA |
 | 商務用 Skype | 全球地理位置 1 - EMEA |
 | Microsoft Teams | 全球地理位置 1 - EMEA |
-| Office Online &amp; Mobile | 全球地理位置 1 - EMEA |
+| Office Online &amp; 行動裝置 | 全球地理位置 1 - EMEA |
 | EOP | 全球地理位置 1 - EMEA |
 | Intune | 全球地理位置 1 - EMEA |
 | MyAnalytics | 全球地理位置 1 - EMEA |

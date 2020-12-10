@@ -2,6 +2,7 @@
 title: 設定 SharePoint Syntex
 ms.author: mikeplum
 author: MikePlumleyMSFT
+ms.reviewer: ssquires
 manager: serdars
 audience: admin
 ms.topic: article
@@ -10,12 +11,12 @@ ms.collection: enabler-strategic
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: dfbcc8e41a28e3107b58ac6b8d471e3a2a08d036
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 1abcc71200642de3f74a92e83299e079ffffb038
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087568"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604261"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -23,12 +24,12 @@ ms.locfileid: "49087568"
 
 開始之前，請先考慮下列事項：
 
-- Which SharePoint sites will you enable form processing? All of them, some, or select sites?
+- 哪些 SharePoint 網站會啟用表單處理？ 所有網站、部分或選取的網站嗎？
 - 您的預設內容中心名稱為何？
 
 您可以在 Microsoft 365 系統管理中心初次設定之後變更您的設定。
 
-Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you need to make considerations about the following names of:
+設定之前，請務必針對您環境中的設定和設定內容理解的最佳方式進行規劃。 例如，您需要考慮下列名稱：
 
 - 您想要啟用表單處理的 SharePoint 網站 - 所有網站、部分或選取的網站
 - 您的內容中心和主要網站系統管理員的名稱
@@ -51,7 +52,7 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
     > [!div class="mx-imgBorder"]
     > ![開始設定](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. On the **Configure Form Processing** page, you can choose if you want to let users be able to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
+4. 在 **[設定表單處理]** 頁面上，您可以選擇是否要讓使用者能夠在特定 SharePoint 文件庫中建立表單處理模型。 您可以在 [文件庫] 功能區中使用功能表選項，在啟用此功能的 SharePoint 文件庫中 **[建立表單處理模型]**。
  
      針對 **哪個 SharePoint 文件庫應顯示建立表單處理模型的選項**，您可以選取：</br>
       - **所有 SharePoint 文件庫**，讓組織中的所有 SharePoint 文件庫皆可使用。</br>
@@ -68,18 +69,18 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 
     1. 在 **[網站名稱]** 中，輸入您要給予內容中心網站的名稱。
     
-    1. The **Site address** will show the URL for your site, based on what you selected for the site name. If you want to change it, click **Edit**.
+    1. **[網站位址]** 會根據您為網站名稱所選取的內容，顯示網站的 URL。 如果您想要變更，請按一下 **[編輯]**。
 
        > [!div class="mx-imgBorder"]
        > ![建立內容中心](../media/content-understanding/admin-cu-create-cc.png)</br>
 
        選取 **[下一步]**。
 
-6. On the **Review and finish** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
+6. 在 **[檢閱並完成]** 頁面上，您可以查看您選取的設定，並選擇進行變更。 如果您對您的選擇感到滿意，請選取 **[啟用]**。
 
 7. 在 [確認] 頁面上，按一下 **[完成]**。
 
-8. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
+8. 您將會回到 **[自動化內容瞭解]** 頁面。 在此頁面上，您可以選取 **[管理]**，以對設定進行任何變更。 
 
 ## <a name="assign-licenses"></a>指派授權
 
@@ -93,7 +94,7 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 
 3. 選取 **[指派更多]**。
 
-4. Select **SharePoint Syntex**. Under **Apps**, make sure **Common Data Service for SharePoint Syntex**, **SharePoint Syntex**, and **SharePoint Syntex - SPO type** are all selected.
+4. 選取 **[SharePoint Server]**。 在 **[應用程式]** 下，確定選取 **[Common Data Service for SharePoint Syntex]**、**[SharePoint Syntex]** 和 **[SharePoint Syntex - SPO 類型]**。
 
     > [!div class="mx-imgBorder"]
     > ![Microsoft 365 系統管理中心中的 SharePoint Syntex 授權](../media/content-understanding/sharepoint-syntex-licenses.png)
@@ -102,7 +103,7 @@ Prior to setup, make sure to plan for the best way to set up and configure conte
 
 ## <a name="ai-builder-credits"></a>AI Builder 點數
 
-If you have 300 or more SharePoint Syntex licenses for SharePoint Syntex in your organization, you will be allocated one million AI Builder credits. If you have fewer than 300 licenses, you must purchase AI Builder credits in order to use forms processing.
+如果貴組織中的 SharePoint Syntex 有 300 個或更多 SharePoint Syntex 授權，您將會獲一百萬的 AI Builder 點數。 如果您的授權少於 300 個，您必須購買 AI Builder 點數，才能使用表單處理。
 
 您可以使用 [AI Builder  計算機](https://powerapps.microsoft.com/ai-builder-calculator)，來估計最適合您的 AI Builder 容量。
 

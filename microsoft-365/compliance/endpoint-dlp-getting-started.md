@@ -19,24 +19,24 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 端點資料遺失防護以監視檔案活動，並對這些端點的文件實作保護動作。
-ms.openlocfilehash: 8211ffbe3a84c0ee9fb4cb4c22d4dcea7f906a78
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: 7dbceb97b7ccb542a0a4933f3e3cccf5a38026ea
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371599"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604256"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>開始使用端點資料外洩防護
 
-Microsoft 端點資料外洩防護 (端點 DLP) 是 Microsoft 365 資料外洩防護 (DLP) 套件的一部分，您可以使用這些功能探索並保護整個 Microsoft 365 服務的敏感性項目。 如需所有 Microsoft DLP 供應項目的詳細資訊，請參閱 [資料外洩防護概觀](data-loss-prevention-policies.md)。 若要深入了解端點 DLP，請參閱 [深入了解端點資料外洩防護](endpoint-dlp-learn-about.md)
+Microsoft 端點資料外洩防護 (端點 DLP) 是 Microsoft 365 資料外洩防護 (DLP) 套件的一部分，您可以使用這些功能探索並保護整個 Microsoft 365 服務的敏感性項目。 如需所有 Microsoft DLP 供應項目的詳細資訊，請參閱[資料外洩防護概觀](data-loss-prevention-policies.md) (英文)。 若要深入了解端點 DLP，請參閱 [深入了解端點資料外洩防護](endpoint-dlp-learn-about.md)
 
-Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項目使用和共用的時間。這可提供您所需的可見度和控制權，以確保妥善使用與保護這些項目，並協助防止可能導致威脅入侵的風險行為。
+Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項目使用和共用的時間。 這可提供您所需的可見度和控制，以確保它們得到正確的使用與保護，並協助防治可能導致威脅入侵的風險行為。
 
 ## <a name="before-you-begin"></a>開始之前
 
 ### <a name="skusubscriptions-licensing"></a>SKU/訂閱授權
 
-開始使用端點 DLP 之前，您應先確認 [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)以及任何附加元件。若要存取和使用端點 DLP 的功能，您必須擁有下列其中一個訂閱或附加元件。
+開始使用端點 DLP 之前，您應先確認 [Microsoft 365 訂閱](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)以及任何附加元件。 若要存取和使用端點 DLP 的功能，您必須擁有下列其中一個訂閱或附加元件。
 
 - Microsoft 365 E5
 - Microsoft 365 A5 (教育版)
@@ -71,7 +71,7 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 - 全域系統管理員
 - 合規性系統管理員
 
-可在[活動總管](data-classification-activity-explorer.md)中檢視來自端點 DLP 的資料。有四個角色可以將權限授與活動總管，您用來存取資料的帳戶必須是其中任一的成員。
+可在 [[活動總管]](data-classification-activity-explorer.md)中檢視來自端點 DLP 的資料。 有四個角色可以將權限授與活動總管，您用來存取資料的帳戶必須是其中任一的成員。
 
 - 全域系統管理員
 - 合規性系統管理員
@@ -84,9 +84,9 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 
 1. 必須執行 Windows 10 x64 組建 1809 或更新版本。
 
-2. 反惡意程式碼用戶端版本為 4.18.2009.7 或更新版本。開啟 Windows 安全性應用程式，選取 [設定] 圖示，然後選取 [關於]，以查看您目前的版本。版本號碼會列在 [反惡意程式碼用戶端版本] 底下。安裝 Windows Update KB4052623 以更新至最新的反惡意程式碼用戶端版本。附註：Windows 安全性元件不需為作用中，您即可以不依賴 Windows 安全性狀態而執行端點 DLP。
+2. 反惡意程式碼用戶端版本為 4.18.2009.7 或更新版本。 開啟 Windows 安全性應用程式，選取 [設定] 圖示，然後選取 [關於]，以查看您目前的版本。 版本號碼會列在 [反惡意程式碼用戶端版本] 底下。 安裝 Windows Update KB4052623 以更新至最新的反惡意程式碼用戶端版本。 附註：Windows 安全性元件不需為作用中，您即可以不依賴 Windows 安全性狀態而執行端點 DLP。
 
-3. 已安裝下列 Windows 更新。附註：這些更新不是將裝置上線至端點 DLP 的先決條件，但包含重要問題的修正，因此必須先安裝，才能使用產品。
+3. 已安裝下列 Windows 更新。 附註：這些更新不是將裝置上線至端點 DLP 的先決條件，但包含重要問題的修正，因此必須先安裝，才能使用產品。
 
     - 若為 Windows 10 1809 - KB4559003、KB4577069、KB4580390
     - 若為 Windows 10 1903 或 1909 - KB4559004、KB4577062、KB4580386
@@ -95,17 +95,17 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 
 4. 所有裝置都必須[加入 Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) 或加入混合式 Azure AD。
 
-5. 在端點裝置上安裝 Microsoft Chromium Edge 瀏覽器，以強制執行上傳至雲端活動的原則動作。請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
+5. 在端點裝置上安裝 Microsoft Chromium Edge 瀏覽器，以強制執行上傳至雲端活動的原則動作。 請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
-6. 如果您使用的是 Microsoft 365 Apps 版本 2004-2008 的每月企業頻道，則存在端點 DLP 對 Office 內容進行分類的已知問題，且您需要更新為版本 2009 或更新版本。請參閱 [Microsoft 365 Apps 的更新歷程記錄 (依日期列出)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date) 以取得目前d 版本。若要深入了解有關此問題的更多資訊，請參閱 [2020 年目前通道版本的版本資訊](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27)中的 Office 套件一節。
+6. 如果您使用的是 Microsoft 365 Apps 版本 2004-2008 的每月企業頻道，則存在端點 DLP 對 Office 內容進行分類的已知問題，您需要更新到 2009 版或更高版本。 請參閲目前版本的 [Microsoft 365 Apps 的更新歷程記錄 (依日期列出)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。 深入了解有關此問題的更多資訊，請參閱 [2020 年目前通道版本的版本資訊](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27) 中的 Office 套件一節。
 
 ## <a name="onboarding-devices-into-device-management"></a>將裝置上線至裝置管理
 
-您必須先啟用裝置監控與上線端點，才能監視與防護裝置上的敏感性項目。這兩個動作都是在 Microsoft 365 合規性入口網站中完成。
+您必須先啟用裝置監控與上線端點，才能監視與防護裝置上的敏感性項目。 這兩個動作都是在 Microsoft 365 合規性入口網站中完成。
 
-當您想要將尚未上線的裝置進行上線時，您將會下載適當的指令碼，並將它部署到這些裝置。請遵循[上線裝置程序](endpoint-dlp-getting-started.md#onboarding-devices)。
+當您想要將尚未上線的的裝置進行上線時，您將會下載適當的指令碼，並將它部署到這些裝置。 請按照[上線裝置程序](endpoint-dlp-getting-started.md#onboarding-devices)。
 
-如果您的裝置已上線至[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)，這些裝置就會出現在受管理的裝置清單中。請遵循[若裝置已上線至適用於端點的 Microsoft Defender](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide&source=docs#with-devices-onboarded-into-microsoft-defender-for-endpoint)。
+如果您的裝置已上線至 [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)，這些裝置原本就會出現在 [受管理的裝置] 清單中。 請按照 [[裝置已上線至適用於端點的 Microsoft Defender] 的程序操作](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-getting-started?view=o365-worldwide&source=docs#with-devices-onboarded-into-microsoft-defender-for-endpoint)。
 
 ### <a name="onboarding-devices"></a>上線裝置
 
@@ -119,18 +119,18 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
    > ![啟用裝置管理](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
    > [!NOTE]
-   > 通常啟用裝置上線需要 60 秒的時間，但請等候最多 30 分鐘的時間，再與 Microsoft 支援服務連絡以取得協助。
+   > 通常啟用裝置上線需要 60 秒的時間，但請等候最多 30 分鐘的時間再與 Microsoft 支援服務聯絡以取得協助。
 
-3. 選擇 [裝置管理 **]** 以開啟 [裝置 **]** 清單。在您的裝置上線之前，此清單會是空白。
+3. 選擇 **[裝置管理]** 以開啟 **[裝置]** 清單。 在您的裝置上線之前，此清單會是空白。
 
-4. 選擇 [上線 **]** 開始上線程序。
+4. 選擇 **[上線]** 開始上線程序。
 
 5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]**。
 
    > [!div class="mx-imgBorder"]
    > ![部署方法](../media/endpoint-dlp-getting-started-3-deployment-method.png)
    
-6. 遵循 [Windows 10 電腦的上線工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。此連結會將您帶到一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
+6. 按照 [Windows 10 電腦的上線工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會將您帶到一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
 
     - 使用群組原則上線 Windows 10 電腦
     - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
@@ -138,29 +138,29 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
     - 使用本機指令碼上線 Windows 10 電腦
     - 上線非永續性 Virtual Desktop Infrastructure (VDI) 電腦。
 
-一旦完成且端點上線後，端點會顯示在裝置清單中，並開始向活動總管報告稽核活動記錄。
+一旦完成且端點上線後，端點會顯示在裝置清單中，並開始向 [活動總管] 回報音訊活動記錄。
 
 > [!NOTE]
-> 這項體驗屬於授權強制執行。若無所需授權，資料將不會顯示或無法存取。
+> 這項體驗屬於授權強制執行。 若無所需授權，資料將不會顯示或無法存取。
 
 ### <a name="with-devices-onboarded-into-microsoft-defender-for-endpoint"></a>若裝置已上線至適用於端點的 Microsoft Defender
 
-在這種情況下，適用於端點的 Microsoft Defender 已經部署，且已有回報中的端點。所有這些端點都會出現在 [受管理的裝置] 清單中。您可以繼續使用[上線裝置程序](endpoint-dlp-getting-started.md#onboarding-devices)，將新裝置上線至端點 DLP 中，以拓展涵蓋範圍。
+在這種情況下，適用於端點的 Microsoft Defender 已經部署，且已有回報中的端點。 所有這些端點都會出現在 [受管理的裝置] 清單中。 您可以繼續使用 [[上線裝置程序]](endpoint-dlp-getting-started.md#onboarding-devices) 將新裝置上線至端點 DLP 中，以拓展涵蓋範圍。
 
 1. 開啟 [Microsoft 合規性中心](https://compliance.microsoft.com)。
 
-2. 開啟合規性中心設定頁面，然後選擇 [啟用裝置監控 **]**。
+2. 開啟 [合規性中心] 設定頁面，然後選擇 **[啟用裝置監控]**。
 
-3. 選擇 [裝置管理 **]** 以開啟 [裝置 **]** 清單。您應該會看到已向適用於端點的 Microsoft Defender 報告的裝置清單。
+3. 選擇 **[裝置管理]** 以開啟 **[裝置]** 清單。 您應該會看到已向適用於端點的 Microsoft Defender 回報的裝置清單。
 
    > [!div class="mx-imgBorder"]
    > ![裝置管理](../media/endpoint-dlp-getting-started-2-device-management.png)
    
 4. 如果您需要上線其他裝置，請選擇 **[上線]**。
 
-5. 選擇您想要從 [部署方法 **]** 清單中部署至這些其他裝置的方式，然後 [下載套件 **]**。
+5. 選擇您想要從 **[部署方法]** 清單中部署至這些其他裝置的方式，然後 **[下載套件]**。
 
-6. 遵循 [Windows 10 電腦的上線工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。此連結會將您帶到一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
+6. 按照 [Windows 10 電腦的上線工具和方法](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)中的適當程序。 此連結會將您帶到一個登陸頁面，讓您存取適用於端點的 Microsoft Defender 且符合您在步驟 5 中選取的部署套件的程序：
 
     - 使用群組原則上線 Windows 10 電腦
     - 使用 Microsoft Endpoint Configuration Manager 來上線 Windows 電腦
@@ -168,10 +168,10 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
     - 使用本機指令碼上線 Windows 10 電腦
     - 上線非永續性 Virtual Desktop Infrastructure (VDI) 電腦。
 
-一旦完成且端點上線後，端點會顯示在 [裝置 **]** 表格下，並開始向 [活動總管 **]** 報告稽核記錄。
+一旦完成且端點上線後，端點會顯示在 **[裝置]** 表格下，並開始向 **[活動總管]** 回報音訊記錄。
 
 > [!NOTE]
->這項體驗屬於授權強制執行。若無所需授權，資料將不會顯示或無法存取。
+>這項體驗屬於授權強制執行。 若無所需授權，資料將不會顯示或無法存取。
 
 ### <a name="viewing-endpoint-dlp-alerts-in-dlp-alerts-management-dashboard"></a>在 DLP 警示管理儀表板中檢視端點 DLP 警示
 
@@ -180,7 +180,7 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 2. 請參閱[如何設定和檢視 DLP 原則的警示](dlp-configure-view-alerts-policies.md)中的程序，以檢視您端點 DLP 原則的警示。
 
 
-### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>在活動總管中檢視端點 DLP 資料
+### <a name="viewing-endpoint-dlp-data-in-activity-explorer"></a>檢視 [活動總管] 中的端點 DLP 資料
 
 1. 在 Microsoft 365 合規性中心開啟您網域的 [[資料分類] 頁面](https://compliance.microsoft.com/dataclassification?viewid=overview)，然後選擇 [活動總管]。
 
@@ -196,9 +196,9 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 
 ## <a name="see-also"></a>另請參閱
 
-- [深入了解端點資料外洩防護 (預覽版)](endpoint-dlp-learn-about.md)
-- [使用端點資料外洩防護 (預覽版)](endpoint-dlp-using.md)
-- [資料外洩防護概觀](data-loss-prevention-policies.md) (英文)
+- [深入了解端點資料外洩防護](endpoint-dlp-learn-about.md)
+- [使用端點資料外洩防護](endpoint-dlp-using.md)
+- [資料外洩防護概觀](data-loss-prevention-policies.md)
 - [建立、測試及調整 DLP 原則](create-test-tune-dlp-policy.md)
 - [開始使用活動總管](data-classification-activity-explorer.md)
 - [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/)

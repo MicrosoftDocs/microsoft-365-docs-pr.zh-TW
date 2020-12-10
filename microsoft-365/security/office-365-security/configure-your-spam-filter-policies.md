@@ -16,23 +16,23 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
-ms.openlocfilehash: 34e0f3cf1ae382dcb256887557af18556d52a7df
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 2601e4b7b360ce45fbece3e66b5aa09cd512f68c
+ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357884"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "49572810"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，EOP 會自動保護內送電子郵件，防止垃圾郵件。EOP 使用反垃圾郵件原則 (也稱為垃圾郵件過篩選原則或內容篩選原則)，作為貴組織全面防範垃圾郵件的一環。如需詳細資訊，請參閱[反垃圾郵件保護](anti-spam-protection.md)。
+在擁有 Exchange Online 信箱的 Microsoft 365 組織中或是沒有 Exchange Online 信箱的獨立 Exchange Online Protection (EOP) 組織中，EOP 會自動保護內送電子郵件，防止垃圾郵件。 EOP 使用反垃圾郵件原則 (也稱為垃圾郵件過篩選原則或內容篩選原則)，作為貴組織全面防範垃圾郵件的一環。 如需詳細資訊，請參閱[反垃圾郵件保護](anti-spam-protection.md)。
 
-系統管理員可以檢視、編輯、設定 (但不能刪除) 預設的反垃圾郵件原則。若要提高精確性，您也可以建立自訂的反垃圾郵件原則，並套用至貴組織中的特定使用者、群組或網域。自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (執行順序)。
+系統管理員可以檢視、編輯、設定 (但不能刪除) 預設的反垃圾郵件原則。 若要提高精確性，您也可以建立自訂的反垃圾郵件原則，並套用至貴組織中的特定使用者、群組或網域。 自訂原則一律優先於預設原則，但您可以變更自訂原則的優先順序 (執行順序)。
 
-您可以在安全性與合規性中心設定反垃圾郵件原則，或在 PowerShell 設定反垃圾郵件原則 (擁有 Exchange Online 信箱的 Microsoft 365 組織使用 Exchange Online PowerShell；沒有 Exchange Online 信箱的組織使用獨立的 EOP PowerShell)。
+在擁有 Exchange Online 信箱的 Exchange Online PowerShell for Microsoft 365 組織中；沒有 Exchange Online 信箱的獨立 EOP PowerShell 組織中，您可以在 PowerShell 的 [安全性與合規性中心] 設定反垃圾郵件原則。
 
 反垃圾郵件原則的基本元素有：
 
@@ -42,36 +42,35 @@ ms.locfileid: "49357884"
 當您在安全性與合規性中心管理反垃圾郵件原則時，上述兩個元素的差異不大：
 
 - 當您建立ㄧ項反垃圾郵件原則時，其實只是以相同的名稱，同時建立垃圾郵件篩選規則和相關聯的垃圾郵件篩選原則。
-- 當您修改反垃圾郵件原則時，與名稱、優先順序、已啟用或已停用、收件者篩選相關的設定皆會修改垃圾郵件篩選規則。所有其他設定都會修改相關聯的垃圾郵件篩選原則。
+- 當您修改反垃圾郵件原則時，與名稱、優先順序、已啟用或已停用、收件者篩選相關的設定皆會修改垃圾郵件篩選規則。 所有其他設定都會修改相關聯的垃圾郵件篩選原則。
 - 當您移除反垃圾郵件原則時，也會一併移除垃圾郵件篩選規則和相關聯的垃圾郵件篩選原則。
 
-在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。如需其他更多資訊，請參照此主題之後的[使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定反垃圾郵件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) 一節。
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需其他更多資訊，請參照此主題之後的 [使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定反垃圾郵件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) 章節。
 
 每個組織都有一個名為「預設」的內建反垃圾郵件原則，且具有下列屬性：
 
 - 即使沒有與此原則相關聯的垃圾郵件篩選規則 (收件者篩選器)，此原則仍會套用至組織中的所有收件者。
-- 此原則的自訂優先順序值是 **最低的**，表示您無法進行任何修改 (此原則ㄧ律到最後才會套用)。任何您建立的自訂原則始終具有較高的優先順序。
+- 此原則的自訂優先順序值是 **最低的**，表示您無法進行任何修改（此原則ㄧ律到最後才會套用）。 任何您建立的自訂原則皆具有較高的優先順序。
 - 此原則是預設的 (**IsDefault** 屬性具有`True`值)，且您無法刪除此項預設原則。
 
 若要提高垃圾郵件篩選的效率，您可以建立自訂反垃圾郵件原則，以更嚴格的設定套用到特定使用者或使用者群組。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。若要直接移至 [反垃圾郵件 **]** 頁面，請使用 <https://protection.office.com/antispam>。
+- 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 **[反垃圾郵件設定]** 頁面，請使用 <https://protection.office.com/antispam>。
 
-- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。若要連線至獨立的 EOP PowerShell，請參閱[連線至 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
+- 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連線至獨立版 EOP PowerShell，請參閱[連線至 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲派權限，才能進行此主題中的程序:
+- 您必須先獲指派安全性與合規性中心的權限，才能執行此文章中的程序：
+  - 若要新增、修改、刪除反垃圾郵件原則，您必須是 **組織管理** 或 **安全性系統管理員** 角色群組的成員。
+  - 若要唯讀存取反垃圾郵件原則，您必須是 **全域讀取者** 或 **安全性讀取者** 角色群組的成員。
 
-  - 若要新增、修改及刪除反垃圾郵件原則，您必須是下列其中一個角色群組的成員：
+  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-    - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
-    - **組織管理** 或 [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **檢疫管理**。
+  **附註**：
 
-  - 若要以唯讀方式存取反垃圾郵件原則，您必須是下列其中一個角色群組的成員:
-
-    - [安全性與合規性中心](permissions-in-the-security-and-compliance-center.md) 中的 **安全讀者**。
-    - [線上交換](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅檢視組織管理**。
+  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 - 如需反垃圾郵件原則的建議設定，請參閱 [EOP 反垃圾郵件原則設定](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings) (英文)。
 
@@ -79,19 +78,19 @@ ms.locfileid: "49357884"
 
 在安全性與合規性中心建立自訂的反垃圾郵件原則時，是同時建立垃圾郵件篩選規則和相關聯的垃圾郵件篩選原則，且為兩者使用相同的名稱。
 
-1. 在安全性與合規性中心，移至 [威脅管理] \> [原則] \> [反垃圾郵件]。
+1. 在安全性與合規性中心，移至 **[威脅管理]** \> **[原則]** \> **[反垃圾郵件]**。
 
-2. 在 [反垃圾郵件設定] 頁面上，按一下 [建立原則]。
+2. 在 **[反垃圾郵件設定]** 頁面上，按一下 **[建立原則]**。
 
-3. 在隨即開啟的 [新增垃圾郵件篩選原則 **]** 視窗中進行下列設定：
+3. 在隨即開啟的 **[新增垃圾郵件篩選原則]** 飛出視窗中進行下列設定：
 
-   - **名稱**：輸入原則的唯一描述性名稱。請勿使用以下字元：`\ % & * + / = ? { } | < > ( ) ; : , [ ] "`。
+   - **名稱**：輸入原則的唯一描述性名稱。 請勿使用下列字元：`\ % & * + / = ? { } | < > ( ) ; : , [ ] "`。
 
-      如果您先前在 Exchange 系統管理中心 (EAC) 中建立的反垃圾郵件原則包含這些字元，您應用 PowerShell 重新命名該反垃圾郵件原則。如需相關指示，請參閱本主題稍後的[使用 PowerShell 修改垃圾郵件篩選規則](#use-powershell-to-modify-spam-filter-rules)一節。
+      如果您先前在 Exchange 系統管理中心 (EAC) 中建立的反垃圾郵件原則包含這些字元，您應用 PowerShell 重新命名該反垃圾郵件原則。 如需相關指示，請參閱本主題稍後的[使用 PowerShell 修改垃圾郵件篩選規則](#use-powershell-to-modify-spam-filter-rules)一節。
 
    - **說明**：輸入原則的選擇性說明。
 
-4. (選用) 展開 [垃圾郵件和大量動作] 區段，然後確認或設定如下設定：
+4. (選用) 展開 **[垃圾郵件和大量動作]** 區段，然後確認或設定如下設定：
 
    - **選取對內送的垃圾郵件和大量電子郵件要採取的動作**：根據下列垃圾郵件篩選裁決，選取或檢查對郵件要採取的動作：
 
@@ -111,27 +110,27 @@ ms.locfileid: "49357884"
      |動作|垃圾郵件|高<br/>信賴度<br/>垃圾郵件|網路釣魚<br/>電子郵件|高<br/>信賴度<br/>網路釣魚<br/>電子郵件|大量<br/>電子郵件|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**將郵件移至 [垃圾郵件] 資料夾**：郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**新增 X 標頭**：在郵件標頭中新增 X 標頭，並將郵件傳送到信箱。 <p> 您稍後可以在 [新增此 X 標頭文字] 方塊中輸入 X 標頭欄位的名稱 (不是值)。 <p> 裁決為 **垃圾郵件** 和 **高信賴度垃圾郵件** 的郵件會移至 [垃圾郵件] 資料夾。<sup>1,2</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**在主旨列前加上文字**：新增文字至郵件主旨列的開頭。 郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1,2</sup> <p> 您稍後可以在 [在主旨列前加上此文字] 方塊中輸入文字。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**將郵件重新導向至電子郵件地址**：將郵件傳送給其他收件者，而不是預定收件者。 <p> 您稍後可以在 [重新導向到這個電子郵件地址] 方塊中指定收件者。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**新增 X 標頭**：在郵件標頭中新增 X 標頭，並將郵件傳送到信箱。 <p> 您稍後可以在 **[新增此 X 標頭文字]** 方塊中輸入 X 標頭欄位的名稱 (不是值)。 <p> 裁決為 **垃圾郵件** 和 **高信賴度垃圾郵件** 的郵件會移至 [垃圾郵件] 資料夾。<sup>1,2</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+     |**在主旨列前加上文字**：新增文字至郵件主旨列的開頭。 郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1,2</sup> <p> 您稍後可以在 **[在主旨列前加上此文字]** 方塊中輸入文字。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**將郵件重新導向至電子郵件地址**：將郵件傳送給其他收件者，而不是預定收件者。 <p> 您稍後可以在 **[重新導向到這個電子郵件地址]** 方塊中指定收件者。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
      |**刪除郵件**：刪除整封郵件，包括所有附件。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**隔離郵件**：將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> 您稍後可以在 [隔離] 方塊中指定郵件要在隔離區保留多久。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**隔離郵件**：將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> 您稍後可以在 **[隔離]** 方塊中指定郵件要在隔離區保留多久。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
      |**無動作**|||||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
      |
 
-     <sup>1</sup> 在 Exchange Online 中，如果信箱已啟用垃圾郵件規則 (預設為啟用)，郵件會移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
-
-     在獨立版 EOP 環境中，EOP 會保護內部部署 Exchange 信箱，您必須在內部部署 Exchange 中設定郵件流程規則 (又稱為傳輸規則) 以轉譯 EOP 垃圾郵件篩選裁決，這樣垃圾郵件規則才可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定獨立版 EOP 將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
-
-     <sup>2</sup> 您可以使用此值做為郵件流程規則 (又稱為傳輸規則) 的條件，以便篩選或傳送郵件。
+     > <sup>1</sup> 在 Exchange Online 中，如果信箱已啟用垃圾郵件規則 (預設為啟用)，郵件會移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
+     >
+     > 在獨立版 EOP 環境中，EOP 會保護內部部署 Exchange 信箱，您必須在內部部署 Exchange 中設定郵件流程規則 (又稱為傳輸規則) 以轉譯 EOP 垃圾郵件篩選裁決，這樣垃圾郵件規則才可以將郵件移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定獨立版 EOP 以將垃圾郵件傳送到混合式環境中的垃圾郵件資料夾](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)。
+     >
+     > <sup>2</sup> 您可以使用此值做為郵件流程規則的條件，以便篩選或傳送郵件。
 
    - **選取閾值**：針對會觸發 **大量電子郵件** 垃圾郵件篩選裁決指定動作的訊息，指定大量抱怨層級 (BCL)，(大於、不大於或等於指定的值)。 較高的值表示不太理想的郵件 (更可能像是垃圾郵件)。 預設值為 7。 如需詳細資訊，請參閱 [EOP 中的大量抱怨層級 (BCL)](bulk-complaint-level-values.md) 和[垃圾電子郵件與大量電子郵件之間有何不同？](what-s-the-difference-between-junk-email-and-bulk-email.md)。
 
      根據預設，PowerShell 只會將反垃圾郵件原則中的 MarkAsSpamBulkMail 設定為 `On`。 這項設定會嚴重影響 **大量電子郵件** 篩選的裁決：
 
-     - **MarkAsSpamBulkMail 為 On**：大於閾值的 BCL 會轉換成 SCL 6 (對應到 **垃圾郵件** 篩選裁決)，然後對郵件採取 **大量電子郵件** 篩選裁決的動作。
+     - **_MarkAsSpamBulkMail_ 為 On**：大於閾值的 BCL 會轉換成 SCL 6 (對應到 **垃圾郵件** 篩選裁決)，然後對郵件採取 **大量電子郵件** 篩選裁決的動作。
 
-     - **MarkAsSpamBulkMail 為 Off**：郵件會加蓋 BCL 戳記，但 **大量電子郵件** 篩選裁決不會執行任何動作。 實際上，BCL 閾值和 **大量電子郵件** 篩選裁決動作並不相關。
+     - **_MarkAsSpamBulkMail_ 為 Off**：郵件會加蓋 BCL 戳記，但 **大量電子郵件** 篩選裁決不會執行任何動作。 實際上，BCL 閾值和 **大量電子郵件** 篩選裁決動作並不相關。
 
    - **隔離**：指定當您選取 **隔離郵件** 做為垃圾郵件篩選裁決的動作時，郵件將存放在隔離中要多久的時間。 時間到了之後，就會刪除郵件。 預設值是 30 天。 有效值是從 1 到 30 天。 如需隔離的相關資訊，請參閱下列主題：
 
@@ -139,7 +138,7 @@ ms.locfileid: "49357884"
      - [在 EOP 中管理隔離的郵件與檔案](manage-quarantined-messages-and-files.md)
      - [在 EOP 中尋找及釋出隔離的郵件](find-and-release-quarantined-messages-as-a-user.md)
 
-   - **新增此 X 標題文字**：只有當您選取 [新增 X 標頭] 做為垃圾郵件篩選裁決的動作時，才會有此方塊，且是必要的設定。 您指定的值是郵件標頭「名稱」，會新增到郵件標頭中。 標題欄位的「值」一律是 `This message appears to be spam`。
+   - **新增此 X 標題文字**：只有當您選取 **[新增 X 標頭]** 做為垃圾郵件篩選裁決的動作時，才會有此方塊，且是必要的設定。 您指定的值是郵件標頭 *「名稱」*，會新增到郵件標頭中。 標題欄位的 *「值」* 一律是 `This message appears to be spam`。
 
      長度上限為 255 個字元，且值不能包含空格或冒號 (:)。
 
@@ -147,19 +146,19 @@ ms.locfileid: "49357884"
 
      如果您輸入的值包含空格或冒號 (:)，系統會忽略您輸入的值，並在郵件中新增預設的 X 標頭 (`X-This-Is-Spam: This message appears to be spam.`)。
 
-   - **在主旨列前加上此文字**：只有當您選取 [在主旨列前加上文字] 做為垃圾郵件篩選裁決的動作時，才會有此方塊，且是必要的設定。 輸入要新增至郵件主旨列開頭的文字。
+   - **在主旨列前加上此文字**：只有當您選取 **[在主旨列前加上文字]** 做為垃圾郵件篩選裁決的動作時，才會有此方塊，且是必要的設定。 輸入要新增至郵件主旨列開頭的文字。
 
    - **重新導向到這個電子郵件地址**：只有當您選取 [將郵件重新導向至電子郵件地址] 做為垃圾郵件篩選裁決的動作時，才會有此方塊，且是必要的設定。 輸入您要遞送郵件的電子郵件地址。 您可以輸入多個值並以分號 (;) 分隔。
 
-   - **安全提示**：預設會啟用安全提示，但您可以清除 [開啟] 核取方塊加以停用。 如需有關安全性提示的詳細資訊，請參閱[電子郵件的安全提示](safety-tips-in-office-365.md)。
+   - **安全提示**：預設會啟用安全提示，但您可以清除 **[開啟]** 核取方塊加以停用。 如需有關安全性提示的詳細資訊，請參閱[電子郵件的安全提示](safety-tips-in-office-365.md)。
 
    **零時差自動清除** 設定：ZAP 會偵測傳送到 Exchange Online 信箱的郵件，並採取行動。 如需有關 ZAP 的詳細資訊，請參閱[零時差自動清除 - 防範垃圾郵件和惡意程式碼](zero-hour-auto-purge.md)。
 
-   - **垃圾郵件 ZAP**：預設會啟用 ZAP 以偵測垃圾郵件，但您可以清除 [開啟 **]** 核取方塊加以停用。
+   - **垃圾郵件 ZAP**：預設會啟用 ZAP 以偵測垃圾郵件，但您可以清除 **[開啟]** 核取方塊加以停用。
 
-   - **網路釣魚 ZAP**：預設會啟用 ZAP 以偵測網路釣魚，但您可以清除 [開啟 **]** 核取方塊加以停用。
+   - **網路釣魚 ZAP**：預設會啟用 ZAP 以偵測網路釣魚，但您可以清除 **[開啟]** 核取方塊加以停用。
 
-5. (選用) 展開 [允許清單 **]** 區段，依據允許跳過垃圾郵件篩選的電子郵件地址或電子郵件網域，來設定郵件寄件人：
+5. (選用) 展開 **[允許清單]** 區段，依據允許跳過垃圾郵件篩選的電子郵件地址或電子郵件網域，來設定郵件寄件人：
 
    > [!CAUTION]
    >
@@ -167,7 +166,7 @@ ms.locfileid: "49357884"
    >
    > - 絕對不要將接受的網域 (您擁有的網域) 或一般網域 (例如 microsoft.com 或 office.com) 新增到允許的網域清單中。 這會讓攻擊者能夠略過垃圾郵件篩選將電子郵件送進您的貴組織。
 
-   - **允許寄件者**：按一下 [編輯]。 在 [允許的寄件者清單] 飛出視窗中：
+   - **允許寄件者**：按一下 **[編輯]**。 在 **[允許的寄件者清單]** 飛出視窗中：
 
       a. 輸入寄件者的電子郵件地址。 您可以指定多個電子郵件地址並以分號 (;) 隔開。
 
@@ -175,11 +174,11 @@ ms.locfileid: "49357884"
 
       視需要重複這些步驟。
 
-      您新增的寄件者會出現在飛出視窗的 [允許的寄件者] 區段中。 若要刪除寄件者，按一下 ![移除圖示](../../media/scc-remove-icon.png)。
+      您新增的寄件者會出現在飛出視窗的 **[允許的寄件者]** 區段中。 若要刪除寄件者，按一下 ![移除圖示](../../media/scc-remove-icon.png)。
 
-      完成後，按一下 [儲存]。
+      完成後，按一下 **[儲存]**。
 
-   - **允許網域**：按一下 [編輯]。 在隨即出現的 [允許的網域清單] 飛出視窗中，執行下列步驟：
+   - **允許網域**：按一下 **[編輯]**。 在隨即出現的 **[允許的網域清單]** 飛出視窗中，執行下列步驟：
 
       a. 輸入網域。 您可以指定多個網域並以分號 (;) 隔開的。
 
@@ -387,9 +386,9 @@ ms.locfileid: "49357884"
 
 - 使用者垃圾郵件隔離通知的下列設定：
 
-  - DownloadLink 參數，用於顯示或隱藏 Outlook 的垃圾郵件報告工具連結。
+  - _DownloadLink_ 參數，用於顯示或隱藏 Outlook 的垃圾郵件報告工具連結。
 
-  - EndUserSpamNotificationCustomSubject 參數，您可以用來自訂通知的主旨列。
+  - _EndUserSpamNotificationCustomSubject_ 參數，您可以用來自訂通知的主旨列。
 
 ### <a name="use-powershell-to-create-anti-spam-policies"></a>使用 PowerShell 來建立反垃圾郵件原則
 

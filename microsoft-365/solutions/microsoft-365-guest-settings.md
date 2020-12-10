@@ -2,7 +2,7 @@
 title: Microsoft 365 來賓共用設定參考
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 瞭解 Microsoft 365 中提供的來賓共用設定，這可能會影響與組織外部人員共用。
-ms.openlocfilehash: 184962b1de8d1dccf86541dba302ca9de26989c2
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 0c734d1046a1c2d180c8102187b8cf07de7dc4dc
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030074"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613041"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 來賓共用設定參考
 
@@ -47,7 +47,7 @@ Azure Active Directory 是 Microsoft 365 所使用的目錄服務。 Azure Activ
 |:-----|:-----|:-----|
 |來賓使用者權限受限|是|此設定會影響來賓可以執行的目錄工作。|
 |系統管理員與來賓邀請者角色中的使用者可以邀請|是|設為 [是] 時，系統管理員可以透過 Azure AD 和透過 Microsoft 365 共用體驗 (例如 Teams 和 SharePoint) 邀請來賓；設為 [否] 時則無法。|
-|成員可以邀請|是|設為 [是] 時，Azure AD 成員可以透過 Azure AD 邀請來賓；設為 [否] 時，則無法邀請。 設為 [是] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓；設為 [否] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓，但擁有者必須是全域系統管理員，才能進行核准。 <br><br>請注意， **成員可以邀請** 是指 Azure AD 中的成員 (相對於來賓)，而非 Microsoft 365 中的網站或群組成員。 <br><br>這與 Microsoft 365 安全性與隱私權中的 [讓使用者將新的來賓新增到組織] 設定完全相同。|
+|成員可以邀請|是|設為 [是] 時，Azure AD 成員可以透過 Azure AD 邀請來賓；設為 [否] 時，則無法邀請。 設為 [是] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓；設為 [否] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓，但擁有者必須是全域系統管理員，才能進行核准。 <br><br>請注意，**成員可以邀請** 是指 Azure AD 中的成員 (相對於來賓)，而非 Microsoft 365 中的網站或群組成員。 <br><br>這與 Microsoft 365 安全性與隱私權中的 [讓使用者將新的來賓新增到組織] 設定完全相同。|
 |來賓可以邀請|是|設為 [是] 時，目錄中的來賓可以邀請其他來賓在 Azure AD 資源上以及在 SharePoint 和 OneDrive 中的檔案和資料夾上共同作業；設為 [否] 時則無法。 <br><br>請注意，必須在 SharePoint 系統管理中心開啟 [允許外部使用者輸入完全相符的電子郵件地址以尋找目錄中的使用者帳戶]，來賓才能與其他來賓共用檔案和資料夾。|
 |為來賓啟用電子郵件一次性密碼 (預覽)|否|設為 [是] 時，沒有 MSA 或公司或學校帳戶的來賓可以[使用一次性密碼向 Azure AD 進行驗證](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode)；設為 [否] 時，使用者將必須建立 Microsoft 帳戶才能進行驗證。 此設定必須設為 [是]，[SharePoint 和 OneDrive 整合搭配 Azure AD B2B (預覽)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) 才能運作。|
 |共同作業限制|允許傳送邀請給任何網域|此設定可讓您針對共用指定允許或封鎖的網域清單。 指定允許的網域時，則只可以將共用邀請傳送至這些網域。 指定拒絕的網域時，則無法將共用邀請傳送至這些網域。<br><br> 此設定會影響 Microsoft 365 共用體驗 (例如 Teams 和 SharePoint)。 您可以使用 SharePoint 或 Teams 中的網域篩選，以更細微的層級允許或封鎖網域。|
@@ -68,7 +68,7 @@ Microsoft 365 系統管理中心有用於共用和用於 Microsoft 365 群組的
 
 |**設定**|**預設值**|**描述**|
 |:-----|:-----|:-----|
-|讓使用者將新的來賓新增到組織|開啟|設為 [是] 時，Azure AD 成員可以透過 Azure AD 邀請來賓；設為 [否] 時，則無法邀請。 設為 [是] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓；設為 [否] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓，但擁有者必須是全域系統管理員，才能進行核准。 <br><br>請注意， **成員可以邀請** 是指 Azure AD 中的成員 (相對於來賓)，而非 Microsoft 365 中的網站或群組成員。 <br><br>這與 Azure Active Directory 組織關聯性設定中的 [成員可以邀請] 設定完全相同。|
+|讓使用者將新的來賓新增到組織|開啟|設為 [是] 時，Azure AD 成員可以透過 Azure AD 邀請來賓；設為 [否] 時，則無法邀請。 設為 [是] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓；設為 [否] 時，Microsoft 365 群組成員可以邀請具有擁有者核准的來賓，但擁有者必須是全域系統管理員，才能進行核准。 <br><br>請注意，**成員可以邀請** 是指 Azure AD 中的成員 (相對於來賓)，而非 Microsoft 365 中的網站或群組成員。 <br><br>這與 Azure Active Directory 組織關聯性設定中的 [成員可以邀請] 設定完全相同。|
 
 ### <a name="microsoft-365-groups"></a>Microsoft 365 群組
 
@@ -78,7 +78,7 @@ Microsoft 365 系統管理中心有用於共用和用於 Microsoft 365 群組的
 
 |**設定**|**預設值**|**描述**|
 |:-----|:-----|:-----|
-|讓貴組織外部的群組成員存取群組內容|開啟|設為 [開啟] 時，來賓可以存取群組內容；設為 [否] 時，則無法存取。 針對來賓使用者會與 Microsoft 365 群組或 Teams 互動的案例，此設定應該為 [開啟]。|
+|讓貴組織外部的群組成員存取群組內容|開啟|設為 [開啟] 時，來賓可以存取群組內容；設為 [否] 時，則無法存取。 針對來賓會與 Microsoft 365 群組或 Teams 互動的案例，此設定應該為 **[開啟]**。|
 |讓群組擁有者將貴組織外部的人員新增到群組|開啟|[開啟] 時，Microsoft 365 群組或 Teams 的擁有者可以邀請新來賓加入群組。 [關閉] 時，擁有者只能邀請已在目錄中的來賓。|
 
 這些設定是在組織層級。 如需如何使用 PowerShell 在群組層級變更這些設定的詳細資訊，請參閱[建立特定群組的設定](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group)。
@@ -194,7 +194,7 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 
 |**設定**|**預設值**|**描述**|
 |:-----|:-----|:-----|
-|只讓所選安全性群組中的使用者與已驗證的外部使用者共用|關閉|[開啟] 時，只有在特定安全性群組中的人員可以與外部使用者共用。 只有 *特定人員* 連結可供使用。 除非 [只有所選安全性群組中的使用者可以與已驗證之外部使用者和使用匿名連結的使用者進行共用] 也為 [開啟]，否則會停用 [任何人] 共用|
+|只讓所選安全性群組中的使用者與已驗證的外部使用者共用|關閉|**[開啟]** 時，只有特定安全組中的人員才能與組織外部的人員共用。 只有 *特定人員* 連結可供使用。 除非 [只有所選安全性群組中的使用者可以與已驗證之外部使用者和使用匿名連結的使用者進行共用] 也為 [開啟]，否則會停用 [任何人] 共用|
 |只有所選安全性群組中的使用者可以與已驗證之外部使用者和使用匿名連結的使用者進行共用|關閉|[開啟] 時，只有在特定安全性群組中的人員可以與來賓共用。 [任何人] 和 [特定人員] 連結都可供使用。|
 
 可同時使用這兩個設定。 如果使用者位於為這兩項設定指定的安全性群組中，則較大的權限層級優先 ([任何人] 加上 [特定使用者])。 支援巢狀安全性群組。

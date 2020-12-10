@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 將「保留鎖定」搭配保留原則和保留標籤原則使用，以協助您符合法規需求，並防範惡意系統管理員。
-ms.openlocfilehash: 6f6cfc5bef9b93af08fcc9b703b29facb9a7c576
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 9890c73495bd14ea7264f3314f6313254ef1bf6b
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920689"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612985"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>使用「保留鎖定」來限制變更保留原則和保留標籤原則
 
@@ -28,18 +28,27 @@ ms.locfileid: "48920689"
 
 「保留鎖定」可確保您的組織能夠符合這類法規需求，因為它會鎖定保留原則或保留標籤原則，使得沒有任何人 (包括系統管理員) 可以關閉原則、刪除原則或降低限制。 可能有法規需求需要此設定，並有助於防範惡意系統管理員。
 
-當保留原則鎖定時：
+鎖定保留原則時：
 
-- 沒有人可以將它關閉
+- 任何人都不能停用或刪除原則
 - 可以新增位置但不能移除位置
 - 您可以延長保留期間，但不能減少保留期間
 
+鎖定保留標籤原則時：
+
+- 任何人都不能停用或刪除原則
+- 可以新增位置但不能移除位置
+- 可以新增標籤但不能移除標籤
+
 總的來説，鎖定的保留原則可以增加或延長，但是不能減少或關閉。
-  
+
 > [!IMPORTANT]
 > 在您鎖定保留原則或保留標籤原則之前，請務必了解其影響，並確認您的組織是否需要它。 例如，可能需要它來滿足法規需求。 套用保留鎖定之後，系統管理員將無法停用或刪除保留原則。
 
 請在您建立[保留原則](create-retention-policies.md)，或[發佈](create-apply-retention-labels.md)或[自動套用](apply-retention-labels-automatically.md)保留標籤原則之後，再設定保留鎖定。 
+
+> [!NOTE]
+> 鎖定標籤原則不會妨礙系統管理員縮短包含在鎖定原則中的標籤的保留期。 當您設定標籤以將項目標記為[監管記錄](records-management.md#records)時，可以滿足該要求和其他限制。
 
 ## <a name="how-to-lock-a-retention-policy-or-retention-label-policy"></a>如何鎖定保留原則或保留標籤原則
 
@@ -73,7 +82,7 @@ ms.locfileid: "48920689"
 Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 ```
 
-您應該會看到 **RestrictiveRetention** 設定為 **True** 。 例如：
+您應該會看到 **RestrictiveRetention** 設定為 **True**。 例如：
 
 ![PowerShell 中顯示所有參數的鎖定原則](../media/retention-policy-preservation-lock-locked-policy.PNG)
 

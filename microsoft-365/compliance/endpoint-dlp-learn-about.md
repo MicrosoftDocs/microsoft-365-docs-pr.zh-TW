@@ -18,23 +18,23 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: 'Microsoft 365 端點資料外洩防護可擴充檔案活動的監視以及這些檔案到端點的保護動作。在 Microsoft 365 合規性中心解決方案中可看到檔案 '
-ms.openlocfilehash: e469872dac19db08f7b525c8a5ada725c75bfa10
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+description: 'Microsoft 365 端點資料外洩防護可擴充檔案活動的監視以及這些檔案到端點的保護動作。 在 Microsoft 365 合規性中心解決方案中可看到檔案 '
+ms.openlocfilehash: 457701a514159e54e932db3e4ad04a7428165fdc
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072972"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604313"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>深入了解 Microsoft 365 端點資料外洩防護
 
-您可以使用 Microsoft 365 資料外洩防護（DLP）來監視正在進行的動作，這些動作會受到您認為敏感性的專案影響，並協助防止意外共用這些專案。如需 DLP 的詳細資訊，請參閱[資料外洩防護概觀](data-loss-prevention-policies.md)。
+您可以使用 Microsoft 365 資料外洩防護（DLP）來監視正在進行的動作，這些動作會受到您認為敏感性的專案影響，並協助防止意外共用這些專案。 如需 DLP 的詳細資訊，請參閱[資料外洩防護概觀](data-loss-prevention-policies.md)。
 
-**端點資料外洩防護** （端點 DLP）將 DLP 的活動監視和保護功能擴充到 Windows 10 裝置上的敏感性專案。將裝置上架至 Microsoft 365 合規性解決方案之後，使用者對敏感度項目所進行動作的相關資訊會顯示在 [活動總管](data-classification-activity-explorer.md)中，而且您可以透過 [DLP 原則](create-test-tune-dlp-policy.md)對這些項目強制執行保護動作。
+**端點資料外洩防護** （端點 DLP）將 DLP 的活動監視和保護功能擴充到 Windows 10 裝置上的敏感性專案。 將裝置上架至 Microsoft 365 合規性解決方案之後，使用者對敏感度項目所進行動作的相關資訊會顯示在[活動總管](data-classification-activity-explorer.md)中，而且您可以透過 [DLP 原則](create-test-tune-dlp-policy.md)對這些項目強制執行保護動作。
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>您可以監視和採取動作的端點活動
 
-Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用者會在執行 Windows 10 的裝置上透過這些活動使用敏感度專案。其中包括：
+Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用者會在執行 Windows 10 的裝置上透過這些活動使用敏感度專案。 這包括：
 
 
 |專案上的活動 |可稽核/可限制  |
@@ -53,32 +53,32 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 
 ### <a name="enabling-device-management"></a>啟用裝置管理
 
-[裝置管理] 是一種能夠從裝置收集遙測資訊，並將之引入 Microsoft 365 合規性中心解決方案，例如端點 DLP 和 [測試人員風險管理](insider-risk-management.md) 中的功能。在 DLP 原則中，您需登入您想要用作位置的所有裝置。
+[裝置管理] 是一種能夠從裝置收集遙測資訊，並將之引入 Microsoft 365 合規性中心解決方案，例如端點 DLP 和 [測試人員風險管理](insider-risk-management.md) 中的功能。 在 DLP 原則中，您需登入您想要用作位置的所有裝置。
 
 > [!div class="mx-imgBorder"]
 > ![啟用裝置管理](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-您可以透過從 [裝置管理中心] 下載的指令碼處理上線和下線。該中心含有下列每種部署方法的自訂腳本：
+您可以從 [裝置管理中心] 下載的腳本處理「登入和登出」。 該中心含有下列每種部署方法的自訂腳本：
 
 - 本機腳本（最多10台電腦）
 - 群組原則
 - 系統中心設定管理 (版本 1610 或更新版本)
 - 行動裝置管理 / Microsoft Intune
-- 非持續電腦的 VDI 上線指令碼
+- 非持久電腦的 VDI 登入腳本
 
 > [!div class="mx-imgBorder"]
 > ![裝置上線頁面](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
- 使用[開始使用 Microsoft 365 端點 DLP](endpoint-dlp-getting-started.md) 中的程序以上線裝置。
+ 使用 [開始使用 Microsoft 365 端點 DLP](endpoint-dlp-getting-started.md) 的程式以登入程式。
 
 如果您透過[適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/) 上線裝置，這些裝置會自動顯示在裝置清單中。
 
 > [!div class="mx-imgBorder"]
 > ![受管理的裝置清單](../media/endpoint-dlp-learn-about-2-device-list.png)
 
-### <a name="viewing-endpoint-dlp-data"></a>檢視端點 DLP 資料
+### <a name="viewing-endpoint-dlp-data"></a>查看端點 DLP 資料
 
- [端點 DLP] 可監視基於 MIME 類型的活動，因此即使副檔名變更，也能捕獲活動。在公用預覽中，可見全部：
+ [端點 DLP] 可監視基於 MIME 類型的活動，因此即使副檔名變更，也能截取活動。 目前還支援下列檔案類型：
 
 - Word 檔案
 - PowerPoint 檔案
@@ -96,9 +96,9 @@ Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用�
 - .java 檔案
 
 > [!NOTE]
-> 端點 DLP 會根據 DLP 原則評估以上所有類型的檔案，並相應地套用保護動作。系統會針對所有支援的動作稽核符合 DLP 原則的所有檔案，即使它們不受封鎖。另外，根據預設，將對在任何 Word、PowerPoint、Excel、PDF和 .csv 檔案上執行的檔案活動進行稽核，這與 DLP 原則是否存在或符合這些檔案無關。
+> 端點 DLP 會根據 DLP 原則評估以上所有類型的檔案，並相應地套用保護動作。 系統會針對所有支援的動作稽核符合 DLP 原則的所有檔案，即使它們不受封鎖。 另外，根據預設，將對在任何 Word、PowerPoint、Excel、PDF 和 .csv 檔案上執行的檔案活動進行稽核，這與 DLP 原則是否存在或符合這些檔案無關。
 
-您可以移至 [DLP 警報管理儀表板](dlp-configure-view-alerts-policies.md)，檢視與在端點裝置上強制執行的 DLP 原則相關的警示。。
+您可以移至 [DLP 警示管理儀表板](dlp-configure-view-alerts-policies.md)，檢視與在端點裝置上強制執行的 DLP 原則相關的警示。
 
 ![警示資訊](../media/Alert-info-1.png)
 

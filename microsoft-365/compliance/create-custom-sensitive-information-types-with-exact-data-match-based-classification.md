@@ -17,19 +17,19 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 229eb733af85ea5f450969c6d70709cfadcb8f06
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: b120e2bffa4554fb435fe8de2e22d6de2f851544
+ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681771"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49604335"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
 [自訂敏感性資訊類型](custom-sensitive-info-types.md)用於協助識別敏感性項目，使得您可以防止不小心或不適當地將其與他人共用。 您可以根據下列項目來定義自訂機密資訊類型：
 
 - 模式
-- 關鍵字辨識項，例如*員工*、*識別證*或*識別碼*
+- 關鍵字辨識項，例如 *員工*、*識別證* 或 *識別碼*
 - 字元以特定模式接近證據
 - 信賴等級
 
@@ -59,7 +59,7 @@ ms.locfileid: "48681771"
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 
-您必須是全域管理員、合規性系統管理員或 Exchange Online 系統管理員才能執行本文所述的工作。 若要進一步了解 DLP 權限，請參閱[權限](data-loss-prevention-policies.md#permissions)。
+您必須是全域系統管理員、合規性系統管理員或 Exchange Online 系統管理員，才能執行本文所述的工作。 若要進一步了解 DLP 權限，請參閱[權限](data-loss-prevention-policies.md#permissions)。
 
 這些訂閱中包含 EDM 型分類
 
@@ -104,13 +104,15 @@ ms.locfileid: "48681771"
 
 2. 以 .csv 檔案格式將敏感性資料結構化，使得第一列包含用於以 EDM 為基礎的分類的欄位名稱。 在您的 .csv 檔案中，您可能會有欄位名稱，例如 "ssn"、"生日"、"名字"、"姓氏" 等等。 欄標題名稱不能包含空格或底線。 例如，在本文我們所使用的 .csv 檔案範例稱為 *PatientRecords.csv*，而其資料行包含 *PatientID*、*MRN*、*LastName*、*FirstName*、*SSN* 等等。
 
+3. 請留意敏感性資料欄位的格式。 特別是，在内容中包含逗號的欄位（例如：街道地址中包含“Seattle,WA” 這個值）當由 EDM 工具解析時，將被解析為兩個單獨的欄位。 為避免此情形發生，您需要確保敏感性資料表格中這類欄位周圍有單引號或雙引號。 如果有逗號的欄位還可以包含空格，您會需要建立一個自訂敏感性資訊類型，以匹配相應的格式（例如，包含逗號和空格的多字字串），以確保在掃描文檔時該字串能正確匹配。
+
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定義用於敏感性資訊的資料庫結構描述
 
-3. 以 XML 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為 **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行： 
+1. 以 XML 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為 **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行： 
 
       `\<Field name="" searchable=""/\>`.
 
-      - 使用資料行名稱作為*欄位名稱*值。
+      - 使用資料行名稱作為 *欄位名稱* 值。
       - 對您想讓它可供搜尋最多 5 個欄位的欄位，使用 *searchable="true"*。 至少必須有一個欄位可供搜尋。
 
       例如，下列 XML 檔會為病患記錄資料庫定義結構描述，並將五個欄位指定為可供搜尋：*PatientID*、*MRN*、*SSN*、*Phone* 和 *DOB*。
@@ -263,7 +265,7 @@ ms.locfileid: "48681771"
 
 如果您想要變更 **edm.xml** 檔案，例如變更哪些欄位用於以 EDM 為基礎的分類，請遵循下列步驟進行：
 
-1. 編輯您的 **edm.xml** 檔案 (這是本文[定義結構描述](#define-the-schema-for-your-database-of-sensitive-information)這一節所討論的檔案)。
+1. 編輯您的 **edm.xml** 檔案 (這是本文 [定義結構描述](#define-the-schema-for-your-database-of-sensitive-information)這一節所討論的檔案)。
 
 2. 使用[連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) 中的程序，連線到安全性與合規性中心。
 
@@ -397,7 +399,7 @@ just copy SALT over in a secure fashion
 
 #### <a name="set-up-the-security-group-and-user-account"></a>設定安全性群組和使用者帳戶
 
-1. 以全域系統管理員身分，使用[適用於您訂閱的連結](#portal-links-for-your-subscription)前往系統管理中心，並建立名為 **EDM\_DataUploaders** 的[安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
+1. 以全域系統管理員身分，使用 [適用於您訂閱的連結](#portal-links-for-your-subscription)前往系統管理中心，並建立名為 **EDM\_DataUploaders** 的 [安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
 
 2. 將一或多個使用者新增至 **EDM\_DataUploaders** 安全性群組。 (這些使用者將管理敏感性資訊的資料庫)。
 
@@ -446,7 +448,7 @@ just copy SALT over in a secure fashion
 
 範例： **EdmUploadAgent/GetSession/DataStoreName PatientRecords**
 
-尋找 **ProcessingInProgress**的狀態。 每隔幾分鐘再次檢查，直到狀態變更為 **完成**。 狀態完成後，您的 EDM 資料就可以使用了。
+尋找 **ProcessingInProgress** 的狀態。 每隔幾分鐘再次檢查，直到狀態變更為 **完成**。 狀態完成後，您的 EDM 資料就可以使用了。
 
 #### <a name="separate-hash-and-upload"></a>雜湊和上傳分開
 
@@ -622,13 +624,13 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 11. 搜尋您設定規則套件時建立的敏感性資訊類型，然後選擇 [+ 新增 **]**。  
     然後選擇 [完成 **]**。
 
-12. 完成選取規則的選項，例如**使用者通知**、**使用者覆寫**、**事件報告**，依此類推，然後選擇 [儲存]****。
+12. 完成選取規則的選項，例如 **使用者通知**、**使用者覆寫**、**事件報告**，依此類推，然後選擇 [儲存]。
 
-13. 在 [原則設定]**** 索引標籤上，檢閱您的規則，然後選擇 [下一步]****。
+13. 在 [原則設定] 索引標籤上，檢閱您的規則，然後選擇 [下一步]。
 
-14. 指定是否立即開啟原則、測試它，或是保持關閉。 接著選擇 [下一步]****。
+14. 指定是否立即開啟原則、測試它，或是保持關閉。 接著選擇 [下一步]。
 
-15. 在 [檢閱您的設定]**** 索引標籤上，檢閱您的原則。 視需要進行變更。 完成後，選擇 [建立]****。
+15. 在 [檢閱您的設定] 索引標籤上，檢閱您的原則。 視需要進行變更。 完成後，選擇 [建立]。
 
 > [!NOTE]
 > 允許大約一小時的時間，讓您的新 DLP 原則在您的整個資料中心生效。
@@ -640,4 +642,3 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [DLP 原則的概觀](data-loss-prevention-policies.md)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
-
