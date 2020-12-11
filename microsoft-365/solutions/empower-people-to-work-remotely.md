@@ -18,16 +18,16 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: 請確認您已啟用 Microsoft 365 中的所有功能，以充分發揮遠端工作者的生產力，並維持伺服器、資料和雲端的安全存取。
-ms.openlocfilehash: 833f0351c3eb78afb7218ea1c1c51151d70bb608
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371499"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616353"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 強化遠端工作者
 
-貴組織可能必須讓工作人員能夠從家裡安全地存取貴組織的內部部署與雲端式資訊、工具及資源。允許員工遠端辦公對許多組織達到以下目的非常重要：
+貴組織可能必須讓工作人員能夠從家裡安全地存取貴組織的內部部署與雲端式資訊、工具及資源。 允許員工遠端辦公對許多組織達到以下目的非常重要:
 
 - 節省辦公室空間。
 - 聘用並留住不願意調派的工作人員。
@@ -69,9 +69,9 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
   - 共用工作和工作流程來劃分並完成工作。 
 
-若要取得無縫登入體驗，您的內部部署 Active Directory 網域服務 (AD DS) 使用者帳戶應與 Azure Active Directory (Azure AD) 同步處理。為了保護您的 Windows 10 裝置，應在 Intune 中註冊。以下是基礎結構的高階檢視。
+若要取得無縫登入體驗，您的內部部署 Active Directory 網域服務 (AD DS) 使用者帳戶應與 Azure Active Directory (Azure AD) 同步處理。 為了保護您的 Windows 10 裝置，應在 Intune 中註冊。 以下是基礎結構的高階檢視。
 
-![適用於使用 Microsoft 365 遠端工作者的基本基礎結構](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
+![適用於使用 Microsoft 365 之遠端工作者的基本基礎結構](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
 若要為您的遠端工作者啟用 Microsoft 365 的功能，請使用這些 Microsoft 365 功能。
 
@@ -99,9 +99,19 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
 [![強化遠端工作人員海報](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
-您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) 下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
+您也可以以 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) 或 [PowerPoint](https://download.microsoft.com/download/5/1/1/511b77a9-a34c-4ea7-af2a-32b07f20b780/empower-remote-workers.pptx) 格式下載此海報，然後使用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
 
-使用下列步驟來保護和最佳化對組織的伺服器和雲端服務的存取，並讓遠端工作者發揮最高生產力。
+## <a name="provide-remote-working-for-all-of-your-workers"></a>為您所有的員工提供遠端工作能力
+
+您可以使用這些設備使您的所有員工在任何地方都能保持生產力：
+
+- 現代化設備（例如 Surface 膝上型電腦和 Windows 10），具有可透過網路直接存取 Microsoft 365 雲端應用程式和服務的功能、安全性和效能。
+
+- 任何裝置，包含在家中使用的舊版膝上型電腦或桌上型電腦，可透過快速部署 [Windows 10 版的虛擬桌面](empower-people-to-work-remotely-remote-access.md#deploy-windows-virtual-desktop-to-provide-remote-access-for-remote-workers-using-personal-devices)，間接存取 Microsoft 365 雲端應用程式和服務。 此選項可提供高效能、強大的安全性和簡化版的 IT 管理。
+
+## <a name="next-steps"></a>後續步驟
+
+使用下列步驟以保護和最佳化對組織的伺服器和雲端服務的存取，並將遠端工作者的生產力提升至最大。
 
 1. [使用 MFA 提升登入安全性](empower-people-to-work-remotely-secure-sign-in.md)
 2. [可遠端存取內部部署應用程式和服務](empower-people-to-work-remotely-remote-access.md)

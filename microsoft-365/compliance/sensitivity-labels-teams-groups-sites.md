@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: 927b85a5c2ef14313acd5c1637f561342d71ccc0
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: c1232e8e839837fc5564909322c90f634f1c6fa9
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527568"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49614927"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -79,7 +79,7 @@ ms.locfileid: "49527568"
     
     若標籤只選取這個範圍時，標籤就不會顯示在支援靈敏度標籤的 Office 應用程式中，且無法套用到檔案和電子郵件。 將標籤分開可讓使用者和系統管理員使用，但也會增加標籤部署的複雜程度。
     
-    例如，您必須仔細地檢查您的 [標籤排序](sensitivity-labels.md#label-priority-order-matters)，因為 SharePoint 會在標識的檔案上傳到標示的網站時加以偵測。 在此案例中，當檔案的優先順序敏感度標籤高於網站標籤時，系統會自動產生稽核活動和電子郵件。 如需詳細資訊，請參閱本頁面上的 [稽核敏感度標籤活動](#auditing-sensitivity-label-activities) 一節。 
+    例如，您必須仔細地檢查您的[標籤排序](sensitivity-labels.md#label-priority-order-matters)，因為 SharePoint 會在標示的文件上傳到標示的網站時進行偵測。 在此案例中，當文件的敏感度標籤優先順序高於網站標籤時，系統會自動產生稽核活動和電子郵件。 如需詳細資訊，請參閱本頁面上的[稽核敏感度標籤活動](#auditing-sensitivity-label-activities)一節。 
 
 2. 然後，在 **定義群組和網站的保護設定** 頁面上，選取其中一個或兩個皆適用的可用選項：
     
@@ -94,7 +94,7 @@ ms.locfileid: "49527568"
         
         如果您想要使用敏感度標籤來保護容器中的內容，但仍讓使用者自行設定隱私權設定，則選取 **[無]**。
         
-        將此標籤套用至容器時，請選取 **[公用]** 或 **[私人]** 設定以設定和鎖定隱私權設定。 您選擇的設定會取代先前為小組或群組設定的任何隱私權設定，並鎖定隱私權值，因此必須先移除容器的敏感度標籤才能變更隱私權設定。 移除敏感度標籤後，標籤的隱私權設定會保留，使用者現在便可再次變更隱私權設定。
+        將此標籤套用至容器時，請選取 [公用] 或 [私人] 設定來設定和鎖定隱私權設定。 您選擇的設定會取代先前為小組或群組設定的任何隱私權設定，並鎖定隱私權值，因此必須先移除容器的敏感度標籤才能變更隱私權設定。 移除敏感度標籤後，標籤的隱私權設定會保留，使用者現在便可再次變更隱私權設定。
     
     - **外部使用者存取權**：控制群組擁有者是否可以 [將來賓新增至群組](/office365/admin/create-groups/manage-guest-access-in-groups)。
 
@@ -109,7 +109,7 @@ ms.locfileid: "49527568"
 > [!IMPORTANT]
 > 將標籤套用至小組、群組或網站時，只有這些網站和群組設定會生效。 假如 [標籤範圍](sensitivity-labels.md#label-scopes) 包含檔案和電子郵件，其他標籤設定例如加密和內容標記，均不會套用至小組、群組或網站內的內容。
 
-如果您的敏感度標籤尚未發佈，現在請以 [將標籤新增至敏感度標籤原則](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)進行發佈。 包含此標籤、獲指派敏感度標籤原則的使用者將可以為網站和群組選取它。
+如果您的敏感度標籤尚未發佈，現在請[將標籤新增至敏感度標籤原則](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)以進行發佈。 包含此標籤、獲指派敏感度標籤原則的使用者將可以為網站和群組選取它。
 
 ##### <a name="more-information-about-the-dependencies-for-the-unmanaged-devices-option"></a>關於 [未受管理裝置] 選項的詳細資訊
 
@@ -379,7 +379,7 @@ ms.locfileid: "49527568"
 
 您可以使用來自[啟用 PowerShell 中的敏感度標籤支援](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#enable-sensitivity-label-support-in-powershell)中的相同指示來關閉 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站的敏感度標籤。 不過，若要停用此功能，請在步驟 5 中指定 `$setting["EnableMIPLabels"] = "False"`。
 
-除了在建立或編輯敏感度標籤時隱藏所有的群組和網站設定 ，此動作會還原容器用於其設定的屬性。 為 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤，會將使用的屬性從 **[分類]** (用於 [Azure AD 群組分類](#classic-azure-ad-group-classification)) 切換為 **[敏感度]**。 停用容器的敏感度標籤時，容器會忽略 [敏感度] 屬性，並再次使用 [分類] 屬性。
+除了在建立或編輯敏感度標籤時隱藏所有的群組和網站設定 ，此動作會還原容器用於其設定的屬性。 為 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站啟用敏感度標籤，會將使用的屬性從 [分類] (用於 [Azure AD 群組分類](#classic-azure-ad-group-classification)) 切換為 [敏感度]。 停用容器的敏感度標籤時，容器會忽略 [敏感度] 屬性，並再次使用 [分類] 屬性。
 
 這表示來自網站和群組、先前套用至容器的任何標籤設定都不會強制執行，而容器則不再顯示標籤。
 
