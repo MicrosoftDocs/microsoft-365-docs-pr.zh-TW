@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虛構但有代表性的全球組織如何部署 Microsoft 365 解決方案。
-ms.openlocfilehash: 66040bdd64e83d796e6d045aad2f512898452c50
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: 1e06da623a9d580d71823ab030976b213a9e7022
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371633"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620548"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>適用於 Contoso Corporation 的 Microsoft 365 解決方案
 
@@ -38,3 +38,4 @@ Contoso 對於 Microsoft 365 企業版的整體目標是藉由使用雲端服務
 
 - [將內部部署的使用者移轉到 Teams，以進行整合通訊、共同作業及語音作業](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
 
+- [設定適用於 Microsoft Teams、Exchange 和 Yammer 通訊的粗穢言語原則](../compliance/communication-compliance-case-study.md)

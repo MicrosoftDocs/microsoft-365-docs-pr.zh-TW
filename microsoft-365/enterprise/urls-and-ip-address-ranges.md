@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 摘要：Office 365 需要連線到網際網路。客戶必須可使用 Office 365 方案取得下列端點，包括 Government Community Cloud (GCC)。
 hideEdit: true
-ms.openlocfilehash: 6e6cddb43b0c57296267b4d8f00d7efdf40b2b3d
-ms.sourcegitcommit: ccbb405227880f40581c3cdfb974368a29d496f7
+ms.openlocfilehash: d5880a6fcd2d66fb8ae1e987573eca6487181451
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48791832"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624751"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 和 IP 位址範圍
 
@@ -49,15 +49,15 @@ Office 365 需具有網際網路的連線能力。使用　Office 365 方案的�
 
 所顯示的資料行為︰
 
-- **識別碼** ：資料列的識別碼，也就是端點設定。此 ID 與端點設定的 web 服務所傳回的相同。
+- **識別碼**：資料列的識別碼，也就是端點設定。此 ID 與端點設定的 web 服務所傳回的相同。
 
-- **類別** ：顯示端點設定是否分類為「最佳」、「允許」或「預設」。您可以在 [新 Office 365 端點類別](microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)中讀取這些類別和在其中管理的指導方針。此欄也會列出網路連線需要哪些端點設定。對於不需要有網路連線的端點設定，我們會在這個欄位中提供附註，表示如果端點設定受到封鎖，將會遺失什麼功能。如果您不包含整個服務區域，視需要列出的端點設定將不需要連線能力。
+- **類別**：顯示端點設定是否分類為「最佳」、「允許」或「預設」。您可以在 [新 Office 365 端點類別](microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories)中讀取這些類別和在其中管理的指導方針。此欄也會列出網路連線需要哪些端點設定。對於不需要有網路連線的端點設定，我們會在這個欄位中提供附註，表示如果端點設定受到封鎖，將會遺失什麼功能。如果您不包含整個服務區域，視需要列出的端點設定將不需要連線能力。
 
--  。包含所顯示路由首碼的 BGP 社群會對齊所列的服務區域。當 ER 為 [否]  時，表示 ExpressRoute 不支援此端點集合。不過，不應假設 ER 為 [否]  的端點設定不會通告任何路由。
+- **ER**：如果端點設定透過 Azure ExpressRoute 使用 Office 365 路由首碼支援，則這是 [是]。包含所顯示路由首碼的 BGP 社群會對齊所列的服務區域。當 ER 為 [否] 時，表示 ExpressRoute 不支援此端點集合。不過，不應假設 ER 為 [否] 的端點設定不會通告任何路由。
 
-- **地址** ：列出端點設定的 FQDN 或萬用字元網域名稱及 IP 位址範圍。請注意，IP 位址範圍為 CIDR 格式，且在指定的網路中可能包含讓多個個別的 IP 位址。
+- **地址**：列出端點設定的 FQDN 或萬用字元網域名稱及 IP 位址範圍。請注意，IP 位址範圍為 CIDR 格式，且在指定的網路中可能包含讓多個個別的 IP 位址。
  
-- **連接埠** ：列出與地址結合以形成網路端點的 TCP 或 UDP 連接埠。您可能會注意到列出不同連接埠的某些 IP 位址範圍中有重複項目。
+- **連接埠**：列出與地址結合以形成網路端點的 TCP 或 UDP 連接埠。您可能會注意到列出不同連接埠的某些 IP 位址範圍中有重複項目。
 
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
@@ -68,6 +68,8 @@ Office 365 需具有網際網路的連線能力。使用　Office 365 方案的�
 ## <a name="related-topics"></a>相關主題
 
 [管理 Office 365 端點](managing-office-365-endpoints.md)
+
+[一般 Microsoft Stream 端點](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
 [Office 365 連線能力疑難排解](https://support.office.com/article/d4088321-1c89-4b96-9c99-54c75cae2e6d.aspx)
 
