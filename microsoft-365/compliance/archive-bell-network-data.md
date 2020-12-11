@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定 TeleMessage 連接器，以匯入並封存來自電鈴網路的 SMS 和 MMS 資料。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: ad4b8a51e88e6477d9d4408c9faee1d83590eaa9
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d615488e5f6441efd828a6b91c187e7a8f5ca2c8
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200572"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620474"
 ---
 # <a name="set-up-a-connector-to-archive-bell-network-data"></a>設定連接器以進行封存鈴聲網路資料
 
@@ -53,23 +53,21 @@ ms.locfileid: "48200572"
 
 - 您的員工在鈴行動網路上必須擁有公司擁有和公司的行動電話。 在 Microsoft 365 中封存郵件無法供員工擁有，或「帶您自己的裝置 (BYOD) 裝置。
 
-- 您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 當您建立連接器時，將需要提供此同意。 若要同意此要求，請移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全域管理員的認證登入，然後接受要求。 您必須先完成此步驟，才可成功建立電鈴網路連接器。
-
 - 在 Exchange Online 中，必須將信箱匯入匯出角色指派給建立電鈴網路連接器的使用者。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 ## <a name="create-a-bell-network-connector"></a>建立電鈴網路連接器
 
 最後一個步驟是在 Microsoft 365 規範中心建立電鈴網路連接器。 連接器會使用您提供的資訊來連線至 TeleMessage 網站，並將 SMS/MMS 郵件轉接至 Microsoft 365 中對應的使用者信箱方塊。
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然後按一下 [**資料連線器**]  >  **鈴聲 SMS/MMS 網路**記錄器。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然後按一下 [**資料連線器**]  >  **鈴聲 SMS/MMS 網路** 記錄器。
 
-2. 在 [**鈴聲網路**產品描述] 頁面上，按一下 [**新增連接器**]
+2. 在 [**鈴聲網路** 產品描述] 頁面上，按一下 [**新增連接器**]
 
 3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受**]。
 
 4. 在 [ **登入 TeleMessage** ] 頁面的 [步驟 3] 下，于下列方塊中輸入必要的資訊，然後按 **[下一步]**。
 
-   - 使用者**名稱：** 您的 TeleMessage 使用者名稱。
+   - 使用者 **名稱：** 您的 TeleMessage 使用者名稱。
 
    - **密碼：** 您的 TeleMessage 密碼。
 
@@ -77,13 +75,9 @@ ms.locfileid: "48200572"
 
 6. 在 [ **使用者對應** ] 頁面上，啟用自動使用者對應。 若要啟用自訂對應，請上傳包含使用者對應資訊的 CSV 檔案，然後按 **[下一步]**。
 
-7. 提供系統管理員同意，然後按 **[下一步]**。
+7. 請複查您的設定，然後按一下 **[完成]** 以建立連接器。
 
-   若要提供系統管理員同意，您必須以 Office 365 全域管理員的認證登入，然後接受同意要求。 如果您未以全域系統管理員身分登入，您可以移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，並使用全域系統管理員認證登入，以接受要求。
-
-8. 請複查您的設定，然後按一下 **[完成]** 以建立連接器。
-
-9. 移至「規範中心」的 [**資料連線器**] 頁面上的 [**連接器**] 索引標籤，以查看新連接器的匯入程式的處理進度。
+8. 移至「規範中心」的 [**資料連線器**] 頁面上的 [**連接器**] 索引標籤，以查看新連接器的匯入程式的處理進度。
 
 ## <a name="known-issues"></a>已知問題
 

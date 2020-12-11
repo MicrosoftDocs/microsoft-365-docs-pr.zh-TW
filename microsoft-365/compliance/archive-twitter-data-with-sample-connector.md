@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 瞭解系統管理員如何設定和使用原生連接器，將 Twitter 資料匯入 Microsoft 365。
-ms.openlocfilehash: 15434899eb90f26205907c474b8d2238db536948
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: b4eadc58393df651505287f9238f43a1db0563a8
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255840"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620259"
 ---
 # <a name="set-up-a-connector-to-archive-twitter-data-preview"></a>設定連接器以封存 Twitter 資料 (預覽) 
 
@@ -45,8 +45,6 @@ ms.locfileid: "47255840"
     > [!NOTE]
     > Microsoft 365 訂閱隨附的 [免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md) 不支援 Security & 合規性中心內的連接器。
 
-- 您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要同意此要求，請移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，並以全域管理員的認證登入，然後接受要求。
-
 - 在步驟 5) 中設定 Microsoft 365 規範 (中心內的 Twitter 連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [  [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>步驟1：在 Azure Active Directory 中建立應用程式
@@ -65,7 +63,7 @@ ms.locfileid: "47255840"
 
 ## <a name="step-2-deploy-connector-web-service-from-github-repository-to-your-azure-account"></a>步驟2：將連接器 web 服務從 GitHub 存放庫部署至您的 Azure 帳戶
 
-下一步是部署 Twitter 連接器應用程式的原始程式碼，該應用程式會使用 Twitter API 連線到 Twitter 帳戶並提取資料，以便您將資料匯入至 Microsoft 365。 您為組織部署的 Twitter 連接器會將組織的 Twitter 帳戶中的專案上傳至此步驟中建立的 Azure 儲存體位置。 在 [步驟 5) ] 中的 [Microsoft 365 規範 (中心] 中建立 Twitter 連接器之後，Office 365 匯入服務會將 Twitter 資料從 Azure 存放位置複製到 Microsoft 365 中的信箱。 如先前在 [必要條件](#prerequisites-for-setting-up-a-connector-for-twitter) 區段中所述，您必須具備有效的 azure 訂閱，才可建立 Azure 儲存體帳戶。
+下一步是部署 Twitter 連接器應用程式的原始程式碼，該應用程式會使用 Twitter API 連線到 Twitter 帳戶並提取資料，以便您將資料匯入至 Microsoft 365。 您為組織部署的 Twitter 連接器會將組織的 Twitter 帳戶中的專案上傳至此步驟中建立的 Azure 儲存體位置。 在 [步驟 5) ] 中的 [Microsoft 365 規範 (中心] 中建立 Twitter 連接器之後，Microsoft 365 匯入服務會將 Twitter 資料從 Azure 存放位置複製到 Microsoft 365 中的信箱。 如先前在 [必要條件](#prerequisites-for-setting-up-a-connector-for-twitter) 區段中所述，您必須具備有效的 azure 訂閱，才可建立 Azure 儲存體帳戶。
 
 若要部署 Twitter 連接器應用程式的原始程式碼：
 
@@ -121,7 +119,7 @@ ms.locfileid: "47255840"
 
 ## <a name="step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center"></a>步驟5：在 Microsoft 365 規範中心設定 Twitter 連接器
 
-最後一個步驟是在 Microsoft 365 規範中心內設定 Twitter 連接器，將您組織的 Twitter 帳戶中的資料匯入至 Microsoft 365 中的指定信箱。 完成此步驟後，Office 365 匯入服務將開始從您組織的 Twitter 帳戶將資料匯入至 Microsoft 365。
+最後一個步驟是在 Microsoft 365 規範中心內設定 Twitter 連接器，將您組織的 Twitter 帳戶中的資料匯入至 Microsoft 365 中的指定信箱。 完成此步驟後，Microsoft 365 匯入服務將開始從您組織的 Twitter 帳戶將資料匯入至 Microsoft 365。
 
 如需逐步指示，請參閱 [在 Microsoft 365 規範中心內設定 Twitter 連接器](deploy-twitter-connector.md#step-5-set-up-a-twitter-connector-in-the-microsoft-365-compliance-center)。 
 

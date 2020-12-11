@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，以從 Microsoft 365 的 Globanet 匯入和封存 Cisco Jabber) 資料。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料。 封存此資料之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理協力廠商資料。
-ms.openlocfilehash: f20d7827b2ec00fe5c7acc491d7a595d99fe8589
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 2790a29cdfa090372976d78de2e5cc5e5c5ce12e
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816606"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620039"
 ---
 # <a name="set-up-a-connector-to-archive-cisco-jabber-data"></a>設定連接器以封存 Cisco Jabber) 資料
 
@@ -39,7 +39,7 @@ Cisco Jabber) 資料儲存在使用者信箱之後，您可以套用 Microsoft 3
 
 4. 自動使用者對應為連接器會使用 [步驟 3](#step-3-map-users-and-complete-the-connector-setup)中所述的 *Email* 屬性值，將專案匯入特定使用者的信箱。 在使用者信箱中建立名為 **Cisco jabber)** 的 [收件匣] 資料夾中的子資料夾，並將訊息項目匯入該資料夾。 連接器會使用 *Email* 屬性的值來決定要匯入專案的信箱。 每個 Cisco Jabber) 專案都包含此屬性，它會填入每個參與者的電子郵件地址。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 - 為 Microsoft connector 建立 Globanet Merge1 帳戶。 若要建立此帳戶，請與 [Globanet 客戶支援](https://globanet.com/ms-connectors-contact/)人員聯繫。 當您在步驟1中建立連接器時，您會登入此帳戶。
 
@@ -51,13 +51,13 @@ Cisco Jabber) 資料儲存在使用者信箱之後，您可以套用 Microsoft 3
 
 第一步是存取 Microsoft 365 規範中心內的 **資料連線器** ，並在 MS SQL 資料上建立用於 Cisco jabber) 的連接器。
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 **Data connectors**  >  **[microsoft SQL] 上的** [資料連線器 Cisco jabber) ]。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下  >  **[microsoft SQL] 上的**[資料連線器 Cisco jabber) ]。
 
-2. 在 [ **MS SQL 產品的 Cisco jabber)** ] 描述頁面上，按一下 [ **新增連接器** ]。
+2. 在 [ **MS SQL 產品的 Cisco jabber)** ] 描述頁面上，按一下 [ **新增連接器**]。
 
-3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受** ]。
+3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受**]。
 
-4. 輸入識別連接器的唯一名稱，然後按 **[下一步]** 。
+4. 輸入識別連接器的唯一名稱，然後按 **[下一步]**。
 
 5. 登入您的 Merge1 帳戶以設定連接器。
 
@@ -71,13 +71,9 @@ Cisco Jabber) 資料儲存在使用者信箱之後，您可以套用 Microsoft 3
 
 若要在 Microsoft 365 規範中心內對應使用者並完成連接器設定，請遵循下列步驟：
 
-1. 在 [將 **MS SQL 使用者上的 Cisco Jabber) 對應至 Microsoft 365 使用者** ] 頁面上，啟用 [自動使用者對應]。 MS SQL 專案上的 Cisco Jabber) 包含一個名為「 *電子郵件* 」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
+1. 在 [將 **MS SQL 使用者上的 Cisco Jabber) 對應至 Microsoft 365 使用者** ] 頁面上，啟用 [自動使用者對應]。 MS SQL 專案上的 Cisco Jabber) 包含一個名為「 *電子郵件*」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
 
-2. 在 [系統 **管理員同意** ] 頁面上，按一下 [ **提供同意** ]。 您將會重新導向至 Microsoft 網站。 按一下 [ **接受** ] 以提供同意。
-
-   您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要提供系統管理員同意，您必須使用 Microsoft 365 全域管理員的認證登入，然後接受同意要求。 如果您未以全域系統管理員身分登入，您可以移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，並使用全域系統管理員認證登入，以接受要求。
-
-3. 按 **[下一步]** ，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
+2. 按 **[下一步]**，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
 
 ## <a name="step-4-monitor-the-cisco-jabber-connector"></a>步驟4：監控 Cisco Jabber) 連接器
 
@@ -87,7 +83,7 @@ Cisco Jabber) 資料儲存在使用者信箱之後，您可以套用 Microsoft 3
 
 2. 按一下 [ **連接器** ] 索引標籤，然後選取 [ **MS SQL connector] 上的 Cisco jabber)** ，以顯示飛入頁面。 此頁面包含連接器的屬性和資訊。
 
-3. 在 [ **連接器狀態與來源** ] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含已匯入至 Microsoft 雲端的資料。
+3. 在 [ **連接器狀態與來源**] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含已匯入至 Microsoft 雲端的資料。
 
 ## <a name="known-issues"></a>已知問題
 

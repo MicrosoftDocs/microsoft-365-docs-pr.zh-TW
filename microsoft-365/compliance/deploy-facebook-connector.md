@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理員可以設定原生連接器，將 Facebook 商務頁面匯入和封存至 Microsoft 365。 在將資料匯入 Microsoft 365 之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理組織 Facebook 資料的控管。
-ms.openlocfilehash: 065a5c6a1276c1ce37aa48137caf6627e76c8db0
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: b771c50eb5c2eb5f99269f1f399d27043ebee6bb
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200858"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619949"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>部署連接器以封存 Facebook 商務頁面資料
 
@@ -36,7 +36,7 @@ ms.locfileid: "48200858"
 
     ![按一下 [Azure Active Directory]](../media/FBCimage2.png)
 
-3. 在左功能窗格中，按一下 [ **應用程式註冊] (預覽) ** 然後按一下 [ **新增註冊**]。
+3. 在左功能窗格中，按一下 [ **應用程式註冊] (預覽)** 然後按一下 [ **新增註冊**]。
 
     ![依序按一下 [* (預覽) 中的 [應用程式註冊] * *，然後按一下 [新增註冊] * *](../media/FBCimage3.png)
 
@@ -100,7 +100,7 @@ ms.locfileid: "48200858"
 
    ![建立新的應用程式識別碼](../media/FBCimage26.png)
 
-3. 在左功能窗格中，按一下 [**新增產品**]，然後按一下**Facebook 登**入磚中的 [**設定**]。
+3. 在左功能窗格中，按一下 [**新增產品**]，然後按一下 **Facebook 登** 入磚中的 [**設定**]。
 
    ![按一下 [新增產品]](../media/FBCimage27.png)
 
@@ -116,7 +116,7 @@ ms.locfileid: "48200858"
 
    ![完成快速入門區段](../media/FBCimage30.png)
 
-7. 在 [ **Facebook 登**入] 底下的左導覽窗格中，按一下 [ **設定**]，然後在 [ **有效的 OAuth 重新 URIs 導向** ] 方塊中新增 OAuth 重新導向 URI。 使用格式** \<connectorserviceuri> /Views/FacebookOAuth**，其中 connectorserviceuri 的值是您組織的 Azure 應用程式服務 URL; 例如， `https://fbconnector.azurewebsites.net` 。
+7. 在 [ **Facebook 登** 入] 底下的左導覽窗格中，按一下 [ **設定**]，然後在 [ **有效的 OAuth 重新 URIs 導向** ] 方塊中新增 OAuth 重新導向 URI。 使用格式 **\<connectorserviceuri> /Views/FacebookOAuth**，其中 connectorserviceuri 的值是您組織的 Azure 應用程式服務 URL; 例如， `https://fbconnector.azurewebsites.net` 。
 
    ![將 OAuth 重新導向 URI 新增至有效的 OAuth 重新導向 URIs 框](../media/FBCimage31.png)
 
@@ -124,7 +124,7 @@ ms.locfileid: "48200858"
 
    ![按一下 [新增產品]，然後按一下 [* * Webhooks]。](../media/FBCimage32.png)
 
-9. 新增 Webhooks 回呼 URL，並新增驗證權杖。 回呼 URL 的格式，請使用格式** <connectorserviceuri> /api/FbPageWebhook**，其中 connectorserviceuri 的值是您的組織的 Azure 應用程式服務 URL; 例如 `https://fbconnector.azurewebsites.net` 。
+9. 新增 Webhooks 回呼 URL，並新增驗證權杖。 回呼 URL 的格式，請使用格式 **<connectorserviceuri> /api/FbPageWebhook**，其中 connectorserviceuri 的值是您的組織的 Azure 應用程式服務 URL; 例如 `https://fbconnector.azurewebsites.net` 。
 
    驗證權杖應類似強式密碼。 將驗證權杖複製到文字檔或其他儲存位置。
 
@@ -226,8 +226,6 @@ ms.locfileid: "48200858"
 
 12. 在 [ **選擇儲存位置** ] 頁面上，輸入 Facebook 專案將匯入的 Microsoft 365 信箱的電子郵件地址，然後按 **[下一步]**。
 
-13. 在 [ **提供管理員同意**] 中，按一下 [ **提供同意** ]，然後依照步驟進行。 您必須是全域系統管理員，才可對您組織中的資料提供 Office 365 匯入服務的同意。
+13. 按 **[下一步]** 以查看連接器設定，然後按一下 **[完成]** 以完成連接器設定。
 
-14. 按 **[下一步]** 以查看連接器設定，然後按一下 **[完成]** 以完成連接器設定。
-
-15. 在 [規範中心] 中，移至 [ **資料連線器** ] 頁面，然後按一下 [ **連接器** ] 索引標籤，以查看匯入程式的進度。
+14. 在 [規範中心] 中，移至 [ **資料連線器** ] 頁面，然後按一下 [ **連接器** ] 索引標籤，以查看匯入程式的進度。

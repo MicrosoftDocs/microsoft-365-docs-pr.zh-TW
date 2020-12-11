@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，將 XIP 來源資料從 Globanet 匯入至 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料。 封存此資料之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理協力廠商資料。
-ms.openlocfilehash: 1e2513df8666056f623ef4b5bb42699663d51b64
-ms.sourcegitcommit: 95b85a1fdf43e3f0839483fa22e279262703f15f
+ms.openlocfilehash: 0af68177d51f143dd29d953050ae4e18fb8ad62d
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "49407317"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620189"
 ---
 # <a name="set-up-a-connector-to-archive-xip-source-data"></a>設定連接器以封存 XIP 來來源資料
 
@@ -71,11 +71,7 @@ XIP 來來源資料儲存在使用者信箱之後，您可以套用 Microsoft 36
 
 1. 在 [將 **XIP 使用者對應至 Microsoft 365 使用者** ] 頁面上，啟用 [自動使用者對應]。 XIP 來源專案包括稱為「 *電子郵件*」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
 
-2. 在 [系統 **管理員同意** ] 頁面上，按一下 [ **提供同意** ] 按鈕。 您將會重新導向至 Microsoft 網站。 按一下 [ **接受** ] 以提供同意。
-
-   您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要提供系統管理員同意，您必須使用 Microsoft 365 全域管理員的認證登入，然後接受同意要求。 如果您未以全域系統管理員身分登入，您可以移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，並使用全域系統管理員認證登入，以接受要求。
-
-3. 按 **[下一步]**，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
+2. 按 **[下一步]**，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
 
 ## <a name="step-4-monitor-the-xip-connector"></a>步驟4：監控 XIP 連接器
 

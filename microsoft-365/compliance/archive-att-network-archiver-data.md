@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定 TeleMessage 連接器，以匯入及封存來自&T 行動電話的 SMS 和 MMS 資料。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 253acb23e9ac2cd5d97dfd2aaaedecec3d91a91f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: ba728a690db4d4c31158ad68fc853c29218226cc
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408971"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620119"
 ---
 # <a name="set-up-a-connector-to-archive-att-smsmms-data"></a>設定在&T SMS/MMS 資料時封存的連接器
 
@@ -41,7 +41,7 @@ ms.locfileid: "48408971"
  
    除了使用 *使用者之電子郵件地址* 屬性值的自動使用者對應，您也可以透過上載 CSV 對應檔來定義自訂對應。 此對應檔包含組織中使用者的行動電話號碼和對應的 Microsoft 365 電子郵件地址。 如果您同時啟用自動使用者對應及自訂對應，連接器會先查看自訂對應檔案。 如果找不到與行動電話號碼對應的有效 Microsoft 365 使用者，連接器會使用嘗試匯入之專案的電子郵件地址屬性值。 如果連接器在自訂對應檔案中或電子郵件專案的電子郵件地址屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 在&T 網路資料上封存所需的部分執行步驟是 Microsoft 365 的外部，必須先完成，您才能在規範中心建立連接器。
 
@@ -53,8 +53,6 @@ ms.locfileid: "48408971"
 
 - 您的員工在&T 行動電話上必須擁有公司擁有及公司的行動電話。 在 Microsoft 365 中封存郵件無法供員工擁有，或「帶您自己的裝置 (BYOD) 裝置。
 
-- 您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 當您建立連接器時，將需要提供此同意。 若要同意此要求，請移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全域管理員的認證登入，然後接受要求。 您必須完成此步驟，才能成功建立&T 網路連接器。
-
 - 在 Exchange Online 中，您必須將信箱匯入匯出角色指派給在&T 網路連接器上建立的使用者。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 ## <a name="create-a-att-network-connector"></a>在&T 網路連接器上建立
@@ -63,13 +61,13 @@ ms.locfileid: "48408971"
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [**資料連線器**]，然後按一下 [  \  **&T 網路**]。
 
-2. 在 [ **&T 網路產品**描述] 頁面上，按一下 [**新增連接器**]
+2. 在 [ **&T 網路產品** 描述] 頁面上，按一下 [**新增連接器**]
 
 3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受**]。
 
 4. 在 [ **登入 TeleMessage** ] 頁面的 [步驟 3] 下，于下列方塊中輸入必要的資訊，然後按 **[下一步]**。
 
-   - 使用者**名稱：** 您的 TeleMessage 使用者名稱。
+   - 使用者 **名稱：** 您的 TeleMessage 使用者名稱。
 
    - **密碼：** 您的 TeleMessage 密碼。
 
@@ -77,13 +75,9 @@ ms.locfileid: "48408971"
 
 6. 在 [ **使用者對應** ] 頁面上，啟用自動使用者對應。 若要啟用自訂對應，請上傳包含使用者對應資訊的 CSV 檔案，然後按 **[下一步]**。
 
-7. 提供系統管理員同意，然後按 **[下一步]**。
+7. 請複查您的設定，然後按一下 **[完成]** 以建立連接器。
 
-   若要提供系統管理員同意，您必須以 Office 365 全域管理員的認證登入，然後接受同意要求。 如果您未以全域系統管理員身分登入，您可以移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，並使用全域系統管理員認證登入，以接受要求。 
-
-8. 請複查您的設定，然後按一下 **[完成]** 以建立連接器。
-
-9. 移至「規範中心」的 [**資料連線器**] 頁面上的 [**連接器**] 索引標籤，以查看新連接器的匯入程式的處理進度。
+8. 移至「規範中心」的 [**資料連線器**] 頁面上的 [**連接器**] 索引標籤，以查看新連接器的匯入程式的處理進度。
 
 ## <a name="known-issues"></a>已知問題
 

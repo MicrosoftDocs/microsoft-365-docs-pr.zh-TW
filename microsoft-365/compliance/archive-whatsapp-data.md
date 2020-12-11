@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定 TeleMessage 連接器，以匯入和封存 Microsoft 365 中的 WhatsApp 資料。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 2600356fc2628d5832f93f7dbe4fc247d8812410
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 573316f262295cce417876ef77510da14b877c67
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087180"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620179"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>設定連接器以封存 WhatsApp 資料
 
@@ -51,8 +51,6 @@ ms.locfileid: "49087180"
 
 - 在您員工的行動電話上安裝 TeleMessage [WhatsApp 電話歸檔器應用程式](https://www.telemessage.com/mobile-archiver/whatsapp-phone-archiver-2/) ，並加以啟動。 或者，您也可以在您員工的行動電話上安裝一般 WhatsApp 或 WhatsApp 商務應用程式，並在 TeleMessage 網站上掃描 QR 碼，以啟動 WhatsApp 雲端歸檔服務。 如需詳細資訊，請參閱 [WhatsApp Cloud 存檔](https://www.telemessage.com/mobile-archiver/whatsapp-archiver/whatsapp-cloud-archiver/)器。
 
-- 您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 當您建立連接器時，將需要提供此同意。 若要同意此要求，請移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全域管理員的認證登入，然後接受要求。 您必須完成此步驟，才能成功建立 Verizon 網路連接器。
-
 - 在 Exchange Online 中，必須對建立 Verizon 網路連接器的使用者指派「信箱匯入匯出」角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 ## <a name="create-a-whatsapp-archiver-connector"></a>建立 WhatsApp 的歸檔器連接器
@@ -75,13 +73,9 @@ ms.locfileid: "49087180"
 
 6. 在 [ **使用者對應** ] 頁面上啟用 [自動使用者對應]，然後按 **[下一步]**。 如果您需要自訂對應，請上載 CSV 檔案，然後按 **[下一步]**。
 
-7. 提供系統管理員同意，然後按 **[下一步]**。
+7. 請複查您的設定，然後按一下 **[完成]** 以建立連接器。
 
-   若要提供系統管理員同意，您必須以 Office 365 全域管理員的認證登入，然後接受同意要求。 如果您未以全域系統管理員身分登入，您可以移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，並使用全域系統管理員認證登入，以接受要求。
-
-8. 請複查您的設定，然後按一下 **[完成]** 以建立連接器。
-
-9. 移至 [ **資料連線器** ] 頁面中的 [連接器] 索引標籤，以查看新連接器的匯入程式的進度。
+8. 移至 [ **資料連線器** ] 頁面中的 [連接器] 索引標籤，以查看新連接器的匯入程式的進度。
 
 ## <a name="known-issues"></a>已知問題
 

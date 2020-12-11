@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定 TeleMessage 連接器，以匯入並封存來自 Android 行動電話的 SMS、MMS 和語音通話。 這可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 920d4eb0636d867934c275e4a4d4549515bf32ce
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 5837d5247ca7ac82389d2781110883058ca98bb7
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408931"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620528"
 ---
 # <a name="set-up-a-connector-to-archive-android-mobile-data"></a>設定連接器以封存 Android 行動電話資料
 
@@ -39,7 +39,7 @@ ms.locfileid: "48408931"
 
 4. 連接器會將行動通訊專案匯入特定使用者的信箱。 在特定使用者的信箱中建立名為 Android 建立器的新資料夾，並將這些專案匯入該資料夾。 連接器會使用 *使用者的電子郵件地址* 屬性值進行對應。 每封電子郵件都包含此內容，該屬性會填入電子郵件的每個參與者的電子郵件地址。 除了使用 *使用者之電子郵件地址* 屬性值的自動使用者對應，您也可以透過上載 CSV 對應檔來定義自訂對應。 這個對應檔案應該包含使用者的行動電話號碼，以及每位使用者對應的 Microsoft 365 信箱位址。 如果您啟用自動使用者對應，並提供自訂對應，則每個電子郵件專案連接器都會先查看自訂對應檔案。 如果找不到與使用者的行動電話號碼相對應的有效 Microsoft 365 使用者，連接器會使用該電子郵件專案的使用者電子郵件地址屬性。 如果連接器在自訂對應檔案或電子郵件專案的 [ *電子郵件地址* ] 屬性中找不到有效的 Microsoft 365 使用者，則不會匯入該專案。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 封存 Android 通訊資料所需的部分執行步驟是 Microsoft 365 的外部，必須先完成，您才能在規範中心建立連接器。
 
@@ -49,15 +49,13 @@ ms.locfileid: "48408931"
 
 - 在您員工的行動電話上安裝及啟用 TeleMessage Android 歸檔應用程式。
 
-- 您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 當您建立連接器時，將需要提供此同意。 若要同意此要求，請移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全域管理員的認證登入，然後接受要求。 您必須完成此步驟，才能成功建立&T 網路連接器。
-
 - 在 Exchange Online 中，必須將信箱匯入匯出角色指派給建立 Android 歸檔連接器的使用者。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 ## <a name="create-an-android-archiver-connector"></a>建立 Android 歸檔連接器
 
 最後一個步驟是在 Microsoft 365 規範中心建立 Android 歸檔連接器。 連接器會使用您提供的資訊來連線至 TeleMessage 網站，並將 Android 通訊傳送至 Microsoft 365 中對應的使用者信箱方塊。
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並按一下 [**資料連線器**  >  **Android 歸檔**器]。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) 並按一下 [**資料連線器**  >  **Android 歸檔** 器]。
 
 2. 在 [ **Android 歸檔** 器產品描述] 頁面上，按一下 [ **新增連接器**]。
 
@@ -65,7 +63,7 @@ ms.locfileid: "48408931"
 
 4. 在 [ **登入 TeleMessage** ] 頁面的 [步驟 3] 下，于下列方塊中輸入必要的資訊，然後按 **[下一步]**。
 
-   - 使用者**名稱：** 您的 TeleMessage 使用者名稱。
+   - 使用者 **名稱：** 您的 TeleMessage 使用者名稱。
 
    - **密碼：** 您的 TeleMessage 密碼。
 
@@ -73,13 +71,9 @@ ms.locfileid: "48408931"
 
 6. 在 [ **使用者對應** ] 頁面上啟用 [自動使用者對應]，然後按 **[下一步]**。 如果您需要自訂對應，請上載 CSV 檔案，然後按 **[下一步]**。
 
-7. 提供系統管理員同意，然後按 **[下一步]**。
+7. 請複查您的設定，然後按一下 **[完成]** 以建立連接器。
 
-   若要提供系統管理員同意，您必須以 Office 365 全域管理員的認證登入，然後接受同意要求。 如果您未以全域系統管理員身分登入，您可以移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，並使用全域系統管理員認證登入，以接受要求。
-
-8. 請複查您的設定，然後按一下 **[完成]** 以建立連接器。
-
-9. 移至 [ **資料連線器** ] 頁面中的 [連接器] 索引標籤，以查看新連接器的匯入程式的進度。
+8. 移至 [ **資料連線器** ] 頁面中的 [連接器] 索引標籤，以查看新連接器的匯入程式的進度。
 
 ## <a name="known-issues"></a>已知問題
 

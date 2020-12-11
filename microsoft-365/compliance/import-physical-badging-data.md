@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理員可以設定資料連線器，將資料從其組織的實體聲譽徽章授予系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的這項資料，協助您偵測特定使用者對實體辦公樓的存取權，這可能表示您的組織可能會發生內部威脅。
-ms.openlocfilehash: 71f43d8e6abd53454b6c81d811d0dca2e8b08388
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 7e745b42d0df79f5c39f9fa02cb1b63f164ec2a5
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816646"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620129"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>設定連接器以匯入實體聲譽徽章授予資料 (預覽) 
 
@@ -39,8 +39,6 @@ ms.locfileid: "48816646"
 
 ## <a name="before-you-set-up-the-connector"></a>在您設定連接器之前
 
-- 您的組織必須同意允許 Office 365 匯入服務存取您組織中的資料。 若要同意此要求，請移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全域管理員的認證登入，然後接受要求。 您必須完成此步驟，才可在步驟3中成功建立實體聲譽徽章授予連接器。
-
 - 在步驟3中建立實體聲譽徽章授予連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立新的角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 - 您必須決定如何每日 (檢索或匯出組織實體聲譽徽章授予系統中的資料) 並建立步驟2中所述的 JSON 檔案。 您在步驟4中執行的腳本會將 JSON 檔案中的資料推送至 API 端點。
@@ -53,9 +51,9 @@ ms.locfileid: "48816646"
 
 - Azure AD 應用程式識別碼 (也稱為「 *應用程式識別碼* 」或「 *用戶端識別碼* 」) 
 
-- Azure AD 應用程式機密 (也稱為 *用戶端密碼* ) 
+- Azure AD 應用程式機密 (也稱為 *用戶端密碼*) 
 
-- 租使用者識別碼 (也稱為 *目錄識別碼* ) 
+- 租使用者識別碼 (也稱為 *目錄識別碼*) 
 
 如需在 Azure AD 中建立應用程式的逐步指示，請參閱 [使用 Microsoft identity Platform 註冊應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
 
@@ -137,11 +135,11 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下左側導覽中的 [ **資料連線器** ]。
 
-2. 在 [ **實際聲譽徽章授予** ] 底下的 [ **資料連線器** ] 頁面上，按一下 [ **View** ]。
+2. 在 [**實際聲譽徽章授予**] 底下的 [**資料連線器**] 頁面上，按一下 [ **View**]。
 
-3. 在 [ **實體聲譽徽章授予** ] 頁面上，按一下 [ **新增連接器** ]。
+3. 在 [ **實體聲譽徽章授予** ] 頁面上，按一下 [ **新增連接器**]。
 
-4. 在 [ **驗證認證** ] 頁面上，執行下列動作，然後按 **[下一步]** ：
+4. 在 [ **驗證認證** ] 頁面上，執行下列動作，然後按 **[下一步]**：
   
    1. 針對您在步驟1中建立的 Azure 應用程式，輸入或貼上 Azure AD 應用程式識別碼。
   
@@ -155,7 +153,7 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
 
    [狀態] 頁面也包含腳本的連結。 請參閱下列腳本，瞭解如何將 JSON 檔案張貼至 API 端點。
 
-7. 按一下 [完成 **]** 。
+7. 按一下 [完成 **]**。
 
    新的連接器會顯示在 [ **連接器** ] 索引標籤上的清單中。
 
@@ -222,13 +220,13 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
 
    ![實體聲譽徽章授予連接器的狀態彈出頁面](..\media\PhysicalBadgingStatusFlyout.png)
 
-3. 在 [ **最後匯入** ] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含每次腳本執行的相關資訊，並將該資料從 CSV 檔案上傳至 Microsoft 雲端。
+3. 在 [ **最後匯入**] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含每次腳本執行的相關資訊，並將該資料從 CSV 檔案上傳至 Microsoft 雲端。
 
    ![實體聲譽徽章授予連接器記錄檔會顯示上傳的 JSON 檔案中的數位列](..\media\PhysicalBadgingConnectorLogFile.png)
 
    **RecordsSaved** 欄位會指出上傳的 CSV 檔案中的列數。 例如，如果 CSV 檔案包含四列，則 **RecordsSaved** 欄位的值為4，如果腳本成功上傳 CSV 檔案中的所有列。
 
-如果您未在步驟4中執行腳本，則 [ **最後一次匯入** ] 底下會顯示下載腳本的連結。 您可以下載腳本，然後依照步驟4中的步驟執行它。
+如果您未在步驟4中執行腳本，則 [ **最後一次匯入**] 底下會顯示下載腳本的連結。 您可以下載腳本，然後依照步驟4中的步驟執行它。
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (選用) 步驟6：排程腳本自動執行
 
@@ -236,35 +234,35 @@ JSON 檔案必須符合連接器所需的架構定義。 以下是 JSON 檔案�
 
 您可以在 Windows 中的 [任務排程器] 應用程式每天自動執行腳本。
 
-1. 在您的本機電腦上，按一下 [Windows **開始** ] 按鈕，然後輸入 [ **任務計畫程式** ]。
+1. 在您的本機電腦上，按一下 [Windows **開始** ] 按鈕，然後輸入 [ **任務計畫程式**]。
 
 2. 按一下 [工作排程器] **應用程式以** 開啟它。
 
-3. 在 [ **動作** ] 區段中，按一下 [ **建立任務** ]。
+3. 在 [ **動作** ] 區段中，按一下 [ **建立任務**]。
 
-4. 在 [ **一般** ] 索引標籤上，輸入計畫任務的描述性名稱;例如， **實體聲譽徽章授予連接器腳本** 。 您也可以新增選用的描述。
+4. 在 [ **一般** ] 索引標籤上，輸入計畫任務的描述性名稱;例如， **實體聲譽徽章授予連接器腳本**。 您也可以新增選用的描述。
 
-5. 在 [ **安全性選項** ] 底下，執行下列動作：
+5. 在 [ **安全性選項**] 底下，執行下列動作：
 
    1. 決定只有當您登入電腦或登入時執行腳本，才可執行腳本。
 
    2. 請確定已選取 [以 **最高特權執行** ] 核取方塊。
 
-6. 選取 [ **觸發器** ] 索引標籤，按一下 [ **新增** ]，然後執行下列動作：
+6. 選取 [ **觸發器** ] 索引標籤，按一下 [ **新增**]，然後執行下列動作：
 
-   1. 在 [ **設定** ] 底下，選取 [ **每日** ] 選項，然後選擇第一次執行腳本的日期和時間。 腳本每天會在相同的指定時間。
+   1. 在 [ **設定**] 底下，選取 [ **每日** ] 選項，然後選擇第一次執行腳本的日期和時間。 腳本每天會在相同的指定時間。
 
-   2. 在 [ **高級設定** ] 下，確定已選取 [ **啟用** ] 核取方塊。
+   2. 在 [ **高級設定**] 下，確定已選取 [ **啟用** ] 核取方塊。
 
-   3. 按一下 **[確定]** 。
+   3. 按一下 **[確定]**。
 
-7. 選取 [ **動作** ] 索引標籤，按一下 [ **新增** ]，然後執行下列動作：
+7. 選取 [ **動作** ] 索引標籤，按一下 [ **新增**]，然後執行下列動作：
 
    ![為實體聲譽徽章授予連接器腳本建立新的排程任務的動作設定](..\media\SchedulePhysicalBadgingScript1.png)
 
    1. 在 [ **動作** ] 下拉式清單中，確定已選取 [ **啟動程式** ]。
 
-   2. 在 [ **程式/腳本** ] 方塊中，按一下 **[流覽]** ，然後移至下列位置，並選取該位置，以便在方塊中顯示該路徑： C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe。
+   2. 在 [ **程式/腳本** ] 方塊中，按一下 **[流覽]**，然後移至下列位置，並選取該位置，以便在方塊中顯示該路徑： C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe。
 
    3. 在 [ **新增引數 (選用)** ] 方塊中，貼上您在步驟4中執行的相同指令碼命令。 例如，.\PhysicalBadging.ps1-tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9"-appId "c12823b7-b55a-4989-faba-02de41bb97c3"-appSecret "MNubVGbcQDkGCnn"-e081f4f4-3831-48d6-7bb3-fcfab1581458 "-jsonFilePath" C:\Users\contosoadmin\Desktop\Data\physical_badging_data.csv "
 

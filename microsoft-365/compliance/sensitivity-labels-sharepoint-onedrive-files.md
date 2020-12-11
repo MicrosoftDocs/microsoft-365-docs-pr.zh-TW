@@ -17,37 +17,39 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 0feb98c6a0040ad67b4607062abdf0be5b5fbdb8
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: f930c31eef35282a5be6487e981d65275add4d5b
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376326"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620596"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-在 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤之前，您無法將您的 [靈敏度卷](sensitivity-labels.md) 標套用至網頁上的 office。 您不會在功能區上看到 [ **靈敏度** ] 按鈕，或在狀態列上看到已套用的標籤名稱。 此外，如果您使用桌面應用程式來標示您的檔案，然後將檔案儲存在 SharePoint 或 OneDrive 上，如果標籤已套用加密，服務就無法處理這些檔案的內容。 在這些情況下，合著、eDiscovery、資料遺失防護、搜尋及其他協同功能無法運作。
+在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤，讓使用者可以將您的 [靈敏度卷](sensitivity-labels.md) 標套用至網頁上的 office。 啟用此功能時，使用者會看到功能區上的 **靈敏度** 按鈕，讓他們可以套用標籤，並在狀態列上查看任何已套用的標籤名稱。 
 
-當您在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤時，會啟用所有這些功能。 除了為使用者顯示敏感度標籤之外，針對已套用敏感度標籤的新檔案及已變更的檔案，該檔案包含以雲端式 (金鑰加密，但不會使用) [金鑰加密](double-key-encryption.md) ：
+啟用此功能也會導致 SharePoint，而且 OneDrive 可以處理使用敏感度標籤加密之檔案的內容。 標籤可以套用於用於 web 的 Office 或 Office 桌面應用程式中，並上傳或儲存在 SharePoint 和 OneDrive 中。 在您啟用此功能之前，這些服務無法處理加密的檔案，這表示合著、eDiscovery、資料遺失防護、搜尋及其他協同作業功能不適用於這些檔案。
+
+在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，針對具有敏感度標籤的新增及變更的檔案，其敏感度標籤會以雲端型 (金鑰套用加密，而且不會使用 [雙金鑰加密](double-key-encryption.md)) ：
 
 - 若為 Word、Excel 及 PowerPoint 檔案，SharePoint 和 OneDrive 會辨識標籤，而且現在可以處理加密檔案的內容。
 
-- 當您從 SharePoint 或 OneDrive 下載或存取這些檔案時，標籤的靈敏度標籤和所有的加密設定都會強制執行，並保留在儲存的位置。 確定您提供使用者指引，只使用標籤來保護檔。 如需詳細資訊，請參閱 [資訊版權管理 (IRM) 選項和敏感度標籤](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)。
+- 當使用者從 SharePoint 或 OneDrive 中下載或存取這些檔案時，標籤的靈敏度標籤和任何加密設定都會強制執行，並保留在儲存的位置。 確定您提供使用者指引，只使用標籤來保護檔。 如需詳細資訊，請參閱 [資訊版權管理 (IRM) 選項和敏感度標籤](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels)。
 
 - 當使用者將已標記和加密的檔案上傳至 SharePoint 或 OneDrive 時，他們至少必須具有這些檔案的「查看」許可權。 例如，他們可以在 SharePoint 外開啟檔案。 如果使用者未使用此最小值，請上載成功，但服務無法辨識標籤，也無法處理檔案內容。
 
-- 使用 web 上的 Office (Word、Excel PowerPoint) 開啟及編輯具有套用加密之敏感度標籤的 Office 檔案。 會強制執行以加密指派的許可權。 透過網頁上的 Word，您也可以在編輯這些檔時使用自動標籤。
+- 使用 web 上的 Office (Word、Excel PowerPoint) 開啟及編輯具有套用加密之敏感度標籤的 Office 檔案。 會強制執行以加密指派的許可權。 您也可以對這些檔使用 [自動標籤](apply-sensitivity-label-automatically.md) 。
 
 - 外部使用者可以使用 guest 帳戶存取以加密標記的檔。 如需詳細資訊，請參閱 [對外部使用者的支援和標示的內容](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content)。 
 
 - Office 365 eDiscovery 支援這些檔案與資料遺失防護 (DLP) 原則支援這些檔案中的內容。
 
 > [!NOTE]
-> 如果已使用內部部署金鑰套用加密 (金鑰管理拓撲通常稱為「保留您自己的金鑰」或 HYOK) ，或是使用 [雙重金鑰加密](double-key-encryption.md)，處理檔案內容的 SharePoint 行為不會變更。
+> 如果已使用內部部署金鑰套用加密， (金鑰管理拓撲通常稱為「保留您自己的金鑰」或 HYOK) ，或是使用 [雙重金鑰加密](double-key-encryption.md)，處理檔內容的服務行為不會變更。 因此，這些檔案、共同作業、eDiscovery、資料遺失防護、搜尋及其他協同功能都無法運作。
 >
-> 對於這些位置中使用單一 Azure 型機碼標示的現有檔案，其 SharePoint 和 OneDrive 行為也不會變更。 若要在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，這些檔案才能從新功能受益，必須下載並重新上傳或編輯檔案。 例如，他們會在搜尋和 eDiscovery 結果中傳回。
+> 對於這些位置中使用單一 Azure 型機碼標示的現有檔案，其 SharePoint 和 OneDrive 行為也不會變更。 若要在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，這些檔案才能從新功能受益，必須下載並重新上傳或編輯檔案。
 
 在 SharePoint 和 OneDrive 中啟用 Office 檔案的靈敏度標籤之後，會有三個新的 [審計事件](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) 可用於監視 SharePoint 和 OneDrive 中的檔之敏感度標籤：
 - **已將敏感度標籤套用到檔案**
@@ -77,7 +79,7 @@ ms.locfileid: "49376326"
     2. 下載檔案，然後將檔案上傳至 SharePoint。
 
 - 當套用加密的標籤有下列任何 [加密](encryption-sensitivity-labels.md#configure-encryption-settings)設定時，SharePoint 和 OneDrive 無法處理加密的檔案：
-    - **讓使用者在套用標籤** 和 [ **Word、PowerPoint 及 Excel 中** 的核取方塊時，指定許可權，並選取 [提示使用者指定許可權]。 此設定有時稱為「使用者定義的許可權」。
+    - **當使用者** 在 **Word、PowerPoint 及 Excel 中** 套用標籤和核取方塊時，可讓使用者指定許可權，並選取 [提示使用者指定許可權]。 此設定有時稱為「使用者定義的許可權」。
     - 對 **內容到期的使用者存取權** 設定為 **永不** 值以外的值。
     - 已選取 [**雙機碼加密**]。
     
@@ -112,7 +114,7 @@ ms.locfileid: "49376326"
 
 1. 以全域管理員身分登入 [Microsoft 365 規範中心](https://compliance.microsoft.com/)，並流覽至 **解決方案**  >  **資訊保護**
     
-    如果您沒有立即看到這個選項，請先選取 [全部顯示]。 
+    如果您沒有立即看到這個選項，請先選取 **[全部顯示]**。 
 
 2. 如果您看到可在 Office online 檔案中處理內容之功能的訊息，請選取 [ **立即開啟**]：
     

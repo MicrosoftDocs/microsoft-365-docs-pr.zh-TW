@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理員可以設定原生連接器，以匯入和封存 Twitter 資料至 Microsoft 365。 在將資料匯入 Microsoft 365 之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理組織的 Twitter 資料的控管。
-ms.openlocfilehash: 01c4901544e47cd1c361a132e144440f00bd8504
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 0dd996802964b2a2fc58d26e23af57193c89ee8c
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200826"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619909"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>部署連接器以封存 Twitter 資料
 
@@ -36,11 +36,11 @@ ms.locfileid: "48200826"
 
    ![移至 Azure Active Directory](../media/TCimage02.png)
 
-3. 在左功能窗格中，按一下 [ **應用程式註冊] (預覽) ** 然後按一下 [ **新增註冊**]。
+3. 在左功能窗格中，按一下 [ **應用程式註冊] (預覽)** 然後按一下 [ **新增註冊**]。
 
    ![建立新的應用程式註冊](../media/TCimage03.png)
 
-4. 註冊應用程式。 在 [重新 **導向 URI (選用) **] 底下，選取 [應用程式類型] 下拉式清單中的 [ **網站** ]，然後在 [URI] 方塊 `https://portal.azure.com` 中輸入 uri。
+4. 註冊應用程式。 在 [重新 **導向 URI (選用)**] 底下，選取 [應用程式類型] 下拉式清單中的 [ **網站** ]，然後在 [URI] 方塊 `https://portal.azure.com` 中輸入 uri。
 
    ![重新 https://portal.azure.com 導向 URI 的類型 ](../media/TCimage04.png)
 
@@ -122,7 +122,7 @@ ms.locfileid: "48200826"
 
    - 選取核取方塊可允許連接器應用程式登入 Twitter。
    
-   - 使用下列格式新增 OAuth 重新導向 Uri： ** \<connectorserviceuri> /Views/TwitterOAuth**，其中*connectorserviceuri*的值是您組織的 Azure 應用程式服務 URL; 例如， https://twitterconnector.azurewebsites.net/Views/TwitterOAuth 。
+   - 使用下列格式新增 OAuth 重新導向 Uri： **\<connectorserviceuri> /Views/TwitterOAuth**，其中 *connectorserviceuri* 的值是您組織的 Azure 應用程式服務 URL; 例如， https://twitterconnector.azurewebsites.net/Views/TwitterOAuth 。
 
     ![允許連接器應用程式登入 Twitter 並新增 OAuth 重新導向 Uri](../media/TCimage32.png)
 
@@ -184,7 +184,7 @@ Twitter 開發人員應用程式現在已可供使用。
 
 7. 在 [ **授權 Microsoft 365 匯入資料** ] 頁面上，再次輸入或貼上 APISecretKey，然後按一下  **[登入 web app**]。
 
-8. 按一下 **[以 Twitter 登**入]。
+8. 按一下 **[以 Twitter 登** 入]。
 
 9. 在 [Twitter 登入] 頁面上，使用您組織的 Twitter 帳戶的認證登入。
 
@@ -198,8 +198,6 @@ Twitter 開發人員應用程式現在已可供使用。
 
 12. 在 [ **選擇儲存位置** ] 頁面上，輸入要匯入 Twitter 專案的 Microsoft 365 信箱的電子郵件地址，然後按 **[下一步]**。
 
-13. 在 [ **提供管理員同意**] 中，按一下 [ **提供同意** ]，然後依照步驟進行。 您必須是全域系統管理員，才可對您組織中的資料提供 Office 365 匯入服務的同意。
+13. 按 **[下一步]** 以查看連接器設定，然後按一下 **[完成]** 以完成連接器設定。
 
-14. 按 **[下一步]** 以查看連接器設定，然後按一下 **[完成]** 以完成連接器設定。
-
-15. 在 [規範中心] 中，移至 [ **資料連線器** ] 頁面，然後按一下 [ **連接器** ] 索引標籤，以查看匯入程式的進度。
+14. 在 [規範中心] 中，移至 [ **資料連線器** ] 頁面，然後按一下 [ **連接器** ] 索引標籤，以查看匯入程式的進度。

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可在 Microsoft 365 中設定從 Globanet 匯入及封存網頁捕獲資料的連接器。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料，因此您可以使用法規遵從性功能（例如法律封存、內容搜尋及保留原則）來管理組織的協力廠商資料。
-ms.openlocfilehash: 712e41d84181199ae72de51e0fd834085b2174d0
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 5d793bea8a22d9908551fff67c9d27afffdf1d86
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816738"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619819"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>設定連接器以封存網頁數據
 
@@ -37,9 +37,9 @@ ms.locfileid: "48816738"
 
 3. 您在 Microsoft 365 規範中心建立的網頁捕獲連接器，會每天連線到 Globanet Merge1 網站，並將網頁專案傳送至 Microsoft 雲端中的安全 Azure 儲存位置。
 
-4. 連接器會使用 [ [步驟 3](#step-3-map-users-and-complete-the-connector-setup)] 中所述的自動使用者對應的 *電子郵件* 屬性值，將已轉換的網頁專案匯入至特定使用者的信箱。 在使用者信箱中建立名為「 **網頁捕獲** 」的收件匣資料夾中的子資料夾，並且將網頁專案匯入該資料夾。 連接器會使用 *Email* 屬性的值來執行此動作。 每個網頁專案都包含此屬性，它會填入您在 [步驟 2](#step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site)中設定網頁捕獲連接器時所提供的電子郵件地址。
+4. 連接器會使用 [[步驟 3](#step-3-map-users-and-complete-the-connector-setup)] 中所述的自動使用者對應的 *電子郵件* 屬性值，將已轉換的網頁專案匯入至特定使用者的信箱。 在使用者信箱中建立名為「 **網頁捕獲** 」的收件匣資料夾中的子資料夾，並且將網頁專案匯入該資料夾。 連接器會使用 *Email* 屬性的值來執行此動作。 每個網頁專案都包含此屬性，它會填入您在 [步驟 2](#step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site)中設定網頁捕獲連接器時所提供的電子郵件地址。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 - 為 Microsoft connector 建立 Globanet Merge1 帳戶。 若要建立此帳戶，請與 [Globanet 客戶支援](https://globanet.com/ms-connectors-contact/)人員聯繫。 當您在步驟1中建立連接器時，您會登入此帳戶。
 
@@ -51,13 +51,13 @@ ms.locfileid: "48816738"
 
 第一步是存取 **資料連線器** ，並建立網頁來來源資料的連接器。
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [ **資料連線器** ]  >  **網頁獲取區** 。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com/) ，然後按一下 [**資料連線器**]  >  **網頁獲取區**。
 
-2. 在 [ **網頁捕獲** 產品描述] 頁面上，按一下 [ **新增連接器** ]。
+2. 在 [ **網頁捕獲** 產品描述] 頁面上，按一下 [ **新增連接器**]。
 
-3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受** ]。
+3. 在 [ **服務條款** ] 頁面上，按一下 [ **接受**]。
 
-4. 輸入識別連接器的唯一名稱，然後按 **[下一步]** 。
+4. 輸入識別連接器的唯一名稱，然後按 **[下一步]**。
 
 5. 登入您的 Merge1 帳戶以設定連接器。
 
@@ -71,13 +71,9 @@ ms.locfileid: "48816738"
 
 若要對應使用者，並完成 Microsoft 365 規範中心內的連接器設定，請執行下列步驟：
 
-1. 在 [地圖] 網頁上的 [ **將使用者捕獲至 Microsoft 365 使用者** ] 頁面上，啟用自動使用者對應。 網頁捕獲專案包括一個稱為「 *電子郵件* 」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
+1. 在 [地圖] 網頁上的 [ **將使用者捕獲至 Microsoft 365 使用者** ] 頁面上，啟用自動使用者對應。 網頁捕獲專案包括一個稱為「 *電子郵件*」的屬性，其中包含組織中使用者的電子郵件地址。 如果連接器可以將此位址與 Microsoft 365 使用者產生關聯，這些專案就會匯入該使用者的信箱。
 
-2. 在 [系統 **管理員同意** ] 頁面上，按一下 [ **提供同意** ]。 您將會重新導向至 Microsoft 網站。 按一下 [ **接受** ] 以提供同意。
-
-   您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要提供系統管理員同意，您必須使用 Microsoft 365 全域管理員的認證登入，然後接受同意要求。 如果您未以全域系統管理員身分登入，您可以移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) ，並使用全域系統管理員認證登入，以接受要求。
-
-3. 按 **[下一步]** ，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
+2. 按 **[下一步]**，複查您的設定，然後移至 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度。
 
 ## <a name="step-4-monitor-the-webpage-capture-connector"></a>步驟4：監視網頁捕獲連接器
 
@@ -87,7 +83,7 @@ ms.locfileid: "48816738"
 
 2. 按一下 [ **連接器** ] 索引標籤，然後選取 **網頁捕捉** 連接器以顯示飛出頁面。 此頁面包含連接器的屬性和資訊。
 
-3. 在 [ **連接器狀態與來源** ] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含已匯入至 Microsoft 雲端的資料。
+3. 在 [ **連接器狀態與來源**] 底下，按一下 [ **下載記錄** ] 連結，以開啟連接器的狀態記錄 (或儲存) 。 此記錄檔包含已匯入至 Microsoft 雲端的資料。
 
 ## <a name="known-issues"></a>已知問題
 

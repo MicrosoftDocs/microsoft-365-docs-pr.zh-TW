@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 瞭解系統管理員如何設定 & 使用原生連接器將資料從 LinkedIn 公司] 頁面匯入至 Microsoft 365。
-ms.openlocfilehash: 00e4d233efa6ee86111e3497063ad1276b5df041
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: 42183be3663fbf4b55eadde2173b492feeae5373
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255810"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619979"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>設定連接器來封存 LinkedIn 資料
 
@@ -28,9 +28,7 @@ ms.locfileid: "47255810"
 
 LinkedIn 公司頁面資料儲存在信箱中之後，您可以將 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋、In-Place 封存、審核和 Microsoft 365 保留原則）套用至 LinkedIn 資料。 例如，您可以使用內容搜尋來搜尋這些專案，或在高級 eDiscovery 案例中將儲存信箱與保管人建立關聯。 建立連接器，以在 Microsoft 365 中匯入和封存 LinkedIn 資料，可協助您的組織遵守政府和法規原則。
 
-## <a name="give-consent-assign-roles-and-verify-credentials"></a>授與同意、指派角色和驗證認證
-
-- 您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要同意此要求，請移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全域管理員的認證登入，然後接受要求。
+## <a name="assign-roles-and-verify-credentials"></a>指派角色及驗證認證
 
 - 建立 LinkedIn 公司頁面連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
@@ -60,9 +58,7 @@ LinkedIn 公司頁面資料儲存在信箱中之後，您可以將 Microsoft 365
 
 7. 在 [ **選擇儲存位置** ] 頁面上，按一下方塊，選取要匯入 LinkedIn 專案的 Microsoft 365 信箱的電子郵件地址，然後按 **[下一步]**。 將專案匯入此信箱中的 [收件匣] 資料夾。
 
-8. 在 [ **提供管理員同意**] 中，按一下 [ **提供同意** ]，然後依照步驟進行。 您必須是全域系統管理員，才可對您組織中的資料提供 Office 365 匯入服務的同意。
-
-9. 按 **[下一步]** 以查看連接器設定，然後按一下 **[完成]** 以完成連接器設定。
+8. 按 **[下一步]** 以查看連接器設定，然後按一下 **[完成]** 以完成連接器設定。
 
 建立連接器之後，您可以回到 [ **資料連線器** ] 頁面，以查看新連接器的匯入程式的進度 (選取 [重新整理] （ **如有必要** ）以更新連接器清單) 。 [ **狀態** ] 欄中的值正 **等候開始**。 開始進行初始匯入程式需要長達24小時的時間。 在連接器第一次執行並匯入 LinkedIn 專案之後，連接器會每隔24小時執行一次，並匯入在前24小時內，在 LinkedIn 公司頁面上建立的任何新專案。
 

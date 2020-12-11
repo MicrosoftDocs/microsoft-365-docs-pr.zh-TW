@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何設定 & 使用 Microsoft 365 規範中心內的連接器，將 & 封存資料從 Facebook 商務版頁面匯入至 Microsoft 365。
-ms.openlocfilehash: 747f98ff084eaa8536c10b2f4edefcc20d11d7f9
-ms.sourcegitcommit: 195172dd836e8a793e8e0c2db3323b7391bc51ac
+ms.openlocfilehash: db1d11f461125e7ea1d749fd273f8bc8622a8d77
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255850"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49620430"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>設定連接器以封存 Facebook 資料 (預覽) 
 
@@ -42,8 +42,6 @@ ms.locfileid: "47255850"
 
     > [!NOTE]
     > Microsoft 365 訂閱隨附的 [免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md) 不支援 Security & 合規性中心內的連接器。
-
-- 您的組織必須同意允許 Office 365 匯入服務存取您組織中的信箱資料。 若要同意此要求，請移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，並以全域管理員的認證登入，然後接受要求。
 
 - 在步驟 5) 中，設定 Microsoft 365 規範中心 (中的自訂連接器的使用者，必須在 Exchange Online 中指派信箱匯入匯出角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [  [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
@@ -109,7 +107,7 @@ ms.locfileid: "47255850"
 
 ## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-microsoft-365-compliance-center"></a>步驟5：設定 Microsoft 365 規範中心內的 Facebook 商務頁面連接器
 
-最後一個步驟是在 Microsoft 365 規範中心內設定連接器，將您的 Facebook 商務版頁面中的資料匯入至 Microsoft 365 中的指定信箱。 完成此步驟後，Office 365 匯入服務將開始從您的 Facebook 商務版頁面將資料匯入至 Microsoft 365。
+最後一個步驟是在 Microsoft 365 規範中心內設定連接器，將您的 Facebook 商務版頁面中的資料匯入至 Microsoft 365 中的指定信箱。 完成此步驟之後，Microsoft 365 匯入服務將開始從您的 Facebook 商務版頁面將資料匯入至 Microsoft 365。
 
 如需逐步指示，請參閱 [Microsoft 365 規範中心的「步驟5：設定 Facebook 連接器](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-microsoft-365-compliance-center)」。 
 

@@ -15,20 +15,18 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: 美國政府雲端的系統管理員可以設定資料連線器，將員工資料從組織的人力資源 (HR) 系統匯入 Microsoft 365。 這可讓您使用「內幕風險管理」原則中的 HR 資料，協助您偵測可能會對組織造成內部威脅之特定使用者的活動。
-ms.openlocfilehash: 28f4c77ec626e2035451ec6e7c9562c5bf20f101
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 80998422eba32fe7f9118166f76a61d2d4bd8894
+ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816838"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49619919"
 ---
 # <a name="set-up-a-connector-to-import-hr-data-in-us-government"></a>設定連接器以匯入美國政府的 HR 資料
 
 您可以設定 Microsoft 365 規範中心內的資料連線器，將人力資源) 資料 (人力資源匯入美國政府組織。 HR 相關的資料包括員工提交其辭職的日期和員工最後一天的日期。 這種 HR 資料可供 Microsoft 資訊保護解決方案（如「 [內幕風險管理」解決方案](insider-risk-management.md)）使用，以協助保護您的組織免受惡意活動或組織內的資料竊取。 設定 HR 連接器是指在 Azure Active Directory 中建立應用程式，以供連接器進行驗證，建立包含 HR 資料的 CSV 對應檔案，在規範中心建立一個資料連線器，然後在排程的) 基礎上執行腳本 (，以 ingests CSV 檔案中的 HR 資料至 Microsoft 雲端。 然後，「內部使用者風險管理」工具使用資料連線器，來存取已匯入 Microsoft 365 美國政府組織的 HR 資料。
 
-## <a name="before-you-begin"></a>在您開始之前
-
-- 您的組織必須同意允許 Office 365 匯入服務存取您組織中的資料。 若要同意此要求，請移至 [此頁面](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent)，使用 Microsoft 365 全域管理員的認證登入，然後接受要求。 您必須完成此步驟，才可在步驟3中成功建立 HR 連接器。
+## <a name="before-you-begin"></a>開始之前
 
 - 在步驟3中建立 HR 連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立新的角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
@@ -42,9 +40,9 @@ ms.locfileid: "48816838"
 
 - Azure AD 應用程式識別碼 (也稱為「 *應用程式識別碼* 」或「 *用戶端識別碼* 」) 
 
-- Azure AD 應用程式機密 (也稱為 *用戶端密碼* ) 
+- Azure AD 應用程式機密 (也稱為 *用戶端密碼*) 
 
-- 租使用者識別碼 (也稱為 *目錄識別碼* ) 
+- 租使用者識別碼 (也稱為 *目錄識別碼*) 
 
 如需在 Azure AD 中建立應用程式的逐步指示，請參閱 [使用 Microsoft identity Platform 註冊應用程式](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)。
 
@@ -77,17 +75,17 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com) ，然後按一下左側導覽中的 [ **資料連線器** ]。
 
-2. 在 [ **HR** ] 底下的 [ **資料連線器** ] 頁面上，按一下 [ **View** ]。
+2. 在 [ **HR**] 底下的 [**資料連線器**] 頁面上，按一下 [ **View**]。
 
-3. 在 [ **HR** ] 頁面上，按一下 [ **新增連接器** ]。
+3. 在 [ **HR** ] 頁面上，按一下 [ **新增連接器**]。
 
-4. 在 [ **驗證認證** ] 頁面上，執行下列動作，然後按 **[下一步]** ：
+4. 在 [ **驗證認證** ] 頁面上，執行下列動作，然後按 **[下一步]**：
 
    1. 針對您在步驟1中建立的 Azure 應用程式，輸入或貼上 Azure AD 應用程式識別碼。
 
    1. 輸入 HR 連接器的名稱。
 
-5. 在 [檔案 **對應** ] 頁面上，輸入三個欄標頭的名稱 (也稱為 *參數* ) 從您在步驟2中在每個適當方塊中所建立的 CSV 檔案中。 名稱不區分大小寫。 如先前所述，您在這些方塊中輸入的名稱必須符合 CSV 檔案中的參數名稱。 例如，下列螢幕擷取畫面顯示在步驟2所示範例 CSV 檔案範例中的參數名稱。
+5. 在 [檔案 **對應** ] 頁面上，輸入三個欄標頭的名稱 (也稱為 *參數*) 從您在步驟2中在每個適當方塊中所建立的 CSV 檔案中。 名稱不區分大小寫。 如先前所述，您在這些方塊中輸入的名稱必須符合 CSV 檔案中的參數名稱。 例如，下列螢幕擷取畫面顯示在步驟2所示範例 CSV 檔案範例中的參數名稱。
 
    ![欄標題名稱與 CSV 檔案中的名稱相符](../media/HRConnectorWizard3.png)
 
@@ -101,7 +99,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
    
    1. **範例腳本的連結。** 按一下 [ **這裡** ] 連結，移至 GitHub 網站以存取範例腳本 (連結會開啟新的視窗) 。 將此視窗保持開啟，以便您可以在步驟4中複製腳本。 或者，您也可以將目的地做成書簽或複製 URL，以便您可以在步驟4中再次進行存取。 您也可以在 [連接器] 飛入頁面上使用此連結。
 
-7. 按一下 [完成 **]** 。
+7. 按一下 [完成 **]**。
 
    新的連接器會顯示在 [ **連接器** ] 索引標籤上的清單中。 
 
@@ -173,7 +171,7 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
    此 `RecordsSaved` 欄位會指出上傳的 CSV 檔案中的列數。 例如，如果 CSV 檔案包含四列，則欄位的值 `RecordsSaved` 為4，如果腳本成功上傳 CSV 檔案中的所有列。
 
-如果您未在步驟4中執行腳本，則 [ **最後一次匯入** ] 底下會顯示下載腳本的連結。 您可以下載腳本，然後依照步驟4中的步驟執行它。
+如果您未在步驟4中執行腳本，則 [ **最後一次匯入**] 底下會顯示下載腳本的連結。 您可以下載腳本，然後依照步驟4中的步驟執行它。
 
 ## <a name="optional-step-6-schedule-the-script-to-run-automatically"></a> (選用) 步驟6：排程腳本自動執行
 
@@ -181,35 +179,35 @@ CSV 檔案的第一列（或標題列）會列出必要的資料行名稱。 每
 
 您可以在 Windows 中的 [任務排程器] 應用程式每天自動執行腳本。
 
-1. 在您的本機電腦上，按一下 [Windows **開始** ] 按鈕，然後輸入 [ **任務計畫程式** ]。
+1. 在您的本機電腦上，按一下 [Windows **開始** ] 按鈕，然後輸入 [ **任務計畫程式**]。
 
 2. 按一下 [工作排程器] **應用程式以** 開啟它。
 
-3. 在 [ **動作** ] 區段中，按一下 [ **建立任務** ]。
+3. 在 [ **動作** ] 區段中，按一下 [ **建立任務**]。
 
-4. 在 [ **一般** ] 索引標籤上，輸入計畫任務的描述性名稱;例如， **HR Connector Script** 。 您也可以新增選用的描述。
+4. 在 [ **一般** ] 索引標籤上，輸入計畫任務的描述性名稱;例如， **HR Connector Script**。 您也可以新增選用的描述。
 
-5. 在 [ **安全性選項** ] 底下，執行下列動作：
+5. 在 [ **安全性選項**] 底下，執行下列動作：
 
    1. 決定只有當您登入電腦或登入時執行腳本，才可執行腳本。
    
    1. 請確定已選取 [以 **最高特權執行** ] 核取方塊。
 
-6. 選取 [ **觸發器** ] 索引標籤，按一下 [ **新增** ]，然後執行下列動作：
+6. 選取 [ **觸發器** ] 索引標籤，按一下 [ **新增**]，然後執行下列動作：
 
-   1. 在 [ **設定** ] 底下，選取 [ **每日** ] 選項，然後選擇第一次執行腳本的日期和時間。 腳本每天會在相同的指定時間。
+   1. 在 [ **設定**] 底下，選取 [ **每日** ] 選項，然後選擇第一次執行腳本的日期和時間。 腳本每天會在相同的指定時間。
    
-   1. 在 [ **高級設定** ] 下，確定已選取 [ **啟用** ] 核取方塊。
+   1. 在 [ **高級設定**] 下，確定已選取 [ **啟用** ] 核取方塊。
    
-   1. 按一下 **[確定]** 。
+   1. 按一下 **[確定]**。
 
-7. 選取 [ **動作** ] 索引標籤，按一下 [ **新增** ]，然後執行下列動作：
+7. 選取 [ **動作** ] 索引標籤，按一下 [ **新增**]，然後執行下列動作：
 
    ![為 HR connector 腳本建立新的排程任務的動作設定](../media/HRConnectorScheduleTask1.png)
 
    1. 在 [ **動作** ] 下拉式清單中，確定已選取 [ **啟動程式** ]。
 
-   1. 在 [ **程式/腳本** ] 方塊中，按一下 **[流覽]** ，然後移至下列位置，並選取該位置，以便在方塊中顯示路徑： `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` 。
+   1. 在 [ **程式/腳本** ] 方塊中，按一下 **[流覽]**，然後移至下列位置，並選取該位置，以便在方塊中顯示路徑： `C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe` 。
 
    1. 在 [ **新增引數 (選用)** ] 方塊中，貼上您在步驟4中執行的相同指令碼命令。 例如， `.\HRConnector.ps1 -tenantId "d5723623-11cf-4e2e-b5a5-01d1506273g9" -appId "c12823b7-b55a-4989-faba-02de41bb97c3" -appSecret "MNubVGbcQDkGCnn"  -jobId "e081f4f4-3831-48d6-7bb3-fcfab1581458" -csvFilePath "C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv"`
 
