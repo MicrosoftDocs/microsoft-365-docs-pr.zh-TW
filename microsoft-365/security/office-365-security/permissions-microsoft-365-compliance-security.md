@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 透過使用 Microsoft 365 安全性中心或 Microsoft 365 合規性中心，您可以集中管理與安全性或合規性相關的所有工作權限。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5322a972a93ee603ef31754288e9ab9b7eb401a9
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 266d8184db5ebc79609c0a5f27c7511087ea42d0
+ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604281"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49624717"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Microsoft 365 合規性中心和 Microsoft 365 安全性中心中的權限
 
@@ -85,7 +85,7 @@ Microsoft 365 合規性中心和Microsoft 365 安全性中心中出現的角色�
 |適用於身分識別的 Microsoft Defender|[適用於身分識別的 Microsoft Defender 角色群組](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure 資訊保護|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |合規性管理員|[合規性管理員](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles) (英文)|
-|Exchange Online|[Exchange 角色型存取控制](https://docs.microsoft.com/exchange/understanding-role-based-access-control-exchange-2013-help)|
+|Exchange Online|[Exchange 角色型存取控制](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)|
 |Intune|[Intune 角色型存取控制](https://docs.microsoft.com/intune/role-based-access-control)|
 |受管理的電腦|[Azure AD 系統管理員角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Microsoft Cloud App Security|[角色型存取控制](https://docs.microsoft.com/cloud-app-security/manage-admins)|
