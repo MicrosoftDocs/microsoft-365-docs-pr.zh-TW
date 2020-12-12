@@ -11,12 +11,12 @@ ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: 系統管理員可以瞭解如何使用「安全性 & 規範中心」中的新使用者轉寄電子郵件，以調查組織中的使用者將郵件轉寄給新網域的時間。
-ms.openlocfilehash: 22bbd762b221fae151a489aa1e9485dfc7baf06a
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: cf1852169279e19ac00e5e29dd1c26e155936039
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357270"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660014"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>新的使用者在安全性 & 合規性中心轉寄電子郵件洞察力
 
@@ -31,11 +31,11 @@ ms.locfileid: "49357270"
 
 ![新使用者轉寄電子郵件深入解析](../../media/mfi-new-users-forwarding-email.png)
 
-當您按一下小工具時，會出現一個快顯視窗，您可以在其中找到轉送郵件的詳細資料，包括本主題稍後所述的「轉寄 [修改」報告](#forwarding-modifications-report) 的連結。
+當您按一下該小工具時，會出現一個快顯視窗，您可以在其中找到轉送郵件的詳細資料，包括「轉寄 [修改」報告](#forwarding-modifications-report) 的連結（如本文稍後所述）。
 
 ![按一下新的使用者轉寄電子郵件功能之後顯示的詳細資料浮出控制項](../../media/mfi-new-users-forwarding-email-details.png)
 
-您也可以在 [ (**報表** 儀表板] 或 [) ] 的 [**熱門洞察力 & 建議**] 區域中按一下 [**全部查看**] 之後，取得此詳細資料頁面 \> **Dashboard** <https://protection.office.com/insightdashboard> 。
+您也可以在 [ (**報表** 儀表板] 或 [) ] 的 [**熱門洞察力 & 建議**] 區域中按一下 [**全部查看**] 之後，取得此詳細資料頁面 \>  <https://protection.office.com/insightdashboard> 。
 
 您可以按一下 [ **參閱與真知灼見相關的報告** ] 連結，以移至下一節所述的「轉寄 **修改」報告** 。
 

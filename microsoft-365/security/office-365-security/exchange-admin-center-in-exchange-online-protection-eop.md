@@ -16,12 +16,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: 深入瞭解獨立 Exchange Online Protection (EOP) 中的 web 管理介面。
-ms.openlocfilehash: 732991befa9084b62c152295d10a2bbf94bc36ec
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: fc76ecd6dafcf9453a0c6de14917c96c950f8370
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202948"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659663"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>獨立版 EOP 中的 Exchange 系統管理中心
 
@@ -54,13 +54,13 @@ Exchange 系統管理中心 (EAC) 是以 web 為基礎的管理主控台，供�
 
 本節說明 EMC 中的使用者介面元素。
 
-![EOP-AdminCenter](../../media/EOP-AdminCenter.png)
+![Exchange Online Protection 中的 Exchange 系統管理中心](../../media/EOP-AdminCenter.png)
 
 ### <a name="feature-pane"></a>功能窗格
 
 這是您在 EAC 中執行大部分工作時的第一個導覽層級。功能窗格依功能區域組織。
 
-- 收件**者：這**是您用來查看群組和外部連絡人的所在位置。
+- 收件 **者：這** 是您用來查看群組和外部連絡人的所在位置。
 
 - **許可權**：這是您管理系統管理員角色的位置。
 
@@ -73,7 +73,7 @@ Exchange 系統管理中心 (EAC) 是以 web 為基礎的管理主控台，供�
 
 - **郵件流程**：這是您管理郵件流程規則 (的所在位置，也稱為傳輸規則) 、公認的網域和連接器，以及您可以前往執行郵件追蹤的位置。
 
-- **混合**式：這是您可以執行 [混合](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)式設定向導的所在位置，以及您可以在其中安裝 [Exchange Online PowerShell 模組](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)的位置。
+- **混合** 式：這是您可以執行 [混合](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)式設定向導的所在位置，以及您可以在其中安裝 [Exchange Online PowerShell 模組](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)的位置。
 
 ### <a name="tabs"></a>索引標籤
 
@@ -107,16 +107,12 @@ Exchange 系統管理中心 (EAC) 是以 web 為基礎的管理主控台，供�
 
 ### <a name="me-tile-and-help"></a>個人資訊動態磚與說明
 
-**[自有磚]** 可讓您登出 EAC，然後以不同使用者的身分登入。您可以從 **[說明]**![說明圖示](../../media/ITPro-EAC-HelpIcon.gif) 下拉式功能表執行下列動作：
+**[自有磚]** 可讓您登出 EAC，然後以不同使用者的身分登入。 您可以從 [**説明**] 的 [說明] ![ 圖示 ](../../media/ITPro-EAC-HelpIcon.gif) 下拉式功能表中執行下列動作：
 
 - **說明：** 按一下 [說明圖示]![](../../media/ITPro-EAC-HelpIcon.gif) 即可檢視線上說明內容。
-
-- **意見**反應：留下意見反應。
-
+- **意見** 反應：留下意見反應。
 - **社區**：在社區論壇中張貼尋找答案的問題。
-
 - **停用說明泡泡圖**：[說明泡泡圖] 會在您建立或編輯物件時，顯示欄位的內容說明。 您可以關閉 [說明泡泡圖]，或是在停用的狀態下將它開啟。
-
 - **顯示命令記錄**：會開啟新的視窗，顯示根據 EAC 中設定之專案的對等 PowerShell 命令。
 
 ## <a name="supported-browsers"></a>支援的瀏覽器

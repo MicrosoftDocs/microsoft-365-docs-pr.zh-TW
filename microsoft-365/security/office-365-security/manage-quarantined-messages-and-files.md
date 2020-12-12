@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何針對 Exchange Online Protection (EOP) 中的所有使用者，查看及管理隔離的郵件。 使用 Microsoft Defender for Office 365 的組織中的系統管理員也可以管理 SharePoint Online、商務 OneDrive 和 Microsoft 小組中的隔離檔案。
-ms.openlocfilehash: 8f4ca5caef9bf244315db2271011126ad4d7976e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 5f4d63576e57ac50abe1ec1eb378221c4d457280
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616773"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659983"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>在 EOP 中管理隔離的郵件與檔案
 
@@ -44,14 +44,21 @@ ms.locfileid: "49616773"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派許可權，才可以系統管理員身分管理隔離。許可權是由安全性 & 合規性中心內的 **隔離** 角色所控制。 根據預設，此角色會指派給 [安全性 & 規範中心] 中的 [ **組織管理** (全域管理員]) 、[ **隔離管理員**] 和 [ **安全性管理員** ] 角色群組。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須先獲指派安全性與合規性中心的權限，才能執行此文章中的程序：
+  - 若要對所有使用者執行隔離郵件的動作，您必須是「**組織管理**」、「**安全性管理員**」或「**隔離系統管理員**」 <sup>\*</sup> 角色群組的成員。
+  - 若要對所有使用者的隔離郵件進行唯讀存取，您必須是 **全域讀取** 者或 **安全性讀者** 角色群組的成員。
+
+  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+
+  **附註**：
+
+  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
+  - <sup>\*</sup>**隔離系統管理員** 角色群組的成員也必須是 [exchange online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的「**衛生管理**」角色群組的成員，才能在 exchange online 中執行隔離程式 PowerShell。
 
 - 隔離的郵件會在自動刪除之前保留在預設時間段內：
-
   - 30天的反垃圾郵件原則隔離的郵件 (垃圾郵件、網路釣魚和大量電子郵件) 。 這是預設值和最大值。 若要設定 (較低) 此值，請參閱 [設定反垃圾郵件原則](configure-your-spam-filter-policies.md)。
-
   - 包含惡意程式碼的郵件為15天。
-
   - 針對 Office 365 的 Defender 中 SharePoint、OneDrive 和 Microsoft 小組隔離的檔案隔離的15天。
 
   當郵件從隔離區到期時，您無法復原。
@@ -103,7 +110,7 @@ ms.locfileid: "49616773"
      - **反惡意程式碼原則**
      - **安全附件原則**
      - **反網路釣魚原則**
-     - **主控內容篩選原則** (反垃圾郵件原則) 
+     - **託管的內容篩選原則** (反網路釣魚原則)
      - **傳輸規則**
 
    - **電子郵件收件** 者：所有使用者或僅傳送給您的郵件。 使用者只能管理傳送給他們的隔離郵件。

@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: 瞭解如何防止來賓新增至特定群組
-ms.openlocfilehash: 99e78932b29d25054922b56fcadb608a7dfca432
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 8bee26bf5ec323536ca1ac6f25ce96927634cee7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613053"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49660045"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>防止客人新增至特定的 Microsoft 365 群組或 Microsoft 團隊小組
 
@@ -30,7 +30,7 @@ ms.locfileid: "49613053"
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>使用 Microsoft PowerShell 變更群組設定
 
-您也可以使用 PowerShell，避免將新的客人加入個別群組。
+您也可以使用 PowerShell，避免將新的客人加入個別群組。  (請記住，小組關聯的 SharePoint 網站有 [個別的來賓共用控制](https://docs.microsoft.com/sharepoint/change-external-sharing-site)。 ) 
 
 您必須使用預覽版本的 [Azure Active Directory PowerShell，以](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (模組名稱 **AzureADPreview**) 才能變更群組層級來賓存取設定：
 

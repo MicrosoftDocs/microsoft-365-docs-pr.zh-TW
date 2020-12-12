@@ -2,9 +2,9 @@
 title: 偵測並修復 Outlook 規則和自訂表單注入攻擊。
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
 ms.date: 04/23/2018
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 瞭解如何在 Office 365 中識別及修復 Outlook 規則和自訂表單注入攻擊
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7d879d34a925354084e08d82f5e1724725c18825
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: cbdc41315d64d341248d6900147aabc5a0b9877c
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203068"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663640"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>偵測並修復 Outlook 規則和自訂表單注入攻擊
 
@@ -39,7 +39,7 @@ ms.locfileid: "48203068"
 
 攻擊通常遵循下列模式：
 
-**規則會利用**下列專案：
+**規則會利用** 下列專案：
 
 1. 攻擊者竊取其中一個使用者的使用者名稱和密碼。
 
@@ -55,7 +55,7 @@ ms.locfileid: "48203068"
 
 7. 惡意程式碼可讓攻擊者重新竊取使用者的使用者名稱和密碼，或從本機機器重新竊取其他認證，以及執行其他惡意活動。
 
-**表單利用**方式：
+**表單利用** 方式：
 
 1. 攻擊者竊取其中一個使用者的使用者名稱和密碼。
 
@@ -120,7 +120,7 @@ ms.locfileid: "48203068"
 
 3. 開啟 Outlook 中的 [now visible developer] 索引標籤，然後按一下 [ **設計表單**]。
 
-4. 從 [**查找範圍**] 清單中選取 [**收件**匣]。 尋找任何自訂表單。 自訂表單非常少見，如果您有任何自訂表單，則需要更深入的外觀。
+4. 從 [**查找範圍**] 清單中選取 [**收件** 匣]。 尋找任何自訂表單。 自訂表單非常少見，如果您有任何自訂表單，則需要更深入的外觀。
 
 5. 調查任何自訂表單，尤其是標示為隱藏的表單。
 
@@ -146,11 +146,11 @@ ms.locfileid: "48203068"
 
 - **MailboxRulesExport-*yyyy***：) 針對包含應用程式或可執行檔的動作條件，檢查每一列 (的規則：
 
-  - **ActionType (欄位 A) **：如果看到值 "ID_ACTION_CUSTOM"，該規則可能是惡意的。
+  - **ActionType (欄位 A)**：如果看到值 "ID_ACTION_CUSTOM"，該規則可能是惡意的。
 
-  - **IsPotentiallyMalicious (欄) **：如果此值為 "TRUE"，則此規則可能是惡意的。
+  - **IsPotentiallyMalicious (欄)**：如果此值為 "TRUE"，則此規則可能是惡意的。
 
-  - **ActionCommand (Column G) **：如果這會列出應用程式或任何副檔名為 .exe、.zip 副檔名的專案，或是參考 URL 的專案，則該規則可能是惡意的。
+  - **ActionCommand (Column G)**：如果這會列出應用程式或任何副檔名為 .exe、.zip 副檔名的專案，或是參考 URL 的專案，則該規則可能是惡意的。
 
 - **MailboxFormsExport-*yyyy-yyyy***：一般說來，使用自訂表單非常少見。 如果您在此活頁簿中找到任何的，請開啟該使用者的信箱，並檢查該表單本身。 如果您的組織未有意放入該組織，可能是惡意的。
 
@@ -202,9 +202,9 @@ ms.locfileid: "48203068"
 
   - **多個失敗的登入嘗試**：這個原則設定檔您的環境，當使用者在與所學的基準相關的單一會話中執行多個失敗的登入活動時，便會觸發警示，這可能表示企圖遭到破壞。
 
-  - 不**可能的旅行**：這項原則會在不同位置的相同使用者中偵測到活動時，在兩個位置之間的時間範圍內，以短于預期的旅行時間。 這可能表示不同的使用者使用相同的認證。 偵測到這種反常行為時，會有七天的初始學習週期，以瞭解新使用者的活動模式。
+  - 不 **可能的旅行**：這項原則會在不同位置的相同使用者中偵測到活動時，在兩個位置之間的時間範圍內，以短于預期的旅行時間。 這可能表示不同的使用者使用相同的認證。 偵測到這種反常行為時，會有七天的初始學習週期，以瞭解新使用者的活動模式。
 
-  - **由使用者) 所 (的特殊模擬活動 **：此原則設定檔您的環境，當使用者在與基線獲知相關的單一會話中執行多個類比活動時，便會觸發警示，這可能表示企圖遭到破壞。
+  - **由使用者) 所 (的特殊模擬活動**：此原則設定檔您的環境，當使用者在與基線獲知相關的單一會話中執行多個類比活動時，便會觸發警示，這可能表示企圖遭到破壞。
 
 - 利用類似 [Office 365 安全分數](https://securescore.office.com/) 的工具來管理帳戶安全性設定和行為。
 

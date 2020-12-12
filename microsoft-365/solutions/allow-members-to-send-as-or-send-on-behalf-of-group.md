@@ -17,16 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: 0ad41414-0cc6-4b97-90fb-06bec7bcf590
 description: 瞭解如何允許成員以 Microsoft 365 群組形式傳送電子郵件，或代表 Microsoft 365 群組傳送電子郵件。
-ms.openlocfilehash: 2abf0668411ccd08db5bbd8408605dcd0aa2d832
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 6dff559eceec1b719f31d577d7fff8f604636a47
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613566"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663580"
 ---
 # <a name="allow-members-to-send-as-or-send-on-behalf-of-a-group"></a>允許成員傳送為或代表群組傳送
 
-「以「 **代理傳送** 」或「 **代理傳送** 者」許可權授與之 Microsoft 365 群組的成員可以傳送電子郵件給群組，或代表群組傳送電子郵件。 本文說明管理員如何設定這些許可權。
+「以「 **代理傳送** 」或「 **代理傳送** 者」許可權授與之 Microsoft 365 群組的成員可以傳送電子郵件給群組，或代表群組傳送電子郵件。 本文說明全域或 Exchange 系統管理員如何設定這些許可權。
   
 例如，如果 Megan Bowen 是 **訓練** Microsoft 365 群組的一部分，且具有群組的 [以該群組 **傳送** ] 許可權，則當她傳送電子郵件做為群組時，它看起來就像是 **訓練** 群組傳送電子郵件。 
   

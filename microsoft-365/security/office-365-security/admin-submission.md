@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
-ms.openlocfilehash: 0c01afff2e9e5a656099192f3867bb3a6f1cee23
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 7327768780e5db16e09e2b709c9c11344573c404
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568587"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659822"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -46,7 +46,7 @@ ms.locfileid: "49568587"
 
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 **組織管理**。
 
-    請注意，此角色群組的成員資格是 [查看使用者送至自訂信箱的使用者](#view-user-submissions-to-the-custom-mailbox) ，如本主題稍後所述。
+    請注意，此角色群組的成員資格是 [查看使用者送至自訂信箱的使用者](#view-user-submissions-to-the-custom-mailbox) ，如本文稍後所述。
 
 - 如需使用者如何提交郵件和檔案給 Microsoft 的詳細資訊，請參閱 [向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。
 
@@ -62,7 +62,7 @@ ms.locfileid: "49568587"
 
    - **網路消息識別碼**：這是在郵件中 **X-MS-Exchange-Organization-網路 Message-Id** 標頭中可用的 GUID 值，或是隔離郵件中的 **X Office365-篩選關聯識別碼** 標頭中可用的 GUID 值。
 
-   - **File** 檔案：按一下 **[選擇** 檔案]。 在開啟的對話方塊中，尋找並選取 .eml 或 .msg 檔案，然後按一下 [ **開啟**]。
+   - 檔案：按一下 **[選擇** 檔案]。 在開啟的對話方塊中，尋找並選取 .eml 或 .msg 檔案，然後按一下 [ **開啟**]。
 
    > [!NOTE]
    > 管理員搭配 Office 的 Defender for Office 365 方案1或計畫2可將郵件提交為30天的舊郵件。 其他系統管理員只可以回復7天。
@@ -212,7 +212,7 @@ ms.locfileid: "49568587"
 若要變更篩選準則，請按一下 [ **寄件者** ] 按鈕，然後選擇下列其中一個值：
 
 - **寄件者網域**
-- **Subject**
+- **主旨**
 - **提交者**
 - **提交類型**
 - **寄件者 IP**

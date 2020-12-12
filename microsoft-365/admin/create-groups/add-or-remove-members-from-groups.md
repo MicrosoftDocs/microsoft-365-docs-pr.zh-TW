@@ -15,18 +15,15 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BSA160
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: 瞭解如何將成員新增至群組、從群組中移除成員及管理 Microsoft 365 系統管理中心中的群組擁有者狀態。
-ms.openlocfilehash: a8739b6cd2005598acbfccbaff6131235ec480ee
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: 34c026bced5563e07a1ae0d13f4c691cfaf3f624
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753310"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663240"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>使用系統管理中心新增或移除 Microsoft 365 群組中的成員
 
@@ -37,9 +34,9 @@ ms.locfileid: "48753310"
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>將成員新增至系統管理中心的群組
 
-1. 在系統管理中心中，移至 [ **群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a> ] 頁面。  
+1. 在系統管理中心中，移至 [作用中 [**群組**](https://admin.microsoft.com/Adminportal/Home?#/groups) ] 頁面。  
 
-2. 選取組名。
+2. 按一下群組名稱。
 
 3. 在 [詳細資料] 窗格的 [ **成員** ] 索引標籤上，選取 [ **全部查看] 和 [管理成員**]，然後選取 [ **新增成員**]。
 
@@ -49,9 +46,9 @@ ms.locfileid: "48753310"
 
 ## <a name="add-a-group-to-a-member-in-the-admin-center"></a>將群組新增至系統管理員中心的成員
 
-1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。  
+1. 在系統管理中心中，移至 [作用中 [**使用者**](https://admin.microsoft.com/Adminportal/Home?#/users) ] 頁面。  
 
-2. 選取使用者。
+2. 按一下使用者。
 
 3. 在詳細資料窗格的 [ **帳戶** ] 索引標籤上，選取 [ **管理群組**]。
 
@@ -62,11 +59,11 @@ ms.locfileid: "48753310"
 ## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>從系統管理中心的群組中移除成員
 
 > [!NOTE]
-> 當您從私人群組移除成員時，大約需要 5 分鐘的時間系統才會將該人員從群組中封鎖 (待從網域控制項中完整複製成員資格之後)。
+> 當您從私人群組中移除成員時，會需要5分鐘的時間，才能從群組中封鎖人員。
 
-1. 在系統管理中心中，移至 [ **群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a> ] 頁面。
+1. 在系統管理中心中，移至 [作用中 [**群組**](https://admin.microsoft.com/Adminportal/Home?#/groups) ] 頁面。  
 
-2. 選取組名。
+2. 按一下群組名稱。
 
 3. 在詳細資料窗格的 [ **成員** ] 索引標籤上，選取 [ **全部查看] 和 [管理成員**]。
 
@@ -80,13 +77,13 @@ ms.locfileid: "48753310"
   
 ### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>在系統管理中心將成員提升為擁有者狀態
 
-1. 在系統管理中心中，移至 [ **群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a> ] 頁面。
+1. 在系統管理中心中，移至 [作用中 [**群組**](https://admin.microsoft.com/Adminportal/Home?#/groups) ] 頁面。  
 
-2. 選取組名。
+2. 按一下群組名稱。
 
-3. 在詳細資料窗格的 [ **成員** ] 索引標籤上，選取 [ **全部查看] 和 [管理擁有**者]。
+3. 在詳細資料窗格的 [ **成員** ] 索引標籤上，選取 [ **全部查看] 和 [管理擁有** 者]。
 
-4. 搜尋成員，或選取 [ **新增擁有**者]。
+4. 選取 [ **新增擁有** 者]。
 
 5. 選取您要新增之成員名稱旁邊的核取方塊。
 
@@ -94,11 +91,11 @@ ms.locfileid: "48753310"
 
 ### <a name="remove-owner-status-in-the-admin-center"></a>在系統管理中心移除擁有者狀態
 
-1. 在系統管理中心中，移至 [ **群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a> ] 頁面。
+1. 在系統管理中心中，移至 [作用中 [**群組**](https://admin.microsoft.com/Adminportal/Home?#/groups) ] 頁面。  
 
-2. 選取組名。
+2. 按一下群組名稱。
 
-3. 在詳細資料窗格的 [ **成員** ] 索引標籤上，選取 [ **全部查看] 和 [管理擁有**者]。
+3. 在詳細資料窗格的 [ **成員** ] 索引標籤上，選取 [ **全部查看] 和 [管理擁有** 者]。
 
 4. 選取擁有者名稱旁邊的 X。
 
@@ -108,7 +105,7 @@ ms.locfileid: "48753310"
 
 - [在 Azure Active Directory 中動態管理群組](https://go.microsoft.com/fwlink/?linkid=847632)：請參閱＜如何動態管理群組的成員資格？＞一節
 
-- 若要將成百上千名使用者新增至群組，請使用 [Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191)。
+- 若要將成百上千名使用者新增至群組，請使用 [Add-UnifiedGroupLinks](https://docs.microsoft.com/powershell/module/exchange/add-unifiedgrouplinks)。
 
 - [指派新擁有者給孤立的群組](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 

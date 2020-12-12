@@ -18,33 +18,33 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Outlook.com 所接受或拒絕的電子郵件地址類型，以協助防止網路釣魚。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e0afd05c80bb4de665d23b17c7089631dad93c78
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 25fbca8fa5d264a212ac25e2035bffde0819383d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196056"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659651"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP 如何驗證寄件者位址以避免網路釣魚
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-網路釣魚攻擊是對任何電子郵件組織造成的持續威脅。 除了使用 [冒牌 (偽造) 寄件者電子郵件地址](anti-spoofing-protection.md)，攻擊者通常會使用來自于網際網路標準的「寄件者」位址值。 為了協助防止此類型的網路釣魚，Exchange Online Protection (EOP) 和 Outlook.com 現在要求輸入郵件包含與 RFC 相容的「來源位址」（如本主題所述）。 此強制已于2017年11月啟用。
+網路釣魚攻擊是對任何電子郵件組織造成的持續威脅。 除了使用 [冒牌 (偽造) 寄件者電子郵件地址](anti-spoofing-protection.md)，攻擊者通常會使用來自于網際網路標準的「寄件者」位址值。 為了協助防止此類型的網路釣魚，Exchange Online Protection (EOP) 和 Outlook.com 現在要求輸入郵件包含與 RFC 相容的來源位址（如本文所述）。 此強制已于2017年11月啟用。
 
 **附註**：
 
-- 如果您定期收到的電子郵件來自具有本主題所述位址格式錯誤的組織，請鼓勵這些組織更新其電子郵件伺服器，以遵守新式安全性標準。
+- 如果您定期收到的電子郵件來自于本文所述的位址錯誤的組織，請鼓勵這些組織更新他們的電子郵件伺服器，以遵守新式安全性標準。
 
 - 「傳送代理者」和「郵寄清單」使用的相關寄件者欄位 () 不會受到這些需求的影響。 如需詳細資訊，請參閱下列博客文章： [當我們參考電子郵件的「寄件者」時，這是什麼意思？](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)。
 
 ## <a name="an-overview-of-email-message-standards"></a>電子郵件訊息標準的概覽
 
-標準 SMTP 電子郵件由「郵件信封」**(Message Envelope) 和郵件內容組成。 郵件信封包含在 SMTP 伺服器之間傳輸及傳遞郵件所需的資訊。 郵件內容包含統稱為 (「郵件標頭」**) 的郵件標頭欄位和郵件內容。 [Rfc 5321](https://tools.ietf.org/html/rfc5321)會說明郵件信封，而[rfc 5322](https://tools.ietf.org/html/rfc5322)中說明郵件頭。 收件者永遠不會看到實際的郵件信封，因為它是由郵件傳輸程式所產生，而且實際上不是郵件的一部分。
+標準 SMTP 電子郵件由「郵件信封」(Message Envelope) 和郵件內容組成。 郵件信封包含在 SMTP 伺服器之間傳輸及傳遞郵件所需的資訊。 郵件內容包含統稱為 (「郵件標頭」) 的郵件標頭欄位和郵件內容。 [Rfc 5321](https://tools.ietf.org/html/rfc5321)會說明郵件信封，而[rfc 5322](https://tools.ietf.org/html/rfc5322)中說明郵件頭。 收件者永遠不會看到實際的郵件信封，因為它是由郵件傳輸程式所產生，而且實際上不是郵件的一部分。
 
 - 此 `5321.MailFrom` 位址 (也稱為「 **郵件來自** 位址」、「P1 寄件者」或「信封寄件者」) 是在郵件的 SMTP 傳輸中使用的電子郵件地址。 這個電子郵件地址通常會記錄在郵件頭的 [傳回 **路徑** 標頭] 欄位中 (不過，寄件者可能會指定不同的傳回 **路徑** 電子郵件地址) 。
 
-- `5322.From` (也稱為 from address 或 P2 sender) 是電子郵件地址**的收**件者標頭欄位，也就是顯示在電子郵件客戶程式中的寄件者電子郵件地址。 「寄件者位址」是本主題中需求的重點。
+- `5322.From` (也稱為 from address 或 P2 sender) 是電子郵件地址 **的收** 件者標頭欄位，也就是顯示在電子郵件客戶程式中的寄件者電子郵件地址。 [寄件者] 位址是本文中需求的重點。
 
 「寄件者」位址會在多個 Rfc (中詳細定義，例如 RFC 5322 區段3.2.3、3.4 及3.4.1，以及 [rfc 3696](https://tools.ietf.org/html/rfc3696)) 。 定址的情況有許多變化，且被視為有效或無效。 為了簡化，我們建議您遵循下列格式及定義：
 

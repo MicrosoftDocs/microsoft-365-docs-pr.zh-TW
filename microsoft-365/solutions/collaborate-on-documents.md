@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 在本文中，您將瞭解如何在 SharePoint 和 OneDrive 的檔中與客人共同作業。
-ms.openlocfilehash: bb97beaacf6a433e4fc5c38a897327d1e359ffb1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 1b2fe003902b69e4c0c58852af67862ce6f2eb34
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613511"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663508"
 ---
 # <a name="collaborate-with-guests-on-a-document"></a>在文件上與來賓共同作業
 
@@ -34,15 +34,13 @@ ms.locfileid: "49613511"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE450Vt?autoplay=false]
 
-## <a name="azure-organizational-relationships-settings"></a>Azure 組織關聯性設定
+## <a name="azure-external-collaboration-settings"></a>Azure 外部協同作業設定
 
-Microsoft 365 中的共用可透過 [Azure Active Directory 中的組織關聯設定](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)受到最高層級的制約。 如果 Azure AD 中已停用或限制來賓共用，此設定會覆寫您在 Microsoft 365 中設定的任何共用設定。
+Microsoft 365 中的共用受 [Azure Active Directory 中的 B2B 外部](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations)共同作業設定的最高層級。 如果 Azure AD 中已停用或限制來賓共用，此設定會覆寫您在 Microsoft 365 中設定的任何共用設定。
 
-檢查 [組織關聯] 設定，以確保未封鎖與來賓共用。
+檢查 B2B 的外部共同作業設定，以確保不會封鎖與來賓共用。
 
 ![Azure Active Directory 組織關聯性設定頁面的螢幕擷取畫面](../media/azure-ad-organizational-relationships-settings.png)
-
-設定組織關聯設定
 
 設定外部協同作業設定
 
@@ -109,11 +107,11 @@ SharePoint 的組織層級設定會決定個別 SharePoint 網站可使用的設
 
 1. 在 [ **這些連結可提供下列許可權：** ] 子窗格中， 
     1. 從 [ **檔案** ] 下拉式清單中， 
-        1. 如果您想要允許未驗證的使用者變更檔案，請選取 [ **查看] 和 [編輯** ]。
-        2. 如果您不想讓未驗證的使用者變更檔，請選取 [View] （ **查看** ）。
+        - 如果您想要允許未驗證的使用者變更檔案，請選取 [ **查看] 和 [編輯** ]。
+        - 如果您不想讓未驗證的使用者變更檔，請選取 [View] （ **查看** ）。
     2. 從 [ **資料夾** ] 下拉式清單中，
-        1. 如果您想要允許未驗證的使用者對資料夾進行變更，請選取 **[查看]、[編輯] 及 [上傳** ]。
-        2. 如果您不想讓未驗證的使用者對資料夾進行變更，請選取 [View] （ **查看** ）。
+        - 如果您想要允許未驗證的使用者對資料夾進行變更，請選取 **[查看]、[編輯] 及 [上傳** ]。
+        - 如果您不想讓未驗證的使用者對資料夾進行變更，請選取 [View] （ **查看** ）。
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>SharePoint 網站層級共用設定
 

@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在安全性 & 合規性中心的承租人允許/封鎖清單中設定 URL 專案。
-ms.openlocfilehash: 0fdfa23ba22b240032e7a6888948de180aa0f6ae
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 4bf5e2e29a9f48c434be527a2447ca4bf98c4208
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614961"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659995"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>管理租使用戶允許/封鎖清單中的 URL
 
@@ -28,7 +28,7 @@ ms.locfileid: "49614961"
 
 
 > [!NOTE]
-> 本主題中所述的功能包括預覽、可能變更，而且無法在所有的組織中使用。
+> 本文所述的功能都是在預覽中，可能會變更，而且無法在所有的組織中使用。
 
 在使用 Exchange Online 或獨立 Exchange online (Protection 中信箱的 Microsoft 365 組織中，EOP) 組織沒有 Exchange Online 信箱，您可能會反對 EOP 篩選判定。 例如，良好的郵件可能會標示為壞的 (誤報) 或不良郵件可以透過 (誤報) 。
 
@@ -40,7 +40,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至「 **租使用者允許/封鎖清單** 」頁面，請使用 <https://protection.office.com/tenantAllowBlockList> 。
 
-- 您可以在本主題稍後的 [承租人 Allow/封鎖清單區段之 url 語法](#url-syntax-for-the-tenant-allowblock-list) 中說明可用的 URL 值。
+- 在本文稍後的 [承租人允許/封鎖清單區段的 url 語法](#url-syntax-for-the-tenant-allowblock-list) 中，會說明可用的 URL 值。
 
 - 承租人允許/封鎖清單最多可以有500個專案可供 URLs。
 
@@ -52,7 +52,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須在安全性 & 合規性中心指派許可權，才能執行本文中的程式：
+- 您必須先獲指派安全性與合規性中心的權限，才能執行此文章中的程序：
   - 若要從 [承租人允許/封鎖] 清單中新增及移除值，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要取得租使用者 Allow/封鎖清單的唯讀許可權，您必須是 **全域讀取** 者或 **安全性讀取器** 角色群組的成員。
 
@@ -60,12 +60,12 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
   **附註**：
 
-  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>使用安全性 & 規範中心在承租人允許/封鎖清單中建立 URL 專案
 
-如需 URL 專案之語法的詳細資訊，請參閱本主題稍後的 [承租人 Allow/封鎖清單區段的 URL 語法](#url-syntax-for-the-tenant-allowblock-list) 。
+如需 URL 專案之語法的詳細資訊，請參閱本文稍後的 [承租人 Allow/封鎖清單區段的 URL 語法](#url-syntax-for-the-tenant-allowblock-list) 。
 
 1. 在安全性 & 規範中心內，移至 **威脅管理** \> **原則** \> **承租人允許/封鎖清單**。
 
@@ -145,7 +145,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
    - **選用附注**：輸入專案的描述性文字。
 
-5. 完成後，按一下 **[儲存]**。
+5. 完成後，按一下 [儲存]。
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>使用安全性 & 規範中心移除承租人允許/封鎖清單中的專案
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中設定連線篩選，以允許或封鎖電子郵件伺服器的電子郵件。
-ms.openlocfilehash: a2a755516f029f5d72016e9ea8fcb87a997d5065
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 844b1d8d17a99bbb0c441be511c64a009b8dafcb
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572822"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659810"
 ---
 # <a name="configure-connection-filtering"></a>設定連線篩選
 
@@ -32,7 +32,7 @@ ms.locfileid: "49572822"
 
 如果您是使用 Exchange Online 中的信箱或獨立 Exchange Online Protection 的 Microsoft 365 客戶 (EOP) 客戶沒有 Exchange Online 信箱，您可以在 EOP 中使用連線篩選 (特別是，「預設連線篩選原則」) 可透過 IP 位址識別正確或不良的來源電子郵件伺服器。 預設連線篩選原則的主要元件包括：
 
-- **IP 允許清單**：針對來自您透過 ip 位址或 ip 位址範圍所指定之來源電子郵件伺服器的所有傳入郵件，略過垃圾郵件篩選。 針對來自這些來源之郵件的垃圾郵件篩選可能仍會發生的情況，請參閱本主題稍後的 [篩選來自 IP 允許清單來源的郵件](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) 。 如需 IP 允許清單應如何符合整體安全寄件者策略的詳細資訊，請參閱 [在 EOP 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
+- **IP 允許清單**：針對來自您透過 ip 位址或 ip 位址範圍所指定之來源電子郵件伺服器的所有傳入郵件，略過垃圾郵件篩選。 針對來自這些來源之郵件的垃圾郵件篩選可能仍會發生的情況，請參閱本文稍後的 [篩選來自 IP 允許清單來源的郵件](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) 。 如需 IP 允許清單應如何符合整體安全寄件者策略的詳細資訊，請參閱 [在 EOP 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
 
 - **IP 封鎖清單**：從您透過 ip 位址或 ip 位址範圍所指定之來源電子郵件伺服器封鎖所有傳入的郵件。 內送郵件會遭到拒絕，不會標示為垃圾郵件，也不會發生其他篩選。 如需 IP 封鎖清單應如何符合整體封鎖的寄件者策略的詳細資訊，請參閱 [在 EOP 中建立封鎖寄件者清單](create-block-sender-lists-in-office-365.md)。
 
@@ -49,7 +49,7 @@ ms.locfileid: "49572822"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須在安全性 & 合規性中心指派許可權，才能執行本文中的程式：
+- 您必須先獲指派安全性與合規性中心的權限，才能執行此文章中的程序：
   - 若要修改預設連線篩選原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要對預設連線篩選原則進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取** 器角色群組的成員。
 
@@ -57,8 +57,8 @@ ms.locfileid: "49572822"
 
   **附註**：
 
-  - 將使用者新增至 Microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的必要許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的「 **View-Only 組織管理**」角色群組也會提供該功能的唯讀存取權。
+  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 - 若要尋找電子郵件伺服器的來源 IP 位址 (您要允許或封鎖的寄件者) ，您可以檢查郵件頭中的 [連接 IP (**CIP**) 標頭欄位。 若要在不同的電子郵件客戶程式中查看郵件頭，請參閱在 [Outlook 中查看網際網路郵件頭](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "49572822"
 
 1. 在安全性 & 合規性中心，然後移至 **威脅管理** \> **原則** \> **Anti-Spam**。
 
-2. 在 [**反垃圾郵件設定**] 頁面上，按一下 [展開圖示]，然後按一下 [編輯原則]，展開 [連線 **篩選原則**] ![ ](../../media/scc-expand-icon.png) 。 **Edit policy**
+2. 在 [**反垃圾郵件設定**] 頁面上，按一下 [展開圖示]，然後按一下 [編輯原則]，展開 [連線 **篩選原則**] ![ ](../../media/scc-expand-icon.png) 。 
 
 3. 在出現的 **預設** 浮出視窗中，設定下列任一設定：
 
@@ -82,7 +82,7 @@ ms.locfileid: "49572822"
 
      - IP 範圍：例如，192.168.0.1-192.168.0.254。
 
-     - CIDR IP：例如 192.168.0.1/25。 有效的網路遮罩值為/24 到/32。 若要略過 CIDR IP 遮罩值的垃圾郵件篩選，/1 到/23，請參閱本主題稍後的 [ [略過垃圾郵件篩選] （適用于可用範圍區段之外的 CIDR ip](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) ）。
+     - CIDR IP：例如 192.168.0.1/25。 有效的網路遮罩值為/24 到/32。 若要略過 CIDR IP 遮罩值的垃圾郵件篩選/1 到/23，請參閱本文稍後的 [可用範圍區段之外的 CIDR ip 的 [略過垃圾郵件篩選](#skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range) ]。
 
      若要新增 IP 位址或位址範圍，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 若要移除專案，請選取 [ **允許的 IP 位址** ] 中的專案，然後按一下 [ **移除**] ![ ](../../media/scc-remove-icon.png) 。 完成後，按一下 [儲存]。
 
@@ -160,7 +160,7 @@ Set-HostedConnectionFilterPolicy -Identity Default -IPAllowList @{Add="192.168.2
 
 ### <a name="skip-spam-filtering-for-a-cidr-ip-outside-of-the-available-range"></a>略過可用範圍外的 CIDR IP 的垃圾郵件篩選
 
-如本主題稍早所述，您只能在 IP 允許清單中使用具有 network mask/24 to/32 的 CIDR IP。 若要在/1 到/23 範圍內略過來自來源電子郵件伺服器的郵件篩選，您必須使用 Exchange 郵件流程規則 (也稱為 transport rules) 。 不過，如果可能的話，建議您不要這麼做，因為在任何 Microsoft 的專屬或協力廠商封鎖清單中，如果有/1 to/23 CIDR IP 範圍的 IP 位址會出現，則郵件會遭到封鎖。
+如本文稍早所述，您只能在 IP 允許清單中使用具有 network mask/24 to/32 的 CIDR IP。 若要在/1 到/23 範圍內略過來自來源電子郵件伺服器的郵件篩選，您必須使用 Exchange 郵件流程規則 (也稱為 transport rules) 。 不過，如果可能的話，建議您不要這麼做，因為在任何 Microsoft 的專屬或協力廠商封鎖清單中，如果有/1 to/23 CIDR IP 範圍的 IP 位址會出現，則郵件會遭到封鎖。
 
 現在，您已完全瞭解潛在問題，您可以使用下列)  (設定來建立郵件流程規則，以確保這些 IP 位址的郵件會略過垃圾郵件篩選：
 

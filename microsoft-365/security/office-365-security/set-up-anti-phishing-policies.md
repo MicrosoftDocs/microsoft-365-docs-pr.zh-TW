@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
-ms.openlocfilehash: 9d3c8c0bf2b1c440892a1099d3d0812d95027156
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615765"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659853"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -84,7 +84,7 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
     - **收件者網域是**
 
   > [!NOTE]
-  > 在自訂的反網路釣魚原則中，需要套用 **to** 設定來識別 <u>原則所套用</u>**的郵件收** 件者。 Microsoft Defender for Office 365 中的反網路釣魚原則也會有 [類比設定](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ，您可以在其中指定個別寄件者電子郵件地址或寄件者網域，以在本主題稍後所述 <u>的方式接收模擬保護</u> 。
+  > 在自訂的反網路釣魚原則中，需要套用 **to** 設定來識別 <u>原則所套用</u>**的郵件收** 件者。 Microsoft Defender for Office 365 中的反網路釣魚原則也會有 [類比設定](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) ，您可以在其中指定個別寄件者電子郵件地址或寄件者網域，以供本文稍後所述 <u>接收模擬保護</u> 。
 
 ## <a name="spoof-settings"></a>欺騙設定
 

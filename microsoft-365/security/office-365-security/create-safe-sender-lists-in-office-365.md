@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解可用及慣用的選項，允許在 Exchange Online Protection (EOP) 中輸入郵件。
-ms.openlocfilehash: 71c413cdf3f9a189420c33953d7bce41362ab6a9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 38f1ab2451191dd63d5738075dbf42f8201a34ca
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616629"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659901"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中建立安全的寄件者清單
 
@@ -47,7 +47,7 @@ ms.locfileid: "49616629"
 >
 > - 若要讓網域傳送未驗證的電子郵件 (略過反欺騙保護) 但不略過反垃圾郵件和反惡意程式碼檢查，您可以將它新增至[AllowedToSpoof 安全寄件者清單](walkthrough-spoof-intelligence-insight.md)。
 >
-> - EOP 和 Outlook 會檢查不同的郵件內容，以判斷郵件的寄件者。 如需詳細資訊，請參閱本主題稍後的「 [大量電子郵件](#considerations-for-bulk-email) 」一節的考慮。
+> - EOP 和 Outlook 會檢查不同的郵件內容，以判斷郵件的寄件者。 如需詳細資訊，請參閱本文稍後的「 [大量電子郵件](#considerations-for-bulk-email) 」一節的考慮。
 
 相比之下，您也有數個選項可以封鎖使用 _封鎖的寄件者清單_ 來自特定來源的電子郵件。 如需詳細資訊，請參閱[在 EOP 中建立封鎖寄件者清單](create-block-sender-lists-in-office-365.md)。
 

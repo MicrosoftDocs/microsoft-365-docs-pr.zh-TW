@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 方案2中識別具有使用者標記的特定使用者群組。 標記篩選可用於 Office 365 的 Microsoft Defender 中的提醒、報告和調查，以快速識別已標記的使用者。
-ms.openlocfilehash: 136de95addae7dcd48de2c6ac1f30ce67714817c
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: ad06bf90f1ecb93d671bfcad6fad0b4f2a952cb2
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49552016"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663604"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的使用者標記
 
@@ -48,11 +48,19 @@ ms.locfileid: "49552016"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **使用者標記** ] 頁面，請開啟] <https://protection.office.com/userTags> 。
 
-- 若要建立、修改或移除 **自訂使用者標記**，您必須是 Security & 合規性中心內「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+- 您必須先獲指派安全性與合規性中心的權限，才能執行此文章中的程序：
+  - 若要建立、修改和刪除使用者標記，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
+  - 若要在現有的使用者標記中新增及移除成員，您必須是「 **組織管理**」、「 **安全性管理員**」或「 **安全操作員** 」角色群組的成員。
+  - 若要唯讀的使用者標記存取權，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-- 若要 (系統磁碟區標) 設定優先順序帳戶，您必須是 [全域系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) 或 [Exchange 系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)。
+  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-  您也可以在 Microsoft 365 admin center 中管理及監視優先順序帳戶。 如需相關指示，請參閱 [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。
+  **附註**：
+
+  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  - 使用者標記管理是由 **標記讀取器**、 **標記參與者** 及 **標記管理員** 角色所控制。
+
+- 您也可以在 Microsoft 365 admin center 中管理及監視優先順序帳戶。 如需相關指示，請參閱 [Manage and monitor priority accounts](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)。
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>使用安全中心建立使用者標記
 
@@ -72,7 +80,7 @@ ms.locfileid: "49552016"
      - 在方塊中按一下，然後在清單中向內移動，以選取使用者或群組。
      - 在方塊中按一下並輸入，以篩選清單並選取使用者或群組。
      - 若要新增其他值，請按一下方塊中的空白區域。
-     - 若要從方塊中移除個別專案， **Remove** 請 ![ 在方塊中按一下使用者或群組上的 [移除移除圖示] ](../../media/scc-remove-icon.png) 核取方塊。
+     - 若要從方塊中移除個別專案， 請 ![ 在方塊中按一下使用者或群組上的 [移除移除圖示] ](../../media/scc-remove-icon.png) 核取方塊。
      - 若要從方塊下方的清單中移除現有的專案，請按一下 [ **移除** ![ 移除圖示] ](../../media/scc-remove-icon.png) 專案。
 
      完成後，請按一下 [ **新增**]。
