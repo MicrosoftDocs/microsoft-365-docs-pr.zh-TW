@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解三種您可以用來監視個人資料外洩的工具。
-ms.openlocfilehash: 67cce80435aa0f01f496ec67d617f0a2dfff8ec8
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202696"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616377"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>監視個人資料的外洩
 
@@ -117,7 +117,6 @@ Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用
 這些屬性類型即將在 Cloud App Security 推出：
 
 - 敏感性資訊類型
-
 - Microsoft 365 與 Azure 資訊保護之間的統一標籤
 
 ### <a name="cloud-app-security-dashboard"></a>Cloud App Security 儀表板
@@ -142,69 +141,24 @@ Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用
 
 從核准的雲端應用程式共用包含信用卡號碼的檔案時發出警示。
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>控制</strong></th>
-<th align="left"><strong>設定</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">原則類型</td>
-<td align="left">檔案原則</td>
-</tr>
-<tr class="even">
-<td align="left">原則範本</td>
-<td align="left">無範本</td>
-</tr>
-<tr class="odd">
-<td align="left">原則重要性</td>
-<td align="left">高</td>
-</tr>
-<tr class="even">
-<td align="left">類別</td>
-<td align="left">DLP</td>
-</tr>
-<tr class="odd">
-<td align="left">篩選器設定</td>
-<td align="left"><p>存取層級 = 公用 (網際網路)、公用、外部</p>
-<p>App = &lt;select apps&gt; (如果想要限制對特定 SaaS 應用程式的監視，請使用此設定)</p></td>
-</tr>
-<tr class="even">
-<td align="left">套用到</td>
-<td align="left">所有檔案，所有擁有者</td>
-</tr>
-<tr class="odd">
-<td align="left">內容檢查</td>
-<td align="left"><p>包含符合當前運算式的檔案：所有國家/地區、金融、信用卡號碼</p>
-<p>不需要相關內容：已取消核取 (這會比對關鍵字，以及 regex)</p>
-<p>包含至少有 1 個相符項目的檔案</p>
-<p>取消遮罩違規的最後 4 個字元：已核取</p></td>
-</tr>
-<tr class="even">
-<td align="left">警示</td>
-<td align="left"><p>建立每個相符檔案的警示：已核取</p>
-<p>每日警示限制：1000</p>
-<p>選取警示做為電子郵件：已核取</p>
-<p>收件人：infosec@contoso.com</p></td>
-</tr>
-<tr class="odd">
-<td align="left">治理</td>
-<td align="left"><p>Microsoft OneDrive for Business</p>
-<p>專用： 核取 [移除外部使用者]</p>
-<p>所有其他設定：已取消核取</p>
-<p>Microsoft SharePoint Online</p>
-<p>專用： 核取 [移除外部使用者]</p>
-<p>所有其他設定：已取消核取</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|控制項|設定|
+|---|---|
+|原則類型|檔案原則|
+|原則範本|無範本|
+|原則重要性|高|
+|類別|DLP|
+|篩選器設定|存取層級 = 公用 (網際網路)、公用、外部 <p> App = \<select apps\> (如果想要限制對特定 SaaS 應用程式的監視，請使用此設定)|
+|套用到|所有檔案，所有擁有者|
+|內容檢查|包含符合當前運算式的檔案：所有國家/地區、金融、信用卡號碼 <p> 不需要相關內容：已取消核取 (這會比對關鍵字，以及 regex) <p> 包含至少有 1 個相符項目的檔案 <p> 取消遮罩違規的最後 4 個字元：已核取|
+|警示|建立每個相符檔案的警示：已核取 <p> 每日警示限制：1000 <p> 選取警示做為電子郵件：已核取 <p> 收件人：infosec@contoso.com|
+|治理|Microsoft OneDrive for Business <p> 專用： 核取 [移除外部使用者] <p> 所有其他設定：已取消核取 <p> Microsoft SharePoint Online <p> 專用： 核取 [移除外部使用者] <p> 所有其他設定：已取消核取|
+|
 
 類似原則：
 
 - 偵測包含 PII 之檔案的共用 — 電子郵件地址
-
 - 偵測包含 PII 之檔案的共用 — 護照號碼
 
 ### <a name="detect-customer-or-hr-data-in-box-or-onedrive-for-business"></a>偵測 Box 或商務用 OneDrive 中的客戶或 HR 資料
@@ -214,64 +168,23 @@ Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用
 附註：
 
 - Box 監視需要您使用 API 連接器 SDK 設定連接器。
-
 - 此原則需要目前處於私人預覽的功能。
 
-<table>
-<thead>
-<tr class="header">
-<th align="left"><strong>控制</strong></th>
-<th align="left"><strong>設定</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">原則類型</td>
-<td align="left">活動原則</td>
-</tr>
-<tr class="even">
-<td align="left">原則範本</td>
-<td align="left">無範本</td>
-</tr>
-<tr class="odd">
-<td align="left">原則重要性</td>
-<td align="left">高</td>
-</tr>
-<tr class="even">
-<td align="left">類別</td>
-<td align="left">共用控制項</td>
-</tr>
-<tr class="odd">
-<td align="left">採取行動</td>
-<td align="left">單一活動</td>
-</tr>
-<tr class="even">
-<td align="left">篩選器設定</td>
-<td align="left"><p>活動類型 = 上傳檔案</p>
-<p>應用程式 = Microsoft OneDrive for Business 和 Box</p>
-<p>分類標籤 (目前處於私人預覽)：Azure 資訊保護 = 客戶資料、人力資源—薪資資料、人力資源—員工資料</p></td>
-</tr>
-<tr class="odd">
-<td align="left">警示</td>
-<td align="left"><p>建立警示：已核取</p>
-<p>每日警示限制：1000</p>
-<p>選取警示做為電子郵件：已核取</p>
-<p>收件人：infosec@contoso.com</p></td>
-</tr>
-<tr class="even">
-<td align="left">治理</td>
-<td align="left"><p>所有應用程式</p>
-<p>將使用者隔離：已核取</p>
-<p>所有其他設定：已取消核取</p>
-<p>Office 365</p>
-<p>將使用者隔離：已核取</p>
-<p>所有其他設定：已取消核取</p></td>
-</tr>
-</tbody>
-</table>
+****
+
+|控制項|設定|
+|---|---|
+|原則類型|活動原則|
+|原則範本|無範本|
+|原則重要性|高|
+|類別|共用控制項|
+|採取行動|單一活動|
+|篩選器設定|活動類型 = 上傳檔案 <p> 應用程式 = Microsoft OneDrive for Business 和 Box <p> 分類標籤 (目前處於私人預覽)：Azure 資訊保護 = 客戶資料、人力資源—薪資資料、人力資源—員工資料|
+|警示|建立警示：已核取 <p> 每日警示限制：1000 <p> 選取警示做為電子郵件：已核取 <p> 收件人：infosec@contoso.com|
+|治理|所有應用程式 <p> 將使用者隔離：已核取 <p> 所有其他設定：已取消核取 <p> Office 365 <p> 將使用者隔離：已核取 <p> 所有其他設定：已取消核取|
+|
 
 類似原則：
 
 - 偵測客戶資料或 HR 資料的大量下載 — 當偵測到單一使用者在短時間內下載大量包含客戶資料或 HR 資料的檔案時發出警示。
-
 - 偵測客戶和 HR 資料的共用 — 當包含客戶或 HR 資料的檔案共用時發出警示。

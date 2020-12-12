@@ -18,8 +18,32 @@
       href: compliance-extensibility.md
 - name: 管理測試人員風險
   items:
-    - name: 測試人員風險管理
+    - name: Microsoft 365 內部風險解決方案
+      href: insider-risk-solution-overview.md
+    - name: 通訊合規性
       items:
+        - name: 概觀
+          href: communication-compliance-solution-overview.md
+        - name: 了解通訊合規性
+          href: communication-compliance.md
+        - name: 通訊合規性計畫
+          href: communication-compliance-plan.md
+        - name: 開始使用通訊合規性
+          href: communication-compliance-configure.md
+        - name: 調查和修復通訊合規性警示
+          href: communication-compliance-investigate-remediate.md
+        - name: 通訊合規性的功能參考
+          href: communication-compliance-feature-reference.md
+        - name: 案例研究 - Contoso 快速設定粗穢言語原則
+          href: communication-compliance-case-study.md
+        - name: Office 365 中的監督原則
+          href: supervision-policies.md
+        - name: 設定 Office 365 的監督原則
+          href: configure-supervision-policies.md
+    - name: 內部風險管理
+      items:
+        - name: 概觀
+          href: insider-risk-management-solution-overview.md
         - name: 深入了解測試人員風險管理
           href: insider-risk-management.md
         - name: 測試人員風險管理計畫
@@ -40,27 +64,12 @@
           href: insider-risk-management-users.md
         - name: 建立測試人員風險通知範本
           href: insider-risk-management-notices.md
-    - name: 通訊合規性
-      items:
-        - name: 了解通訊合規性
-          href: communication-compliance.md
-        - name: 通訊合規性計畫
-          href: communication-compliance-plan.md
-        - name: 開始使用通訊合規性
-          href: communication-compliance-configure.md
-        - name: 調查和修復通訊合規性警示
-          href: communication-compliance-investigate-remediate.md
-        - name: 通訊合規性的功能參考
-          href: communication-compliance-feature-reference.md
-        - name: 案例研究 - Contoso 快速設定粗穢言語原則
-          href: communication-compliance-case-study.md
-        - name: Office 365 中的監督原則
-          href: supervision-policies.md
-        - name: 設定 Office 365 的監督原則
-          href: configure-supervision-policies.md
     - name: 資訊屏障
-      href: information-barriers.md
       items:
+        - name: 概觀
+          href: information-barriers-solution-overview.md
+        - name: 了解屏障的相關資訊
+          href: information-barriers.md
         - name: 定義資訊屏障原則
           href: information-barriers-policies.md
         - name: 資訊屏障原則的屬性
@@ -71,6 +80,8 @@
           href: information-barriers-edit-segments-policies.md
     - name: 特殊權限存取管理
       items:
+        - name: 概觀
+          href: privileged-access-management-solution-overview.md
         - name: 了解特殊權限存取管理
           href: privileged-access-management-overview.md
         - name: 開始使用 Privileged Access Management
@@ -364,13 +375,13 @@
               href: archive-slack-data.md
             - name: Symphony
               href: archive-symphony-data.md
-            - name: 文字分隔符號
+            - name: 文字分隔
               href: archive-text-delimited-data.md
             - name: 網頁
               href: archive-webpagecapture-data.md
             - name: Webex Teams
               href: archive-webexteams-data.md
-            - name: Facebook 的 Workplace
+            - name: Facebook Workplace
               href: archive-workplacefromfacebook-data.md
             - name: XIP
               href: archive-xip-data.md
@@ -491,7 +502,7 @@
               href: investigating-partially-indexed-items-in-ediscovery.md
             - name: 搜尋結果中的重複資料刪除
               href: de-duplication-in-ediscovery-search-results.md
-            - name: 預估與實際搜尋結果之間的差異
+            - name: 估計與實際搜尋結果之間的差異
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
             - name: 電子文件探索工具的解密
               href: ediscovery-decryption.md
@@ -920,7 +931,7 @@
           href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: Microsoft 服務信任入口網站
       href: get-started-with-service-trust-portal.md
-    - name: 產業專屬的指導方針
+    - name: 產業專屬的指引
       items:
         - name: 金融服務安全性與合規性
           href: ../solutions/financial-services-secure-collaboration.md

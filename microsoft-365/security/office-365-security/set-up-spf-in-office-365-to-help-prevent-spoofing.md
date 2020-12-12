@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何更新網域名稱服務 (DNS) 記錄，以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。
-ms.openlocfilehash: ce8a982b875632ad58b34ae240c02b507c4656fe
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+ms.openlocfilehash: 137937b106be9ce0cf782a84b988913e2c6dac4b
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021058"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615717"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>設定 SPF 以協助防止詐騙
 
@@ -53,11 +53,11 @@ ms.locfileid: "49021058"
 
 - 您網域的目前 SPF TXT 記錄。如需相關指示，請參閱[收集建立 Office 365 DNS 記錄所需的資訊](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records)。
 
-- 所有內部部署訊息伺服器的外部 IP 位址。例如， **131.107.2.200** 。
+- 所有內部部署訊息伺服器的外部 IP 位址。例如，**131.107.2.200**。
 
-- 要使用的網域名稱，針對您需要包含在 SPF TXT 記錄中的所有協力廠商網域。某些大量郵件提供者已設定要用於他們的客戶的子網域。例如，公司 MailChimp 已設定 **servers.mcsv.net** 。
+- 要使用的網域名稱，針對您需要包含在 SPF TXT 記錄中的所有協力廠商網域。某些大量郵件提供者已設定要用於他們的客戶的子網域。例如，公司 MailChimp 已設定 **servers.mcsv.net**。
 
-- 決定您想要對 SPF TXT 記錄使用何種強制執行規則。我們建議 **-all** 。如需其他語法選項的詳細資訊，請參閱 [Office 365 的 SPF TXT 記錄語法](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365)。
+- 決定您想要對 SPF TXT 記錄使用何種強制執行規則。我們建議 **-all**。如需其他語法選項的詳細資訊，請參閱 [Office 365 的 SPF TXT 記錄語法](how-office-365-uses-spf-to-prevent-spoofing.md#SPFSyntaxO365)。
 
 ### <a name="to-add-or-update-your-spf-txt-record"></a>若要新增或更新 SPF TXT 記錄
 
@@ -69,11 +69,11 @@ ms.locfileid: "49021058"
    |---|---|---|---|
    |1|任何電子郵件系統 (必要項)|通用。以此值開頭的所有 SPF TXT 記錄|`v=spf1`|
    |2|Exchange Online|通用|`include:spf.protection.outlook.com`|
-   |3|僅限 Exchange Online 專用|不通用|`ip4:23.103.224.0/19 ip4:206.191.224.0/19 ip4:40.103.0.0/16 include:spf.protection.outlook.com`|
+   |3|僅限 Exchange Online 專用|不通用|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
    |4|僅限 Office 365 德國、Microsoft Cloud 德國|不通用|`include:spf.protection.outlook.de`|
-   |5|協力廠商電子郵件系統|不通用|`include:<domain_name>`  <br/> 其中\<domain_name\> 是協力廠商電子郵件系統的網域。|
-   |6|內部部署郵件系統例如，Exchange Online Protection 加上另一個郵件系統|不通用|對每個額外郵件系統使用其中一個︰ <br> `ip4:<IP_address>` <br/> `ip6:<IP_address>` <br/> `include:<domain_name>` <br/> 其中 \<IP_address\> 和 \<domain_name\> 是另一個郵件系統的 IP 位址和網域，可代表您的網域傳送郵件。|
-   |7|任何電子郵件系統 (必要項)|通用。以此值結束的所有 SPF TXT 記錄|`<enforcement rule>` <br/> 這可以是數個值其中之一。 我們建議的值是「-all」。|
+   |5|協力廠商電子郵件系統|不通用|`include:<domain_name>` <p> \<domain_name\> 是協力廠商電子郵件系統的網域。|
+   |6|內部部署電子郵件系統。例如，Exchange Online Protection 加上另一個電子郵件系統|不通用|對每個額外郵件系統使用其中一個︰ <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> 和 \<domain_name\> 是其他郵件系統的 IP 位址和網域，可代表您的網域傳送電子郵件。|
+   |7|任何電子郵件系統 (必要項)|通用。以此值結束的所有 SPF TXT 記錄|`<enforcement rule>` <p> 這可以是數個值其中之一。 我們建議的值是 `-all`。|
    |
 
 2. 如果您還未這樣做，請使用表格中的語法以形成 SPF TXT 記錄。

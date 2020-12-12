@@ -3,7 +3,7 @@ title: 為小組設定高敏感度資料保護
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何為小組部署高敏感度資料保護。
-ms.openlocfilehash: 92defdf5d06788f4a4cbefeb5e81308611966bec
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 77ec469776bf263bbd3d667a28f1f9b1bc3284b5
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527811"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49612961"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>為小組設定高敏感度資料保護
 
@@ -63,12 +63,12 @@ ms.locfileid: "46527811"
 1. 開啟 [Microsoft 365 合規性中心](https://compliance.microsoft.com)。
 2. 在 **[解決方案]** 底下，按一下 **[資訊保護]**。
 3. 按一下 **[建立標籤]**。
-4. 為標籤命名。 我們建議命名為**高敏感度**，但如果有已經使用的名稱，則可以選擇不同名稱。
+4. 為標籤命名。 我們建議命名為 **高敏感度**，但如果有已經使用的名稱，則可以選擇不同名稱。
 5. 新增工具提示，然後按 **[下一步]**。
 6. 在 **[加密]** 頁面上，於 **[加密]** 下拉式清單中選擇 **[套用]**。
 7. 在 **[指派權限給特定使用者和群組]** 底下，按一下 **[指派權限]**。
 8. 按一下 **[新增組織中的所有使用者和群組]**。
-9. 如果有應該獲得解密檔案權限的來賓使用者，請按一下 **[新增使用者或群組]** 並新增這些使用者。
+9. 如果有應該獲得解密檔案權限的來賓，請按一下 **[新增使用者或群組]** 並新增這些來賓。
 10.  按一下 **[儲存]**，然後按 **[下一步]**。
 11. 如果您想要將頁首、頁尾或浮水印自動新增至以此標籤分類的檔案，請在 **[內容標記]** 頁面上開啟內容標記。
 12. 在 **[網站和群組設定]** 頁面上，將 **[網站和群組設定]** 設為 **[開啟]**。
@@ -109,7 +109,7 @@ ms.locfileid: "46527811"
 
 每次使用高敏感度標籤建立新的小組時，都要在 SharePoint 中進行兩個步驟：
 
-- 在 SharePoint 系統管理中心內更新網站的來賓共用設定，使其符合您在建立標籤時所選擇的設定，並將預設的共用連結更新為*擁有現有存取權的人員*。
+- 在 SharePoint 系統管理中心內更新網站的來賓共用設定，使其符合您在建立標籤時所選擇的設定，並將預設的共用連結更新為 *擁有現有存取權的人員*。
 - 更新網站本身的網站共用設定以防止成員共用檔案、資料夾或網站，並關閉存取要求。
 
 ### <a name="site-guest-sharing-settings"></a>網站的來賓共用設定

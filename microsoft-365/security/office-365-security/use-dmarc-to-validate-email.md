@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 了解如何設定以網域為基礎的訊息驗證、報告和符合性 (DMARC) 來驗證從貴組織傳送的訊息。
-ms.openlocfilehash: 4ff2c93e420957714815100243a6502e7ea087a7
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 9dd97b1fc60f0b6198bb6c55af291c7dd103ac5d
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446368"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49615333"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 來驗證電子郵件
 
@@ -142,13 +142,13 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
 其中：
 
-- *網域*是您想要保護的網域。 根據預設，記錄會保護該網域及所有子網域的郵件。 例如，如果您指定 \_dmarc.contoso.com，DMARC 會保護此網域及所有子網域的郵件，例如 housewares.contoso.com 或 plumbing.contoso.com。
+- *網域* 是您想要保護的網域。 根據預設，記錄會保護該網域及所有子網域的郵件。 例如，如果您指定 \_dmarc.contoso.com，DMARC 會保護此網域及所有子網域的郵件，例如 housewares.contoso.com 或 plumbing.contoso.com。
 
 - *TTL* 一律相當於一小時。TTL 所使用的單位，無論是小時 (1 小時)、分鐘 (60 分鐘) 或秒 (3600 秒)，會取決於您的網域註冊機構。
 
 - *pct=100* 指出這項規則應 100% 用於電子郵件。
 
-- *原則*可指定若 DMARC 失敗時，您想要接收方伺服器遵循的原則。您可以將原則設定為 [無]、[隔離] 或 [拒絕]。
+- *原則* 可指定若 DMARC 失敗時，您想要接收方伺服器遵循的原則。您可以將原則設定為 [無]、[隔離] 或 [拒絕]。
 
 如需使用選項的相關資訊，請參閱[在 Microsoft 365 中實作 DMARC 的最佳作法](#best-practices-for-implementing-dmarc-in-microsoft-365)以熟悉概念。
 
@@ -191,7 +191,7 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 3. 要求外部郵件系統不接受未通過 DMARC 的郵件
 
     最後一個步驟是實作拒絕原則。拒絕原則是已將原則設為拒絕 (p=拒絕) 的 DMARC TXT 記錄。執行此動作即是要求 DMARC 接收器不接受未通過 DMARC 檢查的郵件。
-    
+
 4. 如何設定適用於子網域的 DMARC？
 
 DMARC 是在 DNS 中以 TXT 記錄的形式發布原則所實施，且為分層系統（例如，針對 contoso.com 發行的原則會套用至 sub.domain.contonos.com，除非明確為子網域定義不同的原則）。 由於組織可能只能指定較少量的高層 DMARC 記錄，所以在覆蓋較廣的層面上，這很實用。 如果您不想讓某子網域承襲高層網域的 DMARC 記錄，則須小心謹慎地設定明確的子網域 DMARC 記錄。
@@ -249,7 +249,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 - [反垃圾郵件訊息標頭](anti-spam-message-headers.md) 包含 Microsoft 365 針對 DMARC 檢查所使用的語法及標頭欄位。
 
-- 從 M[3](https://www.m3aawg.org/activities/training/dmarc-training-series)AAWG (傳訊、惡意程式碼、行動裝置反不當使用工作群組) 參與 <sup>DMARC 訓練系列課程</sup>。
+- 從 M<sup>3</sup>AAWG (傳訊、惡意程式碼、行動裝置反不當使用工作群組) 參與 [DMARC 訓練系列課程](https://www.m3aawg.org/activities/training/dmarc-training-series)。
 
 - 在 [dmarcian](https://space.dmarcian.com/deployment/) 使用檢查清單。
 

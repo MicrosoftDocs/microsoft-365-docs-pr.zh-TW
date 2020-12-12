@@ -3,7 +3,7 @@ title: 為小組設定基準保護
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用基準層級的保護來部署小組。
-ms.openlocfilehash: 76b60a61812c4d30884825b41ee7220d6686b58b
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
+ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845297"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49613439"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>為小組設定基準保護
 
@@ -94,7 +94,7 @@ Office 365 群組和 SharePoint 預設會開啟來賓共用功能，但是如果
 
 Microsoft 365 提供了其他方法來保護您的內容。 請想想下列選項是否有助於改善貴組織的安全性。
 
-- 讓您的來賓使用者同意[使用規定](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)。
+- 讓來賓同意[使用規定](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)。
 - 為來賓設定[工作階段逾時原則](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)。
 - 建立[敏感資訊類型](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)，並使用[資料外洩防護](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) 來設定關於存取敏感資訊的原則。
 
