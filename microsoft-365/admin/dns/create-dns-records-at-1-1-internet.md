@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5762c3ca-1de2-4999-bfe5-4c5e25a8957e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以 1&1 IONOS for Microsoft。
-ms.openlocfilehash: b88fa4f14104f60f22857bb9cfdc9e6366d2c303
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8e2deab05b5ef8d8f22993d2bfdd032999ed9c39
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646388"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657993"
 ---
 # <a name="create-dns-records-at-11-ionos-for-microsoft"></a>在 1&1 IONOS 為 Microsoft 建立 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 > [!CAUTION]
 > 請注意，1&1 IONOS 不允許網域同時具有 MX 記錄和最上層自動探索 CNAME 記錄。 這會限制您可為 Microsoft 設定 Exchange Online 的方式。 有一種解決方法，但只有在您已具備在 1&1 IONOS 建立子域的經驗時， **才** 建議使用此方法。 > 如果此 [服務限制](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 您選擇在 1&1 IONOS 管理您自己的 Microsoft DNS 記錄，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。 
@@ -109,7 +109,7 @@ ms.locfileid: "48646388"
     
 4. 在 [ **網域設定** ] 區域中，選取 [ **編輯 DNS 設定**]。
     
-5. 在 [ **MX 記錄** ] 區段的 [ **郵件交換器 (MX 記錄) ** ] 區域中，選取 [ **其他郵件伺服器**]。<br/>(您可能需要向下捲動。)<br/>![1 &amp; 1-BP-Configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
+5. 在 [ **MX 記錄** ] 區段的 [ **郵件交換器 (MX 記錄)** ] 區域中，選取 [ **其他郵件伺服器**]。<br/>(您可能需要向下捲動。)<br/>![1 &amp; 1-BP-Configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
 6. 如果已列出任何 MX 記錄，請選取該記錄，然後按下鍵盤上的 **delete** 鍵，以刪除每一筆記錄。<br/>(如果未列出 MX 記錄，請繼續下一個步驟)。<br/>![1 &amp; 1-BP-Configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
   
@@ -160,11 +160,11 @@ ms.locfileid: "48646388"
   
 6. 選取 [ **建立子域**]。<br/>![1 &amp; 1-BP-Configure-3-3](../../media/1e7bc874-f174-4597-8c08-df611d16a74d.png)
   
-7. 在 [ **子域一覽** ] 區段中，找出您剛剛建立的 **自動** 探索子域，然後選取該子域的「 **面板 (v」) ** 控制項。 <br/>![1 &amp; 1-BP-Configure-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
+7. 在 [ **子域一覽** ] 區段中，找出您剛剛建立的 **自動** 探索子域，然後選取該子域的「 **面板 (v」)** 控制項。 <br/>![1 &amp; 1-BP-Configure-3-4](../../media/10e2e446-3e54-4fb2-8a29-8c442536cc31.png)
   
 8. 在 [ **子域設定** ] 區域中，選取 [ **編輯 DNS 設定**]。 <br/>![1 &amp; 1-BP-Configure-3-5](../../media/5c602118-b89b-4897-9faf-0736be8a6a0d.png)
   
-9. 在 [ **A/AAAA 記錄 (的 Ip 位址) ** ] 區段的 [ **Ip 位址 (記錄) ** ] 區域中，選取 [ **CNAME**]。<br/>![1 &amp; 1-BP-Configure-3-6](../../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
+9. 在 [ **A/AAAA 記錄 (的 Ip 位址)** ] 區段的 [ **Ip 位址 (記錄)** ] 區域中，選取 [ **CNAME**]。<br/>![1 &amp; 1-BP-Configure-3-6](../../media/7f57f468-fbee-4440-a53d-3e334d8e5b71.png)
   
 10. 在 [ **別名：** ] 方塊中，只輸入或複製並貼上下清單格中的 **別名** 值。<br/> 
     
@@ -195,9 +195,9 @@ ms.locfileid: "48646388"
     
 4. 在 [ **網域中心** ] 頁面上，選取 [ **管理子域**]。
     
-5. 在 [ **子域一覽** ] 區段中，尋找您剛才建立的 **lyncdiscover** 子域，然後為該子域選取 [ **面板] (v) ** 控制項。 <br/>在 [ **子域設定** ] 區域中，選取 [ **編輯 DNS 設定**]。
+5. 在 [ **子域一覽** ] 區段中，尋找您剛才建立的 **lyncdiscover** 子域，然後為該子域選取 [ **面板] (v)** 控制項。 <br/>在 [ **子域設定** ] 區域中，選取 [ **編輯 DNS 設定**]。
     
-6. 在 [ **A/AAAA 記錄 (的 Ip 位址) ** ] 區段的 [ **Ip 位址 (記錄) ** ] 區域中，選取 [ **CNAME**]。
+6. 在 [ **A/AAAA 記錄 (的 Ip 位址)** ] 區段的 [ **Ip 位址 (記錄)** ] 區域中，選取 [ **CNAME**]。
     
 7. 在 [ **別名：** ] 方塊中，只輸入或複製並貼上下清單格中的 **別名** 值。 <br/>
     
@@ -221,9 +221,9 @@ ms.locfileid: "48646388"
     
 13. 在 [ **網域中心** ] 頁面上，選取 [ **管理子域**]。
     
-14. 在 [ **子域一覽** ] 區段中，尋找您剛才建立的 **sip** 子域，然後選取該子域的「 **面板 (v」) ** 控制項。 <br/>在 [ **子域設定** ] 區域中，選取 [ **編輯 DNS 設定**]。
+14. 在 [ **子域一覽** ] 區段中，尋找您剛才建立的 **sip** 子域，然後選取該子域的「 **面板 (v」)** 控制項。 <br/>在 [ **子域設定** ] 區域中，選取 [ **編輯 DNS 設定**]。
     
-15. 在 [ **A/AAAA 記錄 (的 Ip 位址) ** ] 區段的 [ **Ip 位址 (記錄) ** ] 區域中，選取 [ **CNAME**]。
+15. 在 [ **A/AAAA 記錄 (的 Ip 位址)** ] 區段的 [ **Ip 位址 (記錄)** ] 區域中，選取 [ **CNAME**]。
     
 16. 在 [ **別名：** ] 方塊中，只輸入或複製並貼上下清單格中的 **別名** 值。 
     
@@ -248,7 +248,7 @@ ms.locfileid: "48646388"
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.yml)。 
   
 請依照下列步驟操作或[觀看影片 (從 5:09 處開始)](https://docs.microsoft.com/microsoft-365/admin/dns/create-dns-records-at-1-1-internet)。
   

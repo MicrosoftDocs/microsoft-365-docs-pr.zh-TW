@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: 446babfe-2e08-4cc2-bbfb-c05b854933ac
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft easyDNS。
-ms.openlocfilehash: 4909a02ec56fc9720a2636e822da0339e89bccf8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a971a722f071ef5df9ce0fba387cfacfeb409f5b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645548"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656816"
 ---
 # <a name="create-dns-records-at-easydns-for-microsoft"></a>在 Microsoft 的 easyDNS 建立 DNS 記錄
 
-如果您找不到所需的專案，[請檢查網域常見問題](../setup/domains-faq.md)。 
+如果您找不到所需的專案，[請檢查網域常見問題](../setup/domains-faq.yml)。 
   
 您必須在您的註冊機構網站新增下列所有 DNS 記錄，以將郵件路由傳送至 Microsoft、將您的網域用於小組和商務用 Skype，等等。
   
@@ -96,7 +96,7 @@ ms.locfileid: "48645548"
 4. 在 [文字] 欄位中輸入下列記錄：
 
 
-    |**主機**|**Address (必須以 "." 結尾。) **|
+    |**主機**|**Address (必須以 "." 結尾。)**|
     |:-----|:-----|
     |autodiscover  <br/> |autodiscover.outlook.com.  <br/> |
     |sip  <br/> |sipdir.online.lync.com.  <br/> |
@@ -138,7 +138,7 @@ ms.locfileid: "48645548"
     
 4. 在 [文字] 欄位中輸入下列記錄：
     
-    |**服務**|**原**|**主機**|**Pri**|**WGT**|**港口**|**目標 (必須以 "." 結尾) **|**TTL**|
+    |**服務**|**原**|**主機**|**Pri**|**WGT**|**港口**|**目標 (必須以 "." 結尾)**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |TLS  <br/> |@  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> |1800  <br/> |
     |_sipfederationtls  <br/> |TCP  <br/> |@  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com。  <br/> |1800  <br/> |

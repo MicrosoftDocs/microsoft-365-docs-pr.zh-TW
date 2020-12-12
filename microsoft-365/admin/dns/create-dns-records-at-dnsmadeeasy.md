@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft DNSMadeEasy。
-ms.openlocfilehash: 266f5e8460395ae10b9c430cf66e1f443126ff64
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 719b416564447b3a6f4108b747ae921b4f6f6bb8
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646208"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657945"
 ---
 # <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>在 Microsoft 的 DNSMadeEasy 建立 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 DNSMadeEasy 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並設定電子郵件與商務用 Skype Online 等項目的 DNS 記錄。
   
@@ -98,7 +98,7 @@ ms.locfileid: "48646208"
     
     ![DNSMadeEasy-BP-Configure-1-2](../../media/8d8f403e-d7cd-429e-913b-dacb1f4644a2.png)
   
-3. 在 [ **受管理的 DNS** ] 頁面的 [ **MX 記錄** ] 區域中，選取 [ ** (+) ** 控制項] ( [ **新增**) ]。
+3. 在 [ **受管理的 DNS** ] 頁面的 [ **MX 記錄** ] 區域中，選取 [ **(+)** 控制項] ( [ **新增**) ]。
     
     (您可能需要向下捲動。)
     
@@ -122,7 +122,7 @@ ms.locfileid: "48646208"
     
     ![DNSMadeEasy-BP-Configure-2-4-1](../../media/58a07769-0b30-4111-b555-bfc3b82a7d4c.png)
   
-7. 選取所有記錄後，請選取 [ **刪除選取**的]。
+7. 選取所有記錄後，請選取 [ **刪除選取** 的]。
     
     ![DNSMadeEasy-BP-Configure-2-4-2](../../media/e9064c07-1ce7-4387-b47a-90d4193da374.png)
   
@@ -137,7 +137,7 @@ ms.locfileid: "48646208"
     
 2. 在 [ **管理主控台** ] 頁面上的 [ **最近更新的網域** ] 區域中，選取您要更新的網域。 
     
-3. 在 [ **受管理的 DNS** ] 頁面上，選取 [ **CNAME 記錄** ] 區域中的 [ ** (+) ** ] 控制項 ( [ **新增**) ]。
+3. 在 [ **受管理的 DNS** ] 頁面上，選取 [ **CNAME 記錄** ] 區域中的 [ **(+)** ] 控制項 ( [ **新增**) ]。
     
     (您可能需要向下捲動。)
     
@@ -163,7 +163,7 @@ ms.locfileid: "48646208"
   
 6. 新增其他四筆 CNAME 記錄。
     
-    在 [ **CNAME 記錄** ] 區段中，選取 [ ** (+) ** 控制項] ( [ **新增**) ]，使用表格中下一列的值來建立記錄，然後再選取 [ **提交** ] 以完成記錄。 
+    在 [ **CNAME 記錄** ] 區段中，選取 [ **(+)** 控制項] ( [ **新增**) ]，使用表格中下一列的值來建立記錄，然後再選取 [ **提交** ] 以完成記錄。 
     
     重複此程式，直到您已建立全部五筆 CNAME 記錄為止。
     
@@ -171,13 +171,13 @@ ms.locfileid: "48646208"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.yml)。 
   
 1. 首先請用[這個連結](https://cp.dnsmadeeasy.com/)移至 DNSMadeEasy 上您的網域頁面。 系統會提示您先登入。
     
 2. 在 [ **管理主控台** ] 頁面上的 [ **最近更新的網域** ] 區域中，選取您要更新的網域。 
     
-3. 在 [ **受管理的 DNS** ] 頁面上的 [ **TXT 記錄** ] 區域中，選取 [ ** (+) ** 控制項] ( [ **新增**) ]。
+3. 在 [ **受管理的 DNS** ] 頁面上的 [ **TXT 記錄** ] 區域中，選取 [ **(+)** 控制項] ( [ **新增**) ]。
     
     (您可能需要向下捲動。)
     
@@ -202,7 +202,7 @@ ms.locfileid: "48646208"
     
 2. 在 [ **管理主控台** ] 頁面上的 [ **最近更新的網域** ] 區域中，選取您要更新的網域。 
     
-3. 在 [ **受管理的 DNS** ] 頁面上，選取 [ **SRV 記錄** ] 區域中的 [ ** (+) ** ] 控制項 ( [ **新增**) ]。
+3. 在 [ **受管理的 DNS** ] 頁面上，選取 [ **SRV 記錄** ] 區域中的 [ **(+)** ] 控制項 ( [ **新增**) ]。
     
     (您可能需要向下捲動)
     
@@ -225,7 +225,7 @@ ms.locfileid: "48646208"
   
 6. 新增另一筆 SRV 記錄。
     
-    在 [ **SRV 記錄** ] 區段中，選取 [ ** (+) ** 控制項] ( [ **新增**) ]，使用表格中下一列的值來建立記錄，然後再選取 [ **提交** ] 以完成記錄。 
+    在 [ **SRV 記錄** ] 區段中，選取 [ **(+)** 控制項] ( [ **新增**) ]，使用表格中下一列的值來建立記錄，然後再選取 [ **提交** ] 以完成記錄。 
     
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. 然而有時可能需要更久的時間，您所做的變更才能在整個網際網路的 DNS 系統中生效。 在您新增 DNS 記錄後，如有郵件流程或其他方面的問題，請參閱[尋找並修正新增網域或 DNS 記錄之後所發生的問題](../get-help-with-domains/find-and-fix-issues.md)。 

@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 0ddbe33c-81ea-4c02-8db9-e71d3810c0ec
 description: '瞭解如何設定 Microsoft，以在 Amazon Web 服務 (AWS) 上管理您的 DNS 記錄。 '
-ms.openlocfilehash: 9f5bfd54020dfb793bbaad9aa8e081e87abc5ce8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4700557c40973ab051cced81c129197a826964ab
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646484"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658449"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-amazon-web-services-aws"></a>使用 Amazon Web 服務 (AWS 變更名稱伺服器以設定 Microsoft) 
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。  (如果您願意，您可以 [在 AWS 管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-aws.md)。 ) 
   
@@ -62,7 +62,7 @@ ms.locfileid: "48646484"
 |**名稱** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
 | (將此欄位保留空白)   <br/> |TXT - Text  <br/> |否  <br/> |300  <br/> |MS=ms *XXXXXXXX* <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  <br/>  |簡易 <br/> |
    
-6. 選取 **[建立]**。
+6. 選取 [建立]。
     
 7. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
@@ -102,10 +102,10 @@ ms.locfileid: "48646484"
     
     ![Select the recordset](../../media/24e618e4-0a16-43a2-9886-f4f5dac79374.png)
   
-5. 在 [**值**] 方塊的 [ **NS-名稱伺服器**] 記錄集中，選取所有的名稱伺服器，然後按下鍵盤上的**delete**鍵來刪除所有。 
+5. 在 [**值**] 方塊的 [ **NS-名稱伺服器**] 記錄集中，選取所有的名稱伺服器，然後按下鍵盤上的 **delete** 鍵來刪除所有。 
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的目前名稱伺服器。 )  
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com** 的目前名稱伺服器。 )  
   
     ![Select and delete all of the nameservers in the Value box](../../media/ecf1e897-fa7d-4abc-b00b-bf55b8ed2139.png)
   

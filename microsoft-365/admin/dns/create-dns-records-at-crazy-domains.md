@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft 用的網域。
-ms.openlocfilehash: cf65173873affdc66e4e6d03764a3d6c842b7642
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 4b39a51f96299879207b96d1e15d039905440b0a
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646220"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658492"
 ---
 # <a name="create-dns-records-at-crazy-domains-for-microsoft"></a>在 Microsoft 的古怪網域建立 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 Crazy Domains 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並設定電子郵件與商務用 Skype Online 等項目的 DNS 記錄。
   
@@ -162,7 +162,7 @@ ms.locfileid: "48646220"
     
     ![CrazyDomains-BP-Configure-2-5](../../media/9acdda39-33ec-4b24-ad83-91c26f9c599b.png)
   
-11. 選取 [刪除]****。
+11. 選取 [刪除]。
     
     ![CrazyDomains-BP-Configure-2-6](../../media/50b0e263-6f21-41b3-8fa0-7dd55dbe6c2e.png)
   

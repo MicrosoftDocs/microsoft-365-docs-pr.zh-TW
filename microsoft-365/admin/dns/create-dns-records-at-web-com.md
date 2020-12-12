@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft web.com。
-ms.openlocfilehash: 25df88e05e96e2394628bf89c8cc07af2d0eac1e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 943070f3790f532a0cc686270e0ecdea08f802fd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645752"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656888"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>在 web.com 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 web.com 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
@@ -84,7 +84,7 @@ ms.locfileid: "48645752"
 3. 在 [* * Manage * my domain * * *] 底下，選取 [ **編輯高級 DNS 記錄**]。
 
   
-4. 在 [ **功能變數名稱** ] 頁面的 [ **文字 (TXT) 記錄 **] 下，按一下 [ **編輯 TXT 記錄**]，然後選取下表中的值。 
+4. 在 [ **功能變數名稱** ] 頁面的 [ **文字 (TXT) 記錄**] 下，按一下 [ **編輯 TXT 記錄**]，然後選取下表中的值。 
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:----|
@@ -127,7 +127,7 @@ ms.locfileid: "48645752"
   
 3. 在 [* * Manage * my domain * * *] 底下，選取 [ **編輯高級 DNS 記錄**]。
 
-4. 在 [ **郵件伺服器 (MX 記錄 **] 底下) ，按一下 [ **編輯 MX 記錄**]，然後選取下表中的值。 
+4. 在 [ **郵件伺服器 (MX 記錄**] 底下) ，按一下 [ **編輯 MX 記錄**]，然後選取下表中的值。 
     
     |**Priority** (優先順序)|**TTL**|**郵件伺服器**|
     |:-----|:-----|:-----|
@@ -152,7 +152,7 @@ ms.locfileid: "48645752"
 
 4. 新增六筆 CNAME 記錄的第一筆。
     
-    在 [ **主機別名] (CNAME 記錄) **上，按一下 [ **編輯 CNAME 記錄**]，然後選取下表中的值。
+    在 [ **主機別名] (CNAME 記錄)** 上，按一下 [ **編輯 CNAME 記錄**]，然後選取下表中的值。
     
     
     |**Alias**|**TTL**|**參照的主機名稱**|**其他主機**|
@@ -184,7 +184,7 @@ ms.locfileid: "48645752"
 3. 在 [* * Manage * my domain * * *] 底下，選取 [ **編輯高級 DNS 記錄**]。
 
   
-4. 在 [ **功能變數名稱** ] 頁面的 [ **文字 (TXT) 記錄 **] 下，按一下 [ **編輯 TXT 記錄**]，然後選取下表中的值。   
+4. 在 [ **功能變數名稱** ] 頁面的 [ **文字 (TXT) 記錄**] 下，按一下 [ **編輯 TXT 記錄**]，然後選取下表中的值。   
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:-----|
@@ -211,7 +211,7 @@ ms.locfileid: "48645752"
   
 4. 新增兩筆 SRV 記錄中的第一筆。
 
-    在 [ **服務 (SRV 記錄]) **上，按一下 [ **編輯 srv 記錄**]，然後選取下表中的值。 
+    在 [ **服務 (SRV 記錄])** 上，按一下 [ **編輯 srv 記錄**]，然後選取下表中的值。 
         
     |**服務**|**Protocol** (通訊協定)|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|

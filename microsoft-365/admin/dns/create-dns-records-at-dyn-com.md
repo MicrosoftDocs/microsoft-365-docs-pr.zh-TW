@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 34e57a00-2a7d-469c-beec-089423f18369
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Dyn.com。
-ms.openlocfilehash: 91dbd3fbde8417764a01eb285b267f3981b2f139
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d1b77d6b4f38dd3e0979f448a77b293564841f45
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646136"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657933"
 ---
 # <a name="create-dns-records-at-dyncom-for-microsoft"></a>在 Dyn.com 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 Dyn.com 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
  
@@ -48,7 +48,7 @@ ms.locfileid: "48646136"
   
 2. 在 [ **區域等級服務** ] 頁面上，針對您想要編輯的網域，選取 [ **Dyn Standard DNS 服務** ]。 
     
-3. 在您網域的 [ **DNS** ] 頁面上，選取 [ **喜好**設定]。
+3. 在您網域的 [ **DNS** ] 頁面上，選取 [ **喜好** 設定]。
     
 4. 選取 [ **啟用專家介面**]。
     
@@ -99,7 +99,7 @@ ms.locfileid: "48646136"
   
 2. 在 [ **區域等級服務** ] 頁面上，針對您想要編輯的網域，選取 [ **Dyn Standard DNS 服務** ]。 
     
-3. 在您網域的 [DNS] 頁面上，選取 [ **喜好**設定]。
+3. 在您網域的 [DNS] 頁面上，選取 [ **喜好** 設定]。
     
 4. 選取 [ **啟用專家介面**]。
     
@@ -109,7 +109,7 @@ ms.locfileid: "48646136"
     
     |**Host**|**TTL**|**類型**|**資料**|
     |:-----|:-----|:-----|:-----|
-    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |*\<domain-key\>* mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **10**是 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)      <br>    如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
+    |(Leave this field empty.)  <br/> |600  <br/> |MX  <br/> |*\<domain-key\>* mail.protection.outlook.com。  <br/> **此值必須以英文句點 (.) 結尾。** <br/> **10** 是 MX 優先順序值。 請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)      <br>    如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
    
     ![Dyn-BP-Configure-2-1](../../media/62ac77b7-c84d-426d-9ec4-a28d6479ad04.png)
   
@@ -134,7 +134,7 @@ ms.locfileid: "48646136"
   
 2. 在 [ **區域等級服務** ] 頁面上，針對您想要編輯的網域，選取 [ **Dyn Standard DNS 服務** ]。 
     
-3. 在您網域的 [ **DNS** ] 頁面上，選取 [ **喜好**設定]。
+3. 在您網域的 [ **DNS** ] 頁面上，選取 [ **喜好** 設定]。
     
 4. 選取 [ **啟用專家介面**]。
     
@@ -176,7 +176,7 @@ ms.locfileid: "48646136"
   
 2. 在 [ **區域等級服務** ] 頁面上，針對您想要編輯的網域，選取 [ **Dyn Standard DNS 服務** ]。 
     
-3. 在您網域的 [ **DNS** ] 頁面上，選取 [ **喜好**設定]。
+3. 在您網域的 [ **DNS** ] 頁面上，選取 [ **喜好** 設定]。
     
 4. 選取 [ **啟用專家介面**]。
     
@@ -203,7 +203,7 @@ ms.locfileid: "48646136"
   
 2. 在 [ **區域等級服務** ] 頁面上，針對您想要編輯的網域，選取 [ **Dyn Standard DNS 服務** ]。 
     
-3. 在您網域的 [ **DNS** ] 頁面上，選取 [ **喜好**設定]。
+3. 在您網域的 [ **DNS** ] 頁面上，選取 [ **喜好** 設定]。
     
 4. 選取 [ **啟用專家介面**]。
     

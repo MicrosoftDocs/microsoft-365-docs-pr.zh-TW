@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9ddcc2fc-9433-4335-8192-6ffb1f541087
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft name.com。
-ms.openlocfilehash: ce465e06b3bc18c824d741ee4cba4b9f4f410d90
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2330755412abfe262ac79c4acbfc12e33af76fe2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645884"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657824"
 ---
 # <a name="create-dns-records-at-namecom-for-microsoft"></a>在 name.com 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 name.com 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
   

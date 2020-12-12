@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
 description: 瞭解如何設定 Microsoft 以管理 Google 網域的自訂網域的 DNS 記錄。
-ms.openlocfilehash: 05d77ef4cb78351727870a384f4a28c6e4acc4b0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e475e222b6f1c9717008a49b172b0ecac5ec6fc7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646424"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658437"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-google-domains"></a>變更名稱伺服器以設定 Microsoft 搭配 Google 網域
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。  (如果您願意，您可以 [管理 Google 網域中的所有 DNS 記錄](create-dns-records-at-google-domains.md)。 ) 
   
@@ -124,13 +124,13 @@ ms.locfileid: "48646424"
    
    ![Google-網域-BP-重新委派-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
   
-2. 選取 [ **+ (新增) ** ] 控制項以建立空白列。 
+2. 選取 [ **+ (新增)** ] 控制項以建立空白列。 
     
     ![Google-網域-BP-重新委派-1-3](../../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
   
 3. 新增其他三個名稱伺服器記錄。
     
-    在 [ **使用自訂名稱伺服器** ] 區段中，使用表格中下一列的值來建立記錄，然後選取 [ **+ (新增) ** ] 控制項以新增另一個資料列。 
+    在 [ **使用自訂名稱伺服器** ] 區段中，使用表格中下一列的值來建立記錄，然後選取 [ **+ (新增)** ] 控制項以新增另一個資料列。 
     
     重複這個程序，直到四筆名稱伺服器記錄全部建立完畢。
     
@@ -146,7 +146,7 @@ ms.locfileid: "48646424"
 1. 如果有列出任何其他名稱伺服器，請選取 [ **編輯**]。
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的目前名稱伺服器。 )  
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com** 的目前名稱伺服器。 )  
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
@@ -165,13 +165,13 @@ ms.locfileid: "48646424"
    
    ![Google-網域-BP-重新委派-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
   
-4. 選取 [ **+ (新增) ** ] 控制項以建立空白列。 
+4. 選取 [ **+ (新增)** ] 控制項以建立空白列。 
     
     ![Google-Domains-BP-Redelegate-1-8](../../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
   
 5. 新增其他兩筆名稱伺服器記錄。
     
-    在 [ **使用自訂名稱伺服器** ] 區段中，使用表格中下一列的值來建立記錄，然後選取 [ **+ (新增) ** ] 控制項以新增另一個資料列。 
+    在 [ **使用自訂名稱伺服器** ] 區段中，使用表格中下一列的值來建立記錄，然後選取 [ **+ (新增)** ] 控制項以新增另一個資料列。 
     
     重複這個程序，直到四筆名稱伺服器記錄全部建立完畢。
     

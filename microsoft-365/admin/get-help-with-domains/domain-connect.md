@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: 瞭解如何使用啟用網域連線的註冊機構，並將您的網域新增至 Microsoft 365。
-ms.openlocfilehash: e907317ec5b606c2fe73232a73c9abdfce26feea
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 109255d82100e636e3472242866a519ff64a9e54
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645344"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655609"
 ---
 # <a name="using-domain-connect"></a>使用網域連接
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。
   
 已啟用[網域](https://www.domainconnect.org/)連線註冊機構可讓您將網域新增至 Microsoft 365，並以三個步驟為單位，以分鐘為單位。 
   

@@ -22,16 +22,16 @@ search.appverid:
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
 description: 了解網域及其相關聯的 DNS 記錄，協助您管理網域。
-ms.openlocfilehash: 3f913a96395424e86d0d88dbb29bcb58a076ebb8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1f5d49eb588a7c4245751360fa3309bf20496512
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645356"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658528"
 ---
 # <a name="dns-basics"></a>DNS 基本知識
 
- 若您找不到所需功能，請**[檢查網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需功能，請 **[檢查網域常見問題集](../setup/domains-faq.yml)**。 
   
 ::: moniker range="o365-worldwide"
 
@@ -155,7 +155,7 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
   
 您可以在 Microsoft 365 中將網域名稱用於電子郵件、公用網站及立即訊息位址。
   
-- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的[初始 onmicrosoft.com 電子郵件地址](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。 因此電子郵件地址 (也是用於登入 Microsoft 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
+- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的 [初始 onmicrosoft.com 電子郵件地址](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。 因此電子郵件地址 (也是用於登入 Microsoft 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
     
 - **網站：** 如果您的 Microsoft 365 訂閱包含 SharePoint Online 公用網站 (已不再提供購買)，您的公用網站會隨附像 contoso-public.sharepoint.com 這樣的初始位址。 如果您是為企業設定網站，您可以使用自訂網域名稱，將網站位址重新命名為類似 www.contoso.com 這樣的位址。 
     
@@ -174,7 +174,7 @@ DNS 記錄如同網域相關資訊的資料庫。 該記錄及其值會儲存在
   
 您可以在 Microsoft 365 中將網域名稱用於電子郵件、公用網站及立即訊息位址。
   
-- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的[初始 onmicrosoft.com 電子郵件地址](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。 因此電子郵件地址 (也是用於登入 Microsoft 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
+- **電子郵件：** 您的網域名稱可讓您自訂電子郵件，因此您可以使用更簡短且易記的地址，而不是帳戶隨附的 [初始 onmicrosoft.com 電子郵件地址](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)。 因此電子郵件地址 (也是用於登入 Microsoft 365 的公司帳戶) 可能是 joe@contoso.com，而不是 joe@contoso.onmicrosoft.com。 
     
 - **網站：** 如果您的訂閱包含 SharePoint Online 公用網站 (已不再提供購買)，您的公用網站會隨附像 contoso-public.sharepoint.com 這樣的初始位址。 如果您是為企業設定網站，您可以使用自訂網域名稱，將網站位址重新命名為類似 www.contoso.com 這樣的位址。 
     

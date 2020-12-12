@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 657934ff-d9d2-4563-9ccf-ef4832a03a99
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Bluehost。
-ms.openlocfilehash: c0ba1b876c939632bc6c43a6e0004fbbe23a7723
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a9de709b0981c3e74eec1a3ea0e0452d068c5ad4
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646232"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658144"
 ---
 # <a name="create-dns-records-at-bluehost-for-microsoft"></a>在 Bluehost 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 Bluehost 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
   
@@ -53,7 +53,7 @@ ms.locfileid: "48646232"
     
     (您可能需要向下捲動。)
     
-3. 在 [ ** _domain_name__] 區域中，選取 [dns 區域編輯器] 列*上的 [* ** **管理 DNS 記錄**]。
+3. 在 [ **_domain_name_ _] 區域中，選取 [dns 區域編輯器] 列 *上的 [*** **管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -93,7 +93,7 @@ ms.locfileid: "48646232"
     
     (您可能需要向下捲動。)
     
-3. 在 [ ** _domain_name__] 區域中，選取 [dns 區域編輯器] 列*上的 [* ** **管理 DNS 記錄**]。
+3. 在 [ **_domain_name_ _] 區域中，選取 [dns 區域編輯器] 列 *上的 [*** **管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -109,7 +109,7 @@ ms.locfileid: "48646232"
     
     ![選取 [新增記錄]](../../media/c7ef9733-1665-4dbf-accc-caadf1574abc.png)
   
-6. 如果 Mx 中有任何其他 MX 記錄 ** (郵件交換器) ** ] 區段中，將每個記錄都刪除。 
+6. 如果 Mx 中有任何其他 MX 記錄 **(郵件交換器)** ] 區段中，將每個記錄都刪除。 
     
     若為其他其中一個 MX 記錄，請選取 [ **刪除]。**
     
@@ -130,16 +130,16 @@ ms.locfileid: "48646232"
     
     (您可能需要向下捲動。)
     
-3. 在 [ ** _domain_name__] 區域中，選取 [dns 區域編輯器] 列*上的 [* ** **管理 DNS 記錄**]。
+3. 在 [ **_domain_name_ _] 區域中，選取 [dns 區域編輯器] 列 *上的 [*** **管理 DNS 記錄**]。
     
-4. 在 [ ** (主機) ** 記錄] 區段中，找出 **自動** 探索記錄的列，然後針對該資料列選取 [ **刪除** ]。 
+4. 在 [ **(主機)** 記錄] 區段中，找出 **自動** 探索記錄的列，然後針對該資料列選取 [ **刪除** ]。 
     
     > [!IMPORTANT]
-    > 在新增 Microsoft 所需的**自動**探索記錄之前，您必須*先*刪除現有的**自動**探索記錄。 Bluehost 不允許您同時維護兩個 **自動** 探索記錄。 
+    > 在新增 Microsoft 所需的 **自動** 探索記錄之前，您必須 *先* 刪除現有的 **自動** 探索記錄。 Bluehost 不允許您同時維護兩個 **自動** 探索記錄。 
   
     ![選取 [刪除]](../../media/416a447e-3710-4ae7-8bf1-459381af4f6e.png)
   
-5. 選取 [確定]****。
+5. 選取 [確定]。
     
     ![選取 [確定]](../../media/0c8f409d-c39f-4ed2-9c95-9af3e61c2411.png)
   
@@ -173,7 +173,7 @@ ms.locfileid: "48646232"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.yml)。 
   
 1. 首先請用[這個連結](https://my.bluehost.com/cgi/dm)移至 Bluehost 上您的網域頁面。 系統會提示您先登入。
     
@@ -181,7 +181,7 @@ ms.locfileid: "48646232"
     
     (您可能需要向下捲動。)
     
-3. 在 [ ** _domain_name__] 區域中，選取 [dns 區域編輯器] 列*上的 [* ** **管理 DNS 記錄**]。
+3. 在 [ **_domain_name_ _] 區域中，選取 [dns 區域編輯器] 列 *上的 [*** **管理 DNS 記錄**]。
     
 4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -206,7 +206,7 @@ ms.locfileid: "48646232"
     
     (您可能需要向下捲動。)
     
-3. 在 [ ** _domain_name__] 區域中，選取 [dns 區域編輯器] 列*上的 [* ** **管理 DNS 記錄**]。
+3. 在 [ **_domain_name_ _] 區域中，選取 [dns 區域編輯器] 列 *上的 [*** **管理 DNS 記錄**]。
     
 4. 建立兩筆 SRV 記錄的第一筆。
     

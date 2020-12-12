@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: 在您的 DNS 主機上新增 DNS 記錄，將您的網域新增至 Microsoft 365 系統管理中心中的 Microsoft 365。 安裝精靈會引導您完成此程式。
-ms.openlocfilehash: 3a4cd31a37eb01570f58e9cdb83940640768a273
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3e7463bd4cf6b7836a9770421e0b8ce597524a67
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644612"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658048"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>新增網域至 Microsoft 365
 
@@ -42,9 +42,9 @@ ms.locfileid: "48644612"
 
 ::: moniker-end
 
- 若您找不到所需內容，請**[查看網域常見問題集](domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](domains-faq.yml)**。 
   
- *若要新增、修改或移除網域，您**必須**是[企業或企業方案](https://products.office.com/business/office)的**全域系統管理員**。這些變更會影響整個承租人、*自訂*的系統管理員或*一般使用者*無法進行這些變更。*  
+ *若要新增、修改或移除網域，您 **必須** 是 [企業或企業方案](https://products.office.com/business/office)的 **全域系統管理員**。這些變更會影響整個承租人、*自訂* 的系統管理員或 *一般使用者* 無法進行這些變更。*  
 
  請遵循下列步驟來新增、設定或繼續設定網域。 
 
@@ -100,7 +100,7 @@ ms.locfileid: "48644612"
     
     如果您不知道您網域的 DNS 主機提供者或網域註冊機構，請參閱[尋找您的網域註冊機構或 DNS 主機服務提供者](../get-help-with-domains/find-your-domain-registrar.md)。
     
-    若要稍等片刻，請取消選取 [所有服務]，然後按一下 [ **繼續**]，或在先前的網域連線步驟中，選取 [ **更多選項** ]，然後選取 [ **立即略過此**項]。
+    若要稍等片刻，請取消選取 [所有服務]，然後按一下 [ **繼續**]，或在先前的網域連線步驟中，選取 [ **更多選項** ]，然後選取 [ **立即略過此** 項]。
     
 8. 選取 **[完成]** -您已經完成！
 
@@ -139,7 +139,7 @@ ms.locfileid: "48644612"
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - 使用 SecureServer DNS 主機的 SecureServer 或 WildWestDomains (GoDaddy 轉銷商) 
-    - 範例：
+    - 範例:
         - [DomainsPricedRight](https://www.domainspricedright.com/products/domain-registration)
         - [DomainRightNow](https://www.domainrightnow.com/)
 
@@ -151,7 +151,7 @@ ms.locfileid: "48644612"
 
 ## <a name="related-articles"></a>相關文章
 
-[網域常見問題集](domains-faq.md)
+[網域常見問題集](domains-faq.yml)
 
 [什麼是網域？](../get-help-with-domains/what-is-a-domain.md)
 

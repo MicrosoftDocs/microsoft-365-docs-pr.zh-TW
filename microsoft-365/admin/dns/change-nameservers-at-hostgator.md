@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
 description: 瞭解如何在 Hostgator 中設定 Microsoft 管理自訂網域的 DNS 記錄。
-ms.openlocfilehash: 02052e98ba92c970a1e8bcc89c73df6946a6c472
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 34e7bbe3abc084185f72f4fef004ad891492ef3c
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646436"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658017"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-hostgator"></a>使用 Hostgator 變更名稱伺服器以設定 Microsoft 365
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。
   
 如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。  (如果您願意，您可以 [在 Hostgator 管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-hostgator.md)。 ) 
   
@@ -124,7 +124,7 @@ ms.locfileid: "48646436"
 > 當您將網域的 NS 記錄變更為指向 Microsoft 名稱伺服器時，所有目前與您網域相關聯的服務都會受到影響。 例如，所有傳送至您網域的電子郵件 (例如 rob@ *your_domain*  .com) 會在您進行此變更之後，從 Microsoft 開始。
   
 > [!IMPORTANT]
-> 下列程式將告訴您如何刪除清單中的任何其他、不想要的名稱伺服器，以及如何新增正確的名稱伺服器（如果尚未列出）。 當您完成本節中的步驟之後，應該會列出的唯一名稱伺服器為下列四種：  **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**和 **ns4.bdm.microsoftonline.com**。
+> 下列程式將告訴您如何刪除清單中的任何其他、不想要的名稱伺服器，以及如何新增正確的名稱伺服器（如果尚未列出）。 當您完成本節中的步驟之後，應該會列出的唯一名稱伺服器為下列四種：  **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com** 和 **ns4.bdm.microsoftonline.com**。
   
 1. 首先請用[這個連結](https://portal.hostgator.com/domain/manage)移至 Hostgator 上您的客戶入口網站頁面。系統會提示您先登入。
     
@@ -150,9 +150,9 @@ ms.locfileid: "48646436"
     
     ![Hostgator-BP-Redelegate-1-5](../../media/5b73ae32-f26e-48aa-b5ad-6da20f1c491a.png)
   
-7.   **警告**：只有當現有的名稱伺服器不是四個正確的名稱伺服器時，才遵循這些步驟。  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的目前名稱伺服器。 ) 
+7.   **警告**：只有當現有的名稱伺服器不是四個正確的名稱伺服器時，才遵循這些步驟。  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com** 的目前名稱伺服器。 ) 
   
-        在您網域的 [名稱伺服器] 頁面上，在名稱伺服器清單中，選取清單中的每個名稱伺服器，然後按鍵盤上的**delete**鍵，以刪除清單中的每個**名稱伺服器**。 
+        在您網域的 [名稱伺服器] 頁面上，在名稱伺服器清單中，選取清單中的每個名稱伺服器，然後按鍵盤上的 **delete** 鍵，以刪除清單中的每個 **名稱伺服器**。 
     
    ![Hostgator-BP-Redelegate-1-6](../../media/fa9820e7-28bb-4792-b16c-51e54d83feb1.png)
   
@@ -169,7 +169,7 @@ ms.locfileid: "48646436"
   
 9. 新增其他名稱伺服器的值。
     
-    選取 [ ** (+) ** 新增]，然後在記錄的方塊中輸入或複製並貼上表格中下一列的值。 
+    選取 [ **(+)** 新增]，然後在記錄的方塊中輸入或複製並貼上表格中下一列的值。 
     
     重複這個程序，直到四筆名稱伺服器記錄全部建立完畢。
     

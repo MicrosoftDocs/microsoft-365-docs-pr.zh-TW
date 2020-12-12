@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: fbcef2d7-ebaf-40d0-ba1f-cdaeff9f50ef
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft 用 Azure DNS 區域。
-ms.openlocfilehash: 40fadb81ebd0ae5385bbbdad727b1c579142b227
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c276570ec1d5ff079348bd8202ea597ef61e88f6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645668"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656864"
 ---
 # <a name="create-dns-records-for-azure-dns-zones"></a>建立 Azure DNS 區域的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 Azure 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
@@ -96,7 +96,7 @@ ms.locfileid: "48645668"
     
     ![Azure-BP-Configure-1-1](../../media/ed377cad-0c47-4f9f-b322-c3e06b309b1f.png)
   
-2. 使用 [**儀表板**] 頁面上的**搜尋**列，輸入 [ **DNS 區域**]。 在 [結果顯示] 中，選取 [**服務**] 部分底下的 [ **DNS 區域**]。 重新導向後，請選取您要更新的網域。
+2. 使用 [**儀表板**] 頁面上的 **搜尋** 列，輸入 [ **DNS 區域**]。 在 [結果顯示] 中，選取 [**服務**] 部分底下的 [ **DNS 區域**]。 重新導向後，請選取您要更新的網域。
     
     ![Azure-BP-Configure-1-2](../../media/eb4baad2-92d7-49c9-95e5-1dd8510d5ec9.png)
   
@@ -114,7 +114,7 @@ ms.locfileid: "48645668"
    
     ![Azure-BP-Verify-1-1](../../media/7d5a253c-e88f-4565-a00a-79bba52f9970.png)
   
-5. 選取 [確定]****。
+5. 選取 [確定]。
   
 6. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
@@ -164,7 +164,7 @@ ms.locfileid: "48645668"
    
     ![Azure-BP-Configure-2-1](../../media/712c23ae-9d38-4af2-94e0-0704e70744fe.png)
   
-5. 選取 [確定]****。
+5. 選取 [確定]。
     
     ![Azure-BP-Configure-2-2](../../media/2f24225f-69ac-41dc-91c5-93d327360f74.png)
   
@@ -178,7 +178,7 @@ ms.locfileid: "48645668"
     
     ![Azure-BP-Configure-2-4](../../media/afe54f12-66d2-4ff3-80e9-427448e4c32c.png)
   
-7. 選取 **快顯功能表 ( ... ) **，然後選擇 [ **移除**]。
+7. 選取 **快顯功能表 ( ... )**，然後選擇 [ **移除**]。
     
     ![Azure-BP-Configure-2-5](../../media/25219e25-bc14-4bc7-84ed-ee65eb28a8ed.png)
   
@@ -216,7 +216,7 @@ ms.locfileid: "48645668"
    
     ![Azure-BP-Configure-3-1](../../media/a1c4d869-da97-43b3-952c-d513a20231dc.png)
   
-5. 選取 [確定]****。
+5. 選取 [確定]。
     
     ![Azure-BP-Configure-3-2](../../media/b89b51da-1c07-43cf-9fab-75d2e5eb3544.png)
   
@@ -296,7 +296,7 @@ ms.locfileid: "48645668"
 
     ![Azure-BP-Configure-5-1](../../media/a436e0b4-8bb8-4a66-9c22-4e3b2dcf54ff.png)
   
-5. 選取 [確定]****。
+5. 選取 [確定]。
     
     ![Azure-BP-Configure-5-2](../../media/a35b6c8a-d001-4b3c-8a67-96b4890e564c.png)
   

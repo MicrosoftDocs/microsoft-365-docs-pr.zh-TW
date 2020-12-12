@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9c0812e0-908b-4b41-a64b-77f0dbd3db7a
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Dreamhost。
-ms.openlocfilehash: 8ab617fd5d63b292a85289d2d51a0ae0fd3b26be
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2faf7cae1fd9a0f9308e303c0588958e56b223e1
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646196"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658120"
 ---
 # <a name="create-dns-records-at-dreamhost-for-microsoft"></a>在 Dreamhost 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 DreamHost 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、Lync 等等的 DNS 記錄。
  
@@ -125,7 +125,7 @@ ms.locfileid: "48646196"
     
      (如果有任何其他現有的 MX 記錄，請將這些記錄標示為待刪除。 ) 
     
-    |** (必要的 MX 記錄) **|
+    |**(必要的 MX 記錄)**|
     |:-----|
     |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> 0 是指 MX 優先順序值。請將它新增到 MX 值的開頭，並以空格分隔該值的其餘部分。  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |
    

@@ -25,16 +25,16 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，如此一來，諸如電子郵件和商務用 Skype Online 等服務也會使用您自己的功能變數名稱。
-ms.openlocfilehash: f233cc9b2d37e3ee81e52178a7cc045cb3579e42
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a4218b03e3f23ba8bc39c5eb84b42f87a71b9a65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645392"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658596"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 檢查 [ [設定網域 (主機特定的指示]) ](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) ，查看是否有註冊機構的指示。 
   
@@ -73,14 +73,14 @@ ms.locfileid: "48645392"
 |:-----|:-----|:-----|:-----|
 |**Record Type** (記錄類型) <br/> |**Alias** (別名) 或 **Host Name** (主機名稱) <br/> |**Value** (值) <br/> |**TTL** <br/> |
 |TXT  <br/> |請執行下列其中一項操作：輸入 **@** ，或是保留欄位空白，或輸入您的網域名稱。  <br/> > [!NOTE]> 不同的 DNS 主機對此欄位有不同的要求。           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> 這是範例。 在這裡請使用您自己的 [目的地或指向位址]**** 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。  <br/> |
+|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。  <br/> |
    
 **如果您建立 MX 記錄，請使用以下值：**
     
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
 |**Record Type** (記錄類型)|**Alias** (別名) 或 **Host Name** (主機名稱)|**Value** (值)|**Priority** (優先順序)|**TTL**|
-|MX|輸入 **@** 或您的網域名稱。 |MS=ms *XXXXXXXX* > [!NOTE]> This is an example. 在這裡請使用您自己的 [目的地或指向位址]**** 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |針對 **[Priority]** (優先順序)，為避免跟用於郵件流程的 MX 記錄發生衝突，請使用比任一現有 MX 記錄更低的優先順序。 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.md#what-is-mx-priority) |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。 |
+|MX|輸入 **@** 或您的網域名稱。 |MS=ms *XXXXXXXX* > [!NOTE]> This is an example. 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |針對 **[Priority]** (優先順序)，為避免跟用於郵件流程的 MX 記錄發生衝突，請使用比任一現有 MX 記錄更低的優先順序。 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](../setup/domains-faq.yml) |將此值設為 **1 hour** (1 小時)，或設為等同的分鐘數 ( **60** )、秒數 ( **3600** ) 等。 |
    
 ### <a name="save-the-record"></a>儲存記錄
 

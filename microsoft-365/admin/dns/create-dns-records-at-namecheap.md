@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Namecheap。
-ms.openlocfilehash: 25b40dad0eb47c190df9496d5df4f061d8fdba6d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1e0fa8839e4ceae5074059d6ae05e3c7456611c2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645920"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657836"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>在 Namecheap 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 Namecheap 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
@@ -204,7 +204,7 @@ ms.locfileid: "48645920"
   
     ![Namecheap-BP-Configure-3-1](../../media/0898f3b2-06ab-4364-a86a-a603a25b39f4.png)
   
-7. 在新記錄的空白方塊中，針對**記錄類型**選取 [ **CNAME** ]，然後輸入或複製並貼上下表中第一列的值。
+7. 在新記錄的空白方塊中，針對 **記錄類型** 選取 [ **CNAME** ]，然後輸入或複製並貼上下表中第一列的值。
     
     |**類型**|**主機**|**Value** (值)|**TTL**|
     |:-----|:-----|:-----|:-----|

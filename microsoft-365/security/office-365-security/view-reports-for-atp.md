@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 在安全性 & 合規性中心尋找及使用 Microsoft Defender for Office 365 的報告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2818362eea4071430bb2c784ceb0ce0eeb970a79
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 82c003478538274be1dd1d2e04816de80d1eae6d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615573"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659450"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中，查看 Office 365 報表的 Defender
 
@@ -35,7 +35,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 ![安全性 & 規範中心內的報告儀表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## <a name="defender-for-office-365-file-types-report"></a>適用于 Office 365 檔案類型的 Defender 報告
+## <a name="defender-for-office-365-file-types-report"></a>適用於 Office 365 的 Defender 檔案類型報告
 
 [ **Office 365 的 Defender] 檔案類型報告** 報告會顯示偵測為 [安全附件](atp-safe-attachments.md)的檔案類型。
 
@@ -110,7 +110,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
   - **寄件者位址**
   - **郵件識別碼**
   - **File**
-  - **Subject**
+  - **主旨**
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改結果：
 
@@ -119,7 +119,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 若要回到 [報表] 視圖，請按一下 [ **view report**]。
 
-## <a name="defender-for-office-365-message-disposition-report"></a>Office 365 的 Defender 版郵件處理報告
+## <a name="defender-for-office-365-message-disposition-report"></a>適用於 Office 365 的 Defender 郵件處置報告
 
 **ATP 郵件** 處理報告會顯示偵測到有惡意內容的電子郵件所採取的動作。
 
@@ -179,7 +179,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
   - **寄件者位址**
   - **郵件識別碼**
   - **File**
-  - **Subject**
+  - **主旨**
 
   如果您按一下 [ **篩選**]，您可以使用下列篩選器修改結果：
 
@@ -322,7 +322,7 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 ## <a name="additional-reports-to-view"></a>要查看的其他報告
 
-除了本主題所述的報告之外，還有其他數個報告可供使用，如下表所述：
+除了本文所述的報告之外，還有其他幾個報告可供使用，如下表所述：
 
 ****
 
@@ -338,16 +338,16 @@ Microsoft Defender for Office 365 組織 (例如，Microsoft 365 E5 訂閱或 Mi
 
 ## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>查看 Office 365 的 Defender 時，需要哪些許可權？
 
-為了查看和使用本主題中所述的報表，您必須是安全性 & 合規性中心之一的下列其中一個角色群組的成員：
+為了查看和使用本文所述的報表，您必須是安全性 & 合規性中心之一的下列其中一個角色群組的成員：
 
 - **組織管理**
 - **安全性系統管理員**
 - **安全性讀取者**
-- **全域讀取者**
+- **全域讀取器**
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-**附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+**附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>如果報告未顯示資料，該怎麼辦？
 

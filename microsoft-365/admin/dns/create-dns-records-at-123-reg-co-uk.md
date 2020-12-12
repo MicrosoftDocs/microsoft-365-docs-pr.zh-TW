@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft 123-reg.co.uk。
-ms.openlocfilehash: c7a6db51bd1c2b2af06a1dde8c317850db0d9e35
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bde8003ad343680e8f499dd8ec1fb638f15080b1
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646353"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658312"
 ---
 # <a name="create-dns-records-at-123-regcouk-for-microsoft"></a>在123-reg.co.uk 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 123-reg.co.uk 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並設定電子郵件與商務用 Skype Online 等項目的 DNS 記錄。
   
@@ -110,7 +110,7 @@ ms.locfileid: "48646353"
     
     ![選取 [新增]](../../media/a8ae6c0c-4365-4137-af8a-6e003996e3d0.png)
   
-7. 如果有任何其他 MX 記錄，請選擇 [ **刪除 (垃圾桶) ** 該記錄的圖示來移除每個記錄。 
+7. 如果有任何其他 MX 記錄，請選擇 [ **刪除 (垃圾桶)** 該記錄的圖示來移除每個記錄。 
     
     ![選取 [刪除] (垃圾桶圖示) ](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
@@ -155,7 +155,7 @@ ms.locfileid: "48646353"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請勿為 Microsfot 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果您已有網域的 SPF 記錄，請勿為 Microsfot 建立新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf)。 若要驗證您的 SPF 記錄，您可以使用其中一種 [SPF 驗證工具](../setup/domains-faq.yml)。 
   
 1. 首先請用[這個連結](https://www.123-reg.co.uk/secure/cpanel/domain/overview)移至 123-reg.co.uk 上您的網域頁面。 系統會提示您先登入。
     

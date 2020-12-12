@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: 瞭解如何在 Exchange Online Protection (EOP) 中管理郵件使用者，包括使用目錄同步處理、EAC 和 PowerShell 來管理使用者。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3c3e69def731a85c0dccffdcb5620560dcf00052
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: a8258a63fe0fbf4a6b5641fbdef213f25de2e4dd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356724"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658830"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>在獨立版 EOP 中管理郵件使用者
 
@@ -30,9 +30,9 @@ ms.locfileid: "49356724"
 > [!NOTE]
 > 當您建立郵件使用者時，可在 Microsoft 365 系統管理中心使用對應的使用者帳戶。 當您在 Microsoft 365 系統管理中心中建立使用者帳戶時，將無法使用該帳戶來建立郵件使用者。
 
-在獨立 EOP 中建立及管理郵件使用者的建議方法是使用目錄同步處理，如本主題稍後的 [使用目錄同步處理來管理郵件使用者](#use-directory-synchronization-to-manage-mail-users) 一節所述。
+在獨立 EOP 中建立及管理郵件使用者的建議方法是使用目錄同步處理，如本文稍後的 [使用目錄同步處理來管理郵件使用者](#use-directory-synchronization-to-manage-mail-users) 一節所述。
 
-針對具有少量使用者的獨立 EOP 組織，您可以在 Exchange 系統管理中心中新增及管理郵件使用者 (EAC) 或獨立 EOP PowerShell （如本主題所述）。
+針對具有少量使用者的獨立 EOP 組織，您可以在 Exchange 系統管理中心中新增及管理郵件使用者 (EAC) 或獨立 EOP PowerShell （如本文所述）。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -42,9 +42,9 @@ ms.locfileid: "49356724"
 
 - 當您在 EOP PowerShell 中建立郵件使用者時，可能會遇到節流。 此外，EOP PowerShell Cmdlet 使用的批次處理方法，可導致幾分鐘的傳播延遲，使命令的結果看得見。
 
-- 您必須已獲指派權限，才能執行這些程序。 具體而言，您需要建立郵件收件者 (建立) 和郵件收件者， (修改) 角色，預設會指派給 OrganizationManagement (全域系統管理員) 和 RecipientManagement 角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您必須先在 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體而言，您需要建立 **郵件收件** 者 (建立) 和 **郵件** 收件者， (修改) 角色，預設會指派給 **組織管理** (全域系統管理員) 和 **收件者管理** 角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 有問題嗎？ 在 Exchange 論壇中尋求協助。 請造訪 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 論壇。

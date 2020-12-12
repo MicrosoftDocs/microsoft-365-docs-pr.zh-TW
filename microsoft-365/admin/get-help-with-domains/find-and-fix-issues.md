@@ -22,16 +22,16 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: 在設定自訂網域時，請確定已正確設定 DNS 記錄，以追蹤在設定自訂網域時所執行的任何問題。
-ms.openlocfilehash: ce5aa65601a4fac763616cb67c6a4c466083a4c0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d2935a7fcc134f7f6d2dd06a5b4e0e0a8761ad8a
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645332"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658516"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>尋找並修正新增網域或 DNS 記錄之後所發生的問題
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 將您的網域設定為與 Microsoft 365 搭配使用可能是挑戰性。 使用 DNS 系統的限制頗多，而且您網域的 DNS 設定也會影響到重要的商務活動，例如電子郵件！
 

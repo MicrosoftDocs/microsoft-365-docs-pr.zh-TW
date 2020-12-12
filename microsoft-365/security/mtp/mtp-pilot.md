@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-overview
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 50f334a055a5bd974f9ea1f39c8fa38d44be9c26
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: f01e918d35ce77d9239c200355c7b4c48c9e2b84
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131231"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659313"
 ---
 # <a name="run-your-pilot-microsoft-365-defender-project"></a>執行您的試驗 Microsoft 365 Defender 專案 
 
@@ -35,7 +35,13 @@ ms.locfileid: "49131231"
 適用於：
 - Microsoft 365 Defender
 
-若要有效地判斷 Microsoft 365 Defender 的優點和採用方式，您可以執行試驗專案。 在實際執行環境中啟用 Microsoft 365 Defender 並啟動您的使用案例之前，最好要規劃決定要為試驗專案完成的工作，以及設定成功準則。 
+
+本指南可協助您執行試驗專案，方法是提供指標，以確保您具有結構完善的計畫，並引導您完成使用攻擊類比功能，最後會以重要 aways 為前提，以反映及記錄結果。
+
+![執行 Microsoft 365 Defender 試驗的階段](../../media/pilotphases.png)
+
+
+執行試驗可協助您有效地判斷 adoptiing Microsoft 365 Defender 的優點。 在實際執行環境中啟用 Microsoft 365 Defender 並啟動您的使用案例之前，最好要規劃決定要為試驗專案完成的工作，以及設定成功準則。 
 
 
 ## <a name="how-to-use-this-pilot-playbook"></a>如何使用本次試驗行動手冊
@@ -52,7 +58,7 @@ Microsoft 365 Defender 是一種整合的後續企業防護套件，其可共同
 
 透過整合的 Microsoft 365 Defender 解決方案，安全性專業人員可以結合 Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Identity 和 Microsoft Cloud App Security 接收，以及決定威脅的完整範圍和影響、它如何進入環境、其受到影響，以及目前對組織的影響。 Microsoft 365 Defender 採取自動動作，以防止或停止攻擊及自我修復受影響的信箱、端點和使用者身分識別。 如需詳細資訊，請參閱 [Microsoft 365 Defender 概述](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 。
 
-![執行 Microsoft 365 Defender 試驗的階段](../../media/pilotphases.png)
+
 
 下列範例時程表視您環境中的適當資源而異。 有些偵測和工作流程可能需要比其他的更多學習時間。
 

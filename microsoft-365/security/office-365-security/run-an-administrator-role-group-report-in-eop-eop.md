@@ -14,12 +14,12 @@ ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在獨立 Exchange Online Protection (EOP) 中執行系統管理員角色群組報告。 當系統管理員在系統管理員角色群組中新增或移除成員時，此報告會登入。
-ms.openlocfilehash: 95b216b41d1c83ba36bcc00e1f571e08c8bd1f73
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: cd7ca13a3d863240a0f2608ed13321cbe3d50ad2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920617"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659258"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>在獨立版 EOP 中執行系統管理員角色群組報告
 
@@ -34,7 +34,7 @@ ms.locfileid: "48920617"
 
 - 若要開啟 Exchange 系統管理中心，請參閱 [exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
 
-- 您必須已獲指派權限，才能執行這些程序。 具體而言，您需要 View-Only 的審計記錄檔或的「審計記錄」角色指派給 ComplianceManagement、OrganizationManagement (全域管理員) ，以及 SecurityAdministrator 角色群組預設。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您必須先在 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體說來，您需要「 **審核記錄** 」或「 **View-Only 審核記錄** 」角色，預設會指派給「 **組織管理**」、「 **合規性管理**」及「 **安全性管理員** 」角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
@@ -45,15 +45,15 @@ ms.locfileid: "48920617"
 
 執行系統管理員角色群組報告，以尋找在特定時間範圍內對管理角色群組所做的變更。
 
-1. 在 EAC 中，移至 [ **規範管理** ] [ \> **審計** ]，然後選擇 [ **執行系統管理員角色群組報告** ]。
+1. 在 EAC 中，移至 [ **規範管理**] [ \> **審計**]，然後選擇 [ **執行系統管理員角色群組報告**]。
 
 2. 在開啟的 [ **搜尋系統管理員角色群組變更** ] 頁面上，設定下列設定：
 
-   - **開始日期** 和 **結束日期** ：輸入日期範圍。 依預設，報告會搜尋過去兩週以來對系統管理員角色群組所做的變更。
+   - **開始日期** 和 **結束日期**：輸入日期範圍。 依預設，報告會搜尋過去兩週以來對系統管理員角色群組所做的變更。
 
-   - **選取角色群組** ：根據預設，會搜尋所有角色群組。 若要依特定角色群組篩選結果，請按一下 [ **選取角色群組** ]。 在出現的對話方塊中，選取角色群組，然後按一下 [ **載入 >** ]。 視需要重複此步驟，然後在完成時按一下 **[確定]** 。
+   - **選取角色群組**：根據預設，會搜尋所有角色群組。 若要依特定角色群組篩選結果，請按一下 [ **選取角色群組**]。 在出現的對話方塊中，選取角色群組，然後按一下 [ **載入 >**]。 視需要重複此步驟，然後在完成時按一下 **[確定]** 。
 
-3. 完成後，請按一下 [ **搜尋** ]。
+3. 完成後，請按一下 [ **搜尋**]。
 
 如果使用您指定的準則找到任何變更，它們會出現在結果窗格中。按一下搜尋結果中的角色群組，即可在詳細資料窗格中查看變更。
 
@@ -89,11 +89,11 @@ Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 
 
 此範例使用下列準則，執行所有稽核記錄項目的搜尋：
 
-- **開始日期** ：08/04/2018
-- **結束日期** ：10/03/2018
-- **使用者 IDs** ： `davids` 、 `chrisd` 、 `kima`
-- **Cmdlet** ： **Set-Mailbox**
-- **Parameters** ： _ProhibitSendQuota_ 、 _ProhibitSendReceiveQuota_ 、 _IssueWarningQuota_ 、 _MaxSendSize_ 、 _MaxReceiveSize_
+- **開始日期**：08/04/2018
+- **結束日期**：10/03/2018
+- **使用者 IDs**： `davids` 、 `chrisd` 、 `kima`
+- **Cmdlet**： **Set-Mailbox**
+- **Parameters**： _ProhibitSendQuota_、 _ProhibitSendReceiveQuota_、 _IssueWarningQuota_、 _MaxSendSize_、 _MaxReceiveSize_
 
 ```PowerShell
 Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima
@@ -101,9 +101,9 @@ Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,Prohibit
 
 此範例搜尋特定信箱的變更。如果您在進行疑難排解或需要提供調查的資訊，這會很有用。使用下列準則：
 
-- **開始日期** ：05/01/2018
-- **結束日期** ：10/03/2018
-- **物件識別碼** ： contoso.com/Users/DavidS
+- **開始日期**：05/01/2018
+- **結束日期**：10/03/2018
+- **物件識別碼**： contoso.com/Users/DavidS
 
 ```PowerShell
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS

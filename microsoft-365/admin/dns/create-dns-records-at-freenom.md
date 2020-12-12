@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Freenom。
-ms.openlocfilehash: 2fc2407193d41d6e0526aacad0b2b558f1b21bdb
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b958a69d1dad9a0b56cf954d12cd42e40d6d4fea
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646184"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657872"
 ---
 # <a name="create-dns-records-at-freenom-for-microsoft"></a>在 Freenom 建立 Microsoft 的 DNS 記錄
 
-如果您找不到所需的專案，[請檢查網域常見問題](../setup/domains-faq.md)。 
+如果您找不到所需的專案，[請檢查網域常見問題](../setup/domains-faq.yml)。 
   
 > [!CAUTION]
 > Freenom 網站不支援 SRV 記錄，這表示有幾部商務用 Skype Online 和 Outlook Web App 功能將無法運作。 不論使用哪一種 Microsoft 方案，都有重大的服務限制，您可能想要切換至不同的 DNS 主機服務提供者。 

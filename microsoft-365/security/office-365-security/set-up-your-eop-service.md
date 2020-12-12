@@ -14,12 +14,12 @@ ms.custom:
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: 系統管理員可以瞭解如何設定獨立 Exchange Online Protection (EOP) ，以保護內部部署的電子郵件環境。
-ms.openlocfilehash: ab34d715bd8196bb2376926402f6a88018d1d7ae
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 2d63057e77e6965616e19452de824a94ba0ccda8
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615669"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659414"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>設定您的獨立 EOP 服務
 
@@ -29,7 +29,7 @@ ms.locfileid: "49615669"
 本主題說明如何設定獨立 Exchange Online Protection (EOP) 。 如果您從 Office 365 網域精靈進入這裡，而您不希望使用 Exchange Online Protection 的話，請回到 Office 365 網域精靈。 如果您正在尋找如何設定連接器的詳細資訊，請參閱[Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)。
 
 > [!NOTE]
-> 本主題假設您擁有內部部署信箱，且您想要使用 EOP 來保護這些信箱 (稱為「獨立」案例)。 如果您想要使用 Exchange Online 在雲端中裝載所有的信箱，並不需要完成本主題中所有的步驟。 移至[比較 Exchange Online 方案](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)以註冊及購買雲端信箱。
+> 本主題假設您擁有內部部署信箱，且您想要使用 EOP 來保護這些信箱 (稱為「獨立」案例)。 如果您想要使用 Exchange Online 來裝載雲端中的所有信箱，您不需要完成本文中的所有步驟。 移至[比較 Exchange Online 方案](https://products.office.com/exchange/compare-microsoft-exchange-online-plans)以註冊及購買雲端信箱。
 >
 > 如果您想要將一部分信箱裝載在內部部署、一部分信箱裝載在雲端中，這稱為「混合」案例。 這需要更進階的郵件流程設定。 [Exchange Server Hybrid Deployments](https://docs.microsoft.com/exchange/exchange-hybrid) 會說明混合郵件流程，並提供一些說明相關設定方式的連結。
 
@@ -37,11 +37,11 @@ ms.locfileid: "49615669"
 
 - 完成此工作的預估時間：1 小時
 
-- 您必須已獲指派權限，才能執行這些程序。 具體而言，您需要有遠端和公認的網域角色，其預設會指派給 MailFlowAdministrator 和 OrganizationManagement (全域系統管理員) 角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您必須先在 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體而言，您需要有 **遠端和公認的網域** 角色，該角色會指派給 **組織管理** (全域管理員) 和 **郵件流程系統管理員** 角色群組預設。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
 - 如果您尚未註冊 EOP，請造訪 [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)，並選擇購買或試用服務。
 
-- 如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 有問題嗎？ 在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 論壇中尋求協助。

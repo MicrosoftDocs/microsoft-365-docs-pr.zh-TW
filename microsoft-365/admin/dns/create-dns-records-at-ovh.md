@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft OVH。
-ms.openlocfilehash: 87a2a731a253fdc0593a1aae8020e615dca63c4a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 14c3796ff6686ae0d98ec32ec6ddf6afc004a3c3
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645812"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657776"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>在 OVH 建立 Microsoft 的 DNS 記錄
 
-[檢查網域的常見問題集](../setup/domains-faq.md) ：供您在找不到所需功能時參考。 
+[檢查網域的常見問題集](../setup/domains-faq.yml) ：供您在找不到所需功能時參考。 
   
 如果 OVH 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
@@ -147,7 +147,7 @@ ms.locfileid: "48645812"
    
     ![郵件的 OVH MX 記錄](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
-7. 選取 [下一步]****。
+7. 選取 **[下一步]**。
     
     ![OVH MX 記錄選取 [下一步]](../../media/4db62d07-0dc4-49f6-bd19-2b4a07fd764a.png)
   
@@ -198,7 +198,7 @@ ms.locfileid: "48645812"
    
     ![OVH CNAME 記錄](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
   
-7. 選取 [下一步]****。
+7. 選取 **[下一步]**。
     
     ![OVH 新增 CNAME 值，然後選取 [下一步]](../../media/f9481cb1-559d-4da1-9643-9cacb0d80d29.png)
   
@@ -240,7 +240,7 @@ ms.locfileid: "48645812"
    
     ![OVH 新增 SPF 的 TXT 記錄](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
-7. 選取 [下一步]****。
+7. 選取 **[下一步]**。
     
     ![OVH 新增 SPF 的 TXT 記錄，然後選取 [下一步]](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
   
@@ -282,7 +282,7 @@ ms.locfileid: "48645812"
        
     ![OVH SRV 記錄](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
-7. 選取 [下一步]****。
+7. 選取 **[下一步]**。
     
     ![OVH SRV 記錄選取 [下一步]](../../media/cb4ad7e2-a8f0-4ab1-9797-d1b51c1d2da9.png)
   

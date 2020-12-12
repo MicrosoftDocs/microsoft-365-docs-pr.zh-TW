@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解安全性 & 合規性中心的「報告」儀表板中提供的郵件流程報告。
 ms.custom: ''
-ms.openlocfilehash: 701735374e03f2afb91323ceb4b3fbf30988bdcd
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: 1ededf2d0d693c537c159c52d00deb03f278b4b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572798"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659462"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中查看郵件流程報告
 
@@ -134,22 +134,22 @@ ms.locfileid: "49572798"
 
   - **Date**
   - **傳輸規則**
-  - **Subject**
+  - **主旨**
   - **寄件者位址**
   - **收件者位址**
   - **嚴重性**
-  - **Direction**
+  - **方向**
 
 - 透過 **下列方式查看資料： DLP Exchange transport rules**：
 
   - **Date**
   - **DLP 原則**
   - **傳輸規則**
-  - **Subject**
+  - **主旨**
   - **寄件者位址**
   - **收件者位址**
   - **嚴重性**
-  - **Direction**
+  - **方向**
 
 如果您按一下 [詳細資料] 表格視圖中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
 
@@ -240,7 +240,7 @@ ms.locfileid: "49572798"
 
 此資料表包含下列資訊：
 
-- **Direction**
+- **方向**
 - **Type**
 - **24 小時**
 - **3天**
@@ -463,7 +463,7 @@ ms.locfileid: "49572798"
 
 - **日期 (UTC)**
 - **Type**
-- **Direction**
+- **方向**
 - **訊息計數**
 
 如果您按一下 [詳細資料] 表格視圖中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
@@ -535,12 +535,12 @@ ms.locfileid: "49572798"
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看這些報表所需的許可權為何？
 
-為了查看和使用本主題中所述的報表，您必須是安全性 & 合規性中心之一的下列其中一個角色群組的成員：
+為了查看和使用本文所述的報表，您必須是安全性 & 合規性中心之一的下列其中一個角色群組的成員：
 
 - **組織管理**
 - **安全性系統管理員**
 - **安全性讀取者**
-- **全域讀取者**
+- **全域讀取器**
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 

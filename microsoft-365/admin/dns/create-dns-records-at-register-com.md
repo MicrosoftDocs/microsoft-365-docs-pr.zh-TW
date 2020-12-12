@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Register.com。
-ms.openlocfilehash: 96ec44875d5bc86f46e4945d4021deb0ca427fed
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645800"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657589"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>在 Register.com 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 Register.com 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
   
@@ -71,7 +71,7 @@ ms.locfileid: "48645800"
     
 4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [ **管理**]。
     
-5. 向下滾動至 [ **高級技術設定** ] 區段，然後選取 [ **編輯 TXT 記錄 (SPF) **]。
+5. 向下滾動至 [ **高級技術設定** ] 區段，然後選取 [ **編輯 TXT 記錄 (SPF)**]。
     
 6. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -199,7 +199,7 @@ ms.locfileid: "48645800"
     
 4. 尋找包含您要修改的功能變數名稱的列;然後在該資料列中，選取 [ **管理**]。
     
-5. 滾動至 [ **高級技術設定** ] 區段，然後選取 [ **編輯 TXT 記錄 (SPF) **]。
+5. 滾動至 [ **高級技術設定** ] 區段，然後選取 [ **編輯 TXT 記錄 (SPF)**]。
     
     ![選取 [編輯 TXT 記錄 (SPF) ](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
   

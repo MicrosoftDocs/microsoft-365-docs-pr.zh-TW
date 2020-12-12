@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 7173c635-58b3-400f-95e0-97abe915565e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Wix。
-ms.openlocfilehash: ee236a9178092bb8fd14a9615c2ac5911b1ecc87
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 01317f7e2da87b532c93f12269fd65b7d4fe2dd6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645656"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656876"
 ---
 # <a name="create-dns-records-at-wix-for-microsoft"></a>在 Wix 建立 Microsoft 的 DNS 記錄
 
-若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 Wix 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
 
@@ -67,7 +67,7 @@ ms.locfileid: "48645656"
     
 2. 在 [ **我的網域** ] 頁面上，選取 [ **高級** ] 區域中的 [ **編輯 DNS** ] 按鈕。 
     
-3. 在 DNS 編輯器的 [ **TXT (Text) ** ] 列中，選取 [ **+ 新增其他**]。 
+3. 在 DNS 編輯器的 [ **TXT (Text)** ] 列中，選取 [ **+ 新增其他**]。 
     
 4. In the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -103,7 +103,7 @@ ms.locfileid: "48645656"
     
 2. 在 [ **我的網域** ] 頁面上的 [ **信箱** ] 區域中，選取 [ **設定您的 MX 記錄** ] 連結。 
     
-3. 從**您的電子郵件提供者**下拉式清單中選擇 [**其他**]。 
+3. 從 **您的電子郵件提供者** 下拉式清單中選擇 [**其他**]。 
     
 4. 選取 [ **+ 另外新增**]。
     
@@ -115,7 +115,7 @@ ms.locfileid: "48645656"
    
 6. 如果有列出任何其他的 MX 記錄，請將其全部刪除。 
     
-7. 選取 [確定]****。
+7. 選取 [確定]。
     
 8. 在 [確認] 對話方塊中，選取 **[確定**]。
     
@@ -127,7 +127,7 @@ ms.locfileid: "48645656"
     
 2. 在 [ **我的網域** ] 頁面上，選取 [ **高級** ] 區域中的 [ **編輯 DNS** ] 按鈕。 
     
-3. 在 [每個 CNAME 記錄的 DNS 編輯器] 的 [ **CNAME (別名) **列中，選取 [ **+ 新增其他**]。 
+3. 在 [每個 CNAME 記錄的 DNS 編輯器] 的 [ **CNAME (別名)** 列中，選取 [ **+ 新增其他**]。 
     
 4. 在新記錄的方塊中，輸入或複製並貼上下清單格中的值：
     
@@ -154,7 +154,7 @@ ms.locfileid: "48645656"
     
 2. 在 [ **我的網域** ] 頁面上，選取 [ **高級** ] 區域中的 [ **編輯 DNS** ] 按鈕。 
     
-3. 在 DNS 編輯器的 [ **TXT (Text) ** ] 列中，選取 [ **+ 新增其他**]。 
+3. 在 DNS 編輯器的 [ **TXT (Text)** ] 列中，選取 [ **+ 新增其他**]。 
     
 4. 在新記錄的方塊中，輸入或複製並貼上下清單格中的值：
     

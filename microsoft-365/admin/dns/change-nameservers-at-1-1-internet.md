@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: 瞭解如何設定由世紀運作的 Office 365，以管理您的 DNS 記錄（1&1 網際網路是 DNS 主機服務提供者時）。
-ms.openlocfilehash: 8a783be20d2f8dbdb26e9826018f911289b35235
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b363718c7d1d1845117f44317ae9e6b24e9a2e28
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646556"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658029"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-11-ionos"></a>變更名稱伺服器以設定具有 1&1 IONOS 的 Microsoft 365
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果您想讓 Microsoft 365 為您管理 Microsoft 365 DNS 記錄，請遵循下列指示。  (如果您願意，您可以 [在 1&1 IONOS，管理所有 Microsoft 365 DNS 記錄](create-dns-records-at-1-1-internet.md)。 )  
   
@@ -63,7 +63,7 @@ ms.locfileid: "48646556"
 ||||
 |:-----|:-----|:-----|
 |**Type** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **請注意**：這是一個範例。 在這裡請使用您自己的 [目的地或指向位址]**** 值，請參閱 Microsoft 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **請注意**：這是一個範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Microsoft 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. 請選取 [ **儲存**]，然後再 **儲存** 一次。 
@@ -155,7 +155,7 @@ ms.locfileid: "48646556"
 ### <a name="if-there-are-nameservers-already-listed"></a>如果列表上「有」名稱伺服器
 
 > [!CAUTION]
-> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers.  (也就是說，  *只*  刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的目前名稱伺服器。 )  
+> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers.  (也就是說，  *只*  刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com** 的目前名稱伺服器。 )  
   
 1. 如果 [名稱伺服器] 方塊中已列出名稱伺服器，請選取每個 **名稱伺服器** ，然後按鍵盤上的 **delete** 鍵，逐一刪除。 
     

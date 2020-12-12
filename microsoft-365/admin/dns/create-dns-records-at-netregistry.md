@@ -22,16 +22,16 @@ search.appverid:
 - BEA160
 ms.assetid: 48e09394-2287-4b3c-9853-21eadf61277e
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Netregistry。
-ms.openlocfilehash: 016df6c61fd6934c1bc46b55c7e110d8442cf1d5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 857645c685cce946b39a7c3dcadb0a45b43686cf
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645968"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657800"
 ---
 # <a name="create-dns-records-at-netregistry-for-microsoft"></a>在 Netregistry 建立 Microsoft 的 DNS 記錄
 
-[檢查網域的常見問題集](../setup/domains-faq.md) ：供您在找不到所需功能時參考。 
+[檢查網域的常見問題集](../setup/domains-faq.yml) ：供您在找不到所需功能時參考。 
   
 如果 Netregistry 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
@@ -82,7 +82,7 @@ ms.locfileid: "48645968"
   
     在 [ **新增 TXT 記錄** ] 表單中，輸入或複製並貼上下清單格中的值。 
     
-    |**名稱**|**TTL (秒) **|**TXT (指向 address 或 value) **|
+    |**名稱**|**TTL (秒)**|**TXT (指向 address 或 value)**|
     |:-----|:-----|:-----|
     |(保留空白)  <br/> |3600 (秒)   <br/> |"MS=msXXXXXXXX"  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)  |
        
@@ -136,7 +136,7 @@ ms.locfileid: "48645968"
   
 6. 在 [ **新增 MX 記錄** ] 表單中，輸入或複製並貼上下清單格中的值。 
     
-    |**名稱**|**TTL (秒) **|**Exchange (指向 address 或 value) **|**主機是否已完全合格？**|**喜好設定 (優先順序) **|
+    |**名稱**|**TTL (秒)**|**Exchange (指向 address 或 value)**|**主機是否已完全合格？**|**喜好設定 (優先順序)**|
     |:-----|:-----|:-----|:-----|:-----|
     |(保留空白)  <br/> |3600 (秒)   <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 帳戶取得。  [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)      | (選取此核取方塊)   <br/> |10   <br/> For more information about priority, see What is MX priority?  <br/> |
        
@@ -167,7 +167,7 @@ ms.locfileid: "48645968"
   
 5. 在新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    |**名稱**|**類型**|**TTL**|**主機 (指向或位址值) **|
+    |**名稱**|**類型**|**TTL**|**主機 (指向或位址值)**|
     |:-----|:-----|:-----|:-----|
     |autodiscover  <br/> |CNAME  <br/> |3600 (秒)   <br/> |autodiscover.outlook.com  <br/> |
     |sip  <br/> |CNAME  <br/> |3600 (秒)   <br/> |sipdir.online.lync.com  <br/> |
@@ -212,7 +212,7 @@ ms.locfileid: "48645968"
     > [!NOTE]
     > 您必須在 TXT 方塊中的專案前後使用引號。 
   
-    |**名稱**|**類型**|**TTL**|**TXT 資料 (目標) **|
+    |**名稱**|**類型**|**TTL**|**TXT 資料 (目標)**|
     |:-----|:-----|:-----|:-----|
     |(保留空白)  <br/> |TXT  <br/> |3600 (秒)   <br/> |"v = spf1 包含: spf.protection.outlook.com. .com-all"  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |
    
@@ -246,7 +246,7 @@ ms.locfileid: "48645968"
     > [!NOTE]
     > Name 欄位是服務 (的組合，例如 _sip) 和通訊協定 (例如 _tls) 。 
   
-    |**類型**|**名稱**|**TTL (秒) **|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
+    |**類型**|**名稱**|**TTL (秒)**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV (服務)   <br/> |_sip._tls  <br/> |3600 (秒)   <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
     |SRV (服務)   <br/> |_sipfederationtls._tcp  <br/> |3600 (秒)   <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |

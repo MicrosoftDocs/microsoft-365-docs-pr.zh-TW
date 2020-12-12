@@ -22,23 +22,23 @@ search.appverid:
 - GEA150
 ms.assetid: b5b633ba-1e56-4a98-8ff5-2acaac63a5c8
 description: 瞭解如何使用 InterNIC 搜尋來尋找您的網域註冊機構和 DNS 主機服務提供者。
-ms.openlocfilehash: 8fa75800125179f046f3af76eea490d760b9f6cd
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 434e30709b112cf591159a1692540b8ef2b6bb65
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645320"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655539"
 ---
 # <a name="find-your-domain-registrar"></a>尋找您的網域註冊機構
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 ## <a name="domain-registrar"></a>網域註冊機構
   
 ### <a name="find-your-domain-name-registrar"></a>尋找您的網域名稱註冊機構
 
 >[!NOTE]
-> 只有以 *.COM*、*.NET*和 *.EDU* 結尾的網域才能使用這個工具。
+> 只有以 *.COM*、*.NET* 和 *.EDU* 結尾的網域才能使用這個工具。
   
 1. 在 [InterNIC 搜尋頁面](https://go.microsoft.com/fwlink/p/?LinkId=402770)的 **[Whois Search]** (Whois 搜尋) 方塊中，輸入您的網域。 例如，*contoso.com*。 
     
@@ -51,7 +51,7 @@ ms.locfileid: "48645320"
 ### <a name="find-your-dns-hosting-provider"></a>尋找您的 DNS 主機服務提供者
 
 >[!NOTE]
-> 只有以 *.COM*、*.NET*和 *.EDU* 結尾的網域才能使用這個工具。
+> 只有以 *.COM*、*.NET* 和 *.EDU* 結尾的網域才能使用這個工具。
   
 1. 在 [InterNIC 搜尋頁面]( https://go.microsoft.com/fwlink/p/?LinkId=402770)的 **[Whois Search]** (Whois 搜尋) 方塊中，輸入您的網域。 例如，contoso.com。 
     

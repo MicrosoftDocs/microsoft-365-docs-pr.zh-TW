@@ -23,16 +23,16 @@ search.appverid:
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft GoDaddy。
-ms.openlocfilehash: 995e579e21a185084d9ee64a7ee462930d845844
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fdd8688f848e676411e736a5be10a2d01dcce50b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646124"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658473"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>在 Microsoft 的 GoDaddy 建立 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。
 
 如果 GoDaddy 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並設定電子郵件與商務用 Skype Online 等項目的 DNS 記錄。
 
@@ -114,7 +114,7 @@ ms.locfileid: "48646124"
 
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
-4. 從下拉式清單中選擇 [ **MX (郵件交換器]) ** 。
+4. 從下拉式清單中選擇 [ **MX (郵件交換器])** 。
 
     ![GoDaddy-BP-Configure-2-0](../../media/dns/56528642-85842e00-651d-11e9-8dd8-217f468f9a18.png)
 
@@ -146,7 +146,7 @@ ms.locfileid: "48646124"
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
 
-4. 從下拉式清單中選擇 [ **CNAME (別名]) ** 。
+4. 從下拉式清單中選擇 [ **CNAME (別名])** 。
 
     ![GoDaddy-BP-Configure-3-0](../../media/dns/56528891-e7449800-651d-11e9-8eac-112285b8e38c.png)
 
@@ -222,7 +222,7 @@ ms.locfileid: "48646124"
 
     ![GoDaddy-BP-Configure-1-4](../../media/dns/56527673-ffb3b300-651b-11e9-91c2-83dc9fe5ca30.png)
 
-4. 從下拉式清單中選擇 [ **SRV (服務]) ** 。
+4. 從下拉式清單中選擇 [ **SRV (服務])** 。
 
     ![GoDaddy-BP-Configure-5-0](../../media/dns/56529669-1dcee280-651f-11e9-8ba2-ecf4fc2f6dca.png)
 

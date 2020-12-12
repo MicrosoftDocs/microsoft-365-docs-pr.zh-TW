@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: 瞭解如何在 Microsoft 365 中購買功能變數名稱。
-ms.openlocfilehash: f636b9e6afc1e910a6b0c01a58a4e69127c80772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d8c0bac5921b5cb3efacffdfee3ab948857b8a1f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645512"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658608"
 ---
 # <a name="buy-a-domain-name"></a>購買網域名稱
 
@@ -40,9 +40,9 @@ ms.locfileid: "48645512"
 
 ::: moniker-end
 
- *若要新增、修改或移除網域，您**必須**是[企業或企業方案](https://products.office.com/business/office)的**全域系統管理員**。這些變更會影響整個承租人、*自訂*的系統管理員或*一般使用者*無法進行這些變更。*  
+ *若要新增、修改或移除網域，您 **必須** 是 [企業或企業方案](https://products.office.com/business/office)的 **全域系統管理員**。這些變更會影響整個承租人、*自訂* 的系統管理員或 *一般使用者* 無法進行這些變更。*  
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 ### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>登入並前往設定 \> 網域 \> 購買網域
 
@@ -128,6 +128,6 @@ Request the transfer at the registrar that you want to move your domain to. Look
 
 [新增網域至 Microsoft 365](../setup/add-domain.md)
 
-[網域常見問題集](../setup/domains-faq.md)
+[網域常見問題集](../setup/domains-faq.yml)
 
 [更新 DNS 記錄以將您的網站保留在目前的主機服務提供者](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)。

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 瞭解如何從 Microsoft 365 移除舊的網域，以及將使用者和群組移至另一個網域。
-ms.openlocfilehash: 4eb44914daf500ac48f140bd999a2cf783a9bf83
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cddbb0ef9cf48147e33b93a4a8def15576edfab5
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645284"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655527"
 ---
 # <a name="remove-a-domain"></a>移除網域
 
@@ -38,7 +38,7 @@ ms.locfileid: "48645284"
 
 ::: moniker-end
   
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 您移除的是您的網域，因為您想要將它新增至不同的 Microsoft 365 訂閱計畫嗎？ 還是您只想取消訂閱？ 您可以[變更您的方案或訂閱](../../commerce/subscriptions/switch-to-a-different-plan.md)或[取消您的訂閱](../../commerce/subscriptions/cancel-your-subscription.md)。
   
@@ -50,7 +50,7 @@ ms.locfileid: "48645284"
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">[系統管理中心]</a>。
 
-2. 選取 [ **使用者**作用 > 中 **使用者**]。
+2. 選取 [ **使用者** 作用 > 中 **使用者**]。
 
 3. 選取您要移動之所有使用者之名稱旁的方塊。
 
@@ -66,7 +66,7 @@ ms.locfileid: "48645284"
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">[系統管理中心]</a>。  
 
-2. 選取 [ **使用者**作用 > 中 **使用者**]。
+2. 選取 [ **使用者** 作用 > 中 **使用者**]。
 
 3. 選取您要移動之所有使用者之名稱旁的方塊。
 
@@ -82,7 +82,7 @@ ms.locfileid: "48645284"
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[系統管理中心]</a>。  
 
-2. 選取 [ **使用者**作用 > 中 **使用者**]。
+2. 選取 [ **使用者** 作用 > 中 **使用者**]。
 
 3. 選取您要移動之所有使用者之名稱旁的方塊。
 
@@ -100,7 +100,7 @@ ms.locfileid: "48645284"
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">[系統管理中心]</a>。
 
-2. 移至 [ **使用者**作用 \> 中 **使用者**]，然後從清單中選取您的帳戶。
+2. 移至 [ **使用者** 作用 \> 中 **使用者**]，然後從清單中選取您的帳戶。
 
 3. 在 [ **帳戶** ] 索引標籤上，選取 [ **管理使用者名稱**]，然後選擇不同的網域。
   
@@ -114,7 +114,7 @@ ms.locfileid: "48645284"
 
 ::: moniker range="o365-germany"
 
-1. 移至 [ **使用者**作用 \> 中 **使用者**]，然後在清單中選取您的名稱。
+1. 移至 [ **使用者** 作用 \> 中 **使用者**]，然後在清單中選取您的名稱。
 
 2. 在 [使用者 **名稱/電子郵件** ] 區段中，選取 [ **編輯**]，然後選擇不同的網域。
 
@@ -130,7 +130,7 @@ ms.locfileid: "48645284"
 
 ::: moniker range="o365-21vianet"
 
-1. 移至 [ **使用者**作用 \> 中 **使用者**]，然後在清單中選取您的名稱。
+1. 移至 [ **使用者** 作用 \> 中 **使用者**]，然後在清單中選取您的名稱。
 
 2. 在 [使用者 **名稱/電子郵件** ] 區段中，選取 [ **編輯**]，然後選擇不同的網域。
 
@@ -150,7 +150,7 @@ ms.locfileid: "48645284"
 
 1. 在系統管理中心中，移至 [ **群組** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">群組</a> ] 頁面。
   
-2. 選取組名，然後在 [**電子郵件地址，主要** **] 索引**標籤底下，選取 [**編輯**]。
+2. 選取組名，然後在 [**電子郵件地址，主要** **] 索引** 標籤底下，選取 [**編輯**]。
 
 3. 使用下拉式清單選擇另一個網域。
 
@@ -227,7 +227,7 @@ ms.locfileid: "48645284"
 
 ## <a name="related-articles"></a>相關文章
 
-[網域常見問題集](../setup/domains-faq.md)
+[網域常見問題集](../setup/domains-faq.yml)
 
 [切換到其他的商務用 Microsoft 365 方案](../../commerce/subscriptions/switch-to-a-different-plan.md)
 

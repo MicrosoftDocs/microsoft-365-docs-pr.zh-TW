@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 004030b4-10ad-4026-96e7-011b6afc7e73
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Register365。
-ms.openlocfilehash: a4c66a4c16960332150a51779207defb00df3044
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6cefdeff3da1256911d80066b55b00f5bef24055
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645764"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656912"
 ---
 # <a name="create-dns-records-at-register365-for-microsoft"></a>在 Register365 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 Register365 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。 
   
@@ -73,7 +73,7 @@ ms.locfileid: "48645764"
     
     (從下拉式清單中選擇 [Type] (類型) 值。) 
     
-     (如果您需要新增一列，請選取 [ **新增 A/CNAME 記錄 (+) **。 ) 
+     (如果您需要新增一列，請選取 [ **新增 A/CNAME 記錄 (+)**。 ) 
     
     (您可能需要向下捲動。)
     
@@ -168,7 +168,7 @@ ms.locfileid: "48645764"
     
     (從下拉式清單中選擇 [Type] (類型) 值。) 
     
-     (如果您需要新增一列，請選取 [ **新增 A/CNAME 記錄 (+) **。 ) 
+     (如果您需要新增一列，請選取 [ **新增 A/CNAME 記錄 (+)**。 ) 
     
     (您可能需要向下捲動。)
     
@@ -206,7 +206,7 @@ ms.locfileid: "48645764"
     
     (從下拉式清單中選擇 [Type] (類型) 值。) 
     
-     (如果您需要新增一列，請選取 [ **新增 A/CNAME 記錄 (+) **。 ) 
+     (如果您需要新增一列，請選取 [ **新增 A/CNAME 記錄 (+)**。 ) 
     
     (您可能需要向下捲動。)
     

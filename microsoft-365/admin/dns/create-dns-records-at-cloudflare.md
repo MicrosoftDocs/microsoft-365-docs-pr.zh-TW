@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Cloudflare。
-ms.openlocfilehash: 301ed156584d9a9a2b84b88db7d6969ade5b34a2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 110bd96c0eecf40ae96efe7055d82a8d12dde607
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646148"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657957"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>在 Cloudflare 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 Cloudflare 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
@@ -138,7 +138,7 @@ ms.locfileid: "48646148"
   
 5. 選取 **[儲存]**。
   
-9. 如果 [ **Mx 記錄** ] 區段中列出任何其他 MX 記錄，請選取 [ **刪除 (X]) ** 圖示加以刪除。 
+9. 如果 [ **Mx 記錄** ] 區段中列出任何其他 MX 記錄，請選取 [ **刪除 (X])** 圖示加以刪除。 
   
 10. 在確認對話方塊中，選取 [ **刪除** ] 以確認變更。 
 
@@ -180,7 +180,7 @@ ms.locfileid: "48646148"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 365 建立一個新的記錄。 而是，請將必要的 Microsoft 365 值新增到目前的記錄，以便擁有包含這兩組值的*單一* SPF 記錄。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 365 建立一個新的記錄。 而是，請將必要的 Microsoft 365 值新增到目前的記錄，以便擁有包含這兩組值的 *單一* SPF 記錄。 
   
 1. 若要開始使用，請移至您的網域頁面 Cloudflare，方法是使用 [此連結](https://www.cloudflare.com/a/login)。 系統會提示您先登入。
     

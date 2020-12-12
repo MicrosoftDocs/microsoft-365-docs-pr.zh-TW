@@ -21,12 +21,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解零小時自動清除 (ZAP) 是否可以 retroactively 將 Exchange Online 信箱中已傳遞的郵件移至 [垃圾郵件] 資料夾，或 retroactively 發現為垃圾郵件或網路釣魚的隔離區。
-ms.openlocfilehash: fd5186bc40d2d80097e6292d86ea113a41e0dd52
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: 7b43fb46adacfe1e9f1e7e622122df90e747ff44
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131139"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659426"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>在 Exchange Online 中，以零小時自動清除 (ZAP) 
 
@@ -97,7 +97,7 @@ ZAP 無法在獨立 Exchange Online Protection (EOP 中運作) 保護內部部�
 
 ### <a name="what-if-i-use-the-quarantine-folder-instead-of-the-junk-mail-folder"></a>使用隔離資料夾而非 [垃圾郵件] 資料夾時該怎麼辦？
 
-根據本主題稍早所述的設定反垃圾郵件原則，ZAP 會對郵件採取動作。
+根據您在本文稍早所述的反垃圾郵件原則設定，ZAP 會對郵件採取動作。
 
 ### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>如果我使用安全寄件者、郵件流程規則或允許/封鎖的寄件者清單，該怎麼辦？
 

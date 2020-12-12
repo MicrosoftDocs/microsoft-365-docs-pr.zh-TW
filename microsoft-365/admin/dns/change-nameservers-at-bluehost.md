@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 7712b6af-329c-43a0-af7b-c4e4c1befb0e
 description: '瞭解如何設定 Microsoft 以在 Bluehost 管理您的 DNS 記錄。 '
-ms.openlocfilehash: c15ba11e0df57deaef61309f5bc6d1b2a60645b8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 78b138a501054a573c2b36cc486dda833be7ae35
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646460"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658005"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-bluehost"></a>使用 Bluehost 變更名稱伺服器以設定 Microsoft
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。  (如果您願意，您可以 [管理 Bluehost 中的所有 DNS 記錄](create-dns-records-at-bluehost.md)。 ) 
   
@@ -139,7 +139,7 @@ ms.locfileid: "48646460"
 ### <a name="if-there-are-nameservers-already-listed"></a>如果列表上「有」名稱伺服器
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的目前名稱伺服器。 )  
+> Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com** 的目前名稱伺服器。 )  
   
 1. 如果有列出任何其他名稱伺服器，請選取每個伺服器，然後按鍵盤上的 **delete** 鍵將其刪除。 
     

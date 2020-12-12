@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: 瞭解如何驗證您的電子郵件和網域擁有權，以在 Microsoft 365 中接管未受管理的租使用者
-ms.openlocfilehash: 9ae09a4b88887664a0615128bcddc48ad6f57118
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 28359908576260218459d13b8c1c1b662b9a2c8f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645056"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658060"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>執行內部系統管理員接管
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
 
 如果您是系統管理員，而且想要接管自助使用者註冊所建立的非管理租使用者，您可以使用內部系統管理員接管。
 
@@ -41,7 +41,7 @@ ms.locfileid: "48645056"
 > [!NOTE]
 > 如果您的承租人中已啟用自助功能，使用者可以自行訂閱免費服務，例如 Power BI。 這些步驟假設自助使用者訂閱已建立您想要當作系統管理員接管的非管理租使用者。在第一個步驟中，您會在未受管理的租使用者中建立使用者內容，使用 Power BI 來說明管理接管路徑。
 
-1. 若要註冊 power bi，請移至[power bi site](https://powerbi.com) ，然後選取 [在使用 power bi Pro] 方塊中的 [**開始免費**  >  的**開始免費試用版** (]) 。 
+1. 若要註冊 power bi，請移至 [power bi site](https://powerbi.com) ，然後選取 [在使用 power bi Pro] 方塊中的 [**開始免費**  >  的 **開始免費試用版** (]) 。 
 
 2. 使用組織的功能變數名稱 (，如) ，註冊使用您組織的功能變數名稱的使用者帳戶 `powerbiadmin@contoso.com` 。 若您的帳戶已在使用中，請使用您目前的密碼登入。
 

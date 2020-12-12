@@ -13,12 +13,12 @@ ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以在安全性與合規性中心使用郵件追蹤，以了解郵件發生什麼情況。
-ms.openlocfilehash: 46aa454ff709e9b17c3b18992757a9a4c3a51247
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 455a1e22ff67ec47e1a6292c962d2a276ec54a64
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616749"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658985"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件追蹤
 
@@ -85,7 +85,7 @@ ms.locfileid: "49616749"
 
   10 天內的結果會立即以 [摘要] 報告的形式提供。 如果您指定甚至稍微大於 10 天的時間範圍，結果將會顯示為只能以可下載的 CSV 檔案形式提供 ([增強摘要] 或 [延伸] 報告)。
 
-  如需有關各種不同報告類型的詳細資訊，請參閱本主題中的[選擇報告類型](#choose-report-type)一節。
+  如需不同報告類型的詳細資訊，請參閱本文中的 [選擇報告類型](#choose-report-type) 一節。
 
   **注意**：系統會使用封存的郵件追蹤資料來準備 [增強摘要] 和 [延伸] 報告，而且最多可能需要數小時的時間，才能下載您的報告。 根據有多少個其他系統管理員也已同時提交報告要求而定，您可能也會在系統開始處理您的佇列要求前察覺到延遲的情形。
 
@@ -185,7 +185,7 @@ ms.locfileid: "49616749"
 
 選取某一列的核取方塊之後，您可以按一下出現的 [尋找相關內容] 按鈕，或選取 [其他選項] ![更多](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> [尋找此郵件的相關記錄]，以尋找郵件的相關記錄。
 
-如需有關郵件識別碼的詳細資訊，請參閱本主題先前所述的＜郵件識別碼＞一節。
+如需郵件識別碼的詳細資訊，請參閱本文前面的「郵件識別碼」一節。
 
 #### <a name="message-trace-details"></a>訊息追蹤詳細資料
 
@@ -225,7 +225,7 @@ ms.locfileid: "49616749"
 
 - **其他資訊**：此區段包含下列詳細資料：
 
-  - **郵件識別碼**：此值在本主題先前所述的 [郵件識別碼](#message-id)一節中有相關說明。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。
+  - **郵件識別碼**：此值會在本文稍早的 [郵件識別碼](#message-id) 一節中說明。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。
 
   - **郵件大小**
 
@@ -253,7 +253,7 @@ ms.locfileid: "49616749"
 
 - **total_bytes**：郵件大小 (以位元組為單位)，包括附件。
 
-- **message_id**：此值在本主題先前所述的 [郵件識別碼](#message-id)一節中有相關說明。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。
+- **message_id**：此值會在本文稍早的 [郵件識別碼](#message-id) 一節中說明。 例如，`<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`。
 
 - **network_message_id**：唯一的郵件識別碼值，會持續存在於郵件可能因為複本發送或通訊群組展開等原因而產生的所有複本上。 例如，此值可能為 `1341ac7b13fb42ab4d4408cf7f55890f`。
 

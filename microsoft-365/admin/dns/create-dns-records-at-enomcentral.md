@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以供 Microsoft eNomCentral。
-ms.openlocfilehash: c60c33f4be94e2f7719fdfc583500c6d1164991d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646160"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658108"
 ---
 # <a name="create-dns-records-at-enomcentral-for-microsoft"></a>在 Microsoft 的 eNomCentral 建立 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。
 
 如果 eNomCentral 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並為電子郵件與商務用 Skype Online 等項目設定 DNS 記錄。
 
@@ -109,7 +109,7 @@ ms.locfileid: "48646160"
 
    ![eNom-BP-Configure-1-3](../../media/4b438629-afdf-4a47-ab11-56644cdb6158.png)
 
-4. 在 [ **服務選擇** ] 下拉式清單中，選擇 [ **使用者 (MX]) **。
+4. 在 [ **服務選擇** ] 下拉式清單中，選擇 [ **使用者 (MX])**。
 
    ![eNom-BP-Configure-1-4](../../media/7680ab48-b8d1-4573-b20f-4745a5d7c079.png)
 
@@ -129,7 +129,7 @@ ms.locfileid: "48646160"
 
    ![eNom-BP-Configure-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
 
-8. 選取 [ **刪除] 複選**框。
+8. 選取 [ **刪除] 複選** 框。
 
    ![eNom-BP-Configure-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
 

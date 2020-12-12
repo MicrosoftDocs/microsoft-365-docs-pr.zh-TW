@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
 description: 瞭解如何驗證您的網域，以及如何在 Amazon Web 服務上設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft AWS)  (。
-ms.openlocfilehash: 6fa791db7b1782b14092769c5d9ef911474d63eb
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bb687b8685aed79f5f768c12d652205bbbed0f59
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646357"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657969"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>在 Amazon Web 服務 (AWS) Microsoft 中建立 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 AWS 是您的 DNS 主機服務提供者，請遵循本文中的步驟來驗證您的網域，並設定電子郵件、商務用 Skype Online 等的 DNS 記錄。
   
@@ -67,9 +67,9 @@ ms.locfileid: "48646357"
     |||||||
     |:-----|:-----|:-----|:-----|:-----|:-----|
     |**名稱** <br/> |**Type** <br/> |**Alias** <br/> |**TTL (Seconds)** <br/> |**Value** <br/> |**Routing Policy** <br/> |
-    |(Leave this field empty.)  <br/> |TXT - Text  <br/> |否  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址]**** 值，請參閱 Microsoft 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |簡易  <br/> |
+    |(Leave this field empty.)  <br/> |TXT - Text  <br/> |否  <br/> |300  <br/> |MS=ms *XXXXXXXX*  <br/>**附註：** 這是範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Microsoft 365 表格。 [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)          |簡易  <br/> |
    
-6. 選取 **[建立]**。
+6. 選取 [建立]。
     
 7. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
     
@@ -110,7 +110,7 @@ ms.locfileid: "48646357"
        
     ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
-6. 選取 **[建立]**。
+6. 選取 [建立]。
     
     ![AWS-BP-設定-2-2](../../media/1c050c72-c04f-48d5-a8e9-44cd83ddd33e.png)
   
@@ -158,7 +158,7 @@ ms.locfileid: "48646357"
    
     ![AWS-BP-Configure-3-1](../../media/895c71bd-0e3a-425e-9681-98c1c67e714b.png)
   
-6. 選取 **[建立]**。
+6. 選取 [建立]。
     
     ![AWS-BP-設定-3-2](../../media/33964846-5282-44a4-b241-62ce02b96735.png)
   
@@ -172,7 +172,7 @@ ms.locfileid: "48646357"
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.md)。 
+> 網域的 SPF 不得擁有一個以上的 TXT 記錄。 如果您的網域具有多筆 SPF 記錄，您將收到電子郵件錯誤，以及傳送及垃圾郵件分類問題。 如果網域已經有 SPF 記錄，請勿為 Microsoft 建立一個新的記錄。 請改為將必要的 Microsoft 值新增至目前的記錄，讓您擁有包含這兩組值的  *單一*  SPF 記錄。 需要範例？ 請參閱這些 [Microsoft 的外部網域名稱系統記錄](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records)。 若要驗證您的 SPF 記錄，您可以使用其中一種[spf 驗證工具](../setup/domains-faq.yml)。 
   
 1. 首先請用[這個連結](https://console.aws.amazon.com/route53/home)移至 AWS 上您的網域頁面。 系統會提示您先登入。
     
@@ -215,12 +215,12 @@ ms.locfileid: "48646357"
     
     |**名稱**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls|SRV - 服務定位器|無|300|100 1 443 sipdir.online.lync.com. **此值必須以句點 ( 結束。 ) **><br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡易|
+    |_sip._tls|SRV - 服務定位器|無|300|100 1 443 sipdir.online.lync.com. **此值必須以句點 ( 結束。 )**><br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡易|
     |_sipfederationtls._tcp|SRV - 服務定位器|無|300|100 1 5061 sipfed.online.lync.com. **此值必須以英文句點 (.) 結尾。**<br> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。           |簡單|
    
     ![AWS-BP-Configure-5-1](../../media/c3f841d3-6076-428f-bb04-e71cc5f392fa.png)
   
-6. 選取 **[建立]**。
+6. 選取 [建立]。
     
     ![AWS-BP-設定-5-2](../../media/1bf5dc58-a46b-47a5-bd69-7c2147dd4e50.png)
   

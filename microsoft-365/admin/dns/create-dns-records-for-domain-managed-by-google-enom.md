@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
 description: 瞭解如何透過 Google 網域頁面存取 eNom 及建立 DNS。
-ms.openlocfilehash: 37fa8836b7511d51ef2dcb137f36d62eebc36443
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3294be667653c568fbbd1a911bcfab9b6ea7788b
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645608"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656852"
 ---
 # <a name="create-dns-records-when-your-domain-is-managed-by-google-enom"></a>當您的網域由 Google (eNom 進行管理時，建立 DNS 記錄) 
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 若要將您的郵件帳戶遷移至 Microsoft，您必須在您的網域註冊機構中建立 DNS 記錄。
   
@@ -63,7 +63,7 @@ ms.locfileid: "48645608"
 6. 在 [ **網域** ] 頁面上，選取 [ **高級 DNS 設定**]。
     
     > [!NOTE]
-    > 如果您在註冊**Google Apps For Work** account 時未透過 Google 購買功能變數名稱，您的**網域**頁面上將不會有**高級 DNS 設定**。 相反地，您必須直接前往您網域主機的網站以存取您的 DNS 設定，並執行此操作與下列步驟。 如需詳細資訊，請參閱 [Access G Suite 網域設定](https://support.google.com/a/answer/54693?hl=en) 。 
+    > 如果您在註冊 **Google Apps For Work** account 時未透過 Google 購買功能變數名稱，您的 **網域** 頁面上將不會有 **高級 DNS 設定**。 相反地，您必須直接前往您網域主機的網站以存取您的 DNS 設定，並執行此操作與下列步驟。 如需詳細資訊，請參閱 [Access G Suite 網域設定](https://support.google.com/a/answer/54693?hl=en) 。 
   
     ![Google-Apps-eNom-Configure-1-3](../../media/b244b29c-e479-40be-b380-4ffa0f74b421.png)
   
@@ -71,11 +71,11 @@ ms.locfileid: "48645608"
     
     ![Google-Apps-eNom-Configure-1-4](../../media/056a2767-462f-4847-acee-d01e3f773add.png)
   
-8. 使用 [**高級 DNS 設定**] 頁面中的登**入名稱**和**密碼**登入 Google**網域管理員**。 
+8. 使用 [**高級 DNS 設定**] 頁面中的登 **入名稱** 和 **密碼** 登入 Google **網域管理員**。 
     
     ![Google-Apps-eNom-Configure-1-5](../../media/08b74652-8cdb-4560-a5fd-0899f86deee8.png)
   
-9. 在 [ ** _domain_name_*_] 頁面上的 [* 主控記錄**] 區段中，選取 [**編輯**]。
+9. 在 [ **_domain_name_*_] 頁面上的 [* 主控記錄**] 區段中，選取 [**編輯**]。
     
     ![Google-Apps-eNom-Configure-1-6](../../media/d54fec18-b9d1-4796-8397-0393c964eade.png)
   

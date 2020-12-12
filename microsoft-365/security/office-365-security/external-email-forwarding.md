@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: .
-ms.openlocfilehash: bbe341899599d5092db0b0961add5a9825eca3b4
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 76cd560c3b97bb67d25d2e4ff2c219669c3d4f0d
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616593"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658878"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>在 Microsoft 365 中控制自動外部電子郵件轉接
 
@@ -31,14 +31,12 @@ Microsoft 365 提供下列自動轉送類型：
 
 - 使用者可以設定 [收件匣規則](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) ，自動將郵件轉寄給外部寄件者 (故意或因遭到破壞的帳戶) 。
 
-- 系統管理員可以設定 [信箱轉送](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (又稱為 _SMTP 轉送_) ，以自動將郵件轉寄給外部收件者。
+- 系統管理員可以設定 [信箱轉送](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (又稱為 _SMTP 轉送_) ，以自動將郵件轉寄給外部收件者。 管理員可以選擇是否只轉寄郵件，或將轉寄郵件的副本保留在信箱中。
 
 您可以使用輸出垃圾郵件篩選原則來控制自動轉寄給外部收件者。 有三個可用的設定：
 
 - **自動**：封鎖自動外部轉送。 內部自動轉送郵件功能將繼續運作。 這是預設設定。
-
 - **開啟**：允許和不限制自動外部轉送。
-
 - **Off**：停用自動外部轉寄，將會造成未傳遞回報 (也稱為 NDR 或退回的郵件) 傳送給寄件者。
 
 如需如何設定這些設定的指示，請參閱 [CONFIGURE EOP 中的外寄垃圾郵件篩選](configure-the-outbound-spam-policy.md)。

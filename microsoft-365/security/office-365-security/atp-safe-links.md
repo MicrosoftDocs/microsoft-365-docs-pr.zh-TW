@@ -26,19 +26,19 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 在本文中，系統管理員可以深入瞭解 Office 365 的安全連結保護，以保護其組織免受使用惡意 URLs 的網路釣魚和其他攻擊。
-ms.openlocfilehash: f2a747b0776a16ac981158ab866f28699583a06b
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 066732e2f1a886e303fea86730baeb78c8152990
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616317"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659486"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全連結
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> 本文適用于具有 [Microsoft Defender For Office 365](office-365-atp.md)的商務客戶。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 個人版，且您在 Outlook 中尋找 Safelinks 的相關資訊，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
+> 本文適用於擁有[適用於 Office 365 的 Microsoft Defender](office-365-atp.md) 的商務客戶。 如果您使用的是 Outlook.com、Microsoft 365 系列或 Microsoft 365 個人版，且您在 Outlook 中尋找 Safelinks 的相關資訊，請參閱 [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)。
 
 安全連結是 [Office 365 的 Defender](office-365-atp.md) 中的一項功能，可提供郵件流程中的輸入電子郵件訊息的 URL 掃描和修正，以及電子郵件及其他位置中 URLs 和連結的時間驗證。 在 Exchange Online Protection (EOP) 中，除了內送電子郵件訊息中的一般 [反垃圾郵件和反惡意程式碼保護](anti-spam-and-anti-malware-protection.md) 之外，也會進行安全連結掃描。 安全連結掃描可協助保護您的組織免受網路釣魚和其他攻擊中所用的惡意連結。
 
@@ -50,7 +50,7 @@ ms.locfileid: "49616317"
 
 - **Microsoft 團隊** (目前在點擊預覽) ：對小組交談、群組聊天或管道中的連結的安全連結保護也是由安全連結原則所控制。 沒有預設的安全連結原則， **因此若要在小組中取得安全連結的保護，您必須建立一或多個安全連結原則**。
 
-  如需小組中安全連結保護的詳細資訊，請參閱本主題稍後的「 [Microsoft 團隊的安全連結設定](#safe-links-settings-for-microsoft-teams) 」一節。
+  如需小組中安全連結保護的詳細資訊，請參閱本文稍後的 [ [Microsoft 小組的安全連結設定](#safe-links-settings-for-microsoft-teams) ] 區段。
 
 - **Office 365 應用程式**： office 365 應用程式的安全連結保護可在支援的桌面、行動裝置和網路 ap 中取得。 您可以在安全連結原則 **以外** 的全域設定中，**設定** Office 365 應用程式的安全連結保護。 如需相關指示，請參閱 [在 Microsoft Defender For Office 365 中設定安全連結設定的全域設定](configure-global-settings-for-safe-links.md)。
 
@@ -80,8 +80,8 @@ ms.locfileid: "49616317"
 |Jean-francois 是行銷部門的成員。 在安全連結的通用設定中開啟 Office 365 應用程式的安全連結保護，以及適用于行銷部門成員的安全連結原則。 Jean-francois 會在電子郵件訊息中開啟 PowerPoint 簡報，然後按一下簡報中的 URL。|Jean-francois 受到安全連結的保護。 <p> Jean-francois 包含在安全連結原則中，且已開啟 Office 365 應用程式的安全連結保護。 <p> 如需 Office 365 應用程式中安全連結保護需求的詳細資訊，請參閱本文稍後的「 [Office 365 應用程式的安全連結設定](#safe-links-settings-for-office-365-apps) 」一節。|
 |Chris 的 Microsoft 365 E5 組織未設定安全連結原則。 Chris 會接收來自外部寄件者的電子郵件，該寄件者包含的 URL 指向他最後按一下的惡意網站。|Chris 未受到安全連結的保護。 <p> 管理員至少必須建立一個安全連結原則，以供任何人取得輸入電子郵件訊息中的安全連結保護。 在原則的條件中必須包含 Chris，才可取得安全連結保護。|
 |在 Pat 的組織中，沒有系統管理員已建立任何安全連結原則，但已開啟 Office 365 應用程式的安全連結保護。 Pat 開啟 Word 檔，然後按一下檔案中的 URL。|Pat 未受到安全連結的保護。 <p> 雖然以全域方式開啟 Office 365 應用程式的安全連結保護，但 Pat 並未包含在任何使用中的安全連結原則中，因此無法套用保護。|
-|在「企業版的組織」中，于 [ `https://tailspintoys.com` 安全連結的全域設定] 中的 [ **封鎖下列 URLs** ] 清單中設定。 包含「擁有先生」的安全連結原則已存在。 「電子郵件」會收到包含 URL 的電子郵件 `https://tailspintoys.com/aboutus/trythispage` 。 Lee 按下該 URL。|您可以自動封鎖此 URL。這取決於清單中的 URL 專案和使用的電子郵件用戶端。 如需詳細資訊，請參閱本主題稍後的「 [阻止下列 URLs 的安全連結的清單](#block-the-following-urls-list-for-safe-links) 」一節。|
-|曉明和 Julia 這兩個 contoso.com 的工作。 很久之前，系統管理員設定了同時適用于曉明和 Julia 的安全連結原則。 曉明會將電子郵件傳送至 Julia，而不知道電子郵件中包含惡意 URL。|**如果** 套用至她的安全連結原則設定為套用至內部收件者之間的郵件，則安全連結會保護 Julia。 如需詳細資訊，請參閱本主題稍後的「 [電子郵件的安全連結設定](#safe-links-settings-for-email-messages) 」一節。|
+|在「企業版的組織」中，于 [ `https://tailspintoys.com` 安全連結的全域設定] 中的 [ **封鎖下列 URLs** ] 清單中設定。 包含「擁有先生」的安全連結原則已存在。 「電子郵件」會收到包含 URL 的電子郵件 `https://tailspintoys.com/aboutus/trythispage` 。 Lee 按下該 URL。|您可以自動封鎖此 URL。這取決於清單中的 URL 專案和使用的電子郵件用戶端。 如需詳細資訊，請參閱本文稍後的「 [阻止下列 URLs 的安全連結」清單](#block-the-following-urls-list-for-safe-links) 一節。|
+|曉明和 Julia 這兩個 contoso.com 的工作。 很久之前，系統管理員設定了同時適用于曉明和 Julia 的安全連結原則。 曉明會將電子郵件傳送至 Julia，而不知道電子郵件中包含惡意 URL。|**如果** 套用至她的安全連結原則設定為套用至內部收件者之間的郵件，則安全連結會保護 Julia。 如需詳細資訊，請參閱本文稍後的「 [電子郵件的安全連結設定](#safe-links-settings-for-email-messages) 」一節。|
 
 ## <a name="safe-links-settings-for-email-messages"></a>電子郵件訊息的安全連結設定
 

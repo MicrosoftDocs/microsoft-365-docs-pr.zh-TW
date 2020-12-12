@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 84f467f6-28cf-40f0-94d0-a2a27ddfc2e7
 description: '若要讓 Microsoft 管理您的 DNS 記錄，請瞭解如何使用 Namecheap 設定您的 Microsoft 自訂網域。 '
-ms.openlocfilehash: e305abb7768b286dbd24336c1dab39d919f9a0ac
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 0dec28c99bd49d3ba558e11afac8142c7df96591
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646448"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657981"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-namecheap"></a>使用 Namecheap 變更名稱伺服器以設定 Microsoft
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。
   
 如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。  (如果您願意，您可以 [在 Namecheap 管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-namecheap.md)。 ) 
   
@@ -162,7 +162,7 @@ ms.locfileid: "48646448"
 ### <a name="if-there-are-nameservers-already-listed"></a>如果列表上「有」名稱伺服器
 
 > [!CAUTION]
-> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers.  (也就是說，  *只*  刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的目前名稱伺服器。 )  
+> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers.  (也就是說，  *只*  刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com** 的目前名稱伺服器。 )  
   
 1. 如果名稱 **伺服器方塊中** 列出任何其他名稱伺服器，請選取它，然後按鍵盤上的 **delete** 鍵，逐一刪除。 
     

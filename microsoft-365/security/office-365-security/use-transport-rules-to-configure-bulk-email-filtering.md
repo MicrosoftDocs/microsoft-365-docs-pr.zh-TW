@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何使用郵件流程規則 (傳輸規則) 來識別及篩選大宗郵件 (在 Exchange Online Protection (EOP) 中) 的灰色郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1f88358973648846d650700bb5939c052851c789
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: b029e805147218551ba6ff80fb5abfda3fbfef7f
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615633"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658634"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>在 EOP 中使用郵件流程規則來篩選大量電子郵件
 
@@ -36,11 +36,13 @@ ms.locfileid: "49615633"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 您必須已獲指派許可權，才能執行這些程式：
+- 您必須先在 Exchange Online 或 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體說來，您需要「 **傳輸規則** 」角色，該角色會指派給「 **組織管理**」、「 **合規性管理** 」 (全域系統管理員) ，並依預設 **記錄管理** 角色群組。
 
-  - 在 Exchange Online 中，請參閱在 [Exchange online 中的功能許可權中](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions)的「郵件流程」專案。
+  如需詳細資訊，請參閱下列主題：
 
-  - 在獨立 EOP 中，您需要傳輸規則角色，預設會指派給 OrganizationManagement、ComplianceManagement 和 RecordsManagement 角色。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+  - [Exchange Online 中的權限](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+  - [獨立版 EOP 中的權限](feature-permissions-in-eop.md)
+  - [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - 若要在 Exchange Online 中開啟 EAC，請參閱 exchange [online 中的 exchange admin center](https://docs.microsoft.com/Exchange/exchange-admin-center)。 若要在獨立 EOP 中開啟 EAC，請參閱 [Exchange admin center in 獨立 EOP](exchange-admin-center-in-exchange-online-protection-eop.md)。
 

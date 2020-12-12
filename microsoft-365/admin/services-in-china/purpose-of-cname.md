@@ -20,16 +20,16 @@ search.appverid:
 ROBOTS: NOINDEX
 description: 深入瞭解 Office 365 中的 ' MSOID ' CNAME 記錄，可引導您使用最佳的驗證程式伺服器，讓您能更快速地進行回應。
 monikerRange: o365-21vianet
-ms.openlocfilehash: ac9ad3ad9f860722760d59c54570a453146a3a93
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: aea04391768993c40978d94b50817244cd77405c
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644636"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655481"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>MSOID 的 Office 365 CNAME 記錄的用途為何？
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
 > [!NOTE]
 > 下列僅適用于由世紀運作的 * * Office 365。
   

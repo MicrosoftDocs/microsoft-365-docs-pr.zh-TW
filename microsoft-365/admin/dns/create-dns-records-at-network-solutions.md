@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
 description: 瞭解如何驗證您的網域，並在 Microsoft 的網路解決方案中設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄。
-ms.openlocfilehash: f488ad3511c9901eae70691f616dcff52036c71d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9cb403bb8b469f2d7f4e6138ba5833120ea53585
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645944"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49657788"
 ---
 # <a name="create-dns-records-at-network-solutions-for-microsoft"></a>在 Microsoft 的網路解決方案中建立 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 Network Solutions 是您的 DNS 主機服務提供者，請按照本文所述的步驟驗證網域，並設定電子郵件與商務用 Skype Online 等項目的 DNS 記錄。
   
@@ -66,7 +66,7 @@ ms.locfileid: "48645944"
 1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。系統會提示您先登入。
     
     > [!IMPORTANT]
-    > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
+    > 在您選取 [**登** 入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
   
     ![選擇 [管理我的網域名稱]，然後登入 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -84,7 +84,7 @@ ms.locfileid: "48645944"
     
     ![選取 [管理 Advanced DNS 記錄]](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下 ** (TXT 記錄) ** ] 區段中向下滾動至文字，然後選取 [ **編輯 TXT 記錄**]。
+5. 向下 **(TXT 記錄)** ] 區段中向下滾動至文字，然後選取 [ **編輯 TXT 記錄**]。
     
     ![選取 [編輯 TXT 記錄]](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
@@ -135,7 +135,7 @@ ms.locfileid: "48645944"
 1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。系統會提示您先登入。
     
     > [!IMPORTANT]
-    > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
+    > 在您選取 [**登** 入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
   
     ![選擇 [管理我的網域名稱]，然後登入 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -153,7 +153,7 @@ ms.locfileid: "48645944"
     
     ![選取 [管理 Advanced DNS 記錄]](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下 ** (MX 記錄) ** ] 區段中向下滾動至 [郵件伺服器]，然後選取 [ **編輯 MX 記錄**]。
+5. 向下 **(MX 記錄)** ] 區段中向下滾動至 [郵件伺服器]，然後選取 [ **編輯 MX 記錄**]。
     
     ![選取 [編輯 MX 記錄]](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
   
@@ -193,7 +193,7 @@ ms.locfileid: "48645944"
 1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。系統會提示您先登入。
     
     > [!IMPORTANT]
-    > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
+    > 在您選取 [**登** 入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
   
     ![選擇 [管理我的網域名稱]，然後登入 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -211,13 +211,13 @@ ms.locfileid: "48645944"
     
     ![選取 [管理 Advanced DNS 記錄]](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下滾動至 [ ** (CNAME 記錄) ** ] 區段中的 [主機別名]，然後選取 [ **編輯 CNAME 記錄**]。
+5. 向下滾動至 [ **(CNAME 記錄)** ] 區段中的 [主機別名]，然後選取 [ **編輯 CNAME 記錄**]。
     
     ![選取 [主機別名] 底下的 [編輯 CNAME 記錄]](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
   
 6. 在這四筆新記錄的方塊中，輸入或複製並貼上下表中的值。
     
-    |**Alias**|**TTL**|**參照的主機名稱**|**其他主機 (選取 [ **其他主機** ] 選項按鈕) **|
+    |**Alias**|**TTL**|**參照的主機名稱**|**其他主機 (選取 [ **其他主機** ] 選項按鈕)**|
     |:-----|:-----|:-----|:-----|
     |autodiscover (自動探索)  <br/> |3600  <br/> |(沒有設定)  <br/> |autodiscover.outlook.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
     |sip  <br/> |3600  <br/> |(沒有設定)  <br/> |sipdir.online.lync.com.  <br/> **此值必須以英文句點 (.) 結尾。** <br/> |
@@ -246,7 +246,7 @@ ms.locfileid: "48645944"
 1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。系統會提示您先登入。
     
     > [!IMPORTANT]
-    > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
+    > 在您選取 [**登** 入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
   
     ![選擇 [管理我的網域名稱]，然後登入 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -264,7 +264,7 @@ ms.locfileid: "48645944"
     
     ![選取 [管理 Advanced DNS 記錄]](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下 ** (TXT 記錄) ** ] 區段中向下滾動至文字，然後選取 [ **編輯 TXT 記錄**]。
+5. 向下 **(TXT 記錄)** ] 區段中向下滾動至文字，然後選取 [ **編輯 TXT 記錄**]。
     
     ![選取 [文字] 底下的 [編輯 TXT 記錄]](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
   
@@ -292,7 +292,7 @@ ms.locfileid: "48645944"
 1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。系統會提示您先登入。
     
     > [!IMPORTANT]
-    > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
+    > 在您選取 [**登** 入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
   
     ![選擇 [管理我的網域名稱]，然後登入 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -310,7 +310,7 @@ ms.locfileid: "48645944"
     
     ![選取 [管理 Advanced DNS 記錄]](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下 ** (SRV 記錄) ** ] 區段中向下滾動至服務，然後選取 [ **編輯 SRV 記錄**]。
+5. 向下 **(SRV 記錄)** ] 區段中向下滾動至服務，然後選取 [ **編輯 SRV 記錄**]。
     
     ![選取 [服務] 下的 [編輯 SRV 記錄]](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   

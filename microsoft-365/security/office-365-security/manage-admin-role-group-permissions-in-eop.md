@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: 系統管理員可以瞭解如何在 exchange Online Protection 中指派或移除 Exchange 系統管理中心 (EAC) 中的許可權。
-ms.openlocfilehash: fb1e0979b77c38d852f35817e01135af888eac68
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 4a1353963e5e3eadc1a07f8b4aa3a765b06c86ec
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201898"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659294"
 ---
 # <a name="manage-role-groups-in-standalone-eop"></a>在獨立版 EOP 中管理角色群組
 
@@ -34,9 +34,9 @@ ms.locfileid: "48201898"
 
 - 若要開啟獨立 EOP PowerShell，請參閱 [Connect To Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 具體說來，您需要角色管理角色，其預設會指派給 OrganizationManagement (全域系統管理員) 角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您必須先在 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體說來，您需要 **角色管理** 角色，其預設會指派給「 **組織管理** 」角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 有問題嗎？ 在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 論壇中尋求協助。
@@ -47,7 +47,7 @@ ms.locfileid: "48201898"
 
 1. 在 EAC 中，移至 [ **許可權**] [ \> **管理員角色**]。 您組織中的所有角色群組都會列在這裡。
 
-2. 選取角色群組。 [詳細資料] 窗格會顯示 **名稱**、 **描述**、 **指派的角色**，並由角色群組 **進行管理** 。 您也可以按一下 [ **編輯**編輯圖示] 來查看此資訊 ![ ](../../media/ITPro-EAC-EditIcon.png) 。
+2. 選取角色群組。 [詳細資料] 窗格會顯示 **名稱**、 **描述**、 **指派的角色**，並由角色群組 **進行管理** 。 您也可以按一下 [ **編輯** 編輯圖示] 來查看此資訊 ![ ](../../media/ITPro-EAC-EditIcon.png) 。
 
 ### <a name="use-the-eac-to-create-role-groups"></a>使用 EAC 來建立角色群組
 
@@ -65,9 +65,9 @@ ms.locfileid: "48201898"
 
     - **描述**：輸入角色群組的選用描述。
 
-    - **角色**：按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 或 [ **移除** ![ITPro-EAC-RemoveIcon.gif] ](../../media/ITPro-EAC-RemoveIcon.gif) ，以選取或修改指派給角色群組的角色。
+    - **角色**：按一下 [ **新增** ![ 新增圖示] ](../../media/ITPro-EAC-AddIcon.png) 或 [ **移除** ![ 移除] 圖示 ](../../media/ITPro-EAC-RemoveIcon.gif) ，以選取或修改指派給角色群組的角色。
 
-    - **成員**：按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 或 [ **移除** ![ITPro-EAC-RemoveIcon.gif] ](../../media/ITPro-EAC-RemoveIcon.gif) ，修改角色群組成員資格。
+    - **成員**：按一下 [ **新增** ![ 新增圖示] ](../../media/ITPro-EAC-AddIcon.png) 或 [ **移除** ![ 移除] 圖示 ](../../media/ITPro-EAC-RemoveIcon.gif) 可修改角色群組成員資格。
 
 3. 完成作業後，按一下 [ **儲存** ] 以建立角色群組。
 
@@ -91,11 +91,11 @@ ms.locfileid: "48201898"
 
 2. 在開啟的角色群組屬性頁面的 [ **成員** ] 區段中，執行下列其中一個步驟：
 
-   - 按一下 [ **新增** ![ 新增] 圖示 ](../../media/ITPro-EAC-AddIcon.png) 。 在出現的頁面中，尋找 wou 想要加入的使用者，然後按一下 [ **載入 >**]。 選取 [使用者]，然後視需要按一下 [ **增加->** ] 多次。 完成後，按一下 [確定]****。
+   - 按一下 [ **新增** ![ 新增] 圖示 ](../../media/ITPro-EAC-AddIcon.png) 。 在出現的頁面中，尋找 wou 想要加入的使用者，然後按一下 [ **載入 >**]。 選取 [使用者]，然後視需要按一下 [ **增加->** ] 多次。 完成後，按一下 [確定]。
 
    - 選取您要移除的使用者，然後按一下 [ **移除** ![ 移除圖示] ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
-3. 完成後，按一下 [儲存]****。
+3. 完成後，按一下 [儲存]。
 
    > [!NOTE]
    > 使用者可能必須先登出再登入，才能在您於角色群組中新增或移除成員後，看到其系統管理權限的變更。
@@ -150,9 +150,9 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
   New-RoleGroup -Name "Unique Name" -Description "Descriptive text" -Roles <"Role1","Role2"...>
   ```
 
-  - _Roles_參數會使用下列語法，指定要指派給角色群組的管理角色 `"Role1","Role1",..."RoleN"` 。 您可以使用 **Get-ManagementRole** Cmdlet 來查看可用的角色。
+  - _Roles_ 參數會使用下列語法，指定要指派給角色群組的管理角色 `"Role1","Role1",..."RoleN"` 。 您可以使用 **Get-ManagementRole** Cmdlet 來查看可用的角色。
 
-  - _Members_參數會使用下列語法來指定角色群組的成員： `"Member1","Member2",..."MemberN"` 。 您可以指定使用者、擁有郵件功能的通用安全性群組 (Usg) 或其他角色群組 (安全性主體) 。
+  - _Members_ 參數會使用下列語法來指定角色群組的成員： `"Member1","Member2",..."MemberN"` 。 您可以指定使用者、擁有郵件功能的通用安全性群組 (Usg) 或其他角色群組 (安全性主體) 。
 
   此範例會使用下列設定建立名為「限制收件者管理」的新角色群組：
 
@@ -178,7 +178,7 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
      New-RoleGroup -Name "<Unique Name>" -Roles $RoleGroup.Roles [-Members <Members>]
      ```
 
-     _Members_參數會使用下列語法來指定角色群組的成員： `"Member1","Member2",..."MemberN"` 。 您可以指定使用者、擁有郵件功能的通用安全性群組 (Usg) 或其他角色群組 (安全性主體) 。
+     _Members_ 參數會使用下列語法來指定角色群組的成員： `"Member1","Member2",..."MemberN"` 。 您可以指定使用者、擁有郵件功能的通用安全性群組 (Usg) 或其他角色群組 (安全性主體) 。
 
      此範例會將組織管理角色群組複製到名為 "有限的組織管理" 的新角色群組。 角色群組成員為 Isabelle、Carter 及 Lukas。
 
@@ -191,7 +191,7 @@ Get-RoleGroup -Filter "Members -eq 'CN=Julia,OU=contoso.onmicrosoft.com,OU=Micro
 
 ### <a name="use-standalone-eop-powershell-modify-the-list-of-members-in-role-groups"></a>使用獨立 EOP PowerShell 修改角色群組中的成員清單
 
-- **Add-RoleGroupMember**和**Remove-RoleGroupMember** Cmdlet 會一次新增或移除個別成員。 **Update-RoleGroupMember**資訊清單可以取代或修改現有的成員清單。
+- **Add-RoleGroupMember** 和 **Remove-RoleGroupMember** Cmdlet 會一次新增或移除個別成員。 **Update-RoleGroupMember** 資訊清單可以取代或修改現有的成員清單。
 
 - 角色群組的成員可以是使用者、擁有郵件功能的通用安全性群組 (Usg) 或其他角色群組 (安全性主體) 。
 

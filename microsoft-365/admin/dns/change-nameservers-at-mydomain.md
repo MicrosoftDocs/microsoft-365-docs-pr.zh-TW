@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
 description: 瞭解如何設定 Microsoft，以在 MyDomain 管理自訂網域的 DNS 記錄。
-ms.openlocfilehash: 44d36f872ddbeeba1948ee8a7a4db029895fcb8c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fbfa3c495f54a9890be6d9c9e31a7878b21f12fe
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646412"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658413"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-mydomain"></a>使用 MyDomain 變更名稱伺服器以設定 Microsoft
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。
   
 如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。  (如果您願意，您可以 [在 MyDomain 管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-mydomain.md)。 ) 
   
@@ -113,7 +113,7 @@ ms.locfileid: "48646412"
 ### <a name="if-the-correct-nameservers-are-not-already-listed"></a>如果列表上「沒有」正確的名稱伺服器
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的目前名稱伺服器。 )  
+> Follow these steps only if you have existing nameservers other than the four correct nameservers.  (也就是說，只刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com** 的目前名稱伺服器。 )  
   
 1. 選取 [名稱伺服器 **：** ] 欄位中的每個專案，然後按下鍵盤上的 **Delete** 鍵，以刪除現有的名稱伺服器。 
     

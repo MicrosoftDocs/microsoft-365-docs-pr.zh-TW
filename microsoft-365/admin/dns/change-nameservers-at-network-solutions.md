@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: d4ba60f3-4e1c-4180-99bd-250b8955be2a
 description: '若要讓 Microsoft 管理您的 DNS 記錄，請瞭解如何設定含網路方案的 Microsoft 自訂網域。 '
-ms.openlocfilehash: 1cb5cd3cc8628a629fb6d7044063914e37adfac2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 04817ca24b13b4c138986df3875b6d397100fffd
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646400"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658425"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-with-network-solutions"></a>使用網路解決方案變更名稱伺服器以設定 Microsoft
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。
   
 如果您想讓 Microsoft 為您管理您的 DNS 記錄，請遵循下列指示。  (如果您願意，您可以 [在 [網路解決方案] 中管理所有的 MICROSOFT DNS 記錄](create-dns-records-at-network-solutions.md)。 ) 
   
@@ -47,7 +47,7 @@ ms.locfileid: "48646400"
 1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。系統會提示您先登入。
     
     > [!IMPORTANT]
-    > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。
+    > 在您選取 [**登** 入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。
   
     ![選擇 [管理我的網域名稱]，然後登入 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -65,7 +65,7 @@ ms.locfileid: "48646400"
     
     ![選取 [管理 Advanced DNS 記錄]](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. 向下 ** (TXT 記錄) ** ] 區段中向下滾動至文字，然後選取 [ **編輯 TXT 記錄**]。
+5. 向下 **(TXT 記錄)** ] 區段中向下滾動至文字，然後選取 [ **編輯 TXT 記錄**]。
     
     ![選取 [編輯 TXT 記錄]](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
@@ -73,7 +73,7 @@ ms.locfileid: "48646400"
     
 |**Host**|**TTL**|**Text**|
 |:-----|:-----|:-----|
-|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **請注意**：這是一個範例。 在這裡請使用您自己的 [目的地或指向位址]**** 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)
+|@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **請注意**：這是一個範例。 在這裡請使用您自己的 [目的地或指向位址] 值，請參閱 Microsoft 365 表格。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)
    
     
    ![在新記錄的方塊中輸入或貼上值](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
@@ -120,12 +120,12 @@ ms.locfileid: "48646400"
 準備好變更您的 NS 記錄，讓 Microsoft 能夠設定您的網域？ 請依照下列步驟操作或[觀看影片 (從 2:23 處開始)](https://support.microsoft.com/office/69b092e3-c026-4d19-a7d0-16cdb2d8b261)。
   
 > [!IMPORTANT]
->  當您完成本節中的步驟之後，應該會列出的  *唯一*  名稱伺服器為下列四種： **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**和 **ns4.bdm.microsoftonline.com**。 The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the  *correct*  nameservers if they are not already in the list. 
+>  當您完成本節中的步驟之後，應該會列出的  *唯一*  名稱伺服器為下列四種： **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com** 和 **ns4.bdm.microsoftonline.com**。 The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the  *correct*  nameservers if they are not already in the list. 
   
 1. 首先請用[這個連結](https://www.networksolutions.com/manage-it)移至 Network Solutions 上您的網域頁面。 系統會提示您先登入。
     
     > [!IMPORTANT]
-    > 在您選取 [**登**入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
+    > 在您選取 [**登** 入] 按鈕之前，請先在 [**登入：** ] 下拉式清單中選擇 [**管理我的功能變數名稱**]。 
   
     ![選擇 [管理我的網域名稱]，然後登入 Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -179,7 +179,7 @@ ms.locfileid: "48646400"
 ### <a name="if-there-are-nameservers-already-listed"></a>如果列表上「有」名稱伺服器
 
 > [!CAUTION]
-> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers.  (也就是說，  *只*  刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com**或 **ns4.bdm.microsoftonline.com**的目前名稱伺服器。 ) 
+> Follow these steps  *only*  if you have existing nameservers other than the four  *correct*  nameservers.  (也就是說，  *只*  刪除所有  *未*  命名為 **ns1.bdm.microsoftonline.com**、 **ns2.bdm.microsoftonline.com**、 **ns3.bdm.microsoftonline.com** 或 **ns4.bdm.microsoftonline.com** 的目前名稱伺服器。 ) 
   
 1. 如果有列出任何其他名稱伺服器，請選取它，然後按鍵盤上的 **delete** 鍵，逐一刪除。
     

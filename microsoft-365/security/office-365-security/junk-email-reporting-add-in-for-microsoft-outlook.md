@@ -14,12 +14,12 @@ ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何安裝和使用 Microsoft 垃圾郵件回報增益集來向 Microsoft 報告垃圾郵件、非垃圾郵件和網路釣魚郵件。
-ms.openlocfilehash: 6f08c72ae797825695c443848429dcfd2cd485a2
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 4345066ec180b5d7fe5ff8b537a3cd057f60c31c
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616425"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658866"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>安裝和使用 Microsoft Outlook 的垃圾郵件回報增益集
 
@@ -35,7 +35,7 @@ Microsoft Outlook 的垃圾郵件回報增益集可讓使用者提交誤報為�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
-- 若要安裝垃圾郵件回報增益集，請參閱本主題稍後的 [安裝垃圾郵件回報增益集](#install-the-junk-email-reporting-add-in) 一節。
+- 若要安裝垃圾郵件回報增益集，請參閱本文稍後的 [安裝垃圾郵件回報增益集](#install-the-junk-email-reporting-add-in) 一節。
 
 - 垃圾郵件回報增益集可與下列 Outlook 版本搭配使用：
 

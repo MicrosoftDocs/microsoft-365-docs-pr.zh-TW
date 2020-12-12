@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務的 DNS 記錄，以在 Microsoft 的 Windows 基礎 DNS 上進行。
-ms.openlocfilehash: 471aa0323bd59b09c672431ef39bb33f5c89b555
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 8202ffe10b4a0ff9c94d863d92fc55c47ebb38d3
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645572"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656840"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>使用以 Windows 為基礎的 DNS 建立 Microsoft 的 DNS 記錄
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
    
 如果您使用 Windows 型 DNS 託管自己的 DNS 記錄，請按照本文的步驟設定您電子郵件的記錄、商務用 Skype Online 等。
   
@@ -39,7 +39,7 @@ ms.locfileid: "48645572"
 新增 DNS 記錄後，出現郵件流程或其他問題的相關問題，請參閱 [疑難排解變更功能變數名稱或 DNS 記錄後的問題](../get-help-with-domains/find-and-fix-issues.md)。 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>在 Windows 架構的 DNS 中尋您的 DNS 記錄
-<a name="BKMK_find_your_dns_1"> </a>移至具有您網域之 DNS 記錄的頁面。 如果您是在 Windows Server 2008 中工作，請移至**開始**  >  **執行**。 如果您是在 Windows Server 2012 中工作，請按 Windows 鍵和 **r**。 輸入 **dnsmgmnt**，然後選取 **[確定]**。 在 [DNS 管理員] 中，展開 [ ** \<DNS server name\> \> 正向對應區域  **]。 選取您的網域。 您現在可以建立 DNS 記錄了！
+<a name="BKMK_find_your_dns_1"></a>移至具有您網域之 DNS 記錄的頁面。 如果您是在 Windows Server 2008 中工作，請移至 **開始**  >  **執行**。 如果您是在 Windows Server 2012 中工作，請按 Windows 鍵和 **r**。 輸入 **dnsmgmnt**，然後選取 **[確定]**。 在 [DNS 管理員] 中，展開 [ **\<DNS server name\> \> 正向對應區域**]。 選取您的網域。 您現在可以建立 DNS 記錄了！
    
 ## <a name="add-mx-record"></a>新增 MX 記錄
 <a name="BKMK_add_MX"> </a>
@@ -47,7 +47,7 @@ ms.locfileid: "48645572"
 新增 MX 記錄，使您網域的電子郵件將會傳送給 Microsoft。
 - 您將新增的 MX 記錄會包含值 () 的 [ **點數** ] 值，此值如下所示： \<MX token\> MSxxxxxxx，其中 \<MX token\> 是類似的值。 
 - 從 Microsoft 的 [新增 DNS 記錄] 頁面的 [Exchange Online] 區段中的 [MX] 列中，複製列于 [位址] 底下的值。 您將會在您要建立的記錄中使用此值。 
-- 在網域的 [DNS 管理員] 頁面上，移至 [**動作**  >  **郵件交換器 (MX) **]。 若要尋找網域的此頁面，請參閱 [在 Windows 型 dns 中尋找您的 DNS 記錄](#find-your-dns-records-in-windows-based-dns)。  
+- 在網域的 [DNS 管理員] 頁面上，移至 [**動作**  >  **郵件交換器 (MX)**]。 若要尋找網域的此頁面，請參閱 [在 Windows 型 dns 中尋找您的 DNS 記錄](#find-your-dns-records-in-windows-based-dns)。  
 - 在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值： 
     - 主機名稱:  
     - @Address：將點貼到您剛剛從 Microsoft 複製的位址值。  
@@ -63,27 +63,27 @@ ms.locfileid: "48645572"
 > [!IMPORTANT]
 > 如果您有適用于 Microsoft 的行動裝置管理 (MDM) ，則必須建立兩個額外的 CNAME 記錄。 請按照您針對其他四筆 CNAME 記錄所進行的程序執行，但提供下表的值。  (如果您沒有 MDM，您可以略過此步驟。 )  
 
-- 在網域的 [DNS 管理員] 頁面上，移至 [**動作**  >  **CNAME (cname) **]。
+- 在網域的 [DNS 管理員] 頁面上，移至 [**動作**  >  **CNAME (cname)**]。
 - 在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     - 主機名稱：自動探索
     - 類型： 
     - Cname 位址： autodiscover.outlook.com
-- 選取 [ **O**K]。
+- 選取 [ **O** K]。
 
 新增 SIP CNAME 記錄。 
-- 在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname) **]。 
+- 在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname)**]。 
 - 在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     - 主機名稱： sip
     - 類型： CNAME
     - 位址： sipdir.online.lync.com
-- 選取 [確定]****。
+- 選取 [確定]。
 
 新增商務用 Skype Online 自動探索 CNAME 記錄。  
-- 在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname) **]。 在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值：  
+- 在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname)**]。 在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     - 主機名稱： lyncdiscover
     - 類型： CNAME
     - 位址： webdir.online.lync.com
-- 選取 [確定]****。
+- 選取 [確定]。
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>為 Microsoft 的 (MDM) 新增兩個適用于行動裝置管理的 CNAME 記錄。
 
@@ -92,20 +92,20 @@ ms.locfileid: "48645572"
   
 
 新增 MDM Enterpriseregistration CNAME 記錄。  
-- 在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname) **]。 
+- 在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname)**]。 
 - 在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值：  
 - 主機名稱： enterpriseregistration
 - 類型： CNAME
 - 位址： enterpriseregistration.windows.net
-- 選取 [確定]****。 
+- 選取 [確定]。 
 
 新增 MDM Enterpriseenrollment CNAME 記錄。 
--  在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname) **]。 
+-  在網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **CNAME (cname)**]。 
 -  在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     - 主機名稱： enterpriseenrollment
     - 類型： CNAME
     - 位址： enterpriseenrollment-s.manage.microsoft.com
-- 選取 [確定]****。
+- 選取 [確定]。
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>新增 SPF 的 TXT 記錄以協助防範垃圾郵件
 <a name="BKMK_add_TXT"> </a>
@@ -116,7 +116,7 @@ ms.locfileid: "48645572"
 新增網域的 SPF TXT 記錄，以協助防堵垃圾郵件。
   
 - 萬一這筆記錄的 [TXT] 值已有其他字串 (例如行銷電子郵件的字串)，沒關係，請保留那些字串，然後再加上這個字串，並分別用雙引號括住字串加以區分。 
-- 在您網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **文字] (TXT) **。 
+- 在您網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **文字] (TXT)**。 
 -  在 [ **新增資源記錄** ] 對話方塊中，確定欄位已設定為嚴格下列的值。 
  > [!IMPORTANT]
 > 在某些 Windows DNS 管理員版本中，可能已設定網域，因此當您建立 txt 記錄時，首頁名稱會預設為上層網域。 在此情況中，當您新增 TXT 記錄時，請將主機名稱設定為空白 (無值)，而不是將它設定為 @ 或網域名稱。 
@@ -125,7 +125,7 @@ ms.locfileid: "48645572"
 -  記錄類型： TXT
 -  Address： v = spf1 包含: spf.protection.outlook.com。 .com-all 
          
--  選取 [確定]****。
+-  選取 [確定]。
    
 ## <a name="add-srv-records"></a>新增 SRV 記錄
 <a name="BKMK_add_SRV"> </a>
@@ -134,7 +134,7 @@ ms.locfileid: "48645572"
 
 為商務用 Skype Online Web 會議新增 SIP SRV 記錄。  <br/> 
 -  在您網域的 [DNS 管理員] 頁面上，移至 [ **動作**] [ \> **其他新記錄**]。 
--   在 [ **資源記錄類型** ] 視窗中，選取 [ **服務位置] (SRV) **]，然後選取 [ **建立記錄**]。 
+-   在 [ **資源記錄類型** ] 視窗中，選取 [ **服務位置] (SRV)**]，然後選取 [ **建立記錄**]。 
 -   在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     -  服務： _sip
     -  通訊協定： _tls
@@ -142,12 +142,12 @@ ms.locfileid: "48645572"
     -  加權：1
     -  連接埠：443
     -  目標 (主機名稱) ： sipdir.online.lync.com
--  選取 [確定]****。 
+-  選取 [確定]。 
 
 
 為商務用 Skype Online 同盟新增 SIP SRV 記錄。  
 -  在您網域的 [DNS 管理員] 頁面上，移至 [ **動作**] [ \> **其他新記錄**]。  
--  在 [ **資源記錄類型** ] 視窗中，選取 [ **服務位置] (SRV) **]，然後選取 [ **建立記錄**]。 
+-  在 [ **資源記錄類型** ] 視窗中，選取 [ **服務位置] (SRV)**]，然後選取 [ **建立記錄**]。 
 -   在 [ **新增資源記錄** ] 對話方塊中，確定已將欄位設定為嚴格下列值：  
     -  服務： _sipfederationtls
     -  通訊協定： _tcp
@@ -155,7 +155,7 @@ ms.locfileid: "48645572"
     -  加權：1
     -  連接埠：5061
     -  目標 (主機名稱) ： sipfed.online.lync.com
--  選取 [確定]****。 
+-  選取 [確定]。 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>新增記錄以驗證您擁有網域 (若您尚未這麼做)
 <a name="BKMK_verify"> </a>
@@ -174,7 +174,7 @@ ms.locfileid: "48645572"
 6. 從表格複製 [目的地或指向位址] 值。 您在下一步會需要這項資訊。 我們建議您複製並貼上此值，如此一來，所有的間距皆會保持正確。
 
 新增 TXT 記錄。 
--  在您網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **文字] (TXT) **。 
+-  在您網域的 [DNS 管理員] 頁面上，移至 [ **動作** \> **文字] (TXT)**。 
 -   在 [ **新增資源記錄** ] 對話方塊中，選取 [ **編輯**]。  
 -  在 [**新增資源記錄**] 對話方塊的 [**自訂主機名稱**] 區域中，確定欄位已設定為嚴格下列的值。 
 

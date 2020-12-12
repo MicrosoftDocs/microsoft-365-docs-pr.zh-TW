@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ab78f17cd5689f9110227762c149d3691433179
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: e98e59d39744d67427a272f456a03fc123034aa7
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572558"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659474"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -122,7 +122,7 @@ ms.locfileid: "49572558"
   - **加密範本**
   - **加密方法**
   - **收件者位址**
-  - **Subject**
+  - **主旨**
 
 - **資料查看依據：前5位收件者網域**：
 
@@ -166,7 +166,7 @@ ms.locfileid: "49572558"
 - **寄件者位址**
 - **收件者位址**
 - **郵件識別碼**：郵件頭的 **Message-ID** 標頭欄位中可用，且應該是唯一的。 範例值 `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (記下角括弧) 。
-- **Subject**
+- **主旨**
 - **Filename**
 - **惡意軟體名稱**
 
@@ -229,7 +229,7 @@ ms.locfileid: "49572558"
 - **收件者位址**
 - **事件類型**
 - **Action**
-- **Subject**
+- **主旨**
 
 如果您按一下 [詳細資料] 表格中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
 
@@ -418,7 +418,7 @@ ms.locfileid: "49572558"
 - **查看資料：郵件覆寫**：
 
   - **Date**
-  - **Subject**
+  - **主旨**
   - **Sender**
   - **收件者**
   - **偵測到**
@@ -437,7 +437,7 @@ ms.locfileid: "49572558"
 - 所有其他圖表：
 
   - **Date**
-  - **Subject**
+  - **主旨**
   - **Sender**
   - **收件者**
   - **偵測到**
@@ -498,12 +498,12 @@ Microsoft Defender for Office 365 提供 **URL 威脅防護報告** 。 如需�
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>查看這些報表所需的許可權為何？
 
-為了查看和使用本主題中所述的報表，您必須是安全性 & 合規性中心之一的下列其中一個角色群組的成員：
+為了查看和使用本文所述的報表，您必須是安全性 & 合規性中心之一的下列其中一個角色群組的成員：
 
 - **組織管理**
 - **安全性系統管理員**
 - **安全性讀取者**
-- **全域讀取者**
+- **全域讀取器**
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 

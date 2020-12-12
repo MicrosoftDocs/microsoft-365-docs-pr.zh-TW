@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: '將您的初始電子郵件地址變更為類似 tom@fourthcoffee.com 的易記電子郵件地址。 若要這麼做，您必須購買功能變數名稱，並將其新增至 Microsoft 365。 '
-ms.openlocfilehash: 7b5ab62ea99af52c61ca4ba6a7e9ea37604ddf19
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d23c612eecae0a0b58d844fbbe25392ffa682fde
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645536"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656828"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>變更電子郵件地址以使用您的自訂網域
 
@@ -41,7 +41,7 @@ ms.locfileid: "48645536"
 
 ::: moniker-end
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 ::: moniker range="o365-worldwide"
 

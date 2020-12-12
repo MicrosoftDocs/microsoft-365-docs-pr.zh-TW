@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
 description: 系統管理員可以瞭解如何在獨立 Exchange Online Protection (EOP) 中查看及搜尋管理審核記錄。
-ms.openlocfilehash: 9fe2c742083cde1ca36f6a04cd357a473a10aeac
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: c65c09efa0f90fc9b63d635dae598b24d93ea714
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48196540"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659438"
 ---
 # <a name="view-the-admin-audit-log-in-standalone-eop"></a>在獨立版 EOP 中檢視系統管理稽核記錄
 
@@ -32,7 +32,7 @@ ms.locfileid: "48196540"
 >
 > - 系統管理員審核記錄預設為啟用，您無法停用。
 >
-> - 系統管理員審核記錄不會根據以 **Get**、 **Search**或 **Test**動詞開頭的指令程式，記錄動作。
+> - 系統管理員審核記錄不會根據以 **Get**、 **Search** 或 **Test** 動詞開頭的指令程式，記錄動作。
 >
 > - 稽核記錄項目會保留 90 天的時間。 當專案超過90天時，它會被刪除
 
@@ -42,9 +42,9 @@ ms.locfileid: "48196540"
 
 - 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須已獲指派權限，才能執行這些程序。 具體而言，您需要 View-Only 的審計記錄檔或的「審計記錄」角色指派給 ComplianceManagement、OrganizationManagement (全域管理員) ，以及 SecurityAdministrator 角色群組預設。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您必須先在 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體說來，您需要「 **審核記錄** 」或「 **View-Only 審核記錄** 」角色，預設會指派給「 **組織管理**」、「 **合規性管理**」及「 **安全性管理員** 」角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 有問題嗎？ 在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 論壇中尋求協助。
@@ -65,7 +65,7 @@ ms.locfileid: "48196540"
 
    - **已修改物件**： Cmdlet 所修改的物件。
 
-   - **Parameters (參數： Value) **：所使用的 Cmdlet 參數，以及使用參數指定的任何值。
+   - **Parameters (參數： Value)**：所使用的 Cmdlet 參數，以及使用參數指定的任何值。
 
 3. 如果您要列印特定的稽核記錄項目，請選擇詳細資料窗格中的 [ **列印**] 按鈕。
 
@@ -81,14 +81,14 @@ Search-AdminAuditLog [-Cmdlets <Cmdlet1,Cmdlet2,...CmdletN>] [-Parameters <Param
 
 - 您只能將 _Parameters_ 參數與 _Cmdlet_ 參數搭配使用。
 
-- _ObjectIds_參數會依 Cmdlet 所修改的物件來篩選結果。 有效的值取決於物件在審計記錄中的表示方式。 例如：
+- _ObjectIds_ 參數會依 Cmdlet 所修改的物件來篩選結果。 有效的值取決於物件在審計記錄中的表示方式。 例如：
 
-  - 名稱
+  - Name
   - 正常化辨別名稱 (例如，contoso.com/Users/Akia Al Zuhairi) 
 
   您可能需要在此 Cmdlet 上使用其他篩選參數，以縮小結果，並識別您感興趣的物件類型。
 
-- _UserIds_參數會依據執行 Cmdlet) 的變更 (來篩選結果。
+- _UserIds_ 參數會依據執行 Cmdlet) 的變更 (來篩選結果。
 
 - 針對 _StartDate_ 和 _EndDate_ 參數，如果您指定的日期/時間值不含時區，則此值會在 [標準時間] (UTC) 。 若要指定這個參數的日期/時間值，請使用下列其中一個選項︰
 
@@ -112,7 +112,7 @@ Search-AdminAuditLog -Cmdlets Update-RoleGroupMember -StartDate (Get-Date "08/04
 
 ### <a name="view-details-of-audit-log-entries"></a>檢視稽核記錄項目的詳細資料
 
-**Search-AdminAuditLog** Cmdlet 會傳回本主題稍後的「[審核記錄內容](#audit-log-contents)」區段中所述的欄位。 由指令程式傳回的欄位、兩個欄位 **CmdletParameters** 和 **ModifiedProperties**，包含預設不會傳回的其他資訊。
+**Search-AdminAuditLog** Cmdlet 會傳回本文稍後的 [[審計記錄檔內容](#audit-log-contents)] 區段中所述的欄位。 由指令程式傳回的欄位、兩個欄位 **CmdletParameters** 和 **ModifiedProperties**，包含預設不會傳回的其他資訊。
 
 若要檢視 **CmdletParameters** 和 **ModifiedProperties** 欄位的內容，請使用下列步驟。
 

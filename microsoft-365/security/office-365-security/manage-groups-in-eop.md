@@ -14,12 +14,12 @@ ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
 ms.custom:
 - seo-marvel-apr2020
 description: Admins in 獨立 Exchange Online Protection (EOP) 組織可以瞭解如何建立、修改及移除 Exchange 系統管理中心內的通訊群組和擁有郵件功能的安全性群組 (EAC) 和獨立 Exchange Online Protection (EOP) PowerShell。
-ms.openlocfilehash: a395c0738093a00c0225aea22a6e556863eebee5
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5ff7c61d51ded039b06d1faa98ba6390939b3413
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201874"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658842"
 ---
 # <a name="manage-groups-in-eop"></a>管理 EOP 中的群組
 
@@ -30,7 +30,7 @@ ms.locfileid: "48201874"
 
 - **通訊群組**：郵件使用者或其他通訊群組的集合。 例如，小組或其他需要在感興趣的常見區域接收或傳送電子郵件的群組。 通訊群組專門用來散佈電子郵件，而不是安全主體 (他們不能) 指派許可權。
 
-- 擁有**郵件功能的安全性群組**：郵件使用者的集合，以及需要系統管理員角色存取許可權的其他安全性群組。 例如，您可能想要授與特定群組的使用者系統管理員許可權，讓他們可以設定反垃圾郵件和反惡意程式碼設定。
+- 擁有 **郵件功能的安全性群組**：郵件使用者的集合，以及需要系統管理員角色存取許可權的其他安全性群組。 例如，您可能想要授與特定群組的使用者系統管理員許可權，讓他們可以設定反垃圾郵件和反惡意程式碼設定。
 
     > [!NOTE]
     >
@@ -46,11 +46,11 @@ ms.locfileid: "48201874"
 
 - 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 當您在獨立 EOP PowerShell 中管理群組時，可能會遇到節流。 本主題中的 PowerShell 程式使用批次處理方法，可導致幾分鐘的傳播延遲，然後才會顯示命令的結果。
+- 當您在獨立 EOP PowerShell 中管理群組時，可能會遇到節流。 本文中的 PowerShell 程式使用的批次處理方法，可導致幾分鐘的傳播延遲，使命令的結果看得見。
 
-- 您必須已獲指派權限，才能執行這些程序。 具體說來，您需要通訊群組角色，預設會指派給 OrganizationManagement (global admins) 和 RecipientManagement 角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
+- 您必須先在 Exchange Online Protection 中指派許可權，才能執行本文中的程式。 具體說來，您需要 **通訊群組** 角色，預設會指派給 **組織管理** 和 **收件者管理** 角色群組。 如需詳細資訊，請參閱 [獨立 EOP 中的許可權](feature-permissions-in-eop.md) 和 [使用 EAC 修改角色群組中的成員清單](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)。
 
-- 如需適用於本主題中程序的快速鍵相關資訊，請參閱 [Exchange Online 中 Exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
+- 如需適用于本文中程式的鍵盤快速鍵的詳細資訊，請參閱 exchange [Online 中 exchange 系統管理中心的鍵盤快速鍵](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)。
 
 > [!TIP]
 > 有問題嗎？ 在 [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) 論壇中尋求協助。
@@ -61,7 +61,7 @@ ms.locfileid: "48201874"
 
 1. 在 EAC 中， **移至 [** 收件者 \> **群組**]。
 
-2. 按一下**New** ![ [新增新圖示] ](../../media/ITPro-EAC-AddIcon.png) ，然後選取下列其中一個選項：
+2. 按一下 ![ [新增新圖示] ](../../media/ITPro-EAC-AddIcon.png) ，然後選取下列其中一個選項：
 
    - **通訊群組**
 
@@ -77,15 +77,15 @@ ms.locfileid: "48201874"
 
    - **描述**：此描述會顯示在通訊錄和 EAC 中的 [詳細資料] 窗格中。
 
-   - <sup>\*</sup>**擁有**者：群組擁有者可以管理群組成員資格。 依預設，建立群組的人員為擁有者。 所有群組都必須至少一個擁有者。
+   - <sup>\*</sup>**擁有** 者：群組擁有者可以管理群組成員資格。 依預設，建立群組的人員為擁有者。 所有群組都必須至少一個擁有者。
 
-     若要新增擁有者，請按一下 [ **新增** ![ 新增] 圖示 ](../../media/ITPro-EAC-AddIcon.png) 。 在出現的對話方塊中，尋找並選取收件者或群組，然後按一下 [ **載入 >**]。 視需要重複此步驟多次。 完成後，按一下 [確定]****。
+     若要新增擁有者，請按一下 [ **新增** ![ 新增] 圖示 ](../../media/ITPro-EAC-AddIcon.png) 。 在出現的對話方塊中，尋找並選取收件者或群組，然後按一下 [ **載入 >**]。 視需要重複此步驟多次。 完成後，按一下 [確定]。
 
      若要移除擁有者，請選取擁有者，然後按一下 [ **移除** ![ 移除圖示] ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
    - **成員**：新增和移除群組成員。
 
-     若要新增成員，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 在出現的對話方塊中，尋找並選取收件者或群組，然後按一下 [ **載入 >**]。 視需要重複此步驟多次。 完成後，按一下 [確定]****。
+     若要新增成員，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 在出現的對話方塊中，尋找並選取收件者或群組，然後按一下 [ **載入 >**]。 視需要重複此步驟多次。 完成後，按一下 [確定]。
 
      若要移除成員，請選取成員，然後按一下 [ **移除** ![ 移除圖示] ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
@@ -99,13 +99,13 @@ ms.locfileid: "48201874"
 
 3. 在開啟的 [通訊群組內容] 頁面上，按一下下列其中一個索引標籤，以查看或變更屬性。
 
-   完成後，按一下 [儲存]****。
+   完成後，按一下 [儲存]。
 
 #### <a name="general"></a>一般
 
 使用此索引標籤可查看或變更群組的基本資訊。
 
-- **顯示名稱**：此名稱會出現在通訊錄、電子郵件傳送至此群組的 [收件者] 行，以及 [ **群組] 清單**中。 顯示名稱是必要的，且應該是方便使用的，讓人員能夠辨識其內容。 在您的網域中也必須是唯一的。
+- **顯示名稱**：此名稱會出現在通訊錄、電子郵件傳送至此群組的 [收件者] 行，以及 [ **群組] 清單** 中。 顯示名稱是必要的，且應該是方便使用的，讓人員能夠辨識其內容。 在您的網域中也必須是唯一的。
 
   如果您已實現群組命名原則，則顯示名稱必須符合原則所定義的命名格式。
 
@@ -119,7 +119,7 @@ ms.locfileid: "48201874"
 
 使用此索引標籤可指派群組擁有者。 群組擁有者可以管理群組成員資格。 依預設，建立群組的人員為擁有者。 所有群組都必須至少一個擁有者。
 
-若要新增擁有者，請按一下 [ **新增** ![ 新增] 圖示 ](../../media/ITPro-EAC-AddIcon.png) 。 在出現的對話方塊中，尋找並選取收件者，然後按一下 [ **載入 >**]。 視需要重複此步驟多次。 完成後，按一下 [確定]****。
+若要新增擁有者，請按一下 [ **新增** ![ 新增] 圖示 ](../../media/ITPro-EAC-AddIcon.png) 。 在出現的對話方塊中，尋找並選取收件者，然後按一下 [ **載入 >**]。 視需要重複此步驟多次。 完成後，按一下 [確定]。
 
 若要移除擁有者，請選取擁有者，然後按一下 [ **移除** ![ 移除圖示] ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
@@ -127,7 +127,7 @@ ms.locfileid: "48201874"
 
 使用此索引標籤可以新增或移除群組成員。 群組擁有者不需要是群組的成員。
 
-若要新增成員，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 在出現的對話方塊中，尋找並選取收件者或群組，然後按一下 [ **載入 >**]。 視需要重複此步驟多次。 完成後，按一下 [確定]****。
+若要新增成員，請按一下 [ **新增** ![ 加入圖示] ](../../media/ITPro-EAC-AddIcon.png) 。 在出現的對話方塊中，尋找並選取收件者或群組，然後按一下 [ **載入 >**]。 視需要重複此步驟多次。 完成後，按一下 [確定]。
 
 若要移除成員，請選取成員，然後按一下 [ **移除** ![ 移除圖示] ](../../media/ITPro-EAC-RemoveIcon.gif) 。
 
@@ -165,7 +165,7 @@ New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","User
 
 **附註**：
 
-- _Name_參數是必要的，最大長度為64個字元，且必須是唯一的。 如果您未使用 _DisplayName_ 參數，則 _Name_ 參數的值會用於顯示名稱。
+- _Name_ 參數是必要的，最大長度為64個字元，且必須是唯一的。 如果您未使用 _DisplayName_ 參數，則 _Name_ 參數的值會用於顯示名稱。
 
 - 如果您未使用 _alias_ 參數， _Name_ 參數會用於別名值。 移除空格，且不支援的字元會轉換成問號 (？ ) 。
 

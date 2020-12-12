@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 034bd7bc-b098-4c4d-8a93-4d74ff24532a
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 和其他服務 Yahoo！的 DNS 記錄 適用于 Microsoft 的小型企業。
-ms.openlocfilehash: 3c6bc44baef4924133ea2308189662dd53399689
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 47b3b1f3a6e889d067d0166f872725aa3812a7b4
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645596"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49656900"
 ---
 # <a name="create-dns-records-at-yahoo-small-business-for-microsoft"></a>在 Yahoo! 適用于 Microsoft 的小型企業
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 如果 Yahoo! Small Business 一直是您的 DNS 主機服務提供者，請注意，您的提供者現在應該是 Aabaco Small Business。
   
@@ -60,7 +60,7 @@ ms.locfileid: "48645596"
   
     ![The You've got mail page](../../media/2e02fc30-6cca-40d6-bb64-131a41b4a369.png)
   
-5. 在 [Aabaco **確認您的電子郵件地址以繼續安裝** 電子郵件] 中，選取 [ **確認電子**郵件]。
+5. 在 [Aabaco **確認您的電子郵件地址以繼續安裝** 電子郵件] 中，選取 [ **確認電子** 郵件]。
     
     ![選取 [確認電子郵件]](../../media/eb5f5526-6f90-4a10-83a7-5249a1ebd562.png)
   
@@ -78,7 +78,7 @@ ms.locfileid: "48645596"
 8. 登入您的 Yahoo! Small Business 電子郵件帳戶，然後從 Aabaco Small Business 開啟新的電子郵件。
     
     > [!NOTE]
-    > 若有必要，請選擇**即將完成**的**電子郵件連結**重新傳送郵件！ 網頁。 
+    > 若有必要，請選擇 **即將完成** 的 **電子郵件連結** 重新傳送郵件！ 網頁。 
   
     ![The You're almost done page](../../media/1a4142a3-e140-48a8-9c80-aa126ff08179.png)
   

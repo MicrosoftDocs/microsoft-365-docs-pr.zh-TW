@@ -22,16 +22,16 @@ description: 瞭解網域的定義，以及如何購買網域，或使用貴公�
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 0c59fb6bc5f9a7796c84a0370c771bf90102dec0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9afc38aeda32870a248212f7b67f2fb4af8fd960
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645116"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658072"
 ---
 # <a name="what-is-a-domain"></a>何謂網域？
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 網域是在電子郵件地址的 **@** 符號後，以及網址的 **www.** 後出現的唯一名稱。 它通常採用組織名稱和標準 Internet 尾碼（如 yourbusiness）的形式 *。 <span>com* 或 *stateuniversity。 <span>edu*。 
   

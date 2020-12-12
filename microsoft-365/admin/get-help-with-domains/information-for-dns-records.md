@@ -24,16 +24,16 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: '瞭解如何尋找為 Microsoft 365 建立 DNS 記錄所需的值/資訊。 '
-ms.openlocfilehash: eca9dbe4e40193f76538b639624b827177ff7772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: db9aff1fdcd9fa52c90cc96b1a32cd3908c30edb
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645308"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658504"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>收集建立 DNS 記錄所需的資訊
 
- 若您找不到所需內容，請**[查看網域常見問題集](../setup/domains-faq.md)**。 
+ 若您找不到所需內容，請 **[查看網域常見問題集](../setup/domains-faq.yml)**。 
   
 ### <a name="step-1-find-the-txt-record-value-and-verify"></a>步驟1：尋找 TXT 記錄值，並確認
 

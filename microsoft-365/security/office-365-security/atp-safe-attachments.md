@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-office365
 - seo-marvel-apr2020
 description: 系統管理員可以深入瞭解 Microsoft Defender for Office 365 中的安全附件功能。
-ms.openlocfilehash: d38f95991a1d310e8a894a32e06b5891ebb498a9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 07e44885a3813ce625c6a853f4070d644a392ded
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616677"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659190"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的安全附件
 
@@ -69,7 +69,7 @@ ms.locfileid: "49616677"
   |**監視**|傳送包含附件的郵件，然後追蹤偵測到的惡意程式碼會發生什麼事。 <p> 傳遞安全郵件可能會因為安全附件掃描而延遲。|查看您的組織中偵測到惡意程式碼的位置。|
   |**封鎖**|防止傳遞偵測到惡意軟體附件的郵件。 <p> 只會在系統管理員 (非使用者) 可以查看、發行或刪除郵件的地方 [隔離](manage-quarantined-messages-and-files.md) 郵件。 <p> 自動封鎖未來的郵件和附件實例。 <p> 傳遞安全郵件可能會因為安全附件掃描而延遲。|保護您的組織，避免使用相同惡意程式碼附件的重複攻擊。 <p> 此為預設值，以及標準及嚴格的預設 [安全性原則](preset-security-policies.md)中的建議值。|
   |**Replace**|移除偵測到的惡意程式碼附件。 <p> 通知收件者已移除附件。 <p>  只會在系統管理員 (非使用者) 可以查看、發行或刪除郵件的地方 [隔離](manage-quarantined-messages-and-files.md) 郵件。 <p> 傳遞安全郵件可能會因為安全附件掃描而延遲。|對收件者提高知名度，因為偵測到惡意程式碼已移除附件。|
-  |**動態傳遞**|立即傳遞郵件，但是會以預留位置取代附件，直到安全附件掃描完成為止。 <p> 如需詳細資訊，請參閱本主題稍後的「 [安全附件原則中的動態傳遞](#dynamic-delivery-in-safe-attachments-policies) 」一節。|避免郵件延遲，防止寄件者惡意的檔案。 <p> 讓收件者在進行掃描時以安全模式預覽附件。|
+  |**動態傳遞**|立即傳遞郵件，但是會以預留位置取代附件，直到安全附件掃描完成為止。 <p> 如需詳細資訊，請參閱本文稍後的 [安全附件原則](#dynamic-delivery-in-safe-attachments-policies) 一節中的動態傳遞。|避免郵件延遲，防止寄件者惡意的檔案。 <p> 讓收件者在進行掃描時以安全模式預覽附件。|
   |
 
 - 重新 **導向附件的偵測： Enable 重新導向** 並 **將附件傳送至下列電子郵件地址**：針對 **封鎖**、**監視器** 或 **取代** 動作，將包含惡意程式碼附件的郵件傳送至指定的內部或外部電子郵件地址，以進行分析和調查。
