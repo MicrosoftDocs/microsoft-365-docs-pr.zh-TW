@@ -2,8 +2,8 @@
 title: 在高級電子檔探索中匯出結果
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: '瞭解如何定義從 Advanced eDiscovery 匯出結果的選項，包括指定匯出批次參數的程式。 '
-ms.openlocfilehash: 252a4a52cc505914b379ea2c0fbfd832ca18deeb
-ms.sourcegitcommit: 8ad481ed61cb6dabf8afb0fb04296666fa166450
+ms.openlocfilehash: 2929b183c7c0f3f132cc40738c18e2b4859a49a6
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "49422882"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662908"
 ---
 # <a name="export-results-in-advanced-ediscovery-classic"></a>在「高級 eDiscovery (傳統) 中匯出結果
 

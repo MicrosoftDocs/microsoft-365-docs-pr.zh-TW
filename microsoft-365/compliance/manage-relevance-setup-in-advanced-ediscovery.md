@@ -2,8 +2,8 @@
 title: 在進階電子文件探索中管理相關性設定
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 description: 閱讀在進階電子文件探索設定相關性訓練的建議，依其相關性為檔案評分，並產生分析結果。
-ms.openlocfilehash: 40e73dae3317cba5226180f8c57c71c792875ee0
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: a6bec149e11fa80fb57cb811120218fa7f2cc45b
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528139"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662868"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>在 Office 365 進階電子文件探索 (傳統版) 中管理相關性設定
 
@@ -61,7 +61,7 @@ ms.locfileid: "46528139"
 
 ## <a name="setting-up-case-issues"></a>設定案例問題
 
-本節所述的參數可用於進階電子文件探索的 [相關性]**** \> [相關性設定]****。
+本節所述的參數可用於進階電子文件探索的 [相關性] \> [相關性設定]。
   
 - 問題必須指派給將訓練檔案的使用者。
 
@@ -69,7 +69,7 @@ ms.locfileid: "46528139"
 
 - 仔細定義並組織問題，因為這可能會影響相關性訓練結果。
 
-在設定參數之後，檢閱者/專家可以開始訓練 [相關性]**** 索引標籤中的檔案。 
+在設定參數之後，檢閱者/專家可以開始訓練 [相關性] 索引標籤中的檔案。 
   
 ## <a name="see-also"></a>請參閱
 

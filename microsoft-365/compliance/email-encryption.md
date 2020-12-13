@@ -18,17 +18,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: 比較 Microsoft 365 加密選項，包括 Office 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並了解傳輸層安全性 (TLS)。
-ms.openlocfilehash: 4b18110664c602b5b09e60cbd791559069297be4
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: 比較 Microsoft 365 加密選項，包括 Office 365 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並了解傳輸層安全性 (TLS)。
+ms.openlocfilehash: 25568d4e39c2fe7ca2dea214276be5d7f6986518
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580706"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663018"
 ---
 # <a name="email-encryption"></a>電子郵件加密
 
-本文件會比較 Microsoft 365 中的加密選項，包括 Office 365 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並介紹傳輸層安全性 (TLS)。
+本文件會比較 Microsoft 365 中的加密選項，包括 Office 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並介紹傳輸層安全性 (TLS)。
   
 Microsoft 365 提供多種加密選項，有助於滿足您對電子郵件安全性的商務需求。 本文提供在 Office 365 中加密電子郵件的三個方式。 如果您想要深入了解 Office 365 中的所有安全性功能，請瀏覽 [Office 365 信任中心](https://go.microsoft.com/fwlink/p/?LinkID=282470)。 本文介紹三種加密類型，可供 Microsoft 365 系統管理員用於協助保護 Office 365 中的電子郵件：
   
@@ -38,7 +38,7 @@ Microsoft 365 提供多種加密選項，有助於滿足您對電子郵件安全
 
 - 資訊版權管理 (IRM)。
 
-## <a name="email-encryption-and-how-microsoft-365-uses-it"></a>電子郵件加密和 Microsoft 365 如何加以運用
+## <a name="what-is-email-encryption-and-how-does-microsoft-365-use-it"></a>什麼是電子郵件加密，以及 Microsoft 365 如何使用它？
 
 加密是將資訊編碼的程序，以便只有經過授權的收件者能解碼並使用資訊。 Microsoft 365 使用兩個方式來加密：在服務中，以及以自訂控制項的形式。 在服務中，Microsoft 365 會預設使用加密；您不需要進行任何設定。 例如，Microsoft 365 使用傳輸層安全性 (TLS) 來加密兩個伺服器間的連線或工作階段。 
   
@@ -68,16 +68,11 @@ Microsoft 365 提供多種加密選項，有助於滿足您對電子郵件安全
 |建議和範例案例|當您想要將機密商業資訊傳送給組織外部的人，無論他們是消費者或其他公司時，我們建議使用 OME。 例如：  <br/>  銀行員工將信用卡帳單傳送給客戶  <br/>  醫生的診所將醫療記錄傳送給病患  <br/>  律師將機密的法律資訊傳送給其他律師|當您想要套用使用限制以及加密時，我們建議使用 IRM。 例如：  <br/>  經理將新產品的機密詳細資訊傳送給組員時套用「不要轉寄」選項。  <br/>  行政人員需要與其他公司共用投標提案，其中一個附件是由使用 Office 365 的夥伴提供，並要求電子郵件和附件皆受到保護。|當您的組織或收件者的組織需要真正的端對端加密時，我們建議使用 S/MIME。  <br/>  S/MIME 最常用於下列情況：  <br/>  政府機構與其他政府機關通訊  <br/>  企業與政府機構通訊|
 ||
 
-如果同時使用 [Azure 資訊保護](https://docs.microsoft.com/microsoft-365/compliance/protect-information)和電子郵件加密來保護資料，請考慮下列事項：
-- 您可以搭配 OME 和 IRM 加密使用敏感度標籤。 如需詳細資訊，請參閱[使用敏感度標籤來套用加密以限制存取內容](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#what-happens-to-existing-encryption-when-a-labels-applied)。
-- 您可以使用 S/MIME 將敏感度標籤套用至以數位方式簽署的電子郵件。
-- 您無法將敏感度標籤套用至使用 S/MIME 加密的電子郵件，因為原則不會處理受端對端加密保護的郵件。
-
-## <a name="encryption-options-available-for-my-microsoft-365-subscription"></a>我的 Microsoft 365 訂閱可用的加密選項
+## <a name="what-encryption-options-are-available-for-my-microsoft-365-subscription"></a>我的 Microsoft 365 訂閱有哪些可用的加密選項？
 
 如需您的 Microsoft 365 訂閱的電子郵件加密選項的詳細資訊，請參閱 [Exchange Online 服務說明](https://technet.microsoft.com/library/exchange-online-service-description.aspx)。 您可以在這裡找到下列加密功能的相關資訊：
-
-- Azure RMS，包括 IRM 功能和新的 OME 功能
+  
+- Azure RMS，包括 IRM 功能和 OME
 
 - S/MIME
 

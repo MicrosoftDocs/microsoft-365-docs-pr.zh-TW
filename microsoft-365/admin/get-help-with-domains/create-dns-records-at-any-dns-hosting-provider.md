@@ -20,22 +20,22 @@ description: 了解如何在 Microsoft 365 的任一 DNS 主機服務提供者�
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: bc22dbd3a050516f518c9ddc9ccf5a3af9c76f12
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 01fd78033afb6add41975826ed8daddf052826b2
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519290"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655597"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>新增 DNS 記錄以連接您的網域
 
-如果您是透過協力廠商主機服務提供者購買網域，您可以更新註冊機構帳戶中的 DNS 記錄，將它連線到 Microsoft 365。
+如果您是從協力廠商主機服務提供者購買網域，您可以更新註冊機構帳戶中的 DNS 記錄，將它連線到 Microsoft 365。
 
 在這些步驟結束時，您的網域將會在您購買網域的主機中持續註冊，但 Microsoft 365 可以將它用於您的電子郵件地址 (例如 user@yourdomain.com) 和其他服務。
 
-如果您沒有新增網域，組織中的人員將會使用 onmicrosoft.com 網域做為其電子郵件地址，直到您新增網域為止。 新增使用者之前，請務必先新增您的網域，這樣您就不需要再設定一次。
+如果您沒有新增網域，貴組織中的人員將會使用 onmicrosoft.com 網域的電子郵件地址，直到您新增網域為止。 新增使用者之前，請務必先新增您的網域，這樣您就不需要再設定一次。
 
-若您在下方找不到所需內容，請[查看網域常見問題集](../setup/domains-faq.md)。
+若您在下方找不到所需內容，請[查看網域常見問題集](../setup/domains-faq.yml)。
 
 ## <a name="step-1-add-a-txt-or-mx-record-to-verify-you-own-the-domain"></a>步驟 1: 新增 TXT 或 MX 記錄以驗證您擁有該網域
 
@@ -64,7 +64,7 @@ ms.locfileid: "49519290"
 
 1. 登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)，然後選取 **[顯示所有]** > **[設定]** > **[網域]**。
 2. 在新的瀏覽器索引標籤或視窗中，登入您的 DNS 主機服務提供者，然後尋找您管理 DNS 設定的位置（例如 [區域檔案設定]、[管理網域]、[網域管理員]、[DNS 管理員]）。
-3. 移至您提供者的 [DNS 管理員] 頁面，並將系統管理中心所指出的 MX 記錄新增到您的網域。
+3. 移至您提供者的 [DNS 管理員] 頁面，並將系統管理中心所指出的 MT 記錄新增到您的網域。
 
 此 MX 記錄的「優先順序」必須是網域所有現有 MX 記錄的最高者。 否則，可能會干擾傳送和接收電子郵件。 當網域驗證完成後，您應該立即刪除這項記錄。
 

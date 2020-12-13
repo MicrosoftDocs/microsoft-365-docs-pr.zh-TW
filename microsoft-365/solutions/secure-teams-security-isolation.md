@@ -3,7 +3,7 @@ title: 為小組設定安全性隔離
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用唯一的敏感度標籤來建立小組以獲得安全性。
-ms.openlocfilehash: 46bc63bab52bf75dc7c215510d49b4d985ff07c3
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: c7230f23a21804530863f125003e4db0eaeeeb60
+ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487479"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "49616293"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>為小組設定安全性隔離
 
@@ -50,7 +50,7 @@ ms.locfileid: "48487479"
 
 [![具有安全性隔離的 Microsoft Teams 海報](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
-您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) 下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
+您也可以用 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) 或 [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) 格式下載此海報，以及用 Letter、Legal 或 Tabloid (11 x 17) 大小的紙張列印此海報。
 
 ## <a name="initial-protections"></a>初始保護
 
@@ -160,7 +160,7 @@ ms.locfileid: "48487479"
 
 您必須在 SharePoint 中執行三個步驟：
 
-- 在 SharePoint 系統管理中心內更新網站的來賓共用設定，使其符合您在建立標籤時所選擇的設定，並將預設的共用連結更新為*擁有現有存取權的人員*。
+- 在 SharePoint 系統管理中心內更新網站的來賓共用設定，使其符合您在建立標籤時所選擇的設定，並將預設的共用連結更新為 *擁有現有存取權的人員*。
 - 更新網站本身的網站共用設定以防止成員共用檔案、資料夾或網站，並關閉存取要求。
 - 如果您已將人員或群組新增至具有檢視者權限的標籤，則可以將其新增至具有讀取權限的 SharePoint 網站。
 
@@ -191,7 +191,7 @@ ms.locfileid: "48487479"
 - `-SharingCapability Disabled`，以關閉來賓共用 (預設為開啟)
 - `-DefaultSharingLinkType Internal`，以將預設共用連結變更為 *[特定人員]*
 
-如果您不打算讓小組使用私人頻道，請考慮在[小組設定](https://support.microsoft.com/office/ce053b04-1b8e-4796-baa8-90dc427b3acc)中的 **[成員權限]** 底下，關閉可供小組成員建立私人頻道的功能。
+如果您不打算讓小組使用私人頻道，請考慮在 [小組設定](https://support.microsoft.com/office/ce053b04-1b8e-4796-baa8-90dc427b3acc)中的 **[成員權限]** 底下，關閉可供小組成員建立私人頻道的功能。
 
 ### <a name="site-sharing-settings"></a>網站共用設定
 
@@ -221,7 +221,7 @@ ms.locfileid: "48487479"
 
 Microsoft 365 提供了其他方法來保護您的內容。 請想想下列選項是否有助於改善貴組織的安全性。
 
-- 讓您的來賓使用者同意[使用規定](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)。
+- 讓您的來賓同意[使用規定](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)。
 - 為來賓設定[工作階段逾時原則](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime)。
 - 建立[敏感資訊類型](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)，並使用[資料外洩防護](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) 來設定關於存取敏感資訊的原則。
 - 使用 [Azure Active Directory 存取權](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)檢閱來定期檢閱小組的存取權和成員資格。

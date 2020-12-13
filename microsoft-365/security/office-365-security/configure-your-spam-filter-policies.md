@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
-ms.openlocfilehash: 81c5e74ec45cc633b3a4ba46c7865d0a643af2cd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: d83c41b52db5c0533a9a5d52ab20ace9b612e1e6
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616689"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49658646"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -45,7 +45,7 @@ ms.locfileid: "49616689"
 - 當您修改反垃圾郵件原則時，與名稱、優先順序、已啟用或已停用、收件者篩選相關的設定皆會修改垃圾郵件篩選規則。 所有其他設定都會修改相關聯的垃圾郵件篩選原則。
 - 當您移除反垃圾郵件原則時，也會一併移除垃圾郵件篩選規則和相關聯的垃圾郵件篩選原則。
 
-在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需其他更多資訊，請參照此主題之後的 [使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定反垃圾郵件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) 章節。
+在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需其他更多資訊，請參照本文章稍後的 [「使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定反垃圾郵件原則」](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) 章節。
 
 每個組織都有一個名為「預設」的內建反垃圾郵件原則，且具有下列屬性：
 
@@ -86,7 +86,7 @@ ms.locfileid: "49616689"
 
    - **名稱**：輸入原則的唯一描述性名稱。 請勿使用下列字元：`\ % & * + / = ? { } | < > ( ) ; : , [ ] "`。
 
-      如果您先前在 Exchange 系統管理中心 (EAC) 中建立的反垃圾郵件原則包含這些字元，您應用 PowerShell 重新命名該反垃圾郵件原則。 如需相關指示，請參閱本主題稍後的[使用 PowerShell 修改垃圾郵件篩選規則](#use-powershell-to-modify-spam-filter-rules)一節。
+      如果您先前在 Exchange 系統管理中心 (EAC) 中建立的反垃圾郵件原則包含這些字元，您應用 PowerShell 重新命名該反垃圾郵件原則。 如需相關指示，請參照本文章稍後的 [「使用 PowerShell 修改垃圾郵件篩選規則」](#use-powershell-to-modify-spam-filter-rules) 章節。
 
    - **說明**：輸入原則的選擇性說明。
 
@@ -382,7 +382,7 @@ ms.locfileid: "49616689"
 
 下列反垃圾郵件原則設定僅適用於 PowerShell：
 
-- MarkAsSpamBulkMail 參數預設是 `On`。 此設定的效果已在本主題前面的 [使用安全性與合規性中心來建立本反垃圾郵件原則](#use-the-security--compliance-center-to-create-anti-spam-policies) 一節中說明。
+- MarkAsSpamBulkMail 參數預設是 `On`。 此設定的效果已在本文章前面的 [「使用安全性與合規性中心來建立本反垃圾郵件原則」](#use-the-security--compliance-center-to-create-anti-spam-policies) 章節中說明。
 
 - 使用者垃圾郵件隔離通知的下列設定：
 
@@ -513,7 +513,7 @@ Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 
 ### <a name="use-powershell-to-modify-spam-filter-policies"></a>使用 PowerShell 修改垃圾郵件篩選原則
 
-除了下列項目外，當您如同本主題前面的[步驟 1：使用 PowerShell 建立垃圾郵件篩選原則](#step-1-use-powershell-to-create-a-spam-filter-policy) 一節所述在 PowerShell 中修改垃圾郵件篩選原則時，會出現相同的設定。
+除了下列項目外，當您如同本文章前面的[步驟 1：使用 PowerShell 建立垃圾郵件篩選原則](#step-1-use-powershell-to-create-a-spam-filter-policy) 章節所述在 PowerShell 中修改垃圾郵件篩選原則時，會出現相同的設定。
 
 - MakeDefault 可將指定的原則轉換成預設原則 (套用至每個人，一律 **最低** 優先順序，且無法刪除)，但只有當您在 PowerShell 中修改垃圾郵件篩選原則時才能使用。
 
@@ -531,7 +531,7 @@ Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 
 當您用 PowerShell 修改垃圾郵件篩選規則時，唯一無法使用的設定為 Enabled 參數 (可讓您建立停用的規則)。 若要啟用或停用現有的垃圾郵件篩選規則，請看下一節。
 
-另一方面，當您用 PowerShell 修改垃圾郵件篩選規則時，將無法使用其他設定。 當您如同本主題前面的 [步驟 2：使用 PowerShell 建立垃圾郵件篩選規則](#step-2-use-powershell-to-create-a-spam-filter-rule)一節所述建立規則時，會出現相同的設定。
+另一方面，當您用 PowerShell 修改垃圾郵件篩選規則時，將無法使用其他設定。 當您如同本文章前面的 [步驟 2：使用 PowerShell 建立垃圾郵件篩選規則](#step-2-use-powershell-to-create-a-spam-filter-rule) 章節所述建立規則時，會出現相同的設定。
 
 使用下列語法修改垃圾郵件篩選規則：
 

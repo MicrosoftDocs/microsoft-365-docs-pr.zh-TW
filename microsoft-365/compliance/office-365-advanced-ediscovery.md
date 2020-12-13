@@ -2,8 +2,8 @@
 title: 進階電子文件探索
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -15,19 +15,19 @@ search.appverid:
 - MET150
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: 深入瞭解高級 eDiscovery 如何協助您分析資料、簡化檔檢查，並做出有效 eDiscovery 的決策。
-ms.openlocfilehash: 231064266a2498ec2eb8845da325fba6e5cfeb76
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f8ada5d377e72516ea42d8c5dc5680573daec717
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649710"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662818"
 ---
 # <a name="advanced-ediscovery-classic"></a>進階電子文件探索 (傳統版)
 
 > [!IMPORTANT]
 > **Advanced eDiscovery (傳統) 會在2020年12月31日永久撤銷。**<br/>
 > 當我們繼續投資更新的高級 eDiscovery 時，我們會宣佈從 Advanced eDiscovery (傳統) 中永久淘汰和移除案例及案例資料。
-> 如果您仍在使用 Advanced eDiscovery (傳統) （也稱為「 *高級 ediscovery 1.0*版」），請將您的使用轉變為 [高級 ediscovery 2.0 版](overview-ediscovery-20.md) ， (也稱為 *Microsoft 365) 中的高級 eDiscovery 解決方案* 。  在準備移除所有案例及案例資料時，您可以 [從案例中匯出資料](https://docs.microsoft.com/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-worldwide)，以封存案例資料。
+> 如果您仍在使用 Advanced eDiscovery (傳統) （也稱為「 *高級 ediscovery 1.0* 版」），請將您的使用轉變為 [高級 ediscovery 2.0 版](overview-ediscovery-20.md) ， (也稱為 *Microsoft 365) 中的高級 eDiscovery 解決方案* 。  在準備移除所有案例及案例資料時，您可以 [從案例中匯出資料](https://docs.microsoft.com/microsoft-365/compliance/export-results-in-advanced-ediscovery?view=o365-worldwide)，以封存案例資料。
 > 「高級 eDiscovery ' 2.0」包含在高級 eDiscovery 1.0 中找到的類似功能，但也提供許多新功能，例如保管人管理、通訊管理及審查集。 若要深入瞭解 Advanced eDiscovery 1.0 的先前 retirment 階段，請參閱 [舊版 eDiscovery tools 的退休](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。
 
 透過高級電子檔探索，您可以更好地瞭解資料，並減少 eDiscovery 成本。 「高級 eDiscovery」可協助您分析非結構化資料、執行更有效率的檔檢查，並作出決策以減少 eDiscovery 的資料。 您可以使用儲存在 Exchange Online 中的資料、SharePoint 線上 OneDrive、商務用 Skype、商務用 Skype、Microsoft 365 群組和 Microsoft 團隊。 您可以在 [安全性與合規性中心] 中執行 eDiscovery 搜尋，以搜尋群組、個別信箱和網站中的內容，然後使用「高級 eDiscovery」分析搜尋結果。 當您在高級 eDiscovery 中準備用於分析的搜尋結果時，光學字元辨識功能可讓您從影像提取文字。 這項功能可讓高級 eDiscovery 的強大文字分析功能能夠套用到圖像檔案。
@@ -39,7 +39,7 @@ Advanced eDiscovery 可透過接近重複偵測和電子郵件線索分析等功
 > [!NOTE]
 > 「高級 eDiscovery」需要 Office 365 E3，具有您組織的「高級規範附加元件」或「E5」訂閱。 如果您沒有這項計畫，且想要嘗試使用 Advanced eDiscovery，您可以 [註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 情況 下。 簡化後的資料集可以從 Office 365 匯出，以供進一步複查。 
   
-## <a name="get-started"></a>開始使用
+## <a name="get-started"></a>入門
 
 開始使用高級 eDiscovery 的最快捷方式是建立案例並準備安全性 & 規範中心的搜尋結果，並在 [Advanced eDiscovery] 中載入這些結果，然後執行 [快速分析] 以分析案例資料，然後將結果匯出以進行外部審閱。
   

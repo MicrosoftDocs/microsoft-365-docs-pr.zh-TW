@@ -19,12 +19,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解如何使用可用工具辨識及回應 Microsoft 365 中遭入侵的電子郵件帳戶。
-ms.openlocfilehash: 2830fd10b633e094c92fd98fe61ce678a4da842b
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 5d5e5360e9851aee8eab27fc7c39e266e0332411
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200116"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49659882"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>回應遭入侵的電子郵件帳戶
 
@@ -44,9 +44,9 @@ ms.locfileid: "48200116"
 
 - 可疑的活動，例如遺失或刪除的電子郵件。
 
-- 其他使用者可能會收到來自遭入侵帳戶的電子郵件，該帳戶寄件者的 [寄件備份]**** 資料夾中不存在對應的電子郵件。
+- 其他使用者可能會收到來自遭入侵帳戶的電子郵件，該帳戶寄件者的 [寄件備份] 資料夾中不存在對應的電子郵件。
 
-- 出現不是由預期使用者或系統管理員所建立的收件匣規則。 這些規則可能會自動將電子郵件轉寄到未知的地址，或將電子郵件移到 [記事]****、[垃圾郵件]**** 或 [RSS 訂閱]**** 資料夾。
+- 出現不是由預期使用者或系統管理員所建立的收件匣規則。 這些規則可能會自動將電子郵件轉寄到未知的地址，或將電子郵件移到 [記事]、[垃圾郵件] 或 [RSS 訂閱] 資料夾。
 
 - 全域通訊清單中使用者的顯示名稱可能會變更。
 
@@ -115,9 +115,9 @@ ms.locfileid: "48200116"
 
 1. 使用 Outlook 網頁版登入使用者的信箱。
 
-2. 按一下齒輪圖示並按一下 [郵件]****。
+2. 按一下齒輪圖示並按一下 [郵件]。
 
-3. 按一下 [收件匣和整理規則]**** 並檢閱規則。
+3. 按一下 [收件匣和整理規則] 並檢閱規則。
 
 4. 停用或刪除可疑的規則。
 

@@ -2,8 +2,8 @@
 title: 在高級電子檔探索中匯出案例資料
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: Admin
@@ -16,14 +16,14 @@ search.appverid:
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: 瞭解使用「高級 eDiscovery」中的匯出程式匯出 eDiscovery 案例資料和結果以供複查的指導方針。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef717ca82962417856c65cae605c445971b27256
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 52546e9107e0a1524a32c4c85c896a47dd66b35c
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936410"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662858"
 ---
-# <a name="export-case-data-in-advanced-ediscovery-classic"></a>在高級 eDiscovery （古典）中匯出案例資料
+# <a name="export-case-data-in-advanced-ediscovery-classic"></a>在高級 eDiscovery (傳統) 中匯出案例資料
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -40,9 +40,9 @@ ms.locfileid: "44936410"
     
 ## <a name="related-topics"></a>相關主題
 
-[進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
+[Office 365 進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
   
-[匯出結果](export-results-in-advanced-ediscovery.md)
+[匯出結果 ](export-results-in-advanced-ediscovery.md)
   
 [查看批次歷程記錄和匯出結果](view-batch-history-and-export-past-results.md)
 

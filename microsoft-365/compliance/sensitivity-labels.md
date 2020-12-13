@@ -22,12 +22,12 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: c012b422e5c1452bf6ccd58e0743509a2cf07f32
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: 61bb7afedbbafb1272c3dfdbbecd0ede9777effe
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624785"
+ms.locfileid: "49655575"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -109,11 +109,11 @@ ms.locfileid: "49624785"
     
     您無法設定群組和網站的保護設定，除非您啟用此功能。 此標籤設定並不會導致文件或電子郵件自動加標籤，相反的，標籤設定會透過控制可儲存內容所在容器的存取權，以保護內容。 這些設定包括設定隱私權設定、外部使用者存取和外部共用，以及從未受管理的裝置存取。
 
-- **在 Office 應用程式中自動套用標籤或建議標籤。** 您可以選擇您要標示的敏感資訊類型，且可以自動套用標籤，或提示使用者套用您建議的標籤。 如果您建議使用某個標籤，提示會顯示您選擇的任何文字。 例如：
+- **在檔案和電子郵件中自動套用標籤，或建議標籤。** 選擇如何辨識您要標記的敏感資訊，這樣就可以自動套用標籤，或提示使用者套用您建議的標籤。 如果您建議使用某個標籤，提示會顯示您選擇的任何文字。 例如：
     
     ![指派必要標籤的提示](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    如需有關當您建立或編輯敏感度標籤時 **Office 應用程式的自動標籤** 設定的詳細資訊，請參閱 [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)。
+    如需有關當您建立或編輯敏感度標籤時 **自動標籤檔案和電子郵件** 設定的詳細資訊，請參閱針對 Office 應用程式[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)，和[自動標籤您在 Azure Purview 的資料](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
 
 ### <a name="label-scopes"></a>標籤範圍
 
@@ -274,4 +274,3 @@ Cloud App Security 適用於 Azure 資訊保護標籤和敏感度標籤：
 ## <a name="deployment-guidance"></a>部署指導方針
 
 如需部署規劃和指導方針，其中包含授權資訊、權限、部署策略，以及支援的案例和使用者文件的清單，請參閱[開始使用敏感度標籤](get-started-with-sensitivity-labels.md)。
-

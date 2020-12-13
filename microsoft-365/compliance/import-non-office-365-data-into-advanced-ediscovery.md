@@ -2,8 +2,8 @@
 title: 匯入非 Microsoft 365 內容以進行高級 eDiscovery 分析
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 audience: ITPro
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: 操作方法：將未儲存在 Microsoft 365 中的內容匯入 Azure blob，以便使用 AeD 來進行分析
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be30daa35770247a9dd342b88093872083075547
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 03220e6baf16662ad8dfa970ef4d7077d08b0826
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48636950"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49662898"
 ---
 # <a name="import-non-microsoft-365-content-for-advanced-ediscovery-classic-analysis"></a>匯入非 Microsoft 365 內容以取得 Advanced eDiscovery (傳統) 分析
 
@@ -43,7 +43,7 @@ ms.locfileid: "48636950"
     
 - 現有的 eDiscovery 案例。
     
-- 所有檔案，可將收集到的資料夾中，每個保管人都有一個資料夾，而且資料夾的名稱為  *alias@domainname*  的此格式。 *Alias@domainname*必須是使用者 Office 365 別名和網域。 您可以將所有  *alias@domainname*  資料夾收集至根資料夾。 根資料夾只能包含  *alias@domainname*  資料夾，根資料夾中一定沒有鬆散檔案。
+- 所有檔案，可將收集到的資料夾中，每個保管人都有一個資料夾，而且資料夾的名稱為  *alias@domainname*  的此格式。 *Alias@domainname* 必須是使用者 Office 365 別名和網域。 您可以將所有  *alias@domainname*  資料夾收集至根資料夾。 根資料夾只能包含  *alias@domainname*  資料夾，根資料夾中一定沒有鬆散檔案。
     
 - 電子檔探索管理員或 eDiscovery 管理員的帳戶。
     

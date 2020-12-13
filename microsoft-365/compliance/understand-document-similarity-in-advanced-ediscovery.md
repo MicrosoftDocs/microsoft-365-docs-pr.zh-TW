@@ -2,8 +2,8 @@
 title: 在高級 eDiscovery 中瞭解檔相似性
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 09/14/2017
@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 請複習檔相似性值，將兩個檔案視為接近重複的最小 resemblance 層級，可在「高級 eDiscovery」中運作。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 939e9ad6cb193e2019fe84f1e0d3482eebac721c
-ms.sourcegitcommit: c43ebb915fa0eb7eb720b21b62c0d1e58e7cde3d
+ms.openlocfilehash: 22eb27e7afdc6ad37ea6fdcba9b64298906f1c35
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44936638"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663312"
 ---
-# <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>瞭解 Advanced eDiscovery （古典）中的檔相似性
+# <a name="understand-document-similarity-in-advanced-ediscovery-classic"></a>瞭解 Advanced eDiscovery (傳統) 中的檔相似性
 
 > [!NOTE]
 > 進階電子文件探索需要具有進階合規性附加元件的 Office 365 E3，或適用於您組織的 E5 訂閱。如果您沒有該方案，且想要嘗試進階電子文件探索，您可以[註冊 Office 365 企業版 E5 試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
@@ -32,12 +32,12 @@ ms.locfileid: "44936638"
 在 [Advanced eDiscovery] 中，「檔相似性」是兩個檔視為接近重複專案所需的最小 resemblance 層級。
   
 > [!TIP]
-> 對於大部分商務應用程式，建議使用類似 60%-75% 的相似性值。 對於品質非常差的光學字元辨識（OCR）材料，可以套用較低的相似性值。 
+> 對於大部分商務應用程式，建議使用類似 60%-75% 的相似性值。 對於品質很差的光學字元辨識 (OCR) 材質，可以套用較低的相似性值。 
   
 > [!NOTE]
 > 在指定的情況下設定及執行時，不能變更類似值。 
   
-在近乎重複（ND）集內，您的檔的 resemblance 層級可能會低於相似性閾值。 若要加入 ND 集的檔，ND 集中至少必須有一個檔，且該 resemblance 的層級超過相似性。 
+在) 設定近乎重複的 (ND 中，可能會有符合相似性臨界值的檔 resemblance 層級。 若要加入 ND 集的檔，ND 集中至少必須有一個檔，且該 resemblance 的層級超過相似性。 
   
 例如，假設相似性設定為80%，檔 F1 類似于85% 層級的檔 F2，而檔 F2 類似檔 F3，其層級為90%。 
   
@@ -58,7 +58,7 @@ Resemblance 的層級如下所示：
   
 ## <a name="related-topics"></a>相關主題
 
-[進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
+[Office 365 進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
   
 [設定分析選項](set-analyze-options-in-advanced-ediscovery.md)
   

@@ -4,7 +4,7 @@ description: 有關 Microsoft 365 雙金鑰加密的常見問題。
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 09/22/2020
+ms.date: 12/11/2020
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 98c61e66155e21624e8ecba460ebc3041e72ada5
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 32686e76018d8b6a361ea99e6b00271b9547ed95
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277650"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663058"
 ---
 # <a name="double-key-encryption-frequently-asked-questions"></a>雙機碼的常見問題
 
@@ -33,7 +33,7 @@ DKE 可協助您滿足各項管理法規的需求，例如一般資料保護法�
 
 ## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>我可以搭配 Microsoft Office 內建敏感度標籤使用雙金鑰加密嗎？
 
-您需要使用 Azure 資訊保護統一的標籤用戶端，以雙金鑰加密來保護檔。 目前，您無法使用 Microsoft Office 內建的敏感度標籤。 
+您需要使用 Azure 資訊保護統一的標籤用戶端，以雙金鑰加密來保護檔。 目前，您無法使用 Microsoft Office 內建的敏感度標籤。
 
 ## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>我可以搭配 DKE 使用的 Microsoft 365 應用程式？
 

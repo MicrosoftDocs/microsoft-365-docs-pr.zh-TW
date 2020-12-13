@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: 9c3416f415c43377669b2c032e10696343c4416f
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
+ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988455"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "49611346"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
@@ -90,13 +90,17 @@ ms.locfileid: "48988455"
     
 - [信箱使用量](mailbox-usage.md)
     
-- [Office 啟用](microsoft-office-activations.md)
+- [Office 啟用](microsoft-office-activations-ww.md)
 
-- [作用中的使用者](active-users.md)
+- [適用於美國政府的 Office 啟用](microsoft-office-activations.md)
+
+- [作用中的使用者](active-users-ww.md)
+
+- [適用於美國政府的作用中使用者](active-users.md)
   
 - [電子郵件應用程式使用量](email-apps-usage.md)
 
-- [Forms 活動](forms-activity-ww.md)
+- [表單活動](forms-activity-ww.md)
 
 - [美國政府的 Forms 活動](forms-activity.md)
 
@@ -104,7 +108,9 @@ ms.locfileid: "48988455"
   
 - [美國政府的 Dynamics 365 Customer Voice 活動](forms-pro-activity.md)
 
-- [Microsoft 365 群組](office-365-groups.md)
+- [Microsoft 365 群組](office-365-groups-ww.md)
+
+- [適用於美國政府的 Microsoft 365 群組](office-365-groups.md)
   
 - [商務用 OneDrive 使用者活動](onedrive-for-business-activity-ww.md)
 
@@ -114,7 +120,9 @@ ms.locfileid: "48988455"
 
 - [美國政府的商務用 OneDrive 使用量](onedrive-for-business-usage.md)
 
-- [Microsoft 365 應用程式使用量](microsoft365-apps-usage.md)
+- [Microsoft 365 Apps 使用量](microsoft365-apps-usage-ww.md)
+
+- [適用於美國政府的 Microsoft 365 Apps](microsoft365-apps-usage.md)
   
 - [SharePoint 網站使用量](sharepoint-site-usage-ww.md)
 
@@ -202,7 +210,9 @@ ms.locfileid: "48988455"
 
 您可以利用服務報告來調查特定使用者使用服務的多寡。例如，若要查詢特定使用者已使用多少信箱儲存空間，請開啟 [信箱使用量] 報告，然後依名稱排序使用者。如果您有數千名使用者，可以匯出報告至 Excel，以便快速篩選清單。
   
-在輸入使用者帳戶並取得其使用服務清單與使用量資訊的狀態下，將無法產生報告。
+您無法在輸入使用者帳戶的地方產生報告和取得其使用的服務清單及使用多寡的清單。
+
+有些情況下，新使用者會顯示為 **未知**。 這通常是因為在建立使用者設定檔時偶而會出現延遲。  
   
 ## <a name="hide-user-details-in-the-reports"></a>在報告中隱藏使用者詳細資料
 
@@ -210,7 +220,7 @@ ms.locfileid: "48988455"
   
 1. 在系統管理中心中，移至 **[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">[服務與增益集]</a> 頁面。
 
-2. 選取 **[報告]** 。 
+2. 選取 **[報告]**。 
   
 3. 在 **[報告]** 窗格中，選取您想要的選項，然後儲存變更。
   

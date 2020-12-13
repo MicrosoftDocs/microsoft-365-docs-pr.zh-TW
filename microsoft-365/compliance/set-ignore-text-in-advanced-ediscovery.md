@@ -2,8 +2,8 @@
 title: 在 [高級 eDiscovery] 中設定 [忽略文字] 選項以進行分析
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
+ms.author: markjjo
+author: markjjo
 manager: laurawi
 titleSuffix: Office 365
 ms.date: 9/14/2017
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: 瞭解如何在使用高級 eDiscovery 中的 [分析與處理模組時，定義規則以忽略特定文字]。
-ms.openlocfilehash: e167cc2877ca6e1ecb2b4ac896e2000b0441be59
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: f61724e3964ff4ba7f099dbfb4411e19db258adc
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285849"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663468"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-advanced-ediscovery-classic"></a>在「高級 eDiscovery (傳統) 中，設定 [忽略文字] 選項以進行分析
 

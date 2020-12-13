@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 1/26/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -17,13 +17,13 @@ search.appverid:
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
-description: 瞭解如何在組織內管理 Exchange、SharePoint 和 OneDrive 中部分索引的 (或未編制索引的) 專案。
-ms.openlocfilehash: 94dc568aa889e76241ef7bd48e3dedaba9b92f2f
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+description: 瞭解如何從組織內的 Exchange、SharePoint 和 OneDrive 中，管理部分索引項目目 (也稱為未編制索引的專案) 。
+ms.openlocfilehash: 6a2a1d042c52a445538903fd7db9fc54305e6c13
+ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602060"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "49655447"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>調查 eDiscovery 中已部分索引的專案
 
@@ -45,7 +45,7 @@ ms.locfileid: "49602060"
   
 - 如果專案已部分編制索引，且符合搜尋查詢，則會同時包含搜尋結果專案的計數 (和) 大小，以及部分編制索引的專案。 不過，當匯出相同搜尋的結果時，此專案會包含在一組搜尋結果中;它不會包含在部分索引項目目中。
 
-- 如果您指定搜尋查詢 (的日期範圍，方法是將它納入關鍵字查詢或使用條件) 中，任何不符合日期範圍的部分索引項目目都不會包含在部分編制索引的專案計數中。 索引項目目計數內只會包含位於日期範圍內的已部分索引項目目。
+- 如果您指定搜尋查詢 (的日期範圍，方法是將它納入關鍵字查詢或使用條件) 中，任何不符合日期範圍的部分索引項目目都不會包含在部分編制索引的專案計數中。 位於日期範圍內的部分索引項目目會包含在索引項目目計數中。
 
   > [!NOTE]
   > 位於 SharePoint 和 OneDrive 網站中的部分索引項目目 *不會* 包含在搜尋的詳細統計資料中顯示的部分索引項目目估計內。 不過，當您匯出 eDiscovery 搜尋的結果時，可以匯出部分索引的專案。 例如，如果您只有搜尋網站，估計數目的部分索引項目目會是零。

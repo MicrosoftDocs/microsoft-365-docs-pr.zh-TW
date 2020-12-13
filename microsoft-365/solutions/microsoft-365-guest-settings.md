@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: 瞭解 Microsoft 365 中提供的來賓共用設定，這可能會影響與組織外部人員共用。
-ms.openlocfilehash: 0c734d1046a1c2d180c8102187b8cf07de7dc4dc
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 997ce1375660f1a0e87d0babe647caada09e9e93
+ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613041"
+ms.lasthandoff: 12/12/2020
+ms.locfileid: "49663652"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 來賓共用設定參考
 
@@ -208,6 +208,8 @@ Teams 的主要來賓存取切換 [在 Teams 中允許來賓存取]，必須為 
 ### <a name="site-sharing"></a>網站共用
 
 您可以在 SharePoint 中設定每個網站的來賓共用權限。 此設定同時適用網站共用和檔案與資料夾共用。 ([任何人] 共用不適用網站共用。 如果您選擇 [任何人]，使用者將可以使用 [任何人] 連結來與新的及現有的來賓共用檔案與資料夾及網站本身。)
+
+如果網站已套用敏感度標籤，該標籤可能控制了外部共用設定。 如需詳細資訊，請參閱 [[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容]](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
 
 **瀏覽：** SharePoint 系統管理中心 > [使用中網站] > 選取網站 > [原則] 索引標籤 > [編輯外部共用]
 
