@@ -27,9 +27,9 @@ ms.locfileid: "49087112"
 
 使用 Microsoft 資訊控管功能 (有時會縮寫為 MIG) 來管控您的資料，以符合合規性或法規需求。
 
-![管控您的資料 - 資訊控管與記錄管理](../media/information-governance-records-management.png)
+![管控您的資料 - 資訊管控與記錄管理](../media/information-governance-records-management.png)
 
-想要保護您的資料嗎？請參閱 [Microsoft 365 中的 Microsoft 資訊保護](information-protection.md)。
+想要保護您的資料？ 請參閱 [Microsoft 365 中的 Microsoft 資訊保護。](information-protection.md)
 
 ## <a name="information-governance"></a>資訊控管
 

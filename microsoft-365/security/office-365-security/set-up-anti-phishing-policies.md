@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
-ms.openlocfilehash: 34c66d8ab39af443462e8c5ac99009b4170be21e
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659853"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683038"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -43,12 +43,12 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
 
 |功能|EOP 中的反網路釣魚原則|Microsoft Defender for Office 365 中的反網路釣魚原則|
 |---|:---:|:---:|
-|自動建立的預設原則|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|建立自訂原則|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|原則設定<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|類比設定||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|欺騙設定|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|高級網路釣魚臨界值||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|自動建立的預設原則|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
+|建立自訂原則|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
+|原則設定<sup>\*</sup>|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
+|類比設定||![核取記號](../../media/checkmark.png)|
+|欺騙設定|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
+|高級網路釣魚臨界值||![核取記號](../../media/checkmark.png)|
 |
 
 <sup>\*</sup> 在 [預設原則] 中，[原則名稱] 和 [描述] 是唯讀的 (描述是空白的) ，而且您不能指定原則套用至所有收件者) 的 (。

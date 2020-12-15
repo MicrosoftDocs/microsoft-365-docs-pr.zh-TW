@@ -20,21 +20,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: a41e05f54a8ba94752c6df91628a2200367ac0f3
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7fe5be065ee45700a1f08a39c8050757c3843f7b
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843837"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682568"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。
 
-遵循安全分數建議可保護您的組織免受威脅。 透過 Microsoft 365 security center 中的集中式儀表板，組織可以監視及處理其 Microsoft 365 身分識別、資料、應用程式、裝置和基礎結構的安全性。
+遵循安全分數建議可保護您的組織免受威脅。 在 Microsoft 365 安全中心的中央儀表板中，組織可以監視及處理其 Microsoft 365 身分識別、應用程式和裝置的安全性。
 
 安全分數可協助組織：  
 
@@ -120,7 +119,7 @@ Microsoft 安全分數已更新改進動作，以支援 [Azure Active Directory 
 
 Microsoft Secure 得分是根據系統設定、使用者行為及其他安全性相關度量，以數位摘要的安全性狀況。 這不是系統或資料遭到破壞的可能性的絕對度量。 相反地，它代表您已在 Microsoft 環境中採用安全性控制的程度，可協助抵消遭破壞的風險。 無線上服務完全避免遭到安全違規，安全分數不得以任何方式轉譯為保證安全性破壞。
 
-## <a name="we-want-to-hear-from-you"></a>我們想要聽到您的來信
+## <a name="we-want-to-hear-from-you"></a>我們想知道您的想法
 
 如果您有任何問題，請在 [安全性、隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社區中發佈以告知我們。 我們正在監視社區，並會提供協助。
 

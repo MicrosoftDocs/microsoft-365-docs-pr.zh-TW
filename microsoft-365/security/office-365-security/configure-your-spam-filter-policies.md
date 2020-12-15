@@ -16,12 +16,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以了解如何在 Exchange Online Protection (EOP) 中檢視、建立、修改及刪除反垃圾郵件原則。
-ms.openlocfilehash: d83c41b52db5c0533a9a5d52ab20ace9b612e1e6
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f5cc652bcc16cec28dd411ad30ce0896334733f4
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658646"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683376"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>在 EOP 中設定反垃圾郵件原則
 
@@ -102,20 +102,20 @@ ms.locfileid: "49658646"
 
      下表說明垃圾郵件篩選裁決可採取的動作。
 
-     - 核取記號 ( ![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) 表示可採取的動作 (並非所有的垃圾郵件篩選裁決皆可採取所有動作)。
+     - 核取記號 ( ![核取記號](../../media/checkmark.png)) 表示可採取的動作 (並非所有的垃圾郵件篩選裁決皆可採取所有動作)。
      - 核取記號之後有星號 (<sup>\*</sup>) 表示垃圾郵件篩選裁決的預設動作。
 
      ****
 
      |動作|垃圾郵件|高<br>信賴度<br>垃圾郵件|網路釣魚<br>電子郵件|高<br>信賴度<br>網路釣魚<br>電子郵件|大量<br>電子郵件|
      |---|:---:|:---:|:---:|:---:|:---:|
-     |**將郵件移至 [垃圾郵件] 資料夾**：郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**新增 X 標頭**：在郵件標頭中新增 X 標頭，並將郵件傳送到信箱。 <p> 您稍後可以在 [新增此 X 標頭文字] 方塊中輸入 X 標頭欄位的名稱 (不是值)。 <p> 裁決為 **垃圾郵件** 和 **高信賴度垃圾郵件** 的郵件會移至 [垃圾郵件] 資料夾。<sup>1,2</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
-     |**在主旨列前加上文字**：新增文字至郵件主旨列的開頭。 郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1,2</sup> <p> 您稍後可以在 [在主旨列前加上此文字] 方塊中輸入文字。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**將郵件重新導向至電子郵件地址**：將郵件傳送給其他收件者，而不是預定收件者。 <p> 您稍後可以在 [重新導向到這個電子郵件地址] 方塊中指定收件者。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**刪除郵件**：刪除整封郵件，包括所有附件。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**隔離郵件**：將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> 您稍後可以在 [隔離] 方塊中指定郵件要在隔離區保留多久。|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-     |**無動作**|||||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+     |**將郵件移至 [垃圾郵件] 資料夾**：郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1</sup>|![核取記號](../../media/checkmark.png)<sup>\*</sup>|![核取記號](../../media/checkmark.png)<sup>\*</sup>|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)<sup>\*</sup>|
+     |**新增 X 標頭**：在郵件標頭中新增 X 標頭，並將郵件傳送到信箱。 <p> 您稍後可以在 [新增此 X 標頭文字] 方塊中輸入 X 標頭欄位的名稱 (不是值)。 <p> 裁決為 **垃圾郵件** 和 **高信賴度垃圾郵件** 的郵件會移至 [垃圾郵件] 資料夾。<sup>1,2</sup>|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)||![核取記號](../../media/checkmark.png)<sup>\*</sup>|
+     |**在主旨列前加上文字**：新增文字至郵件主旨列的開頭。 郵件會傳送至信箱，並移至 [垃圾郵件] 資料夾。<sup>1,2</sup> <p> 您稍後可以在 [在主旨列前加上此文字] 方塊中輸入文字。|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)||![核取記號](../../media/checkmark.png)|
+     |**將郵件重新導向至電子郵件地址**：將郵件傳送給其他收件者，而不是預定收件者。 <p> 您稍後可以在 [重新導向到這個電子郵件地址] 方塊中指定收件者。|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
+     |**刪除郵件**：刪除整封郵件，包括所有附件。|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)||![核取記號](../../media/checkmark.png)|
+     |**隔離郵件**：將郵件傳送到隔離信箱，而不是傳送給預定的收件者。 <p> 您稍後可以在 [隔離] 方塊中指定郵件要在隔離區保留多久。|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)<sup>\*</sup>|![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
+     |**無動作**|||||![核取記號](../../media/checkmark.png)|
      |
 
      > <sup>1</sup> 在 Exchange Online 中，如果信箱已啟用垃圾郵件規則 (預設為啟用)，郵件會移至 [垃圾郵件] 資料夾。 如需詳細資訊，請參閱[設定 Exchange Online 信箱的垃圾郵件設定](configure-junk-email-settings-on-exo-mailboxes.md)。
@@ -301,7 +301,7 @@ ms.locfileid: "49658646"
 
    將切換開關向左移動以停用原則： ![關閉](../../media/scc-toggle-off.png)
 
-   將切換開關向右移動以啟用原則： ![開啟](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   將切換開關向右移動以啟用原則： ![開啟](../../media/scc-toggle-on.png)
 
 您無法停用預設的反垃圾郵件原則。
 

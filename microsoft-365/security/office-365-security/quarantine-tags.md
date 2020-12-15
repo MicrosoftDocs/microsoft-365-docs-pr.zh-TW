@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 系統管理員可以瞭解如何使用隔離標記來控制使用者可對其隔離郵件執行的動作。
-ms.openlocfilehash: 498a5f45fa62481f7f4f8dfe5ece8a51a038f99a
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 167f147d7c74b78b1a1661b5444625fbf1cf3d41
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616005"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683064"
 ---
 # <a name="quarantine-tags"></a>隔離標記
 
@@ -44,12 +44,12 @@ EOP 已傳統允許或防止 [隔離](find-and-release-quarantined-messages-as-a
 
 |權限|沒有存取權|限制存取|完全存取|
 |---|:---:|:---:|:---:|
-|**允許寄件者** (_PermissionToAllowSender_) |||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**封鎖寄件者** (_PermissionToBlockSender_) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**Delete** (_PermissionToDelete_) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**預覽** (_PermissionToPreview_) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**允許收件者從隔離區釋放郵件** (_PermissionToRelease_) |||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|**允許收件者要求從隔離區發行郵件** (_PermissionToRequestRelease_) ||![核取記號](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**允許寄件者** (_PermissionToAllowSender_) |||![核取記號](../../media/checkmark.png)|
+|**封鎖寄件者** (_PermissionToBlockSender_) ||![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
+|**Delete** (_PermissionToDelete_) ||![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
+|**預覽** (_PermissionToPreview_) ||![核取記號](../../media/checkmark.png)|![核取記號](../../media/checkmark.png)|
+|**允許收件者從隔離區釋放郵件** (_PermissionToRelease_) |||![核取記號](../../media/checkmark.png)|
+|**允許收件者要求從隔離區發行郵件** (_PermissionToRequestRelease_) ||![核取記號](../../media/checkmark.png)||
 |
 
 如果您不喜歡預設許可權群組中的預設許可權，您可以在建立或修改自訂隔離標記時使用自訂許可權。 如需每個許可權的相關資訊，請參閱本文稍後的隔離標籤 [許可權詳細資料](#quarantine-tag-permission-details) 一節。
@@ -255,7 +255,7 @@ New-QuarantineTag -Name LimitedAccess -EndUserQuarantinePermissions $LimitedAcce
 
    ![反垃圾郵件原則中的隔離標記選擇](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. 完成後，按一下 **[儲存]**。
+5. 完成後，按一下 [儲存]。
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>在 PowerShell 中的反垃圾郵件原則中指派隔離標記
 

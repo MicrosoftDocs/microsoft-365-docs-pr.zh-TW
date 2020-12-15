@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 09/16/2020
+ms.date: 12/09/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 2b8872288291adc0b9fc5e1c1541f885711df230
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 7c28b7f3ac797f7402cfdb1f604fcef1e142a31b
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356700"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683304"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender 的自動化調查和回應
 
@@ -39,21 +39,20 @@ ms.locfileid: "49356700"
 > 想要體驗 Microsoft 365 Defender？ 您可以 [在實驗室環境中進行評估](https://aka.ms/mtp-trial-lab) ，或 [在實際執行中執行您的試驗專案](https://aka.ms/m365d-pilotplaybook)。
 >
 
+## <a name="how-automated-investigation-and-self-healing-works"></a>自動化調查及自我修復的運作方式
+
 在觸發安全性警示時，您的安全性運作小組會檢查這些警示，並採取步驟來保護您的組織。 優先處理和調查警示可能會非常耗時，特別是在調查進行時新警示持續出現。 安全性作業小組可能會對必須監控和防範的龐大威脅感到不知所措。 Microsoft 365 Defender 中的自動調查和回應功能（透過自我修復）可能會有所説明。
 
 請觀看下列影片，瞭解自我修復的運作方式：
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4BzwB]
 
-在 Microsoft 365 Defender 中，使用自我修復功能的自動化調查和回應可在您的裝置、電子郵件 & 內容和身分識別之間運作。 Microsoft 365 Defender 彙集了下列功能： 
-- [Microsoft Defender for Endpoint 中的自動調查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
-- [Microsoft Defender for Office 365 中的自動調查和回應](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
-- [Azure 高級威脅偵測](https://docs.microsoft.com/azure/security/fundamentals/threat-detection)
-- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
+在 Microsoft 365 Defender 中，使用自我修復功能的自動化調查和回應可在您的裝置、電子郵件 & 內容和身分識別之間運作。
  
-本文說明自動化調查和回應的運作方式。 若要設定這些功能，請參閱 [在 Microsoft 365 Defender 中設定自動調查和回應功能](mtp-configure-auto-investigation-response.md)。
+> [!TIP]
+> 本文說明自動化調查和回應的運作方式。 若要設定這些功能，請參閱 [在 Microsoft 365 Defender 中設定自動調查和回應功能](mtp-configure-auto-investigation-response.md)。
 
-## <a name="your-virtual-analyst"></a>您的虛擬分析員
+## <a name="your-own-virtual-analyst"></a>您自己的虛擬分析員
 
 想像您的第 1 層 / 第 2 層安全性作業小組中有一個虛擬分析員。 虛擬分析員會模仿安全性作業要採取哪些理想步驟來調查和補救威脅。 虛擬助理可以全天候工作、提供無限能力，以及接受大量調查和威脅補救。 如此一來，虛擬助理可以大幅減少回應時間，讓您的安全性作業小組能夠進行其他重要的策略專案。 如果此案例好像是科學 fiction，就不是！ 這類虛擬分析員是 Microsoft 365 Defender 套件的一部分，而且其名稱是 *自動調查和回應*。
 

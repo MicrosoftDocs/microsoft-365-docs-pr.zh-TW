@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在安全性 & 合規性中心的承租人允許/封鎖清單中設定 URL 專案。
-ms.openlocfilehash: 4bf5e2e29a9f48c434be527a2447ca4bf98c4208
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: f60e2f29bf9b880e9d2247fa59554300ae348a03
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659995"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683208"
 ---
 # <a name="manage-urls-in-the-tenant-allowblock-list"></a>管理租使用戶允許/封鎖清單中的 URL
 
@@ -83,7 +83,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
      或
 
-     - 將切換向右移動，將專案設定為永不到期： ![開啟](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - 將切換向右移動，將專案設定為永不到期： ![開啟](../../media/scc-toggle-on.png).
 
    - **選用附注**：輸入專案的描述性文字。
 
@@ -111,7 +111,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 - **動作**：選取 [ **允許**]、[ **封鎖** ] 或 [兩者]。
 
-- **永不過期**：選取 [關閉] (![ 切換 ](../../media/scc-toggle-off.png)) 或 (![ 切換上的 ](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)) 。
+- **永不到期**：選取 [關閉]： [關閉] 或 [開啟]：開啟開啟] ![ ](../../media/scc-toggle-off.png) ![ ](../../media/scc-toggle-on.png) 。
 
 - **上次更新**： **從**)  (的開始日期， (**為**) 或兩者的結束日期。
 
@@ -141,7 +141,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
      或
 
-     - 將切換向右移動，將專案設定為永不過期： ![開啟](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     - 將切換向右移動，將專案設定為永不過期： ![開啟](../../media/scc-toggle-on.png).
 
    - **選用附注**：輸入專案的描述性文字。
 

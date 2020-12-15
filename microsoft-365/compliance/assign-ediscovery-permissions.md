@@ -18,18 +18,18 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全性 & 合規性中心，指派執行 eDiscovery 相關工作所需的許可權。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f81ac5a87fad99689f7cfa36c044d3de765f4520
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: f4271d7cc7a9c9239aadb8ca2357e000f4f45e80
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920307"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682604"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全性 & 規範中心指派 eDiscovery 許可權
 
 如果您想要讓使用者在 Office 365 或 Microsoft 365 規範中心的安全性 & 合規性中心使用任何 [eDiscovery 相關工具](ediscovery.md) ，您必須指派適當的許可權。 若要執行此動作，最簡單的方法是在安全性 & 合規性中心的 [ **許可權** ] 頁面上，加入適當的角色群組。 本主題說明使用安全性 & 合規性中心執行 eDiscovery 和內容搜尋相關工作所需的許可權。
   
-安全性 & 規範中心內主要 eDiscovery 相關角色群組稱為 **EDiscovery 管理員** 。 這個角色群組中有兩個子群組。
+安全性 & 規範中心內主要 eDiscovery 相關角色群組稱為 **EDiscovery 管理員**。 這個角色群組中有兩個子群組。
   
 - **Ediscovery 管理員** -ediscovery 管理員可以使用安全性 & 合規性中心的內容搜尋工具來搜尋組織中的內容位置，並執行各種與搜尋相關的動作，例如預覽及匯出搜尋結果。 成員也可以在核心 eDiscovery 和高級 eDiscovery 中建立及管理案例、新增及移除成員至案例、建立案例保留、執行與案例相關聯的搜尋，以及存取案例資料。 eDiscovery 管理員只可存取及管理他們建立的案例。 他們無法存取或管理其他 eDiscovery 管理員所建立的案例。
   
@@ -58,13 +58,13 @@ ms.locfileid: "48920307"
   
 2. 使用您的公司或學校帳戶登入。
   
-3. 在安全性與合規性中心的左窗格中，選取 [ **許可權** ]，然後選取 [ **eDiscovery 管理員** ] 旁邊的核取方塊。
+3. 在安全性與合規性中心的左窗格中，選取 [ **許可權**]，然後選取 [ **eDiscovery 管理員**] 旁邊的核取方塊。
   
 4. 在 [ **EDiscovery 管理員** 飛出] 頁面上，根據您想要指派的 eDiscovery 許可權，執行下列其中一項作業。
   
-    **讓使用者成為 EDiscovery 管理員：** 在 [ **EDiscovery 管理員** ] 旁，選取 [ **編輯** ]。 在 [ **選擇 Ediscovery 管理員** ] 區段中，選取 [ **選擇 ediscovery 管理員** 超連結]，然後選取 [ ![ 新增圖示] [ ](../media/ITPro-EAC-AddIcon.gif) **新增** ]。 選取您要新增為 eDiscovery 管理員的使用者 (或使用者) ，然後選取 [ **新增** ]。 完成新增使用者的作業後，請選取 [ **完成** ]。 然後，在 [ **編輯選擇 EDiscovery 管理員** 飛出] 頁面上，選取 [ **儲存** ]，將變更儲存至 eDiscovery 管理員成員資格。
+    **讓使用者成為 EDiscovery 管理員：** 在 [ **EDiscovery 管理員**] 旁，選取 [ **編輯**]。 在 [ **選擇 Ediscovery 管理員** ] 區段中，選取 [ **選擇 ediscovery 管理員** 超連結]，然後選取 [ ![ 新增圖示] [ ](../media/ITPro-EAC-AddIcon.gif) **新增**]。 選取您要新增為 eDiscovery 管理員的使用者 (或使用者) ，然後選取 [ **新增**]。 完成新增使用者的作業後，請選取 [ **完成**]。 然後，在 [ **編輯選擇 EDiscovery 管理員** 飛出] 頁面上，選取 [ **儲存** ]，將變更儲存至 eDiscovery 管理員成員資格。
   
-    **讓使用者成為 EDiscovery 管理員：** 在 [ **EDiscovery 管理員** ] 旁，選取 [ **編輯** ]。 在 [ **選擇 Ediscovery 管理員** ] 區段的 [ **ediscovery Administrators** ] 底下，選取 **[選擇 ediscovery 系統管理員** ]，選取 [ **編輯** ]，然後選取 [ ![ 新增圖示] [ ](../media/ITPro-EAC-AddIcon.gif) **新增** ]。 選取您要新增為 **EDiscovery 管理員** 的使用者 (或使用者) ，然後  **新增** 。 完成新增使用者的作業後，請選取 [ **完成** ]。 然後，在 [ **編輯選擇 EDiscovery 管理員** 飛出] 頁面上，選取 [ **儲存** ]，將變更儲存至 eDiscovery 管理員成員資格。
+    **讓使用者成為 EDiscovery 管理員：** 在 [ **EDiscovery 管理員**] 旁，選取 [ **編輯**]。 在 [ **選擇 Ediscovery 管理員** ] 區段的 [ **ediscovery Administrators**] 底下，選取 **[選擇 ediscovery 系統管理員**]，選取 [ **編輯**]，然後選取 [ ![ 新增圖示] [ ](../media/ITPro-EAC-AddIcon.gif) **新增**]。 選取您要新增為 **EDiscovery 管理員** 的使用者 (或使用者) ，然後  **新增**。 完成新增使用者的作業後，請選取 [ **完成**]。 然後，在 [ **編輯選擇 EDiscovery 管理員** 飛出] 頁面上，選取 [ **儲存** ]，將變更儲存至 eDiscovery 管理員成員資格。
   
 > [!NOTE]
 > 您也可以使用 **eDiscoveryCaseAdmin** Cmdlet，讓使用者成為 EDiscovery 系統管理員。 不過，在您可以使用此 Cmdlet 將其設為 eDiscovery 系統管理員之前，必須將該使用者指派為案例管理角色。 如需詳細資訊，請參閱 [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217)。 
@@ -77,16 +77,16 @@ ms.locfileid: "48920307"
   
 |**Role**|**合規性系統管理員**|**eDiscovery 管理員 & 管理員**|**組織管理**|**檢閱者**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|案例管理 <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|通訊 <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|合規性搜尋 <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|監管人 <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|匯出 <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|預覽 <br/>  | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
-|檢閱 <br/>  | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
-|RMS 解密 <br/>  ||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
-|搜尋和清除 <br/> | <br/> | <br/> |![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
+|案例管理 <br/> |![核取記號](../media/checkmark.png) <br/> |![核取記號](../media/checkmark.png) <br/> |![核取記號](../media/checkmark.png) <br/> | <br/> |
+|通訊 <br/> | <br/> |![核取記號](../media/checkmark.png) <br/> | <br/> | <br/> |
+|合規性搜尋 <br/> |![核取記號](../media/checkmark.png) <br/> |![核取記號](../media/checkmark.png) <br/> |![核取記號](../media/checkmark.png) <br/> | <br/> |
+|監管人 <br/> | <br/> |![核取記號](../media/checkmark.png) <br/> | <br/> | <br/> |
+|匯出 <br/> | <br/> |![核取記號](../media/checkmark.png) <br/> | <br/> | <br/> |
+|Hold <br/>  |![核取記號](../media/checkmark.png) <br/> |![核取記號](../media/checkmark.png) <br/> |![核取記號](../media/checkmark.png) <br/> | <br/> |
+|預覽 <br/>  | <br/> |![核取記號](../media/checkmark.png) <br/> | <br/> | <br/> |
+|檢閱 <br/>  | <br/> |![核取記號](../media/checkmark.png) <br/> | <br/> |![核取記號](../media/checkmark.png) <br/> |
+|RMS 解密 <br/>  ||![核取記號](../media/checkmark.png) <br/> |||
+|搜尋和清除 <br/> | <br/> | <br/> |![核取記號](../media/checkmark.png)           <br/> | <br/> |
 ||||
   
 下列各節將說明上表列出的每個 eDiscovery 相關 RBAC 角色。
@@ -145,10 +145,10 @@ ms.locfileid: "48920307"
 
 ### <a name="review"></a>檢閱
 
-此角色可讓使用者在 [高級 ediscovery (傳統)](office-365-advanced-ediscovery.md) 中存取案例資料， (也稱為「 *高級 eDiscovery v1* ) 。 此角色的主要目的是讓使用者能夠存取高級 eDiscovery (傳統) 。 獲指派此角色的使用者可以在其成員的安全性 & 規範中心內，查看並開啟「 **eDiscovery** 」頁面上的案例清單。 使用者在安全性 & 合規性中心存取案例後，可以選取 [ **切換至高級 ediscovery** ] 以存取及分析高級 ediscovery (經典) 中的案例資料。 此角色不允許使用者預覽與案例相關聯的內容搜尋結果，或是進行其他內容搜尋或案例管理工作。
+此角色可讓使用者在 [高級 ediscovery (傳統)](office-365-advanced-ediscovery.md) 中存取案例資料， (也稱為「 *高級 eDiscovery v1*) 。 此角色的主要目的是讓使用者能夠存取高級 eDiscovery (傳統) 。 獲指派此角色的使用者可以在其成員的安全性 & 規範中心內，查看並開啟「 **eDiscovery** 」頁面上的案例清單。 使用者在安全性 & 合規性中心存取案例後，可以選取 [ **切換至高級 ediscovery** ] 以存取及分析高級 ediscovery (經典) 中的案例資料。 此角色不允許使用者預覽與案例相關聯的內容搜尋結果，或是進行其他內容搜尋或案例管理工作。
 
 > [!NOTE]
-> 目前，已獲指派「審閱」角色的使用者 (或是「檢閱者」角色群組的成員) 無法存取 [Microsoft 365 中的 [高級 ediscovery] 中](overview-ediscovery-20.md) 的資料 (也稱為「 *高級 ediscovery 2.0* ) 。 若要在 Advanced eDiscovery 2.0 中新增成員至案例，讓他們可以查看案例資料，使用者必須是 eDiscovery 管理員角色群組的成員。
+> 目前，已獲指派「審閱」角色的使用者 (或是「檢閱者」角色群組的成員) 無法存取 [Microsoft 365 中的 [高級 ediscovery] 中](overview-ediscovery-20.md) 的資料 (也稱為「 *高級 ediscovery 2.0*) 。 若要在 Advanced eDiscovery 2.0 中新增成員至案例，讓他們可以查看案例資料，使用者必須是 eDiscovery 管理員角色群組的成員。
 
 ### <a name="rms-decrypt"></a>RMS 解密
 

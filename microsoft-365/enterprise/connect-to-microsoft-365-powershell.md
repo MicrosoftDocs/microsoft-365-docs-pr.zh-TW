@@ -65,7 +65,7 @@ ms.locfileid: "49002402"
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>與 Azure Active Directory PowerShell for Graph 模組連線
 
-在Azure Active Directory PowerShell 圖表模組中的命令，其 Cmdlet 名稱中會包含 *AzureAD* 。 您可以安裝 [Azure Active Directory PowerShell 的圖表](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)或 [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)。
+在Azure Active Directory PowerShell 圖表模組中的命令，其 Cmdlet 名稱中會包含 *AzureAD*。 您可以安裝 [Azure Active Directory PowerShell 的圖表](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2)或 [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps)。
 
 針對需要 Azure Active Directory PowerShell for Graph 模組中新 Cmdlet 的程序，請按照下列步驟來安裝模組，並連線至您的 Microsoft 365 訂閱。
 
@@ -98,7 +98,7 @@ ms.locfileid: "49002402"
 | Office 365 美國政府 DoD 和 Office 365 美國政府 GCC High | `Connect-AzureAD -AzureEnvironmentName AzureUSGovernment` |
 |||
 
-在 **[登入您的帳戶]** 對話方塊中，輸入您的 Microsoft 365 公司或學校帳戶使用者名稱和密碼，然後選取 **[確定]** 。
+在 **[登入您的帳戶]** 對話方塊中，輸入您的 Microsoft 365 公司或學校帳戶使用者名稱和密碼，然後選取 **[確定]**。
 
 如果使用多重要素驗證，請按照說明提供其他身份驗證資訊，例如驗證碼。
 
@@ -107,7 +107,7 @@ ms.locfileid: "49002402"
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>與適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組連線
 
 >[!Note]
->在適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組中的 Cmdlet 名稱會包含 *Msol* 。
+>在適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組中的 Cmdlet 名稱會包含 *Msol*。
 
 PowerShell 版本 7 和更新版本不支援適用於 Windows PowerShell 模組的 Microsoft Azure Active Directory 模組和名稱有 *Msol* 的 Cmdlet。 針對 PowerShell 版本 7 和更高版本，請務必使用 Azure Active Directory PowerShell 的圖表模組或 Azure PowerShell。
 
@@ -123,8 +123,8 @@ PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active
     
    1. 開啟提升權限的 Windows PowerShell 命令提示字元 (以系統管理員身分執行 Windows PowerShell)。
    1.  執行 **Install-Module MSOnline** 命令。
-   1. 如果系統提示您安裝 NuGet 提供者，請輸入 **Y** ，然後按 Enter 鍵。
-   1. 如果系統提示您從 PSGallery 安裝模組，請輸入 **Y** ，然後按 Enter 鍵。
+   1. 如果系統提示您安裝 NuGet 提供者，請輸入 **Y**，然後按 Enter 鍵。
+   1. 如果系統提示您從 PSGallery 安裝模組，請輸入 **Y**，然後按 Enter 鍵。
     
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>步驟 2：連接到您的 Microsoft 365 訂閱的 Azure AD
 
@@ -138,17 +138,17 @@ PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active
 | Office 365 美國政府 DoD 和 Office 365 美國政府 GCC High | `Connect-MsolService -AzureEnvironment USGovernment` |
 |||
 
-在 **[登入您的帳戶]** 對話方塊中，輸入您的 Microsoft 365 公司或學校帳戶使用者名稱和密碼，然後選取 **[確定]** 。
+在 **[登入您的帳戶]** 對話方塊中，輸入您的 Microsoft 365 公司或學校帳戶使用者名稱和密碼，然後選取 **[確定]**。
 
 如果使用多重要素驗證，請按照說明提供其他身份驗證資訊，例如驗證碼。
 
 ### <a name="how-do-you-know-it-worked"></a>如何得知它的運作正常？
 
-如果您沒有收到錯誤訊息，則已成功連線。 若要快速測試，請執行 Microsoft 365 cmdlet，例如 **Get-MsolUser** ，然後查看結果。
+如果您沒有收到錯誤訊息，則已成功連線。 若要快速測試，請執行 Microsoft 365 cmdlet，例如 **Get-MsolUser**，然後查看結果。
   
 如果收到錯誤訊息，請檢查下列問題：
   
-- **密碼錯誤是常見的問題** 。 再次執行[步驟 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription)，並密切注意您輸入的使用者名稱和密碼。
+- **密碼錯誤是常見的問題**。 再次執行[步驟 2](#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription)，並密切注意您輸入的使用者名稱和密碼。
     
 - **適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組要求在您的電腦上啟用 Microsoft .NET Framework 3.5.* x*。您的電腦可能已安裝了較新的版本 (例如 4 或 4.5.* x*). 但可以啟用或停用舊版 .NET Framework 的回溯相容性。 如需詳細資訊，請參閱下列文章：
     
@@ -165,11 +165,11 @@ PowerShell Core 不支援適用於 Windows PowerShell 的 Microsoft Azure Active
   (Get-Item C:\Windows\System32\WindowsPowerShell\v1.0\Modules\MSOnline\Microsoft.Online.Administration.Automation.PSModule.dll).VersionInfo.FileVersion
   ```
 
-    如果傳回的版本號碼低於 *1.0.8070.2* ，請將適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組解除安裝，然後從以上的 [步驟 1](#step-1-install-the-required-software) 中安裝。
+    如果傳回的版本號碼低於 *1.0.8070.2*，請將適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組解除安裝，然後從以上的[步驟 1](#step-1-install-the-required-software) 中安裝。
 
-- **如果您收到連線錯誤** ，請參閲 [「Connect-MsolService：擲回類型例外狀況」錯誤](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
+- **如果您收到連線錯誤**，請參閲 [「Connect-MsolService：擲回類型例外狀況」錯誤](https://go.microsoft.com/fwlink/p/?LinkId=532377)。
     
-- 訊息 **如果您收到「Get-Item：找不到路徑」錯誤訊息** ，請執行此命令：
+- 訊息 **如果您收到「Get-Item：找不到路徑」錯誤訊息**，請執行此命令：
 
 
    ```powershell

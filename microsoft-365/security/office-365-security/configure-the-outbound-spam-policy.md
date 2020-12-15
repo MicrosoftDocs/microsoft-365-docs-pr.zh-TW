@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何在 Exchange Online Protection (EOP) 中查看、建立、修改和刪除輸出垃圾郵件原則。
-ms.openlocfilehash: 0deafe2817c3e10371b02349aca2612af090af65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 1e25d687ea22c70ba36f7c183b1fd8e578f7fa13
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659699"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683328"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>在 EOP 中設定輸出垃圾郵件篩選
 
@@ -230,7 +230,7 @@ EOP 中的外寄垃圾郵件原則基本元素為：
 
    將切換開關向左移動以停用原則： ![關閉](../../media/scc-toggle-off.png)
 
-   將切換開關向右移動以啟用原則： ![開啟](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)
+   將切換開關向右移動以啟用原則： ![開啟](../../media/scc-toggle-on.png)
 
 您無法停用預設輸出垃圾郵件原則。
 

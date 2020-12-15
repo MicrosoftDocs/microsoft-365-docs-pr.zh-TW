@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 中查看、建立、修改及刪除安全連結原則及全域安全連結設定。
-ms.openlocfilehash: 8a6d8a7ad567b658f04cb0b28800d4edbc33ec67
-ms.sourcegitcommit: f81ca61f74f11a7436a6172538c3bda81b484d62
+ms.openlocfilehash: 7a00b73855302f5046afa0605fd7188007394ed7
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/15/2020
-ms.locfileid: "49675238"
+ms.locfileid: "49683160"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>設定 Microsoft Defender for Office 365 中的安全連結原則
 
@@ -178,7 +178,7 @@ ms.locfileid: "49675238"
 
    - 將切換開關向左移動以停用原則： ![關閉原則](../../media/scc-toggle-off.png).
 
-   - 將切換開關向右移動以啟用原則： ![開啟原則](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+   - 將切換開關向右移動以啟用原則： ![開啟原則](../../media/scc-toggle-on.png).
 
 ### <a name="set-the-priority-of-safe-links-policies"></a>設定安全連結原則的優先順序
 

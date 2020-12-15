@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: 3c8477ce16249cb4d21c736da60d619774175041
-ms.sourcegitcommit: 2d3e85173c65a9e0ce92624a80ed7a9839f5b8bd
+ms.openlocfilehash: 12f71011e28d5c8c8287146670282a86a77781ff
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49123604"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682978"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中設定自動調查和回應功能
 
@@ -60,7 +60,6 @@ Microsoft 365 Defender 包含強大的 [自動化調查和回應功能](mtp-auto
 3. 檢查您的裝置群組原則。 具體說來，請查看 [ **修正層級** ] 欄。 建議您 **自動使用完整修正威脅**。  您可能需要建立或編輯裝置群組，以取得您想要的自動化程度。 若要取得此工作的說明，請參閱下列文章：
 
    - [如何修正威脅](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
-   
    - [建立及管理裝置群組](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/machine-groups) 
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>在 Office 365 中複查您的安全性和警示原則
@@ -105,6 +104,6 @@ Office 365 中的安全性設定可協助保護電子郵件和內容。 若要�
 
 ## <a name="review-pending-and-completed-actions-in-the-action-center"></a>在行動中心複查擱置和完成的動作
 
-在 Microsoft 365 Defender 中設定自動調查和回應之後，下一步是 () 中訪問 [行動中心] [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。 您可以在這裡複查及核准暫止的動作，並查看自動採取的修復動作。 
+在 Microsoft 365 Defender 中設定自動調查和回應之後，下一步是 () 中訪問 [行動中心] [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) 。 您可以在這裡複查及核准暫止的動作，並查看自動或手動採取的修復動作。 
 
 [造訪行動中心](mtp-action-center.md)。

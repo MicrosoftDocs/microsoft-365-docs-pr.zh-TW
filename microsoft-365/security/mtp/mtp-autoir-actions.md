@@ -20,13 +20,13 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 09/16/2020
-ms.openlocfilehash: ed0b9afa576f65d33cd9a49dfacd96ffaf173d28
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.date: 12/09/2020
+ms.openlocfilehash: b34f4a532571d6215500ab2bec022489fd462d0f
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846529"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683357"
 ---
 # <a name="approve-or-reject-pending-actions-following-an-automated-investigation"></a>自動調查後核准或拒絕擱置的動作
 
@@ -44,7 +44,7 @@ ms.locfileid: "48846529"
 您可以使用「 [行動中心](#review-a-pending-action-in-the-action-center) 」或「 [調查詳細資料」視圖](#review-a-pending-action-in-the-investigation-details-view)，檢查和核准擱置的動作。
 
 > [!NOTE]
-> 您必須具備[適當的權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，才能核准或拒絕補救動作。
+> 您必須具備[適當的權限](mtp-action-center.md#required-permissions-for-action-center-tasks)，才能核准或拒絕補救動作。 如需詳細資訊，請參閱 [Microsoft 365 Defender 中自動調查和回應的必要條件](mtp-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
 
 ## <a name="review-a-pending-action-in-the-action-center"></a>在重要訊息中心檢閱擱置中的動作
 

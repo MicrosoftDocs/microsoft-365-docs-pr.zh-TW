@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5c558529360d84d5872649e41b95f509e5b52663
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 15778f076d4122b23449f66bd9781a7037c52c58
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663628"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683124"
 ---
 #  <a name="network-configuration-for-microsoft-managed-desktop"></a>Microsoft 受管理電腦的網路設定
 
@@ -44,7 +44,7 @@ Microsoft 受管理的桌面 URL 用於服務于客戶 API 執行的任何專案
 Microsoft 服務  | 允許清單上的 URLs 必要專案 
 --- | ---
 Microsoft 受管理的電腦 | prod-mwaas-services-customerapi.azurewebsites.net
-取得說明 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
+取得說明 | \*。 support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net  <br>concierge.live.com
 快速協助 | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*。 lync.com
 Microsoft 支援和修復助理 | \*。 apibasic.diagnostics.office.com  <br>\*。 api.diagnostics.office.com
  

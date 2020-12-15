@@ -19,12 +19,12 @@ ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 ms.custom:
 - seo-marvel-apr2020
 description: 在 Office 365 和 Microsoft 365 中的安全性與合規性中心建立警示原則，以監視潛在威脅、資料遺失和許可權問題。
-ms.openlocfilehash: b6a1689ab475b9518c290bf3db03d2144610bf8b
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 5749b38ca9b72c859e9c553ccbb4fe6a44be9754
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367176"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682956"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>安全性與合規性中心的警示原則
 
@@ -217,33 +217,33 @@ Microsoft 提供內建的警示原則，可協助識別 Exchange 系統管理員
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |稽核記錄|||||||
 |案例管理|||||||
-|合規性系統管理員|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|合規性系統管理員|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)||![核取記號](../media/checkmark.png)||![核取記號](../media/checkmark.png)|
 |合規性搜尋|||||||
 |裝置管理|||||||
 |處置管理|||||||
-|DLP 合規性管理||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
+|DLP 合規性管理||![核取記號](../media/checkmark.png)|||||
 |匯出|||||||
 |保留|||||||
-|管理警示||||||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|組織組態||||||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|管理警示||||||![核取記號](../media/checkmark.png)|
+|組織組態||||||![核取記號](../media/checkmark.png)|
 |預覽|||||||
-|記錄管理|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|保留管理|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|記錄管理|![核取記號](../media/checkmark.png)||||||
+|保留管理|![核取記號](../media/checkmark.png)||||||
 |檢閱|||||||
 |RMS 解密|||||||
-|角色管理||||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|角色管理||||![核取記號](../media/checkmark.png)|||
 |搜尋和清除|||||||
-|安全性系統管理員||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|安全性讀取者||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|安全性系統管理員||![核取記號](../media/checkmark.png)||![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|
+|安全性讀取者||![核取記號](../media/checkmark.png)||![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)|![核取記號](../media/checkmark.png)
 |服務保證檢視|||||||
 |主管檢閱系統管理員|||||||
 |僅限檢視稽核記錄|||||||
 |僅限檢視裝置管理|||||||
-|僅限檢視 DLP 合規性管理||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||||
-|僅限檢視管理警示||||||![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|僅限檢視收件者|||  ![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||
-|僅限檢視記錄管理|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
-|僅限檢視保留管理|![核取記號](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||||||
+|僅限檢視 DLP 合規性管理||![核取記號](../media/checkmark.png)|||||
+|僅限檢視管理警示||||||![核取記號](../media/checkmark.png)|
+|僅限檢視收件者|||![核取記號](../media/checkmark.png)||||
+|僅限檢視記錄管理|![核取記號](../media/checkmark.png)||||||
+|僅限檢視保留管理|![核取記號](../media/checkmark.png)||||||
 |||||||
 
 > [!TIP]

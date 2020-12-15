@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 02c79edaa05e7903a8797cdf83c18a4ce69716dc
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920533"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683340"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分數評估安全性狀況
 
@@ -36,10 +36,8 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 為了協助您更快速地取得所需資訊，Microsoft 改進的動作會組織成群組：
 
 *  (Azure Active Directory 帳戶 & 角色的身分識別) 
-* 資料 (現在沒有任何改進動作) 
 * 裝置 (Microsoft Defender for Endpoint，稱為 [裝置的 Microsoft 安全評分](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)) 
 * App (電子郵件和雲端應用程式，包括 Office 365 和 Microsoft Cloud App Security) 
-* 基礎結構 (現在沒有任何改進動作) 
 
 >[!NOTE]
 >在最近發行的 Microsoft Secure 得分中，已發行的評分模型已發佈，使 Microsoft 安全分數暫時不相容身分識別安全分數和圖形 API。 [檢視詳細資料](microsoft-secure-score-whats-new.md)
@@ -56,9 +54,9 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 以下是您可以新增至您的整體分數視圖的分數，可讓您更完整的整體分數的描述如下：
 
-- 已 **計畫分數** ：在計畫的動作完成時顯示預計分數
-- **目前的授權分數** ：顯示可使用您目前的 Microsoft 授權所能達到的分數
-- 可 **實現分數** ：顯示可透過您的 Microsoft 授權和目前的風險接受程度達到的分數
+- 已 **計畫分數**：在計畫的動作完成時顯示預計分數
+- **目前的授權分數**：顯示可使用您目前的 Microsoft 授權所能達到的分數
+- 可 **實現分數**：顯示可透過您的 Microsoft 授權和目前的風險接受程度達到的分數
 
 如果您已包含所有可能的分數視圖，則此視圖的外觀會如下：
 
@@ -90,8 +88,8 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 選擇 [改進] 動作特有的任何狀態和記錄附注。
 
 - **若要解決** 此事項-您可以辨識改進動作是必要的，並計畫于未來某一點進行處理。 這種狀態也適用于已偵測到部分但未完全完成的動作。
-- 已 **計畫** -已有適當的計畫可完成改進動作。
-- 已 **接受風險** -安全性絕對應該與可用性進行平衡，而不是每個建議適用于您的環境。 在這種情況下，您可以選擇接受風險或餘下的風險，而不會制定改進動作。 您不會獲得任何點數，但是動作將不再顯示在 [改進動作] 清單中。 您可以在歷史記錄中查看此動作，也可以隨時復原。
+- 已 **計畫**-已有適當的計畫可完成改進動作。
+- 已 **接受風險**-安全性絕對應該與可用性進行平衡，而不是每個建議適用于您的環境。 在這種情況下，您可以選擇接受風險或餘下的風險，而不會制定改進動作。 您不會獲得任何點數，但是動作將不再顯示在 [改進動作] 清單中。 您可以在歷史記錄中查看此動作，也可以隨時復原。
 - **透過協力廠商解決** ，並 **透過替代的緩解措施解決** -改進動作已經由協力廠商應用程式或軟體或內部工具所解決。 您將會看到必要的動作點，所以您的分數會更好反映整體的安全性狀況。 如果協力廠商或內部工具不再涵蓋該控制項，您可以選擇其他狀態。 請記住，如果改進動作標示為這兩種狀態，Microsoft 將無法深入瞭解實施的完整性。
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>威脅 & 弱點管理的改進動作
@@ -114,7 +112,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 必要條件包括需要取得的任何授權，或是在解決改進動作之前必須完成的動作。 請確定您的授權有足夠的座位，可完成 [改進] 動作，並將這些授權套用至必要的使用者。  
 
-## <a name="we-want-to-hear-from-you"></a>我們想要聽到您的來信
+## <a name="we-want-to-hear-from-you"></a>我們想知道您的想法
 
 如果您有任何問題，請在 [安全性、隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社區中發佈以告知我們。 我們正在監視社區，並會提供協助。
 

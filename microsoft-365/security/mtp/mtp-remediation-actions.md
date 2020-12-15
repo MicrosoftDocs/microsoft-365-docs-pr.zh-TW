@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender 中的自動調查遵循的修復動作
+title: Microsoft 365 Defender 中的修正動作
 description: 深入瞭解 Microsoft 365 Defender 中遵循自動調查的修復動作
 keywords: automated, investigation, alert, trigger, action, remediation, 自動化, 調查, 警示, 觸發, 動作, 補救
 search.appverid: met150
@@ -19,16 +19,16 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 09/16/2020
+ms.date: 12/09/2020
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 71cdf2d1b9a40e9cfbf487ca8596a0c2b09475d1
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9e489e3b0100aa138b11d4bfb4ccc8048a2113f4
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847209"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683292"
 ---
-# <a name="remediation-actions-following-automated-investigations-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的自動調查遵循的修復動作
+# <a name="remediation-actions-in-microsoft-365-defender"></a>Microsoft 365 Defender 中的修正動作
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,10 +36,15 @@ ms.locfileid: "48847209"
 適用於：
 - Microsoft 365 Defender
 
-
 ## <a name="remediation-actions"></a>補救動作
 
 在 Microsoft 365 Defender 中的自動調查期間和之後，會針對惡意或可疑專案識別修正動作。 對裝置（也稱為端點）採取某些類型的修復動作。 對電子郵件內容採取其他修復動作。 在採取修正動作、核准或拒絕時，自動調查會完成。
+
+> [!IMPORTANT]
+> 是否自動採取修復動作，也取決於特定設定，例如自動化程度。 若要深入瞭解，請參閱下列文章：
+> - [在 Microsoft 365 Defender 中設定您的自動化調查和回應功能](mtp-configure-auto-investigation-response.md)
+> - [如何在裝置上修正威脅](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+> - [電子郵件 & 共同作業內容的威脅和修正動作](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-remediation-actions#threats-and-remediation-actions)
 
 下表摘要說明 Microsoft 365 Defender 目前支援的修復動作： 
 
@@ -49,23 +54,30 @@ ms.locfileid: "48847209"
 
 您可以在「 [行動中心](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)」查看修正動作（不論是待核准或已完成）。
 
-## <a name="remediation-actions-follow-automated-investigations"></a>修正動作遵循自動調查
+## <a name="remediation-actions-that-follow-automated-investigations"></a>遵循自動調查的修復動作
 
 當自動調查完成時，所涉及的每一項證據都會達到序判定。 根據判定，修正動作的識別。 在某些情況下，系統會自動進行修正動作；在其他情況下，修正動作需要核准。 這完全取決於如何 [設定自動調查和回應](mtp-configure-auto-investigation-response.md)。
 
 下表列出可能的裁決和結果：
 
-|裁決    |範圍    |結果|
+| 裁決    | 範圍    | 結果|
 |------|------|------|
-|惡意    |裝置 (端點)    |如果您組織的 [裝置群組](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) 會自動設定為 **完整修正威脅** ，便會自動採取修正動作 () |
-|惡意    |電子郵件內容 (URL 或附件) | 建議的修正動作待核准|
-|可疑    |裝置或電子郵件內容 |建議的修正動作待核准|
-|找不到威脅    |裝置或電子郵件內容    |不需要修正動作|
+| 惡意    | 裝置 (端點)    | 如果您組織的 [裝置群組](mtp-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) 會自動設定為 **完整修正威脅** ，便會自動採取修正動作 () |
+| 惡意    | 電子郵件內容 (URL 或附件) | 建議的修正動作待核准|
+| 可疑    | 裝置或電子郵件內容 | 建議的修正動作待核准|
+| 找不到威脅    | 裝置或電子郵件內容    | 不需要修正動作|
 
-> [!IMPORTANT]
-> 是否自動採取修復動作，也取決於特定設定，例如組織的裝置群組原則。 若要深入瞭解，請參閱下列文章：
-> - [在 Microsoft 365 Defender 中設定自動調查和回應功能](mtp-configure-auto-investigation-response.md)
-> - [如何在裝置上修正威脅](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+
+## <a name="remediation-actions-that-are-taken-manually"></a>手動採取的修正動作
+
+除了遵循自動調查的修復動作之外，您的安全性作業小組也可以手動採取某些修正動作。 包括下列動作：
+
+- 手動裝置動作，例如裝置隔離或檔隔離。
+- 手動電子郵件動作，例如虛刪除的電子郵件訊息。 
+- 裝置或電子郵件上的[高級搜尋](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)動作。
+- [Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) 對電子郵件內容的動作，例如將電子郵件移至垃圾郵件、虛刪除的電子郵件或實刪除的電子郵件。
+- 手動 [即時回應](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) 動作，例如刪除檔案、停止程式及移除排程的任務。
+- [Microsoft Defender For Endpoint APIs](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis)的即時回應動作，例如隔離裝置、執行防病毒掃描，以及取得檔案的相關資訊。 
 
 ## <a name="next-steps"></a>後續步驟
 
