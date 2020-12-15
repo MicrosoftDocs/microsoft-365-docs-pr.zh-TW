@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何設定資料遺失防護（DLP）原則以使用 Microsoft 365 端點資料遺失防護（EPDLP）位置。
-ms.openlocfilehash: 0a6883bd785141af6f198f0cd871c11794618e27
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561680"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667808"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端點資料外洩防護
 
@@ -85,13 +85,6 @@ ms.locfileid: "49561680"
 #### <a name="unallowed-browsers"></a>不受允許的瀏覽器
 
 您新增的瀏覽器是由其可執行檔名稱所標識，這些瀏覽器將無法存取符合強制執行的 DLP 原則的檔案（其中的 [上傳到雲端服務限制] 已設定為 [封鎖] 或 [封鎖覆寫]）。 當這些瀏覽器被禁止存取檔案時，終端使用者會看到快顯通知，要求其透過 Edge Chromium 開啟檔案。
-
-### <a name="always-audit-file-activity-from-onboarded-devices"></a>始終稽核已登入裝置的檔案活動
-
-控制是否自動稽核 Office、PDF 和 CSV 檔案的 DLP 活動，並可從已登入裝置的稽核遙測和活動總管中查看。 
-
-如果此選項處於開啟狀態 (預設)，則始終稽核已登入裝置的檔案活動，而不管它們是否包含在活動 DLP 原則中。
-如果禁用此選項，則僅當已登入裝置包含在活動 DLP 原則中時，才會稽核已登入裝置的檔案活動。 
 
 
 ## <a name="tying-dlp-settings-together"></a>將 DLP 設定結合起來
