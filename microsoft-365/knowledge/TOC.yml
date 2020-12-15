@@ -8,6 +8,8 @@
       href: work-with-topics.md
     - name: 將主題中心的許可權授與使用者
       href: give-user-permissions-to-the-topic-center.md
+    - name: 讓您的環境做好準備
+      href: topic-experiences-get-ready.md
 - name: 安裝和管理
   items:
     - name: 主題安全性
@@ -24,3 +26,7 @@
       href: topic-experiences-user-permissions.md
     - name: 變更主題中心名稱
       href: topic-experiences-administration.md
+- name: 採用
+  items:
+    - name: 開始促進採用
+      href: topics-adoption-getstarted.md
