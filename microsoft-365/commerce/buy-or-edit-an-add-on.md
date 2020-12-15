@@ -1,5 +1,5 @@
 ---
-title: 購買或編輯附加元件
+title: 購買或管理附加元件
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,239 +12,144 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
-description: 瞭解如何購買附加元件，將其他功能新增至您的 Microsoft 365 for business 訂閱。 您也可以更新及移除附加元件。
+description: 瞭解如何購買和管理適用于商務用 Microsoft 365 訂閱的附加元件。
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: cfbce7efa1c80d9e5da8390c183233a6f2a12eb7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+- Commerce
+ms.openlocfilehash: 482b7def1126be6694fdbacbbb2399ccb1b34298
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842817"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667796"
 ---
-# <a name="buy-or-edit-an-add-on"></a><span data-ttu-id="1bcf6-104">購買或編輯附加元件</span><span class="sxs-lookup"><span data-stu-id="1bcf6-104">Buy or edit an add-on</span></span>
+# <a name="buy-or-manage-add-ons"></a><span data-ttu-id="9d0a8-103">購買或管理附加元件</span><span class="sxs-lookup"><span data-stu-id="9d0a8-103">Buy or manage add-ons</span></span>
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> <span data-ttu-id="1bcf6-105">系統管理中心正在變更。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-105">The admin center is changing.</span></span> <span data-ttu-id="1bcf6-106">如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-106">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).</span></span>
+> <span data-ttu-id="9d0a8-104">系統管理中心正在變更。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-104">The admin center is changing.</span></span> <span data-ttu-id="9d0a8-105">如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-105">If your experience doesn't match the details presented here, see [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).</span></span>
 
 ::: moniker-end
 
-<span data-ttu-id="1bcf6-107">Microsoft 365 for business 方案中的幾個都是您可以為訂閱購買的附加元件。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-107">Several of the Microsoft 365 for business plans have add-ons that you can buy for your subscription.</span></span> <span data-ttu-id="1bcf6-108">為訂閱購買附加元件即可提供訂閱額外的功能。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-108">An add-on provides additional functionality to the subscription that you buy it for.</span></span>
+<span data-ttu-id="9d0a8-106">許多 Microsoft 365 for business 方案都具有您可以為訂閱購買的附加元件。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-106">Many Microsoft 365 for business plans have add-ons that you can buy for your subscriptions.</span></span> <span data-ttu-id="9d0a8-107">附加元件提供額外的功能來增強您的訂閱經驗。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-107">Add-ons provide additional features to enhance your subscription experience.</span></span>
 
-## <a name="buy-an-add-on"></a><span data-ttu-id="1bcf6-109">購買附加元件</span><span class="sxs-lookup"><span data-stu-id="1bcf6-109">Buy an add-on</span></span>
+<span data-ttu-id="9d0a8-108">附加元件有兩種類型：</span><span class="sxs-lookup"><span data-stu-id="9d0a8-108">There are two types of add-ons:</span></span>
+
+1. <span data-ttu-id="9d0a8-109">**傳統附加** 元件會連結至特定訂閱。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-109">**Traditional add-ons** are linked to a specific subscription.</span></span> <span data-ttu-id="9d0a8-110">如果您取消訂閱，也會取消相關聯的附加元件。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-110">If you cancel the subscription, the associated add-on is also canceled.</span></span>
+2. <span data-ttu-id="9d0a8-111">**獨立附加元件訂閱** 會在 **您的產品** 頁面上顯示為個別訂閱，並擁有自己的到期日。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-111">**Standalone add-on subscriptions** appear as a separate subscription on the **Your products** page and have their own expiration date.</span></span> <span data-ttu-id="9d0a8-112">與傳統的附加元件不同的是，獨立附加元件訂閱不會連結至特定訂閱。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-112">Unlike traditional add-ons, standalone add-on subscriptions aren’t linked to a specific subscription.</span></span> <span data-ttu-id="9d0a8-113">您可以使用管理任何其他訂閱的相同方式來管理獨立附加元件訂閱。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-113">You manage a standalone add-on subscription the same way that you manage any other subscription.</span></span>
+
+## <a name="before-you-begin"></a><span data-ttu-id="9d0a8-114">開始之前</span><span class="sxs-lookup"><span data-stu-id="9d0a8-114">Before you begin</span></span>
+
+<span data-ttu-id="9d0a8-115">您必須是全域或計費系統管理員，才能執行本文所述的步驟。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-115">You must be a Global or Billing admin to do the steps described in this article.</span></span> <span data-ttu-id="9d0a8-116">如需詳細資訊，請參閱[關於系統管理員角色](../admin/add-users/about-admin-roles.md)。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-116">For more information, see [About admin roles](../admin/add-users/about-admin-roles.md).</span></span>
+
+## <a name="buy-an-add-on"></a><span data-ttu-id="9d0a8-117">購買附加元件</span><span class="sxs-lookup"><span data-stu-id="9d0a8-117">Buy an add-on</span></span>
+
+<span data-ttu-id="9d0a8-118">使用下列步驟來尋找及購買附加元件。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-118">Use the following steps to find and buy add-ons.</span></span> <span data-ttu-id="9d0a8-119">清單僅包含您可以使用的附加元件。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-119">The list only includes add-ons that are available to you.</span></span> <span data-ttu-id="9d0a8-120">此清單是根據您目前使用中的訂閱，以及您已有的任何其他現有的增益集。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-120">This list is based on your currently active subscriptions, and any other existing add-ons you already have.</span></span> <span data-ttu-id="9d0a8-121">如果清單上沒有增益集，便無法購買。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-121">If an add-on isn’t on the list, it’s not available to buy.</span></span>
+
+<span data-ttu-id="9d0a8-122">如需商務用 Skype 附加元件的資訊，請參閱[商務用 Skype 及 Microsoft Teams 附加元件授權](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-122">For information about Skype for Business add-ons, see [Skype for Business and Microsoft Teams add-on licensing](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).</span></span>
 
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="1bcf6-110">在系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a> ] 頁面。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-110">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.</span></span>
-
-2. <span data-ttu-id="1bcf6-111">在 [ **購買服務** ] 頁面的底部，選取 [ **附加** 元件]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-111">At the bottom of the **Purchase services** page, select **Add-ons**.</span></span>
-
-3. <span data-ttu-id="1bcf6-112">在 [ **購買服務** ] 頁面上，選取您要購買的附加元件訂閱。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-112">On the **Purchase services** page, select the add-on subscription that you want to buy.</span></span>
-
-4. <span data-ttu-id="1bcf6-113">輸入您需要的授權數目，並選擇要按月付款或按年付款。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-113">Enter the number of licenses that you need, and choose whether to pay each month or for the whole year.</span></span> <span data-ttu-id="1bcf6-114">選擇是否要自動將授權指派給目前未獲授權的所有使用者。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-114">Choose whether you want to automatically assign licenses to everyone who does not currently have a license.</span></span> <span data-ttu-id="1bcf6-115">如有顯示，請選取基礎訂閱。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-115">If shown, select a base subscription.</span></span>
-
-5. <span data-ttu-id="1bcf6-116">選取 [ **立即查看** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-116">Select **Check out now**.</span></span>
-
-6. <span data-ttu-id="1bcf6-117">查看定價資訊，然後選取 **[下一步]** 。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-117">Review the pricing information, then select **Next**.</span></span>
-
-7. <span data-ttu-id="1bcf6-118">提供您的付款資訊，然後選取 [ **下訂單** ] \> **移至** [系統管理] 首頁。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-118">Provide your payment information, and then select **Place order** \> **Go to Admin Home**.</span></span>
+1. <span data-ttu-id="9d0a8-123">在系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">購買服務</a> ] 頁面。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-123">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.</span></span>
+2. <span data-ttu-id="9d0a8-124">在 [ **購買服務** ] 頁面的底部，選取 [ **附加** 元件]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-124">At the bottom of the **Purchase services** page, select **Add-ons**.</span></span>
+3. <span data-ttu-id="9d0a8-125">在 [ **購買服務** ] 頁面上，選取您要購買的附加元件。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-125">On the **Purchase services** page, select the add-on that you want to buy.</span></span>
+4. <span data-ttu-id="9d0a8-126">在 [產品詳細資料] 頁面上，選取 [ **購買**]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-126">On the product details page, select **Buy**.</span></span>
+5. <span data-ttu-id="9d0a8-127">如有需要，請完成任何其他訂單資訊。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-127">If needed, complete any additional order information.</span></span> <span data-ttu-id="9d0a8-128">此資訊可能包括選取附加元件的訂閱。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-128">This information might include selecting the subscription the add-on is for.</span></span> <span data-ttu-id="9d0a8-129">完成後，請選取 [ **立即** 取出]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-129">When you’re finished, select **Check out now**.</span></span>
+6. <span data-ttu-id="9d0a8-130">如有需要，請複查訂單及定價資訊，然後選取 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-130">If needed, review the order and pricing information, then select **Next**.</span></span>
+7. <span data-ttu-id="9d0a8-131">選擇付款條件，或新增新的訂單，然後選取 [下一張 **訂單**] 移至 [系統 > **管理首頁**]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-131">Choose a payment method, or add a new one, then select **Place order** > **Go to Admin Home**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="1bcf6-119">在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-119">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
-
-2. <span data-ttu-id="1bcf6-120">在 [ **訂閱** ] 頁面上，選取您要為其購買附加元件的訂閱。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-120">On the **Subscriptions** page, select the subscription for which you want to buy an add-on.</span></span>
-
-3. <span data-ttu-id="1bcf6-121">在 [訂閱詳細資料] 左下角，選取 [ **附加** 元件 \> **購買附加** 元件]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-121">On the bottom-left corner of the subscription details, select **Add-ons** \> **Buy add-ons**.</span></span>
-
-    ![在 Microsoft 365 系統管理中心的 [訂閱] 頁面上，購買附加元件連結。](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
-  
-4. <span data-ttu-id="1bcf6-123">在 [ **購買服務** ] 頁面上，用滑鼠移過或點擊您想要購買的附加元件訂閱，然後選取 [ **立即購買** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-123">On the **Purchase services** page, mouse over or tap the add-on subscription that you want to buy, and then select **Buy now**.</span></span>
-
-5. <span data-ttu-id="1bcf6-124">輸入您需要的授權數目，並選擇要按月付款或按年付款。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-124">Enter the number of licenses that you need, and choose whether to pay each month or for the whole year.</span></span> <span data-ttu-id="1bcf6-125">選擇是否要自動將授權指派給目前未獲授權的所有使用者。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-125">Choose whether you want to automatically assign licenses to everyone who does not currently have a license.</span></span> <span data-ttu-id="1bcf6-126">如有顯示，請選取基礎訂閱。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-126">If shown, select a base subscription.</span></span>
-
-6. <span data-ttu-id="1bcf6-127">選取 [ **立即查看** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-127">Select **Check out now**.</span></span>
-
-7. <span data-ttu-id="1bcf6-128">查看定價資訊，然後選取 **[下一步]** 。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-128">Review the pricing information, and then select **Next**.</span></span>
-
-8. <span data-ttu-id="1bcf6-129">提供您的付款資訊，然後選取 [ **下訂單** ] \> **移至** [系統管理] 首頁。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-129">Provide your payment information, and then select **Place order** \> **Go to Admin Home**.</span></span>
+1. <span data-ttu-id="9d0a8-132">在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-132">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
+2. <span data-ttu-id="9d0a8-133">在 [ **訂閱** ] 頁面上，選取您要為其購買附加元件的訂閱。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-133">On the **Subscriptions** page, select the subscription for which you want to buy an add-on.</span></span>
+3. <span data-ttu-id="9d0a8-134">在 [訂閱詳細資料] 左下角，選取 [ **附加** 元件 \> **購買附加** 元件]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-134">On the bottom-left corner of the subscription details, select **Add-ons** \> **Buy add-ons**.</span></span>
+    <span data-ttu-id="9d0a8-135">![在 Microsoft 365 系統管理中心的 [訂閱] 頁面上，購買附加元件連結。](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)</span><span class="sxs-lookup"><span data-stu-id="9d0a8-135">![Buy add-ons link on the Subscriptions page of the Microsoft 365 admin center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)</span></span>
+4. <span data-ttu-id="9d0a8-136">在 [ **購買服務** ] 頁面上，用滑鼠移過或點擊您想要購買的附加元件訂閱，然後選取 [ **立即購買**]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-136">On the **Purchase services** page, mouse over or tap the add-on subscription that you want to buy, and then select **Buy now**.</span></span>
+5. <span data-ttu-id="9d0a8-137">輸入您需要的授權數目，並選擇要按月付款或按年付款。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-137">Enter the number of licenses that you need, and choose whether to pay each month or for the whole year.</span></span> <span data-ttu-id="9d0a8-138">選擇是否要自動將授權指派給任何目前沒有人的使用者。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-138">Choose whether to automatically assign licenses to everyone who doesn't currently have one.</span></span> <span data-ttu-id="9d0a8-139">如有顯示，請選取基礎訂閱。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-139">If shown, select a base subscription.</span></span>
+6. <span data-ttu-id="9d0a8-140">選取 [ **立即查看**]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-140">Select **Check out now**.</span></span>
+7. <span data-ttu-id="9d0a8-141">查看定價資訊，然後選取 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-141">Review the pricing information, and then select **Next**.</span></span>
+8. <span data-ttu-id="9d0a8-142">提供您的付款資訊，然後選取 [ **下訂單**] \> **移至**[系統管理] 首頁。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-142">Provide your payment information, and then select **Place order** \> **Go to Admin Home**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="1bcf6-130">在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-130">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
-
-2. <span data-ttu-id="1bcf6-131">在 [ **訂閱** ] 頁面上，選取您要為其購買附加元件的訂閱。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-131">On the **Subscriptions** page, select the subscription for which you want to buy an add-on.</span></span>
-
-3. <span data-ttu-id="1bcf6-132">在 [訂閱詳細資料] 左下角，選取 [ **附加** 元件 \> **購買附加** 元件]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-132">On the bottom-left corner of the subscription details, select **Add-ons** \> **Buy add-ons**.</span></span>
-
-    ![在 Microsoft 365 系統管理中心的 [訂閱] 頁面上，購買附加元件連結。](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
-  
-4. <span data-ttu-id="1bcf6-134">在 [ **購買服務** ] 頁面上，用滑鼠移過或點擊您想要購買的附加元件訂閱，然後選取 [ **立即購買** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-134">On the **Purchase services** page, mouse over or tap the add-on subscription that you want to buy, and then select **Buy now**.</span></span>
-
-5. <span data-ttu-id="1bcf6-135">輸入您需要的授權數目，並選擇要按月付款或按年付款。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-135">Enter the number of licenses that you need, and choose whether to pay each month or for the whole year.</span></span> <span data-ttu-id="1bcf6-136">選擇是否要自動將授權指派給目前未獲授權的所有使用者。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-136">Choose whether you want to automatically assign licenses to everyone who does not currently have a license.</span></span> <span data-ttu-id="1bcf6-137">如有顯示，請選取基礎訂閱。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-137">If shown, select a base subscription.</span></span>
-
-6. <span data-ttu-id="1bcf6-138">選取 [ **立即查看** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-138">Select **Check out now**.</span></span>
-
-7. <span data-ttu-id="1bcf6-139">查看定價資訊，然後選取 **[下一步]** 。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-139">Review the pricing information, and then select **Next**.</span></span>
-
-8. <span data-ttu-id="1bcf6-140">提供您的付款資訊，然後選取 [ **下訂單** ] \> **移至** [系統管理] 首頁。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-140">Provide your payment information, and then select **Place order** \> **Go to Admin Home**.</span></span>
+1. <span data-ttu-id="9d0a8-143">在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-143">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
+2. <span data-ttu-id="9d0a8-144">在 [ **訂閱** ] 頁面上，選取您要為其購買附加元件的訂閱。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-144">On the **Subscriptions** page, select the subscription for which you want to buy an add-on.</span></span>
+3. <span data-ttu-id="9d0a8-145">在 [訂閱詳細資料] 左下角，選取 [ **附加** 元件 \> **購買附加** 元件]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-145">On the bottom-left corner of the subscription details, select **Add-ons** \> **Buy add-ons**.</span></span>
+    <span data-ttu-id="9d0a8-146">![在 Microsoft 365 系統管理中心的 [訂閱] 頁面上，購買附加元件連結。](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)</span><span class="sxs-lookup"><span data-stu-id="9d0a8-146">![Buy add-ons link on the Subscriptions page of the Microsoft 365 admin center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)</span></span>
+4. <span data-ttu-id="9d0a8-147">在 [ **購買服務** ] 頁面上，用滑鼠移過或點擊您想要購買的附加元件訂閱，然後選取 [ **立即購買**]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-147">On the **Purchase services** page, mouse over or tap the add-on subscription that you want to buy, and then select **Buy now**.</span></span>
+5. <span data-ttu-id="9d0a8-148">輸入您需要的授權數目，並選擇要按月付款或按年付款。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-148">Enter the number of licenses that you need, and choose whether to pay each month or for the whole year.</span></span> <span data-ttu-id="9d0a8-149">選擇是否要自動將授權指派給任何目前沒有人的使用者。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-149">Choose whether to automatically assign licenses to everyone who doesn't currently have one.</span></span> <span data-ttu-id="9d0a8-150">如有顯示，請選取基礎訂閱。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-150">If shown, select a base subscription.</span></span>
+6. <span data-ttu-id="9d0a8-151">選取 [ **立即查看**]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-151">Select **Check out now**.</span></span>
+7. <span data-ttu-id="9d0a8-152">查看定價資訊，然後選取 **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-152">Review the pricing information, and then select **Next**.</span></span>
+8. <span data-ttu-id="9d0a8-153">提供您的付款資訊，然後選取 [ **下訂單**] \> **移至**[系統管理] 首頁。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-153">Provide your payment information, and then select **Place order** \> **Go to Admin Home**.</span></span>
 
 ::: moniker-end
 
-## <a name="update-an-add-on"></a><span data-ttu-id="1bcf6-141">更新附加元件</span><span class="sxs-lookup"><span data-stu-id="1bcf6-141">Update an add-on</span></span>
+## <a name="manage-an-add-on"></a><span data-ttu-id="9d0a8-154">管理附加元件</span><span class="sxs-lookup"><span data-stu-id="9d0a8-154">Manage an add-on</span></span>
 
-<span data-ttu-id="1bcf6-142">用來更新附加元件的步驟，取決於附加元件是傳統附加元件，還是獨立附加元件。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-142">The steps that you use to update an add-on depend on whether the add-on is a traditional add-on, or a standalone add-on.</span></span>
+<span data-ttu-id="9d0a8-155">您可以在 [ **產品** ] 頁面上，管理獨立的附加元件訂閱，其方式與管理任何其他訂閱的方式相同。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-155">You manage a standalone add-on subscription the same way that you manage any other subscription – on the **Your products** page.</span></span> <span data-ttu-id="9d0a8-156">例如，您可以 [購買或移除授權](licenses/buy-licenses.md)、 [管理週期性的計費](subscriptions/renew-your-subscription.md)，以及 [編輯或取代](billing-and-payments/manage-payment-methods.md) 獨立附加元件訂閱的付款條件。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-156">For example, you can [buy or remove licenses](licenses/buy-licenses.md), [manage recurring billing](subscriptions/renew-your-subscription.md), and [edit or replace payment methods](billing-and-payments/manage-payment-methods.md) for standalone add-on subscriptions.</span></span>
 
-<span data-ttu-id="1bcf6-143">*傳統附加* 元件會連結至特定訂閱。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-143">*Traditional add-ons* are linked to a specific subscription.</span></span> <span data-ttu-id="1bcf6-144">如果您取消訂閱，也會取消相關聯的增益集。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-144">If you cancel the subscription, the associated add-on is also cancelled.</span></span>
+<span data-ttu-id="9d0a8-157">您可以移至包含它的訂閱並在那裡進行變更，以管理傳統的附加元件。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-157">You manage a traditional add-on by going to the subscription that contains it and making changes there.</span></span> <span data-ttu-id="9d0a8-158">使用下列步驟來管理傳統的附加元件。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-158">Use the following steps to manage a traditional add-on.</span></span>
   
-<span data-ttu-id="1bcf6-145">*獨立載入* 宏未連結至特定訂閱。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-145">*Standalone add-ons* are not linked to a specific subscription.</span></span> <span data-ttu-id="1bcf6-146">獨立增益集會在 **您的產品** 頁面上顯示為個別訂閱，並擁有自己的到期日。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-146">Standalone add-ons appear as a separate subscription on the **Your products** page, and have their own expiration date.</span></span> <span data-ttu-id="1bcf6-147">您可以使用管理其他訂閱的相同方式來管理獨立的附加元件。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-147">You manage a standalone add-on the same way that you manage any other subscription.</span></span>
-  
-### <a name="update-a-traditional-add-on"></a><span data-ttu-id="1bcf6-148">更新傳統附加元件</span><span class="sxs-lookup"><span data-stu-id="1bcf6-148">Update a traditional add-on</span></span>
-
 ::: moniker range="o365-worldwide"
 
-1. <span data-ttu-id="1bcf6-149">在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-149">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
-
-2. <span data-ttu-id="1bcf6-150">在 [ **您的產品** ] 頁面上，選取您要更新附加元件的訂閱。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-150">On the **Your products** page, select the subscription for which you want to update an add-on.</span></span>
-
-3. <span data-ttu-id="1bcf6-151">選取 [ **附加** 元件]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-151">Select **Add-ons**.</span></span> <span data-ttu-id="1bcf6-152">您已購買的附加元件會顯示出來。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-152">The add-ons that you have purchased are shown.</span></span>
-
-4. <span data-ttu-id="1bcf6-153">選取您要變更之附加元件的 [ **變更數量** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-153">Select **Change quantity** for the add-on you want to change.</span></span>
-
-5. <span data-ttu-id="1bcf6-154">輸入您要對訂閱進行的數量變更，然後選取 [ **提交變更** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-154">Enter the quantity change you want for the subscription, then select **Submit change**.</span></span>
+1. <span data-ttu-id="9d0a8-159">在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-159">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+2. <span data-ttu-id="9d0a8-160">在 [ **產品** ] 索引標籤上，選取包含您要更新之附加元件的訂閱。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-160">On the **Products** tab, select the subscription that contains the add-on that you want to update.</span></span>
+3. <span data-ttu-id="9d0a8-161">在 [訂閱詳細資料] 頁面上，[ **附加** 元件] 區段會列出您購買的附加元件。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-161">On the subscription details page, the **Add-ons** section lists the add-ons that you bought.</span></span> <span data-ttu-id="9d0a8-162">選取 [ **管理載入** 宏]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-162">Select **Manage add-ons**.</span></span>
+4. <span data-ttu-id="9d0a8-163">在 [ **管理** 增益集] 窗格的 [ **附加** 元件] 下拉式清單中，選取您要變更的附加元件。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-163">In the **Manage add-ons** pane, from the **Add-on** drop-down list, select the add-on that you want to change.</span></span>
+5. <span data-ttu-id="9d0a8-164">輸入附加元件的數量變更，然後選取 [ **儲存**]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-164">Enter a quantity change for the add-on, then select **Save**.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="1bcf6-155">在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-155">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
-
-2. <span data-ttu-id="1bcf6-156">在 [ **訂閱** ] 頁面上，選取您要更新附加元件的訂閱。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-156">On the **Subscriptions** page, select the subscription for which you want to update an add-on.</span></span>
-
-3. <span data-ttu-id="1bcf6-157">選取 [ **附加** 元件]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-157">Select **Add-ons**.</span></span>
-
-    <span data-ttu-id="1bcf6-158">隨即會顯示您購買的附加元件，且每個附加元件會在其下有 [ **變更數量** ] 連結。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-158">The add-ons that you have purchased are shown and each of the add-ons will have a **Change quantity** link below it.</span></span>
-
-4. <span data-ttu-id="1bcf6-159">選取您要更新之附加元件的 [ **變更數量** ] 連結。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-159">Select the **Change quantity** link for the add-on that you want to update.</span></span>
-
-    ![[附加元件] 連結和 [變更數量] 連結。](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
-  
-5. <span data-ttu-id="1bcf6-161">在方塊中輸入您需要的使用者授權數目，然後選取 [ **提交** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-161">Enter the number of user licenses that you need in the box, and then select **Submit**.</span></span>
-
+1. <span data-ttu-id="9d0a8-165">在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-165">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
+2. <span data-ttu-id="9d0a8-166">在 [ **訂閱** ] 頁面上，選取您要更新附加元件的訂閱。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-166">On the **Subscriptions** page, select the subscription for which you want to update an add-on.</span></span>
+3. <span data-ttu-id="9d0a8-167">選取 [ **附加** 元件]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-167">Select **Add-ons**.</span></span>
+    <span data-ttu-id="9d0a8-168">隨即會顯示您購買的附加元件，且每個附加元件會在其下有 [ **變更數量** ] 連結。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-168">The add-ons that you have purchased are shown and each of the add-ons will have a **Change quantity** link below it.</span></span>
+4. <span data-ttu-id="9d0a8-169">選取您要更新之附加元件的 [ **變更數量** ] 連結。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-169">Select the **Change quantity** link for the add-on that you want to update.\</span></span>
+    <span data-ttu-id="9d0a8-170">![[附加元件] 連結和 [變更數量] 連結。](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)</span><span class="sxs-lookup"><span data-stu-id="9d0a8-170">![Add-ons link and the change quantity link.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)</span></span>
+5. <span data-ttu-id="9d0a8-171">在方塊中輸入您需要的使用者授權數目，然後選取 [ **提交**]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-171">Enter the number of user licenses that you need in the box, and then select **Submit**.</span></span>
     > [!TIP]
-    > <span data-ttu-id="1bcf6-162">您也可以使用向上鍵和向下鍵來變更使用者授權的數量，或直接在方塊中輸入您要的數量。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-162">You can also use the up-arrow and down-arrow to change the quantity of user licenses or just enter the number you want in the box.</span></span>
-  
+    > <span data-ttu-id="9d0a8-172">您也可以使用向上鍵和向下鍵來變更使用者授權的數量，或直接在方塊中輸入您要的數量。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-172">You can also use the up-arrow and down-arrow to change the quantity of user licenses or just enter the number you want in the box.</span></span>
+
     ![[新增或移除授權] 對話方塊上的 [授權總數] 方塊和 [送出] 按鈕。](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="1bcf6-164">在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-164">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
-
-2. <span data-ttu-id="1bcf6-165">在 [ **訂閱** ] 頁面上，選取您要更新附加元件的訂閱。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-165">On the **Subscriptions** page, select the subscription for which you want to update an add-on.</span></span>
-
-3. <span data-ttu-id="1bcf6-166">選取 [ **附加** 元件]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-166">Select **Add-ons**.</span></span>
-
-    <span data-ttu-id="1bcf6-167">隨即會顯示您購買的附加元件，且每個附加元件會在其下有 [ **變更數量** ] 連結。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-167">The add-ons that you have purchased are shown and each of the add-ons will have a **Change quantity** link below it.</span></span>
-
-4. <span data-ttu-id="1bcf6-168">選取您要更新之附加元件的 [ **變更數量** ] 連結。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-168">Select the **Change quantity** link for the add-on that you want to update.</span></span>
-
-    ![[附加元件] 連結和 [變更數量] 連結。](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
-  
-5. <span data-ttu-id="1bcf6-170">在方塊中輸入您需要的使用者授權數目，然後選取 [ **提交** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-170">Enter the number of user licenses that you need in the box, and then select **Submit**.</span></span>
-
+1. <span data-ttu-id="9d0a8-174">在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-174">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
+2. <span data-ttu-id="9d0a8-175">在 [ **訂閱** ] 頁面上，選取您要更新附加元件的訂閱。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-175">On the **Subscriptions** page, select the subscription for which you want to update an add-on.</span></span>
+3. <span data-ttu-id="9d0a8-176">選取 [ **附加** 元件]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-176">Select **Add-ons**.</span></span>
+    <span data-ttu-id="9d0a8-177">隨即會顯示您購買的附加元件，且每個附加元件會在其下有 [ **變更數量** ] 連結。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-177">The add-ons that you have purchased are shown and each of the add-ons will have a **Change quantity** link below it.</span></span>
+4. <span data-ttu-id="9d0a8-178">選取您要更新之附加元件的 [ **變更數量** ] 連結。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-178">Select the **Change quantity** link for the add-on that you want to update.\</span></span>
+    <span data-ttu-id="9d0a8-179">![[附加元件] 連結和 [變更數量] 連結。](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)</span><span class="sxs-lookup"><span data-stu-id="9d0a8-179">![Add-ons link and the change quantity link.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)</span></span>
+5. <span data-ttu-id="9d0a8-180">在方塊中輸入您需要的使用者授權數目，然後選取 [ **提交**]。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-180">Enter the number of user licenses that you need in the box, and then select **Submit**.</span></span>
     > [!TIP]
-    > <span data-ttu-id="1bcf6-171">您也可以使用向上鍵和向下鍵來變更使用者授權的數量，或直接在方塊中輸入您要的數量。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-171">You can also use the up-arrow and down-arrow to change the quantity of user licenses or just enter the number you want in the box.</span></span>
-  
-    ![[新增或移除授權] 對話方塊上的 [授權總數] 方塊和 [送出] 按鈕。](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
-
-
-::: moniker-end
-
-### <a name="update-a-standalone-add-on"></a><span data-ttu-id="1bcf6-173">更新獨立附加元件</span><span class="sxs-lookup"><span data-stu-id="1bcf6-173">Update a standalone add-on</span></span>
-
-::: moniker range="o365-worldwide"
-
-1. <span data-ttu-id="1bcf6-174">在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-174">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
-
-2. <span data-ttu-id="1bcf6-175">在 [ **產品** ] 頁面上，選取您要更新的附加元件訂閱，然後選取 [ **新增/移除授權** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-175">On the **Your products** page, select the add-on subscription that you want to update, and then select **Add/Remove licenses**.</span></span>
-
-3. <span data-ttu-id="1bcf6-176">在方塊中輸入您需要的授權數目，然後選取 [ **提交變更** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-176">Enter the number of licenses that you need in the box, and then select **Submit change**.</span></span>
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. <span data-ttu-id="1bcf6-177">在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-177">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
-
-2. <span data-ttu-id="1bcf6-178">在 [ **訂閱** ] 頁面上，選取您要更新的附加元件訂閱，然後選取 [ **新增/移除授權** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-178">On the **Subscriptions** page, select the add-on subscription that you want to update, and then select **Add/Remove licenses**.</span></span>
-
-3. <span data-ttu-id="1bcf6-179">在方塊中輸入您需要的授權數目，然後選取 [ **提交** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-179">Enter the number of licenses that you need in the box, and then select **Submit**.</span></span>
-
-    > [!TIP]
-    > <span data-ttu-id="1bcf6-180">您也可以使用向上鍵和向中鍵來變更授權數量，或只在方塊中輸入您想要的號碼。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-180">You can also use the up-arrow and down-arrow to change the quantity of licenses or just enter the number you want in the box.</span></span>
+    > <span data-ttu-id="9d0a8-181">您也可以使用向上鍵和向下鍵來變更使用者授權的數量，或直接在方塊中輸入您要的數量。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-181">You can also use the up-arrow and down-arrow to change the quantity of user licenses or just enter the number you want in the box.</span></span>
   
     ![[新增或移除授權] 對話方塊上的 [授權總數] 方塊和 [送出] 按鈕。](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
-::: moniker range="o365-21vianet"
+## <a name="remove-an-add-on"></a><span data-ttu-id="9d0a8-183">移除附加元件</span><span class="sxs-lookup"><span data-stu-id="9d0a8-183">Remove an add-on</span></span>
 
-1. <span data-ttu-id="1bcf6-182">在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-182">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
+<span data-ttu-id="9d0a8-184">若要移除獨立附加元件訂閱，您可以 [取消訂閱](subscriptions/cancel-your-subscription.md)，就像任何其他訂閱一樣。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-184">To remove a standalone add-on subscription, you [cancel the subscription](subscriptions/cancel-your-subscription.md), just like any other subscription.</span></span> <span data-ttu-id="9d0a8-185">您也可以 [關閉重複計費](subscriptions/renew-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-185">Or you can [turn off Recurring billing](subscriptions/renew-your-subscription.md).</span></span>
 
-2. <span data-ttu-id="1bcf6-183">在 [ **訂閱** ] 頁面上，選取您要更新的附加元件訂閱，然後選取 [ **新增/移除授權** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-183">On the **Subscriptions** page, select the add-on subscription that you want to update, and then select **Add/Remove licenses**.</span></span>
-
-3. <span data-ttu-id="1bcf6-184">在方塊中輸入您需要的授權數目，然後選取 [ **提交** ]。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-184">Enter the number of licenses that you need in the box, and then select **Submit**.</span></span>
-
-    > [!TIP]
-    > <span data-ttu-id="1bcf6-185">您也可以使用向上鍵和向中鍵來變更授權數量，或只在方塊中輸入您想要的號碼。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-185">You can also use the up-arrow and down-arrow to change the quantity of licenses or just enter the number you want in the box.</span></span>
+<span data-ttu-id="9d0a8-186">您無法移除傳統的附加元件。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-186">You can’t remove a traditional add-on.</span></span> <span data-ttu-id="9d0a8-187">如果您想要移除傳統附加元件，請 [聯繫支援人員以取得協助](../admin/contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="9d0a8-187">If you want to remove a traditional add-on, [contact support for help](../admin/contact-support-for-business-products.md).</span></span>
   
-    ![[新增或移除授權] 對話方塊上的 [授權總數] 方塊和 [送出] 按鈕。](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+## <a name="related-content"></a><span data-ttu-id="9d0a8-188">相關內容</span><span class="sxs-lookup"><span data-stu-id="9d0a8-188">Related content</span></span>
 
-::: moniker-end
-
-## <a name="remove-an-add-on"></a><span data-ttu-id="1bcf6-187">移除附加元件</span><span class="sxs-lookup"><span data-stu-id="1bcf6-187">Remove an add-on</span></span>
-
-<span data-ttu-id="1bcf6-188">您可以取消獨立的附加元件，方式是 [取消訂閱](subscriptions/cancel-your-subscription.md)。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-188">You can cancel a standalone add-on the same way that you [cancel a subscription](subscriptions/cancel-your-subscription.md).</span></span> <span data-ttu-id="1bcf6-189">或者，您可以使用上述步驟，為獨立附加元件設定 **週期性的計費** 。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-189">Or you can set **Recurring billing** to off for a standalone add-on by using the steps above.</span></span> <span data-ttu-id="1bcf6-190">不過，您無法在購買傳統增益集後將其移除。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-190">However, you cannot remove a traditional add-on after it's been bought.</span></span> <span data-ttu-id="1bcf6-191">如果您需要移除傳統附加元件，請 [聯繫支援人員以取得協助](../admin/contact-support-for-business-products.md)。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-191">If you need to remove a traditional add-on, please [contact support for help](../admin/contact-support-for-business-products.md).</span></span>
-  
-## <a name="available-add-ons"></a><span data-ttu-id="1bcf6-192">可用的附件</span><span class="sxs-lookup"><span data-stu-id="1bcf6-192">Available add-ons</span></span>
-
-<span data-ttu-id="1bcf6-193">下表列出可用於不同版本的 Microsoft 365 for business 的附加元件。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-193">The following table lists add-ons that are available for different editions of Microsoft 365 for business.</span></span>
-  
-<span data-ttu-id="1bcf6-194">如需商務用 Skype 附加元件的資訊，請參閱[商務用 Skype 及 Microsoft Teams 附加元件授權](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing)。</span><span class="sxs-lookup"><span data-stu-id="1bcf6-194">For information about Skype for Business add-ons, see [Skype for Business and Microsoft Teams add-on licensing](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).</span></span>
-  
-****
-
-|<span data-ttu-id="1bcf6-195">**附加元件**</span><span class="sxs-lookup"><span data-stu-id="1bcf6-195">**Add-on**</span></span>|<span data-ttu-id="1bcf6-196">**適用於這些訂閱**</span><span class="sxs-lookup"><span data-stu-id="1bcf6-196">**Available in these subscriptions**</span></span>|
-|:-----|:-----|
-|<span data-ttu-id="1bcf6-197">客戶加密箱</span><span class="sxs-lookup"><span data-stu-id="1bcf6-197">Customer Lockbox</span></span>  <br/> | <span data-ttu-id="1bcf6-198">Office 365 企業版 E1</span><span class="sxs-lookup"><span data-stu-id="1bcf6-198">Office 365 Enterprise E1</span></span>  <br/>  <span data-ttu-id="1bcf6-199">Office 365 Enterprise E3</span><span class="sxs-lookup"><span data-stu-id="1bcf6-199">Office 365 Enterprise E3</span></span>  <br/>  <span data-ttu-id="1bcf6-200">Office 365 Enterprise E4</span><span class="sxs-lookup"><span data-stu-id="1bcf6-200">Office 365 Enterprise E4</span></span>  <br/> |
-|[<span data-ttu-id="1bcf6-201">Microsoft Defender for Office 365</span><span class="sxs-lookup"><span data-stu-id="1bcf6-201">Microsoft Defender for Office 365</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | <span data-ttu-id="1bcf6-202">Office 365 企業版 E1</span><span class="sxs-lookup"><span data-stu-id="1bcf6-202">Office 365 Enterprise E1</span></span>  <br/>  <span data-ttu-id="1bcf6-203">Office 365 Enterprise E3</span><span class="sxs-lookup"><span data-stu-id="1bcf6-203">Office 365 Enterprise E3</span></span>  <br/>  <span data-ttu-id="1bcf6-204">Office 365 Enterprise E4</span><span class="sxs-lookup"><span data-stu-id="1bcf6-204">Office 365 Enterprise E4</span></span>  <br/> |
-|[<span data-ttu-id="1bcf6-205">Exchange Online 封存</span><span class="sxs-lookup"><span data-stu-id="1bcf6-205">Exchange Online Archiving</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | <span data-ttu-id="1bcf6-206">Microsoft 365 商務基本版</span><span class="sxs-lookup"><span data-stu-id="1bcf6-206">Microsoft 365 Business Basic</span></span>  <br/>  <span data-ttu-id="1bcf6-207">Microsoft 365 商務標準版</span><span class="sxs-lookup"><span data-stu-id="1bcf6-207">Microsoft 365 Business Standard</span></span>  <br/>  <span data-ttu-id="1bcf6-208">Office 365 企業版 E1</span><span class="sxs-lookup"><span data-stu-id="1bcf6-208">Office 365 Enterprise E1</span></span>  <br/>  <span data-ttu-id="1bcf6-209">Office 365 企業版 F1</span><span class="sxs-lookup"><span data-stu-id="1bcf6-209">Office 365 Enterprise F1</span></span>  <br/> |
-|<span data-ttu-id="1bcf6-210">Microsoft 我的分析</span><span class="sxs-lookup"><span data-stu-id="1bcf6-210">Microsoft MyAnalytics</span></span>  <br/> | <span data-ttu-id="1bcf6-211">Office 365 企業版 E1</span><span class="sxs-lookup"><span data-stu-id="1bcf6-211">Office 365 Enterprise E1</span></span>  <br/>  <span data-ttu-id="1bcf6-212">Office 365 Enterprise E3</span><span class="sxs-lookup"><span data-stu-id="1bcf6-212">Office 365 Enterprise E3</span></span>  <br/>  <span data-ttu-id="1bcf6-213">Office 365 Enterprise E4</span><span class="sxs-lookup"><span data-stu-id="1bcf6-213">Office 365 Enterprise E4</span></span>  <br/> |
-|<span data-ttu-id="1bcf6-214">Office 365 進階合規性</span><span class="sxs-lookup"><span data-stu-id="1bcf6-214">Office 365 Advanced Compliance</span></span>  <br/> | <span data-ttu-id="1bcf6-215">Office 365 企業版 E1</span><span class="sxs-lookup"><span data-stu-id="1bcf6-215">Office 365 Enterprise E1</span></span>  <br/>  <span data-ttu-id="1bcf6-216">Office 365 Enterprise E3</span><span class="sxs-lookup"><span data-stu-id="1bcf6-216">Office 365 Enterprise E3</span></span>  <br/>  <span data-ttu-id="1bcf6-217">Office 365 Enterprise E4</span><span class="sxs-lookup"><span data-stu-id="1bcf6-217">Office 365 Enterprise E4</span></span>  <br/> |
-|<span data-ttu-id="1bcf6-218">Office 365 額外檔案儲存空間</span><span class="sxs-lookup"><span data-stu-id="1bcf6-218">Office 365 Extra File Storage</span></span>  <br/> | <span data-ttu-id="1bcf6-219">Microsoft 365 Apps 商務版</span><span class="sxs-lookup"><span data-stu-id="1bcf6-219">Microsoft 365 Apps for business</span></span>  <br/>  <span data-ttu-id="1bcf6-220">Microsoft 365 商務基本版</span><span class="sxs-lookup"><span data-stu-id="1bcf6-220">Microsoft 365 Business Basic</span></span>  <br/>  <span data-ttu-id="1bcf6-221">Microsoft 365 商務標準版</span><span class="sxs-lookup"><span data-stu-id="1bcf6-221">Microsoft 365 Business Standard</span></span>  <br/>  <span data-ttu-id="1bcf6-222">Office 365 Enterprise E1</span><span class="sxs-lookup"><span data-stu-id="1bcf6-222">Office 365 Enterprise E1</span></span>  <br/>  <span data-ttu-id="1bcf6-223">Office 365 Enterprise E2</span><span class="sxs-lookup"><span data-stu-id="1bcf6-223">Office 365 Enterprise E2</span></span>  <br/>  <span data-ttu-id="1bcf6-224">Office 365 Enterprise E3</span><span class="sxs-lookup"><span data-stu-id="1bcf6-224">Office 365 Enterprise E3</span></span>  <br/>  <span data-ttu-id="1bcf6-225">Office 365 Enterprise E4</span><span class="sxs-lookup"><span data-stu-id="1bcf6-225">Office 365 Enterprise E4</span></span>  <br/>  <span data-ttu-id="1bcf6-226">Office 365 企業版 E5</span><span class="sxs-lookup"><span data-stu-id="1bcf6-226">Office 365 Enterprise E5</span></span>  <br/>  <span data-ttu-id="1bcf6-227">使用 SharePoint 方案1的 web Office</span><span class="sxs-lookup"><span data-stu-id="1bcf6-227">Office for the web with SharePoint Plan 1</span></span>  <br/>  <span data-ttu-id="1bcf6-228">使用 SharePoint 方案2的 web Office</span><span class="sxs-lookup"><span data-stu-id="1bcf6-228">Office for the web with SharePoint Plan 2</span></span>  <br/>  <span data-ttu-id="1bcf6-229">SharePoint Online 方案 1</span><span class="sxs-lookup"><span data-stu-id="1bcf6-229">SharePoint Online Plan 1</span></span>  <br/>  <span data-ttu-id="1bcf6-230">SharePoint Online 方案 2</span><span class="sxs-lookup"><span data-stu-id="1bcf6-230">SharePoint Online Plan 2</span></span>  <br/> |
-|<span data-ttu-id="1bcf6-231">電話系統</span><span class="sxs-lookup"><span data-stu-id="1bcf6-231">Phone System</span></span>  <br/> | <span data-ttu-id="1bcf6-232">Office 365 企業版 E1</span><span class="sxs-lookup"><span data-stu-id="1bcf6-232">Office 365 Enterprise E1</span></span>  <br/>  <span data-ttu-id="1bcf6-233">Office 365 Enterprise E3</span><span class="sxs-lookup"><span data-stu-id="1bcf6-233">Office 365 Enterprise E3</span></span>  <br/>  <span data-ttu-id="1bcf6-234">Office 365 Enterprise E4</span><span class="sxs-lookup"><span data-stu-id="1bcf6-234">Office 365 Enterprise E4</span></span>  <br/>  <span data-ttu-id="1bcf6-235">Office 365 企業版 E5</span><span class="sxs-lookup"><span data-stu-id="1bcf6-235">Office 365 Enterprise E5</span></span>  <br/> |
-|<span data-ttu-id="1bcf6-236">音訊會議</span><span class="sxs-lookup"><span data-stu-id="1bcf6-236">Audio Conferencing</span></span>  <br/> |  <span data-ttu-id="1bcf6-237">Microsoft 365 商務基本版</span><span class="sxs-lookup"><span data-stu-id="1bcf6-237">Microsoft 365 Business Basic</span></span> <br/> <span data-ttu-id="1bcf6-238">Microsoft 365 商務標準版</span><span class="sxs-lookup"><span data-stu-id="1bcf6-238">Microsoft 365 Business Standard</span></span> <br/> <span data-ttu-id="1bcf6-239">Office 365 企業版 E1</span><span class="sxs-lookup"><span data-stu-id="1bcf6-239">Office 365 Enterprise E1</span></span> <br/> <span data-ttu-id="1bcf6-240">Office 365 Enterprise E3</span><span class="sxs-lookup"><span data-stu-id="1bcf6-240">Office 365 Enterprise E3</span></span> <br/> <span data-ttu-id="1bcf6-241">Office 365 Enterprise E4</span><span class="sxs-lookup"><span data-stu-id="1bcf6-241">Office 365 Enterprise E4</span></span> <br/> <span data-ttu-id="1bcf6-242">Office 365 企業版 E5 (不含語音會議)</span><span class="sxs-lookup"><span data-stu-id="1bcf6-242">Office 365 Enterprise E5 without Audio Conferencing</span></span> <br/> <span data-ttu-id="1bcf6-243">Microsoft 365 商務進階版</span><span class="sxs-lookup"><span data-stu-id="1bcf6-243">Microsoft 365 Business Premium</span></span> <br/> <span data-ttu-id="1bcf6-244">Microsoft 365 E3</span><span class="sxs-lookup"><span data-stu-id="1bcf6-244">Microsoft 365 E3</span></span> <br/> <span data-ttu-id="1bcf6-245">Microsoft 365 E5</span><span class="sxs-lookup"><span data-stu-id="1bcf6-245">Microsoft 365 E5</span></span>  <br/> |
-|<span data-ttu-id="1bcf6-246">通訊點數</span><span class="sxs-lookup"><span data-stu-id="1bcf6-246">Communications Credits</span></span>  <br/> | <span data-ttu-id="1bcf6-247">Windows 365 企業版 E5</span><span class="sxs-lookup"><span data-stu-id="1bcf6-247">Office 365 Enterprise E5</span></span>  <br/> |
-|<span data-ttu-id="1bcf6-248">國內通話方案</span><span class="sxs-lookup"><span data-stu-id="1bcf6-248">Domestic Calling Plan</span></span> <br/> | <span data-ttu-id="1bcf6-249">Windows 365 企業版 E5</span><span class="sxs-lookup"><span data-stu-id="1bcf6-249">Office 365 Enterprise E5</span></span>  <br/> |
-|<span data-ttu-id="1bcf6-250">國際通話方案</span><span class="sxs-lookup"><span data-stu-id="1bcf6-250">International Calling Plan</span></span>  <br/> | <span data-ttu-id="1bcf6-251">Windows 365 企業版 E5</span><span class="sxs-lookup"><span data-stu-id="1bcf6-251">Office 365 Enterprise E5</span></span>  <br/> |
-  
-## <a name="related-articles"></a><span data-ttu-id="1bcf6-252">相關文章</span><span class="sxs-lookup"><span data-stu-id="1bcf6-252">Related articles</span></span>
-
-[<span data-ttu-id="1bcf6-253">新增您訂閱的儲存空間</span><span class="sxs-lookup"><span data-stu-id="1bcf6-253">Add storage space for your subscription</span></span>](add-storage-space.md)
+<span data-ttu-id="9d0a8-189">[新增您訂閱的儲存空間](add-storage-space.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="9d0a8-189">[Add storage space for your subscription](add-storage-space.md) (article)</span></span>\
+<span data-ttu-id="9d0a8-190">[購買或移除訂閱授權](licenses/buy-licenses.md) (篇) </span><span class="sxs-lookup"><span data-stu-id="9d0a8-190">[Buy or remove subscription licenses](licenses/buy-licenses.md) (article)</span></span>\
+<span data-ttu-id="9d0a8-191">開啟或 (文章) \[中的定期帳單](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on)</span><span class="sxs-lookup"><span data-stu-id="9d0a8-191">[Turn Recurring billing off or on](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) (article)\</span></span>
+<span data-ttu-id="9d0a8-192">[管理支付方式](billing-and-payments/manage-payment-methods.md) (文章) </span><span class="sxs-lookup"><span data-stu-id="9d0a8-192">[Manage payment methods](billing-and-payments/manage-payment-methods.md) (article)</span></span>

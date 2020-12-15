@@ -1,143 +1,97 @@
 ---
-title: '管理您的知識管理網路 (預覽)  '
-description: 如何設定知識管理。
+title: 在 Microsoft 365 中管理主題探索
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
-ms.date: 08/01/2020
+ms.reviewer: nkokoye
 audience: admin
 ms.topic: article
 ms.service: o365-administration
-search.appverid: ''
+search.appverid: MET150
+localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-localization_priority: None
-ms.openlocfilehash: 265816a8d3d04b8d10b529f1ea1a0b658aa2931d
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+description: 瞭解如何在 Microsoft 365 中管理主題探索。
+ms.openlocfilehash: 035fb74f1989dc7ef5b7fcf8e9c6d59b63cf2b42
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988951"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667853"
 ---
-# <a name="manage-your-knowledge-management-network-preview"></a><span data-ttu-id="0f603-103">管理您的知識管理網路 (預覽) </span><span class="sxs-lookup"><span data-stu-id="0f603-103">Manage your knowledge management network (Preview)</span></span>
+# <a name="manage-topic-discovery-in-microsoft-365"></a><span data-ttu-id="7a96d-103">在 Microsoft 365 中管理主題探索</span><span class="sxs-lookup"><span data-stu-id="7a96d-103">Manage topic discovery in Microsoft 365</span></span>
 
-> [!Note] 
-> <span data-ttu-id="0f603-104">本文內容適用于 Project Cortex 私人預覽。</span><span class="sxs-lookup"><span data-stu-id="0f603-104">The content in this article is for Project Cortex Private Preview.</span></span> <span data-ttu-id="0f603-105">[如需詳細資訊，請參閱 Project Cortex](https://aka.ms/projectcortex)。</span><span class="sxs-lookup"><span data-stu-id="0f603-105">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
+<span data-ttu-id="7a96d-104">您可以在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)管理主題探索設定。</span><span class="sxs-lookup"><span data-stu-id="7a96d-104">You can manage topic discovery settings in the [Microsoft 365 admin center](https://admin.microsoft.com).</span></span> <span data-ttu-id="7a96d-105">您必須是全域系統管理員或 SharePoint 管理員，才可執行這些工作。</span><span class="sxs-lookup"><span data-stu-id="7a96d-105">You must be a global administrator or SharePoint administrator to perform these tasks.</span></span>
 
+## <a name="to-access-topics-management-settings"></a><span data-ttu-id="7a96d-106">若要存取主題管理設定：</span><span class="sxs-lookup"><span data-stu-id="7a96d-106">To access topics management settings:</span></span>
 
-<span data-ttu-id="0f603-106">在您 [設定知識管理](set-up-topic-experiences.md)之後，任何時候，系統管理員都可以透過 Microsoft 365 系統管理中心對設定設定進行調整。</span><span class="sxs-lookup"><span data-stu-id="0f603-106">After you [set up knowledge management](set-up-topic-experiences.md), at any time afterwards an admin can make adjustments to your configuration settings through the Microsoft 365 admin center.</span></span>
+1. <span data-ttu-id="7a96d-107">在 Microsoft 365 系統管理中心中，按一下 [ **設定**]，然後按一下 [ **組織設定**]。</span><span class="sxs-lookup"><span data-stu-id="7a96d-107">In the Microsoft 365 admin center, click **Settings**, then **Org settings**.</span></span>
+2. <span data-ttu-id="7a96d-108">在 [ **服務** ] 索引標籤上，按一下 [ **知識網路**]。</span><span class="sxs-lookup"><span data-stu-id="7a96d-108">On the **Services** tab, click **Knowledge network**.</span></span>
 
-<span data-ttu-id="0f603-107">例如，您可能需要調整下列專案的設定：</span><span class="sxs-lookup"><span data-stu-id="0f603-107">For example, you may need to adjust your settings for any of the following:</span></span>
-- <span data-ttu-id="0f603-108">將新的 SharePoint 來源新增至本主題。</span><span class="sxs-lookup"><span data-stu-id="0f603-108">Add new SharePoint sources to mine topics.</span></span>
-- <span data-ttu-id="0f603-109">變更哪些使用者將可以存取主題。</span><span class="sxs-lookup"><span data-stu-id="0f603-109">Change which users will have access to topics.</span></span>
-- <span data-ttu-id="0f603-110">變更哪些使用者具有在主題中心執行工作的許可權。</span><span class="sxs-lookup"><span data-stu-id="0f603-110">Change which users have permissions to do tasks on the topic center.</span></span>
-- <span data-ttu-id="0f603-111">變更主題中心的名稱</span><span class="sxs-lookup"><span data-stu-id="0f603-111">Change the name of your topic center</span></span>
+    ![將人員連線至知識](../media/admin-org-knowledge-options-completed.png) 
 
+3. <span data-ttu-id="7a96d-110">選取 [ **主題探索** ] 索引標籤。請參閱下列各節以取得每個設定的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="7a96d-110">Select the **Topic discovery** tab. See the following sections for information about each setting.</span></span>
 
-## <a name="requirements"></a><span data-ttu-id="0f603-112">需求</span><span class="sxs-lookup"><span data-stu-id="0f603-112">Requirements</span></span> 
-<span data-ttu-id="0f603-113">您必須具有全域管理員或 SharePoint 系統管理員許可權，才能存取 Microsoft 365 系統管理中心和管理組織知識工作。</span><span class="sxs-lookup"><span data-stu-id="0f603-113">You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and manage Organizational knowledge tasks.</span></span>
+    ![知識網路-設定](../media/knowledge-network-settings-topic-discovery.png) 
 
+## <a name="select-sharepoint-topic-sources"></a><span data-ttu-id="7a96d-112">選取 SharePoint 主題來源</span><span class="sxs-lookup"><span data-stu-id="7a96d-112">Select SharePoint topic sources</span></span>
 
-## <a name="to-access-knowledge-management-settings"></a><span data-ttu-id="0f603-114">若要存取知識管理設定：</span><span class="sxs-lookup"><span data-stu-id="0f603-114">To access knowledge management settings:</span></span>
+<span data-ttu-id="7a96d-113">您可以變更組織中將會編目主題的 SharePoint 網站。</span><span class="sxs-lookup"><span data-stu-id="7a96d-113">You can change the SharePoint sites in your organization that will be crawled for topics.</span></span>
 
-1. <span data-ttu-id="0f603-115">在 Microsoft 365 系統管理中心中，選取 [ **安裝** ]，然後查看 [ **組織知識** ] 區段。</span><span class="sxs-lookup"><span data-stu-id="0f603-115">In the Microsoft 365 admin center, select **Setup** , and then view the **Organizational Knowledge** section.</span></span>
-2. <span data-ttu-id="0f603-116">在 [ **組織知識** ] 區段中，按一下 **[將人員連線到知識]** 。</span><span class="sxs-lookup"><span data-stu-id="0f603-116">In the **Organizational Knowledge** section, click **Connect people to knowledge**.</span></span><br/>
+<span data-ttu-id="7a96d-114">如果您想要包含或排除特定的網站清單，您可以使用下列 .csv 範本：</span><span class="sxs-lookup"><span data-stu-id="7a96d-114">If you want to include or exclude a specific list of sites, you can use the following .csv template:</span></span>
 
-    ![將人員連線至知識](../media/content-understanding/admin-org-knowledge-options.png) </br>
+``` csv
+Site name,URL
+```
 
-3. <span data-ttu-id="0f603-118">在 [連線 **人員至知識** ] 頁面上，選取 [ **管理** ] 開啟 [ **知識網路設定** ] 窗格。</span><span class="sxs-lookup"><span data-stu-id="0f603-118">On the **Connect people to knowledge** page, select **Manage** to open the **Knowledge network settings** pane.</span></span><br/>
+<span data-ttu-id="7a96d-115">如果您使用網站選擇器新增網站，則會將其新增至現有的網站清單，以包含或排除。</span><span class="sxs-lookup"><span data-stu-id="7a96d-115">If you add sites using the site picker, they are added to the existing list of sites to include or exclude.</span></span> <span data-ttu-id="7a96d-116">如果您上傳的是 .csv 檔案，它會覆寫任何現有的清單。</span><span class="sxs-lookup"><span data-stu-id="7a96d-116">If you upload a .csv file, it overwrites any existing list.</span></span> <span data-ttu-id="7a96d-117">如果您先前已包含或排除特定網站，請將清單下載為 .csv 檔案，進行變更，並上傳新的清單。</span><span class="sxs-lookup"><span data-stu-id="7a96d-117">If you have previously included or excluded specific sites, you and download the list as a .csv file, make changes, and upload the new list.</span></span>
 
-    ![知識網路-設定](../media/content-understanding/knowledge-network-settings.png) </br>
+<span data-ttu-id="7a96d-118">選擇網站以供主題探索</span><span class="sxs-lookup"><span data-stu-id="7a96d-118">To choose sites for topic discovery</span></span>
 
-## <a name="change-how-the-knowledge-network-can-find-topics"></a><span data-ttu-id="0f603-120">變更知識網路可尋找主題的方式</span><span class="sxs-lookup"><span data-stu-id="0f603-120">Change how the knowledge network can find topics</span></span>
+1. <span data-ttu-id="7a96d-119">在 [ **主題探索** ] 索引標籤上，選取 [ **SharePoint 主題來源**] 底下的 [ **編輯**]。</span><span class="sxs-lookup"><span data-stu-id="7a96d-119">On the **Topic discovery** tab, under **Select SharePoint topic sources**, select **Edit**.</span></span>
+2. <span data-ttu-id="7a96d-120">在 [ **選取 SharePoint 主題來源** ] 頁面上，選取要在探索過程中將其編目為主題來源的 SharePoint 網站。</span><span class="sxs-lookup"><span data-stu-id="7a96d-120">On the **Select SharePoint topic sources** page, select which SharePoint sites will be crawled as sources for your topics during discovery.</span></span> <span data-ttu-id="7a96d-121">這包括：</span><span class="sxs-lookup"><span data-stu-id="7a96d-121">This includes:</span></span>
+    - <span data-ttu-id="7a96d-122">**所有網站**：您租使用者中的所有 SharePoint 網站。</span><span class="sxs-lookup"><span data-stu-id="7a96d-122">**All sites**: All SharePoint sites in your tenant.</span></span> <span data-ttu-id="7a96d-123">這會捕獲目前和未來的網站。</span><span class="sxs-lookup"><span data-stu-id="7a96d-123">This captures current and future sites.</span></span>
+    - <span data-ttu-id="7a96d-124">**全部，除了選取的網站以外**：請輸入您要排除的網站名稱。</span><span class="sxs-lookup"><span data-stu-id="7a96d-124">**All, except selected sites**: Type the names of the sites you want to exclude.</span></span>  <span data-ttu-id="7a96d-125">您也可以從探索中上傳想要選擇從探索中移除的網站清單。</span><span class="sxs-lookup"><span data-stu-id="7a96d-125">You can also upload a list of sites you want to opt out from discovery.</span></span> <span data-ttu-id="7a96d-126">未來建立的網站會包含為主題探索的來源。</span><span class="sxs-lookup"><span data-stu-id="7a96d-126">Sites created in the future will be included as sources for topic discovery.</span></span> 
+    - <span data-ttu-id="7a96d-127">**僅限選取的網站**：輸入您要包含的網站名稱。</span><span class="sxs-lookup"><span data-stu-id="7a96d-127">**Only selected sites**: Type the names of the sites you want to include.</span></span> <span data-ttu-id="7a96d-128">您也可以上傳網站清單。</span><span class="sxs-lookup"><span data-stu-id="7a96d-128">You can also upload a list of sites.</span></span> <span data-ttu-id="7a96d-129">未來建立的網站不會包含為主題探索的來源。</span><span class="sxs-lookup"><span data-stu-id="7a96d-129">Sites created in the future will not be included as sources for topic discovery.</span></span>
+    - <span data-ttu-id="7a96d-130">**無網站**：主題不會自動產生或更新 SharePoint 內容。</span><span class="sxs-lookup"><span data-stu-id="7a96d-130">**No sites**: Topics won't be automatically generated or updated with SharePoint content.</span></span> <span data-ttu-id="7a96d-131">現有的主題會保留在主題中心。</span><span class="sxs-lookup"><span data-stu-id="7a96d-131">Existing topics remain in the topic center.</span></span>
 
-<span data-ttu-id="0f603-121">如果您想要為 SharePoint 主題來源更新您的選擇，請選取 [ **主題探索** ] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="0f603-121">Select the **Topic discovery** tab if you want to update your choices for  for SharePoint topic sources.</span></span> <span data-ttu-id="0f603-122">此設定可讓您選取您租使用者中的 SharePoint 網站，將會針對主題進行編目及挖掘。</span><span class="sxs-lookup"><span data-stu-id="0f603-122">This setting let you select the SharePoint sites in your tenant that will be crawled and mined for topics.</span></span>
-
-1. <span data-ttu-id="0f603-123">在 [ **主題探索** ] 索引標籤上，選取 [ **SharePoint 主題來源** ] 底下的 [ **編輯** ]。</span><span class="sxs-lookup"><span data-stu-id="0f603-123">On the **Topic discovery** tab, under **Select SharePoint topic sources** , select **Edit**.</span></span>
-2. <span data-ttu-id="0f603-124">在 [ **選取 SharePoint 主題來源** ] 頁面上，選取要在探索過程中將其編目為主題來源的 SharePoint 網站。</span><span class="sxs-lookup"><span data-stu-id="0f603-124">On the **Select SharePoint topic sources** page, select which SharePoint sites will be crawled as sources for your topics during discovery.</span></span> <span data-ttu-id="0f603-125">這包括：</span><span class="sxs-lookup"><span data-stu-id="0f603-125">This includes:</span></span></br>
-    <span data-ttu-id="0f603-126">a.</span><span class="sxs-lookup"><span data-stu-id="0f603-126">a.</span></span> <span data-ttu-id="0f603-127">**所有網站** ：您租使用者中的所有 SharePoint 網站。</span><span class="sxs-lookup"><span data-stu-id="0f603-127">**All sites** : All SharePoint sites in your tenant.</span></span> <span data-ttu-id="0f603-128">這會捕獲目前和未來的網站。</span><span class="sxs-lookup"><span data-stu-id="0f603-128">This captures current and future sites.</span></span></br>
-    <span data-ttu-id="0f603-129">b.</span><span class="sxs-lookup"><span data-stu-id="0f603-129">b.</span></span> <span data-ttu-id="0f603-130">**全部，除了選取的網站以外** ：請輸入您要排除的網站名稱。</span><span class="sxs-lookup"><span data-stu-id="0f603-130">**All, except selected sites** : Type the names of the sites you want to exclude.</span></span>  <span data-ttu-id="0f603-131">您也可以從探索中上傳想要選擇從探索中移除的網站清單。</span><span class="sxs-lookup"><span data-stu-id="0f603-131">You can also upload a list of sites you want to opt out from discovery.</span></span> <span data-ttu-id="0f603-132">未來建立的網站會包含為主題探索的來源。</span><span class="sxs-lookup"><span data-stu-id="0f603-132">Sites created in the future will be included as sources for topic discovery.</span></span> </br>
-    <span data-ttu-id="0f603-133">c.</span><span class="sxs-lookup"><span data-stu-id="0f603-133">c.</span></span> <span data-ttu-id="0f603-134">**僅限選取的網站** ：輸入您要包含的網站名稱。</span><span class="sxs-lookup"><span data-stu-id="0f603-134">**Only selected sites** : Type the names of the sites you want to include.</span></span> <span data-ttu-id="0f603-135">您也可以上傳網站清單。</span><span class="sxs-lookup"><span data-stu-id="0f603-135">You can also upload a list of sites.</span></span> <span data-ttu-id="0f603-136">未來建立的網站不會包含為主題探索的來源。</span><span class="sxs-lookup"><span data-stu-id="0f603-136">Sites created in the future will not be included as sources for topic discovery.</span></span> </br>
-
-    ![選擇尋找主題的方式](../media/content-understanding/k-manage-select-topic-source.png) </br>
+    ![SharePoint 主題來源使用者介面的螢幕擷取畫面](../media/k-manage-select-topic-source.png)
    
-    <span data-ttu-id="0f603-138">如果您有許多您想要排除 (的網站，請選取 [ **全部] （選取的網站除外）** ) 或包含 (如果您 **只選取了 [選取的網站** ]) ，您可以選擇上載具有網站名稱和 URLs 的 CSV 檔案。</span><span class="sxs-lookup"><span data-stu-id="0f603-138">If you have a number of sites that you want to exclude (if you select **All, except selected sites** ) or include (if you selected **Only selected sites** ), you can choose to upload a CSV file with the site names and URLs.</span></span> <span data-ttu-id="0f603-139">如果您想要使用 CSV 範本檔案，您可以選取 [ **下載網站範本 .csv** ]。</span><span class="sxs-lookup"><span data-stu-id="0f603-139">You can select **Download site template .csv** if you want to use the CSV template file.</span></span>
+3. <span data-ttu-id="7a96d-133">按一下 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="7a96d-133">Click **Save**.</span></span>
 
-3. <span data-ttu-id="0f603-140">選取 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="0f603-140">Select **Save**.</span></span>
+## <a name="exclude-topics-by-name"></a><span data-ttu-id="7a96d-134">依名稱排除主題</span><span class="sxs-lookup"><span data-stu-id="7a96d-134">Exclude topics by name</span></span>
 
-##  <a name="change-who-can-see-topics-in-your-organization"></a><span data-ttu-id="0f603-141">變更可以查看組織中主題的人員</span><span class="sxs-lookup"><span data-stu-id="0f603-141">Change who can see topics in your organization</span></span>
+<span data-ttu-id="7a96d-135">您可以使用 .csv 檔案上傳清單，從探索中排除主題。</span><span class="sxs-lookup"><span data-stu-id="7a96d-135">You can exclude topics from discovery by uploading a list using a .csv file.</span></span> <span data-ttu-id="7a96d-136">如果您先前已排除主題，您可以下載 .csv，進行變更，然後重新上傳。</span><span class="sxs-lookup"><span data-stu-id="7a96d-136">If you've previously excluded topics, you can download the .csv, make changes, and upload it again.</span></span>
 
-<span data-ttu-id="0f603-142">如果您想要更新組織中的哪些人員可以查看搜尋結果中已發現的主題，以及在 SharePoint 頁面等內容中突出顯示主題，請選取 [ **主題探索** ] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="0f603-142">Select the **Topic discovery** tab if you want to update who in your organization can see discovered topics in search results and when topics are highlighted in content like SharePoint pages.</span></span>
+1. <span data-ttu-id="7a96d-137">在 [ **主題探索** ] 索引標籤上，選取 [ **排除主題**] 下的 [ **編輯**]。</span><span class="sxs-lookup"><span data-stu-id="7a96d-137">On the **Topic discovery** tab, under **Exclude topics**, select **Edit**.</span></span>
+2. <span data-ttu-id="7a96d-138">按一下 [ **依名稱排除主題**]。</span><span class="sxs-lookup"><span data-stu-id="7a96d-138">Click **Exclude topics by name**.</span></span>
+3. <span data-ttu-id="7a96d-139">如果您需要建立清單，請下載 .csv 範本並新增您要排除的主題 (請參閱下列) *使用 .csv 範本* 。</span><span class="sxs-lookup"><span data-stu-id="7a96d-139">If you need to create a list, download the .csv template and add the topics that you want to exclude (see *Working with the .csv template* below).</span></span> <span data-ttu-id="7a96d-140">當檔案準備好時，請按一下 **[流覽]** 並上傳檔案。</span><span class="sxs-lookup"><span data-stu-id="7a96d-140">When the file is ready, click **Browse** and upload the file.</span></span> <span data-ttu-id="7a96d-141">如果有現有清單，您可以下載包含清單的 .csv。</span><span class="sxs-lookup"><span data-stu-id="7a96d-141">If there's an existing list, you can download the .csv containing the list.</span></span>
+4. <span data-ttu-id="7a96d-142">按一下 **[儲存]**。</span><span class="sxs-lookup"><span data-stu-id="7a96d-142">Click **Save**.</span></span>
 
-1. <span data-ttu-id="0f603-143">在 [ **主題探索** ] 索引標籤上，于 [ **誰可以在知識網路中查看主題** ] 底下，選取 [ **編輯** ]。</span><span class="sxs-lookup"><span data-stu-id="0f603-143">On the **Topic discovery** tab, under **Who can see topics in the knowledge network** , select **Edit**.</span></span>
-2. <span data-ttu-id="0f603-144">在 [ **知識網路] 頁面中的 [可查看主題** ] 頁面上，您可以選擇誰將有權存取主題詳細資料，例如高亮主題、主題卡片、搜尋中的主題答案及主題頁面。</span><span class="sxs-lookup"><span data-stu-id="0f603-144">On the **Who can see topics in the knowledge network** page, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages.</span></span> <span data-ttu-id="0f603-145">您可以選取：</span><span class="sxs-lookup"><span data-stu-id="0f603-145">You can select:</span></span></br>
-    <span data-ttu-id="0f603-146">a.</span><span class="sxs-lookup"><span data-stu-id="0f603-146">a.</span></span> <span data-ttu-id="0f603-147">**組織中的所有人**</span><span class="sxs-lookup"><span data-stu-id="0f603-147">**Everyone in your organization**</span></span></br>
-    <span data-ttu-id="0f603-148">b.</span><span class="sxs-lookup"><span data-stu-id="0f603-148">b.</span></span> <span data-ttu-id="0f603-149">**僅限選取的人員或安全性群組**</span><span class="sxs-lookup"><span data-stu-id="0f603-149">**Only selected people or security groups**</span></span></br>
-    <span data-ttu-id="0f603-150">c.</span><span class="sxs-lookup"><span data-stu-id="0f603-150">c.</span></span> <span data-ttu-id="0f603-151">**沒人**</span><span class="sxs-lookup"><span data-stu-id="0f603-151">**No one**</span></span></br>
+    ![排除主題使用者介面的螢幕擷取畫面](../media/km-manage-exclude-topics.png)
 
-    ![誰可以查看主題](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
-3. <span data-ttu-id="0f603-153">選取 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="0f603-153">Select **Save**.</span></span>  
- 
-> [!Note] 
-> <span data-ttu-id="0f603-154">雖然此設定可讓您選取組織中的任何使用者，但只有具有指派的知識管理授權的使用者才能查看主題。</span><span class="sxs-lookup"><span data-stu-id="0f603-154">While this setting allows you to select any user in your organization, only users who have knowledge management licenses assigned to them will be able to view topics.</span></span>
+### <a name="working-with-the-csv-template"></a><span data-ttu-id="7a96d-144">使用 .csv 範本</span><span class="sxs-lookup"><span data-stu-id="7a96d-144">Working with the .csv template</span></span>
 
-## <a name="change-who-has-permissions-to-do-tasks-on-the-topic-center"></a><span data-ttu-id="0f603-155">變更誰有權在主題中心執行工作？</span><span class="sxs-lookup"><span data-stu-id="0f603-155">Change who has permissions to do tasks on the topic center</span></span>
+<span data-ttu-id="7a96d-145">您可以複製下列 csv 範本：</span><span class="sxs-lookup"><span data-stu-id="7a96d-145">You can copy the csv template below:</span></span>
 
-<span data-ttu-id="0f603-156">如果您想要更新主題中心頁面上具有下列許可權的人員，請選取 [ **主題許可權** ] 索引標籤：</span><span class="sxs-lookup"><span data-stu-id="0f603-156">Select the **Topic permissions** tab if you want to update who has permissions to do the following in the topic center page:</span></span>
+``` csv
+Name (required),Expansion,MatchType- Exact/Partial (required)
+```
 
-- <span data-ttu-id="0f603-157">哪些使用者可以建立及編輯主題：在探索或編輯現有主題頁面詳細資料時，建立未找到的新主題。</span><span class="sxs-lookup"><span data-stu-id="0f603-157">Which users can create and edit topics: Create new topics that were not found during discovery or edit existing topic page details.</span></span>
-- <span data-ttu-id="0f603-158">哪些使用者可以管理下列主題：確認或拒絕已探索的主題。</span><span class="sxs-lookup"><span data-stu-id="0f603-158">Which users can manage topics: Confirm or reject discovered topics.</span></span>
+<span data-ttu-id="7a96d-146">在 CSV 範本中，輸入您要排除之主題的下列相關資訊：</span><span class="sxs-lookup"><span data-stu-id="7a96d-146">In the CSV template, enter the following information about the topics you want to exclude:</span></span>
 
-<span data-ttu-id="0f603-159">若要更新誰有權建立及編輯主題：</span><span class="sxs-lookup"><span data-stu-id="0f603-159">To update who has permissions to create and edit topics:</span></span>
+- <span data-ttu-id="7a96d-147">**名稱**：輸入您要排除的主題名稱。</span><span class="sxs-lookup"><span data-stu-id="7a96d-147">**Name**: Type the name of the topic you want to exclude.</span></span> <span data-ttu-id="7a96d-148">方法有兩種：</span><span class="sxs-lookup"><span data-stu-id="7a96d-148">There are two ways to do this:</span></span>
+    - <span data-ttu-id="7a96d-149">完全相符：您可以包含確切的名稱或縮寫 (例如， *Contoso* 或 *ATL*) 。</span><span class="sxs-lookup"><span data-stu-id="7a96d-149">Exact match: You can include the exact name or acronym (for example, *Contoso* or *ATL*).</span></span>
+    - <span data-ttu-id="7a96d-150">部分相符：您可以排除包含特定單字的所有主題。</span><span class="sxs-lookup"><span data-stu-id="7a96d-150">Partial match: You can exclude all topics that have a specific word in it.</span></span>  <span data-ttu-id="7a96d-151">例如， *弧線* 會排除具有文字 *弧線* 的所有主題，例如 *弧線圓形*、 *等離子弧線焊接* 或 *訓練弧*。請注意，它不會排除包含文字（如 *架構*）一部分的主題。</span><span class="sxs-lookup"><span data-stu-id="7a96d-151">For example, *arc* will exclude all topics with the word *arc* in it, such as *Arc circle*, *Plasma arc welding*, or *Training arc*. Note that it will not exclude topics in which the text is included as part of a word, such as *Architecture*.</span></span>
+- <span data-ttu-id="7a96d-152">**代表 (選用)**：若要排除縮寫，請輸入縮寫所代表的字。</span><span class="sxs-lookup"><span data-stu-id="7a96d-152">**Stands for (optional)**: If you want to exclude an acronym, type the words the acronym stands for.</span></span>
+- <span data-ttu-id="7a96d-153">**MatchType-Exact/partial**：輸入您輸入的名稱是 *完全* 或 *部分* 相符類型。</span><span class="sxs-lookup"><span data-stu-id="7a96d-153">**MatchType-Exact/Partial**: Type whether the name you entered was an *exact* or *partial* match type.</span></span>
 
-1. <span data-ttu-id="0f603-160">在 [ **主題許可權** ] 索引標籤的 [ **誰可以建立及編輯主題** ] 中，選取 [ **編輯** ]。</span><span class="sxs-lookup"><span data-stu-id="0f603-160">On the **Topic permissions** tab, under **Who can create and edit topics** , select **Edit**.</span></span></br>
-2. <span data-ttu-id="0f603-161">您可以在 [ **誰可以建立及編輯主題** ] 頁面上，選取：</span><span class="sxs-lookup"><span data-stu-id="0f603-161">On the **Who can create and edit topics** page, you can select:</span></span></br>
-    <span data-ttu-id="0f603-162">a.</span><span class="sxs-lookup"><span data-stu-id="0f603-162">a.</span></span> <span data-ttu-id="0f603-163">**組織中的所有人**</span><span class="sxs-lookup"><span data-stu-id="0f603-163">**Everyone in your organization**</span></span></br>
-    <span data-ttu-id="0f603-164">b.</span><span class="sxs-lookup"><span data-stu-id="0f603-164">b.</span></span> <span data-ttu-id="0f603-165">**僅限選取的人員或安全性群組**</span><span class="sxs-lookup"><span data-stu-id="0f603-165">**Only selected people or security groups**</span></span></br>
+    ![排除 CSV 範本中的主題](../media/exclude-topics-csv.png) 
 
-    ![建立及編輯主題](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
+## <a name="see-also"></a><span data-ttu-id="7a96d-155">也請參閱</span><span class="sxs-lookup"><span data-stu-id="7a96d-155">See also</span></span>
 
-3. <span data-ttu-id="0f603-167">選取 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="0f603-167">Select **Save**.</span></span></br>
+[<span data-ttu-id="7a96d-156">在 Microsoft 365 中管理主題可見度</span><span class="sxs-lookup"><span data-stu-id="7a96d-156">Manage topic visibility in Microsoft 365</span></span>](topic-experiences-knowledge-rules.md)
 
-<span data-ttu-id="0f603-168">若要更新誰具有管理主題的許可權：</span><span class="sxs-lookup"><span data-stu-id="0f603-168">To update who has permissions to manage topics:</span></span>
+[<span data-ttu-id="7a96d-157">在 Microsoft 365 中管理主題許可權</span><span class="sxs-lookup"><span data-stu-id="7a96d-157">Manage topic permissions in Microsoft 365</span></span>](topic-experiences-user-permissions.md)
 
-1. <span data-ttu-id="0f603-169">在 [ **主題許可權** ] 索引標籤的 [ **誰可以管理主題** ] 下，選取 [ **編輯** ]。</span><span class="sxs-lookup"><span data-stu-id="0f603-169">On the **Topic permissions** tab, under **Who can manage topics** , select **Edit**.</span></span></br>
-2. <span data-ttu-id="0f603-170">您可以在 [ **誰可以管理主題** ] 頁面上，選取：</span><span class="sxs-lookup"><span data-stu-id="0f603-170">On the **Who can manage topics** page, you can select:</span></span></br>
-    <span data-ttu-id="0f603-171">a.</span><span class="sxs-lookup"><span data-stu-id="0f603-171">a.</span></span> <span data-ttu-id="0f603-172">**組織中的所有人**</span><span class="sxs-lookup"><span data-stu-id="0f603-172">**Everyone in your organization**</span></span></br>
-    <span data-ttu-id="0f603-173">b.</span><span class="sxs-lookup"><span data-stu-id="0f603-173">b.</span></span> <span data-ttu-id="0f603-174">**選取的人員或安全性群組**</span><span class="sxs-lookup"><span data-stu-id="0f603-174">**Selected people or security groups**</span></span></br>
-
-    ![管理主題](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
-
-3. <span data-ttu-id="0f603-176">選取 [儲存]。</span><span class="sxs-lookup"><span data-stu-id="0f603-176">Select **Save**.</span></span></br>
-
-
-##  <a name="update-your-topic-center-name"></a><span data-ttu-id="0f603-177">更新主題中心名稱</span><span class="sxs-lookup"><span data-stu-id="0f603-177">Update your topic center name</span></span>
-
-<span data-ttu-id="0f603-178">如果您想要更新主題中心的名稱，請選取 [ **主題中心** ] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="0f603-178">Select the **Topic center** tab if you want to update the name of your topic center.</span></span> 
-
-1. <span data-ttu-id="0f603-179">在 [ **主題中心** ] 索引標籤的 [ **主題中心名稱** ] 下，選取 [ **編輯** ]。</span><span class="sxs-lookup"><span data-stu-id="0f603-179">On the **Topic center** tab, under **Topic center name** , select **Edit**.</span></span>
-2. <span data-ttu-id="0f603-180">在 [ **編輯主題中心名稱** ] 頁面上，于 [ **主題中心名稱** ] 方塊中，輸入主題中心的新名稱。</span><span class="sxs-lookup"><span data-stu-id="0f603-180">On the **Edit topic center name** page, in the **Topic center name** box, type the new name for your topic center.</span></span>
-3. <span data-ttu-id="0f603-181">選取 **[儲存]**</span><span class="sxs-lookup"><span data-stu-id="0f603-181">Select **Save**</span></span>
-
-    ![編輯主題中心名稱](../media/content-understanding/manage-topic-center-name.png) </br> 
-
-
-
-
-
-
-
-
-
-
-
-## <a name="see-also"></a><span data-ttu-id="0f603-183">請參閱</span><span class="sxs-lookup"><span data-stu-id="0f603-183">See also</span></span>
-
-
-
-  
-
-
-
-
-
+[<span data-ttu-id="7a96d-158">變更 Microsoft 365 主題中心的名稱</span><span class="sxs-lookup"><span data-stu-id="7a96d-158">Change the name of the topic center in Microsoft 365</span></span>](topic-experiences-administration.md)
 
