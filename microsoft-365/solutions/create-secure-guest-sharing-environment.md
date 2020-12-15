@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: 瞭解在 Microsoft 365 中建立安全的來賓共用環境的可用選項，提供來賓存取改善的共同作業。
-ms.openlocfilehash: 4e2045113a6c98e2b3839a3a2cdd83105be94023
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558185"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667702"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>建立安全的來賓共用環境
 
@@ -162,7 +162,7 @@ ms.locfileid: "49558185"
 
 若為 Microsoft 365 群組和 Teams，這會使用 Azure AD 條件式存取原則來完成。 若為 SharePoint，這會在 SharePoint 系統管理中心設定。 (您也可以[使用敏感度標籤將來賓限制在僅限 Web 存取](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。)
 
-為群組和小組將來賓限制在僅限 Web 存取
+為群組和小組將來賓限制在僅限 Web 存取：
 
 1. 移至 [[Azure 條件式存取原則]](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade)。
 2. 在 [條件式存取 - 原則 **]** 刀鋒視窗上，按一下 [新增原則 **]**。
