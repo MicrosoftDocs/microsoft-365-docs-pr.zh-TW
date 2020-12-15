@@ -8,9 +8,19 @@
       href: work-with-topics.md
     - name: 將主題中心的許可權授與使用者
       href: give-user-permissions-to-the-topic-center.md
-- name: 開始使用安裝程式
+- name: 安裝和管理
   items:
-    - name: 設定知識管理
+    - name: 主題安全性
+      href: topic-experiences-security-privacy.md
+    - name: 規劃主題經驗
+      href: plan-topic-experiences.md
+    - name: 設定主題經驗
       href: set-up-topic-experiences.md
-    - name: 管理您的知識管理網路
+    - name: 管理主題探索
       href: topic-experiences-discovery.md
+    - name: 管理主題可見度
+      href: topic-experiences-knowledge-rules.md
+    - name: 管理主題許可權
+      href: topic-experiences-user-permissions.md
+    - name: 變更主題中心名稱
+      href: topic-experiences-administration.md

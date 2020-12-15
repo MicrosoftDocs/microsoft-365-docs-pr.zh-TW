@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: 瞭解如何同時新增使用者並指派授權給 Microsoft 365。
 ms.date: 07/01/2020
-ms.openlocfilehash: 95f84ead009b7510699e467bf5f12bf32d8097d8
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 5df0db1cb782cc55bcf3e2b599430a98ea88750c
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47948793"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49670992"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>同時新增使用者並指派授權
 

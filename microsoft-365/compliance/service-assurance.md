@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: 下載協力廠商審核，瞭解 Microsoft 如何讓客戶資料安全，以及如何在使用 Office 365 時遵循 ISO、HIPAA、FINRA 和 FedRAMP。
-ms.openlocfilehash: 915f9040fe5320c905de420f08efa17087987ac3
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 33ec05512d36ae09d9d31821bf1d49e38aad6de7
+ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655517"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49671004"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>安全性與規範中心的服務保證
 
@@ -43,12 +43,9 @@ ms.locfileid: "49655517"
     
 ## <a name="who-can-access-office-365-service-assurance-and-how"></a>誰可以存取 Office 365 服務擔保，以及如何？
 
- **新客戶及評估 Microsoft 線上服務的客戶** 可以存取 Office 365 企業版 E3 和 E5 方案中包含的服務保證， (試用和付費訂閱) 。 如果您沒有上述方案之一，但想要嘗試服務保證，您可以 [註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。 
-  
- **Microsoft 商務用365的現有客戶** 可以存取服務擔保。 如果您是全域系統管理員) 組織的系統管理員 (，您會有權存取服務，您也可以在其他人員上架。 如果您不是組織的全域系統管理員，且需要存取服務保證，請要求您的系統管理員將您新增至 [服務保證] 使用者角色群組。 
+ **新客戶及評估 Microsoft 線上服務的客戶** 可以存取 Office 365 企業版 E3 和 E5 方案中包含的服務保證， (試用和付費訂閱) 。 如果您沒有上述方案之一，但想要嘗試服務保證，您可以 [註冊 Office 365 企業版 E5 的試用版](https://go.microsoft.com/fwlink/p/?LinkID=698279)。
   
  根據預設， **O365 訂閱成員** 可以存取 Office 365 Protection Center 中的服務保證區段。 服務保證會針對儲存在 Office 365 中的客戶資料，提供描述 Microsoft 安全性做法的報告和文件。 此外，這個區段也會提供 Office 365 的獨立第三方稽核報告。
-  
  
 ## <a name="choose-your-industry-and-regional-settings"></a>選擇您的行業和區域設定
 <a name="Chooseyourindustryregional"> </a>

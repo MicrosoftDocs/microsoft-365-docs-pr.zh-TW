@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 從 Microsoft 365 規範中心的內容搜尋中，將搜尋結果匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 從 SharePoint 和 OneDrive 商務網站的內容會匯出為原生 Office 檔。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a697f5cf81022bf8d8122d0dd57c07ba8a578f0a
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 3250690d6699e5d39f7fa5ae01a2733595340ca1
+ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602050"
+ms.lasthandoff: 12/14/2020
+ms.locfileid: "49667786"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -165,7 +165,7 @@ ms.locfileid: "49602050"
   
     **EDiscovery 匯出工具** 會顯示匯出程式的狀態資訊，包括估計要下載之其餘專案的數位 (和大小) 。 匯出程式完成後，您可以在下載檔案的位置存取檔案。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他相關資訊
 
 以下是匯出搜尋結果的詳細資訊。
   
@@ -191,7 +191,7 @@ ms.locfileid: "49602050"
 
   - 您可以從單一內容搜尋中匯出最多 2 TB 的資料。 如果搜尋結果大於 2 TB，請考慮使用日期範圍或其他類型的篩選器來減少搜尋結果的總大小。
   
-  - 您的組織最多可以在一天內匯出 2 TB 的資料。
+  - 您的組織最多可以在一天內匯出 2 TB 的資料。 配額每日會在12： 12:00 UTC 重設。
   
   - 您最多可以在組織內同時執行10個匯出。
 
