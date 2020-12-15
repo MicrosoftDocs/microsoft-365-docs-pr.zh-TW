@@ -35,7 +35,7 @@ ms.locfileid: "48897290"
 <a name="microsoft-365-for-campaigns"></a>適用於 [行銷活動] 的 Microsoft 365
 ===========================
 
-在我們目前的世界中，保持資料和通訊安全是優先考慮，特別是政治活動、醫學和法律做法及許多其他企業。 適用于行銷活動的 Microsoft 365 提供一組建議，以協助保護您和您的資料。 此文件庫包含設定及使用這個建議環境的說明，即使您不是要舉辦行銷活動。
+在我們目前的世界中，保持資料和通訊安全是優先考慮，特別是政治活動、醫學和法律做法及許多其他企業。 適用于行銷活動的 Microsoft 365 提供一組建議，以協助保護您和您的資料。 此文件庫包含設定及使用這個建議的環境的說明，即使您不是要進行市場活動。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3clbH]
 
@@ -48,7 +48,7 @@ ms.locfileid: "48897290"
 - 您可以使用易於管理的企業級安全性功能，保護 iOS、Android 和 Windows 10 裝置上的所有工作檔案。
 - 針對使用者帳戶和身分識別套用額外的保護。
 
-![Microsoft 365 商務進階版可保護您的生產力工具、共同作業工具、檔案儲存空間、電子郵件、裝置和身分識別](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 商務版 Premium 可保護您的生產力工具、共同作業工具、檔案儲存空間、電子郵件、裝置和身分識別](../media/M365-WhatIsIt-SecurityFocus.png)
 
 雖然美國的聯邦版選舉活動符合 Microsoft 365 商務進階版優惠的特殊價格，但此方案的任何組織都可以利用本指導方針來設定更加強的安全性，並瞭解如何安全地進行共同作業。
 
@@ -60,7 +60,7 @@ ms.locfileid: "48897290"
 
 如需有關內含內容的詳細資訊，請參閱 [Microsoft 365 商務版](https://www.microsoft.com/microsoft-365/business)。
 
-<a name="get-started"></a>快速入門
+<a name="get-started"></a>入門
 --------------------------
 
 請按照下列步驟開始使用：
@@ -74,18 +74,18 @@ ms.locfileid: "48897290"
 
 設定安全 Microsoft 365 環境之後，您可以使用下列解決方案進行工作：
 
-| 建立共同作業團隊 | 安排線上會議 |
+| 建立共同作業小組 | 安排線上會議 |
 | ------------- | ------------- |
 | ![SharePoint 通訊網站](../media/sm-m365-democracy-teams-collab.png) | ![線上會議](../media/m365-democracy-teams-meetings.png) |
-| 與關鍵人員、所有人員以及合作夥伴或供應商的團隊共同作業。 [建立您的團隊](create-teams-for-collaboration.md) | 使用 Microsoft Teams 排程音訊、視訊會議並分享。 [安排會議](set-up-meetings.md) |
+| 與關鍵人員、所有人員以及合作夥伴或供應商的團隊共同作業。 [建立您的團隊](create-teams-for-collaboration.md) | 使用 Microsoft Teams 的音訊、影片和共用排程會議。 [安排會議](set-up-meetings.md) |
 
-| 加密敏感性電子郵件或加上標籤 | 建立通訊網站 |
+| 幫您的機密電子郵件加密或加上標籤 | 建立通訊網站 |
 | ------------- | ------------- |
-| ![已加密且已加上標籤的電子郵件](../media/sm-m365-campaign-email-encrypt.png) | ![SharePoint 通訊網站](../media/sm-m365-democracy-comms-site.png) |
-| 使用加密和敏感度標籤來保護內含機密或敏感性資訊的電子郵件。 [傳送加密的電子郵件](send-encrypted-email.md) | 在使用 SharePoint 建立的內部通訊網站中，與您的團隊分享活動、訊息、影像等內容。 [建立您的網站](create-communications-site.md) |
+| ![已加密且已標籤的電子郵件](../media/sm-m365-campaign-email-encrypt.png) | ![SharePoint 通訊網站](../media/sm-m365-democracy-comms-site.png) |
+| 使用加密和敏感度標籤來保護內含機密或機密資訊的電子郵件。 [傳送加密的電子郵件](send-encrypted-email.md) | 在使用 SharePoint 建立的內部通訊網站中，與您的小組共用活動、訊息、影像等內容。 [建立您的網站](create-communications-site.md) |
 
-| 分享檔案和影片 |
+| 共用檔案和影片 |
 | ------------- |
 | ![在 Microsoft Teams 中分享檔案](../media/m365-democracy-teams-sharefiles.png) |
-| 將您的檔案和影片儲存到雲端，以便讓所有適當的人員 <br><br>都能使用。 [開始分享](share-files-and-videos.md) |
+| 將您的檔案和影片儲存到雲端，以便讓所有適當的人員 <br><br>都能使用。 [開始共用](share-files-and-videos.md) |
 

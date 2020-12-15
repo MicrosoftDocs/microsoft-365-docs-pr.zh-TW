@@ -28,7 +28,7 @@ ms.locfileid: "48830602"
 
 >*[Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。*
 
-若要將文件和電子郵件宣告為 [[紀錄]](records-management.md#records)，您可使用 [[保留標籤]](retention.md#retention-labels) 將内容標記為 **[紀錄]** 或 **[監管記錄]** 。
+若要將文件和電子郵件宣告為 [[紀錄]](records-management.md#records)，您可使用 [[保留標籤]](retention.md#retention-labels) 將内容標記為 **[紀錄]** 或 **[監管記錄]**。
 
 如果您不確定要使用記錄還是監管記錄，請參閱 [比較允許或封鎖哪些動作的限制](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)。 如果您需要使用監管記錄，您必須先執行 PowerShell 命令（如下個章節所述）。
 
@@ -37,7 +37,7 @@ ms.locfileid: "48830602"
 ## <a name="how-to-display-the-option-to-mark-content-as-a-regulatory-record"></a>如何顯示將內容標示為監管記錄的選項
 
 >[!NOTE] 
-> 下列程序是可審核的動作，在審核記錄的 [[保留原則和保留標籤活動]](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) 章節中記錄 **[為保留標籤啟動的監管記錄選項]** 。
+> 下列程序是可審核的動作，在審核記錄的 [[保留原則和保留標籤活動]](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities) 章節中記錄 **[為保留標籤啟動的監管記錄選項]**。
 
 根據預設，用以將內容標示為監管記錄的保留標籤選項，不會在保留標籤精靈中顯示。 若要顯示此選項，您必須先執行 PowerShell 命令：
 
