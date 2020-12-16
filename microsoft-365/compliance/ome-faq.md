@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: efccbdf2be33fb771e7e68ba5a0b3dafa82d9ce8
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: a83e8b05f59ff05d22422431683e26b11bb8a780
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546057"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688604"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -56,7 +56,7 @@ OME 結合電子郵件加密和版權管理功能。 Rights management 功能由
 
 ## <a name="can-i-use-exchange-online-with-bring-your-own-key-byok-in-azure-information-protection"></a>我可以搭配使用 Exchange Online，在 Azure 資訊保護中引入您自己的金鑰 (BYOK) ？
 
-是的！ Microsoft 建議您完成設定 BYOK 之前設定 OME 的步驟。
+可以！ Microsoft 建議您完成設定 BYOK 之前設定 OME 的步驟。
   
 如需 BYOK 的詳細資訊，請參閱 [規劃及執行 Azure 資訊保護租使用者金鑰](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key)。
   
@@ -96,15 +96,19 @@ Office 365 郵件加密的新功能是現有 IRM 和舊版 OME 解決方案的�
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>我需要使用哪些電子郵件客戶程式才能建立 OME 加密郵件？ 傳送受保護的郵件支援哪些應用程式？
 
-您可以從 Outlook 2016 和 Outlook 2013 for Windows 和 Mac，以及從網頁上的 Outlook 建立受保護的郵件。
+您可以從 Outlook 2016、Outlook 2013 for Windows 和 Mac，以及從網頁上的 Outlook 建立受保護的郵件。 如需傳送加密郵件的詳細資訊，請參閱 [在 Outlook 中傳送、查看和回復加密郵件的電腦](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)。
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>支援哪些電子郵件客戶程式來讀取及回復受保護的電子郵件？
 
 Microsoft 365 使用者可以從 Outlook for Windows 和 Mac (2013 及 2016) 、網頁上的 Outlook，以及 Outlook mobile (Android 和 iOS) 閱讀和回應。 您也可以使用 iOS 原生郵件用戶端（如果您的組織允許的話）。 如果您不是 Microsoft 365 使用者，您可以透過網頁瀏覽器閱讀和回復網頁上的加密郵件。
-  
+
+## <a name="what-email-clients-support-the-encrypt-only-protected-emails"></a>哪些電子郵件客戶程式支援加密型的受保護電子郵件？
+
+Microsoft 365 使用者可以使用 Outlook 版本2019和 Microsoft 365 的 Outlook，建立使用「僅限加密」原則保護的郵件。  這表示已套用新的「加密專用」原則的郵件，可以直接讀取于網頁型 outlook、在 Outlook 中 iOS 和 Android，而且現在是 Outlook 的電腦版本2019和 Microsoft 365。
+
 ## <a name="is-there-a-size-limit-for-messages-you-can-send-with-ome"></a>您可以使用 OME 來傳送的郵件是否有大小限制？
 
-是。 您可以使用 OME 傳送的郵件大小上限（包括附件）為 30 MB。
+是。 您可以使用 OME 傳送的郵件大小上限（包括附件）為 25 MB。 如需詳細資訊，請參閱 [郵件限制](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)。
 
 ## <a name="what-file-types-are-supported-as-attachments-in-protected-emails-do-attachments-inherit-the-protection-policies-associated-with-protected-emails"></a>受保護電子郵件中的附件支援何種檔案類型？ 附件是否繼承與受保護的電子郵件相關聯的保護原則？
 
@@ -139,6 +143,11 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 
 當使用受保護的郵件保護附件時，Outlook 用戶端可讓您直接預覽檔的功能。 Outlook 支援預覽 Office 檔 (.docx、.xlsx、.pptx、doc、xls、ppt) 。 網頁上的 Outlook 支援 (.docx、.xlsx、.pptx) 和 PDF 的 Office 檔預覽。  
 
+## <a name="what-email-clients-support-revocation-of-protected-emails"></a>哪些電子郵件客戶程式支援撤銷受保護的電子郵件？
+
+網頁上的 Outlook 支援撤銷受保護的郵件。  請參閱 [如何撤銷您傳送的加密郵件](https://docs.microsoft.com/microsoft-365/compliance/revoke-ome-encrypted-mail?view=o365-worldwide#how-to-revoke-an-encrypted-message-that-you-sent) 以取得詳細資訊。
+
+
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies"></a>我是否可以透過設定原則自動加密郵件？
 
 是。 使用 Exchange Online 中的郵件流程規則，根據特定條件自動加密郵件。 例如，您可以建立以收件者識別碼、收件者網域或郵件內文或主旨的內容為基礎的原則。 請參閱 [定義郵件流程規則，以加密 Office 365 中的電子郵件](define-mail-flow-rules-to-encrypt-email.md)。
@@ -149,11 +158,11 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>是否可以透過安全性與合規性中心設定資料遺失防護 (DLP) 中的原則，自動加密郵件 &amp; ？
 
-是的！ 您可以在 Exchange Online 中設定郵件流程規則，或在安全性與 &amp; 合規性中心使用 DLP。
+可以！ 您可以在 Exchange Online 中設定郵件流程規則，或在安全性與 &amp; 合規性中心使用 DLP。
   
 ## <a name="can-i-customize-encrypted-messages-with-my-company-branding"></a>我可以使用公司品牌來自訂加密郵件嗎？
 
-是的！ 如需自訂電子郵件訊息與 OME 入口網站的詳細資訊，請參閱將組織的品牌新增至加密的郵件。 請參閱 [將貴組織的品牌新增至加密的郵件](add-your-organization-brand-to-encrypted-messages.md)。
+可以！ 如需自訂電子郵件訊息與 OME 入口網站的詳細資訊，請參閱將組織的品牌新增至加密的郵件。 請參閱 [將貴組織的品牌新增至加密的郵件](add-your-organization-brand-to-encrypted-messages.md)。
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>是否有任何報告功能或加密電子郵件的洞察力？
 
@@ -173,7 +182,7 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>我可以開啟已傳送至共用信箱的加密郵件嗎？
 
-是的！ 共用信箱支援加密郵件。
+可以！ 共用信箱支援加密郵件。
 
 - 使用者可以在共用信箱中，以通訊群組的一部分，在共用信箱中開啟受保護的郵件。
 

@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解如何將舊版檔案轉換成 Office 365 (OME) 組織的郵件加密。
-ms.openlocfilehash: ecf4723df9afdf09d63150a3ec7564df44dd9808
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 23f287fd01949d710c5cc5c65f0c36c6055d3a57
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408991"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688430"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 郵件加密的舊版資訊
 
@@ -75,7 +75,7 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [系統 **管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增**新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增** 新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 [ **名稱**] 中，輸入規則的名稱，例如 [加密 DrToniRamos@hotmail.com 的郵件]。
 
@@ -91,9 +91,9 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 
 7. 若要新增更多條件，請選擇 [ **更多選項** ]，然後選取 [ **新增條件** ]，然後從清單中選取。
 
-   例如，若要在組織外部的收件者之外套用規則，請選取 [**新增條件**]，然後選取收件者在組織外**外部/內部的收件**者 \> **Outside the organization** \> ** **。
+   例如，若要在組織外部的收件者之外套用規則，請選取 [**新增條件**]，然後選取收件者在組織外 **外部/內部的收件** 者 \>  \> ****。
 
-8. 若要在不使用新 OME 功能的情況下啟用加密，請在 **執行下列**動作中，選取 **[修改郵件安全性**] 套用 \> **舊版的 OME**，然後選擇 [ **儲存**]。
+8. 若要在不使用新 OME 功能的情況下啟用加密，請在 **執行下列** 動作中，選取 **[修改郵件安全性**] 套用 \> **舊版的 OME**，然後選擇 [ **儲存**]。
 
    如果您收到未啟用 IRM 授權的錯誤，則表示您不是使用舊版 OME。
 
@@ -114,8 +114,8 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
    其中：
 
    - 新規則的唯一名稱是「Dr Toni Ramos 的加密規則」。
-   - _SentTo_參數會指定收件者 (以名稱、電子郵件地址、辨識名稱等等所識別的收件者 ) 。 在此範例中，收件者會透過電子郵件地址 "DrToniRamos@hotmail.com" 加以識別。
-   - _SentToScope_參數會指定郵件收件者的位置。 在此範例中，收件者的信箱是在 hotmail 中，而且不是組織的一部分，因此 `NotInOrganization` 會使用此值。
+   - _SentTo_ 參數會指定收件者 (以名稱、電子郵件地址、辨識名稱等等所識別的收件者 ) 。 在此範例中，收件者會透過電子郵件地址 "DrToniRamos@hotmail.com" 加以識別。
+   - _SentToScope_ 參數會指定郵件收件者的位置。 在此範例中，收件者的信箱是在 hotmail 中，而且不是組織的一部分，因此 `NotInOrganization` 會使用此值。
 
    如需詳細的語法和參數資訊，請參閱 [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/New-TransportRule)。
 
@@ -131,13 +131,13 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 
 3. 在 Microsoft 365 系統管理中心中，選擇 [系統 **管理中心**] [ \> **Exchange**]。
 
-4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增**新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
+4. 在 EAC 中，移至 [ **郵件流程** \> **規則** ]，然後選取 [ **新增** 新圖示] 以 ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **建立新的規則**。 如需使用 EAC 的詳細資訊，請參閱 exchange [Online 中的 exchange 系統管理中心](https://docs.microsoft.com/exchange/exchange-admin-center)。
 
 5. 在 [ **名稱**] 中，輸入規則的名稱，例如 [移除來自傳入郵件的加密]。
 
 6. 在 [套用 **此規則** ] 中，選取應該從郵件中移除加密的情況，例如 **收件者位於** \> **組織內**。
 
-7. 在 **執行下列**動作中，選取 **[修改郵件安全性** \> **移除舊版 OME**]。
+7. 在 **執行下列** 動作中，選取 **[修改郵件安全性** \> **移除舊版 OME**]。
 
 8. 選取 **[儲存]**。
 
@@ -156,7 +156,7 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
    其中：
 
    - 新規則的唯一名稱是「移除來自傳入郵件的加密」。
-   - _SentToScope_參數會指定郵件收件者的位置。 在此範例中， `InOrganization` 會使用 value 值，這會指出下列其中一項：
+   - _SentToScope_ 參數會指定郵件收件者的位置。 在此範例中， `InOrganization` 會使用 value 值，這會指出下列其中一項：
      - 收件者是組織中的信箱、郵件使用者、群組或擁有郵件功能的公用資料夾。
      - 收件者的電子郵件地址位於已設定為授權網域或組織內部轉送網域的公認網域中， _且_ 透過已驗證的連線來傳送或接收郵件。
 
@@ -196,10 +196,10 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 
 **若要自訂此加密經驗功能**|**請使用這些 Windows PowerShell 命令**|
 |:-----|:-----|
-|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **範例：**`Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
-|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **範例：**`Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
-|出現在加密郵件檢視入口網站上方的文字  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **範例：**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
-|標誌  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **範例：**`Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> 支援的檔案格式：.png、.jpg、.bmp 或 .tiff  <br/> 標誌檔案的最佳大小：小於 40 KB  <br/> 標誌影像的最佳大小：170x70 像素  <br/> |
+|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<string of up to 1024 characters>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system"` <br/> |
+|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
+|出現在加密郵件檢視入口網站上方的文字  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
+|標誌  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **範例：** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> 支援的檔案格式：.png、.jpg、.bmp 或 .tiff  <br/> 標誌檔案的最佳大小：小於 40 KB  <br/> 標誌影像的最佳大小：170x70 像素  <br/> |
 
 **從加密電子郵件和加密入口網站移除品牌自訂**
   
@@ -211,8 +211,8 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
 
 |**將加密體驗的這項功能回復為預設文字和影像**|**請使用這些 Windows PowerShell 命令**|
 |:-----|:-----|
-|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **範例：**`Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
-|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **範例：**`Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
+|加密電子郵件隨附的預設文字  <br/> 預設文字會出現在檢視加密郵件的指示上方。  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""` <br/> |
+|包含加密訊息之電子郵件中的免責聲明  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **範例：** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
 |出現在加密郵件檢視入口網站上方的文字  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **範例回復為預設值：**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
 |標誌  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **範例回復為預設值：**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
 
@@ -250,7 +250,7 @@ Office 365 郵件加密是一種線上服務，可在 Microsoft Azure Rights Man
   
  **問：我可以使用自己的品牌自訂加密電子郵件嗎？**
   
-是。 您可以使用 Windows PowerShell Cmdlet 自訂加密電子郵件頂端顯示的預設文字、免責聲明文字，及要用於電子郵件和加密入口網站的標誌。 如需詳細資訊，請參閱[Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md)。
+是。 您可以使用 Windows PowerShell Cmdlet 自訂加密電子郵件頂端顯示的預設文字、免責聲明文字，及要用於電子郵件和加密入口網站的標誌。 此功能現在可在 OMEv2 中使用。 如需詳細資訊，請參閱[Add branding to encrypted messages](add-your-organization-brand-to-encrypted-messages.md)。
   
  **問：我組織內每位使用者是否皆需備有服務授權？**
   

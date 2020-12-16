@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、OneDrive 商務及小組檔案的 Microsoft 365 的客戶金鑰。
-ms.openlocfilehash: 69e12d46ae4106a399a8eeff49ebbe0f2a3055e2
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: fed181649696c7f5a92850943e1dd980b42aa819
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841284"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688420"
 ---
 # <a name="set-up-customer-key"></a>設定客戶金鑰
 
@@ -31,9 +31,9 @@ ms.locfileid: "48841284"
   
 ## <a name="before-you-set-up-customer-key"></a>在您設定客戶機碼之前
 
-開始之前，請先確定您的組織具有適當的授權。 從 office 365 的2020年4月1日開始，于 office 365 E5，M365 E5，M365 E5 規範，以及 M365 E5 & 控管 SKUs 中提供的資訊保護。 Office 365 Advanced 相容性 SKU 已無法再提供購置新的授權。 現有的 Office 365 Advanced 相容性授權會繼續受到支援。
+開始之前，請先確定您的組織具有適當的授權。 使用企業合約或雲端服務提供者，以支付已開發票的 Azure 訂閱。 客戶機碼不支援使用「隨付」方案或信用卡使用信用卡購買的 Azure 訂閱。 從 office 365 的2020年4月1日開始，于 office 365 E5，M365 E5，M365 E5 規範，以及 M365 E5 & 控管 SKUs 中提供的資訊保護。 Office 365 Advanced 相容性 SKU 已無法再提供購置新的授權。 現有的 Office 365 Advanced 相容性授權會繼續受到支援。
 
-開始之前，請先確定您的組織有適當的授權，而且您的帳戶已開票，但沒有用信用卡支付。 若要瞭解本主題中的概念和程式，請參閱 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) 檔。 此外，熟悉 Azure 中使用的條款，例如 [AZURE AD 租](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)使用者。
+若要瞭解本主題中的概念和程式，請參閱 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/) 檔。 此外，熟悉 Azure 中使用的條款，例如 [AZURE AD 租](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)使用者。
 
 FastTrack 僅用於收集用於註冊客戶金鑰所需的承租人和服務設定資訊。 客戶金鑰提供方案是透過 FastTrack 發佈，讓您與我們的協力廠商可以方便您與我們的合作夥伴使用相同方法提交必要的資訊。 FastTrack 也可讓您輕鬆地封存您在提供中提供的資料。
   
@@ -110,9 +110,9 @@ SharePoint 線上和商務 OneDrive：
   
 1. 在您的組織中使用具有全域系統管理員許可權的公司或學校帳戶，登入 [Microsoft FastTrack 入口網站](https://fasttrack.microsoft.com/)。
 
-2. 登入之後，請流覽至 **儀表板** 。
+2. 登入之後，請流覽至 **儀表板**。
 
-3. 從導覽列中選擇 [ **部署** ]， **或** 選取 [在 **部署** 資訊卡片上 **查看所有部署資源** ]，然後查看目前的提供方案清單。
+3. 從導覽列中選擇 [**部署**]，**或** 選取 [在 **部署** 資訊卡片上 **查看所有部署資源**]，然後查看目前的提供方案清單。
 
 4. 選擇適用于您的優惠資訊卡片：
 
@@ -120,9 +120,9 @@ SharePoint 線上和商務 OneDrive：
 
    - **SharePoint 線上、OneDrive 及小組檔案：** 選擇 **Sharepoint 的要求加密金鑰說明，並 OneDrive** 提供。
 
-5. 當您複習提供詳細資料之後，請選擇 [ **繼續] 步驟 2** 。
+5. 當您複習提供詳細資料之後，請選擇 [ **繼續] 步驟 2**。
 
-6. 在 [服務] 表單上填寫所有適用的詳細資料和要求的資訊。 請特別注意您的組織中您要授權的監察官員，以核准加密金鑰和資料的永久和不可恢復的毀壞專案。 當您完成表單之後，請選擇 [ **提交** ]。
+6. 在 [服務] 表單上填寫所有適用的詳細資料和要求的資訊。 請特別注意您的組織中您要授權的監察官員，以核准加密金鑰和資料的永久和不可恢復的毀壞專案。 當您完成表單之後，請選擇 [ **提交**]。
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>註冊 Azure 訂閱以使用強制保留期間
 
@@ -143,7 +143,7 @@ SharePoint 線上和商務 OneDrive：
 
    主旨 **：客戶** 金鑰\<*Your tenant's fully-qualified domain name*\>
 
-   **Body** ：訂閱 IDs，您想要完成其強制保留期間。
+   **Body**：訂閱 IDs，您想要完成其強制保留期間。
    每個訂閱的 Get-AzProviderFeature 輸出。
 
    完成此程式的服務等級協定 (SLA) 一天之後，Microsoft 會 (通知您已註冊訂閱，) 您已註冊訂閱，以使用強制保留期間。
@@ -209,7 +209,7 @@ SharePoint 線上和商務 OneDrive：
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- 可以變更 Azure Key Vault 自身許可權的 **主要 vault 參與者** 。 您必須變更這些許可權，因為員工離職或加入您的小組，或在極少的情況下，主要 vault 管理員合法需要刪除或還原金鑰的許可權。 這組重要的 vault 投稿人員必須授與主要 vault 上的 **投稿** 人角色。 您可以使用 Azure 資源管理員指派此角色。 如需詳細步驟，請參閱 [Use Role-Based Access Control，以管理您的 Azure 訂閱資源的存取權](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure)。 建立訂閱的系統管理員會隱含此存取權，以及將其他管理員指派給參與者角色的能力。
+- 可以變更 Azure Key Vault 自身許可權的 **主要 vault 參與者**。 您必須變更這些許可權，因為員工離職或加入您的小組，或在極少的情況下，主要 vault 管理員合法需要刪除或還原金鑰的許可權。 這組重要的 vault 投稿人員必須授與主要 vault 上的 **投稿** 人角色。 您可以使用 Azure 資源管理員指派此角色。 如需詳細步驟，請參閱 [Use Role-Based Access Control，以管理您的 Azure 訂閱資源的存取權](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure)。 建立訂閱的系統管理員會隱含此存取權，以及將其他管理員指派給參與者角色的能力。
 
 - 如果您想要使用客戶金鑰搭配 Exchange Online 和商務用 Skype，您必須授與 Microsoft 365 的許可權，以代表 Exchange Online 和商務用 Skype 使用金鑰 vault。 同樣地，如果您想要使用客戶金鑰與 SharePoint 線上且 OneDrive 商務用，您必須新增 Microsoft 365 的許可權，才能代表 SharePoint 線上及 OneDrive 的商務用金鑰 vault。 若要授與 Microsoft 365 的許可權，請使用下列語法執行 **AzKeyVaultAccessPolicy** Cmdlet： 
 
@@ -279,7 +279,7 @@ Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Sof
   > [!TIP]
   > 使用主要保險檔的上述命名慣例，以前面所述的名稱慣例命名機碼。 如此一來，在僅顯示金鑰名稱的工具中，該字串是自我描述的。
   
-- 如果您想要使用 HSM 來保護機碼，請確定您將 **hsm** 指定為 _Destination_ 參數的值，否則請指定 **軟體** 。
+- 如果您想要使用 HSM 來保護機碼，請確定您將 **hsm** 指定為 _Destination_ 參數的值，否則請指定 **軟體**。
 
 例如：
   
@@ -307,7 +307,7 @@ Microsoft 365 要求 Azure Key Vault 訂閱設定為 [不要取消]，且客戶�
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-若 _Recovery Level_ 屬性傳回的值不是可復原的 **+ ProtectedSubscription** ，您必須複查此主題，並確定您已遵循將訂閱置於 [不取消取消] 清單中的所有步驟，而且您已在每個主要存放庫上啟用虛刪除。
+若 _Recovery Level_ 屬性傳回的值不是可復原的 **+ ProtectedSubscription**，您必須複查此主題，並確定您已遵循將訂閱置於 [不取消取消] 清單中的所有步驟，而且您已在每個主要存放庫上啟用虛刪除。
   
 ### <a name="back-up-azure-key-vault"></a>備份 Azure Key Vault
 
@@ -501,7 +501,7 @@ Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKe
 
 ## <a name="related-articles"></a>相關文章
 
-- [使用客戶金鑰的服務加密](customer-key-overview.md)
+- [客戶金鑰服務加密](customer-key-overview.md)
 
 - [管理客戶金鑰](customer-key-manage.md)
 

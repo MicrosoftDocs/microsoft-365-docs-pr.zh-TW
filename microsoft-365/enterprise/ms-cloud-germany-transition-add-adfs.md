@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要： Active Directory Federation Services (AD FS) 從 Microsoft Cloud Deutschland 進行遷移的遷移步驟。
-ms.openlocfilehash: 175734851c2838eb2e224a9afb57a600d4ed9523
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: c946ec3c0772cf95ab696266475b50959d682ef2
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49554785"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688662"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的 AD FS 遷移步驟
 
@@ -34,8 +34,8 @@ ms.locfileid: "49554785"
 3. 從 **AD FS > Office 365 服務** 建立新的信賴憑證者信任。
 4. 在 [AD FS 管理主控台] 中的 [信賴憑證者 **信任** ] 中，選取 [ **新增信賴** 憑證者信任]。
 5. 在 [新增信賴憑證者信任] 嚮導的 [**歡迎**] 頁面上選取 **[下一步**]。
-6. 在 [ **選取資料來源** ] 頁面上，選取 [匯 **入已發佈線上或本機網路上的信賴憑證者相關資料**]。 **(主機名稱或 URL) 值的同盟中繼資料位址** 設為 `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 按 **[下一步]**。
-7. 在 [ **選取資料來源** ] 頁面上，輸入顯示名稱。 Microsoft 建議 **全球的 Microsoft Office 365 身分識別平臺**。 按 **[下一步]**。
+6. 在 [ **選取資料來源** ] 頁面上，選取 [匯 **入已發佈線上或本機網路上的信賴憑證者相關資料**]。 **(主機名稱或 URL) 值的同盟中繼資料位址** 設為 `https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml` 。 按 [下一步 **]**。
+7. 在 [ **選取資料來源** ] 頁面上，輸入顯示名稱。 Microsoft 建議 **全球的 Microsoft Office 365 身分識別平臺**。 按 [下一步 **]**。
 8. 在 [**立即設定多重要素驗證**] 中按 **[下一步]** ，**選擇 [發行授權規則**]，並 **準備好新增信任** 頁面。
 9. 按一下 [**完成]** 頁面上的 [**關閉**]。
 
@@ -90,7 +90,7 @@ ms.locfileid: "49554785"
 
 3. 將新的 DNS 記錄或負載平衡器指向新的 AD FS 伺服器。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 
@@ -101,9 +101,9 @@ ms.locfileid: "49554785"
 
 在轉換中移動：
 
-- [遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
+- [移轉階段的動作與影響](ms-cloud-germany-transition-phases.md)
 - [其他預備工作](ms-cloud-germany-transition-add-pre-work.md)
-- [服務](ms-cloud-germany-transition-add-general.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
+- [AZURE AD](ms-cloud-germany-transition-azure-ad.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
 
 雲端應用程式：
 

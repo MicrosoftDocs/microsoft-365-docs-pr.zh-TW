@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX
 description: 使用者可以瞭解如何針對已傳送至其許可權之共用信箱的隔離郵件，查看並採取行動。
-ms.openlocfilehash: 0c165395edc3a3032ece603cb8d9aac875443d7d
-ms.sourcegitcommit: 26c2f01d6f88f6c288b04f9f08062d68dd1e67e1
+ms.openlocfilehash: 34a401d3bff66926acd3e04d7144ce465dfa3dbb
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49570930"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688026"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>從共用信箱中查看和發行隔離的郵件
 
@@ -47,16 +47,6 @@ ms.locfileid: "49570930"
 ## <a name="things-to-keep-in-mind"></a>必須記住的事項
 
 - 第一個作用於隔離郵件的使用者，會決定所有使用共用信箱之使用者的郵件 fate。 例如，如果有10位使用者存取共用信箱，而且使用者決定刪除隔離郵件，則會刪除所有10位使用者的郵件。 同樣地，如果使用者決定要放開郵件，該郵件就會發佈至共用信箱，並可供共用信箱的其他所有使用者存取。
-
-- 目前，如果使用者選取多個已傳送至共用信箱的隔離郵件，當使用者按一下 [**大量動作**] 浮出視窗中的 [**放開郵件**] 或 [**刪除郵件**] 時，就會傳回下列誤導性錯誤：
-
-  > 您沒有釋放所有選取隔離郵件的許可權。
-  >
-  > 您沒有刪除所有選取隔離郵件的許可權。
-
-  不論錯誤為何，都會對郵件採取動作，而且可以忽略此錯誤。
-
-  ![當大量釋放或刪除傳送至共用信箱的隔離郵件時，會發生 False 錯誤。](../../media/quarantine-bulk-action-error.png)
 
 - 目前已傳送至共用信箱的隔離郵件，[**詳細資料**] 浮出器中無法使用 [**封鎖寄件者**] 按鈕。
 

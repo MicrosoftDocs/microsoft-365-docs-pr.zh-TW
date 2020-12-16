@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '摘要： '
-ms.openlocfilehash: 76cad72d742f6bf7ab6ddd1f90bfe0e5a2435df1
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 35d11825148af883299aed1bcb2346d26d52408c
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49552083"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688674"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何選擇加入從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 到新德國資料中心區域中的 Office 365 服務的移轉。
 
@@ -63,11 +63,11 @@ ms.locfileid: "49552083"
 客戶與合作夥伴租使用者系統管理員可以在系統管理中心內選擇是否要進行遷移，讓遷移程式可以儘早開始。
 
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [瞭解遷移期間的客戶體驗](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 
@@ -77,9 +77,9 @@ ms.locfileid: "49552083"
 
 在轉換中移動：
 
-- [遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
+- [移轉階段的動作與影響](ms-cloud-germany-transition-phases.md)
 - [其他預備工作](ms-cloud-germany-transition-add-pre-work.md)
-- [服務](ms-cloud-germany-transition-add-general.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
+- [AZURE AD](ms-cloud-germany-transition-azure-ad.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
 
 雲端應用程式：
 

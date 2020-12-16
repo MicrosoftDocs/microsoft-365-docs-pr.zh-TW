@@ -1,9 +1,9 @@
 ---
-title: 從 Microsoft Cloud Deutschland 遷移的其他預備工作資訊
+title: 從 Microsoft Cloud Deutschland 進行遷移的準備工作
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,15 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Ent_TLGs
-description: 摘要：從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務時的其他預備工作資訊。
-ms.openlocfilehash: 41953aa9d91faa91bd983fbbc8d93baf08c172ed
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的準備工作。
+ms.openlocfilehash: 1bb6a1b80da462da2218f32fbbc2899ae651a3ec
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551705"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688452"
 ---
-# <a name="additional-pre-work-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 遷移的其他預備工作資訊
+# <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的準備工作
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
@@ -65,10 +65,6 @@ ms.locfileid: "49551705"
 | 限制 SharePoint 2013 工作流程，在 SharePoint 線上遷移期間使用。 | 減少 SharePoint 2013 工作流程，並在轉換之前完成航班中的工作流程。 | SharePoint 線上客戶 | Inaction 可能會造成使用者混淆和問訊台通話。 |
 |||||
 
-<!--
-[Reference:  If Pre-Work][ SharePoint 2013 ]
---> 
-
 ## <a name="mobile"></a>Mobile
 
 如果您正在使用協力廠商行動裝置管理 (MDM) 解決方案：
@@ -77,10 +73,6 @@ ms.locfileid: "49551705"
 |:-------|:-----|:-------|:-------|
 | 決定遷移後是否需要重新配置。 | MDM 解決方案可能會以端點為目標 `outlook.de` 。 在此轉換至 Office 365 服務時，用戶端設定檔應更新為 Office 365 服務 URL `outlook.office365.com` 。 | Exchange Online 和 MDM 客戶 | 當端點可供存取時，用戶端仍可繼續運作 `outlook.de` ，但如果無法再使用 Microsoft 雲端 Deutschland 端點，使用者將會失敗。 |
 |||||
-
-<!--
-[Reference:  If Pre-Work][ Mobile]
--->             
 
 ## <a name="line-of-business-apps"></a>企業營運應用程式
 
@@ -91,20 +83,12 @@ ms.locfileid: "49551705"
 | 決定遷移後是否需要重新配置。 | 與 Office 365 整合的協力廠商服務和應用程式可能會編碼為預期 Microsoft Cloud Deutschland IP 位址和 URLs。 | 所有客戶 | 必要的動作。 Inaction 可能會導致服務或用戶端軟體失敗。 |
 |||||
 
-<!--
-[Reference:  If Pre-Work][ LOB]
---> 
-
 ## <a name="azure"></a>Azure 
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
 | 使用您的合作夥伴，判斷哪些 Azure 服務正在使用中，並準備今後從德國遷移至 Office 365 服務租使用者。 遵循 [Azure 遷移行動手冊](https://docs.microsoft.com/azure/germany/germany-migration-main)中所述的步驟。 | 遷移 Azure 資源是一項客戶責任，需要在規定的步驟後手動工作。 瞭解組織中所使用的服務是成功遷移 Azure 服務的關鍵。 <br><br> Office 365 德國在相同身分識別分割下具有 Azure 訂閱的客戶 (組織) 必須遵循 Microsoft 規定的訂單，當他們可以開始訂閱和服務遷移時。 | Azure 客戶 | -客戶可以有多個 Azure 訂閱，每個包含基礎結構、服務和平臺元件的訂閱。 <br><br> -系統管理員應識別訂閱和利益關係人，以確保在此遷移事件中，可能會進行遷移和驗證。 <br><br> 無法順利完成這些訂閱和指定時程表內的 Azure 元件的遷移，會影響 Office 和 Azure AD 轉換至 Office 365 服務的完成，而且可能會導致資料遺失。  <br><br> -郵件中心通知會通知用戶端遷移開始的位置。 |
 |||||
-
-<!--
-[Reference:  If Azure Pre-Work][ Azure]
--->  
 
 ## <a name="dynamics-365"></a>Dynamics 365
 
@@ -113,20 +97,12 @@ ms.locfileid: "49551705"
 | 若為 Dynamics 365 沙箱訂閱，請務必從 Microsoft Cloud Deutschland 中的 Dynamics 365 訂閱下載 Dynamics SQL 實例的實際執行環境。 在沙箱遷移之前，應將最新的實際備份還原至沙箱。 | 遷移 Dynamics 365 需要客戶確保沙箱環境以最新的實際執行資料庫重新整理。 | Microsoft Dynamics 客戶 | FastTrack 小組會協助客戶執行晾乾的執行，以驗證從 8. x 到9.1 的版本升級。 |
 |||||
 
-<!--
-[Reference: Prework][Dynamics]
--->             
-
 ## <a name="power-bi"></a>Power BI
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
 | 從 Power BI 訂閱移除不會從 Power BI Microsoft Cloud Deutschland 遷移至 Office 365 服務的物件。 | 遷移 Power BI 服務需要客戶採取行動，以刪除特定的專案，例如資料集和儀表板。 | Power BI 客戶 | 管理員可能必須將下列專案從其訂閱中移除： <br> -Real-Time 資料集 (例如，流式傳送或推入資料集)  <br> -Power BI 內部部署資料閘道設定和資料來源 |
 |||||
-
-<!--
-[Reference: Prework][Power BI]
---> 
 
 ## <a name="dns"></a>DNS
 
@@ -135,10 +111,6 @@ ms.locfileid: "49551705"
 | 如果目前的 DNS 具有 MSOID CName 專案，請複查並準備 DNS 變更。 | 由客戶擁有的 DNS 區域變更 | Office 用戶端服務客戶 | 如果 MSOID CName 存在，將客戶擁有之 DNS 記錄的存留時間 (TTL) 更新為5分鐘。 |
 |||||
 
-<!--
-[Reference: Prework][DNS]
--->             
-
 ## <a name="federated-identity"></a>同盟身分識別
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
@@ -146,11 +118,7 @@ ms.locfileid: "49551705"
 | 為全域 Azure AD 端點產生信賴憑證者信任。 | 客戶必須手動建立信賴憑證者信任 (RPT) 到 [全域](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) 端點。 方法是透過 GUI 新增 RPT，方法是利用全域同盟中繼資料 URL，然後使用 [AZURE AD RPT 宣告規則](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (于 AD FS 說明中) 產生宣告規則並將其匯入 RPT。 | 同盟驗證組織 | 必要的動作。 Inaction 會在遷移期間產生服務影響。 |
 |||||
 
-<!--
-[Reference: Prework][Federation]
--->  
-
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 
@@ -161,9 +129,9 @@ ms.locfileid: "49551705"
 
 在轉換中移動：
 
-- [遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
+- [移轉階段的動作與影響](ms-cloud-germany-transition-phases.md)
 - [其他預備工作](ms-cloud-germany-transition-add-pre-work.md)
-- [服務](ms-cloud-germany-transition-add-general.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
+- [AZURE AD](ms-cloud-germany-transition-azure-ad.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
 
 雲端應用程式：
 

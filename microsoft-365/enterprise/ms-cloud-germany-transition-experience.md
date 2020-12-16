@@ -1,9 +1,9 @@
 ---
-title: 在移轉至新的德國資料中心區域中的 Office 365 服務期間的客戶經驗
+title: 在新的德國資料中心區域中，遷移至 Office 365 服務的變化
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 12/11/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,15 +18,15 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 摘要：瞭解在新的德國資料中心區域中，從 Microsoft (Cloud Deutschland) 到 Office 365 服務的經驗。
-ms.openlocfilehash: a44fbe504a9a710856deeb3baf258feb124ce7ae
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+description: 摘要：瞭解已變更，以在 Microsoft (Cloud Deutschland) 中進行移動，以在新的德國資料中心區域中從 Microsoft cloud 到 Office 365 服務。
+ms.openlocfilehash: 0415f7b95cb9a9f2625798311946dac0f1f7c2c0
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551692"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688609"
 ---
-# <a name="customer-experience-during-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>在移轉至新的德國資料中心區域中的 Office 365 服務期間的客戶經驗
+# <a name="what-has-changed-for-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>在新的德國資料中心區域中，遷移至 Office 365 服務的變化
 
 承租人遷移的設計是要對管理員和使用者造成最小影響。 不過，每個工作負載都有需要考慮的事項。 請參閱下列各節，以更深入瞭解工作負載的遷移經驗。
 
@@ -93,11 +93,11 @@ Office Online 服務可透過 `office.de` 過渡前後進行存取。 將使用�
 
 在完成將 SharePoint 線上遷移至新的德國資料中心區域之後，office 365 影片會在年3月1日、2021和 Office 365 影片上終止。 Office 365 影片中的內容會隨著 SharePoint 線上之遷移的一部分進行遷移。 不過，在 SharePoint 遷移後，Office 365 影片中的影片不會在 Office 365 的視頻 UI 中播放。 深入瞭解 [Office 365 影片轉接至 Microsoft Stream (古典) 一覽](https://docs.microsoft.com/stream/migrate-from-office-365#microsoft-cloud-deutschland-timeline)中的遷移時程表。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [瞭解遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 
@@ -107,9 +107,9 @@ Office Online 服務可透過 `office.de` 過渡前後進行存取。 將使用�
 
 在轉換中移動：
 
-- [遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
+- [移轉階段的動作與影響](ms-cloud-germany-transition-phases.md)
 - [其他預備工作](ms-cloud-germany-transition-add-pre-work.md)
-- [服務](ms-cloud-germany-transition-add-general.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
+- [AZURE AD](ms-cloud-germany-transition-azure-ad.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
 
 雲端應用程式：
 

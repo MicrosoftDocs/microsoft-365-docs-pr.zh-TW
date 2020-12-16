@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時，服務的其他裝置資訊) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: 941b836871f4ffb7f39f6e144675e9ee15510270
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560851"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688650"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 遷移的其他裝置資訊
 
@@ -247,7 +247,7 @@ Admin：如果組織的系統管理員想要將已加入 Azure AD 的使用者�
 3.  從省略號 (三點) 功能表中，選取 [ **移除裝置**]，並在對話方塊中確認以完成移除。
 4.  您現在應該已登出公司入口網站應用程式。 選取 [登入] 以重新 **登錄** 裝置。
 
-如需此工作負載遷移階段所需之動作的詳細資訊，或對管理或使用的影響，請參閱 Azure Active Directory 的相關資訊，以瞭解 [從 Microsoft Cloud Deutschland 進行遷移的其他一般資訊](ms-cloud-germany-transition-add-general.md#azure-active-directory)。
+如需此工作負載遷移階段所需之任何動作的詳細資訊，或對管理或使用的影響，請參閱其他 Azure AD information for the Azure Active Directory (Azure AD) 中的相關資訊，以 [供從 Microsoft Cloud Deutschland 進行遷移](ms-cloud-germany-transition-azure-ad.md)。
 
 ## <a name="ios"></a>iOS
 
@@ -270,7 +270,7 @@ Admin：如果組織的系統管理員想要將已加入 Azure AD 的使用者�
 
 使用者可以移至個別應用程式，例如 Outlook、小組和 OneDrive，以及從這些應用程式中移除帳戶。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 
@@ -281,9 +281,9 @@ Admin：如果組織的系統管理員想要將已加入 Azure AD 的使用者�
 
 在轉換中移動：
 
-- [遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
+- [移轉階段的動作與影響](ms-cloud-germany-transition-phases.md)
 - [其他預備工作](ms-cloud-germany-transition-add-pre-work.md)
-- [服務](ms-cloud-germany-transition-add-general.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
+- [AZURE AD](ms-cloud-germany-transition-azure-ad.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
 
 雲端應用程式：
 

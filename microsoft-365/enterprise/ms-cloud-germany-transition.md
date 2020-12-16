@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務。
-ms.openlocfilehash: 37bf052739bf15c1a0d3712539779e9dff31d9e8
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 16e57eff5556d31d2d13ab6ce0d284719d63c44c
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551531"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688638"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>從 Microsoft Cloud Deutschland 遷移至新德文 datacenter 區域中的 Office 365 服務
 
@@ -71,7 +71,7 @@ Office 365 影片即將于年 2021年 3月 1日停用。 如果您選擇將 Offi
 
 進行選擇時，不會立即開始遷移。 您的組織會新增至預定日後遷移的承租人清單。 您現在可以開始「預備工作」階段，因為這些是確保順利進行遷移和完成時使用的重要專案：
 
-- [遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
+- [移轉階段的動作與影響](ms-cloud-germany-transition-phases.md)
 - [其他預備工作](ms-cloud-germany-transition-add-pre-work.md)
 
 在承租人遷移開始之前的一周，您會在訊息中心服務中收到通知，最後是所有必要條件都必須完成的最後警告。
@@ -138,7 +138,7 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 3. 群組 (新式群組)
 4. Delve 設定檔
 5. Exchange Online Protection
-6. 適用于 Office 的 Defender 365
+6. 適用於 Office 365 的 Microsoft Defender
 7. 進階電子文件探索
 8. 進階資料控管
 9. SharePoint Online
@@ -158,7 +158,7 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 5. MyAnalytics
 6. 工作場所分析
 7. Exchange Online Protection
-8. 適用于 Office 的 Defender 365
+8. 適用於 Office 365 的 Microsoft Defender
 9. 進階電子文件探索
 10. 進階安全性管理
 11. 資訊版權管理
@@ -274,11 +274,11 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 - 如果您是 Dynamics 365 客戶接洽和 Power BI 客戶，也有 Office 365，您可以使用 &quot; &quot; [Microsoft 365 系統管理中心](https://portal.office.de/)的 [需要協助] 連結提交問題。 Dynamics 365 Customer Engagement 支援選項在[這裡](https://docs.microsoft.com/dynamics365/get-started/support/)。 Power BI 支援選項在[這裡](https://powerbi.microsoft.com/support/)。
 
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [選擇加入移轉](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他資訊
 
 開始：
 
@@ -288,9 +288,9 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 
 在轉換中移動：
 
-- [遷移階段的動作和影響](ms-cloud-germany-transition-phases.md)
+- [移轉階段的動作與影響](ms-cloud-germany-transition-phases.md)
 - [其他預備工作](ms-cloud-germany-transition-add-pre-work.md)
-- [服務](ms-cloud-germany-transition-add-general.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
+- [AZURE AD](ms-cloud-germany-transition-azure-ad.md)、[裝置](ms-cloud-germany-transition-add-devices.md)、[經驗](ms-cloud-germany-transition-add-experience.md)和[AD FS](ms-cloud-germany-transition-add-adfs.md)的其他資訊。
 
 雲端應用程式：
 

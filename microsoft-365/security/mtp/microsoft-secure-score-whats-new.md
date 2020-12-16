@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4b25f701aca24563dc4f1a15f78a80e1e2064367
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604380"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688408"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
 
@@ -35,7 +35,18 @@ ms.locfileid: "49604380"
 
 Microsoft Secure 得分可在 https://security.microsoft.com/securescore [microsoft 365 的安全性中心](overview-security-center.md)找到。
 
-## <a name="november-2020"></a>2020年11月
+## <a name="december-2020"></a>2020 年 12 月
+
+### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>為 Microsoft defender 的 Endpoint (先前的 Microsoft defender ATP) 新增6個與帳戶相關的改進動作：
+
+- 將 ' 密碼長度下限 ' 設定為 ' 14 或以上的字元」
+- 將 ' 強制密碼歷程記錄 ' 設定為 ' 24 或以上的密碼 (s) '
+- 將 ' 密碼最長存留期 ' 設定為 ' 60 或更少的天數，但不是 0 '
+- 將 ' 密碼最短保留天數 ' 設定為 ' 1 或以上的 (s) '
+- 停用內建管理員帳戶
+- 停用內建來賓帳戶
+
+## <a name="november-2020"></a>2020 年 11 月
 
 ### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>移除透過安全分數建立 ServiceNow 票證的能力 
 
@@ -47,7 +58,7 @@ Microsoft Secure 得分可在 https://security.microsoft.com/securescore [micros
 - 將服務可執行路徑變更為一般受保護的位置
 - 變更服務帳戶以避免在 windows 登錄中快取密碼
 
-## <a name="october-2020"></a>10月2020
+## <a name="october-2020"></a>2020 年 10 月
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>移除與 Microsoft Defender for Endpoint 相關的改進動作
 

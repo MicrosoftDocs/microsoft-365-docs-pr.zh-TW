@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 瞭解如何在 Microsoft 365 中新增及設定您的網域，如此一來，諸如電子郵件和商務用 Skype Online 等服務也會使用您自己的功能變數名稱。
-ms.openlocfilehash: a4218b03e3f23ba8bc39c5eb84b42f87a71b9a65
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 492bc5d2a5f3fd9810f045e7effda1ea20fa15ed
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658596"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688246"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>使用任何網域註冊機構變更名稱伺服器以設定 Microsoft 365
 
@@ -166,7 +166,7 @@ ms.locfileid: "49658596"
 
 2. 在 [ **網域** ] 頁面上，選取網域，然後選擇 [ **DNS 記錄**]。
 
-3. 在 [ **DNS 設定**] 底下，選取 [ **自訂記錄**]，然後選擇 [ **新增自訂記錄**]。
+3. 在 [ **管理 DNS**] 底下，選取 [ **自訂記錄**]，然後選擇 [ **新增自訂記錄**]。
 
 4. 選取您要新增的 DNS 記錄類型，然後輸入新記錄的資訊。
 

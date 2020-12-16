@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: 瞭解如何從 Microsoft 365 移除舊的網域，以及將使用者和群組移至另一個網域。
-ms.openlocfilehash: cddbb0ef9cf48147e33b93a4a8def15576edfab5
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 02ec704e400af76c25c0eb54de10291e2ef3caa2
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655527"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688258"
 ---
 # <a name="remove-a-domain"></a>移除網域
 
@@ -219,9 +219,9 @@ ms.locfileid: "49655527"
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> 您無法移除帳戶中的 [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 網域。
+> 您無法移除帳戶中的 [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) 網域。 當您移除網域時，使用者帳戶會回復為 "onmicrosoft.com" 位址，成為主要 SMTP/UserprincipalName。
   
-仍無法運作嗎？您的網域可能需要手動移除。[打電話給我們](../contact-support-for-business-products.md)，我們會協助您處理。
+仍無法運作？ 您的網域可能需要手動移除。 請[致電](../contact-support-for-business-products.md)我們，我們將協助您處理！
   
 ::: moniker-end
 

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以從 Office 365 中的 [受限使用者] 入口網站瞭解如何移除使用者。 傳送輸出垃圾郵件 (通常是因為「帳戶洩露」) 的使用者會被新增至 [受限使用者] 入口網站。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f464a2c02ae6b6290e79cc9aff7d3a37bc08a6ff
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572438"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49683043"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>從 Office 365 中的 [受限使用者] 入口網站移除封鎖的使用者
 
@@ -86,7 +86,7 @@ ms.locfileid: "49572438"
 
 3. 在隨即出現的飛出視窗中，確認或設定如下設定：
 
-   - **狀態**：確認已開啟警示 ![打開](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)。
+   - **狀態**：確認已開啟警示 ![打開](../../media/scc-toggle-on.png)。
 
    - **電子郵件收件者**：按一下 **[編輯]**，在 **[編輯收件者]** 飛出視窗中確認或設定如下列設定：
 
