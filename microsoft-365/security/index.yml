@@ -50,7 +50,7 @@ landingContent:
       url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
     - text: 適用於身分識別的 Microsoft Defender 架構
       url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
-- title: 適用於 Office 365 的 Defender
+- title: 適用於 Office 365 的 Microsoft Defender
   linkLists:
   - linkListType: overview
     links:
