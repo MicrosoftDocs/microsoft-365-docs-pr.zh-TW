@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: 在 Microsoft SharePoint Syntex 中建立文件瞭解模型時，運用字詞庫分類法。
-ms.openlocfilehash: 0008dd02ef46401e9f0c9414b8363cff034c18eb
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: a8078e6ff2d2ecd0f98c22b602a54675f7d62816
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087318"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701092"
 ---
 # <a name="leverage-term-store-taxonomy-when-creating-an-extractor"></a>在建立擷取器時運用字詞庫分類法
 
@@ -25,19 +25,20 @@ ms.locfileid: "49087318"
 
 </br>
 
-
-在 SharePoint Syntex 中的文件瞭解模型中建立擷取器時，可以利用[受管理的中繼資料服務](https://docs.microsoft.com/sharepoint/managed-metadata#terms)字詞庫分類法顯示所選取資料的首選字詞。  
+使用 SharePoint Syntex 中的文件瞭解模型中建立擷取器時，可以利用[受管理的中繼資料服務](https://docs.microsoft.com/sharepoint/managed-metadata#terms)字詞庫分類法顯示所選取資料的首選字詞。  
 
 舉例來說，您的模型識別並分類上傳至文件庫的所有 **[合約]** 文件。  此外，模型也會從每個合約擷取 **[合約服務]** 值，並將它顯示在文件庫檢視的欄中。 在合於中的各種合約服務值中，貴公司已不再使用並重新命名了數個舊值。 例如，所有提及 *「設計」*、*「圖形」* 或 *「地形」* 契约服務的條款現在都應該稱為 *「創造性」*。 每當您的模型從合約文件中選取過期的字詞時，您希望它在庫檢視中顯示目前字詞 「創造性」。 在下列範例中，在訓練模型時我們看到其中一個範例檔包含過期的字詞 *「設計」*。
 
    ![字詞庫](../media/content-understanding/design.png)</br>
 
-
 ## <a name="use-a-managed-metadata-column-in-your-extractor"></a>在您的擷取器中使用受管理的中繼資料欄
 
-在 SharePoint 系統管理中心的 [受管理的中繼資料] 服務字詞庫中設定字詞組。 在下列範例中，*[合約服務]* [字詞組](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) 設定為包含許多字詞，包括 *「創造性」*。  它的詳細資料表明這個字詞有三個同義字（*「設計」*、*「圖形」* 和 *「地形」*），這些同義詞應該被翻譯成 *「創造性」*。 
+在 SharePoint 系統管理中心的 [受管理的中繼資料] 服務 (MMS) 字詞庫中設定字詞組。 在下列範例中，*[合約服務]* [字詞組](https://docs.microsoft.com/sharepoint/managed-metadata#term-set) 設定為包含許多字詞，包括 *「創造性」*。  它的詳細資料表明這個字詞有三個同義字（*「設計」*、*「圖形」* 和 *「地形」*），這些同義詞應該被翻譯成 *「創造性」*。 
 
    ![字詞組](../media/content-understanding/term-store.png)</br>
+
+> [!NOTE]
+>  在內容中心的 MMS 欄位中，系統會將字詞集合設定為全域性。
 
 您可能會想要在字詞組中使用同義字的原因有很多。 例如，可能存在過期字詞、重新命名的字詞或組織部門之間在命名方面的差异。
 

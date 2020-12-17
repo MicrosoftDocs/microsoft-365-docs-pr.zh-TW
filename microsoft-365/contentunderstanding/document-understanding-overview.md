@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: 取得 Microsoft SharePoint Syntex 中文件瞭解的概覽。
-ms.openlocfilehash: b26ed9a9ed9b8d1f332ccf14377660e634349b3d
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 5dd44a119dff6f5d194861c381fa28f76a6f0da7
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087364"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701104"
 ---
 # <a name="document-understanding-overview"></a>文件瞭解概觀
 
@@ -33,6 +33,9 @@ ms.locfileid: "49087364"
 
 文件瞭解模型是在一種稱為 *内容中心* 的 SharePoint 網站中建立和管理的。 當套用至 SharePoint 文件庫時，模型與一個具有存儲所擷取資訊的欄的內容類型相關聯。 您建立的內容類型儲存在 SharePoint 內容類型庫中。 您也可以選擇使用現有內容類型來使用其架構。
 
+> [!NOTE]
+> 無法更新唯讀或封存內容類型，因此無法在模型中使用。
+
 將 *分類器* 和 *擷取器* 新增至文件瞭解模型中，以執行以下動作： 
 
 - 分類器用來識別和分類上傳至文件庫的文件。 例如，可以「訓練」分類器來識別上傳到文件庫的所有 *合同續約* 文件。 合同續約內容類型由您在建立分類器時定義。
@@ -41,9 +44,10 @@ ms.locfileid: "49087364"
 
 您可以在模型中使用範例檔案來訓練和測試分類器和擷取器。 範例檔案向您的模型範例提供在嘗試從檔案中識別和擷取資料時要查找的內容。 例如，您會以貴公司使用的合同續約文件範例來訓練您的合同續約分類器和擷取器。 您也可以使用範例檔案來測試模型的有效性。
 
+> [!NOTE]
+> 如果您使用光學字元辨識 (OCR) 技術來掃描文件，則Syntex 的模型訓練會有15頁之限制。
+
 發佈模型之後，請使用內容中心將它套用到您有權存取的任何 SharePoint 文件庫。  
-
-
 
 ## <a name="see-also"></a>另請參閱
 [建立分類器](create-a-classifier.md)

@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: 了解如何在 Microsoft SharePoint Syntex 中建立擷取器。
-ms.openlocfilehash: 99d2a4602c03d8a7207736ea17ed500626ce43ac
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: b957d905f3807f6007ebeb742d9b56d81ea38ac2
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087460"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701126"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中建立擷取器
 
@@ -37,7 +37,9 @@ ms.locfileid: "49087460"
 
 1. 在模型首頁的 **[建立及訓練擷取器]** 磚中，按一下 **[訓練擷取器]**。
 2. 在 **[新增實體擷取器]** 畫面的 **[新擷取器名稱]** 欄位中輸入您的擷取器名稱。 例如，如果您想要從每個續約文件擷取服務開始日期，請將它命名為 **服務開始日期**。 您也可以選擇重複使用之前建立的欄位 (例如受管理的中繼資料欄)。
-3. 按一下 **[建立]**。
+> [!NOTE]
+> 如果您建立新的提取清單，請選取 **[新增欄位輸入]**，然後選擇 **[單行文字]** 中的最大字元數上限為255。 任何您所輸入超過限制的字元都會被截斷。 
+3. 完成後，按一下 **[建立]**。
 
 ## <a name="add-a-label"></a>新增標籤
 

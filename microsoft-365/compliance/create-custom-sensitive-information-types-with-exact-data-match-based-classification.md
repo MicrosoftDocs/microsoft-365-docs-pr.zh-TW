@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5fa261f1e0db5c8ed66dfdebdca764976fe3130
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 68546f7ad9f4b97f43611d49054200db4fdd4bbd
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658670"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698394"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -107,6 +107,11 @@ ms.locfileid: "49658670"
 3. 請留意敏感性資料欄位的格式。 特別是，在内容中包含逗號的欄位（例如：街道地址中包含“Seattle,WA” 這個值）當由 EDM 工具解析時，將被解析為兩個單獨的欄位。 為避免此情形發生，您需要確保敏感性資料表格中這類欄位周圍有單引號或雙引號。 如果有逗號的欄位還可以包含空格，您會需要建立一個自訂敏感性資訊類型，以匹配相應的格式（例如，包含逗號和空格的多字字串），以確保在掃描文檔時該字串能正確匹配。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定義用於敏感性資訊的資料庫結構描述
+
+如果基於商務或技術因素，您不想使用 PowerShell 或命令列來建立結構描述和 EDM 敏感性資訊類型模式 (規則套件)，您可以使用 [完全符合結構描述和敏感性資訊類型的精靈](sit-edm-wizard.md) 來建立它們。 當您完成建立結構描述和 EDM 敏感性資訊類型模式後，請返回以完成所有必要的步驟，讓您 EDM 的敏感性資訊類型可供使用。
+
+> [!NOTE]
+> 「完全符合結構描述和敏感性資訊類型」精靈只適用于 World Wide 和 GCC 雲端。
 
 1. 以 XML 格式定義用於敏感性資訊資料庫的結構描述 (類似以下的範例)。 將此結構描述檔案命名為 **edm.xml**，然後進行設定，讓資料庫中的每一個資料行都會有使用下列語法的行： 
 
@@ -253,7 +258,7 @@ ms.locfileid: "49658670"
       </RulePackage>
       ```
 
-1. 執行下列 PowerShell Cmdlet 以上傳規則套件，一次一個：
+2. 執行下列 PowerShell Cmdlet 以上傳規則套件，一次一個：
 
       ```powershell
       $rulepack=Get-Content .\\rulepack.xml -Encoding Byte -ReadCount 0
@@ -361,7 +366,10 @@ ms.locfileid: "49658670"
 
 如果您想要從一部電腦進行雜湊和上傳，您必須從一部可直接連線至 Microsoft 365 租用者的電腦執行。 這要求您明文的敏感性資料在該電腦上進行雜湊。
 
-如果您不想公開明文機密的資料檔，可以在安全位置的電腦上雜湊，然後將雜湊檔和鹽檔複製到可直接連線到 Microsoft 365 租用者的電腦。 在這個案例中，您將需要在兩部電腦上都有 EDMUploadAgent。 
+如果您不想公開明文機密的資料檔，可以在安全位置的電腦上雜湊，然後將雜湊檔和鹽檔複製到可直接連線到 Microsoft 365 租用者的電腦。 在這個案例中，您將需要在兩部電腦上都有 EDMUploadAgent。
+
+> [!IMPORTANT]
+> 如果您使用完全符合結構描述和資料類型精靈建立結構描述和模式檔案，您 **_必須_* 下載此程式的結構描述。
 
 #### <a name="prerequisites"></a>必要條件
 
@@ -372,10 +380,11 @@ ms.locfileid: "49658670"
     - 在我們的範例中，您在 csv 格式 **PatientRecords** 的機密項目檔案
     -  以及輸出雜湊和鹽數值檔案
     - 從 **edm.xml** 檔案的資料存儲名稱，在這個範例中的如其 `PatientRecords`
+- 如果您使用 [完全符合結構描述和敏感性資訊類型的資料類型精靈](sit-edm-wizard.md) 您 **_必須_* _下載它
 
 #### <a name="set-up-the-security-group-and-user-account"></a>設定安全性群組和使用者帳戶
 
-1. 以全域系統管理員身分，使用 [適用於您訂閱的連結](#portal-links-for-your-subscription)前往系統管理中心，並建立名為 **EDM\_DataUploaders** 的 [安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
+1. 以全域系統管理員身分，使用適用於[您訂閱的連結](#portal-links-for-your-subscription) 前往系統管理中心，並 [建立安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) 名為_*EDM\_DataUploaders**。
 
 2. 將一或多個使用者新增至 **EDM\_DataUploaders** 安全性群組。 (這些使用者將管理敏感性資訊的資料庫)。
 
@@ -420,6 +429,10 @@ ms.locfileid: "49658670"
 
 3. 用您已加入EDM_DataUploaders 安全性群組的Microsoft 365的工作或學校帳戶來登入. 您的租戶信息將從用戶帳戶中提取出來以建立連接。
 
+選用：如果您使用完全符合結構描述和敏感性資料類型精靈建立結構描述和模式檔案，請在命令提示字元視窗中執行下列命令：
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+
 4. 若要為敏感性資料雜湊並上傳，請在Command Prompt 命令提示字元視窗中執行下列命令：
 
 `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
@@ -439,6 +452,10 @@ ms.locfileid: "49658670"
 #### <a name="separate-hash-and-upload"></a>雜湊和上傳分開
 
 在安全的環境中，在電腦上執行雜湊。
+
+選用：如果您使用完全符合結構描述和敏感性資料類型精靈建立結構描述和模式檔案，請在命令提示字元視窗中執行下列命令：
+
+`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 1. 在Command Prompt 命令提示視窗中，執行下列命令：
 
