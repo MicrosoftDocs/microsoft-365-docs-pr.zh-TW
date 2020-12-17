@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 localization_priority: Priority
 description: 瞭解如何將已發佈的模型套用至 SharePoint 文件庫
-ms.openlocfilehash: 0ca58e863d42d41b634978f53f55201a10a5ed93
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 9c99ede49633b5ae70cbb67c30d83c111084df95
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087484"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701138"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中套用文件瞭解模型。
 
@@ -77,6 +77,9 @@ ms.locfileid: "49087484"
 3. 您選取的檔案會新增到佇列中，以便進行處理。
 
       ![分類和擷取](../media/content-understanding/extract-classify.png)</br> 
+
+> [!NOTE]
+> 您可以複製個別檔案到文件庫並套用至模型，而非資料夾。
 
 ## <a name="see-also"></a>另請參閱
 [建立分類器](create-a-classifier.md)
