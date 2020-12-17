@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何只用兩個測試帳戶來試驗自訂365網域的電子郵件功能。
-ms.openlocfilehash: 8bb04edc9a7879edc2094f1fed667d5956174ea3
-ms.sourcegitcommit: 15be7822220041c25fc52565f1c64d252e442d89
+ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
+ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "48295031"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49688214"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>從我的自訂網域試驗 Microsoft 365
 
@@ -39,6 +39,8 @@ ms.locfileid: "48295031"
 - 系統管理員無法從單一位置管理所有使用者帳戶。
 
 - 使用者可能無法使用 Microsoft 365 垃圾郵件篩選。
+
+- 僅針對非常少量的使用者才建議使用此功能，並僅適用使用電子郵件進行試驗。
 
 ## <a name="set-up-a-microsoft-365-pilot"></a>設定 Microsoft 365 試驗
 
@@ -83,7 +85,7 @@ Microsoft 365 使用 Exchange Online Protection （EOP）來保護垃圾郵件�
 
 1. 在 Exchange 系統管理中心流覽窗格中，選取 **[保護]**，然後選取 **[連線篩選]**。
 
-2. 在 **[IP允許清單]** 中，選擇**+**，然後新增目前電子郵件提供方的郵件伺服器 IP 位址。 
+2. 在 **[IP允許清單]** 中，選擇 **+**，然後新增目前電子郵件提供方的郵件伺服器 IP 位址。 
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>步驟 5：建立使用者帳戶並設定主要 (回覆) 地址
 
@@ -189,4 +191,3 @@ Microsoft 365 使用 Exchange Online Protection （EOP）來保護垃圾郵件�
 
 將檔案匯入至 Microsoft 365 信箱中的適當位置之後，您就可以從任何裝置隨時隨地存取這些專案。
 
-當涉及更多信箱，或如果員工並未使用 Outlook 的話，您可以使用 Exchange 系統管理中心提供的遷移工具。 若要開始使用，請移至 Exchange 系統管理中心，並依照[將電子郵件從 IMAP 伺服器遷移到 Exchange Online 信箱](https://docs.microsoft.com/exchange/mailbox-migration/migrating-imap-mailboxes/migrating-imap-mailboxes)中的指示進行。

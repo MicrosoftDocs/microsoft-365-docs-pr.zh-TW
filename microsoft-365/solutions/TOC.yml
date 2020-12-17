@@ -1,5 +1,5 @@
 - name: Microsoft 365 解決方案與架構中心
-  href: solution-architecture-center.md
+  href: index.yml
   displayName: Home
 - name: 解決方案與架構圖
   items:
@@ -7,10 +7,10 @@
       href: productivity-illustrations.md
     - name: Microsoft 雲端架構模式
       href: cloud-architecture-models.md
+    - name: 架構圖示和範本
+      href: architecture-icons-templates.md
 - name: Microsoft 365 基礎解決方案
   items:
-    - name: 概觀
-      href: foundation-solutions-overview.md
     - name: 使用 Microsoft 365 強化遠端工作者
       items:
         - name: 概觀
@@ -93,8 +93,6 @@
           href: information-protection-deploy-monitor-respond.md
 - name: 工作負載解決方案和案例
   items:
-    - name: 概觀
-      href: workload-solutions-scenarios-overview.md
     - name: 團隊合作和共同作業
       items:
         - name: Teams 架構海報
@@ -211,8 +209,6 @@
           href: team-security-isolation-dev-test.md
 - name: 產業專屬的指引
   items:
-    - name: 概觀
-      href: industry-specific-guidance-overview.md
     - name: 財務
       items:
         - name: 金融服務的安全性與合規性
