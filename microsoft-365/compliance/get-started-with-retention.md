@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作保留原則及保留標籤來管理貴組織的資料，但不確定從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: b4dcbe15e2a2d9e3d056555a9212125b60133826
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919861"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682528"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>開始使用保留原則和保留標籤
 
@@ -32,17 +32,17 @@ ms.locfileid: "48919861"
 
 準備好透過保留您要保留的內容，並刪除您不想要的內容，以開始管理貴組織的資料了嗎？ 使用下列高層指導方針以開始進行：
 
-1. **瞭解 Microsoft 365 中的保留運作方式** ，然後找出您是否需要使用保留原則或保留標籤，或下列其中一種組合方式： [瞭解保留原則](retention.md)
+1. **瞭解 Microsoft 365 中的保留運作方式**，然後找出您是否需要使用保留原則或保留標籤，或下列其中一種組合方式： [瞭解保留原則](retention.md)
 
-2. **識別組織政策或行業法規所需的保留設定和動作** 。
+2. **識別組織政策或行業法規所需的保留設定和動作**。
     
     在此評估中，請判斷您是否會使用 [記錄管理](records-management.md)。
 
-3. 根據您發現的保留設定和動作 **建立保留原則和保留標籤** 。
+3. 根據您發現的保留設定和動作 **建立保留原則和保留標籤**。
     
     針對保留標籤，您可能會發現使用 [[檔案計畫]](file-plan-manager.md) 定義及精煉試算表中的保留標籤是非常實用的。 然後，匯入該試算表以建立您的標籤。
     
-3. **發佈並套用您的保留標籤** 。 保留原則是專為「設定並遺忘」設定而設計，保留標籤是可在多個原則中使用的可重複使用構造塊，且可納入使用者工作流程。 請參閱 [常見案例](#common-scenarios-for-retention-policies-and-retention-labels) ，以協助您找出保留標籤的使用方式。 
+3. **發佈並套用您的保留標籤**。 保留原則是專為「設定並遺忘」設定而設計，保留標籤是可在多個原則中使用的可重複使用構造塊，且可納入使用者工作流程。 請參閱 [常見案例](#common-scenarios-for-retention-policies-and-retention-labels) ，以協助您找出保留標籤的使用方式。 
 
 ## <a name="subscription-and-licensing-requirements-for-retention-policies-and-retention-labels"></a>保留原則和保留標籤的訂閱和授權需求
 
@@ -52,7 +52,13 @@ ms.locfileid: "48919861"
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>建立和管理保留原則和保留標籤所需權限。
 
-您的合規性團隊中負責建立和管理保留原則和保留標籤的成員，必須具備 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)的權限。 根據預設，租用戶系統管理員 (全域系統管理員) 能夠存取此位置，並可讓法務人員和其他人員存取，而不需要為其提供租用戶系統管理員的所有權限。若要授與此受限制的系統管理權限，建議您將使用者新增至 [合規性系統管理員] 系統管理員角色群組。 如需相關指示，請參閱[讓使用者能夠存取安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
+您的合規性團隊中負責建立和管理保留原則和保留標籤的成員，必須具備 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)的權限。 根據預設，租用戶系統管理員 (全域系統管理員) 能夠存取此位置，並可讓法務人員和其他人員存取，而不需要為其提供租用戶系統管理員的所有權限。若要授與此受限制的系統管理權限，建議您將使用者新增至 [合規性系統管理員] 系統管理員角色群組。
+
+除了使用此預設角色之外，您還可以建立新角色群組並將 **[保留管理]** 角色新增到此群組中。 對於唯讀角色，請使用 **[僅檢視保留管理]**。 
+
+如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)。
+
+如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 
 只有在建立、設定、和套用保留原則及保留標籤時，才需要求這些權限。 設定這些保留原則和標籤的人員不需要內容的存取權。
 

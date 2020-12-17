@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'Microsoft 365 端點資料外洩防護可擴充檔案活動的監視以及這些檔案到端點的保護動作。 在 Microsoft 365 合規性中心解決方案中可看到檔案 '
-ms.openlocfilehash: 457701a514159e54e932db3e4ad04a7428165fdc
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604313"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682624"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>深入了解 Microsoft 365 端點資料外洩防護
 
@@ -34,18 +34,19 @@ ms.locfileid: "49604313"
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>您可以監視和採取動作的端點活動
 
-Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用者會在執行 Windows 10 的裝置上透過這些活動使用敏感度專案。 這包括：
+Microsoft 端點 DLP 可讓您稽核及管理下列類型的活動，而使用者會在執行 Windows 10 的裝置上透過這些活動使用敏感度專案。
 
 
-|專案上的活動 |可稽核/可限制  |
-|---------|---------|
-|建立的    | 可稽核的      |
-|重新命名的    |  可稽核的       |
-|複製到可移除式媒體或在上面建立     |     可稽核與可限制|
-|複製到網路共用，例如，\\my-server\fileshare   |     可稽核與可限制    |
-|列印的 |    可稽核與可限制       |
-|透過 Chromium Edge 複製到雲端    |   可稽核與可限制        |
-|已遭不受允許的應用程式和瀏覽器存取    |  可稽核與可限制       |
+|活動 |描述  | 可稽核的/可限制的|
+|---------|---------|---------|
+|上傳到雲端服務，或透過不允許的瀏覽器存取    | 使用者嘗試將項目上載到受限服務域或透過瀏覽器存取項目時偵測。  如果他們使用的瀏覽器在 DLP 中列為不允許使用的瀏覽器，則上載活動將被封鎖，使用者將被重新導向到使用Edge Chromium。 然後，Edge Chromium 將基於 DLP 原則設定允許或封鎖上載或存取         |可稽核與可限制|
+|複製到其他應用程式    |使用者嘗試從受保護項目複製資訊，然後將其貼上到另一個應用程式、流程或項目中時偵測。 此活動不會偵測到在同一應用程式、流程或項目中複製和貼上資訊。         | 可稽核與可限制|
+|複製到 USB 卸除式媒體 |使用者嘗試將項目或資訊複製到卸除式媒體或 USB 裝置時偵測。         | 可稽核與可限制|
+|複製到網路共用    |使用者嘗試將項目複製到網路共用或對應的網路磁碟機時偵測         |可稽核與可限制|
+|列印文件    |當使用者試圖將受保護的項目列印到本機或網路列印機時偵測。| 可稽核與可限制         |
+|建立項目|當使用者建立項時偵測| 可稽核的|
+|重新命名項目|當使用者重新命名項時偵測| 可稽核的|
+
 
 ## <a name="whats-different-in-endpoint-dlp"></a>端點 DLP 有何不同
 

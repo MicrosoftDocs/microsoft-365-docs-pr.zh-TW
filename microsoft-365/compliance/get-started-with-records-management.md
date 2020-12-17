@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 需要適用于 Microsoft 365 的記錄管理解決方案，以管理法律、企業或法規責任的高價值內容，但不確定要從何處著手？ 若要開始進行，請參閱一些實用的指導方針。
-ms.openlocfilehash: 679300f581dd9177c00f367f4452d12142f49ee4
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.openlocfilehash: 0dc0258ed53aa07df778f5d0883b02b7635f50d8
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48919851"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682720"
 ---
 # <a name="get-started-with-records-management"></a>開始使用記錄管理
 
@@ -34,9 +34,9 @@ ms.locfileid: "48919851"
 
 2. **瞭解保留標籤以及如何在 SharePoint 和 Exchange 中使用保留功能** ，因為保留標籤是用來聲明記錄： [瞭解保留原則和保留標籤](retention.md)
 
-3. 透過 [匯出現有方案](file-plan-manager.md#import-retention-labels-into-your-file-plan )(如果有的話)，以 **針對保留設定和動作建立您的檔案方案** ，或建立 [ 聲明記錄的新保留標籤](declare-records.md)。
+3. 透過 [匯出現有方案](file-plan-manager.md#import-retention-labels-into-your-file-plan )(如果有的話)，以 **針對保留設定和動作建立您的檔案方案**，或建立 [ 聲明記錄的新保留標籤](declare-records.md)。
 
-4. **發佈並套用您的保留標籤** 。 保留標籤是可在多個原則中使用的可重複使用構造塊，且可納入使用者工作流程: 
+4. **發佈並套用您的保留標籤**。 保留標籤是可在多個原則中使用的可重複使用構造塊，且可納入使用者工作流程: 
     
     - [建立保留標籤，並在應用程式中使用這些標籤](create-apply-retention-labels.md)
     - [自動將保留標籤套用到內容](apply-retention-labels-automatically.md)
@@ -49,11 +49,11 @@ ms.locfileid: "48919851"
 
 ## <a name="permissions-required-for-records-management"></a>記錄管理所需的存取權限。
 
-您的合規性團隊中負責記錄管理的成員，必須具備 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)的權限。 根據預設，租用戶系統管理員 (全域系統管理員) 能夠存取此位置，並可讓法務人員和其他人員存取，而不需要為其提供租用戶系統管理員的所有權限。若要授與此受限制的系統管理權限，建議您將使用者新增至有權授與 **RecordManagement** 角色的 **記錄管理** 系統管理員角色群組。
+您的合規性團隊中負責記錄管理的成員，必須具備 [Microsoft 365 合規性中心](https://compliance.microsoft.com/)的權限。 根據預設，租用戶管理員 (全域系統管理員) 可以存取此位置，並且可以授與法務人員和其他人員存取權限，而無需向他們授與租用戶管理員的所有權限。若要授與此有限管理的權限，建議您將使用者新增到 **[記錄管理]** 管理員角色群組，該角色群組將授與與記錄管理相關的所有功能 (包括 [處置檢閲和驗證](disposition.md)) 的權限。 
 
-此角色群組中所包含的權限不包含 [處置檢閱和驗證](disposition.md)所需的權限，根據預設，即使是全域系統管理員也不擁有此權限。 若要管理處置，請透過建立自訂角色群組，或使用包含此角色的預設角色群組(例如 **合規性系統管理員** ) 以使用 **處置管理** 角色。
+對於唯讀角色，可以建立新的角色群組，並將 **[僅檢視記錄管理]** 角色添加到此群組。 
 
-如需有關這些角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)。
+如需有關角色群組和角色的詳細資訊，請參閱[安全性與合規性中心的權限](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center)。
 
 如需將使用者新增至角色和指派角色的指示，請參閱[給予使用者安全性與合規性中心的存取權](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center)。
 

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 15b841f857eee1861a39a3d0e2e27025fadb90f4
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: dafb31f823dc8c63fa19ad8dba0624ee2037b859
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568483"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682828"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -52,7 +52,7 @@ ms.locfileid: "49568483"
 
 - **內容已儲存 (在 SharePoint 或 OneDrive 中) 或寄送電子郵件 (由 Exchange Online 處理) 時的服務端套用標籤**：使用自動套用標籤原則。 
     
-    您可能也聽過此方法稱為待用資料 (SharePoint 和 OneDrive 中的文件) 以及傳輸中資料 (由 Exchange 傳送或接收的電子郵件) 的自動套用標籤。 若是 Exchange，不會包含待用電子郵件 (信箱)。 
+    您可能也聽過此方法稱為待用資料 (SharePoint 和 OneDrive 中的文件) 以及傳輸中資料 (由 Exchange 傳送或接收的電子郵件) 的自動套用標籤。 若是 Exchange，不會包含待用電子郵件 (信箱)。
     
     由於此標籤是由服務套用，而不是由應用程式套用，因此您不需要擔心使用者擁有哪些應用程式及其版本。 如此一來，您就能立即在整個組織中使用這項功能，並且適用於大規模套用標籤。 自動套用標籤原則不支援建議的標籤，因為使用者不會與套用標籤程序進行互動。 相反地，系統管理員會在模擬模式中執行原則，以協助確保在實際套用標籤之前，內容正確套用標籤。
     
@@ -60,6 +60,7 @@ ms.locfileid: "49568483"
     
     SharePoint 和 OneDrive 自動套用標籤專屬限制：
     - 支援 Word、PowerPoint 和 Excel 的 Office 檔案。 支援 Open XML 格式（例如 .docx 和 .xlsx），但不支援 Microsoft Office 97-2003 格式（例如 .doc 和 .xls）。
+        - 如果這些檔案不是開啟工作階段的一部分，並且是在建立自動標籤原則後建立、上載或變更的，或者是自建立自動標籤原則後未變更的現有檔案，則可以自動標記這些檔案。
     - 租用戶中每日最多有 25,000 個自動套用標籤的檔案。
     - 每個租用戶最多 10 個自動套用標籤的原則，每個最多可用於 10 個網站（SharePoint 或 OneDrive）。
     - 自動標籤原則不會造成修改時間、修改者和日期的現有值變更 (對於兩個模擬模式和套用標籤時)。
@@ -299,8 +300,6 @@ ms.locfileid: "49568483"
     ![測試原則自動套用標籤精靈](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. 針對 **[摘要]** 頁面：檢閱您的自動套用標籤原則設定，視需要進行任何變更，然後完成精靈。
-    
-    不同於 Office 應用程式的自動套用標籤，沒有個別發佈選項。 不過，發佈標籤時，請允許最多 24 小時，讓自動套用標籤原則在您的整個組織中複寫。
 
 現在，在 **[資訊保護]** > **[自動套用標籤]** 頁面，您會在 **[模擬]** 或 **[關閉]** 區段中看到自動套用標籤原則 (視您是否選擇要在模擬模式中執行) 而定。 選取您的原則，以查看設定和狀態的詳細資料 (例如，**仍在執行中的原則模擬**)。 針對模擬模式中的原則，選取 **[相符的項目]** 索引標籤，以查看哪些電子郵件或文件符合您指定的規則。
 
@@ -325,7 +324,7 @@ ms.locfileid: "49568483"
 
 ### <a name="use-powershell-for-auto-labeling-policies"></a>將 PowerShell 用於自動套用標籤原則
 
-您現在可以使用[安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) 來建立及設定自動套用標籤原則。 這表示您現在可以完整編寫建立和維護自動套用標籤原則的指令碼，這也提供您一個更有效方式，可為 OneDrive 和 SharePoint 位置指定多個 URL。
+您可以使用[安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) 來建立及設定自動套用標籤原則。 這表示您可以完整編寫建立和維護自動套用標籤原則的指令碼，這也提供您一個更有效方式，可為 OneDrive 和 SharePoint 位置指定多個 URL。
 
 在 PowerShell 中執行命令之前，您必須先[連線至安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
@@ -362,4 +361,3 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 - [Remove-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelrule)
-

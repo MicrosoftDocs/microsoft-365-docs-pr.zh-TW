@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 無論您使用處置檢閱或根據設定自動刪除內容，監視和管理內容的處置。
-ms.openlocfilehash: 9900bbc58818a98ad41f4f796184ccf21041bbfe
-ms.sourcegitcommit: a9486f9dc51f0908393000ec3c211e3430c26abd
+ms.openlocfilehash: 9c2e9055d0468270df4e46fe39115708762052f3
+ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "49409210"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "49682666"
 ---
 # <a name="disposition-of-content"></a>內容處置
 
@@ -35,16 +35,16 @@ ms.locfileid: "49409210"
 
 ### <a name="permissions-for-disposition"></a>處置的權限
 
-若要在 Microsoft 365 合規性中心中成功存取 **[處置]** 索引標籤，使用者必須具備 **[處置管理]** 系統管理員角色。 此角色包含在預設系統管理員角色群組、**[合規性系統管理員]** 與 **[合規性資料系統管理員]** 中。
-
-若要授與使用者此必要的處置管理角色，可以將它們新增到其中一個預設角色群組，或建立自訂角色群組 (例如，名為「處置檢閱者」)，並授與此群組處置管理角色。  
+若要在 Microsoft 365 合規性中心中成功存取 **[處置]** 索引標籤，使用者必須具備 **[處置管理]** 系統管理員角色。 從 2020 年 12 月起，此角色現在包含在 **[記錄管理]** 預設系統管理員角色群組中。
 
 > [!NOTE]
-> 即使是全域系統管理員，也需要獲得 **[處置管理]** 角色指派。 
+> 預設情况下，全域系統管理員不被授與 **[處置管理]** 角色。 
+
+若要僅授與使用者進行處置檢閲所需的權限，而不授與其檢視和設定其他保留和記錄管理功能的權限，請建立一個自訂角色群組 (例如，名為 [處置檢閲者]) 並向該組授與 [處置管理角色]。
 
 此外，要在處置程序中檢視項目的內容，請將使用者新增到以下兩個角色群組：**[內容總管內容檢視器]** 和 **[內容總管清單檢視器]**。 如果使用者沒有這些角色群組的存取權限，他們仍然可以選取處置檢閱動作來完成處置檢閲，但不能從合規性中心檢視項目的內容。
 
-如需相關指示，請參閱[授與使用者存取 Office 365 安全性與合規性中心的權限](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
+如需設定這些權限的相關指示，請參閱[讓使用者能夠存取 Office 365 安全規範中心](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)。
 
 ### <a name="enable-auditing"></a>啟用稽核
 
