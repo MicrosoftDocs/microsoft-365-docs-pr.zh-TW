@@ -6,7 +6,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 07/09/2020
+ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何使用威脅調查和回應功能來尋找並調查惡意的電子郵件。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f3fd2e5c0f75de9a1b942e8f0baa8e9d44843de4
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 8a068f4502a286b8782e03a9a6f61e61fa96ed72
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616521"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698576"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>調查 Office 365 中傳遞的惡意電子郵件
 
@@ -58,18 +58,21 @@ ms.locfileid: "49616521"
 |---|---|---|
 |使用威脅瀏覽器 (和即時偵測) 來分析威脅 |全域系統管理員 <p> 安全性系統管理員 <p> 安全性讀取者|否|
 |使用威脅瀏覽器 (和即時偵測) 來查看電子郵件的標頭，以及預覽及下載隔離的電子郵件|全域系統管理員 <p> 安全性系統管理員 <p> 安全性讀取者|否|
-|使用威脅瀏覽器來查看標頭，並下載傳送至信箱的電子郵件|全域系統管理員 <p> 安全性系統管理員 <p> 安全性讀取者 <p> 預覽|是|
+|使用威脅瀏覽器來查看標頭、只在電子郵件實體頁面中預覽電子郵件 () 並下載傳送至信箱的電子郵件|全域系統管理員 <p> 安全性系統管理員 <p> 安全性讀取者 <p> 預覽|是|
 |
 
 > [!NOTE]
-> *Preview* 是角色，不是角色群組;預覽角色必須新增至 Office 365 的現有角色群組。 全域系統管理員角色會指派 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) ，而且安全性管理員和安全性讀取者角色會指派在安全性 & 規範中心 (<https://protection.office.com>) 。 若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+> *Preview* 是角色，不是角色群組;預覽角色必須新增至現有的 Office 365 (角色群組中 [https://protection.office.com](https://protection.office.com)) 。 移至 [ **許可權**]，然後編輯現有的角色群組，或新增「 **預覽** 」角色所指派的新角色群組。
+> 全域系統管理員角色會指派 Microsoft 365 系統管理中心 (<https://admin.microsoft.com>) ，而且安全性管理員和安全性讀取者角色會指派在安全性 & 規範中心 (<https://protection.office.com>) 。 若要深入瞭解角色和許可權，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md)。
+
+我們瞭解預覽和下載電子郵件是機密的活動，因此會為這些活動啟用審核。 當系統管理員在電子郵件上執行這些動作後，就會產生相同的審計記錄，並可在 Office 365 安全性 & 規範中心 () 中看到 [https://protection.office.com](https://protection.office.com) 。 移至 **「搜尋**  >  **審核記錄**」搜尋，然後在 [搜尋] 區段中篩選 admin name。 篩選的結果會顯示活動 **AdminMailAccess**。 選取要在 [ **詳細資訊** ] 區段中預覽或下載之電子郵件的詳細資訊一列。
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>尋找已傳遞的可疑電子郵件
 
 威脅瀏覽器是一種強大的報表，可用於多種用途，例如尋找和刪除郵件、識別惡意電子郵件寄件者的 IP 位址，或啟動事件以進一步進行調查。 下列程式著重于使用 Explorer 尋找及刪除收件者信箱中的惡意電子郵件。
 
 > [!NOTE]
-> 瀏覽器中的預設搜尋目前不包含 Zapped 的專案。  這適用于所有的視圖，例如惡意程式碼或網路釣魚視圖。 若要包含 Zapped 的專案，您需要將 ' 傳遞動作 ' 設定為包含「包含」（由 ZAP 移除）。 如果您包括所有選項，您會看到所有傳遞動作結果，包括 Zapped 專案。
+> 瀏覽器中的預設搜尋目前不包含 Zapped 的專案。  這適用于所有的視圖，例如惡意程式碼或網路釣魚視圖。 若要包含 Zapped 的專案，您需要新增 **傳遞動作** 集，並將其新增至包含 **的** 物件。 如果您包括所有選項，您會看到所有傳遞動作結果，包括 Zapped 專案。
 
 1. **流覽至威脅瀏覽器**：移至 <https://protection.office.com> 並使用您的 Office 365 的公司或學校帳戶登入。 這會帶您前往安全性 & 規範中心。
 
@@ -200,7 +203,7 @@ ms.locfileid: "49616521"
 
 [修復 Office 365 中傳遞的惡意電子郵件](remediate-malicious-email-delivered-office-365.md)
 
-[Microsoft Defender for Office 365](office-365-ti.md)
+[適用於 Office 365 的 Microsoft Defender](office-365-ti.md)
 
 [保護 Office 365 中的威脅](protect-against-threats.md)
 

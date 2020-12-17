@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: 498ff1482bd0109903968d1c8fe250311e37a51f
-ms.sourcegitcommit: 2810d1347e5016412074b2dd18e654aee7e593de
+ms.openlocfilehash: cb45d613da95c977f56b82e64ad3332434e08cd8
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "48819113"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698506"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -656,7 +656,6 @@ OR
 - tfn
 
 ## <a name="austria-drivers-license-number"></a>奧地利駕駛執照號碼
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -1602,7 +1601,6 @@ OR
 </Entity>
 ```
 ## <a name="belgium-drivers-license-number"></a>比利時駕駛執照號碼
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -1783,7 +1781,7 @@ OR
 ### <a name="pattern"></a>模式
 
 11位數加上分隔符號：
-- 六位數和兩個選用句點，格式為 YY。毫米。出生日期的 DD 
+- 六位數和兩個選用句點，格式為 YY。MM.DD 出生日期 
 - 自點、破折號、空間的選擇性分隔符號 
 - 三個連續數位 (奇數男生，即便是女生)  
 - 自點、破折號、空間的選擇性分隔符號 
@@ -2272,7 +2270,6 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="bulgaria-drivers-license-number"></a>保加利亞駕駛執照號碼
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -3594,7 +3591,6 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="croatia-drivers-license-number"></a>克羅地亞駕駛執照號碼
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -4013,7 +4009,6 @@ Registro de Identidade (RIC)  (新格式) ：
 
    
 ## <a name="cyprus-drivers-license-number"></a>賽普勒斯驅動程式授權號碼
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -4365,7 +4360,6 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="czech-drivers-license-number"></a>捷克文駕駛執照號碼
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -4755,7 +4749,6 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="denmark-drivers-license-number"></a>丹麥駕照編號
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -5207,7 +5200,6 @@ Registro de Identidade (RIC)  (新格式) ：
 
 
 ## <a name="estonia-drivers-license-number"></a>愛沙尼亞駕照編號
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -6019,7 +6011,6 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 
 ## <a name="finland-drivers-license-number"></a>芬蘭駕照編號
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -6479,7 +6470,6 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 
 ## <a name="france-drivers-license-number"></a>法國駕駛執照號碼
-您可以在歐盟駕駛執照號碼的敏感資訊類型中取得此機密資訊類型實體，也可以作為獨立的機密資訊類型實體使用。
 
 ### <a name="format"></a>格式
 
@@ -7015,7 +7005,6 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 
 ## <a name="germany-drivers-license-number"></a>德國駕駛執照號碼
-這種敏感資訊類型的實體包含在歐盟駕駛執照號碼的敏感資訊類型中，可作為獨立的敏感資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -7456,7 +7445,6 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
 
 ## <a name="greece-drivers-license-number"></a>希臘駕駛執照號碼
-這種敏感資訊類型的實體包含在歐盟駕駛執照號碼的敏感資訊類型中，可作為獨立的敏感資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -7890,8 +7878,6 @@ eesti kodaniku pass passi number passinumbrid 檔編號檔無 dokumendi nr
 
    
 ## <a name="hungary-drivers-license-number"></a>匈牙利駕照號碼
-
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -8732,8 +8718,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 ## <a name="ireland-drivers-license-number"></a>愛爾蘭駕照編號
 
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
-
 ### <a name="format"></a>格式
 
 六位數後接四個字母
@@ -9164,7 +9148,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
    
 ## <a name="italy-drivers-license-number"></a>義大利駕照編號
-這種敏感資訊類型的實體包含在歐盟駕駛執照號碼的敏感資訊類型中，可作為獨立的敏感資訊類型實體。
 
 ### <a name="format"></a>格式
 
@@ -9923,7 +9906,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 
 ## <a name="latvia-drivers-license-number"></a>拉脫維亞駕駛執照號碼
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -10282,7 +10264,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - n ° du Passeport
 
 ## <a name="lithuania-drivers-license-number"></a>立陶宛駕照編號
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -10589,7 +10570,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - paso nr
 
 ## <a name="luxemburg-drivers-license-number"></a>Luxemburg 駕駛執照號碼
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -11025,7 +11005,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 個人身分識別卡
 
 ## <a name="malta-drivers-license-number"></a>馬爾他駕照編號
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -11466,7 +11445,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - uniqueidentityno#
 
 ## <a name="netherlands-drivers-license-number"></a>荷蘭駕駛執照號碼
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -12272,7 +12250,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - Pinag-isang 多 Layunin 識別碼
 
 ## <a name="poland-drivers-license-number"></a>波蘭駕照編號
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -12770,7 +12747,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 
 ## <a name="portugal-drivers-license-number"></a>葡萄牙駕駛執照號碼
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -13087,7 +13063,6 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 
 
 ## <a name="romania-drivers-license-number"></a>羅馬尼亞駕照編號
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -13625,7 +13600,6 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 身份證 
 
 ## <a name="slovakia-drivers-license-number"></a>斯洛伐克駕照編號
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -13945,7 +13919,6 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - n ° Passeport
 
 ## <a name="slovenia-drivers-license-number"></a>斯洛維尼亞駕照編號
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -14419,7 +14392,6 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 - 주민등록번호
 
 ## <a name="spain-drivers-license-number"></a>西班牙駕照編號
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 
@@ -14985,7 +14957,6 @@ Foreigners 與 Foreigner 的識別號碼
 - s-int。<!--no-hyperlink-->網
 
 ## <a name="sweden-drivers-license-number"></a>瑞典駕駛執照號碼
-這個敏感資訊類型實體只有歐盟駕駛執照號碼機密資訊類型提供。
 
 ### <a name="format"></a>格式
 

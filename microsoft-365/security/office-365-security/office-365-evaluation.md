@@ -17,12 +17,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 54acf9d21e3dd935f8b87c6ee4a13ab30e7bc59e
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: abb33b85717e63cb78a2b1edfd86584fd165a71f
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668070"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701012"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>評估 Microsoft Defender for Office 365
 
@@ -43,11 +43,11 @@ ms.locfileid: "49668070"
 
 使用評估模式時，會替您設定 [安全附件](atp-safe-attachments.md)、 [安全連結](atp-safe-links.md)和 [反網路釣魚模擬原則](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) 。 所有的 Office 365 原則都是在後臺非強制模式中建立，對您看不到。
 
-在設定過程中，評估模式也會為 [連接器設定增強型篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它會透過保留 IP 位址和寄件者資訊，提高篩選精確度，當郵件透過電子郵件安全性閘道 (ESG) 在 Office 365 的前端時，就會遺失。 這也會提升 Exchange Online Protection (EOP) 反垃圾郵件和反網路釣魚原則的篩選準確性。
+在設定過程中，評估模式也會為 [連接器設定增強型篩選](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。 它會透過保留 IP 位址和寄件者資訊，提高篩選精確度，當郵件透過電子郵件安全性閘道 (ESG) 在 Office 365 的前端時，就會遺失。 增強型篩選也會提升 Exchange Online Protection (EOP) 反垃圾郵件和反網路釣魚原則的篩選準確性。
 
 若要將潛在的實際執行影響降至不支援的案例，您可以建立傳輸規則，將垃圾郵件信賴等級設定 (SCL) 設定為-1，以略過所有的 EOP 篩選。 請參閱 [使用 EAC 建立郵件流程規則，設定](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)郵件的 SCL 的   詳細資料。
 
-當評估模式已設定時，每日會更新一份報告，其中包含超過90天的資料量化，以量化已封鎖的郵件，並已執行 (例如「刪除」、「傳送至垃圾、隔離」) 等原則。 報告是針對所有的 Defender for Office 365 和 EOP 偵測產生。 它們會根據偵測技術匯總 (例如，模擬) ，並且可依時間範圍篩選。 此外，您也可以根據需要建立郵件報告，以建立自訂透視或使用威脅瀏覽器深入瞭解郵件。
+當評估模式已設定時，每日會更新一份報告，其中包含超過90天的資料，量化當原則實施 (例如「刪除」、「傳送至垃圾、隔離」) 時，可能會封鎖的郵件。 報告是針對所有的 Defender for Office 365 和 EOP 偵測產生。 它們會根據偵測技術匯總 (例如，模擬) ，並且可依時間範圍篩選。 此外，您也可以根據需要建立郵件報告，以建立自訂透視或使用威脅瀏覽器深入瞭解郵件。
 
 透過簡化的設定體驗，您可以將重點放在：
 
@@ -79,7 +79,12 @@ ms.locfileid: "49668070"
 
 ### <a name="roles"></a>角色
 
-在評估模式中，需要有 Exchange Online 角色才能設定 Office 365 的 Defender。 下列角色是必要的：
+在評估模式中，需要有 Exchange Online 角色才能設定 Office 365 的 Defender。
+
+- [深入瞭解 Exchange Online 中的許可權](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [深入瞭解指派系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+
+下列角色是必要的：
 
 |工作|角色|
 |---|---|
@@ -90,9 +95,10 @@ ms.locfileid: "49668070"
 |查看評估報告|安全性管理員角色或安全性讀者角色|
 |
 
+
 ### <a name="enhanced-filtering"></a>增強型篩選
 
-您的 Exchange Online Protection 原則（如大量和垃圾郵件保護）將保持不變。 郵件傳遞也會保持不變。 不過，評估會對連接器開啟增強型篩選功能，除非略過，否則會影響您的郵件流程和 Exchange Online Protection 原則。
+您的 Exchange Online Protection 原則（如大量和垃圾郵件保護）將保持不變。 郵件傳遞也會保持不變。 不過，評估會對連接器開啟增強型篩選功能，除非略過，否則會影響郵件流程和 Exchange Online Protection 原則。
 
 連接器的增強篩選功能將允許承租人使用反欺騙保護。 如果您使用的電子郵件安全性閘道 (ESG) 但未開啟「增強型連接器」篩選，則不支援反欺騙。
 
@@ -104,7 +110,7 @@ ms.locfileid: "49668070"
 
 ### <a name="email-routing"></a>電子郵件路由
 
-您必須準備必要的相關詳細資料，以便設定您的電子郵件目前的路由，包括路由傳送郵件的輸入連接器的名稱。 如果您只是使用 Exchange Online Protection，則不會有連接器。 [深入瞭解郵件流程和電子郵件路由](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+準備要設定電子郵件目前如何路由的對應詳細資料，包括路由傳送郵件之輸入連接器的名稱。 如果您只是使用 Exchange Online Protection，則不會有連接器。 [深入瞭解郵件流程和電子郵件路由](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 支援的電子郵件路由案例包括：
 

@@ -1,5 +1,6 @@
 ---
-title: Microsoft for EOP and Defender for Office 365 安全性設定、建議、寄件者原則架構、網域型郵件報告和符合性、DomainKeys 識別的郵件、步驟、運作方式、安全性基準、EOP 的基準，以及 Office 365 的 defender，設定了 office 365 的 Defender，設定 EOP，安全性365設定
+title: 適用于 EOP 和 Defender for Office 365 安全性設定的 Microsoft 建議
+keywords: Office 365 的安全性建議、寄件者原則架構、網域型郵件報告和符合性、DomainKeys 識別的郵件、步驟、運作方式、安全性基準、EOP 的基準，以及 Office 365 的 defender、設定 EOP、設定 EOP、設定 Defender for Office 365、365設定、安全性設定
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用適用于 Office 365 的 Defender，您也會取得哪些額外功能？
-ms.openlocfilehash: 192e37a1a9a373f7b6712600bc3c81189f7c51ad
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: d731b75e05dcecc513c72b390b106491f7601c71
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615957"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698684"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建議設定
 
@@ -122,7 +123,7 @@ ms.locfileid: "49615957"
 
 |安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**您是否要在郵件被隔離時通知收件者？** <p> _Action_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
+|**您是否要在郵件被隔離時通知收件者？** <p> _動作_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|否 <p> _DeleteMessage_|如果電子郵件附件中偵測到惡意程式碼，則會隔離郵件，而且只能由系統管理員加以發行。|
 |**常見附件類型篩選** <p> _EnableFileFilter_|關閉 <p> `$false`|開啟 <p> `$true`|開啟 <p> `$true`|此設定會隔離包含以檔案類型為基礎的可執行附件的郵件，不論附件內容為何。|
 |**惡意程式碼零小時自動清除** <p> _ZapEnabled_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |通知未傳遞郵件的 **內部寄件者** <p> _EnableInternalSenderNotifications_|停用 <p> `$false`|停用 <p> `$false`|停用 <p> `$false`||
@@ -280,7 +281,7 @@ Microsoft Defender for Office 365 中的安全附件包括與安全附件原則�
 
 |安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**安全附件未知的惡意程式碼回應** <p> _Action_|封鎖 <p> `Block`|封鎖 <p> `Block`|封鎖 <p> `Block`||
+|**安全附件未知的惡意程式碼回應** <p> _動作_|封鎖 <p> `Block`|封鎖 <p> `Block`|封鎖 <p> `Block`||
 |**偵測時重新導向附件** ： **啟用重新導向** <p> _Redirect_ <p> _RedirectAddress_|Off，但沒有指定電子郵件地址。 <p> `$true` <p> 無|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|，然後指定電子郵件地址。 <p> `$true` <p> 電子郵件地址|將郵件重新導向至安全性管理員以進行審閱。|
 |**如果惡意程式碼掃描附件超時或發生錯誤，請套用上述選取範圍。** <p> _ActionOnError_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |

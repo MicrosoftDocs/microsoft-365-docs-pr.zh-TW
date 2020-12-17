@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用合規性管理員快速入門手冊可協助您深入瞭解、取得設定，以及使用合規性管理員。
-ms.openlocfilehash: 9f24a0495b7d453b70a28ad54d76ccf835000ed6
-ms.sourcegitcommit: d333d82fd5e4f3265e8b9372094e85875bee6fe5
+ms.openlocfilehash: c5159e1e6faa293ba3bd49d82bb06898ec9e0bdd
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071968"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698426"
 ---
 # <a name="compliance-manager-quickstart"></a>合規性管理員快速入門
 
 **本文內容：** 使用此快速入門手冊可協助您使用 Microsoft 合規性管理員來管理您的組織與法規、原則及標準的相容性。
 
-合規性管理員會在您第一次造訪時，提供智慧及可操作的資料。 合規性管理員也具有可在您準備時擴充相容性的高級功能。 所有客戶均可使用 [資料保護基準評估](compliance-manager-assessments.md#data-protection-baseline-default-assessment) ，以確保您保護重要資料。 使用 Microsoft 365 E5，您可以使用超過150的預先構建評估，協助您遵循您的行業和地區的規章，並使用自訂評估來延伸所有資產的合規性管理員。
+合規性管理員會在您第一次造訪時，提供智慧及可操作的資料。 合規性管理員也具有可在您準備時擴充相容性的高級功能。 可用評估取決於您的授權合約; [深入瞭解](https://go.microsoft.com/fwlink/?linkid=2132371)。
 
 不論是第一次使用合規性管理員還是準備好使用一些高級功能，本指南都可以支援您的旅程。
 

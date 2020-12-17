@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
 description: 瞭解如何為 Microsoft 365 群組建立命名原則。
-ms.openlocfilehash: 15fcbace737398c6edd2062e72622e8551ebd222
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 9bc0a4c7e1ae6ad532c97b442a2bc50880a942fc
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613499"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698672"
 ---
 # <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 群組命名原則
 
@@ -57,7 +57,7 @@ ms.locfileid: "49613499"
 
 您可以使用屬性來識別建立群組的人員，例如 [部門]，以及從 [Country] 建立群組的位置。
 
-範例：
+範例:
 
 - Policy = "GRP [GroupName] [部門]"
 - 使用者的部門 = 工程
@@ -115,8 +115,6 @@ ms.locfileid: "49613499"
 - 合作夥伴第2層支援
 
 - 使用者帳戶管理員
-
-- 目錄編寫者
 
 ## <a name="how-to-set-up-the-naming-policy"></a>如何設定命名原則
 

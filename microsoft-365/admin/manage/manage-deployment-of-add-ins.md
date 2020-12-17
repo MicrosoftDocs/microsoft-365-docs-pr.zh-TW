@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 瞭解如何使用系統管理中心的集中式部署，將增益集部署至組織中的使用者和群組。
-ms.openlocfilehash: 9708ec9877c4d07b0cf93ea9d6815303236eff4b
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+ms.openlocfilehash: 37fac34449ee39366778e29c0eeddf1fc7bfdd37
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830634"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698286"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>在系統管理中心部署增益集
 
@@ -63,33 +63,33 @@ Office 增益集可以協助您將文件個人化，也可以簡化您存取網�
   
 1. 在系統管理中心中，移至 [ **設定** \> **增益集** ] 頁面。 如果您看不到 [ **增益集** ] 頁面，請移至 [ **設定** \> **整合型應用程式** \> **增益集** ] 頁面。
     
-2. 選取頁面頂端的 [ **部署增益集** ]，然後選取 **[下一步]** 。
+2. 選取頁面頂端的 [ **部署增益集** ]，然後選取 **[下一步]**。
  
     > [!NOTE]
-    > 系統管理中心已更新整合型應用程式的部署經驗。 如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 [ **設定** ] [  >  **整合式應用程式** ]。 在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集** ]。
+    > 系統管理中心已更新整合型應用程式的部署經驗。 如果您未看到上述步驟，請移至 [集中式部署] 區段，移至 [**設定**] [  >  **整合式應用程式**]。 在 [ **整合式應用程式** ] 頁面的頂端，選擇 [ **增益集**]。
     
 3. 選取 [選項]，然後依照指示執行。
   
 4. 如果您選取 [從 Office Store 新增增益集] 選項，請讓增益集成為選取範圍。 </br>
 
-    您可以依類別來查看可用的增益集： **建議您** 、 **評級** 或 **名稱** 。 Office Store 只有免費的增益集可供使用。 目前尚不支援付費增益集。 選取增益集之後，請接受條款及條件以繼續。 <br/> 
+    您可以依類別來查看可用的增益集： **建議您**、 **評級** 或 **名稱**。 Office Store 只有免費的增益集可供使用。 目前尚不支援付費增益集。 選取增益集之後，請接受條款及條件以繼續。 <br/> 
 
     > [!NOTE] 
     > 透過 Office Store 選項，更新及增強功能會自動部署至使用者。
 
-5. 在下一個頁面上，選取 [ **所有人** ]、[ **特定使用者/群組** ] 或 [ **僅限我** ]，以指定要部署增益集的人員。 使用 [搜尋] 方塊尋找特定的使用者或群組。 <br/>
+5. 在下一個頁面上，選取 [ **所有人**]、[ **特定使用者/群組**] 或 [ **僅限我** ]，以指定要部署增益集的人員。 使用 [搜尋] 方塊尋找特定的使用者或群組。 <br/>
 
     > [!NOTE] 
     > 若要瞭解適用于增益集的其他狀態，請參閱 [增益集狀態](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center.md)。
   
-6. 選取 [ **部署** ]。
+6. 選取 [ **部署**]。
   
 7. 部署增益集時，會出現綠色的勾選標記。 依照頁面上的指示測試增益集。
 
     > [!NOTE]
     > 使用者可能需要重新開機 Office 來查看應用程式功能區上的增益集圖示。 Outlook 增益集最多可能需要24小時才能出現在應用程式功能區上。
     
-8. 完成時，選取 **[下一步]** 。 如果您只是自行部署，您可以選取 [ **變更可存取增益集的人員** ]，以部署至其他使用者。
+8. 完成時，選取 **[下一步]**。 如果您只是自行部署，您可以選取 [ **變更可存取增益集的人員** ]，以部署至其他使用者。
 
     如果您已將增益集部署至組織的其他成員，請依照指示宣告增益集的部署。 <br/>
   
@@ -138,7 +138,7 @@ Office 增益集會與內含部分增益集中繼資料的 XML 資訊清單檔�
 
 [在系統管理中心管理增益集](manage-addins-in-the-admin-center.md)
 
-[建立 Office 增益集](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins-fundamentals)。
+[建立第一個 Word 工作窗格增益集](https://docs.microsoft.com/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator)。
 
 [對存放區中的增益集進行未成年人和取得](minors-and-acquiring-addins-from-the-store.md)
   

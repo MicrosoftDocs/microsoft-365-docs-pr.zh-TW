@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: 使用資訊障礙，以確保您的組織內的 Microsoft 小組能夠進行通訊法規遵從性。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 08ec3b01258220a71ac02e5333143fb11b66655f
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 73a76e67fdb96f89dbd11daf4b2ef12f6590f92a
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613095"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701002"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的資訊障礙
 
@@ -72,7 +72,7 @@ Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假
 - Microsoft 365 規範 E5/A5
 - Microsoft 365 有問必答風險管理
 
-如需詳細資訊，請參閱 [規範解決方案](https://products.office.com/business/security-and-compliance/compliance-solutions)。
+如需詳細資訊，請參閱 [Microsoft 365 授權指南以取得安全性 & 符合性](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)。
 
 若要 [定義或編輯資訊障礙原則](information-barriers-policies.md)，您必須被指派下列其中一個角色：
 
@@ -81,7 +81,7 @@ Microsoft 雲端服務包含強大的通訊和協同作業功能。 不過，假
 - 合規性管理員
 - IB 相容性管理 (這是一個新的角色！ ) 
 
- (若要深入瞭解角色和許可權，請參閱 [Office 365 Security & 合規性中心的許可權](../security/office-365-security/protect-against-threats.md)。 ) 
+ (若要深入瞭解角色和許可權，請參閱 [Office 365 Security & 合規性中心的許可權](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)。 ) 
 
 您必須熟悉 PowerShell Cmdlet，才能定義、驗證或編輯資訊障礙原則。 雖然我們在操作 [方法文章](information-barriers-policies.md)中提供了幾個 PowerShell Cmdlet 範例，但您將需要知道組織的其他詳細資料，例如參數。
 

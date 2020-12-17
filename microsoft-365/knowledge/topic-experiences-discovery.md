@@ -11,12 +11,12 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何在 Microsoft 365 中管理主題探索。
-ms.openlocfilehash: 035fb74f1989dc7ef5b7fcf8e9c6d59b63cf2b42
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: dec8aeef9dda390fb19f5067638c2ebea6b6a2fe
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667853"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698540"
 ---
 # <a name="manage-topic-discovery-in-microsoft-365"></a>在 Microsoft 365 中管理主題探索
 
@@ -87,11 +87,10 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
     ![排除 CSV 範本中的主題](../media/exclude-topics-csv.png) 
 
-## <a name="see-also"></a>也請參閱
+## <a name="see-also"></a>另請參閱
 
 [在 Microsoft 365 中管理主題可見度](topic-experiences-knowledge-rules.md)
 
 [在 Microsoft 365 中管理主題許可權](topic-experiences-user-permissions.md)
 
 [變更 Microsoft 365 主題中心的名稱](topic-experiences-administration.md)
-

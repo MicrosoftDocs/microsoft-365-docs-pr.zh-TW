@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36e00158c56eb83f8d2c2272295defb12363e314
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 2f2e28bc9321f8a9f3de8cb622eff3317be572b9
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655425"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698416"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -39,20 +39,22 @@ ms.locfileid: "49655425"
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>支援應用程式中的靈敏度標籤功能
 
-針對每項功能，下列各表列出該應用程式所需的 Office 版本，以支援使用內建標記的靈敏度標籤。 或者，如果標籤功能是公開預覽，或是未來版本的審查。 使用 [Microsoft 365 藍圖](https://aka.ms/MIPC/Roadmap) 以取得未來版本的詳細資訊。
+下表列出每項功能所需的 Office 版本，以支援使用內建標記的靈敏度標籤。 或者，如果標籤功能是公開預覽，或是未來版本的審查。 使用 [Microsoft 365 藍圖](https://aka.ms/MIPC/Roadmap) 以取得未來版本的詳細資訊。
 
 新版本的 Office app 可在不同的時間用於不同的更新通道。 如需詳細資訊，包括如何設定您的更新通道，以測試您所感興趣的新標記功能，請參閱 [Microsoft 365 應用程式的更新通道概述](https://docs.microsoft.com/DeployOffice/overview-update-channels)。 在 [私人預覽] 中的新功能不會包含在表格中，但您可以 nominating [Microsoft 資訊保護私人預覽程式](https://aka.ms/mip-preview)的組織，以加入這些預覽。
 
 > [!NOTE]
 > 最近變更了 Office 應用程式的更新通道名稱。 例如，每月通道現在是目前通道，而 Office 有問必答現在是 Beta 通道。 如需詳細資訊，請參閱 [Microsoft 365 應用程式的更新通道變更](https://docs.microsoft.com/deployoffice/update-channels-changes)。
 
+Office for iOS 和 Office for Android：敏感度標籤是內置於 [office 應用程式](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)中。
+
 當您安裝 Azure 資訊保護統一標籤用戶端（只在 Windows 電腦上執行）時，即可使用其他功能。 如需詳細資料，請參閱 [比較 Windows 電腦的標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers)。
 
 ### <a name="sensitivity-label-capabilities-in-word-excel-and-powerpoint"></a>Word、Excel 及 PowerPoint 中的靈敏度標籤功能
 
-若為 iOS 和 Android：其中列出了最低的版本，則 [Office 應用程式](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/)也支援敏感性標籤功能。
+列出的號碼是每項功能所需的最低 Office 應用程式版本。
 
-|功能                                                                                                        |Windows 桌面 |Mac 桌面 |iOS    |Android      |網址                                                         |
+|功能                                                                                                        |Windows |Mac |iOS    |Android      |網址                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[手動套用、變更或移除標籤](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[套用預設標籤](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
@@ -74,7 +76,9 @@ ms.locfileid: "49655425"
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook 中的靈敏度標籤功能
 
-|功能                                                                                                        |Windows Desktop 上的 Outlook |Mac 版 Outlook  |Outlook on iOS |Android 版 Outlook |Outlook 網頁版 |
+列出的號碼是每項功能所需的最低 Office 應用程式版本。
+
+|功能                                                                                                        | Outlook for Windows |Mac 版 Outlook |Outlook on iOS |Android 版 Outlook |Outlook 網頁版 |
 |------------------------------------------------------------------------------------------------------------------|---------------------------|------------------------|---------------|-------------------|-------------------|
 |[手動套用、變更或移除標籤](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[套用預設標籤](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
@@ -159,8 +163,9 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
     - **機密 \ 所有員工**
     - **機密 \ 個人 (無加密)**
 
-> [!NOTE]
-> 若使用者從儲存在 SharePoint 或 OneDrive 中的標籤檔中手動移除加密，而且您已 [在 SharePoint 及 OneDrive 中啟用 Office 檔案的靈敏度卷](sensitivity-labels-sharepoint-onedrive-files.md)標，則會在下次存取或下載檔案時，自動還原標籤加密。 
+  > [!NOTE]
+  > 若使用者從儲存在 SharePoint 或 OneDrive 中的標籤檔中手動移除加密，而且您已 [在 SharePoint 及 OneDrive 中啟用 Office 檔案的靈敏度卷](sensitivity-labels-sharepoint-onedrive-files.md)標，則會在下次存取或下載檔案時，自動還原標籤加密。 
+
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>將敏感度標籤套用至檔案、電子郵件及附件
 

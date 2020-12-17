@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: '從共用信箱中移除授權，將其指派給其他使用者。 '
-ms.openlocfilehash: 43d32744afe42a8f244160ace20c1d989f501b28
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 11d5185cc3f79899a737ddccc0a93160acb380bc
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445492"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698300"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>從共用信箱移除授權
 
@@ -45,6 +45,7 @@ ms.locfileid: "48445492"
 > 1. 共用信箱使用的儲存空間超過 50 GB。
 > 2. 共用信箱使用就地封存。
 > 3. 共用信箱處於訴訟暫止狀態。
+> 4. 共用信箱已指派 Microsoft Defender 授權。
 
   
 ## <a name="remove-the-license"></a>移除授權
@@ -105,6 +106,8 @@ ms.locfileid: "48445492"
 6. 您仍在支付授權。 若要停止付費，請 [從您的訂閱中移除授權](../../commerce/licenses/remove-licenses-from-subscription.md)。
 
 ::: moniker-end 
+
+ 
 
 ## <a name="related-articles"></a>相關文章
 

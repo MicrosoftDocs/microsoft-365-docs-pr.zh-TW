@@ -11,12 +11,12 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何規劃 Microsoft 365 的安全性和隱私權主題。
-ms.openlocfilehash: 7b88e5bbc8158ebd7dea65b2ecbf77085651b439
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: b3c33a49b8273c5f7830f08de17af9757a858413
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668120"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698494"
 ---
 # <a name="topic-experiences-security-and-privacy"></a>主題體驗安全性和隱私權
 
@@ -26,7 +26,7 @@ ms.locfileid: "49668120"
 
 本文說明主題在安全性的角度上的運作方式，以及知識管理員和知識管理員用來控制主題可見度的選項。 如您 [規劃的主題經驗](plan-topic-experiences.md)，請閱讀本文。
 
-您應熟悉主題的 [經驗](knowledge-management-overview.md)、 [主題中心](topic-center-overview.md)，以及如何 [使用主題中心的主題](work-with-topics.md) ，再閱讀本文。
+您應熟悉主題的 [經驗](topic-experiences-overview.md)、 [主題中心](topic-center-overview.md)，以及如何 [使用主題中心的主題](manage-topics.md) ，再閱讀本文。
 
 ## <a name="what-users-can-see-in-topics"></a>使用者可以在主題中看到的內容
 
@@ -83,9 +83,9 @@ ms.locfileid: "49668120"
 
 雖然您可以變更個別主題頁面的許可權，以縮小對特定使用者群組的存取權，但由於需要很高的管理工作，所以不建議使用這種方法。
 
-## <a name="see-also"></a>也請參閱
+## <a name="see-also"></a>另請參閱
 
-[為小組設定三層保護](../solutions/configure-teams-three-tiers-protection.md)
+[為 Teams 設定三層保護](../solutions/configure-teams-three-tiers-protection.md)
 
 [規劃主題經驗](plan-topic-experiences.md)
 
