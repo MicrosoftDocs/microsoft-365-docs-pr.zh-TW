@@ -119,7 +119,7 @@
                   href: mtp/mtp-autoir.md
                 - name: 設定自動調查及回應功能
                   href: mtp/mtp-configure-auto-investigation-response.md
-                - name: 自動調查後的補救動作
+                - name: 補救動作
                   href: mtp/mtp-remediation-actions.md
                 - name: 造訪重要訊息中心
                   href: mtp/mtp-action-center.md
