@@ -1,4 +1,4 @@
-- name: 深入瞭解 Microsoft SharePoint Syntex
+- name: 了解 Microsoft SharePoint Syntex
   items:
     - name: SharePoint Syntex 簡介
       href: index.md
@@ -8,7 +8,7 @@
       href: form-processing-overview.md
     - name: 文件瞭解和表單處理模型之間的差異
       href: difference-between-document-understanding-and-form-processing-model.md
-- name: 快速入門模型
+- name: 開始使用模型
   items:
     - name: 透過範例模型瞭解模型
       href: learn-about-document-understanding-models-through-the-sample-model.md
@@ -26,15 +26,15 @@
       href: create-a-form-processing-model.md
     - name: 套用保留標籤
       href: apply-a-retention-label-to-a-model.md
-    - name: 模型流量分析
+    - name: 模型使用情況分析
       href: model-usage-analytics.md
     - name: 在建立擷取器時運用字詞庫分類法
       href: leverage-term-store-taxonomy.md
 - name: 採用
   items:
-    - name: 開始使用
+    - name: 開始使用採用
       href: adoption-getstarted.md
-- name: 安裝和管理
+- name: 設定和管理
   items:
     - name: 設定內容瞭解
       href: set-up-content-understanding.md
@@ -44,7 +44,7 @@
       href: import-term-set-skos.md
     - name: SKOS 格式化參照
       href: skos-format-reference.md
-    - name: 將內容類型推入 hub
+    - name: 將內容類型推入中樞
       href: push-content-type-to-hub.md
     - name: 字詞庫報告
       href: term-store-analytics.md

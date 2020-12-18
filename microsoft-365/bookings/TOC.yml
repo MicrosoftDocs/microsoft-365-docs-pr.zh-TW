@@ -3,27 +3,27 @@
   items:
     - name: 設定
       items:
-        - name: 取得預訂的存取權
+        - name: 取得 Bookings 存取權
           href: get-access.md
         - name: 輸入您的商務資訊
           href: enter-business-information.md
-        - name: 定義您的服務選項
+        - name: 定義您的服務方案
           href: define-service-offerings.md
-        - name: 將員工新增至預定
+        - name: 向 Bookings 新增員工
           href: add-staff.md
-        - name: 排程公休日及下班時間
+        - name: 安排業務關閉和休假
           href: schedule-closures-time-off-vacation.md
-        - name: 設定排程原則
+        - name: 設定您的排程原則
           href: set-scheduling-policies.md
-        - name: 自訂併發布您的預約頁面
+        - name: 定制並發佈您的預約頁面
           href: customize-booking-page.md
         - name: 建立手動預約
           href: create-a-manual-booking.md
-        - name: 排程公休日及下班時間
+        - name: 安排業務關閉和休假
           href: schedule-closures-time-off-vacation.md
-        - name: 員工時數
+        - name: 員工工時
           href: employee-hours.md
-        - name: 將自訂及必要問題新增至預約頁面
+        - name: 向預約頁面新增自訂和必需的問題
           href: add-questions.md
         - name: 設定緩衝時間
           href: set-buffer-time.md
@@ -31,17 +31,17 @@
           href: metrics-and-activity-tracking.md
         - name: 設定語言和時區
           href: set-language-time-zones.md
-    - name: 取得預定應用程式
+    - name: 取得 Bookings 應用程式
       href: get-bookings-app.md
-    - name: Microsoft 小組中的預約應用程式和虛擬走訪
+    - name: Microsoft Teams 中的 Bookings 應用程式和虛擬造訪
       href: 'https://docs.microsoft.com/microsoftteams/bookings-app-admin?toc=/microsoft-365/bookings/toc.json&bc=/microsoft-365/bookings/breadcrumb/toc.json'
-    - name: 比較圖表-web 應用程式與小組應用程式
+    - name: 比較圖表 - web 應用程式與 Teams 應用程式
       href: comparison-chart.md
     - name: 刪除預約行事曆
       href: delete-calendar.md
-    - name: 開啟或關閉 Microsoft 預約
+    - name: 開啟或關閉 Microsoft Bookings
       href: turn-bookings-on-or-off.md
-    - name: Microsoft 預約的報告資訊
+    - name: 報告 Microsoft Bookings 的資訊
       href: reporting-info.md
-    - name: 'Microsoft 預約常見問題 (常見問題) '
+    - name: Microsoft Bookings 常見問題集 (FAQ)
       href: bookings-faq.md

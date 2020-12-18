@@ -1,32 +1,44 @@
-- name: 快速入門知識管理
+- name: 主題體驗快速入門
   items:
-    - name: 知識管理概述
-      href: knowledge-management-overview.md
-    - name: 主題中心概述
-      href: topic-center-overview.md
-    - name: 與主題中心的主題搭配使用
-      href: work-with-topics.md
-    - name: 將主題中心的許可權授與使用者
-      href: give-user-permissions-to-the-topic-center.md
-    - name: 讓您的環境做好準備
+    - name: 主題體驗簡介
+      href: index.md
+    - name: 主題體驗概觀
+      href: topic-experiences-overview.md
+    - name: 主題體驗探索、篩選和編輯
+      href: topic-experiences-discovery-curation.md
+    - name: 主題體驗角色
+      href: topic-experiences-roles.md
+    - name: 準備好您的環境
       href: topic-experiences-get-ready.md
-- name: 安裝和管理
+- name: 設定和管理
   items:
     - name: 主題安全性
       href: topic-experiences-security-privacy.md
-    - name: 規劃主題經驗
+    - name: 計劃主題體驗
       href: plan-topic-experiences.md
-    - name: 設定主題經驗
+    - name: 設定主題體驗
       href: set-up-topic-experiences.md
     - name: 管理主題探索
       href: topic-experiences-discovery.md
     - name: 管理主題可見度
       href: topic-experiences-knowledge-rules.md
-    - name: 管理主題許可權
+    - name: 管理主題權限
       href: topic-experiences-user-permissions.md
     - name: 變更主題中心名稱
       href: topic-experiences-administration.md
+- name: 使用主題
+  items:
+    - name: 主題中心概觀
+      href: topic-center-overview.md
+    - name: 在主題中心中管理主題
+      href: manage-topics.md
+    - name: 建立新主題
+      href: create-a-topic.md
+    - name: 編輯主題
+      href: edit-a-topic.md
+    - name: 安全性調整
+      href: topic-experiences-security-trimming.md
 - name: 採用
   items:
-    - name: 開始促進採用
+    - name: 主導性采用採用快速入門
       href: topics-adoption-getstarted.md
