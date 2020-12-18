@@ -1,5 +1,5 @@
 ---
-title: 設定客戶金鑰
+title: 在應用層級設定客戶機碼
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、OneDrive 商務及小組檔案的 Microsoft 365 的客戶金鑰。
-ms.openlocfilehash: fed181649696c7f5a92850943e1dd980b42aa819
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: b6ead2f92475dcfe230fc13d8ab1137365238755
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688420"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709515"
 ---
-# <a name="set-up-customer-key"></a>設定客戶金鑰
+# <a name="set-up-customer-key-at-the-application-level"></a>在應用層級設定客戶機碼
 
 使用客戶金鑰，您可以控制組織的加密金鑰，然後設定 Microsoft 365，以使用這些金鑰在 Microsoft 資料中心內加密您的資料。 換句話說，客戶金鑰可讓客戶新增屬於其金鑰的加密層級。 存放的資料包括 Exchange Online 資料和儲存在信箱的商務用 Skype 資料，以及儲存在 SharePoint Online 中和商務用 OneDrive 中的檔案。
 
@@ -98,9 +98,10 @@ SharePoint 線上和商務 OneDrive：
 客戶金鑰需要兩個 Azure 訂閱。 最佳作法是 Microsoft 建議您建立新的 Azure 訂閱，以與客戶金鑰搭配使用。 Azure 金鑰保存庫金鑰只能針對相同 Azure Active directory 中的應用程式授權 (Microsoft Azure Active Directory) 租使用者，您必須使用與 DEPs 將會指派之組織搭配使用的相同 Azure AD 租使用者來建立新的訂閱。 例如，在您的組織中使用具有全域系統管理員許可權的公司或學校帳戶。 如需詳細步驟，請參閱 [註冊 Azure 做為組織](https://azure.microsoft.com/documentation/articles/sign-up-organization/)。
   
 > [!IMPORTANT]
-> 客戶金鑰需要每個資料加密原則 (DEP) 的兩個金鑰。 為了達到此目的，您必須建立兩個 Azure 訂閱。 建議的最佳作法是，您組織中的個別成員可以在每個訂閱中設定一個金鑰。 此外，這些 Azure 訂閱只應該用來管理 Office 365 的加密金鑰。 這會保護您的組織，以防其中一個操作員意外、故意或惡意刪除，或 mismanages 其負責的金鑰。
-> 
-> 建議您設定只用于管理 Azure 金鑰 Vault 資源的新 Azure 訂閱，以與客戶金鑰搭配使用。 您可以為組織建立的 Azure 訂閱數目沒有實際的限制。 遵循這些最佳作法，可在協助管理客戶金鑰所使用的資源時，將人為錯誤所造成的影響降至最低。
+> 客戶金鑰需要每個資料加密原則 (DEP) 的兩個金鑰。 為了達到此目的，您必須建立兩個 Azure 訂閱。 建議的最佳作法是，您組織中的個別成員可以在每個訂閱中設定一個金鑰。 您應只使用這些 Azure 訂閱來管理 Office 365 的加密金鑰。 這會保護您的組織，以防其中一個操作員意外、故意或惡意刪除，或 mismanages 其負責的金鑰。
+>
+
+您可以為組織建立的 Azure 訂閱數目沒有實際的限制。 遵循這些最佳作法，可在協助管理客戶金鑰所使用的資源時，將人為錯誤所造成的影響降至最低。
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>提交要求以啟用 Office 365 的客戶金鑰
 
@@ -279,12 +280,12 @@ Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Sof
   > [!TIP]
   > 使用主要保險檔的上述命名慣例，以前面所述的名稱慣例命名機碼。 如此一來，在僅顯示金鑰名稱的工具中，該字串是自我描述的。
   
-- 如果您想要使用 HSM 來保護機碼，請確定您將 **hsm** 指定為 _Destination_ 參數的值，否則請指定 **軟體**。
+如果您想要使用 HSM 來保護機碼，請確定您將 **hsm** 指定為 _Destination_ 參數的值，否則請指定 **軟體**。
 
 例如：
   
 ```powershell
-Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
+Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination HSM -KeyOps wrapKey,unwrapKey
 ```
 
 若要將機碼直接匯入到金鑰保存庫，您必須具有 nCipher nShield 硬體安全性模組。
@@ -307,7 +308,7 @@ Microsoft 365 要求 Azure Key Vault 訂閱設定為 [不要取消]，且客戶�
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-若 _Recovery Level_ 屬性傳回的值不是可復原的 **+ ProtectedSubscription**，您必須複查此主題，並確定您已遵循將訂閱置於 [不取消取消] 清單中的所有步驟，而且您已在每個主要存放庫上啟用虛刪除。
+若 _Recovery Level_ 屬性傳回的值不是可復原的 **+ ProtectedSubscription**，您必須查看這篇文章，並確定您已遵循將訂閱置於 [不要取消] 清單中的所有步驟，以及您已在每個主要存放庫上啟用虛刪除。
   
 ### <a name="back-up-azure-key-vault"></a>備份 Azure Key Vault
 
@@ -480,7 +481,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
   
 若要建立 DEP，您必須使用 Windows PowerShell，以遠端方式從遠端連線至 SharePoint。
   
-1. 在您的本機電腦上，使用組織中具有全域系統管理員許可權的工作或學校帳戶， [連線至 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)。
+1. 在您的本機電腦上，使用組織中具有全域系統管理員許可權的工作或學校帳戶， [連線至 SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps&preserve-view=true)。
 
 2. 在 Microsoft SharePoint Online 管理命令介面中，執行 Register-SPODataEncryptionPolicy Cmdlet，如下所示：
 
@@ -493,7 +494,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 Register-SPODataEncryptionPolicy -PrimaryKeyVaultName 'stageRG3vault' -PrimaryKeyName 'SPKey3' -PrimaryKeyVersion 'f635a23bd4a44b9996ff6aadd88d42ba' -SecondaryKeyVaultName 'stageRG5vault' -SecondaryKeyName 'SPKey5' -SecondaryKeyVersion '2b3e8f1d754f438dacdec1f0945f251a’
 ```
 
-   當您註冊 DEP 時，加密會從 geo 中的資料開始。 這可能需要一些時間。 如需使用此參數的詳細資訊，請參閱 [SPODataEncryptionPolicy](https://docs.microsoft.com/powershell/module/sharepoint-online/register-spodataencryptionpolicy?view=sharepoint-ps)。
+   當您註冊 DEP 時，加密會從 geo 中的資料開始。 這可能需要一些時間。 如需使用此參數的詳細資訊，請參閱 [SPODataEncryptionPolicy](https://docs.microsoft.com/powershell/module/sharepoint-online/register-spodataencryptionpolicy?view=sharepoint-ps&preserve-view=true)。
 
 ### <a name="validate-file-encryption"></a>驗證檔加密
 

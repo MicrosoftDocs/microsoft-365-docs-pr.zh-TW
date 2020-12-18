@@ -1,5 +1,5 @@
 ---
-title: 使用客戶金鑰的服務加密
+title: 客戶金鑰服務加密
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,20 +16,20 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將瞭解如何使用 Microsoft 365 中的客戶金鑰來處理服務加密。
-ms.openlocfilehash: fd00b910a9a33fb792c41c7f64f9721e2b5bd20f
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 0008d145db81d5d6c4eb9ab89ca194b7e426d2e4
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408981"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709525"
 ---
-# <a name="service-encryption-with-customer-key"></a>使用客戶金鑰的服務加密
+# <a name="service-encryption-with-customer-key"></a>客戶金鑰服務加密
 
 Microsoft 365 提供使用 BitLocker 和分散式金鑰管理員 (DKM) 所啟用的基準、磁片區層級加密。 Microsoft 365 在應用層級為您的內容提供額外的加密層級。 此內容包含 Exchange Online 中的資料、商務用 Skype、SharePoint 線上、商務 OneDrive，以及小組檔案。 這個新增的加密層稱為「服務加密」。
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>服務加密、BitLocker 及客戶金鑰共同運作的方式
 
-服務加密可確保靜態內容會在應用層加密。 在**Microsoft 365 服務中，您的資料會永遠以靜態方式加密，並 BitLocker 和 DKM**。 如需詳細資訊，請參閱《安全性、隱私權和規範資訊》，以及 [Exchange Online 如何保護您的電子郵件機密](exchange-online-secures-email-secrets.md)。 客戶金鑰提供額外的保護，以防止未經授權的系統或人員查看資料，以及在 Microsoft 資料中心中補充 BitLocker 磁片加密。 服務加密不是為了防止 Microsoft 人員存取客戶資料。 主要用途是協助客戶滿足控制根機碼的管制或合規性義務。 客戶會明確授權 O365 服務使用加密金鑰，以提供增值的雲端服務，例如 eDiscovery、反惡意程式碼、反垃圾郵件、搜尋索引等等。
+服務加密可確保在服務層級加密靜止的內容。 在 **Microsoft 365 服務中，您的資料會永遠以靜態方式加密，並 BitLocker 和 DKM**。 如需詳細資訊，請參閱《安全性、隱私權和規範資訊》，以及 [Exchange Online 如何保護您的電子郵件機密](exchange-online-secures-email-secrets.md)。 客戶金鑰提供額外的保護，以防止未經授權的系統或人員查看資料，以及在 Microsoft 資料中心中補充 BitLocker 磁片加密。 服務加密不是為了防止 Microsoft 人員存取客戶資料。 主要用途是協助客戶滿足控制根機碼的管制或合規性義務。 客戶會明確授權 O365 服務使用加密金鑰，以提供增值的雲端服務，例如 eDiscovery、反惡意程式碼、反垃圾郵件、搜尋索引等等。
 
 客戶金鑰是以服務加密為基礎，可讓您提供和控制加密金鑰。 然後，Microsoft 365 會使用這些金鑰來加密您的資料，如 [線上服務條款 (OST) ](https://www.microsoft.com/licensing/product-licensing/products.aspx)所述。 客戶金鑰可協助您符合法規遵從性義務，因為您可以控制 Microsoft 365 用來加密及解密資料的加密金鑰。
   

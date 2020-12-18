@@ -17,27 +17,23 @@ search.appverid:
 - MET150
 description: 本文可協助說明不同版本的 Office 365 郵件加密之間的差異。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a52d0c0164dfddb9f678bffa088760a271bc28e3
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: f8052272cfa4951cae132f0f66b0d9f84e05b168
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754127"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709660"
 ---
 # <a name="compare-versions-of-ome"></a>比較 OME 版本
 
 本文比較舊版 Office 365 郵件加密 (OME) 到新的 OME 功能和 Office 365 的高級郵件加密。 新功能是 OME 和 Information Rights Management (IRM) 的合併和更新版本。 此外，還會概括說明部署為 GCC 高的獨特特性。 這兩個可以在您的組織中共存。 如需新功能運作方式的詳細資訊，請參閱 [Office 365 Message Encryption (OME) ](ome.md)。
 
-||
-|:-----|
-|本文是有關 Office 365 郵件加密的更多系列文章的一部分。 本文適用于系統管理員和 ITPros。 如果您只是尋找傳送或接收加密郵件的相關資訊，請參閱 [Office 365 郵件加密 (OME ](ome.md) 中的文章清單) 並找出最符合您需求的文章。 |
-||
+本文是有關 Office 365 郵件加密的更多系列文章的一部分。 本文適用于系統管理員和 ITPros。 如果您只是尋找傳送或接收加密郵件的相關資訊，請參閱 [Office 365 郵件加密 (OME ](ome.md) 中的文章清單) 並找出最符合您需求的文章。
 
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>功能和功能的並列比較
 
-|                                   |舊功能       |                   |新功能              |
+|           **情況**           | **舊版 OME**    | **IRM**           | **新的 OME 功能** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
-|**功能**                     | **舊版 OME**    | **IRM**           | **新的 OME 功能** |
 |*傳送加密郵件*        |透過 Exchange 郵件流程規則|使用者從 Outlook desktop 或網頁型 Outlook 啟動;或透過 Exchange 郵件流程規則|使用者從 Outlook desktop、Mac 版 Outlook 或網頁型 Outlook 啟動;透過 Exchange 郵件流程規則 (也稱為傳輸規則) 和資料遺失防護 (DLP) |
 |*Rights management 範本*       |   不適用      |[不要轉寄] 選項及自訂範本|[不要轉寄] 選項、Encrypt-Only 選項及自訂範本|
 |*收件者類型*                   |內部和外部收件者|僅限內部收件者         |內部和外部收件者|

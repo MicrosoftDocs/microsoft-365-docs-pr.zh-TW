@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 使用 Office 365，您的內容會在靜止時以最強的加密、通訊協定和技術進行加密。 深入瞭解 Office 365 中的加密。
-ms.openlocfilehash: 0cd440549cd038ec9b5f69233e7faa18d9bcee1e
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 1aee9d401891e807f572c1eed2bc22a54f39e534
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663008"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709566"
 ---
 # <a name="encryption"></a>加密
 
@@ -89,6 +89,6 @@ Microsoft 365 針對 Office 365 中的大量加密、檔加密和信箱加密，
 
 [規劃 Microsoft 365 的安全性和資訊保護功能](plan-for-security-and-compliance.md)
 
-[保護商務用 Microsoft 365 方案的十大方式](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide)
+[保護商務用 Microsoft 365 方案的十大方式](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data)
 
 [Microsoft Stream 影片層級加密和播放流程](https://docs.microsoft.com/stream/network-overview#video-level-encryption-and-playback-flow)

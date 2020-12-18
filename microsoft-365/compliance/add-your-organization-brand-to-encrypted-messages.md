@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 瞭解 Office 365 全域管理員如何將組織的署名套用至加密的電子郵件，& 加密入口網站的內容。
-ms.openlocfilehash: 77fd5e08afa1a4d8ae5f6386fa65b88b6ea2be4d
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 56b948fc941da4fb221d929ecd59c5300b135e39
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663230"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709495"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>將貴組織的品牌新增至 Microsoft 365，以進行商務郵件加密加密郵件
 
@@ -192,9 +192,8 @@ ms.locfileid: "49663230"
 
 下表說明可用的背景色彩名稱及其對應的十六進位代碼值。
 
-|||
-|---|---|
 |**色彩名稱**|**色彩代碼**|
+|---|---|
 |`aliceblue`|#f0f8ff|
 |`antiquewhite`|#faebd7|
 |`aqua`|#00ffff|

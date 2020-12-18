@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 您現在可以將 DLP 原則套用至 Microsoft 團隊聊天和頻道。 請閱讀本文以深入瞭解其運作方式。
-ms.openlocfilehash: 4903056a9a7e7ae74a8ada52bd491f2b8efe771e
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 3d55c447b2e808af2ac35f04b67a002304e3e9eb
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604357"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709535"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>資料遺失防護和 Microsoft 團隊
 
@@ -28,6 +28,9 @@ ms.locfileid: "49604357"
 > 資料遺失防護功能最近新增至 Microsoft 團隊聊天及通道訊息，供使用者授權的 Office 365 E5/A5、Microsoft 365 E5/A5、Microsoft 365 資訊保護和控管或 Office 365 高級規範。 Office 365 和 Microsoft 365 E3 包含 DLP protection，供 SharePoint 線上、OneDrive 和 Exchange Online。 這也包括透過團隊共用的檔案，因為小組會使用 SharePoint 線上及 OneDrive 共用檔案。
 支援小組中的 DLP 保護聊天需要 E5。
 若要深入了解授權需求，請參閱 [Microsoft 365 租用戶層級服務授權指導方針](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance)
+
+> [!IMPORTANT]
+> 只有當使用者擁有位於 Exchange Online 中的信箱時，才支援為小組提供 DLP
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Microsoft 小組的 DLP 簡介
 
