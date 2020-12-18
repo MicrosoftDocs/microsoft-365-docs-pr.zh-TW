@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 內容總管可讓您本機檢視已套用標籤的項目。
-ms.openlocfilehash: 7977d30881a4229f99f4c5976d4c41377573a6ca
-ms.sourcegitcommit: 5e40c760c1af2a4cc6d85cb782b17f5c979677c5
+ms.openlocfilehash: 9beeab0c0b00ac1ac37c9df53e14a2f3f2914422
+ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48379218"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49701150"
 ---
 # <a name="get-started-with-content-explorer"></a>開始使用內容總管
 
@@ -39,12 +39,15 @@ ms.locfileid: "48379218"
 - Office 365 (E5)
 - 進階合規性 (E5) 附加元件
 - 進階威脅情報 (E5) 附加元件
+- Microsoft 365 E5/A5 資訊保護和控管
+- Microsoft 365 E5/A5 合規性
+
 
 ### <a name="permissions"></a>權限
 
 若要存取內容總管索引標籤，帳戶必須在其中任一角色或角色群組中獲派成員資格。 
 
-[DLP 原則](data-loss-prevention-policies.md)有助於保護敏感性資訊 (已定義為**敏感性資訊類型**)。 Microsoft 365 包括涵蓋許多不同區域的[許多常見敏感性資訊類型的定義](sensitive-information-type-entity-definitions.md)，可供您使用。 例如，信用卡號碼、銀行帳戶號碼、國家/地區識別碼和 Windows Live ID 服務號碼。
+[DLP 原則](data-loss-prevention-policies.md)有助於保護敏感性資訊 (已定義為 **敏感性資訊類型**)。 Microsoft 365 包括涵蓋許多不同區域的[許多常見敏感性資訊類型的定義](sensitive-information-type-entity-definitions.md)，可供您使用。 例如，信用卡號碼、銀行帳戶號碼、國家/地區識別碼和 Windows Live ID 服務號碼。
 
 **Microsoft 365 角色群組**
 
@@ -81,7 +84,7 @@ ms.locfileid: "48379218"
 
 ### <a name="sensitive-information-types"></a>敏感性資訊類型
 
-[DLP 原則](data-loss-prevention-policies.md)有助於保護敏感性資訊 (已定義為**敏感性資訊類型**)。 Microsoft 365 包括涵蓋許多不同區域的[許多常見敏感性資訊類型的定義](sensitive-information-type-entity-definitions.md)，可供您使用。 例如，信用卡號碼、銀行帳戶號碼、國家/地區識別碼和 Windows Live ID 服務號碼。
+[DLP 原則](data-loss-prevention-policies.md)有助於保護敏感性資訊 (已定義為 **敏感性資訊類型**)。 Microsoft 365 包括涵蓋許多不同區域的[許多常見敏感性資訊類型的定義](sensitive-information-type-entity-definitions.md)，可供您使用。 例如，信用卡號碼、銀行帳戶號碼、國家/地區識別碼和 Windows Live ID 服務號碼。
 
 > [!NOTE]
 > 內容總管目前不掃描 Exchange Online 中的敏感性資訊類型。
