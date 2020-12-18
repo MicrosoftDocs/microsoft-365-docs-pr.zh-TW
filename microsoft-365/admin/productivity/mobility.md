@@ -19,16 +19,31 @@ search.appverid:
 - MET150
 - MOE150
 description: 行動人員經歷生產力分數的詳細資料。
-ms.openlocfilehash: 04651cfee4ac2e67c4099c47bfe6d8c07b41ba83
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: e632bb4960ef36acf2c81373f34947ababc8b903
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561574"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712564"
 ---
 # <a name="mobility--people-experiences"></a>行動性–人員經驗
 
 生產力分數透過使用 Microsoft 365 和支援 it 的技術體驗，提供您組織的數位轉換旅程的洞察力。 組織的分數反映人員和技術經驗度量，可與類似組織的基準進行比較。 行動性類別是「人員經驗」措施的一部分。 若要深入瞭解，請參閱 [生產力評分概述](productivity-score.md) ，並閱讀 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。
+
+## <a name="prerequisites"></a>必要條件
+
+若要開始使用行動深入瞭解，您組織中的人員需要獲得授權：
+
+- Microsoft Teams
+- Exchange Online
+- Word
+- Excel
+- PowerPoint
+- OneNote
+
+如需詳細資訊，請參閱 [將授權指派給使用者](../manage/assign-licenses-to-users.md)。
+
+在上述產品中的人員在過去28天內至少已使用過一次之後，您將開始查看深入瞭解。
 
 ## <a name="why-your-organization39s-mobility-score-matters"></a>為什麼您的組織&#39;的行動分數重要
 

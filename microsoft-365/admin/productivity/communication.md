@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: 通訊人員經驗的詳細資料。
-ms.openlocfilehash: de73957ffad27ddac9b5e18cd6da7becd2239a59
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585313"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712576"
 ---
 # <a name="communication--people-experiences"></a>通訊–人員經驗
 
 當您的組織如何使用 Microsoft 365 的技術經驗和技術經驗時，生產力分數可支援與數位轉換的旅程。 組織的分數反映出人員和技術經驗的衡量標準，並可以與規模相近的組織基准進行比較。 通訊類別是「人員經驗」度量的一部分。 若要深入瞭解，請參閱 [生產力評分概述](productivity-score.md) ，並閱讀 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。
+
+## <a name="prerequisites"></a>必要條件
+
+若要開始使用通訊深入瞭解，您組織中的人員需要獲得授權：
+
+- Microsoft Teams
+- Yammer
+- Exchange Online
+
+如需詳細資訊，請參閱 [將授權指派給使用者](../manage/assign-licenses-to-users.md)。
+
+在上述產品中的人員在過去28天內至少已使用過一次之後，您將開始查看深入瞭解。
 
 ## <a name="why-your-organizations-communication-score-matters"></a>為什麼您組織的通訊分數很重要 
 

@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: 內容共同作業的詳細資訊-人員體驗生產力分數。
-ms.openlocfilehash: 2637debe41cd32093c378a4665af6dc5185b0e5e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 62486511be7e085401e4a2934ce3742a15729e1f
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561656"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712588"
 ---
 # <a name="content-collaboration--people-experiences"></a>內容共同作業–人員經驗
 
 生產力分數透過使用 Microsoft 365 和支援 it 的技術體驗，提供您組織的數位轉換旅程的洞察力。 組織的分數反映人員和技術經驗度量，可與類似組織的基準進行比較。 「內容共同作業」類別屬於人員經驗度量。 若要深入瞭解，請參閱 [生產力評分概述](productivity-score.md) ，並閱讀 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。
+
+## <a name="prerequisites"></a>必要條件
+
+若要開始使用內容共同作業深入瞭解，您組織中的人員需要獲得授權：
+
+- 商務用 OneDrive
+- SharePoint
+- Exchange Online
+
+如需詳細資訊，請參閱 [將授權指派給使用者](../manage/assign-licenses-to-users.md)。
+
+ 在上述產品中的人員在過去28天內至少已使用過一次之後，您將開始查看深入瞭解。
 
 ## <a name="why-your-organization39s-content-collaboration-score-matters"></a>為什麼您的組織&#39;的內容共同作業分數很重要
 

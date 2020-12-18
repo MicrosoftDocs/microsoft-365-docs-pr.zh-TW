@@ -19,16 +19,28 @@ search.appverid:
 - MET150
 - MOE150
 description: 團隊合作的詳細資料-人員體驗生產力分數。
-ms.openlocfilehash: 2be98b904131e8ac7cd5f6215faf41fd69ee1837
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: f64f60a6c9717d3d55ee2ac5cc6f507d4927fe18
+ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561540"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49712552"
 ---
 # <a name="teamwork--people-experiences"></a>團隊合作–人員經驗
 
 生產力分數透過使用 Microsoft 365 和支援 it 的技術體驗，提供您組織的數位轉換旅程的洞察力。 組織的分數反映人員和技術經驗度量，可與類似組織的基準進行比較。 「團隊合作」類別是「人員經驗」的一部分度量。 若要深入瞭解，請參閱 [生產力評分概述](productivity-score.md) ，並閱讀 [Microsoft 的隱私權聲明](https://privacy.microsoft.com/privacystatement)。
+
+## <a name="prerequisites"></a>必要條件
+
+若要開始使用團隊合作深入瞭解，您組織中的人員需要獲得授權：
+
+- Microsoft Teams
+- SharePoint
+- Exchange Online
+
+如需詳細資訊，請參閱 [將授權指派給使用者](../manage/assign-licenses-to-users.md)。
+
+在上述產品中的人員在過去28天內至少已使用過一次之後，您將開始查看深入瞭解。
 
 ## <a name="why-your-orgs-teamwork-score-matters"></a>貴組織的團隊合作分數為何重要
 

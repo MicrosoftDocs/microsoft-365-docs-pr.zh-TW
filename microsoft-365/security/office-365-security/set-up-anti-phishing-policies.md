@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
-ms.openlocfilehash: 43736fbd42949a084804825ec7f12d19b7fd1818
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 7660516e60c77a7f31f711f78b6fd28d3ad179fd
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683038"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709701"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -99,6 +99,8 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
   > - 預設的反網路釣魚原則和您建立的任何新自訂反網路釣魚原則中，預設會啟用反欺騙保護。
   >
   > - 如果您的 MX 記錄未指向 Microsoft 365，您就不需要停用反欺騙保護;請改為啟用連接器的增強篩選。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+  >
+  > - 停用反欺騙保護只會停用 [複合驗證](email-validation-and-authentication.md#composite-authentication) 檢查的隱含欺騙保護。 如果寄件者失敗明確的 [DMARC](use-dmarc-to-validate-email.md) 檢查（原則設定為 [隔離] 或 [拒絕]），則郵件仍會被隔離或拒絕。
 
   針對來自封鎖欺騙寄件者的郵件，您也可以指定要對郵件採取的動作：
 

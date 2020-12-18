@@ -106,6 +106,8 @@
           href: custom-sensitive-info-types.md
         - name: 使用精確資料比對建立自訂敏感性資訊類型
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: 使用完全符合結構描述和敏感性資訊類型精靈
+          href: sit-edm-wizard.md
         - name: 修改精確資料比對模式以使用可配置的比對
           href: sit-modify-edm-schema-configurable-match.md
         - name: 建立自訂敏感性資訊類型 - 安全性與合規性中心

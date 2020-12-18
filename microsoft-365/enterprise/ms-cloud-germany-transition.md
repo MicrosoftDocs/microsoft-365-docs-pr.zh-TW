@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 摘要：了解如何從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務。
-ms.openlocfilehash: 16e57eff5556d31d2d13ab6ce0d284719d63c44c
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 3587979c61434b77c38758e70903ee7028d70b9e
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688638"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709689"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>從 Microsoft Cloud Deutschland 遷移至新德文 datacenter 區域中的 Office 365 服務
 
@@ -35,7 +35,7 @@ ms.locfileid: "49688638"
 
 新的地區設計目的是為了處理更靈活的德國客戶需求、最新的智慧雲端服務，以及 Microsoft 365 服務雲端網路的完整連線能力，以及德國內的客戶資料派駐服務。
 
-## <a name="how-to-migrate-to-the-new-german-regions"></a>如何遷移至新的德國地區
+## <a name="how-to-migrate-to-the-new-german-datacenter-regions"></a>如何遷移至新的德國資料中心區域
 
 現有的 Microsoft Cloud Deutschland 客戶現在可以開始遷移其 Office 365、Dynamics 365 客戶服務，以及電源平臺客戶。 第一個步驟是 [選擇加入由 Microsoft 主導的移轉](https://aka.ms/office365germanymoveoptin)，以加入到我們新的德國資料中心區域。
 
@@ -78,9 +78,9 @@ Office 365 影片即將于年 2021年 3月 1日停用。 如果您選擇將 Offi
 
 遷移會將您的 Azure AD 租使用者從以及主權德國 Azure AD 服務移至歐盟地區之 Azure AD 的 Office 365 服務實例。
 
-下一個階段是從德國特定產品遷移租使用者&#39;s 訂閱和使用者授權。
+下一個階段是將您的租使用者&#39;s 訂閱和使用者授權從德國特定產品遷移至全球產品。
 
-完成所有步驟（包括客戶 Azure 遷移）之後，您的租使用者便會在 Office 365 服務服務中完成，而且會將遷移標記為完成。 到目前為止，我們為您提供郵件中心的最後一次更新。 租使用者現在並非完全通用的 Office 365 組織。
+完成所有步驟（包括客戶 Azure 遷移）之後，您的租使用者便會在 Office 365 服務服務中完成，而且會將遷移標記為完成。 到目前為止，我們為您提供郵件中心的最後一次更新。 租使用者現在是完整的全域 Office 365 組織。
 
 您會收到訊息中心文章的遷移進度通知。 文章會在特定的里程碑進行，並提供指導方針的指導方針，並提供重要資訊，讓客戶根據程式的需求採取行動。 訊息中心通知是在下列里程碑提供：
 
@@ -94,11 +94,11 @@ Office 365 影片即將于年 2021年 3月 1日停用。 如果您選擇將 Offi
 - Power BI 完成
 - 服務的最後一次轉換已完成
 
-## <a name="moving-to-the-new-german-regions"></a>移至新的德國區域
+## <a name="moving-to-the-new-german-datacenter-regions"></a>移至新的德國資料中心區域
 
-現有的 Microsoft Cloud 德國 (Microsoft Cloud Deutschland) 客戶現在可以開始遷移其 Office 365、Dynamics 365 客戶服務，以及電源平臺客戶。 第一個步驟是 [選擇加入由 Microsoft 主導的移轉](https://aka.ms/office365germanymoveoptin)，以加入到我們新的德國資料中心區域。 當您更新訂閱時，會自動加入宣告 Microsoft 輔助遷移。 當發生這種情況時，microsoft 會向客戶租使用者管理員傳送電子郵件，並在 Microsoft 365 系統管理中心的訊息中心通知客戶。 不過，如果您想要立即開始處理常式，您可以在目前的 Microsoft 365 系統管理中心中 [選擇直接加入](https://aka.ms/office365germanymoveoptin) 。 遷移預計會在2021年10月開始，並于2021年10月29日完成。 
+現有的 Microsoft Cloud Deutschland 客戶現在可以開始遷移其 Office 365、Dynamics 365 客戶服務和電源平臺服務。 第一個步驟是 [選擇加入由 Microsoft 主導的移轉](https://aka.ms/office365germanymoveoptin)，以加入到我們新的德國資料中心區域。 當您更新訂閱時，會自動加入宣告 Microsoft 輔助遷移。 當發生這種情況時，microsoft 會向客戶租使用者管理員傳送電子郵件，並在 Microsoft 365 系統管理中心的訊息中心通知客戶。 不過，如果您想要立即開始處理常式，您可以在目前的 Microsoft 365 系統管理中心中 [選擇直接加入](https://aka.ms/office365germanymoveoptin) 。 遷移預計會在2021年10月開始，並于2021年10月29日完成。 
 
-移轉之後，核心客戶資料和訂閱都會移至新的德國區域。
+由於遷移，核心客戶資料和訂閱會移至新的德國資料中心區域。
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何準備移轉至新的德國資料中心區域中的 Office 365 服務
 
@@ -138,7 +138,7 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 3. 群組 (新式群組)
 4. Delve 設定檔
 5. Exchange Online Protection
-6. 適用於 Office 365 的 Microsoft Defender
+6. 適用於 Office 365 的 Defender
 7. 進階電子文件探索
 8. 進階資料控管
 9. SharePoint Online
@@ -149,7 +149,7 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 14. Office 365 專業增強版
 15. Outlook Mobile
 
-目前新德國資料中心區域提供 29 個服務做為 Office 365 服務的一部分。 將持續與全球 Office 365 服務一起提供新功能和服務。
+在新的德國資料中心區域中，目前有39服務可作為 Office 365 服務的一部分。 將持續與全球 Office 365 服務一起提供新功能和服務。
 
 1. Exchange Online
 2. Exchange Online 的客戶加密箱
@@ -158,10 +158,10 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 5. MyAnalytics
 6. 工作場所分析
 7. Exchange Online Protection
-8. 適用於 Office 365 的 Microsoft Defender
+8. 適用於 Office 365 的 Defender
 9. 進階電子文件探索
 10. 進階安全性管理
-11. 資訊版權管理
+11. Office 365 的資訊保護 
 12. 進階資料控管
 13. SharePoint Online
 14. 線上 SharePoint 的客戶加密箱
@@ -173,13 +173,23 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 20. PSTN 電話
 21. Microsoft Teams
 22. 系統管理報告/使用狀況報告
-23. Word Online、Excel Online、PowerPoint、OneNote 和 Visio Online
+23. Office 網頁版
 24. Planner
 25. Sway
 26. Microsoft 365 Apps
 27. Outlook Mobile
 28. Enterprise 可移動性 + Security (EMS) E3 (Azure AD Premium P1、Intune 及 Rights Management Service) 
-29. Yammer Online
+29. Yammer Enterprise
+30. Microsoft Forms
+31. Office 365 的自動功能
+32. Office 365 的 Power Virtual Agent
+33. Office 365 的 PowerApps
+34. Microsoft Bookings
+35. To-Do
+36. Whiteboard
+37. Microsoft StuffHub
+38. Microsoft Kaizala 專業版
+39. 清單
 
 ### <a name="when-will-migration-happen"></a>何時會進行移轉？
 
@@ -278,7 +288,7 @@ Microsoft 會提供 Office 365 租使用者從 Microsoft Cloud Deutschland 至 O
 
 [選擇加入移轉](ms-cloud-germany-migration-opt-in.md)
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>詳細資訊
 
 開始：
 
