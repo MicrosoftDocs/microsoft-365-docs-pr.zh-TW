@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender REST API 的 Hello World 版
 description: 瞭解如何建立應用程式，並使用權杖來存取 Microsoft 365 Defender APIs
-keywords: 應用程式、權杖、存取、aad、app、application registration、powershell、script、全域管理員、許可權
+keywords: 應用程式、權杖、存取、aad、應用程式、應用程式註冊、powershell、腳本、全域管理員、許可權、microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,175 +19,162 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: bd4f7e5485d67cf74477900ae2cc5c77f1a6ee41
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b36a6acca5880a455a66b03b5355cdf1fb85b29b
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844041"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719307"
 ---
-# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Microsoft 365 Defender REST API 的 Hello World 版 
+# <a name="hello-world-for-microsoft-365-defender-rest-api"></a>Microsoft 365 Defender REST API 的 Hello World 版
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 適用於：
+
 - Microsoft 365 Defender
 
->[!IMPORTANT] 
->一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
+> [!IMPORTANT]
+> 一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## <a name="get-incidents-using-a-simple-powershell-script"></a>使用簡單的 PowerShell 腳本取得事件
 
-### <a name="how-long-it-takes-to-go-through-this-example"></a>在這個範例中需要多久時間？
-只需要5分鐘完成兩個步驟：
-- 應用程式註冊
-- 使用範例：只需要複製/貼上簡短的 PowerShell 腳本
+完成此專案需要5到10分鐘的時間。 這次預估包括註冊應用程式，以及從 PowerShell 範例腳本套用程式碼。
 
-### <a name="do-i-need-a-permission-to-connect"></a>我需要連線許可權嗎？
-在 [應用程式註冊] 階段，您的 Azure Active Directory (Azure AD) 租使用者必須具有 **全域系統管理員** 角色。
+### <a name="register-an-app-in-azure-active-directory"></a>在 Azure Active Directory 中註冊應用程式
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a>步驟 1-在 Azure Active Directory 中建立應用程式
+1. 以 **全域系統管理員** 角色的使用者身分登入 [Azure](https://portal.azure.com) 。
 
-1. 使用您的 **全域系統管理員** 使用者登入 [Azure](https://portal.azure.com) 。
-
-2. 流覽至 [ **Azure Active Directory**  >  **應用程式註冊** ]  >  **新註冊** 。 
+2. 流覽至 [ **Azure Active Directory**  >  **應用程式註冊**]  >  **新註冊**。
 
    ![Microsoft Azure 的影像及應用程式註冊導覽](../../media/atp-azure-new-app2.png)
 
-3. 在 [註冊] 表單中，選擇應用程式的名稱，然後選取 [ **註冊** ]。
+3. 在 [註冊] 表單中，選擇應用程式的名稱，然後選取 [ **註冊**]。 選取重新導向 URI 是選用的。 您不需要其中一個，即可完成此範例。
 
-4. 允許應用程式存取 Microsoft Defender for Endpoint，並指派它 **讀取所有的事件** 許可權：
+4. 在 [應用程式] 頁面上，選取 [ **API 許可權**  >  **新增許可權**  >  **APIs 我的組織使用**>]，輸入 **microsoft 威脅防護**，然後選取 [ **microsoft 威脅防護**]。 您的應用程式現在可以存取 Microsoft 365 Defender。
 
-   - 在 [應用程式] 頁面上，選取 [ **API 許可權**  >  **新增許可權** ]  >  **APIs 我的組織使用** > 輸入 **microsoft 365 defender** ，然後在 **microsoft 365 defender** 上選取。
+   > [!TIP]
+   > *Microsoft 威脅防護* 是 Microsoft 365 Defender 的先前名稱，因此不會出現在原始清單中。 您必須先在文字方塊中寫入其名稱，才能看到顯示的名稱。
+   ![API 許可權選取的影像](../../media/apis-in-my-org-tab.PNG)
 
-   >[!NOTE]
-   >Microsoft 365 Defender 未出現在原始清單中。 您必須先在文字方塊中寫入其名稱，才能看到顯示的名稱。
-
-   ![API 存取和 API 選取的影像](../../media/apis-in-my-org-tab.PNG)
-
-   - 選擇 [ **應用程式許可權** ]  >  **事件。讀取。所有** > 在 [ **新增] 許可權** 上選取
+   - 選擇 [**應用程式許可權**]  >  **事件。讀取。 [全部**] 並選取 [**新增許可權**]。
 
    ![API 存取和 API 選取的影像](../../media/request-api-permissions.PNG)
 
-   >[!IMPORTANT]
-   >您必須選取相關的許可權。 
-
-     例如，
-
-     - 若要決定您需要的許可權，請參閱您想要呼叫之 API 中的 [ **許可權** ] 區段。
-
-5. 選取 **[授與系統管理員同意** ]
-
-    - >[!NOTE]
-      > 每次您新增許可權時，您必須選取 **[授與同意** 才能讓新許可權同意] 生效。
+5. 選取 **[授與系統管理員同意**]。 每次您新增許可權時，都必須選取 **[授與系統管理員同意** ]，才會生效。
 
     ![授與許可權的影像](../../media/grant-consent.PNG)
 
-6. 將密碼新增至應用程式。
+6. 將密碼新增至應用程式。 選取 [ **& 密碼的憑證**]，新增描述至密碼，然後選取 [ **新增**]。
 
-    - 選取 [ **& 密碼的憑證** ]，將 description 新增至 [密碼]，然後選取 [ **新增** ]。
-
-    >[!IMPORTANT]
-    > 選取 [ **新增** ] 之後，請 **複製產生的密碼值** 。 離開後，您將無法進行找回！
+    > [!TIP]
+    > 選取 [ **新增**] 之後，選取 **[複製產生的機密值**]。 離開後，您將無法取得密碼值。
 
     ![建立應用程式機碼的影像](../../media/webapp-create-key2.png)
 
-7. 記下來記錄應用程式識別碼和您的租使用者 ID:
-
-   - 在 [應用程式] 頁面上，移至 **[簡介** ]，然後複製下列專案：
+7. 將您的應用程式識別碼和租使用者識別碼記錄在安全的位置。 在 [應用程式] 頁面的 **[一覽** ] 底下會列出它們。
 
    ![建立之應用程式識別碼的影像](../../media/app-and-tenant-ids.png)
 
+### <a name="get-a-token-using-the-app-and-use-the-token-to-access-the-api"></a>使用應用程式取得權杖，並使用權杖存取 API
 
-做！ 您已成功註冊應用程式。
+如需 Azure Active Directory 標記的詳細資訊，請參閱 [AZURE AD 教學](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)課程。
 
-### <a name="step-2---get-a-token-using-the-app-and-use-this-token-to-access-the-api"></a>步驟 2-使用此應用程式取得權杖，並使用此權杖來存取 API。
+> [!IMPORTANT]
+> 雖然此演示程式中的範例會鼓勵您貼上機密值以用於測試目的，您決不應該將 **機密硬編碼** 到生產中執行的應用程式。 協力廠商可以使用您的機密存取資源。 您可以使用 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates)，協助保護應用程式的機密。 如需如何保護應用程式的實際範例，請參閱 [使用 Azure Key Vault 管理伺服器應用程式中的機密](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)。
 
--   將下列腳本複製到 PowerShell ISE 或文字編輯器，並將其儲存為 " **Get-Token.ps1** "
--   執行此腳本會產生權杖，並將其儲存在工作資料夾中，名稱為 " **Latest-token.txt** " 的資料夾。
+1. 複製下列腳本，並將其貼到您喜愛的文字編輯器中。 [另存新檔] **Get-Token.ps1**。 您也可以在 PowerShell ISE 中執行程式碼，但您應該將其儲存，因為在下一節中使用事件提取腳本時，我們需要重新執行。
 
-```
-# That code gets the App Context Token and save it to a file named "Latest-token.txt" under the current directory
-# Paste below your Tenant ID, App ID and App Secret (App key).
+    此腳本會產生權杖，並將其儲存在 [名稱] 下的工作資料夾中 *Latest-token.txt*。
 
-$tenantId = '' ### Paste your tenant ID here
-$appId = '' ### Paste your Application ID here
-$appSecret = '' ### Paste your Application secret here
+    ```PowerShell
+    # This script gets the app context token and saves it to a file named "Latest-token.txt" under the current directory.
+    # Paste in your tenant ID, client ID and app secret (App key).
 
-$resourceAppIdUri = 'https://api.security.microsoft.com'
-$oAuthUri = "https://login.windows.net/$TenantId/oauth2/token"
-$authBody = [Ordered] @{
-    resource = "$resourceAppIdUri"
-    client_id = "$appId"
-    client_secret = "$appSecret"
-    grant_type = 'client_credentials'
-}
-$authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
-$token = $authResponse.access_token
-Out-File -FilePath "./Latest-token.txt" -InputObject $token
-return $token
-```
+    $tenantId = '' # Paste your directory (tenant) ID here
+    $clientId = '' # Paste your application (client) ID here
+    $appSecret = '' # # Paste your own app secret here to test, then store it in a safe place!
 
--   健全檢查：<br>
-執行指令碼。<br>
-在您的瀏覽器中，移至： https://jwt.ms/ <br>
-將權杖複製 (Latest-token.txt 檔案) 的內容。<br>
-貼上方框。<br>
-尋找「角色」一節。 尋找 ```Incidents.Read.All``` 角色。<br>
-下列範例來自具有和許可權的應用程式 ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` ```AdvancedHunting.Read.All``` 。
+    $resourceAppIdUri = 'https://api.security.microsoft.com'
+    $oAuthUri = "https://login.windows.net/$tenantId/oauth2/token"
+    $authBody = [Ordered] @{
+      resource = $resourceAppIdUri
+      client_id = $clientId
+      client_secret = $appSecret
+      grant_type = 'client_credentials'
+    }
+    $authResponse = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $authBody -ErrorAction Stop
+    $token = $authResponse.access_token
+    Out-File -FilePath "./Latest-token.txt" -InputObject $token
+    return $token
+    ```
 
-![影像 jwt.ms](../../media/api-jwt-ms.png)
+#### <a name="validate-the-token"></a>驗證 token
 
-### <a name="lets-get-the-incidents"></a>讓我們能夠取得事件！
+1. 複製並貼上您收到的權杖 [以進行](https://jwt.ms) 解碼。
+1. 在 *JSON Web Token* 中， *JWT* 代表。 解碼的權杖會包含一些 JSON 格式專案或宣告。 請確定已解碼權杖中的 *角色* 宣告包含所需的許可權。
 
--   下列腳本將使用 **Get-Token.ps1** 來存取 API，並在過去48小時內取得最後一次更新的事件。
--   將此腳本儲存在您儲存先前腳本 **Get-Token.ps1** 的相同資料夾中。 
--   編寫 json 檔案的腳本，該檔案與腳本位於相同的資料夾中。
+    在下列影像中，您可以看到從應用程式取得的解碼標記，具有 ```Incidents.Read.All``` 、 ```Incidents.ReadWrite.All``` 和 ```AdvancedHunting.Read.All``` 許可權：
 
-```
-# Returns Incidents last updated in the past 48 hours.
+    ![影像 jwt.ms](../../media/api-jwt-ms.png)
 
-$token = ./Get-Token.ps1       #run the script Get-Token.ps1  - make sure you are running this script from the same folder of Get-Token.ps1
+### <a name="get-a-list-of-recent-incidents"></a>取得最近事件的清單
 
-# Get Incidents from the last 48 hours. Make sure you have incidents in that time frame.
+下列腳本將使用 **Get-Token.ps1** 來存取 API。 然後，它會檢索過去48小時內最後更新的事件清單，並將清單儲存為 JSON 檔案。
+
+> [!IMPORTANT]
+> 將此腳本儲存在您儲存 **Get-Token.ps1** 的相同資料夾中。
+
+```PowerShell
+# This script returns incidents last updated within the past 48 hours.
+
+$token = ./Get-Token.ps1
+
+# Get incidents from the past 48 hours.
+# The script may appear to fail if you don't have any incidents in that time frame.
 $dateTime = (Get-Date).ToUniversalTime().AddHours(-48).ToString("o")
 
-# The URL contains the type of query and the time filter we created above
+# This URL contains the type of query and the time filter we created above.
+# Note that `$filter` does not refer to a local variable in our script --
+# it's actually an OData operator and part of the API's syntax.
 $url = "https://api.security.microsoft.com/api/incidents?$filter=lastUpdateTime+ge+$dateTime"
 
-# Set the WebRequest headers
-$headers = @{ 
+# Set the webrequest headers
+$headers = @{
     'Content-Type' = 'application/json'
     'Accept' = 'application/json'
     'Authorization' = "Bearer $token"
 }
 
-# Send the webrequest and get the results. 
+# Send the request and get the results.
 $response = Invoke-WebRequest -Method Get -Uri $url -Headers $headers -ErrorAction Stop
 
-# Extract the incidents from the results. 
+# Extract the incidents from the results.
 $incidents =  ($response | ConvertFrom-Json).value | ConvertTo-Json -Depth 99
 
-# Get string with the execution time. We concatenate that string to the output file to avoid overwrite the file
-$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}    
+# Get a string containing the execution time. We concatenate that string to the name 
+# of the output file to avoid overwriting the file on consecutive runs of the script.
+$dateTimeForFileName = Get-Date -Format o | foreach {$_ -replace ":", "."}
 
 # Save the result as json
-$outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"     
+$outputJsonPath = "./Latest Incidents $dateTimeForFileName.json"
 
-Out-File -FilePath $outputJsonPath -InputObject $incidents 
+Out-File -FilePath $outputJsonPath -InputObject $incidents
 ```
 
-您已經完成了！ 您剛剛成功：
--   建立及註冊和應用程式
--   授與該應用程式讀取提醒的許可權
--   已連接 API
--   使用 PowerShell 腳本傳回過去48小時內建立的事件
+您已經完成了！ 您已成功：
 
+- 建立及註冊應用程式。
+- 授與該應用程式讀取提醒的許可權。
+- 連接至 API。
+- 使用 PowerShell 腳本，傳回過去48小時更新的事件。
 
+## <a name="related-articles"></a>相關文章
 
-## <a name="related-topic"></a>相關主題
+- [Microsoft 365 Defender APIs 概述](api-overview.md)
 - [存取 Microsoft 365 Defender APIs](api-access.md)
-- [使用應用程式內容存取 Microsoft 365 Defender](api-create-app-web.md)
-- [使用使用者內容存取 Microsoft 365 Defender](api-create-app-user-context.md)
+- [建立應用程式以存取沒有使用者的 Microsoft 365 Defender](api-create-app-web.md)
+- [建立應用程式以代表使用者存取 Microsoft 365 Defender APIs](api-create-app-user-context.md)
+- [建立具有對 Microsoft 365 Defender APIs 的多承租人合作夥伴存取權的應用程式](api-partner-access.md)
+- [使用 Azure Key Vault 管理伺服器應用程式中的機密](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+- [OAuth 2.0 使用者登入和 API 存取的授權](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)

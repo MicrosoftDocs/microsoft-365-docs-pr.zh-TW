@@ -1,7 +1,7 @@
 ---
-title: 高級搜尋 APIs
-description: 瞭解如何使用 Microsoft 365 Defender API 執行高級搜尋查詢
-keywords: 高級搜尋、APIs、api、MTP
+title: Microsoft 365 Defender advanced 搜尋 API
+description: 瞭解如何使用 Microsoft 365 Defender 的高級搜尋 API 執行高級搜尋查詢
+keywords: Advanced 搜尋，APIs，api，MTP，M365 Defender，Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,78 +19,89 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: c43d263009578af6280ffdc780ab0f9a174a3b97
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: e7cd9192ec25e01ed06b77cb2b39357cb9df79bd
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844029"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719377"
 ---
-# <a name="advanced-hunting-apis"></a>高級搜尋 APIs
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender Advanced 搜尋 API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 適用於：
-- Microsoft 365 Defender
 
->[!IMPORTANT] 
->一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- Microsoft 威脅防護
 
-## <a name="limitations"></a>限制
-1. 您只可對過去30天的資料執行查詢。
-2. 結果最多會包含100000列。
-3. 執行數目會限制于每個承租人：每分鐘最多10個通話量、每小時10分鐘的執行時間，以及一天的執行時間的4小時的執行時間。
-4. 單一要求的最長執行時間為10分鐘。
-5. 429回應會以要求數目或 CPU 來表示達到配額限制。 429回應內文也會指出在更新配額之前所用的時間。 
+> [!IMPORTANT]
+> 一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
+「[高級搜尋](advanced-hunting-overview.md)」是一個威脅搜尋工具，其使用[巧盡心思構建的查詢](advanced-hunting-query-language.md)，檢查 Microsoft 365 Defender 中的事件資料過去30天。 您可以使用高級搜尋查詢檢查不尋常的活動、偵測可能的威脅，甚至回應攻擊。 Advanced 搜尋 API 可讓您以程式設計方式查詢事件資料。
+
+## <a name="quotas-and-resource-allocation"></a>配額和資源配置
+
+下列條件會與所有查詢相關。
+
+1. 查詢會探索和傳回過去30天的資料。
+2. 結果最多可返回100000列。
+3. 每個租使用者最多可讓10個通話每分鐘一次。
+4. 每個租使用者的執行時間為10分鐘。
+5. 每個租使用者共有四小時的執行時間。
+6. 如果單一要求的執行時間超過10分鐘，它會超時並傳回錯誤。
+7. `429`HTTP 回應碼表示您已到達配額（按傳送的要求數目，或已分派的執行時間）。 回應內文會包含時間，直到您到達的配額會重設。
 
 ## <a name="permissions"></a>權限
-需要有下列其中一個許可權才能呼叫此 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [Access The Microsoft 365 Defender APIs](api-access.md)
 
-許可權類型 |   權限  |   許可權顯示名稱
-:---|:---|:---
-應用程式 |   AdvancedHunting Read。 All |  「執行高級查詢」
-委派 (工作或學校帳戶)  | AdvancedHunting 讀取 | 「執行高級查詢」
+需要有下列其中一個許可權，才能呼叫高級搜尋 API。 若要深入瞭解，包括如何選擇許可權，請參閱 [Access The Microsoft 365 Defender Protection APIs](api-access.md)
+
+許可權類型 | 權限 | 許可權顯示名稱
+-|-|-
+應用程式 | AdvancedHunting Read。 All | 執行高級查詢
+委派 (工作或學校帳戶)  | AdvancedHunting 讀取 | 執行高級查詢
 
 >[!Note]
 > 使用使用者認證取得權杖時：
+>
 >- 使用者必須具有「查看資料 ' AD 角色
 >- 使用者必須根據裝置群組設定，才能存取裝置。
 
 ## <a name="http-request"></a>HTTP 要求
-```
+
+```HTTP
 POST https://api.security.microsoft.com/api/advancedhunting/run
 ```
 
 ## <a name="request-headers"></a>要求標頭
 
-Header | 值 
-:---|:---
-授權 | 載荷 {token}。 **必要欄位** 。
-Content-Type    | application/json
+Header | 值
+-|-
+授權 | 載荷 {token} **附注：必要**
+Content-Type | application/json
 
 ## <a name="request-body"></a>要求正文
+
 在要求主體中，提供具有下列參數的 JSON 物件：
 
-參數 | 類型    | 描述
-:---|:---|:---
-查詢 | 文字 |  要執行的查詢。 **必要欄位** 。
+參數 | 類型 | 描述
+-|-|-
+查詢 | 文字 | 要執行的查詢。 **附注：必要**
 
 ## <a name="response"></a>回應
-如果成功，這個方法會傳回 200 OK，並在回應內文中 _QueryResponse_ 物件。 <br><br>
 
-Response 物件會劃分成3個部分 (屬性) ：<br>
-1) ```Stats``` -查詢效能統計資料。<br>
-2) ```Schema``` -回應的架構，每一欄的 Name-Type 組的清單。 <br>
-3) ```Results``` -高級搜尋事件清單。
+如果成功，此方法將會傳回 `200 OK` ，以及回應內文中的 _QueryResponse_ 物件。
+
+Response 物件包含三個最上層的屬性：
+
+1. Stats-查詢效能統計資料的字典。
+2. 架構-回應的架構，每個資料欄的 Name-Type 對的清單。
+3. 結果-高級搜尋事件清單。
 
 ## <a name="example"></a>範例
 
-請求
+在下列範例中，使用者會傳送下列查詢並接收包含、和的 API 回應 `Stats` 物件 `Schema` `Results` 。
 
-以下是要求的範例。
-
+### <a name="query"></a>查詢
 
 ```json
 {
@@ -99,10 +110,7 @@ Response 物件會劃分成3個部分 (屬性) ：<br>
 
 ```
 
-回應
-
-以下是回應的範例。
-
+### <a name="response-object"></a>Response 物件
 
 ```json
 {
@@ -164,8 +172,11 @@ Response 物件會劃分成3個部分 (屬性) ：<br>
         }
     ]
 }
-
 ```
 
-## <a name="related-topic"></a>相關主題
+## <a name="related-articles"></a>相關文章
+
 - [存取 Microsoft 365 Defender APIs](api-access.md)
+- [深入瞭解 API 限制和授權](api-terms.md)
+- [瞭解錯誤碼](api-error-codes.md)
+- [進階搜捕概觀](advanced-hunting-overview.md)

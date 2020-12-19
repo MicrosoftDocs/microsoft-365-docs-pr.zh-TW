@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: db54ff053dcb1c9c1c608608ab1a37da8090cdb3
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 18bc5d8d0f80f7cee024f4d6358361509879bd11
+ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087508"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49717016"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex 採用：快速入門
 
@@ -32,8 +32,8 @@ ms.locfileid: "49087508"
 |手動輸入| 表單處理 | 檔瞭解 |
 |:-------|:--------|:--------|
 | 任何內容的資料錄入和勞動密集型 | 處理數位內容-相片、掃描、回執、名片、含 OCR 的影片 & 文字 |  從合約、簡歷及其他結構化檔捕獲內容類型和中繼資料 |
-| Interactive   | 預先構建、自動化   | 自訂、協助   | 自訂、相容性 |
-| 工作中的人員 | 由主題專家教授 (Sme) 。 從合約、簡歷、其他非結構化檔捕獲內容類型和中繼資料。 | Sme 的相關程度較低。 從採購訂單、應用程式、其他半結構化及結構化檔 |
+| Interactive   | 預先構建、自動化   | 自訂、協助  |
+| 工作中的人員 | 由主題專家教授 (Sme) 。 從合約、簡歷、其他結構化檔捕獲內容類型和中繼資料。 | Sme 的相關程度較低。 從採購訂單、應用程式、其他半結構化及結構化檔 |
 
 下表說明當您使用 SharePoint Syntex 時所獲得的功能：
 

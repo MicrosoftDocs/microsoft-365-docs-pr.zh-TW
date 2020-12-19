@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 4a032ab88704cfb46b3f451d939a784d222cbb40
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 4a54fed8a109c3d03b735a5db3cb48060f5c438f
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688614"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719389"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (一般) 
 
@@ -83,7 +83,7 @@ ms.locfileid: "49688614"
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
-| 將商務用 Skype 遷移至小組。 | 現有商務用 Skype 客戶會遷移至歐洲的 Office 365 服務，然後轉換為 Office 365 服務的德國地區中的 Microsoft 團隊。 | 商務用 Skype 客戶 | -使用者無法在遷移日期登入商務用 Skype。 遷移前的10天，我們會透過商務用 Skype 用戶端上的內建，通知使用者他們將升級為小組。 我們也會在系統管理中心張貼這些變更將在10天后發生。 <br><br> -已遷移原則設定。 <br><br> -將使用者遷移至小組，並在遷移後不再具有商務用 Skype。 <br><br> -使用者必須已安裝團隊桌面用戶端。 安裝將透過商務用 Skype 基礎結構上的原則進行，但如果失敗，使用者仍需下載用戶端或使用支援的瀏覽器進行連線。 <br><br> -連絡人和會議會遷移到小組。 <br><br> -使用者無法在時間服務轉換為 Office 365 服務時登入商務用 Skype，而不能在客戶 DNS 專案完成之前登入。 <br><br> -連絡人和現有的會議將繼續充當商務用 Skype 會議。 |
+| 將商務用 Skype 遷移至小組。 | 現有商務用 Skype 客戶會遷移至歐洲的 Office 365 服務，然後轉換為 Office 365 服務的德國地區中的 Microsoft 團隊。 | 商務用 Skype 客戶 | -使用者無法在遷移日期登入商務用 Skype。 遷移前的10天，我們會發佈到系統管理中心，讓您瞭解何時進行遷移，以及當我們開始遷移時，會發生什麼情況。 <br><br> -已遷移原則設定。 <br><br> -將使用者遷移至小組，並在遷移後不再具有商務用 Skype。 <br><br> -使用者必須已安裝團隊桌面用戶端。 安裝將透過商務用 Skype 基礎結構上的原則進行，但如果失敗，使用者仍需下載用戶端或使用支援的瀏覽器進行連線。 <br><br> -連絡人和會議會遷移到小組。 <br><br> -使用者無法在時間服務轉換為 Office 365 服務時登入商務用 Skype，而不能在客戶 DNS 專案完成之前登入。 <br><br> -連絡人和現有的會議將繼續充當商務用 Skype 會議。 |
 |||||
 
 ## <a name="office-services"></a>Office 服務
@@ -102,7 +102,7 @@ Office 中最近使用 (MRU) 服務，是從德國服務切換至 Office 365 服
 
 [執行其他預備工作](ms-cloud-germany-transition-add-pre-work.md)
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 開始：
 

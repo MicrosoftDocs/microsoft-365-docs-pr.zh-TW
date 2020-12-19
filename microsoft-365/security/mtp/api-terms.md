@@ -19,40 +19,60 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: e88b59ea28f9e71c677c25d95edc2f91cc2e56d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: d9b3c48e4b9e89ef7648086b05c9fdd9f078f51e
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844893"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719295"
 ---
-#  <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender APIs 授權和使用條款
+# <a name="microsoft-365-defender-apis-license-and-terms-of-use"></a>Microsoft 365 Defender APIs 授權和使用條款
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 適用於：
+
 - Microsoft 365 Defender
 
->[!IMPORTANT] 
->一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> [!IMPORTANT]
+> 一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
+## <a name="official-terms"></a>官方字詞
 
-## <a name="apis"></a>API
-
- Microsoft 365 Defender APIs 受 [MICROSOFT API 授權和使用條款的](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)制約。
-
-### <a name="throttling-limits"></a>節流限制
-
-每個 API 都有它自己的節流限制。<br>
-依小時及每分鐘的節流限制。<br>
-例如，事件 API 的節流限制為：每分鐘50個通話和1500每小時。<br>
-在節流的情況下，HTTP 回應狀態碼會是429。
-
+Microsoft 365 Defender APIs 受 [microsoft APIs 授權和使用條款的](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)制約。
 
 ## <a name="legal-notices"></a>法律通知
 
-Microsoft 和任何投稿人授與您在「創造性 Commons 歸屬4.0 國際公開授權」下，在此存放庫中的 Microsoft 檔及其他內容的授權，請參閱授權檔案。
+Microsoft 和任何投稿人會授與您對 [此存放庫](https://github.com/MicrosoftDocs/microsoft-365-docs)中的 Microsoft 檔及其他內容的授權，在 [創造性 Commons 特性4.0 國際公開授權] 底下。 如需詳細資訊，請參閱 [授權](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE) 檔案。
 
-檔中參考的 microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 產品及服務，都可能是美國及/或其他國家/地區之 Microsoft 的商標或注冊商標。 此專案的授權不會授與您使用任何 Microsoft 名稱、徽標或商標的權利。 您可以在上找到 Microsoft 的一般商標指導方針 https://go.microsoft.com/fwlink/?LinkID=254653 。
+檔中參考的 microsoft、Windows、Microsoft Azure 和/或其他 Microsoft 產品及服務，都可能是美國及/或其他國家/地區之 Microsoft 的商標或注冊商標。
 
-您可以在 Microsoft 找到隱私權資訊， https://privacy.microsoft.com/en-us/ 任何投稿人會在各自的版權、專利或商標（不論是以暗示為 estoppel 或其他方式）下，保留所有其他權利。
+此專案的授權不會授與您使用任何 Microsoft 名稱、徽標或商標的權利。 您可以在 [Microsoft 商標](https://go.microsoft.com/fwlink/?LinkID=254653)上找到 microsoft 的一般商標指導方針。
+
+您可以在 [Microsoft](https://privacy.microsoft.com)上找到隱私權資訊。
+
+Microsoft 和任何投稿人都會保留所有其他權力，不論是在各自的版權、專利或商標，不論是以暗示、estoppel 還是其他方式。
+
+## <a name="other-restrictions"></a>其他限制
+
+「高級搜尋」 API 對傳回的結果數目有一些 [限制](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-advanced-query-api#limitations) ，以及可以查詢的資料。
+
+1. 您只能查詢過去30天的資料。
+1. 結果最多會包含100000列。
+
+### <a name="quotas-and-resource-allocation"></a>配額和資源配置
+
+Microsoft 365 Defender APIs 具有節流閾值。
+
+- **事件 API**：每分鐘最多50個通話或每小時1500個通話。
+- **高級搜尋 API**：每分鐘最多15個通話、每小時10分鐘的執行時間，以及每天的執行時間4小時。
+
+指出節流的 HTTP 回應狀態碼為 `429` 。
+
+如果您的要求遭到限制，回應內文會指出您可以再次開始進行要求的時間。
+
+## <a name="related-articles"></a>相關文章
+
+- [Microsoft 365 Defender APIs 概述](api-overview.md)
+- [支援的 Microsoft 365 Defender API](api-supported.md)
+- [存取 Microsoft 365 Defender APIs](api-access.md)

@@ -19,65 +19,49 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: aceb376662f2b27397aa2332f8929a57d5a3ee03
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 0df741efb7555d587a6033acc23716e93f542d5e
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846005"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719211"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>常見的 Microsoft 365 Defender REST API 錯誤碼
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 適用於：
-- Microsoft 365 Defender
 
->[!IMPORTANT] 
->一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
+- Microsoft 威脅防護
 
-下表所列的錯誤代碼可能會由任何 Microsoft 365 Defender APIs 上的操作所傳回。
+> [!IMPORTANT]
+> 一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-每個錯誤回應都會包含一則錯誤訊息，可協助您解決問題。
+錯誤代碼可能會在任何 Microsoft 365 Defender APIs 上的操作傳回。 每個錯誤回應都會包含一則錯誤訊息，可協助您解決問題。 [資料表] 區段中的 [錯誤訊息] 欄提供一些範例訊息。 實際郵件的內容會因觸發回應的因素而異。 在表格中，依角括弧顯示變數內容。
 
-郵件是可變更的普通文字。
+## <a name="error-codes"></a>錯誤碼
 
-在頁面底部，您可以找到回應範例。
-
-錯誤碼 |HTTP 狀態碼 |訊息 
-:---|:---|:---
+錯誤碼 | HTTP 狀態碼 | 訊息
+-|-|-
 BadRequest | BadRequest (400)  | 一般錯誤要求錯誤訊息。
-ODataError | BadRequest (400)  | OData URI 查詢無效 () 指定特定錯誤。
-InvalidInput | BadRequest (400)  | 不正確輸入 {不正確輸入}。
+ODataError | BadRequest (400)  | 不正確 OData URI 查詢 \<the specific error is specified\> 。
+InvalidInput | BadRequest (400)  | 輸入無效 \<the invalid input\> 。
 InvalidRequestBody | BadRequest (400)  | 不正確要求正文。
-InvalidHashValue | BadRequest (400)  | 雜湊值 {不正確雜湊} 無效。
-InvalidDomainName | BadRequest (400)  | 功能變數名稱 {不正確網域} 無效。
-InvalidIpAddress | BadRequest (400)  | IP 位址 {不正確 IP} 無效。
-InvalidUrl | BadRequest (400)  | URL {不正確 URL} 無效。
-MaximumBatchSizeExceeded | BadRequest (400)  | 超過批次大小上限。 已接收： {已接收的批次大小}，允許： {允許的批次大小}。
-MissingRequiredParameter | BadRequest (400)  | 參數 {遺失的參數} 缺失。
-OsPlatformNotSupported | BadRequest (400)  | 作業系統平臺 {用戶端作業系統平臺} 不支援此動作。
-ClientVersionNotSupported | BadRequest (400)  | {用戶端版本 {支援的用戶端版本} 和更新版本支援要求的動作}。
-未經 授權 | 未經授權的 (401)  | 未經授權的 (通常會無效或過期的授權標頭) 。
-禁止 | 禁止 (403)  | 已禁止 (有效的權杖，但動作) 的許可權不足。
+InvalidHashValue | BadRequest (400)  | 雜湊值 \<the invalid hash\> 無效。
+InvalidDomainName | BadRequest (400)  | 功能變數名稱 \<the invalid domain\> 無效。
+InvalidIpAddress | BadRequest (400)  | IP 位址 \<the invalid IP\> 無效。
+InvalidUrl | BadRequest (400)  | URL \<the invalid URL\> 無效。
+MaximumBatchSizeExceeded | BadRequest (400)  | 超過批次大小上限。 已接收： \<batch size received\> ，允許： {允許的批次大小}。
+MissingRequiredParameter | BadRequest (400)  | \<the missing parameter\>缺少參數。
+OsPlatformNotSupported | BadRequest (400)  | \<the client OS Platform\>此動作不支援作業系統平臺。
+ClientVersionNotSupported | BadRequest (400)  | \<The requested action\> 支援用戶端版本和更新版本 \<supported client version\> 。
+未經 授權 | 未經授權的 (401)  | 未經 授權 <br /><br />*附注：通常是由無效或過期的授權標頭所造成。*
+禁止 | 禁止 (403)  | 禁止 <br /><br />*附注：有效的權杖，但動作的許可權不足*。
 DisabledFeature | 禁止 (403)  | 未啟用租使用者功能。
-DisallowedOperation | 禁止 (403)  | {不允許的作業及原因}。
+DisallowedOperation | 禁止 (403)  | \<the disallowed operation and the reason\>.
 NotFound | 找不到 (404)  | 找不到一般錯誤訊息。
-ResourceNotFound | 找不到 (404)  | Resource {找不到要求的資源}。
-InternalServerError | 內部伺服器錯誤 (500)  |  (沒有錯誤訊息，請重試此作業，或與我們聯繫（如果它未解決）) 
-
-## <a name="body-parameters-are-case-sensitive"></a>主體參數區分大小寫
-
-提交的主體參數目前是區分大小寫的。
-<br>如果您遇到 **InvalidRequestBody** 或 **MissingRequiredParameter** 錯誤，這可能是由錯誤的參數大寫或小寫字母所導致。
-<br>建議您複查 API 檔頁面，並檢查提交的參數是否符合相關的範例。
-
-## <a name="correlation-request-id"></a>關聯要求識別碼
-
-每個錯誤回應都包含一個用於追蹤的唯一識別碼參數。
-<br>此參數的屬性名稱為 "target"。
-<br>當您聯繫我們有關錯誤的資訊時，附加此識別碼會協助找出問題的根本原因。
+ResourceNotFound | 找不到 (404)  | \<the requested resource\>找不到資源。
+InternalServerError | 內部伺服器錯誤 (500)  | *附注：沒有錯誤訊息，請重試作業，或與 Microsoft 聯繫（如果它未解決）*
 
 ## <a name="examples"></a>範例
 
@@ -91,7 +75,6 @@ InternalServerError | 內部伺服器錯誤 (500)  |  (沒有錯誤訊息，請�
 }
 ```
 
-
 ```json
 {
     "error": {
@@ -102,3 +85,20 @@ InternalServerError | 內部伺服器錯誤 (500)  |  (沒有錯誤訊息，請�
 }
 ```
 
+## <a name="body-parameters"></a>Body 參數
+
+> [!IMPORTANT]
+> 主體參數會區分大小寫。
+
+如果您遇到 *InvalidRequestBody* 或 *MissingRequiredParameter* 錯誤，可能是因為鍵入錯誤所造成。 請複查 API 檔，並檢查提交的參數是否符合相關的範例。
+
+## <a name="tracking-id"></a>追蹤識別碼
+
+每個錯誤回應都包含一個用於追蹤的唯一識別碼參數。 此參數的屬性名稱為 *target*。 當您聯繫我們有關錯誤的資訊時，附加此識別碼會協助我們找出問題的根本原因。
+
+## <a name="related-articles"></a>相關文章
+
+- [Microsoft 365 Defender APIs 概述](api-overview.md)
+- [支援的 Microsoft 365 Defender API](api-supported.md)
+- [存取 Microsoft 365 Defender APIs](api-access.md)
+- [深入瞭解 API 限制和授權](api-terms.md)

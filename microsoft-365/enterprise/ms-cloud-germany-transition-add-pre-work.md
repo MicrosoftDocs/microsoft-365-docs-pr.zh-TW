@@ -3,7 +3,7 @@ title: 從 Microsoft Cloud Deutschland 進行遷移的準備工作
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/11/2020
+ms.date: 12/18/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud 德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的準備工作。
-ms.openlocfilehash: 1bb6a1b80da462da2218f32fbbc2899ae651a3ec
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 107447226b9b75f371e23f8dd06ec29860571c63
+ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688452"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "49717028"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 進行遷移的準備工作
 
@@ -115,10 +115,11 @@ ms.locfileid: "49688452"
 
 | 步驟 (s)  | 描述 | 適用於 | 影響 |
 |:-------|:-----|:-------|:-------|
+| 新增單一登入 (SSO) 至現有的信賴憑證者信任，並停用 AD FS 中繼資料自動更新的識別碼。 | 開始遷移之前，必須先將識別碼新增至 AD FS 信賴憑證者信任。 若要避免意外移除信賴憑證方識別碼，請停用中繼資料更新的自動更新。 <br><br> 在 AD FS 伺服器上執行下列命令： <br> `Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:microsoftonline.de -Identifier @('urn:federation:microsoftonline.de','https://login.microsoftonline.de/extSTS.srf','https://login.microsoftonline.de') -AutoUpdate $False` | 同盟驗證組織 | 必要的動作。 Inaction 會在遷移期間產生服務影響。  |
 | 為全域 Azure AD 端點產生信賴憑證者信任。 | 客戶必須手動建立信賴憑證者信任 (RPT) 到 [全域](https://nexus.microsoftonline-p.com/federationmetadata/2007-06/federationmetadata.xml) 端點。 方法是透過 GUI 新增 RPT，方法是利用全域同盟中繼資料 URL，然後使用 [AZURE AD RPT 宣告規則](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator#:~:text=%20Azure%20AD%20RPT%20Claim%20Rules%20%201,Azure%20AD.%20This%20will%20be%20what...%20More%20) (于 AD FS 說明中) 產生宣告規則並將其匯入 RPT。 | 同盟驗證組織 | 必要的動作。 Inaction 會在遷移期間產生服務影響。 |
 |||||
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 開始：
 

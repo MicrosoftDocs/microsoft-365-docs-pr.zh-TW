@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 63eab8c44651bfc2865e9bf6c577c1ebe13381fc
-ms.sourcegitcommit: 21b0ea5715e20b4ab13719eb18c97fadb49b563d
+ms.openlocfilehash: f151f02af695eb54eaf8f4f97936f4985fc7f8c0
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49624763"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719199"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -43,7 +43,7 @@ ms.locfileid: "49624763"
 
 本節不包含準備目標目錄中 MailUser 使用者物件所需的特定步驟，也不會包含用於提交遷移批次的範例命令。 請參閱 [準備目標使用者物件以供遷移](#prepare-target-user-objects-for-migration) 以取得此資訊。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 跨承租人信箱移動功能需要 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) 才能建立租使用者對特定的 Azure 應用程式，以安全地儲存和存取憑證/機密，以供從一個租使用者對另一個租使用者進行驗證及授權，並移除在承租人間共用憑證/機密的任何需求。 
 
@@ -99,20 +99,20 @@ ms.locfileid: "49624763"
 
     | 參數 | 值 | 必要或選用
     |---------------------------------------------|-----------------|--------------|
-    | -ResourceTenantDomain                       | 來源租使用者網域，例如 fabrikam.onmicrosoft.com。 | 必要 |
+    | -TargetTenantDomain                         | 目標租使用者網域，例如 contoso \. onmicrosoft.com。 | 必要 |
+    | -ResourceTenantDomain                       | 來源租使用者網域，例如 fabrikam \. onmicrosoft.com。 | 必要 |
     | -ResourceTenantAdminEmail                   | 來源承租人管理員的電子郵件地址。 這是來源承租人系統管理員，會同意使用從目標系統管理員傳送的信箱遷移應用程式。這是將會收到該應用程式之電子郵件邀請的系統管理員。 | 必要 |
-    | -TargetTenantDomain                         | 目標租使用者網域，例如 contoso.onmicrosoft.com。 | 必要 |
     | -ResourceTenantId                           | 來源承租人組織識別碼 (GUID) 。 | 必要 |
     | -SubscriptionId                             | 用於建立資源的 Azure 訂閱。 | 必要 |
     | -ResourceGroup                              | 包含或將要包含金鑰存放區之 Azure 資源組名稱。 | 必要 |
     | -KeyVaultName                               | Azure Key Vault 實例，用來儲存您的信箱遷移應用程式憑證/機密。 | 必要 |
     | -CertificateName                            | 在金鑰保管中產生或搜尋憑證時的憑證名稱。 | 必要 |
     | -CertificateSubject                         | Azure 金鑰保存庫憑證主體名稱，例如 CN = contoso_fabrikam。 | 必要 |
-    | -ExistingApplicationId                      | 若已建立郵件遷移應用程式，則使用該應用程式。 | Optional |
+    | -ExistingApplicationId                      | 若已建立郵件遷移應用程式，則使用該應用程式。 | 選用 |
     | -AzureAppPermissions                        | 指定給信箱遷移應用程式所需的許可權，例如 Exchange 或 Msgraph-sdk-ios-nxoauth2-adapter (Exchange 以移動信箱，Msgraph-sdk-ios-nxoauth2-adapter 用於使用此應用程式，將同意連結邀請傳送至資源租使用者) 。 | 必要 |
-    | -UseAppAndCertGeneratedForSendingInvitation | 使用為遷移所建立的應用程式來傳送對來源承租人系統管理員的「同意」連結邀請的參數。如果不存在，將會提示目標管理員的認證連線至 Azure 邀請管理員，並以目標系統管理員身分傳送邀請。 | Optional |
-    | -KeyVaultAuditStorageAccountName            | 儲存主要存放區之審核記錄的儲存體帳戶。 | Optional |
-    | -KeyVaultAuditStorageResourceGroup          | 包含儲存金鑰 Vault 審核記錄的儲存帳戶的資源群組。 | Optional |
+    | -UseAppAndCertGeneratedForSendingInvitation | 使用為遷移所建立的應用程式來傳送對來源承租人系統管理員的「同意」連結邀請的參數。如果不存在，將會提示目標管理員的認證連線至 Azure 邀請管理員，並以目標系統管理員身分傳送邀請。 | 選用 |
+    | -KeyVaultAuditStorageAccountName            | 儲存主要存放區之審核記錄的儲存體帳戶。 | 選用 |
+    | -KeyVaultAuditStorageResourceGroup          | 包含儲存金鑰 Vault 審核記錄的儲存帳戶的資源群組。 | 選用 |
     ||||
 
     >[!Note]
@@ -187,10 +187,10 @@ ms.locfileid: "49624763"
     | 參數 | 值 |
     |-----|------|
     | -SourceMailboxMovePublishedScopes | 來源租使用者為屬於遷移範圍內之身分識別/信箱所建立的已啟用郵件功能的安全性群組。 |
-    | -ResourceTenantDomain | 來源租使用者功能變數名稱，例如 fabrikam.onmicrosoft.com。 |
-    | -TargetTenantDomain | 目標租使用者功能變數名稱，例如 contoso.onmicrosoft.com。 |
+    | -ResourceTenantDomain | 來源租使用者功能變數名稱，例如 fabrikam \. onmicrosoft.com。 |
     | -ApplicationId | 用於遷移之應用程式的 Azure 應用程式識別碼 (GUID) 。 可透過 Azure 入口網站取得的應用程式識別碼 (Azure AD、企業應用程式、應用程式名稱、應用程式識別碼) 或包含在您的邀請電子郵件中。  |
-    | -TargetTenantId | 目標租使用者的租使用者識別碼。 例如，contoso.onmicrosoft.com 租使用者的 Azure AD 租使用者識別碼。 |
+    | -TargetTenantDomain | 目標租使用者功能變數名稱，例如 contoso \. onmicrosoft.com。 |
+    | -TargetTenantId | 目標租使用者的租使用者識別碼。 例如，contoso onmicrosoft.com 租使用者的 Azure AD 租使用者識別碼 \. 。 |
     |||
 
     範例如下。
@@ -279,11 +279,12 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
 遷移的使用者必須存在於目標承租人和 Exchange Online 系統 (中，MailUsers) 會以特定屬性標示以啟用跨承租人的移動）。 系統會針對未在目標租使用者中正確設定的使用者，移動系統會失敗。 下列各節將詳細說明目標租使用者的 MailUser 物件需求。
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
   
 您必須確定在目標群組織中設定下列物件和屬性。  
 
 1. 對於從來源組織移動的任何信箱，您必須在目標群組織中布建 MailUser 物件： 
+
    - 目標 MailUser 必須具有來自來源信箱的這些屬性，或是使用新的 User 物件進行指派：
       - ExchangeGUID (從源到目標) 的直接流程–信箱 GUID 必須相符。 若目標物件不存在，移動程式將不會繼續進行。 
       - ArchiveGUID 從來源到目標)  (直接流程–封存 GUID 必須相符。 若目標物件不存在，移動程式將不會繼續進行。  (只有當來源信箱啟用封存) 時，才需要此。 
@@ -293,40 +294,40 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
       - TargetAddress/ExternalEmailAddress – MailUser 會參考來源承租人中主控的使用者目前信箱 (例如 user@contoso.onmicrosoft.com) 。 指派此值時，請確認您具有/也指派 PrimarySMTPAddress，否則此值會設定 PrimarySMTPAddress 會造成移動失敗。 
       - 您無法從來源信箱將舊版 smtp proxy 位址新增至目標 MailUser。 例如，您無法在 fabrikam.onmicrosoft.com 租使用者物件) 中的 MEU 上維護 contoso.com。 網域只與一個 Azure AD 或 Exchange Online 租使用者相關聯。
  
-    範例 **目標** MailUser 物件：
+     範例 **目標** MailUser 物件：
  
-    | 屬性             | 值                                                                                                                    |
-    |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
-    | 別名                 | LaraN                                                                                                                    |
-    | RecipientType         | MailUser                                                                                                                 |
-    | RecipientTypeDetails  | MailUser                                                                                                                 |
-    | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
-    | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
-    | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
-    | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
-    | LegacyExchangeDN      | /o = First Organization/ou=Exchange 系統管理群組                                                                   |
-    |                       |  (FYDIBOHF23SPDLT) /cn = 收件者/cn = 74e5385fce4b46d19006876949855035Lara                                                  |
-    | EmailAddresses        | x500：/o = First Organization/ou=Exchange 系統管理群組 (FYDIBOHF23SPDLT) /cn = 收件者/cn = d11ec1a2cacd4f81858c8190  |
-    |                       | 7273f1f9-Lara                                                                                                            |
-    |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
-    |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
-    |||
+     | 屬性             | 值                                                                                                                    |
+     |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
+     | 別名                 | LaraN                                                                                                                    |
+     | RecipientType         | MailUser                                                                                                                 |
+     | RecipientTypeDetails  | MailUser                                                                                                                 |
+     | UserPrincipalName     | LaraN@northwintraders.onmicrosoft.com                                                                                    |
+     | PrimarySmtpAddress    | Lara.Newton@northwind.com                                                                                                |
+     | ExternalEmailAddress  | SMTP:LaraN@contoso.onmicrosoft.com                                                                                       |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                     |
+     | LegacyExchangeDN      | /o = First Organization/ou=Exchange 系統管理群組                                                                   |
+     |                       |  (FYDIBOHF23SPDLT) /cn = 收件者/cn = 74e5385fce4b46d19006876949855035Lara                                                  |
+     | EmailAddresses        | x500：/o = First Organization/ou=Exchange 系統管理群組 (FYDIBOHF23SPDLT) /cn = 收件者/cn = d11ec1a2cacd4f81858c8190  |
+     |                       | 7273f1f9-Lara                                                                                                            |
+     |                       | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                              |
+     |                       | SMTP:Lara.Newton@northwind.com                                                                                           |
+     |||
 
-   **來源** 信箱物件範例：
+     **來源** 信箱物件範例：
 
-   | 屬性             | 值                                                                    |
-   |-----------------------|--------------------------------------------------------------------------|
-   | 別名                 | LaraN                                                                    |
-   | RecipientType         | UserMailbox                                                              |
-   | RecipientTypeDetails  | UserMailbox                                                              |
-   | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
-   | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
-   | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
-   | LegacyExchangeDN      | /o = First Organization/ou=Exchange 系統管理群組                   |
-   |                       |  (FYDIBOHF23SPDLT) /cn = 收件者/cn = d11ec1a2cacd4f81858c81907273f1f9Lara  |
-   | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
-   |                       | SMTP:Lara.Newton@contoso.com          |
-   |||
+     | 屬性             | 值                                                                    |
+     |-----------------------|--------------------------------------------------------------------------|
+     | 別名                 | LaraN                                                                    |
+     | RecipientType         | UserMailbox                                                              |
+     | RecipientTypeDetails  | UserMailbox                                                              |
+     | UserPrincipalName     | LaraN@contoso.onmicrosoft.com                                            |
+     | PrimarySmtpAddress    | Lara.Newton@contoso.com                                                  |
+     | ExchangeGuid          | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                     |
+     | LegacyExchangeDN      | /o = First Organization/ou=Exchange 系統管理群組                   |
+     |                       |  (FYDIBOHF23SPDLT) /cn = 收件者/cn = d11ec1a2cacd4f81858c81907273f1f9Lara  |
+     | EmailAddresses        | smtp:LaraN@contoso.onmicrosoft.com 
+     |                       | SMTP:Lara.Newton@contoso.com          |
+     |||
 
    - 其他屬性可能會包含在 Exchange 混合式寫回中。 如果不是，則應該包含這些使用者。 
    - msExchBlockedSendersHash –從用戶端向內部部署 Active Directory 中寫入線上安全及封鎖的寄件者資料。
@@ -350,7 +351,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
     > [!Note]
     > 當您在信箱或 MailUser 物件上套用授權時，會清理所有 SMTP 類型 proxyAddresses，以確保 Exchange EmailAddresses 陣列中只包含已驗證的網域。 
 
-5. 您必須確定目標 MailUser 沒有與來源 ExchangeGuid 不符的先前 ExchangeGuid。 如果目標 MEU 先前已授權 Exchange Online 並已布建信箱，可能會發生這種情況。 若目標 MailUser 先前授權或具有與來源 ExchangeGuid 不符的 ExchangeGuid，您必須執行雲端 MEU 的清除。 針對這些雲端 Meu，您可以執行 `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` 命令。  
+5. 您必須確定目標 MailUser 沒有與來源 ExchangeGuid 不符的先前 ExchangeGuid。 如果目標 MEU 先前已授權 Exchange Online 並已布建信箱，可能會發生這種情況。 若目標 MailUser 先前授權或具有與來源 ExchangeGuid 不符的 ExchangeGuid，您必須執行雲端 MEU 的清除。 針對這些雲端 Meu，您可以執行 `Set-User <identity> -PermanentlyClearPreviousMailboxInfo` 。  
 
     > [!Caution]
     > 此程式不可逆。 如果物件有 softDeleted 信箱，就無法在此點之後還原。 不過，您可以將正確的 ExchangeGuid 與目標物件進行同步處理，MRS 會將來源信箱連線到新建立的目標信箱。  (在新參數上參照 EHLO 博客。 )   
@@ -508,7 +509,7 @@ Exchange 信箱使用 MRS 手工 MailUser 建立原始來源信箱上的 targetA
 
 信箱許可權包括「代理傳送者」和「信箱存取」： 
 
-- 「代理傳送者」 (AD： publicDelegates) 儲存收件者的 DN，以存取使用者的信箱做為代理人。 此值儲存在 Active Directory 中，而且目前不會移動做為信箱轉換的一部分。 如果來源信箱已設定 publicDelegates，當使用命令的目標環境中的 [MEU 至信箱] 轉換完成時，您必須 restamp 目標信箱上的 publicDelegates `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` 。 
+- 「代理傳送者」 (AD： publicDelegates) 儲存收件者的 DN，以存取使用者的信箱做為代理人。 此值儲存在 Active Directory 中，而且目前不會移動做為信箱轉換的一部分。 如果來源信箱已設定 publicDelegates，您必須在目標信箱上 restamp publicDelegates，只要在目標環境中執行 MEU 至信箱轉換，便會執行 `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>` 。 
  
 - 當主體和代理人都移至目標系統時，信箱中儲存的信箱許可權會隨著信箱一起移動。 例如，使用者 TestUser_7 會被授與租使用者 SourceCompany.onmicrosoft.com 中的信箱 TestUser_8 FullAccess。 信箱移動完成 TargetCompany.onmicrosoft.com 後，就會在目標目錄中設定相同的許可權。 在來源與目標承租人中使用 *Get-MailboxPermission* TestUser_7 的範例如下所示。 Exchange Cmdlet 會據此為來源和目標加上首碼。 
  
@@ -656,7 +657,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
    - 當 msExchRemoteRecipientType 設定為 8 (DeprovisionMailbox) 時，針對遷移到目標租使用者的內部部署 MailUsers，Azure 中的 proxy 清理邏輯會移除 nonowned 網域，並將 primarySMTP 重設為擁有的網域。 清除內部部署 MailUser 中的 [msExchRemoteRecipientType]，便不再套用 proxy 清理邏輯。 <br/><br>以下是包括 Exchange Online 之一組可能的完整服務方案。
 
-   | Name                                              |
+   | 姓名                                              |
    |---------------------------------------------------|
    | 高級 eDiscovery 儲存 (500GB)                |
    | 客戶加密箱                                  |
