@@ -366,7 +366,7 @@
           items:
             - name: Exchange Online Protection
               items:
-                - name: 在 EOP 中設定預設的防網路釣魚原則
+                - name: 在 EOP 中設定反網路釣魚原則
                   href: ./office-365-security/configure-anti-phishing-policies-eop.md
                 - name: '設定獨立版 EOP 將垃圾郵件傳送至 [垃圾郵件] 資料夾'
                   href: ./office-365-security/ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md

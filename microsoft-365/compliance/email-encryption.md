@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 比較 Microsoft 365 加密選項，包括 Office 365 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並了解傳輸層安全性 (TLS)。
-ms.openlocfilehash: 25568d4e39c2fe7ca2dea214276be5d7f6986518
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: e1f222595479ce525b38ab97971c998f77c78581
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663018"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709577"
 ---
 # <a name="email-encryption"></a>電子郵件加密
 
-本文件會比較 Microsoft 365 中的加密選項，包括 Office 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並介紹傳輸層安全性 (TLS)。
+本文件會比較 Microsoft 365 中的加密選項，包括 Office 365 郵件加密 (OME)、S/MIME、資訊版權管理 (IRM)，並介紹傳輸層安全性 (TLS)。
   
 Microsoft 365 提供多種加密選項，有助於滿足您對電子郵件安全性的商務需求。 本文提供在 Office 365 中加密電子郵件的三個方式。 如果您想要深入了解 Office 365 中的所有安全性功能，請瀏覽 [Office 365 信任中心](https://go.microsoft.com/fwlink/p/?LinkID=282470)。 本文介紹三種加密類型，可供 Microsoft 365 系統管理員用於協助保護 Office 365 中的電子郵件：
   
@@ -38,7 +38,7 @@ Microsoft 365 提供多種加密選項，有助於滿足您對電子郵件安全
 
 - 資訊版權管理 (IRM)。
 
-## <a name="what-is-email-encryption-and-how-does-microsoft-365-use-it"></a>什麼是電子郵件加密，以及 Microsoft 365 如何使用它？
+## <a name="how-microsoft-365-uses-email-encryption"></a>Microsoft 365 如何使用電子郵件加密
 
 加密是將資訊編碼的程序，以便只有經過授權的收件者能解碼並使用資訊。 Microsoft 365 使用兩個方式來加密：在服務中，以及以自訂控制項的形式。 在服務中，Microsoft 365 會預設使用加密；您不需要進行任何設定。 例如，Microsoft 365 使用傳輸層安全性 (TLS) 來加密兩個伺服器間的連線或工作階段。 
   
@@ -60,7 +60,7 @@ Microsoft 365 提供多種加密選項，有助於滿足您對電子郵件安全
   
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>比較 Office 365 中提供的電子郵件加密選項
 
-||![OME 的說明概念圖](../media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![IRM 的說明概念圖](../media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![SMIME 的說明概念圖](../media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|
+|電子郵件加密技術|![OME 的說明概念圖](../media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)|![IRM 的說明概念圖](../media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)|![SMIME 的說明概念圖](../media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)|
 |:-----|:-----|:-----|:-----|
 |這是什麼？|Office 365 郵件加密 (OME) 是內建於 Azure 版權管理 (Azure RMS) 的服務，可讓您將加密的電子郵件傳送給組織內部或外部的人，無論目的地電子郵件地址為何 (Gmail、Yahoo! Mail、Outlook.com 等)。 <br/> 身為系統管理員，您可以設定用以定義加密條件的傳輸規則。 當使用者傳送的郵件符合某規則時，會自動套用加密。 <br/> 若要檢視加密的郵件，收件者可以取得單次密碼、登入 Microsoft 帳戶、或登入工作或學校相關聯的 Office 365 帳戶。 收件者也可以傳送加密的回覆。 他們不需要 Microsoft 365 訂閱，即可檢視加密的郵件或傳送加密的回覆。|IRM 是加密解決方案，也可對電子郵件套用使用限制。 這有助於防止敏感資訊被未經授權的人員列印、轉寄或複製。 <br/> Microsoft 365 中的 IRM 功能使用 Azure 版權管理 (Azure RMS)。|S/MIME 是一種憑證型加密解決方案，可讓您對郵件進行加密及數位簽署。 郵件加密有助於確保只有預定的收件者可以開啟並閱讀郵件。 數位簽章可協助收件者驗證寄件者的身分。 <br/> 數位簽章和郵件加密之所以可行，皆因為使用了唯一數位憑證，此憑證包含用於驗證數位簽章及加密或解密郵件的金鑰。 <br/> 若要使用 S/MIME，您必須記錄每位收件者的公開金鑰。 收件者必須維護自己的私密金鑰，並妥善保護。 如果收件者的私密金鑰受到危害，收件者必須取得新的私密金鑰，並轉發公開金鑰給所有可能的寄件者。|
 |能做什麼？|OME： <br/> 將傳送給內部或外部收件者的郵件加密。 <br/>  可讓使用者將加密的郵件傳送至任何電子郵件地址，包括 Outlook.com、Yahoo! Mail 和 Gmail。 <br/>  可讓身為系統管理員的您自訂電子郵件檢視入口網站，以反映您組織的品牌。 <br/> Microsoft 安全地管理及儲存金鑰，因此您不需要勞心。 <br/> 只要加密的郵件可以在瀏覽器中開啟 (以 HTML 附件傳送)，就不需要任何特殊的用戶端軟體。|IRM： <br/> 利用加密和使用限制為電子郵件和附件提供線上和離線保護。 <br/> 可讓身為系統管理員的您能夠設定傳輸規則或 Outlook 保護規則，以自動將 IRM 套用至選取的郵件。 <br/> 可讓使用者以手動方式在 Outlook 或 Outlook 網頁版 (先前稱為 Outlook Web App) 中套用範本。|S/MIME 以數位簽章解決寄件者驗證，以加密解決郵件機密性。|

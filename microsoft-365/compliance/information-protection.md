@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 實施 Microsoft 資訊保護 (MIP) 可協助您保護敏感性資訊，無論這些資料儲存在某處在或傳輸中。
-ms.openlocfilehash: 59f57c920f2b753994f2335a6f2ed9ac5b7b77d1
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 2a1ec47ce888dc6d31868d65f9c4c113fa9b968c
+ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613085"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "49709505"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>請參閱 Microsoft 365 中的 Microsoft 資訊保護。
 
@@ -59,7 +59,7 @@ MIP 功能隨附於 Microsoft 365 合規性中，並提供工具以 [了解您�
 
 |功能|需要解決的問題是什麼？|快速入門|
 |:------|:------------|---------------------|:----------------------------|
-|[敏感度標籤](sensitivity-labels.md)| 應用程式、服務和裝置上的單一解決方案，可讓您的資料在組織內部和外部傳輸時進行標記和保護 <br /><br />範例案例：[在 Power BI 中套用和檢視敏感度標籤，並在匯出資料時加以保護](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[開始使用敏感度標籤](get-started-with-sensitivity-labels.md) |
+|[敏感度標籤](sensitivity-labels.md)| 應用程式、服務和裝置上的單一解決方案，可讓您的資料在組織內部和外部傳輸時進行標記和保護 <br /><br />範例案例：[在 Power BI 中套用和檢視標籤，並在服務外儲存該資料時加以保護](https://docs.microsoft.com/power-bi/admin/service-security-apply-data-sensitivity-labels)|[開始使用敏感度標籤](get-started-with-sensitivity-labels.md) |
 |[Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| 針對 Windows 電腦，擴充敏感度標籤以瞭解其他功能，包括從檔案瀏覽器和 PowerShell 中標記和保護所有檔案類型。<br /><br /> 範例其他功能：[Azure 資訊保護統一標記用戶端的自訂設定](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure 資訊保護統一標籤用戶端系統管理員指南](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[雙重金鑰加密](double-key-encryption.md)| 在所有情況下，只有您能解密受保護的內容，或因為法規要求，您必須在地理邊界內持有加密金鑰 | [部署雙重金鑰加密](double-key-encryption.md#deploy-dke)|
 |[Office 365 郵件加密 (OME)](ome.md)| 將傳送給任何裝置上任何使用者的電子郵件訊息和附加文件加密，以便只有授權的收件者能讀取電子郵件中的資訊  <br /><br />範例案例：[撤銷由進階郵件加密所加密的電子郵件](revoke-ome-encrypted-mail.md) | [設定全新的郵件加密功能](set-up-new-message-encryption-capabilities.md)|
