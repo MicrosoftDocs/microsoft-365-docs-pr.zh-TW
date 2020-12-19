@@ -12,12 +12,12 @@ ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
 ROBOTS: NOINDEX
-ms.openlocfilehash: 9709bec9b6e59ef05903f9c04909c796eb4127f4
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 45469e17870a58966a42a13116b6ba645071722c
+ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683408"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "49698528"
 ---
 # <a name="get-started-driving-adoption-of-topic-experiences-preview"></a>開始促進主題經驗 (預覽的採用) 
 
@@ -33,7 +33,7 @@ ms.locfileid: "49683408"
 - **識別**：使用 Microsoft Graph 和人工智慧 (AI) 知識和人員 (主題、技能，) 已識別並自動組織成相關主題。 SharePoint 內容會以安全性內容編制索引。
 - **分機**：使用 Microsoft Graph 內容連接器 (即將) ，您可以從外部服務和資料存放庫中攝取知識。
 
-如需詳細資訊，您可以查看簡介的 [概述](knowledge-management-overview.md) 。
+如需詳細資訊，您可以查看簡介的 [概述](topic-experiences-overview.md) 。
 
 請記住下列事項：
 
