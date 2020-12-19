@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender APIs 概述
 description: 深入瞭解 Microsoft 365 Defender 中可用的 APIs
-keywords: api，api，綜述，事件，事件，威脅搜尋
+keywords: api，api，綜述，事件，事件，威脅搜尋，microsoft 365 defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,35 +19,46 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 75a5853e7128667420819c84fbc3c50b07d669b4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 1a75a561e60c05208e8ea302505f9644ac0bc044
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845005"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719187"
 ---
-# <a name="overview-of--microsoft-365-defender-apis"></a><span data-ttu-id="c618a-104">Microsoft 365 Defender APIs 概述</span><span class="sxs-lookup"><span data-stu-id="c618a-104">Overview of  Microsoft 365 Defender APIs</span></span>
+# <a name="overview-of--microsoft-365-defender-apis"></a><span data-ttu-id="a5313-104">Microsoft 365 Defender APIs 概述</span><span class="sxs-lookup"><span data-stu-id="a5313-104">Overview of  Microsoft 365 Defender APIs</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
+<span data-ttu-id="a5313-105">適用於：</span><span class="sxs-lookup"><span data-stu-id="a5313-105">**Applies to:**</span></span>
 
-<span data-ttu-id="c618a-105">適用於：</span><span class="sxs-lookup"><span data-stu-id="c618a-105">**Applies to:**</span></span>
-- <span data-ttu-id="c618a-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="c618a-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="a5313-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a5313-106">Microsoft 365 Defender</span></span>
 
+> [!IMPORTANT]
+> <span data-ttu-id="a5313-107">一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。</span><span class="sxs-lookup"><span data-stu-id="a5313-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="a5313-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="a5313-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
->[!IMPORTANT] 
-><span data-ttu-id="c618a-107">一些與 prereleased 產品相關的資訊，在正式發行之前，可能會受到大量修改。</span><span class="sxs-lookup"><span data-stu-id="c618a-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="c618a-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span><span class="sxs-lookup"><span data-stu-id="c618a-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+<span data-ttu-id="a5313-109">Microsoft 365 Defender 是以整合就緒平臺為基礎。</span><span class="sxs-lookup"><span data-stu-id="a5313-109">Microsoft 365 Defender is built on top of an integration-ready platform.</span></span>
 
-<span data-ttu-id="c618a-109">Microsoft 365 Defender 解決方案是以整合就緒平臺為基礎。</span><span class="sxs-lookup"><span data-stu-id="c618a-109">Microsoft 365 Defender solution is built on top of an integration-ready platform.</span></span> 
+<span data-ttu-id="a5313-110">使用 Microsoft 365 Defender APIs，根據共用的事件和高級搜尋表來自動化工作流程。</span><span class="sxs-lookup"><span data-stu-id="a5313-110">Use the Microsoft 365 Defender APIs to automate workflows based on the shared incident and advanced hunting tables.</span></span>
 
-<span data-ttu-id="c618a-110">Lop-exo 層級的 Microsoft 365 Defender APIs 可讓您根據共用的事件和高級搜尋表格來自動化工作流程。</span><span class="sxs-lookup"><span data-stu-id="c618a-110">The lop-level Microsoft 365 Defender APIs will enable you to automate workflows based on the shared incident and advanced hunting tables.</span></span>
+- <span data-ttu-id="a5313-111">**[結合的事件佇列](api-incident.md)** -著重于將完整的攻擊範圍和所有受影響的資產分組在事件 API 底下的重要事項。</span><span class="sxs-lookup"><span data-stu-id="a5313-111">**[Combined incidents queue](api-incident.md)** - Focus on what's critical by grouping the full attack scope and all impacted assets together under the incident API.</span></span>
 
-- <span data-ttu-id="c618a-111">**合併的事件佇列** -協助安全性專業人員著重于重要專案。</span><span class="sxs-lookup"><span data-stu-id="c618a-111">**Combined incidents queue** - Helps security professionals focus on what's critical.</span></span> <span data-ttu-id="c618a-112">協助確保完整的攻擊範圍和受影響的資產會組合在一起，並在事件 API 下及時呈現。</span><span class="sxs-lookup"><span data-stu-id="c618a-112">Helps to ensure that the full attack scope and impacted assets are grouped together and surfaced in a timely manner under the incident API.</span></span>
+- <span data-ttu-id="a5313-112">**[跨產品威脅搜尋](api-advanced-hunting.md)** -利用您的安全小組的組織知識，透過建立您自己的自訂查詢，以透過跨多個保護產品所收集的原始資料來進行保護，以尋找損害的跡象。</span><span class="sxs-lookup"><span data-stu-id="a5313-112">**[Cross-product threat hunting](api-advanced-hunting.md)** - Leverage your security team's organizational knowledge to hunt for signs of compromise, by creating your own custom queries to sift over raw data collected across multiple protection products.</span></span>
 
-- <span data-ttu-id="c618a-113">**跨產品威脅搜尋** -安全小組可以透過 APIs 透過各種保護產品所收集的原始資料來建立自己的自訂查詢，利用其獨特的組織知識來尋找損害的跡象。</span><span class="sxs-lookup"><span data-stu-id="c618a-113">**Cross-product threat hunting** - Security teams can leverage their unique organizational knowledge to hunt for signs of compromise by creating their own custom queries via APIs over the raw data collected by the various protection products.</span></span> 
+<span data-ttu-id="a5313-113">除了這些 Microsoft 365 Defender 特有的 APIs 之外，其他所有的安全性產品都會公開 [其他 APIs](api-articles.md) ，以協助您利用其獨特的功能。</span><span class="sxs-lookup"><span data-stu-id="a5313-113">Along with these Microsoft 365 Defender-specific APIs, each of our other security products expose [additional APIs](api-articles.md) to help you take advantage of their unique capabilities.</span></span>
 
-<span data-ttu-id="c618a-114">除了這組 APIs 之外，各項防護產品都會公開其他 APIs，以協助您根據各項產品功能創新。</span><span class="sxs-lookup"><span data-stu-id="c618a-114">In addition to these set of APIs, each of the various protection products expose additional APIs to help you innovate based on each product capability.</span></span>
+## <a name="learn-more"></a><span data-ttu-id="a5313-114">深入了解</span><span class="sxs-lookup"><span data-stu-id="a5313-114">Learn more</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="c618a-115">相關主題</span><span class="sxs-lookup"><span data-stu-id="c618a-115">Related topics</span></span>
-- [<span data-ttu-id="c618a-116">存取 Microsoft 威脅防護 APIs</span><span class="sxs-lookup"><span data-stu-id="c618a-116">Access the Microsoft Threat Protection APIs</span></span>](api-access.md)
-- [<span data-ttu-id="c618a-117">其他 API 資源</span><span class="sxs-lookup"><span data-stu-id="c618a-117">Other API resources</span></span>](api-articles.md)
+| <span data-ttu-id="a5313-115">**瞭解如何存取 APIs**</span><span class="sxs-lookup"><span data-stu-id="a5313-115">**Understand how to access the APIs**</span></span> |
+|-|
+| [<span data-ttu-id="a5313-116">深入瞭解 API 配額和授權</span><span class="sxs-lookup"><span data-stu-id="a5313-116">Learn about API quotas and licensing</span></span>](api-terms.md) |
+| [<span data-ttu-id="a5313-117">存取 Microsoft 365 Defender APIs</span><span class="sxs-lookup"><span data-stu-id="a5313-117">Access the Microsoft 365 Defender APIs</span></span>](api-access.md) |
+| <span data-ttu-id="a5313-118">**Build apps**</span><span class="sxs-lookup"><span data-stu-id="a5313-118">**Build apps**</span></span> |
+| [<span data-ttu-id="a5313-119">建立 "Hello world" 應用程式</span><span class="sxs-lookup"><span data-stu-id="a5313-119">Create a 'Hello world' app</span></span>](api-hello-world.md) |
+| [<span data-ttu-id="a5313-120">建立應用程式以代表使用者存取 Microsoft 365 Defender APIs</span><span class="sxs-lookup"><span data-stu-id="a5313-120">Create an app to access Microsoft 365 Defender APIs on behalf of a user</span></span>](api-create-app-user-context.md) |
+| [<span data-ttu-id="a5313-121">建立應用程式以存取沒有使用者的 Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a5313-121">Create an app to access Microsoft 365 Defender without a user</span></span>](api-create-app-web.md) |
+| [<span data-ttu-id="a5313-122">建立具有對 Microsoft 365 Defender APIs 的多承租人合作夥伴存取權的應用程式</span><span class="sxs-lookup"><span data-stu-id="a5313-122">Create an app with multi-tenant partner access to Microsoft 365 Defender APIs</span></span>](api-partner-access.md) |
+| <span data-ttu-id="a5313-123">**疑難排解及維護您的應用程式**</span><span class="sxs-lookup"><span data-stu-id="a5313-123">**Troubleshoot and maintain your apps**</span></span> |
+| [<span data-ttu-id="a5313-124">瞭解 API 錯誤代碼</span><span class="sxs-lookup"><span data-stu-id="a5313-124">Understand API error codes</span></span>](api-error-codes.md) |
+| [<span data-ttu-id="a5313-125">使用 Azure Key Vault 管理應用程式中的機密</span><span class="sxs-lookup"><span data-stu-id="a5313-125">Manage secrets in your apps with Azure Key Vault</span></span>](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [<span data-ttu-id="a5313-126">針對使用者登入執行 OAuth 2.0 授權</span><span class="sxs-lookup"><span data-stu-id="a5313-126">Implement OAuth 2.0 authorization for user sign in</span></span>](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
