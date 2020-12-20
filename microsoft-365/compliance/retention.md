@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 767e63c22d085696b53d74e3a4d6955bedec22dd
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: c405f2bf8d9700c9a0874ba9d921a290ae63de16
+ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709670"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49719343"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
@@ -276,7 +276,7 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 
 結果不是哪一個保留原則或單個保留標籤優先採用，而是項目被保留多長時間 (如果適用) 以及何時删除項目 (如果適用)。 這兩個動作是根據套用於項目的所有保留設定獨立計算的。
 
-例如，項目可能受一個為只删除動作設定的保留原則和另一個設定為保留然後删除的保留原則的約束。 要確定結果，此項只有一個保留動作和兩個刪除動作。 保留和删除可能相互衝突，並且這兩個删除動作的日期可能有衝突。
+例如，項目可能受一個為只删除動作設定的保留原則和另一個設定為保留然後删除的保留原則的約束。 因此，此項只有一個保留動作和兩個刪除動作。 保留和删除動作可能會彼此相互衝突，並且這兩個删除動作的日期可能有衝突。 若要達成結果，您必須套用保留原則。
 
 在高層級中，您可以確保保留永遠優先於刪除，然後最長的保留期間勝出。 這兩個簡單的規則總是决定項目將被保留多長時間。
 
