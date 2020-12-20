@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: bd7b4f78d37feddd7c66322460a6532a77045ba2
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: b05901ad8d42f481020178479df5d422fa68eb1a
+ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988665"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "49718496"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
@@ -32,7 +32,7 @@ Microsoft 365 中的[整合式稽核功能](search-the-audit-log-in-security-and
 > [!NOTE]
 > 進階稽核可供具有 Office 365 E5/G5 或 Microsoft 365 企業版 E5/G5 訂閱的組織使用。 此外，當進階稽核功能需要針對每位使用者進行授權時，您可以將 Microsoft 365 E5 合規性或 E5 電子文件探索和稽核附加元件授權指派給使用者，而針對稽核記錄和存取重要調查事件的長期保留也是如此。 如需有關授權的詳細資訊，請參閱 [Microsoft 365 安全性與合規性的授權指南](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit)。
 
-本文提供進階稽核功能的概觀。
+本文概述了 [進階稽核] 功能，並向您展示了如何為 [進階稽核] 設定使用者。
 
 ## <a name="long-term-retention-of-audit-logs"></a>長期保留稽核記錄
 
@@ -140,6 +140,26 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 所有組織一開始都會配置每分鐘 2,000 個要求的基準。 視組織的基座數和授權訂閱而定，此限制將會動態增加。 E5 組織可獲得的頻寬大約可達到非 E5 組織的兩倍。 最大頻寬也會有上限，以保護服務的健康情況。
 
 如需詳細資訊，請參閱 [Office 365 管理活動 API 參考](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling)中的「API 節流」一節。
+
+## <a name="set-up-advanced-audit-for-users"></a>為使用者設置進階稽核
+
+進階稽核功能，如記錄重要事件 (如 MailItemsAccessed 和 Send) 功能，需要為使用者指派適當的 E5 授權。 此外，必須為這些使用者啟用 [進階稽核] 應用程式/服務方案。 要驗證 [進階稽核] 應用程式是否已指派給使用者，請對每個使用者執行以下步驟：
+
+1. 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/Adminportal)中，移至 **[使用者]** > **[作用中的使用者]**，然後選取使用者。
+
+2. 在 [使用者內容] 飛出頁面上，按一下 **[授權和應用程式]**。
+
+3. 在 **[授權]** 區段，驗證是否為使用者指派了 E5 授權。
+
+4. 展開 **[應用程式]** 區段，並驗證是否選中了 **[Microsoft 365 進階稽核]** 核取方塊。
+
+5. 如果沒有選取該核取方塊，請選取它，然後按一下 **[儲存變更]**。
+
+   將在 24 小時內開始記錄使用者的 MailItemsAccessed、Send 和其他關鍵事件的稽核記錄。
+
+針對使用以群組為基礎授權之指派授權至使用者群組的組織，請務必關閉該群組的 Microsoft 365 進階稽核授權指派。 儲存變更之後，請確認已關閉群組的 Microsoft 365 進階稽核。 然後重新開啟群組的授權指派。 如需以群組為基礎授權的相關指示，請參閱[在 Azure Active Directory 中以群組成員資格指派授權給使用者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) (英文)。
+
+此外，如果您已自訂登入到使用者郵箱或共用郵箱的郵箱動作，則不會在這些郵箱上自動稽核新的預設郵箱動作 (如 MailItemsAccessed)。 有關變更為每個登入類型稽核的郵箱動作之資訊，請參閱[管理郵箱稽核](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default)中的 [變更或還原預設記錄的郵箱動作] 一節。
 
 ## <a name="faqs-for-advanced-audit"></a>進階稽核的常見問題集
 
