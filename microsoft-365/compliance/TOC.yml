@@ -172,6 +172,8 @@
           href: office-365-service-encryption.md
         - name: 客戶金鑰
           items:
+            - name: 租用戶等級的 Microsoft 365 客戶金鑰 (公開預覽)
+              href: customer-key-tenant-level.md
             - name: Office 365 中的客戶金鑰服務加密
               href: customer-key-overview.md
             - name: 設定 Office 365 客戶金鑰
