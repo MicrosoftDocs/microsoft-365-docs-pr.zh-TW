@@ -20,12 +20,12 @@ description: 深入瞭解 Microsoft Defender for Office 365 中的自動調查�
 ms.date: 09/29/2020
 ms.custom:
 - air
-ms.openlocfilehash: 75550352170841b1e6a26512c9e857a7c9e3acd3
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 74fe6f66d0970fe2725caba7b51bd8a95a34159e
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616137"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725162"
 ---
 # <a name="remediation-actions-following-automated-investigation-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自動調查後續修正動作
 
@@ -59,7 +59,7 @@ ms.locfileid: "49616137"
 |電子郵件|使用者 [報告](enable-the-report-message-add-in.md) 未接的網路釣魚電子郵件|[使用者的報告所觸發的自動調查](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |電子郵件|大量反常 <br>  (最近的電子郵件數量超過上一個7-10 天的符合條件。 ) |自動調查不會產生特定的擱置中動作。 <p> 大量的反常威脅並非明確威脅，但只是最近一天的電子郵件磁片區（與過去的7-10 天相比）的指示。 雖然這可能表示潛在問題，但在惡意 verdicts 或手動複查電子郵件訊息/叢集時，需要確認。 請參閱 [尋找已傳遞的可疑電子郵件](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)。|
 |電子郵件|找不到威脅 <br>  (系統未找到任何根據檔、url 或分析電子郵件叢集 verdicts 的威脅。 ) |自動調查不會產生特定的擱置中動作。 <p> 調查完成之後發現和 [zapped](zero-hour-auto-purge.md) 的威脅不會反映在調查的數值結果中，但威脅 [瀏覽器](threat-explorer.md)中可查看此類威脅。|
-|使用者|使用者按一下了惡意 URL <br>  (流覽至後來發現為惡意的頁面的使用者，或使用者略過 [安全連結警告頁面](atp-safe-links.md#warning-pages-from-safe-links) 以取得惡意頁面。 ) |自動調查不會產生特定的擱置中動作。 <p> 使用威脅瀏覽器來 [查看有關 URLs 的資料，然後按一下 [verdicts](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict)]。 <p> 如果您的組織使用 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)，請考慮 [調查使用者](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) ，以判斷其帳戶是否遭到破壞。|
+|使用者|使用者按一下了惡意 URL <br>  (流覽至後來發現為惡意的頁面的使用者，或使用者略過 [安全連結警告頁面](atp-safe-links.md#warning-pages-from-safe-links) 以取得惡意頁面。 ) |自動調查不會產生特定的擱置中動作。 <p> 使用威脅瀏覽器來 [查看有關 URLs 的資料，然後按一下 [verdicts](threat-explorer.md#view-phishing-url-and-click-verdict-data)]。 <p> 如果您的組織使用 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)，請考慮 [調查使用者](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) ，以判斷其帳戶是否遭到破壞。|
 |使用者|使用者正在傳送惡意程式碼/網路釣魚|自動調查不會產生特定的擱置中動作。 <p> 使用者可能會報告惡意程式碼/網路釣魚，或可能有人在攻擊中 [哄騙使用者](anti-spoofing-protection.md) 。 使用 [威脅瀏覽器](threat-explorer.md) 來查看及處理包含 [惡意](threat-explorer-views.md#email--malware) 代碼或 [網路釣魚](threat-explorer-views.md#email--phish)的電子郵件。|
 |使用者|電子郵件轉寄 <br> 已設定 (信箱轉寄規則，可用於資料 exfiltration。 ) |移除轉移規則 <p> 使用 [郵件流程真知灼見](mail-flow-insights-v2.md)（包括 [自動轉寄的郵件報告](mfi-auto-forwarded-messages-report.md)），以查看更多有關轉寄電子郵件的詳細資訊。|
 |使用者|電子郵件委派規則 <br>  (使用者的帳戶已設定委派。 ) |移除委派規則 <p> 如果您的組織使用 [Microsoft Defender For Endpoint](https://docs.microsoft.com/windows/security/threat-protection/)，請考慮調查取得委派許可權 [的使用者](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user) 。|

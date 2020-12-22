@@ -20,12 +20,12 @@ ms.topic: conceptual
 ms.date: 10/09/2020
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: d219895767919c2a0658f8b83150fe6edde01b5b
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: fb588320461ab44d1ce0f10c0776bcc9ee61b551
+ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615549"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "49724399"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新功能
 
@@ -34,14 +34,14 @@ ms.locfileid: "49615549"
 
 適用於：
 
-- [Microsoft Defender for Office 365](office-365-atp.md)
+- [適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
 
 本文列出最新版本 Microsoft Defender for Office 365 的新功能。 目前在預覽中的功能會以 **(預覽)** 表示。
 
 > [!TIP]
 > 還沒有 Microsoft Defender for Office 365 嗎？ [連絡人銷售人員開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
 
-## <a name="november-2020"></a>2020年11月
+## <a name="november-2020"></a>2020 年 11 月
 
 - 更新的匯出限制 > 重要訊息中心 > 修正從郵件提交和動作記錄檔 (Defender for Office 365 方案 2) 
 
@@ -51,11 +51,11 @@ ms.locfileid: "49615549"
 - [使用承租人允許/封鎖清單手動覆寫篩選 verdicts](tenant-allow-block-list.md)
 - [威脅瀏覽器中的延伸功能（包括主要目標使用者、傳輸規則，以及](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) 在 [威脅瀏覽器](threat-explorer.md) 中 (Defender for office 365 資訊） (電子郵件是由承租人/User policy)  (Defender for office 365 方案2所允許/封鎖) 
 - 在 [威脅 Explorer](threat-explorer.md#threats-in-urls) 中呈現 URL 威脅 (惡意程式碼、網路釣魚、垃圾郵件或無)  (Office 365 方案2的 Defender) 
-- [改進搜尋體驗威脅 Explorer](threat-explorer.md#improvements-to-threat-hunting-experience-upcoming) ，包含威脅的更新、其他動作、傳遞位置和更新的時程表視圖 (Defender for Office 365 方案 2) 
+- [改進搜尋體驗威脅 Explorer](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) ，包含威脅的更新、其他動作、傳遞位置和更新的時程表視圖 (Defender for Office 365 方案 2) 
 
 ## <a name="julyaugust-2020"></a>2020年7月/8 月
 
-- 體驗 Microsoft Defender for Office 365 Plan 1 或 Plan 2) [的搜尋體驗改進功能的增強功能](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections) (
+- 體驗 Microsoft Defender for Office 365 Plan 1 或 Plan 2) [的搜尋體驗改進功能的增強功能](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (
 - [使用預先設定的安全性原則輕鬆套用建議設定](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>2020年3月/4 月
@@ -103,13 +103,13 @@ ms.locfileid: "49615549"
 
 ## <a name="june-2019"></a>2019 年 6 月
 
-- [View a 仿冒 URLs 的資料，然後按一下 [判定](threat-explorer.md#view-data-about-phishing-urls-and-click-verdict) (Microsoft Defender for Office 365 Plan 1 or Plan 2) 
+- [View 仿冒 URLs，然後按一下](threat-explorer.md#view-phishing-url-and-click-verdict-data) [ (Microsoft Defender for Office 365 方案 1] 或 [計畫 2) 的 [已判定資料]。
 
-## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender for Office 365 方案1和方案2
+## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>適用於 Office 365 的 Microsoft Defender 方案 1 和方案 2
 
 您知道 Microsoft Defender for Office 365 可提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 
