@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: '瞭解如何授予使用者存取另一個使用者信箱的權限。 這可讓使用者從其他使用者的信箱讀取郵件及傳送郵件。 '
-ms.openlocfilehash: 0b6977efbd6041a11c67ed66c9b7ecc72a38bde4
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: af12cfe3acad9e12ca3983c9fa13f52b72f0a467
+ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560372"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "49725150"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>將信箱權限授予另一位其他使用者 - 系統管理員說明
 
@@ -122,6 +122,10 @@ ms.locfileid: "46560372"
 
 6. 選取 **[儲存]**。
 
+
+> [!NOTE]
+> 當 Exchange 系統管理中心授予時，**讀取** 和 **管理** 權限即為 **完整存取權** 權限。 完整存取權權限不會授與 **傳送為** 或 **代理傳送者** 權限。
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -159,7 +163,7 @@ ms.locfileid: "46560372"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">作用中使用者</a>頁面。  
 
-2. 選取使用者名稱 (您計畫要賦予**代理傳送**權限的使用者)，以開啟其 [屬性] 窗格。
+2. 選取使用者名稱 (您計畫要賦予 **代理傳送** 權限的使用者)，以開啟其 [屬性] 窗格。
     
 3. 在 **[郵件]** 索引標籤上，選取 **[管理信箱權限]**。
     
