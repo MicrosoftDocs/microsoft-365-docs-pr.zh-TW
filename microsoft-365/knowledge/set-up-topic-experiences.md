@@ -11,14 +11,20 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何在 Microsoft 365 中設定主題體驗
-ms.openlocfilehash: e11f0b75556a4a8ac0ffa40269d7166258128daf
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: df4dccead4b627a215ec7ebd11932aa0f2b6ac08
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698552"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731364"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>在 Microsoft 365 中設定主題體驗
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBp7]  
+
+</br>
 
 您可以使用 Microsoft 365 系統管理中心來設定及設定 [主題經驗](topic-experiences-overview.md)。 
 
@@ -26,7 +32,7 @@ ms.locfileid: "49698552"
 
 您必須是全域管理員或 SharePoint 管理員，才能存取 Microsoft 365 系統管理中心及設定主題經驗。
 
-## <a name="set-up-topic-experiences"></a>設定主題經驗
+## <a name="set-up-topic-experiences"></a>設定主題體驗
 
 設定 Microsoft 365 中的主題體驗
 
@@ -71,7 +77,7 @@ ms.locfileid: "49698552"
 
     完成並儲存 .csv 檔案之後，請選取 **[流覽]** 以找出並選取。
     
-    選取 [下一步]。
+    選取 **[下一步]**。
 
 6. 在 [ **誰可以看到主題及其可以查看的位置** ] 頁面上，您會設定主題可見度。 在 [在 **知識網路中查看主題** ] 設定中，您可以選擇誰可以存取主題詳細資料，例如高亮主題、主題卡片、搜尋中的主題答案及主題頁面。 您可以選取：
     - **組織中的所有人**
@@ -96,11 +102,11 @@ ms.locfileid: "49698552"
 
     ![主題管理的許可權](../media/km-setup-create-edit-topics.png) 
 
-    選取 [下一步]。
+    選取 **[下一步]**。
 
 9. 在 [ **建立主題中心** ] 頁面上，您可以建立可以查看主題頁面和管理主題的主題中心網站。 在 [ **網站名稱** ] 方塊中，輸入主題中心的名稱。 您可以選擇性地在 [ **描述** ] 方塊中輸入簡短的描述。 
 
-選取 [下一步]。
+選取 **[下一步]**。
 
    ![建立知識中心](../media/ksetup4.png)  
 
@@ -142,6 +148,6 @@ ms.locfileid: "49698552"
 - [在 Microsoft 365 中管理主題許可權](topic-experiences-user-permissions.md)
 - [變更 Microsoft 365 主題中心的名稱](topic-experiences-administration.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [主題經驗概述](topic-experiences-overview.md)

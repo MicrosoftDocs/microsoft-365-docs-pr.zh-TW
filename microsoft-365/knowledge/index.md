@@ -12,17 +12,24 @@ ms.collection: enabler-strategic
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: 瞭解如何尋找主題經驗的資源。
-ms.openlocfilehash: bc38e0a7310dd9c1d3787dbe6cabe646009d2bff
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 9141f6b445932234ebfa5a3d77833f64110ceeb4
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698866"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731340"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a> (預覽的主題經驗簡介) 
 
 > [!Note] 
 > 本文內容適用于 Project Cortex 私人預覽。 [如需詳細資訊，請參閱 Project Cortex](https://aka.ms/projectcortex)。
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
+
 
 主題經驗是 Office 365 服務，可協助組織將資訊轉換為知識。
 
@@ -54,7 +61,7 @@ ms.locfileid: "49698866"
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
 |瞭解如何設定及設定主題經驗|[設定主題經驗](set-up-topic-experiences.md)|
-|瞭解如何設定使用者權限|[管理主題許可權](topic-experiences-user-permissions.md)|
+|瞭解如何設定使用者權限|[管理主題權限](topic-experiences-user-permissions.md)|
 |瞭解如何管理人員可以查看主題|[管理主題可見度](topic-experiences-knowledge-rules.md)|
 |瞭解如何管理主題探索設定|[管理主題探索](topic-experiences-discovery.md)|
 
@@ -64,7 +71,7 @@ ms.locfileid: "49698866"
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|瞭解如何處理主題|[主題中心概述](topic-center-overview.md)<br><br>[管理主題](manage-topics.md)<br><br>[建立新的主題](create-a-topic.md)<br><br>[編輯現有主題](edit-a-topic.md)<br><br>|
+|瞭解如何處理主題|[主題中心概觀](topic-center-overview.md)<br><br>[管理主題](manage-topics.md)<br><br>[建立新主題](create-a-topic.md)<br><br>[編輯現有主題](edit-a-topic.md)<br><br>|
 |瞭解使用者角色|[主題經驗角色](topic-experiences-roles.md)|
 |瞭解主題可能會與不同的使用者有所不同|[主題經驗安全修整](topic-experiences-security-trimming.md)|
 |瞭解如何防止識別及查看特定主題|[限制存取主題](restrict-access-to-topics.md)|

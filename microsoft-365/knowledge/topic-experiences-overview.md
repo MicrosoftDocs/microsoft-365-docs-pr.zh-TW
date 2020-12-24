@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 主題經驗的概述。
-ms.openlocfilehash: 9321f349056c1c4df36b6bd725214f3c6758cf6a
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 8b06dd016295c8b0712a7c18c2296a318cd826ba
+ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698847"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "49731317"
 ---
 # <a name="topic-experiences-overview-preview"></a>主題經驗 (預覽的概述) 
 
@@ -26,7 +26,11 @@ ms.locfileid: "49698847"
 
 主題經驗使用 Microsoft AI 技術、Microsoft 365、Delve、Microsoft Graph、搜尋及其他元件和服務，在您的 Microsoft 365 環境中建立知識網路。 
 
-   ![知識管理流程](../media/knowledge-management/knowledge-management-flowchart.png) </br> 
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
+
+</br>
 
 其目標是將資訊轉換為知識，並在日常使用的應用程式中，將資訊傳送給您的使用者，例如 SharePoint 新式頁面和 Microsoft 搜尋。
 
