@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 9745a93139f591185e7457f5ba5c0b9b2fd56348
-ms.sourcegitcommit: 16e018f8b6eef5dad48eabf179691ead3cebe533
+ms.openlocfilehash: 8d50e03827026100689d9b380570fa59c93e6d08
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "49725174"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730174"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
@@ -465,7 +465,7 @@ SharePoint 和 OneDrive 中的此 30 天寬限期與 Exchange 中的 30 天延�
 - [Microsoft Teams 的限制和規格](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [協助您符合資訊管理與記錄管理法規需求的資源](retention-regulatory-requirements.md)
 
-## <a name="next-steps"></a>後續步驟
+## <a name="configuration-guidance"></a>配置指導方針
 
 如果您已準備好建立保留原則，請參閱[建立及設定保留原則](create-retention-policies.md)。
 

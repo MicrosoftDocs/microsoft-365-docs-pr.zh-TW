@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 使用 Microsoft 365 中的記錄管理，您可以將保留時間表套用到管理保留、記錄聲明和處置的檔案計畫中。
-ms.openlocfilehash: 6648a3a671e40dd5218eba1a1e8bafe42120f0de
-ms.sourcegitcommit: 9d1351ea6d9942550b52132817f9f9693ddef2fd
+ms.openlocfilehash: 883fd65e3fba716018a1ed35cc457c2eb8f06c52
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "48830524"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730164"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的記錄管理
 
@@ -109,7 +109,7 @@ ms.locfileid: "48830524"
 > 
 > 由於這些動作無法逆轉，請先確認您有必要使用監管記錄，再針對保留標籤選取此選項。 為了防止意外的設定，預設不提供此選項，必須先用 PowerShell 啟動。 [使用保留標籤宣告記錄](declare-records.md)中包含所有説明。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="configuration-guidance"></a>配置指導方針
 
 請參照[開始使用記錄管理](get-started-with-records-management.md)。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立保留標籤及自動套用標籤原則，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: 766106e9c650047e37c9fa341bd2e78b390d814d
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: b4e1afbc520b7ec046b4af399e7c1c0cd094e8f9
+ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519451"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "49730154"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤以保留或刪除內容
 
@@ -55,8 +55,9 @@ ms.locfileid: "49519451"
 > [!NOTE]
 > 自動原則會使用條件的服務端標籤來自動套用保留標籤。 當您執行下列動作時，您也可以使用標籤原則以自動套用保留標籤： 
 >
-> - 為 SharePoint 和 Outlook 套用預設的保留標籤，讓未標記的內容自動加上標籤
->- 使用規則將保留標籤自動套用至電子郵件
+> - 在 SharePoint Syntex 中套用保留標籤到文件瞭解模型
+> - 為 SharePoint 和 Outlook 套用預設的保留標籤
+>- 使用 Outlook 規則將保留標籤套用至電子郵件
 >
 > 在這些情況下，請參閱 [在應用程式中建立集套用保留標籤](create-apply-retention-labels.md)。
 
