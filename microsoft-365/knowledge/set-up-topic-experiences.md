@@ -11,18 +11,18 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何在 Microsoft 365 中設定主題體驗
-ms.openlocfilehash: df4dccead4b627a215ec7ebd11932aa0f2b6ac08
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 3ff822d863e99f7e52089d3efde3d597df9957c7
+ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731364"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49735807"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>在 Microsoft 365 中設定主題體驗
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LBp7]  
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
 
 </br>
 
@@ -43,7 +43,7 @@ ms.locfileid: "49731364"
 
 3. 在 [連線 **人員至知識]** 頁面上，按一下 [ **開始** ]，逐步引導您完成安裝程式。
 
-    ![入門](../media/k-get-started.png) 
+    ![快速入門](../media/k-get-started.png) 
 
 4. 在 [ **選擇知識網路可如何尋找主題** ] 頁面上，您會設定主題探索。 在 [ **選取 SharePoint 主題來源** ] 區段中，選取要在探索過程中將其編目為主題來源的 SharePoint 網站。 請選擇：
     - **所有網站**：您組織中的所有 SharePoint 網站。 這包括目前和未來的網站。
