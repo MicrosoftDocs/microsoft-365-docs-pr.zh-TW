@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: 了解如何指派授權給使用者。
 ms.date: 08/14/2020
-ms.openlocfilehash: ec2f9ae2e580987266c636343a66d7c21138e4c3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fc5f9112a22d56abb9c11d61f4108586487b4986
+ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645128"
+ms.lasthandoff: 12/28/2020
+ms.locfileid: "49735795"
 ---
 # <a name="assign-licenses-to-users"></a>將授權指派給使用者
 
@@ -65,7 +65,7 @@ ms.locfileid: "48645128"
 3. 在產品詳細資料頁面上，選取 **[指派授權]**。
 4. 在 **[指派授權給使用者]** 窗格中，開始輸入名稱，然後從結果中選擇，將它新增到清單中。 一次最多可以新增 20 個使用者。
 5. 選取 **[開啟或關閉應用程式與服務]** 以指派或移除特定項目的存取權。
-6. 完成時，請選取 [指派]****，然後選取 [關閉]****。
+6. 完成時，請選取 [指派]，然後選取 [關閉]。
 
 如果發生衝突，則會顯示訊息，告知您發生什麼問題，以及如何修正。 例如，如果您選取的授權包含發生衝突的服務，則錯誤訊息會指出，請檢查每個授權所包含的服務，然後再試一次。
 
@@ -163,7 +163,7 @@ ms.locfileid: "48645128"
 
 ## <a name="assign-a-license-to-a-guest-user"></a>指派授權給來賓使用者
 
-您可以在 Azure Active Directory 系統管理中心中邀請來賓使用者來與您的組織共同作業。 若要進一步了解來賓使用者，請參閱[什麼是 Azure Active Directory B2B 中的來賓使用者存取權？](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) 如果您沒有任何來賓使用者，請參閱[快速入門：在 Azure 入口網站中將來賓使用者新增至您的目錄](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)。
+您可以在 Azure Active Directory 系統管理中心中邀請來賓使用者來與您的組織共同作業。 若要進一步了解來賓使用者，請參閱[什麼是 Azure Active Directory B2B 中的來賓使用者存取權？](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b)。 如果您沒有任何來賓使用者，請參閱[快速入門：在 Azure 入口網站中將來賓使用者新增至您的目錄](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal)。
 
 > [!IMPORTANT]
 > 您必須是全域系統管理員才能執行這些步驟。
