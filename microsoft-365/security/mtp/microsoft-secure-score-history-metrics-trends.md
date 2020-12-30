@@ -20,17 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 4dfe1c9595db869a59474a030a5dd8673cf7db24
-ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
+ms.openlocfilehash: ed937c90bbc6875ee3d72f710d5ac11d4069cbb6
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "48769241"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738040"
 ---
 # <a name="track-your-microsoft-secure-score-history-and-meet-goals"></a>追蹤您的 Microsoft 安全分數記錄並符合目標
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 [Microsoft Secure 得分](microsoft-secure-score.md) 是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。
 
@@ -56,7 +55,7 @@ ms.locfileid: "48769241"
 * **回歸趨勢** -因設定、使用者或裝置變更而 regressed 之點的時程表。  
 * **比較趨勢** -組織的安全分數與其他時間的比較方式。 此視圖可以包含表示具有類似座位元數目之組織之分數平均的行，以及您可以設定的自訂比較視圖。
 * **風險接受趨勢** -標示為「風險已接受」之改進動作的時程表。
-* **得分變更** -在指定的日期範圍內，已取得的點數，點 regressed，以及後續得分變更。
+* **得分變更** -已取得的點數，點 regressed，以及您在指定的日期範圍內對評分所做的變更。
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>比較您的分數與您的組織
 
@@ -64,18 +63,18 @@ ms.locfileid: "48769241"
 
 #### <a name="comparison-bar-chart"></a>比較橫條圖
 
-比較橫條圖是 [ **一覽** ] 索引標籤。將游標移至圖表上方，以查看分數和排名機會。 比較資料是匿名，因此我們不會確切知道此組合中的其他租使用者。
+比較橫條圖是 [ **一覽** ] 索引標籤。將游標移至圖表上方，以查看分數和排名機會。 比較資料是匿名，因此我們不會確切知道混合中有哪些其他租使用者。
 
 ![類似組織分數的柱狀圖圖表](../../media/secure-score/secure-score-comparison-bar.png)
 
-- **像您這樣的組織** ：我們為您提供了其他承租人 (的平均分數，但前提是我們至少有5個以上的承租人，可比較符合下列準則的) ：
+- **像您這樣的組織**：另一個承租人 (的平均分數，前提是我們至少有五個以上的承租人可比較符合下列準則的) ：
     1. 相同的行業
     2. 相同的組織規模
     3. 所有地區
     4. 使用的 Microsoft 產品的80% 類似
     5. 在您的租使用者的20% 範圍內，目前的授權) 可取得的機會 (最大分數。
 
-- **自訂比較** ：只有在找到5個或更多承租人) 時，才需要先設定 [ **管理比較** (]，其依據如下的準則：
+- **自訂比較**：若要設定，必須選取 [依下列準則 **管理比較** ]：
     1. 選取的工業 (s) 
     2. 選取的組織大小 (s) 
     3. 選取的區域 (s) 
@@ -83,7 +82,7 @@ ms.locfileid: "48769241"
     5. 使用的 Microsoft 產品的80% 類似
     6. 在您的租使用者的20% 範圍內，目前的授權) 可取得的機會 (最大分數。
 
-如果您未選取 [自訂選取範圍] 做為選取範圍所產生的其他 tenant 小於5個其他租使用者，您將會看到「因數據有限而無法使用」。
+如果您已做自訂的選取範圍，但結果所包含的其他租使用者少於五個其他租使用者，您將會看到「因數據有限而無法使用」。
 
 #### <a name="comparison-trend"></a>比較趨勢
 
@@ -91,7 +90,7 @@ ms.locfileid: "48769241"
 
 ![隨時間的類似組織分數的折線圖](../../media/secure-score/secure-score-comparison-trend.png)
 
-## <a name="we-want-to-hear-from-you"></a>我們想要聽到您的來信
+## <a name="we-want-to-hear-from-you"></a>我們想知道您的想法
 
 如果您有任何問題，請在 [安全性、隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社區中發佈以告知我們。 我們正在監視社區，並會提供協助。
 

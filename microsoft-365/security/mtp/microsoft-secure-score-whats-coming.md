@@ -17,12 +17,12 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: d668aa8f0588ecc5ca24086d060cda32cdf1dbc6
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 0693e70cdd5636ce655a400a48aac65197327291
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688038"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737950"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -35,6 +35,8 @@ Microsoft Secure 得分可在 https://security.microsoft.com/securescore [micros
 我們在近期進行一些變更，讓 [Microsoft 安全評分](microsoft-secure-score.md) 成為安全狀況的更好代表，並提高可用性。 您的分數和可能的最大分數可能會有所變更。
 
 ### <a name="no-planned-changes"></a>無規劃的變更
+
+目前沒有任何已計畫的變更。
 
 ## <a name="related-resources"></a>相關資源
 

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 7fe5be065ee45700a1f08a39c8050757c3843f7b
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 6e9dd214e53e3fdd601fe51e5522a3a24a7fd3d0
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682568"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737996"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft 安全分數
 
@@ -50,7 +50,7 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 您會在下列動作中取得重點：
 
 - 設定推薦的安全性功能
-- 執行安全性相關工作
+- 進行安全性相關工作
 - 使用協力廠商應用程式或軟體解決改進動作，或以替代的方式緩解
 
 有些改進動作只會在完全完成時提供積分。 有些是在某些裝置或使用者已完成時，有些點會產生部分點。 如果您無法或不想要制定其中一個 [改進] 動作，您可以選擇接受風險或剩餘風險。
@@ -65,7 +65,6 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 - [比較您的分數與您的組織](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
 - [查看改進動作和決定行動計畫](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
 - [啟動工作流程以進行調查或實施](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
-    - [Microsoft 365 的安全性中心和 ServiceNow 整合](tickets-security-center.md)
 
 ### <a name="how-improvement-actions-are-scored"></a>如何計分改進動作
 
@@ -75,11 +74,19 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 ### <a name="products-included-in-secure-score"></a>安全分數中包含的產品
 
-目前有 Microsoft 365 (的建議，包括 Exchange Online) 、Azure Active Directory、Microsoft Defender for Endpoint、Microsoft Defender 身分識別及 Cloud App Security。 即將推出其他安全性產品的建議。 建議不涵蓋每項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商或替代範圍的緩解。
+目前，下列產品的建議如下：
+
+- Microsoft 365 (包括 Exchange Online) 
+- Azure Active Directory
+- 適用於端點的 Microsoft Defender
+- 適用於身分識別的 Microsoft Defender
+- Cloud App Security
+
+即將推出其他安全性產品的建議。 建議不涵蓋每項產品相關聯的所有攻擊面，但也是一個很好的基準。 您也可以將改進動作標示為協力廠商或替代範圍的緩解。
 
 ### <a name="security-defaults"></a>安全性預設
 
-Microsoft 安全分數已更新改進動作，以支援 [Azure Active Directory 中的安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)，如此可讓您的組織使用預先設定的安全性設定進行常見的攻擊，以協助保護您的組織。
+Microsoft Secure 得分已更新改進動作，以支援 [Azure Active Directory 中的安全性預設值](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)，如此可讓您的組織使用預先設定的常見攻擊安全性設定，以協助保護您的組織。
 
 如果您開啟安全性預設值，您會獲得下列改進動作的完整得分：
 
@@ -117,7 +124,7 @@ Microsoft 安全分數已更新改進動作，以支援 [Azure Active Directory 
 
 ## <a name="risk-awareness"></a>風險認知
 
-Microsoft Secure 得分是根據系統設定、使用者行為及其他安全性相關度量，以數位摘要的安全性狀況。 這不是系統或資料遭到破壞的可能性的絕對度量。 相反地，它代表您已在 Microsoft 環境中採用安全性控制的程度，可協助抵消遭破壞的風險。 無線上服務完全避免遭到安全違規，安全分數不得以任何方式轉譯為保證安全性破壞。
+Microsoft Secure 得分是根據系統設定、使用者行為及其他安全性相關度量，以數位摘要的安全性狀況。 這不是系統或資料遭到破壞的可能性的絕對度量。 相反地，它代表您已在 Microsoft 環境中採用安全性控制的程度，可協助抵消遭破壞的風險。 任何線上服務都不會受到安全性違例的攻擊，安全分數不得以任何方式轉譯為保證安全性破壞。
 
 ## <a name="we-want-to-hear-from-you"></a>我們想知道您的想法
 

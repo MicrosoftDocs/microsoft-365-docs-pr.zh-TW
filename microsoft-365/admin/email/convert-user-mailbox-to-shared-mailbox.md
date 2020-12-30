@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: '瞭解如何將私人信箱轉換為可供多位使用者存取的共用信箱。 '
-ms.openlocfilehash: fa8e37b5e924f1b38755a953f40d8b70011213d0
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: f716bbd16be9f67189b19358ddf16a289f57f8e7
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698276"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737962"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>將使用者信箱轉換為共用信箱
 
@@ -93,24 +93,15 @@ ms.locfileid: "49698276"
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>轉換使用者在混合式環境中的信箱
 
-> [!NOTE] 
-> 從2018年10月11日起，Exchange 混合式部署支援在內部部署 Exchange Server 環境中以 Exchange Server 2013 的累計更新21和 Exchange Server 2016 累計更新10開始建立遠端共用信箱。 您可以使用新 _的共用_ 參數直接建立或修改遠端共用信箱。 如需詳細資訊，請造訪 [Cmdlet 以在內部部署 Exchange 環境中建立或修改遠端共用信箱](https://support.microsoft.com/help/4133605/cmdlets-to-create-modify-remote-shared-mailbox-in-on-premises-exchange)。
+如需將使用者信箱轉換成 Exchange 混合式環境中共用信箱的詳細資訊，請參閱：
 
-如果此共用信箱位於混合式環境中，但在上述情況下， **強烈建議** (幾乎需要！ ) 您將使用者信箱移回內部部署，請將使用者信箱轉換成共用信箱，然後將該共用信箱移回雲端。 
-
-原因如下：如果您轉換雲端中的信箱，它可以進行轉換，但是內部部署仍會認為信箱是使用者信箱，因為新的現實不會同步處理回內部部署。
-
-這通常不是問題，但在某些情況下， (認為信箱是使用者信箱) 可以覆寫這些屬性的新雲端版本，因此可能會轉換回的內部部署屬性。 這是一個問題，原因是使用者信箱需要授權 **，或在30天后才會將其虛刪除**！
-
-我們已解決這種情況下的大部分原因，但仍然可以發生，但不常這麼做。 最好是安全的，將信箱移回內部部署、轉換，然後將共用信箱移回雲端。 此建議的解決方案不會違反混合式環境的授權協定，因為內部部署使用者信箱的存在只是臨時性的。 如果您維護內部部署組織中的使用者信箱或共用信箱，但沒有將它移回雲端，您就會違反您的授權。
-
+ - [在內部部署 Exchange 環境中建立或修改遠端共用信箱的 Cmdlet](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
+ - [在 Exchange 混合式部署中執行目錄同步作業後，共用信箱意外轉換為使用者信箱](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ 
 
 > [!NOTE]
-> 如果您是「組織管理」或「收件者管理」角色群組的成員，您可以使用 Exchange 管理命令介面，將使用者信箱變更為內部部署的共用信箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`。
+> 如果您是「組織管理」或「收件者管理」角色群組的成員，您可以使用 Exchange 管理命令介面，將使用者信箱變更為內部部署的共用信箱。 例如，`Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`。
 
-> [!TIP]
-> 當 [共用信箱意外轉換為使用者信箱](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di)時，請參閱此支援解決方案中的解決方法。
-  
 ## <a name="related-articles"></a>相關文章
 
 [關於共用信箱](about-shared-mailboxes.md)

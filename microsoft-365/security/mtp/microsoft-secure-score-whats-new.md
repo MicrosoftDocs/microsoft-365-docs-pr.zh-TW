@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 253e85da7bb85a0722831851f00051a50a96153e
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 61ac8c627dd701ac354a5d60d4774a6443b4d41e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688408"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49737984"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
 
@@ -37,7 +37,7 @@ Microsoft Secure 得分可在 https://security.microsoft.com/securescore [micros
 
 ## <a name="december-2020"></a>2020 年 12 月
 
-### <a name="added-6-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>為 Microsoft defender 的 Endpoint (先前的 Microsoft defender ATP) 新增6個與帳戶相關的改進動作：
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>針對先前的 Microsoft Defender ATP) ，新增了 Microsoft Defender for Endpoint (的六個帳戶相關改進動作：
 
 - 將 ' 密碼長度下限 ' 設定為 ' 14 或以上的字元」
 - 將 ' 強制密碼歷程記錄 ' 設定為 ' 24 或以上的密碼 (s) '
@@ -52,7 +52,7 @@ Microsoft Secure 得分可在 https://security.microsoft.com/securescore [micros
 
 無法再使用 **> ServiceNow** ，透過安全的分數建立 ServiceNow 入場券的功能。 感謝您的意見反應，並在我們決定接下來的步驟時繼續支援。
 
-### <a name="added-3-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>在先前的 Microsoft Defender ATP) 中，為 Microsoft Defender for Endpoint (新增3個與服務相關的改進動作：
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>在先前的 Microsoft Defender ATP) 中，新增三項 Microsoft Defender for Endpoint (的服務相關改進動作：
 
 - 修正 Windows 服務的未加引號服務路徑
 - 將服務可執行路徑變更為一般受保護的位置

@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 8ebfe5746a69cc0161c38f0467954fabb3839240
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: c463e375594b3581486cb8d4bdd380412e195b2e
+ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683340"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "49738008"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分數評估安全性狀況
 
@@ -42,13 +42,13 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 >[!NOTE]
 >在最近發行的 Microsoft Secure 得分中，已發行的評分模型已發佈，使 Microsoft 安全分數暫時不相容身分識別安全分數和圖形 API。 [檢視詳細資料](microsoft-secure-score-whats-new.md)
 
-在 [Microsoft Secure 得分一覽] 頁面中，瞭解如何在這些群組間分割點，以及可以使用哪些點數。 您也可以取得總分的整體總分、安全分數的歷史趨勢和基準比較，以及可以採取以改善評分的優先改進動作。
+在 [Microsoft Secure 得分一覽] 頁面中，查看在這些群組之間分割點數的方式，以及可用的點數。 您也可以取得總分的整體總分、安全分數的歷史趨勢和基準比較，以及可以採取以改善評分的優先改進動作。
 
 ![安全分數首頁](../../media/secure-score/secure-score-homepage-new.png)
 
 ## <a name="check-your-current-score"></a>檢查您目前的分數
 
-若要檢查您目前的分數，請移至 [Microsoft Secure 得分一覽] 頁面，並尋找包含 **您安全分數** 的麻將牌。 您的分數會顯示為百分數，以及您已從總可能點數取得的點數。
+若要檢查您目前的分數，請移至 [Microsoft Secure 得分一覽] 頁面，並尋找包含 **您安全分數** 的麻將牌。 您的分數會顯示為百分數，以及您已從總可能的點數所取得的點數。
 
 此外，如果您選取分數旁邊的 [ **包含** ] 按鈕，您可以選擇不同的分數視圖。 這些不同的分數視圖會顯示在 [分數] 磚和 [點] 分解圖上的圖表中。
 
@@ -74,14 +74,15 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 當您選取特定的 [提升] 動作時，會出現完整的頁面快顯視窗。  
 
-![改進動作飛出範例 ](../../media/secure-score/secure-score-improvement-action-details.png)
- *圖2：改進動作飛出範例*
+![改進動作浮出範例](../../media/secure-score/secure-score-improvement-action-details.png)
 
 若要完成此動作，您有幾個選項：
 
-* 選取 [ **管理** ] 以進入設定畫面並進行變更。 接著，您將會在飛出的位置看到必要的動作。點通常需要24小時才能更新。
+- 選取 [ **管理** ] 以進入設定畫面並進行變更。 接著，您將會在飛出的位置看到必要的動作。點通常需要24小時才能更新。
 
-* 選取 [ **共用** ]，將直接連結複製到 [改進] 動作。 您也可以選擇要共用連結的平臺，例如電子郵件、Microsoft 小組、Microsoft Planner 或 ServiceNow。 選取 [ServiceNow 將可讓您建立 ServiceNow 和 Microsoft 365 安全性中心首頁會顯示的變更票證。 若要深入瞭解，請參閱 [Microsoft 365 security center 和 ServiceNow integration](tickets-security-center.md)。
+- 選取 [ **共用** ]，將直接連結複製到 [改進] 動作。 您也可以選擇要共用連結的平臺，例如電子郵件、Microsoft 小組、Microsoft Planner 或 ServiceNow。 選取 [ServiceNow 將可讓您建立 ServiceNow 和 Microsoft 365 安全性中心首頁會顯示的變更票證。 若要深入瞭解，請參閱 [Microsoft 365 security center 和 ServiceNow integration](tickets-security-center.md)。
+
+新增 **附注** ，以追蹤進度或您想要批註的任何其他專案。 如果您將自己的 **標記** 新增至 [改進] 動作，您可以依這些標記加以篩選。
 
 ### <a name="choose-an-improvement-action-status"></a>選擇改進動作狀態
 
@@ -94,23 +95,23 @@ Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目
 
 #### <a name="threat--vulnerability-management-improvement-actions"></a>威脅 & 弱點管理的改進動作
 
-若要在 "Device" 類別中改進動作，您將無法選擇狀態。 相反地，您會被導向相關 [威脅 & 弱點管理 (TVM) 安全性建議](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) 的 [Microsoft Defender security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use) 採取行動。 您選擇的例外狀況和您所撰寫的對齊方式，都是該入口網站特有的。 它不會出現在 Microsoft Secure 得分入口網站中。
+若要在 "Device" 類別中改進動作，您無法選擇 [狀態]。 相反地，您會將[Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)中相關聯的[威脅和弱點管理安全性建議](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)導向給您採取的動作。 您選擇的例外狀況和您所撰寫的對齊方式，都是該入口網站特有的。 它不會出現在 Microsoft Secure 得分入口網站中。
 
 #### <a name="completed-improvement-actions"></a>已完成的改進動作
 
-在完成改進動作的所有可能點之後，[改進動作] 的狀態為「已完成」。 已完成的改進動作會透過 Microsoft data 加以確認，而且您將無法變更狀態。
+在完成改進動作的所有可能點之後，[改進動作] 的狀態為「已完成」。 已完成的改進動作會以 Microsoft data 確認，而且您無法變更狀態。
 
 ### <a name="assess-information-and-review-user-impact"></a>評估資訊並複查使用者影響
 
 一 **眼** 就會告訴您，您的類別、可以防禦的攻擊，以及產品。
 
-[ **使用者影響** ] 顯示使用者在已頒佈改進動作時的體驗，以及 **受影響的使用者** 會顯示誰會體驗。
+**使用者影響** 是指在已頒佈改進動作時，使用者會遇到的影響，而 **受影響的使用者** 則是受影響的人員。
 
 ### <a name="implement-the-improvement-action"></a>實施改進動作
 
 「 **實施** 」區段顯示所有必要條件、逐步後續步驟，以完成 [改進] 動作、[改進動作] 的目前實施狀態，以及任何 [深入瞭解] 連結。
 
-必要條件包括需要取得的任何授權，或是在解決改進動作之前必須完成的動作。 請確定您的授權有足夠的座位，可完成 [改進] 動作，並將這些授權套用至必要的使用者。  
+必要條件包括在解決改進動作之前，所需的授權或執行的動作。 請確定您的授權有足夠的座位，可完成 [改進] 動作，並將這些授權套用至必要的使用者。  
 
 ## <a name="we-want-to-hear-from-you"></a>我們想知道您的想法
 
