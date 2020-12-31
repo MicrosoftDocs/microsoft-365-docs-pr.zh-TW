@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，將 Yieldbroker 資料從 Globanet 匯入至 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料。 封存此資料之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理協力廠商資料。
-ms.openlocfilehash: 1591198dae3a7a5082c4f8f7ba925eb9e6dd680b
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: 34ce7686e6fdf418257265d707eda7eed3cab026
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722932"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740320"
 ---
-# <a name="set-up-a-connector-to-archive-yieldbroker-data-preview"></a>設定連接器以封存 Yieldbroker 資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-yieldbroker-data"></a>設定連接器以封存 Yieldbroker 資料
 
 使用 Microsoft 365 規範中心內的 Globanet 連接器，將 Yieldbroker 中的資料匯入至您的 Microsoft 365 組織中的使用者信箱。 Globanet 提供您設定從協力廠商資料來源捕獲專案並將這些專案匯入 Microsoft 365 的 [Yieldbroker](https://globanet.com/yieldbroker/) 連接器。 連接器會將內容從 Yieldbroker 轉換為電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的使用者信箱。
 

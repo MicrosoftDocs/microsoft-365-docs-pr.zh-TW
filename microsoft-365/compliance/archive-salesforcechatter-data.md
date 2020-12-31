@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，將 Salesforce 交談資料從 Globanet 匯入至 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料。 封存此資料之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理協力廠商資料。
-ms.openlocfilehash: 60d86cd01ef8da3a02839d4a3f815be02dc1ee01
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: 518eb38756d86812a8b3d41e4bc2cd46d5a23386
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722971"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740310"
 ---
-# <a name="set-up-a-connector-to-archive-salesforce-chatter-data-preview"></a>設定連接器以封存 Salesforce 交談資料 (預覽) 
+# <a name="set-up-a-connector-to-archive-salesforce-chatter-data"></a>設定連接器以封存 Salesforce 交談資料
 
 使用 Microsoft 365 規範中心內的 Globanet 連接器，從 Salesforce 交談平臺匯入並封存資料至您的 Microsoft 365 組織中的使用者信箱。 Globanet 提供 [Salesforce 交談](http://globanet.com/chatter/) 連接器，可從協力廠商資料來源捕獲專案，並將這些專案匯入至 Microsoft 365。 連接器會將聊天、附件和張貼等內容轉換為電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的使用者信箱。
 

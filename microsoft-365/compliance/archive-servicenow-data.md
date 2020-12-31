@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: 系統管理員可以設定連接器，將 ServiceNow 資料從 Globanet 匯入至 Microsoft 365。 此連接器可讓您在 Microsoft 365 中封存協力廠商資料來源的資料。 封存此資料之後，您可以使用合規性功能（例如法律封存、內容搜尋及保留原則）來管理協力廠商資料。
-ms.openlocfilehash: 4139e66cc1554b7a7306c6076fd8475fe47f5cf5
-ms.sourcegitcommit: a3215cc22faa47e935d22300c481e47ab2680b44
+ms.openlocfilehash: 99b1f64bdb1d977816d4881fa633d77acd60952c
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49722933"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740330"
 ---
-# <a name="set-up-a-connector-to-archive-servicenow-data-preview"></a>設定 ServiceNow 資料 (預覽的連接器) 
+# <a name="set-up-a-connector-to-archive-servicenow-data"></a>設定連接器以封存 ServiceNow 資料
 
 使用 Microsoft 365 規範中心內的 Globanet 連接器，將 ServiceNow 平臺的資料匯入至您的 Microsoft 365 組織中的使用者信箱。 Globanet 提供的 [ServiceNow](https://globanet.com/servicenow/) 連接器會從協力廠商資料來源捕獲專案，並將這些專案匯入 Microsoft 365。 連接器會將實況郵件、附件及 ServiceNow 文章等內容轉換成電子郵件訊息格式，然後將這些專案匯入至 Microsoft 365 中的使用者信箱。
 
