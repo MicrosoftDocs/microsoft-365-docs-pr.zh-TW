@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4c731869d1ec1740f8c9173705f9af72b0e2fe53
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 15f599f425e20540f5f7889efa632f5a9f11a4e8
+ms.sourcegitcommit: 25ac2736a66bb72c0d574c3fbde7472ac98d5321
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844749"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49741054"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender 預覽功能
 
@@ -47,14 +47,14 @@ Microsoft 365 Defender 服務會不斷更新，以包含新功能增強功能及
 
 開啟預覽體驗設定，成為第一批嘗試即將推出的功能的人。
 
-1. 在功能窗格中，選取 **[設定]** 。
+1. 在功能窗格中，選取 **[設定]**。
 
-2. 選取 [ **Microsoft 365 Defender** ]。
+2. 選取 [ **Microsoft 365 Defender**]。
 
 
-3. 選取 **預覽功能** > **開啟預覽功能** 。 
+3. 選取 **預覽功能** > **開啟預覽功能**。 
 
-3. 選取 **[儲存]** 。
+3. 選取 **[儲存]**。
 
 當您看到 **[開啟預覽功能]** 核取方塊已選取時，您就會知道您已開啟預覽功能。 
 
@@ -62,6 +62,8 @@ Microsoft 365 Defender 服務會不斷更新，以包含新功能增強功能及
 目前預覽版提供下列功能和增強功能：
 
 - **[Microsoft 365 Defender APIs](api-overview.md)** -lop-exo 層級 Microsoft 365 Defender APIs 可讓您根據共用的事件和高級搜尋表來自動化工作流程。 
-- **[在高級搜尋中採取動作](advanced-hunting-take-action.md)** ：快速包含威脅或您在 [ [高級搜尋](advanced-hunting-overview.md)] 中找到的受損資產。
-- **[In 入口架構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** -直接在「安全性中心」中取得高級搜尋架構表格的相關資訊。 除了資料表和欄描述之外，此參考還包含支援的事件種類 (`ActionType` 值) 和範例查詢。
+- **[在高級搜尋中採取動作](advanced-hunting-take-action.md)**：快速包含威脅或您在 [ [高級搜尋](advanced-hunting-overview.md)] 中找到的受損資產。
+- **[In 入口架構參考](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**-直接在「安全性中心」中取得高級搜尋架構表格的相關資訊。 除了資料表和欄描述之外，此參考還包含支援的事件種類 (`ActionType` 值) 和範例查詢。
+- **[DeviceFromIP ( # A1 函數](advanced-hunting-devicefromip-function.md)**-取得在指定的時間範圍內指派特定 IP 位址或位址的相關資訊。
+
 
