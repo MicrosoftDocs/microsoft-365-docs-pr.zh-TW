@@ -589,7 +589,7 @@
           items:
             - name: 將監管人新增至案例
               href: add-custodians-to-case.md
-            - name: 將監管人大量新增至案例
+            - name: 將多個監管人匯入案例
               href: bulk-add-custodians.md
             - name: 管理監管人
               href: manage-new-custodians.md
