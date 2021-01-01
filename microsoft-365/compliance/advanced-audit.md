@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 中的進階稽核提供新的稽核功能，以協助組織進行鑑識與合規性調查。
-ms.openlocfilehash: b05901ad8d42f481020178479df5d422fa68eb1a
-ms.sourcegitcommit: 5cbce99cfdbba4b72267a144b2e03a6c52473464
+ms.openlocfilehash: 83ff462ada02c9b262cfcaadb6bd48e47376cc0f
+ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49718496"
+ms.lasthandoff: 12/31/2020
+ms.locfileid: "49740360"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Microsoft 365 中的進階稽核
 
@@ -155,7 +155,7 @@ Send 事件也是信箱審核動作，當使用者執行下列其中一項動作
 
 5. 如果沒有選取該核取方塊，請選取它，然後按一下 **[儲存變更]**。
 
-   將在 24 小時內開始記錄使用者的 MailItemsAccessed、Send 和其他關鍵事件的稽核記錄。
+   將在 24 小時內開始記錄使用者的 MailItemsAccessed、Send 和其他重要事件的稽核記錄。
 
 針對使用以群組為基礎授權之指派授權至使用者群組的組織，請務必關閉該群組的 Microsoft 365 進階稽核授權指派。 儲存變更之後，請確認已關閉群組的 Microsoft 365 進階稽核。 然後重新開啟群組的授權指派。 如需以群組為基礎授權的相關指示，請參閱[在 Azure Active Directory 中以群組成員資格指派授權給使用者](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) (英文)。
 
