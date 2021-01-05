@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 了解 Microsoft 365 多地理位置環境中的 SharePoint、OneDrive 和 Exchange 使用者體驗。
-ms.openlocfilehash: c94fc5569a5444ca6361712f57460cf0c977b18e
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 558e5a1f7ff2f6f5485a9f32d6e2b43b552b7f17
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688415"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749569"
 ---
 # <a name="user-experience-in-a-multi-geo-environment"></a>在多地理位置環境中的使用者體驗
 
@@ -44,7 +44,7 @@ Office 應用程式 (例如 Word、Excel 及 PowerPoint) 會在每個使用者�
 
 ## <a name="onedrive-for-business-sync-client"></a>商務用 OneDrive 同步處理用戶端
 
-商務用 OneDrive 同步處理用戶端 (版本 17.3.6943.0625 和更新版本) 將會自動偵測該使用者的正確商務用 OneDrive 地理位置。 同步處理用戶端支援包含同步處理群組型網站的功能，無論其地理位置如何。 請注意，多地理位置不支援 Groove 同步處理用戶端。 
+商務用 OneDrive 同步處理用戶端 (版本 17.3.6943.0625 和更新版本) 將會自動偵測該使用者的正確商務用 OneDrive 地理位置。 同步處理用戶端支援包括同步處理群組型網站的能力，不論其地理位置為何。 請注意，多地理位置不支援 Groove 同步處理用戶端。 
 
 ## <a name="onedrive-for-business-location"></a>商務用 OneDrive 的位置
 
@@ -94,7 +94,7 @@ SharePoint 行動用戶端具有多地理位置感知功能，可顯示所有地
 
 ## <a name="sharing"></a>共用
 
-[人員選擇器] 可顯示所有地理位置的所有使用者。 這可讓使用者與相同地理位置的其他使用者共用，或與任何其他租用戶地理位置中的其他使用者共用。 來自不同地理位置的內容將顯示在使用者之商務用 OneDrive 中的 [與我共用]**** 檢視中，無論裝載的地理位置為何，都可透過單一登入經驗來存取這些內容。
+[人員選擇器] 可顯示所有地理位置的所有使用者。 這可讓使用者與相同地理位置的其他使用者共用，或與任何其他租用戶地理位置中的其他使用者共用。 來自不同地理位置的內容將顯示在使用者之商務用 OneDrive 中的 [與我共用] 檢視中，無論裝載的地理位置為何，都可透過單一登入經驗來存取這些內容。
 
 ## <a name="teams-experience"></a>小組體驗
 

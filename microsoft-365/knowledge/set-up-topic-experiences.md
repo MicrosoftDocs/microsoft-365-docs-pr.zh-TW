@@ -11,26 +11,30 @@ search.appverid: MET150
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何在 Microsoft 365 中設定主題體驗
-ms.openlocfilehash: 3ff822d863e99f7e52089d3efde3d597df9957c7
-ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
+ms.openlocfilehash: d221f2932dc2ca9f562800b7b274e35e7f3d1db3
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49735807"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749608"
 ---
 # <a name="set-up-topic-experiences-in-microsoft-365"></a>在 Microsoft 365 中設定主題體驗
-
-</br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
-
-</br>
 
 您可以使用 Microsoft 365 系統管理中心來設定及設定 [主題經驗](topic-experiences-overview.md)。 
 
 在您的環境中規劃設定和設定主題的最佳方式是很重要的。 在您開始本文中的程式之前，請務必閱讀 [Plan 主題經驗](plan-topic-experiences.md) 。
 
 您必須是全域管理員或 SharePoint 管理員，才能存取 Microsoft 365 系統管理中心及設定主題經驗。
+
+## <a name="video-demonstration"></a>影片示範
+
+這段影片顯示在 Microsoft 365 中設定主題體驗的程式。
+
+<br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
+
+<br>
 
 ## <a name="set-up-topic-experiences"></a>設定主題體驗
 
@@ -43,7 +47,7 @@ ms.locfileid: "49735807"
 
 3. 在 [連線 **人員至知識]** 頁面上，按一下 [ **開始** ]，逐步引導您完成安裝程式。
 
-    ![快速入門](../media/k-get-started.png) 
+    ![入門](../media/k-get-started.png) 
 
 4. 在 [ **選擇知識網路可如何尋找主題** ] 頁面上，您會設定主題探索。 在 [ **選取 SharePoint 主題來源** ] 區段中，選取要在探索過程中將其編目為主題來源的 SharePoint 網站。 請選擇：
     - **所有網站**：您組織中的所有 SharePoint 網站。 這包括目前和未來的網站。
@@ -148,6 +152,6 @@ ms.locfileid: "49735807"
 - [在 Microsoft 365 中管理主題許可權](topic-experiences-user-permissions.md)
 - [變更 Microsoft 365 主題中心的名稱](topic-experiences-administration.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [主題經驗概述](topic-experiences-overview.md)

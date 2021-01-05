@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員和使用者可以瞭解如何使用電子郵件傳送郵件， (郵件會標示為壞或錯誤的郵件，以供 Microsoft 進行分析) 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68a0921f85e5b916cd53ebe84e4ea7d35e39967e
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: fe8e3c5ed44c7578764ed0bf19408f4db16e3740
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877702"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751556"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手動將郵件提交給 Microsoft 進行分析
 
@@ -48,9 +48,9 @@ ms.locfileid: "48877702"
 
 1. 使用下列其中一個收件者建立新的空白電子郵件訊息：
 
-   - **垃圾郵件** ： `junk@office365.microsoft.com`
+   - **垃圾郵件**： `junk@office365.microsoft.com`
 
-   - **網路釣魚** ： `phish@office365.microsoft.com`
+   - **網路釣魚**： `phish@office365.microsoft.com`
 
 2. 將垃圾郵件或網路釣魚郵件拖放到新郵件中。 這會將垃圾郵件或網路釣魚郵件儲存為新郵件中的附件。 請勿複製及貼上郵件的內容，或轉寄郵件 (我們需要原始郵件，才能檢查郵件頭) 。
 
@@ -62,7 +62,7 @@ ms.locfileid: "48877702"
    >
    > - 使用 .msg (預設 Outlook 格式) 或 .eml (郵件格式的預設 Outlook 格式) 附加郵件的格式。
 
-3. 當您完成時，按一下 [ **傳送** ]。
+3. 當您完成時，按一下 [ **傳送**]。
 
 > [!TIP]
 > 系統管理員可以使用數種不同的方式封鎖正 misidentified 為垃圾郵件的特定郵件。 如需詳細資訊，請參閱 [在 EOP 中建立封鎖的寄件者清單](create-block-sender-lists-in-office-365.md)。
@@ -86,10 +86,14 @@ ms.locfileid: "48877702"
    >
    > - 使用 .msg (預設 Outlook 格式) 或 .eml (郵件格式的預設 Outlook 格式) 附加郵件的格式。
 
-3. 當您完成時，按一下 [ **傳送** ]。
+3. 當您完成時，按一下 [ **傳送**]。
 
 > [!TIP]
 > 系統管理員有幾種不同的方式可讓特定郵件略過垃圾郵件篩選。 如需詳細資訊，請參閱 [在 EOP 中建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)。
+
+## <a name="where-is-the-data-from-submissions-to-microsoft-stored"></a>送出至 Microsoft 儲存的資料位於何處？
+
+資料位於北美資料中心的 Office 365 規範界限內。 工程小組的分析人員會檢查資料，以協助改善篩選的效能。
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>建立郵件流程規則，以接收報告給 Microsoft 的郵件副本
 

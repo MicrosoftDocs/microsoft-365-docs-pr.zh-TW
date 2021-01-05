@@ -14,12 +14,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: 虛構但具有代表性的全球組織如何採用 Microsoft 365 for enterprise。
-ms.openlocfilehash: 4b17f87008f47d45737fcdbe67d5c8425d4f5530
-ms.sourcegitcommit: bdf65d48b20f0f428162c39ee997accfa84f4e5d
+ms.openlocfilehash: b009e02cde0708c54fbd8e047029dae9f67a145b
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49371609"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749560"
 ---
 # <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>適用于 Contoso Corporation 的 Microsoft 365 for enterprise
 
@@ -69,7 +69,7 @@ Contoso Corporation 是虛構但具有代表性的全球製造集團，其總部
 
 請參閱這些其他的 IT 案例及設定：
 
-- [COVID-19 針對遠端和現場工作的回應和基礎結構](../solutions/contoso-remote-onsite-work.md)
+- [適用於遠端和現場工作的 COVID-19 回應與基礎結構](../solutions/contoso-remote-onsite-work.md)
 
   瞭解 Contoso 如何更新 COVID-19 pandemic 的遠端存取基礎結構，以及他們的新安裝和更新基礎結構，以進行遠端和現場工作。
 

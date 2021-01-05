@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: 設定 Microsoft 365 裝置管理的藍圖。
-ms.openlocfilehash: d359cae62fbd1bf2468ad753670ff8e385d6f25b
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 79be47d6bc83c124f2203866986e06181a1f7f3d
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398958"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749536"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Microsoft 365 的裝置管理藍圖
 
@@ -29,7 +29,7 @@ Microsoft 365 for enterprise 包含的功能可協助您管理組織內的裝置
 裝置管理有兩個選項：
 
 - [Microsoft Intune](#microsoft-intune)
-- [基本行動性和安全性](#basic-mobility-and-security)
+- [設定基本行動與安全性](#basic-mobility-and-security)
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 
@@ -39,7 +39,7 @@ Microsoft 365 for enterprise 包含的功能可協助您管理組織內的裝置
 
 您也會決定要如何管理個人裝置和組織所擁有的裝置。 您可能想要視裝置的用途而異。
 
-## <a name="basic-mobility-and-security"></a>基本行動性和安全性
+## <a name="basic-mobility-and-security"></a>設定基本行動與安全性
 
 這是 Microsoft 365 內建的，可協助您保護和管理使用者的行動裝置，例如 Iphone、Ipad、Androids 和 Windows phone。 您可以建立及管理裝置安全性原則、遠端抹除裝置資料，以及檢視詳細的裝置報告。
 
@@ -49,8 +49,8 @@ Microsoft 365 for enterprise 包含的功能可協助您管理組織內的裝置
 
 根據您的評估，使用下列專案開始管理您的裝置：
 
-- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)。
-- [基本行動性和安全性](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)。
+- [Intune](https://docs.microsoft.com/mem/intune/fundamentals/planning-guide)
+- [設定基本行動與安全性](https://support.microsoft.com/office/set-up-basic-mobility-and-security-dd892318-bc44-4eb1-af00-9db5430be3cd)
  
 ## <a name="identity-and-device-access-recommendations"></a>身分識別與裝置存取建議
 

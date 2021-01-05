@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Microsoft 預定常見問題。
-ms.openlocfilehash: 47bb71476c3fd0b32f9be3e71b188bef6efe2498
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 35e1b71fb7d87d40aa9a3a60d2e3cf108f36c2bf
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561552"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751378"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Microsoft 預定常見問題
 
@@ -34,6 +34,10 @@ Microsoft 365 商務高級版、Microsoft 365 Business Standard、A3、A5、E3 �
 ### <a name="will-my-customers-see-my-personal-or-business-calendar"></a>我的客戶會看到我的個人或商務行事曆嗎？
 
 您的客戶只會看到您在線上發佈的預約行事曆，以供您選擇要註冊的服務、時間和人員。
+
+### <a name="how-do-i-change-a-bookable-attribute-under-manage-staff"></a>如何變更 [管理人員] 底下的 bookable 屬性？
+
+新增教職員工成員時，他們會收到電子郵件，以接受或拒絕要求。 他們可以開啟相同的電子郵件，並選取 [拒絕]，讓它們成為非 bookable。 目前我們沒有從應用程式內切換的方式。
 
 ### <a name="how-do-end-users-access-the-bookings-app"></a>使用者如何存取預定應用程式？
 
@@ -306,7 +310,7 @@ GDPR 合規性已存在此功能。 「預約」頁面具有「自訂同意」�
    > [!div class="mx-imgBorder"]
    > ![在應用程式啟動器中的 Outlook 影像](../media/bookings-applauncher-outlook.png)
 
-1. 在頁面頂端，選取 [共用行事 **Share** \> **曆**]。
+1. 在頁面頂端，選取 [共用行事 \> **曆**]。
 
    ![「行事曆共用」功能表的影像](../media/bookings-share-calendar.png)
 
@@ -354,11 +358,11 @@ GDPR 合規性已存在此功能。 「預約」頁面具有「自訂同意」�
 
   - [開始使用 Microsoft 預定](get-access.md)
 
-  - [開啟或關閉 Microsoft 預約](turn-bookings-on-or-off.md)
+  - [開啟或關閉 Microsoft Bookings](turn-bookings-on-or-off.md)
 
   - [個別或大量新增使用者](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide.)
 
-  - [將員工新增至預定](add-staff.md)
+  - [向 Bookings 新增員工](add-staff.md)
 
   - [定義範本後要自動化的 API 元件](https://docs.microsoft.com/graph/api/bookingbusiness-post-bookingbusinesses)
 
@@ -366,7 +370,7 @@ GDPR 合規性已存在此功能。 「預約」頁面具有「自訂同意」�
 
   - [預定符合性原則](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?view=o365-worldwide#bookings)
 
-  - [自訂併發布您的預約頁面](customize-booking-page.md)
+  - [定制並發佈您的預約頁面](customize-booking-page.md)
 
   - [租使用者信箱設定](https://docs.microsoft.com/powershell/module/exchange/get-accepteddomain)
 

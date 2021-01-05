@@ -3,7 +3,7 @@ title: Microsoft 365 已告知網路路由
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 1/21/2020
+ms.date: 12/22/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365 已告知網路路由
-ms.openlocfilehash: 40b4345ca80c5e90a07583b83b82368d4a35535a
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: 367f83684a4a200e3ddd630e1412c756d7093da1
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611433"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749548"
 ---
 # <a name="microsoft-365-informed-network-routing-preview"></a>Microsoft 365 已 (預覽告知網路路由) 
 
@@ -85,13 +85,13 @@ Microsoft 正與不同的合作夥伴合作，以啟用與 Microsoft 365 的網�
 
 在下拉式方塊中，選取您已部署的 SD-WAN 方案，以及您想要將其相關聯的資料儲存在網路上的位置。 如需詳細資訊，請參閱 [資料存放區](#data-storage) 一節。
 
-選取 [下一步]。
+選取 **[下一步]**。
 
 ### <a name="step-3-accept-terms-for-sharing-of-data"></a>步驟3：接受共用資料的字詞
 
 請仔細閱讀並認可與在 Microsoft 和您所選的 SD-WAN 方案中共用資料相關聯的提供字詞，然後選取指出的核取方塊。
 
-選取 [下一步]。
+選取 **[下一步]**。
 
 ### <a name="step-4-grant-permissions-to-the-sd-wan-solution"></a>步驟4：將許可權授與 SD-WAN 方案
 

@@ -15,12 +15,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何使用郵件流程規則 (也稱為傳輸規則) 接收使用者向 Microsoft 報告的郵件副本。
-ms.openlocfilehash: 0f3046c9d1962366ffd75353347b6cf7b72afd14
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: ec7145b68548bb5e1d6841387a18e86b74ec2a78
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659846"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751568"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>使用郵件流程規則來查看您的使用者報告給 Microsoft 哪些內容
 
@@ -69,7 +69,7 @@ ms.locfileid: "49659846"
      - `junk@office365.microsoft.com`
      - `abuse@messaging.microsoft.com`
      - `phish@office365.microsoft.com`
-     - `false_positive@messaging.microsoft.com`
+     - `not_junk@office365.microsoft.com`
 
      若要編輯專案，請選取它，然後按一下 [ **編輯** ![ 編輯圖示] ](../../media/ITPro-EAC-EditIcon.png) 。 若要移除專案，請選取它，然後按一下 [ **移除** ![ 移除圖示] ](../../media/ITPro-EAC-DeleteIcon.png) 。
 
@@ -79,7 +79,7 @@ ms.locfileid: "49659846"
 
 4. 您可以進行其他選擇來審核規則、測試規則、在特定時間週期內啟動規則，以及其他設定。 建議您先測試規則，再加以強制執行。
 
-5. 完成後，按一下 [儲存]。
+5. 完成後，請按一下 **[儲存]**。
 
 ## <a name="use-powershell-to-create-a-mail-flow-rule-to-receive-copies-of-reported-messages"></a>使用 PowerShell 建立郵件流程規則，以接收報告訊息的副本
 

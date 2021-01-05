@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 01/04/2021
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用審核和警示原則及資料主體要求來監視及回應個人資料事件。
-ms.openlocfilehash: 296220ac8b34d9ce10c783194b78ca344e746b84
-ms.sourcegitcommit: 9841058fcc95f7c2fed6af92bc3c3686944829b6
+ms.openlocfilehash: 3ae0f2a6528f6188500c7cee7732c6447013eaa6
+ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48377196"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "49749584"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>監視和回應組織中的資料隱私權事件
 
@@ -78,9 +78,6 @@ Microsoft 365 的功能可協助您在 operationalize 相關功能時，監控�
 
 在 Microsoft Stream 中，當使用者從 Azure Active Directory (Azure AD) 中刪除時，如果其名稱在該點之前與發佈的資料流程影片相關聯，則其電子郵件地址仍會與影片產生關聯。 請參閱 [管理從 Microsoft Stream 刪除的使用者](https://docs.microsoft.com/stream/managing-deleted-users) 以將其移除。
 
-## <a name="additional-investigative-tools"></a>其他調查工具
+## <a name="insider-risk-management-as-an-investigative-tool"></a>以調查工具為內部的內幕風險管理
 
-以下是其他兩個工具，可在組織中監控、調查和修正資料隱私權相關的事件時非常有用：
-
-- [Microsoft 365 中的「內幕風險管理](../compliance/insider-risk-management.md)」是 microsoft 規範系統管理中心的一項功能，可讓您偵測、調查和採取行動以應對組織中的危險活動，以協助降低內部風險。
-- Microsoft [365 中的資料調查](../compliance/overview-data-investigations.md)，Microsoft 合規性系統管理中心的功能可搜尋整個 Microsoft 365 的敏感、惡意或誤放資料，然後調查採取適當動作修正該事件的情形。
+[365 microsoft 的內幕風險管理](../compliance/insider-risk-management.md) 是 microsoft 規範系統管理中心的一項功能，可讓您偵測、調查和採取行動，以應對組織中的危險活動，以儘量降低內部風險。

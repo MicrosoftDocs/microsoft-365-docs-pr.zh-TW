@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: 當您使用有效的工作或學校帳戶登入時，使用者可在 Microsoft 365 體驗中取得使用 Cortana 的雲端協助服務，以符合 Office 365 的企業級隱私權、安全性和合規性承諾。
-ms.openlocfilehash: aaef43f33bb06bf43d5e68fbc2509686fc8dd371
-ms.sourcegitcommit: 16cbac5eacadd7b30cbca1fd2435ba9098de5e1c
+ms.openlocfilehash: bd296b19d0e21abb39fe39e2a0bb92d0d84d9034
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48785535"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751332"
 ---
 # <a name="cortana-in-microsoft-365"></a>Microsoft 365 中的 Cortana
 
@@ -37,7 +37,7 @@ Cortana，您的個人生產能力 assistant 可提供 AI 的體驗，以節省�
 
 - 與其他 Office 365 服務一致，Cortana enterprise 服務會符合相同的企業級隱私權、安全性和合規性承諾，反映在 [線上服務條款 (OST) ](https://www.microsoft.com/licensing/product-licensing/products)中。
 
-- 新的 Microsoft 365 體驗（如簡報電子郵件和播放我的電子郵件）將使用 Cortana enterprise 服務來啟用，並完全遵守這些承諾。 這些功能目前 (適用于使用美國地區內信箱的使用者) 市場，以及多國公司與美國信箱的員工。 如需尋找使用位置的詳細資訊，請造訪 [View 的其他屬性值](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts)。
+- 新的 Microsoft 365 體驗（如簡報電子郵件和播放我的電子郵件）將使用 Cortana enterprise 服務來啟用，並完全遵守這些承諾。 這些功能目前可供全球通用 (標準多租使用者) 使用。 如需尋找使用位置的詳細資訊，請造訪 [View 的其他屬性值](https://docs.microsoft.com/microsoft-365/enterprise/view-user-accounts-with-microsoft-365-powershell?view=o365-worldwide#view-additional-property-values-for-accounts)。
 
 - 使用者可能會透過使用 Windows 10 (版本2004和更新版本) 中的 Cortana 與用戶端應用程式（例如 iOS 和 Android 的 Outlook）連接到此處所述的 Cortana enterprise 服務，以進行個別授權條款。 
 
@@ -59,7 +59,7 @@ Cortana enterprise 服務處理來自使用者的查詢、完成使用者要求�
 |:-----|:-----|
 |**儲存**  <br/> |客戶資料儲存在 Office 365 雲端內部的 Microsoft 伺服器上。 您的資料是租使用者的一部分。 <br/><br/>不保留語音音訊。  <br/> |
 |**保留在地理位置**  <br/> |客戶資料儲存于地理位置的 Office 365 雲端內部的 Microsoft 伺服器上。 您的資料是租使用者的一部分。  <br/> |
-|**保留**  <br/> |當租使用者管理員關閉或 GDPR 資料主體許可權刪除要求時，會刪除客戶資料。 <br/><br/>不保留語音音訊。  <br/> |
+|**保留原則**  <br/> |當租使用者管理員關閉或 GDPR 資料主體許可權刪除要求時，會刪除客戶資料。 <br/><br/>不保留語音音訊。  <br/> |
 |**處理和機密性**  <br/> |在處理客戶資料和個人資料 (的人員) ，只會在客戶的指示上處理這類資料，而 (ii) 則可以維護這類資料的機密性和安全性，即使其合約結束也是一樣。  <br/> |
 |**Usage**  <br/> |Microsoft 只會使用客戶資料來供應商定的服務，以及與這些服務相容的目的。 若要開發及改善模型，機器教學就是其中一個用途。 機器學習是在 Office 365 雲端內完成，而且不需要人工查看、審查或標記客戶資料。 <br/><br/>您的資料不會用來瞄準廣告。  <br/> |
 
@@ -95,11 +95,11 @@ Windows 10 版本2004和更新版本中的 cortana，符合 Cortana enterprise �
 
 1. 開啟 [小組行動應用程式]，或移至 Microsoft 小組顯示幕的 [環境 (首頁) ] 畫面。
 
-2. 在小組行動應用程式中，移至 [ **設定** ]。 在 [Microsoft 小組] 顯示中，選取 [使用者頭像]，然後選取 [設定]。 如果已啟用 Cortana，請說 &#8220;Cortana，請移至 [設定]。 &#8221;
+2. 在小組行動應用程式中，移至 [ **設定**]。 在 [Microsoft 小組] 顯示中，選取 [使用者頭像]，然後選取 [設定]。 如果已啟用 Cortana，請說 &#8220;Cortana，請移至 [設定]。 &#8221;
 
-3. 選取 [ **Cortana** ]。
+3. 選取 [ **Cortana**]。
 
-4. 視您是否要在裝置上的小娜語音協助，將切換移至 [ **開啟** ] 或 [ **關閉** ]。
+4. 視您是否要在裝置上的小娜語音協助，將切換移至 [ **開啟** ] 或 [ **關閉**]。
 
 [深入瞭解小組中的 Cortana 語音協助](https://docs.microsoft.com/microsoftteams/cortana-in-teams)
 
@@ -115,9 +115,9 @@ Windows 10 版本2004和更新版本中的 cortana，符合 Cortana enterprise �
 
 1. 開啟 Outlook mobile。
 
-2. 移至 [ **設定** ]。
+2. 移至 [ **設定**]。
   
-3. 選取 [ **播放我的電子郵件** ]。
+3. 選取 [ **播放我的電子郵件**]。
 
 4. 在您要停用的帳戶上，將切換移至 [關閉]。
 
@@ -141,7 +141,7 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 以下是兩種方式來考慮 Cortana 在企業中的運作方式：
 
-**使用 cortana enterprise 服務之組織的新體驗** ： cortana enterprise 服務的設計目的是為了符合組織的安全性和合規性需求： 
+**使用 cortana enterprise 服務之組織的新體驗**： cortana enterprise 服務的設計目的是為了符合組織的安全性和合規性需求： 
 
 1. 這是一項新服務，在此檔中會加以討論。
 
@@ -151,7 +151,7 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 4. IT 系統管理員在使用 Office ProPlus 應用程式時，系統管理員一定會具有 Cortana 選用的連接體驗的控制項，類似選用的連線體驗。  
 
-**現有的消費者服務** ： Cortana 選用聯機服務主要是針對使用者經驗所設計，目前是在 Windows 10 (版本1909和更舊版本) 以及 IOS 和 Android 上的 Cortana 應用程式中傳遞。
+**現有的消費者服務**： Cortana 選用聯機服務主要是針對使用者經驗所設計，目前是在 Windows 10 (版本1909和更舊版本) 以及 IOS 和 Android 上的 Cortana 應用程式中傳遞。
 
 1. 這些經驗可以啟用天氣、新聞及流量等功能。
 
@@ -159,10 +159,10 @@ Cortana 會傳送個人化簡報電子郵件，其中包含您用來將其標記
 
 關閉 Cortana 對您組織的 Microsoft 主控資料的存取
 
-1. 在 Microsoft 365 系統管理中心中，選取 [ **設定**  >  **組織設定** ]，然後選取 [ **Cortana** ]。
+1. 在 Microsoft 365 系統管理中心中，選取 [**設定**  >  **組織設定**]，然後選取 [ **Cortana**]。
 
 2. 取消選取 [ **允許 Windows 10 (版本1909和更) 舊版本中的 cortana] 的核取方塊，以及 iOS 和 Android 上的 cortana 應用程式，以在組織中代表人員，存取 Microsoft 主控的資料，** 以停用 Cortana 連線體驗。
 
-3. 選取 **[儲存變更]** 。
+3. 選取 **[儲存變更]**。
 
 針對 [Microsoft 服務合約](https://go.microsoft.com/fwlink/p/?LinkId=2109174) 和 [microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)所控制的服務，microsoft 是資料控制器。 就像資料控制者一樣，Microsoft 會使用資料，依照 [Microsoft 隱私權聲明](https://privacy.microsoft.com/privacystatement)來改進產品和服務。
