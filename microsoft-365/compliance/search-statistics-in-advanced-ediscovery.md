@@ -3,7 +3,7 @@ title: 預先探索中的搜尋統計資料
 f1.keywords:
 - NOCSH
 ms.author: markjjo
-author: esclee
+author: markjjo
 manager: laurawi
 ms.date: ''
 audience: Admin
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 透過查看在高級 eDiscovery 中執行集合搜尋之後所產生的統計資料，以驗證搜尋結果。
-ms.openlocfilehash: ef5653a76d94272ba5f608149648f1421198929a
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 5b6cfdaffc7851a00035a4edcc9d490b229c455d
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48286079"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750774"
 ---
 # <a name="search-statistics-in-advanced-ediscovery"></a>在高級 eDiscovery 中搜尋統計資料
 

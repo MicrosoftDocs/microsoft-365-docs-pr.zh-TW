@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 當保管人新增至高級 eDiscovery 案例時，被視為部分索引的任何內容都會重新處理，使其完全可供搜尋。
-ms.openlocfilehash: 95e087884b65628565e596dc8ae9f33aadc4cd9f
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 908d01cacc103639e1f9efe965240c33a5296ba9
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527553"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49750754"
 ---
 # <a name="advanced-indexing-of-custodian-data"></a>進階的監管人資料索引
 
-當保管人新增至高級 eDiscovery 案例時，被視為部分索引的任何內容都會重新處理，使其完全可供搜尋。  此處理程式稱為「*高級索引*」。 內容可能會因原因而部分編制索引，包括映射的存在、不支援的檔案類型，或是遇到索引檔案大小限制。
+當保管人新增至高級 eDiscovery 案例時，被視為部分索引的任何內容都會重新處理，使其完全可供搜尋。  此處理程式稱為「 *高級索引*」。 內容可能會因原因而部分編制索引，包括映射的存在、不支援的檔案類型，或是遇到索引檔案大小限制。
 
 若要深入瞭解處理支援和部分索引項目目的詳細資訊，請參閱：
 
@@ -39,17 +39,17 @@ ms.locfileid: "46527553"
 
 ## <a name="viewing-advanced-indexing-results"></a>查看高級索引結果
 
-在高級索引處理常式完成之後，您就可以深入瞭解重新處理的有效性。  在案例的 [**處理**] 索引標籤上，在 [高級索引結果] 視圖中，圖表會列出新增至*混合索引*的專案數。  混合索引是指 Advanced eDiscovery 儲存重新處理內容的位置。
+在高級索引處理常式完成之後，您就可以深入瞭解重新處理的有效性。  在案例的 [ **處理** ] 索引標籤上，在 [高級索引結果] 視圖中，圖表會列出新增至 *混合索引* 的專案數。  混合索引是指 Advanced eDiscovery 儲存重新處理內容的位置。
 
 此視圖也包含需要修正的專案數，以及另一個依檔案類型的錯誤圖表。 如需詳細資訊，請參閱：
 
-- [處理資料時發生補救錯誤](error-remediation.md)
+- [處理資料時發生補救錯誤](error-remediation-when-processing-data-in-advanced-ediscovery.md)
 
 - [單一項目錯誤補救](single-item-error-remediation.md)
 
 ## <a name="updating-the-advanced-index-for-custodians"></a>更新保管人的高級索引
 
-當系統管理員新增至高級 eDiscovery 案例時，會重新處理所有部分索引項目目。 不過，隨著時間的推移，可將更多的索引項目目新增至使用者的信箱或 OneDrive 帳戶。  如有必要，您可以更新特定保管人的索引。 如需詳細資訊，請參閱[Manage 保管人 In Advanced eDiscovery case](manage-new-custodians.md#re-index-custodian-data)。 您也可以在案例中，按一下 [**處理**] 索引標籤上的 [**更新索引**]，以更新所有保管人的索引。
+當系統管理員新增至高級 eDiscovery 案例時，會重新處理所有部分索引項目目。 不過，隨著時間的推移，可將更多的索引項目目新增至使用者的信箱或 OneDrive 帳戶。  如有必要，您可以更新特定保管人的索引。 如需詳細資訊，請參閱 [Manage 保管人 In Advanced eDiscovery case](manage-new-custodians.md#re-index-custodian-data)。 您也可以在案例中，按一下 [**處理**] 索引標籤上的 [**更新索引**]，以更新所有保管人的索引。
 
 > [!NOTE]
 > 更新保管人索引是一個長時間的處理常式。 建議您不要在案例中一天更新一次索引。

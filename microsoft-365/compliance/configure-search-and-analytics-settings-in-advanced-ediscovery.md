@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
 description: 設定案例中套用至所有審閱集的高級 eDiscovery 設定。 這包括分析和光學字元辨識的設定。
-ms.openlocfilehash: dfacab79f635a817b127614f524d00b0297981fb
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 11932d2172d797ae1913cf28e713d57805ace122
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277084"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751300"
 ---
 # <a name="configure-search-and-analytics-settings-in-advanced-ediscovery"></a>在高級電子檔探索中設定搜尋及分析設定
 
@@ -50,7 +50,7 @@ ms.locfileid: "48277084"
 
 ## <a name="near-duplicates-and-email-threading"></a>接近重複專案和電子郵件執行緒
 
-在本節中，您可以設定重複偵測、接近重複偵測和電子郵件執行緒的參數。 如需詳細資訊，請參閱 [近期重複偵測](near-duplicates.md) 和 [電子郵件執行緒](email-threading.md)。
+在本節中，您可以設定重複偵測、接近重複偵測和電子郵件執行緒的參數。 如需詳細資訊，請參閱 [近期重複偵測](near-duplicate-detection-in-advanced-ediscovery.md) 和 [電子郵件執行緒](email-threading-in-advanced-ediscovery.md)。
 
 - **接近重複/電子郵件執行緒：** 開啟時，當您對檢查集中的資料執行分析時，會在工作流程中包含重複偵測、重複偵測和電子郵件執行緒。
 

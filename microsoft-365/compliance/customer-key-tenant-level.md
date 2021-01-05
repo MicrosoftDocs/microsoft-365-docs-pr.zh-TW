@@ -1,5 +1,5 @@
 ---
-title: '在承租人層級 (公開預覽的 Microsoft 365 客戶金鑰) '
+title: 租用戶等級的 Microsoft 365 客戶金鑰 (公開預覽)
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 瞭解如何為您的 Microsoft 365 租使用者中的所有資料設定客戶金鑰。
-ms.openlocfilehash: eedf0e8c9d56131016bc798af8ae471df3005bdc
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: f14bbc0cb6dd29883efa4c8d294d8d65cae98641
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712521"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751262"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>在承租人層級 (公開預覽的 Microsoft 365 客戶金鑰概述) 
 
@@ -59,7 +59,7 @@ Microsoft 小組檔案和部分小組的呼叫和會議錄製會儲存在商務�
 開始之前，請確定下列各項：
 
 - 您必須使用具有合規性系統管理員角色的工作或學校帳戶，以在租使用者層級設定客戶金鑰。
-- 確定您的組織有適當的授權。 使用企業合約或雲端服務提供者，以支付已開發票的 Azure 訂閱。 客戶機碼不支援使用「隨付」方案或信用卡使用信用卡購買的 Azure 訂閱。 從 office 365 的2020年4月1日開始，于 office 365 E5，M365 E5，M365 E5 規範，以及 M365 E5 & 控管 SKUs 中提供的資訊保護。 Office 365 Advanced 相容性 SKU 已無法再提供購置新的授權。 現有的 Office 365 Advanced 相容性授權會繼續受到支援。 雖然在具有適當授權的承租人下可以啟用服務，但您仍然應該確定所有從服務受益的使用者都有適當的授權。 您將需要下列其中一個授權：
+- 確定您的組織有適當的授權。 使用企業合約或雲端服務提供者，以支付已開發票的 Azure 訂閱。 客戶機碼不支援使用「隨付」方案或信用卡使用信用卡購買的 Azure 訂閱。 從 office 365 的2020年4月1日開始，于 office 365 E5，M365 E5，M365 E5 規範，以及 M365 E5 & 控管 SKUs 中提供的資訊保護。 Office 365 Advanced 相容性 SKU 已無法再提供購置新的授權。 現有的 Office 365 Advanced 相容性授權會繼續受到支援。 雖然在具有適當授權的承租人下可以啟用服務，但您仍然應該確定所有從服務受益的使用者都有適當的授權。
 
 ### <a name="create-two-new-azure-subscriptions"></a>建立兩個新的 Azure 訂閱
 

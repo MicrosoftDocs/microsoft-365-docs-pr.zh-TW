@@ -1,5 +1,5 @@
 ---
-title: '如何在通訊合規性 (預覽中重新培訓分類器) '
+title: 如何在通訊合規性中重新培訓分類器
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何在通訊合規性中提供對 trainable 分類器的意見反應。
-ms.openlocfilehash: 1466c211e3a4958f58a7c1f1a6a5a77bed881d60
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: cdb8787715c3e022dfa0aa17cd83cc405aeef955
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48132307"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752647"
 ---
-# <a name="how-to-retrain-a-classifier-in-communications-compliance-preview"></a>如何在通訊合規性 (預覽中重新培訓分類器) 
+# <a name="how-to-retrain-a-classifier-in-communications-compliance"></a>如何在通訊合規性中重新培訓分類器
 
 Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，其範例可供您查看。 經過訓練之後，您可以使用它來識別應用 Office 敏感度標籤、通訊合規性原則及保留標籤原則的專案。
 
 本文說明如何透過提供額外的意見反應，以改善自訂 trainable 分類器和部分預先訓練的分類器的效能。
 
-若要深入瞭解不同類型的分類器，請參閱 [瞭解如何 trainable 的分類器 (預覽) ](classifier-learn-about.md)。
+若要深入瞭解不同類型的分類器，請參閱 [瞭解如何 trainable 的分類](classifier-learn-about.md)器。
 
 ## <a name="permissions"></a>權限
 
@@ -52,7 +52,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 > [!NOTE]
 > 分類器必須已發佈且在使用之前才能 retrained。
 
-## <a name="how-to-retrain-a-classifier-in-communication-compliance-policies-preview"></a>如何在通訊相容性原則中重新培訓分類 (預覽) 
+## <a name="how-to-retrain-a-classifier-in-communication-compliance-policies"></a>如何重新培訓通訊相容性原則中的分類器
 
 1. 開啟以分類器為條件的通訊相容性原則，並從 [ **暫** 止] 清單中選擇一個已識別的專案。
 2. 選擇省略號並 **改進分類**。
@@ -67,8 +67,8 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 > [!IMPORTANT]
 > 此資訊會前往您租使用者中的分類器， **不會傳回 Microsoft**。
 
-6.  開啟**Microsoft 365 規範中心**的 [**資料分類**] 頁面。
-7. 開啟 **Trainable 的分類 (預覽) **。
+6.  開啟 **Microsoft 365 規範中心** 的 [**資料分類**] 頁面。
+7. 開啟 **Trainable 的分類** 器。
 8. 通訊合規性原則中使用的分類程式會出現在 [ **重新訓練** ] 標題下。
 
 ![以重新培訓狀態分類的分類器](../media/classifier-retraining.png)
@@ -94,5 +94,5 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 
 ## <a name="see-also"></a>另請參閱
 
-- [深入瞭解 trainable 的分類器 (預覽) ](classifier-learn-about.md)
+- [深入瞭解 trainable 的分類器](classifier-learn-about.md)
 - [SharePoint Server 中預設編目的檔案副檔名及剖析的檔案類型](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

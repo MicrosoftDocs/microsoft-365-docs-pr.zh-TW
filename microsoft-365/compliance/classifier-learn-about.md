@@ -1,5 +1,5 @@
 ---
-title: 深入瞭解可訓練分類器（預覽版）
+title: 深入瞭解 trainable 的分類器
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是將它肯定和否定的範例，以查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護 (DLP) 或保留原則。
-ms.openlocfilehash: 77ebefe338f393a916f0a6844b42b16e3d011d49
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: d5e7eb891e4cff2fc220d1e9264839d05ed11bd2
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620159"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752637"
 ---
-# <a name="learn-about-classifiers-preview"></a>瞭解 (預覽的分類器) 
+# <a name="learn-about-classifiers"></a>深入瞭解分類器
 
 分類及標示內容，使其能受到保護和正確處理，是資訊保護訓練科目的開始位置。 Microsoft 365 有三種方式可對內容進行分類。
 
@@ -103,7 +103,7 @@ Microsoft 365 隨附五個預先訓練的分類器：
 - **猥褻** 語言：偵測特定類別的冒犯性語言的文字專案，包含 embarrass 大部分人員的運算式
 - **威脅**：偵測特定類別的冒犯性語言的文字專案與威脅以認可暴力或對人員或財產造成實體損毀或損毀的威脅
 
-這些會出現在 **Microsoft 365 規範中心**  >  **資料分類 (預覽)**  >  **Trainable 的分類** 器視圖中，狀態為 `Ready to use` 。
+這些會出現在 **Microsoft 365 規範中心**  >  **資料分類** Trainable 使用中的分類器視圖中，  >  狀態為 `Ready to use` 。
 
 ![分類器-預先訓練的分類器](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -137,7 +137,7 @@ Microsoft 365 隨附五個預先訓練的分類器：
 
 - [保留標籤](retention.md)
 - [資料外洩防護 (DLP)](data-loss-prevention-policies.md)
-- [敏感性標籤](sensitivity-labels.md)
-- [敏感資訊類型實體定義](sensitive-information-type-entity-definitions.md)
+- [敏感度標籤](sensitivity-labels.md)
+- [敏感性資訊類型實體定義](sensitive-information-type-entity-definitions.md)
 - [檔指紋列印](document-fingerprinting.md)
 - [完全相符的資料](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

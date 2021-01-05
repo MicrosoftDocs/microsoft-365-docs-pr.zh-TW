@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 您可以在高級 eDiscovery 的審閱集中修正檔中的處理錯誤，而不必遵循大量的錯誤修正程式。
-ms.openlocfilehash: c318148900d891304ebcb9b4a88abfe52f43c05e
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: 8e5d8d00f507dc5792a1beda018d4c76632b82f7
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285839"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751580"
 ---
 # <a name="single-item-error-remediation-in-advanced-ediscovery"></a>高級 eDiscovery 中的單一專案錯誤修正
 
@@ -33,7 +33,7 @@ ms.locfileid: "48285839"
 
 ![針對含處理錯誤的檔顯示橫幅](../media/SIERimage1.png)
 
-您也可以在[審閱集中查詢檔](review-set-search.md)時使用**處理狀態**條件，搜尋處理錯誤的檔。
+您也可以在 [審閱集中查詢檔](review-set-search.md)時使用 **處理狀態** 條件，搜尋處理錯誤的檔。
 
 ![使用處理狀態條件來搜尋錯誤檔](../media/SIERimage2.png)
 
@@ -53,7 +53,7 @@ ms.locfileid: "48285839"
 
 若要修正單一檔，請遵循下列步驟：
 
-1. 按一下 [**下載**原始檔案]，將檔案的  >  **Download original**複本下載到本機電腦。
+1. 按一下 [**下載** 原始檔案]，將檔案的  >  複本下載到本機電腦。
 
    ![下載包含處理錯誤的檔](../media/SIERimage5.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "48285839"
 
     ![您可以在「審閱集」中以原生格式查看修正的檔案。](../media/SIERimage9.png)
 
-如需修正檔時的詳細資訊，請參閱修正檔案時會 [發生什麼情況](error-remediation.md#what-happens-when-files-are-remediated)。
+如需修正檔時的詳細資訊，請參閱修正檔案時會 [發生什麼情況](error-remediation-when-processing-data-in-advanced-ediscovery.md#what-happens-when-files-are-remediated)。
 
 ## <a name="search-for-remediated-documents"></a>搜尋修正的檔
 

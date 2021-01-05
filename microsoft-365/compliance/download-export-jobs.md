@@ -17,12 +17,12 @@ search.appverid:
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-mar2020
 description: 安裝和使用 Azure Storage Explorer，以從 Advanced eDiscovery 的審閱集中下載已匯出的檔。
-ms.openlocfilehash: 4b09521b4a72fc8fda68f5892c899fe76a066809
-ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
+ms.openlocfilehash: 094dcb4ecc8b1ca73a7ec0238ed20b27d4c16e72
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "47399160"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751290"
 ---
 # <a name="download-export-jobs-in-an-advanced-ediscovery-case"></a>在高級 eDiscovery 案例中下載匯出工作
 
@@ -74,11 +74,11 @@ ms.locfileid: "47399160"
 
 6. 在 [連線 **摘要** ] 頁面上，複查連線資訊，然後按一下 **[連接]**。
 
-    會開啟 [**儲存帳戶**] (所連接的) 容器] 下 (的 [ **Blob 容器**] 節點  >  ** (Attached Containers) ** \> 。
+    會開啟 [**儲存帳戶**] (所連接的) 容器] 下 (的 [ **Blob 容器**] 節點  >   \> 。
 
     ![在 Blob 容器節點中匯出工作](../media/AzureStorageConnect5.png)
 
-    包含以步驟4顯示名稱命名的容器。 此容器包含您已建立之每個匯出工作的資料夾。 這些資料夾是以對應至匯出工作識別碼的識別碼命名。 在 [**工作**] 索引標籤上，您可以在 [支援] 清單中的 [**支援資訊**] 頁面上，找到這些匯出 IDs (和 [支援]**的匯出) **名稱。
+    包含以步驟4顯示名稱命名的容器。 此容器包含您已建立之每個匯出工作的資料夾。 這些資料夾是以對應至匯出工作識別碼的識別碼命名。 在 [**工作**] 索引標籤上，您可以在 [支援] 清單中的 [**支援資訊**] 頁面上，找到這些匯出 IDs (和 [支援]**的匯出)** 名稱。
 
 7. 按兩下 [匯出] 工作資料夾以將其開啟。
 
@@ -88,7 +88,7 @@ ms.locfileid: "47399160"
 
    「匯出工作」資料夾包含下列專案。 匯出資料夾中的實際專案是由建立匯出工作時設定的匯出選項所決定。 如需詳細資訊，請參閱 [從審閱集匯出檔](export-documents-from-review-set.md)。
 
-    - Export_load_file.csv：此 CSV 檔是包含每個匯出檔相關資訊的詳細資料匯出報告。 檔案由每個檔的中繼資料屬性的欄所組成。 如需此報告中包含之中繼資料的清單和描述，請參閱[Advanced eDiscovery 中檔元資料欄位](document-metadata-fields.md)之表格中的**匯出**的功能變數名稱欄。
+    - Export_load_file.csv：此 CSV 檔是包含每個匯出檔相關資訊的詳細資料匯出報告。 檔案由每個檔的中繼資料屬性的欄所組成。 如需此報告中包含之中繼資料的清單和描述，請參閱 [Advanced eDiscovery 中檔元資料欄位](document-metadata-fields-in-advanced-ediscovery.md)之表格中的 **匯出** 的功能變數名稱欄。
     
     - Summary.txt：一個文字檔，包含匯出摘要，包括匯出統計資料。
     

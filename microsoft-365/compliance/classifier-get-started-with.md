@@ -1,5 +1,5 @@
 ---
-title: 開始使用可訓練分類器（預覽版）
+title: 開始使用 trainable 分類器
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,20 +18,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 分類器是一種工具，可讓您訓練以辨識各種類型的內容，其範例可供您查看。 本文說明如何建立及訓練自訂的分類器，以及如何重新導流以提高精確度。
-ms.openlocfilehash: 9fe50f7faada77492fd93a86d0c3549cc8e1d361
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+ms.openlocfilehash: bca1de5edc3efd38f943b02091c3f47d832e6a19
+ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072962"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49752657"
 ---
-# <a name="get-started-with-trainable-classifiers-preview"></a>開始使用可訓練分類器（預覽版）
+# <a name="get-started-with-trainable-classifiers"></a>開始使用 trainable 分類器
 
 Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，其範例可供您查看。 經過訓練之後，您可以使用它來識別應用 Office 敏感度標籤、通訊合規性原則及保留標籤原則的專案。
 
 建立自訂的 trainable 分類器優先于提供以人工方式挑選並正確符合類別的範例。 然後，在處理完這類功能之後，您可以透過提供正負樣本的混合來測試分類器的預測能力。 本文說明如何建立及訓練自訂的分類器，以及如何透過重新培訓，改善自訂 trainable 分類器和預先訓練的分類器的效能。
 
-若要深入瞭解不同類型的分類器，請參閱 [瞭解如何 trainable 的分類器 (預覽) ](classifier-learn-about.md)。
+若要深入瞭解不同類型的分類器，請參閱 [瞭解如何 trainable 的分類](classifier-learn-about.md)器。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -44,7 +44,7 @@ Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各�
 在 UI 中存取分類器： 
 
 - 全域管理員必須加入宣告租使用者，才能建立自訂分類符。
-- 需要合規性管理員或資料調查角色，才能訓練分類器。
+- 訓練分類器需要合規性系統管理員角色。
 
 在下列情況下，您將需要具有這些許可權的帳戶才能使用分類器：
 
@@ -101,11 +101,11 @@ Trainable 分類器處理足夠的肯定樣本來建立預測模型之後，您�
    > [!TIP]
    > 如果您為種子資料建立新的網站和資料夾，至少要有一個小時的時間進行索引，才可建立會使用該植入資料的 trainable 分類器。
 
-3. 使用合規性管理員或安全性系統管理員角色存取，登入 microsoft 365 合規性中心，並開啟 **microsoft 365 規範中心** 或 **microsoft 365 的安全性中心**  >  **資料分類** 。
+3. 使用合規性管理員或安全性系統管理員角色存取，登入 microsoft 365 合規性中心，並開啟 **microsoft 365 規範中心** 或 **microsoft 365 的安全性中心**  >  **資料分類**。
 
 4. 選擇 [ **Trainable 類元** ] 索引標籤。
 
-5. 選擇 [ **建立 trainable 的分類器** ]。
+5. 選擇 [ **建立 trainable 的分類器**]。
 
 6. 針對 `Name` `Description` 您想要此 trainable 的分類器識別之專案類別的 [和] 欄位填入適當的值。
 

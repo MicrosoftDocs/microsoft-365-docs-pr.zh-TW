@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-mar2020
 description: 使用關鍵字和條件，可在 Microsoft 365 中使用 [Advanced eDiscovery] 搜尋資料時縮小搜尋範圍。
-ms.openlocfilehash: 38322963f04ad67d8675247bdd754ffb1d2f13e8
-ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
+ms.openlocfilehash: 8ec1e099625bb081f8a915f08ac818fddcc2b60d
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49588550"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751110"
 ---
 # <a name="build-search-collection-queries-in-advanced-ediscovery"></a>在高級電子檔探索中建立搜尋集合查詢
 
@@ -39,7 +39,7 @@ ms.locfileid: "49588550"
 
 ![使用關鍵字清單取得查詢中每個關鍵字的統計資料](../media/KeywordListSearch.png)
 
-為什麼要使用關鍵字清單？ 您可以取得統計資料，顯示與關鍵字清單中每個關鍵字相符的專案數目。 這可協助您快速識別最 (及最低) 有效的關鍵字。 您也可以使用關鍵字片語 (關鍵字] 清單中某列的括弧括住) 。 如需搜尋統計資料的詳細資訊，請參閱 [搜尋統計資料](search-statistics.md)。
+為什麼要使用關鍵字清單？ 您可以取得統計資料，顯示與關鍵字清單中每個關鍵字相符的專案數目。 這可協助您快速識別最 (及最低) 有效的關鍵字。 您也可以使用關鍵字片語 (關鍵字] 清單中某列的括弧括住) 。 如需搜尋統計資料的詳細資訊，請參閱 [搜尋統計資料](search-statistics-in-advanced-ediscovery.md)。
 
 ## <a name="conditions"></a>條件
 

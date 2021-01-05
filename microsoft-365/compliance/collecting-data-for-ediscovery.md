@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: 瞭解如何使用 Advanced eDiscovery 中的搜尋工具，識別要在調查中查看的檔組。
 ms.custom: seo-marvel-2020
-ms.openlocfilehash: 725c289324a8e4d5bd4d7a7b9ddd9e091b6d6241
-ms.sourcegitcommit: a3c2c737995088c1bad3b12ab401a7ef242b0272
+ms.openlocfilehash: b69127f1a372a9b843b9c7dac1b2909dd80b2988
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47956196"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751263"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>在高級 eDiscovery 中收集案例的資料
 
@@ -38,7 +38,7 @@ ms.locfileid: "47956196"
 
 ## <a name="view-search-results-and-statistics"></a>查看搜尋結果和統計資料
 
-內容搜尋有兩個元件：統計資料 (估計) 和預覽。 每個元件都完成之後，您會看到 [**搜尋**] 索引標籤的 [搜尋] 索引標籤上的**In progress**對應欄的狀態會**顯示為 [** **已完成**]。
+內容搜尋有兩個元件：統計資料 (估計) 和預覽。 每個元件都完成之後，您會看到 [**搜尋**] 索引標籤的 [搜尋] 索引標籤上的對應欄的狀態會 **顯示為 [** **已完成**]。
 
 完成搜尋預估後，請選取搜尋以顯示飛出頁面，此頁面會顯示搜尋結果的一些高層次統計資料。 此時，[ **統計資料]** 按鈕將會作用中。 您可以選取它，以查看搜尋統計資料，例如：
 
@@ -46,7 +46,7 @@ ms.locfileid: "47956196"
 - 主要位置
 - 查詢
 
-如需搜尋統計資料的詳細資訊，請參閱 [搜尋統計資料](search-statistics.md)。
+如需搜尋統計資料的詳細資訊，請參閱 [搜尋統計資料](search-statistics-in-advanced-ediscovery.md)。
 
 完成預覽後， **預覽** 按鈕將會作用中。 選取它，以預覽結果的抽樣子集。
 
