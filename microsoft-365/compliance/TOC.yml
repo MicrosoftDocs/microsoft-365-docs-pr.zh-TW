@@ -122,13 +122,13 @@
           href: what-the-dlp-functions-look-for.md
     - name: 可訓練分類器
       items:
-        - name: 深入瞭解可訓練分類器（預覽版）
+        - name: 深入了解可訓練分類器
           href: classifier-learn-about.md
-        - name: 開始使用可訓練分類器（預覽版）
+        - name: 開始使用可訓練分類器
           href: classifier-get-started-with.md
-        - name: 如何重新定型通訊合規性的分類器（預覽版）
+        - name: 如何重新定型通訊合規性的分類器
           href: classifier-how-to-retrain-comms-compliance.md
-        - name: 如何重新定型內容總管的分類器（預覽版）
+        - name: 如何重新定型內容總管的分類器
           href: classifier-how-to-retrain-content-explorer.md
     - name: 資料分類
       items:
@@ -629,7 +629,7 @@
             - name: 關鍵字查詢與搜尋條件
               href: keyword-queries-and-search-conditions.md
             - name: 搜尋統計資料
-              href: search-statistics.md
+              href: search-statistics-in-advanced-ediscovery.md
             - name: 將搜尋結果新增至檢閱集
               href: add-data-to-review-set.md
         - name: 管理檢閱集
@@ -792,83 +792,6 @@
               href: run-reports-in-advanced-ediscovery.md
     - name: 舊版電子文件探索工具淘汰
       href: legacy-ediscovery-retirement.md
-- name: 管理資料調查
-  items:
-    - name: 資料調查中的概觀
-      href: overview-data-investigations.md
-    - name: 管理資料外洩事件
-      href: manage-data-spillage-incidents.md
-    - name: 指派資料調查的權限
-      href: data-investigations-permissions.md
-    - name: 建立新的調查
-      href: create-new-investigation.md
-    - name: 搜尋調查中的資料
-      href: search-for-data.md
-      items:
-        - name: 建立搜尋查詢
-          href: build-search-queries.md
-        - name: 搜尋統計資料
-          href: search-statistics.md
-    - name: 檢閱辨識項中的資料
-      href: review-data-in-evidence.md
-      items:
-        - name: 查詢資料
-          href: evidence-query.md
-        - name: 標記文件
-          href: tag-documents.md
-        - name: 標註及校訂文件
-          href: annotate-and-redact-documents.md
-        - name: 載入非 Office 365 資料
-          href: load-non-office365-data.md
-        - name: 處理資料時的錯誤補救
-          href: error-remediation.md
-        - name: 從其原始位置刪除項目
-          href: delete-items-from-original-locations.md
-    - name: 執行分析以更快速地調查
-      href: run-analytics-to-investigate-faster.md
-      items:
-        - name: 電子郵件執行緒
-          href: email-threading.md
-        - name: 近似重複項偵測
-          href: near-duplicates.md
-        - name: 佈景主題
-          href: themes.md
-        - name: 使用相關性模組
-          href: use-relevance-module.md
-    - name: 管理調查中可疑的人員
-      href: manage-people-of-interest.md
-      items:
-        - name: 對調查中人員的資料編製索引
-          href: index-data-people-of-interest.md
-        - name: 檢視調查中人員的稽核活動
-          href: view-people-of-interest-activity.md
-    - name: 從調查匯出資料
-      href: export-data.md
-      items:
-        - name: 從辨識項匯出文件
-          href: export-documents-from-incident.md
-        - name: 下載匯出工作
-          href: download-export-jobs-from-a-data-investigation.md
-    - name: 設定調查設定
-      items:
-        - name: 從調查新增或移除成員
-          href: add-remove-members.md
-        - name: 設定搜尋和分析設定
-          href: configure-search-analytics-settings.md
-        - name: 關閉或刪除調查
-          href: close-or-delete-investigation.md
-    - name: 資料調查參考
-      items:
-        - name: 版本資訊
-          href: data-investigations-release-notes.md
-        - name: 資料調查中的限制
-          href: limits-datainvestigations.md
-        - name: 支援的檔案類型
-          href: supported-filetypes-datainvestigations.md
-        - name: 下載中繼資料欄位
-          href: document-metadata-fields.md
-        - name: 管理工作
-          href: manage-jobs.md
 - name: 管理保留
   items:
     - name: 如何找出位於信箱的保留類型
