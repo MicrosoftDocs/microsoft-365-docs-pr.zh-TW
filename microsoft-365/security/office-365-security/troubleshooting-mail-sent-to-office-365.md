@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 本文提供將電子郵件傳送至 Microsoft 365 收件匣之問題的疑難排解資訊 & 大量郵遞至 Microsoft 365 客戶的最佳作法。
-ms.openlocfilehash: 8b7c008f827a579e234d8a8feab008d36ecfe064
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 3504d7518073826f3979c3c837c58d4406886b41
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615404"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760479"
 ---
 # <a name="troubleshooting-mail-sent-to-microsoft-365"></a>疑難排解傳送至 Microsoft 365 的郵件
 
@@ -128,7 +128,7 @@ EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exch
 
 - 包含在郵件本文內的重新導向應該類似且一致，而且不會有多個變化。 在此內容中的重新導向是指離郵件的任何東西，例如連結和檔。 如果您有大量的廣告或取消訂閱連結，或更新設定檔連結，它們都應該指向相同的網域。 例如：
 
-  正確：
+  正確的 (所有網域) 相同：
 
   `unsubscribe.bulkmailer.com`
 
@@ -136,7 +136,7 @@ EOP 篩選技術是專門為 Microsoft 365 及其他 Microsoft 產品（如 Exch
 
   `options.bulkmailer.com`
 
-  不正確：
+  不正確 (所有網域) 不同：
 
   `unsubscribe.bulkmailer.com`
 

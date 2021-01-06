@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 trainable 分類器是一種工具，可讓您訓練以辨識各種類型的內容，方法是將它肯定和否定的範例，以查看。 在訓練分類器之後，請確認其結果是否正確。 然後，您可以使用它來搜尋組織的內容，並將其分類，以套用保留或敏感度標籤，或將其包含在資料遺失防護 (DLP) 或保留原則。
-ms.openlocfilehash: d5e7eb891e4cff2fc220d1e9264839d05ed11bd2
-ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
+ms.openlocfilehash: 0e5f712b76af2fba3d456997a47352773d92d766
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752637"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759897"
 ---
-# <a name="learn-about-classifiers"></a>深入瞭解分類器
+# <a name="learn-about-trainable-classifiers"></a>深入瞭解 trainable 的分類器
 
 分類及標示內容，使其能受到保護和正確處理，是資訊保護訓練科目的開始位置。 Microsoft 365 有三種方式可對內容進行分類。
 

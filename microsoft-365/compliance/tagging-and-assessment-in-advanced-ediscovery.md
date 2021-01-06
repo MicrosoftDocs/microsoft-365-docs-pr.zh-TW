@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
+ROBOTS: NOINDEX, NOFOLLOW
 description: 請參閱執行評估訓練的步驟，包括標記檔，以及在高級 eDiscovery 中查看評估結果。
-ms.openlocfilehash: c8c6f82e7cfb3e2eddcc482039582ea27a702494
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 9f826c836337ecf7a8479e7d824ff8ad9e737e97
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663458"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760373"
 ---
 # <a name="tagging-and-assessment-in-advanced-ediscovery-classic"></a>Advanced eDiscovery (傳統) 中的標記與評估
 
@@ -123,17 +124,3 @@ ms.locfileid: "49663458"
 > [!TIP]
 > 在 [ **相關性 \> 追蹤** ] 索引標籤中，展開的 [問題顯示] 中，可使用下列查看選項： > 建議的下一個步驟： (每個問題都可以略過每個) 問題的 **標記** ，請按一下其右邊的 [ **修改** ] 按鈕，然後選取 **下一個步驟** 中的其他步驟。 當評估進度指示器尚未完成時，評估會是下一個建議的選項，以標記更多評估檔案，並增加統計資料的準確性。 > 您可以變更錯誤邊界並評估其影響，方法是按一下 [ **修改**]，然後在 [ **評估層級] 對話方塊** 中變更 **目標誤差邊界，以進行召回評估**，然後按一下 [ **更新值**]。 此外，在此對話方塊中，您可以按一下 [ **高級**] 以查看高級選項。 > 您可以按一下 [ **view**] （查看）以查看其他評估層級統計資料及其影響。 在 [顯示的詳細結果] 對話方塊中，每個問題都有至少500標記的評估檔案，且至少有18個檔案標示為相關問題的統計資料。 
   
-## <a name="see-also"></a>請參閱
-
-[Office 365 進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
-  
-[瞭解相關評估](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[標記與相關性訓練](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[追蹤相關性分析](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[根據結果決定](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[測試相關性分析](test-relevance-analysis-in-advanced-ediscovery.md)
-

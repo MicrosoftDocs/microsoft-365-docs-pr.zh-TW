@@ -15,13 +15,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 瞭解 [Advanced eDiscovery] 中的 [決定] 索引標籤可如何提供資料，以協助您決定正確的查看案例檔案集大小。
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60213226bef1c04767d4be17a09b58d6940ac223
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: 0423a21520375f1d9de8e2eaeca142b979ff1883
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562964"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759865"
 ---
 # <a name="decision-based-on-the-results-in-advanced-ediscovery-classic"></a>以 Advanced eDiscovery (傳統) 中結果為基礎的決策
 
@@ -54,17 +55,3 @@ ms.locfileid: "49562964"
     
 展開的詳細資料窗格會顯示其他詳細資料。 集合中的檔案不包括空白或 nebulous 檔案。 「家族檔案」是指未載入相關性的檔案，但仍會計入為該系列的一部分。
   
-## <a name="related-topics"></a>相關主題
-
-[Office 365 進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
-  
-[瞭解相關評估](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[標記與評估](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[執行相關性訓練](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[追蹤相關性分析](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[測試相關性分析](test-relevance-analysis-in-advanced-ediscovery.md)
-

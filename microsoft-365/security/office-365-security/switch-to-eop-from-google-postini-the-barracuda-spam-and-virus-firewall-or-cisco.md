@@ -14,12 +14,12 @@ ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 ms.custom:
 - seo-marvel-apr2020
 description: 在本文中，您將瞭解如何從內部部署電子郵件清潔裝置或雲端式保護服務切換至 Exchange Online Protection (EOP) 。
-ms.openlocfilehash: 25669982c06127331369fdb595c6614733681047
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: a007bb94c35f7712b69ad5eef4152455c114ca24
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48202122"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760383"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>從 Google Postini、Barracuda Spam and Virus Firewall 或 Cisco IronPort 切換到 EOP
 
@@ -44,7 +44,7 @@ ms.locfileid: "48202122"
 
 ## <a name="switch-to-exchange-online"></a>切換至 Exchange Online
 
-您的內部部署信箱可能具有內部部署的裝置，而且您想要跳到 Exchange Online 雲端託管信箱，並 EOP protection，以利用 Microsoft 365 雲端郵件和保護功能。 若要開始，您可以註冊 Microsoft 365 並新增您的網域。 此案例不需要設定連接器，因為沒有任何資料路由傳送至內部部署信箱。 請從 [Microsoft 365 獲得最新的高級功能](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) ，以進行註冊，並熟悉其功能。
+您的內部部署信箱可能具有內部部署的裝置，而且您想要跳到 Exchange Online 雲端託管信箱，並 EOP protection，以利用 Microsoft 365 雲端郵件和保護功能。 若要開始，您可以註冊 Microsoft 365 並新增您的網域。 此案例不需要您設定連接器，因為沒有任何路由傳送至內部部署信箱。 請從 [Microsoft 365 獲得最新的高級功能](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) ，以進行註冊，並熟悉其功能。
 
 在 Microsoft 365 安裝程式中，您將建立雲端式信箱使用者。
 

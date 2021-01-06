@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 4a54fed8a109c3d03b735a5db3cb48060f5c438f
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.openlocfilehash: 940ad0799aca7ead20d226cfcf3cc4b7b21c6cdb
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719389"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760195"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (一般) 
 
@@ -77,6 +77,10 @@ ms.locfileid: "49719389"
 - 如果您的組織仍然使用 SharePoint 2010 工作流程，他們將無法再在 2021 12 月31日之後運作。 SharePoint 2013 工作流程仍然受到支援，不過預設為從 2020 1 月1日開始的新承租人關閉。 在完成 SharePoint 線上服務的遷移之後，建議您移至 [電源自動化] 或其他支援的解決方案。
 
 - OneDrive 遷移至德文地區後，就會重建資料索引。 在建立索引的過程中，取決於搜尋索引的功能可能會受到影響。
+
+- 尚未遷移其 SharePoint 線上實例的 Microsoft 雲端 Deutschland 客戶必須保持 SharePoint 線上 PowerShell module SharePointOnline/16.0.20616.12000 版本或下列的版本。 否則，透過 PowerShell 或用戶端物件模型的 SharePoint 線上連線將會失敗。
+
+- SharePoint 線上實例遷移的 Microsoft Cloud Deutschland 客戶必須更新 SharePoint 線上 PowerShell module SharePointOnline/CSOM to version 16.0.20717.12000 或以上版本。 否則，透過 PowerShell 或用戶端物件模型的 SharePoint 線上連線將會失敗。
 
 
 ## <a name="skype-for-business-online"></a>商務用 Skype Online

@@ -13,13 +13,13 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: 系統管理員可以瞭解如何設定獨立 Exchange Online Protection (EOP) ，以保護內部部署的電子郵件環境。
-ms.openlocfilehash: 2d63057e77e6965616e19452de824a94ba0ccda8
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: 系統管理員可以瞭解如何設定獨立的 Exchange Online Protection (EOP) ，以保護內部部署的電子郵件環境。
+ms.openlocfilehash: ca95f7dce30e8e751e293bf4e5de9caf0c845d29
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659414"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760491"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>設定您的獨立 EOP 服務
 

@@ -1,5 +1,5 @@
 ---
-title: 在登記後調整設定
+title: 註冊之後調整設定
 description: 如何排除某些 Microsoft 帳戶
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
@@ -9,16 +9,20 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 76a73372cc7517c3241390e58c28b0b02bffd664
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: d7fe410f114d43d4f6c983aaf23d949298635318
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527694"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760100"
 ---
-# <a name="adjust-settings-after-enrollment"></a>在登記後調整設定
+# <a name="adjust-settings-after-enrollment"></a>註冊之後調整設定
 
 在 Microsoft Managed Desktop 中完成註冊後，您必須調整某些 Microsoft Intune 和 Azure Active Directory (Azure AD) 設定，以允許管理及維護安全性。 設定下列設定，以排除包含 Microsoft 受管理桌面裝置和使用者的 Azure AD 群組。 如需排除群組的步驟，請參閱 [條件式存取：使用者和群組](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users)。
+
+> [!NOTE]
+> 如果您在註冊 Microsoft Intune、Azure Active Directory 或 Microsoft 365 中的原則之後進行任何變更，Microsoft 受管理的桌面可能會停止運作。 若要避免 Microsoft 受管理桌面作業的問題，請在變更任何原則之前，先檢查 [準備工作評估工具所發現之修正問題](../get-ready/readiness-assessment-fix.md) 中所述的特定設定。
+
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 

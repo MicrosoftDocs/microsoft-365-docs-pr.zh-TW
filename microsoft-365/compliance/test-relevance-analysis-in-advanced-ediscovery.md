@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
+ROBOTS: NOINDEX, NOFOLLOW
 description: 瞭解如何使用 [測試] 索引標籤，在 [高級 eDiscovery] 中成批計算後，測試、比較和驗證整體的處理品質。
-ms.openlocfilehash: e408d79aac8015da210f983b7b388ace84fc383a
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 52198dc5218c49598403c3f1ece201fc4f00dd47
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663416"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760319"
 ---
 # <a name="test-relevance-analysis-in-advanced-ediscovery-classic"></a>在高級 eDiscovery (傳統) 中測試相關性分析
 
@@ -109,18 +110,3 @@ Advanced eDiscovery 中的 [測試] 索引標籤可讓您測試、比較及驗�
 10. 檢查及標記 [相關性標籤] 索引 **卷 \>** 標中的每個檔案，完成後，按一下 [ **計算**]。 
     
 11. 在 [測試] 索引標籤中，您可以按一下 [ **查看結果** ] 以查看測試結果。 
-    
-## <a name="see-also"></a>請參閱
-
-[Office 365 進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
-  
-[瞭解相關評估](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[標記與評估](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[標記與相關性訓練](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[追蹤相關性分析](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[根據結果決定](decision-based-on-the-results-in-advanced-ediscovery.md)
-

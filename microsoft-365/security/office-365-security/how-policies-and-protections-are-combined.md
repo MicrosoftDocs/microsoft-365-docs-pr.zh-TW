@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 中的保護應用程式順序，以及保護原則中的優先順序值如何決定所套用的原則。
-ms.openlocfilehash: c6a89e35f1cce0532f206b5ac5dbfd4a1aedda9d
-ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
+ms.openlocfilehash: a18234344e1100f3b6a03c10e970c8195e53e7df
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349265"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760563"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>電子郵件保護的順序和優先順序
 
@@ -42,7 +42,7 @@ ms.locfileid: "49349265"
   |---|---|---|---|
   |1 |惡意程式碼|CAT： MALW|[在 EOP 中設定反惡意程式碼原則](configure-anti-malware-policies.md)|
   |2 |網路釣魚|CAT： PHSH|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
-  |個|高信賴度的垃圾郵件|CAT： HSPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
+  |3 |高信賴度的垃圾郵件|CAT： HSPM|[在 EOP 中設定反垃圾郵件原則](configure-your-spam-filter-policies.md)|
   |4 |詐騙|CAT：欺騙|[在 EOP 中設定欺騙情報](learn-about-spoof-intelligence.md)|
   |位<sup>\*</sup>| (受保護的使用者模擬使用者模擬) |UIMP|[在 Microsoft Defender for Office 365 中設定反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
   |6<sup>\*</sup>|網域模擬 (受保護的網域) |DIMP|[在 Microsoft Defender for Office 365 中設定反網路釣魚原則](configure-atp-anti-phishing-policies.md)|
@@ -66,7 +66,7 @@ ms.locfileid: "49349265"
   |原則 B|2 |關閉|開啟|
   |
 
-1. 郵件會標示及視為欺騙性，因為哄騙具有比使用者模擬 (8) 更高優先順序的 (4) 。
+1. 郵件會標示及視為欺騙性，因為哄騙具有比使用者模擬 (5) 更高優先順序的 (4) 。
 2. 原則 A 會套用至使用者，因為其優先順序高於原則 B。
 3. 根據原則 A 中的設定，不會對郵件採取任何動作，因為會在原則中關閉反欺騙功能。
 4. 原則處理會停止，因此原則 B 永遠不會套用至使用者。

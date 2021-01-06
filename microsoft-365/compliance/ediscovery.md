@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Microsoft 365 提供許多不同的 eDiscovery 工具，可供您用來搜尋及存放位於不同位置的內容，例如 Exchange 信箱、SharePoint 和 OneDrive 商務網站、Microsoft 365 群組和商務用 Skype 交談。
-ms.openlocfilehash: 2f18d3a9559293e071b7060f0e4a01a7352097c1
-ms.sourcegitcommit: 94f2f8e3e6bc3946d8b3cf798b3eb77a49ffd12a
+ms.openlocfilehash: a6708bdf012d2cfbb182d624c8c889de5fb51c7f
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "45148123"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760217"
 ---
 # <a name="ediscovery-in-microsoft-365"></a>Microsoft 365 中的電子文件探索
 
-電子搜索 (eDiscovery) 是識別與傳遞電子資訊的程序，而且此類資訊可在法律案件中做為呈堂證據。 您可以使用 Microsoft 365 中的 eDiscovery 工具，搜尋 Exchange Online 信箱、Microsoft 365 群組、Microsoft 小組、SharePoint Online 和商務用 Skype OneDrive 中的內容，以及商務用 Skype 交談和 Yammer 小組。 您可以使用內容搜尋工具，在相同 eDiscovery 搜尋中搜尋信箱和網站。 您也可以使用核心 eDiscovery 案例來識別、保留及匯出信箱和網站中的內容。 如果您的組織有 Office 365 E5 或 Microsoft 365 E5 訂閱（或相關的 E5 附加元件訂閱），您可以使用 Microsoft 365 中的高級 eDiscovery 解決方案，進一步管理保管人及分析內容。
+電子搜索 (eDiscovery) 是識別與傳遞電子資訊的程序，而且此類資訊可在法律案件中做為呈堂證據。 您可以使用 Microsoft 365 中的 eDiscovery 工具，搜尋 Exchange Online 信箱、Microsoft 365 群組、Microsoft 小組、SharePoint Online 和商務用 Skype OneDrive 中的內容，以及商務用 Skype 交談和 Yammer 小組。 您可以使用內容搜尋工具，在相同 eDiscovery 搜尋中搜尋信箱和網站。 您也可以使用核心 eDiscovery 案例來識別、保留及匯出信箱和網站中的內容。 如果您的組織有 Office 365 E5 或 Microsoft 365 E5 訂閱 (或相關的 E5 附加元件訂閱) ，您可以使用 Microsoft 365 中的高級 eDiscovery 解決方案，進一步管理保管人及分析內容。
   
 Microsoft 365 提供下列 eDiscovery 工具：
   
@@ -34,9 +34,6 @@ Microsoft 365 提供下列 eDiscovery 工具：
 - [核心電子文件探索](#core-ediscovery)
 
 - [進階 eDiscovery](#advanced-ediscovery)
-
-> [!NOTE]
-> Advanced ediscovery （傳統型）（也稱為「*高級 ediscovery 1.0*版」），也就是在核心 ediscovery 案例中，您可以按一下 [**切換至高級 ediscovery**]，將會停用該版本的高級 ediscovery。 其功能已由 Microsoft 365 中的高級 eDiscovery 解決方案所取代。 如需停用高級 eDiscovery 1.0 版的相關資訊，請參閱[舊版 eDiscovery tools 的退休](legacy-ediscovery-retirement.md#advanced-ediscovery-v10)。
 
 ## <a name="content-search"></a>內容搜尋
 
@@ -52,9 +49,9 @@ Microsoft 365 提供下列 eDiscovery 工具：
 |[匯出內容搜尋報告](export-a-content-search-report.md) <br/> |瞭解如何下載匯出報告，而不必匯出實際的搜尋結果。  <br/> |
 |[內容搜尋限制](limits-for-content-search.md) <br/> |瞭解內容搜尋工具的限制，例如，您可以一次執行的最大搜尋數目。  <br/> |
 |[內容搜尋中未編制索引的專案](partially-indexed-items-in-content-search.md) <br/> |瞭解 Exchange 和 SharePoint 中未編制索引的專案，當您執行搜尋時，您可以在預估搜尋結果統計資料中包含這些專案。 您也可以在匯出搜尋結果時包含未編制索引的專案。  <br/> |
-|[搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md) <br/> |瞭解如何使用內容搜尋來搜尋和刪除組織中*所有*信箱的電子郵件訊息。 這可協助您尋找及移除可能有害或高風險的電子郵件。  <br/> |
-|[使用內容搜尋來搜尋信箱，並 OneDrive 帳戶的使用者清單](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |瞭解如何使用腳本來搜尋信箱，以及一組使用者的商務用網站。 請參閱[建立所有 OneDrive 位置的清單](https://docs.microsoft.com/onedrive/list-onedrive-urls)，以取得如何快速產生您建立及執行內容搜尋時可用於來源內容位置的電子郵件地址清單的步驟。  <br/> |
-|[對目標集合使用內容搜尋](use-content-search-for-targeted-collections.md) <br/> |瞭解如何使用本文中的 Windows PowerShell 腳本，使用內容搜尋來執行目標集合。 目標集合表示您想要搜尋特定的資料夾，因為您確信回應某一案例的專案（或特權專案）位於該資料夾中。 使用本文中的腳本，取得您要搜尋之特定信箱或網站資料夾的資料夾識別碼或路徑。  <br/> |
+|[搜尋並刪除電子郵件訊息](search-for-and-delete-messages-in-your-organization.md) <br/> |瞭解如何使用內容搜尋來搜尋和刪除組織中  *所有*  信箱的電子郵件訊息。 這可協助您尋找及移除可能有害或高風險的電子郵件。  <br/> |
+|[使用內容搜尋來搜尋信箱，並 OneDrive 帳戶的使用者清單](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |瞭解如何使用腳本來搜尋信箱，以及一組使用者的商務用網站。 請參閱 [建立所有 OneDrive 位置的清單](https://docs.microsoft.com/onedrive/list-onedrive-urls) ，以取得如何快速產生您建立及執行內容搜尋時可用於來源內容位置的電子郵件地址清單的步驟。  <br/> |
+|[對目標集合使用內容搜尋](use-content-search-for-targeted-collections.md) <br/> |瞭解如何使用本文中的 Windows PowerShell 腳本，使用內容搜尋來執行目標集合。 目標集合表示您要搜尋特定的資料夾，因為您確信專案的回應方式 (或特權專案) 位於該資料夾中。 使用本文中的腳本，取得您要搜尋之特定信箱或網站資料夾的資料夾識別碼或路徑。  <br/> |
 |||
   
 ## <a name="core-ediscovery"></a>核心電子文件探索
@@ -74,7 +71,7 @@ Microsoft 365 提供下列 eDiscovery 工具：
   
 ## <a name="advanced-ediscovery"></a>進階電子文件探索
 
-Microsoft 365 （也稱為「 *Advanced ediscovery 2.0 2.0*」）中的「高級 ediscovery 解決方案」是以 Office 365 中現有的 ediscovery 和分析功能為基礎。 這種 eDiscovery 解決方案提供了端對端工作流程，可保留、收集、審閱、分析和匯出以回應組織內部和外部調查的內容。 它也可讓法律團隊管理保管人和整個法律封存通知工作流程，以與案例相關的保管人進行通訊。
+Microsoft 365 (中的「Advanced eDiscovery」方案也稱為「 *高級 ediscovery 2.0) 版* 」，是在 Office 365 的現有 ediscovery 和分析功能基礎上建立。 這種 eDiscovery 解決方案提供了端對端工作流程，可保留、收集、審閱、分析和匯出以回應組織內部和外部調查的內容。 它也可讓法律團隊管理保管人和整個法律封存通知工作流程，以與案例相關的保管人進行通訊。
 
 |**主題**|**描述**|
 |:-----|:-----|
@@ -91,4 +88,4 @@ Microsoft 365 （也稱為「 *Advanced ediscovery 2.0 2.0*」）中的「高級
 
 ## <a name="roadmap"></a>藍圖
 
-若要查看已啟動的 eDiscovery 功能、正在進行中或在開發中，請造訪[Microsoft 365 藍圖](https://aka.ms/eDiscoRoadMap)。
+若要查看已啟動的 eDiscovery 功能、正在進行中或在開發中，請造訪 [Microsoft 365 藍圖](https://aka.ms/eDiscoRoadMap)。

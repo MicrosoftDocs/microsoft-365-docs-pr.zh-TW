@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 18bc5d8d0f80f7cee024f4d6358361509879bd11
-ms.sourcegitcommit: 86f75cf77a7a446a79226ca530bd7b5eb39189cb
+ms.openlocfilehash: 95e1ad15a62762c8b28203e178d4d4ae7906e38a
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49717016"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760239"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex 採用：快速入門
 
@@ -31,28 +31,30 @@ ms.locfileid: "49717016"
 
 |手動輸入| 表單處理 | 檔瞭解 |
 |:-------|:--------|:--------|
-| 任何內容的資料錄入和勞動密集型 | 處理數位內容-相片、掃描、回執、名片、含 OCR 的影片 & 文字 |  從合約、簡歷及其他結構化檔捕獲內容類型和中繼資料 |
-| Interactive   | 預先構建、自動化   | 自訂、協助  |
-| 工作中的人員 | 由主題專家教授 (Sme) 。 從合約、簡歷、其他結構化檔捕獲內容類型和中繼資料。 | Sme 的相關程度較低。 從採購訂單、應用程式、其他半結構化及結構化檔 |
+| 任何內容的資料錄入和勞動密集型。 | 識別檔，並從結構化或半結構化檔（例如表單或發票）提取資料。 |  識別及解壓縮非結構化檔中的資料，例如信件或合約，您想要提取的文字實體會位於檔的句子或特定區域中。 |
+| 互動。   |  自訂、協助。  | 預先建立、自動化。 |
+| 工作中的人員。 | 由主題專家教授 (Sme) 。 | Sme 的相關程度較低。 |
 
-下表說明當您使用 SharePoint Syntex 時所獲得的功能：
+下表說明 SharePoint Syntex 的可用性和授權：
 
 | 表單處理 | 檔瞭解 |
 |:-------|:-------|
-| 適用于 APAC，澳大利亞，加拿大，EU，日本，拉丁美洲，UK，US | 可用於所有地區 |
-| 使用 AI Builder 學分-1M 學分 = 2000 頁面;消耗額是大約2000個發票 = 2 個單位。 需要電源自動化-如果您需要更多您可以新增它。 為購買的300個以上的授權所指派的1M 學分。 您也可以個別購買學分。 | 模型在所有拉丁字母表語言上都可以運作。 除了英文：德文、瑞典文、法文、西班牙文、義大利文和葡萄牙文。 |
-| 針對預設的一般資料服務環境進行布建| 不具備容量限制。 |
+| 表單處理取決於電源平臺。 <br>如需電源平臺及 AI 產生器之全域可用性的相關資訊，請參閱 [電源平臺可用性](https://dynamics.microsoft.com/geographic-availability/)。 | 可用於所有地區。 |
+| 使用 AI Builder 信用。<br>您可以成批購買1M。<br>購買 300 + SharePoint Syntex 授權時，會包含1M 信用。<br>1M 信用將允許處理2000檔案頁面。 | 模型在所有拉丁字母表語言上都可以運作。 除了英文：德文、瑞典文、法文、西班牙文、義大利文和葡萄牙文。 |
+| 針對預設的一般資料服務環境進行布建。 | 不具備容量限制。 |
+
+如需 AI 產生者學分和單位的詳細資訊，請參閱 [AI builder 授權](https://docs.microsoft.com/ai-builder/administer-licensing)。
 
 有兩種不同的方式可以瞭解您的內容。 您使用的模型類型是以檔案格式和使用案例為基礎：
 
 | 表單處理 | 檔瞭解 |
 |:-------|:-------|
-| 從文件庫建立 | 在內容中心建立，SharePoint Syntex 的一部分 |
-| 在 AI 產生器中建立的模型 | 在原生介面中建立的模型 |
-| 用於半結構化檔案格式 | 用於非結構化檔案格式 |
-| 可設定的分類器 | Trainable 具有選用擷取器的分類器 |
-| 限制于單一文件庫 | 可套用至多個文件庫 |
-| 在 PDF，JPG，PNG 格式，總 50 MB/500 pp 進行訓練 | 5-10 PDF、Office 或電子郵件檔案的火車，包含消極的範例 |
+| 從文件庫建立。 | 在內容中心建立，SharePoint Syntex 的一部分。 |
+| 在 [AI 產生器] 中建立的模型。 | 在原生介面中建立的模型。 |
+| 用於半結構化檔案格式。 | 用於非結構化檔案格式。 |
+| 可設定的分類器。 | Trainable 具有選用擷取器的分類器。 |
+| 限制于單一文件庫。 | 可套用至多個文件庫。 |
+| 在 PDF，JPG，PNG 格式，總 50 MB/500 pp 進行訓練。 | 在 5-10 PDF、Office 或電子郵件檔上訓練，包含負的範例。 |
 
 SharePoint Syntex 與 Microsoft 365 規範功能整合，例如：
 

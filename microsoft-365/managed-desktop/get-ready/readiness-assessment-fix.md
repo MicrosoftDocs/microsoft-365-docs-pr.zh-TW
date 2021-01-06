@@ -1,5 +1,5 @@
 ---
-title: 修正準備工作評估工具所找到的問題
+title: 修正由整備評估工具發現的問題
 description: 針對每個工具找到的問題所採取的詳細動作
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
@@ -9,14 +9,14 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f23209568fcfc2db4a22dbb034890c5a25e21bf7
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 3c3c0d21ca93c0d93d17cefbc6ce630d00a16d09
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527730"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760121"
 ---
-# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正準備工作評估工具所找到的問題
+# <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正由整備評估工具發現的問題
 
 針對每個檢查，該工具會報告下列四個可能的結果之一：
 
@@ -27,6 +27,9 @@ ms.locfileid: "49527730"
 |諮詢    | 請遵循工具或本文中的步驟，以取得註冊和使用者的最佳體驗。 您 *可以* 完成註冊，但是必須先修正這些問題，再部署第一個裝置。        |
 |未就緒 | *如果您未修正這些問題，註冊將會失敗。* 請遵循工具或本文中的步驟加以解決。        |
 |錯誤 | 您所使用的 Azure Active Director (AD) 角色，沒有足夠的許可權可執行這種檢查。 |
+
+> [!NOTE]
+> 此工具報告的結果會反映您的設定狀態，只會在您執行它的特定時間點反映。 如果您稍後對 Microsoft Intune、Azure Active Directory 或 Microsoft 365 中的原則進行任何變更，「就緒」的專案便會變成「尚未準備好」。 若要避免 Microsoft 受管理桌面作業的問題，請在變更任何原則之前，先檢查本文中所述的特定設定。
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 
@@ -75,7 +78,7 @@ Azure AD 組織中的條件式存取原則不得以任何 Microsoft 管理桌面
 
 請確定任何條件式存取原則都排除了 **現代的 Workplace Service 帳戶** Azure AD 群組。 如需步驟，請參閱 [調整條件式存取](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access)。 **新式的 Workplace Service 帳戶** Azure AD 群組是我們在您註冊時，為服務建立的動態群組。 註冊後，您必須回到以排除此群組。 如需這些服務帳戶的詳細資訊，請參閱 [標準運作程式](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
-**Error**
+**錯誤**
 
 Intune 系統管理員角色沒有足夠的許可權可進行這種檢查。 您也需要指派的任何 Azure AD 角色，以執行這項檢查：
 
@@ -165,7 +168,7 @@ Azure AD 組織中的 Windows 10 裝置必須在 Intune 中自動註冊。
 
 請確定任何需要 MFA 的條件式存取原則排除 **新式的 Workplace-所有** Azure AD 群組。 如需詳細資訊，請參閱 [條件式存取原則](#conditional-access-policies) 和 [條件式存取：針對所有使用者需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。 **新式的工作場所-所有** Azure AD 群組是我們在您註冊 Microsoft Managed Desktop 時所建立的動態群組，所以您必須在註冊後傳回排除此群組。
 
-**Error**
+**錯誤**
 
 Intune 系統管理員角色沒有足夠的許可權可進行這種檢查。 您也需要指派的任何 Azure AD 角色，以執行這項檢查：
 
@@ -184,7 +187,7 @@ Windows PowerShell 腳本無法指派為以 Microsoft 受管理的桌面裝置�
 
 確定您的 Azure AD 組織中的 Windows PowerShell 腳本並未以任何 Microsoft 管理桌面裝置或使用者為目標。 請勿指派 PowerShell 腳本來設定所有使用者、所有裝置或兩者。 變更原則，以使用以特定 Azure AD 群組為目標的工作分派，但不包括任何 Microsoft 受管理的桌面裝置。 如需詳細資訊，請參閱在 [Intune 中使用 Windows 10 裝置上的 PowerShell 腳本](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)。
 
-### <a name="region"></a>區域
+### <a name="region"></a>地區
 
 您的區域必須支援 Microsoft 受管理的電腦。
 

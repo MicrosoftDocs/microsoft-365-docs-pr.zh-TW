@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: 使用安全性 & 合規性中心，指派執行 eDiscovery 相關工作所需的許可權。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b95d81114e60c9d805b90b007d40d4c1a2e62b1
-ms.sourcegitcommit: 555b200b618085706dabf8648d27fb6d6427cfce
+ms.openlocfilehash: 4d4be264791c4f3d37d7a88cb3d12d1023b3c347
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "49739786"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759887"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>在安全性 & 規範中心指派 eDiscovery 許可權
 
@@ -145,10 +145,7 @@ ms.locfileid: "49739786"
 
 ### <a name="review"></a>檢閱
 
-此角色可讓使用者在 [高級 ediscovery (傳統)](office-365-advanced-ediscovery.md) 中存取案例資料， (也稱為「 *高級 eDiscovery v1*) 。 此角色的主要目的是讓使用者能夠存取高級 eDiscovery (傳統) 。 獲指派此角色的使用者可以在其成員的安全性 & 規範中心內，查看並開啟「 **eDiscovery** 」頁面上的案例清單。 使用者在安全性 & 合規性中心存取案例後，可以選取 [ **切換至高級 ediscovery** ] 以存取及分析高級 ediscovery (經典) 中的案例資料。 此角色不允許使用者預覽與案例相關聯的內容搜尋結果，或是進行其他內容搜尋或案例管理工作。
-
-> [!NOTE]
-> 目前，已獲指派「審閱」角色的使用者 (或是「檢閱者」角色群組的成員) 無法存取 [Microsoft 365 中的 [高級 ediscovery] 中](overview-ediscovery-20.md) 的資料 (也稱為「 *高級 ediscovery 2.0*) 。 若要在 Advanced eDiscovery 2.0 中新增成員至案例，讓他們可以查看案例資料，使用者必須是 eDiscovery 管理員角色群組的成員。
+此角色可讓使用者在 [高級 eDiscovery](overview-ediscovery-20.md)中存取審閱集。 獲指派此角色的使用者可以在 Microsoft 365 規範中心的 [ **eDiscovery > 高級** ] 頁面上，查看及開啟案例清單。 使用者存取高級 eDiscovery 案例後，即可選取 [ **複查集** ] 以存取案例資料。 此角色不允許使用者預覽與案例相關聯的集合搜尋結果，或執行其他搜尋或案例管理工作。 具有此角色的使用者只可以存取審閱集中的資料。
 
 ### <a name="rms-decrypt"></a>RMS 解密
 

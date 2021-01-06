@@ -16,13 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: 深入瞭解 Microsoft 365 Advanced eDiscovery 中的相關訓練期間，判斷問題的豐富程度，以及其角色。
+ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28bbe15a6e3f5611041cf446bd053f59de395d54
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: d9ce400af87af36dfc9e0d51caba90b952edec9c
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663078"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759919"
 ---
 # <a name="understand-assessment-in-relevance-in-advanced-ediscovery-classic"></a>瞭解 Advanced eDiscovery (傳統) 中的相關評估
 
@@ -52,19 +53,4 @@ ms.locfileid: "49663078"
 您可以接受相關性建議，或根據您的需求調整目前的錯誤邊界。 在等於或高於75% 的情況下，會判斷目前的錯誤目前邊界是否可重新叫用。
   
 > [!NOTE]
-> 您可以在問題展開的 [ **相關性 \> 追蹤** ] 索引標籤中，清除 [每個問題的 **評估** ] 核取方塊，然後針對「所有問題」，以略過評估階段。 不過，如此一來，就不會發生此問題的統計資料。 > 清除 **評估** 核取方塊只會在執行評估之前完成。 如果有多個問題存在於案例中，只有在此核取方塊針對每個問題清除時，才會略過評估。 
-  
-## <a name="related-topics"></a>相關主題
-
-[Office 365 進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
-  
-[標記與評估](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[標記與相關性訓練](tagging-and-relevance-training-in-advanced-ediscovery.md)
-  
-[追蹤相關性分析](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[根據結果決定](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[測試相關性分析](test-relevance-analysis-in-advanced-ediscovery.md)
-
+> 您可以在問題展開的 [ **相關性 \> 追蹤** ] 索引標籤中，清除 [每個問題的 **評估** ] 核取方塊，然後針對「所有問題」，以略過評估階段。 不過，如此一來，就不會發生此問題的統計資料。 > 清除 **評估** 核取方塊只會在執行評估之前完成。 如果有多個問題存在於案例中，只有針對每個問題清除此核取方塊時，才會略過評估。

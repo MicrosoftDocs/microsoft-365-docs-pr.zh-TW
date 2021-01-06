@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
+ROBOTS: NOINDEX, NOFOLLOW
 description: 在 [高級 eDiscovery] 的「相關性訓練」階段中，瞭解標記的步驟，然後再使用40檔案的訓練範例。
-ms.openlocfilehash: d576b0a907a4c12eabe4f3cba9846de670b0ee12
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: cedac19ee04053e19b5dac1537b57d576e2e0354
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663448"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760363"
 ---
 # <a name="tagging-and-relevance-training-in-advanced-ediscovery-classic"></a>Advanced eDiscovery (傳統) 中的標記與相關性訓練
 
@@ -98,17 +99,3 @@ ms.locfileid: "49663448"
     
     若要流覽至範例中的最後一個檔案： Shift + Ctrl + \>
     
-## <a name="see-also"></a>請參閱
-
-[Office 365 進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
-  
-[瞭解相關評估](assessment-in-relevance-in-advanced-ediscovery.md)
-  
-[標記與評估](tagging-and-assessment-in-advanced-ediscovery.md)
-  
-[追蹤相關性分析](track-relevance-analysis-in-advanced-ediscovery.md)
-  
-[根據結果決定](decision-based-on-the-results-in-advanced-ediscovery.md)
-  
-[測試相關性分析](test-relevance-analysis-in-advanced-ediscovery.md)
-

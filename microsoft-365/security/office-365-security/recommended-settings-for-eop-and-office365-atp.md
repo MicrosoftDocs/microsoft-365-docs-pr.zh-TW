@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: Exchange Online Protection (EOP) 和 Defender for Office 365 安全性設定的最佳作法為何？ 目前的標準保護建議為何？ 如果您想要更嚴格，應使用哪些專案？ 此外，如果您同時使用適用于 Office 365 的 Defender，您也會取得哪些額外功能？
-ms.openlocfilehash: d731b75e05dcecc513c72b390b106491f7601c71
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: c9a9774e0866b009965eeb574384095c26fa780e
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698684"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760227"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP 和 Microsoft Defender for Office 365 安全性的建議設定
 
@@ -138,7 +138,7 @@ ms.locfileid: "49698684"
 
 |安全性功能名稱|預設|標準版|嚴格|註解|
 |---|:---:|:---:|:---:|---|
-|**啟用反欺騙保護** <p> _EnableAntispoofEnforcement_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**啟用反欺騙保護** <p> _EnableSpoofIntelligence_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|會在 Outlook 中為未識別的欺騙寄件者將問號 (？ ) 加入寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
 |**如果電子郵件是由不允許哄騙您網域的人所傳送** <p> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件** <p> `Quarantine`|此設定適用于 [欺騙性智慧](learn-about-spoof-intelligence.md)中封鎖的寄件者。|
 |
@@ -192,7 +192,7 @@ EOP 客戶如先前所述，取得基本的反網路釣魚，但 Office 365 的 
 
 |安全性功能名稱|預設|標準版|嚴格|註解|
 |---|---|---|---|---|
-|**啟用反欺騙保護** <p> _EnableAntispoofEnforcement_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
+|**啟用反欺騙保護** <p> _EnableSpoofIntelligence_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`||
 |**啟用未經驗證的寄件者** <p> _EnableUnauthenticatedSender_|開啟 <p> `$true`|開啟 <p> `$true`|開啟 <p> `$true`|會在 Outlook 中為未識別的欺騙寄件者將問號 (？ ) 加入寄件者的相片。 如需詳細資訊，請參閱 [反網路釣魚原則中的欺騙設定](set-up-anti-phishing-policies.md)。|
 |**如果電子郵件是由不允許哄騙您網域的人所傳送** <p> _AuthenticationFailAction_|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**將郵件移至收件者的 [垃圾郵件] 資料夾** <p> `MoveToJmf`|**隔離郵件** <p> `Quarantine`|此設定適用于 [欺騙性智慧](learn-about-spoof-intelligence.md)中封鎖的寄件者。|
 |
