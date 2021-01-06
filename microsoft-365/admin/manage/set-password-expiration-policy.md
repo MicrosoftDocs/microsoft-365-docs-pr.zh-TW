@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: 了解如何在 Microsoft 365 系統管理中心設定組織的密碼到期原則。
-ms.openlocfilehash: 39726846d591b2d1f72a89a7dc59038c726a8e80
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: 96e9159f3228fb6b7725f2f0d6eb515b108bc32e
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787519"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751498"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>設定組織的密碼到期原則
 
@@ -56,18 +56,18 @@ ms.locfileid: "48787519"
 > [!IMPORTANT]
 > 只有[全域系統管理員](../add-users/about-admin-roles.md)才能執行這些步驟。
   
-1. 在系統管理中心中，移至 [設定 **]** \> [組織設定 **]** 。
+1. 在系統管理中心中，移至 [設定 **]** \> [組織設定 **]**。
 
 2. 移至<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">安全性與隱私權</a>頁面。
  如果您不是全域系統管理員，就看不到 [安全性和隱私權] 選項。
   
-3. 選取 [密碼到期原則]  。
+3. 選取 [密碼到期原則]。
   
-4. 如果您不希望使用者必須變更密碼，請選取 [將使用者密碼設定為在幾天後到期]  核取方塊。
+4. 如果您不希望使用者必須變更密碼，請取消選取 [將使用者密碼設定為在幾天後到期 **]** 旁的核取方塊。
   
 5. 輸入密碼應到期的頻率。 選擇介於 14 到 730 之間的天數。
   
-6. 在第二個方塊中，輸入使用者何時應收到其密碼到期的通知，然後選取 [儲存]  。 Choose a number of days from 1 to 30.
+6. 在第二個方塊中，輸入使用者何時應收到其密碼到期的通知，然後選取 [儲存]。 Choose a number of days from 1 to 30.
 
 7. 使用者的密碼過期時，會收到通知 (顯示在其螢幕的右下角)。
   

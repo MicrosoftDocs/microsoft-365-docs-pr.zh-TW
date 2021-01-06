@@ -14,13 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
+ROBOTS: NOINDEX, NOFOLLOW
 description: 閱讀在進階電子文件探索設定相關性訓練的建議，依其相關性為檔案評分，並產生分析結果。
-ms.openlocfilehash: a6bec149e11fa80fb57cb811120218fa7f2cc45b
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 8ba09babc91f233514cd0195c3e1da08b07ccb3c
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662868"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760207"
 ---
 # <a name="manage-relevance-setup-in-advanced-ediscovery-classic"></a>在 Office 365 進階電子文件探索 (傳統版) 中管理相關性設定
 
@@ -69,15 +70,4 @@ ms.locfileid: "49662868"
 
 - 仔細定義並組織問題，因為這可能會影響相關性訓練結果。
 
-在設定參數之後，檢閱者/專家可以開始訓練 [相關性] 索引標籤中的檔案。 
-  
-## <a name="see-also"></a>請參閱
-
-[Office 365 進階電子文件探索 (傳統版)](office-365-advanced-ediscovery.md)
-  
-[定義問題並指派使用者](define-issues-and-assign-users.md)
-  
-[設定負載以新增匯入的檔案](set-up-loads-to-add-imported-files.md)
-  
-[定義反白顯示的關鍵字和進階選項](define-highlighted-keywords-and-advanced-options.md)
-
+在設定參數之後，檢閱者/專家可以開始訓練 [相關性] 索引標籤中的檔案。
