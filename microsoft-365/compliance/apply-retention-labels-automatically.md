@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立保留標籤及自動套用標籤原則，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: b4e1afbc520b7ec046b4af399e7c1c0cd094e8f9
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: a79e7a96cc02957b0bac4dba31b24c5727f0483b
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730154"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751176"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤以保留或刪除內容
 
@@ -129,7 +129,7 @@ ms.locfileid: "49730154"
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>自動將標籤套用至包含特定類型敏感資訊的內容
 
-當您為敏感性資訊建立自動套用保留標籤原則時，系統會顯示與建立資料外洩防護 (DLP) 原則時相同的原則範本清單。 每個範本預設會尋找特定類型的敏感性資訊。 例如，此處顯示的範本從 **隱私權** 類別中查找美國 ITIN、SSN 和護照號碼，以及 **美國個人識別資訊 (PII) 資料範本**：
+當您為敏感性資訊建立自動套用保留標籤原則時，系統會顯示與建立資料外洩防護 (DLP) 原則時相同的原則範本清單。 每個範本預設會尋找特定類型的敏感性資訊。 例如，此處顯示的範本從 **隱私權** 類別中查找美國 ITIN、SSN 和護照號碼，以及 **美國個人識別資訊 (PII) 資料** 範本：
 
 ![敏感資訊類型的原則範本](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
 

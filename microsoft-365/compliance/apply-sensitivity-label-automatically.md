@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: dafb31f823dc8c63fa19ad8dba0624ee2037b859
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 3f789396c3ee6746277e01f8b5c6a772bcd528ac
+ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682828"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "49751415"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -128,11 +128,13 @@ ms.locfileid: "49682828"
 
 ![在 Office 應用程式中自動套用標籤的敏感資訊類型](../media/sensitivity-labels-sensitive-info-types.png)
 
-選取敏感度資訊類型之後，您可以變更執行個體計數或比對精確度來調整條件。 如需詳細資訊，請參閱[調整規則，讓規則更容易或更難相符](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
+同樣的，當您在設定 DLP 原則時，藉由改變執行個體計數及比對精確度，您可以精簡您的條件。 例如：
 
-此外，您可以選擇條件是必須偵測所有敏感性資訊類型，還是只偵測其中一種。 若要讓您的條件更靈活或更複雜，您可以新增群組，並使用群組之間的邏輯運算子。 如需詳細資訊，請參閱[群組和邏輯運算子](data-loss-prevention-policies.md#grouping-and-logical-operators)。
+![執行比對精確度和個體計數的選項](../media/sensitivity-labels-instance-count-match-accuracy.png)
 
-![執行個體計數和比對精確度的選項](../media/Sensitivity-labels-instance-count-match-accuracy.png)
+您可以從 DLP 檔案了解更多有關這些組態選項：[調整規則以讓它們更容易或更難符合](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)。
+
+同時類似於 DLP 原則設定，您可以選擇條件是必須偵測所有敏感性資訊類型，還是只偵測其中一種。 若要讓您的條件更靈活或更複雜，您可以新增 [群組，並使用群組間的邏輯運算子](data-loss-prevention-policies.md#grouping-and-logical-operators)。
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>為標籤設定可訓練分類器
 
