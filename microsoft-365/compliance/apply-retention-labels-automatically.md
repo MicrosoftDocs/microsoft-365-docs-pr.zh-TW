@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立保留標籤及自動套用標籤原則，以便您可以自動套用標籤以保留所需的內容，並刪除您不需要的內容。
-ms.openlocfilehash: a79e7a96cc02957b0bac4dba31b24c5727f0483b
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 2b06188a5990c7de81fca0afd21f05ef346807ba
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751176"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759963"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>自動套用保留標籤以保留或刪除內容
 
@@ -247,10 +247,10 @@ ProgID:Media AND ProgID:Meeting
 
 若要使用此選項自動套用標籤，SharePoint 網站和信箱必須有至少 10 MB 的資料。
 
-如需可訓練分類器的詳細資訊，請參閱[了解可訓練分類器 (預覽)](classifier-learn-about.md)(部分機器翻譯)。
+如需可訓練分類器的詳細資訊，請參閱[深入了解可訓練分類器](classifier-learn-about.md)。
 
 > [!TIP]
-> 如果您使用的是 Exchange 版可訓練分類器，請參閱最近發行的[如何在內容總管中重新定型分類器 (預覽)](classifier-how-to-retrain-content-explorer.md)。
+> 如果您使用的是 Exchange 版可訓練分類器，請參閱[如何在內容總管中重新定型分類器 (預覽)](classifier-how-to-retrain-content-explorer.md)。
 
 在使用可訓練分類器以自動套用保留標籤時，請考慮下列事項：
 

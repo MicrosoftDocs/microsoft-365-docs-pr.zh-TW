@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 3f789396c3ee6746277e01f8b5c6a772bcd528ac
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: aa6b3ce2da8166cc2b33ae2b6056b54d76a0c634
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751415"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759953"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -147,7 +147,7 @@ ms.locfileid: "49751415"
 > [!CAUTION]
 > 我們正在淘汰 **[粗穢言語]** 內建分類器，因為這個分類器產生了大量的誤報。 請不要使用這個內建分類器，如果您目前正在使用此分類器，請將您的商務流程移開。 建議您改用 **[針對性騷擾]**、**[粗話]** 和 **[威脅]** 內建分類器。
 
-如需這些分類器的詳細資訊，請參閱[深入瞭解可訓練分類器（預覽版）](classifier-learn-about.md)。
+如需這些分類器的詳細資訊，請參閱[深入了解可訓練分類器](classifier-learn-about.md)。
 
 在此選項的預覽期間，下列應用程式支援敏感度標籤的可訓練分類器：
 
