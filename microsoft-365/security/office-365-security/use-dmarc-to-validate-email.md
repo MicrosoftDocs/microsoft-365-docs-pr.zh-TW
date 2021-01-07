@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 了解如何設定以網域為基礎的訊息驗證、報告和符合性 (DMARC) 來驗證從貴組織傳送的訊息。
-ms.openlocfilehash: 9dd97b1fc60f0b6198bb6c55af291c7dd103ac5d
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: bcf1c0b3dc0a1a8dd8a679af815fbdc2173cabb7
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615333"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49759853"
 ---
 # <a name="use-dmarc-to-validate-email"></a>使用 DMARC 來驗證電子郵件
 
@@ -194,13 +194,13 @@ _dmarc.domain  TTL  IN  TXT  "v=DMARC1; p=policy; pct=100"
 
 4. 如何設定適用於子網域的 DMARC？
 
-DMARC 是在 DNS 中以 TXT 記錄的形式發布原則所實施，且為分層系統（例如，針對 contoso.com 發行的原則會套用至 sub.domain.contonos.com，除非明確為子網域定義不同的原則）。 由於組織可能只能指定較少量的高層 DMARC 記錄，所以在覆蓋較廣的層面上，這很實用。 如果您不想讓某子網域承襲高層網域的 DMARC 記錄，則須小心謹慎地設定明確的子網域 DMARC 記錄。
+   DMARC 是在 DNS 中以 TXT 記錄的形式發布原則所實施，且為分層系統（例如，針對 contoso.com 發行的原則會套用至 sub.domain.contonos.com，除非明確為子網域定義不同的原則）。 由於組織可能只能指定較少量的高層 DMARC 記錄，所以在覆蓋較廣的層面上，這很實用。 如果您不想讓某子網域承襲高層網域的 DMARC 記錄，則須小心謹慎地設定明確的子網域 DMARC 記錄。
 
-此外，當子網域不應傳送電子郵件時，您可以透過新增 [`sp=reject`] 值，以為 DMARC 新增萬用字元類型原則。 例如：
+   此外，當子網域不應傳送電子郵件時，您可以透過新增 [`sp=reject`] 值，以為 DMARC 新增萬用字元類型原則。 例如：
 
-```console
-_dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
-```
+   ```text
+   _dmarc.contoso.com. TXT "v=DMARC1; p=reject; sp=reject; ruf=mailto:authfail@contoso.com; rua=mailto:aggrep@contoso.com"
+   ```
 
 ## <a name="how-microsoft-365-handles-outbound-email-that-fails-dmarc"></a>Microsoft 365 如何處理未通過 DMARC 的輸出電子郵件
 
@@ -226,7 +226,7 @@ Microsoft 365 如此設定，是因為某些合法的電子郵件可能無法通
 
 所有 Microsoft 365 中託管的信箱現在都將取得 ARC 帶來的改良式郵件傳送，以及增強式反詐騙防護的權益。 當電子郵件從原始伺服器路由傳送到收件者信箱時，ARC 會保留來自所有參與中繼或躍點的電子郵件驗證結果。 在 ARC 之前，透過電子郵件路由傳送中的中繼所執行的修改，(例如轉寄規則或自動簽署)，可能在郵件到達收件者信箱時導致 DMARC 失敗。 使用 ARC，Microsoft 365 可利用其驗證結果的加密保留確認電子郵件寄件者。
 
-Microsoft 身為 ARC密封者，因此 Microsoft 365 目前是使用 ARC 來確認驗證結果，但計畫在未來新增協力廠商 ARC 密封者的支援。
+Microsoft 身為 ARC 密封者，因此 Microsoft 365 目前是使用 ARC 來確認驗證結果，但計畫在未來新增協力廠商 ARC 密封者的支援。
 
 ## <a name="troubleshooting-your-dmarc-implementation"></a>對 DMARC 實作進行疑難排解
 

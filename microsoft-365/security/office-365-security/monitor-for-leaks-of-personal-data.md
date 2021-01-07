@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: 了解三種您可以用來監視個人資料外洩的工具。
-ms.openlocfilehash: a212067d75ab3d9e195e3d869e0a6ae7d1ed4d01
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 2a00d639be3b43fb56e26dca2725f2c3dac54b39
+ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616377"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49760539"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>監視個人資料的外洩
 
@@ -36,9 +36,9 @@ ms.locfileid: "49616377"
 
 在此圖例中：
 
-- 從 Microsoft 365 資料外洩防護報告開始，這些報告用於監視 SharePoint Online、商務用 OneDrive 和傳輸中電子郵件中的個人資料。這些提供監視個人資料時的最大詳細資料層級。不過，這類報告不包含 Office 365 中的所有服務。
+- 從 Microsoft 365 資料外洩防護報告開始，這些報告用於監視 SharePoint Online、商務用 OneDrive 和傳輸中電子郵件中的個人資料。這些報告提供監視個人資料時的最大詳細資料層級。不過，這類報告不包含 Office 365 中的所有服務。
 
-- 接下來，使用警示和稽核記錄，以監視整個服務的活動。設定持續監視，或搜尋稽核記錄以調查事件。稽核記錄適用於整個服務 — Sway、PowerBI、eDiscovery、Dynamics 365、Microsoft Flow’Microsoft Teams、Admin activity、商務用 OneDrive、SharePoint Online、傳輸中郵件，以及靜態信箱。靜態信箱包括 Skype 交談。
+- 接下來，使用警示和稽核記錄，以監視整個服務的活動。設定持續監視，或搜尋稽核記錄以調查事件。稽核記錄適用於整個服務—Sway、Power BI、電子文件探索、Dynamics 365、Microsoft Flow、Microsoft Teams、系統管理活動、商務用 OneDrive、SharePoint Online、傳輸中郵件，以及靜態信箱。靜態信箱包括 Skype 交談。
 
 - 最後，使用 Microsoft Cloud App Security 監視其他 SaaS 提供者中具有敏感資料的檔案。即將能夠在 Azure 資訊保護和具有 Cloud App Security 的 Office 之間使用敏感資訊類型和統一標籤。您可以設定適用於所有 SaaS 應用程式或特定應用程式 (例如 Box) 的原則。Cloud App Security 不會探索 Exchange 中的檔案，包括電子郵件的附加檔案。
 
@@ -74,9 +74,9 @@ DLP 報告位於安全性中心和合規性中心。 瀏覽至 [報告] \> [檢�
 
 安全性中心和合規性中心提供兩種方法來監視及報告稽核記錄：
 
-- 設定警示原則、檢視警示和監視趨勢 — 使用安全性中心或合規性中心中的警示原則和警示儀表板工具。
+- 設定警示原則、檢視警示和監視趨勢—使用安全性中心或合規性中心中的警示原則和警示儀表板工具。
 
-- 直接搜尋稽核記錄 — 搜尋指定日期範圍的所有事件。或者，根據特定準則 (例如執行動作的使用者、動作或目標物件) 篩選結果。
+- 直接搜尋稽核記錄—搜尋指定日期範圍的所有事件。或者，根據特定準則 (例如執行動作的使用者、動作或目標物件) 篩選結果。
 
 資訊安全與規範小組可以使用這些工具，主動檢閱使用者和系統管理員在服務之間執行的活動。您可以設定自動警示，在特定網站集合上發生特定活動時傳送電子郵件通知 - 例如，從已知包含 GDPR 相關資訊的網站共用內容時。這可讓那些小組追蹤使用者，以確保他們遵循公司安全性原則，或是提供其他訓練。
 
@@ -100,11 +100,11 @@ DLP 報告位於安全性中心和合規性中心。 瀏覽至 [報告] \> [檢�
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
-Microsoft Cloud App Security 可協助您探索在您的網路中使用的其他 SaaS 應用程式，以及在這些應用程式之間來回傳送的敏感資料。
+Microsoft Cloud App Security 可協助您探索在您的網路中使用的其他 SaaS 應用程式，以及在這些應用程式之間來回傳送的敏感性資料。
 
-Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用程式提供深入的可見性、細微控制和增強的威脅防護。它可從您網絡中的所有裝置識別出超過 15,000 個雲端應用程式，並提供風險評分和持續風險評估與分析。無需代理程式：從防火牆和 Proxy 收集資訊，為您提供雲端使用和影子 IT 的完整可見性和內容。
+Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用程式提供深入的可見性、細微控制和增強的威脅防護。它可從您網路中的所有裝置識別出超過 15,000 個雲端應用程式，並提供風險評分和持續風險評估與分析。無需代理程式：從防火牆和 Proxy 收集資訊，為您提供雲端使用和影子 IT 的完整可見性和內容。
 
-為了更好地了解您的雲端環境，Cloud App Security 的調查功能可讓您深入了解所有獲批准和受管理應用程式的活動、文件和帳戶。您可以獲取檔案層級的詳細資訊，並探索資料在雲端應用程式中的傳輸位置。
+為了深入了解您的雲端環境，Cloud App Security 的調查功能可讓您深入了解所有獲核准和受管理應用程式的活動、文件和帳戶。您可以取得檔案層級的詳細資訊，並探索資料在雲端應用程式中的傳輸位置。
 
 例如，下圖示範兩個可協助 GDPR 的 Cloud App Security 原則。
 
@@ -151,7 +151,7 @@ Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用
 |類別|DLP|
 |篩選器設定|存取層級 = 公用 (網際網路)、公用、外部 <p> App = \<select apps\> (如果想要限制對特定 SaaS 應用程式的監視，請使用此設定)|
 |套用到|所有檔案，所有擁有者|
-|內容檢查|包含符合當前運算式的檔案：所有國家/地區、金融、信用卡號碼 <p> 不需要相關內容：已取消核取 (這會比對關鍵字，以及 regex) <p> 包含至少有 1 個相符項目的檔案 <p> 取消遮罩違規的最後 4 個字元：已核取|
+|內容檢查|包含符合當前運算式的檔案：所有國家/地區、金融、信用卡號碼 <p> 不需要相關內容：已取消核取 (此設定會比對關鍵字，以及 regex) <p> 包含至少有 1 個相符項目的檔案 <p> 取消遮罩違規的最後 4 個字元：已核取|
 |警示|建立每個相符檔案的警示：已核取 <p> 每日警示限制：1000 <p> 選取警示做為電子郵件：已核取 <p> 收件人：infosec@contoso.com|
 |治理|Microsoft OneDrive for Business <p> 專用： 核取 [移除外部使用者] <p> 所有其他設定：已取消核取 <p> Microsoft SharePoint Online <p> 專用： 核取 [移除外部使用者] <p> 所有其他設定：已取消核取|
 |
@@ -186,5 +186,5 @@ Microsoft Cloud App Security 是一種全方位服務，可為您的雲端應用
 
 類似原則：
 
-- 偵測客戶資料或 HR 資料的大量下載 — 當偵測到單一使用者在短時間內下載大量包含客戶資料或 HR 資料的檔案時發出警示。
-- 偵測客戶和 HR 資料的共用 — 當包含客戶或 HR 資料的檔案共用時發出警示。
+- 偵測客戶資料或 HR 資料的大量下載—當偵測到單一使用者在短時間內下載大量包含客戶資料或 HR 資料的檔案時發出警示。
+- 偵測客戶和 HR 資料的共用—當共用包含客戶或 HR 資料的檔案時發出警示。
