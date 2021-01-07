@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d7fe410f114d43d4f6c983aaf23d949298635318
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: e78f0123c909c90ff90be913e8775cc1e5b30313
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760100"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777096"
 ---
 # <a name="adjust-settings-after-enrollment"></a>註冊之後調整設定
 
-在 Microsoft Managed Desktop 中完成註冊後，您必須調整某些 Microsoft Intune 和 Azure Active Directory (Azure AD) 設定，以允許管理及維護安全性。 設定下列設定，以排除包含 Microsoft 受管理桌面裝置和使用者的 Azure AD 群組。 如需排除群組的步驟，請參閱 [條件式存取：使用者和群組](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users)。
+在 Microsoft Managed Desktop 中完成註冊後，您必須調整本文中所指定的 Microsoft Intune 和 Azure Active Directory (Azure AD) 設定，以允許管理及維護安全性。 設定下列設定，以排除包含 Microsoft 受管理桌面裝置和使用者的特定 Azure AD 群組。 如需排除群組的步驟，請參閱 [條件式存取：使用者和群組](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups#exclude-users)。
 
 > [!NOTE]
 > 如果您在註冊 Microsoft Intune、Azure Active Directory 或 Microsoft 365 中的原則之後進行任何變更，Microsoft 受管理的桌面可能會停止運作。 若要避免 Microsoft 受管理桌面作業的問題，請在變更任何原則之前，先檢查 [準備工作評估工具所發現之修正問題](../get-ready/readiness-assessment-fix.md) 中所述的特定設定。
@@ -26,11 +26,11 @@ ms.locfileid: "49760100"
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 
-- Autopilot 部署設定檔：排除 **新式的工作裝置-所有**  Azure AD 群組。 如需步驟，請參閱 [使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)。
-- 條件式存取原則：排除 **新式的 Workplace Service 帳戶** Azure AD 群組。 如需步驟，請參閱 [條件式存取：使用者和群組](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。
-- 多重要素驗證：請確定任何需要多重要素驗證的條件式存取原則排除 **新式的 Workplace Service 帳戶** Azure AD 群組。 如需詳細資訊，請參閱 [條件式存取原則](../get-ready/readiness-assessment-fix.md#conditional-access-policies) 和 [條件式存取：針對所有使用者需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。
-- 安全性基準：排除 **新式的工作區裝置-所有**  Azure AD 群組。 如需步驟，請參閱 [使用安全性基準在 Intune 中設定 Windows 10 裝置](https://docs.microsoft.com/mem/intune/protect/security-baselines)。
-- Windows 10 更新環：排除 **現代的工作場所裝置-所有**  Azure AD 群組。 如需步驟，請參閱 [在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。
+- Autopilot 部署設定檔：針對您公司中的系統管理員所建立的 Autopilot 設定檔，請排除 **新式的工作區裝置-所有** Azure AD 群組。 如需步驟，請參閱 [使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)。 請勿排除新式的 **工作場所裝置-所有** Azure AD 群組從 Microsoft Managed Desktop 所建立的任何部署原則中，其名稱中的「新式 workplace」 (例如， **新式 workplace Autopilot Profile**) 。 
+- 條件式存取原則：針對您公司中的系統管理員所建立的條件式存取原則，請排除 **新式的 Workplace Service 帳戶** Azure AD 群組。 如需步驟，請參閱 [條件式存取：使用者和群組](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。 請勿排除新式的 **工作場所裝置-所有** Azure AD 群組從 Microsoft Managed Desktop 所建立的任何原則中的「現代工作場所」 (例如，現代的 **工作場所安全工作站**) 。
+- 多重要素驗證：請確定您公司中的系統管理員所建立的任何條件式存取原則都需要多重要素驗證，但不包括 **新式的 Workplace Service 帳戶** Azure AD 群組。 如需詳細資訊，請參閱 [條件式存取原則](../get-ready/readiness-assessment-fix.md#conditional-access-policies) 和 [條件式存取：針對所有使用者需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。
+- 安全性基準：針對您公司中的系統管理員所建立的安全性基準原則，請排除 **新式的工作區裝置-所有**  Azure AD 群組。 如需步驟，請參閱 [使用安全性基準在 Intune 中設定 Windows 10 裝置](https://docs.microsoft.com/mem/intune/protect/security-baselines)。 請勿排除新式的 **工作場所裝置-所有** Azure AD 群組從 Microsoft Managed Desktop 所建立的任何原則 (中的「現代工作場所」（例如，現代的 **工作場所安全性基準**) ）。
+- Windows 10 更新環：針對您公司中的系統管理員所建立的 Windows 10 更新振鈴原則，請排除 **新式的工作區裝置-所有**  Azure AD 群組。 如需步驟，請參閱 [在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 請勿排除新式的 **工作場所裝置-所有** Azure AD 群組從 Microsoft Managed Desktop 所建立的任何原則中的「現代工作場所」 (例如， **新式的工作場所更新** 原則) 。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 設定

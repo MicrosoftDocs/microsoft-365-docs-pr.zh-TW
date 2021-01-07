@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 6e6ad80697d332d0bccb248071b8deadf09fe8de
-ms.sourcegitcommit: 8252377f63de188d32ed1ccd37540d92cba3cb65
+ms.openlocfilehash: 9f2f6667066a1704ceb98179b677e7de7895cef2
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49671014"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49769264"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 中的內部風險解決方案
 
@@ -30,7 +30,7 @@ ms.locfileid: "49671014"
 
 Microsoft 365 風險防護功能是設計和內建給我們的有問必答風險產品和解決方案。 這些解決方案共同運作，並使用高級服務和協力廠商指示，協助您快速識別、會審及行動風險活動。 大部分的解決方案為您的資料分析員和調查人員提供完整的偵測、警示和修正工作流程，以用於快速地處理及最小化這些風險。
 
-| | 風險 | 通訊合規性 | 內部風險管理 | 資訊屏障 | 特殊權限存取管理 |
+| 風險圖示 | 風險 | 通訊合規性 | 內部風險管理 | 資訊屏障 | 特殊權限存取管理 |
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
 | ![資料外泄圖示](../media/ir-risk-data-spillage.png)| 資料外泄 | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |  |  |
 | ![違反機密性圖示](../media/ir-risk-confidentiality-violations.png)| 違反保密協定 | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |  |
@@ -51,10 +51,10 @@ Microsoft 365 風險防護功能是設計和內建給我們的有問必答風險
 
 | 解決方案/功能 | 描述 | 授權 |
 | :------------------------ | :-------------- | :------------ |
-| 通訊合規性 | 通訊相容性協助您在組織中偵測、捕獲和處理不適當的郵件，以協助將通訊風險降至最低。 | Microsoft 365 E5 訂閱 (付費或試用版本)  <br> Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件 <br> Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」 <br> Microsoft 365 A5 訂閱 (付費或試用版本)  <br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件 <br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件 <br> Microsoft 365 G5 訂閱 (付費或試用版本)  <br> Microsoft 365 G5 訂閱 + Microsoft 365 G5 合規性附加元件 <br> Microsoft 365 G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件 <br> Office 365 企業版 E5 訂閱 (付費或試用版本)  <br> Office 365 A5 訂閱 (付費或試用版本)  <br> Office 365 Enterprise E3 訂閱 + Office 365 Advanced 合規性附加元件 (已無法再供新訂閱使用)  |
-| 內部風險管理 | 「有問必答風險管理」可讓您偵測、調查和動作組織中的惡意和意外活動，以協助將內部風險降至最低。 | Microsoft 365 E5 訂閱 (付費或試用版) Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件 <br> Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」 <br> Microsoft 365 A5 訂閱 (付費或試用版本)  <br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件 <br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件 |
-| 資訊屏障 | 資訊壁壘可讓您限制兩個內部群組之間的通訊和共同作業，以避免組織中發生利益衝突。  | Microsoft 365 E5/A5 <br> Office 365 E5/A5 <br> Office 365 進階合規性 <br> Microsoft 365 規範 E5/A5 <br> Microsoft 365 有問必答風險管理 |
-| 特殊權限存取管理 | 「特權存取管理」允許對 Office 365 中的特殊 Exchange Online 系統管理員工作進行精細存取控制。 它可協助保護您的組織，避免因使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。 | Microsoft 365 E5/A5 <br> Office 365 E5/A5 <br> Microsoft 365 E5/A5 規範 <br> Microsoft 365 E5/A5 資訊保護和控管 |
+| 通訊合規性 | 通訊相容性協助您在組織中偵測、捕獲和處理不適當的郵件，以協助將通訊風險降至最低。 | Microsoft 365 E5 訂閱 (付費或試用版本)  <br><br> Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件 <br><br> Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」 <br><br> Microsoft 365 A5 訂閱 (付費或試用版本)  <br><br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件 <br><br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件 <br><br> Microsoft 365 G5 訂閱 (付費或試用版本)  <br><br> Microsoft 365 G5 訂閱 + Microsoft 365 G5 合規性附加元件 <br> Microsoft 365 G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件 <br><br> Office 365 企業版 E5 訂閱 (付費或試用版本)  <br><br> Office 365 A5 訂閱 (付費或試用版本)  <br><br> Office 365 Enterprise E3 訂閱 + Office 365 Advanced 合規性附加元件 (已無法再供新訂閱使用)  |
+| 內部風險管理 | 「有問必答風險管理」可讓您偵測、調查和動作組織中的惡意和意外活動，以協助將內部風險降至最低。 | Microsoft 365 E5 訂閱 (付費或試用版本)  <br><br> Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件 <br><br> Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」 <br><br> Microsoft 365 A5 訂閱 (付費或試用版本)  <br><br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件 <br><br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件 |
+| 資訊屏障 | 資訊壁壘可讓您限制兩個內部群組之間的通訊和共同作業，以避免組織中發生利益衝突。  | Microsoft 365 E5/A5 <br><br> Office 365 E5/A5 <br><br> Office 365 進階合規性 <br><br> Microsoft 365 規範 E5/A5 <br><br> Microsoft 365 有問必答風險管理 |
+| 特殊權限存取管理 | 「特權存取管理」允許對 Office 365 中的特殊 Exchange Online 系統管理員工作進行精細存取控制。 它可協助保護您的組織，避免因使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。 | Microsoft 365 E5/A5 <br><br> Office 365 E5/A5 <br><br> Microsoft 365 E5/A5 合規性 <br><br> Microsoft 365 E5/A5 資訊保護和控管 |
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署 Microsoft 365 有問必答風險解決方案
 
@@ -69,7 +69,7 @@ Microsoft 365 風險防護功能是設計和內建給我們的有問必答風險
 
 ## <a name="illustrations-with-examples"></a>範例圖例
 
-若要協助您規劃整合策略以執行 Microsoft 365 內幕人士的風險功能，請下載 *microsoft 365 資訊保護和合規性功能* 組圖例。 如需內幕風險功能，請參閱架構圖解主題5-7。 您可以隨意使用這些圖。
+若要協助您規劃整合策略以執行 Microsoft 365 內幕人士的風險功能，請下載 *microsoft 365 資訊保護和合規性功能* 組圖例。 如需內幕風險功能，請參閱架構圖解 pages 5-7。 您可以隨意使用這些圖。
 
 | 項目 | 描述 |
 |:-----|:------------|

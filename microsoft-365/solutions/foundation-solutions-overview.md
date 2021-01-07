@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Foundation 解決方案概述
-description: 描述。
+description: 請閱讀這些基礎方案指南，以瞭解概念和功能，並協助您做出選擇，以從規劃到實施起起作用的最終結果到採用。
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 f1.keywords: NOCSH
 ROBOTS: NOINDEX
-ms.openlocfilehash: 666ff0b9a3abb82af1eba12d5d17d025cfc9bff5
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 28e68d7fe1a814ec82aba95aae59e5ae85244fe6
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613605"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771916"
 ---
 # <a name="microsoft-365-foundation-solutions-overview"></a>Microsoft 365 Foundation 解決方案概述
 

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: f63328992af95562688e644f68b8151eb09b9e0f
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9b48321693f883e40a100e29e5e1ec3c5203caa2
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846145"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49771856"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -84,10 +84,13 @@ ms.locfileid: "48846145"
 | `SensitivitySubLabel` | string | 套用至電子郵件、檔案或其他內容的 Sublabel，以分類資訊保護;敏感度分組是以靈敏度標籤群組，但是會個別處理 |
 | `IsAzureInfoProtectionApplied` | 布林值 | 指出檔案是否由 Azure 資訊保護所加密 |
 
+>[!NOTE]
+> 檔案雜湊資訊會在可用時永遠顯示。 不過，有數個可能的原因是無法計算 SHA1、SHA256 或 MD5。 例如，檔案可能位於遠端存放區、已壓縮或已標記為虛擬的另一個處理常式鎖定。 在這些情況下，檔雜湊資訊會顯示空白。
+
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式和身分識別搜捕](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

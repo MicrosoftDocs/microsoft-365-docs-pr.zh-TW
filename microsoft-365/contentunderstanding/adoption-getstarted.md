@@ -12,12 +12,12 @@ ms.collection: enabler-strategic
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 95e1ad15a62762c8b28203e178d4d4ae7906e38a
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 441f28e36ced25b2e5af3f71235995c8b021f779
+ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760239"
+ms.locfileid: "49771868"
 ---
 # <a name="microsoft-sharepoint-syntex-adoption-get-started"></a>Microsoft SharePoint Syntex 採用：快速入門
 
@@ -27,13 +27,16 @@ ms.locfileid: "49760239"
 - **內容處理：** 自動化內容的捕獲、攝取和分類，並使用 Power 自動化簡化以內容為中心的程式。 深入瞭解 [內容處理](form-processing-overview.md)。
 - **內容規範：** 控制和管理內容，以改進安全性和管理與 Microsoft 資訊保護的整合。
 
-透過全新的 AI 服務和功能，您可以使用 SharePoint Syntex，將內容瞭解和分類應用程式直接建立到內容管理流程中：
+透過全新的 AI 服務和功能，您可以使用 SharePoint Syntex，將內容瞭解和分類應用程式直接組建至內容管理流程。 有兩種不同的方式可以瞭解您的內容。 您使用的模型類型是以檔案格式和使用案例為基礎：
 
-|手動輸入| 表單處理 | 檔瞭解 |
-|:-------|:--------|:--------|
-| 任何內容的資料錄入和勞動密集型。 | 識別檔，並從結構化或半結構化檔（例如表單或發票）提取資料。 |  識別及解壓縮非結構化檔中的資料，例如信件或合約，您想要提取的文字實體會位於檔的句子或特定區域中。 |
-| 互動。   |  自訂、協助。  | 預先建立、自動化。 |
-| 工作中的人員。 | 由主題專家教授 (Sme) 。 | Sme 的相關程度較低。 |
+| 表單處理 | 檔瞭解 |
+|:-------|:-------|
+| 從文件庫建立。 | 在內容中心建立，SharePoint Syntex 的一部分。 |
+| 在 [AI 產生器] 中建立的模型。 | 在原生介面中建立的模型。 |
+| 用於半結構化檔案格式。 | 用於非結構化檔案格式。 |
+| 可設定的分類器。 | Trainable 具有選用擷取器的分類器。 |
+| 限制于單一文件庫。 | 可套用至多個文件庫。 |
+| 在 PDF，JPG，PNG 格式，總 50 MB/500 pp 進行訓練。 | 在 5-10 PDF、Office 或電子郵件檔上訓練，包含負的範例。 |
 
 下表說明 SharePoint Syntex 的可用性和授權：
 
@@ -44,17 +47,6 @@ ms.locfileid: "49760239"
 | 針對預設的一般資料服務環境進行布建。 | 不具備容量限制。 |
 
 如需 AI 產生者學分和單位的詳細資訊，請參閱 [AI builder 授權](https://docs.microsoft.com/ai-builder/administer-licensing)。
-
-有兩種不同的方式可以瞭解您的內容。 您使用的模型類型是以檔案格式和使用案例為基礎：
-
-| 表單處理 | 檔瞭解 |
-|:-------|:-------|
-| 從文件庫建立。 | 在內容中心建立，SharePoint Syntex 的一部分。 |
-| 在 [AI 產生器] 中建立的模型。 | 在原生介面中建立的模型。 |
-| 用於半結構化檔案格式。 | 用於非結構化檔案格式。 |
-| 可設定的分類器。 | Trainable 具有選用擷取器的分類器。 |
-| 限制于單一文件庫。 | 可套用至多個文件庫。 |
-| 在 PDF，JPG，PNG 格式，總 50 MB/500 pp 進行訓練。 | 在 5-10 PDF、Office 或電子郵件檔上訓練，包含負的範例。 |
 
 SharePoint Syntex 與 Microsoft 365 規範功能整合，例如：
 

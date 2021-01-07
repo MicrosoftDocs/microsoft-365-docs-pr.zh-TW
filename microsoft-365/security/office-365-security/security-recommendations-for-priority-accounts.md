@@ -17,12 +17,12 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何提升安全性設定，以及如何在 Microsoft 365 組織中提升優先順序帳戶的安全性設定，以及使用報表、警示和調查。
-ms.openlocfilehash: aee238d2fb58d2772881d8d77f98959906943290
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 9788131ea881a1cb3c36a60dfaac01ed5daf0901
+ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668113"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "49769242"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 中優先順序帳戶的安全性建議
 
@@ -31,6 +31,8 @@ ms.locfileid: "49668113"
 針對攻擊者，強制轉換隨機網路以取得隨機或未知使用者之認證的一般網路釣魚攻擊是低效的。 另一方面， _spear 網路釣魚_ 或 _whaling_ 攻擊，其可讓使用者在電源或授權的位置受到攻擊，對攻擊者而言會有更大的回報。 如果這些優先順序帳戶遭到損害，攻擊者可能會利用組織內的系統管理員、財務、產品甚至實體存取能力，取得帳戶的存取權。
 
 Microsoft 365 和 Microsoft Defender for Office 365 包含許多不同的功能，可協助您為優先順序帳戶提供額外的安全性層級。 本文將討論可用的功能及其用法。
+
+![圖示表單中安全性建議的摘要](../../media/security-recommendations-for-priority-users.png)
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>增加優先順序帳戶的登入安全性
 
@@ -60,7 +62,7 @@ Microsoft 365 和 Microsoft Defender for Office 365 包含許多不同的功能�
 
 如需嚴格原則設定與預設和標準原則設定的區別之詳細資訊，請參閱 [EOP 和 Microsoft Defender For Office 365 security 的建議設定](recommended-settings-for-eop-and-office365-atp.md)。
 
-## <a name="user-tags"></a>使用者標記
+## <a name="apply-user-tags-to-priority-accounts"></a>將使用者標記套用至優先順序帳戶
 
 Microsoft Defender for Office 365 方案 2 (中的使用者標記是 Microsoft 365 E5 或附加元件訂閱) 中的一種方法，可快速識別及分類報告和事件調查中的特定使用者或使用者群組。
 
@@ -68,7 +70,11 @@ Microsoft Defender for Office 365 方案 2 (中的使用者標記是 Microsoft 3
 
 您也可以建立自訂標記，進一步識別和分類您的優先順序帳戶。 如需詳細資訊，請參閱 [User tags](user-tags.md)。 請注意，您可以在與自訂使用者標籤位於相同介面中 (系統標記) 管理 **優先順序帳戶** 。
 
-## <a name="priority-accounts-in-reports-and-investigations-in-microsoft-365"></a>Microsoft 365 中報告和調查中的優先順序帳戶
+## <a name="monitor-priority-accounts-in-alerts-reports-and-detections"></a>監視警示、報告和偵測中的優先順序帳戶
+
+在您保護優先順序使用者並標示其標記之後，您可以使用 EOP 和 Defender for Office 365 中的可用報告、警示和調查，以快速識別涉及優先順序帳戶的事件或偵測。 下表說明支援使用者標記的功能。
+
+<br>
 
 ****
 
@@ -81,6 +87,6 @@ Microsoft Defender for Office 365 方案 2 (中的使用者標記是 Microsoft 3
 |優先順序帳戶報告的電子郵件問題|Exchange 系統管理中心中「優先順序帳戶」報告的 **電子郵件問題** (EAC) 包含 **優先順序帳戶** 之未傳遞和延遲郵件的相關資訊。 如需詳細資訊，請參閱 [優先順序帳戶報告的電子郵件問題](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
 |
 
-## <a name="see-also"></a>也請參閱
+## <a name="see-also"></a>另請參閱
 
 [宣告 Office 365 的 Microsoft Defender 優先順序帳戶保護](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/announcing-priority-account-protection-in-microsoft-defender-for/ba-p/1696385)
