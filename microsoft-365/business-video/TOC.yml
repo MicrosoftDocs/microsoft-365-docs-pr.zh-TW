@@ -1,17 +1,17 @@
-- name: Microsoft 365 small business 訓練
+- name: Microsoft 365 商務版訓練
   href: index.yml
   items:
-    - name: 入門
+    - name: 快速入門
       items:
-        - name: 何謂 Microsoft 365
+        - name: 什麼是 Microsoft 365？
           href: what-is-microsoft-365.md
-        - name: 步驟概觀
+        - name: 設定概觀
           href: setup-overview.md
         - name: 選擇訂閱
           href: Choose-subscription.md
     - name: 雲端設定
       items:
-        - name: 註冊訂閱
+        - name: 註冊以訂閱
           href: sign-up.md
         - name: 設定服務
           href: set-up.md
@@ -21,7 +21,7 @@
           href: create-web-site.md
     - name: 裝置設定
       items:
-        - name: 升級至 Windows 10 專業版
+        - name: 升級到 Windows 10 專業版
           href: upgrade.md
         - name: 將電腦連線至 Microsoft 365
           href: connect.md
@@ -29,25 +29,25 @@
           href: install-office.md
         - name: 設定 Outlook 以收發電子郵件
           href: setup-outlook.md
-        - name: 匯入並重新導向郵件
+        - name: 匯入和重新導向電子郵件
           href: import-email.md
-        - name: 將檔案移至 OneDrive
+        - name: 將檔案移動到 OneDrive
           href: files-to-onedrive.md
-        - name: 將公司檔案移至 SharePoint
+        - name: 將公司檔案移動到 SharePoint
           href: files-to-sharepoint.md
-    - name: Mobile
+    - name: 行動裝置
       items:
-        - name: 在任何地方工作
+        - name: 隨時隨地都能工作
           href: work-from-anywhere.md
-        - name: 在 Android 上安裝 Office 應用程式
+        - name: 在 Android 上安裝 Office App
           href: install-apps-android.md
-        - name: 在 iOS 上安裝 Office 應用程式
+        - name: 在 iOS 上安裝 Office App
           href: install-apps-ios.md
-        - name: 取得 Admin 行動應用程式
+        - name: 取得系統管理行動 App
           href: admin-mobile.md
     - name: 共同作業
       items:
-        - name: 使用 Outlook 和團隊
+        - name: 使用 Outlook 和 Teams
           href: collab-outlook-teams.md
         - name: 建立群組電子郵件地址
           href: group-email.md
@@ -61,89 +61,91 @@
           href: join-team-guest.md
         - name: 與員工和客戶聊天
           href: start-and-pin-chats.md
-        - name: 線上會議概述
+        - name: 線上會議概觀
           href: overview-online-meetings.md
-        - name: 安排與客人的會議
+        - name: 排定與來賓的會議
           href: schedule-guest-meeting.md
-        - name: 加入具有來賓的會議
+        - name: 加入含有來賓的會議
           href: join-guest-meeting.md
-    - name: 雲端儲存
+    - name: 雲端儲存空間
       items:
-        - name: 共用概述
+        - name: 共用概觀
           href: overview-file-sharing.md
         - name: 儲存檔案的位置
           href: store-files.md
-        - name: 安全地從外部共用檔案
+        - name: 安全地於外部共用檔案
           href: securely-share-files-externally.md
-        - name: 輕鬆地從外部共用檔案
+        - name: 輕鬆地於外部共用檔案
           href: share-files-externally.md
-    - name: 商務語音
+    - name: Business Voice
       items:
-        - name: 商務語音簡介
+        - name: Business Voice 概覽
           href: business-voice.md
-        - name: 購買商務語音附加元件
+        - name: 購買 Business Voice 附加元件
           href: buy-business-voice.md
     - name: 生產力應用程式
       items:
-        - name: 預定簡介
+        - name: Bookings 概觀
           href: overview-bookings.md
-        - name: 規劃事件
+        - name: 規劃活動
           href: plan-event.md
     - name: 管理服務
       items:
-        - name: 何謂系統管理員
+        - name: 什麼是系統管理員
           href: what-is-admin.md
-        - name: 系統管理中心概述
+        - name: 系統管理中心概觀
           href: admin-center-overview.md
-        - name: 查看、下載或列印您的帳單
+        - name: 檢視、下載或列印您的帳單
           href: view-bill.md
-        - name: 更新您的付款條件
+        - name: 購買新的授權
+          href: buy-licenses.md
+        - name: 更新​​您的付款方式
           href: update-payment.md
         - name: 重設使用者密碼
           href: reset-user-passwords.md
-        - name: 設定自助密碼重設
+        - name: 設定自助式密碼重設
           href: set-up-self-serve-password-reset.md
         - name: 新增使用者
           href: add-user.md
         - name: 刪除使用者
           href: delete-user.md
-        - name: 新增另一個系統管理員
+        - name: 新增其他系統管理員
           href: add-admin.md
-        - name: 變更使用者名稱或電子郵件
+        - name: 變更使用者名稱或電子郵件地址
           href: change-user-name-email.md
         - name: 將使用者移至其他訂閱
           href: change-subscription.md
-        - name: 建立全公司的簽名
+        - name: 建立全公司的簽章
           href: company-wide-signature.md
-        - name: 對使用方式報告採取動作
+        - name: 依使用情況報告採取行動
           href: act-on-report.md
-        - name: 新增其他網域
+        - name: 新增另一個網域
           href: add-domain.md
     - name: 管理裝置
       items:
         - name: 保護 Windows 10 專業版裝置
           href: secure-win-10-pro-devices.md
-        - name: 安全 iOS 上的 Office 應用程式
+        - name: 保護 iOS 上的 Office 應用程式
           href: secure-office-on-ios.md
-    - name: 安全性 & 合規性
+    - name: 安全性與合規性
       items:
-        - name: Microsoft 365 商務版高安全性的概述
+        - name: Microsoft 365 商務進階版安全性的概觀
           href: overview-m365-security.md
-        - name: 安全員工帳戶與 MFA
+        - name: 使用 MFA 保護員工帳戶
           href: turn-on-mfa.md
-        - name: 在您的手機上設定兩個要素登入
+        - name: 在您的手機上設定雙因素登入
           href: set-up-mfa.md
         - name: 開啟惡意程式碼偵測
           href: anti-malware.md
-        - name: 建立勒索軟體的電子郵件規則
+        - name: 針對勒索軟體建立電子郵件規則
           href: prevent-ransom-in-email.md
-        - name: 停止自動轉送電子郵件
+        - name: 停止自動轉寄電子郵件
           href: stop-email-auto-forward.md
-        - name: 設定反網路釣魚
+        - name: 設定防網路釣魚
           href: setup-anti-phishing.md
         - name: 管理安全附件
           href: safe-attachments.md
-        - name: 管理安全連結
+        - name: 選擇安全連結
           href: safe-links.md
         - name: 防止資料遺失
           href: set-up-dlp.md
@@ -151,9 +153,9 @@
           href: create-sensitivity-labels.md
     - name: 支援
       items:
-        - name: 尋找答案及說明
+        - name: 尋找解答和說明
           href: find-help-answers.md
-        - name: 取得協助或支援
+        - name: 取得說明或支援
           href: get-help-support.md
         - name: 員工快速設定
           href: employee-quick-setup.md
