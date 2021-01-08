@@ -24,7 +24,7 @@
       items:
         - name: 新增網域
           href: 'https://docs.microsoft.com/microsoft-365/admin/setup/add-domain'
-        - name: 設定 M365E 端點允許清單
+        - name: 設定端點以略過
           items:
             - name: Office 365 IP 位址和 URL Web 服務
               href: microsoft-365-ip-web-service.md
