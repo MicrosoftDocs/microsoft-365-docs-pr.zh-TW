@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: 系統管理員可以深入瞭解 Microsoft 365 的安全性 & 規範中心提供的許可權。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 27e1a9451f4a51872599f18e65c29a2ec15c539d
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 28f3ca7fb1efa7924cc69c9ecf1deb2123282dfa
+ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769228"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784318"
 ---
 # <a name="permissions-in-the-security--compliance-center"></a>安全性與合規性中心中的權限
 
@@ -53,6 +53,11 @@ ms.locfileid: "49769228"
 安全性與合規性中心的權限管理只能將安全性與合規性中心本身的規範功能存取權授與使用者。 如果您想授與安全性與合規性中心以外的其他合規性功能權限，例如 Exchange 郵件流程規則 (也稱為傳輸規則)，則必須使用 Exchange 系統管理中心。
 
 若要查看如何授與安全性 & 規範中心的存取權，請參閱 [讓使用者能夠存取 Microsoft 365 合規性系統管理中心](grant-access-to-the-security-and-compliance-center.md)。
+
+> [!NOTE]
+> 若要在安全性 & 規範中心中查看 [ **許可權** ] 索引標籤，您必須是系統管理員。具體而言，您必須被指派 **角色管理** 角色，而且該角色預設只會指派給「安全性 & 合規性中心的「 **組織管理** 」角色群組。 此外，「 **角色管理** 」角色可讓使用者查看、建立及修改角色群組。
+
+<br><br>
 
 ****
 
@@ -141,6 +146,8 @@ ms.locfileid: "49769228"
 - 檢閱
 - RMS 解密
 - 主管檢閱系統管理員
+
+<br><br>
 
 ****
 

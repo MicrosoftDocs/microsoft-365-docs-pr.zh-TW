@@ -17,12 +17,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 中查看、建立、修改及刪除安全連結原則及全域安全連結設定。
-ms.openlocfilehash: 7a00b73855302f5046afa0605fd7188007394ed7
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: ef83d0dba1de03aa2b36384474791783e926059f
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683160"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780529"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>設定 Microsoft Defender for Office 365 中的安全連結原則
 
@@ -59,11 +59,11 @@ ms.locfileid: "49683160"
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
-- 您必須先獲指派安全性與合規性中心的權限，才能執行此文章中的程序：
-  - 若要建立、修改及刪除安全連結原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
+- 您必須已獲指派許可權，才能執行本文中的程式：
+  - 若要建立、修改和刪除安全連結原則，您必須是 Security & 合規性中心內的「 **組織管理** 」或「 **安全性管理員** 」角色群組成員， **以及** Exchange Online 中的「 **組織管理** 」角色群組的成員。
   - 若要對安全連結原則進行唯讀存取，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
-  如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
+  如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md) 和 [Exchange Online 中的許可權](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
   **附註**：
 

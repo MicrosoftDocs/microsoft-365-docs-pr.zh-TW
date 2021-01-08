@@ -3,7 +3,7 @@ title: Azure 閘道子網的位址空間計算機
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/01/2020
+ms.date: 01/07/2021
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -16,23 +16,23 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 description: 摘要：使用 C3、Python 或 PowerShell 計算 Azure 閘道子網的位址空間。
-ms.openlocfilehash: 5e119f1ddefb5877886042b835ffdd093a34f0f8
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: d92bea5c36fde6277154d19365ed0bdaa5df4254
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332784"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780565"
 ---
 # <a name="address-space-calculator-for-azure-gateway-subnets"></a>Azure 閘道子網的位址空間計算機
 
-連線至其他網路之 Azure 基礎結構服務中的虛擬網路 (VNet) 必須具有閘道子網。 定義這個子網的最佳作法如下：
+連線至其他網路之 Azure 基礎結構服務中的虛擬網路 (VNet) 必須具有閘道子網。 定義閘道子網的最佳作法如下：
 
 - 閘道子網的前置長度可以有最大前置長度 29 (例如，10.119.255.248/29) ，但目前建議使用的前置詞長度為 27 (例如，10.119.255.224/27) 。
 - 在定義閘道子網的位址空間時，請使用 VNet 位址空間的最後一部分。
 
-針對第二個建議，您可以將閘道子網所用的位數設定為0，並將其餘的變數 VNet 位設定為1，以判斷閘道子網的位址空間。 若要快速計算閘道子網位址空間，而不需要轉換成二進位及回到十進位，您可以使用以 c # 或 Python 或使用 PowerShell 命令區塊編寫的主控台應用程式。
+針對第二個建議，您可以透過將閘道子網所用的位數設定為0，以及 VNet 位址空間中的剩餘位數設定為1，以判斷閘道子網的位址空間。 若要快速計算閘道子網位址空間，而不需要轉換成二進位及回到十進位，您可以使用以 c # 或 Python 或使用 PowerShell 命令區塊編寫的主控台應用程式。
 
-本文包含的 c #、Python 及 PowerShell 程式碼區塊，會收集五個整數（VNet 位址前置詞和閘道子網前置長度的 w.x.y.z/n 的值），並計算閘道子網位址空間。
+本文包含的 c #、Python 及 PowerShell 程式碼區塊，會根據 w.x.y.z/n 的值，計算 VNet 位址前置詞和閘道子網前置長度的閘道子網位址空間。
 
 ## <a name="c-code-block"></a>C # 程式碼區塊
 
@@ -62,8 +62,8 @@ namespace ConsoleApplication1
  
             // Get the five values needed from the keyboard. 
             Console.WriteLine("**************************************************************************"); 
-            Console.WriteLine("*** Gateway subnet address space calculator for Azure virtual networks ***");             
-            Console.WriteLine("**************************************************************************");  
+            Console.WriteLine("**_ Gateway subnet address space calculator for Azure virtual networks _*_");             
+            Console.WriteLine("_*************************************************************************");  
             Console.WriteLine(); 
             Console.WriteLine("Please supply your virtual network address space in the form of w.x.y.z/n."); 
             Console.WriteLine(); 
@@ -116,8 +116,8 @@ namespace ConsoleApplication1
 import math 
 # Collect the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet 
 print("**************************************************************************")  
-print("*** Gateway subnet address space calculator for Azure virtual networks ***")  
-print("**************************************************************************\n")   
+print("**_ Gateway subnet address space calculator for Azure virtual networks _*_")  
+print("_*************************************************************************\n")   
 print("Please supply your virtual network address space in the form of w.x.y.z/n.");  
 w=int(input("w = ")) 
 x=int(input("x = ")) 
@@ -149,7 +149,7 @@ print(gwAddrPref)
 
 ## <a name="powershell-command-block"></a>PowerShell 命令區塊
 
-填寫值，並在 PowerShell 視窗或 PowerShell ISE 中執行結果命令區塊。
+填寫值，並在 PowerShell 視窗或 PowerShell 整合式腳本環境 (ISE) 中執行所產生的命令區塊。
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 
@@ -180,4 +180,3 @@ Write-Host "Your gateway address prefix is: " $dx
 ## <a name="related-topics"></a>相關主題
 
 [使用 PowerShell 管理 Microsoft 365](manage-microsoft-365-with-microsoft-365-powershell.md)
-

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：從 Microsoft Cloud (德國移至 Microsoft cloud Deutschland 時，服務的其他裝置資訊) 新德文 datacenter 區域中的 Office 365 服務。
-ms.openlocfilehash: 1bbb4bf39db61a93844c21cd6062a70699b5d6d7
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 151fcac882dc91d96df3ece000c28d1a7abe1d1f
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688650"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780293"
 ---
 # <a name="additional-device-information-for-the-migration-from-microsoft-cloud-deutschland"></a>從 Microsoft Cloud Deutschland 遷移的其他裝置資訊
 
@@ -61,7 +61,7 @@ Microsoft 會發佈有關如何成功還原裝置狀態的指示。
 Get-AzureADServicePrincipal -All:$true |Where-object -Property AppId -eq "0000000a-0000-0000-c000-000000000000" | Set-AzureADServicePrincipal -AccountEnabled:$false
 ```
 
-## <a name="windows-hybrid-azure-ad-join"></a>Windows 混合式 Azure AD 聯結
+## <a name="hybrid-azure-ad-join"></a>混合式 Azure AD Join
 
 ### <a name="windows-down-level"></a>Windows 低層級
 
@@ -135,7 +135,7 @@ Private key state : Okay
 只要裝置具有與全域 Azure AD 端點的網路連線，裝置就會自動加入至 Azure AD （無使用者或系統管理員干預）。 
 
 
-## <a name="windows-azure-ad-join"></a>Windows Azure AD 加入
+## <a name="azure-ad-join"></a>Azure AD 加入
 
 **重要：** 在商務用遷移後，將會啟用 Intune 服務主體，這表示 Azure AD Device Registration 的啟用。 如果您在遷移之前封鎖 Azure AD 裝置註冊，您必須使用 PowerShell 停用 Intune service 主體，以使用 Azure AD 入口網站停用 Azure AD 裝置註冊。 您可以在 [Graph] 模組的 [Azure Active Directory PowerShell 中使用此命令來停用 Intune 服務主體。
 
@@ -180,7 +180,7 @@ Admin：如果組織的系統管理員想要將已加入 Azure AD 的使用者�
 使用者可以從 [Windows 設定] 將裝置加入 Azure AD： **設定 > 帳戶 > 存取工作或學校 >** 連線。
  
 
-## <a name="windows-azure-ad-registered-company-owned"></a>Windows Azure AD 已登記 (公司擁有) 
+## <a name="azure-ad-registered-company-owned"></a>Azure AD 已登記 (公司擁有) 
 
 若要判斷 Windows 10 裝置是否已登錄 Azure AD，請在裝置上執行下列命令：
 
@@ -270,7 +270,7 @@ Admin：如果組織的系統管理員想要將已加入 Azure AD 的使用者�
 
 使用者可以移至個別應用程式，例如 Outlook、小組和 OneDrive，以及從這些應用程式中移除帳戶。
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 開始：
 

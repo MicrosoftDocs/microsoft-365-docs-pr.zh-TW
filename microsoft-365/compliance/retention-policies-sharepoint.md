@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解保留功能在 SharePoint 以及 OneDrive 中的運作方式。
-ms.openlocfilehash: 84191cf7df1c8382b336ecce47c50ca24bc2aede
-ms.sourcegitcommit: 9bf6a4f77f9af5fd988f6795bad3b240213a51fc
+ms.openlocfilehash: 995f657778d3326a4d58d46f760539639f1fe7fe
+ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48951106"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49777066"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>瞭解 SharePoint 和 OneDrive 的保留功能
 
@@ -49,7 +49,9 @@ ms.locfileid: "48951106"
 > [!TIP]
 > 當您將[帶有自動套用原則的査詢用於保留標籤](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)時，可以使用以下項目排除指定文件庫：`NOT(DocumentLink:"<URL to document library>")`
 
-保留設定不適用於組織結構，包含像是文件庫、清單及資料夾。 或系統清單中的項目，這是 SharePoint 用來管理系統的隱藏清單，並包括主版頁面目錄、解決方案目錄及資料來源。
+清單項目不受保留原則支援，但受保留標籤支援 (系統清單中的項目除外)。 這些是 SharePoint 用來管理系統的隱藏清單，並包括主版頁面目錄、解決方案目錄及資料來源。
+
+來自保留原則和保留標籤的保留設定，均不適用包含文件庫、清單及資料夾的組織結構。
 
 針對保留原則和自動套用標籤原則：SharePoint 網站必須編制索引，才能套用保留設定。 不過，如果 SharePoint 文件庫中的項目設定為不在搜尋結果中顯示，此設定就不會將這些檔案從保留設定中排除。
 

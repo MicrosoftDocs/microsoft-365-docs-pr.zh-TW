@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 00fcc6514679868066ef88b0c9bc4a485d032528
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667634"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780269"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -65,9 +65,9 @@ ms.locfileid: "49667634"
 | `PhishDetectionMethod` | 字串 | 用於偵測電子郵件為網路釣魚網路的方法：惡意 URL 信譽、安全連結 URL 引爆、高級網路釣魚篩選、一般網路釣魚篩選器、反欺騙性：組織內、反欺騙性：外部網域、網域模擬、使用者模擬、品牌模仿 |
 | `MalwareFilterVerdict` | 字串 | 決定電子郵件是否包含惡意程式碼的電子郵件篩選堆疊：惡意程式碼或非惡意程式碼 |
 | `MalwareDetectionMethod` | 字串 | 用於偵測電子郵件中惡意程式碼的方法：反惡意程式碼引擎、檔信譽、安全附件 |
-| `FinalEmailAction` | 字串 | 以篩選決策、原則和使用者動作為基礎的最終電子郵件執行動作：將郵件移至垃圾郵件資料夾、新增 X 標頭、修改主旨、重新導向郵件、刪除郵件、傳送至隔離、未採取任何動作、密件副本郵件 |
-| `FinalEmailActionPolicy` | 字串 | 生效的動作原則：反垃圾郵件 - 高信賴度、反垃圾郵件、反垃圾郵件 - 大宗郵件、反垃圾郵件 - 網路釣魚、反網路釣魚網域模擬、反網路釣魚使用者模擬、反網路釣魚詐騙、反網路釣魚圖形模擬、反惡意程式碼、安全附件、企業傳輸規則 (ETR) |
-| `FinalEmailActionPolicyGuid` | 字串 | 決定最終郵件動作的原則的唯一識別碼 |
+| `EmailAction` | 字串 | 以篩選決策、原則和使用者動作為基礎的最終電子郵件執行動作：將郵件移至垃圾郵件資料夾、新增 X 標頭、修改主旨、重新導向郵件、刪除郵件、傳送至隔離、未採取任何動作、密件副本郵件 |
+| `EmailActionPolicy` | 字串 | 生效的動作原則：反垃圾郵件 - 高信賴度、反垃圾郵件、反垃圾郵件 - 大宗郵件、反垃圾郵件 - 網路釣魚、反網路釣魚網域模擬、反網路釣魚使用者模擬、反網路釣魚詐騙、反網路釣魚圖形模擬、反惡意程式碼、安全附件、企業傳輸規則 (ETR) |
+| `EmailActionPolicyGuid` | 字串 | 決定最終郵件動作的原則的唯一識別碼 |
 | `AttachmentCount` | int | 電子郵件的附件數量 |
 | `UrlCount` | int | 電子郵件的內嵌 URL 數量 |
 | `EmailLanguage` | 字串 | 偵測到的電子郵件內容語言 |

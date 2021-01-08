@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: 深入瞭解為小組中的客人設定任務、交談及檔共同作業時，所需的 Microsoft 365 設定步驟。
-ms.openlocfilehash: cc962e22bde70220e07f805b0a7a83c111886369
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 34b7d5d47d7fb0c9196beda70184fa6510b6cc33
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659603"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780541"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>在小組中與來賓共同作業
 
@@ -74,7 +74,7 @@ Microsoft 365 中的共用受 [Azure Active Directory 中的 B2B 外部](https:/
 5. 確定 [在 Teams 中允許來賓存取] 已設定為 [開啟]。
 6. 對其他來賓設定進行所需的變更，然後按一下 [儲存]。
 
-一旦開啟團隊使用者存取，您可以選擇性地使用敏感度標籤控制個別小組及其相關聯 SharePoint 網站的 guest 存取。 如需詳細資訊，請參閱 [使用敏感度標籤來保護 Microsoft 團隊、microsoft 365 群組和 SharePoint 網站中的內容](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
+一旦開啟團隊使用者存取，您可以選擇性地使用敏感度標籤控制個別小組及其相關聯 SharePoint 網站的 guest 存取。 如需詳細資訊，請參閱 [[使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容]](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)。
 
 > [!NOTE]
 > 「小組訪客」設定在開啟後，可能需要長達24小時的時間才會變成作用中。
@@ -177,7 +177,7 @@ Microsoft 365 中的共用受 [Azure Active Directory 中的 B2B 外部](https:/
 4. 輸入來賓的完整名稱，然後按一下核取記號。
 5. Click **Add**, and then click **Close**.
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 [與未驗證使用者共用檔案和資料夾的最佳做法](best-practices-anonymous-sharing.md)
 
@@ -188,3 +188,5 @@ Microsoft 365 中的共用受 [Azure Active Directory 中的 B2B 外部](https:/
 [使用受管理來賓建立 B2B 外部網路](b2b-extranet.md)
 
 [與 Azure AD B2B 的 SharePoint 和 OneDrive 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+
+[當您從 SharePoint 或 OneDrive 共用時，共用選項會變灰。](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

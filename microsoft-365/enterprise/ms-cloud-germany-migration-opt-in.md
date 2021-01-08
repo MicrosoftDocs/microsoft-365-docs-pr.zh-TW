@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: '摘要： '
-ms.openlocfilehash: 35d11825148af883299aed1bcb2346d26d52408c
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: bcec542ad285dcabaf71af1ea8efc28f3f7d6b5a
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688674"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780317"
 ---
 # <a name="how-to-opt-in-for-migration-from-microsoft-cloud-germany-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>如何選擇加入從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 到新德國資料中心區域中的 Office 365 服務的移轉。
 
@@ -34,40 +34,41 @@ ms.locfileid: "49688674"
 
 ## <a name="how-to-request-migration"></a>如何要求移轉
 
-具有在 Microsoft 雲端德國提供服務的合格客戶 (Microsoft Cloud Deutschland) 會顯示 Microsoft 365 系統管理中心的頁面，讓客戶租使用者管理員加入宣告以進行遷移。
+如果您是在 Microsoft Cloud Deutschland 中布建服務的合格客戶 (Microsoft Cloud) 且已以承租人 (全域) 管理員身分登入，則 Microsoft 365 系統管理中心的頁面可讓您選擇要進行遷移。
 
-若要在 Microsoft 365 系統管理中心中存取該頁面，請在左側的 [功能窗格] 中展開 [設定]，然後按一下 [組織設定檔]。
+若要存取此頁面，請展開左側功能窗格中的 [ **設定** ]，然後按一下 [ **組織設定檔**]。
 
 在 [組織設定檔] 頁面上，往下捲動到 [從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務] 區段。
 
-如果您的組織想從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務，請按一下 [選擇加入]。
+如果您想要從 Microsoft Cloud 德國遷移服務 (Microsoft Cloud Deutschland) 到新的德國資料中心區域的 Office 365 服務，請按一下 [ **加入宣告**]。
  
 ![選擇加入簡介](../media/ms-cloud-germany-migration-opt-in/tenant-migration.png)
 
-畫面右邊會顯示一個新區段，讓您接受確認。 選取切換按鈕為 [是]，然後按一下 [儲存]。
+新的區段會出現在畫面右側，以接受您的確認。 選取 **[是]**，然後按一下 [ **儲存**]。
  
 ![選擇加入接受](../media/ms-cloud-germany-migration-opt-in/tenant-migration-new-regions.png)
 
-系統管理員代表您的租用戶選擇加入後，所有系統管理員將在 **[從 Microsoft Cloud Germany (Microsoft Cloud Deutschland) 移轉到新德國資料中心區域中的 Office 365 服務]** 區段中看到確認，包含選擇加入的日期。。 系統管理員也會在 Microsoft 365 系統管理中心的訊息中心收到確認。 
+一旦您已自願加入您的承租人，所有系統管理員會在 [新德文 Deutschland] 區段的 [Office 365 服務] （包括自願加入的日期）中看到 [ **從 Microsoft 雲端德國遷移] (Microsoft Cloud) 至 Office 服務** ]。 系統管理員也會在 Microsoft 365 系統管理中心的郵件中心收到確認。 
  
 ![選擇加入確認](../media/ms-cloud-germany-migration-opt-in/tenant-migration2.png)
 
-## <a name="what-happens-after-opting-in-for-migration"></a>選擇加入移轉後，會發生什麼情況？
+## <a name="what-happens-after-opting-in-for-migration"></a>選擇進行遷移後，會發生什麼事？
 
-針對加入宣告 Microsoft 導向方法的組織，遷移將會從舊版2021開始2021，且會在 Microsoft Cloud 德國 (Microsoft Cloud Deutschland) 退休日期於年10月29日為止完成。  移轉之後，核心客戶資料和訂閱都會移至新的德國區域。  在移轉程序期間，Microsoft 會於訊息中心傳送最新資訊。  請參閱下列文章，以深入瞭解。
+針對加入宣告 Microsoft 導向方法的組織，遷移將會從舊版2021開始2021，且會在 Microsoft Cloud 德國 (Microsoft Cloud Deutschland) 退休日期於年10月29日為止完成。  移轉之後，核心客戶資料和訂閱都會移至新的德國區域。  Microsoft 會在郵件中心的整個遷移程式中發佈更新。 請參閱 [下列文章](#more-information) 以深入瞭解。
 
-## <a name="what-happens-if-the-customer-tenant-administrator-does-not-opt-in-for-migration-in-admin-center"></a>如果客戶租使用者管理員不選擇在系統管理中心進行遷移，會發生什麼情況？
+## <a name="what-happens-if-you-do-not-opt-in-for-migration-in-admin-center"></a>如果您不選擇在系統管理中心進行遷移，會發生什麼事？
 
-線上服務條款已變更，包含可讓 Microsoft 將您的 Microsoft 365、Dynamics 365 及 Power BI 資料和訂閱從 Microsoft Cloud Deutschland 遷移至新資料中心的字詞。 這些字詞會在任何 Microsoft Cloud 德國 (Microsoft cloud Deutschland) 訂閱從2020年5月1日起更新。  客戶租使用者管理員會在電子郵件和訊息中心收到通知，告知遷移將會自動加入宣告 Microsoft 輔助遷移。 在自動加入宣告之前，至少會傳送30天的通知。  在遷移後選擇將所有通訊和狀態更新傳送給郵件中心的客戶租使用者系統管理員。
+線上服務條款已變更，包含可讓 Microsoft 將您的 Microsoft 365、Dynamics 365 及 Power BI 資料和訂閱從 Microsoft Cloud Deutschland 遷移至新資料中心的字詞。 這些字詞會在任何 Microsoft Cloud 德國 (Microsoft cloud Deutschland) 訂閱從2020年5月1日起更新。 
 
-客戶與合作夥伴租使用者系統管理員可以在系統管理中心內選擇是否要進行遷移，讓遷移程式可以儘早開始。
+客戶租使用者管理員會在電子郵件中收到通知，並建議您加入宣告遷移的訊息中心會自動進行 Microsoft 輔助遷移。 在自動加入宣告之前，至少會傳送30天的通知。 遷移加入宣告後，所有通訊和狀態更新都會傳送給郵件中心的客戶租使用者系統管理員。
 
+客戶與合作夥伴租使用者系統管理員可在 Microsoft 365 系統管理中心內選擇要進行遷移的使用者，讓遷移程式可以儘早開始。
 
 ## <a name="next-step"></a>後續步驟
 
 [瞭解遷移期間的客戶體驗](ms-cloud-germany-transition-experience.md)
 
-## <a name="more-information"></a>其他資訊
+## <a name="more-information"></a>其他相關資訊
 
 開始：
 

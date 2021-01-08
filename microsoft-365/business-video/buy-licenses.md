@@ -22,18 +22,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 瞭解如何購買新的 Microsoft 365 for business 授權。
-ms.openlocfilehash: 2f881881bc55659d5ba4cd7280111a15bf0f9ff3
-ms.sourcegitcommit: ddfb4f3e34deb733e8625e845e4dfd1fcc066ceb
+ms.openlocfilehash: a4bc66188b064227821ddc66cc764c83caad5f64
+ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49771953"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49784238"
 ---
 # <a name="buy-microsoft-365-licenses"></a>購買 Microsoft 365 授權
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-當您新增使用者時，您將需要為這些使用者購買更多授權。
+當您新增使用者時，您將需要購買更多適用于這些使用者的 Microsoft 365 授權。
 
 ## <a name="try-it"></a>試試看吧！
 

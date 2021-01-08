@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 摘要：新端點 Web 服務不包含特定案例的少量端點。
 hideEdit: true
-ms.openlocfilehash: 8e1d464a4bb24594ae783a8e1e272050b6c038bb
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: d5c97fa2399392b03e00644f270e8726570aefb5
+ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682850"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "49780577"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP 位址和 URL Web 服務中未包含的其他端點
 
@@ -80,6 +80,12 @@ ms.locfileid: "49682850"
   
 [內容傳遞網路](https://support.office.com/article/content-delivery-networks-0140f704-6614-49bb-aa6c-89b75dcd7f1f)
   
-[Microsoft Azure Datacenter IP 範圍](https://www.microsoft.com/download/details.aspx?id=41653)
+[Azure IP 範圍和服務標記–公用雲端](https://www.microsoft.com/download/details.aspx?id=56519)
+
+[Azure IP 範圍和服務標記–美國政府雲端](https://www.microsoft.com/download/details.aspx?id=57063)
+
+[Azure IP 範圍和服務標記–德國雲端](https://www.microsoft.com/download/details.aspx?id=57064)
+
+[Azure IP 範圍和服務標記–中國雲端](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft 公用 IP 空間](https://www.microsoft.com/download/details.aspx?id=53602)
