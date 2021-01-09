@@ -16,12 +16,12 @@ ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解可用及慣用的選項，允許在 Exchange Online Protection (EOP) 中輸入郵件。
-ms.openlocfilehash: 6e33d2b75429453602615bf98b8269ab160c7749
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 48f08e5b0d94a0e1eb65b78ba56639d8457f90aa
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698696"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788096"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>在 EOP 中建立安全的寄件者清單
 
@@ -41,9 +41,9 @@ ms.locfileid: "49698696"
 
 > [!IMPORTANT]
 >
-> - 小心使用安全寄件者清單密切監視垃圾郵件篩選的 *任何* 例外狀況。
+> - 請務必密切監視您使用安全寄件者清單對垃圾郵件篩選所進行的 *任何* 例外狀況。
 >
-> - 雖然您可以使用安全寄件者清單來協助誤報 (已標示為垃圾郵件) 的良好電子郵件，但您應考慮使用安全寄件者清單做為暫時的解決方案，以盡可能避免使用。 建議您不要使用安全寄件者清單來管理誤報，因為垃圾郵件篩選例外會開啟您的組織，以進行欺騙和其他攻擊。 如果您堅持使用安全寄件者清單來管理誤報，您必須時刻警惕，讓主題在準備好時，讓主題 [向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md) 檔案。
+> - 雖然您可以使用安全寄件者清單來協助誤報 (已標示為壞) 的良好電子郵件，但您應考慮使用安全寄件者清單做為暫時的解決方案，以盡可能避免使用。 建議您不要使用安全寄件者清單來管理誤報，因為垃圾郵件篩選例外會開啟您的組織，以進行欺騙和其他攻擊。 如果您堅持使用安全寄件者清單來管理誤報，您必須時刻警惕，讓主題在準備好時，讓主題 [向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md) 檔案。
 >
 > - 若要讓網域傳送未驗證的電子郵件 (略過反欺騙保護) 但不略過反垃圾郵件和反惡意程式碼檢查，您可以將它新增至[AllowedToSpoof 安全寄件者清單](walkthrough-spoof-intelligence-insight.md)。
 >

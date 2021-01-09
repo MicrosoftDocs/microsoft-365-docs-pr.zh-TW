@@ -11,20 +11,20 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: 系統管理員可以瞭解如何使用 Microsoft Defender for Office 365 中的攻擊模擬訓練訓練，以模擬網路釣魚攻擊及訓練使用者。
-ms.openlocfilehash: 3707041067fd76ee9535d0dccf5cdfcb9d74fbd7
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 41a5a503fbc8aa5e41760c1cf420d5e3c6047d86
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667517"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788048"
 ---
 # <a name="simulate-a-phishing-attack"></a>模擬網路釣魚攻擊
 
-Microsoft Defender for Office 365 中的攻擊模擬器訓練可讓您在組織上執行良性 cyberattack 模擬，以測試您的安全性原則和做法，並訓練員工以提升其知名度，並減少對攻擊的敏感程度。 本文將引導您使用攻擊模擬器訓練來建立模擬網路釣魚攻擊。
+Microsoft Defender for Office 365 中的攻擊模擬訓練可讓您在組織上執行良性 cyberattack 模擬，以測試您的安全性原則和做法，並訓練員工以提升其知名度，並減少對攻擊的敏感程度。 本文將引導您使用攻擊模擬訓練來建立模擬網路釣魚攻擊。
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-若要啟動模擬網路釣魚攻擊，請開啟 [Microsoft 365 安全中心](https://security.microsoft.com/)，移至 [ **電子郵件 & 協同** \> **攻擊] 模擬器**，然後切換至 [ [**類比**](https://security.microsoft.com/attacksimulator?viewid=simulations) ] 索引標籤。
+若要啟動模擬網路釣魚攻擊，請開啟 [Microsoft 365 的安全性中心](https://security.microsoft.com/)，移至 [ **電子郵件 &** 共同作業 \> **攻擊模擬訓練**]，然後切換至 [ [**類比**](https://security.microsoft.com/attacksimulator?viewid=simulations) ] 索引標籤。
 
 在 [ **類比**] 底下，選取 [ **+ 發射類比**]。
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 description: 深入瞭解 Microsoft Defender for Office 365 中的市場即時檢視。
-ms.openlocfilehash: 82dbccabe4917b8b90f67456fbac1c673bad3286
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: 8e5c49c9a45d1578da1eea33a560da611fb74155
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357656"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788012"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的即時檢視
 
@@ -165,7 +165,7 @@ Microsoft 會利用整個服務中大量的反網路釣魚、反垃圾郵件和�
 
 若要匯出圖形或行銷清單，請按一下 [ **匯出** ]，然後選取 [ **匯出圖表資料** ] 或 [ **匯出活動清單**]。
 
-如果您有 Microsoft Defender for Endpoint 訂閱，您可以按一下 [ **WDATP** ]，以使用 microsoft Defender for endpoint 連線或中斷市場活動資訊的連線。 如需詳細資訊，請參閱將 [Microsoft defender For Office 365 與 Microsoft defender For Endpoint 整合](integrate-office-365-ti-with-wdatp.md)。
+如果您有 Microsoft Defender for Endpoint 訂閱，您可以按一下 [ **MDE 設定** ]，使用 microsoft Defender for endpoint 連線或中斷市場活動資訊的連線。 如需詳細資訊，請參閱將 [Microsoft defender For Office 365 與 Microsoft defender For Endpoint 整合](integrate-office-365-ti-with-wdatp.md)。
 
 ## <a name="campaign-details"></a>行銷活動詳細資料
 

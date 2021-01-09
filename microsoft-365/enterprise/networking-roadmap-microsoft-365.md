@@ -2,8 +2,8 @@
 title: Microsoft 365 的網路藍圖
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
 ms.date: 08/10/2020
 audience: ITPro
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: 實施 Microsoft 365 網路的藍圖。
-ms.openlocfilehash: 93d0f253e098815139b431a826f7e5e7a0410b37
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2962adf7bdca35d06672696471e0932fd1a7b09c
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688548"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787748"
 ---
 # <a name="networking-roadmap-for-microsoft-365"></a>Microsoft 365 的網路藍圖
 
@@ -30,7 +30,7 @@ Microsoft 365 上架的一個重要部分是，確定您的網路和網際網路
 
 參閱這些文章以了解主要差異，並修改您的邊緣裝置、用戶端電腦與內部部署網路，以為您的內部使用者取得最佳的效能。
 
-## <a name="plan"></a>方案
+## <a name="plan"></a>規劃
 
 在網路實施的規劃階段：
 

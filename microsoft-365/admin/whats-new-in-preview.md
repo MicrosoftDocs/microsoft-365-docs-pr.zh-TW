@@ -21,12 +21,12 @@ description: Microsoft 365 系統管理中心-深入瞭解本月新增的功能�
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 90805568d77cf55cbd0e77fb3085435df09824ab
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 12b7dfd39a9cf8ac73e8f1c7f2297721c2d629bf
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668046"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787876"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 系統管理中心的新功能
 
@@ -57,7 +57,7 @@ ms.locfileid: "49668046"
 
 ### <a name="multi-tenant-management"></a>多租使用者管理
 
-我們為多承租人系統管理員開發了一組功能，讓您能更快速且更有效率地完成工作。
+我們為多承租人系統管理員開發了一組功能，讓您能更快速且更有效率地完成工作。 如需詳細資訊，請參閱 [管理多個承租人](multi-tenant/manage.md)。
 
 - **您的承租人**：在您管理的承租人之間快速切換。
 - **所有承租人**：一種新的頁面，您可以在其中快速查看所有租使用者服務的健康情況、任何開啟的服務要求、產品和計費、建議的設定工作，以及該租使用者的使用者人數。
@@ -415,8 +415,8 @@ Howdy，合作夥伴！  (無法幫您自己。 ) 我們也為您提供此月的
 查看我們于1月發行的小型企業系統管理員訓練。
 
 - [建立您的商務網站](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [尋找答案及說明](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [取得協助或支援](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
+- [尋找解答和說明](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
+- [取得說明或支援](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
 - [刪除使用者](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
 - [選擇 Microsoft 訂閱](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
 - [Microsoft 365 商務版安全性概述](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)

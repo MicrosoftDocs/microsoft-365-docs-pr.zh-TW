@@ -19,17 +19,16 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用攻擊模擬器，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 方案2組織中執行模擬網路釣魚和密碼攻擊。
-ms.openlocfilehash: b1c2ad265c4812f67aee66f0f59664480b4db229
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a53ffee29ce928910b8c4add245c002ae6eb03da
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615201"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49788108"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻擊模擬器
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
-
 
 如果您的組織有 Microsoft Defender for Office 365 Plan 2 （包括 [威脅調查和回應功能](office-365-ti.md)），您可以使用安全性 & 規範中心內的攻擊模擬器，在您的組織中執行實際的攻擊案例。 這些模擬的攻擊可協助您找出並找出有漏洞的使用者，而真實的攻擊會影響您的下一行。 若要深入瞭解，請閱讀本文。
 
@@ -119,9 +118,7 @@ ms.locfileid: "49615201"
 
      > [!NOTE]
      >
-     > - 所有的 URLs 都是特意 HTTP，而不是 HTTPs。
-     >
-     > - URL 信譽服務可識別一或多個 URLs 為不安全的。 在網路釣魚活動中使用 URL 之前，請先檢查支援的網頁瀏覽器中的 URL 可用性。
+     > URL 信譽服務可識別一或多個 URLs 為不安全的。 在網路釣魚活動中使用 URL 之前，請先檢查支援的網頁瀏覽器中的 URL 可用性。
 
    - **自訂登陸頁面 URL**：輸入使用者在按一下 [網路釣魚] 連結並輸入其認證時所採用的選用登陸頁面。 此連結會取代預設登陸頁面。 例如，如果您有內部的知識意識訓練，您可以在這裡指定該 URL。
 

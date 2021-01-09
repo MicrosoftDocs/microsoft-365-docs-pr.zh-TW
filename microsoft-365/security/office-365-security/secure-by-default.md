@@ -16,12 +16,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: '深入瞭解 Exchange Online Protection (EOP 中的安全性預設設定) '
-ms.openlocfilehash: 758d2169d80630a38c0b498e8c1848568e5ec941
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: 8db8e7af569114e5829d24d65b8eee89c9dce8c3
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602028"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787970"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 中預設的安全性
 
@@ -67,5 +67,5 @@ ms.locfileid: "49602028"
 
 - 網路釣魚模擬：模擬的攻擊可協助您在實際攻擊影響組織之前，識別有漏洞的使用者。
 - 安全性/SecOps 信箱：安全小組用來取得未篩選郵件 (良好且錯誤) 的專用信箱。 然後，小組可以查看是否包含惡意內容。
-- 協力廠商篩選器：部分協力廠商廠商建議關閉 EOP (SCL =-1) 因為協力廠商篩選器會管理郵件篩選。 Microsoft 不建議關閉 EOP，因為 [Microsoft Defender For Office 365](office-365-atp.md)需要 EOP。 相反地，建議您先開啟 [連接器的增強篩選功能](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
+- 協力廠商篩選：當網域的 MX 記錄未指向 Office 365 時，Secure 預設不適用。
 - 誤報：您可能想要暫時允許由 Microsoft 透過系統 [管理員報送](admin-submission.md)進行的某些郵件仍在進行分析。 就像所有覆寫一樣，建議它們是臨時性的。

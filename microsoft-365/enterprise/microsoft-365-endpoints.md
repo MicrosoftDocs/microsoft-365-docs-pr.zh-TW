@@ -1,9 +1,8 @@
 ---
 title: Microsoft 365 端點
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: kvice
+author: kelleyvice-msft
 manager: laurawi
-ms.date: 11/07/2018
 audience: ITPro
 ms.topic: hub-page
 ms.service: o365-solutions
@@ -20,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: ''
 description: 針對 Microsoft 365 流量的目的地 IP 位址和 URLs，請針對不同 Microsoft 365 雲端的網際網路端點使用此清單文章。
-ms.openlocfilehash: b0d8468eaa1b56d1151e54d8e05e6ada51845118
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 159c8e7dea6fe241ab44b283b1193397c3ad70e3
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688598"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787900"
 ---
 # <a name="microsoft-365-endpoints"></a>Microsoft 365 端點
 
