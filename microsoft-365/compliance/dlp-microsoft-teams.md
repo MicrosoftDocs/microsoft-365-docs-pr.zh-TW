@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 您現在可以將 DLP 原則套用至 Microsoft 團隊聊天和頻道。 請閱讀本文以深入瞭解其運作方式。
-ms.openlocfilehash: 3d55c447b2e808af2ac35f04b67a002304e3e9eb
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: 25ba5850f496c188c2a38d6cc5b68960a85e5e5f
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709535"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790157"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>資料遺失防護和 Microsoft 團隊
 
@@ -84,6 +84,7 @@ ms.locfileid: "49709535"
 
 針對您的變更，允許大約一小時以透過您的資料中心進行，並同步處理至使用者帳戶。
  <!-- why are these syncing to user accounts? -->
+
 ## <a name="add-microsoft-teams-as-a-location-to-existing-dlp-policies"></a>將 Microsoft 團隊新增為現有 DLP 原則的位置
 
 若要執行這種工作，您必須被指派具有編輯 DLP 原則許可權的角色。 若要深入瞭解，請參閱 [許可權](data-loss-prevention-policies.md#permissions)。
@@ -96,12 +97,13 @@ ms.locfileid: "49709535"
 
 4. 在 [ **狀態** ] 欄中，為 **小組聊天和頻道訊息** 開啟原則。<br/>![適用于小組聊天和頻道的 DLP](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. 保留所有帳戶的預設設定，或指定要包含或排除的帳戶。
+5. 在 [ **選擇位置** ] 索引標籤上，保留 [所有帳戶] 的預設設定，或選取 **[讓我選擇特定位置** ]，並指定要包含及排除的帳戶、通訊群組清單或安全性群組。 接著選擇 [下一步]。
 
 6. 按一下 **[儲存]**。
 
 針對您的變更，允許大約一小時以透過您的資料中心進行，並同步處理至使用者帳戶。
 <!-- again, why user accounts? -->
+
 ## <a name="define-a-new-dlp-policy-for-microsoft-teams"></a>定義新的 Microsoft 團隊 DLP 原則
 
 若要執行這種工作，您必須被指派具有編輯 DLP 原則許可權的角色。 若要深入瞭解，請參閱 [許可權](data-loss-prevention-policies.md#permissions)。
@@ -114,11 +116,13 @@ ms.locfileid: "49709535"
 
 4. 在 [ **命名您的原則** ] 索引標籤上，指定原則的名稱和描述，然後選擇 **[下一步]**。
 
-5. 在 [ **選擇位置** ] 索引標籤上，保留 [所有位置] 的預設設定，或選取 [ **讓我選擇特定位置**]，然後選擇 **[下一步**]。<br/>如果您選擇了特定位置，請為您的 DLP 原則選取這些位置，然後選擇 **[下一步]**。<br/>![DLP 原則位置](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
-    > [!NOTE]
-    > 如果您想要確定包含機密資訊的檔不會在小組中正確共用，請確定已開啟 **SharePoint 的網站** 和 **OneDrive 帳戶** ，以及 **小組聊天及通道訊息**。
+5. 在 [ **選擇位置** ] 索引標籤上，保留 [所有帳戶] 的預設設定，或選取 **[讓我選擇特定位置** ]，並指定要包含及排除的帳戶、通訊群組清單或安全性群組。 接著選擇 [下一步]。
 
-<br/>
+![DLP 原則位置](../media/dlp-teams-selectlocationsnewpolicy.png)
+
+> [!NOTE]
+> 如果您想要確定包含機密資訊的檔不會在小組中正確共用，請確定已開啟 **SharePoint 的網站** 和 **OneDrive 帳戶** ，以及 **小組聊天及通道訊息**。
+
 
 6. 在 [ **原則設定** ] 索引標籤的 **[自訂您要保護的內容類型**] 底下，保留預設的簡單設定，或選擇 [ **使用高級設定**]，然後選擇 [ **下一步]**。 如果您選擇 [高級設定]，您可以建立或編輯原則的規則。  (若要取得此相關協助，請參閱 [簡易設定與高級設定](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)。 ) 
 

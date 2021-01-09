@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 瞭解如何設定 & 使用 Microsoft 365 規範中心內的連接器，將 & 封存資料從 Facebook 商務版頁面匯入至 Microsoft 365。
-ms.openlocfilehash: db1d11f461125e7ea1d749fd273f8bc8622a8d77
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: df86897defa92788399f704c53c00ebb9e4f4269
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620430"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790147"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>設定連接器以封存 Facebook 資料 (預覽) 
 
@@ -36,12 +36,14 @@ ms.locfileid: "49620430"
 
 - 您的組織必須具有有效的 Azure 訂閱。 如果您沒有現有的 Azure 訂閱，您可以註冊下列其中一個選項：
 
-    - [註冊免費的一年 Azure 訂閱](https://azure.microsoft.com/free) 
+    - [註冊免費的一年 Azure 訂閱](https://azure.microsoft.com/free)
 
     - [註冊隨付即用 Azure 訂閱](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
     > Microsoft 365 訂閱隨附的 [免費 Azure Active Directory 訂閱](use-your-free-azure-ad-subscription-in-office-365.md) 不支援 Security & 合規性中心內的連接器。
+
+- Facebook 商務頁面的連接器可以一天內匯入200000項總計。 如果一天內有超過200000的 Facebook 商務專案，將不會將這些專案匯入至 Microsoft 365。
 
 - 在步驟 5) 中，設定 Microsoft 365 規範中心 (中的自訂連接器的使用者，必須在 Exchange Online 中指派信箱匯入匯出角色。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [  [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 

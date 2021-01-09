@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 瞭解系統管理員如何設定 & 使用原生連接器將資料從 LinkedIn 公司] 頁面匯入至 Microsoft 365。
-ms.openlocfilehash: 42183be3663fbf4b55eadde2173b492feeae5373
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 9f6cb2c6d5c47559f1fda13b6d03bfed3afe6fa2
+ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49619979"
+ms.lasthandoff: 01/09/2021
+ms.locfileid: "49790177"
 ---
 # <a name="set-up-a-connector-to-archive-linkedin-data"></a>設定連接器來封存 LinkedIn 資料
 
@@ -28,11 +28,13 @@ ms.locfileid: "49619979"
 
 LinkedIn 公司頁面資料儲存在信箱中之後，您可以將 Microsoft 365 規範功能（例如訴訟暫止、內容搜尋、In-Place 封存、審核和 Microsoft 365 保留原則）套用至 LinkedIn 資料。 例如，您可以使用內容搜尋來搜尋這些專案，或在高級 eDiscovery 案例中將儲存信箱與保管人建立關聯。 建立連接器，以在 Microsoft 365 中匯入和封存 LinkedIn 資料，可協助您的組織遵守政府和法規原則。
 
-## <a name="assign-roles-and-verify-credentials"></a>指派角色及驗證認證
+## <a name="before-you-set-up-a-connector"></a>在您設定連接器之前
 
 - 建立 LinkedIn 公司頁面連接器的使用者，必須在 Exchange Online 中指派「信箱匯入匯出」角色。 在 Microsoft 365 規範中心的 [ **資料連線器** ] 頁面中新增連接器時，這是必要的。 依預設，此角色不會指派給 Exchange Online 內的任何角色群組。 您可以將信箱匯入匯出角色新增至 Exchange Online 中的「組織管理」角色群組。 或者，您可以建立角色群組、指派信箱匯入匯出角色，然後將適當的使用者新增為成員。 如需詳細資訊，請參閱「管理 Exchange Online 中的角色群組」一文中的 [ [建立角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) 或 [修改角色群組](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ] 區段。
 
 - 您必須擁有 LinkedIn 使用者帳戶的登入認證 (電子郵件地址或電話號碼和密碼) ，該使用者帳戶是您要封存之 LinkedIn 公司頁面的系統管理員。 當您設定連接器時，您可以使用這些認證登入 LinkedIn。
+
+- LinkedIn 連接器可以在一天內匯入200000項總計。 如果一天內有超過200000的專案 LinkedIn，將不會將這些專案匯入至 Microsoft 365。
 
 ## <a name="create-a-linkedin-connector"></a>建立 LinkedIn 連接器
 
