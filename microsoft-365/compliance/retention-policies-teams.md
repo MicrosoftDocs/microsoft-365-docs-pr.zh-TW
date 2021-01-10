@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: 12338c1679a8e0c5921ec3f4f05df85989413ccd
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.openlocfilehash: 8cd67c9c188c97256ddddcdd57479f519bd33929
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784308"
+ms.locfileid: "49787960"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
@@ -46,9 +46,9 @@ Teams 保留原則中不包括與 Teams 一起使用的電子郵件和檔案。 
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>保留如何與 Microsoft Teams 搭配使用
 
-您可以使用保留原則來保留 Teams 中的聊天與頻道訊息。 Teams 聊天會儲存在聊天內每個使用者信箱的隱藏資料夾中，Teams 頻道訊息則會儲存在小組群組信箱中類似的隱藏資料夾內。
+您可以使用保留原則來保留 Teams 中的聊天與頻道訊息之資料。 來自 Teams 聊天的資料會儲存在聊天內每個使用者信箱的隱藏資料夾中，來自 Teams 頻道訊息之資料則會儲存在小組群組信箱中類似的隱藏資料夾內。
 
-請務必了解 Teams 使用的聊天服務是由 Azure 所提供，此服務也會儲存 Teams 的資料，且會根據預設永久保存。 基於這個原因，我們建議您建立一個使用 Teams 位置的保留原則，來保留並刪除此 Teams 資料。 這個保留原則可永久刪除 Exchange 信箱和基礎 Azure 聊天服務中的資料。 如需詳細資訊，請參閱 [Microsoft Teams 中的安全性與合規性](https://go.microsoft.com/fwlink/?linkid=871258)，特別是[資訊保護架構](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)一節。
+請務必了解 Teams 使用的聊天服務是由 Azure 所提供，此服務也會儲存 Teams 的資料，且會根據預設永久保存。 基於這個原因，我們建議您建立一個使用 Teams 位置的保留原則，來保留並刪除此 Teams 資料。 這個保留原則可永久刪除 Exchange 信箱和基礎 Azure 聊天服務中的這個資料。 如需詳細資訊，請參閱 [Microsoft Teams 中的安全性與合規性](https://go.microsoft.com/fwlink/?linkid=871258)，特別是[資訊保護架構](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)一節。
 
 Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留原則影響。 儘管 Teams 聊天和頻道訊息會儲存在 Exchange 中，此 Teams 資料只會透過針對 **Teams 頻道訊息** 和 **Teams 聊天** 位置設定的保留原則包含。
 

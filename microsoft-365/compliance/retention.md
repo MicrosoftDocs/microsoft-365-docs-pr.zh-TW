@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 8d50e03827026100689d9b380570fa59c93e6d08
-ms.sourcegitcommit: 5756896ad87e28fac20f7981eaaeacfb0c098254
+ms.openlocfilehash: 307687a277ade03f3ba40852eff15378928465e6
+ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "49730174"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "49787990"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
@@ -166,19 +166,15 @@ ms.locfileid: "49730174"
 
 #### <a name="retention-labels-and-policies-that-apply-them"></a>保留標籤和套用其標籤的原則
 
-保留標籤是獨立、可重複使用的建置組塊。 保留標籤原則的主要目的是將一組保留標籤分組，以及指定您想讓這些標籤出現的目標位置。 然後，系統管理員和使用者可以將這些標籤套用至這些位置中的內容。
-  
-![標籤、標籤原則和位置圖表](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
-  
-當您發佈保留標籤時，會將這些標籤包含在保留標籤原則中，好讓系統管理員和使用者選擇：
+當您發佈保留標籤時，會將這些標籤包含在 **保留標籤原則** 中，好讓系統管理員和使用者將其套用至內容。 如下圖所示：
 
-- 單一保留標籤可納入多個保留標籤原則。
+1. 單一保留標籤可納入多個保留標籤原則。
 
-- 保留標籤原則會指定要發佈保留標籤的位置。
+2. 保留標籤原則會指定要發佈保留標籤的位置。 同一位置可以納入多個保留標籤原則中。
 
-- 單一位置也可納入多個保留標籤原則。
+![如何將保留標籤新增至指定位置的標籤原則](../media/retention-labels-and-policies.png)
 
-除了保留標籤原則以外，您也可以建立一或多個自動套用原則，每一個都有單一保留標籤。 使用此原則，當您在原則中指定的條件滿足時，將自動套用保留標籤。
+您也可以建立一或多個 **自動套用原則**，每一個都有單一保留標籤。 使用此原則，當您在原則中指定的條件滿足時，將自動套用保留標籤。
 
 #### <a name="retention-label-policies-and-locations"></a>保留標籤原則與位置
 
@@ -190,7 +186,7 @@ ms.locfileid: "49730174"
 |根據敏感資訊類型或可訓練分類器而自動套用  <br/> |Exchange (僅限所有信箱)、SharePoint、OneDrive  <br/> |
 |根據查詢而自動套用  <br/> |Exchange、SharePoint、OneDrive、Microsoft 365 群組  <br/> |
    
-在 Exchange 中，您只能在新傳送的郵件 (傳輸中的資料) 上自動套用保留標籤功能，而非目前在信箱中的所有郵件 (待用資料)。 此外，您只能在所有信箱中為敏感性資訊類型和可訓練分類器來自動套用保留標籤功能，但無法選取特定信箱。
+在 Exchange 中，自動套用的保留標籤僅套用至新傳送的郵件 (傳輸中的資料)，而非目前在信箱中的所有郵件 (待用資料)。 此外，您只能在所有信箱中為敏感性資訊類型和可訓練分類器來自動套用保留標籤功能，但無法選取特定信箱。
   
 Exchange 公用資料夾、Skype、Teams 和 Yammer 訊息不支援保留標籤。 若要保留或刪除這些位置中的內容，請改用保留原則。
 
@@ -287,7 +283,7 @@ Office 365 安全性與合規性中心具有來自 **資訊控管** > **儀表�
 > [!IMPORTANT]
 > 如果使用的是保留標籤：在使用此流程確定同一項目上多個保留設定的結果之前，請確保您知道[套用了哪個保留標籤](#only-one-retention-label-at-a-time)。
 
-![原則保留圖](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
+![原則保留圖](../media/principles-of-retention.png)
   
 四個不同層級的說明：
   
