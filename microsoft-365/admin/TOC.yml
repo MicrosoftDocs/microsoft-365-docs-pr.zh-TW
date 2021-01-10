@@ -66,6 +66,8 @@
           href: whats-new-in-preview.md
         - name: 隨時掌握變更
           href: manage/stay-on-top-of-updates.md
+        - name: 管理多個租用戶
+          href: multi-tenant/manage.md
     - name: 由 21Vianet 運作的 Office 365
       items:
         - name: 關於由 21Vianet 營運的 Office 365
