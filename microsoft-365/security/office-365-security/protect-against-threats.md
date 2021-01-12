@@ -16,15 +16,15 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: 系統管理員可以深入瞭解 Microsoft 365 中的威脅防護，並設定如何將它用於您的組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3eec37f01bb39dda9f767ad32be96bbff43a2ee0
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 2951d5725237d572d357ac3fc6cff0ac4df7e8f0
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683244"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794433"
 ---
 # <a name="protect-against-threats"></a>防範威脅
 
@@ -167,7 +167,7 @@ ms.locfileid: "49683244"
      - 在 [ **安全附件未知惡意程式碼回應** ] 區段中，選擇 [ **封鎖**]。
      - 在 [重新 **導向附件** ] 區段中，選取 [ **啟用重新導向**] 選項。 指定組織的安全性系統管理員或操作員的電子郵件地址，誰會檢查偵測到的檔案。
 
-     按 [下一步 **]**。
+     按 **[下一步]**。
 
 3. 在 [套用 **至**] 頁面上，按一下 [**新增條件**]，然後選擇 [套用者 **：收件者網域是**]，按一下 [**新增**]，選取您的網域，按一下 [**新增**]，按一下 [**完成**]，然後按 **[下一步**
 
@@ -183,7 +183,7 @@ ms.locfileid: "49683244"
    - **當使用者按一下安全連結時，請勿追蹤**：關閉此設定以追蹤使用者點擊： ![ 關閉 ](../../media/scc-toggle-off.png) 。
    - **不要讓使用者點擊 [安全連結至原始 URL**]：確認已開啟此設定： ![ 開啟開啟 ](../../media/scc-toggle-on.png) 。
 
-   完成後，按一下 [儲存]。
+   完成後，請按一下 **[儲存]**。
 
 2. 回到 [主要安全連結] 頁面上，按一下 [ **建立**]。
 

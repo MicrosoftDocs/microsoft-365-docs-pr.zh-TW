@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解 Exchange Online Protection (EOP) 和 Microsoft Defender for Office 365 中可用的反網路釣魚原則。
-ms.openlocfilehash: 7660516e60c77a7f31f711f78b6fd28d3ad179fd
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: dadb41e1f0ff9e18681b13ad3d265f3f436c2052
+ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709701"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49796191"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 中的反網路釣魚原則
 
@@ -122,7 +122,7 @@ Microsoft Defender for Office 365 中的反網路釣魚原則只適用于擁有 
 
 - 當郵件未通過 SPF 或 DKIM 檢查 **，且** 郵件未通過 DMARC 或 [複合驗證](email-validation-and-authentication.md#composite-authentication)時，就會在寄件者的相片中加入一個問號 (？ ) 。 停用未經驗證的寄件者識別碼，可防止問號加入寄件者的相片。
 
-- 如果 [寄件者] 位址中的網域 (電子郵件) 客戶程式中顯示的郵件寄件者不同于 DKIM 簽章中的網域或 **郵件** 的 [寄件者] 位址中的網域，則會新增 via 標籤 <u> (chris@contoso.com 透過</u>michelle@fabrikam.com) 。 如需這些位址的詳細資訊，請參閱 [電子郵件標準的概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
+- 如果 [寄件者] 位址中的網域 (電子郵件) 客戶程式中顯示的郵件寄件者不同于 DKIM 簽章中的網域或 **郵件** 的 [寄件者] 位址中的網域，則會新增 via 標籤 <u> (chris@contoso.com 透過</u>fabrikam.com) 。 如需這些位址的詳細資訊，請參閱 [電子郵件標準的概述](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)。
 
   停用未經驗證的寄件者識別碼時，如果 [寄件者] 位址中的網域與 DKIM 簽章中的網域不同或郵件的 [寄件者] 位址不同，就不會防止加入標籤。
 

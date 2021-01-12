@@ -16,17 +16,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: 開始使用 Microsoft Defender for Office 365 中的自動調查和回應功能。
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 8b6ef712e2e90e6798f16c54bc82f99590dbea42
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 6ccefb5c435f08fcef4dcc872af676fba70668ee
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614831"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794541"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自動調查和回應 (AIR) 
 
@@ -133,7 +133,7 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 
 - 安全性管理員 (包括全域管理員) 
 - 組織的安全性運作小組 (包括安全性讀者和具有 **搜尋和清除** 角色的使用者) 
-- 使用者
+- 終端使用者
 
 ## <a name="next-steps"></a>後續步驟
 

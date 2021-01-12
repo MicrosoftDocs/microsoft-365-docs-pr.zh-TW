@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f151f02af695eb54eaf8f4f97936f4985fc7f8c0
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.openlocfilehash: aecb1230ac9a9b2868c519c9b8920e312ff5a282
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719199"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794041"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -43,7 +43,7 @@ ms.locfileid: "49719199"
 
 本節不包含準備目標目錄中 MailUser 使用者物件所需的特定步驟，也不會包含用於提交遷移批次的範例命令。 請參閱 [準備目標使用者物件以供遷移](#prepare-target-user-objects-for-migration) 以取得此資訊。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 跨承租人信箱移動功能需要 [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/basic-concepts) 才能建立租使用者對特定的 Azure 應用程式，以安全地儲存和存取憑證/機密，以供從一個租使用者對另一個租使用者進行驗證及授權，並移除在承租人間共用憑證/機密的任何需求。 
 
@@ -279,7 +279,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
 遷移的使用者必須存在於目標承租人和 Exchange Online 系統 (中，MailUsers) 會以特定屬性標示以啟用跨承租人的移動）。 系統會針對未在目標租使用者中正確設定的使用者，移動系統會失敗。 下列各節將詳細說明目標租使用者的 MailUser 物件需求。
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
   
 您必須確定在目標群組織中設定下列物件和屬性。  
 
@@ -296,7 +296,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
  
      範例 **目標** MailUser 物件：
  
-     | 屬性             | 值                                                                                                                    |
+     | Attribute             | 值                                                                                                                    |
      |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
      | 別名                 | LaraN                                                                                                                    |
      | RecipientType         | MailUser                                                                                                                 |
@@ -315,7 +315,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
      **來源** 信箱物件範例：
 
-     | 屬性             | 值                                                                    |
+     | Attribute             | 值                                                                    |
      |-----------------------|--------------------------------------------------------------------------|
      | 別名                 | LaraN                                                                    |
      | RecipientType         | UserMailbox                                                              |
@@ -359,7 +359,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
     尋找先前使用此命令的信箱的物件。
 
     ```powershell
-    Get-User <identity> | select Name, *recipient* | ft -a**.
+    Get-User <identity> | select Name, *recipient* | ft -AutoSize
     ```
 
     範例如下。 

@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: 系統管理員可以瞭解如何使用 Microsoft Defender for Office 365 中的攻擊模擬訓練訓練，以模擬網路釣魚攻擊及訓練使用者。
-ms.openlocfilehash: 41a5a503fbc8aa5e41760c1cf420d5e3c6047d86
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: e7582b1f74266d988ecdf8f6dac49019699e2bc1
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49788048"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794253"
 ---
 # <a name="simulate-a-phishing-attack"></a>模擬網路釣魚攻擊
 

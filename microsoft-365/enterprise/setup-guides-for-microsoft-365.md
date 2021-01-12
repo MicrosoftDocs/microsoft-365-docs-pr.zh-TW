@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: 使用設定指南，加速規劃和設定 Microsoft 365 或 Office 365。
-ms.openlocfilehash: 7024494de231e5adcce4bb91414b5f7bb3349f88
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 9bddf24e4133dfac32a0175b754709ba0c840760
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844089"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794421"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 和 Office 365 服務的設定指南
 
@@ -67,7 +67,7 @@ Microsoft 365 和 Office 365 安裝指南為您提供有關規劃及部署租使
 
 「 [電子郵件安裝顧問](https://aka.ms/office365setup) 」為您提供為您的組織設定 Exchange Online 所需的逐步指引。 這包括設定新的電子郵件帳戶、遷移電子郵件，以及設定電子郵件保護。 若要成功設定電子郵件，請使用此顧問，並根據組織目前的郵件系統、要遷移的信箱數目，以及您想要管理使用者及其存取的方式，來接收建議的遷移方法。
 
-### <a name="gmail-contacts-and-calendar-advisor"></a>Gmail 連絡人和行事曆顧問
+### <a name="migrate-gmail-contacts-and-calendar-items"></a>遷移 Gmail 連絡人和行事曆專案
 
 當您將 Gmail 使用者的信箱遷移至 Microsoft 365 時，系統會遷移電子郵件，但不會遷移「連絡人」和「行事曆」專案。 [Gmail 連絡人和行事曆顧問](https://aka.ms/gmailcontactscalendar)提供使用 Outlook.com、Outlook 用戶端或 PowerShell 的匯入和匯出方法，將 google 連絡人和 Google calendar 專案匯入 Microsoft 365 的步驟。
 
@@ -90,12 +90,17 @@ Windows 虛擬機器是雲端中執行的綜合桌面和應用程式虛擬化服
 
 [Windows Virtual Desktop 安裝指南](https://aka.ms/wvdsetupguide)為系統管理員提供規劃資源和必要條件，以進行部署、安裝指導及其他資源。 
 
-### <a name="microsoft-edge-deployment-advisor"></a>Microsoft Edge 部署顧問
+### <a name="microsoft-edge-setup-guide"></a>Microsoft Edge 安裝指南
 
 Microsoft Edge 已從頭開始重建，讓您具備世界一流的相容性和效能、您所享有的安全性和隱私權，以及專為您提供最適合您的網站的新功能。
 
-[Microsoft Edge 部署顧問](https://aka.ms/edgeadvisor)將協助您設定企業網站探索，以查看您的組織中存取的網站可能需要使用 IE 模式、複查及設定重要的安全性功能、設定隱私權原則及其他原則，以符合組織的需求，以及管理裝置上的 web access。 您可以將 Microsoft Edge 下載至個別裝置，也可以使用 Configuration Manager 或 Microsoft Intune 示範如何在您的組織中部署多位使用者。
-Windows 虛擬機器是雲端中執行的綜合桌面和應用程式虛擬化服務。 這是唯一的虛擬桌面基礎結構 (VDI) ，可提供簡化的管理、多會話 Windows 10、Microsoft 365 應用程式的優化，以及支援遠端桌面服務 (RDS) 環境。 在幾分鐘內部署並縮放您的 Windows 桌面和應用程式至 Azure，以取得內建的安全性和合規性功能。 
+[Microsoft Edge 安裝指南](https://aka.ms/edgeadvisor)可協助您設定企業網站探索，以查看您的組織中存取的網站可能需要使用 IE 模式、複查及設定重要的安全性功能、設定隱私權原則及其他原則，以符合組織的需求，以及管理裝置上的 web access。 您可以將 Microsoft Edge 下載至個別裝置，也可以使用 Configuration Manager 或 Microsoft Intune 示範如何在您的組織中部署多位使用者。 
+
+### <a name="microsoft-search-setup-guide"></a>Microsoft Search 設定指南
+
+Microsoft 搜尋可協助您的組織找到他們所需的專案，以完成他們的工作。 不論是搜尋人員、檔案、組織結構圖、網站或解答常見問題，您的組織都可以在其整個 workday 中使用 Microsoft 搜尋，以取得答案。
+
+[Microsoft search 設定指南](https://aka.ms/MicrosoftSearchSetup)可協助您設定 microsoft 搜尋，是否要將其試驗給使用者群組，或將其推廣給您組織中的每個人。您將指派搜尋系統管理員和搜尋編輯器，然後為您的使用者自訂搜尋經驗，並提供其他選項，例如，將 Bing 分機號碼新增至 Chrome 或將 Bing 設定為預設搜尋引擎。
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager 共同管理安裝指南
 
@@ -135,6 +140,12 @@ Windows 虛擬機器是雲端中執行的綜合桌面和應用程式虛擬化服
 
 ## <a name="guides-for-security-and-compliance"></a>安全性與合規性指南
 
+### <a name="microsoft-intune-setup-guide"></a>Microsoft Intune 安裝指南 
+
+設定 Microsoft Intune 以管理組織中的裝置。 若要完全控制公司裝置，您會使用 Intune 的行動裝置管理 (MDM) 功能。 若要在共用和個人裝置上管理組織的資料，您可以使用 Intune 的行動應用程式管理 (MAM) 功能。 
+
+透過 [Microsoft Intune 安裝指南](https://aka.ms/intunesetupguide)，您可以設定裝置和應用程式相容性原則、指派應用程式保護原則，以及監視裝置和應用程式保護狀態。 
+
 ### <a name="microsoft-defender-for-endpoint-advisor"></a>Microsoft Defender for Endpoint advisor
 
 [Microsoft Defender For Endpoint advisor](https://aka.ms/mdatpsetup)提供說明，可協助您的商業網路防止、偵測、調查和回應高級威脅。 作出明智的組織弱點評估，並決定最佳的部署套件和設定方法。 
@@ -154,7 +165,7 @@ Microsoft Exchange Online Protection (EOP) 是雲端式電子郵件篩選服務�
 
 ### <a name="microsoft-information-protection-setup-guide"></a>Microsoft 資訊保護安裝指南
 
-深入瞭解您可以套用至您的資訊保護原則的功能，讓您能夠確信機密資訊受到保護。 使用四階段的週期方法，您可以在其中探索、分類、保護及監視敏感資訊。 《 [Microsoft 資訊保護安裝指南》](https://aka.ms/mipsetupguide) 提供每個階段的完成指導方針。
+深入瞭解您可以套用至您的資訊保護原則的功能，讓您能夠確信機密資訊受到保護。 使用四階段生命週期方法來探索、分類、保護和監視敏感資訊。 《 [Microsoft 資訊保護安裝指南》](https://aka.ms/mipsetupguide) 提供每個階段的完成指導方針。
 
 ### <a name="microsoft-information-governance-setup-guide"></a>Microsoft 資訊管理安裝指南
 
@@ -166,13 +177,13 @@ Microsoft Exchange Online Protection (EOP) 是雲端式電子郵件篩選服務�
 
 [Microsoft 365 應用程式部署顧問](https://aka.ms/OPPquickstartguide)可協助您讓使用者的裝置執行最新版本的 Office 產品，例如 Word、Excel、PowerPoint 及 OneNote。 您將取得各種部署方法的指導方針，這些方法包括簡易的自行安裝選項，以使用管理工具進行企業部署。 這些指示會協助您評估您的環境、找出特定的部署需求，並執行必要的支援工具，以確保成功安裝。 
 
-### <a name="office-mobile-apps-setup-assistant"></a>Office 行動應用程式設定助理
+### <a name="mobile-apps-setup-guide"></a>行動裝置應用程式安裝指南
 
-[Office 行動應用程式設定助理](https://aka.ms/officeappguidance)提供在 Windows、IOS 和 Android 行動裝置上下載和安裝 Office 應用程式的指示。 本指南為您提供逐步資訊，可在您的手機和平板電腦裝置上下載和安裝 Microsoft 365 和 Office 365 應用程式。
+行動裝置 [應用程式安裝指南](https://aka.ms/officeappguidance) 提供在 Windows、IOS 和 Android 行動裝置上下載和安裝 Office 應用程式的指示。 本指南為您提供逐步資訊，可在您的手機和平板電腦裝置上下載和安裝 Microsoft 365 和 Office 365 應用程式。
 
 ### <a name="microsoft-teams-setup-guide"></a>Microsoft 團隊設定指南
 
-[Microsoft 團隊設定指南](https://aka.ms/teamsguidance)為您的組織提供指導，以設定小組工作區，以主持即時交談，以進行小組和私人通訊的訊息、通話和音訊或視訊會議。 您將會收到使用網路 Planner 工具及小組系統管理中心中的小組顧問來判斷組織之網路需求的指示。 完成部署後，指南會包含有用的資源，可讓您開始使用團隊。
+[Microsoft 團隊設定指南](https://aka.ms/teamsguidance)為您的組織提供指導，以設定小組工作區，以主持即時交談，以進行小組和私人通訊的訊息、通話和音訊或視訊會議。 您將會收到使用網路 Planner 工具及小組系統管理中心中的小組顧問來判斷組織之網路需求的指示。 部署完成後，該指南將包含一些有用的資源，以協助您開始使用 Teams。
 
 ### <a name="sharepoint-setup-guide"></a>SharePoint 安裝指南
 

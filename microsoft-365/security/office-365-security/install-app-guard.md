@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: 取得最新的硬體隔離。 防止目前和新興的攻擊（如入侵或惡意連結）中斷員工生產力和企業安全性。
-ms.openlocfilehash: a1d0fb857a80d5500036f6d9a95f930ec4df38a0
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: f5a5feb14db75c5baccecf0c6afafe0c42517224
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616785"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794505"
 ---
 # <a name="application-guard-for-office-public-preview-for-admins"></a>適用于系統管理員的 Office 的應用程式防護 (公開預覽) 
 
@@ -150,7 +150,7 @@ Office 支援下列原則，可讓您設定 Office 應用程式防護的功能�
 
 1. 開啟「 **回饋中樞」應用程式** 並登入。
 
-2. 如果您在啟動應用程式防護時收到錯誤對話方塊，請在錯誤對話方塊中選取 [ **向 Microsoft 報告** ]，以啟動新的意見反應提交。 否則，請流覽至 <https://aka.ms/wdagoffice-fb> 以選取正確的應用程式防護類別類別，然後選取 [+ 在右上方 **新增新的意見** 反應]。
+2. 如果您在啟動應用程式防護時收到錯誤對話方塊，請在錯誤對話方塊中選取 [ **向 Microsoft 報告** ]，以啟動新的意見反應提交。 否則，請流覽至 <https://aka.ms/mdagoffice-fb> 以選取正確的應用程式防護類別類別，然後選取 [+ 在右上方 **新增新的意見** 反應]。
 
 3. 若尚未填入您的意見反應摘要，請填入 **您的意見** 反應。
 

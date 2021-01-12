@@ -16,16 +16,16 @@ search.appverid:
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
 description: 適用於 Office 365 的 Microsoft Defender 包括安全附件、安全連結、進階防網路釣魚工具、報告工具以及威脅情報功能。
-ms.openlocfilehash: 34011780241ae3a669fe32aa5fad00f9836d5570
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 08ad29eebb0f0c144268866922f12959600bf7cf
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780305"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794181"
 ---
 # <a name="microsoft-defender-for-office-365"></a>適用於 Office 365 的 Microsoft Defender
 

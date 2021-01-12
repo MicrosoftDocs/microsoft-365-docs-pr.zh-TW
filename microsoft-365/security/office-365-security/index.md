@@ -13,14 +13,14 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: Office 365 的安全性，從 EOP 到 Defender for Office 365 方案1和2，Standard 與 Strict 安全性設定等等。 瞭解您擁有的內容，以及如何保護您的屬性。
-ms.openlocfilehash: 84d7dcfc68ce78bfde92f3d7096cd4104355ce94
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: a24f71286a524c4057fd1354804b067497479493
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616245"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794517"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全性概述
 
@@ -129,11 +129,11 @@ Microsoft Defender for Office 365 P1 也會新增 [*即時* 偵測] *，以供�
 
 - Microsoft Defender for Office 365 方案2隨附于 Office 365 E5、Office 365 A5 和 Microsoft 365 E5。
 
-- Microsoft Defender for Office 365 方案1隨附于 Microsoft 365 商務版 Premium。
+- 適用於 Office 365 的 Microsoft Defender 方案 1 隨附於 Microsoft 365 商務進階版。
 
 - Microsoft Defender for Office 365 Plan 1 和 Defender for Office 365 方案2每個功能都可作為特定訂閱的附加元件。 若要深入瞭解，您可以 [在 Microsoft Defender For Office 365 方案](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)中提供另一個連結功能可用性。
 
-- 「 [安全檔](safe-docs.md) 」功能僅適用于使用 Microsoft 365 E5 或 Microsoft 365 e5 安全性授權的使用者 (未包含在 microsoft Defender for Office 365 方案) 中。
+- [安全文件](safe-docs.md)功能僅可供具備 Microsoft 365 E5 或 Microsoft 365 E5 安全性授權 (未包含在適用於 Office 365 的 Microsoft Defender 方案中) 的使用者使用。
 
 - 如果您目前的訂閱不包含 Microsoft Defender for Office 365，而您想要使用它，請 [聯繫我們的銷售人員開始試用版](https://go.microsoft.com/fwlink/p/?LinkId=518644)，並瞭解在您的組織中，microsoft Defender for office 365 如何運作。
 

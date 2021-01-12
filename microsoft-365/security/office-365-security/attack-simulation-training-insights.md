@@ -9,14 +9,14 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365initiative-defender-office365
 description: 系統管理員可以深入瞭解 Microsoft 365 安全中心的攻擊模擬訓練如何影響員工，以及如何深入瞭解類比和訓練結果。
-ms.openlocfilehash: 6fc109469f8a9a3cf6aa87e9b8f9e3a024fed6e3
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 54855a4ce8e64f4d58b9ff2697395ed684be2773
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667588"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794553"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>透過攻擊模擬訓練取得深入解析
 
