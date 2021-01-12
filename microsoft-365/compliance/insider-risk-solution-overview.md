@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 9f2f6667066a1704ceb98179b677e7de7895cef2
-ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
+ms.openlocfilehash: 684b4d724915478d8198d53d9e95cc1e9b3f092e
+ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49769264"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "49794135"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Microsoft 365 中的內部風險解決方案
 
@@ -49,12 +49,66 @@ Microsoft 365 風險防護功能是設計和內建給我們的有問必答風險
 
 若要協助保護您的組織不受內幕人士的風險，請使用下列 Microsoft 365 功能。
 
-| 解決方案/功能 | 描述 | 授權 |
-| :------------------------ | :-------------- | :------------ |
-| 通訊合規性 | 通訊相容性協助您在組織中偵測、捕獲和處理不適當的郵件，以協助將通訊風險降至最低。 | Microsoft 365 E5 訂閱 (付費或試用版本)  <br><br> Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件 <br><br> Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」 <br><br> Microsoft 365 A5 訂閱 (付費或試用版本)  <br><br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件 <br><br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件 <br><br> Microsoft 365 G5 訂閱 (付費或試用版本)  <br><br> Microsoft 365 G5 訂閱 + Microsoft 365 G5 合規性附加元件 <br> Microsoft 365 G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件 <br><br> Office 365 企業版 E5 訂閱 (付費或試用版本)  <br><br> Office 365 A5 訂閱 (付費或試用版本)  <br><br> Office 365 Enterprise E3 訂閱 + Office 365 Advanced 合規性附加元件 (已無法再供新訂閱使用)  |
-| 內部風險管理 | 「有問必答風險管理」可讓您偵測、調查和動作組織中的惡意和意外活動，以協助將內部風險降至最低。 | Microsoft 365 E5 訂閱 (付費或試用版本)  <br><br> Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件 <br><br> Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」 <br><br> Microsoft 365 A5 訂閱 (付費或試用版本)  <br><br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件 <br><br> Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件 |
-| 資訊屏障 | 資訊壁壘可讓您限制兩個內部群組之間的通訊和共同作業，以避免組織中發生利益衝突。  | Microsoft 365 E5/A5 <br><br> Office 365 E5/A5 <br><br> Office 365 進階合規性 <br><br> Microsoft 365 規範 E5/A5 <br><br> Microsoft 365 有問必答風險管理 |
-| 特殊權限存取管理 | 「特權存取管理」允許對 Office 365 中的特殊 Exchange Online 系統管理員工作進行精細存取控制。 它可協助保護您的組織，避免因使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。 | Microsoft 365 E5/A5 <br><br> Office 365 E5/A5 <br><br> Microsoft 365 E5/A5 合規性 <br><br> Microsoft 365 E5/A5 資訊保護和控管 |
+### <a name="communication-compliance"></a>通訊合規性
+
+通訊相容性協助您在組織中偵測、捕獲和處理不適當的郵件，以協助將通訊風險降至最低。 您可以在下列訂閱中取得通訊法規遵從性：
+
+- Microsoft 365 E5 訂閱 (付費或試用版本) 
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
+- Microsoft 365 A5 訂閱 (付費或試用版本) 
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+- Microsoft 365 G5 訂閱 (付費或試用版本) 
+- Microsoft 365 G5 訂閱 + Microsoft 365 G5 合規性附加元件
+- Microsoft 365 G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
+- Office 365 企業版 E5 訂閱 (付費或試用版本) 
+- Office 365 A5 訂閱 (付費或試用版本) 
+- Office 365 Enterprise E3 訂閱 + Office 365 Advanced 合規性附加元件 (已無法再供新訂閱使用) 
+
+### <a name="insider-risk-management"></a>內部風險管理
+
+「有問必答風險管理」可讓您偵測、調查和動作組織中的惡意和意外活動，以協助將內部風險降至最低。
+
+內幕風險管理可在下列訂閱中取得：
+
+- Microsoft 365 E5 訂閱 (付費或試用版本) 
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
+- Microsoft 365 A5 訂閱 (付費或試用版本) 
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+
+### <a name="information-barriers"></a>資訊屏障
+
+資訊壁壘可讓您限制兩個內部群組之間的通訊和共同作業，以避免組織中發生利益衝突。
+
+資訊屏障可用於下列訂閱：
+
+- Microsoft 365 E5 訂閱 (付費或試用版本) 
+- Microsoft 365 A5 訂閱 (付費或試用版本) 
+- Office 365 企業版 E5 訂閱 (付費或試用版本) 
+- Office 365 A5 訂閱 (付費或試用版本) 
+- Office 365 Advanced 合規性附加元件 (無法再供新訂閱使用) 
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 「內幕人員風險管理附加元件」
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+
+### <a name="privileged-access-management"></a>特殊權限存取管理
+
+「特權存取管理」允許對 Office 365 中的特殊 Exchange Online 系統管理員工作進行精細存取控制。 它可協助保護您的組織，避免因使用現有的許可權系統管理員帳戶存取機密資料或存取重要的設定設定而遭到破壞。
+
+下列訂閱提供了特殊許可權存取管理：
+
+- Microsoft 365 E5 訂閱 (付費或試用版本) 
+- Microsoft 365 A5 訂閱 (付費或試用版本) 
+- Office 365 企業版 E5 訂閱 (付費或試用版本) 
+- Office 365 A5 訂閱 (付費或試用版本) 
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 合規性附加元件
+- Microsoft 365 E3 訂閱 + Microsoft 365 E5 資訊保護和管理法規附加元件
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
+- Microsoft 365 A3 訂閱 + Microsoft 365 A5 Information Protection and 調控附加元件
 
 ## <a name="deploy-microsoft-365-insider-risk-solutions"></a>部署 Microsoft 365 有問必答風險解決方案
 
