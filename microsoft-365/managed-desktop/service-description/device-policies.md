@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5533284d4a3f55a51b3017a64e4c353b4ec71352
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 7086774c046ac28ffa467168e3b5b1affb508ec8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846225"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840322"
 ---
 # <a name="device-configuration"></a>裝置設定
 
@@ -23,7 +23,7 @@ ms.locfileid: "48846225"
 
 <!-- Device configuration and Security Addendum-->
 
-當您設定新的 Microsoft 受管理桌面裝置時，請確定其具有針對 Microsoft Managed Desktop 優化的正確設定。 這包括一組預設原則，設定為上架過程的一部分。 您可以盡可能使用行動裝置管理 (MDM) 來傳遞這些原則。 如需詳細資訊，請參閱行動 [裝置管理](https://docs.microsoft.com/windows/client-management/mdm/)。 
+當您設定新的 Microsoft 受管理桌面裝置時，請確定其具有針對 Microsoft Managed Desktop 優化的正確設定。 該設定包括一組預設原則，設定為上架過程的一部分。 您可以盡可能使用行動裝置管理 (MDM) 來傳遞這些原則。 如需詳細資訊，請參閱行動 [裝置管理](https://docs.microsoft.com/windows/client-management/mdm/)。 
 
 >[!NOTE]
 >若要避免衝突，請勿變更這些原則。
@@ -53,5 +53,5 @@ Microsoft 受管理的桌面推薦的安全性範本 | 一組建議變更的安�
  ### <a name="additional-security-policies"></a>其他安全性原則
 
  新增這些原則，以加強高管制行業的安全性。 
- - **安全性監視** ： Microsoft 將使用 [Microsoft Defender for Endpoint 來](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)監視裝置。 如果偵測到威脅，Microsoft 會通知客戶、隔離裝置，並以遠端方式修正問題。 
- - **停用 PowerShell v2** ： Microsoft 已移除2017年8月的 PowerShell V2。 在所有 Microsoft 受管理的桌面裝置上，此功能已停用。 如需此變更的詳細資訊，請參閱 [Windows PowerShell 2.0 過時](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/)。
+ - **安全性監視**： Microsoft 將使用 [Microsoft Defender for Endpoint 來](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)監視裝置。 如果偵測到威脅，Microsoft 會通知客戶、隔離裝置，並以遠端方式修正問題。 
+ - **停用 PowerShell v2**： Microsoft 已移除2017年8月的 PowerShell V2。 在所有 Microsoft 受管理的桌面裝置上，此功能已停用。 如需此變更的詳細資訊，請參閱 [Windows PowerShell 2.0 過時](https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/)。

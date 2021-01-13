@@ -7,12 +7,12 @@ author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: c659772df6492d52a23ed099ebd21e878939b8f7
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: d2aed005f0f1497cc9b545f48a8cb1dae3c90fb2
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950457"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841384"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Microsoft 受管理的桌面支援的地區和語言
 
@@ -20,7 +20,7 @@ ms.locfileid: "47950457"
 
 ## <a name="supported-languages"></a>支援的語言
 
-英文是 Microsoft 受管理的桌面使用者唯一可用的語言。 這包括使用者和系統管理員的所有使用者介面，以及與系統 [管理員支援](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) 和 [使用者支援](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support)的所有互動。
+英文是 Microsoft 受管理的桌面使用者唯一可用的語言。 這個原則包含使用者與系統管理員的所有使用者介面，以及與系統 [管理員支援](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) 和 [使用者支援](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support)的所有互動。
 
 
 您仍然可以使用英文地區以外的受管理裝置，而不會中斷 Microsoft 受管理的桌面服務。 例如，以英國為基礎的員工可以在亞洲、歐洲或南美旅行時，安全地在其受管理的裝置上運作，並接收更新。 

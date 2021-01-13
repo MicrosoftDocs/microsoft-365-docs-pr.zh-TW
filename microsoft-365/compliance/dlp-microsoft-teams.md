@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 您現在可以將 DLP 原則套用至 Microsoft 團隊聊天和頻道。 請閱讀本文以深入瞭解其運作方式。
-ms.openlocfilehash: 25ba5850f496c188c2a38d6cc5b68960a85e5e5f
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: a34a094a3c0440933a3d44e0125939a02b4ae202
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790157"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840580"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>資料遺失防護和 Microsoft 團隊
 
@@ -97,7 +97,7 @@ ms.locfileid: "49790157"
 
 4. 在 [ **狀態** ] 欄中，為 **小組聊天和頻道訊息** 開啟原則。<br/>![適用于小組聊天和頻道的 DLP](../media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. 在 [ **選擇位置** ] 索引標籤上，保留 [所有帳戶] 的預設設定，或選取 **[讓我選擇特定位置** ]，並指定要包含及排除的帳戶、通訊群組清單或安全性群組。 接著選擇 [下一步]。
+5. 在 [ **選擇位置** ] 索引標籤上，保留 [所有帳戶] 的預設設定，或選取 **[讓我選擇特定位置** ]，並指定要包含或排除的帳戶。 接著選擇 [下一步]。
 
 6. 按一下 **[儲存]**。
 
@@ -116,7 +116,7 @@ ms.locfileid: "49790157"
 
 4. 在 [ **命名您的原則** ] 索引標籤上，指定原則的名稱和描述，然後選擇 **[下一步]**。
 
-5. 在 [ **選擇位置** ] 索引標籤上，保留 [所有帳戶] 的預設設定，或選取 **[讓我選擇特定位置** ]，並指定要包含及排除的帳戶、通訊群組清單或安全性群組。 接著選擇 [下一步]。
+5. 在 [ **選擇位置** ] 索引標籤上，保留 [所有帳戶] 的預設設定，或選取 **[讓我選擇特定位置** ]，並指定要包含或排除的帳戶。 接著選擇 [下一步]。
 
 ![DLP 原則位置](../media/dlp-teams-selectlocationsnewpolicy.png)
 

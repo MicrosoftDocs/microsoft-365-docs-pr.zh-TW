@@ -1,6 +1,6 @@
 ---
-title: 取得 Microsoft 受管理電腦的支援
-description: ''
+title: 取得 Microsoft 受管理桌面的使用者支援
+description: 使用者如何取得服務和裝置的協助
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5b09b59efa6862782b04b7aa58d7c1fdc0383bb0
-ms.sourcegitcommit: 21c3e44862854c74e4008cfb661840f069c6b709
+ms.openlocfilehash: abd1b681f3d5900f846fde7922f2f4a2ca5821ef
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48787531"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841360"
 ---
 # <a name="getting-help-for-users"></a>為使用者取得協助
 
@@ -29,20 +29,20 @@ ms.locfileid: "48787531"
 
 ![取得協助應用程式圖示](../../media/get-help.png)
 
-這是安裝在所有 Microsoft 受管理的桌面裝置上的應用程式，且會釘住至工作列。 
+取得「說明」是安裝在所有 Microsoft 受管理的桌面裝置上的應用程式，且會釘住在任務列。 
 
-- 使用者可以要求來電回提供的電話號碼，或與服務代表線上交談。
+- 使用者可以要求提供的電話號碼的回撥，或與服務代表線上交談。
 - 在 Microsoft 受管理桌面支援範圍之外的要求會透過電話重新導向至本機 IT 支援人員。
 
 > [!NOTE]
 > 「取得説明」應用程式的顯示語言只是英文，即使使用者在設定其裝置或裝置設定時選取了不同的語言。 
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 為了讓您的使用者能夠透過應用程式取得協助，請確定符合下列必要條件：
 
 - 裝置必須使用 [設定 Microsoft 受管理的桌面裝置](../get-started/set-up-devices.md)中的其中一種方法，向 Microsoft managed desktop 註冊，例如 [自行註冊新裝置](../get-started/register-devices-self.md)。
 - 裝置的顯示語言必須設定為下列任何一種英文語言地區設定： en-us、en、en、en 或 en-ca。
-- 「取得説明」應用程式應該是最新的。 若要確認這一點，請檢查 Microsoft Store 中的應用程式更新。
+- 「取得説明」應用程式應該是最新的。 若要確認其狀態，請檢查 Microsoft Store 中的應用程式更新。
 - 必須可從裝置存取特定 [端點](../get-ready/network.md#endpoints-allowed-that-are-necessary-for-microsoft-managed-desktop) 。
 
 > [!NOTE]
@@ -52,7 +52,7 @@ ms.locfileid: "48787531"
 
 ## <a name="phone-support"></a>電話支援
 
-使用 Microsoft 受管理的桌面裝置的使用者也可以存取他們可以撥打的免付費電話號碼。 這是在取得無法使用 [說明] 時使用。 例如，如果他們無法登入裝置，或裝置遭到中斷。 以下是電話支援電話號碼：
+使用 Microsoft 受管理的桌面裝置的使用者也可以存取他們可以撥打的免付費電話號碼。 當取得 [說明] 無法使用時，應使用這些數位。 例如，如果他們無法登入裝置，或裝置遭到中斷。 以下是電話支援電話號碼：
 
 - 美國： + 1 855 425 0216
 - 加拿大 (（魁北克）) ： + 1 855 425 0216
@@ -71,7 +71,7 @@ ms.locfileid: "48787531"
 >[!NOTE]
 >當您呼叫以驗證身分識別時，您必須準備好組織的電子郵件地址。 
 
-## <a name="additional-resources"></a>其他資源
+## <a name="more-resources"></a>其他資源
 - [Microsoft 受管理的電腦的系統管理員支援](admin-support.md)。 
 - [Microsoft 受管理電腦的支援](../service-description/support.md)。
-- 如果您已訂閱 Microsoft 受管理的電腦，您可以在 microsoft 管理的桌面系統管理指南中， [于 microsoft 的](https://endpoint.microsoft.com/)「 **租** 使用者管理」功能表的 [Microsoft 受管理的桌面] 區段 **中，找到** 相關的詳細程式、處理流程、工作指示及 FAQs。
+- 如果您已訂閱 Microsoft 受管理的電腦，您可以在 microsoft 管理的桌面系統管理指南中，[于 microsoft 的](https://endpoint.microsoft.com/)「**租** 使用者管理」功能表的 [Microsoft 受管理的桌面] 區段 **中，找到** 相關的詳細程式、處理流程、工作指示及 FAQs。

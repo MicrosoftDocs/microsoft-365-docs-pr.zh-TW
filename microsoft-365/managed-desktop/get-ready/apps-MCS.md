@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d2a6c09e1bcb84885e607d133c14e26e08e3c621
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: f8c4e427c536577ea2fc768d4930b9d4db6ac697
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46530160"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841420"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>使用 Microsoft 諮詢服務
 
@@ -24,7 +24,7 @@ ms.locfileid: "46530160"
 
 若要使用 MCS 應用程式封裝，**您必須提供下列項目**：
 
-- 來源安裝程式檔案 (例如 setup.exe 或 .msi)。
+- 來源 installer 檔案 (例如，setup.exe 或 .msi) 。
 - 安裝指示，指定安裝完成的外觀詳細資訊。 例如，應用程式應該有桌面快速鍵嗎？ 應用程式可見度應該為何？ 應用程式應該連線到伺服器嗎？若是如此，哪一個伺服器？ 如需詳細資訊，請參閱[應用程式封裝要求範本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)。
 - 您必須執行自己的接受度測試，以驗證此應用程式在您的環境中能夠正常運作。
 
@@ -40,11 +40,11 @@ ms.locfileid: "46530160"
 
 ![行事曆顯示應用程式在星期四輸入 (在此範例中為 21 日)，第二天做媒體驗證，下星期一封裝 (25 日)，之後的星期五交付應用程式 (29 日)](../../media/MCS-cal.png)
 
-應用程式交付之後，您會收到通知。 此時，您有 21 天的時間可以執行接受度測試，並在 Microsoft 受管理的電腦入口網站上簽署工作。 如果您在接受度測試期間發現應用程式有些問題，請在 Microsoft 受管理的電腦入口網站中拒絕該應用程式，您將會透過電子郵件與 MCS 封裝程式連線，以了解並解決這個問題。
+應用程式交付之後，您會收到通知。 在該點，您有21天的時間可執行接受度測試，並核准 Microsoft 受管理的桌面入口網站中的工作。 如果您在接受度測試期間發現應用程式有些問題，請在 Microsoft 受管理的電腦入口網站中拒絕該應用程式，您將會透過電子郵件與 MCS 封裝程式連線，以了解並解決這個問題。
 
 ## <a name="testing-accounts-and-environment"></a>測試帳戶和環境
 
-若要讓封裝小組完成移轉至 Microsoft Intune，我們建議您提供特定權限：
+若要讓打包小組完成對 Microsoft Intune 的遷移，我們建議您提供某些許可權：
  
 -   封裝程式的 Microsoft Intune App 部署功能的存取權，以新增並指派應用程式 
 -   搭配封裝程式的測試群組、使用者帳戶和授權，以便能夠測試應用程式

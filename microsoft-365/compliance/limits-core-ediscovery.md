@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 本文說明 Microsoft 365 核心 eDiscovery 案例中的限制。
-ms.openlocfilehash: 6224ce5ecb8fc0439e43ab5e1362f8a618194202
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: 43d267acdb0c1fee0202c74832b376e066241d7c
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358511"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799660"
 ---
 # <a name="limits-in-core-ediscovery"></a>核心 eDiscovery 的限制
 
 下表列出核心 ediscovery 案例相關聯之核心 eDiscovery 案例和保留專案的限制。 如需核心 eDiscovery 的詳細資訊，請參閱 [核心 Ediscovery 一覽](ediscovery-cases.md)。
     
-  |**限制的描述**|**限制**|
+  | 限制的描述 | 限制 |
   |:-----|:-----|
   |組織的案例數目上限  <br/> |無限制  <br/> |
   |組織的案例保留數目上限  <br/> |10,000  <br/> |
@@ -38,4 +38,11 @@ ms.locfileid: "47358511"
   |||
 
    > [!NOTE]
-   > <sup>1</sup> 若要查看超過1000案例、保留、搜尋或匯出的清單，您可以使用對應的 Office 365 安全性 & 合規性 PowerShell Cmdlet：<br/> [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase) <br/> [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)<br/> [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)<br/> [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+   > <sup>1</sup> 若要查看超過1000案例、保留、搜尋或匯出的清單，您可以使用對應的 Office 365 安全性 & 合規性 PowerShell Cmdlet：
+   > 
+   > - [Get-ComplianceCase](https://docs.microsoft.com/powershell/module/exchange/get-compliancecase)
+   > - [Get-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/get-caseholdpolicy)
+   > - [Get-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearch)
+   > - [Get-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/get-compliancesearchaction)
+
+如需與核心 eDiscovery 案例相關聯之內容搜尋與匯出相關限制的相關資訊，請參閱 [內容搜尋和核心 ediscovery 的限制](limits-for-content-search.md)。

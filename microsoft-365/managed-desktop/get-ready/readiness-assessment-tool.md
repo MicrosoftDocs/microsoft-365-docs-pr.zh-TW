@@ -9,26 +9,26 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 491422126f7d159689e7995b69bef0f395491dcb
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 9c19a037ec280320d0800fe2c65f595e4b1010dd
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527706"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840358"
 ---
 # <a name="readiness-assessment-tool"></a>準備工作評估工具
 
-若要在 Microsoft 受管理的電腦上登錄時產生最平滑的可能體驗，您必須預先設定許多設定及其他參數。 您可以使用此工具檢查這些設定，並取得修復任何非正確步驟的詳細步驟。
+若要在 Microsoft 受管理的電腦上註冊時，最平滑的可能體驗，您必須預先設定重要的設定和其他參數。 您可以使用此工具檢查這些設定，並取得修復任何非正確步驟的詳細步驟。
 
 工具會檢查 Microsoft 端點管理員中的設定 (具體地說，Microsoft Intune) ，Azure Active Directory (Azure AD) 和 Microsoft 365，以確保它們能夠與 Microsoft 受管理的電腦搭配使用。 在您上次於 Azure AD 組織 (租使用者) 中執行檢查後，Microsoft 受管理的桌面會保留與這些檢查相關的資料。 12個月後，我們會將它保留在解除識別的表單中。  您可以選擇刪除我們收集的資料。
 
-具有至少 Intune 系統管理員角色的任何人都可以執行此工具，但有兩個檢查 ([條件式存取原則](readiness-assessment-fix.md#conditional-access-policies) 和多 [因素驗證](readiness-assessment-fix.md#multifactor-authentication) 都需要其他許可權。
+具有至少 Intune 系統管理員角色的任何人都可以執行此工具，但有兩個檢查 ([條件式存取原則](readiness-assessment-fix.md#conditional-access-policies) 和 [多重要素驗證](readiness-assessment-fix.md#multifactor-authentication) 需要更多許可權。
  
 評估工具會檢查下列專案：
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 
-|檢查  |描述  |
+|支票  |描述  |
 |---------|---------|
 |Autopilot 部署設定檔     | 驗證 Autopilot 部署設定檔的指派是否不會套用到所有的裝置 (設定檔 *不應該指派* 給任何 Microsoft 受管理的桌面裝置。 )        |
 |憑證連接器     | 檢查憑證連接器的狀態，以確保它們為作用中狀態。   |
@@ -41,7 +41,7 @@ ms.locfileid: "49527706"
 |商務用 Microsoft Store     | 確認已啟用商務用 Microsoft Store，且已與 Intune 同步處理        |
 |多重要素驗證 | 驗證未套用至 Microsoft Managed Desktop 服務帳戶的多重要素驗證。
 |PowerShell 腳本     | 檢查 Windows PowerShell 腳本的指派方式， *不* 是以 Microsoft 受管理的電腦裝置為目標    |
-|區域     | 檢查 Microsoft Managed Desktop 是否支援您的地區        |
+|地區     | 檢查 Microsoft Managed Desktop 是否支援您的地區        |
 |安全性基準     | 檢查安全性基準設定檔不是以所有使用者或所有裝置為目標。 (安全性基準原則 *不* 應以任何 Microsoft 受管理的桌面裝置為目標。 )        |
 |Windows 應用程式     | 複查您要指派給 Microsoft 受管理的桌面裝置的應用程式      |
 |Windows Hello 企業版     | 檢查是否已啟用 Windows Hello 企業版        |
@@ -50,7 +50,7 @@ ms.locfileid: "49527706"
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 設定
 
-|檢查  |描述  |
+|支票  |描述  |
 |---------|---------|
 |企業狀態漫遊的「Ad hoc」訂閱     | 建議您如何檢查是否 (如果設定為 "false" ) 設定為 "false" 可使企業狀態漫遊無法正常運作  |
 |企業狀態漫遊     | 建議如何檢查是否已啟用企業狀態漫遊       |
@@ -65,7 +65,7 @@ ms.locfileid: "49527706"
 
 ## <a name="microsoft-365-apps-for-enterprise-settings"></a>Microsoft 365 應用程式的企業版設定
 
-|檢查  |描述  |
+|支票  |描述  |
 |---------|---------|
 |商務用 OneDrive     | 檢查商務用 OneDrive 是否使用不支援的設定。        |
 

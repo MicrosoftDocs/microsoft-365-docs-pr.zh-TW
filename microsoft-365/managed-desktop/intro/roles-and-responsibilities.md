@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: de0bc092c35c7f48c562da8d4218f7a638abe1d5
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 94389fbb9a13b9a880b0c4dcaf67d8adcaff0f98
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847777"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841312"
 ---
 # <a name="microsoft-managed-desktop-roles-and-responsibilities"></a>Microsoft 受管理的電腦角色和責任
 
@@ -33,13 +33,13 @@ Microsoft 提供下列主要角色和責任：
 MDM 原則管理 | Microsoft 會根據最佳作法套用 MDM 原則，並考慮原則變更的要求。 我們也會依照 [裝置原則](../service-description/device-policies.md)中的規定，對租使用者進行變更。
 使用者支援 | 我們會透過預先安裝在所有 Microsoft 受管理的桌面裝置上的 Get Help 應用程式，針對所有已註冊的使用者，為裝置、Windows 和 Microsoft 365 應用程式的企業產品套件提供使用者支援。 
 Microsoft 受管理的桌面服務支援 | Microsoft 將透過 Microsoft 受管理的桌面作業小組為您的 IT 部門提供支援。 此小組將支援客戶的 Microsoft 受管理桌面環境的技術疑難排解、變更要求和事件管理。 如需詳細資訊，請參閱 [Microsoft Managed Desktop 的系統管理支援](../working-with-managed-desktop/admin-support.md)。
-安全性監控 | Microsoft 將使用 Microsoft Defender for Endpoint 來監視 Microsoft 受管理的桌面裝置。 如果 Microsoft Managed Desktop Security Operations Center (SOC) 偵測到威脅，我們會通知您、隔離裝置，並以遠端方式修正問題。 如需詳細資訊，請參閱 [安全性](../service-description/security.md)。
+安全性監視 | Microsoft 將使用 Microsoft Defender for Endpoint 來監視 Microsoft 受管理的桌面裝置。 如果 Microsoft Managed Desktop Security Operations Center (SOC) 偵測到威脅，我們會通知您、隔離裝置，並以遠端方式修正問題。 如需詳細資訊，請參閱 [安全性](../service-description/security.md)。
 更新監控與管理 | 我們會積極監控 Microsoft 受管理的桌面裝置，以確保為 Microsoft Windows 和 Microsoft Office 安裝最新的品質和功能更新。 如需詳細資訊，請參閱 [如何處理更新](../service-description/updates.md)。
 使用者和裝置群組 | Microsoft 受管理的桌面作業小組會建立及管理必要的裝置和使用者群組做為 IT 作業的一部分。 這些群組不允許任何成員資格或設定變更。 變更這些群組可能會造成裝置的意外設定和功能喪失。 如需在建立這些群組之後的任何問題或問題，IT 管理員可以與 Microsoft 受管理的桌面作業聯繫。 如需詳細資訊，請參閱 [Microsoft Managed Desktop 的系統管理支援](../working-with-managed-desktop/admin-support.md)。
 
 ## <a name="your-roles-and-responsibilities"></a>您的角色與責任
 
-部署所需的額外共同角色和責任，但不是由 Microsoft 提供。 這不是詳盡，但適用于大部分的組織。 您和 Microsoft 共同擔負的部分專案。 
+部署時需要這組共同角色和責任，但不是由 Microsoft 提供。 這不是詳盡，但適用于大部分的組織。 您和 Microsoft 共同擔負的部分專案。 
 
 角色或責任 | 描述
 --- | ---
@@ -49,7 +49,7 @@ Microsoft 受管理的桌面服務支援 | Microsoft 將透過 Microsoft 受管�
 使用者支援 | 您必須為下列專案提供使用者支援： <br>-現場基礎結構：所有網路及網際網路連線、VPN 基礎結構及用戶端設定、本機會議會議室設備、印表機、proxy 伺服器和設定，以及防火牆。<br><br>-全公司的雲端資源：電子郵件、SharePoint、共同作業服務，以及其他與整個公司的技術空間有關的雲端基礎結構。<br><br>-業務線和任何其他公司特定的應用程式。
 應用程式 | 角色和責任因 Microsoft 受管理的桌面所提供的應用程式和您所提供的應用程式而稍有不同。 <br><br>針對 Microsoft 所提供的應用程式 (Microsoft 365 應用程式組成 Word、Excel、PowerPoint、Outlook、Publisher、Access、商務用 Skype、小組和 OneNote) ， **Microsoft** 將為部署、更新及支援提供完整服務。 **您** 必須取得並指派這些應用程式的授權、將使用者新增至安全性群組、管理生命週期，以及部署您所需的任何附加元件。<br><br>針對您提供 (的應用程式，例如您的企業營運應用程式) ，不論是自行打包，還是要與非 Microsoft 供應商 **接洽，以** 進行下列動作： <br><br>-識別目標使用者群組所需的應用程式<br>-針對應用程式部署建立及管理 Azure AD 群組<br>-打包應用程式以符合 Microsoft Intune 部署標準<br>-將應用程式上傳至 Microsoft Intune<br>-在 Microsoft 管理的桌面環境中測試應用程式<br>-隨使用者測試應用程式<br>-管理及指派使用者至應用程式<br>-透過 Microsoft Intune 識別及部署應用程式更新<br>-卸載並移除已停用的應用程式<br>-購置和指派授權<br>-提供使用者對企業營運應用程式的支援<br>-遠端管理應用程式設定<br><br>**Microsoft** 會提供 microsoft Intune 部署工具，將應用程式傳送至遠端用戶端。<br><br>如需詳細資訊，請參閱 [應用程式](../get-ready/apps.md)。
 安全性監視和回應 | 您負責調查和解決不是 Microsoft 管理的桌面裝置之裝置的事件，並確保 Microsoft 受管理的桌面作業小組已獲悉任何可能會影響服務的問題。
-作業支援 | 您必須提供組織中偏好的連絡人和主題專家的清單。 我們需要這類功能，以防與 Microsoft 受管理的電腦無關的操作事件。 <br><br>您也負責調查和解決不在 Microsoft 受管理的桌上型電腦中之裝置和服務的事件，並確保永遠知道 Microsoft 受管理的桌面作業團隊。
+作業支援 | 您必須提供組織中偏好的連絡人和主題專家的清單。 如果有與 Microsoft Managed Desktop 不相關的作業事件，我們需要這些連絡人。 <br><br>您也負責調查和解決不在 Microsoft 受管理的桌上型電腦中之裝置和服務的事件，並確保永遠知道 Microsoft 受管理的桌面作業團隊。
 網路基礎結構（包含 VPN） | 您負責設定、設定和管理 (，包括所有網路相關基礎結構和服務的疑難排解與調試) ，包括網際網路連線、網路控制、proxy 設定及遠端連線基礎結構。<br><br>如果已在硬體或軟體) 中 (設定 proxy，則必須有 proxy 的 URLs 集合。 您負責疑難排解因多個 proxy 的任何衝突或不相容性。 您可以使用可設定的設定，新增組織特有的網路 proxy。 如需詳細資訊，請參閱 [可設定的設定](../working-with-managed-desktop/config-setting-ref.md#proxy)。<br><br>如需詳細資訊，請參閱 [Proxy Configuration](../get-ready/network.md)。
 列印 | 您負責安裝、維護及管理印表機及列印佇列。 雲端列印是建議的解決方案，但不是必要的。 
 

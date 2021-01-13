@@ -11,23 +11,23 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 57b49e49a20ee9e088301e90590c19cfabf89a2b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 5d386000fab8894dd60790d3514ae93feaa03a22
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658938"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841276"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft 管理的桌面封存裝置
 
-為保證最佳的使用者體驗，Microsoft 受管理的桌面機在特定點對裝置的淘汰支援。 本主題列出未來幾年中臨近退休的裝置，我們稱為「封存」。 如果您是使用已有的裝置開始使用 Microsoft 受管理的桌面，您應該仔細檢查此清單。
+為保證最佳的使用者體驗，Microsoft 受管理的桌面機在特定點對裝置的淘汰支援。 本文列出今後幾年中臨近退休的裝置，我們稱為「封存」。 如果您是使用已有的裝置開始使用 Microsoft 受管理的桌面，您應該仔細檢查此清單。
 
 >[!IMPORTANT]
 >您現在仍然可以註冊這些裝置，但是使用 Microsoft 受管理的電腦時，其服務週期會比較短。 如果您要購買新的裝置，則應該從使用中 [裝置清單](./device-list.md)中使用模型。
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-若要在 Microsoft Managed Desktop 中註冊，裝置必須是下列其中一種模型，並符合或超過所列的 RAM、處理器系列和磁碟空間規格。 不支援其他自訂。
+若要在 Microsoft 受管理的電腦中註冊，裝置必須是下列其中一種型號，且符合或超過所列的 RAM、處理器系列和磁碟空間規格。 不支援其他自訂。
 
 
 
@@ -70,7 +70,7 @@ ms.locfileid: "49658938"
 - 尚未完成 Windows 第一次執行體驗。
 - 使用 [Device Registration](https://aka.ms/mmddrhelp) 功能向 Microsoft Managed Desktop 註冊
 
-#### <a name="additional-help"></a>其他協助
+#### <a name="more-help"></a>更多説明
 
 這些資源可協助您回答可能有關特定裝置的問題：
 

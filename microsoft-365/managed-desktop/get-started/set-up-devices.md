@@ -1,18 +1,18 @@
 ---
 title: 設定 Microsoft Managed Desktop 的裝置
-description: ''
+description: 如何取得新裝置或重複使用已有資格的新裝置
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 5efda6fe73dd5454c8b527b6ba63c9ae81951dd2
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 65c7c0c938b376a1b53910e7ca783b7bfe8a7ea8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950505"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840500"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>設定 Microsoft 受管理的電腦裝置
 
@@ -29,9 +29,9 @@ ms.locfileid: "47950505"
     - 與合作夥伴合作以註冊裝置
 4. [讓您的使用者準備好](get-started-devices.md) 使用 Microsoft 受管理的桌面裝置
 
-## <a name="to-re-use-existing-devices"></a>重複使用現有的裝置
+## <a name="to-reuse-existing-devices"></a>重複使用現有的裝置
 
-1. 查看 [目前核准之裝置](../service-description/device-list.md) 的清單，以識別哪些裝置已核准，可搭配 Microsoft Managed Desktop 使用。 如果您重複使用現有的裝置，您必須重新進行鏡像。
+1. 查看 [目前核准之裝置](../service-description/device-list.md) 的清單，以識別哪些裝置已核准，可搭配 Microsoft Managed Desktop 使用。 如果您重複使用現有的裝置，您必須重新映射。
 2. 請執行下列其中一項動作：
     - [自行註冊現有裝置](register-reused-devices-self.md)
     - 與合作夥伴合作以註冊裝置
@@ -44,6 +44,6 @@ ms.locfileid: "47950505"
 3. [指派授權](assign-licenses.md)
 4. [部署 Intune 公司入口網站](company-portal.md)
 5. [啟用企業狀態漫遊](enterprise-state-roaming.md)
-6. 設定 (本主題的裝置) 
+6. 設定 (本文的裝置) 
 7. [讓您的使用者準備好使用裝置](get-started-devices.md)
 8. [部署應用程式](deploy-apps.md)

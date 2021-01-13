@@ -1,6 +1,6 @@
 ---
 title: Microsoft 受管理的桌面作業和監控
-description: ''
+description: 誰負責處理各種變更程式
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1ddac923849abfa2c912244c5ff987ec885f3d45
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 5d7c6a7b836d0044ba9cde188170dd51f117dd2b
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527590"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840370"
 ---
 # <a name="microsoft-managed-desktop-operations-and-monitoring"></a>Microsoft 受管理的桌面作業和監控
 
@@ -25,13 +25,13 @@ ms.locfileid: "49527590"
 
 ## <a name="change-management"></a>變更管理
 
-在提供服務時，如硬體維護和安全性之類的項目責任權衡方式，會移轉至服務提供者 (Microsoft) 而非客戶 (您)。 不過，您仍然需要確定在進行更新時，協力廠商和自訂軟體會繼續如期運作。
+在提供服務時，如硬體維護和安全性之類的項目責任權衡方式，會移轉至服務提供者 (Microsoft) 而非客戶 (您)。 不過，當向外延展更新時，您仍然需要確定非 Microsoft 和自訂的軟體仍會如預期的方式運作。
 
 在內部部署產品中，您的組織假設管理變更的所有責任。
 
 ### <a name="balance-of-responsibility"></a>責任平衡
 
-責任 | Microsoft 受管理的桌面服務 | Microsoft 365 用戶端軟體 | 內部部署用戶端和伺服器 | 協力廠商和自訂軟體
+責任 | Microsoft 受管理的桌面服務 | Microsoft 365 用戶端軟體 | 內部部署用戶端和伺服器 | 非 Microsoft 和自訂軟體
 ----- | ----- | ----- | ----- | -----
 提供新功能 | 微軟 | 微軟 | 兩者都要 | 客戶
 測試品質保證的新功能 |  微軟 | 微軟 | 兩者都要 | 客戶
@@ -44,7 +44,7 @@ ms.locfileid: "49527590"
 
 ### <a name="change-process-overview"></a>變更程式概述
 
-以下摘要說明如何在 Microsoft 與客戶之間共用變更程式。 
+以下摘要說明如何在 Microsoft 與客戶之間共用變更程式： 
 
 
 
@@ -60,14 +60,14 @@ ms.locfileid: "49527590"
 
 ### <a name="change-types"></a>變更類型
 
-定期對服務進行多種類型的變更。 這些變更與客戶負責之動作的通訊通道有所不同。
+我們定期對此服務進行多種類型的變更。 這些變更和您負責處理的動作有不同的通訊通道。
 
 並非所有變更對使用者或必要動作都會造成相同的影響。 有些人會根據其性質來規劃和部分計畫 (非安全性更新和安全性更新通常不會) 計畫。 根據變更的類型而定，通訊通道可能會有所不同。 下表列出 Microsoft Managed Desktop service 可以預期的變更類型。
 
 |   | 功能 |   非安全性更新 |  安全性
 --- | --- | --- | ---
-**變更類型** | -功能更新<br>-新功能或應用程式<br>過時的功能 | 問題的用戶端 Hotfix | 安全性修補程式
-**事先通知** | 需要動作的變更需要5天的通知 |    否，這些都包含在每月版本中   | 否，這些都包含在每月版本中 
+**變更類型** | -功能更新<br>-新功能或應用程式<br>過時的功能 | 問題的用戶端 Hotfix | 安全性更新
+**事先通知** | 需要動作的變更需要5天的通知 | 否，每月版本都包含這類變更    | 否，每月版本都包含變更 
 **通訊通道** | -訊息中心<br>-電子郵件警示 | -訊息中心<br>-電子郵件警示 | -訊息中心<br>-電子郵件警示
 **需要全域系統管理員動作** | 有時候 |  很少 |    很少 
 **動作類型** | 變更設定 | 向使用者傳達變更 | 變更系統管理員設定     
@@ -77,18 +77,18 @@ ms.locfileid: "49527590"
 
 ## <a name="standard-operating-procedures"></a>標準運作程式
 
-Microsoft 受管理的桌面服務是由 Microsoft 在您可以執行其他系統管理活動的 Microsoft 雲端實例中執行並運作。 Microsoft 完全負責 Microsoft 受管理的桌面專用設定、設定和作業。 
+Microsoft 受管理的桌面服務是由 Microsoft 在您可能進行其他管理活動的 Microsoft 雲端實例中執行並運作。 Microsoft 完全負責 Microsoft 受管理的桌面專用安裝、設定和作業。 
 
 在內部部署產品中，您的組織會承擔管理安裝程式的所有責任，以及設定和操作活動。
 
-Categories |    Microsoft 會 | 客戶將
+類別 |    Microsoft 會 | 客戶將
 --- | --- | ---
-網路 (proxy、封包檢查、VPN)   | 建議並與客戶一起規劃，以將企業使用者的風險降至最低。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。
-服務帳戶 |-實施、安全地儲存和管理認證。<br> -對您的安全性作業小組進行未經授權的存取或使用這些認證。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不指派原則、多重要素驗證、條件式存取或應用程式部署至 Microsoft Managed Desktop Service 帳戶。<br>-不要重設密碼或使用認證。<br>-如果在 Intune 或 Azure 審核記錄檔中看到與這些服務帳戶相關的可疑活動，請開啟嚴重度 C 支援要求至 Microsoft Managed Desktop Operations。
-裝置群組 | -在 Microsoft 受管理的桌面群組中實施及管理裝置的成員資格。<br>-使用 Microsoft 受管理的桌面群組，管理裝置的設定和更新的指派及發行。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不修改任何 Microsoft 受管理的桌面群組的成員資格。<br>-僅使用群組為服務（如 VPN、Windows Hello 企業版或電子郵件加密）或公司 Wi-Fi 設定檔設定指派公司憑證。<br>-存在共同管理，請在部署 Configuration Manager 用戶端時，明確排除所有 Microsoft 受管理的桌面群組。
-原則 |  -實施及管理 Microsoft 受管理的桌面原則，以控制服務內裝置的設定狀態。<br>-將更新部署至原則或 Windows，以增量方式使用裝置群組。<br> -明確排除針對非 Microsoft 受管理的桌面群組。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不編輯或指派 Microsoft 受管理的桌面原則給未由 Microsoft Managed Desktop 服務管理的裝置或使用者。
-Microsoft Defender for Endpoint | 在 Microsoft 受管理的桌面服務範圍內監視和調查裝置。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更
-商務用 Microsoft Store |  設定及維護 Microsoft Managed Desktop service 的 Windows Autopilot 設定檔。 | -建立要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表和其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不修改 Microsoft Managed Desktop Windows Autopilot 設定檔的設定，或新增/移除指派的裝置。
+網路 (proxy、封包檢查、VPN)   | 建議並與客戶一起規劃，以將企業使用者的風險降至最低。 | -建立要求要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表及其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。
+服務帳戶 |-實施、安全地儲存和管理認證。<br> -對您的安全性作業小組進行未經授權的存取或使用這些認證。 | -建立要求要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表及其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不指派原則、多重要素驗證、條件式存取或應用程式部署至 Microsoft Managed Desktop Service 帳戶。<br>-不要重設密碼或使用認證。<br>-如果在 Intune 或 Azure 審核記錄檔中看到與這些服務帳戶相關的可疑活動，請開啟嚴重度 C 支援要求至 Microsoft Managed Desktop Operations。
+裝置群組 | -在 Microsoft 受管理的桌面群組中實施及管理裝置的成員資格。<br>-使用 Microsoft 受管理的桌面群組，管理裝置的設定和更新的指派及發行。 | -建立要求要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表及其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不修改任何 Microsoft 受管理的桌面群組的成員資格。<br>-僅使用群組為服務（如 VPN、Windows Hello 企業版或電子郵件加密）或公司 Wi-Fi 設定檔設定指派公司憑證。<br>-存在共同管理，請在部署 Configuration Manager 用戶端時，明確排除所有 Microsoft 受管理的桌面群組。
+原則 |  -實施及管理 Microsoft 受管理的桌面原則，以控制服務內裝置的設定狀態。<br>-將更新部署至原則或 Windows，以增量方式使用裝置群組。<br> -明確排除針對非 Microsoft 受管理的桌面群組。 | -建立要求要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表及其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不編輯或指派 Microsoft 受管理的桌面原則給未由 Microsoft Managed Desktop 服務管理的裝置或使用者。
+適用於端點的 Microsoft Defender | 在 Microsoft 受管理的桌面服務範圍內監視和調查裝置。 | -建立要求要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表及其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更
+商務用 Microsoft Store |  設定及維護 Microsoft Managed Desktop service 的 Windows Autopilot 設定檔。 | -建立要求要求資訊以進行規劃的設定變更，包括設定詳細資料、範圍、時程表及其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-不修改 Microsoft Managed Desktop Windows Autopilot 設定檔的設定，或新增/移除指派的裝置。
 憑證 | | -在憑證到期之前建立支援60要求，要求資訊以取得計畫的設定變更，包括設定詳細資料、範圍、時程表及其他 Microsoft 供複查的相關詳細資料。<br>-僅在 Microsoft 受管理的桌面作業已評估並建議時套用變更。<br>-更新所有必要的憑證，以設定憑證設定檔、VPN 設定檔，以及 Wi-Fi 設定檔。
 
 
@@ -96,7 +96,7 @@ Microsoft Defender for Endpoint | 在 Microsoft 受管理的桌面服務範圍�
 
 ## <a name="device-wipe-with-factory-reset"></a>以原回復位的裝置擦除
 
-Microsoft 受管理的桌面作業團隊可在必要時，對服務中已登記的裝置執行出廠重設。 如果您需要將裝置送出至不同的員工，或是員工離開您的公司，這會很有説明。 
+Microsoft 受管理的桌面作業團隊可在必要時，對服務中已登記的裝置執行出廠重設。 如果您需要將裝置送出至不同的員工，或是員工離開您的公司，重設會很有説明。 
 
 有幾個需求：
 

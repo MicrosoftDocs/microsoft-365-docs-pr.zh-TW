@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: bccfe9a6a6a0550f96ab33d5fd5142e4eaae7b51
-ms.sourcegitcommit: b06a4f21da247edb03fdf6a01eafb7d4fb387b33
+ms.openlocfilehash: cf31778d773a271ead6a1745197f04eca127ab5d
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48333521"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841092"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>為 Microsoft 受管理的電腦準備認證和網路設定檔  
  
@@ -28,7 +28,7 @@ ms.locfileid: "48333521"
  
 需要有根憑證，才能透過 SCEP 或 PKCS 基礎結構部署憑證。 您組織中的其他應用程式和服務可能需要將根憑證部署至您的 Microsoft 受管理的桌面裝置。    
  
-在您將 SCEP 或 PKCS 憑證部署至 Microsoft Managed Desktop 之前，您應該收集組織中需要使用者或裝置憑證的每個服務需求。 若要讓這項簡化，您可以使用下列其中一個規劃範本：  
+在您將 SCEP 或 PKCS 憑證部署至 Microsoft Managed Desktop 之前，您應該收集組織中需要使用者或裝置憑證的每個服務需求。 若要簡化此活動，您可以使用下列其中一個規劃範本：  
  
 - [PKCS 憑證範本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/PKCS-certificate-template.xlsx) 
 - [SCEP 憑證範本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/SCEP-certificate-template.xlsx)
@@ -38,12 +38,12 @@ ms.locfileid: "48333521"
 
 若要讓您的商業網路所需的 Wi-Fi 設定自動提供裝置，您可能需要 Wi-Fi 設定檔。 您可以設定 Microsoft Managed Desktop，將這些設定檔部署至您的裝置。 如果您的網路安全性需要裝置成為本機網域的一部分，您可能也需要評估 Wi-Fi 網路基礎結構，以確保其與 Microsoft 受管理的桌面裝置相容 (Microsoft 受管理的桌面裝置只會加入 Azure AD) 。 
  
-在您將 Wi-Fi 設定部署至 Microsoft 受管理的桌面裝置之前，您需要收集每個 Wi-Fi 網路的組織需求。 若要簡化這種情況，您可以使用此 [WiFi 設定檔範本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx)。
+在您將 Wi-Fi 設定部署至 Microsoft 受管理的桌面裝置之前，您需要收集每個 Wi-Fi 網路的組織需求。 若要讓此活動變得更簡單，您可以使用此 [WiFi 設定檔範本](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/WiFi-profile-template.xlsx)。
  
  
 ## <a name="wired-connectivity-requirements-and-8021x-authentication"></a>有線連線需求和 802.1 x 驗證 
  
-如果您使用 802.1 x authentication 來保護從裝置到區域網路的存取 (LAN) 您將需要將必要的設定詳細資料推送至 Microsoft 受管理的桌面裝置。 Microsoft 受管理的桌面裝置執行 Windows 10，版本1809或更新版本支援透過 WiredNetwork configuration service provider (CSP) 部署 802.1 x 設定。 如需詳細資訊，請參閱 [WIREDNETWORK CSP](https://docs.microsoft.com/windows/client-management/mdm/wirednetwork-csp) 檔。 
+如果您使用 802.1 x authentication 來保護從裝置接入局域網 (LAN) ，您必須將必要的設定詳細資料推送至您的 Microsoft 受管理的桌面裝置。 Microsoft 受管理的桌面裝置執行 Windows 10，版本1809或更新版本支援透過 WiredNetwork configuration service provider (CSP) 部署 802.1 x 設定。 如需詳細資訊，請參閱 [WIREDNETWORK CSP](https://docs.microsoft.com/windows/client-management/mdm/wirednetwork-csp) 檔。 
  
 將有線網路設定設定檔部署至 Microsoft 受管理的桌面裝置之前，請先收集您組織的有線公司網路需求。 其步驟如下： 
  
@@ -57,7 +57,7 @@ ms.locfileid: "48333521"
  
 ## <a name="deploy-certificate-infrastructure"></a>部署憑證基礎結構  
  
-如果您已有使用 Intune 的 SCEP 或 PKCS 基礎結構，且符合您的需求，您也可以將它用於 Microsoft 受管理的電腦。 如果沒有 SCEP 或 PKCS 基礎結構已經存在，您必須準備一個。  
+如果您已有使用 Intune 的 SCEP 或 PKCS 基礎結構，且此方法符合您的需求，您也可以將它用於 Microsoft 受管理的電腦。 如果沒有 SCEP 或 PKCS 基礎結構已經存在，您必須準備一個。  
  
 如需詳細資訊，請參閱 [在 Microsoft Intune 中為您的裝置設定憑證設定檔](https://docs.microsoft.com/intune/certificates-configure)。 
  
@@ -68,10 +68,10 @@ ms.locfileid: "48333521"
 匯出 LAN 設定檔之後，您可以遵循下列步驟，準備用於 Microsoft Managed 桌面的原則：   
  
 1. 使用下列設定在 Microsoft Intune 中為 LAN 設定檔建立自訂設定檔。請參閱在 [Intune) 中使用 Windows 10 裝置的自訂設定](https://docs.microsoft.com/intune/custom-settings-windows-10) (。 在 [ **自訂 OMA URI 設定**] 中，選取 [ **新增**]，然後輸入下列值： 
-    - 名稱： *新式工作區-Windows 10 LAN 設定檔* 
+    - 名稱： *現代 Workplace-Windows 10 LAN 設定檔* 
     - 描述：輸入提供設定概述的描述，以及任何其他重要的詳細資料。 
     - OMA URI (區分大小寫) ： Enter *。/Device/Vendor/MSFT/WiredNetwork/LanXML*
-    - 資料類型： **) 選取字串 (的 XML **檔案。 
+    - 資料類型： **) 選取字串 (的 XML** 檔案。 
     - 自訂 XML：上傳匯出的 XML 檔案。
 2. 使用 Microsoft Managed Desktop Admin 入口網站，將支援要求提交至 Microsoft 管理的桌面 IT 作業，以複查及部署「新式工作」裝置–測試」的設定設定檔。 Microsoft 受管理的桌面 IT 作業可讓您在系統管理員入口網站中的支援要求完成要求時，通知您。
  

@@ -1,6 +1,6 @@
 ---
 title: 應用程式控制
-description: ''
+description: 如何在應用程式中使用應用程式控制及信任
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -10,12 +10,12 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 32ed3f95ebb4299796c5ad3eb71802c949701b65
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 6f5cc923b5a18b1f45dd186e88228db8c3a891cc
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289124"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841300"
 ---
 # <a name="app-control"></a>應用程式控制
 
@@ -24,7 +24,7 @@ ms.locfileid: "47289124"
 Microsoft 受管理的桌面透過建立可啟用核心生產力案例的基準原則，簡化應用程式控制原則的管理。 您可以將信任擴充至您環境中的應用程式和腳本特有的其他簽署者。 
 
 
-任何安全性技術都需要與使用者經驗、安全性和成本之間的平衡。 應用程式控制可減少環境中惡意軟體的威脅，但對使用者和 IT 管理員的其他動作也會產生任何後果。
+任何安全性技術都需要與使用者經驗、安全性和成本之間的平衡。 應用程式控制可減少環境中惡意軟體的威脅，但對使用者和 IT 管理員的後續動作也會有影響。
 
 **其他安全性：**
 
@@ -47,7 +47,7 @@ Microsoft 受管理的桌面 curates 信任 Microsoft 技術核心元件的基�
 
 ### <a name="base-policy"></a>基準原則
 
-Microsoft 受管理的桌面會與 Microsoft cybersecurity 專家共同作業原則，建立及維護標準原則，可讓大部分透過 Microsoft Intune 部署的應用程式封鎖代碼編譯或執行不受信任的檔案的執行等危險活動。
+Microsoft 受管理的桌面會與 Microsoft cybersecurity 專家共同作業原則，建立及維護標準原則，可讓大部分透過 Microsoft Intune 部署的應用程式封鎖代碼編譯或執行不受信任檔案的執行等危險活動。
 
 基準原則採用下列方法來限制軟體執行：
 
@@ -61,7 +61,7 @@ Microsoft 受管理的桌面會與 Microsoft cybersecurity 專家共同作業原
 
 ### <a name="signer-requests"></a>簽署者要求
 
-您會告訴我們您信任的軟體廠商所提供的應用程式是由您簽署簽章 *要求*。 這樣一來，我們就會將信任資訊新增至基準應用程式控制原則，並允許任何簽入該發行者憑證的軟體都在您的裝置上執行。
+您會告訴我們您信任的軟體發行者所提供的應用程式，可供您用來歸檔 *簽署者要求*。 這樣一來，我們就會將信任資訊新增至基準應用程式控制原則，並允許任何簽入該發行者憑證的軟體都在您的裝置上執行。
 
 ## <a name="audit-and-enforced-policies"></a>審核及強制執行的原則
 

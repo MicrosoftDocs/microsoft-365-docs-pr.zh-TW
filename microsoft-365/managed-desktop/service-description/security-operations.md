@@ -1,6 +1,6 @@
 ---
 title: Microsoft 受管理電腦中的安全性作業
-description: ''
+description: 安全性作業中心提供的服務和流程
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5698e2a88adf3d2bae84a82e0e001132293e36be
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 4464c9c491af11831a3511dab60a472f1584d7f6
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847713"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840327"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的安全性作業
 

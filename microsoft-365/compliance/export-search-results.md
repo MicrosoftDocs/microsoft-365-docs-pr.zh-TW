@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 從 Microsoft 365 規範中心的內容搜尋中，將搜尋結果匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 從 SharePoint 和 OneDrive 商務網站的內容會匯出為原生 Office 檔。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09f3ed5684338616ef20036e4fded400bd106c44
-ms.sourcegitcommit: f40378013757d560d5566a11ad4e6f527c018cc4
+ms.openlocfilehash: 12c8755d4ca8b5ff97582b879c07fe103c996ecf
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/12/2021
-ms.locfileid: "49796181"
+ms.locfileid: "49799700"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -187,20 +187,7 @@ ms.locfileid: "49796181"
   
 ### <a name="export-limits"></a>匯出限制
 
-在核心 eDiscovery 案例中匯出搜尋結果時，也適用這些限制。
-
-|限制的描述|限制|
-|:-----|:-----|
-|單一內容搜尋中可匯出的資料量上限  <br/><br/> **附注：** 如果搜尋結果大於 2 TB，請考慮使用日期範圍或其他類型的篩選器來減少搜尋結果的總大小。 <br/>  |2 TB  <br/> | 
-|組織最多隻能在一天內匯出 <br/><br/> **附注：** 此限制每日會在12： 12:00 UTC 重設 <br/> |2 TB <br/> |
-|組織內可同時執行的並行匯出上限 <br/><br/> **附注：** 執行 **報告只** 會針對您的組織的總同時匯出計算。 如果有三位使用者執行每個匯出，則只能執行一個其他的匯出。 不論是匯出報表或搜尋結果，都不能執行其他匯出，直到其中一個完成為止。   <br/> |10  <br/> |
-|單一使用者可以執行的匯出上限 <br/> |3  <br/> |
-|您可以使用 Microsoft 365 規範中心的 eDiscovery 匯出工具，下載信箱搜尋結果的最大數量  <br/><br/> **附注：** 若要從100000個以上的信箱下載搜尋結果，您必須使用安全性 & 規範中心 PowerShell。 如需相關指示，請參閱 [匯出超過100000個信箱的結果](#exporting-results-from-more-than-100000-mailboxes)。 <br/> | 100,000 <br/>|
-|可匯出的 PST 檔案大小上限 <br/><br/> **附注：** 如果使用者信箱的搜尋結果大於 10 GB，則信箱的搜尋結果將會以兩個 (或多個) 個別的 PST 檔案匯出。 如果您選擇在單一 PST 檔案中匯出所有搜尋結果，當搜尋結果的總大小超過 10 GB 時，PST 檔案會 spilt 至其他 PST 檔案。 如果您想要變更此預設大小，您可以在用來匯出搜尋結果的電腦上編輯 Windows 登錄。 [在匯出 eDiscovery 搜尋結果時，請參閱變更 PST 檔案的大小](change-the-size-of-pst-files-when-exporting-results.md)。 除非單一信箱的內容超過 10 GB，否則不會將特定信箱的搜尋結果分割在多個 PST 檔案中。 如果您選擇在一個 PST 檔案中匯出搜尋結果，其中包含單一資料夾中的所有郵件，且搜尋結果大於 10 GB，則專案仍會以時間順序進行組織，所以這些專案會根據傳送日期 spilt 到其他 PST 檔案中。<br/> | 10GB <br/> |
-|將信箱和網站的搜尋結果上傳至 Microsoft 提供之 Azure 儲存位置的速率。 |每小時最多 2 GB|
-|||
-
-如需其他限制的相關資訊，請參閱 [內容搜尋限制](limits-for-content-search.md)。 
+如需匯出內容搜尋結果時限制的相關資訊，請參閱 [內容搜尋限制](limits-for-content-search.md#export-limits)中的「匯出限制」一節。
 
 ### <a name="export-reports"></a>匯出報告
   

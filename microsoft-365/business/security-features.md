@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
 description: 深入瞭解 Microsoft 365 商務版 Premium 隨附的安全性功能，協助保護電腦、電話和平板電腦上的資料。
-ms.openlocfilehash: 587d80c27f867a387c901d23f4ec05f3c5905bf6
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: b7fdd3d7fa25c23ee49ae82aa037588d8fba61a1
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843481"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840382"
 ---
 # <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 商務版安全性和合規性功能
 
@@ -61,9 +61,9 @@ Microsoft 365 商務版特優提供簡化的安全性功能，以協助保護電
     
 ## <a name="additional-security-features"></a>其他安全性功能 
 
-Microsoft 365 商務版中的高級功能可協助您保護您的公司免受網路威脅，並保護機密資訊。
+Microsoft 365 商務進階版中的進階功能可協助您保護您的企業免受網路威脅並保護敏感性資訊。
   
-- **[Microsoft Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
+- **[適用於 Office 365 的 Microsoft Defender](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)**
     
     Microsoft Defender for Office 365 可協助您的企業防禦複雜的網路釣魚和勒索軟體攻擊，其設計是為了損害員工或客戶資訊。 功能包括：
     
@@ -86,7 +86,7 @@ Microsoft 365 商務版中的高級功能可協助您保護您的公司免受網
     - 以[位置為基礎的存取權](https://docs.microsoft.com/azure/active-directory/authentication/howto-registration-mfa-sspr-combined#conditional-access-policies-for-combined-registration); 只允許來自信任的 IP 範圍或特定國家/地區的存取 
     - 需要 MFA 才能進行存取
     - 封鎖使用[舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/block-legacy-authentication)之應用程式的存取
-    - 需要應用程式 tp 使用 [Intune 應用程式保護](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+    - 要求應用程式使用 [Intune 應用程式保護](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access)
     - 自訂驗證，例如使用協力廠商提供者進行 MFA，例如，雙核。
    
     其他功能：
@@ -106,7 +106,7 @@ Microsoft 365 商務版中的高級功能可協助您保護您的公司免受網
     
 - **[敏感度標籤](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels)**
 
-   Microsoft 365 商務版 Premium 包含 [Azure 資訊保護方案 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 透過這項計畫，您可以建立 **靈敏度標籤** ，讓您在電子郵件和檔中控制敏感資訊的存取權，例如「不要轉寄」和「不要複製」控制項。 您也可以將機密資訊分類為「機密」，並指定保密資訊在公司外及公司內部共用的方式。 企業級加密易於套用至電子郵件和檔，以將資訊保密。 您也可以安裝 Office 應用程式的 Azure 資訊保護用戶端增益集。 如需詳細資訊，請參閱 [Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若為敏感度標籤，請安裝 **AzInfoProtection_UL.exe** 。
+   Microsoft 365 商務版 Premium 包含 [Azure 資訊保護方案 1](https://go.microsoft.com/fwlink/p/?linkid=871407)的所有功能。 透過這項計畫，您可以建立 **靈敏度標籤** ，讓您在電子郵件和檔中控制敏感資訊的存取權，例如「不要轉寄」和「不要複製」控制項。 您也可以將機密資訊分類為「機密」，並指定保密資訊在公司外及公司內部共用的方式。 企業級加密易於套用至電子郵件和檔，以將資訊保密。 您也可以安裝 Office 應用程式的 Azure 資訊保護用戶端增益集。 如需詳細資訊，請參閱 [Azure 資訊保護統一標籤用戶端](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)。 若為敏感度標籤，請安裝 **AzInfoProtection_UL.exe**。
 
 您可以在安全性與 &amp; 合規性中心及 Intune 系統管理中心中管理這些功能。 經過一段時間後，簡化的控制項會新增至 Microsoft 365 系統管理中心。
   

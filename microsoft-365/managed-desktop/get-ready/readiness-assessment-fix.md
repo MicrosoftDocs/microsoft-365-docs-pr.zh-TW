@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3c3c0d21ca93c0d93d17cefbc6ce630d00a16d09
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: ada6bb8ef66e3414a375a151b45d4871e306e825
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760121"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841061"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正由整備評估工具發現的問題
 
@@ -219,7 +219,7 @@ Microsoft 受管理的電腦不支援 Azure AD 組織所在的一或多個國家
 
 **諮詢**
 
-您應該準備要讓 Microsoft 受管理的桌面使用者擁有的應用程式清單。 因為這些應用程式必須透過 Intune 部署，所以請評估重新使用現有的 Intune 應用程式。 考慮使用公司入口 (請參閱在裝置和註冊狀態頁面 [上安裝 Intune 公司入口網站](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) (ESP) ，將應用程式發佈至您的使用者。 如需詳細資訊，請參閱 [Microsoft 受管理的桌面](apps.md) 和初次執行體驗中的應用程式 [與 Autopilot 和註冊狀態頁面](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)。
+您應該準備要讓 Microsoft 受管理的桌面使用者擁有的應用程式清單。 由於這些應用程式必須透過 Intune 部署，因此請評估重複使用現有的 Intune 應用程式。 考慮使用公司入口 (請參閱在裝置和註冊狀態頁面 [上安裝 Intune 公司入口網站](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) (ESP) ，將應用程式發佈至您的使用者。 如需詳細資訊，請參閱 [Microsoft 受管理的桌面](apps.md) 和初次執行體驗中的應用程式 [與 Autopilot 和註冊狀態頁面](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)。
 
 您可以要求 Microsoft 帳戶代表在 Microsoft 端點 Configuration Manager 中查詢，以識別準備好要遷移至 Intune 或需要調整的應用程式。
 
@@ -247,7 +247,7 @@ Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的
 
 **諮詢**
 
-請確定任何更新環原則您已排除現代的 **工作場所裝置-所有** Azure AD 群組。 如果您已將 Azure AD 使用者群組指派給這些原則，請確定任何更新環原則您也排除了 **新式的 Workplace-所有** 包含您的 Microsoft 受管理桌面使用者的 azure ad 群組。 如需步驟，請參閱 [在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 兩個 **新式的工作場所裝置-所有** 及 **現代的工作場所-所有** Azure AD 群組都是在您註冊 Microsoft Managed Desktop 時所建立的群組，所以您必須回到註冊後再排除此群組。
+請確定任何更新環原則您已排除現代的 **工作場所裝置-所有** Azure AD 群組。 如果您已將 Azure AD 使用者群組指派給這些原則，請確定任何更新環原則您已排除現代的 **工作場所-所有** 包含您的 Microsoft 受管理桌面使用者的 azure ad 群組。 如需步驟，請參閱 [在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 兩個 **新式的工作場所裝置-所有** 及 **現代的工作場所-所有** Azure AD 群組都是在您註冊 Microsoft Managed Desktop 時所建立的群組，所以您必須回到註冊後再排除此群組。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 設定

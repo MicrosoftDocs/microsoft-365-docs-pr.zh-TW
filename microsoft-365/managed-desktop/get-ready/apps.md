@@ -1,6 +1,6 @@
 ---
 title: Microsoft 受管理電腦中的應用程式
-description: ''
+description: 說明如何處理應用程式，包括如何封裝、部署及支援應用程式。
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: da5798b3412cb69580e5d9adc582f0ca4add1e3e
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 20d68ec007ccda82816ad2288428016019f6d4b2
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289588"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840690"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的應用程式
 
@@ -47,7 +47,7 @@ Microsoft 將為適用于企業應用程式的包含 Microsoft 365 應用程式�
 
 ## <a name="apps-you-provide"></a>您提供的應用程式
 
-當然，您可能需要許多其他應用程式供商務運作使用。 使用 Microsoft Intune 的部署管線，只可將這些裝置部署至 Microsoft 受管理的桌面裝置。 若應用程式需要，您可以將其封裝在廠商 (，而這可能是非 Microsoft 轉銷商或 Microsoft 諮詢服務 (MCS) # A3，或者如果您有這種方式，您可以自行打包。 然後，您可以將這些套件新增至 Microsoft 受管理的桌面入口網站，並將它們指派給 Azure Active Directory 群組，以觸發部署。 
+您可能需要其他應用程式，才能進行商務作業。 這些應用程式僅能使用 Microsoft Intune 的部署管線部署至 Microsoft 受管理的桌面裝置。 若應用程式需要，您可以將其封裝在廠商 (，而這可能是非 Microsoft 轉銷商或 Microsoft 諮詢服務 (MCS) # A3，或者如果您有這種方式，您可以自行打包。 然後，您可以將這些套件新增至 Microsoft 受管理的桌面入口網站，並將它們指派給 Azure Active Directory 群組，以觸發部署。 
 
 如果您目前使用 Microsoft 端點設定管理員部署應用程式，則 Microsoft 受管理的桌面可以提供查詢來評估您的應用程式，並探索哪些專案準備好可遷移至 Microsoft Intune，以及哪些可能需要進行調整。
 
@@ -56,12 +56,12 @@ Microsoft 將為適用于企業應用程式的包含 Microsoft 365 應用程式�
 查看您的應用程式，檢查：
 
 - 沒有任何應用程式被禁止或具有限制的行為，如 [Microsoft Managed Desktop app 需求](https://aka.ms/app-req)所述。
-- 應用程式必須準備好由 Microsoft Intune 進行管理。 如需相關資訊，請參閱 [Windows 10 app deployment Using Microsoft intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) 及 [新增應用程式至 Microsoft intune](https://docs.microsoft.com/intune/apps-add)。
+- 應用程式必須準備好由 Microsoft Intune 進行管理。 如需本主題的詳細資訊，請參閱 [使用 Microsoft intune 的 Windows 10 應用程式部署](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) 及 [新增應用程式至 Microsoft intune](https://docs.microsoft.com/intune/apps-add)。
 - 其他預先打包需求，例如提供授權金鑰、授權條款的合約，以及預先設定的伺服器連線。
 
 ### <a name="decide-how-to-package-apps"></a>決定如何封裝應用程式
 
-有些獨立的軟體廠商可能需要先封裝應用程式，才能進行集中部署。 「打包」表示應用程式的安裝程式是以授權金鑰、遠端伺服器位置或桌面快捷方式等設定來設定，以便在後臺安裝應用程式。
+有些獨立的軟體發行者可能需要先打包應用程式，才能進行集中部署。 「打包」表示應用程式的安裝程式是以授權金鑰、遠端伺服器位置或桌面快捷方式等設定來設定，以便在後臺安裝應用程式。
 
 有三個可讓您的應用程式封裝的選項： 
 
@@ -69,10 +69,6 @@ Microsoft 將為適用于企業應用程式的包含 Microsoft 365 應用程式�
 - 您可以自行封裝應用程式
 - 您可以與非 Microsoft 廠商搭配使用
 - 您可以接洽 MCS 以封裝應用程式。 請與您的 Microsoft 客戶代表合作。 如需詳細資訊，請參閱使用 [Microsoft 諮詢服務](apps-MCS.md)。
-
-
-
-
 
 
 

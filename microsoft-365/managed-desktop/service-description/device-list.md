@@ -1,6 +1,6 @@
 ---
 title: Microsoft 受管理的桌面裝置
-description: 本主題列出針對 Microsoft Managed Desktop 核准之裝置的規格。
+description: 本文列出已核准 Microsoft 受管理桌面之裝置的規格。
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e858ae1fc564fdcacbe181930ae1489d131965e7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: fff44098e3da17c68e4347fb14690945154edfdb
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659675"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841184"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的桌面裝置 
 
@@ -23,7 +23,7 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文概
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-若要在 Microsoft Managed Desktop 中註冊，裝置必須是下列其中一種模型，並符合或超過所列的 RAM、處理器系列和磁碟空間規格。 
+若要在 Microsoft 受管理的電腦中註冊，裝置必須是下列其中一種型號，且符合或超過所列的 RAM、處理器系列和磁碟空間規格。 
 
 此處的裝置連結只供您參考。 如果您想要定購裝置，請與您的商業管道連絡人合作，以確保您選擇正確的設定。 在此表格中，「封存 *日期* 」是這些模型會受到較短 Microsoft 受管理桌面服務生命週期的日期;在此日期之後的任何這類裝置架，將不會從 Microsoft 受管理的電腦取得全三年的支援期限。 已封存裝置也會列在 [Microsoft 受管理的桌面封存裝置](archived-device-list.md)中。 「*退休日期*」是 Microsoft 受管理的桌面完全不會支援此模型的日期。 在該日期，此模型的所有已註冊裝置都會從 Microsoft 受管理的桌面移除，不論已註冊。
 
@@ -66,15 +66,15 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文概
 
 | Model    | 最低規格  | 其他需求    | 封存日期   | 退休日期   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8GB RAM | 無 | 2022年5月21日 | 2027年5月21日 |
-| [曲面走向2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB/Intel 核心 M3/8GB RAM | 無 | 2022年5月21日 | 2027年5月21日 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/Intel i5/8 GB RAM | 無 | 2022年5月21日 | 2027年5月21日 |
+| [曲面走向2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB/Intel 核心 M3/8 GB RAM | 無 | 2022年5月21日 | 2027年5月21日 |
 | [Surface 膝上型電腦旅途](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 12，2022 | Oct 12，2025 |
 | [Surface 膝上型電腦3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |
 | [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/Intel i5/8 GB RAM | 無 | Oct 22，2021 | Oct 22，2024 |
 
 此外，裝置也必須符合下列準則：     
 
-- 如果裝置需求中列出特定的 SKU，請務必在訂購時使用該 SKU。 這可確保裝置符合 Microsoft 受管理的桌面軟體需求。 
+- 如果裝置需求中列出特定的 SKU，請務必在訂購時使用該 SKU。 這樣做可確保裝置符合 Microsoft 受管理的桌面軟體需求。 
 - 尚未完成 Windows 第一次執行體驗。
 - 使用 [Device Registration](https://aka.ms/mmddrhelp) 功能向 Microsoft Managed Desktop 註冊
 
@@ -84,7 +84,7 @@ Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文概
 >-  針對多個不同的工作負載使用一個裝置。
 >- 使用多個監視器。
 
-**其他協助**
+**更多説明**
 
 這些資源可協助您回答可能有關特定裝置的問題：
 

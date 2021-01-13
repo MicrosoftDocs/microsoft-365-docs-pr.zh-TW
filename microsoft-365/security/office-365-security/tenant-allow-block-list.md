@@ -1,5 +1,5 @@
 ---
-title: 在承租人允許/封鎖清單中管理您的允許和封鎖的 URLs
+title: 在承租人允許/封鎖清單中管理您的允許和封鎖
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,15 +14,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 系統管理員可以瞭解如何在安全性 & 合規性中心的承租人允許/封鎖清單中設定 URL 專案。
-ms.openlocfilehash: f60e2f29bf9b880e9d2247fa59554300ae348a03
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+description: 系統管理員可以在安全性入口網站中瞭解如何在承租人允許/封鎖清單中設定允許和封鎖。
+ms.openlocfilehash: c789b09224d00f5bb41ae29d6d2a6efa64d23a8d
+ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683208"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "49799710"
 ---
-# <a name="manage-urls-in-the-tenant-allowblock-list"></a>管理租使用戶允許/封鎖清單中的 URL
+# <a name="managing-allows-and-blocks-in-the-tenant-allowblock-list"></a>在承租人允許/封鎖清單中管理允許和封鎖
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -97,7 +97,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
 按一下下列欄標題，以遞增或遞減順序排序：
 
-- **Value**
+- **值**
 - **動作**： **封鎖** 或 **允許**。
 - **上次更新日期**
 - **有效期**
@@ -145,7 +145,7 @@ Security & 合規性中心內的承租人 Allow/封鎖清單可讓您手動覆�
 
    - **選用附注**：輸入專案的描述性文字。
 
-5. 完成後，按一下 [儲存]。
+5. 完成後，請按一下 **[儲存]**。
 
 ## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>使用安全性 & 規範中心移除承租人允許/封鎖清單中的專案
 

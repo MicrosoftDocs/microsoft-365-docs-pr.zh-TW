@@ -1,6 +1,6 @@
 ---
 title: Microsoft 受管理電腦中的安全性技術
-description: ''
+description: 用於裝置安全性、身分識別與存取管理、網路安全性和資訊安全性的技術
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -8,18 +8,18 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e69656e13cd9a300cd56bdd5db7703f2387d23d4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 5076ddca6053adc7cebb9599c8d82a42c7ab5a63
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846201"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840910"
 ---
 # <a name="security-technologies-in-microsoft-managed-desktop"></a>Microsoft 受管理電腦中的安全性技術
 
 <!--Security, also Onboarding doc: data handling/store, privileged account access -->
 
-Microsoft 受管理的桌面使用數種 Microsoft 技術來協助保護受管理的裝置和資料。 此外，Microsoft 受管理的桌面安全性運作中心會使用各種 [處理](security-operations.md) 程式與這些技術。
+Microsoft 受管理的桌面使用數種 Microsoft 技術來協助保護受管理的裝置和資料。 此外，Microsoft 受管理的桌面安全性運作中心也會搭配這些技術使用不同的 [處理](security-operations.md) 程式。
 
 特別是： 
 
@@ -45,14 +45,14 @@ Service | 描述
 
 
 
-## <a name="identity-and-access-management"></a>身分識別和存取管理
+## <a name="identity-and-access-management"></a>身分識別與存取管理
 
 身分識別和存取管理可保護公司資產和業務關鍵型資料。 Microsoft Managed Desktop 會設定裝置，以確保與 Azure Active Directory (Azure AD) Managed identity 安全搭配使用。 客戶在其 Azure AD 租使用者中維護正確資訊的責任。 
 
 Service | 描述
 --- | ---
 生物識別驗證 |  Windows Hello 允許使用者利用其面孔或 PIN 碼登入，使密碼難於忘記或盜取。 客戶負責針對其內部部署 Active Directory 實施必要先決條件，以在混合式設定中使用此服務。 如需詳細資訊，請參閱 [Windows Hello。](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
-標準使用者許可權 |  若要保護系統並使其更安全，將會指派標準使用者許可權給使用者。 這會指派為 Windows Autopilot 全新體驗的一部分。
+標準使用者許可權 |  若要保護系統並使其更安全，將會指派標準使用者許可權給使用者。 此許可權會指派為 Windows Autopilot 全新體驗的一部分。
 
 
 
@@ -62,7 +62,7 @@ Service | 描述
 
 Service | 描述
 --- | ---
-VPN | 客戶擁有其 VPN 基礎結構，以確保有限的公司資源可以公開于內部網路以外。<br><br>最低需求： Microsoft 受管理的桌面需要 Windows 10 相容且支援的 VPN 解決方案。 如果您的組織需要 VPN 解決方案，它必須支援 Windows 10，並且可透過 Intune 打包及部署。 如需詳細資訊，請與您的軟體發行者聯繫。<br><br>建議：<br>-Microsoft 建議使用可輕鬆透過 Intune 部署的新式 VPN 解決方案，以推送 VPN 設定檔。 這為存取公司網路提供了永不間斷、流暢、可靠且安全的方式。 如需詳細資訊，請參閱 [[Intune 中的 VPN 設定]](https://docs.microsoft.com/intune/vpn-settings-configure)。<br>-使用 Microsoft 受管理的桌面時，Microsoft 不建議使用-厚 VPN 用戶端或舊版 VPN 用戶端，因為這會影響使用者環境。<br>-Microsoft 建議您不經 VPN 直接前往網際網路傳送傳出的 web 流量，以避免任何效能問題。<br>-理想情況下，Microsoft 建議使用 Azure Active Directory 應用程式 Proxy，而不是 VPN。
+VPN | 客戶擁有其 VPN 基礎結構，以確保有限的公司資源可以公開于內部網路以外。<br><br>最低需求： Microsoft 受管理的桌面需要 Windows 10 相容且支援的 VPN 解決方案。 如果您的組織需要 VPN 解決方案，它必須支援 Windows 10，並且可透過 Intune 打包及部署。 如需詳細資訊，請與您的軟體發行者聯繫。<br><br>建議：<br>-Microsoft 建議使用可輕鬆透過 Intune 部署的新式 VPN 解決方案，以推送 VPN 設定檔。 這種方法提供一種永不間斷、流暢、可靠且安全的方法來存取公司網路。 如需詳細資訊，請參閱 [[Intune 中的 VPN 設定]](https://docs.microsoft.com/intune/vpn-settings-configure)。<br>-使用 Microsoft Managed Desktop 時，Microsoft 不建議使用厚 VPN 用戶端或舊版 VPN 用戶端，因為這會影響使用者環境。<br>-Microsoft 建議您不經 VPN 直接前往網際網路傳送傳出的 web 流量，以避免任何效能問題。<br>-理想情況下，Microsoft 建議使用 Azure Active Directory 應用程式 Proxy，而不是 VPN。
 
 
 ## <a name="information-security"></a>資訊安全性

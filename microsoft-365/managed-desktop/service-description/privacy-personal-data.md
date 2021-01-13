@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 8412c10416a4a131129eebd20d1b4f01228afaf3
-ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
+ms.openlocfilehash: 7005e09d5a3df158569e132d2954f3b9a0ebf371
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49586682"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840478"
 ---
 # <a name="privacy-and-personal-data"></a>隱私權和個人資料
 
@@ -30,7 +30,7 @@ Microsoft 受管理的桌面不會使用任何收集的個人資料，做為進�
 Microsoft 受管理的桌面不會自行收集資料，以提供其服務 (，但 [IT 系統管理員連絡人資訊](#it-admin-contact-information)除外。 相反地，Microsoft 受管理的桌面會重複使用其他來源（如 Windows 和 Microsoft Intune）已收集的資料。 Microsoft 受管理的桌面使用這些服務從已註冊的裝置收集的資料：
 
 - Microsoft 受管理的桌面所管理之裝置的 Windows 診斷資料會傳送至 Microsoft 的 Windows 診斷資料儲存區。
-- Microsoft 受管理的桌上型電腦使用 [現代管理](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) 來管理已註冊的裝置。 在此情況下，裝置必須在租使用者的 Azure Active Directory 中註冊。
+- Microsoft 受管理的桌上型電腦使用 [現代管理](https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/) 來管理已註冊的裝置。 在「新式管理」的一部分中，裝置必須在租使用者的 Azure Active Directory 中註冊。
 - 若要將其高度優化和安全的設定散佈至註冊的裝置，Microsoft 受管理的桌面會使用 Microsoft Intune。
 - Microsoft 受管理的桌面對使用該服務的客戶，使用 Microsoft Defender Advanced Thread Protection 中的安全性智慧資料。
 
@@ -61,7 +61,7 @@ Microsoft 受管理的桌面會使用下列資料：
 |Azure Active Directory 資料     | 用於租使用者系統管理員所建立的報表，可在 Microsoft Managed Desktop Admin 入口網站中使用。        |
 |Intune 資料     | 用於租使用者系統管理員所建立的報表，可在 Microsoft Managed Desktop Admin 入口網站中使用。        |
 |適用於端點的 Microsoft Defender     |  用於解決 Microsoft Managed Desktop 的安全性作業中心在已註冊裝置上偵測到的安全性威脅 (SOC) 。  |
-|Windows 診斷資料     |用來判斷受管理裝置的更新狀態，以及提供並改善 Microsoft 受管理的電腦即服務 (ITaaS) 產品。         |
+|Windows 診斷資料     |用來判斷受管理裝置的更新狀態，以及提供並改善 Microsoft 受管理的電腦隨 (ITaaS) 提供的服務。         |
 |系統管理員連絡人資料     | 由 Microsoft Managed Desktop 用來與租使用者系統管理員通訊。        |
 
 

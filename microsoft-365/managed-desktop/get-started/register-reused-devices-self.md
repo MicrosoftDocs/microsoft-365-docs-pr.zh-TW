@@ -1,27 +1,27 @@
 ---
 title: 自行註冊現有裝置
-description: 登錄已重新使用的裝置，使其可由 Microsoft 受管理的電腦進行管理
+description: 登錄您可能已經使用的裝置，使其可由 Microsoft 受管理的電腦進行管理
 ms.prod: w10
 author: jaimeo
 f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 1ad83dbf323e431e1694b408e09e581ff5b76348
-ms.sourcegitcommit: e9f32675061cd1cf4a3e2dada393e10d7c552efe
+ms.openlocfilehash: c2ba687b38f1de4d2ed09b0bd690e02b43f15f8d
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48279554"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840512"
 ---
 # <a name="register-existing-devices-yourself"></a>自行註冊現有裝置
 
 >[!NOTE]
->本主題說明重新使用已有的裝置的步驟，並在 Microsoft 受管理的電腦中註冊這些裝置。 如果您正在使用全新的裝置，請依照直接在 [Microsoft 管理的桌面中註冊新裝置](register-devices-self.md) 中的步驟進行。
+>本主題說明您重複使用已有裝置的步驟，並將其註冊至 Microsoft 受管理的電腦。 如果您正在使用全新的裝置，請依照直接在 [Microsoft 管理的桌面中註冊新裝置](register-devices-self.md) 中的步驟進行。
 
 合作夥伴的程式會記錄在協力廠商，以 [供協力廠商註冊裝置](register-devices-partner.md)。
 
-Microsoft 受管理的電腦可搭配全新的裝置運作，或您可重複使用您可能已經擁有的裝置 (這需要您重新製作其映像)。 您可以在 Microsoft 的端點管理員入口網站中使用 Microsoft 受管理的桌上型電腦註冊裝置。
+Microsoft 受管理的桌上型電腦可以與全新裝置搭配運作，也可以重複使用您已有 (的裝置，而這些裝置將需要) 重新建立映射。 您可以在 Microsoft 的端點管理員入口網站中使用 Microsoft 受管理的桌上型電腦註冊裝置。
 
 ## <a name="prepare-to-register-existing-devices"></a>準備註冊現有的裝置
 
@@ -55,8 +55,8 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 1. 在 Configuration Manager 主控台中，選取 [ **監視**]。 
 2. 在 [監視] 工作區中，展開 [ **報告** ] 節點、[ **報告**]，然後選取 [ **硬體-一般** ] 節點。 
 3. 執行報告、 **Windows Autopilot 裝置資訊**，以及查看結果。
-4. 在報表檢視器中，選取 [ **匯出** ] 圖示，然後選擇 **CSV (逗點分隔) ** ] 選項。
-5. 儲存檔案之後，您必須將結果篩選為您計畫向 Microsoft Managed Desktop 註冊的裝置，並將資料上傳至 Microsoft Managed Desktop。 開啟 Microsoft 端點管理員並流覽至 [ **裝置** ] 功能表，然後尋找 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 選取 [ **+ 註冊裝置** ]，以即時開啟新裝置。
+4. 在報表檢視器中，選取 [ **匯出** ] 圖示，然後選擇 **CSV (逗點分隔)** ] 選項。
+5. 儲存檔案之後，您必須將結果篩選為您計畫向 Microsoft Managed Desktop 註冊的裝置，並將資料上傳至 Microsoft Managed Desktop。 開啟 Microsoft 端點管理員並流覽至 [ **裝置** ] 功能表，然後尋找 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 選取 [ **+ 註冊裝置**]，這會開啟飛入以註冊新裝置。
 
 
 如需詳細資訊，請參閱 [使用系統管理入口網站的註冊裝置](#register-devices-by-using-the-admin-portal) 。
@@ -64,7 +64,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 #### <a name="active-directory-powershell-script-method"></a>Active Directory PowerShell script 方法
 
-在 Active Directory 環境中，您可以使用 `Get-WindowsAutoPilotInfo` PowerShell Cmdlet，以遠端從 Active Directory 群組中的裝置，使用 WinRM 來收集資訊。 您也可以使用 `Get-AD Computer` Cmdlet，取得目錄中所含特定硬體模型名稱的篩選結果。 若要這麼做，請先確認這些必要條件，然後繼續執行下列步驟：
+在 Active Directory 環境中，您可以使用 `Get-WindowsAutoPilotInfo` PowerShell Cmdlet，以遠端從 Active Directory 群組中的裝置，使用 WinRM 來收集資訊。 您也可以使用 `Get-AD Computer` Cmdlet，取得目錄中所含特定硬體模型名稱的篩選結果。 繼續之前，請先確認這些必要條件，然後繼續執行下列步驟：
 
 - 已啟用 WinRM。
 - 您想要註冊的裝置會在網路 (上使用，也就是說，它們並未中斷連線或關閉) 。
@@ -73,7 +73,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
     1. 開啟 [ **Windows Defender 防火牆** ] 控制台，然後選取 [ **允許透過 Windows defender 防火牆的應用程式或功能**]。
     
-    2. 找到 **Windows Management Instrumentation (WMI) ** 在清單中，啟用 [ **私人] 和 [公用**]，然後選取 **[確定]**。
+    2. 找到 **Windows Management Instrumentation (WMI)** 在清單中，啟用 [ **私人] 和 [公用**]，然後選取 **[確定]**。
 
 1.  以系統管理權限開啟 PowerShell 提示字元。
 
@@ -90,9 +90,9 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
     Set-ExecutionPolicy powershell -ExecutionPolicy Unrestricted Get-WindowsAutoPilotInfo.ps1 -credential Domainname\<accountname> -Name Machine1,Machine2,Machine3
     ```
 
-3. 存取任何可能具有裝置專案的目錄。 從 *所有* 目錄中移除每個裝置的專案，包括 Windows Server Active Directory 網域服務和 Azure Active directory。 請注意，此移除動作可能需要數小時才能完成處理。
+3. 存取任何可能具有裝置專案的目錄。 從 *所有* 目錄中移除每個裝置的專案，包括 Windows Server Active Directory 網域服務和 Azure Active directory。 請注意，移除動作可能需要數小時才能完成處理。
 
-4. 存取管理服務，其中可能有裝置的專案。 從 *所有* 管理服務（包括 Microsoft Endpoint Configuration Manager、Microsoft Intune 及 Windows Autopilot）中移除每個裝置的專案。 請注意，此移除動作可能需要數小時才能完成處理。
+4. 存取管理服務，其中可能有裝置的專案。 從 *所有* 管理服務（包括 Microsoft Endpoint Configuration Manager、Microsoft Intune 及 Windows Autopilot）中移除每個裝置的專案。 請注意，移除動作可能需要數小時才能完成處理。
 
 現在您可以繼續 [註冊裝置](#register-devices-by-using-the-admin-portal)。
 
@@ -108,7 +108,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 1. 在您要註冊的裝置以外的裝置上，插入 USB 磁碟機。
 2. 以系統管理權限開啟 PowerShell 提示字元。
 3. 執行 `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. 開啟您要註冊的裝置，但*請勿開始設定體驗*。 如果您不小心開始設定體驗，則必須重設裝置或重新製作其映像。
+4. 開啟您要註冊的裝置，但 *請勿開始設定體驗*。 如果您不小心開始設定體驗，則必須重設裝置或重新製作其映像。
 5. 插入 USB 磁碟機，然後按 SHIFT + F10。
 6. 以系統管理權限開啟 PowerShell 提示字元，然後執行 `cd <pathToUsb>`。
 7. 執行 `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
@@ -123,7 +123,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 ### <a name="merge-hash-data"></a>合併雜湊資料
 
-如果您是由手動 PowerShell 或快閃記憶體磁片磁碟機方法收集硬體雜湊資料，您現在必須將 CSV 檔案中的資料組合成單一檔案，才能完成註冊。 以下是讓註冊變輕鬆的範例 PowerShell 指令碼：
+如果您是由手動 PowerShell 或快閃記憶體磁片磁碟機方法收集硬體雜湊資料，您現在必須將 CSV 檔案中的資料組合成單一檔案，才能完成註冊。 以下是可讓您輕鬆使用 PowerShell 腳本的範例：
 
 ```powershell
 Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv
@@ -134,7 +134,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
 
-在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的左導覽窗格中，選取 [ **裝置** ]。 尋找功能表中的 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 在 [Microsoft 受管理的電腦裝置] 工作區中，選取 [ **+ 註冊裝置** ]，以即時註冊新裝置。
+在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的左導覽窗格中，選取 [ **裝置** ]。 尋找功能表中的 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 在 [Microsoft 受管理的桌面裝置] 工作區中，選取 [ **+ 註冊裝置**]，這會開啟飛入以註冊新裝置。
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -144,9 +144,9 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 
 請遵循下列步驟：
 
-1. 在 [檔案上傳]**** 中，提供您先前建立的 CSV 檔案路徑。
+1. 在 [檔案上傳] 中，提供您先前建立的 CSV 檔案路徑。
 
-1. 選取 [註冊裝置]****。 系統會將裝置新增至 [裝置] 刀鋒視窗**** 上標示為 [註冊擱置]**** 的裝置清單。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
+1. 選取 [註冊裝置]。 系統會將裝置新增至 [裝置] 刀鋒視窗上標示為 [註冊擱置]的裝置清單。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
 
 
 您可以在主頁面上監視裝置註冊的進度。 其回報的可能狀態包括：
@@ -155,7 +155,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 |---------------|-------------|
 | 註冊擱置 | 尚未完成註冊。 稍後再回頭檢查。 |
 | 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[針對裝置註冊進行疑難排解](#troubleshooting-device-registration)。 |
-| 使用者就緒 | 註冊成功，裝置現在可以傳遞給使用者。 Microsoft 受管理的電腦將會逐步引導使用者完成首次設定，因此您不需要再做任何進一步的準備。 |
+| 使用者就緒 | 註冊成功，裝置現在可以傳遞給使用者。 Microsoft 受管理的桌面會透過初次設定來引導他們，所以您不需要做進一步的準備。 |
 | 作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 這也表示使用者經常使用該裝置。 |
 | 非作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 不過，使用者最近尚未使用裝置 (在過去 7 天內)。  | 
 

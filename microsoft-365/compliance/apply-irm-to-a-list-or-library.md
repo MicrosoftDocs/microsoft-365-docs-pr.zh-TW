@@ -21,12 +21,12 @@ ms.collection:
 - SPO_Content
 description: 您可以使用資訊版權管理 (IRM) ，以協助控制和保護從清單或文件庫中下載的檔案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0c61b7c6f13208b6c017b5ed65c667203abade42
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 5b0b541619e7bd969072755eacf103d53da6fc6a
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663098"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840524"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>將資訊版權管理 (IRM) 套用至清單或文件庫
 
@@ -73,7 +73,7 @@ ms.locfileid: "49663098"
 |如果您想要限制對內容的存取一段指定的時間，請選取這個選項。 如果您選取此選項，則使用者的發行授權會在指定的天數後到期，並且需要人員傳回伺服器以驗證其認證，並下載新的副本。|選取 [ **下載後，檔訪問權力會在這些天數後到期 (1-365)** ] 核取方塊，然後指定您想要的檔可供查看的天數。|
 | 防止人員將不支援 IRM 的檔上傳至此清單或文件庫。 如果您選取此選項，則使用者將無法上傳下列任何檔案類型：所有前端網頁伺服器上都沒有安裝對應的 IRM 保護程式的檔案類型。 SharePoint Server 2010 的檔案類型無法解密。 在另一個程式中受 IRM 保護的檔案類型。|選取 [ **不允許使用者上傳不支援 IRM 的檔** ] 核取方塊。|
 |在特定日期移除此清單或文件庫的限制許可權。|選取 [ **停止限制存取程式庫** ] 核取方塊，然後選取您想要的日期。|
-|控制為開啟檔授權之程式快取認證的間隔。|選取 [ **使用者必須使用此間隔驗證其認證] (天)** ] 核取方塊，然後輸入以天數為單位的快取身分單位。|
+|控制為開啟檔授權之程式快取認證的間隔。 只有 Microsoft global cloud 支援此設定。 在全國雲端部署中無法使用此設定。|選取 [ **使用者必須使用此間隔驗證其認證] (天)** ] 核取方塊，然後輸入以天數為單位的快取身分單位。|
 |允許群組保護，讓使用者可以與相同群組的成員共用。|選取 [ **允許群組保護**]，然後輸入群組的共用名稱稱。|
 
 8. 選取您想要的選項之後，請選取 **[確定]**。
@@ -121,8 +121,6 @@ IRM 無法保護下列專案中的限制內容：
 - 使用協力廠商的螢幕捕捉程式進行複製
     
 - 透過使用協力廠商的畫面捕獲程式或複製和貼上動作) ，將內容中繼資料複製 (欄值
-    
-[將資訊版權管理套用至清單或文件庫](https://support.office.com/article/6714cfe3-ef39-43b0-bb65-a887726bb63c)
   
 ## <a name="how-irm-works-for-lists-and-libraries"></a>IRM 對於清單和文件庫的運作方式
 <a name="__toc256598178"> </a>

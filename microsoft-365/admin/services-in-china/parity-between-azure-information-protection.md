@@ -4,6 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: skjerland
+ms.reviewer: arthurj
 manager: scotv
 audience: Admin
 ms.topic: overview
@@ -18,20 +19,20 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: 深入瞭解 Office 365 所運作的 Azure 資訊保護，以及如何在中國為客戶設定它。
+description: 深入瞭解 Office 365 運作的 Azure 資訊保護 (AIP) ，以及如何為中國的客戶設定該功能。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 7be40466c43a49cf51a2a2c1c273cef035bee831
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 50269749b5f4e544263f790ec9c7e4474af57219
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519338"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840298"
 ---
 # <a name="parity-between-azure-information-protection-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>由世紀和商業版產品運作之 Office 365 的 Azure 資訊保護之間的奇偶性
 
-雖然我們的目標是將所有商業功能和功能提供給中國客戶的 Azure 資訊保護，以供由世紀所運作的 Office 365 使用，但我們仍需要反白顯示某些功能。
+雖然我們的目標是將所有商業功能和功能提供給中國的客戶，但其 Azure 資訊保護 (AIP) 適用于由世紀所運作的 Office 365，但仍有一些遺漏的功能，我們想要反白。
 
-下列清單包含在由世紀運作的 Office 365 Azure 資訊保護之間的現有中斷（從7月2019日起）：
+下列清單包含在由世紀運作之 Office 365 之 Azure 資訊保護之間的現有缺口，以及從年 1 2021 月的商業產品方案：
 
 - 只有 Microsoft 365 Apps for enterprise (組建11731.10000 或更新) 版本，才能支援資訊版權管理 (IRM) 。 Office 2010、Office 2013 及其他 Office 2016 版本都不受支援。
 
@@ -44,6 +45,8 @@ ms.locfileid: "49519338"
 - 具有 SharePoint (IRM 保護的網站與文件庫) 的 IRM 目前無法使用。
   
 - 目前無法使用 AD RMS 的行動裝置分機。
+
+- Azure 中國的世紀不支援行動 [檢視器](/azure/information-protection/rms-client/mobile-app-faq) 。
 
 ## <a name="configuring-azure-information-protection-for-customers-in-china"></a>為中國的客戶設定 Azure 資訊保護
 
@@ -85,10 +88,53 @@ ms.locfileid: "49519338"
 
 ### <a name="dns-configuration-for-encryption-mac-ios-android"></a>加密 (Mac、iOS、Android) 的 DNS 設定
 
-- 登入您的 DNS 提供者，流覽至網域的 DNS 設定，然後新增 SRV 記錄。
-  - Service = `_rmsdisco`
-  - Protocol = `_http`
-  - 名稱 = `_tcp`
-  - Target = `api.aadrm.cn`
-  - 埠 = `80`
-  - Priority，權數，Seconds，TTL = 預設值
+登入您的 DNS 提供者，流覽至網域的 DNS 設定，然後新增 SRV 記錄。
+
+- Service = `_rmsdisco`
+- Protocol = `_http`
+- 名稱 = `_tcp`
+- Target = `api.aadrm.cn`
+- 埠 = `80`
+- Priority，權數，Seconds，TTL = 預設值
+
+### <a name="aip-client-configuration"></a>AIP 用戶端設定
+
+您可以從 [Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=53018)下載統一 AIP 用戶端。
+
+如需詳細資訊，請參閱：
+
+- [Azure 資訊保護檔](/azure/information-protection/)
+- [AIP 版本歷程記錄與支援原則](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
+- [AIP 系統需求](/azure/information-protection/requirements)
+- [AIP 快速入門：部署 AIP 用戶端](/azure/information-protection/quickstart-deploy-client)
+- [AIP 管理員指南](/azure/information-protection/rms-client/clientv2-admin-guide)
+- [AIP 使用者指南](/azure/information-protection/rms-client/clientv2-user-guide)
+- [深入瞭解 Microsoft 365 敏感度標籤](/microsoft-365/compliance/sensitivity-labels)
+
+### <a name="aip-apps-configuration-unified-labeling-client-only"></a>AIP apps configuration (僅限整合標籤用戶端) 
+
+針對整合的標籤解決方案，Windows 上的 AIP 應用程式需要下列登錄機碼，將其指向適用于 Azure 中國的正確以及主權雲端：
+
+- Registry 節點 = `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP`
+- 名稱 = `CloudEnvType`
+- 值 = `6` (預設值 = 0) 
+- Type = `REG_DWORD`
+
+> [!IMPORTANT]
+> 在卸載後，請確定您沒有刪除登錄機碼。 若機碼為空、不正確或不存在，則該功能將會以預設值 (預設值 = 0 （適用于商業性雲端) ）。 若機碼為空或不正確，則列印錯誤也會新增至記錄檔。
+
+### <a name="manage-azure-information-protection-content-scan-jobs"></a>管理 Azure 資訊保護內容掃描工作
+
+若要使用 Azure 中國掃描器伺服器管理 Azure 資訊保護內容掃描工作，請使用下列 Cmdlet，而不是 Azure 入口網站：<br><br>
+
+| 指令程式 | 描述 |
+|--|--|
+| [載入 AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | 將新的存放庫加入至內容掃描工作。 |
+| [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | 取得內容掃描工作的詳細資料。 |
+| [AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | 取得針對內容掃描工作定義之存放庫的詳細資料。 |
+| [Remove-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | 會刪除您的內容掃描工作。 |
+| [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | 從內容掃描工作中移除存放庫。 |
+| [AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | 定義內容掃描工作的設定。 |
+| [AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | 定義內容掃描工作中現有存放庫的設定。 |
+
+如需詳細資訊，請參閱 [使用 PowerShell 管理內容掃描工作](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)。

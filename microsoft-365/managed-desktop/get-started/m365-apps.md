@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 767489ba9f9ac63bc1a2d8b4999b6634335b1aef
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 98995084fb7de9ecb434b70b5d38793a20675f19
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547743"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840338"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps 企業版
 
@@ -27,12 +27,12 @@ Microsoft 受管理的桌面機，可確保在所有 [程式裝置](../service-d
 - Excel
 - PowerPoint
 - Outlook
-- Publisher
+- 發行者
 - Access
 - 商務用 Skype
 - OneNote
 
-這種方法會將網路影響降至最低，並確保使用者在收到其裝置時可以立即生產力。 然後，我們會將其他原則部署至受管理的裝置，以設定要使用的應用程式。
+這種方法會將網路影響降至最低，並確保使用者在收到其裝置時可以立即生產力。 然後，我們會將更多原則部署到受管理的裝置，以設定要使用的應用程式。
 
 > [!NOTE]
 > Microsoft 團隊會獨立于適用于企業的 Microsoft 365 應用程式進行部署，而且不會包含在基底影像中。 
@@ -51,8 +51,8 @@ Microsoft 365 應用程式已設定為在 [每月的 Enterprise 通道](https://
 
 Microsoft 受管理的桌面 staggers 每個版本，以找出您環境中的任何潛在問題。 從 Microsoft 365 應用程式產品群組發行的28天后，我們會完成首展。 Microsoft 受管理的桌面排程將更新版本更新成不同的群組，允許驗證和測試的時間如下： 
 
-- 測試：0天
-- 第一：0天
+- 測試：零天
+- 第一：零天
 - Fast：7天
 - 寬：21天
 
@@ -66,7 +66,7 @@ Microsoft 受管理的桌面會設定裝置的7天 [更新期限](https://docs.m
 
 ### <a name="delivery-optimization"></a>傳遞優化
 
-傳遞優化是 Windows 10 中可用的對等發佈技術。 它可讓裝置共用從 Microsoft 透過網際網路下載之裝置的內容，例如更新。 因為裝置可以從其本機網路上的另一個裝置取得更新的某些部分，而不是完全從 Microsoft 下載更新，所以這樣可協助減少網路頻寬。
+傳遞優化是 Windows 10 中可用的對等發佈技術。 它可讓裝置共用從 Microsoft 透過網際網路下載之裝置的內容，例如更新。 因為裝置可以從其本機網路上的另一個裝置取得更新的某些部分，而不是完全從 Microsoft 下載更新，所以使用它可協助減少網路頻寬。
 
 預設會在執行 Windows 10 企業版或 Windows 10 教育版的裝置上啟用[傳遞優化](https://docs.microsoft.com/deployoffice/delivery-optimization)。 
 
@@ -88,14 +88,14 @@ Microsoft 受管理的桌面維護受管理裝置的所有 [更新設定](https:
 
 **預設值**：7天
 
-**UpdateDeadline**原則是用來設定使用者在裝置上強制執行更新之前所用的寬限期。 此期限原則也會觸發 [通知](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) 給使用者，以通知他們其裝置所需的變更。  
+**UpdateDeadline** 原則是用來設定使用者在裝置上強制執行更新之前所用的寬限期。 此期限原則也會觸發 [通知](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) 給使用者，以通知他們其裝置所需的變更。  
 
 ### <a name="defer-updates-on-a-device-for-a-period"></a>推遲裝置上的更新時間
 
 針對每個更新管理裝置群組，這項原則的設定會有所不同，Microsoft 受管理的桌上型電腦必須符合其更新目標：  
 
-- 測試：0天
-- 第一：0天
+- 測試：零天
+- 第一：零天
 - 快7天
 - 寬：21天
 
@@ -150,7 +150,7 @@ Microsoft 受管理的桌面也可以隨意設定其他 Microsoft 365 應用程�
 
 ## <a name="settings-you-manage"></a>您管理的設定
 
-Microsoft 受管理的桌面尚未設定許多其他原則成為我們的服務的一部分。 您可以使用 Microsoft Intune，使用 [Office Cloud Policy](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) service 進行設定。 如果要執行這項操作，請依照下列步驟執行：
+Microsoft 受管理的桌面尚未設定許多其他原則成為我們的服務的一部分。 您可以使用使用 [Office Cloud Policy](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service#how-the-policy-configuration-is-applied) Service 的 Microsoft Intune 來設定這些原則。 若要設定這些原則，請遵循下列步驟：
 
 1.  登入 Microsoft 端點管理員管理中心。
 2.  **針對 Office app > 建立，選取應用程式 > 原則**

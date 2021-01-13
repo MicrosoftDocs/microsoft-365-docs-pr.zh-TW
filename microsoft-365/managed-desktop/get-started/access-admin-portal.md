@@ -1,6 +1,7 @@
 ---
 title: 存取系統管理入口網站
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
+description: 如何尋找及使用管理員入口網站，包括控制對它的存取。
 ms.service: m365-md
 ms.author: jaimeo
 author: jaimeo
@@ -9,26 +10,26 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: deeced350ad867a374a486967c2cbd278ba91710
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 09427d163b8b5e47911b6df26e5acf0fcd1f3524
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519326"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841348"
 ---
 # <a name="access-the-admin-portal"></a>存取管理員入口網站
 
 您的 Microsoft Managed 桌面服務閘道是 Microsoft [Azure 入口網站](https://portal.azure.com)。 如需更多有關使用和自訂 Azure 入口網站體驗的詳細資訊，請參閱 [azure 入口網站檔](https://docs.microsoft.com/azure/azure-portal/)。 可用於預覽現在，您也可以在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)中找到 Microsoft 受管理的桌面。 如果您不熟悉此入口網站的裝置管理功能，請參閱 [Microsoft 端點管理員的檔](https://docs.microsoft.com/mem/)。
 
 > [!NOTE]
-> 不過，您可以選擇 accesss Microsoft 受管理的電腦，在 [Microsoft 端點管理員](https://endpoint.microsoft.com/) 或 [Azure 入口網站](https://portal.azure.com)中，支援下列瀏覽器：
+> 不過，您可以選擇在 [Microsoft 端點管理員](https://endpoint.microsoft.com/) 或 [Azure 入口網站](https://portal.azure.com)中存取 Microsoft 受管理的桌面，支援下列瀏覽器：
 > - Microsoft Edge (最新版本) 
 > - Microsoft Internet Explorer 11
 > - Safari (最新版本，僅限 Mac) 
 > - Chrome (最新版本) 
 > - Firefox (最新版本) 
 
-您的管理帳戶需要特定許可權，才能存取 Azure 入口網站或 Microsoft 端點管理員中的 Microsoft 受管理桌面系統管理功能。 您可以使用以角色為基礎的存取控制 (RBAC) ，管理組織內這些功能的系統管理員存取權。 有幾個 Azure Active Directory (Azure AD) 系統管理員角色和內建自訂角色，可為 Microsoft Managed Desktop Admin 入口網站中的不同功能提供更細微的控制。 如需 Azure Active Directory 角色的詳細資訊，請參閱 [在 Azure Active directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 與適用于各種 Microsoft 產品和服務的 Azure AD 系統管理員角色不同，自訂角色是 Microsoft 受管理的桌面所特有，且只會保證此服務的系統管理功能存取權。 管理員可以個別或搭配使用 Azure AD 系統管理員角色，將自訂角色指派給使用者，以將 Microsoft 管理的桌面許可權新增至現有的系統管理員帳戶。
+您的管理帳戶需要特定許可權，才能存取 Azure 入口網站或 Microsoft 端點管理員中的 Microsoft 受管理桌面系統管理功能。 您可以使用以角色為基礎的存取控制 (RBAC) ，管理組織內這些功能的系統管理員存取權。 有幾個 Azure Active Directory (Azure AD) 系統管理員角色和內建自訂角色，可為 Microsoft Managed Desktop Admin 入口網站中的不同功能提供更細微的控制。 如需 Azure Active Directory 角色的詳細資訊，請參閱 [在 Azure Active directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 與適用于各種 Microsoft 產品和服務的 Azure AD 系統管理員角色不同，自訂角色是 Microsoft 受管理的桌面所特有的，只會保證此服務的系統管理功能存取權。 管理員可以個別或搭配使用 Azure AD 系統管理員角色，將自訂角色指派給使用者，以將 Microsoft 管理的桌面許可權新增至現有的系統管理員帳戶。
 
 您可以指派下列每個角色，以提供不同的存取層級：
 
@@ -58,13 +59,13 @@ ms.locfileid: "49519326"
 
 如果您需要協助指派 Azure Active Directory 角色，請參閱 [在 Azure Active directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
 
-為便於管理內建角色，已為每個自訂角色建立安全性群組 (例如「新式工作場所角色–安全性管理員」 ) 。 若要將使用者指派給其中一個安全性群組，請遵循下列步驟：
-1.  移至 Microsoft 端點管理員入口網站
-2.  在左側選取 [群組]。
-3.  搜尋新式的工作區角色，然後選取與您要指派之角色相關聯的群組。 
-4.  選取左側的 [成員]，然後選取 [+ 在命令列上新增成員]。
-5.  輸入要新增之人員的電子郵件。 如果是外部使用者，您必須先邀請他們，才可指派群組。
-6.  選取底部的 [選取]。
+為了便於管理內建角色，每個自訂角色 (都有一個安全性群組，例如「新式工作場所角色–安全性管理員」 ) 。 若要將使用者指派給其中一個安全性群組，請遵循下列步驟：
+1.  請移至 Microsoft 端點管理員入口網站。
+2.  選取左側的 [ **群組** ]。
+3.  搜尋 **新式的工作區角色**，然後選取與您要指派之角色相關聯的群組。 
+4.  選取左側的 [ **成員** ]，然後選取 [+ 在命令列 **新增成員** ]。
+5.  輸入要新增之人員的電子郵件。 若為來賓，您必須先將其邀請，才能指派群組。
+6.  選取底部的 [ **選取** ]。
 
 > [!NOTE]
 > 目前不支援角色指派的嵌套安全性群組。 

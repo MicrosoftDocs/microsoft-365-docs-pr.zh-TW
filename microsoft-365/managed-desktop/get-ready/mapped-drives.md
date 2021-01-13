@@ -9,12 +9,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: fc216adadea8dd774901d42a754fb288412318a1
-ms.sourcegitcommit: adaedd1418a3bd6e4875b77fd9e008b47e0b2a51
+ms.openlocfilehash: 34b2186ea3f9129ae7bb602aee879d7d23424136
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48104591"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841056"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>為 Microsoft 受管理的電腦準備對應磁碟機
 
@@ -48,7 +48,7 @@ ms.locfileid: "48104591"
  
 請確定無法避免使用對應的磁片磁碟機，而且在提交任何服務要求之前，您已仔細查看需求。 請遵循下列步驟：
 
-1. 流覽至 [ [Microsoft 端點管理員](https://endpoint.microsoft.com/) ]，然後選取 [疑難排解 + 支援]，然後在 [Microsoft Managed Deskop] 區段中尋找「服務要求」。  
+1. 流覽至 [ [Microsoft 端點管理員](https://endpoint.microsoft.com/) ]，然後選取 [疑難排解 + 支援]，然後在 [Microsoft 受管理的桌面] 區段中尋找「服務要求」。  
 2. 提交名為 "對應的磁片磁碟機部署" 的支援要求，並提供所有必要的檔案共用詳細資料。  
 3. Microsoft 受管理的桌面 IT 作業會在要求完成時，使用支援要求更新通知。 起初，此設定只會部署至測試部署群組中的裝置。  
 4. 您必須測試及確認 Microsoft 受管理的桌面 IT 作業所部署的設定是否如預期的那樣運作。 使用相同支援要求的詳細資料中的 [討論] 索引標籤回復，以在您完成測試時通知 Microsoft 受管理的桌面 IT 作業。  

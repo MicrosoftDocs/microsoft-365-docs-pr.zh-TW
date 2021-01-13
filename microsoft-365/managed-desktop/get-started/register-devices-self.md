@@ -7,16 +7,16 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.openlocfilehash: 48c69a71a98e381123a8f87acc20a34eb6e99806
-ms.sourcegitcommit: 34ebec8e2bd54ba3d4ccfd9724797665c965c17f
+ms.openlocfilehash: df6013f2f7fec32e79557a82f9b56fe4ad487786
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49071486"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840678"
 ---
 # <a name="register-new-devices-yourself"></a>自行註冊新裝置
 
-Microsoft 受管理的電腦可搭配全新的裝置運作，或您可重複使用您可能已經擁有的裝置 (這需要您重新製作其映像)。 您可以在 Microsoft 的端點管理員入口網站中使用 Microsoft 受管理的桌上型電腦註冊裝置。
+Microsoft 受管理的桌上型電腦可以與全新裝置搭配運作，也可以重複使用您已有 (的裝置，而這些裝置將需要) 重新建立映射。 您可以在 Microsoft 的端點管理員入口網站中使用 Microsoft 受管理的桌上型電腦註冊裝置。
 
 > [!NOTE]
 > 與合作夥伴合作來取得裝置嗎？ 若是如此，您就不需要擔心取得硬體雜湊，他們會為您處理。 請確定您的夥伴已在 [夥伴中心](https://partner.microsoft.com/dashboard)與您建立關聯。 您的合作夥伴可在 [合作夥伴中心說明](https://docs.microsoft.com/partner-center/request-a-relationship-with-a-customer)深入了解。 建立這種關聯性後，您的合作夥伴就會代表您直接註冊裝置，您不須採取任何進一步動作。 如果您想要查看詳細資料，或您的合作夥伴有疑問，請參閱[可供合作夥伴註冊裝置的步驟](register-devices-partner.md)。 註冊好裝置後，您可以繼續[檢查映像](#check-the-image)並[將裝置交付](#deliver-the-device)給您的使用者。
@@ -55,7 +55,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 1. 在您要註冊的裝置以外的裝置上，插入 USB 磁碟機。
 2. 以系統管理權限開啟 PowerShell 提示字元。
 3. 執行 `Save-Script -Name Get-WindowsAutoPilotInfo -Path <pathToUsb>`
-4. 開啟您要註冊的裝置，但 *請勿開始設定體驗* 。 如果您不小心開始設定體驗，則必須重設裝置或重新製作其映像。
+4. 開啟您要註冊的裝置，但 *請勿開始設定體驗*。 如果您不小心開始設定體驗，則必須重設裝置或重新製作其映像。
 5. 插入 USB 磁碟機，然後按 SHIFT + F10。
 6. 以系統管理權限開啟 PowerShell 提示字元，然後執行 `cd <pathToUsb>`。
 7. 執行 `Set-ExecutionPolicy -ExecutionPolicy Unrestricted`
@@ -68,14 +68,14 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 
 ### <a name="merge-hash-data"></a>合併雜湊資料
 
-您必須將 CSV 檔案中的資料合併成單一檔案，才能完成註冊。 以下是讓註冊變輕鬆的範例 PowerShell 指令碼：
+您必須將 CSV 檔案中的資料合併成單一檔案，才能完成註冊。 以下是可讓您輕鬆使用 PowerShell 腳本的範例：
 
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 
 #### <a name="register-devices-by-using-the-admin-portal"></a>使用管理入口網站註冊裝置
 
-在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的左導覽窗格中，選取 [ **裝置** ]。 尋找功能表中的 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置** ]。 在 [Microsoft 受管理的電腦裝置] 工作區中，選取 [ **+ 註冊裝置** ]，以即時註冊新裝置。
+在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)的左導覽窗格中，選取 [ **裝置** ]。 尋找功能表中的 [Microsoft 受管理的桌面] 區段，然後選取 [ **裝置**]。 在 [Microsoft 受管理的桌面裝置] 工作區中，選取 [ **+ 註冊裝置**]，這會開啟飛入以註冊新裝置。
 
 <!-- [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -86,7 +86,7 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 請遵循下列步驟：
 
 1. 在 [檔案上傳] 中，提供您先前建立的 CSV 檔案路徑。
-3. 選取 [註冊裝置]。 系統會將裝置新增至 [裝置] 刀鋒視窗上標示為 [註冊擱置]的裝置清單。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
+3. 選取 [註冊裝置]。 系統會將裝置新增至 **裝置上的裝置清單**，並標示為「 **註冊擱置**」。 登錄所需的時間通常不會超過10分鐘，當成功時，裝置會顯示為已就緒，可供 **使用者** 使用，且等候使用者開始使用。
 
 
 您可以在主頁面上監視裝置註冊的進度。 其回報的可能狀態包括：
@@ -95,8 +95,8 @@ Microsoft 受管理的電腦會藉由參照其硬體雜湊來唯一識別每個�
 |---------------|-------------|
 | 註冊擱置 | 尚未完成註冊。 稍後再回頭檢查。 |
 | 註冊失敗 | 無法完成註冊。 如需詳細資訊，請參閱[針對裝置註冊進行疑難排解](#troubleshooting-device-registration)。 |
-| 使用者就緒 | 註冊成功，裝置現在可以傳遞給使用者。 Microsoft 受管理的電腦將會逐步引導使用者完成首次設定，因此您不需要再做任何進一步的準備。 |
-| 作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 這也表示使用者經常使用該裝置。 |
+| 使用者就緒 | 註冊成功，裝置現在可以傳遞給使用者。 Microsoft 受管理的桌面會透過初次設定來引導他們，所以您不需要做進一步的準備。 |
+| 作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 這種狀態也表示它們經常使用裝置。 |
 | 非作用中 | 裝置已傳遞給使用者，且已向您的承租人註冊。 不過，使用者最近尚未使用裝置 (在過去 7 天內)。  | 
 
 #### <a name="troubleshooting-device-registration"></a>針對裝置註冊進行疑難排解

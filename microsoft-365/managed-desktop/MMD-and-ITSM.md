@@ -1,23 +1,23 @@
 ---
 title: Microsoft 受管理的電腦和 ITIL
-description: ''
+description: 與 Microsoft 受管理的桌面資訊和文章相互關聯 ITIL 階段
 keywords: Microsoft 受管理的桌面、Microsoft 365、服務、檔、ITISM
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 4b735ec28b655dfc01c874bc4865388d11247b67
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: e545b64670bb92c40465f1c50b2cb46b9fd7a8d8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47947957"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49841432"
 ---
 # <a name="microsoft-managed-desktop-and-itil"></a>Microsoft 受管理的電腦和 ITIL
 
 許多組織會發現使用 (ITSM) （如 [ITIL](https://www.axelos.com/best-practice-solutions/itil)）等正規 It 服務模型的各行來組織其 it 服務是很有價值的。 
 
-Microsoft 受管理的桌面可讓您的組織遵循這類正規 ITSM 模型的許多重要層面。 使用 ITIL 做為範例，本主題可協助您在適用的情況下，查看一般 ITIL 階段和程式及同等 Microsoft 受管理桌面功能之間的連線。 這僅適用于您組織的 Microsoft 受管理桌面部分。
+Microsoft 受管理的桌面可讓您的組織遵循這類正規 ITSM 模型的許多重要層面。 使用 ITIL 做為範例，本文可協助您查看一般 ITIL 階段與處理常式，以及對等 Microsoft 受管理桌面功能之間的連線（如果適用）。 此資訊只適用于您組織的 Microsoft 受管理桌面部分。
 
 如需 ITIL 及其階段和程式的詳細資訊，請參閱其 [檔](https://www.axelos.com/best-practice-solutions/itil)。
 
@@ -33,7 +33,7 @@ Microsoft 受管理的桌面可讓您的組織遵循這類正規 ITSM 模型的�
 |服務層級管理     | 回應時間是針對系統管理支援要求和事件而定義。  |  [Microsoft 受管理的電腦的系統管理員支援](working-with-managed-desktop/admin-support.md)  |
 |服務目錄管理     | 服務說明詳述服務的元件，可供所有目前及有興趣的客戶使用，以供服務的狀態。<br><br>先決條件，以瞭解操作服務所需的專案。  | - [Microsoft 受管理的桌面服務說明](service-description/index.md)<br><br>- [準備好在 Microsoft 受管理的電腦中註冊](get-ready/index.md)  |
 |資訊安全性管理     | 安全性資訊，包括服務的資訊安全性。<br><br> 安全相關原則及如何設定裝置的其他資訊。   | - [Microsoft 受管理電腦中的安全性](service-description/security.md)<br><br>- [裝置設定](service-description/device-policies.md)  |
-|可用性管理     |  Microsoft 受管理的桌面會與您的組織平衡責任，以確保服務的可用性。<br><br>系統管理員和使用者在服務或可用性問題的情況下，都有各自的支援途徑。 | - [Microsoft 受管理的桌面作業和監控](service-description/operations-and-monitoring.md)<br><br>- [Microsoft 受管理的電腦的系統管理員支援](working-with-managed-desktop/admin-support.md)<br>- [取得使用者的協助](working-with-managed-desktop/end-user-support.md)  |
+|可用性管理     |  Microsoft 受管理的桌面會與您的組織平衡責任，以確保服務的可用性。<br><br>如果有服務或可用性問題，系統管理員和使用者都具有相關支援的路由。 | - [Microsoft 受管理的桌面作業和監控](service-description/operations-and-monitoring.md)<br><br>- [Microsoft 受管理的電腦的系統管理員支援](working-with-managed-desktop/admin-support.md)<br>- [取得使用者的協助](working-with-managed-desktop/end-user-support.md)  |
 
 
 
