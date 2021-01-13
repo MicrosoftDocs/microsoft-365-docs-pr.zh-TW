@@ -241,6 +241,8 @@
           href: endpoint-dlp-learn-about.md
         - name: 開始使用端點資料外洩防護
           href: endpoint-dlp-getting-started.md
+        - name: 為端點 DLP 設定裝置 Proxy 和網際網路連線設定
+          href: endpoint-dlp-configure-proxy.md
         - name: 使用端點資料外洩防護
           href: endpoint-dlp-using.md
         - name: Windows 10 裝置的端點 DLP 上線工具及方法
@@ -463,7 +465,7 @@
           href: retention-regulatory-requirements.md
 - name: 管理電子文件探索
   items:
-    - name: Microsoft 365 中的電子文件探索
+    - name: Microsoft 365 電子文件探索解決方案
       href: ediscovery.md
     - name: 內容搜尋
       items:
@@ -580,9 +582,11 @@
       items:
         - name: 進階電子文件探索概觀
           href: overview-ediscovery-20.md
-        - name: 開始使用進階電子文件探索
+        - name: 設定進階電子文件探索
           href: get-started-with-advanced-ediscovery.md
-        - name: 與監管人和非監管資料來源合作
+        - name: 建立進階電子文件探索案例
+          href: create-and-manage-advanced-ediscoveryv2-case.md
+        - name: 管理監管人和非監管資料來源
           href: managing-custodians.md
           items:
             - name: 將監管人新增至案例
@@ -595,7 +599,7 @@
               href: view-custodian-activity.md
             - name: 將非監管資料來源新增至案例
               href: non-custodial-data-sources.md
-        - name: 使用通訊
+        - name: 管理監管人通訊
           href: managing-custodian-communications.md
           items:
             - name: 建立保留通知
@@ -608,7 +612,7 @@
               href: acknowledge-hold-notification.md
         - name: 管理保留
           href: managing-holds.md
-        - name: 使用處理錯誤
+        - name: 管理處理錯誤
           href: processing-data-for-case.md
           items:
             - name: 進階的監管人資料索引
@@ -677,6 +681,8 @@
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
         - name: 進階電子文件探索參考資料
           items:
+            - name: 進階電子文件探索對齊 EDRM
+              href: advanced-ediscovery-edrm.md
             - name: 進階電子文件探索限制
               href: limits-ediscovery20.md
             - name: 支援的檔案類型
