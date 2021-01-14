@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 瞭解如何在 Microsoft 合規性管理員中執行控制項的實施及測試。 指派工作、儲存檔，以及匯出報告。
-ms.openlocfilehash: 4b7ece89752a2c3e54a0a69bade2f489feacd0c3
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: c465a574ed9c1a8ad8ef9e2bfc7f864545ae28d9
+ms.sourcegitcommit: 00d231bf0100e843a5a93161695e87ceff9e1349
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376524"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49849590"
 ---
 # <a name="assign-and-complete-improvement-actions-in-compliance-manager"></a>在合規性管理員中指派及完成改進動作
 
@@ -59,6 +59,17 @@ ms.locfileid: "49376524"
 3. 選取 [ **儲存並關閉**]。 指派的使用者會收到一封電子郵件，說明已將改進動作指派給他們，並直接連結到 [改進] 動作。  (注意：在指派動作給美國政府團體 (GCC) 高的客戶時，將不會收到電子郵件。 ) 
 
 然後，已指派的使用者可以執行建議的動作。
+
+#### <a name="assign-multiple-improvement-actions-to-a-single-user"></a>將多個改進動作指派給單一使用者
+
+您可以遵循下列步驟，將多個改進動作指派給一個使用者：
+
+1. 移至您的 [改進動作] 頁面。
+2. 選取 [改進動作名稱] 左側的區域。 會出現一個圓形檢查圖示，表示您已選取該動作。 檢查您要指派的所有動作。
+3. 在 [改進動作] 表格的頂端，選取 [ **指派給使用者** ] 連結。
+4. 會出現快顯視窗。 在 [ **指派給** ] 欄位中，開始輸入您要指派動作的人員名稱。 您也可以從 [建議人員] 清單中選取。
+5. 在您以受託人的名稱填入 [ **指派給** ] 欄位後，請選取 [ **指派**]。
+6. 然後，您會看到您剛才指派之動作的 [提升動作] 頁面，列出新的代理人。
 
 ## <a name="perform-work-and-store-documentation"></a>執行工作和儲存庫檔
 
@@ -149,6 +160,12 @@ ms.locfileid: "49376524"
 **為何您可能想要推遲更新**
 
 如果您正在完成包括「改進」動作的評估，您可能想要確定已完成的工作，再接受更新。 您可以在 [審閱更新] 浮出窗格上選取 [ **取消** ]，以推遲更新的時間。
+
+#### <a name="accept-all-updates-at-once"></a>一次接受所有更新
+
+如果您有多個更新，且想要一次接受所有更新，請選取 [改進動作] 表格頂端的 [ **接受所有的更新** ] 連結。 隨即會出現一個快顯視窗，列出要更新的動作數目。 選取 [ **接受更新** ] 按鈕，套用所有更新。
+
+請注意，當您回到 [改進動作] 頁面時，可能會在頁面頂端看到一則訊息，要求您重新整理頁面，更新才會完成。
 
 ## <a name="export-a-report"></a>匯出報告
 
