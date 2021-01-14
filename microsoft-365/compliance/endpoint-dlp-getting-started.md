@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 設定 Microsoft 365 端點資料遺失防護以監視檔案活動，並對這些端點的文件實作保護動作。
-ms.openlocfilehash: 7dbceb97b7ccb542a0a4933f3e3cccf5a38026ea
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: 5a5c8e77679b55f20269b135da52bc0498fd7c11
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604256"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840922"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>開始使用端點資料外洩防護
 
@@ -98,6 +98,8 @@ Microsoft 端點 DLP 可讓您監視 Windows 10 裝置，並偵測敏感性項�
 5. 在端點裝置上安裝 Microsoft Chromium Edge 瀏覽器，以強制執行上傳至雲端活動的原則動作。 請參閱[下載以 Chromium 為基礎的新 Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)。
 
 6. 如果您使用的是 Microsoft 365 Apps 版本 2004-2008 的每月企業頻道，則存在端點 DLP 對 Office 內容進行分類的已知問題，您需要更新到 2009 版或更高版本。 請參閲目前版本的 [Microsoft 365 Apps 的更新歷程記錄 (依日期列出)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。 深入了解有關此問題的更多資訊，請參閱 [2020 年目前通道版本的版本資訊](https://docs.microsoft.com/officeupdates/current-channel#version-2010-october-27) 中的 Office 套件一節。
+
+7. 如果您有使用裝置 proxy 連線至網際網路的端點，請按照 [為端點 DLP 設定裝置 proxy 和網際網路連線設定](endpoint-dlp-configure-proxy.md) 中的程式。
 
 ## <a name="onboarding-devices-into-device-management"></a>將裝置上線至裝置管理
 
