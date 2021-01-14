@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: 本文說明如何使用入口網站啟動排程器來啟動入口網站
-ms.openlocfilehash: 7e488caba5e4df47bb3f51f195e093891565d95c
-ms.sourcegitcommit: 001e64f89f9c3cd6bbd4a25459f5bee3b966820c
+ms.openlocfilehash: 66912f5730c580bd75282a64124fefcdf262d738
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "49367198"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864873"
 ---
 # <a name="launch-your-portal-using-the-portal-launch-scheduler"></a>使用入口網站啟動計畫程式啟動入口網站
 
@@ -34,7 +34,7 @@ ms.locfileid: "49367198"
 - 雙向：啟動新的現代 SharePoint 線上入口網站以取代現有的 SharePoint 傳統或新式入口網站 
 - 暫時頁面重新導向：使用沒有現有 SharePoint 入口網站的新新式 SharePoint 線上入口網站啟動
 
-入口網站啟動排程器僅可用於啟動新式 SharePoint Online 入口網站，亦即通訊網站和現代小組網站。 啟動時間必須預先排程至少7天。 所需的無線電波數目取決於預期的使用者數目。 在排程入口網站之前，必須執行 [SharePoint 工具的頁面診斷](https://aka.ms/perftool) ，以驗證入口網站上的首頁狀況良好。 在入口網站的最後一開始，所有具有網站許可權的使用者都可以存取新網站。 
+入口網站啟動排程器僅可啟動新式 SharePoint Online 入口網站 (（例如，) 的通訊）。 啟動時間必須預先排程至少7天。 所需的無線電波數目取決於預期的使用者數目。 在排程入口網站之前，必須執行 [SharePoint 工具的頁面診斷](https://aka.ms/perftool) ，以驗證入口網站上的首頁狀況良好。 在入口網站的最後一開始，所有具有網站許可權的使用者都可以存取新網站。 
 
 如需有關啟動成功入口網站的詳細資訊，請遵循 [建立、啟動及維護健康入口網站](https://docs.microsoft.com/sharepoint/portal-health)的基本原則、作法和建議。 
 
@@ -45,7 +45,7 @@ ms.locfileid: "49367198"
 1. [下載最新的 SharePoint Online 管理命令介面](https://go.microsoft.com/fwlink/p/?LinkId=255251)。
 
     > [!NOTE]
-    > 如果您安裝的是舊版 SharePoint Online 管理命令介面，請移至 [新增或移除程式]，並解除安裝 [SharePoint Online 管理命令介面]。 <br>在下載中心頁面上，選取您的語言，然後按一下 [下載] 按鈕。 系統會請您選擇下載 x64 或 x86 .msi 檔案。 如果您執行的是 64 位元版本的 Windows，請下載 x64 檔案；或如果您執行的是 32 位元版本，請下載 x86 檔案。 如果您不知道，請參閱[我正在執行哪個版本的 Windows 作業系統？](https://support.microsoft.com/help/13443/windows-which-operating-system)。 下載檔案之後，請執行檔案，並按照安裝精靈中的步驟進行。
+    > 如果您安裝的是舊版 SharePoint Online 管理命令介面，請移至 [新增或移除程式]，並解除安裝 [SharePoint Online 管理命令介面]。<br>在下載中心頁面上，選擇您的語言，然後按一下 [下載] 按鈕。 系統會請您選擇下載 x64 或 x86 .msi 檔案。 如果您執行的是 64 位元版本的 Windows，請下載 x64 檔案；或如果您執行的是 32 位元版本，請下載 x86 檔案。 如果您不知道，請參閱[我正在執行哪個版本的 Windows 作業系統？](https://support.microsoft.com/help/13443/windows-which-operating-system)。 下載檔案之後，請執行檔案，並按照安裝精靈中的步驟進行。
 
 2. 在 Microsoft 365 以[全域系統管理員或 SharePoint 管理員](/sharepoint/sharepoint-admin-role)的身分登入。 若要了解如何進行，請參閱[開始使用 SharePoint Online 管理命令介面](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)。
 
@@ -70,7 +70,7 @@ ms.locfileid: "49367198"
 
 雙向重新導向包括啟動新的現代 SharePoint Online 入口網站取代現有的 SharePoint 傳統或新式入口網站。 主動波形中的使用者將會重新導向至新網站，不論其流覽的是舊的還是新的網站。 嘗試存取新網站的非啟動浪潮中的使用者，將會重新導向至舊網站，直到其 wave 啟動為止。 
 
-我們只支援舊網站上的預設首頁與新網站上的預設首頁之間的重定向。 若要讓系統管理員或擁有者必須存取舊的和新的網站，而不重新導向，請確定它們是以 `WaveOverrideUsers` 參數列出。 若要讓系統管理員或擁有者必須存取舊的和新的網站，而不重新導向，請確定它們是以 `WaveOverrideUsers` 參數列出。 我們只支援舊網站上的預設首頁與新網站上的預設首頁之間的重定向。
+我們只支援舊網站上的預設首頁與新網站上的預設首頁之間的重定向。 若要讓系統管理員或擁有者必須存取舊的和新的網站，而不重新導向，請確定它們是以 `WaveOverrideUsers` 參數列出。
 
 若要以分段方式將現有的 SharePoint 網站中的使用者遷移至新的 SharePoint 網站，請執行下列動作：
 
@@ -109,7 +109,6 @@ ms.locfileid: "49367198"
    ```
 
 2. 完整驗證。 重新導向會花5-10 分鐘的時間來完成整個服務的設定。 
-   - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/newsite" -RedirectionType Bidirectional -RedirectUrl "https://*.sharepoint.com/sites/oldsite" -ExpectedNumberOfUsers LessThan10kUsers -WaveOverrideUsers "*@microsoft.com" -Waves ' [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
 
 ## <a name="pause-or-restart-a-portal-launch-on-the-site"></a>暫停或重新開機網站上的入口網站啟動
 
@@ -129,16 +128,14 @@ ms.locfileid: "49367198"
 4. 驗證重新定向現在已還原。 
 
 ## <a name="delete-a-portal-launch-on-the-site"></a>在網站上刪除入口網站啟動
-1. 建立入口網站啟動 Wave。
-  - `New-SPOPortalLaunchWaves  -LaunchSiteUrl "https://*.sharepoint.com/sites/NewSite" -RedirectionType ToTemporaryPage -RedirectUrl "https://*.sharepoint.com/sites/OldSite" -ExpectedNumberOfUsers From10kTo30kUsers -WaveOverrideUsers *@microsoft.com -Waves [{Name:"Wave 1", Groups:["Viewers SG1"], LaunchDateUtc:"2020/10/14"}, {Name:"Wave 2", Groups:["Viewers SG2"], LaunchDateUtc:"2020/10/15"}]' -IsTesting $true`
 
-2. 執行下列命令，以刪除針對網站排程或進行中的入口網站啟動。
+1. 執行下列命令，以刪除針對網站排程或進行中的入口網站啟動。
 
    ```PowerShell
    Remove-SPOPortalLaunchWaves -LaunchSiteUrl <object>
    ```
 
-3. 驗證所有使用者都不會進行重新導向。
+2. 驗證所有使用者都不會進行重新導向。
 
 ## <a name="learn-more"></a>深入了解
 [在 SharePoint Online 中規劃您的入口網站啟動向外推廣計畫](https://docs.microsoft.com/microsoft-365/Enterprise/Planportallaunchroll-out)

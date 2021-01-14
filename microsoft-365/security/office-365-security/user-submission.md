@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: 7064e2d26722c433d33fe2f983484a40fa33c1e6
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 8f9da620643d46bf21a18eccc2047ad4361832cc
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615621"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865056"
 ---
 # <a name="user-submissions-policy"></a>使用者提交原則
 
@@ -31,6 +31,8 @@ ms.locfileid: "49615621"
 在使用 Exchange Online 信箱的 Microsoft 365 組織中，您可以指定信箱以接收使用者報告為惡意或非惡意的郵件。 當使用者使用各種報告選項送出郵件時，您可以使用此信箱來截取郵件 (只) 或接收郵件副本 (傳送至自訂信箱和 Microsoft) 。 這項功能可搭配下列郵件報告選項使用：
 
 - [報告訊息增益集](enable-the-report-message-add-in.md)
+
+- [報表網路釣魚增益集](enable-the-report-phish-add-in.md)
 
 - [Outlook 網頁版中 (的內建報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) （以前稱為 Outlook web App）) 
 
@@ -76,19 +78,19 @@ ms.locfileid: "49615621"
 
 2. 在出現的 [ **使用者提交** ] 頁面中，選取下列其中一個選項：
 
-   1. **啟用 (建議) 的 Outlook 報告郵件功能**：若您在網頁型 outlook 中使用報表訊息增益集或內建報告，請選取此選項，然後設定下列設定：
+   1. **啟用 (建議) 的 Outlook 報告郵件功能**：若您使用報表訊息增益集、網頁型 outlook 中的報表網路釣魚增益集或內建報告，請選取此選項，然後設定下列設定：
 
       - **自訂使用者確認訊息**：按一下此連結。 在出現的 [ **自訂確認訊息** ] 浮出視窗中，設定下列設定：
 
-      - **提交之前**：在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用「報告郵件增益集」報告郵件之前看到的描述性文字。 您可以使用變數% type%，以包含提交類型 (垃圾郵件、非垃圾郵件、網路釣魚網路等等 ) 。
+      - **提交之前**：在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用報告訊息增益集或報告網路釣魚增益集報告郵件之前看到的描述性文字。 您可以使用變數% type%，以包含提交類型 (垃圾郵件、非垃圾郵件、網路釣魚網路等等 ) 。
 
         如所述，如果您選取將報告的郵件傳送給 Microsoft 的選項，下列文字也會新增至通知：
 
         > 您的電子郵件會向 Microsoft 提交，以進行分析。 有些電子郵件可能包含個人或機密資訊。
 
-      - **提交後**：按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 。 在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用「報告訊息增益集」報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
+      - **提交後**：按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 。 在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用報告訊息增益集或報告網路釣魚增益集報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
 
-      完成後，按一下 **[儲存]**。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原** 回來]。
+      完成後，請按一下 **[儲存]**。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原** 回來]。
 
       - **將報告的郵件傳送至**：進行下列其中一項選擇：
 
@@ -104,9 +106,9 @@ ms.locfileid: "49615621"
       完成後，請按一下 [ **確認**]。
 
       > [!CAUTION]
-      > 如果您已在 Outlook 網頁版 outlook 上使用 Outlook 來 [停用 outlook 中的垃圾郵件報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) ，但您設定上述任一設定將郵件報告給 microsoft，使用者就可以使用報告訊息增益集，在網頁型 outlook 中將郵件報告給 microsoft。
+      > 如果您已在使用 Outlook 的網頁信箱原則上使用 Outlook 在 [outlook 中停用 [垃圾郵件報告](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) ]，但您設定上述任一設定將郵件報告給 microsoft，使用者就可以使用報告訊息增益集或報告網路釣魚增益集，在網頁型 outlook 中向 microsoft 報告郵件。
 
-   - **停用 Outlook 的報告郵件功能**：如果您使用協力廠商的報表工具，而不是在 web 上的 Outlook 中使用協力廠商的報表工具或內建的報表，請選取這個選項，然後設定下列設定：
+   - **停用 Outlook 的報告郵件功能**：若您使用協力廠商報告工具（而非報告郵件增益集），請在網頁型 Outlook 中使用協力廠商的報表工具，或內建的報告，然後設定下列設定：
 
       選取 [ **使用此自訂信箱以接收使用者報告的提交**]。 在出現的方塊中，輸入已存在於 Office 365 的現有信箱的電子郵件地址。 這必須是 Exchange Online 中可接收電子郵件的現有信箱。
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 在安全性與合規性中心使用 Explorer 和即時偵測， &amp; 以有效地調查和回應威脅。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8bca8e39029fe041c0bab59e92d8a653647746ef
-ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
+ms.openlocfilehash: 5ecc90602573de0de08336c3bca41aed701d8329
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49724411"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865029"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>威脅瀏覽器和即時偵測
 
@@ -422,7 +422,7 @@ ETR 搜尋和名稱可用性取決於指派給您的特定角色。 您必須具
 
 ## <a name="review-email-messages-reported-by-users"></a>檢閱使用者回報的電子郵件訊息
 
-假設您想要查看組織中的使用者在 [Outlook 和網頁型 outlook 的報告訊息增益集](enable-the-report-message-add-in.md)上，報告為 *垃圾* 郵件、*非垃圾* 郵件或 *網路釣魚* 的電子郵件訊息。 若要查看，請使用瀏覽器的 [**電子郵件**  >  **提交**](threat-explorer-views.md#email--submissions)視圖 (或即時偵測) 。
+假設您想要查看組織中的使用者已透過 [報告郵件增益集](enable-the-report-message-add-in.md)或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md)舉報為 *垃圾* 郵件、*非垃圾* 郵件或 *網路釣魚* 的電子郵件訊息。 若要查看，請使用瀏覽器的 [**電子郵件**  >  **提交**](threat-explorer-views.md#email--submissions)視圖 (或即時偵測) 。
 
 1. 在安全性與合規性中心 (<https://protection.office.com>) 選擇 **[威脅管理]** \> **[總管]** (或 **[即時偵測]**)。 (此範例使用總管。)
 

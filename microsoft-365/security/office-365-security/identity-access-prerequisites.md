@@ -1,6 +1,6 @@
 ---
 title: 實施身分識別和裝置存取原則的必要條件工作-Microsoft 365 for enterprise |Microsoft 檔
-description: 說明在實施身分識別與裝置存取原則及設定之前的必要條件。
+description: 本文說明您在使用身分識別與裝置存取原則及設定時必須遵守的必要條件。
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -18,20 +18,20 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: bd0b4efb1281d467a61e4aee792b507f0ca44181
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: eb07fe45c169d81559e4676f86abde5c6600a185
+ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616557"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49845081"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
-本文說明在部署建議的身分識別和裝置存取原則之前，必須先執行的必要條件。 本文也會討論推薦的預設平臺用戶端設定，以提供最佳單一登入 (SSO) 使用者經驗，以及條件式存取的技術必要條件。
+本文說明系統管理員必須符合以使用建議的身分識別和裝置存取原則，以及使用條件式存取的必要條件。 此外，本文也會討論設定最佳單一登入 (SSO) 體驗的用戶端平臺的建議預設值。
 
 ## <a name="prerequisites"></a>必要條件
 
-在執行建議的身分識別和裝置存取原則之前，您的組織必須符合 Microsoft 365 和 Office 365 的這些身分識別和驗證模型：
+在使用建議的身分識別與裝置存取原則之前，您的組織必須符合必要條件。 針對所列的各種身分識別和驗證模型，需求各有不同：
 
 - 僅雲端
 - 混合使用密碼雜湊同步 (PHS) 驗證
@@ -121,7 +121,7 @@ ms.locfileid: "49616557"
 - 建立並使用個別帳戶，只指派給 [Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*的管理*。 管理員應該擁有自己的使用者帳戶，以進行一般非系統管理，且只有在必要時才使用系統管理帳戶，才可完成與其角色或工作職能相關聯的工作。
 - 遵循在 Azure AD 中保護特權帳戶的 [最佳作法](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) 。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 
 [![步驟2：設定一般身分識別和存取條件式存取原則](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 

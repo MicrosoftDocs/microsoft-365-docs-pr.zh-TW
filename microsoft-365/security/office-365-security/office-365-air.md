@@ -21,12 +21,12 @@ description: 開始使用 Microsoft Defender for Office 365 中的自動調查�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 6ccefb5c435f08fcef4dcc872af676fba70668ee
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 570fb3c9d180d3167cfc5a4e3c3825102875b74f
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794541"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865005"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自動調查和回應 (AIR) 
 
@@ -107,7 +107,7 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 |警報|嚴重性|警示的產生方式|
 |---|---|---|
 |偵測到可能的惡意 URL 按一下|**High**|發生下列任何情況時，就會產生此警示： <ul><li>由組織中 [安全連結](atp-safe-links.md) 所保護的使用者按一下惡意連結</li><li>URLs 的判定變更是由 Microsoft Defender for Office 365 所識別</li><li>根據組織的 [安全連結原則](set-up-atp-safe-links-policies.md)) ，使用者會覆寫安全連結警告頁面 (。</li></ul> <p> 如需觸發此警示之事件的詳細資訊，請參閱 [設定安全連結原則](set-up-atp-safe-links-policies.md)。|
-|使用者報告電子郵件訊息為惡意程式碼或網路釣魚網路|**資訊**|當您組織中的使用者使用 [報告訊息增益集將](enable-the-report-message-add-in.md)郵件報告為網路釣魚電子郵件時，就會產生此警示。|
+|使用者報告電子郵件訊息為惡意程式碼或網路釣魚網路|**資訊**|當您組織中的使用者使用 [報告郵件增益集](enable-the-report-message-add-in.md) 或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md)，將郵件報告為網路釣魚電子郵件時，就會產生此警示。|
 |傳遞後移除包含惡意程式碼的電子郵件|**資訊**|當包含惡意程式碼的電子郵件訊息傳送至組織中的信箱時，就會產生此警示。 如果發生此事件，Microsoft 會使用 [零小時自動清除](zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。|
 |傳遞後移除包含網路釣魚 URLs 的電子郵件|**資訊**|當包含網路釣魚的任何郵件傳送至您組織中的信箱時，就會產生此警示。 如果發生此事件，Microsoft 會使用 [零小時自動清除](zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。|
 |偵測到可疑的電子郵件寄送模式|**Medium**|當貴組織中的某人傳送了可疑的電子郵件，並有限制傳送電子郵件的風險時，就會產生此警示。 這是一種針對可能表示帳戶已受損，但不足以限制使用者之行為的早期警告。 <p> 雖然這種情況很少見，但由此原則產生的警示可能是反常的。 不過，最好 [檢查使用者帳戶是否受損](responding-to-a-compromised-email-account.md)。|

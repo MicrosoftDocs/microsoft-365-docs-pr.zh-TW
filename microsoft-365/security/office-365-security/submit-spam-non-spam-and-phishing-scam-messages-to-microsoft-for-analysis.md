@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員和使用者可以瞭解如何使用電子郵件傳送郵件， (郵件會標示為壞或錯誤的郵件，以供 Microsoft 進行分析) 。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fe8e3c5ed44c7578764ed0bf19408f4db16e3740
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 94747b1d0a1aef746a63abada977aa47270ae4e2
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751556"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865077"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>手動將郵件提交給 Microsoft 進行分析
 
@@ -42,7 +42,7 @@ ms.locfileid: "49751556"
 ## <a name="submit-false-negatives-to-microsoft"></a>將漏報提交給 Microsoft
 
 > [!TIP]
-> 您可以使用 Microsoft Outlook 的報告訊息增益集，而不是使用下列程式來報告誤報： Outlook 中的使用者和 Outlook 網頁版上的 outlook (以前稱為 Outlook Web App) 。 如需如何安裝及使用此工具的詳細資訊，請參閱 [Enable The Report Message 增益集](enable-the-report-message-add-in.md)。
+> 「Outlook」和「outlook (網頁版」（先前稱為 Outlook Web App) ）中的使用者可以使用報表訊息增益集或報表網路釣魚增益集，而不是使用下列程式來報告漏報。 如需如何安裝及使用這些工具的相關資訊，請參閱 [enable The Report Message 增益集](enable-the-report-message-add-in.md) 及 [啟用報告網路釣魚增益集](enable-the-report-phish-add-in.md)。
 
 如果您收到的郵件透過應識別為垃圾郵件篩選的垃圾郵件篩選，您可以視需要將郵件提交至 Microsoft 垃圾郵件分析和 Microsoft 網路釣魚分析小組。 分析員會檢查郵件，並將其新增至全服務篩選準則（如果符合分類準則）。
 
@@ -70,7 +70,8 @@ ms.locfileid: "49751556"
 ## <a name="submit-false-positives-to-microsoft"></a>將誤報提交給 Microsoft
 
 > [!TIP]
-> 您不用使用下列程式來報告誤報，Outlook 和網頁型 Outlook 中的使用者可以使用 Microsoft Outlook 的報告訊息增益集。 如需如何安裝及使用此工具的詳細資訊，請參閱 [Enable The Report Message 增益集](enable-the-report-message-add-in.md)。
+> 除了使用下列程式來報告誤報之外，Outlook 和 Outlook (網頁版 outlook 中的使用者（以前稱為 Outlook Web App) ）都可以使用報表訊息增益集或報表網路釣魚增益集。 如需如何安裝及使用這些工具的相關資訊，請參閱 [enable The Report Message 增益集](enable-the-report-message-add-in.md) 及 [啟用報告網路釣魚增益集](enable-the-report-phish-add-in.md)。
+
 
 如果郵件被錯誤地辨識為垃圾郵件，您可以將郵件提交給 Microsoft 垃圾郵件分析小組。 分析員會評估郵件，並根據分析的結果 () 可調整整個服務篩選器以允許郵件通過。
 

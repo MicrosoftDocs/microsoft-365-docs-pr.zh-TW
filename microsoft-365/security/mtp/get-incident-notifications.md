@@ -21,19 +21,17 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 3af1dcfec165c88a18cbc0d8cbf6866bb6398adc
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: f25be4de3f25db869957474c3cb32b20e9f7aa53
+ms.sourcegitcommit: 88d358d778804b26d5e41c53b4f725d01a78112b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668197"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49848888"
 ---
 # <a name="get-incident-notifications-by-email"></a>透過電子郵件取得事件通知
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->[!IMPORTANT]
-> 事件功能的電子郵件通知目前是公開預覽。 這項功能的部分資訊可能會在商業可用性之前變更。 Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 適用於：
 - Microsoft 365 Defender
@@ -73,7 +71,7 @@ ms.locfileid: "49668197"
 
 6. 最後，選取 **[下一步]** 以 **查看規則** ，這樣您就能看到與新規則相關聯的所有設定。 收件者會開始透過電子郵件以設定為基礎來接收事件通知。
 
-## <a name="see-also"></a>也請參閱
+## <a name="see-also"></a>另請參閱
 - [Microsoft 365 Defender 中的事件概述](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)
 - [設定 Microsoft 365 Defender 中的事件優先順序](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue)
 - [調查 Microsoft 365 Defender 中的事件](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents)

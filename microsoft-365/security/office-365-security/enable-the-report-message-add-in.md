@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 了解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 網頁版的 [報告訊息] 增益集。
-ms.openlocfilehash: baed46e500e58702b7031db5aa5ff376a4eafcb5
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: 13721317c33cf207f27cd8b98fb6d32864651847
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877750"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864993"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -31,13 +31,13 @@ ms.locfileid: "48877750"
 > [!NOTE]
 > 如果您是使用 Exchange Online 信箱的 Microsoft 365 組織中的系統管理員，建議您在安全性 & 合規性中心使用提交入口網站。 如需詳細資訊，請參閱 [使用系統管理員提交將可疑的垃圾郵件、網路釣魚、URLs 和檔案提交給 Microsoft](admin-submission.md)。
 
-「Outlook」和「Outlook」上的「outlook」和「Outlook」 (先前稱為 Outlook Web) App 的報告訊息增益集，可讓使用者輕鬆報告誤報， (正確的電子郵件標記為壞的) 或 false 的否定 (錯誤電子郵件允許) 到 Microsoft 及其子公司進行分析。 Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。
+「Outlook」和「outlook」 (上的「outlook」和「Outlook」的報告訊息和報告網路增益集（以前稱為 Outlook Web App）) 可讓使用者輕鬆報告誤報， (適當的電子郵件標記為壞的) 或 false 的電子郵件， (錯誤的電子郵件允許 Microsoft 及其子公司進行分析。
 
-例如，假設使用者將大量訊息回報為網路釣魚。 此資訊會顯示在[安全性儀表板](security-dashboard.md)及其他報告中。 貴組織的安全性小組可以使用此資訊來表示可能需要更新防網路釣魚原則。 或者，如果有人使用 [報告訊息] 增益集，回報大量被標示為垃圾郵件的訊息，則貴組織的安全性小組可能需要調整[反垃圾郵件原則](configure-your-spam-filter-policies.md)。
+Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 例如，如果人員報告大量已使用報告訊息增益集標記為垃圾郵件的郵件，您組織的安全性小組可能需要調整 [反垃圾郵件原則](configure-your-spam-filter-policies.md)。
 
-此外，如果您的組織使用 [Microsoft Defender For Office 365 Plan 1](office-365-atp.md) 或 [Plan 2](office-365-ti.md)，則報告訊息增益集會為貴組織的安全性小組提供有用的資訊，供您用來複查和更新安全性原則。
+您可以安裝報告訊息或報告網路釣魚增益集。 如果您想要讓使用者僅報告網路釣魚郵件，請在您的組織中部署報表網路釣魚增益集。 如需詳細資訊，請參閱 [Enable The Report 仿冒增益集](enable-the-report-phish-add-in.md)。
 
-系統管理員可以為組織啟用「報告訊息增益集」，個別使用者可以自行自行安裝。
+報告郵件增益集提供的選項可報告垃圾郵件和網路釣魚郵件。 系統管理員可以為組織啟用「報告訊息增益集」，個別使用者可以自行自行安裝。
 
 如果您是個人使用者，您可以[自行啟用 [報告訊息] 增益集](#get-the-report-message-add-in-for-yourself)。
 
@@ -66,11 +66,11 @@ ms.locfileid: "48877750"
 
 1. 移至 Microsoft AppSource <https://appsource.microsoft.com/marketplace/apps> ，並搜尋報告訊息增益集。 若要直接移至報告訊息增益集，請移至 <https://appsource.microsoft.com/product/office/wa104381180> 。
 
-2. 按一下 [ **立即取得** ]。
+2. 按一下 [ **立即取得**]。
 
    ![報告訊息 - 立即取得](../../media/ReportMessageGETITNOW.png)
 
-3. 在出現的對話方塊中，複查使用條款和隱私權原則，然後按一下 [ **繼續** ]。
+3. 在出現的對話方塊中，複查使用條款和隱私權原則，然後按一下 [ **繼續**]。
 
 4. 使用您的工作或學校帳戶登入 (商務用) 或您的 Microsoft 帳戶 (個人用途) 。
 
@@ -91,45 +91,45 @@ ms.locfileid: "48877750"
 > [!NOTE]
 > 在您的組織中顯示增益集可能需要長達12小時。
 
-1. 在 Microsoft 365 系統管理中心中，移至 [ **設定]，& 增益集** ] 頁面 <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> ，然後按一下 [ **部署 Add-In** ]。
+1. 在 Microsoft 365 系統管理中心中，移至 [ **設定]，& 增益集** ] 頁面 <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> ，然後按一下 [ **部署 Add-In**]。
 
    ![Microsoft 365 系統管理中心的 [服務和增益集] 頁面](../../media/ServicesAddInsPageNewM365AdminCenter.png)
 
-2. 在出現的 **新增益集** 浮出視窗中，複查資訊，然後按 **[下一步]** 。
+2. 在出現的 **新增益集** 浮出視窗中，複查資訊，然後按 **[下一步]**。
 
-3. 在下一個頁面上，按一下 **[從儲存區選擇** ]。
+3. 在下一個頁面上，按一下 **[從儲存區選擇**]。
 
    ![部署新的增益集頁面](../../media/NewAddInScreen2.png)
 
-4. 在出現的 [ **選取增益集** ] 頁面上，按一下 [ **搜尋** ] 方塊，輸入 **報告訊息** ，然後按一下 [ **搜尋** ![ 搜尋] 圖示 ](../../media/search-icon.png) 。 在結果清單中，尋找 [ **報告訊息** ]，然後按一下 [ **新增** ]。
+4. 在出現的 [ **選取增益集** ] 頁面上，按一下 [ **搜尋** ] 方塊，輸入 **報告訊息**，然後按一下 [ **搜尋** ![ 搜尋] 圖示 ](../../media/search-icon.png) 。 在結果清單中，尋找 [ **報告訊息** ]，然後按一下 [ **新增**]。
 
    ![選取增益集搜尋結果](../../media/NewAddInScreen3.png)
 
-5. 在出現的對話方塊中，複查授權和隱私權資訊，然後按一下 [ **繼續** ]。
+5. 在出現的對話方塊中，複查授權和隱私權資訊，然後按一下 [ **繼續**]。
 
 6. 在出現的 [ **設定增益集** ] 頁面中，設定下列設定：
 
-   - **指派的使用者** ：選取下列其中一個值：
+   - **指派的使用者**：選取下列其中一個值：
 
      - **所有人** (預設) 
      - **特定使用者/群組**
      - **就我自己**
 
-   - **部署方法** ：選取下列其中一個值：
+   - **部署方法**：選取下列其中一個值：
 
-     - **Fixed (預設)** ：增益集會自動部署至指定的使用者，且無法加以移除。
-     - **可用** ：使用者可以在 **Home** \> **Get 增益集** \> **管理管理** 的位置安裝增益集。
-     - **選用** ：增益集會自動部署至指定的使用者，但是可以選擇加以移除。
+     - **Fixed (預設)**：增益集會自動部署至指定的使用者，且無法加以移除。
+     - **可用**：使用者可以在 **Home** \> **Get 增益集** \> **管理管理** 的位置安裝增益集。
+     - **選用**：增益集會自動部署至指定的使用者，但是可以選擇加以移除。
 
    ![設定增益集頁面](../../media/configure-add-in.png)
 
-   當您完成時，按一下 [ **部署** ]。
+   當您完成時，按一下 [ **部署**]。
 
-7. 在出現的 [ **部署報告郵件** ] 頁面中，您會看到進度報告，接著會出現部署增益集的確認。 閱讀資訊後，請按 **[下一步]** 。
+7. 在出現的 [ **部署報告郵件** ] 頁面中，您會看到進度報告，接著會出現部署增益集的確認。 閱讀資訊後，請按 **[下一步]**。
 
    ![部署報告郵件頁面](../../media/deploy-report-message-page.png)
 
-8. 在出現的 **宣告增益集** 頁面上，複查資訊，然後按一下 [ **關閉** ]。
+8. 在出現的 **宣告增益集** 頁面上，複查資訊，然後按一下 [ **關閉**]。
 
    ![宣告增益集頁面](../../media/announce-add-in-page.png)
 
@@ -155,7 +155,7 @@ ms.locfileid: "48877750"
 
 2. 尋找並選取 **報告訊息** 增益集。
 
-3. 在顯示的 [ **編輯報告訊息** ] 浮出視窗中，視組織的需要複查及編輯設定。 完成後，按一下 [儲存]。
+3. 在顯示的 [ **編輯報告訊息** ] 浮出視窗中，視組織的需要複查及編輯設定。 完成後，請按一下 **[儲存]**。
 
    ![報告訊息增益集的設定](../../media/EditReportMessageAddIn.png)
 

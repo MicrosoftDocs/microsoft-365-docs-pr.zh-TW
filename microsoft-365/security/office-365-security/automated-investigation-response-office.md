@@ -21,12 +21,12 @@ description: 請參閱 Office 365 的 Microsoft Defender 中的自動化調查�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: bbc51201f9d96744ed5bc236516158a75f7af272
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 5ca9ea941d073c7b199678631a9063cfbeae8907
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615225"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864897"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的自動化調查和回應運作方式
 
@@ -44,7 +44,7 @@ AIR 可讓您的安全性運作小組更有效率地運作。 AIR 功能包括�
 
 ## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>範例：使用者報告的網路釣魚郵件啟動調查行動手冊
 
-假設組織中的使用者收到他們認為是網路釣魚企圖的電子郵件。 使用者在報告這類訊息時，會使用 [報告訊息增益集](enable-the-report-message-add-in.md) 將其傳送至 Microsoft 進行分析。 提交也會傳送至您的系統，而且會顯示在 **提交** 視圖中 (先前稱為 **使用者報告** 的 view) 。 此外，使用者報告的訊息現在會觸發以系統為基礎的資訊性警示，這會自動啟動調查行動手冊。
+假設組織中的使用者收到他們認為是網路釣魚企圖的電子郵件。 使用者在報告這類訊息時，會使用 [報告訊息增益集](enable-the-report-message-add-in.md) 或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md) 將其傳送至 Microsoft 進行分析。 提交也會傳送至您的系統，而且會顯示在 **提交** 視圖中 (先前稱為 **使用者報告** 的 view) 。 此外，使用者報告的訊息現在會觸發以系統為基礎的資訊性警示，這會自動啟動調查行動手冊。
 
 在根調查階段中，會評估電子郵件的各個層面。 這些方面包括：
 

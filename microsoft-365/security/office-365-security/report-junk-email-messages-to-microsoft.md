@@ -16,12 +16,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解不同的方式，向 Microsoft 報告好的和壞的訊息和檔案，以進行分析。
-ms.openlocfilehash: df89e90998b5aa482dc1ea4003d53cf98b4b4d3f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 52ca0287e65fa338b06dc7df7c1e6c214af860c2
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527778"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865089"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>回報訊息和檔案至 Microsoft。
 
@@ -34,7 +34,8 @@ ms.locfileid: "49527778"
 |方法	|描述|
 |---|---|
 |[使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft](admin-submission.md)|在具有 Exchange Online 信箱的組織中，系統管理員建議的報表方法 (無法在獨立 EOP) 中使用。|
-|[啟用報告訊息增益集](enable-the-report-message-add-in.md)|可搭配 Outlook、outlook for Mac 和 outlook 網頁版上的 outlook (以前稱為 Outlook Web App) ，也是建議的增益集。 <p> 視您的訂閱而定，使用者使用增益集來報告的郵件可用於系統 [管理提交入口網站](admin-submission.md)、 [自動調查和回應 (AIR) 結果](air-view-investigation-results.md)、 [使用者報告的郵件報告](view-email-security-reports.md#user-reported-messages-report)及 [威脅瀏覽器](threat-explorer-views.md#email--submissions)。 <p> 您可以設定報告的郵件以複製或重新導向至您指定的信箱。 如需詳細資訊，請參閱 [使用者報送原則](user-submission.md)。|
+|[啟用報告訊息增益集](enable-the-report-message-add-in.md)|與 outlook 和 Outlook 網頁版上的 outlook 和 Outlook (以前稱為 Outlook Web App) 。 <p> 視您的訂閱而定，使用者使用增益集來報告的郵件可用於系統 [管理提交入口網站](admin-submission.md)、 [自動調查和回應 (AIR) 結果](air-view-investigation-results.md)、 [使用者報告的郵件報告](view-email-security-reports.md#user-reported-messages-report)及 [威脅瀏覽器](threat-explorer-views.md#email--submissions)。 <p> 您可以設定報告的郵件以複製或重新導向至您指定的信箱。 如需詳細資訊，請參閱 [使用者報送原則](user-submission.md)。
+|[啟用報表網路釣魚增益集](enable-the-report-phish-add-in.md)|與 outlook 和 Outlook 網頁版上的 outlook 和 Outlook (以前稱為 Outlook Web App) 。 <p> 視您的訂閱而定，使用者使用增益集來報告的郵件可用於系統 [管理提交入口網站](admin-submission.md)、 [自動調查和回應 (AIR) 結果](air-view-investigation-results.md)、 [使用者報告的郵件報告](view-email-security-reports.md#user-reported-messages-report)及 [威脅瀏覽器](threat-explorer-views.md#email--submissions)。 <p> 您可以設定報告的郵件以複製或重新導向至您指定的信箱。 如需詳細資訊，請參閱 [使用者報送原則](user-submission.md)。|
 |[安裝和使用 Microsoft Outlook 的垃圾郵件回報增益集](junk-email-reporting-add-in-for-microsoft-outlook.md)|只能在 Outlook 中運作。|
 |[在 web 上的 Outlook 中報告垃圾郵件和網路釣魚電子郵件](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|在適用于 Exchange Online 信箱的組織網頁上，使用 Outlook 網頁版內建的功能 (無法在獨立 EOP) 中使用。 <p> 使用者報告可在系統 [管理員提交入口網站](admin-submission.md)中使用的訊息。 <p> 您可以設定報告的郵件以複製或重新導向至您指定的信箱。 如需詳細資訊，請參閱 [使用者報送原則](user-submission.md)。|
 |[在 Outlook 中報告 iOS 和 Android 的垃圾郵件和網路釣魚電子郵件](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|使用適用于 Exchange Online 信箱之組織的 iOS 和 Android 的內建功能 (無法在獨立 EOP) 中使用。 <p> 使用者報告可在系統 [管理員提交入口網站](admin-submission.md)中使用的訊息。 <p> 您可以設定報告的郵件以複製或重新導向至您指定的信箱。 如需詳細資訊，請參閱 [使用者報送原則](user-submission.md)。|

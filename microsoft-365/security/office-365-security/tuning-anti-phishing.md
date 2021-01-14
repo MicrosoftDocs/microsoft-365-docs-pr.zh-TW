@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-defender-office365
 - MET150
 description: 系統管理員可以瞭解如何在 Microsoft 365 中識別網頁仿冒郵件的原因，以及如何防止未來的更多網路釣魚郵件。
-ms.openlocfilehash: 8a2c63d499317427b921d7786dd60b3ad4f18c42
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 758945c64966763991bfdfba0d70a60ca1c2ddca
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615381"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865041"
 ---
 # <a name="tune-anti-phishing-protection"></a>調整防網路釣魚保護
 
@@ -75,7 +75,7 @@ ms.locfileid: "49615381"
 
   如需設定指示，請參閱：
 
-  - [設定 SPF 以協助防止詐騙](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+  - [設定 SPF 以協助防止詐騙 ](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
   - [使用 DKIM 驗證從您自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)
 
@@ -83,7 +83,7 @@ ms.locfileid: "49615381"
 
 - 建議您盡可能將網域的電子郵件直接傳遞至 Microsoft 365。 換句話說，請將您的 Microsoft 365 網域的 MX 記錄指向 Microsoft 365。 Exchange Online Protection (EOP) 能夠在將其郵件直接傳遞至 Microsoft 365 時，為您的雲端使用者提供最佳的保護。 如果您必須在 EOP 前使用協力廠商的電子郵件清潔系統，請使用增強型介面篩選功能。 如需相關指示，請參閱 [在 Exchange Online 中的連接器增強型篩選](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)。
 
-- 使用者應將 [郵件報告](enable-the-report-message-add-in.md) 給 Microsoft，以進行訓練我們的系統。 系統管理員也應利用 [管理員提交](admin-submission.md) 功能。
+- 使用者應使用 [報告訊息增益集](enable-the-report-message-add-in.md) 或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md) ，向 Microsoft 報告訊息，以進行系統訓練。 系統管理員也應利用 [管理員提交](admin-submission.md) 功能。
 
 - 多重因素驗證 (MFA) 是防範已遭破壞之帳戶的最佳方式。 您應強烈考慮為您的所有使用者啟用 MFA。 針對分段的方法，在您為每個人啟用 MFA 之前，先為最機密的使用者啟用 MFA (系統管理員、行政人員等等 ) 。 如需相關指示，請參閱 [設定多重要素驗證](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)。
 

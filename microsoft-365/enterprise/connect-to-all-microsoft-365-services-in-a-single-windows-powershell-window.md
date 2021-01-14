@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: 摘要：在單一 PowerShell 視窗中連線至所有 Microsoft 365 服務。
-ms.openlocfilehash: 4128e360a3664d3a61559139bc4e6e346418fa61
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 4266b4f216b4c9df48f0c19d1d2123269eb32cae
+ms.sourcegitcommit: 00d231bf0100e843a5a93161695e87ceff9e1349
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087024"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49849586"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>在單一 PowerShell 視窗中連線至所有 Microsoft 365 服務
 
@@ -34,7 +34,7 @@ ms.locfileid: "49087024"
 >[!Note]
 >本文目前僅包含用來連線至全球 (+GCC) 雲端的命令。 附註提供有關如何連線到其他 Microsoft 365 雲端之文章的連結。
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 在您可以從 PowerShell 的單一執行個體管理所有 Microsoft 365 之前，請考慮下列先決條件：
   
@@ -243,7 +243,7 @@ Connect-AzureAD
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Exchange Online
 Import-Module ExchangeOnlineManagement
@@ -263,7 +263,7 @@ Connect-AzureAD
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Security & Compliance Center
 Import-Module ExchangeOnlineManagement
@@ -285,7 +285,7 @@ Connect-MsolService
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Exchange Online
 Import-Module ExchangeOnlineManagement
@@ -305,7 +305,7 @@ Connect-MsolService
 Connect-SPOService -Url https://$orgName-admin.sharepoint.com
 #Skype for Business Online
 Import-Module MicrosoftTeams
-$sfboSession = New-CsOnlineSession -UserName $acctName
+$sfboSession = New-CsOnlineSession
 Import-PSSession $sfboSession
 #Security & Compliance Center
 Import-Module ExchangeOnlineManagement
@@ -323,7 +323,7 @@ Connect-MicrosoftTeams
 Remove-PSSession $sfboSession ; Disconnect-SPOService ; Disconnect-MicrosoftTeams 
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [使用 PowerShell 連線至 Microsoft 365](connect-to-microsoft-365-powershell.md)
 - [使用 PowerShell 管理 SharePoint Online](manage-sharepoint-online-with-microsoft-365-powershell.md)

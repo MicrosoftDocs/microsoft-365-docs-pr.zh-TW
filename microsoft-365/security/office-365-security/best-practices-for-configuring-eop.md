@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: 請遵循下列針對獨立 Exchange Online Protection (EOP) 的最佳作法建議，以便自行設定以取得成功，並避免常見的設定錯誤。
-ms.openlocfilehash: abf68e361293b2a55cd0a382cc376cbfe21236e7
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: a229f8a269037296fa2b97ff7211343549b33685
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845945"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864885"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>設定獨立 EOP 的最佳作法
 
@@ -48,7 +48,7 @@ ms.locfileid: "48845945"
 |[設定 SPF 以協助防止詐騙 ](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|是|是||
 |[使用 DKIM 驗證從您在 Office 365 中的自訂網域傳送的輸出電子郵件](use-dkim-to-validate-outbound-email.md)|是|是||
 |[在 Office 365 中使用 DMARC 來驗證電子郵件](use-dmarc-to-validate-email.md)|是|是|使用 `action=quarantine` Standard 和 `action=reject` Strict。|
-|部署 [報告訊息增益集](enable-the-report-message-add-in.md) ，以改進使用者對可疑電子郵件的報告|是|是||
+|部署 [報告訊息載入](enable-the-report-message-add-in.md) 宏或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md) ，以改進使用者對可疑電子郵件的報告|是|是||
 |排程惡意程式碼和垃圾郵件報告|是|是||
 |應禁止或監視自動轉送至外部網域|是|是||
 |應啟用整合審計|是|是||
@@ -74,7 +74,7 @@ ms.locfileid: "48845945"
 
 建立郵件流程規則 (也稱為傳輸規則) 或自訂篩選以滿足您的業務需求。
 
-在實際執行環境中部署新規則時，請先選取其中一個測試模式，以查看規則的效果。 當您認為規則是以預期的方式運作後，請將規則模式變更為 [ **強制執行** ]。
+在實際執行環境中部署新規則時，請先選取其中一個測試模式，以查看規則的效果。 當您認為規則是以預期的方式運作後，請將規則模式變更為 [ **強制執行**]。
 
 當您部署新規則時，請考慮新增其他 [ **產生** 附隨報告] 動作，以監視規則採取的動作。
 

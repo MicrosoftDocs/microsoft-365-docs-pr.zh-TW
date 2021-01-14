@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何尋找及使用貴組織的電子郵件安全性報告。 電子郵件安全性報告可在安全性 & 規範中心中取得。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e98e59d39744d67427a272f456a03fc123034aa7
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 568144c449d2f1a70082130cc847d48c3486d9da
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659474"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49865101"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>檢視安全性與合規性中心內的電子郵件安全性報告
 
@@ -61,7 +61,7 @@ ms.locfileid: "49659474"
 
 - **建立時間**
 - **User ID**
-- **Action**
+- **動作**
 
 若要回到報表檢視，請按一下 [ **查看報告**]。
 
@@ -228,7 +228,7 @@ ms.locfileid: "49659474"
 - **寄件者位址**
 - **收件者位址**
 - **事件類型**
-- **Action**
+- **動作**
 - **主旨**
 
 如果您按一下 [詳細資料] 表格中的 [ **篩選** ]，您可以使用下列篩選器修改結果：
@@ -267,7 +267,7 @@ ms.locfileid: "49659474"
 - **欺騙寄件者**
 - **True 寄件者**
 - **寄件者 IP**
-- **Action**
+- **動作**
 - **訊息計數**
 
 若要回到報表檢視，請按一下 [ **查看報告**]。
@@ -479,7 +479,7 @@ Microsoft Defender for Office 365 提供 **URL 威脅防護報告** 。 如需�
 
 ## <a name="user-reported-messages-report"></a>使用者報告的訊息報告
 
-「 **使用者報告的訊息** 報告」顯示使用者已使用 [報告郵件增益集](enable-the-report-message-add-in.md)舉報為垃圾郵件、網路釣魚企圖或良好郵件的電子郵件資訊。
+「 **使用者報告的訊息** 報告」顯示使用者已使用 [報告郵件增益集](enable-the-report-message-add-in.md) 或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md)舉報為垃圾郵件、網路釣魚企圖或良好郵件的相關資訊。
 
 詳細資料可用於每封郵件，包括傳遞原因、為您的組織設定的垃圾郵件原則例外狀況或郵件流程規則。 若要查看詳細資料，請選取 [使用者報告] 清單中的專案，然後查看 [ **摘要** ] 和 [ **詳細資料** ] 索引標籤上的資訊。
 
@@ -503,7 +503,7 @@ Microsoft Defender for Office 365 提供 **URL 威脅防護報告** 。 如需�
 - **組織管理**
 - **安全性系統管理員**
 - **安全性讀取者**
-- **全域讀取器**
+- **全域讀取者**
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 

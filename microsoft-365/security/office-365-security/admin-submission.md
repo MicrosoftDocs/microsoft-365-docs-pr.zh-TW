@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
-ms.openlocfilehash: 7327768780e5db16e09e2b709c9c11344573c404
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 432a245530d7906ae8babbc54176480d36315351
+ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659822"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49864945"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -190,7 +190,7 @@ ms.locfileid: "49659822"
 
 ## <a name="view-user-submissions-to-microsoft"></a>查看 Microsoft 的使用者報送
 
-如果您已部署 [報表訊息增益集](enable-the-report-message-add-in.md)，或人員使用 [網頁型 Outlook 中內建的報表](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)，您可以在 [ **使用者報送** ] 索引標籤上看到使用者的報告。
+如果您已部署 [報表訊息增益集](enable-the-report-message-add-in.md)、 [報告網路釣魚增益集](enable-the-report-phish-add-in.md)或人員使用 [網頁型 Outlook 中內建的報表](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)，您可以在 [ **使用者報送** ] 索引標籤上看到要報告的使用者。
 
 1. 在 [安全性 & 規範中心] 中，移至 [ **威脅管理** \> **提交**]。
 
