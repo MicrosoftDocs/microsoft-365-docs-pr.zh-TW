@@ -521,6 +521,8 @@
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
             - name: 啟用報告訊息增益集
               href: ./office-365-security/enable-the-report-message-add-in.md
+            - name: 啟用報告網路釣魚增益集
+              href: ./office-365-security/enable-the-report-phish-add-in.md
             - name: 安裝及使用垃圾郵件回報增益集
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
             - name: 獨立版 EOP 中的郵件流程規則 (傳輸規則)
