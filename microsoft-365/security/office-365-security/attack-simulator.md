@@ -19,21 +19,18 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用攻擊模擬器，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 方案2組織中執行模擬網路釣魚和密碼攻擊。
-ms.openlocfilehash: 2ffec891f7b1021f3c6c51b003c78aacb0ec0d6a
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: f07cbbdac5d9b988301e9dfc3cb4446f7b44fca6
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794529"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49871094"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻擊模擬器
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 如果您的組織有 Microsoft Defender for Office 365 Plan 2 （包括 [威脅調查和回應功能](office-365-ti.md)），您可以使用安全性 & 規範中心內的攻擊模擬器，在您的組織中執行實際的攻擊案例。 這些模擬的攻擊可協助您找出並找出有漏洞的使用者，而真實的攻擊會影響您的下一行。 若要深入瞭解，請閱讀本文。
-
-> [!NOTE]
-> 攻擊類比和訓練相關的資料會與其他 Microsoft 365 服務的客戶資料一起儲存。 如需詳細資訊，請參閱 [Microsoft 365 資料位置](/microsoft-365/enterprise/o365-data-locations)。
 
 > [!TIP]
 > 攻擊模擬訓練可用於 Microsoft 365 的安全性中心的公開預覽。 請參閱 [使用 Microsoft Defender For Office 365 模擬網路釣魚攻擊](attack-simulation-training.md) 以深入瞭解。
@@ -49,6 +46,8 @@ ms.locfileid: "49794529"
 - 您的帳戶必須設定為進行多重要素驗證 (MFA) 以在攻擊模擬器中建立及管理活動。 如需相關指示，請參閱 [設定多重要素驗證](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)。
 
 - 網路釣魚活動會收集事件，並處理30天的事件。 在您啟動市場活動之後，歷史活動資料將可長達90天。
+
+- 攻擊類比和訓練相關的資料會與其他 Microsoft 365 服務的客戶資料一起儲存。 如需詳細資訊，請參閱 [Microsoft 365 資料位置](/microsoft-365/enterprise/o365-data-locations)。
 
 - 攻擊模擬程式沒有對應的 PowerShell Cmdlet。
 

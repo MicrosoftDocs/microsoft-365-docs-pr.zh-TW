@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 88a832f6c4e17756bfb25ef5cb7c4c5ecedaf2c0
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: ca919798480698f92bba094c3755b3eccce30888
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794385"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867967"
 ---
 # <a name="adjust-settings-after-enrollment"></a>註冊之後調整設定
 
@@ -32,9 +32,9 @@ ms.locfileid: "49794385"
 
 - Autopilot 部署設定檔：如果您使用任何 Autopilot 原則，請將每個原則更新為排除 **現代的工作場所裝置-所有** Azure AD 群組。 若要更新這些設定，請在 [**工作分派**] 底下的 [**排除的群組**] 區段中，選取 **新式的工作場所裝置-** 在 Microsoft 管理的桌上型電腦註冊期間建立的所有 Azure AD 群組。 Microsoft 受管理的桌面也會建立 Autopilot 設定檔，在 **新式的 Workplace Autopilot 設定檔**) 中，它會有 "新式 workplace" (。 當您更新自己的 Autopilot 設定檔時，請確定您 *不會* 排除 **新式的工作區裝置-** 從 Microsoft Managed Desktop 所建立之 **新式 workplace Autopilot 設定檔** 中的所有 Azure AD 群組。
 
-- 條件式存取原則：針對您已建立的條件式存取原則，請排除 **新式的 Workplace Service 帳戶** Azure AD 群組。 如需步驟，請參閱 [條件式存取：使用者和群組](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。 Microsoft 受管理的桌面也會建立一些條件式存取原則，其中的名稱 (例如新式工作中的「現代辦公」，例如新式工作中的「 **安全工作站** 」) 。 當您更新您自己的條件式存取原則時，請確定 *不要* 排除 **現代的工作場所裝置-** 從 Microsoft Managed Desktop 建立的任何原則中的所有 Azure AD 群組。
+- 條件式存取原則：如果您在 Microsoft 受管理的桌上型電腦註冊後，針對 Azure AD、Microsoft Intune 或 Microsoft Defender for Endpoint 建立相關的任何新的條件式存取原則，請將 **新式的 Workplace Service 帳戶** 從這些原則中排除。 如需步驟，請參閱 [條件式存取：使用者和群組](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。 Microsoft 受管理的桌面維護個別的條件式存取原則，以限制存取這些帳戶。 若要查看 Microsoft 受管理的電腦條件式存取原則 (**新式工作場所–安全工作站**) ，請移至 Microsoft 端點管理員，並流覽至 [**端點安全性**] 中的 [**條件式存取**]。 請勿修改由 Microsoft Managed Desktop 所建立且名稱中包含 "新式 Workplace" 的任何 Azure AD 條件式存取原則。
 
-- 多重要素驗證：請確定您需要多重因素驗證的任何條件式存取原則排除 **現代的 Workplace Service 帳戶** Azure AD 群組。 如需詳細資訊，請參閱 [條件式存取原則](../get-ready/readiness-assessment-fix.md#conditional-access-policies) 和 [條件式存取：針對所有使用者需要 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)。
+- 多重要素驗證：如果您在 Microsoft 受管理的桌上型電腦註冊後，在與 Azure AD、Intune 或 Microsoft Defender for Endpoint 相關的條件式存取原則中建立任何新的多重要素驗證需求，請從這些位置排除 **新式的 Workplace Service 帳戶** Azure AD 群組。 如需步驟，請參閱 [條件式存取：使用者和群組](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。 Microsoft 受管理的桌面維護個別的條件式存取原則，以限制此群組的成員存取權。 若要查看 Microsoft 受管理的電腦條件式存取原則 (**新式工作場所-**) ，請移至 Microsoft 端點管理員，並流覽至 [**端點安全性**] 中的 [**條件式存取**]。 
 
 - Windows 10 更新環：針對您已建立的任何 Windows 10 更新鈴聲原則，從每個原則中排除 **所有** Azure AD 群組。 如需步驟，請參閱 [建立和指派更新環](https://docs.microsoft.com/mem/intune/protect/windows-10-update-rings#create-and-assign-update-rings)。 Microsoft 受管理的桌面也會建立一些更新環原則，所有的更新環原則，都是「新式工作」的名稱 (例如 **新式的工作區更新原則 [廣泛的]**、 **新式的工作區更新原則 [Fast]**、 **新式的工作區更新原則 [First]**，以及 **新式的工作區更新原則 [Test]**) 。 當您更新您自己的原則時，請確定您 *未* 排除 **新式的工作場所裝置-所有** Azure AD 群組從 Microsoft 受管理的桌面所建立。
 

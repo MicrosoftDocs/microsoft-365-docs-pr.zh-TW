@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender 防病毒偵測到的威脅
+title: Microsoft Defender 防毒軟體偵測到的威脅
 f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 瞭解 Microsoft Defender 防毒軟體如何保護您的 Windows 裝置免受軟體威脅（如病毒、惡意程式碼和間諜軟體的威脅）。
-ms.openlocfilehash: e3c8a1071625bba41af5f3cccd50f8484acac18d
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 1653aef6967cdf76e6e19acda158fb29758280a8
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376680"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870896"
 ---
-# <a name="threats-detected-by-microsoft-defender-antivirus"></a>Microsoft Defender 防病毒偵測到的威脅
+# <a name="threats-detected-by-microsoft-defender-antivirus"></a>Microsoft Defender 防毒軟體偵測到的威脅
 
 Microsoft Defender 防毒軟體會保護您的 Windows 裝置免受軟體威脅，例如病毒、惡意程式碼和間諜軟體的威脅。
 
@@ -64,9 +64,12 @@ Microsoft Defender 防病毒是作業系統的一部分，且已在執行 Window
 
 - 使用者 [在 Windows 中接收通知](https://support.microsoft.com/windows/8942c744-6198-fe56-4639-34320cf9444e)。 
 - 偵測列于 [**保護歷史記錄**] 頁面上的 [ [Windows 安全性] 應用程式](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)中。  
-- 如果您已 [保護 Windows 10 裝置](secure-win-10-pcs.md)，並已 [在 Intune 中註冊](/mem/intune/enrollment/windows-enrollment-methods)，您會在 [作用中 **威脅**] 頁面上看到 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">microsoft 365 系統管理中心</a>的威脅偵測和洞察力，您可以透過選取 **健康** 情況 **Home** 威脅 & 防病毒) ，從首頁上的 **microsoft Defender 防病毒** 卡 (或流覽窗格中存取  >  **Threats & antivirus** 。
+- 如果您已 [保護 Windows 10 裝置](secure-win-10-pcs.md)，並已 [在 Intune 中註冊](/mem/intune/enrollment/windows-enrollment-methods)，而且您的組織已註冊了800或更少的裝置，您會在 [**威脅與防病毒**] 頁面上的 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">microsoft 365 系統管理中心</a>中看到威脅偵測和洞察力，您可以透過選取 **健康** 情況威脅 & 防病毒) 來存取首頁上的 **microsoft Defender 防病毒** 卡 (或流覽窗格  >   。
+
+    如果您的組織已在 Intune 中註冊超過800個裝置，系統會提示您從 [Microsoft 端點管理員](/mem/endpoint-manager-overview) （而不是從 **威脅和防病毒** 頁面）中查看威脅偵測和洞察力。
+ 
     > [!NOTE]
-    > **Microsoft Defender 防毒軟體** 卡和作用中 **威脅** 頁面會以分階段的方式展開，所以您可能無法立即進行存取。
+    > **Microsoft Defender 防毒軟體** 卡和 **威脅和防病毒** 頁面以分階段的方式展開，所以您可能不會立即存取它們。
 
 在大多數情況下，使用者不需要採取任何動作。 在裝置上偵測到惡意檔或程式之後，Microsoft Defender 防毒程式會封鎖它，並防止其執行。 此外，新偵測到的威脅也會新增至防毒軟體和反惡意程式碼引擎，讓其他裝置和使用者也受到保護。  
 

@@ -17,19 +17,19 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: abb33b85717e63cb78a2b1edfd86584fd165a71f
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: f8f105215b23ec49318c133714e758e2a2a9c1df
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701012"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870918"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>評估 Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 > [!IMPORTANT]
-> 評估 Microsoft Defender for Office 365 不久會是公開預覽。 在沒有服務等級協定的情況下提供此預覽版本。 某些功能可能不受支援，或可能具有有限的功能。
+> Microsoft Defender for Office 365 評估是在公開預覽中。 在沒有服務等級協定的情況下提供此預覽版本。 某些功能可能不受支援，或可能具有有限的功能。
 
 進行完整的安全性產品評估，可協助您瞭解升級和購買的決策。 它可協助您嘗試安全性產品的功能，以評估其日常工作中的安全性操作小組的運作方式。
 
@@ -56,7 +56,7 @@ ms.locfileid: "49701012"
 - 分析動作報告
 - 展示評估結果
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始之前
 
 ### <a name="licensing"></a>授權
 
