@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 系統管理員角色會與商務功能對應，並提供在系統管理中心執行特定工作的權限。 例如，服務系統管理員可以透過系統管理中心開啟支援票證。
-ms.openlocfilehash: 774edf1a024bd7aab7f35d5635c84b355fc0ef5a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: ddea8a06af2b529a369ea045913b639b84c6f9d4
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682654"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867979"
 ---
 # <a name="about-admin-roles"></a>關於系統管理員角色
 
@@ -88,9 +88,9 @@ Microsoft 365 系統管理中心可讓您管理 Azure AD 角色和 Microsoft Int
   
 合作夥伴可以指派以下角色： 
   
-- **完全管理**：擁有等同於全域系統管理員的權限，但透過合作夥伴中心管理多重要素驗證除外。
+- **系統管理代理人**：擁有等同於全域系統管理員的權限，但透過合作夥伴中心管理多重要素驗證除外。
 
-- **有限系統管理**：等同於服務台系統管理員的權限。
+- **服務台代理人**：等同於服務台系統管理員的權限。
 
 在合作夥伴可以將這些角色指派給使用者之前，您必須先將該合作夥伴新增為您帳戶的委派系統管理員。 此程序是由獲授權的合作夥伴初始化。 合作夥伴會傳送電子郵件給您，詢問您是否想要授與其權限，以做為委派的系統管理員。如需指示，請參閱[授權或移除合作夥伴關係](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)。
   

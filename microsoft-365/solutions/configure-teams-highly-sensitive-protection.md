@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何為小組部署高敏感度資料保護。
-ms.openlocfilehash: 6354de5a37547d14b16a4d6a0857ddc390d531e6
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750806"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870848"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>為小組設定高敏感度資料保護
 
@@ -33,7 +33,7 @@ ms.locfileid: "49750806"
 
 高敏感度層可提供基準層所未提供的下列額外保護：
 
-- 適用於小組的敏感度標籤，此標籤可讓您開啟或關閉來賓共用，並將未受管理裝置的 SharePoint 內容存取權限制為僅限網頁版。 此標籤也可用來分類和加密檔案。
+- 適用於小組的敏感度標籤，此標籤可讓您開啟或關閉來賓共用，並將未受管理裝置的 SharePoint 內容存取權限封鎖。 此標籤也可用來分類和加密檔案。
 - 限制更多的預設共用連結類型
 - 只有小組擁有者可以建立私人頻道。
 - 已關閉相關聯 SharePoint 網站的存取要求。
@@ -63,7 +63,7 @@ ms.locfileid: "49750806"
 1. 開啟 [Microsoft 365 合規性中心](https://compliance.microsoft.com)。
 2. 在 **[解決方案]** 底下，按一下 **[資訊保護]**。
 3. 按一下 **[建立標籤]**。
-4. 為標籤命名。 我們建議命名為 **敏感度**，但如果該名稱已在使用中，則可以選擇不同名稱。
+4. 為標籤命名。 我們建議命名為 **高敏感度**，但如果有已經使用的名稱，則可以選擇不同名稱。
 5. 新增顯示名稱和描述，然後按 [下一步 **]**。
 6. 在 [定義此標籤頁面的範圍 **]** 上，選取 [檔案和電子郵件 **]** 和 [群組和網站 **]**，然後按 [下一步 **]**。
 7. 在 [選擇檔案和電子郵件的保護設定 **]** 頁面上，選取 [加密檔案和電子郵件 **]**，然後按 [下一步 **]**。

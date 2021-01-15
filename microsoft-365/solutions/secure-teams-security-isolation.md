@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用唯一的敏感度標籤來建立小組以獲得安全性。
-ms.openlocfilehash: 03252cad8449ee83cd757fac3ae74db6df68bcfe
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: d5cfe33d4f254832ccf26552d8ca392cf1dc440c
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751140"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870976"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>為小組設定安全性隔離
 
@@ -106,7 +106,7 @@ ms.locfileid: "49751140"
 1. 開啟 [Microsoft 365 合規性中心](https://compliance.microsoft.com)。
 2. 在 **[解決方案]** 底下，按一下 **[資訊保護]**。
 3. 按一下 **[建立標籤]**。
-4. 為標籤命名。 我們建議命名為 **敏感度**，但如果該名稱已在使用中，則可以選擇不同名稱。
+4. 為標籤命名。 我們建議您將其命名為將與您一起使用的小組。
 5. 新增顯示名稱和描述，然後按 [下一步 **]**。
 6. 在 [定義此標籤頁面的範圍 **]** 上，選取 [檔案和電子郵件 **]** 和 [群組和網站 **]**，然後按 [下一步 **]**。
 7. 在 [選擇檔案和電子郵件的保護設定 **]** 頁面上，選取 [加密檔案和電子郵件 **]**，然後按 [下一步 **]**。
