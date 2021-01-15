@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 設定 Microsoft 合規性管理員使用者許可權和角色，以及設定自動的動作測試。 管理使用者記錄並篩選儀表板視圖。
-ms.openlocfilehash: 9a09e12457d39e2f4aab99d3bec68b77c1a3a975
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: e130fc3438fc8b4674b752e25fc473ee0dd55ae4
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572392"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870908"
 ---
 # <a name="get-started-with-compliance-manager"></a>開始使用 [合規性管理員]
 
@@ -49,28 +49,26 @@ Access 合規性管理員的直接連結為 [https://compliance.microsoft.com/co
 
 ### <a name="where-to-set-permissions"></a>設定許可權的位置
 
-擁有組織全域系統管理員角色的人員可以在 Microsoft 365 規範中心以及 Azure Active Directory (Azure AD) 中設定使用者許可權。
+擁有組織之全域系統管理員角色的人員可以設定合規性管理員的使用者權限。 您可以在 Office 365 安全性 & 規範中心以及 Azure Active Directory (Azure AD) 中設定許可權。
 
 > [!NOTE]
 > 美國政府社區中的客戶 (GCC) 高環境只能在 Azure AD 中為合規性管理員設定使用者權限和角色。 請參閱下列 Azure AD 指示和角色類型定義。
 
-若要在 Microsoft 365 規範中心內設定許可權並指派角色，請遵循下列步驟：
+若要在 Office 365 安全性 & 規範中心設定許可權並指派角色，請執行下列步驟：
 
-1. 從 [Microsoft 365 規範中心](https://compliance.microsoft.com/)的任何地方，選取左側導覽的 **許可權**。
+1. 移至 [Office 365 Security & 合規性中心](https://protection.office.com/) ，然後選取左側導覽的 **許可權** 。
 
-2. 在最上方的位置，請在 [ **Office 365 中選取要查看及管理角色的連結]，請移至這裡。** 新的索引標籤會以 Office 365 安全性 & 規範中心開啟 ([瞭解您](microsoft-365-compliance-center.md#frequently-asked-questions) 已重新導向) 的原因。
+2. 尋找您要新增一或多個使用者的角色群組，然後選取 [組名] 左側的方塊。  (請參閱 [下列角色和相關功能的清單](#role-types)。 會模仿角色名稱的角色群組名稱。 ) 
 
-3. 尋找您要新增一或多個使用者的角色群組，然後選取 [組名] 左側的方塊。  (請參閱 [下列角色和相關功能的清單](#role-types)。 會模仿角色名稱的角色群組名稱。 ) 
+3. 在該群組的彈出窗格上，選取 [**成員**] 標題底下的 [**編輯**]。
 
-4. 在該群組的彈出窗格上，選取 [**成員**] 標題底下的 [**編輯**]。
+4. 選取 **[選擇成員**]。 會出現另一個快顯視窗。
 
-5. 選取 **[選擇成員**]。 會出現另一個快顯視窗。
+5. 選取 [ **+ 新增** ] 選擇一或多個要新增至群組的使用者。
 
-6. 選取 [ **+ 新增** ] 選擇一或多個要新增至群組的使用者。
+6. 選取您要新增之名稱旁邊的核取方塊，然後選取底部的 [ **新增** ] 按鈕。
 
-7. 選取您要新增之名稱旁邊的核取方塊，然後選取底部的 [ **新增** ] 按鈕。
-
-8. 當您完成指派使用者時，請選取 [ **完成**]，然後選取 [ **儲存**]，然後按一下 [ **關閉**]。
+7. 當您完成指派使用者時，請選取 [ **完成**]，然後選取 [ **儲存**]，然後按一下 [ **關閉**]。
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>有關 Office 365 安全性 & 規範中心的詳細資訊
 
@@ -361,5 +359,5 @@ Microsoft 365 合規性中心的合規性管理員設定可讓您啟用及停用
 
 **深入瞭解：** 請 [參閱如何使用評估範本](compliance-manager-templates.md)。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>後續步驟
 [設定評估](compliance-manager-assessments.md)，以自訂合規性管理員。

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 針對系統管理員：瞭解如何啟用自動擴充封存，可為使用者提供 Exchange Online 信箱的無限存放區。 您可以為整個組織啟用自動展開的封存，也可以只為特定使用者啟用此功能。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 237e3032b21f6fe0d3a97d2ae41c527e500fb2e0
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: f95d635c6f6dc89e91b98e9219b491ec34a3e5d7
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790081"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49867991"
 ---
 # <a name="enable-unlimited-archiving---admin-help"></a>啟用無限封存-系統管理協助
 
@@ -39,6 +39,8 @@ ms.locfileid: "49790081"
 - 您也可以使用 PowerShell 來啟用封存信箱。 請參閱 [More information](#more-information) 一節，以取得 PowerShell 命令的範例，您可以用來為組織中的所有使用者啟用封存信箱。
 
 - 自動展開封存也支援共用信箱。 若要啟用共用信箱的封存，則需要 exchange Online Plan 2 授權或 Exchange online Plan 1 授權與 Exchange Online 封存授權。
+
+- 自動展開封存可防止您復原或還原非使用中的 [信箱](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes)。 這表示如果您為信箱啟用自動展開的封存，而且信箱在日後變為非使用中，則您將無法透過將內容合併至現有的信箱) 來 [復原非使用中的信箱](recover-an-inactive-mailbox.md) () 或將 [其還原](restore-an-inactive-mailbox.md) (。 若在非使用中的信箱上啟用自動擴充封存，恢復資料的唯一方法是使用 Microsoft 365 規範中心的「內容搜尋」工具，從信箱中匯出資料，然後匯入至另一個信箱。 如需詳細資訊，請參閱非使用中 [信箱](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives)的「非使用中信箱和自動展開的封存」一節。
 
 - 您無法使用 Exchange 系統管理中心或安全性 & 規範中心來啟用自動擴充封存。 您必須使用 Exchange Online PowerShell。 若要使用遠端 PowerShell 連線到您的 Exchange Online 組織，請參閱 [connect To Exchange online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)。
 
@@ -93,8 +95,16 @@ Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 ```
 
-值  `True` 表示已為使用者啟用自動展開封存。 
+值  `True` 表示已為使用者啟用自動展開封存。
   
+若要判斷是否已啟用非使用中信箱的自動展開封存，請在 Exchange Online PowerShell 中執行下列命令。
+  
+```powershell
+Get-Mailbox -InactiveMailboxOnly | FL UserPrincipalName,AutoExpandingArchiveEnabled
+```
+
+值，  `True` 表示已啟用非使用中信箱的自動展開封存。 值 `False` 表示未啟用自動展開封存。
+
 啟用自動擴充封存後，請記住下列事項：
   
 - 如果您執行 **Set-OrganizationConfig AutoExpandingArchive** 命令來啟用組織的自動擴充封存，您不需要在個別的信箱上執行 **Enable-Mailbox AutoExpandingArchive** 。 執行 **Set-OrganizationConfig** Cmdlet 以啟用組織的自動展開封存時，不會將使用者信箱上的  *AutoExpandingArchiveEnabled*  屬性變更為 `True` 。
@@ -113,15 +123,13 @@ Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 
 - 在您為組織或特定使用者開啟自動展開的封存後，封存信箱會在封存信箱 (包含 [可復原的專案] 資料夾時，轉換為自動展開封存) 達到 90 GB。 最多可能需要30天的時間，才能布建額外的儲存空間。
 
-- 當您開啟自動展開的封存功能之後，就無法將其關閉。
+- 當您開啟自動展開的封存功能之後，就無法將其關閉。 此外，管理員無法調整自動擴充封存的儲存配額。
 
 - 在 Exchange 混合式部署中，針對具有內部部署主要信箱的使用者，支援自動擴充封存。 不過，啟用雲端式封存信箱的自動展開封存後，您就無法將封存信箱的信箱移回內部部署 Exchange 組織。 在任何版本的 Exchange Server 中，都不支援自動展開封存的內部部署信箱。
 
 - 如需使用者可用於存取其封存信箱中其他儲存區之專案的 Outlook 用戶端清單，請參閱 [無限制](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)封存的「outlook 要求存取自動擴充的封存中的專案」一節。
 
 - 如先前所述，當您執行 **Enable-Mailbox AutoExpandingArchive** 命令時，會將 10 GB 新增至使用者主要封存信箱的儲存配額 (及 [可復原的專案] 資料夾中) 。 這會提供額外的儲存空間，直到已布建自動擴充的儲存空間， (可能需要長達30天) 。 當您執行 **Set-OrganizationConfig AutoExpandingArchive** 以啟用組織中所有信箱的自動擴充封存功能時，並不會新增此額外的儲存空間。 如果您已對整個組織啟用自動展開的封存，但需要為特定使用者新增額外的 10 GB 儲存空間，您可以在該信箱上執行 **Enable-Mailbox AutoExpandingArchive** 命令。 您會收到錯誤訊息，指出已經啟用自動擴充封存，但額外的儲存空間會新增至信箱。
-
-- 系統管理員無法調整儲存空間配額。
 
 > [!IMPORTANT]
 > [！注意] 只有針對個別使用者或共用信箱所用的信箱支援自動擴充封存，但其增長率並未超過每日 1 GB。 不允許使用日誌記錄、傳輸規則或自動轉寄規則，將郵件複製到封存信箱以進行封存。 使用者的封存信箱僅供該使用者使用。 Microsoft 保留在使用者的封存信箱用來儲存其他使用者的封存資料或其他不適當用途的情況下，拒絕無限封存的權利。
