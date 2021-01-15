@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 0e1189634857921d9c0e3df0683bd6e7758cd058
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: b5c5757c5e07e6edd546c0553028ccf56eb1b4f8
+ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289468"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "49840310"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Microsoft 受管理的電腦服務描述
 
@@ -29,7 +29,7 @@ Microsoft 受管理的電腦是一種服務，可讓您的使用者使用安全�
 - 為您的使用者提供 IT 支援
 - 適用于 IT 專業人員的操作支援
 
-如需 Microsoft 受管理的電腦所含特定服務的詳細資訊，請參閱本節的其他主題。 如果您已經決定要使用 Microsoft 受管理的電腦，[ 準備註冊 Microsoft 受管理的電腦中 ](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/)的主題，會提供您準備加入該項服務的步驟。
+如需 Microsoft 受管理的電腦所含特定服務的詳細資訊，請參閱本節的其他文章。 如果您已經決定要使用 Microsoft 受管理的電腦，[ 準備註冊 Microsoft 受管理的電腦中 ](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/)的文章，會提供您準備加入該項服務的步驟。
 
 - [Microsoft 受管理的電腦支援的地區和語言](regions-languages.md) 說明服務支援哪些地區和語言。
 - 為了保證使用者的最佳體驗，Microsoft 受管理的電腦只支援特定裝置。 [[程式裝置]](device-list.md) 可指定您可以搭配服務使用的確切裝置模型和設定，無論您是提供客戶，還是與合作夥伴合作。
