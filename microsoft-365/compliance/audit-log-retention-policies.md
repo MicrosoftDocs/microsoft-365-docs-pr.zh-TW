@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 稽核記錄保留原則是 Microsoft 365 中新增的「進階稽核」功能的一部分。 稽核記錄保留原則可讓您指定要在組織中保留稽核記錄的時間長度。
-ms.openlocfilehash: c2449ab90d04fd44909999d25b940ee4d2758b15
-ms.sourcegitcommit: 3cdb670f10519f7af4015731e7910954ba9f70dc
+ms.openlocfilehash: c106024e5426972f6637d6226b385d1179516d4d
+ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48753332"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49870942"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理稽核記錄保留原則
 
@@ -36,10 +36,10 @@ ms.locfileid: "48753332"
 
 ## <a name="default-audit-log-retention-policy"></a>預設稽核記錄保留原則
 
-Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記錄保留原則。 此原則會保留所有 Exchange、SharePoint 和 Azure Active Directory 稽核記錄一年。 此預設原則會保留包含 **Workload** 屬性 (這是發生活動所在的服務) 的 **AzureActiveDirectory** 、 **Exchange** 或 **SharePoint** 值的稽核記錄。 您無法修改預設原則。 如需預設原則中所包含每個工作負載的記錄類型的清單，請參閱本文的[詳細資訊](#more-information)一節。
+Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記錄保留原則。 此原則會保留所有 Exchange、SharePoint 和 Azure Active Directory 稽核記錄一年。 此預設原則會保留包含 **Workload** 屬性 (這是發生活動所在的服務) 的 **AzureActiveDirectory**、**Exchange** 或 **SharePoint** 值的稽核記錄。 您無法修改預設原則。 如需預設原則中所包含每個工作負載的記錄類型的清單，請參閱本文的[詳細資訊](#more-information)一節。
 
 > [!NOTE]
-> 預設的稽核記錄保留原則僅適用獲指派 Office 365 或 Microsoft 365 E5 授權或擁有 Microsoft 365 E5 合規性或 E5 電子文件探索和稽核附加元件授權的使用者所執行活動的稽核記錄。 如果組織中有非 E5 使用者，其對應的稽核記錄則會保留 90 天。
+> 預設的稽核記錄保留原則僅適用獲指派 Office 365 或 Microsoft 365 E5 授權或擁有 Microsoft 365 E5 合規性或 E5 電子文件探索和稽核附加元件授權的使用者所執行活動的稽核記錄。 如果組織中有非 E5 使用者或來賓使用者，其對應的稽核記錄會保留 90 天。
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>在建立稽核記錄保留原則之前
 
@@ -55,13 +55,13 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 
 1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)，並使用獲指派安全性與合規性中心中的「組織組態」角色的使用者帳戶登入。
 
-2. 在 Microsoft 365 合規性中心的左窗格中，按一下 [顯示全部 **]** ，然後按一下 [稽核 **]** 。
+2. 在 Microsoft 365 合規性中心的左窗格中，按一下 [顯示全部 **]**，然後按一下 [稽核 **]**。
 
     [稽核 **]** 頁面隨即顯示。
 
     ![合規性中心中的稽核記錄搜尋頁面](../media/AuditLogRetentionPolicy1.png)
 
-3. 按一下 [建立稽核保留原則 **]** ，然後在飛出視窗頁面中填寫下列欄位：
+3. 按一下 [建立稽核保留原則 **]**，然後在飛出視窗頁面中填寫下列欄位：
 
     ![稽核保留原則飛出視窗頁面](../media/AuditLogRetentionPolicy2.png)
 
@@ -81,7 +81,7 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 
    6. **優先順序：** 此值會決定組織中稽核記錄保留原則的處理順序。 較高的值表示優先順序較高。 例如，優先順序值為 **5** 的原則會優先於優先順序值為 **0** 的原則。 如先前所述，任何自訂稽核記錄保留原則的優先順序都會高於組織的預設原則。
 
-4. 按一下 [儲存]  建立新的稽核記錄保留原則。
+4. 按一下 [儲存] 建立新的稽核記錄保留原則。
 
 ## <a name="create-an-audit-log-retention-policy-in-powershell"></a>在 PowerShell 中建立稽核記錄保留原則
 
@@ -122,7 +122,7 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 ```
 
 > [!NOTE]
-> 此時， **Get-UnifiedAuditLogRetentionPolicy** Cmdlet 不會傳回組織的預設稽核記錄原則。
+> 此時，**Get-UnifiedAuditLogRetentionPolicy** Cmdlet 不會傳回組織的預設稽核記錄原則。
 
 如需詳細資訊，請參閱 [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy)。
 

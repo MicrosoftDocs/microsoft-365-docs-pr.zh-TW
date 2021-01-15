@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 使用敏感度標籤來保護 SharePoint 和 Microsoft Teams 網站與 Microsoft 365 群組中的內容。
-ms.openlocfilehash: c1232e8e839837fc5564909322c90f634f1c6fa9
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: 9276288bc05abebe864a4465f69284372fa0baab
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614927"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868021"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>使用敏感度標籤來保護 Microsoft Teams、Microsoft 365 群組和 SharePoint 網站中的內容
 
@@ -79,7 +79,7 @@ ms.locfileid: "49614927"
     
     若標籤只選取這個範圍時，標籤就不會顯示在支援靈敏度標籤的 Office 應用程式中，且無法套用到檔案和電子郵件。 將標籤分開可讓使用者和系統管理員使用，但也會增加標籤部署的複雜程度。
     
-    例如，您必須仔細地檢查您的[標籤排序](sensitivity-labels.md#label-priority-order-matters)，因為 SharePoint 會在標示的文件上傳到標示的網站時進行偵測。 在此案例中，當文件的敏感度標籤優先順序高於網站標籤時，系統會自動產生稽核活動和電子郵件。 如需詳細資訊，請參閱本頁面上的[稽核敏感度標籤活動](#auditing-sensitivity-label-activities)一節。 
+    例如，您必須仔細地檢查您的[標籤排序](sensitivity-labels.md#label-priority-order-matters)，因為 SharePoint 會在標示的文件上傳到標示的網站時進行偵測。 在此案例中，當文件具有較網站的標籤更高的優先順序敏感度標籤時，系統會自動產生稽核事件和電子郵件。 如需詳細資訊，請參閱本頁面上的[稽核敏感度標籤活動](#auditing-sensitivity-label-activities)一節。 
 
 2. 然後，在 **定義群組和網站的保護設定** 頁面上，選取其中一個或兩個皆適用的可用選項：
     
@@ -277,9 +277,10 @@ ms.locfileid: "49614927"
 
   - SharePoint
   - Teams
-  - Outlook 網頁版和 Windows 版、MacOS 版、iOS 版及 Android 版
+  - Outlook 網頁版和 Windows 版、macOS 版、iOS 版及 Android 版
   - Forms
   - Stream
+  - Planner (推出中) 
 
 下列應用程式與服務目前不支援針對網站和群組進行設定的敏感度標籤：
 
@@ -293,7 +294,6 @@ ms.locfileid: "49614927"
 
   - Dynamics 365
   - Yammer
-  - Planner
   - Project
   - Power BI
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全性與合規性中心的內容搜尋工具，在 Exchange 混合式部署中搜尋及匯出內部部署使用者的 Microsoft Teams 聊天資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60bb207463c360d98623caed4024bb87deb5fdfc
-ms.sourcegitcommit: 1423e08a02d30f0a2b993fb99325c3f499c31787
+ms.openlocfilehash: 9620c48056545e6d6cf053040849acfe0a1bc68e
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "48277092"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868011"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜尋內部部署使用者的 Teams 聊天資料
 
@@ -142,13 +142,13 @@ ms.locfileid: "48277092"
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
- **內部部署使用者的雲端儲存區位在何處？**
+**內部部署使用者的雲端儲存區位在何處？**
   
-雲端式儲存區會佈建在與您的組織相同的資料中心中。
+Teams 交談資料會儲存在內部部署使用者的慣用資料位置 (PDL)。 PDL 可在單一地理位置和多地理位置環境中採用。 如需詳細資訊，請參閱 [Microsoft 365 多地理位置](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo)。
   
  **除了提交支援要求外，還有其他需求嗎？**
   
- 如先前所述，內部部署信箱的使用者身分識別必須同步到雲端式組織，以便為 Office 365 中每個內部部署使用者帳戶建立對應的郵件使用者帳戶。 貴組織還必須具有 Office 365 企業版訂閱，例如 Office 365 企業版 E1、E3 或 E5 訂閱。
+如先前所述，內部部署信箱的使用者身分識別必須同步到雲端式組織，以便為 Office 365 中每個內部部署使用者帳戶建立對應的郵件使用者帳戶。 貴組織還必須具有 Office 365 企業版訂閱，例如 Office 365 企業版 E1、E3 或 E5 訂閱。
   
  **如果使用者的內部部署信箱已移轉至雲端，是否有遺失 Teams 聊天資料的風險？**
   

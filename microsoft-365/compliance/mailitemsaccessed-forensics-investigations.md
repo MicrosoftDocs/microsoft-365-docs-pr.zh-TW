@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 使用 MailItemsAccessed 信箱稽核動作執行遭入侵使用者帳戶的鑑識調查。
-ms.openlocfilehash: 908c2a22b05d7daef8d55c7e0aac61f25489692a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
+ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546289"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "49868001"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>使用進階稽核調查遭入侵帳戶
 
-遭入侵使用者帳戶 (也稱為「帳戶盜用」**) 是一種攻擊類型，攻擊者取得使用者帳戶的存取權後會以該使用者的身分運作。 這些類型的攻擊有時會造成比攻擊者原先預期還要更大的危害。 調查遭入侵電子郵件帳戶時，您必須假設遭入侵的郵件資料多於追蹤攻擊者實際存在所表示的資料量。 視電子郵件訊息中的資料類型而定，您必須假設敏感性資訊已遭到入侵，除非您能證明敏感性資料並未公開，否則您將面臨法規處罰。 例如，若有證據顯示病患的健康資訊 (PHI) 遭到公開，則由 HIPAA 監管的組織會面臨巨額罰款。 在這些情況下，攻擊者不太可能對 PHI 有興趣，但是組織仍然必須上報有資料外洩，除非組織能夠特別證明沒有資料外洩。
+遭入侵使用者帳戶 (也稱為「帳戶盜用」) 是一種攻擊類型，攻擊者取得使用者帳戶的存取權後會以該使用者的身分運作。 這些類型的攻擊有時會造成比攻擊者原先預期還要更大的危害。 調查遭入侵電子郵件帳戶時，您必須假設遭入侵的郵件資料多於追蹤攻擊者實際存在所表示的資料量。 視電子郵件訊息中的資料類型而定，您必須假設敏感性資訊已遭到入侵，除非您能證明敏感性資料並未公開，否則您將面臨法規處罰。 例如，若有證據顯示病患的健康資訊 (PHI) 遭到公開，則由 HIPAA 監管的組織會面臨巨額罰款。 在這些情況下，攻擊者不太可能對 PHI 有興趣，但是組織仍然必須上報有資料外洩，除非組織能夠特別證明沒有資料外洩。
 
 為協助您調查遭入侵電子郵件帳戶，我們現在使用 *MailItemsAccessed* 信箱稽核動作，透過郵件通訊協定和用戶端，提供郵件資料的稽核存取權。 此新稽核動作將協助調查人員進一步瞭解電子郵件的資料外洩，並協助您找出可能已遭入侵之特定郵件項目的入侵範圍。 使用此新稽核動作的目的是協助主張特定郵件資料未遭入侵的鑑識辯護。 如果攻擊者取得特定郵件資料的存取權，Exchange Online 會稽核該事件，即使郵件項目沒有實際已遭讀取的徵兆亦如此。
 
@@ -33,11 +33,11 @@ ms.locfileid: "47546289"
 
 新 MailItemsAccessed 動作屬於新 [Advanced Audit](advanced-audit.md) 功能。 這是 [Exchange 信箱稽核](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions)的功能之一，獲派 Office 365 或 Microsoft 365 E5 授權的使用者或訂閱 Microsoft 365 E5 合規性附加元件的組織依預設會啟用此動作。
 
-MailItemsAccessed 信箱稽核動作涵蓋所有郵件通訊協定：POP、IMAP、MAPI、EWS、Exchange ActiveSync 和 REST。 此動作也涵蓋兩種類型的郵件存取：「同步處理」** 和「繫結」**。
+MailItemsAccessed 信箱稽核動作涵蓋所有郵件通訊協定：POP、IMAP、MAPI、EWS、Exchange ActiveSync 和 REST。 此動作也涵蓋兩種類型的郵件存取：「同步處理」和「繫結」。
 
 ### <a name="auditing-sync-access"></a>稽核同步處理存取
 
-同步處理作業只有在信箱是透過 Windows 或 Mac 的電腦版 Outlook 用戶端進行存取時才會記錄。 在同步處理作業期間，這些用戶端通常會從雲端下載大量的郵件項目到本機電腦。 同步處理作業的稽核量會變得相當可觀。 因此，我們不針對每個已同步處理的郵件產生稽核記錄，我們只針對其中包含已同步處理項目的郵件資料夾產生稽核事件。 這是假設已同步處理資料夾中「所有」** 郵件項目皆已遭入侵。 存取類型會記錄在稽核記錄的 OperationProperties 欄位。 
+同步處理作業只有在信箱是透過 Windows 或 Mac 的電腦版 Outlook 用戶端進行存取時才會記錄。 在同步處理作業期間，這些用戶端通常會從雲端下載大量的郵件項目到本機電腦。 同步處理作業的稽核量會變得相當可觀。 因此，我們不針對每個已同步處理的郵件產生稽核記錄，我們只針對其中包含已同步處理項目的郵件資料夾產生稽核事件。 這是假設已同步處理資料夾中「所有」郵件項目皆已遭入侵。 存取類型會記錄在稽核記錄的 OperationProperties 欄位。 
 
 如需顯示稽核記錄中同步處理存取類型的範例，請參閱「[使用 MailItemsAccessed 稽核記錄進行鑑識調查](#use-mailitemsaccessed-audit-records-for-forensic-investigations)」一節中的步驟 2。
 
@@ -178,8 +178,8 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 
 |稽核記錄 1  |稽核記錄 2  |稽核記錄 3|
 |---------|---------|---------|
-|ClientIPAddress**1**<br/>SessionId**2**|ClientIPAddress**2**<br/>SessionId**2**|ClientIPAddress**1**<br/>SessionId**3**|
-|InternetMessageId**A**<br/>InternetMessageId**D**<br/>InternetMessageId**E**<br/>InternetMessageId**F**<br/>|InternetMessageId**A**<br/>InternetMessageId**C**|InternetMessageId**B** |
+|ClientIPAddress **1**<br/>SessionId **2**|ClientIPAddress **2**<br/>SessionId **2**|ClientIPAddress **1**<br/>SessionId **3**|
+|InternetMessageId **A**<br/>InternetMessageId **D**<br/>InternetMessageId **E**<br/>InternetMessageId **F**<br/>|InternetMessageId **A**<br/>InternetMessageId **C**|InternetMessageId **B** |
 ||||
 
 如果[前一小節](#filtering-of-duplicate-audit-records)之表格所列的屬性有任何不同，系統會產生另一個稽核記錄以追蹤新背景。 視活動發生的背景而定，系統會將存取排序整理到個別的稽核記錄。
@@ -187,3 +187,9 @@ Search-MailboxAuditLog -Identity <user> -StartDate 01/06/2020 -EndDate 01/20/202
 例如，在以下螢幕擷取畫面中顯示的稽核記錄中，雖然我們是同時從 EWSEditor 和 OWA 存取郵件，但是存取活動會根據存取的發生背景而彙整於不同的稽核記錄中。 在此情況下，背景由 ClientInfoString 屬性的不同值所定義。
 
 ![依背景而異的稽核記錄](../media/MailItemsAccessed4.png)
+
+以下是先前的螢幕擷取畫面中所示命令的語法：
+
+```powershell
+Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
+``` 
