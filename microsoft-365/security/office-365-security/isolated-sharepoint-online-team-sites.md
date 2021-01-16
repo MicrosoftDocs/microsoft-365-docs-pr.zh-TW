@@ -32,9 +32,9 @@ ms.locfileid: "49845068"
 
  **摘要：** 了解獨立的 Sharepoint 小組網站的用途。
 
-SharePoint Online 小組網站是快速建立共同作業空間的簡易方式。使用者可以在 Microsoft Office 365 中對記事、文件、文章、行事曆及其他資源進行共同作業。SharePoint Online 小組網站是以 Microsoft 365 群組為基礎，具有簡化的系統管理模型，可以允許具有私人群組成員集合或整個組織的開發共同作業。預設 SharePoint Online 小組網站可讓 Microsoft 365 群組的成員邀請其他使用者並且控制權限設定。
+SharePoint Online 小組網站是快速建立共同作業空間的簡易方式。使用者可以在 Microsoft Office 365 中對記事、文件、文章、行事曆及其他資源進行共同作業。SharePoint Online 小組網站是以 Microsoft 365 群組為基礎，具有簡化的系統管理模型，可供一組私人群組成員或整個組織進行開放的共同作業。預設 SharePoint Online 小組網站可讓 Microsoft 365 群組的成員邀請其他使用者並且控制權限設定。
 
-不過，您有時會需要群組成員資格所控制的網站存取以及由 SharePoint 系統管理員所管理的 SharePoint Online 權限等級。 我們稱之為獨立的網站，該網站會將獨立於共同作業、查看其內容或管理網站的一組使用者。 以下是您可能需要獨立的網站的原因：
+不過，您有時會需要群組成員資格所控制的網站存取以及由 SharePoint 系統管理員所管理的 SharePoint Online 權限等級。 我們稱之為獨立的網站，此種網站會獨立於在該網站上共同作業、查看其內容或進行網站管理的使用者群組。 以下是您可能需要獨立網站的原因：
 
 - 組織中的秘密專案。
 
