@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 設定基本行動性和安全性，以保護和管理使用者的行動裝置。
-ms.openlocfilehash: 079593381d6395c18cd80f3eeab2e16837a2d27a
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 38f122141b370468bc591df49b3e1891a8a66a43
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545805"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876861"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>設定基本行動與安全性
 
@@ -31,7 +31,7 @@ Microsoft 365 的內建基本行動性和安全性可協助您保護和管理使
 
 Have questions? 如需協助解決常見問題的常見問題，請參閱 [基本行動性及安全性常見問題 (常見問題) ](frequently-asked-questions.md)。 請注意，您無法使用委派的系統管理員帳戶來管理基本行動性和安全性。 如需詳細資訊，請參閱 [合作夥伴：提供委派的管理](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e)。 
 
-裝置管理是安全性 & 規範中心的一部分，因此您需要移出 MDM 安裝程式。
+裝置管理是安全性 & 規範中心的一部分，因此您必須先開始執行基本行動及安全性設定。
 
 ## <a name="activate-the-basic-mobility-and-security-service"></a>啟動基本行動及安全性服務
 
@@ -45,7 +45,7 @@ Have questions? 如需協助解決常見問題的常見問題，請參閱 [基�
 
 當服務準備好時，請完成下列步驟以完成安裝程式。
 
-### <a name="step-1-required-configure-domains-for-mdm"></a>步驟1： (必要) 設定 MDM 的網域
+### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>步驟1： (必要) 設定網域以取得基本行動性和安全性
 
 如果您沒有與 Microsoft 365 相關聯的自訂網域，或者您不是管理 Windows 裝置，則可以略過本節。 否則，您必須在您的 DNS 主機上新增網域的 DNS 記錄。 如果您已新增記錄，請在使用 Microsoft 365 設定網域時，全部都是設定。 在您新增記錄之後，您組織中使用您自訂網域的電子郵件地址登入之 Windows 裝置的 Microsoft 365 使用者會重新導向，以登錄基本行動性和安全性。
 
@@ -61,11 +61,11 @@ Have questions? 如需協助解決常見問題的常見問題，請參閱 [基�
 
 2. 在您的瀏覽器類型：中  [https://protection.office.com](https://protection.office.com/) 。
 
-3. 選取 [ **資料遺失防護**   >  **裝置管理**]，然後**為 iOS 裝置選擇 APNs 憑證**。
+3. 選取 [ **資料遺失防護**   >  **裝置管理**]，然後 **為 iOS 裝置選擇 APNs 憑證**。
 
 4. 在 [Apple 推播通知憑證設定] 頁面上，選擇 **[下一步]**。
 
-5. 選取 [ **下載您的 CSR**檔案]   ，然後將憑證簽署要求儲存至電腦上您所記得的地方。 選取 **[下一步]**。
+5. 選取 [ **下載您的 CSR** 檔案]   ，然後將憑證簽署要求儲存至電腦上您所記得的地方。 選取 **[下一步]**。
 
 6. 在 [建立 APNs 憑證] 頁面上：
 
@@ -129,5 +129,5 @@ Have questions? 如需協助解決常見問題的常見問題，請參閱 [基�
 
 ## <a name="related-topics"></a>相關主題
 
-[基本行動及安全性的功能](capabilities.md)<br/>
+[基本行動與安全性的功能](capabilities.md)<br/>
 [在基本行動性和安全性中建立裝置安全性原則](create-device-security-policies.md)

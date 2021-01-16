@@ -19,16 +19,16 @@ ms.collection:
 - m365solution-overview
 - m365solution-protecthve
 description: 系統管理員可以瞭解如何提升安全性設定，以及如何在 Microsoft 365 組織中提升優先順序帳戶的安全性設定，以及使用報表、警示和調查。
-ms.openlocfilehash: acd2eba0acd533d0cd8223f2c433cc023fc23287
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 8a1d92ef12070a722a1b618bf51ab6d8130f49c0
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790123"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881794"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 中優先順序帳戶的安全性建議
 
-並非所有的使用者帳戶都可以存取相同的公司資訊。 有些帳戶可以存取機密資訊，例如財務資料、產品開發資訊、合作夥伴對重要組建系統的存取等等。 具有高度機密資訊存取權的帳戶會在受到威脅時帶來嚴重威脅。 我們呼叫這些類型的帳戶 _優先順序帳戶_。 優先順序帳戶包括 Ceo、CISOs、CFOs、基礎結構管理帳戶、組建系統帳戶等等。
+並非所有的使用者帳戶都可以存取相同的公司資訊。 有些帳戶可以存取機密資訊，例如財務資料、產品開發資訊、合作夥伴對重要組建系統的存取等等。 若遭到損害，具有高度機密資訊存取權的帳戶會帶來嚴重威脅。 我們呼叫這些類型的帳戶 _優先順序帳戶_。 優先順序帳戶包括 (但不限於) Ceo、CISOs、CFOs、基礎結構管理員帳戶、組建系統帳戶等等。
 
 針對攻擊者，針對一般或未知使用者強制轉換隨機網路的一般網路釣魚攻擊，效率低下。 另一方面， _spear 的網路釣魚_ 或 _whaling_ 攻擊會以攻擊者為目標，取得優先順序的帳戶。 所以，優先順序帳戶需要比一般保護更強，以協助防止帳戶損損。
 
@@ -44,6 +44,7 @@ Microsoft 365 和 Microsoft Defender for Office 365 包含許多主要功能，�
 |[對優先順序帳戶使用嚴格的預先設定安全性原則](#use-strict-preset-security-policies-for-priority-accounts)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[將使用者標記套用至優先順序帳戶](#apply-user-tags-to-priority-accounts)|||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[監視警示、報告和偵測中的優先順序帳戶](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[訓練使用者](#train-users)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>增加優先順序帳戶的登入安全性
@@ -98,6 +99,31 @@ Microsoft Defender for Office 365 方案 2 (中的使用者標記是 Microsoft 3
 |威脅防護狀態報告|在實際 **威脅防護狀態報表** 中的所有 views 和詳細資料表格中，您可以依 **優先順序帳戶** 來篩選結果。 如需詳細資訊，請參閱 [威脅防護狀態報表](view-email-security-reports.md#threat-protection-status-report)。|
 |優先順序帳戶報告的電子郵件問題|Exchange 系統管理中心中「優先順序帳戶」報告的 **電子郵件問題** (EAC) 包含 **優先順序帳戶** 之未傳遞和延遲郵件的相關資訊。 如需詳細資訊，請參閱 [優先順序帳戶報告的電子郵件問題](https://docs.microsoft.com/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)。|
 |
+
+## <a name="train-users"></a>訓練使用者
+
+訓練具有優先順序帳戶的使用者，可協助儲存這些使用者和安全性作業小組的時間和不滿。 聰明的使用者不太可能開啟附件或按一下可疑電子郵件訊息中的連結，也很可能避免可疑的網站。
+
+Harvard 甘迺迪 School [Cybersecurity 活動手冊](https://www.belfercenter.org/CyberPlaybook) 為您的組織內的安全性感知建立強文化，提供了極佳的指導方針，包括訓練使用者來識別網路釣魚攻擊。
+
+Microsoft 365 提供下列資源，協助您在組織中告知使用者：
+
+<br>
+
+****
+
+|概念|資源|說明|
+|---|---|---|
+|Microsoft 365|[可自訂的教學路徑](https://docs.microsoft.com/office365/customlearning/)|這些資源可協助您將組織中使用者的訓練放在一起。|
+|Microsoft 365 安全性|[學習模組：使用 Microsoft 365 內建的智慧安全性保護您的組織](https://docs.microsoft.com/learn/modules/security-with-microsoft-365)|此模組可讓您描述 Microsoft 365 安全性功能如何協同運作，並闡明這些安全性功能的優點。|
+|多重要素驗證|[雙步驟驗證：其他驗證頁面為何？](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time)|本文可協助使用者瞭解哪些多重要素驗證，以及如何在您的組織中使用它。|
+|攻擊模擬訓練|[開始使用攻擊模擬訓練](attack-simulation-training-get-started.md)|Microsoft Defender for Office 365 方案2中的攻擊模擬訓練，可讓系統管理員針對特定使用者群組設定、啟動和追蹤模擬網路釣魚攻擊。|
+
+此外，Microsoft 建議使用者採取本文所述的動作： [保護您的帳戶和裝置免受駭客和惡意](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)代碼的攻擊。 這些動作包括：
+
+- 使用強式密碼
+- 保護裝置
+- 在 Windows 10 和 Mac 電腦上啟用非管理裝置的安全性功能 () 
 
 ## <a name="see-also"></a>另請參閱
 

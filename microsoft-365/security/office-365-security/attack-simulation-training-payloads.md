@@ -11,18 +11,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 中建立攻擊模擬訓練的自訂負載。
-ms.openlocfilehash: e3285b99d5b64255b9fdbda8c76b6f133aa013b2
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 45311ad4c4eb09c8238d278475248680fbc66287
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870860"
+ms.locfileid: "49877125"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>建立攻擊模擬訓練的自訂承載
 
 Microsoft 為各種社交工程技術提供強大的負載目錄，以與您的攻擊模擬訓練進行搭配。 不過，您可能會想要建立更適合貴組織的自訂負載。 本文說明如何在 Microsoft Defender for Office 365 中建立攻擊模擬訓練的負載。
-
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 您可以按一下 [[專用 **負載**]](https://security.microsoft.com/attacksimulator?viewid=payload)索引標籤或 [[類比建立嚮導]](attack-simulation-training.md#selecting-a-payload)中的 [**建立負載**]，以建立負載。
 

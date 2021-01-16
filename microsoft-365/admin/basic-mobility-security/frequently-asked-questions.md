@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 有關基本行動性和安全性的常見問題。
-ms.openlocfilehash: e05815392510ad54bb530457d7f0f6490ece4a95
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 5651b9f9742c45f1229e55b298cf78532c835c9a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430116"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876873"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>基本行動及安全性常見問題 (常見問題) 
 
@@ -31,19 +31,19 @@ ms.locfileid: "47430116"
 
 ## <a name="how-can-i-get-basic-mobility-and-security-i-dont-see-it-in-the-microsoft-365-admin-center"></a>如何取得基本行動性和安全性？ 我在 Microsoft 365 系統管理中心中看不到它
 
-1.  移至 [Office 365 安全性 & 合規性](https://protection.office.com/) 頁面，啟用基本行動及安全性。   
+1.  移至 [Office 365 安全性 & 合規性](https://protection.office.com/) 頁面，啟用基本行動及安全性。
 
-2.  移至資料遺失防護 > 裝置管理。   
+2.  移至資料遺失防護 > 裝置管理。
 
 ## <a name="how-can-i-get-started-with-device-management-in-basic-mobility-and-security"></a>如何開始使用基本行動性和安全性的裝置管理？
 
 基本行動性及安全性入門的步驟有四個： 
 
 1. 移至 [Office 365 的安全性 & 符合性](https://protection.office.com/)，以啟用基本行動及安全性。
-    
+
 2. 移至資料遺失防護 > 裝置管理 > 裝置原則。
     
-3. 建立裝置管理原則，並將其套用至安全性群組中設定的使用者群組。 建議您先將原則部署至小型測試群組。 如需詳細資訊，請參閱 [在基本行動性和安全性中建立裝置安全性原則](create-device-security-policies.md)。      
+3. 建立裝置管理原則，並將其套用至安全性群組中設定的使用者群組。 建議您先將原則部署至小型測試群組。 如需詳細資訊，請參閱 [在基本行動性和安全性中建立裝置安全性原則](create-device-security-policies.md)。
 
 4. 已套用原則的使用者會在嘗試存取 Microsoft 365 資料時，提示他們註冊其裝置。 如需詳細資訊，請參閱 [使用基本行動性和安全性註冊行動裝置](enroll-your-mobile-device.md)。
 
@@ -51,18 +51,18 @@ ms.locfileid: "47430116"
 
 ## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>我嘗試設定基本行動性和安全性，但似乎已停滯。 Microsoft 365 服務的健康情況已經顯示 "布建" 一段時間。 我該怎麼做？
 
-可能需要一些時間才能讓您準備好服務。 布建完成後，您會看到 [適用于 Microsoft 365 的行動裝置管理] 頁面。 如果您已等候24小時，但狀態仍為 [布建]，請聯繫支援人員，我們將協助找出問題的含義。 如需支援選項，請參閱 [仍需協助？](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp) 
+可能需要一些時間才能讓您準備好服務。 布建完成後，您將會看到 [基本行動性及安全性] 頁面。 如果您已等候24小時，但狀態仍為 [布建]，請聯繫支援人員，我們將協助找出問題的含義。 如需支援選項，請參閱 [仍需協助？](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp)。
 
 ## <a name="what-can-i-do-if-device-enrollment-fails"></a>裝置註冊失敗時，該怎麼辦？
 
 如果您在註冊裝置時遇到問題，請先檢查下列各項：
 
 - 確定設備尚未使用其他行動裝置管理提供者（例如 Intune）進行註冊。
-    
+
 - 請確定裝置已設定為正確的日期和時間。
-    
+
 - 切換至裝置上的不同 WIFI 或蜂窩網路。
-    
+
 - 針對 Android 或 iOS 裝置，請在裝置上卸載並重新安裝 Intune 公司入口網站應用程式。
     
 如果註冊仍無法運作，請參閱 [疑難排解基本行動性和安全性](troubleshoot.md)。
@@ -90,4 +90,3 @@ ms.locfileid: "47430116"
 ## <a name="i--set-up-basic-mobility-and-security-but-now-i-want-to-remove-it-what-are-the-steps"></a>我設定基本行動性和安全性，但是現在我想要將它移除。 步驟有哪些？
 
 不幸的是，在您設定後，您無法直接 "取消「取消」「基本行動性」和「安全性」。 不過，您可以從您已建立的裝置原則中移除使用者安全性群組，將其從使用者群組中移除。 或者，您可以移除裝置原則使其不存在，而且不會強制執行，以停用這些裝置的使用者。 如需詳細資訊，請參閱 [關閉基本行動性和安全性](turn-off.md)。
-

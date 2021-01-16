@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 在您可以將 Microsoft 365 服務與裝置搭配使用之前，您可能需要先在 Microsoft 365 的基本行動和安全性中註冊。
-ms.openlocfilehash: e31054621ba44a4d5f08de9b366fa0978b738cd9
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: dc5a43b12fce50c9146200a4559fe9b7e6824b18
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430117"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877053"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>使用基本行動性和安全性註冊行動裝置
 
@@ -39,15 +39,15 @@ ms.locfileid: "47430117"
 由 Intune 服務主控的 Microsoft 365 基本行動性和安全性，適用于大部分（但非全部）行動裝置。 基本行動性和安全性可支援下列專案：
 
 - iOS 10.0 或更新版本
-    
+
 - Android 4.4 或更新版本
-    
+
 - Windows 8.1 和 Windows 10 (電話和電腦) 
-    
+
 如果您的裝置並未列出，而且您需要使用基本行動性和安全性，請與您的公司或學校系統管理員聯繫。
 
->[!TIP] 
->如果您在註冊裝置時發生問題，請參閱 [疑難排解基本行動性和安全性](troubleshoot.md)。
+>[!TIP]
+>如果您在註冊裝置時發生問題，請參閱 [疑難排解基本行動性和安全性](/basic-mobility-security/troubleshoot.md)。
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>設定具有 Intune 和基本行動性及安全性的行動裝置
 

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用 Windows PowerShell 以取得組織中基本行動與安全性裝置的詳細資料。
-ms.openlocfilehash: d34263ee215c568834034f2735bb69d9cef9ac6d
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 7c6a0365dfd573377c3675bbcee8ee8280e33816
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430115"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876885"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>取得基本行動裝置及安全性受管理裝置的詳細資料
 
@@ -33,8 +33,8 @@ ms.locfileid: "47430115"
 
 |**Detail**|**在 PowerShell 中要尋找的專案**|
 |:----------------|:------------------------------------------------------------------------------|
-|裝置已註冊基本行動性和安全性。 如需詳細資訊，請參閱 [使用基本行動性和安全性註冊行動裝置](enroll-your-mobile-device.md)|IsManaged 參數的值 *isManaged*   為：<br/>**True**= 裝置已註冊。<br/>**False**= 裝置未註冊。 |
-|裝置符合您的裝置安全性原則。 如需詳細資訊，請參閱 [建立裝置安全性原則](create-device-security-policies.md)|IsCompliant 參數的值 *isCompliant*   為：<br/>**True**  = 裝置符合原則。<br/>**False**  = device 與原則不符。|
+|裝置已註冊基本行動性和安全性。 如需詳細資訊，請參閱 [使用基本行動性和安全性註冊行動裝置](enroll-your-mobile-device.md)|IsManaged 參數的值 **   為：<br/>**True**= 裝置已註冊。<br/>**False**= 裝置未註冊。 |
+|裝置符合您的裝置安全性原則。 如需詳細資訊，請參閱 [建立裝置安全性原則](create-device-security-policies.md)|IsCompliant 參數的值 **   為：<br/>**True**  = 裝置符合原則。<br/>**False**  = device 與原則不符。|
 
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="基本行動性及安全性 PowerShell 參數":::
 
@@ -51,18 +51,18 @@ ms.locfileid: "47430115"
 
 1. 移至 [IT 專業人員的 Microsoft Online services Sign-In Assistant] RTWl](https://www.microsoft.com/download/details.aspx?id=41950)   ，然後選取 [ **下載 microsoft online services**] 登入小幫手。   
 
-2. 以下列步驟安裝適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組：   
+2. 以下列步驟安裝適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組：
 
     1. 開啟管理員層級的 PowerShell 命令提示字元。  
 
     2. 執行 Install-Module MSOnline 命令。
-    
-    3. 如果系統提示您安裝 NuGet 提供者，請輸入 Y，然後按 ENTER 鍵。   
 
-    4. 如果系統提示您從 PSGallery 安裝模組，請輸入 Y，然後按 ENTER 鍵。   
+    3. 如果系統提示您安裝 NuGet 提供者，請輸入 Y，然後按 ENTER 鍵。
+
+    4. 如果系統提示您從 PSGallery 安裝模組，請輸入 Y，然後按 ENTER 鍵。
 
     5. 安裝完成後，請關閉 PowerShell 命令視窗。
-    
+
 ### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>步驟2：連線至您的 Microsoft 365 訂閱
 
 1. 在 windows PowerShell Windows Azure Active Directory 模組中，執行下列命令。  
@@ -70,9 +70,9 @@ ms.locfileid: "47430115"
     $UserCredential = Get-Credential
 
 2. 在 [Windows PowerShell 憑證要求] 對話方塊中，輸入 Microsoft 365 全域管理員帳戶的使用者名稱和密碼，然後選取 **[確定]**。
-    
+
 3. 執行下列命令。
-    
+
     Connect-MsolService-身分 $UserCredential
 
 ### <a name="step-3-make-sure-youre-able-to-run-powershell-scripts"></a>步驟3：請確定您可以執行 PowerShell 腳本
@@ -85,18 +85,18 @@ ms.locfileid: "47430115"
 1. 在您的 Windows 桌面中，選取 [ **開始**]，然後輸入 Windows PowerShell。 以滑鼠右鍵按一下 [Windows PowerShell]，然後選取 [ **以系統管理員身分執行**]。
 
 2. 執行下列命令。
-    
+
     Set-ExecutionPolicy RemoteSigned
 
 3. 出現提示時，請輸入 Y，然後按 Enter 鍵。
-    
-**執行 MsolDevice Cmdlet 以顯示組織中所有裝置的詳細資料**
+
+**執行 Get-MsolDevice Cmdlet 以顯示組織中所有裝置的詳細資料**
 
 1. 開啟適用於 Windows PowerShell 的 Microsoft Azure Active Directory 模組。  
 
 2. 執行下列命令。
-    
-    MsolDevice-All-ReturnRegisteredOwners |Where-Object {$ _。RegisteredOwners-gt 0}
+
+    Get-MsolDevice-ReturnRegisteredOwners |Where-Object {$ _。RegisteredOwners-gt 0}
 
 如需更多範例，請參閱  [MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)。
 
@@ -107,55 +107,38 @@ ms.locfileid: "47430115"
 1. 將下列文字複製並貼到 [記事本] 中。  
 
 2.  param (
-    
 
 3.  [PSObject []] $users = @ ( # A1，
-    
 
 4.  [切換] $export，
-    
 
 5.  [String] $exportFileName = "UserDeviceComplianceStatus_" + (Get-Date 格式 "yyMMdd_HHMMss" ) + ".csv"
-    
 
 6.  [字串] $exportPath = [環境]：： GetFolderPath ( "Desktop" ) 
-    
 
 7.  )
-    
 
 9.  [System.Collections.IDictionary] $script： schema = @ {
-    
 
 11.  DeviceId = ' '
-    
 
 12.  DeviceOSType = ' '
-    
 
 13.  DeviceOSVersion = ' '
-    
 
 14.  DeviceTrustLevel = ' '
-    
 
 15.  DisplayName = ' '
-    
 
 16.  IsCompliant = ' '
-    
 
 17.  IsManaged = ' '
-    
 
 18.  ApproximateLastLogonTimestamp = ' '
-    
 
 19.  DeviceObjectId = ' '
-    
 
 20.  RegisteredOwnerUpn = ' '
-    
 
 21.  RegisteredOwnerObjectId = ' '
     
@@ -262,7 +245,7 @@ ms.locfileid: "47430115"
 64.  {
     
 
-65.  $result |Export-Csv-path ($exportPath + " \" +" $exportFileName) NoTypeInformation
+65.  $result |Export-Csv-path ($exportPath + " \" + $exportFileName) -NoTypeInformation
     
 
 66.  }
@@ -310,7 +293,7 @@ ms.locfileid: "47430115"
 
 3. 執行下列命令，識別您要取得設備詳細資料的群組。 此範例會取得 FinanceStaff 群組中使用者的詳細資料。 
 
-    $u = MsolGroupMember-SearchString "FinanceStaff" |% {Get-MsolUser-ObjectId $ _。ObjectId}
+    $u = Get-MsolGroupMember-SearchString "FinanceStaff" |% {Get-MsolUser-ObjectId $ _。ObjectId}
 
 4. 執行下列命令以啟動腳本。   
 
@@ -322,6 +305,6 @@ ms.locfileid: "47430115"
 
 [已停用 Microsoft Connect](https://docs.microsoft.com/collaborate/connect-redirect)
 
-[基本行動及安全性概述](overview.md)
+[基本行動與安全性概觀](overview.md)
 
 [MsolDevice](https://go.microsoft.com/fwlink/?linkid=841721)

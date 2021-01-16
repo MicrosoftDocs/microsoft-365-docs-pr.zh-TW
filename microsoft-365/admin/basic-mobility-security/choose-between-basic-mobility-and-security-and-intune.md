@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性是 Microsoft 365 方案的一部分。
-ms.openlocfilehash: 75fef5bd70d7b8926d31b80f16952aa996bc625c
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+ms.openlocfilehash: cfd1a68c313d1a1335490e2b8d6938de192fe3f3
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580658"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877089"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>選擇基本行動性和安全性或 Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "49580658"
  
 基本行動性和安全性及 Intune 都包含在各種方案中，如下表所述。
 
-| 方案 | 基本行動性和安全性 | Microsoft Intune |
+| 方案 | 設定基本行動與安全性 | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|是|否|
 |Microsoft 365 商務基本版|是|否|
@@ -64,17 +64,18 @@ Microsoft Intune 和內建基本行動性及安全性兩者都能讓您在組織
 >[!NOTE]
 >您可以 *先設定基本行動性和安全性，然後再新增 Microsoft Intune，* 以在相同的 Microsoft 365 Business Standard 組織中使用 Intune 和基本行動性和安全性，管理使用者和其行動裝置。 這可讓您選擇基本行動性和安全性，或功能更豐富的 Intune 解決方案。 指派 Intune 授權以啟用 Intune 功能。
 
-| 功能範圍 | 功能重點 | 基本行動性和安全性 | Microsoft Intune |
+| 功能範圍 | 功能重點 | 設定基本行動與安全性 | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
 |裝置類型|管理不同的作業系統平臺及主要管理模式變化。 |Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>|Windows<br/>iOS<br/>Android<br/>Android Samsung KNOX<br/>mac OS、iPad 作業系統|
 |裝置合規性|設定和管理安全性原則，如裝置層級 PIN 碼鎖定和 jailbreak 偵測。 |Android 9 和更新版本裝置的限制。 請參閱 [詳細資料](capabilities.md)。 |是|
 |根據裝置規範的條件式存取 |防止不相容的裝置從雲端存取公司的電子郵件和資料。 |在 Windows 10 上不受支援。<br/>限制控制對 Exchange Online、SharePoint 線上和 Outlook 的存取。 |是 |
-|裝置設定  |設定裝置設定 (例如，停用攝像頭) |有限的設定集。|是|裝置合規性|設定和管理安全性原則，如裝置層級 PIN 碼鎖定和 jailbreak 偵測。 |Android 9 和更新版本裝置的限制。 請參閱 [詳細資料](capabilities.md)。 |是|
+|裝置設定  |設定裝置設定 (例如，停用攝像頭) |有限的設定集。|是|
+|裝置合規性  |設定和管理安全性原則，如裝置層級 PIN 碼鎖定和 jailbreak 偵測。 |Android 9 和更新版本裝置的限制。 請參閱 [詳細資料](capabilities.md)。 |是|
 |電子郵件設定檔  |在裝置上布建原生電子郵件設定檔。 |是|是|
 |WiFi 設定檔 |在裝置上布建原生 WiFi 設定檔。 |否|是|
 |VPN 設定檔 |在裝置上布建本機 VPN 設定檔。 |否|是|
-|MDM 應用程式管理 |部署內部企業營運應用程式，以及從應用程式存放區至使用者。 |否|是|
-|媽媽 |您的使用者可以使用 Office mobile 和商務營運應用程式來安全地存取公司資訊，方法是協助限制複製、剪下、貼上及另存為的動作，僅限認可公司資料的應用程式。 |否|是|
+|基本行動及安全性應用程式管理  |部署內部企業營運應用程式，以及從應用程式存放區至使用者。 |否|是|
+|行動應用程式保護  |讓您的使用者能夠使用所知道的 Office mobile 和商務營運應用程式，安全地存取公司資訊，同時也可以透過協助限制複製、剪下、貼上的動作，以及僅限受核准以取得公司資料的應用程式，以確保資料的安全性。 即使裝置並未註冊為基本行動及安全性，也能運作。 請參閱使用 MAM 原則保護應用程式資料。 |否|是|
 |Managed browser  |使用 Edge app，啟用更安全的 web 流覽功能。 |否|是|
 |零接觸註冊計畫 Autopilot)  |註冊大量公司所擁有的裝置，同時簡化使用者設定。 |否|是|
 |||

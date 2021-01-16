@@ -1,5 +1,5 @@
 ---
-title: 基本行動及安全性的功能
+title: 基本行動與安全性的功能
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,14 +18,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性可協助您保護和管理行動裝置。
-ms.openlocfilehash: aed4f4c2d252e487d24496ac00f3de24bc57ab55
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 746131e90e207d7b888a3ddcaf4ff0656606a2c7
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545893"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877113"
 ---
-# <a name="capabilities-of-basic-mobility-and-security"></a>基本行動及安全性的功能
+# <a name="capabilities-of-basic-mobility-and-security"></a>基本行動與安全性的功能
 
 基本行動性和安全性可協助您保護和管理行動裝置，例如 Iphone、Ipad、Androids 和 Windows phone，您的組織中已獲授權的 Microsoft 365 使用者所使用的電話。 您可以建立行動裝置管理原則，其設定可協助控制存取您組織的 Microsoft 365 電子郵件，以及支援的行動裝置和應用程式的檔。 如果裝置遺失或遭盜，您可以遠端清除裝置，以移除敏感的組織資訊。
 
@@ -34,16 +34,16 @@ ms.locfileid: "47545893"
 您可以使用基本行動性和安全性來保護和管理下列裝置。
 
 - iOS 11.0 或更新版本
-    
+
 - Android 5.0 或更新版本<sup>3</sup>
-    
+
 - Windows 8.1<sup>1</sup>
-    
+
 - Windows 8.1 RT<sup>1</sup>
-    
+
 - Windows 10<sup>2</sup>
-    
-- Windows 10 行動電話<sup>2</sup>   
+
+- Windows 10 行動電話<sup>2</sup>
 
 <sup>1</sup>Windows 8.1 RT 裝置的存取控制限制為 Exchange ActiveSync。
 
@@ -65,18 +65,19 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 |**產品**|**iOS 10.0 或更新版本**|**Android 5.0 或更新版本**|
 |:-----|:-----|:-----|
 |**Exchange** Exchange ActiveSync 包含內建的電子郵件和協力廠商的應用程式，例如 TouchDown，使用 Exchange ActiveSync 版本14.1 或更新版本。 |郵件 |電子郵件 |
-|**Office**  和 **OneDrive 商務**版 |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**在手機和平板電腦上**：<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **僅限電話：** <br/> Office Mobile |
+|**Office**  和  **OneDrive 商務** 版 |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**在手機和平板電腦上**：<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **僅限電話：** <br/> Office Mobile |
 
 >[!NOTE]
 - >支援 iOS 10.0 和更新版本包含 iPhone 和 iPad 裝置。
-- >Microsoft 365 的行動裝置管理不支援 BlackBerry OS 裝置的管理。 使用 BlackBerry Business 雲端服務 (BBCS) 從 BlackBerry 管理 BlackBerry 作業系統裝置。 支援執行 Android 作業系統的 Blackberry 裝置作為標準 Android 裝置
+- >基本的安全性和行動性不支援 BlackBerry OS 裝置的管理。 使用 BlackBerry Business 雲端服務 (BBCS) 從 BlackBerry 管理 BlackBerry 作業系統裝置。 支援執行 Android 作業系統的 Blackberry 裝置作為標準 Android 裝置
 - >如果使用者使用行動瀏覽器來存取 Microsoft 365 SharePoint 網站、Office Online 中的檔，或 Outlook Web App 中的電子郵件，則不會提示使用者進行註冊，也不會對原則加以舉報。
-    
+
 下圖顯示當具有新裝置的使用者利用基本行動性和安全性，登入支援存取控制的應用程式時會發生什麼情況。 使用者在註冊其裝置之前，系統會封鎖使用者存取應用程式中的 Microsoft 365 資源。
 
 :::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="基本行動性和安全性存取控制":::
 
-附注：在 MDM for Microsoft 365 商務 Standard 中建立的原則和存取規則，將會覆寫 exchange 系統管理中心建立的 Exchange ActiveSync 行動裝置信箱原則和裝置存取規則。 在 MDM 針對 Microsoft 365 商務標準註冊裝置時，會忽略任何 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則套用至裝置。 若要深入瞭解 Exchange ActiveSync，請參閱 exchange [Online 中的 exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=524380)。
+> [!NOTE]
+> 在 Microsoft 365 商務標準的基本行動及安全性中建立的原則和存取規則，會覆寫 exchange 系統管理中心建立的 Exchange ActiveSync 行動裝置信箱原則和裝置存取規則。 在 Microsoft 365 商務標準的基本行動及安全性中註冊裝置後，任何已套用至裝置的 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則都會被忽略。 若要深入瞭解 Exchange ActiveSync，請參閱 exchange [Online 中的 exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=524380)。
 
 ## <a name="policy-settings-for-mobile-devices"></a>行動裝置的原則設定
 
@@ -85,11 +86,11 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 在下列各節中，可以封鎖使用者存取 Microsoft 365 資源的設定如下：
 
 - 安全性
-    
+
 - 加密
-    
+
 - 越獄中斷
-    
+
 - 受管理的電子郵件設定檔  
 
 例如，下圖顯示使用已註冊裝置的使用者不符合套用至其裝置之行動裝置管理原則中的安全性設定時，會發生什麼情況。 使用者可使用基本行動性和安全性登入支援存取控制的應用程式。 在使用者的裝置符合安全性設定之前，系統會封鎖他們存取應用程式中的 Microsoft 365 資源。
@@ -111,7 +112,7 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 |密碼到期 (天)  |是|是|是|
 |記住密碼歷程記錄，並防止重複使用 |是|是|是|
 
-## <a name="encryption-settings"></a>加密設定 
+## <a name="encryption-settings"></a>加密設定
 
 |**設定名稱**|**iOS 7.1 和更新版本**|**Android 5 及更新版本**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -133,7 +134,7 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 |:-----|:-----|:-----|:-----|
 |電子郵件設定檔已管理 |是|否|否|
 
-## <a name="cloud-settings"></a>雲端設定 
+## <a name="cloud-settings"></a>雲端設定
 
 |**設定名稱**|**iOS 7.1 和更新版本**|**Android 5 及更新版本**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -144,14 +145,14 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 |允許 Google 備份  |不適用|否|是|
 |允許 Google 帳戶自動同步處理  |不適用|否|是|
 
-## <a name="system-settings"></a>系統設定 
+## <a name="system-settings"></a>系統設定
 
 |**設定名稱**|**iOS 7.1 和更新版本**|**Android 5 及更新版本**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |封鎖螢幕捕捉 |是|否|是|
 |封鎖從裝置傳送診斷資料 |是|否|是|
 
-## <a name="application-settings"></a>應用程式設定 
+## <a name="application-settings"></a>應用程式設定
 
 |**設定名稱**|**iOS 7.1 和更新版本**|**Android 5 及更新版本**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -159,7 +160,7 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 |封鎖對應用程式存放區的存取 |是|否|是|
 |存取應用程式存放區時需要密碼 |否|是|是|
 
-## <a name="device-capabilities-settings"></a>裝置功能設定 
+## <a name="device-capabilities-settings"></a>裝置功能設定
 
 |**設定名稱**|**iOS 7.1 和更新版本**|**Android 5 及更新版本**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
@@ -186,7 +187,7 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 |SystemSecurityTLS  |是|否|
 |WLANEnabled  |否|否|
 
-## <a name="settings-supported-by-windows"></a>Windows 支援的設定 
+## <a name="settings-supported-by-windows"></a>Windows 支援的設定
 
 您可以將 Windows 10 裝置登記為行動裝置，以進行管理。 在部署適用的原則之後，當使用者第一次使用內建的電子郵件應用程式存取其 Microsoft 365 電子郵件時，將需要使用 Windows 10 裝置的使用者才會註冊基本行動性和安全性。 (需要 Azure AD premium 訂閱) 。
 
@@ -197,14 +198,14 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 - 需要一個數位元密碼
 
 - 密碼最小長度
-    
+
 - 擦除裝置之前的登入失敗次數
-    
+
 - 鎖定裝置之前的閒置分鐘
-    
+
 - 密碼到期 (天) 
-    
-- 記住密碼歷程記錄，並防止重複使用   
+
+- 記住密碼歷程記錄，並防止重複使用
 
 >[!NOTE]
 >下列設定控制密碼只會控制本機 Windows 帳戶。 透過加入網域或 Azure Active Directory 所提供的 Windows 帳戶，不會受到這些設定的影響。
@@ -218,21 +219,20 @@ Windows 10 的存取控制需要包含 Azure AD Premium 的訂閱，而且裝置
 您可以使用 PowerShell Cmdlet 來設定這些額外的原則設定：
 
 - AllowConvenienceLogon
-    
+
 - UserAccountControlStatus
-    
+
 - FirewallStatus
-    
+
 - AutoUpdateStatus
-    
-- AntiVirusStatus   
+
+- AntiVirusStatus
 
 - AntiVirusSignatureStatus
-    
+
 - SmartScreenEnabled
-    
+
 - WorkFoldersSyncUrl
-    
 
 ## <a name="remotely-wipe-a-mobile-device"></a>遠端清除行動裝置
 

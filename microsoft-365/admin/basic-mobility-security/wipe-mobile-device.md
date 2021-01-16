@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用內建基本行動性和安全性，以移除已註冊裝置中的資訊。
-ms.openlocfilehash: 4627b0cb2d0963ae724c425a6a7ea6279f271856
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 3bb9bfe55653b021ce5a86dd5d3dbc3de45ed19a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47429947"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876825"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>在基本行動及安全性中清除行動裝置
 
@@ -32,22 +32,22 @@ ms.locfileid: "47429947"
 ## <a name="before-you-begin"></a>開始之前
 
 行動裝置可以儲存敏感組織資訊，並提供組織的 Microsoft 365 資源的存取權。 為了協助保護您組織的資訊，您可以進行原始重設或移除公司資料：
-    
-- **恢復出廠設定**：刪除使用者行動裝置上的所有資料，包括已安裝的應用程式、相片和個人資訊。 當清除完成時，裝置會還原為其出廠設定。
-    
-- **移除公司資料**：移除組織中的資料，並在使用者的行動裝置上保留已安裝的應用程式、相片和個人資訊。   
 
-- **在擦除裝置時 (出廠重設或移除公司資料) **中，裝置會從受管理的裝置清單中移除。
+- **恢復出廠設定**：刪除使用者行動裝置上的所有資料，包括已安裝的應用程式、相片和個人資訊。 當清除完成時，裝置會還原為其出廠設定。
+
+- **移除公司資料**：移除組織中的資料，並在使用者的行動裝置上保留已安裝的應用程式、相片和個人資訊。
+
+- **在擦除裝置時 (出廠重設或移除公司資料)** 中，裝置會從受管理的裝置清單中移除。
     
 - **自動重設裝置**：您可以設定基本行動性和安全性原則，當使用者未成功輸入裝置密碼的特定次數時，自動將裝置重設為自動出廠設定。 若要這麼做，請遵循以 [基本行動性和安全性建立裝置安全性原則](create-device-security-policies.md)中的步驟。
     
-- **如果您想要知道** 您在擦除其裝置時的使用者體驗，請參閱  [使用者和裝置影響的情況為何？](#whats-the-user-and-device-impact)。   
+- **如果您想要知道** 您在擦除其裝置時的使用者體驗，請參閱   [使用者和裝置影響的情況為何？](#whats-the-user-and-device-impact)。
 
 ## <a name="wipe-a-mobile-device"></a>清除行動裝置
 
 1. 移至 [Microsoft 365 系統管理中心](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23)。
-    
-2. 在 [搜尋] 欄位中輸入行動裝置管理，並從結果清單中選取 [行動 **裝置管理** ]。 
+
+2. 在 [搜尋] 欄位中輸入行動裝置管理，並從結果清單中選取 [行動 **裝置管理** ]。
 
     :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="基本行動裝置和 Secruity 行動裝置管理選項":::
 
@@ -86,7 +86,7 @@ ms.locfileid: "47429947"
 |如果使用 Intune 應用程式保護原則保護裝置，則會清除 Microsoft 365 應用程式資料。 未移除應用程式。 對於不是由行動應用程式管理 (MAM) 原則保護的裝置，Outlook 和 OneDrive 不會移除快取的資料。<br/>**記事** 若要套用 Intune 應用程式保護原則，您必須要有 Intune 授權。|是|是|
 |已不再執行基本行動性和裝置安全性所套用的原則設定;使用者可以變更設定。|是|是|
 |已移除基本行動性和安全性所建立的電子郵件設定檔，並刪除裝置上的快取電子郵件。|是|不適用|
->[!NOTE] 
+>[!NOTE]
 >您可以在應用程式存放區中的 iOS 和適用于 Android 裝置的播放存放區中取得公司入口網站應用程式。
 
 ## <a name="related-topics"></a>相關主題

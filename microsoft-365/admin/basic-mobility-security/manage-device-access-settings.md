@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性可協助您保護和管理行動裝置。
-ms.openlocfilehash: e66465d312c4268aca82677fa4e517aaeb822ce3
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: dd9d777798c2c96776a8f9b40a3c4dfe0b95702a
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430104"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876945"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>在基本行動及安全性中管理裝置存取設定
 
@@ -32,18 +32,18 @@ ms.locfileid: "47430104"
 請使用下列步驟：
 
 1. 使用您的全域系統管理員帳戶登入 Microsoft 365。
-    
+
 2. 在您的瀏覽器中輸入：  [https://protection.office.com](https://protection.office.com/) 。    
 
     >[!IMPORTANT]
-    >如果這是您第一次使用 MDM for Microsoft 365 商務標準，請在這裡啟動： [啟動行動裝置管理](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。 啟動之後，使用 [Office 365 安全性 & 合規性](https://protection.office.com/)來管理裝置。
+    >如果這是您第一次使用 Microsoft 365 商務標準的基本行動性和安全性，請在這裡啟動： [啟動基本的安全性和行動性](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)。 啟動之後，使用 [Office 365 安全性 & 合規性](https://protection.office.com/)來管理裝置。
 
 3. 移至 [資料遺失防護 > **裝置管理**   >  **裝置原則**]，然後選取 [ **管理整個組織的裝置存取設定**]。
-    
+
 4. 選取 [ **封鎖**]。
 
     :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本行動及安全性封鎖存取核取方塊":::
 
-5. 選取 [ **儲存**]。 
+5. 選取 [ **儲存**]。
 
 若要瞭解基本行動性和安全性可支援哪些裝置，請參閱 [基本行動性和安全性的功能](capabilities.md)。

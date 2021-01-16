@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 使用基本行動性和安全性來建立保護組織資訊的裝置原則。
-ms.openlocfilehash: 322bca862c852f83406ca4622a63384b2e2275e5
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 077f1e7e0d763aaecfc38fd4b57d9e8912900a3c
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545881"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49877065"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>在基本行動性和安全性中建立裝置安全性原則
 
@@ -39,8 +39,8 @@ ms.locfileid: "47545881"
 - 若要在 Microsoft 365 中建立及部署基本行動及安全性原則，您必須是 Microsoft 365 全域管理員。如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1)。
 - 在您部署原則之前，請讓您的組織知道以基本行動性和安全性登錄裝置的潛在影響。 根據您設定原則的方式，可以封鎖不相容的裝置以存取 Microsoft 365 和資料，包括已註冊裝置上已安裝的應用程式、相片和個人資訊，以及可刪除的資料。
 
-> [!NOTE]
-> 在 MDM for Microsoft 365 商務標準中建立的原則和存取規則會覆寫 Exchange 系統管理中心建立的行動裝置信箱原則和裝置存取規則 ActiveSync。 在 MDM for Microsoft 365 商務標準中登記裝置後，就會忽略任何 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則套用至裝置。 若要深入瞭解 Exchange ActiveSync，請參閱 exchange [Online 中的 exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=524380)。
+>[!NOTE]
+>在 Microsoft 365 商務標準的基本行動及安全性中建立的原則和存取規則會覆寫 Exchange 系統管理中心建立的行動裝置信箱原則和裝置存取規則 ActiveSync。 在 Microsoft 365 商務標準的基本行動及安全性中註冊裝置後，會忽略任何 Exchange ActiveSync 行動裝置信箱原則或裝置存取規則套用至裝置。 若要深入瞭解 Exchange ActiveSync，請參閱 exchange [Online 中的 exchange ActiveSync](https://go.microsoft.com/fwlink/p/?LinkId=524380)。
 
 ## <a name="step-1-create-a-device-policy-and-deploy-to-a-test-group"></a>步驟1：建立裝置原則並部署至測試群組
 
@@ -69,14 +69,14 @@ ms.locfileid: "47545881"
 1. 在您的瀏覽器中輸入 [https://protection.office.com/devicev2](https://protection.office.com/devicev2) 。
 2. 選取 **[查看受管理的裝置清單**]。
 3. 檢查已套用原則的使用者裝置狀態。 您想要管理裝置的 **狀態** **。**
-4. 您也可以在選取裝置後，按一下 [**出廠重設**] 或 [從**管理**中**移除公司資料**] 按鈕，在裝置上進行完整或選擇性的擦除。 如需相關指示，請參閱 [在 Microsoft 365 中清除行動裝置。
+4. 您也可以在選取裝置後，按一下 [**出廠重設**] 或 [從 **管理** 中 **移除公司資料**] 按鈕，在裝置上進行完整或選擇性的擦除。 如需相關指示，請參閱 [在 Microsoft 365 中清除行動裝置。
 
 ## <a name="step-3-deploy-a-policy-to-your-organization"></a>步驟3：將原則部署至您的組織
 
 在您建立裝置原則並驗證它如預期般運作後，請將其部署至您的組織。
 
 1. 從瀏覽器類型： [https://protection.office.com/devicev2](https://protection.office.com/devicev2) 。
-2. 選取您要部署的原則，然後選擇 [所套用**的群組**] 旁邊的 [**編輯**]。
+2. 選取您要部署的原則，然後選擇 [所套用 **的群組**] 旁邊的 [**編輯**]。
 3. 搜尋要新增的群組，然後按一下 [ **選取**]。
 4. 選取 [ **關閉** 並 **變更設定]。**
 5. 選取 [ **關閉** 並 **編輯原則]。**
@@ -91,7 +91,7 @@ ms.locfileid: "47545881"
 
 1. 在您的瀏覽器中輸入 [https://protection.office.com/devicev2](https://protection.office.com/devicev2) 。
 2. 選取 [ **管理整個組織的裝置存取設定**]。
-3. 若要封鎖不支援的裝置，請選擇 [**如果 Microsoft 365 的 MDM 不支援裝置**，請選擇**封鎖**]，然後選取 [**儲存**]。
+3. 若要封鎖不支援的裝置，請選擇 [在 **Microsoft 365 的基本行動及安全性不支援裝置**] 下的 [**封鎖**]，然後選取 [**儲存**]。
 
    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本行動性和安全性封鎖存取選項":::
 
@@ -109,7 +109,7 @@ ms.locfileid: "47545881"
 
 4. 在 [ **選取群組** ] 面板中，選取您要使用的安全性群組。
 
-5. 選取名稱，然後新增 [ **Add**  >  **儲存**]。
+5. 選取名稱，然後新增 [   >  **儲存**]。
 
 6. 在 **全組織的裝置存取設定** 面板上，選擇 [ **儲存**]。
 
@@ -150,6 +150,6 @@ ms.locfileid: "47545881"
 
 ## <a name="related-topics"></a>相關主題
 
-[基本行動及安全性概述](overview.md)
+[基本行動與安全性概觀](overview.md)
 
-[基本行動及安全性的功能](capabilities.md)
+[基本行動與安全性的功能](capabilities.md)

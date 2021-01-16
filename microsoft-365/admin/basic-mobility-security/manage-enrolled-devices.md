@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性可協助您保護和管理行動裝置。
-ms.openlocfilehash: e07ff0704afcb5bca1db4e2a5c2aff9c7d6008fd
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: 4954da0ff44276d9bd46cabc78bc52c7879e5e26
+ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430101"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "49876957"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>在 Microsoft 365 中管理已登記行動裝置管理的裝置
 
@@ -36,15 +36,15 @@ Microsoft 365 內建的行動裝置管理可協助您保護和管理使用者的
 若要取得「裝置管理」面板，請遵循下列步驟：
 
 1. 移至 [Microsoft 365 系統管理中心](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23)。
-    
-2. 在 [搜尋] 欄位中輸入行動裝置管理，並從結果清單中選取 [行動**裝置管理**]   。
+
+2. 在 [搜尋] 欄位中輸入行動裝置管理，並從結果清單中選取 [行動 **裝置管理**]   。
 
     :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="行動裝置管理選項":::
 
-3. 選取 [  **管理裝置**]。
+3. 選取 [  **讓我們開始** 吧！]。
 
 ## <a name="manage-mobile-devices"></a>管理行動裝置
-    
+
 在您掌握基本行動性和安全性後，您可以在以下幾種方式管理組織中的行動裝置。
 
 |**以便進行下列動作**|**執行**|
