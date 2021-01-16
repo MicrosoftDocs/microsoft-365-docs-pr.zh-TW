@@ -18,12 +18,12 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 description: 資料遺失防護 (安全性與合規性中心中的 DLP) 包含可供 &amp; 您在 DLP 原則中使用的80機密資訊類型。 本主題列出所有敏感資訊類型，並顯示 DLP 原則在偵測到每種類型時所尋找的功能。
-ms.openlocfilehash: 10f45403703130c191f4cbb26d1c0cba168b05ae
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 584e2fe2353c1f80545a3742a44163cb26ee2c29
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751280"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881782"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>敏感資訊類型實體定義
 
@@ -12216,7 +12216,8 @@ Dictionary_icd_9_codes 關鍵字字典中的任何字詞，都是以 [國際分�
 - 本國健康情況索引識別碼
 - 本國健康情況索引#
 
-## <a name="new-zealand-social-wlefare-number"></a>紐西蘭社交 wlefare 號碼
+## <a name="new-zealand-social-welfare-number"></a>紐西蘭社交 welfare 號碼
+
 此機密資訊類型僅可用於下列專案：
 - 資料遺失防護原則
 - 通訊相容性原則
@@ -14542,7 +14543,7 @@ numărul pașaportului numarul pasaportului numerele pașaportului Pașaport nr
 #### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - 身份證
-- ID
+- 識別碼
 - 識別 
    
 ## <a name="south-korea-resident-registration-number"></a>韓國居民登記號碼
@@ -16393,7 +16394,7 @@ OR
 - Dls 
 - 民盟 
 - CDLS 
-- ID 
+- 識別碼 
 - IDs 
 - Dl# 
 - Dls# 

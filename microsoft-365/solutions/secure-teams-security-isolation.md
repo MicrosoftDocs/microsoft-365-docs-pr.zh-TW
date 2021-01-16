@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用唯一的敏感度標籤來建立小組以獲得安全性。
-ms.openlocfilehash: d5cfe33d4f254832ccf26552d8ca392cf1dc440c
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 439dee40d1501801fc09d570614a591259c6f09c
+ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870976"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49881702"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>為小組設定安全性隔離
 
@@ -46,7 +46,7 @@ ms.locfileid: "49870976"
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
-<a name="poster"></a> 如需此案例的 2 頁式摘要，請參閱[具有安全性隔離的 Microsoft Teams 海報](../downloads/team-security-isolation-poster.pdf)。
+<a name="poster"></a> 如需此案例的 1 頁式摘要，請參閱[具有安全性隔離的 Microsoft Teams 海報](../downloads/team-security-isolation-poster.pdf)。
 
 [![具有安全性隔離的 Microsoft Teams 海報](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
