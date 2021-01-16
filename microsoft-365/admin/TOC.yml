@@ -24,6 +24,8 @@
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: 保護 Windows 10 電腦
           href: ../business/secure-win-10-pcs.md
+        - name: 下載軟體和產品金鑰
+          href: setup/download-software-licenses-csp.md
         - name: 安裝 Office App
           href: setup/install-applications.md
         - name: 設定 Windows 裝置
@@ -360,12 +362,32 @@
               href: basic-mobility-security/overview.md
             - name: 比較基本行動與安全性和 Intune
               href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
-            - name: 基本行動與安全性常見問題集
-              href: basic-mobility-security/frequently-asked-questions.md
             - name: 基本行動與安全性的功能
               href: basic-mobility-security/capabilities.md
-            - name: 比較基本行動與安全性和 Intune
-              href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
+            - name: 設定基本行動與安全性
+              href: basic-mobility-security/set-up.md
+            - name: 建立裝置安全性原則
+              href: basic-mobility-security/create-device-security-policies.md
+            - name: 建立 iOS 裝置的 APNs 憑證
+              href: basic-mobility-security/create-an-apns-certificate-for-ios-devices.md
+            - name: 管理裝置存取設定
+              href: basic-mobility-security/manage-device-access-settings.md
+            - name: 取得受管理裝置的詳細資料
+              href: basic-mobility-security/get-details-about-managed-devices.md
+            - name: 管理已註冊的裝置
+              href: basic-mobility-security/manage-enrolled-devices.md
+            - name: 註冊您的行動裝置
+              href: basic-mobility-security/enroll-your-mobile-device.md
+            - name: 隱私權和安全性
+              href: basic-mobility-security/privacy-and-security.md
+            - name: 常見問題集
+              href: basic-mobility-security/frequently-asked-questions.md
+            - name: 抹除行動裝置資料
+              href: basic-mobility-security/wipe-mobile-device.md
+            - name: 關閉基本行動與安全性
+              href: basic-mobility-security/turn-off.md
+            - name: 疑難排解
+              href: basic-mobility-security/troubleshoot.md
     - name: 與客戶合作
       href: work-with-customers/index.yml
       items:
