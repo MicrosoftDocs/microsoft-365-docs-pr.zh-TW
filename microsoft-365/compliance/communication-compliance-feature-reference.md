@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 009ed10cb9d005757a786d3a3b2c0bba2c8e6d44
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: f8c7f2d4ef21ddb2358ab4368d81af0144a4ec11
+ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527636"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "49883692"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -46,8 +46,9 @@ ms.locfileid: "49527636"
 | **冒犯性語言和反騷擾** | 監視冒犯性語言的通訊 | -位置： Exchange Online、Microsoft 團隊、Yammer、商務用 Skype <br> -Direction:Inbound、輸出、內部 <br> -審閱百分比：100% <br> -條件：冒犯性語言分類程式 |
 | **敏感性資訊** | 監視敏感資訊的通訊 | -位置： Exchange Online、Microsoft 團隊、Yammer、商務用 Skype <br> -Direction:Inbound、輸出、內部 <br> -審閱百分比：10% <br> -條件：機密資訊、現成的內容模式和類型、自訂字典選項、大於 1 MB 的附件 |
 | **法規遵從性** | 監視與金融法規合規性相關的資訊的通訊 | -位置： Exchange Online、Microsoft 團隊、Yammer、商務用 Skype <br> -Direction:Inbound、輸出 <br> -審閱百分比：10% <br> -條件：自訂字典選項，大於 1 MB 的附件 |
+| **利益衝突** | 監視兩個群組或兩個使用者之間的通訊，以協助避免利益衝突 | -位置： Exchange Online、Microsoft 團隊、Yammer、商務用 Skype <br> -Direction:Internal <br> -審閱百分比：100% <br> -條件：無 |
 
-## <a name="permissions-preview"></a> (預覽的許可權) 
+## <a name="permissions"></a>權限
 
 >[!Important]
 >根據預設，全域管理員無法存取通訊規範功能。 在此步驟中所指派的角色是必要的通訊相容性功能才能存取。
@@ -235,7 +236,7 @@ ms.locfileid: "49527636"
 
 如果您想要減少要檢查的內容數量，您可以指定通訊相容性原則所控制之所有通訊的百分比。 會從符合所選原則條件的總內容百分比選取即時、隨機的內容樣本。 如果您想要檢閱者審閱所有專案，您可以在通訊相容性原則中設定 **100%** 。
 
-## <a name="privacy-preview"></a>隱私權 (預覽) 
+## <a name="privacy"></a>隱私權
 
 保護具有原則相符之使用者的隱私權很重要，可協助您在資料調查和分析檢查中宣傳 objectivity，以取得通訊相容性警示。 此設定僅適用于顯示通訊相容性解決方案的使用者名稱。 它不會影響名稱在其他規範解決方案或系統管理中心中的顯示方式。
 
@@ -255,7 +256,7 @@ ms.locfileid: "49527636"
 |**範本名稱** | 是 | 您將在修正期間于通知工作流程中選取之公告範本的易記名稱，會支援文字字元。 |
 | **寄件者位址** | 是 | 一或多個使用者或群組的位址，會將郵件傳送給具有原則相符的使用者，並從 Active Directory 中為您的訂閱選取。 |
 | **抄送和 BCC 位址** | 否 | 選取的使用者或群組，以取得您訂閱之 Active Directory 的原則相符的通知。 |
-| **Subject** | 是 | 顯示在郵件主旨行中的資訊，支援文字字元。 |
+| **主旨** | 是 | 顯示在郵件主旨行中的資訊，支援文字字元。 |
 | **郵件內文** | 是 | 出現在郵件內文中的資訊支援文字或 HTML 值。 |
 
 ### <a name="html-for-notices"></a>用於通知的 HTML
@@ -333,7 +334,7 @@ ms.locfileid: "49527636"
 
 7. 選取 [關閉]， **結束** [警示原則詳細資料] 頁面。
 
-## <a name="power-automate-flows-preview"></a> (預覽的自動功能流程預覽) 
+## <a name="power-automate-flows"></a>自動處理電源流程
 
 [Microsoft Power 自動化](https://docs.microsoft.com/power-automate/getting-started) 是一種工作流程服務，可在應用程式和服務間自動執行動作。 您可以使用來自範本或手動建立的流程，來自動化與這些應用程式和服務相關聯的常見工作。 當您啟用電源自動化流程以進行通訊相容性時，您可以自動化提醒和使用者的重要工作。 您可以設定電源自動化流程，以在使用者有通訊符合性警示和其他應用程式時通知管理員。
 
@@ -422,7 +423,7 @@ ms.locfileid: "49527636"
 - **每個原則的專案和動作** 詳細報告：複查和匯出每個原則的相符專案和修正動作。 使用 [ *匯出* ] 選項來建立。包含報表詳細資料的 CSV 檔案。
 - **每個位置的專案和動作** 詳細報告：複查和匯出每個 Microsoft 365 位置的相符專案和修正動作。 使用 [ *匯出* ] 選項來建立。包含報表詳細資料的 CSV 檔案。
 
-## <a name="audit"></a>審計
+## <a name="audit"></a>稽核
 
 在某些情況下，您必須提供資訊給法規或合規性審計員，以證明使用者活動和通訊的監管。 此資訊可能是與定義之組織原則相關聯的所有活動摘要，或任何隨通相容性原則變更的摘要。 通訊相容性原則具有內建的審計追蹤，可提供內部或外部審計的完整準備工作。 每個建立、編輯和刪除動作的詳細審計歷史記錄，都是由您的通訊原則所捕獲，以提供監察程式的證明。
 

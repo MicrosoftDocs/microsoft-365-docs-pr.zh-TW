@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案新增至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的相容性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3688ee7390b7cadf701e8dbefd8b12c82cf6d89c
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 8723171820bb1c089d34b81f5adb6663ecc9b8af
+ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751590"
+ms.lasthandoff: 01/17/2021
+ms.locfileid: "49883712"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
@@ -100,7 +100,7 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 
 - [更新的角色群組](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)。 通訊相容性角色群組現在符合「內部使用者風險管理」解決方案可用的角色群組結構。
 - [報表儀表板](communication-compliance-feature-reference.md#reports-preview)。 用於查看所有通訊相容性報告的中央位置。 報告構件可讓您快速瞭解對通訊規範活動狀態的整體評估，最常用的洞察力。
-- [自動處理電源流程](communication-compliance-feature-reference.md#power-automate-flows-preview)。 設定流程以自動化警示和使用者的工作、在使用者觸發提醒時通知管理員等等。
+- [自動處理電源流程](communication-compliance-feature-reference.md#power-automate-flows)。 設定流程以自動化警示和使用者的工作、在使用者觸發提醒時通知管理員等等。
 - 「[改進分類」修正動作](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)。 包含符合 trainable 分類程式之專案的警示可能會受益于意見反應，有助於減少組織中的誤報。 [ **提升分類** ] 選項可讓您提供偵測到的專案是否符合相關通訊遵循原則中設定的分類器的意見反應。 您甚至可以建議其他分類器與專案產生關聯，以提升未來警示的相符準確度。
 
 ### <a name="data-connectors"></a>資料連線器
@@ -108,7 +108,7 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 - [新增協力廠商資料連線器](archiving-third-party-data.md#third-party-data-connectors)。 25個新的資料連線器，包含從 Globanet 到8的14個連接器，從 Telemessage。
 - [實體聲譽徽章授予連接器](import-physical-badging-data.md)。 匯入實體聲譽徽章授予資料，例如員工的原始實體存取事件，或是組織之聲譽徽章授予系統所產生的任何實體存取告警。 範例包括辦公樓、伺服器機房或資料中心的專案。 「內部使用者風險管理」解決方案可使用實體聲譽徽章授予資料，協助保護您的組織免受惡意活動或組織內的資料竊取。
 
-### <a name="insider-risk-management"></a>測試人員風險管理
+### <a name="insider-risk-management"></a>內部風險管理
 
 - [Microsoft 小組整合](insider-risk-management-settings.md#microsoft-teams-preview)。 當團隊整合在「內幕風險設定」中開啟時，您可以與工作小組中的其他專案關係人協調及共同作業，例如安全共用和儲存與個別案例相關的資料、追蹤及檢查分析員和調查人員的回應活動等等。
 - [自動處理電源流程](insider-risk-management-settings.md#power-automate-flows-preview)。 設定流程以自動化案例和使用者的重要工作，例如，檢索使用者、警示及案例資訊，以與專案關係人和其他應用程式共用、自動化動作（如張貼至案例記事）等等）。
@@ -146,7 +146,7 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 
 這個月的公開預覽的一些新增及增強功能：
 
-**測試人員風險管理**
+**內部風險管理**
 
 - 查看我們的六個新 [原則範本](insider-risk-management-policies.md#policy-templates)：
     - 依優先使用者的資料洩漏
@@ -170,7 +170,7 @@ Ignite 今年宣佈，合規性分數是 rebranded 為 [合規性管理員](comp
 
 - 當您 [在警示中檢查郵件](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)時，您現在可以在 Microsoft 小組頻道、1:1 和群組聊天中移除不適當的郵件。 移除的郵件和內容會被取代，以解釋因敏感內容而被移除的原則提示。
 - 新的 [通訊角色](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) (也會包含在) 年9月發行的新通訊符合性角色群組中。
-- 新的通訊相容性設定經驗包括 [隱私權](communication-compliance-feature-reference.md#privacy-preview) 和 [注意事項範本](communication-compliance-feature-reference.md#notice-templates)的設定。
+- 新的通訊相容性設定經驗包括 [隱私權](communication-compliance-feature-reference.md#privacy) 和 [注意事項範本](communication-compliance-feature-reference.md#notice-templates)的設定。
 - 新的 [分類](communication-compliance-feature-reference.md#classifiers) 器協助偵測成人、racy 及 gory 影像。
 - 在 [提醒中檢查郵件](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) 時出現新的「模式偵測」通知，可讓您瞭解使用者對相同行為的重複實例。
 
