@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: 8548a211-3fe7-47cb-abb1-355ea5aa88a2
 description: 摘要：Office 365 需要連線到網際網路。客戶必須可使用 Office 365 方案取得下列端點，包括 Government Community Cloud (GCC)。
 hideEdit: true
-ms.openlocfilehash: 9b705c6cad0387efb16f3fc5494b1ba2fe337732
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 386c92d0856b3faa88fb8a05f8ddff58a81e3c4f
+ms.sourcegitcommit: a92b150da1e11d4a204c556ab98a4776727dbc22
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794397"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "49883333"
 ---
 # <a name="office-365-urls-and-ip-address-ranges"></a>Office 365 URL 和 IP 位址範圍
 
@@ -62,7 +62,7 @@ Office 365 需具有網際網路的連線能力。使用　Office 365 方案的�
 [!INCLUDE [Office 365 worldwide endpoints](../includes/office-365-worldwide-endpoints.md)]
 
 >[!Note]
->如需 Yammer 的 IP 位址和 URL 的建議，請參閱[此部落格文章](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592) (英文)。
+>有關 Yammer IP 位址和 URL 的建議，請參閱 Yammer 部落格上的[不建議為 Yammer 使用硬式編碼 IP 位址](https://techcommunity.microsoft.com/t5/Yammer-Blog/Using-hard-coded-IP-addresses-for-Yammer-is-not-recommended/ba-p/276592)。
 >
 
 ## <a name="related-topics"></a>相關主題
@@ -71,7 +71,7 @@ Office 365 需具有網際網路的連線能力。使用　Office 365 方案的�
 
 [一般 Microsoft Stream 端點](https://docs.microsoft.com/stream/network-overview#general-microsoft-stream-endpoints)
   
-[監視 Microsoft 365 連線能力](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity?view=o365-worldwide)
+[監視 Microsoft 365 連線能力](https://docs.microsoft.com/microsoft-365/enterprise/monitor-connectivity)
 
 [在第三方應用程式系統上的根 CA 和中繼 CA 集合檔](../compliance/encryption-office-365-certificate-chains.md)
   
@@ -88,3 +88,5 @@ Office 365 需具有網際網路的連線能力。使用　Office 365 方案的�
 [Microsoft Azure IP 範圍與服務標籤 - 中國雲端](https://www.microsoft.com/download/details.aspx?id=57062)
   
 [Microsoft 公用 IP 空間](https://www.microsoft.com/download/details.aspx?id=53602)
+
+[服務名稱和傳輸通訊協定連接埠號碼登錄](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml)
