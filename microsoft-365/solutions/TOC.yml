@@ -93,6 +93,22 @@
           href: information-protection-deploy-monitor-respond.md
 - name: 工作負載解決方案和案例
   items:
+    - name: 概觀
+      href: workload-solutions-scenarios-overview.md
+    - name: 租用戶管理
+      items:
+        - name: 概觀
+          href: tenant-management-overview.md
+        - name: 步驟 1. 您的租用戶
+          href: tenant-management-tenants.md
+        - name: 步驟 2. 最佳網路
+          href: tenant-management-networking.md
+        - name: 步驟 3. 身分識別
+          href: tenant-management-identity.md
+        - name: 步驟 4. 移轉
+          href: tenant-management-migration.md
+        - name: 步驟 5. 裝置和應用程式管理
+          href: tenant-management-device-management.md
     - name: 團隊合作和共同作業
       items:
         - name: Teams 架構海報
