@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 請確保您的遠端工作者能夠存取內部部署資源，同時將 Microsoft 365 雲端服務的存取最佳化。
-ms.openlocfilehash: 1fbb1cb6ad9817f0e167ae95f9fc113ecdee4221
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: a9a8c972d58c7d2bac3f49ad602578358406c5a0
+ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681417"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "49908326"
 ---
 # <a name="step-2-provide-remote-access-to-on-premises-apps-and-services"></a>步驟 2： 可遠端存取內部部署應用程式和服務
 
@@ -55,7 +55,7 @@ Microsoft 365 流量必須透過貴組織進行間接路由，這可能是從距
 
 您可以利用分割通道設定 VPN 用戶端，以排除透過 VPN 連線傳送到組織網路的特定類型流量。
 
-若要將 Microsoft 365 雲端資源的存取最佳化，請設定分割通道 VPN 用戶端，排除透過 VPN 連線到**最佳化**類別 Microsoft 365 端點的流量。 如需詳細資訊，請參閱 [Office 365 端點類別](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories) (部分機器翻譯)。 請參閱[本清單](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)，以了解最佳化類別端點。
+若要將 Microsoft 365 雲端資源的存取最佳化，請設定分割通道 VPN 用戶端，排除透過 VPN 連線到 **最佳化** 類別 Microsoft 365 端點的流量。 如需詳細資訊，請參閱 [Office 365 端點類別](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-network-connectivity-principles#new-office-365-endpoint-categories) (部分機器翻譯)。 請參閱[本清單](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)，以了解最佳化類別端點。
 
 以下是產生的流量，其中連至 Microsoft 365 雲端應用程式的大部分流量會略過 VPN 連線。
 

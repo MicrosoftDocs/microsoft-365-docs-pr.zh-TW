@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: 使用 Microsoft 365 中的記錄管理，您可以將保留時間表套用到管理保留、記錄聲明和處置的檔案計畫中。
-ms.openlocfilehash: 0057be98c79ec07018d86f3130d7e03d68c74446
-ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
+ms.openlocfilehash: 1f6ab392abbf55851e1f084507d3f1658c3cf264
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2021
-ms.locfileid: "49790199"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905232"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的記錄管理
 
@@ -85,7 +85,7 @@ ms.locfileid: "49790199"
 |刪除|允許 <sup>1</sup> |**封鎖** |**封鎖**| **封鎖**|
 |複製|已允許 |已允許 | 已允許| 允許|
 |在容器內移動 <sup>2</sup>|允許 |已允許 | 已允許| 已允許|
-|在容器間移動 <sup>2</sup>|允許 |如果從未解除鎖定則允許 | 允許| **封鎖**|
+|在容器間移動 <sup>2</sup>|允許 |如果從未解除鎖定則允許 | **封鎖** | **封鎖**|
 |開啟/讀取|允許 |已允許 | 已允許| 已允許|
 |變更標籤|允許 |允許 - 僅限容器系統管理員 | 允許 - 僅限容器系統管理員| **封鎖**
 |移除標籤|允許 |允許 - 僅限容器系統管理員 | 允許 - 僅限容器系統管理員| **封鎖**
