@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: 在本文中，您將瞭解 Office 365 的風險及可用於保護的加密技術。
-ms.openlocfilehash: b266e7f556510df7fdd5c9140bbc7666e2aa330c
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.openlocfilehash: e6ba5d20d8ef710117e4630db69b2c46289f1d9a
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49738020"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905252"
 ---
 # <a name="encryption-risks-and-protections"></a>加密風險與防護
 
@@ -64,7 +64,7 @@ Microsoft 遵循控制和規範架構，側重于 Microsoft 365 服務和客戶�
 |  | SharePoint Online | 支援 [加密模式 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))、更新及增強型 RMS 密碼編譯實施。 它支援簽章和加密的 RSA 2048，以及簽章的 SHA-256。 | [由 Microsoft 管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)，這是預設設定;或 <br> <br> 客戶管理，這是 Microsoft 管理金鑰的替代方法。 具有 IT 管理之 Azure 訂閱的組織可使用 BYOK 並記錄其使用狀況，而不需額外收費。 如需詳細資訊，請參閱 [執行攜帶您自己的金鑰](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。 在此設定中，nCipher Hsm 是用來保護您的金鑰。 如需詳細資訊，請參閱 [NCipher hsm 和 AZURE RMS](https://www.thales-esecurity.com/msrms/cloud)。 | 是 |
 | S/MIME | Exchange Online | 加密郵件語法標準 1.5 (PKCS #7)  | 取決於已部署的客戶管理公開金鑰基礎結構。 主要管理是由客戶執行，且 Microsoft 永不可以存取用來簽署和解密的私密金鑰。 | 是，當設定成使用3DES 或 AES256 加密外寄郵件時 |
 | Office 365 郵件加密 | Exchange Online | 與 Azure RMS 相同 ([加密模式 2](https://technet.microsoft.com/library/dn569290.aspx) -RSA 2048 用於簽章和加密，並 SHA-256 簽章)  | 使用 Azure 資訊保護作為其加密基礎結構。 使用的加密方法取決於您在哪裡取得用來加密及解密郵件的 RMS 金鑰。 | 是 |
-| 具有夥伴組織的 SMTP TLS | Exchange Online | TLS 1.2 與 AES 256 | Exchange Online (outlook.office.com) 的 TLS 憑證是由巴爾的摩 CyberTrust Root 所發行的2048位 SHA256RSA 憑證。 <br> <br> Exchange Online 的 TLS 根憑證是由巴爾的摩 CyberTrust Root 所發行的2048位 SHA1RSA 憑證。 | 是，當使用具有256位密碼強度的 TLS 1.2 時 |
+| 具有夥伴組織的 SMTP TLS | Exchange Online | TLS 1.2 與 AES 256 | Exchange Online (outlook.office.com) 的 TLS 憑證是由 DigiCert 雲端服務 CA-1 發行的 RSA 加密憑證所 SHA-256 的2048位。 <br> <br> Exchange Online 的 TLS 根憑證是使用 [GlobalSign 根 CA – R1](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections?view=o365-worldwide#tls-certificate-information-for-exchange-online)發行的 RSA 加密憑證的2048位 SHA-1。 <br> <br> 請注意，根據安全性的考慮，我們的憑證會在一段時間後變更。 | 是，當使用具有256位密碼強度的 TLS 1.2 時 |
 
 *\*此表格中所參照的 TLS 憑證是針對 US 資料中心;非 US 資料中心也會使用2048位 SHA256RSA 憑證。*
 
@@ -88,6 +88,6 @@ Microsoft 遵循控制和規範架構，側重于 Microsoft 365 服務和客戶�
 |  | SharePoint Online | 支援 [加密模式 2](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/hh867439(v=ws.10))、更新及增強型 RMS 密碼編譯實施。 它支援簽章和加密的 RSA 2048，以及簽署中雜湊的 SHA-256。 | [由 Microsoft 管理](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)，這是預設設定;或 <br> <br> 客戶管理的 (也稱為 BYOK) ，也就是 Microsoft 管理的金鑰的替代方法。 具有 IT 管理之 Azure 訂閱的組織可使用 BYOK 並記錄其使用狀況，而不需額外收費。 如需詳細資訊，請參閱 [執行攜帶您自己的金鑰](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key)。 <br> <br> 在 BYOK 案例中，nCipher 的 Hsm 是用來保護您的金鑰。 如需詳細資訊，請參閱 [NCipher hsm 和 AZURE RMS](https://www.thales-esecurity.com/msrms/cloud)。 | 是 |
 | S/MIME | Exchange Online | 加密郵件語法標準 1.5 (PKCS #7)  | 取決於已部署的公用金鑰基礎結構。 | 是，當設定成使用3DES 或 AES-256 加密外寄郵件時。 |
 | Office 365 郵件加密 | Exchange Online | 與 Azure RMS 相同 ([加密模式 2](https://technet.microsoft.com/library/dn569290.aspx) -RSA 2048 用於簽章和加密，以及簽章中的雜湊 SHA-256)  | 使用 Azure RMS 作為其加密基礎結構。 使用的加密方法取決於您在哪裡取得用來加密及解密郵件的 RMS 金鑰。 <br> <br> 如果您使用 Microsoft Azure RMS 取得機碼，則會使用加密模式2。 如果您使用 Active Directory (AD) RMS 來取得金鑰，則會使用密碼編譯模式 1 或密碼編譯模式 2。 使用的方法取決於內部部署 AD RMS 部署。 密碼編譯模式 1 是原始的 AD RMS 密碼編譯實作。 它支援簽章和加密的 RSA 1024，並支援簽署的 SHA-1。 除了使用 Hsm 的 BYOK 設定之外，所有目前的 RMS 版本仍可繼續支援此模式。 | 是 |
-| 具有夥伴組織的 SMTP TLS | Exchange Online | TLS 1.2 與 AES 256 | Exchange Online (outlook.office.com) 的 TLS 憑證是由巴爾的摩 CyberTrust Root 所發行的2048位 SHA256RSA 憑證。 <br> <br> Exchange Online 的 TLS 根憑證是由巴爾的摩 CyberTrust Root 所發行的2048位 sha1RSA 憑證。 <br> <br> 請注意，根據安全性的考慮，我們的憑證會在一段時間後變更。 | 是 |
+| 具有夥伴組織的 SMTP TLS | Exchange Online | TLS 1.2 與 AES 256 | Exchange Online (outlook.office.com) 的 TLS 憑證是由 DigiCert 雲端服務 CA-1 發行的 RSA 加密憑證所 SHA-256 的2048位。 <br> <br> Exchange Online 的 TLS 根憑證是使用 [GlobalSign 根 CA – R1](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections?view=o365-worldwide#tls-certificate-information-for-exchange-online)發行的 RSA 加密憑證的2048位 SHA-1。 <br> <br> 請注意，根據安全性的考慮，我們的憑證會在一段時間後變更。 | 是，當使用具有256位密碼強度的 TLS 1.2 時 |
 
 *\*此表格中所參照的 TLS 憑證是針對 US 資料中心;非 US 資料中心也會使用2048位 SHA256RSA 憑證。*

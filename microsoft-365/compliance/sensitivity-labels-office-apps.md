@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ebf4626a6106a9bebc62c8bca1be825c645d60fd
-ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
+ms.openlocfilehash: 17ded34d5e386c4de3c2241d0465b63381a11906
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777076"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905272"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -66,7 +66,7 @@ Office for iOS 和 Office for Android：敏感度標籤是內置於 [office 應�
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)            | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)        | 在 [複查] 下   | 在 [複查] 下         | 是的 <sup>\*</sup>                                                        |
 |[要求使用者將標籤套用至電子郵件和檔](sensitivity-labels.md#what-label-policies-can-do)   | 預覽：向現有的 [頻道 (預覽) ](https://office.com/insider)             | 預覽：向現有的 [頻道 (預覽) ](https://office.com/insider)         | 在 [複查] 下   | 預覽： [Beta 通道](https://office.com/insider)         | 在 [複查] 下                                            
-|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | Word 和 PowerPoint 的預覽：向裡 [ (預覽的現有頻道) ](https://office.com/insider) | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | 推出： 16.44 + | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |支援標籤和加密檔上的[AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)和[合著](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -90,7 +90,7 @@ Office for iOS 和 Office for Android：敏感度標籤是內置於 [office 應�
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[要求使用者將標籤套用至電子郵件和檔](#require-users-to-apply-a-label-to-their-email-and-documents)   | 預覽： [目前的頻道 (預覽) ](https://office.com/insider))                         | 16.43 +                     | 4.57.0 +            | 4.2037.4 +                | 是                |
 |使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)                       | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)                    | 在 [複查] 下           | 在 [複查] 下               | 是               |
-|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 在 [複查] 下                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
+|[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 16.44 +                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
 |
 
 
@@ -163,8 +163,8 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
     - **機密 \ 所有員工**
     - **機密 \ 個人 (無加密)**
 
-  > [!NOTE]
-  > 若使用者從儲存在 SharePoint 或 OneDrive 中的標籤檔中手動移除加密，而且您已 [在 SharePoint 及 OneDrive 中啟用 Office 檔案的靈敏度卷](sensitivity-labels-sharepoint-onedrive-files.md)標，則會在下次存取或下載檔案時，自動還原標籤加密。 
+> [!NOTE]
+> 若使用者從儲存在 SharePoint 或 OneDrive 中的標籤檔中手動移除加密，而且您已 [在 SharePoint 及 OneDrive 中啟用 Office 檔案的靈敏度卷](sensitivity-labels-sharepoint-onedrive-files.md)標，則會在下次存取或下載檔案時，自動還原標籤加密。 
 
 
 ## <a name="apply-sensitivity-labels-to-files-emails-and-attachments"></a>將敏感度標籤套用至檔案、電子郵件及附件
@@ -207,7 +207,15 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 除了限制存取您自己組織中的使用者之外，您還可以將存取權擴充至在 Azure Active Directory 中具有帳戶的任何其他使用者。 在使用者成功驗證之後，所有 Office 應用程式和其他 [RMS enlightened 應用程式](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) 都可以開啟加密檔。
 
-如果外部使用者在 Azure Active Directory 中沒有帳戶，您可以在租使用者中為這些使用者建立來賓帳戶。 若為其電子郵件地址，您可以指定任何已使用的電子郵件地址。 例如，其 Gmail 位址。 您也可以使用此來賓帳戶，存取 SharePoint 或 OneDrive 中的共用檔，以 [SharePoint 和 OneDrive 中的 Office 檔案已啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)。
+如果外部使用者在 Azure Active Directory 中沒有帳戶，則可以使用您租使用者中的來賓帳戶進行驗證。 當您已 [在 SharePoint 及 OneDrive 中啟用 Office 檔案的靈敏度標籤](sensitivity-labels-sharepoint-onedrive-files.md)時，也可以使用這些來賓帳戶來存取 SharePoint 或 OneDrive 中的共用檔：
+
+- 單一選項是自行建立這些來賓帳戶。 您可以指定這些使用者已使用的任何電子郵件地址。 例如，其 Gmail 位址。
+    
+    此選項的優點是，您可以在加密設定中指定使用者的電子郵件地址，以限制特定使用者的存取權和許可權。 不利因素是使用標籤設定建立及協調帳戶的管理額外負荷。
+
+- 另一個選項是使用 [SharePoint 和 OneDrive 與 AZURE AD B2B 的整合 (預覽) ](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) ，這樣當您的使用者共用連結時，就會自動建立來賓帳戶。
+    
+    此選項的優點是最低的管理負荷，因為帳戶會自動建立，且標籤設定較為簡單。 在此案例中，您必須選取 [加密] 選項 [ [新增任何已驗證的使用者](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) ]，因為您不會事先知道電子郵件地址。 不利的是，此設定不會讓您限制特定使用者的存取權和使用許可權。
 
 外部使用者也可以使用 microsoft 帳戶來加密檔，當其使用 Microsoft 365 (應用程式時，在 Windows 上) 舊版本的 [Office 365 應用程式](https://docs.microsoft.com/deployoffice/name-change) ，以及 macOS (版本 16.42 +) ，Android (版本 16.0.13029 +) ，以及 iOS (版本 2.42 +) 。 例如，某人與他們共用加密檔，加密設定會指定其 Gmail 電子郵件地址。 此使用者可建立其自己的 Microsoft 帳戶，其使用 Gmail 電子郵件地址。 然後，使用此帳戶登入後，他們就可以開啟檔，並根據為該使用者指定的使用限制來進行編輯。 如需此案例的逐步範例，請參閱 [開啟和編輯受保護的檔](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)。
 
@@ -216,10 +224,10 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 當使用 Microsoft 帳戶的使用者以這種方式開啟加密檔時，如果不存在具有相同名稱的來賓帳戶，它會自動為租使用者建立來賓帳戶。 當來賓帳戶存在時，您可以使用網頁) 上的瀏覽器 (Office 來開啟 SharePoint 和 OneDrive 中的檔，以及從 Windows 桌面應用程式中開啟加密的檔。 
 
-不過，因為複寫延遲，所以不會立即建立自動來賓帳戶。 如果您指定個人電子郵件地址做為標籤加密設定的一部分，我們建議您在 Azure Active Directory 中建立對應的來賓帳戶。 然後，讓這些使用者知道他們必須使用此帳戶來開啟組織中的加密檔。
+不過，在此情況下，不會立即建立自動來賓帳戶，因為複寫延遲。 如果您指定個人電子郵件地址做為標籤加密設定的一部分，我們建議您在 Azure Active Directory 中建立對應的來賓帳戶。 然後，讓這些使用者知道他們必須使用此帳戶來開啟組織中的加密檔。
 
 > [!TIP]
-> 因為您無法確定外部使用者將使用受支援的 Office 用戶端應用程式，所以在建立來賓帳戶後，從 SharePoint 和 OneDrive 共用連結是比較可靠的方法，可支援與外部使用者的安全共同作業。
+> 因為您無法確定外部使用者將使用受支援的 Office 用戶端應用程式，所以在為特定) 使用者建立來賓帳戶 (之後，從 SharePoint 和 OneDrive 中共用連結，以及在任何已驗證的使用者 SharePoint 使用 [OneDrive 和 B2B 與 AZURE AD (整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)) 時，都是比較可靠的方法，可支援與外部使用者的安全共同作業。
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Office 應用程式何時套用內容標示和加密
 
@@ -269,6 +277,41 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 > [!NOTE]
 > 這些變數的語法是區分大小寫的。
 
+#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>為 Word、Excel、PowerPoint 和 Outlook 設定不同的視覺標記
+
+做為其他變數，您可以在文字字串中使用 "If. App" variable 語句來設定每個 Office 應用程式類型的視覺標記，並使用 [ **Word**]、[ **Excel**]、[ **PowerPoint**] 或 [ **Outlook**] 的值來識別應用程式類型。 您也可以縮寫這些值，如果您想要在相同的 If App 語句中指定多個值，則這是必要的。
+
+> [!NOTE]
+> 為了完整，Outlook 的指示會包含在內，但目前只有 Azure 資訊保護整合的標籤用戶端支援。
+
+使用下列語法：
+
+```
+${If.App.<application type>}<your visual markings text> ${If.End}
+```
+
+與其他動態視覺標記一樣，語法也是區分大小寫的。
+
+範例：
+
+- **只為 Word 檔設定標頭文字：**
+
+    `${If.App.Word}This Word document is sensitive ${If.End}`
+
+    只有在 Word 檔標題中，標籤會套用標頭文字「這個 Word 檔是保密的」。 沒有標頭文字會套用至其他 Office 應用程式。
+
+- **設定 Word、Excel 和 Outlook 的頁尾文字，以及 PowerPoint 的不同頁腳文字的頁腳文字：**
+
+    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
+
+    在 Word、Excel 和 Outlook 中，標籤會套用頁腳文字「此內容是機密」。 在 PowerPoint 中，標籤會套用註腳文字「本簡報是機密」。
+
+- **設定 Word 和 PowerPoint 的特定浮水印文字，然後為 Word、Excel 及 PowerPoint 設定浮水印文字：**
+
+    `${If.App.WP}This content is ${If.End}Confidential`
+
+    在 Word 和 PowerPoint 中，標籤會套用浮水印文字「此內容是機密」。 在 Excel 中，標籤會套用浮水印文字「機密」。 在 Outlook 中，標籤不會套用任何浮水印文字，因為浮水印是不支援 Outlook 的視覺標記。
+
 ## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>要求使用者將標籤套用至電子郵件和檔
 
 > [!IMPORTANT]
@@ -291,42 +334,6 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 - 當使用者在開啟未標記的檔時，系統會提示使用者新增敏感度標籤，他們可以新增標籤，或選擇以唯讀模式開啟檔。
 
 - 當必要的標籤生效時，使用者就無法從檔中移除敏感度標籤，但是可以變更現有的標籤。
-
-#### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>為 Word、Excel、PowerPoint 和 Outlook 設定不同的視覺標記
-
-做為其他變數，您可以在文字字串中使用 "If. App" variable 語句來設定每個 Office 應用程式類型的視覺標記，並使用 [ **Word**]、[ **Excel**]、[ **PowerPoint**] 或 [ **Outlook**] 的值來識別應用程式類型。 您也可以縮寫這些值，如果您想要在相同的 If App 語句中指定多個值，則這是必要的。
-
-> [!NOTE]
-> 為了完整，Outlook 的指示會包含在內，但目前只有 Azure 資訊保護整合的標籤用戶端支援。
-
-使用下列語法：
-
-```
-${If.App.<application type>}<your visual markings text> ${If.End}
-```
-
-與其他動態視覺標記一樣，語法也是區分大小寫的。
-
-範例:
-
-- **只為 Word 檔設定標頭文字：**
-
-    `${If.App.Word}This Word document is sensitive ${If.End}`
-
-    只有在 Word 檔標題中，標籤會套用標頭文字「這個 Word 檔是保密的」。 沒有標頭文字會套用至其他 Office 應用程式。
-
-- **設定 Word、Excel 和 Outlook 的頁尾文字，以及 PowerPoint 的不同頁腳文字的頁腳文字：**
-
-    `${If.App.WXO}This content is confidential. ${If.End}${If.App.PowerPoint}This presentation is confidential. ${If.End}`
-
-    在 Word、Excel 和 Outlook 中，標籤會套用頁腳文字「此內容是機密」。 在 PowerPoint 中，標籤會套用註腳文字「本簡報是機密」。
-
-- **設定 Word 和 PowerPoint 的特定浮水印文字，然後為 Word、Excel 及 PowerPoint 設定浮水印文字：**
-
-    `${If.App.WP}This content is ${If.End}Confidential`
-
-    在 Word 和 PowerPoint 中，標籤會套用浮水印文字「此內容是機密」。 在 Excel 中，標籤會套用浮水印文字「機密」。 在 Outlook 中，標籤不會套用任何浮水印文字，因為浮水印是不支援 Outlook 的視覺標記。
-
 
 ## <a name="end-user-documentation"></a>最終使用者檔
 

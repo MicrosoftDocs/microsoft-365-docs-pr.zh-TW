@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 89904e6d1439b17f0c9725aa59d6884e832a10d9
-ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
+ms.openlocfilehash: a4d1fc1f136322c85c8c46563c448451501ac462
+ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "49883652"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49904018"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的通訊法規遵從性
 
@@ -51,7 +51,7 @@ Microsoft 365 中的通訊相容性原則可協助您克服與相容性和內部
 
 - **風險管理**
 
-    組織負責在其基礎結構和公司網路系統之間散佈的所有通訊。 使用通訊相容性原則來協助識別及管理可能的法律公開和風險，可協助您降低風險，使其不會損毀公司運作。 例如，您可以掃描組織中的郵件，進行未經授權的通訊，並 conlficts 機密專案（例如即將進行的收購、合併、收入披露、reorganizations 或領導小組變更）的相關資訊。
+    組織負責在其基礎結構和公司網路系統之間散佈的所有通訊。 使用通訊相容性原則來協助識別及管理可能的法律公開和風險，可協助您降低風險，使其不會損毀公司運作。 例如，您可以掃描組織中的郵件以取得未經授權的通訊，以及有關機密專案（例如即將收購、合併、收入披露、reorganizations 或領導小組變更）的利益衝突。
 
 - **法規遵從性**
 

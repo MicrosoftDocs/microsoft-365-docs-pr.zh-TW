@@ -18,12 +18,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: 瞭解如何管理 Office 365 端點，以與企業組織網路架構搭配運作。
-ms.openlocfilehash: a616e5f45fee77a02e7b4df7e19ed9e1b0d31d22
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: 41dceae78d80a78b023517e8b6c5c5c0d73da2ef
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787948"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905282"
 ---
 # <a name="managing-office-365-endpoints"></a>管理 Office 365 端點
 
@@ -161,7 +161,7 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 Proxy 伺服器會驗證初始 URL，在上述範例中為 serviceA.office.com，此 URL 會包含在 Office 365 發佈中。 Proxy 伺服器會要求將該 URL 進行 DNS 解析為 IP 位址，並將接收回 IP_1。 它不會驗證中繼 CNAME 重新導向記錄。
 
-Microsoft 不支援使用硬編碼設定或允許以間接 Office 365 Fqdn 為基礎的流量，而且知道會造成客戶連線問題。 會封鎖 CNAME 重新導向或以其他方式不正確地解析 Office 365 DNS 項目的 DNS 解決方案，可以透過 DNS 條件式轉送 (限定於直接使用的 Office 365 FQDN) 搭配啟用 DNS 遞迴來解決。 許多協力廠商網路周邊產品會以本機方式 [，使用 office 365 IP 位址和 URL Web 服務](microsoft-365-ip-web-service.md)，將其設定中略過的 Office 365 端點流量整合。
+Microsoft 不支援使用實編碼的設定或 whitelisting，而是以間接的 Office 365 Fqdn 為基礎，而且知道會造成客戶連線問題。 在 CNAME 重新導向上封鎖的 DNS 解決方案，或以其他方式錯誤解析 Office 365 DNS 專案的 DNS 解決方案，可透過已啟用 DNS 遞迴的 DNS 轉寄站或使用 DNS 根提示來加以解決。 許多協力廠商網路周邊產品會以本機方式 [，使用 office 365 IP 位址和 URL Web 服務](microsoft-365-ip-web-service.md)，將建議的 Office 365 端點 whitelisting 整合在其設定中。
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>為什麼 Microsoft 網域名稱內會有 nsatc.net 或 akadns.net 等名稱？
