@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 設定加密的敏感度標籤，以限制存取和使用方式來保護您的 資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b862cbffcc4268876444618f7c2708c04b63630e
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+ms.openlocfilehash: 83ed515d5ac6ea853c3e6a822fae0a03f73fc37c
+ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561714"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49904028"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>使用敏感度標籤來套用加密以限制存取內容
 
@@ -65,7 +65,7 @@ ms.locfileid: "49561714"
 
 4.  在精靈的 **[加密]** 頁面上，選取下列其中一個選項：
     
-    - **如果檔案已加密，則移除加密**：如需有關此案例的詳細資訊，請參閱[套用標籤時，現有的加密會發生什麼情況](#what-happens-to-existing-encryption-when-a-labels-applied)小節。 請注意，此設定可能會導致使用者沒有足夠權限時無法套用的敏感度標籤。
+    - **如果檔案已加密，則移除加密**：如需有關此案例的詳細資訊，請參閱 [套用標籤時，現有的加密會發生什麼情況](#what-happens-to-existing-encryption-when-a-labels-applied)小節。 請注意，此設定可能會導致使用者沒有足夠權限時無法套用的敏感度標籤。
     
     - **設定加密設定**：開啟加密功能，並顯示加密設定：
         
@@ -177,6 +177,9 @@ ms.locfileid: "49561714"
 ##### <a name="requirements-and-limitations-for-add-any-authenticated-users"></a>「新增任何已驗證使用者」的需求與限制
 
 此設定不會限制能夠存取標籤所加密內容的人員，同時仍會加密內容，並提供限制內容使用方式 (權限) 和存取方式 (到期和離線存取) 的選項。 不過，開啟加密內容的應用程式必須能夠支援所使用的驗證。 因此，同盟社交提供者 (例如 Google) 和一次性密碼驗證僅對電子郵件有效，且僅在您使用 Exchange Online 時才有效。 您可以將 Microsoft 帳戶與 Office 365 應用程式和 [Azure 資訊保護檢視器](https://portal.azurerms.com/#/download)搭配使用。
+
+> [!NOTE]
+> 當為 [SharePoint 和 OneDrive 中的 Office 檔案啟用](sensitivity-labels-sharepoint-onedrive-files.md)敏感度標籤時，請考慮將此設定與 [SharePoint 和 OneDrive 與 Azure AD B2B 整合](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)。
 
 任何已驗證使用者設定的某些典型案例如下:
 
@@ -413,3 +416,6 @@ ms.locfileid: "49561714"
     - 針對 Exchange Online，請參閱 [Exchange Online：IRM 設定](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration)的指示。
     - 針對 Exchange 內部部署，您必須部署 [RMS 連接器和設定您的 Exchange Server](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector)。 
 
+## <a name="next-steps"></a>後續步驟
+
+需要與組織外的人員共用您的已套用標籤且加密之文件嗎？  請參閱[與外部用戶共用加密文件](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。

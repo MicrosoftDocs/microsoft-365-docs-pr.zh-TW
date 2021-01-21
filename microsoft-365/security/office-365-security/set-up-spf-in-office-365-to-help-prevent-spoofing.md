@@ -18,33 +18,34 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 了解如何更新網域名稱服務 (DNS) 記錄，以在 Office 365 內的自訂網域中使用寄件者原則架構 (SPF)。
-ms.openlocfilehash: a6cd2a0cf60812bb874c1be63fb2d294cda6d6aa
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: 536f727ee71db70490259179ff8e47009c547f89
+ms.sourcegitcommit: 64262f6f42dcce6a4608b2e3c7ca6190b7009093
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881714"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "49905220"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>設定 SPF 以協助防止詐騙
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-- [必要條件<a name="UpdateSPFTXT"></a>](#updating-your-spf-txt-record-for-office-365-a-nameUpdateSPFTXT)
-- [為 Office 365 建立/更新 SPF TXT 記錄 <a name="CreateUpdateSPFTXT"></a>](#to-create-or-update-your-spf-txt-record-a-namecreateupdatespftxta)
-    - [如何處理子網域？<a name="SPFandSubdomains"></a>](#how-to-handle-subdomains-a-namespfandsubdomainsa)
-- [SPF 疑難排解和最佳做法 <a name="TshootingSPF"></a>](#next-steps-after-you-set-up-spf-for-office-365-a-nametshootingspfa)
-- [進階 SPF 範例<a name="AdvancedSPFexs"></a>](#more-information-about-spf-a-nameadvancedspfexsa)
+- [先決條件](#prerequisites)
+- [建立或更新您的 SPF TXT 記錄](#create-or-update-your-spf-txt-record)   
+  - [如何處理子網域？](#how-to-handle-subdomains)
+- [SPF 電子郵件驗證實際上做什麼？](#what-does-spf-email-authentication-actually-do)   
+   - [疑難排解 SPF](#troubleshooting-spf)
+- [關於 SPF 的詳細資訊](#more-information-about-spf)
 
 本文說明如何更新網域名稱服務 (DNS) 記錄，以便可以在 Office 365 中結合使用寄件者原則架構 (SPF) 電子郵件驗證和自訂網域。
 
 使用 SPF 協助驗證自您自訂網域傳送的輸出電子郵件。 這是設定其他推薦的電子郵件驗證方法 DMARC 和 DKIM (Office 365 還支援另外兩種電子郵件驗證方法) 的第一步。
 
-## <a name="updating-your-spf-txt-record-for-office-365"></a>更新 Office 365 的 SPF TXT 記錄<a name="UpdateSPFTXT"></a>
+## <a name="prerequisites"></a>必要條件
 
 > [!IMPORTANT]
 > 如果您是 **小型企業**，或是不熟悉 IP 位址或 DNS 設定，請致電您的網際網路網域註冊機構 (例如， GoDaddy、Bluehost、web.com) 請求有關 SPF 的 DNS 設定 (以及任何其他電子郵件驗證方法) 的協助。 *另外*，如果您尚未購買或未使用自訂 URL (換言之，您和您的客戶瀏覽至 Office 365 的 URL 以 **onmicrosoft.com** 結尾)，已在 Office 365 服務中為您設定 SPF。 在這種情況下，不需要採取進一步的步驟。 感謝閲讀。
 
-在 DNS 中更新 TXT 記錄之前，需要收集一些製作記錄所需的資訊。 如需進階範例和有關支援的 SPF 語法的更詳細討論，請參閱 [SPF 如何在 Office 365 中運作以防止詐騙和網路釣魚](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
+在外部 DNS 中為 Office 365 建立或更新 SPF TXT 記錄之前，需要收集一些建立該記錄所需的資訊。 如需進階範例和有關支援的 SPF 語法的更詳細討論，請參閱 [SPF 如何在 Office 365 中運作以防止詐騙和網路釣魚](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
 
 收集這項資訊：
 
@@ -59,7 +60,7 @@ ms.locfileid: "49881714"
 > [!IMPORTANT]
 > 如要使用自訂網域，Office 365 要求您將寄件者原則架構 (SPF) TXT 記錄新增至您的 DNS 記錄以協助防止詐騙。
 
-## <a name="create-or-update-your-spf-txt-record"></a>建立或更新您的 SPF TXT 記錄<a name="CreateUpdateSPFTXT"></a>
+## <a name="create-or-update-your-spf-txt-record"></a>建立或更新您的 SPF TXT 記錄
 
 1. 請確定您熟悉下表中的 SPF 語法。
 
@@ -98,7 +99,7 @@ ms.locfileid: "49881714"
 
 4. 測試您的 SPF TXT 記錄。
 
-## <a name="how-to-handle-subdomains"></a>如何處理子網域？ <a name="SPFandSubdomains"></a>
+## <a name="how-to-handle-subdomains"></a>如何處理子網域？
 
 請注意，*你必須為每個子網域建立個別記錄，因為子網域無法獲取最上層網域的 SPF 記錄*。
 
@@ -108,7 +109,7 @@ ms.locfileid: "49881714"
 *.subdomain.contoso.com. IN TXT "v=spf1 -all"
 ```
 
-## <a name="next-steps"></a>後續步驟<a name="TshootingSPF"></a>
+## <a name="troubleshooting-spf"></a>疑難排解 SPF
 
 無法使用您的 SPF TXT 記錄嗎? 請閲讀[疑難排解：Office 365 中 SPF 的最佳做法](how-office-365-uses-spf-to-prevent-spoofing.md#SPFTroubleshoot)。
 
@@ -129,7 +130,7 @@ SPF 會識別哪些郵件伺服器可以代表您傳送郵件。 基本上，SPF
 
 - 您想要設定 DKIM 和 DMARC (建議選項)。
 
-## <a name="more-information-about-spf"></a>關於 SPF 的詳細資訊<a name="AdvancedSPFexs"></a>
+## <a name="more-information-about-spf"></a>關於 SPF 的詳細資訊
 
 如需進階範例、有關支援的 SPF 語法、詐騙、疑難排解，以及 Office 365 如何支援 SPF 的更詳細討論，請參閱 [SPF 如何運作以防止 Office 365 中的詐騙和網路釣魚](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)。
 
