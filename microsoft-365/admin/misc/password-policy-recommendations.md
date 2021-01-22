@@ -12,19 +12,21 @@ localization_priority: Priority
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: 了解如何加強貴組織對密碼攻擊的防護，以及為何應禁用常見密碼並啟用以風險為根據的多重要素驗證。
-ms.openlocfilehash: 0bfbeac6fb8069e846ddad3c5b618687ba3c2260
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 66a4048ac1add3a0d47f256dc29519a91ae6cb11
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456314"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926711"
 ---
 # <a name="password-policy-recommendations"></a>密碼原則建議
 

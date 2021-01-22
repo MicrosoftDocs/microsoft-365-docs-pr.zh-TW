@@ -13,29 +13,31 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: 了解您可以使用的群組類型。
-ms.openlocfilehash: ee8d14035ed9eb8296c54510b8fe1d374c9dc2b2
-ms.sourcegitcommit: f3a02584c9354a46c082f8f948b34a177adf65bb
+ms.openlocfilehash: 4cbc7f15632026babec3640f021c09e901ad20b9
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46514764"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925527"
 ---
 # <a name="compare-groups"></a>比較群組
 
-在 Microsoft 365 系統管理中心的 [群組]**** 區段中，您可以建立和管理以下類型的群組： 
+在 Microsoft 365 系統管理中心的 [群組] 區段中，您可以建立和管理以下類型的群組： 
 
 - **Microsoft 365 群組** (之前稱為 Office 365 群組)是用在公司內部和外部的使用者之間共同作業。
-- **通訊群組**用來傳送通知給一群人。
-- **安全性群組**用來授權存取資源，例如 SharePoint 網站。
-- **擁有郵件功能的安全性群組**用來授權存取資源 (如 SharePoint)，以及將通知透過電子郵件傳送給這些使用者。
-- 如果有多個人員需要存取相同信箱 (例如公司資訊或支援電子郵件地址)，就會使用**共用信箱**。
+- **通訊群組** 用來傳送通知給一群人。
+- **安全性群組** 用來授權存取資源，例如 SharePoint 網站。
+- **擁有郵件功能的安全性群組** 用來授權存取資源 (如 SharePoint)，以及將通知透過電子郵件傳送給這些使用者。
+- 如果有多個人員需要存取相同信箱 (例如公司資訊或支援電子郵件地址)，就會使用 **共用信箱**。
 
 ## <a name="microsoft-365-groups"></a>Microsoft 365 群組
 

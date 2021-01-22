@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 如果您遇到共用信箱的問題，請嘗試這些解決方案。
-ms.openlocfilehash: c889d3aa2fab8c2dce4cc2a8a00ef49a905363a1
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: 如果您在使用共用信箱時遇到問題，請嘗試這些解決方案。
+ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445504"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926483"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>解決共用信箱的問題
 
@@ -35,19 +36,19 @@ ms.locfileid: "48445504"
 ## <a name="error-when-creating-shared-mailboxes"></a>建立共用信箱時發生錯誤
 <a name="bkmk_Fix"> </a>
 
-如果您看到錯誤訊息， **表示 proxy 位址 "smtp： <共用信箱名稱 \> " 已由 "" 的 proxy 位址或 LegacyExchangeDN 使用 \<name> 。請選擇另一個 proxy 位址**，這表示您嘗試將已在使用中的名稱提供給共用信箱。 舉例來說，假設您想將共用信箱命名為 info@domain1 和 info@domain2。 方法有兩種：
+如果您看到錯誤訊息，表示 Proxy 位址 "smtp：<共用信箱名稱" 已由 " "的 Proxy 位址 **\> 或 LegacyExchangeDN \<name> 使用。請選擇另一個 Proxy 位址**，這表示您嘗試為共用信箱提供已在使用中的名稱。 舉例來說，假設您想將共用信箱命名為 info@domain1 和 info@domain2。 方法有兩種：
 
-  - 使用 Windows PowerShell。 如需相關指示，請參閱這篇博客文章： [在不同的網域建立具有相同別名的共用信箱](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - 使用 Windows PowerShell。 請參閱此部落格文章以參閱指示：在不同的網域建立別名 [相同的共用信箱](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
-  - 將第二個共用信箱命名為不同于「開始」以避免錯誤的地方。 然後在系統管理中心，將共用信箱重新命名為您想要的內容。
+  - 將第二個共用信箱命名為與一開始不同的名稱以擺脫錯誤。 然後在系統管理中心，將共用信箱重新命名為您想要的名稱。
 
-## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>使用共用信箱時，未具備傳送許可權的錯誤
+## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>使用共用信箱時沒有傳送許可權的錯誤
 
-如果您建立了共用信箱，然後嘗試從該信箱傳送郵件，您可能會收到下列訊息：
+如果您建立了共用信箱，然後嘗試從共用信箱傳送郵件，您可能會收到以下訊息：
 
-**無法傳送此郵件。您沒有代表指定使用者傳送郵件的許可權。**
+**無法送出此郵件。您沒有代表指定使用者傳送郵件的許可權。**
 
-當 Microsoft 365 遇到複寫延遲問題時，就會出現此訊息。 當您的新共用信箱的相關資訊 (或新增的使用者) 會在所有資料中心之間複寫時，它應該會移出一小時。 請等候一小時後再試一次，再傳送一封郵件。
+當 Microsoft 365 發生複寫延遲問題時，會出現這則訊息。 當您的新共用信箱資訊已複製 (或新增的使用者) 複製至我們所有資料中心時，一小時左右應該會消失。 請等候一個小時，然後再試一次以傳送郵件。
 
 ## <a name="related-articles"></a>相關文章
 

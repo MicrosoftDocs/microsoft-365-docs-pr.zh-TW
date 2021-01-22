@@ -1,9 +1,9 @@
 ---
-title: 在 Microsoft 365 Defender 上提供意見反應
-description: 在 Microsoft 365 Defender 上提供產品回饋
-keywords: 意見反應，m365 安全性，安全性，365，功能
+title: 針對 Microsoft 365 Defender 提供意見回饋
+description: 向 Microsoft 365 Defender 提供產品意見回饋
+keywords: Feedback， m365 security， security， 365， capabilities
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 56f8bd0ff303ff38f8b3a577f6bc7aa58f21a745
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: a06f7254a892b8fd9942940946699ecb23707387
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846723"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926735"
 ---
-# <a name="provide-feedback-on-microsoft-365-defender"></a>在 Microsoft 365 Defender 上提供意見反應
+# <a name="provide-feedback-on-microsoft-365-defender"></a>針對 Microsoft 365 Defender 提供意見回饋
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,12 +35,12 @@ ms.locfileid: "48846723"
 適用於：
 - Microsoft 365 Defender
 
-您的意見反應可協助我們從高級攻擊中保護您的環境。 提供意見反應，分享您的體驗、印象和要求。
+您的意見可協助我們改善保護您的環境，防範進一階段攻擊。 提供意見回饋，分享您的體驗、印象和要求。
 
-1. 從入口網站的任何部分中，選取 [ **提供意見** 反應]。 
+1. 從入口網站的任何一部分，選取 **給予意見回饋。** 
 
-    ![意見反應按鈕的影像](../../media/feedback.png)
+    ![意見回饋按鈕的影像](../../media/feedback.png)
 
-2. 評價您的經驗，並提供您贊或改進位置之專案的詳細資料。 您也可以選擇要與意見反應取得聯繫。 
+2. 為體驗評分，並提供您喜歡之處或可改善之處的詳細資訊。 您也可以選擇與使用者聯絡，詢問您的意見。 
 
-3. 選取 **[提交]** 。
+3. 選取 **[提交]**。

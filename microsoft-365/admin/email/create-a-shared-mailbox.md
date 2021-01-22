@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 建立共用信箱讓組織中的多位使用者共同負責讀取及回覆傳送到某個地址的電子郵件。
-ms.openlocfilehash: 2cef7c742407b291d392a73e72316e7feeba4197
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: d0bd5770f347766638af0f0e66b9f961b3721697
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445636"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926591"
 ---
 # <a name="create-a-shared-mailbox"></a>建立共用信箱 
 
@@ -53,13 +54,13 @@ ms.locfileid: "48445636"
 
 ::: moniker range="o365-germany"
 
-2. [在系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)中，移至 **[群組] ** \> **[共用信箱]** 頁面。
+2. [在系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=848041)中，移至 **[群組]** \> **[共用信箱]** 頁面。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-2. [在系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)中，移至 **[群組] ** \> **[共用信箱]** 頁面。
+2. [在系統管理中心](https://go.microsoft.com/fwlink/p/?linkid=850627)中，移至 **[群組]** \> **[共用信箱]** 頁面。
 
 ::: moniker-end
     

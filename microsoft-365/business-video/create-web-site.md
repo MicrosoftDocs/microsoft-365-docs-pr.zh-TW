@@ -1,5 +1,5 @@
 ---
-title: 為您的公司建立網站
+title: 為公司建立網站
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何為您的企業建立 GoDaddy 網站。
-ms.openlocfilehash: db3a3133626577f9dc2665a61053cb587e9b7b3a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: 瞭解如何為公司建立 GoDaddy 網站。
+ms.openlocfilehash: 44f1a82706ff2dc025fc9dcc6f74a71dc0a987e5
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701724"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927331"
 ---
 # <a name="create-a-website"></a>建立網站
 
@@ -34,11 +35,11 @@ ms.locfileid: "49701724"
 
 ## <a name="try-it"></a>試試看吧！
 
-Microsoft 365 不包含適用于您公司的公用網站。 若要設定一個，請考慮使用 GoDaddy、Wix 或 WordPress 等網頁主控公司。
+Microsoft 365 不包含您公司的公用網站。 若要設定網路主機服務，請考慮使用 GoDaddy、Wix 或 WordPress 等網路主機服務公司。
 
-1. 搜尋您可以建立網站的網站主機服務提供者。
+1. 搜尋可建立網站的網路主機服務提供者。
 
-     您可以在註冊功能變數名稱的相同公司上，輕鬆地選擇網站建立器。
-1. 設計商務網站，確保包含您的商務徽標、商務用途、文字、圖像及連結。
-1. 若要將網站與 Microsoft 365 整合，您可以將商務電子郵件新增至網站，以及 Microsoft 團隊、SharePoint 或其他共同作業工具的連結。
-1. 請務必將您的網站連接到您的功能變數名稱，您&#39;在 Microsoft 365 上使用此電子郵件，也可以使用此功能變數名稱。
+     您可能會發現，在註冊功能變數名稱的同一家公司選擇網站建立器是最簡單的方法。
+1. 設計您的商務網站，確保包含您的商務標誌、商業用途、文字、影像和連結。
+1. 若要將網站與 Microsoft 365 整合，您可以新增公司電子郵件至網站，以及 Microsoft Teams、SharePoint 或其他共同合作工具的連結。
+1. 請務必將您的網站連接到您的功能變數名稱，而您&#39;Microsoft 365 上的電子郵件也使用此功能變數名稱。

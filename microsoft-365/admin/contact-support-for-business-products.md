@@ -16,17 +16,18 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - MET150
 description: 使用您的國家或地區所列的電話號碼，或提交線上服務要求，以取得技術和帳單支援。
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: f508607bb19a15fa089cf13eecfd7047f2e6f7bf
-ms.sourcegitcommit: 555d756c69ac9031d1fb928f2e1f9750beede066
+ms.openlocfilehash: 06f78d50901f279bf27f55f1b8f7ad867682d784
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/29/2020
-ms.locfileid: "47307358"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925575"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>連絡商務產品客戶支援的方式 - 系統管理說明
 
@@ -43,7 +44,7 @@ ms.locfileid: "47307358"
 
 1. 移至位於 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> 的系統管理中心。 如果您收到訊息說明您沒有權限存取此頁面或執行此動作，則您不是系統管理員。[誰擁有公司的系統管理員權限？](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
-2. 選取 [需要協助嗎?]**** 按鈕。
+2. 選取 [需要協助嗎?] 按鈕。
 
 3. 在 **[需要協助嗎?]** 窗格中，告訴我們您需要的協助，然後按下 **Enter** 鍵。
 
