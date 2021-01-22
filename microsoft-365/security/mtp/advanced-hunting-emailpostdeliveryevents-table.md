@@ -1,10 +1,10 @@
 ---
-title: Advanced 搜尋架構中的 EmailPostDeliveryEvents 表格
-description: 深入瞭解在 Microsoft 365 電子郵件的高級搜尋架構 EmailPostDeliveryEvents 表格中所進行的傳遞動作
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、表格、欄、資料類型、描述、EmailPostDeliveryEvents、網路郵件 id、寄件者、收件者、附件識別碼、附件計數、url 計數、url 計數
+title: 進位搜尋架構中的 EmailPostDeliveryEvents 資料表
+description: 瞭解在進位搜尋架構的 EmailPostDeliveryEvents 資料表中對 Microsoft 365 電子郵件採取的動作
+keywords: 進一步搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參照、kusto、資料表、資料行、資料類型、描述、EmailPostiveryEvents、網路訊息識別碼、寄件者、收件者、附件識別碼、附件名稱、惡意程式碼攻擊、網路釣魚網路釣魚、附件計數、連結計數、URL 計數
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,52 +19,53 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 59e5d0d51997812689c7382d6a27af6f66a27d25
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: d7920be05156320411f3907cbcdae88d315b5136
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842605"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929703"
 ---
-# <a name="emailpostdeliveryevents"></a><span data-ttu-id="9f2c7-104">EmailPostDeliveryEvents</span><span class="sxs-lookup"><span data-stu-id="9f2c7-104">EmailPostDeliveryEvents</span></span>
+# <a name="emailpostdeliveryevents"></a><span data-ttu-id="fdecd-104">EmailPostDeliveryEvents</span><span class="sxs-lookup"><span data-stu-id="fdecd-104">EmailPostDeliveryEvents</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="9f2c7-105">適用於：</span><span class="sxs-lookup"><span data-stu-id="9f2c7-105">**Applies to:**</span></span>
-- <span data-ttu-id="9f2c7-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9f2c7-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="fdecd-105">適用於：</span><span class="sxs-lookup"><span data-stu-id="fdecd-105">**Applies to:**</span></span>
+- <span data-ttu-id="fdecd-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="fdecd-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="9f2c7-107">[！附注] `EmailPostDeliveryEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含對 Microsoft 365 所處理之電子郵件所採取之投遞後動作的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="9f2c7-107">The `EmailPostDeliveryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about post-delivery actions taken on email messages processed by Microsoft 365.</span></span> <span data-ttu-id="9f2c7-108">使用這個參考來建立從此表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="9f2c7-108">Use this reference to construct queries that return information from this table.</span></span>
+<span data-ttu-id="fdecd-107">進 `EmailPostDeliveryEvents` 位搜尋架構 [中的](advanced-hunting-overview.md) 表格包含 Microsoft 365 處理之電子郵件訊息的傳遞後動作相關資訊。</span><span class="sxs-lookup"><span data-stu-id="fdecd-107">The `EmailPostDeliveryEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about post-delivery actions taken on email messages processed by Microsoft 365.</span></span> <span data-ttu-id="fdecd-108">使用這個參考來建立從此表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="fdecd-108">Use this reference to construct queries that return information from this table.</span></span>
 
 >[!TIP]
-> <span data-ttu-id="9f2c7-109">如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。</span><span class="sxs-lookup"><span data-stu-id="9f2c7-109">For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.</span></span>
+> <span data-ttu-id="fdecd-109">有關事件種類及資料 (資料) 值的詳細資訊，請使用安全性中心內建的架構 `ActionType` 參考。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)</span><span class="sxs-lookup"><span data-stu-id="fdecd-109">For detailed information about the events types (`ActionType` values) supported by a table, use the [built-in schema reference](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) available in the security center.</span></span>
 
-<span data-ttu-id="9f2c7-110">若要取得個別電子郵件訊息的詳細資訊，您也可以使用 [`EmailEvents`](advanced-hunting-emailevents-table.md) 、 [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) 和 [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) 資料表。</span><span class="sxs-lookup"><span data-stu-id="9f2c7-110">To get more information about individual email messages, you can also use the [`EmailEvents`](advanced-hunting-emailevents-table.md), [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md), and the [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) tables.</span></span> <span data-ttu-id="9f2c7-111">如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="9f2c7-111">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="fdecd-110">若要取得個別電子郵件訊息詳細資訊，您也可以使用 [`EmailEvents`](advanced-hunting-emailevents-table.md) ， [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) 及 [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) 表格。</span><span class="sxs-lookup"><span data-stu-id="fdecd-110">To get more information about individual email messages, you can also use the [`EmailEvents`](advanced-hunting-emailevents-table.md), [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md), and the [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) tables.</span></span> <span data-ttu-id="fdecd-111">如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="fdecd-111">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="9f2c7-112">欄名稱</span><span class="sxs-lookup"><span data-stu-id="9f2c7-112">Column name</span></span> | <span data-ttu-id="9f2c7-113">資料類型</span><span class="sxs-lookup"><span data-stu-id="9f2c7-113">Data type</span></span> | <span data-ttu-id="9f2c7-114">描述</span><span class="sxs-lookup"><span data-stu-id="9f2c7-114">Description</span></span> |
+| <span data-ttu-id="fdecd-112">欄名稱</span><span class="sxs-lookup"><span data-stu-id="fdecd-112">Column name</span></span> | <span data-ttu-id="fdecd-113">資料類型</span><span class="sxs-lookup"><span data-stu-id="fdecd-113">Data type</span></span> | <span data-ttu-id="fdecd-114">描述</span><span class="sxs-lookup"><span data-stu-id="fdecd-114">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="9f2c7-115">datetime</span><span class="sxs-lookup"><span data-stu-id="9f2c7-115">datetime</span></span> | <span data-ttu-id="9f2c7-116">事件記錄的日期和時間</span><span class="sxs-lookup"><span data-stu-id="9f2c7-116">Date and time when the event was recorded</span></span> |
-| `EventId` | <span data-ttu-id="9f2c7-117">string</span><span class="sxs-lookup"><span data-stu-id="9f2c7-117">string</span></span> | <span data-ttu-id="9f2c7-118">事件的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="9f2c7-118">Unique identifier for the event</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="9f2c7-119">string</span><span class="sxs-lookup"><span data-stu-id="9f2c7-119">string</span></span> | <span data-ttu-id="9f2c7-120">Microsoft 365 產生之電子郵件的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="9f2c7-120">Unique identifier for the email, generated by Microsoft 365</span></span> |
-| `InternetMessageId` | <span data-ttu-id="9f2c7-121">字串</span><span class="sxs-lookup"><span data-stu-id="9f2c7-121">string</span></span> | <span data-ttu-id="9f2c7-122">透過傳送電子郵件系統所設定之電子郵件的公開識別碼</span><span class="sxs-lookup"><span data-stu-id="9f2c7-122">Public-facing identifier for the email that is set by the sending email system</span></span> |
-| `Action` | <span data-ttu-id="9f2c7-123">字串</span><span class="sxs-lookup"><span data-stu-id="9f2c7-123">string</span></span> | <span data-ttu-id="9f2c7-124">對實體採取的動作</span><span class="sxs-lookup"><span data-stu-id="9f2c7-124">Action taken on the entity</span></span> |
-| `ActionType` | <span data-ttu-id="9f2c7-125">string</span><span class="sxs-lookup"><span data-stu-id="9f2c7-125">string</span></span> | <span data-ttu-id="9f2c7-126">觸發事件的活動類型：手動修復、網路釣魚 ZAP、惡意程式碼 ZAP</span><span class="sxs-lookup"><span data-stu-id="9f2c7-126">Type of activity that triggered the event: Manual remediation, Phish ZAP, Malware ZAP</span></span> |
-| `ActionTrigger` | <span data-ttu-id="9f2c7-127">string</span><span class="sxs-lookup"><span data-stu-id="9f2c7-127">string</span></span> | <span data-ttu-id="9f2c7-128">會指出管理員是由系統管理員所觸發的動作，還是透過待處理的自動動作) 或某些特殊的機制（例如 ZAP 或動態傳遞）進行核准 (</span><span class="sxs-lookup"><span data-stu-id="9f2c7-128">Indicates whether an action was triggered by an administrator (manually or through approval of a pending automated action), or by some special mechanism, such as a ZAP or Dynamic Delivery</span></span> |
-| `ActionResult` | <span data-ttu-id="9f2c7-129">string</span><span class="sxs-lookup"><span data-stu-id="9f2c7-129">string</span></span> | <span data-ttu-id="9f2c7-130">動作的結果</span><span class="sxs-lookup"><span data-stu-id="9f2c7-130">Result of the action</span></span> |
-| `RecipientEmailAddress` | <span data-ttu-id="9f2c7-131">字串</span><span class="sxs-lookup"><span data-stu-id="9f2c7-131">string</span></span> | <span data-ttu-id="9f2c7-132">收件者的電子郵件地址，或通訊群組清單展開後之收件者的電子郵件地址</span><span class="sxs-lookup"><span data-stu-id="9f2c7-132">Email address of the recipient, or email address of the recipient after distribution list expansion</span></span> |
-| `DeliveryLocation` | <span data-ttu-id="9f2c7-133">字串</span><span class="sxs-lookup"><span data-stu-id="9f2c7-133">string</span></span> | <span data-ttu-id="9f2c7-134">傳送電子郵件的位置：收件匣/資料夾、內部部署/外部、垃圾郵件、隔離、失敗、已中斷、刪除的郵件</span><span class="sxs-lookup"><span data-stu-id="9f2c7-134">Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed, Dropped, Deleted items</span></span> |
+| `Timestamp` | <span data-ttu-id="fdecd-115">datetime</span><span class="sxs-lookup"><span data-stu-id="fdecd-115">datetime</span></span> | <span data-ttu-id="fdecd-116">事件記錄的日期和時間</span><span class="sxs-lookup"><span data-stu-id="fdecd-116">Date and time when the event was recorded</span></span> |
+| `EventId` | <span data-ttu-id="fdecd-117">string</span><span class="sxs-lookup"><span data-stu-id="fdecd-117">string</span></span> | <span data-ttu-id="fdecd-118">事件的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="fdecd-118">Unique identifier for the event</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="fdecd-119">string</span><span class="sxs-lookup"><span data-stu-id="fdecd-119">string</span></span> | <span data-ttu-id="fdecd-120">Microsoft 365 產生之電子郵件的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="fdecd-120">Unique identifier for the email, generated by Microsoft 365</span></span> |
+| `InternetMessageId` | <span data-ttu-id="fdecd-121">字串</span><span class="sxs-lookup"><span data-stu-id="fdecd-121">string</span></span> | <span data-ttu-id="fdecd-122">透過傳送電子郵件系統所設定之電子郵件的公開識別碼</span><span class="sxs-lookup"><span data-stu-id="fdecd-122">Public-facing identifier for the email that is set by the sending email system</span></span> |
+| `Action` | <span data-ttu-id="fdecd-123">字串</span><span class="sxs-lookup"><span data-stu-id="fdecd-123">string</span></span> | <span data-ttu-id="fdecd-124">對實體採取的動作</span><span class="sxs-lookup"><span data-stu-id="fdecd-124">Action taken on the entity</span></span> |
+| `ActionType` | <span data-ttu-id="fdecd-125">string</span><span class="sxs-lookup"><span data-stu-id="fdecd-125">string</span></span> | <span data-ttu-id="fdecd-126">觸發事件的活動類型：手動修復、Phish ZAP、Malware ZAP</span><span class="sxs-lookup"><span data-stu-id="fdecd-126">Type of activity that triggered the event: Manual remediation, Phish ZAP, Malware ZAP</span></span> |
+| `ActionTrigger` | <span data-ttu-id="fdecd-127">string</span><span class="sxs-lookup"><span data-stu-id="fdecd-127">string</span></span> | <span data-ttu-id="fdecd-128">指出由系統管理員手動或 (或透過核准擱置的自動化動作) 觸發的動作，或由一些特殊機制觸發，例如 ZAP 或動態傳遞</span><span class="sxs-lookup"><span data-stu-id="fdecd-128">Indicates whether an action was triggered by an administrator (manually or through approval of a pending automated action), or by some special mechanism, such as a ZAP or Dynamic Delivery</span></span> |
+| `ActionResult` | <span data-ttu-id="fdecd-129">string</span><span class="sxs-lookup"><span data-stu-id="fdecd-129">string</span></span> | <span data-ttu-id="fdecd-130">動作的結果</span><span class="sxs-lookup"><span data-stu-id="fdecd-130">Result of the action</span></span> |
+| `RecipientEmailAddress` | <span data-ttu-id="fdecd-131">字串</span><span class="sxs-lookup"><span data-stu-id="fdecd-131">string</span></span> | <span data-ttu-id="fdecd-132">收件者的電子郵件地址，或通訊群組清單展開後之收件者的電子郵件地址</span><span class="sxs-lookup"><span data-stu-id="fdecd-132">Email address of the recipient, or email address of the recipient after distribution list expansion</span></span> |
+| `DeliveryLocation` | <span data-ttu-id="fdecd-133">字串</span><span class="sxs-lookup"><span data-stu-id="fdecd-133">string</span></span> | <span data-ttu-id="fdecd-134">傳送電子郵件的位置：收件匣/資料夾、內部部署/外部、垃圾郵件、隔離、失敗、已中斷、刪除的郵件</span><span class="sxs-lookup"><span data-stu-id="fdecd-134">Location where the email was delivered: Inbox/Folder, On-premises/External, Junk, Quarantine, Failed, Dropped, Deleted items</span></span> |
 
-## <a name="supported-event-types"></a><span data-ttu-id="9f2c7-135">支援的事件種類</span><span class="sxs-lookup"><span data-stu-id="9f2c7-135">Supported event types</span></span>
-<span data-ttu-id="9f2c7-136">此表格會捕獲具有下列值的事件 `ActionType` ：</span><span class="sxs-lookup"><span data-stu-id="9f2c7-136">This table captures events with the following `ActionType` values:</span></span>
+## <a name="supported-event-types"></a><span data-ttu-id="fdecd-135">支援的事件種類</span><span class="sxs-lookup"><span data-stu-id="fdecd-135">Supported event types</span></span>
+<span data-ttu-id="fdecd-136">下表會使用下列值來捕捉 `ActionType` 事件：</span><span class="sxs-lookup"><span data-stu-id="fdecd-136">This table captures events with the following `ActionType` values:</span></span>
 
-- <span data-ttu-id="9f2c7-137">**手動修正** –系統管理員會在電子郵件傳送至使用者信箱後，手動對該電子郵件採取動作。</span><span class="sxs-lookup"><span data-stu-id="9f2c7-137">**Manual remediation** – An administrator manually took action on an email message after it was delivered to the user mailbox.</span></span> <span data-ttu-id="9f2c7-138">這包括透過 [威脅瀏覽器](../office-365-security/threat-explorer.md) 手動採取的動作，或核准 [ (AIR) 動作的自動調查和回應](mtp-autoir-actions.md)。</span><span class="sxs-lookup"><span data-stu-id="9f2c7-138">This includes actions taken manually through [Threat Explorer](../office-365-security/threat-explorer.md) or approvals of [automated investigation and response (AIR) actions](mtp-autoir-actions.md).</span></span>
-- <span data-ttu-id="9f2c7-139">**網路釣魚 ZAP** – [零小時自動清除 (ZAP)](../office-365-security/zero-hour-auto-purge.md) 會在傳送後對網路釣魚電子郵件採取動作。</span><span class="sxs-lookup"><span data-stu-id="9f2c7-139">**Phish ZAP** – [Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) took action on a phishing email after delivery.</span></span>
-- <span data-ttu-id="9f2c7-140">**惡意程式碼 ZAP** –零小時自動清除 (ZAP) 在傳送後，包含惡意程式碼的電子郵件上採取的動作。</span><span class="sxs-lookup"><span data-stu-id="9f2c7-140">**Malware ZAP** – Zero-hour auto purge (ZAP) took action on an email message found containing malware after delivery.</span></span>
+- <span data-ttu-id="fdecd-137">**手動修復** – 系統管理員在電子郵件訊息傳遞到使用者信箱之後，手動執行動作。</span><span class="sxs-lookup"><span data-stu-id="fdecd-137">**Manual remediation** – An administrator manually took action on an email message after it was delivered to the user mailbox.</span></span> <span data-ttu-id="fdecd-138">這包括透過威脅庫手動採取的動作[](../office-365-security/threat-explorer.md)，或經過 AIR ([自動化調查與) 核准](mtp-autoir-actions.md)。</span><span class="sxs-lookup"><span data-stu-id="fdecd-138">This includes actions taken manually through [Threat Explorer](../office-365-security/threat-explorer.md) or approvals of [automated investigation and response (AIR) actions](mtp-autoir-actions.md).</span></span>
+- <span data-ttu-id="fdecd-139">**網路釣魚 ZAP** [：ZAP](../office-365-security/zero-hour-auto-purge.md) (0 小時自動清除) 在傳送後對網路釣魚電子郵件執行動作。</span><span class="sxs-lookup"><span data-stu-id="fdecd-139">**Phish ZAP** – [Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) took action on a phishing email after delivery.</span></span>
+- <span data-ttu-id="fdecd-140">**Malware ZAP** – ZAP (0 小時自動清除) 對在傳遞後發現含有惡意攻擊的電子郵件執行動作。</span><span class="sxs-lookup"><span data-stu-id="fdecd-140">**Malware ZAP** – Zero-hour auto purge (ZAP) took action on an email message found containing malware after delivery.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="9f2c7-141">相關主題</span><span class="sxs-lookup"><span data-stu-id="9f2c7-141">Related topics</span></span>
-- [<span data-ttu-id="9f2c7-142">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="9f2c7-142">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="9f2c7-143">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="9f2c7-143">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="9f2c7-144">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="9f2c7-144">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="9f2c7-145">搜捕裝置、電子郵件、應用程式和身分識別</span><span class="sxs-lookup"><span data-stu-id="9f2c7-145">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="9f2c7-146">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="9f2c7-146">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="9f2c7-147">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="9f2c7-147">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="fdecd-141">相關主題</span><span class="sxs-lookup"><span data-stu-id="fdecd-141">Related topics</span></span>
+- [<span data-ttu-id="fdecd-142">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="fdecd-142">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="fdecd-143">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="fdecd-143">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="fdecd-144">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="fdecd-144">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="fdecd-145">跨裝置、電子郵件、應用程式和身分識別搜捕</span><span class="sxs-lookup"><span data-stu-id="fdecd-145">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="fdecd-146">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="fdecd-146">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="fdecd-147">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="fdecd-147">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
