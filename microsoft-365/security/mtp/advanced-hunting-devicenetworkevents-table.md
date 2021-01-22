@@ -1,10 +1,10 @@
 ---
-title: Advanced 搜尋架構中的 DeviceNetworkEvents 表格
-description: 深入瞭解您可以從高級搜尋架構的 DeviceNetworkEvents 表查詢的網路線上活動
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，table，column，data type，devicenetworkevents，NetworkCommunicationEvents，network connection，remote ip，local ip
+title: 進位搜尋架構中的 DeviceNetworkEvents 資料表
+description: 瞭解可以從進位搜尋架構的 DeviceNetworkEvents 資料表查詢的網路連接事件
+keywords: 進層搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、資料表、資料行、資料類型、devicenetworkevents、NetworkCommunicationEvents、網路連接、遠端 ip、local ip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: a1a1dd5bbf39a3d95a01cc27169cf3987f5c788e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 0ed696f36737a4102895369e1254b4215cad4def
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842663"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931215"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -36,10 +37,10 @@ ms.locfileid: "48842663"
 
 
 
-[！附注] `DeviceNetworkEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含有關網路連線和相關事件的資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+進 `DeviceNetworkEvents` 位搜尋架構 [中的表格](advanced-hunting-overview.md) 包含網路連接和相關事件的資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!TIP]
-> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+> 有關事件種類及資料 (資料) 值的詳細資訊，請使用安全性中心內建的架構 `ActionType` 參考。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -48,38 +49,38 @@ ms.locfileid: "48842663"
 | `Timestamp` | datetime | 事件記錄的日期和時間 |
 | `DeviceId` | string | 服務中電腦的唯一識別碼 |
 | `DeviceName` | string | 電腦的完整網域名稱 (FQDN) |
-| `ActionType` | string | 觸發事件的活動類型。 如需詳細資訊，請參閱[入口網站內架構參考](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) |
+| `ActionType` | string | 觸發事件的活動類型。 請參閱入口 [網站內架構參考以](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 進一步查看詳細資料 |
 | `RemoteIP` | 字串 | 連線到的 IP 位址 |
-| `RemotePort` | int | 連線的遠端裝置上的 TCP 埠 |
+| `RemotePort` | int | 正在連接之遠端裝置上的 TCP 埠 |
 | `RemoteUrl` | 字串 | 已連線到的 URL 或完整網域名稱 (FQDN) |
-| `LocalIP` | 字串 | 指派給通訊期間使用之本機電腦的 IP 位址 |
-| `LocalPort` | int | 通訊期間使用的本機電腦上的 TCP 埠 |
+| `LocalIP` | 字串 | 指派給通訊期間使用的本機電腦之 IP 位址 |
+| `LocalPort` | int | 在通訊期間使用的本機電腦上 TCP 埠 |
 | `Protocol` | string | 通訊期間使用的通訊協定 |
-| `LocalIPType` | string | IP 位址的類型，例如 Public、Private、Reserved、環回、Teredo、FourToSixMapping 及廣播 |
-| `RemoteIPType` | string | IP 位址的類型，例如 Public、Private、Reserved、環回、Teredo、FourToSixMapping 及廣播 |
-| `InitiatingProcessSHA1` | string | 啟動事件) 的處理常式 (映射檔 SHA-1 |
-| `InitiatingProcessSHA256` | string | 啟動事件) 的處理常式 (映射檔 SHA-256。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
-| `InitiatingProcessMD5` | 字串 | 啟動事件之程式 (映射檔) 的 MD5 雜湊 |
-| `InitiatingProcessFileName` | string | 啟動事件的進程名稱 |
-| `InitiatingProcessId` | int | 啟動事件之程式的進程識別碼 (PID)  |
-| `InitiatingProcessCommandLine` | string | 用來執行啟動事件之處理常式的命令列 |
-| `InitiatingProcessCreationTime` | datetime | 啟動事件處理常式的日期和時間 |
-| `InitiatingProcessFolderPath` | string | 包含初始化事件之處理 (映射檔) 程式的資料夾 |
-| `InitiatingProcessParentFileName` | string | 產生負責事件之處理常式的父進程名稱 |
-| `InitiatingProcessParentId` | int | 產生負責事件之處理常式之父進程的進程識別碼 (PID)  |
-| `InitiatingProcessParentCreationTime` | datetime | 啟動事件之處理常式的父項時的日期和時間 |
-| `InitiatingProcessAccountDomain` | string | 執行負責事件之處理常式之帳戶的網域 |
-| `InitiatingProcessAccountName` | string | 負責事件之處理常式的帳戶使用者名稱 |
-| `InitiatingProcessAccountSid` | string | 執行事件負責處理之帳戶的安全性識別碼 (SID)  |
-| `InitiatingProcessIntegrityLevel` | string | 啟動事件之處理常式的完整性層級。 Windows 會根據特定的特性，例如從網際網路下載啟動，將完整性層級指派給處理常式。 這些完整性層級會影響資源的許可權 |
-| `InitiatingProcessTokenElevation` | string | 指出是否存在使用者存取控制的 Token 類型 (UAC) 許可權提升會套用至啟動事件的程式。 |
-| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一的事件，此資料行必須與 DeviceName 及 Timestamp 資料行一起使用 |
+| `LocalIPType` | string | IP 位址類型，例如公用、私人、保留、Loopback、Teredo、FourToSixMapping 和 Broadcast |
+| `RemoteIPType` | string | IP 位址類型，例如公用、私人、保留、Loopback、Teredo、FourToSixMapping 和 Broadcast |
+| `InitiatingProcessSHA1` | string | 初始化活動的影像 (的 SHA-1) 影像檔案 |
+| `InitiatingProcessSHA256` | string | 初始化事件的 (的 SHA-256) 影像檔案。 此欄位通常未填入，可取得時請使用 SHA1 欄。 |
+| `InitiatingProcessMD5` | 字串 | 初始化活動的 (圖像) MD5 雜湊 |
+| `InitiatingProcessFileName` | string | 初始化事件之程式的名稱 |
+| `InitiatingProcessId` | int | 程式識別碼 (初始化) 的 PID 值 |
+| `InitiatingProcessCommandLine` | string | 用來執行初始化事件的流程的命令列 |
+| `InitiatingProcessCreationTime` | datetime | 啟動事件之程式開始的日期和時間 |
+| `InitiatingProcessFolderPath` | string | 啟動事件之 (圖像) 的資料夾 |
+| `InitiatingProcessParentFileName` | string | 指定事件所負責之程式之父程式的名稱 |
+| `InitiatingProcessParentId` | int | 程式識別碼 (產生) 事件之父流程的 PID 值 |
+| `InitiatingProcessParentCreationTime` | datetime | 事件負責之程式父項開始的日期和時間 |
+| `InitiatingProcessAccountDomain` | string | 執行負責事件之程式之帳戶的網域 |
+| `InitiatingProcessAccountName` | string | 執行負責事件之程式之帳戶的使用者名稱 |
+| `InitiatingProcessAccountSid` | string | 執行 (之) 之帳戶的安全性識別碼為 SID |
+| `InitiatingProcessIntegrityLevel` | string | 初始化事件之程式的完整性層級。 Windows 會依據特定特性指派完整性層級給程式，例如從網際網路下載啟動程式。 這些完整性等級會影響資源的許可權 |
+| `InitiatingProcessTokenElevation` | string | 指出使用者存取控制存在或不存在的權杖類型 (UAC) 許可權提高已應用至初始化事件的流程 |
+| `ReportId` | long | 以重複計數器為基礎的事件識別碼。 若要識別唯一事件，此欄必須與 DeviceName 和 Timestamp 資料行一起使用 |
 | `AppGuardContainerId` | string | Application Guard 用來隔離瀏覽器活動的虛擬容器識別碼 |
 
 ## <a name="related-topics"></a>相關主題
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式和身分識別搜捕](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

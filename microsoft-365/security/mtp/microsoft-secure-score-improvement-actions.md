@@ -1,8 +1,8 @@
 ---
-title: 透過 Microsoft 安全分數評估安全性狀況
-description: 說明如何採取動作，以改善 Microsoft 365 安全中心的 Microsoft 安全分數。
-keywords: microsoft 安全分數、安全分數、office 365 安全分數、microsoft security 得分、microsoft 365 安全性中心、改進動作
-ms.prod: microsoft-365-enterprise
+title: 透過 Microsoft 安全分數來評估您的安全性工作
+description: 說明如何採取動作來改善 Microsoft 365 資訊安全中心的 Microsoft 安全分數。
+keywords: Microsoft 安全分數， 安全分數， Office 365 安全分數， Microsoft 安全性分數， Microsoft 365 安全性中心， 改進動作
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -20,106 +20,107 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: c463e375594b3581486cb8d4bdd380412e195b2e
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.technology: m365d
+ms.openlocfilehash: 8cf416e773abc6cbe1fd891fcec9f02a5011c413
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49738008"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930639"
 ---
-# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分數評估安全性狀況
+# <a name="assess-your-security-posture-with-microsoft-secure-score"></a>使用 Microsoft 安全分數來評估您的安全性工作
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure 得分是組織的安全性狀況度量，具有較高的數目，表示執行的改善動作越多。 可在 https://security.microsoft.com/securescore [Microsoft 365 的安全性中心](overview-security-center.md)找到該網址。
+Microsoft 安全分數是組織安全性措施的度量，數位越高，表示已採取更多改進動作。 您可以在 https://security.microsoft.com/securescore [Microsoft 365 資訊安全中心找到。](overview-security-center.md)
 
-為了協助您更快速地取得所需資訊，Microsoft 改進的動作會組織成群組：
+為了説明您更快速地瞭解您需要的資訊，Microsoft 改進動作分為多個群組：
 
-*  (Azure Active Directory 帳戶 & 角色的身分識別) 
-* 裝置 (Microsoft Defender for Endpoint，稱為 [裝置的 Microsoft 安全評分](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)) 
-* App (電子郵件和雲端應用程式，包括 Office 365 和 Microsoft Cloud App Security) 
+* Azure Active Directory (身分識別&角色) 
+* 裝置 (Microsoft Defender for Endpoint，稱為[Microsoft 裝置安全分數) ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices)
+* App (電子郵件和雲端 App，包括 Office 365 和 Microsoft 雲端 App 安全性) 
 
 >[!NOTE]
->在最近發行的 Microsoft Secure 得分中，已發行的評分模型已發佈，使 Microsoft 安全分數暫時不相容身分識別安全分數和圖形 API。 [檢視詳細資料](microsoft-secure-score-whats-new.md)
+>在最新發佈的 Microsoft 安全分數中，已推出改良的計分模型，讓 Microsoft 安全分數暫時與身分識別安全分數和圖形 API 不相容。 [檢視詳細資料](microsoft-secure-score-whats-new.md)
 
-在 [Microsoft Secure 得分一覽] 頁面中，查看在這些群組之間分割點數的方式，以及可用的點數。 您也可以取得總分的整體總分、安全分數的歷史趨勢和基準比較，以及可以採取以改善評分的優先改進動作。
+在 Microsoft 安全分數概觀頁面中，查看在這些群組中分數的分配與可用的分數。 您也可以全面查看總計分數、安全分數的歷史趨勢和基準比較，以及可採取哪些改進動作來改進分數的優先順序。
 
 ![安全分數首頁](../../media/secure-score/secure-score-homepage-new.png)
 
 ## <a name="check-your-current-score"></a>檢查您目前的分數
 
-若要檢查您目前的分數，請移至 [Microsoft Secure 得分一覽] 頁面，並尋找包含 **您安全分數** 的麻將牌。 您的分數會顯示為百分數，以及您已從總可能的點數所取得的點數。
+若要檢查您目前的分數，請前往 Microsoft 安全分數概觀頁面，並尋找顯示您安全分數 **的磚**。 您的分數會以百分比顯示，以及您可能在總計可能分數中已成就的點數。
 
-此外，如果您選取分數旁邊的 [ **包含** ] 按鈕，您可以選擇不同的分數視圖。 這些不同的分數視圖會顯示在 [分數] 磚和 [點] 分解圖上的圖表中。
+此外，如果您選取分數旁邊的包含按鈕，您可以選擇不同的分數視圖。 這些不同的分數視圖會顯示在分數磚和點分解圖的圖形中。
 
-以下是您可以新增至您的整體分數視圖的分數，可讓您更完整的整體分數的描述如下：
+以下是您可以加到您整體分數的視圖中的分數，以更完整地瞭解整體分數：
 
-- 已 **計畫分數**：在計畫的動作完成時顯示預計分數
-- **目前的授權分數**：顯示可使用您目前的 Microsoft 授權所能達到的分數
-- 可 **實現分數**：顯示可透過您的 Microsoft 授權和目前的風險接受程度達到的分數
+- **計畫分數**：完成計畫的動作時顯示預計的分數
+- **目前的授權分數**：顯示目前的 Microsoft 授權可以達到的分數
+- **可成就的** 分數：顯示能與 Microsoft 授權和目前風險接受度一起達成的成績
 
-如果您已包含所有可能的分數視圖，則此視圖的外觀會如下：
+如果您已經包含所有可能的分數視圖，此視圖看起來會像這樣：
 
-![您的安全分數，包括已計畫的分數、目前的授權分數，以及能達到的分數](../../media/secure-score/your-secure-score.png)
+![您的安全分數，包括計畫分數、目前的授權分數和可達成的成績](../../media/secure-score/your-secure-score.png)
 
-## <a name="take-action-to-improve-your-score"></a>採取動作以提升您的分數
+## <a name="take-action-to-improve-your-score"></a>採取動作以改善您的分數
 
-[ **改進動作** ] 索引標籤會列出解決可能攻擊曲面的安全性建議。 此外，它還包括其狀態 (，以解決、規劃、接受的風險、透過協力廠商解決，以及透過替代的緩解可解決，以及已完成的) 。 您可以搜尋、篩選和群組所有的「改進」動作。  
+改進 **動作按鈕** 會列出能解決可能攻擊面的安全性建議。 它也包括其狀態 (位址、計畫、接受的風險、透過協力廠商解決、透過替代的風險降低和已完成) 。 您可以搜尋、篩選及分組所有改進動作。  
 
 ### <a name="ranking"></a>排名
 
-排名是根據剩下的點數、實施難度、使用者影響和複雜性而定。 最高排名的「改進」動作具有很大的分數，但有低難度、使用者影響和複雜性。
+排名是根據要達到的點數、執行困難、使用者影響和複雜度來計算。 排名最高的改進動作有大量的剩餘點數，其困難度、使用者影響和複雜度都較低。
 
 ### <a name="view-improvement-action-details"></a>查看改進動作詳細資料
 
-當您選取特定的 [提升] 動作時，會出現完整的頁面快顯視窗。  
+當您選取特定的改進動作時，會出現一個完整頁面飛出視窗。  
 
-![改進動作浮出範例](../../media/secure-score/secure-score-improvement-action-details.png)
+![改進動作飛出顯示範例](../../media/secure-score/secure-score-improvement-action-details.png)
 
-若要完成此動作，您有幾個選項：
+若要完成動作，您有幾個選項：
 
-- 選取 [ **管理** ] 以進入設定畫面並進行變更。 接著，您將會在飛出的位置看到必要的動作。點通常需要24小時才能更新。
+- 選取 **管理** 以前往組選畫面，然後進行變更。 接著，您就會獲得動作值得一讀的點數，顯示在飛出飛出中。點數更新通常約需要 24 小時。
 
-- 選取 [ **共用** ]，將直接連結複製到 [改進] 動作。 您也可以選擇要共用連結的平臺，例如電子郵件、Microsoft 小組、Microsoft Planner 或 ServiceNow。 選取 [ServiceNow 將可讓您建立 ServiceNow 和 Microsoft 365 安全性中心首頁會顯示的變更票證。 若要深入瞭解，請參閱 [Microsoft 365 security center 和 ServiceNow integration](tickets-security-center.md)。
+- 選取 **共用** 以複製改進動作的直接連結。 您也可以選擇共用連結的平臺，例如電子郵件、Microsoft Teams、Microsoft Planner 或 ServiceNow。 選取 ServiceNow 將讓您建立在 ServiceNow 和 Microsoft 365 資訊安全中心首頁中可見的變更票證。 若要深入瞭解，請參閱 [Microsoft 365 資訊安全中心與 ServiceNow 整合](tickets-security-center.md)。
 
-新增 **附注** ，以追蹤進度或您想要批註的任何其他專案。 如果您將自己的 **標記** 新增至 [改進] 動作，您可以依這些標記加以篩選。
+新增 **記** 事以追蹤進度或您想要新增批註的任何專案。 如果您在 **改進動作中** 加入自己的標記，您可以根據這些標記進行篩選。
 
 ### <a name="choose-an-improvement-action-status"></a>選擇改進動作狀態
 
-選擇 [改進] 動作特有的任何狀態和記錄附注。
+選擇任何改進動作的特定狀態並記錄附注。
 
-- **若要解決** 此事項-您可以辨識改進動作是必要的，並計畫于未來某一點進行處理。 這種狀態也適用于已偵測到部分但未完全完成的動作。
-- 已 **計畫**-已有適當的計畫可完成改進動作。
-- 已 **接受風險**-安全性絕對應該與可用性進行平衡，而不是每個建議適用于您的環境。 在這種情況下，您可以選擇接受風險或餘下的風險，而不會制定改進動作。 您不會獲得任何點數，但是動作將不再顯示在 [改進動作] 清單中。 您可以在歷史記錄中查看此動作，也可以隨時復原。
-- **透過協力廠商解決** ，並 **透過替代的緩解措施解決** -改進動作已經由協力廠商應用程式或軟體或內部工具所解決。 您將會看到必要的動作點，所以您的分數會更好反映整體的安全性狀況。 如果協力廠商或內部工具不再涵蓋該控制項，您可以選擇其他狀態。 請記住，如果改進動作標示為這兩種狀態，Microsoft 將無法深入瞭解實施的完整性。
+- **解決** - 您瞭解改進動作是必要的，並計畫在未來某一點解決。 此狀態也適用于偵測為部分完成但尚未完成的動作。
+- **已規劃** - 有具體的計畫可完成改進動作。
+- **接受的風險** - 安全性應一定會與可用性保持平衡，而並非每個建議都適用于您的環境。 在這種情況下，您可以選擇接受風險或其餘風險，而不是增加改進動作。 您將不會獲得任何點數，但改進動作清單中將不會再顯示該動作。 您可以在歷程記錄中查看此動作，或隨時復原。
+- **透過協力廠商解決****並透過替代** 風險降低方式解決 - 協力廠商應用程式或軟體或內部工具已經解決改進動作。 您將獲得值得執行的動作分數，這樣您的分數就更能夠反映整體的安全性表現。 如果協力廠商或內部工具已不再涵蓋該控制項，您可以選擇其他狀態。 請記住，如果改進動作標示為這些狀態之一，Microsoft 將完全無法看到完整的執行。
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>威脅 & 弱點管理的改進動作
+#### <a name="threat--vulnerability-management-improvement-actions"></a>威脅&弱點管理改進動作
 
-若要在 "Device" 類別中改進動作，您無法選擇 [狀態]。 相反地，您會將[Microsoft Defender Security Center](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)中相關聯的[威脅和弱點管理安全性建議](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)導向給您採取的動作。 您選擇的例外狀況和您所撰寫的對齊方式，都是該入口網站特有的。 它不會出現在 Microsoft Secure 得分入口網站中。
+對於「裝置」類別中的改進動作，您無法選擇狀態。 相反地，系統將會將您導向 Microsoft [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation) Defender 資訊安全中心的相關威脅和弱點管理[安全性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/use)建議以採取行動。 您選擇和理由的例外會限制于該入口網站。 它不會在 Microsoft 安全分數入口網站中。
 
 #### <a name="completed-improvement-actions"></a>已完成的改進動作
 
-在完成改進動作的所有可能點之後，[改進動作] 的狀態為「已完成」。 已完成的改進動作會以 Microsoft data 確認，而且您無法變更狀態。
+一旦完成改善動作的所有可能重點後，改進動作會進入「已完成」狀態。 已完成的改進動作雖然 Microsoft 資料已確認，但您無法變更狀態。
 
-### <a name="assess-information-and-review-user-impact"></a>評估資訊並複查使用者影響
+### <a name="assess-information-and-review-user-impact"></a>評估資訊並評論使用者影響
 
-一 **眼** 就會告訴您，您的類別、可以防禦的攻擊，以及產品。
+名為快速 **流覽的區** 段會告訴您類別、可防範的攻擊以及產品。
 
-**使用者影響** 是指在已頒佈改進動作時，使用者會遇到的影響，而 **受影響的使用者** 則是受影響的人員。
+**如果使用者** 有改進行動，使用者的影響會受到影響，而受影響的使用者會受到影響。 
 
-### <a name="implement-the-improvement-action"></a>實施改進動作
+### <a name="implement-the-improvement-action"></a>執行改進動作
 
-「 **實施** 」區段顯示所有必要條件、逐步後續步驟，以完成 [改進] 動作、[改進動作] 的目前實施狀態，以及任何 [深入瞭解] 連結。
+The **Implementation section** shows any prerequisites， step-by-step next steps to complete the improvement action， the current implementation status of the improvement action， and any learn more links.
 
-必要條件包括在解決改進動作之前，所需的授權或執行的動作。 請確定您的授權有足夠的座位，可完成 [改進] 動作，並將這些授權套用至必要的使用者。  
+先決條件包括解決改進動作之前需要的任何授權或需完成的動作。 請確定您的授權中有足夠的座位以完成改進動作，而且這些授權已套用至必要的使用者。  
 
 ## <a name="we-want-to-hear-from-you"></a>我們想知道您的想法
 
-如果您有任何問題，請在 [安全性、隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社區中發佈以告知我們。 我們正在監視社區，並會提供協助。
+如有任何問題，請張貼在安全性、隱私權和合規性& [告訴我們](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 。 我們正在監控社群，並且會為您提供協助。
 
 ## <a name="related-resources"></a>相關資源
 
-- [Microsoft 安全評分概述](microsoft-secure-score.md)
-- [追蹤您的 Microsoft 安全分數記錄並符合目標](microsoft-secure-score-history-metrics-trends.md)
+- [Microsoft 安全分數概觀](microsoft-secure-score.md)
+- [追蹤您的 Microsoft 安全分數記錄並達成目標](microsoft-secure-score-history-metrics-trends.md)
 - [即將推出的功能](microsoft-secure-score-whats-coming.md)
 - [新功能](microsoft-secure-score-whats-new.md)

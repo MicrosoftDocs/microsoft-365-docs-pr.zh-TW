@@ -1,8 +1,8 @@
 ---
-title: Microsoft 安全分數的新功能
-description: 說明 microsoft 365 security center 中的 Microsoft Secure 得分發生了哪些新的變更。
-keywords: microsoft 安全分數，安全分數，office 365 安全分數，microsoft security 得分，microsoft 365 security center
-ms.prod: microsoft-365-enterprise
+title: Microsoft 安全分數的新增功能
+description: 說明 Microsoft 365 安全性中心中的 Microsoft 安全分數發生的新變更。
+keywords: Microsoft 安全分數， 安全分數， Office 365 安全分數， Microsoft 安全性分數， microsoft 365 資訊安全中心
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -20,84 +20,91 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 61ac8c627dd701ac354a5d60d4774a6443b4d41e
-ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
+ms.technology: m365d
+ms.openlocfilehash: 039ec1c3f9b0ba233f950d11b9d58be341b28121
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "49737984"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930591"
 ---
-# <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新功能
+# <a name="whats-new-in-microsoft-secure-score"></a>Microsoft 安全分數的新增功能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-若要讓 Microsoft 安全評分為您安全性狀況的更佳代表，我們進行了一些變更。 若要深入瞭解規劃的變更，請參閱 [Microsoft Secure 得分中的內容？](microsoft-secure-score-whats-coming.md)
+為了讓 Microsoft Secure Score 更代表您的安全性工作，我們做了一些變更。 若要瞭解已規劃的變更，請參閱 [Microsoft 安全分數將提供哪些專案？](microsoft-secure-score-whats-coming.md)
 
-Microsoft Secure 得分可在 https://security.microsoft.com/securescore [microsoft 365 的安全性中心](overview-security-center.md)找到。
+您可以在 Microsoft https://security.microsoft.com/securescore [365](overview-security-center.md)資訊安全中心找到 Microsoft 安全分數。
+
+## <a name="january-2021"></a>2021 年 1 月
+
+### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>新增我們針對 Microsoft Teams 的第一個安全性建議
+
+Microsoft Teams 客戶會看到「限制匿名使用者加入會議」，做為安全分數中的新改進動作。
 
 ## <a name="december-2020"></a>2020 年 12 月
 
-### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>針對先前的 Microsoft Defender ATP) ，新增了 Microsoft Defender for Endpoint (的六個帳戶相關改進動作：
+### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>針對 Microsoft Defender for Endpoint 新增六個帳戶相關改進動作 (Microsoft Defender ATP) ：
 
-- 將 ' 密碼長度下限 ' 設定為 ' 14 或以上的字元」
-- 將 ' 強制密碼歷程記錄 ' 設定為 ' 24 或以上的密碼 (s) '
-- 將 ' 密碼最長存留期 ' 設定為 ' 60 或更少的天數，但不是 0 '
-- 將 ' 密碼最短保留天數 ' 設定為 ' 1 或以上的 (s) '
-- 停用內建管理員帳戶
-- 停用內建來賓帳戶
+- 將密碼長度最小為 14 個字元以上
+- 將強制密碼歷程記錄設定為 (24) >
+- 將密碼年齡上限設定為 60 天以下，但不要設定為 0
+- 將 '最低密碼年齡' 設定為 '1 天或 (天) '
+- 停用內建的系統管理員帳戶
+- 停用內建的來賓帳戶
 
 ## <a name="november-2020"></a>2020 年 11 月
 
-### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>移除透過安全分數建立 ServiceNow 票證的能力 
+### <a name="removed-the-ability-to-create-servicenow-tickets-through-secure-score"></a>已透過安全分數移除建立 ServiceNow 票證的能力 
 
-無法再使用 **> ServiceNow** ，透過安全的分數建立 ServiceNow 入場券的功能。 感謝您的意見反應，並在我們決定接下來的步驟時繼續支援。
+不再提供透過安全分數建立 ServiceNow 票證的能力> **共用服務視窗** 。 感謝您的意見和持續支援，我們決定接下來的步驟。
 
-### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>在先前的 Microsoft Defender ATP) 中，新增三項 Microsoft Defender for Endpoint (的服務相關改進動作：
+### <a name="added-three-services-related-improvement-actions-for-microsoft-defender-for-endpoint-previously-microsoft-defender-atp"></a>針對 Microsoft Defender for Endpoint (先前是 Microsoft Defender ATP 的三個服務相關改進) ：
 
-- 修正 Windows 服務的未加引號服務路徑
+- 修正未標出之 Windows 服務的服務路徑
 - 將服務可執行路徑變更為一般受保護的位置
-- 變更服務帳戶以避免在 windows 登錄中快取密碼
+- 變更服務帳戶以避免 Windows 登錄中的緩存密碼
 
 ## <a name="october-2020"></a>2020 年 10 月
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>移除與 Microsoft Defender for Endpoint 相關的改進動作
 
-- 設定 Microsoft Defender SmartScreen Windows 應用程式 web 內容檢查以警告
+- 將 Microsoft Defender SmartScreen Windows 市集應用程式內容檢查設為警告
 
 ## <a name="august-2020"></a>2020年 8月
 
 ### <a name="updated-improvement-action-for-azure-active-directory"></a>Azure Active Directory 的更新改進動作
 
-- 啟用原則以封鎖舊版驗證
+- 啟用封鎖舊版驗證的策略
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>不相容身分識別安全分數與圖形 API
+## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>與身分識別安全分數和圖形 API 不相容
 
-在最近發行的 Microsoft Secure 得分中，已發佈一個已改進的計分模型。 這些變更可讓您更靈活且準確的安全性狀況的觀點。 不過，這些更新已讓 Microsoft 安全分數暫時不相容身分識別安全分數和圖形 API。
+在最新發佈的 Microsoft 安全分數中，已推出改良的計分模型。 這些變更允許您以更有彈性且更精確的方式查看安全性工作。 不過，這些更新已讓 Microsoft 安全分數暫時與身分識別安全分數和圖形 API 不相容。
 
-在時間內，身分識別安全分數和圖形 API 將採用新的計分模型。 在此之前，客戶會看到 Microsoft 安全評分、身分識別安全分數及圖形 API 所報告的分數差異。 我們對這項不便的任何不便深表歉意，而且正在運作，以確保未來的體驗更具相容性。
+身分識別安全分數和圖形 API 會一同採用新的計分模型。 在此之前，客戶會看到 Microsoft 安全分數、身分識別安全分數和圖形 API 報告的成績有差異。 對於造成不便，我們深感抱歉，並且正努力確保未來這些體驗能更相容。
 
-## <a name="updated-improvement-actions"></a>更新的改進動作
+## <a name="updated-improvement-actions"></a>已更新改進動作
 
-- 新增 Azure Active Directory 改進動作
-- 新增 Microsoft Defender 以進行身分識別改進動作
-- 支援 Microsoft Defender for Endpoint [威脅 & 弱點管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全性建議
-    - 現在提供 TVM 提供的所有發行安全性建議
+- 已新增 Azure Active Directory 改進動作
+- 已針對身分識別改進動作新增 Microsoft Defender
+- 支援 Microsoft Defender 的端點 [威脅&管理](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) 安全性建議
+    - 現在提供由 TVM 提供的所有已發行安全性建議
 
-## <a name="updated-interface-and-functionality"></a>更新的介面及功能
+## <a name="updated-interface-and-functionality"></a>更新的介面和功能
 
-* CISO 和潛在客戶層級討論的所有新的計量和趨勢視圖
-* 追蹤和基準成績的新方法
-* 更好地追蹤和瞭解分數回歸
-* 篩選、標記、搜尋及群組您的改善動作
-* 使用分數預測和規劃的動作來管理您的未來目標
-* 還有更多！
+* C們所有新的計量和趨勢視圖，以及潛在客戶層級討論
+* 追蹤和基準分數的新功能
+* 針對分數回歸進行更好的追蹤及理解
+* 篩選、標記、搜尋和分組您的改進動作
+* 使用分數預測和計畫的行動來達成您的未來目標
+* 以及更多功能！
 
 ## <a name="we-want-to-hear-from-you"></a>我們想知道您的想法
 
-如果您有任何問題，請在 [安全性、隱私權 & 合規性](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 社區中發佈以告知我們。 我們正在監視社區，並會提供協助。
+如有任何問題，請張貼在安全性、隱私權和合規性& [告訴我們](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) 。 我們正在監控社群，並且會為您提供協助。
 
 ## <a name="related-resources"></a>相關資源
 
 - [評估您的安全性狀態](microsoft-secure-score-improvement-actions.md)
-- [追蹤您的 Microsoft 安全分數記錄並符合目標](microsoft-secure-score-history-metrics-trends.md)
+- [追蹤您的 Microsoft 安全分數記錄並達成目標](microsoft-secure-score-history-metrics-trends.md)
 - [即將推出的功能](microsoft-secure-score-whats-coming.md)

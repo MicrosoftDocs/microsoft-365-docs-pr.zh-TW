@@ -1,10 +1,10 @@
 ---
-title: Advanced 搜尋架構中的 AADSignInEventsBeta 表格
-description: 深入瞭解與高級搜尋架構之 Azure Active Directory 登入事件表格相關的資訊
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，表格，欄，資料類型，描述，檔案，IP 位址，裝置，機器，使用者，帳戶，身分識別，AAD
+title: 進位搜尋架構中的 AADSignInEventsBeta 資料表
+description: 瞭解進位搜尋架構之 Azure Active Directory 登錄事件資料表的關聯資訊
+keywords: 進層搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、表格、欄、資料類型、描述、檔案、IP 位址、裝置、電腦、使用者、帳戶、身分識別、AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 1830eeec674c4948bd6492780ef8a0a8039111b8
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+ms.technology: m365d
+ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784284"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931035"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -33,12 +34,12 @@ ms.locfileid: "49784284"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> `AADSignInEventsBeta`表格目前在 Beta 中，並在短期內提供，以供您透過 Azure Active Directory (AAD) 登入事件進行搜尋。 我們最後會將所有登入架構資訊移至 `IdentityLogonEvents` 表格。<br><br>
-> 可透過 Azure Security Center 的整合 Microsoft Defender for Endpoint 方案存取 Microsoft 365 Defender 的客戶，但沒有 Microsoft Defender for Office、Microsoft Defender 身分識別或 Microsoft Cloud App Security 的授權，將無法查看此架構。 
+> 此表格目前為 Beta 版，並且提供短期版本，讓您在 `AADSignInEventsBeta` Azure Active Directory (AAD) 事件搜尋。 我們最終會移動所有登錄架構資訊至 `IdentityLogonEvents` 資料表。<br><br>
+> 可透過 Azure 資訊安全中心整合的 Microsoft Defender 端點解決方案存取 Microsoft 365 Defender，但沒有 Microsoft Defender for Office、Microsoft Defender for Identity 或 Microsoft Cloud App 安全性授權的客戶，將無法查看此架構。 
 
  
 
-[！附注] `AADSignInEventsBeta` 高級搜尋架構中的表格包含 Azure Active Directory 互動和非互動式登入的相關資訊。深入瞭解 [Azure Active Directory 登入活動報告-預覽](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)中的登入。
+進 `AADSignInEventsBeta` 位搜尋架構中的表格包含有關 Azure Active Directory 互動式和非互動式之登錄的資訊。深入瞭解 Azure Active Directory 的登錄 [活動報告 -](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)預覽。
 
 使用這個參考來建立從表格取回之資訊的查詢。
 如需進階搜捕結構描述中其他表格的資訊，請參閱 [進階搜捕參考](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference) (部分內容為機器翻譯)。
@@ -52,44 +53,44 @@ ms.locfileid: "49784284"
 | `Timestamp`                       | datetime      | 記錄的產生日期和時間                                                                                                                                         |
 | `Application`                     | string        | 執行錄製動作的應用程式                                                                                                                                       |
 | `ApplicationId`                   | string        | 應用程式的唯一識別碼                                                                                                                                               |
-| `LogonType`                       | string        | 登入會話的類型，尤其是互動式、遠端互動 (RDP) 、網路、批次及服務                                                                              |
-| `ErrorCode`                       | int        | 如果發生登入錯誤，則會包含錯誤代碼。 若要尋找特定錯誤碼的描述，請造訪 <https://aka.ms/AADsigninsErrorCodes> 。                                     |
-| `CorrelationId`                   | string        | 登入事件的唯一識別碼                                                                                                                                              |
-| `SessionId`                       | string        | 網站伺服器在就診或會話期間指派給使用者的唯一號碼                                                                                     |
-| `AccountDisplayName`              | string        | 顯示在通訊錄中之帳戶使用者的名稱。 通常是指定的名稱或名字、中間名首字母的組合，以及姓氏或姓的組合。                             |
+| `LogonType`                       | string        | 登入會話類型，尤其是互動式遠端互動式 (RDP) 、網路、批次和服務                                                                              |
+| `ErrorCode`                       | int        | 發生登錄錯誤時，包含錯誤碼。 若要尋找特定錯誤碼的描述，請流覽 <https://aka.ms/AADsigninsErrorCodes> 。                                     |
+| `CorrelationId`                   | string        | 此登錄事件的唯一識別碼                                                                                                                                              |
+| `SessionId`                       | string        | 網站伺服器在流覽或會話期間指派給使用者的唯一數位                                                                                     |
+| `AccountDisplayName`              | string        | 顯示在通訊錄中的帳戶使用者名稱。 通常是指定或名字、中間名縮寫，以及姓氏或名字的組合。                             |
 | `AccountObjectId`                 | string        | Azure AD 中帳戶的唯一識別碼                                                                                                                                       |
-| `AccountUpn`                      | string        | 帳戶的使用者主要名稱 (UPN)                                                                                                                                             |
-| `IsExternalUser`                  | int        | 會指出登入的使用者是否為外部使用者。 可能的值：-1 (未設定) ，0 (非外部) ，1 (外部) 。                                                                   |
-| `IsGuestUser`                     | 布林值       | 指出登入的使用者是否為承租人中的來賓                                                                                                                  |
-| `AlternateSignInName`             | string        | 內部部署使用者主要名稱 (使用者登入 Azure AD 的 UPN)                                                                                                             |
-| `LastPasswordChangeTimestamp`     | datetime        | 上次簽署使用者密碼的日期和時間                                                                                                              |
-| `ResourceDisplayName`             | string        | 存取資源的顯示名稱                                                                                                                                               |
-| `ResourceId`                      | string        | 存取資源的唯一識別碼                                                                                                                                          |
-| `ResourceTenantId`                | string        | 存取資源租使用者的唯一識別碼                                                                                                                            |
+| `AccountUpn`                      | string        | 帳戶 (UPN) 使用者主體名稱                                                                                                                                            |
+| `IsExternalUser`                  | int        | 指出已登錄的使用者為外部使用者。 可能的值：-1 (設定為) ;0 (非) ;1 (外部) 。                                                                   |
+| `IsGuestUser`                     | 布林值       | 指出已登錄的使用者是否在租使用者中為來賓                                                                                                                  |
+| `AlternateSignInName`             | string        | 內部部署使用者主體名稱 (使用者) Azure AD 的 UPN 使用者名稱                                                                                                            |
+| `LastPasswordChangeTimestamp`     | datetime        | 上次簽到的使用者變更密碼的日期和時間                                                                                                              |
+| `ResourceDisplayName`             | string        | 顯示已存取資源的名稱                                                                                                                                               |
+| `ResourceId`                      | string        | 已存取資源的唯一識別碼                                                                                                                                          |
+| `ResourceTenantId`                | string        | 存取資源之租使用者的唯一識別碼                                                                                                                            |
 | `DeviceName`                      | string        | 電腦的完整網域名稱 (FQDN)                                                                                                                                   |
 | `AadDeviceId`                     | string   |      Azure AD 中裝置的唯一識別碼                                                                                                                                                                               |
 | `OSPlatform`                      | string        | 電腦上執行的作業系統平台。 這表示特定作業系統，包括相同家族內的變化，例如 Windows 10 和 Windows 7。  |
-| `DeviceTrustType`                 | 字串        | 指出已登入之裝置的信任類型。 僅適用于受管理的裝置案例。 可能的值為 Workplace、AzureAd 及 ServerAd。                                     |
-| `IsManaged`                       | int       | 會指出發起登入的裝置是否為受管理的裝置 (1) 或不是受管理裝置 (0)                                                                          |
-| `IsCompliant`                     | int       | 會指出發起登入的裝置是否符合 (1) 或不相容 (0)                                                                                        |
-| `AuthenticationProcessingDetails` | string        | 驗證處理器的詳細資料                                                                                                                                          |
-| `AuthenticationRequirement`       | string        | 登入所需的驗證類型。 可能的值： multiFactorAuthentication (MFA 是必要) 和 singleFactorAuthentication (不需要 MFA) 。                |
-| `TokenIssuerType`                 | int        | 會指出權杖簽發者是 Azure Active Directory (0) 或 Active Directory Federation Services (1)                                                                              |
-| `RiskLevelAggregated`                       | int        | 登入過程中的風險層級匯總。 可能的值： 0 (匯總風險層級未設定) ，1 (none) ，10 (低) ，50 (中) ，或 100 (高) 。                               |
-| `RiskDetails`                      | int        | 有關已登入之使用者的危險狀態的詳細資料                                                                                                                            |
-| `RiskState`                       | int        | 表示有危險的使用者狀態。 可能的值： 0 (無) 、1 (已確認的安全) 、2 (修正) 、3 () 、4 (風險) 或 5 (已確認已遭破壞) 。                                |
-| `UserAgent`                       | string        | 來自網頁瀏覽器或其他用戶端應用程式的使用者代理程式資訊                                                                                                             |
-| `ClientAppUsed`                   | string        | 表示所用的用戶端應用程式                                                                                                                                                       |
-| `Browser`                         | string        | 用於登入之瀏覽器版本的詳細資料                                                                                                                            |
-| `ConditionalAccessPolicies`       | string        | 套用至登入事件之條件式存取原則的詳細資料                                                                                                             |
-| `ConditionalAccessStatus`         | int        | 套用至登入的條件式存取原則狀態。 可能的值為 0 (套用的原則) 、1 (嘗試套用原則失敗) 或 2 (未套用) 原則。      |
-| `IPAddress`                       | string        | 指派給端點的 IP 位址，並在相關的網路通訊期間使用                                                                                                  |
-| `CountryCode`                     | string        | 兩個字母的代碼，指出用戶端 IP 位址為 geolocated 的國家/地區                                                                                                    |
-| `State`                           | string        | 發生登入的狀態（若有的話）                                                                                                                                      |
+| `DeviceTrustType`                 | 字串        | 表示已登錄之裝置的信任類型。 僅適用于受管理的裝置案例。 可能的值為 Workplace、AzureAd 和 ServerAd。                                     |
+| `IsManaged`                       | int       | 指出初始化該登錄的裝置是受管理的裝置 () 1，或不是 (0)                                                                          |
+| `IsCompliant`                     | int       | 指出啟動該登錄的裝置是否符合 (1) 相容性， (0)                                                                                        |
+| `AuthenticationProcessingDetails` | string        | 驗證處理器的詳細資訊                                                                                                                                          |
+| `AuthenticationRequirement`       | string        | 此登錄所需的驗證類型。 可能的值：需要 multiAuthentication (MFA) singleFactorAuthentication (不需要 MFA) 。                |
+| `TokenIssuerType`                 | int        | 指出權杖發行者是 Azure Active Directory (0) 或 Active Directory Federation Services (1)                                                                              |
+| `RiskLevelAggregated`                       | int        | 在登錄期間匯總的風險等級。 可能的值：未設定) 的 (匯總風險等級、1 (無) 、10 (低) 、50 (中) 或 100 (高) 。                               |
+| `RiskDetails`                      | int        | 已簽署之使用者風險狀態的詳細資訊                                                                                                                            |
+| `RiskState`                       | int        | 表示有風險的使用者狀態。 可能的值：0 (無) 、1 (已確認安全) 、2 (修復) 、3 (解除) 、4 (風險) 或 5 (已確認已入侵) 。                                |
+| `UserAgent`                       | string        | 網頁瀏覽器或其他用戶端應用程式的使用者代理程式資訊                                                                                                             |
+| `ClientAppUsed`                   | string        | 表示使用的用戶端應用程式                                                                                                                                                       |
+| `Browser`                         | string        | 用來進行登錄的瀏覽器版本詳細資料                                                                                                                            |
+| `ConditionalAccessPolicies`       | string        | 將條件式存取原則新用至此登錄事件的詳細資訊                                                                                                             |
+| `ConditionalAccessStatus`         | int        | 已對登錄所適用之條件式存取原則的狀態。 可能的值包括 0 (原則) 、1 (嘗試將原則成功) ，或 2 (原則未) 。      |
+| `IPAddress`                       | string        | 指派給端點的 IP 位址，用於相關網路通訊期間                                                                                                  |
+| `CountryCode`                     | string        | 兩個字母的代碼，指出用戶端 IP 位址已異地定位的國家/地區                                                                                                    |
+| `State`                           | string        | 發生此登錄的州/省 （如果可用）                                                                                                                                      |
 | `City`                            | string        | 帳戶使用者所在的城市                                                                                                                                              |
-| `Latitude`                        | string        | 登入位置的北到南部座標                                                                                                                              |
-| `Longitude`                       | string        | 登入位置的東對西座標                                                                                                                                |
-| `NetworkLocationDetails`          | string        | 登錄事件驗證處理器的網路位置詳細資料                                                                                                       |
+| `Latitude`                        | string        | 簽署位置的北到南座標                                                                                                                              |
+| `Longitude`                       | string        | 簽署位置的東部至西座標                                                                                                                                |
+| `NetworkLocationDetails`          | string        | 此登錄事件之驗證處理器的網路位置詳細資料                                                                                                       |
 | `RequestId`                       | string        |  要求的唯一識別碼                                                                                                                                                   |
 |`ReportId` | string | 事件的唯一識別碼 |
 

@@ -1,9 +1,9 @@
 ---
 title: 在 Microsoft 365 Defender 中取得事件通知
-description: 瞭解如何建立規則，以在 Microsoft 365 Defender 中取得事件的電子郵件通知
-keywords: 事件，電子郵件，電子郵件 notfications，設定，使用者，信箱，電子郵件，事件
+description: 瞭解如何在 Microsoft 365 Defender 中建立規則以取得事件的電子郵件通知
+keywords: 事件、電子郵件、電子郵件通知、設定、使用者、信箱、電子郵件、事件
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,14 +21,15 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f25be4de3f25db869957474c3cb32b20e9f7aa53
-ms.sourcegitcommit: 88d358d778804b26d5e41c53b4f725d01a78112b
+ms.technology: m365d
+ms.openlocfilehash: 9db025818fdd5eb2635a9a676e4a10e20f3036b6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49848888"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930975"
 ---
-# <a name="get-incident-notifications-by-email"></a>透過電子郵件取得事件通知
+# <a name="get-incident-notifications-by-email"></a>以電子郵件取得事件通知
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,43 +37,43 @@ ms.locfileid: "49848888"
 適用於：
 - Microsoft 365 Defender
 
-您可以設定 Microsoft 365 Defender 以透過電子郵件通知您每次現有的事件發生新的事件或新的更新。 
+您可以設定 Microsoft 365 Defender，每當有新事件或現有事件的更新時，都會以電子郵件通知您。 
 
-您可以選擇根據事件嚴重性或設備群組來取得通知。 您也可以選擇只在每個事件第一個更新時取得通知。
+您可以選擇根據事件嚴重性或裝置群組來取得通知。 您也可以選擇只在每個事件的第一次更新時收到通知。
 
-您可以在電子郵件通知中新增或移除收件者。 新增的收件者會在新增事件後收到相關通知。 
+您可以在電子郵件通知中新增或移除收件者。 新增的收件者在新增事件後會收到事件通知。 
 
-電子郵件通知包含有關事件的重要詳細資料，例如事件名稱、嚴重性和類別，以及其他。 您也可以直接移至 [事件]，以便立即開始調查。 如需調查事件的詳細資訊，請參閱 [調查 Microsoft 365 Defender 中的事件](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents)。
+電子郵件通知包含事件的重要詳細資料，例如事件名稱、嚴重性和類別等等。 您也可以直接前往事件，以便立即開始調查。 有關調查事件的更多資訊，請參閱 [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents)中的調查事件。
 
 >[!NOTE]
->您必須具有「管理安全性設定」許可權，才可設定電子郵件通知設定。 如果您已選擇使用基本版權管理，具有安全性管理員或全域系統管理員角色的使用者便可為您設定電子郵件通知。 <br> <br>
-同樣地，如果您的組織使用角色型存取控制 (RBAC) ，您可以根據允許管理的裝置群組，只建立、編輯、刪除和接收通知。
+>您需要有管理安全性設定的許可權，才能設定電子郵件通知設定。 如果您選擇使用基本版權管理，具有安全性系統管理員或全域系統管理員角色的使用者可以設定電子郵件通知。 <br> <br>
+同樣地，如果貴組織是使用角色型存取控制 (RBAC) ，則只能根據您允許管理的裝置群組來建立、編輯、刪除及接收通知。
 
-## <a name="create-rules-for-incident-notifications"></a>建立事件通知的規則
+## <a name="create-rules-for-incident-notifications"></a>建立事件通知規則
 
-若要設定第一筆電子郵件通知的事件，請建立新的規則，並自訂電子郵件通知設定。
+若要設定事件的第一封電子郵件通知，請建立新規則並自訂電子郵件通知設定。
 
-1. 在功能窗格中，選取 [**設定**  >  **事件的電子郵件通知**]。
-2. 選取 [ **新增專案**]。
-3. 在 [ **名稱** ] 中為規則命名，並提供 **描述**。
+1. 在功能窗格中，選取 **設定**  >  **事件電子郵件通知**。
+2. 選取 **新增專案**。
+3. 在名稱中為規則 **命名，** 並提供 **描述**。
 
-    ![建立事件電子郵件 notifs 的規則視窗](../../media/incidentemailnotif1.png) 
-4. 選取 **[下一步]** 移至 [ **通知設定**]。 您可以在這裡指定：
-    - **警示嚴重性** -選擇會觸發事件通知的警示嚴重性。 例如，如果您只想知道高嚴重性事件，請選取 [高]。
-    - **裝置群組範圍** -此下拉式清單顯示使用者可以存取的所有裝置群組。 選取您要為其建立事件通知規則的裝置群組。
-    - **僅在每個事件第一次發生時發出通知** -選取此選項只會在第一個符合其他選擇的警示上傳送電子郵件通知。 稍後與該事件相關的更新或警示將不會觸發通知。
-    - **包含組織名稱** -指出客戶名稱是否會出現在電子郵件通知中。
-    - **包含租使用者專用的入口網站連結** -新增具有租使用者識別碼的連結，以允許存取特定租使用者。
+    ![事件電子郵件通知的建立規則視窗](../../media/incidentemailnotif1.png) 
+4. 選取 **下一** 步以前往 **通知設定**。 您可以在此處指定：
+    - **警示嚴重性** - 選擇會觸發事件通知的警示嚴重性。 例如，如果您只想通知高嚴重性事件，請選取 [高。
+    - **裝置群組範圍** - 此下拉式清單會顯示使用者可以存取的所有裝置群組。 選取要建立事件通知規則的裝置群組。
+    - **只會在每個事件第** 一次出現時通知 - 選取此選項只會在符合您其他選項的第一個通知上傳送電子郵件通知。 之後與事件相關的更新或警示不會觸發通知。
+    - **包含組織名稱** - 指出客戶名稱是否顯示在電子郵件通知上。
+    - **包含租使用者專用入口網站連結** -新增包含租使用者識別碼的連結，以允許存取特定租使用者。
     
-    ![事件電子郵件 notifs 的 Notif 設定視窗](../../media/incidentemailnotif2.png)
-5. 選取 **[下一步]** 移至 [收件者]**區段。** 在這裡，您可以指定會收到事件電子郵件通知的電子郵件地址。 在輸入每個電子郵件地址後，選取 [ **新增收件** 者]。
+    ![事件電子郵件的 Notif 設定視窗](../../media/incidentemailnotif2.png)
+5. 選取 **下一** 步以前往收 **件者** 區段。 您可以在此處指定將接收事件電子郵件通知的電子郵件地址。 輸入 **每個電子郵件地址之後** ，選取新增收件者。
 
-    ![新增事件電子郵件 notifs 的收件者視窗](../../media/incidentemailnotif3.png) 
+    ![事件電子郵件的新增收件者視窗](../../media/incidentemailnotif3.png) 
 
-6. 最後，選取 **[下一步]** 以 **查看規則** ，這樣您就能看到與新規則相關聯的所有設定。 收件者會開始透過電子郵件以設定為基礎來接收事件通知。
+6. 最後，選取 **下一** 步以前往檢查 **規則** ，以便查看所有與新規則相關聯的設定。 收件者會開始根據設定，透過電子郵件接收事件通知。
 
 ## <a name="see-also"></a>另請參閱
-- [Microsoft 365 Defender 中的事件概述](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)
-- [設定 Microsoft 365 Defender 中的事件優先順序](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue)
+- [Microsoft 365 Defender 中的事件概觀](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)
+- [在 Microsoft 365 Defender 中排列事件的優先順序](https://docs.microsoft.com/microsoft-365/security/mtp/incident-queue)
 - [調查 Microsoft 365 Defender 中的事件](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents)
 

@@ -3,7 +3,7 @@ title: Microsoft 365 Defender 資料安全性和隱私權
 description: 描述服務的隱私權和資料安全性。
 keywords: 隱私權, 資料, 安全性, 信任中心, 資訊集合
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 8ed9c4c2601e0026d074aeb05964a8282239b55e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 70a3c881c2f68aacdeac00e615f3d09ed90c9f1e
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843897"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932043"
 ---
 # <a name="microsoft-365-defender-data-security-and-privacy"></a>Microsoft 365 Defender 資料安全性和隱私權
 
@@ -34,12 +35,12 @@ ms.locfileid: "48843897"
 **適用於：**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender 會在 Microsoft Azure 資料中心中的歐盟、英國和美國運作。 服務所收集的客戶資料會儲存在 rest 中 () 布建期間所識別的承租人地理位置，如果 Microsoft 365 Defender 使用另一部 Microsoft online 服務來處理此類資料，則會依照其他線上服務的資料儲存規則所定義的地理位置而定， (b) 。
+Microsoft 365 Defender 在歐盟、英國和美國 Microsoft Azure 資料中心中運作。 服務收集的客戶資料會儲存在 (的) 在佈設期間所識別的租使用者地理位置，或 (b) 如果 Microsoft 365 Defender 使用另一個 Microsoft 線上服務處理這類資料，即由該其他線上服務之資料儲存規則定義的地理位置。
 
-在假名化表單中的客戶資料也可以儲存在美國中央儲存區與處理系統中。
+以假名形式顯示的客戶資料可能也會儲存在美國的集中儲存和處理系統中。
 
 
-如需特定產品之資料儲存區與隱私權資訊的詳細資訊，請參閱：
-- [Microsoft Defender for Endpoint data storage and 隱私權](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+有關特定產品的資料儲存空間和隱私權資訊，請參閱：
+- [端點資料儲存與隱私權的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Microsoft Cloud App Security 資料安全性與隱私權](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust)
-- [Microsoft 365 隱私權、安全性和透明性](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
+- [Microsoft 365 隱私權、安全性和透明度](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)

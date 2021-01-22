@@ -1,10 +1,10 @@
 ---
 title: 進階搜捕結構描述中的 DeviceTvmSecureConfigurationAssessmentKB 表格
 description: 在進階搜捕結構描述之 DeviceTvmSecureConfigurationAssessmentKB 表格中，了解由威脅與弱點管理評估的各種安全性設定。
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，架構參考，kusto，table，欄，資料類型，描述，威脅 & 漏洞管理，TVM，裝置管理，安全性設定，MITRE ATT&CK framework，知識庫，KB，DeviceTvmSecureConfigurationAssessmentKB
+keywords: 進層搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參照、kusto、表格、欄、資料類型、描述、威脅 & 弱點管理、TVM、裝置管理、安全性組塊、MITRE ATT&CK 架構、知識庫、KB、DeviceMicmSecureConfigurationAssesmentKB
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6186bd37735b5225fd33905395055228972fc27c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 4cd23b8f3ba99b38264b9bf1ba18e8ec2574bab6
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48847580"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931059"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -58,7 +59,7 @@ ms.locfileid: "48847580"
 - [主動威脅搜捕](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式和身分識別搜捕](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)
 - [威脅與弱點管理的概觀](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
