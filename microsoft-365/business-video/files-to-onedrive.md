@@ -1,5 +1,5 @@
 ---
-title: 將檔案移至 OneDrive
+title: 將檔案移動到 OneDrive
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何將檔案移至 OneDrive。
-ms.openlocfilehash: 8fa6439472389ad851dca3961a515ebfb967f402
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 5a708ba797dbb735c71f181fc287fb831004112b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701774"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927211"
 ---
-# <a name="move-files-to-onedrive"></a><span data-ttu-id="5b0a6-103">將檔案移至 OneDrive</span><span class="sxs-lookup"><span data-stu-id="5b0a6-103">Move files to OneDrive</span></span>
+# <a name="move-files-to-onedrive"></a><span data-ttu-id="f174f-103">將檔案移至 OneDrive</span><span class="sxs-lookup"><span data-stu-id="f174f-103">Move files to OneDrive</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 
-<span data-ttu-id="5b0a6-104">在您註冊 Microsoft 365 商務版 Premium 後，您&#39;想要將現有的工作檔案複製到商務 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-104">After you sign up for Microsoft 365 Business Premium, you&#39;ll want to copy your existing work files to OneDrive for Business.</span></span> <span data-ttu-id="5b0a6-105">OneDrive 是存放您想要控制存取之個人工作檔案或機密商務檔案的好地方。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-105">OneDrive is a good place to store personal work files or sensitive business files that you want to control access to.</span></span>
+<span data-ttu-id="f174f-104">註冊 Microsoft 365 商務進版之後，&#39;現有的工作檔案複製到商務用 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="f174f-104">After you sign up for Microsoft 365 Business Premium, you&#39;ll want to copy your existing work files to OneDrive for Business.</span></span> <span data-ttu-id="f174f-105">OneDrive 是儲存您想要控制存取權之個人工作檔案或機密業務檔案的好位置。</span><span class="sxs-lookup"><span data-stu-id="f174f-105">OneDrive is a good place to store personal work files or sensitive business files that you want to control access to.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="5b0a6-106">試試看吧！</span><span class="sxs-lookup"><span data-stu-id="5b0a6-106">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="f174f-106">試試看吧！</span><span class="sxs-lookup"><span data-stu-id="f174f-106">Try it!</span></span>
 
-1. <span data-ttu-id="5b0a6-107">在 [Windows] 中，選取 [  **開始** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-107">From Windows, select the  **Start** button.</span></span>
-2. <span data-ttu-id="5b0a6-108">搜尋 OneDrive，然後選取。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-108">Search for OneDrive, and select it.</span></span>
-3. <span data-ttu-id="5b0a6-109">輸入您的工作電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-109">Enter your work email address.</span></span>
-4. <span data-ttu-id="5b0a6-110">選取 [登  **入** ]，然後選取  **[下一步]**。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-110">Select  **Sign in** , and then select  **Next**.</span></span>
-5. <span data-ttu-id="5b0a6-111">流覽簡短的教學課程，然後選取 [  **開啟我的 OneDrive] 資料夾**。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-111">Go through the short tutorial, and then select  **Open my OneDrive folder**.</span></span> <span data-ttu-id="5b0a6-112">如果您也使用 OneDrive 的個人版本，您&#39;會在這裡看到。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-112">If you also use the personal version of OneDrive, you&#39;ll see it here.</span></span>
-6. <span data-ttu-id="5b0a6-113">在檔案瀏覽器中，移至您要複製的檔案。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-113">In File Explorer, go to the files you want to copy.</span></span>
-7. <span data-ttu-id="5b0a6-114">選取檔案，然後將檔案拖放至您的 OneDrive 資料夾。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-114">Select the files, and then drag and drop them into your OneDrive folder.</span></span> <span data-ttu-id="5b0a6-115">位於檔案旁邊的藍色圓形箭號表示它們&#39;會重新同步到雲端。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-115">Blue circular arrows beside your files mean that they&#39;re syncing to the cloud.</span></span> <span data-ttu-id="5b0a6-116">當他們&#39;執行同步處理時，會顯示綠色核取記號。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-116">When they&#39;re done syncing, green check marks are displayed.</span></span>
+1. <span data-ttu-id="f174f-107">在 Windows 中  **，選取開始** 按鈕。</span><span class="sxs-lookup"><span data-stu-id="f174f-107">From Windows, select the  **Start** button.</span></span>
+2. <span data-ttu-id="f174f-108">搜尋並選取 OneDrive。</span><span class="sxs-lookup"><span data-stu-id="f174f-108">Search for OneDrive, and select it.</span></span>
+3. <span data-ttu-id="f174f-109">輸入您的公司電子郵件地址。</span><span class="sxs-lookup"><span data-stu-id="f174f-109">Enter your work email address.</span></span>
+4. <span data-ttu-id="f174f-110">選取  **簽署，** 然後選取下  **一步**。</span><span class="sxs-lookup"><span data-stu-id="f174f-110">Select  **Sign in** , and then select  **Next**.</span></span>
+5. <span data-ttu-id="f174f-111">完成簡短的教學課程，然後選取 [  **開啟我的 OneDrive 資料夾**。</span><span class="sxs-lookup"><span data-stu-id="f174f-111">Go through the short tutorial, and then select  **Open my OneDrive folder**.</span></span> <span data-ttu-id="f174f-112">如果您也使用個人版 OneDrive，&#39;在這裡看到它。</span><span class="sxs-lookup"><span data-stu-id="f174f-112">If you also use the personal version of OneDrive, you&#39;ll see it here.</span></span>
+6. <span data-ttu-id="f174f-113">在檔案管中，前往您想要複製的檔案。</span><span class="sxs-lookup"><span data-stu-id="f174f-113">In File Explorer, go to the files you want to copy.</span></span>
+7. <span data-ttu-id="f174f-114">選取檔案，然後將檔案拖放到 OneDrive 資料夾。</span><span class="sxs-lookup"><span data-stu-id="f174f-114">Select the files, and then drag and drop them into your OneDrive folder.</span></span> <span data-ttu-id="f174f-115">檔案旁的藍色圓形箭號表示&#39;同步處理至雲端。</span><span class="sxs-lookup"><span data-stu-id="f174f-115">Blue circular arrows beside your files mean that they&#39;re syncing to the cloud.</span></span> <span data-ttu-id="f174f-116">同步&#39;之後，系統會顯示綠色勾選記號。</span><span class="sxs-lookup"><span data-stu-id="f174f-116">When they&#39;re done syncing, green check marks are displayed.</span></span>
 
-<span data-ttu-id="5b0a6-117">除了在本機使用 OneDrive 檔案之外，您還可以從網頁瀏覽器存取這些檔案：</span><span class="sxs-lookup"><span data-stu-id="5b0a6-117">In addition to working on your OneDrive files locally, you can access them from your web browser:</span></span>
+<span data-ttu-id="f174f-117">除了在網內處理 OneDrive 檔案之外，您還可以從網頁瀏覽器存取這些檔案：</span><span class="sxs-lookup"><span data-stu-id="f174f-117">In addition to working on your OneDrive files locally, you can access them from your web browser:</span></span>
 
-1. <span data-ttu-id="5b0a6-118">在您的網頁瀏覽器中，使用您的工作電子郵件登入 office.com。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-118">In your web browser, sign in to office.com with your work email.</span></span>
-2. <span data-ttu-id="5b0a6-119">選擇 [  **OneDrive**]。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-119">Choose  **OneDrive**.</span></span> <span data-ttu-id="5b0a6-120">您會列出所有檔案，您可以在任何電腦上的瀏覽器中處理這些檔案。</span><span class="sxs-lookup"><span data-stu-id="5b0a6-120">All of your files are listed, and you can work on them in the browser from any computer.</span></span>
+1. <span data-ttu-id="f174f-118">在網頁瀏覽器中，以公司office.com來使用帳戶。</span><span class="sxs-lookup"><span data-stu-id="f174f-118">In your web browser, sign in to office.com with your work email.</span></span>
+2. <span data-ttu-id="f174f-119">選擇 **[OneDrive。**</span><span class="sxs-lookup"><span data-stu-id="f174f-119">Choose  **OneDrive**.</span></span> <span data-ttu-id="f174f-120">系統會列出您的所有檔案，而且您可以在瀏覽器中從任何電腦處理這些檔案。</span><span class="sxs-lookup"><span data-stu-id="f174f-120">All of your files are listed, and you can work on them in the browser from any computer.</span></span>

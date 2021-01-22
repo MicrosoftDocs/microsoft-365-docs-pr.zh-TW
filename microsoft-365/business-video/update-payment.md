@@ -1,5 +1,5 @@
 ---
-title: 更新您的付款條件
+title: 更新​​您的付款方式
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何更新適用于商務用 Microsoft 365 的支付方式。
-ms.openlocfilehash: a7424b4d104b83921f46024a1493444c9de547d1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: 瞭解如何更新您的商務用 Microsoft 365 付款條件。
+ms.openlocfilehash: b29aea838e2682035ac56ef31291a5628854df79
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701728"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49925859"
 ---
-# <a name="update-yor-payment-method-for-your-subscription"></a><span data-ttu-id="3705a-103">更新您訂閱的 yor 支付方式</span><span class="sxs-lookup"><span data-stu-id="3705a-103">Update yor payment method for your subscription</span></span>
+# <a name="update-yor-payment-method-for-your-subscription"></a><span data-ttu-id="ea9d3-103">更新您訂閱的付款條件</span><span class="sxs-lookup"><span data-stu-id="ea9d3-103">Update yor payment method for your subscription</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-<span data-ttu-id="3705a-104">您可以輕鬆更新 Microsoft 365 商務版訂閱的支付方式。</span><span class="sxs-lookup"><span data-stu-id="3705a-104">You can easily update the payment method for your Microsoft 365 Business subscription.</span></span> <span data-ttu-id="3705a-105">您可以變更使用的信用卡、名稱或位址等詳細資料。</span><span class="sxs-lookup"><span data-stu-id="3705a-105">You can change details such as the credit card used, the name, or the address.</span></span>
+<span data-ttu-id="ea9d3-104">您可以輕鬆更新 Microsoft 365 商務版訂閱的付款條件。</span><span class="sxs-lookup"><span data-stu-id="ea9d3-104">You can easily update the payment method for your Microsoft 365 Business subscription.</span></span> <span data-ttu-id="ea9d3-105">您可以變更詳細資料，例如使用的信用卡、名稱或位址。</span><span class="sxs-lookup"><span data-stu-id="ea9d3-105">You can change details such as the credit card used, the name, or the address.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="3705a-106">試試看吧！</span><span class="sxs-lookup"><span data-stu-id="3705a-106">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="ea9d3-106">試試看吧！</span><span class="sxs-lookup"><span data-stu-id="ea9d3-106">Try it!</span></span>
 
-1. <span data-ttu-id="3705a-107">登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com)。</span><span class="sxs-lookup"><span data-stu-id="3705a-107">Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).</span></span>
-1. <span data-ttu-id="3705a-108">選取 [ **帳單**]，然後選取 [ **支付方式**]。</span><span class="sxs-lookup"><span data-stu-id="3705a-108">Select **Billing**, then **Payment methods**.</span></span> <span data-ttu-id="3705a-109">您將會看到您在檔案上的任何信用卡。</span><span class="sxs-lookup"><span data-stu-id="3705a-109">You'll see any credit cards that you have on file.</span></span>
-1. <span data-ttu-id="3705a-110">若要編輯現有的卡片：</span><span class="sxs-lookup"><span data-stu-id="3705a-110">To edit an existing card:</span></span>
-    1. <span data-ttu-id="3705a-111">選取卡片旁邊的三個點，然後選取 [ **編輯支付方式**]。</span><span class="sxs-lookup"><span data-stu-id="3705a-111">Select the three dots beside the card, and select **Edit payment method**.</span></span>
-    1. <span data-ttu-id="3705a-112">輸入您的卡的安全性代碼。</span><span class="sxs-lookup"><span data-stu-id="3705a-112">Enter the security code for your card.</span></span>
-    1. <span data-ttu-id="3705a-113">您可以變更到期日、名片上的名稱和其他詳細資料。</span><span class="sxs-lookup"><span data-stu-id="3705a-113">You can change the expiration date, the name on the card, and other details.</span></span>
-    1. <span data-ttu-id="3705a-114">當您完成變更時，請選取 [ **儲存**]。</span><span class="sxs-lookup"><span data-stu-id="3705a-114">When you're finished with your changes, select **Save**.</span></span>
-1. <span data-ttu-id="3705a-115">若要新增卡：</span><span class="sxs-lookup"><span data-stu-id="3705a-115">To add a new card:</span></span>
-    1. <span data-ttu-id="3705a-116">選取 [新增付款方式]。</span><span class="sxs-lookup"><span data-stu-id="3705a-116">Select **Add a payment method**.</span></span>
-    1. <span data-ttu-id="3705a-117">從 [ **選取支付** 方式] 下拉式清單中，選擇您要使用的付款條件。</span><span class="sxs-lookup"><span data-stu-id="3705a-117">Choose the payment method you want to use from the **Select a payment method** drop-down list.</span></span>
-    1. <span data-ttu-id="3705a-118">輸入卡片詳細資料，然後選取 [ **新增**]。</span><span class="sxs-lookup"><span data-stu-id="3705a-118">Enter the card details, and select **Add**.</span></span>
+1. <span data-ttu-id="ea9d3-107">登入 [Microsoft 365 系統管理中心](https://admin.microsoft.com)。</span><span class="sxs-lookup"><span data-stu-id="ea9d3-107">Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com).</span></span>
+1. <span data-ttu-id="ea9d3-108">選取 **帳單**，然後 **選取付款條件**。</span><span class="sxs-lookup"><span data-stu-id="ea9d3-108">Select **Billing**, then **Payment methods**.</span></span> <span data-ttu-id="ea9d3-109">系統就會顯示您的檔案中所有信用卡。</span><span class="sxs-lookup"><span data-stu-id="ea9d3-109">You'll see any credit cards that you have on file.</span></span>
+1. <span data-ttu-id="ea9d3-110">若要編輯現有的卡片：</span><span class="sxs-lookup"><span data-stu-id="ea9d3-110">To edit an existing card:</span></span>
+    1. <span data-ttu-id="ea9d3-111">選取卡片旁邊的三個點，然後選取編輯 **付款條件**。</span><span class="sxs-lookup"><span data-stu-id="ea9d3-111">Select the three dots beside the card, and select **Edit payment method**.</span></span>
+    1. <span data-ttu-id="ea9d3-112">輸入卡片的安全性驗證碼。</span><span class="sxs-lookup"><span data-stu-id="ea9d3-112">Enter the security code for your card.</span></span>
+    1. <span data-ttu-id="ea9d3-113">您可以變更到期日、信用卡上的名稱，以及其他詳細資料。</span><span class="sxs-lookup"><span data-stu-id="ea9d3-113">You can change the expiration date, the name on the card, and other details.</span></span>
+    1. <span data-ttu-id="ea9d3-114">完成變更後，請 **選取儲存。**</span><span class="sxs-lookup"><span data-stu-id="ea9d3-114">When you're finished with your changes, select **Save**.</span></span>
+1. <span data-ttu-id="ea9d3-115">若要新增卡片：</span><span class="sxs-lookup"><span data-stu-id="ea9d3-115">To add a new card:</span></span>
+    1. <span data-ttu-id="ea9d3-116">選取 [新增付款方式]。</span><span class="sxs-lookup"><span data-stu-id="ea9d3-116">Select **Add a payment method**.</span></span>
+    1. <span data-ttu-id="ea9d3-117">從選取付款條件下拉式清單中選擇您想要使用的付款條件。</span><span class="sxs-lookup"><span data-stu-id="ea9d3-117">Choose the payment method you want to use from the **Select a payment method** drop-down list.</span></span>
+    1. <span data-ttu-id="ea9d3-118">輸入卡片詳細資料， **然後選取新增**。</span><span class="sxs-lookup"><span data-stu-id="ea9d3-118">Enter the card details, and select **Add**.</span></span>

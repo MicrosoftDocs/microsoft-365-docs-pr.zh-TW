@@ -1,10 +1,10 @@
 ---
 title: 進階搜捕結構描述中的 EmailAttachmentInfo 表格
 description: 了解進階搜捕結構描述之 EmailAttachmentInfo 表格中的電子郵件附件資訊
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、表格、欄、資料類型、描述、EmailAttachmentInfo、網路郵件識別碼、寄件者、收件者、附件識別碼、附件名稱、惡意程式碼判定
+keywords: 進層搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參照、kusto、表格、欄、資料類型、描述、EmailAttachmentInfo、網路訊息識別碼、寄件者、收件者、附件識別碼、附件名稱、惡意程式碼惡意程式碼
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,48 +19,49 @@ mms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6d88303b34f78abc857e9aec749bf2f58090f43a
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.technology: m365d
+ms.openlocfilehash: c6cab4d813eba79e298d0082072888e3ef1ad1cd
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667646"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926999"
 ---
-# <a name="emailattachmentinfo"></a><span data-ttu-id="e7e25-104">EmailAttachmentInfo</span><span class="sxs-lookup"><span data-stu-id="e7e25-104">EmailAttachmentInfo</span></span>
+# <a name="emailattachmentinfo"></a><span data-ttu-id="d170e-104">EmailAttachmentInfo</span><span class="sxs-lookup"><span data-stu-id="d170e-104">EmailAttachmentInfo</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="e7e25-105">**適用範圍：**</span><span class="sxs-lookup"><span data-stu-id="e7e25-105">**Applies to:**</span></span>
-- <span data-ttu-id="e7e25-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e7e25-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="d170e-105">**適用範圍：**</span><span class="sxs-lookup"><span data-stu-id="d170e-105">**Applies to:**</span></span>
+- <span data-ttu-id="d170e-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d170e-106">Microsoft 365 Defender</span></span>
 
 
 
-<span data-ttu-id="e7e25-107">[！附注] `EmailAttachmentInfo` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含 Microsoft Defender for Office 365 所處理電子郵件附件的相關資訊。</span><span class="sxs-lookup"><span data-stu-id="e7e25-107">The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Microsoft Defender for Office 365.</span></span> <span data-ttu-id="e7e25-108">使用這個參考來建立從此表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="e7e25-108">Use this reference to construct queries that return information from this table.</span></span>
+<span data-ttu-id="d170e-107">進 `EmailAttachmentInfo` 位搜尋架構 [中的](advanced-hunting-overview.md) 表格包含由 Microsoft Defender for Office 365 處理之電子郵件之附件的資訊。</span><span class="sxs-lookup"><span data-stu-id="d170e-107">The `EmailAttachmentInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about attachments on emails processed by Microsoft Defender for Office 365.</span></span> <span data-ttu-id="d170e-108">使用這個參考來建立從此表格取回之資訊的查詢。</span><span class="sxs-lookup"><span data-stu-id="d170e-108">Use this reference to construct queries that return information from this table.</span></span>
 
-<span data-ttu-id="e7e25-109">如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="e7e25-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
+<span data-ttu-id="d170e-109">如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。</span><span class="sxs-lookup"><span data-stu-id="d170e-109">For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).</span></span>
 
-| <span data-ttu-id="e7e25-110">欄名稱</span><span class="sxs-lookup"><span data-stu-id="e7e25-110">Column name</span></span> | <span data-ttu-id="e7e25-111">資料類型</span><span class="sxs-lookup"><span data-stu-id="e7e25-111">Data type</span></span> | <span data-ttu-id="e7e25-112">描述</span><span class="sxs-lookup"><span data-stu-id="e7e25-112">Description</span></span> |
+| <span data-ttu-id="d170e-110">欄名稱</span><span class="sxs-lookup"><span data-stu-id="d170e-110">Column name</span></span> | <span data-ttu-id="d170e-111">資料類型</span><span class="sxs-lookup"><span data-stu-id="d170e-111">Data type</span></span> | <span data-ttu-id="d170e-112">描述</span><span class="sxs-lookup"><span data-stu-id="d170e-112">Description</span></span> |
 |-------------|-----------|-------------|
-| `Timestamp` | <span data-ttu-id="e7e25-113">datetime</span><span class="sxs-lookup"><span data-stu-id="e7e25-113">datetime</span></span> | <span data-ttu-id="e7e25-114">事件記錄的日期和時間。</span><span class="sxs-lookup"><span data-stu-id="e7e25-114">Date and time when the event was recorded</span></span> |
-| `AttachmentId` | <span data-ttu-id="e7e25-115">字串</span><span class="sxs-lookup"><span data-stu-id="e7e25-115">string</span></span> | <span data-ttu-id="e7e25-116">唯一電子郵件附件識別碼</span><span class="sxs-lookup"><span data-stu-id="e7e25-116">Unique email attachment identifier</span></span> |
-| `NetworkMessageId` | <span data-ttu-id="e7e25-117">字串</span><span class="sxs-lookup"><span data-stu-id="e7e25-117">string</span></span> | <span data-ttu-id="e7e25-118">Microsoft 365 產生之電子郵件的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="e7e25-118">Unique identifier for the email, generated by Microsoft 365</span></span> |
-| `SenderFromAddress` | <span data-ttu-id="e7e25-119">字串</span><span class="sxs-lookup"><span data-stu-id="e7e25-119">string</span></span> | <span data-ttu-id="e7e25-120">電子郵件用戶端上的電子郵件收件者看得到 [寄件者] 標題中的寄件者電子郵件地址</span><span class="sxs-lookup"><span data-stu-id="e7e25-120">Sender email address in the FROM header, which is visible to email recipients on their email clients</span></span> |
-| `RecipientEmailAddress` | <span data-ttu-id="e7e25-121">字串</span><span class="sxs-lookup"><span data-stu-id="e7e25-121">string</span></span> | <span data-ttu-id="e7e25-122">收件者的電子郵件地址，或通訊群組清單展開後之收件者的電子郵件地址</span><span class="sxs-lookup"><span data-stu-id="e7e25-122">Email address of the recipient, or email address of the recipient after distribution list expansion</span></span> |
-| `FileName` | <span data-ttu-id="e7e25-123">字串</span><span class="sxs-lookup"><span data-stu-id="e7e25-123">string</span></span> | <span data-ttu-id="e7e25-124">記錄動作已套用的檔案名稱</span><span class="sxs-lookup"><span data-stu-id="e7e25-124">Name of the file that the recorded action was applied to</span></span> |
-| `FileType` | <span data-ttu-id="e7e25-125">字串</span><span class="sxs-lookup"><span data-stu-id="e7e25-125">string</span></span> | <span data-ttu-id="e7e25-126">副檔名類型</span><span class="sxs-lookup"><span data-stu-id="e7e25-126">File extension type</span></span> |
-| `SHA256` | <span data-ttu-id="e7e25-127">字串</span><span class="sxs-lookup"><span data-stu-id="e7e25-127">string</span></span> | <span data-ttu-id="e7e25-128">記錄動作已套用的檔案 SHA-256。</span><span class="sxs-lookup"><span data-stu-id="e7e25-128">SHA-256 of the file that the recorded action was applied to.</span></span> <span data-ttu-id="e7e25-129">此欄位通常未填入，可取得時請使用 SHA1 欄。</span><span class="sxs-lookup"><span data-stu-id="e7e25-129">This field is usually not populated — use the SHA1 column when available.</span></span> |
-| `MalwareFilterVerdict` | <span data-ttu-id="e7e25-130">字串</span><span class="sxs-lookup"><span data-stu-id="e7e25-130">string</span></span> | <span data-ttu-id="e7e25-131">決定電子郵件是否包含惡意程式碼的電子郵件篩選堆疊：惡意程式碼或非惡意程式碼</span><span class="sxs-lookup"><span data-stu-id="e7e25-131">Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware</span></span> |
-| `MalwareDetectionMethod` | <span data-ttu-id="e7e25-132">字串</span><span class="sxs-lookup"><span data-stu-id="e7e25-132">string</span></span> | <span data-ttu-id="e7e25-133">用於偵測電子郵件中惡意程式碼的方法：反惡意程式碼引擎、檔信譽、安全附件</span><span class="sxs-lookup"><span data-stu-id="e7e25-133">Method used to detect malware in the email: Antimalware engine, File reputation, Safe Attachments</span></span> |
-| `SenderDisplayName` | <span data-ttu-id="e7e25-134">string</span><span class="sxs-lookup"><span data-stu-id="e7e25-134">string</span></span> | <span data-ttu-id="e7e25-135">顯示在通訊錄中之寄件者的名稱，通常是指定或名字、中間名首字母的組合，以及姓氏或姓的組合</span><span class="sxs-lookup"><span data-stu-id="e7e25-135">Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname</span></span> |
-| `SenderObjectId` | <span data-ttu-id="e7e25-136">string</span><span class="sxs-lookup"><span data-stu-id="e7e25-136">string</span></span> | <span data-ttu-id="e7e25-137">Azure AD 中寄件者帳戶的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="e7e25-137">Unique identifier for the sender’s account in Azure AD</span></span> |
-| `ThreatTypes` | <span data-ttu-id="e7e25-138">string</span><span class="sxs-lookup"><span data-stu-id="e7e25-138">string</span></span> | <span data-ttu-id="e7e25-139">從電子郵件篩選棧中判定電子郵件是否包含惡意程式碼、網路釣魚或其他威脅</span><span class="sxs-lookup"><span data-stu-id="e7e25-139">Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats</span></span> |
-| `ThreatNames` | <span data-ttu-id="e7e25-140">string</span><span class="sxs-lookup"><span data-stu-id="e7e25-140">string</span></span> | <span data-ttu-id="e7e25-141">找到惡意程式碼或其他威脅的偵測名稱</span><span class="sxs-lookup"><span data-stu-id="e7e25-141">Detection name for malware or other threats found</span></span> |
+| `Timestamp` | <span data-ttu-id="d170e-113">datetime</span><span class="sxs-lookup"><span data-stu-id="d170e-113">datetime</span></span> | <span data-ttu-id="d170e-114">事件記錄的日期和時間。</span><span class="sxs-lookup"><span data-stu-id="d170e-114">Date and time when the event was recorded</span></span> |
+| `AttachmentId` | <span data-ttu-id="d170e-115">字串</span><span class="sxs-lookup"><span data-stu-id="d170e-115">string</span></span> | <span data-ttu-id="d170e-116">唯一電子郵件附件識別碼</span><span class="sxs-lookup"><span data-stu-id="d170e-116">Unique email attachment identifier</span></span> |
+| `NetworkMessageId` | <span data-ttu-id="d170e-117">字串</span><span class="sxs-lookup"><span data-stu-id="d170e-117">string</span></span> | <span data-ttu-id="d170e-118">Microsoft 365 產生之電子郵件的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="d170e-118">Unique identifier for the email, generated by Microsoft 365</span></span> |
+| `SenderFromAddress` | <span data-ttu-id="d170e-119">字串</span><span class="sxs-lookup"><span data-stu-id="d170e-119">string</span></span> | <span data-ttu-id="d170e-120">電子郵件用戶端上的電子郵件收件者看得到 [寄件者] 標題中的寄件者電子郵件地址</span><span class="sxs-lookup"><span data-stu-id="d170e-120">Sender email address in the FROM header, which is visible to email recipients on their email clients</span></span> |
+| `RecipientEmailAddress` | <span data-ttu-id="d170e-121">字串</span><span class="sxs-lookup"><span data-stu-id="d170e-121">string</span></span> | <span data-ttu-id="d170e-122">收件者的電子郵件地址，或通訊群組清單展開後之收件者的電子郵件地址</span><span class="sxs-lookup"><span data-stu-id="d170e-122">Email address of the recipient, or email address of the recipient after distribution list expansion</span></span> |
+| `FileName` | <span data-ttu-id="d170e-123">字串</span><span class="sxs-lookup"><span data-stu-id="d170e-123">string</span></span> | <span data-ttu-id="d170e-124">記錄動作已套用的檔案名稱</span><span class="sxs-lookup"><span data-stu-id="d170e-124">Name of the file that the recorded action was applied to</span></span> |
+| `FileType` | <span data-ttu-id="d170e-125">字串</span><span class="sxs-lookup"><span data-stu-id="d170e-125">string</span></span> | <span data-ttu-id="d170e-126">副檔名類型</span><span class="sxs-lookup"><span data-stu-id="d170e-126">File extension type</span></span> |
+| `SHA256` | <span data-ttu-id="d170e-127">字串</span><span class="sxs-lookup"><span data-stu-id="d170e-127">string</span></span> | <span data-ttu-id="d170e-128">記錄動作已套用的檔案 SHA-256。</span><span class="sxs-lookup"><span data-stu-id="d170e-128">SHA-256 of the file that the recorded action was applied to.</span></span> <span data-ttu-id="d170e-129">此欄位通常未填入，可取得時請使用 SHA1 欄。</span><span class="sxs-lookup"><span data-stu-id="d170e-129">This field is usually not populated — use the SHA1 column when available.</span></span> |
+| `MalwareFilterVerdict` | <span data-ttu-id="d170e-130">字串</span><span class="sxs-lookup"><span data-stu-id="d170e-130">string</span></span> | <span data-ttu-id="d170e-131">決定電子郵件是否包含惡意程式碼的電子郵件篩選堆疊：惡意程式碼或非惡意程式碼</span><span class="sxs-lookup"><span data-stu-id="d170e-131">Verdict of the email filtering stack on whether the email contains malware: Malware, Not malware</span></span> |
+| `MalwareDetectionMethod` | <span data-ttu-id="d170e-132">字串</span><span class="sxs-lookup"><span data-stu-id="d170e-132">string</span></span> | <span data-ttu-id="d170e-133">用來偵測電子郵件中的惡意攻擊的方法：反惡意軟體引擎、檔案品質、安全附件</span><span class="sxs-lookup"><span data-stu-id="d170e-133">Method used to detect malware in the email: Antimalware engine, File reputation, Safe Attachments</span></span> |
+| `SenderDisplayName` | <span data-ttu-id="d170e-134">string</span><span class="sxs-lookup"><span data-stu-id="d170e-134">string</span></span> | <span data-ttu-id="d170e-135">顯示在通訊錄中的寄件者名稱，通常是指定或名字、中間名縮寫，以及姓氏或名字的組合</span><span class="sxs-lookup"><span data-stu-id="d170e-135">Name of the sender displayed in the address book, typically a combination of a given or first name, a middle initial, and a last name or surname</span></span> |
+| `SenderObjectId` | <span data-ttu-id="d170e-136">string</span><span class="sxs-lookup"><span data-stu-id="d170e-136">string</span></span> | <span data-ttu-id="d170e-137">在 Azure AD 中寄件者帳戶的唯一識別碼</span><span class="sxs-lookup"><span data-stu-id="d170e-137">Unique identifier for the sender’s account in Azure AD</span></span> |
+| `ThreatTypes` | <span data-ttu-id="d170e-138">string</span><span class="sxs-lookup"><span data-stu-id="d170e-138">string</span></span> | <span data-ttu-id="d170e-139">電子郵件篩選堆疊的詐騙者會檢查電子郵件是否包含惡意攻擊、網路釣魚或其他威脅</span><span class="sxs-lookup"><span data-stu-id="d170e-139">Verdict from the email filtering stack on whether the email contains malware, phishing, or other threats</span></span> |
+| `ThreatNames` | <span data-ttu-id="d170e-140">string</span><span class="sxs-lookup"><span data-stu-id="d170e-140">string</span></span> | <span data-ttu-id="d170e-141">找到的惡意攻擊或其他威脅的偵測名稱</span><span class="sxs-lookup"><span data-stu-id="d170e-141">Detection name for malware or other threats found</span></span> |
 
-## <a name="related-topics"></a><span data-ttu-id="e7e25-142">相關主題</span><span class="sxs-lookup"><span data-stu-id="e7e25-142">Related topics</span></span>
-- [<span data-ttu-id="e7e25-143">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="e7e25-143">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
-- [<span data-ttu-id="e7e25-144">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="e7e25-144">Learn the query language</span></span>](advanced-hunting-query-language.md)
-- [<span data-ttu-id="e7e25-145">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="e7e25-145">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
-- [<span data-ttu-id="e7e25-146">跨裝置、電子郵件、應用程式和身分識別搜捕</span><span class="sxs-lookup"><span data-stu-id="e7e25-146">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
-- [<span data-ttu-id="e7e25-147">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="e7e25-147">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
-- [<span data-ttu-id="e7e25-148">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="e7e25-148">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
+## <a name="related-topics"></a><span data-ttu-id="d170e-142">相關主題</span><span class="sxs-lookup"><span data-stu-id="d170e-142">Related topics</span></span>
+- [<span data-ttu-id="d170e-143">進階搜捕概觀</span><span class="sxs-lookup"><span data-stu-id="d170e-143">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="d170e-144">了解查詢語言</span><span class="sxs-lookup"><span data-stu-id="d170e-144">Learn the query language</span></span>](advanced-hunting-query-language.md)
+- [<span data-ttu-id="d170e-145">使用共用查詢</span><span class="sxs-lookup"><span data-stu-id="d170e-145">Use shared queries</span></span>](advanced-hunting-shared-queries.md)
+- [<span data-ttu-id="d170e-146">跨裝置、電子郵件、應用程式和身分識別搜捕</span><span class="sxs-lookup"><span data-stu-id="d170e-146">Hunt across devices, emails, apps, and identities</span></span>](advanced-hunting-query-emails-devices.md)
+- [<span data-ttu-id="d170e-147">了解結構描述</span><span class="sxs-lookup"><span data-stu-id="d170e-147">Understand the schema</span></span>](advanced-hunting-schema-tables.md)
+- [<span data-ttu-id="d170e-148">套用查詢最佳做法</span><span class="sxs-lookup"><span data-stu-id="d170e-148">Apply query best practices</span></span>](advanced-hunting-best-practices.md)
