@@ -1,10 +1,10 @@
 ---
-title: 規劃試驗 Microsoft 365 Defender 專案
-description: 規劃試驗 Microsoft 365 Defender 專案與專案關係人以管理預期，並確保成功的結果。
-keywords: Microsoft 威脅防護試驗，規劃試驗 Microsoft 威脅防護專案，評估 Microsoft 威脅防護中的實際執行、Microsoft 威脅防護試驗專案、網路安全性、高級持續性威脅、企業安全性、裝置、裝置、身分識別、使用者、資料、應用程式、事件、自動化調查和修正，以及高級搜尋
+title: 規劃您的試驗 Microsoft 365 Defender 專案
+description: 與專案關係人規劃您的試驗 Microsoft 365 Defender 專案，以管理期望並確保結果成功。
+keywords: Microsoft 威脅防護試驗計畫試驗 Microsoft 威脅防護專案，在生產階段評估 Microsoft 威脅防護、Microsoft 威脅防護試驗專案、網路安全性、進一步持續性威脅、企業安全性、裝置、裝置、身分識別、使用者、資料、應用程式、事件、自動化調查與補救、進一步搜尋
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +20,15 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 ms.topic: conceptual
-ms.openlocfilehash: 649f3e777a330e1b60faf4f3513a470b51e56a80
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: m365d
+ms.openlocfilehash: 8037b71fc41fb7fb0bdbfc829bad2ece1de6849b
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356976"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930171"
 ---
-# <a name="planning-your-pilot-microsoft-365-defender-project"></a>規劃試驗 Microsoft 365 Defender 專案 
+# <a name="planning-your-pilot-microsoft-365-defender-project"></a>規劃您的試驗 Microsoft 365 Defender 專案 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,62 +38,62 @@ ms.locfileid: "49356976"
 
 |![規劃](../../media/phase-diagrams/1-planning.png)<br/>規劃|[![準備](../../media/phase-diagrams/2-prepare.png)](prepare-mtpeval.md)<br/>[製備](prepare-mtpeval.md) | [![類比攻擊](../../media/phase-diagrams/3-simluate.png)](mtp-pilot-simulate.md)<br/>[類比攻擊](mtp-pilot-simulate.md) | [![結束和摘要](../../media/phase-diagrams/4-summary.png)](mtp-pilot-close.md)<br/>[結束和摘要](mtp-pilot-close.md)|
 |--|--|--|--|
-|*您在這裡！*| | | |
+|*您目前在這裡！*| | | |
 
 您目前正在規劃階段。
 
-為了確保您的試驗專案順利完成，您必須在開始時充分規劃並取得您的利益關係人的核准。 規劃的元素包括識別範圍、使用案例、需求及成功準則。
+為了確保您的試驗專案成功，您一開始必須徹底規劃並取得專案關係人核准。 規劃的元素包括識別範圍、使用案例、需求及成功準則。
 
-本指南會引導您瞭解如何規劃試驗專案。 
+本指南會逐步引導您逐步瞭解如何規劃試驗專案。 
 
 >[!IMPORTANT]
->為了獲得最佳結果，請盡可能請盡可能遵循試驗指示。
+>為獲得最佳結果，請盡可能遵循試驗指示。
 
 
 ## <a name="scope"></a>範圍
 
-試驗的範圍會根據您的環境及可接受的測試方法，決定測試的範圍。 以下是一些需要考慮的範例範圍：
-- 開發或測試環境，其中包含端點、伺服器、網域控制站。
-- 使用 Microsoft 365、Azure、Active Directory 服務、端點和伺服器的實際執行環境
+試驗範圍會根據您的環境和可接受的測試方法判斷測試範圍。 以下是一些要考慮的範例範圍：
+- 開發或測試環境，包括端點、伺服器、網網域控制站。
+- 使用 Microsoft 365、Azure、Active Directory 服務、端點和伺服器的生產環境
 
 >[!NOTE]
->如果您還沒有完整授權，您可以取得試用授權來 [評估 Microsoft 365 Defender](https://aka.ms/mtp-trial-lab) –計畫、準備、設定、設定和執行您的試驗專案。 您的利益關係人會在協助協助程式從開始到完成的過程中扮演重要角色。
+>如果您還沒有完整的授權，您可以取得試用授權來評估 [Microsoft 365 Defender](https://aka.ms/mtp-trial-lab) - 規劃、準備、設定、設定及執行試驗專案。 您的專案關係人將扮演重要角色，協助從開始到完成整個程式。
 
-若要評估的作業系統類型，也應根據組織組成的定義。 這可能包括下列各項： [Mac 端點](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements)、 [Linux 伺服器](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements)、 [Windows 10 端點](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions)、 [windows Server 2016](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions)。
+要評估的作業系統類型也應該根據組織架構來定義。 這可能包括下列各項[：Mac 端點](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac#system-requirements)[、Linux 伺服器](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-linux#system-requirements)[、Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions)端點[、Windows Server 2016。](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements#supported-windows-versions)
 
 ## <a name="use-cases"></a>使用案例
 
-使用案例代表所測試的工具應由其預定使用者使用的語句。 您可以從特定角色的觀點來表述使用者故事，例如 SOC 分析員。 例如：
-- 在 SOC 分析員中，我需要在網路中的裝置、使用者和信箱之間，查看、關聯、評估和管理警示和事件。 [事件管理]
-- 若為 SOC 分析員，我必須使用工具和程式來自動調查和回應我的網路中的惡意事件。 [自動 IR]
-- 若為 SOC 分析員，我必須從環境搜尋資料，以找出已知和潛在威脅，以及可疑活動。 [高級搜尋]
+使用案例代表測試控管如何供其預定使用者使用的語句。 這些可以從特定人員的觀點來視為使用者案例，例如 SOC 分析師。 例如：
+- 我是 SOC 分析師，我需要查看、關聯、評估和管理各裝置、使用者和網路中信箱的警示和事件。 [事件管理]
+- 我是 SOC 分析師，必須擁有能自動調查及回應網路惡意事件的工具與程式。 [自動 IR]
+- 我是 SOC 分析師，我必須搜尋我環境的資料，以尋找已知和潛在威脅，以及可疑的活動。 [進位搜尋]
 
-請記住，這些使用案例應該在定義之範圍的參數中建立。 例如，如果測試的範圍並未包含 Microsoft Cloud App Security 等工具的評估，則不應建立以這種方式做為資料來源的使用案例。
+請記住，這些使用案例應在已定義範圍的參數內建立。 例如，如果測試範圍不包含 Microsoft Cloud App 安全性等工具評估，則不應該建立以此功能為資料來源的使用案例。
 
 ## <a name="requirements"></a>需求
 
-您可以從使用案例清單中開始建立需求。 需求包含的功能必須具備工具才能滿足使用案例。 這些需求可以分解成諸如設定與維護、支援整合的類別，以及功能特有的需求，例如搜尋功能和建立自訂警示的能力。
+從使用案例清單中，您可以開始建立需求。 需求包括工具必須符合使用案例的功能。 這些需求可以細分為類別，例如組式與維護、整合支援，以及搜尋能力及建立自訂警示等功能特定需求。
 
 ## <a name="test-plan"></a>測試計劃
 
-根據需求的不同，可能會適當的測試方法。 例如，如果需求是評估自動修復的 efficacy，則測試計劃必須包含一些步驟，以產生在 Microsoft 365 Defender 內觸發自動修正動作 (s) 的行為。 如果需要偵測到特定行為或攻擊，測試可能需要更多步驟。 其重點是準備正確地測試您的需求。
+視需求不同，可能適合使用不同的測試方法。 例如，如果要求要評估自動化補救的效益，測試計劃必須包含步驟來產生行為 (s) ，以觸發 Microsoft 365 Defender 內的自動化補救動作。 如果需求是偵測特定行為或攻擊，則測試可能會涉及更多步驟。 重點就是制定計畫，以正確測試您的需求。
 
 ## <a name="success-criteria"></a>成功準則
 
-成功準則最後是設定為針對您要測試的專案進行度量的條碼。 不論是針對其他工具，還是針對該) 測試 Microsoft 365 Defender (或任何其他技術，都必須有一些可定量的準則，以判斷該工具所提供的值。 根據範圍、需求和測試計劃，成功的準則會決定如何對測試進行評分。 根據您的需求，這應該不會有較低的透過或失敗的加權計分。 例如，若要成功，工具可能需要在您識別的某些重要區域中排名超過80%。
+成功準則最終還是會設定成標準，以根據您測試的結果來進行評估。 無論您是要針對其他工具或本身測試 Microsoft 365 Defender (或其他任何相關技術) ，都必須有一些可量化的準則來判斷工具提供的值。 根據範圍、需求和測試計劃，成功準則會決定如何為測試打分數。 這應該不會是通過或失敗，而應根據您的需求而更重計算加權分數。 例如，為了成功，工具可能需要在所識別的某些重要區域打到 80% 以上。
 
 ## <a name="scorecard"></a>計分 卡
 
-讓方案的所有元素一起使用的一種方式，也可以建立計分卡。 請參閱下方的範例計分卡：
+將計畫的所有元素彙集在一起的方法之一，就是建立計分卡。 請參閱下方的範例計分卡：
 
-| 使用案例 | 需求 | 設定需求 | 測試計劃 | 預期的結果 | 測試狀態 | 分數 | 附註 |
+| 使用案例 | 需求 | 組配置需求 | 測試計劃 | 預期的結果 | 測試狀態 | 分數 | 注意事項 |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
-|事件管理|-Microsoft 365 Defender  </br></br>-Microsoft Defender 身分識別 </br></br>-Microsoft Defender for Endpoint </br></br>-Microsoft Cloud App Security (optional) |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作 |[類比攻擊](mtp-pilot-simulate.md) <br></br>[調查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |調查人員可以瞭解該事件的範圍與影響，並管理該事件||||
-|AutoIR|-Microsoft 365 Defender </br></br>-Microsoft Defender 身分識別 </br></br>-Microsoft Defender for Endpoint |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作 <br>啟用 AutoIR  |[類比攻擊](mtp-pilot-simulate.md) <br></br>[自動調查](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |Microsoft 365 Defender 會自動修正警示和事件||||
-|進階搜捕|-Microsoft 365 Defender </br></br>-Microsoft Defender for Endpoint </br></br>-適用于 Office 的 Microsoft Defender 365 |如需詳細資訊，請參閱 [預備課程](https://aka.ms/mtp-trial-lab) 及設定準備工作|[高級搜尋案例](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |調查人員可以透過高級搜尋、切換至受影響的實體，以及建立自訂的偵測，尋找資料||||
+|事件管理|- Microsoft 365 Defender  </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender 端點 </br></br>- Microsoft Cloud App 安全性 (選擇性) |請參閱 [準備](https://aka.ms/mtp-trial-lab) 、設定及設定的先決條件，以瞭解詳細資料 |[類比攻擊](mtp-pilot-simulate.md) <br></br>[調查事件](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |使用者可以瞭解事件的範圍和影響，並管理事件||||
+|AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender 端點 |請參閱 [準備](https://aka.ms/mtp-trial-lab) 、設定及設定的先決條件，以瞭解詳細資料 <br>啟用 AutoIR  |[類比攻擊](mtp-pilot-simulate.md) <br></br>[自動化調查](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |Microsoft 365 Defender 會自動修復警示和事件||||
+|進階搜捕|- Microsoft 365 Defender </br></br>- Microsoft Defender for Endpoint </br></br>-Microsoft Defender for Office 365 |請參閱 [準備](https://aka.ms/mtp-trial-lab) 、設定及設定的先決條件，以瞭解詳細資料|[進位搜尋案例](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |小動物可以透過進一步搜尋、樞紐分析受影響實體，以及建立自訂偵測來尋找資料||||
 
 
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 |![準備階段](../../media/mtp/prep.png) <br>[準備階段](prepare-mtpeval.md) | 準備您的 Microsoft 365 Defender 試驗環境
 |:-------|:-----|

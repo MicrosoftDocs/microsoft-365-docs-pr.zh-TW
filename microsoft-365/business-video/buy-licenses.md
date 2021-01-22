@@ -16,35 +16,36 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何購買新的 Microsoft 365 for business 授權。
-ms.openlocfilehash: a4bc66188b064227821ddc66cc764c83caad5f64
-ms.sourcegitcommit: 4482c174e0e68e0fbbc7ad9ef6b0e78dc34ac85a
+description: 瞭解如何購買新的商務用 Microsoft 365 授權。
+ms.openlocfilehash: 7cec05256cb67c82caf367c10ac10546cb63b369
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49784238"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927451"
 ---
 # <a name="buy-microsoft-365-licenses"></a>購買 Microsoft 365 授權
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE?autoplay=false]
 
-當您新增使用者時，您將需要購買更多適用于這些使用者的 Microsoft 365 授權。
+當您新增使用者時，您必須為這些使用者購買更多 Microsoft 365 授權。
 
 ## <a name="try-it"></a>試試看吧！
 
-1. 在 Microsoft 365 系統管理中心中，選擇[帳單 **]，然後** 選取您的訂閱。
-1. 選擇 [ **購買授權**]。
-1. 輸入您要購買的授權數目。
+1. 在 Microsoft 365 系統管理中心， **選擇帳單**、您的 **產品**，然後選取您的訂閱。
+1. 選擇 **購買授權**。
+1. 輸入您想要購買授權的數量。
 1. 選取 [儲存]。
 1. 然後關閉視窗。
-1. 新的授權會新增至您的訂閱。
-1. 若要指派新的授權，請選取 [ **指派授權**]。
-1. 然後再 **指派授權** 。
-1. 輸入您要指派授權的使用者名稱，然後選取名稱。
-1. 決定您要讓使用者擁有哪些應用程式或服務，然後選取 [ **指派**]。
-1. 授權現在已指派給使用者。
+1. 新的授權會新增到您的訂閱中。
+1. 若要指派新授權，請選取指派 **授權**。
+1. 然後， **再次指派** 授權。
+1. 輸入您想要指派授權的使用者名稱，然後選取該名稱。
+1. 決定您想要使用者擁有哪些 App 或服務， **然後選取指派**。
+1. 授權現在會指派給使用者。

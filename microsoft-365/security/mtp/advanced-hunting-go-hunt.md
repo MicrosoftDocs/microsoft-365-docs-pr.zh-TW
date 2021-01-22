@@ -1,10 +1,10 @@
 ---
-title: 取得實體的相關資訊以進行搜尋
-description: 瞭解如何使用「搜尋」工具，透過「高級搜尋」快速查詢實體或事件的相關資訊。
-keywords: 高級搜尋、事件、資料透視、實體、搜尋、相關事件、威脅搜尋、網路威脅搜尋、搜尋、查詢、遙測、Microsoft 365、Microsoft 威脅防護
+title: 使用搜尋取得實體的相關資訊
+description: 瞭解如何使用搜尋工具來快速查詢實體或事件的相關相關資訊，以使用進一次搜尋。
+keywords: 進層搜尋、事件、樞紐、實體、搜尋、相關事件、威脅搜尋、網路威脅搜尋、搜尋、查詢、遙測、Microsoft 365、Microsoft 威脅防護
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 9ddad74d179ac16a25640e2bdf4ed4906f920102
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 9e707fe8b3dff40d0698630cd0592b297042e5fb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846877"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929500"
 ---
-# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>使用 go 搜尋快速尋找實體或事件資訊
+# <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>使用搜尋快速搜尋實體或活動資訊
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,29 +35,29 @@ ms.locfileid: "48846877"
 適用於：
 - Microsoft 365 Defender
 
-使用 [ *尋找* ] [搜尋] 動作，您可以使用強大查詢的 [高級搜尋](advanced-hunting-overview.md) 功能，快速調查事件及各種實體類型。 此巨集指令會自動執行高級搜尋查詢，以尋找所選取事件或實體的相關資訊。
+有了 *搜尋動作* ，您可以使用功能強大的查詢型進一步搜尋功能，快速調查事件 [及](advanced-hunting-overview.md) 各種實體類型。 此動作會自動執行進一步搜尋查詢，以尋找所選事件或實體的相關相關資訊。
 
-每當顯示事件或實體詳細資料時，就會在安全性中心的各個區段中使用「 *繼續搜尋* 」動作。 例如，您可以使用下列各節的「 *繼續搜尋* 」：
+每當 *顯示事件* 或實體詳細資料時，可在安全性中心的各個區段使用搜尋動作。 例如，您可以使用下列 *各* 節中的搜尋功能：
 
-- 在 [ [事件] 頁面](investigate-incidents.md#incident-overview)中，您可以查看使用者、裝置及其他許多與事件相關聯之實體的詳細資料。 當您選取實體時，您會收到其他資訊，以及您在該 entitity 上可以採取的各種動作。 在下列範例中，會選取一個信箱，顯示信箱的詳細資料，也就是尋找該信箱的詳細資訊的選項。
+- 您可以在 [事件頁面中](investigate-incidents.md#incident-overview)，查看與事件相關的使用者、裝置及許多其他實體詳細資料。 當您選取實體時，您取得其他資訊，以及您可針對該實體執行的各種動作。 在下面的範例中，已選取一個信箱，其中顯示該信箱的詳細資訊，以及尋找信箱詳細資訊的選項。
 
-    ![使用 [搜尋] 選項顯示信箱詳細資料的影像](../../media/mtp-ah/go-hunt-email.png)
+    ![顯示信箱詳細資料與搜尋選項的影像](../../media/mtp-ah/go-hunt-email.png)
 
-- 在 [事件] 頁面中，您也可以在 [證據] 索引標籤下存取實體清單。選取其中一個實體時，會提供一個選項，以快速尋找該實體的相關資訊。
+- 在事件頁面中，您也可以存取證據分頁下的實體清單。選取其中一個實體，即可提供快速搜尋該實體相關資訊的選項。
 
-    ![在 [證據] 索引標籤中，以 [搜尋] 選項顯示選取檔案的影像](../../media/mtp-ah/go-hunt-evidence-file.png)
+    ![顯示已選取檔案的影像，以及證據中之搜尋選項](../../media/mtp-ah/go-hunt-evidence-file.png)
 
 
-- 當您查看裝置的時程表時，您可以選取時程表中的事件，以查看有關該事件的其他資訊。 選取事件後，您可以在 [高級搜尋] 中取得搜尋其他相關事件的選項。
+- 檢視裝置的時程表時，您可以選取時程表中的事件，以檢視該事件的其他相關資訊。 選取事件後，您可以選擇在進一次搜尋中尋找其他相關的事件。
 
-    ![顯示 [搜尋] 選項的事件詳細資料的影像](../../media/mtp-ah/go-hunt-event.png)
+    ![顯示活動詳細資料與搜尋選項的影像](../../media/mtp-ah/go-hunt-event.png)
 
-選取 [ **搜尋** ] 或 [ **搜尋相關的事件** ] 會傳送不同的查詢，視您是否已選取實體或事件而定。
+選取 **搜尋** 或 **搜尋相關** 事件會依據您是否選取實體或事件，而傳遞不同的查詢。
 
-## <a name="query-for-entity-information"></a>查詢實體資訊
-當您使用「 *搜尋* 以查詢使用者、裝置或任何其他類型的實體」的相關資訊時，查詢會檢查涉及該實體之任何事件的所有相關架構資料表。 若要讓結果保持可管理，查詢的範圍會設定為與過去30天（包含實體並與該事件相關聯）的最早活動的時段。
+## <a name="query-for-entity-information"></a>實體資訊的查詢
+使用 *搜尋來* 查詢使用者、裝置或任何其他實體類型相關資訊時，查詢會檢查所有涉及該實體之事件的相關架構資料表。 若要讓結果易於管理，查詢的範圍會與過去 30 天內與實體相關且與事件相關聯的最早活動期間左右。
 
-以下是裝置的 go 搜尋查詢範例：
+以下是裝置搜尋查詢的範例：
 
 ```kusto
 let selectedTimestamp = datetime(2020-06-02T02:06:47.1167157Z);
@@ -70,11 +71,11 @@ and DeviceName == deviceName
 | take 100
 ```
 ### <a name="supported-entity-types"></a>支援的實體類型
-您可以在選取下列任何實體類型之後，使用 [ *搜尋* ]：
+選取以下 *任何實體類型* 後，就可以使用搜尋：
 
 - 檔案
 - 電子郵件
-- 電子郵件聚簇
+- 電子郵件組
 - 信箱
 - 使用者
 - 裝置
@@ -82,7 +83,7 @@ and DeviceName == deviceName
 - URL
 
 ## <a name="query-for-event-information"></a>事件資訊的查詢
-當您使用「 *搜尋* 以查詢」時程表事件的相關資訊時，查詢會檢查所選事件時間四周其他事件的所有相關架構資料表。 例如，下列查詢會列出在相同裝置上的相同時段內發生的各種架構表格事件：
+使用 *搜尋來* 查詢時程表事件相關資訊時，查詢會檢查所有與所選事件期間相關的架構資料表，以尋找其他事件。 例如，下列查詢會列出相同裝置上同一時期發生各種架構資料表中的事件：
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event
@@ -96,14 +97,14 @@ search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEv
 ```
 
 ## <a name="adjust-the-query"></a>調整查詢
-您可以使用一些 [查詢語言](advanced-hunting-query-language.md)的知識，將查詢調整為您的喜好設定。 例如，您可以調整此線，它會決定時間範圍的大小：
+具備查詢語言 [相關知識後](advanced-hunting-query-language.md)，就可以根據自己的喜好調整查詢。 例如，您可以調整此線，這決定時間視窗的大小：
 
 ```kusto
 Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 ```
 
-除了修改查詢以取得更相關的結果之外，您還可以：
-- [以圖表形式查看結果](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
+除了修改查詢以取得更相關的結果，您也可以：
+- [以圖表查看結果](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
 - [建立自訂偵測規則](custom-detection-rules.md)
 
 ## <a name="related-topics"></a>相關主題

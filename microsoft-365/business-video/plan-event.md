@@ -1,5 +1,5 @@
 ---
-title: 使用 Microsoft Planner 規劃事件
+title: 使用 Microsoft Planner 規劃活動
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,53 +16,54 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 瞭解如何使用 Microsoft planner 規劃事件。
-ms.openlocfilehash: f5ee4e63579c2c5f6493e16d27b7102d3b99b6d1
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+description: 瞭解如何使用 Microsoft Planner 規劃活動。
+ms.openlocfilehash: d978232dffaede882e81a491b4d927183781aa0f
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701759"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928090"
 ---
-# <a name="use-microsoft-planner-to-plan-an-event"></a>使用 Microsoft Planner 規劃事件
+# <a name="use-microsoft-planner-to-plan-an-event"></a>使用 Microsoft Planner 來規劃活動
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c8a41e1a-c30d-4adb-ab32-6eac922d0ec0?autoplay=false]
 
 ## <a name="try-it"></a>試試看吧！
 
-使用 Microsoft Planner 規劃事件，例如追蹤產品投放市場。
+使用 Microsoft Planner 來規劃活動，例如追蹤產品上市。
 
-### <a name="work-with-buckets"></a>使用桶
+### <a name="work-with-buckets"></a>使用容器
 
-使用 bucket 依類型排序任務，例如事件規劃、行銷和 ad 宣傳品，以及 PR。
+使用容器來按類型排序工作，例如活動規劃、行銷和廣告活動，以及 PR。
 
-1. 選取 [新增  **桶**  ]，然後輸入新的任務類別。
-2. 選取  **+**  可將任務新增至桶，然後輸入名稱。
-3. 選取 [  **新增任務**]。
+1. 選取  **新增新容器**  ，然後輸入新的工作類別。
+2. 選取  **+**  以將工作新增到一個容器，然後輸入名稱。
+3. 選取  **新增工作**。
 
 ### <a name="work-with-labels"></a>使用標籤
 
 使用標籤來查看需要您注意的工作。
 
-1. 輸入標籤的名稱。
-2. 選取彩色方塊以移除或新增標籤至任務。
+1. 輸入您標籤的名稱。
+2. 選取彩色方塊以移除或新增標籤至工作。
 
 ## <a name="add-a-comment"></a>Add a comment
 
-發佈批註，以與指派給他們的任務一起討論。
+張貼批註來與受指派人員討論工作。
 
-1. 在 [  **批註**  ] 方塊中輸入訊息。
-2. 選取 [  **傳送**]。
+1. 在批註方塊中  **輸入**  訊息。
+2. 選取  **傳送**。
 
-### <a name="keep-track-of-tasks"></a>追蹤任務
+### <a name="keep-track-of-tasks"></a>追蹤工作
 
-您可以使用  **圖表**  和  **版塊**  視圖來監視每個小組成員和整個專案的進度，或排序及組織任務。
+使用  **圖表**  和  **電路板**  視圖來監控每個團隊成員和整體專案的進度，或排序及組織工作。
 
-- 選取 [  **圖表**]，再選取 [ **群組依據**]，最後查看 [ **到期日**  ]，以查看後續的任務。
-- 選取 [  **電路板**]，然後 **按 [群組依據**] **，最後按進度排序**  任務。
+- 選取 **圖表**，**然後按群組，** 最後選取到期日，以查看下一個要到期的工作。
+- 選取  **區**， **然後按群組**，最後 **選取進度，**  以按照進度排序工作。
 
-**附注：**  工作是以 [  **未開始**]、[  **正在進行** 中] 或 [  **已完成**  ] 的方式進行組織，這樣您就會知道何時準備好啟動產品。
+**注意：** 工作會按 **尚未** 開始、進行中和已完成整理，這樣您即可知道何時準備好要啟動產品。

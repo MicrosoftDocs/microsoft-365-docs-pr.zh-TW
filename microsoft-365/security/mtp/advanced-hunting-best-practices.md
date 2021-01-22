@@ -1,10 +1,10 @@
 ---
-title: Microsoft 365 Defender 中的高級搜尋查詢最佳作法
-description: 瞭解如何使用高級搜尋來構建快速、有效率及無錯誤的威脅搜尋查詢
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，search，query，遙測，schema，kusto，避免超時，命令列，程式識別碼，優化，最佳作法，剖析，聯結，摘要
+title: Microsoft 365 Defender 中的進位搜尋查詢最佳做法
+description: 瞭解如何建構快速、有效率且無錯誤的威脅搜尋查詢，並用於進位搜尋
+keywords: 進一步搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構、kusto、避免超時、命令列、程式識別碼、優化、最佳做法、剖析、聯結、摘要
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 2b2ac519e63e5a7cba648dba67d2780bb7600e14
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: cc6110cdd7dd71f80f6897cfbb0026ccce301cf7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843069"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928471"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>進階搜捕查詢最佳做法
 
@@ -34,17 +35,17 @@ ms.locfileid: "48843069"
 **適用於：**
 - Microsoft 365 Defender
 
-套用這些建議以快速取得結果，並避免執行複雜的查詢時發生超時。 如需提高查詢效能的更多指導方針，請參閱 [Kusto 查詢最佳做法](https://docs.microsoft.com/azure/kusto/query/best-practices)。
+請執行這些建議以更快獲得結果，並避免執行複雜查詢時執行超時。 如需提高查詢效能的更多指導方針，請參閱 [Kusto 查詢最佳做法](https://docs.microsoft.com/azure/kusto/query/best-practices)。
 
 ## <a name="understand-cpu-resource-quotas"></a>瞭解 CPU 資源配額
-視其大小而定，每個租使用者都有權存取一組為執行高級搜尋查詢所指派的 CPU 資源量。 如需各種服務限制的詳細資訊，請 [閱讀相關的高級搜尋配額和使用參數](advanced-hunting-limits.md)。
+根據租使用者的大小，每個租使用者可以存取配置給執行進位搜尋查詢的一組 CPU 資源。 有關各種服務限制的詳細資訊， [請參閱進位搜尋配額及使用參數](advanced-hunting-limits.md)。
 
-定期執行多個查詢的客戶應追蹤工作量，並套用本文中的優化指導，以盡可能減少超出配額或使用參數所產生的中斷。
+定期執行多個查詢的客戶應追蹤使用狀況，並運用本文中的優化指引，將超出配額或使用量參數所產生的干擾降至最低。
 
 ## <a name="general-optimization-tips"></a>一般優化秘訣
 
-- [ **新增查詢大小** ]：如果您懷疑查詢會傳回大型結果集，請先使用 [count 運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator)來評估。 使用 [限制](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) 或其同義字 `take` 以避免大型結果集。
-- **及早套用篩選器** —套用時間篩選和其他篩選器，以減少資料集，尤其是在使用轉換和分析功能之前（如 [子字串 ( # B1](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction)、 [取代 ( # B3](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction)、 [trim ( # B5](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction)、 [toupper ( # B7](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)或 [parse_json ( # B9](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)）。 在下列範例中，會在篩選運算子減少記錄數目後，使用 [ ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction) 的分析函數 extractjson。
+- **調整新查詢的大小**— 如果您懷疑查詢會回回大型結果集，首先使用計數運算子 [進行評估](https://docs.microsoft.com/azure/data-explorer/kusto/query/countoperator)。 使用 [限制](https://docs.microsoft.com/azure/data-explorer/kusto/query/limitoperator) 或其同名避免 `take` 產生大型結果集。
+- 提早 **套** 用篩選 -套用時間篩選及其他篩選，以減少資料集，尤其是在使用轉換及剖析函數 #B0 例如子字串 [ () 、](https://docs.microsoft.com/azure/data-explorer/kusto/query/substringfunction)取代 [ () 、](https://docs.microsoft.com/azure/data-explorer/kusto/query/replacefunction)修剪 [ () 、toupper](https://docs.microsoft.com/azure/data-explorer/kusto/query/trimfunction) [ ()](https://docs.microsoft.com/azure/data-explorer/kusto/query/toupperfunction)或 [parse_json () 之前 #C3。](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction) 在下列範例中，當篩選運算子減少記錄數目之後，會使用剖析函數解壓縮 ( [) 。](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractjsonfunction)
 
     ```kusto
     DeviceEvents
@@ -54,20 +55,20 @@ ms.locfileid: "48843069"
     | extend DriveLetter = extractjson("$.DriveLetter", AdditionalFields)
      ```
 
-- **具有節拍** ：若要避免在非必要字詞中搜尋子字串，請使用 `has` 運算子，而不要使用 `contains` 。 [瞭解字串運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
-- **在特定欄中查看** --查看特定欄，而不是在所有欄中執行完整的文字搜尋。 請勿使用 `*` 以檢查所有欄。
-- **以區分大小寫的速度** -區分大小寫的搜尋更為具體，而且通常更為具性能。 區分大小寫的 [字串運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)（例如 `has_cs` 和）的名稱 `contains_cs` 一般為 `_cs` 。 您也可以使用區分大小寫的 equals 運算子， `==` 而不要使用 `=~` 。
-- **剖析：請** 盡可能使用 [parse 運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator) 或類似 [parse_json ( # B1](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction)的分析函數。 避免 `matches regex` 使用正則運算式的字串運算子或 [析取 ( # A1 函數](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction)。 保留使用正則運算式以取得更複雜的案例。 [閱讀有關分析函數的詳細資訊](#parse-strings)
-- **篩選資料表不是運算式** -如果您可以在資料表欄上篩選，請勿在計算欄上篩選。
-- **無三個字元的字詞** ，避免使用包含三個字元或更少的字詞來比較或篩選。 這些字詞不會編制索引，而且符合這些字詞將需要更多資源。
-- **專案可選擇性地** 透過只投影您所需的欄，使您的結果更容易理解。 在執行 [加入](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) 或類似作業之前，先投射特定欄，也有助於提升效能。
+- **包含 -** 若要避免不必要地搜尋字詞內的子字串，請使用 `has` 運算子，而不要 `contains` 。 [瞭解字串運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)
+- **查看特定欄**—查看特定欄，而不是在所有資料行中執行完整文字搜尋。 不檢查 `*` 所有欄。
+- **針對速度區分大小寫**- 區分大小寫的搜尋更特定且通常更具有執行性。 區分大小寫的字串 [運算子名稱](https://docs.microsoft.com/azure/data-explorer/kusto/query/datatypes-string-operators)，例如 `has_cs` and `contains_cs` ，通常以 `_cs` . 您也可以使用區分大小寫的等號運算子來 `==` 取代 `=~` 。
+- **剖析#B0** 請勿解壓縮 #C1—[](https://docs.microsoft.com/azure/data-explorer/kusto/query/parseoperator)盡可能使用剖析運算子或剖析函數 #B2 例如 [parse_json ( #C3。](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction) 避免 `matches regex` 使用字串運算子或 [解壓縮 () 函數](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction)，這兩者都是使用正則運算式。 針對更複雜的情況，請保留使用正則運算式。 [瞭解更多關於剖析函數](#parse-strings)
+- **篩選表格而不是運算式**—如果可以篩選資料表資料行，就不要篩選計算結果欄。
+- **無三個字元的字詞**- 請避免使用三個字元以下的字詞來比較或篩選。 這些詞彙未編制索引，因此必須比對更多資源。
+- **選擇性 Project**- 只預測您需要的欄，讓結果更容易理解。 在執行聯集 [或類似作業](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) 前先預測特定資料行，也可協助改善績效。
 
 ## <a name="optimize-the-join-operator"></a>優化 `join` 運算子
-[Join 運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator)會透過比對指定的欄中的值，合併兩個數據表中的資料行。 套用這些秘訣以優化使用此操作符的查詢。
+聯 [集運算子會](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) 比對指定資料行中的值，以合併兩個數據表中的資料列。 請使用這些秘訣來優化使用這個運算子的查詢。
 
-- 向 **左縮小的表格** ，運算子會將 `join` join 語句左邊表格中的記錄與右邊的記錄進行比較。 將較小的表格保留在左邊，必須符合較少的記錄，進而加速查詢。 
+- **左方較小的資料表**—運算子將連接語句左側資料表中的記錄與 `join` 右邊的記錄進行比對。 左側有較小的資料表後，需要比對的記錄就會變少，因而能加快查詢的速度。 
 
-    在下表中，我們 `DeviceLogonEvents` 會在加入帳戶 sid 之前，先將左側表格縮小為只涵蓋三個特定裝置 `IdentityLogonEvents` 。
+    在下表中，我們先將左側表格縮小為只涵蓋三部特定裝置，然後再使用帳戶 `DeviceLogonEvents` `IdentityLogonEvents` SIDs 加入左側資料表。
  
     ```kusto
     DeviceLogonEvents 
@@ -80,9 +81,9 @@ ms.locfileid: "48843069"
     on AccountSid
     ```
 
-- 在將每個相符的列傳回給右表之前， **請先使用內部聯接** 口味（預設的 [join 口味](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors)）及左表中的 [innerunique-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor)鍵 deduplicates 列。 如果左表的多個資料列的索引鍵具有相同的值 `join` ，這些資料列將會被重複的資料列，保留每個唯一值的單一隨機列。
+- 使用內部聯集型 **：預設** 連接 [](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors)詞型或 [innerunique-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#innerunique-join-flavor) deduplicates rows by join key to the join key for each match to right table. 如果左側資料表有多個資料列的索引鍵值相同，這些列將會重復資料，以針對每個唯一值保留單一 `join` 隨機列。
 
-    此預設行為會從左資料表中留下重要資訊，可提供有用的洞察力。 例如，下列查詢只會顯示一個包含特定附件的電子郵件，即使該相同附件是使用多封電子郵件訊息傳送：
+    此預設行為會從左側資料表中排除重要資訊，以提供有用的深入見解。 例如，以下查詢只會顯示一封包含特定附件的電子郵件，即使該相同附件是使用多封電子郵件訊息送出：
 
     ```kusto
     EmailAttachmentInfo
@@ -91,7 +92,7 @@ ms.locfileid: "48843069"
     | join (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```
 
-    若要解決這項限制，我們會套用 [內部聯接](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) 口味，其方式是指定 `kind=inner` [顯示左表格中的所有列的右側都有相符的值：
+    若要解決這項限制，我們套用[](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)內部聯集型，指定在左側資料表中顯示所有列，並向右顯示 `kind=inner` 符合的值：
     
     ```kusto
     EmailAttachmentInfo
@@ -99,9 +100,9 @@ ms.locfileid: "48843069"
     | where Subject == "Document Attachment" and FileName == "Document.pdf"
     | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```
-- **從時間範圍加入記錄** ：在調查安全性事件時，分析程式會尋找在相同時間週期內發生的相關事件。 使用相同的方法， `join` 也就是減少要檢查的記錄數目的效能的優點。
+- **從時間視窗加入記錄**- 在調查安全性事件時，分析師會尋找同一時段內發生的相關事件。 使用相同方法也可減少要檢查的記錄數目，以提升 `join` 效果。
     
-    下列查詢會檢查在接收惡意檔30分鐘內的登入事件：
+    以下查詢會檢查在收到惡意檔案的 30 分鐘內是否發生登入事件：
 
     ```kusto
     EmailEvents
@@ -115,7 +116,7 @@ ms.locfileid: "48843069"
     ) on AccountName 
     | where (LogonTime - EmailReceivedTime) between (0min .. 30min)
     ```
-- **在兩側套用時間篩選** -即使您不是在調查特定時間範圍，在左和右表上套用時間篩選也可以減少要檢查的記錄數目，並改善 `join` 效能。 下列查詢適用于 `Timestamp > ago(1h)` 這兩個數據表，只會從過去的小時加入記錄：
+- **在兩** 側都使用時間篩選 -即使您沒有調查特定時段，在左右兩個數據表上都適用時間篩選，可以減少檢查記錄的數量並提升 `join` 績效。 下列查詢會同時適用于 `Timestamp > ago(1h)` 這兩個數據表，因此它只能連接過去一小時的記錄：
 
     ```kusto
     EmailAttachmentInfo
@@ -124,9 +125,9 @@ ms.locfileid: "48843069"
     | join kind=inner (DeviceFileEvents | where Timestamp > ago(1h)) on SHA256 
     ```  
 
-- **使用提示效能** -在執行 `join` 大量佔用資源的作業時，以運算子搭配使用提示，以指示後端分配負載。 [深入瞭解聯接提示](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
+- **使用提升效率的提示**—執行耗用大量資源的作業時，使用提示與運算子指示後端 `join` 分配負載。 [深入瞭解加入提示](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
 
-    例如，當使用具有很高基數的索引鍵來聯接資料表時， **[無序提示](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery)** 會協助改善查詢效能（具有許多唯一值的索引鍵，如下表所示） `AccountObjectId` ：
+    例如，隨機播放 **[](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery)** 提示在使用有高基數的索引鍵加入資料表時，協助改善查詢的顯示效果 ，此機率是具有許多唯一值的索引鍵，例如下面的 `AccountObjectId` 查詢：
 
     ```kusto
     IdentityInfo
@@ -138,7 +139,7 @@ ms.locfileid: "48843069"
     on AccountObjectId 
     ```
     
-    當左表為小型 (至 100000) 記錄時， **[廣播提示](https://docs.microsoft.com/azure/data-explorer/kusto/query/broadcastjoin)** 會有説明，而且右資料表非常大。 例如，下列查詢會嘗試加入少數幾封電子郵件，其中的特定 _主題包含_ 表格中的連結 `EmailUrlInfo` ：
+    廣播 **[提示](https://docs.microsoft.com/azure/data-explorer/kusto/query/broadcastjoin)** 有助於當左側資料表 (多達 100，000 個記錄) 而右資料表則相當大。 例如，下列查詢嘗試聯入一些具有特定主題的電子郵件，而所有郵件都包含資料表中的 `EmailUrlInfo` 連結：
 
     ```kusto
     EmailEvents 
@@ -147,25 +148,25 @@ ms.locfileid: "48843069"
     ```
 
 ## <a name="optimize-the-summarize-operator"></a>優化 `summarize` 運算子
-[匯總運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator)會匯總表格的內容。 套用這些秘訣以優化使用此操作符的查詢。
+摘要 [運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator) 會匯總資料表的內容。 請使用這些秘訣來優化使用這個運算子的查詢。
 
-- **尋找非重複的值** （一般 `summarize` 是用來尋找可以重複的非重複值）。 不需要使用它來匯總沒有重複值的資料行。
+- **尋找不同的值**—一般會用於 `summarize` 尋找重複的區分值。 您可以使用它來匯總沒有重複值的欄。
 
-    雖然單一電子郵件可以是多個事件的一部分，但以下範例 _不_ 是有效使用， `summarize` 因為個別電子郵件的網路郵件識別碼總會附帶唯一的寄件者位址。
+    雖然單一電子郵件可以屬於多個事件的一部分，但下列範例沒有效率地使用，因為個別電子郵件的網路郵件識別碼一定隨附唯一寄件者 `summarize` 位址。
  
     ```kusto
     EmailEvents  
     | where Timestamp > ago(1h)
     | summarize by NetworkMessageId, SenderFromAddress   
     ```
-    `summarize`操作員可輕鬆取代 `project` ，在消耗較少的資源時產生的結果可能相同：
+    運算子 `summarize` 很容易被取代，這有可能會獲得相同的結果， `project` 同時耗用較少的資源：
 
     ```kusto
     EmailEvents  
     | where Timestamp > ago(1h)
     | project NetworkMessageId, SenderFromAddress   
     ```
-    下列範例會更有效率地使用， `summarize` 因為寄件者位址可以有多個不同的實例，將電子郵件傳送至相同的收件者位址。 這類組合不太明顯，而且可能有重複專案。
+    下列範例是比較有效率地使用，因為傳送電子郵件至相同收件者位址的寄件者位址可能會有多個 `summarize` 不同的實例。 這類組合較不區分，而且可能重複。
 
     ```kusto
     EmailEvents  
@@ -173,9 +174,9 @@ ms.locfileid: "48843069"
     | summarize by SenderFromAddress, RecipientEmailAddress   
     ```
 
-- **無序處理查詢** --當 `summarize` 資料行中的最大值是重複值時，相同的資料列也可以具有 _高基數_ 或大量的唯一值。 如同 `join` 運算子，您也可以在使用具有高基數的資料行上作業時，套用 [無序提示](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) ，以 `summarize` 散佈處理負載，並可能提升效能。
+- **隨機排列** 查詢 — 雖然最適合用於重複值的欄，但相同的資料行也可以擁有高基數或大量的 `summarize` 唯一值。  就像運算子一樣，您也可以使用隨機播放提示來分配處理負載，並可能提升在高基數欄 `join` [](https://docs.microsoft.com/azure/data-explorer/kusto/query/shufflequery) `summarize` 上作業時的績效。
 
-    下列查詢可用於 `summarize` 計算非重複的收件者電子郵件地址，其可在大型組織的成百上千中執行。 為了改善效能，它包含 `hint.shufflekey` ：
+    下面這個查詢會用來計算不同的收件者電子郵件地址，它可以在數十萬大型組織中 `summarize` 執行。 為提升效果，它整合了 `hint.shufflekey` ：
 
     ```kusto
     EmailEvents  
@@ -185,7 +186,7 @@ ms.locfileid: "48843069"
 
 ## <a name="query-scenarios"></a>查詢案例
 
-### <a name="identify-unique-processes-with-process-ids"></a>使用處理 IDs 識別唯一的程式
+### <a name="identify-unique-processes-with-process-ids"></a>使用流程名稱識別唯一流程
 程序識別碼 (PID) 會在 Windows 中回收，並針對新程序重複使用。 它們本身不能充當特定程序的唯一識別碼。
 
 若要為特定電腦上的程序取得唯一識別碼，請使用程序識別碼與程序建立時間。 結合或摘要處理程序中的資料時，需包含電腦識別碼的欄位 (`DeviceId` 或 `DeviceName`)、程序識別碼 (`ProcessId` 或 `InitiatingProcessId`) 以及程序建立時間 (`ProcessCreationTime` 或 `InitiatingProcessCreationTime`)
@@ -204,17 +205,17 @@ InitiatingProcessCreationTime, InitiatingProcessFileName
 查詢會以 `InitiatingProcessId` 和 `InitiatingProcessCreationTime` 進行彙總，因此它會檢查單一程序，而不會將多個具有相同程序識別碼的程序混合在一起。
 
 ### <a name="query-command-lines"></a>查詢命令列
-有許多方法可以建構命令列來完成工作。 例如，攻擊者可以參考沒有路徑、沒有副檔名、使用環境變數或引號的映射檔。 攻擊者也可以變更參數的順序，或新增多個引號及空格。
+有許多方法可以建構命令列來完成工作。 例如，攻擊者可能會以沒有路徑、沒有副檔名、使用環境變數或引號來參考影像檔案。 攻擊者也可以變更參數的順序，或新增多個引號和空格。
 
-若要在命令列上建立更耐用的查詢，請套用下列做法：
+若要在命令列周圍建立更多查詢，請採用下列做法：
 
-- 透過比對的檔案名欄位，而不是在命令列本身上進行篩選，來識別已知的處理常式 (例如 *net.exe* 或 *psexec.exe* ) 。
-- 使用[parse_command_line ( # A1 函數](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line)來分析命令列區段 
+- 比對 (名稱欄位 *net.exe或**psexec.exe)* 來識別已知程式，而不是篩選命令列本身。
+- 使用 [parse_command_line () 函數剖析命令列區段](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) 
 - 查詢命令列引數時，請勿以特定順序尋找多個不相關引數上完全相符的內容。 請改用規則運算式或使用多個不同的包含運算子。
-- 使用不區分大小寫對比。 例如，使用 `=~` 、 `in~` 和， `contains` 而不是 `==` 、 `in` 和 `contains_cs` 。
-- 若要緩解命令列混淆技術，請考慮移除引號、將逗號取代為空格，並以單一空格取代多個連續空格。 有些複雜的混淆技術需要其他方法，但這些調整功能可協助您解決常見的方法。
+- 使用不區分大小寫對比。 例如，使用 `=~` `in~` 、、及 `contains` `==` `in` `contains_cs` 。
+- 若要減輕命令列混淆技巧，請考慮移除引號、以空格取代逗號，以及使用單一空格取代多個連續空格。 有更複雜的混淆技巧需要其他方法，但這些調整可以協助解決常見的問題。
 
-下列範例會示範各種構造查詢的方式，用來尋找檔案 *net.exe* 停止防火牆服務「MpsSvc」：
+下列範例顯示各種方式，以建構查詢來尋找要尋找的檔案net.exe防火牆服務 "MpsSvc"：
 
 ```kusto
 // Non-durable query - do not use
@@ -233,8 +234,8 @@ DeviceProcessEvents
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
 
-### <a name="ingest-data-from-external-sources"></a>從外部來源插入資料
-若要將長清單或大型資料表納入查詢中，請使用 [externaldata 運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/externaldata-operator) 從指定的 URI 中攝取資料。 您可以從 TXT、CSV、JSON 或 [其他格式](https://docs.microsoft.com/azure/data-explorer/ingestion-supported-formats)的檔案中取得資料。 下列範例顯示如何利用 MalwareBazaar (abuse.ch) 所提供的大量惡意程式碼 SHA-256 雜湊，以檢查電子郵件上的附件：
+### <a name="ingest-data-from-external-sources"></a>從外部來源中輸入資料
+若要將長清單或大型資料表併入查詢中，請使用 [外部](https://docs.microsoft.com/azure/data-explorer/kusto/query/externaldata-operator) 資料表運算子從指定的 URI 內入資料。 您可以取得來自 TXT、CSV、JSON 或其他格式 [之檔案的資料](https://docs.microsoft.com/azure/data-explorer/ingestion-supported-formats)。 下列範例顯示如何使用 MalwareBazaar (abuse.ch) 提供的惡意程式碼 SHA-256 雜湊清單來檢查電子郵件的附件：
 
 ```kusto
 let abuse_sha256 = (externaldata(sha256_hash: string )
@@ -251,21 +252,21 @@ SHA256,MalwareFilterVerdict,MalwareDetectionMethod
 ```
 
 ### <a name="parse-strings"></a>剖析字串
-您可以使用各種功能來有效處理需要剖析或轉換的字串。 
+您可以使用各種函數有效率地處理需要剖析或轉換的字串。 
 
 | 字串 | 函數 | 使用範例 |
 |--|--|--|
-| 命令列 | [parse_command_line ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | 解壓縮命令及所有引數。 | 
-| Paths | [parse_path ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | 解壓縮檔的區段或資料夾路徑。 |
-| 版本號碼 | [parse_version ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-versionfunction) | Deconstruct 最多四個區段的版本號碼，且每個區段最多可有八個字元。 使用已分析的資料來比較版本時期。 |
-| IPv4 位址 | [parse_ipv4 ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv4function) | 將 IPv4 位址轉換成長整數。 若要比較 IPv4 位址但未轉換，請使用 [ipv4_compare ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv4-comparefunction)。 |
-| IPv6 位址 | [parse_ipv6 ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv6function)  | 將 IPv4 或 IPv6 位址轉換為正常化 IPv6 標記法。 若要比較 IPv6 位址，請使用 [ipv6_compare ( # B1 ](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv6-comparefunction)。 |
+| 命令列 | [parse_command_line ( ) ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | 解壓縮命令及所有引數。 | 
+| Paths | [parse_path ( ) ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | 解壓縮檔案或資料夾路徑的區段。 |
+| 版本號碼 | [parse_version ( ) ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-versionfunction) | 使用最多四個區段以及每個區段最多八個字元來解說版本號碼。 使用剖析的資料來比較版本年齡。 |
+| IPv4 位址 | [parse_ipv4 ( ) ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv4function) | 將 IPv4 位址轉換為長整數。 若要比較 IPv4 位址而不轉換位址，請使用[ipv4_compare () 。](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv4-comparefunction) |
+| IPv6 位址 | [parse_ipv6 ( ) ](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv6function)  | 將 IPv4 或 IPv6 位址轉換為規範的 IPv6 標記法。 若要比較 IPv6 位址，請使用 [ipv6_compare () ](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv6-comparefunction)。 |
 
-若要瞭解所有支援的分析功能，請 [閱讀 Kusto 字串函數](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalarfunctions#string-functions)。 
+若要瞭解所有支援的剖析函數，請閱讀[Kusto 字串函數。](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalarfunctions#string-functions) 
 
 ## <a name="related-topics"></a>相關主題
 - [Kusto 查詢語言檔](https://docs.microsoft.com/azure/data-explorer/kusto/query/)
 - [配額和使用量參數](advanced-hunting-limits.md)
-- [處理高級搜尋錯誤](advanced-hunting-errors.md)
+- [處理進位搜尋錯誤](advanced-hunting-errors.md)
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [了解查詢語言](advanced-hunting-query-language.md)

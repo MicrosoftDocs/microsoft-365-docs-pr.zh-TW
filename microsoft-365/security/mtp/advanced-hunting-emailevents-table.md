@@ -1,10 +1,10 @@
 ---
 title: 進階搜捕結構描述中的 EmailEvents 表格
-description: 深入瞭解在高級搜尋架構的 EmailEvents 表格中與 Microsoft 365 電子郵件相關的事件
-keywords: 高級搜尋、威脅搜尋、網路威脅搜尋、microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參考、kusto、表格、欄、資料類型、描述、EmailEvents、網路郵件 id、寄件者、收件者、附件識別碼、附件計數、url 計數、url 計數
+description: 在進位搜尋架構的 EmailEvents 資料表中瞭解與 Microsoft 365 電子郵件相關聯的事件
+keywords: 進層搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、架構參照、kusto、表格、欄、資料類型、描述、EmailEvents、網路訊息識別碼、寄件者、收件者、附件識別碼、附件名稱、惡意程式碼攻擊、網路釣魚網路釣魚者、附件計數、連結計數、URL 計數
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: 6dbd7473074212c6bc257e683288040056426048
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: m365d
+ms.openlocfilehash: 48a0fe53cb92214d616887741c0c260edf1653c2
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780269"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928983"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -36,10 +37,10 @@ ms.locfileid: "49780269"
 
 
 
-[！附注] `EmailEvents` [高級搜尋](advanced-hunting-overview.md) 架構中的表格包含有關在 Microsoft Defender for Office 365 上處理電子郵件之事件的相關資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
+進 `EmailEvents` 位搜尋架構 [中的](advanced-hunting-overview.md) 表格包含有關在 Microsoft Defender for Office 365 上處理電子郵件之事件的資訊。 使用這個參考來建立從此表格取回之資訊的查詢。
 
 >[!TIP]
-> 如需有關資料表所支援之事件種類 () 值的詳細資訊 `ActionType` ，請使用安全性中心內的 [內建架構參照](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) 。
+> 有關事件種類及資料 (資料) 值的詳細資訊，請使用安全性中心內建的架構 `ActionType` 參考。 [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 如需進階搜捕結構描述中其他表格的資訊，[請參閱進階搜捕參考](advanced-hunting-schema-tables.md) (部分內容為機器翻譯)。
 
@@ -62,25 +63,25 @@ ms.locfileid: "49780269"
 | `DeliveryAction` | 字串 | 電子郵件的傳遞動作：已傳送、已標示為垃圾郵件、已封鎖或已取代 |
 | `DeliveryLocation` | 字串 | 傳送電子郵件的位置：收件匣/資料夾、內部部署/外部、垃圾郵件、隔離、失敗、已中斷、刪除的郵件 |
 | `PhishFilterVerdict` | 字串 | 決定電子郵件是否為網路釣魚的電子郵件篩選堆疊：網路釣魚或非網路釣魚 |
-| `PhishDetectionMethod` | 字串 | 用於偵測電子郵件為網路釣魚網路的方法：惡意 URL 信譽、安全連結 URL 引爆、高級網路釣魚篩選、一般網路釣魚篩選器、反欺騙性：組織內、反欺騙性：外部網域、網域模擬、使用者模擬、品牌模仿 |
+| `PhishDetectionMethod` | 字串 | 用來偵測電子郵件為網路釣魚的方法：惡意 URL 信譽、安全連結 URL 代理、進紙篩選、一般網路釣魚篩選、反詐騙：Intra-org、反詐騙：外部網域、網域假冒、使用者假冒、品牌假冒 |
 | `MalwareFilterVerdict` | 字串 | 決定電子郵件是否包含惡意程式碼的電子郵件篩選堆疊：惡意程式碼或非惡意程式碼 |
-| `MalwareDetectionMethod` | 字串 | 用於偵測電子郵件中惡意程式碼的方法：反惡意程式碼引擎、檔信譽、安全附件 |
+| `MalwareDetectionMethod` | 字串 | 用來偵測電子郵件中的惡意攻擊的方法：反惡意軟體引擎、檔案品質、安全附件 |
 | `EmailAction` | 字串 | 以篩選決策、原則和使用者動作為基礎的最終電子郵件執行動作：將郵件移至垃圾郵件資料夾、新增 X 標頭、修改主旨、重新導向郵件、刪除郵件、傳送至隔離、未採取任何動作、密件副本郵件 |
 | `EmailActionPolicy` | 字串 | 生效的動作原則：反垃圾郵件 - 高信賴度、反垃圾郵件、反垃圾郵件 - 大宗郵件、反垃圾郵件 - 網路釣魚、反網路釣魚網域模擬、反網路釣魚使用者模擬、反網路釣魚詐騙、反網路釣魚圖形模擬、反惡意程式碼、安全附件、企業傳輸規則 (ETR) |
 | `EmailActionPolicyGuid` | 字串 | 決定最終郵件動作的原則的唯一識別碼 |
 | `AttachmentCount` | int | 電子郵件的附件數量 |
 | `UrlCount` | int | 電子郵件的內嵌 URL 數量 |
 | `EmailLanguage` | 字串 | 偵測到的電子郵件內容語言 |
-| `OrgLevelAction` | string | 對電子郵件採取的動作，以回應組織層級定義的原則的符合專案 |
-| `OrgLevelPolicy` | string | 觸發對電子郵件採取之動作的組織原則 |
-| `UserLevelAction` | string | 對電子郵件採取的動作，以回應由收件者所定義的信箱原則的相符專案 |
-| `UserLevelPolicy` | string | 觸發對電子郵件採取之動作的使用者信箱原則 |
-| `Connectors` | string | 定義組織郵件流程的自訂指示，以及如何路由傳送電子郵件 |
-| `SenderDisplayName` | string | 顯示在通訊錄中之寄件者的名稱，通常是指定或名字、中間名首字母的組合，以及姓氏或姓的組合 |
-| `SenderObjectId` | string |Azure AD 中寄件者帳戶的唯一識別碼 |
-| `ThreatTypes` | string | 從電子郵件篩選棧中判定電子郵件是否包含惡意程式碼、網路釣魚或其他威脅 |
-| `ThreatNames` | string |找到惡意程式碼或其他威脅的偵測名稱 |
-| `DetectionMethods` | string | 用於偵測電子郵件中所發現之惡意程式碼、網路釣魚或其他威脅的方法 |
+| `OrgLevelAction` | string | 針對與組織層級所定義之政策比對的電子郵件採取的動作 |
+| `OrgLevelPolicy` | string | 觸發對電子郵件採取動作的組織政策 |
+| `UserLevelAction` | string | 針對符合收件者定義的信箱策略對電子郵件採取的動作 |
+| `UserLevelPolicy` | string | 觸發對電子郵件採取動作的使用者信箱政策 |
+| `Connectors` | string | 定義組織郵件流程與電子郵件傳送方式的自訂指示 |
+| `SenderDisplayName` | string | 顯示在通訊錄中的寄件者名稱，通常是指定或名字、中間名縮寫，以及姓氏或名字的組合 |
+| `SenderObjectId` | string |在 Azure AD 中寄件者帳戶的唯一識別碼 |
+| `ThreatTypes` | string | 電子郵件篩選堆疊的詐騙者會檢查電子郵件是否包含惡意攻擊、網路釣魚或其他威脅 |
+| `ThreatNames` | string |找到的惡意攻擊或其他威脅的偵測名稱 |
+| `DetectionMethods` | string | 用來偵測電子郵件中的惡意攻擊、網路釣魚或其他威脅的方法 |
 
 
 ## <a name="related-topics"></a>相關主題

@@ -18,7 +18,7 @@ ms.collection:
 - commerce
 ms.custom:
 - TopSMBIssues
-- okr_SMB
+- okr_smb
 - BCS160
 - MET150
 - MOE150
@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: 在 Microsoft 365 系統管理中心尋找您的發票或帳單。 您也可以儲存及列印帳單複本。
 ms.date: 07/31/2020
-ms.openlocfilehash: 31d48ea846cbbdfb87cce4042ffea959e30d6fa1
-ms.sourcegitcommit: 89178b8f20d59ca88cfca303a13062b91fbeae9d
+ms.openlocfilehash: 5bf257847ec880855841035792c7714fd24d9b68
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552535"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928529"
 ---
 # <a name="view-your-bill-or-invoice"></a>檢視帳單或發票
 
@@ -52,9 +52,9 @@ ms.locfileid: "46552535"
 1. 在系統管理中心中，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">[帳單與付款]</a> 頁面。
     - 如果您使用的是 Office 365 Germany，請移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">[帳單與付款]</a> 頁面。
     - 如果您使用的是由 21Vianet 運作的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">帳單與付款</a>頁面。
-2. 在**發票**索引標籤上，從下拉式清單中選取日期範圍，然後選擇您想要檢視的順序。
+2. 在 **發票** 索引標籤上，從下拉式清單中選取日期範圍，然後選擇您想要檢視的順序。
 3. 您可以在摘要頁面上查看發票中所有項目的數量、價格、折扣和總計。
-4. 若要列印或儲存發票的 PDF 複本，請選取**下載 PDF**。
+4. 若要列印或儲存發票的 PDF 複本，請選取 **下載 PDF**。
 
 ## <a name="receive-a-copy-of-your-billing-statement-in-email"></a>透過電子郵件接收對帳單的複本
 
@@ -65,12 +65,12 @@ ms.locfileid: "46552535"
 
 ### <a name="to-receive-your-billing-statement-in-email"></a>透過電子郵件接收對帳單
 
-1. 在系統管理中心中，移至**帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">帳單通知</a>頁面。
+1. 在系統管理中心中，移至 **帳單** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">帳單通知</a>頁面。
     - 如果您使用的是 Office 365 Germany，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">帳單通知</a>頁面。
     - 如果您使用的是由 21Vianet 運作的 Office 365，請移至此<a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">帳單通知</a>頁面。
-1. 在**是否要以電子郵件附件形式接收對帳單?** 底下，將開關切換為**開啟**。
+1. 在 **是否要以電子郵件附件形式接收對帳單?** 底下，將開關切換為 **開啟**。
 
-    您可以隨時停止接收對帳單電子郵件，只要將開關切換為**關閉**即可。
+    您可以隨時停止接收對帳單電子郵件，只要將開關切換為 **關閉** 即可。
 
 ## <a name="next-steps"></a>後續步驟
 

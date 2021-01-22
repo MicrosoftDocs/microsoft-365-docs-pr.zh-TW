@@ -1,9 +1,9 @@
 ---
-title: 在 Microsoft 365 security center 中開啟 Microsoft 365 Defender
-description: 瞭解如何啟用 Microsoft 365 Defender，並開始整合您的安全性事件與回應。
-keywords: 開始使用，啟用 MTP，Microsoft 威脅防護，M365，安全性，資料位置，必要許可權，授權資格，設定頁面
+title: 在 Microsoft 365 資訊安全中心開啟 Microsoft 365 Defender
+description: 瞭解如何啟用 Microsoft 365 Defender 並開始整合您的安全性事件和回應。
+keywords: 開始使用，啟用 MTP，Microsoft Threat Protection， M365， 安全性， 資料位置， 必要的許可權， 授權資格， 設定頁面
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: b052f70c1b618adef12c4f70c2b3fe55741697d5
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: m365d
+ms.openlocfilehash: 19f035a271626077911b05082a4aba6d67355cdb
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760503"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930219"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>開啟 Microsoft 365 Defender
 
@@ -34,48 +35,48 @@ ms.locfileid: "49760503"
 **適用於：**
 - Microsoft 365 Defender
 
-[Microsoft 365 Defender](microsoft-threat-protection.md) 整合您的事件回應程式，方法是在 microsoft Defender for Endpoint、microsoft Defender for Office 365、Microsoft Cloud App Security 和 microsoft Defender for Identity 中整合重要功能。 此整合體驗會新增您可以在 Microsoft 365 安全性中心存取的強大功能。
+[Microsoft 365 Defender](microsoft-threat-protection.md) 整合了端點的 Microsoft Defender、Office 365 的 Microsoft Defender、Microsoft Cloud App 安全性及 Microsoft Defender 的身分識別等重要功能，以完成您的事件回應程式。 此整合體驗會新增您可以在 Microsoft 365 安全性中心存取的強大功能。
 
-Microsoft 365 Defender 會在具備必要許可權的合格客戶造訪 Microsoft 365 的安全性中心時自動開啟。 請閱讀本文以瞭解各種必要條件，以及如何布建 Microsoft 365 Defender。
+當具有所需許可權的合格客戶流覽 Microsoft 365 資訊安全中心時，Microsoft 365 Defender 會自動開啟。 請閱讀本文以瞭解各種先決條件，以及 Microsoft 365 Defender 的提供方式。
 
-## <a name="check-license-eligibility-and-required-permissions"></a>檢查授權資格和必要許可權
+## <a name="check-license-eligibility-and-required-permissions"></a>檢查授權資格和必要的許可權
 
-Microsoft 365 安全性產品的授權一般會使您在 Microsoft 365 的安全性中心使用 Microsoft 365 Defender，而不需要額外授權成本。 我們建議您取得 Microsoft 365 E5、E5 或 A5 安全授權或有效的授權組合，以提供所有支援服務的存取權。
+Microsoft 365 安全性產品授權通常可讓您在 Microsoft 365 安全性中心使用 Microsoft 365 Defender，而無需支付額外的授權成本。 建議您取得 Microsoft 365 E5、E5 安全性、A5 或 A5 安全性授權，或是提供所有支援服務存取權的有效授權組合。
 
-如需詳細的授權資訊，請 [閱讀授權要求](prerequisites.md#licensing-requirements)。
+有關授權的詳細資訊， [請閱讀授權需求](prerequisites.md#licensing-requirements)。
 
 ### <a name="check-your-role"></a>檢查您的角色
 
-您必須是 **全域系統管理員** 或 Azure Active Directory 中的 **安全性系統管理員** ，才可開啟 Microsoft 365 Defender。 [在 Azure AD 中查看您的角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+您必須是 **Azure** Active Directory 中的全域系統管理員或安全性系統管理員，才能開啟 Microsoft 365 Defender。  [在 Azure AD 中查看您的角色](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
-## <a name="supported-services"></a>支援的服務
+## <a name="supported-services"></a>支援服務
 
-Microsoft 365 Defender 會匯總您已部署之各種支援服務的資料。 它會集中處理及儲存資料，以識別新的洞察力，並可讓集中式回應工作流程成為可能。 這樣做不會影響現有的部署、設定或與整合服務相關聯的資料。
+Microsoft 365 Defender 會匯總您部署的各種支援服務的資料。 它會集中處理和儲存資料，以識別新的深入見解，並盡可能讓集中式回應工作流程。 此功能不會影響現有的部署、設定，或與整合式服務相關聯的資料。
 
-若要取得最佳保護，並優化 Microsoft 365 Defender，我們建議在您的網路上部署所有適用的受支援服務。 如需詳細資訊，請 [參閱部署支援的服務](deploy-supported-services.md)。
+若要獲得最佳保護並優化 Microsoft 365 Defender，建議您在您的網路上部署所有適用的支援服務。 詳細資訊請參閱 [如何部署支援服務](deploy-supported-services.md)。
 
-## <a name="before-starting-the-service"></a>啟動服務之前
+## <a name="before-starting-the-service"></a>在啟動服務之前
 
-在您開啟服務之前，Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) 會在您從功能窗格中選取 [ **事件**]、[ **動作中心**] 或 [ **搜尋** ] 時，顯示 [microsoft 365 Defender 設定] 頁面。 如果您不具備使用 Microsoft 365 Defender 的資格，就不會顯示這些流覽專案。
+在您開啟服務之前，當您從功能窗格中選取了事件、控制中心或搜尋時，Microsoft 365 資訊安全中心 ([security.microsoft.com](https://security.microsoft.com)) 會顯示 Microsoft 365 **** Defender 設定頁面。  如果您不符合使用 Microsoft 365 Defender 資格，將不會顯示這些流覽專案。
 
-![Microsoft 365 Defender 尚未在 microsoft ](../../media/mtp-enable/mtp-settings.png)
- *365 security center 中開啟 Microsoft 365 defender 設定* 時所顯示之 microsoft 365 defender 設定頁面的圖像
+![如果 Microsoft 365 資訊安全中心中未開啟 Microsoft 365 Defender 設定，則顯示的 ](../../media/mtp-enable/mtp-settings.png)
+ *Microsoft 365 Defender* 設定頁面圖像
 
 ## <a name="starting-the-service"></a>啟動服務
 
-若要開啟 Microsoft 365 Defender，只要選取 [ **開啟 microsoft 365 defender** ] 並套用變更。 您也可以在功能窗格中選取 [ ([security.microsoft.com/settings](https://security.microsoft.com/settings)) **設定**]，然後選取 [ **microsoft 365 Defender**]，即可存取此選項。
+若要開啟 Microsoft 365 Defender，只要選取開啟 **Microsoft 365 Defender** 並申請變更。 您也可以選取流覽窗格中的 (security.microsoft.com/settings) 選項，[](https://security.microsoft.com/settings)然後選取 **Microsoft 365 Defender 來存取此選項**。 
 
 > [!NOTE]
-> 如果您在功能窗格中看不到 **設定** 或無法存取頁面，請檢查您的許可權和授權。
+> 如果您在流覽 **窗格中看不到設定** 或無法存取頁面，請檢查您的許可權和授權。
 
 ### <a name="data-center-location"></a>資料中心位置
 
-Microsoft 365 Defender 會將資料儲存並處理于 [Microsoft Defender For Endpoint 所使用的相同位置](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。 如果您沒有 Microsoft Defender for Endpoint，會根據使用中 Microsoft 365 安全性服務的位置，自動選取新的資料中心位置。 選取的資料中心位置會顯示在螢幕上。
+Microsoft 365 Defender 會儲存及處理與 Microsoft Defender for Endpoint 相同 [位置的資料](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)。 如果您沒有 Microsoft Defender for Endpoint，就會根據使用中的 Microsoft 365 安全性服務位置自動選取新的資料中心位置。 畫面上會顯示選取的資料中心位置。
 
-在 Microsoft 365 的安全性中心中，選取 [ **需要協助** ]，以與 microsoft 支援部門聯繫，以在不同的資料中心位置布建 Microsoft 365 Defender。
+選取需要協助嗎？在 Microsoft 365 資訊安全中心中，與 Microsoft 支援服務聯繫，以在不同的資料中心位置提供 Microsoft 365 Defender。
 
 > [!NOTE]
-> Microsoft Defender for Endpoint 會在歐盟 (歐盟透過 Azure Defender 開啟時) 資料中心。 Microsoft 365 Defender 會在相同的歐盟資料中心，針對以這種方式布建 Defender 的客戶自動布建。
+> 透過 Azure Defender 開啟時，Microsoft Defender for Endpoint (歐盟) 資料中心自動提供。 Microsoft 365 Defender 將針對已使用這種方式提供端點後置備的客戶，自動在同一個歐盟資料中心進行提供。
 
 ### <a name="confirm-that-the-service-is-on"></a>確認服務已開啟
 
@@ -83,29 +84,29 @@ Microsoft 365 Defender 會將資料儲存並處理于 [Microsoft Defender For En
 
 - [事件管理](incidents-overview.md)
 - 用於管理[自動化調查和回應](mtp-autoir.md)的重要訊息中心
-- [高級搜尋](advanced-hunting-overview.md) 功能
+- [進位搜尋](advanced-hunting-overview.md) 功能
 
-![Microsoft 365 security center 導覽窗格與 Microsoft 365 Defender 的影像功能 ](../../media/mtp-enable/mtp-on.png)
- *microsoft 365 security center with 事件管理和其他 Microsoft 365 Defender 功能*
+![Microsoft 365 資訊安全中心流覽窗格的影像，以及具有事件管理和其他 ](../../media/mtp-enable/mtp-on.png)
+ *Microsoft 365 Defender 功能的 Microsoft 365* 資訊安全中心功能
 
-### <a name="getting-microsoft-defender-for-identity-data"></a>取得 Microsoft Defender 的身分識別資料
+### <a name="getting-microsoft-defender-for-identity-data"></a>取得 Microsoft Defender 以取得身分識別資料
 
-若要使用 Microsoft 365 Defender 共用 Microsoft Defender 的身分識別資料，請確定 Microsoft Cloud App Security 和 Microsoft Defender for Identity integration 已開啟。 [深入瞭解這種整合](https://docs.microsoft.com/cloud-app-security/mdi-integration)。
+若要與 Microsoft 365 Defender 共用 Microsoft Defender 的身分識別資料，請確定已開啟 Microsoft Cloud App 安全性和身分識別整合的 Microsoft Defender。 [深入瞭解這項整合](https://docs.microsoft.com/cloud-app-security/mdi-integration)。
 
 ## <a name="get-assistance"></a>取得協助
 
-若要取得有關開啟 Microsoft 365 Defender 的最常見問題的答案，請 [參閱常見問題](mtp-enable-faq.md)。
+若要取得有關開啟 Microsoft 365 Defender 的最常見問題的 [解答，請閱讀常見問題](mtp-enable-faq.md)。
 
-Microsoft 支援人員可協助您布建或取消設定租使用者上的服務和相關資源。 如需協助，請選取 [Microsoft 365 security center] 中的 [ **需要協助？** ]。 當您聯繫支援時，請提及 Microsoft 365 Defender。
+Microsoft 支援人員可協助在租使用者上提供或取消提供服務及相關資源。 在 Microsoft  365 安全性中心中選取需要協助嗎？以尋求協助。 聯繫支援人員時，請提及 Microsoft 365 Defender。
 
 ## <a name="related-topics"></a>相關主題
 
 - [常見問題集](mtp-enable-faq.md)
 - [授權需求和其他必要條件](prerequisites.md)
 - [部署支援服務](deploy-supported-services.md)
-- [Microsoft 365 Defender 概述](microsoft-threat-protection.md)
-- [Microsoft Defender for Endpoint 簡介](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [適用于 Office 的 Defender 365 簡介](../office-365-security/office-365-atp.md)
+- [Microsoft 365 Defender 概觀](microsoft-threat-protection.md)
+- [Microsoft Defender 端點概觀](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Office 365 的 Defender 概觀](../office-365-security/office-365-atp.md)
 - [Microsoft Cloud App Security 概觀](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
-- [Microsoft Defender 身分識別概述](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
-- [Microsoft Defender for Endpoint data storage](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+- [Microsoft Defender 身分識別概觀](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
+- [端點資料儲存的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

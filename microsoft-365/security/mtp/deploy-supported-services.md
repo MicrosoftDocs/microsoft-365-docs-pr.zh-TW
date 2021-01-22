@@ -1,9 +1,9 @@
 ---
 title: 部署 Microsoft 365 Defender 支援的服務
-description: 深入瞭解可由 Microsoft 365 Defender、其授權需求和部署程式整合的 Microsoft 安全服務
-keywords: 部署，授權，支援的服務，布建，設定 Microsoft 威脅防護，M365，授權資格，Microsoft Defender ATP，MDATP，Office 365 ATP，Azure ATP，Microsoft Cloud App Security，MCAS，advanced 威脅防護，E5，A5，EMS
+description: 瞭解 Microsoft 365 Defender 可整合的 Microsoft 安全性服務、其授權需求及部署程式
+keywords: 部署、授權、支援服務、提供、組組 Microsoft Threat Protection、M365、授權資格、Microsoft Defender ATP、MDATP、Office 365 ATP、Azure ATP、Microsoft Cloud App Security、MCAS、Advanced Threat Protection、E5、A5、EMS
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,12 +21,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 4a1bed4d6c6688c266b9df8ce36e4b25a0632d68
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 5af58a1c6850619ca08960997a30fe4a81158446
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843921"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928959"
 ---
 # <a name="deploy-supported-services"></a>部署支援服務
 
@@ -38,56 +39,56 @@ ms.locfileid: "48843921"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-[Microsoft 365 Defender](microsoft-threat-protection.md) 整合各種 Microsoft 安全服務，以提供集中式偵測、防護和調查功能，以防禦複雜的攻擊。 本文說明支援的服務、其授權需求、與部署一或多項服務相關的優點與限制，以及您可以個別完全部署這些服務的方式連結。
+[Microsoft 365 Defender](microsoft-threat-protection.md) 整合了各種 Microsoft 安全性服務，針對複雜的攻擊提供集中式偵測、防護與調查功能。 本文說明支援服務、其授權需求、部署一或多個服務的相關優點和限制，以及可如何個別完全部署服務的連結。
 
-## <a name="supported-services"></a>支援的服務
-Microsoft 365 E5，E5 Security，A5，or A5 安全性授權或有效的授權組合，可提供下列支援服務的存取權，以及您在 Microsoft 365 Security center 中使用 Microsoft 365 Defender 的權力。 [請參閱授權需求](prerequisites.md#licensing-requirements)
+## <a name="supported-services"></a>支援服務
+Microsoft 365 E5、E5 安全性、A5 或 A5 安全性授權或有效的授權組合可提供下列支援服務的存取權，並可讓您在 Microsoft 365 安全性中心使用 Microsoft 365 Defender。 [請參閱授權需求](prerequisites.md#licensing-requirements)
 
-| 支援的服務 | 描述 |
+| 支援的服務 | 說明 |
 | ------ | ------ |
-| 適用於端點的 Microsoft Defender | 以強大行為感應器、雲端分析和威脅智慧為基礎的 Endpoint protection 套件 |
-|Microsoft Defender for Office 365 | Office 365 中的應用程式和資料的高級保護，包括電子郵件和其他共同作業工具 |
-| 適用於身分識別的 Microsoft Defender  | 使用關聯的 Active Directory 信號，防禦高級威脅、遭到破壞的身分識別，以及惡意內幕用。 |
-| Microsoft Cloud App Security | 在您的 Microsoft 和協力廠商雲端服務之間識別及打擊 cyberthreats |
+| 適用於端點的 Microsoft Defender | 以強大的感應器、雲端分析和威脅情報為內建的端點防護套件 |
+|適用於 Office 365 的 Microsoft Defender | 在 Office 365 中針對您的應用程式和資料進一的保護，包括電子郵件和其他共同處理工具 |
+| 適用於身分識別的 Microsoft Defender | 使用相關 Active Directory 訊號來防範進位威脅、身分被入侵和惡意的 Insider |
+| Microsoft Cloud App Security | 識別並對抗 Microsoft 和協力廠商雲端服務中的網路威脅 |
 
 ## <a name="deployed-services-and-functionality"></a>部署的服務和功能
-當您部署更支援的服務時，Microsoft 365 Defender 可提供更好的可見度、關聯性和修正能力。
+當您部署更多支援服務時，Microsoft 365 Defender 提供更佳的可見度、關聯性與補救功能。
 
-### <a name="benefits-of-full-deployment"></a>完整部署的優點
-為了取得 Microsoft 365 Defender 的完整優點，我們建議您部署所有支援的服務。 以下是完整部署的一些重要優點：
-- 事件會根據所有可用的感應器及服務特有的分析功能，以警示和事件信號進行識別和關聯。
-- 自動化調查和修正 (空氣) 行動裝置適用于各種實體類型，包括裝置、信箱和使用者帳戶
-- 可查詢更完整的高級搜尋架構，以取得來自裝置、信箱及其他實體的事件和實體資料
+### <a name="benefits-of-full-deployment"></a>完整部署的好處
+若要取得 Microsoft 365 Defender 的完整權益，建議您部署所有支援服務。 以下是完整部署的一些主要優點：
+- 事件會依據所有可用的感應器和服務特定的分析功能所發出的警示和事件訊號來識別並關聯事件
+- AIR 和 AIR (的自動化調查與補救) 適用于各種實體類型，包括裝置、信箱和使用者帳戶
+- 您可以針對來自裝置、信箱和其他實體的事件和實體資料查詢更全方位的進位搜尋架構
 
 ### <a name="limited-deployment-scenarios"></a>有限的部署案例
-您部署的每個支援服務都會提供一組極其豐富的原始信號，以及相關的資訊。 雖然有限的部署不會造成 Microsoft 365 Defender 功能關閉，但在端點、應用程式、資料及身分識別等範圍內，可提供完整的可見度的功能會受到影響。 同時，任何修正功能都只適用于您已部署之服務可管理的實體。
+您部署的每個支援服務都提供極豐富的原始訊號以及相關資訊。 雖然有限的部署不會讓 Microsoft 365 Defender 功能關閉，但可全面監控端點、應用程式、資料和身分身分的能力會受到影響。 同時，任何補救功能都僅適用于可受您部署之服務管理的實體。
 
-下表列出每個支援的服務如何提供額外的資料、關聯資料，以及更好的修復與回應功能，以取得額外的洞察力。
+下表列出每個支援的服務如何提供額外的資料、與資料相互關聯以取得其他深入見解的機會，以及更好的補救和回應功能。
 
-| 服務 | 資料 (信號 & 相關的資訊)  | 修正 & 回應範圍 |
+| 服務 | 資料 (表示&相關資訊)  | 補救&範圍 |
 | ------ | ------ | ------ |
-| 適用於端點的 Microsoft Defender | -端點狀態和原始事件<br />-端點偵測和警示，包含防毒程式、EDR、攻擊面降低<br />-在端點上觀察到的檔案及其他實體的資訊 | 端點 |
-|Microsoft Defender for Office 365 | -郵件和信箱狀態和原始事件<br />-電子郵件、附件及連結偵測 | -信箱<br />-Microsoft 365 帳戶 |
-| 適用於身分識別的 Microsoft Defender  | -Active Directory 信號，包括驗證事件<br />-身分識別相關的行為偵測 | 身分識別 |
-| Microsoft Cloud App Security | -偵測 unsanctioned cloud app and services (shadow) <br />-向雲端應用程式公開資料<br />-Cloud app 相關聯的威脅活動 | 雲端應用程式 |
+| 適用於端點的 Microsoft Defender | - 端點狀態和原始事件<br />- 端點偵測和警示，包括防毒軟體、EDR、攻擊面縮小<br />- 端點上所觀察之檔案和其他實體的資訊 | 端點 |
+|適用於 Office 365 的 Microsoft Defender | - 郵件和信箱狀態及原始事件<br />- 電子郵件、附件和連結偵測 | - 信箱<br />- Microsoft 365 帳戶 |
+| 適用於身分識別的 Microsoft Defender | - Active Directory 訊號，包括驗證事件<br />- 身分識別相關檢發偵測 | 身分識別 |
+| Microsoft Cloud App Security | - 偵測未檢查的雲端應用程式和服務， (IT) <br />- 將資料曝光到雲端應用程式<br />- 與雲端應用程式相關的威脅活動 | 雲端應用程式 |
 
 ## <a name="deploy-the-services"></a>部署服務
-部署每個服務時，通常需要為您的租使用者和某些初始設定提供布建。 請參閱下表以瞭解各項服務的部署方式。
+部署每個服務通常需要向您的租使用者進行部署，並且需要一些初始群組原則。 請參閱下表以瞭解每個服務的部署方法。
 
-| 服務 | 布建指示 | 初始設定 |
+| 服務 | 提供指示 | 初始設定 |
 | ------ | ------ | ------ |
-| 適用於端點的 Microsoft Defender | [Microsoft Defender for Endpoint 部署指南](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *請參閱布建指示* |
-|Microsoft Defender for Office 365 | *無，使用 Office 365 布建* | [設定 Microsoft Defender for Office 365 原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
-| 適用於身分識別的 Microsoft Defender  | [快速入門：建立您的 Microsoft Defender for Identity 實例](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *請參閱布建指示* |
-| Microsoft Cloud App Security | *無* | [快速入門： Microsoft Cloud App Security 快速入門](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
+| 適用於端點的 Microsoft Defender | [Microsoft Defender 端點部署指南](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases) | *請參閱提供指示* |
+|適用於 Office 365 的 Microsoft Defender | *沒有 ，已與 Office 365 一起提供* | [設定適用於 Office 365 的 Microsoft Defender 原則](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) |
+| 適用於身分識別的 Microsoft Defender | [快速入門：建立您的 Microsoft Defender 以用於身分識別實例](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) | *請參閱提供指示* |
+| Microsoft Cloud App Security | *無* | [快速入門：開始使用 Microsoft Cloud App 安全性](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security) |
 
-部署支援的服務之後，請 [開啟 Microsoft 365 Defender](mtp-enable.md)。
+部署支援服務後，請[開啟 Microsoft 365 Defender。](mtp-enable.md)
 
 ## <a name="related-topics"></a>相關主題
 
-- [Microsoft 365 Defender 概述](microsoft-threat-protection.md)
+- [Microsoft 365 Defender 概觀](microsoft-threat-protection.md)
 - [開啟 Microsoft 365 Defender](mtp-enable.md)
-- [Microsoft Defender for Endpoint 簡介](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
-- [Microsoft Defender for Office 365 簡介](../office-365-security/office-365-atp.md)
+- [Microsoft Defender 端點概觀](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Office 365 的 Microsoft Defender 概觀](../office-365-security/office-365-atp.md)
 - [Microsoft Cloud App Security 概觀](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
-- [Microsoft Defender 身分識別概述](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)
+- [Microsoft Defender 身分識別概觀](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)

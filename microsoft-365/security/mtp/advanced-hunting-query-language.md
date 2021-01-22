@@ -1,10 +1,10 @@
 ---
-title: 瞭解 Microsoft 365 Defender 中的高級搜尋查詢語言
+title: 瞭解 Microsoft 365 Defender 中的進位搜尋查詢語言
 description: 建立您的第一個威脅搜捕查詢，並了解常用的運算子和進階搜捕查詢語言的其他概念
-keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，語言，學習，第一個查詢，遙測，事件，遙測，自訂偵測，架構，kusto，運算子，資料類型，powershell 下載，查詢範例
+keywords: 進一步搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、語言、學習、第一個查詢、遙測、事件、遙測、自訂偵測、架構、kusto、運算子、資料類型、PowerShell 下載、查詢範例
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.openlocfilehash: bb3caff642e752cb6d3941b697820fbad69ae23c
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 41341a2b5238485fc58021fe4af71cd5c635352c
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841973"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929799"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>了解進階搜捕查詢語言
 
@@ -34,11 +35,11 @@ ms.locfileid: "48841973"
 適用於：
 - Microsoft 365 Defender
 
-進階搜捕是以 [Kusto 查詢語言](https://docs.microsoft.com/azure/kusto/query/)為基礎。 您可以使用 Kusto 運算子和語句來建立在特定 [架構](advanced-hunting-schema-tables.md)中尋找資訊的查詢。 若要深入了解這些概念，請執行您的第一個查詢。
+進階搜捕是以 [Kusto 查詢語言](https://docs.microsoft.com/azure/kusto/query/)為基礎。 您可以使用 Kusto 運算子和語句來建構在特殊架構中尋找資訊的 [查詢](advanced-hunting-schema-tables.md)。 若要深入了解這些概念，請執行您的第一個查詢。
 
 ## <a name="try-your-first-query"></a>嘗試您的第一個查詢
 
-在 Microsoft 365 的 [安全性中心] 中，移至 **搜尋** 以執行第一個查詢。 請使用下列範例：
+在 Microsoft 365 資訊安全中心，請前往搜尋 **以** 執行第一個查詢。 請使用下列範例：
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -60,37 +61,37 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-**[在高級搜尋中執行此查詢](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
+**[以進位搜尋執行此查詢](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
-### <a name="describe-the-query-and-specify-the-tables-to-search"></a>描述查詢，並指定要搜尋的表格
-已將簡短批註新增至查詢的開頭，以描述其用途。 此批註可協助您稍後決定要儲存查詢，並與組織中的其他人共用。 
+### <a name="describe-the-query-and-specify-the-tables-to-search"></a>描述查詢並指定要搜尋的資料表
+查詢的開頭已加入簡短的批註，說明查詢的用詞。 如果您稍後決定儲存查詢並與他人共用，此批註會有所説明。 
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
 ```
 
-查詢本身通常會從資料表名稱開始，並以管道 () 開始數個元素 `|` 。 在此範例中，我們會從建立兩個表格的同盟開始，並  `DeviceProcessEvents` `DeviceNetworkEvents` 視需要新增管線元素。
+查詢本身一般會從資料表名稱開始，後面接著以 `|` () 。 在此範例中，我們先建立兩個數據表的聯聯，然後，然後根據需要新增  `DeviceProcessEvents` `DeviceNetworkEvents` 管道元素。
 
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
 ### <a name="set-the-time-range"></a>設定時間範圍
-第一個輸送的元素是一種範圍設定為前七天的時間篩選器。 限制時間範圍可協助確保查詢順利執行、傳回可管理的結果，而且不會超時。
+第一個管道元素是限制過去七天的時間篩選。 限制時間範圍可協助確保查詢執行良好、可管理的結果，而且不會浪費時間。
 
 ```kusto
 | where Timestamp > ago(7d)
 ```
 
-### <a name="check-specific-processes"></a>檢查特定進程
-時間範圍後緊接著搜尋代表 PowerShell 應用程式的處理常式檔案名。
+### <a name="check-specific-processes"></a>檢查特定程式
+在時間範圍內，後面緊接著搜尋代表 PowerShell 應用程式的程式檔案名。
 
 ```kusto
 // Pivoting on PowerShell processes
 | where FileName in~ ("powershell.exe", "powershell_ise.exe")
 ```
 
-### <a name="search-for-specific-command-strings"></a>搜尋特定的命令字串
-之後，查詢會在命令列中尋找通常用來透過 PowerShell 下載檔案的字串。
+### <a name="search-for-specific-command-strings"></a>搜尋特定命令字串
+之後，查詢會尋找命令列中的字串，這些字串通常是使用 PowerShell 下載檔案。
 
 ```kusto
 // Suspicious commands
@@ -104,8 +105,8 @@ union DeviceProcessEvents, DeviceNetworkEvents
     "https")
 ```
 
-### <a name="customize-result-columns-and-length"></a>自訂結果欄及長度 
-現在，您的查詢會明確識別您想要尋找的資料，您可以定義結果的外觀。 `project` 會傳回特定的欄，並 `top` 限制結果的數目。 這些運算子可協助確保結果具有適當的格式，且易於處理。
+### <a name="customize-result-columns-and-length"></a>自訂結果欄和長度 
+現在您的查詢已清楚地識別出您想要尋找的資料，您可以定義結果的外觀。 `project` 會返回特定欄 `top` ，並限制結果數量。 這些運算子可協助確保結果的格式正確，且相當大且容易處理。
 
 ```kusto
 | project Timestamp, DeviceName, InitiatingProcessFileName, InitiatingProcessCommandLine, 
@@ -113,16 +114,16 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-選取 [ **執行查詢** ] 以查看結果。 使用查詢編輯器右上角的展開圖示，以著重于搜尋查詢和結果。 
+選取 **執行查詢** 以查看結果。 使用查詢編輯器右上角的展開圖示來專注于搜尋查詢和結果。 
 
-![高級搜尋查詢編輯器中的展開控制項影像](../../media/advanced-hunting-expand.png)
+![進位查詢編輯器中的展開控制項圖像](../../media/advanced-hunting-expand.png)
 
 >[!TIP]
->您可以以圖表形式查看查詢結果，並快速調整篩選。 如需相關指導，請 [參閱使用查詢結果](advanced-hunting-query-results.md)
+>您可以用圖表來查看查詢結果，並快速調整篩選。 請參閱關於 [使用查詢結果的指南](advanced-hunting-query-results.md)
 
 ## <a name="learn-common-query-operators"></a>瞭解一般查詢運算子
 
-您剛剛執行第一個查詢，並大致瞭解其元件。 請稍微進行回溯，並瞭解一些基礎知識。 進階搜捕所使用的 Kusto 查詢語言支援一系列運算子，包括下列常見運算子。
+您只執行第一個查詢，並概觀其元件。 現在該稍微回溯一下，並學習一些基本知識了。 進階搜捕所使用的 Kusto 查詢語言支援一系列運算子，包括下列常見運算子。
 
 | 運算子 | 描述及用法 |
 |--|--|
@@ -141,31 +142,31 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ## <a name="understand-data-types"></a>瞭解資料類型
 
-「高級搜尋」支援 Kusto 資料類型，包括下列通用類型：
+進位搜尋支援 Kusto 資料類型，包括下列常見類型：
 
 | 資料類型 | 描述與查詢含意 |
 |--|--|
-| `datetime` | 通常代表事件時間戳記的資料和時間資訊。 [請參閱支援的 datetime 格式](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
-| `string` | UTF-8 以單引號括住的字元字串 (`'`) 或雙引號 (`"`) 。 [閱讀更多關於字串的資訊](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/string) |
-| `bool` | 這種資料類型支援 `true` 或 `false` 狀態。 [請參閱支援的文字及運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/bool) |
-| `int` | 32位整數  |
-| `long` | 64位整數 |
+| `datetime` | 資料和時間資訊通常代表事件時間戳記。 [查看支援的日期時間格式](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `string` | UTF-8 中的字元字串會以單引號括 () `'` 或雙引號括 `"` () 。 [閱讀更多有關字串](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/string) |
+| `bool` | 此資料類型支援 `true` 或 `false` 狀態。 [查看支援文字和運算子](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/bool) |
+| `int` | 32 位整數  |
+| `long` | 64 位整數 |
 
-若要深入瞭解這些資料類型，請 [參閱 Kusto 純量資料型別](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/)。
+若要深入瞭解這些資料類型， [請閱讀 Kusto scalar 資料類型](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/)。
 
 ## <a name="get-help-as-you-write-queries"></a>編寫查詢時取得協助
 運用下列功能更快速地編寫查詢：
-- **Autosuggest** --當您撰寫查詢時，高級搜尋會提供 IntelliSense 的建議。 
-- **架構樹** 系-您的工作區域旁會提供包含資料表清單和其欄的架構標記法。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
-- **[架構參考（Schema](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** ）包含資料表和欄描述的入口網站內參照，以及支援的事件種類 (`ActionType` 值) 和範例查詢
+- **自動建議**- 當您撰寫查詢時，進位搜尋會提供 IntelliSense 的建議。 
+- **架構樹**—包含資料表清單及其資料行的架構標記法，會提供在工作區域旁。 如需詳細資訊，請將游標暫留在某項目上。 按兩下某個項目，將它插入查詢編輯器。
+- **[架構參照](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**— 包含資料表與資料行描述的入口網站內參照，以及支援的事件種類 (`ActionType` 查詢) 範例查詢
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>在編輯器中使用多個查詢
-您可以使用查詢編輯器來試驗多個查詢。 若要使用多個查詢：
+您可以使用查詢編輯器來嘗試多個查詢。 若要使用多個查詢：
 
-- 以空行分隔每個查詢。
-- 將游標放在查詢的任何部分，以選取該查詢，然後再執行它。 這只會執行選取的查詢。 若要執行另一個查詢，請據以移動游標，然後選取 [ **執行查詢** ]。
+- 以空白行分隔每個查詢。
+- 將游標放在查詢的任何部分，以選取該查詢再執行。 這只會執行選取的查詢。 若要執行另一個查詢，請據此移動游標，然後選取執行 **查詢**。
 
-![具有多個查詢的查詢編輯器影像](../../media/mtp-ah/ah-multi-query.png)
+![具有多個查詢的查詢編輯器圖像](../../media/mtp-ah/ah-multi-query.png)
 
 ## <a name="use-sample-queries"></a>使用範例查詢
 
@@ -174,7 +175,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ![進階搜捕視窗的影像](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->除了基本查詢範例以外，您也可以取得適用於特定威脅搜捕案例的[共用查詢](advanced-hunting-shared-queries.md)。 流覽頁面左側的共用查詢或 [GitHub 查詢存放庫](https://aka.ms/hunting-queries)。
+>除了基本查詢範例以外，您也可以取得適用於特定威脅搜捕案例的[共用查詢](advanced-hunting-shared-queries.md)。 探索頁面左側或 GitHub 查詢存放庫 [左側的共用查詢](https://aka.ms/hunting-queries)。
 
 ## <a name="access-query-language-documentation"></a>Access 查詢語言說明文件
 
@@ -184,6 +185,6 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 - [進階搜捕概觀](advanced-hunting-overview.md)
 - [使用查詢結果工作](advanced-hunting-query-results.md)
 - [使用共用查詢](advanced-hunting-shared-queries.md)
-- [搜捕裝置、電子郵件、應用程式和身分識別](advanced-hunting-query-emails-devices.md)
+- [跨裝置、電子郵件、應用程式和身分識別搜捕](advanced-hunting-query-emails-devices.md)
 - [了解結構描述](advanced-hunting-schema-tables.md)
 - [套用查詢最佳做法](advanced-hunting-best-practices.md)

@@ -13,17 +13,19 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - MET150
 description: 了解如何閱讀及了解您的 Microsoft 商務產品帳單或發票。
 keywords: 帳單帳戶、組織資訊、發票
-ms.openlocfilehash: 80b7e4f14390e2f695dc753358f9e5bebe055bd0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
-ms.translationtype: HT
+ms.openlocfilehash: 1d13112957c7c09cc5f2f8cd314a510a6cae760a
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638408"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928591"
 ---
 # <a name="understand-your-bill-or-invoice"></a>了解您的帳單或發票
 
@@ -142,7 +144,7 @@ ms.locfileid: "48638408"
 
 ### <a name="how-do-i-view-and-print-my-bill"></a>如何檢視及列印我的帳單？
 
-1. 在 [帳單 **]**  >  [帳單與付款<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">]</a> 頁面上，選取發票日期範圍。
+1. 在 [帳單 **]**  >  [帳單與付款 <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">]</a> 頁面上，選取發票日期範圍。
 2. 若要列印或儲存帳單的 PDF 複本，請選取 [下載發票 PDF **]**，然後列印 PDF。
 
 若要深入了解，請參閱[檢視您的帳單或發票](view-your-bill-or-invoice.md)。

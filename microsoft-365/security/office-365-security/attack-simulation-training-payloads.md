@@ -1,67 +1,68 @@
 ---
-title: 建立攻擊模擬訓練的負載
+title: 為攻擊模擬訓練建立裝載
 ms.author: daniha
 author: danihalfin
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 中建立攻擊模擬訓練的自訂負載。
-ms.openlocfilehash: 86a962dc3117708ac71195b9efc336fa30c573dd
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 中建立攻擊模擬訓練的自訂裝載。
+ms.technology: mdo
+ms.openlocfilehash: 6cc5dd4a48ab89193133cfaf823d0a1b1868fa79
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908338"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929187"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>建立攻擊模擬訓練的自訂承載
 
-Microsoft 為各種社交工程技術提供強大的負載目錄，以與您的攻擊模擬訓練進行搭配。 不過，您可能會想要建立更適合貴組織的自訂負載。 本文說明如何在 Microsoft Defender for Office 365 中建立攻擊模擬訓練的負載。
+Microsoft 針對各種社交工程技術提供強大的負載目錄，以搭配您的攻擊模擬訓練。 不過，您可能會想要建立更適用于貴組織的自訂裝載。 本文將說明如何在 Microsoft Defender for Office 365 中建立攻擊模擬訓練的裝載。
 
-您可以按一下 [[專用 **負載**]](https://security.microsoft.com/attacksimulator?viewid=payload)索引標籤或 [[類比建立嚮導]](attack-simulation-training.md#selecting-a-payload)中的 [**建立負載**]，以建立負載。
+您可以按一下專用之攜帶點或模擬建立精靈中的建立要載人，以建立[負載](attack-simulation-training.md#selecting-a-payload)。 [  ](https://security.microsoft.com/attacksimulator?viewid=payload)
 
-嚮導的第一個步驟會選取一種負載類型。 **目前只有電子郵件可供使用**。
+精靈的第一個步驟會提供您選取一種負載類型。 **目前僅提供電子郵件**。
 
-接下來，選取相關聯的技術。 在 [選擇社交工程技術](attack-simulation-training.md#selecting-a-social-engineering-technique)時，請參閱技巧的詳細資料。
+接下來，選取相關的技巧。 請參閱選取社交工程 [技巧以瞭解有關技巧的詳細資訊](attack-simulation-training.md#selecting-a-social-engineering-technique)。
 
-在下一個步驟中，為您的負載命名。 您也可以選擇提供描述。
+在下一個步驟中，為任務命名。 或者，您可以為它提供描述。
 
-## <a name="configure-payload"></a>設定有效載荷
+## <a name="configure-payload"></a>設定負載
 
-現在就開始建立您的負載。 在 [ **寄件者詳細資料** ] 區段中輸入寄件者的名稱、電子郵件地址及電子郵件的主旨。 從提供的清單中挑選網路釣魚 URL。 稍後會將此 URL 嵌入郵件的本文中。
-
-> [!TIP]
-> 您可以為您的載荷寄件者選擇內部電子郵件，這會使該負載顯示為來自公司的其他員工。 這會增加對有效負載的敏感程度，並協助員工對內部威脅的風險進行教育。
-
-可以使用 rtf 文字編輯器來建立您的負載。 您也可以匯入預先建立的電子郵件。 當您建立電子郵件的本文時，請利用 **動態標記** ，將電子郵件自訂至您的目標。 按一下 [ **仿冒連結** ]，將先前所選的網路釣魚 URL 新增至郵件的本文中。
-
-![在 Microsoft Defender for Office 365 的負載建立中，反白顯示網路釣魚連結和動態標記](../../media/attack-sim-preview-payload-email-body.png)
+現在該建立您的負荷了。 在寄件者詳細資料區段輸入寄件者的名稱、電子郵件地址和 **電子郵件的主體** 。 從提供的清單中挑選網路釣魚 URL。 此 URL 稍後會內嵌在郵件本文中。
 
 > [!TIP]
-> 若要節省時間，請切換此選項以 **取代電子郵件中的所有連結與網路釣魚連結**。
+> 您可以選擇要裝載之寄件者的內部電子郵件，讓這個裝載顯示為來自公司另一個員工。 這將提高對於負載的敏感度，並有助於教育員工內部威脅的風險。
 
-當您想要建立負載後，請按 **[下一步]**。
+豐富的文字編輯器可用於建立您的負載。 您也可以事先匯出已建立的電子郵件。 當您建立電子郵件內內容時，請利用動態標記，將電子郵件個人化至您的目標。 按一下 **網路釣魚連結** ，將先前選取的網路釣魚 URL 新增到郵件內文。
 
-## <a name="adding-indicators"></a>新增指示器
+![Microsoft Defender for Office 365 在建立負載時反顯示網路釣魚連結和動態標記](../../media/attack-sim-preview-payload-email-body.png)
 
-指標會協助員工透過攻擊模擬，瞭解他們可以在未來的攻擊中尋找的線索。 若要開始，請按一下 [ **新增指示器**]。
+> [!TIP]
+> 若要節省時間，請開啟選項，以網路釣魚連結取代電子郵件訊息 **中所有的連結**。
 
-從下拉式清單中選取您想要使用的指示器。 這個清單是策劃，包含出現在網路釣魚電子郵件訊息中的最常見的線索。 選取之後，請確定指示器位置已設定為 **從電子郵件的內** 文，然後按一下 [ **選取文字**]。 反白顯示此指標會出現的部分負載，然後按一下 [ **選取**]。
+在您建立完喜歡的負荷後，按一下 [下一 **步**。
 
-![郵件內文中的突出顯示文字，以加入攻擊模擬訓練中的指示器](../../media/attack-sim-preview-select-text.png)
+## <a name="adding-indicators"></a>新增標記
 
-新增自訂描述以描述指示器，然後按一下指標預覽框架內，以查看指示器預覽。 完成後，按一下 [ **新增**]。 重複這些步驟，直到您已在您的負載中涵蓋所有指示器為止。
+標記可協助員工在受到攻擊時瞭解可以在未來攻擊中尋找的線索。 若要開始，請按一下 [ **新增標記**。
 
-## <a name="review-payload"></a>檢查負載
+從下拉式清單中選取您目前所要使用標記。 此清單已過策展，包含網路釣魚電子郵件訊息中最常見的線索。 選取後，請確定標記位置設定為 [從電子郵件本文中選取文字，然後按一下 **選取文字**。 將這個標記出現時，將您攜帶的一部分強調顯示，然後按一下 [ **選取**。
 
-您已經完成您的負載的建立。 現在請查看詳細資料，並查看您的負載預覽。 預覽會包含您已建立的所有指示器。 您可以從這個步驟編輯每個部分的負載。 完成後，您就可以 **提交** 您的負載。
+![郵件內文中以強調顯示的文字，以在攻擊模擬訓練中新增標記](../../media/attack-sim-preview-select-text.png)
+
+新增自訂描述來描述標記，然後按一下標記預覽框架，即可查看標記的預覽。 完成後，按一下 [ **新增**。 重複這些步驟，直到涵蓋您負載中所有的標記。
+
+## <a name="review-payload"></a>重閱負載
+
+您已完成建立您的負荷。 現在該是檢查詳細資料，並預覽您負載的時間了。 預覽會包含您建立的所有標記。 您可以編輯此步驟中的每個負載部分。 一旦獲得滿足，您可以 **提交** 您的裝載。
 
 > [!IMPORTANT]
-> 您已建立的負載會將 **承租人** 當做其來源。 選取 [有效負載] 時，請確定您不會篩選出 **租** 使用者。
+> 您建立之裝載會以 **租使用者** 做為來源。 選取負載時，請確認您沒有篩選出租 **使用者**。
 
 ## <a name="related-links"></a>相關連結
 
