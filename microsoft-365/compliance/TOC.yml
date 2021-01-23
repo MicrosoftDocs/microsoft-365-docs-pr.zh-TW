@@ -96,16 +96,17 @@
       href: information-protection.md
     - name: 敏感性資訊類型
       items:
+        - name: 了解敏感性資訊類型
+          href: sensitive-information-type-learn-about.md
         - name: 敏感資訊類型實體定義
           href: sensitive-information-type-entity-definitions.md
         - name: DLP 功能所尋找的項目
           href: what-the-dlp-functions-look-for.md
         - name: 自訂內建機密資訊類型
           href: customize-a-built-in-sensitive-information-type.md
-        - name: 自訂敏感性資訊類型
-          href: custom-sensitive-info-types.md
-        - name: 使用精確資料比對建立自訂敏感性資訊類型
+        - name: 使用資料完全相符建立自訂敏感性資訊類型
           href: create-custom-sensitive-information-types-with-exact-data-match-based-classification.md
+        - name: 開始使用自訂敏感性資訊類型
         - name: 使用完全符合結構描述和敏感性資訊類型精靈
           href: sit-edm-wizard.md
         - name: 修改精確資料比對模式以使用可配置的比對
