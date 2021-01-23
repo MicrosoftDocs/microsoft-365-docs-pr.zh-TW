@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何為小組部署高敏感度資料保護。
-ms.openlocfilehash: 045f1b1d1ebf03eb70554dc5964acb0a12e0060f
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870848"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921131"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>為小組設定高敏感度資料保護
 
@@ -153,7 +153,7 @@ ms.locfileid: "49870848"
 2. 在小組的工具列中，按一下 **[檔案]**。
 3. 按一下省略符號，然後按一下 **[在 SharePoint 中開啟]**。
 4. 在基礎 SharePoint 網站的工具列中，按一下設定圖示，然後按一下 **[網站權限]**。
-5. 在 [網站權限] 窗格的 **[共用設定]** 之下，按一下 **[變更共用設定]**。
+5. 在 **[網站權限]** 窗格的 **[網站共用]** 下，按一下 **[變更成員可以使用的共用方式]**。
 6. 在 **[共用權限]** 之下，選擇 **[只有網站擁有者可以共用檔案、資料夾及網站]**。
 7. 將 **[允許存取要求]** 設定為 **[關閉]**，然後按一下 **[儲存]**。
 

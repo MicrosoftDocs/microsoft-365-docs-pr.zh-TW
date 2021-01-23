@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: 了解如何使用基準層級的保護來部署小組。
-ms.openlocfilehash: 16f37175c3aa7b420745e6126de1aa96368d618a
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613439"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921867"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>為小組設定基準保護
 
@@ -87,7 +87,7 @@ Office 365 群組和 SharePoint 預設會開啟來賓共用功能，但是如果
 1. 在小組的工具列中，按一下 [檔案]。
 2. 按一下 [在 SharePoint 中開啟]。
 3. 在 SharePoint 網站的工具列中，按一下設定圖示，然後按一下 [網站權限]。
-4. 在 [網站權限] 窗格的 [共用設定] 之下，按一下 [變更共用設定]。
+4. 在 **[網站權限]** 窗格的 **[網站共用]** 下，按一下 **[變更成員可以使用的共用方式]**。
 5. 在 [共用權限] 底下，選擇 [網站擁有者和成員，以及擁有編輯權限的人員可以共用檔案與資料夾，但只有網站擁有者可以共用網站]，然後按一下 [儲存]。
 
 ## <a name="additional-protections"></a>其他保護

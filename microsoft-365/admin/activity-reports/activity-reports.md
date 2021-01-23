@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 取得關於組織中的人員使用 Microsoft 365 服務情況的定期報告。 使用量概觀儀表板可讓您切入每個圖表，以取得更多深入見解。
-ms.openlocfilehash: d2c5b4f67d93500f7341463a01313271d182dc38
-ms.sourcegitcommit: 039205fdaaa2a233ff7e95cd91bace474b84b68c
+ms.openlocfilehash: 4ec7690e5300b2ac08a98fbec3f4c253e970738c
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611346"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921167"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>系統管理中心的 Microsoft 365 報告
 
@@ -86,7 +86,9 @@ ms.locfileid: "49611346"
 
 視您的訂閱而定，可能有以下幾種報告可用。
   
-- [電子郵件活動](email-activity.md)
+- [電子郵件活動](email-activity-ww.md)
+
+- [適用於美國政府的電子郵件活動](email-activity.md)
     
 - [信箱使用量](mailbox-usage.md)
     
@@ -98,7 +100,9 @@ ms.locfileid: "49611346"
 
 - [適用於美國政府的作用中使用者](active-users.md)
   
-- [電子郵件應用程式使用量](email-apps-usage.md)
+- [電子郵件應用程式使用量](email-apps-usage-ww.md)
+
+- [適用於美國政府的電子郵件應用程式](email-apps-usage.md)
 
 - [表單活動](forms-activity-ww.md)
 
