@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何將使用者移至不同的訂閱。
-ms.openlocfilehash: 7da8db17e0cb29f50cd2320293d8b0f1c7f22d5a
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: b3b82dcf029395dbbe49d0e0ea87f87f4494b4f0
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701849"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927415"
 ---
 # <a name="move-users-to-different-subscriptions"></a>將使用者移至不同的訂閱
 

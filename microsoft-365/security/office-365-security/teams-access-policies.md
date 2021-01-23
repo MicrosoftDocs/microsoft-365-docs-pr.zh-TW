@@ -3,7 +3,7 @@ title: 建議的團隊原則-Microsoft 365 for enterprise |Microsoft 檔
 description: 說明有關如何保護小組通訊和檔案存取之 Microsoft 建議的原則。
 author: MicrosoftHeidi
 manager: serdars
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -18,12 +18,13 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: fa22d445b0e4517bedd1c04378271e561ecb6703
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: mdo
+ms.openlocfilehash: 7724ef76d905cdbaf48f3122d0df7ef28d0b8385
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357500"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931623"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保護小組聊天、群組和檔案的原則建議
 

@@ -15,18 +15,18 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
-- okr_SMB
+- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - MET150
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: 瞭解如何透過前往 [產品] 頁面來驗證您的組織所擁有的訂閱。
-ms.openlocfilehash: bd7b7726c93ee6c5022df7ca72342d8d3b7a1c09
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: d1325a480e92ee0ed61a15b9e9b364bb339b32ce
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324545"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926147"
 ---
 # <a name="what-subscription-do-i-have"></a>我有何種訂閱？
 
@@ -36,7 +36,7 @@ ms.locfileid: "47324545"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 [ **產品** ] 索引標籤上，您會看到所有的訂閱。 每個訂閱行都包含授權、訂閱狀態和帳單的相關資訊。
 3. 如果您想要變更出現在清單中的欄，請選取 **[選擇欄**]。 變更 [欄的選取範圍]，然後選取 [ **儲存**]。
 4. 若要查看單一訂閱的詳細資訊，請選取該訂閱。

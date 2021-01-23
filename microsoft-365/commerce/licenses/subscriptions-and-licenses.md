@@ -14,19 +14,19 @@ ms.collection:
 - Adm_TOC
 - commerce
 ms.custom:
-- okr_SMB
+- okr_smb
 - AdminSurgePortfolio
 - manage_licenses
 search.appverid:
 - MET150
 description: 深入瞭解 Microsoft 365 for business 中的訂閱與授權。
 ms.date: 07/01/2020
-ms.openlocfilehash: 51d07e777fd5a9e44c864ea11bb00ddc8c1c70d1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ccfcb52548fb79267c550afba63c2f5a96b99ed1
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638192"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928507"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>瞭解 Microsoft 365 for business 中的訂閱與授權
 

@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -15,12 +15,13 @@ ms.collection:
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.openlocfilehash: b83bbf560e39fd268dd6be361c9928242357815f
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.technology: m365d
+ms.openlocfilehash: 123b3b5f8514e9b3914b98178191d60e78280991
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759907"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49930315"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>在 Microsoft 365 Defender 中設定自動調查和回應功能
 

@@ -4,7 +4,7 @@ description: 本文說明您在使用身分識別與裝置存取原則及設定�
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 ms.date: 09/01/2020
 f1.keywords:
@@ -18,12 +18,13 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: eb07fe45c169d81559e4676f86abde5c6600a185
-ms.sourcegitcommit: 89097fb648987567b9493b9d94c85c5990562874
+ms.technology: mdo
+ms.openlocfilehash: a479d1bf7fee95a7d8ba862674cd75bfd3c699c7
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49845081"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932559"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
@@ -121,7 +122,7 @@ ms.locfileid: "49845081"
 - 建立並使用個別帳戶，只指派給 [Microsoft 365 系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)*的管理*。 管理員應該擁有自己的使用者帳戶，以進行一般非系統管理，且只有在必要時才使用系統管理帳戶，才可完成與其角色或工作職能相關聯的工作。
 - 遵循在 Azure AD 中保護特權帳戶的 [最佳作法](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) 。
 
-## <a name="next-step"></a>後續步驟
+## <a name="next-step"></a>下一步
 
 [![步驟2：設定一般身分識別和存取條件式存取原則](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-2.png)](identity-access-policies.md)
 

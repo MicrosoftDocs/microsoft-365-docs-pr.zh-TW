@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何在 Microsoft 365 for business 中新增使用者。
-ms.openlocfilehash: e897714e2ff80b2980bd2eb7ca98366d953ed96c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: f9e00312883adcc1771fae809614b6fc88bc0269
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701779"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927571"
 ---
 # <a name="add-a-new-user"></a>新增使用者
 
@@ -42,7 +43,7 @@ ms.locfileid: "49701779"
 1. 輸入使用者 **名稱**。 這將是新使用者的電子郵件地址。 如果您有一個以上的網域，請從下拉式清單中選取正確的網域。
 1. 若要自動建立密碼，請選取 [ **自動產生密碼**]。
 1. 若要要求使用者變更其密碼，請選取 [ **要求此使用者在第一次登入時變更其密碼** ] 核取方塊。
-1. 如果您想要以電子郵件傳送帳戶詳細資料，請選取 [ **完成時以電子郵件傳送密碼** ] 核取方塊。 您的電子郵件名稱將會自動新增，但是您可以新增使用者的備選電子郵件地址，讓他們也會收到帳戶詳細資料。 選取 [下一步]。
+1. 如果您想要以電子郵件傳送帳戶詳細資料，請選取 [ **完成時以電子郵件傳送密碼** ] 核取方塊。 您的電子郵件名稱將會自動新增，但是您可以新增使用者的備選電子郵件地址，讓他們也會收到帳戶詳細資料。 選取 **[下一步]**。
 1. 從下拉式清單中選取您的位置，然後選取您想要使用者使用之訂閱旁的核取方塊。 選取 **Nex** t。
 1. 如果您想要讓使用者成為系統管理員，請展開 [ **角色**]，然後清除 [ **使用者 (無管理員存取)** ] 核取方塊，然後從清單中選取系統管理員角色。 如需系統管理員角色及其設定方式的詳細資訊，請參閱 [什麼是系統管理員](what-is-admin.md)？
 1. 在 [ **設定檔資訊**] 下，輸入使用者工作、部門、office 等的詳細資料。  (您或新使用者隨時可以新增此資訊。 ) 選取 **[下一步]**。

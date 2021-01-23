@@ -16,20 +16,21 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何設定反網路釣魚防護。
-ms.openlocfilehash: f3a1399c8a6a51c7b14af7ffea8fbaea39cd1541
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: bcb6b8bac316b4b74c505656cb9a93e7a87e0830
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701800"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49927871"
 ---
-# <a name="set-up-anti-phishing"></a>設定反網路釣魚
+# <a name="set-up-anti-phishing"></a>設定防網路釣魚
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
@@ -44,7 +45,7 @@ ms.locfileid: "49701800"
 1. 移至 [ **動作**]， **如果模仿的使用者傳送電子郵件**，請開啟下拉式清單，然後選擇您想要的動作。
 
     如果模擬的 **網域傳送電子郵件** ，並選擇您想要的動作，請開啟下拉式清單。
-1. 選取 [ **開啟模擬安全性秘訣**]。 選擇當系統偵測模擬的使用者、網域或不尋常的字元時，是否應為使用者提供秘訣。 選取 **[儲存]**。
+1. 選取 [ **開啟模擬安全性秘訣**]。 選擇當系統偵測模擬的使用者、網域或不尋常的字元時，是否應為使用者提供秘訣。 選取 [儲存]。
 1. 選取 [ **信箱智慧** ]，然後確認已開啟。 這可讓您的電子郵件更有效率地瞭解使用模式。
 1. 選擇 [ **新增信任的寄件者和網域**]。 您可以在這裡新增不應該歸類為模仿的電子郵件地址或網域。
 1. 選擇 [ **檢查您的設定**]，確定所有專案正確無誤，然後選取 [ **儲存**]，然後 **關閉**。

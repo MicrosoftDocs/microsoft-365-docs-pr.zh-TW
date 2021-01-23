@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用攻擊模擬器，在 Microsoft 365 E5 或 Microsoft Defender for Office 365 方案2組織中執行模擬網路釣魚和密碼攻擊。
-ms.openlocfilehash: f07cbbdac5d9b988301e9dfc3cb4446f7b44fca6
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a9abca803c21baa7fcb5f0ab7b3d4c497c4473b8
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49871094"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939317"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的攻擊模擬器
 
@@ -155,7 +156,8 @@ ms.locfileid: "49871094"
 
    - 按一下 [ **使用範本** ]，然後選取內建或自訂的電子郵件範本。 選取範本之後，[ **名稱** ] 方塊會根據範本自動填滿，但您可以變更名稱。
 
-   ![網路釣魚開始頁面](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![網路釣魚開始頁面](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
    完成後，按 [下一步]。
 
@@ -218,7 +220,8 @@ ms.locfileid: "49871094"
 
    針對 **Spear 網路釣魚 (附件)** 活動，您應該從郵件的本文中移除連結 (否則，郵件會同時包含連結 **和** 附件，而且不會在附件活動) 中追蹤連結按一下。
 
-   ![撰寫電子郵件內文](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
+   > [!div class="mx-imgBorder"]
+   > ![撰寫電子郵件內文](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
    完成後，按 [下一步]。
 

@@ -3,7 +3,7 @@ title: 建立應用程式以存取沒有使用者的 Microsoft 365 Defender
 description: 瞭解如何建立應用程式，以在沒有使用者的情況下存取 Microsoft 365 Defender。
 keywords: 應用程式、access、api、create
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: de925fa52056a051592fe5024c0abd40b51ad57b
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: f438189b4ba9fb66124650782b3de2ee34dfee64
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719353"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928435"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>建立應用程式以存取沒有使用者的 Microsoft 365 Defender
 

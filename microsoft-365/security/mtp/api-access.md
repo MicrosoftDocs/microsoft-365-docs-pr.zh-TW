@@ -3,7 +3,7 @@ title: 存取 Microsoft 365 Defender APIs
 description: 瞭解如何存取 Microsoft 365 Defender APIs
 keywords: access、api、application coNtext、user coNtext、aad 應用程式、存取權杖
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5e01aaf2ee9255fd909b26278346fd4ccf54729a
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: ea787adfba0afb425da5f6ea0f6609f96e06b378
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719235"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932151"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>存取 Microsoft 365 Defender APIs
 

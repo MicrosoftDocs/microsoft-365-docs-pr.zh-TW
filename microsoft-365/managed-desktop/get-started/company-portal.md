@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d457c4b96e47485eee041b72a1cf24e96a13bf18
-ms.sourcegitcommit: de600339b08951d6dd3933288a8da2327a4b6ef3
+ms.openlocfilehash: bddf46e451408e4f17e58cc62186b7cd6cefb382
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48430184"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939281"
 ---
 # <a name="install-intune-company-portal-on-devices"></a>在裝置上安裝 Intune 公司入口網站
 
@@ -30,7 +30,7 @@ Microsoft 受管理的桌面要求 IT 管理員為其使用者安裝 Intune 公�
 3. 向使用者傳達變更
 
 ## <a name="step-1---purchase-company-portal-from-microsoft-store-for-business-and-sync-with-intune"></a>步驟 1-購買來自 Microsoft Store for Business 的公司入口網站，並與 Intune 同步處理
-如需如何購買應用程式和與 Intune 同步的資訊，請參閱將*應用程式部署至 Microsoft 受管理的桌面裝置*中的[Microsoft Store for Business app](deploy-apps.md#msfb-apps) 。
+如需如何購買應用程式和與 Intune 同步的資訊，請參閱將 *應用程式部署至 Microsoft 受管理的桌面裝置* 中的 [Microsoft Store for Business app](deploy-apps.md#msfb-apps) 。
 
 本主題提供下列資訊： 
 - 從商務用 Microsoft Store 購買公司入口網站 
@@ -38,9 +38,7 @@ Microsoft 受管理的桌面要求 IT 管理員為其使用者安裝 Intune 公�
 - 在 Intune 和 Microsoft Store for Business 上驗證主動同步處理 
 
 ## <a name="step-2---assign-company-portal-to-your-users"></a>步驟 2-將公司入口網站指派給您的使用者
-透過 Microsoft Managed Desktop Admin 入口網站，將支援要求提交至 Microsoft Managed Desktop Operations。 在支援要求中，要求將公司入口網站指派給您的使用者。 Microsoft 受管理的桌面會將公司入口網站部署至您的租使用者，並在組織中的 Microsoft 受管理桌面裝置上安裝應用程式。
-
-如需使用 Microsoft 受管理的電腦提交支援要求的詳細資訊，請參閱 [Microsoft Managed desktop 的系統管理支援](../working-with-managed-desktop/admin-support.md)。
+在 Microsoft Managed Desktop 中進行註冊後，Microsoft 受管理的桌面作業將會自動將公司入口網站部署至您的租使用者，並在組織中的 Microsoft 受管理桌面裝置上安裝應用程式。
 
 ## <a name="step-3---communicate-change-to-your-users"></a>步驟 3-向使用者傳達變更
 做為您組織的 IT 管理員，請務必讓您的使用者瞭解如何在組織中使用公司入口網站。 Microsoft 受管理的桌面建議：

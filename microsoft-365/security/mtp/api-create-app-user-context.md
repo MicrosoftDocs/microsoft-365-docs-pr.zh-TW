@@ -3,7 +3,7 @@ title: 建立應用程式以代表使用者存取 Microsoft 365 Defender APIs
 description: 瞭解如何代表使用者存取 Microsoft 365 Defender APIs。
 keywords: 代表使用者、api、應用程式、使用者、存取權杖、token 等存取
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: f1c0caea9ff7810f79026c789241a4f250ec5303
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: d443334a00b5247525a2cdba98a11cfe0f515193
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719413"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928450"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>建立應用程式以代表使用者存取 Microsoft 365 Defender APIs
 

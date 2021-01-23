@@ -8,19 +8,20 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何在 Microsoft Defender for Office 365 方案2中識別具有使用者標記的特定使用者群組。 標記篩選可用於 Office 365 的 Microsoft Defender 中的提醒、報告和調查，以快速識別已標記的使用者。
-ms.openlocfilehash: ad06bf90f1ecb93d671bfcad6fad0b4f2a952cb2
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ed91492e652773b3a48373df49b20d97887df6ee
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663604"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49931431"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的使用者標記
 
@@ -48,7 +49,7 @@ ms.locfileid: "49663604"
 
 - 您要在 <https://protection.office.com/> 開啟安全性與合規性中心。 若要直接移至 [ **使用者標記** ] 頁面，請開啟] <https://protection.office.com/userTags> 。
 
-- 您必須先獲指派安全性與合規性中心的權限，才能執行此文章中的程序：
+- 您必須先獲得 [安全性與合規性中心] 指派的權限，才能使用此文章中的程序：
   - 若要建立、修改和刪除使用者標記，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要在現有的使用者標記中新增及移除成員，您必須是「 **組織管理**」、「 **安全性管理員**」或「 **安全操作員** 」角色群組的成員。
   - 若要唯讀的使用者標記存取權，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。

@@ -2,7 +2,7 @@
 title: Microsoft 365 安全性入口網站中的裝置設定檔
 description: 查看組織中裝置的風險與暴露層級。 分析過去並呈現威脅，並以最新的更新保護裝置。
 keywords: 安全性，惡意程式碼，Microsoft 365，M365，Microsoft 威脅防護，MTP，安全性中心，Microsoft Defender ATP，Office 365 ATP，Azure ATP，裝置頁面，裝置設定檔，機器頁面，電腦設定檔
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: v-maave
@@ -12,12 +12,13 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 3840a6beae3b586fc90420f7813ff6e9d3cc6c60
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.technology: m365d
+ms.openlocfilehash: 40897185ab885ee2b6880ecd5f25d95fbe3d771e
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48843849"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929571"
 ---
 # <a name="device-profile-page"></a>裝置設定檔頁面面
 
@@ -59,7 +60,7 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 
 * **裝置詳細資料** -網域、OS、在第一次看到裝置時的時間戳記、IP 位址、資源。 在 Microsoft Defender for Endpoint 中註冊的裝置也會顯示健康狀態。 在 Microsoft Defender 身分識別中註冊的裝置會顯示 SAM 名稱，以及在第一次建立裝置時的時間戳記。
 * **網路活動** -在網路上第一次或最近一次看到裝置的時間戳記。
-* **目錄資料** ( *僅針對身分識別* ) - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) 旗標、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)和群組成員資格的裝置註冊。
+* **目錄資料** (*僅針對身分識別*) - [UAC](https://docs.microsoft.com/windows/security/identity-protection/user-account-control/user-account-control-overview) 旗標、 [spn](https://docs.microsoft.com/windows/win32/ad/service-principal-names)和群組成員資格的裝置註冊。
 
 ## <a name="response-actions"></a>回應動作
 
@@ -91,7 +92,7 @@ Microsoft 365 安全性入口網站為您提供裝置設定檔頁面面，因此
 
 ### <a name="overview-tab"></a>概覽] 索引標籤
 
-預設索引標籤為 **[一覽表** ]。 它可快速查看有關裝置的最重要安全性事實。
+預設索引標籤為 **[一覽表**]。 它可快速查看有關裝置的最重要安全性事實。
 
 ![裝置設定檔之 [簡介] 索引標籤的影像](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 

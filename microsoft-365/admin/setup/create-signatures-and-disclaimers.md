@@ -18,18 +18,19 @@ ms.custom:
 - OKR_SMB_Videos
 - seo-marvel-may2020
 - AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 瞭解如何管理電子郵件簽名，包括輸入或離開組織之所有電子郵件的法律免責聲明或披露聲明。
-ms.openlocfilehash: 9e438b42eb95dced4c3b99d21c66011365b180c9
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: c8d63a11a75b9b53de9cabdf1f4baabc61cc3e42
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906498"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49926915"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>建立整個組織的簽名和免責聲明
 
@@ -64,19 +65,19 @@ ms.locfileid: "48906498"
 
 ::: moniker-end
 
-1. 選取應用程式啟動器 ![ 圖示 ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) ，然後選取 [ **管理** ]。
+1. 選取應用程式啟動器 ![ 圖示 ](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) ，然後選取 [ **管理**]。
    
     Can't find the app you're looking for? 從應用程式啟動器中，選取 [ **所有應用程式** ]，以查看您可以使用之應用程式的字母順序清單。 From there, you can search for a specific app. 
     
-2. 選取 [系統 **管理中心** ]，然後選擇 [ **Exchange** ]。
+2. 選取 [系統 **管理中心**]，然後選擇 [ **Exchange**]。
     
-3. 在 [郵件流程] 下，選取 [ **規則** ]。
+3. 在 [郵件流程] 下，選取 [ **規則**]。
     
-4. 選取 [ **+** (Add) 圖示，然後選擇 [套用 **免責聲明** ]。
+4. 選取 [ **+** (Add) 圖示，然後選擇 [套用 **免責聲明**]。
     
 5. 為這個規則命名。
     
-6. 在 [套用 **此規則** ] 底下，選取 **[套用到所有郵件]** 。
+6. 在 [套用 **此規則**] 底下，選取 **[套用到所有郵件]**。
     
     > [!TIP]
     > [深入了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping)您不想將免責聲明套用至所有郵件時的套用條件。  (此範圍的文章適用于 Exchange Server，但也適用于 Microsoft 365。 )  
@@ -88,9 +89,9 @@ ms.locfileid: "48906498"
     > [!TIP]
     > [深入了解](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer)如何設定免責聲明格式。  (此格式化文章適用于 Exchange Server，但也適用于 Microsoft 365。 )  
 
-9. 選取 [ **選取其中一項** ]，然後選擇 [ **包裝** 為回退] 選項。 然後按一下 **[確定]** 。 這表示，該免責聲明如果因為加密或其他郵件設定而無法新增，系統會將它包裝在郵件信封中。
+9. 選取 [ **選取其中一項** ]，然後選擇 [ **包裝** 為回退] 選項。 然後按一下 **[確定]**。 這表示，該免責聲明如果因為加密或其他郵件設定而無法新增，系統會將它包裝在郵件信封中。
     
-10. 選取 [ **以嚴重性層級審核此規則** ]。 然後選擇 [ **低** ]、[ **中** ] 或 [ **高** ]，以用於消息記錄檔。 
+10. 選取 [ **以嚴重性層級審核此規則** ]。 然後選擇 [ **低**]、[ **中**] 或 [ **高** ]，以用於消息記錄檔。 
     
 11. 選擇 [ **強制** ] 立即開啟免責聲明，除非您要先加以測試。 
     

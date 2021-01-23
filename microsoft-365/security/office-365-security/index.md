@@ -6,7 +6,6 @@ manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Office 365 的安全性，從 EOP 到 Defender for Office 365 方案1和2，Standard 與 Strict 安全性設定等等。 瞭解您擁有的內容，以及如何保護您的屬性。
-ms.openlocfilehash: a24f71286a524c4057fd1354804b067497479493
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f83eef6a19e26f4b8f47a049e2b2959b32a92550
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794517"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932547"
 ---
 # <a name="office-365-security-overview"></a>Office 365 安全性概述
 
@@ -124,7 +125,7 @@ Microsoft Defender for Office 365 P1 也會新增 [*即時* 偵測] *，以供�
 
 |適用于 Office 的 Defender 365 方案1|適用于 Office 的 Defender 365 方案2|
 |---|---|
-|設定、保護和偵測功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全連結](atp-safe-links.md)</li><li>[適用於 SharePoint、OneDrive 及 Microsoft Teams 的 ATP](atp-for-spo-odb-and-teams.md)</li><li>[在 Office 365 的 Defender 中的反網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[即時偵測](threat-explorer.md)</li></ul>|Office 365 的 Defender 方案1功能 <p> --- 以及 --- <p> 自動化、調查、補救和教育功能： <ul><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](office-365-air.md)</li><li>[攻擊模擬器](attack-simulator.md)</li></ul>|
+|設定、保護和偵測功能： <ul><li>[安全附件](atp-safe-attachments.md)</li><li>[安全連結](atp-safe-links.md)</li><li>[SharePoint、OneDrive 和 Microsoft 小組的安全附件](atp-for-spo-odb-and-teams.md)</li><li>[在 Office 365 的 Defender 中的反網路釣魚保護](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[即時偵測](threat-explorer.md)</li></ul>|Office 365 的 Defender 方案1功能 <p> --- 以及 --- <p> 自動化、調查、補救和教育功能： <ul><li>[威脅追蹤工具](threat-trackers.md)</li><li>[威脅總管](threat-explorer.md)</li><li>[自動調查及回應](office-365-air.md)</li><li>[攻擊模擬器](attack-simulator.md)</li></ul>|
 |
 
 - Microsoft Defender for Office 365 方案2隨附于 Office 365 E5、Office 365 A5 和 Microsoft 365 E5。

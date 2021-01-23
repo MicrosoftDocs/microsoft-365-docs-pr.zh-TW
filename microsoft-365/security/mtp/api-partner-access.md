@@ -3,7 +3,7 @@ title: 透過 Microsoft 365 Defender APIs 的合作夥伴存取
 description: 瞭解如何建立可讓使用者以程式設計方式存取 Microsoft 365 Defender 的應用程式。
 keywords: partner，access，api，多租使用者，同意，存取權杖，應用程式
 search.product: eADQiWindows 10XVcnh
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 5de113c8f8419b3af2a287bd7ba7e41dc06b4121
-ms.sourcegitcommit: d6b1da2e12d55f69e4353289e90f5ae2f60066d0
+ms.technology: m365d
+ms.openlocfilehash: 07afb0baf5c115f2029abfe03795b081a4f253a8
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "49719437"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49929395"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>建立具有對 Microsoft 365 Defender APIs 的合作夥伴存取權的應用程式
 

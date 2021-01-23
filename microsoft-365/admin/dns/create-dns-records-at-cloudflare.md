@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
 description: 瞭解如何驗證您的網域，並設定電子郵件、商務用 Skype Online 及其他服務的 DNS 記錄，以供 Microsoft Cloudflare。
-ms.openlocfilehash: 110bd96c0eecf40ae96efe7055d82a8d12dde607
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 8d5dd7779f07fd42dd230ee33c40849da3519d26
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657957"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939269"
 ---
 # <a name="create-dns-records-at-cloudflare-for-microsoft"></a>在 Cloudflare 建立 Microsoft 的 DNS 記錄
 
@@ -86,12 +86,12 @@ ms.locfileid: "49657957"
   
 4. 在 [ **DNS 管理** ] 頁面上，按一下 [ **新增記錄**]，然後選取下表中的值。 
     
-    |**類型**|**名稱**|**自動 TTL**|**內容**|
+    | 類型 | 姓名 | 自動 TTL | 內容 |
     |:-----|:-----|:-----|:----|
     |TXT  <br/> |@  <br/> |30 分鐘  <br/> |MS=ms *XXXXXXXX*  <br/> **附註：** 這是範例。 在這裡請使用您自己來自表格的 **[目的地或指向位址]** 值。           [如何找到呢？](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
   
   
 9. 繼續進行之前，請先稍候幾分鐘，好讓您剛剛建立的記錄能在網際網路上更新。
@@ -130,13 +130,13 @@ ms.locfileid: "49657957"
   
 4. 在 [ **DNS 管理** ] 頁面上，按一下 [ **新增記錄**]，然後選取下表中的值。 
     
-    |**類型**|**名稱**|**郵件伺服器**|**Priority** (優先順序)|**TTL**|
+    | 類型 | 姓名 | Mail server (郵件伺服器) | Priority (優先順序) | TTL |
     |:-----|:-----|:-----|:-----|:-----|
     |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **附注：***\<domain-key\>* 從您的 Microsoft 365 帳戶取得。   [How do I find this?](../get-help-with-domains/information-for-dns-records.md) |1   <br/> 如需關於優先順序的詳細資訊，請參閱[什麼是 MX 優先順序？](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/>|30 分鐘  <br/> |
    
 
   
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
   
 9. 如果 [ **Mx 記錄** ] 區段中列出任何其他 MX 記錄，請選取 [ **刪除 (X])** 圖示加以刪除。 
   
@@ -159,7 +159,7 @@ ms.locfileid: "49657957"
     在 [ **DNS 管理** ] 頁面上，按一下 [ **新增記錄**]，然後選取下表中的值。
     
     
-    |**類型**|**Name** (名稱)|**Target** (目標)|**TTL**|
+    | 類型 | 姓名 | Target (目標) | TTL |
     |:-----|:-----|:-----|:-----|
     |CNAME  <br/> |autodiscover  <br/> |autodiscover.outlook.com  <br/> |30 分鐘  <br/> |
     |CNAME  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |30 分鐘  <br/> |
@@ -169,9 +169,9 @@ ms.locfileid: "49657957"
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 分鐘  <br/> |
     
   
-5. 選取 [ **DNS 流量** ] 圖示 (橙色雲端) 略過 Cloudflare server。
+5. 選取 [ **DNS 流量** ] 圖示， (將橙色雲端改為灰色) 略過 Cloudflare server。
   
-6. 選取 **[儲存]**。
+6. 選取 [儲存]。
   
 7. 逐一新增其餘五筆 CNAME 記錄。
 
@@ -192,12 +192,12 @@ ms.locfileid: "49657957"
   
 4. 在 [ **DNS 管理** ] 頁面上，按一下 [ **新增記錄**]，然後選取下表中的值。  
     
-    |**類型**|**名稱**|**TTL**|**內容**|
+    | 類型 | 姓名 | TTL | 內容 |
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |30 分鐘  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **注意：** 建議您複製並貼上這個項目，好讓所有的間距保持正確。   |
 
  
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
     
 
   
@@ -217,13 +217,13 @@ ms.locfileid: "49657957"
 
     在 [ **DNS 管理** ] 頁面上，按一下 [ **新增記錄**]，然後選取下表中第一列的值。
         
-    |**Type**|**服務**|**Protocol** (通訊協定)|**名稱**|**TTL**|**Priority** (優先順序)|**Weight** (權數)|**Port** (連接埠)|**Target**|
+    | Type (類型) | Service (服務) | Protocol (通訊協定) | Name (名稱) | TTL | Priority (優先順序) | Weight (權數) | Port (連接埠) | Target (目標) |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV|_sip |TLS |使用您的 *domain_name*;例如，contoso.com  |30 分鐘 | 100|1  |443 |sipfed.online.lync.com  |
     |SRV|_sipfederationtls | TCP|使用您的 *domain_name*;例如，contoso.com   |30 分鐘 |100 |1  |5061 | sipfed.online.lync.com |
 
   
-5. 選取 **[儲存]**。
+5. 選取 [儲存]。
 
   
 6. 從資料表的第二列中選擇值，以新增其他 SRV 記錄。 

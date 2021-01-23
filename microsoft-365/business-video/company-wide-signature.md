@@ -1,5 +1,5 @@
 ---
-title: 建立全公司的簽名
+title: 建立全公司的簽章
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -16,18 +16,19 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
+- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: 瞭解如何建立全公司的電子郵件簽名。
-ms.openlocfilehash: 64c269abd25cab74ec5b0836975902e46a611c8c
-ms.sourcegitcommit: f231eece2927f0d01072fd092db1eab15525bbc2
+ms.openlocfilehash: 3a9623837b3a68fa8cc0fb378293ec463d9bb789
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701837"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49928297"
 ---
 # <a name="create-a-company-wide-email-signature"></a>建立全公司的電子郵件簽名
 

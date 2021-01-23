@@ -4,7 +4,7 @@ description: 描述建議的一般身分識別和裝置存取原則及設定。
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.topic: article
 f1.keywords:
 - NOCSH
@@ -18,12 +18,13 @@ ms.collection:
 - remotework
 - m365solution-identitydevice
 - m365solution-scenario
-ms.openlocfilehash: 0a9c09e33eb8fd5d03fcbdf44701544e656673d2
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.openlocfilehash: a928044df2c4185cff71db4883dcc1ddf30cdf3e
+ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615153"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49932583"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 
@@ -50,7 +51,7 @@ ms.locfileid: "49615153"
 
 為了讓您有時間完成這些工作，建議您依照此表中所列的順序實施基準原則。 不過，針對敏感和高管制保護層級的 MFA 原則，可在任何時候實施。
 
-|保護層級|原則|其他資訊|
+|保護層級|原則|其他相關資訊|
 |---|---|---|
 |**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](#require-mfa-based-on-sign-in-risk)||
 ||[封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-modern-authentication)|未使用新式驗證的用戶端可以略過條件式存取原則，因此請務必封鎖這些設定。|
@@ -132,7 +133,7 @@ ms.locfileid: "49615153"
 |設定|屬性|值|動作|
 |---|---|---|---|
 |授與|**授予存取**||Select|
-|||**需要多重要素驗證**|檢查|
+|||**需要多重要素驗證**|支票|
 ||**需要所有選取的控制項**||Select|
 |
 
@@ -192,8 +193,8 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 |類型|屬性|值|動作|
 |---|---|---|---|
-|存取|**允許存取**||Select|
-|||**需要密碼變更**|檢查|
+|Access|**允許存取**||Select|
+|||**需要密碼變更**|支票|
 |
 
 選擇 [ **完成** ] 以儲存 **存取** 設定。
@@ -218,7 +219,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 使用身分 [識別與裝置存取](microsoft-365-policies-configurations.md)設定中所述的原則，比較基準和機密保護階層與第2級企業增強型資料保護設定緊密對應。 高度管制防護階層密切對應于第3級企業高資料保護設定。
 
-|保護層級|應用程式保護原則|其他資訊|
+|保護層級|應用程式保護原則|其他相關資訊|
 |---|---|---|
 |基準|[第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
 |敏感性|[第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|

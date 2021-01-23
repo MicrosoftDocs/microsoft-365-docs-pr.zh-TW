@@ -6,10 +6,9 @@ keywords: 整合，Microsoft Defender，ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/29/2020
+ms.date: 01/21/2021
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: 搭配使用 Microsoft Defender for Office 365 與 Microsoft Defender for Endpoint，以取得對您的裝置和電子郵件內容的威脅相關的詳細資訊。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8cc78e7d674facb371ea98125b6857502031d26e
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 24b81bb4c445c44d7c0228fa1c4440faff642816
+ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616509"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "49939329"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>使用適用于 Office 365 的 Microsoft Defender 搭配 Microsoft Defender for Endpoint
 
@@ -61,7 +62,7 @@ ms.locfileid: "49616509"
 
    ![威脅管理功能表中的 Explorer](../../media/ThreatMgmt-Explorer-nav.png)
 
-3. 在螢幕的右上角，選擇 [ **Defender For Endpoint] 設定**。
+3. 在螢幕右上角，選擇 [ **(MDE 設定)** 的 [Defender]。
 
 4. 在 [Microsoft Defender for Endpoint connection] 對話方塊中，開啟 **[連線至 Microsoft defender For endpoint**] 對話方塊。
 
@@ -79,6 +80,6 @@ ms.locfileid: "49616509"
 
 [Office 365 中的威脅調查和回應功能](office-365-ti.md)
 
-[Microsoft Defender for Office 365](office-365-atp.md)
+[適用於 Office 365 的 Microsoft Defender](office-365-atp.md)
 
 [適用於端點的 Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection)

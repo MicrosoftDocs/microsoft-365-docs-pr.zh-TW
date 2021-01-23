@@ -22,12 +22,12 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 61bb7afedbbafb1272c3dfdbbecd0ede9777effe
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 2a4b66de9996ec0ea7047ca44ae3750a917c4cc2
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655575"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921677"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -42,11 +42,6 @@ ms.locfileid: "49655575"
 ![Excel 功能區和狀態列上的敏感度標籤](../media/Sensitivity-label-in-Excel.png)
 
 若要套用敏感度標籤，使用者必須使用 Microsoft 365 公司或學校帳戶登入。
-
-> [!NOTE]
-> 針對美國政府租使用者（GCC、GCC-H，和DoD），目前僅支援 Azure 資訊保護統一標籤用戶端和掃描器的敏感標籤。 
-> 
-> 如需詳細資訊，請參閱 [Azure 資訊保護進階版政府服務描述](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
 
 您可以使用敏感度標籤來：
   
@@ -113,7 +108,7 @@ ms.locfileid: "49655575"
     
     ![指派必要標籤的提示](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    如需有關當您建立或編輯敏感度標籤時 **自動標籤檔案和電子郵件** 設定的詳細資訊，請參閱針對 Office 應用程式[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)，和[自動標籤您在 Azure Purview 的資料](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
+    如需有關當您建立或編輯敏感度標籤時 **自動標籤檔案和電子郵件** 設定的詳細資訊，請參閱針對 Office 應用程式 [自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)，和 [自動標籤您在 Azure Purview 的資料](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
 
 ### <a name="label-scopes"></a>標籤範圍
 
