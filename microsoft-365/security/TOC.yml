@@ -241,18 +241,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: 建立與管理偵測規則
                       href: mtp/custom-detection-rules.md
-            - name: 報告
-              items:
-                - name: 監視及檢視報告
-                  href: mtp/monitoring-and-reporting.md
-                - name: 身分識別監視與報告
-                  href: mtp/monitor-and-report-identities.md
-                - name: 資料監視與報告
-                  href: mtp/monitor-data.md
-                - name: 裝置監視與報告
-                  href: mtp/monitor-devices.md
-                - name: 應用程式監視與報告
-                  href: mtp/monitor-apps.md
         - name: 參考
           items:
             - name: 權限與設定
