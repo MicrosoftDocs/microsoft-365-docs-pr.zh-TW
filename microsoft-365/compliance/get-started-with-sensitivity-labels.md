@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 準備開始實作敏感度標籤來協助保護貴組織的資料，但不確定從何處著手？ 閱讀一些實用的指導方針，以協助您開始套用標籤的旅程。
-ms.openlocfilehash: 36cd6a82363c330688de071d1e09ce8f0bfdd16c
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: 4568fd59734153d2f0fc3cffde21ad8319ddc04b
+ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709557"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "49921609"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>開始使用敏感度標籤
 
@@ -54,7 +54,7 @@ ms.locfileid: "49709557"
 
 許多不同的訂閱都支援敏感度標籤，以及使用者的授權需求取決於您所使用的功能。
 
-若要查看自 2020 年 4 月 1 日起授權使用者使用 Microsoft 365 合規性功能的選項，請參閱 [Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。 如需敏感度標籤，請參閱[資訊保護](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)一節及相關的 PDF 或 Excel 下載。
+若要查看授權使用者使用 Microsoft 365 合規性功能的選項，請參閱 [Microsoft 365 安全性與合規性的授權指引](https://aka.ms/ComplianceSD)。 如需敏感度標籤，請參閱[資訊保護](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)一節及相關的 PDF 或 Excel 下載。
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>建立和管理敏感度標籤所需的權限
 
@@ -73,7 +73,7 @@ ms.locfileid: "49709557"
 
 建議使用下一章的表格，確定與影響最大的業務需求對應的前兩種情況。 部署這些案例之後，請回到清單以確定下一個或下兩個部署的優先順序。
 
-您可以在可下載的《Microsoft 365 資訊保護與合規性部署加速指南》中找到其他一般部署指南。 如需詳細資訊，請參閱[Microsoft 資訊保護與合規性部署加速指南](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493) 部落格文章。
+您可以在可下載的「資料外洩防護」與《Microsoft 資訊保護部署加速指南》中找到其他一般部署指導方針。 如需詳細資訊，請參閱部落格文章 [Microsoft 365 資訊保護和合規性部署加速指南](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-365-information-protection-and-compliance-deployment/ba-p/2076404) (英文)。
 
 ## <a name="common-scenarios-for-sensitivity-labels"></a>敏感度標籤的常見案例
 
