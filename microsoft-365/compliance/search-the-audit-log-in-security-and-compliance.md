@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 您可以使用 Office 365 安全性與合規性中心或 [Microsoft 365 合規性中心] 以搜尋整合的稽核記錄，檢視貴組織中的使用者和系統管理員活動。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4028d5ff59625d2008afb4a384bc290a5df1b2a3
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 2e95c2f3627a6bb0c28b736437012a92107b3533
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682644"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976244"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>在合規性中心搜尋稽核記錄
 
@@ -66,10 +66,12 @@ ms.locfileid: "49682644"
 
 開始搜尋稽核記錄前，請務必閱讀下列項目。
 
-- 您 (或其他系統管理員) 必須先開啟稽核記錄，才能開始搜尋稽核記錄。 按一下「安全性與合規性中心」中 **[稽核記錄搜尋]** 頁面上的 **[開啟稽核]**，即可開啟此功能。 (如果您沒看到此連結，表示您的組織已開啟稽核功能。) 開啟此功能後，就會顯示一則訊息，表示正在準備稽核記錄，而您可以在準備完成 (約幾小時) 後執行搜尋。 此操作只需執行一次。 如需詳細資訊，請參閱[開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
+- 預設會開啟適用於 Microsoft 365 和 Office 365 企業組織的 [稽核記錄搜尋]。 其中包括使用 E3/G3 或 E5/G5 訂閱的組織。 若要驗證 [稽核記錄搜尋] 已開啟，您可以在 Exchange Online PowerShell 中執行下列命令：
 
-  > [!NOTE]
-  > 我們還在設法讓稽核功能可預設為開啟。 在那之前，您可以如上述方法來開啟該功能。
+  ```powershell
+  Get-AdminAuditLogConfig | FL UnifiedAuditLogIngestionEnabled
+  ```
+  *UnifiedAuditLogIngestionEnabled* 屬性為 `True` 值表示已開啟 [稽核記錄搜尋]。 如需詳細資訊，請參閱[開啟或關閉稽核記錄搜尋](turn-audit-log-search-on-or-off.md)。
 
 - 您必須在 Exchange Online 中獲派為 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，才能搜尋稽核記錄。 根據預設，這些角色會在 Exchange 系統管理員中心的 [權限] 頁面上，指派給 [法務遵循管理] 和 [組織管理] 角色群組。 請注意，Office 365 和 Microsoft 365 中的全域系統管理員會自動成為 Exchange Online 中的 [組織管理] 角色群組成員。 若要提供讓使用者能夠搜尋稽核記錄的最低權限等級，您可以在 Exchange Online 中建立自訂角色群組、新增 [僅限檢視稽核記錄] 或 [稽核記錄] 角色，然後將使用者加入這個新的角色群組成為其中的成員。 如需詳細資訊，請參閱[管理 Exchange Online 中的角色群組](https://go.microsoft.com/fwlink/p/?LinkID=730688)。
 
