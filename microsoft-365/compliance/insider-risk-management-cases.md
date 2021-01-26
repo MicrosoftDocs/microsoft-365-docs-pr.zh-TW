@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 84b17b70aa9b95727036e8f1febd4d0adec740a9
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: feabf3083b0ff1d182884c66fc2b2fd890275a0a
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841220"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976210"
 ---
 # <a name="insider-risk-management-cases"></a>內部人員風險管理案例
 
@@ -175,8 +175,7 @@ ms.locfileid: "49841220"
 2. 選取案例，然後選取 [ **Contributors** ] 索引標籤。
 3. 選取 [ **新增投稿** 人]。
 4. 在 [ **新增參與者** ] 對話方塊中，開始輸入您想要新增的使用者名稱，然後從 [建議的使用者] 清單中選取使用者。 此清單是由您租使用者訂閱的 Azure Active Directory 產生。
-5. 在 [ **新增參與者** ] 對話方塊中，選取參與者的訪問層級。 您可以選取 [ **永久** ] 或 [ **暫** 存檔]。
-6. 選取 [ **新增** ]，將使用者新增為投稿者，或選取 [ **取消** ] 關閉對話方塊，而不將使用者新增為參與者。
+5. 選取 [ **新增** ]，將使用者新增為投稿者，或選取 [ **取消** ] 關閉對話方塊，而不將使用者新增為參與者。
 
 ## <a name="case-actions"></a>案例動作
 

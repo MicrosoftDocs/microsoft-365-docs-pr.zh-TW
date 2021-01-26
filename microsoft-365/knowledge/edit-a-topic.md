@@ -7,16 +7,18 @@ manager: pamgreen
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-topics
 ms.service: ''
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 809d3936ed27275873f63526e7dfc8f91a15a0cc
-ms.sourcegitcommit: 18f95c4b7f74881b4a6ce71ad2ffa78a6ead5584
+ms.openlocfilehash: 79321ce7fc661fd95090c280eae0bcecd332221a
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "49731352"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976290"
 ---
 # <a name="edit-an-existing-topic-preview"></a>編輯現有的主題 (預覽) 
 
@@ -51,7 +53,7 @@ ms.locfileid: "49731352"
 2. 對頁面進行所需的變更。 這包括下欄欄位的更新：
 
     -  替代名稱
-    -  描述
+    -  說明
     -  固定人員
     -  檔案與頁面
     -  網站

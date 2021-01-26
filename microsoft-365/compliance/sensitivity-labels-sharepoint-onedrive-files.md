@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理員可以在 SharePoint 和 OneDrive 中啟用 Word、Excel 及 PowerPoint 檔案的敏感度標籤支援。
-ms.openlocfilehash: 376e0ed2eb6d7fd719cbafcd5bfbf66aaffd93cb
-ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
+ms.openlocfilehash: 0b5f17286456a364c6a8b4c5bdb397c5b0263b73
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49904008"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975896"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤
 
@@ -101,6 +101,8 @@ ms.locfileid: "49904008"
     - 使用內部部署金鑰 ( 「保留您自己的金鑰」或 HYOK) 的加密
     - 使用[雙重金鑰加密](double-key-encryption.md)所套用的加密
     - 獨立于標籤所套用的加密，例如直接套用 Rights Management protection 範本。
+
+- 不支援為 [其他語言](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) 設定的標籤，而且只會顯示原始語言。
 
 - 如果您刪除的標籤已套用至 SharePoint 或 OneDrive 中的檔，而不是從適當的標籤原則中移除標籤，則下載時將不會標記或加密檔。 相比之下，如果標籤的檔儲存在 SharePoint 或 OneDrive 之外，當標籤刪除時，該檔仍會保持加密狀態。 請注意，雖然您可以在測試階段刪除標籤，但很少需要在實際執行環境中刪除標籤。
 
@@ -257,4 +259,4 @@ Set-SPOTenant -EnableAIPIntegration $false
 
 在 SharePoint 和 OneDrive 中為 Office 檔案啟用敏感度標籤之後，請考慮使用自動標記原則自動標記這些檔案。 如需詳細資訊，請參閱 [自動將敏感度標籤套用至內容](apply-sensitivity-label-automatically.md)。
 
-需要與組織外部人員共用已標示和加密的檔嗎？  請參閱 [與外部使用者共用加密檔](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。
+需要與組織外的人員共用您的已套用標籤且加密之文件嗎？  請參閱[與外部用戶共用加密文件](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)。

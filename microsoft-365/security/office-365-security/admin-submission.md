@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
-ms.openlocfilehash: 432a245530d7906ae8babbc54176480d36315351
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 879a13e7c059495e653b79c424b227fe9f35a498
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864945"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976600"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 
@@ -32,7 +33,15 @@ ms.locfileid: "49864945"
 
 在使用 Exchange Online 信箱的 Microsoft 365 組織中，系統管理員可以使用安全性 & 合規性中心內的提交入口網站，將電子郵件訊息、URLs 和附件提交給 Microsoft 以供掃描。
 
-當您提交電子郵件時，您會收到任何可能允許內送電子郵件進入租使用者的原則，以及對郵件中的任何 URLs 和附件進行檢查的相關資訊。 可能允許郵件的原則包括個別使用者的安全寄件者清單，以及租使用者層級原則，例如 Exchange 郵件流程規則 (也稱為 transport rules) 。
+當您提交電子郵件訊息時，您會收到：
+
+1. **電子郵件驗證檢查**：傳送電子郵件時的驗證是否已通過或失敗的詳細資料。
+2. **原則點擊**：有關任何可能允許或封鎖內送電子郵件進入您租使用者之原則的資訊，請覆寫我們的服務篩選 verdicts。
+3. 「**負載信譽/引爆**：檢查郵件中的任何 URLs 和附件。
+4. **評分分析**：檢查是否有惡意的「人工 graders 完成」。
+
+> [!IMPORTANT]
+> 在所有承租人中都不會進行負載信譽/引爆和評分分析。 當資料不應該保留租使用者界限以符合合規性目的時，就會封鎖資訊，避免進入組織外部。
 
 如需其他方式將電子郵件訊息、URLs 和附件提交給 Microsoft，請參閱 [向 Microsoft 報告訊息和](report-junk-email-messages-to-microsoft.md)檔案。
 
@@ -77,7 +86,7 @@ ms.locfileid: "49864945"
 
 4. 完成作業後，請按一下 [ **提交** ] 按鈕。
 
-![URL 提交範例](../../media/submission-flyout-email.PNG)
+   ![URL 提交範例](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>將可疑 URL 傳送給 Microsoft
 
@@ -91,7 +100,7 @@ ms.locfileid: "49864945"
 
 3. 完成作業後，請按一下 [ **提交** ] 按鈕。
 
-![電子郵件提交範例](../../media/submission-url-flyout.png)
+   ![電子郵件提交範例](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>將可疑檔提交至 Microsoft
 
@@ -107,7 +116,7 @@ ms.locfileid: "49864945"
 
 4. 完成作業後，請按一下 [ **提交** ] 按鈕。
 
-![附件提交範例](../../media/submission-file-flyout.PNG)
+   ![附件提交範例](../../media/submission-file-flyout.PNG)
 
 ## <a name="view-admin-submissions"></a>查看系統管理員報送
 

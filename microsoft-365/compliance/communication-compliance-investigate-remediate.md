@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 61f92b5873497a75fd516900a7b7cd67a5d63b41
-ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
+ms.openlocfilehash: ea96780846507e7fc3edccb28e04055ce79261fa
+ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "49883672"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49980096"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>調查和修復通訊合規性警示
 
@@ -33,7 +33,7 @@ ms.locfileid: "49883672"
 
 調查您的原則所偵測到之問題的第一個步驟，就是在 Microsoft 365 規範中心檢查通訊相容性警示。 通訊規範解決方案區域中有許多區域，可協助您快速調查提醒，視您傾向于查看警示群組的方式而定：
 
-- **通訊相容性原則頁面**：當您登入以 [https://compliance.microsoft.com](https://compliance.microsoft.com) 使用 Microsoft 365 組織中的系統管理員帳號憑證時，請選取 [ **通訊符合** 性] 以顯示 [通訊符合性 **原則** ] 頁面。 此頁面會顯示為您的 Microsoft 365 組織設定的通訊相容性原則，以及建議原則範本的連結。 列出的每個原則包括需要檢查的警示計數、呈報及已解析的專案數目，以及原則的目前狀態。 選取原則會顯示符合原則的所有擱置中警示，選取啟動 [原則詳細資料] 頁面的特定警示，然後啟動修正動作。
+- **通訊相容性原則頁面**：當您登入以 [https://compliance.microsoft.com](https://compliance.microsoft.com) 使用 Microsoft 365 組織中的系統管理員帳號憑證時，請選取 [ **通訊符合** 性] 以顯示 [通訊符合性 **原則** ] 頁面。 此頁面會顯示為您的 Microsoft 365 組織設定的通訊相容性原則，以及建議原則範本的連結。 列出的每個原則包括需要檢查的警示計數、呈報和解決的專案數目、原則的狀態，以及上次原則掃描的日期和時間。 選取原則會顯示符合原則的所有擱置中警示，選取啟動 [原則詳細資料] 頁面的特定警示，然後啟動修正動作。
 - **警示**：流覽至 [**通訊相容性**  >  **警示**]，以顯示最近30天的警示，並依原則相符分組。 此視圖可讓您快速查看哪些通訊法規遵從性原則產生了按嚴重性排序的最大警示。 若要啟動修正動作，請選取與警示相關聯的原則，以啟動 [ **原則詳細資料** ] 頁面。 在 [ **原則詳細資料** ] 頁面上，您可以查看 [ **概覽** ] 頁面上的活動摘要、複查並 **處理暫** 止的頁面上的提醒訊息，或複查 **已解析** 的頁面上已關閉的警示記錄。
 - **報告**：流覽至 **通訊符合性**  >  **報告** 以顯示通訊相容性報告構件。 每個小工具都會提供通訊相容性活動和狀態的概覽，包括對原則相符和修正動作深入瞭解的存取。
 
