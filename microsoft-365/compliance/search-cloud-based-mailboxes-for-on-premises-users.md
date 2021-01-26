@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全性與合規性中心的內容搜尋工具，在 Exchange 混合式部署中搜尋及匯出內部部署使用者的 Microsoft Teams 聊天資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9620c48056545e6d6cf053040849acfe0a1bc68e
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 23f8ea08de3d7fdbbc36274374d315ef0cb66a84
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868011"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976200"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜尋內部部署使用者的 Teams 聊天資料
 
@@ -34,6 +34,8 @@ ms.locfileid: "49868011"
 - 內部部署目錄服務 (例如 Active Directory) 的使用者帳戶必須與 Azure Active Directory (Microsoft 365 中的目錄服務) 同步。 這表示會在 Microsoft 365 中建立郵件使用者帳戶，並將該帳戶與主要信箱位於內部部署組織中的使用者相關聯。
 
 - 主要信箱位於內部部署組織中的使用者必須受指派 Microsoft Teams 授權和 Exchange Online 方案 1 授權 (最低要求)。
+
+- 如果組織沒有 Exchange 混合式部署，則必須將內部部署 Exchange 結構描述同步處理至 Azure Active Directory。 如果您沒有這樣做，則可能會有為在內部部署 Exchange 組織中擁有信箱的使用者，於 Exchange Online 中建立重複的雲端式信箱的風險。
 
 - 只有與內部部署使用者相關聯的 Teams 聊天資料才會儲存在雲端式儲存區中。 內部部署使用者無法以任何方式存取此儲存區。
 
