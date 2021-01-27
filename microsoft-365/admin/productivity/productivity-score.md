@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 生產力分數概觀。
-ms.openlocfilehash: 8ba1ceb57cd322a67e7b154700a8ac90c62f5ef0
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 9f3e24d4af6858f106cde937940d5f0be1a4f85f
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921239"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988065"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft 生產力分數 
 
@@ -80,13 +80,14 @@ ms.locfileid: "49921239"
 
 生產力分數僅在 Microsoft 365 系統管理中心中可用，並且只有具有以下角色之一的 IT 專業人員才能存取：  
 
-- 全域系統管理員 
+- 全域系統管理員
 - Exchange 系統管理員
-- SharePoint 系統管理員 
-- 商務用 Skype 系統管理員 
-- Teams 系統管理員 
-- 全域讀取者 
-- 報告讀取者 
+- SharePoint 系統管理員
+- 商務用 Skype 系統管理員
+- Teams 系統管理員
+- 全域讀取者
+- 報告讀取者
+- 使用狀況摘要報告閱讀程式
 
 > [!NOTE]
 > 只有擁有全域系統管理員角色的 IT 專業人員才能註冊或加入選擇加入生產力分數的租用戶。

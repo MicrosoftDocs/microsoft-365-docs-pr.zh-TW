@@ -10,7 +10,6 @@ audience: ITPro
 ms.topic: how-to
 f1_keywords:
 - ms.exch.eac.ActionCenter.Restricted.Users.RestrictedUsers
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -19,12 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以從 Office 365 中的 [受限使用者] 入口網站瞭解如何移除使用者。 傳送輸出垃圾郵件 (通常是因為「帳戶洩露」) 的使用者會被新增至 [受限使用者] 入口網站。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bca9366fdb8cacdc58c12757e870c8ead8f1fa7a
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 779e769b76299edf9b6d205f64bed4738f2f2499
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683043"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988189"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>從 Office 365 中的 [受限使用者] 入口網站移除封鎖的使用者
 
@@ -71,7 +72,7 @@ ms.locfileid: "49683043"
 5. 按一下 **[是]** 以確認變更。
 
    > [!NOTE]
-   > 可能需要 30 分鐘以上的時間，才能移除限制。
+   > 從使用者移除所有限制最多可能需要 24 小時的時間。
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>確認受限使用者的提醒設定
 
@@ -82,7 +83,7 @@ ms.locfileid: "49683043"
 
 1. 在安全性與合規性中心，移至 **[警示]** \> **[警示原則]**。
 
-2. 尋找並選取 **[無法傳送電子郵件的受限使用者]** 警示。
+2. 尋找並選取 [無法傳送電子郵件的受限制使用者 **]** 警示。
 
 3. 在隨即出現的飛出視窗中，確認或設定如下設定：
 
