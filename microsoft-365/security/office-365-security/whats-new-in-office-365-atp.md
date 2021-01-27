@@ -3,7 +3,6 @@ title: Microsoft Defender for Office 365 的新功能
 description: 深入瞭解 Microsoft Defender for Office 365 的最新版本中可用的新功能。
 keywords: Office 365 atp 的新功能，ga，正式發行，可用，新功能
 search.appverid: met150
-ms.service: O365-seccomp
 ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
@@ -17,15 +16,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 10/09/2020
+ms.date: 01/12/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
-ms.openlocfilehash: fb588320461ab44d1ce0f10c0776bcc9ee61b551
-ms.sourcegitcommit: 0ecac0387be6b49025b79ce8eb949a8cf62481e2
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3544f1ccb760c461b7ab72c6dc037fd653136db9
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "49724399"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988157"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 的新功能
 
@@ -41,6 +42,10 @@ ms.locfileid: "49724399"
 > [!TIP]
 > 還沒有 Microsoft Defender for Office 365 嗎？ [連絡人銷售人員開始試用](https://go.microsoft.com/fwlink/p/?LinkId=518644)。
 
+## <a name="december-2020"></a>2020 年 12 月
+
+- [Office 365 中預設的安全性](secure-by-default.md)
+
 ## <a name="november-2020"></a>2020 年 11 月
 
 - 更新的匯出限制 > 重要訊息中心 > 修正從郵件提交和動作記錄檔 (Defender for Office 365 方案 2) 
@@ -48,7 +53,6 @@ ms.locfileid: "49724399"
 ## <a name="septemberoctober-2020"></a>2020年9月/10 月
 
 - [使用 Configuration Analyzer 檢查您的原則](configuration-analyzer-for-security-policies.md)
-- [使用承租人允許/封鎖清單手動覆寫篩選 verdicts](tenant-allow-block-list.md)
 - [威脅瀏覽器中的延伸功能（包括主要目標使用者、傳輸規則，以及](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) 在 [威脅瀏覽器](threat-explorer.md) 中 (Defender for office 365 資訊） (電子郵件是由承租人/User policy)  (Defender for office 365 方案2所允許/封鎖) 
 - 在 [威脅 Explorer](threat-explorer.md#threats-in-urls) 中呈現 URL 威脅 (惡意程式碼、網路釣魚、垃圾郵件或無)  (Office 365 方案2的 Defender) 
 - [改進搜尋體驗威脅 Explorer](threat-explorer.md#improvements-to-the-threat-hunting-experience-upcoming) ，包含威脅的更新、其他動作、傳遞位置和更新的時程表視圖 (Defender for Office 365 方案 2) 
@@ -109,7 +113,7 @@ ms.locfileid: "49724399"
 
 您知道 Microsoft Defender for Office 365 可提供兩種方案嗎？ [深入瞭解每個方案包含的內容](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap)
 

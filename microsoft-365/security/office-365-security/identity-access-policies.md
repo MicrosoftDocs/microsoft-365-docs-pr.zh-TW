@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a928044df2c4185cff71db4883dcc1ddf30cdf3e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 511f044960c5b723c8e10f6644007036c45d1f44
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932583"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988089"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 
@@ -51,7 +51,7 @@ ms.locfileid: "49932583"
 
 為了讓您有時間完成這些工作，建議您依照此表中所列的順序實施基準原則。 不過，針對敏感和高管制保護層級的 MFA 原則，可在任何時候實施。
 
-|保護層級|原則|其他相關資訊|
+|保護層級|原則|詳細資訊|
 |---|---|---|
 |**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](#require-mfa-based-on-sign-in-risk)||
 ||[封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-modern-authentication)|未使用新式驗證的用戶端可以略過條件式存取原則，因此請務必封鎖這些設定。|
@@ -219,7 +219,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 使用身分 [識別與裝置存取](microsoft-365-policies-configurations.md)設定中所述的原則，比較基準和機密保護階層與第2級企業增強型資料保護設定緊密對應。 高度管制防護階層密切對應于第3級企業高資料保護設定。
 
-|保護層級|應用程式保護原則|其他相關資訊|
+|保護層級|應用程式保護原則|詳細資訊|
 |---|---|---|
 |基準|[第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
 |敏感性|[第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
@@ -243,6 +243,8 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
    > 這種原則可確保行動使用者可以使用適用的應用程式來存取所有 Office 端點。
 
 如果您要啟用對 Exchange Online 的行動存取，請執行 [封鎖 ActiveSync 用戶端](secure-email-recommended-policies.md#block-activesync-clients)，以防止 Exchange ActiveSync 用戶端利用基本驗證連線至 Exchange Online。 本文頂端的圖例中並未說明這項原則。 它會在 [保護電子郵件的原則建議](secure-email-recommended-policies.md)中說明及描述。
+
+若要建立需要 iOS 和 Android 365 之 Edge 的條件式存取原則，請在 [案例2：瀏覽器應用程式需要已核准的應用程式搭配應用程式保護原則](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-2-browser-apps-require-approved-apps-with-app-protection-policies)，允許 IOS 和 Android 的 edge，但會封鎖其他行動裝置網頁瀏覽器連線至 Microsoft 365 端點。
 
  這些原則利用授與控制措施 [需要核准的用戶端應用程式](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) ，並 [要求應用程式保護原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)。
 

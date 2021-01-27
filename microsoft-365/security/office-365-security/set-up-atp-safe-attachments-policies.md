@@ -7,7 +7,6 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,12 +16,14 @@ ms.collection:
 - M365-security-compliance
 description: 瞭解如何定義安全附件原則，以利用電子郵件中的惡意檔來保護組織。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8dfdcc0779fb8b8438ee7a63d2f0e180cbb12ac9
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 5a26d214fe99d0053bf178d7d85a0b526d64f887
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780505"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988077"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中設定安全附件原則
 
@@ -51,7 +52,7 @@ ms.locfileid: "49780505"
 在 Exchange Online PowerShell 或獨立 EOP PowerShell 中，您可以個別管理原則和規則。 如需詳細資訊，請參閱本文稍後的 [使用 Exchange Online PowerShell 或獨立 EOP PowerShell 設定安全附件原則](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) 一節。
 
 > [!NOTE]
-> 在 [安全附件設定] 的 [全域設定] 區域中，設定不會相依于安全附件原則的功能。 如需相關指示，請參閱在[microsoft 365 E5 中](safe-docs.md)[開啟 SharePoint、OneDrive 和 Microsoft 小組](turn-on-atp-for-spo-odb-and-teams.md)和安全檔的 ATP。
+> 在 [安全附件設定] 的 [全域設定] 區域中，設定不會相依于安全附件原則的功能。 如需相關指示，請參閱在[microsoft 365 E5 中](safe-docs.md)[開啟 SharePoint、OneDrive 和 Microsoft 小組和安全檔的安全附件](turn-on-atp-for-spo-odb-and-teams.md)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>開始之前有哪些須知？
 
@@ -106,7 +107,7 @@ ms.locfileid: "49780505"
 
      標準和嚴格原則設定的建議是啟用重新定向。 如需詳細資訊，請參閱 [安全附件設定](recommended-settings-for-eop-and-office365-atp.md#safe-attachments-settings)。
 
-   - **若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取專案**。安全附件所指定的動作會對郵件採取 **未知惡意程式碼回應** ，即使無法完成安全附件掃描也是一樣。 如果您選取 [ **已啟用重新導向**]，一定要選取此選項。 否則，郵件可能會遺失。
+   - **若惡意程式碼掃描附件超時或發生錯誤，請套用上述選取專案**。安全附件所指定的動作會對郵件採取 **未知惡意程式碼回應** ，即使無法完成安全附件掃描也是一樣。 如果您選取此選項，請永遠選取 [ **已啟用重新導向**]。 否則，郵件可能會遺失。
 
    完成後，按 [下一步]。
 

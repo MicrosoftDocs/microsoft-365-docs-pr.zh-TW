@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
-ms.openlocfilehash: 8f9da620643d46bf21a18eccc2047ad4361832cc
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865056"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988125"
 ---
 # <a name="user-submissions-policy"></a>使用者提交原則
 
@@ -71,6 +72,15 @@ ms.locfileid: "49865056"
 
   - **組織管理** 或 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md) 的 **安全性系統管理員**。 
   - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups)中的 **組織管理**。
+
+- 您需要存取 Exchange Online PowerShell。 如果您嘗試使用的帳戶無法存取 Exchange Online PowerShell，當您指定提交信箱時，您會收到如下的錯誤訊息：
+
+  > 在您的網域中指定電子郵件地址
+
+  如需啟用或停用 Exchange Online PowerShell 存取權的詳細資訊，請參閱下列主題：
+
+  - [啟用或停用存取 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Exchange Online 中的用戶端存取規則](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>使用安全性 & 規範中心設定使用者提交信箱
 
