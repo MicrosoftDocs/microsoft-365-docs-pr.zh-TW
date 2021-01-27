@@ -19,12 +19,12 @@ ms.assetid: ''
 description: 瞭解您可以採取的基本疑難排解步驟，以解決 Office 365 eDiscovery 中的常見問題。
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4f1bad23705729c15976959a3902501f05da7600
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: e1fbda23b730956db42d8e7a92218fb9837868b8
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602034"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988137"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>調查、疑難排解及解決常見的 eDiscovery 問題
 
@@ -49,10 +49,10 @@ ms.locfileid: "49602034"
    ' Useralias@contoso.com ' 的輸出類似下列所示：
 
    > 
-   > |姓名|RecipientType|
+   > |Name|RecipientType|
    > |---|---|
    > |Alias、User|MailUser|
-   > |Alias、User|使用者|
+   > |Alias、User|User|
 
 3. 若傳回多個使用者，請找出並修正衝突的物件。
 
@@ -202,6 +202,22 @@ EDiscovery 搜尋失敗，錯誤為 `recipient not found` 。 如果無法在 Ex
 
 若要解決此問題，請重試 [下載搜尋結果](export-search-results.md#step-2-download-the-search-results)，這將會重新開機 EDiscovery 匯出工具。
 
-## <a name="see-also"></a>另請參閱
+## <a name="errorissue-downloaded-export-shows-no-results"></a>錯誤/問題：已下載的匯出未顯示任何結果
 
-- [避免內容位置錯誤的秘訣](retry-failed-content-search.md#tips-to-avoid-content-location-errors)
+匯出成功後，透過匯出工具完成的下載會在結果中顯示零個檔案。
+
+### <a name="resolution"></a>解決方案
+
+這是用戶端問題，為了進行修正，請嘗試下列步驟：
+
+1. 嘗試使用另一部用戶端/電腦來下載。
+
+2. 請務必下載到本機磁片磁碟機。
+
+3. 請確定病毒掃描程式未執行。
+
+4. 請確定沒有任何其他匯出正在下載至相同的資料夾或任何上層資料夾。
+
+5. 如果上述步驟無法運作，請停用 [壓縮] 和 [重復資料刪除]。
+
+6. 如果這樣做正常，則問題是由於本機病毒掃描程式或磁片問題所造成。

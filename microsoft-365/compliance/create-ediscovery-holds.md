@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 您可以建立與核心 eDiscovery 案例相關聯的保留，以保留可能與調查相關的內容。
-ms.openlocfilehash: 85cabfd4877892613386dca88834464a223398ac
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 76ea455af0a7600cd901bdcdaeb0e4b15ef9bc43
+ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682786"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "49988147"
 ---
 # <a name="create-an-ediscovery-hold"></a>建立電子文件探索保留
 
@@ -111,7 +111,7 @@ ms.locfileid: "49682786"
 
 當您在核心 eDiscovery 案例中 [搜尋內容](search-for-content-in-core-ediscovery.md) 時，您可以快速設定搜尋，只搜尋與案例相關聯之保留的內容位置。
 
-![位置，保留位置](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
+![保留位置](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
 
 選取 [ **保留的位置** ] 選項，可搜尋已設定保留狀態的所有內容位置。 若案例中包含多個 eDiscovery 保留，當您選取這個選項時，將會搜尋所有保留的內容位置。 此外，如果內容位置是放在查詢型保留中，當您執行搜尋時，只會搜尋符合保留查詢的專案。 換句話說，只有符合保留準則和搜尋準則的內容會隨搜尋結果一起傳回。 例如，如果使用者已設定為以查詢為基礎的案例保留，可保留在特定日期之前已傳送或建立的專案，則只會搜尋這些專案。 這是透過以 **and** 運算子連接案例保留查詢和搜尋查詢來完成。
 
@@ -131,13 +131,25 @@ ms.locfileid: "49682786"
 
 或者，屬於「 *1:1 交談* 」或「 *1： N 群組聊天* 」) 之 (小組中 [交談] 清單一部分的交談，都是儲存在參與聊天的使用者信箱中。 與在聊天交談中的使用者共用的檔案，會儲存在共用該檔案之使用者的 OneDrive 帳戶中。 因此，您必須將個別的使用者信箱和 OneDrive 帳戶新增至 eDiscovery 暫止，以保留聊天清單中的交談和檔案。 除了放置小組信箱和網站保留狀態之外，還建議您保留 Microsoft 小組成員的信箱。
 
-從2020年2月開始，我們開啟的功能可保留私人通道中的內容。 因為私人通道聊天是儲存在聊天參與者的信箱中，所以在 eDiscovery 保留中放置使用者信箱將會保留私人通道聊天。 此外，如果使用者信箱位於2月2020日前的 eDiscovery 暫止狀態，則保留現在會自動套用至該信箱中儲存的私人通道郵件。 也支援保留私人通道中共用的檔案。
-
-如需有關保留小組內容的詳細資訊，請參閱 [將 Microsoft 團隊使用者或小組設為法定保留](https://docs.microsoft.com/MicrosoftTeams/legal-hold)。
-    
 > [!IMPORTANT]
 > 在雲端式組織中，參與交談（屬於小組中的聊天室清單）的使用者必須具有 Exchange Online 信箱，才能在信箱置於 eDiscovery 暫止時保留聊天交談。 這是因為 [聊天室] 清單中的交談是儲存在聊天參與者的雲端架構信箱中。 如果聊天參與者沒有 Exchange Online 信箱，您將無法保留這些聊天會話。 例如，在 Exchange 混合式部署中，具有內部部署信箱的使用者，可能能夠加入屬於小組之聊天室清單一部分的交談。 不過，在此情況下，無法保留這些交談的內容，因為這些使用者沒有可以保留的雲端式信箱。
-  
+
+如需有關保留小組內容的詳細資訊，請參閱 [將 Microsoft 團隊使用者或小組設為法定保留](https://docs.microsoft.com/MicrosoftTeams/legal-hold)。
+
+### <a name="preserve-card-content"></a>保留卡片內容
+
+同樣地，小組頻道中的應用程式所產生的卡片內容，1:1 聊天和1： N 群組聊天會儲存在信箱中，而且會在信箱置於 eDiscovery 暫止時保留。 *卡片* 是簡短內容片段的 UI 容器。 名片可以有多個屬性和附件，也可以包含觸發卡片動作的按鈕。 如需詳細資訊，請參閱 [卡片](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards)。 與其他小組內容不同的是，智慧卡內容的儲存位置取決於使用卡的位置。 小組通道中使用的卡片內容會儲存在小組群組信箱中。 1:1 和1xN 聊天室的卡片內容會儲存在聊天參與者的信箱中。
+
+### <a name="preserve-meeting-and-call-information"></a>保留會議及電話資訊
+
+「小組頻道」中會議和通話的摘要資訊也會儲存在撥打會議或通話的使用者信箱中。 將 eDiscovery 保留放在使用者信箱時，也會保留此內容。
+
+### <a name="preserve-content-in-private-channels"></a>保留私人通道中的內容
+
+從2020年2月開始，我們也開啟了保留私人通道內容的能力。 因為私人通道聊天是儲存在聊天參與者的信箱中，所以在 eDiscovery 保留中放置使用者信箱將會保留私人通道聊天。 此外，如果使用者信箱位於2月2020日前的 eDiscovery 暫止狀態，則保留現在會自動套用至該信箱中儲存的私人通道郵件。 也支援保留私人通道中共用的檔案。
+
+### <a name="preserve-wiki-content"></a>保留 wiki 內容
+
 每個小組或小組頻道也包含 Wiki 進行記事與共同作業。 Wiki 的內容會自動儲存至 .mht 格式的檔案中。 此檔案會儲存在團隊 SharePoint 網站上的 Teams Wiki 資料文件庫中。 您可以將小組的 SharePoint 網站新增至 eDiscovery 保留，以保留 wiki 內容。
 
 > [!NOTE]
@@ -176,7 +188,7 @@ ms.locfileid: "49682786"
     > [!NOTE]
     > 若要執行 **Get-UnifiedGroupLinks** Cmdlet，您必須獲指派 Exchange Online 中的「僅檢視收件者」角色或者為獲指派「僅檢視收件者」角色之角色群組的成員。
 
-## <a name="onedrive-accounts"></a>OneDrive 帳戶
+## <a name="preserve-content-in-onedrive-accounts"></a>保留 OneDrive 帳戶中的內容
 
 若要收集組織中商務網站 OneDrive 的 URLs 清單，以便將其新增至與 eDiscovery 案例相關聯的保留或搜尋，請參閱 [建立組織中所有 OneDrive 位置的清單](https://docs.microsoft.com/onedrive/list-onedrive-urls)。 本文中的腳本會建立一個文字檔，其中包含組織中所有 OneDrive 網站的清單。 若要執行此指令碼，您必須安裝並使用 SharePoint Online 管理命令介面。 請務必將您組織 MySite 網域的 URL 附加至您要搜尋的每個 OneDrive 網站。 這是包含您所有 OneDrive 的網域；例如，`https://contoso-my.sharepoint.com`。 以下是使用者 OneDrive 網站的 URL 範例：`https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`。
 

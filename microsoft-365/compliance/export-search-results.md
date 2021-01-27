@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 從 Microsoft 365 規範中心的內容搜尋中，將搜尋結果匯出至本機電腦。 電子郵件結果會匯出為 PST 檔案。 從 SharePoint 和 OneDrive 商務網站的內容會匯出為原生 Office 檔。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12c8755d4ca8b5ff97582b879c07fe103c996ecf
-ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
+ms.openlocfilehash: 7027593768238b3d9a465eaa6038d92234c32f82
+ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799700"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "49992509"
 ---
 # <a name="export-content-search-results"></a>匯出內容搜尋結果
 
@@ -158,14 +158,17 @@ ms.locfileid: "49799700"
   
    2. 按一下 [瀏覽] 以指定搜尋結果檔案要下載到的位置。
   
-      > [!NOTE]
-      > 由於大量的磁片活動 (讀寫) ，所以應該將搜尋結果下載至本機磁片磁碟機;不要將其下載到對應的網路磁碟機或其他網路位置。 
-  
+      > [!IMPORTANT]
+      >  由於下載過程中的網路活動過高，所以您應該只將搜尋結果下載至本機電腦上的內部磁片磁碟機上的某個位置。 如需最佳下載體驗，請遵循下列指導方針： <br/>
+      >- 不要將搜尋結果下載至 UNC 路徑、對應網路磁碟機、外部 USB 磁片磁碟機或商務用 OneDrive 的商務帳戶。<br/>
+      >- 針對下載搜尋結果的資料夾停用防病毒掃描。<br/>
+      >- 將搜尋結果下載至不同的資料夾，以進行並行下載工作。
+
 6. 按一下 [開始] 將搜尋結果下載至您的電腦。
   
     **EDiscovery 匯出工具** 會顯示匯出程式的狀態資訊，包括估計要下載之其餘專案的數位 (和大小) 。 匯出程式完成後，您可以在下載檔案的位置存取檔案。
 
-## <a name="more-information"></a>其他相關資訊
+## <a name="more-information"></a>詳細資訊
 
 以下是匯出搜尋結果的詳細資訊。
   
