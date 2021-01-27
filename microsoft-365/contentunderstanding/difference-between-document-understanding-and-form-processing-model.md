@@ -7,15 +7,17 @@ audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 localization_priority: Priority
 description: 描述文件瞭解和表單處理模型之間的差異
-ms.openlocfilehash: e847ed9b7a00e0ff0542ad3b9ba35c314070837d
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: f57d220eb77a783de5ac352f3cf684364252a163
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087628"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49975874"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>文件瞭解和表單處理模型之間的差異 
 
@@ -37,22 +39,22 @@ Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>結構化、非結構化和半結構化內容
 
-使用文件瞭解模型從非結構化文件（如信件或合約）中識別和擷取資料，這些文件中要擷取的文字實體位於句子或文件的特定區域中。 例如，非結構化文件可以是可以用不同方式撰寫的合同續約函。 不過，資訊會持續存在於每個合同續約文件的本文中，例如文字字串 *服務開始日期* 後接著實際日期。   
+使用文件瞭解模型從非結構化文件（如信件或合約）中識別和擷取資料，這些文件中要擷取的文字實體位於句子或文件的特定區域中。 例如，非結構化文件可以是可以用不同方式撰寫的合同續約函。 不過，資訊會持續存在於每個合同續約文件的本文中，例如文字字串 *服務開始日期* 後接著實際日期。
 
-使用表單處理模型來識別檔案並從結構化或半結構化文件（如表單或發票）中擷取資料。 表單處理模型經過訓練，能够從範例文件中瞭解表單的版面配置，並學會查找需要從類似位置擷取的資料，因為表單具有更為結構化的版面配置，其中實體位於同一位置（例如，納稅表中的社會保障號）。 
+使用表單處理模型來識別檔案並從結構化或半結構化文件（如表單或發票）中擷取資料。 表單處理模型經過訓練，能够從範例文件中瞭解表單的版面配置，並學會查找需要從類似位置擷取的資料。 表單通常具有更具結構化的版面配置，其中實體皆位於同一個位置 (例如，在稅務表單中的社會保險號碼)。
 
 > [!NOTE]
 > 您必須具有内容中心網站的存取權限才能建立文件瞭解模型或將其套用至 SharePoint 文件庫。 
 
 
-## <a name="where-they-are-created"></a>建立它們的位置
+## <a name="where-models-are-created"></a>建立模型的位置
 
 文件瞭解模型在 SharePoint 內容中心網站中建立和管理。 
 
 > [!NOTE]
 > 如需有關輸入檔的詳細資訊，請參閱[表單處理模型需求和限制](https://docs.microsoft.com/ai-builder/form-processing-model-requirements)。 
 
-表單處理模型是在 PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview)中建立，但建立是直接從 SharePoint 文件庫發起。 需要在文件庫上啟用表單處理模型建立，以便使用者為其建立表單處理模型，管理員可以在內容瞭解管理設定中執行此操作。 表單處理模型使用 PowerAutomate 流程在文件上傳到文件庫時處理這些檔案。
+表單處理模型是在 PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview)中建立，但建立是直接從 SharePoint 文件庫啟動。 文件庫必須先啟用表單處理模型建立，使用者才能建立表單處理模型。 系統管理員可以在內容瞭解系統管理員設定中啟用表單處理模型建立。 表單處理模型使用 PowerAutomate 流程以在文件上傳到文件庫時處理這些檔案。
 
 當您建立文件瞭解模型時，將建立儲存在 SharePoint 內容類型庫中的 [新 SharePoint 內容類型](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978)。 或者，您可以視需要使用現有內容類型來定義模型。
 
@@ -62,7 +64,7 @@ Microsoft SharePoint Syntex 中的內容瞭解可讓您識別並分類上傳至 
 
 您可以將文件瞭解模型套用至您有權存取的 SharePoint 文件庫。 使用內容中心建立文件瞭解模型，並將它套用至不同的文件庫。 内容中心使您能够更集中地控制文件瞭解模型的使用方式和套用位置。 注意：此資訊還必須匯總到内容中心。
 
-表單處理模型目前只能套用到您建立它們時使用的 SharePoint 文件庫。 這可讓擁有網站存取權的授權使用者建立表單處理模型。 請注意，您的系統管理員必須在 SharePoint 文件庫啟用表單處理，以便其對授權使用者可用。
+表單處理模型目前只能套用到您建立它們時使用的 SharePoint 文件庫。 這可讓擁有網站存取權的授權使用者建立表單處理模型。 請注意，您的系統管理員必須在 SharePoint 文件庫啟用表單處理，以供授權使用者使用之。
 
  ## <a name="see-also"></a>另請參閱
 [訓練：使用 AI Builder 改善商務效能](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)

@@ -7,16 +7,18 @@ manager: serdars
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: enabler-strategic
+ms.collection:
+- enabler-strategic
+- m365initiative-syntex
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: 1abcc71200642de3f74a92e83299e079ffffb038
-ms.sourcegitcommit: d859ea36152c227699c1786ef08cda5805ecf7db
+ms.openlocfilehash: a9713f1d28cf863ab827d2975e84042026105b3f
+ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49604261"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "49976378"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -24,15 +26,15 @@ ms.locfileid: "49604261"
 
 開始之前，請先考慮下列事項：
 
-- 哪些 SharePoint 網站會啟用表單處理？ 所有網站、部分或選取的網站嗎？
+- 其中哪些 SharePoint 網站您將會啟用表單處理？ 所有網站、部分或選取的網站嗎？
 - 您的預設內容中心名稱為何？
 
 您可以在 Microsoft 365 系統管理中心初次設定之後變更您的設定。
 
-設定之前，請務必針對您環境中的設定和設定內容理解的最佳方式進行規劃。 例如，您需要考慮下列名稱：
+設定之前，請務必針對您環境中的設定和設定內容理解的最佳方式進行規劃。 例如，您需要做出下列決定：
 
 - 您想要啟用表單處理的 SharePoint 網站 - 所有網站、部分或選取的網站
-- 您的內容中心和主要網站系統管理員的名稱
+- 名稱和系統管理員或您的內容中心
 
 ## <a name="requirements"></a>需求 
 
@@ -55,8 +57,8 @@ ms.locfileid: "49604261"
 4. 在 **[設定表單處理]** 頁面上，您可以選擇是否要讓使用者能夠在特定 SharePoint 文件庫中建立表單處理模型。 您可以在 [文件庫] 功能區中使用功能表選項，在啟用此功能的 SharePoint 文件庫中 **[建立表單處理模型]**。
  
      針對 **哪個 SharePoint 文件庫應顯示建立表單處理模型的選項**，您可以選取：</br>
-      - **所有 SharePoint 文件庫**，讓組織中的所有 SharePoint 文件庫皆可使用。</br>
-      - **僅限選取網站中的文件庫**，然後選取您要讓其可供使用的網站，或上傳最多 50 個網站的清單。</br>
+      - **所有 SharePoint 文件庫**，讓貴組織中的所有 SharePoint 文件庫皆可使用。</br>
+      - **僅限選取 SharePoint 網站中的文件庫**，然後選取您要讓其可供使用的網站，或上傳最多 50 個網站的清單。</br>
       - **不使用 SharePoint 文件庫**，如果您不想讓任何網站都能使用 SharePoint 文件庫 (您可以在設定後變更)。
 
    > [!div class="mx-imgBorder"]
@@ -114,4 +116,3 @@ ms.locfileid: "49604261"
 [表單處理模型概觀](https://docs.microsoft.com/ai-builder/form-processing-model-overview)
 
 [逐步執行：如何建立文件理解模型 (影片)](https://www.youtube.com/watch?v=DymSHObD-bg)
-
