@@ -9,7 +9,6 @@ ms.reviewer: ''
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,20 +16,19 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以瞭解如何使用設定分析器，找出並修正低於標準防護和嚴格保護預設安全性原則的安全性原則。
-ms.openlocfilehash: af7cf269151c7e947a0a2f653ce8638d46ccd905
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 04027e78a2683c6c33954bb548c502497c5e8323
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658658"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029475"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP 和 Microsoft Defender for Office 365 中保護原則的設定分析器
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-
-> [!NOTE]
-> 本文所述的功能都是在預覽中，並非所有組織都提供，而且可能會變更。 如需發行排程的相關資訊，請參閱 [Microsoft 365 藍圖](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=config%2Canalyzer)。
 
 Security & 合規性中心的設定分析器提供一個集中位置，以找出並修正安全性原則，其中的設定低於標準 [安全性原則](preset-security-policies.md)中的標準防護和嚴格保護設定檔設定。
 
@@ -62,16 +60,17 @@ Security & 合規性中心的設定分析器提供一個集中位置，以找出
 
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。
 
-- 您必須先獲指派安全性與合規性中心的權限，才能執行此文章中的程序：
+- 您必須先獲得 [安全性與合規性中心] 指派的權限，才能使用此文章中的程序：
   - 若要使用設定分析器 **並** 更新安全性原則，您必須是「 **組織管理** 」或「 **安全性管理員** 」角色群組的成員。
   - 若要唯讀存取設定分析器，您必須是 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
 
   如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-  **附註**：
-
-  - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
-  - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
+  > [!NOTE]
+  >  
+  > - 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+  > 
+  > - [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) 中的 **僅限檢視組織管理** 角色群組也會提供功能的唯讀存取權。
 
 ## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>在安全性 & 規範中心使用設定分析器
 

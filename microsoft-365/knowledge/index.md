@@ -14,12 +14,12 @@ ms.collection:
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
 description: 瞭解如何尋找主題經驗的資源。
-ms.openlocfilehash: a9069b8723cb23a406fcce3b96a53b3de2a07568
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976176"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029605"
 ---
 # <a name="introduction-to-topic-experiences-preview"></a> (預覽的主題經驗簡介) 
 
@@ -43,8 +43,8 @@ ms.locfileid: "49976176"
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|深入了解文件瞭解|[主題經驗概述](topic-experiences-overview.md)|
-|瞭解如何透過 AI 探索及建立主題|[主題體驗探索](topic-experiences-discovery.md)|
+|深入瞭解主題經驗|[主題經驗概述](topic-experiences-overview.md)|
+|瞭解如何透過 AI 來探索及建議主題|[主題體驗探索](topic-experiences-discovery.md)|
 |深入瞭解主題安全性|[主題體驗安全性和隱私權](topic-experiences-security-privacy.md)|
 
 
@@ -64,7 +64,7 @@ ms.locfileid: "49976176"
 |:-----|:-----|
 |瞭解如何設定及設定主題經驗|[設定主題經驗](set-up-topic-experiences.md)|
 |瞭解如何設定使用者權限|[管理主題權限](topic-experiences-user-permissions.md)|
-|瞭解如何管理人員可以查看主題|[管理主題可見度](topic-experiences-knowledge-rules.md)|
+|瞭解如何管理可查看主題的人員|[管理主題可見度](topic-experiences-knowledge-rules.md)|
 |瞭解如何管理主題探索設定|[管理主題探索](topic-experiences-discovery.md)|
 
 ## <a name="work-with-topics"></a>使用主題

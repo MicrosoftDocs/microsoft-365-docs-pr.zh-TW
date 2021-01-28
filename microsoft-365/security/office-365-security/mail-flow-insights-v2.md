@@ -3,21 +3,22 @@ title: 郵件流程儀表板中的郵件流程洞察力
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: 系統管理員可以深入瞭解安全性 & 規範中心的郵件流程儀表板中提供的真知灼見和報告。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f7781dca48e1eae4716dbe6c7c3b40da4bae0cd8
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ef9498d19e79cf670fbae52171b78b0c44c45910
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920005"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029359"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>安全性與合規性中心內的郵件流程深入解析
 
@@ -64,9 +65,9 @@ ms.locfileid: "48920005"
 
 - 安全性 & 規範中心內的 **組織管理** (全域管理員) 。
 
-- Azure Active Directory 中的 **[Exchange 系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** 。
+- Azure Active Directory 中的 **[Exchange 系統管理員](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)**。
 
-- 郵件流程安全性 & 規範中心的 **系統管理員** 。 如果該帳戶並非也是「組織管理」或「Exchange 管理員」角色群組的成員，請考慮下列問題：
+- 郵件流程安全性 & 規範中心的 **系統管理員**。 如果該帳戶並非也是「組織管理」或「Exchange 管理員」角色群組的成員，請考慮下列問題：
   - 使用者必須直接登入安全性 & 合規性中心 <https://protection.office.com> 。
   - 使用者只具有郵件流程儀表板的唯讀許可權。
   - 使用者將無法存取 Microsoft 365 系統管理中心。
@@ -75,6 +76,6 @@ ms.locfileid: "48920005"
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>哪裡可以找到郵件流程儀表板
 
-開啟安全性 & 合規性中心 <https://protection.office.com> ，展開 [ **郵件流程** ]，然後選取 [ **儀表板** ]。
+開啟安全性 & 合規性中心 <https://protection.office.com> ，展開 [ **郵件流程**]，然後選取 [ **儀表板**]。
 
 若要直接移至 [郵件流程] 儀表板，請開啟] <https://protection.office.com/mailflow/dashboard> 。

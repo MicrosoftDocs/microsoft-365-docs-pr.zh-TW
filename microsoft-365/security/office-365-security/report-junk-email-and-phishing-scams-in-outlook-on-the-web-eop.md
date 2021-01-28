@@ -3,12 +3,11 @@ title: 在 web 上的 Outlook 中報告垃圾郵件和網路釣魚電子郵件
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解 Outlook 網頁版 Outlook 中內建的垃圾郵件、非垃圾郵件和網路釣魚電子郵件報告選項，在 Exchange Online 中) 的 Outlook Web App (，以及如何為使用者停用這些報告選項。
-ms.openlocfilehash: 0032e807961aed60128d6863899ae0de32d1a627
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 0af57aceed608ae80e72e3ae18724925c1168e26
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659306"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029207"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-on-the-web-in-exchange-online"></a>在 Exchange Online 中，在 Outlook 網頁版中報告垃圾郵件和網路釣魚電子郵件
 

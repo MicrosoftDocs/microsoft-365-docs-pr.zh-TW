@@ -3,7 +3,7 @@ title: 系統管理報送
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -19,12 +19,12 @@ ms.custom:
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內的提交入口網站，將可疑的電子郵件、可疑網路釣魚郵件、垃圾郵件和其他可能有害的郵件、URLs 和檔案提交至 Microsoft 進行掃描。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 879a13e7c059495e653b79c424b227fe9f35a498
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: ed417db93bc2f3efa6b85b0ef97c10b5941cd8eb
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976600"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029511"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>使用系統管理提交，將可疑的垃圾郵件、網路釣魚詐騙、URL 和檔案提交給 Microsoft
 

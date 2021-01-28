@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: troubleshooting
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: 系統管理員可以在 Exchange Online Protection (EOP) 中查看有關隔離郵件的常見問題和解答。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 58ddb5847706aef3d2c3b8ea8cd9a96fd65a9b3d
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: abd2304e83d2814cab55d13312535bd94308d8be
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794409"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032598"
 ---
 # <a name="quarantined-messages-faq"></a>隔離的郵件常見問題
 
@@ -72,16 +73,39 @@ ms.locfileid: "49794409"
 
 在安全性 & 規範中心內不支援萬用字元。 例如，在搜尋寄件者時，您必須指定完整的電子郵件地址。 不過，您可以在 Exchange Online PowerShell 或獨立 EOP PowerShell 中使用萬用字元。
 
-例如，執行下列命令，尋找來自網域 contoso.com 中所有寄件者的垃圾郵件隔離郵件：
+例如，將下列 PowerShell 程式碼複製到 [記事本] 中，並將檔案儲存為. ps1 在輕鬆找到 (的位置，例如 C:\Data\QuarantineRelease.ps1) 。
+
+當您連線至 [Exchange online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 或 [exchange online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)之後，請執行下列命令以執行腳本：
 
 ```powershell
-$CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contoso.com"}
+& C:\Data\QuarantineRelease.ps1
 ```
 
-然後，執行下列命令，以將這些郵件釋放給所有原始收件者：
+腳本會執行下列動作：
+
+- 尋找以垃圾郵件隔離的 unreleased 郵件（來自 fabrikam 網域中的所有寄件者）。 結果的最大數目為 50000 (50 頁面的1000結果) 。
+- 將結果儲存至 CSV 檔案。
+- 釋放對應的隔離郵件給所有原始收件者。
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+$Page = 1
+$List = $null
+
+Do
+{
+Write-Host "Getting Page " $Page
+
+$List = (Get-QuarantineMessage -Type Spam -PageSize 1000 -Page $Page | where {$_.Released -like "False" -and $_.SenderAddress -like "*fabrikam.com"})
+Write-Host "                     " $List.count " rows in this page match"
+Write-Host "                                                             Exporting list to appended CSV for logging"
+$List | Export-Csv -Path "C:\Data\Quarantined Message Matches.csv" -Append -NoTypeInformation
+
+Write-Host "Releasing page " $Page
+$List | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
+
+$Page = $Page + 1
+
+} Until ($Page -eq 50)
 ```
 
 在您發佈郵件後，就無法再放開。

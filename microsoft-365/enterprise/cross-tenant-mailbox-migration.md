@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: aecb1230ac9a9b2868c519c9b8920e312ff5a282
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 4296879b36e26f11f945105ccebea351ad88314d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794041"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029523"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -176,7 +176,7 @@ ms.locfileid: "49794041"
 
 3. 在 Microsoft 365 系統管理中心或遠端 PowerShell 會話中，建立一或多個擁有郵件功能的安全性群組，以控制目標租使用者所允許的信箱清單，以拉 (從來源租使用者) 移至目標租使用者。 您不需要事先填入此群組，但必須至少提供一個群組，才能執行安裝步驟 (script) 。 不支援嵌套群組。 
 
-4. 從 GitHub 存放庫在以下位置下載來源承租人安裝程式的 SetupCrossTenantRelationshipForTargetResource.ps1 腳本： [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) 。 
+4. 從 GitHub 存放庫在以下位置下載來源承租人安裝程式的 SetupCrossTenantRelationshipForResourceTenant.ps1 腳本： [https://github.com/microsoft/cross-tenant/releases/tag/Preview](https://github.com/microsoft/cross-tenant/releases/tag/Preview) 。 
 
 5. 使用您的 Exchange 系統管理員許可權，建立與來源承租人的遠端 PowerShell 連線。 若要設定來源租使用者，則不需要全域系統管理員許可權，因為 Azure 應用程式的建立程式是由目標租使用者所組成。
 
@@ -657,7 +657,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
    - 當 msExchRemoteRecipientType 設定為 8 (DeprovisionMailbox) 時，針對遷移到目標租使用者的內部部署 MailUsers，Azure 中的 proxy 清理邏輯會移除 nonowned 網域，並將 primarySMTP 重設為擁有的網域。 清除內部部署 MailUser 中的 [msExchRemoteRecipientType]，便不再套用 proxy 清理邏輯。 <br/><br>以下是包括 Exchange Online 之一組可能的完整服務方案。
 
-   | 姓名                                              |
+   | Name                                              |
    |---------------------------------------------------|
    | 高級 eDiscovery 儲存 (500GB)                |
    | 客戶加密箱                                  |

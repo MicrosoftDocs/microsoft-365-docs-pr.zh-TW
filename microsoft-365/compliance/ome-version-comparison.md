@@ -17,22 +17,43 @@ search.appverid:
 - MET150
 description: 本文可協助說明不同版本的 Office 365 郵件加密之間的差異。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f8052272cfa4951cae132f0f66b0d9f84e05b168
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: 30344a9cbe8629804f5026fc809577923965b7bc
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709660"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032620"
 ---
 # <a name="compare-versions-of-ome"></a>比較 OME 版本
 
-本文比較舊版 Office 365 郵件加密 (OME) 到新的 OME 功能和 Office 365 的高級郵件加密。 新功能是 OME 和 Information Rights Management (IRM) 的合併和更新版本。 此外，還會概括說明部署為 GCC 高的獨特特性。 這兩個可以在您的組織中共存。 如需新功能運作方式的詳細資訊，請參閱 [Office 365 Message Encryption (OME) ](ome.md)。
+> [!IMPORTANT]
+> 在2021年2月28日，Microsoft 將取代對 Exchange Online 中的 AD RMS 的支援。 如果您已部署的混合式環境所在的 Exchange 信箱是線上的，而且您正在使用具有 Active Directory RMS 內部部署的 IRM，則您必須遷移至 Azure。 部署在 GCC 中型環境中的組織也會受到影響。 如需詳細資訊，請參閱本文中的「AD RMS 已過時，Exchange Online 中的 AD RMS。」。
+
+本文的其餘部分會比較舊版 Office 365 郵件加密 (OME) 到新的 OME 功能和 Office 365 的高級郵件加密。 新功能是 OME 和 Information Rights Management (IRM) 的合併和更新版本。 此外，還會概括說明部署為 GCC 高的獨特特性。 這兩個可以在您的組織中共存。 如需新功能運作方式的詳細資訊，請參閱 [Office 365 Message Encryption (OME) ](ome.md)。
 
 本文是有關 Office 365 郵件加密的更多系列文章的一部分。 本文適用于系統管理員和 ITPros。 如果您只是尋找傳送或接收加密郵件的相關資訊，請參閱 [Office 365 郵件加密 (OME ](ome.md) 中的文章清單) 並找出最符合您需求的文章。
 
+## <a name="overview-of-ad-rms-deprecation-in-exchange-online"></a>Exchange Online 中的 AD RMS 棄用情況概述
+
+Exchange Online 包含資訊版權管理 (IRM) 功能，可提供線上和離線保護電子郵件訊息和附件。 根據預設，Exchange Online 會使用 Azure Azure 資訊保護。 不過，您的組織可能已將 Exchange Online IRM 設定為使用內部部署 Active Directory Rights Management Service (AD RMS) 。 Exchange Online 中的 AD RMS 支援已退休。 相反地，Azure 資訊保護完全會取代 AD RMS。
+
+開始之前，請先檢查並評估組織的影響。 如果您的組織已在 Exchange Online 中使用 Azure 資訊保護來加密電子郵件，則不需要執行任何動作。 如果您使用 Exchange 郵件流程規則（例如使用 Office 365 郵件加密）來加密您的電子郵件，則不需要變更您的安全電子郵件。 否則，您必須透過切換 Azure 資訊保護來準備 AD RMS 棄用。
+
+### <a name="prepare-for-ad-rms-deprecation"></a>準備 AD RMS 已過時
+
+如果您已設定 Azure 資訊保護，但您並未使用它，請使用 Exchange Online PowerShell 來啟用服務。 在您的本機電腦上，使用組織中具有全域系統管理員許可權的公司或學校帳戶，在 Windows PowerShell 視窗中連線 [至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) 。
+
+若要啟用 Azure 資訊保護，請輸入下列命令，以使用 Set-IrmConfiguration Cmdlet。
+
+```powershell
+Set-IrmConfiguration -AzureRMSLicensingEnabled $true
+```
+
+如果您的組織尚未設定 Azure 資訊保護，您將需要從 AD RMS 遷移至 Azure 資訊保護。 如需相關指示，請參閱 [從 AD RMS 遷移到 Azure 資訊保護](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms)。
+
 ## <a name="side-by-side-comparison-of-features-and-capabilities"></a>功能和功能的並列比較
 
-|           **情況**           | **舊版 OME**    | **IRM**           | **新的 OME 功能** |
+|           **情況**           | **舊版 OME**    | **AD RMS 中的 IRM**        | **新的 OME 功能** |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |*傳送加密郵件*        |透過 Exchange 郵件流程規則|使用者從 Outlook desktop 或網頁型 Outlook 啟動;或透過 Exchange 郵件流程規則|使用者從 Outlook desktop、Mac 版 Outlook 或網頁型 Outlook 啟動;透過 Exchange 郵件流程規則 (也稱為傳輸規則) 和資料遺失防護 (DLP) |
 |*Rights management 範本*       |   不適用      |[不要轉寄] 選項及自訂範本|[不要轉寄] 選項、Encrypt-Only 選項及自訂範本|

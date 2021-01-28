@@ -3,29 +3,30 @@ title: 郵件流程圖
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: 系統管理員可以瞭解如何使用安全性 & 合規性中心內郵件流程儀表板中的郵件流程地圖，以視覺化和追蹤郵件如何透過連接器傳送或從其組織傳送，而不使用連接器。
-ms.openlocfilehash: fc03f05db77c40dbf726692e6fb6069d587a5ffc
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c07730f3abcec8905285cdfdf1579ffb71573ec1
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877762"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029915"
 ---
 # <a name="mail-flow-map-in-the-security--compliance-center"></a>安全性 & 規範中心內的郵件流程地圖
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-[安全性 & 合規性中心](https://protection.office.com)的 [郵件流程儀表板](mail-flow-insights-v2.md)中的 **郵件流程地圖** ，可提供郵件透過您的組織流動的洞察力。 您可以使用此資訊來瞭解模式、識別異常，並在發生問題時修正問題。
+[安全性 & 合規性中心](https://protection.office.com)的 [郵件流程儀表板](mail-flow-insights-v2.md)中的 **郵件流程地圖**，可提供郵件透過您的組織流動的洞察力。 您可以使用此資訊來瞭解模式、識別異常，並在發生問題時修正問題。
 
 ![安全性 & 規範中心內郵件流程儀表板中的郵件流程對應構件](../../media/mfi-mail-flow-map-widget.png)
 
@@ -37,17 +38,17 @@ ms.locfileid: "48877762"
 
 報表檢視提供下列圖表：
 
-- **顯示資料：概述** ：這基本上是更大的小工具視圖。 如果您將游標懸停在特定色彩上，就會針對該類型的連接器顯示郵件數目。
+- **顯示資料：概述**：這基本上是更大的小工具視圖。 如果您將游標懸停在特定色彩上，就會針對該類型的連接器顯示郵件數目。
 
   ![郵件流程地圖報告中的概覽視圖](../../media/mfi-mail-flow-map-report-overview.png)
 
-- **顯示資料：詳細資料** ：此視圖顯示連接器和目的地網域的詳細資料。 會列出上方寄件者和收件者網域，其餘部分則放入 **其他** 人。 如果您將游標懸停在特定的色彩及區段上，就會顯示訊息的數目。
+- **顯示資料：詳細資料**：此視圖顯示連接器和目的地網域的詳細資料。 會列出上方寄件者和收件者網域，其餘部分則放入 **其他** 人。 如果您將游標懸停在特定的色彩及區段上，就會顯示訊息的數目。
 
   ![郵件流程地圖報告中的詳細資料檢視](../../media/mfi-mail-flow-map-report-detail.png)
 
 如果您按一下報表檢視中的 [ **篩選器** ]，您可以指定具有 **開始日期** 和 **結束日期** 的日期範圍。
 
-若要將特定日期範圍的報告傳送至一或多個收件者，請按一下 [ **要求下載** ]。
+若要將特定日期範圍的報告傳送至一或多個收件者，請按一下 [ **要求下載**]。
 
 相關的洞察力會顯示在郵件流程地圖底下（如果有的話） (例如， [修正可能的郵件迴圈洞察力](mfi-mail-loop-insight.md)) 。
 
@@ -67,10 +68,10 @@ ms.locfileid: "48877762"
 
 ![從郵件流程地圖的詳細資料表格中彈出詳細資料](../../media/mfi-mail-flow-map-view-details-table-details.png)
 
-若要將特定日期範圍的報告傳送至一或多個收件者，請按一下 [ **要求下載** ]。
+若要將特定日期範圍的報告傳送至一或多個收件者，請按一下 [ **要求下載**]。
 
-若要回到 [報告] 視圖，請按一下 [ **查看報告** ]。
+若要回到 [報告] 視圖，請按一下 [ **查看報告**]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

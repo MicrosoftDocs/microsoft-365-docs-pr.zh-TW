@@ -3,20 +3,21 @@ title: 轉寄的新網域電子郵件深入解析
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: exchange-online
 localization_priority: Normal
 ms.assetid: ''
 description: 系統管理員可以瞭解如何使用「安全性 & 規範中心」中郵件流程儀表板中的新網域，以調查他們的使用者是否要將郵件轉寄給已永不轉寄的外部網域。
-ms.openlocfilehash: a72ffd001ea22972d9dc6c00af8a4dd7881386b7
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: eb44f5d577d18fc38333cca5e8d2d862f288a2e0
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49356940"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029855"
 ---
 # <a name="new-domains-being-forwarded-email-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心轉寄電子郵件的新網域
 
@@ -37,7 +38,7 @@ ms.locfileid: "49356940"
 
 ![在按一下要轉寄電子郵件的新網域後，出現的詳細資料浮出控制項](../../media/mfi-new-domains-being-forwarded-details.png)
 
-您也可以在 [ (**報表** 儀表板] 或 [) ] 的 [**熱門洞察力 & 建議**] 區域中按一下 [**全部查看**] 之後，取得此詳細資料頁面 \> **Dashboard** <https://protection.office.com/insightdashboard> 。
+您也可以在 [ (**報表** 儀表板] 或 [) ] 的 [**熱門洞察力 & 建議**] 區域中按一下 [**全部查看**] 之後，取得此詳細資料頁面 \>  <https://protection.office.com/insightdashboard> 。
 
 若要防止自動將郵件轉送到外部網域，請設定部分或所有外部網域的遠端網域。 如需詳細資訊，請參閱 [管理 Exchange Online 中的遠端網域](https://docs.microsoft.com/Exchange/mail-flow-best-practices/remote-domains/manage-remote-domains)。
 

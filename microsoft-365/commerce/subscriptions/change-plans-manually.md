@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ROBOTS: NOINDEX
 description: 購買新的訂閱以手動變更訂閱，並確保訂閱同時列出並使用中。
-ms.openlocfilehash: 09557b3556db1e6f17d7a4cd54a88ba34d0f0bd7
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1127a48ff23c528e3218bae4ccfd063df5e3c26d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647816"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029383"
 ---
 # <a name="change-plans-manually"></a>手動變更計畫
 
@@ -59,7 +59,7 @@ OR
 
 ## <a name="step-3-check-your-new-subscription-and-licenses"></a>步驟3：檢查您的新訂閱與授權
 
-1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 
 2. **確認同時列出和使用中的兩個訂閱** 您要將使用者移至其中的訂閱，以及您要將使用者移至其中的訂閱，必須一起列出。 如果您第一次檢查時新的訂閱不在那裡，請稍後再試一次。 檢查這兩個訂閱是否都在使用中。 [未列出或未使用中的新訂閱](#the-new-subscription-isnt-listed-or-isnt-active)。
 
@@ -88,7 +88,7 @@ OR
 
 2. 在 [作用中 **使用者** ] 頁面上，選取您要指派授權的使用者。
 
-3. 在 [ **授權和應用程式** ] 索引標籤上，展開 [ **授權**]，選取您要指派之授權的方塊，然後選取 [ **儲存變更**]。
+3. 在 [ **授權與應用程式** ] 索引標籤上，展開 [ **授權**]，選取您要指派之授權的方塊，然後選取 [ **儲存變更**]。
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>一次為多位使用者重新指派授權
 

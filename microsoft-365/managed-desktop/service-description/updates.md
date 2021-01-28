@@ -9,12 +9,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 53a21c4126e59861200df405ffe365b2ccef08f8
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 4d8de363cc9111fade719fdf5384519d1236f431
+ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840286"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50031336"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>如何在 Microsoft 受管理的電腦中處理更新
 
@@ -37,19 +37,26 @@ Microsoft 受管理的桌面會使用四個 Azure AD 群組來管理更新：
 - **Fast**：優先執行速度高於穩定性。 用於偵測品質問題，再將其提供給廣泛的群組。 這個群組是做為下一個驗證層，但通常比測試和第一個群組更穩定。 
 - **廣泛**：上一個群組可提供功能和品質更新。 此群組包含租使用者中大部分的使用者，因此會在部署時優先于速度。 在環境最穩定的情況時，應該在這裡進行應用程式的測試。 
 
+### <a name="moving-devices-between-update-groups"></a>在更新群組之間移動裝置
+您可能想要讓某些裝置接收最後的更新，以及您想要最先移的其他裝置。 若要將這些裝置移至適當的更新群組，請 [提交系統管理員支援要求](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support?view=o365-worldwide) ，我們會為您移動裝置。 
+
 > [!NOTE]
-> 如果您需要將使用者移至不同的更新群組，請提交支援要求。 如需提交支援要求的詳細資訊，請參閱 [Microsoft Managed Desktop 的支援](support.md) 。 如果您自行移動使用者，移動將會還原。
+> 如果您需要將使用者移至不同的更新群組，請提交支援要求。 不要在更新群組之間自行移動裝置。 如果裝置移動不正確，將會造成嚴重的後果。 裝置可能會意外更新，而且原則可能會發生衝突，變更裝置設定。
 
-如需這些部署群組的詳細資訊，請參閱 [Microsoft 受管理的桌面角色和責任](../intro/roles-and-responsibilities.md)
+如需這些部署群組中角色和責任的詳細資訊，請參閱 [Microsoft 受管理的桌面角色與責任](../intro/roles-and-responsibilities.md)
 
-更新部署的運作方式：
-- Microsoft 受管理的桌面會根據表格中所指定的排程，部署新的功能或品質更新。
-- 在部署期間，Microsoft 受管理的桌面監視器會根據診斷資料和使用者支援系統) ，以取得失敗或中斷 (的跡象。 如果偵測到任何，則會立即暫停部署至所有目前和未來的群組。
+### <a name="using-microsoft-managed-desktop-update-groups"></a>使用 Microsoft 受管理的桌面更新群組 
+您管理的服務有些部分（如應用程式部署），您可能需要將其設定為針對所有受管理的裝置。 在這些情況下，您可以使用更新群組，以瞭解您無法新增、移除或變更這些群組的成員資格，以達到這些使用者的意義。 
+
+## <a name="how-update-deployment-works"></a>更新部署的運作方式：
+1. Microsoft 受管理的桌面會根據下表中所指定的排程，部署新的功能或品質更新。
+2. 在部署期間，Microsoft 受管理的桌面監視器會根據診斷資料和使用者支援系統，針對失敗或中斷的跡象進行標記。 如果偵測到任何情況，我們會立即暫停部署至所有目前和未來的群組。
     - 範例：如果在部署第一個群組的品質更新時會發現問題，則在解決問題之前，先將部署更新為第一個、快速和廣泛的部署。
-    - 您可以在 Microsoft Managed Desktop Admin 入口網站中將票證歸檔，以報告相容性問題。
-- 會獨立暫停功能和品質更新。 預設情況下，Pause 會生效于35天，但可根據問題是否已修正，加以縮短或擴充。
-- Unpaused 群組之後，就會根據資料表中的排程，繼續進行部署。
-- 此部署程式會同時適用于功能和品質更新，不過每個階段的時程表各有不同。
+    - 您可以在 Microsoft Managed Desktop Admin 入口網站中歸檔票證，以報告相容性問題。
+    - 會獨立暫停功能和品質更新。 預設情況下，Pause 會生效于35天，但可根據問題是否已修正，加以縮短或擴充。
+3. 當群組未暫停時，將會根據資料表中的排程，繼續進行部署。
+
+此部署程式會同時適用于功能和品質更新，不過每個階段的時程表各有不同。
 
 
 
@@ -63,6 +70,7 @@ Microsoft 受管理的桌面會使用四個 Azure AD 群組來管理更新：
     <tr><td>防病毒定義</td><td colspan="4">更新每個掃描</td></tr>
     <tr><td>Microsoft 365 Apps 企業版</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">深入了解</a></td></tr>
     <tr><td>Microsoft Edge</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">深入了解</a></td></tr>
+    <tr><td>Microsoft Teams</td><td colspan="4"><a href="https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/teams#updates">深入了解</a></td></tr>
 </table>
 
 >[!NOTE]
@@ -78,6 +86,5 @@ Microsoft 受管理的桌面不支援屬於 Windows 預覽體驗計畫的裝置�
 
 ## <a name="bandwidth-management"></a>頻寬管理
 
-我們使用 [傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) 來進行所有作業系統及驅動程式更新。 這項功能透過從公司網路內的對等機器尋找更新，將 Windows Update service 的下載大小降至最低。
-
+我們使用 [傳遞優化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) 來進行所有作業系統及驅動程式更新。 這可透過從公司網路中的對等機器尋找更新，將 Windows Update service 的下載大小降到最低。
 

@@ -3,20 +3,21 @@ title: 自動轉寄訊息深入解析
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: 系統管理員可以在安全性 & 合規性中心的郵件流程儀表板中瞭解自動轉寄的郵件報告。
-ms.openlocfilehash: 28cb593d56d0b0054c8c8cbe4596d4f7df6442ab
-ms.sourcegitcommit: d7975c391e03eeb96e29c1d02e77d2a1433ea67c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c892400152df15adb3dfeb0c747ed7fae034d3d6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "48920593"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029939"
 ---
 # <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心內，自動轉寄的郵件會深入瞭解
 
@@ -31,14 +32,14 @@ ms.locfileid: "48920593"
 
 當您按一下小工具中的郵件數目時，會出現一個彈出窗格，顯示自動轉寄郵件的詳細資訊：
 
-- 透過 **轉送方法自動轉寄的郵件** ：
+- 透過 **轉送方法自動轉寄的郵件**：
 
   - **依郵件流程規則**
   - **依收件匣規則**
   - 透過 **SMTP** 轉寄：此方法會指出系統管理員可以在信箱上設定的自動轉寄，如 [設定信箱的電子郵件](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)轉寄中所述。
   - 有關詳細資訊，請查看 [轉接報告](view-mail-flow-reports.md#forwarding-report) 的連結。
 
-- **依網域和使用者自動轉寄郵件** ：
+- **依網域和使用者自動轉寄郵件**：
 
   - **前5個網域會轉寄至**
   - **新的網域 (上周)**
@@ -48,13 +49,13 @@ ms.locfileid: "48920593"
 
 ![安全性 & 規範中心內自動轉寄郵件報告的詳細資料彈出報告](../../media/mfi-auto-forwarded-messages-details.png)
 
-## <a name="insights"></a>深入資訊
+## <a name="insights"></a>深入解析
 
 這兩種洞察力是根據報表資料產生的：
 
 - [新增使用者轉送電子郵件](mfi-new-users-forwarding-email.md)
 - [轉寄電子郵件的新網域](mfi-new-domains-being-forwarded-email.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

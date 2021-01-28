@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: 深入瞭解自動擴充封存，為 Exchange Online 信箱提供無限制的封存儲存。
-ms.openlocfilehash: 5481fd14f281c132475613228c835c72592d2f59
-ms.sourcegitcommit: 33afa334328cc4e3f2474abd611c1411adabd39f
+ms.openlocfilehash: 9692ba27c64f41ac584bb4008a8b860daab031f5
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48370421"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029429"
 ---
 # <a name="overview-of-unlimited-archiving"></a>無限制封存概觀
 
@@ -57,7 +57,7 @@ Microsoft 365 (中的「無限封存」功能稱為「 *自動展開* 封存」)
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>哪些專案會移至其他封存儲存空間？
 
-若要有效使用自動展開的封存儲存區，資料夾可能會移動。 Microsoft 365 會決定當其他儲存區新增至封存時，哪些資料夾會移動。 有時移動資料夾時，會自動建立一個或多個子資料夾，而且原始檔案夾中的專案會發佈到這些資料夾，以協助移動程式。 當您在 Outlook 中查看資料夾清單的封存部分時，這些子資料夾會顯示在原始檔案夾底下。  Microsoft 365 用來命名這些子資料夾的命名慣例，是** \<folder name\> 在 mmm dd，yyyy h_mm) 上建立 _yyyy (**，其中：
+若要有效使用自動展開的封存儲存區，資料夾可能會移動。 Microsoft 365 會決定當其他儲存區新增至封存時，哪些資料夾會移動。 有時移動資料夾時，會自動建立一個或多個子資料夾，而且原始檔案夾中的專案會發佈到這些資料夾，以協助移動程式。 當您在 Outlook 中查看資料夾清單的封存部分時，這些子資料夾會顯示在原始檔案夾底下。  Microsoft 365 用來命名這些子資料夾的命名慣例，是 **\<folder name\> 在 mmm dd，yyyy h_mm) 上建立 _yyyy (**，其中：
 
 - **yyyy** 是一年接收資料夾中的郵件。
 
@@ -90,7 +90,8 @@ Microsoft 365 (中的「無限封存」功能稱為「 *自動展開* 封存」)
 
 - 您可以存取封存信箱中的任何資料夾，包括已移至自動擴充儲存區域的資料夾。
 
-- 僅限預覽人員組建16.0.12716.10000 時，才可在 Outlook Desktop 中搜尋自動擴充的封存。 網頁版 Outlook 中提供搜尋。 類似于線上封存，您只需搜尋資料夾本身，即可搜尋移至其他儲存體區域的專案。 這表示您必須選取 [資料夾清單] 中的 [封存] 資料夾，以選取 **目前的資料夾** 選項作為搜尋範圍。 同樣地，如果自動擴充的儲存體區域中的資料夾包含子資料夾，您必須分別搜尋每個子資料夾。
+- 在 web 上的 Outlook 中可使用自動展開的封存功能。 類似于線上封存，您可以搜尋目前的資料夾本身，搜尋移至其他儲存體區域的專案。 這表示您必須選取 [資料夾清單] 中的 [封存] 資料夾，然後選取單一資料夾作為搜尋範圍。 同樣地，如果自動擴充的儲存體區域中的資料夾包含子資料夾，您必須分別搜尋每個子資料夾。
+- 您可以在目前的頻道 (預覽) 中，在 Outlook Desktop 中使用自動擴充的封存搜尋。 在此預覽中，目前的信箱範圍可供使用，因此可讓您搜尋自動展開的封存。 如需此和其他 Microsoft 搜尋支援功能的相關資訊，請參閱 [Outlook For Windows To Exchange Online 如何利用 Microsoft 搜尋](https://techcommunity.microsoft.com/t5/outlook-global-customer-service/how-outlook-for-windows-connected-to-exchange-online-utilizes/ba-p/1715045)。 
 
 - Outlook 中的專案計數和已讀取/未讀取的計數 (在自動展開的封存中的 Outlook 和 Outlook 網頁) 中，可能不會準確。
 
@@ -108,7 +109,7 @@ Microsoft 365 (中的「無限封存」功能稱為「 *自動展開* 封存」)
 
 - **通訊記錄管理 (MRM) ：** 如果您使用 Exchange Online 中的 MRM 刪除原則永久刪除過期的信箱專案，則也會刪除位於自動展開封存中的已過期專案。
 
-- 匯**入服務：** 您可以使用 Office 365 匯入服務，將 PST 檔案匯入至使用者的自動擴充封存。 您可以將最多 100 GB 的資料從 PST 檔案匯入至使用者的封存信箱。
+- 匯 **入服務：** 您可以使用 Office 365 匯入服務，將 PST 檔案匯入至使用者的自動擴充封存。 您可以將最多 100 GB 的資料從 PST 檔案匯入至使用者的封存信箱。
 
 ## <a name="more-information"></a>詳細資訊
 

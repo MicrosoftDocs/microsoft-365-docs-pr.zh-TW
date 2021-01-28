@@ -3,21 +3,22 @@ title: 郵件流程儀表板中的輸出和輸入郵件流程洞察力
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: 系統管理員可以在安全性 & 合規性中心的郵件流程儀表板中瞭解輸出和輸入郵件流程的洞察力。
-ms.openlocfilehash: cff7c3a14b62475903729f4528652f192c2da09f
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e46a0ebf0c14e31462d1e86d8a8d8c08486337af
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877666"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029819"
 ---
 # <a name="outbound-and-inbound-mail-flow-insight-in-the-security--compliance-center"></a>安全性 & 規範中心內的輸出和輸入郵件流程洞察力
 
@@ -33,7 +34,7 @@ ms.locfileid: "48877666"
 小工具中的資訊與 Microsoft 365 中的連接器和 TLS 郵件保護有關。 如需相關資訊，請參閱這些主題：
 
 - [使用連接器設定郵件流程](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow)
-- [Exchange Online 如何使用 TLS 來保護電子郵件連線](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
+- [Exchange Online 如何使用 TLS 保護電子郵件連線](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections)
 - [Microsoft 365 中有關加密的技術參考詳細資料](https://docs.microsoft.com/microsoft-365/compliance/technical-reference-details-about-encryption)
 
 ## <a name="message-protected-in-transit-by-tls"></a>傳輸中郵件保護 (使用 TLS)
@@ -55,6 +56,6 @@ ms.locfileid: "48877666"
 
 針對 TLS 1.0 連線，您實際上需要將您的電子郵件伺服器或夥伴的伺服器升級或修復，以避免 Microsoft 365 中的 TLS 1.0 支援最後已被取代的任何問題。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

@@ -3,20 +3,21 @@ title: 在郵件流程儀表板中佇列洞察力
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: 系統管理員可以瞭解如何使用 Security & 合規性中心內郵件流程儀表板中的 [佇列] 小工具，以透過輸出連接器監視其內部部署或夥伴組織的失敗郵件流程。
-ms.openlocfilehash: a1563c61620ef9f1ae97739681f426fd0ea38bd8
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 73e97cbbd05e298013e9e686053a969d587ad5cf
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659239"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029147"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>在安全性 & 規範中心內佇列的洞察力
 
@@ -90,6 +91,6 @@ Microsoft 365 會繼續重新嘗試傳遞24小時。 24小時後，郵件會到�
 
 ![郵件已延遲安全性 & 規範中心的警示詳細資料](../../media/mfi-queued-messages-alert-details.png)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 如需郵件流程儀表板中其他真知灼見的詳細資訊，請參閱 [Security & 合規性中心中的郵件流程洞察力](mail-flow-insights-v2.md)。

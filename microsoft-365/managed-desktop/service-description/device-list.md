@@ -8,16 +8,16 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 6e904eee5a132d271ec32ee99a19380463e53193
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: ee2e473f947f35d4f0d192005718a26e89590fab
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881770"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032654"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Microsoft 受管理的桌面裝置 
 
-Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文概述在 Microsoft 受管理的電腦中註冊裝置的需求，並列出目前支援的特定裝置。
+Microsoft 受管理的桌面會定期評估要納入服務的裝置。 本文列出目前支援的特定裝置。 如需更一般的裝置需求語句，請參閱 [裝置需求](device-requirements.md)。
 
 如需 Microsoft 受管理電腦的詳細資訊，請參閱 [Microsoft 受管理的桌面檔和資源](https://docs.microsoft.com/microsoft-365/managed-desktop/)。 
 

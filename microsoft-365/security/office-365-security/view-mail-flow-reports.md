@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -18,12 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: 系統管理員可以深入瞭解安全性 & 合規性中心的「報告」儀表板中提供的郵件流程報告。
 ms.custom: ''
-ms.openlocfilehash: 1ededf2d0d693c537c159c52d00deb03f278b4b2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e69085d1fad845ab519f2590b0527316463373a7
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659462"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029795"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>在安全性 & 規範中心的報表儀表板中查看郵件流程報告
 
@@ -32,7 +33,7 @@ ms.locfileid: "49659462"
 
 除了安全性 & 合規性中心的 [郵件流程儀表板](mail-flow-insights-v2.md) 中所提供的郵件流程報告之外，「報告」儀表板還提供各種額外的郵件流程報告，可協助您監視 Microsoft 365 組織。
 
-如果您有 [必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移至 [**報表**] 儀表板，在 [安全性 & 規範中心](https://office.protection.com)中查看這些報告 \> ****。 若要直接移至 [報告] 儀表板，請開啟] <https://protection.office.com/insightdashboard> 。
+如果您有 [必要的許可權](#what-permissions-are-needed-to-view-these-reports)，您可以移至 [**報表**] 儀表板，在 [安全性 & 規範中心](https://protection.office.com)中查看這些報告 \> ****。 若要直接移至 [報告] 儀表板，請開啟] <https://protection.office.com/insightdashboard> 。
 
 ![安全性 & 規範中心內的報告儀表板](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -540,11 +541,12 @@ ms.locfileid: "49659462"
 - **組織管理**
 - **安全性系統管理員**
 - **安全性讀取者**
-- **全域讀取器**
+- **全域讀取者**
 
 如需詳細資訊，請參閱[安全性與合規性中心中的權限](permissions-in-the-security-and-compliance-center.md)。
 
-**附注**：將使用者新增至 microsoft 365 系統管理中心的對應 Azure Active Directory 角色，可讓使用者具備安全性 & 合規性中心的許可權 _，以及_ Microsoft 365 中其他功能的許可權。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
+> [!NOTE]
+> 在 Microsoft 365 系統管理中心中，將使用者新增至對應的 Azure Active Directory 角色可為使用者提供 [安全性與合規性中心] 所需的權限 _和_ Microsoft 365 中其他功能的權限。 如需詳細資訊，請參閱[關於系統管理員角色](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)。
 
 ## <a name="related-topics"></a>相關主題
 

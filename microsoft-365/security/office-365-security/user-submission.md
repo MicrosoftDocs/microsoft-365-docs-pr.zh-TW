@@ -3,7 +3,7 @@ title: 使用者提交原則
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: chrisda
+author: siosulli
 manager: dansimp
 ms.date: ''
 audience: ITPro
@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解如何設定信箱，以收集使用者所報告的垃圾郵件和網路釣魚電子郵件。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9759bbae1dc49b80859198e11e6f85383cdf2f66
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 28848908934057cc898eeca489cd2ee21f30692f
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988125"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029759"
 ---
 # <a name="user-submissions-policy"></a>使用者提交原則
 
@@ -100,7 +100,7 @@ ms.locfileid: "49988125"
 
       - **提交後**：按一下 [ ![ 展開圖示] ](../../media/scc-expand-icon.png) 。 在 [ **標題** ] 和 [ **確認訊息** ] 方塊中，輸入使用者在使用報告訊息增益集或報告網路釣魚增益集報告訊息之後所看到的描述性文字。 您可以使用變數% type% 來包含提交類型。
 
-      完成後，請按一下 **[儲存]**。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原** 回來]。
+      完成後，按一下 **[儲存]**。 若要清除這些值，請按一下 [**使用者報送**] 頁面上的 [**還原** 回來]。
 
       - **將報告的郵件傳送至**：進行下列其中一項選擇：
 
