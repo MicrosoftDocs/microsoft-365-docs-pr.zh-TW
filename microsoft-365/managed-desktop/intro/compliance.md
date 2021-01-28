@@ -1,5 +1,5 @@
 ---
-title: 合規性
+title: 法規符合性
 description: 本文列出與 Microsoft 受管理的桌面相關的相容性標準。
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d47757e8e9b36baf060c86436bd7840ded7c324d
-ms.sourcegitcommit: 280200281aec862517876319a3fe4ce170674047
+ms.openlocfilehash: f2fae1e41562d1ae743ecd964b42082b3d6486e8
+ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49586670"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50031348"
 ---
 # <a name="compliance"></a>合規性
 
@@ -36,7 +36,7 @@ Microsoft 受管理的桌面已達到下列認證：
 - [服務組織控制 (SOC) 1、2、3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
 - [支付卡行業 (PCI) 資料安全標準 (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 - [健康保險流通與責任法案 (HIPAA) ](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [澳大利亞政府資訊安全性註冊 Assessor 程式 (IRAP) ](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+- [資訊安全性註冊 Assessor 程式 (IRAP) ](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
 
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>審計員報告和合規性憑證
@@ -48,4 +48,4 @@ Microsoft 受管理的桌面已達到下列認證：
 
 ## <a name="shared-responsibility"></a>共用責任
 
-雲端服務的相容性是雲端服務提供者與客戶之間的共同責任。 如需詳細資訊，請參閱 [Cloud 計算的共用責任](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility)。
+雲端服務的相容性是雲端服務提供者與客戶之間的共同責任。 如需詳細資訊，請參閱 [雲端中的共用責任](https://docs.microsoft.com/azure/security/fundamentals/shared-responsibility)。
