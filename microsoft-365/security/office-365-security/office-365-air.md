@@ -8,8 +8,7 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.date: 11/05/2020
-ms.service: O365-seccomp
+ms.date: 01/28/2021
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -21,12 +20,14 @@ description: 開始使用 Microsoft Defender for Office 365 中的自動調查�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 570fb3c9d180d3167cfc5a4e3c3825102875b74f
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: ee448e31ccbddbf1d1d5653614ec75fa94768b3b
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865005"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040529"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 中的自動調查和回應 (AIR) 
 
@@ -94,7 +95,7 @@ AIR 功能包含在 [適用于 Office 365 的 Microsoft Defender](office-365-atp
 
 5. [安全連結和安全附件](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)。
 
-6. [SharePoint、OneDrive 和 Microsoft 小組的安全附件](protect-against-threats.md#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)。
+6. [SharePoint、OneDrive 和 Microsoft 小組的安全附件](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)。
 
 7. [電子郵件的零小時自動清除](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)。
 
@@ -105,7 +106,7 @@ AIR 功能包含在 [適用于 Office 365 的 Microsoft Defender](office-365-atp
 Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系統管理員許可權濫用、惡意程式碼活動、潛在的外部和內部威脅，以及資訊控管風險。 某些預設的 [報警原則](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) 可以觸發自動調查。 下表說明觸發自動調查的警示、在 Microsoft 365 安全性中心的嚴重性，以及產生的方式：
 
 |警報|嚴重性|警示的產生方式|
-|---|---|---|
+|:---|:---|:---|
 |偵測到可能的惡意 URL 按一下|**High**|發生下列任何情況時，就會產生此警示： <ul><li>由組織中 [安全連結](atp-safe-links.md) 所保護的使用者按一下惡意連結</li><li>URLs 的判定變更是由 Microsoft Defender for Office 365 所識別</li><li>根據組織的 [安全連結原則](set-up-atp-safe-links-policies.md)) ，使用者會覆寫安全連結警告頁面 (。</li></ul> <p> 如需觸發此警示之事件的詳細資訊，請參閱 [設定安全連結原則](set-up-atp-safe-links-policies.md)。|
 |使用者報告電子郵件訊息為惡意程式碼或網路釣魚網路|**資訊**|當您組織中的使用者使用 [報告郵件增益集](enable-the-report-message-add-in.md) 或 [報告網路釣魚增益集](enable-the-report-phish-add-in.md)，將郵件報告為網路釣魚電子郵件時，就會產生此警示。|
 |傳遞後移除包含惡意程式碼的電子郵件|**資訊**|當包含惡意程式碼的電子郵件訊息傳送至組織中的信箱時，就會產生此警示。 如果發生此事件，Microsoft 會使用 [零小時自動清除](zero-hour-auto-purge.md)，從 Exchange Online 信箱移除染毒郵件。|
@@ -124,7 +125,7 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 |工作|需要) 角色 (|
 |---|---|
 |設定 AIR 功能|下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li></ul> <p> 您可以在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)指派這些角色。|
-|開始自動調查 <p> --- 或 --- <p> 核准或拒絕建議的動作|在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)內指派的下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li><li>安全性讀取者 <br> --- 且 --- </li><li>搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。</li></ul>|
+|開始自動調查 <p> --- 或 --- <p> 核准或拒絕建議的動作|在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) 或 [Security & 合規性中心](permissions-in-the-security-and-compliance-center.md)內指派的下列其中一個角色： <ul><li>全域系統管理員</li><li>安全性系統管理員</li><li>安全性操作員</li><li>安全性讀取者 <br> --- 且 --- </li><li>搜尋和清除 (此角色只會指派在 [安全性 & 規範中心](permissions-in-the-security-and-compliance-center.md)。 您可能需要建立新的角色群組，並將搜尋和清除角色新增至該新的角色群組。</li></ul>|
 |
 
 ## <a name="required-licenses"></a>必要的授權
@@ -133,7 +134,7 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 
 - 安全性管理員 (包括全域管理員) 
 - 組織的安全性運作小組 (包括安全性讀者和具有 **搜尋和清除** 角色的使用者) 
-- 終端使用者
+- 使用者
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -141,7 +142,7 @@ Microsoft 365 提供許多內建的警示原則，可協助識別 Exchange 系�
 
 - [審閱及核准擱置的動作](air-remediation-actions.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [Microsoft Defender for Endpoint 中的自動調查和修正](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 

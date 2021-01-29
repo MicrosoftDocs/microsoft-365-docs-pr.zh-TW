@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 localization_priority: Priority
 description: 了解金融服務機構如何使用 Microsoft 365 與 Teams 維護金融安全合規性並有效地共同作業。
 f1.keywords: NOCSH
-ms.openlocfilehash: ff4ce29e42ea3a8a5619f514373041c1e8c3e138
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 1d1c3886a38636e7e72774f8b2bb5ce574d1c7a6
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558475"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029951"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>美國銀行和資本市場的重要合規性與安全性考量
 
@@ -319,7 +319,7 @@ Microsoft 365 最近推出了測試人員風險管理解決方案，可將整個
 
 例如，Microsoft 365 中的測試人員風險管理可以將來自使用者 Windows 10 Desktop 的信號 (例如，將檔案複製到 USB 硬碟，或透過電子郵件傳送個人電子郵件帳戶) 和線上服務 (例如 Office 365 電子郵件、SharePoint Online、Microsoft Teams 或 OneDrive) 中的活動相關聯，以識別資料外流模式。 還可以將這些活動與離開組織的員工相關聯，這是一種常見的資料外流模式。 可監視多個活動和一段時間的行為。 常見模式出現時，便可發出警報，並協助調查人員專注於關鍵活動，以高信賴度驗證原則違規。 測試人員風險管理可以對調查人員的資料進行匿名處理，以協助符合資料隱私權法規，同時還可以進行一些關鍵活動，以協助有效有效執行調查。 這可讓研究人員按照一般向上呈報工作流程安全地將關鍵活動資料封裝並傳送到人力資源和法務部門，以執行修正動作。
 
-Microsoft 365 中的測試人員風險管理大幅提升組織監視及調查測試人員風險的能力，同時讓組織仍符合資料隱私權法規，並在案件需要更高級別的動作時遵循已建立的向上呈報途徑。
+Microsoft 365 中的測試人員風險管理大幅提升組織監視及調查測試人員風險的能力，同時讓組織仍符合資料隱私權法規，並在案件需要更高級別的動作時遵循已建立的向上呈報途徑。 如需 Microsoft 365 中的內部風險管理的詳細資訊，請參閱 [Microsoft 365 的內部風險管理中的新式風險痛點和工作流程](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management?view=o365-worldwide)。
 
 ![隔間中的客服中心工作者一邊打字一邊看著螢幕。](../media/clo17-call-center-006.jpg)
  

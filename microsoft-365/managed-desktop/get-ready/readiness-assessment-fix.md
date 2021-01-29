@@ -1,6 +1,6 @@
 ---
 title: 修正由整備評估工具發現的問題
-description: 針對工具找到的每個問題採取的詳細動作
+description: 針對每個工具找到的問題所採取的詳細動作
 keywords: Microsoft 受管理的電腦, Microsoft 365, 服務, 文件
 ms.service: m365-md
 author: jaimeo
@@ -9,258 +9,258 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f1af39a9b2a09908ecf5f5ff15b9fd6d764459d6
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 360cd50556b77f141d1585f42ac08ee5990b4851
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921855"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040517"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>修正由整備評估工具發現的問題
 
-工具會針對每項檢查報告四種可能的結果之一：
+針對每個檢查，該工具會報告下列四個可能的結果之一：
 
 
 |結果  |意義  |
 |---------|---------|
-|就緒     | 完成註冊之前無需執行任何動作。        |
-|諮詢    | 請遵循工具或本文中的步驟，以獲得最佳註冊和使用者體驗。 您可以 *完成* 註冊，但必須在部署第一個裝置之前修正這些問題。        |
-|未就緒 | *如果您沒有修正這些問題，註冊將會失敗。* 請遵循工具或本文中的步驟來解決問題。        |
-|錯誤 | 使用 Azure Active Director (AD) 角色沒有足夠的許可權可以執行這項檢查。 |
+|就緒     | 完成註冊之前，不需要執行任何動作。        |
+|諮詢    | 請遵循工具或本文中的步驟，以取得註冊和使用者的最佳體驗。 您 *可以* 完成註冊，但是必須先修正這些問題，再部署第一個裝置。        |
+|未就緒 | *如果您未修正這些問題，註冊將會失敗。* 請遵循工具或本文中的步驟加以解決。        |
+|錯誤 | 您所使用的 Azure Active Directory (AD) 角色沒有足夠的許可權可執行這種檢查。 |
 
 > [!NOTE]
-> 這項工具報告的結果只會在執行此工具的特定時間點反映您的設定狀態。 如果您稍後對 Microsoft Intune、Azure Active Directory 或 Microsoft 365 中的策略進行任何變更，之前為「就緒」的專案可能會變成「尚未就緒」。 若要避免 Microsoft 管理桌面作業發生問題，請在變更任何策略之前，檢查本文所述的特定設定。
+> 此工具報告的結果會反映您的設定狀態，只會在您執行它的特定時間點反映。 如果您稍後對 Microsoft Intune、Azure Active Directory 或 Microsoft 365 中的原則進行任何變更，「就緒」的專案便會變成「尚未準備好」。 若要避免 Microsoft 受管理桌面作業的問題，請在變更任何原則之前，先檢查本文中所述的特定設定。
 
 ## <a name="microsoft-intune-settings"></a>Microsoft Intune 設定
 
-您可以在 Microsoft Endpoint Manager 系統管理中心存取 Intune [設定](https://endpoint.microsoft.com)。
+您可以在 Microsoft 端點[管理員管理中心存取 Intune 設定。](https://endpoint.microsoft.com)
 
 ### <a name="autopilot-deployment-profile"></a>Autopilot 部署設定檔
 
-您不應該有任何現有的 Autopilot 設定檔以 Microsoft 受管理之桌面裝置為目標指定或動態群組。 Microsoft Managed Desktop 會使用 Autopilot 來提供新裝置。
+您不應該有任何現有的 Autopilot 設定檔，以 Microsoft 受管理的桌面裝置為指派或動態群組。 Microsoft 受管理的桌面會使用 Autopilot 布建新裝置。
 
 **未就緒**
 
-您的 Autopilot 設定檔已指派給所有裝置。 有關步驟，請參閱使用 [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)在 Intune 中註冊 Windows 裝置。 在 Microsoft 管理桌上型電腦註冊之後，設定您的 Autopilot 策略以排除新式工作場所裝置 **- 所有** Azure AD 群組。
+您有指派給所有裝置的 Autopilot 設定檔。 如需步驟，請參閱 [使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)。 Microsoft 受管理的桌上型電腦註冊後，請將您的 Autopilot 原則設定為排除 **現代的工作場所裝置-所有** Azure AD 群組。
 
 **諮詢**
 
-請確定您的 Autopilot 設定檔的目標為不包含 Microsoft 受管理桌面裝置之已指派或動態 Azure AD 群組。 有關步驟，請參閱使用 [Windows Autopilot](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)在 Intune 中註冊 Windows 裝置。 在 Microsoft 管理桌上型電腦註冊之後，設定您的 Autopilot 設定檔以排除新式工作場所裝置 **-所有** Azure AD 群組。
+請確定您的 Autopilot 設定檔目標是未包含 Microsoft 受管理桌面裝置的指派或動態 Azure AD 群組。 如需步驟，請參閱 [使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot)。 Microsoft 受管理的桌上型電腦註冊後，將您的 Autopilot 設定檔設定為排除 **現代的工作場所裝置-所有** Azure AD 群組。
 
 
 ### <a name="certificate-connectors"></a>憑證連接器
 
-如果您想要在 Microsoft Managed Desktop 中註冊的裝置會使用任何憑證連接器，則連接器不應有任何錯誤。 只有下列其中一個建議適用于您的情況，因此請仔細檢查。
+如果您有任何您想要在 Microsoft Managed Desktop 中註冊的裝置使用的憑證連接器，連接器應該不會有任何錯誤。 下列其中一項諮詢只適用于您的情況，所以請務必仔細檢查。
 
 **諮詢**
 
-沒有憑證連接器存在。 您可能不需要任何連接器，但您應評估是否需要一些在 Microsoft 管理的桌面裝置上進行網路連接。 有關詳細資訊，請參閱 [準備 Microsoft Managed Desktop 的憑證和網路設定檔](certs-wifi-lan.md)。
+不存在任何憑證連接器。 您可能不需要任何連接器，但應評估您是否需要在 Microsoft 受管理的電腦裝置上進行部分網路連線。 如需詳細資訊，請參閱為 [Microsoft Managed Desktop 準備憑證和網路設定檔](certs-wifi-lan.md)。
 
 **諮詢**
 
-至少有一個憑證連接器發生錯誤。 如果您需要此連接器提供憑證給 Microsoft 受管理桌面裝置，您必須解決錯誤。 有關詳細資訊，請參閱 [準備 Microsoft Managed Desktop 的憑證和網路設定檔](certs-wifi-lan.md)。
+至少有一個憑證連接器有錯誤。 如果您需要此連接器提供憑證給 Microsoft 受管理的桌面裝置，您必須解決此錯誤。 如需詳細資訊，請參閱為 [Microsoft Managed Desktop 準備憑證和網路設定檔](certs-wifi-lan.md)。
 
 
 **諮詢**
 
-您至少有一個憑證連接器，而且沒有報告錯誤。 不過，在準備部署時，您可能需要建立設定檔，以重複使用 Microsoft 受管理之桌面裝置上的連接器。 有關詳細資訊，請參閱 [準備 Microsoft Managed Desktop 的憑證和網路設定檔](certs-wifi-lan.md)。
+您至少有一個憑證連接器，而且不會報告錯誤。 不過，在準備部署時，您可能需要建立設定檔，以重複使用 Microsoft 受管理桌面裝置的連接器。 如需詳細資訊，請參閱為 [Microsoft Managed Desktop 準備憑證和網路設定檔](certs-wifi-lan.md)。
 
 
 ### <a name="conditional-access-policies"></a>條件式存取原則
 
-Azure AD 組織的條件式存取策略不得以任何 Microsoft Manage Desktop 服務帳戶為目標。
+條件式存取原則不得防止 Microsoft Managed Desktop 在 Intune 和 Azure AD 中管理 Azure AD 組織 (租使用者) 。
 
 **未就緒**
 
-您至少有一個會以所有使用者為根據的條件式存取策略。 修改該策略以鎖定不包含將在註冊中建立之 Microsoft Managed Desktop 服務帳戶的 Azure AD 群組的特定 Azure AD 群組。 有關步驟，請參閱條件 [式存取：使用者和群組](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-users-groups)。
+您有至少一個目標為所有使用者的條件式存取原則。 在註冊期間，我們會從相關的條件式存取原則中排除 Microsoft Managed Desktop service 帳戶，並套用新的條件式存取原則，以限制對這些帳戶的存取。 註冊後，您可以在 Microsoft 端點管理員中查看 Microsoft 受管理的電腦條件式存取原則。 如需這些服務帳戶的詳細資訊，請參閱 [標準運作程式](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
 **諮詢**
 
-請確定您擁有的任何條件式存取策略不包含新式 **工作場所服務帳戶** Azure AD 群組。 有關步驟，請參閱調整 [條件式存取](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/conditional-access)。 新式 **工作場所服務帳戶** Azure AD 群組是一個動態群組，我們在您註冊時為該服務建立。 註冊之後，您必須返回以排除此群組。 有關這些服務帳戶的更多資訊，請參閱 [標準作業程式](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
+您有設定條件存取原則，可防止 Microsoft Managed Desktop 管理 Microsoft 受管理的桌面服務。 在註冊期間，我們會從相關的條件式存取原則中排除 Microsoft Managed Desktop service 帳戶，並套用新的條件式存取原則，以限制對這些帳戶的存取。 如需這些服務帳戶的詳細資訊，請參閱 [標準運作程式](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
 **錯誤**
 
-Intune 系統管理員角色沒有足夠的許可權可以執行這項檢查。 您也需要被指派任何 Azure AD 角色，以執行這項檢查：
+Intune 系統管理員角色沒有足夠的許可權可進行這種檢查。 您也需要指派的任何 Azure AD 角色，以執行這項檢查：
 
 - 安全性讀取者
 - 安全性系統管理員
-- 條件式存取系統管理員
+- 條件式存取管理員
 - 全域讀取者
-- 裝置系統管理員
+- 裝置管理員
 
 
-### <a name="device-compliance-policies"></a>裝置合規性政策
+### <a name="device-compliance-policies"></a>裝置合規性原則
 
-您 Azure AD 組織的 Intune 裝置合規性政策可能會影響 Microsoft Managed Desktop 裝置。
-
-**未就緒**
-
-您至少有一個合規性政策會檢查所有使用者。 Microsoft Managed Desktop 包含以您 Microsoft 管理之桌面裝置為目標的合規性政策。  變更策略以鎖定不包括任何 Microsoft 受管理之桌面使用者或裝置的特定 Azure AD 群組。 相關步驟請參閱在 [Microsoft Intune 中建立合規性政策](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)。
-
-**諮詢**
-
-請確定您未以任何 Microsoft 受管理之桌面使用者為目標的任何合規性政策。 相關步驟請參閱在 [Microsoft Intune 中建立合規性政策](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)。
-
-
-
-### <a name="device-configuration-profiles"></a>裝置組配置設定檔
-
-您 Azure AD 組織的 Intune 裝置組組設定檔不得以任何 Microsoft 管理桌面裝置或使用者為目標。
+Azure AD 組織中的 Intune 裝置相容性原則可能會影響 Microsoft 受管理的桌面裝置。
 
 **未就緒**
 
-您至少有一個設定設定檔會同時針對所有使用者、所有裝置或兩者。 將設定檔重設為不包括任何 Microsoft Managed Desktop 裝置的特定 Azure AD 群組。 有關步驟，請參閱 [使用 Microsoft Intune 中的自訂設定建立設定檔](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)。
+您至少具有一個針對所有使用者的符合性原則。 Microsoft 受管理的桌面包含的相容性原則將會以 Microsoft 受管理的桌面裝置為目標。  變更原則，以針對不包含任何 Microsoft 受管理桌面使用者或裝置的特定 Azure AD 群組。 如需步驟，請參閱 [Create a 相容性原則 In Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)。
 
 **諮詢**
 
-請確定您擁有的任何群組原則不包含任何 Microsoft 受管理的桌面裝置或使用者。 有關步驟，請參閱 [使用 Microsoft Intune 中的自訂設定建立設定檔](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)。
+請確定任何您沒有以 Microsoft 管理的桌面使用者為目標的相容性原則。 如需步驟，請參閱 [Create a 相容性原則 In Microsoft Intune](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)。
+
+
+
+### <a name="device-configuration-profiles"></a>裝置設定檔
+
+Azure AD 組織中的 Intune 裝置設定設定檔，不得針對任何 Microsoft 管理桌面裝置或使用者。
+
+**未就緒**
+
+您至少要有一個設定設定檔，針對所有使用者、所有裝置或兩者。 將設定檔重設為面向不包含任何 Microsoft 受管理桌面裝置的特定 Azure AD 群組。 如需步驟，請參閱 [使用 Microsoft Intune 中的自訂設定建立設定檔](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)。
+
+**諮詢**
+
+請確定任何您沒有的設定原則都包含任何 Microsoft 受管理的桌面裝置或使用者。 如需步驟，請參閱 [使用 Microsoft Intune 中的自訂設定建立設定檔](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)。
 
 
 
 ### <a name="device-type-restrictions"></a>裝置類型限制
 
-Microsoft 受管理桌面裝置必須允許在 Intune 註冊。
+Microsoft 受管理的桌面裝置必須能夠在 Intune 中註冊。
 
 **未就緒**
 
-您目前至少已針對一個註冊限制進行設置，以防止 Windows 裝置在 Intune 註冊。 請遵循針對每個 [](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set)會以 Microsoft 管理之桌面使用者為根據的註冊限制設定註冊限制中的步驟，將 **Windows (MDM**) 設為 **允許**。 不過，您可以將 MDM **中個人** 擁有的任何 Windows (**設定)****封鎖。** 
+您目前至少已設定一個登錄限制原則，以防止 Windows 裝置在 Intune 中註冊。 請依照針對 Microsoft 受管理的桌面使用者設定的每個註冊限制原則， [設定註冊限制](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) 中的步驟，並將 **Windows (MDM)** 設定變更為 [ **允許**]。 不過，您可以將任何 **個人擁有** 的 **Windows (MDM)** 裝置設定為 **封鎖**。 
 
 
 ### <a name="enrollment-status-page"></a>註冊狀態頁面
 
-您目前已啟用 ESP (註冊) 頁面。 如果您打算參與此功能的 Microsoft 受管理桌面公開預覽版，您可以忽略此專案。 詳細資訊請參閱 [Autopilot 的](../get-started/esp-first-run.md)首次執行體驗及註冊狀態頁面。
+您目前已啟用「註冊狀態」頁面 (ESP) 。 如果您想要參與 Microsoft 受管理的桌面公開預覽這項功能，您可以忽略此專案。 如需詳細資訊，請參閱 [使用 Autopilot 和註冊狀態頁面的初次執行體驗](../get-started/esp-first-run.md)。
 
 **未就緒**
 
-您將 ESP 預設設定檔設定為 **顯示 App 和設定檔設定進度**。 停用此設定，或遵循設定註冊狀態頁面的步驟，確定指派給任何 Azure AD 群組的工作不包含 Microsoft Managed [Desktop 裝置](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)。
+您已設定 ESP 預設設定檔來 **顯示應用程式和設定檔設定進度**。 停用此設定，或遵循 [設定 [註冊狀態] 頁面](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)中的步驟，確定任何 Azure AD 群組的指派均未包含 Microsoft 受管理的桌面裝置。
 
 **諮詢**
 
-請確定沒有將具有顯示應用程式及設定檔設定進度設定的任何設定檔指派給任何包含 Microsoft 受管理桌面裝置之 Azure AD 群組。 詳細資訊請參閱設定註冊狀態 [頁面](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)。
+請確定任何具有「 **顯示應用程式和設定檔設定進度** 」設定的設定檔都未指派給任何包含 Microsoft 受管理的桌面裝置的 Azure AD 群組。 如需詳細資訊，請參閱 [設定註冊狀態頁面](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)。
 
 ### <a name="microsoft-store-for-business"></a>商務用 Microsoft Store
 
-我們使用商務用 Microsoft Store，在 Microsoft Managed Desktop 上部署公司入口網站應用程式，以允許使用者選擇性地安裝某些應用程式，例如 Microsoft Project 和 Microsoft Visio (在允許的情況下) 。
+我們使用 Microsoft Store for Business 並在 Microsoft Managed Desktop 上部署公司入口網站應用程式，讓使用者可以選擇性地安裝某些應用程式，例如 Microsoft Project 和 Microsoft Visio (（如有允許的) ）。
 
 **未就緒**
 
-商務用 Microsoft Store 未啟用或未與 Intune 同步處理。 有關詳細資訊，請參閱 [如何使用 Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) 從商務用 Microsoft Store 管理大量購買的應用程式，以及如何在裝置上安裝 [Intune 公司入口網站](../get-started/company-portal.md)。
+商務用 Microsoft Store 未啟用或未與 Intune 同步。 如需詳細資訊，請參閱 how [to 使用 Microsoft Intune 管理大量購買的應用程式](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business) ，以及在 [裝置上安裝 Intune 公司入口網站](../get-started/company-portal.md)。
 
 ### <a name="multifactor-authentication"></a>多重要素驗證
 
-多重要素驗證不可適用于 Microsoft Managed Desktop 服務帳戶。
+多重要素驗證不得防止 Microsoft Managed Desktop 在 Intune 和 Azure AD 中管理 Azure AD 組織 (租使用者) 。
 
 
 **未就緒**
 
-針對指派給所有使用者的條件式存取策略，您將某些多重要素驗證策略設為必要的。 將設定變更為使用指派，以針對不包括任何 Microsoft Managed Desktop 服務帳戶的特定 Azure AD 群組。 詳細資訊請參閱條件式[存取策略](#conditional-access-policies)和[條件式存取：所有使用者需要 MFA。](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+針對指派給所有 **使用者的條件** 式存取原則，您可以設定某些多重要素驗證原則。 在註冊期間，我們會從相關的條件式存取原則中排除 Microsoft Managed Desktop service 帳戶，並套用新的條件式存取原則，以限制對這些帳戶的存取。 如需這些服務帳戶的詳細資訊，請參閱 [標準運作程式](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
 **諮詢**
 
-請確定任何需要多重要素驗證的條件式存取策略不包含新式 **工作場所 -所有** Azure AD 群組。 詳細資訊請參閱條件式[存取策略](#conditional-access-policies)和[條件式存取：所有使用者需要 MFA。](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) 新式 **工作場所 - 所有** Azure AD 群組是一個動態群組，我們在您註冊 Microsoft Managed Desktop 時建立，因此您必須在註冊後返回排除此群組。
+您在條件式存取原則上必須進行多重驗證，使 Microsoft Managed Desktop 無法管理 Microsoft 受管理的桌面服務。 在註冊期間，我們會從相關的條件式存取原則中排除 Microsoft Managed Desktop service 帳戶，並套用新的條件式存取原則，以限制對這些帳戶的存取。 如需這些服務帳戶的詳細資訊，請參閱 [標準運作程式](../service-description/operations-and-monitoring.md#standard-operating-procedures)。
 
 **錯誤**
 
-Intune 系統管理員角色沒有足夠的許可權可以執行這項檢查。 您也需要被指派任何 Azure AD 角色，以執行這項檢查：
+Intune 系統管理員角色沒有足夠的許可權可進行這種檢查。 您也需要指派的任何 Azure AD 角色，以執行這項檢查：
 
 - 安全性讀取者
 - 安全性系統管理員
-- 條件式存取系統管理員
+- 條件式存取管理員
 - 全域讀取者
-- 裝置系統管理員
+- 裝置管理員
 
 
 ### <a name="powershell-scripts"></a>PowerShell 腳本
 
-Windows PowerShell 腳本無法以 Microsoft Managed Desktop 裝置為目標的指派方式。  
+Windows PowerShell 腳本無法指派為以 Microsoft 受管理的桌面裝置為目標的方式。  
 
 **諮詢**
 
-請確定您 Azure AD 組織的 Windows PowerShell 腳本未以任何 Microsoft 管理桌面裝置或使用者為目標。 請勿指派 PowerShell 腳本以鎖定所有使用者、所有裝置或兩者。 將群組原則變更為使用工作分派，該工作分派會針對不包括任何 Microsoft 受管理之桌面裝置或使用者的特定 Azure AD 群組。 詳細資訊請參閱 Intune 中 [Windows 10 裝置上的 PowerShell 腳本](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)。
+確定您的 Azure AD 組織中的 Windows PowerShell 腳本並未以任何 Microsoft 管理桌面裝置或使用者為目標。 請勿指派 PowerShell 腳本來設定所有使用者、所有裝置或兩者。 變更原則，以使用以特定 Azure AD 群組為目標的工作分派，但不包括任何 Microsoft 受管理的桌面裝置或使用者。 如需詳細資訊，請參閱在 [Intune 中使用 Windows 10 裝置上的 PowerShell 腳本](https://docs.microsoft.com/mem/intune/apps/intune-management-extension)。
 
 ### <a name="region"></a>地區
 
-您的地區必須受到 Microsoft 管理桌面的支援。
+您的區域必須支援 Microsoft 受管理的電腦。
 
 **未就緒**
 
-Microsoft Managed Desktop 目前不支援您的 Azure AD 組織地區。 詳細資訊請參閱 Microsoft [受管理的桌面支援地區和語言](../service-description/regions-languages.md)。
+Microsoft 受管理的電腦目前不支援您的 Azure AD 組織區域。 如需詳細資訊，請參閱 [Microsoft 受管理的桌面支援的地區和語言](../service-description/regions-languages.md)。
 
 **諮詢**
 
-Microsoft Managed Desktop 不支援您 Azure AD 組織所在的一或多個國家/地區。 詳細資訊請參閱 Microsoft [受管理的桌面支援地區和語言](../service-description/regions-languages.md)。
+Microsoft 受管理的電腦不支援 Azure AD 組織所在的一或多個國家/地區。 如需詳細資訊，請參閱 [Microsoft 受管理的桌面支援的地區和語言](../service-description/regions-languages.md)。
 
 
-### <a name="security-baselines"></a>安全性比較基準
+### <a name="security-baselines"></a>安全性基準
 
-安全性比較基準不應該以任何 Microsoft 管理桌面裝置為目標。
+安全性基準原則不應該以任何 Microsoft 受管理的桌面裝置為目標。
 
 **未就緒**
 
-您的安全性比較基準設定檔會針對所有使用者、所有裝置或兩者。 將群組原則變更為使用指派，該工作分派會以不包括任何 Microsoft 受管理之桌面裝置的特定 Azure AD 群組為目標。 有關步驟，請參閱 [使用安全性比較基準在 Intune 中設定 Windows 10 裝置](https://docs.microsoft.com/mem/intune/protect/security-baselines)。
+您有一個針對所有使用者、所有裝置或兩者的安全性基準設定檔。 變更原則，以使用以特定 Azure AD 群組為目標的工作分派，但不包括任何 Microsoft 受管理的桌面裝置。 如需步驟，請參閱 [使用安全性基準在 Intune 中設定 Windows 10 裝置](https://docs.microsoft.com/mem/intune/protect/security-baselines)。
 
 **諮詢**
 
-請確定您排除 Microsoft 管理桌面裝置的任何安全性基準策略。 有關步驟，請參閱 [使用安全性比較基準在 Intune 中設定 Windows 10 裝置](https://docs.microsoft.com/mem/intune/protect/security-baselines)。 新式 **工作場所裝置 - 所有** Azure AD 群組是一個動態群組，我們在您註冊 Microsoft Managed Desktop 時建立，因此您註冊之後必須返回以排除此群組。
+請確定所有的安全性基準原則都排除 Microsoft 受管理的桌面裝置。 如需步驟，請參閱 [使用安全性基準在 Intune 中設定 Windows 10 裝置](https://docs.microsoft.com/mem/intune/protect/security-baselines)。 **新式的工作場所裝置-所有** Azure AD 群組是我們在您註冊 Microsoft Managed Desktop 時所建立的動態群組，所以您必須在註冊後傳回排除此群組。
 
 
 ### <a name="windows-apps"></a>Windows 應用程式
 
-請審查您希望 Microsoft 管理桌面使用者擁有的應用程式。
+查看您要讓 Microsoft 受管理的桌面使用者擁有的應用程式。
 
 **諮詢**
 
-您應準備 Microsoft 管理桌面使用者擁有的應用程式庫存。 由於 Intune 必須部署這些應用程式，請評估是否重新使用現有的 Intune 應用程式。 請考慮使用公司入口 (裝置上的安裝 [Intune](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) 公司入口網站，以及 ESP (註冊狀態) 以將應用程式散發給使用者。 詳細資訊請參閱 Microsoft [Managed Desktop](apps.md) 中的應用程式以及 [Autopilot](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)的首次執行體驗，以及註冊狀態頁面。
+您應該準備要讓 Microsoft 受管理的桌面使用者擁有的應用程式清單。 由於這些應用程式必須透過 Intune 部署，因此請評估重複使用現有的 Intune 應用程式。 考慮使用公司入口 (請參閱在裝置和註冊狀態頁面 [上安裝 Intune 公司入口網站](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) (ESP) ，將應用程式發佈至您的使用者。 如需詳細資訊，請參閱 [Microsoft 受管理的桌面](apps.md) 和初次執行體驗中的應用程式 [與 Autopilot 和註冊狀態頁面](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)。
 
-您可以要求 Microsoft 帳戶代表在 Microsoft Endpoint Configuration Manager 中查詢，以找出那些已準備好要遷移至 Intune 或需要調整的應用程式。
+您可以要求 Microsoft 帳戶代表在 Microsoft 端點 Configuration Manager 中查詢，以識別準備好要遷移至 Intune 或需要調整的應用程式。
 
 
 ### <a name="windows-hello-for-business"></a>Windows Hello 企業版
 
-Microsoft Managed Desktop 需要啟用商務用 Windows Hello。
+Microsoft 受管理的桌面需要啟用 Windows Hello 企業版功能。
 
 **未就緒**
 
-已停用商務用 Windows Hello。 遵循建立商務用 Windows [Hello 政策中的步驟來啟用](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
+Windows Hello 企業版已停用。 遵循[建立 Windows Hello 企業版原則](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)中的步驟來啟用
 
 **諮詢**
 
-尚未設定商務用 Windows Hello。 請遵循建立商務用[Windows Hello 政策中的步驟來啟用。](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
+未設定 Windows Hello 企業版。 遵循 [建立 Windows Hello 企業版原則](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)中的步驟來啟用它。
 
 
 ### <a name="windows-10-update-rings"></a>Windows 10 更新環
 
-Intune 中的「Windows 10 更新環」策略不能以任何 Microsoft Managed Desktop 裝置為目標。
+Intune 中的「Windows 10 更新環路」原則不得以 Microsoft 受管理的桌面裝置為目標。
 
 **未就緒**
 
-您的「更新環」策略會以所有裝置、所有使用者或兩者同時執行。 將群組原則變更為使用工作分派，該工作分派會以不包括任何 Microsoft 受管理之桌面裝置的特定 Azure AD 群組為物件。 有關步驟，請參閱 [Intune 中的管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。
+您有一個「更新鈴聲」原則，針對所有裝置、所有使用者或兩者。 變更原則，以使用以特定 Azure AD 群組為目標的工作分派，但不包括任何 Microsoft 受管理的桌面裝置。 如需步驟，請參閱 [在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。
 
 **諮詢**
 
-請確定您擁有的任何更新鈴聲策略不包含新式工作場所裝置 **- 所有** Azure AD 群組。 如果您已經將 Azure AD 使用者群組指派給這些策略，請確定您也排除所有您新增 Microsoft 受管理之桌面使用者至 (或相同群組) 的新式工作場所 **-** 所有 Azure AD 群組。 有關步驟，請參閱 [Intune 中的管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 新式工作場所裝置 **-** 全部與現代化 **工作場所 - 所有** Azure AD 群組都是我們在您註冊 Microsoft Managed Desktop 時所建立群組，因此您註冊之後必須返回以排除此群組。
+請確定任何更新環原則您已排除現代的 **工作場所裝置-所有** Azure AD 群組。 如果您已將 Azure AD 使用者群組指派給這些原則，請確定任何更新環原則您已排除現代的 **工作場所-** 您將 Microsoft 管理的桌面使用者新增至 (或同等群組) 的所有 azure ad 群組。 如需步驟，請參閱 [在 Intune 中管理 Windows 10 軟體更新](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure)。 兩個 **新式的工作場所裝置-所有** 及 **現代的工作場所-所有** Azure AD 群組都是您在 Microsoft 受管理的電腦中註冊時所建立的群組，所以在註冊後，您必須取回此群組。
 
 
 ## <a name="azure-active-directory-settings"></a>Azure Active Directory 設定
 
-您可以在 Azure 入口網站存取 Azure Active Directory [設定](https://portal.azure.com)。
+您可以在 [azure 入口網站](https://portal.azure.com)中存取 Azure Active Directory 設定。
 
-### <a name="intune-enrollment"></a>Intune 註冊
+### <a name="intune-enrollment"></a>Intune 登記
 
-您 Azure AD 組織的 Windows 10 裝置必須能夠自動在 Intune 註冊。
-
-**諮詢**
-
-請確定 **MDM 使用者範圍已** 設定為部分或 **全部**，而非 **None。** 如果您選擇了一 **些**，請在註冊後返回，然後針對 **群組** 選取新式 **工作場所 -** 所有 Azure AD 群組，或以您所有 Microsoft Managed Desktop 使用者為目標的相同群組。  請參閱 [使用 Microsoft Intune 設定 Windows 裝置註冊](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)。
-
-
-### <a name="ad-hoc-subscriptions"></a>臨時訂閱
-
-建議如何檢查設定， (設定為 「false」時) 企業狀態漫遊無法正確執行。
+Azure AD 組織中的 Windows 10 裝置必須能夠在 Intune 中自動註冊。
 
 **諮詢**
 
-請確定 **AllowAdHocSubscriptions 已** 設為 **True。** 否則，企業狀態漫遊可能無法使用。 詳細資訊請參閱[Set-MsolCompanySettings。](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)
+確定 **MDM 使用者範圍** 已設定為 **部分** 或 **全部**（非 **無**）。 如果您選擇 [ **部分**]，請在註冊後再進行註冊，然後選取 [ **新式的工作場所]-** **群組** 的所有 Azure AD 群組，或設定為所有 Microsoft 受管理的桌面使用者的同等群組。  請參閱 [使用 Microsoft Intune 設定 Windows 裝置的註冊](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#enable-windows-10-automatic-enrollment)。
+
+
+### <a name="ad-hoc-subscriptions"></a>專用訂閱
+
+建議您如何檢查設定為 "false" 的設定 () 可能會讓企業狀態漫遊無法正常運作。
+
+**諮詢**
+
+確定 **AllowAdHocSubscriptions** 設定為 **True**。 否則，企業狀態漫遊可能無法運作。 如需詳細資訊，請參閱 [MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0)。
 
 
 ### <a name="enterprise-state-roaming"></a>企業狀態漫遊
@@ -269,72 +269,71 @@ Intune 中的「Windows 10 更新環」策略不能以任何 Microsoft Managed D
 
 **諮詢**
 
-確認已針對所有群組或所選群組啟用企業狀態 **漫遊**。 詳細資訊請參閱在 [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable)中啟用企業狀態漫遊。
+請確定已針對 **所有** 或 **選取** 的群組啟用企業狀態漫遊。 如需詳細資訊，請參閱 [在 Azure Active Directory 中啟用企業狀態漫遊](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable)。
 
 ### <a name="licenses"></a>授權
 
-需要許多授權才能使用 Microsoft Managed Desktop。
+使用 Microsoft 受管理的桌面需要一些授權。
 
-**尚未就緒**
+**尚未準備好**
 
-您沒有使用 Microsoft Managed Desktop 所需的所有授權。 詳細資訊請參閱 Microsoft [Managed Desktop 技術，](../intro/technologies.md) 以及 [更多授權資訊](prerequisites.md#more-about-licenses)。
+您沒有使用 Microsoft 管理的桌面所需的所有授權。 如需詳細資訊，請參閱 [Microsoft 管理的桌面技術](../intro/technologies.md) 和 [有關授權的詳細](prerequisites.md#more-about-licenses)資訊。
 
 
 ### <a name="security-account-names"></a>安全性帳戶名稱
 
-某些安全性帳戶名稱可能會與 Microsoft Managed Desktop 建立的安全性帳戶名稱相衝突。
+某些安全性帳戶名稱會與 Microsoft Managed Desktop 所建立的名稱相衝突。
 
 **未就緒**
 
-您至少有一個帳戶名稱會與 Microsoft Managed Desktop 建立的帳戶名稱相衝突。 請與 Microsoft 客戶代表合作，排除這些帳戶名稱。
+您至少要有一個帳戶名稱會與 Microsoft Managed Desktop 所建立的帳戶名稱產生衝突。 請與您的 Microsoft 帳戶代表合作，以排除這些帳戶名稱。
 
 
-### <a name="security-administrator-roles"></a>安全性系統管理員角色
+### <a name="security-administrator-roles"></a>安全性管理員角色
 
 具有特定安全性角色的使用者必須在 Microsoft Defender for Endpoint 中指派這些角色。
 
 **諮詢**
 
-如果您的 Azure AD 組織中已指派使用者至任何這些角色，請確定他們在 Microsoft Defender for Endpoint 中也指派了這些角色。 否則，具有這些角色的系統管理員將無法存取系統管理入口網站。
+如果您已將使用者指派至 Azure AD 組織中的任何角色，請確定他們也在 Microsoft Defender for Endpoint 中指派這些角色。 否則，具有這些角色的系統管理員將無法存取管理員入口網站。
 
 - 安全性操作員
 - 全域讀取者
 
-詳細資訊請參閱建立及 [管理角色型存取控制的角色](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)。
+如需詳細資訊，請參閱 [建立及管理以角色為基礎的存取控制角色](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)。
 
 
 ### <a name="security-default"></a>安全性預設值
 
-Azure Active Directory 中的安全性預設值會防止 Microsoft 管理桌面管理您的裝置。
+在 Azure Active Directory 中的安全性預設值會使 Microsoft Managed Desktop 無法管理您的裝置。
 
 **未就緒**
 
-您開啟了安全性預設值。 關閉安全性預設值並設定條件式存取策略。 有關詳細資訊，請參閱常見的 [條件式存取政策](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)。
+您已開啟安全性預設值。 關閉安全性預設值，並設定條件式存取原則。 如需詳細資訊，請參閱 [一般條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)。
 
 ### <a name="self-service-password-reset"></a>自助密碼重設
 
-自助密碼重設 (SSPR) 可以針對 Microsoft Managed Desktop 服務帳戶除外的所有 Microsoft Managed Desktop 使用者啟用。 有關詳細資訊，請參閱教學課程：讓使用者使用 Azure Active Directory 自助密碼重設來解除鎖定其帳戶或 [重設密碼](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
+自助密碼重設 (SSPR) 可以針對所有不含 Microsoft Managed Desktop 服務帳戶的 Microsoft 受管理的桌面使用者啟用。 如需詳細資訊，請參閱 [教學課程：讓使用者可以使用 Azure Active Directory 自助密碼重設來解除鎖定帳戶或重設密碼](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)。
 
 **諮詢**
 
-請確定 SSPR **選取** 的設定包含 Microsoft Managed Desktop 使用者，但不包含 Microsoft Managed Desktop 服務帳戶。 啟用 SSPR 時，Microsoft Managed Desktop 服務帳戶無法如預期般使用。  
+請確定 [SSPR **選取** ] 設定包括 Microsoft 受管理的桌面使用者，但不包括 Microsoft 受管理的桌面服務帳戶。 SSPR 啟用時，Microsoft Managed Desktop service 帳戶無法如期運作。  
 
 
 ### <a name="standard-user-role"></a>標準使用者角色
 
-除了被指派全域系統管理員和裝置系統管理員 Azure AD 角色的使用者外，Microsoft Managed Desktop 使用者都是沒有本地系統管理員許可權的標準使用者。 所有其他使用者在啟動其 Microsoft Managed Desktop 裝置時，都會被指派標準使用者角色。
+除了為全域系統管理員和裝置管理員指派 Azure AD 角色的使用者以外，Microsoft 受管理的桌面使用者將是不具備本機系統管理員許可權的標準使用者。 當其他使用者啟動其 Microsoft 受管理的桌面裝置時，系統會將其指派為標準使用者角色。
 
 **諮詢**
 
-註冊後，Microsoft 受管理桌面使用者將沒有 Microsoft 受管理桌面裝置上的系統管理員許可權。
+Microsoft 受管理的桌面使用者在註冊後，不會對其 Microsoft 受管理的桌面裝置具有本機系統管理員許可權。
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps 企業版
 
 ### <a name="onedrive"></a>OneDrive
 
-只有 **加入特定網域設定之** PC 上的允許同步處理功能會與 Microsoft Managed Desktop 衝突。 您可以在 OneDrive 系統管理中心存取 OneDrive [設定](https://admin.onedrive.com)。
+[ **僅允許在加入特定網域的電腦上進行同步** 處理] 設定會與 Microsoft 受管理的桌面產生衝突。 您可以在 OneDrive 系統 [管理中心](https://admin.onedrive.com)存取 OneDrive 設定。
 
 **諮詢**
 
-您只在加入特定網域 **設定的電腦使用允許同步** 。 此設定無法與 Microsoft 管理桌上出版一同使用。 停用此設定，並改為設定 OneDrive 使用條件式存取策略。 請參閱 [規劃條件式存取部署以](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 取得協助。
-
+您正在使用 [ **僅允許在加入特定網域的電腦上同步** 處理] 設定。 此設定不會與 Microsoft 受管理的桌面搭配使用。 停用此設定，而不是設定 OneDrive 使用條件式存取原則。 請參閱 [規劃設定條件式存取部署](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) 以取得協助。

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 協助您符合資訊管理與記錄管理法規需求的資源。
-ms.openlocfilehash: f8641af2ec839c9ed3f4d029b4f6de52fe7033e3
-ms.sourcegitcommit: 36795a6735cd3fc678c7d5db71ddc97fac3f6f8a
+ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
+ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "48941418"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50032564"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>適用於資訊管理與記錄管理的法規需求
 
@@ -28,9 +28,21 @@ ms.locfileid: "48941418"
 
 使用此頁面上的資源以協助您符合 Microsoft 365 資訊管理與記錄管理的特殊法規需求。 本檔的每一章節都著重在一個或多個相關法規，並提供任何現有的指導方針或協力廠商評估如何設定 Microsoft 365 以協助所述的需求。
 
-這些資源可從 [服務信任入口網站] 的 [資料保護資源、常見問題集和白皮書](https://servicetrust.microsoft.com/ViewPage/TrustDocuments) 頁面下載。
+您可以從服務信任入口網站的[資料保護資源、常見問題集和白皮書](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)頁面下載這些資源。
 
-## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4(f), FINRA 4511(c), and CFTC 1.31(c)-(d)
+## <a name="new-zealand-public-records-act"></a>紐西蘭公用記錄法
+
+**利用 Microsoft 365 支援紐西蘭的公用記錄法符合性義務** - [下載評估](https://aka.ms/NZPRA)
+
+適用工作量：SharePoint、OneDrive、Teams、Exchange 及商務用 Skype
+
+於 2021 年 1 月發行的此報告，是由 Microsoft 紐西蘭合作產生，以評估 Microsoft 365 服務對於記錄、儲存及管理電子記錄需求的功能，具體如下： 
+
+- 紐西蘭公用記錄法 2005 (New Zealand Public Records Act 2005)，其規定在紐西蘭的公用封存檔和當地授權封存檔的保留指導方針。
+
+此報告可協助您了解使用 Microsoft 365 時，如何達成紐西蘭公用記錄法 2005 (PRA) 的系統層面。
+
+## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>節 17a-4(f)、FINRA 4511(c) 和 CFTC 1.31(c)-(d)
 
 **Cohasset 評估 - Microsoft 365 - SEC Rule 17a-4(f) - 適用於 SharePoint、OneDrive、Teams、Exchange 和 Skype 的固定存儲空間** - [下載評估](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 

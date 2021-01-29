@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: '深入瞭解 Exchange Online Protection (EOP 中的安全性預設設定) '
-ms.openlocfilehash: 8db8e7af569114e5829d24d65b8eee89c9dce8c3
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: c8af609b8ed50b0bfacb7d9f5397fab4c4726927
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787970"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040541"
 ---
 # <a name="secure-by-default-in-office-365"></a>Office 365 中預設的安全性
 
@@ -51,13 +52,20 @@ ms.locfileid: "49787970"
 
 您可以在 [ [建立安全的寄件者清單](create-safe-sender-lists-in-office-365.md)] 中找到這些優先選項的詳細資訊。
 
+> [!NOTE]
+> 我們正在取代 [ **將郵件移至垃圾郵件資料夾** ] 動作，以取得 EOP 反垃圾郵件原則中的 **高可信度網路釣魚電子郵件** 。 使用此動作進行高可信度網路釣魚郵件的反垃圾郵件原則會轉換成 **隔離郵件**。 高信賴網路釣魚郵件的重新 **導向電子郵件地址** 動作不會受到影響。
+
 安全的預設值不是可以開啟或關閉的設定，但是我們的篩選功能的方式，讓您的信箱不會有潛在危險或有害的郵件。 應該隔離惡意程式碼和高可信度網路釣魚郵件。 只有系統管理員可以管理被隔離為惡意程式碼或高可信度網路釣魚的郵件，而且也可以從那裡向 Microsoft 報告誤報。 如需詳細資訊，請參閱 [在 EOP 中管理被隔離的郵件和檔案為系統管理員](manage-quarantined-messages-and-files.md)
 
 ## <a name="more-on-why-were-doing-this"></a>更深入瞭解為何這麼做
 
-根據預設，安全的精神是：我們對郵件採取相同的動作，因為您知道郵件是惡意的，即使存在「允許」也是一樣。 這與我們使用於惡意程式碼的方法相同，現在我們將此相同的行為擴充為高信賴網路釣魚郵件。 我們的資料會指出高信賴網路釣魚郵件的誤報肯定比率非常低，且系統管理員可以使用系統管理員提交來解析任何誤報。 我們的資料也會指出反垃圾郵件原則中允許的寄件者清單與允許的網域清單過於廣泛，而且造成的損害超過良好的損害。
+根據預設，安全的精神是：我們對郵件採取相同的動作，即使您知道郵件是惡意的，即使已設定的例外狀況允許傳送郵件也是一樣。 這是我們永遠用於惡意程式碼的相同方法，現在我們將這種相同的行為擴充為高信賴網路釣魚郵件。
 
-若要將它放在另一種方式中：作為一種安全性服務，我們將替您代表，以避免使用者遭到破壞。 此外，依預設安全性，並非反垃圾郵件原則中的高可信度網路釣魚郵件的可用選項完全接管。 雖然我們建議隔離，但仍然可以使用的其他動作 (移至 [垃圾郵件] 資料夾，或重新導向) 的電子郵件地址。
+我們的資料會指出使用者的30倍于垃圾郵件資料夾和隔離區中的郵件中，按一下惡意連結的可能性也會比較高。 我們的資料也會指出為高信賴網路釣魚郵件標示為錯誤) 的誤報比率 (很低，且系統管理員可以使用系統管理員提交來解析任何誤報。
+
+我們也會判斷反垃圾郵件原則和 Outlook 中安全寄件者的允許的寄件者與允許的網域清單過於廣泛，而且造成的損害超過良好的損害。
+
+若要將它放在另一種方式中：作為一種安全性服務，我們將替您代表，以避免使用者遭到破壞。 
 
 ## <a name="exceptions"></a>例外狀況
 

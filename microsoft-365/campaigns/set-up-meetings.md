@@ -1,5 +1,5 @@
 ---
-title: 設定線上會議
+title: 安排線上會議
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -25,16 +25,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 使用 Microsoft 團隊設定線上會議。
-ms.openlocfilehash: 3e1eaba887249db59ef28e36ffefb5b89f80c469
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: a78a3a2ef66a2bc659a1c655dab338a1055ae3af
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131997"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044165"
 ---
 # <a name="set-up-meetings"></a>設定會議
 
-Microsoft 小組中的會議包括音訊、影片及共用。 而且，因為它們是線上，您的活動永遠都有會議空間，而且不需要會議室或放映機。Microsoft 團隊會議是一種極好的方式，可搭配組織內部和外部的人員和志願者。 您不需要是組織的成員，甚至沒有帳戶可加入會議。 針對您的政治活動，您可以使用 Microsoft 小組排程和執行線上會議。 您可以在組織外部加入人員、志願者和客人。 在會議期間，您可以分享您的畫面、共用檔案、指派任務等等。
+Microsoft 小組中的會議包括音訊、影片及共用。 而且由於是線上，您可以在不需要會議室或投影儀的情況下，永遠 (會議空間！ ) ，即使您的員工是在地理位置分散或從遠端運作。 Microsoft 團隊會議是一種極好的方式，可搭配組織內部和外部的員工。 您不需要是組織的成員，甚至沒有帳戶可加入會議。 您可以使用 Microsoft 小組排程和執行線上會議。 在會議期間，您可以分享您的畫面、共用檔案、指派任務等等。 政治活動可以包含會議中組織以外的人員、志願者和來賓。 小型公司或做法可以與員工會面，或與 Microsoft 小組的用戶端或合作夥伴開會。
 
 [![會議中的兩位使用者的圖例](../media/HostOnlineMeeting-thumb-358x201.png)](https://go.microsoft.com/fwlink/?linkid=2078712)
 
@@ -43,9 +43,9 @@ Microsoft 小組中的會議包括音訊、影片及共用。 而且，因為它
 ## <a name="best-practices"></a>最佳做法
 
 請遵循下列線上會議的最佳作法：
-- 在 Microsoft 小組中安排您的線上會議。 您可以選擇小組和管道，小組成員會自動邀請該小組或管道中的參與者。
-- 需要即時會議嗎？ 如果您正在使用一對一聊天，請選擇 [ **立即開會** ]，以與您聊天的人員開始影片或音訊通話。 
 
+- 在 Microsoft 小組中安排您的線上會議。 您可以選擇小組和管道，小組成員會自動邀請該小組或管道中的參與者。
+- 需要即時會議嗎？ 如果您正在使用一對一聊天，請選擇 [ **立即開會** ]，以與您聊天的人員開始影片或音訊通話。
 
 ## <a name="schedule-a-meeting"></a>排程會議
 

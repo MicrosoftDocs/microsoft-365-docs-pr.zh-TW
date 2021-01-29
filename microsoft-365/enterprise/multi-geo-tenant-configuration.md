@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: 在本文中，了解如何為 Microsoft 365 多地理位置新增衛星位置及設定您的租用戶。
-ms.openlocfilehash: 4276d8ff70fed99e74f2cbab29386c81da06d17b
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: fb907c02a4714c5a2d8e47245321252e7186a8a7
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46688416"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040565"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 多地理位置租用戶組態
 
@@ -28,11 +28,11 @@ ms.locfileid: "46688416"
 
 ## <a name="add-the-multi-geo-capabilities-in-your-microsoft-365-plan-to-your-tenant"></a>將 Microsoft 365 方案中的多地理位置功能新增到您的租用戶
 
-若要使用 Microsoft 365 多地理位置，您需要「Microsoft 365 中的多地理位置功能」__ 方案。 請與您的帳戶小組合作，將此方案新增到您的租用戶。 您的帳戶小組會協助您聯繫適當的授權專員，讓您完成租用戶設定。
+若要使用 Microsoft 365 多地理位置，您需要「Microsoft 365 中的多地理位置功能」方案。 請與您的帳戶小組合作，將此方案新增到您的租用戶。 您的帳戶小組會協助您聯繫適當的授權專員，讓您完成租用戶設定。
 
-請注意，「Microsoft 365 的多地理位置功能」__ 方案是使用者層級的服務方案。對於您要在衛星位置裝載的每個使用者，您都需要有授權。隨著您在衛星位置中新增使用者，您可以逐漸新增更多授權。
+請注意，「Microsoft 365 的多地理位置功能」方案是使用者層級的服務方案。對於您要在衛星位置裝載的每個使用者，您都需要有授權。隨著您在衛星位置中新增使用者，您可以逐漸新增更多授權。
 
-在租用戶佈建「Microsoft 365 的多地理位置功能」__ 方案後，OneDrive 和 SharePoint 系統管理中心的 [地理位置]**** 索引標籤會變成可用。
+在租用戶佈建「Microsoft 365 的多地理位置功能」方案後，OneDrive 和 SharePoint 系統管理中心的 [地理位置] 索引標籤會變成可用。
 
 ## <a name="add-satellite-locations-to-your-tenant"></a>將衛星位置新增至您的租用戶
 
@@ -46,15 +46,15 @@ ms.locfileid: "46688416"
 
 1. 開啟 SharePoint 系統管理中心。
 
-2. 瀏覽至 [地理位置]**** 索引標籤。
+2. 瀏覽至 [地理位置] 索引標籤。
 
-3. 按一下 [新增位置]****。
+3. 按一下 [新增位置]。
 
-4. 選取您要新增的位置，然後按一下 [下一步]****。
+4. 選取您要新增的位置，然後按一下 [下一步]。
 
-5. 輸入您要搭配地理位置使用的網域，然後按一下 [新增]****。
+5. 輸入您要搭配地理位置使用的網域，然後按一下 [新增]。
 
-6. 按一下 [關閉]****。
+6. 按一下 [關閉]。
 
 佈建可能需要幾小時，最多 72 小時，視租用戶大小而定。衛星位置的佈建完成後，您將會收到電子郵件確認。當新的地理位置在 OneDrive 系統管理中心的 [**地理位置**] 索引標籤上以藍色顯示在地圖上，您就可以繼續將使用者慣用的資料位置設定到該地理位置。 
 
@@ -110,7 +110,10 @@ ms.locfileid: "46688416"
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive 佈建及 PDL 的影響
 
-如果使用者的租用戶中已建立 OneDrive 網站，設定其 PDL 不會自動移動其現有的 OneDrive。 若要移動使用者的 OneDrive，請參閱[商務用 OneDrive 的地理位置移動](move-onedrive-between-geo-locations.md)，並遵照「在地理位置之間移動 OneDrive」中的指示。 (請注意，當您設定使用者的 PDL 後，使用者的 Exchange 信箱即會自動移動)。
+如果使用者的租用戶中已建立 OneDrive 網站，設定其 PDL 不會自動移動其現有的 OneDrive。 若要移動使用者的 OneDrive，請參閱 [OneDrive 進行商務用異地移動](move-onedrive-between-geo-locations.md)。
+
+> [!NOTE]
+> Exchange Online 會在 PLD 變更且 MailboxRegion 不再符合信箱資料庫地理位置碼時，自動重新安置使用者的信箱。 如需詳細資訊，請參閱 [在多地理位置環境中管理 Exchange Online 信箱](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)。
 
 如果使用者在租用戶中沒有 OneDrive 網站，OneDrive 會根據其 PDL 值進行佈建，並假設使用者的 PDL 符合公司的其中一個衛星位置。
 

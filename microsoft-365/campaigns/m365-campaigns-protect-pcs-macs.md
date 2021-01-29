@@ -23,17 +23,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 針對市場活動，防止網路釣魚和其他攻擊使用 Microsoft 365。
-ms.openlocfilehash: 3e0c6a52209c56e75c6ff1210f26e6926e4d7d32
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: 使用 Microsoft 365 (BYOD) 保護非受管理或附帶的裝置。
+ms.openlocfilehash: 5c27b29b5bb4fb445655e671d8c654ad8e9abc6b
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46527135"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044381"
 ---
 # <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>保護非受管理的 Windows 10 Pc 和 Mac
 
-您可以在 Microsoft Intune 中註冊 Windows 10 Pc 和 Mac，讓您在存取環境中的資料之前確保其健康和安全。 不過，許多的行銷活動和小型企業包含的人員會攜帶自己的裝置（byod），而不會由組織管理。 針對這些未受管理的電腦和 Mac，請使用本文，以確保已設定最基本的安全性功能。 
+您可以在 Microsoft Intune 中註冊 Windows 10 Pc 和 Mac，讓您在存取環境中的資料之前確保其健康和安全。 不過，許多的行銷活動和小型企業包含的人員會將自己的裝置 (BYOD) ，而不會由組織管理。 針對這些未受管理的電腦和 Mac，請使用本文，以確保已設定最基本的安全性功能。
 
 <!--A Windows 10 PC is considered managed after you have completed the following two steps:
 
@@ -49,31 +49,32 @@ ms.locfileid: "46527135"
 如果您的組織未管理您的 Windows 10 電腦或 Mac，請務必設定這些安全性功能。
 
 ## <a name="windows-10"></a>[Windows 10](#tab/Windows10)
+
 **開啟裝置加密**<p>
 
-您可以在各種 Windows 裝置上使用裝置加密，並以加密方式協助保護您的資料。 如果您開啟裝置加密，只有經過授權的人員才能存取您的裝置和資料。 如需指示，請參閱[開啟裝置加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)。
+您可以在各種 Windows 裝置上使用裝置加密，並以加密方式協助保護您的資料。 如果您開啟裝置加密，只有經過授權的人員才能存取您的裝置和資料。 如需指示，請參閱 [開啟裝置加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 。
 
- 如果裝置無法使用裝置加密，您可以改為開啟標準[BitLocker 加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption)。 （BitLocker 在 Windows 10 家用版上無法使用。） 
-
+ 如果裝置無法使用裝置加密，您可以改為開啟標準 [BitLocker 加密](https://support.microsoft.com/help/4028713/windows-10-turn-on-device-encryption) 。 Windows 10 Home edition 無法使用 (BitLocker。 )  
 
 **使用 Windows 安全性保護您的裝置**<p>
-如果您有 Windows 10，您可以使用 Windows 安全性取得最新的病毒防護。 當您第一次啟動 Windows 10 時，Windows 安全性已開啟並積極協助您掃描惡意程式碼（惡意軟體）、病毒及安全性威脅，以保護您的電腦。 Windows 安全性使用即時保護來掃描您在電腦上下載或執行的所有專案。
+如果您有 Windows 10，您可以使用 Windows 安全性取得最新的病毒防護。 當您第一次啟動 Windows 10 時，Windows 安全性已開啟並積極協助您掃描惡意軟體 (惡意軟體) 、病毒及安全性威脅，以保護您的電腦。 Windows 安全性使用即時保護來掃描您在電腦上下載或執行的所有專案。
 
-Windows Update 會自動下載 Windows 安全性的更新，以協助保護您的電腦安全性，並保護您的電腦免受威脅的侵擾。
+Windows Update 會自動下載 Windows 安全性更新，以協助您保持電腦的安全，並保護其不受威脅。
 
-如果您有舊版 Windows，且正在使用 Microsoft Security Essentials，最好移至 Windows 安全性。 如需詳細資訊，請參閱[使用 Windows 安全性協助保護我的裝置](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)。
+如果您有舊版 Windows，且正在使用 Microsoft Security Essentials，最好移至 Windows 安全性。 如需詳細資訊，請參閱 [使用 Windows 安全性協助保護我的裝置](https://support.microsoft.com/help/17464/windows-10-help-protect-my-device-with-windows-security)。
 
 **開啟 Windows 防火牆**<p>
-即使已開啟另一個防火牆，您還是應該無條件執行 Windows 防火牆。 關閉 Windows 防火牆可能會讓您的裝置（而且您的網路（如果有的話））更容易受到未授權的存取。 請參閱[開啟或關閉 Windows 防火牆](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)以取得指示
+即使已開啟另一個防火牆，您還是應該無條件執行 Windows 防火牆。 關閉 Windows 防火牆可能會讓您的裝置 (和您的網路，如果您有一個) 更容易遭到未經授權的存取。 請參閱 [開啟或關閉 Windows 防火牆](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off) 以取得指示
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
+
 **使用 FileVault 來加密您的 Mac 磁片**<p>
-磁片加密可在裝置遺失或遭竊時保護資料。 FileVault 完整磁片加密可協助防止未經授權的存取您的開機磁片上的資訊。 如需相關指示，請參閱[Use FileVault to a On Mac on startup disk](https://support.apple.com/HT204837) 。
+磁片加密可在裝置遺失或遭竊時保護資料。 FileVault 完整磁片加密可協助防止未經授權的存取您的開機磁片上的資訊。 如需相關指示，請參閱 [Use FileVault to a On Mac on startup disk](https://support.apple.com/HT204837) 。
 
 **保護您的 mac 免受惡意程式碼攻擊**<p>
-Microsoft 建議您在 Mac 上安裝及使用可靠的防毒軟體。 如需挑選清單，請參閱下列文章：[最佳 Mac 防病毒 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)。
+Microsoft 建議您在 Mac 上安裝及使用可靠的防毒軟體。 如需挑選清單，請參閱下列文章： [最佳 Mac 防病毒 2019 ](https://www.macworld.co.uk/feature/mac-software/mac-antivirus-3672182/)。
 
-您也可以只從可靠來源使用軟體，以降低惡意程式碼的風險。 安全性 & 隱私權喜好設定可讓您指定 Mac 上所安裝之軟體的來源。 如需詳細資訊，請參閱[保護您的 Mac 免受惡意](https://support.apple.com/kb/PH25087)代碼。
+您也可以只從可靠來源使用軟體，以降低惡意程式碼的風險。 安全性 & 隱私權喜好設定可讓您指定 Mac 上所安裝之軟體的來源。 如需詳細資訊，請參閱 [保護您的 Mac 免受惡意](https://support.apple.com/kb/PH25087)代碼。
 
 **開啟防火牆保護**<p>
-當您連線至網際網路或網路時，可使用防火牆設定來保護您的 Mac 免受其他電腦所初始化的有害連絡人。 若沒有此保護，您的 Mac 可能會更容易遭到未經授權的存取。 如需相關指示，請參閱[相關應用程式防火牆](https://support.apple.com/HT201642)。
+當您連線至網際網路或網路時，可使用防火牆設定來保護您的 Mac 免受其他電腦所初始化的有害連絡人。 若沒有此保護，您的 Mac 可能會更容易遭到未經授權的存取。 如需相關指示，請參閱 [相關應用程式防火牆](https://support.apple.com/HT201642) 。

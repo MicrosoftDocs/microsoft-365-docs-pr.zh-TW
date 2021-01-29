@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: 取得在 Microsoft 365 中提高保護層級的協助
-ms.openlocfilehash: 2078f9b40f6f556b2aacee28d6ff3c25be90fcc4
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.openlocfilehash: 56a6cd7fa82e8a35ea52a47475a14781ea0160cd
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698448"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044519"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>增強 Microsoft 365 訂閱的威脅防護
 
@@ -144,9 +144,9 @@ ms.locfileid: "49698448"
 
 |設定或選項|建議的設定|
 |---|---|
-|姓名|網域和最有價值的活動人員|
+|姓名|網域和最有價值的人員|
 |描述|確定最重要的人員和我們的網域未進行類比。|
-|新增要保護的使用者|選取 **[+ 新增條件]，收件者是**。 輸入使用者名稱，或輸入候選人、活動管理員及其他重要員工成員的電子郵件地址。 您最多可以新增20個要從類比中保護的內部和外部地址。|
+|新增要保護的使用者|選取 **[+ 新增條件]，收件者是**。 輸入使用者名稱，或輸入商務擁有者、合作夥伴或候選人、經理及其他重要員工成員的電子郵件地址。 您最多可以新增20個要從類比中保護的內部和外部地址。|
 |新增要保護的網域|選取 **[+ 新增條件]，收件者網域是**。 輸入您的 Microsoft 365 訂閱相關聯的自訂網域（如果您已定義的話）。 您可以輸入一個以上的網域。|
 |選擇動作|如果模仿的使用者傳送電子郵件：選擇 [重新 **導向郵件至其他電子郵件地址**]，然後輸入安全性管理員的電子郵件地址。例如，*劉愛琳 <span> <span> @contoso .com*。 <br/> 如果電子郵件來自冒充的網域：請選擇 **[隔離郵件]**。|
 |信箱情報|當您建立新的反網路釣魚原則時，系統會預設選取信箱情報。 請將此設定保留為 **[開啟]**，以獲得最佳結果。|

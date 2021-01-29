@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何尋找 Microsoft SharePoint Syntex 的資源。
-ms.openlocfilehash: 558559efc0387eebb1be7a57c8f7c3aeacfc149e
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 02f3da4e03d13b0710590336e49292ac6df70560
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975724"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044753"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex 簡介
 
@@ -72,7 +72,7 @@ Microsoft SharePoint Syntex 是 Office 365 服務，可協助組織：
 
 | 如果您在尋找這項資訊： | 請使用這項資源： |
 |:-----|:-----|
-|了解如何使用模型|[建立內容中心](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[建立分類器](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[建立擷取器](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[建立表單處理模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[說明類型](https://docs.microsoft.com/microsoft-365/contentunderstanding/form-processing-overview)<br><br>[套用文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[透過範例模型深入了解文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
+|了解如何使用模型|[建立內容中心](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-content-center)<br><br>[建立分類器](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier)<br><br>[建立擷取器](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-an-extractor)<br><br>[建立表單處理模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model)<br><br>[說明類型](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview)<br><br>[套用文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-model)<br><br>[透過範例模型深入了解文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/learn-about-document-understanding-models-through-the-sample-model)<br><br>|
 |將保留標籤套用至模型|[將保留標籤套用至文件瞭解模型](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)|
 |在建立擷取器時使用受管理的中繼資料服務字詞庫分類法|[在建立擷取器時運用字詞庫分類法](https://docs.microsoft.com/microsoft-365/contentunderstanding/leverage-term-store-taxonomy)|
 |了解如何查看您模型的資料|[模型流量分析](https://docs.microsoft.com/microsoft-365/contentunderstanding/model-usage-analytics)|

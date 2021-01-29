@@ -25,17 +25,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: 瞭解如何使用 Outlook 傳送加密的電子郵件。
-ms.openlocfilehash: f5184de55ce07d5e669e98afb6e627833071c4ba
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: d17abccd645b4dfdf933906dc90175be51f95c9a
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526873"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044213"
 ---
 # <a name="encrypt-or-label-your-sensitive-email"></a>幫您的機密電子郵件加密或加上標籤
 
 您的資料和活動資訊非常重要，通常是保密的。 使用加密和敏感度標籤來協助保護此機密資訊，讓您和您的電子郵件收件者以其所需的靈敏度來處理資訊。
-
 
 ## <a name="best-practices"></a>最佳做法
 
@@ -46,28 +45,26 @@ ms.locfileid: "46526873"
 
 ![具有標籤和加密之標注的電子郵件圖表](../media/m365-campaign-email-encrypt.png)
 
-
 ## <a name="set-it-up"></a>進行設定
 
-如果您想要加密的郵件不符合預先定義的規則，或系統管理員尚未設定任何規則，您可以在傳送郵件之前，套用各種不同的加密規則。 若要從 Outlook 2013 或2016（或 Outlook 2016 Mac）傳送加密的郵件，請選取 [**選項] > 許可權**]，然後選取所需的保護選項。 您也可以在 web 上的 Outlook 中選取 [**保護**] 按鈕來傳送加密的郵件。 如需詳細資訊，請參閱[在 Outlook 中傳送、查看和回復加密郵件的電腦](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)。
+如果您想要加密的郵件不符合預先定義的規則，或系統管理員尚未設定任何規則，您可以在傳送郵件之前，套用各種不同的加密規則。 若要從 Outlook 2013 或2016（或 Outlook 2016 Mac）傳送加密的郵件，請選取 [ **選項] > 許可權**]，然後選取所需的保護選項。 您也可以在 web 上的 Outlook 中選取 [ **保護** ] 按鈕來傳送加密的郵件。 如需詳細資訊，請參閱 [在 Outlook 中傳送、查看和回復加密郵件的電腦](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)。
 
-## <a name="admin-settings"></a>系統管理設定
+## <a name="admin-settings"></a>系統管理員設定
 
-您可以[在 Microsoft 365 中瞭解如何在電子郵件加密中](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)設定電子郵件加密。
+您可以 [在 Microsoft 365 中瞭解如何在電子郵件加密中](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)設定電子郵件加密。
 
 ### <a name="automatically-encrypt-email-messages"></a>自動加密電子郵件
 
-系統管理員可以建立郵件流程規則，以自動保護從您的活動中傳送及接收的電子郵件。 設定用來加密任何外寄電子郵件的規則，並從組織內部或從組織傳送的加密郵件中移除加密。 
+系統管理員可以建立郵件流程規則，以自動保護從您的活動中傳送及接收的電子郵件。 設定用來加密任何外寄電子郵件的規則，並從組織內部或從組織傳送的加密郵件中移除加密。
 
-您可以建立郵件流程規則，以使用新的 Office 365 郵件加密（OME）功能來加密電子郵件。 使用 Exchange 系統管理中心（EAC）定義郵件流程規則，以使用新的 OME 功能來觸發郵件加密。 
+您可以建立郵件流程規則，以使用新的 Office 365 郵件加密來加密電子郵件訊息。 (OME) 功能。 使用 Exchange 系統管理中心 (EAC) ，定義用新 OME 功能觸發郵件加密的郵件流程規則。 
 
-1. 在網頁瀏覽器中，使用已被授與全域管理員許可權的工作或學校帳戶登入。 
-2. 選擇 [管理] 磚。 
-3. 在系統管理中心中，選擇 [系統**管理中心] > Exchange**。 
+1. 在網頁瀏覽器中，使用已被授與全域管理員許可權的工作或學校帳戶登入。
+2. 選擇 [管理] 磚。
+3. 在系統管理中心中，選擇 [系統 **管理中心] > Exchange**。
 
-如需詳細資訊，請參閱[定義郵件流程規則以加密電子郵件訊息](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)。
+如需詳細資訊，請參閱 [定義郵件流程規則以加密電子郵件訊息](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)。
 
 ### <a name="brand-your-encryption-messages"></a>標記加密郵件
 
-您也可以套用您的行銷活動品牌，以自訂電子郵件訊息中的外觀和文字。 如需詳細資訊，請參閱[將貴組織的品牌新增至加密的郵件](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)。
-
+您也可以套用您的行銷活動品牌，以自訂電子郵件訊息中的外觀和文字。 如需詳細資訊，請參閱 [將貴組織的品牌新增至加密的郵件](https://docs.microsoft.com/microsoft-365/compliance/email-encryption)。

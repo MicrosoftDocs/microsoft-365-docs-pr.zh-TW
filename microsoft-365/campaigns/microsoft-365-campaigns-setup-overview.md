@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 針對市場活動的設定綜述
+title: Microsoft 365 商務版 Premium 的安裝程式概述
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -24,45 +24,45 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Microsoft 365 針對市場活動的設定綜述
-ms.openlocfilehash: 17d8b90c5dc15009340454491c57802d7ac1b496
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+description: Microsoft 365 商務版市場活動或其他企業版的設定綜述
+ms.openlocfilehash: c3d5687453aeaa2d9ace66491e3a900113a69ed1
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46526849"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044249"
 ---
-# <a name="set-up-microsoft-365-for-campaigns"></a>設定市場活動的 Microsoft 365
+# <a name="set-up-microsoft-365"></a>設定 Microsoft 365
 
-本文說明設定市場活動的 Microsoft 365 的程式。 任何包含 Microsoft 365 商務版 Premium 的人都可以使用此指南來逐步提高安全性。 
+本文說明設定 Microsoft 365 的處理常式。 任何包含 Microsoft 365 商務版 Premium 的人都可以使用此指南來逐步提高安全性。
 
-## <a name="admins-set-up-microsoft-365-for-campaigns"></a>Admins：設定市場活動的 Microsoft 365
-下圖說明管理員如何設定市場活動的 Microsoft 365。
+## <a name="admins-set-up-microsoft-365"></a>Admins：設定 Microsoft 365
 
-![設定市場活動的 Microsoft 365 的步驟](../media/M365-democracy-SetUpProcess.png)
+下圖說明管理員如何設定 Microsoft 365。
 
-針對符合特殊定價的行銷活動，請[從 microsoft 提出邀請](https://m365forcampaigns.microsoft.com/)，然後[註冊 microsoft 365 以取得促銷活動](m365-campaigns-sign-up.md)，以開始使用。 若要完成安裝程式，請[執行安裝精靈](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)以設定核心設定。
+![設定 Microsoft 365 的步驟](../media/M365-democracy-SetUpProcess.png)
 
-對於所有其他組織，在[註冊 Microsoft 365 商務版 Premium](../business/sign-up.md)後，請執行[安裝精靈](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)以設定核心設定，以完成安裝。
+針對符合特殊定價的行銷活動，請 [從 microsoft 提出邀請](https://m365forcampaigns.microsoft.com/)，然後 [註冊 microsoft 365 以取得促銷活動](m365-campaigns-sign-up.md)，以開始使用。 若要完成安裝程式，請 [執行安裝精靈](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以設定核心設定。
 
-針對所有組織而言，安全性保護的方式如下：[保護系統管理員帳戶](m365-campaigns-protect-admin-accounts.md)、[保護郵件和資料的存取](m365-campaigns-conditional-access.md)，以及[增加威脅防護](m365-campaigns-increase-protection.md)。
+對於所有其他組織，在 [註冊 Microsoft 365 商務版 Premium](../business/sign-up.md)後，請執行 [安裝精靈](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json) 以設定核心設定，以完成安裝。
 
+針對所有組織而言，安全性保護的方式如下： [保護系統管理員帳戶](m365-campaigns-protect-admin-accounts.md)、 [保護郵件和資料的存取](m365-campaigns-conditional-access.md)，以及 [增加威脅防護](m365-campaigns-increase-protection.md)。
 
- ## <a name="everyone-set-up-your-devices"></a>所有人：設定您的裝置 
- 
-使用者必須花幾分鐘的時間來設定裝置以與此環境搭配使用。 針對主要使用者（駭客最高的價值目標），您可以設定和預先設定新的裝置。 這可協助他們在使用 Microsoft 365 認證登入時立即開始使用。 
+## <a name="everyone-set-up-your-devices"></a>所有人：設定您的裝置
+
+使用者必須花幾分鐘的時間來設定裝置以與此環境搭配使用。 若為主要使用者 (駭客) 最高價值目標的使用者，您可以設定和預先設定新裝置。 這可協助他們在使用 Microsoft 365 認證登入時立即開始使用。
 
 ![使用者裝置設定程式](../media/m365-democracy-user-device-setup.png)
   
-若要設定使用者裝置： 
-1. 每個使用者都[設定其行動裝置](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)。 
-2. 對於未管理的裝置，使用者會設定其[pc 和 mac](m365-campaigns-protect-pcs-macs.md)。 針對主要人員，建議您使用[受管理的裝置](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json)，以獲得更佳的保護。 針對所有裝置，您會想要設定[多重要素驗證](m365-campaigns-multifactor-authenication.md)。 
-3. 所有使用者都應該瞭解如何透過[網路釣魚和其他攻擊](m365-campaigns-phishing-and-attacks.md)來保護自己和您的活動。 此[資訊圖表](m365-campaigns-protect-campaign-infographic.md)也可協助您的使用者瞭解如何協助保護您的活動免受線上威脅。
+若要設定使用者裝置：
+
+1. 每個使用者都 [設定其行動裝置](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)。
+2. 對於未管理的裝置，使用者會設定其 [pc 和 mac](m365-campaigns-protect-pcs-macs.md)。
+針對主要人員，建議您使用 [受管理的裝置](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) ，以獲得更佳的保護。 針對所有裝置，您會想要設定 [多重要素驗證](m365-campaigns-multifactor-authenication.md)。
+3. 所有使用者都應該瞭解如何透過 [網路釣魚和其他攻擊](m365-campaigns-phishing-and-attacks.md)來保護自己和您的活動。 此 [資訊圖表](m365-campaigns-protect-campaign-infographic.md) 也可協助您的使用者瞭解如何協助保護您的活動免受線上威脅。
 
 ## <a name="contact-support"></a>連絡客戶支援
 
  **如果您需要連絡客戶支援：**
   
 做為 Microsoft 365 系統管理員，您可以存取我們的客戶支援小組， **[與商務產品的支援人員聯繫-系統管理](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)說明**
-    
-

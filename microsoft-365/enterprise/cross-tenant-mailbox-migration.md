@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 4296879b36e26f11f945105ccebea351ad88314d
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 237d47502d28ec43978cef2c16e049ac9e90d7b1
+ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029523"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "50040553"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>跨承租人信箱遷移 (預覽) 
 
@@ -271,6 +271,22 @@ MailboxMovePublishedScopes : {MigScope}
 OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 ```
 
+#### <a name="verify-setup-script"></a>驗證安裝程式腳本
+
+如果您在設定來源或目標承租人期間收到任何錯誤，您可以執行位於 [GitHub 上](https://github.com/microsoft/cross-tenant/releases/tag/Preview) 的 VerifySetup.ps1 腳本，並複查輸出。
+
+以下是在目標租使用者上執行 VerifySetup.ps1 的範例：
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
+```
+
+以下是來源承租人上 VerifySetup.ps1 的範例：
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
+```
+
 ### <a name="move-mailboxes-back-to-the-original-source"></a>將信箱移回原始來源
 
 若要將信箱移回原始來源租使用者，必須在新的來源和新的目標承租人中執行相同的一組步驟和腳本。 將會更新或新增現有的組織關聯性物件，而不會重新建立。
@@ -296,7 +312,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
  
      範例 **目標** MailUser 物件：
  
-     | Attribute             | 值                                                                                                                    |
+     | 屬性             | 值                                                                                                                    |
      |-----------------------|--------------------------------------------------------------------------------------------------------------------------|
      | 別名                 | LaraN                                                                                                                    |
      | RecipientType         | MailUser                                                                                                                 |
@@ -315,7 +331,7 @@ OAuthApplicationId         : sd9890342-3243-3242-fe3w2-fsdade93m0
 
      **來源** 信箱物件範例：
 
-     | Attribute             | 值                                                                    |
+     | 屬性             | 值                                                                    |
      |-----------------------|--------------------------------------------------------------------------|
      | 別名                 | LaraN                                                                    |
      | RecipientType         | UserMailbox                                                              |
@@ -550,6 +566,34 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 > [!Note]  
 > 除了此 X500 proxy 之外，您還需要將來源信箱中的所有 X500 proxy，複製到目標中的信箱。  
 
+**移動無法運作時，應從何處開始疑難排解？**  
+
+先執行位於 [GitHub 上](https://github.com/microsoft/cross-tenant/releases/tag/Preview) 的 VerifySetup.ps1 腳本，並複查輸出。
+
+以下是在目標租使用者上執行 VerifySetup.ps1 的範例：
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <SourceTenantId> -ApplicationId <AADApplicationId> -ApplicationKeyVaultUrl <appKeyVaultUrl> -PartnerTenantDomain <PartnerTenantDomain> -Verbose
+```
+
+以下是在來源租使用者上執行 VerifySetup.ps1 的 eExample：
+
+```powershell
+VerifySetup.ps1 -PartnerTenantId <TargetTenantId> -ApplicationId <AADApplicationId>
+```
+
+**來源和目標租使用者是否可以使用相同功能變數名稱？**  
+
+否。 來源和目標租使用者功能變數名稱必須是唯一的。 例如，contoso.com 的來源網域和 fourthcoffee.com 的目標網域。
+
+**共用信箱會移動而且仍然可以運作嗎？**
+
+是的，不過我們只會保留這些文章中所述的存放區許可權：
+
+- [Microsoft 檔 |在 Exchange Online 中管理收件者的許可權](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-permissions-for-recipients)
+
+- [Microsoft 支援 |如何在 Office 365 專屬中授與 Exchange 和 Outlook 信箱許可權](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
+
 **是否需要 Azure 金鑰 Vault，以及何時進行交易？**  
 
 是的，若要使用金鑰保存庫來儲存憑證以授權遷移，必須有 Azure 訂閱。 與使用 username & 密碼驗證來源的上架遷移不同，跨租使用者信箱遷移使用 OAuth 和此憑證做為密碼。 存取機碼 Vault 必須維護于所有的信箱遷移，只要一開始和一次結束遷移，而且在增量同步處理期間，每24小時就會發生一次。 您可以在 [這裡]( https://azure.microsoft.com/en-us/pricing/details/key-vault/)查看 AKV 成本的詳細資料。  
@@ -570,7 +614,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 ## <a name="known-issues"></a>已知問題  
 
--  **問題：無法遷移自動擴充的封存。** 跨承租人遷移功能支援特定使用者的主要信箱和封存信箱的遷移。 如果來源中的使用者有自動展開的封存–表示有一個以上的封存信箱，該功能就無法遷移其他的檔案。
+-  **問題：無法遷移自動擴充的封存。** 跨承租人遷移功能支援特定使用者的主要信箱和封存信箱的遷移。 如果來源中的使用者具有自動擴充的封存功能（表示有一個以上的封存信箱），該功能就無法遷移其他的封存，因此應該會失敗。
 
 - **問題：具有非擁有的 smtp proxyAddress block MRS 的雲端 MailUsers 會移動背景。** 建立目標租使用者 MailUser 物件時，您必須確定所有 SMTP proxy 位址都屬於目標租使用者組織。 如果 SMTP proxyAddress 存在於不屬於本機租使用者的目標郵件使用者上，則會禁止 MailUser 至信箱的轉換。 這是因為我們保證信箱物件只會從租使用者授權的網域傳送郵件，而該網域是租使用者) 所宣告的 (網域： 
 
@@ -657,7 +701,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
    - 當 msExchRemoteRecipientType 設定為 8 (DeprovisionMailbox) 時，針對遷移到目標租使用者的內部部署 MailUsers，Azure 中的 proxy 清理邏輯會移除 nonowned 網域，並將 primarySMTP 重設為擁有的網域。 清除內部部署 MailUser 中的 [msExchRemoteRecipientType]，便不再套用 proxy 清理邏輯。 <br/><br>以下是包括 Exchange Online 之一組可能的完整服務方案。
 
-   | Name                                              |
+   | 姓名                                              |
    |---------------------------------------------------|
    | 高級 eDiscovery 儲存 (500GB)                |
    | 客戶加密箱                                  |

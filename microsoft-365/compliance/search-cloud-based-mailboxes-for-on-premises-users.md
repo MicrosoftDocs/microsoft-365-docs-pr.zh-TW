@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 使用安全性與合規性中心的內容搜尋工具，在 Exchange 混合式部署中搜尋及匯出內部部署使用者的 Microsoft Teams 聊天資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 23f8ea08de3d7fdbbc36274374d315ef0cb66a84
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 7bdcba3a14b2ee6d14210d3525e20ec507166a5d
+ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976200"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "50029713"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>搜尋內部部署使用者的 Teams 聊天資料
 
@@ -39,10 +39,8 @@ ms.locfileid: "49976200"
 
 - 只有與內部部署使用者相關聯的 Teams 聊天資料才會儲存在雲端式儲存區中。 內部部署使用者無法以任何方式存取此儲存區。
 
-- 您必須向 Microsoft 支援服務提交要求，才能讓組織能夠搜尋內部部署使用者的 Teams 聊天資料。 請參閱本文中的[向 Microsoft 支援服務提交啟用此功能的要求](#filing-a-request-with-microsoft-support-to-enable-this-feature)。
-
 > [!NOTE]
-> Teams 頻道交談一律儲存在與團隊相關聯的雲端式信箱中。 這表示您可以使用內容搜尋來搜尋頻道交談，而不須提交支援要求。 如需有關搜尋 Teams 頻道交談的詳細資訊，請參閱[搜尋 Microsoft Teams 和 Microsoft 365 群組](content-search.md#searching-microsoft-teams-and-microsoft-365-groups)。
+> Teams 頻道交談一律會儲存在與團隊相關聯的雲端式信箱中，這表示您可以搜尋頻道交談。 如需有關搜尋 Teams 頻道交談的詳細資訊，請參閱[搜尋 Microsoft Teams 和 Microsoft 365 群組](content-search.md#searching-microsoft-teams-and-microsoft-365-groups)。
   
 ## <a name="how-it-works"></a>運作方式
 
@@ -54,20 +52,7 @@ ms.locfileid: "49976200"
   
 除了這項新功能，您仍然可以使用內容搜尋來搜尋、預覽及匯出小組中與每個 Microsoft Team 相關聯的雲端式 SharePoint 網站和 Exchange 信箱中的 Teams 內容，以及雲端式使用者 Exchange Online 信箱中的 1xN Teams 聊天資料。
 
-## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>向 Microsoft 支援服務提交啟用此功能的要求
 
-您必須向 Microsoft 支援服務提交要求，才能讓組織使用安全性與合規性中心的圖形化使用者介面來搜尋內部部署使用者的 Teams 聊天資料。 安全性與合規性中心 PowerShell 提供此功能。 您不需要提交支援要求，即可使用 PowerShell 來搜尋內部部署使用者的 Teams 聊天資料。
-  
-向 Microsoft 支援服務提交要求時，請提供下列資訊：
-  
-- 組織的預設網域名稱。
-
-- 組織的租用戶名稱和租用戶識別碼。 您可以在 Azure Active Directory 入口網站 (在 **[管理]** \> **[屬性]** 底下) 找到這些資訊。 請參閱[尋找 Microsoft 365 租用戶識別碼](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)。
-
-- 可在支援要求中使用下列目的標題或描述：「啟用內部部署使用者的應用程式內容搜尋」。 這可協助您將要求傳送到負責實作要求的電子文件探索工程團隊。
-
-工程變更完成後，Microsoft 支援服務就會傳送預計部署日期。 提交支援要求後，部署程序通常需要 2 到 3 週的時間。
-  
 ### <a name="what-happens-after-this-feature-is-enabled"></a>啟用此功能後會發生什麼情況？
 
 在貴組織中部署此功能後，便會在安全性與合規性中心的內容搜尋和與電子文件探索案例相關聯的搜尋中進行下列變更：

@@ -30,16 +30,18 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: 探索 Microsoft 365 商務版 Premium 的設定步驟，包括新增網域和使用者、設定安全性原則等等。
-ms.openlocfilehash: cc20637d7a78bd34ecb61a4ed46eb06d564d63df
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: e7ebe179c67077dc71ae4873b0711d0e810c701a
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324489"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044723"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>在安裝精靈中設定 Microsoft 365 商務版 Premium
 
 請觀看這段影片，以取得 Microsoft 365 商務版特優設定的概要。<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
 ## <a name="add-your-domain-users-and-set-up-policies"></a>新增您的網域、使用者及設定原則
 
@@ -103,7 +105,7 @@ ms.locfileid: "47324489"
 
 ### <a name="protect-your-organization"></a>保護您的組織 
 
-您在嚮導中設定的原則會自動套用至稱為「*所有使用者*」的[安全性群組](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups)。 您也可以在系統管理中心建立其他群組，以指派原則。
+您在嚮導中設定的原則會自動套用至稱為「*所有使用者*」的 [安全性群組](https://docs.microsoft.com/office365/admin/create-groups/compare-groups#security-groups)。 您也可以在系統管理中心建立其他群組，以指派原則。
 
 1. 在 [ **加強來自高級網路威脅的保護**] 中，建議您接受預設值，讓 [Office 365 的高級威脅防護](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) 掃描 office 應用程式中的檔案和連結。
 

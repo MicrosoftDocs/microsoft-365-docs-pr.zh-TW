@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 尋找 Microsoft 合規性管理員的常見問題解答，協助組織簡化及自動化風險評估。
-ms.openlocfilehash: 9bf20b74e26f1231630d4a45856813177deb55c7
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 43ecafdfe54b2baec82363ea690a5a820e031232
+ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376534"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50050367"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>合規性管理員常見問題
 
@@ -82,3 +82,9 @@ Microsoft 365 規範中心內的合規性管理員一般可用，在9月2020完�
 ## <a name="can-i-use-compliance-manager-for-non-microsoft-products"></a>我是否可以使用非 Microsoft 產品的合規性管理員？
 
 雖然合規性管理員只會針對 Microsoft 雲端服務提供連續監控和建議的動作，但您可以在協力廠商服務的合規性管理員中新增自訂評估。 如此一來，您可以使用 Microsoft 合規性管理員作為 SaaS 規範管理工具，協助您管理所有數位資產的所有控制項。
+
+## <a name="whats-happening-to-compliance-manager-classic-in-the-service-trust-portal"></a>服務信任入口網站中的合規性管理員 (傳統) 會發生什麼事？
+
+規範管理員的經典版本（位於 Microsoft 服務信任入口網站中）很快就會停用。 在「合規性管理員」的最後退休 (傳統) 中，Microsoft 365 訊息中心通知將至少經過60天。 在合規性管理員中管理其合規性活動的客戶 (傳統) 必須將其資料（包括評估和控制）移至 Microsoft 365 規範中心內的新合規性管理員解決方案。 當合規性管理員 (傳統) 已淘汰時，客戶資料將不會自動轉接至 Microsoft 365 規範中心的合規性管理員。
+
+若要瞭解如何快速設定新的合規性管理員，請參閱我們的 [合規性管理員快速入門](compliance-manager-quickstart.md) 指南。

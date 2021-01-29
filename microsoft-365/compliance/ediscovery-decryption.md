@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 瞭解 Microsoft 365 電子檔探索工具如何處理附加至電子郵件的加密檔，並儲存在 SharePoint 線上和商務 OneDrive 中。
-ms.openlocfilehash: df2ff218e5c62e103661889fc8c66950a4d25cab
-ms.sourcegitcommit: 6759e619c45a5f8e775ad456a5dfb18c08f13f8e
+ms.openlocfilehash: aeb1d927a5da24c55838fe3379451956949d8b4f
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49713264"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044765"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365 eDiscovery tools 中的解密
 
@@ -39,7 +39,7 @@ Microsoft eDiscovery 工具支援以 Microsoft 加密技術加密的專案。 �
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>支援加密專案的 eDiscovery 活動
 
-下表識別可在 Microsoft 365 eDiscovery tools 中對 massages 和 OneDrive SharePoint 中的電子郵件和加密檔所執行的加密檔案所支援的工作。 您可以在符合搜尋準則的加密檔案上執行這些支援的工作。 "N/A" 的值表示在對應的 eDiscovery 工具中無法使用該功能。
+下表識別可在 Microsoft 365 eDiscovery tools 中對 massages 和 OneDrive SharePoint 中的電子郵件和加密檔所執行的加密檔案所支援的工作。 在符合搜尋準則的加密檔上可以執行這些支援的工作。 值， `N/A` 表示在對應的 eDiscovery 工具中無法使用該功能。
 
 |eDiscovery 任務  |內容搜尋  |核心電子文件探索  |進階電子文件探索  |
 |:---------|:---------|:---------|:---------|
@@ -50,6 +50,16 @@ Microsoft eDiscovery 工具支援以 Microsoft 加密技術加密的專案。 �
 |匯出附加至電子郵件的加密檔    |是       |是  |是    |
 |在 SharePoint 和 OneDrive 中匯出加密檔    |否       |否  |是    |
 |||||
+
+**附注：** eDiscovery 不支援 SharePoint 和 OneDrive 中的加密檔案，當套用加密的靈敏度標籤是以下列任一設定進行設定時：
+
+- 使用者可以在手動將標籤套用至檔時，指派許可權。 這有時候稱為 *使用者定義的許可權*。<br/>
+
+- 使用者對檔的存取權設定為 **永不** 超過某值的到期設定。
+
+如需這些設定的詳細資訊，請參閱 [使用敏感度標籤來限制存取內容](encryption-sensitivity-labels.md#configure-encryption-settings)一節中的「設定加密設定」一節。
+
+以先前的設定加密的檔仍可由 eDiscovery 搜尋傳回。 當檔案屬性 (例如標題、作者或修改日期) 符合搜尋準則時，可能會發生這種情況。 雖然這些檔可能會包含在搜尋結果中，但無法預覽或加以審閱。 在 [高級 eDiscovery] 中匯出這些檔時，這些檔也會保持加密。
 
 ## <a name="requirements-for-decryption-in-ediscovery"></a>電子檔探索中解密的需求
 

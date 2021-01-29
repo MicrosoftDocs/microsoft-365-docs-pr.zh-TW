@@ -1,4 +1,4 @@
-- name: 適用於行銷活動的 Microsoft 365
+- name: 適用於商務和行銷活動的 Microsoft 365
   items:
     - name: 概觀
       href: index.md
@@ -13,20 +13,20 @@
     - name: 註冊
       href: m365-campaigns-sign-up.md
     - name: 設定
-      href: ../business/set-up.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/set-up.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
     - name: 登入
       href: m365-campaigns-sign-in.md
     - name: 自訂登入頁面
       href: m365-customize-sign-in.md
     - name: 新增使用者
-      href: ../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
 - name: 加強安全性防護
   items:
     - name: 概觀
       href: m365-campaigns-security-overview.md
     - name: 保護系統管理員帳戶
       href: m365-campaigns-protect-admin-accounts.md
-    - name: 保護行銷活動資料的存取
+    - name: 保護對您資料的存取
       href: m365-campaigns-conditional-access.md
     - name: 防範惡意程式碼和其他威脅
       href: m365-campaigns-increase-protection.md
@@ -35,11 +35,11 @@
     - name: 設定多重要素驗證
       href: m365-campaigns-multifactor-authenication.md
     - name: 設定行動裝置
-      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
     - name: 保護電腦和 Mac
       href: m365-campaigns-protect-pcs-macs.md
     - name: 設定受管理的 Windows 裝置
-      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
 - name: 保護所有員工的電子郵件
   items:
     - name: 防範網路釣魚和其他攻擊
@@ -59,10 +59,10 @@
 - name: 重設或移除裝置的行銷活動資料
   items:
     - name: 移除行銷活動或商務資料
-      href: ../business/remove-company-data.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/remove-company-data.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
     - name: 將裝置重設回原廠設定
-      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json
+      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
 - name: 安全性事件管理
   items:
     - name: 回應遭入侵的電子郵件帳戶
-      href: 'https://docs.microsoft.com/microsoft-365/compliance/responding-to-a-compromised-email-account'
+      href: ../security/office-365-security/responding-to-a-compromised-email-account.md?toc=/microsoft-365/campaigns/toc.json&bc=/microsoft-365/campaigns/breadcrumb/toc.json
