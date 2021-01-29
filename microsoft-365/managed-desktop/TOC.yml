@@ -19,6 +19,8 @@
           href: service-description/regions-languages.md
         - name: 產品生命週期
           href: service-description/device-lifecycle.md
+        - name: 裝置需求
+          href: service-description/device-requirements.md
         - name: 程式裝置
           href: service-description/device-list.md
           items:
