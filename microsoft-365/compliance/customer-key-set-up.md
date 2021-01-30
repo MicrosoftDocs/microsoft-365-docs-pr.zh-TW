@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint 線上、OneDrive 商務及小組檔案的 Microsoft 365 的客戶金鑰。
-ms.openlocfilehash: 94702cecb37686c3996c5ed70b1810a825bb2ff6
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 057f20005e64a15ef18d076206394159d2690818
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032610"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058476"
 ---
 # <a name="set-up-customer-key-at-the-application-level"></a>在應用層級設定客戶機碼
 
@@ -496,7 +496,7 @@ Get-MailboxStatistics -Identity <GeneralMailboxOrMailUserIdParameter> | fl IsEnc
 
 ### <a name="validate-file-encryption"></a>驗證檔加密
 
- 若要驗證 SharePoint 線上、OneDrive 商務及小組檔案的加密，請 [連線至 SharePoint 線上 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)，然後使用 Get-SPODataEncryptionPolicy Cmdlet 檢查您租使用者的狀態。 如果已啟用客戶金鑰加密，且所有網站中的所有檔案都已加密，則 _State_ 屬性會傳回 **已註冊** 的值。 如果加密仍在進行中，則此 Cmdlet 會提供完成的網站百分比資訊。
+ 若要驗證 SharePoint 線上、OneDrive 商務及小組檔案的加密，請 [連線至 SharePoint 線上 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)，然後使用 Get-SPODataEncryptionPolicy Cmdlet 檢查您租使用者的狀態。 如果已啟用客戶金鑰加密，且所有網站中的所有檔案都已加密，則 _State_ 屬性會傳回 **已註冊** 的值。 如果加密仍在進行中，則此 Cmdlet 會傳回 **註冊** 的值。
 
 ## <a name="related-articles"></a>相關文章
 

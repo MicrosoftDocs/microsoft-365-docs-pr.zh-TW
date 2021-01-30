@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: 瞭解如何對組織設定檔進行變更，例如組織名稱、位址、電話、技術連絡人及電子郵件。
-ms.openlocfilehash: 19769c827284000e1ad0e86e3666d9980322b6a9
-ms.sourcegitcommit: ff1f0a97e9d43bc786f04d2ea7e01695531b9f28
+ms.openlocfilehash: 334bd1bee0571ba173987b7767465e8d82d7efe9
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49560849"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058432"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>變更貴組織的地址、技術連絡人等等
 
@@ -52,9 +52,9 @@ ms.locfileid: "49560849"
 
 2. 在 [ **組織設定檔** ] 索引標籤上，選取 [ **組織資訊**]。
 
-3. 更新您的組織資訊，然後選取 [ **儲存變更**]。
+3. 更新您的組織資訊，然後選取 [ **儲存變更**]。 請務必填寫所有標記為 * 的必要欄位，以啟用儲存變更。
 
-    每個欄位的說明都提供如下。
+每個欄位的說明都提供如下。
 
 ## <a name="what-do-these-fields-mean"></a>這些欄位代表什麼意思？
 

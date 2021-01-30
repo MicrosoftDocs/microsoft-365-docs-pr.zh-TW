@@ -1,7 +1,7 @@
 ---
-title: 取得進位搜尋專家訓練
-description: 來自進一步搜尋專家的免費訓練和指南
-keywords: 進位搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、語言、訓練、案例、基本到進進、影片、逐步說明
+title: 取得高級搜尋的專家訓練
+description: 來自高級搜尋專家的免費訓練和指導方針
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，語言，訓練，案例，基本至高級，影片，逐步執行
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7c2ccb12cb096359e558af9e1b4a962a9130be5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: aba0a6ab2c82c038eda8e66890c0c95303dea947
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929631"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053832"
 ---
-# <a name="get-expert-training-on-advanced-hunting"></a>取得進位搜尋專家訓練
+# <a name="get-expert-training-on-advanced-hunting"></a>取得高級搜尋的專家訓練
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,20 +35,28 @@ ms.locfileid: "49929631"
 適用於：
 - Microsoft 365 Defender
 
-使用追蹤新安全性分析師和經驗豐富的威脅員的一系列網路廣播系列，快速提升您的進一步搜尋知識。 本系列會引導您完成基本功能，以建立自己的複雜查詢。 從基本功能的第一段影片開始，或跳至符合您經驗等級的進一步影片。
+透過 _追蹤敵人_，以提升您的高級搜尋知識，獲得新安全性分析師和經驗豐富威脅 hunters 的網路廣播系列。 該數列會逐步引導您建立您自己複雜的查詢的基本方法。 先從第一個影片開始，或跳到更多符合您經驗水準的視頻。
 
 
-| 職稱 | 說明 | Watch | 查詢 | 
+| 職稱 | 描述 | Watch | 查詢 | 
 |--|--|--|--|
-| 第 1 集：KQL 基礎 | 本集涵蓋 Microsoft 365 Defender 進位搜尋的基本功能。 瞭解可用的進位搜尋資料和基本 KQL 語法及運算子。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54：14)  | [CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
-| 第 2 集：加入 | 繼續學習進一搜尋的資料，以及如何將表格連接在一起。 瞭解 `inner` 、 `outer` `unique` 及聯聯，並瞭解預設 `semi` Kusto 聯聯的細微 `innerunique` 之處。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53：33)  | [CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
-| 第 3 集：摘要、樞紐分析及視覺化資料 | 現在，您學習了篩選、操作及連接資料，是時候進行摘要、量化、樞紐分析及視覺化了。 此集探討運算子 `summarize` 和各種計算，同時在架構仲介紹其他資料表。 您也會瞭解如何將資料集轉換成圖表，説明您解壓縮深入見解。 | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48：52)  | [CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
-| 第 4 集：讓我們來搜尋吧！ 將 KQL 應用至事件追蹤 | 在這集中，您將學習如何追蹤一些攻擊者的活動。 我們運用我們改善對庫斯圖的理解和進一步搜尋來追蹤攻擊。 瞭解該欄位中使用的實際訣竅，包括網路安全性的 ABC，以及如何將它們套用至事件回應。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59：36)  | [CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)
+| 第1集： KQL 基礎 | 這一部分涵蓋 Microsoft 365 Defender 中的高級搜尋基本知識。 深入瞭解可用的高級搜尋資料和基本 KQL 語法及運算子。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14)  | [CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
+| 劇集2：聯接 | 繼續瞭解高級搜尋中的資料，以及如何將資料表結合在一起。 深入瞭解 `inner` 、 `outer` 、 `unique` 及 `semi` 加入，並瞭解預設 Kusto join 的細微差別 `innerunique` 。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33)  | [CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
+| 第3集：匯總、切換和視覺化資料 | 現在，您已瞭解如何篩選、處理及加入資料，這是時間摘要、量化、透視及顯示。 本文將討論 `summarize` 運算子和各種計算，同時還會引入架構中的其他資料表。 您也將瞭解如何將資料集變成可協助您抽出洞察力的圖表中。 | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52)  | [CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
+| 第4集：讓我們尋找！ 將 KQL 套用至事件追蹤 | 在此中，您將瞭解如何追蹤某些攻擊者的活動。 我們使用我們對 Kusto 和高級搜尋的深入瞭解，以追蹤攻擊。 瞭解欄位中使用的實際墩，包括 ABCs 的 cybersecurity，以及如何將其套用至事件回應。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36)  | [CSL 檔案](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) 
+
+
+透過 L33TSP3AK 進行更多專家訓練 *： microsoft 365 defender 中的高級搜尋*，這是一種網路廣播系列，可供分析員尋找，用來在 Microsoft 365 Defender 中使用高級搜尋來進行安全性調查的技術知識及實際技能。 
+
+| 職稱 | 描述 | Watch | 查詢 | 
+|--|--|--|--|
+| 劇集1  | 在此中，您將瞭解執行高級搜尋查詢的不同最佳作法。 涵蓋的主題包括：如何優化您的查詢、使用勒索軟體的高級搜尋、將 JSON 當做動態類型處理，以及使用外部資料運算子。 | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34)  | [CSL 檔案](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.csl)
+
 
 ## <a name="how-to-use-the-csl-file"></a>如何使用 CSL 檔案
-開始一集之前，請存取 [GitHub 上對應的 Kusto CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/tree/master/Webcasts/TrackingTheAdversary) 檔案，將其內容複寫到進位搜尋查詢編輯器。 當您觀看集時，您可以使用複製的內容來追蹤演講者並執行查詢。 
+開始劇集之前，請先 [在 GitHub 上](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/tree/master/Webcasts/TrackingTheAdversary) 存取對應的 Kusto CSL 檔案，並將其內容複寫到高級搜尋查詢編輯器。 當您觀賞劇集時，您可以使用複製的內容來追蹤喇叭，並執行查詢。 
 
-CSL 檔案的下列摘錄內容顯示標示為批註的一套完整的指引 `//` 。
+在 CSL 檔案中，下列摘要會顯示一組完整的指導方針，並標示為批註 `//` 。
 
 ```kusto
 // DeviceLogonEvents
@@ -61,7 +69,7 @@ CSL 檔案的下列摘錄內容顯示標示為批註的一套完整的指引 `//
 // - Timestamp
 ```
 
-相同的 CSL 檔案包含批註之前和之後的查詢，如下所示。 若要在編輯器中使用多個查詢執行特定的查詢 [，將游標](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)移至該查詢，然後選取執行 **查詢**。   
+同一個 CSL 檔案包含下列所示批註之前和之後的查詢。 若要 [在編輯器中使用多個查詢](advanced-hunting-query-language.md#work-with-multiple-queries-in-the-editor)執行特定查詢，請將游標移至該查詢，然後選取 [ **執行查詢**]。   
 
 ```kusto
 DeviceLogonEvents

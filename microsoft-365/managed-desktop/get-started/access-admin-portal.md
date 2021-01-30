@@ -10,19 +10,19 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 09427d163b8b5e47911b6df26e5acf0fcd1f3524
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c2a5b7f837d6c43369301820019732ca3aef83bf
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841348"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053844"
 ---
 # <a name="access-the-admin-portal"></a>存取管理員入口網站
 
-您的 Microsoft Managed 桌面服務閘道是 Microsoft [Azure 入口網站](https://portal.azure.com)。 如需更多有關使用和自訂 Azure 入口網站體驗的詳細資訊，請參閱 [azure 入口網站檔](https://docs.microsoft.com/azure/azure-portal/)。 可用於預覽現在，您也可以在 [Microsoft 端點管理員](https://endpoint.microsoft.com/)中找到 Microsoft 受管理的桌面。 如果您不熟悉此入口網站的裝置管理功能，請參閱 [Microsoft 端點管理員的檔](https://docs.microsoft.com/mem/)。
+您的 Microsoft Managed 桌面服務閘道是 [Microsoft 端點管理員](https://endpoint.microsoft.com/)。 如果您不熟悉此入口網站的裝置管理功能，請參閱 [Microsoft 端點管理員的檔](https://docs.microsoft.com/mem/)。
 
 > [!NOTE]
-> 不過，您可以選擇在 [Microsoft 端點管理員](https://endpoint.microsoft.com/) 或 [Azure 入口網站](https://portal.azure.com)中存取 Microsoft 受管理的桌面，支援下列瀏覽器：
+> 在 [Microsoft 端點管理員](https://endpoint.microsoft.com/) 中，支援下列瀏覽器：
 > - Microsoft Edge (最新版本) 
 > - Microsoft Internet Explorer 11
 > - Safari (最新版本，僅限 Mac) 

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 6260e28f5df8e6be82db90a6a7e3efa64516f4f8
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: bd838c3ff000d936ed131f625d112017271c61ac
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980086"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055506"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -48,7 +48,7 @@ ms.locfileid: "49980086"
 | **法規遵從性** | 監視與金融法規合規性相關的資訊的通訊 | -位置： Exchange Online、Microsoft 團隊、Yammer、商務用 Skype <br> -Direction:Inbound、輸出 <br> -審閱百分比：10% <br> -條件：自訂字典選項，大於 1 MB 的附件 |
 | **利益衝突** | 監視兩個群組或兩個使用者之間的通訊，以協助避免利益衝突 | -位置： Exchange Online、Microsoft 團隊、Yammer、商務用 Skype <br> -Direction:Internal <br> -審閱百分比：100% <br> -條件：無 |
 
-每24小時從建立時間原則掃描通訊。 例如，如果您在 11:00 AM 建立冒犯性語言原則，則原則會每日11:00 收集一次每24小時的通訊相容性信號。 編輯原則不會變更這段時間。 若要查看最後一個原則的掃描日期和時間，請流覽至 [**原則**] 頁面上的 [*最後一個原則掃描*] 欄位。
+每24小時從建立時間原則掃描通訊。 例如，如果您在 11:00 AM 建立冒犯性語言原則，則原則會每日11:00 收集一次每24小時的通訊相容性信號。 編輯原則不會變更這段時間。 若要查看最後一個原則的掃描日期和時間，請流覽至 [**原則**] 頁面上的 [*最後一個原則掃描*] 欄位。 最後一個掃描的日期和時間會轉換為您的本機系統時區。
 
 ## <a name="permissions"></a>權限
 

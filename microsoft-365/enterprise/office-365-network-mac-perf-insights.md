@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: 'Microsoft 365 網路洞察力 (預覽) '
-ms.openlocfilehash: 9e324af8ea2b81d0ca672b079afc74bededce695
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: d6786ce6cd58ce6f350804fbbacd272b8c077dc0
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48200766"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055470"
 ---
 # <a name="microsoft-365-network-insights-preview"></a>Microsoft 365 網路洞察力 (預覽) 
 
@@ -30,6 +30,7 @@ ms.locfileid: "48200766"
 每個辦公室位置都可能顯示六個特定的網路洞察力：
 
 - [Backhauled 網路出局](#backhauled-network-egress)
+- [網路仲介裝置](#network-intermediary-device)
 - [接近您的客戶，偵測到更佳效能](#better-performance-detected-for-customers-near-you)
 - [使用非最優 Exchange Online 服務前門](#use-of-a-non-optimal-exchange-online-service-front-door)
 - [使用非最佳的 SharePoint 線上服務前門](#use-of-a-non-optimal-sharepoint-online-service-front-door)
@@ -64,6 +65,18 @@ ms.locfileid: "48200766"
 
 如需如何解決此問題的詳細資訊，請參閱[Office 365 網路連線原則](microsoft-365-network-connectivity-principles.md)中[本機的出局網路](microsoft-365-network-connectivity-principles.md#egress-network-connections-locally)連線。
 
+## <a name="network-intermediary-device"></a>網路仲介裝置
+
+如果我們在您的使用者和 Microsoft 網路之間偵測到可能會影響 Office 365 使用者體驗的裝置，就會顯示這種洞察力。 針對 Microsoft 資料中心目的地的特定 Microsoft 365 網路流量，建議略過這些功能。 [Microsoft 365 網路連線原則](microsoft-365-network-connectivity-principles.md)中也會另外說明此建議
+
+### <a name="what-does-this-mean"></a>案例
+
+網路仲介裝置（例如 proxy 伺服器、Vpn 及資料遺失防護裝置）可能會影響 intermediated 流量的 Microsoft 365 用戶端效能和穩定性。
+
+### <a name="what-should-i-do"></a>我該怎麼做？
+
+將偵測到的網路仲介裝置設定為略過處理 Microsoft 365 網路流量。
+
 ## <a name="better-performance-detected-for-customers-near-you"></a>接近您的客戶，偵測到更佳效能
 
 如果網路洞察力服務偵測到大量客戶在您的組織中，其效能低於組織中的使用者，就會顯示這種洞察力。
@@ -78,7 +91,7 @@ ms.locfileid: "48200766"
 
 ### <a name="what-should-i-do"></a>我該怎麼做？
 
-這種情況可能有許多原因，包括公司網路或 ISP、瓶頸或架構設計問題中的延遲。 檢查您的 office 網路和目前的 Microsoft 365 前端的路由之間，每個躍點之間的延遲。 如需詳細資訊，請參閱 [Office 365 Network Connectivity 原則](microsoft-365-network-connectivity-principles.md)。
+這種情況可能有許多原因，包括公司網路或 ISP、瓶頸或架構設計問題中的延遲。 檢查您的 office 網路和目前的 Microsoft 365 前端的路由之間，每個躍點之間的延遲。 如需詳細資訊，請參閱 [Microsoft 365 Network Connectivity 原則](microsoft-365-network-connectivity-principles.md)。
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>使用非最優 Exchange Online 服務前門
 
@@ -134,10 +147,10 @@ ms.locfileid: "48200766"
 
 如果您的組織具備私人 WAN 連線能力，我們建議您在中國的 office 位置，設定網路 WAN 電路，在下列任何位置都有網路出口給網際網路：
 
-- 香港特別行政區
+- 香港
 - 日本
 - 台灣
-- 南韓
+- 韓國
 - 新加坡
 - 馬來西亞
 
@@ -145,7 +158,7 @@ ms.locfileid: "48200766"
 
 ### <a name="what-should-i-do"></a>我該怎麼做？
 
-如需如何減輕與此洞察力相關之效能問題的詳細資訊，請參閱 [適用于中國使用者的 Office 365 全域承租人效能優化](microsoft-365-networking-china.md)。
+如需如何減輕與此洞察力相關之效能問題的詳細資訊，請參閱 [適用于中國使用者的 Microsoft 365 全域承租人效能優化](microsoft-365-networking-china.md)。
 
 ## <a name="exchange-sampled-connections-impacted-by-connectivity-issues"></a>Exchange 抽樣連接問題影響的連線
 

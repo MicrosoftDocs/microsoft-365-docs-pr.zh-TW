@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將瞭解如何使用 Microsoft 365 中的客戶金鑰來處理服務加密。
-ms.openlocfilehash: 0008d145db81d5d6c4eb9ab89ca194b7e426d2e4
-ms.sourcegitcommit: c0495e224f12c448bfc162ef2e4b33b82f064ac8
+ms.openlocfilehash: efb2ba9c2532973a096c509b57639544fc2ddbe5
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49709525"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058486"
 ---
 # <a name="service-encryption-with-customer-key"></a>客戶金鑰服務加密
 
@@ -61,6 +61,9 @@ Microsoft 365 提供使用 BitLocker 和分散式金鑰管理員 (DKM) 所啟用
 - 移動信箱時，會進行加密。 允許信箱的72小時使用新的 DEP 進行加密。 如果信箱在您指派 DEP 的時間之後，等待72小時之後未加密，請與 Microsoft 聯繫。
 
 稍後，您可以依照 [管理 Office 365 的客戶金鑰](customer-key-manage.md)中所述的方式，重新整理 DEP 或指派不同的 dep 至信箱。 每個信箱都必須有適當的授權，才可指派 DEP。 如需授權的詳細資訊，請參閱 [設定客戶金鑰之前](customer-key-set-up.md#before-you-set-up-customer-key)。
+
+> [!NOTE]
+> 您可以將 DEP 套用至共用信箱、公用資料夾信箱，365以及適用于租使用者信箱授權需求的承租人信箱，即使某些信箱類型無法指派授權 (公用資料夾信箱和 Microsoft 365 群組信箱) 或需要增加儲存 (共用信箱) 的授權。
 
 **SharePoint 線上、商務及小組檔案的 OneDrive** 如果您使用的是多地理位置功能，您的組織可以為每個地理位置建立多個 DEP。 您可以針對每個地理位置使用不同的客戶金鑰。 如果您不是使用多地理位置功能，則每個承租人只能建立一個 DEP。 當您指派 DEP 時，加密會自動開始，但可能需要一些時間才能完成。 請參閱 [設定客戶金鑰](customer-key-set-up.md)中的詳細資料。
 

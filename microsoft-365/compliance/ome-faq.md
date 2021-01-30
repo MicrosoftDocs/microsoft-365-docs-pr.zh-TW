@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a83e8b05f59ff05d22422431683e26b11bb8a780
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 4be3ff4be1d5bf8b81d06ea17a8345e4c843b150
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688604"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058536"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -180,6 +180,10 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
 
 不是在這個時候。
 
+## <a name="can-i-send-as-a-shared-mailbox-and-encrypt-emails"></a>我可以傳送成共用信箱並加密電子郵件嗎？
+
+當某人傳送符合加密郵件流程規則的電子郵件時，會先加密郵件，然後再傳送郵件。
+
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>我可以開啟已傳送至共用信箱的加密郵件嗎？
 
 可以！ 共用信箱支援加密郵件。
@@ -214,6 +218,10 @@ Not yet. 不支援商務附件的 OneDrive，使用者無法加密包含商務�
    ```powershell
    Add-MailboxPermission -Identity support@contoso.onmicrosoft.com -User ayla@contoso.com -AccessRights FullAccess -AutoMapping $true
    ```
+   
+ ## <a name="can-i-open-encrypted-messages-sent-to-another-users-mailbox-with-fullaccess"></a>我可以開啟使用 Fullaccess 傳送給另一個使用者信箱的加密郵件嗎？
+
+使用者可以開啟加密的郵件，只要獲得直接存取和自動對應已開啟。 如果是透過已啟用電子郵件功能的安全性群組來授與存取權，則不允許存取。
 
 ## <a name="what-do-i-do-if-i-dont-receive-the-one-time-pass-code-after-i-requested-it"></a>我在要求它之後未收到一次性處理常式代碼時，該怎麼辦？
 

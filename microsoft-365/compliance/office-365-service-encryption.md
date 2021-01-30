@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 摘要：瞭解 Microsoft Office 365 中的資料恢復能力。
-ms.openlocfilehash: fbd2672986046a4f6d25c47b011eaef0a87d90e1
-ms.sourcegitcommit: 3bf4f1c0d3a8515cca651b2a520217195f89457f
+ms.openlocfilehash: 89f3fbcc90cee0ad822156014ee4ac9e04fe3371
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49777047"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058546"
 ---
 # <a name="service-encryption"></a>服務加密
 
-除了使用大量的加密、Exchange Online、商務用 Skype、SharePoint 線上和 OneDrive 商務用，也會使用服務加密來加密客戶資料。 服務加密允許兩個主要的管理選項：
+除了使用磁片區層級加密之外，Exchange Online、Microsoft 團隊 SharePoint Online 和商務 OneDrive 也會使用服務加密來加密客戶資料。 服務加密允許兩個主要的管理選項：
 
 ## <a name="microsoft-managed-keys"></a>Microsoft 管理的金鑰
 Microsoft 管理所有的加密金鑰，包括服務加密的根機碼。 目前預設會為 Exchange Online、SharePoint Online、商務 OneDrive 啟用此選項。 除非您決定使用客戶金鑰進行板載，否則 Microsoft 受管理的金鑰會提供預設的服務加密。 如果日後，您決定停止使用客戶金鑰而不遵循資料清除路徑，則您的資料會以 Microsoft 管理的金鑰加密。 您的資料通常會在此預設層級加密，至少一次。 
@@ -45,7 +45,7 @@ Microsoft 管理所有的加密金鑰，包括服務加密的根機碼。 目前
 
 客戶金鑰的另一個好處是，您可以透過 Microsoft 處理資料的能力來控制。 如果您想要從 Office 365 中移除資料，例如，如果您想要使用 Microsoft 來終止服務，或移除儲存在雲端中的部分資料，您可以這麼做，並使用客戶金鑰做為技術控制。 移除資料可確保任何人（包括 Microsoft）都無法存取或處理資料。 客戶金鑰補充及補充客戶密碼箱，您可以用來控制 Microsoft 人員對資料的存取。
 
-若要瞭解如何設定適用于 Exchange Online、商務用 Skype、SharePoint Online （包括小組網站）和商務 OneDrive 的 Microsoft 365 的客戶金鑰，請參閱下列文章：
+若要瞭解如何為 Exchange Online、Microsoft 團隊 SharePoint Online （包括小組網站）和商務 OneDrive 設定 Microsoft 365 的客戶金鑰，請參閱下列文章：
 
 - [客戶金鑰服務加密](customer-key-overview.md)
 
@@ -56,4 +56,3 @@ Microsoft 管理所有的加密金鑰，包括服務加密的根機碼。 目前
 - [滾動或輪替客戶金鑰或可用性金鑰](customer-key-availability-key-roll.md)
 
 - [瞭解可用性金鑰](customer-key-availability-key-understand.md)
-

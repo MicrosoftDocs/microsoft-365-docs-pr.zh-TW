@@ -18,22 +18,22 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本行動性和安全性是 Microsoft 365 方案的一部分。
-ms.openlocfilehash: cfd1a68c313d1a1335490e2b8d6938de192fe3f3
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: ec3ffa8879bf14ab3116bbbbf5cf2a1a3fd7c6e6
+ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877089"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50053798"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>選擇基本行動性和安全性或 Intune
 
-[Microsoft Intune](https://docs.microsoft.com/mem/intune/) 是一種獨立的產品，包含在某些 microsoft 365 方案中，基本行動性和安全性都是 Microsoft 365 方案的一部分。 
+[Microsoft Intune](https://docs.microsoft.com/mem/intune/) 是一種獨立的產品，包含在某些 microsoft 365 方案中，基本行動性和安全性都是 Microsoft 365 方案的一部分。
 
  ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>基本行動性和安全性及 Intune 的可用性
- 
+
 基本行動性和安全性及 Intune 都包含在各種方案中，如下表所述。
 
-| 方案 | 設定基本行動與安全性 | Microsoft Intune |
+| 規劃 | 設定基本行動與安全性 | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|是|否|
 |Microsoft 365 商務基本版|是|否|
