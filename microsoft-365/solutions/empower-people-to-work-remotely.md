@@ -18,12 +18,12 @@ ms.collection:
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
 description: 請確認您已啟用 Microsoft 365 中的所有功能，以充分發揮遠端工作者的生產力，並維持伺服器、資料和雲端的安全存取。
-ms.openlocfilehash: c6f17f2a80fa37abe43ceabc7a06c86c80eeadbd
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.openlocfilehash: aa72ba0c47acdd507bf86a082c9b4c2a87e3f1ef
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616353"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055516"
 ---
 # <a name="empower-remote-workers-with-microsoft-365"></a>使用 Microsoft 365 強化遠端工作者
 
@@ -37,11 +37,16 @@ Microsoft 365 具備讓您的工作人員能夠遠端作業的功能。
 
 ![使用 Microsoft 365 強化您的遠端工作人員](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-觀看這段影片以獲取部屬程序概觀。
+>[!Note]
+>如果您是 Microsoft 365 新使用者，請參閱[這些資源](https://www.microsoft.com/microsoft-365)。
+>
+
+觀看此影片以取得部署程序的概觀。
+<br>
 <br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4F1af]
 
-此解決方案提供這些關鍵功能。
+為了讓管理現場和雲端式基礎結構的 IT 專業人員能夠實現工作者生產力，此解決方案提供下列重要功能：
 
 - 連接
 

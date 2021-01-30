@@ -17,21 +17,24 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 讓您的使用者透過 Teams、Exchange、SharePoint 和其他 Microsoft 365 服務提高生產力。
-ms.openlocfilehash: 57e862769533b8c076513874e7f6daafdbe836da
-ms.sourcegitcommit: 554755bc9ce40228ce6e34bde6fc6e226869b6a1
+ms.openlocfilehash: ce19085a358861238e9a7cd4d650246d08fd272d
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "48681405"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055485"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>步驟 5： 部署遠端工作者生產力應用程式和服務
 
 為提高生產力，人員之間必須能夠溝通並共同作業。 他們需要開會、透過語音和文字交談、建立新內容、共用資訊和檔案、交換電子郵件，以及管理行事曆和工作。 Microsoft 365 為這些關鍵功能提供雲端服務：
 
-- 若要讓在不同地方工作的人員保持聯繫，請使用 Microsoft Teams，為組織、部門，以及小組和個人，提供適用於會議、交談和檔案儲存的共同交流中心。 
-- 若要交換電子郵件及管理行事曆、連絡人和工作，請使用 Exchange Online 和 Outlook 用戶端。
-- 若要儲存及共同處理檔案，請使用 SharePoint 和 OneDrive。 您可以在網頁瀏覽器內或在 Teams 內使用它們。
-- 若要建立新內容或共同處理現有內容，Microsoft 365 App 是安裝在您本機電腦上的 Word、PowerPoint、Excel 和 Outlook 版本，而且會收到持續的功能和安全性更新。
+| IT 功能 | Microsoft 365 元件 | 描述 |
+|:-------|:-----|:-------|
+| 電子郵件服務 | Exchange Online | 使用 Outlook 用戶端交換電子郵件和管理行事曆、連絡人和工作。 |
+| 組織聊天、VoIP 和團隊型共同作業 | Microsoft Teams | 利用用於組織、部門以及小型團隊和個人的會議、聊天和檔案儲存的共同通訊中樞，讓人員在不同地方工作時也能保持連絡。 |
+| 內部網路網站、文件共同作業 | SharePoint 和 OneDrive | 在網頁瀏覽器或 Teams 內儲存和就檔案共同作業。 |
+| 桌面和行動裝置 Office 應用程式 | Microsoft 365 Apps | 使用安裝在您本機電腦上的 Word、PowerPoint、Excel 和 Outlook 版本，建立新內容或就現有內容共同作業，並持續收到功能和安全性更新。 |
+||||
 
 ![使用 Teams、Outlook、SharePoint、OneDrive 和 Microsoft 365 應用程式以保持生產力](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 使用 Microsoft 365 安全性與合規性服務，以保護遠端工作者的應用程式、資料和裝置。
-ms.openlocfilehash: 6c6c30e320068a6e97cf5fd2cd81b4bfeff1c49e
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 8248fdbaa96a651ad9ff4548ce0867bd7c2988eb
+ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48845225"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50055484"
 ---
 # <a name="step-3-deploy-security-and-compliance-for-remote-workers"></a>步驟 3：為遠端工作者部署安全性與合規性
 
@@ -47,9 +47,9 @@ ms.locfileid: "48845225"
 
 使用 Microsoft 365 的安全性功能來保護您的應用程式和資料。
 
-| 功能 | 描述 | 授權 |
+| 功能 | 為什麼我需要它 | 授權 |
 |:-------|:-----|:-------|
-| 適用於 Office 365 的 Microsoft Defender | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 <br><br> 適用於 Office 365 的 Microsoft Defender 會收集並分析來自應用程式的訊號，以進行偵測、調查，並修正安全風險，並抵禦電子郵件訊息、連結 (URL) 和共同作業工具所帶來的惡意威脅，以保護組織。 | Microsoft 365 E3 或 E5 | 
+| 適用於 Office 365 的 Microsoft Defender | 保護您的 Microsoft 365 應用程式和資料不受攻擊，例如電子郵件訊息、Office 文件和共同作業工具。 <br><br> 適用於 Office 365 的 Microsoft Defender 會收集並分析來自應用程式的訊號，以進行偵測、調查，並修正安全風險，並抵禦電子郵件訊息、連結 (URL) 和共同作業工具所帶來的惡意威脅，以保護組織。 它也提供用於標準和嚴格安全性態勢的自動化租用戶設定評估和設定工具。 | Microsoft 365 E3 或 E5 | 
 | 惡意程式碼防護 | Microsoft Defender 防毒軟體和 Device Guard 提供裝置型惡意程式碼保護功能。 <br><br> SharePoint‎ Online 會自動掃描檔案上傳是否有已知的惡意程式碼。 ‎<br><br> Exchange Online Protection‎ (‎EOP‎) 可保護雲端信箱。 | Microsoft 365 E3 或 E5 |
 | 適用於端點的 Microsoft Defender | 保護組織的裝置不受網路威脅和資料外洩，並偵測、調查及因應進階威脅。 | Microsoft 365 E5 |
 | Cloud App Security | 保護您的雲端服務不受攻擊，包括 Microsoft 365 和其他 SaaS 應用程式。 | Microsoft 365 E5 或個別的 Cloud App Security 授權 |
@@ -62,7 +62,7 @@ ms.locfileid: "48845225"
 
 遵守內部原則或管理法規需求，並遵循下列 Microsoft 365 合規性功能。
 
-| 功能 | 描述 | 授權 |
+| 功能 | 為什麼我需要它 | 授權 |
 |:-------|:-----|:-------|
 | 敏感度標籤 | 在電子郵件、文件或網站上套用具有不同保護層級的標籤，可以在不影響使用者工作效率和共同作業能力的情況下對組織的資料進行分類和保護。 | Microsoft 365 E3 或 E5 |
 | 資料外洩防護 (DLP) | 偵測、警告，並封鎖風險、不慎或不當的共用，例如共用包含個人資訊的資料 (內部和外部)。 | Microsoft 365 E3 或 E5 | 
