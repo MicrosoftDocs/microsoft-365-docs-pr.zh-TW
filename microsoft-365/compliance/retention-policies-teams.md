@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: ec5085b2d0a828300cb90fb260cb293eda4b9433
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: ebf1efe99e57084e2384e7499b3f72dab2b872c2
+ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988179"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50050387"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
@@ -47,13 +47,21 @@ ms.locfileid: "49988179"
 
 Teams 保留原則中不包括與 Teams 一起使用的電子郵件和檔案。 這些項目有各自的保留原則。
 
+下列依 RecipientTypeDetails 的信箱支援使用 Teams 保留原則：
+
+- MailUser
+- UserMailbox
+- GroupMailbox
+- ArbitrationMailbox
+- SharedMailbox
+
 ## <a name="how-retention-works-with-microsoft-teams"></a>保留如何與 Microsoft Teams 搭配使用
 
-您可以使用保留原則來保留 Teams 中的聊天與頻道訊息之資料。 來自 Teams 聊天的資料會儲存在聊天內每個使用者信箱的隱藏資料夾中，來自 Teams 頻道訊息之資料則會儲存在小組群組信箱中類似的隱藏資料夾內。
+您可以使用保留原則來保留和刪除 Teams 中的聊天與頻道訊息之資料。 在幕後，會使用 Exchange 信箱來儲存這些訊息。 來自 Teams 聊天的資料會儲存在聊天內包含的每個使用者信箱的隱藏資料夾中，且會將群組信箱中的一個類似的隱藏資料夾用於 Teams 頻道訊息。
 
-請務必了解 Teams 使用的聊天服務是由 Azure 所提供，此服務也會儲存 Teams 的資料，且會根據預設永久保存。 基於這個原因，我們建議您建立一個使用 Teams 位置的保留原則，來保留並刪除此 Teams 資料。 這個保留原則可永久刪除 Exchange 信箱和基礎 Azure 聊天服務中的這個資料。 如需詳細資訊，請參閱 [Microsoft Teams 中的安全性與合規性](https://go.microsoft.com/fwlink/?linkid=871258)，特別是[資訊保護架構](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)一節。
+請務必了解 Teams 使用的聊天服務是由 Azure 所提供，此服務也會儲存 Teams 的資料，且會根據預設永久保存。 因此，如果您因合規性原因而需要刪除 Teams 訊息，建議您使用能夠永久從 Exchange 信箱和基礎 Azure 提供的交談服務中刪除該資料的 Teams 保留原則。 如需詳細資訊，請參閱 [Microsoft Teams 中的安全性與合規性](https://go.microsoft.com/fwlink/?linkid=871258)，特別是[資訊保護架構](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture)一節。
 
-Teams 聊天和頻道訊息不受針對使用者或群組信箱設定的保留原則影響。 儘管 Teams 聊天和頻道訊息會儲存在 Exchange 中，此 Teams 資料只會透過針對 **Teams 頻道訊息** 和 **Teams 聊天** 位置設定的保留原則包含。
+儘管 Teams 聊天和頻道訊息會儲存在信箱中，此 Teams 資料只會透過針對 **Teams 頻道訊息** 和 **Teams 聊天** 位置設定的保留原則包含。 Teams 聊天和頻道訊息不受針對 Exchange 使用者或群組信箱設定的保留原則影響。
 
 > [!NOTE]
 > 如果使用者包含在保留 Teams 資料的作用中保留原則中，且您刪除了包含在此原則中使用者的信箱，若要保留此 Teams 資料，該信箱會轉換成[非作用中信箱](inactive-mailboxes-in-office-365.md)。 如果您不需要為使用者保留此 Teams 資料，請在刪除其信箱之前先將該使用者帳戶從保留原則排除。

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 40cb270ee7084b50ed9ef58b9598f16e76dffa36
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 190b06a719775fbbf14c94a4fd817d3242a95e6c
+ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929489"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50044743"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -138,7 +138,7 @@ ms.locfileid: "49929489"
 
 ### <a name="configuring-trainable-classifiers-for-a-label"></a>為標籤設定可訓練分類器
 
-此選項目前處於預覽。
+此選項目前處於預覽。 如果您使用此選項，請確定您已在您的租用戶中發佈至少另一個其他敏感性標籤，其已設定為自動加標籤和[敏感性資訊類型選項](#configuring-sensitive-info-types-for-a-label)。
 
 當您選取 **[可訓練分類器]** 選項時，請選取一或多個 Microsoft 內建可訓練分類器。 如果您已建立自己的自訂可訓練分類器，也可以選取這些分類器：
 

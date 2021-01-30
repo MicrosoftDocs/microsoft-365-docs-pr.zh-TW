@@ -16,17 +16,17 @@ search.appverid:
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: 瞭解如何使用 Microsoft 服務信任入口網站中的合規性管理員，以符合資料保護和法規需求。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac0cd758717161e3b5cf727dd478d1e06f0d6375
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: f527aae2d36e392ecd646d48263a01b20a0785e8
+ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682806"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "50050397"
 ---
 # <a name="microsoft-compliance-manager-classic"></a>Microsoft 合規性管理員 (傳統)
 
 > [!IMPORTANT]
-> **[Microsoft 365 合規性中心](https://compliance.microsoft.com/)現在正式推出合規性管理員。我們強烈建議客戶停止使用合規性管理員 (傳統)，移動到全新的合規性管理員，從其豐富的使用者體驗和更新的控制措施對應獲得效益。請參閱我們的 [合規性管理員文件](compliance-manager.md)，在 Microsoft 365 合規性中心設定並開始使用全新的合規性管理員。**
+> **合規性管理員 (傳統) 即將從 Microsoft 服務信任入口網站中移除。** 建議您轉換為 [Microsoft 365 合規性中心中的新合規性管理員](https://compliance.microsoft.com/)，它可提供增強的使用者體驗和更新的控制項對應。 在傳統版本中進行評估的客戶，將需要在新的合規性管理員中建立新的評估。 任何現有的資料 (包括評估、控制項和其他資料)，將不會轉移到新的合規性管理員。 [深入了解轉換](compliance-manager-faq.md#whats-happening-to-compliance-manager-classic-in-the-service-trust-portal)。
 
 合規性管理員無法使用 21Vianet 運作的 Office 365、Office 365 德國、Office 365 U.S. Government Community High (GCC High)，或 Office 365 美國國防部。
 
