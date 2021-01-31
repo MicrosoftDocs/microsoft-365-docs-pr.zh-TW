@@ -22,12 +22,12 @@ description: 使用 Microsoft 資訊保護 (MIP) 中的敏感度標籤，以分�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 2a4b66de9996ec0ea7047ca44ae3750a917c4cc2
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 2e334e57b84bea7985983527e600be731e4de20c
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921677"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058516"
 ---
 # <a name="learn-about-sensitivity-labels"></a>了解敏感度標籤
 
@@ -42,6 +42,11 @@ ms.locfileid: "49921677"
 ![Excel 功能區和狀態列上的敏感度標籤](../media/Sensitivity-label-in-Excel.png)
 
 若要套用敏感度標籤，使用者必須使用 Microsoft 365 公司或學校帳戶登入。
+
+> [!NOTE]
+> 美國政府租使用者 (GCC 和 GCC-H) 剛開始支援敏感度標籤。 如需詳細資訊，請參閱 Microsoft 365 Apps 企業版版本資訊， [版本2101：1 月 26 日](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26)。
+>
+> 如需 Azure 資訊保護的整合式標記用戶端和掃描器，請參閱 [Azure 資訊保護優質政府服務描述](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description)。
 
 您可以使用敏感度標籤來：
   
@@ -195,7 +200,7 @@ ms.locfileid: "49921677"
 
     ![功能區中 [敏感度] 按鈕上的「深入了解」連結](../media/Sensitivity-label-learn-more.png)
 
-建立可將新敏感度標籤指派給使用者和群組的標籤原則之後，使用者在 30 分鐘之內會在他們的 Office 應用程式中看到這些標籤。 不過，請等候最多 24 小時讓這些標籤變更。
+建立可將新敏感度標籤指派給使用者和群組的標籤原則之後，使用者會開始在他們的 Office 應用程式中看到這些標籤。 最多可獲得 24 小時的時間，在您的整個組織中複製最新的變更。
 
 您可以建立並發佈的敏感度標籤數量沒有任何限制，但有一個例外：如果標籤套用加密，則您可建立的標籤數上限為 500。 不過，為了降低系統管理負擔並為使用者減少複雜度，最佳做法是試著保持最少的標籤數量。 實際情況的部署已證明，當使用者擁有五個以上的主要標籤，或每個主要標籤有超過五個子標籤時，效果會明顯地降低。
 

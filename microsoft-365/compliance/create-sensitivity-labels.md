@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: 10d677eb328ee002e187b098fa44b09372b59f72
-ms.sourcegitcommit: 7e003ee0a06f61bfb9f80441c3479fa3148afafe
+ms.openlocfilehash: 816da1001593dc36d625a48d12a1e0ace86578bf
+ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49568327"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "50058496"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -59,7 +59,8 @@ ms.locfileid: "49568327"
     
     ![建立敏感度標籤](../media/create-sensitivity-label-full.png)
     
-    注意：根據預設，租使用者沒有任何標籤，您必須建立它們。 範例圖片中的標籤會顯示 [從 Azure 資訊保護中遷移的](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) 預設標籤。
+    > [!NOTE]
+    > 根據預設，租使用者沒有任何標籤，您必須建立它們。 範例圖片中的標籤會顯示 [從 Azure 資訊保護中遷移的](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) 預設標籤。
 
 3. 在 [定義此標籤的範圍 **]** 頁面上，選取的選項會決定您可以進行設定的標籤範圍，以及它們在發佈時顯示的位置：
     
@@ -69,7 +70,7 @@ ms.locfileid: "49568327"
     
     - 如果已選取 [群組和網站 **]**，則可以在此精靈中進行設定，以套用至 Microsoft 365 群組，以及 Teams 和 SharePoint 網站。 如果未選取此選項，精靈會顯示這些設定的第一頁，但是您無法設定，而且使用者無法為群組和網站選取標籤。
     
-    如需 **Azure Purview 資產 (預覽)** 範圍的相關資訊，請參閱[在 Azure Purview 中自動為您的內容加上標籤](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
+    如需 **Azure Purview 資產 (預覽)** 範圍的相關資訊，請參閱 [在 Azure Purview 中自動為您的內容加上標籤](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。
 
 4. 按照標籤設定精靈的提示進行。
     
@@ -88,7 +89,7 @@ ms.locfileid: "49568327"
 除非您瞭解對使用者會造成的影響，否則不要刪除標籤。 如需詳細資訊，請參閱 [移除及刪除標籤](#removing-and-deleting-labels) 一節。 
 
 > [!NOTE]
-> 如果您編輯已使用標籤原則發佈的標籤，當完成精靈後便不需要額外的步驟。 例如，您不需要將其新增到新的標籤原則中，就能讓變更供相同的使用者使用。 不過，請允許最多 24 小時的時間讓變更複寫到使用者和服務。
+> 如果您編輯已使用標籤原則發佈的標籤，當完成精靈後便不需要額外的步驟。 例如，您不需要將其新增到新的標籤原則中，就能讓變更供相同的使用者使用。 不過，請允許最多 24 小時的時間讓變更複寫到所有應用程式和服務。
 
 在您發佈標籤之前，無法在應用程式中或為服務選取標籤。 若要發佈標籤，必須先[將標籤新增至標籤原則](#publish-sensitivity-labels-by-creating-a-label-policy)。
 
@@ -155,7 +156,8 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
         
     ![發佈標籤](../media/publish-sensitivity-labels-full.png)
     
-    注意：根據預設，租使用者沒有任何標籤原則，您必須建立它們。 
+    > [!NOTE]
+    > 根據預設，租使用者沒有任何標籤原則，您必須建立它們。 
 
 3. 在精靈中，請選取 **[選擇要發佈的敏感度標籤]**。 選取您要在應用程式和服務中提供使用的標籤，然後選取 **[新增]**。
     
@@ -184,7 +186,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 這個按鈕會啟動 **[建立原則]** 精靈，這會讓您可以編輯要包含的標籤和標籤設定。 完成精靈時，任何變更都會自動複寫到選取的使用者和服務。
 
-1 小時內，使用者便能在其 Office 應用程式中看到新的標籤。 不過，對現有標籤所做的變更最多需 24 小時的時間，才能複製到所有使用者和服務。
+當您使用 Windows、macOS、iOS 和 Android 版內建標籤時，使用者會在四小時內，在 Office 應用程式中看到新標籤，並在一小時內於網頁版 Office 中看到新標籤。 不過，對現有標籤所做的變更最多需 24 小時的時間，才能複製到所有使用者和服務。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>安全性與合規性中心 PowerShell 的其他標籤原則設定
 
