@@ -152,8 +152,6 @@
           href: encryption-sensitivity-labels.md
         - name: 自動將敏感度標籤套用到內容
           href: apply-sensitivity-label-automatically.md
-        - name: 利用標籤分析檢視標籤使用量
-          href: label-analytics.md
         - name: 對團隊、群組和網站使用敏感度標籤
           href: sensitivity-labels-teams-groups-sites.md
         - name: 對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤

@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 62e9910a1b94862ba23ecdc63c0fea1ec644043a
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980076"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071278"
 ---
 # <a name="manage-information-barrier-policies"></a>管理資訊障礙原則
 
@@ -166,6 +166,8 @@ ms.locfileid: "49980076"
 
 - [取得資訊障礙的概覽](information-barriers.md)
 - [定義資訊障礙的原則](information-barriers-policies.md)
-- [深入瞭解 Microsoft 小組中的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [深入瞭解 Microsoft 小組中的資訊障礙](/MicrosoftTeams/information-barriers-in-teams)
+- [深入瞭解 SharePoint 線上中的資訊障礙](/sharepoint/information-barriers)
+- [深入瞭解 OneDrive 中的資訊障礙](/onedrive/information-barriers)
 - [資訊屏障原則的屬性](information-barriers-attributes.md)
 - [疑難排解資訊屏障](information-barriers-troubleshooting.md)

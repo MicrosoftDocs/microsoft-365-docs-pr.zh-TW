@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: 有關新郵件保護功能的運作方式有疑問嗎？ 在這裡檢查答案。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4be3ff4be1d5bf8b81d06ea17a8345e4c843b150
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: a88d853905ed8462972c9f423254a49424974bb7
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058536"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066836"
 ---
 # <a name="message-encryption-faq"></a>郵件加密常見問題
 
@@ -70,7 +70,7 @@ Office 365 郵件加密的新功能是現有 IRM 和舊版 OME 解決方案的�
   
 **傳統 OME、IRM 及新 OME 功能的比較**
 
-|**功能**|**舊版本的 OME**|**IRM**|**新的 OME 功能**|
+| 功能 | 舊版本的 OME | IRM | 新的 OME 功能 |
 |:-----|:-----|:-----|:-----|
 |**傳送加密的電子郵件**|僅透過 Exchange 郵件流程規則|使用者從 Outlook for Windows、Outlook for Mac 或網頁型 Outlook 啟動;或透過 Exchange 郵件流程規則|使用者從 Outlook for Windows、Outlook for Mac 或網頁型 Outlook 啟動;或透過郵件流程規則|
 |**版權管理**|-|[不要轉寄] 選項及自訂範本|[不要轉寄] 選項、[僅限加密] 選項、預設和自訂範本|

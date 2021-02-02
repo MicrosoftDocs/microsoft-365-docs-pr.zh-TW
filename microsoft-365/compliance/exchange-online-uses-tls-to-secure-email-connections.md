@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: 瞭解 Exchange Online 和 Microsoft 365 如何使用 (TLS) 和轉寄機密 (FS) 的傳輸層安全性，以保護電子郵件通訊。 也會取得 Microsoft 用於 Exchange Online 之憑證的相關資訊。
-ms.openlocfilehash: 507a152130113868293d8d08441f298e5f5ae512
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 67be87bc07399af9469728383af1caf604bf1372
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058456"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066826"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Exchange Online 如何使用 TLS 保護電子郵件連線
 
@@ -63,7 +63,7 @@ Exchange Online 客戶若想要使用強制 TLS 保護所有傳送和接收的�
   
  **目前從2018年9月3日有效的憑證資訊**
   
-|**屬性**|**值**|
+| 屬性 | 值 |
 |:-----|:-----|
 |憑證授權單位根發行者  <br/> |GlobalSign 根 CA – R1 <br/> |
 |憑證名稱  <br/> |mail.protection.outlook.com  <br/> |
@@ -77,7 +77,7 @@ Exchange Online 客戶若想要使用強制 TLS 保護所有傳送和接收的�
   
 ****
 
-|**屬性**|**值**|
+| 屬性 | 值 |
 |:-----|:-----|
 |憑證授權單位根發行者  <br/> |Baltimore CyberTrust Root  <br/> |
 |憑證名稱  <br/> |mail.protection.outlook.com  <br/> |
@@ -93,15 +93,18 @@ Exchange Online 客戶若想要使用強制 TLS 保護所有傳送和接收的�
 
 1. 使用 Windows PowerShell 連接至您的本機 Exchange 伺服器，然後執行下列命令：  
   `certutil -URL https://crl.globalsign.com/gsorganizationvalsha2g3.crl`
-2. 在出現的視窗中，選擇 [ **取得**]。
-3. 當公用程式完成檢查時，它會傳回狀態。 如果狀態顯示 **[確定]**，則您的郵件伺服器會順利驗證新憑證。 如果不是，您需要判斷造成連接失敗的原因。 最可能的情況是，您必須更新防火牆的設定。 需要存取的端點完整清單包括：
+
+1. 在出現的視窗中，選擇 [ **取得**]。
+
+1. 當公用程式完成檢查時，它會傳回狀態。 如果狀態顯示 **[確定]**，則您的郵件伺服器會順利驗證新憑證。 如果不是，您需要判斷造成連接失敗的原因。 最可能的情況是，您必須更新防火牆的設定。 需要存取的端點完整清單包括：
     - ocsp.globalsign.com
-     - crl.globalsign.com
-     - secure.globalsign.com   
+    - crl.globalsign.com
+    - secure.globalsign.com   
 
 一般來說，您會透過 Windows Update 自動收到您的根憑證更新。 不過，有些部署有其他的安全性，可防止這些更新自動發生。 在這些已鎖定的部署中，Windows Update 無法自動更新根憑證，您必須完成下列步驟，以確保安裝正確的根 CA 憑證：
 1.  使用 Windows PowerShell 連接至您的本機 Exchange 伺服器，然後執行下列命令：  
   `certmgr.msc`
+
 2. 在 [ **受信任的憑證授權單位單位/憑證**] 底下，確認新的憑證已列出。
 
 ## <a name="get-more-information-about-tls-and-microsoft-365"></a>取得 TLS 和 Microsoft 365 的詳細資訊

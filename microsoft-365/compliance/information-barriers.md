@@ -16,12 +16,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4a0200b894bcdbc734bb90e25eff8c52848d7b65
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: 003347d46bed2529831a92681e73630d58a1f653
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50053810"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071268"
 ---
 # <a name="learn-about-information-barriers-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的資訊障礙
 
@@ -38,7 +38,13 @@ Microsoft 小組、SharePoint 線上及 OneDrive 商務支援資訊障礙。 假
 > [!IMPORTANT]
 > 資訊障礙 ***只支援** _ 兩種方式限制。 單一的方式限制（例如，行銷）可以與日交易進行通訊及共同作業，但是 _不支援_ 使用「行銷」來進行通訊和合作
 
-在所有上述範例案例中 (和更多) 時，可以定義資訊屏障原則，以防止或允許 Microsoft 小組中的通訊及共同作業，SharePoint 線上及 OneDrive。 這類原則可以防止使用者不應該來電或與其聊天，或讓使用者只能與 Microsoft 小組中的特定群組進行通訊。 透過資訊屏障原則，每當這些原則所涵蓋的使用者嘗試與 Microsoft 小組中的其他人員進行通訊及共同作業時，SharePoint 線上或 OneDrive 檢查都會進行，以避免 (或允許) 通訊和共同作業 (如資訊屏障原則所定義) 。 若要深入瞭解使用者對資訊障礙的經驗，請參閱[Microsoft 小組中的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)和[SharePoint 線上的資訊障礙](https://docs.microsoft.com/sharepoint/information-barriers)。
+在所有上述範例案例中 (和更多) 時，可以定義資訊屏障原則，以防止或允許 Microsoft 小組中的通訊及共同作業，SharePoint 線上及 OneDrive。 這類原則可以防止使用者不應該來電或與其聊天，或讓使用者只能與 Microsoft 小組中的特定群組進行通訊。 透過資訊屏障原則，每當這些原則所涵蓋的使用者嘗試與 Microsoft 小組中的其他人員進行通訊及共同作業時，SharePoint 線上或 OneDrive 檢查都會進行，以避免 (或允許) 通訊和共同作業 (如資訊屏障原則所定義) 。
+
+若要深入瞭解使用者對資訊障礙的經驗，請參閱：
+
+- [Microsoft 小組的資訊障礙](/MicrosoftTeams/information-barriers-in-teams)
+- [線上 SharePoint 的資訊障礙](/sharepoint/information-barriers)
+- [OneDrive 中的資訊障礙](/onedrive/information-barriers)
 
 > [!IMPORTANT]
 > 目前資訊障礙不適用於電子郵件通訊。 此外，資訊障礙獨立于 [規範界限](set-up-compliance-boundaries.md)。<p> 在您定義及套用資訊屏障原則之前，請確定您的組織沒有有效的 [Exchange 通訊錄原則](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) 。  (資訊障礙是以通訊錄原則為基礎。 ) 
@@ -61,16 +67,16 @@ Microsoft 小組、SharePoint 線上及 OneDrive 商務支援資訊障礙。 假
 
 如果納入資訊屏障原則中的人員可防止活動，他們將無法繼續進行。 此外，包含在資訊屏障原則中的每一位使用者都有可能封鎖為與 Microsoft 小組中的其他人員進行通訊。 當以資訊障礙原則影響的人員屬於同一個小組或群組聊天時，可能會從這些聊天會話中移除，並且可能不允許與群組進一步通訊。
 
-若要深入瞭解使用者對資訊障礙的經驗，請參閱 [Microsoft 小組中的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)。
+若要深入瞭解使用者對資訊障礙的經驗，請參閱 [Microsoft 小組中的資訊障礙](/MicrosoftTeams/information-barriers-in-teams)。
 
 在 SharePoint Online 和 OneDrive 中，資訊屏障原則會決定並防止下列類型的未授權共同作業：
 
 - 將成員新增至網站
 - 依使用者存取網站或內容
 - 與其他使用者共用網站或內容
-- 搜尋網站 
+- 搜尋網站
 
-若要深入瞭解資訊障礙的使用者經驗，請參閱[SharePoint Online 中的資訊障礙](https://docs.microsoft.com/sharepoint/information-barriers)。
+若要深入瞭解資訊障礙的使用者經驗，請參閱[SharePoint Online 中的資訊障礙](/sharepoint/information-barriers)。
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 
@@ -97,9 +103,9 @@ Microsoft 小組、SharePoint 線上及 OneDrive 商務支援資訊障礙。 假
 
 ## <a name="next-steps"></a>後續步驟
 
-- [深入瞭解 Microsoft 小組中的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [深入瞭解 Microsoft 小組中的資訊障礙](/MicrosoftTeams/information-barriers-in-teams)
+- [深入瞭解 SharePoint 線上中的資訊障礙](/sharepoint/information-barriers)
+- [深入瞭解 OneDrive 中的資訊障礙](/onedrive/information-barriers)
 - [請參閱可用於資訊障礙原則的屬性](information-barriers-attributes.md)
 - [定義資訊障礙的原則](information-barriers-policies.md)
 - [編輯 (或移除) 資訊屏障原則](information-barriers-edit-segments-policies.md)
-- [深入瞭解 SharePoint 線上中的資訊障礙](https://docs.microsoft.com/sharepoint/information-barriers)
-- [深入瞭解 OneDrive 商務中的資訊障礙](https://docs.microsoft.com/onedrive/information-barriers)

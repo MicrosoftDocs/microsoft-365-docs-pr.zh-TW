@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: dc6122bf3a253d5834f5f1c8c7bf935d743357ae
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: c10a10a5922755db2c901137c3dff8acee5b8445
+ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058526"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50066856"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Microsoft 365 的雙金鑰加密
 
@@ -141,11 +141,13 @@ Microsoft 會在 GitHub 存放庫中提供 DKE 來源檔案。 您可以複製�
 
     例如：
 
-   ![從 GitHub 複製 Double 金鑰加密服務存放庫](../media/dke-clone.png)
+   > [!div class="mx-imgBorder"]
+   > ![從 GitHub 複製 Double 金鑰加密服務存放庫](../media/dke-clone.png)
 
 3. 在 Visual Studio 程式碼中，選取 [ **View** \> **Command 調板** ]，然後選取 [ **Git：複本**]。 若要跳到清單中的選項，請開始輸入 `git: clone` 以篩選項目，然後從下拉式清單中選取。 例如：
 
-   ![Visual Studio 程式碼 GIT：仿製選項](../media/dke-vscode-clone.png)
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio 程式碼 GIT：仿製選項](../media/dke-vscode-clone.png)
 
 4. 在文字方塊中，粘貼您從 Git 複製的 URL，並 **從 GitHub** 選取 [複製]。
 
@@ -265,19 +267,19 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
 
 3. 產生新的測試機碼。
 
-   ```dos
+   ```console
    openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
    ```
 
 4. 產生私密金鑰。
 
-   ```dos
+   ```console
    openssl rsa -in key.pem -out privkeynopass.pem
    ```
 
 5. 產生公開金鑰。
 
-   ```dos
+   ```console
    openssl rsa -in key.pem -pubout > pubkeyonly.pem
    ```
 
@@ -294,23 +296,23 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
 
 10. 找到下列行：
 
-   ```c#
+    ```csharp
         #if USE_TEST_KEYS
         #error !!!!!!!!!!!!!!!!!!!!!! Use of test keys is only supported for testing,
         DO NOT USE FOR PRODUCTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
         #endif
-   ```
+    ```
 
 11. 請使用下列文字取代這些行：
 
-   ```csharp
-   services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
-   ```
+    ```csharp
+    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
+    ```
 
-   結束結果應如下所示。
+    結束結果應如下所示。
 
-   ![公開預覽的 startup.cs 檔案](../media/dke-startupcs-usetestkeys.png)
+    ![公開預覽的 startup.cs 檔案](../media/dke-startupcs-usetestkeys.png)
 
 現在您已經準備好 [建立 DKE 專案](#build-the-project)。
 
@@ -348,13 +350,13 @@ DKE 租使用者和 key settings 位於檔案中的 **appsettings.js** 。
 
 4. 選取 [ **執行** \> **開始調試** ] 以調試處理常式。 如果系統提示您選取環境，請選取 [ **.net core**]。
 
-.NET 核心偵錯工具通常會啟動至 `https://localhost:5001` 。 若要查看測試機碼，請移至 `https://localhost:5001` 並追加一個正斜線 (/) 和您的金鑰名稱。 例如：
+   .NET 核心偵錯工具通常會啟動至 `https://localhost:5001` 。 若要查看測試機碼，請移至 `https://localhost:5001` 並追加一個正斜線 (/) 和您的金鑰名稱。 例如：
 
-```https
-https://localhost:5001/TestKey1
-```
+   ```https
+   https://localhost:5001/TestKey1
+   ```
 
-該項應該會以 JSON 格式顯示。
+   該項應該會以 JSON 格式顯示。
 
 您的設定現在已完成。 在您發佈金鑰庫之前 appsettings.js開啟] 中的 JwtAudience 設定，請確定主機名稱的值完全符合您的應用程式服務主機名稱。 您可能已將其變更為 localhost 以進行組建疑難排解。
 
@@ -374,35 +376,36 @@ https://localhost:5001/TestKey1
 
 2. 選取您的訂閱和資源群組，然後定義您的實例詳細資料。
 
-    - 輸入您要安裝 DKE 服務之電腦的主機名稱。 請確定其名稱與 [**appsettings.json**](#tenant-and-key-settings) file 中的 JwtAudience 設定所定義的名稱相同。 您為此名稱提供的值也是 WebAppInstanceName。
+   - 輸入您要安裝 DKE 服務之電腦的主機名稱。 請確定其名稱與 [**appsettings.json**](#tenant-and-key-settings) file 中的 JwtAudience 設定所定義的名稱相同。 您為此名稱提供的值也是 WebAppInstanceName。
 
-    - 在 [ **發佈**]、[程式 **代碼**] 及 [ **執行時間堆疊**] 中，選取 [ **.net Core 3.1**]。
+   - 在 [ **發佈**]、[程式 **代碼**] 及 [ **執行時間堆疊**] 中，選取 [ **.net Core 3.1**]。
 
-    例如：
+   例如：
 
-   ![新增應用程式服務](../media/dke-azure-add-app-service.png)
+   > [!div class="mx-imgBorder"]
+   > ![新增應用程式服務](../media/dke-azure-add-app-service.png)
 
 3. 在頁面底部，選取 [ **複查 + 建立**]，然後選取 [ **新增**]。
 
 4. 請執行下列其中一項動作來發佈您產生的機碼：
 
-    - [透過 ZipDeployUI 發佈](#publish-via-zipdeployui)
-    - [透過 FTP 發佈](#publish-via-ftp)
-    - [透過 Visual Studio 2019 或更新版本發行](https://docs.microsoft.com/aspnet/core/tutorials/)
+   - [透過 ZipDeployUI 發佈](#publish-via-zipdeployui)
+   - [透過 FTP 發佈](#publish-via-ftp)
+   - [透過 Visual Studio 2019 或更新版本發行](https://docs.microsoft.com/aspnet/core/tutorials/)
 
 #### <a name="publish-via-zipdeployui"></a>透過 ZipDeployUI 發佈
 
 1. 移至`https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`。
 
-    例如：https://dkeservice.scm.azurewebsites.net/ZipDeployUI
+   例如：https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
 2. 在金鑰存放區的基本代碼中，移至 [ **customer-key-store\src\customer-key-store** ] 資料夾，然後確認此資料夾包含 **customerkeystore 的 .csproj** 檔案。
 
 3. 執行： **dotnet 發佈**
 
-     [輸出] 視窗會顯示部署發佈所在的目錄。
+   [輸出] 視窗會顯示部署發佈所在的目錄。
 
-    例如：`customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
+   例如：`customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
 4. 將發行目錄中的所有檔案傳送至 .zip 檔案。 建立 .zip 檔時，請確定目錄中的所有檔案都位於 .zip 檔案的根層級。
 
@@ -414,11 +417,11 @@ https://localhost:5001/TestKey1
 
 1. 連線至您在 [上述](#deploy-the-dke-service-and-publish-the-key-store)建立的 App 服務。
 
-    在您的瀏覽器中，移至： **Azure 入口** 網站  >  **應用程式服務**  >  **部署中心**  >  **手動部署**  >  **FTP**  >  **儀表板**。
+   在您的瀏覽器中，移至： **Azure 入口** 網站  >  **應用程式服務**  >  **部署中心**  >  **手動部署**  >  **FTP**  >  **儀表板**。
 
 2. 複製顯示至本機檔案的連接字串。 您將使用這些字串連線到 Web App 服務，並透過 FTP 上傳檔案。
 
-    例如：
+   例如：
 
    ![從 FTP 儀表板複製連接字串](../media/dke-ftp-dashboard.png)
 
@@ -428,9 +431,9 @@ https://localhost:5001/TestKey1
 
 5. 執行： **dotnet 發佈**
 
-    輸出包含部署發佈所在的目錄。
+   輸出包含部署發佈所在的目錄。
 
-    例如：`customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
+   例如：`customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
 6. 將發行目錄中的所有檔案傳送至 zip 檔案。 建立 .zip 檔時，請確定目錄中的所有檔案都位於 .zip 檔案的根層級。
 
@@ -444,11 +447,15 @@ https://localhost:5001/TestKey1
 
 運行：
 
+```powershell
 src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
+```
 
 例如：
 
+```powershell
 key_store_tester.ps1 https://mydkeservice.com/mykey
+```
 
 確定輸出中未顯示任何錯誤。 當您準備好時，請 [註冊金鑰存放區](#register-your-key-store)。
 
@@ -466,11 +473,12 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 3. 從顯示的選項中選取帳戶類型。
 
-    如果您使用的是非自訂網域（例如 **onmicrosoft.com**）的 Microsoft Azure，請選取 [ **此組織目錄中的帳戶]，只 (僅限 Microsoft 單一租使用者) 。**
+   如果您使用的是非自訂網域（例如 **onmicrosoft.com**）的 Microsoft Azure，請選取 [ **此組織目錄中的帳戶]，只 (僅限 Microsoft 單一租使用者) 。**
 
-    例如：
+   例如：
 
-   ![新的應用程式註冊](../media/dke-app-registration.png)
+   > [!div class="mx-imgBorder"]
+   > ![新的應用程式註冊](../media/dke-app-registration.png)
 
 4. 在頁面底部，選取 [ **註冊** ] 以建立新的應用程式註冊。
 
@@ -482,13 +490,13 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 8. 在 [重新 **導向 URIs**] 底下，輸入您的雙金鑰加密服務 URI。 輸入應用程式服務 URL，包括主機名稱和網域。
 
-    例如：https://mydkeservicetest.com
+   例如：https://mydkeservicetest.com
 
-    - 您輸入的 URL 必須符合部署 DKE 服務的主機名稱。
-    - 如果您要在本機上使用 Visual Studio 進行測試，請使用 **https://localhost:5001** 。
-    - 在所有情況下，此配置必須是 **HTTPs**。
+   - 您輸入的 URL 必須符合部署 DKE 服務的主機名稱。
+   - 如果您要在本機上使用 Visual Studio 進行測試，請使用 **https://localhost:5001** 。
+   - 在所有情況下，此配置必須是 **HTTPs**。
 
-    確定主機名稱完全符合您的應用程式服務主機名稱。 您可能已經將其變更為 `localhost` 疑難排解組建。 在 **appsettings.js開啟**] 中，這個值是您為設定的主機名稱 `JwtAudience` 。
+   確定主機名稱完全符合您的應用程式服務主機名稱。 您可能已經將其變更為 `localhost` 疑難排解組建。 在 **appsettings.js開啟**] 中，這個值是您為設定的主機名稱 `JwtAudience` 。
 
 9. 在 **[隱含授** 與] 底下，選取 [ **識別碼標記** ] 核取方塊。
 
@@ -528,7 +536,8 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 例如：
 
-![選取 [Microsoft 365 規範中心] 中的 [使用雙重金鑰加密]](../media/dke-use-dke.png)
+> [!div class="mx-imgBorder"]
+> ![選取 [Microsoft 365 規範中心] 中的 [使用雙重金鑰加密]](../media/dke-use-dke.png)
 
 在最新版本的 Microsoft 365 應用程式中，您新增的任何 DKE 標籤都會開始顯示給使用者。
 
@@ -539,12 +548,12 @@ key_store_tester.ps1 https://mydkeservice.com/mykey
 
 如果您是 Office 有問必答，已為您啟用 DKE。 否則，請新增下列登錄機碼，為您的用戶端啟用 DKE：
 
-```properties
-    [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
-    "DoubleKeyProtection"=dword:00000001
+```console
+   [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
+   "DoubleKeyProtection"=dword:00000001
 
-    [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\flighting]
-    "DoubleKeyProtection"=dword:00000001
+   [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\flighting]
+   "DoubleKeyProtection"=dword:00000001
 ```
 
 ## <a name="migrate-protected-files-from-hyok-labels-to-dke-labels"></a>將受保護的檔案從 HYOK 標籤遷移至 DKE 標籤

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c8eef9ad1732122edb92c6884db2a5737eefd484
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 932fb602039a3f2437dfd9cc9db2c2e9438369e3
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029407"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071248"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -64,7 +64,7 @@ Office for iOS 和 Office for Android：敏感度標籤是內置於 [office 應�
 |[包含變數的動態標記](#dynamic-markings-with-variables)                                              | 2010 +           | 16.42 +     | 2.42 + | 16.0.13328 + | 在 [複查] 下 |
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21 +     | 2.21+ | 16.0.11231+ | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004 + | 16.35 +   | 在 [複查] 下   | 在 [複查] 下         | 在 [複查] 下                                                        |
-|使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)            | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)        | 在 [複查] 下   | 在 [複查] 下         | 是的 <sup>\*</sup>                                                        |
+|[開始使用資料分類](data-classification-overview.md) ，並傳送系統管理員的資料                      | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)            | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)        | 在 [複查] 下   | 在 [複查] 下         | 是的 <sup>\*</sup>                                                        |
 |[要求使用者將標籤套用至電子郵件和檔](#require-users-to-apply-a-label-to-their-email-and-documents)   | 預覽：向現有的 [頻道 (預覽) ](https://office.com/insider)             | 預覽：向現有的 [頻道 (預覽) ](https://office.com/insider)         | 在 [複查] 下   | 預覽： [Beta 通道](https://office.com/insider)         | 在 [複查] 下                                            
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                                  | 推出： 16.44 + | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
 |支援標籤和加密檔上的[AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)和[合著](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | 在 [複查] 下 | [Yes-自願加入](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -89,7 +89,7 @@ Office for iOS 和 Office for Android：敏感度標籤是內置於 [office 應�
 |[立即指派權限](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[讓使用者指派權限](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21 +                 | 4.7.1 +         | 4.0.39 +           | 是               |
 |[要求使用者將標籤套用至電子郵件和檔](#require-users-to-apply-a-label-to-their-email-and-documents)   | 預覽： [目前的頻道 (預覽) ](https://office.com/insider))                         | 16.43 +                     | 在 [複查] 下            | 在 [複查] 下                | 是                |
-|使用標籤分析和傳送資料的系統管理員來[查看標籤使用狀況](label-analytics.md)                      | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)                       | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)                    | 在 [複查] 下           | 在 [複查] 下               | 是               |
+|[開始使用資料分類](data-classification-overview.md) ，並傳送系統管理員的資料                      | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)                       | 預覽： [目前的頻道 (預覽) ](https://office.com/insider)                    | 在 [複查] 下           | 在 [複查] 下               | 是               |
 |[自動將敏感度標籤套用到內容](apply-sensitivity-label-automatically.md)                    | 2009 +                      | 16.44 +                    | 在 [複查] 下           | 在 [複查] 下               | 是 |
 |
 

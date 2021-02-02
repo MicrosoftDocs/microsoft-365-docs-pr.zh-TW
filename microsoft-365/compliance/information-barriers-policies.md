@@ -15,12 +15,12 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 80123674644b47c76becb92fa08c21f4668614b2
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 284036fecf53252bb29878482dbf6dec42eeeaeb
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980055"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071258"
 ---
 # <a name="define-information-barrier-policies"></a>定義資訊屏障原則
 
@@ -320,4 +320,6 @@ Contoso 定義三個原則，如下表所述：
 ## <a name="resources"></a>資源
 
 - [取得資訊障礙的概覽](information-barriers.md)
-- [Microsoft 小組的資訊障礙](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
+- [深入瞭解 Microsoft 小組中的資訊障礙](/MicrosoftTeams/information-barriers-in-teams)
+- [深入瞭解 SharePoint 線上中的資訊障礙](/sharepoint/information-barriers)
+- [深入瞭解 OneDrive 中的資訊障礙](/onedrive/information-barriers)
