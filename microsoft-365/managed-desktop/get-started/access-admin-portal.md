@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: c2a5b7f837d6c43369301820019732ca3aef83bf
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: 5b7ba0db52f06f7b3f6fce596015b56c8e46c6c2
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50053844"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068950"
 ---
 # <a name="access-the-admin-portal"></a>存取管理員入口網站
 
@@ -29,9 +29,9 @@ ms.locfileid: "50053844"
 > - Chrome (最新版本) 
 > - Firefox (最新版本) 
 
-您的管理帳戶需要特定許可權，才能存取 Azure 入口網站或 Microsoft 端點管理員中的 Microsoft 受管理桌面系統管理功能。 您可以使用以角色為基礎的存取控制 (RBAC) ，管理組織內這些功能的系統管理員存取權。 有幾個 Azure Active Directory (Azure AD) 系統管理員角色和內建自訂角色，可為 Microsoft Managed Desktop Admin 入口網站中的不同功能提供更細微的控制。 如需 Azure Active Directory 角色的詳細資訊，請參閱 [在 Azure Active directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 與適用于各種 Microsoft 產品和服務的 Azure AD 系統管理員角色不同，自訂角色是 Microsoft 受管理的桌面所特有的，只會保證此服務的系統管理功能存取權。 管理員可以個別或搭配使用 Azure AD 系統管理員角色，將自訂角色指派給使用者，以將 Microsoft 管理的桌面許可權新增至現有的系統管理員帳戶。
+您的系統管理帳戶需要特定許可權，才能存取 Microsoft 端點管理員中的 Microsoft 受管理桌面系統管理功能。 您可以使用以角色為基礎的存取控制，管理組織內這些功能的系統管理員存取權。 有幾個 Azure Active Directory (Azure AD) 系統管理員角色和內建 Microsoft 受管理的桌面角色，可提供更細微的控制，可對 Microsoft Managed Desktop Admin 入口網站內的不同功能提供更細微的控制。 如需 Azure Active Directory 角色的詳細資訊，請參閱 [在 Azure Active directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。 與適用于各種 Microsoft 產品和服務的 Azure AD 系統管理員角色不同，內建角色是 Microsoft 受管理的桌面所特有的，只會保證此服務的系統管理功能存取權。 管理員可以個別或結合 Azure AD 系統管理員角色，將內建角色指派給使用者，以將 Microsoft 管理的桌面許可權新增至現有的系統管理員帳戶。
 
-您可以指派下列每個角色，以提供不同的存取層級：
+## <a name="azure-active-directory-roles-with-microsoft-managed-desktop-access"></a>具有 Microsoft 受管理桌面存取權的 Azure Active Directory 角色
 
 |Azure AD 角色  |Microsoft 受管理的桌面許可權  |
 |---------|---------|
@@ -42,11 +42,15 @@ ms.locfileid: "50053844"
 |安全性系統管理員 | 具有此角色的系統管理員對管理員入口網站中 Microsoft 受管理的電腦具有 **安全性相關功能的** 所有功能和寫入權限，具有 **唯讀許可權**。 |
 |安全性讀取者 |具有此角色的系統管理員對 Microsoft Managed Desktop Admin 入口網站中的 **所有功能具有唯讀許可權** 。|
 
+如果您需要協助指派 Azure Active Directory 角色，請參閱 [在 Azure Active directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
+
 > [!IMPORTANT]
 > 只有全域系統管理員角色具有在 Microsoft Managed Desktop 中 *註冊* 您的組織所需的許可權。 請注意，Azure Active Directory 角色將會在各種 Microsoft 服務中提供使用者帳戶的許可權。 在 Microsoft 受管理的桌面完成註冊後，您應該永遠使用該角色，以完成其他工作所需的 *最低* 許可權。
 
- 
-|自訂角色  |Microsoft 受管理的桌面許可權  |
+## <a name="built-in-roles-provided-by-microsoft-managed-desktop"></a>Microsoft 受管理的桌面所提供的內建角色
+
+
+|內建角色  |Microsoft 受管理的桌面許可權  |
 |---------|---------|
 |Microsoft 受管理的桌面服務管理員  | 指派給使用者時，此角色可讓系統管理員 **讀取和寫入權限給** 與 Microsoft Managed Desktop admin 入口網站中的安全性無關的功能。  |
 |Microsoft 受管理的桌面服務讀取器 | 指派給使用者時，此角色可讓系統管理員對與 Microsoft Managed Desktop Admin 入口網站中的安全性無關的 **功能具有唯讀許可權** 。 |
@@ -55,11 +59,9 @@ ms.locfileid: "50053844"
 > [!NOTE]
 > 安全性功能包括安全性相關的通訊、安全性連絡人的管理、安全性相關支援要求的管理，以及與安全性相關的報表存取。 
 
-## <a name="assigning-roles-to-administrators"></a>將角色指派給系統管理員
+### <a name="assigning-built-in-roles-to-administrators"></a>將內建角色指派給系統管理員
 
-如果您需要協助指派 Azure Active Directory 角色，請參閱 [在 Azure Active directory 中的系統管理員角色許可權](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)。
-
-為了便於管理內建角色，每個自訂角色 (都有一個安全性群組，例如「新式工作場所角色–安全性管理員」 ) 。 若要將使用者指派給其中一個安全性群組，請遵循下列步驟：
+若要管理內建角色，每個自訂角色的安全性群組都有名稱為 "新式工作區角色- _角色名稱_" (例如，「新式工作場所角色–安全性管理員」 ) 。 若要將使用者指派給其中一個安全性群組，請遵循下列步驟：
 1.  請移至 Microsoft 端點管理員入口網站。
 2.  選取左側的 [ **群組** ]。
 3.  搜尋 **新式的工作區角色**，然後選取與您要指派之角色相關聯的群組。 
