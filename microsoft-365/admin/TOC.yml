@@ -184,8 +184,6 @@
               href: email/resolve-issues-with-shared-mailboxes.md
         - name: '設定 [焦點] 收件匣'
           href: setup/configure-focused-inbox.md
-        - name: 關於電子郵件共同作業
-          href: email/email-collaboration.md
         - name: 將使用者或連絡人新增至通訊群組
           href: email/add-user-or-contact-to-distribution-list.md
         - name: 管理貴組織的待過濾郵件
