@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: 816da1001593dc36d625a48d12a1e0ace86578bf
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 60865b40582416ac2ac963c4a8c68353b06fc6d4
+ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058496"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50071288"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -239,4 +239,4 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 - [對 SharePoint 和 OneDrive 中的 Office 檔案啟用敏感度標籤](sensitivity-labels-sharepoint-onedrive-files.md)
 
-若要監視標籤的使用方式，請參閱[利用標籤分析檢視標籤使用量](label-analytics.md)。
+若要監視標籤的使用方式，請參閱[開始使用資料分類](data-classification-overview.md)。
