@@ -478,16 +478,20 @@
   href: 'https://docs.microsoft.com/windows/deployment/'
 - name: 企業版 Microsoft 365 應用程式
   href: 'https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps'
+- name: Surface 裝置
+  href: 'https://docs.microsoft.com/surface/deploy'
+- name: 裝置管理
+  items:
+    - name: 藍圖
+      href: device-management-roadmap-microsoft-365.md
+- name: Microsoft Edge
+  href: 'https://docs.microsoft.com/deployedge/deploy-edge-plan-deployment'
 - name: 部署和更新通道範例設定
   items:
     - name: 概觀
       href: deploy-update-channels-examples.md
     - name: 廣泛部署最新版本
       href: deploy-update-channels-examples-rapid-deploy.md
-- name: 裝置管理
-  items:
-    - name: 藍圖
-      href: device-management-roadmap-microsoft-365.md
 - name: 使用 PowerShell 管理 Microsoft 365
   href: manage-microsoft-365-with-microsoft-365-powershell.md
   items:

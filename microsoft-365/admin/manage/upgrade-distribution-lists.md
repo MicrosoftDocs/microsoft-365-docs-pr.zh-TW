@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: 瞭解如何將一或多個通訊群組清單升級至 Outlook 中的 Microsoft 365 群組，以及如何使用 PowerShell 同時升級多個通訊群組清單。
-ms.openlocfilehash: a1fb974be4838ebe98c2c55fe8694e89e27d636e
-ms.sourcegitcommit: 3951147f74510e2ead6c11ceab92854f0937426b
+ms.openlocfilehash: 95f887b4386b349dc9d8bb471deab19b5425f6f5
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083571"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080524"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將通訊群組清單升級至 Outlook 中的 Microsoft 365 群組
 
@@ -35,31 +35,30 @@ ms.locfileid: "45083571"
 
 ## <a name="upgrade-one-or-many-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將一或多個通訊群組清單升級至 Outlook 中的 Microsoft 365 群組
 
-您必須是全域系統管理員或 Exchange 系統管理員，才可升級通訊群組清單。 若要升級為 Microsoft 365 群組，通訊群組必須擁有信箱的擁有者。 
+您必須是全域系統管理員或 Exchange 系統管理員，才可升級通訊群組清單。 若要升級為 Microsoft 365 群組，通訊群組必須擁有信箱的擁有者。
 
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
 
-2. 在 Exchange 系統管理中心中，**移至 [** 收件者 \> **群組**]。<br/>您會看到一則通知，指出您有資格升級為 Microsoft 365 群組的通訊群組清單（也稱為**通訊群組**）。<br/> ![選取 [快速入門] 按鈕](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. 在 Exchange 系統管理中心中， **移至 [** 收件者 \> **群組**]。<br/>您會看到一則通知，指出您的通訊群組清單 (也稱為 **通訊群組** ) 可升級至 Microsoft 365 群組。<br/> ![選取 [快速入門] 按鈕](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
-3. 從 [**群組**] 頁面中選取一或多個通訊群組清單（也稱為**通訊群組**）。<br/>![選取通訊群組](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
+3. 從 [**群組**] 頁面中，選取一或多個通訊群組清單 (也稱為 **通訊群組**) 。<br/>![選取通訊群組](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
 4. 選取 [升級] 圖示。<br/>![升級至 Microsoft 365 群組圖示](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-5. 在 [資訊] 對話方塊中，選取 **[是]** 以確認升級。 會立即開始處理常式。 視您所升級的 DLs 大小和數目而定，此程式可能需要數分鐘或數小時的時間。<br/>如果無法升級通訊群組清單，就會顯示一個對話方塊。 查看[哪些通訊群組清單無法升級？](#which-distribution-lists-cannot-be-upgraded)。
+5. 在 [資訊] 對話方塊中，選取 **[是]** 以確認升級。 會立即開始處理常式。 視您所升級的 DLs 大小和數目而定，此程式可能需要數分鐘或數小時的時間。<br/>如果無法升級通訊群組清單，就會顯示一個對話方塊。 查看 [哪些通訊群組清單無法升級？](#which-distribution-lists-cant-be-upgraded)。
 
-6. 如果您要升級多個通訊群組清單，請使用下拉式清單來篩選已升級的通訊群組清單。 如果清單尚未完成，請稍候片刻，然後選取 [重新整理 **]，以**查看已成功升級的功能。<br/>在您選取的所有 DLs 完成升級程式時，並無任何通知。 您可以查看 [**可用於升級**或**升級的 DLs**] 中所列的專案，以找出此專案。
+6. 如果您要升級多個通訊群組清單，請使用下拉式清單來篩選已升級的通訊群組清單。 如果清單尚未完成，請稍候片刻，然後選取 [重新整理 **]，以** 查看已成功升級的功能。<br/>在您選取的所有 DLs 完成升級程式時，並無任何通知。 您可以查看 [ **可用於升級** 或 **升級的 DLs**] 中所列的專案，以找出此專案。
 
-7. 如果您選取了要升級的 DL，但是它仍會顯示在頁面上，以供升級時使用，則無法升級。 若[升級無法運作，請查看要執行的](#what-to-do-if-the-upgrade-doesnt-work)動作。
+7. 如果您選取了要升級的 DL，但是它仍會顯示在頁面上，以供升級時使用，則無法升級。 若 [升級無法運作，請查看要執行的](#what-to-do-if-the-upgrade-doesnt-work)動作。
 
 > [!NOTE]
-> 如果您正在取得群組摘要電子郵件，您可能會注意到，它有時候會讓您升級您所擁有的任何合格通訊群組清單。 如需有關摘要電子郵件的詳細資訊，請參閱[在 Outlook 中擁有群組交談](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22)。
-
+> 如果您正在取得群組摘要電子郵件，您可能會注意到，它有時候會讓您升級您所擁有的任何合格通訊群組清單。 如需有關摘要電子郵件的詳細資訊，請參閱 [在 Outlook 中擁有群組交談](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) 。
 
 ## <a name="what-to-do-if-the-upgrade-doesnt-work"></a>升級無法運作時應執行的動作
 
 無法升級的通訊群組清單保持不變。
 
-若一或多個**合格**的通訊群組清單無法升級，請開啟[支援票證](../contact-support-for-business-products.md)。 您必須將問題升級至群組工程小組，以找出問題。
+若一或多個 **合格** 的通訊群組清單無法升級，請開啟 [支援票證](../contact-support-for-business-products.md)。 您必須將問題升級至群組工程小組，以找出問題。
 
 通訊群組清單可能由於服務中斷而無法升級，但極不可能。 如有需要，請稍候一段時間，然後嘗試再次升級 DL。
 
@@ -82,7 +81,7 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
 ```
 
 > [!NOTE]
-> 您也可以使用[set-unifiedgroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell Cmdlet，將單一通訊群組清單升級至 Microsoft 365 群組。
+> 您也可以使用 [set-unifiedgroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell Cmdlet，將單一通訊群組清單升級至 Microsoft 365 群組。
 
 ### <a name="upgrade-multiple-dls-in-a-batch"></a>在批次中升級多個 DLs
 
@@ -102,7 +101,7 @@ Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address
 您可以透過兩種方式升級所有合格的 DLs。
 
 > [!NOTE]
-> New-distributiongroup 指令程式不會從管線接收資料，因此，您必須使用「foreach-object」 {} 運算子才能成功執行。
+> Upgrade-DistributionGroup 指令程式不會從管線接收資料，因此，您必須使用「foreach-object」 {} 運算子才能成功執行。
 
 1. 在租使用者中取得合格的 DLs，並使用升級命令進行升級：
 
@@ -122,26 +121,26 @@ Get-DistributionGroup| Foreach-Object{
 
 ## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>將通訊群組清單升級至 Outlook 中 Microsoft 365 群組的常見問題
 
-### <a name="which-distribution-lists-cannot-be-upgraded"></a>哪些通訊群組清單無法升級？
+### <a name="which-distribution-lists-cant-be-upgraded"></a>哪些通訊群組清單無法升級？
 
-您只能升級雲端管理、簡單且不會嵌套的通訊群組清單。 下表列出**無法**升級的通訊群組清單。
+您只能升級雲端管理、簡單且不會嵌套的通訊群組清單。 下表列出 **無法** 升級的通訊群組清單。
 
 |**屬性**|**資格？**|
 |:-----|:-----|
 |內部部署的受管理通訊群組清單。  <br/> |否  <br/> |
 |嵌套的通訊群組清單。 通訊群組清單具有子群組或為另一個群組的成員。  <br/> |否  <br/> |
-|成員**RecipientTypeDetails**不是**UserMailbox**、 **SharedMailbox**、 **TeamMailbox**、 **MailUser**的通訊群組清單  <br/> |否  <br/> |
+|成員 **RecipientTypeDetails** 不是 **UserMailbox**、 **SharedMailbox**、 **TeamMailbox**、 **MailUser** 的通訊群組清單  <br/> |否  <br/> |
 |擁有超過100個擁有者的通訊群組清單  <br/> |否  <br/> |
 |只具有成員但沒有擁有者的通訊群組清單  <br/> |否  <br/> |
 |別名包含特殊字元的通訊群組清單  <br/> |否  <br/> |
 |如果通訊群組清單設定為共用信箱的轉寄位址  <br/> |否  <br/> |
-|如果 DL 是另一個 DL 中的**寄件者限制**的一部分。  <br/> |否  <br/> |
+|如果 DL 是另一個 DL 中的 **寄件者限制** 的一部分。  <br/> |否  <br/> |
 |安全性群組  <br/> |否  <br/> |
 |動態通訊群組清單  <br/> |否  <br/> |
-|已轉換為**RoomLists**的通訊群組清單  <br/> |否  <br/> |
-|**關閉** **MemberJoinRestriction**和/或**MemberDepartRestriction**的通訊群組清單  <br/> |否  <br/> |
+|已轉換為 **RoomLists** 的通訊群組清單  <br/> |否  <br/> |
+|**關閉** **MemberJoinRestriction** 和/或 **MemberDepartRestriction** 的通訊群組清單  <br/> |否  <br/> |
 
-### <a name="how-do-i-check-which-dls-are-eligible-for-upgrade"></a>如何檢查哪些 DLs 有資格升級？
+### <a name="check-which-dls-are-eligible-for-upgrade"></a>檢查哪些 DLs 有資格升級
 
 如果您想要檢查是否有資格使用 DL，您可以執行下列命令：
 
@@ -157,9 +156,9 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-a-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>為什麼連絡人卡片仍顯示通訊群組清單？ 若要防止已升級的通訊群組清單顯示在我的自動建議清單中，該怎麼辦？
 
-- 若為 Outlook：當有人嘗試在遷移後輸入 Microsoft 365 群組名稱時，在 Outlook 中嘗試傳送電子郵件時，收件者將會解析為通訊群組清單，而不是群組。 收件者的連絡人卡片將會是通訊群組清單連絡人卡片。 這是因為 Outlook 中的收件者緩存或 nick 名稱快取。 電子郵件會順利傳送至群組，但是可能會造成對寄件者的混淆。<br/>您可以執行本主題中的步驟， [[Outlook AutoComplete] 清單的相關資訊](https://go.microsoft.com/fwlink/?LinkID=798736)可重設快取，以修正此問題。
+- 若為 Outlook：當有人嘗試在遷移後輸入 Microsoft 365 群組名稱時，在 Outlook 中嘗試傳送電子郵件時，收件者將會解析為通訊群組清單，而不是群組。 收件者的連絡人卡片將會是通訊群組清單連絡人卡片。 這是因為 Outlook 中的收件者緩存或 nick 名稱快取。 電子郵件會順利傳送至群組，但是可能會造成對寄件者的混淆。<br/>您可以執行本主題中的步驟， [[Outlook AutoComplete] 清單的相關資訊](https://go.microsoft.com/fwlink/?LinkID=798736) 可重設快取，以修正此問題。
 
-- 針對網頁上的 Outlook：在 Outlook 網頁版中，通訊群組清單收件者仍會保留在快取中。 您可以依照「[從自動完成」清單中移除建議的名稱或電子郵件地址](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58)中的步驟進行，以重新整理快取，以查看群組連絡人卡片。
+- 針對網頁上的 Outlook：在 Outlook 網頁版中，通訊群組清單收件者仍會保留在快取中。 您可以依照「 [從自動完成」清單中移除建議的名稱或電子郵件地址](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) 中的步驟進行，以重新整理快取，以查看群組連絡人卡片。
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>新增群組成員是否會在其收件匣中取得歡迎使用的電子郵件？
 
@@ -169,12 +168,10 @@ Get-DistributionGroup| Foreach-Object{
 
 在某些情況下，雖然仍有資格，但無法升級。 DL 不會升級，而且會以 DL 形式保留。
 
-- 在組織中，系統管理員已套用**群組的電子郵件地址原則**，並嘗試升級不符合準則的 DLs，而 DL 則無法升級
+- 在組織中，系統管理員已套用 **群組的電子郵件地址原則** ，並嘗試升級不符合準則的 DLs，而 DL 則無法升級
 
-- **MemberJoinRestriction**或**MemberDepartRestriction**設定為 [**已關閉**] 的 DLs，無法升級
+- **MemberJoinRestriction** 或 **MemberDepartRestriction** 設定為 [**已關閉**] 的 DLs，無法升級
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>從 EAC 升級時，DL 會發生什麼事？
 
 只有在將通話送出至伺服器時，才會進行升級。 升級失敗時，您的 DLs 會完好無損。 它們的運作方式與使用的方式相同。
-
-

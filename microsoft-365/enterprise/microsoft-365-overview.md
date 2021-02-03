@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 10/15/2019
+ms.date: 02/01/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: 提供 Microsoft 365 企業版的元件、方案和部署路徑的簡介。
-ms.openlocfilehash: 0916fa97daec166a7bae8b19e3c9efbd693f4874
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
+ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48846961"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "50068966"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 企業版概觀
 
@@ -131,6 +131,24 @@ Microsoft 365 E3 使用者可以使用這些附加元件來利用 Microsoft 365 
 - [Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government)
 
   讓美國公營事業員工共同且安全地合作。
+
+## <a name="best-together-with-surface-and-the-edge-browser"></a>搭配使用 Surface 和 Microsoft Edge 瀏覽器以達到最佳效能
+
+利用 Microsoft 365 企業版、Microsoft Surface 裝置和 Microsoft Edge 瀏覽器的最佳組合，最佳化使用者的整合和安全生產力。 這種跨產品整合提供：
+
+- 常用的身分識別和登入安全性基礎結構。
+- 整合的本機與雲端應用程式，以進行搜尋、共同作業、生產力及合規性。
+- 對硬體、瀏覽器、本機應用程式和雲端應用程式進行全面且整合的安全性。
+- 適用於安裝和更新 IT 管理的一般基礎結構。
+
+以下是企業組織的範例。
+
+![使用 Microsoft 365、Surface 裝置及 Microsoft Edge 瀏覽器的企業組織](../media/microsoft-365-overview/best-together-with-surface-and-edge.png)
+
+如需中小型企業和教育機構的詳細資訊和設定範例，請下載 [最佳組合海報](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)。
+
+[![搭配使用 Surface 和 Microsoft Edge 瀏覽器最佳組合海報的影像](../media/microsoft-365-overview/best-together-poster-thumbnail.png)](https://download.microsoft.com/download/2/8/d/28db0cf9-2f5a-4f63-91e2-46ff5c4d3baf/microsoft-best-together-poster.pdf)
+
 
 ## <a name="microsoft-365-training"></a>Microsoft 365 訓練
 

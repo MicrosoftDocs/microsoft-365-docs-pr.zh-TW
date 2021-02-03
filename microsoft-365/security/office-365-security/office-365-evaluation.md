@@ -9,7 +9,6 @@ author: levinec
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,12 +16,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f8f105215b23ec49318c133714e758e2a2a9c1df
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 7c0bb1701cf030692bc98218b38be00cae57a2bd
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870918"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080698"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>評估 Microsoft Defender for Office 365
 
@@ -56,7 +57,7 @@ ms.locfileid: "49870918"
 - 分析動作報告
 - 展示評估結果
 
-## <a name="before-you-begin"></a>在您開始之前
+## <a name="before-you-begin"></a>開始之前
 
 ### <a name="licensing"></a>授權
 
@@ -104,7 +105,7 @@ ms.locfileid: "49870918"
 
 ### <a name="urls"></a>URL
 
-郵件流程期間會引爆 URLs。 如果您不想要引爆特定的 URLs，請適當地管理您的允許 URLs 清單。 如需詳細資訊，請參閱 [Manage URLs In 承租人 Allow/封鎖清單](tenant-allow-block-list.md) 。
+郵件流程期間會引爆 URLs。 如果您不想要引爆特定的 URLs，請適當地管理您的允許 URLs 清單。 如需詳細資訊，請參閱 [管理租使用者 Allow/封鎖清單](tenant-allow-block-list.md) 。
 
 電子郵件內文中的 URL 連結將不會換行，以減少對客戶的影響。
 
@@ -157,7 +158,7 @@ ms.locfileid: "49870918"
 
 ### <a name="exchange-rules-optional"></a>Exchange 規則 (選用) 
 
-如果您有現有的閘道，您可能想要略過篩選，因為它會啟用連接器的增強篩選，並變更傳入寄件者的 IP 位址。 若要略過，請流覽至 Exchange 系統管理中心，並建立 SCL-1 (的原則（如果您尚沒有) ）。 如需規則元件及其運作方式的詳細資訊，請參閱 Mail flow rules (transport rules) in Exchange Online。
+如果您有現有的閘道，啟用評估模式將會啟用連接器的增強篩選功能。 這會變更傳入寄件者的 IP 位址，以提升篩選精確度。 這可能會變更篩選 verdicts，但如果您不是略過 Exchange Online Protection，這可能會變更特定郵件的 deliverability。 在此情況下，您可能會想要暫時略過篩選以分析影響。 若要略過，請流覽至 Exchange 系統管理中心，並建立 SCL-1 (的原則（如果您尚沒有) ）。 如需規則元件及其運作方式的詳細資訊，請參閱 Mail flow rules (transport rules) in Exchange Online。
 
 ## <a name="evaluate-capabilities"></a>評估功能
 

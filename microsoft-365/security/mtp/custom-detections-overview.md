@@ -1,7 +1,7 @@
 ---
-title: Microsoft 365 Defender 中的自訂偵測概觀
-description: 瞭解如何使用進位搜尋來建立自訂偵測及產生警示
-keywords: 進層搜尋、威脅搜尋、網路威脅搜尋、Microsoft 威脅防護、microsoft 365、mtp、m365、搜尋、查詢、遙測、自訂偵測、架構、kusto、microsoft 365、Microsoft Threat Protection
+title: Microsoft 365 Defender 中的自訂偵測概述
+description: 瞭解您可以如何使用高級搜尋來建立自訂偵測並產生警示
+keywords: 高級搜尋，威脅搜尋，網路威脅搜尋，microsoft 威脅防護，microsoft 365，mtp，m365，搜尋，查詢，遙測，自訂偵測，schema，kusto，microsoft 365，Microsoft 威脅防護
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ae9617a55fd5efb40a3aba07202ebfb1494d4db6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de9fb28f09b88cf1730f3bb3539234f6a03ec2e3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928805"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080710"
 ---
 # <a name="custom-detections-overview"></a>自訂偵測概觀
 
@@ -33,14 +33,15 @@ ms.locfileid: "49928805"
 適用於：
 - Microsoft 365 Defender
 
-使用自訂偵測，您可以主動監視並回應各種事件和系統狀態，包括可疑的外泄活動和錯誤配置的端點。 這是因為可自訂的偵測規則會自動觸發提醒及回應動作。
+透過自訂偵測，您可以主動監視和回應各種事件和系統狀態，包括可疑的破壞活動和設定不當的端點。 這種方式是可自訂的偵測規則，自動觸發警示和回應動作。
 
-自訂偵測功能可和 [進位](advanced-hunting-overview.md)搜尋功能一起使用，它提供功能強大且彈性的查詢語言，可涵蓋您網路上廣泛的事件和系統資訊。 您可以將它們設定為定期執行、產生警示，以及每當有符合專案時採取回應動作。
+自訂偵測可與 [高級搜尋](advanced-hunting-overview.md)搭配使用，其提供強大且靈活的查詢語言，涵蓋網路的大量事件和系統資訊。 您可以將其設定為定期執行，並在每個專案相符時產生提醒並採取回應動作。
 
-自訂偵測功能提供：
-- 來自進級搜尋查詢之規則型偵測的警示
-- 自動回復動作
+自訂偵測提供：
+- 從高級搜尋查詢所建立之規則的偵測警示
+- 自動回應動作
 
-## <a name="related-topic"></a>相關主題
+## <a name="see-also"></a>另請參閱
 - [建立及管理自訂偵測規則](custom-detection-rules.md)
 - [進階搜捕概觀](advanced-hunting-overview.md)
+- [從 Microsoft Defender for Endpoint 遷移高級搜尋查詢](advanced-hunting-migrate-from-mdatp.md)

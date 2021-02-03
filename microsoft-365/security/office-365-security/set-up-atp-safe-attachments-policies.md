@@ -18,12 +18,12 @@ description: 瞭解如何定義安全附件原則，以利用電子郵件中的�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5a26d214fe99d0053bf178d7d85a0b526d64f887
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 9343ce222f1deb84e900f0d6f18e7d55daa73372
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988077"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084610"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>在 Microsoft Defender for Office 365 中設定安全附件原則
 
@@ -61,8 +61,8 @@ ms.locfileid: "49988077"
 - 若要連線至 Exchange Online PowerShell，請參閱[連線至 Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)。 若要連接至獨立版 EOP PowerShell，請參閱[連線到 Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)。
 
 - 您必須已獲指派許可權，才能執行本文中的程式：
-  - 若要建立、修改和刪除安全連結原則，您必須是 Security & 合規性中心內的「 **組織管理** 」或「 **安全性管理員** 」角色群組成員， **以及** Exchange Online 中的「 **組織管理** 」角色群組的成員。
-  - 若要對安全連結原則進行唯讀存取，您必須是 Security & 合規性中心內 **全域讀取器** 或 **安全性讀取器** 角色群組的成員。
+  - 若要建立、修改和刪除安全附件原則，您必須是 Security & 合規性中心內的「 **組織管理** 」或「 **安全性管理員** 」角色群組成員， **以及** Exchange Online 中的「 **組織管理** 」角色群組的成員。
+  - 針對安全附件原則的唯讀存取，您必須是「安全性 & 規範中心」中 **全域讀取** 者或 **安全性讀取器** 角色群組的成員。
 
   如需詳細資訊，請參閱 [安全性 & 合規性中心的許可權](permissions-in-the-security-and-compliance-center.md) 和 [Exchange Online 中的許可權](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)。
 
