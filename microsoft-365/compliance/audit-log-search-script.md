@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: 使用 PowerShell 指令碼，執行 Search-UnifiedAuditLog Cmdlet 來搜尋稽核記錄。 此指令碼經過最佳化，可傳回大量 (最多50,000) 稽核記錄。 指令碼會將這些記錄匯出為 CSV 檔案，您可以使用 Excel 中的 Power Query 來檢視或轉換。
-ms.openlocfilehash: a91a54a6c35f96b90df156eaf4bc9735c911fc11
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: d4fcf59297747d0499f6616438299ad8cbe96d7f
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084697"
+ms.locfileid: "50094784"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>使用 PowerShell 指令碼來搜尋稽核記錄
 
