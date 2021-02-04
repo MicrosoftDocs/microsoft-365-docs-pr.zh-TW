@@ -14,12 +14,12 @@ ms.collection:
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: 主題經驗的概述。
-ms.openlocfilehash: f01b28b8ca5b0352f05fecac810c3e651c663947
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 46f98a9a247160d73e52c51df5f3001aa2f0f6e0
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029635"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094816"
 ---
 # <a name="topic-experiences-overview-preview"></a>主題經驗 (預覽的概述) 
 
@@ -52,16 +52,26 @@ ms.locfileid: "50029635"
 
 主題經驗使用 Microsoft AI 技術來識別 Microsoft 365 環境中的 **主題** 。
 
-主題是一種組織很重要或很重要的片語或字詞。 組織中有特定的意義，也有相關的資源可協助人員瞭解其內容及找到相關資訊。
+主題是一種組織很重要或很重要的片語或字詞。 組織中有特定的意義，也有相關的資源可協助人員瞭解其內容及找到相關資訊。 許多不同類型的主題對您的組織而言很重要。 Microsoft AI 技術最初是以下列類型為重點：
+- Project
+- 事件
+- 組織
+- 位置
+- 產品
+- 創造性工作
+- 研究的欄位
 
-在識別主題，並透過 AI 判斷該主題具有足夠的資訊做為建議主題時，會為其建立一個 **主題頁面** ，其中包含透過主題編制索引所收集的資訊，例如：
+
+在識別主題，並透過 AI 判斷該主題有足夠的資訊可取得建議主題時， **主題頁面** 會顯示透過主題索引所收集到的資訊，例如：
 
 - 替代名稱和/或縮寫。
 - 主題的簡短描述。
-- 熟悉主題的使用者。
+- 該主題可能具有專業知識的人員。
 - 與主題相關的檔案、頁面和網站。
 
 您的知識管理員可以選擇編目您租使用者中的所有 SharePoint 網站，或只選取某些專案。
+
+請參閱 [主題探索和 curation](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
 ## <a name="roles"></a>角色
 
@@ -97,10 +107,10 @@ ms.locfileid: "50029635"
 Microsoft 365 系統管理中心中的管理控制可讓您管理您的知識網路。 它們允許 Microsoft 365 全域或 SharePoint 管理員：
 
 - 控制您組織中的哪些使用者可以查看 SharePoint 新式頁面或 SharePoint 搜尋結果中的主題。
-- 控制將編目哪個 SharePoint 網站來搜尋主題。
-- 設定主題探索，以排除所找到的特定主題。
+- 控制將會編目哪些 SharePoint 網站，以識別主題。
+- 排除特定主題的找到。
 - 控制哪些使用者可以管理主題中心的主題。
-- 控制哪些使用者可以在主題中心建立及編輯主題。
+- 控制哪些使用者可以建立及編輯主題。
 - 控制哪些使用者可以查看主題。
 
 如需系統管理控制的詳細資訊，請參閱 [指派使用者](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions)權力、 [管理主題可見度](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)及 [管理主題探索](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) 。
@@ -109,11 +119,13 @@ Microsoft 365 系統管理中心中的管理控制可讓您管理您的知識網
 
 AI 會持續運作，提供您在環境中發生變更時改進主題的建議。 
 
-您允許存取權在日常工作中查看主題的使用者可能會詢問該主題是否有用。 系統會查看這些回應，並使用它們來協助決定主題摘要和主題詳細資料中顯示的內容。
+具有 [編輯] 或 [建立主題] 許可權的使用者，如果想要進行更正或新增其他資訊，可以直接對主題頁面進行更新。 他們也可以新增 AI 無法識別的新主題。 如果這些手動新增的主題有足夠的資訊，而且 AI 能夠識別這類主題，則 AI 的其他建議可能會增強這些手動新增的主題。 
 
-具有 [編輯] 或 [建立主題] 許可權的使用者，如果想要進行更正或新增其他資訊，可以直接對主題頁面進行更新。 
+您允許存取權在日常工作中查看主題的使用者可能會詢問該主題是否有用。 系統會查看這些回應，並使用它們來改進主題的醒目提示，並協助決定主題摘要和主題詳細資料中顯示的內容。
 
 此外，具有適當許可權的使用者可以將相關的 Yammer 交談等專案標記為相關專案，並將其新增至特定主題。 
+
+請參閱 [主題探索和 curation](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
 
 ## <a name="see-also"></a>請參閱

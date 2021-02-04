@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: 深入瞭解 Office 365 運作的 Azure 資訊保護 (AIP) ，以及如何為中國的客戶設定該功能。
 monikerRange: o365-21vianet
-ms.openlocfilehash: cee50384587ffc3e1e43eb9c6bb07d2e0ced7e13
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 300e7633237511fb9de64199ae7cf54594f2239e
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988041"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099675"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>由世紀運作之 Office 365 的 Azure 資訊保護支援
 
@@ -50,6 +50,8 @@ ms.locfileid: "49988041"
 - 目前無法使用 AD RMS 的行動裝置分機。
 
 - Azure 中國的世紀不支援行動 [檢視器](/azure/information-protection/rms-client/mobile-app-faq) 。
+
+- 中國的客戶無法使用 Azure 入口網站的 AIP 區域。 使用 [PowerShell 命令](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) ，而不是在入口網站中執行動作，例如安裝內部部署掃描器及管理內容掃描工作。
 
 ## <a name="configure-aip-for-customers-in-china"></a>為中國的客戶設定 AIP
 

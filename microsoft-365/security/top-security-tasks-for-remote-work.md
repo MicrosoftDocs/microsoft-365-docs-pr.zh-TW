@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: 保護您的商務電子郵件和網路威脅中的資料，包括勒索軟體、網路釣魚和惡意附件。
-ms.openlocfilehash: df6d837c31244efb1b6cea804972601acdb5dc17
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: a1850438d02042ba5931a6208b82f74766ae0be8
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558535"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097267"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>最常見的12個任務，可供安全性小組用來支援在家運作
 
@@ -44,7 +44,7 @@ ms.locfileid: "49558535"
 |---|---|---|---|---|
 |1 |[ (MFA) 啟用 Azure AD Multi-Factor 驗證 ](#1-enable-azure-ad-multi-factor-authentication-mfa)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2 |[防範威脅](#2-protect-against-threats)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[設定 Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|個|[設定 Microsoft Defender for Office 365](#3-configure-microsoft-defender-for-office-365)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[設定 Microsoft Defender 身分識別](#4-configure-microsoft-defender-for-identity)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[開啟 Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[設定電話和平板電腦的 Intune 行動裝置應用程式保護](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|![包含](../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -74,7 +74,7 @@ ms.locfileid: "49558535"
 |---|---|
 |Microsoft 365 方案 (沒有 Azure AD P1 或 P2) |[在 Azure AD 中啟用安全性預設](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD 中的安全性預設包含了適用於使用者和系統管理員的 MFA。|
 |Microsoft 365 E3 (與 Azure AD P1) |使用[常見的條件式存取原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common)來設定下列原則： <br/>- [要求系統管理員使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [要求所有使用者使用 MFA](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [封鎖舊版驗證](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (使用 Azure AD P2) |利用 Azure AD Identity Protection，藉由建立下列兩種原則來開始實作 Microsoft [建議的一組條件式存取和相關原則](./office-365-security/identity-access-policies.md)：<br/> - [登入風險為中或高時，需要 MFA](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [封鎖不支援新式驗證的用戶端](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br/>- [高風險使用者必須變更密碼](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
+|Microsoft 365 E5 (使用 Azure AD P2) |利用 Azure AD Identity Protection，藉由建立下列兩種原則來開始實作 Microsoft [建議的一組條件式存取和相關原則](./office-365-security/identity-access-policies.md)：<br/> - [登入風險為中或高時，需要 MFA](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [封鎖不支援新式驗證的用戶端](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [高風險使用者必須變更密碼](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
 ## <a name="2-protect-against-threats"></a>2：防禦威脅
@@ -112,7 +112,7 @@ Microsoft Defender for Office 365：
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4：設定 Microsoft Defender 身分識別
 
-[Microsoft Defender For Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是雲端式的安全性解決方案，可利用您的內部部署 Active Directory 信號來識別、偵測和調查您組織中的高級威脅、遭到破壞的身分識別，以及惡意的內幕程式列動。 請將重點放在下一個，因為它會保護您的部署和雲端基礎結構、沒有相依性或必要條件，而且可提供立即的益處。
+[適用於身分識別的 Microsoft Defender](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) 是利用內部部署 Active Directory 訊號的雲端型安全性解決方案，它會識別、偵測及調查貴組織中的進階威脅、遭入侵的身分識別，以及惡意內部攻擊動作。 請將重點放在下一個，因為它會保護您的部署和雲端基礎結構、沒有相依性或必要條件，而且可提供立即的益處。
 
 - 請參閱 [Microsoft Defender For Identity 快速入門](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) 以快速取得設定
 - 觀賞 [影片： Microsoft Defender 身分識別簡介](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
@@ -249,6 +249,6 @@ Microsoft 365 包含數種監視狀態和採取適當動作的方式。 您最�
 
 ## <a name="next-steps"></a>後續步驟
 
-恭喜！ 您很快就會執行一些最重要的安全性保護，而且您的組織會有更安全的安全性。 現在，您已準備好繼續進行威脅防護功能 (包括 Microsoft Defender for Endpoint) 、資料分類及保護功能，以及保護系統管理帳戶。 如需 Microsoft 365 的更深層的安全性建議，請參閱 [microsoft 365 Business 決策者 (bdm) ](Microsoft-365-security-for-bdm.md)中的安全性。
+恭喜您！ 您很快就會執行一些最重要的安全性保護，而且您的組織會有更安全的安全性。 現在，您已準備好繼續進行威脅防護功能 (包括 Microsoft Defender for Endpoint) 、資料分類及保護功能，以及保護系統管理帳戶。 如需 Microsoft 365 的更深層的安全性建議，請參閱 [microsoft 365 Business 決策者 (bdm) ](Microsoft-365-security-for-bdm.md)中的安全性。
 
 另外，請 [docs.microsoft.com/security](https://docs.microsoft.com/security)中的 Microsoft 新的安全性中心。

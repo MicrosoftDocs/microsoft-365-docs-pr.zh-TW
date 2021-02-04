@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: 取得最新的硬體隔離。 防止目前和新興的攻擊（如入侵或惡意連結）中斷員工生產力和企業安全性。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9a9c9270f61661982108da518d1bf24d2a717b6a
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: cf02f6776eb68537486b49c4fe45e8f88eeb38c6
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029723"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094876"
 ---
 # <a name="application-guard-for-office-for-admins"></a>適用于系統管理員的 Office 應用程式防護
 
@@ -40,7 +40,7 @@ Microsoft Defender Application Guard for office (Application Guard) 協助防止
 ### <a name="minimum-software-requirements"></a>基本軟體需求
 
 * **Windows 10**： Windows 10 Enterprise Edition，Client Build version 2004 (20H1) 組建19041或更新版本
-* **Office**： Office Current 通道組建版本 2011 16.0.13530.10000 或更新版本
+* **Office**： Office Current 通道組建版本 2011 16.0.13530.10000 或更新版本。 支援32位和64位版本的 Office。
 * **更新套件**： Windows 10 累計每月安全性更新 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 如需詳細的系統需求，請參閱 [Microsoft Defender Application Guard 的系統需求](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard)。 若要深入瞭解 Office 更新通道，請參閱 [Microsoft 365 的更新通道一覽](https://docs.microsoft.com/deployoffice/overview-update-channels)。

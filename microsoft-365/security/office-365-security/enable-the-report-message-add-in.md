@@ -17,12 +17,12 @@ ms.collection:
 description: 了解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 網頁版的 [報告訊息] 增益集。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1f8cffaa6346ec7f426da3c862014ed85a9a367
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 9b21472736cff2fd0eed7da5495ab6aae597032f
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029229"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094852"
 ---
 # <a name="enable-the-report-message-add-in"></a>啟用報告訊息增益集
 
@@ -52,6 +52,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
   - Outlook 2013 SP1 或更新版本
   - Mac 版 Outlook 2016
   - Outlook 隨附于適用于企業的 Microsoft 365 應用程式
+  - 適用于 iOS 和 Android 的 Outlook 應用程式
 
 - 內部部署 Exchange 組織中的信箱無法使用報告訊息增益集。
 
@@ -158,7 +159,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 
 2. 尋找並選取 **報告訊息** 增益集。
 
-3. 在顯示的 [ **編輯報告訊息** ] 浮出視窗中，視組織的需要複查及編輯設定。 完成後，按一下 **[儲存]**。
+3. 在顯示的 [ **編輯報告訊息** ] 浮出視窗中，視組織的需要複查及編輯設定。 完成後，按一下 [儲存 **]**。
 
    ![報告訊息增益集的設定](../../media/EditReportMessageAddIn.png)
 

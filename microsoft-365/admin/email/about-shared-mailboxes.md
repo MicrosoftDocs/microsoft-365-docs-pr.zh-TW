@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 當多人需要存取相同的信箱時，會使用共用信箱。 深入瞭解建立共用信箱之前所需注意的事項。
-ms.openlocfilehash: c8d29ac2dfe8670181064e61a7fba145ae00fed1
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: f5d46af5abdd528ce3db817dbabce015ed5abade
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058444"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094718"
 ---
 # <a name="about-shared-mailboxes"></a>關於共用信箱
 
@@ -61,7 +61,7 @@ ms.locfileid: "50058444"
 
 
 > [!NOTE]
-> 若要存取共用信箱，使用者必須擁有 Exchange Online 授權，但共用信箱不需要個別的授權。 沒有授權，共用信箱限制為 50 GB。 若要將大小限制增加為 100 GB，必須為共用信箱指派 exchange Online Plan 2 授權或 Exchange online Plan 1 授權與 Exchange Online 封存附加元件授權。 這也可讓您針對無限量的封存儲存容量啟用自動擴充封存。 同樣地，如果您想要將共用信箱設為訴訟暫止狀態，共用信箱必須有 exchange Online Plan 2 授權或 Exchange Online Plan 1 授權與 Exchange Online 封存附加元件授權。 如果您想要套用高級功能，例如 Microsoft Defender for Office 365、Advanced eDiscovery 或自動保留原則，則必須為這些功能授權共用信箱。
+> 若要存取共用信箱，使用者必須擁有 Exchange Online 授權，但共用信箱不需要個別的授權。 每個共用信箱都有對應的使用者帳戶。 注意到當您建立共用信箱時，系統如何要求您提供密碼嗎？ 帳戶有密碼，但它是系統產生的密碼 (未知)。 您不應該使用此帳戶登入共用信箱。 沒有授權，共用信箱限制為 50 GB。 若要將大小限制增加為 100 GB，必須為共用信箱指派 exchange Online Plan 2 授權或 Exchange online Plan 1 授權與 Exchange Online 封存附加元件授權。 這也可讓您針對無限量的封存儲存容量啟用自動擴充封存。 同樣地，如果您想要將共用信箱設為訴訟暫止狀態，共用信箱必須有 exchange Online Plan 2 授權或 Exchange Online Plan 1 授權與 Exchange Online 封存附加元件授權。 如果您想要套用高級功能，例如 Microsoft Defender for Office 365、Advanced eDiscovery 或自動保留原則，則必須為這些功能授權共用信箱。
 
 ## <a name="related-articles"></a>相關文章
 

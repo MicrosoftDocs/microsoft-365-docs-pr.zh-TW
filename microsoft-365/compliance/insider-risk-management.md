@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: bd228675cfe5f0443064053a0c6e18968524df7e
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: ceb35fa9e89a5393500cecb82e52f44852e47b6f
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613419"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094664"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的內幕人士風險管理
 
@@ -75,7 +75,6 @@ ms.locfileid: "49613419"
 - [由使用者 (預覽) 中的使用者進行安全性原則違規 ](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)
 - [優先使用者 (預覽的安全性原則違規) ](insider-risk-management-policies.md#security-policy-violations-by-priority-users-preview)
 - [因不滿使用者 (預覽所違反的安全性原則) ](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
-- [電子郵件中的冒犯性語言](insider-risk-management-policies.md#offensive-language-in-email)
 
 ![測試人員風險管理原則儀表板](../media/insider-risk-policy-dashboard.png)
 
@@ -139,10 +138,6 @@ ms.locfileid: "49613419"
 - [一般資料洩漏](insider-risk-management-policies.md#general-data-leaks)
 - [依優先順序的使用者 (預覽的資料洩漏) ](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [因不滿使用者 (預覽的資料洩漏) ](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
-
-### <a name="offensive-behavior-that-violates-corporate-policies"></a>違反公司原則的冒犯行為
-
-使用者對使用者通訊通常是無意或惡意違反公司原則的來源。 這些違規行為可包含使用者之間的冒犯性語言、威脅和騷擾。 這種類型的活動會對惡意的工作環境產生影響，而且可能會針對使用者和較大的組織產生法律行動。 有問必答風險管理使用新的內建 Microsoft 365 分類程式和 [電子郵件](insider-risk-management-policies.md#offensive-language-in-email) 原則範本中的冒犯性語言，協助將這些風險降至最低。 這個原則範本可協助您快速設定及啟用原則，以自動偵測組織中這類行為，並提醒您。
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a> (預覽) 的故意或無意間的安全性原則違規
 

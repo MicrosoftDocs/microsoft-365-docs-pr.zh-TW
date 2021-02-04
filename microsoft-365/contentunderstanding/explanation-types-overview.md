@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 深入了解 Microsoft SharePoint Syntex 中的說明類型
-ms.openlocfilehash: 9a65c5de5321ee623a3d1a1e4260c0bcb2ad331e
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975952"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080553"
 ---
 # <a name="introduction-to-explanation-types"></a>說明類型簡介
 
@@ -123,6 +123,31 @@ Redmond, WA 98034<br>
 將鄰近設定設為範圍 0 到 3。
 
    ![鄰近範例](../media/content-understanding/proximity-example.png)</br>
+
+
+## <a name="configure-where-phrases-occur-in-the-document"></a>設定文件中出現片語的位置
+
+當您建立說明時，系統預設在整份文件中搜尋您要摘錄的片語。 不過，您可以使用 <b>這些片語出現的位置</b> [進階設定]，協助隔離文件中片語出現的特定位置。 當片語的類似實例可能出現在文件中的其他位置，而您想要確認已正確選取時，這是很實用的方法。 參照我們的醫學轉診文件範例，本文件第一段每次都稱為 **「轉診醫生」**。 使用 <b>這些片語出現的位置</b> 設定，在這個範例中，您可以設定您的說明，只在文件的開頭一節，或其他任何可能出現的位置搜尋此標籤。
+
+   ![這些片語出現的位置設定](../media/content-understanding/phrase-location.png)</br>
+
+此設定有以下三個選項供您選擇：
+
+- 檔案中的任何位置：搜尋整份文件中的片語。
+- 檔案開頭：從開頭到片語位置搜尋文件。</br> 
+   ![檔案開頭](../media/content-understanding/beginning-of-file.png)</br>
+在檢視器中，您可以手動調整 [選取] 方塊，以包含該階段所在的位置。 <b>結束位置</b> 值將會更新，以顯示您選取區域包含的權杖數目。 請注意，您可以更新 [結束位置] 值，並調整選取的區域。</br>
+   ![[檔案位置的開頭] 方塊](../media/content-understanding/beginning-box.png)</br>
+
+- 檔案結尾：從結尾到片語位置搜尋文件。</br> 
+   ![檔案結尾](../media/content-understanding/end-of-file.png)</br>
+在檢視器中，您可以手動調整 [選取] 方塊，以包含該階段所在的位置。 <b>起始位置</b> 值將會更新，以顯示您選取區域包含的權杖數目。 請注意，您可以更新 [起始位置] 值，並調整選取的區域。</br> 
+   ![[檔案結尾] 方塊](../media/content-understanding/end-box.png)</br>
+- 自訂範圍：在文件中的指定範圍搜尋該文件中的 [片語] 位置。</br> 
+   ![自訂範圍](../media/content-understanding/custom-file.png)。</br>
+在檢視器中，您可以手動調整 [選取] 方塊，以包含該階段所在的位置。 在此設定中，您必須選取 <b>開始</b> ，以及 <b>結束</b> 位置。 這些值代表文件 begging 的權杖數目。 當您可以手動輸入這些值，在檢視器中手動調整選取方塊就變得更容易。</br> 
+   
+
 
 ## <a name="use-explanation-templates"></a>使用說明範本
 

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 511f044960c5b723c8e10f6644007036c45d1f44
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 5f1f9d8c5f4e507e62de1b815d2345fc6b70bfea
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988089"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097279"
 ---
 # <a name="common-identity-and-device-access-policies"></a>一般身分識別與裝置存取原則
 
@@ -51,10 +51,10 @@ ms.locfileid: "49988089"
 
 為了讓您有時間完成這些工作，建議您依照此表中所列的順序實施基準原則。 不過，針對敏感和高管制保護層級的 MFA 原則，可在任何時候實施。
 
-|保護層級|原則|詳細資訊|
+|保護層級|原則|其他相關資訊|
 |---|---|---|
 |**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](#require-mfa-based-on-sign-in-risk)||
-||[封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-modern-authentication)|未使用新式驗證的用戶端可以略過條件式存取原則，因此請務必封鎖這些設定。|
+||[封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-multi-factor)|未使用新式驗證的用戶端可以略過條件式存取原則，因此請務必封鎖這些設定。|
 ||[高風險使用者必須變更密碼](#high-risk-users-must-change-password)|當偵測到其帳戶的高風險活動時，強制使用者在登入時變更其密碼。|
 ||[套用應用程式資料保護原則](#apply-app-data-protection-policies)|每個平臺有一個 Intune App Protection 原則 (Windows、iOS/iPadOS、Android) 。|
 ||[需要核准的應用程式和應用程式保護](#require-approved-apps-and-app-protection)|使用 iOS、iPadOS 或 Android 強制執行手機和平板電腦行動裝置應用程式的保護。|
@@ -143,11 +143,11 @@ ms.locfileid: "49988089"
 
 此外，請考慮使用 [if](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-whatif) 工具來測試原則。
 
-## <a name="block-clients-that-dont-support-modern-authentication"></a>封鎖不支援新式驗證的用戶端
+## <a name="block-clients-that-dont-support-multi-factor"></a>封鎖不支援多重因素的用戶端
 
-使用這些表格中的設定條件式存取原則，以封鎖不支援新式驗證的用戶端。
+使用這些表格中的設定條件式存取原則，以封鎖不支援多重要素驗證的用戶端。
 
-請參閱 [本文](../../enterprise/microsoft-365-client-support-modern-authentication.md) ，以取得 Microsoft suppport 新式驗證的 Microsoft 365 用戶端清單。
+如需支援多重要素驗證的 Microsoft 365 用戶端清單，請參閱 [本文](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md) 。
 
 在 [ **工作分派** ] 區段中：
 
@@ -219,7 +219,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
 使用身分 [識別與裝置存取](microsoft-365-policies-configurations.md)設定中所述的原則，比較基準和機密保護階層與第2級企業增強型資料保護設定緊密對應。 高度管制防護階層密切對應于第3級企業高資料保護設定。
 
-|保護層級|應用程式保護原則|詳細資訊|
+|保護層級|應用程式保護原則|其他相關資訊|
 |---|---|---|
 |基準|[第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
 |敏感性|[第2級增強型資料保護](https://docs.microsoft.com/mem/intune/apps/app-protection-framework#level-2-enterprise-enhanced-data-protection)|在層級2中強制執行的原則設定包括對層級1建議的所有原則設定，而且只會新增或更新下列原則設定，以執行更多控制項，以及比第1級更複雜的設定。|
@@ -248,7 +248,7 @@ Log in to the [Microsoft Azure portal (https://portal.azure.com)](https://portal
 
  這些原則利用授與控制措施 [需要核准的用戶端應用程式](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-approved-client-app) ，並 [要求應用程式保護原則](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-grant#require-app-protection-policy)。
 
-最後，封鎖 iOS 和 Android 裝置上其他用戶端應用程式的舊版驗證，以確保這些用戶端無法略過條件式存取原則。 如果您遵循本文的指導方針，您已設定 [封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-modern-authentication)。
+最後，封鎖 iOS 和 Android 裝置上其他用戶端應用程式的舊版驗證，以確保這些用戶端無法略過條件式存取原則。 如果您遵循本文的指導方針，您已設定 [封鎖不支援新式驗證的用戶端](#block-clients-that-dont-support-multi-factor)。
 
 <!---
 With Conditional Access, organizations can restrict access to approved (modern authentication capable) iOS and Android client apps with Intune app protection policies applied to them. Several Conditional Access policies are required, with each policy targeting all potential users. Details on creating these policies can be found in [Require app protection policy for cloud app access with Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access).

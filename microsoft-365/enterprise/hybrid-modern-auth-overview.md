@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 description: 在本文中，您將深入瞭解混合式新式驗證和使用內部部署商務用 Skype 和 Exchange 伺服器的必要條件。
-ms.openlocfilehash: dbd108d9b04445838ce8e88a921af717ebd763be
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: b9b48f591f74bd508b20a851ec48a0d7132d6a84
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487717"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097101"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>混合新式驗證概述和使用內部部署商務用 Skype 和 Exchange 伺服器的必要條件
 
@@ -48,7 +48,7 @@ _新式驗證_ 是一種身分識別管理的方法，可提供更安全的使�
 
 請注意，由於商務用 Skype 與 Exchange 緊密合作，所以商務用 Skype 用戶端使用者的登入行為將會受到 Exchange 新式驗證狀態的影響。 如果您有商務用 skype _分割網域混合式_ 架構，且您的商務用 skype Online 和商務用 skype 內部部署，也會套用這項功能，且使用者同時位於這兩個位置。
 
-如需 Office 365 新式驗證的詳細資訊，請參閱 [office 365 用戶端應用程式支援-新式驗證](microsoft-365-client-support-modern-authentication.md)。
+如需 Office 365 新式驗證的詳細資訊，請參閱 [office 365 用戶端應用程式支援-多重要素驗證](microsoft-365-client-support-multi-factor-authentication.md)。
 
 > [!IMPORTANT]
 > 到2017年8月為止，所有包含商務用 Skype online 和 Exchange online 的新 Office 365 租使用者預設都會啟用新式驗證。 預先存在的承租人不會變更其預設的 MA 狀態，但是所有的新承租人都會自動支援您所看到的一組擴充的身分識別功能。 若要檢查您的 MA 狀態，請參閱 [查看內部部署環境的新式驗證狀態](hybrid-modern-auth-overview.md#BKMK_CheckStatus) 一節。
@@ -88,7 +88,7 @@ Get-OrganizationConfig | ft OAuth*
 Get-CSOAuthConfiguration
 ```
 
-如果命令傳回空的_OAuthServers_屬性，或是不**允許** _ClientADALAuthOverride_屬性的值，則會停用新式驗證。
+如果命令傳回空的 _OAuthServers_ 屬性，或是不 **允許** _ClientADALAuthOverride_ 屬性的值，則會停用新式驗證。
 
 如需 Get-CsOAuthConfiguration Cmdlet 的詳細資訊，請參閱 [Get-CsOAuthConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csoauthconfiguration)。
 

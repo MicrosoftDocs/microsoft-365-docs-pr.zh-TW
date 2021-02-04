@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 通訊人員經驗的詳細資料。
-ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+ms.openlocfilehash: de59a57f1c856d94836b59eba6a4869831fe700a
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712576"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099709"
 ---
 # <a name="communication--people-experiences"></a>通訊–人員經驗
 
@@ -159,7 +159,7 @@ Microsoft 365 提供了多種模式，讓人員可以靈活地符合每個人的
         
       - 傳送 **通道郵件的人員：** 彩色部分和分數代表在 Microsoft 小組傳送郵件的人內使用通道訊息。 分數的構造來源如下：
       
-        - **分子：** 在過去28天內，由 Microsoft 小組傳送聊天訊息的人員。
+        - **分子：** 過去28天內，在 Microsoft 小組中傳送通道郵件的人員。
         - **分母：** 過去28天內，在 Microsoft 小組中傳送郵件的人員。
         
 4. **查看相關內容：** 選取此連結可查看排序的影片及其他相關的說明內容。

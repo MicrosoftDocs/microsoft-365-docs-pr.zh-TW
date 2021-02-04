@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: 在本文中，尋找有關以憑證為基礎之驗證之 Microsoft 365 用戶端應用程式支援的詳細資料。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fde124fcefdf3b949ec35a3b2ed99b15ee36f85e
-ms.sourcegitcommit: 2beefb695cead03cc21d6066f589572d3ae029aa
+ms.openlocfilehash: f7ab5e4a2575796e37a115b36a4f78add20414ef
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49349677"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097255"
 ---
 # <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365 用戶端應用程式支援：憑證型驗證
 
@@ -36,11 +36,11 @@ ms.locfileid: "49349677"
 
 新式驗證支援不同的驗證機制，類似憑證型驗證。 Windows、Android 或 iOS 裝置上的用戶端可以使用憑證型驗證 (CBA) ，以在裝置上使用用戶端憑證來驗證 Azure Active Directory。 使用憑證來從 Azure Active Directory 取得存取/重新整理權杖，而不是一般的使用者名稱/密碼。
 
-深入瞭解 [憑證型驗證](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。
+深入瞭解 [憑證型驗證](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started)。
 
 ## <a name="supported-clients--platforms"></a>支援的用戶端 & 平臺
 
-在用戶端 (中登入 Azure Active Directory 帳戶時，下列用戶端和平臺的最新版本都支援憑證型驗證，例如，將帳戶新增至應用程式) 時。 如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)。
+在用戶端 (中登入 Azure Active Directory 帳戶時，下列用戶端和平臺的最新版本都支援憑證型驗證，例如，將帳戶新增至應用程式) 時。 如需 Microsoft 365 平臺支援的詳細資訊，請參閱 [microsoft 365 的系統需求](/microsoft-365/microsoft-365-and-office-resources)。
 <br>
 <br>
 
@@ -55,7 +55,7 @@ ms.locfileid: "49349677"
 | Edge<sup>1</sup> | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
 | Excel | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
 | Exchange Online 系統管理員 | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| Forms | 不適用 | 不適用 | 不適用 | 不適用 | 不適用 |
+| 表單 | 不適用 | 不適用 | 不適用 | 不適用 | 不適用 |
 | Office 365 系統管理 | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |  |
 | Kaizala | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
 | Office Lens| ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) | N/A |
@@ -70,7 +70,7 @@ ms.locfileid: "49349677"
 | Power BI | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
 | PowerPoint | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) |
 | Project | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
-| 發行者 | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
+| Publisher | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
 | 商務用 Skype | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | N/A | ![支援](../media/check-mark.png) |
 | 商務用 Skype 系統管理員 | 不適用 | 不適用 | 不適用 | 不適用 | ![支援](../media/check-mark.png) |
 | SharePoint | ![支援](../media/check-mark.png) | ![支援](../media/check-mark.png) | 不適用 | 不適用 | 不適用 |
@@ -91,7 +91,7 @@ ms.locfileid: "49349677"
 
 ## <a name="supported-powershell-modules"></a>支援的 PowerShell 模組
 
-- [Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/overview?view=azureadps-2.0)
-- [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
-- [SharePoint Online PowerShell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
+- [Azure Active Directory PowerShell](/powershell/azure/active-directory/overview?view=azureadps-2.0)
+- [Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell)
+- [SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)
 

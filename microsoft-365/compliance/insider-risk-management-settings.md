@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: dd72ded935b9108e4b2699f5ddb6d320f5c32e69
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: ba851a7ad6243b9b3b6bc69432bd2b3036d6b269
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841254"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094764"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>開始使用「內幕風險管理」設定
 
@@ -165,9 +165,7 @@ ms.locfileid: "49841254"
 
 ## <a name="intelligent-detections"></a>智慧偵測
 
-智慧偵測設定可協助您簡化針對警示處理危險活動的偵測方式。 在某些情況下，您可能需要定義要忽略的檔案類型，或者您想要對檔案執行偵測層級，以協助定義最小的提醒列。 使用冒犯性語言原則時，您可能需要增加或減少偵測敏感度，以控制所報告的原則相符量。 使用這些設定來控制整體警示量、檔案類型排除、檔案容量限制，以及冒犯性語言偵測敏感度。
-
-![內部人員風險管理的智慧偵測設定](../media/insider-risk-settings-detections.png)
+智慧偵測設定可協助您簡化針對警示處理危險活動的偵測方式。 在某些情況下，您可能需要定義要忽略的檔案類型，或者您想要對檔案執行偵測層級，以協助定義最小的提醒列。 使用這些設定來控制整體警示數量、檔案類型排除和檔案磁片區限制。
 
 ### <a name="anomaly-detections"></a>反常偵測
 
@@ -175,17 +173,6 @@ ms.locfileid: "49841254"
 
 - **檔案類型排除**：若要從所有的內幕風險管理原則相符中排除特定檔案類型，請輸入以逗號分隔的檔案類型副檔名。 例如，若要排除某些類型的音樂檔案與原則相符，您可以在 [**檔案類型排除**] 欄位中輸入 *aac、mp3、wav 及 wma* 。 所有的有問必答風險管理原則都會忽略具有這些副檔名的檔案。
 - 檔案 **磁片區剪下量限制**：若要在「內幕風險原則」中報告活動警示之前定義最低的檔層級，請輸入檔案數目。 例如，如果您不想要在使用者下載10個檔案或更少時產生有問必答風險警示，即使原則考慮此活動為反常，您也可以輸入 ' 10 '。
-
-### <a name="offensive-language-detections"></a>冒犯性語言偵測
-
->[!IMPORTANT]
->從2020年10月16日開始，您將無法再使用此範本建立原則。 使用此範本的任何作用中原則，必須在2021年1月後永久移除。 我們會取代支援此範本的冒犯性語言內建分類程式，因為它所產生的是大量的誤報。 為了處理攻擊性語言的風險問題，我們建議使用 Microsoft 365 [通訊相容性](communication-compliance.md) 原則。 如需內建分類器的詳細資訊，請參閱 [開始使用 trainable 類元](classifier-get-started-with.md)。
-
-若要調整使用 *電子郵件範本中的冒犯語言* 原則的冒犯語言分類程式敏感度，請選擇下列其中一個設定：
-
-- **Low**：偵測到冒犯性語言和 sentiment 的最小敏感度層級。 冒犯性語言比對的誤報概率會提升。
-- **中**：用於偵測冒犯性語言和 sentiment 之平衡範圍的中級級靈敏度等級。 冒犯性語言比對之誤報的概率為平均。
-- **高**：偵測到冒犯性語言和 sentiment，具有窄範圍的最高敏感度層級。 冒犯性語言比對的誤報概率很低。
 
 ### <a name="alert-volume"></a>警示量
 

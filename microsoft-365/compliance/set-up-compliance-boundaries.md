@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: 瞭解如何使用規範界限來建立邏輯界限，以控制 eDiscovery 管理員可在 Microsoft 365 中搜尋的使用者內容位置。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: afc01ea88e9a2de6550741dcaac105ef764a752f
-ms.sourcegitcommit: ce46d1bd67091d4ed0e2b776dfed55e2d88cdbf4
+ms.openlocfilehash: fe6df03491350c33416021523f276e203a416fc9
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49131128"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099733"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>設定 eDiscovery 調查的合規性界限
 
@@ -108,7 +108,7 @@ ms.locfileid: "49131128"
 
 下一步是在安全性 & 規範中心建立角色群組，以與您的機構相符。 建議您在建立角色群組時，您可以複製內建的 eDiscovery 管理員群組、新增適當的成員，以及移除可能不適合您需求的角色。 如需有關 eDiscovery 相關角色的詳細資訊，請參閱 [在 Office 365 Security & 合規性中心指派 eDiscovery 許可權](assign-ediscovery-permissions.md)。
   
-若要建立角色群組，請移至 [安全性 & 規範中心] 中的 [ **許可權** ] 頁面，為每個代理人中每個小組建立角色群組，以使用規範界限和 eDiscovery 案例來管理調查。 
+若要建立角色群組，請移至 [安全性 & 規範中心] 中的 [ **許可權** ] 頁面，為每個代理人中每個小組建立角色群組，以使用規範界限和 eDiscovery 案例來管理調查。
   
 使用 Contoso 相容性邊界案例，必須建立四個角色群組，並將適當的成員新增至每一個群組。
   
@@ -167,7 +167,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="step-5-create-an-ediscovery-case-for-intra-agency-investigations"></a>步驟5：建立內部公司調查的 eDiscovery 案例
 
-最後一個步驟是在安全性 & 合規性中心建立 eDiscovery 案例，然後將您在步驟3中建立的角色群組新增為案例成員。 這會產生使用規範界限的兩個重要特徵：
+最後一個步驟是在 Microsoft 365 規範中心建立核心 eDiscovery 案例或 Advanced eDiscovery 案例，然後新增您在步驟3中建立的角色群組做為案例成員。 這會產生使用規範界限的兩個重要特徵：
   
 - 只有新增至案例之角色群組的成員，才能夠在安全性 & 規範中心中查看和存取案例。 例如，如果第四個「咖啡調查人員」角色群組是案例的唯一成員，則第四個咖啡 eDiscovery 管理員角色群組的成員 (或任何其他角色群組的成員) 將無法查看或存取此案例。
 
@@ -175,9 +175,9 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 若要建立案例並指派成員：
 
-1. 前往安全性 & 規範中心內的 **eDiscovery** 或 **Advanced ediscovery** 頁面，並建立案例。
+1. 移至 Microsoft 365 規範中心內的 **核心 ediscovery** 或 **高級 eDiscovery** 頁面，並建立案例。
 
-2. 在 eDiscovery 案例清單中，按一下您建立的案例名稱。
+2. 在案例清單中，按一下您建立的案例名稱。
 
 3. 在 [ **管理此案例** 飛入] 頁面的 [ **管理角色群組**] 底下，按一下 [ ![ 新增圖示 ](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **新增**]。
 
@@ -186,6 +186,9 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 4. 在角色群組的清單中，選取您在步驟3中建立的其中一個角色群組，然後按一下 [ **新增**]。
 
 5. 按一下 [**管理此案例**] 浮出控制項上的 [**儲存**] 以儲存變更。
+
+> [!NOTE]
+將角色群組新增至案例時，您只可以新增您是其成員的角色群組。
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>在多地理位置環境中搜尋和匯出內容
 
@@ -284,7 +287,7 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Hub Site Security Filter" 
 
 - 搜尋許可權篩選不適用於 Exchange 公用資料夾。
 
-## <a name="more-information"></a>詳細資訊
+## <a name="more-information"></a>其他相關資訊
 
 - 如果信箱是取消授權或虛刪除的，Azure AD 屬性就不再同步處理至信箱。 如果信箱已被刪除時保留在信箱上，則保留在信箱中的內容仍受限於符合性界限或搜尋許可權篩選器（根據上次在刪除信箱前同步處理 Azure AD 屬性的時間）。 
 

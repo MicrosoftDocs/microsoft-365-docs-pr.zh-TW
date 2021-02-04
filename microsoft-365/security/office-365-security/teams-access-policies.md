@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 7724ef76d905cdbaf48f3122d0df7ef28d0b8385
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 12bdf0df1a5b2f616c5b2bed61d69e8226fa5844
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931623"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097183"
 ---
 # <a name="policy-recommendations-for-securing-teams-chats-groups-and-files"></a>保護小組聊天、群組和檔案的原則建議
 
@@ -32,11 +32,11 @@ ms.locfileid: "49931623"
 
 這些建議是以三種不同的安全性和保護層級為基礎，可根據您的需求細微性來套用這些小組：基準、機密和高管制。 您可以在身分 [識別和裝置存取](microsoft-365-policies-configurations.md)設定中深入瞭解這些安全層及這些建議所參照的建議原則。
 
-本文中包含其他小組部署的相關建議，以涵蓋特定驗證的情況，包括組織外部的使用者。 您必須遵循此指導方針，才可取得完整的安全性體驗。
+本文所含的團隊部署的相關建議如下所述，以涵蓋特定驗證的情況，包括組織外部的使用者。 您必須遵循此指導方針，才可取得完整的安全性體驗。
 
 ## <a name="getting-started-with-teams-before-other-dependent-services"></a>在其他相依服務之前快速開始使用團隊
 
-您不需要啟用相依服務即可開始使用 Microsoft 團隊。 這些都是「直接運作」。 不過，您必須準備好管理下列專案：
+您不需要啟用相依服務即可開始使用 Microsoft 團隊。 這些服務全部都是「運作」。 不過，您必須準備好管理下列服務相關元素：
 
 - Microsoft 365 群組
 - SharePoint 小組網站
@@ -52,7 +52,7 @@ ms.locfileid: "49931623"
 
 [查看較大版本的此影像](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-ruleset-teams.png)
 
-以下是要納入小組的雲端應用程式指派中的相依服務：
+這些服務是可納入小組的雲端應用程式指派中的相依服務：
 
 - Microsoft Teams
 - SharePoint 和商務用 OneDrive
@@ -66,7 +66,7 @@ ms.locfileid: "49931623"
 |保護層級|原則|小組實施的進一步資訊|
 |---|---|---|
 |**Baseline**|[當登入風險為 *中* 或 *高* 時，需要 MFA](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|請確定小組和相依服務均包含在應用程式清單中。 小組也會考慮訪客存取和外部存取規則，您將在本文稍後深入瞭解這些規則。|
-||[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|在雲應用程式的指派中包含小組和相依服務。|
+||[封鎖不支援新式驗證的用戶端](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|在雲應用程式的指派中包含小組和相依服務。|
 ||[高風險使用者必須變更密碼](identity-access-policies.md#high-risk-users-must-change-password)|強制小組使用者在登入時，在其帳戶中偵測到高風險活動時變更其密碼。 請確定小組和相依服務均包含在應用程式清單中。|
 ||[套用應用程式資料保護原則](identity-access-policies.md#apply-app-data-protection-policies)|請確定小組和相依服務均包含在應用程式清單中。 更新每個平臺 (iOS、Android、Windows) 的原則。|
 ||[定義裝置合規性原則](identity-access-policies.md#define-device-compliance-policies)|在此原則中包括小組和相依服務。|
@@ -78,7 +78,7 @@ ms.locfileid: "49931623"
 
 ## <a name="teams-dependent-services-architecture"></a>小組相依服務架構
 
-為了供參考，下圖說明服務小組所依賴的服務。 如需詳細資訊及其他圖解，請參閱 microsoft [團隊和 microsoft 的相關生產力服務，請參閱 microsoft 365 FOR IT 架構設計](../../solutions/productivity-illustrations.md)人員。
+為了供參考，下圖說明服務小組所依賴的服務。 如需詳細資訊和圖例，請參閱 microsoft [小組和 microsoft 365 的相關生產力服務，以供 IT 架構設計](../../solutions/productivity-illustrations.md)人員參考。
 
 [![圖表顯示團隊對 SharePoint、商務 OneDrive 和 Exchange 的相依性依賴性](../../media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-access-logical-architecture-teams.png)
 
@@ -86,7 +86,7 @@ ms.locfileid: "49931623"
 
 ## <a name="guest-and-external-access-for-teams"></a>團隊的來賓和外部存取權
 
-Microsoft 小組定義下列專案：
+Microsoft 小組定義下列訪問類型：
 
 - **來賓存取** 針對來賓或外部使用者使用 Azure AD B2B 帳戶，可將其新增為小組成員，並擁有對該小組之通訊和資源的所有專屬許可權存取權。
 
@@ -109,7 +109,7 @@ In Azure AD, guest and external users are the same. The user type for both of th
 
 ### <a name="external-access-in-teams"></a>小組中的外部存取
 
-外部存取有時候會與來賓存取混淆，所以請務必明確這兩個非內部存取機制的實際差別很大。
+外部存取有時候會與來賓存取混淆，所以請務必明確這兩種非內部存取機制是不同的存取類型。
 
 「外部存取」是一種方法，讓團隊使用者可以從整個外部網域尋找、呼叫、聊天及設定小組中的使用者的會議。 小組管理員會設定組織層級的外部存取。 如需詳細資訊，請參閱 [管理 Microsoft 團隊中的外部存取](https://docs.microsoft.com/microsoftteams/manage-external-access)。
 
@@ -133,9 +133,9 @@ In Azure AD, guest and external users are the same. The user type for both of th
 
 ### <a name="meeting-policies"></a>會議原則
 
-不需要在小組會議中規劃及實施原則，即可完成小組討論。 會議是小組的基本元件，可讓使用者正式開會及呈現給許多使用者，以及共用與會議相關的內容。 在會議上為組織設定正確的原則是必要的。
+不需要在小組會議中規劃及實施原則，即可完成小組討論。 會議是小組的基本元件，可讓使用者正式開會及呈現給許多使用者，以及共用會議相關的內容。 在會議上為組織設定正確的原則是必要的。
 
-如需詳細資訊，請參閱 [管理小組中的會議原則](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams) 。
+如需詳細資訊，請參閱 [管理小組中的會議原則](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)。
 
 ### <a name="app-permission-policies"></a>應用程式許可權原則
 

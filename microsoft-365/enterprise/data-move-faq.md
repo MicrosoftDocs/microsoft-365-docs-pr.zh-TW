@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 description: 尋找常見問題解答 (FAQs) 將核心資料移至新的 Office 365 datacenter geo。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 49ddcbf3a1aa8d91bd8202894e114fe50624720a
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: a7e59622e35604ebd9befbbe17a8a125ed15e101
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780257"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094652"
 ---
 # <a name="data-move-general-faq"></a>資料移動一般常見問題集
 
@@ -108,7 +108,7 @@ ms.locfileid: "49780257"
   
 ## <a name="what-happens-if-we-are-in-process-of-email-data-migration-to-microsoft-365-during-the-exchange-online-move"></a>在 Exchange Online 移動期間，如果我們正在將電子郵件資料移轉至 Microsoft 365，會發生什麼情況？
 
-這是一種非常常見的案例，而且受到完全支援。 資料中心 geos 之間的雲端遷移不會干擾任何內部部署至雲端信箱遷移。
+這是一種非常常見的案例，而且受到完全支援。  資料中心 geos 之間的雲端遷移不會干擾任何內部部署至雲端信箱遷移。
   
  ## <a name="can-i-pilot-some-users"></a>我可以試驗部分使用者嗎？
   

@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a479d1bf7fee95a7d8ba862674cd75bfd3c699c7
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: df09f72e8bb5aee78ca4b45ce2804774ee16cbf2
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932559"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097113"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>實施身分識別與裝置存取原則的必要條件工作
 
@@ -107,7 +107,7 @@ ms.locfileid: "49932559"
 如需 Microsoft 365 中用戶端支援的詳細資訊，請參閱下列文章：
 
 - [Microsoft 365 用戶端應用程式支援-條件式存取](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Microsoft 365 用戶端應用程式支援-新式驗證](../../enterprise/microsoft-365-client-support-modern-authentication.md)
+- [Microsoft 365 用戶端應用程式支援-多重要素驗證](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
 
 ## <a name="protecting-administrator-accounts"></a>保護系統管理員帳戶
 

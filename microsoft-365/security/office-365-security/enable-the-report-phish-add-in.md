@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: 瞭解如何為個別使用者或整個組織啟用 Outlook 和 Outlook 網頁版的報表網路釣魚增益集。
-ms.openlocfilehash: 6d86fdc710539bc3c74eb94f8931ca48a0c992c1
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: abac24e447d0afe9bc725dd8f9a976dce900b278
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029135"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094674"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>啟用報告網路釣魚增益集
 
@@ -51,6 +51,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
   - Outlook 2013 SP1 或更新版本
   - Mac 版 Outlook 2016
   - Outlook 隨附于適用于企業的 Microsoft 365 應用程式
+  - 適用于 iOS 和 Android 的 Outlook 應用程式
 
 - 內部部署 Exchange 組織中的信箱無法使用報表網路釣魚增益集。
 
@@ -141,7 +142,7 @@ Microsoft 會使用這些提交來改善電子郵件防護技術的有效性。 
 
 2. 尋找並選取 **報告網路釣魚** 增益集。
 
-3. 在 [ **編輯報告的網路釣魚** ] 浮出控制項中，視您的組織而定，會顯示、審閱及編輯設定。 完成後，按一下 **[儲存]**。
+3. 在 [ **編輯報告的網路釣魚** ] 浮出控制項中，視您的組織而定，會顯示、審閱及編輯設定。 完成後，按一下 [儲存 **]**。
 
 ## <a name="view-and-review-reported-messages"></a>查看和審閱報告的郵件
 

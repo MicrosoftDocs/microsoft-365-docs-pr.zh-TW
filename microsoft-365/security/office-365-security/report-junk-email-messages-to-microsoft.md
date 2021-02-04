@@ -17,12 +17,12 @@ ms.collection:
 description: 系統管理員可以瞭解不同的方式，向 Microsoft 報告好的和壞的訊息和檔案，以進行分析。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 52133756ffab28975c1d384c7e455892ce6b0dfc
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 601d0c599a815529540281679bd2b0f907031058
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029171"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099687"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>回報訊息和檔案至 Microsoft。
 
@@ -41,8 +41,10 @@ ms.locfileid: "50029171"
 |[在 web 上的 Outlook 中報告垃圾郵件和網路釣魚電子郵件](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|在適用于 Exchange Online 信箱的組織網頁上，使用 Outlook 網頁版內建的功能 (無法在獨立 EOP) 中使用。 <p> 使用者報告可在系統 [管理員提交入口網站](admin-submission.md)中使用的訊息。 <p> 您可以設定報告的郵件以複製或重新導向至您指定的信箱。 如需詳細資訊，請參閱 [使用者報送原則](user-submission.md)。|
 |[在 Outlook 中報告 iOS 和 Android 的垃圾郵件和網路釣魚電子郵件](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|使用適用于 Exchange Online 信箱之組織的 iOS 和 Android 的內建功能 (無法在獨立 EOP) 中使用。 <p> 使用者報告可在系統 [管理員提交入口網站](admin-submission.md)中使用的訊息。 <p> 您可以設定報告的郵件以複製或重新導向至您指定的信箱。 如需詳細資訊，請參閱 [使用者報送原則](user-submission.md)。|
 |[手動將郵件提交給 Microsoft 進行分析](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)|手動將附加的郵件傳送到垃圾郵件、非垃圾郵件和網路釣魚的特定 Microsoft 電子郵件地址。|
-|[使用郵件流程規則來查看您的使用者回報給 Microsoft 哪些內容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|瞭解如何建立郵件流程規則 (也稱為傳輸規則) ，當使用者將郵件報告給 Microsoft 進行分析時，會通知您。
-|||
+|[使用郵件流程規則來查看您的使用者回報給 Microsoft 哪些內容](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|瞭解如何建立郵件流程規則 (也稱為傳輸規則) ，當使用者將郵件報告給 Microsoft 進行分析時，會通知您。|
 |[將惡意程式碼和非惡意程式碼提交給 Microsoft 進行分析](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|使用 Microsoft 安全性情報網站送出附件及其他檔案。|
 
 如果已隔離垃圾郵件或網路釣魚郵件，而不是傳遞郵件，則使用者可以從 Security & 合規性中心的隔離入口網站，將郵件報告給 Microsoft。 如需詳細資訊，請參閱 [在 Microsoft 365 中尋找及發行隔離的郵件為使用者](find-and-release-quarantined-messages-as-a-user.md)。
+
+> [!NOTE]
+> 提交至 Microsoft 的資料是由北美資料中心的 Office 365 合規性界限內的。 工程小組的分析人員會檢查資料，以協助改善篩選的效能。
