@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 瞭解如何將已發佈的模型套用至 SharePoint 文件庫
-ms.openlocfilehash: 742c6b7088619579f6157e20de63fe311039d6e2
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975928"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080765"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中套用文件瞭解模型。
 
@@ -65,6 +65,11 @@ ms.locfileid: "49975928"
 
     ![資訊檢視](../media/content-understanding/info-du.png)</br> 
 
+    您可以選取 **[查看活動模型]** ，查看任何套用至文件庫的模型詳細資料。
+
+8. 在 **活動模型** 窗格中，您可以查看套用至文件庫的模型。 選取模型以查看更多詳細資料，例如模型的描述、發佈模型的人員，以及該模型是否將保留標籤套用至所分類的檔案。
+
+    ![活動模型窗格](../media/content-understanding/active-models.png)</br> 
 
 將模型套用到文件庫之後，您就可以開始將文件上傳至網站，然後查看結果。
 
@@ -82,6 +87,20 @@ ms.locfileid: "49975928"
 
 > [!NOTE]
 > 您可以複製個別檔案到文件庫並套用至模型，而非資料夾。
+
+### <a name="the-classification-date-field"></a>分類日期欄位
+
+當 SharePoint Syntex 文件瞭解或表單處理模型套用到文件庫時，文件庫結構描述中會包含 <b> 分類日期 </b> 欄位。 根據預設，這個欄位是空白的，但當您以模型處理並分類文件時，會更新此欄位的完成的日期-時間戳記。 
+
+   ![分類日期欄](../media/content-understanding/class-date-column.png)</br> 
+
+[<b>在 Syntex 內容瞭解模型處理完檔案並更新 [分類日期] 欄位後，透過</b> 觸發](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model)執行 Power Automate 流程來分類文件時，使用 [分類日期] 欄位。
+
+   ![流程觸發](../media/content-understanding/trigger.png)</br>
+
+<b>在內容瞭解模型</b> 分類文件之後，您就可以使用檔案中的任何摘錄資訊以啟動並觸發另一個工作流程。
+
+
 
 ## <a name="see-also"></a>另請參閱
 [建立分類器](create-a-classifier.md)
