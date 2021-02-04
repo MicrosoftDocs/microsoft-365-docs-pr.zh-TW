@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解如何在合規性中心建立及匯入原則的自訂機密資訊類型。
-ms.openlocfilehash: 31badcb2ab0102584e3addf3ed4d1549afe78525
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ab96a3928105f612ab97bc8ca3a0acc3613082c3
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929419"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080678"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>使用 PowerShell 建立自訂機密資訊類型
 
@@ -161,7 +161,7 @@ ms.locfileid: "49929419"
 ### <a name="name-the-entity-and-generate-its-guid"></a>為實體命名並產生其 GUID
 
 1. 在您選擇的 XML 編輯器中，新增 Rules 和 Entity 元素。
-2. 新增含有您自訂實體名稱的註解，在本例中即為「員工 ID」。 稍後您可將實體名稱新增至當地語系化字串區段，該名稱就是當您建立原則時出現在 UI 中的名稱。
+2. 新增含有您自訂實體名稱的註解，在本例中即為「員工識別碼」。 稍後您可將實體名稱新增至當地語系化字串區段，該名稱就是當您建立原則時出現在 UI 中的名稱。
 3. 產生實體的 GUID。 產生 GUID 的方式有數種，但您可以透過在 PowerShell 中輸入 **[guid]::NewGuid()** 便可輕鬆完成。 接著，您也可以新增實體 GUID 至當地語系化的字串區段。
   
 ![XML 標記，顯示 Rules 和 Entity 元素](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
@@ -192,7 +192,7 @@ ms.locfileid: "49929419"
   
 ### <a name="keywords-keyword-group-and-term-elements-matchstyle-and-casesensitive-attributes"></a>關鍵字 [Keyword、Group 及 Term 元素、matchStyle 和 caseSensitive 屬性]
 
-當您識別機密資訊 (例如員工識別碼) 時，通常想要要求關鍵字作為確切辨識項。例如，除了比對 9 位數數字之外，您可能想要尋找例如 "card"、"badge" 或 "ID" 的字詞。若要完成這項操作，您會使用 Keyword 元素。Keyword 元素具有 id 屬性，可以由多個模式或實體中的多個 Match 元素參考。
+當您識別敏感性資訊 (例如員工識別碼) 時，通常想要要求關鍵字作為補強證據。例如，除了比對 9 位數數字之外，您可能想要尋找 "card"、"badge" 或 "ID" 之類的字詞。若要完成此動作，您會使用 Keyword 元素。Keyword 元素具有 ID 屬性，可供多個模式或實體中的多個 Match 元素參考。
   
 系統包含關鍵字作為 Group 元素中 Term 元素的清單。Group 元素具有 matchStyle 屬性，有兩個可能值：
   
@@ -206,7 +206,7 @@ ms.locfileid: "49929419"
   
 ### <a name="regular-expressions-regex-element"></a>規則運算式 [Regex 元素]
 
-在此範例中，員工識別碼實體已經使用 IdMatch 元素來參考 regex 的模式 - 空格圍繞的 9 位數數字。此外，模式可以使用 Match 元素來參考額外的 Regex 元素，以識別確切識別碼，例如 5 位數或 9 位數數字格式的美國郵遞區號。
+在此範例中，員工識別碼實體已經使用 IdMatch 元素來參考模式的 Regex，這是用空格包圍的 9 位數數字。此外，模式可以使用 Match 元素來參考額外的 Regex 元素，以識別補強的證據，例如美國郵遞區號的 5 位數或 9 位數數字格式。
   
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>其他模式，例如日期或地址 [內建函式]
 
@@ -220,7 +220,7 @@ ms.locfileid: "49929419"
   
 ## <a name="different-combinations-of-evidence-any-element-minmatches-and-maxmatches-attributes"></a>不同的辨識項組合 [Any 元素、minMatches 和 maxMatches 屬性]
 
-在 Pattern 元素中，所有 IdMatch 和 Match 元素是由隱含的 AND 運算子聯結 - 在滿足模式之前，必須滿足所有相符項目。但是，您可以藉由使用 Any 元素將 Match 元素群組在一起，建立更具彈性的比對邏輯。例如，您可以使用 Any 元素讓其子 Match 元素的子集完全相符、完全不相符或準確相符。
+在 Pattern 元素中，所有 IdMatch 和 Match 元素是由隱含的 AND 運算子聯結；必須先滿足所有相符項目，才能滿足模式。但是，您可以藉由使用 Any 元素將 Match 元素群組在一起，來建立更具彈性的比對邏輯。例如，您可以使用 Any 元素來比對其子系 Match 元素的子集的完全相符、完全不相符或準確相符。
   
 Any 元素具有選擇性的 minMatches 和 maxMatches 屬性，您可以用來定義在模式相符之前，必須滿足多少子 Match 元素。請注意，這些屬性會定義必須滿足的 Match 元素數目，而不是針對相符項目找到的辨識項執行個體數目。若要定義特定相符項目執行個體數目的下限 (例如清單中的關鍵字)，請針對 Match 元素使用 minCount 屬性 (如上所述)。
   
@@ -238,7 +238,7 @@ Any 元素具有選擇性的 minMatches 和 maxMatches 屬性，您可以用來�
     
 ### <a name="match-an-exact-subset-of-any-children-match-elements"></a>比對任一子 Match 元素的精確子集
 
-如果您想要要求必須符合 Match 元素的準確數目，可以將 minMatches 和 maxMatches 設為相同值。只有在確實找到一個日期或關鍵字時，這個 Any 元素才會獲得滿足，超過的話，模式就不會相符。
+如果您想要要求必須符合準確數目的 Match 元素，可以將 minMatches 和 maxMatches 設為相同值。只有在確實找到一個日期或關鍵字時，才會滿足這個 Any 元素，超過的話，模式就不會相符。
 
 ```xml
 <Any minMatches="1" maxMatches="1" >
@@ -294,7 +294,7 @@ Any 元素具有選擇性的 minMatches 和 maxMatches 屬性，您可以用來�
 
 模式需要的辨識項越多，您就可以對於在模式相符時識別出真正實體 (例如員工識別碼) 更具信心。例如，相較於只需要 9 位數識別碼，您對於需要 9 位數數字、雇用日期、接近近似性的關鍵字的模式會更具信心。
   
-Pattern 元素有必要的 confidenceLevel 屬性。 您可以為實體中的每個模式設定 confidenceLevel (介於 1 和 100 的整數) 的值做為不重複 ID；換句話說，您為實體中各個模式所指定信賴等級必須不同。 整數的精確值並不重要，您只要依據您的合規性小組的標準挑選適當的數字即可。 當您上傳自訂機密資訊類型，然後建立原則後，您便可以在您建立的規則條件中參照這些信賴等級。
+Pattern 元素有必要的 confidenceLevel 屬性。 您可以將 confidenceLevel 的值 (介於 1 和 100 的整數) 想像成實體中每個模式的唯一識別碼，實體中的模式必須具有您指定的不同信賴度等級。 整數的精確值並不重要，只要依據您的合規性小組的標準挑選適當的數字即可。 當您上傳自訂機密資訊類型，然後建立原則後，您便可以在您建立的規則條件中參照這些信賴等級。
   
 ![XML 標記，顯示具有不同 confidenceLevel 屬性值的 Pattern 元素](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
@@ -348,7 +348,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
   
 ## <a name="changes-for-exchange-online"></a>針對 Exchange Online 變更
 
-以前您可能使用 Exchange Online PowerShell 以匯入 DLP 的自訂機密資訊類型。 現在您的自訂機密資訊類型可在 Exchange 系統管理中心和合規性中心使用。 自這項改善起，您應使用合規性中心 PowerShell 以匯入您的自訂機密資訊類型 – 您再也無法從 Exchange PowerShell 匯入它們。 自訂機密資訊類型將繼續以與過去相同的方式運作，不過，要讓合規性中心的自訂機密資訊類型的變更顯示在 Exchange 系統管理中心，可能需要一個小時 (最多)。
+以前您可能使用 Exchange Online PowerShell 以匯入 DLP 的自訂機密資訊類型。 現在您的自訂機密資訊類型可在 Exchange 系統管理中心和合規性中心使用。 自此增強功能起，您應使用合規性中心 PowerShell 來匯入您的自訂敏感性資訊類型，您再也無法從 Exchange PowerShell 匯入。 自訂機密資訊類型將繼續以與過去相同的方式運作，不過，要讓合規性中心的自訂機密資訊類型的變更顯示在 Exchange 系統管理中心，可能需要一個小時 (最多)。
   
 請注意，在合規性中心中，您使用的是 **[New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** Cmdlet 上傳規則套件。 (以前，在 Exchange 系統管理中心中，您使用的是  **ClassificationRuleCollection**` cmdlet。) 
   
@@ -428,6 +428,14 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
 - 群組中不能有無限制的中繼器 (例如 "\*" 或 "+")。
     
   例如，"(xx)\*" 和 "(xx)+" 不會通過驗證。
+  
+- 關鍵字長度最多為 50 個字元。  如果您的群組內有關鍵字超出此限制，建議的解決方案是建立一組字詞，做為[關鍵字字典](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary)，並在檔案中用於比對的實體或 idMatch 部分的 XML 結構內參考關鍵字字典的 GUID。
+
+- 每個自訂敏感性資訊類型總計最多可以有 2048 個關鍵字。
+
+- 使用 PowerShell Cmdlet 時，還原序列化資料的大小上限為 1 MB。   這會影響 XML 檔案的大小。 在處理時，請將上傳的檔案限制在 512 MB 的上限，做為要獲得一致結果且不會發生錯誤的建議限制。
+
+- XML 結構不需要輸入空格、Tab 字元或歸位字元/換行字元等格式設定字元。  針對上傳將空格最佳化時，請注意這一點。
     
 如果自訂機密資訊類型包含可能會影響效能的問題，則無法上傳，您可能會看到下列其中一個錯誤訊息：
   
@@ -441,7 +449,7 @@ Version 元素也很重要。當您第一次上傳規則套件時，Microsoft 36
 
 Microsoft 365 會使用搜尋檢索器識別及分類網站內容中的機密資訊。 每次上傳 SharePoint Online 和商務用 OneDrive 網站中的內容時，系統即會重新進行編目。 但是，若要在所有現有內容中識別您的新自訂機密資訊類型，該內容必須重新進行編目。
   
-在 Microsoft 365 中，您無法手動要求對整個租用戶重新編目，但是您可以為網站集合、清單或文件庫這麼做，請參閱[手動要求網站、文件庫或清單的編目和重新編製索引](https://docs.microsoft.com/sharepoint/crawl-site-content)。
+在 Microsoft 365 中，您無法手動要求對整個租用戶重新編目，但是您可以為網站集合、清單或文件庫這麼做，請參閱[手動要求對網站、文件庫或清單進行編目和重新編製索引](https://docs.microsoft.com/sharepoint/crawl-site-content)。
   
 ## <a name="remove-a-custom-sensitive-information-type"></a>移除自訂機密資訊類型
 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: 了解如何在 Microsoft SharePoint Syntex 中建立擷取器。
-ms.openlocfilehash: 7417805f51bb3a1c7b993ce2cd72137478abbc02
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: dd26b049f71688804cd5110a5a0bb7c87950be94
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976540"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080481"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>在 Microsoft SharePoint Syntex 中建立擷取器
 
@@ -57,6 +57,14 @@ ms.locfileid: "49976540"
 
  
 當您在五個檔案上加上標籤後，系統會顯示通知橫幅，通知您移至 [訓練]。 您可以選擇將更多文件加上標籤，或繼續前往訓練。 
+
+### <a name="use-find-to-search-your-file"></a>使用尋找來搜尋您的檔案
+您可以使用<b>尋找</b>功能來搜尋您要加標籤文件中的實體。
+
+   ![在檔案中尋找](../media/content-understanding/find-feature.png) 
+
+如果您要搜尋大型文件，或文件中有實體的多個執行個體，「尋找」功能就相當實用。 如果您發現多個執行個體，則可以在搜尋結果中選取您需要的一項，以移至檢視器中的該位置，以為其加標籤。
+
 
 ## <a name="add-an-explanation"></a>新增說明
 

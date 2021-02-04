@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 建立敏感度標籤時，您可以自動為檔案和電子郵件指派標籤，或者也可以提示使用者選取您建議的標籤。
-ms.openlocfilehash: 190b06a719775fbbf14c94a4fd817d3242a95e6c
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044743"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084674"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>自動將敏感度標籤套用到內容
 
@@ -227,9 +227,9 @@ ms.locfileid: "50044743"
 
 1. 建立及設定自動套用標籤原則。
 
-2. 在模擬模式中執行原則並等候 24 小時，或直到完成模擬為止。
+2. 在模擬模式中執行原則，這可能需要 48 小時的時間才能完成。
 
-3. 查看結果，並視需要調整您的原則。 重新執行模擬模式並等候另 24 小時，或直到模擬完成為止。
+3. 查看結果，並視需要調整您的原則。 重新執行模擬模式，並再次等待其完成。
 
 4. 視需要重複步驟 3。
 
