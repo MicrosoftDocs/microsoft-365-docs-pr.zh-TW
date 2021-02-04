@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解保留原則和保留標籤，可協助您保留所需的內容，並刪除您不想要的內容。
-ms.openlocfilehash: 751b88ea3dde0c4cf2a33dded26a032a1e320b5e
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: d834cc53677c8b7c01ed4bec40ed51983d41e9da
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071308"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084622"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>了解保留原則和保留標籤
 
@@ -77,7 +77,7 @@ ms.locfileid: "50071308"
 
 ## <a name="retention-policies-and-retention-labels"></a>保留原則和保留標籤
 
-您可以透過標籤原則同時使用保留原則和保留標籤，以將保留設定指派給內容。 
+若要將保留設定指派給內容，請將 **保留原則** 和 **保留標籤與標籤原則** 一起使用。 您可以只使用其中一種方法，也可以將它們結合使用。
 
 使用保留原則為網站或信箱層級的內容指派相同的保留設定，並使用保留標籤來指派項目層級 (資料夾、文件、電子郵件) 的保留設定。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 所有 Microsoft 資訊保護解決方案的需求：建立、設定及發佈敏感度標籤，以便分類及保護貴組織的文件和電子郵件。
-ms.openlocfilehash: 60865b40582416ac2ac963c4a8c68353b06fc6d4
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: b7943259d3a20cbf4fd6d8b0b57ca7c027e74d3f
+ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071288"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50084654"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>建立及設定敏感度標籤及其原則
 
@@ -186,7 +186,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 這個按鈕會啟動 **[建立原則]** 精靈，這會讓您可以編輯要包含的標籤和標籤設定。 完成精靈時，任何變更都會自動複寫到選取的使用者和服務。
 
-當您使用 Windows、macOS、iOS 和 Android 版內建標籤時，使用者會在四小時內，在 Office 應用程式中看到新標籤，並在一小時內於網頁版 Office 中看到新標籤。 不過，對現有標籤所做的變更最多需 24 小時的時間，才能複製到所有使用者和服務。
+當您使用在 Windows、macOS、iOS 和 Android 上適用於 Office 應用程式的內建標籤時，使用者可在四小時內查看新標籤，並在一小時內於網頁版 Office 中看到新標籤。 不過，對現有標籤所做的變更最多需 24 小時的時間，才能複製到所有使用者和服務。
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>安全性與合規性中心 PowerShell 的其他標籤原則設定
 

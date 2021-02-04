@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 了解如何使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f9b905e73fe471cc034eae42726a5a86d91a359a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d3d94d585ca0a0e88fb442e658d57bf000ce49bb
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928817"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080514"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>使用以精確資料比對為基礎的分類建立自訂敏感性資訊類型
 
@@ -54,8 +54,8 @@ ms.locfileid: "49928817"
 > - 中文 (繁體)
 > - 韓文
 > - 日文
-
->這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
+> 
+> 這項支援適用於敏感性資訊類型。 如需詳細資訊，請參閱[資訊保護支援雙位元組字元集的版本資訊 (預覽版)](mip-dbcs-relnotes.md)。
 
 ## <a name="required-licenses-and-permissions"></a>必要的授權和權限
 
@@ -104,7 +104,7 @@ ms.locfileid: "49928817"
 
 2. 以 .csv 檔案格式將敏感性資料結構化，使得第一列包含用於以 EDM 為基礎的分類的欄位名稱。 在您的 .csv 檔案中，您可能會有欄位名稱，例如 "ssn"、"生日"、"名字"、"姓氏" 等等。 欄標題名稱不能包含空格或底線。 例如，在本文我們所使用的 .csv 檔案範例稱為 *PatientRecords.csv*，而其資料行包含 *PatientID*、*MRN*、*LastName*、*FirstName*、*SSN* 等等。
 
-3. 請留意敏感性資料欄位的格式。 特別是，在内容中包含逗號的欄位（例如：街道地址中包含“Seattle,WA” 這個值）當由 EDM 工具解析時，將被解析為兩個單獨的欄位。 為避免此情形發生，您需要確保敏感性資料表格中這類欄位周圍有單引號或雙引號。 如果有逗號的欄位還可以包含空格，您會需要建立一個自訂敏感性資訊類型，以匹配相應的格式（例如，包含逗號和空格的多字字串），以確保在掃描文檔時該字串能正確匹配。
+3. 請留意敏感性資料欄位的格式。 特別是，當 EDM 工具進行解析時，在内容中包含逗號的欄位 (例如：街道地址中包含 “Seattle,WA” 這個值) 將被解析為兩個單獨的欄位。 為避免此情形發生，您需要確保敏感性資料表格中這類欄位周圍有單引號或雙引號。 如果包含逗號的欄位可能還包含空格，您會需要建立一個自訂敏感性資訊類型，以符合相應的格式 (例如，包含逗號和空格的多字字串)，以確保在掃描文件時該字串能正確相符。
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>定義用於敏感性資訊的資料庫結構描述
 
@@ -146,7 +146,7 @@ ms.locfileid: "49928817"
 
 當您將設定為 `true` 值的 ***caseInsensitive** _欄位包括在您的結構描述定義中，EDM 將會因 `PatientID` 欄位大小寫的不同而排除項目。 因此， EDM 將會認爲 `PatientID` _ *FOO-1234** 和 **fOo-1234** 是一樣的。
 
-當您在 **_ignoredDelimiters_*_ 欄位中包括受支援的字元時，EDM 將會略過 `PatientID` 内的那些字元。EDM 將會認爲 `PatientID` _* FOO-1234** 和 `PatientID` **FOO#1234** 是一樣的。 `ignoredDelimiters` 旗標支援任何非英數字元的字元，這裡有些範例：
+當您在 **ignoredDelimiters** _ 欄位中包括受支援的字元時，EDM 將會略過 `PatientID` 中的字元。 因此，EDM 會將 `PatientID` _ *FOO-1234** 和 `PatientID` **FOO#1234** 視為一樣的。 `ignoredDelimiters` 旗標支援任何非英數字元的字元，這裡有些範例：
 - \.
 - \-
 - \/
@@ -210,7 +210,7 @@ ms.locfileid: "49928817"
 
       - **idMatch**：此欄位會指向 EDM 的主要元素。
         - 相符項目：指定要在完全查閱中使用的欄位。 您要在資料存放區的 EDM 結構描述中，提供可搜尋的欄位名稱。
-        - 分類：此欄位會指定可觸發 EDM 查閱的敏感性類型符合項目。 您可以提供現有內建或自訂分類的名稱或 GUID。
+        - 分類：此欄位會指定可觸發 EDM 查閱的敏感性類型符合項目。 您可以提供現有內建或自訂敏感性資訊類型的名稱或 GUID。 請注意，任何符合所提供之敏感性資訊類型的字串都會經過雜湊，並與敏感性資訊表中的每個項目進行比較。 為了避免造成效能問題，如果您使用自訂敏感性資訊類型做為 EDM 中的分類元素，請避免使用將符合大量內容 (例如「任意數字」或「任意五個字母」的字」) 的字串，方法是在自訂分類敏感性資訊類型的定義中新增支援關鍵字或格式設定。 
 
       - **相符項目：** 此欄位會指向 idMatch 鄰近位置的其他辨識項。
         - 相符項目：您要在資料存放區的 EDM 結構描述中，提供任何欄位名稱。
@@ -369,7 +369,7 @@ ms.locfileid: "49928817"
 如果您不想公開明文機密的資料檔，可以在安全位置的電腦上雜湊，然後將雜湊檔和鹽檔複製到可直接連線到 Microsoft 365 租用者的電腦。 在這個案例中，您將需要在兩部電腦上都有 EDMUploadAgent。
 
 > [!IMPORTANT]
-> 如果您使用完全符合結構描述和資料類型精靈建立結構描述和模式檔案，您 **_必須_* 下載此程式的結構描述。
+> 如果您使用完全符合結構描述和資料類型精靈建立結構描述和模式檔案，您 ***必須** 下載此程式的結構描述。
 
 #### <a name="prerequisites"></a>必要條件
 
@@ -380,11 +380,11 @@ ms.locfileid: "49928817"
     - 在我們的範例中，您在 csv 格式 **PatientRecords** 的機密項目檔案
     -  以及輸出雜湊和鹽數值檔案
     - 從 **edm.xml** 檔案的資料存儲名稱，在這個範例中的如其 `PatientRecords`
-- 如果您使用 [完全符合結構描述和敏感性資訊類型的資料類型精靈](sit-edm-wizard.md) 您 **_必須_* _下載它
+- 如果您使用 [完全符合結構描述和敏感性資訊類型的資料類型精靈](sit-edm-wizard.md)，您 ***必須*** 下載它
 
 #### <a name="set-up-the-security-group-and-user-account"></a>設定安全性群組和使用者帳戶
 
-1. 以全域系統管理員身分，使用適用於[您訂閱的連結](#portal-links-for-your-subscription) 前往系統管理中心，並 [建立安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) 名為_*EDM\_DataUploaders**。
+1. 以全域系統管理員身分，使用 [適用於您訂閱的連結](#portal-links-for-your-subscription)前往系統管理中心，並建立名為 **EDM\_DataUploaders** 的 [安全性群組](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide)。
 
 2. 將一或多個使用者新增至 **EDM\_DataUploaders** 安全性群組。 (這些使用者將管理敏感性資訊的資料庫)。
 
@@ -415,13 +415,13 @@ ms.locfileid: "49928817"
 
 2. 把適合您的訂閱, 下載並安裝到[EDM 上傳代理](#links-to-edm-upload-agent-by-subscription-type), 步驟1您所建立目錄中 。
 
-> [!NOTE]
-> 上方連結的 EDMUploadAgent 已更新，可自動為雜湊資料新增鹽值。 或者，您也可以提供自己的鹽值。 使用此版本後，您將無法使用舊版的 EDMUploadAgent。
->
-> 您每天最多可以使用 EDMUploadAgent 將資料上傳到任何指定的資料儲存區兩次。
+   > [!NOTE]
+   > 上方連結的 EDMUploadAgent 已更新，可自動為雜湊資料新增鹽值。 或者，您也可以提供自己的鹽值。 使用此版本後，您將無法使用舊版的 EDMUploadAgent。
+   >
+   > 您每天最多可以使用 EDMUploadAgent 將資料上傳到任何指定的資料儲存區兩次。
 
-> [!TIP]
-> 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
+   > [!TIP]
+   > 若要取得所支援命令參數的清單，請執行 agent no 無引數。 例如 'EdmUploadAgent.exe'。
 
 2. 授權 EDM 上傳代理、開啟命令提示字元視窗（以系統管理員身分），切換至 **C:\EDM\Data** 目錄，然後執行下列命令：
 
@@ -429,25 +429,25 @@ ms.locfileid: "49928817"
 
 3. 用您已加入EDM_DataUploaders 安全性群組的Microsoft 365的工作或學校帳戶來登入. 您的租戶信息將從用戶帳戶中提取出來以建立連接。
 
-選用：如果您使用完全符合結構描述和敏感性資料類型精靈建立結構描述和模式檔案，請在命令提示字元視窗中執行下列命令：
+   選用：如果您使用完全符合結構描述和敏感性資料類型精靈建立結構描述和模式檔案，請在命令提示字元視窗中執行下列命令：
 
-`EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
+   `EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to output folder>`
 
 4. 若要為敏感性資料雜湊並上傳，請在Command Prompt 命令提示字元視窗中執行下列命令：
 
-`EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
+   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
 
-範例： **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   範例： **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-這會自動在雜湊中添加隨機生成的鹽值，以提高安全性。 或者，如果您想要使用自己的加密鹽值，請在命令列中新增 **/Salt <saltvalue>**。 此值必須是64個字元，且只能包含 a-z 和0-9 個字元。
+   這會自動在雜湊中添加隨機生成的鹽值，以提高安全性。 或者，如果您想要使用自己的加密鹽值，請在命令列中新增 **/Salt <saltvalue>**。 此值必須是64個字元，且只能包含 a-z 和0-9 個字元。
 
 5. 執行此命令以查看上傳狀態：
 
-`EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
+   `EdmUploadAgent.exe /GetSession /DataStoreName \<DataStoreName\>`
 
-範例： **EdmUploadAgent/GetSession/DataStoreName PatientRecords**
+   範例： **EdmUploadAgent/GetSession/DataStoreName PatientRecords**
 
-尋找 **ProcessingInProgress** 的狀態。 每隔幾分鐘再次檢查，直到狀態變更為 **完成**。 狀態完成後，您的 EDM 資料就可以使用了。
+   尋找 **ProcessingInProgress** 的狀態。 每隔幾分鐘再次檢查，直到狀態變更為 **完成**。 狀態完成後，您的 EDM 資料就可以使用了。
 
 #### <a name="separate-hash-and-upload"></a>雜湊和上傳分開
 
@@ -459,39 +459,38 @@ ms.locfileid: "49928817"
 
 1. 在Command Prompt 命令提示視窗中，執行下列命令：
 
-`EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
+   `EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] >`
 
-例如：
+   例如：
 
-> **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
+   > **EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-如果您沒有指定 [**/Salt <saltvalue>**] 選項，則會輸出雜湊檔和含這些副檔名的鹽值檔案：
-- .EdmHash
-- .EdmSalt
+   如果您沒有指定 [**/Salt <saltvalue>**] 選項，則會輸出雜湊檔和含這些副檔名的鹽值檔案：
+   - .EdmHash
+   - .EdmSalt
 
 2. 請以安全的方式, 將這些檔案複製到您用來上傳機密專案 csv 檔案（PatientRecords）的電腦。
 
-若要上傳已雜湊的資料，請在 Windows 命令提示字元中執行下列命令：
+   若要上傳已雜湊的資料，請在 Windows 命令提示字元中執行下列命令：
 
-`EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
+   `EdmUploadAgent.exe /UploadHash /DataStoreName \<DataStoreName\> /HashFile \<HashedSourceFilePath\>`
 
-例如：
+   例如：
 
-> **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
-
-
-若要確認您的敏感性資料已上傳，請在命令提示字元中執行下列命令：
+   > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
 
-`EdmUploadAgent.exe /GetDataStore`
+   若要確認您的敏感性資料已上傳，請在命令提示字元中執行下列命令：
 
-您會看到資料存放區的清單，以及其上次更新時間。
+   `EdmUploadAgent.exe /GetDataStore`
 
-如果您想要查看上傳到特定儲存區的所有資料，請在 Windows 命令提示字元中執行下列命令：
+   您會看到資料存放區的清單，以及其上次更新時間。
 
-`EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+   如果您想要查看上傳到特定儲存區的所有資料，請在 Windows 命令提示字元中執行下列命令：
 
-針對[重新整理您的敏感性資訊資料庫](#refreshing-your-sensitive-information-database)，繼續設定程序和排程。
+   `EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
+
+   針對[重新整理您的敏感性資訊資料庫](#refreshing-your-sensitive-information-database)，繼續設定程序和排程。
 
 此時，您已準備好使用以 EDM 為基礎的分類搭配 Microsoft 雲端服務。 例如，您可以[使用以 EDM 為基礎的分類來設定 DLP 原則](#to-create-a-dlp-policy-with-edm)。
 
@@ -620,7 +619,7 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 5. 在 [選擇位置 **]** 索引標籤上，選取 [讓我選擇特定位置 **]**，然後選擇 [下一步 **]**。
 
-6. 在 [狀態 **]** 資料行中，選取 [Exchange 電子郵件、OneDrive 帳戶、Teams 交談和頻道訊息 **]**，然後選擇 [下一步 **]**。
+6. 在 [狀態] 欄位中，選取 [Exchange 電子郵件、OneDrive 帳戶、Teams 聊天和頻道訊息]，然後選擇 [下一步]。
 
 7. 在 [原則設定 **]** 索引標籤上，選擇 [使用進階設定 **]**，然後選擇 [下一步 **]**。
 
@@ -654,4 +653,3 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 - [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema)
 - [修改精確資料比對模式以使用可設定比對](sit-modify-edm-schema-configurable-match.md)
-
