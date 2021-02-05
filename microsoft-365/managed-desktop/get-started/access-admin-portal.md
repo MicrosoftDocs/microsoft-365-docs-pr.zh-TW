@@ -10,12 +10,12 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.openlocfilehash: 5b7ba0db52f06f7b3f6fce596015b56c8e46c6c2
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: d22cef41fb1d6dc3fde39681ad84edc510440b11
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068950"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110004"
 ---
 # <a name="access-the-admin-portal"></a>存取管理員入口網站
 
@@ -59,9 +59,9 @@ ms.locfileid: "50068950"
 > [!NOTE]
 > 安全性功能包括安全性相關的通訊、安全性連絡人的管理、安全性相關支援要求的管理，以及與安全性相關的報表存取。 
 
-### <a name="assigning-built-in-roles-to-administrators"></a>將內建角色指派給系統管理員
+### <a name="assigning-built-in-roles-to-user"></a>將內建角色指派給使用者
 
-若要管理內建角色，每個自訂角色的安全性群組都有名稱為 "新式工作區角色- _角色名稱_" (例如，「新式工作場所角色–安全性管理員」 ) 。 若要將使用者指派給其中一個安全性群組，請遵循下列步驟：
+為了便於管理內建角色，每個自訂角色的安全性群組都有名稱為「新式工作區角色- _角色名稱_」 (例如，「新式工作區角色–安全性管理員」 ) 。 若要將使用者指派給其中一個安全性群組，請遵循下列步驟：
 1.  請移至 Microsoft 端點管理員入口網站。
 2.  選取左側的 [ **群組** ]。
 3.  搜尋 **新式的工作區角色**，然後選取與您要指派之角色相關聯的群組。 
@@ -71,3 +71,16 @@ ms.locfileid: "50068950"
 
 > [!NOTE]
 > 目前不支援角色指派的嵌套安全性群組。 
+
+### <a name="assigning-built-in-roles-to-groups"></a>將內建角色指派給群組
+
+如果您需要將一個或多個內建角色指派給現有的群組，請遵循下列步驟：
+1. 移至 [portal.azure.com](https://portal.azure.com/)。
+2. 搜尋及開啟 **企業應用程式**。
+3. 將 **應用程式類型** 篩選變更為 _Microsoft 應用程式_ ，然後 **選取 [** 套用]。
+4. 搜尋並選取 _新式的 Workplace 客戶 APIs_。
+5. 從左側窗格中選取 [ **使用者和群組** ]，然後選取 [ **+ 新增使用者/群組**]。
+6. 從 **使用者和群組** 搜尋您想要的群組。
+7. 在 [ **選取角色**] 中搜尋適用的角色，然後選取該角色。
+8. 選取 [ **指派**]。
+ 

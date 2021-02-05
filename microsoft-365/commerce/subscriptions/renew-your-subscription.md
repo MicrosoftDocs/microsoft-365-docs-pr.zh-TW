@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: 瞭解如何透過關閉或開啟定期計費來續約您的 Microsoft 365。
-ms.openlocfilehash: 1bf6d3957479d1cb695075e139dc4af2a09db3df
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 3bde3cc6d62e89e3339c268b9e3f9be5d657c467
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324301"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114606"
 ---
 # <a name="renew-microsoft-365-for-business"></a>續約商務用 Microsoft 365
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 
@@ -54,14 +54,14 @@ ms.locfileid: "47324301"
 
 1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
 2. 選擇您想要管理週期性計費的訂閱。
-3. 在訂閱詳細資料頁面的**訂閱與付款**設定底下，選取 **編輯週期性計費**。
-4. 在**編輯週期性計費的設定** 窗格中,選取**其位於**上的, **開啟, 但續約一次**, 或 **關閉**。
+3. 在訂閱詳細資料頁面的 **訂閱與付款** 設定底下，選取 **編輯週期性計費**。
+4. 在 **編輯週期性計費的設定** 窗格中,選取 **其位於** 上的, **開啟, 但續約一次**, 或 **關閉**。
 5. 選取 **[儲存]**。
 
     > [!NOTE]
-    > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須[重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
+    > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須 [重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
     > - 當 **週期性計費** 關閉時，該訂閱不會被取消。 如果您想要保持訂閱有效，您必須手動付款帳單。
-    > - 如果您關閉 **週期性帳單**，訂閱會一直持續有效，直到到期為止。 您可以在**訂閱和付款設置**區的訂閱詳細訊息頁面上查看到期日期。
+    > - 如果您關閉 **週期性帳單**，訂閱會一直持續有效，直到到期為止。 您可以在 **訂閱和付款設置** 區的訂閱詳細訊息頁面上查看到期日期。
     > - 若要了解如何立即取消訂閱，請參閱[取消訂閱](cancel-your-subscription.md)。
 
 ::: moniker-end
@@ -79,7 +79,7 @@ ms.locfileid: "47324301"
     您可以將開關切換到 **[關閉]**，關閉 **[週期性計費]**。
 
     > [!NOTE]
-    > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須[重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
+    > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須 [重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
     > - 當 **[週期性計費]** 關閉時，不會立即取消訂閱。 在到期之前，它會一直保持有效。 您可以查看訂閱卡上的到期日
     > - 若要了解如何立即取消訂閱，請參閱[取消訂閱](cancel-your-subscription.md)。
 
@@ -98,7 +98,7 @@ ms.locfileid: "47324301"
     您可以將開關切換到 **[關閉]**，關閉 **[週期性計費]**。
 
     > [!NOTE]
-    > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須[重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
+    > - 您只能變更有效訂閱的 **[週期性計費]** 設定。 如果您的訂閱已過期或停用，您必須 [重新啟用](reactivate-your-subscription.md)，才能開啟或關閉 **[週期性計費]**。
     > - 當 **[週期性計費]** 關閉時，不會立即取消訂閱。 在到期之前，它會一直保持有效。 您可以查看訂閱卡上的到期日。
     > - 若要了解如何立即取消訂閱，請參閱[取消訂閱](cancel-your-subscription.md)。
 

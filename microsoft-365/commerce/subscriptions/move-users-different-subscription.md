@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: 瞭解如何在訂閱間移動使用者。
 ms.date: 07/01/2020
-ms.openlocfilehash: 79f3e4636ff047c4d6f27d83e3644913a8fbb0b5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ec9385d10cc1799509c6f1d2fa88059eecf3bd8c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647792"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114666"
 ---
 # <a name="move-users-to-a-different-subscription"></a>將使用者移至其他訂閱
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 

@@ -25,19 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: 瞭解如何更新 Microsoft 365 for business 的帳單位址。 您也可以更新用來接收帳單通知的電子郵件地址。
-ms.openlocfilehash: d6083a170adddc6bd389e5f33a1050a7e048ad31
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a6019a72bff1e5f4a3d0e6fdc6bb8cf7b8344d26
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638480"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114868"
 ---
 # <a name="change-your-billing-addresses"></a>變更帳單地址
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ ms.locfileid: "48638480"
 
 ::: moniker range="o365-germany"
 
-若要深入瞭解您的帳單或發票，請參閱 [查看您的帳單或發票](view-your-bill-or-invoice.md) ，並 [瞭解您的帳單 orinvoice](understand-your-invoice2.md)。
+若要深入瞭解您的帳單或發票，請參閱 [查看您](view-your-bill-or-invoice.md) 的帳單或發票，並 [瞭解您的帳單或發票](understand-your-invoice2.md)。
 
 ::: moniker-end
 
@@ -93,7 +93,7 @@ ms.locfileid: "48638480"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
 
 2. 選取您要變更的訂閱，然後選取 [ **變更付款明細**]。
 
@@ -113,7 +113,7 @@ ms.locfileid: "48638480"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
 
 2. 選取您要變更的訂閱，然後選取 [ **變更付款明細**]。
 
@@ -121,7 +121,7 @@ ms.locfileid: "48638480"
   
 3. 在 [ **變更付款明細** ] 頁面上，更新您的帳單位址，然後選取 [ **提交**]。
 
-    您可以使用支付寶或中國銀聯，[變更您由 21Vianet 營運的 Office 365 付款方式](change-payment-method.md) (從發票變更為線上付款)，反之亦然。
+    您可以使用支付寶或中國銀聯，將由世紀運作之 Office 365 的支付方式從發票變更為線上付款，反之亦然。
 
 ::: moniker-end
 
@@ -129,7 +129,7 @@ ms.locfileid: "48638480"
 
 ::: moniker range="o365-worldwide"
 
-1. 在系統管理中心，移至 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">[您的產品]</a> 頁面。
+1. 在系統管理中心，移至 [帳單 **]** \> [您的產品 <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">]</a> 頁面。
 2. 在 **[產品]** 索引標籤上，選擇您想要變更的訂閱。
 3. 在 [訂閱詳細資料] 頁面上，選取 [ **服務使用位址** ] 區段中的 [ **編輯服務使用位址**]。
 4. 在 [ **編輯服務使用位址** ] 窗格中，更新您的位址，然後選取 [ **儲存**]。
@@ -138,7 +138,7 @@ ms.locfileid: "48638480"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
 
 2. 選取您要變更的訂閱，選取 [ **其他動作**]，然後選擇 [ **編輯服務使用位址**]。
 
@@ -150,7 +150,7 @@ ms.locfileid: "48638480"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
 
 2. 選取您要變更的訂閱，選取 [ **其他動作**]，然後選擇 [ **編輯服務使用位址**]。
 
@@ -180,13 +180,13 @@ ms.locfileid: "48638480"
 
 ::: moniker range="o365-worldwide"
   
-1. 在系統管理中心中，移至 [帳單]**** \> [帳單通知]<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank"></a>。
+1. 在系統管理中心中，移至 [帳單] \> [帳單通知]<a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank"></a>。
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，移至 [帳單]**** \> [帳單通知]<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank"></a>。
+1. 在系統管理中心中，移至 [帳單] \> [帳單通知]<a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank"></a>。
 
 ::: moniker-end
 
@@ -204,7 +204,7 @@ ms.locfileid: "48638480"
 
 [檢視帳單](view-your-bill-or-invoice.md)
 
-[認識您的帳單或發票](understand-your-invoice2.md)
+[了解您的帳單或發票](understand-your-invoice2.md)
 
 [支付您的訂閱](pay-for-your-subscription.md)
 

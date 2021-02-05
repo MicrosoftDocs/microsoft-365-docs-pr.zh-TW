@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: 若要將新的解決方案加入至規範中心、根據您的意見來更新現有的功能，或是推出新的和更新的檔，Microsoft 365 可協助您保持最新的合規性水準。 請找出我們所學的月份。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4fcc0c9317ed0f302c03ba4bda0b536b57889660
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 682f736456ebe822ee5a34de0175003fd7516920
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066816"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113972"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Microsoft 365 合規性中心的新功能
 
@@ -79,7 +79,7 @@ Microsoft 365 合規性內容小組正在運作中建立「內容解決方案」
 
 ### <a name="sensitivity-labels"></a>敏感度標籤
 
-- [在 Azure Purview 中自動標記資料 (預覽) ](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label)。 您現在可以針對 Azure Purview 中的資產建立和自動套用敏感度標籤，例如 Azure Blob 儲存區中的檔案和 SQL Server 中的資料庫欄。
+- [在 Azure Purview 中自動標記資料 (預覽) ](https://docs.microsoft.com/azure/purview/create-sensitivity-label)。 您現在可以針對 Azure Purview 中的資產建立和自動套用敏感度標籤，例如 Azure Blob 儲存區中的檔案和 SQL Server 中的資料庫欄。
 - [要求使用者將標籤套用至專案](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents)。 這個新的選項又稱為「必要標籤」，這項新選項需要使用者選擇並套用特定案例下的靈敏度標籤。
 
 ## <a name="november-2020"></a>2020 年 11 月

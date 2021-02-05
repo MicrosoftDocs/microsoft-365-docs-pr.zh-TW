@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 中的計畫主題體驗
+title: Microsoft Viva 主題的計畫
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,41 +9,40 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: 瞭解如何在 Microsoft 365 中規劃主題經驗
-ms.openlocfilehash: 153937cf6bc4a12f0a27866204b2286c343ddf55
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+description: 瞭解如何規劃 Microsoft Viva 主題的計畫
+ms.openlocfilehash: 65983f342b3277d33c7bfeb21d8481b1d3d5e817
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49668114"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107951"
 ---
-# <a name="plan-topic-experiences-in-microsoft-365"></a>Microsoft 365 中的計畫主題體驗
+# <a name="plan-for-microsoft-viva-topics"></a>Microsoft Viva 主題的計畫
 
-您可以掌控組織中主題的經驗。 您的主題經驗規劃決策可確保向您的使用者顯示高品質的主題，而且他們具有適當的許可權，可以使用和參與知識。
+您可以掌控組織中主題的經驗。 針對主題的規劃決策可確保向您的使用者顯示高品質的主題，且具有適當的許可權來使用及參與知識。
 
 在本文中，我們將會檢查這些規劃決策：
 
-- 您想要為主題編目的 SharePoint 網站。
+- 您想要為主題編目的 SharePoint 網站
 - 您想要從主題經驗中排除哪些主題（如果有的話）
-- 您要讓主題看得見哪些使用者。
-- 您要授與主題中心主題的許可權的使用者。
-- 您想要在主題中心提供許可權以建立或編輯主題的使用者。
-- 您想要為主題中心提供什麼名稱。
+- 您要將主題顯示在哪個使用者上
+- 您要在主題中心提供許可權以管理主題的使用者
+- 您要在主題中心提供許可權以建立或編輯主題的使用者
+- 您想要在主題中心提供什麼名稱
 
-考慮到資料的安全性和隱私權，主題經驗不會授與使用者對他們沒有許可權之檔案的其他存取權。 我們建議您也會閱讀主題，以在規劃程式中 [體驗安全性和隱私權](topic-experiences-security-privacy.md) 。
+考慮到資料的安全性和隱私權，主題經驗不會授與使用者對他們沒有許可權之檔案的其他存取權。 建議您在規劃過程中，閱讀 [Microsoft Viva 主題的安全性和隱私權](topic-experiences-security-privacy.md) 。
 
 ## <a name="requirements"></a>需求
 
-您必須是全域管理員或 SharePoint 管理員，才能存取 Microsoft 365 系統管理中心及設定主題經驗。
+您必須是全域管理員或 SharePoint 管理員才能存取 Microsoft 365 系統管理中心及設定主題。
 
-所有要使用主題經驗的使用者都需要經驗豐富的授權 **主題** 。 在 [設定主題經驗](set-up-topic-experiences.md)中涵蓋指派授權。
+所有要使用主題的使用者都需要經驗豐富的授權 **主題** 。 在 [設定 Microsoft Viva 主題](set-up-topic-experiences.md)中涵蓋指派授權。
 
 ## <a name="topic-discovery"></a>主題探索
 
 「主題探索」設定會指定哪些 SharePoint 網站用作主題的來源。 您可以選擇包含所有的 SharePoint 網站、特定的網站清單，或沒有網站。 建議您選擇 [所有網站]，讓主題體驗能夠為您的使用者探索大量的良好主題。
 
-當您設定主題經驗時，可以選擇下列選項：
+當您設定主題時，可以選擇下列選項：
 
 - **所有網站**：您組織中的所有 SharePoint 網站。 這包括目前和未來的網站。
 - **全部，除了選取的網站** 之外：所有網站，您指定的網站除外。 在未來建立的網站將會包含為主題探索的來源。 
@@ -58,7 +57,7 @@ ms.locfileid: "49668114"
 Site name,URL
 ```
 
-建議您不要選擇「 **沒有網站** 」，因為這會使主題不會自動建立或更新。 不過，如果您想要設定主題經驗，然後稍後再新增網站，您可以選擇此選項。
+建議您不要選擇「 **沒有網站** 」，因為這會使主題不會自動建立或更新。 不過，如果您想要設定後續主題，然後再新增網站，您可以選擇此選項。
 
 建議您為使用者或知識管理員建立一個程式，以便在組織中需要從主題探索中移除個別網站。
 
@@ -80,7 +79,7 @@ Site name,URL
 
 如果您想要限制建立及編輯特定人員或群組的主題，請為他們建立安全性群組並在安裝過程中加以指定。
 
-您可以選擇不允許任何人參與主題，但是不建議您這麼做。 知識管理員仍能夠編輯及建立主題。
+您可以選擇不允許任何人參與主題，但是不建議您這麼做。 如果您選擇此選項，則知識管理員仍可編輯及建立主題。
 
 *主題檢視器*
 
@@ -92,7 +91,7 @@ Site name,URL
 - **僅限選取的人員或安全性群組**
 - **沒人**
 
-我們建議您 **在組織中的每個人**，但如果您要進行試生產，您可能只想選擇選取的人員或安全性群組。 如果您想要設定主題經驗，但不允許人員查看主題，也可以選擇 [ **否** ]。  (的知識管理員仍有存取權，讓他們可以查看主題，並協助您決定讓主題獲得廣泛的經驗。 ) 
+我們建議您 **在組織中的每個人**，但如果您要進行試生產，您可能只想選擇選取的人員或安全性群組。 如果您想要設定主題，但不允許人員查看主題，也可以選擇 [ **否** ]。  (知識管理員仍具有存取權，讓他們可以查看主題，並協助您決定是否要讓主題獲得廣泛的使用。 ) 
 
 ## <a name="knowledge-rules"></a>知識規則
 
@@ -118,7 +117,7 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>系統管理
 
-當您設定主題經驗時，會自動建立「主題中心」。 請考慮您想要為主題中心命名的專案，以及您想要的 URL 的名稱。 您可以設定名稱和 URL 做為安裝程式的一部分，您可以在 Microsoft 365 系統管理中心中變更名稱 (但不包括 URL) 。 您可以只有一個主題中心。
+當您設定主題時，會自動建立主題中心。 請考慮您想要為主題中心命名的專案，以及您想要的 URL 的名稱。 您可以設定名稱和 URL 做為安裝程式的一部分，您可以在 Microsoft 365 系統管理中心中變更名稱 (但不包括 URL) 。 您可以只有一個主題中心。
 
 ## <a name="setup-checklist"></a>安裝檢查清單
 
@@ -132,9 +131,9 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 > * 要從主題探索中排除的機密主題清單
 > * 主題中心網站的名稱
 
-## <a name="see-also"></a>也請參閱
+## <a name="see-also"></a>另請參閱
 
-[設定主題經驗](set-up-topic-experiences.md)
+[設定主題體驗](set-up-topic-experiences.md)
 
 [在 Microsoft 365 中管理主題探索](topic-experiences-discovery.md)
 

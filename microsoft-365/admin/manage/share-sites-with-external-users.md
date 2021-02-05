@@ -21,19 +21,19 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: '瞭解如何與組織外部的人員共用網站和檔案。 '
-ms.openlocfilehash: 79760f662ec68d2ac9089586fd9cbf38b0bd9897
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 3857cee3073950bbb9c130368abdd7df68d0da2a
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780046"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114462"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>與來賓使用者共用網站和檔案
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 
@@ -55,29 +55,29 @@ ms.locfileid: "44780046"
     
 上述問題的答案可幫助您規劃內容共用的策略。
   
-|**不妨試試以下做法：**|**如果您需要…**|
+|**嘗試這樣做：**|**如果您需要…**|
 |:-----|:-----|
 |新增來賓至群組  <br/> |讓組織外部的人員可以隨時存取小組網站上的資訊和內容。 他們需要如同您網站完整使用者的操作功能，才能建立、編輯和檢視內容。  <br/> |
 |共用檔，並要求來賓進行驗證。  <br/> |讓組織外部的特定人員可以安全地存取檔，以供審閱或共同作業，但這些人員不需要存取網站上的其他內容。  <br/> |
 |共用檔，但不需要驗證。  <br/> |與組織外部人員共用非機密文件的連結，以便其檢視文件，或以意見反應更新文件。 這些人員不需要存取網站上的內容。  <br/> |
    
 > [!IMPORTANT]
-> 當您停用外部共用時，目前具有存取權的組織外部人員將無法再存取。 如果您稍後重新開啟外部共用，將會為這些人員還原存取權。 若要防止使用者存取共用內容，請[將其從 Microsoft 365 群組中移除](/office365/admin/create-groups/add-or-remove-members-from-groups)，從網站移除其許可權，或[停止與其共用檔案或資料夾](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)。 
+> 當您停用外部共用時，目前具有存取權的組織外部人員將無法再存取。 如果您稍後重新開啟外部共用，將會為這些人員還原存取權。 若要防止使用者存取共用內容，請 [將其從 Microsoft 365 群組中移除](/office365/admin/create-groups/add-or-remove-members-from-groups)，從網站移除其許可權，或 [停止與其共用檔案或資料夾](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)。 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>在組織層級啟用外部共用
 
-預設會在組織層級開啟外部共用，但不適用於所有新網站。 如需詳細資訊，請參閱[外部共用一覽](/sharepoint/external-sharing-overview)。 
+預設會在組織層級開啟外部共用，但不適用於所有新網站。 如需詳細資訊，請參閱 [外部共用一覽](/sharepoint/external-sharing-overview)。 
 
 > [!NOTE]
 >  若要允許對任何網站進行外部共用，您必須在組織層級允許它。 
   
-1. 在系統[管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)中，于首頁上的搜尋方塊中輸入「外部」，然後選擇 [**網站外部共用**]。
+1. 在系統 [管理中心](https://go.microsoft.com/fwlink/p/?linkid=2024339)中，于首頁上的搜尋方塊中輸入「外部」，然後選擇 [ **網站外部共用**]。
   
 2. 在開啟的頁面上，選擇使用者是否可以只與現有來賓共用、新的和現有的來賓或任何人共用。 
     
-3. 選取 **[儲存]**。
+3. 選取 [儲存 **]**。
     
-在組織層級啟用外部共用之後，您可以微調共用設定，以停用特定網站的外部共用。 如需詳細資訊，請參閱[開啟或關閉網站的外部共用](/sharepoint/change-external-sharing-site)。
+在組織層級啟用外部共用之後，您可以微調共用設定，以停用特定網站的外部共用。 如需詳細資訊，請參閱 [開啟或關閉網站的外部共用](/sharepoint/change-external-sharing-site)。
   
 
   

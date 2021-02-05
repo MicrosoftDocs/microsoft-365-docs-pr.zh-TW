@@ -1,72 +1,63 @@
 ---
-title: 使用 [新功能管理] 顯示或隱藏新功能
-f1.keywords:
-- NOCSH
-ms.author: sirkkuw
-author: sirkkuw
-manager: scotv
-audience: Admin
-ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection:
-- M365-subscription-management
+title：「管理哪些 Office 功能出現在新功能中」 f1。關鍵字：
+- NOCSH 毫秒。 author： danbrown author： DHB-MSFT 管理員： scotv 物件： Admin 毫秒。主題：文章： o365-管理 localization_priority： Normal 毫秒。集合：
+- M365-訂閱-管理
 - Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
-search.appverid:
+- Adm_TOC 毫秒。 custom： AdminSurgePortfolio appverid：
 - BCS160
 - MET150
-- MOE150
-description: 決定使用者在 Office 的新管理 Office 桌面應用程式中，向使用者顯示或隱藏的功能及其新內容。
-ms.openlocfilehash: 8a7511845dbcce56848834178ed81cd7b919de42
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
-ms.translationtype: MT
-ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841408"
+- MOE150 描述：「Microsoft 365 系統管理中心」中的「Office 的新功能」功能，當使用者選擇協助 > 在 Windows 上的 Office 應用程式中的新功能時，決定要顯示或隱藏哪些 Office 功能。
 ---
-# <a name="show-or-hide-new-features-using-whats-new-management"></a>使用 [新功能管理] 顯示或隱藏新功能
 
-**Office 的新 Windows 管理** 可讓您的組織決定向 Office 桌面應用程式中的使用者顯示哪些功能。 內容預覽可讓您針對每個發行版本本和頻道，查看新的內容。 然後您可以選擇是否要隱藏或顯示每項功能的新內容給使用者。 
+# <a name="manage-which-office-features-appear-in-whats-new"></a>管理哪些 Office 功能出現在新功能中
 
-**Office 桌面應用程式中** 的 [新增功能] 內容會強調為應用程式發行的新功能清單。 此外，它也包含簡短的描述，以及協助客戶瞭解如何使用該功能的圖片或影片。 
+當您發佈重要的 Office 功能時，當使用者選擇 [**協助**  >  Windows 上的 office 應用程式 **的新** 功能] 時，將會收到相關訊息。
 
-**Office** Microsoft 365 系統管理中心及 [用戶端設定服務](https://config.office.com)中提供的新管理功能。
+您可以使用 Microsoft 365 系統管理中心中的 [ **Office 的新** 功能] 功能來控制使用者顯示哪些功能訊息。 如果您決定將功能郵件隱藏給您的使用者，您可以隨時回復並決定顯示。
 
 > [!NOTE]
-> 全域管理員和 Office App 系統管理員角色可管理使用者在其 Office 應用程式中看到的新增功能內容。
+> - 從使用者隱藏功能郵件時，不會停用 Office 應用程式中的功能。
+> - 您必須被指派全域系統管理員角色或 Office app 系統管理員角色，才能使用 **Office 的新** 功能。
 
-##  <a name="show-or-hide-new-features"></a>顯示或隱藏新功能 
+## <a name="show-or-hide-new-features"></a>顯示或隱藏新功能 
 
-系統管理員可以預覽通道的 **新增功能** 內容，並使用 **Office 的新管理功能** 來管理內容的發行方式。
+1. 在 Microsoft 365 系統管理中心的 [ **設定**] 底下，選擇 [ **組織設定**]。
+2. 在 [ **服務** ] 索引標籤上，選擇 **Office 的新功能**。
+3. 當您按一下功能名稱時，會出現一個彈出面板，其中包含下列資訊：
+     - 功能的簡短描述。
+     - 可深入瞭解該功能的文章連結。
+     - 顯示功能的 Office 應用程式。
+     - 第一個版本 (發行) 該通道可使用該功能。
+4. 選擇 [ **從使用者隱藏**]。 或者，如果您先前隱藏了該功能，請選擇 [ **向使用者顯示**]。
 
-1. 在 Microsoft 365 系統管理中心的 [ **設定** ] 底下，選擇 [ **組織設定** ]。
-2. 在 [ **服務** ] 索引標籤上，選擇 [ **Office 什麼是新的管理** ]。
-3. 選取一或多個功能，以查看功能名稱、簡短描述、目標應用程式，以及彈出面板上每項功能的發行版本本。
-4. 選擇 [ **從使用者隱藏** ] 或 [向 **使用者顯示** ]。  
-    **根據預設顯示** 的狀態，會指出在系統管理員將功能狀態設定為 [ **隱藏** ] 或 [ **顯示** ] 時，使用者預設會向使用者顯示功能資訊。  
+您也可以在 [ **管理哪些 Office 功能出現在哪些新** 頁面上] 中選取多項功能，然後選擇 [ **隱藏** ] 或 [ **顯示**]。
 
-    > [!NOTE]
-    > 如果功能可用於多個 Office 應用程式中，將功能設定為 [隱藏]，即可在所有 Office 應用程式中隱藏功能宣告。
+> [!NOTE]
+> - 如果有多個 Office 應用程式的功能可供使用，將功能設定為 [ **隱藏** ]，就會隱藏所有這些 office 應用程式中的功能訊息。
+> - 預設會向使用者顯示所有功能訊息。 這是所有功能的預設狀態，而且只有在您選擇隱藏或顯示功能郵件時，才會變更狀態。
+> - 您也可以從 Microsoft 365 Apps admin center () 取得 **Office 的新** 功能 [https://config.office.com](https://config.office.com) 。 在 [**自訂** 新增功能] 底下會找到該功能  >  ****。
 
-新功能會出現在 Office 中根據此排程的新管理：
+## <a name="list-of-features"></a>功能清單
+
+您可以篩選顯示哪些功能顯示在 [新增功能] 頁面 **中的 Office 功能** 。 您可以依通道、應用程式或狀態進行篩選，或依其組合進行篩選。
+
+新功能會根據下列排程顯示在頁面上：
 
 ||||
 |:-----|:-----|:-----|
-|**通道** <br/> |**在管理預覽** <br/> |**採取動作** <br/> |
+|**通道** <br/> |**Date** <br/> |**採取動作** <br/> |
 |**目前** <br/> |每月15日  <br/> |每月發行前的 1-3 周 <br/> |
 |**每月企業** <br/> |月的第一  <br/> |主要版本之前兩周的新功能 |
 |**半年 Enterprise (預覽)** <br/> |9月1日和3月1日 <br/> | 主要版本之前2周的新功能|
 |**半年 Enterprise** <br/> |1月1日和7月1日 <br/> | 主要版本之前2周的新功能<br/> |
 
-如需通道更新排程的詳細資訊，請參閱 [依日期) 列出的 Microsoft 365 App 更新歷程記錄 (](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。
+如需每個更新通道發行新版本的詳細資訊，請參閱 [依日期) 列出之 Microsoft 365 app 的更新歷程記錄 (](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)。
 
-## <a name="add-office-whats-new-management-card-to-the-admin-center-home-page"></a>將 Office 的新增管理卡新增至系統管理中心首頁
+## <a name="add-the-whats-new-in-office-card-to-the-admin-center-home-page"></a>新增「Office 的新功能」卡片至系統管理中心首頁
 
 1. 在 [Microsoft 365 管理] 頁面上，選擇頁面頂端的 [ **新增卡** ]
-2. 在清單中尋找 **Office 應用程式的新功能** ，並選擇。
-3. 在首頁上的卡片之後，您可以選擇 [ **管理** ] 來 [顯示或隱藏組織的功能](#show-or-hide-new-features) 。 
+2. 找到 [ **管理哪些 Office 功能會出現在清單中的新功能** 並加以選擇]。
+3. 在您的首頁上，您可以選擇 **Office 中的新** 功能，以 [顯示或隱藏您組織的功能](#show-or-hide-new-features) 。
 
 
 ## <a name="related-articles"></a>相關文章

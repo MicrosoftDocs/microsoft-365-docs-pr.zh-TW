@@ -1,5 +1,5 @@
 ---
-title: 在 Microsoft 365 中管理主題探索
+title: 在 Microsoft Viva 主題中管理主題探索
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,23 +9,22 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: 瞭解如何在 Microsoft 365 中管理主題探索。
-ms.openlocfilehash: dec8aeef9dda390fb19f5067638c2ebea6b6a2fe
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+description: 瞭解如何在 Microsoft Viva 主題中管理主題探索。
+ms.openlocfilehash: 36b64433726479dc2a46c809ae9504c6f12f4ab8
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698540"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107755"
 ---
-# <a name="manage-topic-discovery-in-microsoft-365"></a>在 Microsoft 365 中管理主題探索
+# <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>在 Microsoft Viva 主題中管理主題探索
 
 您可以在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)管理主題探索設定。 您必須是全域系統管理員或 SharePoint 管理員，才可執行這些工作。
 
 ## <a name="to-access-topics-management-settings"></a>若要存取主題管理設定：
 
 1. 在 Microsoft 365 系統管理中心中，按一下 [ **設定**]，然後按一下 [ **組織設定**]。
-2. 在 [ **服務** ] 索引標籤上，按一下 [ **知識網路**]。
+2. 在 [ **服務** ] 索引標籤上，按一下 [ **主題經驗**]。
 
     ![將人員連線至知識](../media/admin-org-knowledge-options-completed.png) 
 

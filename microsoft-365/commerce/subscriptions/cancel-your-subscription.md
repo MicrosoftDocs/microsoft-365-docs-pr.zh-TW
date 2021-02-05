@@ -19,25 +19,25 @@ search.appverid:
 - MET150
 description: 瞭解如何取消商務用 Microsoft 365 試用版或付費訂閱。
 ms.date: ''
-ms.openlocfilehash: 9669551101243f1abe760bf336d3472b50182555
-ms.sourcegitcommit: 25afc0c34edc7f8a5eb389d8c701175256c58ec8
+ms.openlocfilehash: 4141de3f1a228f465559212098cf46e68f2844f6
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/01/2020
-ms.locfileid: "47324276"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114726"
 ---
 # <a name="cancel-your-subscription"></a>取消訂閱
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 
 *資格：* 如果您指派給使用者的授權不足25個，您可以隨時取消 Microsoft 365 系統管理中心的 Microsoft 365 for business 試用版或付費訂閱。 如果您有超過25個授權指派給使用者，請 [致電支援部門以取消您的訂閱](../../admin/contact-support-for-business-products.md)。
 
-*退款：* 在下一個計費週期內，任何按比例支付的信用都會傳回給您。
+*退款：* 任何按比例計算的款項將會在下個計費週期內退回。
 
 > [!NOTE]
 > 如果您有多個訂閱同一產品（如 Microsoft 365 商務版），請取消其中一項操作，不會影響其他訂閱中已購買的授權或服務。
@@ -53,9 +53,9 @@ ms.locfileid: "47324276"
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心中，移至 [ **帳單** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">產品</a> ] 頁面，然後選取 [ **產品** ] 索引標籤。
-2. 找到您要取消的訂閱。 選取 [ **更多動作** (三點) ]，然後選取 [ **取消訂閱**]。
-3. 在 [ **取消訂閱** ] 窗格中，選擇您要取消的原因。 （選用）提供任何意見反應。
-4. 選取 [儲存]****。
+2. 找到您要取消的訂閱。 選取 **[更多動作]** (三個點)，然後選取 **[取消訂閱]**。
+3. 在 **取消訂閱** 窗格中，選擇取消的原因。 您也可以選擇提供任何意見反應。
+4. 選取 **[儲存]**。
 
 您的訂閱現在會以 **停用** 狀態顯示，而且在刪除之前已降低功能。 如需在已收費的 Microsoft 365 for business 訂閱已取消時可預期的詳細資訊，請參閱 [當我的 microsoft 365 for business 訂閱結束時，我的資料和存取會發生什麼事？](what-if-my-subscription-expires.md)
 
@@ -63,7 +63,7 @@ ms.locfileid: "47324276"
 
 ::: moniker range="o365-germany"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
 
 2. 在 [ **訂閱** ] 頁面上，選取訂閱。
 
@@ -79,7 +79,7 @@ ms.locfileid: "47324276"
 
 ::: moniker range="o365-21vianet"
 
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
 
 2. 在 [ **訂閱** ] 頁面上，選取訂閱。
 
@@ -101,7 +101,7 @@ ms.locfileid: "47324276"
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>取消訂閱後，您和您的使用者預期會面臨的狀況
   
-- 系統**管理存取**管理員仍可登入並存取系統管理中心，並視需要購買其他訂閱。 若您是全球或計費系統管理員，您可以在90天內重新啟用所有資料都完好無損 [的訂閱](reactivate-your-subscription.md) 。
+- 系統 **管理存取** 管理員仍可登入並存取系統管理中心，並視需要購買其他訂閱。 若您是全球或計費系統管理員，您可以在90天內重新啟用所有資料都完好無損 [的訂閱](reactivate-your-subscription.md) 。
 
 - **使用者存取** 您的使用者將無法使用 OneDrive 商務版服務，或存取客戶資料（例如，小組網站上的電子郵件或檔）。 Word 和 Excel 等 Office 應用程式最後都會進入唯讀、精簡功能模式，並顯示[未授權產品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx)。
 

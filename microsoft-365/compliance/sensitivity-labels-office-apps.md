@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: 深入瞭解使用者如何在 Office 應用程式中使用敏感度標籤，以用於桌面、行動裝置及網路，以及哪些應用程式支援靈敏度標籤。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 672d99ed4345ee27437cda66087de6e4e3f521bb
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: e9e3f73ad3756381a2ea6884d6ec65bc85063a10
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084588"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110016"
 ---
 # <a name="use-sensitivity-labels-in-office-apps"></a>在 Office 應用程式中使用敏感度標籤
 
@@ -171,15 +171,15 @@ Azure 資訊保護整合標籤用戶端支援 Open XML 格式和 Microsoft Offic
 
 使用者一次只能為每個檔或電子郵件套用一個標籤。
 
-當您標示具有附件的電子郵件時，附件不會繼承標籤，只會有一個例外：
+當您標籤具有附件的電子郵件時，只有當您套用至電子郵件訊息的標籤套用加密，而且附件是 Office 檔尚未加密時，附件才會繼承標籤。 因為繼承的標籤會套用加密，所以附件會變成新加密。
 
-- 附件是具有標籤的 Office 檔，其標籤不會套用加密，而且您套用至電子郵件的標籤會套用加密。 在此情況下，以電子郵件傳送的 Office 檔會以加密設定繼承電子郵件的標籤。
+當套用至電子郵件的標籤未套用加密或附件已加密時，附件不會繼承電子郵件中的標籤。
 
-否則： 
+標籤繼承範例，其中標籤 **機密** 套用加密，標籤 **一般** 不會套用加密：
 
-- 如果附件具有標籤，則會保留其原始套用的標籤。
-- 如果不使用標籤來加密附件，就會保留加密，但不會標示。
-- 如果附件沒有標籤，則會保持未標記狀態。
+- 使用者建立新的電子郵件訊息，並將 **機密** 標籤套用至此郵件。 然後，新增未標示或加密的 Word 檔。 繼承的結果是，檔會以新標示的 **保密** ，而且現在已從該標籤套用加密。
+
+- 使用者建立新的電子郵件訊息，並將 **機密** 標籤套用至此郵件。 然後，他們會新增標示為「 **一般** 」且此檔案未加密的 Word 檔。 繼承導致檔重新標記為 **機密** ，而且現在已從該標籤套用加密。
 
 ## <a name="sensitivity-label-compatibility"></a>敏感度標籤相容性
 

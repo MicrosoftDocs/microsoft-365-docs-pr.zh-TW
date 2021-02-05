@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f958a2f6854ca34b0d24a527e2517c848885ad1c
-ms.sourcegitcommit: 27cb4591e08f62ba0a08d6dcf224bf2039034fe5
+ms.openlocfilehash: 442f0dd13415c4ca435cdf69336d1fb07a9e045d
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2021
-ms.locfileid: "49883682"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109922"
 ---
 # <a name="get-started-with-communication-compliance"></a>開始使用通訊合規性
 
@@ -53,7 +53,7 @@ ms.locfileid: "49883682"
 >[!IMPORTANT]
 >Office 365 Advanced 合規性不再銷售為獨立訂閱。 當目前的訂閱到期時，客戶應轉換至上述其中一個訂閱，其中包含相同或其他的符合性功能。
 
-如果您沒有現有的 Office 365 企業版 E5 計畫，而且想要嘗試通訊相容性，您可以 [將 Microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 至現有的訂閱，或註冊 Office 365 Enterprise E5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
+如果您沒有現有的 Office 365 企業版 E5 計畫，而且想要嘗試通訊相容性，您可以 [將 Microsoft 365 新增](/office365/admin/try-or-buy-microsoft-365) 至現有的訂閱，或註冊 Office 365 Enterprise E5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
 
 ## <a name="step-1-required-enable-permissions-for-communication-compliance"></a>步驟 1 (必要) ：啟用通訊相容性的許可權
 
@@ -140,7 +140,7 @@ ms.locfileid: "49883682"
 
 若要管理大型企業組織中的監督使用者，您可能需要跨大型群組監控所有使用者。 您可以使用 PowerShell 為指派的群組設定全域通訊符合性原則的通訊群組。 這可讓您以單一原則監控成千上萬的使用者，並在新員工加入您的組織時，維持通訊相容性原則的更新。
 
-1. 使用下列屬性為您的全域通訊相容性原則建立專用的 [通訊群組](https://docs.microsoft.com/powershell/module/exchange/new-distributiongroup) ：請確定此通訊群組並未用於其他用途或其他 Office 365 服務。
+1. 使用下列屬性為您的全域通訊相容性原則建立專用的 [通訊群組](/powershell/module/exchange/new-distributiongroup) ：請確定此通訊群組並未用於其他用途或其他 Office 365 服務。
 
     - **MemberDepartRestriction = 封閉式**。 確保使用者無法從通訊群組中移除自己。
     - **MemberJoinRestriction = 封閉式**。 確保使用者無法將自己新增至通訊群組。
@@ -150,7 +150,7 @@ ms.locfileid: "49883682"
     New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
     ```
 
-2. 選取未使用的 [Exchange 自訂屬性](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes) ，以追蹤新增至組織中通訊合規性原則的使用者。
+2. 選取未使用的 [Exchange 自訂屬性](/Exchange/recipients/mailbox-custom-attributes) ，以追蹤新增至組織中通訊合規性原則的使用者。
 
 3. 在週期性排程上執行下列 PowerShell 腳本，以將使用者新增至通訊合規性原則：
 
@@ -169,8 +169,8 @@ ms.locfileid: "49883682"
 
 如需設定群組的詳細資訊，請參閱：
 
-- [建立並管理通訊群組](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
-- [Microsoft 365 群組的概述](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups)
+- [建立並管理通訊群組](/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
+- [Microsoft 365 群組的概述](/office365/admin/create-groups/office-365-groups)
 
 ## <a name="step-4-optional-verify-your-yammer-tenant-is-in-native-mode"></a>步驟 4 (選用) ：確認 Yammer 租使用者處於原生模式
 
@@ -178,8 +178,8 @@ ms.locfileid: "49883682"
 
 如需在原生模式中設定 Yammer 的詳細資訊，請參閱：
 
-- [Microsoft 365 中的 Yammer 原生模式概述](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
-- [針對 Microsoft 365 設定您的 Yammer 網路使用原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
+- [Microsoft 365 中的 Yammer 原生模式概述](/yammer/configure-your-yammer-network/overview-native-mode)
+- [針對 Microsoft 365 設定您的 Yammer 網路使用原生模式](/yammer/configure-your-yammer-network/native-mode)
 
 ## <a name="step-5-required-create-a-communication-compliance-policy"></a>步驟 5 (必要) ：建立通訊相容性原則
   
@@ -247,7 +247,7 @@ ms.locfileid: "49883682"
 
 4. 若要啟用匿名，請選取 [ **顯示匿名版本的使用者名**]。
 
-5. 選取 [儲存]。
+5. 選取 [儲存 **]**。
 
 6. 流覽至 [ **公告範本** ] 索引標籤，然後選取 [ **建立公告範本**]。
 

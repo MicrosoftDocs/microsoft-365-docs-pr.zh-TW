@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 以系統管理員和郵件寄件者的身分，您可以撤銷使用 Office 365 高級郵件加密所加密的特定電子郵件。
-ms.openlocfilehash: 79ab3ef801d4d19317cbf1416d858de74d9f1393
-ms.sourcegitcommit: 22dab0f7604cc057a062698005ff901d40771692
+ms.openlocfilehash: 67582917dd483f6090f5cd369af8faf6cf8a4ea8
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "46868936"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105138"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>撤銷由高級郵件加密所加密的電子郵件
 
@@ -48,6 +48,10 @@ ms.locfileid: "46868936"
 ![顯示已撤銷加密之電子郵件的螢幕擷取畫面。](../media/revoked-encrypted-email.png)
 
 ## <a name="how-to-revoke-an-encrypted-message-that-you-sent"></a>操作方法：撤銷您傳送的加密郵件
+
+您可以撤銷您傳送給單一收件者的郵件，該郵件使用社會帳戶，例如 gmail.com 或 yahoo.com。 換句話說，您可以撤銷傳送到單一收件者的電子郵件，該收件者會收到連結型經驗。
+
+您無法撤銷傳送給收件者的郵件，該收件者使用 Office 365 或 Microsoft 365 中的工作或學校帳戶，例如 outlook.com 帳戶。 
 
 若要撤銷您傳送的加密郵件，請完成下列步驟：
 
@@ -101,7 +105,7 @@ Microsoft 365 系統管理員請遵循下列一般步驟來撤銷合格的加密
 
 1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，啟動 Windows PowerShell 會話，並聯機至 Exchange Online。 如需詳細指示，請參閱[連線到 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
-2. 執行 OMEMessageStatus 指令程式，如下所示：
+2. 依下列方式執行 Get-OMEMessageStatus Cmdlet：
 
      ```powershell
      Get-OMEMessageStatus -MessageId "<message id>" | ft -a  Subject, IsRevocable
@@ -109,13 +113,13 @@ Microsoft 365 系統管理員請遵循下列一般步驟來撤銷合格的加密
 
    這個命令會傳回郵件的主旨，以及郵件是否可吊銷。 例如：
 
-     ```text
+     ```console
      Subject        IsRevocable
      -------        -----------
      "Test message" True
      ```
 
-### <a name="step-3-revoke-the-mail"></a>步驟 3： 撤銷郵件
+### <a name="step-3-revoke-the-mail"></a>步驟 3. 撤銷郵件
 
 知道您要吊銷之電子郵件的郵件識別碼，並確認該郵件可吊銷後，您就可以使用安全性與 &amp; 合規性中心或 Windows PowerShell 撤銷電子郵件。
 
@@ -123,19 +127,19 @@ Microsoft 365 系統管理員請遵循下列一般步驟來撤銷合格的加密
 
 1. 使用組織中具有全域系統管理員許可權的公司或學校帳戶，連接至安全性 & 合規性中心。
 
-2. 在 **加密報告**中，于郵件的 [ **詳細資料** ] 表格中，選擇 **[撤銷郵件]**。
+2. 在 **加密報告** 中，于郵件的 [ **詳細資料** ] 表格中，選擇 **[撤銷郵件]**。
 
-若要使用 Windows PowerShell 撤銷電子郵件，請使用 OMEMessageRevocation Cmdlet。
+若要使用 Windows PowerShell 撤銷電子郵件，請使用 Set-OMEMessageRevocation Cmdlet。
 
 1. 使用組織中具有全域系統管理員許可權的工作或學校帳戶，連線 [至 Exchange Online PowerShell](https://aka.ms/exopowershell)。
 
-2. 執行 OMEMessageRevocation 指令程式，如下所示：
+2. 依下列方式執行 Set-OMEMessageRevocation Cmdlet：
 
     ```powershell
     Set-OMEMessageRevocation -Revoke $true -MessageId "<messageId>"
     ```
 
-3. 若要檢查電子郵件是否已撤銷，請執行 OMEMessageStatus 指令程式，如下所示：
+3. 若要檢查電子郵件是否已撤銷，請執行 Get-OMEMessageStatus Cmdlet，如下所示：
 
     ```powershell
     Get-OMEMessageStatus -MessageId "<messageId>" | ft -a  Subject, Revoked
@@ -143,7 +147,7 @@ Microsoft 365 系統管理員請遵循下列一般步驟來撤銷合格的加密
 
     如果撤銷成功，Cmdlet 會傳回下列結果：  
 
-     ```text
+     ```console
      Revoked: True
      ```
 

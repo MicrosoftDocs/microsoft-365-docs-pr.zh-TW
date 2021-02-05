@@ -9,19 +9,19 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 88b1ba657b4823d90a41b28b01362760676410ba
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: a6b5cbbcb2f48797130b080d9d1dd1e6427d4fb8
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032682"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110048"
 ---
 # <a name="device-requirements"></a>裝置需求
 
 Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 本文說明裝置為了與 Microsoft 受管理的桌面搭配使用，必須符合的硬體和軟體需求。 您可以根據這些需求，複查 [已核准](device-list.md) 供服務使用的特定裝置清單。
 
 > [!NOTE]
-> 這些需求可以隨時變更，但我們會提供任何這類變更的90天通知。 最近變更的需求會以標記 **\*** 。 
+> 這些需求可以隨時變更，但我們會在任何硬體需求變更後提供30天的通知。 最近變更的需求會以標記 **\*** 。 
 
 ## <a name="check-hardware-requirements"></a>檢查硬體需求
 
@@ -46,7 +46,7 @@ Microsoft 受管理的桌面會定期評估服務中要包含的裝置需求。 
 裝置必須預先安裝此軟體：
 
 - Windows 10 企業版、專業版或專業版工作站版
-- {64 位版本的 Office 隨選即用 {我將會加倍檢查名稱（含 Office 同事）}
+- Microsoft Office 隨選即用的64位版本 
 - 所有適用的裝置驅動程式
 
 

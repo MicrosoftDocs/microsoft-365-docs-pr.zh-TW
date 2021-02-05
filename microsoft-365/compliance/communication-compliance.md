@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a4d1fc1f136322c85c8c46563c448451501ac462
-ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
+ms.openlocfilehash: dd0d4c5e6629a5762505be6392d6b4c2ae5607e5
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49904018"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109942"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>深入瞭解 Microsoft 365 中的通訊法規遵從性
 
@@ -86,7 +86,8 @@ Microsoft 365 中的通訊法規遵從性提供數項重要的功能，以協助
 - **新的篩選**：使用多個欄位（包括寄件者、收件者、日期、網域及其他許多欄位）的郵件篩選器，調查和修正原則警示。
 - **改進的郵件** 功能：現在，調查和修正動作會在新的郵件來源、文字和批註視圖中加快。 現在可以查看郵件附件，以在採取修正動作時提供完整內容。
 - **使用者歷程記錄** 模式：所有使用者郵件修復活動的歷史視圖，例如過去的通知和上報原則相符，現在在修正工作流程過程中為檢閱者提供更多內容。 使用者的第一次或重複的原則相符專案現在已封存，而且可輕鬆查看。
-- 已偵測 **到的模式通知 (預覽)**：許多 harassing 及霸淩動作會在一段時間內進行，並包含使用者重新執行相同行為的重複實例。 警示詳細資料中所偵測到的新模式通知，可協助您注意這些警示和這類行為。
+- 偵測 **到的模式通知**：許多 harassing 及霸淩動作會在一段時間內進行，並包含使用者重新執行相同行為的重複實例。 警示詳細資料中所偵測到的新模式通知，可協助您注意這些警示和這類行為。
+- **顯示翻譯視圖**：使用修正工作流程中的翻譯支援，快速調查其他語言的郵件詳細資料。 其他語言的郵件會自動轉換為檢閱者的顯示語言。
 
 ### <a name="actionable-insights"></a>可操作的洞察力
 
@@ -100,10 +101,10 @@ Microsoft 365 中的通訊法規遵從性提供數項重要的功能，以協助
 
 通訊相容性原則可跨多個通訊通道掃描及捕獲郵件，以協助您快速查看和修正法規遵從性問題：
 
-- **Microsoft 小組**：公用和私人 [Microsoft 團隊](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) 通道和個別聊天的聊天通訊支援為獨立通道來源或其他 Microsoft 365 服務。 當您選取要在通訊合規性原則中監督的使用者和群組時，您必須手動新增個別使用者、通訊群組或特定 Microsoft 小組頻道。
-- **Exchange online**：在您的 Microsoft 365 組織中的 [exchange Online](https://docs.microsoft.com/Exchange/exchange-online) 上主控的所有信箱都符合掃描資格。 電子郵件和附件比對通訊相容性原則的情況立即可用於監控和符合性報告。 Exchange Online 現在是一種選用的來源通道，而且通訊法規遵從性原則中已不再需要。
-- **Yammer**：通訊相容性原則支援 [yammer](https://docs.microsoft.com/yammer/yammer-landing-page) 中的私人郵件和公開社區交談。 Yammer 是選用的通道，必須是 [原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) ，以支援郵件和附件的掃描。
-- **商務用 Skype online**：通訊相容性原則支援在 [商務用 skype Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online)中的掃描聊天通訊和相關聯的附件。
+- **Microsoft 小組**：公用和私人 [Microsoft 團隊](/MicrosoftTeams/Teams-overview) 通道和個別聊天的聊天通訊支援為獨立通道來源或其他 Microsoft 365 服務。 當您選取要在通訊合規性原則中監督的使用者和群組時，您必須手動新增個別使用者、通訊群組或特定 Microsoft 小組頻道。
+- **Exchange online**：在您的 Microsoft 365 組織中的 [exchange Online](/Exchange/exchange-online) 上主控的所有信箱都符合掃描資格。 電子郵件和附件比對通訊相容性原則的情況立即可用於監控和符合性報告。 Exchange Online 現在是一種選用的來源通道，而且通訊法規遵從性原則中已不再需要。
+- **Yammer**：通訊相容性原則支援 [yammer](/yammer/yammer-landing-page) 中的私人郵件和公開社區交談。 Yammer 是選用的通道，必須是 [原生模式](/yammer/configure-your-yammer-network/overview-native-mode) ，以支援郵件和附件的掃描。
+- **商務用 Skype online**：通訊相容性原則支援在 [商務用 skype Online](/SkypeForBusiness/skype-for-business-online)中的掃描聊天通訊和相關聯的附件。
 - **協力廠商來源**：您可以掃描來自 [協力廠商來源](archiving-third-party-data.md) 的郵件，以用於將資料匯入至 Microsoft 365 組織中的信箱。 通訊相容性支援多個流行平臺的連線，包括立即 Bloomberg 和其他。
 
 若要深入瞭解通訊相容性原則中的訊息通道支援，請參閱 [支援的通訊類型](communication-compliance-feature-reference.md#supported-communication-types)。

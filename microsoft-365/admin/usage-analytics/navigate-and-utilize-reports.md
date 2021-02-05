@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: 瞭解如何使用流覽索引標籤及篩選器來查看報告。
-ms.openlocfilehash: 3a43d638d50c2e9415dde3bc7c547a7ba3b9d5bd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: aa7508b65d2a2b949c8e6737e92171ebb95812e1
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401479"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114270"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>導覽和運用 Microsoft 365 使用情況分析中的報告
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 
@@ -40,7 +40,7 @@ ms.locfileid: "44401479"
 
 若要開始使用您的報表，以下是幾個祕訣：
 
-- 在 [**執行摘要**] 頁面上，使用左側或相關度量的流覽索引標籤，以流覽至每個最上層的報表。
+- 在 [ **執行摘要** ] 頁面上，使用左側或相關度量的流覽索引標籤，以流覽至每個最上層的報表。
 
     ![顯示左側的流覽索引標籤](../../media/navigate-usage-analytics1.png)
 
@@ -61,7 +61,7 @@ ms.locfileid: "44401479"
 
 已範例化範本應用程式的使用者，將可以自訂報告的需求。 若要自訂範本應用程式：
 
-- 在報告頂端選取 [**編輯報告**]。
+- 在報告頂端選取 [ **編輯報告** ]。
 
     ![顯示編輯報告](../../media/navigate-usage-analytics7.png)
 
@@ -72,7 +72,7 @@ ms.locfileid: "44401479"
 
 若要共用您的報表，只要選取 [共用] 按鈕 ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) 在頁面頂端。
 
-若要瞭解如何自訂報告，請參閱[在 Microsoft 365 流量分析中自訂報告](customize-reports.md)。
+若要瞭解如何自訂報告，請參閱 [在 Microsoft 365 流量分析中自訂報告](customize-reports.md)。
 
 您可以在 Power BI 說明文件中找到許多額外的資訊：
 

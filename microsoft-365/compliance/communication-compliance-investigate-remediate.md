@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ea96780846507e7fc3edccb28e04055ce79261fa
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: 7e5dc3ef4a79b1bdbcde9a7a15fec84efe9b92c9
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980096"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109963"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>調查和修復通訊合規性警示
 
@@ -106,7 +106,8 @@ ms.locfileid: "49980096"
 - **批註視圖**：此視圖可讓檢閱者直接在儲存為郵件視圖的郵件上新增批註。
 - **使用者歷程記錄**：使用者史 view 顯示傳送郵件之使用者的所有通訊合規性原則所產生的所有其他警示。
 - **郵件詳細資料檢視**：郵件中繼資料和設定資訊的高級視圖。
-- 已偵測 **到的模式通知 (預覽)**：許多 harassing 及霸淩動作一段時間，且包含使用者定期執行相同行為的實例。 偵測 *到的模式* 通知會顯示在警示詳細資料中，並對警示引發注意。 偵測模式是以每個原則為基礎，並在過去30天內評估行為，當寄件者至少有兩封郵件傳送給同一位收件者時。 調查人員和檢閱者可以使用此通知來識別重複的行為，以視情況評估警示。
+- 偵測 **到的模式通知**：許多 harassing 及霸淩的動作一段時間，而且會對使用者執行相同行為的重複實例。 偵測 *到的模式* 通知會顯示在警示詳細資料中，並對警示引發注意。 偵測模式是以每個原則為基礎，並在過去30天內評估行為，當寄件者至少有兩封郵件傳送給同一位收件者時。 調查人員和檢閱者可以使用此通知來識別重複的行為，以視情況評估警示。
+- **顯示翻譯視圖**：此視圖會自動將提醒訊息文字轉換為 Microsoft 365 訂閱中為每個審閱 *者設定的* 語言。 翻譯的觀點可協助拓寬具有多語系使用者之組織的調查支援，並避免在通訊合規性審查程式以外需要其他轉譯服務。 您可以使用 Microsoft 轉譯服務，視需要開啟及關閉翻譯視圖，並支援各種語言。 如需支援之語言的完整清單，請參閱 [Microsoft Translator 語言](https://www.microsoft.com/translator/business/languages/)。 翻譯視圖中支援 [ *翻譯工具] 語言清單* 中所列的語言。
 
     ![通訊相容性郵件 view 控制項](../media/communication-compliance-message-views.png)
 

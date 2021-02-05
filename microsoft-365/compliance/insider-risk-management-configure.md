@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 3eaa6481c2f1b0d41066a8cea1b28d776f786a1b
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 3a88c48e6915b03316b29d80d2a0f7550d4b5d32
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094774"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105160"
 ---
 # <a name="get-started-with-insider-risk-management"></a>開始使用測試人員風險管理
 
@@ -41,10 +41,13 @@ ms.locfileid: "50094774"
 - Microsoft 365 A5 訂閱 (付費或試用版本) 
 - Microsoft 365 A3 訂閱 + Microsoft 365 A5 合規性附加元件
 - Microsoft 365 A3 訂閱 + Microsoft 365 A5 內幕人士風險管理附加元件
+- Microsoft 365 G5 訂閱 (付費或試用版本) 
+- Microsoft 365 G5 訂閱 + Microsoft 365 G5 合規性附加元件
+- Microsoft 365 G5 訂閱 + Microsoft 365 G5 有問必答風險管理附加元件
 
 包含在「內幕風險管理」原則中的使用者必須指派上述其中一個授權。
 
-如果您沒有現有的 Microsoft 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以 [將 microsoft 365 新增](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) 至現有的訂閱，或註冊 Microsoft 365 Enterprise E5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
+如果您沒有現有的 Microsoft 365 企業版 E5 計畫，而且想要嘗試擁有者風險管理，您可以 [將 microsoft 365 新增](/office365/admin/try-or-buy-microsoft-365) 至現有的訂閱，或註冊 Microsoft 365 Enterprise E5 的 [試用版](https://www.microsoft.com/microsoft-365/enterprise) 。
 
 ## <a name="step-1-enable-permissions-for-insider-risk-management"></a>步驟1：啟用內部人員風險管理的許可權
 
@@ -63,7 +66,7 @@ ms.locfileid: "50094774"
 | **測試人員風險管理調查員** | 使用此群組可將許可權指派給將充當內部使用者風險資料調查人員的使用者。 這個角色群組中的使用者可以存取所有的內部使用者風險管理提醒、案例、通知範本及內容瀏覽器。 |
 
 > [!NOTE]
-> 目前不支援這些角色群組的特殊身分識別管理 (PIM) 。 若要深入瞭解 PIM，請參閱 [在特權身分識別管理中指派 AZURE AD role](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)。
+> 目前不支援這些角色群組的特殊身分識別管理 (PIM) 。 若要深入瞭解 PIM，請參閱 [在特權身分識別管理中指派 AZURE AD role](/azure/active-directory/privileged-identity-management/pim-how-to-add-role-to-user)。
 
 ### <a name="add-users-to-an-insider-risk-management-role-group"></a>將使用者新增至「內幕風險管理」角色群組
 

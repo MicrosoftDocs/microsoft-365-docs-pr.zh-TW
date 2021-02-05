@@ -1,37 +1,32 @@
 ---
-title: '讓您的環境做好準備，以供主題體驗 (預覽) '
-description: 讓您的環境做好準備，讓您能夠為使用者提供盡可能多的內容， (預覽) 中的主題經驗。
+title: 讓您的環境做好準備 Microsoft Viva 主題的準備
+description: 讓您的環境做好準備，您可以使用 Microsoft Viva 主題為您的使用者提供盡可能多的內容。
 ms.author: samanro
 author: samanro
 manager: pamgreen
-ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ROBOTS: NOINDEX
-ms.openlocfilehash: 19112b222be328eb75b7eea807bea94e524fd56d
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 5a13af3e78848471b436d44ab051eca945176c74
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683411"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107693"
 ---
-# <a name="get-your-environment-ready-for-topic-experiences-preview"></a>讓您的環境做好準備，以供主題體驗 (預覽) 
+# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>讓您的環境做好準備 Microsoft Viva 主題的準備
 
-> [!Note]
-> 本文內容適用于 Project Cortex 私人預覽。 [如需詳細資訊，請參閱 Project Cortex](https://aka.ms/projectcortex)。
+若要充分利用 Viva 主題，您想要有盡可能多的內容納入主題探索，使您可以為使用者提供一組豐富的主題。 但是應使用何種內容做為主題探索？ 如何在保持控制的情況下，最大化已編制索引的內容？ 範圍中的內容越多，人工智慧所能探索的洞察力就越好。 本文將引導您完成規劃步驟，以確保您包含適當的內容，而且您具有適當的人員和資源，讓使用者具備良好的體驗。
 
-若要充分發揮主題的經驗，您想要有盡可能多的內容納入主題探索，使您可以為使用者提供一組豐富的主題。 但是應使用何種內容做為主題探索？ 如何在保持控制的情況下，最大化已編制索引的內容？ 範圍中的內容越多，人工智慧所產生的洞察力就會越好。 本文將引導您完成規劃步驟，以確保您包含適當的內容，而且您具有適當的人員和資源，讓使用者具備良好的體驗。
-
-若要在 (預覽) 中規劃主題經驗，您必須：
+若要規劃 Viva 主題，您必須：
 
 ![遷移、連接、現代化、安全及識別步驟，以上架至知識管理](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [將內容遷移至 SharePoint](#1-migrate-content-to-microsoft-365)
-    - 主題挖掘只會包含 SharePoint 網站上的內容。
+    - 主題索引僅包括 SharePoint 網站上的內容。
       - 盡可能將重要內容遷移至從外部來源 SharePoint 線上。
       - 為內容來源設定高潛力 tacit 知識的優先順序。
       - 強調知識管理的優點，以鼓勵使用者將內容從 OneDrive 移至 SharePoint 網站。
@@ -51,10 +46,10 @@ ms.locfileid: "49683411"
       - 讓系統管理員透過搜尋來審核廣泛的共用內容
       - 鼓勵內容擁有人共用不敏感的內容，而且可能會對組織帶來更大的利益。
     - 在使用者和內容上複查您的 Microsoft Graph 設定：
-      - 主題挖掘會考慮從搜尋或 Delve 排除內容的設定。 請複查這些設定是否仍然相關。
+      - 主題索引會考慮從搜尋或 Delve (中排除內容的設定，例如，NOINDEX) 。 請複查這些設定是否仍然相關。
 
 5. [識別知識管理員和主題](#5-identify-knowledge-managers-and-topics)
-    - 使用現有的分類法以手動方式建立主題。
+    - 使用現有的分類法以手動方式建立主題，或協助確認 AI 建議的主題。
     - 針對預期或植入的主題，識別主題專家 (Sme) 。
     - 識別涵蓋大量重要資料的網站，可用於試驗主題挖掘。
     - 接洽知識主管和實踐社區。
@@ -79,11 +74,11 @@ ms.locfileid: "49683411"
 如果您無法遷移部分內容，請使用 Microsoft Graph 進行連線：
 
 - 請考慮實施 [圖形內容連接器](https://docs.microsoft.com/microsoftsearch/connectors-overview)。 您可以使用連接器將外部內容編入 Microsoft Graph，讓使用者可以透過 Microsoft 搜尋探索該內容。
-- 未來的發展會讓外部資料進入主題經驗。
+- 未來的發展會將外部資料引入 Viva 主題。
 
 ## <a name="3-modernize-sharepoint-pages"></a>3. 現代化 SharePoint 頁面
 
-由於主題卡片和高光只會出現在新式頁面上，因此請更新任何您想要包含在傳統至現代主題經驗中的任何頁面。 請參閱「 [現代化」傳統 SharePoint 網站](https://docs.microsoft.com/sharepoint/dev/transform/modernize-classic-sites)。 您可以使用 [SharePoint 現代化掃描器](https://docs.microsoft.com/sharepoint/dev/transform/modernize-scanner) 來準備您的傳統網站，以進行現代化。
+由於主題卡片和高光只會出現在新式頁面上，因此請將您想要包含在 Viva 主題中的任何頁面更新為新式。 請參閱「 [現代化」傳統 SharePoint 網站](https://docs.microsoft.com/sharepoint/dev/transform/modernize-classic-sites)。 您可以使用 [SharePoint 現代化掃描器](https://docs.microsoft.com/sharepoint/dev/transform/modernize-scanner) 來準備您的傳統網站，以進行現代化。
 
 如果您有許多傳統網站，請設定高設定檔頁面面的優先順序，以轉換為新式。
 
@@ -120,7 +115,7 @@ ms.locfileid: "49683411"
 
 管理主題包括三個重要角色，包含兩個新的 Azure Active Directory (AAD) 角色：知識管理員和知識管理員：
 
-- 知識管理員 (KA) 是技術角色，通常是在其中。 此角色可讓您在 M365 系統管理中心中設定主題的經驗，以及設定主題探索與可視性。
+- 知識管理員 (KA) 是技術角色，通常是在其中。 此角色可讓您在 M365 系統管理中心中設定 Viva 主題，以及設定主題探索和可視性。
 - 知識管理員 (KM) 會與主題自行運作，並監督其品質和完整性。
 - 主題參與者 (TCs) 不是以 AAD 角色為基礎，但系統管理中心的許可權。 他們是主題專家，可以 curate 主題的內容、新增資源和人員。
 
@@ -130,14 +125,14 @@ ms.locfileid: "49683411"
 |:-------|:-------|:-------|:-------|
 | AAD 角色 | AAD 角色 | 中小企業 |
 | 可以存取系統管理中心 | 可以存取系統管理中心 | 無法存取系統管理中心 |
-| 設定主題經驗 | 擁有主題的管理和品質 | 根據其專業知識為主題貢獻。 |
+| 設定 Viva 主題 | 擁有主題的管理和品質 | 根據其專業知識為主題貢獻。 |
 | 確定已強制執行安全性和符合性標準，並可瞭解授權合約。| 會執行「建立」、「編輯」、「刪除」及「拒絕」主題等主題管理工作。 支援主題參與者的任務。 | Curates 主題頁面上的資訊和內容，包括哪些人員和資源釘住在該主題。 |
 
 在使用者的工作內容中，使用者會看到醒目和卡片，例如流覽 SharePoint 中的現代頁面。 您可以控制主題的使用者經驗。
 
 - 誰可以查看主題？ 主題可見度是在 Microsoft 365 系統管理中心中設定。 選擇要允許查看主題的群組：
   - 組織中的每個人。 "Everyone" 不包括來賓，這是目錄中的所有內部使用者
-  - 只有選取的人員或安全性群組 (此選項是好的，但您仍在進行主題體驗，所以您可以使用) 的使用者子集進行測試。 若要讓客人查看主題，您必須使用 [選取的人員或安全性群組] 選項，並授與授權。
+  - 只有選取的人員或安全性群組 (此選項是好的，您仍會 Viva 主題，所以您可以使用) 的使用者子集進行測試。 若要讓客人查看主題，您必須使用 [選取的人員或安全性群組] 選項，並授與授權。
   - 沒有人。
 
     所有使用者（甚至來賓使用者）都必須套用授權，才可查看主題經驗。 請記住，許可權一定會控制可看到的內容。

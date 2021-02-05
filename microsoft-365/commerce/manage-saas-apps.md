@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: 瞭解如何在 Microsoft 365 系統管理中心中啟動和管理協力廠商應用程式。
-ms.openlocfilehash: c1565f0edb2f78302c0186aa3bd89d1ff5a51e5c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 071f95c838620fb11350a829cbfed249e7c34f6e
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638168"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114714"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>管理組織的協力廠商應用程式訂閱
 
@@ -28,7 +28,7 @@ ms.locfileid: "48638168"
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 
@@ -95,7 +95,7 @@ ms.locfileid: "48638168"
 
 1. 在系統管理中心中，移至 [**帳單**  >  **產品**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">應用程式</a>] 頁面。
 2. 尋找並選取您要管理的應用程式。
-3. 在 [ **設定 & 動作**] 底下，選取要 **在 publisher 入口網站中管理**的連結。
+3. 在 [ **設定 & 動作**] 底下，選取要 **在 publisher 入口網站中管理** 的連結。
 
 ## <a name="change-license-quantity"></a>變更授權數量
 

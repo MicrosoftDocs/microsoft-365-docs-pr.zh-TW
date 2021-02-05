@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 description: 了解如何指派授權給使用者。
 ms.date: 08/14/2020
-ms.openlocfilehash: fc5f9112a22d56abb9c11d61f4108586487b4986
-ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
+ms.openlocfilehash: b5179006da896dbadab10d43a43b094acedcb806
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49735795"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113982"
 ---
 # <a name="assign-licenses-to-users"></a>將授權指派給使用者
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 

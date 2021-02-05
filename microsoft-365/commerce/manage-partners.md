@@ -15,19 +15,19 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: 瞭解如何與 Microsoft 認證的解決方案提供者合作，) 為組織或學校購買及管理產品及服務的 (合作夥伴。
-ms.openlocfilehash: 6cce3640a321d1eab31d527369a303cfde646718
-ms.sourcegitcommit: aeb94601a81db3ead8610c2f36cff30eb9fe10e7
+ms.openlocfilehash: d43aadf938cddfd5382fe4b3474eb92cc2b2763c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47430019"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114738"
 ---
 # <a name="manage-partner-relationships"></a>管理合作夥伴關係
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ ms.locfileid: "47430019"
 
 有幾種方式可以讓合作夥伴與您搭配運作。 根據您的既定業務需求，他們會在傳送要求以與您合作時，選擇其中一種類型。
 
-| 合作夥伴類型 | 說明 |
+| 合作夥伴類型 | 描述 |
 | ------ | ------------------- |
 | 轉銷商 | 向您的組織或學校銷售 Microsoft 產品的合作夥伴。 |
 | 委派的管理員 | 可管理組織或學校產品及服務的合作夥伴。 在 Azure Active Directory (AD) 中，該夥伴是您租使用者的全域管理員。 此角色可讓他們管理服務，例如建立使用者帳戶、指派及管理授權，以及密碼重設。 |
@@ -69,7 +69,7 @@ ms.locfileid: "47430019"
 找到合作夥伴並決定使用它們之後，他們會傳送電子郵件邀請。
 
 1. 在電子郵件中，選取要移至 Microsoft 365 系統管理中心的連結。
-2. 在 [ **接受合約 & 授權合作夥伴** ] 頁面上，選取 **Microsoft 客戶合約**的連結，然後閱讀檔。
+2. 在 [ **接受合約 & 授權合作夥伴** ] 頁面上，選取 **Microsoft 客戶合約** 的連結，然後閱讀檔。
 3. 核取方塊以確認您已閱讀該合約。
 4. 選取 [ **接受 & 授權**]。
 5. 您正在使用的合作夥伴清單隨即顯示。 選取任何合作夥伴以查看詳細資料。

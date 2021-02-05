@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 description: 瞭解如何從使用者帳戶取消指派授權。
 ms.date: 07/01/2020
-ms.openlocfilehash: 455348e7dba20913e54e5a4059755f9391644e03
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6fb07883fdfd4f4a837890e3e8c4c04b2411772b
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645092"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114474"
 ---
 # <a name="unassign-licenses-from-users"></a>取消指派給使用者的授權
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 
@@ -120,7 +120,7 @@ ms.locfileid: "48645092"
 2. 選取您要取消指派所有授權的使用者名稱旁的方塊。
 3. 在 **[大量動作]** 窗格中，選取 **[編輯產品授權]**。
 4. 在 [ **取代現有產品** ] 窗格中，選取 [ **取代現有產品授權指派** \> **] [下一步]**。
-5. 在 [ **取代現有產品** ] 窗格的底部，選取 [ **從選取的使用者移除所有產品授權** ] 核取方塊，然後選取 [ **取代** \> **關閉**] [關閉] \> ** **。
+5. 在 [ **取代現有產品** ] 窗格的底部，選取 [ **從選取的使用者移除所有產品授權** ] 核取方塊，然後選取 [ **取代** \> **關閉**] [關閉] \> ****。
 
 ::: moniker-end
 
@@ -132,7 +132,7 @@ ms.locfileid: "48645092"
 2. 選取您要取消指派所有授權的使用者名稱旁的方塊。
 3. 在 **[大量動作]** 窗格中，選取 **[編輯產品授權]**。
 4. 在 [ **取代現有產品** ] 窗格中，選取 [ **取代現有產品授權指派** \> **] [下一步]**。
-5. 在 [ **取代現有產品** ] 窗格的底部，選取 [ **從選取的使用者移除所有產品授權** ] 核取方塊，然後選取 [ **取代** \> **關閉**] [關閉] \> ** **。
+5. 在 [ **取代現有產品** ] 窗格的底部，選取 [ **從選取的使用者移除所有產品授權** ] 核取方塊，然後選取 [ **取代** \> **關閉**] [關閉] \> ****。
 
 ::: moniker-end
 

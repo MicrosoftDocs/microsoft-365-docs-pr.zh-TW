@@ -1,8 +1,9 @@
 ---
-title: '主題經驗 (預覽的概述) '
+title: Microsoft Viva 主題概述
 ms.author: efrene
 author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -12,21 +13,17 @@ ms.collection:
 - enabler-strategic
 - m365initiative-topics
 localization_priority: None
-ROBOTS: NOINDEX, NOFOLLOW
-description: 主題經驗的概述。
-ms.openlocfilehash: 46f98a9a247160d73e52c51df5f3001aa2f0f6e0
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+description: Viva 主題的概述。
+ms.openlocfilehash: f45e0f7c6090d4584526aa9c2abb5ec98213d635
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094816"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107635"
 ---
-# <a name="topic-experiences-overview-preview"></a>主題經驗 (預覽的概述) 
+# <a name="microsoft-viva-topics-overview"></a>Microsoft Viva 主題概述 
 
-> [!Note] 
-> 本文內容適用于 Project Cortex 私人預覽。 [如需詳細資訊，請參閱 Project Cortex](https://aka.ms/projectcortex)。
-
-主題經驗使用 Microsoft AI 技術、Microsoft 365、Microsoft Graph、搜尋及其他元件和服務，在您的 Microsoft 365 環境中建立知識網路。 
+Viva 主題使用 Microsoft AI 技術、Microsoft 365、Microsoft Graph、搜尋及其他元件和服務，以在日常使用的 Microsoft 365 應用程式中，向您的使用者傳授知識，從 SharePoint 新式頁面和 Microsoft 搜尋開始。
 
 </br>
 
@@ -34,11 +31,9 @@ ms.locfileid: "50094816"
 
 </br>
 
-其目標是將資訊轉換為知識，並在日常使用的應用程式中，將資訊傳送給您的使用者，例如 SharePoint 新式頁面和 Microsoft 搜尋。
+Viva 主題可協助解決許多公司的重要業務問題-當使用者需要時，提供資訊給使用者。 例如，新員工必須快速瞭解大量的新資訊，並在閱讀公司資訊時遇到不相關的字詞。 若要深入瞭解，使用者可能需要從何處開始，並花寶貴的時間搜尋詳細資料，例如，該術語的相關資訊，組織中的誰是主題專家，也可能是與字詞相關的網站和檔。
 
-主題有助協助解決許多公司的重要業務問題-當使用者需要時，提供資訊給使用者。 例如，新員工必須快速瞭解大量的新資訊，並在閱讀公司資訊時遇到不相關的字詞。 若要深入瞭解，使用者可能需要從何處開始，並花寶貴的時間搜尋詳細資料，例如，該術語的相關資訊，組織中的誰是主題專家，也可能是與字詞相關的網站和檔。
-
-主題經驗使用 AI 自動搜尋及識別您組織中的 **主題** 。 它會編譯其相關資訊，例如簡短描述、使用主題的人員，以及與其相關的網站、檔案及頁面。 知識管理員或參與者可以視需要選擇更新主題資訊。 您的使用者可以使用這些主題，這表示在當今的 SharePoint 網站中的 [新聞] 和 [頁面] 中，該文字會反白顯示。 使用者可選擇透過主題詳細資料深入瞭解主題。 您也可以在 SharePoint 搜尋中找到主題。
+Viva 主題使用 AI 自動搜尋及識別您組織中的 **主題** 。 它會編譯其相關資訊，例如簡短描述、使用主題的人員，以及與其相關的網站、檔案及頁面。 知識管理員或參與者可以視需要選擇更新主題資訊。 您的使用者可以使用這些主題，這表示在當今的 SharePoint 網站中的 [新聞] 和 [頁面] 中，該文字會反白顯示。 使用者可選擇透過主題詳細資料深入瞭解主題。 您也可以在 SharePoint 搜尋中找到主題。
 
 
 ## <a name="how-topics-are-displayed-to-users"></a>主題如何顯示給使用者
@@ -50,7 +45,7 @@ ms.locfileid: "50094816"
 
 ## <a name="knowledge-indexing"></a>知識索引
 
-主題經驗使用 Microsoft AI 技術來識別 Microsoft 365 環境中的 **主題** 。
+Viva 主題使用 Microsoft AI 技術來識別 Microsoft 365 環境中的 **主題** 。
 
 主題是一種組織很重要或很重要的片語或字詞。 組織中有特定的意義，也有相關的資源可協助人員瞭解其內容及找到相關資訊。 許多不同類型的主題對您的組織而言很重要。 Microsoft AI 技術最初是以下列類型為重點：
 - Project
@@ -64,7 +59,7 @@ ms.locfileid: "50094816"
 
 在識別主題，並透過 AI 判斷該主題有足夠的資訊可取得建議主題時， **主題頁面** 會顯示透過主題索引所收集到的資訊，例如：
 
-- 替代名稱和/或縮寫。
+- 替代名稱和縮寫。
 - 主題的簡短描述。
 - 該主題可能具有專業知識的人員。
 - 與主題相關的檔案、頁面和網站。
@@ -75,25 +70,25 @@ ms.locfileid: "50094816"
 
 ## <a name="roles"></a>角色
 
-當您在 Microsoft 365 環境中使用主題經驗時，您的使用者將具備下列角色：
+當您在 Microsoft 365 環境中使用 Viva 主題時，您的使用者將具備下列角色：
 
-- 主題檢視器：能夠在至少具有 *讀取* 許可權的現代網站 SharePoint 上，以及 Microsoft Search 中，可看到主題要聞的使用者。 他們將能夠選取主題要聞，以查看主題頁面中的主題詳細資料。 主題檢視器將能夠提供主題所用的有用意見意見反應。
+- 主題檢視器：可以查看主題的使用者在其至少具有 *讀取* 許可權的現代網站上，以及在 Microsoft Search 中的 SharePoint。 他們可以選取主題要聞，以查看主題頁面中的主題詳細資料。 主題檢視器可提供主題的有用意見反應。
 
-- 參與者：具有編輯現有主題或建立新主題之許可權的使用者。 知識系統管理員可以透過 Microsoft 365 系統管理中心中的「經驗」主題中的設定，將參與者許可權指派給使用者。 請注意，您也可以選擇讓所有主題查看者都能編輯及建立主題，這樣所有人都可以參與他們所看到的主題。
+- 參與者：具有編輯現有主題或建立新主題之許可權的使用者。 知識系統管理員可以透過 Microsoft 365 系統管理中心中的 Viva 主題設定，將參與者許可權指派給使用者。 請注意，您也可以選擇讓所有主題查看者都能編輯及建立主題，這樣所有人都可以參與他們所看到的主題。
 
-- 知識管理員：透過主題生命週期指引主題的使用者。 知識主管使用主題中心的 [ **管理主題** ] 頁面，確認 AI-建議的主題、移除不再相關的主題、編輯現有的主題或建立新的主題，以及是否唯一具有存取權的使用者。 知識管理員可以透過 Microsoft 365 系統管理中心的「管理」主題經驗，將「知識管理員」許可權指派給使用者。 
+- 知識管理員：透過主題生命週期指引主題的使用者。 知識主管使用主題中心的 [ **管理主題** ] 頁面，確認 AI-建議的主題、移除不再相關的主題、編輯現有的主題或建立新的主題，以及是否唯一具有存取權的使用者。 知識系統管理員可以透過 Microsoft 365 系統管理中心的「Viva 主題管理員」設定，將知識管理員許可權指派給使用者。 
 
-- 知識系統管理員：知識管理員設定主題經驗，並透過 Microsoft 365 系統管理中心中的管理控制措施加以管理。 目前，Microsoft 365 全域或 SharePoint 管理員可以做為知識系統管理員。
+- 知識系統管理員：知識系統管理員會設定 Viva 主題，並透過 Microsoft 365 系統管理中心中的管理控制措施加以管理。 目前，Microsoft 365 全域或 SharePoint 管理員可以做為知識系統管理員。
 
-如需詳細資訊，請參閱 [主題體驗角色](topic-experiences-roles.md) 。
+如需詳細資訊，請參閱 [Viva 主題角色](topic-experiences-roles.md) 。
 
 ## <a name="topic-management"></a>主題管理
 
 主題管理是在您組織 **主題中心** 的「**管理主題**」頁面中完成。 主題中心是在安裝期間建立的，可充當組織的知識中心。 
 
-雖然所有授權的使用者都可以在主題中心看到與其相連的主題，但只有具有「 *管理主題* 」許可權 (知識管理員) 的使用者可以查看和使用 [管理主題] 頁面。
+雖然所有授權的使用者都可以在主題中心看到與其相連的主題，但只有具有「 *管理主題* 」許可權的使用者才能 (知識管理員) 可以查看和使用 [管理主題] 頁面。
 
-知識管理員將能夠：
+知識管理員可以：
 
 - 確認或移除已在您的租使用者中探索的主題。
 - 在需要時手動建立新的主題 (例如，如果沒有提供足夠的資訊供透過 AI) 探索。
@@ -111,7 +106,7 @@ Microsoft 365 系統管理中心中的管理控制可讓您管理您的知識網
 - 排除特定主題的找到。
 - 控制哪些使用者可以管理主題中心的主題。
 - 控制哪些使用者可以建立及編輯主題。
-- 控制哪些使用者可以查看主題。
+- 控制可查看主題的使用者。
 
 如需系統管理控制的詳細資訊，請參閱 [指派使用者](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions)權力、 [管理主題可見度](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules)及 [管理主題探索](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) 。
 

@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: '遵循此檢查清單，從 Microsoft 365 中移除員工，並保護資料安全。 '
-ms.openlocfilehash: e8f0b61fae3656b7d700857e3cc7167cc121a77f
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: a875a8b7620067cdae46fcae3bb7ef8ce7d148fa
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445516"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114054"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>移除或刪除離職員工
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
   
@@ -148,9 +148,9 @@ ms.locfileid: "48445516"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 2. 選取您要封鎖的員工名稱，然後選取 [ **郵件** ] 索引標籤。
-3. 在 [ **電子郵件**轉寄] 底下，選取 [ **管理電子郵件轉發**]。
+3. 在 [ **電子郵件** 轉寄] 底下，選取 [ **管理電子郵件轉發**]。
 4. 開啟 [ **轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄 **位址** ] 方塊中，輸入即將取得電子郵件之目前員工的電子郵件地址。
-5. 選取 **[儲存]**。
+5. 選取 [儲存 **]**。
 6. 請記住，不要刪除離職員工的帳戶。
 
 ::: moniker-end
@@ -165,7 +165,7 @@ ms.locfileid: "48445516"
 
 4. 開啟 [ **轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄 **位址** ] 方塊中，輸入目前員工 (的電子郵件地址，或要取得電子郵件) 的共用信箱。
   
-5. 選取 **[儲存]**。
+5. 選取 [儲存 **]**。
 
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -181,7 +181,7 @@ ms.locfileid: "48445516"
 
 4. 開啟 [ **轉寄所有傳送至此信箱的電子郵件**]。 在 [轉寄 **位址** ] 方塊中，輸入目前員工 (的電子郵件地址，或要取得電子郵件) 的共用信箱。
   
-5. 選取 **[儲存]**。
+5. 選取 [儲存 **]**。
 
 6. 請記住，不要刪除離職員工的帳戶。
 
@@ -194,8 +194,8 @@ ms.locfileid: "48445516"
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
 2. 在 Exchange 系統管理中心中， **流覽至 [** 收件者] [ \> **信箱**]。
 3. 選取使用者，然後在 [行動 **裝置**] 底下，選取 [ **查看詳細資料**]。
-4. 在 [行動**裝置詳細資料**] 頁面的 [行動**裝置**] 下，選取行動裝置，選取 [**清除資料** ![ 清除裝置] ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) ，然後選取 [**封鎖**]。
-5. 選取 **[儲存]**。
+4. 在 [行動 **裝置詳細資料**] 頁面的 [行動 **裝置**] 下，選取行動裝置，選取 [**清除資料** ![ 清除裝置] ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) ，然後選取 [**封鎖**]。
+5. 選取 [儲存 **]**。
    > [!TIP]
    > 請務必移除或停用內部部署 Blackberry Enterprise Service 中的使用者。 您也應停用使用者的任何 Blackberry 裝置。 如需有關如何停用使用者的特定步驟，請參閱 Blackberry Business Cloud Services Administration Guide。
 
@@ -207,7 +207,7 @@ ms.locfileid: "48445516"
 ::: moniker range="o365-worldwide"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
-2. 選取您要封鎖的員工名稱，在使用者的名稱下，選取 [ **封鎖此使用者**的符號]。
+2. 選取您要封鎖的員工名稱，在使用者的名稱下，選取 [ **封鎖此使用者** 的符號]。
 3. 選取 [ **封鎖使用者登入**]，然後選取 [ **儲存**]。
 
 ::: moniker-end
@@ -238,8 +238,8 @@ ms.locfileid: "48445516"
   
 1. 移至 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 系統管理中心</a>。
 2. 在 Exchange 系統管理中心中， **流覽至 [** 收件者] [ \> **信箱**]。
-3. 按兩下使用者並移至 [ **信箱功能** ] 頁面。 在 [行動**裝置**] 下，選取 [**停用 Exchange ActiveSync** ] 和 [**停用裝置的 OWA]，** 然後在出現提示時回答 **[是]**
-4. 在 [ **電子郵件**連線] 下，選取 [ **停** 用並在提示時回答 **Yes]** 。
+3. 按兩下使用者並移至 [ **信箱功能** ] 頁面。 在 [行動 **裝置**] 下，選取 [**停用 Exchange ActiveSync** ] 和 [**停用裝置的 OWA]，** 然後在出現提示時回答 **[是]**
+4. 在 [ **電子郵件** 連線] 下，選取 [ **停** 用並在提示時回答 **Yes]** 。
 
 ## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>移除並刪除離職員工的 Microsoft 365 授權
 
@@ -282,16 +282,16 @@ ms.locfileid: "48445516"
 2. 選取您要移除授權的訂閱。
 3. 在 [詳細資料] 頁面上，選取 [ **移除授權**]。
 4. 在 [ **移除授權** ] 窗格中的 [新數量] 底下的 [ **授權總數** ] 方塊中，輸入此訂閱所需的授權總數。 例如，如果您有25個授權，而您想要移除其中一個，請輸入24。
-5. 選取 **[儲存]**。
+5. 選取 [儲存 **]**。
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">]</a> 頁面。
 2. 選取 [ **新增/移除** 授權] 以刪除授權，以便在您雇用另一個人之前不必支付。
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-1. 在系統管理中心中，前往 **[帳單]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">[訂閱]</a> 頁面。
+1. 在系統管理中心中，前往 [帳單 **]** \> [訂閱 <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">]</a> 頁面。
 2. 選取 [ **新增/移除** 授權] 以刪除授權，以便在您雇用另一個人之前不必支付。
 ::: moniker-end
 
@@ -319,7 +319,7 @@ ms.locfileid: "48445516"
 
 1. 在系統管理中心中，移至 **[使用者]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[作用中使用者]</a> 頁面。
 2. 選取您要刪除的員工名稱。
-3. 在使用者的名稱下，選取 [ **刪除使用者**的符號]。 為此使用者選擇您想要的選項，然後選取 [ **刪除使用者**]。
+3. 在使用者的名稱下，選取 [ **刪除使用者** 的符號]。 為此使用者選擇您想要的選項，然後選取 [ **刪除使用者**]。
 
 ::: moniker-end
 
@@ -377,7 +377,7 @@ ms.locfileid: "48445516"
 
  **最快**：使用 Exchange 系統管理中心 (使用 PowerShell) 或 Azure Active Directory 系統管理中心。 在內部部署環境中，透過 DirSync 同步處理變更可能會花費數小時。
   
- 使用**內部部署與 Exchange Datacenter 中的使用者速度最快**：使用 Azure Active Directory 系統管理中心/Exchange 系統管理中心終止會話，並在內部部署環境中也進行變更。 若不採取此做法，在 Azure Active Directory 系統管理中心或 Exchange 系統管理中心進行的變更將被 DirSync 覆寫。
+ 使用 **內部部署與 Exchange Datacenter 中的使用者速度最快**：使用 Azure Active Directory 系統管理中心/Exchange 系統管理中心終止會話，並在內部部署環境中也進行變更。 若不採取此做法，在 Azure Active Directory 系統管理中心或 Exchange 系統管理中心進行的變更將被 DirSync 覆寫。
   
 ## <a name="related-articles"></a>相關文章
 

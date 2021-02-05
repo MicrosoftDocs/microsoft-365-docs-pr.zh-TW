@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 摘要：瞭解從 Microsoft 雲端德國移動 (Microsoft Cloud Deutschland) 到新德文 datacenter 區域中的 Office 365 服務的遷移階段動作和影響。
-ms.openlocfilehash: 0d508607877b86d6f6df6a6465fada67e385fba0
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: c0fdfc83bbdb8ec4c2f408cef113a487908957bf
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029195"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110026"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>從 Microsoft Cloud Deutschland 遷移的遷移階段動作和影響 (一般) 
 
@@ -34,6 +34,26 @@ ms.locfileid: "50029195"
 階段和其動作可確保重要的資料和經驗已遷移至 Office 365 服務。 租使用者新增至遷移佇列後，每個工作負載都會以後端服務執行的一組步驟完成。 某些工作負載可能需要管理員 (或使用者) ，否則遷移可能會影響[如何組織遷移時](ms-cloud-germany-transition.md#how-is-the-migration-organized)所執行和討論之階段的使用狀況？
 
 下列各節包含當工作負載透過遷移的各個階段所進行的動作和影響。 請複習表格，並決定哪些動作或效果適用于您的組織。 確定您已準備好在必要時，依照各自階段執行步驟。 無法完成必要的步驟，可能會造成服務中斷，而且可能會推遲完成遷移至 Office 365 服務。
+
+## <a name="sharepoint-online-phase-4-of-9"></a>SharePoint 線上 (階段4之 9) 
+
+| 步驟 (s)  | 描述 | 適用於 | 影響 |
+|:-------|:-----|:-------|:-------|
+| 會轉換 SharePoint 和 OneDrive。 | 在此階段中，SharePoint 和 OneDrive 會從 Microsoft Cloud Deutschland 遷移至 Office 365 服務。 現有的 Microsoft Cloud Deutschland URLs 會保留 (例如， `contoso.sharepoint.de`) 。 Microsoft Cloud Deutschland 或 Office 365 服務所發出的權杖在轉換期間是有效的。 | SharePoint 客戶 | -在遷移期間，只會有兩個簡短句點的內容是唯讀的。 在此期間，您會發現 SharePoint 中的「無法編輯內容」橫幅。 <br><br> -搜尋索引不會被保留，而且可能需要最多10天才能重建。 <br><br> -SharePoint/OneDrive 內容將會在遷移期間的兩個簡短期間是唯讀的。 在此期間，使用者會看到「您無法編輯內容」橫幅。 <br><br> -重建索引時，搜尋索引可能無法使用。 在此期間內，搜尋查詢可能不會傳回完整的結果。 <br><br> -保留現有的網站。 |
+|||||
+
+其他考慮：
+
+- 當 SharePoint Online 移轉到德國區域完成後，會重新建立資料索引。 與搜尋索引相依的功能可能會受到影響時重建索引完成。
+
+- 如果您的組織仍然使用 SharePoint 2010 工作流程，他們將無法再在 2021 12 月31日之後運作。 SharePoint 2013 工作流程仍然受到支援，不過預設為從 2020 1 月1日開始的新承租人關閉。 在完成 SharePoint 線上服務的遷移之後，建議您移至 [電源自動化] 或其他支援的解決方案。
+
+- OneDrive 遷移至德文地區後，就會重建資料索引。 在建立索引的過程中，取決於搜尋索引的功能可能會受到影響。
+
+- 尚未遷移其 SharePoint 線上實例的 Microsoft 雲端 Deutschland 客戶必須保持 SharePoint 線上 PowerShell module SharePointOnline/16.0.20616.12000 版本或下列的版本。 否則，透過 PowerShell 或用戶端物件模型的 SharePoint 線上連線將會失敗。
+
+- SharePoint 線上實例遷移的 Microsoft Cloud Deutschland 客戶必須更新 SharePoint 線上 PowerShell module SharePointOnline/CSOM to version 16.0.20717.12000 或以上版本。 否則，透過 PowerShell 或用戶端物件模型的 SharePoint 線上連線將會失敗。
+
 
 ## <a name="exchange-online-phase-5-of-9"></a>Exchange Online (階段5之 9) 
 
@@ -67,24 +87,6 @@ ms.locfileid: "50029195"
 | 遷移 Exchange Online 路由及歷史郵件詳細資料。 | Exchange Online 可讓您從外部主機路由傳送至 Office 365。 外部 MX 記錄會轉換成路由傳送至 EOP 服務。 會遷移租使用者設定及歷史記錄詳細資料。 | Exchange Online 客戶 | -Microsoft-managed DNS 專案會從 Office 365 德國 EOP 更新為 Office 365 服務。 <br><br> -客戶應等候30天之後，EOP 雙重寫入以進行 EOP 遷移。 否則，可能會遺失資料。 |
 |||||
 
-## <a name="sharepoint-online-phase-4-of-9"></a>SharePoint 線上 (階段4之 9) 
-
-| 步驟 (s)  | 描述 | 適用於 | 影響 |
-|:-------|:-----|:-------|:-------|
-| 會轉換 SharePoint 和 OneDrive。 | 在此階段中，SharePoint 和 OneDrive 會從 Microsoft Cloud Deutschland 遷移至 Office 365 服務。 現有的 Microsoft Cloud Deutschland URLs 會保留 (例如， `contoso.sharepoint.de`) 。 Microsoft Cloud Deutschland 或 Office 365 服務所發出的權杖在轉換期間是有效的。 | SharePoint 客戶 | -在遷移期間，只會有兩個簡短句點的內容是唯讀的。 在此期間，您會發現 SharePoint 中的「無法編輯內容」橫幅。 <br><br> -搜尋索引不會被保留，而且可能需要最多10天才能重建。 <br><br> -SharePoint/OneDrive 內容將會在遷移期間的兩個簡短期間是唯讀的。 在此期間，使用者會看到「您無法編輯內容」橫幅。 <br><br> -重建索引時，搜尋索引可能無法使用。 在此期間內，搜尋查詢可能不會傳回完整的結果。 <br><br> -保留現有的網站。 |
-|||||
-
-其他考慮：
-
-- 當 SharePoint Online 移轉到德國區域完成後，會重新建立資料索引。 與搜尋索引相依的功能可能會受到影響時重建索引完成。
-
-- 如果您的組織仍然使用 SharePoint 2010 工作流程，他們將無法再在 2021 12 月31日之後運作。 SharePoint 2013 工作流程仍然受到支援，不過預設為從 2020 1 月1日開始的新承租人關閉。 在完成 SharePoint 線上服務的遷移之後，建議您移至 [電源自動化] 或其他支援的解決方案。
-
-- OneDrive 遷移至德文地區後，就會重建資料索引。 在建立索引的過程中，取決於搜尋索引的功能可能會受到影響。
-
-- 尚未遷移其 SharePoint 線上實例的 Microsoft 雲端 Deutschland 客戶必須保持 SharePoint 線上 PowerShell module SharePointOnline/16.0.20616.12000 版本或下列的版本。 否則，透過 PowerShell 或用戶端物件模型的 SharePoint 線上連線將會失敗。
-
-- SharePoint 線上實例遷移的 Microsoft Cloud Deutschland 客戶必須更新 SharePoint 線上 PowerShell module SharePointOnline/CSOM to version 16.0.20717.12000 或以上版本。 否則，透過 PowerShell 或用戶端物件模型的 SharePoint 線上連線將會失敗。
 
 
 ## <a name="skype-for-business-online-phase-7-of-9"></a>商務用 Skype Online (階段7之 9) 

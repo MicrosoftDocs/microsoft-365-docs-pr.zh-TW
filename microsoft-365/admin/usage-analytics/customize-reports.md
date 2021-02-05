@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: 瞭解如何在瀏覽器和 Power BI Desktop 中自訂報告。
-ms.openlocfilehash: 8baeb1a9f48d8f1ccdb591a60fefe863502344b6
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
+ms.openlocfilehash: 0375b61b6922c99acf927a4283571451deabaf14
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841420"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114294"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>在 Microsoft 365 使用方式分析中自訂報告
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet) (英文)。
+> 系統管理中心正在變更。 如果您的體驗不符合此處所示的詳細資料，請參閱 [關於新版 Microsoft 365 系統管理中心](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true) (英文)。
 
 ::: moniker-end
 
@@ -46,7 +46,7 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
   
 ### <a name="modify-an-existing-visual"></a>修改現有的視覺效果
 
-此範例顯示如何在 **啟用/授權** 報告中修改 [ **啟用** ] 索引標籤。 
+此範例顯示如何在 **啟用/授權** 報告中修改 [**啟用**] 索引標籤。 
   
 1. 在 [ **啟用/授權** ] 報告中，選取 [ **啟用** ] 索引標籤。
     
@@ -54,7 +54,7 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
     
     ![按一下右上方導覽中的 [編輯報告]](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
-3. 在右上方，選擇 [ **複製此頁面** ]。
+3. 在右上方，選擇 [ **複製此頁面**]。
     
     ![選擇 [複製此頁面]](../../media/b2d18dcd-6b82-4ce7-ab79-1b24e3721309.png)
   
@@ -70,7 +70,7 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
   
 1. 使用左導覽移至 [ **產品使用狀況** ] 報告，然後選取 [ **Yammer** ] 索引標籤。
     
-2. 選擇 ![ [POWER BI] 和 [編輯] 中的 [更多頁面] 按鈕，切換至編輯模式 ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png)  。 
+2. 選擇 ![ [POWER BI] 和 [編輯] 中的 [更多頁面] 按鈕，切換至編輯模式 ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) ****。 
     
 3. 在頁面底部，選取 ![Power BI 中的 [新增頁面] 按鈕](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) 以建立新的頁面。
   
@@ -82,7 +82,7 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
 
 6. 在右側的 [ **欄位** ] 區域中，展開 [行事 **曆** ] 表格。
 
-7. 將 **MonthName** 拖曳至 [欄位] 區域，其位於 **視覺化** 區域的 [ **座標軸** ] 標題下方。
+7. 將 **MonthName** 拖曳至 [欄位] 區域，其位於 **視覺化** 區域的 [**座標軸**] 標題下方。
  
     ![拖曳月份名稱](../../media/bff99987-8c4b-4618-89fd-47df557b0ed7.png)
     
@@ -96,15 +96,15 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
 
     ![選取 Yammer 核取方塊](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
-12. 在視覺效果的清單下方，選擇 [ **Format** ![ Power BI Visualizaions] 中的格式圖示格式圖示 ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。
+12. 在視覺效果的清單下方，選擇 [  ![ Power BI Visualizaions] 中的格式圖示格式圖示 ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png) 。
 
-13. 按月，展開 [標題]，然後將 [ **標題] 文字** 值變更為 [ **第一次 Yammer] 使用者** 。
+13. 按月，展開 [標題]，然後將 [ **標題] 文字** 值變更為 [ **第一次 Yammer] 使用者**。
     
-14. 將 **文字大小** 值變更為 **12** 。
+14. 將 **文字大小** 值變更為 **12**。
     
 15. 在右下方編輯頁面名稱，以變更新頁面的標題。
 
-16.  按一下頂端的 [ **閱讀檢視** ]，然後按一下 [ **儲存** ] 來儲存報告。
+16.  按一下頂端的 [ **閱讀檢視** ]，然後按一下 [ **儲存**] 來儲存報告。
     
 ## <a name="customizing-the-reports-in-power-bi-desktop"></a>自訂 Power BI Desktop 中的報表
 
@@ -114,7 +114,7 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
 
 您可以開始直接連線至 Microsoft 365 的 ODATA 報告 APIs，以加上這些報告。
   
-1. 移至 [ **取得資料** \> ] **其他** \> **ODATA** 摘要 \> **Connect** 。
+1. 移至 [ **取得資料** \> ] **其他** \> **ODATA** 摘要 \> **Connect**。
     
 2. 在 [URL] 視窗中，輸入 "HTTPs:// <i></i> reports.office.com/pbi/v1.0/ \<tenantid\> "
     
@@ -128,7 +128,7 @@ Microsoft 365 流量分析提供 Power BI 中的儀表板，可深入瞭解使�
     
 4. 連線授權後，您將會看到 [Navigator] 視窗，顯示可供連線的資料集。
     
-    選取 [全部]，然後選擇 [ **負載** ]。
+    選取 [全部]，然後選擇 [ **負載**]。
     
     這會將資料下載到您的 Power BI Desktop。 儲存此檔案，然後您就可以開始建立所需的報告。
     

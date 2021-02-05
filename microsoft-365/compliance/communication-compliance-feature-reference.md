@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7e76b7f694a5c2087cd77939b80bf9edf2f23e40
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: effe4bbcf381a717c03d9e3ace3ff7a7db8bd273
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066846"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50110038"
 ---
 # <a name="communication-compliance-feature-reference"></a>通訊規範功能參考
 
@@ -120,9 +120,9 @@ ms.locfileid: "50066846"
 
 您必須向 Microsoft 支援服務提交要求，才能讓貴組織使用安全性與合規性中心的圖形使用者介面來搜尋內部部署使用者雲端式信箱中的 Teams 聊天資料。
 
-- **Exchange 電子郵件**：在 exchange Online 中主控的信箱，作為 Microsoft 365 或 Office 365 訂閱的一部分，都符合郵件掃描的條件。 Exchange 電子郵件訊息和附件符合通訊合規性原則的情況可能需要長達24小時才能處理。 支援的通訊遵循類型與 [Exchange 郵件流程規則內容檢查所支援的檔案類型](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
+- **Exchange 電子郵件**：在 exchange Online 中主控的信箱，作為 Microsoft 365 或 Office 365 訂閱的一部分，都符合郵件掃描的條件。 Exchange 電子郵件訊息和附件符合通訊合規性原則的情況可能需要長達24小時才能處理。 支援的通訊遵循類型與 [Exchange 郵件流程規則內容檢查所支援的檔案類型](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)相同。
 
-- **Yammer**：您可以掃描 yammer 社區中的私人郵件和公用交談和相關聯的附件。 當使用者新增至包含 Yammer 做為已定義通道的通訊一致性原則時，使用者所屬的所有 Yammer 社區間的通訊都會包含在掃描程式中。 Yammer 研討和附件符合通訊合規性原則的情況可能需要長達24小時才能處理。 Yammer 必須以 [原生模式](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) ，以進行通訊相容性原則，以監控 Yammer 通訊和附件。 在原生模式中，所有的 Yammer 使用者都在 Azure Active Directory (AAD) 中，所有群組都是 Office 365 群組，而且所有檔案都儲存在 SharePoint 線上中。
+- **Yammer**：您可以掃描 yammer 社區中的私人郵件和公用交談和相關聯的附件。 當使用者新增至包含 Yammer 做為已定義通道的通訊一致性原則時，使用者所屬的所有 Yammer 社區間的通訊都會包含在掃描程式中。 Yammer 研討和附件符合通訊合規性原則的情況可能需要長達24小時才能處理。 Yammer 必須以 [原生模式](/yammer/configure-your-yammer-network/overview-native-mode) ，以進行通訊相容性原則，以監控 Yammer 通訊和附件。 在原生模式中，所有的 Yammer 使用者都在 Azure Active Directory (AAD) 中，所有群組都是 Office 365 群組，而且所有檔案都儲存在 SharePoint 線上中。
 
 - **商務用 Skype online**：可監督商務用 skype online 中的聊天通訊和相關聯的附件。 商務用 Skype Online 聊天符合通訊相容性原則的情況可能需要長達24小時才能處理。 受監視的聊天對話是源自 [先前在商務用 Skype Online 中所儲存的交談](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)。  在商務用 Skype Online 中使用下列群組管理設定來監督使用者聊天通訊：
 
@@ -290,7 +290,7 @@ ms.locfileid: "50066846"
 | **Date** | 組織中的使用者傳送或接收郵件的日期。 若要篩選單一一天，請選取一天開始的日期範圍，以您想要的結果，並以下一天結束。 例如，如果您想要篩選9/20/2020 的結果，請選擇篩選日期範圍為9/20/2020-9/21/2020。|
 | **檔類別** | 以郵件類型為基礎的郵件類別（ *郵件* 或 *附件*）。 |
 | **具有附件** | 附件存在於郵件中。 |
-| **專案類別** | 根據郵件類型、電子郵件、Microsoft 小組聊天、Bloomberg 等的郵件來源。如需一般專案類型和郵件類別的詳細資訊，請參閱 [專案類型和郵件類別](https://docs.microsoft.com/office/vba/outlook/concepts/forms/item-types-and-message-classes)。 |
+| **專案類別** | 根據郵件類型、電子郵件、Microsoft 小組聊天、Bloomberg 等的郵件來源。如需一般專案類型和郵件類別的詳細資訊，請參閱 [專案類型和郵件類別](/office/vba/outlook/concepts/forms/item-types-and-message-classes)。 |
 | **收件者網域** | 郵件已傳送至的網域。 根據預設，此網域通常是您的 Microsoft 365 訂閱網域。 |
 | **收件者** | 郵件已傳送至的使用者。 |
 | **Sender** | 傳送郵件的人員。 |
@@ -338,7 +338,7 @@ ms.locfileid: "50066846"
 
 ## <a name="power-automate-flows"></a>自動處理電源流程
 
-[Microsoft Power 自動化](https://docs.microsoft.com/power-automate/getting-started) 是一種工作流程服務，可在應用程式和服務間自動執行動作。 您可以使用來自範本或手動建立的流程，來自動化與這些應用程式和服務相關聯的常見工作。 當您啟用電源自動化流程以進行通訊相容性時，您可以自動化提醒和使用者的重要工作。 您可以設定電源自動化流程，以在使用者有通訊符合性警示和其他應用程式時通知管理員。
+[Microsoft Power 自動化](/power-automate/getting-started) 是一種工作流程服務，可在應用程式和服務間自動執行動作。 您可以使用來自範本或手動建立的流程，來自動化與這些應用程式和服務相關聯的常見工作。 當您啟用電源自動化流程以進行通訊相容性時，您可以自動化提醒和使用者的重要工作。 您可以設定電源自動化流程，以在使用者有通訊符合性警示和其他應用程式時通知管理員。
 
 使用包含通訊法規遵從性之 Microsoft 365 訂閱的客戶，不需要額外的功率自動授權，即可使用建議的預設通訊相容性電源自動範本。 您可以自訂預設範本，以支援您的組織及涵蓋核心通訊相容性案例。 如果您選擇使用這些範本中的 [高功耗自動功能] 功能，請使用 Microsoft 365 規範連接器建立自訂範本，或在 Microsoft 365 中使用其他法規遵從性區域的 Power templates 範本，您可能需要額外的電量自動授權。
 
@@ -450,7 +450,7 @@ ms.locfileid: "50066846"
 | **Operations** | 對原則執行的審閱作業。 |
 | **AuditData** | 此欄位是所有原則審查活動的主要資料來源。 所有的檢閱活動都會以逗號分隔符號進行記錄及分隔。 |
 
-您也可以在整合的審計記錄中或使用 [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell Cmdlet 來查看審核活動。
+您也可以在整合的審計記錄中或使用 [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell Cmdlet 來查看審核活動。
 
 例如，下列範例會傳回所有主管審查活動的活動， (原則和規則) ：
 
