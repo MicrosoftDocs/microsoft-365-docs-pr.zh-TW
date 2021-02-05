@@ -235,8 +235,6 @@
           href: manage/change-address-contact-and-more.md
         - name: 更新您的系統管理員連絡資訊
           href: manage/update-phone-number-and-email-address.md
-        - name: 設定密碼到期原則
-          href: manage/set-password-expiration-policy.md
         - name: 自訂應用程式啟動器
           href: manage/customize-the-app-launcher.md
         - name: 將應用程式釘選至使用者的應用程式啟動器

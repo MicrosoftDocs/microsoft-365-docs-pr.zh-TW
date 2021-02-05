@@ -1,22 +1,22 @@
-- name: 主題體驗快速入門
+- name: 開始使用 Microsoft Viva
   items:
-    - name: 主題體驗簡介
+    - name: Microsoft Viva 簡介
       href: index.md
-    - name: 主題體驗概觀
+    - name: Microsoft Viva 概述
       href: topic-experiences-overview.md
-    - name: 主題體驗探索、篩選和編輯
+    - name: Microsoft Viva 探索摘要與內容篩選
       href: topic-experiences-discovery-curation.md
-    - name: 主題體驗角色
+    - name: Microsoft Viva 角色
       href: topic-experiences-roles.md
     - name: 準備好您的環境
       href: topic-experiences-get-ready.md
 - name: 設定和管理
   items:
-    - name: 主題安全性
+    - name: '[主題] 安全性'
       href: topic-experiences-security-privacy.md
-    - name: 計劃主題體驗
+    - name: '[主題] 方案'
       href: plan-topic-experiences.md
-    - name: 設定主題體驗
+    - name: '設定 [主題]'
       href: set-up-topic-experiences.md
     - name: 管理主題探索
       href: topic-experiences-discovery.md
@@ -38,6 +38,8 @@
       href: edit-a-topic.md
     - name: 安全性調整
       href: topic-experiences-security-trimming.md
+    - name: 搜尋主題
+      href: search.md
 - name: 採用
   items:
     - name: 主導性采用採用快速入門
