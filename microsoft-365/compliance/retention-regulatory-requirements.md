@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 協助您符合資訊管理與記錄管理法規需求的資源。
-ms.openlocfilehash: 891dd3f37e70ae94dbae96baaa7c38b71456305b
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: e46abc4efec356cfd058414063d3e76ffe8ff224
+ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032564"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50109932"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>適用於資訊管理與記錄管理的法規需求
 
@@ -34,7 +34,7 @@ ms.locfileid: "50032564"
 
 **利用 Microsoft 365 支援紐西蘭的公用記錄法符合性義務** - [下載評估](https://aka.ms/NZPRA)
 
-適用工作量：SharePoint、OneDrive、Teams、Exchange 及商務用 Skype
+適用工作量：SharePoint、OneDrive、Teams 和 Exchange
 
 於 2021 年 1 月發行的此報告，是由 Microsoft 紐西蘭合作產生，以評估 Microsoft 365 服務對於記錄、儲存及管理電子記錄需求的功能，具體如下： 
 

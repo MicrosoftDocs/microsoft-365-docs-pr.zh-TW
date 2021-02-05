@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 瞭解如何設定資料遺失防護（DLP）原則以使用 Microsoft 365 端點資料遺失防護（EPDLP）位置。
-ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 15a540c323c8f49cfa6c15358cfec89034667378
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667808"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094794"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>使用端點資料外洩防護
 
@@ -80,11 +80,19 @@ ms.locfileid: "49667808"
 
 如果 [清單模式] 設為 **[封鎖]**，則使用者將無法將敏感性專案上傳到這些網域。 當由於專案符合 DLP 原則而封鎖上傳動作時，DLP 將會產生警告，或封鎖敏感性專案的上傳。
 
-如果 [清單模式] 設為 **[允許]**，則使用者 **_只_* _ 能將敏感性項目上傳到那些網域，而不可將存取權上傳到其他網域。
+如果 [清單模式] 設為 **[允許]**，則使用者 ***_僅_** 能將敏感性項目上傳到那些網域，而不可將存取權上傳到其他網域。
 
 #### <a name="unallowed-browsers"></a>不受允許的瀏覽器
 
 您新增的瀏覽器是由其可執行檔名稱所標識，這些瀏覽器將無法存取符合強制執行的 DLP 原則的檔案（其中的 [上傳到雲端服務限制] 已設定為 [封鎖] 或 [封鎖覆寫]）。 當這些瀏覽器被禁止存取檔案時，終端使用者會看到快顯通知，要求其透過 Edge Chromium 開啟檔案。
+
+### <a name="business-justification-in-policy-tips"></a>原則提示中的業務理由
+
+您可以在 DLP 原則提示通知中控制使用者與業務理由選項的互動方式。 當使用者執行一項受到在 DLP 原則中設定的 **覆寫封鎖** 保護的活動時，即會出現此選項。 您可以從下列選擇其中一個選項：
+
+- 根據預設，使用者可以選取內建的理由，或輸入自己的文字。
+- 使用者僅能選取內建的理由。
+- 使用者僅能自行輸入理由。
 
 
 ## <a name="tying-dlp-settings-together"></a>將 DLP 設定結合起來
@@ -99,7 +107,7 @@ ms.locfileid: "49667808"
 
 2. 當 DLP 原則相符時，新增不允許存取特定敏感性專案的瀏覽器。
 
-3. 設定 DLP 原則，透過開啟 _ *上傳至雲端服務** 和 **從不受允許的瀏覽器存取**，以定義敏感性專案上傳所應受限制的位置。
+3. 設定 DLP 原則，透過開啟 **上傳至雲端服務** 和 **從不受允許的瀏覽器存取**，以定義敏感性專案上傳所應受限制的位置。
 
 您可以繼續新增服務、應用程式和原則，以延伸並擴充您的限制，以符合您的業務需求並保護敏感性資料。 
 

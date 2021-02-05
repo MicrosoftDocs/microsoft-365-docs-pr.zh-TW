@@ -2,7 +2,7 @@
   href: index.yml
   expanded: true
   items:
-    - name: 入門
+    - name: 開始使用
       items:
         - name: 支援在家工作的主要工作
           href: top-security-tasks-for-remote-work.md
@@ -169,12 +169,12 @@
                   items:
                     - name: 了解結構描述
                       href: mtp/advanced-hunting-schema-tables.md
+                    - name: 結構描述命名變更
+                      href: mtp/advanced-hunting-schema-changes.md
                     - name: AADSignInEventsBeta
                       href: mtp/advanced-hunting-aadsignineventsbeta-table.md
                     - name: AADSpnSignInEventsBeta
                       href: mtp/advanced-hunting-aadspnsignineventsbeta-table.md
-                    - name: 架構命名變更
-                      href: mtp/advanced-hunting-schema-changes.md
                     - name: AlertEvidence
                       href: mtp/advanced-hunting-alertevidence-table.md
                     - name: AlertInfo

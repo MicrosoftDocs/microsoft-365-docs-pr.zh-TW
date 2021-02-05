@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 稽核記錄保留原則是 Microsoft 365 中新增的「進階稽核」功能的一部分。 稽核記錄保留原則可讓您指定要在組織中保留稽核記錄的時間長度。
-ms.openlocfilehash: c106024e5426972f6637d6226b385d1179516d4d
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: eeddf4c963284acaa908e07ddfdae77ec0bb080c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870942"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114932"
 ---
 # <a name="manage-audit-log-retention-policies"></a>管理稽核記錄保留原則
 
@@ -51,21 +51,19 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 
 - 所有自訂稽核記錄保留原則 (由您的組織建立) 會優先於預設保留原則。 例如，如果您為具有的保留期間少於一年的建Exchange 信箱活動立稽核記錄保留原則，則 Exchange 信箱活動的稽核記錄將會保留較自訂原則所指定更短的持續時間。
 
-## <a name="create-an-audit-log-retention-policy-in-the-compliance-center"></a>在合規性中心中建立稽核記錄保留原則
+## <a name="create-an-audit-log-retention-policy"></a>建立稽核記錄保留原則
 
-1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)，並使用獲指派安全性與合規性中心中的「組織組態」角色的使用者帳戶登入。
+1. 移至 [https://compliance.microsoft.com](https://compliance.microsoft.com)，並使用獲指派安全性與合規性中心的權限頁面中的「組織組態」角色的使用者帳戶登入。
 
 2. 在 Microsoft 365 合規性中心的左窗格中，按一下 [顯示全部 **]**，然後按一下 [稽核 **]**。
 
-    [稽核 **]** 頁面隨即顯示。
+3. 按一下 **[稽核保留原則]** 索引標籤。
 
-    ![合規性中心中的稽核記錄搜尋頁面](../media/AuditLogRetentionPolicy1.png)
+4. 按一下 **[建立稽核保留原則]**，然後在飛出視窗頁面中填寫下列欄位：
 
-3. 按一下 [建立稽核保留原則 **]**，然後在飛出視窗頁面中填寫下列欄位：
+    ![新的稽核保留原則飛出視窗頁面](../media/CreateAuditLogRetentionPolicy.png)
 
-    ![稽核保留原則飛出視窗頁面](../media/AuditLogRetentionPolicy2.png)
-
-   1. **名稱：** 稽核記錄保留原則的名稱。 此名稱在組織中必須是唯一的。
+   1. **原則名稱：** 稽核記錄保留原則的名稱。 這個名稱需為貴組織中的唯一名稱，而且在建立原則之後即無法變更。
 
    2. **描述：** 選用，但對於提供原則相關資訊 (例如記錄類型或工作負載)、原則中指定的使用者和持續時間有幫助。
 
@@ -81,11 +79,44 @@ Microsoft 365 中的「進階稽核」可為所有組織提供預設的稽核記
 
    6. **優先順序：** 此值會決定組織中稽核記錄保留原則的處理順序。 較高的值表示優先順序較高。 例如，優先順序值為 **5** 的原則會優先於優先順序值為 **0** 的原則。 如先前所述，任何自訂稽核記錄保留原則的優先順序都會高於組織的預設原則。
 
-4. 按一下 [儲存] 建立新的稽核記錄保留原則。
+5. 按一下 [儲存] 建立新的稽核記錄保留原則。
 
-## <a name="create-an-audit-log-retention-policy-in-powershell"></a>在 PowerShell 中建立稽核記錄保留原則
+   新原則會顯示在 **[稽核保留原則]** 索引標籤的清單中。
 
-您也可以使用安全性與合規性中心 PowerShell 來建立稽核記錄保留原則。
+## <a name="manage-audit-log-retention-policies"></a>管理稽核記錄保留原則
+
+稽核記錄保留原則列在 **[稽核保留原則]** 索引標籤中 (又稱為 *[儀表板]*) 您可以使用儀表板來查看、編輯及刪除稽核保留原則。
+
+### <a name="view-policies-in-the-dashboard"></a>在儀表板中查看原則
+
+稽核記錄保留原則列在儀表板中。 在儀表板中查看原則的優點之一，就是您可以按一下 **[先順序]** 欄，以按照套用的優先順序列出原則。 如先前所述，較高的值表示優先順序較高。
+
+![[稽核保留原則] 儀表板中的 [優先順序] 欄](../media/AuditLogRetentionDashboardPriority.png)
+
+您也可以選取要在彈出式頁面上顯示其設定的原則。
+
+> [!NOTE]
+> 儀表板中不會顯示貴組織的預設稽核記錄保留原則。
+
+### <a name="edit-policies-in-the-dashboard"></a>在儀表板中編輯原則
+
+若要編輯原則，請選取該原則以顯示彈出式頁面。 您可以修改一個或多個設定，然後儲存變更。
+
+
+> [!IMPORTANT]
+> 若使用 **New UnifiedAuditLogRetentionPolicy** Cmdlet，則可以為儀表版中的 **[建立稽核保留原則]** 工具中不可用的記錄類型或活動建立稽核記錄保留原則。 在這種情況下，您將無法從儀表板中的 **[稽核保留原則]** 中編輯原則 (例如，變更保留期或新增和移除活動)。 您只能在 [合規性中心] 中檢視及刪除原則。 若要編輯策略，必須在安全性與合規性中心 PowerShell 中使用[Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) cmdlet。<br/><br/>**提示：** 彈出式頁面頂端會顯示一則訊息，指出必須使用 PowerShell 編輯的原則。
+
+### <a name="delete-policies-in-the-dashboard"></a>在儀表板中刪除原則
+
+若要刪除原則，請按一下 **[刪除]** ![[刪除圖示]](../media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg)圖示，然後確認想要刪除原則。 該原則會從儀表板中移除，但您可能需要長達 30 分鐘的時間，該原則才會從貴組織中移除。
+
+## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>在 PowerShell 中建立並管理稽核記錄保留原則
+
+您也可以使用安全性與合規性中心 PowerShell 來建立並管理稽核記錄保留原則。 使用 PowerShell 的一個原因是，您可以為無法在 UI 中使用的記錄類型或活動建立原則。
+
+### <a name="create-an-audit-log-retention-policy-in-powershell"></a>在 PowerShell 中建立稽核記錄保留原則
+
+請依照以下步驟，在 PowerShell 中建立稽核記錄保留原則：
 
 1. [連線到安全性與合規性中心 PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)。
 
@@ -113,41 +144,41 @@ New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -
 
 如需詳細資訊，請參閱 [New-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-unifiedauditlogretentionpolicy)。
 
-## <a name="view-audit-log-retention-policies"></a>檢視稽核記錄保留原則
+### <a name="view-policies-in-powershell"></a>在 PowerShell 中查看原則
 
-此時，要檢視自訂稽核記錄保留原則的唯一方法，就是在安全性與合規性中心 PowerShell 中使用 **Get-UnifiedAuditRetentionPolicy** Cmdlet。 以下的範例命令可用來顯示組織中稽核記錄保留原則設定 (您在上一個步驟中所設定)。 此命令會將原則的優先順序從最高到最低排序。
+在安全性與合規性中心 PowerShell 中使用 [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy) Cmdlet 來檢視稽核記錄保留原則。
+
+以下的範例命令可用來顯示組織中所有的稽核記錄保留原則設定。 此命令會將原則的優先順序從最高到最低排序。
 
 ```powershell
 Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending | FL Priority,Name,Description,RecordTypes,Operations,UserIds,RetentionDuration
 ```
 
 > [!NOTE]
-> 此時，**Get-UnifiedAuditLogRetentionPolicy** Cmdlet 不會傳回組織的預設稽核記錄原則。
+> **Get-UnifiedAuditLogRetentionPolicy** Cmdlet 不會傳回組織的預設稽核記錄保留原則。
 
-如需詳細資訊，請參閱 [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy)。
+### <a name="edit-policies-in-powershell"></a>在 PowerShell 中編輯原則
 
-## <a name="some-audit-log-retention-policies-not-supported-in-the-ui"></a>UI 中不支援某些稽核記錄保留原則
+在安全性與合規性中心 PowerShell 中使用 [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) Cmdlet 來編輯現有的稽核記錄保留原則。
 
-若使用 **New UnifiedAuditLogRetentionPolicy** Cmdlet，則可以為 Microsoft 365 合規性中心的 **[建立稽核保留原則]** 工具中不可用的記錄類型或活動建立稽核記錄保留原則。 在這種情況下，您將無法從合規性中心的 **[稽核保留原則]** 索引標籤中編輯原則 (例如，變更保留期或新增和移除活動)。 您只能在 [合規性中心] 中檢視及刪除原則。 若要編輯策略，必須在安全性與合規性中心 PowerShell 中使用 **Set-UnifiedAuditLogRetentionPolicy** cmdlet。
+### <a name="delete-policies-in-powershell"></a>在 PowerShell 中刪除原則
 
-## <a name="more-information"></a>詳細資訊
+在安全性與合規性中心 PowerShell 中使用 [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) Cmdlet 來刪除稽核記錄保留原則。 從貴組織中移除原則可能需要多達 30 分鐘的時間。
 
-- 在安全性與合規性中心 PowerShell 中使用 **Set-UnifiedAuditLogRetentionPolicy** Cmdlet 來修改現有的稽核記錄保留原則。 如需詳細資訊，請參閱 [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy)。
+## <a name="more-information"></a>其他資訊
 
-- 在安全性與合規性中心 PowerShell 中使用 **Remove-UnifiedAuditLogRetentionPolicy** Cmdlet 來刪除稽核記錄保留原則。 移除原則可能需要多達 30 分鐘的時間。 如需詳細資訊，請參閱 [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy)。
+如先前所述，根據預設，Azure Active Directory、Exchange 和 SharePoint 中的作業稽核記錄會保留一年。 下表列出預設稽核記錄保留原則中(針對各項服務)所包含的所有記錄類型。 這表示具有此記錄類型的稽核記錄將保留一年，除非特定記錄類型、作業或使用者的自訂稽核記錄保留原則具有優先順序。 每種記錄類型的 Enum 值 (在稽核記錄中顯示為 RecordType 屬性的值) 會顯示在括弧中。
 
-- 如先前所述，Azure Active Directory、Exchange 和 SharePoint 中的作業稽核記錄會保留一年。 下表列出預設稽核記錄保留原則中(針對各項服務)所包含的所有記錄類型。 這表示具有此記錄類型的稽核記錄將保留一年，除非特定記錄類型、作業或使用者的自訂稽核記錄保留原則具有優先順序。 每種記錄類型的 Enum 值 (在稽核記錄中顯示為 RecordType 屬性的值) 會顯示在括弧中。
-
-   |AzureActiveDirectory |Exchange  |SharePoint|
-   |:---------|:---------|:---------|
-   |AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
-   |AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|
-   |AzureActiveDirectoryStsLogon (15)|行銷活動 (62)|Project (35)|
-   ||ComplianceDLPExchange (13)|SharePoint (4)|
-   ||ComplianceSupervisionExchange (68)|SharePointCommentOperation (37)|
-   ||CustomerKeyServiceEncryption (69)|SharePointContentTypeOperation (55)|
-   ||ExchangeAggregatedOperation (19)|SharePointFieldOperation (56)|
-   ||ExchangeItemAggregated (50)|SharePointFileOperation (6)|
-   ||ExchangeItemGroup (3)|SharePointListOperation (36)|
-   ||InformationBarrierPolicyApplication (53)|SharePointSharingOperation (14)|
-   ||||
+|AzureActiveDirectory |Exchange  |SharePoint|
+|:---------|:---------|:---------|
+|AzureActiveDirectory (8)|ExchangeAdmin (1)|ComplianceDLPSharePoint (11)|
+|AzureActiveDirectoryAccountLogon (9)|ExchangeItem (2)|ComplianceDLPSharePointClassification (33)|
+|AzureActiveDirectoryStsLogon (15)|行銷活動 (62)|Project (35)|
+||ComplianceDLPExchange (13)|SharePoint (4)|
+||ComplianceSupervisionExchange (68)|SharePointCommentOperation (37)|
+||CustomerKeyServiceEncryption (69)|SharePointContentTypeOperation (55)|
+||ExchangeAggregatedOperation (19)|SharePointFieldOperation (56)|
+||ExchangeItemAggregated (50)|SharePointFileOperation (6)|
+||ExchangeItemGroup (3)|SharePointListOperation (36)|
+||InformationBarrierPolicyApplication (53)|SharePointSharingOperation (14)|
+||||

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 了解適用於 Microsoft Teams 的保留原則。
-ms.openlocfilehash: ebf1efe99e57084e2384e7499b3f72dab2b872c2
-ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
+ms.openlocfilehash: efbdee1fd5ee3c8c48aca9cbaf9e5a85a107edb4
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50050387"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094686"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>了解 Microsoft Teams 的保留
 
@@ -43,7 +43,7 @@ ms.locfileid: "50050387"
 > [!NOTE]
 > 包括卡片內容是最近新增的，目前正在向租用戶推出。 有關更多資訊，請參閱[透過 Teams 中應用程式之針對調適型卡片內容的 Microsoft 365 合規性功能已上線](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869)。
 
-不包括私人頻道中的 Teams 訊息，也不包括其他人以表情符號形式傳送的回應。
+不包括私人頻道中的 Teams 訊息，也不包括程式碼片段和其他人以表情符號形式傳送的回應。
 
 Teams 保留原則中不包括與 Teams 一起使用的電子郵件和檔案。 這些項目有各自的保留原則。
 

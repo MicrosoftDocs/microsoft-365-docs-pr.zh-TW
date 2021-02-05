@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: 在 Project Cortex 中設定內容瞭解
-ms.openlocfilehash: a9713f1d28cf863ab827d2975e84042026105b3f
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 0e5b48bab343f887a1438386bfa4f7915126ccd7
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976378"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094706"
 ---
 # <a name="set-up-sharepoint-syntex"></a>設定 SharePoint Syntex
 
@@ -34,12 +34,12 @@ ms.locfileid: "49976378"
 設定之前，請務必針對您環境中的設定和設定內容理解的最佳方式進行規劃。 例如，您需要做出下列決定：
 
 - 您想要啟用表單處理的 SharePoint 網站 - 所有網站、部分或選取的網站
-- 名稱和系統管理員或您的內容中心
+- 內容中心的名稱和系統管理員
 
 ## <a name="requirements"></a>需求 
 
 > [!NOTE]
-> 您必須具備全域系統管理員或 SharePoint 系統管理員權限才能存取 Microsoft 365 系統管理中心，並設定內容瞭解。
+> 您必須具備全域系統管理員或 SharePoint 系統管理員權限才能存取 Microsoft 365 系統管理中心，並設定 SharePoint Syntex。
 
 如果您是系統管理員，您也可以在設定之後隨時變更所選的設定，以及在 Microsoft 365 系統管理中心中的所有內容瞭解管理設定。
 
